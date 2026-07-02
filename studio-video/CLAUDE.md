@@ -31,7 +31,16 @@ restaurant »). Charte graphique officielle fournie par Michael (PDF) :
     le `@font-face` dans `index.html` (déclaré sous le nom `"Goodly"`, donc aucun autre changement
     nécessaire ailleurs dans les compositions).
 - **Logo** : mascotte chef souriant, style contour bleu — toujours utiliser les vrais assets de
-  marque (voir dossier logo si Michael les dépose), jamais une recréation approximative.
+  marque ci-dessous, jamais une recréation approximative (theSVG ne les a pas : FoodEatUp n'est
+  pas une marque publique dans son catalogue — theSVG reste utile pour les vrais logos tiers
+  mentionnés dans une vidéo, ex. Claude, GitHub, etc.).
+- Fichiers logo officiels fournis par Michael, dans `assets/brand/logo/` :
+  - `foodeatup-logo-horizontal.png` — logo complet horizontal, pastille bleue, texte blanc,
+    "OO" orange/blanc (variante sur fond bleu, pour usage sur fond clair/neutre en incrustation).
+  - `foodeatup-logo-mascot.png` — logo horizontal avec mascotte chef intégrée dans le "O", fond
+    transparent, contour bleu (variante la plus polyvalente, à privilégier en incrustation coin).
+  - `foodeatup-mark-eight.png` — le symbole seul (le "8"/mascotte chef, sans texte), fond
+    transparent, pour les usages où seul le pictogramme est nécessaire (favicon-like, sting final).
 - Charte graphique complète (PDF) sauvegardée dans `assets/brand/Charte_graphique_FoodEatUp.pdf`
   pour référence.
 
