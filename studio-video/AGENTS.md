@@ -10,6 +10,31 @@ ajoutée ici, pour ne jamais avoir à la réexpliquer.
   (`data-width="1080"`, `data-height="1920"`, viewport 1080×1920). Rendu avec `npx hyperframes render`
   (fps 30 par défaut, pas besoin de préciser `--fps`).
 
+## Identité de marque — FoodEatUp
+
+Michael parle du produit **FoodEatUp** (« une infinité de solutions pour gérer votre
+restaurant »). Charte graphique officielle fournie par Michael (PDF) :
+
+- **Couleurs** :
+  - Fond par défaut : **crème `#FCF9E6`**
+  - Texte / encre : **marine foncé `#0F1A23`**
+  - Accent primaire : **bleu `#007BFF`**
+  - Accent secondaire / CTA : **orange `#FFA500`**
+  - Répartition : fond crème + texte marine pour la lisibilité, bleu et orange pour les accents,
+    icônes, surlignages, CTA. Variables CSS déjà posées dans `index.html`
+    (`--foodeatup-bg`, `--foodeatup-ink`, `--foodeatup-blue`, `--foodeatup-orange`).
+- **Police de marque** : **Goodly** (ronde, sympa, cohérente avec le logo chef souriant).
+  - ⚠️ Le fichier réel de la police Goodly n'a pas été fourni. En attendant, **Fredoka**
+    (Google Fonts, vendorée localement dans `assets/vendor/fonts/Fredoka-Variable.woff2`) sert de
+    remplaçant temporaire visuellement proche (ronde, bold, friendly). Dès que Michael fournit le
+    vrai fichier Goodly (`.woff2`/`.ttf`), le déposer dans `assets/vendor/fonts/` et mettre à jour
+    le `@font-face` dans `index.html` (déclaré sous le nom `"Goodly"`, donc aucun autre changement
+    nécessaire ailleurs dans les compositions).
+- **Logo** : mascotte chef souriant, style contour bleu — toujours utiliser les vrais assets de
+  marque (voir dossier logo si Michael les dépose), jamais une recréation approximative.
+- Charte graphique complète (PDF) sauvegardée dans `assets/brand/Charte_graphique_FoodEatUp.pdf`
+  pour référence.
+
 ## Structure narrative
 
 - Découper le discours en sections logiques : accroche, principe, preuve, étapes, prix,
@@ -23,6 +48,8 @@ ajoutée ici, pour ne jamais avoir à la réexpliquer.
 - Le motion design est **100% visuel** : schémas, icônes, flux, comparaisons.
 - **Jamais** de gros texte qui répète ce qui est déjà dit à l'oral — la voix + les sous-titres
   suffisent pour le texte. Le visuel **ajoute** de l'info, il ne la redit pas.
+- **Style : fun et énergique.** Rebonds (`back.out`, `elastic.out`), couleurs vives (bleu/orange
+  FoodEatUp), rythme rapide, effets ludiques. Éviter les transitions trop sobres/lentes par défaut.
 
 ## Logos de marque
 
@@ -35,7 +62,9 @@ ajoutée ici, pour ne jamais avoir à la réexpliquer.
 - Blocs de **2 à 6 mots**, coupés là où la phrase respire naturellement.
 - Jamais de point final. Jamais de coupure qui laisse une phrase en plan (pas de coupure au
   milieu d'un groupe de sens).
-- [Style exact : à compléter avec Michael — voir section "Préférences validées" ci-dessous]
+- **Style : Reels/TikTok bold.** Texte blanc, gras, contour noir épais (classe `.subtitle` déjà
+  posée dans `index.html` : `-webkit-text-stroke`, `paint-order: stroke fill`), positionné en bas
+  de l'écran. Police Goodly (voir "Identité de marque").
 
 ## Son (SFX / musique)
 
@@ -50,6 +79,8 @@ ajoutée ici, pour ne jamais avoir à la réexpliquer.
   le télécharger dans `assets/sfx/`, et le poser **pile sur l'événement visuel**, à un volume
   **sous la voix** de Michael. Comme c'est nous qui fabriquons l'animation, le timing exact de
   chaque transition est connu — pas d'approximation sur le placement.
+- **Musique de fond** : pas de morceau récurrent — choisir la musique et les SFX au cas par cas
+  selon le sujet de chaque vidéo.
 
 ## Système de dérush automatique (pour chaque vidéo brute reçue)
 
@@ -111,7 +142,18 @@ prises ratées ou refaites. Pour chaque vidéo brute déposée dans `assets/raw/
 
 ## Préférences validées avec Michael
 
-_(rempli après les questions de calibration — voir historique de conversation pour le détail)_
+Calibration faite le 2026-07-02 :
+
+- Sous-titres : style Reels/TikTok bold (blanc, contour noir épais, bas d'écran).
+- Identité visuelle : charte FoodEatUp (fond crème, texte marine, accents bleu/orange) — voir
+  "Identité de marque" ci-dessus.
+- Police de titre : Goodly (police de marque), remplacée temporairement par Fredoka en attendant
+  le vrai fichier.
+- Style de motion : fun et énergique.
+- Musique de fond : pas de morceau récurrent, choix au cas par cas.
+- Sons perso : Michael peut en déposer dans `assets/sfx/` — à réutiliser en priorité.
+- Première vidéo : part d'un **script écrit** (pas de vidéo brute pour l'instant) — donc pas de
+  dérush à lancer tout de suite ; attendre le script + le sujet.
 
 ---
 

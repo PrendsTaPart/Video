@@ -5,6 +5,13 @@
     <meta name="viewport" content="width=1080, height=1920" />
     <script src="assets/vendor/gsap.min.js"></script>
     <style>
+      @font-face {
+        font-family: "Goodly";
+        /* TEMP: Fredoka (Google Fonts) as stand-in for the real Goodly brand font.
+           Swap this file for the real Goodly .woff2/.ttf as soon as Michael provides it. */
+        src: url("assets/vendor/fonts/Fredoka-Variable.woff2") format("woff2-variations");
+        font-weight: 400 700;
+      }
       * {
         margin: 0;
         padding: 0;
@@ -16,15 +23,27 @@
         width: 1080px;
         height: 1920px;
         overflow: hidden;
-        background: #000;
+        background: var(--foodeatup-bg);
       }
       body {
-        font-family: "Inter", sans-serif;
+        font-family: "Goodly", sans-serif;
+        --foodeatup-bg: #fcf9e6; /* crème */
+        --foodeatup-ink: #0f1a23; /* marine foncé (texte) */
+        --foodeatup-blue: #007bff; /* accent primaire */
+        --foodeatup-orange: #ffa500; /* accent secondaire / CTA */
       }
       code,
       pre,
       .monospace {
         font-family: "JetBrains Mono", monospace;
+      }
+      .subtitle {
+        font-family: "Goodly", sans-serif;
+        font-weight: 700;
+        color: #ffffff;
+        -webkit-text-stroke: 6px #000000;
+        paint-order: stroke fill;
+        text-align: center;
       }
     </style>
   </head>
@@ -37,13 +56,13 @@
       data-width="1080"
       data-height="1920"
     >
-      
-      
+
+
 
       <!--
         Add your clips here. Example:
         <div id="title" class="clip" data-start="0" data-duration="5" data-track-index="1"
-             style="font-size: 64px; color: #fff; padding: 40px">
+             style="font-size: 64px; color: var(--foodeatup-ink); padding: 40px">
           Hello World
         </div>
       -->
