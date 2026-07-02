@@ -140,6 +140,18 @@ prises ratées ou refaites. Pour chaque vidéo brute déposée dans `assets/raw/
   cloud isolé, cette URL n'est pas accessible depuis le navigateur de Michael — seulement utile
   pour l'inspection interne de l'agent, ou en local sur sa machine.
 
+## Vidéos hors-Reels (16:9, autres marques)
+
+Le projet peut aussi produire des vidéos ponctuelles hors du système Reels vertical par défaut
+(ex. explainers produit 16:9 pour une autre marque que FoodEatUp). Dans ce cas :
+
+- Construire une composition à part dans `compositions/<nom>.html` (jamais dans `index.html`,
+  réservé aux Reels FoodEatUp verticaux) — voir `npx hyperframes render --composition
+  compositions/<nom>.html`.
+- Voix ElevenLabs choisie pour les contenus "produit tech / pédagogique" : **Adam - Instructor**
+  (`voice_id: TGAegA0zNRi8I6nUdq3i`), français, ton professionnel posé. Clé API dans `.env`
+  (`ELEVENLABS_API_KEY`, jamais commitée).
+
 ## Préférences validées avec Michael
 
 Calibration faite le 2026-07-02 :
