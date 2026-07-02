@@ -236,6 +236,59 @@ installés — seuls les outils de lecture (`list_projects`, `get_project`, `get
 produit HeyGen Avatar / Studio directement (app.heygen.com), qui est distinct de ce connecteur et
 n'est pas branché ici.**
 
+## HeyGen Avatar API — avatar « Mika » (branché le 2026-07-02)
+
+Michael a fourni une vraie clé API HeyGen (`HEYGEN_API_KEY`, stockée dans `/home/user/Video/.env`
+— **racine du dépôt, partagée par tous les projets vidéo**, jamais commitée). Ceci donne accès à
+la vraie **API Avatar HeyGen** (REST directe, `https://api.heygen.com`, header `X-Api-Key`) —
+distincte du connecteur MCP `HyperFrames_by_HeyGen` (qui, lui, ne sert à rien pour nous, voir
+au-dessus). C'est aussi le même credential que la chaîne TTS de `hyperframes-media` (voir
+`references/tts.md`) : avec cette clé, les prochains rendus peuvent utiliser la voix HeyGen native
+(meilleurs word-timestamps, pas de passe Whisper séparée) au lieu d'ElevenLabs/Kokoro — à évaluer
+au cas par cas.
+
+**Il n'y a pas d'avatar nommé « Michael » sur ce compte.** Michael a choisi d'utiliser à la place
+l'avatar existant **« Mika »** pour animer son personnage dans les prochaines vidéos :
+
+- `avatar_group_id`: `648209ec82414565864f1771aa1d763e` (nom du groupe : "Mika", 2 déclinaisons)
+- `avatar_id` (déclinaison principale, motion, statut `completed`) : `648209ec82414565864f1771aa1d763e`
+- `avatar_id` (déclinaison "Mika Paysage", statut `completed`) : `bd56633302aa4790a8d526fe2ee6b63f`
+- `default_voice_id` associé : `f6dec6ea26b6484eb142cc8224abb1fc`
+- Il existe aussi un groupe plus développé, **« Storytelling Mika: IA (1) »**
+  (`avatar_group_id: eedc9989b8964af8a7d94a143579243f`, 12 déclinaisons) — pas encore exploré,
+  à regarder si l'avatar principal ne convient pas pour un usage donné.
+- Autres avatars perso disponibles sur ce compte (non choisis par défaut, mais utilisables si
+  demandé) : **Ethan** (`avatar_group_id: dc5e0096b3e74c289955653fd2937a4c`), **Matthew**
+  (`avatar_group_id: a04bfe8e5aed42518495dde3a31731ad`).
+- Pour retrouver/rafraîchir ces infos : `GET /v2/avatar_group.list` (liste des groupes perso) puis
+  `GET /v2/avatar_group/{group_id}/avatars` (déclinaisons + `avatar_id` exacts à l'intérieur d'un
+  groupe). `GET /v2/avatars` liste le catalogue public (1281 avatars stock, inutile pour Mika qui
+  est un avatar perso). ⚠️ Ces appels peuvent être lents dans cet environnement (jusqu'à ~60-90s
+  pour `/v2/avatars`, le proxy réseau semble ajouter de la latence sur ce host) — prévoir un
+  `--max-time` généreux (60-90s) et ne pas conclure à une panne trop vite.
+
+**Génération vidéo (pas encore testée de bout en bout dans ce projet — à valider avant un usage
+en production) :**
+
+```bash
+POST https://api.heygen.com/v2/video/generate
+Header: X-Api-Key: $HEYGEN_API_KEY
+Body:
+{
+  "video_inputs": [{
+    "character": { "type": "avatar", "avatar_id": "648209ec82414565864f1771aa1d763e", "avatar_style": "normal" },
+    "voice": { "type": "text", "input_text": "<texte à dire>", "voice_id": "f6dec6ea26b6484eb142cc8224abb1fc" },
+    "background": { "type": "color", "value": "#0B1E33" }
+  }],
+  "dimension": { "width": 1920, "height": 1080 }
+}
+```
+
+Renvoie un `video_id` ; poller `GET /v2/video_status.get?video_id=<id>` jusqu'à `status: completed`
+pour récupérer l'URL du rendu final. Usage prévu : générer un clip d'intro avec l'avatar Mika qui
+parle, puis l'intégrer comme clip `<video>` dans la composition HyperFrames (comme n'importe quel
+asset vidéo utilisateur) plutôt que de tenter de le recréer en HTML/CSS.
+
 ## Préférences validées avec Michael
 
 Calibration faite le 2026-07-02 :
