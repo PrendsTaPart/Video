@@ -161,6 +161,81 @@ Le projet peut aussi produire des vidéos ponctuelles hors du système Reels ver
   (`voice_id: TGAegA0zNRi8I6nUdq3i`), français, ton professionnel posé. Clé API dans `.env`
   (`ELEVENLABS_API_KEY`, jamais commitée).
 
+## Publication — RapidoCMS (MCP)
+
+Le serveur MCP **RapidoCMS** (`mcp__RapidoCMS__*`) est connecté et donne accès à la publication
+sur les réseaux sociaux directement depuis cette session. Pas besoin de reconnexion.
+
+### Comptes connectés (`company_id: 321`)
+
+Récupérables à tout moment via `list_connected_accounts` (peut changer, toujours revérifier
+avant de publier). État constaté le 2026-07-02 :
+
+- **Facebook** : Foodeatup (`201499969703551`), Cocuisinage By Foodeatup (`114822143406613`),
+  Prendstapart (`766096339928845`), RapidoSoftware (`223318770858972` et `198505523347506`),
+  BraindCode, Plan'It, SUNLIGHT, Cocuisinage.braindcode, Avatalk, et une page perso non-pro.
+- **LinkedIn (pages)** : FoodEatUp (`68807312`), FoodEatUp TN (`106239843`), Prendstapart.braindcode
+  (`109181306`), RapidoSoftware (`101119107`), Rapidosoftware TN (`106240828`), BraindCode
+  (`101119080`), Bootcamp StartupForge (`111309218`).
+- **LinkedIn (profil perso)** : Michael_Kebail (`6Z5izYBhkC`).
+- **Instagram** : BraindCode (`17841401924902629`), Cocuisinage (`17841428088027945`), Plan'It
+  (`17841477770894918`), Rapido Software (`17841473451404310`). **Pas de compte Instagram FoodEatUp
+  connecté actuellement** — à vérifier/ajouter si besoin pour les Reels FoodEatUp.
+- **TikTok** : aucun compte connecté actuellement.
+
+⚠️ Toujours confirmer avec Michael la page exacte avant de publier — plusieurs comptes portent des
+noms proches (ex. 3 pages "FoodEatUp"-like, 2 pages RapidoSoftware sur Facebook).
+
+### Workflow de publication (recette testée le 2026-07-02)
+
+1. **Obtenir une URL publique du fichier vidéo/image** — `upload_file_tool` a besoin d'une URL
+   publique, pas d'un fichier local. Le plus fiable dans cet environnement : committer/pousser le
+   fichier sur la branche, puis récupérer une URL de téléchargement via l'outil GitHub
+   `get_file_contents` (repo `PrendsTaPart/Video`) — il renvoie une `download_url` signée
+   (raw.githubusercontent.com avec `?token=...`), **valable seulement quelques minutes** : l'utiliser
+   immédiatement, ne pas la stocker. (`hyperframes publish` vers hyperframes.dev NE fonctionne PAS
+   pour ça — ça publie une page de projet à réclamer, pas un lien direct vers le fichier rendu.)
+2. **Importer dans la bibliothèque RapidoCMS** : `upload_file_tool(type, name, file_url)` → renvoie
+   un `file_url` stable sur S3 (`rapido-software.s3.eu-west-3.amazonaws.com/...`), à réutiliser.
+3. **Créer le brouillon** : `create_draft_tool(post_name, social_type, account_id, post_type,
+   media_type, media_source="biblio", media_url, media_caption)`. `post_type` = `mediatext` pour
+   vidéo/image + légende. `account_id` = le `account_id` du compte visé (voir liste ci-dessus).
+4. **Publier** : il n'existe pas d'outil "publier maintenant" dédié — utiliser `schedule_draft_tool`
+   avec une date/heure très proche du présent. Pièges rencontrés :
+   - `post_heure` doit être au format `H:i:s` avec des **deux-points** (`23:35:00`), pas des tirets
+     malgré ce que dit la description de l'outil.
+   - Le serveur compare l'heure programmée à son horloge en **heure de Paris (Europe/Paris,
+     UTC+1/+2)**, pas en UTC — si on envoie l'heure UTC courante ça revient "dans le passé". Toujours
+     calculer l'heure de Paris actuelle et viser quelques minutes plus tard.
+5. Autres outils utiles : `list_scheduled_posts` (vérifier), `cancel_schedules_post` (annuler),
+   `post_insights` (stats après publication), `add_post_campagne`/`remove_post_campagne` (regrouper
+   des posts dans une campagne), `list_all_files` (bibliothèque existante, éviter de ré-uploader).
+
+### Autres capacités RapidoCMS disponibles (non testées, à explorer si besoin)
+
+- **Cartes digitales / NFC** : `add_digital_card`, `edit_digital_card`, `delete_digital_card`,
+  `list_digital_card`, `list_card_templates`, `assign_card_template`, `add_card_page_link`,
+  `edit_card_page`, `delete_card_page_link`, `list_card_page`.
+- **Templates de post** : `create_post_template` (HTML/CSS custom, type poste/carte de visite/carte NFC).
+- **Génération d'image** : `generate_image`.
+- **Prompts réutilisables** : `add_prompt`, `edit_prompt`, `delete_prompt`, `list_prompts`.
+- **Campagnes** : `create_campagne`, `edit_campagne`, `delete_campagne`, `list_campagnes`,
+  `list_posts_campagne`, `ingishts_campagne` (stats de campagne).
+- **Infos compte** : `get_brand`, `get_company`, `get_profile`.
+
+## HeyGen — clarification importante (2026-07-02)
+
+Un connecteur MCP `HyperFrames_by_HeyGen` a été autorisé, mais **ce n'est PAS un générateur
+d'avatar humain 3D avec synchronisation labiale**. C'est une version hébergée du même outil
+HyperFrames qu'on utilise déjà en local (animations HTML/CSS). Ses propres instructions précisent
+que, depuis un agent avec accès au système de fichiers (comme cette session), ses outils de
+création (`compose`, `render_video`) sont **désactivés** au profit des skills locaux déjà
+installés — seuls les outils de lecture (`list_projects`, `get_project`, `get_project_status`,
+`get_render_status`) restent disponibles, et ne servent à rien pour notre usage.
+**Pour un vrai avatar IA humain (type intro présentée par un avatar), il faudrait passer par le
+produit HeyGen Avatar / Studio directement (app.heygen.com), qui est distinct de ce connecteur et
+n'est pas branché ici.**
+
 ## Préférences validées avec Michael
 
 Calibration faite le 2026-07-02 :
