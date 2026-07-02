@@ -1,0 +1,323 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+  </head>
+  <body>
+    <template>
+      <style>
+        @font-face {
+          font-family: "Space Grotesk";
+          src: url("../../assets/fonts/SpaceGrotesk-Variable.woff2") format("woff2-variations");
+          font-weight: 300 700;
+        }
+        @font-face {
+          font-family: "Inter";
+          src: url("../../assets/fonts/Inter-Variable.woff2") format("woff2-variations");
+          font-weight: 100 900;
+        }
+
+        #root {
+          position: absolute;
+          inset: 0;
+          overflow: hidden;
+          font-family: "Space Grotesk", "Inter", sans-serif;
+        }
+
+        /* ---- full-bleed background clip (never painted on #root itself) ---- */
+        .bg-clip {
+          position: absolute;
+          inset: 0;
+        }
+        .bg-inner {
+          position: absolute;
+          inset: -6%;
+          background: #0b1e33;
+          transform-origin: 50% 50%;
+        }
+        .bg-vignette {
+          position: absolute;
+          inset: 0;
+          background:
+            radial-gradient(60% 50% at 50% 42%, rgba(59, 130, 246, 0.16) 0%, rgba(59, 130, 246, 0) 70%),
+            radial-gradient(120% 90% at 50% 50%, rgba(11, 30, 51, 0) 0%, rgba(5, 14, 26, 0.55) 100%);
+        }
+        .bg-grain {
+          position: absolute;
+          inset: 0;
+          opacity: 0.05;
+          mix-blend-mode: overlay;
+          background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+        }
+
+        /* ---- stage: everything lives inside the caption keep-out (top 900px) ---- */
+        .stage {
+          position: absolute;
+          top: 0;
+          left: 0;
+          right: 0;
+          height: 900px;
+          box-sizing: border-box;
+          padding: 0 140px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+        .line-wrap {
+          position: absolute;
+          inset: 0;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          opacity: 0;
+          will-change: transform, opacity;
+        }
+        .line {
+          max-width: 1560px;
+          text-align: center;
+          color: #ffffff;
+          font-weight: 700;
+          letter-spacing: -0.01em;
+          line-height: 1.18;
+        }
+        #line1 .line,
+        #line2 .line {
+          font-size: 84px;
+        }
+        .word-line {
+          display: flex;
+          flex-wrap: wrap;
+          align-items: center;
+          justify-content: center;
+          gap: 0 22px;
+          max-width: 1520px;
+          font-size: 58px;
+          font-weight: 700;
+          color: #ffffff;
+          line-height: 1.35;
+        }
+        .word {
+          display: inline-block;
+          opacity: 0;
+          will-change: transform, opacity, filter;
+        }
+        .badge {
+          height: 48px;
+          width: auto;
+          opacity: 0;
+          transform-origin: 50% 50%;
+          will-change: transform, opacity;
+        }
+
+        .payoff {
+          position: absolute;
+          inset: 0;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          gap: 8px;
+          opacity: 0;
+        }
+        .digit {
+          font-size: 320px;
+          font-weight: 700;
+          line-height: 1;
+          color: #3b82f6;
+          transform-origin: 50% 50%;
+          will-change: transform, opacity;
+        }
+        .subline {
+          font-size: 52px;
+          font-weight: 600;
+          color: #ffffff;
+          letter-spacing: -0.01em;
+          opacity: 0;
+          will-change: transform, opacity;
+        }
+      </style>
+
+      <div
+        id="root"
+        data-composition-id="01-accroche"
+        data-width="1920"
+        data-height="1080"
+        data-duration="11.18"
+      >
+        <div id="bg" class="clip bg-clip" data-start="0" data-duration="11.18" data-track-index="0">
+          <div class="bg-inner" id="bg-inner"></div>
+          <div class="bg-vignette"></div>
+          <div class="bg-grain"></div>
+        </div>
+
+        <div class="stage">
+          <!-- Scene 1 (0.0-3.0s) -->
+          <div class="line-wrap" id="line1">
+            <div class="line">Vous utilisez Claude au quotidien&nbsp;?</div>
+          </div>
+
+          <!-- Scene 2 (3.0-6.0s) — hard-cut word-swap, same position/weight as line1 -->
+          <div class="line-wrap" id="line2">
+            <div class="line">Et si vous lui donniez accès à vos propres outils et logiciels&nbsp;?</div>
+          </div>
+
+          <!-- Scene 3 (6.0-9.3s) — per-word staggered reveal + inline logo badges -->
+          <div class="line-wrap" id="line3">
+            <div class="word-line">
+              <span class="word" id="w0">Aujourd&rsquo;hui,</span>
+              <span class="word" id="w1">je</span>
+              <span class="word" id="w2">vous</span>
+              <span class="word" id="w3">montre</span>
+              <span class="word" id="w4">comment</span>
+              <span class="word" id="w5">connecter</span>
+              <span class="word" id="w6">un</span>
+              <span class="word" id="w7">MCP</span>
+              <img class="badge" id="badge-mcp" src="../../assets/logos/mcp-white.svg" alt="" />
+              <span class="word" id="w8">à</span>
+              <span class="word" id="w9">Claude</span>
+              <img class="badge" id="badge-claude" src="../../assets/logos/claude-default.svg" alt="" />
+            </div>
+          </div>
+
+          <!-- Scene 4 (9.3-11.18s) — payoff: giant "3" + "étapes simples" -->
+          <div class="payoff" id="payoff">
+            <div class="digit" id="digit3">3</div>
+            <div class="subline" id="subline">étapes simples</div>
+          </div>
+        </div>
+      </div>
+
+      <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+      <script>
+        (function () {
+          window.__timelines = window.__timelines || {};
+          const tl = gsap.timeline({ paused: true });
+
+          const DURATION = 11.18;
+
+          // ---- defensive baseline: everything not yet on screen is explicitly hidden at t=0 ----
+          tl.set(["#line1", "#line2", "#line3", "#payoff"], { opacity: 0 }, 0);
+          tl.set(
+            ["#w0", "#w1", "#w2", "#w3", "#w4", "#w5", "#w6", "#w7", "#w8", "#w9"],
+            { opacity: 0, y: 14 },
+            0,
+          );
+          tl.set(["#badge-mcp", "#badge-claude"], { opacity: 0, scale: 0 }, 0);
+          tl.set("#digit3", { opacity: 0, scale: 0 }, 0);
+          tl.set("#subline", { opacity: 0, y: 14 }, 0);
+
+          // ---- background: slow continuous push-in for depth (fond behind the type) ----
+          tl.fromTo(
+            "#bg-inner",
+            { scale: 1.0 },
+            { scale: 1.045, duration: DURATION, ease: "none" },
+            0,
+          );
+
+          // ================= Scene 1 (0.0-3.0s) =================
+          // Light spring-pop entrance — smooth settle, no overshoot. Hero visible by t<=0.5s.
+          tl.fromTo(
+            "#line1",
+            { opacity: 0 },
+            { opacity: 1, duration: 0.05, ease: "none" },
+            0.08,
+          );
+          tl.fromTo(
+            "#line1 .line",
+            { scale: 0.92, y: 18 },
+            { scale: 1, y: 0, duration: 0.5, ease: "power3.out" },
+            0.08,
+          );
+
+          // ================= Scene 2 (3.0-6.0s) — hard-cut word-swap (signature move) =================
+          tl.set("#line1", { opacity: 0 }, 3.0);
+          tl.set("#line2", { opacity: 1 }, 3.0);
+          // tiny punch (no fade/slide) to sell the instant cut
+          tl.fromTo(
+            "#line2 .line",
+            { scale: 1.035 },
+            { scale: 1, duration: 0.18, ease: "power2.out" },
+            3.0,
+          );
+
+          // ================= Scene 3 (6.0-9.3s) — per-word staggered reveal =================
+          tl.set("#line2", { opacity: 0 }, 6.0);
+          tl.set("#line3", { opacity: 1 }, 6.0);
+
+          const WORD_IDS = ["w0", "w1", "w2", "w3", "w4", "w5", "w6", "w7", "w8", "w9"];
+          const WORD_TIMES = [6.0, 6.28, 6.56, 6.84, 7.12, 7.4, 7.68, 7.96, 8.24, 8.52];
+          WORD_IDS.forEach((id, i) => {
+            tl.fromTo(
+              "#" + id,
+              { opacity: 0, y: 14, filter: "blur(6px)" },
+              { opacity: 1, y: 0, filter: "blur(0px)", duration: 0.35, ease: "power2.out" },
+              WORD_TIMES[i],
+            );
+          });
+
+          // Inline logo badges land just after their word (MCP = w7, Claude = w9)
+          tl.fromTo(
+            "#badge-mcp",
+            { opacity: 0, scale: 0 },
+            { opacity: 1, scale: 1, duration: 0.3, ease: "power3.out" },
+            WORD_TIMES[7] + 0.18,
+          );
+          tl.fromTo(
+            "#badge-claude",
+            { opacity: 0, scale: 0 },
+            { opacity: 1, scale: 1, duration: 0.3, ease: "power3.out" },
+            WORD_TIMES[9] + 0.18,
+          );
+
+          // ================= Scene 4 (9.3-11.18s) — payoff =================
+          tl.set("#line3", { opacity: 0 }, 9.3);
+          tl.set(
+            ["#w0", "#w1", "#w2", "#w3", "#w4", "#w5", "#w6", "#w7", "#w8", "#w9"],
+            { opacity: 0 },
+            9.3,
+          );
+          tl.set(["#badge-mcp", "#badge-claude"], { opacity: 0 }, 9.3);
+          tl.set("#payoff", { opacity: 1 }, 9.3);
+
+          // "3" spring-pop payoff — explicit slight overshoot per the shot spec
+          tl.fromTo(
+            "#digit3",
+            { opacity: 0, scale: 0 },
+            { opacity: 1, scale: 1, duration: 0.45, ease: "back.out(1.4)" },
+            9.3,
+          );
+          tl.fromTo(
+            "#subline",
+            { opacity: 0, y: 14 },
+            { opacity: 1, y: 0, duration: 0.35, ease: "power3.out" },
+            9.48,
+          );
+
+          // Final hold with subtle jitter on the "3" ONLY — sin(0)=0 so no jump into idle.
+          const IDLE_START = 9.85;
+          const IDLE_DUR = Math.max(0.1, DURATION - IDLE_START);
+          const phase = { p: 0 };
+          tl.to(
+            phase,
+            {
+              p: Math.PI * 2 * 1.1,
+              duration: IDLE_DUR,
+              ease: "none",
+              onUpdate: () => {
+                const yAmp = 2.5;
+                const scaleAmp = 0.015;
+                gsap.set("#digit3", {
+                  y: Math.sin(phase.p) * yAmp,
+                  scale: 1 + Math.sin(phase.p) * scaleAmp,
+                });
+              },
+            },
+            IDLE_START,
+          );
+
+          window.__timelines["01-accroche"] = tl;
+        })();
+      </script>
+    </template>
+  </body>
+</html>

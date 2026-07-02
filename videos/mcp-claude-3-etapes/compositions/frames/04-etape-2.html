@@ -1,0 +1,749 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>04-etape-2</title>
+  </head>
+  <body>
+    <template>
+      <style>
+        @font-face {
+          font-family: "Space Grotesk";
+          src: url("../../assets/fonts/SpaceGrotesk-Variable.woff2") format("woff2-variations");
+          font-weight: 300 700;
+        }
+        @font-face {
+          font-family: "Inter";
+          src: url("../../assets/fonts/Inter-Variable.woff2") format("woff2-variations");
+          font-weight: 100 900;
+        }
+
+        #root {
+          position: absolute;
+          inset: 0;
+          overflow: hidden;
+          font-family: "Inter", sans-serif;
+        }
+
+        .bg-ground {
+          position: absolute;
+          inset: 0;
+          background: #0b1e33;
+        }
+
+        /* ---- badge pill (top-left, outside window) ---- */
+        .badge-pill {
+          position: absolute;
+          left: 140px;
+          top: 80px;
+          padding: 14px 28px;
+          border-radius: 100px;
+          background: #3b82f6;
+          color: #ffffff;
+          font-family: "Space Grotesk", sans-serif;
+          font-weight: 600;
+          font-size: 26px;
+          letter-spacing: 0.01em;
+          transform-origin: 0% 50%;
+        }
+
+        /* ---- app window ---- */
+        .app-window {
+          position: absolute;
+          left: 50%;
+          top: 140px;
+          width: 1400px;
+          height: 760px;
+          margin-left: -700px;
+          border-radius: 24px;
+          background: rgba(255, 255, 255, 0.04);
+          border: 1.5px solid rgba(59, 130, 246, 0.35);
+          overflow: hidden;
+          transform-origin: 50% 50%;
+        }
+
+        .titlebar {
+          position: absolute;
+          left: 0;
+          top: 0;
+          width: 100%;
+          height: 48px;
+          display: flex;
+          align-items: center;
+          padding: 0 24px;
+          border-bottom: 1px solid rgba(59, 130, 246, 0.18);
+          box-sizing: border-box;
+        }
+
+        .titlebar .dot {
+          width: 10px;
+          height: 10px;
+          border-radius: 50%;
+          background: #7c8ca0;
+          opacity: 0.6;
+          margin-right: 8px;
+        }
+
+        .titlebar .claude-mark {
+          width: 18px;
+          height: 18px;
+          margin-left: 16px;
+          margin-right: 8px;
+          color: #ffffff;
+        }
+
+        .titlebar .claude-word {
+          font-family: "Inter", sans-serif;
+          font-weight: 500;
+          font-size: 15px;
+          color: #ffffff;
+        }
+
+        .window-body {
+          position: absolute;
+          left: 0;
+          top: 88px;
+          width: 100%;
+          height: calc(100% - 88px);
+          padding-left: 64px;
+          padding-right: 64px;
+          box-sizing: border-box;
+        }
+
+        /* ---- form panel content (normal flow, explicit rhythm) ---- */
+        .panel-eyebrow {
+          font-family: "Space Grotesk", sans-serif;
+          font-weight: 600;
+          font-size: 15px;
+          letter-spacing: 0.08em;
+          text-transform: uppercase;
+          color: #3b82f6;
+          line-height: 20px;
+          margin: 0 0 14px 0;
+          opacity: 0;
+        }
+
+        .panel-title {
+          font-family: "Space Grotesk", sans-serif;
+          font-weight: 600;
+          font-size: 34px;
+          line-height: 40px;
+          color: #ffffff;
+          margin: 0 0 32px 0;
+          opacity: 0;
+        }
+
+        .field-label {
+          font-family: "Inter", sans-serif;
+          font-weight: 500;
+          font-size: 15px;
+          line-height: 18px;
+          color: #a8b7c8;
+          margin: 0 0 10px 0;
+        }
+
+        .field-label .word {
+          display: inline-block;
+          opacity: 0;
+        }
+
+        .url-field-wrap {
+          margin: 0 0 24px 0;
+          opacity: 0;
+        }
+
+        .url-field {
+          width: 760px;
+          height: 64px;
+          border-radius: 12px;
+          background: rgba(59, 130, 246, 0.1);
+          border: 1.5px solid rgba(59, 130, 246, 0.35);
+          display: flex;
+          align-items: center;
+          padding: 0 24px;
+          box-sizing: border-box;
+          font-family: "Space Grotesk", monospace;
+          font-size: 20px;
+          letter-spacing: -0.01em;
+          color: #ffffff;
+        }
+
+        .url-text {
+          display: inline-block;
+          overflow: hidden;
+          white-space: nowrap;
+          vertical-align: middle;
+          max-width: 0;
+        }
+
+        .caret {
+          display: inline-block;
+          width: 3px;
+          height: 24px;
+          background: #3b82f6;
+          margin-left: 3px;
+          vertical-align: middle;
+        }
+
+        .auth-group {
+          margin: 0 0 40px 0;
+        }
+
+        .auth-row {
+          display: flex;
+          align-items: center;
+          gap: 20px;
+          height: 64px;
+        }
+
+        .auth-selector {
+          width: 460px;
+          height: 64px;
+          border-radius: 12px;
+          background: rgba(59, 130, 246, 0.1);
+          border: 1.5px solid rgba(59, 130, 246, 0.35);
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          padding: 0 24px;
+          box-sizing: border-box;
+          font-family: "Inter", sans-serif;
+          font-weight: 500;
+          font-size: 18px;
+          color: #ffffff;
+          opacity: 0;
+        }
+
+        .auth-selector .chevron {
+          color: #3b82f6;
+          font-size: 16px;
+          transform-origin: 50% 50%;
+        }
+
+        .lock-badge {
+          position: relative;
+          width: 64px;
+          height: 64px;
+          border-radius: 12px;
+          background: rgba(59, 130, 246, 0.1);
+          border: 1.5px solid rgba(59, 130, 246, 0.35);
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          opacity: 0;
+          transform-origin: 50% 50%;
+        }
+
+        .lock-badge svg {
+          width: 38px;
+          height: 38px;
+          display: block;
+        }
+
+        .lock-glow {
+          position: absolute;
+          left: 50%;
+          top: 50%;
+          width: 100%;
+          height: 100%;
+          border-radius: 12px;
+          background: radial-gradient(circle, rgba(52, 211, 153, 0.9) 0%, rgba(52, 211, 153, 0) 70%);
+          filter: blur(14px);
+          transform: translate(-50%, -50%) scale(1);
+          opacity: 0;
+          pointer-events: none;
+        }
+
+        .lock-status {
+          position: absolute;
+          left: 0;
+          top: 100%;
+          margin-top: 8px;
+          font-family: "Inter", sans-serif;
+          font-weight: 500;
+          font-size: 13px;
+          letter-spacing: 0.02em;
+          white-space: nowrap;
+        }
+
+        .lock-status-pending {
+          color: #7c8ca0;
+          opacity: 1;
+        }
+
+        .lock-status-connected {
+          color: #34d399;
+          opacity: 0;
+        }
+
+        .validate-btn {
+          position: relative;
+          width: 320px;
+          height: 64px;
+          border-radius: 100px;
+          background: #3b82f6;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          gap: 10px;
+          font-family: "Space Grotesk", sans-serif;
+          font-weight: 600;
+          font-size: 20px;
+          color: #ffffff;
+          transform-origin: 50% 50%;
+        }
+
+        .validate-check {
+          width: 22px;
+          height: 22px;
+          transform: scale(0);
+          transform-origin: 50% 50%;
+        }
+
+        .btn-glow {
+          position: absolute;
+          left: 50%;
+          top: 50%;
+          width: 100%;
+          height: 100%;
+          border-radius: 100px;
+          background: radial-gradient(circle, rgba(52, 211, 153, 0.9) 0%, rgba(52, 211, 153, 0) 70%);
+          filter: blur(18px);
+          transform: translate(-50%, -50%) scale(1);
+          opacity: 0;
+          pointer-events: none;
+        }
+
+        /* ---- connection line svg overlay (window-local coordinates) ---- */
+        .connect-svg {
+          position: absolute;
+          inset: 0;
+          width: 100%;
+          height: 100%;
+          pointer-events: none;
+          overflow: visible;
+        }
+
+        .connect-path {
+          fill: none;
+          stroke: #34d399;
+          stroke-width: 2.5;
+          stroke-linecap: round;
+        }
+
+        /* ---- success glow behind titlebar claude mark ---- */
+        .mark-glow {
+          position: absolute;
+          left: 103px;
+          top: 24px;
+          width: 60px;
+          height: 60px;
+          border-radius: 50%;
+          background: radial-gradient(circle, rgba(52, 211, 153, 0.85) 0%, rgba(52, 211, 153, 0) 70%);
+          filter: blur(10px);
+          transform: translate(-50%, -50%) scale(1);
+          opacity: 0;
+          pointer-events: none;
+        }
+
+        /* ---- ripple rings for clicks ---- */
+        .ripple {
+          position: absolute;
+          width: 90px;
+          height: 90px;
+          border-radius: 50%;
+          border: 2px solid #3b82f6;
+          transform: translate(-50%, -50%) scale(0);
+          opacity: 0;
+          pointer-events: none;
+          z-index: 50;
+        }
+
+        /* ---- cursor ---- */
+        .cursor {
+          position: absolute;
+          left: 0;
+          top: 0;
+          width: 28px;
+          height: 28px;
+          pointer-events: none;
+          z-index: 100;
+          transform: translate(1520px, 820px);
+        }
+
+        .cursor svg {
+          display: block;
+        }
+      </style>
+
+      <div id="root" data-composition-id="04-etape-2" data-width="1920" data-height="1080">
+        <div id="f4-bg" class="bg-ground clip" data-start="0" data-duration="8.856" data-track-index="1"></div>
+
+        <div id="f4-badge" class="badge-pill clip" data-start="0" data-duration="8.856" data-track-index="2">
+          Étape 2
+        </div>
+
+        <div id="f4-window" class="app-window clip" data-start="0" data-duration="8.856" data-track-index="3">
+          <div class="titlebar">
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <img class="claude-mark" src="../../assets/logos/claude-mono.svg" alt="" />
+            <div class="claude-word">Claude</div>
+          </div>
+
+          <div class="mark-glow" id="f4-mark-glow"></div>
+
+          <div class="window-body">
+            <div class="panel-eyebrow" id="f4-eyebrow">CONNECTEURS</div>
+            <div class="panel-title" id="f4-title">Nouveau connecteur</div>
+
+            <div class="field-label" id="f4-url-label">Adresse du serveur</div>
+            <div class="url-field-wrap" id="f4-url-wrap">
+              <div class="url-field">
+                <span class="url-text" id="f4-url-text">mcp://votre-logiciel.exemple.com</span
+                ><span class="caret" id="f4-caret"></span>
+              </div>
+            </div>
+
+            <div class="auth-group">
+              <div class="field-label" id="f4-auth-label">
+                <span class="word" id="f4-auth-word-1">Mode</span>
+                <span class="word" id="f4-auth-word-2">d'authentification</span>
+              </div>
+              <div class="auth-row">
+                <div class="auth-selector" id="f4-auth-selector">
+                  <span>OAuth 2.0</span>
+                  <span class="chevron" id="f4-auth-chevron">&#9662;</span>
+                </div>
+                <div class="lock-badge" id="f4-lock-badge">
+                  <div class="lock-glow" id="f4-lock-glow"></div>
+                  <svg viewBox="0 0 48 48">
+                    <rect id="f4-lock-body" x="10" y="20" width="28" height="22" rx="5" fill="rgba(124,140,160,0.28)" />
+                    <path
+                      id="f4-lock-shackle"
+                      d="M16 20 V13 A8 8 0 0 1 32 13 V20"
+                      fill="none"
+                      stroke="#7c8ca0"
+                      stroke-width="5"
+                      stroke-linecap="round"
+                    />
+                  </svg>
+                  <div class="lock-status">
+                    <span class="lock-status-pending" id="f4-status-pending">Non authentifié</span>
+                    <span class="lock-status-connected" id="f4-status-connected">Connecté</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="validate-btn" id="f4-validate-btn">
+              <div class="btn-glow" id="f4-btn-glow"></div>
+              <span>Valider la connexion</span>
+              <svg class="validate-check" id="f4-validate-check" viewBox="0 0 24 24">
+                <path
+                  d="M5 12.5L10 17.5L19 7"
+                  fill="none"
+                  stroke="#ffffff"
+                  stroke-width="3"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </div>
+
+            <svg class="connect-svg" viewBox="0 0 1400 760" preserveAspectRatio="none">
+              <path id="f4-connect-path" class="connect-path" d="M576,370 C950,320 950,20 103,24" />
+            </svg>
+          </div>
+        </div>
+
+        <div id="f4-ripple-1" class="ripple"></div>
+        <div id="f4-ripple-2" class="ripple"></div>
+        <div id="f4-ripple-3" class="ripple"></div>
+
+        <div id="f4-cursor" class="cursor clip" data-start="0" data-duration="8.856" data-track-index="4">
+          <svg width="28" height="28" viewBox="0 0 24 24">
+            <path d="M5 3L19 12L12 13L9 20L5 3Z" fill="#FFFFFF" stroke="#0B1E33" stroke-width="1" />
+          </svg>
+        </div>
+      </div>
+
+      <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+      <script>
+        window.__timelines = window.__timelines || {};
+        const tl = gsap.timeline({ paused: true });
+
+        /* ============================================================
+           Global coordinates (canvas space, 1920x1080). Window is a
+           1400x760 card centered horizontally, top at 140 — identical
+           geometry to 03-etape-1.html / 05-etape-3.html for stage
+           continuity across the three "Étape" frames.
+           ============================================================ */
+        const WIN_LEFT = 260;
+        const WIN_TOP = 140;
+
+        // Field / control centers, computed from the authored CSS rhythm
+        // (see stylesheet comments: eyebrow 34 + title 72 + label 28 stack).
+        const URL_FIELD_X = WIN_LEFT + 64 + 380; // content-left(324) + field half-width(380)
+        const URL_FIELD_Y = WIN_TOP + 88 + 222 + 32; // window-body(88) + stack-offset(222) + half-height(32)
+
+        const AUTH_SEL_X = WIN_LEFT + 64 + 230;
+        const AUTH_SEL_Y = WIN_TOP + 88 + 338 + 32;
+
+        const LOCK_X = WIN_LEFT + 64 + 460 + 20 + 32;
+        const LOCK_Y = AUTH_SEL_Y;
+
+        const VALIDATE_X = WIN_LEFT + 64 + 160;
+        const VALIDATE_Y = WIN_TOP + 88 + 442 + 32;
+
+        const CURSOR_START_X = 1520;
+        const CURSOR_START_Y = 820;
+
+        /* ============================================================
+           Scene 1 (0.0-1.8s) — continuity stage (window/badge/titlebar
+           already present, static, no re-entrance). Panel heading + the
+           empty URL field reveal quickly so the hero form is visible by
+           t<=0.5s. Cursor arrives and clicks into the field.
+           ============================================================ */
+        tl.fromTo("#f4-eyebrow", { y: 10, opacity: 0 }, { y: 0, opacity: 1, duration: 0.25, ease: "power3.out" }, 0.0);
+        tl.fromTo("#f4-title", { y: 14, opacity: 0 }, { y: 0, opacity: 1, duration: 0.3, ease: "power3.out" }, 0.05);
+        tl.fromTo("#f4-url-label", { y: 10, opacity: 0 }, { y: 0, opacity: 1, duration: 0.25, ease: "power3.out" }, 0.15);
+        tl.fromTo(
+          "#f4-url-wrap",
+          { scale: 0.94, opacity: 0 },
+          { scale: 1, opacity: 1, duration: 0.3, ease: "power3.out" },
+          0.2
+        );
+
+        tl.fromTo(
+          "#f4-cursor",
+          { x: CURSOR_START_X, y: CURSOR_START_Y },
+          { x: URL_FIELD_X, y: URL_FIELD_Y, duration: 0.6, ease: "power2.inOut" },
+          0.6
+        );
+
+        const CLICK1_AT = 1.3;
+        tl.to("#f4-cursor", { scale: 0.85, duration: 0.09, ease: "power2.in", yoyo: true, repeat: 1 }, CLICK1_AT);
+        tl.set("#f4-ripple-1", { x: URL_FIELD_X, y: URL_FIELD_Y, opacity: 1 }, CLICK1_AT);
+        tl.fromTo(
+          "#f4-ripple-1",
+          { scale: 0, opacity: 1 },
+          { scale: 3.2, opacity: 0, duration: 0.5, ease: "power2.out", immediateRender: false },
+          CLICK1_AT
+        );
+        tl.to(
+          ".url-field",
+          { borderColor: "#60a5fa", duration: 0.3, ease: "power2.out" },
+          CLICK1_AT
+        );
+
+        // Caret blinks once the field is focused. Finite yoyo, computed span.
+        const CARET_BLINK_START = 1.3;
+        const CARET_BLINK_END = 4.2;
+        const BLINK_HALF_PERIOD = 0.3;
+        const blinkRepeats = Math.max(
+          0,
+          Math.ceil((CARET_BLINK_END - CARET_BLINK_START) / BLINK_HALF_PERIOD) - 1
+        );
+        tl.to(
+          "#f4-caret",
+          { opacity: 0, duration: BLINK_HALF_PERIOD, ease: "steps(1)", yoyo: true, repeat: blinkRepeats },
+          CARET_BLINK_START
+        );
+
+        /* ============================================================
+           Scene 2 (1.8-4.1s) — type-on reveal of the stylised MCP
+           address, paced to "renseignez l'adresse de votre serveur MCP".
+           ============================================================ */
+        const urlTextEl = document.getElementById("f4-url-text");
+        const fullUrlWidth = urlTextEl.scrollWidth;
+        tl.fromTo(
+          "#f4-url-text",
+          { maxWidth: 0 },
+          { maxWidth: fullUrlWidth, duration: 2.0, ease: "none" },
+          1.85
+        );
+        tl.to("#f4-caret", { opacity: 0, duration: 0.2, ease: "power1.out" }, 4.2);
+
+        /* ============================================================
+           Scene 3 (4.1-6.5s) — auth-mode selector reveals per-word,
+           cursor clicks it, a neutral (unlocked) padlock spring-pops in
+           beside it, then the cursor travels toward "Valider".
+           ============================================================ */
+        tl.fromTo(
+          "#f4-auth-word-1",
+          { y: 8, opacity: 0 },
+          { y: 0, opacity: 1, duration: 0.3, ease: "power3.out" },
+          4.1
+        );
+        tl.fromTo(
+          "#f4-auth-word-2",
+          { y: 8, opacity: 0 },
+          { y: 0, opacity: 1, duration: 0.35, ease: "power3.out" },
+          4.22
+        );
+        tl.fromTo(
+          "#f4-auth-selector",
+          { scale: 0.92, opacity: 0 },
+          { scale: 1, opacity: 1, duration: 0.35, ease: "power3.out" },
+          4.4
+        );
+
+        tl.fromTo(
+          "#f4-cursor",
+          { x: URL_FIELD_X, y: URL_FIELD_Y },
+          { x: AUTH_SEL_X, y: AUTH_SEL_Y, duration: 0.55, ease: "power2.inOut" },
+          4.1
+        );
+
+        const CLICK2_AT = 4.85;
+        tl.to("#f4-cursor", { scale: 0.85, duration: 0.09, ease: "power2.in", yoyo: true, repeat: 1 }, CLICK2_AT);
+        tl.to(
+          "#f4-auth-selector",
+          { scale: 0.97, duration: 0.09, ease: "power2.in", yoyo: true, repeat: 1 },
+          CLICK2_AT
+        );
+        tl.set("#f4-ripple-2", { x: AUTH_SEL_X, y: AUTH_SEL_Y, opacity: 1 }, CLICK2_AT);
+        tl.fromTo(
+          "#f4-ripple-2",
+          { scale: 0, opacity: 1 },
+          { scale: 3.2, opacity: 0, duration: 0.5, ease: "power2.out", immediateRender: false },
+          CLICK2_AT
+        );
+        tl.to("#f4-auth-selector", { borderColor: "#60a5fa", duration: 0.3, ease: "power2.out" }, CLICK2_AT);
+        tl.to("#f4-auth-chevron", { rotation: 180, duration: 0.3, ease: "power2.out" }, CLICK2_AT);
+
+        // Neutral (open/unlocked) padlock spring-pops in beside the selector.
+        tl.set("#f4-lock-shackle", { rotation: -22, transformOrigin: "16px 20px" }, 5.15);
+        tl.fromTo(
+          "#f4-lock-badge",
+          { scale: 0, opacity: 0 },
+          { scale: 1, opacity: 1, duration: 0.4, ease: "power3.out" },
+          5.15
+        );
+
+        tl.fromTo(
+          "#f4-cursor",
+          { x: AUTH_SEL_X, y: AUTH_SEL_Y },
+          { x: VALIDATE_X, y: VALIDATE_Y, duration: 0.55, ease: "power2.inOut" },
+          5.8
+        );
+
+        /* ============================================================
+           Scene 4 (6.5-8.856s) — "Valider la connexion" press-release,
+           padlock closes (rotation + svg-path-draw snap), a pulsed
+           connection line draws from the lock to the Claude mark, green
+           success glow, final hold.
+           ============================================================ */
+        const PRESS_START = 6.5;
+        const PRESS_DUR = 0.14;
+        const RELEASE_START = PRESS_START + PRESS_DUR;
+        const RELEASE_DUR = 0.6;
+
+        tl.to("#f4-cursor", { scale: 0.85, duration: 0.09, ease: "power2.in" }, PRESS_START);
+        tl.to("#f4-validate-btn", { scale: 0.94, duration: PRESS_DUR, ease: "power1.in" }, PRESS_START);
+        tl.to("#f4-cursor", { scale: 1, duration: 0.2, ease: "power2.out" }, RELEASE_START);
+        tl.to("#f4-validate-btn", { scale: 1, duration: RELEASE_DUR, ease: "back.out(1.7)" }, RELEASE_START);
+
+        tl.set("#f4-ripple-3", { x: VALIDATE_X, y: VALIDATE_Y, opacity: 1 }, PRESS_START);
+        tl.fromTo(
+          "#f4-ripple-3",
+          { scale: 0, opacity: 1 },
+          { scale: 3.5, opacity: 0, duration: 0.6, ease: "power2.out", immediateRender: false },
+          PRESS_START
+        );
+
+        // Button confirms: background -> success green, checkmark pops.
+        tl.to(".validate-btn", { backgroundColor: "#34d399", duration: 0.4, ease: "power2.out" }, RELEASE_START);
+        tl.fromTo(
+          "#f4-validate-check",
+          { scale: 0, opacity: 0 },
+          { scale: 1, opacity: 1, duration: 0.4, ease: "back.out(1.6)" },
+          RELEASE_START
+        );
+        tl.fromTo(
+          "#f4-btn-glow",
+          { scale: 1, opacity: 0 },
+          { scale: 1.6, opacity: 0.7, duration: 0.4, ease: "power2.out" },
+          RELEASE_START
+        );
+        tl.to("#f4-btn-glow", { opacity: 0, duration: 0.4, ease: "power2.in" }, RELEASE_START + 0.4);
+
+        // Padlock closes: shackle rotates shut + a quick svg-path-draw snap,
+        // body/stroke shift from neutral to success green.
+        const LOCK_CLOSE_AT = RELEASE_START + 0.06;
+        const shacklePath = document.getElementById("f4-lock-shackle");
+        const shackleLen = shacklePath.getTotalLength();
+        shacklePath.style.strokeDasharray = `${shackleLen}`;
+        shacklePath.style.strokeDashoffset = `${shackleLen * 0.22}`;
+
+        tl.to(
+          "#f4-lock-shackle",
+          { rotation: 0, duration: 0.5, ease: "back.out(1.3)" },
+          LOCK_CLOSE_AT
+        );
+        tl.to(
+          "#f4-lock-shackle",
+          { strokeDashoffset: 0, stroke: "#34d399", duration: 0.35, ease: "power2.out" },
+          LOCK_CLOSE_AT
+        );
+        tl.to("#f4-lock-body", { fill: "rgba(52,211,153,0.28)", duration: 0.35, ease: "power2.out" }, LOCK_CLOSE_AT + 0.05);
+        tl.to("#f4-lock-badge", { borderColor: "#34d399", duration: 0.35, ease: "power2.out" }, LOCK_CLOSE_AT + 0.05);
+        tl.fromTo(
+          "#f4-lock-glow",
+          { scale: 1, opacity: 0 },
+          { scale: 1.5, opacity: 0.7, duration: 0.35, ease: "power2.out" },
+          LOCK_CLOSE_AT + 0.1
+        );
+        tl.to("#f4-lock-glow", { opacity: 0, duration: 0.4, ease: "power2.in" }, LOCK_CLOSE_AT + 0.5);
+
+        tl.to("#f4-status-pending", { opacity: 0, duration: 0.3, ease: "power2.out" }, 7.0);
+        tl.to("#f4-status-connected", { opacity: 1, duration: 0.3, ease: "power2.out" }, 7.0);
+
+        // Pulsed connection line: draw once, then two flowing pulses.
+        const connectPath = document.getElementById("f4-connect-path");
+        const connectLen = connectPath.getTotalLength();
+        connectPath.style.strokeDasharray = `${connectLen}`;
+        connectPath.style.strokeDashoffset = `${connectLen}`;
+
+        const LINE_DRAW_AT = 7.3;
+        tl.to(
+          "#f4-connect-path",
+          { strokeDashoffset: 0, duration: 0.5, ease: "power2.out" },
+          LINE_DRAW_AT
+        );
+        tl.set("#f4-connect-path", { strokeDasharray: "14 10" }, LINE_DRAW_AT + 0.5);
+        tl.to(
+          "#f4-connect-path",
+          { strokeDashoffset: -48, duration: 0.5, ease: "none", repeat: 1 },
+          LINE_DRAW_AT + 0.5
+        );
+
+        // Success glow blooms behind the Claude mark and settles into a
+        // single quiet breath for the final hold.
+        const GLOW_AT = LINE_DRAW_AT + 0.5;
+        tl.fromTo(
+          "#f4-mark-glow",
+          { scale: 1, opacity: 0 },
+          { scale: 1.7, opacity: 0.85, duration: 0.4, ease: "power2.out" },
+          GLOW_AT
+        );
+        tl.to(
+          "#f4-mark-glow",
+          { scale: 1.5, duration: 0.3, ease: "sine.inOut", yoyo: true, repeat: 1 },
+          GLOW_AT + 0.4
+        );
+
+        // Subtle final jitter to keep the hold from reading dead.
+        tl.to(
+          "#f4-validate-btn",
+          { y: -2, duration: 0.25, ease: "sine.inOut", yoyo: true, repeat: 1 },
+          8.3
+        );
+
+        window.__timelines["04-etape-2"] = tl;
+      </script>
+    </template>
+  </body>
+</html>

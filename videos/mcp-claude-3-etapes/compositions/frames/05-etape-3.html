@@ -1,0 +1,650 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>05-etape-3</title>
+  </head>
+  <body>
+    <template>
+      <style>
+        @font-face {
+          font-family: "Space Grotesk";
+          src: url("../../assets/fonts/SpaceGrotesk-Variable.woff2") format("woff2-variations");
+          font-weight: 300 700;
+        }
+        @font-face {
+          font-family: "Inter";
+          src: url("../../assets/fonts/Inter-Variable.woff2") format("woff2-variations");
+          font-weight: 100 900;
+        }
+
+        #root {
+          position: absolute;
+          inset: 0;
+          overflow: hidden;
+          font-family: "Inter", sans-serif;
+        }
+
+        .bg-ground {
+          position: absolute;
+          inset: 0;
+          background: #0b1e33;
+        }
+
+        /* ---- badge pill (top-left, outside window) ---- */
+        .badge-pill {
+          position: absolute;
+          left: 140px;
+          top: 80px;
+          padding: 14px 28px;
+          border-radius: 100px;
+          background: #3b82f6;
+          color: #ffffff;
+          font-family: "Space Grotesk", sans-serif;
+          font-weight: 600;
+          font-size: 26px;
+          letter-spacing: 0.01em;
+          transform-origin: 0% 50%;
+        }
+
+        /* ---- app window (shared stage, matches Frames 03-04) ---- */
+        .app-window {
+          position: absolute;
+          left: 50%;
+          top: 140px;
+          width: 1400px;
+          height: 760px;
+          margin-left: -700px;
+          border-radius: 24px;
+          background: rgba(255, 255, 255, 0.04);
+          border: 1.5px solid rgba(59, 130, 246, 0.35);
+          overflow: hidden;
+          transform-origin: 50% 50%;
+        }
+
+        .titlebar {
+          position: absolute;
+          left: 0;
+          top: 0;
+          width: 100%;
+          height: 48px;
+          display: flex;
+          align-items: center;
+          padding: 0 24px;
+          border-bottom: 1px solid rgba(59, 130, 246, 0.18);
+          box-sizing: border-box;
+        }
+
+        .titlebar .dot {
+          width: 10px;
+          height: 10px;
+          border-radius: 50%;
+          background: #7c8ca0;
+          opacity: 0.6;
+          margin-right: 8px;
+        }
+
+        .titlebar .claude-mark {
+          width: 18px;
+          height: 18px;
+          margin-left: 16px;
+          margin-right: 8px;
+          color: #ffffff;
+        }
+
+        .titlebar .claude-word {
+          font-family: "Inter", sans-serif;
+          font-weight: 500;
+          font-size: 15px;
+          color: #ffffff;
+        }
+
+        .window-body {
+          position: absolute;
+          left: 0;
+          top: 88px;
+          width: 100%;
+          height: calc(100% - 88px);
+          box-sizing: border-box;
+        }
+
+        /* ---- persistent status checkmark (pops big at center in Scene 1,
+           then shrinks/moves into this corner slot as a permanent status) ---- */
+        .check-corner {
+          position: absolute;
+          top: 12px;
+          right: 24px;
+          width: 32px;
+          height: 32px;
+          border-radius: 50%;
+          background: rgba(52, 211, 153, 0.16);
+          border: 2px solid #34d399;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          transform-origin: 50% 50%;
+          will-change: transform;
+          z-index: 20;
+        }
+        .check-corner svg {
+          width: 60%;
+          height: 60%;
+          display: block;
+        }
+
+        /* ---- chat conversation row ---- */
+        .chat-row {
+          position: absolute;
+          left: 64px;
+          top: 40px;
+          width: 1272px;
+          height: 72px;
+          border-radius: 36px;
+          background: rgba(59, 130, 246, 0.06);
+          border: 1.5px solid rgba(59, 130, 246, 0.25);
+          box-sizing: border-box;
+          display: flex;
+          align-items: center;
+          padding: 0 12px 0 28px;
+        }
+
+        .chat-text-wrap {
+          display: inline-flex;
+          align-items: baseline;
+          white-space: nowrap;
+        }
+
+        .chat-text {
+          font-family: "Space Grotesk", sans-serif;
+          font-weight: 500;
+          font-size: 24px;
+          color: #ffffff;
+        }
+
+        .chat-caret {
+          display: inline-block;
+          width: 3px;
+          height: 26px;
+          margin-left: 4px;
+          background: #3b82f6;
+          transform: translateY(4px);
+        }
+
+        .send-btn {
+          margin-left: auto;
+          width: 48px;
+          height: 48px;
+          border-radius: 50%;
+          background: #3b82f6;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          transform-origin: 50% 50%;
+          will-change: transform;
+        }
+        .send-btn svg {
+          width: 20px;
+          height: 20px;
+        }
+
+        /* ---- tools list (cascading result pills) ---- */
+        .tools-list {
+          position: absolute;
+          left: 64px;
+          top: 152px;
+          display: flex;
+          flex-direction: column;
+          gap: 16px;
+        }
+
+        .tool-pill {
+          display: inline-flex;
+          align-items: center;
+          gap: 16px;
+          height: 56px;
+          padding: 0 24px;
+          border-radius: 100px;
+          background: rgba(59, 130, 246, 0.1);
+          border: 1.5px solid rgba(59, 130, 246, 0.35);
+          box-sizing: border-box;
+          transform-origin: 0% 50%;
+          will-change: transform;
+        }
+
+        .tool-pill .label {
+          font-family: "Space Grotesk", sans-serif;
+          font-weight: 500;
+          font-size: 20px;
+          color: #ffffff;
+        }
+
+        .tool-pill .check-inline {
+          width: 24px;
+          height: 24px;
+          border-radius: 50%;
+          background: rgba(52, 211, 153, 0.18);
+          border: 1.5px solid #34d399;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          flex-shrink: 0;
+          transform-origin: 50% 50%;
+        }
+        .tool-pill .check-inline svg {
+          width: 60%;
+          height: 60%;
+        }
+
+        /* ---- final payoff line ---- */
+        .final-line {
+          position: absolute;
+          left: 64px;
+          top: 464px;
+          font-family: "Space Grotesk", sans-serif;
+          font-weight: 500;
+          font-size: 24px;
+          color: #a8b7c8;
+        }
+        .final-line .arrow {
+          color: #3b82f6;
+          margin-right: 10px;
+        }
+
+        /* ---- ripple rings for clicks ---- */
+        .ripple {
+          position: absolute;
+          width: 90px;
+          height: 90px;
+          border-radius: 50%;
+          border: 2px solid #3b82f6;
+          transform: translate(-50%, -50%) scale(0);
+          opacity: 0;
+          pointer-events: none;
+          z-index: 50;
+        }
+
+        /* ---- cursor ---- */
+        .cursor {
+          position: absolute;
+          left: 0;
+          top: 0;
+          width: 28px;
+          height: 28px;
+          pointer-events: none;
+          z-index: 100;
+          transform: translate(1180px, 640px);
+        }
+        .cursor svg {
+          display: block;
+        }
+      </style>
+
+      <div id="root" data-composition-id="05-etape-3" data-width="1920" data-height="1080">
+        <div
+          id="f5-bg"
+          class="bg-ground clip"
+          data-start="0"
+          data-duration="11.285"
+          data-track-index="1"
+        ></div>
+
+        <div
+          id="f5-badge"
+          class="badge-pill clip"
+          data-start="0"
+          data-duration="11.285"
+          data-track-index="2"
+        >
+          Étape 3
+        </div>
+
+        <div
+          id="f5-window"
+          class="app-window clip"
+          data-start="0"
+          data-duration="11.285"
+          data-track-index="3"
+        >
+          <div class="titlebar">
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <img class="claude-mark" src="../../assets/logos/claude-mono.svg" alt="" />
+            <div class="claude-word">Claude</div>
+          </div>
+
+          <div id="f5-check-corner" class="check-corner">
+            <svg viewBox="0 0 24 24" fill="none">
+              <path
+                d="M4 12.5L9.5 18L20 6"
+                stroke="#34D399"
+                stroke-width="3"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </div>
+
+          <div class="window-body">
+            <div id="f5-chat-row" class="chat-row">
+              <div class="chat-text-wrap">
+                <span id="f5-chat-text" class="chat-text"></span>
+                <span id="f5-chat-caret" class="chat-caret"></span>
+              </div>
+              <div id="f5-send-btn" class="send-btn">
+                <svg viewBox="0 0 24 24" fill="none">
+                  <path
+                    d="M4 12H20M20 12L14 6M20 12L14 18"
+                    stroke="#0B1E33"
+                    stroke-width="2.4"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </div>
+            </div>
+
+            <div id="f5-tools-list" class="tools-list">
+              <div id="f5-pill-0" class="tool-pill" style="margin-left: 0px">
+                <span class="label">Créer une fiche client</span>
+                <span id="f5-check-0" class="check-inline">
+                  <svg viewBox="0 0 24 24" fill="none">
+                    <path
+                      d="M4 12.5L9.5 18L20 6"
+                      stroke="#34D399"
+                      stroke-width="3"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </span>
+              </div>
+              <div id="f5-pill-1" class="tool-pill" style="margin-left: 28px">
+                <span class="label">Mettre à jour le stock</span>
+                <span id="f5-check-1" class="check-inline">
+                  <svg viewBox="0 0 24 24" fill="none">
+                    <path
+                      d="M4 12.5L9.5 18L20 6"
+                      stroke="#34D399"
+                      stroke-width="3"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </span>
+              </div>
+              <div id="f5-pill-2" class="tool-pill" style="margin-left: 56px">
+                <span class="label">Générer un rapport</span>
+                <span id="f5-check-2" class="check-inline">
+                  <svg viewBox="0 0 24 24" fill="none">
+                    <path
+                      d="M4 12.5L9.5 18L20 6"
+                      stroke="#34D399"
+                      stroke-width="3"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </span>
+              </div>
+              <div id="f5-pill-3" class="tool-pill" style="margin-left: 0px">
+                <span class="label">Envoyer une notification</span>
+                <span id="f5-check-3" class="check-inline">
+                  <svg viewBox="0 0 24 24" fill="none">
+                    <path
+                      d="M4 12.5L9.5 18L20 6"
+                      stroke="#34D399"
+                      stroke-width="3"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </span>
+              </div>
+            </div>
+
+            <div id="f5-final-line" class="final-line">
+              <span class="arrow">→</span><span>pilotable par une simple phrase</span>
+            </div>
+          </div>
+        </div>
+
+        <div id="f5-ripple-1" class="ripple"></div>
+        <div id="f5-ripple-2" class="ripple"></div>
+
+        <div
+          id="f5-cursor"
+          class="cursor clip"
+          data-start="0"
+          data-duration="11.285"
+          data-track-index="4"
+        >
+          <svg width="28" height="28" viewBox="0 0 24 24">
+            <path d="M5 3L19 12L12 13L9 20L5 3Z" fill="#FFFFFF" stroke="#0B1E33" stroke-width="1" />
+          </svg>
+        </div>
+      </div>
+
+      <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+      <script>
+        window.__timelines = window.__timelines || {};
+        const tl = gsap.timeline({ paused: true });
+
+        /* ============================================================
+           Scene 1 (0.0-2.3s) — stage settles (window fade+scale-in,
+           badge "Étape 3" spring-pop, shared continuity with F3/F4);
+           a big green checkmark spring-pops at the window's center for
+           "c'est prêt !", holds briefly, then shrinks + translates into
+           its permanent corner status-slot (card-morph-anchor mechanics:
+           position + scale move together).
+           ============================================================ */
+        tl.fromTo(
+          "#f5-window",
+          { scale: 0.86, opacity: 0 },
+          { scale: 1, opacity: 1, duration: 0.9, ease: "power3.out" },
+          0.0
+        );
+        tl.fromTo(
+          "#f5-badge",
+          { scale: 0, opacity: 0 },
+          { scale: 1, opacity: 1, duration: 0.5, ease: "power3.out" },
+          0.55
+        );
+
+        // Hero checkmark: rest position is the corner slot (top:12,right:24,
+        // 32px). BIG_SCALE = 180/32 = 5.625 makes it read as a ~180px hero
+        // at the window's center; the x/y offset carries it there from its
+        // native corner position (window-local center 700,380 minus native
+        // corner center 1360,28).
+        const CHECK_DX = -660;
+        const CHECK_DY = 352;
+        const CHECK_BIG_SCALE = 5.625;
+
+        tl.fromTo(
+          "#f5-check-corner",
+          { x: CHECK_DX, y: CHECK_DY, scale: 0, opacity: 0 },
+          {
+            x: CHECK_DX,
+            y: CHECK_DY,
+            scale: CHECK_BIG_SCALE,
+            opacity: 1,
+            duration: 0.5,
+            ease: "power3.out",
+          },
+          0.95
+        );
+        // shrink + move into the permanent corner slot
+        tl.to(
+          "#f5-check-corner",
+          { x: 0, y: 0, scale: 1, duration: 0.6, ease: "power2.inOut" },
+          1.55
+        );
+
+        /* ============================================================
+           Scene 2 (2.3-6.0s) — chat row reveals, cursor clicks into it,
+           text types on with a blinking caret, cursor moves to the send
+           button and presses it (press-release-spring).
+           ============================================================ */
+        tl.fromTo(
+          "#f5-chat-row",
+          { y: 14, opacity: 0 },
+          { y: 0, opacity: 1, duration: 0.35, ease: "power3.out" },
+          2.15
+        );
+
+        const CURSOR_START_X = 1180;
+        const CURSOR_START_Y = 640;
+        const INPUT_X = 464;
+        const INPUT_Y = 304;
+        const SEND_X = 1562;
+        const SEND_Y = 304;
+
+        tl.fromTo(
+          "#f5-cursor",
+          { x: CURSOR_START_X, y: CURSOR_START_Y },
+          { x: INPUT_X, y: INPUT_Y, duration: 0.6, ease: "power2.inOut" },
+          2.3
+        );
+
+        const INPUT_CLICK_AT = 2.95;
+        tl.to(
+          "#f5-cursor",
+          { scale: 0.85, duration: 0.09, ease: "power2.in", yoyo: true, repeat: 1 },
+          INPUT_CLICK_AT
+        );
+        tl.to(
+          "#f5-chat-row",
+          { borderColor: "rgba(59,130,246,0.7)", duration: 0.25, ease: "power2.out" },
+          INPUT_CLICK_AT
+        );
+        tl.set("#f5-ripple-1", { x: INPUT_X, y: INPUT_Y, opacity: 1 }, INPUT_CLICK_AT);
+        tl.fromTo(
+          "#f5-ripple-1",
+          { scale: 0, opacity: 1 },
+          { scale: 3.2, opacity: 0, duration: 0.5, ease: "power2.out", immediateRender: false },
+          INPUT_CLICK_AT
+        );
+
+        // Type-on: smooth char-slice typewriter of "liste mes outils disponibles"
+        const FULL_TEXT = "liste mes outils disponibles";
+        const TYPE_START = 3.05;
+        const TYPE_DUR = FULL_TEXT.length * 0.06; // 1.68s
+        const textEl = document.getElementById("f5-chat-text");
+        const lenDriver = { v: 0 };
+        tl.to(
+          lenDriver,
+          {
+            v: FULL_TEXT.length,
+            duration: TYPE_DUR,
+            ease: "power1.inOut",
+            onUpdate: () => {
+              textEl.textContent = FULL_TEXT.substring(0, Math.floor(lenDriver.v));
+            },
+          },
+          TYPE_START
+        );
+
+        // Caret blink — deterministic sin-based, runs while the field is
+        // active (row settle -> send press), then hidden once sent.
+        const CARET_BLINK_START = 2.5;
+        const CARET_BLINK_END = 5.35;
+        const caretEl = document.getElementById("f5-chat-caret");
+        const blinkDriver = { p: 0 };
+        tl.to(
+          blinkDriver,
+          {
+            p: Math.PI * 2 * 5,
+            duration: CARET_BLINK_END - CARET_BLINK_START,
+            ease: "none",
+            onUpdate: () => {
+              caretEl.style.opacity = Math.sin(blinkDriver.p) > 0 ? "1" : "0";
+            },
+          },
+          CARET_BLINK_START
+        );
+        tl.set(caretEl, { opacity: 0 }, CARET_BLINK_END);
+
+        // Cursor moves to the send button
+        tl.to(
+          "#f5-cursor",
+          { x: SEND_X, y: SEND_Y, duration: 0.5, ease: "power2.inOut" },
+          4.85
+        );
+
+        // press-release-spring on the send button
+        const PRESS_START = 5.35;
+        const PRESS_DUR = 0.12;
+        const RELEASE_START = PRESS_START + PRESS_DUR;
+        const RELEASE_DUR = 0.5;
+
+        tl.to("#f5-cursor", { scale: 0.85, duration: 0.09, ease: "power2.in" }, PRESS_START);
+        tl.to(
+          "#f5-send-btn",
+          { scale: 0.88, duration: PRESS_DUR, ease: "power1.in" },
+          PRESS_START
+        );
+        tl.to("#f5-cursor", { scale: 1, duration: 0.2, ease: "power2.out" }, RELEASE_START);
+        tl.to(
+          "#f5-send-btn",
+          { scale: 1, duration: RELEASE_DUR, ease: "back.out(1.7)" },
+          RELEASE_START
+        );
+
+        tl.set("#f5-ripple-2", { x: SEND_X, y: SEND_Y, opacity: 1 }, PRESS_START);
+        tl.fromTo(
+          "#f5-ripple-2",
+          { scale: 0, opacity: 1 },
+          { scale: 3.2, opacity: 0, duration: 0.5, ease: "power2.out", immediateRender: false },
+          PRESS_START
+        );
+
+        /* ============================================================
+           Scene 3 (6.0-9.4s) — 4 tool-action pills cascade in below the
+           chat row, staggered on the voice, each sealed with a small
+           green checkmark on arrival. Asymmetric left-indent per index
+           (3-layer depth pattern) plus a slightly smaller starting scale
+           for more-indented items reads as layered depth.
+           ============================================================ */
+        const PILL_REVEAL = [6.0, 6.5, 7.0, 7.5];
+        const PILL_CHECK = [6.35, 6.85, 7.35, 7.85];
+        const PILL_SCALE_FROM = [0.96, 0.93, 0.9, 0.96]; // mirrors indent depth
+
+        for (let i = 0; i < 4; i++) {
+          tl.fromTo(
+            `#f5-pill-${i}`,
+            { y: 20, opacity: 0, scale: PILL_SCALE_FROM[i] },
+            { y: 0, opacity: 1, scale: 1, duration: 0.5, ease: "power3.out" },
+            PILL_REVEAL[i]
+          );
+          tl.fromTo(
+            `#f5-check-${i}`,
+            { scale: 0, opacity: 0 },
+            { scale: 1, opacity: 1, duration: 0.3, ease: "power3.out" },
+            PILL_CHECK[i]
+          );
+        }
+
+        /* ============================================================
+           Scene 4 (9.4-11.285s) — closing line lands under the list;
+           final hold with a subtle finite jitter on the top (corner)
+           checkmark so the hold doesn't read dead.
+           ============================================================ */
+        tl.fromTo(
+          "#f5-final-line",
+          { y: 14, opacity: 0 },
+          { y: 0, opacity: 1, duration: 0.4, ease: "power3.out" },
+          9.4
+        );
+
+        const JITTER_START = 10.4;
+        tl.to(
+          "#f5-check-corner",
+          { y: -4, duration: 0.35, ease: "sine.inOut", yoyo: true, repeat: 1 },
+          JITTER_START
+        );
+
+        window.__timelines["05-etape-3"] = tl;
+      </script>
+    </template>
+  </body>
+</html>

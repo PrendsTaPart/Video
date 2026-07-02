@@ -1,0 +1,553 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>03-etape-1</title>
+  </head>
+  <body>
+    <template>
+      <style>
+        @font-face {
+          font-family: "Space Grotesk";
+          src: url("../../assets/fonts/SpaceGrotesk-Variable.woff2") format("woff2-variations");
+          font-weight: 300 700;
+        }
+        @font-face {
+          font-family: "Inter";
+          src: url("../../assets/fonts/Inter-Variable.woff2") format("woff2-variations");
+          font-weight: 100 900;
+        }
+
+        #root {
+          position: absolute;
+          inset: 0;
+          overflow: hidden;
+          font-family: "Inter", sans-serif;
+        }
+
+        .bg-ground {
+          position: absolute;
+          inset: 0;
+          background: #0b1e33;
+        }
+
+        /* ---- badge pill (top-left, outside window) ---- */
+        .badge-pill {
+          position: absolute;
+          left: 140px;
+          top: 80px;
+          padding: 14px 28px;
+          border-radius: 100px;
+          background: #3b82f6;
+          color: #ffffff;
+          font-family: "Space Grotesk", sans-serif;
+          font-weight: 600;
+          font-size: 26px;
+          letter-spacing: 0.01em;
+          transform-origin: 0% 50%;
+        }
+
+        /* ---- app window ---- */
+        .app-window {
+          position: absolute;
+          left: 50%;
+          top: 140px;
+          width: 1400px;
+          height: 760px;
+          margin-left: -700px;
+          border-radius: 24px;
+          background: rgba(255, 255, 255, 0.04);
+          border: 1.5px solid rgba(59, 130, 246, 0.35);
+          overflow: hidden;
+          transform-origin: 50% 50%;
+        }
+
+        .titlebar {
+          position: absolute;
+          left: 0;
+          top: 0;
+          width: 100%;
+          height: 48px;
+          display: flex;
+          align-items: center;
+          padding: 0 24px;
+          border-bottom: 1px solid rgba(59, 130, 246, 0.18);
+          box-sizing: border-box;
+        }
+
+        .titlebar .dot {
+          width: 10px;
+          height: 10px;
+          border-radius: 50%;
+          background: #7c8ca0;
+          opacity: 0.6;
+          margin-right: 8px;
+        }
+
+        .titlebar .claude-mark {
+          width: 18px;
+          height: 18px;
+          margin-left: 16px;
+          margin-right: 8px;
+          color: #ffffff;
+        }
+
+        .titlebar .claude-word {
+          font-family: "Inter", sans-serif;
+          font-weight: 500;
+          font-size: 15px;
+          color: #ffffff;
+        }
+
+        .window-body {
+          position: absolute;
+          left: 0;
+          top: 88px;
+          width: 100%;
+          height: calc(100% - 88px);
+          padding-left: 64px;
+          padding-right: 64px;
+          box-sizing: border-box;
+        }
+
+        /* ---- left menu ---- */
+        .menu-col {
+          position: absolute;
+          left: 64px;
+          top: 0;
+          width: 340px;
+        }
+
+        .menu-row {
+          display: flex;
+          align-items: center;
+          height: 64px;
+          padding: 0 20px;
+          border-radius: 10px;
+          font-family: "Space Grotesk", sans-serif;
+          font-weight: 500;
+          font-size: 22px;
+          color: #a8b7c8;
+          opacity: 0;
+        }
+
+        .menu-row.active {
+          background: rgba(59, 130, 246, 0.14);
+          color: #ffffff;
+        }
+
+        .submenu-row {
+          display: flex;
+          align-items: center;
+          height: 52px;
+          padding: 0 20px 0 44px;
+          border-radius: 10px;
+          font-family: "Inter", sans-serif;
+          font-weight: 500;
+          font-size: 19px;
+          color: #a8b7c8;
+          opacity: 0;
+        }
+
+        .submenu-row.active {
+          background: rgba(59, 130, 246, 0.1);
+          color: #ffffff;
+        }
+
+        /* ---- right panel ---- */
+        .panel {
+          position: absolute;
+          left: 452px;
+          top: 0;
+          right: 0;
+          height: 100%;
+          opacity: 0;
+        }
+
+        .panel-eyebrow {
+          font-family: "Space Grotesk", sans-serif;
+          font-weight: 600;
+          font-size: 15px;
+          letter-spacing: 0.08em;
+          text-transform: uppercase;
+          color: #3b82f6;
+          margin-bottom: 14px;
+        }
+
+        .panel-title {
+          font-family: "Space Grotesk", sans-serif;
+          font-weight: 600;
+          font-size: 34px;
+          color: #ffffff;
+          margin-bottom: 32px;
+        }
+
+        .connector-row {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          height: 64px;
+          padding: 0 22px;
+          border-radius: 12px;
+          background: rgba(59, 130, 246, 0.06);
+          border: 1.5px solid rgba(59, 130, 246, 0.16);
+          margin-bottom: 14px;
+          font-family: "Inter", sans-serif;
+          font-size: 18px;
+          color: #7c8ca0;
+        }
+
+        .connector-row .status {
+          font-family: "Space Grotesk", sans-serif;
+          font-size: 13px;
+          font-weight: 500;
+          letter-spacing: 0.04em;
+          text-transform: uppercase;
+          color: #7c8ca0;
+        }
+
+        .add-connector-btn {
+          position: relative;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          gap: 12px;
+          width: 560px;
+          margin-top: 22px;
+          height: 64px;
+          border-radius: 100px;
+          border: 1.5px solid #3b82f6;
+          background: rgba(59, 130, 246, 0.06);
+          color: #ffffff;
+          font-family: "Space Grotesk", sans-serif;
+          font-weight: 600;
+          font-size: 20px;
+          transform-origin: 50% 50%;
+        }
+
+        .add-connector-btn .plus {
+          font-size: 24px;
+          font-weight: 400;
+          color: #3b82f6;
+          line-height: 1;
+        }
+
+        .btn-glow {
+          position: absolute;
+          left: 50%;
+          top: 50%;
+          width: 100%;
+          height: 100%;
+          border-radius: 100px;
+          background: radial-gradient(
+            circle,
+            rgba(59, 130, 246, 0.9) 0%,
+            rgba(59, 130, 246, 0) 70%
+          );
+          filter: blur(18px);
+          transform: translate(-50%, -50%) scale(1);
+          opacity: 0;
+          pointer-events: none;
+        }
+
+        /* ---- ripple rings for clicks ---- */
+        .ripple {
+          position: absolute;
+          left: 0;
+          top: 0;
+          width: 90px;
+          height: 90px;
+          border-radius: 50%;
+          border: 2px solid #3b82f6;
+          transform: translate(-50%, -50%) scale(0);
+          opacity: 0;
+          pointer-events: none;
+          z-index: 50;
+        }
+
+        /* ---- cursor ---- */
+        .cursor {
+          position: absolute;
+          left: 0;
+          top: 0;
+          width: 28px;
+          height: 28px;
+          pointer-events: none;
+          z-index: 100;
+          opacity: 0;
+          transform: translate(1750px, 980px);
+        }
+
+        .cursor svg {
+          display: block;
+        }
+      </style>
+
+      <div id="root" data-composition-id="03-etape-1" data-width="1920" data-height="1080">
+        <div id="f3-bg" class="bg-ground clip" data-start="0" data-duration="7.941" data-track-index="1"></div>
+
+        <div id="f3-badge" class="badge-pill clip" data-start="0" data-duration="7.941" data-track-index="2">
+          Étape 1
+        </div>
+
+        <div id="f3-window" class="app-window clip" data-start="0" data-duration="7.941" data-track-index="3">
+          <div class="titlebar">
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <img class="claude-mark" src="../../assets/logos/claude-mono.svg" alt="" />
+            <div class="claude-word">Claude</div>
+          </div>
+
+          <div class="window-body">
+            <div class="menu-col">
+              <div id="f3-menu-general" class="menu-row">Général</div>
+              <div id="f3-menu-params" class="menu-row">Paramètres</div>
+              <div id="f3-sub-connecteurs" class="submenu-row">Connecteurs</div>
+            </div>
+
+            <div id="f3-panel" class="panel">
+              <div class="panel-eyebrow">Paramètres — Connecteurs</div>
+              <div class="panel-title">Connecteurs</div>
+
+              <div class="connector-row">
+                <span>Aucun connecteur actif</span>
+                <span class="status">Vide</span>
+              </div>
+
+              <div id="f3-add-btn" class="add-connector-btn">
+                <div class="btn-glow" id="f3-btn-glow"></div>
+                <span class="plus">+</span>
+                <span>Ajouter un connecteur personnalisé</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div id="f3-ripple-1" class="ripple"></div>
+        <div id="f3-ripple-2" class="ripple"></div>
+        <div id="f3-ripple-3" class="ripple"></div>
+
+        <div id="f3-cursor" class="cursor clip" data-start="0" data-duration="7.941" data-track-index="4">
+          <svg width="28" height="28" viewBox="0 0 24 24">
+            <path d="M5 3L19 12L12 13L9 20L5 3Z" fill="#FFFFFF" stroke="#0B1E33" stroke-width="1" />
+          </svg>
+        </div>
+      </div>
+
+      <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+      <script>
+        window.__timelines = window.__timelines || {};
+        const tl = gsap.timeline({ paused: true });
+
+        /* ============================================================
+           Scene 1 (0.0-1.6s) — window fade+scale-in centered, badge
+           spring-pops top-left.
+           ============================================================ */
+        tl.fromTo(
+          "#f3-window",
+          { scale: 0.86, opacity: 0 },
+          { scale: 1, opacity: 1, duration: 0.9, ease: "power3.out" },
+          0.0
+        );
+        tl.fromTo(
+          "#f3-badge",
+          { scale: 0, opacity: 0 },
+          { scale: 1, opacity: 1, duration: 0.5, ease: "power3.out" },
+          0.55
+        );
+
+        /* Menu rows reveal after the window settles, paced ahead of the
+           cursor's first move so the target already exists. */
+        tl.fromTo(
+          "#f3-menu-general",
+          { y: 14, opacity: 0 },
+          { y: 0, opacity: 1, duration: 0.4, ease: "power3.out" },
+          1.0
+        );
+        tl.fromTo(
+          "#f3-menu-params",
+          { y: 14, opacity: 0 },
+          { y: 0, opacity: 1, duration: 0.4, ease: "power3.out" },
+          1.12
+        );
+
+        /* ============================================================
+           Scene 2 (1.6-4.8s) — cursor targets "Paramètres", clicks
+           (cursor-click-ripple mechanics), panel slides/settles active;
+           cursor then descends to "Connecteurs" submenu row, clicks again.
+           ============================================================ */
+
+        // Cursor entry corner: outside the window, lower-right of canvas.
+        const CURSOR_START_X = 1750;
+        const CURSOR_START_Y = 980;
+
+        // Target 1: "Paramètres" row — window left(260) + menu-col left(64) +
+        // row half-width(170); vertical: window top(140) + window-body top(88,
+        // = titlebar 48 + 40 inset) + row1 height(64) + row2 half(32).
+        const PARAMS_X = 260 + 64 + 170;
+        const PARAMS_Y = 140 + 88 + 64 + 32;
+
+        // Cursor fades in at its entry corner, then moves to the first target.
+        tl.fromTo(
+          "#f3-cursor",
+          { x: CURSOR_START_X, y: CURSOR_START_Y, opacity: 0 },
+          { x: CURSOR_START_X, y: CURSOR_START_Y, opacity: 1, duration: 0.25, ease: "power2.out" },
+          1.6
+        );
+        tl.to(
+          "#f3-cursor",
+          { x: PARAMS_X, y: PARAMS_Y, duration: 0.7, ease: "power2.inOut" },
+          1.9
+        );
+
+        // click depression on cursor + target row
+        const CLICK1_AT = 2.7;
+        tl.to(
+          "#f3-cursor",
+          { scale: 0.85, duration: 0.09, ease: "power2.in", yoyo: true, repeat: 1 },
+          CLICK1_AT
+        );
+        tl.to(
+          "#f3-menu-params",
+          { scale: 0.97, duration: 0.09, ease: "power2.in", yoyo: true, repeat: 1 },
+          CLICK1_AT
+        );
+
+        // ripple 1 at Paramètres click point
+        tl.set("#f3-ripple-1", { x: PARAMS_X, y: PARAMS_Y, opacity: 1 }, CLICK1_AT);
+        tl.fromTo(
+          "#f3-ripple-1",
+          { scale: 0, opacity: 1 },
+          { scale: 4, opacity: 0, duration: 0.6, ease: "power2.out", immediateRender: false },
+          CLICK1_AT
+        );
+
+        // Paramètres row becomes active (discrete class-state swap — matches
+        // the same value the .active CSS rule already carries).
+        tl.set("#f3-menu-params", { className: "menu-row active" }, CLICK1_AT + 0.1);
+        tl.fromTo(
+          "#f3-sub-connecteurs",
+          { y: 10, opacity: 0 },
+          { y: 0, opacity: 1, duration: 0.4, ease: "power3.out" },
+          CLICK1_AT + 0.25
+        );
+
+        // Target 2: "Connecteurs" submenu row
+        // vertical: window top(140) + window-body top(88) + row1 h(64) + row2 h(64) + subrow half(26)
+        const CONN_X = 260 + 64 + 170;
+        const CONN_Y = 140 + 88 + 64 + 64 + 26;
+
+        tl.to(
+          "#f3-cursor",
+          { x: CONN_X, y: CONN_Y, duration: 0.6, ease: "power2.inOut" },
+          3.5
+        );
+
+        const CLICK2_AT = 4.2;
+        tl.to(
+          "#f3-cursor",
+          { scale: 0.85, duration: 0.09, ease: "power2.in", yoyo: true, repeat: 1 },
+          CLICK2_AT
+        );
+        tl.to(
+          "#f3-sub-connecteurs",
+          { scale: 0.97, duration: 0.09, ease: "power2.in", yoyo: true, repeat: 1 },
+          CLICK2_AT
+        );
+
+        tl.set("#f3-ripple-2", { x: CONN_X, y: CONN_Y, opacity: 1 }, CLICK2_AT);
+        tl.fromTo(
+          "#f3-ripple-2",
+          { scale: 0, opacity: 1 },
+          { scale: 4, opacity: 0, duration: 0.6, ease: "power2.out", immediateRender: false },
+          CLICK2_AT
+        );
+        tl.set("#f3-sub-connecteurs", { className: "submenu-row active" }, CLICK2_AT + 0.1);
+
+        /* ============================================================
+           Scene 3 (4.8-7.941s) — "Connecteurs" panel shown; cursor aims
+           at "+ Ajouter un connecteur personnalisé" and clicks with
+           press-release-spring; blue confirmation glow; final hold with
+           subtle jitter on the button.
+           ============================================================ */
+        const PANEL_AT = 4.8;
+        tl.fromTo(
+          "#f3-panel",
+          { opacity: 0, x: 24 },
+          { opacity: 1, x: 0, duration: 0.5, ease: "power3.out" },
+          PANEL_AT
+        );
+
+        // Button center: panel left(260 window + 452) + half of its fixed
+        // 560px width; vertical stack down from panel top(228): eyebrow(~18
+        // +14 margin) + title(~41 +32 margin) + connector-row(64 +14 margin)
+        // + button margin-top(22) + half button height(32).
+        const BTN_X = 260 + 452 + 560 / 2;
+        const BTN_Y = 228 + (18 + 14) + (41 + 32) + (64 + 14) + 22 + 32;
+
+        tl.to(
+          "#f3-cursor",
+          { x: BTN_X, y: BTN_Y, duration: 0.7, ease: "power2.inOut" },
+          5.6
+        );
+
+        // press-release-spring on the add-connector button
+        const PRESS_START = 6.4;
+        const PRESS_DUR = 0.14;
+        const RELEASE_START = PRESS_START + PRESS_DUR;
+        const RELEASE_DUR = 0.6;
+
+        tl.to(
+          "#f3-cursor",
+          { scale: 0.85, duration: 0.09, ease: "power2.in" },
+          PRESS_START
+        );
+        tl.to(
+          "#f3-add-btn",
+          { scale: 0.94, duration: PRESS_DUR, ease: "power1.in" },
+          PRESS_START
+        );
+        tl.to(
+          "#f3-cursor",
+          { scale: 1, duration: 0.2, ease: "power2.out" },
+          RELEASE_START
+        );
+        tl.to(
+          "#f3-add-btn",
+          { scale: 1, duration: RELEASE_DUR, ease: "back.out(1.7)" },
+          RELEASE_START
+        );
+
+        // click ripple at button
+        tl.set("#f3-ripple-3", { x: BTN_X, y: BTN_Y, opacity: 1 }, PRESS_START);
+        tl.fromTo(
+          "#f3-ripple-3",
+          { scale: 0, opacity: 1 },
+          { scale: 3.5, opacity: 0, duration: 0.6, ease: "power2.out", immediateRender: false },
+          PRESS_START
+        );
+
+        // blue confirmation glow behind the button
+        tl.fromTo(
+          "#f3-btn-glow",
+          { scale: 1, opacity: 0 },
+          { scale: 1.6, opacity: 0.8, duration: 0.45, ease: "power2.out" },
+          RELEASE_START
+        );
+        tl.to("#f3-btn-glow", { opacity: 0, duration: 0.5, ease: "power2.in" }, RELEASE_START + 0.45);
+
+        // subtle final jitter on the button (finite, deterministic) to keep the
+        // hold from reading dead
+        const JITTER_START = 7.2;
+        tl.to(
+          "#f3-add-btn",
+          { y: -3, duration: 0.3, ease: "sine.inOut", yoyo: true, repeat: 1 },
+          JITTER_START
+        );
+
+        window.__timelines["03-etape-1"] = tl;
+      </script>
+    </template>
+  </body>
+</html>

@@ -11,17 +11,17 @@ unit: the frame — 1920×1080 primary; 9:16 and 1:1 documented
 principle: atoms are sacred · composition is free · numbers come from the script
 
 colors:
-  bg: "#FFFFFF"
+  bg: "#0B1E33"
   primary: "#3B82F6"
-  text: "#0B1E33"
-  text-muted: "#6B6B6B"
-  text-light: "#9A9A9A"
-  accent-light: "rgba(59, 130, 246, 0.08)"
-  accent-medium: "rgba(59, 130, 246, 0.15)"
-  border: "rgba(59, 130, 246, 0.2)"
-  card-bg: "rgba(59, 130, 246, 0.04)"
-  positive: "#059669"
-  negative: "#dc2626"
+  text: "#FFFFFF"
+  text-muted: "#A8B7C8"
+  text-light: "#7C8CA0"
+  accent-light: "rgba(59, 130, 246, 0.14)"
+  accent-medium: "rgba(59, 130, 246, 0.24)"
+  border: "rgba(59, 130, 246, 0.35)"
+  card-bg: "rgba(59, 130, 246, 0.10)"
+  positive: "#34D399"
+  negative: "#F87171"
 
 radii:
   pill: "100px"
@@ -117,6 +117,7 @@ components:
 This is the **blue-professional** preset remixed onto the captured brand. The YAML frontmatter above (colors · typography · components) is **normative and already correct — use it verbatim.** The prose below is the ORIGINAL preset's intent; read it THROUGH the frontmatter:
 
 - **Colors** — use the frontmatter hex; preset color NAMES in prose (e.g. "cobalt", "cream") mean the remapped brand values.
+- **Ground polarity flip (deliberate, hand-adjusted after the automated remix):** the brief calls for a **dark navy background with white text**, not the preset's original light-cream/dark-text polarity. `colors.bg` is navy `#0B1E33`, `colors.text` is white `#FFFFFF` — the inverse of what the prose below describes ("warm cream canvas", "near-black headline"). Wherever the prose says **cream / light ground / near-black text**, read it as **navy ground / white text** — same roles, flipped polarity. `card-bg` / `accent-light` / `border` opacities were bumped up (10-35% vs the original 4-20%) so tinted cards stay visible on a dark ground. `positive`/`negative` were also lightened for contrast on navy. Everything else (single cobalt-blue accent, Space Grotesk + Inter, pill chrome, no shadows) is unchanged.
 
 
 ## Overview
