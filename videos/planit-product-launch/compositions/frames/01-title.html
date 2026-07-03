@@ -1,0 +1,229 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+  </head>
+  <body>
+    <template>
+      <style>
+        @font-face {
+          font-family: "Space Grotesk";
+          src: url("assets/vendor/fonts/SpaceGrotesk-Variable.woff2") format("woff2-variations");
+          font-weight: 300 700;
+        }
+        @font-face {
+          font-family: "Inter";
+          src: url("assets/vendor/fonts/Inter-Variable.woff2") format("woff2-variations");
+          font-weight: 100 900;
+        }
+
+        #root {
+          position: relative;
+          width: 1920px;
+          height: 1080px;
+          overflow: hidden;
+          background: radial-gradient(ellipse 1400px 1000px at 50% 45%, #2c1a80 0%, #150c3d 55%, #0a0620 100%);
+          font-family: "Inter", sans-serif;
+        }
+
+        .halo {
+          position: absolute;
+          left: 50%;
+          top: 42%;
+          width: 1600px;
+          height: 1600px;
+          transform: translate(-50%, -50%);
+          background: conic-gradient(from 0deg, #4526d6 0deg, transparent 60deg, transparent 300deg, #241470 360deg);
+          opacity: 0.35;
+          filter: blur(60px);
+          will-change: transform;
+        }
+
+        .particle {
+          position: absolute;
+          border-radius: 50%;
+          background: radial-gradient(circle, rgba(197, 178, 255, 0.9) 0%, rgba(197, 178, 255, 0) 70%);
+          opacity: 0;
+          will-change: opacity, transform;
+        }
+
+        .stage {
+          position: absolute;
+          inset: 0;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+        }
+
+        .mark {
+          position: absolute;
+          top: 288px;
+          width: 148px;
+          height: 148px;
+          opacity: 0;
+          transform: scale(0.4);
+          will-change: transform, opacity;
+        }
+
+        .wordmark {
+          position: absolute;
+          top: 468px;
+          width: 1920px;
+          text-align: center;
+          font-family: "Space Grotesk", sans-serif;
+          font-weight: 700;
+          font-size: 128px;
+          letter-spacing: -0.03em;
+          background: linear-gradient(135deg, #ffffff 0%, #d6cbff 55%, #a48bff 100%);
+          -webkit-background-clip: text;
+          background-clip: text;
+          color: transparent;
+          opacity: 0;
+          transform: translateY(24px);
+          will-change: transform, opacity;
+        }
+
+        .byline {
+          position: absolute;
+          top: 626px;
+          width: 1920px;
+          text-align: center;
+          font-family: "Inter", sans-serif;
+          font-weight: 600;
+          font-size: 26px;
+          letter-spacing: 0.22em;
+          text-transform: uppercase;
+          color: #9c8fd6;
+          opacity: 0;
+        }
+
+        .tagline-wrap {
+          position: absolute;
+          top: 720px;
+          width: 1920px;
+          text-align: center;
+        }
+        .tagline-inner {
+          position: relative;
+          display: inline-block;
+        }
+        .tagline {
+          font-family: "Inter", sans-serif;
+          font-weight: 500;
+          font-size: 46px;
+          letter-spacing: -0.005em;
+          color: #e9e4ff;
+          white-space: nowrap;
+          clip-path: inset(0 100% 0 0);
+          will-change: clip-path;
+        }
+        .caret {
+          position: absolute;
+          top: 6px;
+          width: 4px;
+          height: 52px;
+          background: #a48bff;
+          box-shadow: 0 0 14px rgba(164, 139, 255, 0.9);
+          opacity: 0;
+        }
+      </style>
+
+      <div id="root" data-composition-id="01-title" data-width="1920" data-height="1080" data-duration="5.5">
+        <div class="halo clip" id="halo" data-start="0" data-duration="5.5" data-track-index="0" data-layout-allow-overflow="true"></div>
+
+        <div id="scene-title" class="scene clip" data-start="0" data-duration="5.5" data-track-index="1" style="position:absolute;inset:0;">
+          <!-- particles: fixed authored positions, ambient drift -->
+          <div class="particle" id="p1" style="left:320px;top:210px;width:10px;height:10px;"></div>
+          <div class="particle" id="p2" style="left:1540px;top:180px;width:14px;height:14px;"></div>
+          <div class="particle" id="p3" style="left:1680px;top:520px;width:8px;height:8px;"></div>
+          <div class="particle" id="p4" style="left:210px;top:600px;width:12px;height:12px;"></div>
+          <div class="particle" id="p5" style="left:960px;top:130px;width:9px;height:9px;"></div>
+          <div class="particle" id="p6" style="left:1440px;top:830px;width:11px;height:11px;"></div>
+          <div class="particle" id="p7" style="left:430px;top:860px;width:13px;height:13px;"></div>
+          <div class="particle" id="p8" style="left:1780px;top:760px;width:9px;height:9px;"></div>
+          <div class="particle" id="p9" style="left:120px;top:380px;width:7px;height:7px;"></div>
+          <div class="particle" id="p10" style="left:1020px;top:940px;width:10px;height:10px;"></div>
+
+          <svg class="mark" id="mark" style="left:886px;" viewBox="0 0 120 120" fill="none">
+            <circle cx="60" cy="60" r="46" stroke="url(#g1)" stroke-width="3" opacity="0.55" />
+            <circle cx="60" cy="60" r="16" fill="url(#g2)" />
+            <circle cx="60" cy="14" r="7" fill="#c5b2ff" />
+            <circle cx="98" cy="80" r="7" fill="#8f6dff" />
+            <circle cx="22" cy="80" r="7" fill="#8f6dff" />
+            <defs>
+              <linearGradient id="g1" x1="0" y1="0" x2="120" y2="120">
+                <stop offset="0" stop-color="#a48bff" />
+                <stop offset="1" stop-color="#4526d6" />
+              </linearGradient>
+              <radialGradient id="g2" cx="0.35" cy="0.35" r="0.8">
+                <stop offset="0" stop-color="#efe9ff" />
+                <stop offset="1" stop-color="#7c5cff" />
+              </radialGradient>
+            </defs>
+          </svg>
+
+          <div class="wordmark" id="wordmark">Plan'It</div>
+          <div class="byline" id="byline">par BraindCode</div>
+
+          <div class="tagline-wrap">
+            <div class="tagline-inner">
+              <div class="tagline" id="tagline">Pilotez tout votre écosystème par la voix</div>
+              <div class="caret" id="caret"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <script src="assets/vendor/gsap.min.js"></script>
+      <script>
+        window.__timelines = window.__timelines || {};
+        const tl = gsap.timeline({ paused: true });
+
+        // ---- ambient halo + particles (0.0-5.5s) ----
+        tl.to("#halo", { rotation: 34, duration: 5.5, ease: "none" }, 0);
+        const particles = ["#p1", "#p2", "#p3", "#p4", "#p5", "#p6", "#p7", "#p8", "#p9", "#p10"];
+        particles.forEach((sel, i) => {
+          tl.to(sel, { opacity: 0.8, duration: 1.0, ease: "power1.out" }, 0.1 + i * 0.06);
+          tl.to(sel, { y: -18, duration: 5.0, ease: "sine.inOut" }, 0.1 + i * 0.06);
+        });
+
+        // ---- Scene 1 (0.3-1.1s): orbit mark spring-pops in ----
+        tl.fromTo("#mark", { scale: 0.4, opacity: 0 }, { scale: 1, opacity: 1, duration: 0.7, ease: "back.out(2.2)" }, 0.3);
+
+        // ---- Scene 2 (1.1-1.9s): wordmark lands ----
+        tl.fromTo("#wordmark", { y: 24, opacity: 0 }, { y: 0, opacity: 1, duration: 0.6, ease: "power3.out" }, 1.1);
+        tl.fromTo("#byline", { opacity: 0 }, { opacity: 1, duration: 0.5, ease: "power2.out" }, 1.75);
+
+        // ---- Scene 3 (2.2-4.6s): tagline typewriter reveal (clip-path wipe, driven by a numeric proxy) ----
+        const taglineEl = document.getElementById("tagline");
+        const textWidth = taglineEl.getBoundingClientRect().width || 900;
+        const caret = document.getElementById("caret");
+        caret.style.opacity = "0";
+
+        tl.set(caret, { opacity: 1 }, 2.2);
+        const wipe = { pct: 100 };
+        tl.to(
+          wipe,
+          {
+            pct: 0,
+            duration: 2.3,
+            ease: "none",
+            onUpdate: () => {
+              taglineEl.style.clipPath = `inset(0 ${wipe.pct}% 0 0)`;
+              caret.style.left = ((100 - wipe.pct) / 100) * textWidth - 2 + "px";
+            },
+          },
+          2.2,
+        );
+        // caret blink (finite reps, settles hidden once typing resolves)
+        tl.to(caret, { opacity: 0, duration: 0.18, repeat: 5, yoyo: true, ease: "steps(1)" }, 2.21);
+        tl.to(caret, { opacity: 0, duration: 0.3 }, 4.6);
+
+        // ---- hold + gentle glow breathing until crossfade out ----
+        tl.to("#mark", { scale: 1.04, duration: 0.9, ease: "sine.inOut", yoyo: true, repeat: 1 }, 4.6);
+
+        window.__timelines["01-title"] = tl;
+      </script>
+    </template>
+  </body>
+</html>

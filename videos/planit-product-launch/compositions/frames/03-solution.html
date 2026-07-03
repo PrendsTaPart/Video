@@ -1,0 +1,285 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+  </head>
+  <body>
+    <template>
+      <style>
+        @font-face {
+          font-family: "Space Grotesk";
+          src: url("assets/vendor/fonts/SpaceGrotesk-Variable.woff2") format("woff2-variations");
+          font-weight: 300 700;
+        }
+        @font-face {
+          font-family: "Inter";
+          src: url("assets/vendor/fonts/Inter-Variable.woff2") format("woff2-variations");
+          font-weight: 100 900;
+        }
+
+        #root {
+          position: relative;
+          width: 1920px;
+          height: 1080px;
+          overflow: hidden;
+          background: radial-gradient(ellipse 1500px 1100px at 50% 40%, #24157a 0%, #130c40 55%, #08051c 100%);
+          font-family: "Inter", sans-serif;
+        }
+
+        .scene {
+          position: absolute;
+          inset: 0;
+          overflow: hidden;
+        }
+
+        .lines {
+          position: absolute;
+          inset: 0;
+          width: 100%;
+          height: 100%;
+          pointer-events: none;
+          z-index: 2;
+        }
+
+        .orb-wrap {
+          position: absolute;
+          left: 960px;
+          top: 430px;
+          width: 0;
+          height: 0;
+          z-index: 5;
+        }
+        .ring {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          border-radius: 50%;
+          border: 2px solid rgba(164, 139, 255, 0.4);
+          transform: translate(-50%, -50%) scale(0);
+          opacity: 0;
+        }
+        #ring-1 {
+          width: 260px;
+          height: 260px;
+        }
+        #ring-2 {
+          width: 380px;
+          height: 380px;
+          border-color: rgba(120, 92, 220, 0.28);
+        }
+        .orb {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          width: 190px;
+          height: 190px;
+          border-radius: 50%;
+          transform: translate(-50%, -50%) scale(0);
+          background: radial-gradient(circle at 38% 32%, #efe9ff 0%, #a48bff 40%, #6a3ff0 75%, #4526d6 100%);
+          box-shadow: 0 0 90px rgba(124, 92, 255, 0.55), 0 0 200px rgba(69, 38, 214, 0.35);
+          opacity: 0;
+        }
+
+        .chip {
+          position: absolute;
+          width: 170px;
+          height: 90px;
+          border-radius: 16px;
+          background: rgba(255, 255, 255, 0.05);
+          border: 1.5px solid rgba(255, 255, 255, 0.1);
+          display: flex;
+          align-items: center;
+          gap: 12px;
+          padding: 0 16px;
+          box-sizing: border-box;
+          opacity: 0;
+          transform: scale(0.5);
+          z-index: 4;
+          will-change: transform, opacity;
+        }
+        .chip .badge {
+          width: 40px;
+          height: 40px;
+          border-radius: 12px;
+          flex: none;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          font-family: "Space Grotesk", sans-serif;
+          font-weight: 700;
+          font-size: 14px;
+          color: #fff;
+        }
+        .chip .label {
+          font-family: "Space Grotesk", sans-serif;
+          font-weight: 600;
+          font-size: 18px;
+          color: #f2efff;
+        }
+
+        .headline-wrap {
+          position: absolute;
+          top: 930px;
+          width: 1920px;
+          text-align: center;
+        }
+        .headline {
+          display: inline-block;
+          font-family: "Space Grotesk", sans-serif;
+          font-weight: 600;
+          font-size: 46px;
+          letter-spacing: -0.01em;
+          color: #ffffff;
+        }
+        .headline .word {
+          display: inline-block;
+          opacity: 0;
+          transform: translateY(16px);
+        }
+        .headline .word + .word {
+          margin-left: 0.28em;
+        }
+      </style>
+
+      <div id="root" data-composition-id="03-solution" data-width="1920" data-height="1080" data-duration="13.5">
+        <div id="scene-solution" class="scene clip" data-start="0" data-duration="13.5" data-track-index="1">
+          <svg class="lines" viewBox="0 0 1920 1080">
+            <line id="line-top" x1="960" y1="145" x2="960" y2="335" stroke="rgba(164,139,255,0.55)" stroke-width="2.5" stroke-linecap="round" />
+            <line id="line-right" x1="1205" y1="430" x2="1055" y2="430" stroke="rgba(164,139,255,0.55)" stroke-width="2.5" stroke-linecap="round" />
+            <line id="line-bottom" x1="960" y1="715" x2="960" y2="525" stroke="rgba(164,139,255,0.55)" stroke-width="2.5" stroke-linecap="round" />
+            <line id="line-left" x1="715" y1="430" x2="865" y2="430" stroke="rgba(164,139,255,0.55)" stroke-width="2.5" stroke-linecap="round" />
+            <circle id="pulse-top" r="5" fill="#efe9ff" opacity="0" />
+            <circle id="pulse-right" r="5" fill="#efe9ff" opacity="0" />
+            <circle id="pulse-bottom" r="5" fill="#efe9ff" opacity="0" />
+            <circle id="pulse-left" r="5" fill="#efe9ff" opacity="0" />
+          </svg>
+
+          <div class="orb-wrap">
+            <div class="ring" id="ring-2"></div>
+            <div class="ring" id="ring-1"></div>
+            <div class="orb" id="orb"></div>
+          </div>
+
+          <!-- chip TOP: FoodEatUp -->
+          <div class="chip" id="chip-top" style="left:875px;top:55px;">
+            <div class="badge" style="background:rgba(255,165,0,0.22);color:#ffb733;">FE</div>
+            <div class="label">FoodEatUp</div>
+          </div>
+          <!-- chip RIGHT: RapidoCRM -->
+          <div class="chip" id="chip-right" style="left:1205px;top:385px;">
+            <div class="badge" style="background:rgba(20,184,166,0.22);color:#2dd4bf;">CRM</div>
+            <div class="label">RapidoCRM</div>
+          </div>
+          <!-- chip BOTTOM: RapidoCMS -->
+          <div class="chip" id="chip-bottom" style="left:875px;top:715px;">
+            <div class="badge" style="background:rgba(236,72,153,0.22);color:#f472b6;">CMS</div>
+            <div class="label">RapidoCMS</div>
+          </div>
+          <!-- chip LEFT: RapidoRH -->
+          <div class="chip" id="chip-left" style="left:545px;top:385px;">
+            <div class="badge" style="background:rgba(245,158,11,0.22);color:#fbbf24;">RH</div>
+            <div class="label">RapidoRH</div>
+          </div>
+
+          <div class="headline-wrap">
+            <div class="headline" id="headline-solution">
+              <span class="word">Jarvis</span>
+              <span class="word">comprend</span>
+              <span class="word">et</span>
+              <span class="word">agit</span>
+              <span class="word">sur</span>
+              <span class="word">le</span>
+              <span class="word">bon</span>
+              <span class="word">logiciel,</span>
+              <span class="word">automatiquement.</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <script src="assets/vendor/gsap.min.js"></script>
+      <script>
+        window.__timelines = window.__timelines || {};
+        const tl = gsap.timeline({ paused: true });
+
+        // ---- Scene 1 (0.0-1.1s): orb fades/scales in, rings draw ----
+        tl.fromTo("#orb", { scale: 0, opacity: 0 }, { scale: 1, opacity: 1, duration: 0.7, ease: "back.out(1.8)" }, 0);
+        tl.fromTo("#ring-1", { scale: 0, opacity: 0 }, { scale: 1, opacity: 1, duration: 0.6, ease: "power2.out" }, 0.4);
+        tl.fromTo("#ring-2", { scale: 0, opacity: 0 }, { scale: 1, opacity: 0.7, duration: 0.7, ease: "power2.out" }, 0.55);
+
+        // continuous orb breathing (whole scene, finite repeats to stay deterministic)
+        tl.to("#orb", { scale: 1.06, duration: 1.3, ease: "sine.inOut", yoyo: true, repeat: 9 }, 0.7);
+        tl.to("#ring-1", { rotation: 45, duration: 13.5, ease: "none" }, 0);
+        tl.to("#ring-2", { rotation: -30, duration: 13.5, ease: "none" }, 0);
+
+        // ---- Scene 2 (1.2-3.7s): the 4 app chips snap into orbit, one by one, each with a drawn connector ----
+        const chips = [
+          { sel: "#chip-top", line: "#line-top", at: 1.2 },
+          { sel: "#chip-right", line: "#line-right", at: 1.9 },
+          { sel: "#chip-bottom", line: "#line-bottom", at: 2.6 },
+          { sel: "#chip-left", line: "#line-left", at: 3.3 },
+        ];
+
+        chips.forEach((c) => {
+          tl.fromTo(c.sel, { scale: 0.5, opacity: 0 }, { scale: 1, opacity: 1, duration: 0.45, ease: "back.out(2)" }, c.at);
+        });
+
+        // prep + draw connector lines
+        const lineEls = document.querySelectorAll(".lines line");
+        lineEls.forEach((line) => {
+          const x1 = parseFloat(line.getAttribute("x1"));
+          const y1 = parseFloat(line.getAttribute("y1"));
+          const x2 = parseFloat(line.getAttribute("x2"));
+          const y2 = parseFloat(line.getAttribute("y2"));
+          const len = Math.hypot(x2 - x1, y2 - y1);
+          line.style.strokeDasharray = `${len}`;
+          line.style.strokeDashoffset = `${len}`;
+        });
+        chips.forEach((c) => {
+          tl.to(c.line, { strokeDashoffset: 0, duration: 0.4, ease: "power2.out" }, c.at + 0.25);
+        });
+
+        // ---- Scene 3 (4.0-4.9s): synchronized data pulse travels along each line toward the orb ----
+        const pulses = [
+          { sel: "#pulse-top", x1: 960, y1: 145, x2: 960, y2: 335 },
+          { sel: "#pulse-right", x1: 1205, y1: 430, x2: 1055, y2: 430 },
+          { sel: "#pulse-bottom", x1: 960, y1: 715, x2: 960, y2: 525 },
+          { sel: "#pulse-left", x1: 715, y1: 430, x2: 865, y2: 430 },
+        ];
+        pulses.forEach((p) => {
+          const proxy = { t: 0 };
+          tl.to(
+            proxy,
+            {
+              t: 1,
+              duration: 0.7,
+              ease: "power1.in",
+              onStart: () => {
+                document.querySelector(p.sel).setAttribute("opacity", "1");
+              },
+              onUpdate: () => {
+                const x = p.x1 + (p.x2 - p.x1) * proxy.t;
+                const y = p.y1 + (p.y2 - p.y1) * proxy.t;
+                document.querySelector(p.sel).setAttribute("cx", x);
+                document.querySelector(p.sel).setAttribute("cy", y);
+              },
+              onComplete: () => {
+                document.querySelector(p.sel).setAttribute("opacity", "0");
+              },
+            },
+            4.0,
+          );
+        });
+        tl.to("#orb", { boxShadow: "0 0 140px rgba(164,139,255,0.85), 0 0 260px rgba(69,38,214,0.5)", duration: 0.35, yoyo: true, repeat: 1 }, 4.6);
+
+        // ---- Scene 4 (5.3-8.0s): headline reveals word by word ----
+        const words = document.querySelectorAll("#headline-solution .word");
+        words.forEach((w, i) => {
+          tl.fromTo(w, { opacity: 0, y: 16 }, { opacity: 1, y: 0, duration: 0.4, ease: "power3.out" }, 5.3 + i * 0.2);
+        });
+
+        window.__timelines["03-solution"] = tl;
+      </script>
+    </template>
+  </body>
+</html>
