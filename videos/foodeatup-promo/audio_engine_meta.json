@@ -1,0 +1,29 @@
+{
+  "tts_provider": "elevenlabs",
+  "voice_id": "TGAegA0zNRi8I6nUdq3i",
+  "bgm": {
+    "path": "assets/bgm/track.mp3",
+    "volume": 0.9,
+    "query": "light corporate uplifting underscore, modern and optimistic, subtle",
+    "mode": "retrieve",
+    "duration_s": 36
+  },
+  "bgm_pending": false,
+  "bgm_provider": "heygen",
+  "bgm_pid": null,
+  "bgm_log": null,
+  "bgm_mode": "retrieve",
+  "bgm_target_duration_s": null,
+  "bgm_seed_duration_s": null,
+  "bgm_loop_count": null,
+  "voices": [
+    {
+      "id": "02",
+      "path": "assets/voice/02.wav",
+      "duration_s": 2.456,
+      "words": []
+    }
+  ],
+  "sfx": [],
+  "total_duration_s": 2.456
+}

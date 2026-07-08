@@ -1,0 +1,10 @@
+{
+  "bgm": {
+    "path": "assets/bgm/track.mp3",
+    "volume": 0.9,
+    "query": "light corporate uplifting underscore, modern and optimistic, subtle",
+    "duration_s": 36
+  },
+  "voices": [],
+  "sfx": []
+}

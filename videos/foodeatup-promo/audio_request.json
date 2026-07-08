@@ -1,0 +1,34 @@
+{
+  "provider": "elevenlabs",
+  "voice": "TGAegA0zNRi8I6nUdq3i",
+  "lang": "fr",
+  "lines": [
+    {
+      "id": "01",
+      "text": "Entre les réservations qui s'accumulent, les stocks à surveiller, les plannings à jongler et les contrôles HACCP à ne pas oublier... gérer un restaurant aujourd'hui, c'est un sport de combat."
+    },
+    {
+      "id": "02",
+      "text": "Et si un seul outil s'occupait de tout, pour vous ?"
+    },
+    {
+      "id": "03",
+      "text": "Voici FoodEatUp : la plateforme tout-en-un pensée pour les restaurateurs. Réservations et plan de salle, stock en temps réel, carte digitale, commandes, planning d'équipe, conformité HACCP — tout centralisé, tout simplifié."
+    },
+    {
+      "id": "04",
+      "text": "Et au cœur de la plateforme : une intelligence artificielle qui travaille pour vous. Elle anticipe vos ruptures de stock, optimise vos plannings, et répond à vos questions business en quelques secondes."
+    },
+    {
+      "id": "05",
+      "text": "Votre équipe gagne du temps. Vous gagnez en sérénité."
+    },
+    {
+      "id": "06",
+      "text": "Rejoignez les restaurateurs qui ont repris le contrôle. FoodEatUp — votre restaurant, enfin piloté simplement."
+    }
+  ],
+  "bgm": {
+    "mode": "none"
+  }
+}
