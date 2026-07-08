@@ -90,6 +90,13 @@ restaurant »). Charte graphique officielle fournie par Michael (PDF) :
   chaque transition est connu — pas d'approximation sur le placement.
 - **Musique de fond** : pas de morceau récurrent — choisir la musique et les SFX au cas par cas
   selon le sujet de chaque vidéo.
+- **Quirk pipeline audio (confirmé 2×, 2026-07)** : le wrapper `audio.mjs` du skill
+  product-launch-video choisit HeyGen dès que `HEYGEN_API_KEY` est présent → échec si le
+  storyboard spécifie une voix ElevenLabs. Pour forcer ElevenLabs, appeler le moteur directement :
+  `node /root/.claude/skills/hyperframes-media/scripts/audio.mjs --only tts --provider elevenlabs
+  --voice <voice_id> --lang fr`. Autre bug connu : les passes `fetch-sfx` / `--only` **écrasent la
+  section `voices` d'`audio_meta.json`** — garder les `transcript.json` whisper (ex.
+  `/tmp/promo_transcripts/`) et reconstruire `audio_meta.json` en Python après coup.
 
 ## Système de dérush automatique (pour chaque vidéo brute reçue)
 
@@ -148,6 +155,17 @@ prises ratées ou refaites. Pour chaque vidéo brute déposée dans `assets/raw/
 - Preview local : `npm run dev` (arrière-plan) → `http://localhost:3002`. Dans un environnement
   cloud isolé, cette URL n'est pas accessible depuis le navigateur de Michael — seulement utile
   pour l'inspection interne de l'agent, ou en local sur sa machine.
+- **Quirk connu (2026-07-08, hyperframes 0.7.42)** : `npx hyperframes snapshot` a un bug de seek —
+  les timelines GSAP restent à ~2-4s de temps « horloge murale » après le chargement de la page au
+  lieu d'être positionnées à l'instant demandé (symptôme : sous-titres du début affichés à 20s+,
+  frames longues « en retard » sur leur timeline interne, résultat NON déterministe entre deux runs).
+  Le pipeline `render`, lui, est exact (vérifié image par image). **QA fiable** : rendre en
+  `--quality draft` puis extraire les instants avec
+  `ffmpeg -ss <t> -i draft.mp4 -frames:v 1 out.png` (une commande ffmpeg PAR instant — enchaîner
+  plusieurs `-ss/-i/sortie` dans une seule commande mappe mal les entrées). Ne pas conclure à un bug
+  de composition sur la seule foi d'une planche-contact snapshot.
+- **Attention au cwd des commandes en arrière-plan** : le répertoire de travail persiste entre les
+  appels Bash — toujours préfixer les renders par `cd <projet> &&` explicite.
 
 ## Vidéos hors-Reels (16:9, autres marques)
 
