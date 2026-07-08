@@ -1,0 +1,796 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=1080, height=1920" />
+    <title>FoodEatUp — Teaser 9:16</title>
+    <script src="assets/vendor/gsap.min.js"></script>
+    <style>
+      @font-face {
+        font-family: "Poppins";
+        src: url("assets/fonts/Poppins-400.woff2") format("woff2");
+        font-weight: 400;
+        font-display: block;
+      }
+      @font-face {
+        font-family: "Poppins";
+        src: url("assets/fonts/Poppins-600.woff2") format("woff2");
+        font-weight: 600;
+        font-display: block;
+      }
+      @font-face {
+        font-family: "Poppins";
+        src: url("assets/fonts/Poppins-700.woff2") format("woff2");
+        font-weight: 700;
+        font-display: block;
+      }
+      @font-face {
+        font-family: "Poppins";
+        src: url("assets/fonts/Poppins-800.woff2") format("woff2");
+        font-weight: 800;
+        font-display: block;
+      }
+      @font-face {
+        font-family: "Inter";
+        src: url("assets/fonts/Inter-Variable.woff2") format("woff2-variations");
+        font-weight: 100 900;
+        font-display: block;
+      }
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      html,
+      body {
+        width: 1080px;
+        height: 1920px;
+        overflow: hidden;
+        background: #f7f9fc;
+      }
+      body {
+        font-family: "Poppins", "Inter", sans-serif;
+      }
+      #root {
+        position: absolute;
+        inset: 0;
+        width: 1080px;
+        height: 1920px;
+        overflow: hidden;
+      }
+      .clip {
+        position: absolute;
+        inset: 0;
+      }
+
+      /* ── Track 0 — off-white field, dotted grid, breathing blue blobs ── */
+      #bg {
+        background: #f7f9fc;
+      }
+      .dotgrid {
+        position: absolute;
+        inset: 0;
+        background-image: radial-gradient(circle, rgba(27, 42, 65, 0.08) 2px, transparent 2px);
+        background-size: 44px 44px;
+      }
+      .blob {
+        position: absolute;
+        border-radius: 50%;
+        filter: blur(2px);
+        will-change: transform, opacity;
+      }
+      #blob-a {
+        left: -260px;
+        top: -220px;
+        width: 720px;
+        height: 720px;
+        background: radial-gradient(
+          circle at 50% 50%,
+          rgba(30, 155, 240, 0.16) 0%,
+          rgba(30, 155, 240, 0) 65%
+        );
+      }
+      #blob-b {
+        right: -300px;
+        bottom: -260px;
+        width: 860px;
+        height: 860px;
+        background: radial-gradient(
+          circle at 50% 50%,
+          rgba(30, 155, 240, 0.13) 0%,
+          rgba(30, 155, 240, 0) 65%
+        );
+      }
+
+      /* ── S1a (0–1.6s) — punchy opening question ── */
+      #s1-hook .stage {
+        position: absolute;
+        inset: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 26px;
+        padding: 0 90px;
+        text-align: center;
+      }
+      .hook-line {
+        font-weight: 800;
+        font-size: 118px;
+        line-height: 1.04;
+        letter-spacing: -0.025em;
+        color: #1b2a41;
+        will-change: transform, opacity, filter;
+      }
+      .hook-year {
+        font-weight: 800;
+        font-size: 168px;
+        line-height: 1;
+        letter-spacing: -0.02em;
+        color: #1e9bf0;
+        will-change: transform, opacity;
+      }
+      .hook-mark {
+        display: inline-block;
+        will-change: transform;
+      }
+
+      /* ── S1b (1.6–3s) — isometric café, slow push-in ── */
+      #s1-cafe .cafe-wrap {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        width: 1010px;
+        margin-left: -505px;
+        margin-top: -740px;
+        will-change: transform;
+      }
+      #s1-cafe img {
+        display: block;
+        width: 100%;
+        height: auto;
+      }
+      #s1-cafe .cafe-glow {
+        position: absolute;
+        left: 50%;
+        top: 46%;
+        width: 1240px;
+        height: 1240px;
+        margin-left: -620px;
+        margin-top: -620px;
+        background: radial-gradient(
+          circle at 50% 50%,
+          rgba(30, 155, 240, 0.22) 0%,
+          rgba(30, 155, 240, 0) 62%
+        );
+      }
+      #s1-cafe .cafe-chip {
+        position: absolute;
+        left: 50%;
+        bottom: 210px;
+        transform: translateX(-50%);
+        background: #1b2a41;
+        color: #fff;
+        font-weight: 600;
+        font-size: 42px;
+        letter-spacing: 0.01em;
+        padding: 22px 46px;
+        border-radius: 999px;
+        white-space: nowrap;
+        will-change: transform, opacity;
+      }
+
+      /* ── S2 (3–8s) — chef + « Une seule app pour tout piloter. » ── */
+      #s2-chef .logo-top {
+        position: absolute;
+        left: 50%;
+        top: 96px;
+        width: 430px;
+        margin-left: -215px;
+        will-change: transform, opacity;
+      }
+      #s2-chef .logo-top img {
+        width: 100%;
+        display: block;
+      }
+      #s2-chef .headline {
+        position: absolute;
+        left: 90px;
+        right: 90px;
+        top: 300px;
+        text-align: center;
+        font-weight: 800;
+        letter-spacing: -0.02em;
+        line-height: 1.06;
+      }
+      #s2-chef .headline .h-navy {
+        display: block;
+        color: #1b2a41;
+        font-size: 96px;
+        will-change: transform, opacity;
+      }
+      #s2-chef .headline .h-blue {
+        display: block;
+        color: #1e9bf0;
+        font-size: 96px;
+        will-change: transform, opacity;
+      }
+      #s2-chef .chef-wrap {
+        position: absolute;
+        left: 50%;
+        bottom: -30px;
+        width: 720px;
+        margin-left: -150px;
+        will-change: transform, opacity;
+      }
+      #s2-chef .chef-wrap img {
+        display: block;
+        width: 100%;
+      }
+      .pill {
+        position: absolute;
+        display: flex;
+        align-items: center;
+        gap: 18px;
+        background: #ffffff;
+        border: 3px solid rgba(27, 42, 65, 0.08);
+        box-shadow: 0 18px 40px rgba(27, 42, 65, 0.12);
+        border-radius: 999px;
+        padding: 22px 40px;
+        font-weight: 700;
+        font-size: 40px;
+        color: #1b2a41;
+        white-space: nowrap;
+        will-change: transform, opacity;
+      }
+      .pill i {
+        width: 22px;
+        height: 22px;
+        border-radius: 50%;
+        background: #1e9bf0;
+        flex: none;
+      }
+      #pill-1 { left: 56px; top: 760px; }
+      #pill-2 { left: 36px; top: 910px; }
+      #pill-3 { left: 66px; top: 1060px; }
+      #pill-4 { left: 46px; top: 1210px; }
+
+      /* ── S3 (8–11s) — high-five humain + IA ── */
+      #s3-ia .five-wrap {
+        position: absolute;
+        left: 50%;
+        top: 250px;
+        width: 940px;
+        margin-left: -470px;
+        will-change: transform, opacity;
+      }
+      #s3-ia .five-wrap img {
+        display: block;
+        width: 100%;
+      }
+      #s3-ia .ring {
+        position: absolute;
+        left: 50%;
+        top: 560px;
+        width: 400px;
+        height: 400px;
+        margin-left: -200px;
+        margin-top: -200px;
+        border: 10px solid rgba(30, 155, 240, 0.55);
+        border-radius: 50%;
+        opacity: 0;
+        will-change: transform, opacity;
+      }
+      #s3-ia .ia-text {
+        position: absolute;
+        left: 90px;
+        right: 90px;
+        top: 1580px;
+        text-align: center;
+        font-weight: 800;
+        letter-spacing: -0.02em;
+        line-height: 1.1;
+      }
+      #s3-ia .ia-text .t1 {
+        display: block;
+        color: #1b2a41;
+        font-size: 84px;
+        will-change: transform, opacity;
+      }
+      #s3-ia .ia-text .t2 {
+        display: block;
+        color: #1e9bf0;
+        font-size: 84px;
+        will-change: transform, opacity;
+      }
+
+      /* ── S4 (11–15s) — registre corporate : recherche client ── */
+      #s4-biz .headline {
+        position: absolute;
+        left: 80px;
+        right: 80px;
+        top: 150px;
+        text-align: left;
+        font-weight: 700;
+        letter-spacing: -0.02em;
+        line-height: 1.12;
+      }
+      #s4-biz .headline .h-navy {
+        display: block;
+        color: #1b2a41;
+        font-size: 82px;
+        will-change: transform, opacity;
+      }
+      #s4-biz .headline .h-blue {
+        display: block;
+        color: #1e9bf0;
+        font-size: 82px;
+        font-weight: 800;
+        will-change: transform, opacity;
+      }
+      #s4-biz .ui-card {
+        position: absolute;
+        left: 60px;
+        top: 470px;
+        width: 640px;
+        background: #ffffff;
+        border-radius: 36px;
+        box-shadow: 0 30px 70px rgba(27, 42, 65, 0.16);
+        padding: 36px;
+        will-change: transform, opacity;
+      }
+      #s4-biz .search-bar {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        background: #eef3f9;
+        border-radius: 999px;
+        padding: 24px 30px;
+        margin-bottom: 30px;
+      }
+      #s4-biz .search-bar .lens {
+        width: 34px;
+        height: 34px;
+        border: 6px solid #1e9bf0;
+        border-radius: 50%;
+        position: relative;
+        flex: none;
+      }
+      #s4-biz .search-bar .lens::after {
+        content: "";
+        position: absolute;
+        width: 6px;
+        height: 16px;
+        background: #1e9bf0;
+        border-radius: 3px;
+        transform: rotate(-45deg);
+        right: -8px;
+        bottom: -10px;
+      }
+      #s4-biz .search-bar span {
+        font-family: "Inter", sans-serif;
+        font-weight: 500;
+        font-size: 33px;
+        color: #6b7a90;
+        white-space: nowrap;
+      }
+      .result {
+        display: flex;
+        align-items: center;
+        gap: 24px;
+        padding: 20px 12px;
+        border-bottom: 2px solid #eef3f9;
+        will-change: transform, opacity;
+      }
+      .result:last-child {
+        border-bottom: none;
+      }
+      .result .thumb {
+        width: 96px;
+        height: 96px;
+        border-radius: 24px;
+        flex: none;
+      }
+      .result.r1 .thumb { background: linear-gradient(135deg, #ffd98a, #f0913a); }
+      .result.r2 .thumb { background: linear-gradient(135deg, #b9e6a0, #4caf6e); }
+      .result.r3 .thumb { background: linear-gradient(135deg, #a8d6ff, #1e9bf0); }
+      .result .lines {
+        flex: 1;
+        min-width: 0;
+      }
+      .result .lines b {
+        display: block;
+        font-weight: 700;
+        font-size: 30px;
+        color: #1b2a41;
+        margin-bottom: 8px;
+        white-space: nowrap;
+      }
+      .result .lines em {
+        display: block;
+        font-style: normal;
+        font-family: "Inter", sans-serif;
+        font-size: 26px;
+        color: #6b7a90;
+        white-space: nowrap;
+      }
+      .result .cta {
+        flex: none;
+        background: #1e9bf0;
+        color: #fff;
+        font-weight: 700;
+        font-size: 27px;
+        border-radius: 999px;
+        padding: 14px 26px;
+      }
+      #s4-biz .biz-wrap {
+        position: absolute;
+        right: -85px;
+        bottom: -20px;
+        width: 545px;
+        will-change: transform, opacity;
+      }
+      #s4-biz .biz-wrap img {
+        display: block;
+        width: 100%;
+      }
+
+      /* ── S5 (15–17.5s) — reveal logo + CTA ── */
+      #s5-logo .final-glow {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        width: 1400px;
+        height: 1400px;
+        margin-left: -700px;
+        margin-top: -700px;
+        background: radial-gradient(
+          circle at 50% 50%,
+          rgba(30, 155, 240, 0.14) 0%,
+          rgba(30, 155, 240, 0) 60%
+        );
+        opacity: 0;
+        will-change: transform, opacity;
+      }
+      #s5-logo .logo-final {
+        position: absolute;
+        left: 50%;
+        top: 44%;
+        width: 740px;
+        margin-left: -370px;
+        margin-top: -120px;
+        will-change: transform, opacity;
+      }
+      #s5-logo .logo-final img {
+        display: block;
+        width: 100%;
+      }
+      #s5-logo .tagline {
+        position: absolute;
+        left: 90px;
+        right: 90px;
+        top: 1050px;
+        text-align: center;
+        font-weight: 600;
+        font-size: 58px;
+        letter-spacing: -0.01em;
+        color: #1b2a41;
+        will-change: transform, opacity;
+      }
+      #s5-logo .follow {
+        position: absolute;
+        left: 50%;
+        top: 1560px;
+        transform: translateX(-50%);
+        display: flex;
+        align-items: center;
+        gap: 16px;
+        font-weight: 600;
+        font-size: 40px;
+        color: #1e9bf0;
+        white-space: nowrap;
+        will-change: transform, opacity;
+      }
+      #s5-logo .follow .dot {
+        width: 14px;
+        height: 14px;
+        border-radius: 50%;
+        background: #1e9bf0;
+      }
+    </style>
+  </head>
+  <body>
+    <div
+      id="root"
+      data-composition-id="main"
+      data-start="0"
+      data-duration="17.5"
+      data-width="1080"
+      data-height="1920"
+    >
+      <!-- Track 0 — background for the whole teaser -->
+      <div id="bg" class="clip" data-start="0" data-duration="17.5" data-track-index="0">
+        <div class="dotgrid"></div>
+        <div class="blob" id="blob-a"></div>
+        <div class="blob" id="blob-b"></div>
+      </div>
+
+      <!-- Track 2 — musique énergique (montée vers le reveal) -->
+      <audio
+        id="bgm"
+        class="clip"
+        data-start="0"
+        data-duration="17.5"
+        data-track-index="2"
+        data-volume="0.85"
+        src="assets/bgm/track.mp3"
+      ></audio>
+
+      <!-- S1a (0–1.6s) — « Gérer un restaurant en 2026 ? » -->
+      <section id="s1-hook" class="clip" data-start="0" data-duration="1.6" data-track-index="1">
+        <div class="stage">
+          <h1 class="hook-line" id="hook-l1">Gérer un</h1>
+          <h1 class="hook-line" id="hook-l2">restaurant</h1>
+          <div class="hook-year" id="hook-year">en 2026<span class="hook-mark" id="hook-mark">&nbsp;?</span></div>
+        </div>
+      </section>
+
+      <!-- S1b (1.6–3s) — café en terrasse, zoom avant doux -->
+      <section id="s1-cafe" class="clip" data-start="1.6" data-duration="1.4" data-track-index="1">
+        <div class="cafe-glow"></div>
+        <div class="cafe-wrap" id="cafe-wrap">
+          <img src="public/cafe.png" alt="" />
+        </div>
+        <div class="cafe-chip" id="cafe-chip">Chaque jour, tout gérer&hellip;</div>
+      </section>
+
+      <!-- S2 (3–8s) — chef mascotte + une seule app -->
+      <section id="s2-chef" class="clip" data-start="3" data-duration="5" data-track-index="1">
+        <div class="logo-top" id="s2-logo">
+          <img src="public/foodeatup-logo-horizontal.png" alt="" />
+        </div>
+        <h2 class="headline">
+          <span class="h-navy" id="s2-h1">Une seule app</span>
+          <span class="h-blue" id="s2-h2">pour tout piloter.</span>
+        </h2>
+        <div class="chef-wrap" id="chef-wrap">
+          <img src="public/chef-laptop.png" alt="" />
+        </div>
+        <div class="pill" id="pill-1"><i></i>Réservations</div>
+        <div class="pill" id="pill-2"><i></i>Stock &amp; commandes</div>
+        <div class="pill" id="pill-3"><i></i>Planning équipe</div>
+        <div class="pill" id="pill-4"><i></i>HACCP</div>
+      </section>
+
+      <!-- S3 (8–11s) — high-five humain + IA -->
+      <section id="s3-ia" class="clip" data-start="8" data-duration="3" data-track-index="1">
+        <div class="ring" id="ring-1"></div>
+        <div class="ring" id="ring-2"></div>
+        <div class="five-wrap" id="five-wrap">
+          <img src="public/highfive.png" alt="" />
+        </div>
+        <h2 class="ia-text">
+          <span class="t1" id="s3-t1">Votre assistant IA,</span>
+          <span class="t2" id="s3-t2">toujours là.</span>
+        </h2>
+      </section>
+
+      <!-- S4 (11–15s) — corporate : vos clients trouvent -->
+      <section id="s4-biz" class="clip" data-start="11" data-duration="4" data-track-index="1">
+        <h2 class="headline">
+          <span class="h-navy" id="s4-h1">Vos clients trouvent,</span>
+          <span class="h-blue" id="s4-h2">vous gérez.</span>
+        </h2>
+        <div class="ui-card" id="ui-card">
+          <div class="search-bar">
+            <span class="lens"></span>
+            <span>Burgers, sushis, tacos&hellip;</span>
+          </div>
+          <div class="result r1" id="res-1">
+            <div class="thumb"></div>
+            <div class="lines"><b>Burger maison</b><em>Chez Marco &middot; 1,2 km</em></div>
+            <div class="cta">Voir</div>
+          </div>
+          <div class="result r2" id="res-2">
+            <div class="thumb"></div>
+            <div class="lines"><b>Poke bowl</b><em>Green House &middot; 800 m</em></div>
+            <div class="cta">Voir</div>
+          </div>
+          <div class="result r3" id="res-3">
+            <div class="thumb"></div>
+            <div class="lines"><b>Plat du jour</b><em>Caf&eacute; de la Paix &middot; 400 m</em></div>
+            <div class="cta">Voir</div>
+          </div>
+        </div>
+        <div class="biz-wrap" id="biz-wrap">
+          <img src="public/businesswoman.png" alt="" />
+        </div>
+      </section>
+
+      <!-- S5 (15–17.5s) — reveal final -->
+      <section id="s5-logo" class="clip" data-start="15" data-duration="2.5" data-track-index="1">
+        <div class="final-glow" id="final-glow"></div>
+        <div class="logo-final" id="logo-final">
+          <img src="public/foodeatup-logo-horizontal.png" alt="" />
+        </div>
+        <p class="tagline" id="tagline">Bient&ocirc;t disponible.</p>
+        <div class="follow" id="follow"><span class="dot"></span>Suivez-nous<span class="dot"></span></div>
+      </section>
+    </div>
+
+    <script>
+      window.__timelines = window.__timelines || {};
+      const tl = gsap.timeline({ paused: true });
+
+      /* ── Background — blobs drift slowly for the whole teaser ── */
+      tl.fromTo("#blob-a", { x: -40, y: -20 }, { x: 30, y: 30, duration: 17.5, ease: "none" }, 0);
+      tl.fromTo("#blob-b", { x: 40, y: 30 }, { x: -30, y: -30, duration: 17.5, ease: "none" }, 0);
+
+      /* ── S1a (0–1.6s) — kinetic slam of the question ── */
+      tl.fromTo(
+        "#hook-l1",
+        { y: 90, opacity: 0, filter: "blur(10px)" },
+        { y: 0, opacity: 1, filter: "blur(0px)", duration: 0.42, ease: "power3.out" },
+        0.08,
+      );
+      tl.fromTo(
+        "#hook-l2",
+        { y: 90, opacity: 0, filter: "blur(10px)" },
+        { y: 0, opacity: 1, filter: "blur(0px)", duration: 0.42, ease: "power3.out" },
+        0.24,
+      );
+      tl.fromTo(
+        "#hook-year",
+        { scale: 0.4, opacity: 0 },
+        { scale: 1, opacity: 1, duration: 0.55, ease: "back.out(2.2)" },
+        0.55,
+      );
+      tl.fromTo(
+        "#hook-mark",
+        { rotation: -14 },
+        { rotation: 8, duration: 0.35, ease: "power2.inOut", yoyo: true, repeat: 1 },
+        1.0,
+      );
+
+      /* ── S1b (1.6–3s) — café, slow push-in (cut franc) ── */
+      tl.fromTo(
+        "#cafe-wrap",
+        { scale: 1.02, y: 20 },
+        { scale: 1.12, y: 0, duration: 1.4, ease: "power1.inOut" },
+        1.6,
+      );
+      tl.fromTo(
+        "#cafe-chip",
+        { y: 40, opacity: 0 },
+        { y: 0, opacity: 1, duration: 0.4, ease: "power3.out" },
+        1.85,
+      );
+
+      /* ── S2 (3–8s) — chef mascotte, ton enjoué ── */
+      tl.fromTo(
+        "#s2-logo",
+        { scale: 0.6, opacity: 0 },
+        { scale: 1, opacity: 1, duration: 0.5, ease: "back.out(1.9)" },
+        3.15,
+      );
+      tl.fromTo(
+        "#s2-h1",
+        { y: 70, opacity: 0 },
+        { y: 0, opacity: 1, duration: 0.5, ease: "power3.out" },
+        3.35,
+      );
+      tl.fromTo(
+        "#s2-h2",
+        { y: 70, opacity: 0 },
+        { y: 0, opacity: 1, duration: 0.5, ease: "power3.out" },
+        3.52,
+      );
+      tl.fromTo(
+        "#chef-wrap",
+        { y: 320, opacity: 0 },
+        { y: 0, opacity: 1, duration: 0.75, ease: "power3.out" },
+        3.6,
+      );
+      tl.to("#chef-wrap", { y: -14, duration: 1.7, ease: "sine.inOut", yoyo: true, repeat: 1 }, 4.4);
+      tl.fromTo(
+        ["#pill-1", "#pill-2", "#pill-3", "#pill-4"],
+        { x: -140, opacity: 0, scale: 0.85 },
+        { x: 0, opacity: 1, scale: 1, duration: 0.5, ease: "back.out(1.7)", stagger: 0.22 },
+        4.5,
+      );
+
+      /* ── S3 (8–11s) — impact high-five ── */
+      tl.fromTo(
+        "#five-wrap",
+        { scale: 0.82, y: 60, opacity: 0 },
+        { scale: 1, y: 0, opacity: 1, duration: 0.5, ease: "back.out(1.8)" },
+        8.1,
+      );
+      tl.fromTo(
+        "#ring-1",
+        { scale: 0.25, opacity: 0.9 },
+        { scale: 1.9, opacity: 0, duration: 0.8, ease: "power2.out" },
+        8.45,
+      );
+      tl.fromTo(
+        "#ring-2",
+        { scale: 0.25, opacity: 0.7 },
+        { scale: 2.7, opacity: 0, duration: 1.0, ease: "power2.out" },
+        8.55,
+      );
+      tl.fromTo(
+        "#s3-t1",
+        { y: 60, opacity: 0 },
+        { y: 0, opacity: 1, duration: 0.5, ease: "power3.out" },
+        8.9,
+      );
+      tl.fromTo(
+        "#s3-t2",
+        { y: 60, opacity: 0 },
+        { y: 0, opacity: 1, duration: 0.5, ease: "power3.out" },
+        9.1,
+      );
+
+      /* ── S4 (11–15s) — corporate, plus posé (power2) ── */
+      tl.fromTo(
+        "#s4-h1",
+        { y: 50, opacity: 0 },
+        { y: 0, opacity: 1, duration: 0.6, ease: "power2.out" },
+        11.2,
+      );
+      tl.fromTo(
+        "#s4-h2",
+        { y: 50, opacity: 0 },
+        { y: 0, opacity: 1, duration: 0.6, ease: "power2.out" },
+        11.45,
+      );
+      tl.fromTo(
+        "#biz-wrap",
+        { x: 220, opacity: 0 },
+        { x: 0, opacity: 1, duration: 0.7, ease: "power2.out" },
+        11.5,
+      );
+      tl.fromTo(
+        "#ui-card",
+        { y: 90, opacity: 0 },
+        { y: 0, opacity: 1, duration: 0.6, ease: "power2.out" },
+        11.8,
+      );
+      tl.fromTo(
+        ["#res-1", "#res-2", "#res-3"],
+        { y: 36, opacity: 0 },
+        { y: 0, opacity: 1, duration: 0.45, ease: "power2.out", stagger: 0.25 },
+        12.35,
+      );
+
+      /* ── S5 (15–17.5s) — reveal final ── */
+      tl.fromTo(
+        "#final-glow",
+        { opacity: 0, scale: 0.8 },
+        { opacity: 1, scale: 1, duration: 1.0, ease: "power2.out" },
+        15.1,
+      );
+      tl.fromTo(
+        "#logo-final",
+        { scale: 0.62, opacity: 0 },
+        { scale: 1, opacity: 1, duration: 0.65, ease: "back.out(1.6)" },
+        15.15,
+      );
+      tl.fromTo(
+        "#tagline",
+        { y: 50, opacity: 0 },
+        { y: 0, opacity: 1, duration: 0.5, ease: "power3.out" },
+        15.85,
+      );
+      tl.fromTo(
+        "#follow",
+        { opacity: 0 },
+        { opacity: 1, duration: 0.5, ease: "power2.out" },
+        16.35,
+      );
+
+      window.__timelines["main"] = tl;
+    </script>
+  </body>
+</html>
