@@ -170,13 +170,13 @@
         data-composition-id="04-ia"
         data-width="1920"
         data-height="1080"
-        data-duration="10.057"
+        data-duration="10.557"
       >
         <!-- Track 0 — background, full duration -->
-        <div id="bg" class="clip bg" data-start="0" data-duration="10.057" data-track-index="0"></div>
+        <div id="bg" class="clip bg" data-start="0" data-duration="10.557" data-track-index="0"></div>
 
         <!-- Track 1 — scene content, full duration -->
-        <div id="scene" class="clip scene" data-start="0" data-duration="10.057" data-track-index="1">
+        <div id="scene" class="clip scene" data-start="0" data-duration="10.557" data-track-index="1">
           <!-- ambient glow behind the high-five (Scene 3) -->
           <div class="glow" id="glow"></div>
 
@@ -280,7 +280,7 @@
           );
         }
 
-        // ── Scene 3 (8.6–10.057s) — ambient-glow-bloom (bloom-and-hold form:
+        // ── Scene 3 (8.6–10.557s) — ambient-glow-bloom (bloom-and-hold form:
         // remaining hold < 3s, so no breathe). Discreet blue bloom behind the
         // high-five, peak opacity 0.32 (≤ 0.35), then everything holds still.
         tl.fromTo(
@@ -289,7 +289,7 @@
           { opacity: 0.32, scale: 1, duration: 1.0, ease: "power2.out" },
           8.6
         );
-        // 9.6 → 10.057s: net hold. No exit — this is not the final frame.
+        // 9.6 → 10.557s: net hold. No exit — this is not the final frame.
 
         window.__timelines["04-ia"] = tl;
       </script>
