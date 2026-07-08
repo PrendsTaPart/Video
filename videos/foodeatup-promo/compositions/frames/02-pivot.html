@@ -1,0 +1,215 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <title>02-pivot — Le pivot</title>
+    <!-- head is metadata only; everything the runtime needs lives inside <template> -->
+  </head>
+  <body>
+    <template>
+      <style>
+        @font-face {
+          font-family: "Poppins";
+          src: url("assets/fonts/Poppins-600.woff2") format("woff2");
+          font-weight: 600;
+          font-display: block;
+        }
+        @font-face {
+          font-family: "Poppins";
+          src: url("assets/fonts/Poppins-700.woff2") format("woff2");
+          font-weight: 700;
+          font-display: block;
+        }
+        @font-face {
+          font-family: "Inter";
+          src: url("assets/fonts/Inter-Variable.woff2") format("woff2-variations");
+          font-weight: 100 900;
+          font-display: block;
+        }
+
+        #root {
+          position: absolute;
+          inset: 0;
+          width: 1920px;
+          height: 1080px;
+          overflow: hidden;
+          font-family: "Poppins", "Inter", sans-serif;
+        }
+
+        .clip {
+          position: absolute;
+          inset: 0;
+        }
+
+        /* ── Track 0 — cleaned off-white field + soft radial blue glow ── */
+        #bg {
+          background: #f7f9fc;
+        }
+        .glow {
+          position: absolute;
+          /* centered on the question block (~y 460), margins not transforms */
+          left: calc(50% - 620px);
+          top: calc(43% - 620px);
+          width: 1240px;
+          height: 1240px;
+          background: radial-gradient(
+            circle at 50% 50%,
+            rgba(30, 155, 240, 0.5) 0%,
+            rgba(30, 155, 240, 0.18) 32%,
+            rgba(30, 155, 240, 0) 64%
+          );
+          opacity: 0;
+          pointer-events: none;
+          will-change: transform, opacity;
+        }
+
+        /* ── Track 1 — the question, alone, centered above the caption zone ── */
+        .stage {
+          position: absolute;
+          inset: 0 0 200px 0; /* keep-out: everything stays above y≈900 */
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          gap: 30px;
+          padding: 0 160px;
+          box-sizing: border-box;
+          text-align: center;
+        }
+        .q-line1 {
+          font-family: "Poppins", sans-serif;
+          font-weight: 700;
+          font-size: 94px;
+          line-height: 1.08;
+          letter-spacing: -0.02em;
+          color: #1b2a41;
+          will-change: transform, opacity;
+        }
+        .q-accent {
+          position: relative;
+          display: inline-block;
+          color: #1e9bf0;
+        }
+        .q-underline {
+          position: absolute;
+          left: 3px;
+          right: 3px;
+          bottom: -12px;
+          height: 6px;
+          background: #1e9bf0;
+          border-radius: 3px;
+          display: block;
+          will-change: transform;
+        }
+        .q-line2 {
+          font-family: "Poppins", sans-serif;
+          font-weight: 600;
+          font-size: 64px;
+          line-height: 1.2;
+          letter-spacing: -0.02em;
+          color: #1b2a41;
+        }
+        .q-word {
+          display: inline-block;
+          will-change: transform, opacity, filter;
+        }
+      </style>
+
+      <div
+        id="root"
+        data-composition-id="02-pivot"
+        data-width="1920"
+        data-height="1080"
+        data-duration="2.456"
+      >
+        <!-- Scene 1 (0.0–0.4s): empty field, soft blue glow breathes once -->
+        <div id="bg" class="clip" data-start="0" data-duration="2.456" data-track-index="0">
+          <div class="glow" id="pivot-glow"></div>
+        </div>
+
+        <!-- Scene 2 (0.4–2.456s): the question lands, then holds -->
+        <section
+          id="question"
+          class="clip"
+          data-start="0"
+          data-duration="2.456"
+          data-track-index="1"
+        >
+          <div class="stage">
+            <h1 class="q-line1" id="q-line1">
+              Et si <span class="q-accent">un seul outil<i class="q-underline" id="q-underline"></i></span>
+            </h1>
+            <p class="q-line2" id="q-line2">
+              <span class="q-word">s&rsquo;occupait</span>
+              <span class="q-word">de</span>
+              <span class="q-word">tout,</span>
+              <span class="q-word">pour</span>
+              <span class="q-word">vous&nbsp;?</span>
+            </p>
+          </div>
+        </section>
+      </div>
+
+      <script src="assets/vendor/gsap.min.js"></script>
+      <script>
+        window.__timelines = window.__timelines || {};
+        const tl = gsap.timeline({ paused: true });
+
+        // One quiet beat grid for the whole frame (calm breather — power3.out, no overshoot)
+        const B = {
+          glow: 0.0, // Scene 1 — the glow suffuses in
+          line1: 0.38, // Scene 2 — line 1 lands (visible well before 0.5s)
+          underline: 0.85, // accent draws after line 1 settles
+          words: 1.0, // per-word reveal, tight, riding the voice
+        };
+
+        // ── Glow: bloom slightly past peak, then settle — one deterministic breath ──
+        tl.fromTo(
+          "#pivot-glow",
+          { opacity: 0, scale: 0.86 },
+          { opacity: 0.34, scale: 1.04, duration: 0.55, ease: "power2.out" },
+          B.glow,
+        );
+        tl.to(
+          "#pivot-glow",
+          { opacity: 0.26, scale: 1, duration: 0.9, ease: "power2.inOut" },
+          B.glow + 0.55,
+        );
+
+        // ── Line 1: slide-up + power3 settle, dead-center ──
+        tl.fromTo(
+          "#q-line1",
+          { y: 72, opacity: 0 },
+          { y: 0, opacity: 1, duration: 0.6, ease: "power3.out" },
+          B.line1,
+        );
+
+        // ── Accent underline draws left→right under « un seul outil » ──
+        tl.fromTo(
+          "#q-underline",
+          { scaleX: 0, transformOrigin: "left center" },
+          { scaleX: 1, duration: 0.45, ease: "power3.out" },
+          B.underline,
+        );
+
+        // ── Line 2: tight per-word staggered reveal, calé sur la voix — then hold ──
+        tl.fromTo(
+          ".q-word",
+          { y: 26, opacity: 0, filter: "blur(8px)" },
+          {
+            y: 0,
+            opacity: 1,
+            filter: "blur(0px)",
+            duration: 0.5,
+            ease: "power3.out",
+            stagger: 0.13,
+          },
+          B.words,
+        );
+        // Last word starts at 1.52s, resolves ~2.02s — brief clean hold to 2.456s. No exit.
+
+        window.__timelines["02-pivot"] = tl;
+      </script>
+    </template>
+  </body>
+</html>

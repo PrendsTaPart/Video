@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Frame 05 — Le bénéfice</title>
+    <!-- head is metadata only; the runtime clones ONLY the <template> contents -->
+  </head>
+  <body>
+    <template>
+      <style>
+        @font-face {
+          font-family: "Poppins";
+          src: url("assets/fonts/Poppins-600.woff2") format("woff2");
+          font-weight: 600;
+          font-display: block;
+        }
+        @font-face {
+          font-family: "Inter";
+          src: url("assets/fonts/Inter-Variable.woff2") format("woff2-variations");
+          font-weight: 100 900;
+          font-display: block;
+        }
+
+        #root {
+          position: absolute;
+          inset: 0;
+          overflow: hidden;
+          font-family: "Poppins", "Inter", sans-serif;
+        }
+
+        /* ── Track 0: full-bleed background (own clip, never on #root) ── */
+        .bg {
+          position: absolute;
+          inset: 0;
+          background: #f7f9fc;
+        }
+        /* Soft blue radial glow — background role, sits behind the type.
+           No CSS transform here: GSAP owns scale/opacity entirely. */
+        .glow {
+          position: absolute;
+          left: 50%;
+          top: 44%;
+          width: 1400px;
+          height: 900px;
+          margin-left: -700px;
+          margin-top: -450px;
+          background: radial-gradient(
+            ellipse 50% 50% at 50% 50%,
+            rgba(30, 155, 240, 0.22) 0%,
+            rgba(30, 155, 240, 0.08) 45%,
+            rgba(30, 155, 240, 0) 72%
+          );
+          opacity: 0;
+          pointer-events: none;
+          will-change: transform, opacity;
+        }
+
+        /* ── Track 1: the two mirrored lines ── */
+        .lines {
+          position: absolute;
+          inset: 0;
+        }
+        .stack {
+          position: absolute;
+          left: 0;
+          right: 0;
+          top: 44%;
+          transform: translateY(-50%); /* static layout centering only — children carry the GSAP transforms */
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          gap: 36px;
+        }
+        .line {
+          margin: 0;
+          font-family: "Poppins", sans-serif;
+          font-weight: 600;
+          font-size: 76px;
+          line-height: 1.2;
+          letter-spacing: -0.02em;
+          color: #1b2a41;
+          text-align: center;
+          white-space: nowrap;
+          will-change: transform, opacity;
+        }
+        #line-1 {
+          opacity: 0;
+        }
+        #line-2 {
+          opacity: 0;
+        }
+        .accent {
+          color: #1e9bf0;
+        }
+      </style>
+
+      <div
+        id="root"
+        data-composition-id="05-benefice"
+        data-width="1920"
+        data-height="1080"
+        data-duration="2.926"
+      >
+        <!-- Track 0 — background, full duration -->
+        <div id="bg" class="clip bg" data-start="0" data-duration="2.926" data-track-index="0">
+          <div class="glow" id="glow"></div>
+        </div>
+
+        <!-- Track 1 — the two mirrored lines, full duration -->
+        <div id="copy" class="clip lines" data-start="0" data-duration="2.926" data-track-index="1">
+          <div class="stack">
+            <p class="line" id="line-1">Votre équipe gagne du temps.</p>
+            <p class="line" id="line-2">Vous gagnez en <span class="accent">sérénité</span>.</p>
+          </div>
+        </div>
+      </div>
+
+      <script src="assets/vendor/gsap.min.js"></script>
+      <script>
+        window.__timelines = window.__timelines || {};
+        const tl = gsap.timeline({ paused: true });
+
+        // Layout constant: line 1 rests ABOVE pair-center at y=0. When it is
+        // alone (Scene 1) it sits at the optical center of the pair, i.e.
+        // offset down by half of (gap + line 2 height) ≈ (36 + 92) / 2.
+        const LINE1_SOLO_Y = 64;
+
+        // ── Scene 1 (0.0–1.4s) — the ONE restrained move: line 1 lands
+        // centered with a calm slide-up crossfade. Hero visible well before 0.5s.
+        tl.fromTo(
+          "#line-1",
+          { y: LINE1_SOLO_Y + 30, opacity: 0 },
+          { y: LINE1_SOLO_Y, opacity: 1, duration: 0.55, ease: "power3.out" },
+          0.0
+        );
+
+        // Ambient glow bloom-and-hold (scene < 3s → no breathe): opacity + a
+        // gentle scale swell landing with the hero's settle, then flat hold.
+        tl.fromTo(
+          "#glow",
+          { opacity: 0, scale: 0.9 },
+          { opacity: 0.32, scale: 1, duration: 1.0, ease: "power2.out" },
+          0.0
+        );
+
+        // ── Scene 2 (1.4–2.926s) — the slide-up crossfade handoff.
+        // Line 1 rises to its resting slot and dims to 60%.
+        tl.to(
+          "#line-1",
+          { y: 0, opacity: 0.6, duration: 0.55, ease: "power3.out" },
+          1.4
+        );
+        // Line 2 settles in beneath, "sérénité" in accent blue.
+        tl.fromTo(
+          "#line-2",
+          { y: 40, opacity: 0 },
+          { y: 0, opacity: 1, duration: 0.6, ease: "power3.out" },
+          1.45
+        );
+
+        // 2.05s → 2.926s: still hold. The stillness IS the message — no exit,
+        // no second development phase.
+
+        window.__timelines["05-benefice"] = tl;
+      </script>
+    </template>
+  </body>
+</html>
