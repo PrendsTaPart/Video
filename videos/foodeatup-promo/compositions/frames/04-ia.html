@@ -1,0 +1,298 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Frame 04 — L'IA qui travaille pour vous</title>
+    <!-- head is metadata only; the runtime clones ONLY the <template> contents -->
+  </head>
+  <body>
+    <template>
+      <style>
+        @font-face {
+          font-family: "Poppins";
+          src: url("assets/fonts/Poppins-600.woff2") format("woff2");
+          font-weight: 600;
+          font-display: block;
+        }
+        @font-face {
+          font-family: "Inter";
+          src: url("assets/fonts/Inter-Variable.woff2") format("woff2-variations");
+          font-weight: 100 900;
+          font-display: block;
+        }
+
+        #root {
+          position: absolute;
+          inset: 0;
+          overflow: hidden;
+          font-family: "Poppins", "Inter", sans-serif;
+          /* Bound the figure's multiply blend inside this frame — it must never
+             blend with a neighbouring frame during the push-slide transition. */
+          isolation: isolate;
+        }
+
+        /* ── Track 0: full-bleed background (own clip, never on #root) ── */
+        .bg {
+          position: absolute;
+          inset: 0;
+          background: #f7f9fc;
+        }
+
+        /* ── Track 1: scene content ── */
+        .scene {
+          position: absolute;
+          inset: 0;
+        }
+
+        /* Ambient glow — sits BEHIND the figure, centered on the high-five.
+           No CSS transform: GSAP owns scale/opacity entirely. */
+        .glow {
+          position: absolute;
+          z-index: 1;
+          left: 1107px;
+          top: -29px;
+          width: 860px;
+          height: 680px;
+          background: radial-gradient(
+            ellipse 50% 50% at 50% 50%,
+            rgba(30, 155, 240, 0.5) 0%,
+            rgba(30, 155, 240, 0.18) 45%,
+            rgba(30, 155, 240, 0) 72%
+          );
+          opacity: 0;
+          pointer-events: none;
+          will-change: transform, opacity;
+        }
+
+        /* Chef + robot high-five — foreground subject, right side (~40% zone),
+           bottom edge anchored just above the caption keep-out (y=896).
+           multiply sinks the image's white box into the off-white ground and
+           lets the glow read through around the high-five. */
+        .figure {
+          position: absolute;
+          z-index: 2;
+          top: 146px;
+          left: 1262px;
+          width: 500px;
+          height: 750px;
+          mix-blend-mode: multiply;
+          opacity: 0;
+          will-change: transform, opacity;
+        }
+        .figure img {
+          width: 100%;
+          height: 100%;
+          object-fit: contain;
+          display: block;
+        }
+
+        /* ── Left column: eyebrow + 3 benefit cards ── */
+        .left {
+          position: absolute;
+          z-index: 3;
+          left: 96px;
+          top: 128px;
+          width: 1000px;
+        }
+        .accent-line {
+          width: 60px;
+          height: 4px;
+          border-radius: 2px;
+          background: #1e9bf0;
+          transform-origin: left center;
+          opacity: 0;
+          will-change: transform, opacity;
+        }
+        .eyebrow {
+          margin: 22px 0 0;
+          font-family: "Poppins", sans-serif;
+          font-weight: 600;
+          font-size: 34px;
+          letter-spacing: 0.08em;
+          text-transform: uppercase;
+          color: #1e9bf0;
+          opacity: 0;
+          will-change: transform, opacity;
+        }
+
+        .cards {
+          position: absolute;
+          left: 96px;
+          top: 316px;
+          width: 1000px;
+          z-index: 3;
+          display: flex;
+          flex-direction: column;
+          gap: 30px;
+        }
+        /* Tinted card — blue 4% fill, blue 20% 1.5px border, 14px radius, NO shadow. */
+        .card {
+          box-sizing: border-box;
+          display: flex;
+          align-items: center;
+          gap: 32px;
+          padding: 30px 38px;
+          background: rgba(30, 155, 240, 0.04);
+          border: 1.5px solid rgba(30, 155, 240, 0.2);
+          border-radius: 14px;
+          opacity: 0;
+          will-change: transform, opacity;
+        }
+        .chip {
+          flex: none;
+          width: 78px;
+          height: 78px;
+          border-radius: 50%;
+          display: grid;
+          place-items: center;
+          background: rgba(30, 155, 240, 0.08);
+          opacity: 0;
+          will-change: transform, opacity;
+        }
+        .chip svg {
+          width: 42px;
+          height: 42px;
+          display: block;
+        }
+        .card-label {
+          margin: 0;
+          font-family: "Poppins", sans-serif;
+          font-weight: 600;
+          font-size: 40px;
+          line-height: 1.25;
+          letter-spacing: -0.01em;
+          color: #1b2a41;
+        }
+      </style>
+
+      <div
+        id="root"
+        data-composition-id="04-ia"
+        data-width="1920"
+        data-height="1080"
+        data-duration="10.057"
+      >
+        <!-- Track 0 — background, full duration -->
+        <div id="bg" class="clip bg" data-start="0" data-duration="10.057" data-track-index="0"></div>
+
+        <!-- Track 1 — scene content, full duration -->
+        <div id="scene" class="clip scene" data-start="0" data-duration="10.057" data-track-index="1">
+          <!-- ambient glow behind the high-five (Scene 3) -->
+          <div class="glow" id="glow"></div>
+
+          <!-- foreground subject: chef + robot high-five -->
+          <div class="figure" id="figure">
+            <img src="public/chef-robot-highfive.png" alt="" />
+          </div>
+
+          <!-- eyebrow lockup -->
+          <div class="left">
+            <div class="accent-line" id="accent-line"></div>
+            <p class="eyebrow" id="eyebrow">L&rsquo;IA qui travaille pour vous</p>
+          </div>
+
+          <!-- three benefit cards, revealed on VO cues -->
+          <div class="cards">
+            <div class="card" id="card-1">
+              <div class="chip" id="chip-1">
+                <svg viewBox="0 0 24 24" fill="none" stroke="#1e9bf0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M10.29 3.86 1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z" />
+                  <line x1="12" y1="9" x2="12" y2="13" />
+                  <line x1="12" y1="17" x2="12.01" y2="17" />
+                </svg>
+              </div>
+              <p class="card-label">Anticipe vos ruptures de stock</p>
+            </div>
+            <div class="card" id="card-2">
+              <div class="chip" id="chip-2">
+                <svg viewBox="0 0 24 24" fill="none" stroke="#1e9bf0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="3" y="4" width="18" height="18" rx="2" />
+                  <line x1="16" y1="2" x2="16" y2="6" />
+                  <line x1="8" y1="2" x2="8" y2="6" />
+                  <line x1="3" y1="10" x2="21" y2="10" />
+                </svg>
+              </div>
+              <p class="card-label">Optimise vos plannings</p>
+            </div>
+            <div class="card" id="card-3">
+              <div class="chip" id="chip-3">
+                <svg viewBox="0 0 24 24" fill="none" stroke="#1e9bf0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z" />
+                  <circle cx="8.5" cy="11.5" r="1" fill="#1e9bf0" stroke="none" />
+                  <circle cx="12" cy="11.5" r="1" fill="#1e9bf0" stroke="none" />
+                  <circle cx="15.5" cy="11.5" r="1" fill="#1e9bf0" stroke="none" />
+                </svg>
+              </div>
+              <p class="card-label">Répond en quelques secondes</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <script src="assets/vendor/gsap.min.js"></script>
+      <script>
+        window.__timelines = window.__timelines || {};
+        const tl = gsap.timeline({ paused: true });
+
+        // ── Scene 1 (0.0–2.4s) — figure slides in from the right + settles
+        // (power3.out carries the settle; no overshoot). Hero visible < 0.5s.
+        tl.fromTo(
+          "#figure",
+          { x: 240, opacity: 0 },
+          { x: 0, opacity: 1, duration: 0.9, ease: "power3.out" },
+          0.0
+        );
+
+        // Eyebrow lockup lands on « intelligence artificielle » (~1.6s).
+        tl.fromTo(
+          "#accent-line",
+          { scaleX: 0, opacity: 0 },
+          { scaleX: 1, opacity: 1, duration: 0.5, ease: "power3.out" },
+          1.5
+        );
+        tl.fromTo(
+          "#eyebrow",
+          { y: 22, opacity: 0 },
+          { y: 0, opacity: 1, duration: 0.55, ease: "power3.out" },
+          1.6
+        );
+
+        // ── Scene 2 (2.4–8.6s) — three tinted cards, one per VO cue.
+        // Card slide-up + settle; icon chip resolves a beat after its card.
+        // Never front-loaded: 3.4s / 5.4s / 7.4s.
+        const cardCues = [
+          { card: "#card-1", chip: "#chip-1", at: 3.4 },
+          { card: "#card-2", chip: "#chip-2", at: 5.4 },
+          { card: "#card-3", chip: "#chip-3", at: 7.4 },
+        ];
+        for (const { card, chip, at } of cardCues) {
+          tl.fromTo(
+            card,
+            { y: 54, opacity: 0 },
+            { y: 0, opacity: 1, duration: 0.7, ease: "power3.out" },
+            at
+          );
+          tl.fromTo(
+            chip,
+            { scale: 0.75, opacity: 0 },
+            { scale: 1, opacity: 1, duration: 0.55, ease: "power3.out" },
+            at + 0.12
+          );
+        }
+
+        // ── Scene 3 (8.6–10.057s) — ambient-glow-bloom (bloom-and-hold form:
+        // remaining hold < 3s, so no breathe). Discreet blue bloom behind the
+        // high-five, peak opacity 0.32 (≤ 0.35), then everything holds still.
+        tl.fromTo(
+          "#glow",
+          { opacity: 0, scale: 0.9 },
+          { opacity: 0.32, scale: 1, duration: 1.0, ease: "power2.out" },
+          8.6
+        );
+        // 9.6 → 10.057s: net hold. No exit — this is not the final frame.
+
+        window.__timelines["04-ia"] = tl;
+      </script>
+    </template>
+  </body>
+</html>
