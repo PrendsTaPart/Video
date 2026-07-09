@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Frame 4 — Pilotez avec Claude (portrait)</title>
+  </head>
+  <body>
+    <template>
+      <style>
+        @font-face { font-family: "Poppins"; src: url("assets/fonts/Poppins-600.woff2") format("woff2"); font-weight: 600; }
+        @font-face { font-family: "Poppins"; src: url("assets/fonts/Poppins-700.woff2") format("woff2"); font-weight: 700; }
+        @font-face { font-family: "Inter"; src: url("assets/fonts/Inter-Variable.woff2") format("woff2-variations"); font-weight: 100 900; }
+
+        #root { position: absolute; inset: 0; width: 1080px; height: 1920px; overflow: hidden; font-family: "Poppins", "Inter", sans-serif; isolation: isolate; }
+        .bg { position: absolute; inset: 0; background: #f7f9fc; }
+        .glow { position: absolute; left: 90px; top: 640px; width: 900px; height: 900px; background: radial-gradient(ellipse 50% 50% at 50% 50%, rgba(30,155,240,0.2) 0%, rgba(30,155,240,0.06) 48%, rgba(30,155,240,0) 74%); opacity: 0; pointer-events: none; will-change: opacity; }
+
+        .figure { position: absolute; z-index: 2; top: 40px; left: 300px; width: 480px; height: 400px; mix-blend-mode: multiply; opacity: 0; will-change: transform, opacity; }
+        .figure img { width: 100%; height: 100%; object-fit: contain; display: block; }
+
+        .eyebrow { position: absolute; left: 0; right: 0; top: 460px; text-align: center; z-index: 4; font-family: "Poppins", sans-serif; font-weight: 600; font-size: 34px; letter-spacing: 0.08em; text-transform: uppercase; color: #1e9bf0; opacity: 0; margin: 0; will-change: transform, opacity; }
+
+        .chat { position: absolute; left: 100px; top: 560px; width: 880px; z-index: 3; display: flex; flex-direction: column; gap: 16px; }
+        .bubble { max-width: 730px; box-sizing: border-box; padding: 18px 26px; font-family: "Inter", sans-serif; font-weight: 500; font-size: 31px; line-height: 1.3; transform-origin: 50% 100%; opacity: 0; will-change: transform, opacity; }
+        .bubble.user { margin-left: auto; background: #1b2a41; color: #f7f9fc; border-radius: 22px 22px 8px 22px; }
+        .bubble.claude { margin-right: auto; background: rgba(30,155,240,0.06); border: 1.5px solid rgba(30,155,240,0.2); color: #1b2a41; border-radius: 22px 22px 22px 8px; display: flex; align-items: center; gap: 14px; }
+        .bubble.claude .ok { flex: none; width: 40px; height: 40px; border-radius: 50%; background: #059669; display: grid; place-items: center; }
+        .bubble.claude .ok svg { width: 23px; height: 23px; fill: none; stroke: #fff; stroke-width: 3; stroke-linecap: round; stroke-linejoin: round; }
+      </style>
+
+      <div id="root" data-composition-id="04-usages" data-width="1080" data-height="1920" data-duration="10.191">
+        <div id="bg-clip" class="clip bg" data-start="0" data-duration="9.691" data-track-index="0"><div class="glow" id="glow"></div></div>
+        <div id="scene" class="clip" data-start="0" data-duration="9.691" data-track-index="1" style="position:absolute; inset:0;">
+          <div class="figure" id="figure"><img src="public/chef-claude-assistant.png" alt="Chef pilotant StockVisionAI avec Claude" /></div>
+          <p class="eyebrow" id="eyebrow">Pilotez tout avec Claude</p>
+          <div class="chat">
+            <div class="bubble user" id="b1">« Ajoute la recette du risotto »</div>
+            <div class="bubble claude" id="b2"><span class="ok"><svg viewBox="0 0 24 24"><path d="M4 12l5 5L20 6" /></svg></span>Recette risotto ajoutée</div>
+            <div class="bubble user" id="b3">« Fais ma liste de courses de la semaine »</div>
+            <div class="bubble claude" id="b4"><span class="ok"><svg viewBox="0 0 24 24"><path d="M4 12l5 5L20 6" /></svg></span>Liste générée · 24 produits</div>
+            <div class="bubble user" id="b5">« Combien vais-je vendre samedi ? »</div>
+            <div class="bubble claude" id="b6"><span class="ok"><svg viewBox="0 0 24 24"><path d="M4 12l5 5L20 6" /></svg></span>≈ 180 couverts prévus</div>
+          </div>
+        </div>
+      </div>
+
+      <script src="assets/vendor/gsap.min.js"></script>
+      <script>
+        window.__timelines = window.__timelines || {};
+        const tl = gsap.timeline({ paused: true });
+        tl.fromTo("#figure", { y: -30, opacity: 0 }, { y: 0, opacity: 1, duration: 0.8, ease: "power3.out" }, 0.0);
+        tl.fromTo("#eyebrow", { y: 16, opacity: 0 }, { y: 0, opacity: 1, duration: 0.5, ease: "power3.out" }, 0.3);
+        var cues = [1.4, 2.5, 4.0, 5.1, 6.6, 7.6];
+        ["#b1", "#b2", "#b3", "#b4", "#b5", "#b6"].forEach(function (id, i) {
+          tl.fromTo(id, { y: 22, scale: 0.94, opacity: 0 }, { y: 0, scale: 1, opacity: 1, duration: 0.4, ease: "power3.out" }, cues[i]);
+        });
+        tl.fromTo("#glow", { opacity: 0 }, { opacity: 1, duration: 0.9, ease: "power2.out" }, 8.4);
+        tl.fromTo("#b2 .ok, #b4 .ok, #b6 .ok", { scale: 1 }, { scale: 1.15, duration: 0.2, yoyo: true, repeat: 1, ease: "power2.inOut" }, 8.5);
+        window.__timelines["04-usages"] = tl;
+      </script>
+    </template>
+  </body>
+</html>
