@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Frame 4 — L'IA (portrait)</title>
+  </head>
+  <body>
+    <template>
+      <style>
+        @font-face { font-family: "Poppins"; src: url("assets/fonts/Poppins-600.woff2") format("woff2"); font-weight: 600; }
+        @font-face { font-family: "Poppins"; src: url("assets/fonts/Poppins-700.woff2") format("woff2"); font-weight: 700; }
+        @font-face { font-family: "Inter"; src: url("assets/fonts/Inter-Variable.woff2") format("woff2-variations"); font-weight: 100 900; }
+
+        #root { position: absolute; inset: 0; width: 1080px; height: 1920px; overflow: hidden; font-family: "Poppins", "Inter", sans-serif; isolation: isolate; }
+        .bg { position: absolute; inset: 0; background: #f7f9fc; }
+        .glow { position: absolute; left: 190px; top: 90px; width: 700px; height: 640px; background: radial-gradient(ellipse 50% 50% at 50% 50%, rgba(30,155,240,0.22) 0%, rgba(30,155,240,0.07) 48%, rgba(30,155,240,0) 74%); opacity: 0; pointer-events: none; will-change: opacity; }
+
+        .figure { position: absolute; z-index: 2; top: 60px; left: 250px; width: 580px; height: 600px; mix-blend-mode: multiply; opacity: 0; will-change: transform, opacity; }
+        .figure img { width: 100%; height: 100%; object-fit: contain; display: block; }
+
+        .eyebrow { position: absolute; left: 0; right: 0; top: 700px; text-align: center; z-index: 4; font-family: "Poppins", sans-serif; font-weight: 600; font-size: 36px; letter-spacing: 0.09em; text-transform: uppercase; color: #1e9bf0; opacity: 0; margin: 0; will-change: transform, opacity; }
+
+        .cards { position: absolute; left: 100px; top: 790px; width: 880px; z-index: 3; display: flex; flex-direction: column; gap: 24px; }
+        .card { box-sizing: border-box; background: rgba(30,155,240,0.04); border: 1.5px solid rgba(30,155,240,0.22); border-radius: 22px; padding: 30px 34px; display: flex; align-items: center; gap: 28px; transform-origin: 50% 50%; opacity: 0; will-change: transform, opacity; }
+        .card .ic { flex: none; width: 84px; height: 84px; border-radius: 20px; background: rgba(30,155,240,0.1); display: grid; place-items: center; }
+        .card .ic svg { width: 46px; height: 46px; fill: none; stroke: #1e9bf0; stroke-width: 1.9; stroke-linecap: round; stroke-linejoin: round; }
+        .card .txt b { display: block; font-family: "Poppins", sans-serif; font-weight: 700; font-size: 44px; letter-spacing: -0.01em; color: #1b2a41; line-height: 1.12; }
+        .card .txt span { display: block; margin-top: 6px; font-family: "Inter", sans-serif; font-weight: 500; font-size: 30px; color: #566472; }
+      </style>
+
+      <div id="root" data-composition-id="04-ia" data-width="1080" data-height="1920" data-duration="10.557">
+        <div id="bg-clip" class="clip bg" data-start="0" data-duration="10.057" data-track-index="0"><div class="glow" id="glow"></div></div>
+        <div id="scene" class="clip" data-start="0" data-duration="10.057" data-track-index="1" style="position:absolute; inset:0;">
+          <div class="figure" id="figure"><img src="public/chef-robot-highfive.png" alt="Le chef et l'IA, main dans la main" /></div>
+          <p class="eyebrow" id="eyebrow">L'IA qui travaille pour vous</p>
+          <div class="cards">
+            <div class="card" id="c1"><span class="ic"><svg viewBox="0 0 24 24"><path d="M3 17l5-5 4 3 6-7" /><path d="M15 8h5v5" /></svg></span><span class="txt"><b>Anticipe vos ruptures</b><span>de stock, avant qu'elles arrivent</span></span></div>
+            <div class="card" id="c2"><span class="ic"><svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="17" rx="2" /><path d="M8 2v4M16 2v4M3 10h18M8 15l2 2 4-4" /></svg></span><span class="txt"><b>Optimise vos plannings</b><span>l'équipe au bon moment</span></span></div>
+            <div class="card" id="c3"><span class="ic"><svg viewBox="0 0 24 24"><path d="M21 12a8 8 0 0 1-11.5 7.2L3 21l1.8-6.5A8 8 0 1 1 21 12z" /><path d="M9 11h6M9 14h4" /></svg></span><span class="txt"><b>Répond en secondes</b><span>à vos questions business</span></span></div>
+          </div>
+        </div>
+      </div>
+
+      <script src="assets/vendor/gsap.min.js"></script>
+      <script>
+        window.__timelines = window.__timelines || {};
+        const tl = gsap.timeline({ paused: true });
+        tl.fromTo("#figure", { y: -34, opacity: 0 }, { y: 0, opacity: 1, duration: 0.85, ease: "power3.out" }, 0.0);
+        tl.fromTo("#eyebrow", { y: 16, opacity: 0 }, { y: 0, opacity: 1, duration: 0.5, ease: "power3.out" }, 1.6);
+        tl.fromTo("#c1", { y: 30, scale: 0.95, opacity: 0 }, { y: 0, scale: 1, opacity: 1, duration: 0.5, ease: "power3.out" }, 4.3);
+        tl.fromTo("#c2", { y: 30, scale: 0.95, opacity: 0 }, { y: 0, scale: 1, opacity: 1, duration: 0.5, ease: "power3.out" }, 6.0);
+        tl.fromTo("#c3", { y: 30, scale: 0.95, opacity: 0 }, { y: 0, scale: 1, opacity: 1, duration: 0.5, ease: "power3.out" }, 7.4);
+        tl.fromTo("#glow", { opacity: 0 }, { opacity: 1, duration: 0.9, ease: "power2.out" }, 8.7);
+        window.__timelines["04-ia"] = tl;
+      </script>
+    </template>
+  </body>
+</html>

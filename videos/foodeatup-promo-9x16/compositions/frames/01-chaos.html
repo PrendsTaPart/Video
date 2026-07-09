@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Frame 1 — Le chaos (portrait)</title>
+  </head>
+  <body>
+    <template>
+      <style>
+        @font-face { font-family: "Poppins"; src: url("assets/fonts/Poppins-600.woff2") format("woff2"); font-weight: 600; }
+        @font-face { font-family: "Poppins"; src: url("assets/fonts/Poppins-800.woff2") format("woff2"); font-weight: 800; }
+        @font-face { font-family: "Inter"; src: url("assets/fonts/Inter-Variable.woff2") format("woff2-variations"); font-weight: 100 900; }
+
+        #root { position: absolute; inset: 0; width: 1080px; height: 1920px; overflow: hidden; font-family: "Inter", sans-serif; color: #1b2a41; isolation: isolate; }
+        .bg { position: absolute; inset: 0; background-color: #f7f9fc; background-image: radial-gradient(circle at 50% 26%, rgba(30,155,240,0.05), transparent 55%), radial-gradient(circle, rgba(27,42,65,0.09) 1.6px, transparent 1.6px); background-size: 100% 100%, 46px 46px; }
+        .shake { position: absolute; inset: 0; }
+
+        .clock { position: absolute; z-index: 2; left: 370px; top: 150px; width: 340px; height: 340px; opacity: 0; will-change: transform, opacity; }
+        .clock svg { width: 100%; height: 100%; }
+        .clock .face { fill: #ffffff; stroke: rgba(27,42,65,0.14); stroke-width: 6; }
+        .clock .tick { stroke: rgba(27,42,65,0.28); stroke-width: 4; stroke-linecap: round; }
+        .clock .hand { stroke: #1b2a41; stroke-linecap: round; transform-origin: 100px 100px; }
+        .clock .hand.min { stroke-width: 6; }
+        .clock .hand.hr { stroke-width: 8; }
+        .clock .pin { fill: #1e9bf0; }
+
+        .fiches { position: absolute; left: 120px; top: 560px; width: 840px; z-index: 3; display: flex; flex-direction: column; gap: 22px; }
+        .fiche { position: relative; box-sizing: border-box; background: #ffffff; border: 1.5px solid rgba(27,42,65,0.1); border-radius: 16px; padding: 24px 30px; display: flex; align-items: center; gap: 22px; transform-origin: 50% 50%; opacity: 0; will-change: transform, opacity; }
+        .fiche::before { content: ""; position: absolute; left: 0; top: 16px; bottom: 16px; width: 7px; border-radius: 4px; background: #1e9bf0; }
+        .fiche.alert::before { background: #dc2626; }
+        .fiche-ic { flex: 0 0 60px; width: 60px; height: 60px; display: grid; place-items: center; background: rgba(30,155,240,0.08); border-radius: 50%; }
+        .fiche.alert .fiche-ic { background: rgba(220,38,38,0.08); }
+        .fiche-ic svg { width: 34px; height: 34px; fill: none; stroke: #1e9bf0; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; }
+        .fiche.alert .fiche-ic svg { stroke: #dc2626; }
+        .fiche-label { font-family: "Poppins", sans-serif; font-weight: 600; font-size: 38px; letter-spacing: -0.01em; color: #1b2a41; line-height: 1.12; }
+        .fiche-sub { display: block; font-family: "Inter", sans-serif; font-weight: 500; font-size: 25px; color: #566472; margin-top: 4px; }
+        .fiche-badge { margin-left: auto; flex: none; padding: 8px 20px; border-radius: 100px; background: rgba(30,155,240,0.1); font-family: "Poppins", sans-serif; font-weight: 700; font-size: 28px; color: #115e9c; }
+        .fiche.alert .fiche-badge { background: rgba(220,38,38,0.1); color: #b91c1c; }
+
+        .stamp { position: absolute; z-index: 5; left: 50%; top: 900px; transform: translateX(-50%) rotate(-6deg); padding: 22px 52px; border: 6px solid #1b2a41; border-radius: 18px; background: rgba(247,249,252,0.86); font-family: "Poppins", sans-serif; font-weight: 800; font-size: 64px; letter-spacing: 0.02em; color: #1b2a41; transform-origin: 50% 50%; opacity: 0; white-space: nowrap; will-change: transform, opacity; }
+      </style>
+
+      <div id="root" data-composition-id="01-chaos" data-width="1080" data-height="1920" data-duration="11.08">
+        <div id="bg-clip" class="clip bg" data-start="0" data-duration="10.58" data-track-index="0"></div>
+        <div id="scene" class="clip" data-start="0" data-duration="10.58" data-track-index="1" style="position:absolute; inset:0;">
+          <div class="shake">
+            <div class="clock" id="clock">
+              <svg viewBox="0 0 200 200">
+                <circle class="face" cx="100" cy="100" r="92" />
+                <g class="ticks">
+                  <line class="tick" x1="100" y1="16" x2="100" y2="30" />
+                  <line class="tick" x1="184" y1="100" x2="170" y2="100" />
+                  <line class="tick" x1="100" y1="184" x2="100" y2="170" />
+                  <line class="tick" x1="16" y1="100" x2="30" y2="100" />
+                </g>
+                <line class="hand hr" id="hand-hr" x1="100" y1="100" x2="100" y2="58" />
+                <line class="hand min" id="hand-min" x1="100" y1="100" x2="100" y2="38" />
+                <circle class="pin" cx="100" cy="100" r="7" />
+              </svg>
+            </div>
+            <div class="fiches">
+              <div class="fiche" id="f1"><span class="fiche-ic"><svg viewBox="0 0 24 24"><path d="M8 2v4M16 2v4M3 9h18" /><rect x="3" y="5" width="18" height="16" rx="2" /></svg></span><span class="fiche-label">Réservations<span class="fiche-sub">qui s'accumulent</span></span><span class="fiche-badge">+3</span></div>
+              <div class="fiche" id="f2"><span class="fiche-ic"><svg viewBox="0 0 24 24"><path d="M21 8V7l-9-4-9 4v10l9 4 9-4v-1" /><path d="M3 7l9 4 9-4M12 11v10" /></svg></span><span class="fiche-label">Stocks à surveiller<span class="fiche-sub">seuil atteint</span></span><span class="fiche-badge">!</span></div>
+              <div class="fiche" id="f3"><span class="fiche-ic"><svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="17" rx="2" /><path d="M8 2v4M16 2v4M3 10h18M8 15h3M14 15h2" /></svg></span><span class="fiche-label">Plannings à jongler<span class="fiche-sub">équipe à caler</span></span><span class="fiche-badge">?</span></div>
+              <div class="fiche alert" id="f4"><span class="fiche-ic"><svg viewBox="0 0 24 24"><path d="M12 3l9 16H3z" /><path d="M12 10v4M12 17h.01" /></svg></span><span class="fiche-label">Contrôles HACCP<span class="fiche-sub">à ne pas oublier</span></span><span class="fiche-badge">à valider</span></div>
+            </div>
+            <div class="stamp" id="stamp">Un sport de combat.</div>
+          </div>
+        </div>
+      </div>
+
+      <script src="assets/vendor/gsap.min.js"></script>
+      <script>
+        window.__timelines = window.__timelines || {};
+        (function () {
+          var root = document.querySelector('[data-composition-id="01-chaos"][id="root"]') || document.querySelector('[data-composition-id="01-chaos"]');
+          var tl = gsap.timeline({ paused: true });
+          var shakeEl = root.querySelector(".shake");
+          tl.fromTo(root.querySelector("#clock"), { y: -30, scale: 0.85, opacity: 0 }, { y: 0, scale: 1, opacity: 1, duration: 0.7, ease: "power3.out" }, 0.0);
+          // accelerating clock hands
+          tl.fromTo(root.querySelector("#hand-min"), { rotation: 0 }, { rotation: 1080, duration: 9.5, ease: "power2.in", transformOrigin: "100px 100px" }, 0.4);
+          tl.fromTo(root.querySelector("#hand-hr"), { rotation: 0 }, { rotation: 300, duration: 9.5, ease: "power2.in", transformOrigin: "100px 100px" }, 0.4);
+          var cues = [0.9, 2.0, 3.2, 5.24];
+          ["#f1", "#f2", "#f3", "#f4"].forEach(function (id, i) {
+            tl.fromTo(root.querySelector(id), { scale: 0.85, y: 30, opacity: 0 }, { scale: 1, y: 0, opacity: 1, duration: 0.5, ease: "power3.out" }, cues[i]);
+          });
+          // tighten toward center on "gérer un restaurant aujourd'hui"
+          tl.to(root.querySelector(".fiches"), { scale: 0.96, y: -6, duration: 0.8, ease: "power2.inOut" }, 7.4);
+          // slam on "sport de combat"
+          tl.fromTo(root.querySelector("#stamp"), { scale: 1.7, opacity: 0 }, { scale: 1, opacity: 1, duration: 0.36, ease: "power4.out" }, 9.4);
+          var shk = { t: 0 };
+          tl.to(shk, { t: 1, duration: 1.0, ease: "none", onUpdate: function () {
+            var tt = shk.t; var env = Math.max(0, Math.min(1, tt / 0.16, (1 - tt) / 0.2));
+            var ph = tt * 1.0 * Math.PI * 2;
+            shakeEl.style.transform = "translate(" + (Math.sin(ph * 3.5) * 3.4 * env) + "px," + (Math.sin(ph * 2.7 + 1.1) * 2.4 * env) + "px)";
+          } }, 9.4);
+          window.__timelines["01-chaos"] = tl;
+        })();
+      </script>
+    </template>
+  </body>
+</html>

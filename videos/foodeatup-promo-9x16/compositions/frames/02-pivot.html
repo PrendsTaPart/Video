@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Frame 2 — Le pivot (portrait)</title>
+  </head>
+  <body>
+    <template>
+      <style>
+        @font-face { font-family: "Poppins"; src: url("assets/fonts/Poppins-600.woff2") format("woff2"); font-weight: 600; }
+        @font-face { font-family: "Poppins"; src: url("assets/fonts/Poppins-700.woff2") format("woff2"); font-weight: 700; }
+        @font-face { font-family: "Inter"; src: url("assets/fonts/Inter-Variable.woff2") format("woff2-variations"); font-weight: 100 900; }
+
+        #root { position: absolute; inset: 0; width: 1080px; height: 1920px; overflow: hidden; font-family: "Poppins", sans-serif; }
+        .bg { position: absolute; inset: 0; background: #f7f9fc; }
+        .halo { position: absolute; left: 90px; top: 520px; width: 900px; height: 900px; background: radial-gradient(ellipse 50% 50% at 50% 50%, rgba(30,155,240,0.18) 0%, rgba(30,155,240,0.05) 46%, rgba(30,155,240,0) 72%); opacity: 0; pointer-events: none; will-change: transform, opacity; }
+        .q { position: absolute; left: 0; right: 0; top: 300px; height: 1300px; display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 0 100px; box-sizing: border-box; }
+        .l1 { font-weight: 600; font-size: 88px; line-height: 1.1; letter-spacing: -0.02em; color: #1b2a41; text-align: center; }
+        .l1 .hl { position: relative; color: #1e9bf0; white-space: nowrap; }
+        .l1 .hl .u { position: absolute; left: 0; right: 0; bottom: -6px; height: 8px; border-radius: 4px; background: #1e9bf0; transform-origin: left center; transform: scaleX(0); }
+        .word { display: inline-block; opacity: 0; will-change: transform, opacity; }
+        .l2 { margin-top: 44px; font-weight: 700; font-size: 96px; line-height: 1.08; letter-spacing: -0.02em; color: #1b2a41; text-align: center; }
+      </style>
+
+      <div id="root" data-composition-id="02-pivot" data-width="1080" data-height="1920" data-duration="2.956">
+        <div id="bg-clip" class="clip bg" data-start="0" data-duration="2.456" data-track-index="0"><div class="halo" id="halo"></div></div>
+        <div id="q" class="clip q" data-start="0" data-duration="2.456" data-track-index="1">
+          <div class="l1"><span class="word" data-w>Et</span> <span class="word" data-w>si</span> <span class="hl"><span class="word" data-w>un</span> <span class="word" data-w>seul</span> <span class="word" data-w>outil</span><span class="u" id="u"></span></span></div>
+          <div class="l2"><span class="word" data-w2>s'occupait</span> <span class="word" data-w2>de</span> <span class="word" data-w2>tout&nbsp;?</span></div>
+        </div>
+      </div>
+
+      <script src="assets/vendor/gsap.min.js"></script>
+      <script>
+        window.__timelines = window.__timelines || {};
+        const tl = gsap.timeline({ paused: true });
+        tl.fromTo("#halo", { opacity: 0, scale: 0.9 }, { opacity: 1, scale: 1, duration: 0.8, ease: "power2.out" }, 0.0);
+        tl.fromTo("[data-w]", { y: 26, opacity: 0 }, { y: 0, opacity: 1, duration: 0.4, ease: "power3.out", stagger: 0.05 }, 0.1);
+        tl.fromTo("#u", { scaleX: 0 }, { scaleX: 1, duration: 0.4, ease: "power3.out" }, 0.7);
+        tl.fromTo("[data-w2]", { y: 26, opacity: 0 }, { y: 0, opacity: 1, duration: 0.42, ease: "power3.out", stagger: 0.06 }, 0.85);
+        window.__timelines["02-pivot"] = tl;
+      </script>
+    </template>
+  </body>
+</html>

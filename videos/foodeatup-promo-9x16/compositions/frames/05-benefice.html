@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Frame 5 — Le bénéfice (portrait)</title>
+  </head>
+  <body>
+    <template>
+      <style>
+        @font-face { font-family: "Poppins"; src: url("assets/fonts/Poppins-600.woff2") format("woff2"); font-weight: 600; }
+        @font-face { font-family: "Poppins"; src: url("assets/fonts/Poppins-700.woff2") format("woff2"); font-weight: 700; }
+        @font-face { font-family: "Inter"; src: url("assets/fonts/Inter-Variable.woff2") format("woff2-variations"); font-weight: 100 900; }
+
+        #root { position: absolute; inset: 0; width: 1080px; height: 1920px; overflow: hidden; font-family: "Poppins", sans-serif; }
+        .bg { position: absolute; inset: 0; background: #f7f9fc; }
+        .halo { position: absolute; left: 90px; top: 540px; width: 900px; height: 860px; background: radial-gradient(ellipse 50% 50% at 50% 50%, rgba(30,155,240,0.16) 0%, rgba(30,155,240,0.05) 46%, rgba(30,155,240,0) 72%); opacity: 0; pointer-events: none; will-change: opacity; }
+        .lines { position: absolute; left: 0; right: 0; top: 300px; height: 1300px; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 40px; padding: 0 100px; box-sizing: border-box; }
+        .line { font-weight: 600; font-size: 76px; line-height: 1.14; letter-spacing: -0.02em; color: #1b2a41; text-align: center; opacity: 0; will-change: transform, opacity; }
+        .line.two { font-weight: 700; font-size: 88px; }
+        .line.two .accent { color: #1e9bf0; }
+      </style>
+
+      <div id="root" data-composition-id="05-benefice" data-width="1080" data-height="1920" data-duration="3.426">
+        <div id="bg-clip" class="clip bg" data-start="0" data-duration="2.926" data-track-index="0"><div class="halo" id="halo"></div></div>
+        <div id="lines" class="clip lines" data-start="0" data-duration="2.926" data-track-index="1">
+          <div class="line one" id="l1">Votre équipe<br />gagne du temps.</div>
+          <div class="line two" id="l2">Vous gagnez en<br /><span class="accent">sérénité.</span></div>
+        </div>
+      </div>
+
+      <script src="assets/vendor/gsap.min.js"></script>
+      <script>
+        window.__timelines = window.__timelines || {};
+        const tl = gsap.timeline({ paused: true });
+        tl.fromTo("#halo", { opacity: 0, scale: 0.92 }, { opacity: 1, scale: 1, duration: 0.9, ease: "power2.out" }, 0.1);
+        tl.fromTo("#l1", { y: 30, opacity: 0 }, { y: 0, opacity: 1, duration: 0.55, ease: "power3.out" }, 0.05);
+        tl.to("#l1", { opacity: 0.55, scale: 0.96, duration: 0.5, ease: "power2.inOut" }, 1.4);
+        tl.fromTo("#l2", { y: 30, opacity: 0 }, { y: 0, opacity: 1, duration: 0.55, ease: "power3.out" }, 1.5);
+        window.__timelines["05-benefice"] = tl;
+      </script>
+    </template>
+  </body>
+</html>
