@@ -21,6 +21,9 @@ réutilisables entre les vidéos du studio. Générées via RapidoCMS.
 - `chef-storeroom.png` — chef serein devant une réserve bien rangée et approvisionnée
 - `caroline-agent.png` — Caroline, agent vocal (femme pro au casque, onde vocale bleue)
 - `phone-chaos.png` — chef débordé par les appels (téléphone, smartphones en appels manqués)
+- `compta-chaos.png` — gérant débordé par la compta (factures, reçus, calculatrice, euros)
+- `chef-invoice-tablet.png` — gérant présentant une tablette avec dashboard financier (factures, CA)
+- `chef-desk-calm.png` — gérant serein à son bureau, laptop dashboard financier (compta à jour)
 
 Pour utiliser dans un projet : copier le PNG voulu dans `<projet>/public/`
 (les chemins d'assets HyperFrames sont relatifs à la racine du projet).
