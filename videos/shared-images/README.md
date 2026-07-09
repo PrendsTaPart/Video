@@ -19,6 +19,8 @@ réutilisables entre les vidéos du studio. Générées via RapidoCMS.
 - `chef-planning-board.png` — chef présentant une grille de planning d'équipe (avatars/jours/créneaux)
 - `stock-chaos.png` — chef débordé par le stock (cagettes, cartons, tableurs, gaspillage)
 - `chef-storeroom.png` — chef serein devant une réserve bien rangée et approvisionnée
+- `caroline-agent.png` — Caroline, agent vocal (femme pro au casque, onde vocale bleue)
+- `phone-chaos.png` — chef débordé par les appels (téléphone, smartphones en appels manqués)
 
 Pour utiliser dans un projet : copier le PNG voulu dans `<projet>/public/`
 (les chemins d'assets HyperFrames sont relatifs à la racine du projet).

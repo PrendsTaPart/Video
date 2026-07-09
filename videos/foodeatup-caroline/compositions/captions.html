@@ -1,0 +1,225 @@
+<template id="captions-template" data-composition-id="captions" data-width="1920" data-height="1080">
+<script src="assets/vendor/gsap.min.js"></script>
+
+
+<style data-brand-tokens>
+      @font-face { font-family: 'Poppins'; src: url('assets/fonts/Poppins-400.woff2') format('woff2'); font-weight: 400; font-display: block; }
+      @font-face { font-family: 'Inter'; src: url('assets/fonts/Inter-Regular.woff2') format('woff2'); font-weight: 400; font-display: block; }
+      :root {
+      --bg: #F7F9FC;
+      --primary: #1E9BF0;
+      --text: #1B2A41;
+      --text-muted: #6B6B6B;
+      --text-light: #9A9A9A;
+      --accent-light: rgba(30, 155, 240, 0.08);
+      --accent-medium: rgba(30, 155, 240, 0.15);
+      --border: rgba(30, 155, 240, 0.2);
+      --card-bg: rgba(30, 155, 240, 0.04);
+      --positive: #059669;
+      --negative: #dc2626;
+      --cap-ink: #1B2A41;
+      --cap-canvas: #F7F9FC;
+      --cap-accent: #1E9BF0;
+      --cap-accent-2: #dc2626;
+      --font-display: "Poppins", system-ui, serif;
+      --font-body: "Inter", system-ui, sans-serif;
+      --cap-band-top: 900px;
+      --cap-band-height: 180px;
+      }
+    </style>
+
+<style>
+  #captions-root {
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+  }
+  .caption-layer {
+    position: absolute;
+    inset: 0;
+    z-index: 20;
+    pointer-events: none;
+  }
+  /* the keep-out band, from captionBand(H) — frame content stays above it */
+  .caption-stage {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: var(--cap-band-top, 900px);
+    height: var(--cap-band-height, 180px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .caption-group {
+    /* every group is absolutely stacked over the SAME band — exactly one shown at a
+       time via opacity. Must be absolute: in-flow groups would lay out side-by-side. */
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+  }
+
+  /* THE tinted card — 4% cobalt fill, 1.5px 20%-cobalt border, soft 14px corners,
+     NO shadow (the tinted card does the lift; cast depth is forbidden) */
+  .caption-pill {
+    max-width: 78%;
+    padding: 20px 44px 24px;
+    background: color-mix(in srgb, var(--cap-accent, #1e2bfa) 4%, var(--cap-canvas, #fdfae7));
+    border: 1.5px solid color-mix(in srgb, var(--cap-accent, #1e2bfa) 20%, transparent);
+    border-radius: 14px;
+  }
+  .caption-line {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.1em 0.34em;
+    font-family: "Poppins", system-ui, sans-serif;
+    font-weight: 600;
+    font-size: clamp(40px, 4.4vw, 58px);
+    line-height: 1.16;
+    letter-spacing: -0.02em;
+  }
+
+  /* upcoming — muted gray, no chip */
+  .caption-word {
+    display: inline-block;
+    padding: 0 0.18em;
+    border-radius: 0.32em;
+    color: color-mix(in srgb, var(--cap-ink, #111111) 52%, var(--cap-canvas, #fdfae7));
+  }
+  /* current word — THE solid cobalt chip (the single-accent gesture; pill-rounded
+     fill, NO shadow), cream reading on top */
+  .caption-word.is-active {
+    color: var(--cap-canvas, #fdfae7);
+    background: var(--cap-accent, #1e2bfa);
+    box-shadow: none;
+  }
+  /* already spoken — solid near-black ink, chip cleared */
+  .caption-word.is-spoken {
+    color: var(--cap-ink, #111111);
+    background: transparent;
+    box-shadow: none;
+  }
+
+  /* optional per-word accents (dormant until a word-classer tags them) */
+  /* brand / key term — cobalt, the system's one accent on a key word */
+  .caption-word.cap-brand {
+    color: var(--cap-accent, #1e2bfa);
+  }
+  /* numerals / data — cobalt 700, the figure voice */
+  .caption-word.cap-num {
+    font-family: "Poppins", system-ui, sans-serif;
+    font-weight: 700;
+    color: var(--cap-accent, #1e2bfa);
+  }
+  /* emphasis — a directional-red hairline underline (inline only, never a fill) */
+  .caption-word.cap-cta {
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+    text-decoration-color: var(--cap-accent-2, #dc2626);
+    text-underline-offset: 0.1em;
+  }
+
+  @media (max-aspect-ratio: 9/16) {
+    .caption-pill {
+      max-width: 92%;
+    }
+    .caption-line {
+      font-size: clamp(34px, 5.4vw, 48px);
+    }
+  }
+</style>
+
+<div
+  id="captions-root"
+  data-composition-id="captions"
+  data-timeline-locked
+  data-start="0"
+  data-duration="49.136"
+  data-fps="30"
+  data-width="1920"
+  data-height="1080"
+>
+  <div class="caption-layer" aria-hidden="true">
+    <div id="caption-stage" class="caption-stage"></div>
+  </div>
+</div>
+
+<script>
+  // captions.mjs injects the engine's scene-aware groups + real duration here.
+  var GROUPS = [{"id":"caption-group-0","frame":1,"start":0.05,"end":0.44,"text":"En plein","words":[{"id":"caption-word-0-0","text":"En","start":0.05,"end":0.11},{"id":"caption-word-0-1","text":"plein","start":0.11,"end":0.44}]},{"id":"caption-group-1","frame":1,"start":0.44,"end":0.79,"text":"coup de","words":[{"id":"caption-word-1-0","text":"coup","start":0.44,"end":0.63},{"id":"caption-word-1-1","text":"de","start":0.63,"end":0.79}]},{"id":"caption-group-2","frame":1,"start":0.79,"end":1.19,"text":"feu,","words":[{"id":"caption-word-2-0","text":"feu,","start":0.79,"end":1.19}]},{"id":"caption-group-3","frame":1,"start":1.19,"end":2.49,"text":"le téléphone sonne.","words":[{"id":"caption-word-3-0","text":"le","start":1.19,"end":1.2},{"id":"caption-word-3-1","text":"téléphone","start":1.2,"end":1.85},{"id":"caption-word-3-2","text":"sonne.","start":1.85,"end":2.49}]},{"id":"caption-group-4","frame":1,"start":2.49,"end":3.63,"text":"Une réservation,","words":[{"id":"caption-word-4-0","text":"Une","start":2.49,"end":2.66},{"id":"caption-word-4-1","text":"réservation,","start":2.66,"end":3.63}]},{"id":"caption-group-5","frame":1,"start":3.63,"end":4.21,"text":"une commande","words":[{"id":"caption-word-5-0","text":"une","start":3.63,"end":3.71},{"id":"caption-word-5-1","text":"commande","start":3.71,"end":4.21}]},{"id":"caption-group-6","frame":1,"start":4.21,"end":4.92,"text":"à emporter,","words":[{"id":"caption-word-6-0","text":"à","start":4.21,"end":4.27},{"id":"caption-word-6-1","text":"emporter,","start":4.27,"end":4.92}]},{"id":"caption-group-7","frame":1,"start":4.92,"end":5.21,"text":"une question...","words":[{"id":"caption-word-7-0","text":"une","start":4.92,"end":5.21},{"id":"caption-word-7-1","text":"question...","start":5.21,"end":5.36}]},{"id":"caption-group-8","frame":1,"start":5.21,"end":6.3,"text":"Vous décrochez,","words":[{"id":"caption-word-8-0","text":"Vous","start":5.21,"end":6.1},{"id":"caption-word-8-1","text":"décrochez,","start":6.1,"end":6.3}]},{"id":"caption-group-9","frame":1,"start":6.3,"end":7,"text":"ou vous","words":[{"id":"caption-word-9-0","text":"ou","start":6.3,"end":6.79},{"id":"caption-word-9-1","text":"vous","start":6.79,"end":7}]},{"id":"caption-group-10","frame":1,"start":7,"end":7.52,"text":"laissez sonner","words":[{"id":"caption-word-10-0","text":"laissez","start":7,"end":7.12},{"id":"caption-word-10-1","text":"sonner","start":7.12,"end":7.4}]},{"id":"caption-group-11","frame":1,"start":8.13,"end":9.35,"text":"Chaque appel manqué,","words":[{"id":"caption-word-11-0","text":"Chaque","start":8.13,"end":8.52},{"id":"caption-word-11-1","text":"appel","start":8.52,"end":8.83},{"id":"caption-word-11-2","text":"manqué,","start":8.83,"end":9.35}]},{"id":"caption-group-12","frame":1,"start":9.35,"end":9.8,"text":"c'est un","words":[{"id":"caption-word-12-0","text":"c'est","start":9.35,"end":9.68},{"id":"caption-word-12-1","text":"un","start":9.68,"end":9.8}]},{"id":"caption-group-13","frame":1,"start":9.8,"end":10.42,"text":"client qui","words":[{"id":"caption-word-13-0","text":"client","start":9.8,"end":10.2},{"id":"caption-word-13-1","text":"qui","start":10.2,"end":10.42}]},{"id":"caption-group-14","frame":1,"start":10.42,"end":11.2,"text":"s'en va.","words":[{"id":"caption-word-14-0","text":"s'en","start":10.42,"end":10.65},{"id":"caption-word-14-1","text":"va.","start":10.65,"end":11.08}]},{"id":"caption-group-15","frame":2,"start":11.28,"end":12.19,"text":"Voici Caroline,","words":[{"id":"caption-word-15-0","text":"Voici","start":11.28,"end":11.54},{"id":"caption-word-15-1","text":"Caroline,","start":11.54,"end":12.19}]},{"id":"caption-group-16","frame":2,"start":12.19,"end":12.98,"text":"l'agent vocal","words":[{"id":"caption-word-16-0","text":"l'agent","start":12.19,"end":12.64},{"id":"caption-word-16-1","text":"vocal","start":12.64,"end":12.98}]},{"id":"caption-group-17","frame":2,"start":12.98,"end":14.01,"text":"de FoodEatUp.","words":[{"id":"caption-word-17-0","text":"de","start":12.98,"end":13.11},{"id":"caption-word-17-1","text":"FoodEatUp.","start":13.11,"end":14.01}]},{"id":"caption-group-18","frame":2,"start":14.01,"end":14.55,"text":"Elle répond","words":[{"id":"caption-word-18-0","text":"Elle","start":14.01,"end":14.19},{"id":"caption-word-18-1","text":"répond","start":14.19,"end":14.55}]},{"id":"caption-group-19","frame":2,"start":14.55,"end":15.24,"text":"au téléphone","words":[{"id":"caption-word-19-0","text":"au","start":14.55,"end":14.89},{"id":"caption-word-19-1","text":"téléphone","start":14.89,"end":15.24}]},{"id":"caption-group-20","frame":2,"start":15.24,"end":15.6,"text":"à votre","words":[{"id":"caption-word-20-0","text":"à","start":15.24,"end":15.35},{"id":"caption-word-20-1","text":"votre","start":15.35,"end":15.6}]},{"id":"caption-group-21","frame":2,"start":15.6,"end":15.94,"text":"place,","words":[{"id":"caption-word-21-0","text":"place,","start":15.6,"end":15.94}]},{"id":"caption-group-22","frame":2,"start":15.94,"end":17.04,"text":"24 heures sur","words":[{"id":"caption-word-22-0","text":"24","start":15.94,"end":16.38},{"id":"caption-word-22-1","text":"heures","start":16.38,"end":16.9},{"id":"caption-word-22-2","text":"sur","start":16.9,"end":17.04}]},{"id":"caption-group-23","frame":2,"start":17.04,"end":17.5,"text":"24,","words":[{"id":"caption-word-23-0","text":"24,","start":17.04,"end":17.5}]},{"id":"caption-group-24","frame":2,"start":17.5,"end":17.83,"text":"avec le","words":[{"id":"caption-word-24-0","text":"avec","start":17.5,"end":17.72},{"id":"caption-word-24-1","text":"le","start":17.72,"end":17.83}]},{"id":"caption-group-25","frame":2,"start":17.83,"end":18.43,"text":"sourire dans","words":[{"id":"caption-word-25-0","text":"sourire","start":17.83,"end":18.22},{"id":"caption-word-25-1","text":"dans","start":18.22,"end":18.43}]},{"id":"caption-group-26","frame":2,"start":18.43,"end":19.05,"text":"la voix.","words":[{"id":"caption-word-26-0","text":"la","start":18.43,"end":18.56},{"id":"caption-word-26-1","text":"voix.","start":18.56,"end":18.93}]},{"id":"caption-group-27","frame":3,"start":19.354,"end":20.644,"text":"Un client appelle.","words":[{"id":"caption-word-27-0","text":"Un","start":19.354,"end":19.544},{"id":"caption-word-27-1","text":"client","start":19.544,"end":19.954},{"id":"caption-word-27-2","text":"appelle.","start":19.954,"end":20.644}]},{"id":"caption-group-28","frame":3,"start":20.644,"end":21.734,"text":"Caroline décroche,","words":[{"id":"caption-word-28-0","text":"Caroline","start":20.644,"end":21.054},{"id":"caption-word-28-1","text":"décroche,","start":21.054,"end":21.734}]},{"id":"caption-group-29","frame":3,"start":21.734,"end":22.904,"text":"comprend sa demande,","words":[{"id":"caption-word-29-0","text":"comprend","start":21.734,"end":22.144},{"id":"caption-word-29-1","text":"sa","start":22.144,"end":22.284},{"id":"caption-word-29-2","text":"demande,","start":22.284,"end":22.904}]},{"id":"caption-group-30","frame":3,"start":22.904,"end":24.514,"text":"vérifie les disponibilités","words":[{"id":"caption-word-30-0","text":"vérifie","start":22.904,"end":23.294},{"id":"caption-word-30-1","text":"les","start":23.294,"end":23.494},{"id":"caption-word-30-2","text":"disponibilités","start":23.494,"end":24.514}]},{"id":"caption-group-31","frame":3,"start":24.514,"end":25.804,"text":"et enregistre tout","words":[{"id":"caption-word-31-0","text":"et","start":24.514,"end":24.604},{"id":"caption-word-31-1","text":"enregistre","start":24.604,"end":25.304},{"id":"caption-word-31-2","text":"tout","start":25.304,"end":25.804}]},{"id":"caption-group-32","frame":3,"start":25.804,"end":26.894,"text":"une table pour","words":[{"id":"caption-word-32-0","text":"une","start":25.804,"end":25.984},{"id":"caption-word-32-1","text":"table","start":25.984,"end":26.364},{"id":"caption-word-32-2","text":"pour","start":26.364,"end":26.894}]},{"id":"caption-group-33","frame":3,"start":26.894,"end":27.474,"text":"quatre samedi","words":[{"id":"caption-word-33-0","text":"quatre","start":26.894,"end":26.934},{"id":"caption-word-33-1","text":"samedi","start":26.934,"end":27.474}]},{"id":"caption-group-34","frame":3,"start":27.474,"end":27.804,"text":"soir,","words":[{"id":"caption-word-34-0","text":"soir,","start":27.474,"end":27.804}]},{"id":"caption-group-35","frame":3,"start":27.804,"end":28.864,"text":"et deux pizzas","words":[{"id":"caption-word-35-0","text":"et","start":27.804,"end":28.064},{"id":"caption-word-35-1","text":"deux","start":28.064,"end":28.294},{"id":"caption-word-35-2","text":"pizzas","start":28.294,"end":28.864}]},{"id":"caption-group-36","frame":3,"start":28.864,"end":29.834,"text":"à emporter.","words":[{"id":"caption-word-36-0","text":"à","start":28.864,"end":28.954},{"id":"caption-word-36-1","text":"emporter.","start":28.954,"end":29.834}]},{"id":"caption-group-37","frame":3,"start":29.834,"end":30.174,"text":"Sans que","words":[{"id":"caption-word-37-0","text":"Sans","start":29.834,"end":30.014},{"id":"caption-word-37-1","text":"que","start":30.014,"end":30.174}]},{"id":"caption-group-38","frame":3,"start":30.174,"end":30.744,"text":"vous leviez","words":[{"id":"caption-word-38-0","text":"vous","start":30.174,"end":30.434},{"id":"caption-word-38-1","text":"leviez","start":30.434,"end":30.744}]},{"id":"caption-group-39","frame":3,"start":30.744,"end":31.664,"text":"le petit doigt.","words":[{"id":"caption-word-39-0","text":"le","start":30.744,"end":30.864},{"id":"caption-word-39-1","text":"petit","start":30.864,"end":31.174},{"id":"caption-word-39-2","text":"doigt.","start":31.174,"end":31.544}]},{"id":"caption-group-40","frame":4,"start":31.991,"end":32.261,"text":"Et vous","words":[{"id":"caption-word-40-0","text":"Et","start":31.991,"end":32.031},{"id":"caption-word-40-1","text":"vous","start":32.031,"end":32.261}]},{"id":"caption-group-41","frame":4,"start":32.261,"end":33.021,"text":"retrouvez tout","words":[{"id":"caption-word-41-0","text":"retrouvez","start":32.261,"end":32.771},{"id":"caption-word-41-1","text":"tout","start":32.771,"end":33.021}]},{"id":"caption-group-42","frame":4,"start":33.021,"end":33.461,"text":"dans FoodEatUp","words":[{"id":"caption-word-42-0","text":"dans","start":33.021,"end":33.231},{"id":"caption-word-42-1","text":"FoodEatUp","start":33.231,"end":33.461}]},{"id":"caption-group-43","frame":4,"start":33.461,"end":34.551,"text":"la transcription complète","words":[{"id":"caption-word-43-0","text":"la","start":33.461,"end":33.721},{"id":"caption-word-43-1","text":"transcription","start":33.721,"end":33.931},{"id":"caption-word-43-2","text":"complète","start":33.931,"end":34.551}]},{"id":"caption-group-44","frame":4,"start":34.551,"end":35.091,"text":"de l'appel,","words":[{"id":"caption-word-44-0","text":"de","start":34.551,"end":34.941},{"id":"caption-word-44-1","text":"l'appel,","start":34.941,"end":35.091}]},{"id":"caption-group-45","frame":4,"start":35.091,"end":36.181,"text":"la réservation dans","words":[{"id":"caption-word-45-0","text":"la","start":35.091,"end":35.601},{"id":"caption-word-45-1","text":"réservation","start":35.601,"end":35.681},{"id":"caption-word-45-2","text":"dans","start":35.681,"end":36.181}]},{"id":"caption-group-46","frame":4,"start":36.181,"end":36.631,"text":"votre plan","words":[{"id":"caption-word-46-0","text":"votre","start":36.181,"end":36.281},{"id":"caption-word-46-1","text":"plan","start":36.281,"end":36.631}]},{"id":"caption-group-47","frame":4,"start":36.631,"end":37.071,"text":"de salle,","words":[{"id":"caption-word-47-0","text":"de","start":36.631,"end":36.911},{"id":"caption-word-47-1","text":"salle,","start":36.911,"end":37.071}]},{"id":"caption-group-48","frame":4,"start":37.071,"end":37.601,"text":"et la","words":[{"id":"caption-word-48-0","text":"et","start":37.071,"end":37.261},{"id":"caption-word-48-1","text":"la","start":37.261,"end":37.601}]},{"id":"caption-group-49","frame":4,"start":37.601,"end":38.641,"text":"commande prête en","words":[{"id":"caption-word-49-0","text":"commande","start":37.601,"end":37.681},{"id":"caption-word-49-1","text":"prête","start":37.681,"end":38.201},{"id":"caption-word-49-2","text":"en","start":38.201,"end":38.641}]},{"id":"caption-group-50","frame":4,"start":38.641,"end":39.221,"text":"cuisine.","words":[{"id":"caption-word-50-0","text":"cuisine.","start":38.641,"end":39.221}]},{"id":"caption-group-51","frame":4,"start":39.221,"end":39.561,"text":"Rien ne","words":[{"id":"caption-word-51-0","text":"Rien","start":39.221,"end":39.411},{"id":"caption-word-51-1","text":"ne","start":39.411,"end":39.561}]},{"id":"caption-group-52","frame":4,"start":39.561,"end":40.021,"text":"se perd,","words":[{"id":"caption-word-52-0","text":"se","start":39.561,"end":39.651},{"id":"caption-word-52-1","text":"perd,","start":39.651,"end":40.021}]},{"id":"caption-group-53","frame":4,"start":40.021,"end":41.261,"text":"rien ne s'oublie.","words":[{"id":"caption-word-53-0","text":"rien","start":40.021,"end":40.271},{"id":"caption-word-53-1","text":"ne","start":40.271,"end":40.391},{"id":"caption-word-53-2","text":"s'oublie.","start":40.391,"end":41.141}]},{"id":"caption-group-54","frame":5,"start":41.592,"end":42.042,"text":"Plus aucun","words":[{"id":"caption-word-54-0","text":"Plus","start":41.592,"end":41.732},{"id":"caption-word-54-1","text":"aucun","start":41.732,"end":42.042}]},{"id":"caption-group-55","frame":5,"start":42.042,"end":42.932,"text":"appel manqué,","words":[{"id":"caption-word-55-0","text":"appel","start":42.042,"end":42.352},{"id":"caption-word-55-1","text":"manqué,","start":42.352,"end":42.932}]},{"id":"caption-group-56","frame":5,"start":42.932,"end":43.972,"text":"plus aucune erreur,","words":[{"id":"caption-word-56-0","text":"plus","start":42.932,"end":43.112},{"id":"caption-word-56-1","text":"aucune","start":43.112,"end":43.452},{"id":"caption-word-56-2","text":"erreur,","start":43.452,"end":43.972}]},{"id":"caption-group-57","frame":5,"start":43.972,"end":44.352,"text":"une équipe","words":[{"id":"caption-word-57-0","text":"une","start":43.972,"end":43.992},{"id":"caption-word-57-1","text":"équipe","start":43.992,"end":44.352}]},{"id":"caption-group-58","frame":5,"start":44.352,"end":45.052,"text":"concentrée sur","words":[{"id":"caption-word-58-0","text":"concentrée","start":44.352,"end":44.922},{"id":"caption-word-58-1","text":"sur","start":44.922,"end":45.052}]},{"id":"caption-group-59","frame":5,"start":45.052,"end":46.002,"text":"le service.","words":[{"id":"caption-word-59-0","text":"le","start":45.052,"end":45.142},{"id":"caption-word-59-1","text":"service.","start":45.142,"end":46.002}]},{"id":"caption-group-60","frame":5,"start":46.002,"end":48.392,"text":"Caroline votre restaurant répond,","words":[{"id":"caption-word-60-0","text":"Caroline","start":46.002,"end":46.662},{"id":"caption-word-60-1","text":"votre","start":46.662,"end":47.352},{"id":"caption-word-60-2","text":"restaurant","start":47.352,"end":47.812},{"id":"caption-word-60-3","text":"répond,","start":47.812,"end":48.392}]},{"id":"caption-group-61","frame":5,"start":48.392,"end":49.122,"text":"toujours.","words":[{"id":"caption-word-61-0","text":"toujours.","start":48.392,"end":49.002}]}];
+  var DURATION = 49.136;
+
+  (function () {
+    var stage = document.getElementById("caption-stage");
+
+    // build DOM: one .caption-group per group, .caption-word per word
+    GROUPS.forEach(function (group, g) {
+      var groupEl = document.createElement("div");
+      groupEl.className = "caption-group";
+      groupEl.id = "caption-group-" + g;
+      var pill = document.createElement("div");
+      pill.className = "caption-pill";
+      var line = document.createElement("div");
+      line.className = "caption-line";
+      (group.words || []).forEach(function (w, i) {
+        var span = document.createElement("span");
+        span.className = "caption-word";
+        span.id = "caption-word-" + g + "-" + i;
+        span.textContent = String(w.text);
+        line.appendChild(span);
+      });
+      pill.appendChild(line);
+      groupEl.appendChild(pill);
+      stage.appendChild(groupEl);
+    });
+
+    window.__timelines = window.__timelines || {};
+    var tl = gsap.timeline({ paused: true });
+
+    GROUPS.forEach(function (group, g) {
+      var groupEl = document.getElementById("caption-group-" + g);
+      var words = group.words || [];
+      var next = GROUPS[g + 1];
+      var isLast = g === GROUPS.length - 1;
+      var start = Math.max(0, Number(group.start));
+      var end = isLast ? DURATION : Math.min(Number(next.start), Number(group.end) + 0.3);
+      if (end <= start) end = start + 0.01;
+
+      // group on/off — exactly one group visible at a time
+      tl.set(groupEl, { opacity: 1 }, start);
+      tl.set(groupEl, { opacity: 0 }, end);
+
+      // 3-state karaoke via className SETS — seek-safe (gsap.set applies on the
+      // engine's frame-by-frame seek; .call callbacks would NOT fire).
+      words.forEach(function (w, i) {
+        var el = document.getElementById("caption-word-" + g + "-" + i);
+        var at = Math.max(start, Number(w.start));
+        tl.set(el, { className: "caption-word" }, start); // upcoming (also resets on reverse-seek)
+        tl.set(el, { className: "caption-word is-active" }, at); // current
+        tl.fromTo(el, { scale: 0.985 }, { scale: 1, duration: 0.18, ease: "power1.out" }, at);
+        if (i + 1 < words.length) {
+          var nextAt = Math.max(start, Number(words[i + 1].start));
+          tl.set(el, { className: "caption-word is-spoken" }, nextAt); // demote when next activates
+        }
+      });
+      if (words.length) {
+        var lastEl = document.getElementById("caption-word-" + g + "-" + (words.length - 1));
+        var lastSpoken = Math.min(end, Number(words[words.length - 1].end) + 0.1);
+        tl.set(lastEl, { className: "caption-word is-spoken" }, lastSpoken);
+      }
+    });
+
+    // full-span anchor so the sub-comp timeline spans the whole video
+    tl.to({}, { duration: DURATION }, 0);
+    window.__timelines["captions"] = tl;
+  })();
+</script>
+
+<style>
+  .caption-line { line-height: 1.1 !important; }
+</style>
+</template>

@@ -1,0 +1,13 @@
+{
+  "provider": "elevenlabs",
+  "voice": "TGAegA0zNRi8I6nUdq3i",
+  "lang": "fr",
+  "speed": 1.0,
+  "lines": [
+    { "id": "01", "text": "En plein coup de feu, le téléphone sonne. Une réservation, une commande à emporter, une question... Vous décrochez, ou vous laissez sonner ? Chaque appel manqué, c'est un client qui s'en va." },
+    { "id": "02", "text": "Voici Caroline, l'agent vocal de FoodEatUp. Elle répond au téléphone à votre place, 24 heures sur 24, avec le sourire dans la voix." },
+    { "id": "03", "text": "Un client appelle. Caroline décroche, comprend sa demande, vérifie les disponibilités et enregistre tout : une table pour quatre samedi soir, et deux pizzas à emporter. Sans que vous leviez le petit doigt." },
+    { "id": "04", "text": "Et vous retrouvez tout dans FoodEatUp : la transcription complète de l'appel, la réservation dans votre plan de salle, et la commande prête en cuisine. Rien ne se perd, rien ne s'oublie." },
+    { "id": "05", "text": "Plus aucun appel manqué, plus aucune erreur, une équipe concentrée sur le service. Caroline — votre restaurant répond, toujours." }
+  ]
+}

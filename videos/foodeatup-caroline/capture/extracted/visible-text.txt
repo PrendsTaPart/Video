@@ -1,0 +1,3 @@
+Caroline = agent vocal FoodEatUp. Répond au téléphone 24/7, prend réservations (create_reservation)
+et commandes (create_order), canal Caroline (vocal). Transcription de l'appel + réservation (plan de
+salle) + commande (cuisine) retrouvables dans FoodEatUp via list_reservations / list_orders.

@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Frame 4 — Tout dans FoodEatUp</title>
+  </head>
+  <body>
+    <template>
+      <style>
+        @font-face { font-family: "Poppins"; src: url("assets/fonts/Poppins-600.woff2") format("woff2"); font-weight: 600; }
+        @font-face { font-family: "Poppins"; src: url("assets/fonts/Poppins-700.woff2") format("woff2"); font-weight: 700; }
+        @font-face { font-family: "Inter"; src: url("assets/fonts/Inter-Variable.woff2") format("woff2-variations"); font-weight: 100 900; }
+
+        #root { position: absolute; inset: 0; overflow: hidden; font-family: "Poppins", "Inter", sans-serif; isolation: isolate; }
+        .bg { position: absolute; inset: 0; background: #f7f9fc; }
+        .glow { position: absolute; left: 360px; top: 300px; width: 1200px; height: 560px; background: radial-gradient(ellipse 50% 50% at 50% 50%, rgba(30,155,240,0.28) 0%, rgba(30,155,240,0.08) 48%, rgba(30,155,240,0) 74%); opacity: 0; pointer-events: none; will-change: transform, opacity; }
+
+        .eyebrow-wrap { position: absolute; left: 0; right: 0; top: 132px; text-align: center; z-index: 3; }
+        .eyebrow-line { width: 64px; height: 4px; border-radius: 2px; background: #1e9bf0; margin: 0 auto 16px; transform-origin: center; opacity: 0; will-change: transform, opacity; }
+        .eyebrow { font-family: "Poppins", sans-serif; font-weight: 600; font-size: 30px; letter-spacing: 0.08em; text-transform: uppercase; color: #1e9bf0; opacity: 0; margin: 0; will-change: transform, opacity; }
+
+        /* app window */
+        .win { position: absolute; left: 130px; top: 250px; width: 1660px; height: 610px; box-sizing: border-box; background: #ffffff; border: 1.5px solid rgba(27,42,65,0.1); border-radius: 22px; overflow: hidden; z-index: 2; opacity: 0; will-change: transform, opacity; }
+        .win-bar { display: flex; align-items: center; gap: 14px; height: 64px; padding: 0 26px; background: #f2f6fb; border-bottom: 1.5px solid rgba(27,42,65,0.08); }
+        .dots { display: flex; gap: 9px; }
+        .dots i { width: 13px; height: 13px; border-radius: 50%; background: rgba(27,42,65,0.16); }
+        .win-title { font-family: "Poppins", sans-serif; font-weight: 700; font-size: 24px; color: #1b2a41; margin-left: 8px; }
+        .win-title span { color: #1e9bf0; }
+        .via { margin-left: auto; display: flex; align-items: center; gap: 10px; padding: 8px 18px; background: rgba(30,155,240,0.1); border-radius: 100px; font-family: "Inter", sans-serif; font-weight: 600; font-size: 20px; color: #115e9c; }
+        .via .d { width: 10px; height: 10px; border-radius: 50%; background: #1e9bf0; }
+
+        .win-body { display: flex; height: calc(610px - 64px); }
+        .tr { width: 56%; box-sizing: border-box; padding: 26px 30px; border-right: 1.5px solid rgba(27,42,65,0.07); }
+        .tr h4 { font-family: "Poppins", sans-serif; font-weight: 700; font-size: 24px; color: #1b2a41; margin: 0 0 20px; }
+        .line { display: flex; gap: 14px; margin-bottom: 18px; opacity: 0; will-change: transform, opacity; }
+        .line .t { flex: none; font-family: "Inter", sans-serif; font-weight: 600; font-size: 18px; color: #5b6675; width: 58px; padding-top: 3px; }
+        .line .who { flex: none; font-family: "Poppins", sans-serif; font-weight: 700; font-size: 21px; width: 108px; }
+        .line.cli .who { color: #1b2a41; }
+        .line.car .who { color: #1e9bf0; }
+        .line .msg { font-family: "Inter", sans-serif; font-weight: 500; font-size: 22px; line-height: 1.35; color: #3a4656; }
+
+        .cards { width: 44%; box-sizing: border-box; padding: 26px 30px; display: flex; flex-direction: column; gap: 22px; justify-content: center; }
+        .card { box-sizing: border-box; padding: 22px 26px; background: rgba(30,155,240,0.04); border: 1.5px solid rgba(30,155,240,0.22); border-radius: 16px; opacity: 0; will-change: transform, opacity; transform-origin: 50% 50%; }
+        .card .top { display: flex; align-items: center; gap: 14px; margin-bottom: 12px; }
+        .card .ok { flex: none; width: 34px; height: 34px; border-radius: 50%; background: #059669; display: grid; place-items: center; }
+        .card .ok svg { width: 20px; height: 20px; fill: none; stroke: #fff; stroke-width: 3; stroke-linecap: round; stroke-linejoin: round; }
+        .card .ttl { font-family: "Poppins", sans-serif; font-weight: 700; font-size: 26px; color: #1b2a41; }
+        .card .det { font-family: "Inter", sans-serif; font-weight: 500; font-size: 24px; color: #3a4656; padding-left: 48px; }
+        .card .tag { display: inline-block; margin: 12px 0 0 48px; padding: 5px 14px; background: rgba(30,155,240,0.1); border-radius: 100px; font-family: "Inter", sans-serif; font-weight: 600; font-size: 18px; color: #1476c8; }
+      </style>
+
+      <div id="root" data-composition-id="04-foodeatup" data-width="1920" data-height="1080" data-duration="10.061">
+        <div id="bg-clip" class="clip bg" data-start="0" data-duration="9.561" data-track-index="0">
+          <div class="glow" id="glow"></div>
+        </div>
+
+        <div id="content" class="clip" data-start="0" data-duration="9.561" data-track-index="1" style="position:absolute; inset:0;">
+          <div class="eyebrow-wrap">
+            <div class="eyebrow-line" id="eyebrow-line"></div>
+            <p class="eyebrow" id="eyebrow">Retrouvez tout dans FoodEatUp</p>
+          </div>
+
+          <div class="win" id="win">
+            <div class="win-bar">
+              <span class="dots"><i></i><i></i><i></i></span>
+              <span class="win-title">Appels · <span>Caroline</span></span>
+              <span class="via"><span class="d"></span>via Caroline (vocal)</span>
+            </div>
+            <div class="win-body">
+              <div class="tr">
+                <h4>Transcription de l'appel</h4>
+                <div class="line cli" id="l1"><span class="t">20:04</span><span class="who">Client</span><span class="msg">Une table pour 4 samedi soir, et 2 pizzas à emporter.</span></div>
+                <div class="line car" id="l2"><span class="t">20:04</span><span class="who">Caroline</span><span class="msg">Samedi 20h pour 4, c'est noté.</span></div>
+                <div class="line car" id="l3"><span class="t">20:05</span><span class="who">Caroline</span><span class="msg">2 pizzas à emporter, prêtes à 19h30.</span></div>
+              </div>
+              <div class="cards">
+                <div class="card" id="card-res">
+                  <div class="top"><span class="ok"><svg viewBox="0 0 24 24"><path d="M4 12l5 5L20 6" /></svg></span><span class="ttl">Réservation</span></div>
+                  <div class="det">Table 12 · 4 pers · Sam. 20h00</div>
+                  <span class="tag">Plan de salle</span>
+                </div>
+                <div class="card" id="card-cmd">
+                  <div class="top"><span class="ok"><svg viewBox="0 0 24 24"><path d="M4 12l5 5L20 6" /></svg></span><span class="ttl">Commande</span></div>
+                  <div class="det">2× Pizza · À emporter · 19h30</div>
+                  <span class="tag">En cuisine</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <script src="assets/vendor/gsap.min.js"></script>
+      <script>
+        window.__timelines = window.__timelines || {};
+        const tl = gsap.timeline({ paused: true });
+
+        tl.fromTo("#eyebrow-line", { scaleX: 0, opacity: 0 }, { scaleX: 1, opacity: 1, duration: 0.5, ease: "power3.out" }, 0.0);
+        tl.fromTo("#eyebrow", { y: 16, opacity: 0 }, { y: 0, opacity: 1, duration: 0.5, ease: "power3.out" }, 0.1);
+        tl.fromTo("#win", { y: 44, opacity: 0 }, { y: 0, opacity: 1, duration: 0.6, ease: "power3.out" }, 0.3);
+
+        // transcription lines fill in
+        [["#l1", 2.0], ["#l2", 2.7], ["#l3", 3.3]].forEach(function (p) {
+          tl.fromTo(p[0], { x: -20, opacity: 0 }, { x: 0, opacity: 1, duration: 0.45, ease: "power3.out" }, p[1]);
+        });
+
+        // result cards
+        tl.fromTo("#card-res", { y: 26, scale: 0.94, opacity: 0 }, { y: 0, scale: 1, opacity: 1, duration: 0.5, ease: "power3.out" }, 3.9);
+        tl.fromTo("#card-cmd", { y: 26, scale: 0.94, opacity: 0 }, { y: 0, scale: 1, opacity: 1, duration: 0.5, ease: "power3.out" }, 5.9);
+
+        // final bloom + check pulse
+        tl.fromTo("#glow", { opacity: 0, scale: 0.92 }, { opacity: 0.28, scale: 1, duration: 1.0, ease: "power2.out" }, 7.3);
+        tl.fromTo(".card .ok", { scale: 1 }, { scale: 1.15, duration: 0.2, ease: "power2.out" }, 7.5);
+        tl.fromTo(".card .ok", { scale: 1.15 }, { scale: 1, duration: 0.4, ease: "power2.inOut" }, 7.7);
+        window.__timelines["04-foodeatup"] = tl;
+      </script>
+    </template>
+  </body>
+</html>
