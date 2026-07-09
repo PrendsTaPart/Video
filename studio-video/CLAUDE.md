@@ -207,6 +207,18 @@ commité/poussé le MP4, récupérer son `download_url` via `mcp__github__get_fi
 file_url:"<download_url>")`. C'est une SAUVEGARDE systématique, distincte d'une publication réseaux
 (qui reste sur demande explicite). Rattraper aussi les vidéos déjà rendues non encore archivées.
 
+## Orthographe de marque — « FoodEatUp » (demandé par Michael 2026-07-09)
+
+Le nom s'écrit **exactement `FoodEatUp`** — F, E et U majuscules, tout attaché, aucune autre
+graphie (pas « Foodeatup », « FoodEatup », « Food Eat Up »). **Whisper le mal-transcrit
+systématiquement** dans les sous-titres karaoké (« Fooditup », « Food It Up », « Foodie top »).
+→ **Règle : avant le rendu final, corriger les sous-titres sur le texte VERBATIM du `SCRIPT.md`**
+(a minima le nom de marque, idéalement toute la ligne), puis régénérer `captions.mjs build` et
+re-corriger le gsap CDN → `assets/vendor/gsap.min.js`. Ne jamais livrer une vidéo dont le rail de
+sous-titres affiche une graphie fautive de FoodEatUp. Méthode : réécrire les `words` de chaque voix
+dans `audio_meta.json` avec les mots du script (timings interpolés proportionnellement sur les
+timings Whisper), puis rebuild.
+
 ## Multi-marques — charte par projet (demandé par Michael 2026-07-09)
 
 Le studio sert plusieurs marques de l'agence. **Toujours choisir la charte + le logo selon le
