@@ -197,6 +197,20 @@ Le projet peut aussi produire des vidéos ponctuelles hors du système Reels ver
   (`voice_id: TGAegA0zNRi8I6nUdq3i`), français, ton professionnel posé. Clé API dans `.env`
   (`ELEVENLABS_API_KEY`, jamais commitée).
 
+## Références — idées de vidéos (catalogue MCP BraindCode, 2026-07-09)
+
+Backlog d'idées de vidéos : **`references/mcp-plugins-video-catalog.md`** (à la racine du repo Video).
+Il liste **108 skills / cas d'usage** répartis sur 10 MCP BraindCode (foodeatup, rapidocms,
+rapidocrm, rapidorh, rapido-suite, rapido-canva, rapido-lovable, rapido-meta-ads, rapido-n8n,
+rapido-direction), extraits du repo **`PrendsTaPart/Plugin-Claude-MCP-BraindCode-`** (marketplace de
+plugins Claude Code de la marque BraindCode). **Chaque skill = un cas d'usage tool → une vidéo**
+au format studio (pain → reveal → fonctions → « et avec Claude… » → bénéfice/CTA). Piocher dedans
+pour proposer les prochaines vidéos. Le repo peut être rajouté en source de session via `add_repo`
+(`prendstapart/plugin-claude-mcp-braindcode-`) pour recharger ses skills ; le catalogue reste la
+référence durable même sans le clone (éphémère dans `/workspace/`).
+
+Déjà produits côté FoodEatUp : promo 60s, module HACCP, module Équipe/Planning, module StockVisionAI.
+
 ## RÈGLE STANDING — Sauvegarde de CHAQUE vidéo dans RapidoCMS (demandé par Michael 2026-07-09)
 
 **À chaque vidéo générée**, une fois le MP4 rendu, poussé sur GitHub, l'archiver dans la
