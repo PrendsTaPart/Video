@@ -166,6 +166,24 @@ prises ratées ou refaites. Pour chaque vidéo brute déposée dans `assets/raw/
   de composition sur la seule foi d'une planche-contact snapshot.
 - **Attention au cwd des commandes en arrière-plan** : le répertoire de travail persiste entre les
   appels Bash — toujours préfixer les renders par `cd <projet> &&` explicite.
+- **Librairie d'images partagée** : `videos/shared-images/` (committée) — `brand/` (logos) +
+  `characters/` (personnages 3D cartoon générés via RapidoCMS, fond off-white #F7F9FC, accents
+  #1E9BF0, chef cohérent : jeune homme, toque/veste blanches). **Réutiliser ces personnages**
+  d'une vidéo à l'autre avant d'en générer de nouveaux ; pour un nouveau projet, copier le PNG
+  voulu dans `<projet>/public/` (chemins HyperFrames relatifs à la racine du projet). Voir le
+  README de la librairie pour l'inventaire.
+- **Voix directe ElevenLabs (propre)** : pour forcer Adam (ou toute voix ElevenLabs) sans la
+  reconstruction manuelle, écrire un `audio_request.json` (`{provider:"elevenlabs", voice:"<id>",
+  lang:"fr", lines:[{id,text}]}`) et appeler le moteur média directement
+  (`node <MEDIA_DIR>/scripts/audio.mjs --request audio_request.json --hyperframes . --out
+  audio_engine_meta.json --only tts --provider elevenlabs --lang fr`, clé exportée depuis
+  `studio-video/.env`), puis convertir en shape PL + ajouter BGM/SFX en Python. Si whisper renvoie
+  0 mot ou détecte la mauvaise langue sur une ligne, re-transcrire avec
+  `npx hyperframes transcribe <wav> --model small --language fr`.
+- **Branche par défaut = branche de travail** : sur ce repo, `claude/hyperframes-reels-studio-*`
+  est la branche par défaut (HEAD) ; les autres branches y sont mergées via PR. On ne crée donc
+  PAS de PR pour cette branche (pas de merge vers soi-même) — pousser directement dessus est
+  l'état final.
 
 ## Vidéos hors-Reels (16:9, autres marques)
 
