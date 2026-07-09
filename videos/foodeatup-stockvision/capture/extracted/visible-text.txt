@@ -1,0 +1,3 @@
+Module StockVisionAI de FoodEatUp. Chaîne : recette -> carte -> liste de courses -> livraison
+-> stock -> production -> prédiction des ventes (IA). Double usage : logiciel OU commandes Claude
+(ajoute une recette, fais ma liste de courses, prédis mes ventes). Moins de gaspillage, zéro rupture.

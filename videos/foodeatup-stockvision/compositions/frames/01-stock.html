@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Frame 1 — Le stock qui déborde</title>
+  </head>
+  <body>
+    <template>
+      <style>
+        @font-face { font-family: "Poppins"; src: url("assets/fonts/Poppins-600.woff2") format("woff2"); font-weight: 600; }
+        @font-face { font-family: "Poppins"; src: url("assets/fonts/Poppins-800.woff2") format("woff2"); font-weight: 800; }
+        @font-face { font-family: "Inter"; src: url("assets/fonts/Inter-Variable.woff2") format("woff2-variations"); font-weight: 100 900; }
+
+        #root { position: absolute; inset: 0; width: 1920px; height: 1080px; overflow: hidden; font-family: "Inter", sans-serif; color: #1b2a41; isolation: isolate; }
+        .bg { position: absolute; inset: 0; background-color: #f7f9fc; background-image: radial-gradient(circle at 46% 44%, rgba(30, 155, 240, 0.05), transparent 55%), radial-gradient(circle, rgba(27, 42, 65, 0.09) 1.6px, transparent 1.6px); background-size: 100% 100%, 46px 46px; }
+        .scene { position: absolute; inset: 0; }
+        .shake { position: absolute; inset: 0; }
+
+        .figure { position: absolute; z-index: 2; top: 96px; left: 1216px; width: 560px; height: 800px; mix-blend-mode: multiply; opacity: 0; will-change: transform, opacity; }
+        .figure img { width: 100%; height: 100%; object-fit: contain; display: block; }
+
+        .fiche { position: absolute; z-index: 3; width: 360px; box-sizing: border-box; background: #ffffff; border: 1.5px solid rgba(27, 42, 65, 0.1); border-radius: 10px; padding: 22px 26px; display: flex; align-items: center; gap: 18px; transform-origin: 50% 50%; opacity: 0; will-change: transform, opacity; }
+        .fiche::before { content: ""; position: absolute; left: 0; top: 14px; bottom: 14px; width: 6px; border-radius: 3px; background: #1e9bf0; }
+        .fiche.alert::before { background: #dc2626; }
+        .fiche.back { z-index: 1; filter: blur(2.5px); }
+        .fiche-ic { flex: 0 0 46px; width: 46px; height: 46px; display: grid; place-items: center; background: rgba(30, 155, 240, 0.08); border-radius: 50%; }
+        .fiche.alert .fiche-ic { background: rgba(220, 38, 38, 0.08); }
+        .fiche-ic svg { width: 26px; height: 26px; fill: none; stroke: #1e9bf0; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; }
+        .fiche.alert .fiche-ic svg { stroke: #dc2626; }
+        .fiche-label { font-family: "Poppins", sans-serif; font-weight: 600; font-size: 28px; letter-spacing: -0.01em; color: #1b2a41; line-height: 1.15; }
+        .fiche-sub { display: block; font-family: "Inter", sans-serif; font-weight: 500; font-size: 18px; color: #566472; margin-top: 2px; }
+
+        .stamp { position: absolute; z-index: 5; left: 250px; top: 470px; padding: 14px 34px; border: 4px solid #1b2a41; border-radius: 12px; font-family: "Poppins", sans-serif; font-weight: 800; font-size: 40px; letter-spacing: 0.06em; color: #1b2a41; transform: rotate(-8deg); transform-origin: 50% 50%; opacity: 0; will-change: transform, opacity; }
+      </style>
+
+      <div id="root" data-composition-id="01-stock" data-width="1920" data-height="1080" data-duration="12.333">
+        <div id="bg-clip" class="clip bg" data-start="0" data-duration="11.833" data-track-index="0"></div>
+
+        <div id="scene" class="clip scene" data-start="0" data-duration="11.833" data-track-index="1">
+          <div class="shake">
+            <div class="figure" id="figure">
+              <img src="public/stock-chaos.png" alt="Chef débordé par la gestion de stock" />
+            </div>
+
+            <div class="fiche alert" id="f1" data-cx="330" data-cy="230" style="left: 160px; top: 168px; transform: rotate(-3deg)">
+              <span class="fiche-ic"><svg viewBox="0 0 24 24"><path d="M10.3 3.9 1.8 18a2 2 0 0 0 1.7 3h16.9a2 2 0 0 0 1.7-3L13.7 3.9a2 2 0 0 0-3.4 0z" /><path d="M12 9v4M12 17h.01" /></svg></span>
+              <span class="fiche-label">Rupture !<span class="fiche-sub">en plein service</span></span>
+            </div>
+
+            <div class="fiche back" id="f2" data-cx="250" data-cy="470" style="left: 92px; top: 408px; transform: rotate(4deg)">
+              <span class="fiche-ic"><svg viewBox="0 0 24 24"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z" /><path d="M3 6h18M16 10a4 4 0 0 1-8 0" /></svg></span>
+              <span class="fiche-label">Commandes<span class="fiche-sub">au doigt mouillé</span></span>
+            </div>
+
+            <div class="fiche" id="f3" data-cx="470" data-cy="640" style="left: 300px; top: 578px; transform: rotate(-2deg)">
+              <span class="fiche-ic"><svg viewBox="0 0 24 24"><path d="M6 2h12M6 22h12M7 2c0 4 3 5.5 5 7 2-1.5 5-3 5-7M7 22c0-4 3-5.5 5-7 2 1.5 5 3 5 7" /></svg></span>
+              <span class="fiche-label">Péremptions<span class="fiche-sub">au fond du frigo</span></span>
+            </div>
+
+            <div class="fiche back" id="f4" data-cx="720" data-cy="250" style="left: 560px; top: 196px; transform: rotate(5deg)">
+              <span class="fiche-ic"><svg viewBox="0 0 24 24"><path d="M8 6h13M8 12h13M8 18h13M3 6h.01M3 12h.01M3 18h.01" /></svg></span>
+              <span class="fiche-label">Liste de courses<span class="fiche-sub">refaite dix fois</span></span>
+            </div>
+
+            <div class="fiche" id="f5" data-cx="560" data-cy="820" style="left: 388px; top: 760px; transform: rotate(3deg)">
+              <span class="fiche-ic"><svg viewBox="0 0 24 24"><path d="M3 6h18M8 6V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2M19 6l-1 14a2 2 0 0 1-2 2H8a2 2 0 0 1-2-2L5 6" /></svg></span>
+              <span class="fiche-label">Gaspillage<span class="fiche-sub">marge perdue</span></span>
+            </div>
+
+            <div class="stamp" id="stamp">À L'AVEUGLE</div>
+          </div>
+        </div>
+      </div>
+
+      <script src="assets/vendor/gsap.min.js"></script>
+      <script>
+        window.__timelines = window.__timelines || {};
+        (function () {
+          var root = document.querySelector('[data-composition-id="01-stock"][id="root"]') || document.querySelector('[data-composition-id="01-stock"]');
+          var tl = gsap.timeline({ paused: true });
+          var shakeEl = root.querySelector(".shake");
+          var fiches = Array.prototype.slice.call(root.querySelectorAll(".fiche"));
+
+          tl.fromTo(root.querySelector("#figure"), { x: 200, opacity: 0 }, { x: 0, opacity: 1, duration: 0.8, ease: "power3.out" }, 0.0);
+
+          var cues = [0.6, 2.0, 4.0, 5.6, 7.3];
+          fiches.forEach(function (el, i) {
+            var back = el.classList.contains("back");
+            var rot = parseFloat((el.style.transform.match(/rotate\(([-0-9.]+)deg\)/) || [0, 0])[1]) || 0;
+            tl.fromTo(el, { scale: 0, opacity: 0, y: 24, rotation: rot }, { scale: 1, opacity: back ? 0.28 : 1, y: 0, rotation: rot, duration: 0.5, ease: "power3.out" }, cues[i]);
+          });
+
+          tl.fromTo(root.querySelector("#stamp"), { scale: 1.6, opacity: 0, rotation: -8 }, { scale: 1, opacity: 1, rotation: -8, duration: 0.4, ease: "power4.out" }, 8.2);
+
+          var CX = 1180, CY = 520;
+          fiches.forEach(function (el, i) {
+            var cx = parseFloat(el.getAttribute("data-cx")), cy = parseFloat(el.getAttribute("data-cy"));
+            var back = el.classList.contains("back"); var pull = back ? 0.26 : 0.36;
+            tl.to(el, { x: (CX - cx) * pull, y: (CY - cy) * pull, scale: back ? 1 : 1.04, duration: 1.4, ease: "power2.inOut" }, 9.6 + i * 0.06);
+          });
+
+          var shk = { t: 0 };
+          tl.to(shk, { t: 1, duration: 1.7, ease: "none", onUpdate: function () {
+            var tt = shk.t; var env = Math.max(0, Math.min(1, tt / 0.18, (1 - tt) / 0.14));
+            var ph = tt * 1.7 * Math.PI * 2;
+            shakeEl.style.transform = "translate(" + (Math.sin(ph * 3.5) * 2.4 * env) + "px," + (Math.sin(ph * 2.7 + 1.1) * 1.8 * env) + "px)";
+          } }, 9.6);
+
+          window.__timelines["01-stock"] = tl;
+        })();
+      </script>
+    </template>
+  </body>
+</html>
