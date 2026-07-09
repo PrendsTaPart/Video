@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Frame 4 — Deux façons de l'utiliser (portrait)</title>
+  </head>
+  <body>
+    <template>
+      <style>
+        @font-face { font-family: "Poppins"; src: url("assets/fonts/Poppins-600.woff2") format("woff2"); font-weight: 600; }
+        @font-face { font-family: "Poppins"; src: url("assets/fonts/Poppins-700.woff2") format("woff2"); font-weight: 700; }
+        @font-face { font-family: "Inter"; src: url("assets/fonts/Inter-Variable.woff2") format("woff2-variations"); font-weight: 100 900; }
+
+        #root { position: absolute; inset: 0; width: 1080px; height: 1920px; overflow: hidden; font-family: "Poppins", "Inter", sans-serif; isolation: isolate; }
+        .bg { position: absolute; inset: 0; background: #f7f9fc; }
+        .glow { position: absolute; left: 90px; top: 700px; width: 900px; height: 900px; background: radial-gradient(ellipse 50% 50% at 50% 50%, rgba(30,155,240,0.2) 0%, rgba(30,155,240,0.06) 48%, rgba(30,155,240,0) 74%); opacity: 0; pointer-events: none; will-change: opacity; }
+
+        .figure { position: absolute; z-index: 2; top: 40px; left: 300px; width: 480px; height: 420px; mix-blend-mode: multiply; opacity: 0; will-change: transform, opacity; }
+        .figure img { width: 100%; height: 100%; object-fit: contain; display: block; }
+
+        .eyebrow { position: absolute; left: 0; right: 0; top: 480px; text-align: center; z-index: 4; font-family: "Poppins", sans-serif; font-weight: 600; font-size: 34px; letter-spacing: 0.08em; text-transform: uppercase; color: #1e9bf0; opacity: 0; margin: 0; will-change: transform, opacity; }
+
+        .soft { position: absolute; left: 100px; width: 880px; z-index: 3; box-sizing: border-box; }
+        .lg-card { top: 560px; background: #ffffff; border: 1.5px solid rgba(30,155,240,0.2); border-radius: 20px; padding: 24px 30px; display: flex; align-items: center; gap: 24px; opacity: 0; will-change: transform, opacity; }
+        .lg-card .app { flex: none; width: 78px; height: 78px; border-radius: 18px; background: rgba(30,155,240,0.1); display: grid; place-items: center; }
+        .lg-card .app svg { width: 44px; height: 44px; fill: none; stroke: #1e9bf0; stroke-width: 1.9; stroke-linecap: round; stroke-linejoin: round; }
+        .lg-card b { display: block; font-family: "Poppins", sans-serif; font-weight: 700; font-size: 40px; color: #1b2a41; }
+        .lg-card span { display: block; margin-top: 4px; font-family: "Inter", sans-serif; font-weight: 500; font-size: 28px; color: #566472; }
+        .lg-card .tag { margin-left: auto; flex: none; padding: 8px 20px; border-radius: 100px; background: rgba(30,155,240,0.1); font-family: "Poppins", sans-serif; font-weight: 600; font-size: 24px; color: #115e9c; }
+
+        .or { position: absolute; left: 0; right: 0; top: 726px; text-align: center; z-index: 4; font-family: "Poppins", sans-serif; font-weight: 600; font-size: 30px; letter-spacing: 0.06em; text-transform: uppercase; color: #8a98a8; opacity: 0; will-change: opacity; }
+
+        .chat { position: absolute; left: 100px; top: 800px; width: 880px; z-index: 3; display: flex; flex-direction: column; gap: 18px; }
+        .bubble { max-width: 720px; box-sizing: border-box; padding: 20px 28px; font-family: "Inter", sans-serif; font-weight: 500; font-size: 32px; line-height: 1.32; transform-origin: 50% 100%; opacity: 0; will-change: transform, opacity; }
+        .bubble.user { margin-left: auto; background: #1b2a41; color: #f7f9fc; border-radius: 22px 22px 8px 22px; }
+        .bubble.claude { margin-right: auto; background: rgba(30,155,240,0.06); border: 1.5px solid rgba(30,155,240,0.2); color: #1b2a41; border-radius: 22px 22px 22px 8px; display: flex; align-items: center; gap: 16px; }
+        .bubble.claude .ok { flex: none; width: 42px; height: 42px; border-radius: 50%; background: #059669; display: grid; place-items: center; }
+        .bubble.claude .ok svg { width: 24px; height: 24px; fill: none; stroke: #fff; stroke-width: 3; stroke-linecap: round; stroke-linejoin: round; }
+      </style>
+
+      <div id="root" data-composition-id="04-usages" data-width="1080" data-height="1920" data-duration="13.901">
+        <div id="bg-clip" class="clip bg" data-start="0" data-duration="13.401" data-track-index="0"><div class="glow" id="glow"></div></div>
+        <div id="scene" class="clip" data-start="0" data-duration="13.401" data-track-index="1" style="position:absolute; inset:0;">
+          <div class="figure" id="figure"><img src="public/chef-claude-assistant.png" alt="Chef commandant l'assistant Claude" /></div>
+          <p class="eyebrow" id="eyebrow">Deux façons de l'utiliser</p>
+          <div class="soft lg-card" id="lg"><span class="app"><svg viewBox="0 0 24 24"><rect x="4" y="2" width="16" height="20" rx="2.5" /><path d="M10 18h4" /></svg></span><span><b>Dans le logiciel</b><span>sur tablette, en cuisine</span></span><span class="tag">Manuel</span></div>
+          <p class="or" id="or">ou&nbsp;·&nbsp;avec Claude</p>
+          <div class="chat">
+            <div class="bubble user" id="b1">« Enregistre la température de la chambre froide à 3°C »</div>
+            <div class="bubble claude" id="b2"><span class="ok"><svg viewBox="0 0 24 24"><path d="M4 12l5 5L20 6" /></svg></span>Relevé enregistré dans FoodEatUp</div>
+            <div class="bubble user" id="b3">« Crée une étiquette DLC pour le saumon »</div>
+            <div class="bubble claude" id="b4"><span class="ok"><svg viewBox="0 0 24 24"><path d="M4 12l5 5L20 6" /></svg></span>Étiquette DLC créée — saumon</div>
+          </div>
+        </div>
+      </div>
+
+      <script src="assets/vendor/gsap.min.js"></script>
+      <script>
+        window.__timelines = window.__timelines || {};
+        const tl = gsap.timeline({ paused: true });
+        tl.fromTo("#figure", { y: -30, opacity: 0 }, { y: 0, opacity: 1, duration: 0.8, ease: "power3.out" }, 0.0);
+        tl.fromTo("#eyebrow", { y: 16, opacity: 0 }, { y: 0, opacity: 1, duration: 0.5, ease: "power3.out" }, 0.3);
+        tl.fromTo("#lg", { y: 26, opacity: 0 }, { y: 0, opacity: 1, duration: 0.5, ease: "power3.out" }, 2.4);
+        tl.fromTo("#or", { opacity: 0 }, { opacity: 1, duration: 0.4, ease: "power2.out" }, 5.6);
+        tl.fromTo("#b1", { y: 24, scale: 0.94, opacity: 0 }, { y: 0, scale: 1, opacity: 1, duration: 0.45, ease: "power3.out" }, 6.2);
+        tl.fromTo("#b2", { y: 24, scale: 0.94, opacity: 0 }, { y: 0, scale: 1, opacity: 1, duration: 0.45, ease: "power3.out" }, 8.0);
+        tl.fromTo("#b3", { y: 24, scale: 0.94, opacity: 0 }, { y: 0, scale: 1, opacity: 1, duration: 0.45, ease: "power3.out" }, 9.7);
+        tl.fromTo("#b4", { y: 24, scale: 0.94, opacity: 0 }, { y: 0, scale: 1, opacity: 1, duration: 0.45, ease: "power3.out" }, 11.0);
+        tl.fromTo("#glow", { opacity: 0 }, { opacity: 1, duration: 0.9, ease: "power2.out" }, 12.0);
+        tl.fromTo("#b2 .ok, #b4 .ok", { scale: 1 }, { scale: 1.15, duration: 0.2, yoyo: true, repeat: 1, ease: "power2.inOut" }, 12.1);
+        window.__timelines["04-usages"] = tl;
+      </script>
+    </template>
+  </body>
+</html>
