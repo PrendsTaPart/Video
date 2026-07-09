@@ -1,0 +1,13 @@
+{
+  "provider": "elevenlabs",
+  "voice": "TGAegA0zNRi8I6nUdq3i",
+  "lang": "fr",
+  "model": "eleven_multilingual_v2",
+  "lines": [
+    { "id": "01", "text": "Nouveau sur FoodEatUp, tout est à configurer : la carte, les zones et les tables, l'équipe, la TVA, les fournisseurs... Démarrer de zéro sur un nouvel outil, ça peut vite prendre des heures." },
+    { "id": "02", "text": "Voici le Configurateur, l'agent qui installe votre restaurant à votre place. Vous parlez, il paramètre." },
+    { "id": "03", "text": "Dites simplement : installe mon restaurant. Il crée votre carte et vos catégories, dessine vos zones et vos tables, ajoute votre équipe et ses contrats, règle la TVA et vos fournisseurs, et vous confirmez à chaque étape." },
+    { "id": "04", "text": "Et tout est prêt dans FoodEatUp : votre carte en ligne, votre plan de salle, votre équipe, et même votre premier relevé HACCP. En quelques minutes, au lieu de quelques jours." },
+    { "id": "05", "text": "De zéro à prêt à servir, sans paramétrage manuel. Le Configurateur, votre restaurant, installé en une conversation." }
+  ]
+}

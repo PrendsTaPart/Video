@@ -24,6 +24,8 @@ réutilisables entre les vidéos du studio. Générées via RapidoCMS.
 - `compta-chaos.png` — gérant débordé par la compta (factures, reçus, calculatrice, euros)
 - `chef-invoice-tablet.png` — gérant présentant une tablette avec dashboard financier (factures, CA)
 - `chef-desk-calm.png` — gérant serein à son bureau, laptop dashboard financier (compta à jour)
+- `setup-blank.png` — gérant devant un compte FoodEatUp vide à configurer (cartes vides, ?)
+- `configurateur-agent.png` — agent robot IA « Configurateur » qui assemble le setup (menu, tables, équipe, checklist)
 
 Pour utiliser dans un projet : copier le PNG voulu dans `<projet>/public/`
 (les chemins d'assets HyperFrames sont relatifs à la racine du projet).
