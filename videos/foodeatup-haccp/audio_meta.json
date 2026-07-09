@@ -1,0 +1,948 @@
+{
+  "bgm": {
+    "path": "assets/bgm/track.mp3",
+    "volume": 0.18,
+    "query": "calm reassuring corporate underscore",
+    "duration_s": 36.0
+  },
+  "voices": [
+    {
+      "frame": 1,
+      "path": "assets/voice/01.wav",
+      "duration_s": 12.617,
+      "words": [
+        {
+          "id": "w0",
+          "text": "relevé",
+          "start": 0.07,
+          "end": 0.36
+        },
+        {
+          "id": "w1",
+          "text": "de",
+          "start": 0.36,
+          "end": 0.47
+        },
+        {
+          "id": "w2",
+          "text": "température,",
+          "start": 0.55,
+          "end": 1.16
+        },
+        {
+          "id": "w3",
+          "text": "contrôle",
+          "start": 1.45,
+          "end": 1.85
+        },
+        {
+          "id": "w4",
+          "text": "à",
+          "start": 1.85,
+          "end": 1.87
+        },
+        {
+          "id": "w5",
+          "text": "la",
+          "start": 1.96,
+          "end": 2.06
+        },
+        {
+          "id": "w6",
+          "text": "réception,",
+          "start": 2.06,
+          "end": 2.84
+        },
+        {
+          "id": "w7",
+          "text": "traceabilité,",
+          "start": 2.87,
+          "end": 3.6
+        },
+        {
+          "id": "w8",
+          "text": "étiquette",
+          "start": 3.89,
+          "end": 4.5
+        },
+        {
+          "id": "w9",
+          "text": "DLC,",
+          "start": 4.5,
+          "end": 4.91
+        },
+        {
+          "id": "w10",
+          "text": "checklist",
+          "start": 5.15,
+          "end": 5.48
+        },
+        {
+          "id": "w11",
+          "text": "d'hygiène.",
+          "start": 5.48,
+          "end": 6.1
+        },
+        {
+          "id": "w12",
+          "text": "La",
+          "start": 6.71,
+          "end": 6.83
+        },
+        {
+          "id": "w13",
+          "text": "conformité",
+          "start": 6.83,
+          "end": 7.79
+        },
+        {
+          "id": "w14",
+          "text": "HACCP,",
+          "start": 7.79,
+          "end": 8.45
+        },
+        {
+          "id": "w15",
+          "text": "c'est",
+          "start": 8.45,
+          "end": 8.91
+        },
+        {
+          "id": "w16",
+          "text": "essentiel,",
+          "start": 8.92,
+          "end": 9.93
+        },
+        {
+          "id": "w17",
+          "text": "mais",
+          "start": 9.93,
+          "end": 10.11
+        },
+        {
+          "id": "w18",
+          "text": "trop",
+          "start": 10.11,
+          "end": 10.24
+        },
+        {
+          "id": "w19",
+          "text": "souvent,",
+          "start": 10.55,
+          "end": 10.74
+        },
+        {
+          "id": "w20",
+          "text": "c'est",
+          "start": 10.74,
+          "end": 11.04
+        },
+        {
+          "id": "w21",
+          "text": "une",
+          "start": 11.04,
+          "end": 11.22
+        },
+        {
+          "id": "w22",
+          "text": "montagne",
+          "start": 11.22,
+          "end": 11.55
+        },
+        {
+          "id": "w23",
+          "text": "de",
+          "start": 11.78,
+          "end": 11.82
+        },
+        {
+          "id": "w24",
+          "text": "paprasse.",
+          "start": 11.82,
+          "end": 12.36
+        }
+      ]
+    },
+    {
+      "frame": 2,
+      "path": "assets/voice/02.wav",
+      "duration_s": 6.4,
+      "words": [
+        {
+          "id": "w0",
+          "text": "Fooditup",
+          "start": 0.12,
+          "end": 0.57
+        },
+        {
+          "id": "w1",
+          "text": "réunit",
+          "start": 0.67,
+          "end": 1.0
+        },
+        {
+          "id": "w2",
+          "text": "toute",
+          "start": 1.11,
+          "end": 1.41
+        },
+        {
+          "id": "w3",
+          "text": "votre",
+          "start": 1.47,
+          "end": 1.81
+        },
+        {
+          "id": "w4",
+          "text": "démarche",
+          "start": 1.81,
+          "end": 2.41
+        },
+        {
+          "id": "w5",
+          "text": "HACCP",
+          "start": 2.41,
+          "end": 2.83
+        },
+        {
+          "id": "w6",
+          "text": "dans",
+          "start": 2.92,
+          "end": 3.12
+        },
+        {
+          "id": "w7",
+          "text": "un",
+          "start": 3.12,
+          "end": 3.26
+        },
+        {
+          "id": "w8",
+          "text": "seul",
+          "start": 3.26,
+          "end": 3.48
+        },
+        {
+          "id": "w9",
+          "text": "module.",
+          "start": 3.51,
+          "end": 4.0
+        },
+        {
+          "id": "w10",
+          "text": "Digital,",
+          "start": 4.12,
+          "end": 4.57
+        },
+        {
+          "id": "w11",
+          "text": "guidé,",
+          "start": 4.68,
+          "end": 5.01
+        },
+        {
+          "id": "w12",
+          "text": "toujours",
+          "start": 5.11,
+          "end": 5.61
+        },
+        {
+          "id": "w13",
+          "text": "à",
+          "start": 5.62,
+          "end": 5.68
+        },
+        {
+          "id": "w14",
+          "text": "jour.",
+          "start": 5.68,
+          "end": 6.0
+        }
+      ]
+    },
+    {
+      "frame": 3,
+      "path": "assets/voice/03.wav",
+      "duration_s": 12.617,
+      "words": [
+        {
+          "id": "w0",
+          "text": "Enregistrez",
+          "start": 0.06,
+          "end": 0.62
+        },
+        {
+          "id": "w1",
+          "text": "vos",
+          "start": 0.62,
+          "end": 0.79
+        },
+        {
+          "id": "w2",
+          "text": "températures",
+          "start": 0.79,
+          "end": 1.46
+        },
+        {
+          "id": "w3",
+          "text": "en",
+          "start": 1.46,
+          "end": 1.57
+        },
+        {
+          "id": "w4",
+          "text": "ingeste,",
+          "start": 1.57,
+          "end": 2.07
+        },
+        {
+          "id": "w5",
+          "text": "validez",
+          "start": 2.37,
+          "end": 2.67
+        },
+        {
+          "id": "w6",
+          "text": "vos",
+          "start": 2.71,
+          "end": 2.9
+        },
+        {
+          "id": "w7",
+          "text": "réceptions,",
+          "start": 2.9,
+          "end": 3.72
+        },
+        {
+          "id": "w8",
+          "text": "tracé",
+          "start": 3.85,
+          "end": 4.12
+        },
+        {
+          "id": "w9",
+          "text": "chaque",
+          "start": 4.12,
+          "end": 4.63
+        },
+        {
+          "id": "w10",
+          "text": "produit,",
+          "start": 4.63,
+          "end": 5.28
+        },
+        {
+          "id": "w11",
+          "text": "imprimez",
+          "start": 5.34,
+          "end": 5.89
+        },
+        {
+          "id": "w12",
+          "text": "vos",
+          "start": 5.89,
+          "end": 6.13
+        },
+        {
+          "id": "w13",
+          "text": "étiquettes",
+          "start": 6.13,
+          "end": 6.91
+        },
+        {
+          "id": "w14",
+          "text": "DLC",
+          "start": 6.91,
+          "end": 7.16
+        },
+        {
+          "id": "w15",
+          "text": "et",
+          "start": 7.25,
+          "end": 7.31
+        },
+        {
+          "id": "w16",
+          "text": "cochez",
+          "start": 7.31,
+          "end": 7.65
+        },
+        {
+          "id": "w17",
+          "text": "vos",
+          "start": 7.67,
+          "end": 7.82
+        },
+        {
+          "id": "w18",
+          "text": "checklists",
+          "start": 7.82,
+          "end": 8.36
+        },
+        {
+          "id": "w19",
+          "text": "d'hygiène.",
+          "start": 8.36,
+          "end": 9.12
+        },
+        {
+          "id": "w20",
+          "text": "Chaque",
+          "start": 9.18,
+          "end": 9.52
+        },
+        {
+          "id": "w21",
+          "text": "preuve",
+          "start": 9.59,
+          "end": 9.96
+        },
+        {
+          "id": "w22",
+          "text": "est",
+          "start": 9.96,
+          "end": 10.17
+        },
+        {
+          "id": "w23",
+          "text": "orodatée,",
+          "start": 10.17,
+          "end": 10.87
+        },
+        {
+          "id": "w24",
+          "text": "prête",
+          "start": 10.87,
+          "end": 11.19
+        },
+        {
+          "id": "w25",
+          "text": "pour",
+          "start": 11.49,
+          "end": 11.5
+        },
+        {
+          "id": "w26",
+          "text": "un",
+          "start": 11.51,
+          "end": 11.64
+        },
+        {
+          "id": "w27",
+          "text": "contrôle.",
+          "start": 11.64,
+          "end": 12.26
+        }
+      ]
+    },
+    {
+      "frame": 4,
+      "path": "assets/voice/04.wav",
+      "duration_s": 13.401,
+      "words": [
+        {
+          "id": "w0",
+          "text": "Et",
+          "start": 0.07,
+          "end": 0.11
+        },
+        {
+          "id": "w1",
+          "text": "vous",
+          "start": 0.11,
+          "end": 0.34
+        },
+        {
+          "id": "w2",
+          "text": "avez",
+          "start": 0.34,
+          "end": 0.55
+        },
+        {
+          "id": "w3",
+          "text": "le",
+          "start": 0.56,
+          "end": 0.68
+        },
+        {
+          "id": "w4",
+          "text": "choix,",
+          "start": 0.68,
+          "end": 1.08
+        },
+        {
+          "id": "w5",
+          "text": "vous",
+          "start": 1.17,
+          "end": 1.25
+        },
+        {
+          "id": "w6",
+          "text": "travaillez",
+          "start": 1.25,
+          "end": 1.69
+        },
+        {
+          "id": "w7",
+          "text": "directement",
+          "start": 1.69,
+          "end": 2.2
+        },
+        {
+          "id": "w8",
+          "text": "dans",
+          "start": 2.2,
+          "end": 2.44
+        },
+        {
+          "id": "w9",
+          "text": "le",
+          "start": 2.44,
+          "end": 2.56
+        },
+        {
+          "id": "w10",
+          "text": "logiciel",
+          "start": 2.56,
+          "end": 2.97
+        },
+        {
+          "id": "w11",
+          "text": "sur",
+          "start": 3.22,
+          "end": 3.25
+        },
+        {
+          "id": "w12",
+          "text": "tablette",
+          "start": 3.25,
+          "end": 3.71
+        },
+        {
+          "id": "w13",
+          "text": "en",
+          "start": 3.94,
+          "end": 4.01
+        },
+        {
+          "id": "w14",
+          "text": "cuisine,",
+          "start": 4.01,
+          "end": 4.75
+        },
+        {
+          "id": "w15",
+          "text": "ou",
+          "start": 4.83,
+          "end": 4.89
+        },
+        {
+          "id": "w16",
+          "text": "vous",
+          "start": 4.89,
+          "end": 5.16
+        },
+        {
+          "id": "w17",
+          "text": "demandez",
+          "start": 5.16,
+          "end": 5.7
+        },
+        {
+          "id": "w18",
+          "text": "simplement",
+          "start": 5.93,
+          "end": 6.39
+        },
+        {
+          "id": "w19",
+          "text": "à",
+          "start": 6.39,
+          "end": 6.45
+        },
+        {
+          "id": "w20",
+          "text": "Claude,",
+          "start": 6.46,
+          "end": 7.03
+        },
+        {
+          "id": "w21",
+          "text": "enregistre",
+          "start": 7.03,
+          "end": 7.59
+        },
+        {
+          "id": "w22",
+          "text": "la",
+          "start": 7.59,
+          "end": 7.7
+        },
+        {
+          "id": "w23",
+          "text": "température",
+          "start": 7.7,
+          "end": 8.31
+        },
+        {
+          "id": "w24",
+          "text": "de",
+          "start": 8.31,
+          "end": 8.42
+        },
+        {
+          "id": "w25",
+          "text": "la",
+          "start": 8.42,
+          "end": 8.47
+        },
+        {
+          "id": "w26",
+          "text": "chambre",
+          "start": 8.64,
+          "end": 8.92
+        },
+        {
+          "id": "w27",
+          "text": "froide,",
+          "start": 8.92,
+          "end": 9.29
+        },
+        {
+          "id": "w28",
+          "text": "crée",
+          "start": 9.51,
+          "end": 9.7
+        },
+        {
+          "id": "w29",
+          "text": "une",
+          "start": 9.7,
+          "end": 9.9
+        },
+        {
+          "id": "w30",
+          "text": "étiquette",
+          "start": 9.9,
+          "end": 10.49
+        },
+        {
+          "id": "w31",
+          "text": "pour",
+          "start": 10.61,
+          "end": 10.73
+        },
+        {
+          "id": "w32",
+          "text": "le",
+          "start": 10.79,
+          "end": 10.88
+        },
+        {
+          "id": "w33",
+          "text": "saumon",
+          "start": 10.88,
+          "end": 11.32
+        },
+        {
+          "id": "w34",
+          "text": "et",
+          "start": 11.32,
+          "end": 11.46
+        },
+        {
+          "id": "w35",
+          "text": "c'est",
+          "start": 11.46,
+          "end": 11.82
+        },
+        {
+          "id": "w36",
+          "text": "fait",
+          "start": 11.82,
+          "end": 12.11
+        },
+        {
+          "id": "w37",
+          "text": "dans",
+          "start": 12.11,
+          "end": 12.4
+        },
+        {
+          "id": "w38",
+          "text": "Food",
+          "start": 12.4,
+          "end": 12.69
+        },
+        {
+          "id": "w39",
+          "text": "Eat",
+          "start": 12.69,
+          "end": 12.91
+        },
+        {
+          "id": "w40",
+          "text": "Up.",
+          "start": 12.91,
+          "end": 13.14
+        }
+      ]
+    },
+    {
+      "frame": 5,
+      "path": "assets/voice/05.wav",
+      "duration_s": 8.02,
+      "words": [
+        {
+          "id": "w0",
+          "text": "Moins",
+          "start": 0.06,
+          "end": 0.29
+        },
+        {
+          "id": "w1",
+          "text": "de",
+          "start": 0.33,
+          "end": 0.46
+        },
+        {
+          "id": "w2",
+          "text": "paparaz,",
+          "start": 0.46,
+          "end": 1.05
+        },
+        {
+          "id": "w3",
+          "text": "zéro",
+          "start": 1.05,
+          "end": 1.31
+        },
+        {
+          "id": "w4",
+          "text": "oublie,",
+          "start": 1.31,
+          "end": 1.89
+        },
+        {
+          "id": "w5",
+          "text": "une",
+          "start": 1.91,
+          "end": 2.0
+        },
+        {
+          "id": "w6",
+          "text": "cuisine",
+          "start": 2.05,
+          "end": 2.37
+        },
+        {
+          "id": "w7",
+          "text": "toujours",
+          "start": 2.44,
+          "end": 2.74
+        },
+        {
+          "id": "w8",
+          "text": "prête",
+          "start": 2.74,
+          "end": 2.9
+        },
+        {
+          "id": "w9",
+          "text": "à",
+          "start": 2.9,
+          "end": 3.03
+        },
+        {
+          "id": "w10",
+          "text": "être",
+          "start": 3.03,
+          "end": 3.31
+        },
+        {
+          "id": "w11",
+          "text": "contrôlée.",
+          "start": 3.35,
+          "end": 4.15
+        },
+        {
+          "id": "w12",
+          "text": "Foodie",
+          "start": 4.22,
+          "end": 4.7
+        },
+        {
+          "id": "w13",
+          "text": "top,",
+          "start": 4.7,
+          "end": 5.15
+        },
+        {
+          "id": "w14",
+          "text": "la",
+          "start": 5.15,
+          "end": 5.33
+        },
+        {
+          "id": "w15",
+          "text": "conformité",
+          "start": 5.33,
+          "end": 6.21
+        },
+        {
+          "id": "w16",
+          "text": "HACCP,",
+          "start": 6.26,
+          "end": 6.81
+        },
+        {
+          "id": "w17",
+          "text": "enfin",
+          "start": 6.89,
+          "end": 7.06
+        },
+        {
+          "id": "w18",
+          "text": "simple.",
+          "start": 7.18,
+          "end": 7.79
+        }
+      ]
+    }
+  ],
+  "sfx": [
+    {
+      "frame": 1,
+      "file": "assets/sfx/pop.mp3",
+      "offset_s": 1.0,
+      "duration_s": 0.5,
+      "volume": 0.3
+    },
+    {
+      "frame": 1,
+      "file": "assets/sfx/pop.mp3",
+      "offset_s": 3.4,
+      "duration_s": 0.5,
+      "volume": 0.3
+    },
+    {
+      "frame": 1,
+      "file": "assets/sfx/impact-bass-1.mp3",
+      "offset_s": 10.4,
+      "duration_s": 2.0,
+      "volume": 0.3
+    },
+    {
+      "frame": 2,
+      "file": "assets/sfx/chime.mp3",
+      "offset_s": 0.5,
+      "duration_s": 0.8,
+      "volume": 0.3
+    },
+    {
+      "frame": 2,
+      "file": "assets/sfx/pop.mp3",
+      "offset_s": 2.6,
+      "duration_s": 0.5,
+      "volume": 0.3
+    },
+    {
+      "frame": 3,
+      "file": "assets/sfx/pop.mp3",
+      "offset_s": 1.6,
+      "duration_s": 0.5,
+      "volume": 0.3
+    },
+    {
+      "frame": 3,
+      "file": "assets/sfx/click-soft.mp3",
+      "offset_s": 3.4,
+      "duration_s": 0.4,
+      "volume": 0.3
+    },
+    {
+      "frame": 3,
+      "file": "assets/sfx/pop.mp3",
+      "offset_s": 5.2,
+      "duration_s": 0.5,
+      "volume": 0.3
+    },
+    {
+      "frame": 3,
+      "file": "assets/sfx/click-soft.mp3",
+      "offset_s": 6.9,
+      "duration_s": 0.4,
+      "volume": 0.3
+    },
+    {
+      "frame": 3,
+      "file": "assets/sfx/pop.mp3",
+      "offset_s": 8.6,
+      "duration_s": 0.5,
+      "volume": 0.3
+    },
+    {
+      "frame": 3,
+      "file": "assets/sfx/chime.mp3",
+      "offset_s": 10.6,
+      "duration_s": 0.8,
+      "volume": 0.3
+    },
+    {
+      "frame": 4,
+      "file": "assets/sfx/click-soft.mp3",
+      "offset_s": 2.4,
+      "duration_s": 0.4,
+      "volume": 0.3
+    },
+    {
+      "frame": 4,
+      "file": "assets/sfx/pop.mp3",
+      "offset_s": 6.4,
+      "duration_s": 0.5,
+      "volume": 0.3
+    },
+    {
+      "frame": 4,
+      "file": "assets/sfx/chime.mp3",
+      "offset_s": 8.2,
+      "duration_s": 0.8,
+      "volume": 0.3
+    },
+    {
+      "frame": 4,
+      "file": "assets/sfx/pop.mp3",
+      "offset_s": 9.8,
+      "duration_s": 0.5,
+      "volume": 0.3
+    },
+    {
+      "frame": 4,
+      "file": "assets/sfx/chime.mp3",
+      "offset_s": 11.0,
+      "duration_s": 0.8,
+      "volume": 0.3
+    },
+    {
+      "frame": 5,
+      "file": "assets/sfx/chime.mp3",
+      "offset_s": 0.4,
+      "duration_s": 0.8,
+      "volume": 0.3
+    },
+    {
+      "frame": 5,
+      "file": "assets/sfx/impact-bass-1.mp3",
+      "offset_s": 4.4,
+      "duration_s": 2.0,
+      "volume": 0.3
+    },
+    {
+      "frame": 5,
+      "file": "assets/sfx/sparkle.mp3",
+      "offset_s": 4.6,
+      "duration_s": 1.5,
+      "volume": 0.3
+    }
+  ]
+}

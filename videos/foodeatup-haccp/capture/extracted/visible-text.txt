@@ -1,0 +1,6 @@
+Module HACCP de FoodEatUp — vidéo explainer.
+Fonctions : relevés de température horodatés, contrôle des réceptions, traçabilité produit,
+étiquettes DLC imprimables, checklists d'hygiène à valider.
+Double usage : directement dans le logiciel (tablette en cuisine) OU en langage naturel via Claude
+(connexion MCP) qui exécute les actions dans FoodEatUp.
+Preuves horodatées, prêtes pour un contrôle sanitaire.
