@@ -1,0 +1,1648 @@
+{
+  "total_duration_s": 55.719,
+  "width": 1080,
+  "height": 1920,
+  "groups": [
+    {
+      "id": "caption-group-0",
+      "frame": 1,
+      "start": 0.09,
+      "end": 1.34,
+      "text": "Les factures fournisseurs,",
+      "words": [
+        {
+          "id": "caption-word-0-0",
+          "text": "Les",
+          "start": 0.09,
+          "end": 0.16
+        },
+        {
+          "id": "caption-word-0-1",
+          "text": "factures",
+          "start": 0.16,
+          "end": 0.58
+        },
+        {
+          "id": "caption-word-0-2",
+          "text": "fournisseurs,",
+          "start": 0.58,
+          "end": 1.23
+        }
+      ]
+    },
+    {
+      "id": "caption-group-1",
+      "frame": 1,
+      "start": 1.34,
+      "end": 1.69,
+      "text": "qui sont",
+      "words": [
+        {
+          "id": "caption-word-1-0",
+          "text": "qui",
+          "start": 1.34,
+          "end": 1.47
+        },
+        {
+          "id": "caption-word-1-1",
+          "text": "sont",
+          "start": 1.47,
+          "end": 1.61
+        }
+      ]
+    },
+    {
+      "id": "caption-group-2",
+      "frame": 1,
+      "start": 1.69,
+      "end": 2.16,
+      "text": "piles,",
+      "words": [
+        {
+          "id": "caption-word-2-0",
+          "text": "piles,",
+          "start": 1.69,
+          "end": 2.04
+        }
+      ]
+    },
+    {
+      "id": "caption-group-3",
+      "frame": 1,
+      "start": 2.28,
+      "end": 2.82,
+      "text": "les dépensent",
+      "words": [
+        {
+          "id": "caption-word-3-0",
+          "text": "les",
+          "start": 2.28,
+          "end": 2.29
+        },
+        {
+          "id": "caption-word-3-1",
+          "text": "dépensent",
+          "start": 2.29,
+          "end": 2.77
+        }
+      ]
+    },
+    {
+      "id": "caption-group-4",
+      "frame": 1,
+      "start": 2.82,
+      "end": 3.61,
+      "text": "à ressaisir",
+      "words": [
+        {
+          "id": "caption-word-4-0",
+          "text": "à",
+          "start": 2.82,
+          "end": 2.87
+        },
+        {
+          "id": "caption-word-4-1",
+          "text": "ressaisir",
+          "start": 2.87,
+          "end": 3.54
+        }
+      ]
+    },
+    {
+      "id": "caption-group-5",
+      "frame": 1,
+      "start": 3.61,
+      "end": 4.06,
+      "text": "une par",
+      "words": [
+        {
+          "id": "caption-word-5-0",
+          "text": "une",
+          "start": 3.61,
+          "end": 3.81
+        },
+        {
+          "id": "caption-word-5-1",
+          "text": "par",
+          "start": 3.81,
+          "end": 4.06
+        }
+      ]
+    },
+    {
+      "id": "caption-group-6",
+      "frame": 1,
+      "start": 4.06,
+      "end": 4.3,
+      "text": "une",
+      "words": [
+        {
+          "id": "caption-word-6-0",
+          "text": "une",
+          "start": 4.06,
+          "end": 4.18
+        }
+      ]
+    },
+    {
+      "id": "caption-group-7",
+      "frame": 1,
+      "start": 4.46,
+      "end": 4.77,
+      "text": "les fous",
+      "words": [
+        {
+          "id": "caption-word-7-0",
+          "text": "les",
+          "start": 4.46,
+          "end": 4.5
+        },
+        {
+          "id": "caption-word-7-1",
+          "text": "fous",
+          "start": 4.57,
+          "end": 4.77
+        }
+      ]
+    },
+    {
+      "id": "caption-group-8",
+      "frame": 1,
+      "start": 4.77,
+      "end": 5.32,
+      "text": "de costes",
+      "words": [
+        {
+          "id": "caption-word-8-0",
+          "text": "de",
+          "start": 4.77,
+          "end": 4.9
+        },
+        {
+          "id": "caption-word-8-1",
+          "text": "costes",
+          "start": 4.9,
+          "end": 5.32
+        }
+      ]
+    },
+    {
+      "id": "caption-group-9",
+      "frame": 1,
+      "start": 5.32,
+      "end": 5.84,
+      "text": "qu'on ne",
+      "words": [
+        {
+          "id": "caption-word-9-0",
+          "text": "qu'on",
+          "start": 5.32,
+          "end": 5.65
+        },
+        {
+          "id": "caption-word-9-1",
+          "text": "ne",
+          "start": 5.65,
+          "end": 5.73
+        }
+      ]
+    },
+    {
+      "id": "caption-group-10",
+      "frame": 1,
+      "start": 5.84,
+      "end": 6.59,
+      "text": "calcule jamais",
+      "words": [
+        {
+          "id": "caption-word-10-0",
+          "text": "calcule",
+          "start": 5.84,
+          "end": 6.26
+        },
+        {
+          "id": "caption-word-10-1",
+          "text": "jamais",
+          "start": 6.26,
+          "end": 6.47
+        }
+      ]
+    },
+    {
+      "id": "caption-group-11",
+      "frame": 1,
+      "start": 6.78,
+      "end": 7.43,
+      "text": "vraiment et",
+      "words": [
+        {
+          "id": "caption-word-11-0",
+          "text": "vraiment",
+          "start": 6.78,
+          "end": 7.27
+        },
+        {
+          "id": "caption-word-11-1",
+          "text": "et",
+          "start": 7.32,
+          "end": 7.42
+        }
+      ]
+    },
+    {
+      "id": "caption-group-12",
+      "frame": 1,
+      "start": 7.43,
+      "end": 8.02,
+      "text": "les marges",
+      "words": [
+        {
+          "id": "caption-word-12-0",
+          "text": "les",
+          "start": 7.43,
+          "end": 7.61
+        },
+        {
+          "id": "caption-word-12-1",
+          "text": "marges",
+          "start": 7.63,
+          "end": 8.02
+        }
+      ]
+    },
+    {
+      "id": "caption-group-13",
+      "frame": 1,
+      "start": 8.02,
+      "end": 9.16,
+      "text": "qu'on découvre bien",
+      "words": [
+        {
+          "id": "caption-word-13-0",
+          "text": "qu'on",
+          "start": 8.02,
+          "end": 8.34
+        },
+        {
+          "id": "caption-word-13-1",
+          "text": "découvre",
+          "start": 8.34,
+          "end": 8.9
+        },
+        {
+          "id": "caption-word-13-2",
+          "text": "bien",
+          "start": 8.96,
+          "end": 9.16
+        }
+      ]
+    },
+    {
+      "id": "caption-group-14",
+      "frame": 1,
+      "start": 9.16,
+      "end": 9.81,
+      "text": "trop tard.",
+      "words": [
+        {
+          "id": "caption-word-14-0",
+          "text": "trop",
+          "start": 9.16,
+          "end": 9.43
+        },
+        {
+          "id": "caption-word-14-1",
+          "text": "tard.",
+          "start": 9.43,
+          "end": 9.72
+        }
+      ]
+    },
+    {
+      "id": "caption-group-15",
+      "frame": 1,
+      "start": 9.81,
+      "end": 11.06,
+      "text": "La comptabilité d'un",
+      "words": [
+        {
+          "id": "caption-word-15-0",
+          "text": "La",
+          "start": 9.81,
+          "end": 9.86
+        },
+        {
+          "id": "caption-word-15-1",
+          "text": "comptabilité",
+          "start": 9.86,
+          "end": 10.73
+        },
+        {
+          "id": "caption-word-15-2",
+          "text": "d'un",
+          "start": 10.76,
+          "end": 10.95
+        }
+      ]
+    },
+    {
+      "id": "caption-group-16",
+      "frame": 1,
+      "start": 11.06,
+      "end": 11.97,
+      "text": "restaurant,",
+      "words": [
+        {
+          "id": "caption-word-16-0",
+          "text": "restaurant,",
+          "start": 11.06,
+          "end": 11.9
+        }
+      ]
+    },
+    {
+      "id": "caption-group-17",
+      "frame": 1,
+      "start": 11.97,
+      "end": 12.4,
+      "text": "c'est un",
+      "words": [
+        {
+          "id": "caption-word-17-0",
+          "text": "c'est",
+          "start": 11.97,
+          "end": 12.22
+        },
+        {
+          "id": "caption-word-17-1",
+          "text": "un",
+          "start": 12.28,
+          "end": 12.4
+        }
+      ]
+    },
+    {
+      "id": "caption-group-18",
+      "frame": 1,
+      "start": 12.4,
+      "end": 13.19,
+      "text": "vrai gouffre",
+      "words": [
+        {
+          "id": "caption-word-18-0",
+          "text": "vrai",
+          "start": 12.4,
+          "end": 12.69
+        },
+        {
+          "id": "caption-word-18-1",
+          "text": "gouffre",
+          "start": 12.69,
+          "end": 13.19
+        }
+      ]
+    },
+    {
+      "id": "caption-group-19",
+      "frame": 1,
+      "start": 13.19,
+      "end": 13.94,
+      "text": "de temps.",
+      "words": [
+        {
+          "id": "caption-word-19-0",
+          "text": "de",
+          "start": 13.19,
+          "end": 13.26
+        },
+        {
+          "id": "caption-word-19-1",
+          "text": "temps.",
+          "start": 13.33,
+          "end": 13.82
+        }
+      ]
+    },
+    {
+      "id": "caption-group-20",
+      "frame": 2,
+      "start": 14.409,
+      "end": 15.409,
+      "text": "Fooditop réunit toute",
+      "words": [
+        {
+          "id": "caption-word-20-0",
+          "text": "Fooditop",
+          "start": 14.409,
+          "end": 14.739
+        },
+        {
+          "id": "caption-word-20-1",
+          "text": "réunit",
+          "start": 14.739,
+          "end": 15.069
+        },
+        {
+          "id": "caption-word-20-2",
+          "text": "toute",
+          "start": 15.069,
+          "end": 15.329
+        }
+      ]
+    },
+    {
+      "id": "caption-group-21",
+      "frame": 2,
+      "start": 15.409,
+      "end": 16.789,
+      "text": "votre comptabilité dans un",
+      "words": [
+        {
+          "id": "caption-word-21-0",
+          "text": "votre",
+          "start": 15.409,
+          "end": 15.639
+        },
+        {
+          "id": "caption-word-21-1",
+          "text": "comptabilité",
+          "start": 15.639,
+          "end": 16.409
+        },
+        {
+          "id": "caption-word-21-2",
+          "text": "dans",
+          "start": 16.409,
+          "end": 16.629
+        },
+        {
+          "id": "caption-word-21-3",
+          "text": "un",
+          "start": 16.629,
+          "end": 16.709
+        }
+      ]
+    },
+    {
+      "id": "caption-group-22",
+      "frame": 2,
+      "start": 16.789,
+      "end": 17.409,
+      "text": "seul module,",
+      "words": [
+        {
+          "id": "caption-word-22-0",
+          "text": "seul",
+          "start": 16.789,
+          "end": 16.959
+        },
+        {
+          "id": "caption-word-22-1",
+          "text": "module,",
+          "start": 16.959,
+          "end": 17.289
+        }
+      ]
+    },
+    {
+      "id": "caption-group-23",
+      "frame": 2,
+      "start": 17.589,
+      "end": 18.159,
+      "text": "facture,",
+      "words": [
+        {
+          "id": "caption-word-23-0",
+          "text": "facture,",
+          "start": 17.589,
+          "end": 18.039
+        }
+      ]
+    },
+    {
+      "id": "caption-group-24",
+      "frame": 2,
+      "start": 18.359,
+      "end": 19.169,
+      "text": "fournisseur,",
+      "words": [
+        {
+          "id": "caption-word-24-0",
+          "text": "fournisseur,",
+          "start": 18.359,
+          "end": 19.089
+        }
+      ]
+    },
+    {
+      "id": "caption-group-25",
+      "frame": 2,
+      "start": 19.169,
+      "end": 19.829,
+      "text": "dépense et",
+      "words": [
+        {
+          "id": "caption-word-25-0",
+          "text": "dépense",
+          "start": 19.169,
+          "end": 19.609
+        },
+        {
+          "id": "caption-word-25-1",
+          "text": "et",
+          "start": 19.679,
+          "end": 19.749
+        }
+      ]
+    },
+    {
+      "id": "caption-group-26",
+      "frame": 2,
+      "start": 19.829,
+      "end": 20.329,
+      "text": "food cost",
+      "words": [
+        {
+          "id": "caption-word-26-0",
+          "text": "food",
+          "start": 19.829,
+          "end": 20.139
+        },
+        {
+          "id": "caption-word-26-1",
+          "text": "cost",
+          "start": 20.139,
+          "end": 20.329
+        }
+      ]
+    },
+    {
+      "id": "caption-group-27",
+      "frame": 2,
+      "start": 20.329,
+      "end": 21.569,
+      "text": "au même endroit.",
+      "words": [
+        {
+          "id": "caption-word-27-0",
+          "text": "au",
+          "start": 20.329,
+          "end": 20.609
+        },
+        {
+          "id": "caption-word-27-1",
+          "text": "même",
+          "start": 20.609,
+          "end": 20.849
+        },
+        {
+          "id": "caption-word-27-2",
+          "text": "endroit.",
+          "start": 20.849,
+          "end": 21.449
+        }
+      ]
+    },
+    {
+      "id": "caption-group-28",
+      "frame": 3,
+      "start": 21.716,
+      "end": 22.236,
+      "text": "Éditez vos",
+      "words": [
+        {
+          "id": "caption-word-28-0",
+          "text": "Éditez",
+          "start": 21.716,
+          "end": 22.036
+        },
+        {
+          "id": "caption-word-28-1",
+          "text": "vos",
+          "start": 22.036,
+          "end": 22.226
+        }
+      ]
+    },
+    {
+      "id": "caption-group-29",
+      "frame": 3,
+      "start": 22.236,
+      "end": 22.696,
+      "text": "devis et",
+      "words": [
+        {
+          "id": "caption-word-29-0",
+          "text": "devis",
+          "start": 22.236,
+          "end": 22.506
+        },
+        {
+          "id": "caption-word-29-1",
+          "text": "et",
+          "start": 22.586,
+          "end": 22.696
+        }
+      ]
+    },
+    {
+      "id": "caption-group-30",
+      "frame": 3,
+      "start": 22.696,
+      "end": 23.616,
+      "text": "vos factures,",
+      "words": [
+        {
+          "id": "caption-word-30-0",
+          "text": "vos",
+          "start": 22.696,
+          "end": 22.896
+        },
+        {
+          "id": "caption-word-30-1",
+          "text": "factures,",
+          "start": 22.896,
+          "end": 23.586
+        }
+      ]
+    },
+    {
+      "id": "caption-group-31",
+      "frame": 3,
+      "start": 23.616,
+      "end": 24.826,
+      "text": "suivez vos fournisseurs",
+      "words": [
+        {
+          "id": "caption-word-31-0",
+          "text": "suivez",
+          "start": 23.616,
+          "end": 23.916
+        },
+        {
+          "id": "caption-word-31-1",
+          "text": "vos",
+          "start": 23.916,
+          "end": 24.086
+        },
+        {
+          "id": "caption-word-31-2",
+          "text": "fournisseurs",
+          "start": 24.086,
+          "end": 24.716
+        }
+      ]
+    },
+    {
+      "id": "caption-group-32",
+      "frame": 3,
+      "start": 24.826,
+      "end": 25.046,
+      "text": "et vos",
+      "words": [
+        {
+          "id": "caption-word-32-0",
+          "text": "et",
+          "start": 24.826,
+          "end": 24.876
+        },
+        {
+          "id": "caption-word-32-1",
+          "text": "vos",
+          "start": 24.876,
+          "end": 25.036
+        }
+      ]
+    },
+    {
+      "id": "caption-group-33",
+      "frame": 3,
+      "start": 25.046,
+      "end": 25.736,
+      "text": "dépenses,",
+      "words": [
+        {
+          "id": "caption-word-33-0",
+          "text": "dépenses,",
+          "start": 25.046,
+          "end": 25.676
+        }
+      ]
+    },
+    {
+      "id": "caption-group-34",
+      "frame": 3,
+      "start": 25.736,
+      "end": 26.886,
+      "text": "scannez vos factures",
+      "words": [
+        {
+          "id": "caption-word-34-0",
+          "text": "scannez",
+          "start": 25.736,
+          "end": 26.146
+        },
+        {
+          "id": "caption-word-34-1",
+          "text": "vos",
+          "start": 26.146,
+          "end": 26.346
+        },
+        {
+          "id": "caption-word-34-2",
+          "text": "factures",
+          "start": 26.346,
+          "end": 26.886
+        }
+      ]
+    },
+    {
+      "id": "caption-group-35",
+      "frame": 3,
+      "start": 26.886,
+      "end": 27.286,
+      "text": "grâce à",
+      "words": [
+        {
+          "id": "caption-word-35-0",
+          "text": "grâce",
+          "start": 26.886,
+          "end": 27.226
+        },
+        {
+          "id": "caption-word-35-1",
+          "text": "à",
+          "start": 27.226,
+          "end": 27.286
+        }
+      ]
+    },
+    {
+      "id": "caption-group-36",
+      "frame": 3,
+      "start": 27.286,
+      "end": 28.356,
+      "text": "l'OCR et calculez",
+      "words": [
+        {
+          "id": "caption-word-36-0",
+          "text": "l'OCR",
+          "start": 27.286,
+          "end": 27.676
+        },
+        {
+          "id": "caption-word-36-1",
+          "text": "et",
+          "start": 27.676,
+          "end": 27.806
+        },
+        {
+          "id": "caption-word-36-2",
+          "text": "calculez",
+          "start": 27.806,
+          "end": 28.356
+        }
+      ]
+    },
+    {
+      "id": "caption-group-37",
+      "frame": 3,
+      "start": 28.356,
+      "end": 28.846,
+      "text": "le food",
+      "words": [
+        {
+          "id": "caption-word-37-0",
+          "text": "le",
+          "start": 28.356,
+          "end": 28.486
+        },
+        {
+          "id": "caption-word-37-1",
+          "text": "food",
+          "start": 28.486,
+          "end": 28.736
+        }
+      ]
+    },
+    {
+      "id": "caption-group-38",
+      "frame": 3,
+      "start": 28.846,
+      "end": 29.166,
+      "text": "cost et",
+      "words": [
+        {
+          "id": "caption-word-38-0",
+          "text": "cost",
+          "start": 28.846,
+          "end": 29.036
+        },
+        {
+          "id": "caption-word-38-1",
+          "text": "et",
+          "start": 29.036,
+          "end": 29.166
+        }
+      ]
+    },
+    {
+      "id": "caption-group-39",
+      "frame": 3,
+      "start": 29.166,
+      "end": 29.636,
+      "text": "la marge",
+      "words": [
+        {
+          "id": "caption-word-39-0",
+          "text": "la",
+          "start": 29.166,
+          "end": 29.296
+        },
+        {
+          "id": "caption-word-39-1",
+          "text": "marge",
+          "start": 29.296,
+          "end": 29.516
+        }
+      ]
+    },
+    {
+      "id": "caption-group-40",
+      "frame": 3,
+      "start": 29.776,
+      "end": 30.776,
+      "text": "de chaque recette.",
+      "words": [
+        {
+          "id": "caption-word-40-0",
+          "text": "de",
+          "start": 29.776,
+          "end": 29.796
+        },
+        {
+          "id": "caption-word-40-1",
+          "text": "chaque",
+          "start": 29.796,
+          "end": 30.136
+        },
+        {
+          "id": "caption-word-40-2",
+          "text": "recette.",
+          "start": 30.136,
+          "end": 30.716
+        }
+      ]
+    },
+    {
+      "id": "caption-group-41",
+      "frame": 3,
+      "start": 30.776,
+      "end": 32.386,
+      "text": "Votre chiffre d'affaires,",
+      "words": [
+        {
+          "id": "caption-word-41-0",
+          "text": "Votre",
+          "start": 30.776,
+          "end": 31.066
+        },
+        {
+          "id": "caption-word-41-1",
+          "text": "chiffre",
+          "start": 31.066,
+          "end": 31.556
+        },
+        {
+          "id": "caption-word-41-2",
+          "text": "d'affaires,",
+          "start": 31.556,
+          "end": 32.386
+        }
+      ]
+    },
+    {
+      "id": "caption-group-42",
+      "frame": 3,
+      "start": 32.386,
+      "end": 33.146,
+      "text": "vos impayés",
+      "words": [
+        {
+          "id": "caption-word-42-0",
+          "text": "vos",
+          "start": 32.386,
+          "end": 32.676
+        },
+        {
+          "id": "caption-word-42-1",
+          "text": "impayés",
+          "start": 32.676,
+          "end": 33.146
+        }
+      ]
+    },
+    {
+      "id": "caption-group-43",
+      "frame": 3,
+      "start": 33.146,
+      "end": 33.506,
+      "text": "et vos",
+      "words": [
+        {
+          "id": "caption-word-43-0",
+          "text": "et",
+          "start": 33.146,
+          "end": 33.266
+        },
+        {
+          "id": "caption-word-43-1",
+          "text": "vos",
+          "start": 33.296,
+          "end": 33.506
+        }
+      ]
+    },
+    {
+      "id": "caption-group-44",
+      "frame": 3,
+      "start": 33.506,
+      "end": 34.086,
+      "text": "marges en",
+      "words": [
+        {
+          "id": "caption-word-44-0",
+          "text": "marges",
+          "start": 33.506,
+          "end": 33.946
+        },
+        {
+          "id": "caption-word-44-1",
+          "text": "en",
+          "start": 33.946,
+          "end": 34.086
+        }
+      ]
+    },
+    {
+      "id": "caption-group-45",
+      "frame": 3,
+      "start": 34.086,
+      "end": 35.136,
+      "text": "un coup d'œil.",
+      "words": [
+        {
+          "id": "caption-word-45-0",
+          "text": "un",
+          "start": 34.086,
+          "end": 34.216
+        },
+        {
+          "id": "caption-word-45-1",
+          "text": "coup",
+          "start": 34.266,
+          "end": 34.516
+        },
+        {
+          "id": "caption-word-45-2",
+          "text": "d'œil.",
+          "start": 34.516,
+          "end": 35.016
+        }
+      ]
+    },
+    {
+      "id": "caption-group-46",
+      "frame": 4,
+      "start": 35.179,
+      "end": 35.469,
+      "text": "Et tout",
+      "words": [
+        {
+          "id": "caption-word-46-0",
+          "text": "Et",
+          "start": 35.179,
+          "end": 35.229
+        },
+        {
+          "id": "caption-word-46-1",
+          "text": "tout",
+          "start": 35.229,
+          "end": 35.469
+        }
+      ]
+    },
+    {
+      "id": "caption-group-47",
+      "frame": 4,
+      "start": 35.469,
+      "end": 35.939,
+      "text": "se pilote",
+      "words": [
+        {
+          "id": "caption-word-47-0",
+          "text": "se",
+          "start": 35.469,
+          "end": 35.589
+        },
+        {
+          "id": "caption-word-47-1",
+          "text": "pilote",
+          "start": 35.589,
+          "end": 35.939
+        }
+      ]
+    },
+    {
+      "id": "caption-group-48",
+      "frame": 4,
+      "start": 35.939,
+      "end": 37.149,
+      "text": "aussi avec Claude.",
+      "words": [
+        {
+          "id": "caption-word-48-0",
+          "text": "aussi",
+          "start": 35.939,
+          "end": 36.179
+        },
+        {
+          "id": "caption-word-48-1",
+          "text": "avec",
+          "start": 36.239,
+          "end": 36.389
+        },
+        {
+          "id": "caption-word-48-2",
+          "text": "Claude.",
+          "start": 36.489,
+          "end": 37.029
+        }
+      ]
+    },
+    {
+      "id": "caption-group-49",
+      "frame": 4,
+      "start": 37.199,
+      "end": 37.579,
+      "text": "Donnez lui",
+      "words": [
+        {
+          "id": "caption-word-49-0",
+          "text": "Donnez",
+          "start": 37.199,
+          "end": 37.369
+        },
+        {
+          "id": "caption-word-49-1",
+          "text": "lui",
+          "start": 37.369,
+          "end": 37.509
+        }
+      ]
+    },
+    {
+      "id": "caption-group-50",
+      "frame": 4,
+      "start": 37.579,
+      "end": 38.819,
+      "text": "une facture fournisseur.",
+      "words": [
+        {
+          "id": "caption-word-50-0",
+          "text": "une",
+          "start": 37.579,
+          "end": 37.709
+        },
+        {
+          "id": "caption-word-50-1",
+          "text": "facture",
+          "start": 37.709,
+          "end": 38.099
+        },
+        {
+          "id": "caption-word-50-2",
+          "text": "fournisseur.",
+          "start": 38.099,
+          "end": 38.819
+        }
+      ]
+    },
+    {
+      "id": "caption-group-51",
+      "frame": 4,
+      "start": 38.819,
+      "end": 39.219,
+      "text": "Il met",
+      "words": [
+        {
+          "id": "caption-word-51-0",
+          "text": "Il",
+          "start": 38.819,
+          "end": 39.099
+        },
+        {
+          "id": "caption-word-51-1",
+          "text": "met",
+          "start": 39.099,
+          "end": 39.209
+        }
+      ]
+    },
+    {
+      "id": "caption-group-52",
+      "frame": 4,
+      "start": 39.219,
+      "end": 39.499,
+      "text": "à jour",
+      "words": [
+        {
+          "id": "caption-word-52-0",
+          "text": "à",
+          "start": 39.219,
+          "end": 39.269
+        },
+        {
+          "id": "caption-word-52-1",
+          "text": "jour",
+          "start": 39.269,
+          "end": 39.499
+        }
+      ]
+    },
+    {
+      "id": "caption-group-53",
+      "frame": 4,
+      "start": 39.499,
+      "end": 39.849,
+      "text": "le prix",
+      "words": [
+        {
+          "id": "caption-word-53-0",
+          "text": "le",
+          "start": 39.499,
+          "end": 39.619
+        },
+        {
+          "id": "caption-word-53-1",
+          "text": "prix",
+          "start": 39.619,
+          "end": 39.849
+        }
+      ]
+    },
+    {
+      "id": "caption-group-54",
+      "frame": 4,
+      "start": 39.849,
+      "end": 40.819,
+      "text": "de vos ingrédients",
+      "words": [
+        {
+          "id": "caption-word-54-0",
+          "text": "de",
+          "start": 39.849,
+          "end": 39.969
+        },
+        {
+          "id": "caption-word-54-1",
+          "text": "vos",
+          "start": 39.969,
+          "end": 40.099
+        },
+        {
+          "id": "caption-word-54-2",
+          "text": "ingrédients",
+          "start": 40.159,
+          "end": 40.699
+        }
+      ]
+    },
+    {
+      "id": "caption-group-55",
+      "frame": 4,
+      "start": 40.879,
+      "end": 41.599,
+      "text": "et recalcule",
+      "words": [
+        {
+          "id": "caption-word-55-0",
+          "text": "et",
+          "start": 40.879,
+          "end": 40.969
+        },
+        {
+          "id": "caption-word-55-1",
+          "text": "recalcule",
+          "start": 41.139,
+          "end": 41.559
+        }
+      ]
+    },
+    {
+      "id": "caption-group-56",
+      "frame": 4,
+      "start": 41.599,
+      "end": 42.629,
+      "text": "vos marges.",
+      "words": [
+        {
+          "id": "caption-word-56-0",
+          "text": "vos",
+          "start": 41.599,
+          "end": 41.809
+        },
+        {
+          "id": "caption-word-56-1",
+          "text": "marges.",
+          "start": 41.809,
+          "end": 42.509
+        }
+      ]
+    },
+    {
+      "id": "caption-group-57",
+      "frame": 4,
+      "start": 42.679,
+      "end": 43.059,
+      "text": "Demandez un",
+      "words": [
+        {
+          "id": "caption-word-57-0",
+          "text": "Demandez",
+          "start": 42.679,
+          "end": 42.959
+        },
+        {
+          "id": "caption-word-57-1",
+          "text": "un",
+          "start": 42.959,
+          "end": 43.059
+        }
+      ]
+    },
+    {
+      "id": "caption-group-58",
+      "frame": 4,
+      "start": 43.059,
+      "end": 43.579,
+      "text": "devis pour",
+      "words": [
+        {
+          "id": "caption-word-58-0",
+          "text": "devis",
+          "start": 43.059,
+          "end": 43.249
+        },
+        {
+          "id": "caption-word-58-1",
+          "text": "pour",
+          "start": 43.389,
+          "end": 43.579
+        }
+      ]
+    },
+    {
+      "id": "caption-group-59",
+      "frame": 4,
+      "start": 43.579,
+      "end": 44.019,
+      "text": "un buffet",
+      "words": [
+        {
+          "id": "caption-word-59-0",
+          "text": "un",
+          "start": 43.579,
+          "end": 43.689
+        },
+        {
+          "id": "caption-word-59-1",
+          "text": "buffet",
+          "start": 43.689,
+          "end": 44.019
+        }
+      ]
+    },
+    {
+      "id": "caption-group-60",
+      "frame": 4,
+      "start": 44.019,
+      "end": 44.419,
+      "text": "de 50",
+      "words": [
+        {
+          "id": "caption-word-60-0",
+          "text": "de",
+          "start": 44.019,
+          "end": 44.139
+        },
+        {
+          "id": "caption-word-60-1",
+          "text": "50",
+          "start": 44.139,
+          "end": 44.299
+        }
+      ]
+    },
+    {
+      "id": "caption-group-61",
+      "frame": 4,
+      "start": 44.739,
+      "end": 45.229,
+      "text": "personnes.",
+      "words": [
+        {
+          "id": "caption-word-61-0",
+          "text": "personnes.",
+          "start": 44.739,
+          "end": 45.229
+        }
+      ]
+    },
+    {
+      "id": "caption-group-62",
+      "frame": 4,
+      "start": 45.229,
+      "end": 45.869,
+      "text": "Il estime",
+      "words": [
+        {
+          "id": "caption-word-62-0",
+          "text": "Il",
+          "start": 45.229,
+          "end": 45.419
+        },
+        {
+          "id": "caption-word-62-1",
+          "text": "estime",
+          "start": 45.419,
+          "end": 45.869
+        }
+      ]
+    },
+    {
+      "id": "caption-group-63",
+      "frame": 4,
+      "start": 45.869,
+      "end": 46.509,
+      "text": "les coups",
+      "words": [
+        {
+          "id": "caption-word-63-0",
+          "text": "les",
+          "start": 45.869,
+          "end": 45.979
+        },
+        {
+          "id": "caption-word-63-1",
+          "text": "coups",
+          "start": 46.109,
+          "end": 46.509
+        }
+      ]
+    },
+    {
+      "id": "caption-group-64",
+      "frame": 4,
+      "start": 46.509,
+      "end": 46.829,
+      "text": "et le",
+      "words": [
+        {
+          "id": "caption-word-64-0",
+          "text": "et",
+          "start": 46.509,
+          "end": 46.629
+        },
+        {
+          "id": "caption-word-64-1",
+          "text": "le",
+          "start": 46.729,
+          "end": 46.829
+        }
+      ]
+    },
+    {
+      "id": "caption-group-65",
+      "frame": 4,
+      "start": 46.829,
+      "end": 47.909,
+      "text": "rédige dans Food",
+      "words": [
+        {
+          "id": "caption-word-65-0",
+          "text": "rédige",
+          "start": 46.829,
+          "end": 47.349
+        },
+        {
+          "id": "caption-word-65-1",
+          "text": "dans",
+          "start": 47.459,
+          "end": 47.629
+        },
+        {
+          "id": "caption-word-65-2",
+          "text": "Food",
+          "start": 47.629,
+          "end": 47.869
+        }
+      ]
+    },
+    {
+      "id": "caption-group-66",
+      "frame": 4,
+      "start": 47.909,
+      "end": 48.479,
+      "text": "It Up.",
+      "words": [
+        {
+          "id": "caption-word-66-0",
+          "text": "It",
+          "start": 47.909,
+          "end": 48.009
+        },
+        {
+          "id": "caption-word-66-1",
+          "text": "Up.",
+          "start": 48.059,
+          "end": 48.359
+        }
+      ]
+    },
+    {
+      "id": "caption-group-67",
+      "frame": 5,
+      "start": 48.674,
+      "end": 49.064,
+      "text": "Moins de",
+      "words": [
+        {
+          "id": "caption-word-67-0",
+          "text": "Moins",
+          "start": 48.674,
+          "end": 48.934
+        },
+        {
+          "id": "caption-word-67-1",
+          "text": "de",
+          "start": 48.934,
+          "end": 49.034
+        }
+      ]
+    },
+    {
+      "id": "caption-group-68",
+      "frame": 5,
+      "start": 49.064,
+      "end": 49.584,
+      "text": "saisie,",
+      "words": [
+        {
+          "id": "caption-word-68-0",
+          "text": "saisie,",
+          "start": 49.064,
+          "end": 49.464
+        }
+      ]
+    },
+    {
+      "id": "caption-group-69",
+      "frame": 5,
+      "start": 49.644,
+      "end": 51.084,
+      "text": "démarge enfin maîtriser,",
+      "words": [
+        {
+          "id": "caption-word-69-0",
+          "text": "démarge",
+          "start": 49.644,
+          "end": 49.994
+        },
+        {
+          "id": "caption-word-69-1",
+          "text": "enfin",
+          "start": 50.034,
+          "end": 50.314
+        },
+        {
+          "id": "caption-word-69-2",
+          "text": "maîtriser,",
+          "start": 50.324,
+          "end": 51.074
+        }
+      ]
+    },
+    {
+      "id": "caption-group-70",
+      "frame": 5,
+      "start": 51.084,
+      "end": 52.084,
+      "text": "une compta toujours",
+      "words": [
+        {
+          "id": "caption-word-70-0",
+          "text": "une",
+          "start": 51.084,
+          "end": 51.254
+        },
+        {
+          "id": "caption-word-70-1",
+          "text": "compta",
+          "start": 51.254,
+          "end": 51.614
+        },
+        {
+          "id": "caption-word-70-2",
+          "text": "toujours",
+          "start": 51.614,
+          "end": 52.084
+        }
+      ]
+    },
+    {
+      "id": "caption-group-71",
+      "frame": 5,
+      "start": 52.084,
+      "end": 52.594,
+      "text": "à jour.",
+      "words": [
+        {
+          "id": "caption-word-71-0",
+          "text": "à",
+          "start": 52.084,
+          "end": 52.134
+        },
+        {
+          "id": "caption-word-71-1",
+          "text": "jour.",
+          "start": 52.194,
+          "end": 52.524
+        }
+      ]
+    },
+    {
+      "id": "caption-group-72",
+      "frame": 5,
+      "start": 52.594,
+      "end": 53.414,
+      "text": "Foodit up votre",
+      "words": [
+        {
+          "id": "caption-word-72-0",
+          "text": "Foodit",
+          "start": 52.594,
+          "end": 53.024
+        },
+        {
+          "id": "caption-word-72-1",
+          "text": "up",
+          "start": 53.024,
+          "end": 53.184
+        },
+        {
+          "id": "caption-word-72-2",
+          "text": "votre",
+          "start": 53.184,
+          "end": 53.294
+        }
+      ]
+    },
+    {
+      "id": "caption-group-73",
+      "frame": 5,
+      "start": 53.604,
+      "end": 54.844,
+      "text": "rentabilité sous",
+      "words": [
+        {
+          "id": "caption-word-73-0",
+          "text": "rentabilité",
+          "start": 53.604,
+          "end": 54.494
+        },
+        {
+          "id": "caption-word-73-1",
+          "text": "sous",
+          "start": 54.494,
+          "end": 54.724
+        }
+      ]
+    },
+    {
+      "id": "caption-group-74",
+      "frame": 5,
+      "start": 55.004,
+      "end": 55.734,
+      "text": "contrôle.",
+      "words": [
+        {
+          "id": "caption-word-74-0",
+          "text": "contrôle.",
+          "start": 55.004,
+          "end": 55.614
+        }
+      ]
+    }
+  ]
+}
