@@ -1,0 +1,28 @@
+{
+  "provider": "elevenlabs",
+  "voice": "TGAegA0zNRi8I6nUdq3i",
+  "lang": "fr",
+  "speed": 1.0,
+  "lines": [
+    {
+      "id": "01",
+      "text": "Remplir les plannings, suivre qui pointe, gérer les absences et les remplacements de dernière minute, valider les congés... Manager une équipe en restauration, c'est un casse-tête permanent."
+    },
+    {
+      "id": "02",
+      "text": "FoodEatUp réunit toute la gestion de votre équipe dans un seul module. Planning, pointage et RH, au même endroit."
+    },
+    {
+      "id": "03",
+      "text": "Construisez vos plannings en quelques minutes, suivez les pointages en temps réel, validez les congés et les absences, et centralisez les fiches et les contrats de vos employés. Chaque heure travaillée est enregistrée."
+    },
+    {
+      "id": "04",
+      "text": "Et comme toujours, vous avez le choix. Vous gérez tout depuis le logiciel, ou vous demandez à Claude : planifie Sarah mardi et jeudi, qui travaille ce soir, valide le congé de Marc — et c'est fait, dans FoodEatUp."
+    },
+    {
+      "id": "05",
+      "text": "Des plannings clairs, des pointages fiables, une équipe alignée. FoodEatUp — votre équipe, enfin orchestrée simplement."
+    }
+  ]
+}

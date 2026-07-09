@@ -1,0 +1,6 @@
+# Assets — foodeatup-equipe (générés + réutilisés, pas de capture web)
+- public/planning-chaos.png — chef 3D débordé par le planning (tableau, calendriers, réveils). (Frame 1)
+- public/chef-planning-board.png — chef 3D présentant une grille de planning d'équipe. (Frame 3)
+- public/chef-claude-assistant.png — chef 3D commandant un assistant IA (réutilisé). (Frame 4)
+- public/equipe-tablette.png — trio équipe autour d'une tablette (réutilisé). (Frame 5)
+- public/foodeatup-logo-mascot.png — logo officiel FoodEatUp. (Frames 2, 5)

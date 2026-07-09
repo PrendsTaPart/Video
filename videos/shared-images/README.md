@@ -15,6 +15,8 @@ réutilisables entre les vidéos du studio. Générées via RapidoCMS.
 - `chef-fridge-temp.png` — chef + tablette devant une chambre froide inox (relevé T°)
 - `chef-claude-assistant.png` — chef qui commande un assistant IA (bulle chat + tablette)
 - `chef-kitchen-calm.png` — chef serein, bras croisés, cuisine pro impeccable
+- `planning-chaos.png` — chef débordé par le planning (tableau créneaux, calendriers, réveils)
+- `chef-planning-board.png` — chef présentant une grille de planning d'équipe (avatars/jours/créneaux)
 
 Pour utiliser dans un projet : copier le PNG voulu dans `<projet>/public/`
 (les chemins d'assets HyperFrames sont relatifs à la racine du projet).

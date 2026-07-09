@@ -197,6 +197,31 @@ Le projet peut aussi produire des vidéos ponctuelles hors du système Reels ver
   (`voice_id: TGAegA0zNRi8I6nUdq3i`), français, ton professionnel posé. Clé API dans `.env`
   (`ELEVENLABS_API_KEY`, jamais commitée).
 
+## RÈGLE STANDING — Sauvegarde de CHAQUE vidéo dans RapidoCMS (demandé par Michael 2026-07-09)
+
+**À chaque vidéo générée**, une fois le MP4 rendu, poussé sur GitHub, l'archiver dans la
+**bibliothèque RapidoCMS** (`upload_file_tool` avec `type:"video"`) pour ne perdre aucune
+production. `upload_file_tool` exige une **URL publique** (pas de fichier local) : après avoir
+commité/poussé le MP4, récupérer son `download_url` via `mcp__github__get_file_contents`
+(chemin du .mp4 dans le repo) puis le passer à `upload_file_tool(type:"video", name:"<projet>",
+file_url:"<download_url>")`. C'est une SAUVEGARDE systématique, distincte d'une publication réseaux
+(qui reste sur demande explicite). Rattraper aussi les vidéos déjà rendues non encore archivées.
+
+## Multi-marques — charte par projet (demandé par Michael 2026-07-09)
+
+Le studio sert plusieurs marques de l'agence. **Toujours choisir la charte + le logo selon le
+projet.**
+
+- **FoodEatUp** (charte par défaut actuelle) : fond off-white `#F7F9FC`, texte navy `#1B2A41`,
+  UN accent bleu `#1E9BF0` (vert `#059669` réservé aux coches de validation) ; typo **Poppins**
+  (titres 600-800) + **Inter** (body). Logos : `videos/shared-images/brand/foodeatup-logo-mascot.png`
+  (+ `foodeatup-mark-eight.png`). Personnages 3D cartoon cohérents dans
+  `videos/shared-images/characters/` — **réutiliser** avant d'en générer de nouveaux.
+- **BraindCode** : charte + logo **à fournir plus tard** par Michael. Quand reçus : les stocker
+  dans `videos/shared-images/braindcode/` (brand + éventuels personnages), les documenter ici, et
+  remixer `frame.md` sur ces tokens pour les projets BraindCode. Ne pas réutiliser la charte
+  FoodEatUp pour un projet BraindCode.
+
 ## Publication — RapidoCMS (MCP)
 
 Le serveur MCP **RapidoCMS** (`mcp__RapidoCMS__*`) est connecté et donne accès à la publication
