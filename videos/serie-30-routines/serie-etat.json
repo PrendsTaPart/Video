@@ -3,7 +3,7 @@
  "version": 1,
  "pause": false,
  "_pause_note": "Kill-switch. Reste true tant que : (1) les 30 scripts ne sont pas valides, (2) le pilote E1 n'est pas approuve, (3) la pre-autorisation budgetaire n'est pas ecrite ci-dessous. Passer a false = feu vert pour la routine quotidienne.",
- "episode_courant": 2,
+ "episode_courant": 3,
  "total_episodes": 30,
  "date_debut": "2026-07-11",
  "heure_publication": "08:00:00",
@@ -12,7 +12,7 @@
   "linkedin_account_id": "101119080",
   "linkedin_nom": "BraindCode",
   "tiktok_account_id": "5",
-  "_tiktok_note": "TikTok BraindCode connecté (account_id 5, vérifié 2026-07-10)."
+  "_tiktok_note": "TikTok listé (account_id 5) mais REJETÉ à la publication (create_draft: account invalide). À ré-autoriser avec permission publication, ou fournir l'open_id de publication."
  },
  "budget": {
   "rendu_autorise": true,
@@ -41,6 +41,19 @@
    "date": "2026-07-11",
    "heure": "08:00:00",
    "mika": "HeyGen bd566... vertical"
+  },
+  {
+   "episode": 2,
+   "titre": "C'est quoi un MCP ?",
+   "projet": "videos/serie-30-e02",
+   "duree_s": 35.2,
+   "cms": "Serie 30 routines - E2 Cest quoi un MCP",
+   "linkedin_draft": 430,
+   "scheduled_post": 338,
+   "date": "2026-07-12",
+   "heure": "08:00:00",
+   "outro_reuse": "cta-B-generique",
+   "tiktok": "echec account_id 5 invalide pour publication"
   }
  ],
  "_go": "Michael 2026-07-10 : générer Mika via HeyGen + produire+planifier les 30 (LinkedIn BraindCode ; TikTok en attente de connexion CMS)."
