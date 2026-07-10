@@ -3,7 +3,7 @@
  "version": 1,
  "pause": false,
  "_pause_note": "Kill-switch. Reste true tant que : (1) les 30 scripts ne sont pas valides, (2) le pilote E1 n'est pas approuve, (3) la pre-autorisation budgetaire n'est pas ecrite ci-dessous. Passer a false = feu vert pour la routine quotidienne.",
- "episode_courant": 5,
+ "episode_courant": 6,
  "total_episodes": 30,
  "date_debut": "2026-07-11",
  "heure_publication": "08:00:00",
@@ -78,6 +78,19 @@
    "date": "2026-07-14",
    "heure": "08:00:00",
    "outro_reuse": "cta-A-generique"
+  },
+  {
+   "episode": 5,
+   "titre": "Ton business plan en discutant",
+   "projet": "videos/serie-30-e05",
+   "duree_s": 31.6,
+   "cms": "Serie 30 routines - E5 Ton business plan en discutant",
+   "linkedin_draft": 433,
+   "scheduled_post": 341,
+   "date": "2026-07-15",
+   "heure": "08:00:00",
+   "outro_reuse": "cta-B-generique",
+   "tiktok": "skip - publication refusee"
   }
  ],
  "_go": "Michael 2026-07-10 : générer Mika via HeyGen + produire+planifier les 30 (LinkedIn BraindCode ; TikTok en attente de connexion CMS).",
