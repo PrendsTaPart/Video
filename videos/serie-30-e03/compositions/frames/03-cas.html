@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <title>E3 F3 — 60 réflexes débloqués (portrait)</title>
+  </head>
+  <body>
+    <template>
+      <style>
+        @font-face { font-family: "Poppins"; src: url("assets/fonts/Poppins-600.woff2") format("woff2"); font-weight: 600; }
+        @font-face { font-family: "Poppins"; src: url("assets/fonts/Poppins-700.woff2") format("woff2"); font-weight: 700; }
+        @font-face { font-family: "Poppins"; src: url("assets/fonts/Poppins-800.woff2") format("woff2"); font-weight: 800; }
+        @font-face { font-family: "Inter"; src: url("assets/fonts/Inter-Variable.woff2") format("woff2-variations"); font-weight: 100 900; }
+
+        #root { position: absolute; inset: 0; width: 1080px; height: 1920px; overflow: hidden; font-family: "Poppins", "Inter", sans-serif; color: #1b2a41; isolation: isolate; }
+        .bg { position: absolute; inset: 0; background: #f7f9fc; }
+
+        .eyebrow { position: absolute; left: 0; right: 0; top: 210px; text-align: center; z-index: 4; font-family: "Poppins", sans-serif; font-weight: 700; font-size: 36px; letter-spacing: 0.08em; text-transform: uppercase; color: #5a67f2; opacity: 0; margin: 0; will-change: transform, opacity; }
+        .title { position: absolute; left: 90px; right: 90px; top: 300px; text-align: center; z-index: 4; font-family: "Poppins", sans-serif; font-weight: 800; font-size: 60px; line-height: 1.08; color: #1b2a41; opacity: 0; will-change: transform, opacity; }
+        .title .a { color: #5a67f2; }
+
+        .rows { position: absolute; left: 110px; top: 560px; width: 860px; z-index: 3; display: flex; flex-direction: column; gap: 22px; }
+        .row { display: flex; align-items: center; gap: 24px; background: #fff; border: 1.5px solid rgba(5,150,105,0.22); border-radius: 22px; padding: 28px 34px; opacity: 0; will-change: transform, opacity; }
+        .row .ok { flex: none; width: 64px; height: 64px; border-radius: 50%; background: #059669; display: grid; place-items: center; }
+        .row .ok svg { width: 38px; height: 38px; fill: none; stroke: #fff; stroke-width: 3; stroke-linecap: round; stroke-linejoin: round; }
+        .row b { font-family: "Poppins", sans-serif; font-weight: 700; font-size: 44px; color: #1b2a41; }
+
+        .foot { position: absolute; left: 50%; top: 1500px; transform: translateX(-50%); z-index: 4; display: flex; align-items: center; gap: 18px; padding: 24px 48px; background: #5a67f2; border-radius: 100px; opacity: 0; white-space: nowrap; will-change: transform, opacity; box-shadow: 0 20px 50px rgba(90,103,242,0.35); }
+        .foot b { font-family: "Poppins", sans-serif; font-weight: 800; font-size: 46px; color: #fff; }
+      </style>
+
+      <div id="root" data-composition-id="03-cas" data-width="1080" data-height="1920" data-duration="10.717">
+        <div id="bg-clip" class="clip bg" data-start="0" data-duration="10.217" data-track-index="0"></div>
+        <div id="scene" class="clip" data-start="0" data-duration="10.217" data-track-index="1" style="position:absolute; inset:0;">
+          <p class="eyebrow" id="eyebrow">Léa · ni agence, ni assistant</p>
+          <div class="title" id="title">Son IA sait <span class="a">déjà</span> :</div>
+          <div class="rows">
+            <div class="row" id="r1"><span class="ok"><svg viewBox="0 0 24 24"><path d="M4 12l5 5L20 6" /></svg></span><b>rédiger un devis</b></div>
+            <div class="row" id="r2"><span class="ok"><svg viewBox="0 0 24 24"><path d="M4 12l5 5L20 6" /></svg></span>planifier un post</div>
+            <div class="row" id="r3"><span class="ok"><svg viewBox="0 0 24 24"><path d="M4 12l5 5L20 6" /></svg></span>relancer une facture</div>
+          </div>
+          <div class="foot" id="foot"><b>60 réflexes, débloqués</b></div>
+        </div>
+      </div>
+
+      <script src="assets/vendor/gsap.min.js"></script>
+      <script>
+        window.__timelines = window.__timelines || {};
+        const tl = gsap.timeline({ paused: true });
+        tl.fromTo("#eyebrow", { y: 14, opacity: 0 }, { y: 0, opacity: 1, duration: 0.45, ease: "power3.out" }, 0.1);
+        tl.fromTo("#title", { y: 20, opacity: 0 }, { y: 0, opacity: 1, duration: 0.5, ease: "power3.out" }, 0.5);
+        tl.fromTo("#r1", { x: -18, opacity: 0 }, { x: 0, opacity: 1, duration: 0.44, ease: "power3.out" }, 2.6);
+        tl.fromTo("#r2", { x: -18, opacity: 0 }, { x: 0, opacity: 1, duration: 0.44, ease: "power3.out" }, 4.2);
+        tl.fromTo("#r3", { x: -18, opacity: 0 }, { x: 0, opacity: 1, duration: 0.44, ease: "power3.out" }, 5.8);
+        tl.fromTo("#foot", { y: 18, scale: 0.9, opacity: 0 }, { y: 0, scale: 1, opacity: 1, duration: 0.5, ease: "back.out(1.5)" }, 7.6);
+        window.__timelines["03-cas"] = tl;
+      </script>
+    </template>
+  </body>
+</html>
