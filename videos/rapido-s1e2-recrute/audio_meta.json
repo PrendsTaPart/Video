@@ -1,0 +1,688 @@
+{
+ "voices": [
+  {
+   "frame": 1,
+   "path": "assets/voice/01.wav",
+   "duration_s": 9.221,
+   "words": [
+    {
+     "id": "w0",
+     "text": "Rédiger",
+     "start": 0.0,
+     "end": 0.342
+    },
+    {
+     "id": "w1",
+     "text": "l'annonce,",
+     "start": 0.342,
+     "end": 0.683
+    },
+    {
+     "id": "w2",
+     "text": "préparer",
+     "start": 0.683,
+     "end": 1.025
+    },
+    {
+     "id": "w3",
+     "text": "les",
+     "start": 1.025,
+     "end": 1.366
+    },
+    {
+     "id": "w4",
+     "text": "bonnes",
+     "start": 1.366,
+     "end": 1.708
+    },
+    {
+     "id": "w5",
+     "text": "questions,",
+     "start": 1.708,
+     "end": 2.049
+    },
+    {
+     "id": "w6",
+     "text": "ne",
+     "start": 2.049,
+     "end": 2.391
+    },
+    {
+     "id": "w7",
+     "text": "rien",
+     "start": 2.391,
+     "end": 2.732
+    },
+    {
+     "id": "w8",
+     "text": "oublier...",
+     "start": 2.732,
+     "end": 3.074
+    },
+    {
+     "id": "w9",
+     "text": "recruter,",
+     "start": 3.074,
+     "end": 3.415
+    },
+    {
+     "id": "w10",
+     "text": "ça",
+     "start": 3.415,
+     "end": 3.757
+    },
+    {
+     "id": "w11",
+     "text": "part",
+     "start": 3.757,
+     "end": 4.098
+    },
+    {
+     "id": "w12",
+     "text": "vite",
+     "start": 4.098,
+     "end": 4.44
+    },
+    {
+     "id": "w13",
+     "text": "en",
+     "start": 4.44,
+     "end": 4.781
+    },
+    {
+     "id": "w14",
+     "text": "heures",
+     "start": 4.781,
+     "end": 5.123
+    },
+    {
+     "id": "w15",
+     "text": "perdues.",
+     "start": 5.123,
+     "end": 5.464
+    },
+    {
+     "id": "w16",
+     "text": "Et",
+     "start": 5.464,
+     "end": 5.806
+    },
+    {
+     "id": "w17",
+     "text": "si",
+     "start": 5.806,
+     "end": 6.147
+    },
+    {
+     "id": "w18",
+     "text": "votre",
+     "start": 6.147,
+     "end": 6.489
+    },
+    {
+     "id": "w19",
+     "text": "kit",
+     "start": 6.489,
+     "end": 6.831
+    },
+    {
+     "id": "w20",
+     "text": "d'embauche",
+     "start": 6.831,
+     "end": 7.172
+    },
+    {
+     "id": "w21",
+     "text": "se",
+     "start": 7.172,
+     "end": 7.514
+    },
+    {
+     "id": "w22",
+     "text": "préparait",
+     "start": 7.514,
+     "end": 7.855
+    },
+    {
+     "id": "w23",
+     "text": "en",
+     "start": 7.855,
+     "end": 8.197
+    },
+    {
+     "id": "w24",
+     "text": "une",
+     "start": 8.197,
+     "end": 8.538
+    },
+    {
+     "id": "w25",
+     "text": "phrase",
+     "start": 8.538,
+     "end": 8.88
+    },
+    {
+     "id": "w26",
+     "text": "?",
+     "start": 8.88,
+     "end": 9.221
+    }
+   ]
+  },
+  {
+   "frame": 2,
+   "path": "assets/voice/02.wav",
+   "duration_s": 6.713,
+   "words": [
+    {
+     "id": "w0",
+     "text": "Avec",
+     "start": 0.0,
+     "end": 0.336
+    },
+    {
+     "id": "w1",
+     "text": "RapidoRH",
+     "start": 0.336,
+     "end": 0.671
+    },
+    {
+     "id": "w2",
+     "text": "et",
+     "start": 0.671,
+     "end": 1.007
+    },
+    {
+     "id": "w3",
+     "text": "le",
+     "start": 1.007,
+     "end": 1.343
+    },
+    {
+     "id": "w4",
+     "text": "plugin",
+     "start": 1.343,
+     "end": 1.678
+    },
+    {
+     "id": "w5",
+     "text": "Claude,",
+     "start": 1.678,
+     "end": 2.014
+    },
+    {
+     "id": "w6",
+     "text": "votre",
+     "start": 2.014,
+     "end": 2.35
+    },
+    {
+     "id": "w7",
+     "text": "recrutement",
+     "start": 2.35,
+     "end": 2.685
+    },
+    {
+     "id": "w8",
+     "text": "se",
+     "start": 2.685,
+     "end": 3.021
+    },
+    {
+     "id": "w9",
+     "text": "pilote",
+     "start": 3.021,
+     "end": 3.357
+    },
+    {
+     "id": "w10",
+     "text": "en",
+     "start": 3.357,
+     "end": 3.692
+    },
+    {
+     "id": "w11",
+     "text": "parlant.",
+     "start": 3.692,
+     "end": 4.028
+    },
+    {
+     "id": "w12",
+     "text": "Un",
+     "start": 4.028,
+     "end": 4.364
+    },
+    {
+     "id": "w13",
+     "text": "skill",
+     "start": 4.364,
+     "end": 4.699
+    },
+    {
+     "id": "w14",
+     "text": "dédié",
+     "start": 4.699,
+     "end": 5.035
+    },
+    {
+     "id": "w15",
+     "text": "prépare",
+     "start": 5.035,
+     "end": 5.371
+    },
+    {
+     "id": "w16",
+     "text": "tout",
+     "start": 5.371,
+     "end": 5.706
+    },
+    {
+     "id": "w17",
+     "text": "le",
+     "start": 5.706,
+     "end": 6.042
+    },
+    {
+     "id": "w18",
+     "text": "kit",
+     "start": 6.042,
+     "end": 6.378
+    },
+    {
+     "id": "w19",
+     "text": "d'embauche.",
+     "start": 6.378,
+     "end": 6.713
+    }
+   ]
+  },
+  {
+   "frame": 3,
+   "path": "assets/voice/03.wav",
+   "duration_s": 6.687,
+   "words": [
+    {
+     "id": "w0",
+     "text": "Fiche",
+     "start": 0.0,
+     "end": 0.352
+    },
+    {
+     "id": "w1",
+     "text": "de",
+     "start": 0.352,
+     "end": 0.704
+    },
+    {
+     "id": "w2",
+     "text": "poste,",
+     "start": 0.704,
+     "end": 1.056
+    },
+    {
+     "id": "w3",
+     "text": "missions,",
+     "start": 1.056,
+     "end": 1.408
+    },
+    {
+     "id": "w4",
+     "text": "profil",
+     "start": 1.408,
+     "end": 1.76
+    },
+    {
+     "id": "w5",
+     "text": "recherché,",
+     "start": 1.76,
+     "end": 2.112
+    },
+    {
+     "id": "w6",
+     "text": "et",
+     "start": 2.112,
+     "end": 2.464
+    },
+    {
+     "id": "w7",
+     "text": "grille",
+     "start": 2.464,
+     "end": 2.816
+    },
+    {
+     "id": "w8",
+     "text": "d'entretien",
+     "start": 2.816,
+     "end": 3.168
+    },
+    {
+     "id": "w9",
+     "text": "notée",
+     "start": 3.168,
+     "end": 3.52
+    },
+    {
+     "id": "w10",
+     "text": ":",
+     "start": 3.52,
+     "end": 3.872
+    },
+    {
+     "id": "w11",
+     "text": "le",
+     "start": 3.872,
+     "end": 4.224
+    },
+    {
+     "id": "w12",
+     "text": "kit",
+     "start": 4.224,
+     "end": 4.576
+    },
+    {
+     "id": "w13",
+     "text": "de",
+     "start": 4.576,
+     "end": 4.928
+    },
+    {
+     "id": "w14",
+     "text": "recrutement",
+     "start": 4.928,
+     "end": 5.279
+    },
+    {
+     "id": "w15",
+     "text": "complet,",
+     "start": 5.279,
+     "end": 5.631
+    },
+    {
+     "id": "w16",
+     "text": "prêt",
+     "start": 5.631,
+     "end": 5.983
+    },
+    {
+     "id": "w17",
+     "text": "à",
+     "start": 5.983,
+     "end": 6.335
+    },
+    {
+     "id": "w18",
+     "text": "l'emploi.",
+     "start": 6.335,
+     "end": 6.687
+    }
+   ]
+  },
+  {
+   "frame": 4,
+   "path": "assets/voice/04.wav",
+   "duration_s": 8.176,
+   "words": [
+    {
+     "id": "w0",
+     "text": "Vous",
+     "start": 0.0,
+     "end": 0.303
+    },
+    {
+     "id": "w1",
+     "text": "dites",
+     "start": 0.303,
+     "end": 0.606
+    },
+    {
+     "id": "w2",
+     "text": ":",
+     "start": 0.606,
+     "end": 0.908
+    },
+    {
+     "id": "w3",
+     "text": "prépare",
+     "start": 0.908,
+     "end": 1.211
+    },
+    {
+     "id": "w4",
+     "text": "le",
+     "start": 1.211,
+     "end": 1.514
+    },
+    {
+     "id": "w5",
+     "text": "kit",
+     "start": 1.514,
+     "end": 1.817
+    },
+    {
+     "id": "w6",
+     "text": "d'embauche",
+     "start": 1.817,
+     "end": 2.12
+    },
+    {
+     "id": "w7",
+     "text": "pour",
+     "start": 2.12,
+     "end": 2.423
+    },
+    {
+     "id": "w8",
+     "text": "un",
+     "start": 2.423,
+     "end": 2.725
+    },
+    {
+     "id": "w9",
+     "text": "chef",
+     "start": 2.725,
+     "end": 3.028
+    },
+    {
+     "id": "w10",
+     "text": "de",
+     "start": 3.028,
+     "end": 3.331
+    },
+    {
+     "id": "w11",
+     "text": "rang.",
+     "start": 3.331,
+     "end": 3.634
+    },
+    {
+     "id": "w12",
+     "text": "Claude",
+     "start": 3.634,
+     "end": 3.937
+    },
+    {
+     "id": "w13",
+     "text": "rédige",
+     "start": 3.937,
+     "end": 4.24
+    },
+    {
+     "id": "w14",
+     "text": "la",
+     "start": 4.24,
+     "end": 4.542
+    },
+    {
+     "id": "w15",
+     "text": "fiche",
+     "start": 4.542,
+     "end": 4.845
+    },
+    {
+     "id": "w16",
+     "text": "de",
+     "start": 4.845,
+     "end": 5.148
+    },
+    {
+     "id": "w17",
+     "text": "poste",
+     "start": 5.148,
+     "end": 5.451
+    },
+    {
+     "id": "w18",
+     "text": "et",
+     "start": 5.451,
+     "end": 5.754
+    },
+    {
+     "id": "w19",
+     "text": "la",
+     "start": 5.754,
+     "end": 6.057
+    },
+    {
+     "id": "w20",
+     "text": "grille",
+     "start": 6.057,
+     "end": 6.359
+    },
+    {
+     "id": "w21",
+     "text": "d'entretien.",
+     "start": 6.359,
+     "end": 6.662
+    },
+    {
+     "id": "w22",
+     "text": "Et",
+     "start": 6.662,
+     "end": 6.965
+    },
+    {
+     "id": "w23",
+     "text": "c'est",
+     "start": 6.965,
+     "end": 7.268
+    },
+    {
+     "id": "w24",
+     "text": "prêt,",
+     "start": 7.268,
+     "end": 7.571
+    },
+    {
+     "id": "w25",
+     "text": "dans",
+     "start": 7.571,
+     "end": 7.874
+    },
+    {
+     "id": "w26",
+     "text": "RapidoRH.",
+     "start": 7.874,
+     "end": 8.176
+    }
+   ]
+  },
+  {
+   "frame": 5,
+   "path": "assets/voice/05.wav",
+   "duration_s": 4.505,
+   "words": [
+    {
+     "id": "w0",
+     "text": "Recruté",
+     "start": 0.0,
+     "end": 0.322
+    },
+    {
+     "id": "w1",
+     "text": "en",
+     "start": 0.322,
+     "end": 0.644
+    },
+    {
+     "id": "w2",
+     "text": "Rapido.",
+     "start": 0.644,
+     "end": 0.965
+    },
+    {
+     "id": "w3",
+     "text": "RapidoRH",
+     "start": 0.965,
+     "end": 1.287
+    },
+    {
+     "id": "w4",
+     "text": ":",
+     "start": 1.287,
+     "end": 1.609
+    },
+    {
+     "id": "w5",
+     "text": "de",
+     "start": 1.609,
+     "end": 1.931
+    },
+    {
+     "id": "w6",
+     "text": "l'annonce",
+     "start": 1.931,
+     "end": 2.252
+    },
+    {
+     "id": "w7",
+     "text": "à",
+     "start": 2.252,
+     "end": 2.574
+    },
+    {
+     "id": "w8",
+     "text": "l'entretien,",
+     "start": 2.574,
+     "end": 2.896
+    },
+    {
+     "id": "w9",
+     "text": "sans",
+     "start": 2.896,
+     "end": 3.218
+    },
+    {
+     "id": "w10",
+     "text": "y",
+     "start": 3.218,
+     "end": 3.539
+    },
+    {
+     "id": "w11",
+     "text": "passer",
+     "start": 3.539,
+     "end": 3.861
+    },
+    {
+     "id": "w12",
+     "text": "vos",
+     "start": 3.861,
+     "end": 4.183
+    },
+    {
+     "id": "w13",
+     "text": "soirées.",
+     "start": 4.183,
+     "end": 4.505
+    }
+   ]
+  }
+ ],
+ "bgm": {
+  "path": "assets/bgm/track.mp3",
+  "volume": 0.18,
+  "query": "calm reassuring corporate underscore",
+  "duration_s": 36
+ },
+ "sfx": []
+}

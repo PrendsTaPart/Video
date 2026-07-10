@@ -1,0 +1,1048 @@
+{
+  "total_duration_s": 35.302,
+  "width": 1080,
+  "height": 1920,
+  "groups": [
+    {
+      "id": "caption-group-0",
+      "frame": 1,
+      "start": 0,
+      "end": 0.683,
+      "text": "Rédiger l'annonce,",
+      "words": [
+        {
+          "id": "caption-word-0-0",
+          "text": "Rédiger",
+          "start": 0,
+          "end": 0.342
+        },
+        {
+          "id": "caption-word-0-1",
+          "text": "l'annonce,",
+          "start": 0.342,
+          "end": 0.683
+        }
+      ]
+    },
+    {
+      "id": "caption-group-1",
+      "frame": 1,
+      "start": 0.683,
+      "end": 1.708,
+      "text": "préparer les bonnes",
+      "words": [
+        {
+          "id": "caption-word-1-0",
+          "text": "préparer",
+          "start": 0.683,
+          "end": 1.025
+        },
+        {
+          "id": "caption-word-1-1",
+          "text": "les",
+          "start": 1.025,
+          "end": 1.366
+        },
+        {
+          "id": "caption-word-1-2",
+          "text": "bonnes",
+          "start": 1.366,
+          "end": 1.708
+        }
+      ]
+    },
+    {
+      "id": "caption-group-2",
+      "frame": 1,
+      "start": 1.708,
+      "end": 2.049,
+      "text": "questions,",
+      "words": [
+        {
+          "id": "caption-word-2-0",
+          "text": "questions,",
+          "start": 1.708,
+          "end": 2.049
+        }
+      ]
+    },
+    {
+      "id": "caption-group-3",
+      "frame": 1,
+      "start": 2.049,
+      "end": 3.074,
+      "text": "ne rien oublier...",
+      "words": [
+        {
+          "id": "caption-word-3-0",
+          "text": "ne",
+          "start": 2.049,
+          "end": 2.391
+        },
+        {
+          "id": "caption-word-3-1",
+          "text": "rien",
+          "start": 2.391,
+          "end": 2.732
+        },
+        {
+          "id": "caption-word-3-2",
+          "text": "oublier...",
+          "start": 2.732,
+          "end": 3.074
+        }
+      ]
+    },
+    {
+      "id": "caption-group-4",
+      "frame": 1,
+      "start": 3.074,
+      "end": 3.415,
+      "text": "recruter,",
+      "words": [
+        {
+          "id": "caption-word-4-0",
+          "text": "recruter,",
+          "start": 3.074,
+          "end": 3.415
+        }
+      ]
+    },
+    {
+      "id": "caption-group-5",
+      "frame": 1,
+      "start": 3.415,
+      "end": 4.44,
+      "text": "ça part vite",
+      "words": [
+        {
+          "id": "caption-word-5-0",
+          "text": "ça",
+          "start": 3.415,
+          "end": 3.757
+        },
+        {
+          "id": "caption-word-5-1",
+          "text": "part",
+          "start": 3.757,
+          "end": 4.098
+        },
+        {
+          "id": "caption-word-5-2",
+          "text": "vite",
+          "start": 4.098,
+          "end": 4.44
+        }
+      ]
+    },
+    {
+      "id": "caption-group-6",
+      "frame": 1,
+      "start": 4.44,
+      "end": 5.464,
+      "text": "en heures perdues.",
+      "words": [
+        {
+          "id": "caption-word-6-0",
+          "text": "en",
+          "start": 4.44,
+          "end": 4.781
+        },
+        {
+          "id": "caption-word-6-1",
+          "text": "heures",
+          "start": 4.781,
+          "end": 5.123
+        },
+        {
+          "id": "caption-word-6-2",
+          "text": "perdues.",
+          "start": 5.123,
+          "end": 5.464
+        }
+      ]
+    },
+    {
+      "id": "caption-group-7",
+      "frame": 1,
+      "start": 5.464,
+      "end": 6.489,
+      "text": "Et si votre",
+      "words": [
+        {
+          "id": "caption-word-7-0",
+          "text": "Et",
+          "start": 5.464,
+          "end": 5.806
+        },
+        {
+          "id": "caption-word-7-1",
+          "text": "si",
+          "start": 5.806,
+          "end": 6.147
+        },
+        {
+          "id": "caption-word-7-2",
+          "text": "votre",
+          "start": 6.147,
+          "end": 6.489
+        }
+      ]
+    },
+    {
+      "id": "caption-group-8",
+      "frame": 1,
+      "start": 6.489,
+      "end": 7.514,
+      "text": "kit d'embauche se",
+      "words": [
+        {
+          "id": "caption-word-8-0",
+          "text": "kit",
+          "start": 6.489,
+          "end": 6.831
+        },
+        {
+          "id": "caption-word-8-1",
+          "text": "d'embauche",
+          "start": 6.831,
+          "end": 7.172
+        },
+        {
+          "id": "caption-word-8-2",
+          "text": "se",
+          "start": 7.172,
+          "end": 7.514
+        }
+      ]
+    },
+    {
+      "id": "caption-group-9",
+      "frame": 1,
+      "start": 7.514,
+      "end": 8.538,
+      "text": "préparait en une",
+      "words": [
+        {
+          "id": "caption-word-9-0",
+          "text": "préparait",
+          "start": 7.514,
+          "end": 7.855
+        },
+        {
+          "id": "caption-word-9-1",
+          "text": "en",
+          "start": 7.855,
+          "end": 8.197
+        },
+        {
+          "id": "caption-word-9-2",
+          "text": "une",
+          "start": 8.197,
+          "end": 8.538
+        }
+      ]
+    },
+    {
+      "id": "caption-group-10",
+      "frame": 1,
+      "start": 8.538,
+      "end": 9,
+      "text": "phrase",
+      "words": [
+        {
+          "id": "caption-word-10-0",
+          "text": "phrase",
+          "start": 8.538,
+          "end": 8.88
+        }
+      ]
+    },
+    {
+      "id": "caption-group-11",
+      "frame": 2,
+      "start": 9.221,
+      "end": 10.228,
+      "text": "Avec RapidoRH et",
+      "words": [
+        {
+          "id": "caption-word-11-0",
+          "text": "Avec",
+          "start": 9.221,
+          "end": 9.557
+        },
+        {
+          "id": "caption-word-11-1",
+          "text": "RapidoRH",
+          "start": 9.557,
+          "end": 9.892
+        },
+        {
+          "id": "caption-word-11-2",
+          "text": "et",
+          "start": 9.892,
+          "end": 10.228
+        }
+      ]
+    },
+    {
+      "id": "caption-group-12",
+      "frame": 2,
+      "start": 10.228,
+      "end": 11.235,
+      "text": "le plugin Claude,",
+      "words": [
+        {
+          "id": "caption-word-12-0",
+          "text": "le",
+          "start": 10.228,
+          "end": 10.564
+        },
+        {
+          "id": "caption-word-12-1",
+          "text": "plugin",
+          "start": 10.564,
+          "end": 10.899
+        },
+        {
+          "id": "caption-word-12-2",
+          "text": "Claude,",
+          "start": 10.899,
+          "end": 11.235
+        }
+      ]
+    },
+    {
+      "id": "caption-group-13",
+      "frame": 2,
+      "start": 11.235,
+      "end": 12.242,
+      "text": "votre recrutement se",
+      "words": [
+        {
+          "id": "caption-word-13-0",
+          "text": "votre",
+          "start": 11.235,
+          "end": 11.571
+        },
+        {
+          "id": "caption-word-13-1",
+          "text": "recrutement",
+          "start": 11.571,
+          "end": 11.906
+        },
+        {
+          "id": "caption-word-13-2",
+          "text": "se",
+          "start": 11.906,
+          "end": 12.242
+        }
+      ]
+    },
+    {
+      "id": "caption-group-14",
+      "frame": 2,
+      "start": 12.242,
+      "end": 13.249,
+      "text": "pilote en parlant.",
+      "words": [
+        {
+          "id": "caption-word-14-0",
+          "text": "pilote",
+          "start": 12.242,
+          "end": 12.578
+        },
+        {
+          "id": "caption-word-14-1",
+          "text": "en",
+          "start": 12.578,
+          "end": 12.913
+        },
+        {
+          "id": "caption-word-14-2",
+          "text": "parlant.",
+          "start": 12.913,
+          "end": 13.249
+        }
+      ]
+    },
+    {
+      "id": "caption-group-15",
+      "frame": 2,
+      "start": 13.249,
+      "end": 14.256,
+      "text": "Un skill dédié",
+      "words": [
+        {
+          "id": "caption-word-15-0",
+          "text": "Un",
+          "start": 13.249,
+          "end": 13.585
+        },
+        {
+          "id": "caption-word-15-1",
+          "text": "skill",
+          "start": 13.585,
+          "end": 13.92
+        },
+        {
+          "id": "caption-word-15-2",
+          "text": "dédié",
+          "start": 13.92,
+          "end": 14.256
+        }
+      ]
+    },
+    {
+      "id": "caption-group-16",
+      "frame": 2,
+      "start": 14.256,
+      "end": 15.263,
+      "text": "prépare tout le",
+      "words": [
+        {
+          "id": "caption-word-16-0",
+          "text": "prépare",
+          "start": 14.256,
+          "end": 14.592
+        },
+        {
+          "id": "caption-word-16-1",
+          "text": "tout",
+          "start": 14.592,
+          "end": 14.927
+        },
+        {
+          "id": "caption-word-16-2",
+          "text": "le",
+          "start": 14.927,
+          "end": 15.263
+        }
+      ]
+    },
+    {
+      "id": "caption-group-17",
+      "frame": 2,
+      "start": 15.263,
+      "end": 15.934,
+      "text": "kit d'embauche.",
+      "words": [
+        {
+          "id": "caption-word-17-0",
+          "text": "kit",
+          "start": 15.263,
+          "end": 15.599
+        },
+        {
+          "id": "caption-word-17-1",
+          "text": "d'embauche.",
+          "start": 15.599,
+          "end": 15.934
+        }
+      ]
+    },
+    {
+      "id": "caption-group-18",
+      "frame": 3,
+      "start": 15.934,
+      "end": 16.99,
+      "text": "Fiche de poste,",
+      "words": [
+        {
+          "id": "caption-word-18-0",
+          "text": "Fiche",
+          "start": 15.934,
+          "end": 16.286
+        },
+        {
+          "id": "caption-word-18-1",
+          "text": "de",
+          "start": 16.286,
+          "end": 16.638
+        },
+        {
+          "id": "caption-word-18-2",
+          "text": "poste,",
+          "start": 16.638,
+          "end": 16.99
+        }
+      ]
+    },
+    {
+      "id": "caption-group-19",
+      "frame": 3,
+      "start": 16.99,
+      "end": 17.342,
+      "text": "missions,",
+      "words": [
+        {
+          "id": "caption-word-19-0",
+          "text": "missions,",
+          "start": 16.99,
+          "end": 17.342
+        }
+      ]
+    },
+    {
+      "id": "caption-group-20",
+      "frame": 3,
+      "start": 17.342,
+      "end": 18.046,
+      "text": "profil recherché,",
+      "words": [
+        {
+          "id": "caption-word-20-0",
+          "text": "profil",
+          "start": 17.342,
+          "end": 17.694
+        },
+        {
+          "id": "caption-word-20-1",
+          "text": "recherché,",
+          "start": 17.694,
+          "end": 18.046
+        }
+      ]
+    },
+    {
+      "id": "caption-group-21",
+      "frame": 3,
+      "start": 18.046,
+      "end": 19.102,
+      "text": "et grille d'entretien",
+      "words": [
+        {
+          "id": "caption-word-21-0",
+          "text": "et",
+          "start": 18.046,
+          "end": 18.398
+        },
+        {
+          "id": "caption-word-21-1",
+          "text": "grille",
+          "start": 18.398,
+          "end": 18.75
+        },
+        {
+          "id": "caption-word-21-2",
+          "text": "d'entretien",
+          "start": 18.75,
+          "end": 19.102
+        }
+      ]
+    },
+    {
+      "id": "caption-group-22",
+      "frame": 3,
+      "start": 19.102,
+      "end": 19.574,
+      "text": "notée",
+      "words": [
+        {
+          "id": "caption-word-22-0",
+          "text": "notée",
+          "start": 19.102,
+          "end": 19.454
+        }
+      ]
+    },
+    {
+      "id": "caption-group-23",
+      "frame": 3,
+      "start": 19.806,
+      "end": 20.862,
+      "text": "le kit de",
+      "words": [
+        {
+          "id": "caption-word-23-0",
+          "text": "le",
+          "start": 19.806,
+          "end": 20.158
+        },
+        {
+          "id": "caption-word-23-1",
+          "text": "kit",
+          "start": 20.158,
+          "end": 20.51
+        },
+        {
+          "id": "caption-word-23-2",
+          "text": "de",
+          "start": 20.51,
+          "end": 20.862
+        }
+      ]
+    },
+    {
+      "id": "caption-group-24",
+      "frame": 3,
+      "start": 20.862,
+      "end": 21.565,
+      "text": "recrutement complet,",
+      "words": [
+        {
+          "id": "caption-word-24-0",
+          "text": "recrutement",
+          "start": 20.862,
+          "end": 21.213
+        },
+        {
+          "id": "caption-word-24-1",
+          "text": "complet,",
+          "start": 21.213,
+          "end": 21.565
+        }
+      ]
+    },
+    {
+      "id": "caption-group-25",
+      "frame": 3,
+      "start": 21.565,
+      "end": 22.621,
+      "text": "prêt à l'emploi.",
+      "words": [
+        {
+          "id": "caption-word-25-0",
+          "text": "prêt",
+          "start": 21.565,
+          "end": 21.917
+        },
+        {
+          "id": "caption-word-25-1",
+          "text": "à",
+          "start": 21.917,
+          "end": 22.269
+        },
+        {
+          "id": "caption-word-25-2",
+          "text": "l'emploi.",
+          "start": 22.269,
+          "end": 22.621
+        }
+      ]
+    },
+    {
+      "id": "caption-group-26",
+      "frame": 4,
+      "start": 22.621,
+      "end": 23.347,
+      "text": "Vous dites",
+      "words": [
+        {
+          "id": "caption-word-26-0",
+          "text": "Vous",
+          "start": 22.621,
+          "end": 22.924
+        },
+        {
+          "id": "caption-word-26-1",
+          "text": "dites",
+          "start": 22.924,
+          "end": 23.227
+        }
+      ]
+    },
+    {
+      "id": "caption-group-27",
+      "frame": 4,
+      "start": 23.529,
+      "end": 24.135,
+      "text": "prépare le",
+      "words": [
+        {
+          "id": "caption-word-27-0",
+          "text": "prépare",
+          "start": 23.529,
+          "end": 23.832
+        },
+        {
+          "id": "caption-word-27-1",
+          "text": "le",
+          "start": 23.832,
+          "end": 24.135
+        }
+      ]
+    },
+    {
+      "id": "caption-group-28",
+      "frame": 4,
+      "start": 24.135,
+      "end": 24.741,
+      "text": "kit d'embauche",
+      "words": [
+        {
+          "id": "caption-word-28-0",
+          "text": "kit",
+          "start": 24.135,
+          "end": 24.438
+        },
+        {
+          "id": "caption-word-28-1",
+          "text": "d'embauche",
+          "start": 24.438,
+          "end": 24.741
+        }
+      ]
+    },
+    {
+      "id": "caption-group-29",
+      "frame": 4,
+      "start": 24.741,
+      "end": 25.346,
+      "text": "pour un",
+      "words": [
+        {
+          "id": "caption-word-29-0",
+          "text": "pour",
+          "start": 24.741,
+          "end": 25.044
+        },
+        {
+          "id": "caption-word-29-1",
+          "text": "un",
+          "start": 25.044,
+          "end": 25.346
+        }
+      ]
+    },
+    {
+      "id": "caption-group-30",
+      "frame": 4,
+      "start": 25.346,
+      "end": 25.952,
+      "text": "chef de",
+      "words": [
+        {
+          "id": "caption-word-30-0",
+          "text": "chef",
+          "start": 25.346,
+          "end": 25.649
+        },
+        {
+          "id": "caption-word-30-1",
+          "text": "de",
+          "start": 25.649,
+          "end": 25.952
+        }
+      ]
+    },
+    {
+      "id": "caption-group-31",
+      "frame": 4,
+      "start": 25.952,
+      "end": 26.255,
+      "text": "rang.",
+      "words": [
+        {
+          "id": "caption-word-31-0",
+          "text": "rang.",
+          "start": 25.952,
+          "end": 26.255
+        }
+      ]
+    },
+    {
+      "id": "caption-group-32",
+      "frame": 4,
+      "start": 26.255,
+      "end": 26.861,
+      "text": "Claude rédige",
+      "words": [
+        {
+          "id": "caption-word-32-0",
+          "text": "Claude",
+          "start": 26.255,
+          "end": 26.558
+        },
+        {
+          "id": "caption-word-32-1",
+          "text": "rédige",
+          "start": 26.558,
+          "end": 26.861
+        }
+      ]
+    },
+    {
+      "id": "caption-group-33",
+      "frame": 4,
+      "start": 26.861,
+      "end": 27.466,
+      "text": "la fiche",
+      "words": [
+        {
+          "id": "caption-word-33-0",
+          "text": "la",
+          "start": 26.861,
+          "end": 27.163
+        },
+        {
+          "id": "caption-word-33-1",
+          "text": "fiche",
+          "start": 27.163,
+          "end": 27.466
+        }
+      ]
+    },
+    {
+      "id": "caption-group-34",
+      "frame": 4,
+      "start": 27.466,
+      "end": 28.072,
+      "text": "de poste",
+      "words": [
+        {
+          "id": "caption-word-34-0",
+          "text": "de",
+          "start": 27.466,
+          "end": 27.769
+        },
+        {
+          "id": "caption-word-34-1",
+          "text": "poste",
+          "start": 27.769,
+          "end": 28.072
+        }
+      ]
+    },
+    {
+      "id": "caption-group-35",
+      "frame": 4,
+      "start": 28.072,
+      "end": 28.678,
+      "text": "et la",
+      "words": [
+        {
+          "id": "caption-word-35-0",
+          "text": "et",
+          "start": 28.072,
+          "end": 28.375
+        },
+        {
+          "id": "caption-word-35-1",
+          "text": "la",
+          "start": 28.375,
+          "end": 28.678
+        }
+      ]
+    },
+    {
+      "id": "caption-group-36",
+      "frame": 4,
+      "start": 28.678,
+      "end": 29.283,
+      "text": "grille d'entretien.",
+      "words": [
+        {
+          "id": "caption-word-36-0",
+          "text": "grille",
+          "start": 28.678,
+          "end": 28.98
+        },
+        {
+          "id": "caption-word-36-1",
+          "text": "d'entretien.",
+          "start": 28.98,
+          "end": 29.283
+        }
+      ]
+    },
+    {
+      "id": "caption-group-37",
+      "frame": 4,
+      "start": 29.283,
+      "end": 29.889,
+      "text": "Et c'est",
+      "words": [
+        {
+          "id": "caption-word-37-0",
+          "text": "Et",
+          "start": 29.283,
+          "end": 29.586
+        },
+        {
+          "id": "caption-word-37-1",
+          "text": "c'est",
+          "start": 29.586,
+          "end": 29.889
+        }
+      ]
+    },
+    {
+      "id": "caption-group-38",
+      "frame": 4,
+      "start": 29.889,
+      "end": 30.192,
+      "text": "prêt,",
+      "words": [
+        {
+          "id": "caption-word-38-0",
+          "text": "prêt,",
+          "start": 29.889,
+          "end": 30.192
+        }
+      ]
+    },
+    {
+      "id": "caption-group-39",
+      "frame": 4,
+      "start": 30.192,
+      "end": 30.797,
+      "text": "dans RapidoRH.",
+      "words": [
+        {
+          "id": "caption-word-39-0",
+          "text": "dans",
+          "start": 30.192,
+          "end": 30.495
+        },
+        {
+          "id": "caption-word-39-1",
+          "text": "RapidoRH.",
+          "start": 30.495,
+          "end": 30.797
+        }
+      ]
+    },
+    {
+      "id": "caption-group-40",
+      "frame": 5,
+      "start": 30.797,
+      "end": 31.441,
+      "text": "Recruté en",
+      "words": [
+        {
+          "id": "caption-word-40-0",
+          "text": "Recruté",
+          "start": 30.797,
+          "end": 31.119
+        },
+        {
+          "id": "caption-word-40-1",
+          "text": "en",
+          "start": 31.119,
+          "end": 31.441
+        }
+      ]
+    },
+    {
+      "id": "caption-group-41",
+      "frame": 5,
+      "start": 31.441,
+      "end": 31.762,
+      "text": "Rapido.",
+      "words": [
+        {
+          "id": "caption-word-41-0",
+          "text": "Rapido.",
+          "start": 31.441,
+          "end": 31.762
+        }
+      ]
+    },
+    {
+      "id": "caption-group-42",
+      "frame": 5,
+      "start": 31.762,
+      "end": 32.204,
+      "text": "RapidoRH",
+      "words": [
+        {
+          "id": "caption-word-42-0",
+          "text": "RapidoRH",
+          "start": 31.762,
+          "end": 32.084
+        }
+      ]
+    },
+    {
+      "id": "caption-group-43",
+      "frame": 5,
+      "start": 32.406,
+      "end": 33.049,
+      "text": "de l'annonce",
+      "words": [
+        {
+          "id": "caption-word-43-0",
+          "text": "de",
+          "start": 32.406,
+          "end": 32.728
+        },
+        {
+          "id": "caption-word-43-1",
+          "text": "l'annonce",
+          "start": 32.728,
+          "end": 33.049
+        }
+      ]
+    },
+    {
+      "id": "caption-group-44",
+      "frame": 5,
+      "start": 33.049,
+      "end": 33.693,
+      "text": "à l'entretien,",
+      "words": [
+        {
+          "id": "caption-word-44-0",
+          "text": "à",
+          "start": 33.049,
+          "end": 33.371
+        },
+        {
+          "id": "caption-word-44-1",
+          "text": "l'entretien,",
+          "start": 33.371,
+          "end": 33.693
+        }
+      ]
+    },
+    {
+      "id": "caption-group-45",
+      "frame": 5,
+      "start": 33.693,
+      "end": 34.336,
+      "text": "sans y",
+      "words": [
+        {
+          "id": "caption-word-45-0",
+          "text": "sans",
+          "start": 33.693,
+          "end": 34.015
+        },
+        {
+          "id": "caption-word-45-1",
+          "text": "y",
+          "start": 34.015,
+          "end": 34.336
+        }
+      ]
+    },
+    {
+      "id": "caption-group-46",
+      "frame": 5,
+      "start": 34.336,
+      "end": 35.422,
+      "text": "passer vos soirées.",
+      "words": [
+        {
+          "id": "caption-word-46-0",
+          "text": "passer",
+          "start": 34.336,
+          "end": 34.658
+        },
+        {
+          "id": "caption-word-46-1",
+          "text": "vos",
+          "start": 34.658,
+          "end": 34.98
+        },
+        {
+          "id": "caption-word-46-2",
+          "text": "soirées.",
+          "start": 34.98,
+          "end": 35.302
+        }
+      ]
+    }
+  ]
+}

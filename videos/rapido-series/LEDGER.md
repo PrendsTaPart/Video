@@ -5,7 +5,6 @@ Détail de chaque épisode (prompt + résultat) : `videos/rapido-series/CALENDAR
 Après production : déplacer la ligne dans FAIT (avec date + chemin projet).
 
 ## FILE (à produire, dans l'ordre)
-- [ ] S1E2 · Recruté en Rapido (job-post-builder)
 - [ ] S1E3 · Onboardé en Rapido (onboarding-equipe)
 - [ ] S1E4 · Le projet monté en Rapido (setup-projet + flux-kanban)
 - [ ] S1E5 · Le daily en Rapido (daily-report + detection-surcharge)
@@ -35,6 +34,7 @@ Après production : déplacer la ligne dans FAIT (avec date + chemin projet).
 
 ## FAIT
 - S1E1 · RapidoRH — la RH en Rapido → videos/rapido-s1e1-rapidorh — 2026-07-10 · publié LinkedIn RapidoSoftware programmé 16h00 (post #335)
+- S1E2 · Recruté en Rapido (job-post-builder) → videos/rapido-s1e2-recrute — 2026-07-10 · 35s vertical · archivé CMS + brouillon LinkedIn RapidoSoftware programmé 16h00
 
 ## Publication — RÈGLE ARRÊTÉE (Michael, 2026-07-10)
 **Compte : LinkedIn RapidoSoftware `101119107`. Programmation : chaque jour à 16:00:00.**

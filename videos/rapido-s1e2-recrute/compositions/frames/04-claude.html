@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <title>S1E2 F4 — Avec Claude (portrait)</title>
+  </head>
+  <body>
+    <template>
+      <style>
+        @font-face { font-family: "Poppins"; src: url("assets/fonts/Poppins-600.woff2") format("woff2"); font-weight: 600; }
+        @font-face { font-family: "Poppins"; src: url("assets/fonts/Poppins-700.woff2") format("woff2"); font-weight: 700; }
+        @font-face { font-family: "Inter"; src: url("assets/fonts/Inter-Variable.woff2") format("woff2-variations"); font-weight: 100 900; }
+
+        #root { position: absolute; inset: 0; width: 1080px; height: 1920px; overflow: hidden; font-family: "Poppins", "Inter", sans-serif; isolation: isolate; }
+        .bg { position: absolute; inset: 0; background: #f7f9fc; }
+        .glow { position: absolute; left: 90px; top: 840px; width: 900px; height: 820px; background: radial-gradient(ellipse 50% 50% at 50% 50%, rgba(120,80,192,0.18) 0%, rgba(120,80,192,0.05) 50%, rgba(120,80,192,0) 76%); opacity: 0; pointer-events: none; will-change: opacity; }
+
+        .eyebrow { position: absolute; left: 0; right: 0; top: 96px; text-align: center; z-index: 4; font-family: "Poppins", sans-serif; font-weight: 600; font-size: 34px; letter-spacing: 0.09em; text-transform: uppercase; color: #7850c0; opacity: 0; margin: 0; will-change: transform, opacity; }
+
+        .ask { position: absolute; left: 90px; top: 180px; z-index: 3; max-width: 800px; box-sizing: border-box; background: #1b2a41; color: #f7f9fc; border-radius: 24px 24px 24px 8px; padding: 26px 34px; font-family: "Inter", sans-serif; font-weight: 500; font-size: 40px; line-height: 1.25; opacity: 0; will-change: transform, opacity; }
+
+        .res { position: absolute; left: 150px; top: 400px; width: 840px; box-sizing: border-box; background: #ffffff; border: 1.5px solid rgba(120,80,192,0.22); border-radius: 24px 24px 8px 24px; padding: 26px 32px; z-index: 3; opacity: 0; will-change: transform, opacity; }
+        .res .head { display: flex; align-items: center; gap: 14px; margin-bottom: 18px; }
+        .res .head .b { width: 44px; height: 44px; border-radius: 50%; background: rgba(120,80,192,0.12); display: grid; place-items: center; }
+        .res .head .b svg { width: 26px; height: 26px; fill: none; stroke: #7850c0; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
+        .res .head b { font-family: "Poppins", sans-serif; font-weight: 700; font-size: 30px; color: #1b2a41; }
+        .rows { display: flex; flex-direction: column; gap: 14px; }
+        .row { display: flex; align-items: center; gap: 16px; font-family: "Inter", sans-serif; font-weight: 500; font-size: 32px; color: #1b2a41; opacity: 0; will-change: transform, opacity; }
+        .row .ok { flex: none; width: 44px; height: 44px; border-radius: 50%; background: #059669; display: grid; place-items: center; }
+        .row .ok svg { width: 26px; height: 26px; fill: none; stroke: #fff; stroke-width: 3; stroke-linecap: round; stroke-linejoin: round; }
+
+        .win { position: absolute; left: 90px; top: 870px; width: 900px; box-sizing: border-box; background: #ffffff; border: 1.5px solid rgba(27,42,65,0.12); border-radius: 24px; overflow: hidden; z-index: 3; opacity: 0; will-change: transform, opacity; }
+        .win-bar { display: flex; align-items: center; gap: 14px; height: 74px; padding: 0 28px; background: #f2effa; border-bottom: 1.5px solid rgba(120,80,192,0.14); }
+        .win-bar .dots { display: flex; gap: 10px; }
+        .win-bar .dots i { width: 14px; height: 14px; border-radius: 50%; background: rgba(120,80,192,0.3); }
+        .win-bar b { font-family: "Poppins", sans-serif; font-weight: 700; font-size: 28px; color: #7850c0; margin-left: 6px; }
+        .win-bar .tag { margin-left: auto; padding: 8px 18px; border-radius: 100px; background: rgba(5,150,105,0.12); font-family: "Poppins", sans-serif; font-weight: 700; font-size: 22px; color: #059669; }
+        .win img { display: block; width: 100%; height: 620px; object-fit: cover; object-position: 50% 30%; }
+      </style>
+
+      <div id="root" data-composition-id="04-claude" data-width="1080" data-height="1920" data-duration="8.676">
+        <div id="bg-clip" class="clip bg" data-start="0" data-duration="8.176" data-track-index="0"><div class="glow" id="glow"></div></div>
+        <div id="scene" class="clip" data-start="0" data-duration="8.176" data-track-index="1" style="position:absolute; inset:0;">
+          <p class="eyebrow" id="eyebrow">Un exemple, avec Claude</p>
+          <div class="ask" id="ask">« Prépare le kit d'embauche pour un chef de rang »</div>
+          <div class="res" id="res">
+            <div class="head"><span class="b"><svg viewBox="0 0 24 24"><path d="M13 2L3 14h7l-1 8 10-12h-7z" /></svg></span><b>Claude · RapidoRH</b></div>
+            <div class="rows">
+              <div class="row" id="r1"><span class="ok"><svg viewBox="0 0 24 24"><path d="M4 12l5 5L20 6" /></svg></span>Fiche de poste rédigée</div>
+              <div class="row" id="r2"><span class="ok"><svg viewBox="0 0 24 24"><path d="M4 12l5 5L20 6" /></svg></span>Grille d'entretien notée</div>
+              <div class="row" id="r3"><span class="ok"><svg viewBox="0 0 24 24"><path d="M4 12l5 5L20 6" /></svg></span>Enregistré dans RapidoRH</div>
+            </div>
+          </div>
+          <div class="win" id="win">
+            <div class="win-bar"><span class="dots"><i></i><i></i><i></i></span><b>RapidoRH · Recrutement</b><span class="tag">✓ créé</span></div>
+            <img src="public/rapidorh-mockup.png" alt="RapidoRH — recrutement" />
+          </div>
+        </div>
+      </div>
+
+      <script src="assets/vendor/gsap.min.js"></script>
+      <script>
+        window.__timelines = window.__timelines || {};
+        const tl = gsap.timeline({ paused: true });
+        tl.fromTo("#eyebrow", { y: 14, opacity: 0 }, { y: 0, opacity: 1, duration: 0.5, ease: "power3.out" }, 0.1);
+        tl.fromTo("#ask", { y: -16, scale: 0.96, opacity: 0 }, { y: 0, scale: 1, opacity: 1, duration: 0.5, ease: "power3.out" }, 0.4);
+        tl.fromTo("#res", { y: 20, opacity: 0 }, { y: 0, opacity: 1, duration: 0.5, ease: "power3.out" }, 2.0);
+        tl.fromTo("#r1", { x: -16, opacity: 0 }, { x: 0, opacity: 1, duration: 0.38, ease: "power3.out" }, 2.5);
+        tl.fromTo("#r2", { x: -16, opacity: 0 }, { x: 0, opacity: 1, duration: 0.38, ease: "power3.out" }, 3.3);
+        tl.fromTo("#r3", { x: -16, opacity: 0 }, { x: 0, opacity: 1, duration: 0.38, ease: "power3.out" }, 4.1);
+        tl.fromTo("#win", { y: 30, opacity: 0 }, { y: 0, opacity: 1, duration: 0.6, ease: "power3.out" }, 5.2);
+        tl.fromTo("#glow", { opacity: 0 }, { opacity: 1, duration: 0.9, ease: "power2.out" }, 6.6);
+        window.__timelines["04-claude"] = tl;
+      </script>
+    </template>
+  </body>
+</html>
