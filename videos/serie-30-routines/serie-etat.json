@@ -3,7 +3,7 @@
  "version": 1,
  "pause": false,
  "_pause_note": "Kill-switch. Reste true tant que : (1) les 30 scripts ne sont pas valides, (2) le pilote E1 n'est pas approuve, (3) la pre-autorisation budgetaire n'est pas ecrite ci-dessous. Passer a false = feu vert pour la routine quotidienne.",
- "episode_courant": 8,
+ "episode_courant": 9,
  "total_episodes": 30,
  "date_debut": "2026-07-11",
  "heure_publication": "08:00:00",
@@ -116,6 +116,19 @@
    "date": "2026-07-17",
    "heure": "08:00:00",
    "outro_reuse": "cta-A-generique",
+   "tiktok": "skip"
+  },
+  {
+   "episode": 8,
+   "titre": "Du plan aux tâches",
+   "projet": "videos/serie-30-e08",
+   "duree_s": 29.9,
+   "cms": "Serie 30 routines - E8 Du plan aux taches",
+   "linkedin_draft": 436,
+   "scheduled_post": 344,
+   "date": "2026-07-18",
+   "heure": "08:00:00",
+   "outro_reuse": "cta-B-generique",
    "tiktok": "skip"
   }
  ],
