@@ -1,0 +1,706 @@
+{
+  "tts_provider": "elevenlabs",
+  "voice_id": "TGAegA0zNRi8I6nUdq3i",
+  "bgm": {
+    "path": "assets/bgm/track.mp3",
+    "volume": 0.18,
+    "query": "calm reassuring corporate underscore",
+    "duration_s": 36
+  },
+  "bgm_pending": false,
+  "bgm_provider": null,
+  "bgm_pid": null,
+  "bgm_log": null,
+  "bgm_mode": null,
+  "bgm_target_duration_s": null,
+  "bgm_seed_duration_s": null,
+  "bgm_loop_count": null,
+  "voices": [
+    {
+      "frame": 1,
+      "path": "assets/voice/01.wav",
+      "duration_s": 9.927,
+      "words": [
+        {
+          "id": "w0",
+          "text": "Recruitement,",
+          "start": 0.03,
+          "end": 1.06
+        },
+        {
+          "id": "w1",
+          "text": "onboarding,",
+          "start": 1.06,
+          "end": 2
+        },
+        {
+          "id": "w2",
+          "text": "plannings,",
+          "start": 2,
+          "end": 2.36
+        },
+        {
+          "id": "w3",
+          "text": "projets,",
+          "start": 2.36,
+          "end": 2.86
+        },
+        {
+          "id": "w4",
+          "text": "congés,",
+          "start": 3.17,
+          "end": 3.7
+        },
+        {
+          "id": "w5",
+          "text": "votre",
+          "start": 3.88,
+          "end": 4.55
+        },
+        {
+          "id": "w6",
+          "text": "RH,",
+          "start": 4.55,
+          "end": 4.91
+        },
+        {
+          "id": "w7",
+          "text": "c'est",
+          "start": 4.99,
+          "end": 5.15
+        },
+        {
+          "id": "w8",
+          "text": "presque",
+          "start": 5.19,
+          "end": 5.54
+        },
+        {
+          "id": "w9",
+          "text": "un",
+          "start": 5.54,
+          "end": 5.66
+        },
+        {
+          "id": "w10",
+          "text": "temps",
+          "start": 5.66,
+          "end": 5.92
+        },
+        {
+          "id": "w11",
+          "text": "plein",
+          "start": 6.04,
+          "end": 6.24
+        },
+        {
+          "id": "w12",
+          "text": "à",
+          "start": 6.24,
+          "end": 6.31
+        },
+        {
+          "id": "w13",
+          "text": "elle,",
+          "start": 6.33,
+          "end": 6.82
+        },
+        {
+          "id": "w14",
+          "text": "toute",
+          "start": 6.83,
+          "end": 7.13
+        },
+        {
+          "id": "w15",
+          "text": "seule.",
+          "start": 7.13,
+          "end": 7.44
+        },
+        {
+          "id": "w16",
+          "text": "Et",
+          "start": 7.47,
+          "end": 7.58
+        },
+        {
+          "id": "w17",
+          "text": "si",
+          "start": 7.58,
+          "end": 7.71
+        },
+        {
+          "id": "w18",
+          "text": "vous",
+          "start": 7.72,
+          "end": 8.01
+        },
+        {
+          "id": "w19",
+          "text": "la",
+          "start": 8.01,
+          "end": 8.1
+        },
+        {
+          "id": "w20",
+          "text": "pilotiez",
+          "start": 8.36,
+          "end": 8.66
+        },
+        {
+          "id": "w21",
+          "text": "juste",
+          "start": 8.72,
+          "end": 8.99
+        },
+        {
+          "id": "w22",
+          "text": "en",
+          "start": 9.15,
+          "end": 9.22
+        },
+        {
+          "id": "w23",
+          "text": "parlant.",
+          "start": 9.22,
+          "end": 9.76
+        }
+      ]
+    },
+    {
+      "frame": 2,
+      "path": "assets/voice/02.wav",
+      "duration_s": 6.452,
+      "words": [
+        {
+          "id": "w0",
+          "text": "Voici",
+          "start": 0.05,
+          "end": 0.32
+        },
+        {
+          "id": "w1",
+          "text": "Rapido",
+          "start": 0.32,
+          "end": 0.71
+        },
+        {
+          "id": "w2",
+          "text": "RH,",
+          "start": 0.71,
+          "end": 0.96
+        },
+        {
+          "id": "w3",
+          "text": "le",
+          "start": 1.01,
+          "end": 1.1
+        },
+        {
+          "id": "w4",
+          "text": "plugin",
+          "start": 1.16,
+          "end": 1.45
+        },
+        {
+          "id": "w5",
+          "text": "qui",
+          "start": 1.45,
+          "end": 1.62
+        },
+        {
+          "id": "w6",
+          "text": "branche",
+          "start": 1.62,
+          "end": 2.02
+        },
+        {
+          "id": "w7",
+          "text": "Claude",
+          "start": 2.02,
+          "end": 2.3
+        },
+        {
+          "id": "w8",
+          "text": "directement",
+          "start": 2.56,
+          "end": 3
+        },
+        {
+          "id": "w9",
+          "text": "sur",
+          "start": 3,
+          "end": 3.28
+        },
+        {
+          "id": "w10",
+          "text": "votre",
+          "start": 3.28,
+          "end": 3.75
+        },
+        {
+          "id": "w11",
+          "text": "RH.",
+          "start": 3.75,
+          "end": 3.99
+        },
+        {
+          "id": "w12",
+          "text": "Vous",
+          "start": 4.11,
+          "end": 4.22
+        },
+        {
+          "id": "w13",
+          "text": "parlez,",
+          "start": 4.22,
+          "end": 4.65
+        },
+        {
+          "id": "w14",
+          "text": "Claude",
+          "start": 4.65,
+          "end": 4.96
+        },
+        {
+          "id": "w15",
+          "text": "agit",
+          "start": 4.97,
+          "end": 5.19
+        },
+        {
+          "id": "w16",
+          "text": "dans",
+          "start": 5.19,
+          "end": 5.41
+        },
+        {
+          "id": "w17",
+          "text": "le",
+          "start": 5.41,
+          "end": 5.5
+        },
+        {
+          "id": "w18",
+          "text": "logiciel.",
+          "start": 5.55,
+          "end": 6.19
+        }
+      ]
+    },
+    {
+      "frame": 3,
+      "path": "assets/voice/03.wav",
+      "duration_s": 9.143,
+      "words": [
+        {
+          "id": "w0",
+          "text": "Recrutement,",
+          "start": 0.07,
+          "end": 0.92
+        },
+        {
+          "id": "w1",
+          "text": "onboarding,",
+          "start": 0.92,
+          "end": 1.75
+        },
+        {
+          "id": "w2",
+          "text": "projet",
+          "start": 1.77,
+          "end": 2.2
+        },
+        {
+          "id": "w3",
+          "text": "et",
+          "start": 2.2,
+          "end": 2.34
+        },
+        {
+          "id": "w4",
+          "text": "kanban,",
+          "start": 2.34,
+          "end": 2.79
+        },
+        {
+          "id": "w5",
+          "text": "daily,",
+          "start": 3.05,
+          "end": 3.47
+        },
+        {
+          "id": "w6",
+          "text": "agenda,",
+          "start": 3.76,
+          "end": 4.25
+        },
+        {
+          "id": "w7",
+          "text": "horaire",
+          "start": 4.25,
+          "end": 4.85
+        },
+        {
+          "id": "w8",
+          "text": "et",
+          "start": 4.85,
+          "end": 5.01
+        },
+        {
+          "id": "w9",
+          "text": "congé.",
+          "start": 5.01,
+          "end": 5.59
+        },
+        {
+          "id": "w10",
+          "text": "Toute",
+          "start": 5.81,
+          "end": 6.03
+        },
+        {
+          "id": "w11",
+          "text": "votre",
+          "start": 6.11,
+          "end": 6.28
+        },
+        {
+          "id": "w12",
+          "text": "RH",
+          "start": 6.6,
+          "end": 6.61
+        },
+        {
+          "id": "w13",
+          "text": "connectée",
+          "start": 6.61,
+          "end": 7.18
+        },
+        {
+          "id": "w14",
+          "text": "à",
+          "start": 7.18,
+          "end": 7.4
+        },
+        {
+          "id": "w15",
+          "text": "Claude",
+          "start": 7.4,
+          "end": 7.78
+        },
+        {
+          "id": "w16",
+          "text": "au",
+          "start": 7.78,
+          "end": 7.8
+        },
+        {
+          "id": "w17",
+          "text": "même",
+          "start": 7.92,
+          "end": 8.21
+        },
+        {
+          "id": "w18",
+          "text": "endroit.",
+          "start": 8.21,
+          "end": 8.8
+        }
+      ]
+    },
+    {
+      "frame": 4,
+      "path": "assets/voice/04.wav",
+      "duration_s": 8.908,
+      "words": [
+        {
+          "id": "w0",
+          "text": "Un",
+          "start": 0.08,
+          "end": 0.13
+        },
+        {
+          "id": "w1",
+          "text": "exemple,",
+          "start": 0.13,
+          "end": 0.72
+        },
+        {
+          "id": "w2",
+          "text": "vous",
+          "start": 0.72,
+          "end": 0.97
+        },
+        {
+          "id": "w3",
+          "text": "dites,",
+          "start": 1.05,
+          "end": 1.39
+        },
+        {
+          "id": "w4",
+          "text": "en",
+          "start": 1.42,
+          "end": 1.47
+        },
+        {
+          "id": "w5",
+          "text": "bord",
+          "start": 1.47,
+          "end": 1.63
+        },
+        {
+          "id": "w6",
+          "text": "de",
+          "start": 1.63,
+          "end": 1.71
+        },
+        {
+          "id": "w7",
+          "text": "Sarah,",
+          "start": 1.71,
+          "end": 2
+        },
+        {
+          "id": "w8",
+          "text": "serveuse,",
+          "start": 2,
+          "end": 3.24
+        },
+        {
+          "id": "w9",
+          "text": "Claude",
+          "start": 3.3,
+          "end": 3.6
+        },
+        {
+          "id": "w10",
+          "text": "crée",
+          "start": 3.62,
+          "end": 3.88
+        },
+        {
+          "id": "w11",
+          "text": "le",
+          "start": 3.88,
+          "end": 3.97
+        },
+        {
+          "id": "w12",
+          "text": "compte",
+          "start": 3.98,
+          "end": 4.26
+        },
+        {
+          "id": "w13",
+          "text": "attribue",
+          "start": 4.38,
+          "end": 4.72
+        },
+        {
+          "id": "w14",
+          "text": "le",
+          "start": 4.72,
+          "end": 4.86
+        },
+        {
+          "id": "w15",
+          "text": "rôle",
+          "start": 4.86,
+          "end": 5.12
+        },
+        {
+          "id": "w16",
+          "text": "et",
+          "start": 5.12,
+          "end": 5.39
+        },
+        {
+          "id": "w17",
+          "text": "l'ajoute",
+          "start": 5.39,
+          "end": 5.71
+        },
+        {
+          "id": "w18",
+          "text": "au",
+          "start": 5.82,
+          "end": 5.94
+        },
+        {
+          "id": "w19",
+          "text": "projet,",
+          "start": 5.94,
+          "end": 6.6
+        },
+        {
+          "id": "w20",
+          "text": "et",
+          "start": 6.64,
+          "end": 6.72
+        },
+        {
+          "id": "w21",
+          "text": "c'est",
+          "start": 6.72,
+          "end": 7.02
+        },
+        {
+          "id": "w22",
+          "text": "fait",
+          "start": 7.02,
+          "end": 7.12
+        },
+        {
+          "id": "w23",
+          "text": "d'un",
+          "start": 7.2,
+          "end": 7.73
+        },
+        {
+          "id": "w24",
+          "text": "rapido",
+          "start": 7.81,
+          "end": 8.45
+        },
+        {
+          "id": "w25",
+          "text": "RH.",
+          "start": 8.45,
+          "end": 8.72
+        }
+      ]
+    },
+    {
+      "frame": 5,
+      "path": "assets/voice/05.wav",
+      "duration_s": 5.146,
+      "words": [
+        {
+          "id": "w0",
+          "text": "Votre",
+          "start": 0.08,
+          "end": 0.5
+        },
+        {
+          "id": "w1",
+          "text": "RH",
+          "start": 0.5,
+          "end": 0.7
+        },
+        {
+          "id": "w2",
+          "text": "géré",
+          "start": 0.7,
+          "end": 1.12
+        },
+        {
+          "id": "w3",
+          "text": "en",
+          "start": 1.12,
+          "end": 1.33
+        },
+        {
+          "id": "w4",
+          "text": "rapido.",
+          "start": 1.33,
+          "end": 2
+        },
+        {
+          "id": "w5",
+          "text": "Rapido",
+          "start": 2.08,
+          "end": 2.59
+        },
+        {
+          "id": "w6",
+          "text": "RH,",
+          "start": 2.59,
+          "end": 3
+        },
+        {
+          "id": "w7",
+          "text": "arrêtez",
+          "start": 3,
+          "end": 3.44
+        },
+        {
+          "id": "w8",
+          "text": "de",
+          "start": 3.44,
+          "end": 3.57
+        },
+        {
+          "id": "w9",
+          "text": "subir,",
+          "start": 3.57,
+          "end": 4.03
+        },
+        {
+          "id": "w10",
+          "text": "commencez",
+          "start": 4.17,
+          "end": 4.55
+        },
+        {
+          "id": "w11",
+          "text": "à",
+          "start": 4.55,
+          "end": 4.61
+        },
+        {
+          "id": "w12",
+          "text": "parler.",
+          "start": 4.61,
+          "end": 5
+        }
+      ]
+    }
+  ],
+  "sfx": [
+    {
+      "frame": 1,
+      "file": "assets/sfx/notification.mp3",
+      "offset_s": 0.8,
+      "duration_s": 1.2,
+      "volume": 0.28
+    },
+    {
+      "frame": 1,
+      "file": "assets/sfx/impact-bass-1.mp3",
+      "offset_s": 8,
+      "duration_s": 2,
+      "volume": 0.26
+    },
+    {
+      "frame": 2,
+      "file": "assets/sfx/chime.mp3",
+      "offset_s": 0.4,
+      "duration_s": 0.72,
+      "volume": 0.3
+    },
+    {
+      "frame": 3,
+      "file": "assets/sfx/pop.mp3",
+      "offset_s": 1,
+      "duration_s": 0.31,
+      "volume": 0.28
+    },
+    {
+      "frame": 4,
+      "file": "assets/sfx/chime.mp3",
+      "offset_s": 6,
+      "duration_s": 0.72,
+      "volume": 0.3
+    },
+    {
+      "frame": 5,
+      "file": "assets/sfx/sparkle.mp3",
+      "offset_s": 2.6,
+      "duration_s": 1.5,
+      "volume": 0.28
+    }
+  ],
+  "total_duration_s": 39.576
+}

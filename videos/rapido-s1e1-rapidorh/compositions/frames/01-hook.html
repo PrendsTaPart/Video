@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <title>S1E1 F1 — Hook / pain (portrait)</title>
+  </head>
+  <body>
+    <template>
+      <style>
+        @font-face { font-family: "Poppins"; src: url("assets/fonts/Poppins-600.woff2") format("woff2"); font-weight: 600; }
+        @font-face { font-family: "Poppins"; src: url("assets/fonts/Poppins-700.woff2") format("woff2"); font-weight: 700; }
+        @font-face { font-family: "Poppins"; src: url("assets/fonts/Poppins-800.woff2") format("woff2"); font-weight: 800; }
+        @font-face { font-family: "Inter"; src: url("assets/fonts/Inter-Variable.woff2") format("woff2-variations"); font-weight: 100 900; }
+
+        #root { position: absolute; inset: 0; width: 1080px; height: 1920px; overflow: hidden; font-family: "Inter", sans-serif; color: #1b2a41; isolation: isolate; }
+        .bg { position: absolute; inset: 0; background-color: #f7f9fc; background-image: radial-gradient(circle at 50% 22%, rgba(120,80,192,0.07), transparent 55%), radial-gradient(circle, rgba(27,42,65,0.09) 1.6px, transparent 1.6px); background-size: 100% 100%, 46px 46px; }
+        .shake { position: absolute; inset: 0; }
+
+        .hook { position: absolute; left: 70px; right: 70px; top: 150px; z-index: 4; text-align: center; }
+        .hook .k { font-family: "Poppins", sans-serif; font-weight: 800; font-size: 88px; line-height: 1.06; letter-spacing: -0.02em; color: #1b2a41; opacity: 0; will-change: transform, opacity; }
+        .hook .k .a { color: #7850c0; }
+        .hook .s { margin-top: 20px; font-family: "Inter", sans-serif; font-weight: 500; font-size: 40px; color: #566472; opacity: 0; will-change: transform, opacity; }
+
+        .fiches { position: absolute; left: 110px; top: 620px; width: 860px; z-index: 3; display: flex; flex-direction: column; gap: 16px; }
+        .fiche { position: relative; box-sizing: border-box; background: #ffffff; border: 1.5px solid rgba(27,42,65,0.1); border-radius: 16px; padding: 22px 30px; display: flex; align-items: center; gap: 22px; transform-origin: 50% 50%; opacity: 0; will-change: transform, opacity; }
+        .fiche::before { content: ""; position: absolute; left: 0; top: 16px; bottom: 16px; width: 7px; border-radius: 4px; background: #7850c0; }
+        .fiche-ic { flex: 0 0 58px; width: 58px; height: 58px; display: grid; place-items: center; background: rgba(120,80,192,0.08); border-radius: 50%; }
+        .fiche-ic svg { width: 32px; height: 32px; fill: none; stroke: #7850c0; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; }
+        .fiche-label { font-family: "Poppins", sans-serif; font-weight: 600; font-size: 40px; letter-spacing: -0.01em; color: #1b2a41; }
+        .fiche-t { margin-left: auto; flex: none; font-family: "Inter", sans-serif; font-weight: 600; font-size: 26px; color: #8a7bb0; }
+
+        .stamp { position: absolute; z-index: 5; left: 50%; top: 470px; transform: translateX(-50%) rotate(-6deg); padding: 18px 42px; border: 6px solid #7850c0; border-radius: 16px; background: rgba(247,249,252,0.85); font-family: "Poppins", sans-serif; font-weight: 800; font-size: 52px; letter-spacing: 0.02em; color: #7850c0; transform-origin: 50% 50%; opacity: 0; white-space: nowrap; will-change: transform, opacity; }
+      </style>
+
+      <div id="root" data-composition-id="01-hook" data-width="1080" data-height="1920" data-duration="10.427">
+        <div id="bg-clip" class="clip bg" data-start="0" data-duration="9.927" data-track-index="0"></div>
+        <div id="scene" class="clip" data-start="0" data-duration="9.927" data-track-index="1" style="position:absolute; inset:0;">
+          <div class="shake">
+            <div class="hook">
+              <div class="k" id="k">Votre RH,<br />un <span class="a">temps plein</span> ?</div>
+              <div class="s" id="s">recrutement, plannings, projets, congés…</div>
+            </div>
+            <div class="fiches">
+              <div class="fiche" id="f1"><span class="fiche-ic"><svg viewBox="0 0 24 24"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2" /><circle cx="9" cy="7" r="4" /><path d="M22 21v-2a4 4 0 0 0-3-3.9" /></svg></span><span class="fiche-label">Recrutement</span><span class="fiche-t">à sourcer</span></div>
+              <div class="fiche" id="f2"><span class="fiche-ic"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5" /></svg></span><span class="fiche-label">Onboarding</span><span class="fiche-t">à saisir</span></div>
+              <div class="fiche" id="f3"><span class="fiche-ic"><svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="17" rx="2" /><path d="M8 2v4M16 2v4M3 10h18" /></svg></span><span class="fiche-label">Plannings</span><span class="fiche-t">à faire</span></div>
+              <div class="fiche" id="f4"><span class="fiche-ic"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2" /><path d="M3 9h18M9 21V9" /></svg></span><span class="fiche-label">Projets &amp; Kanban</span><span class="fiche-t">à suivre</span></div>
+              <div class="fiche" id="f5"><span class="fiche-ic"><svg viewBox="0 0 24 24"><path d="M8 7V3M16 7V3M4 11h16" /><rect x="4" y="5" width="16" height="16" rx="2" /></svg></span><span class="fiche-label">Horaires &amp; congés</span><span class="fiche-t">à valider</span></div>
+            </div>
+            <div class="stamp" id="stamp">CHRONOPHAGE</div>
+          </div>
+        </div>
+      </div>
+
+      <script src="assets/vendor/gsap.min.js"></script>
+      <script>
+        window.__timelines = window.__timelines || {};
+        (function () {
+          var root = document.querySelector('[data-composition-id="01-hook"][id="root"]') || document.querySelector('[data-composition-id="01-hook"]');
+          var tl = gsap.timeline({ paused: true });
+          var shakeEl = root.querySelector(".shake");
+          tl.fromTo(root.querySelector("#k"), { y: 26, opacity: 0 }, { y: 0, opacity: 1, duration: 0.5, ease: "power3.out" }, 0.0);
+          tl.fromTo(root.querySelector("#s"), { y: 16, opacity: 0 }, { y: 0, opacity: 1, duration: 0.45, ease: "power3.out" }, 0.4);
+          var cues = [0.5, 1.4, 2.4, 3.3, 4.2];
+          ["#f1","#f2","#f3","#f4","#f5"].forEach(function (id, i) {
+            tl.fromTo(root.querySelector(id), { scale: 0.85, x: -28, opacity: 0 }, { scale: 1, x: 0, opacity: 1, duration: 0.46, ease: "power3.out" }, cues[i]);
+          });
+          tl.fromTo(root.querySelector("#stamp"), { scale: 1.6, opacity: 0, rotation: -6 }, { scale: 1, opacity: 1, rotation: -6, duration: 0.4, ease: "power4.out" }, 5.7);
+          tl.to(root.querySelector(".fiches"), { scale: 0.97, duration: 0.7, ease: "power2.inOut" }, 5.9);
+          var shk = { t: 0 };
+          tl.to(shk, { t: 1, duration: 1.0, ease: "none", onUpdate: function () {
+            var tt = shk.t; var env = Math.max(0, Math.min(1, tt / 0.16, (1 - tt) / 0.2));
+            var ph = tt * 1.0 * Math.PI * 2;
+            shakeEl.style.transform = "translate(" + (Math.sin(ph * 3.5) * 3.0 * env) + "px," + (Math.sin(ph * 2.7 + 1.1) * 2.2 * env) + "px)";
+          } }, 5.9);
+          window.__timelines["01-hook"] = tl;
+        })();
+      </script>
+    </template>
+  </body>
+</html>

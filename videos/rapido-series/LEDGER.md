@@ -5,7 +5,6 @@ Détail de chaque épisode (prompt + résultat) : `videos/rapido-series/CALENDAR
 Après production : déplacer la ligne dans FAIT (avec date + chemin projet).
 
 ## FILE (à produire, dans l'ordre)
-- [ ] S1E1 · RapidoRH — la RH en Rapido (plugin + MCP)
 - [ ] S1E2 · Recruté en Rapido (job-post-builder)
 - [ ] S1E3 · Onboardé en Rapido (onboarding-equipe)
 - [ ] S1E4 · Le projet monté en Rapido (setup-projet + flux-kanban)
@@ -35,7 +34,7 @@ Après production : déplacer la ligne dans FAIT (avec date + chemin projet).
 - [ ] S4E7 · L'écosystème Rapido en une phrase (grand final)
 
 ## FAIT
-(vide — la routine remplit ici au fil des jours)
+- S1E1 · RapidoRH — la RH en Rapido → videos/rapido-s1e1-rapidorh — 2026-07-10
 
 ## Publication
 Par défaut : **brouillon programmé** LinkedIn. Comptes RapidoCMS connectés (network linkedin) :
