@@ -1,0 +1,58 @@
+# Routine "1 skill / cas d'usage" — 2 vidéos TikTok par jour, publiées en brouillon LinkedIn FoodEatUp.
+#
+# ⚠️ SCAFFOLD À ACTIVER (une seule fois) — voir les TODO ci-dessous.
+# Alternative plus simple : utiliser un "déclencheur planifié" Claude Code sur le web
+# (même environnement, MCP + secrets déjà configurés) au lieu de ce workflow CI.
+#
+# Ce workflow lance Claude Code (mode autonome) avec le PROMPT de routine défini dans
+# videos/skill-videos/ROUTINE.md. Il faut que le runner ait : Node, Chromium (pour le rendu
+# HyperFrames), l'accès réseau ElevenLabs, et les serveurs MCP (RapidoCMS, Foodeatup, github)
+# configurés — c'est le point le plus délicat en CI. Si les MCP ne sont pas dispo en CI,
+# préférer le déclencheur planifié Claude Code web.
+
+name: Daily skill video (FoodEatUp)
+
+on:
+  schedule:
+    # Heures en UTC. Paris = UTC+2 (été) / UTC+1 (hiver).
+    # Été (CEST) : 11h30 Paris = 09:30 UTC ; 16h30 Paris = 14:30 UTC.
+    - cron: "30 9 * * *"    # ≈ 11h30 Paris (été) — TODO: ajuster à 10 30 en hiver
+    - cron: "30 14 * * *"   # ≈ 16h30 Paris (été) — TODO: ajuster à 15 30 en hiver
+  workflow_dispatch: {}      # permet un lancement manuel de test
+
+concurrency:
+  group: daily-skill-video
+  cancel-in-progress: false
+
+jobs:
+  make-and-schedule:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          ref: claude/hyperframes-reels-studio-9f0b63
+          fetch-depth: 0
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+
+      # TODO(secrets) : ajouter dans Settings → Secrets → Actions :
+      #   ANTHROPIC_API_KEY  (obligatoire pour Claude Code)
+      # Les clés MCP (RapidoCMS/Foodeatup) et ELEVENLABS_API_KEY sont déjà dans
+      # studio-video/.env (suivi par git) — sinon les ajouter en secrets aussi.
+
+      - name: Run studio routine (Claude Code, autonome)
+        # TODO(action) : renseigner la version de l'action Claude Code et le passage du prompt.
+        # Exemple indicatif (à adapter à la version installée) :
+        uses: anthropics/claude-code-action@v1
+        with:
+          anthropic_api_key: ${{ secrets.ANTHROPIC_API_KEY }}
+          # Le prompt exact vit dans videos/skill-videos/ROUTINE.md (section "PROMPT de routine").
+          prompt_file: videos/skill-videos/ROUTINE.md
+          # mcp_config: .mcp.json   # TODO: fournir la config MCP (RapidoCMS, Foodeatup, github) si requis en CI
+        env:
+          ELEVENLABS_API_KEY: ${{ secrets.ELEVENLABS_API_KEY }}
+          ONNXRUNTIME_NODE_INSTALL_CUDA: skip
