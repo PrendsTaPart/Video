@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=1080, height=1920" />
+    <script src="assets/vendor/gsap.min.js"></script>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      html,
+      body {
+        width: 1080px;
+        height: 1920px;
+        overflow: hidden;
+        background: #000;
+      }
+      #root {
+        position: relative;
+        width: 1080px;
+        height: 1920px;
+        overflow: hidden;
+      }
+      .scene {
+        position: absolute;
+        inset: 0;
+        width: 100%;
+        height: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <div
+      id="root"
+      data-composition-id="main"
+      data-start="0"
+      data-duration="23.823"
+      data-width="1080"
+      data-height="1920"
+    >
+      <div
+        id="el-01-briques"
+        class="scene"
+        data-composition-id="01-briques"
+        data-composition-src="compositions/frames/01-briques.html"
+        data-start="0"
+        data-duration="11.413"
+        data-track-index="0"
+      ></div>
+      <audio
+        id="el-01-briques-voice"
+        src="assets/voice/routine.wav"
+        data-start="0"
+        data-duration="10.913"
+        data-track-index="10"
+        data-volume="1"
+      ></audio>
+
+      <div
+        id="el-02-prompt"
+        class="scene"
+        data-composition-id="02-prompt"
+        data-composition-src="compositions/frames/02-prompt.html"
+        data-start="10.913"
+        data-duration="4.772"
+        data-track-index="1"
+      ></div>
+      <audio
+        id="el-02-prompt-voice"
+        src="assets/voice/prompt.wav"
+        data-start="10.913"
+        data-duration="4.272"
+        data-track-index="10"
+        data-volume="1"
+      ></audio>
+
+      <div
+        id="el-03-cas"
+        class="scene"
+        data-composition-id="03-cas"
+        data-composition-src="compositions/frames/03-cas.html"
+        data-start="15.185"
+        data-duration="8.638"
+        data-track-index="0"
+      ></div>
+      <audio
+        id="el-03-cas-voice"
+        src="assets/voice/cas.wav"
+        data-start="15.185"
+        data-duration="8.638"
+        data-track-index="10"
+        data-volume="1"
+      ></audio>
+
+      <!-- captions -->
+      <div
+        id="el-captions"
+        class="scene"
+        data-composition-id="captions"
+        data-composition-src="compositions/captions.html"
+        data-start="0"
+        data-duration="23.823"
+        data-track-index="2"
+      ></div>
+
+    </div>
+
+    <script>
+      window.__timelines = window.__timelines || {};
+      window.__timelines["main"] = gsap.timeline({ paused: true });
+      // ── frame transitions (injected by transitions.mjs) ──
+      (function () { var tl = window.__timelines["main"];
+        tl.to("#el-01-briques", { opacity: 0, duration: 0.5, ease: "power2.inOut" }, 10.913);
+        tl.fromTo("#el-02-prompt", { opacity: 0 }, { opacity: 1, duration: 0.5, ease: "power2.inOut" }, 10.913);
+        tl.to("#el-02-prompt", { opacity: 0, duration: 0.5, ease: "power2.inOut" }, 15.185);
+        tl.fromTo("#el-03-cas", { opacity: 0 }, { opacity: 1, duration: 0.5, ease: "power2.inOut" }, 15.185);
+        tl.to({}, { duration: 23.823 }, 0); // full-span anchor — main.duration() == composition total (Studio master duration)
+      })();
+    </script>
+  </body>
+</html>

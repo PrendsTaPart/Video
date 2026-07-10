@@ -1,0 +1,667 @@
+{
+  "total_duration_s": 23.823,
+  "width": 1080,
+  "height": 1920,
+  "groups": [
+    {
+      "id": "caption-group-0",
+      "frame": 1,
+      "start": 0,
+      "end": 0.728,
+      "text": "Trois briques.",
+      "words": [
+        {
+          "id": "caption-word-0-0",
+          "text": "Trois",
+          "start": 0,
+          "end": 0.364
+        },
+        {
+          "id": "caption-word-0-1",
+          "text": "briques.",
+          "start": 0.364,
+          "end": 0.728
+        }
+      ]
+    },
+    {
+      "id": "caption-group-1",
+      "frame": 1,
+      "start": 0.728,
+      "end": 1.575,
+      "text": "Les skills",
+      "words": [
+        {
+          "id": "caption-word-1-0",
+          "text": "Les",
+          "start": 0.728,
+          "end": 1.091
+        },
+        {
+          "id": "caption-word-1-1",
+          "text": "skills",
+          "start": 1.091,
+          "end": 1.455
+        }
+      ]
+    },
+    {
+      "id": "caption-group-2",
+      "frame": 1,
+      "start": 1.819,
+      "end": 2.91,
+      "text": "des modes d'emploi",
+      "words": [
+        {
+          "id": "caption-word-2-0",
+          "text": "des",
+          "start": 1.819,
+          "end": 2.183
+        },
+        {
+          "id": "caption-word-2-1",
+          "text": "modes",
+          "start": 2.183,
+          "end": 2.546
+        },
+        {
+          "id": "caption-word-2-2",
+          "text": "d'emploi",
+          "start": 2.546,
+          "end": 2.91
+        }
+      ]
+    },
+    {
+      "id": "caption-group-3",
+      "frame": 1,
+      "start": 2.91,
+      "end": 3.274,
+      "text": "experts.",
+      "words": [
+        {
+          "id": "caption-word-3-0",
+          "text": "experts.",
+          "start": 2.91,
+          "end": 3.274
+        }
+      ]
+    },
+    {
+      "id": "caption-group-4",
+      "frame": 1,
+      "start": 3.274,
+      "end": 4.122,
+      "text": "Les agents",
+      "words": [
+        {
+          "id": "caption-word-4-0",
+          "text": "Les",
+          "start": 3.274,
+          "end": 3.638
+        },
+        {
+          "id": "caption-word-4-1",
+          "text": "agents",
+          "start": 3.638,
+          "end": 4.002
+        }
+      ]
+    },
+    {
+      "id": "caption-group-5",
+      "frame": 1,
+      "start": 4.365,
+      "end": 5.457,
+      "text": "des spécialistes qui",
+      "words": [
+        {
+          "id": "caption-word-5-0",
+          "text": "des",
+          "start": 4.365,
+          "end": 4.729
+        },
+        {
+          "id": "caption-word-5-1",
+          "text": "spécialistes",
+          "start": 4.729,
+          "end": 5.093
+        },
+        {
+          "id": "caption-word-5-2",
+          "text": "qui",
+          "start": 5.093,
+          "end": 5.457
+        }
+      ]
+    },
+    {
+      "id": "caption-group-6",
+      "frame": 1,
+      "start": 5.457,
+      "end": 6.548,
+      "text": "prennent le relais.",
+      "words": [
+        {
+          "id": "caption-word-6-0",
+          "text": "prennent",
+          "start": 5.457,
+          "end": 5.82
+        },
+        {
+          "id": "caption-word-6-1",
+          "text": "le",
+          "start": 5.82,
+          "end": 6.184
+        },
+        {
+          "id": "caption-word-6-2",
+          "text": "relais.",
+          "start": 6.184,
+          "end": 6.548
+        }
+      ]
+    },
+    {
+      "id": "caption-group-7",
+      "frame": 1,
+      "start": 6.548,
+      "end": 7.396,
+      "text": "Les garde-fous",
+      "words": [
+        {
+          "id": "caption-word-7-0",
+          "text": "Les",
+          "start": 6.548,
+          "end": 6.912
+        },
+        {
+          "id": "caption-word-7-1",
+          "text": "garde-fous",
+          "start": 6.912,
+          "end": 7.276
+        }
+      ]
+    },
+    {
+      "id": "caption-group-8",
+      "frame": 1,
+      "start": 7.639,
+      "end": 8.731,
+      "text": "rien n'est envoyé,",
+      "words": [
+        {
+          "id": "caption-word-8-0",
+          "text": "rien",
+          "start": 7.639,
+          "end": 8.003
+        },
+        {
+          "id": "caption-word-8-1",
+          "text": "n'est",
+          "start": 8.003,
+          "end": 8.367
+        },
+        {
+          "id": "caption-word-8-2",
+          "text": "envoyé,",
+          "start": 8.367,
+          "end": 8.731
+        }
+      ]
+    },
+    {
+      "id": "caption-group-9",
+      "frame": 1,
+      "start": 8.731,
+      "end": 9.822,
+      "text": "payé ou supprimé",
+      "words": [
+        {
+          "id": "caption-word-9-0",
+          "text": "payé",
+          "start": 8.731,
+          "end": 9.094
+        },
+        {
+          "id": "caption-word-9-1",
+          "text": "ou",
+          "start": 9.094,
+          "end": 9.458
+        },
+        {
+          "id": "caption-word-9-2",
+          "text": "supprimé",
+          "start": 9.458,
+          "end": 9.822
+        }
+      ]
+    },
+    {
+      "id": "caption-group-10",
+      "frame": 1,
+      "start": 9.822,
+      "end": 10.913,
+      "text": "sans ton accord.",
+      "words": [
+        {
+          "id": "caption-word-10-0",
+          "text": "sans",
+          "start": 9.822,
+          "end": 10.186
+        },
+        {
+          "id": "caption-word-10-1",
+          "text": "ton",
+          "start": 10.186,
+          "end": 10.55
+        },
+        {
+          "id": "caption-word-10-2",
+          "text": "accord.",
+          "start": 10.55,
+          "end": 10.913
+        }
+      ]
+    },
+    {
+      "id": "caption-group-11",
+      "frame": 2,
+      "start": 10.913,
+      "end": 11.567,
+      "text": "Tu dis",
+      "words": [
+        {
+          "id": "caption-word-11-0",
+          "text": "Tu",
+          "start": 10.913,
+          "end": 11.18
+        },
+        {
+          "id": "caption-word-11-1",
+          "text": "dis",
+          "start": 11.18,
+          "end": 11.447
+        }
+      ]
+    },
+    {
+      "id": "caption-group-12",
+      "frame": 2,
+      "start": 11.714,
+      "end": 12.248,
+      "text": "qui peut",
+      "words": [
+        {
+          "id": "caption-word-12-0",
+          "text": "qui",
+          "start": 11.714,
+          "end": 11.981
+        },
+        {
+          "id": "caption-word-12-1",
+          "text": "peut",
+          "start": 11.981,
+          "end": 12.248
+        }
+      ]
+    },
+    {
+      "id": "caption-group-13",
+      "frame": 2,
+      "start": 12.248,
+      "end": 12.782,
+      "text": "m'aider à",
+      "words": [
+        {
+          "id": "caption-word-13-0",
+          "text": "m'aider",
+          "start": 12.248,
+          "end": 12.515
+        },
+        {
+          "id": "caption-word-13-1",
+          "text": "à",
+          "start": 12.515,
+          "end": 12.782
+        }
+      ]
+    },
+    {
+      "id": "caption-group-14",
+      "frame": 2,
+      "start": 12.782,
+      "end": 13.703,
+      "text": "relancer un client",
+      "words": [
+        {
+          "id": "caption-word-14-0",
+          "text": "relancer",
+          "start": 12.782,
+          "end": 13.049
+        },
+        {
+          "id": "caption-word-14-1",
+          "text": "un",
+          "start": 13.049,
+          "end": 13.316
+        },
+        {
+          "id": "caption-word-14-2",
+          "text": "client",
+          "start": 13.316,
+          "end": 13.583
+        }
+      ]
+    },
+    {
+      "id": "caption-group-15",
+      "frame": 2,
+      "start": 13.85,
+      "end": 14.384,
+      "text": "Et l'agent",
+      "words": [
+        {
+          "id": "caption-word-15-0",
+          "text": "Et",
+          "start": 13.85,
+          "end": 14.117
+        },
+        {
+          "id": "caption-word-15-1",
+          "text": "l'agent",
+          "start": 14.117,
+          "end": 14.384
+        }
+      ]
+    },
+    {
+      "id": "caption-group-16",
+      "frame": 2,
+      "start": 14.384,
+      "end": 14.918,
+      "text": "commercial se",
+      "words": [
+        {
+          "id": "caption-word-16-0",
+          "text": "commercial",
+          "start": 14.384,
+          "end": 14.651
+        },
+        {
+          "id": "caption-word-16-1",
+          "text": "se",
+          "start": 14.651,
+          "end": 14.918
+        }
+      ]
+    },
+    {
+      "id": "caption-group-17",
+      "frame": 2,
+      "start": 14.918,
+      "end": 15.185,
+      "text": "réveille.",
+      "words": [
+        {
+          "id": "caption-word-17-0",
+          "text": "réveille.",
+          "start": 14.918,
+          "end": 15.185
+        }
+      ]
+    },
+    {
+      "id": "caption-group-18",
+      "frame": 3,
+      "start": 15.185,
+      "end": 15.849,
+      "text": "Il prépare",
+      "words": [
+        {
+          "id": "caption-word-18-0",
+          "text": "Il",
+          "start": 15.185,
+          "end": 15.517
+        },
+        {
+          "id": "caption-word-18-1",
+          "text": "prépare",
+          "start": 15.517,
+          "end": 15.849
+        }
+      ]
+    },
+    {
+      "id": "caption-group-19",
+      "frame": 3,
+      "start": 15.849,
+      "end": 16.514,
+      "text": "la relance,",
+      "words": [
+        {
+          "id": "caption-word-19-0",
+          "text": "la",
+          "start": 15.849,
+          "end": 16.182
+        },
+        {
+          "id": "caption-word-19-1",
+          "text": "relance,",
+          "start": 16.182,
+          "end": 16.514
+        }
+      ]
+    },
+    {
+      "id": "caption-group-20",
+      "frame": 3,
+      "start": 16.514,
+      "end": 17.178,
+      "text": "choisit le",
+      "words": [
+        {
+          "id": "caption-word-20-0",
+          "text": "choisit",
+          "start": 16.514,
+          "end": 16.846
+        },
+        {
+          "id": "caption-word-20-1",
+          "text": "le",
+          "start": 16.846,
+          "end": 17.178
+        }
+      ]
+    },
+    {
+      "id": "caption-group-21",
+      "frame": 3,
+      "start": 17.178,
+      "end": 17.843,
+      "text": "bon ton,",
+      "words": [
+        {
+          "id": "caption-word-21-0",
+          "text": "bon",
+          "start": 17.178,
+          "end": 17.511
+        },
+        {
+          "id": "caption-word-21-1",
+          "text": "ton,",
+          "start": 17.511,
+          "end": 17.843
+        }
+      ]
+    },
+    {
+      "id": "caption-group-22",
+      "frame": 3,
+      "start": 17.843,
+      "end": 18.507,
+      "text": "puis s'arrête",
+      "words": [
+        {
+          "id": "caption-word-22-0",
+          "text": "puis",
+          "start": 17.843,
+          "end": 18.175
+        },
+        {
+          "id": "caption-word-22-1",
+          "text": "s'arrête",
+          "start": 18.175,
+          "end": 18.507
+        }
+      ]
+    },
+    {
+      "id": "caption-group-23",
+      "frame": 3,
+      "start": 18.507,
+      "end": 19.624,
+      "text": "et te demande",
+      "words": [
+        {
+          "id": "caption-word-23-0",
+          "text": "et",
+          "start": 18.507,
+          "end": 18.839
+        },
+        {
+          "id": "caption-word-23-1",
+          "text": "te",
+          "start": 18.839,
+          "end": 19.172
+        },
+        {
+          "id": "caption-word-23-2",
+          "text": "demande",
+          "start": 19.172,
+          "end": 19.504
+        }
+      ]
+    },
+    {
+      "id": "caption-group-24",
+      "frame": 3,
+      "start": 19.836,
+      "end": 20.621,
+      "text": "je l'envoie",
+      "words": [
+        {
+          "id": "caption-word-24-0",
+          "text": "je",
+          "start": 19.836,
+          "end": 20.168
+        },
+        {
+          "id": "caption-word-24-1",
+          "text": "l'envoie",
+          "start": 20.168,
+          "end": 20.501
+        }
+      ]
+    },
+    {
+      "id": "caption-group-25",
+      "frame": 3,
+      "start": 20.833,
+      "end": 21.497,
+      "text": "C'est toi",
+      "words": [
+        {
+          "id": "caption-word-25-0",
+          "text": "C'est",
+          "start": 20.833,
+          "end": 21.165
+        },
+        {
+          "id": "caption-word-25-1",
+          "text": "toi",
+          "start": 21.165,
+          "end": 21.497
+        }
+      ]
+    },
+    {
+      "id": "caption-group-26",
+      "frame": 3,
+      "start": 21.497,
+      "end": 22.162,
+      "text": "qui valides.",
+      "words": [
+        {
+          "id": "caption-word-26-0",
+          "text": "qui",
+          "start": 21.497,
+          "end": 21.829
+        },
+        {
+          "id": "caption-word-26-1",
+          "text": "valides.",
+          "start": 21.829,
+          "end": 22.162
+        }
+      ]
+    },
+    {
+      "id": "caption-group-27",
+      "frame": 3,
+      "start": 22.162,
+      "end": 22.494,
+      "text": "Toujours.",
+      "words": [
+        {
+          "id": "caption-word-27-0",
+          "text": "Toujours.",
+          "start": 22.162,
+          "end": 22.494
+        }
+      ]
+    },
+    {
+      "id": "caption-group-28",
+      "frame": 3,
+      "start": 22.494,
+      "end": 23.158,
+      "text": "L'IA propose,",
+      "words": [
+        {
+          "id": "caption-word-28-0",
+          "text": "L'IA",
+          "start": 22.494,
+          "end": 22.826
+        },
+        {
+          "id": "caption-word-28-1",
+          "text": "propose,",
+          "start": 22.826,
+          "end": 23.158
+        }
+      ]
+    },
+    {
+      "id": "caption-group-29",
+      "frame": 3,
+      "start": 23.158,
+      "end": 23.943,
+      "text": "tu décides.",
+      "words": [
+        {
+          "id": "caption-word-29-0",
+          "text": "tu",
+          "start": 23.158,
+          "end": 23.491
+        },
+        {
+          "id": "caption-word-29-1",
+          "text": "décides.",
+          "start": 23.491,
+          "end": 23.823
+        }
+      ]
+    }
+  ]
+}
