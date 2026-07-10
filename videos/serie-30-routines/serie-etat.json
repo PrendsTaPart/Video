@@ -1,0 +1,33 @@
+{
+  "serie": "30 routines pour faire tourner ta boite",
+  "version": 1,
+  "pause": true,
+  "_pause_note": "Kill-switch. Reste true tant que : (1) les 30 scripts ne sont pas valides, (2) le pilote E1 n'est pas approuve, (3) la pre-autorisation budgetaire n'est pas ecrite ci-dessous. Passer a false = feu vert pour la routine quotidienne.",
+  "episode_courant": 1,
+  "total_episodes": 30,
+  "date_debut": "A_DEFINIR_YYYY-MM-DD",
+  "heure_publication": "08:00:00",
+  "timezone": "Europe/Paris",
+  "comptes": {
+    "linkedin_account_id": "101119080",
+    "linkedin_nom": "BraindCode",
+    "tiktok_account_id": null,
+    "_tiktok_note": "BLOQUANT : TikTok non connecte au CMS (networks: facebook/linkedin/instagram). Connecter TikTok BraindCode dans RapidoCMS puis renseigner l'account_id ici."
+  },
+  "budget": {
+    "rendu_autorise": false,
+    "_rendu_note": "Pre-autorisation batch a ecrire APRES validation du pilote E1 : passer rendu_autorise a true, definir les plafonds.",
+    "plafond_par_jour": null,
+    "plafond_total": null,
+    "credits_consommes": 0
+  },
+  "design": {
+    "format": "1080x1920",
+    "design_source": "blockframe",
+    "bgm_db": -18,
+    "sous_titres": "incrustes_100pct",
+    "overlay_episode": true,
+    "logo": "braindcode_haut"
+  },
+  "historique": []
+}
