@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <title>E5 F1 — Le coach t'interviewe (portrait)</title>
+  </head>
+  <body>
+    <template>
+      <style>
+        @font-face { font-family: "Poppins"; src: url("assets/fonts/Poppins-600.woff2") format("woff2"); font-weight: 600; }
+        @font-face { font-family: "Poppins"; src: url("assets/fonts/Poppins-700.woff2") format("woff2"); font-weight: 700; }
+        @font-face { font-family: "Poppins"; src: url("assets/fonts/Poppins-800.woff2") format("woff2"); font-weight: 800; }
+        @font-face { font-family: "Inter"; src: url("assets/fonts/Inter-Variable.woff2") format("woff2-variations"); font-weight: 100 900; }
+
+        #root { position: absolute; inset: 0; width: 1080px; height: 1920px; overflow: hidden; font-family: "Poppins", "Inter", sans-serif; color: #1b2a41; isolation: isolate; }
+        .bg { position: absolute; inset: 0; background: #f7f9fc; background-image: radial-gradient(circle at 50% 24%, rgba(90,103,242,0.08), transparent 55%); }
+
+        .head { position: absolute; left: 80px; right: 80px; top: 150px; z-index: 4; text-align: center; }
+        .head .ey { font-family: "Poppins", sans-serif; font-weight: 700; font-size: 34px; letter-spacing: 0.1em; text-transform: uppercase; color: #5a67f2; opacity: 0; margin: 0 0 14px; will-change: transform, opacity; }
+        .head .k { font-family: "Poppins", sans-serif; font-weight: 800; font-size: 74px; line-height: 1.05; letter-spacing: -0.02em; color: #1b2a41; opacity: 0; will-change: transform, opacity; }
+        .head .k .a { color: #5a67f2; }
+
+        .steps { position: absolute; left: 110px; top: 490px; width: 860px; z-index: 3; display: flex; flex-direction: column; gap: 22px; }
+        .step { display: flex; align-items: center; gap: 24px; background: #fff; border: 1.5px solid rgba(90,103,242,0.2); border-radius: 22px; padding: 26px 32px; opacity: 0; will-change: transform, opacity; }
+        .step .q { flex: none; width: 72px; height: 72px; border-radius: 50%; background: rgba(90,103,242,0.1); display: grid; place-items: center; font-family: "Poppins", sans-serif; font-weight: 800; font-size: 44px; color: #5a67f2; }
+        .step b { font-family: "Poppins", sans-serif; font-weight: 700; font-size: 46px; color: #1b2a41; }
+
+        .foot { position: absolute; left: 50%; top: 1660px; transform: translateX(-50%); z-index: 4; padding: 22px 44px; background: #1b2a41; border-radius: 100px; opacity: 0; white-space: nowrap; will-change: transform, opacity; }
+        .foot b { font-family: "Poppins", sans-serif; font-weight: 700; font-size: 40px; color: #fff; }
+        .foot b span { color: #9aa6ff; }
+      </style>
+
+      <div id="root" data-composition-id="01-coach" data-width="1080" data-height="1920" data-duration="10.531">
+        <div id="bg-clip" class="clip bg" data-start="0" data-duration="10.031" data-track-index="0"></div>
+        <div id="scene" class="clip" data-start="0" data-duration="10.031" data-track-index="1" style="position:absolute; inset:0;">
+          <div class="head">
+            <p class="ey" id="ey">Ton business plan en discutant</p>
+            <div class="k" id="k">Un coach qui te<br />fait <span class="a">réfléchir</span>.</div>
+          </div>
+          <div class="steps">
+            <div class="step" id="s1"><span class="q">?</span><b>Marché</b></div>
+            <div class="step" id="s2"><span class="q">?</span><b>Offre</b></div>
+            <div class="step" id="s3"><span class="q">?</span><b>Modèle économique</b></div>
+            <div class="step" id="s4"><span class="q">?</span><b>Prévisions</b></div>
+          </div>
+          <div class="foot" id="foot"><b>section <span>par section</span></b></div>
+        </div>
+      </div>
+
+      <script src="assets/vendor/gsap.min.js"></script>
+      <script>
+        window.__timelines = window.__timelines || {};
+        const tl = gsap.timeline({ paused: true });
+        tl.fromTo("#ey", { y: 14, opacity: 0 }, { y: 0, opacity: 1, duration: 0.45, ease: "power3.out" }, 0.1);
+        tl.fromTo("#k", { y: 22, opacity: 0 }, { y: 0, opacity: 1, duration: 0.55, ease: "power3.out" }, 0.4);
+        var cues = [1.8, 3.4, 5.0, 6.6];
+        ["#s1","#s2","#s3","#s4"].forEach(function (id, i) {
+          tl.fromTo(id, { x: -24, scale: 0.96, opacity: 0 }, { x: 0, scale: 1, opacity: 1, duration: 0.46, ease: "power3.out" }, cues[i]);
+        });
+        tl.fromTo("#foot", { y: 18, scale: 0.9, opacity: 0 }, { y: 0, scale: 1, opacity: 1, duration: 0.5, ease: "back.out(1.5)" }, 8.4);
+        window.__timelines["01-coach"] = tl;
+      </script>
+    </template>
+  </body>
+</html>
