@@ -1,0 +1,604 @@
+{
+  "total_duration_s": 24.891,
+  "width": 1080,
+  "height": 1920,
+  "groups": [
+    {
+      "id": "caption-group-0",
+      "frame": 1,
+      "start": 0,
+      "end": 1.269,
+      "text": "Le plan financier",
+      "words": [
+        {
+          "id": "caption-word-0-0",
+          "text": "Le",
+          "start": 0,
+          "end": 0.423
+        },
+        {
+          "id": "caption-word-0-1",
+          "text": "plan",
+          "start": 0.423,
+          "end": 0.846
+        },
+        {
+          "id": "caption-word-0-2",
+          "text": "financier",
+          "start": 0.846,
+          "end": 1.269
+        }
+      ]
+    },
+    {
+      "id": "caption-group-1",
+      "frame": 1,
+      "start": 1.269,
+      "end": 2.539,
+      "text": "prévisionnel projette ton",
+      "words": [
+        {
+          "id": "caption-word-1-0",
+          "text": "prévisionnel",
+          "start": 1.269,
+          "end": 1.692
+        },
+        {
+          "id": "caption-word-1-1",
+          "text": "projette",
+          "start": 1.692,
+          "end": 2.116
+        },
+        {
+          "id": "caption-word-1-2",
+          "text": "ton",
+          "start": 2.116,
+          "end": 2.539
+        }
+      ]
+    },
+    {
+      "id": "caption-group-2",
+      "frame": 1,
+      "start": 2.539,
+      "end": 3.808,
+      "text": "activité sur trois",
+      "words": [
+        {
+          "id": "caption-word-2-0",
+          "text": "activité",
+          "start": 2.539,
+          "end": 2.962
+        },
+        {
+          "id": "caption-word-2-1",
+          "text": "sur",
+          "start": 2.962,
+          "end": 3.385
+        },
+        {
+          "id": "caption-word-2-2",
+          "text": "trois",
+          "start": 3.385,
+          "end": 3.808
+        }
+      ]
+    },
+    {
+      "id": "caption-group-3",
+      "frame": 1,
+      "start": 3.808,
+      "end": 4.231,
+      "text": "ans.",
+      "words": [
+        {
+          "id": "caption-word-3-0",
+          "text": "ans.",
+          "start": 3.808,
+          "end": 4.231
+        }
+      ]
+    },
+    {
+      "id": "caption-group-4",
+      "frame": 1,
+      "start": 4.231,
+      "end": 5.077,
+      "text": "Chiffre d'affaires,",
+      "words": [
+        {
+          "id": "caption-word-4-0",
+          "text": "Chiffre",
+          "start": 4.231,
+          "end": 4.654
+        },
+        {
+          "id": "caption-word-4-1",
+          "text": "d'affaires,",
+          "start": 4.654,
+          "end": 5.077
+        }
+      ]
+    },
+    {
+      "id": "caption-group-5",
+      "frame": 1,
+      "start": 5.077,
+      "end": 5.501,
+      "text": "charges,",
+      "words": [
+        {
+          "id": "caption-word-5-0",
+          "text": "charges,",
+          "start": 5.077,
+          "end": 5.501
+        }
+      ]
+    },
+    {
+      "id": "caption-group-6",
+      "frame": 1,
+      "start": 5.501,
+      "end": 6.347,
+      "text": "point mort.",
+      "words": [
+        {
+          "id": "caption-word-6-0",
+          "text": "point",
+          "start": 5.501,
+          "end": 5.924
+        },
+        {
+          "id": "caption-word-6-1",
+          "text": "mort.",
+          "start": 5.924,
+          "end": 6.347
+        }
+      ]
+    },
+    {
+      "id": "caption-group-7",
+      "frame": 1,
+      "start": 6.347,
+      "end": 7.616,
+      "text": "Avec un garde-fou",
+      "words": [
+        {
+          "id": "caption-word-7-0",
+          "text": "Avec",
+          "start": 6.347,
+          "end": 6.77
+        },
+        {
+          "id": "caption-word-7-1",
+          "text": "un",
+          "start": 6.77,
+          "end": 7.193
+        },
+        {
+          "id": "caption-word-7-2",
+          "text": "garde-fou",
+          "start": 7.193,
+          "end": 7.616
+        }
+      ]
+    },
+    {
+      "id": "caption-group-8",
+      "frame": 1,
+      "start": 7.616,
+      "end": 8.582,
+      "text": "anti-courbe magique",
+      "words": [
+        {
+          "id": "caption-word-8-0",
+          "text": "anti-courbe",
+          "start": 7.616,
+          "end": 8.039
+        },
+        {
+          "id": "caption-word-8-1",
+          "text": "magique",
+          "start": 8.039,
+          "end": 8.462
+        }
+      ]
+    },
+    {
+      "id": "caption-group-9",
+      "frame": 1,
+      "start": 8.886,
+      "end": 10.155,
+      "text": "pas de croissance",
+      "words": [
+        {
+          "id": "caption-word-9-0",
+          "text": "pas",
+          "start": 8.886,
+          "end": 9.309
+        },
+        {
+          "id": "caption-word-9-1",
+          "text": "de",
+          "start": 9.309,
+          "end": 9.732
+        },
+        {
+          "id": "caption-word-9-2",
+          "text": "croissance",
+          "start": 9.732,
+          "end": 10.155
+        }
+      ]
+    },
+    {
+      "id": "caption-group-10",
+      "frame": 1,
+      "start": 10.155,
+      "end": 11.424,
+      "text": "miraculeuse non justifiée.",
+      "words": [
+        {
+          "id": "caption-word-10-0",
+          "text": "miraculeuse",
+          "start": 10.155,
+          "end": 10.578
+        },
+        {
+          "id": "caption-word-10-1",
+          "text": "non",
+          "start": 10.578,
+          "end": 11.001
+        },
+        {
+          "id": "caption-word-10-2",
+          "text": "justifiée.",
+          "start": 11.001,
+          "end": 11.424
+        }
+      ]
+    },
+    {
+      "id": "caption-group-11",
+      "frame": 2,
+      "start": 11.424,
+      "end": 12.206,
+      "text": "Tu demandes",
+      "words": [
+        {
+          "id": "caption-word-11-0",
+          "text": "Tu",
+          "start": 11.424,
+          "end": 11.755
+        },
+        {
+          "id": "caption-word-11-1",
+          "text": "demandes",
+          "start": 11.755,
+          "end": 12.086
+        }
+      ]
+    },
+    {
+      "id": "caption-group-12",
+      "frame": 2,
+      "start": 12.417,
+      "end": 13.078,
+      "text": "génère mon",
+      "words": [
+        {
+          "id": "caption-word-12-0",
+          "text": "génère",
+          "start": 12.417,
+          "end": 12.748
+        },
+        {
+          "id": "caption-word-12-1",
+          "text": "mon",
+          "start": 12.748,
+          "end": 13.078
+        }
+      ]
+    },
+    {
+      "id": "caption-group-13",
+      "frame": 2,
+      "start": 13.078,
+      "end": 13.74,
+      "text": "prévisionnel trois",
+      "words": [
+        {
+          "id": "caption-word-13-0",
+          "text": "prévisionnel",
+          "start": 13.078,
+          "end": 13.409
+        },
+        {
+          "id": "caption-word-13-1",
+          "text": "trois",
+          "start": 13.409,
+          "end": 13.74
+        }
+      ]
+    },
+    {
+      "id": "caption-group-14",
+      "frame": 2,
+      "start": 13.74,
+      "end": 14.071,
+      "text": "ans.",
+      "words": [
+        {
+          "id": "caption-word-14-0",
+          "text": "ans.",
+          "start": 13.74,
+          "end": 14.071
+        }
+      ]
+    },
+    {
+      "id": "caption-group-15",
+      "frame": 3,
+      "start": 14.071,
+      "end": 15.23,
+      "text": "Léa obtient trois",
+      "words": [
+        {
+          "id": "caption-word-15-0",
+          "text": "Léa",
+          "start": 14.071,
+          "end": 14.457
+        },
+        {
+          "id": "caption-word-15-1",
+          "text": "obtient",
+          "start": 14.457,
+          "end": 14.844
+        },
+        {
+          "id": "caption-word-15-2",
+          "text": "trois",
+          "start": 14.844,
+          "end": 15.23
+        }
+      ]
+    },
+    {
+      "id": "caption-group-16",
+      "frame": 3,
+      "start": 15.23,
+      "end": 15.737,
+      "text": "scénarios",
+      "words": [
+        {
+          "id": "caption-word-16-0",
+          "text": "scénarios",
+          "start": 15.23,
+          "end": 15.617
+        }
+      ]
+    },
+    {
+      "id": "caption-group-17",
+      "frame": 3,
+      "start": 16.003,
+      "end": 16.39,
+      "text": "prudent,",
+      "words": [
+        {
+          "id": "caption-word-17-0",
+          "text": "prudent,",
+          "start": 16.003,
+          "end": 16.39
+        }
+      ]
+    },
+    {
+      "id": "caption-group-18",
+      "frame": 3,
+      "start": 16.39,
+      "end": 16.776,
+      "text": "réaliste,",
+      "words": [
+        {
+          "id": "caption-word-18-0",
+          "text": "réaliste,",
+          "start": 16.39,
+          "end": 16.776
+        }
+      ]
+    },
+    {
+      "id": "caption-group-19",
+      "frame": 3,
+      "start": 16.776,
+      "end": 17.163,
+      "text": "ambitieux.",
+      "words": [
+        {
+          "id": "caption-word-19-0",
+          "text": "ambitieux.",
+          "start": 16.776,
+          "end": 17.163
+        }
+      ]
+    },
+    {
+      "id": "caption-group-20",
+      "frame": 3,
+      "start": 17.163,
+      "end": 18.322,
+      "text": "Et surtout son",
+      "words": [
+        {
+          "id": "caption-word-20-0",
+          "text": "Et",
+          "start": 17.163,
+          "end": 17.549
+        },
+        {
+          "id": "caption-word-20-1",
+          "text": "surtout",
+          "start": 17.549,
+          "end": 17.935
+        },
+        {
+          "id": "caption-word-20-2",
+          "text": "son",
+          "start": 17.935,
+          "end": 18.322
+        }
+      ]
+    },
+    {
+      "id": "caption-group-21",
+      "frame": 3,
+      "start": 18.322,
+      "end": 19.215,
+      "text": "point mort",
+      "words": [
+        {
+          "id": "caption-word-21-0",
+          "text": "point",
+          "start": 18.322,
+          "end": 18.708
+        },
+        {
+          "id": "caption-word-21-1",
+          "text": "mort",
+          "start": 18.708,
+          "end": 19.095
+        }
+      ]
+    },
+    {
+      "id": "caption-group-22",
+      "frame": 3,
+      "start": 19.481,
+      "end": 20.641,
+      "text": "cent vingt couverts",
+      "words": [
+        {
+          "id": "caption-word-22-0",
+          "text": "cent",
+          "start": 19.481,
+          "end": 19.868
+        },
+        {
+          "id": "caption-word-22-1",
+          "text": "vingt",
+          "start": 19.868,
+          "end": 20.254
+        },
+        {
+          "id": "caption-word-22-2",
+          "text": "couverts",
+          "start": 20.254,
+          "end": 20.641
+        }
+      ]
+    },
+    {
+      "id": "caption-group-23",
+      "frame": 3,
+      "start": 20.641,
+      "end": 21.8,
+      "text": "par semaine pour",
+      "words": [
+        {
+          "id": "caption-word-23-0",
+          "text": "par",
+          "start": 20.641,
+          "end": 21.027
+        },
+        {
+          "id": "caption-word-23-1",
+          "text": "semaine",
+          "start": 21.027,
+          "end": 21.413
+        },
+        {
+          "id": "caption-word-23-2",
+          "text": "pour",
+          "start": 21.413,
+          "end": 21.8
+        }
+      ]
+    },
+    {
+      "id": "caption-group-24",
+      "frame": 3,
+      "start": 21.8,
+      "end": 22.573,
+      "text": "être rentable.",
+      "words": [
+        {
+          "id": "caption-word-24-0",
+          "text": "être",
+          "start": 21.8,
+          "end": 22.186
+        },
+        {
+          "id": "caption-word-24-1",
+          "text": "rentable.",
+          "start": 22.186,
+          "end": 22.573
+        }
+      ]
+    },
+    {
+      "id": "caption-group-25",
+      "frame": 3,
+      "start": 22.573,
+      "end": 23.732,
+      "text": "Un chiffre concret,",
+      "words": [
+        {
+          "id": "caption-word-25-0",
+          "text": "Un",
+          "start": 22.573,
+          "end": 22.959
+        },
+        {
+          "id": "caption-word-25-1",
+          "text": "chiffre",
+          "start": 22.959,
+          "end": 23.346
+        },
+        {
+          "id": "caption-word-25-2",
+          "text": "concret,",
+          "start": 23.346,
+          "end": 23.732
+        }
+      ]
+    },
+    {
+      "id": "caption-group-26",
+      "frame": 3,
+      "start": 23.732,
+      "end": 25.011,
+      "text": "pas un rêve.",
+      "words": [
+        {
+          "id": "caption-word-26-0",
+          "text": "pas",
+          "start": 23.732,
+          "end": 24.119
+        },
+        {
+          "id": "caption-word-26-1",
+          "text": "un",
+          "start": 24.119,
+          "end": 24.505
+        },
+        {
+          "id": "caption-word-26-2",
+          "text": "rêve.",
+          "start": 24.505,
+          "end": 24.891
+        }
+      ]
+    }
+  ]
+}
