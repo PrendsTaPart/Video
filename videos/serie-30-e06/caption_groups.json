@@ -1,0 +1,658 @@
+{
+  "total_duration_s": 22.292,
+  "width": 1080,
+  "height": 1920,
+  "groups": [
+    {
+      "id": "caption-group-0",
+      "frame": 1,
+      "start": 0,
+      "end": 1.027,
+      "text": "L'onboarding entreprise construit",
+      "words": [
+        {
+          "id": "caption-word-0-0",
+          "text": "L'onboarding",
+          "start": 0,
+          "end": 0.342
+        },
+        {
+          "id": "caption-word-0-1",
+          "text": "entreprise",
+          "start": 0.342,
+          "end": 0.685
+        },
+        {
+          "id": "caption-word-0-2",
+          "text": "construit",
+          "start": 0.685,
+          "end": 1.027
+        }
+      ]
+    },
+    {
+      "id": "caption-group-1",
+      "frame": 1,
+      "start": 1.027,
+      "end": 2.054,
+      "text": "la mémoire de",
+      "words": [
+        {
+          "id": "caption-word-1-0",
+          "text": "la",
+          "start": 1.027,
+          "end": 1.369
+        },
+        {
+          "id": "caption-word-1-1",
+          "text": "mémoire",
+          "start": 1.369,
+          "end": 1.711
+        },
+        {
+          "id": "caption-word-1-2",
+          "text": "de",
+          "start": 1.711,
+          "end": 2.054
+        }
+      ]
+    },
+    {
+      "id": "caption-group-2",
+      "frame": 1,
+      "start": 2.054,
+      "end": 2.858,
+      "text": "ta boîte",
+      "words": [
+        {
+          "id": "caption-word-2-0",
+          "text": "ta",
+          "start": 2.054,
+          "end": 2.396
+        },
+        {
+          "id": "caption-word-2-1",
+          "text": "boîte",
+          "start": 2.396,
+          "end": 2.738
+        }
+      ]
+    },
+    {
+      "id": "caption-group-3",
+      "frame": 1,
+      "start": 3.081,
+      "end": 3.765,
+      "text": "ton activité,",
+      "words": [
+        {
+          "id": "caption-word-3-0",
+          "text": "ton",
+          "start": 3.081,
+          "end": 3.423
+        },
+        {
+          "id": "caption-word-3-1",
+          "text": "activité,",
+          "start": 3.423,
+          "end": 3.765
+        }
+      ]
+    },
+    {
+      "id": "caption-group-4",
+      "frame": 1,
+      "start": 3.765,
+      "end": 4.45,
+      "text": "ton ton,",
+      "words": [
+        {
+          "id": "caption-word-4-0",
+          "text": "ton",
+          "start": 3.765,
+          "end": 4.107
+        },
+        {
+          "id": "caption-word-4-1",
+          "text": "ton,",
+          "start": 4.107,
+          "end": 4.45
+        }
+      ]
+    },
+    {
+      "id": "caption-group-5",
+      "frame": 1,
+      "start": 4.45,
+      "end": 5.134,
+      "text": "tes clients,",
+      "words": [
+        {
+          "id": "caption-word-5-0",
+          "text": "tes",
+          "start": 4.45,
+          "end": 4.792
+        },
+        {
+          "id": "caption-word-5-1",
+          "text": "clients,",
+          "start": 4.792,
+          "end": 5.134
+        }
+      ]
+    },
+    {
+      "id": "caption-group-6",
+      "frame": 1,
+      "start": 5.134,
+      "end": 5.819,
+      "text": "tes offres.",
+      "words": [
+        {
+          "id": "caption-word-6-0",
+          "text": "tes",
+          "start": 5.134,
+          "end": 5.476
+        },
+        {
+          "id": "caption-word-6-1",
+          "text": "offres.",
+          "start": 5.476,
+          "end": 5.819
+        }
+      ]
+    },
+    {
+      "id": "caption-group-7",
+      "frame": 1,
+      "start": 5.819,
+      "end": 6.846,
+      "text": "Une base de",
+      "words": [
+        {
+          "id": "caption-word-7-0",
+          "text": "Une",
+          "start": 5.819,
+          "end": 6.161
+        },
+        {
+          "id": "caption-word-7-1",
+          "text": "base",
+          "start": 6.161,
+          "end": 6.503
+        },
+        {
+          "id": "caption-word-7-2",
+          "text": "de",
+          "start": 6.503,
+          "end": 6.846
+        }
+      ]
+    },
+    {
+      "id": "caption-group-8",
+      "frame": 1,
+      "start": 6.846,
+      "end": 7.872,
+      "text": "connaissance que l'IA",
+      "words": [
+        {
+          "id": "caption-word-8-0",
+          "text": "connaissance",
+          "start": 6.846,
+          "end": 7.188
+        },
+        {
+          "id": "caption-word-8-1",
+          "text": "que",
+          "start": 7.188,
+          "end": 7.53
+        },
+        {
+          "id": "caption-word-8-2",
+          "text": "l'IA",
+          "start": 7.53,
+          "end": 7.872
+        }
+      ]
+    },
+    {
+      "id": "caption-group-9",
+      "frame": 1,
+      "start": 7.872,
+      "end": 8.899,
+      "text": "relit à chaque",
+      "words": [
+        {
+          "id": "caption-word-9-0",
+          "text": "relit",
+          "start": 7.872,
+          "end": 8.215
+        },
+        {
+          "id": "caption-word-9-1",
+          "text": "à",
+          "start": 8.215,
+          "end": 8.557
+        },
+        {
+          "id": "caption-word-9-2",
+          "text": "chaque",
+          "start": 8.557,
+          "end": 8.899
+        }
+      ]
+    },
+    {
+      "id": "caption-group-10",
+      "frame": 1,
+      "start": 8.899,
+      "end": 9.242,
+      "text": "tâche.",
+      "words": [
+        {
+          "id": "caption-word-10-0",
+          "text": "tâche.",
+          "start": 8.899,
+          "end": 9.242
+        }
+      ]
+    },
+    {
+      "id": "caption-group-11",
+      "frame": 2,
+      "start": 9.242,
+      "end": 9.959,
+      "text": "Tu dis",
+      "words": [
+        {
+          "id": "caption-word-11-0",
+          "text": "Tu",
+          "start": 9.242,
+          "end": 9.541
+        },
+        {
+          "id": "caption-word-11-1",
+          "text": "dis",
+          "start": 9.541,
+          "end": 9.839
+        }
+      ]
+    },
+    {
+      "id": "caption-group-12",
+      "frame": 2,
+      "start": 10.138,
+      "end": 10.735,
+      "text": "apprends à",
+      "words": [
+        {
+          "id": "caption-word-12-0",
+          "text": "apprends",
+          "start": 10.138,
+          "end": 10.436
+        },
+        {
+          "id": "caption-word-12-1",
+          "text": "à",
+          "start": 10.436,
+          "end": 10.735
+        }
+      ]
+    },
+    {
+      "id": "caption-group-13",
+      "frame": 2,
+      "start": 10.735,
+      "end": 11.332,
+      "text": "connaître mon",
+      "words": [
+        {
+          "id": "caption-word-13-0",
+          "text": "connaître",
+          "start": 10.735,
+          "end": 11.033
+        },
+        {
+          "id": "caption-word-13-1",
+          "text": "mon",
+          "start": 11.033,
+          "end": 11.332
+        }
+      ]
+    },
+    {
+      "id": "caption-group-14",
+      "frame": 2,
+      "start": 11.332,
+      "end": 11.63,
+      "text": "entreprise.",
+      "words": [
+        {
+          "id": "caption-word-14-0",
+          "text": "entreprise.",
+          "start": 11.332,
+          "end": 11.63
+        }
+      ]
+    },
+    {
+      "id": "caption-group-15",
+      "frame": 2,
+      "start": 11.63,
+      "end": 12.227,
+      "text": "Et tu",
+      "words": [
+        {
+          "id": "caption-word-15-0",
+          "text": "Et",
+          "start": 11.63,
+          "end": 11.929
+        },
+        {
+          "id": "caption-word-15-1",
+          "text": "tu",
+          "start": 11.929,
+          "end": 12.227
+        }
+      ]
+    },
+    {
+      "id": "caption-group-16",
+      "frame": 2,
+      "start": 12.227,
+      "end": 12.825,
+      "text": "réponds à",
+      "words": [
+        {
+          "id": "caption-word-16-0",
+          "text": "réponds",
+          "start": 12.227,
+          "end": 12.526
+        },
+        {
+          "id": "caption-word-16-1",
+          "text": "à",
+          "start": 12.526,
+          "end": 12.825
+        }
+      ]
+    },
+    {
+      "id": "caption-group-17",
+      "frame": 2,
+      "start": 12.825,
+      "end": 13.422,
+      "text": "quelques questions.",
+      "words": [
+        {
+          "id": "caption-word-17-0",
+          "text": "quelques",
+          "start": 12.825,
+          "end": 13.123
+        },
+        {
+          "id": "caption-word-17-1",
+          "text": "questions.",
+          "start": 13.123,
+          "end": 13.422
+        }
+      ]
+    },
+    {
+      "id": "caption-group-18",
+      "frame": 3,
+      "start": 13.422,
+      "end": 13.763,
+      "text": "Ensuite,",
+      "words": [
+        {
+          "id": "caption-word-18-0",
+          "text": "Ensuite,",
+          "start": 13.422,
+          "end": 13.763
+        }
+      ]
+    },
+    {
+      "id": "caption-group-19",
+      "frame": 3,
+      "start": 13.763,
+      "end": 14.787,
+      "text": "plus besoin d'expliquer.",
+      "words": [
+        {
+          "id": "caption-word-19-0",
+          "text": "plus",
+          "start": 13.763,
+          "end": 14.104
+        },
+        {
+          "id": "caption-word-19-1",
+          "text": "besoin",
+          "start": 14.104,
+          "end": 14.445
+        },
+        {
+          "id": "caption-word-19-2",
+          "text": "d'expliquer.",
+          "start": 14.445,
+          "end": 14.787
+        }
+      ]
+    },
+    {
+      "id": "caption-group-20",
+      "frame": 3,
+      "start": 14.787,
+      "end": 15.81,
+      "text": "Quand Léa demande",
+      "words": [
+        {
+          "id": "caption-word-20-0",
+          "text": "Quand",
+          "start": 14.787,
+          "end": 15.128
+        },
+        {
+          "id": "caption-word-20-1",
+          "text": "Léa",
+          "start": 15.128,
+          "end": 15.469
+        },
+        {
+          "id": "caption-word-20-2",
+          "text": "demande",
+          "start": 15.469,
+          "end": 15.81
+        }
+      ]
+    },
+    {
+      "id": "caption-group-21",
+      "frame": 3,
+      "start": 15.81,
+      "end": 16.492,
+      "text": "un post,",
+      "words": [
+        {
+          "id": "caption-word-21-0",
+          "text": "un",
+          "start": 15.81,
+          "end": 16.151
+        },
+        {
+          "id": "caption-word-21-1",
+          "text": "post,",
+          "start": 16.151,
+          "end": 16.492
+        }
+      ]
+    },
+    {
+      "id": "caption-group-22",
+      "frame": 3,
+      "start": 16.492,
+      "end": 17.516,
+      "text": "il sort déjà",
+      "words": [
+        {
+          "id": "caption-word-22-0",
+          "text": "il",
+          "start": 16.492,
+          "end": 16.834
+        },
+        {
+          "id": "caption-word-22-1",
+          "text": "sort",
+          "start": 16.834,
+          "end": 17.175
+        },
+        {
+          "id": "caption-word-22-2",
+          "text": "déjà",
+          "start": 17.175,
+          "end": 17.516
+        }
+      ]
+    },
+    {
+      "id": "caption-group-23",
+      "frame": 3,
+      "start": 17.516,
+      "end": 18.539,
+      "text": "au ton de",
+      "words": [
+        {
+          "id": "caption-word-23-0",
+          "text": "au",
+          "start": 17.516,
+          "end": 17.857
+        },
+        {
+          "id": "caption-word-23-1",
+          "text": "ton",
+          "start": 17.857,
+          "end": 18.198
+        },
+        {
+          "id": "caption-word-23-2",
+          "text": "de",
+          "start": 18.198,
+          "end": 18.539
+        }
+      ]
+    },
+    {
+      "id": "caption-group-24",
+      "frame": 3,
+      "start": 18.539,
+      "end": 19.222,
+      "text": "son restaurant,",
+      "words": [
+        {
+          "id": "caption-word-24-0",
+          "text": "son",
+          "start": 18.539,
+          "end": 18.88
+        },
+        {
+          "id": "caption-word-24-1",
+          "text": "restaurant,",
+          "start": 18.88,
+          "end": 19.222
+        }
+      ]
+    },
+    {
+      "id": "caption-group-25",
+      "frame": 3,
+      "start": 19.222,
+      "end": 20.245,
+      "text": "avec ses plats,",
+      "words": [
+        {
+          "id": "caption-word-25-0",
+          "text": "avec",
+          "start": 19.222,
+          "end": 19.563
+        },
+        {
+          "id": "caption-word-25-1",
+          "text": "ses",
+          "start": 19.563,
+          "end": 19.904
+        },
+        {
+          "id": "caption-word-25-2",
+          "text": "plats,",
+          "start": 19.904,
+          "end": 20.245
+        }
+      ]
+    },
+    {
+      "id": "caption-group-26",
+      "frame": 3,
+      "start": 20.245,
+      "end": 20.927,
+      "text": "sa signature.",
+      "words": [
+        {
+          "id": "caption-word-26-0",
+          "text": "sa",
+          "start": 20.245,
+          "end": 20.586
+        },
+        {
+          "id": "caption-word-26-1",
+          "text": "signature.",
+          "start": 20.586,
+          "end": 20.927
+        }
+      ]
+    },
+    {
+      "id": "caption-group-27",
+      "frame": 3,
+      "start": 20.927,
+      "end": 21.951,
+      "text": "L'IA n'oublie plus",
+      "words": [
+        {
+          "id": "caption-word-27-0",
+          "text": "L'IA",
+          "start": 20.927,
+          "end": 21.269
+        },
+        {
+          "id": "caption-word-27-1",
+          "text": "n'oublie",
+          "start": 21.269,
+          "end": 21.61
+        },
+        {
+          "id": "caption-word-27-2",
+          "text": "plus",
+          "start": 21.61,
+          "end": 21.951
+        }
+      ]
+    },
+    {
+      "id": "caption-group-28",
+      "frame": 3,
+      "start": 21.951,
+      "end": 22.412,
+      "text": "rien.",
+      "words": [
+        {
+          "id": "caption-word-28-0",
+          "text": "rien.",
+          "start": 21.951,
+          "end": 22.292
+        }
+      ]
+    }
+  ]
+}
