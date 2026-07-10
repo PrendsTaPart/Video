@@ -1,0 +1,453 @@
+{
+ "voices": [
+  {
+   "frame": 1,
+   "path": "assets/voice/routine.wav",
+   "duration_s": 7.988,
+   "words": [
+    {
+     "id": "w0",
+     "text": "La",
+     "start": 0.0,
+     "end": 0.347
+    },
+    {
+     "id": "w1",
+     "text": "journée",
+     "start": 0.347,
+     "end": 0.695
+    },
+    {
+     "id": "w2",
+     "text": "du",
+     "start": 0.695,
+     "end": 1.042
+    },
+    {
+     "id": "w3",
+     "text": "dirigeant.",
+     "start": 1.042,
+     "end": 1.389
+    },
+    {
+     "id": "w4",
+     "text": "Chaque",
+     "start": 1.389,
+     "end": 1.736
+    },
+    {
+     "id": "w5",
+     "text": "matin,",
+     "start": 1.736,
+     "end": 2.084
+    },
+    {
+     "id": "w6",
+     "text": "l'IA",
+     "start": 2.084,
+     "end": 2.431
+    },
+    {
+     "id": "w7",
+     "text": "lit",
+     "start": 2.431,
+     "end": 2.778
+    },
+    {
+     "id": "w8",
+     "text": "tes",
+     "start": 2.778,
+     "end": 3.126
+    },
+    {
+     "id": "w9",
+     "text": "emails,",
+     "start": 3.126,
+     "end": 3.473
+    },
+    {
+     "id": "w10",
+     "text": "croise",
+     "start": 3.473,
+     "end": 3.82
+    },
+    {
+     "id": "w11",
+     "text": "tes",
+     "start": 3.82,
+     "end": 4.167
+    },
+    {
+     "id": "w12",
+     "text": "trois",
+     "start": 4.167,
+     "end": 4.515
+    },
+    {
+     "id": "w13",
+     "text": "agendas",
+     "start": 4.515,
+     "end": 4.862
+    },
+    {
+     "id": "w14",
+     "text": "et",
+     "start": 4.862,
+     "end": 5.209
+    },
+    {
+     "id": "w15",
+     "text": "vérifie",
+     "start": 5.209,
+     "end": 5.557
+    },
+    {
+     "id": "w16",
+     "text": "tes",
+     "start": 5.557,
+     "end": 5.904
+    },
+    {
+     "id": "w17",
+     "text": "automatisations.",
+     "start": 5.904,
+     "end": 6.251
+    },
+    {
+     "id": "w18",
+     "text": "Toi,",
+     "start": 6.251,
+     "end": 6.599
+    },
+    {
+     "id": "w19",
+     "text": "tu",
+     "start": 6.599,
+     "end": 6.946
+    },
+    {
+     "id": "w20",
+     "text": "ne",
+     "start": 6.946,
+     "end": 7.293
+    },
+    {
+     "id": "w21",
+     "text": "fais",
+     "start": 7.293,
+     "end": 7.64
+    },
+    {
+     "id": "w22",
+     "text": "rien.",
+     "start": 7.64,
+     "end": 7.988
+    }
+   ]
+  },
+  {
+   "frame": 2,
+   "path": "assets/voice/prompt.wav",
+   "duration_s": 5.48,
+   "words": [
+    {
+     "id": "w0",
+     "text": "Une",
+     "start": 0.0,
+     "end": 0.365
+    },
+    {
+     "id": "w1",
+     "text": "seule",
+     "start": 0.365,
+     "end": 0.731
+    },
+    {
+     "id": "w2",
+     "text": "phrase",
+     "start": 0.731,
+     "end": 1.096
+    },
+    {
+     "id": "w3",
+     "text": ":",
+     "start": 1.096,
+     "end": 1.461
+    },
+    {
+     "id": "w4",
+     "text": "prépare",
+     "start": 1.461,
+     "end": 1.827
+    },
+    {
+     "id": "w5",
+     "text": "ma",
+     "start": 1.827,
+     "end": 2.192
+    },
+    {
+     "id": "w6",
+     "text": "journée.",
+     "start": 2.192,
+     "end": 2.557
+    },
+    {
+     "id": "w7",
+     "text": "Derrière,",
+     "start": 2.557,
+     "end": 2.923
+    },
+    {
+     "id": "w8",
+     "text": "six",
+     "start": 2.923,
+     "end": 3.288
+    },
+    {
+     "id": "w9",
+     "text": "outils",
+     "start": 3.288,
+     "end": 3.653
+    },
+    {
+     "id": "w10",
+     "text": "sont",
+     "start": 3.653,
+     "end": 4.019
+    },
+    {
+     "id": "w11",
+     "text": "consultés",
+     "start": 4.019,
+     "end": 4.384
+    },
+    {
+     "id": "w12",
+     "text": "en",
+     "start": 4.384,
+     "end": 4.749
+    },
+    {
+     "id": "w13",
+     "text": "quelques",
+     "start": 4.749,
+     "end": 5.115
+    },
+    {
+     "id": "w14",
+     "text": "secondes.",
+     "start": 5.115,
+     "end": 5.48
+    }
+   ]
+  },
+  {
+   "frame": 3,
+   "path": "assets/voice/cas.wav",
+   "duration_s": 13.235,
+   "words": [
+    {
+     "id": "w0",
+     "text": "Résultat",
+     "start": 0.0,
+     "end": 0.401
+    },
+    {
+     "id": "w1",
+     "text": ":",
+     "start": 0.401,
+     "end": 0.802
+    },
+    {
+     "id": "w2",
+     "text": "une",
+     "start": 0.802,
+     "end": 1.203
+    },
+    {
+     "id": "w3",
+     "text": "page.",
+     "start": 1.203,
+     "end": 1.604
+    },
+    {
+     "id": "w4",
+     "text": "Trois",
+     "start": 1.604,
+     "end": 2.005
+    },
+    {
+     "id": "w5",
+     "text": "priorités",
+     "start": 2.005,
+     "end": 2.406
+    },
+    {
+     "id": "w6",
+     "text": ":",
+     "start": 2.406,
+     "end": 2.808
+    },
+    {
+     "id": "w7",
+     "text": "le",
+     "start": 2.808,
+     "end": 3.209
+    },
+    {
+     "id": "w8",
+     "text": "devis",
+     "start": 3.209,
+     "end": 3.61
+    },
+    {
+     "id": "w9",
+     "text": "Martin",
+     "start": 3.61,
+     "end": 4.011
+    },
+    {
+     "id": "w10",
+     "text": "à",
+     "start": 4.011,
+     "end": 4.412
+    },
+    {
+     "id": "w11",
+     "text": "signer,",
+     "start": 4.412,
+     "end": 4.813
+    },
+    {
+     "id": "w12",
+     "text": "le",
+     "start": 4.813,
+     "end": 5.214
+    },
+    {
+     "id": "w13",
+     "text": "rendez-vous",
+     "start": 5.214,
+     "end": 5.615
+    },
+    {
+     "id": "w14",
+     "text": "de",
+     "start": 5.615,
+     "end": 6.016
+    },
+    {
+     "id": "w15",
+     "text": "quatorze",
+     "start": 6.016,
+     "end": 6.417
+    },
+    {
+     "id": "w16",
+     "text": "heures",
+     "start": 6.417,
+     "end": 6.818
+    },
+    {
+     "id": "w17",
+     "text": "préparé,",
+     "start": 6.818,
+     "end": 7.219
+    },
+    {
+     "id": "w18",
+     "text": "une",
+     "start": 7.219,
+     "end": 7.62
+    },
+    {
+     "id": "w19",
+     "text": "facture",
+     "start": 7.62,
+     "end": 8.021
+    },
+    {
+     "id": "w20",
+     "text": "en",
+     "start": 8.021,
+     "end": 8.423
+    },
+    {
+     "id": "w21",
+     "text": "retard",
+     "start": 8.423,
+     "end": 8.824
+    },
+    {
+     "id": "w22",
+     "text": "à",
+     "start": 8.824,
+     "end": 9.225
+    },
+    {
+     "id": "w23",
+     "text": "relancer.",
+     "start": 9.225,
+     "end": 9.626
+    },
+    {
+     "id": "w24",
+     "text": "Deux",
+     "start": 9.626,
+     "end": 10.027
+    },
+    {
+     "id": "w25",
+     "text": "alertes.",
+     "start": 10.027,
+     "end": 10.428
+    },
+    {
+     "id": "w26",
+     "text": "Zéro",
+     "start": 10.428,
+     "end": 10.829
+    },
+    {
+     "id": "w27",
+     "text": "onglet.",
+     "start": 10.829,
+     "end": 11.23
+    },
+    {
+     "id": "w28",
+     "text": "Douze",
+     "start": 11.23,
+     "end": 11.631
+    },
+    {
+     "id": "w29",
+     "text": "minutes",
+     "start": 11.631,
+     "end": 12.032
+    },
+    {
+     "id": "w30",
+     "text": "gagnées,",
+     "start": 12.032,
+     "end": 12.433
+    },
+    {
+     "id": "w31",
+     "text": "chaque",
+     "start": 12.433,
+     "end": 12.834
+    },
+    {
+     "id": "w32",
+     "text": "matin.",
+     "start": 12.834,
+     "end": 13.235
+    }
+   ]
+  }
+ ],
+ "bgm": null,
+ "sfx": []
+}

@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <title>E9 F1 — Le rituel du matin (portrait)</title>
+  </head>
+  <body>
+    <template>
+      <style>
+        @font-face { font-family: "Poppins"; src: url("assets/fonts/Poppins-600.woff2") format("woff2"); font-weight: 600; }
+        @font-face { font-family: "Poppins"; src: url("assets/fonts/Poppins-700.woff2") format("woff2"); font-weight: 700; }
+        @font-face { font-family: "Poppins"; src: url("assets/fonts/Poppins-800.woff2") format("woff2"); font-weight: 800; }
+        @font-face { font-family: "Inter"; src: url("assets/fonts/Inter-Variable.woff2") format("woff2-variations"); font-weight: 100 900; }
+
+        #root { position: absolute; inset: 0; width: 1080px; height: 1920px; overflow: hidden; font-family: "Poppins", "Inter", sans-serif; color: #1b2a41; isolation: isolate; }
+        .bg { position: absolute; inset: 0; background: #f7f9fc; background-image: radial-gradient(circle at 50% 26%, rgba(90,103,242,0.08), transparent 55%); }
+
+        .head { position: absolute; left: 80px; right: 80px; top: 150px; z-index: 4; text-align: center; }
+        .head .ey { font-family: "Poppins", sans-serif; font-weight: 700; font-size: 34px; letter-spacing: 0.1em; text-transform: uppercase; color: #5a67f2; opacity: 0; margin: 0 0 14px; will-change: transform, opacity; }
+        .head .k { font-family: "Poppins", sans-serif; font-weight: 800; font-size: 74px; line-height: 1.05; letter-spacing: -0.02em; color: #1b2a41; opacity: 0; will-change: transform, opacity; }
+        .head .k .a { color: #5a67f2; }
+
+        .rows { position: absolute; left: 110px; top: 500px; width: 860px; z-index: 3; display: flex; flex-direction: column; gap: 24px; }
+        .row { display: flex; align-items: center; gap: 26px; background: #fff; border: 1.5px solid rgba(90,103,242,0.2); border-radius: 24px; padding: 30px 36px; opacity: 0; will-change: transform, opacity; }
+        .row .ic { flex: none; width: 90px; height: 90px; border-radius: 22px; background: rgba(90,103,242,0.1); display: grid; place-items: center; }
+        .row .ic svg { width: 50px; height: 50px; fill: none; stroke: #5a67f2; stroke-width: 1.9; stroke-linecap: round; stroke-linejoin: round; }
+        .row b { font-family: "Poppins", sans-serif; font-weight: 700; font-size: 48px; color: #1b2a41; }
+
+        .foot { position: absolute; left: 50%; top: 1560px; transform: translateX(-50%); z-index: 4; padding: 24px 50px; background: #5a67f2; border-radius: 100px; opacity: 0; white-space: nowrap; box-shadow: 0 20px 50px rgba(90,103,242,0.35); will-change: transform, opacity; }
+        .foot b { font-family: "Poppins", sans-serif; font-weight: 800; font-size: 48px; color: #fff; }
+      </style>
+
+      <div id="root" data-composition-id="01-matin" data-width="1080" data-height="1920" data-duration="8.488">
+        <div id="bg-clip" class="clip bg" data-start="0" data-duration="7.988" data-track-index="0"></div>
+        <div id="scene" class="clip" data-start="0" data-duration="7.988" data-track-index="1" style="position:absolute; inset:0;">
+          <div class="head">
+            <p class="ey" id="ey">La journée du dirigeant</p>
+            <div class="k" id="k">Chaque matin,<br />l'IA <span class="a">bosse</span>.</div>
+          </div>
+          <div class="rows">
+            <div class="row" id="r1"><span class="ic"><svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2" /><path d="M3 7l9 6 9-6" /></svg></span><b>Lit tes emails</b></div>
+            <div class="row" id="r2"><span class="ic"><svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="17" rx="2" /><path d="M8 2v4M16 2v4M3 10h18" /></svg></span><b>Croise 3 agendas</b></div>
+            <div class="row" id="r3"><span class="ic"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="3" /><path d="M12 2v3M12 19v3M2 12h3M19 12h3M5 5l2 2M17 17l2 2M5 19l2-2M17 7l2-2" /></svg></span><b>Vérifie tes automatisations</b></div>
+          </div>
+          <div class="foot" id="foot"><b>Toi ? Tu ne fais rien.</b></div>
+        </div>
+      </div>
+
+      <script src="assets/vendor/gsap.min.js"></script>
+      <script>
+        window.__timelines = window.__timelines || {};
+        const tl = gsap.timeline({ paused: true });
+        tl.fromTo("#ey", { y: 14, opacity: 0 }, { y: 0, opacity: 1, duration: 0.45, ease: "power3.out" }, 0.1);
+        tl.fromTo("#k", { y: 22, opacity: 0 }, { y: 0, opacity: 1, duration: 0.55, ease: "power3.out" }, 0.4);
+        tl.fromTo("#r1", { x: -22, opacity: 0 }, { x: 0, opacity: 1, duration: 0.46, ease: "power3.out" }, 1.6);
+        tl.fromTo("#r2", { x: -22, opacity: 0 }, { x: 0, opacity: 1, duration: 0.46, ease: "power3.out" }, 2.8);
+        tl.fromTo("#r3", { x: -22, opacity: 0 }, { x: 0, opacity: 1, duration: 0.46, ease: "power3.out" }, 4.0);
+        tl.fromTo("#foot", { y: 18, scale: 0.9, opacity: 0 }, { y: 0, scale: 1, opacity: 1, duration: 0.5, ease: "back.out(1.5)" }, 5.6);
+        window.__timelines["01-matin"] = tl;
+      </script>
+    </template>
+  </body>
+</html>
