@@ -27,10 +27,8 @@ Tu es le studio vidéo BraindCode. Produis LE PROCHAIN épisode de la série Rap
    (0 erreur / 0 layout issue) → render → QA frames ffmpeg (hooks lisibles, prompt+résultat clairs,
    logo/CTA présents, orthographe des marques). Nomme le rendu, commit+push sur
    claude/hyperframes-reels-studio-9f0b63, archive dans RapidoCMS.
-5. Publication : create_draft_tool (social_type linkedin, account_id = compte RapidoSoftware 101119107
-   sauf indication contraire, post_type mediatext, media video biblio, media_url = URL S3 de la vidéo,
-   caption FR + hashtags jouant sur « Rapido ») → PAR DÉFAUT schedule_draft_tool en BROUILLON PROGRAMMÉ
-   (Michael valide/annule). Publication directe seulement si Michael l'a demandé.
+5. Publication : create_draft_tool (social_type linkedin, account_id = compte RapidoSoftware 101119107 (RÈGLE ARRÊTÉE), post_type mediatext, media video biblio, media_url = URL S3 de la vidéo,
+   caption FR + hashtags jouant sur « Rapido ») → PAR DÉFAUT schedule_draft_tool à la date du jour, post_heure=16:00:00 (publication programmée 16h ; annulable avant dans RapidoCMS). Publication directe seulement si Michael l'a demandé.
 6. Coche l'épisode dans LEDGER.md (déplace-le en FAIT avec date + chemin projet), commit+push.
 7. Livre à Michael : MP4 + lien du brouillon + épisode traité + prochain épisode de la file.
    Quand la FILE est vide : préviens Michael que la série des 28 est terminée.

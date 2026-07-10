@@ -34,10 +34,11 @@ Après production : déplacer la ligne dans FAIT (avec date + chemin projet).
 - [ ] S4E7 · L'écosystème Rapido en une phrase (grand final)
 
 ## FAIT
-- S1E1 · RapidoRH — la RH en Rapido → videos/rapido-s1e1-rapidorh — 2026-07-10
+- S1E1 · RapidoRH — la RH en Rapido → videos/rapido-s1e1-rapidorh — 2026-07-10 · publié LinkedIn RapidoSoftware programmé 16h00 (post #335)
 
-## Publication
-Par défaut : **brouillon programmé** LinkedIn. Comptes RapidoCMS connectés (network linkedin) :
-BraindCode `101119080` · RapidoSoftware `101119107` · (FoodEatUp `68807312`).
-→ Publier chaque épisode sur le compte de la marque concernée : S1/S2/S3/S4 = **RapidoSoftware** (`101119107`)
-   ou le compte dédié si Michael en indique un. (À confirmer avec Michael.)
+## Publication — RÈGLE ARRÊTÉE (Michael, 2026-07-10)
+**Compte : LinkedIn RapidoSoftware `101119107`. Programmation : chaque jour à 16:00:00.**
+Chaque épisode → create_draft_tool (mediatext, video biblio, caption « Rapido » + hashtags)
+puis schedule_draft_tool à la date du jour, `post_heure = 16:00:00`.
+Annulable avant 16h dans RapidoCMS (list_scheduled_posts / cancel_schedules_post).
+Autres comptes connectés (info) : BraindCode `101119080` · FoodEatUp `68807312`.
