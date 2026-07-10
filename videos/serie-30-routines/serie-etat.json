@@ -3,7 +3,7 @@
  "version": 1,
  "pause": false,
  "_pause_note": "Kill-switch. Reste true tant que : (1) les 30 scripts ne sont pas valides, (2) le pilote E1 n'est pas approuve, (3) la pre-autorisation budgetaire n'est pas ecrite ci-dessous. Passer a false = feu vert pour la routine quotidienne.",
- "episode_courant": 9,
+ "episode_courant": 10,
  "total_episodes": 30,
  "date_debut": "2026-07-11",
  "heure_publication": "08:00:00",
@@ -130,12 +130,25 @@
    "heure": "08:00:00",
    "outro_reuse": "cta-B-generique",
    "tiktok": "skip"
+  },
+  {
+   "episode": 9,
+   "titre": "Prépare ma journée",
+   "projet": "videos/serie-30-e09",
+   "duree_s": 34.6,
+   "cms": "Serie 30 routines - E9 Prepare ma journee",
+   "linkedin_draft": 437,
+   "scheduled_post": null,
+   "date": "NON PLANIFIÉ",
+   "heure": null,
+   "outro_reuse": "cta-C-generique",
+   "blocage": "schedule refusé — compte RapidoCMS expire le 18/07 ; brouillon 437 prêt à planifier après renouvellement"
   }
  ],
  "_go": "Michael 2026-07-10 : générer Mika via HeyGen + produire+planifier les 30 (LinkedIn BraindCode ; TikTok en attente de connexion CMS).",
  "auto_loop": {
-  "actif": true,
-  "note": "Boucle nocturne send_later : 1 épisode/firing, planif LinkedIn J+courant. TikTok en attente de ré-autorisation.",
-  "date_base_publication": "2026-07-11 = E1, +1j par épisode"
+  "actif": false,
+  "stop_raison": "Compte RapidoCMS expiré au 18/07/2026 — impossible de planifier E9→E30. Boucle stoppée à E9 pour ne pas gaspiller de crédits HeyGen.",
+  "reprise": "Renouveler le compte RapidoCMS, puis relancer : planifier le brouillon 437 (E9) + produire/planifier E10→E30."
  }
 }
