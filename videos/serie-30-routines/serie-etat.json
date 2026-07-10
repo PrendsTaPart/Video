@@ -3,7 +3,7 @@
  "version": 1,
  "pause": false,
  "_pause_note": "Kill-switch. Reste true tant que : (1) les 30 scripts ne sont pas valides, (2) le pilote E1 n'est pas approuve, (3) la pre-autorisation budgetaire n'est pas ecrite ci-dessous. Passer a false = feu vert pour la routine quotidienne.",
- "episode_courant": 7,
+ "episode_courant": 8,
  "total_episodes": 30,
  "date_debut": "2026-07-11",
  "heure_publication": "08:00:00",
@@ -103,6 +103,19 @@
    "date": "2026-07-16",
    "heure": "08:00:00",
    "outro_reuse": "cta-C-generique",
+   "tiktok": "skip"
+  },
+  {
+   "episode": 7,
+   "titre": "Le prévisionnel qui tient la route",
+   "projet": "videos/serie-30-e07",
+   "duree_s": 31.1,
+   "cms": "Serie 30 routines - E7 Le previsionnel qui tient la route",
+   "linkedin_draft": 435,
+   "scheduled_post": 343,
+   "date": "2026-07-17",
+   "heure": "08:00:00",
+   "outro_reuse": "cta-A-generique",
    "tiktok": "skip"
   }
  ],
