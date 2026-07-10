@@ -1,0 +1,739 @@
+{
+  "total_duration_s": 26.378,
+  "width": 1080,
+  "height": 1920,
+  "groups": [
+    {
+      "id": "caption-group-0",
+      "frame": 1,
+      "start": 0,
+      "end": 0.734,
+      "text": "Un MCP,",
+      "words": [
+        {
+          "id": "caption-word-0-0",
+          "text": "Un",
+          "start": 0,
+          "end": 0.367
+        },
+        {
+          "id": "caption-word-0-1",
+          "text": "MCP,",
+          "start": 0.367,
+          "end": 0.734
+        }
+      ]
+    },
+    {
+      "id": "caption-group-1",
+      "frame": 1,
+      "start": 0.734,
+      "end": 1.835,
+      "text": "c'est une prise.",
+      "words": [
+        {
+          "id": "caption-word-1-0",
+          "text": "c'est",
+          "start": 0.734,
+          "end": 1.101
+        },
+        {
+          "id": "caption-word-1-1",
+          "text": "une",
+          "start": 1.101,
+          "end": 1.468
+        },
+        {
+          "id": "caption-word-1-2",
+          "text": "prise.",
+          "start": 1.468,
+          "end": 1.835
+        }
+      ]
+    },
+    {
+      "id": "caption-group-2",
+      "frame": 1,
+      "start": 1.835,
+      "end": 2.936,
+      "text": "Elle branche ton",
+      "words": [
+        {
+          "id": "caption-word-2-0",
+          "text": "Elle",
+          "start": 1.835,
+          "end": 2.202
+        },
+        {
+          "id": "caption-word-2-1",
+          "text": "branche",
+          "start": 2.202,
+          "end": 2.569
+        },
+        {
+          "id": "caption-word-2-2",
+          "text": "ton",
+          "start": 2.569,
+          "end": 2.936
+        }
+      ]
+    },
+    {
+      "id": "caption-group-3",
+      "frame": 1,
+      "start": 2.936,
+      "end": 4.037,
+      "text": "IA directement sur",
+      "words": [
+        {
+          "id": "caption-word-3-0",
+          "text": "IA",
+          "start": 2.936,
+          "end": 3.303
+        },
+        {
+          "id": "caption-word-3-1",
+          "text": "directement",
+          "start": 3.303,
+          "end": 3.67
+        },
+        {
+          "id": "caption-word-3-2",
+          "text": "sur",
+          "start": 3.67,
+          "end": 4.037
+        }
+      ]
+    },
+    {
+      "id": "caption-group-4",
+      "frame": 1,
+      "start": 4.037,
+      "end": 4.891,
+      "text": "tes logiciels",
+      "words": [
+        {
+          "id": "caption-word-4-0",
+          "text": "tes",
+          "start": 4.037,
+          "end": 4.404
+        },
+        {
+          "id": "caption-word-4-1",
+          "text": "logiciels",
+          "start": 4.404,
+          "end": 4.771
+        }
+      ]
+    },
+    {
+      "id": "caption-group-5",
+      "frame": 1,
+      "start": 5.138,
+      "end": 5.872,
+      "text": "ton CRM,",
+      "words": [
+        {
+          "id": "caption-word-5-0",
+          "text": "ton",
+          "start": 5.138,
+          "end": 5.505
+        },
+        {
+          "id": "caption-word-5-1",
+          "text": "CRM,",
+          "start": 5.505,
+          "end": 5.872
+        }
+      ]
+    },
+    {
+      "id": "caption-group-6",
+      "frame": 1,
+      "start": 5.872,
+      "end": 6.606,
+      "text": "tes stocks,",
+      "words": [
+        {
+          "id": "caption-word-6-0",
+          "text": "tes",
+          "start": 5.872,
+          "end": 6.239
+        },
+        {
+          "id": "caption-word-6-1",
+          "text": "stocks,",
+          "start": 6.239,
+          "end": 6.606
+        }
+      ]
+    },
+    {
+      "id": "caption-group-7",
+      "frame": 1,
+      "start": 6.606,
+      "end": 7.341,
+      "text": "tes plannings,",
+      "words": [
+        {
+          "id": "caption-word-7-0",
+          "text": "tes",
+          "start": 6.606,
+          "end": 6.973
+        },
+        {
+          "id": "caption-word-7-1",
+          "text": "plannings,",
+          "start": 6.973,
+          "end": 7.341
+        }
+      ]
+    },
+    {
+      "id": "caption-group-8",
+      "frame": 1,
+      "start": 7.341,
+      "end": 8.075,
+      "text": "ta compta.",
+      "words": [
+        {
+          "id": "caption-word-8-0",
+          "text": "ta",
+          "start": 7.341,
+          "end": 7.708
+        },
+        {
+          "id": "caption-word-8-1",
+          "text": "compta.",
+          "start": 7.708,
+          "end": 8.075
+        }
+      ]
+    },
+    {
+      "id": "caption-group-9",
+      "frame": 1,
+      "start": 8.075,
+      "end": 9.176,
+      "text": "L'IA ne devine",
+      "words": [
+        {
+          "id": "caption-word-9-0",
+          "text": "L'IA",
+          "start": 8.075,
+          "end": 8.442
+        },
+        {
+          "id": "caption-word-9-1",
+          "text": "ne",
+          "start": 8.442,
+          "end": 8.809
+        },
+        {
+          "id": "caption-word-9-2",
+          "text": "devine",
+          "start": 8.809,
+          "end": 9.176
+        }
+      ]
+    },
+    {
+      "id": "caption-group-10",
+      "frame": 1,
+      "start": 9.176,
+      "end": 9.543,
+      "text": "plus,",
+      "words": [
+        {
+          "id": "caption-word-10-0",
+          "text": "plus,",
+          "start": 9.176,
+          "end": 9.543
+        }
+      ]
+    },
+    {
+      "id": "caption-group-11",
+      "frame": 1,
+      "start": 9.543,
+      "end": 10.644,
+      "text": "elle lit tes",
+      "words": [
+        {
+          "id": "caption-word-11-0",
+          "text": "elle",
+          "start": 9.543,
+          "end": 9.91
+        },
+        {
+          "id": "caption-word-11-1",
+          "text": "lit",
+          "start": 9.91,
+          "end": 10.277
+        },
+        {
+          "id": "caption-word-11-2",
+          "text": "tes",
+          "start": 10.277,
+          "end": 10.644
+        }
+      ]
+    },
+    {
+      "id": "caption-group-12",
+      "frame": 1,
+      "start": 10.644,
+      "end": 11.378,
+      "text": "vraies données.",
+      "words": [
+        {
+          "id": "caption-word-12-0",
+          "text": "vraies",
+          "start": 10.644,
+          "end": 11.011
+        },
+        {
+          "id": "caption-word-12-1",
+          "text": "données.",
+          "start": 11.011,
+          "end": 11.378
+        }
+      ]
+    },
+    {
+      "id": "caption-group-13",
+      "frame": 2,
+      "start": 11.378,
+      "end": 12.613,
+      "text": "Tu demandes simplement",
+      "words": [
+        {
+          "id": "caption-word-13-0",
+          "text": "Tu",
+          "start": 11.378,
+          "end": 11.75
+        },
+        {
+          "id": "caption-word-13-1",
+          "text": "demandes",
+          "start": 11.75,
+          "end": 12.121
+        },
+        {
+          "id": "caption-word-13-2",
+          "text": "simplement",
+          "start": 12.121,
+          "end": 12.493
+        }
+      ]
+    },
+    {
+      "id": "caption-group-14",
+      "frame": 2,
+      "start": 12.864,
+      "end": 13.979,
+      "text": "combien de devis",
+      "words": [
+        {
+          "id": "caption-word-14-0",
+          "text": "combien",
+          "start": 12.864,
+          "end": 13.236
+        },
+        {
+          "id": "caption-word-14-1",
+          "text": "de",
+          "start": 13.236,
+          "end": 13.607
+        },
+        {
+          "id": "caption-word-14-2",
+          "text": "devis",
+          "start": 13.607,
+          "end": 13.979
+        }
+      ]
+    },
+    {
+      "id": "caption-group-15",
+      "frame": 2,
+      "start": 13.979,
+      "end": 14.842,
+      "text": "en attente",
+      "words": [
+        {
+          "id": "caption-word-15-0",
+          "text": "en",
+          "start": 13.979,
+          "end": 14.35
+        },
+        {
+          "id": "caption-word-15-1",
+          "text": "attente",
+          "start": 14.35,
+          "end": 14.722
+        }
+      ]
+    },
+    {
+      "id": "caption-group-16",
+      "frame": 2,
+      "start": 15.093,
+      "end": 15.465,
+      "text": "Derrière,",
+      "words": [
+        {
+          "id": "caption-word-16-0",
+          "text": "Derrière,",
+          "start": 15.093,
+          "end": 15.465
+        }
+      ]
+    },
+    {
+      "id": "caption-group-17",
+      "frame": 2,
+      "start": 15.465,
+      "end": 16.579,
+      "text": "l'IA interroge ton",
+      "words": [
+        {
+          "id": "caption-word-17-0",
+          "text": "l'IA",
+          "start": 15.465,
+          "end": 15.836
+        },
+        {
+          "id": "caption-word-17-1",
+          "text": "interroge",
+          "start": 15.836,
+          "end": 16.208
+        },
+        {
+          "id": "caption-word-17-2",
+          "text": "ton",
+          "start": 16.208,
+          "end": 16.579
+        }
+      ]
+    },
+    {
+      "id": "caption-group-18",
+      "frame": 2,
+      "start": 16.579,
+      "end": 17.694,
+      "text": "CRM en direct.",
+      "words": [
+        {
+          "id": "caption-word-18-0",
+          "text": "CRM",
+          "start": 16.579,
+          "end": 16.951
+        },
+        {
+          "id": "caption-word-18-1",
+          "text": "en",
+          "start": 16.951,
+          "end": 17.322
+        },
+        {
+          "id": "caption-word-18-2",
+          "text": "direct.",
+          "start": 17.322,
+          "end": 17.694
+        }
+      ]
+    },
+    {
+      "id": "caption-group-19",
+      "frame": 3,
+      "start": 17.694,
+      "end": 18.136,
+      "text": "Résultat",
+      "words": [
+        {
+          "id": "caption-word-19-0",
+          "text": "Résultat",
+          "start": 17.694,
+          "end": 18.016
+        }
+      ]
+    },
+    {
+      "id": "caption-group-20",
+      "frame": 3,
+      "start": 18.337,
+      "end": 18.981,
+      "text": "quatre devis",
+      "words": [
+        {
+          "id": "caption-word-20-0",
+          "text": "quatre",
+          "start": 18.337,
+          "end": 18.659
+        },
+        {
+          "id": "caption-word-20-1",
+          "text": "devis",
+          "start": 18.659,
+          "end": 18.981
+        }
+      ]
+    },
+    {
+      "id": "caption-group-21",
+      "frame": 3,
+      "start": 18.981,
+      "end": 19.624,
+      "text": "en attente,",
+      "words": [
+        {
+          "id": "caption-word-21-0",
+          "text": "en",
+          "start": 18.981,
+          "end": 19.302
+        },
+        {
+          "id": "caption-word-21-1",
+          "text": "attente,",
+          "start": 19.302,
+          "end": 19.624
+        }
+      ]
+    },
+    {
+      "id": "caption-group-22",
+      "frame": 3,
+      "start": 19.624,
+      "end": 20.267,
+      "text": "dont deux",
+      "words": [
+        {
+          "id": "caption-word-22-0",
+          "text": "dont",
+          "start": 19.624,
+          "end": 19.945
+        },
+        {
+          "id": "caption-word-22-1",
+          "text": "deux",
+          "start": 19.945,
+          "end": 20.267
+        }
+      ]
+    },
+    {
+      "id": "caption-group-23",
+      "frame": 3,
+      "start": 20.267,
+      "end": 20.91,
+      "text": "qui expirent",
+      "words": [
+        {
+          "id": "caption-word-23-0",
+          "text": "qui",
+          "start": 20.267,
+          "end": 20.589
+        },
+        {
+          "id": "caption-word-23-1",
+          "text": "expirent",
+          "start": 20.589,
+          "end": 20.91
+        }
+      ]
+    },
+    {
+      "id": "caption-group-24",
+      "frame": 3,
+      "start": 20.91,
+      "end": 21.232,
+      "text": "vendredi,",
+      "words": [
+        {
+          "id": "caption-word-24-0",
+          "text": "vendredi,",
+          "start": 20.91,
+          "end": 21.232
+        }
+      ]
+    },
+    {
+      "id": "caption-group-25",
+      "frame": 3,
+      "start": 21.232,
+      "end": 21.875,
+      "text": "pour onze",
+      "words": [
+        {
+          "id": "caption-word-25-0",
+          "text": "pour",
+          "start": 21.232,
+          "end": 21.554
+        },
+        {
+          "id": "caption-word-25-1",
+          "text": "onze",
+          "start": 21.554,
+          "end": 21.875
+        }
+      ]
+    },
+    {
+      "id": "caption-group-26",
+      "frame": 3,
+      "start": 21.875,
+      "end": 22.519,
+      "text": "mille euros.",
+      "words": [
+        {
+          "id": "caption-word-26-0",
+          "text": "mille",
+          "start": 21.875,
+          "end": 22.197
+        },
+        {
+          "id": "caption-word-26-1",
+          "text": "euros.",
+          "start": 22.197,
+          "end": 22.519
+        }
+      ]
+    },
+    {
+      "id": "caption-group-27",
+      "frame": 3,
+      "start": 22.519,
+      "end": 23.162,
+      "text": "Pas une",
+      "words": [
+        {
+          "id": "caption-word-27-0",
+          "text": "Pas",
+          "start": 22.519,
+          "end": 22.84
+        },
+        {
+          "id": "caption-word-27-1",
+          "text": "une",
+          "start": 22.84,
+          "end": 23.162
+        }
+      ]
+    },
+    {
+      "id": "caption-group-28",
+      "frame": 3,
+      "start": 23.162,
+      "end": 23.484,
+      "text": "estimation.",
+      "words": [
+        {
+          "id": "caption-word-28-0",
+          "text": "estimation.",
+          "start": 23.162,
+          "end": 23.484
+        }
+      ]
+    },
+    {
+      "id": "caption-group-29",
+      "frame": 3,
+      "start": 23.484,
+      "end": 24.127,
+      "text": "Le vrai",
+      "words": [
+        {
+          "id": "caption-word-29-0",
+          "text": "Le",
+          "start": 23.484,
+          "end": 23.805
+        },
+        {
+          "id": "caption-word-29-1",
+          "text": "vrai",
+          "start": 23.805,
+          "end": 24.127
+        }
+      ]
+    },
+    {
+      "id": "caption-group-30",
+      "frame": 3,
+      "start": 24.127,
+      "end": 24.77,
+      "text": "chiffre de",
+      "words": [
+        {
+          "id": "caption-word-30-0",
+          "text": "chiffre",
+          "start": 24.127,
+          "end": 24.448
+        },
+        {
+          "id": "caption-word-30-1",
+          "text": "de",
+          "start": 24.448,
+          "end": 24.77
+        }
+      ]
+    },
+    {
+      "id": "caption-group-31",
+      "frame": 3,
+      "start": 24.77,
+      "end": 25.092,
+      "text": "Léa,",
+      "words": [
+        {
+          "id": "caption-word-31-0",
+          "text": "Léa,",
+          "start": 24.77,
+          "end": 25.092
+        }
+      ]
+    },
+    {
+      "id": "caption-group-32",
+      "frame": 3,
+      "start": 25.092,
+      "end": 25.735,
+      "text": "à la",
+      "words": [
+        {
+          "id": "caption-word-32-0",
+          "text": "à",
+          "start": 25.092,
+          "end": 25.413
+        },
+        {
+          "id": "caption-word-32-1",
+          "text": "la",
+          "start": 25.413,
+          "end": 25.735
+        }
+      ]
+    },
+    {
+      "id": "caption-group-33",
+      "frame": 3,
+      "start": 25.735,
+      "end": 26.498,
+      "text": "seconde près.",
+      "words": [
+        {
+          "id": "caption-word-33-0",
+          "text": "seconde",
+          "start": 25.735,
+          "end": 26.057
+        },
+        {
+          "id": "caption-word-33-1",
+          "text": "près.",
+          "start": 26.057,
+          "end": 26.378
+        }
+      ]
+    }
+  ]
+}

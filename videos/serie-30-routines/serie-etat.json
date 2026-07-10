@@ -11,8 +11,8 @@
  "comptes": {
   "linkedin_account_id": "101119080",
   "linkedin_nom": "BraindCode",
-  "tiktok_account_id": null,
-  "_tiktok_note": "BLOQUANT : TikTok non connecte au CMS (networks: facebook/linkedin/instagram). Connecter TikTok BraindCode dans RapidoCMS puis renseigner l'account_id ici."
+  "tiktok_account_id": "5",
+  "_tiktok_note": "TikTok BraindCode connecté (account_id 5, vérifié 2026-07-10)."
  },
  "budget": {
   "rendu_autorise": true,

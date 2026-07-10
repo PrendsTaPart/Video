@@ -1,0 +1,477 @@
+{
+ "voices": [
+  {
+   "frame": 1,
+   "path": "assets/voice/routine.wav",
+   "duration_s": 11.378,
+   "words": [
+    {
+     "id": "w0",
+     "text": "Un",
+     "start": 0.0,
+     "end": 0.367
+    },
+    {
+     "id": "w1",
+     "text": "MCP,",
+     "start": 0.367,
+     "end": 0.734
+    },
+    {
+     "id": "w2",
+     "text": "c'est",
+     "start": 0.734,
+     "end": 1.101
+    },
+    {
+     "id": "w3",
+     "text": "une",
+     "start": 1.101,
+     "end": 1.468
+    },
+    {
+     "id": "w4",
+     "text": "prise.",
+     "start": 1.468,
+     "end": 1.835
+    },
+    {
+     "id": "w5",
+     "text": "Elle",
+     "start": 1.835,
+     "end": 2.202
+    },
+    {
+     "id": "w6",
+     "text": "branche",
+     "start": 2.202,
+     "end": 2.569
+    },
+    {
+     "id": "w7",
+     "text": "ton",
+     "start": 2.569,
+     "end": 2.936
+    },
+    {
+     "id": "w8",
+     "text": "IA",
+     "start": 2.936,
+     "end": 3.303
+    },
+    {
+     "id": "w9",
+     "text": "directement",
+     "start": 3.303,
+     "end": 3.67
+    },
+    {
+     "id": "w10",
+     "text": "sur",
+     "start": 3.67,
+     "end": 4.037
+    },
+    {
+     "id": "w11",
+     "text": "tes",
+     "start": 4.037,
+     "end": 4.404
+    },
+    {
+     "id": "w12",
+     "text": "logiciels",
+     "start": 4.404,
+     "end": 4.771
+    },
+    {
+     "id": "w13",
+     "text": ":",
+     "start": 4.771,
+     "end": 5.138
+    },
+    {
+     "id": "w14",
+     "text": "ton",
+     "start": 5.138,
+     "end": 5.505
+    },
+    {
+     "id": "w15",
+     "text": "CRM,",
+     "start": 5.505,
+     "end": 5.872
+    },
+    {
+     "id": "w16",
+     "text": "tes",
+     "start": 5.872,
+     "end": 6.239
+    },
+    {
+     "id": "w17",
+     "text": "stocks,",
+     "start": 6.239,
+     "end": 6.606
+    },
+    {
+     "id": "w18",
+     "text": "tes",
+     "start": 6.606,
+     "end": 6.973
+    },
+    {
+     "id": "w19",
+     "text": "plannings,",
+     "start": 6.973,
+     "end": 7.341
+    },
+    {
+     "id": "w20",
+     "text": "ta",
+     "start": 7.341,
+     "end": 7.708
+    },
+    {
+     "id": "w21",
+     "text": "compta.",
+     "start": 7.708,
+     "end": 8.075
+    },
+    {
+     "id": "w22",
+     "text": "L'IA",
+     "start": 8.075,
+     "end": 8.442
+    },
+    {
+     "id": "w23",
+     "text": "ne",
+     "start": 8.442,
+     "end": 8.809
+    },
+    {
+     "id": "w24",
+     "text": "devine",
+     "start": 8.809,
+     "end": 9.176
+    },
+    {
+     "id": "w25",
+     "text": "plus,",
+     "start": 9.176,
+     "end": 9.543
+    },
+    {
+     "id": "w26",
+     "text": "elle",
+     "start": 9.543,
+     "end": 9.91
+    },
+    {
+     "id": "w27",
+     "text": "lit",
+     "start": 9.91,
+     "end": 10.277
+    },
+    {
+     "id": "w28",
+     "text": "tes",
+     "start": 10.277,
+     "end": 10.644
+    },
+    {
+     "id": "w29",
+     "text": "vraies",
+     "start": 10.644,
+     "end": 11.011
+    },
+    {
+     "id": "w30",
+     "text": "données.",
+     "start": 11.011,
+     "end": 11.378
+    }
+   ]
+  },
+  {
+   "frame": 2,
+   "path": "assets/voice/prompt.wav",
+   "duration_s": 6.316,
+   "words": [
+    {
+     "id": "w0",
+     "text": "Tu",
+     "start": 0.0,
+     "end": 0.372
+    },
+    {
+     "id": "w1",
+     "text": "demandes",
+     "start": 0.372,
+     "end": 0.743
+    },
+    {
+     "id": "w2",
+     "text": "simplement",
+     "start": 0.743,
+     "end": 1.115
+    },
+    {
+     "id": "w3",
+     "text": ":",
+     "start": 1.115,
+     "end": 1.486
+    },
+    {
+     "id": "w4",
+     "text": "combien",
+     "start": 1.486,
+     "end": 1.858
+    },
+    {
+     "id": "w5",
+     "text": "de",
+     "start": 1.858,
+     "end": 2.229
+    },
+    {
+     "id": "w6",
+     "text": "devis",
+     "start": 2.229,
+     "end": 2.601
+    },
+    {
+     "id": "w7",
+     "text": "en",
+     "start": 2.601,
+     "end": 2.972
+    },
+    {
+     "id": "w8",
+     "text": "attente",
+     "start": 2.972,
+     "end": 3.344
+    },
+    {
+     "id": "w9",
+     "text": "?",
+     "start": 3.344,
+     "end": 3.715
+    },
+    {
+     "id": "w10",
+     "text": "Derrière,",
+     "start": 3.715,
+     "end": 4.087
+    },
+    {
+     "id": "w11",
+     "text": "l'IA",
+     "start": 4.087,
+     "end": 4.458
+    },
+    {
+     "id": "w12",
+     "text": "interroge",
+     "start": 4.458,
+     "end": 4.83
+    },
+    {
+     "id": "w13",
+     "text": "ton",
+     "start": 4.83,
+     "end": 5.201
+    },
+    {
+     "id": "w14",
+     "text": "CRM",
+     "start": 5.201,
+     "end": 5.573
+    },
+    {
+     "id": "w15",
+     "text": "en",
+     "start": 5.573,
+     "end": 5.944
+    },
+    {
+     "id": "w16",
+     "text": "direct.",
+     "start": 5.944,
+     "end": 6.316
+    }
+   ]
+  },
+  {
+   "frame": 3,
+   "path": "assets/voice/cas.wav",
+   "duration_s": 8.684,
+   "words": [
+    {
+     "id": "w0",
+     "text": "Résultat",
+     "start": 0.0,
+     "end": 0.322
+    },
+    {
+     "id": "w1",
+     "text": ":",
+     "start": 0.322,
+     "end": 0.643
+    },
+    {
+     "id": "w2",
+     "text": "quatre",
+     "start": 0.643,
+     "end": 0.965
+    },
+    {
+     "id": "w3",
+     "text": "devis",
+     "start": 0.965,
+     "end": 1.287
+    },
+    {
+     "id": "w4",
+     "text": "en",
+     "start": 1.287,
+     "end": 1.608
+    },
+    {
+     "id": "w5",
+     "text": "attente,",
+     "start": 1.608,
+     "end": 1.93
+    },
+    {
+     "id": "w6",
+     "text": "dont",
+     "start": 1.93,
+     "end": 2.251
+    },
+    {
+     "id": "w7",
+     "text": "deux",
+     "start": 2.251,
+     "end": 2.573
+    },
+    {
+     "id": "w8",
+     "text": "qui",
+     "start": 2.573,
+     "end": 2.895
+    },
+    {
+     "id": "w9",
+     "text": "expirent",
+     "start": 2.895,
+     "end": 3.216
+    },
+    {
+     "id": "w10",
+     "text": "vendredi,",
+     "start": 3.216,
+     "end": 3.538
+    },
+    {
+     "id": "w11",
+     "text": "pour",
+     "start": 3.538,
+     "end": 3.86
+    },
+    {
+     "id": "w12",
+     "text": "onze",
+     "start": 3.86,
+     "end": 4.181
+    },
+    {
+     "id": "w13",
+     "text": "mille",
+     "start": 4.181,
+     "end": 4.503
+    },
+    {
+     "id": "w14",
+     "text": "euros.",
+     "start": 4.503,
+     "end": 4.825
+    },
+    {
+     "id": "w15",
+     "text": "Pas",
+     "start": 4.825,
+     "end": 5.146
+    },
+    {
+     "id": "w16",
+     "text": "une",
+     "start": 5.146,
+     "end": 5.468
+    },
+    {
+     "id": "w17",
+     "text": "estimation.",
+     "start": 5.468,
+     "end": 5.79
+    },
+    {
+     "id": "w18",
+     "text": "Le",
+     "start": 5.79,
+     "end": 6.111
+    },
+    {
+     "id": "w19",
+     "text": "vrai",
+     "start": 6.111,
+     "end": 6.433
+    },
+    {
+     "id": "w20",
+     "text": "chiffre",
+     "start": 6.433,
+     "end": 6.754
+    },
+    {
+     "id": "w21",
+     "text": "de",
+     "start": 6.754,
+     "end": 7.076
+    },
+    {
+     "id": "w22",
+     "text": "Léa,",
+     "start": 7.076,
+     "end": 7.398
+    },
+    {
+     "id": "w23",
+     "text": "à",
+     "start": 7.398,
+     "end": 7.719
+    },
+    {
+     "id": "w24",
+     "text": "la",
+     "start": 7.719,
+     "end": 8.041
+    },
+    {
+     "id": "w25",
+     "text": "seconde",
+     "start": 8.041,
+     "end": 8.363
+    },
+    {
+     "id": "w26",
+     "text": "près.",
+     "start": 8.363,
+     "end": 8.684
+    }
+   ]
+  }
+ ],
+ "bgm": null,
+ "sfx": []
+}

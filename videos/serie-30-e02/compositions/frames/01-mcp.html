@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <title>E2 F1 — Le MCP, la prise (portrait)</title>
+  </head>
+  <body>
+    <template>
+      <style>
+        @font-face { font-family: "Poppins"; src: url("assets/fonts/Poppins-600.woff2") format("woff2"); font-weight: 600; }
+        @font-face { font-family: "Poppins"; src: url("assets/fonts/Poppins-700.woff2") format("woff2"); font-weight: 700; }
+        @font-face { font-family: "Poppins"; src: url("assets/fonts/Poppins-800.woff2") format("woff2"); font-weight: 800; }
+        @font-face { font-family: "Inter"; src: url("assets/fonts/Inter-Variable.woff2") format("woff2-variations"); font-weight: 100 900; }
+
+        #root { position: absolute; inset: 0; width: 1080px; height: 1920px; overflow: hidden; font-family: "Poppins", "Inter", sans-serif; color: #1b2a41; isolation: isolate; }
+        .bg { position: absolute; inset: 0; background: #f7f9fc; background-image: radial-gradient(circle at 50% 30%, rgba(90,103,242,0.08), transparent 55%); }
+
+        .head { position: absolute; left: 80px; right: 80px; top: 140px; z-index: 4; text-align: center; }
+        .head .ey { font-family: "Poppins", sans-serif; font-weight: 700; font-size: 34px; letter-spacing: 0.1em; text-transform: uppercase; color: #5a67f2; opacity: 0; margin: 0 0 14px; will-change: transform, opacity; }
+        .head .k { font-family: "Poppins", sans-serif; font-weight: 800; font-size: 76px; line-height: 1.05; letter-spacing: -0.02em; color: #1b2a41; opacity: 0; will-change: transform, opacity; }
+        .head .k .a { color: #5a67f2; }
+
+        .hub { position: absolute; left: 50%; top: 500px; transform: translateX(-50%); z-index: 4; width: 240px; height: 240px; border-radius: 50%; background: #5a67f2; display: grid; place-items: center; opacity: 0; box-shadow: 0 24px 60px rgba(90,103,242,0.35); will-change: transform, opacity; }
+        .hub b { font-family: "Poppins", sans-serif; font-weight: 800; font-size: 64px; color: #fff; letter-spacing: 0.02em; }
+        .hub small { position: absolute; bottom: 40px; font-family: "Inter", sans-serif; font-weight: 700; font-size: 22px; color: #d9ddff; letter-spacing: 0.1em; }
+
+        .grid { position: absolute; left: 100px; top: 840px; width: 880px; z-index: 3; display: grid; grid-template-columns: 1fr 1fr; gap: 22px; }
+        .app { box-sizing: border-box; height: 200px; background: #ffffff; border: 1.5px solid rgba(90,103,242,0.2); border-radius: 24px; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 16px; opacity: 0; will-change: transform, opacity; }
+        .app .ic { width: 76px; height: 76px; border-radius: 20px; background: rgba(90,103,242,0.1); display: grid; place-items: center; }
+        .app .ic svg { width: 42px; height: 42px; fill: none; stroke: #5a67f2; stroke-width: 1.9; stroke-linecap: round; stroke-linejoin: round; }
+        .app b { font-family: "Poppins", sans-serif; font-weight: 700; font-size: 40px; color: #1b2a41; }
+
+        .foot { position: absolute; left: 50%; top: 1720px; transform: translateX(-50%); z-index: 4; display: flex; align-items: center; gap: 16px; padding: 20px 40px; background: #1b2a41; border-radius: 100px; opacity: 0; will-change: transform, opacity; }
+        .foot .d { width: 34px; height: 34px; border-radius: 50%; background: #059669; display: grid; place-items: center; }
+        .foot .d svg { width: 22px; height: 22px; fill: none; stroke: #fff; stroke-width: 3; stroke-linecap: round; }
+        .foot b { font-family: "Poppins", sans-serif; font-weight: 700; font-size: 38px; color: #fff; white-space: nowrap; }
+        .foot b span { color: #9aa6ff; }
+      </style>
+
+      <div id="root" data-composition-id="01-mcp" data-width="1080" data-height="1920" data-duration="11.878">
+        <div id="bg-clip" class="clip bg" data-start="0" data-duration="11.378" data-track-index="0"></div>
+        <div id="scene" class="clip" data-start="0" data-duration="11.378" data-track-index="1" style="position:absolute; inset:0;">
+          <div class="head">
+            <p class="ey" id="ey">C'est quoi un MCP ?</p>
+            <div class="k" id="k">La <span class="a">prise</span> qui branche ton IA.</div>
+          </div>
+          <div class="hub" id="hub"><b>IA</b><small>· MCP ·</small></div>
+          <div class="grid">
+            <div class="app" id="a1"><span class="ic"><svg viewBox="0 0 24 24"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2" /><circle cx="9" cy="7" r="4" /><path d="M22 21v-2a4 4 0 0 0-3-3.9" /></svg></span><b>CRM</b></div>
+            <div class="app" id="a2"><span class="ic"><svg viewBox="0 0 24 24"><path d="M3 7h18M3 12h18M3 17h11" /></svg></span><b>Stocks</b></div>
+            <div class="app" id="a3"><span class="ic"><svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="17" rx="2" /><path d="M8 2v4M16 2v4M3 10h18" /></svg></span><b>Plannings</b></div>
+            <div class="app" id="a4"><span class="ic"><svg viewBox="0 0 24 24"><rect x="4" y="4" width="16" height="16" rx="2" /><path d="M8 9h8M8 13h5" /></svg></span><b>Compta</b></div>
+          </div>
+          <div class="foot" id="foot"><span class="d"><svg viewBox="0 0 24 24"><path d="M4 12l5 5L20 6" /></svg></span><b>elle lit tes <span>vraies données</span></b></div>
+        </div>
+      </div>
+
+      <script src="assets/vendor/gsap.min.js"></script>
+      <script>
+        window.__timelines = window.__timelines || {};
+        const tl = gsap.timeline({ paused: true });
+        tl.fromTo("#ey", { y: 14, opacity: 0 }, { y: 0, opacity: 1, duration: 0.45, ease: "power3.out" }, 0.1);
+        tl.fromTo("#k", { y: 22, opacity: 0 }, { y: 0, opacity: 1, duration: 0.55, ease: "power3.out" }, 0.4);
+        tl.fromTo("#hub", { scale: 0, opacity: 0 }, { scale: 1, opacity: 1, duration: 0.6, ease: "back.out(1.6)" }, 1.4);
+        var cues = [3.6, 4.6, 5.6, 6.6];
+        ["#a1","#a2","#a3","#a4"].forEach(function (id, i) {
+          tl.fromTo(id, { y: 26, scale: 0.92, opacity: 0 }, { y: 0, scale: 1, opacity: 1, duration: 0.44, ease: "power3.out" }, cues[i]);
+        });
+        tl.fromTo("#hub", { boxShadow: "0 24px 60px rgba(90,103,242,0.35)" }, { boxShadow: "0 24px 90px rgba(90,103,242,0.6)", duration: 0.8, yoyo: true, repeat: 1, ease: "power2.inOut" }, 7.0);
+        tl.fromTo("#foot", { y: 18, scale: 0.9, opacity: 0 }, { y: 0, scale: 1, opacity: 1, duration: 0.5, ease: "back.out(1.5)" }, 8.6);
+        window.__timelines["01-mcp"] = tl;
+      </script>
+    </template>
+  </body>
+</html>
