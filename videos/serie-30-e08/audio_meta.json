@@ -1,0 +1,423 @@
+{
+ "voices": [
+  {
+   "frame": 1,
+   "path": "assets/voice/routine.wav",
+   "duration_s": 9.706,
+   "words": [
+    {
+     "id": "w0",
+     "text": "Le",
+     "start": 0.0,
+     "end": 0.404
+    },
+    {
+     "id": "w1",
+     "text": "plan",
+     "start": 0.404,
+     "end": 0.809
+    },
+    {
+     "id": "w2",
+     "text": "d'exécution",
+     "start": 0.809,
+     "end": 1.213
+    },
+    {
+     "id": "w3",
+     "text": "transforme",
+     "start": 1.213,
+     "end": 1.618
+    },
+    {
+     "id": "w4",
+     "text": "ta",
+     "start": 1.618,
+     "end": 2.022
+    },
+    {
+     "id": "w5",
+     "text": "stratégie",
+     "start": 2.022,
+     "end": 2.426
+    },
+    {
+     "id": "w6",
+     "text": "en",
+     "start": 2.426,
+     "end": 2.831
+    },
+    {
+     "id": "w7",
+     "text": "actions.",
+     "start": 2.831,
+     "end": 3.235
+    },
+    {
+     "id": "w8",
+     "text": "Chaque",
+     "start": 3.235,
+     "end": 3.64
+    },
+    {
+     "id": "w9",
+     "text": "objectif",
+     "start": 3.64,
+     "end": 4.044
+    },
+    {
+     "id": "w10",
+     "text": "devient",
+     "start": 4.044,
+     "end": 4.449
+    },
+    {
+     "id": "w11",
+     "text": "une",
+     "start": 4.449,
+     "end": 4.853
+    },
+    {
+     "id": "w12",
+     "text": "liste",
+     "start": 4.853,
+     "end": 5.257
+    },
+    {
+     "id": "w13",
+     "text": "de",
+     "start": 5.257,
+     "end": 5.662
+    },
+    {
+     "id": "w14",
+     "text": "tâches,",
+     "start": 5.662,
+     "end": 6.066
+    },
+    {
+     "id": "w15",
+     "text": "assignée,",
+     "start": 6.066,
+     "end": 6.471
+    },
+    {
+     "id": "w16",
+     "text": "datée,",
+     "start": 6.471,
+     "end": 6.875
+    },
+    {
+     "id": "w17",
+     "text": "dans",
+     "start": 6.875,
+     "end": 7.279
+    },
+    {
+     "id": "w18",
+     "text": "ton",
+     "start": 7.279,
+     "end": 7.684
+    },
+    {
+     "id": "w19",
+     "text": "outil",
+     "start": 7.684,
+     "end": 8.088
+    },
+    {
+     "id": "w20",
+     "text": "de",
+     "start": 8.088,
+     "end": 8.493
+    },
+    {
+     "id": "w21",
+     "text": "gestion",
+     "start": 8.493,
+     "end": 8.897
+    },
+    {
+     "id": "w22",
+     "text": "de",
+     "start": 8.897,
+     "end": 9.302
+    },
+    {
+     "id": "w23",
+     "text": "projet.",
+     "start": 9.302,
+     "end": 9.706
+    }
+   ]
+  },
+  {
+   "frame": 2,
+   "path": "assets/voice/prompt.wav",
+   "duration_s": 2.415,
+   "words": [
+    {
+     "id": "w0",
+     "text": "Tu",
+     "start": 0.0,
+     "end": 0.241
+    },
+    {
+     "id": "w1",
+     "text": "dis",
+     "start": 0.241,
+     "end": 0.483
+    },
+    {
+     "id": "w2",
+     "text": ":",
+     "start": 0.483,
+     "end": 0.724
+    },
+    {
+     "id": "w3",
+     "text": "crée",
+     "start": 0.724,
+     "end": 0.966
+    },
+    {
+     "id": "w4",
+     "text": "les",
+     "start": 0.966,
+     "end": 1.207
+    },
+    {
+     "id": "w5",
+     "text": "tâches",
+     "start": 1.207,
+     "end": 1.449
+    },
+    {
+     "id": "w6",
+     "text": "de",
+     "start": 1.449,
+     "end": 1.69
+    },
+    {
+     "id": "w7",
+     "text": "mon",
+     "start": 1.69,
+     "end": 1.932
+    },
+    {
+     "id": "w8",
+     "text": "business",
+     "start": 1.932,
+     "end": 2.173
+    },
+    {
+     "id": "w9",
+     "text": "plan.",
+     "start": 2.173,
+     "end": 2.415
+    }
+   ]
+  },
+  {
+   "frame": 3,
+   "path": "assets/voice/cas.wav",
+   "duration_s": 10.588,
+   "words": [
+    {
+     "id": "w0",
+     "text": "Le",
+     "start": 0.0,
+     "end": 0.331
+    },
+    {
+     "id": "w1",
+     "text": "plan",
+     "start": 0.331,
+     "end": 0.662
+    },
+    {
+     "id": "w2",
+     "text": "de",
+     "start": 0.662,
+     "end": 0.993
+    },
+    {
+     "id": "w3",
+     "text": "Léa",
+     "start": 0.993,
+     "end": 1.324
+    },
+    {
+     "id": "w4",
+     "text": "devient",
+     "start": 1.324,
+     "end": 1.654
+    },
+    {
+     "id": "w5",
+     "text": "cent",
+     "start": 1.654,
+     "end": 1.985
+    },
+    {
+     "id": "w6",
+     "text": "vingt",
+     "start": 1.985,
+     "end": 2.316
+    },
+    {
+     "id": "w7",
+     "text": "tâches",
+     "start": 2.316,
+     "end": 2.647
+    },
+    {
+     "id": "w8",
+     "text": "dans",
+     "start": 2.647,
+     "end": 2.978
+    },
+    {
+     "id": "w9",
+     "text": "RapidoRH",
+     "start": 2.978,
+     "end": 3.309
+    },
+    {
+     "id": "w10",
+     "text": ":",
+     "start": 3.309,
+     "end": 3.64
+    },
+    {
+     "id": "w11",
+     "text": "trouver",
+     "start": 3.64,
+     "end": 3.971
+    },
+    {
+     "id": "w12",
+     "text": "le",
+     "start": 3.971,
+     "end": 4.301
+    },
+    {
+     "id": "w13",
+     "text": "local,",
+     "start": 4.301,
+     "end": 4.632
+    },
+    {
+     "id": "w14",
+     "text": "déposer",
+     "start": 4.632,
+     "end": 4.963
+    },
+    {
+     "id": "w15",
+     "text": "les",
+     "start": 4.963,
+     "end": 5.294
+    },
+    {
+     "id": "w16",
+     "text": "statuts,",
+     "start": 5.294,
+     "end": 5.625
+    },
+    {
+     "id": "w17",
+     "text": "recruter,",
+     "start": 5.625,
+     "end": 5.956
+    },
+    {
+     "id": "w18",
+     "text": "ouvrir.",
+     "start": 5.956,
+     "end": 6.287
+    },
+    {
+     "id": "w19",
+     "text": "Réparties",
+     "start": 6.287,
+     "end": 6.618
+    },
+    {
+     "id": "w20",
+     "text": "sur",
+     "start": 6.618,
+     "end": 6.949
+    },
+    {
+     "id": "w21",
+     "text": "un",
+     "start": 6.949,
+     "end": 7.279
+    },
+    {
+     "id": "w22",
+     "text": "Kanban",
+     "start": 7.279,
+     "end": 7.61
+    },
+    {
+     "id": "w23",
+     "text": "clair.",
+     "start": 7.61,
+     "end": 7.941
+    },
+    {
+     "id": "w24",
+     "text": "Du",
+     "start": 7.941,
+     "end": 8.272
+    },
+    {
+     "id": "w25",
+     "text": "rêve",
+     "start": 8.272,
+     "end": 8.603
+    },
+    {
+     "id": "w26",
+     "text": "à",
+     "start": 8.603,
+     "end": 8.934
+    },
+    {
+     "id": "w27",
+     "text": "la",
+     "start": 8.934,
+     "end": 9.265
+    },
+    {
+     "id": "w28",
+     "text": "to-do,",
+     "start": 9.265,
+     "end": 9.596
+    },
+    {
+     "id": "w29",
+     "text": "en",
+     "start": 9.596,
+     "end": 9.927
+    },
+    {
+     "id": "w30",
+     "text": "une",
+     "start": 9.927,
+     "end": 10.257
+    },
+    {
+     "id": "w31",
+     "text": "commande.",
+     "start": 10.257,
+     "end": 10.588
+    }
+   ]
+  }
+ ],
+ "bgm": null,
+ "sfx": []
+}
