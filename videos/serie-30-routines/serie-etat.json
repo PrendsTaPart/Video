@@ -3,7 +3,7 @@
  "version": 1,
  "pause": false,
  "_pause_note": "Kill-switch. Reste true tant que : (1) les 30 scripts ne sont pas valides, (2) le pilote E1 n'est pas approuve, (3) la pre-autorisation budgetaire n'est pas ecrite ci-dessous. Passer a false = feu vert pour la routine quotidienne.",
- "episode_courant": 3,
+ "episode_courant": 4,
  "total_episodes": 30,
  "date_debut": "2026-07-11",
  "heure_publication": "08:00:00",
@@ -54,7 +54,24 @@
    "heure": "08:00:00",
    "outro_reuse": "cta-B-generique",
    "tiktok": "echec account_id 5 invalide pour publication"
+  },
+  {
+   "episode": 3,
+   "titre": "Le plugin qui sait tout faire",
+   "projet": "videos/serie-30-e03",
+   "duree_s": 32.0,
+   "cms": "Serie 30 routines - E3 Le plugin qui sait tout faire",
+   "linkedin_draft": 431,
+   "scheduled_post": 339,
+   "date": "2026-07-13",
+   "heure": "08:00:00",
+   "outro_reuse": "cta-C-generique"
   }
  ],
- "_go": "Michael 2026-07-10 : générer Mika via HeyGen + produire+planifier les 30 (LinkedIn BraindCode ; TikTok en attente de connexion CMS)."
+ "_go": "Michael 2026-07-10 : générer Mika via HeyGen + produire+planifier les 30 (LinkedIn BraindCode ; TikTok en attente de connexion CMS).",
+ "auto_loop": {
+  "actif": true,
+  "note": "Boucle nocturne send_later : 1 épisode/firing, planif LinkedIn J+courant. TikTok en attente de ré-autorisation.",
+  "date_base_publication": "2026-07-11 = E1, +1j par épisode"
+ }
 }
