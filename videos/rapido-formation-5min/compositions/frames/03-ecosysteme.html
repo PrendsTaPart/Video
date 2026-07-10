@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <title>S3 — L'écosystème Rapido</title>
+  </head>
+  <body>
+    <template>
+      <style>
+        @font-face { font-family: "Poppins"; src: url("assets/fonts/Poppins-600.woff2") format("woff2"); font-weight: 600; }
+        @font-face { font-family: "Poppins"; src: url("assets/fonts/Poppins-700.woff2") format("woff2"); font-weight: 700; }
+        @font-face { font-family: "Inter"; src: url("assets/fonts/Inter-Variable.woff2") format("woff2-variations"); font-weight: 100 900; }
+
+        #root { position: absolute; inset: 0; overflow: hidden; font-family: "Poppins", "Inter", sans-serif; color: #eaf2ff; isolation: isolate; }
+        .bg { position: absolute; inset: 0; background: radial-gradient(ellipse 70% 70% at 50% 45%, #1b2440 0%, #121a30 60%, #0d1424 100%); }
+        .eyebrow { position: absolute; left: 0; right: 0; top: 70px; text-align: center; z-index: 5; font-family: "Poppins", sans-serif; font-weight: 600; font-size: 34px; letter-spacing: 0.1em; text-transform: uppercase; color: #7fbfff; opacity: 0; margin: 0; will-change: transform, opacity; }
+
+        .hub { position: absolute; left: 860px; top: 440px; width: 200px; height: 200px; z-index: 4; border-radius: 50%; background: rgba(255,255,255,0.06); border: 2px solid rgba(127,191,255,0.4); display: grid; place-items: center; opacity: 0; will-change: transform, opacity; box-shadow: 0 0 60px rgba(0,168,240,0.3); }
+        .hub b { font-family: "Poppins", sans-serif; font-weight: 800; font-size: 56px; letter-spacing: 0.04em; color: #ffffff; }
+        .hub small { position: absolute; bottom: 28px; font-family: "Inter", sans-serif; font-weight: 600; font-size: 20px; color: #7fbfff; letter-spacing: 0.14em; }
+
+        svg.links { position: absolute; inset: 0; z-index: 3; width: 1920px; height: 1080px; pointer-events: none; }
+        svg.links path { fill: none; stroke-width: 3; stroke-linecap: round; stroke-dasharray: 1; stroke-dashoffset: 1; }
+
+        .node { position: absolute; z-index: 4; width: 460px; box-sizing: border-box; background: rgba(255,255,255,0.05); border: 1.5px solid rgba(255,255,255,0.12); border-radius: 22px; padding: 22px 26px; display: flex; align-items: center; gap: 20px; opacity: 0; will-change: transform, opacity; backdrop-filter: blur(2px); }
+        .node .lg { flex: none; width: 92px; height: 92px; border-radius: 18px; background: #ffffff; display: grid; place-items: center; }
+        .node .lg img { width: 78px; height: 78px; object-fit: contain; }
+        .node .tx b { display: block; font-family: "Poppins", sans-serif; font-weight: 700; font-size: 34px; color: #ffffff; }
+        .node .tx span { display: block; margin-top: 3px; font-family: "Inter", sans-serif; font-weight: 500; font-size: 25px; color: #a9bad6; }
+        #n1 { left: 150px; top: 210px; }
+        #n2 { left: 1310px; top: 210px; }
+        #n3 { left: 150px; top: 700px; }
+        #n4 { left: 1310px; top: 700px; }
+      </style>
+
+      <div id="root" data-composition-id="03-ecosysteme" data-width="1920" data-height="1080" data-duration="35.191">
+        <div id="bg-clip" class="clip bg" data-start="0" data-duration="34.691" data-track-index="0"></div>
+        <div id="scene" class="clip" data-start="0" data-duration="34.691" data-track-index="1" style="position:absolute; inset:0;">
+          <p class="eyebrow" id="eyebrow">L'écosystème Rapido · par BraindCode</p>
+          <svg class="links" viewBox="0 0 1920 1080">
+            <path id="l1" d="M380 302 Q700 400 900 490" stroke="#48a850" />
+            <path id="l2" d="M1540 302 Q1240 400 1020 490" stroke="#7850c0" />
+            <path id="l3" d="M380 792 Q700 680 900 590" stroke="#00a8f0" />
+            <path id="l4" d="M1540 792 Q1240 680 1020 590" stroke="#ff8a3d" />
+          </svg>
+          <div class="hub" id="hub"><b>MCP</b><small>· HUB IA ·</small></div>
+          <div class="node" id="n1"><span class="lg"><img src="public/rapidocrm-logo.png" alt="RapidoCRM" /></span><span class="tx"><b>RapidoCRM</b><span>prospects · devis · factures</span></span></div>
+          <div class="node" id="n2"><span class="lg"><img src="public/rapidocms-logo.png" alt="RapidoCMS" /></span><span class="tx"><b>RapidoCMS</b><span>contenus · réseaux · cartes</span></span></div>
+          <div class="node" id="n3"><span class="lg"><img src="public/rapidorh-logo.png" alt="RapidoRH" /></span><span class="tx"><b>RapidoRH</b><span>équipes · projets · plannings</span></span></div>
+          <div class="node" id="n4"><span class="lg"><img src="public/foodeatup-logo.png" alt="FoodEatUp" /></span><span class="tx"><b>FoodEatUp</b><span>carte · salle · HACCP</span></span></div>
+        </div>
+      </div>
+
+      <script src="assets/vendor/gsap.min.js"></script>
+      <script>
+        window.__timelines = window.__timelines || {};
+        const tl = gsap.timeline({ paused: true });
+        tl.fromTo("#eyebrow", { y: 16, opacity: 0 }, { y: 0, opacity: 1, duration: 0.5, ease: "power3.out" }, 0.3);
+        tl.fromTo("#hub", { scale: 0, opacity: 0 }, { scale: 1, opacity: 1, duration: 0.7, ease: "back.out(1.5)" }, 1.2);
+        var nodes = [["#n1", 7.0], ["#n2", 13.0], ["#n3", 18.5], ["#n4", 23.5]];
+        nodes.forEach(function (p) {
+          tl.fromTo(p[0], { y: 26, scale: 0.92, opacity: 0 }, { y: 0, scale: 1, opacity: 1, duration: 0.6, ease: "power3.out" }, p[1]);
+        });
+        // draw connections on "MCP / la vraie révolution" ~28s
+        ["#l1","#l2","#l3","#l4"].forEach(function (id, i) {
+          tl.fromTo(id, { strokeDashoffset: 1, opacity: 0 }, { strokeDashoffset: 0, opacity: 1, duration: 1.4, ease: "power2.inOut" }, 28.0 + i * 0.25);
+        });
+        tl.fromTo("#hub", { boxShadow: "0 0 60px rgba(0,168,240,0.3)" }, { boxShadow: "0 0 110px rgba(0,168,240,0.7)", duration: 1.2, yoyo: true, repeat: 1, ease: "power2.inOut" }, 30.5);
+        window.__timelines["03-ecosysteme"] = tl;
+      </script>
+    </template>
+  </body>
+</html>

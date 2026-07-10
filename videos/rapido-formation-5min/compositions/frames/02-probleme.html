@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <title>S2 — Le problème</title>
+  </head>
+  <body>
+    <template>
+      <style>
+        @font-face { font-family: "Poppins"; src: url("assets/fonts/Poppins-600.woff2") format("woff2"); font-weight: 600; }
+        @font-face { font-family: "Poppins"; src: url("assets/fonts/Poppins-700.woff2") format("woff2"); font-weight: 700; }
+        @font-face { font-family: "Poppins"; src: url("assets/fonts/Poppins-800.woff2") format("woff2"); font-weight: 800; }
+        @font-face { font-family: "Inter"; src: url("assets/fonts/Inter-Variable.woff2") format("woff2-variations"); font-weight: 100 900; }
+
+        #root { position: absolute; inset: 0; overflow: hidden; font-family: "Poppins", "Inter", sans-serif; color: #1b2a41; isolation: isolate; }
+        .bg { position: absolute; inset: 0; background: #f7f9fc; background-image: radial-gradient(circle at 78% 40%, rgba(0,168,240,0.06), transparent 55%); }
+        .photo { position: absolute; z-index: 2; right: 60px; top: 60px; width: 760px; height: 960px; border-radius: 32px; overflow: hidden; border: 1.5px solid rgba(27,42,65,0.08); opacity: 0; will-change: transform, opacity; }
+        .photo img { width: 100%; height: 100%; object-fit: cover; object-position: 50% 35%; display: block; }
+
+        .left { position: absolute; left: 90px; top: 150px; width: 820px; z-index: 3; }
+        .eyebrow { font-family: "Poppins", sans-serif; font-weight: 600; font-size: 30px; letter-spacing: 0.09em; text-transform: uppercase; color: #dc2626; opacity: 0; margin: 0 0 18px; will-change: transform, opacity; }
+        .title { font-family: "Poppins", sans-serif; font-weight: 800; font-size: 74px; line-height: 1.05; letter-spacing: -0.02em; color: #1b2a41; margin: 0 0 34px; opacity: 0; will-change: transform, opacity; }
+        .chips { display: flex; flex-wrap: wrap; gap: 16px; max-width: 760px; }
+        .chip { display: flex; align-items: center; gap: 14px; padding: 18px 26px; background: #ffffff; border: 1.5px solid rgba(27,42,65,0.1); border-radius: 100px; font-family: "Poppins", sans-serif; font-weight: 600; font-size: 34px; color: #1b2a41; transform-origin: 50% 50%; opacity: 0; will-change: transform, opacity; }
+        .chip i { width: 14px; height: 14px; border-radius: 50%; flex: none; }
+        .punch { margin-top: 40px; font-family: "Poppins", sans-serif; font-weight: 700; font-size: 48px; line-height: 1.1; letter-spacing: -0.01em; color: #1b2a41; opacity: 0; will-change: transform, opacity; }
+        .punch .a { color: #dc2626; }
+      </style>
+
+      <div id="root" data-composition-id="02-probleme" data-width="1920" data-height="1080" data-duration="26.492">
+        <div id="bg-clip" class="clip bg" data-start="0" data-duration="25.992" data-track-index="0"></div>
+        <div id="photo-clip" class="clip photo" data-start="0" data-duration="25.992" data-track-index="1">
+          <img src="public/img1-overload.png" alt="Dirigeant débordé par ses outils" />
+        </div>
+        <div id="content" class="clip" data-start="0" data-duration="25.992" data-track-index="2" style="position:absolute; inset:0;">
+          <div class="left">
+            <p class="eyebrow" id="eyebrow">Le vrai problème</p>
+            <h1 class="title" id="title">Six outils.<br />Zéro vision<br />d'ensemble.</h1>
+            <div class="chips">
+              <div class="chip" id="c1"><i style="background:#48a850"></i>CRM</div>
+              <div class="chip" id="c2"><i style="background:#00a8f0"></i>Réseaux sociaux</div>
+              <div class="chip" id="c3"><i style="background:#7850c0"></i>Planning</div>
+              <div class="chip" id="c4"><i style="background:#48a850"></i>Factures</div>
+              <div class="chip" id="c5"><i style="background:#00a8f0"></i>Stocks</div>
+              <div class="chip" id="c6"><i style="background:#7850c0"></i>Emails</div>
+            </div>
+            <p class="punch" id="punch">Ils ne se parlent pas.<br /><span class="a">Le pont, c'est vous.</span> À la main.</p>
+          </div>
+        </div>
+      </div>
+
+      <script src="assets/vendor/gsap.min.js"></script>
+      <script>
+        window.__timelines = window.__timelines || {};
+        const tl = gsap.timeline({ paused: true });
+        tl.fromTo(".photo", { x: 40, opacity: 0 }, { x: 0, opacity: 1, duration: 0.9, ease: "power3.out" }, 0.0);
+        tl.fromTo("#eyebrow", { y: 16, opacity: 0 }, { y: 0, opacity: 1, duration: 0.5, ease: "power3.out" }, 0.3);
+        tl.fromTo("#title", { y: 24, opacity: 0 }, { y: 0, opacity: 1, duration: 0.6, ease: "power3.out" }, 0.7);
+        var cues = [4.5, 6.5, 8.5, 10.5, 12.5, 14.2];
+        ["#c1","#c2","#c3","#c4","#c5","#c6"].forEach(function (id, i) {
+          tl.fromTo(id, { scale: 0.8, opacity: 0 }, { scale: 1, opacity: 1, duration: 0.4, ease: "back.out(1.6)" }, cues[i]);
+        });
+        tl.fromTo("#punch", { y: 20, opacity: 0 }, { y: 0, opacity: 1, duration: 0.6, ease: "power3.out" }, 18.5);
+        window.__timelines["02-probleme"] = tl;
+      </script>
+    </template>
+  </body>
+</html>
