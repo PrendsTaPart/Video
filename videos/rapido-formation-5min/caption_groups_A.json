@@ -1,0 +1,2344 @@
+{
+  "total_duration_s": 93.885,
+  "width": 1920,
+  "height": 1080,
+  "groups": [
+    {
+      "id": "caption-group-0",
+      "frame": 2,
+      "start": 0.12,
+      "end": 0.807,
+      "text": "Chaque matin,",
+      "words": [
+        {
+          "id": "caption-word-0-0",
+          "text": "Chaque",
+          "start": 0.12,
+          "end": 0.463
+        },
+        {
+          "id": "caption-word-0-1",
+          "text": "matin,",
+          "start": 0.463,
+          "end": 0.807
+        }
+      ]
+    },
+    {
+      "id": "caption-group-1",
+      "frame": 2,
+      "start": 0.807,
+      "end": 1.837,
+      "text": "c'est le même",
+      "words": [
+        {
+          "id": "caption-word-1-0",
+          "text": "c'est",
+          "start": 0.807,
+          "end": 1.15
+        },
+        {
+          "id": "caption-word-1-1",
+          "text": "le",
+          "start": 1.15,
+          "end": 1.493
+        },
+        {
+          "id": "caption-word-1-2",
+          "text": "même",
+          "start": 1.493,
+          "end": 1.837
+        }
+      ]
+    },
+    {
+      "id": "caption-group-2",
+      "frame": 2,
+      "start": 1.837,
+      "end": 2.18,
+      "text": "rituel.",
+      "words": [
+        {
+          "id": "caption-word-2-0",
+          "text": "rituel.",
+          "start": 1.837,
+          "end": 2.18
+        }
+      ]
+    },
+    {
+      "id": "caption-group-3",
+      "frame": 2,
+      "start": 2.18,
+      "end": 3.21,
+      "text": "Vous ouvrez votre",
+      "words": [
+        {
+          "id": "caption-word-3-0",
+          "text": "Vous",
+          "start": 2.18,
+          "end": 2.524
+        },
+        {
+          "id": "caption-word-3-1",
+          "text": "ouvrez",
+          "start": 2.524,
+          "end": 2.867
+        },
+        {
+          "id": "caption-word-3-2",
+          "text": "votre",
+          "start": 2.867,
+          "end": 3.21
+        }
+      ]
+    },
+    {
+      "id": "caption-group-4",
+      "frame": 2,
+      "start": 3.21,
+      "end": 4.24,
+      "text": "CRM pour vérifier",
+      "words": [
+        {
+          "id": "caption-word-4-0",
+          "text": "CRM",
+          "start": 3.21,
+          "end": 3.554
+        },
+        {
+          "id": "caption-word-4-1",
+          "text": "pour",
+          "start": 3.554,
+          "end": 3.897
+        },
+        {
+          "id": "caption-word-4-2",
+          "text": "vérifier",
+          "start": 3.897,
+          "end": 4.24
+        }
+      ]
+    },
+    {
+      "id": "caption-group-5",
+      "frame": 2,
+      "start": 4.24,
+      "end": 4.927,
+      "text": "vos devis.",
+      "words": [
+        {
+          "id": "caption-word-5-0",
+          "text": "vos",
+          "start": 4.24,
+          "end": 4.584
+        },
+        {
+          "id": "caption-word-5-1",
+          "text": "devis.",
+          "start": 4.584,
+          "end": 4.927
+        }
+      ]
+    },
+    {
+      "id": "caption-group-6",
+      "frame": 2,
+      "start": 4.927,
+      "end": 5.957,
+      "text": "Puis votre outil",
+      "words": [
+        {
+          "id": "caption-word-6-0",
+          "text": "Puis",
+          "start": 4.927,
+          "end": 5.27
+        },
+        {
+          "id": "caption-word-6-1",
+          "text": "votre",
+          "start": 5.27,
+          "end": 5.614
+        },
+        {
+          "id": "caption-word-6-2",
+          "text": "outil",
+          "start": 5.614,
+          "end": 5.957
+        }
+      ]
+    },
+    {
+      "id": "caption-group-7",
+      "frame": 2,
+      "start": 5.957,
+      "end": 6.987,
+      "text": "de publication pour",
+      "words": [
+        {
+          "id": "caption-word-7-0",
+          "text": "de",
+          "start": 5.957,
+          "end": 6.3
+        },
+        {
+          "id": "caption-word-7-1",
+          "text": "publication",
+          "start": 6.3,
+          "end": 6.644
+        },
+        {
+          "id": "caption-word-7-2",
+          "text": "pour",
+          "start": 6.644,
+          "end": 6.987
+        }
+      ]
+    },
+    {
+      "id": "caption-group-8",
+      "frame": 2,
+      "start": 6.987,
+      "end": 8.017,
+      "text": "les réseaux sociaux.",
+      "words": [
+        {
+          "id": "caption-word-8-0",
+          "text": "les",
+          "start": 6.987,
+          "end": 7.331
+        },
+        {
+          "id": "caption-word-8-1",
+          "text": "réseaux",
+          "start": 7.331,
+          "end": 7.674
+        },
+        {
+          "id": "caption-word-8-2",
+          "text": "sociaux.",
+          "start": 7.674,
+          "end": 8.017
+        }
+      ]
+    },
+    {
+      "id": "caption-group-9",
+      "frame": 2,
+      "start": 8.017,
+      "end": 9.047,
+      "text": "Puis le planning",
+      "words": [
+        {
+          "id": "caption-word-9-0",
+          "text": "Puis",
+          "start": 8.017,
+          "end": 8.361
+        },
+        {
+          "id": "caption-word-9-1",
+          "text": "le",
+          "start": 8.361,
+          "end": 8.704
+        },
+        {
+          "id": "caption-word-9-2",
+          "text": "planning",
+          "start": 8.704,
+          "end": 9.047
+        }
+      ]
+    },
+    {
+      "id": "caption-group-10",
+      "frame": 2,
+      "start": 9.047,
+      "end": 10.077,
+      "text": "de vos équipes.",
+      "words": [
+        {
+          "id": "caption-word-10-0",
+          "text": "de",
+          "start": 9.047,
+          "end": 9.391
+        },
+        {
+          "id": "caption-word-10-1",
+          "text": "vos",
+          "start": 9.391,
+          "end": 9.734
+        },
+        {
+          "id": "caption-word-10-2",
+          "text": "équipes.",
+          "start": 9.734,
+          "end": 10.077
+        }
+      ]
+    },
+    {
+      "id": "caption-group-11",
+      "frame": 2,
+      "start": 10.077,
+      "end": 11.107,
+      "text": "Puis vos factures,",
+      "words": [
+        {
+          "id": "caption-word-11-0",
+          "text": "Puis",
+          "start": 10.077,
+          "end": 10.421
+        },
+        {
+          "id": "caption-word-11-1",
+          "text": "vos",
+          "start": 10.421,
+          "end": 10.764
+        },
+        {
+          "id": "caption-word-11-2",
+          "text": "factures,",
+          "start": 10.764,
+          "end": 11.107
+        }
+      ]
+    },
+    {
+      "id": "caption-group-12",
+      "frame": 2,
+      "start": 11.107,
+      "end": 11.794,
+      "text": "vos stocks,",
+      "words": [
+        {
+          "id": "caption-word-12-0",
+          "text": "vos",
+          "start": 11.107,
+          "end": 11.451
+        },
+        {
+          "id": "caption-word-12-1",
+          "text": "stocks,",
+          "start": 11.451,
+          "end": 11.794
+        }
+      ]
+    },
+    {
+      "id": "caption-group-13",
+      "frame": 2,
+      "start": 11.794,
+      "end": 12.481,
+      "text": "vos emails.",
+      "words": [
+        {
+          "id": "caption-word-13-0",
+          "text": "vos",
+          "start": 11.794,
+          "end": 12.138
+        },
+        {
+          "id": "caption-word-13-1",
+          "text": "emails.",
+          "start": 12.138,
+          "end": 12.481
+        }
+      ]
+    },
+    {
+      "id": "caption-group-14",
+      "frame": 2,
+      "start": 12.481,
+      "end": 13.168,
+      "text": "Six outils,",
+      "words": [
+        {
+          "id": "caption-word-14-0",
+          "text": "Six",
+          "start": 12.481,
+          "end": 12.824
+        },
+        {
+          "id": "caption-word-14-1",
+          "text": "outils,",
+          "start": 12.824,
+          "end": 13.168
+        }
+      ]
+    },
+    {
+      "id": "caption-group-15",
+      "frame": 2,
+      "start": 13.168,
+      "end": 13.854,
+      "text": "six onglets,",
+      "words": [
+        {
+          "id": "caption-word-15-0",
+          "text": "six",
+          "start": 13.168,
+          "end": 13.511
+        },
+        {
+          "id": "caption-word-15-1",
+          "text": "onglets,",
+          "start": 13.511,
+          "end": 13.854
+        }
+      ]
+    },
+    {
+      "id": "caption-group-16",
+      "frame": 2,
+      "start": 13.854,
+      "end": 14.884,
+      "text": "six mots de",
+      "words": [
+        {
+          "id": "caption-word-16-0",
+          "text": "six",
+          "start": 13.854,
+          "end": 14.198
+        },
+        {
+          "id": "caption-word-16-1",
+          "text": "mots",
+          "start": 14.198,
+          "end": 14.541
+        },
+        {
+          "id": "caption-word-16-2",
+          "text": "de",
+          "start": 14.541,
+          "end": 14.884
+        }
+      ]
+    },
+    {
+      "id": "caption-group-17",
+      "frame": 2,
+      "start": 14.884,
+      "end": 15.228,
+      "text": "passe,",
+      "words": [
+        {
+          "id": "caption-word-17-0",
+          "text": "passe,",
+          "start": 14.884,
+          "end": 15.228
+        }
+      ]
+    },
+    {
+      "id": "caption-group-18",
+      "frame": 2,
+      "start": 15.228,
+      "end": 16.258,
+      "text": "et zéro vision",
+      "words": [
+        {
+          "id": "caption-word-18-0",
+          "text": "et",
+          "start": 15.228,
+          "end": 15.571
+        },
+        {
+          "id": "caption-word-18-1",
+          "text": "zéro",
+          "start": 15.571,
+          "end": 15.914
+        },
+        {
+          "id": "caption-word-18-2",
+          "text": "vision",
+          "start": 15.914,
+          "end": 16.258
+        }
+      ]
+    },
+    {
+      "id": "caption-group-19",
+      "frame": 2,
+      "start": 16.258,
+      "end": 16.601,
+      "text": "d'ensemble.",
+      "words": [
+        {
+          "id": "caption-word-19-0",
+          "text": "d'ensemble.",
+          "start": 16.258,
+          "end": 16.601
+        }
+      ]
+    },
+    {
+      "id": "caption-group-20",
+      "frame": 2,
+      "start": 16.601,
+      "end": 17.631,
+      "text": "Le vrai problème",
+      "words": [
+        {
+          "id": "caption-word-20-0",
+          "text": "Le",
+          "start": 16.601,
+          "end": 16.945
+        },
+        {
+          "id": "caption-word-20-1",
+          "text": "vrai",
+          "start": 16.945,
+          "end": 17.288
+        },
+        {
+          "id": "caption-word-20-2",
+          "text": "problème",
+          "start": 17.288,
+          "end": 17.631
+        }
+      ]
+    },
+    {
+      "id": "caption-group-21",
+      "frame": 2,
+      "start": 17.631,
+      "end": 18.661,
+      "text": "n'est pas le",
+      "words": [
+        {
+          "id": "caption-word-21-0",
+          "text": "n'est",
+          "start": 17.631,
+          "end": 17.975
+        },
+        {
+          "id": "caption-word-21-1",
+          "text": "pas",
+          "start": 17.975,
+          "end": 18.318
+        },
+        {
+          "id": "caption-word-21-2",
+          "text": "le",
+          "start": 18.318,
+          "end": 18.661
+        }
+      ]
+    },
+    {
+      "id": "caption-group-22",
+      "frame": 2,
+      "start": 18.661,
+      "end": 19.348,
+      "text": "manque d'outils.",
+      "words": [
+        {
+          "id": "caption-word-22-0",
+          "text": "manque",
+          "start": 18.661,
+          "end": 19.005
+        },
+        {
+          "id": "caption-word-22-1",
+          "text": "d'outils.",
+          "start": 19.005,
+          "end": 19.348
+        }
+      ]
+    },
+    {
+      "id": "caption-group-23",
+      "frame": 2,
+      "start": 19.348,
+      "end": 20.378,
+      "text": "C'est qu'ils ne",
+      "words": [
+        {
+          "id": "caption-word-23-0",
+          "text": "C'est",
+          "start": 19.348,
+          "end": 19.691
+        },
+        {
+          "id": "caption-word-23-1",
+          "text": "qu'ils",
+          "start": 19.691,
+          "end": 20.035
+        },
+        {
+          "id": "caption-word-23-2",
+          "text": "ne",
+          "start": 20.035,
+          "end": 20.378
+        }
+      ]
+    },
+    {
+      "id": "caption-group-24",
+      "frame": 2,
+      "start": 20.378,
+      "end": 21.408,
+      "text": "se parlent pas.",
+      "words": [
+        {
+          "id": "caption-word-24-0",
+          "text": "se",
+          "start": 20.378,
+          "end": 20.721
+        },
+        {
+          "id": "caption-word-24-1",
+          "text": "parlent",
+          "start": 20.721,
+          "end": 21.065
+        },
+        {
+          "id": "caption-word-24-2",
+          "text": "pas.",
+          "start": 21.065,
+          "end": 21.408
+        }
+      ]
+    },
+    {
+      "id": "caption-group-25",
+      "frame": 2,
+      "start": 21.408,
+      "end": 22.438,
+      "text": "Et c'est vous",
+      "words": [
+        {
+          "id": "caption-word-25-0",
+          "text": "Et",
+          "start": 21.408,
+          "end": 21.752
+        },
+        {
+          "id": "caption-word-25-1",
+          "text": "c'est",
+          "start": 21.752,
+          "end": 22.095
+        },
+        {
+          "id": "caption-word-25-2",
+          "text": "vous",
+          "start": 22.095,
+          "end": 22.438
+        }
+      ]
+    },
+    {
+      "id": "caption-group-26",
+      "frame": 2,
+      "start": 22.438,
+      "end": 23.468,
+      "text": "qui faites le",
+      "words": [
+        {
+          "id": "caption-word-26-0",
+          "text": "qui",
+          "start": 22.438,
+          "end": 22.782
+        },
+        {
+          "id": "caption-word-26-1",
+          "text": "faites",
+          "start": 22.782,
+          "end": 23.125
+        },
+        {
+          "id": "caption-word-26-2",
+          "text": "le",
+          "start": 23.125,
+          "end": 23.468
+        }
+      ]
+    },
+    {
+      "id": "caption-group-27",
+      "frame": 2,
+      "start": 23.468,
+      "end": 23.812,
+      "text": "pont,",
+      "words": [
+        {
+          "id": "caption-word-27-0",
+          "text": "pont,",
+          "start": 23.468,
+          "end": 23.812
+        }
+      ]
+    },
+    {
+      "id": "caption-group-28",
+      "frame": 2,
+      "start": 23.812,
+      "end": 24.842,
+      "text": "à la main,",
+      "words": [
+        {
+          "id": "caption-word-28-0",
+          "text": "à",
+          "start": 23.812,
+          "end": 24.155
+        },
+        {
+          "id": "caption-word-28-1",
+          "text": "la",
+          "start": 24.155,
+          "end": 24.498
+        },
+        {
+          "id": "caption-word-28-2",
+          "text": "main,",
+          "start": 24.498,
+          "end": 24.842
+        }
+      ]
+    },
+    {
+      "id": "caption-group-29",
+      "frame": 2,
+      "start": 24.842,
+      "end": 25.992,
+      "text": "tous les jours.",
+      "words": [
+        {
+          "id": "caption-word-29-0",
+          "text": "tous",
+          "start": 24.842,
+          "end": 25.185
+        },
+        {
+          "id": "caption-word-29-1",
+          "text": "les",
+          "start": 25.185,
+          "end": 25.528
+        },
+        {
+          "id": "caption-word-29-2",
+          "text": "jours.",
+          "start": 25.528,
+          "end": 25.872
+        }
+      ]
+    },
+    {
+      "id": "caption-group-30",
+      "frame": 3,
+      "start": 26.112,
+      "end": 27.328,
+      "text": "Voici l'écosystème Rapido,",
+      "words": [
+        {
+          "id": "caption-word-30-0",
+          "text": "Voici",
+          "start": 26.112,
+          "end": 26.517
+        },
+        {
+          "id": "caption-word-30-1",
+          "text": "l'écosystème",
+          "start": 26.517,
+          "end": 26.923
+        },
+        {
+          "id": "caption-word-30-2",
+          "text": "Rapido,",
+          "start": 26.923,
+          "end": 27.328
+        }
+      ]
+    },
+    {
+      "id": "caption-group-31",
+      "frame": 3,
+      "start": 27.328,
+      "end": 28.544,
+      "text": "développé par BraindCode.",
+      "words": [
+        {
+          "id": "caption-word-31-0",
+          "text": "développé",
+          "start": 27.328,
+          "end": 27.733
+        },
+        {
+          "id": "caption-word-31-1",
+          "text": "par",
+          "start": 27.733,
+          "end": 28.139
+        },
+        {
+          "id": "caption-word-31-2",
+          "text": "BraindCode.",
+          "start": 28.139,
+          "end": 28.544
+        }
+      ]
+    },
+    {
+      "id": "caption-group-32",
+      "frame": 3,
+      "start": 28.544,
+      "end": 29.76,
+      "text": "Quatre logiciels métiers",
+      "words": [
+        {
+          "id": "caption-word-32-0",
+          "text": "Quatre",
+          "start": 28.544,
+          "end": 28.949
+        },
+        {
+          "id": "caption-word-32-1",
+          "text": "logiciels",
+          "start": 28.949,
+          "end": 29.354
+        },
+        {
+          "id": "caption-word-32-2",
+          "text": "métiers",
+          "start": 29.354,
+          "end": 29.76
+        }
+      ]
+    },
+    {
+      "id": "caption-group-33",
+      "frame": 3,
+      "start": 29.76,
+      "end": 30.976,
+      "text": "qui couvrent toute",
+      "words": [
+        {
+          "id": "caption-word-33-0",
+          "text": "qui",
+          "start": 29.76,
+          "end": 30.165
+        },
+        {
+          "id": "caption-word-33-1",
+          "text": "couvrent",
+          "start": 30.165,
+          "end": 30.57
+        },
+        {
+          "id": "caption-word-33-2",
+          "text": "toute",
+          "start": 30.57,
+          "end": 30.976
+        }
+      ]
+    },
+    {
+      "id": "caption-group-34",
+      "frame": 3,
+      "start": 30.976,
+      "end": 31.786,
+      "text": "votre entreprise.",
+      "words": [
+        {
+          "id": "caption-word-34-0",
+          "text": "votre",
+          "start": 30.976,
+          "end": 31.381
+        },
+        {
+          "id": "caption-word-34-1",
+          "text": "entreprise.",
+          "start": 31.381,
+          "end": 31.786
+        }
+      ]
+    },
+    {
+      "id": "caption-group-35",
+      "frame": 3,
+      "start": 31.786,
+      "end": 32.312,
+      "text": "RapidoCRM",
+      "words": [
+        {
+          "id": "caption-word-35-0",
+          "text": "RapidoCRM",
+          "start": 31.786,
+          "end": 32.192
+        }
+      ]
+    },
+    {
+      "id": "caption-group-36",
+      "frame": 3,
+      "start": 32.597,
+      "end": 33.407,
+      "text": "vos prospects,",
+      "words": [
+        {
+          "id": "caption-word-36-0",
+          "text": "vos",
+          "start": 32.597,
+          "end": 33.002
+        },
+        {
+          "id": "caption-word-36-1",
+          "text": "prospects,",
+          "start": 33.002,
+          "end": 33.407
+        }
+      ]
+    },
+    {
+      "id": "caption-group-37",
+      "frame": 3,
+      "start": 33.407,
+      "end": 33.813,
+      "text": "devis,",
+      "words": [
+        {
+          "id": "caption-word-37-0",
+          "text": "devis,",
+          "start": 33.407,
+          "end": 33.813
+        }
+      ]
+    },
+    {
+      "id": "caption-group-38",
+      "frame": 3,
+      "start": 33.813,
+      "end": 35.029,
+      "text": "factures et campagnes.",
+      "words": [
+        {
+          "id": "caption-word-38-0",
+          "text": "factures",
+          "start": 33.813,
+          "end": 34.218
+        },
+        {
+          "id": "caption-word-38-1",
+          "text": "et",
+          "start": 34.218,
+          "end": 34.623
+        },
+        {
+          "id": "caption-word-38-2",
+          "text": "campagnes.",
+          "start": 34.623,
+          "end": 35.029
+        }
+      ]
+    },
+    {
+      "id": "caption-group-39",
+      "frame": 3,
+      "start": 35.029,
+      "end": 35.554,
+      "text": "RapidoCMS",
+      "words": [
+        {
+          "id": "caption-word-39-0",
+          "text": "RapidoCMS",
+          "start": 35.029,
+          "end": 35.434
+        }
+      ]
+    },
+    {
+      "id": "caption-group-40",
+      "frame": 3,
+      "start": 35.839,
+      "end": 36.65,
+      "text": "vos contenus,",
+      "words": [
+        {
+          "id": "caption-word-40-0",
+          "text": "vos",
+          "start": 35.839,
+          "end": 36.245
+        },
+        {
+          "id": "caption-word-40-1",
+          "text": "contenus,",
+          "start": 36.245,
+          "end": 36.65
+        }
+      ]
+    },
+    {
+      "id": "caption-group-41",
+      "frame": 3,
+      "start": 36.65,
+      "end": 37.866,
+      "text": "vos réseaux sociaux,",
+      "words": [
+        {
+          "id": "caption-word-41-0",
+          "text": "vos",
+          "start": 36.65,
+          "end": 37.055
+        },
+        {
+          "id": "caption-word-41-1",
+          "text": "réseaux",
+          "start": 37.055,
+          "end": 37.46
+        },
+        {
+          "id": "caption-word-41-2",
+          "text": "sociaux,",
+          "start": 37.46,
+          "end": 37.866
+        }
+      ]
+    },
+    {
+      "id": "caption-group-42",
+      "frame": 3,
+      "start": 37.866,
+      "end": 39.082,
+      "text": "vos cartes de",
+      "words": [
+        {
+          "id": "caption-word-42-0",
+          "text": "vos",
+          "start": 37.866,
+          "end": 38.271
+        },
+        {
+          "id": "caption-word-42-1",
+          "text": "cartes",
+          "start": 38.271,
+          "end": 38.676
+        },
+        {
+          "id": "caption-word-42-2",
+          "text": "de",
+          "start": 38.676,
+          "end": 39.082
+        }
+      ]
+    },
+    {
+      "id": "caption-group-43",
+      "frame": 3,
+      "start": 39.082,
+      "end": 39.892,
+      "text": "visite digitales.",
+      "words": [
+        {
+          "id": "caption-word-43-0",
+          "text": "visite",
+          "start": 39.082,
+          "end": 39.487
+        },
+        {
+          "id": "caption-word-43-1",
+          "text": "digitales.",
+          "start": 39.487,
+          "end": 39.892
+        }
+      ]
+    },
+    {
+      "id": "caption-group-44",
+      "frame": 3,
+      "start": 39.892,
+      "end": 40.418,
+      "text": "RapidoRH",
+      "words": [
+        {
+          "id": "caption-word-44-0",
+          "text": "RapidoRH",
+          "start": 39.892,
+          "end": 40.298
+        }
+      ]
+    },
+    {
+      "id": "caption-group-45",
+      "frame": 3,
+      "start": 40.703,
+      "end": 41.513,
+      "text": "vos équipes,",
+      "words": [
+        {
+          "id": "caption-word-45-0",
+          "text": "vos",
+          "start": 40.703,
+          "end": 41.108
+        },
+        {
+          "id": "caption-word-45-1",
+          "text": "équipes,",
+          "start": 41.108,
+          "end": 41.513
+        }
+      ]
+    },
+    {
+      "id": "caption-group-46",
+      "frame": 3,
+      "start": 41.513,
+      "end": 42.324,
+      "text": "vos projets,",
+      "words": [
+        {
+          "id": "caption-word-46-0",
+          "text": "vos",
+          "start": 41.513,
+          "end": 41.919
+        },
+        {
+          "id": "caption-word-46-1",
+          "text": "projets,",
+          "start": 41.919,
+          "end": 42.324
+        }
+      ]
+    },
+    {
+      "id": "caption-group-47",
+      "frame": 3,
+      "start": 42.324,
+      "end": 43.135,
+      "text": "vos plannings.",
+      "words": [
+        {
+          "id": "caption-word-47-0",
+          "text": "vos",
+          "start": 42.324,
+          "end": 42.729
+        },
+        {
+          "id": "caption-word-47-1",
+          "text": "plannings.",
+          "start": 42.729,
+          "end": 43.135
+        }
+      ]
+    },
+    {
+      "id": "caption-group-48",
+      "frame": 3,
+      "start": 43.135,
+      "end": 44.065,
+      "text": "Et FoodEatUp",
+      "words": [
+        {
+          "id": "caption-word-48-0",
+          "text": "Et",
+          "start": 43.135,
+          "end": 43.54
+        },
+        {
+          "id": "caption-word-48-1",
+          "text": "FoodEatUp",
+          "start": 43.54,
+          "end": 43.945
+        }
+      ]
+    },
+    {
+      "id": "caption-group-49",
+      "frame": 3,
+      "start": 44.351,
+      "end": 45.566,
+      "text": "la gestion complète",
+      "words": [
+        {
+          "id": "caption-word-49-0",
+          "text": "la",
+          "start": 44.351,
+          "end": 44.756
+        },
+        {
+          "id": "caption-word-49-1",
+          "text": "gestion",
+          "start": 44.756,
+          "end": 45.161
+        },
+        {
+          "id": "caption-word-49-2",
+          "text": "complète",
+          "start": 45.161,
+          "end": 45.566
+        }
+      ]
+    },
+    {
+      "id": "caption-group-50",
+      "frame": 3,
+      "start": 45.566,
+      "end": 46.782,
+      "text": "de votre restaurant,",
+      "words": [
+        {
+          "id": "caption-word-50-0",
+          "text": "de",
+          "start": 45.566,
+          "end": 45.972
+        },
+        {
+          "id": "caption-word-50-1",
+          "text": "votre",
+          "start": 45.972,
+          "end": 46.377
+        },
+        {
+          "id": "caption-word-50-2",
+          "text": "restaurant,",
+          "start": 46.377,
+          "end": 46.782
+        }
+      ]
+    },
+    {
+      "id": "caption-group-51",
+      "frame": 3,
+      "start": 46.782,
+      "end": 47.998,
+      "text": "de la carte",
+      "words": [
+        {
+          "id": "caption-word-51-0",
+          "text": "de",
+          "start": 46.782,
+          "end": 47.188
+        },
+        {
+          "id": "caption-word-51-1",
+          "text": "la",
+          "start": 47.188,
+          "end": 47.593
+        },
+        {
+          "id": "caption-word-51-2",
+          "text": "carte",
+          "start": 47.593,
+          "end": 47.998
+        }
+      ]
+    },
+    {
+      "id": "caption-group-52",
+      "frame": 3,
+      "start": 47.998,
+      "end": 49.214,
+      "text": "à la conformité",
+      "words": [
+        {
+          "id": "caption-word-52-0",
+          "text": "à",
+          "start": 47.998,
+          "end": 48.404
+        },
+        {
+          "id": "caption-word-52-1",
+          "text": "la",
+          "start": 48.404,
+          "end": 48.809
+        },
+        {
+          "id": "caption-word-52-2",
+          "text": "conformité",
+          "start": 48.809,
+          "end": 49.214
+        }
+      ]
+    },
+    {
+      "id": "caption-group-53",
+      "frame": 3,
+      "start": 49.214,
+      "end": 49.619,
+      "text": "HACCP.",
+      "words": [
+        {
+          "id": "caption-word-53-0",
+          "text": "HACCP.",
+          "start": 49.214,
+          "end": 49.619
+        }
+      ]
+    },
+    {
+      "id": "caption-group-54",
+      "frame": 3,
+      "start": 49.619,
+      "end": 50.835,
+      "text": "Mais la vraie",
+      "words": [
+        {
+          "id": "caption-word-54-0",
+          "text": "Mais",
+          "start": 49.619,
+          "end": 50.025
+        },
+        {
+          "id": "caption-word-54-1",
+          "text": "la",
+          "start": 50.025,
+          "end": 50.43
+        },
+        {
+          "id": "caption-word-54-2",
+          "text": "vraie",
+          "start": 50.43,
+          "end": 50.835
+        }
+      ]
+    },
+    {
+      "id": "caption-group-55",
+      "frame": 3,
+      "start": 50.835,
+      "end": 51.241,
+      "text": "révolution,",
+      "words": [
+        {
+          "id": "caption-word-55-0",
+          "text": "révolution,",
+          "start": 50.835,
+          "end": 51.241
+        }
+      ]
+    },
+    {
+      "id": "caption-group-56",
+      "frame": 3,
+      "start": 51.241,
+      "end": 52.457,
+      "text": "c'est que chacun",
+      "words": [
+        {
+          "id": "caption-word-56-0",
+          "text": "c'est",
+          "start": 51.241,
+          "end": 51.646
+        },
+        {
+          "id": "caption-word-56-1",
+          "text": "que",
+          "start": 51.646,
+          "end": 52.051
+        },
+        {
+          "id": "caption-word-56-2",
+          "text": "chacun",
+          "start": 52.051,
+          "end": 52.457
+        }
+      ]
+    },
+    {
+      "id": "caption-group-57",
+      "frame": 3,
+      "start": 52.457,
+      "end": 53.672,
+      "text": "de ces logiciels",
+      "words": [
+        {
+          "id": "caption-word-57-0",
+          "text": "de",
+          "start": 52.457,
+          "end": 52.862
+        },
+        {
+          "id": "caption-word-57-1",
+          "text": "ces",
+          "start": 52.862,
+          "end": 53.267
+        },
+        {
+          "id": "caption-word-57-2",
+          "text": "logiciels",
+          "start": 53.267,
+          "end": 53.672
+        }
+      ]
+    },
+    {
+      "id": "caption-group-58",
+      "frame": 3,
+      "start": 53.672,
+      "end": 54.888,
+      "text": "expose un serveur",
+      "words": [
+        {
+          "id": "caption-word-58-0",
+          "text": "expose",
+          "start": 53.672,
+          "end": 54.078
+        },
+        {
+          "id": "caption-word-58-1",
+          "text": "un",
+          "start": 54.078,
+          "end": 54.483
+        },
+        {
+          "id": "caption-word-58-2",
+          "text": "serveur",
+          "start": 54.483,
+          "end": 54.888
+        }
+      ]
+    },
+    {
+      "id": "caption-group-59",
+      "frame": 3,
+      "start": 54.888,
+      "end": 55.294,
+      "text": "MCP.",
+      "words": [
+        {
+          "id": "caption-word-59-0",
+          "text": "MCP.",
+          "start": 54.888,
+          "end": 55.294
+        }
+      ]
+    },
+    {
+      "id": "caption-group-60",
+      "frame": 3,
+      "start": 55.294,
+      "end": 56.224,
+      "text": "Autrement dit",
+      "words": [
+        {
+          "id": "caption-word-60-0",
+          "text": "Autrement",
+          "start": 55.294,
+          "end": 55.699
+        },
+        {
+          "id": "caption-word-60-1",
+          "text": "dit",
+          "start": 55.699,
+          "end": 56.104
+        }
+      ]
+    },
+    {
+      "id": "caption-group-61",
+      "frame": 3,
+      "start": 56.51,
+      "end": 57.726,
+      "text": "une intelligence artificielle",
+      "words": [
+        {
+          "id": "caption-word-61-0",
+          "text": "une",
+          "start": 56.51,
+          "end": 56.915
+        },
+        {
+          "id": "caption-word-61-1",
+          "text": "intelligence",
+          "start": 56.915,
+          "end": 57.32
+        },
+        {
+          "id": "caption-word-61-2",
+          "text": "artificielle",
+          "start": 57.32,
+          "end": 57.726
+        }
+      ]
+    },
+    {
+      "id": "caption-group-62",
+      "frame": 3,
+      "start": 57.726,
+      "end": 58.941,
+      "text": "peut les piloter.",
+      "words": [
+        {
+          "id": "caption-word-62-0",
+          "text": "peut",
+          "start": 57.726,
+          "end": 58.131
+        },
+        {
+          "id": "caption-word-62-1",
+          "text": "les",
+          "start": 58.131,
+          "end": 58.536
+        },
+        {
+          "id": "caption-word-62-2",
+          "text": "piloter.",
+          "start": 58.536,
+          "end": 58.941
+        }
+      ]
+    },
+    {
+      "id": "caption-group-63",
+      "frame": 3,
+      "start": 58.941,
+      "end": 59.347,
+      "text": "Tous.",
+      "words": [
+        {
+          "id": "caption-word-63-0",
+          "text": "Tous.",
+          "start": 58.941,
+          "end": 59.347
+        }
+      ]
+    },
+    {
+      "id": "caption-group-64",
+      "frame": 3,
+      "start": 59.347,
+      "end": 60.683,
+      "text": "En même temps.",
+      "words": [
+        {
+          "id": "caption-word-64-0",
+          "text": "En",
+          "start": 59.347,
+          "end": 59.752
+        },
+        {
+          "id": "caption-word-64-1",
+          "text": "même",
+          "start": 59.752,
+          "end": 60.157
+        },
+        {
+          "id": "caption-word-64-2",
+          "text": "temps.",
+          "start": 60.157,
+          "end": 60.563
+        }
+      ]
+    },
+    {
+      "id": "caption-group-65",
+      "frame": 4,
+      "start": 60.803,
+      "end": 61.914,
+      "text": "C'est là qu'intervient",
+      "words": [
+        {
+          "id": "caption-word-65-0",
+          "text": "C'est",
+          "start": 60.803,
+          "end": 61.173
+        },
+        {
+          "id": "caption-word-65-1",
+          "text": "là",
+          "start": 61.173,
+          "end": 61.544
+        },
+        {
+          "id": "caption-word-65-2",
+          "text": "qu'intervient",
+          "start": 61.544,
+          "end": 61.914
+        }
+      ]
+    },
+    {
+      "id": "caption-group-66",
+      "frame": 4,
+      "start": 61.914,
+      "end": 63.025,
+      "text": "le plugin BraindCode",
+      "words": [
+        {
+          "id": "caption-word-66-0",
+          "text": "le",
+          "start": 61.914,
+          "end": 62.284
+        },
+        {
+          "id": "caption-word-66-1",
+          "text": "plugin",
+          "start": 62.284,
+          "end": 62.655
+        },
+        {
+          "id": "caption-word-66-2",
+          "text": "BraindCode",
+          "start": 62.655,
+          "end": 63.025
+        }
+      ]
+    },
+    {
+      "id": "caption-group-67",
+      "frame": 4,
+      "start": 63.025,
+      "end": 63.766,
+      "text": "pour Claude.",
+      "words": [
+        {
+          "id": "caption-word-67-0",
+          "text": "pour",
+          "start": 63.025,
+          "end": 63.395
+        },
+        {
+          "id": "caption-word-67-1",
+          "text": "Claude.",
+          "start": 63.395,
+          "end": 63.766
+        }
+      ]
+    },
+    {
+      "id": "caption-group-68",
+      "frame": 4,
+      "start": 63.766,
+      "end": 64.877,
+      "text": "Une marketplace de",
+      "words": [
+        {
+          "id": "caption-word-68-0",
+          "text": "Une",
+          "start": 63.766,
+          "end": 64.136
+        },
+        {
+          "id": "caption-word-68-1",
+          "text": "marketplace",
+          "start": 64.136,
+          "end": 64.507
+        },
+        {
+          "id": "caption-word-68-2",
+          "text": "de",
+          "start": 64.507,
+          "end": 64.877
+        }
+      ]
+    },
+    {
+      "id": "caption-group-69",
+      "frame": 4,
+      "start": 64.877,
+      "end": 65.988,
+      "text": "plugins qui donne",
+      "words": [
+        {
+          "id": "caption-word-69-0",
+          "text": "plugins",
+          "start": 64.877,
+          "end": 65.247
+        },
+        {
+          "id": "caption-word-69-1",
+          "text": "qui",
+          "start": 65.247,
+          "end": 65.618
+        },
+        {
+          "id": "caption-word-69-2",
+          "text": "donne",
+          "start": 65.618,
+          "end": 65.988
+        }
+      ]
+    },
+    {
+      "id": "caption-group-70",
+      "frame": 4,
+      "start": 65.988,
+      "end": 67.099,
+      "text": "à l'IA plus",
+      "words": [
+        {
+          "id": "caption-word-70-0",
+          "text": "à",
+          "start": 65.988,
+          "end": 66.358
+        },
+        {
+          "id": "caption-word-70-1",
+          "text": "l'IA",
+          "start": 66.358,
+          "end": 66.729
+        },
+        {
+          "id": "caption-word-70-2",
+          "text": "plus",
+          "start": 66.729,
+          "end": 67.099
+        }
+      ]
+    },
+    {
+      "id": "caption-group-71",
+      "frame": 4,
+      "start": 67.099,
+      "end": 68.21,
+      "text": "de soixante compétences",
+      "words": [
+        {
+          "id": "caption-word-71-0",
+          "text": "de",
+          "start": 67.099,
+          "end": 67.469
+        },
+        {
+          "id": "caption-word-71-1",
+          "text": "soixante",
+          "start": 67.469,
+          "end": 67.84
+        },
+        {
+          "id": "caption-word-71-2",
+          "text": "compétences",
+          "start": 67.84,
+          "end": 68.21
+        }
+      ]
+    },
+    {
+      "id": "caption-group-72",
+      "frame": 4,
+      "start": 68.21,
+      "end": 69.321,
+      "text": "métiers prêtes à",
+      "words": [
+        {
+          "id": "caption-word-72-0",
+          "text": "métiers",
+          "start": 68.21,
+          "end": 68.58
+        },
+        {
+          "id": "caption-word-72-1",
+          "text": "prêtes",
+          "start": 68.58,
+          "end": 68.951
+        },
+        {
+          "id": "caption-word-72-2",
+          "text": "à",
+          "start": 68.951,
+          "end": 69.321
+        }
+      ]
+    },
+    {
+      "id": "caption-group-73",
+      "frame": 4,
+      "start": 69.321,
+      "end": 69.692,
+      "text": "l'emploi.",
+      "words": [
+        {
+          "id": "caption-word-73-0",
+          "text": "l'emploi.",
+          "start": 69.321,
+          "end": 69.692
+        }
+      ]
+    },
+    {
+      "id": "caption-group-74",
+      "frame": 4,
+      "start": 69.692,
+      "end": 70.552,
+      "text": "Des skills",
+      "words": [
+        {
+          "id": "caption-word-74-0",
+          "text": "Des",
+          "start": 69.692,
+          "end": 70.062
+        },
+        {
+          "id": "caption-word-74-1",
+          "text": "skills",
+          "start": 70.062,
+          "end": 70.432
+        }
+      ]
+    },
+    {
+      "id": "caption-group-75",
+      "frame": 4,
+      "start": 70.803,
+      "end": 71.914,
+      "text": "des modes d'emploi",
+      "words": [
+        {
+          "id": "caption-word-75-0",
+          "text": "des",
+          "start": 70.803,
+          "end": 71.173
+        },
+        {
+          "id": "caption-word-75-1",
+          "text": "modes",
+          "start": 71.173,
+          "end": 71.543
+        },
+        {
+          "id": "caption-word-75-2",
+          "text": "d'emploi",
+          "start": 71.543,
+          "end": 71.914
+        }
+      ]
+    },
+    {
+      "id": "caption-group-76",
+      "frame": 4,
+      "start": 71.914,
+      "end": 73.025,
+      "text": "experts pour chaque",
+      "words": [
+        {
+          "id": "caption-word-76-0",
+          "text": "experts",
+          "start": 71.914,
+          "end": 72.284
+        },
+        {
+          "id": "caption-word-76-1",
+          "text": "pour",
+          "start": 72.284,
+          "end": 72.654
+        },
+        {
+          "id": "caption-word-76-2",
+          "text": "chaque",
+          "start": 72.654,
+          "end": 73.025
+        }
+      ]
+    },
+    {
+      "id": "caption-group-77",
+      "frame": 4,
+      "start": 73.025,
+      "end": 73.395,
+      "text": "tâche,",
+      "words": [
+        {
+          "id": "caption-word-77-0",
+          "text": "tâche,",
+          "start": 73.025,
+          "end": 73.395
+        }
+      ]
+    },
+    {
+      "id": "caption-group-78",
+      "frame": 4,
+      "start": 73.395,
+      "end": 74.506,
+      "text": "de la relance",
+      "words": [
+        {
+          "id": "caption-word-78-0",
+          "text": "de",
+          "start": 73.395,
+          "end": 73.765
+        },
+        {
+          "id": "caption-word-78-1",
+          "text": "la",
+          "start": 73.765,
+          "end": 74.136
+        },
+        {
+          "id": "caption-word-78-2",
+          "text": "relance",
+          "start": 74.136,
+          "end": 74.506
+        }
+      ]
+    },
+    {
+      "id": "caption-group-79",
+      "frame": 4,
+      "start": 74.506,
+      "end": 75.617,
+      "text": "de facture au",
+      "words": [
+        {
+          "id": "caption-word-79-0",
+          "text": "de",
+          "start": 74.506,
+          "end": 74.877
+        },
+        {
+          "id": "caption-word-79-1",
+          "text": "facture",
+          "start": 74.877,
+          "end": 75.247
+        },
+        {
+          "id": "caption-word-79-2",
+          "text": "au",
+          "start": 75.247,
+          "end": 75.617
+        }
+      ]
+    },
+    {
+      "id": "caption-group-80",
+      "frame": 4,
+      "start": 75.617,
+      "end": 76.728,
+      "text": "calcul de marge",
+      "words": [
+        {
+          "id": "caption-word-80-0",
+          "text": "calcul",
+          "start": 75.617,
+          "end": 75.988
+        },
+        {
+          "id": "caption-word-80-1",
+          "text": "de",
+          "start": 75.988,
+          "end": 76.358
+        },
+        {
+          "id": "caption-word-80-2",
+          "text": "marge",
+          "start": 76.358,
+          "end": 76.728
+        }
+      ]
+    },
+    {
+      "id": "caption-group-81",
+      "frame": 4,
+      "start": 76.728,
+      "end": 77.469,
+      "text": "d'un plat.",
+      "words": [
+        {
+          "id": "caption-word-81-0",
+          "text": "d'un",
+          "start": 76.728,
+          "end": 77.099
+        },
+        {
+          "id": "caption-word-81-1",
+          "text": "plat.",
+          "start": 77.099,
+          "end": 77.469
+        }
+      ]
+    },
+    {
+      "id": "caption-group-82",
+      "frame": 4,
+      "start": 77.469,
+      "end": 78.7,
+      "text": "Des agents spécialisés",
+      "words": [
+        {
+          "id": "caption-word-82-0",
+          "text": "Des",
+          "start": 77.469,
+          "end": 77.839
+        },
+        {
+          "id": "caption-word-82-1",
+          "text": "agents",
+          "start": 77.839,
+          "end": 78.21
+        },
+        {
+          "id": "caption-word-82-2",
+          "text": "spécialisés",
+          "start": 78.21,
+          "end": 78.58
+        }
+      ]
+    },
+    {
+      "id": "caption-group-83",
+      "frame": 4,
+      "start": 78.95,
+      "end": 80.061,
+      "text": "un directeur commercial,",
+      "words": [
+        {
+          "id": "caption-word-83-0",
+          "text": "un",
+          "start": 78.95,
+          "end": 79.321
+        },
+        {
+          "id": "caption-word-83-1",
+          "text": "directeur",
+          "start": 79.321,
+          "end": 79.691
+        },
+        {
+          "id": "caption-word-83-2",
+          "text": "commercial,",
+          "start": 79.691,
+          "end": 80.061
+        }
+      ]
+    },
+    {
+      "id": "caption-group-84",
+      "frame": 4,
+      "start": 80.061,
+      "end": 81.173,
+      "text": "un community manager,",
+      "words": [
+        {
+          "id": "caption-word-84-0",
+          "text": "un",
+          "start": 80.061,
+          "end": 80.432
+        },
+        {
+          "id": "caption-word-84-1",
+          "text": "community",
+          "start": 80.432,
+          "end": 80.802
+        },
+        {
+          "id": "caption-word-84-2",
+          "text": "manager,",
+          "start": 80.802,
+          "end": 81.173
+        }
+      ]
+    },
+    {
+      "id": "caption-group-85",
+      "frame": 4,
+      "start": 81.173,
+      "end": 82.284,
+      "text": "un chef de",
+      "words": [
+        {
+          "id": "caption-word-85-0",
+          "text": "un",
+          "start": 81.173,
+          "end": 81.543
+        },
+        {
+          "id": "caption-word-85-1",
+          "text": "chef",
+          "start": 81.543,
+          "end": 81.913
+        },
+        {
+          "id": "caption-word-85-2",
+          "text": "de",
+          "start": 81.913,
+          "end": 82.284
+        }
+      ]
+    },
+    {
+      "id": "caption-group-86",
+      "frame": 4,
+      "start": 82.284,
+      "end": 82.654,
+      "text": "projet,",
+      "words": [
+        {
+          "id": "caption-word-86-0",
+          "text": "projet,",
+          "start": 82.284,
+          "end": 82.654
+        }
+      ]
+    },
+    {
+      "id": "caption-group-87",
+      "frame": 4,
+      "start": 82.654,
+      "end": 83.765,
+      "text": "un directeur financier.",
+      "words": [
+        {
+          "id": "caption-word-87-0",
+          "text": "un",
+          "start": 82.654,
+          "end": 83.024
+        },
+        {
+          "id": "caption-word-87-1",
+          "text": "directeur",
+          "start": 83.024,
+          "end": 83.395
+        },
+        {
+          "id": "caption-word-87-2",
+          "text": "financier.",
+          "start": 83.395,
+          "end": 83.765
+        }
+      ]
+    },
+    {
+      "id": "caption-group-88",
+      "frame": 4,
+      "start": 83.765,
+      "end": 84.996,
+      "text": "Et des garde-fous",
+      "words": [
+        {
+          "id": "caption-word-88-0",
+          "text": "Et",
+          "start": 83.765,
+          "end": 84.135
+        },
+        {
+          "id": "caption-word-88-1",
+          "text": "des",
+          "start": 84.135,
+          "end": 84.506
+        },
+        {
+          "id": "caption-word-88-2",
+          "text": "garde-fous",
+          "start": 84.506,
+          "end": 84.876
+        }
+      ]
+    },
+    {
+      "id": "caption-group-89",
+      "frame": 4,
+      "start": 85.246,
+      "end": 86.358,
+      "text": "rien n'est envoyé,",
+      "words": [
+        {
+          "id": "caption-word-89-0",
+          "text": "rien",
+          "start": 85.246,
+          "end": 85.617
+        },
+        {
+          "id": "caption-word-89-1",
+          "text": "n'est",
+          "start": 85.617,
+          "end": 85.987
+        },
+        {
+          "id": "caption-word-89-2",
+          "text": "envoyé,",
+          "start": 85.987,
+          "end": 86.358
+        }
+      ]
+    },
+    {
+      "id": "caption-group-90",
+      "frame": 4,
+      "start": 86.358,
+      "end": 87.469,
+      "text": "payé ou supprimé",
+      "words": [
+        {
+          "id": "caption-word-90-0",
+          "text": "payé",
+          "start": 86.358,
+          "end": 86.728
+        },
+        {
+          "id": "caption-word-90-1",
+          "text": "ou",
+          "start": 86.728,
+          "end": 87.098
+        },
+        {
+          "id": "caption-word-90-2",
+          "text": "supprimé",
+          "start": 87.098,
+          "end": 87.469
+        }
+      ]
+    },
+    {
+      "id": "caption-group-91",
+      "frame": 4,
+      "start": 87.469,
+      "end": 88.58,
+      "text": "sans votre accord",
+      "words": [
+        {
+          "id": "caption-word-91-0",
+          "text": "sans",
+          "start": 87.469,
+          "end": 87.839
+        },
+        {
+          "id": "caption-word-91-1",
+          "text": "votre",
+          "start": 87.839,
+          "end": 88.209
+        },
+        {
+          "id": "caption-word-91-2",
+          "text": "accord",
+          "start": 88.209,
+          "end": 88.58
+        }
+      ]
+    },
+    {
+      "id": "caption-group-92",
+      "frame": 4,
+      "start": 88.58,
+      "end": 88.95,
+      "text": "explicite.",
+      "words": [
+        {
+          "id": "caption-word-92-0",
+          "text": "explicite.",
+          "start": 88.58,
+          "end": 88.95
+        }
+      ]
+    },
+    {
+      "id": "caption-group-93",
+      "frame": 4,
+      "start": 88.95,
+      "end": 89.691,
+      "text": "Vous parlez.",
+      "words": [
+        {
+          "id": "caption-word-93-0",
+          "text": "Vous",
+          "start": 88.95,
+          "end": 89.32
+        },
+        {
+          "id": "caption-word-93-1",
+          "text": "parlez.",
+          "start": 89.32,
+          "end": 89.691
+        }
+      ]
+    },
+    {
+      "id": "caption-group-94",
+      "frame": 4,
+      "start": 89.691,
+      "end": 90.802,
+      "text": "L'IA comprend votre",
+      "words": [
+        {
+          "id": "caption-word-94-0",
+          "text": "L'IA",
+          "start": 89.691,
+          "end": 90.061
+        },
+        {
+          "id": "caption-word-94-1",
+          "text": "comprend",
+          "start": 90.061,
+          "end": 90.431
+        },
+        {
+          "id": "caption-word-94-2",
+          "text": "votre",
+          "start": 90.431,
+          "end": 90.802
+        }
+      ]
+    },
+    {
+      "id": "caption-group-95",
+      "frame": 4,
+      "start": 90.802,
+      "end": 91.172,
+      "text": "métier.",
+      "words": [
+        {
+          "id": "caption-word-95-0",
+          "text": "métier.",
+          "start": 90.802,
+          "end": 91.172
+        }
+      ]
+    },
+    {
+      "id": "caption-group-96",
+      "frame": 4,
+      "start": 91.172,
+      "end": 92.283,
+      "text": "Et elle agit",
+      "words": [
+        {
+          "id": "caption-word-96-0",
+          "text": "Et",
+          "start": 91.172,
+          "end": 91.543
+        },
+        {
+          "id": "caption-word-96-1",
+          "text": "elle",
+          "start": 91.543,
+          "end": 91.913
+        },
+        {
+          "id": "caption-word-96-2",
+          "text": "agit",
+          "start": 91.913,
+          "end": 92.283
+        }
+      ]
+    },
+    {
+      "id": "caption-group-97",
+      "frame": 4,
+      "start": 92.283,
+      "end": 93.394,
+      "text": "dans vos vrais",
+      "words": [
+        {
+          "id": "caption-word-97-0",
+          "text": "dans",
+          "start": 92.283,
+          "end": 92.654
+        },
+        {
+          "id": "caption-word-97-1",
+          "text": "vos",
+          "start": 92.654,
+          "end": 93.024
+        },
+        {
+          "id": "caption-word-97-2",
+          "text": "vrais",
+          "start": 93.024,
+          "end": 93.394
+        }
+      ]
+    },
+    {
+      "id": "caption-group-98",
+      "frame": 4,
+      "start": 93.394,
+      "end": 93.885,
+      "text": "outils.",
+      "words": [
+        {
+          "id": "caption-word-98-0",
+          "text": "outils.",
+          "start": 93.394,
+          "end": 93.765
+        }
+      ]
+    }
+  ]
+}

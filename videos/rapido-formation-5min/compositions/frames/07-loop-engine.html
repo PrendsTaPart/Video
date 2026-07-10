@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <title>S7 — Le Loop Engine</title>
+  </head>
+  <body>
+    <template>
+      <style>
+        @font-face { font-family: "Poppins"; src: url("assets/fonts/Poppins-600.woff2") format("woff2"); font-weight: 600; }
+        @font-face { font-family: "Poppins"; src: url("assets/fonts/Poppins-700.woff2") format("woff2"); font-weight: 700; }
+        @font-face { font-family: "Poppins"; src: url("assets/fonts/Poppins-800.woff2") format("woff2"); font-weight: 800; }
+        @font-face { font-family: "Inter"; src: url("assets/fonts/Inter-Variable.woff2") format("woff2-variations"); font-weight: 100 900; }
+
+        #root { position: absolute; inset: 0; overflow: hidden; font-family: "Poppins", "Inter", sans-serif; color: #eaf2ff; isolation: isolate; }
+        .bg { position: absolute; inset: 0; background: radial-gradient(ellipse 75% 75% at 30% 45%, #1b2440 0%, #121a30 60%, #0d1424 100%); }
+
+        .eyebrow-wrap { position: absolute; left: 110px; top: 90px; z-index: 5; }
+        .eyebrow-line { width: 64px; height: 5px; border-radius: 3px; background: #7fbfff; margin-bottom: 16px; transform-origin: left; opacity: 0; will-change: transform, opacity; }
+        .eyebrow { font-family: "Poppins", sans-serif; font-weight: 600; font-size: 32px; letter-spacing: 0.08em; text-transform: uppercase; color: #7fbfff; opacity: 0; margin: 0; will-change: transform, opacity; }
+        .title { position: absolute; left: 110px; top: 186px; width: 620px; z-index: 5; font-family: "Poppins", sans-serif; font-weight: 800; font-size: 62px; line-height: 1.05; letter-spacing: -0.02em; color: #ffffff; opacity: 0; will-change: transform, opacity; }
+        .sub { position: absolute; left: 110px; top: 344px; width: 600px; z-index: 5; font-family: "Inter", sans-serif; font-weight: 500; font-size: 34px; line-height: 1.35; color: #a9bad6; opacity: 0; will-change: transform, opacity; }
+
+        .clock { position: absolute; left: 250px; top: 470px; width: 300px; height: 300px; z-index: 4; opacity: 0; will-change: transform, opacity; }
+        .clock .ring { position: absolute; inset: 0; border-radius: 50%; border: 3px dashed rgba(127,191,255,0.5); }
+        .clock .core { position: absolute; inset: 42px; border-radius: 50%; background: rgba(255,255,255,0.05); border: 2px solid rgba(127,191,255,0.35); display: grid; place-items: center; box-shadow: 0 0 60px rgba(0,168,240,0.3); }
+        .clock .core svg { width: 96px; height: 96px; fill: none; stroke: #7fbfff; stroke-width: 2; stroke-linecap: round; }
+        .clock .core b { position: absolute; bottom: 40px; font-family: "Poppins", sans-serif; font-weight: 700; font-size: 24px; color: #eaf2ff; letter-spacing: 0.04em; }
+
+        .cards { position: absolute; left: 760px; top: 130px; width: 1050px; z-index: 5; display: flex; flex-direction: column; gap: 18px; }
+        .rc { box-sizing: border-box; background: rgba(255,255,255,0.05); border: 1.5px solid rgba(255,255,255,0.12); border-radius: 20px; padding: 22px 26px; display: flex; align-items: center; gap: 22px; opacity: 0; will-change: transform, opacity; backdrop-filter: blur(2px); }
+        .rc .when { flex: none; width: 130px; font-family: "Poppins", sans-serif; font-weight: 800; font-size: 30px; color: #7fbfff; text-align: center; line-height: 1.1; }
+        .rc .bar { flex: none; width: 3px; height: 62px; border-radius: 3px; background: rgba(127,191,255,0.4); }
+        .rc .tx b { display: block; font-family: "Poppins", sans-serif; font-weight: 700; font-size: 34px; color: #ffffff; }
+        .rc .tx span { display: block; margin-top: 3px; font-family: "Inter", sans-serif; font-weight: 500; font-size: 27px; color: #a9bad6; }
+
+        .ext { position: absolute; left: 110px; top: 940px; right: 110px; z-index: 5; display: flex; align-items: center; gap: 16px; opacity: 0; will-change: transform, opacity; }
+        .ext .lbl { font-family: "Inter", sans-serif; font-weight: 600; font-size: 27px; color: #7fbfff; flex: none; }
+        .ext .chips { display: flex; gap: 12px; flex-wrap: wrap; }
+        .ext .chips span { font-family: "Poppins", sans-serif; font-weight: 700; font-size: 27px; padding: 12px 24px; border-radius: 100px; background: rgba(255,255,255,0.06); border: 1.5px solid rgba(255,255,255,0.14); color: #eaf2ff; opacity: 0; will-change: transform, opacity; }
+      </style>
+
+      <div id="root" data-composition-id="07-loop-engine" data-width="1920" data-height="1080" data-duration="32.918">
+        <div id="bg-clip" class="clip bg" data-start="0" data-duration="32.418" data-track-index="0"></div>
+        <div id="scene" class="clip" data-start="0" data-duration="32.418" data-track-index="1" style="position:absolute; inset:0;">
+          <div class="eyebrow-wrap"><div class="eyebrow-line" id="eyebrow-line"></div><p class="eyebrow" id="eyebrow">Le Loop Engine</p></div>
+          <h1 class="title" id="title">L'IA qui travaille<br />à heure fixe.</h1>
+          <p class="sub" id="sub">Des routines automatiques, même quand vous n'êtes pas là.</p>
+          <div class="clock" id="clock">
+            <div class="ring" id="ring"></div>
+            <div class="core"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9" /><path d="M12 7v5l3.5 2" /></svg><b>24/7</b></div>
+          </div>
+          <div class="cards">
+            <div class="rc" id="r1"><span class="when">Lundi</span><span class="bar"></span><span class="tx"><b>Routine trésorerie</b><span>analyse le cash et les impayés</span></span></div>
+            <div class="rc" id="r2"><span class="when">Chaque jour</span><span class="bar"></span><span class="tx"><b>Sentinelle cash</b><span>surveille le solde · n'alerte qu'en anomalie</span></span></div>
+            <div class="rc" id="r3"><span class="when">Mercredi</span><span class="bar"></span><span class="tx"><b>Boucle croissance</b><span>optimise publicités &amp; contenu</span></span></div>
+            <div class="rc" id="r4"><span class="when">1er du mois</span><span class="bar"></span><span class="tx"><b>Board pack</b><span>MRR · CAC · marge · runway</span></span></div>
+          </div>
+          <div class="ext" id="ext">
+            <span class="lbl">Connecté aussi à vos outils&nbsp;:</span>
+            <span class="chips"><span id="e1">Stripe</span><span id="e2">Gmail</span><span id="e3">Google Agenda</span><span id="e4">Canva</span><span id="e5">Lovable</span><span id="e6">n8n</span></span>
+          </div>
+        </div>
+      </div>
+
+      <script src="assets/vendor/gsap.min.js"></script>
+      <script>
+        window.__timelines = window.__timelines || {};
+        const tl = gsap.timeline({ paused: true });
+        tl.fromTo("#eyebrow-line", { scaleX: 0, opacity: 0 }, { scaleX: 1, opacity: 1, duration: 0.5, ease: "power3.out" }, 0.3);
+        tl.fromTo("#eyebrow", { y: 14, opacity: 0 }, { y: 0, opacity: 1, duration: 0.5, ease: "power3.out" }, 0.5);
+        tl.fromTo("#title", { y: 22, opacity: 0 }, { y: 0, opacity: 1, duration: 0.6, ease: "power3.out" }, 0.8);
+        tl.fromTo("#sub", { y: 16, opacity: 0 }, { y: 0, opacity: 1, duration: 0.5, ease: "power3.out" }, 1.6);
+        tl.fromTo("#clock", { scale: 0.6, opacity: 0 }, { scale: 1, opacity: 1, duration: 0.7, ease: "back.out(1.5)" }, 2.4);
+        tl.to("#ring", { rotation: 360, duration: 24, ease: "none", transformOrigin: "50% 50%" }, 3.0);
+        var cards = [["#r1", 5.0], ["#r2", 11.5], ["#r3", 17.5], ["#r4", 22.5]];
+        cards.forEach(function (p) {
+          tl.fromTo(p[0], { x: 30, opacity: 0 }, { x: 0, opacity: 1, duration: 0.5, ease: "power3.out" }, p[1]);
+        });
+        tl.fromTo("#ext", { y: 16, opacity: 0 }, { y: 0, opacity: 1, duration: 0.5, ease: "power3.out" }, 28.0);
+        ["#e1","#e2","#e3","#e4","#e5","#e6"].forEach(function (id, i) {
+          tl.fromTo(id, { scale: 0.8, opacity: 0 }, { scale: 1, opacity: 1, duration: 0.35, ease: "back.out(1.6)" }, 28.6 + i * 0.35);
+        });
+        window.__timelines["07-loop-engine"] = tl;
+      </script>
+    </template>
+  </body>
+</html>
