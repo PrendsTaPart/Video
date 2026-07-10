@@ -21,7 +21,9 @@ Tu es le studio vidéo BraindCode. Produis LE PROCHAIN épisode de la série Rap
    Génère via RapidoCMS generate_image seulement les visuels manquants, range-les dans shared-images/rapido/.
 3. Voix off FR (Adam TGAegA0zNRi8I6nUdq3i, clé studio-video/.env), transcription --language fr,
    audio_meta clés "frame", BGM assets/bgm/track.mp3 @0.18 + SFX.
-4. captions.mjs → assemble-index.mjs → vendor gsap local → transitions.mjs inject → lint+inspect
+4. captions.mjs → **recolore l'accent des captions à la couleur de la saison** (injecte
+   `--cap-accent`/`--primary` = #7850C0 RH / #00A8F0 CMS / #48A850 CRM dans le bloc
+   `<style data-brand-tokens>` de compositions/captions.html) → assemble-index.mjs → vendor gsap local → transitions.mjs inject → lint+inspect
    (0 erreur / 0 layout issue) → render → QA frames ffmpeg (hooks lisibles, prompt+résultat clairs,
    logo/CTA présents, orthographe des marques). Nomme le rendu, commit+push sur
    claude/hyperframes-reels-studio-9f0b63, archive dans RapidoCMS.
