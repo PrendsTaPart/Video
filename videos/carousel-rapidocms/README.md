@@ -5,8 +5,17 @@ Vidéo verticale (1080×1920, ~52 s) qui **présente le carrousel RapidoCMS**
 7 slides du carrousel, avec voix off, sous-titres incrustés, transitions *swipe*,
 compteur `N/7` et pastilles de progression type Instagram.
 
-## Livrable
-- `deliverable/carousel-rapidocms.mp4`
+## Livrables
+- `deliverable/carousel-rapidocms.mp4` — version standard (vertical 9:16)
+- `deliverable/carousel-rapidocms-tiktok.mp4` — **version TikTok** : sous-titres,
+  pastilles et infos remontés au-dessus des zones réservées à l'UI TikTok
+  (légende/pseudo/musique en bas, icônes à droite).
+
+Reproduire la version TikTok :
+```bash
+LAYOUT=tiktok python3 build_frames.py
+FRAMES_DIR=frames-tiktok OUTNAME=carousel-rapidocms-tiktok.mp4 python3 assemble.py
+```
 
 ## Sources & analyse
 Le carrousel source (7 slides, PDF fourni) a été analysé et rebâti en assets :

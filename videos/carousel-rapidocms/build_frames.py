@@ -10,6 +10,18 @@ NAVY    = (27, 42, 65)
 GREYDOT = (201, 212, 224)
 WHITE   = (255, 255, 255)
 
+LAYOUT = os.environ.get("LAYOUT", "default")
+if LAYOUT == "tiktok":
+    OUTDIR   = "frames-tiktok"
+    CARD     = (80, 170, 920)        # x, y, width  (height derived 4:5)
+    DOTS_Y   = 1358
+    CAP_Y    = 1430                  # caption pill top — kept above TikTok bottom UI
+else:
+    OUTDIR   = "frames"
+    CARD     = (40, 224, 1000)
+    DOTS_Y   = 1548
+    CAP_Y    = 1660
+
 FD = "assets/fonts"
 def F(name, size): return ImageFont.truetype(os.path.join(FD, name), size)
 P800 = lambda s: F("Poppins-800.ttf", s)
@@ -17,7 +29,7 @@ P700 = lambda s: F("Poppins-700.ttf", s)
 P600 = lambda s: F("Poppins-600.ttf", s)
 P400 = lambda s: F("Poppins-400.ttf", s)
 
-os.makedirs("frames", exist_ok=True)
+os.makedirs(OUTDIR, exist_ok=True)
 logo = Image.open("assets/logo/rapidocms-logo-crop.png").convert("RGBA")
 
 def rounded(size, radius, fill):
@@ -70,12 +82,10 @@ def draw_dots(im, active):
     n = 7
     gap = 26
     aw = 46; dw = 16
-    total = aw + (n-1)*(dw+gap)  # rough
-    # compute total precisely
     widths = [aw if i == active else dw for i in range(n)]
     total = sum(widths) + gap*(n-1)
     x = (W-total)//2
-    y = 1548
+    y = DOTS_Y
     d = ImageDraw.Draw(im)
     for i in range(n):
         w = widths[i]
@@ -107,7 +117,7 @@ def draw_caption(im, text):
     tw = max(d.textbbox((0,0), ln, font=f)[2] for ln in lines)
     pw = min(tw+pad*2, W-80)
     ph = th+pad*2-8
-    cy = 1660
+    cy = CAP_Y
     px = (W-pw)//2
     pill = rounded((pw, ph), 40, ACCENT + (235,))
     im.alpha_composite(pill, (px, cy))
@@ -138,7 +148,7 @@ sub = "Bibliothèque de posts générée par l'IA"
 d.text((W/2, 990), sub, font=P600(46), fill=NAVY, anchor="mm")
 d.text((W/2, 1075), "— présentation —", font=P400(40), fill=(120,133,150), anchor="mm")
 draw_caption(im, CAPS[0])
-im.convert("RGB").save("frames/f0.png")
+im.convert("RGB").save(f"{OUTDIR}/f0.png")
 print("f0 intro")
 
 # ---- 7 carousel slide frames ----
@@ -152,11 +162,11 @@ for i in range(1, 8):
     d = ImageDraw.Draw(im)
     draw_header(d, im, f"{i}/7")
     sl = Image.open("assets/slides/"+slidefiles[i])
-    cw = 1000
-    ch = int(cw * sl.height / sl.width)  # 4:5 -> 1250
-    paste_card(im, sl, (40, 224, cw, ch))
+    cx, cy0, cw = CARD
+    ch = int(cw * sl.height / sl.width)  # 4:5
+    paste_card(im, sl, (cx, cy0, cw, ch))
     draw_dots(im, i-1)
     draw_caption(im, CAPS[i])
-    im.convert("RGB").save(f"frames/f{i}.png")
+    im.convert("RGB").save(f"{OUTDIR}/f{i}.png")
     print("f%d" % i, slidefiles[i])
 print("done")

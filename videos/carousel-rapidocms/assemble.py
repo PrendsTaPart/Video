@@ -5,6 +5,8 @@
 import subprocess, os, json
 
 os.chdir(os.path.dirname(os.path.abspath(__file__)))
+FRAMES = os.environ.get("FRAMES_DIR", "frames")
+OUTNAME = os.environ.get("OUTNAME", "carousel-rapidocms.mp4")
 FPS = 30
 T = 0.45           # xfade duration (swipe)
 HEAD = 0.35        # silence before VO in each clip
@@ -24,7 +26,7 @@ print("clip durations:", [round(c,2) for c in clip])
 os.makedirs("work", exist_ok=True)
 for i in range(N):
     out = f"work/clip{i}.mp4"
-    subprocess.run(["ffmpeg","-y","-loop","1","-t",f"{clip[i]:.3f}","-i",f"frames/f{i}.png",
+    subprocess.run(["ffmpeg","-y","-loop","1","-t",f"{clip[i]:.3f}","-i",f"{FRAMES}/f{i}.png",
         "-r",str(FPS),"-vf","scale=1080:1920:flags=lanczos,format=yuv420p,setsar=1",
         "-c:v","libx264","-preset","medium","-crf","18","-pix_fmt","yuv420p", out],
         check=True, stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
@@ -82,7 +84,7 @@ cmd = ["ffmpeg","-y"] + inputs + [
     "-map", video_last, "-map", "[aout]",
     "-c:v","libx264","-preset","medium","-crf","19","-pix_fmt","yuv420p",
     "-c:a","aac","-b:a","192k","-r",str(FPS),"-t",f"{total:.3f}",
-    "deliverable/carousel-rapidocms.mp4"]
+    f"deliverable/{OUTNAME}"]
 with open("work/filtergraph.txt","w") as f:
     f.write(filtergraph)
 print("running final ffmpeg...")
@@ -90,5 +92,5 @@ r = subprocess.run(cmd, stdout=subprocess.DEVNULL, stderr=subprocess.PIPE)
 if r.returncode != 0:
     print("FFMPEG ERROR:\n", r.stderr.decode()[-3000:])
     raise SystemExit(1)
-print("OK -> deliverable/carousel-rapidocms.mp4")
+print(f"OK -> deliverable/{OUTNAME}")
 print(json.dumps({"total_s": round(total,2), "vo_delays":[round(x,2) for x in vo_delays]}, indent=2))
