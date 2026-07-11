@@ -74,7 +74,7 @@ def T2(cfg):
     d.text((150,cy+28),"Exécuté par votre IA",font=P700(40),fill=(120,220,140),anchor="lm")
     card(im,[cfg["result"]],(90,cy+110,900,610))
     pill(im,cfg["cta"],1740,a,W,fs=38)
-    im.convert("RGB").save("preview/T2-demo-1phrase.png"); print("T2")
+    im.convert("RGB").save(cfg.get("out","preview/T2-demo-1phrase.png")); print("T2")
 
 # ---------- T3 : Fondateur / LinkedIn (1:1) ----------
 def T3(cfg):
@@ -90,7 +90,7 @@ def T3(cfg):
     d.rounded_rectangle([610,760,610+d.textbbox((0,0),cfg['cta'],font=P700(38))[2]+72,840],40,fill=a+(255,))
     d.text((646,800),cfg["cta"],font=P700(38),fill=WHITE,anchor="lm")
     d.text((70,960),"— Mo, fondateur",font=P600(30),fill=INK,anchor="lm")
-    im.convert("RGB").save("preview/T3-fondateur.png"); print("T3")
+    im.convert("RGB").save(cfg.get("out","preview/T3-fondateur.png")); print("T3")
 
 if __name__=="__main__":
     BLUE=(11,110,253); SKY=(41,171,226); VIOLET=(123,97,196)
