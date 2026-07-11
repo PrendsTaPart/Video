@@ -48,6 +48,11 @@ STORIES={
  "S03":(3,"La SEULE étape\nqui se fait sur le web.","Étape 2 · Créer votre boutique","foodeatup.com","assets/screens/ajout-boutique.png"),
  "S04":(4,"Vos taux de TVA,\nréglés une fois.","Étape 3 · Configurer la TVA","foodeatup.com","assets/screens/ajouter-tva.png"),
  "S05":(5,"Une carte bien rangée\ncommence ici.","Étape 4 · Créer vos catégories","foodeatup.com","assets/screens/ajouter-categorie.png"),
+ "S06":(6,"Claude, Mistral ou OpenAI,\nbranchés à votre resto.","Étape 5 · Connecter votre IA","MCP FoodEatUp","assets-generes/p3.jpg"),
+ "S07":(7,"Vous saisissez vos plats\nun par un ?!","Étape 6 · Importer votre carte","foodeatup.com","assets/screens/ajout-produit.png"),
+ "S08":(8,"Vos matières premières,\nenfin cadrées.","Étape 7 · Créer vos ingrédients","foodeatup.com","assets/screens/ajouter-ingredient.png"),
+ "S09":(9,"Vous connaissez\nvotre food cost ?","Étape 8 · Recettes & coût matière","foodeatup.com","assets/screens/configuration-recette.png"),
+ "S10":(10,"Votre carte, montée\nen glisser-déposer.","Étape 9 · Composer Ma carte","foodeatup.com","assets/screens/ajouter-plat.png"),
 }
 
 def build(sid):
