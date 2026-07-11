@@ -9,7 +9,9 @@ BG=(247,249,251); BLUE=(11,110,253); ORANGE=(247,148,30); NAVY=(23,42,69); INK=(
 FD="assets/fonts"
 def F(n,s): return ImageFont.truetype(os.path.join(FD,n),s)
 P800=lambda s:F("Poppins-800.ttf",s); P700=lambda s:F("Poppins-700.ttf",s); P600=lambda s:F("Poppins-600.ttf",s)
-os.makedirs("preview",exist_ok=True)
+GUIDES=os.environ.get("GUIDES","1")=="1"
+OUTDIR="preview" if GUIDES else "frames"
+os.makedirs(OUTDIR,exist_ok=True)
 logo=Image.open("assets/logo/foodeatup.png").convert("RGBA"); logo_wm=logo.crop((60,120,1420,410))
 mika=Image.open("assets/avatar/mika-still.png").convert("RGBA")
 
@@ -72,8 +74,8 @@ def build(sid):
     # CTA pill
     f3=P700(46); tw=d.textbbox((0,0),cta,font=f3)[2]; pw=tw+80;
     d.rounded_rectangle([(W-pw)//2,1500,(W+pw)//2,1600],50,fill=BLUE+(255,)); d.text((W/2,1550),cta,font=f3,fill=WHITE,anchor="mm")
-    # safe-zone guides (preview only, faint)
-    d.line([0,250,W,250],fill=(255,0,0,60),width=2); d.line([0,1670,W,1670],fill=(255,0,0,60),width=2)
-    im.convert("RGB").save(f"preview/{sid}.png"); print("built",sid)
+    if GUIDES:
+        d.line([0,250,W,250],fill=(255,0,0,60),width=2); d.line([0,1670,W,1670],fill=(255,0,0,60),width=2)
+    im.convert("RGB").save(f"{OUTDIR}/{sid}.png"); print("built",sid,"->",OUTDIR)
 
 for sid in (sys.argv[1:] or STORIES.keys()): build(sid)
