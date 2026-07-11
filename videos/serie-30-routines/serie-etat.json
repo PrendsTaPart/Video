@@ -142,9 +142,10 @@
    "date": "NON PLANIFIÉ",
    "heure": null,
    "outro_reuse": "cta-C-generique",
-   "blocage": "schedule refusé — compte RapidoCMS expire le 18/07 ; brouillon 437 prêt à planifier après renouvellement"
+   "blocage": "schedule refusé — compte RapidoCMS expire le 18/07 ; brouillon 437 prêt à planifier après renouvellement. RE-TESTÉ 2026-07-11 17h34 UTC (schedule 19/07 08:00) : refus confirmé « La date choisie est supérieure à la date d'expiration de votre compte »."
   }
  ],
+ "_retest_tiktok_2026_07_11": "create_draft_tool tiktok account_id 5 re-testé : toujours refusé (« account_id invalide : ce compte n'existe pas pour ce réseau ou n'appartient pas au propriétaire du token »+ statut expired dans list_connected_accounts). TikTok inutilisable tant que Michael ne ré-autorise pas le compte TikTok BraindCode dans RapidoCMS avec permission de publication.",
  "_go": "Michael 2026-07-10 : générer Mika via HeyGen + produire+planifier les 30 (LinkedIn BraindCode ; TikTok en attente de connexion CMS).",
  "auto_loop": {
   "actif": false,
