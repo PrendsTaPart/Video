@@ -12,7 +12,7 @@ T = 0.45           # xfade duration (swipe)
 HEAD = 0.35        # silence before VO in each clip
 TAIL = 0.55        # silence after VO
 import glob
-N = len(glob.glob('audio/s*.mp3'))
+N = len(glob.glob("audio/s*.mp3"))
 
 def dur(f):
     return float(subprocess.check_output(
