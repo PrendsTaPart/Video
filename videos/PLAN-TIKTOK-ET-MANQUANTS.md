@@ -10,10 +10,23 @@ les vidéos manquantes ». État des lieux, actions faites, et plan prêt à ex�
    n'appartient pas au propriétaire du token » (statut `expired` dans
    `list_connected_accounts`). **Aucun brouillon ni post TikTok possible** tant que le compte
    TikTok n'est pas ré-autorisé dans RapidoCMS avec permission de publication.
-2. **Expiration du compte RapidoCMS le 18/07/2026** — `schedule_draft_tool` au 19/07 →
-   **refusé** : « La date choisie est supérieure à la date d'expiration de votre compte ».
-   **Impossible de planifier quoi que ce soit après le 18/07** (E9→E30 série-30,
-   stories S08+, suite des séries). → Renouveler l'abonnement RapidoCMS.
+2. **BUG RapidoCMS — contrôle d'expiration figé au 18/07/2026** (≠ vraie expiration).
+   `schedule_draft_tool` refuse toute `post_date ≥ 2026-07-19` : « La date choisie est
+   supérieure à la date d'expiration de votre compte ». **Ce n'est PAS l'abonnement** :
+   Michael confirme une expiration réelle au **2027-06-28**.
+   Caractérisation (tests 2026-07-12, compte 321) :
+   - `2026-07-18 08:00` → **accepté** (post créé puis annulé pour ne pas doubler E8).
+   - `2026-07-19 08:00` → **refusé**.
+   - `2027-06-01` (avant l'expiration réelle) → **refusé** aussi.
+   - Coupure **fixe** au 2026-07-18 (identique les 11 et 12/07 → pas une fenêtre glissante).
+   - Incohérence prouvant le bug : des posts sont **déjà planifiés 2026-07-20 → 07-31**
+     dans le système (série BraindCode S1/S2, ids 310→329, statut=0). Le compte héberge
+     donc des posts au-delà du 18/07, mais l'endpoint de création les refuse.
+   - Hypothèse pour l'équipe RapidoCMS : la validation compare `post_date` à un champ
+     interne périmé (fin d'essai / date de token non mise à jour au renouvellement),
+     au lieu de la vraie date d'abonnement (2027-06-28). **À corriger côté backend.**
+   - Impact : **impossible de planifier après le 18/07** (E9→E30 série-30, stories S08+,
+     vague TikTok, tutoriel 5 min) tant que le champ n'est pas corrigé.
 
 ## ✅ Fait aujourd'hui (dans la fenêtre encore ouverte)
 
