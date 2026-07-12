@@ -20,3 +20,19 @@ Statut = brouillons **planifiés** (réviseables/annulables dans le CMS), public
 
 ## Reste à produire (plan-20.md)
 V06→V08 RapidoCMS · V09 (LinkedIn) · V10→V13 RapidoRH · V14→V15 RapidoCRM (écrans à générer) · V16→V20 Écosystème/preuve.
+
+## Mise à jour 12/07 — mur d'expiration = BUG confirmé
+Test : planification au **20/07/2026 acceptée** (post #387). L'ancien rejet « date > expiration » était un bug transitoire (abonnement réel jusqu'au **28/06/2027**). Planification désormais libre.
+
+## Lot 2 — 7 Shorts FoodEatUp ✅ planifié
+Campagne **« FoodEatUp Shorts Tuto 2026 »** (id 24). FB *Foodeatup* (64) + IG *BraindCode* (24), 1/jour 17h.
+
+| Short | Date | Post ids (FB/IG) |
+|-------|------|------------------|
+| S1 boutique | 20/07 | 387 / 389 |
+| S2 TVA+carte | 21/07 | 390 / 391 |
+| S3 MCP/IA | 22/07 | 392 / 393 |
+| S4 carte IA | 23/07 | 394 / 395 |
+| S5 équipe+QR | 24/07 | 396 / 397 |
+| S6 HACCP | 25/07 | 398 / 399 |
+| S7 PrediBot | 26/07 | 400 / 401 |
