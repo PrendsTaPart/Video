@@ -6,6 +6,7 @@ réutilisables entre les vidéos du studio. Générées via RapidoCMS.
 ## brand/
 - `foodeatup-logo-mascot.png` — logo FoodEatUp complet (mascotte + wordmark)
 - `foodeatup-mark-eight.png` — symbole seul
+- `foodeatup-logo-horizontal-bluebg.png` — wordmark blanc/orange sur pastille bleue (fourni 2026-07-11)
 
 ## characters/
 - `equipe-tablette.png` — serveur + chef + serveuse autour d'une tablette
@@ -26,6 +27,7 @@ réutilisables entre les vidéos du studio. Générées via RapidoCMS.
 - `chef-desk-calm.png` — gérant serein à son bureau, laptop dashboard financier (compta à jour)
 - `setup-blank.png` — gérant devant un compte FoodEatUp vide à configurer (cartes vides, ?)
 - `configurateur-agent.png` — agent robot IA « Configurateur » qui assemble le setup (menu, tables, équipe, checklist)
+- `chef-haccp-badge.png` — chef moustachu 3D, gants noirs, badge HACCP sur la veste (fourni par Michael 2026-07-11)
 
 Pour utiliser dans un projet : copier le PNG voulu dans `<projet>/public/`
 (les chemins d'assets HyperFrames sont relatifs à la racine du projet).
