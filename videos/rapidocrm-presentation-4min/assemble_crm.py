@@ -19,13 +19,18 @@ def voa(idx,d,head=0.3): return f"[{idx}:a]adelay={int(head*1000)}|{int(head*100
 def kb(png,d,i,out):
     z="min(zoom+0.0006,1.06)" if i%2==0 else "if(eq(on,0),1.06,max(zoom-0.0006,1.0))"
     run(["ffmpeg","-y","-loop","1","-t",f"{d:.3f}","-i",png,"-vf",f"scale={W*2}:{H*2},zoompan=z='{z}':d={int(d*FPS)}:x='iw/2-(iw/zoom/2)':y='ih/2-(ih/zoom/2)':s={W}x{H}:fps={FPS},setsar=1"]+VENC[:-8]+["-an","-frames:v",str(int(d*FPS)),out],os.path.basename(out))
-def seq(pngs,vo,out):
+def seq(pngs,vo,out,med=False,off=10):
     d=dur(vo)+0.8; each=d/len(pngs); parts=[]
     for i,p in enumerate(pngs): o=f"wcrm/_{os.path.basename(out)}_{i}.mp4"; kb(p,each,i,o); parts.append(o)
     lst=f"wcrm/_{os.path.basename(out)}.txt"; open(lst,"w").write("".join(f"file '{os.path.basename(x)}'\n" for x in parts))
     run(["ffmpeg","-y","-f","concat","-safe","0","-i",lst,"-c","copy",f"wcrm/_{os.path.basename(out)}v.mp4"],"seqv")
     dv=dur(f"wcrm/_{os.path.basename(out)}v.mp4")
-    run(["ffmpeg","-y","-i",f"wcrm/_{os.path.basename(out)}v.mp4","-i",vo,"-filter_complex",voa(1,dv,0.2),"-map","0:v","-map","[a]","-t",f"{dv:.3f}"]+VENC+[out],os.path.basename(out))
+    if med:  # médaillon Mika live (présentateur, gouttière gauche)
+        fc=(f"[0:v]setsar=1[bg];[2:v]crop=560:560:80:40,scale=260:260,setsar=1[mk];[mk][3:v]alphamerge[mkc];"
+            f"[bg][mkc]overlay=70:390:format=auto[v];"+voa(1,dv,0.2))
+        run(["ffmpeg","-y","-i",f"wcrm/_{os.path.basename(out)}v.mp4","-i",vo,"-ss",str(off),"-t",f"{dv:.3f}","-i",MIKA,"-loop","1","-i","masks/c260.png","-filter_complex",fc,"-map","[v]","-map","[a]","-t",f"{dv:.3f}"]+VENC+[out],os.path.basename(out))
+    else:
+        run(["ffmpeg","-y","-i",f"wcrm/_{os.path.basename(out)}v.mp4","-i",vo,"-filter_complex",voa(1,dv,0.2),"-map","0:v","-map","[a]","-t",f"{dv:.3f}"]+VENC+[out],os.path.basename(out))
 def mika(png,vo,out,diam,ox,oy,off=8):
     d=dur(vo)+0.7
     fc=(f"[0:v]scale={W}:{H},setsar=1[bg];[1:v]crop=560:560:80:40,scale={diam}:{diam},setsar=1[mk];[mk][2:v]alphamerge[mkc];[bg][mkc]overlay={ox}:{oy}:format=auto,fade=t=in:d=0.3[v];"+voa(3,d))
@@ -46,21 +51,23 @@ norm_sting("sting-crm-in","wcrm/sting_in.mp4"); norm_sting("sting-crm-out","wcrm
 kb("frames/p1.png",dur(f"{A}/c1.mp3")+0.8,0,"wcrm/_p1v.mp4"); dv=dur("wcrm/_p1v.mp4")
 run(["ffmpeg","-y","-i","wcrm/_p1v.mp4","-i",f"{A}/c1.mp3","-filter_complex",voa(1,dv),"-map","0:v","-map","[a]","-t",f"{dv:.3f}"]+VENC+["wcrm/p1.mp4"],"p1")
 mika("frames/p3.png",f"{A}/c3.mp3","wcrm/p3.mp4",560,100,420)
-seq(["frames/p4a.png","frames/p4b.png","frames/p4c.png"],f"{A}/c4.mp3","wcrm/p4.mp4")
-seq(["frames/p5a.png","frames/p5b.png","frames/p5c.png"],f"{A}/c5.mp3","wcrm/p5.mp4")
-seq(["frames/p6.png"],f"{A}/c6.mp3","wcrm/p6.mp4")
+seq(["frames/p4a.png","frames/p4b.png","frames/p4c.png"],f"{A}/c4.mp3","wcrm/p4.mp4",med=True)
+seq(["frames/p5a.png","frames/p5b.png","frames/p5c.png"],f"{A}/c5.mp3","wcrm/p5.mp4",med=True)
+seq(["frames/p6.png"],f"{A}/c6.mp3","wcrm/p6.mp4",med=True)
 chat("a1",f"{A}/c6a.mp3","wcrm/p6a.mp4")
-seq(["frames/p7a.png","frames/p7b.png"],f"{A}/c7.mp3","wcrm/p7.mp4")
+seq(["frames/p7a.png","frames/p7c.png","frames/p7b.png"],f"{A}/c7.mp3","wcrm/p7.mp4",med=True)
 chat("a2",f"{A}/c7a.mp3","wcrm/p7a.mp4")
-seq(["frames/p8a.png","frames/p8b.png","frames/p8c.png","frames/p8d.png"],f"{A}/c8.mp3","wcrm/p8.mp4")
-seq(["frames/p9a.png","frames/p9b.png"],f"{A}/c9.mp3","wcrm/p9.mp4")
+seq(["frames/pcta_a.png","frames/pcta_b.png","frames/pform_a.png","frames/pform_b.png"],f"{A}/ccta.mp3","wcrm/pcta.mp4",med=True)
+seq(["frames/pcat_a.png","frames/pcat_b.png"],f"{A}/ccat.mp3","wcrm/pcat.mp4",med=True)
+seq(["frames/p8a.png","frames/p8b.png","frames/p8c.png","frames/p8d.png"],f"{A}/c8.mp3","wcrm/p8.mp4",med=True)
+seq(["frames/p9a.png","frames/p9c.png","frames/p9b.png"],f"{A}/c9.mp3","wcrm/p9.mp4",med=True)
 chat("a3",f"{A}/c9a.mp3","wcrm/p9a.mp4")
-seq(["frames/p10a.png","frames/p10b.png","frames/p10c.png"],f"{A}/c10.mp3","wcrm/p10.mp4")
+seq(["frames/p10a.png","frames/p10b.png","frames/p10d.png","frames/p10c.png"],f"{A}/c10.mp3","wcrm/p10.mp4",med=True)
 # sting out + hook de fin VO (c11) overlaid
 dso=dur("wcrm/sting_out.mp4"); dv=dur(f"{A}/c11.mp3")+0.6
 run(["ffmpeg","-y","-i","wcrm/sting_out.mp4","-i",f"{A}/c11.mp3","-filter_complex",f"[0:v]tpad=stop_mode=clone:stop_duration={max(0,dv-dso):.3f}[v];[0:a]aresample=44100[st];[1:a]adelay=200|200,apad=whole_dur={dv:.3f}[vo];[st][vo]amix=inputs=2:normalize=0,aformat=channel_layouts=stereo[a]","-map","[v]","-map","[a]","-t",f"{dv:.3f}"]+VENC+["wcrm/p14.mp4"],"p14")
 
-order=["p1","sting_in","p3","p4","p5","p6","p6a","p7","p7a","p8","p9","p9a","p10","p14"]
+order=["p1","sting_in","p3","p4","p5","p6","p6a","p7","p7a","pcta","pcat","p8","p9","p9a","p10","p14"]
 open("wcrm/all.txt","w").write("".join(f"file '{p}.mp4'\n" for p in order))
 run(["ffmpeg","-y","-f","concat","-safe","0","-i","wcrm/all.txt","-c","copy","wcrm/master.mp4"],"master")
 TOT=dur("wcrm/master.mp4")

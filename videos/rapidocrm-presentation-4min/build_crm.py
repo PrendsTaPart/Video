@@ -59,6 +59,7 @@ d.text((760,470),"RapidoCRM",font=AB(90),fill=GREEN,anchor="lm"); d.text((762,56
 im.convert("RGB").save("frames/p3.png")
 mask=Image.new("L",(560,560),0); ImageDraw.Draw(mask).ellipse([0,0,559,559],fill=255); mask.save("masks/c560.png")
 mask=Image.new("L",(360,360),0); ImageDraw.Draw(mask).ellipse([0,0,359,359],fill=255); mask.save("masks/c360.png")
+mask=Image.new("L",(260,260),0); ImageDraw.Draw(mask).ellipse([0,0,259,259],fill=255); mask.save("masks/c260.png")
 # ---- P4 compte
 card("p4a","crm-01.png","Compte & entreprise","Gérant : nom, email",GREEN)
 card("p4b","crm-02.png","Compte & entreprise","Entreprise : nom, email, SIRET",GREEN)
@@ -79,8 +80,17 @@ d.text((W//2+430,745),"OpenAI",font=AB(52),fill=WHITE,anchor="mm")
 lower(im,"Connecteur MCP","list_commerciaux · list_entreprises · list_templates",GREEN)
 im.convert("RGB").save("frames/p6.png")
 # ---- P7 équipe
-card("p7a","crm-09.png","Votre équipe","Objectifs : SMS, appels, RDV, contrats",GREEN)
+card("p7a","crm-09.png","Votre équipe","Ajouter un commercial · invitation email auto",GREEN)
+card("p7c","crm-10.png","Objectifs mensuels","SMS · appels · RDV · contrats · prospects",GREEN)
 card("p7b","crm-08.png","Votre équipe","create_commercial · update_commercial_objectifs",GREEN)
+# ---- CTA & formulaires
+card("pcta_a","crm-11.png","Appels à l'action","Vues et clics suivis · list_cta",GREEN)
+card("pcta_b","crm-13.png","Créer un CTA","Canal mail ou SMS",GREEN)
+card("pform_a","crm-14.png","Formulaires","Visiteur → contact",GREEN)
+card("pform_b","crm-16.png","Formulaires","Contact / Entreprise / Produits",GREEN)
+# ---- Catalogue
+card("pcat_a","crm-17.png","Catalogue","Produits & offres · list_products",GREEN)
+card("pcat_b","crm-18.png","Ajouter un produit","Prix HT · TVA · dates",GREEN)
 # ---- P8 tunnel SMS (4 étapes, cadre vert, stepbar)
 tun=[("p8a","crm-19.png",0,"Campagne SMS · Ciblage","10 personnes touchées"),
      ("p8b","crm-33.png",1,"Campagne SMS · Modèle","create_campagne"),
@@ -91,10 +101,12 @@ for name,scr,step,title,sub in tun:
     im.convert("RGB").save(f"frames/{name}.png")
 # ---- P9 docs
 card("p9a","crm-28.png","Devis à vos couleurs","Choix de la charte graphique",GREEN)
+card("p9c","crm-25.png","Contrat","Éditeur : titres & articles",GREEN)
 card("p9b","crm-29.png","Contrat automatique","create_contrat · template mail",GREEN)
 # ---- P10 quotidien
 card("p10a","crm-21.png","Agenda","RDV colorés",GREEN)
 card("p10b","crm-23.png","Prise de RDV","Visio / Physique / Tél · rappel auto",GREEN)
+card("p10d","crm-22.png","Agenda","Programme du jour",GREEN)
 card("p10c","crm-20.png","Boîte mail","get_today_schedule · pipeline",GREEN)
 
 # ---- Chat astuces (machine à écrire) + oiseau vert
