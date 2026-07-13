@@ -57,7 +57,7 @@ run(["ffmpeg","-y","-i","work/p4v.mp4","-i","audio/p4.mp3","-i",CHIME,"-filter_c
 for i in range(4):
     zin="min(zoom+0.0008,1.06)" if i%2==0 else "if(eq(on,0),1.06,max(zoom-0.0008,1.0))"
     run(["ffmpeg","-y","-loop","1","-t","1.25","-i",f"frames/p5_{i}.png","-vf",
-         f"scale=2160:3840,zoompan=z='{zin}':d={int(1.25*FPS)}:x='iw/2-(iw/zoom/2)':y='ih/2-(ih/zoom/2)':s=1080x1920:fps={FPS},setsar=1"]+VENC[:-8]+["-an",f"work/p5_{i}.mp4"],f"p5_{i}")
+         f"scale=2160:3840,zoompan=z='{zin}':d={int(1.25*FPS)}:x='iw/2-(iw/zoom/2)':y='ih/2-(ih/zoom/2)':s=1080x1920:fps={FPS},setsar=1"]+VENC[:-8]+["-an","-t","1.25",f"work/p5_{i}.mp4"],f"p5_{i}")
 open("work/p5list.txt","w").write("".join(f"file 'p5_{i}.mp4'\n" for i in range(4)))
 run(["ffmpeg","-y","-f","concat","-safe","0","-i","work/p5list.txt","-c","copy","work/p5v.mp4"],"p5v")
 d=dur("work/p5v.mp4")
