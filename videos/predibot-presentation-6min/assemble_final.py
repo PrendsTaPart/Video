@@ -10,7 +10,7 @@ def run(c,n):
     if r.returncode!=0: print("ERR",n,r.stderr.decode()[-800:]); raise SystemExit(1)
     print("ok",n)
 
-INTRO=dur("work/intro.mp4")
+INTRO=dur("work/intro.mp4"); OUTRO=dur("work/outro.mp4")
 # cumulative start time (within demo) of each part, in filename order
 parts=sorted(glob.glob("work/seg/[0-9]*_*.mp4"))
 starts=[]; acc=0.0
@@ -26,7 +26,7 @@ agent_parts=[i*2 for i in agent_cmdidx]
 agent_start=[INTRO+starts[p] for p in agent_parts]   # +intro offset
 VO=["intro","gen","haccp","gf","rh","stock","prod","outro"]
 vd={v:dur(f"audio/vo_{v}.mp3") for v in VO}
-TOT=INTRO+DEMO
+TOT=INTRO+DEMO+OUTRO
 
 # VO placement times (final timeline), staggered so no overlap
 place={}
@@ -37,10 +37,14 @@ prev_end=place["intro"]+vd["intro"]
 for i,nm in enumerate(names):
     st=max(agent_start[i], prev_end+0.3)
     place[nm]=st; prev_end=st+vd[nm]
-place["outro"]=max(TOT-vd["outro"]-0.6, prev_end+0.3)
+# outro VO plays over the outro logo (starts ~0.6s into the outro segment)
+place["outro"]=max(INTRO+DEMO+0.6, prev_end+0.3)
 
-# 1) video: concat intro + demo silent (re-encode once for uniform params)
-open("work/vlist.txt","w").write(f"file '{os.path.abspath('work/intro.mp4')}'\nfile '{os.path.abspath('work/seg/silent.mp4')}'\n")
+# 1) video: concat intro + demo silent + outro (re-encode once for uniform params)
+open("work/vlist.txt","w").write(
+    f"file '{os.path.abspath('work/intro.mp4')}'\n"
+    f"file '{os.path.abspath('work/seg/silent.mp4')}'\n"
+    f"file '{os.path.abspath('work/outro.mp4')}'\n")
 run(["ffmpeg","-y","-f","concat","-safe","0","-i","work/vlist.txt",
      "-c:v","libx264","-preset","veryfast","-crf","21","-pix_fmt","yuv420p","-r",str(FPS),"-an","work/full_video.mp4"],"video")
 
@@ -59,7 +63,7 @@ run(["ffmpeg","-y"]+inputs+["-filter_complex",fc,"-map","[a]","-ac","2","-ar","4
 os.makedirs("composition/renders",exist_ok=True)
 run(["ffmpeg","-y","-i","work/full_video.mp4","-i","work/full_audio.m4a","-map","0:v","-map","1:a",
      "-c:v","copy","-c:a","aac","-b:a","192k","-shortest","-movflags","+faststart",
-     "composition/renders/predibot-vo-logo.mp4"],"mux")
-print("DONE",round(dur("composition/renders/predibot-vo-logo.mp4"),1),"s")
+     "composition/renders/predibot-vo-logos.mp4"],"mux")
+print("DONE",round(dur("composition/renders/predibot-vo-logos.mp4"),1),"s")
 print("VO times:",{k:round(v,1) for k,v in place.items()})
 print("agent starts:",[round(x,1) for x in agent_start])
