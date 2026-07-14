@@ -34,6 +34,10 @@ EP={
      "cas":"Pour Léa : un email qui parle du menu du midi de la boulangerie ciblée, pas un texte générique. Résultat : 3 premières réponses.",
      "out":"Envoie ça à un commercial qui galère. À demain, pour savoir enfin où en sont tes deals."}},
 }
+import json as _json
+_jf=os.path.join(HERE,"episodes.json")
+if os.path.exists(_jf):
+    for k,v in _json.load(open(_jf)).items(): EP[int(k)]=v
 N=int(sys.argv[1]); E=EP[N]; P=f"{BASE}/videos/serie-30-e{N:02d}"; A=f"{P}/audio"
 os.makedirs(f"{P}/frames",exist_ok=True); os.makedirs(f"{P}/work",exist_ok=True); os.makedirs(f"{P}/deliverable",exist_ok=True); os.makedirs(f"{P}/subs",exist_ok=True)
 _m=Image.new("L",(300,300),0); ImageDraw.Draw(_m).ellipse([0,0,299,299],fill=255); _m.save(f"{P}/work/mask300.png")
