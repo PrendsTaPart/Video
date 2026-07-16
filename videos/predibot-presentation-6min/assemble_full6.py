@@ -34,12 +34,26 @@ for k,(a,b) in ranges.items():
 # --- strip bumper audio -> video only ---
 for k in ranges: run(["ffmpeg","-y","-i",f"work/bmp/{k}.mp4","-an","-c:v","copy",f"work/bmp/{k}_v.mp4"],f"bmp_{k}_v")
 
+# --- overlay FoodEatUp logo top-left (segments graphiques) ---
+FE="assets-icons/fe-logo-c.png"
+def feo(src,out):
+    run(["ffmpeg","-y","-i",src,"-i",FE,"-filter_complex","[1]scale=300:-1[fe];[0][fe]overlay=58:52",
+         "-c:v","libx264","-preset","veryfast","-crf","21","-pix_fmt","yuv420p","-r",str(FPS),"-an",out],"fe_"+os.path.basename(out))
+    return out
+hook_fe=feo("work/hook.mp4","work/hook_fe.mp4")
+mika_fe=feo("work/mika_v.mp4","work/mika_fe.mp4")
+orch_fe=feo("work/orch2.mp4","work/orch_fe.mp4")
+socle_fe=feo("work/socle2.mp4","work/socle_fe.mp4")
+alertes_fe=feo("work/alertes.mp4","work/alertes_fe.mp4")
+retour_fe=feo("work/retour.mp4","work/retour_fe.mp4")
+bmp_fe={k:feo(f"work/bmp/{k}_v.mp4",f"work/bmp/{k}_fe.mp4") for k in ranges}
+
 # --- timeline ---
-SEG=[("logo","work/intro.mp4"),("hook","work/hook.mp4"),("mika","work/mika_v.mp4"),
-     ("orch","work/orch.mp4"),("socle","work/socle.mp4")]
+SEG=[("logo","work/intro.mp4"),("hook",hook_fe),("mika",mika_fe),
+     ("orch",orch_fe),("socle",socle_fe)]
 for k in ["gen","haccp","gf","rh","stock","prod"]:
-    SEG.append((f"bmp_{k}",f"work/bmp/{k}_v.mp4")); SEG.append((f"demo_{k}",demo[k]))
-SEG+=[("alertes","work/alertes.mp4"),("retour","work/retour.mp4"),("outro","work/outro.mp4")]
+    SEG.append((f"bmp_{k}",bmp_fe[k])); SEG.append((f"demo_{k}",demo[k]))
+SEG+=[("alertes",alertes_fe),("retour",retour_fe),("outro","work/outro.mp4")]
 
 starts={}; acc=0.0
 for name,f in SEG: starts[name]=acc; acc+=dur(f)

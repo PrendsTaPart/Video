@@ -1,29 +1,30 @@
 #!/usr/bin/env python3
-"""Logo FoodEatUp au début : reveal mascotte + baseline, sur charte anthracite."""
+"""Logo FoodEatUp au début — thème WhatsApp sable + vert."""
 import os, subprocess
 from PIL import Image, ImageDraw, ImageFont, ImageFilter
 os.chdir(os.path.dirname(os.path.abspath(__file__)))
-os.makedirs("work", exist_ok=True)
 BASE="/home/user/Video"; FD=f"{BASE}/videos/rapidocms-presentation-4min/assets/fonts"
 LOGO=f"{BASE}/studio-video/assets/brand/logo"
 W,H=1920,1080; FPS=30
-ANTH=(15,26,35); SKY=(166,208,255); ORANGE=(255,165,0)
+SAND=(233,224,205); SANDHI=(245,239,227); GREEN=(37,211,102); DGREEN=(7,94,84); INK=(17,27,33)
 def F(n,s): return ImageFont.truetype(f"{FD}/{n}",s)
-# still frame: mascot centered + baseline + soft blue halo
-im=Image.new("RGBA",(W,H),ANTH+(255,))
-g=Image.new("RGBA",(W,H),(0,0,0,0)); ImageDraw.Draw(g).ellipse([W//2-440,H//2-320,W//2+440,H//2+300],fill=SKY+(26,))
-im.alpha_composite(g.filter(ImageFilter.GaussianBlur(150)))
-m=Image.open(f"{LOGO}/foodeatup-logo-mascot.png").convert("RGBA")
-mw=560; m=m.resize((mw,int(m.height*mw/m.width)),Image.LANCZOS)
+def sandbg():
+    im=Image.new("RGBA",(W,H),SAND+(255,)); g=Image.new("L",(1,H),0)
+    for y in range(H): g.putpixel((0,y),int(255*(y/H)))
+    top=Image.new("RGBA",(W,H),SANDHI+(255,)); top.putalpha(g.resize((W,H)).point(lambda p:255-p)); im.alpha_composite(top)
+    gl=Image.new("RGBA",(W,H),(0,0,0,0)); ImageDraw.Draw(gl).ellipse([W//2-560,H//2-380,W//2+560,H//2+320],fill=GREEN+(30,))
+    im.alpha_composite(gl.filter(ImageFilter.GaussianBlur(180))); return im
+im=sandbg()
+m=Image.open(f"{LOGO}/foodeatup-logo-horizontal.png").convert("RGBA")
+mw=760; m=m.resize((mw,int(m.height*mw/m.width)),Image.LANCZOS)
 im.alpha_composite(m,((W-m.width)//2,(H-m.height)//2-70))
 d=ImageDraw.Draw(im)
-d.text((W/2,H//2+230),"Une infinité de solutions pour gérer votre restaurant",font=F("Poppins-600.ttf",38),fill=SKY,anchor="mm")
-d.rectangle([W//2-70,H//2+285,W//2+70,H//2+292],fill=ORANGE+(255,))
+d.text((W/2,H//2+180),"Une infinité de solutions pour gérer votre restaurant",font=F("Poppins-700.ttf",44),fill=DGREEN,anchor="mm")
+d.rectangle([W//2-80,H//2+235,W//2+80,H//2+244],fill=GREEN+(255,))
 im.convert("RGB").save("work/intro_logo.png")
-# 3s: fade in + gentle zoom
-run=lambda c: subprocess.run(c,check=True,stdout=subprocess.DEVNULL,stderr=subprocess.PIPE)
 D=3.0; DF=int(D*FPS)
-run(["ffmpeg","-y","-loop","1","-t",f"{D}","-i","work/intro_logo.png",
+r=subprocess.run(["ffmpeg","-y","-loop","1","-t",f"{D}","-i","work/intro_logo.png",
      "-vf",f"scale={W*2}:{H*2},zoompan=z='min(zoom+0.0007,1.06)':d={DF}:x='iw/2-(iw/zoom/2)':y='ih/2-(ih/zoom/2)':s={W}x{H}:fps={FPS},setsar=1,fade=t=in:d=0.5,fade=t=out:st={D-0.5}:d=0.5",
-     "-c:v","libx264","-preset","medium","-crf","20","-pix_fmt","yuv420p","-r",str(FPS),"-frames:v",str(DF),"work/intro.mp4"])
-print("intro OK", subprocess.check_output(["ffprobe","-v","error","-show_entries","format=duration","-of","csv=p=0","work/intro.mp4"]).decode().strip())
+     "-c:v","libx264","-preset","medium","-crf","20","-pix_fmt","yuv420p","-r",str(FPS),"-frames:v",str(DF),"work/intro.mp4"],stderr=subprocess.PIPE)
+if r.returncode: print(r.stderr.decode()[-500:]); raise SystemExit(1)
+print("intro OK")

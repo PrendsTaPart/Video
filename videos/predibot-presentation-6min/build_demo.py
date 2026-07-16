@@ -60,6 +60,24 @@ d.text((104,62),"en ligne",font=F(P6,22),fill=(200,240,225,255))
 d.text((1514-150,36),"WhatsApp",font=F(P6,24),fill=(200,240,225,255))
 hdr.save("work/wa_header.png")
 
+# ---- sand+green background + big WhatsApp logo assets ----
+from PIL import ImageFilter
+SAND=(233,224,205); SANDHI=(245,239,227); GREEN=(37,211,102); DGREEN=(7,94,84); WHITE=(255,255,255)
+_bg=Image.new("RGBA",(W,H),SAND+(255,))
+_g=Image.new("L",(1,H),0)
+for _y in range(H): _g.putpixel((0,_y),int(255*(_y/H)))
+_top=Image.new("RGBA",(W,H),SANDHI+(255,)); _top.putalpha(_g.resize((W,H)).point(lambda p:255-p)); _bg.alpha_composite(_top)
+_glow=Image.new("RGBA",(W,H),(0,0,0,0)); ImageDraw.Draw(_glow).ellipse([W//2-620,H//2-420,W//2+620,H//2+420],fill=GREEN+(24,))
+_bg.alpha_composite(_glow.filter(ImageFilter.GaussianBlur(200))); _bg.convert("RGB").save("work/sandbg.png")
+def _wa(sz):
+    im=Image.new("RGBA",(sz,sz),(0,0,0,0)); d=ImageDraw.Draw(im); cx=cy=sz//2; r=int(sz*0.42)
+    d.ellipse([cx-r,cy-r,cx+r,cy+r],fill=GREEN+(255,))
+    d.polygon([(cx-r*0.55,cy+r*0.5),(cx-r*0.96,cy+r*0.98),(cx-r*0.18,cy+r*0.74)],fill=GREEN+(255,))
+    hr=r*0.5; d.arc([cx-hr,cy-hr,cx+hr,cy+hr],200,110,fill=WHITE,width=int(r*0.16))
+    d.ellipse([cx-hr*0.92,cy-hr*0.92,cx-hr*0.2,cy-hr*0.2],fill=WHITE); d.ellipse([cx+hr*0.2,cy+hr*0.2,cx+hr*0.92,cy+hr*0.92],fill=WHITE)
+    return im
+_wa(300).save("work/walogo_big.png")
+
 # ---- segments: (agent, label, cmd(src,a,b,crop), res(src,a,b,crop)) ----
 S=[
  ("GEN_MCP · Configuration","Ajouter un employe",("config",9,14.5,WA),("config",15.5,20,BR)),
@@ -96,22 +114,25 @@ def render_part(idx,kind,agent,label,src,a0,b0,_crop):
     a,b,crop=pick(src,a0,b0)
     d=max(0.8,b-a); out=f"work/seg/{idx:02d}_{kind}.mp4"
     tag="Commande" if kind=="cmd" else "Resultat"
-    tagcol="0xFFA500" if kind=="cmd" else "0x25D366"
+    tagcol="0x25D366" if kind=="cmd" else "0x128C7E"
     if crop==WA:
-        # crop + WA header stacked on top -> screen 1514x1076
         pre=(f"[0:v]{crop},setsar=1[c];[1:v]null[h];[h][c]vstack=inputs=2[scr];")
-        inp=["-ss",f"{a:.2f}","-t",f"{d:.2f}","-i",f"rushes/{src}.mp4","-i","work/wa_header.png"]
+        inp=["-ss",f"{a:.2f}","-t",f"{d:.2f}","-i",f"rushes/{src}.mp4","-i","work/wa_header.png","-i","work/sandbg.png","-i","work/walogo_big.png","-i","assets-icons/fe-logo-c.png"]
     else:
         pre=(f"[0:v]{crop},setsar=1[scr];")
-        inp=["-ss",f"{a:.2f}","-t",f"{d:.2f}","-i",f"rushes/{src}.mp4","-f","lavfi","-t",f"{d:.2f}","-i",f"color=c=black:s=2x2"]
-    fc=(f"color=c=0x0F1A23:s={W}x{H}:d={d:.2f}:r={FPS}[bg];"+pre+
-        f"[scr]scale=-2:788:force_original_aspect_ratio=decrease,pad=iw+14:ih+14:7:7:color=0x007BFF[v];"
-        f"[bg][v]overlay=(W-w)/2:36[o];"
-        f"[o]drawbox=x=0:y=946:w={W}:h=134:color=0x0B1220@0.94:t=fill,"
-        f"drawbox=x=0:y=946:w=12:h=134:color={tagcol}:t=fill,"
-        f"drawtext=fontfile='{P6}':text='{tag}':fontcolor={tagcol}:fontsize=30:x=54:y=966,"
-        f"drawtext=fontfile='{P8}':text='{esc(label)}':fontcolor=white:fontsize=46:x=54:y=1004,"
-        f"drawtext=fontfile='{P7}':text='{esc(agent)}':fontcolor=0xA6D0FF:fontsize=28:x={W}-tw-40:y=40[out]")
+        inp=["-ss",f"{a:.2f}","-t",f"{d:.2f}","-i",f"rushes/{src}.mp4","-f","lavfi","-t",f"{d:.2f}","-i","color=c=black:s=2x2","-i","work/sandbg.png","-i","work/walogo_big.png","-i","assets-icons/fe-logo-c.png"]
+    # sand bg, screen réduit (100% visible) + border vert, gros logo WhatsApp top-right, logo FoodEatUp top-left, lower-third vert
+    fc=(pre+
+        f"[2:v]null[bg];"
+        f"[scr]scale=-2:632:force_original_aspect_ratio=decrease,pad=iw+16:ih+16:8:8:color=0x25D366[v];"
+        f"[bg][v]overlay=(W-w)/2:78[o];"
+        f"[3:v]scale=232:232[wa];[o][wa]overlay={W-262}:40[o2];"
+        f"[4:v]scale=280:-1[fe];[o2][fe]overlay=58:56[o3];"
+        f"[o3]drawbox=x=0:y=940:w={W}:h=140:color=0x075E54@0.97:t=fill,"
+        f"drawbox=x=0:y=940:w=16:h=140:color={tagcol}:t=fill,"
+        f"drawtext=fontfile='{P7}':text='{tag}':fontcolor={tagcol}:fontsize=36:x=60:y=962,"
+        f"drawtext=fontfile='{P8}':text='{esc(label)}':fontcolor=white:fontsize=58:x=60:y=1006,"
+        f"drawtext=fontfile='{P7}':text='{esc(agent)}':fontcolor=white:fontsize=30:x={W}-tw-50:y=986[out]")
     run(["ffmpeg","-y"]+inp+["-filter_complex",fc,"-map","[out]","-t",f"{d:.2f}"]+VENC+["-an",out],out)
     return out
 
