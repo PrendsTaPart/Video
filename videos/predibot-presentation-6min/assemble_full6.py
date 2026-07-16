@@ -37,7 +37,7 @@ for k in ranges: run(["ffmpeg","-y","-i",f"work/bmp/{k}.mp4","-an","-c:v","copy"
 # --- overlay FoodEatUp logo top-left (segments graphiques) ---
 FE="assets-icons/fe-logo-c.png"
 def feo(src,out):
-    run(["ffmpeg","-y","-i",src,"-i",FE,"-filter_complex","[1]scale=300:-1[fe];[0][fe]overlay=58:52",
+    run(["ffmpeg","-y","-i",src,"-i",FE,"-filter_complex","[1]scale=232:-1[fe];[0][fe]overlay=52:46",
          "-c:v","libx264","-preset","veryfast","-crf","21","-pix_fmt","yuv420p","-r",str(FPS),"-an",out],"fe_"+os.path.basename(out))
     return out
 hook_fe=feo("work/hook.mp4","work/hook_fe.mp4")
@@ -66,6 +66,17 @@ VOMAP={"hook":("hook",0.5),"mika":("intro",0.4),"explain":("explain",0.4),"orch"
        "bmp_stock":("stock",0.4),"bmp_prod":("prod",0.4),"alertes":("alertes",0.6),
        "retour":("retour",0.4),"outro":("outro",0.6)}
 place={vo:(starts[seg]+off) for seg,(vo,off) in VOMAP.items()}
+
+# --- VO par commande, placée sur chaque écran de la démo ---
+pcum=[]; _a=0.0
+for p in parts: pcum.append(_a); _a+=dur(p)
+first_part={"gen":0,"haccp":10,"gf":12,"rh":16,"stock":26,"prod":36}
+def _agent(c): return "gen" if c<=4 else "haccp" if c==5 else "gf" if c<=7 else "rh" if c<=12 else "stock" if c<=17 else "prod"
+for c in range(26):
+    vf=f"audio/vo_cmd{c:02d}.mp3"
+    if not os.path.exists(vf): continue
+    ag=_agent(c); off=pcum[2*c]-pcum[first_part[ag]]
+    place[f"cmd{c:02d}"]=starts["demo_"+ag]+off+0.25
 
 # 1) concat video-only
 open("work/f6list.txt","w").write("".join(f"file '{os.path.abspath(f)}'\n" for _,f in SEG))

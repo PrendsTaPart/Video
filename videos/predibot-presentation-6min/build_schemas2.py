@@ -86,8 +86,7 @@ bw,bh,gap=310,130,34; total=5*bw+4*gap; x0=(W-total)//2; by=300
 dbs=[(cx-380,760),(cx,760),(cx+380,760)]
 for fi in range(NB):
     t=fi/FPS; im=bg(); d=ImageDraw.Draw(im)
-    wa_logo(im,120,90,52); d=ImageDraw.Draw(im)
-    d.text((210,58),"Le socle : une clé par restaurant",font=F("Poppins-800.ttf",60),fill=INK)
+    d.text((W/2,88),"Le socle : une clé par restaurant",font=F("Poppins-800.ttf",60),fill=INK,anchor="mm")
     for i,b in enumerate(B):
         st=0.5+i*0.7; p=ease((t-st)/0.55)
         if p<=0: continue

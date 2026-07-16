@@ -124,8 +124,8 @@ def render_part(idx,kind,agent,label,src,a0,b0,_crop):
     # sand bg, screen réduit (100% visible) + border vert, gros logo WhatsApp top-right, logo FoodEatUp top-left, lower-third vert
     fc=(pre+
         f"[2:v]null[bg];"
-        f"[scr]scale=-2:632:force_original_aspect_ratio=decrease,pad=iw+16:ih+16:8:8:color=0x25D366[v];"
-        f"[bg][v]overlay=(W-w)/2:78[o];"
+        f"[scr]scale=-2:560:force_original_aspect_ratio=decrease,pad=iw+16:ih+16:8:8:color=0x25D366[v];"
+        f"[bg][v]overlay=(W-w)/2:130[o];"
         f"[3:v]scale=232:232[wa];[o][wa]overlay={W-262}:40[o2];"
         f"[4:v]scale=280:-1[fe];[o2][fe]overlay=58:56[o3];"
         f"[o3]drawbox=x=0:y=940:w={W}:h=140:color=0x075E54@0.97:t=fill,"
