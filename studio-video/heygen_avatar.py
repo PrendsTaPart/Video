@@ -101,9 +101,9 @@ def cmd_check():
     print("  ⚠️ La génération API consomme les crédits 'api' (pas les crédits 'plan').")
     v = req("GET", "https://api.heygen.com/v2/voices", None)
     voices = v.get("data", {}).get("voices", [])
-    fr = [x for x in voices if "french" in str(x.get("language", "")).lower()][:8]
-    print("Voix FR (échantillon) :")
-    for x in fr: print("  ", x.get("voice_id"), "-", x.get("name"), x.get("gender"))
+    n_fr = sum(1 for x in voices if "french" in str(x.get("language", "")).lower())
+    print(f"Voix disponibles : {len(voices)} (dont {n_fr} FR).")
+    print("IDs de voix FR + avatars utiles : voir studio-video/HEYGEN.md.")
     print("Astuce : GET /v3/avatars/looks -> un look_id sert d'avatar_id pour /v3/videos.")
 
 def main():
