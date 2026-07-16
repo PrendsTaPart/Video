@@ -42,6 +42,7 @@ def feo(src,out):
     return out
 hook_fe=feo("work/hook.mp4","work/hook_fe.mp4")
 mika_fe=feo("work/mika_v.mp4","work/mika_fe.mp4")
+explain_fe=feo("work/explain.mp4","work/explain_fe.mp4")
 orch_fe=feo("work/orch2.mp4","work/orch_fe.mp4")
 socle_fe=feo("work/socle2.mp4","work/socle_fe.mp4")
 alertes_fe=feo("work/alertes.mp4","work/alertes_fe.mp4")
@@ -50,7 +51,7 @@ bmp_fe={k:feo(f"work/bmp/{k}_v.mp4",f"work/bmp/{k}_fe.mp4") for k in ranges}
 
 # --- timeline ---
 SEG=[("logo","work/intro.mp4"),("hook",hook_fe),("mika",mika_fe),
-     ("orch",orch_fe),("socle",socle_fe)]
+     ("explain",explain_fe),("orch",orch_fe),("socle",socle_fe)]
 for k in ["gen","haccp","gf","rh","stock","prod"]:
     SEG.append((f"bmp_{k}",bmp_fe[k])); SEG.append((f"demo_{k}",demo[k]))
 SEG+=[("alertes",alertes_fe),("retour",retour_fe),("outro","work/outro.mp4")]
@@ -60,7 +61,7 @@ for name,f in SEG: starts[name]=acc; acc+=dur(f)
 TOT=acc
 
 # VO placement (segment -> vo file, offset)
-VOMAP={"hook":("hook",0.5),"mika":("intro",0.4),"orch":("orch",1.0),"socle":("socle",1.0),
+VOMAP={"hook":("hook",0.5),"mika":("intro",0.4),"explain":("explain",0.4),"orch":("orch",1.0),"socle":("socle",1.0),
        "bmp_gen":("gen",0.4),"bmp_haccp":("haccp",0.4),"bmp_gf":("gf",0.4),"bmp_rh":("rh",0.4),
        "bmp_stock":("stock",0.4),"bmp_prod":("prod",0.4),"alertes":("alertes",0.6),
        "retour":("retour",0.4),"outro":("outro",0.6)}
