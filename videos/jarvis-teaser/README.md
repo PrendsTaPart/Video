@@ -25,3 +25,9 @@ ffmpeg -y -framerate 30 -i work/frames/f%04d.png -c:v libx264 -preset slow -crf 
 4. Bulle Vous « Vas-y » (7–8,5 s)
 5. Badge vert ✓ « Stock mis à jour · tracé dans le journal » (8,5–11,5 s)
 6. Fondu → logo « Jarvis by FoodEatUp » (11,5–13,5 s), fondu retour début (13,5–15 s)
+
+## Version avec voix
+- `output/jarvis-teaser-voix.mp4` — même vidéo + dialogue FR (2 voix ElevenLabs :
+  « Vous » = Adam `TGAegA0zNRi8I6nUdq3i`, Jarvis = Julien service client `eOwAMwUJEGkP44SKOXIH`),
+  calé sur les bulles (0,35 / 4,25 / 7,25 / 8,8 s), loudnorm −16 LUFS.
+- La version muette `jarvis-teaser.mp4` reste le master pour l'autoplay silencieux en boucle.
