@@ -1,0 +1,15 @@
+{
+  "project": "foodeatup-demo-generale",
+  "resolution": "1920x1080",
+  "fps": 30,
+  "voice": {"provider":"elevenlabs","voice_id":"TGAegA0zNRi8I6nUdq3i","name":"Adam","model":"eleven_multilingual_v2"},
+  "blocks": [
+    {"id":"b1","target":12,"text":"Gérer un restaurant, c'est des stocks, des équipes, des normes, des clients… et trop souvent, des tableurs et des cahiers. Et si tout tenait dans une seule plateforme ?"},
+    {"id":"b2","target":18,"text":"FoodEatUp pilote vos stocks en temps réel. Chaque vente déstocke automatiquement. Et quand un produit va manquer, PrédiBot vous prévient avant la rupture."},
+    {"id":"b3","target":18,"text":"Vos factures fournisseurs ? Photographiez-les. L'OCR lit, extrait, met vos prix à jour. Six heures de saisie gagnées chaque semaine."},
+    {"id":"b4","target":18,"text":"Le contrôle d'hygiène ? Vous êtes déjà prêt. Températures, traçabilité, étiquettes DLC : tout est relevé, horodaté, exportable en un clic."},
+    {"id":"b5","target":18,"text":"En salle comme en cuisine : commande par QR de table, écrans cuisine qui routent chaque ticket au bon poste, et Jarvis, votre commis vocal : Jarvis, sors deux kilos de tomates. C'est fait, et c'est tracé."},
+    {"id":"b6","target":18,"text":"Et votre site de commande en ligne ? L'intelligence artificielle le génère en dix minutes, avec votre carte et vos couleurs. Vos clients commandent, vous encaissez."},
+    {"id":"b7","target":18,"text":"FoodEatUp. Une infinité de solutions pour gérer votre restaurant. Essayez gratuitement pendant quatorze jours, sans carte bancaire, sur foodeatup point fr."}
+  ]
+}
