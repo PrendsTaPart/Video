@@ -1,0 +1,188 @@
+<!doctype html>
+<html lang="fr"><head><meta charset="utf-8">
+<style>
+@font-face{font-family:'R';src:url('file:///home/user/Video/videos/rapidocms-presentation-4min/assets/fonts/Poppins-800.ttf');font-weight:800;}
+@font-face{font-family:'R';src:url('file:///home/user/Video/videos/rapidocms-presentation-4min/assets/fonts/Poppins-700.ttf');font-weight:700;}
+@font-face{font-family:'R';src:url('file:///home/user/Video/videos/rapidocms-presentation-4min/assets/fonts/Poppins-600.ttf');font-weight:600;}
+@font-face{font-family:'R';src:url('file:///home/user/Video/videos/rapidocms-presentation-4min/assets/fonts/Poppins-400.ttf');font-weight:400;}
+*{margin:0;padding:0;box-sizing:border-box;}
+html,body{width:1920px;height:1080px;overflow:hidden;background:#0F1A23;font-family:'R',sans-serif;}
+#stage{position:relative;width:1920px;height:1080px;background:radial-gradient(1500px 900px at 50% 42%,#132634,#0F1A23 72%);}
+.abs{position:absolute;will-change:opacity,transform;}
+/* diagram */
+#diagram{left:640px;top:200px;width:640px;height:640px;transform-origin:top left;}
+#diagram .ring{position:absolute;left:0;top:0;}
+.node{position:absolute;width:186px;height:104px;margin-left:-93px;margin-top:-52px;background:#16232E;border:2px solid #274052;border-radius:20px;
+  display:flex;flex-direction:column;align-items:center;justify-content:center;gap:6px;box-shadow:0 14px 34px rgba(0,0,0,.4);}
+.node .dot{width:16px;height:16px;border-radius:50%;}
+.node b{color:#EAF2F8;font-weight:700;font-size:30px;}
+.node.on{border-color:#38A0FF;box-shadow:0 0 0 5px rgba(56,160,255,.25),0 14px 34px rgba(0,0,0,.5);background:#123049;}
+#diagram .center{position:absolute;left:320px;top:320px;transform:translate(-50%,-50%);text-align:center;}
+#diagram .center h4{color:#38A0FF;font-weight:800;font-size:40px;} #diagram .center span{color:#8CA3B5;font-weight:600;font-size:24px;}
+/* panels (left area) */
+.panel{left:150px;top:250px;width:840px;height:600px;background:#16232E;border:1px solid #274052;border-radius:26px;padding:44px 50px;box-shadow:0 28px 70px rgba(0,0,0,.45);}
+.panel h3{color:#EAF2F8;font-weight:800;font-size:44px;margin-bottom:8px;}
+.panel .sub{color:#8CA3B5;font-weight:600;font-size:26px;margin-bottom:30px;}
+.rowi{display:flex;align-items:center;gap:20px;background:#0F1A23;border:1px solid #223547;border-radius:16px;padding:22px 28px;margin-bottom:18px;color:#EAF2F8;font-weight:600;font-size:34px;}
+.rowi .r{margin-left:auto;font-weight:800;}
+.rowi .r.green{color:#3FA34D;} .rowi .r.blue{color:#38A0FF;} .rowi .r.orange{color:#FFA500;}
+.chip{background:#FFA500;color:#101;font-weight:800;font-size:26px;padding:10px 22px;border-radius:30px;margin-left:auto;}
+.ck{width:40px;height:40px;border-radius:10px;border:3px solid #3FA34D;display:flex;align-items:center;justify-content:center;flex:0 0 auto;}
+.btnv{margin-top:8px;background:#147AFF;color:#fff;font-weight:800;font-size:34px;text-align:center;padding:22px;border-radius:16px;}
+.aiask{display:flex;align-items:center;gap:16px;background:#0F1A23;border:2px solid #38A0FF;border-radius:16px;padding:22px 28px;color:#8CA3B5;font-weight:600;font-size:32px;}
+/* laptop KB */
+#laptop{right:120px;top:250px;width:760px;border-radius:18px;overflow:hidden;box-shadow:0 30px 70px rgba(0,0,0,.5);}
+#laptop img{width:1180px;transform-origin:30% 40%;}
+/* cartons */
+.carton{background:#147AFF;color:#fff;font-weight:800;border-radius:22px;padding:22px 44px;font-size:56px;box-shadow:0 18px 44px rgba(20,122,255,.4);}
+.carton.o{background:#FFA500;color:#101;}
+#c1{left:1300px;top:250px;} #c2{left:1300px;top:360px;}
+/* outro */
+#outro{left:0;top:0;width:1920px;height:1080px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:26px;background:rgba(15,26,35,.55);}
+#outro h1{color:#fff;font-weight:800;font-size:96px;} #outro h1 b{color:#38A0FF;}
+#outro .tags{display:flex;gap:28px;margin:10px 0;}
+#outro .tag{font-weight:800;font-size:48px;padding:16px 40px;border-radius:20px;}
+#outro .tag.b{background:#147AFF;color:#fff;} #outro .tag.o{background:#FFA500;color:#101;}
+#outro .url{margin-top:8px;background:#FFA500;color:#101;font-weight:800;font-size:56px;padding:22px 56px;border-radius:20px;}
+/* subtitle */
+#sub{left:0;bottom:70px;width:1920px;text-align:center;}
+#sub .box{display:inline-block;background:rgba(15,26,35,.82);color:#fff;font-weight:700;font-size:46px;padding:20px 40px;border-radius:24px;max-width:1500px;}
+</style></head>
+<body><div id="stage">
+  <div class="abs" id="diagram"></div>
+
+  <div class="abs panel" id="pCarte">
+    <h3>Carte — coût & marge</h3><div class="sub">Chaque plat, calculé en temps réel</div>
+    <div class="rowi"><span>Margherita</span><span class="r blue">coût 3,10€ · marge 74%</span></div>
+    <div class="rowi"><span>Napoli</span><span class="r blue">coût 3,80€ · marge 71%</span></div>
+    <div class="rowi" id="carteLow"><span>Mozzarella — stock bas</span><span class="chip">→ Liste de courses</span></div>
+  </div>
+
+  <div class="abs panel" id="pLivr">
+    <h3>Commande fournisseur</h3><div class="sub">Contrôle à la livraison, ligne par ligne</div>
+    <div class="rowi"><span class="ck" id="ck1"></span><span>Tomates San Marzano — 10 kg</span><span class="r green">reçu</span></div>
+    <div class="rowi"><span class="ck" id="ck2"></span><span>Mozzarella fior di latte — 8 kg</span><span class="r green">reçu</span></div>
+    <div class="rowi"><span class="ck" id="ck3"></span><span>Farine 00 — 25 kg</span><span class="r green">reçu</span></div>
+    <div class="rowi"><span>Fournisseur</span><span class="r orange">Metro · noté</span></div>
+  </div>
+
+  <div class="abs panel" id="pProd">
+    <h3>Production</h3><div class="sub">Pâte napolitaine × 40</div>
+    <div class="rowi"><span class="ck"></span><span>Ingrédients vérifiés</span><span class="r green">OK</span></div>
+    <div class="btnv" id="prodBtn">Valider la production</div>
+    <div class="rowi" id="prodStock" style="margin-top:20px"><span>Stock</span><span class="r blue">− 12,5 kg · auto</span></div>
+    <div class="rowi" id="prodHaccp"><span>Traçabilité HACCP</span><span class="r green">✓ horodaté</span></div>
+  </div>
+
+  <div class="abs panel" id="pStock">
+    <h3>StockVisionAI</h3><div class="sub">Votre stock vous parle</div>
+    <div class="rowi"><span>Rotation</span><span class="r blue">4,2× / mois</span></div>
+    <div class="rowi"><span>Pertes</span><span class="r orange">1,8%</span></div>
+    <div class="aiask"><span style="color:#38A0FF;font-weight:800">IA</span><span>« Quels produits vont périmer cette semaine ? »</span></div>
+  </div>
+
+  <div class="abs" id="laptop"><img src="file:///home/user/Video/videos/boucle-stockvision/assets/screen-stocks-laptop.png"></div>
+
+  <div class="abs carton" id="c1">1 boucle</div>
+  <div class="abs carton o" id="c2">0 ressaisie</div>
+
+  <div class="abs" id="outro">
+    <h1>StockVision<b>AI</b> · dans FoodEatUp</h1>
+    <div class="tags"><span class="tag b">1 boucle</span><span class="tag o">0 ressaisie</span></div>
+    <div class="url">Essai gratuit · foodeatup.fr</div>
+  </div>
+
+  <div class="abs" id="sub"><span class="box" id="subtxt"></span></div>
+</div>
+<script>
+const clamp=x=>x<0?0:x>1?1:x, ease=x=>{x=clamp(x);return 1-Math.pow(1-x,3);};
+const appear=(t,t0,d=0.45)=>ease((t-t0)/d);
+const S=id=>document.getElementById(id);
+// build diagram
+const NODES=[['Carte','#FFA500'],['Courses','#38A0FF'],['Livraisons','#3FA34D'],['Production','#E4572E'],['Stock','#147AFF']];
+const dia=S('diagram'); const CX=320,CY=320,Rr=250;
+const ns=(-Math.PI/2);
+const ring=document.createElementNS('http://www.w3.org/2000/svg','svg');
+ring.setAttribute('class','ring');ring.setAttribute('width','640');ring.setAttribute('height','640');
+ring.innerHTML=`<circle id="ringc" cx="320" cy="320" r="250" fill="none" stroke="#274052" stroke-width="6"/>
+<circle id="ringp" cx="320" cy="320" r="250" fill="none" stroke="#38A0FF" stroke-width="6" stroke-linecap="round"
+ stroke-dasharray="${2*Math.PI*250}" stroke-dashoffset="${2*Math.PI*250}" transform="rotate(-90 320 320)"/>`;
+dia.appendChild(ring);
+const nodeEls=[];
+NODES.forEach((n,i)=>{const a=ns+i*2*Math.PI/5;const x=CX+Rr*Math.cos(a),y=CY+Rr*Math.sin(a);
+  const d=document.createElement('div');d.className='node';d.style.left=x+'px';d.style.top=y+'px';
+  d.innerHTML=`<span class="dot" style="background:${n[1]}"></span><b>${n[0]}</b>`;dia.appendChild(d);nodeEls.push(d);});
+const ctr=document.createElement('div');ctr.className='center';ctr.innerHTML='<h4>La boucle</h4><span>zéro ressaisie</span>';dia.appendChild(ctr);
+const RINGLEN=2*Math.PI*250;
+
+// subtitles
+const SUBS=[
+ [0.5,3.0,"Dans un restaurant, tout est lié."],
+ [3.05,6.2,"Carte, courses, livraisons, production, stock…"],
+ [6.25,9.4,"Pourquoi les gérer dans cinq outils différents ?"],
+ [9.9,13.4,"Chaque plat affiche son coût et sa marge."],
+ [13.45,17.0,"Un ingrédient manque ? Un clic → liste de courses."],
+ [20.1,23.2,"La liste devient commandes fournisseurs."],
+ [23.25,26.4,"À la livraison, vous contrôlez ligne par ligne."],
+ [30.1,33.6,"Ingrédients vérifiés, production validée."],
+ [33.65,37.4,"Le stock se met à jour, la traçabilité HACCP suit."],
+ [42.1,45.0,"Votre stock vous parle : rotation, pertes, IA."],
+ [45.05,47.4,"La boucle est bouclée."],
+ [52.1,54.8,"StockVisionAI, dans FoodEatUp."],
+ [54.85,58.6,"Une boucle, zéro ressaisie. foodeatup.fr"],
+];
+
+function panel(id,t,tin,tout){const a=appear(t,tin,0.5)*(1-appear(t,tout,0.4));const e=S(id);
+  e.style.opacity=a;e.style.transform=`translateX(${(1-appear(t,tin,0.5))*-40}px)`;return a;}
+
+window.render=function(t){
+  // ---- diagram position/scale ----
+  // centered scenes: 1(0-8), 5(42-52),6(52-60); parked right: 2-4 (8-42)
+  const parked = appear(t,8.5,0.6)*(1-appear(t,42.0,0.6));
+  const tx=parked*530, ty=parked*-150, sc=1-parked*0.24;
+  dia.style.transform=`translate(${tx}px,${ty}px) scale(${sc})`;
+  dia.style.opacity=appear(t,0.4,0.6);
+  // ring draw during scene1 (1.5->7), and full glow at 42+
+  const draw=clamp((t-1.5)/5.0); let off=RINGLEN*(1-draw);
+  document.getElementById('ringp').setAttribute('stroke-dashoffset', off);
+  const glow=appear(t,45.5,0.8); document.getElementById('ringp').setAttribute('stroke-width',6+glow*4);
+  // active node highlight per scene
+  let active=-1;
+  if(t>=8&&t<20)active=1; else if(t>=20&&t<30)active=2; else if(t>=30&&t<42)active=3; else if(t>=42&&t<52)active=4;
+  // in scene1 pulse each node as ring passes; after 45 all on
+  nodeEls.forEach((e,i)=>{
+    let on=false;
+    if(t>=45.5) on=true;                          // whole loop lit
+    else if(active===i) on=true;
+    else if(t>=8&&t<20&&i===0) on=true;           // scene2 lights Carte+Courses
+    else if(t<8) on = (draw*5>i);                 // scene1 progressive
+    e.classList.toggle('on',on);
+    e.style.opacity=appear(t,0.5+i*0.15,0.5);
+  });
+  // ---- panels ----
+  panel('pCarte',t,8.4,20.0);
+  S('carteLow').style.transform=`scale(${1+0.05*Math.sin(appear(t,13.5,0.4)*Math.PI)})`;
+  panel('pLivr',t,20.2,30.0);
+  ['ck1','ck2','ck3'].forEach((c,i)=>{S(c).innerHTML=appear(t,22.0+i*0.9,0.3)>0.5?'<svg viewBox="0 0 24 24" width="26" height="26" fill="none"><path d="M5 13l4 4L19 7" stroke="#3FA34D" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round"/></svg>':'';});
+  panel('pProd',t,30.2,42.0);
+  const pv=appear(t,33.0,0.4); S('prodBtn').style.background=pv>0.5?'#3FA34D':'#147AFF'; S('prodBtn').textContent=pv>0.5?'Production validée ✓':'Valider la production';
+  S('prodStock').style.opacity=appear(t,33.6,0.5); S('prodHaccp').style.opacity=appear(t,34.4,0.5);
+  panel('pStock',t,42.2,52.0);
+  // laptop KB scene5
+  const lo=appear(t,44.0,0.6)*(1-appear(t,52.0,0.5)); S('laptop').style.opacity=lo;
+  S('laptop').querySelector('img').style.transform=`scale(${1.0+0.12*clamp((t-44)/8)})`;
+  // cartons scene5
+  S('c1').style.opacity=appear(t,46.0,0.4)*(1-appear(t,52.0,0.4));
+  S('c1').style.transform=`translateY(${(1-appear(t,46.0,0.4))*20}px)`;
+  S('c2').style.opacity=0; // c2 only in outro tags; hide standalone
+  // outro scene6
+  const oo=appear(t,52.3,0.6); S('outro').style.opacity=oo;
+  S('outro').style.transform=`scale(${0.97+0.03*appear(t,52.3,0.7)})`;
+  // ---- subtitle ----
+  let cur='';
+  for(const [a,b,txt] of SUBS){ if(t>=a&&t<b){cur=txt;break;} }
+  S('subtxt').textContent=cur; S('sub').style.opacity=cur?1:0;
+  // hide subtitle during pure outro logo hold end
+};
+window.render(0);
+</script></body></html>
