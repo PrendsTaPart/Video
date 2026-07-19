@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="fr"><head><meta charset="utf-8">
+<style>
+@font-face{font-family:'Round';src:url('file:///home/user/Video/videos/rapidocms-presentation-4min/assets/fonts/Poppins-800.ttf') format('truetype');font-weight:800;}
+@font-face{font-family:'Round';src:url('file:///home/user/Video/videos/rapidocms-presentation-4min/assets/fonts/Poppins-700.ttf') format('truetype');font-weight:700;}
+@font-face{font-family:'Round';src:url('file:///home/user/Video/videos/rapidocms-presentation-4min/assets/fonts/Poppins-600.ttf') format('truetype');font-weight:600;}
+*{margin:0;padding:0;box-sizing:border-box;}
+html,body{width:1920px;height:1080px;overflow:hidden;background:#0F1A23;font-family:'Round',sans-serif;}
+#stage{position:relative;width:1920px;height:1080px;background:radial-gradient(1200px 700px at 50% 38%,#132634 0%,#0F1A23 70%);}
+.row{position:absolute;left:0;width:1920px;padding:0 360px;display:flex;}
+.row.left{justify-content:flex-start;}
+.row.right{justify-content:flex-end;}
+.bubble{max-width:860px;border-radius:34px;padding:30px 42px;font-weight:600;font-size:44px;line-height:1.32;color:#fff;
+  box-shadow:0 18px 50px rgba(0,0,0,.35);will-change:opacity,transform;}
+.user{background:#2A3B4D;border-bottom-right-radius:10px;}
+.jarvis{background:#147AFF;border-bottom-left-radius:10px;}
+.tag{font-weight:700;font-size:26px;letter-spacing:.5px;opacity:.7;margin-bottom:10px;text-transform:uppercase;}
+.jarvis .tag{color:#BFE0FF;} .user .tag{color:#9DB4C9;}
+#b1{top:150px;} #wave{top:430px;} #b2{top:410px;} #b3{top:690px;} #badge{top:850px;}
+#wave{justify-content:flex-start;}
+.wavebox{background:#132a3d;border-radius:34px;border-bottom-left-radius:10px;padding:34px 54px;display:flex;align-items:center;gap:22px;height:118px;box-shadow:0 18px 50px rgba(0,0,0,.35);}
+.bar{width:20px;border-radius:12px;background:#38A0FF;}
+#badge{justify-content:center;}
+.badgepill{display:flex;align-items:center;gap:26px;background:rgba(34,197,94,.15);border:3px solid #22C55E;border-radius:60px;padding:26px 52px;}
+.check{width:74px;height:74px;border-radius:50%;background:#22C55E;display:flex;align-items:center;justify-content:center;flex:0 0 auto;}
+.check svg{width:40px;height:40px;}
+.badgetext{font-weight:700;font-size:44px;color:#EAFBEF;}
+.badgetext b{color:#22C55E;}
+#logo{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:8px;}
+#logo .mark{display:flex;align-items:flex-end;gap:14px;height:120px;margin-bottom:26px;}
+#logo .mark .lb{width:26px;border-radius:14px;background:#38A0FF;}
+#logo h1{font-weight:800;font-size:132px;color:#fff;letter-spacing:1px;}
+#logo .by{font-weight:700;font-size:52px;color:#BFE0FF;}
+#logo .by b{color:#147AFF;background:#fff;padding:2px 18px;border-radius:14px;}
+</style></head>
+<body><div id="stage">
+  <div class="row right" id="b1"><div class="bubble user"><div class="tag">Vous</div>Jarvis, sors 2 kg de tomates</div></div>
+  <div class="row left" id="wave"><div class="wavebox">
+    <div class="bar"></div><div class="bar"></div><div class="bar"></div><div class="bar"></div><div class="bar"></div>
+  </div></div>
+  <div class="row left" id="b2"><div class="bubble jarvis"><div class="tag">Jarvis</div>Je retire 2 kg de tomates du stock. Je confirme&nbsp;?</div></div>
+  <div class="row right" id="b3"><div class="bubble user"><div class="tag">Vous</div>Vas-y</div></div>
+  <div class="row" id="badge"><div class="badgepill">
+    <div class="check"><svg viewBox="0 0 24 24" fill="none"><path d="M5 13l4 4L19 7" stroke="#fff" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+    <div class="badgetext">Stock mis à jour · <b>tracé dans le journal</b></div>
+  </div></div>
+  <div id="logo">
+    <div class="mark"><div class="lb"></div><div class="lb"></div><div class="lb"></div><div class="lb"></div><div class="lb"></div></div>
+    <h1>Jarvis</h1><div class="by">by <b>FoodEatUp</b></div>
+  </div>
+</div>
+<script>
+const clamp=x=>x<0?0:x>1?1:x;
+const ease=x=>{x=clamp(x);return 1-Math.pow(1-x,3);};
+const appear=(t,t0,d=0.45)=>ease((t-t0)/d);
+function setEl(id,op,dy){const e=document.getElementById(id);e.style.opacity=op;e.style.transform='translateY('+dy+'px)';}
+const bars=[...document.querySelectorAll('#wave .bar')];
+window.render=function(t){
+  const chat = 1 - appear(t,11.5,0.5);           // chat fades out 11.5->12.0
+  // 1 user bubble (0.2s in)
+  {const a=appear(t,0.2);setEl('b1',a*chat,(1-a)*34);}
+  // 2 wave 2->4
+  {const wo=appear(t,2.05,0.3)*(1-appear(t,3.85,0.3));setEl('wave',wo,0);
+   for(let i=0;i<bars.length;i++){const h=34+Math.abs(Math.sin(t*7.5+i*0.7))*60;bars[i].style.height=h+'px';}}
+  // 3 jarvis bubble (4.1s in)
+  {const a=appear(t,4.1);setEl('b2',a*chat,(1-a)*34);}
+  // 4 user "Vas-y" (7.1s in)
+  {const a=appear(t,7.1);setEl('b3',a*chat,(1-a)*34);}
+  // 5 green badge (8.6s in)
+  {const a=appear(t,8.6);setEl('badge',a*chat,(1-a)*34);}
+  // 6 logo: in 11.9->12.4, out 13.6->14.2
+  {const lo=appear(t,11.9,0.5)*(1-appear(t,13.6,0.6));const s=0.94+0.06*appear(t,11.9,0.6);
+   const e=document.getElementById('logo');e.style.opacity=lo;e.style.transform='scale('+s+')';}
+};
+window.render(0);
+</script></body></html>
