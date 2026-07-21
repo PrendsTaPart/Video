@@ -154,10 +154,8 @@ def screen_block(blk,out,rush_spec,carton_png,zoom_c=(0.5,0.45),blur_band=None):
     else: f2=1.0
     if blur_band:  # PII blur: (y,h)
         by,bh=blur_band; vf.append(f"boxblur=18:enable=1")  # global soft; refined below via crop-blur not trivial -> band overlay instead
-    # slow zoom toward button center (emphasis)
-    cx,cy=zoom_c
-    vf.append(f"scale={W*2}:{H*2}")
-    vf.append(f"zoompan=z='min(zoom+0.0004,1.06)':d={int(d*FPS)}:x='iw*{cx}-(iw/zoom/2)':y='ih*{cy}-(ih/zoom/2)':s={W}x{H}:fps={FPS}")
+    # PAS de zoompan (il gèle la vidéo) : le rush JOUE réellement, seulement accéléré
+    vf.append(f"scale={W}:{H}")
     vfs=",".join(vf)
     base=f"{SEG}/{blk}_base.mp4"
     # ensure length == d (freeze tail if short)
