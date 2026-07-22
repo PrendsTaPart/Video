@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="fr"><head><meta charset="utf-8">
+<style>
+@font-face{font-family:'G';src:url('file:///home/user/Video/videos/rapidocms-presentation-4min/assets/fonts/Poppins-800.ttf');font-weight:800;}
+@font-face{font-family:'G';src:url('file:///home/user/Video/videos/rapidocms-presentation-4min/assets/fonts/Poppins-700.ttf');font-weight:700;}
+@font-face{font-family:'G';src:url('file:///home/user/Video/videos/rapidocms-presentation-4min/assets/fonts/Poppins-600.ttf');font-weight:600;}
+*{margin:0;padding:0;box-sizing:border-box;}
+html,body{width:1080px;height:1920px;overflow:hidden;background:#0F1A23;font-family:'G',sans-serif;}
+#stage{position:relative;width:1080px;height:1920px;background:radial-gradient(1200px 1200px at 50% 46%,#132634,#0B1620 80%);}
+.abs{position:absolute;will-change:opacity,transform;}
+#svg{position:absolute;left:90px;top:735px;}                 /* 900x450, centre (540,960) */
+.node .dot{width:28px;height:28px;border-radius:50%;background:#007BFF;box-shadow:0 0 0 7px rgba(0,123,255,.16);position:absolute;left:-14px;top:-14px;}
+#loopTitle{left:0;width:1080px;text-align:center;top:470px;color:#FFA500;font-weight:800;font-size:40px;letter-spacing:2px;}
+#caption{left:0;width:1080px;text-align:center;top:540px;color:#EAF3FF;font-weight:800;font-size:62px;}
+#commande{position:absolute;left:0;width:1080px;text-align:center;top:918px;color:#fff;font-weight:800;font-size:66px;letter-spacing:4px;}
+#logo{position:absolute;left:0;top:0;width:1080px;height:1920px;display:flex;align-items:center;justify-content:center;}
+#logo img{width:800px;}
+#tagline{position:absolute;left:0;width:1080px;text-align:center;color:#BFE0FF;font-weight:600;font-size:46px;}
+.arrow{position:absolute;font-weight:800;font-size:38px;color:#0F1A23;background:#FFA500;padding:14px 28px;border-radius:16px;white-space:nowrap;}
+.pastille{position:absolute;background:#26333f;color:#7f93a3;font-weight:700;font-size:30px;padding:14px 26px;border-radius:30px;border:2px dashed #33475a;white-space:nowrap;}
+#endcard{position:absolute;left:0;top:0;width:1080px;height:1920px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:34px;background:#0B1620;}
+#endcard img{width:680px;} #endcard .url{color:#38A0FF;font-weight:800;font-size:58px;}
+#endcard .cta{background:#FFA500;color:#0F1A23;font-weight:800;font-size:50px;padding:24px 60px;border-radius:20px;}
+#med{position:absolute;border-radius:22px;overflow:hidden;box-shadow:0 20px 50px rgba(0,0,0,.55);border:3px solid #007BFF;}
+#med img{display:block;width:440px;}
+.toque{position:absolute;left:50%;top:960px;transform:translate(-50%,-50%);opacity:.055;}
+svg{overflow:visible;}
+</style></head>
+<body><div id="stage">
+  <svg class="toque" width="900" height="700" viewBox="0 0 900 700"><path d="M170 470 h560 v150 h-560 z" fill="#8fbfff"/><circle cx="300" cy="380" r="150" fill="#8fbfff"/><circle cx="450" cy="330" r="175" fill="#8fbfff"/><circle cx="600" cy="380" r="150" fill="#8fbfff"/></svg>
+
+  <svg id="svg" width="900" height="450" viewBox="0 0 800 400">
+    <radialGradient id="halo" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#9fd8ff" stop-opacity="0.95"/>
+      <stop offset="45%" stop-color="#2b9bff" stop-opacity="0.5"/>
+      <stop offset="100%" stop-color="#2b9bff" stop-opacity="0"/>
+    </radialGradient>
+    <path id="loop" fill="none" stroke="#0d3b66" stroke-width="15"
+      d="M 400 200 C 400 80, 240 80, 160 200 C 240 320, 400 320, 400 200 C 400 80, 560 80, 640 200 C 560 320, 400 320, 400 200"/>
+    <path id="loopFg" fill="none" stroke="#007BFF" stroke-width="15" stroke-linecap="round"
+      d="M 400 200 C 400 80, 240 80, 160 200 C 240 320, 400 320, 400 200 C 400 80, 560 80, 640 200 C 560 320, 400 320, 400 200"/>
+    <circle id="haloA" r="48" fill="url(#halo)" opacity="0"/>
+    <circle id="haloB" r="48" fill="url(#halo)" opacity="0"/>
+    <circle id="ptA" r="12" fill="#eaf6ff" opacity="0"/>
+    <circle id="ptB" r="12" fill="#eaf6ff" opacity="0"/>
+  </svg>
+
+  <div id="nodes"></div>
+  <div class="abs" id="loopTitle" style="opacity:0"></div>
+  <div class="abs" id="caption" style="opacity:0"></div>
+  <div id="commande" style="opacity:0">COMMANDE</div>
+  <div id="med" style="opacity:0"><img src="file:///home/user/Video/videos/deux-boucles/assets/scr-stock.png"></div>
+  <div class="abs" id="arrowL" style="opacity:0"></div>
+  <div class="abs" id="arrowR" style="opacity:0"></div>
+  <div id="pastilles"></div>
+
+  <div id="logo" style="opacity:0"><img id="logoImg" src="file:///home/user/Video/videos/deux-boucles/assets/logo-full.png"></div>
+  <div id="tagline" style="opacity:0;top:1200px">Vous connaissez ce signe.</div>
+  <div id="endcard" style="opacity:0">
+    <img src="file:///home/user/Video/videos/deux-boucles/assets/logo-full.png">
+    <div class="url">foodeatup.com</div>
+    <div class="cta">Découvrir</div>
+  </div>
+</div>
+<script>
+const clamp=x=>x<0?0:x>1?1:x, ease=x=>{x=clamp(x);return 1-Math.pow(1-x,3);};
+const eio=x=>{x=clamp(x);return x<.5?4*x*x*x:1-Math.pow(-2*x+2,3)/2;};
+const svg=document.getElementById('svg'), loop=document.getElementById('loop'), loopFg=document.getElementById('loopFg');
+const L=loopFg.getTotalLength();
+const SX=90, SY=735, SC=900/800;
+function P(f){ const p=loopFg.getPointAtLength(clamp(f)*L); return {x:SX+p.x*SC, y:SY+p.y*SC, vx:p.x, vy:p.y}; }
+const $=id=>document.getElementById(id);
+const NODES=[
+ {f:0.0625,label:'Équipe'},{f:0.1875,label:'StockVisionAI',scr:1},{f:0.3125,label:'HACCP'},{f:0.4375,label:'Production'},
+ {f:0.5625,label:'QR code & Site'},{f:0.6875,label:'Caroline'},{f:0.8125,label:'Marketing'},{f:0.9375,label:'Fidélité'},
+];
+const nodesEl=document.getElementById('nodes');
+NODES.forEach((n,i)=>{ const p=P(n.f); n.sx=p.x; n.sy=p.y;
+  const el=document.createElement('div'); el.className='node'; el.style.position='absolute'; el.style.left=p.x+'px'; el.style.top=p.y+'px';
+  el.innerHTML='<div class="dot"></div>'; el.style.opacity=0; nodesEl.appendChild(el); n.el=el; });
+
+const PAST=['Résa','Caisse','Stock','Paie','Menu','Avis','SMS','Compta','Sourcing','Fidélité'];
+const pastEl=document.getElementById('pastilles'); const PEL=[];
+PAST.forEach((t,i)=>{ const a=(i/PAST.length)*Math.PI*2 - Math.PI/2; const x=540+Math.cos(a)*420, y=960+Math.sin(a)*610;
+  const el=document.createElement('div'); el.className='pastille'; el.textContent=t; el.style.left=(x-70)+'px'; el.style.top=(y-26)+'px'; el.style.opacity=0; pastEl.appendChild(el); PEL.push(el); });
+
+function setLoopDraw(frac){ loopFg.style.strokeDasharray=L; loopFg.style.strokeDashoffset=L*(1-clamp(frac)); }
+function setDot(i,op){ NODES[i].el.style.opacity=op; }
+function caption(txt,op){ $('caption').textContent=txt; $('caption').style.opacity=op; }
+function loopTitle(txt,op){ $('loopTitle').textContent=txt; $('loopTitle').style.opacity=op; }
+
+window.render=function(frame){
+  const f=frame;
+  $('commande').style.opacity=0; $('med').style.opacity=0; $('caption').style.opacity=0; $('loopTitle').style.opacity=0;
+  ['ptA','ptB','haloA','haloB'].forEach(id=>$(id).setAttribute('opacity',0));
+  $('arrowL').style.opacity=0; $('arrowR').style.opacity=0;
+
+  if(f<120){ // S0 logo
+    loop.style.opacity=0; loopFg.setAttribute('opacity',0); NODES.forEach((n,i)=>setDot(i,0));
+    $('logo').style.opacity=1;
+    let wink=0; if(f>=24&&f<=32) wink=Math.sin((f-24)/8*Math.PI);
+    $('logoImg').style.transform=`scaleY(${1-wink*0.09})`;
+    $('tagline').style.opacity=ease((f-34)/22);
+    if(f>=90) $('logo').style.opacity=1-ease((f-90)/30)*0.12;
+    return;
+  }
+  $('logo').style.opacity=0; $('tagline').style.opacity=0; loopFg.setAttribute('opacity',1);
+
+  if(f<300){ // S1 reveal
+    const k=eio((f-120)/180); setLoopDraw(k); loop.style.opacity=0.5*k;
+    svg.style.transform=`scale(${0.9+0.1*k})`; svg.style.transformOrigin='540px 960px';
+    NODES.forEach((n,i)=>setDot(i,0)); return;
+  }
+  setLoopDraw(1); loop.style.opacity=0.5; svg.style.transform='scale(1)';
+
+  function travel(id,haloId,frac){ const p=P(frac);
+    $(id).setAttribute('cx',p.vx); $(id).setAttribute('cy',p.vy); $(id).setAttribute('opacity',1);
+    $(haloId).setAttribute('cx',p.vx); $(haloId).setAttribute('cy',p.vy); $(haloId).setAttribute('opacity',1); }
+  // active caption = nearest passed node
+  function activeCaption(frac,lo,hi){
+    let best=-1,bestd=1; for(let i=lo;i<hi;i++){ const dd=Math.abs(frac-NODES[i].f); if(dd<bestd){bestd=dd;best=i;} }
+    caption(NODES[best].label, clamp(1-bestd/0.075));
+  }
+
+  if(f<720){ // S2 left 0->0.5
+    loopTitle('BOUCLE GESTION · ce qui rend capable',1);
+    const frac=eio((f-300)/420)*0.5; travel('ptA','haloA',frac);
+    for(let i=0;i<4;i++) setDot(i, frac>=NODES[i].f-0.005?1:clamp((frac-NODES[i].f+0.05)/0.05));
+    for(let i=4;i<8;i++) setDot(i,0);
+    activeCaption(frac,0,4);
+    const n=NODES[1]; const t0=300+(n.f/0.5)*420; if(f>=t0&&f<t0+34){ const m=$('med'); m.style.opacity=ease((f-t0)/6)*(1-ease((f-t0-24)/10)); m.style.left=(540-220)+'px'; m.style.top=(1250)+'px'; }
+    return;
+  }
+
+  if(f<1140){ // S3 right 0.5->1
+    loopTitle('BOUCLE VENTE · ce qui fait venir',1);
+    const frac=0.5+eio((f-720)/420)*0.5; travel('ptA','haloA',frac);
+    for(let i=0;i<4;i++) setDot(i,0.4);
+    for(let i=4;i<8;i++) setDot(i, frac>=NODES[i].f-0.005?1:clamp((frac-NODES[i].f+0.05)/0.05));
+    activeCaption(frac,4,8);
+    return;
+  }
+  for(let i=0;i<8;i++) setDot(i,1);
+
+  if(f<1500){ // S4 both
+    const a=(((f-1140)/60)*0.22)%1;
+    travel('ptA','haloA',a*0.5); travel('ptB','haloB',0.5+a*0.5);
+    const near=Math.min(a,1-a); $('commande').style.opacity=clamp(1-near*7);
+    if(f>=1290&&f<1380){ const k=ease((f-1290)/18)*(1-ease((f-1362)/18));
+      $('arrowL').textContent='la vente devient un besoin'; $('arrowR').textContent='la capacité devient une carte';
+      $('arrowL').className='abs arrow'; $('arrowR').className='abs arrow';
+      $('arrowL').style.left='70px'; $('arrowL').style.top='792px'; $('arrowL').style.opacity=k;
+      $('arrowR').style.left='360px'; $('arrowR').style.top='1108px'; $('arrowR').style.opacity=k;
+      $('commande').style.opacity=1; }
+    return;
+  }
+
+  if(f<1710){ // S5 bascule
+    for(let i=0;i<8;i++) setDot(i,1);
+    if(f<1620){ const k=ease((f-1500)/40); PEL.forEach(e=>e.style.opacity=0.9*k); }
+    else PEL.forEach((e,i)=>{ const t0=1620+i*9; e.style.opacity=0.9*(1-ease((f-t0)/9)); });
+    return;
+  }
+  PEL.forEach(e=>e.style.opacity=0);
+
+  // S6 outro
+  const k=ease((f-1710)/70);
+  for(let i=0;i<8;i++) setDot(i,1-k);
+  loop.style.opacity=0.5*(1-k); loopFg.setAttribute('opacity',1-k);
+  $('endcard').style.opacity=ease((f-1772)/60);
+};
+window.render(0);
+</script></body></html>
