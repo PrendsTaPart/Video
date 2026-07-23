@@ -97,16 +97,23 @@ run(["ffmpeg","-y","-f","concat","-safe","0","-i",f"{SEG}/list.txt",
 total = dur(f"{ROOT}/work/video_silent.mp4")
 print(f"SILENT TOTAL: {total:.2f}s")
 
-# VO offsets keyed to logical boundaries.
-off = {
-    "N0": 0.0,
-    "N1": INTRO_D + 1.4,
-    "N2": boundary["B"] + 0.15,
-    "N3": boundary["D"] + 0.05,
-    "N4": boundary["G"] - 1.35,   # "abonnement active" lands on green-check reveal
-    "N5": SCREEN_END + 0.20,
+# VO offsets: desired anchors, then pushed sequentially so lines NEVER overlap.
+GAP = 0.18
+anchor = {
+    "N0": 0.30,
+    "N1": INTRO_D + 2.10,          # near the pack click
+    "N2": boundary["B"] + 1.90,    # modal recap -> payment
+    "N3": boundary["D"] + 0.05,    # click demarrer
+    "N4": boundary["G"] - 1.30,    # activation reveal
+    "N5": SCREEN_END + 0.15,       # outro CTA
 }
-print("offsets:", {k: round(v,2) for k,v in off.items()})
+off = {}
+prev_end = -GAP
+for k in ["N0","N1","N2","N3","N4","N5"]:
+    o = max(anchor[k], prev_end + GAP)
+    off[k] = o
+    prev_end = o + dur(f"{ROOT}/vo2/{k}.mp3")
+print("offsets:", {k: round(v,2) for k,v in off.items()}, "voice_end:", round(prev_end,2))
 
 inputs, filters, labels = [], [], []
 for i,(k,o) in enumerate(off.items()):
