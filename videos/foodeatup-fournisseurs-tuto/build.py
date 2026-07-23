@@ -35,10 +35,10 @@ BTN_SAVE = (1034, 734)   # "Enregistrer"
 # (name, src_start, src_end, factor, click_src_time_or_None, button)
 segs = [
     ("A", 0.0,  2.5,  1.00, 1.5,  BTN_ADD),   # list + click Ajouter
-    ("B", 2.5,  33.0, 1.70, None, None),       # form fill 1 (nom/adresse/email/tel)
-    ("C", 33.0, 51.0, 1.50, None, None),       # form fill 2 (statut/cat/livraison/etoiles)
-    ("D", 51.0, 55.0, 1.30, 54.0, BTN_SAVE),   # click Enregistrer
-    ("E", 55.0, 61.08, 1.30, None, None),      # saved supplier card
+    ("B", 2.5,  33.0, 3.40, None, None),       # form fill 1 (fast)
+    ("C", 33.0, 51.0, 4.00, None, None),       # form fill 2 (fast)
+    ("D", 51.0, 55.0, 1.50, 54.0, BTN_SAVE),   # click Enregistrer
+    ("E", 55.0, 61.08, 1.40, None, None),      # saved supplier card
 ]
 
 def encode(name, s, e, f, extra=""):
@@ -51,7 +51,7 @@ def encode(name, s, e, f, extra=""):
     return out
 
 order = []; boundary = {}
-INTRO_D, OUTRO_D = 3.5, 5.4
+INTRO_D, OUTRO_D = 3.0, 5.7
 t = INTRO_D
 for name, s, e, f, ck, btn in segs:
     boundary[name] = t
@@ -88,15 +88,15 @@ total = dur(f"{ROOT}/work/video_silent.mp4")
 print(f"SILENT TOTAL: {total:.2f}s")
 
 # VO: anchors then sequential push (no overlap).
-GAP = 0.18
+GAP = 0.25
 anchor = {
     "N0": 0.30,
-    "N1": boundary["A"] + 0.30,
-    "N2": boundary["B"] + 0.50,
-    "N3": boundary["C"] + 0.30,
-    "N4": boundary["D"] + 1.30,   # aligns with Enregistrer click zoom
-    "N5": boundary["E"] + 0.20,   # card appears
-    "N6": SCREEN_END + 0.15,      # outro CTA
+    "N1": boundary["A"] + 1.30,
+    "N2": boundary["B"] + 0.20,
+    "N3": boundary["C"] + 0.10,
+    "N4": boundary["D"] + 1.50,   # aligns with Enregistrer click zoom
+    "N5": boundary["E"] + 0.10,   # card appears
+    "N6": SCREEN_END + 0.10,      # outro CTA
 }
 off = {}; prev_end = -GAP
 for k in ["N0","N1","N2","N3","N4","N5","N6"]:
