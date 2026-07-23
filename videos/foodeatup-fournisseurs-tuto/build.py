@@ -38,7 +38,7 @@ segs = [
     ("B", 2.5,  33.0, 3.40, None, None),       # form fill 1 (fast)
     ("C", 33.0, 51.0, 4.00, None, None),       # form fill 2 (fast)
     ("D", 51.0, 55.0, 1.50, 54.0, BTN_SAVE),   # click Enregistrer
-    ("E", 55.0, 61.08, 1.40, None, None),      # saved supplier card
+    ("E", 55.0, 61.08, 0.58, None, None),      # saved supplier card (held for benefit line)
 ]
 
 def encode(name, s, e, f, extra=""):
@@ -51,7 +51,7 @@ def encode(name, s, e, f, extra=""):
     return out
 
 order = []; boundary = {}
-INTRO_D, OUTRO_D = 3.0, 5.7
+INTRO_D, OUTRO_D = 3.0, 9.4
 t = INTRO_D
 for name, s, e, f, ck, btn in segs:
     boundary[name] = t
@@ -96,10 +96,11 @@ anchor = {
     "N3": boundary["C"] + 0.10,
     "N4": boundary["D"] + 1.50,   # aligns with Enregistrer click zoom
     "N5": boundary["E"] + 0.10,   # card appears
+    "N5b": boundary["E"] + 2.20,  # benefit: lier fournisseurs <-> produits
     "N6": SCREEN_END + 0.10,      # outro CTA
 }
 off = {}; prev_end = -GAP
-for k in ["N0","N1","N2","N3","N4","N5","N6"]:
+for k in ["N0","N1","N2","N3","N4","N5","N5b","N6"]:
     o = max(anchor[k], prev_end + GAP); off[k] = o
     prev_end = o + dur(f"{ROOT}/vo/{k}.mp3")
 print("offsets:", {k: round(v,2) for k,v in off.items()}, "voice_end:", round(prev_end,2))
