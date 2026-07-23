@@ -51,8 +51,22 @@ Chaque nouveau tutoriel = nouveau dossier `videos/foodeatup-<sujet>-tuto/`.
      fois — toujours vérifier qu'aucune ligne ne commence avant la fin de la
      précédente.
    - Carte intro / carte outro : fond flou (boxblur) + image nette overlay + fondus.
-   - Audio final : `loudnorm=I=-16:TP=-1.5:LRA=11` + `alimiter=limit=0.89` pour
-     éviter tout clip. Vérifier au `volumedetect` (`mean` ~-16dB, `max` < 0dB).
+   - Audio final : appliquer `loudnorm=I=-16:TP=-1.5:LRA=11` **par ligne VO
+     individuellement, avant `adelay`/`apad`** (pas sur le mix composite : le
+     mix contient beaucoup de silence entre les lignes espacées, donc un
+     `loudnorm` global sous-estime la loudness et sur-amplifie la parole —
+     bug rencontré, pics à +1.9dB). Puis sur le mix final, un simple
+     `alimiter=limit=0.6:level=disabled` en garde-fou.
+     **Piège critique** : le paramètre `level` d'`alimiter` est activé par
+     défaut et renormalise le signal à 0dB APRÈS limitation, annulant le
+     plafond — toujours passer `level=disabled` explicitement, sinon `limit=`
+     n'a aucun effet réel. Prévoir aussi ~4-5dB de marge sous 0dBFS avant
+     l'encodage AAC (le codec peut réintroduire 1-2dB de dépassement par
+     effet de reconstruction/ringing près du plafond) : viser un plafond
+     effectif autour de `limit=0.6` (~-4.4dB) plutôt que 0.85-0.89.
+     Vérifier avec `ffmpeg -i out.mp4 -af astats -f null /dev/null` (grep
+     "Peak level dB") sur le fichier FINAL encodé — `volumedetect` seul est
+     insuffisant, il arrondit et peut afficher "0.0dB" pour un clip réel.
    - Durée cible générale : éviter les blancs, viser le minimum nécessaire pour
      porter le script sans traîner (30-60s typiquement selon la complexité du
      flow ; suivre les instructions ponctuelles de Michael sur la durée).
