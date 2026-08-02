@@ -61,6 +61,17 @@ type Tutorial = {
   howItWorks: string[];
   whatItsFor: string;
   claudePrompt?: string;     // optionnel — voir étape 3 ci-dessus
+  claudePrompts?: { title: string; prompt: string }[]; // optionnel — plusieurs exemples
+                              // (ex: création directe + depuis une facture/image).
+                              // Si présent, remplace claudePrompt (un seul des deux
+                              // s'affiche, voir tutoriel.$slug.tsx). Ajouté le 2026-08-02
+                              // pour saisir-ses-ingredients (create_ingredient direct +
+                              // prompt "facture fournisseur (image)").
+  chefTip?: string;
+  chefTipAvatar?: string;    // optionnel — URL image, remplace l'icône chef par défaut
+                              // sur l'astuce du chef de CE tutoriel (ex: vraie photo de
+                              // Michael en chef, michael-chef-mascot.jpg). Par défaut
+                              // (absent) : icône générique chefIcon.
 };
 ```
 
@@ -140,4 +151,5 @@ l'avatar était conservée) : ici la voix native est explicitely coupée.
 | 5 | Configuration | 5 - vos taux de TVA | `parametrer-sa-tva` | **oui** — `create_tva`. v3 validée par Michael le 2026-08-02 (script VO + séquence Claude animée 3 temps, module partagé) — publiée : RapidoCMS mis à jour (même URL S3, `durationSeconds` 29→38 sur Lovable) |
 | 6 | Configuration | 6 - créer ses catégories | `creer-ses-categories` | **oui** — `create_category`. Validée et publiée le 2026-08-02 (RapidoCMS + LinkedIn 2026-08-05 16h + Lovable) |
 | 7 | Configuration | 7 - ajouter ses fournisseurs | `ajouter-ses-fournisseurs` | **oui** — `create_supplier`. Validée et publiée le 2026-08-02 (RapidoCMS + LinkedIn 2026-08-06 07h + Lovable). Astuce du chef documente aussi l'affiliation produits/factures et l'OCR (capacités non montrées dans le rush lui-même) |
-| 8 | Configuration | 8 - régler ses unités | `regler-ses-unites` | non — `list_units` seul existe (lecture seule), pas de `create_unit`. Publiée le 2026-08-02 (RapidoCMS + LinkedIn 2026-08-06 16h + Lovable) |
+| 8 | Configuration | 8 - saisir ses ingrédients | `saisir-ses-ingredients` | **oui, 2 prompts** — `create_ingredient` (direct) + prompt "facture fournisseur (image)". Première vidéo à utiliser `claudePrompts[]` (nouveau champ, plusieurs exemples) et `chefTipAvatar` (photo réelle de Michael). Publiée le 2026-08-02 (RapidoCMS + LinkedIn 2026-08-07 07h + Lovable) |
+| 9 | Configuration | 9 - régler ses unités | `regler-ses-unites` | non — `list_units` seul existe (lecture seule), pas de `create_unit`. Publiée le 2026-08-02 (RapidoCMS + LinkedIn 2026-08-06 16h + Lovable) |
