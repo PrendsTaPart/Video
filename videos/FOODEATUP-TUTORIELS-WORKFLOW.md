@@ -187,3 +187,12 @@ réutilisables telles quelles pour générer des visuels statiques (pas seulemen
 - Le dépôt n'a pas de branche `main` distincte : la branche désignée EST la
   branche par défaut. Pousser directement dessus, pas de PR à ouvrir contre
   elle-même.
+- **Apostrophe dans un texte de bandeau (`banner()`) = même bug que le `%`
+  dans les prompts Claude.** Le texte est injecté entre guillemets simples
+  dans l'argument `-vf` (`text='{text}'`) ; une apostrophe dedans (ex. "seuil
+  d'alerte") ferme la chaîne prématurément et fait planter tout le filtre
+  (`ffmpeg` rapporte une erreur `drawtext` cryptique en fin de chaîne, pas un
+  message clair sur l'apostrophe). Rencontré sur `foodeatup-ingredients-tuto`.
+  Corrigé en reformulant le bandeau sans apostrophe ("seuil minimum" plutôt
+  que "seuil d'alerte") — plus simple que d'échapper le caractère. Vérifier
+  chaque texte de bandeau avant build, pas seulement les prompts Claude.
