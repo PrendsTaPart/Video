@@ -138,3 +138,5 @@ l'avatar était conservée) : ici la voix native est explicitely coupée.
 | 3 | Configuration | 3 - choisit votre abonnement | `choisir-son-abonnement` | non — pas d'outil MCP (paiement Stripe) |
 | 4 | Configuration | 4 - profil entreprise | `configurer-son-profil-entreprise` | non — pas d'outil MCP (fiche identité entreprise) |
 | 5 | Configuration | 5 - vos taux de TVA | `parametrer-sa-tva` | **oui** — `create_tva`. v3 validée par Michael le 2026-08-02 (script VO + séquence Claude animée 3 temps, module partagé) — publiée : RapidoCMS mis à jour (même URL S3, `durationSeconds` 29→38 sur Lovable) |
+| 6 | Configuration | 6 - créer ses catégories | `creer-ses-categories` | **oui** — `create_category`. Validée et publiée le 2026-08-02 (RapidoCMS + LinkedIn 2026-08-05 16h + Lovable) |
+| 7 | Configuration | 7 - ajouter ses fournisseurs | `ajouter-ses-fournisseurs` | **oui** — `create_supplier`. Validée et publiée le 2026-08-02 (RapidoCMS + LinkedIn 2026-08-06 07h + Lovable). Astuce du chef documente aussi l'affiliation produits/factures et l'OCR (capacités non montrées dans le rush lui-même) |

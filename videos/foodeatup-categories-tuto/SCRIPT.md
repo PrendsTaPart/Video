@@ -67,5 +67,8 @@ d'étape, encadré orange pulsant sur les 2 clics. Pas de clip avatar dans ce do
 
 ## Statut publication
 
-Vidéo à livrer à Michael pour validation (règle du 2026-08-02) — pas de publication
-RapidoCMS/LinkedIn/Lovable avant retour explicite.
+**Validée par Michael et publiée le 2026-08-02.** RapidoCMS : vidéo + vignette uploadées
+(`foodeatup-categories-tuto-v1` / `-thumbnail`), draft LinkedIn créé et programmé le
+2026-08-05 16h00 (prochain créneau libre de la rotation 2/jour). Lovable : tutoriel
+`creer-ses-categories` ajouté dans `src/data/tutorials.ts`, module Configuration
+(sous-catégorie "6").

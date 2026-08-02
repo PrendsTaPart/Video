@@ -83,6 +83,9 @@ d'étape, encadré orange pulsant sur les 2 clics. Pas de clip avatar dans ce do
 
 ## Statut publication
 
-Vidéo à livrer à Michael pour validation (règle du 2026-08-02) — pas de publication
-RapidoCMS/LinkedIn/Lovable avant retour explicite. **Point à vérifier avant publication** :
-régénérer N7 avec un texte propre au fournisseur (voir note ci-dessus).
+**Validée par Michael et publiée le 2026-08-02.** RapidoCMS : vidéo + vignette uploadées
+(`foodeatup-fournisseurs-tuto-v1` / `-thumbnail`), draft LinkedIn créé et programmé le
+2026-08-06 07h00 (prochain créneau libre de la rotation 2/jour). Lovable : tutoriel
+`ajouter-ses-fournisseurs` ajouté dans `src/data/tutorials.ts`, module Configuration
+(sous-catégorie "7") — `chefTip` documente l'affiliation produits/factures et l'OCR,
+capacités non montrées dans le rush lui-même (voir note plus haut).
