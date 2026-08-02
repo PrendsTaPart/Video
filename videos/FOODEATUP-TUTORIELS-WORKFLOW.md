@@ -117,21 +117,49 @@ d'utilisation (template validé sur `foodeatup-tva-tuto`, à réutiliser tel que
    du logo lui-même) contenant le prompt collé, bulle assistant à gauche (avatar rond corail
    + astérisque dessiné) qui commence sa réponse — pour montrer l'action prise en charge.
 
-Implémentation : chaque étage est rendu en PNG via PIL (contrôle total du texte/formes/logo,
-évite le bug `drawtext`/`%` — voir plus bas) puis passé dans `card()` **avec `fade=False`**
-(les cartes intro/outro gardent `fade=True` car elles sont en tout début/fin de vidéo ;
-un stage court au milieu du montage qui a son propre fondu-au-noir ET un xfade des deux
-côtés se retrouve à moitié dans le noir tout le temps qu'il est censé être visible — bug
-rencontré et corrigé sur cette version). Transitions `slideleft` entre les 3 étages (scènes
-distinctes), `fade` partout ailleurs. Si aucun outil MCP ne correspond, ne pas ajouter cette
-séquence — pas de prompt inventé. Cette règle vaut aussi bien pour la vidéo que pour la
-fiche du tutoriel sur le site Lovable (voir `LOVABLE-FOODEATUP-DOCS.md`, champ
-`claudePrompt`) : rester cohérent, même texte de prompt des deux côtés.
+**Implémentation — module partagé, ne pas dupliquer le code d'une vidéo à l'autre.** Tout
+vit dans `videos/_shared/claude_prompt_sequence.py` (`render_claude_stage1_png` /
+`_stage2_png` / `_stage3_png`, + `CLAUDE_STAGE_D` par défaut). Chaque projet l'importe
+(`sys.path.insert(0, ".../_shared")`) et ne fournit que ce qui change : le texte du prompt
+(`CLAUDE_PROMPT`) et, optionnellement, la réplique de l'assistant (`response=...`, sinon
+texte générique par défaut). **Même univers visuel sur toute la série — gagner du temps
+en ne touchant jamais au rendu, seulement au contenu.** Étapes pour un nouveau tutoriel :
 
-Ce même gabarit (3 PNG + `card(fade=False)` + `slideleft`) est aussi la base demandée par
-Michael pour un usage possible hors vidéo (pages produit du site web) — les 3 fonctions de
-rendu (`render_claude_stage1_png` / `_stage2_` / `_stage3_`) sont autonomes et réutilisables
-telles quelles pour générer des visuels statiques (pas seulement intégrées à un montage).
+```python
+import sys; sys.path.insert(0, "/home/user/Video/videos/_shared")
+from claude_prompt_sequence import render_claude_stage1_png, render_claude_stage2_png, render_claude_stage3_png
+CLAUDE_PROMPT = "..."  # propre à ce tutoriel, avec ses [placeholders]
+# puis dans build_silent(), comme pour tva : rendre les 3 PNG, les passer
+# dans card(..., fade=False), enchaîner en "slideleft".
+```
+
+Chaque étage est rendu en PNG via PIL (contrôle total du texte/formes/logo, évite le bug
+`drawtext`/`%` — voir plus bas) puis passé dans `card()` **avec `fade=False`** (les cartes
+intro/outro gardent `fade=True` car elles sont en tout début/fin de vidéo ; un stage court
+au milieu du montage qui a son propre fondu-au-noir ET un xfade des deux côtés se retrouve
+à moitié dans le noir tout le temps qu'il est censé être visible — bug rencontré et corrigé
+sur `foodeatup-tva-tuto`). Transitions `slideleft` entre les 3 étages (scènes distinctes),
+`fade` partout ailleurs. Si aucun outil MCP ne correspond, ne pas ajouter cette séquence —
+pas de prompt inventé. Cette règle vaut aussi bien pour la vidéo que pour la fiche du
+tutoriel sur le site Lovable (voir `LOVABLE-FOODEATUP-DOCS.md`, champ `claudePrompt`) :
+rester cohérent, même texte de prompt des deux côtés.
+
+**Prévoir 2 lignes VO dédiées à la séquence**, pas une seule : une qui explique le prompt
+(ancrée sur l'étage 1 "reveal", éventuellement audible jusqu'à l'étage 2 "copié"), une qui
+présente l'envoi dans Claude et le résultat (ancrée sur l'étage 3 "chatbot mockup"). Une
+ligne unique qui doit couvrir les 3 étages déborde presque toujours sur le mauvais étage
+(bug rencontré sur `foodeatup-tva-tuto` v2 — corrigé en v3, voir son `SCRIPT.md`).
+**Mesurer chaque ligne VO avant de fixer les durées de segment/étage** (règle déjà en
+place, voir plus bas) : sur `tva`, ignorer cette règle sur l'ensemble de la chaîne (pas
+seulement la ligne suivante) avait fait dériver la narration de 4-6 s en fin de vidéo,
+au point qu'une ligne décrivant un clic se retrouvait à jouer sur un tout autre segment.
+Toujours vérifier après coup que chaque offset réel (`offsets:` imprimé par `build.py`)
+correspond à son ancrage `S[...]`, pas seulement que le total tient dans la durée.
+
+Ce même gabarit est aussi la base demandée par Michael pour un usage possible hors vidéo
+(pages produit du site web) — les 3 fonctions de rendu du module sont autonomes et
+réutilisables telles quelles pour générer des visuels statiques (pas seulement intégrées
+à un montage).
 
 ## Pièges déjà rencontrés (ne pas reproduire)
 
