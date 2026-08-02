@@ -2,7 +2,8 @@
 
 Module 1 « CONFIGURATION », dossier Drive `1 - Inscription, e-mail de confirmation`.
 Voix Adam FR (`TGAegA0zNRi8I6nUdq3i`, `eleven_multilingual_v2`).
-Durée livrée : **37,5 s** — pic audio **-3,6 dBFS** (mesuré sur le MP4 final).
+Durée livrée : **37,5 s** — H.264 High/yuv420p, AAC 48 kHz stéréo, faststart.
+Audio : **-17,6 LUFS**, true peak **-7,2 dBFS** (mesurés sur le MP4 final).
 
 ## Voix off
 
@@ -58,6 +59,21 @@ Coupes volontaires dans le rush : **19,5 → 25,5 s** (détour par le site vitri
   retrouvait posé sur du vide.
 - Sortie encodée avec `-t` plutôt que `-shortest` : le mix audio se termine
   légèrement avant la vidéo et tronquait le fondu final au noir.
+- **Compatibilité de lecture — trois pièges, tous corrigés (v1 illisible sinon)** :
+  1. `xfade` négocie du **yuv444p** avec ses entrées et libx264 le conserve, ce qui
+     produit un flux `High 4:4:4 Predictive` que les navigateurs, QuickTime et la
+     plupart des lecteurs grand public refusent d'ouvrir. Forcer `format=yuv420p`
+     en fin de chaîne **et** `-pix_fmt yuv420p -profile:v high`.
+  2. `loudnorm` ré-échantillonne en interne à 192 kHz : sans resampling explicite,
+     l'AAC sort en **96 kHz mono**, mal supporté. Ajouter `aresample=48000` +
+     `-ar 48000 -ac 2`.
+  3. Sans `-movflags +faststart`, l'atome `moov` est écrit **après** `mdat` : un
+     lecteur web doit télécharger tout le fichier avant de démarrer, ce qui se
+     manifeste exactement comme « la vidéo ne fonctionne pas ».
+
+  Contrôles à refaire sur chaque livrable :
+  `ffprobe -show_entries stream=profile,pix_fmt,sample_rate` (attendu :
+  `High` / `yuv420p` / `48000`) et `ffmpeg -i out.mp4 -f null -` (zéro erreur).
 
 ## Reste à faire
 

@@ -147,10 +147,15 @@ def build_silent(outro_d):
         fc.append(f"{cur}[{k+1}:v]xfade=transition={trans[k]}:duration={XF}"
                   f":offset={off:.4f}{lbl}")
         cur = lbl
+    # xfade negotiates yuv444p with its inputs and libx264 will happily keep it,
+    # producing a "High 4:4:4 Predictive" stream that browsers, QuickTime and
+    # most consumer players refuse. Force 4:2:0 back on at the end of the chain.
+    fc.append(f"{cur}format=yuv420p[vout]")
     silent = f"{ROOT}/work/video_silent.mp4"
     run(["ffmpeg","-y","-v","error"] + inputs +
-        ["-filter_complex", ";".join(fc), "-map", cur,
-         "-r",str(FPS),"-c:v","libx264","-preset","medium","-crf","18", silent])
+        ["-filter_complex", ";".join(fc), "-map", "[vout]",
+         "-r",str(FPS),"-c:v","libx264","-profile:v","high","-pix_fmt","yuv420p",
+         "-preset","medium","-crf","18", silent])
     return silent, starts, total
 
 silent, starts, total = build_silent(OUTRO_D)
@@ -197,11 +202,18 @@ for i, k in enumerate(keys):
 filters.append("".join(labels) + f"amix=inputs={len(keys)}:normalize=0:duration=first[mix]")
 # level=disabled -- alimiter's auto level is ON by default and renormalises back
 # to 0dB, silently cancelling the ceiling.
-filters.append(f"[mix]atrim=0:{total:.3f},alimiter=limit=0.6:level=disabled,asetpts=N/SR/TB[voa]")
+# loudnorm upsamples to 192kHz internally; left alone the AAC stream ends up at
+# 96kHz, which several players will not decode. Resample to 48kHz before encoding.
+filters.append(f"[mix]atrim=0:{total:.3f},alimiter=limit=0.6:level=disabled,"
+               f"aresample=48000,aformat=sample_fmts=fltp:channel_layouts=stereo,"
+               f"asetpts=N/SR/TB[voa]")
 FINAL = f"{ROOT}/out/foodeatup-inscription-tuto-v1.mp4"
 run(["ffmpeg","-y","-v","error","-i",silent] + inputs +
     # -t rather than -shortest: the padded audio mix resolves slightly short and
     # would otherwise clip the outro's fade-to-black off the end of the video.
+    # +faststart moves the moov atom in front of mdat -- without it a web player
+    # has to fetch the whole file before it can start, which reads as "broken".
     ["-filter_complex",";".join(filters),"-map","0:v","-map","[voa]",
-     "-c:v","copy","-c:a","aac","-b:a","192k","-t",f"{total:.3f}",FINAL])
+     "-c:v","copy","-c:a","aac","-b:a","192k","-ar","48000","-ac","2",
+     "-movflags","+faststart","-t",f"{total:.3f}",FINAL])
 print(f"DONE: {FINAL}  {dur(FINAL):.2f}s")
