@@ -156,6 +156,16 @@ au point qu'une ligne décrivant un clic se retrouvait à jouer sur un tout autr
 Toujours vérifier après coup que chaque offset réel (`offsets:` imprimé par `build.py`)
 correspond à son ancrage `S[...]`, pas seulement que le total tient dans la durée.
 
+**N6 et N8 sont réutilisables tels quels d'une vidéo à l'autre (copier le .mp3), N7 ne
+l'est jamais.** N6 ("vous pouvez aussi le faire depuis Claude...") et N8 (CTA de fin) sont
+assez génériques pour s'appliquer à n'importe quel tutoriel — les copier fait gagner un
+aller-retour ElevenLabs. N7 nomme l'objet qui vient d'être créé ("...votre X est créé en
+quelques secondes") : il est donc *toujours* spécifique au tutoriel. Bug rencontré sur
+`foodeatup-fournisseurs-tuto` : N7 copié par réflexe depuis `foodeatup-tva-tuto` disait
+encore "...votre taux de TVA est créé...", contenu faux pour cette vidéo — repéré avant
+livraison en relisant le SCRIPT.md, corrigé par une régénération ciblée. Toujours relire
+le texte de chaque ligne VO copiée avant de l'utiliser, pas seulement sa durée.
+
 Ce même gabarit est aussi la base demandée par Michael pour un usage possible hors vidéo
 (pages produit du site web) — les 3 fonctions de rendu du module sont autonomes et
 réutilisables telles quelles pour générer des visuels statiques (pas seulement intégrées
