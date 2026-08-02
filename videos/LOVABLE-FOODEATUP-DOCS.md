@@ -99,17 +99,27 @@ type Tutorial = {
   d'employé, ajout de fournisseur, créer un devis, ajouter un client, dashboard productions,
   accueil HACCP. Référence pour associer chaque futur tutoriel à son outil MCP FoodEatUp.
 
-## Avatar HeyGen — statut (2026-08-02)
+## Avatar HeyGen — statut (2026-08-02, mis à jour)
 
-Demandé : générer des vidéos d'avatar 3D HeyGen avec Michael en chef de cuisine. **Impossible
-dans cet environnement pour l'instant** : `HEYGEN_API_KEY` n'est pas présente (pas de `.env` à
-la racine du dépôt dans cette session — une clé y avait été branchée lors d'une session
-précédente, mais elle ne survit pas au changement de conteneur, et `.env` n'est jamais commité,
-à raison). Le connecteur MCP `HyperFrames_by_HeyGen` disponible dans cette session n'est PAS un
-générateur d'avatar humain — c'est un moteur d'animation HTML/CSS, sans rapport. Pour débloquer :
-Michael doit fournir une clé API HeyGen (`app.heygen.com/settings/api`) à déposer en variable
-d'environnement. En attendant, la photo transformée en chef (ci-dessus) peut servir de base
-visuelle si Michael crée lui-même un avatar photo sur HeyGen et partage l'`avatar_id`.
+Demandé : générer des vidéos d'avatar 3D HeyGen avec Michael en chef de cuisine, en mini
+séquences muettes en début de vidéo (voix ElevenLabs uniquement, pour garder une seule voix
+cohérente sur toute la série).
+
+Michael a fourni une clé API HeyGen. **Testée, mais inutilisable dans cet environnement** :
+`api.heygen.com` (et tous ses sous-domaines : `app.`, `upload.`, `resource.`) sont bloqués par
+la politique réseau — refus de politique explicite (403 au CONNECT), pas une panne passagère.
+Contrairement à ElevenLabs, il n'existe **aucun MCP qui relaie les appels HeyGen côté serveur**
+dans cette session — le connecteur `HyperFrames_by_HeyGen` disponible ici n'est pas un
+générateur d'avatar humain (moteur d'animation HTML/CSS sans rapport, ses propres instructions
+le précisent). Donc même avec la clé, aucun appel direct n'est possible depuis ce conteneur.
+
+**Chemin qui fonctionne** : Michael génère lui-même le/les clip(s) avatar sur `app.heygen.com`
+(comme il le fait déjà pour les clips "Script N ..._1080p.mp4" du Drive) et les dépose dans le
+chat comme n'importe quel autre asset. Le pipeline sait déjà gérer ce cas : pour une séquence
+muette, extraire/couper la piste audio du clip HeyGen (`ffmpeg -an`) et ne garder que
+l'image — la voix ElevenLabs prend le relais sur toute la narration, sans conflit. C'est
+l'inverse exact du traitement appliqué sur `foodeatup-boutique-tuto` (où la voix native de
+l'avatar était conservée) : ici la voix native est explicitely coupée.
 
 ## Tutoriels publiés
 
