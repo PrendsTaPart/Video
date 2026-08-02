@@ -78,29 +78,60 @@ Chaque nouveau tutoriel = nouveau dossier `videos/foodeatup-<sujet>-tuto/`.
    uniquement un `scale`+`crop` neutre si le ratio source diffère légèrement.
    Livrable : `out/thumbnail-youtube.jpg`.
 
-6. **Publication sur le CMS**
-   - Commit + push du dossier projet (`assets/`, `vo/`, `build.py`, `out/`) sur
-     la branche désignée (`work/` reste dans `.gitignore`, c'est du scratch).
+6. **Livraison pour validation — STOP obligatoire (règle ajoutée le 2026-08-02)**
+   Une fois le montage terminé et la checklist de compatibilité passée (voir plus
+   bas), commit + push du dossier projet (`assets/`, `vo/`, `build.py`, `out/`) sur
+   la branche désignée (`work/` reste dans `.gitignore`, c'est du scratch), puis
+   livrer le fichier vidéo à Michael (`SendUserFile`). **Ne pas publier tant que
+   la vidéo n'est pas validée** : ni upload/schedule RapidoCMS+LinkedIn, ni mise à
+   jour du site Lovable. Attendre un retour explicite (OK, ou demande de
+   correction — dans ce cas corriger puis relivrer avant de reproposer).
+
+7. **Publication (après validation confirmée)**
    - Upload de la vidéo finale ET de la vignette sur RapidoCMS
      (`mcp__RapidoCMS__upload_file_tool`, en pointant l'URL GitHub raw du fichier
      poussé).
-   - Livrer le fichier vidéo à Michael (SendUserFile).
+   - `create_draft_tool` + `schedule_draft_tool` sur le compte LinkedIn FoodEatUp
+     (2 vidéos/jour, 7h et 16h, prochain créneau libre de la rotation).
+   - Ajout du tutoriel sur le site Lovable (`LOVABLE-FOODEATUP-DOCS.md`) + entrée
+     dans le tableau "Tutoriels publiés" du même fichier.
 
-## Séquence de fin « cas d'utilisation + prompt Claude » (règle ajoutée le 2026-08-02)
+## Séquence de fin « cas d'utilisation + prompt Claude » (règle ajoutée le 2026-08-02,
+## design revu le 2026-08-02 — animation chatbot en 3 temps)
 
 **Quand un tutoriel correspond à une action exposée par un outil MCP FoodEatUp**
 (`mcp__FoodEatUp__*` — voir liste dans `videos/LOVABLE-FOODEATUP-DOCS.md`), ajouter en fin
-de vidéo (juste avant la carte de fin/CTA) une courte séquence supplémentaire montrant le
-cas d'utilisation : un encart texte présentant le prompt Claude prêt à copier-coller (avec
-ses `[placeholders]` entre crochets), pour que le spectateur voie qu'il peut aussi piloter
-cette action directement depuis Claude. Si aucun outil MCP ne correspond (beaucoup d'actions
-d'onboarding/UI n'en ont pas), ne pas ajouter cette séquence — pas de prompt inventé.
-Cette règle vaut aussi bien pour la vidéo elle-même que pour la fiche du tutoriel sur le
-site Lovable (voir `LOVABLE-FOODEATUP-DOCS.md`, champ `claudePrompt`) : les deux doivent
-rester cohérents, même texte de prompt des deux côtés.
+de vidéo (juste avant la carte de fin/CTA) une séquence animée en 3 temps montrant le cas
+d'utilisation (template validé sur `foodeatup-tva-tuto`, à réutiliser tel quel) :
 
-Assets disponibles pour cette séquence : logos IA dans
-`studio-video/assets/brand/third-party-logos/` (Claude, Mistral, OpenAI, WhatsApp).
+1. **Reveal** — fond crème FoodEatUp (`#FCF9E6`, **pas de boîte noire**), titre "Utilisez
+   cette fonctionnalité avec Claude", le prompt affiché en gros dans une carte blanche à
+   filet bleu + liseré corail (police Liberation Sans Bold, pas de monospace), avec ses
+   `[placeholders]` entre crochets.
+2. **Copié** — même carte, filet vert + badge "check" dessiné (pas un glyphe emoji — non
+   fiable selon la police), légende "Copié dans le presse-papiers !".
+3. **Chatbot Claude** — mockup d'interface Claude : logo réel
+   (`studio-video/assets/brand/third-party-logos/claude-logo.png`) + "claude.ai" dans une
+   barre du haut, fond `#F0EEE6` (le cream propre à l'UI Claude, pas celui de FoodEatUp),
+   bulle utilisateur alignée à droite en corail `#D97757` (couleur de marque Claude, extraite
+   du logo lui-même) contenant le prompt collé, bulle assistant à gauche (avatar rond corail
+   + astérisque dessiné) qui commence sa réponse — pour montrer l'action prise en charge.
+
+Implémentation : chaque étage est rendu en PNG via PIL (contrôle total du texte/formes/logo,
+évite le bug `drawtext`/`%` — voir plus bas) puis passé dans `card()` **avec `fade=False`**
+(les cartes intro/outro gardent `fade=True` car elles sont en tout début/fin de vidéo ;
+un stage court au milieu du montage qui a son propre fondu-au-noir ET un xfade des deux
+côtés se retrouve à moitié dans le noir tout le temps qu'il est censé être visible — bug
+rencontré et corrigé sur cette version). Transitions `slideleft` entre les 3 étages (scènes
+distinctes), `fade` partout ailleurs. Si aucun outil MCP ne correspond, ne pas ajouter cette
+séquence — pas de prompt inventé. Cette règle vaut aussi bien pour la vidéo que pour la
+fiche du tutoriel sur le site Lovable (voir `LOVABLE-FOODEATUP-DOCS.md`, champ
+`claudePrompt`) : rester cohérent, même texte de prompt des deux côtés.
+
+Ce même gabarit (3 PNG + `card(fade=False)` + `slideleft`) est aussi la base demandée par
+Michael pour un usage possible hors vidéo (pages produit du site web) — les 3 fonctions de
+rendu (`render_claude_stage1_png` / `_stage2_` / `_stage3_`) sont autonomes et réutilisables
+telles quelles pour générer des visuels statiques (pas seulement intégrées à un montage).
 
 ## Pièges déjà rencontrés (ne pas reproduire)
 

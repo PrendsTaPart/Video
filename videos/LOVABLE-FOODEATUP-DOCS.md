@@ -17,7 +17,15 @@ correspondant au projet.
 - **Éditeur Lovable** : https://lovable.dev/projects/55ff35b7-c442-42c4-950c-8c7fd420c645
 - Stack : React + Tailwind + shadcn/ui (TanStack Start), 100% front, pas de backend.
 
-## Comment ajouter une vidéo (à chaque tutoriel produit)
+## Règle de validation (ajoutée le 2026-08-02)
+
+**Ne plus publier aucune vidéo sur Lovable ni sur LinkedIn sans validation explicite de
+Michael au préalable.** Étapes : monter la vidéo → vérifier la checklist de compatibilité
+→ livrer le fichier (`SendUserFile`) → **attendre un retour** → seulement après OK, faire
+les étapes 1-5 ci-dessous (upload RapidoCMS, `claudePrompt`, prompt Lovable, tableau de
+suivi). Un retour de correction relance le cycle (corriger → relivrer → attendre).
+
+## Comment ajouter une vidéo (à chaque tutoriel produit, une fois validée par Michael)
 
 1. Uploader le MP4 + la vignette sur RapidoCMS (`upload_file_tool`), comme pour la
    publication LinkedIn — récupérer les deux URLs S3 stables.
@@ -129,4 +137,4 @@ l'avatar était conservée) : ici la voix native est explicitely coupée.
 | 2 | Configuration | 2 - monte votre boutique | `monter-sa-boutique` | non — pas d'outil MCP (fiche boutique) |
 | 3 | Configuration | 3 - choisit votre abonnement | `choisir-son-abonnement` | non — pas d'outil MCP (paiement Stripe) |
 | 4 | Configuration | 4 - profil entreprise | `configurer-son-profil-entreprise` | non — pas d'outil MCP (fiche identité entreprise) |
-| 5 | Configuration | 5 - vos taux de TVA | `parametrer-sa-tva` | **oui** — `create_tva` (première application de la règle, y compris séquence en fin de vidéo) |
+| 5 | Configuration | 5 - vos taux de TVA | `parametrer-sa-tva` | **oui** — `create_tva`. ⚠️ vidéo v2 en attente de validation Michael (2026-08-02, nouveau script + séquence Claude animée 3 temps) — ne pas publier/mettre à jour la fiche Lovable avant retour |

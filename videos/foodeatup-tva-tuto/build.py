@@ -93,40 +93,191 @@ def encode_seg(name, s, e, target, btn, btn_sz, caption):
          "-vf",vf,"-r",str(FPS),"-c:v","libx264","-preset","medium","-crf","18",out])
     return out
 
-CLAUDE_PROMPT_LINES = [
-    "Crée un taux de TVA nommé [nom du taux]",
-    "à [pourcentage]% pour mon établissement",
-    "FoodEatUp (ID [ID établissement]).",
-]
-MONO = "/usr/share/fonts/truetype/liberation/LiberationMono-Regular.ttf"
 
-def render_claude_prompt_png(path):
-    """Render the card as a flat PNG first, then feed it through card() below
-    -- the same proven image->video path used for intro/outro. A bare
-    lavfi color=... source encoded straight to video shifted cream #FCF9E6
-    into a khaki grey once it went through the xfade chain (direct-segment
-    pixel (252,248,229) vs (228,229,232) after concat -- a colour-range
-    mismatch between the lavfi source and the image-decoded segments).
-    Rendering to PNG first sidesteps it entirely: from here on it's "just
-    another image asset", handled identically to every other card."""
-    box_y0, box_h = 420, 40 + 44 * len(CLAUDE_PROMPT_LINES)
-    vf = (f"color=c=0xFCF9E6:s={W}x{H}:d=1,"
-          f"drawtext=fontfile={FONT}:text='Utilisez cette fonctionnalité avec Claude':"
-          f"fontsize=46:fontcolor=0x0F1A23:x=(w-text_w)/2:y=200,"
-          f"drawbox=x=260:y={box_y0}:w={W-520}:h={box_h}:color=0x0F1A23@0.95:t=fill,"
-          f"drawbox=x=260:y={box_y0}:w=8:h={box_h}:color={ORANGE}@1.0:t=fill")
-    for i, line in enumerate(CLAUDE_PROMPT_LINES):
-        ly = box_y0 + 30 + i * 44
-        # expansion=none: a bare '%' in the prompt text (e.g. "[pourcentage]%")
-        # otherwise gets parsed as a %{...} expansion token and silently drops
-        # the whole drawtext instance -- this is what ate the middle line.
-        vf += (f",drawtext=fontfile={MONO}:text='{line}':fontsize=30:"
-               f"fontcolor=white:x=300:y={ly}:expansion=none")
-    vf += (f",drawtext=fontfile={FONT}:text='Copier-coller dans Claude, remplacer les crochets':"
-           f"fontsize=26:fontcolor=0x0F1A23@0.75:x=(w-text_w)/2:y={box_y0+box_h+30}")
-    run(["ffmpeg","-y","-v","error","-f","lavfi","-i",vf,"-frames:v","1", path])
 
-def card(img, out, secs, zoom_in=True):
+
+# ---------------------------------------------------------------------------
+# "Use it with Claude" sequence -- 3-stage chatbot-style animation, PIL
+# rendered (not ffmpeg drawtext/lavfi -- gives full control over rounded
+# chat bubbles, real logo compositing and text wrapping, and sidesteps the
+# drawtext '%'-expansion bug entirely since PIL just draws literal glyphs).
+# Each stage is a flat PNG fed through the existing card() -- same proven
+# image->video colour path used for intro/outro, no lavfi colour source.
+# Reusable template: any future video with a matching FoodEatUp MCP tool
+# gets this same 3-stage sequence (see FOODEATUP-TUTORIELS-WORKFLOW.md).
+# ---------------------------------------------------------------------------
+from PIL import Image, ImageDraw, ImageFont
+
+FONT_BOLD = "/usr/share/fonts/truetype/liberation/LiberationSans-Bold.ttf"
+FONT_REG  = "/usr/share/fonts/truetype/liberation/LiberationSans-Regular.ttf"
+CLAUDE_LOGO_PATH = "/home/user/Video/studio-video/assets/brand/third-party-logos/claude-logo.png"
+
+# Claude's real brand colours, sampled from the official logo asset itself
+# (clay/coral accent) -- not guessed.
+CLAY   = (217, 119, 87, 255)
+CLAUDE_BG = (240, 238, 230, 255)   # Claude product's own warm cream background
+FEU_CREAM = (252, 249, 230, 255)  # FoodEatUp cream #FCF9E6
+NAVY   = (15, 26, 35, 255)
+DARK   = (46, 42, 38, 255)
+WHITE  = (255, 255, 255, 255)
+
+CLAUDE_PROMPT = ("Crée un taux de TVA nommé [nom du taux] à [pourcentage]% "
+                  "pour mon établissement FoodEatUp (ID [ID établissement]).")
+
+def _font(bold, size):
+    return ImageFont.truetype(FONT_BOLD if bold else FONT_REG, size)
+
+def _wrap(draw, text, font, max_w):
+    words, lines, cur = text.split(" "), [], ""
+    for w in words:
+        trial = (cur + " " + w).strip()
+        if draw.textlength(trial, font=font) <= max_w:
+            cur = trial
+        else:
+            if cur: lines.append(cur)
+            cur = w
+    if cur: lines.append(cur)
+    return lines
+
+def _rrect(draw, box, radius, fill=None, outline=None, width=1):
+    draw.rounded_rectangle(box, radius=radius, fill=fill, outline=outline, width=width)
+
+def _center_text(draw, cx, y, text, font, fill):
+    w = draw.textlength(text, font=font)
+    draw.text((cx - w / 2, y), text, font=font, fill=fill)
+
+def render_claude_stage1_png(path):
+    """Big prompt reveal on the FoodEatUp cream background -- no dark box."""
+    img = Image.new("RGBA", (W, H), FEU_CREAM)
+    d = ImageDraw.Draw(img)
+    title_f = _font(True, 46)
+    _center_text(d, W/2, 96, "Utilisez cette fonctionnalité avec Claude", title_f, NAVY)
+    sub_f = _font(False, 26)
+    _center_text(d, W/2, 158, "Le prompt à copier-coller dans Claude", sub_f, (15,26,35,190))
+
+    prompt_f = _font(True, 40)
+    card_w = 1500
+    pad_x, pad_y = 56, 40
+    lines = _wrap(d, CLAUDE_PROMPT, prompt_f, card_w - 2*pad_x - 24)
+    line_h = 56
+    card_h = pad_y*2 + line_h*len(lines)
+    x0 = (W - card_w)/2
+    y0 = 240
+
+    # soft shadow, then white card, then clay accent bar on the left
+    shadow = Image.new("RGBA", (W, H), (0,0,0,0))
+    sd = ImageDraw.Draw(shadow)
+    _rrect(sd, [x0+6, y0+10, x0+card_w+6, y0+card_h+10], 26, fill=(15,26,35,40))
+    shadow = shadow.filter(__import__("PIL.ImageFilter", fromlist=["ImageFilter"]).GaussianBlur(10))
+    img = Image.alpha_composite(img, shadow)
+    d = ImageDraw.Draw(img)
+    _rrect(d, [x0, y0, x0+card_w, y0+card_h], 26, fill=WHITE, outline=(27,109,243,120), width=2)
+    _rrect(d, [x0, y0, x0+14, y0+card_h], 8, fill=CLAY)
+
+    for i, line in enumerate(lines):
+        d.text((x0 + pad_x + 24, y0 + pad_y + i*line_h), line, font=prompt_f, fill=NAVY)
+
+    cap_f = _font(False, 25)
+    _center_text(d, W/2, y0+card_h+34, "Remplacez les [crochets] par vos valeurs", cap_f, (15,26,35,170))
+    img.convert("RGB").save(path)
+
+def render_claude_stage2_png(path):
+    """Same card, brief 'copied' confirmation beat."""
+    img = Image.new("RGBA", (W, H), FEU_CREAM)
+    d = ImageDraw.Draw(img)
+    title_f = _font(True, 46)
+    _center_text(d, W/2, 96, "Utilisez cette fonctionnalité avec Claude", title_f, NAVY)
+
+    prompt_f = _font(True, 40)
+    card_w = 1500
+    pad_x, pad_y = 56, 40
+    lines = _wrap(d, CLAUDE_PROMPT, prompt_f, card_w - 2*pad_x - 24)
+    line_h = 56
+    card_h = pad_y*2 + line_h*len(lines)
+    x0 = (W - card_w)/2
+    y0 = 240
+
+    _rrect(d, [x0, y0, x0+card_w, y0+card_h], 26, fill=WHITE, outline=(46,163,89,220), width=4)
+    _rrect(d, [x0, y0, x0+14, y0+card_h], 8, fill=(46,163,89,255))
+    for i, line in enumerate(lines):
+        d.text((x0 + pad_x + 24, y0 + pad_y + i*line_h), line, font=prompt_f, fill=(120,120,120,255))
+
+    # green "copied" badge, top-right of the card, checkmark drawn (not a
+    # font glyph -- avoids relying on unicode coverage in Liberation Sans)
+    bx, by, br = x0+card_w-6, y0-6, 34
+    d.ellipse([bx-br, by-br, bx+br, by+br], fill=(46,163,89,255))
+    d.line([(bx-14, by), (bx-4, by+12), (bx+16, by-14)], fill=WHITE, width=6, joint="curve")
+
+    cap_f = _font(True, 30)
+    _center_text(d, W/2, y0+card_h+30, "Copié dans le presse-papiers !", cap_f, (46,163,89,255))
+    img.convert("RGB").save(path)
+
+def render_claude_stage3_png(path):
+    """Claude-branded chatbot mockup: real logo, clay user bubble with the
+    pasted prompt, assistant bubble starting to act on it."""
+    img = Image.new("RGBA", (W, H), CLAUDE_BG)
+    d = ImageDraw.Draw(img)
+
+    # top bar
+    _rrect(d, [0, 0, W, 96], 0, fill=WHITE)
+    d.line([(0, 96), (W, 96)], fill=(0,0,0,18), width=2)
+    logo = Image.open(CLAUDE_LOGO_PATH).convert("RGBA")
+    lh = 40
+    lw = int(logo.width * lh / logo.height)
+    logo = logo.resize((lw, lh))
+    img.paste(logo, (56, 28), logo)
+    tag_f = _font(False, 24)
+    d.text((56 + lw + 20, 36), "claude.ai", font=tag_f, fill=(120,113,103,255))
+
+    body_f = _font(False, 30)
+    bubble_w = 900
+
+    # user bubble (right), clay fill, white text -- the pasted prompt
+    lines = _wrap(d, CLAUDE_PROMPT, body_f, bubble_w - 80)
+    line_h = 42
+    bh = 48 + line_h*len(lines)
+    bx1 = W - 80
+    bx0 = bx1 - bubble_w
+    by0 = 150
+    _rrect(d, [bx0, by0, bx1, by0+bh], 24, fill=CLAY)
+    for i, line in enumerate(lines):
+        d.text((bx0+40, by0+28+i*line_h), line, font=body_f, fill=WHITE)
+
+    # assistant avatar -- clay circle with a hand-drawn asterisk (Claude's
+    # mark), since the only logo asset provided is the horizontal wordmark
+    avy = by0 + bh + 70
+    ar = 26
+    ax = 56 + ar
+    d.ellipse([ax-ar, avy-ar, ax+ar, avy+ar], fill=CLAY)
+    import math
+    for k in range(6):
+        ang = math.pi * k / 6
+        dx, dy = 16*math.cos(ang), 16*math.sin(ang)
+        d.line([(ax-dx, avy-dy), (ax+dx, avy+dy)], fill=WHITE, width=4)
+
+    # assistant response bubble (left), white card, dark text + typing dots
+    resp = "Bien sûr ! Je crée ce taux de TVA pour votre établissement…"
+    rlines = _wrap(d, resp, body_f, bubble_w - 80)
+    rh = 48 + line_h*len(rlines) + 30
+    rx0 = ax + ar + 24
+    _rrect(d, [rx0, avy-ar, rx0+bubble_w, avy-ar+rh], 24, fill=WHITE, outline=(0,0,0,18), width=2)
+    for i, line in enumerate(rlines):
+        d.text((rx0+40, avy-ar+28+i*line_h), line, font=body_f, fill=DARK)
+    dy = avy-ar+28+len(rlines)*line_h+14
+    for i in range(3):
+        d.ellipse([rx0+40+i*26, dy, rx0+40+i*26+12, dy+12], fill=(200,193,183,255))
+
+    cap_f = _font(False, 25)
+    _center_text(d, W/2, H-56, "Résultat instantané, sans quitter la conversation.", cap_f, (46,42,38,190))
+    img.convert("RGB").save(path)
+
+def card(img, out, secs, zoom_in=True, fade=True):
+    """fade=False for cards that sit mid-video and only ever meet the rest
+    of the timeline through an xfade crossfade (e.g. the claude1/2/3 chatbot
+    stages) -- baking in card()'s own 0.4s fade-to-black on top of a short
+    clip's crossfades on both sides stacks two darkenings and makes brief
+    cards (~1s) read as a murky blur instead of a clean beat. Regular
+    intro/outro (true start/end of the video) keep fade=True."""
     z0, z1 = (1.0, 1.09) if zoom_in else (1.09, 1.0)
     frames = int(secs * FPS)
     zexpr = f"{z0}+({z1}-{z0})*on/{frames}"
@@ -135,29 +286,41 @@ def card(img, out, secs, zoom_in=True):
           f"[0:v]scale={W}:{H}:force_original_aspect_ratio=decrease[fg];"
           f"[bg][fg]overlay=(W-w)/2:(H-h)/2,scale={W*2}:{H*2},"
           f"zoompan=z='{zexpr}':x='iw/2-(iw/zoom/2)':y='ih/2-(ih/zoom/2)'"
-          f":d=1:s={W}x{H}:fps={FPS},"
-          f"fade=t=in:st=0:d=0.4,fade=t=out:st={secs-0.4:.3f}:d=0.4,"
-          f"format=yuv420p")
+          f":d=1:s={W}x{H}:fps={FPS}")
+    if fade:
+        vf += f",fade=t=in:st=0:d=0.4,fade=t=out:st={secs-0.4:.3f}:d=0.4"
+    vf += ",format=yuv420p"
     run(["ffmpeg","-y","-v","error","-loop","1","-t",str(secs),"-i",img,
          "-filter_complex",vf,"-r",str(FPS),
          "-c:v","libx264","-preset","medium","-crf","18",out])
 
-CLAUDE_CARD_D = 4.60
+CLAUDE_STAGE_D = [2.20, 1.30, 2.50]  # reveal, copied, chatbot mockup
 
 def build_silent(outro_d):
     card(f"{ROOT}/assets/intro.jpg", f"{SEG}/intro.mp4", INTRO_D, zoom_in=True)
     card(f"{ROOT}/assets/outro.jpg", f"{SEG}/outro.mp4", outro_d, zoom_in=False)
-    claude_png = f"{SEG}/claude-card.png"
-    if not os.path.exists(claude_png):
-        render_claude_prompt_png(claude_png)
-    card(claude_png, f"{SEG}/claude.mp4", CLAUDE_CARD_D, zoom_in=True)
+    stage_pngs = [f"{SEG}/claude1.png", f"{SEG}/claude2.png", f"{SEG}/claude3.png"]
+    stage_renderers = [render_claude_stage1_png, render_claude_stage2_png, render_claude_stage3_png]
+    for png, renderer in zip(stage_pngs, stage_renderers):
+        if not os.path.exists(png):
+            renderer(png)
+    for i, png in enumerate(stage_pngs):
+        card(png, f"{SEG}/claude{i+1}.mp4", CLAUDE_STAGE_D[i], zoom_in=True, fade=False)
     parts = [f"{SEG}/intro.mp4"]
     for name, s, e, target, ck, btn, sz, cap in segs:
         parts.append(encode_seg(name, s, e, target, btn, sz, cap))
-    parts.append(f"{SEG}/claude.mp4")
+    parts.append(f"{SEG}/claude1.mp4")
+    parts.append(f"{SEG}/claude2.mp4")
+    parts.append(f"{SEG}/claude3.mp4")
     parts.append(f"{SEG}/outro.mp4")
 
+    # slideleft between the 3 claude stages (distinct scenes/cuts, same
+    # convention as skipped-footage cuts elsewhere) and into/out of outro;
+    # fade everywhere else (continuous screen-recording action).
     trans = ["fade"] * (len(parts) - 1)
+    trans[-4] = "slideleft"  # last real seg -> claude1
+    trans[-3] = "slideleft"  # claude1 -> claude2
+    trans[-2] = "slideleft"  # claude2 -> claude3
     durs = [dur(p) for p in parts]
     starts, acc = [], 0.0
     for i, d in enumerate(durs):
@@ -182,7 +345,7 @@ def build_silent(outro_d):
 
 silent, starts, total = build_silent(OUTRO_D)
 print(f"SILENT TOTAL: {dur(silent):.2f}s")
-labels_order = ["intro"] + [s[0] for s in segs] + ["claude", "outro"]
+labels_order = ["intro"] + [s[0] for s in segs] + ["claude1", "claude2", "claude3", "outro"]
 S = dict(zip(labels_order, starts))
 OUTRO_START = S["outro"]
 
@@ -194,7 +357,7 @@ anchor = {
     "N3": S["E"] + 0.20,
     "N4": S["F"] + 0.20,
     "N5": S["H"] + 0.20,
-    "N6": S["claude"] + 0.20,
+    "N6": S["claude1"] + 0.20,
     "N7": OUTRO_START + 0.35,
 }
 keys = [f"N{i}" for i in range(8)]
