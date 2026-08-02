@@ -90,36 +90,55 @@ réutilisable, déjà présent dans le dépôt (`videos/*/assets/outro.jpg`).
 - **ffmpeg / ffprobe** : absents de l'image par défaut, mais `apt-get update && apt-get install -y ffmpeg`
   fonctionne (v6.1.1 installée et testée pendant cet audit). À intégrer dans un hook
   de démarrage pour ne pas le refaire à chaque session.
-- **Voix off** : MCP ElevenLabs disponible, voix Adam FR (`TGAegA0zNRi8I6nUdq3i`) déjà
-  utilisée sur les tutos livrés.
+- **Chaîne voix off — validée de bout en bout.** Test réel effectué : génération via
+  le MCP ElevenLabs (voix Adam FR `TGAegA0zNRi8I6nUdq3i`, `eleven_multilingual_v2`),
+  puis téléchargement du MP3 dans le conteneur et lecture par `ffprobe` (2,69 s,
+  60 151 octets). Le MCP renvoie un lien signé sur `storage.googleapis.com`, hôte
+  **autorisé** par la politique réseau. Aucun obstacle sur ce maillon.
 - **Moteur de montage** : `build.py` est éprouvé — les pièges connus (zoompan qui gèle
   l'image, `loudnorm` sur mix composite, `alimiter` sans `level=disabled`) sont
   documentés et corrigés.
 - **Lecture du Drive** : le MCP Google Drive liste et lit correctement toute
   l'arborescence.
 
-### Le blocage réel : faire entrer les rushes dans l'environnement de build
+### Ingestion des rushes : ce n'est pas un mur réseau, c'est un manque d'identifiants
 
-C'est le point dur, et il n'est pas résolu aujourd'hui.
+Le point à traiter, mais il est plus simple qu'il n'y paraît. Résultats des tests
+de joignabilité depuis le conteneur :
 
-- `drive.google.com` est **bloqué par la politique réseau** de l'environnement :
-  le proxy répond `403` au CONNECT. Un `curl` sur un lien de téléchargement Drive
-  échoue (testé).
-- `rclone`, `gdown` ne sont pas installés et leurs sources ne sont pas joignables non plus.
-- Le seul canal restant est `download_file_content` du MCP Drive, qui renvoie le
-  fichier **en base64 dans le contexte du modèle**. Inutilisable à cette échelle :
-  un rush de 30 Mo ≈ 40 Mo de base64, très au-delà de ce qu'une fenêtre de contexte
-  peut absorber — et il y a **~2,3 Go de rushes au total** (dont ~1 Go rien que pour
-  le module HACCP, avec des fichiers jusqu'à 105 Mo).
+| Hôte | Statut | Lecture |
+|---|---|---|
+| `www.googleapis.com` | 404 | **joignable** (API Drive) |
+| `oauth2.googleapis.com` | 404 | **joignable** |
+| `accounts.google.com` | 302 | **joignable** |
+| `storage.googleapis.com` | 400 | **joignable** |
+| `drive.google.com` | — | bloqué (403 au CONNECT) |
+| `api.elevenlabs.io` | — | bloqué (403 au CONNECT) |
 
-**Trois façons de débloquer**, par ordre de préférence :
-1. Autoriser `drive.google.com` / `googleapis.com` dans la politique réseau de
-   l'environnement, puis utiliser un compte de service + `rclone`. C'est la seule
-   option qui rend la série réellement automatisable.
-2. Déposer les rushes directement dans le dépôt Git (attention : 2,3 Go, il faudra
-   Git LFS), ou sur un stockage objet joignable depuis l'environnement.
-3. Rester en manuel : Michael dépose les 3 assets par vidéo dans le dossier projet,
-   comme pour les 4 tutos déjà faits. Fonctionne, mais ne passe pas à l'échelle sur 92.
+Seul l'hôte **web** `drive.google.com` est bloqué. L'**API** Drive, elle, répond
+parfaitement : un appel à
+`https://www.googleapis.com/drive/v3/files/<id>?alt=media` sans authentification
+renvoie un `403 "The request is missing a valid API key"` — c'est-à-dire une vraie
+réponse applicative Google, pas un refus du proxy.
+
+**Conséquence : il suffit d'identifiants.** Avec un compte de service Google (ou un
+client OAuth) ayant accès en lecture au dossier partagé, les ~2,3 Go de rushes se
+téléchargent directement dans le conteneur avec un simple script, sans rclone ni
+accès à l'interface web. C'est quelques dizaines de lignes, pas un chantier.
+
+À éviter en revanche : `download_file_content` du MCP Drive, qui renvoie le fichier
+**en base64 dans le contexte du modèle** — un rush de 30 Mo ≈ 40 Mo de base64, hors
+de portée d'une fenêtre de contexte. Ce canal ne convient qu'aux cartes JPG (~250 Ko).
+
+**Ce qu'il faut fournir** : un JSON de compte de service, partagé au dossier Drive
+en lecture, déposé comme secret d'environnement (jamais dans le dépôt).
+
+### Note sur la clé API ElevenLabs
+
+`api.elevenlabs.io` étant bloqué par la politique réseau, une clé API en clair est
+**inutilisable directement** depuis cet environnement — et de toute façon inutile :
+le MCP ElevenLabs couvre déjà le besoin et son résultat est téléchargeable (testé
+ci-dessus). Aucune clé ne doit être stockée dans ce dépôt.
 
 ---
 
@@ -168,7 +187,8 @@ La série est **faisable sur 91 vidéos**, pas 107. Dans cet ordre :
 
 1. **Clarifier le périmètre** — d'où viennent les 107 ? Les 13 manquantes sont-elles
    un module non partagé, ou des déclinaisons 9x16 ?
-2. **Débloquer l'ingestion des rushes** (§4). Sans ça, rien ne s'automatise.
+2. **Fournir un compte de service Google** en lecture sur le dossier partagé (§4).
+   C'est le seul prérequis d'infrastructure, et il est léger.
 3. **Trancher la question du plan avatar** sur HACCP (§3.1).
 4. **Faire déposer le rush manquant** du module 3 / dossier 2, et vérifier le
    doublon du module 2 (dossiers 14 et 15).
