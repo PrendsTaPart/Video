@@ -78,4 +78,9 @@ orange pulsant sur les 2 clics. Pas de clip avatar dans ce dossier.
 
 ## Statut publication
 
-Vidéo à livrer à Michael pour validation avant publication RapidoCMS/LinkedIn/Lovable.
+**Validée par Michael et publiée le 2026-08-02.** RapidoCMS : vidéo + vignette uploadées
+(`foodeatup-produits-tuto-v1` / `-thumbnail`), draft LinkedIn créé et programmé le
+2026-08-07 16h00. Lovable : tutoriel `creer-ses-produits` ajouté (structure
+`claudePrompts[]` + `chefTipAvatar`, cohérente avec la fiche ingrédients), avec un
+second prompt "photo du code-barres" demandé par Michael, en plus du prompt direct
+`create_product`.
