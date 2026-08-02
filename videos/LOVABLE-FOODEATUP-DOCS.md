@@ -84,6 +84,33 @@ type Tutorial = {
 - Charte complète : `studio-video/assets/brand/Charte_FoodEatUp-v2.pdf` (33 pages, fournie
   par Michael le 2026-08-02, fait foi sur toute charte antérieure).
 
+## Assets de marque supplémentaires (ajoutés le 2026-08-02)
+
+- **Logos IA** (`studio-video/assets/brand/third-party-logos/`) : Claude, Mistral, OpenAI,
+  WhatsApp — pour les blocs "Utiliser avec Claude" (site) et la séquence de fin des vidéos
+  (voir règle dans `FOODEATUP-TUTORIELS-WORKFLOW.md`).
+- **Photo de Michael** (`studio-video/assets/brand/profile/michael-kebail.jpg`) et sa
+  version transformée en chef FoodEatUp par IA
+  (`studio-video/assets/brand/profile/michael-chef-mascot.jpg`, générée via
+  `mcp__RapidoCMS__images_to_image`) — ressemblance bien conservée, tablier FoodEatUp intégré.
+  Utilisable pour une page "à propos"/fondateur sur le site.
+- **11 captures d'écran produit réelles** (`studio-video/assets/brand/product-screenshots/`) :
+  pointage, demande d'absence, ajout d'équipement, checklist hygiène, création de rôle, ajout
+  d'employé, ajout de fournisseur, créer un devis, ajouter un client, dashboard productions,
+  accueil HACCP. Référence pour associer chaque futur tutoriel à son outil MCP FoodEatUp.
+
+## Avatar HeyGen — statut (2026-08-02)
+
+Demandé : générer des vidéos d'avatar 3D HeyGen avec Michael en chef de cuisine. **Impossible
+dans cet environnement pour l'instant** : `HEYGEN_API_KEY` n'est pas présente (pas de `.env` à
+la racine du dépôt dans cette session — une clé y avait été branchée lors d'une session
+précédente, mais elle ne survit pas au changement de conteneur, et `.env` n'est jamais commité,
+à raison). Le connecteur MCP `HyperFrames_by_HeyGen` disponible dans cette session n'est PAS un
+générateur d'avatar humain — c'est un moteur d'animation HTML/CSS, sans rapport. Pour débloquer :
+Michael doit fournir une clé API HeyGen (`app.heygen.com/settings/api`) à déposer en variable
+d'environnement. En attendant, la photo transformée en chef (ci-dessus) peut servir de base
+visuelle si Michael crée lui-même un avatar photo sur HeyGen et partage l'`avatar_id`.
+
 ## Tutoriels publiés
 
 | # | Module | Sous-catégorie | Slug | claudePrompt ? |

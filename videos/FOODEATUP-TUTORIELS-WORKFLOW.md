@@ -86,6 +86,22 @@ Chaque nouveau tutoriel = nouveau dossier `videos/foodeatup-<sujet>-tuto/`.
      poussé).
    - Livrer le fichier vidéo à Michael (SendUserFile).
 
+## Séquence de fin « cas d'utilisation + prompt Claude » (règle ajoutée le 2026-08-02)
+
+**Quand un tutoriel correspond à une action exposée par un outil MCP FoodEatUp**
+(`mcp__FoodEatUp__*` — voir liste dans `videos/LOVABLE-FOODEATUP-DOCS.md`), ajouter en fin
+de vidéo (juste avant la carte de fin/CTA) une courte séquence supplémentaire montrant le
+cas d'utilisation : un encart texte présentant le prompt Claude prêt à copier-coller (avec
+ses `[placeholders]` entre crochets), pour que le spectateur voie qu'il peut aussi piloter
+cette action directement depuis Claude. Si aucun outil MCP ne correspond (beaucoup d'actions
+d'onboarding/UI n'en ont pas), ne pas ajouter cette séquence — pas de prompt inventé.
+Cette règle vaut aussi bien pour la vidéo elle-même que pour la fiche du tutoriel sur le
+site Lovable (voir `LOVABLE-FOODEATUP-DOCS.md`, champ `claudePrompt`) : les deux doivent
+rester cohérents, même texte de prompt des deux côtés.
+
+Assets disponibles pour cette séquence : logos IA dans
+`studio-video/assets/brand/third-party-logos/` (Claude, Mistral, OpenAI, WhatsApp).
+
 ## Pièges déjà rencontrés (ne pas reproduire)
 
 - `zoompan` sur vidéo = gel de l'image. Utiliser `setpts` + crop fixe.
