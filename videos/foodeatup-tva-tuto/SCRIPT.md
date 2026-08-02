@@ -100,7 +100,16 @@ d'étape, encadré orange pulsant sur les 4 clics. Pas de clip avatar dans ce do
 
 ## Statut publication (2026-08-02)
 
-Vidéo livrée à Michael pour validation (règle : plus aucune publication RapidoCMS/
-LinkedIn/Lovable sans validation explicite au préalable). En attente de retour avant
-upload RapidoCMS (remplacement du draft LinkedIn #543, prévu 2026-08-05 07h) et mise à
-jour de la fiche Lovable `parametrer-sa-tva`.
+**Validée par Michael et publiée.** Vidéo + vignette re-uploadées sur RapidoCMS sous le
+même nom (`foodeatup-tva-tuto-v1` / `foodeatup-tva-tuto-thumbnail`) : la ressource S3 est
+écrasée en place (même `file_url` renvoyé), donc le draft LinkedIn #543 et le post déjà
+programmé #432 (2026-08-05 07h00) serviront automatiquement la v3 sans avoir dû les
+modifier. Point d'attention découvert à cette occasion : l'upload sous un nom déjà utilisé
+écrase bien le contenu S3, mais crée quand même une **nouvelle fiche dans la bibliothèque
+RapidoCMS** (doublon visuel) — anciennes fiches (id 801 vidéo / 802 vignette) laissées en
+place, aucun outil MCP `RapidoCMS` exposé ne permet de supprimer un fichier de bibliothèque
+(`remove_asset` est réservé aux assets de marque, testé et rejeté sur ces ids). Sans
+conséquence sur la diffusion, juste un doublon inerte dans la bibliothèque.
+
+Fiche Lovable `parametrer-sa-tva` mise à jour (`durationSeconds` 29 → 38, seul champ
+impacté — `videoUrl`/`thumbnailUrl` restent la même URL S3).

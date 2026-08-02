@@ -137,4 +137,4 @@ l'avatar était conservée) : ici la voix native est explicitely coupée.
 | 2 | Configuration | 2 - monte votre boutique | `monter-sa-boutique` | non — pas d'outil MCP (fiche boutique) |
 | 3 | Configuration | 3 - choisit votre abonnement | `choisir-son-abonnement` | non — pas d'outil MCP (paiement Stripe) |
 | 4 | Configuration | 4 - profil entreprise | `configurer-son-profil-entreprise` | non — pas d'outil MCP (fiche identité entreprise) |
-| 5 | Configuration | 5 - vos taux de TVA | `parametrer-sa-tva` | **oui** — `create_tva`. ⚠️ vidéo v2 en attente de validation Michael (2026-08-02, nouveau script + séquence Claude animée 3 temps) — ne pas publier/mettre à jour la fiche Lovable avant retour |
+| 5 | Configuration | 5 - vos taux de TVA | `parametrer-sa-tva` | **oui** — `create_tva`. v3 validée par Michael le 2026-08-02 (script VO + séquence Claude animée 3 temps, module partagé) — publiée : RapidoCMS mis à jour (même URL S3, `durationSeconds` 29→38 sur Lovable) |
