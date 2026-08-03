@@ -75,7 +75,57 @@ type Tutorial = {
 };
 ```
 
-## Les 5 modules (catégories du site = catégories du Drive)
+## Architecture du site — 11 catégories / 14 modules (2026-08-03)
+
+**Remplace la section "5 modules" ci-dessous, conservée en historique.** Suite au
+catalogue des 157 tutoriels transmis par Michael (voir `CATALOGUE-157-TUTORIELS.md`),
+un prompt Lovable unique a fait évoluer `src/data/tutorials.ts` avec deux nouveaux
+types `Category` et `Module` (un module référence sa catégorie via `categorySlug`,
+une catégorie porte juste `slug`/`name`/`color`). Commit `12fb06d2510edcdda4116f886a3d259f638559a8`.
+
+| categorySlug | Nom catégorie | Couleur | Modules (slug — nom — vidéos attendues) |
+|---|---|---|---|
+| `configuration-boutique` | Configuration Boutique | `#0D6EFD` | `configuration` — Configuration Boutique — 14 |
+| `equipe-planning-rh` | Équipe, Planning & RH | `#7C3AED` | `equipe-planning` — Équipe, Planning & RH — 20 |
+| `site-web-vitrine` | Site Web & Vitrine | `#2563EB` | `site-web-vitrine` — Site Web & Vitrine — 8 |
+| `caisse-pos` | Caisse POS & Matériel | `#EA580C` | `caisse-pos` — Caisse POS & Matériel — 7 |
+| `hubrise-livraisons` | HubRise & Livraisons | `#06B6D4` | `hubrise-livraisons` — HubRise & Livraisons — 4 |
+| `caroline-reservation` | Agent IA Caroline & Salle | `#F59E0B` | `caroline-ia` — Agent IA Caroline — 6 ; `reservation-salle` — Réservations & Plan de salle — 5 |
+| `service-kds` | Flux de Service & KDS | `#059669` | `service-commande` — Service Multi-Canal — 3 ; `kds-cuisine` — Écran Cuisine (KDS) — 3 |
+| `marketing-fidelite` | Marketing, Fidélité & Iris | `#EC4899` | `marketing-fidelite` — Marketing, Fidélité & Iris — 24 |
+| `stockvision` | StockVision AI | `#10B981` | `stockvision-ai` — StockVision AI — 20 |
+| `hygiene-haccp` | Hygiène & HACCP | `#DC2626` | `haccp` — Hygiène & HACCP — 30 |
+| `comptabilite-predibot` | Comptabilité & PrediBot | `#475569` | `comptabilite` — Comptabilité & Achats — 10 ; `predibot` — PrediBot (Agent IA Directeur) — 3 |
+
+Les 5 modules déjà en production (`configuration`, `equipe-planning`, `comptabilite`,
+`haccp`, `stockvision-ai`) ont gardé leur `slug` exact et tous leurs tutoriels
+existants — vérifié par lecture complète de `tutorials.ts` au commit ci-dessus, aucune
+entrée des 15 tutoriels déjà publiés n'a été modifiée. 9 nouveaux modules vides ont été
+ajoutés (`site-web-vitrine`, `caisse-pos`, `hubrise-livraisons`, `caroline-ia`,
+`reservation-salle`, `service-commande`, `kds-cuisine`, `marketing-fidelite`,
+`predibot`), prêts à recevoir leurs tutoriels au fil de la production — plus besoin
+de toucher à l'architecture pour les prochaines vidéos, juste ajouter l'objet
+`Tutorial` avec le bon `moduleSlug`.
+
+Autres changements livrés dans le même prompt :
+- `src/data/module-icons.ts` : icônes Lucide ajoutées pour les 9 nouveaux modules
+  (Globe, CreditCard, Truck, Mic, CalendarCheck, UtensilsCrossed, MonitorSmartphone,
+  Megaphone, Brain), fallback `BookOpen` conservé.
+- `src/routes/index.tsx` : section modules de l'accueil regroupée par catégorie
+  (en-tête coloré + puce + bordure gauche), cartes module teintées à la couleur de
+  leur catégorie.
+- `src/routes/module.$slug.tsx` : fil d'Ariane Accueil > Catégorie > Module, en-tête
+  coloré à la catégorie, SEO (`head()` : title/description mentionnant la catégorie
+  et le nombre de tutoriels, og:*, canonical).
+- `src/routes/tutoriel.$slug.tsx` : SEO complet par tutoriel — title, meta description
+  (`whatItsFor` tronqué à 158 car.), og:title/description/type(`video.other`)/url,
+  twitter:card, `<link rel="canonical">`, JSON-LD `VideoObject` (name, description,
+  thumbnailUrl, contentUrl, uploadDate constant `2026-01-01`, duration `PT{n}S`).
+
+Vérifié par l'agent Lovable via `tsgo --noEmit` (aucune erreur de type) et captures
+Playwright (accueil, une page module, une page tutoriel) avant de livrer le commit.
+
+### Historique — 5 modules d'origine (avant le 2026-08-03)
 
 | moduleSlug | Nom | Vidéos attendues |
 |---|---|---:|
@@ -159,3 +209,15 @@ l'avatar était conservée) : ici la voix native est explicitely coupée.
 | 13 | Équipe & Planning | 6 - Affichages et impression du planning par employé ou par poste | `imprimer-son-planning-par-poste` | **oui, 3 prompts** — `create_shift` (direct, l'action montrée à l'écran) + 2 prompts demandés par Michael sans équivalent visuel dans le rush : « ajuster selon l'affluence » (`get_daily_brief`) et « anticiper les commandes » (`list_top_productions`), documentés uniquement en `claudePrompts[]`/`chefTip` sur Lovable, pas dans le script vidéo. Rush dense (83 s) resserré sur le fil du titre — modif de shift et « Tâches de la semaine » laissés de côté. Sans avatar HeyGen. Validée et publiée sur Lovable le 2026-08-03 — RapidoCMS/LinkedIn en attente (URLs GitHub raw temporaires). Première vidéo du module Équipe & Planning produite dans cette session — **une autre session travaille en parallèle sur ce même module** (`ajouter-ses-employes`, `assigner-les-taches`, `etablir-son-contrat-et-son-salaire` déjà présents sur d'autres branches) : vérifier les doublons de sujet avant de choisir la prochaine sous-catégorie |
 | 14 | *(transversal, hors module produit)* | Connecter son MCP à Claude, Mistral, ChatGPT | `brancher-son-mcp-sur-claude` | pas de `claudePrompt` — cette vidéo EST déjà le mode d'emploi "utiliser avec Claude", un exemple de prompt n'aurait pas de sens. Contenu demandé explicitement par Michael au-delà de la fiche standard : lien MCP (`https://foodeatup.com/api/mcp`, confirmé à l'écran), explication de ce à quoi sert le MCP, et redirections vers Claude/Mistral/ChatGPT (domaines racine `claude.ai`/`chat.mistral.ai`/`chatgpt.com` — pas de chemin de réglages profond deviné, seul Claude est montré dans le rush). **Nouveau composant homepage `McpHighlight`** (`src/components/mcp-highlight.tsx`) ajouté sur l'accueil juste après la section vidéo tutoriel, avec logos + liens vers les 3 assistants + CTA vers la fiche complète — implémenté par l'agent Lovable sur brief de contenu, rattaché au module `configuration`. Validée et publiée sur Lovable le 2026-08-03 — RapidoCMS/LinkedIn en attente |
 | 15 | Équipe & Planning | 8 - Configuration et génération du QR code de pointage | `generer-qr-code-pointage` | non — configuration de sécurité anti-fraude (niveau de sécurité, géolocalisation, PIN/badge), aucun outil MCP FoodEatUp ne la couvre (volontairement : pas le genre d'action à déléguer à un agent). `howItWorks` (8 étapes) et `chefTip` particulièrement détaillés à la demande explicite de Michael, module jugé plus complexe que les autres (rayon de géoloc, tolérance hors-zone, différence QR/PIN/badge NFC, désactiver vs supprimer un QR). Sans avatar HeyGen, sans séquence Claude. Validée et publiée sur Lovable le 2026-08-03 — RapidoCMS/LinkedIn en attente (URLs GitHub raw temporaires) |
+| 16 | Équipe & Planning | 12 - Historique des pointages | `retrouver-les-pointages-historique` | **oui, 3 prompts** — tous basés sur `list_attendances` (dashboard période, détection retards/absences, comparaison au planning prévu), demandés explicitement par Michael en cas d'usage. Sans avatar HeyGen. Rush très court (18,64 s), vidéo proportionnellement plus courte (33,36 s). Validée et publiée sur Lovable le 2026-08-03 — RapidoCMS/LinkedIn en attente (URLs GitHub raw temporaires) |
+
+**2026-08-03 — Chantier d'architecture site (11 catégories / 14 modules)** : suite au
+catalogue des 157 tutoriels cibles transmis par Michael, un unique prompt Lovable a fait
+évoluer toute l'architecture du site (voir section "Architecture du site" plus haut) —
+`tutorials.ts` (types `Category`/`Module` + 11 catégories + 14 modules), `module-icons.ts`,
+`index.tsx` (accueil regroupé par catégorie), `module.$slug.tsx` (fil d'Ariane + SEO),
+`tutoriel.$slug.tsx` (SEO complet + JSON-LD `VideoObject`). Commit
+`12fb06d2510edcdda4116f886a3d259f638559a8`, vérifié par lecture complète des 5 fichiers
+modifiés : les 16 tutoriels déjà publiés ci-dessus sont intacts, aucune régression de
+contenu. Question toujours en attente de réponse de Michael : re-rendre `ouvrir-sa-vitrine-en-ligne`
+(#11) pour corriger le bug des bandeaux d'étape invisibles ?
