@@ -187,6 +187,24 @@ réutilisables telles quelles pour générer des visuels statiques (pas seulemen
 - Le dépôt n'a pas de branche `main` distincte : la branche désignée EST la
   branche par défaut. Pousser directement dessus, pas de PR à ouvrir contre
   elle-même.
+- **`drawbox` ne sait PAS s'animer : sa variable `t` est l'épaisseur du trait,
+  pas le timestamp** (contrairement à `drawtext` et `overlay`, où `t` est bien
+  le temps). Découvert le 2026-08-03 sur `foodeatup-tracabilite-tuto`. Le
+  bandeau d'étape historique (`banner()`) glissait son `x` avec une expression
+  en `t` : avec `t=fill`, `t` valait une constante énorme, l'expression se
+  figeait hors champ et **les deux `drawbox` (barre orange + boîte bleue)
+  n'étaient jamais dessinés**. Seul le `drawtext` du libellé s'affichait — du
+  texte blanc sur une UI claire, quasi illisible. Vérifiable sur les vidéos
+  déjà publiées de la série (`foodeatup-produits-tuto` t≈4 s) : le bandeau y
+  est un fantôme blanc. **Correctif à reprendre pour toute nouvelle vidéo** :
+  rendre le bandeau en PNG (PIL, largeur calculée sur le texte) et le faire
+  glisser avec `overlay=x='<expr en t>'`, dont le `x` est réévalué à chaque
+  frame — voir `banner_png()` / `banner_overlay()` dans
+  `videos/foodeatup-tracabilite-tuto/build.py`. Même piège pour l'encadré de
+  zoom-punch : la « pulsation » `sin(2*PI*t*2.2)` n'a jamais pulsé, elle se
+  résolvait en décalage constant (le rendu restait correct, c'est pourquoi ça
+  n'avait pas été repéré) — l'écrire en statique plutôt que de laisser croire
+  à une animation.
 - **Apostrophe dans un texte de bandeau (`banner()`) = même bug que le `%`
   dans les prompts Claude.** Le texte est injecté entre guillemets simples
   dans l'argument `-vf` (`text='{text}'`) ; une apostrophe dedans (ex. "seuil
