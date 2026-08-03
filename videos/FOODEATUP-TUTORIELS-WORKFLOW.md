@@ -196,3 +196,27 @@ réutilisables telles quelles pour générer des visuels statiques (pas seulemen
   Corrigé en reformulant le bandeau sans apostrophe ("seuil minimum" plutôt
   que "seuil d'alerte") — plus simple que d'échapper le caractère. Vérifier
   chaque texte de bandeau avant build, pas seulement les prompts Claude.
+
+- **`drawbox` n'évalue pas `t` dans cet ffmpeg (6.1.1) — le bandeau d'étape ne
+  s'affichait pas du tout.** Découvert le 2026-08-03 sur
+  `foodeatup-mouvement-stock-tuto`. Un `drawbox` dont le `x` dépend de `t` est
+  **silencieusement ignoré** : pas d'erreur, pas de boîte. `drawtext`, lui,
+  évalue bien `t` à chaque frame. Le `banner()` historique (2 `drawbox` pour le
+  filet orange et la plaque bleue + 1 `drawtext` pour le libellé) ne rendait
+  donc **que le texte blanc** glissant sur la capture — vérifié aussi sur le
+  MP4 livré de `foodeatup-produits-tuto` : même plaque manquante. Sur une UI
+  claire, c'est du blanc sur quasi-blanc, illisible.
+  `overlay` est une impasse (même comportement sur son `x`, et il faut boucler
+  l'entrée image sinon il ne dure qu'une frame). **Correctif retenu** : le
+  bandeau est fait de deux `drawtext` partageant la même expression de
+  glissement — la plaque est la `box` de `drawtext` (`boxborderw=16` autour
+  d'une ligne de 31 px = exactement la plaque de 62 px de la charte), et le
+  filet orange est cette même plaque redessinée 10 px plus à gauche en orange,
+  que la plaque bleue recouvre sauf ses 10 px de gauche. Code de référence :
+  `videos/foodeatup-mouvement-stock-tuto/build.py`, fonction `banner()`.
+  Les 10 vidéos déjà publiées gardent l'ancien rendu — à re-livrer si Michael
+  veut rattraper la série.
+- **Ne pas supposer un bouton immobile d'un bout à l'autre du rush.** Sur
+  `foodeatup-mouvement-stock-tuto`, la page défile de ~158 px dès que le
+  tableau se remplit : « Ajouter un mouvement » passe de y=344 à y=186. Mesurer
+  les coordonnées sur la frame du clic concerné, pas sur une frame voisine.
