@@ -91,7 +91,17 @@ clip avatar dans ce dossier.
 
 ## Statut publication
 
-**Script validé par Michael (2026-08-03). Montage terminé, vignette YouTube générée
-depuis `assets/intro.jpg` (aucun redesign, simple recadrage 1280x720).** Vidéo livrée
-à Michael pour validation avant toute publication RapidoCMS/LinkedIn/Lovable (règle
-STOP obligatoire, § Étape 6 du workflow).
+**Script validé par Michael (2026-08-03), vidéo livrée puis validation reçue le
+même jour ("ok publi sur lovable").**
+
+- **Lovable : publié.** Fiche `deduire-ses-besoins-de-production` ajoutée à
+  `src/data/tutorials.ts` du projet FoodEatUp Academy (workspace
+  Contact.prendstapart, projet `55ff35b7-c442-42c4-950c-8c7fd420c645`),
+  premier tutoriel du module StockVision AI — `howItWorks`/`whatItsFor`/
+  `chefTip`/`chefTipAvatar`/`claudePrompt` cohérents avec le reste de la
+  série. `videoUrl`/`thumbnailUrl` pointent vers les `raw.githubusercontent.com`
+  de ce dépôt (branche `claude/foodeatup-tutorial-video-buhrdu`). Commit Lovable
+  `75d4397`.
+- **RapidoCMS / LinkedIn : non demandé.** Michael a validé explicitement
+  "Lovable" — pas encore d'upload RapidoCMS ni de draft LinkedIn programmé.
+  À faire sur demande explicite.
