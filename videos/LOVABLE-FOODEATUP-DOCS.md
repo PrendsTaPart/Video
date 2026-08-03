@@ -154,3 +154,11 @@ l'avatar était conservée) : ici la voix native est explicitely coupée.
 | 8 | Configuration | 8 - saisir ses ingrédients | `saisir-ses-ingredients` | **oui, 2 prompts** — `create_ingredient` (direct) + prompt "facture fournisseur (image)". Première vidéo à utiliser `claudePrompts[]` (nouveau champ, plusieurs exemples) et `chefTipAvatar` (photo réelle de Michael). Publiée le 2026-08-02 (RapidoCMS + LinkedIn 2026-08-07 07h + Lovable) |
 | 9 | Configuration | 9 - régler ses unités | `regler-ses-unites` | non — `list_units` seul existe (lecture seule), pas de `create_unit`. Publiée le 2026-08-02 (RapidoCMS + LinkedIn 2026-08-06 16h + Lovable) |
 | 10 | Configuration | 9 - créer ses produits | `creer-ses-produits` | **oui, 2 prompts** — `create_product` (direct) + prompt "photo du code-barres". Rush sans UI d'affiliation recette/ingrédient (et `create_product` n'a pas ce champ non plus) : logique métier (produit avec/sans recette → ce que la liste de courses ajoute) documentée en `chefTip` sur explication de Michael, pas inventée à l'écran. Publiée le 2026-08-02 (RapidoCMS + LinkedIn 2026-08-07 16h + Lovable) |
+| — | StockVision AI | Mouvements de stock : détails et suppression | `lire-ses-mouvements-de-stock` | **oui, 2 prompts** — `list_stocks`/`list_low_stocks` (faire le point) + `adjust_stock` (corriger une ligne, l'outil écrit lui-même un mouvement tracé). Aucun outil MCP ne supprime un mouvement : pas de prompt inventé pour ce geste. Publiée le 2026-08-03 (RapidoCMS + Lovable, commit `a485c03`). Pas de planification LinkedIn — non demandée. |
+
+> ⚠️ **Ce tableau a pris du retard sur le site.** `src/data/tutorials.ts` contient
+> aujourd'hui bien plus d'entrées que les 10 listées ci-dessus (modules `equipe-planning`,
+> `haccp`, `comptabilite`, `marketing-fidelite`, `stockvision-ai`…), et le fichier a gagné
+> des modules qui ne figurent pas dans la liste des 5 plus haut. La source de vérité est
+> le fichier Lovable lui-même — lire `src/data/tutorials.ts` avant de supposer qu'un
+> tutoriel n'existe pas encore, plutôt que de se fier à ce tableau seul.
