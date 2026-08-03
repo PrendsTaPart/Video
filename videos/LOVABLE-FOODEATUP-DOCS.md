@@ -1,9 +1,14 @@
 # FoodEatUp Academy — site de documentation Lovable (mémoire du projet)
 
 **À relire à chaque nouvelle vidéo produite.** Ce fichier est la source de vérité du site
-Lovable qui documente les 91 tutoriels FoodEatUp. Chaque vidéo livrée doit se terminer par
-l'ajout de son entrée ici (tableau "Tutoriels publiés" en bas) et l'envoi du prompt Lovable
-correspondant au projet.
+Lovable qui documente les tutoriels FoodEatUp — cible **157 vidéos / 14 modules / 11
+catégories**, voir `videos/CATALOGUE-157-TUTORIELS.md` pour le détail complet (mis à jour le
+2026-08-03, remplace l'ancienne cible à 91-94 vidéos / 5 modules). Chaque vidéo livrée doit
+se terminer par l'ajout de son entrée ici (tableau "Tutoriels publiés" en bas) et l'envoi du
+prompt Lovable correspondant au projet. **Avant de choisir un sujet, vérifier `src/data/
+tutorials.ts` en direct sur Lovable** (pas seulement ce tableau, souvent en retard) : plusieurs
+branches produisent en parallèle sans se voir, voir la note de fragmentation dans le tableau
+plus bas.
 
 ## Identifiants du projet
 
@@ -75,15 +80,30 @@ type Tutorial = {
 };
 ```
 
-## Les 5 modules (catégories du site = catégories du Drive)
+## Les 14 modules / 11 catégories (mis à jour 2026-08-03 — remplace l'ancienne liste à 5 modules)
 
-| moduleSlug | Nom | Vidéos attendues |
-|---|---|---:|
-| `configuration` | Configuration | 14 |
-| `equipe-planning` | Équipe & Planning | 20 |
-| `comptabilite` | Comptabilité | 10 |
-| `haccp` | HACCP | 30 |
-| `stockvision-ai` | StockVision AI | 20 |
+Le site a été réorganisé (nouveaux types `Category` + `Module.categorySlug` dans
+`tutorials.ts`) pour coller au catalogue cible de 157 vidéos. Détail complet, intitulés des
+157 vignettes et code couleur : `videos/CATALOGUE-157-TUTORIELS.md`. Les 5 modules déjà
+existants gardent leur `moduleSlug` d'origine pour ne pas casser les tutoriels publiés.
+
+| moduleSlug | Nom | Catégorie | Vidéos attendues |
+|---|---|---|---:|
+| `configuration` | Configuration Boutique | Configuration Boutique | 14 |
+| `equipe-planning` | Équipe, Planning & RH | Équipe, Planning & RH | 20 |
+| `site-web-vitrine` | Site Web & Vitrine | Site Web & Vitrine | 8 |
+| `caisse-pos` | Caisse POS & Matériel | Caisse POS & Matériel | 7 |
+| `hubrise-livraisons` | HubRise & Livraisons | HubRise & Livraisons | 4 |
+| `caroline-ia` | Agent IA Caroline | Agent IA Caroline & Salle | 6 |
+| `reservation-salle` | Réservations & Plan de salle | Agent IA Caroline & Salle | 5 |
+| `service-commande` | Service Multi-Canal | Flux de Service & KDS | 3 |
+| `kds-cuisine` | Écran Cuisine (KDS) | Flux de Service & KDS | 3 |
+| `marketing-fidelite` | Marketing, Fidélité & Iris | Marketing, Fidélité & Iris | 24 |
+| `stockvision-ai` | StockVision AI | StockVision AI | 20 |
+| `haccp` | Hygiène & HACCP | Hygiène & HACCP | 30 |
+| `comptabilite` | Comptabilité & Achats | Comptabilité & PrediBot | 10 |
+| `predibot` | PrediBot (Agent IA Directeur) | Comptabilité & PrediBot | 3 |
+| | | **Total** | **157** |
 
 ## Charte graphique appliquée au site
 
