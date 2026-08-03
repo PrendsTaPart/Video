@@ -82,7 +82,10 @@ ce dossier.
 ## Statut publication
 
 Montage terminé et checklist de compatibilité passée (H.264 High/yuv420p, AAC 48 kHz
-stéréo, faststart, peak -7,2 dBFS, 0 erreur de décodage). **En attente de validation
-avant publication** (règle du 2026-08-02, `videos/LOVABLE-FOODEATUP-DOCS.md`) : pas
-d'upload RapidoCMS/LinkedIn (RapidoCMS non authentifié dans cette session de toute
-façon), pas d'envoi du prompt Lovable tant que la vidéo n'a pas été revue.
+stéréo, faststart, peak -7,2 dBFS, 0 erreur de décodage). Validée le 2026-08-03 et
+publiée sur Lovable (`voir-son-planning-cote-employe`, module `equipe-planning`,
+17e entrée de `videos/LOVABLE-FOODEATUP-DOCS.md`), avec 3 `claudePrompts` (semaine
+en cours, semaine prochaine, comparaison planning prévu / heures pointées via
+`list_plannings` + `list_attendances`) et un `chefTip` détaillant ces 3 cas
+d'usage, à la demande explicite du demandeur. Pas d'upload RapidoCMS/LinkedIn
+(RapidoCMS non authentifié dans cette session).
