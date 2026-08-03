@@ -2,6 +2,10 @@
 # Generated / large binaries kept local (not versioned)
 **/__pycache__/
 *.pyc
+# Per-tutorial scratch: intermediate segments, extracted frames, QA crops.
+# Regenerated from scratch by each project's build.py -- never versioned.
+# FOODEATUP-TUTORIELS-WORKFLOW.md already assumed this rule existed.
+videos/*/work/
 videos/stories-foodeatup-30j/assets/avatar/mika.mp4
 videos/stories-foodeatup-30j/preview/
 # Working-tree copies of other feature branches' projects (owned by their own branches)
