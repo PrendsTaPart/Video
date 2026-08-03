@@ -58,11 +58,18 @@ def punch_highlight(btn, btn_wh, crop_box):
 
 def banner(text, seg_dur):
     if not text: return None
+    # NOTE (found while building this video): drawbox's expression evaluator
+    # in this ffmpeg build (6.1.1) silently fails -- box never draws, no
+    # error -- when the x expression combines a leading constant offset (the
+    # "-640+" that parks the banner off-screen before its slide-in) with TWO
+    # subtracted min(1,max(0,...)) clamps (one for slide-in, one for
+    # slide-out). Each half works alone; combined, it doesn't. Confirmed this
+    # also silently breaks the already-shipped vitrine-tuto banners. Fix:
+    # only clamp the slide-IN (one min/max term); let the crossfade into the
+    # next segment hide the exit instead of animating a slide-out.
     tin, sl = 0.15, 0.32
-    tout = max(tin + sl + 0.3, seg_dur - 0.55)
     a = f"min(1\\,max(0\\,(t-{tin})/{sl}))"
-    b = f"min(1\\,max(0\\,(t-{tout})/{sl}))"
-    x = f"-640+700*({a})-700*({b})"
+    x = f"-640+700*({a})"
     y = H - 108
     return (f"drawbox=x='{x}':y={y}:w=10:h=62:color={ORANGE}@0.98:t=fill,"
             f"drawbox=x='({x})+10':y={y}:w=560:h=62:color={BLUE}@0.90:t=fill,"
@@ -74,12 +81,12 @@ BTN_SAVE = (516, 680); SZ_SAVE = (765, 50)  # "Enregistrer les liens"
 
 # (name, src_start, src_end, target_out_duration, button, btn_size, caption)
 segs = [
-    ("A",  0.00,  7.30, 4.00, None,     None,    "QR code a telecharger"),
-    ("B",  7.30, 11.80, 3.60, None,     None,    "Flyers a imprimer"),
-    ("C", 11.80, 17.30, 3.20, None,     None,    "Cartes de visite"),
-    ("D1",17.30, 48.55, 3.40, None,     None,    "Reseaux sociaux"),
+    ("A",  0.00,  7.30, 5.70, None,     None,    "QR code a telecharger"),
+    ("B",  7.30, 11.80, 4.95, None,     None,    "Flyers a imprimer"),
+    ("C", 11.80, 17.30, 4.00, None,     None,    "Cartes de visite"),
+    ("D1",17.30, 48.55, 4.40, None,     None,    "Reseaux sociaux"),
     ("D2",48.55, 49.35, 0.80, BTN_SAVE, SZ_SAVE, None),
-    ("E", 49.35, 52.00, 2.20, None,     None,    None),
+    ("E", 49.35, 55.40, 6.90, None,     None,    None),
 ]
 INTRO_D, OUTRO_D = 2.50, 6.20
 
