@@ -77,7 +77,15 @@ formulaire dans les tutos précédents. Pas de clip avatar dans ce dossier.
 ## Statut publication
 
 Montage terminé et checklist de compatibilité passée (H.264 High/yuv420p, AAC 48 kHz
-stéréo, faststart, peak -6,7 dBFS, 0 erreur de décodage). **En attente de validation
-avant publication** (règle du 2026-08-02, `videos/LOVABLE-FOODEATUP-DOCS.md`) : pas
-d'upload RapidoCMS/LinkedIn (RapidoCMS non authentifié dans cette session de toute
-façon), pas d'envoi du prompt Lovable tant que la vidéo n'a pas été revue.
+stéréo, faststart, peak -6,7 dBFS, 0 erreur de décodage). Validée le 2026-08-03 et
+publiée sur Lovable (`se-connecter-cote-employe`, module `equipe-planning`, 16e
+entrée de `videos/LOVABLE-FOODEATUP-DOCS.md`), avec un `chefTip` listant 3 cas
+d'usage (scan QR direct, copier-coller manuel de l'URL, Pointer vs Mon espace).
+Pas de `claudePrompt` (aucun outil MCP ne couvre la connexion employé). Pas
+d'upload RapidoCMS/LinkedIn (RapidoCMS non authentifié dans cette session).
+
+⚠️ Sujet proche de `installer-la-borne-daccueil` (ajoutée en parallèle par une
+autre session sur `foodeatup-tutorial-video-vn7udf`) — même flux profil/PIN/
+Pointer-Mon espace documenté deux fois sous des angles différents (borne partagée
+vs connexion depuis l'appareil personnel via URL/QR). Signalé dans le tableau de
+suivi pour arbitrage éventuel si les deux fiches sont jugées redondantes.
