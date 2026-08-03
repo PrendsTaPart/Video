@@ -78,13 +78,98 @@ Chaque nouveau tutoriel = nouveau dossier `videos/foodeatup-<sujet>-tuto/`.
    uniquement un `scale`+`crop` neutre si le ratio source diffère légèrement.
    Livrable : `out/thumbnail-youtube.jpg`.
 
-6. **Publication sur le CMS**
-   - Commit + push du dossier projet (`assets/`, `vo/`, `build.py`, `out/`) sur
-     la branche désignée (`work/` reste dans `.gitignore`, c'est du scratch).
+6. **Livraison pour validation — STOP obligatoire (règle ajoutée le 2026-08-02)**
+   Une fois le montage terminé et la checklist de compatibilité passée (voir plus
+   bas), commit + push du dossier projet (`assets/`, `vo/`, `build.py`, `out/`) sur
+   la branche désignée (`work/` reste dans `.gitignore`, c'est du scratch), puis
+   livrer le fichier vidéo à Michael (`SendUserFile`). **Ne pas publier tant que
+   la vidéo n'est pas validée** : ni upload/schedule RapidoCMS+LinkedIn, ni mise à
+   jour du site Lovable. Attendre un retour explicite (OK, ou demande de
+   correction — dans ce cas corriger puis relivrer avant de reproposer).
+
+7. **Publication (après validation confirmée)**
    - Upload de la vidéo finale ET de la vignette sur RapidoCMS
      (`mcp__RapidoCMS__upload_file_tool`, en pointant l'URL GitHub raw du fichier
      poussé).
-   - Livrer le fichier vidéo à Michael (SendUserFile).
+   - `create_draft_tool` + `schedule_draft_tool` sur le compte LinkedIn FoodEatUp
+     (2 vidéos/jour, 7h et 16h, prochain créneau libre de la rotation).
+   - Ajout du tutoriel sur le site Lovable (`LOVABLE-FOODEATUP-DOCS.md`) + entrée
+     dans le tableau "Tutoriels publiés" du même fichier.
+
+## Séquence de fin « cas d'utilisation + prompt Claude » (règle ajoutée le 2026-08-02,
+## design revu le 2026-08-02 — animation chatbot en 3 temps)
+
+**Quand un tutoriel correspond à une action exposée par un outil MCP FoodEatUp**
+(`mcp__FoodEatUp__*` — voir liste dans `videos/LOVABLE-FOODEATUP-DOCS.md`), ajouter en fin
+de vidéo (juste avant la carte de fin/CTA) une séquence animée en 3 temps montrant le cas
+d'utilisation (template validé sur `foodeatup-tva-tuto`, à réutiliser tel quel) :
+
+1. **Reveal** — fond crème FoodEatUp (`#FCF9E6`, **pas de boîte noire**), titre "Utilisez
+   cette fonctionnalité avec Claude", le prompt affiché en gros dans une carte blanche à
+   filet bleu + liseré corail (police Liberation Sans Bold, pas de monospace), avec ses
+   `[placeholders]` entre crochets.
+2. **Copié** — même carte, filet vert + badge "check" dessiné (pas un glyphe emoji — non
+   fiable selon la police), légende "Copié dans le presse-papiers !".
+3. **Chatbot Claude** — mockup d'interface Claude : logo réel
+   (`studio-video/assets/brand/third-party-logos/claude-logo.png`) + "claude.ai" dans une
+   barre du haut, fond `#F0EEE6` (le cream propre à l'UI Claude, pas celui de FoodEatUp),
+   bulle utilisateur alignée à droite en corail `#D97757` (couleur de marque Claude, extraite
+   du logo lui-même) contenant le prompt collé, bulle assistant à gauche (avatar rond corail
+   + astérisque dessiné) qui commence sa réponse — pour montrer l'action prise en charge.
+
+**Implémentation — module partagé, ne pas dupliquer le code d'une vidéo à l'autre.** Tout
+vit dans `videos/_shared/claude_prompt_sequence.py` (`render_claude_stage1_png` /
+`_stage2_png` / `_stage3_png`, + `CLAUDE_STAGE_D` par défaut). Chaque projet l'importe
+(`sys.path.insert(0, ".../_shared")`) et ne fournit que ce qui change : le texte du prompt
+(`CLAUDE_PROMPT`) et, optionnellement, la réplique de l'assistant (`response=...`, sinon
+texte générique par défaut). **Même univers visuel sur toute la série — gagner du temps
+en ne touchant jamais au rendu, seulement au contenu.** Étapes pour un nouveau tutoriel :
+
+```python
+import sys; sys.path.insert(0, "/home/user/Video/videos/_shared")
+from claude_prompt_sequence import render_claude_stage1_png, render_claude_stage2_png, render_claude_stage3_png
+CLAUDE_PROMPT = "..."  # propre à ce tutoriel, avec ses [placeholders]
+# puis dans build_silent(), comme pour tva : rendre les 3 PNG, les passer
+# dans card(..., fade=False), enchaîner en "slideleft".
+```
+
+Chaque étage est rendu en PNG via PIL (contrôle total du texte/formes/logo, évite le bug
+`drawtext`/`%` — voir plus bas) puis passé dans `card()` **avec `fade=False`** (les cartes
+intro/outro gardent `fade=True` car elles sont en tout début/fin de vidéo ; un stage court
+au milieu du montage qui a son propre fondu-au-noir ET un xfade des deux côtés se retrouve
+à moitié dans le noir tout le temps qu'il est censé être visible — bug rencontré et corrigé
+sur `foodeatup-tva-tuto`). Transitions `slideleft` entre les 3 étages (scènes distinctes),
+`fade` partout ailleurs. Si aucun outil MCP ne correspond, ne pas ajouter cette séquence —
+pas de prompt inventé. Cette règle vaut aussi bien pour la vidéo que pour la fiche du
+tutoriel sur le site Lovable (voir `LOVABLE-FOODEATUP-DOCS.md`, champ `claudePrompt`) :
+rester cohérent, même texte de prompt des deux côtés.
+
+**Prévoir 2 lignes VO dédiées à la séquence**, pas une seule : une qui explique le prompt
+(ancrée sur l'étage 1 "reveal", éventuellement audible jusqu'à l'étage 2 "copié"), une qui
+présente l'envoi dans Claude et le résultat (ancrée sur l'étage 3 "chatbot mockup"). Une
+ligne unique qui doit couvrir les 3 étages déborde presque toujours sur le mauvais étage
+(bug rencontré sur `foodeatup-tva-tuto` v2 — corrigé en v3, voir son `SCRIPT.md`).
+**Mesurer chaque ligne VO avant de fixer les durées de segment/étage** (règle déjà en
+place, voir plus bas) : sur `tva`, ignorer cette règle sur l'ensemble de la chaîne (pas
+seulement la ligne suivante) avait fait dériver la narration de 4-6 s en fin de vidéo,
+au point qu'une ligne décrivant un clic se retrouvait à jouer sur un tout autre segment.
+Toujours vérifier après coup que chaque offset réel (`offsets:` imprimé par `build.py`)
+correspond à son ancrage `S[...]`, pas seulement que le total tient dans la durée.
+
+**N6 et N8 sont réutilisables tels quels d'une vidéo à l'autre (copier le .mp3), N7 ne
+l'est jamais.** N6 ("vous pouvez aussi le faire depuis Claude...") et N8 (CTA de fin) sont
+assez génériques pour s'appliquer à n'importe quel tutoriel — les copier fait gagner un
+aller-retour ElevenLabs. N7 nomme l'objet qui vient d'être créé ("...votre X est créé en
+quelques secondes") : il est donc *toujours* spécifique au tutoriel. Bug rencontré sur
+`foodeatup-fournisseurs-tuto` : N7 copié par réflexe depuis `foodeatup-tva-tuto` disait
+encore "...votre taux de TVA est créé...", contenu faux pour cette vidéo — repéré avant
+livraison en relisant le SCRIPT.md, corrigé par une régénération ciblée. Toujours relire
+le texte de chaque ligne VO copiée avant de l'utiliser, pas seulement sa durée.
+
+Ce même gabarit est aussi la base demandée par Michael pour un usage possible hors vidéo
+(pages produit du site web) — les 3 fonctions de rendu du module sont autonomes et
+réutilisables telles quelles pour générer des visuels statiques (pas seulement intégrées
+à un montage).
 
 ## Pièges déjà rencontrés (ne pas reproduire)
 
@@ -102,3 +187,12 @@ Chaque nouveau tutoriel = nouveau dossier `videos/foodeatup-<sujet>-tuto/`.
 - Le dépôt n'a pas de branche `main` distincte : la branche désignée EST la
   branche par défaut. Pousser directement dessus, pas de PR à ouvrir contre
   elle-même.
+- **Apostrophe dans un texte de bandeau (`banner()`) = même bug que le `%`
+  dans les prompts Claude.** Le texte est injecté entre guillemets simples
+  dans l'argument `-vf` (`text='{text}'`) ; une apostrophe dedans (ex. "seuil
+  d'alerte") ferme la chaîne prématurément et fait planter tout le filtre
+  (`ffmpeg` rapporte une erreur `drawtext` cryptique en fin de chaîne, pas un
+  message clair sur l'apostrophe). Rencontré sur `foodeatup-ingredients-tuto`.
+  Corrigé en reformulant le bandeau sans apostrophe ("seuil minimum" plutôt
+  que "seuil d'alerte") — plus simple que d'échapper le caractère. Vérifier
+  chaque texte de bandeau avant build, pas seulement les prompts Claude.
