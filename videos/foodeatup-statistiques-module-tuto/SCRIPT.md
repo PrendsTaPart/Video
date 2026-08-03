@@ -30,29 +30,43 @@ Chaque module a son propre sélecteur de dates (période commune : 30/06/2026 �
 action de création : c'est un tutoriel de **lecture** (navigation + interprétation des
 chiffres), pas de saisie.
 
-## ⚠️ Points à valider avant de générer quoi que ce soit (script pas encore audio)
+## Décisions validées (2026-08-03)
 
-Conformément à `videos/FOODEATUP-TUTORIELS-WORKFLOW.md` (étape 3, STOP obligatoire) et
-`videos/LOVABLE-FOODEATUP-DOCS.md` (règle de validation du 2026-08-02) : **le script
-ci-dessous n'est pas encore validé, aucune VO ni montage n'a été lancé.**
+Conformément à `videos/FOODEATUP-TUTORIELS-WORKFLOW.md` (étape 3, STOP obligatoire) le
+script a été présenté avant toute génération audio. Réponses reçues :
 
-1. **Module Lovable** : les 5 catégories actuelles du site
-   (`configuration` / `equipe-planning` / `comptabilite` / `haccp` / `stockvision-ai`)
-   ne couvrent pas exactement une fonctionnalité transverse comme Analytix BI (elle
-   touche Finances, Stocks, RH, HACCP et Production à la fois). Proposition : la ranger
-   sous `comptabilite` (le tableau de bord s'ouvre sur les KPI financiers, et le prompt
-   Claude proposé porte sur les finances) — **à confirmer, ou dites-moi si vous préférez
-   un nouveau moduleSlug dédié (ex. `statistiques-bi`)**.
-2. **Prompt Claude** : aucune action de création dans ce rush, donc je propose d'utiliser
-   l'outil MCP en **lecture** `mcp__FoodEatUp__finance_summary` (CA facturé/encaissé,
-   impayés, dépenses, marge sur une période) — c'est la donnée la plus proche de l'écran
-   Finances montré à l'écran. Prompt proposé :
-   > Donne-moi la synthèse financière de mon établissement FoodEatUp (ID
-   > [ID établissement]) du [date début] au [date fin].
-   **À confirmer** (ou remplacer par un autre outil `get_daily_brief` / `get_pos_report`
-   si vous préférez un angle différent).
-3. **Numéro de sous-catégorie** dans le Drive/tableau de suivi — je n'ai pas ce numéro,
-   à me donner ou je le déduis de la suite logique (11).
+1. **Module Lovable** : `comptabilite` (le tableau de bord s'ouvre sur les KPI
+   financiers, et le prompt Claude porte sur les finances).
+2. **Prompt Claude** : `mcp__FoodEatUp__finance_summary` (CA facturé/encaissé, impayés,
+   dépenses, marge sur une période) — lecture seule, correspond à l'écran Finances.
+3. **Numéro de sous-catégorie** : 11 (suite logique du tableau de suivi), à ajuster si
+   Michael a un numéro Drive différent.
+
+VO et montage lancés sur cette base. Toujours en attente : validation de la vidéo finie
+avant toute publication (RapidoCMS, LinkedIn, Lovable) — voir étape 6 du workflow.
+
+## Montage — v1 livrée (2026-08-03)
+
+Durées VO mesurées : N0 3,34 s · N1 6,71 s · N2 5,28 s · N3 3,84 s · N4 5,02 s ·
+N5 5,43 s · N6 4,49 s · N7 5,25 s · N8 4,26 s · N9 5,02 s (réutilisée telle quelle
+depuis `foodeatup-produits-tuto/vo/N8.mp3`). Durées de segment recalibrées sur ces
+mesures (règle "calibrer le segment sur la VO, pas l'inverse") : A 6,80 s / B 5,40 s /
+C 4,00 s / D 5,10 s / E 3,20 s / F 2,60 s / G 4,60 s, intro 3,80 s.
+
+**Sortie** : `out/foodeatup-statistiques-module-tuto-v1.mp4` — **53,64 s**, H.264
+1920×828/25fps/yuv420p, AAC 48 kHz stéréo, faststart confirmé (`ftyp` en tête).
+Peak audio final **-7,19 dBFS** (mesuré sur le fichier encodé, `astats`) — conforme à
+la marge visée (~-7 dB, cohérent avec les autres tutos de la série).
+
+QA de synchronisation : image extraite au timestamp exact de chaque ligne VO
+(`ffmpeg -ss <t> -frames:v 1`) sur le rendu final — les 10 lignes tombent bien sur
+leur écran/étage prévu (dérive résiduelle < 2,5 s sur les dernières lignes,
+comparable à la dérive déjà acceptée sur `foodeatup-produits-tuto`/`-tva-tuto`, sans
+jamais dépasser la scène suivante).
+
+**Statut : livrée pour validation à Michael (`SendUserFile`), en attente de retour.
+Aucune publication (RapidoCMS/LinkedIn/Lovable) tant que l'OK n'est pas reçu**, comme
+pour tous les tutos précédents.
 
 ## Voix off proposée (10 lignes, Adam FR `TGAegA0zNRi8I6nUdq3i`)
 
