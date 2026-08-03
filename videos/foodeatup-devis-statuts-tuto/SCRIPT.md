@@ -101,7 +101,12 @@ modale, OK toast, fil d'Ariane Facturation). Pas de séquence Claude animée —
 ## Statut publication
 
 Montage terminé et checklist de compatibilité passée (H.264 High/yuv420p, AAC 48 kHz
-stéréo, faststart, peak -7,3 dBFS, 0 erreur de décodage). **En attente de validation
-avant publication** (règle du 2026-08-02, `videos/LOVABLE-FOODEATUP-DOCS.md`) : pas
-d'upload RapidoCMS/LinkedIn (RapidoCMS non authentifié dans cette session de toute
-façon), pas d'envoi du prompt Lovable tant que la vidéo n'a pas été revue.
+stéréo, faststart, peak -7,3 dBFS, 0 erreur de décodage). Publiée sur Lovable le
+2026-08-03 (`changer-les-statuts-dun-devis`, module `comptabilite`, slug hébergé en
+raw GitHub sur `videos/foodeatup-devis-statuts-tuto/out/`, branche
+`claude/foodeatup-tutorial-video-difgjz`), avec les 3 `claudePrompts` ci-dessus et un
+`chefTip` sur le suivi des devis en attente et la conversion en facture une fois
+signé. À distinguer de `changer-les-statuts-dune-facture` (autre tutoriel du même
+module, ajouté en parallèle sur la branche `claude/foodeatup-tutorial-video-vn7udf` :
+sujet voisin mais portant sur les factures, pas les devis). Pas d'upload
+RapidoCMS/LinkedIn (RapidoCMS non authentifié dans cette session).

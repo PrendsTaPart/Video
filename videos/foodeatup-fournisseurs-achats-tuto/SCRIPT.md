@@ -94,7 +94,9 @@ Claude animée — 3 `claudePrompts` texte suffisent ici. Pas de clip avatar.
 ## Statut publication
 
 Montage terminé et checklist de compatibilité passée (H.264 High/yuv420p, AAC 48 kHz
-stéréo, faststart, peak -7,3 dBFS, 0 erreur de décodage). **En attente de validation
-avant publication** (règle du 2026-08-02, `videos/LOVABLE-FOODEATUP-DOCS.md`) : pas
-d'upload RapidoCMS/LinkedIn (RapidoCMS non authentifié dans cette session de toute
-façon), pas d'envoi du prompt Lovable tant que la vidéo n'a pas été revue.
+stéréo, faststart, peak -7,3 dBFS, 0 erreur de décodage). Publiée sur Lovable le
+2026-08-03 (`gerer-ses-fournisseurs-cote-achats`, module `comptabilite`, slug hébergé
+en raw GitHub sur `videos/foodeatup-fournisseurs-achats-tuto/out/`, branche
+`claude/foodeatup-tutorial-video-difgjz`), avec les 3 `claudePrompts` ci-dessus et un
+`chefTip` sur la mise à jour de la fiabilité et la confirmation avant suppression.
+Pas d'upload RapidoCMS/LinkedIn (RapidoCMS non authentifié dans cette session).
