@@ -1,5 +1,18 @@
 # Tutoriel — Prédire ses commandes (ventes & production) — PrediBot
 
+Script validé par Michael le 2026-08-03 (« je valide »). Montage terminé : durée livrée
+**39,4 s** — H.264 High/yuv420p 1920x828, AAC 48 kHz stéréo, faststart (`ftyp`→`moov`→`mdat`
+confirmé). Decode 0 erreur. Audio : peak **-7,19 dBFS** (marge confortable sous 0 dBFS).
+
+Premier ajustement fait pendant le montage : les cibles de segments initiales (calées sur
+un total silencieux ~23 s) étaient bien trop courtes pour porter les 8 lignes de VO
+mesurées (~38,6 s de voix cumulée) — exactement le piège documenté dans
+`FOODEATUP-TUTORIELS-WORKFLOW.md` (« segments trop rapides → outro tenue en silence
+exagérément long »). Un premier essai a produit un outro auto-étendu à 22 s de carte
+statique. Corrigé en recalibrant les cibles de segments (A/C/E allongées, cf. `build.py`)
+sur la durée réelle des lignes VO qu'elles portent ; l'outro ne s'étend plus qu'à 12,4 s
+(6,2 s de base + 6,2 s de dérive absorbée), cohérent avec le reste de la série.
+
 Premier tutoriel du module **PrediBot (Agent IA Directeur)** (`predibot`, 0/3 vidéos avant
 celle-ci). Intrants reçus de Michael le 2026-08-03 :
 - `assets/intro.jpg` — carte d'ouverture "PRÉDIRE SES COMMANDES VENTES & PRODUCTION"
@@ -72,6 +85,12 @@ Réutilisation directe de `assets/intro.jpg` (pas de redesign), livrable
 
 ## Statut
 
-**STOP obligatoire (règle `FOODEATUP-TUTORIELS-WORKFLOW.md` §3) : script en attente de
-validation de Michael avant toute génération audio (ElevenLabs) ou montage.** Rien n'a été
-généré ni publié — seuls les rushs bruts (`assets/`) sont commités pour ne pas les perdre.
+Script validé (2026-08-03). VO générée (ElevenLabs, voix Adam FR `TGAegA0zNRi8I6nUdq3i`) pour
+N0-N6 ; N7 (CTA) réutilisé tel quel depuis `foodeatup-fournisseurs-tuto/vo/N8.mp3` (md5
+identique sur les 3 tutos précédents qui le réutilisent déjà). Montage terminé :
+`out/foodeatup-predibot-tuto-v1.mp4` + `out/thumbnail-youtube.jpg` (1280x720, réutilisation
+neutre de `assets/intro.jpg`, aucun redesign).
+
+**STOP obligatoire (règle `FOODEATUP-TUTORIELS-WORKFLOW.md` §6) : vidéo livrée à Michael
+pour validation. Pas de publication (RapidoCMS, LinkedIn, Lovable) tant qu'un retour OK
+explicite n'est pas reçu.**
