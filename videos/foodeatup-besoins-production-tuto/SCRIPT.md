@@ -5,9 +5,13 @@ Intrants reçus de Michael : `assets/intro.jpg` (carte "DÉDUIRE SES BESOINS DE 
 PRODUCTION"), `assets/outro.jpg` (carte CTA standard, réutilisée telle quelle),
 `assets/screen.mp4` (rush 1920x828, 28,24 s, H.264/AAC).
 
-**STATUT : BROUILLON — en attente de validation du script avant génération VO
-(règle FOODEATUP-TUTORIELS-WORKFLOW.md, § Étapes 3 et 6). Rien n'est encore
-monté ni publié.**
+Durée livrée : **38,64 s** — H.264 High/yuv420p, AAC 48 kHz stéréo, faststart.
+Audio : true peak **-7,3 dBFS** (mesuré sur le MP4 final, `astats`). Script
+validé par Michael le 2026-08-03.
+
+**STATUT : montage terminé, à livrer à Michael pour validation avant toute
+publication (règle FOODEATUP-TUTORIELS-WORKFLOW.md, § Étape 6). Pas encore
+publié sur RapidoCMS/LinkedIn/Lovable.**
 
 ## Ce que montre le rush
 
@@ -26,53 +30,68 @@ Chaque carte plat a aussi un champ « Qté à produire » + bouton OK (visible e
 rush, non actionné dans ce rush précis) : c'est ce qui pilote la quantité produite et
 donc le recalcul des besoins/manquants.
 
-## Voix off (brouillon, 9 lignes, à valider avant génération ElevenLabs Adam FR)
+## Voix off (validée, 9 lignes, voix Adam FR `TGAegA0zNRi8I6nUdq3i`, `eleven_multilingual_v2`)
 
-| # | Texte | Ancrage |
-|---|---|---|
-| N0 | Savoir ce qu'il vous manque pour un plat, en un clic ? C'est le rôle de Ma carte. | carte d'intro |
-| N1 | Depuis Ma carte, repérez le badge Ingrédients manquants. | vue liste + badge |
-| N2 | Ouvrez la fiche d'un plat pour voir le détail. | clic œil, Pizza Margherita |
-| N3 | FoodEatUp compare chaque ingrédient requis à votre stock, et signale ce qui manque. | tableau Ingrédients requis |
-| N4 | Cliquez sur Ajouter à la liste des courses. | clic bouton |
-| N5 | L'ingrédient manquant rejoint aussitôt votre liste de courses, avec la quantité et le fournisseur. | écran Liste des courses |
-| N6 | Vous pouvez aussi le faire depuis Claude : copiez ce prompt, remplacez les crochets. | étage 1+2 (réutilisable) |
-| N7 | Collez-le dans la conversation : vos besoins de production sont calculés en quelques secondes. | étage 3 |
-| N8 | Passez à la restauration intelligente avec FoodEatUp. Essayez gratuitement dès aujourd'hui ! | carte de fin (CTA, réutilisé tel quel) |
+| # | Texte | Durée | Ancrage |
+|---|---|---:|---|
+| N0 | Savoir ce qu'il vous manque pour un plat, en un clic ? C'est le rôle de Ma carte. | 4,31 s | carte d'intro |
+| N1 | Depuis Ma carte, repérez le badge Ingrédients manquants. | 3,00 s | vue liste + badge (segment A) |
+| N2 | Ouvrez la fiche d'un plat pour voir le détail. | 2,32 s | clic œil (B) + en-tête fiche (C) |
+| N3 | FoodEatUp compare chaque ingrédient requis à votre stock, et signale ce qui manque. | 4,60 s | tableau Ingrédients requis (D) |
+| N4 | Cliquez sur Ajouter à la liste des courses. | 2,12 s | clic bouton (E) |
+| N5 | L'ingrédient manquant rejoint aussitôt votre liste de courses, avec la quantité et le fournisseur. | 5,51 s | écran Liste des courses (F) |
+| N6 | Vous pouvez aussi le faire depuis Claude : copiez ce prompt, remplacez les crochets. | 4,41 s | étage 1+2 (réutilisé) |
+| N7 | Collez-le dans la conversation : vos besoins de production sont calculés en quelques secondes. | 4,49 s | étage 3 |
+| N8 | Passez à la restauration intelligente avec FoodEatUp. Essayez gratuitement dès aujourd'hui ! | 5,02 s | carte de fin (CTA, réutilisé) |
 
-N8 réutilisable tel quel depuis un tuto existant (texte générique déjà en banque,
-ex. `foodeatup-tva-tuto/vo/N8.mp3` ou `foodeatup-produits-tuto/vo/N8.mp3`) — même
-texte que la carte outro fournie. Ordre des segments à confirmer une fois les durées
-VO mesurées (règle : calibrer chaque segment sur sa ligne, pas l'inverse).
+N6/N8 réutilisés tels quels depuis `foodeatup-produits-tuto/vo/` (texte générique
+identique, zéro crédit ElevenLabs dépensé pour ces deux lignes).
 
-## Séquence Claude — module partagé (candidate)
+## Découpage (build.py, coordonnées mesurées par seuillage colorimétrique)
+
+| Seg | Source | Sortie | Contenu |
+|---|---|---:|---|
+| intro | carte | 4,60 s | DÉDUIRE SES BESOINS DE LA PRODUCTION |
+| A | 0,20 → 4,00 | 3,00 s | Ma carte, badge Ingrédients manquants (1) |
+| B | 4,00 → 4,30 | 0,90 s | **zoom-punch** icône œil, Pizza Margherita (868, 54) |
+| C | 4,30 → 5,20 | 2,00 s | fiche plat : Prix/Portions/Temps/Chef |
+| D | 5,20 → 7,60 | 4,50 s | tableau Ingrédients requis (Tomate/Farine Suffisant, Fromage tranches Manquant) |
+| E | 7,60 → 7,90 | 0,90 s | **zoom-punch** "Ajouter à la liste des courses" (1033, 784) |
+| F | 7,90 → 28,24 | 6,00 s | Liste des courses : Fromage (tranches) ajouté sous Fournisseur non défini |
+| claude1 | carte générée | 3,00 s | reveal — prompt en gros, fond crème |
+| claude2 | carte générée | 2,30 s | confirmation « Copié dans le presse-papiers ! » |
+| claude3 | carte générée | 5,30 s | mockup chatbot Claude |
+| outro | carte | 8,73 s (auto-étendue depuis 6,20 s pour porter N8) | CTA |
+
+Offsets VO réels vérifiés (`build.py`, impression `offsets:`) : chaque ligne démarre
+sur son ancrage ou légèrement après (dérive max +3,16 s sur N6, absorbée par le
+séquencement `max(anchor, fin_précédente + GAP)` — pattern déjà accepté sur la série,
+voir `foodeatup-produits-tuto/SCRIPT.md`). Aucun chevauchement.
+
+## Séquence Claude — module partagé
 
 Deux outils MCP FoodEatUp correspondent à ce que montre le rush :
 `create_production_plan(establishment_id, item_id, planned_quantity, planned_date)`
 (le champ "Qté à produire" + OK) et `get_production_ingredients(establishment_id,
-production_id)` (le tableau Suffisant/Manquant). Prompt combiné proposé :
+production_id)` (le tableau Suffisant/Manquant). Prompt combiné :
 
 > Planifie une production de [quantité] [nom du plat] pour le [date], puis indique-moi
 > les ingrédients manquants pour mon établissement FoodEatUp (ID [ID établissement]).
 
-Même texte prévu côté fiche Lovable (`claudePrompt`). À confirmer : aucun outil MCP
-FoodEatUp n'expose "ajouter à la liste de courses" en un appel direct — ce geste
-précis (bouton "Ajouter à la liste des courses") n'a donc pas d'équivalent Claude
-dans ce prompt ; seuls la planification et le diagnostic manquant/suffisant sont
-couverts.
+Même texte prévu côté fiche Lovable (`claudePrompt`). Aucun outil MCP FoodEatUp
+n'expose "ajouter à la liste de courses" en un appel direct — ce geste précis (bouton
+"Ajouter à la liste des courses") n'a donc pas d'équivalent Claude dans ce prompt ;
+seuls la planification et le diagnostic manquant/suffisant sont couverts.
 
-## Découpage (à faire — dépend de la VO validée)
+## Animations
 
-Pas encore chronométré finement (zoom-punch, coordonnées de clic) : cette étape suit
-la validation du script, pour ne pas refaire le calage si le texte change. Un montage
-brut (intro + rush brut + outro, sans VO ni zoom-punch) a été assemblé à titre
-d'aperçu rapide dans le scratchpad, à ne pas publier — juste pour visualiser
-l'enchaînement carte/rush/carte avant de lancer le vrai montage.
+Mêmes principes que toute la série : Ken Burns sur les cartes, xfade (0,28 s),
+bandeaux d'étape (aucune apostrophe), encadré orange pulsant sur les 2 clics. Pas de
+clip avatar dans ce dossier.
 
 ## Statut publication
 
-**En attente de validation de Michael sur le script ci-dessus.** Après accord (ou
-ajustements), génération VO ElevenLabs, montage `build.py` (zoom-punch sur le clic
-œil et le clic "Ajouter à la liste des courses"), vignette YouTube depuis
-`assets/intro.jpg`, puis livraison pour validation finale avant toute publication
-RapidoCMS/LinkedIn/Lovable.
+**Script validé par Michael (2026-08-03). Montage terminé, vignette YouTube générée
+depuis `assets/intro.jpg` (aucun redesign, simple recadrage 1280x720).** Vidéo livrée
+à Michael pour validation avant toute publication RapidoCMS/LinkedIn/Lovable (règle
+STOP obligatoire, § Étape 6 du workflow).
