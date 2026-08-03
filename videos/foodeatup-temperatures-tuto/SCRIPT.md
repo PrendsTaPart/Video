@@ -2,8 +2,14 @@
 
 Module **HACCP** (1ère vidéo publiée du module, voir `videos/LOVABLE-FOODEATUP-DOCS.md`).
 
-**STATUT : BROUILLON — en attente de validation avant toute génération audio ou montage**
-(règle `FOODEATUP-TUTORIELS-WORKFLOW.md`, étape 3 : STOP obligatoire).
+**STATUT : script validé par Michael (2026-08-03) → v1 montée, en attente de validation
+de la vidéo avant publication** (règle `FOODEATUP-TUTORIELS-WORKFLOW.md`, étape 6 : STOP
+obligatoire avant tout upload RapidoCMS/LinkedIn/Lovable).
+
+Durée livrée (v1) : **37,84 s** — H.264 High/yuv420p, AAC 48 kHz stéréo, faststart (moov
+avant mdat confirmé). Audio : true peak **-6,97 dBFS** (mesuré sur le MP4 final).
+Livrable : `out/foodeatup-temperatures-tuto-v1.mp4` + `out/thumbnail-youtube.jpg`
+(1280×720, recadrage neutre de `assets/intro.jpg`, non redessinée).
 
 ## Pas de séquence Claude sur cette vidéo
 
@@ -29,19 +35,35 @@ en fin de vidéo (voir détail dans STORYBOARD.md).
 N7 est la ligne CTA standard, réutilisable telle quelle (déjà en stock dans plusieurs
 `vo/N*.mp3` d'autres tutoriels si on veut éviter un aller-retour ElevenLabs).
 
-## Points à confirmer avant de lancer la génération
+## Découpage (v1)
+
+| Seg | Source | Sortie | Contenu |
+|---|---|---:|---|
+| intro | carte | 4,95 s | SONDER SES PLATS À CŒUR |
+| A | 0,30 → 3,60 | 4,05 s | liste vide (« Aucun plats ») |
+| B | 4,30 → 4,60 | 0,90 s | **zoom-punch** sur + Ajouter un relevé (1668, 304) |
+| C | 5,00 → 10,80 | 3,15 s | modale, sélection « suchi - haccp_recipe » |
+| D | 24,50 → 24,80 | 0,90 s | **zoom-punch** sur + Ajouter une recette (1382, 334) |
+| E | 26,00 → 45,00 | 6,30 s | Nouvelle recette : nom, allergènes, durée de vie (accéléré ~3×) |
+| F | 57,90 → 58,20 | 0,90 s | **zoom-punch** sur Enregistrer, sous-modale (1018, 648) |
+| G | 58,90 → 59,60 | 4,60 s | retour modale principale : température + seuil recommandé |
+| H | 60,00 → 60,30 | 0,90 s | **zoom-punch** sur Enregistrer, modale principale (1024, 648) |
+| I | 60,30 → 60,60 | 2,85 s | « Enregistrement… » |
+| J | 61,50 → 65,50 | 4,60 s | résultat : carte « Pizza » 63.0°C, stats à jour |
+| outro | carte | 6,20 s | CTA |
+
+Offsets voix off réels (`build.py`, sans extension d'outro nécessaire) : N0=0.30 N1=4.88
+N2=9.36 N3=12.24 N4=18.96 N5=24.08 N6=27.52 N7=31.99, fin de voix 37.01s pour un total
+vidéo de 37.84s — chaque offset tombe après (ou quasi à) l'ancrage visuel de son segment,
+pas de chevauchement.
+
+## Points encore ouverts (non bloquants pour la livraison de la v1)
 
 1. **Nom exact à donner au tutoriel / slug Lovable** — proposition : `ajouter-temperature-plat`
    (module `haccp`, sous-catégorie à préciser — quel est le nom du sous-dossier Drive
    correspondant, pour rester cohérent avec `LOVABLE-FOODEATUP-DOCS.md` ?).
-2. Le rush montre aussi une recette "suchi" existante utilisée comme exemple — nom à
-   garder tel quel dans la démo ou anonymiser ?
-3. Durée cible : le rush brut fait 73,9 s mais contient un remplissage assez long du
-   formulaire "Nouvelle recette" (allergènes, portions, difficulté, catégorie) qui sera
-   fortement accéléré au montage (comme le remplissage de tags sur `foodeatup-categories-tuto`).
-   OK pour viser ~35-45 s de vidéo finale ?
-4. Confirmer l'absence de séquence Claude (voir ci-dessus) — ou signaler un outil MCP
-   Plats/HACCP que j'aurais manqué.
+2. Le rush montre une recette « suchi » existante et une nouvelle recette « pizza » créée
+   en démo — noms conservés tels quels dans le montage.
 
-Une fois ce script validé (tel quel ou après ajustements), je lance la génération des
-lignes VO (ElevenLabs, voix Adam FR) puis le montage.
+Vidéo livrée pour validation (`SendUserFile`) — pas de publication RapidoCMS/LinkedIn/
+Lovable tant que Michael n'a pas donné son accord explicite sur cette v1.
