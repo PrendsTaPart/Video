@@ -1,8 +1,9 @@
 # Tutoriel — Assigner les tâches sur le planning FoodEatUp
 
 Deuxième vidéo du module `equipe-planning` (Drive : dossier "ASSIGNER LES TÂCHES SUR
-LE PLANNING"). Durée livrée : **49,9 s** — H.264 High/yuv420p, AAC 48 kHz stéréo,
-faststart. Audio : true peak **-7,3 dBFS**. Decode 0 erreur, moov avant mdat.
+LE PLANNING"). Durée livrée : **41,9 s** (rythme resserré à la demande de Michael,
+segments raccourcis vs. un premier montage à 49,9 s) — H.264 High/yuv420p, AAC 48 kHz
+stéréo, faststart. Audio : true peak **-7,3 dBFS**. Decode 0 erreur, moov avant mdat.
 
 ## Ce que montre le rush (et ce qui n'est pas repris)
 

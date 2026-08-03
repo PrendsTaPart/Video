@@ -82,18 +82,18 @@ BTN_DONE     = (142, 693);  SZ_DONE     = (34, 34)   # case a cocher "terminee"
 # (name, src_start, src_end, target_out_duration, click_time_or_None, button, btn_size, caption)
 segs = [
     ("A", 0.20,  5.60,  2.60, None,  None,         None,       "1 · Planning équipe"),
-    ("B", 5.60,  5.90,  0.90, 5.75,  BTN_NEW_TASK, SZ_NEW_TASK, None),
-    ("C", 6.30,  24.00, 6.00, None,  None,         None,       "2 · Nouvelle tâche"),
-    ("D", 33.00, 55.00, 6.00, None,  None,         None,       "3 · Priorité et catégorie"),
-    ("E", 55.00, 55.30, 0.90, 55.15, BTN_ASSIGN,   SZ_ASSIGN,   None),
-    ("F", 55.30, 57.50, 2.50, None,  None,         None,       "Tâche assignée"),
-    ("G", 59.30, 59.60, 0.90, 59.45, BTN_EDIT,     SZ_EDIT,     None),
-    ("H", 60.00, 65.00, 5.00, None,  None,         None,       "4 · Modifier une tâche"),
-    ("I", 65.00, 65.30, 0.90, 65.15, BTN_SAVE,     SZ_SAVE,     None),
-    ("J", 69.50, 69.80, 0.90, 69.65, BTN_DONE,     SZ_DONE,     None),
-    ("K", 69.80, 74.00, 3.00, None,  None,         None,       "Tâche terminée"),
+    ("B", 5.60,  5.90,  0.80, 5.75,  BTN_NEW_TASK, SZ_NEW_TASK, None),
+    ("C", 6.30,  24.00, 4.80, None,  None,         None,       "2 · Nouvelle tâche"),
+    ("D", 33.00, 55.00, 4.80, None,  None,         None,       "3 · Priorité et catégorie"),
+    ("E", 55.00, 55.30, 0.80, 55.15, BTN_ASSIGN,   SZ_ASSIGN,   None),
+    ("F", 55.30, 57.50, 2.00, None,  None,         None,       "Tâche assignée"),
+    ("G", 59.30, 59.60, 0.80, 59.45, BTN_EDIT,     SZ_EDIT,     None),
+    ("H", 60.00, 65.00, 4.00, None,  None,         None,       "4 · Modifier une tâche"),
+    ("I", 65.00, 65.30, 0.80, 65.15, BTN_SAVE,     SZ_SAVE,     None),
+    ("J", 69.50, 69.80, 0.80, 69.65, BTN_DONE,     SZ_DONE,     None),
+    ("K", 69.80, 74.00, 2.40, None,  None,         None,       "Tâche terminée"),
 ]
-INTRO_D, OUTRO_D = 3.00, 6.20
+INTRO_D, OUTRO_D = 2.60, 6.20
 
 def encode_seg(name, s, e, target, btn, btn_sz, caption):
     out = f"{SEG}/{name}.mp4"
@@ -142,7 +142,7 @@ def card(img, out, secs, zoom_in=True, fade=True):
          "-filter_complex",vf,"-r",str(FPS),
          "-c:v","libx264","-preset","medium","-crf","18",out])
 
-CLAUDE_STAGE_D = [6.00, 3.00, 6.00]  # reveal, copied, chatbot mockup
+CLAUDE_STAGE_D = [5.00, 2.50, 5.00]  # reveal, copied, chatbot mockup
 
 def build_silent(outro_d):
     card(f"{ROOT}/assets/intro.jpg", f"{SEG}/intro.mp4", INTRO_D, zoom_in=True)
