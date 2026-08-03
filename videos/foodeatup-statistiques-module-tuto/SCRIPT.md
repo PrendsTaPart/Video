@@ -64,9 +64,12 @@ leur écran/étage prévu (dérive résiduelle < 2,5 s sur les dernières lignes
 comparable à la dérive déjà acceptée sur `foodeatup-produits-tuto`/`-tva-tuto`, sans
 jamais dépasser la scène suivante).
 
-**Statut : livrée pour validation à Michael (`SendUserFile`), en attente de retour.
-Aucune publication (RapidoCMS/LinkedIn/Lovable) tant que l'OK n'est pas reçu**, comme
-pour tous les tutos précédents.
+**Statut : validée par Michael et publiée le 2026-08-03.** RapidoCMS : vidéo +
+vignette uploadées (`foodeatup-statistiques-module-tuto-v1` / `-thumbnail`). Lovable :
+tutoriel `lire-ses-statistiques-par-module` ajouté au module `comptabilite`
+(`howItWorks` / `whatItsFor` / `claudePrompt` `finance_summary` / `chefTip`), commit
+Lovable `5f751bea`. LinkedIn non demandé pour cette vidéo — à programmer séparément si
+Michael le souhaite.
 
 ## Voix off proposée (10 lignes, Adam FR `TGAegA0zNRi8I6nUdq3i`)
 
