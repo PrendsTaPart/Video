@@ -196,3 +196,16 @@ réutilisables telles quelles pour générer des visuels statiques (pas seulemen
   Corrigé en reformulant le bandeau sans apostrophe ("seuil minimum" plutôt
   que "seuil d'alerte") — plus simple que d'échapper le caractère. Vérifier
   chaque texte de bandeau avant build, pas seulement les prompts Claude.
+- **`banner()` peut échouer silencieusement : texte affiché, boîte
+  orange/bleu invisible, aucune erreur ffmpeg.** Trouvé sur
+  `foodeatup-qrcode-tuto` (2026-08-03), confirmé aussi présent sur
+  `foodeatup-vitrine-tuto` déjà livrée. Cause : l'évaluateur d'expression de
+  `drawbox` (ffmpeg 6.1.1) plante silencieusement (position hors-écran) quand
+  le `x` combine un décalage constant en tête (`-640+`) avec DEUX termes
+  `min(1,max(0,...))` soustraits (un slide-in, un slide-out) — chaque moitié
+  marche isolément, la combinaison non. Fix appliqué : un seul clamp
+  `min/max` pour le slide-in, pas de slide-out animé (le fondu-enchaîné vers
+  le segment suivant masque déjà la sortie). **Toujours vérifier
+  visuellement** (extraire une frame pendant le bandeau, pas juste écouter le
+  rendu) plutôt que de faire confiance à l'absence d'erreur ffmpeg — un
+  filtre peut « réussir » tout en ne dessinant rien.
