@@ -1,0 +1,210 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<style>
+  html,body{margin:0;padding:0;background:#0b0b0b;}
+  * { box-sizing: border-box; }
+  #stage{
+    width:1280px; height:720px; position:relative; overflow:hidden;
+    background:#F8F9FB;
+    font-family: 'Arial Rounded MT Bold','Segoe UI',Helvetica,Arial,sans-serif;
+  }
+  .scene{ position:absolute; inset:0; opacity:0; }
+  img.full{ width:100%; height:100%; object-fit:cover; display:block; }
+
+  /* ---------- INTRO 0 - 4.6s ---------- */
+  #intro{ animation: introFade 4.6s ease forwards; animation-delay: 0s; }
+  @keyframes introFade{
+    0%{opacity:0;} 8%{opacity:1;} 85%{opacity:1;} 100%{opacity:0;}
+  }
+
+  /* ---------- APP 4.2 - 27.2s (23.0s) ---------- */
+  #app{ animation: appFade 23.0s ease forwards; animation-delay: 4.2s; }
+  @keyframes appFade{
+    0%{opacity:0;} 4%{opacity:1;} 96%{opacity:1;} 100%{opacity:0;}
+  }
+  .mock-frame{
+    position:absolute; left:64px; top:70px; width:1152px; height:497px;
+    border-radius:16px; overflow:hidden;
+    box-shadow: 0 30px 60px rgba(20,30,60,.18), 0 4px 14px rgba(20,30,60,.10);
+    border:1px solid #eef0f4;
+  }
+  .mock-frame img{ width:100%; height:100%; object-fit:cover; object-position: top; display:block; }
+  .headline{ position:absolute; left:64px; top:594px; width:1152px; text-align:center; }
+  .headline .title{ font-size:30px; font-weight:800; color:#173B6C; letter-spacing:.2px; }
+  .headline .sub{ margin-top:6px; font-size:17px; color:#5B6B85; font-weight:600; }
+  .pill{ position:absolute; left:64px; top:34px; font-weight:800; color:#1977F3; font-size:20px; display:flex; align-items:center; gap:8px; }
+
+  /* cursor: 4.51 -> 8.6 (4.1s) */
+  #cursor{
+    position:absolute; width:26px; height:26px; z-index:10;
+    left:640px; top:300px;
+    animation: cursorMove 4.1s ease-in-out forwards;
+    animation-delay: 4.51s;
+    filter: drop-shadow(0 3px 4px rgba(0,0,0,.35));
+  }
+  #cursor svg{ width:100%; height:100%; }
+  @keyframes cursorMove{
+    0%   { left:640px; top:300px; opacity:0; }
+    8%   { opacity:1; }
+    45%  { left:540px; top:288px; }
+    46%  { left:540px; top:288px; }
+    82%  { left:948px; top:288px; }
+    100% { left:948px; top:288px; opacity:1; }
+  }
+  .ripple{
+    position:absolute; left:952px; top:291px; width:14px; height:14px; z-index:9;
+    border:3px solid #FD7E17; border-radius:50%; transform:translate(-50%,-50%) scale(0);
+    animation: rippleGo 1s ease-out forwards;
+    animation-delay: 8.05s;
+  }
+  @keyframes rippleGo{
+    0%{ transform:translate(-50%,-50%) scale(0); opacity:1;}
+    100%{ transform:translate(-50%,-50%) scale(6); opacity:0;}
+  }
+
+  /* stat highlights: 11.20 -> 17.0 */
+  .stat-hl{
+    position:absolute; top:355px; width:228px; height:155px; border-radius:14px;
+    border:3px solid #1977F3; opacity:0;
+    box-shadow: 0 0 0 6px rgba(25,119,243,.15);
+  }
+  #hl1{ left:150px; animation: hlPulse 1.45s ease-in-out forwards; animation-delay: 11.20s;}
+  #hl2{ left:396px; animation: hlPulse 1.45s ease-in-out forwards; animation-delay: 12.65s;}
+  #hl3{ left:642px; animation: hlPulse 1.45s ease-in-out forwards; animation-delay: 14.10s;}
+  #hl4{ left:888px; animation: hlPulse 1.45s ease-in-out forwards; animation-delay: 15.55s;}
+  @keyframes hlPulse{
+    0%{ opacity:0; transform:scale(1.04); }
+    20%{ opacity:1; transform:scale(1); }
+    80%{ opacity:1; transform:scale(1); }
+    100%{ opacity:0; transform:scale(1); }
+  }
+
+  /* history panel: 17.28 -> 27.0 (9.72s) */
+  #history{
+    position:absolute; left:64px; top:70px; width:1152px; height:497px;
+    border-radius:16px; background:#fff; z-index:5;
+    box-shadow: 0 30px 60px rgba(20,30,60,.18);
+    transform: translateY(700px);
+    animation: histSlide 9.72s cubic-bezier(.4,0,.2,1) forwards;
+    animation-delay: 17.28s;
+    padding:28px 34px;
+    border:1px solid #eef0f4;
+  }
+  @keyframes histSlide{
+    0%{ transform:translateY(700px); }
+    8%{ transform:translateY(0px); }
+    90%{ transform:translateY(0px); }
+    100%{ transform:translateY(700px); }
+  }
+  #history h3{ margin:0 0 4px 0; font-size:24px; color:#173B6C; font-weight:800; }
+  #history .hsub{ color:#8592A8; font-size:14px; font-weight:600; margin-bottom:18px;}
+  .hrow{ display:flex; align-items:center; justify-content:space-between; padding:14px 18px; border-radius:12px; background:#F5F7FB; margin-bottom:10px; }
+  .hrow .l{ display:flex; align-items:center; gap:12px; font-weight:700; color:#22304A; font-size:15px;}
+  .hrow .badge{ width:34px; height:34px; border-radius:9px; background:#E9F1FF; color:#1977F3; display:flex; align-items:center; justify-content:center; font-size:16px; }
+  .hrow .amt{ font-weight:800; color:#173B6C; font-size:15px;}
+  .hrow .status{ margin-left:12px; font-size:12px; font-weight:800; padding:4px 10px; border-radius:20px; }
+  .status.paid{ background:#E4F8EE; color:#1CA36B;}
+  .status.open{ background:#FFF1E1; color:#FD7E17;}
+
+  /* chef tip: 21.27 -> 27.0 (5.73s) */
+  #tip{
+    position:absolute; right:70px; bottom:130px; width:430px; z-index:8;
+    background:#173B6C; color:#fff; border-radius:18px 18px 4px 18px;
+    padding:18px 22px; box-shadow:0 20px 40px rgba(10,20,40,.28);
+    opacity:0; transform: translateY(16px) scale(.96);
+    animation: tipIn 5.73s ease forwards;
+    animation-delay: 21.27s;
+  }
+  @keyframes tipIn{
+    0%{ opacity:0; transform:translateY(16px) scale(.96);}
+    14%{ opacity:1; transform:translateY(0) scale(1);}
+    86%{ opacity:1; transform:translateY(0) scale(1);}
+    100%{ opacity:0; transform:translateY(6px) scale(.98);}
+  }
+  #tip .row{ display:flex; gap:12px; align-items:flex-start;}
+  #tip .emoji{ font-size:26px; line-height:1;}
+  #tip b{ color:#FFB25C; }
+  #tip p{ margin:2px 0 0 0; font-size:15.5px; line-height:1.4; font-weight:600;}
+
+  /* ---------- CLAUDE STAGES ---------- */
+  #claude1{ animation: cFade 2.2s ease forwards; animation-delay: 27.0s; }
+  #claude2{ animation: cFade 2.43s ease forwards; animation-delay: 29.2s; }
+  #claude3{ animation: cFade 4.61s ease forwards; animation-delay: 31.63s; }
+  @keyframes cFade{
+    0%{opacity:0;} 10%{opacity:1;} 88%{opacity:1;} 100%{opacity:0;}
+  }
+
+  /* ---------- OUTRO ---------- */
+  #outro{ animation: outroFade 5.76s ease forwards; animation-delay: 36.24s; }
+  @keyframes outroFade{ 0%{opacity:0;} 10%{opacity:1;} 100%{opacity:1;} }
+
+</style>
+</head>
+<body>
+  <div id="stage">
+
+    <div class="scene" id="intro">
+      <img class="full" src="assets/intro.jpg">
+    </div>
+
+    <div class="scene" id="app">
+      <div class="pill">📊 Analytix BI — GoSushi</div>
+      <div class="mock-frame"><img src="assets/screen.jpg"></div>
+      <div id="cursor">
+        <svg viewBox="0 0 24 24" fill="none"><path d="M4 2L20 10L12.5 12.5L10 20L4 2Z" fill="white" stroke="#173B6C" stroke-width="1.5" stroke-linejoin="round"/></svg>
+      </div>
+      <div class="ripple"></div>
+      <div class="stat-hl" id="hl1"></div>
+      <div class="stat-hl" id="hl2"></div>
+      <div class="stat-hl" id="hl3"></div>
+      <div class="stat-hl" id="hl4"></div>
+
+      <div class="headline">
+        <div class="title">Sortez votre rapport en un clic</div>
+        <div class="sub">Chiffre d'affaires · Commandes · Marge brute · Score HACCP</div>
+      </div>
+
+      <div id="history">
+        <h3>Historique des rapports</h3>
+        <div class="hsub">GoSushi · Sessions caisse &amp; factures récentes</div>
+        <div class="hrow">
+          <div class="l"><span class="badge">🧾</span> Session caisse #1 · 17/07/2026 18:54</div>
+          <div><span class="amt">139,10&nbsp;€</span><span class="status open">EN COURS</span></div>
+        </div>
+        <div class="hrow">
+          <div class="l"><span class="badge">📄</span> FAC-2026-00006 · 10/07/2026</div>
+          <div><span class="amt">13,00&nbsp;€</span><span class="status paid">PAYÉE</span></div>
+        </div>
+        <div class="hrow">
+          <div class="l"><span class="badge">📄</span> FAC-2026-00002 · 15/06/2026</div>
+          <div><span class="amt">65,90&nbsp;€</span><span class="status paid">PAYÉE</span></div>
+        </div>
+        <div class="hrow">
+          <div class="l"><span class="badge">📄</span> FAC-2026-00005 · 22/06/2026</div>
+          <div><span class="amt">26,50&nbsp;€</span><span class="status paid">PAYÉE</span></div>
+        </div>
+      </div>
+
+      <div id="tip">
+        <div class="row">
+          <div class="emoji">👨‍🍳</div>
+          <div><b>Astuce du chef</b>
+            <p>Clôturez votre caisse chaque soir : votre historique reste fiable et les écarts sautent aux yeux.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="scene" id="claude1"><img class="full" src="assets/claude1.jpg"></div>
+    <div class="scene" id="claude2"><img class="full" src="assets/claude2.jpg"></div>
+    <div class="scene" id="claude3"><img class="full" src="assets/claude3.jpg"></div>
+
+    <div class="scene" id="outro">
+      <img class="full" src="assets/outro.jpg">
+    </div>
+
+  </div>
+</body>
+</html>
