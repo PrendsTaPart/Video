@@ -88,13 +88,17 @@ saturation). Vignette YouTube livrée telle quelle depuis `assets/intro.jpg` (au
 redesign), redimensionnée en 1280x720 neutre : `out/thumbnail-youtube.jpg`.
 
 **Validée par Michael le 2026-08-04, publiée sur Lovable le 2026-08-04.** Catégorisation
-retenue : module `comptabilite`, nouvelle sous-catégorie "11 · Agent Fournisseurs
-(WhatsApp)" — le module `predibot` était déjà complet (3/3, dont un tutoriel WhatsApp
-existant sur un autre sujet RH, `parler-a-predibot-avec-nos-prompts`) ; le module `haccp`
-avait déjà le même principe de sous-catégorie bonus pour son propre agent WhatsApp
-(`agent-haccp-whatsapp`, sous-catégorie "31"), repris ici à l'identique côté `comptabilite`
-pour rester cohérent avec ce précédent. Entrée Lovable : `src/data/tutorials.ts`, slug
-`agent-gestion-fournisseur-whatsapp`, commit `8784264`.
+finale, sur demande explicite de Michael : module `predibot` ("PrediBot — Agent IA
+Directeur"), nouvelle sous-catégorie bonus "04 · Agent Fournisseurs (WhatsApp)" (les 3
+emplacements nominaux du module étaient déjà pris — Prévisions, Marketplace de prompts,
+Dialoguer avec PrediBot — ce tutoriel s'ajoute en 4e, même principe que la sous-catégorie
+bonus "31" de `agent-haccp-whatsapp` dans le module `haccp`). Publié d'abord dans
+`comptabilite` (commit `8784264`) puis déplacé vers `predibot` (commit suivant,
+`agent-gestion-fournisseur-whatsapp`, module/section/order mis à jour, sections des deux
+modules recalées). **Projet Lovable édité en concurrence par une autre session pendant ce
+déplacement** (constaté via `list_messages` : une autre session a supprimé/réorganisé
+`agent-haccp-whatsapp` au même moment) — sans impact sur cette entrée (slug distinct),
+diff vérifié après coup avec `get_diff`.
 
 **RapidoCMS non fait** : le serveur MCP RapidoCMS n'était pas connecté à cette session (pas
 dans la liste d'outils disponibles). `videoUrl`/`thumbnailUrl` sur Lovable pointent donc
