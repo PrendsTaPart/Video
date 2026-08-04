@@ -84,7 +84,16 @@ clip avatar dans ce dossier.
 
 ## Statut publication
 
-Produite et publiée en autonomie le 2026-08-03, suite à l'accord donné par Michael le
-même jour sur le tutoriel précédent (`deduire-ses-besoins-de-production`) pour ce même
+Produite et publiée en autonomie le 2026-08-03/04, suite à l'accord donné par Michael
+sur le tutoriel précédent (`deduire-ses-besoins-de-production`) pour ce même
 enchaînement script → VO → montage → publication Lovable sans validation intermédiaire.
-Voir tableau "Tutoriels publiés" dans `videos/LOVABLE-FOODEATUP-DOCS.md` (entrée #13).
+Fiche `pointer-ses-actions-de-nettoyage` confirmée en ligne sur
+https://foodeatup-guide-star.lovable.app/tutoriel/pointer-ses-actions-de-nettoyage
+(toutes les sections présentes : vidéo, Comment ça marche, À quoi ça sert, Astuce du
+chef, prompt Claude). **Attention** : ce projet Lovable est édité en continu par
+d'autres sessions en parallèle (nombreuses entrées HACCP/StockVision ajoutées par un
+autre agent le même jour) — après tout `send_message` sur ce projet, toujours
+revérifier via la page publiée elle-même (ou `get_message`/`get_diff` sur l'edit_id
+retourné) plutôt que de se fier à un `read_file` brut, qui peut retourner un état
+intermédiaire pendant qu'un autre agent commite en même temps. Voir tableau
+"Tutoriels publiés" dans `videos/LOVABLE-FOODEATUP-DOCS.md` (entrée #13).
