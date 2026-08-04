@@ -87,9 +87,20 @@ faststart (moov avant mdat confirmé), decode 0 erreur, peak audio **-7,16 dBFS*
 saturation). Vignette YouTube livrée telle quelle depuis `assets/intro.jpg` (aucun
 redesign), redimensionnée en 1280x720 neutre : `out/thumbnail-youtube.jpg`.
 
-**En attente de validation de Michael avant publication** (règle `FOODEATUP-TUTORIELS-
-WORKFLOW.md` + `LOVABLE-FOODEATUP-DOCS.md` : pas d'upload RapidoCMS/LinkedIn, pas de mise à
-jour Lovable tant que le retour explicite n'est pas reçu). Catégorisation Lovable proposée :
-module `predibot` (catégorie "11. Comptabilité & PrediBot", agent IA directeur) — cohérent
-avec l'app "Predibot" affichée à l'écran ; alternative possible : module `comptabilite`
-(angle réception/HACCP fournisseur). À confirmer si besoin, sinon `predibot` sera retenu.
+**Validée par Michael le 2026-08-04, publiée sur Lovable le 2026-08-04.** Catégorisation
+retenue : module `comptabilite`, nouvelle sous-catégorie "11 · Agent Fournisseurs
+(WhatsApp)" — le module `predibot` était déjà complet (3/3, dont un tutoriel WhatsApp
+existant sur un autre sujet RH, `parler-a-predibot-avec-nos-prompts`) ; le module `haccp`
+avait déjà le même principe de sous-catégorie bonus pour son propre agent WhatsApp
+(`agent-haccp-whatsapp`, sous-catégorie "31"), repris ici à l'identique côté `comptabilite`
+pour rester cohérent avec ce précédent. Entrée Lovable : `src/data/tutorials.ts`, slug
+`agent-gestion-fournisseur-whatsapp`, commit `8784264`.
+
+**RapidoCMS non fait** : le serveur MCP RapidoCMS n'était pas connecté à cette session (pas
+dans la liste d'outils disponibles). `videoUrl`/`thumbnailUrl` sur Lovable pointent donc
+temporairement vers les URLs GitHub raw de cette branche
+(`claude/foodeatup-video-tutorial-2z3kid`) — même solution de repli déjà utilisée par
+d'autres tutoriels de la série le temps que RapidoCMS soit accessible (voir
+`LOVABLE-FOODEATUP-DOCS.md`, plusieurs entrées "RapidoCMS/LinkedIn en attente (URLs GitHub
+raw temporaires)"). À refaire proprement (upload S3 RapidoCMS + mise à jour des deux champs
+Lovable) dès que l'outil est disponible dans une session. LinkedIn non demandé.
