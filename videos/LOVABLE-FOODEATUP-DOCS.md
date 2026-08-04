@@ -432,3 +432,4 @@ d'ajouter une entrée, pour ne pas créer de doublon (vérifié pour celle-ci).
 > des modules qui ne figurent pas dans la liste des 5 plus haut. La source de vérité est
 > le fichier Lovable lui-même — lire `src/data/tutorials.ts` avant de supposer qu'un
 > tutoriel n'existe pas encore, plutôt que de se fier à ce tableau seul.
+| 11 | HACCP | Relevé de température des équipements | `relever-une-temperature-equipement` | **oui, 3 prompts** — `add_temperature`. Vidéo produite à partir des 3 intrants fournis (carte intro, carte outro, screen recording HACCP > Températures : Frigo 5 6°C→9°C, non-conformité auto-détectée vs seuil 4°C). Fiche Lovable préexistante (plus riche, 8 étapes + 3 claudePrompts) mise à jour avec les vraies URLs vidéo/vignette + durée 38s ; premier `claudePrompt` réaligné sur le texte affiché à l'écran dans la vidéo. Validée et publiée le 2026-08-04 (RapidoCMS + LinkedIn 2026-09-09 16h — rotation pleine jusque-là + Lovable) |
