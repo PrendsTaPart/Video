@@ -10,7 +10,7 @@ les occurrences de `moduleSlug: "<slug>"` dans `tutorials.ts` (via
 
 ## État au 2026-08-04
 
-**71 / 157 publiés (45 %).**
+**72 / 157 publiés (46 %).**
 
 | moduleSlug | Nom | Publiés | Attendus | Reste |
 |---|---|---:|---:|---:|
@@ -21,14 +21,14 @@ les occurrences de `moduleSlug: "<slug>"` dans `tutorials.ts` (via
 | `stockvision-ai` | StockVision AI | 7 | 20 | 13 |
 | `predibot` | PrediBot (Agent IA Directeur) | 2 | 3 | 1 |
 | `hubrise-livraisons` | HubRise & Livraisons | 1 | 4 | 3 |
-| `site-web-vitrine` | Site Web & Vitrine | 0 | 8 | 8 |
+| `site-web-vitrine` | Site Web & Vitrine | 1 | 8 | 7 |
 | `caisse-pos` | Caisse POS & Matériel | 0 | 7 | 7 |
 | `caroline-ia` | Agent IA Caroline | 0 | 6 | 6 |
 | `reservation-salle` | Réservations & Plan de salle | 0 | 5 | 5 |
 | `marketing-fidelite` | Marketing, Fidélité & Iris | 0 | 24 | 24 |
 | `service-commande` | Service Multi-Canal | 0 | 3 | 3 |
 | `kds-cuisine` | Écran Cuisine (KDS) | 0 | 3 | 3 |
-| **Total** | | **71** | **157** | **86** |
+| **Total** | | **72** | **157** | **85** |
 
 `configuration` dépasse son `expectedCount` d'origine (15 publiés pour 14
 attendus) — le chiffre attendu est une estimation de départ, pas un plafond ;
@@ -41,6 +41,10 @@ ne pas bloquer dessus.
 - `creer-sa-fiche-plat-pour-production` — module `haccp` (créer un plat +
   ingrédients + date/quantité de production, prompts Claude `create_recipe` +
   `create_production_plan`).
+- `gerer-les-pages-de-son-site` — module `site-web-vitrine` (premier tutoriel
+  du module : dépublier/republier une page depuis l'onglet Pages, prompt
+  Claude `toggle_site_page`). Vidéo hébergée en raw GitHub (branche
+  `claude/foodeatup-video-tutorial-ncql3u`).
 
 ## Modules à zéro tutoriel — prioriser si on veut couvrir toute la série
 
