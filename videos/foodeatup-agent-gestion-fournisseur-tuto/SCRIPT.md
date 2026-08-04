@@ -80,8 +80,16 @@ d'intro — seule l'astuce du chef en fait mention.
 
 ## Statut
 
-**Script en attente de validation (STOP obligatoire avant génération audio ElevenLabs,
-règle du pipeline `FOODEATUP-TUTORIELS-WORKFLOW.md`).** Catégorisation Lovable proposée :
+**Script validé par Michael le 2026-08-04.** VO générée (ElevenLabs, voix Adam FR ;
+N6/N8 réutilisés tels quels depuis `foodeatup-fournisseurs-tuto/vo/`, zéro crédit dépensé
+dessus). Montage terminé : **41,96 s**, H.264 High/yuv420p 1526x1032, AAC 48 kHz stéréo,
+faststart (moov avant mdat confirmé), decode 0 erreur, peak audio **-7,16 dBFS** (pas de
+saturation). Vignette YouTube livrée telle quelle depuis `assets/intro.jpg` (aucun
+redesign), redimensionnée en 1280x720 neutre : `out/thumbnail-youtube.jpg`.
+
+**En attente de validation de Michael avant publication** (règle `FOODEATUP-TUTORIELS-
+WORKFLOW.md` + `LOVABLE-FOODEATUP-DOCS.md` : pas d'upload RapidoCMS/LinkedIn, pas de mise à
+jour Lovable tant que le retour explicite n'est pas reçu). Catégorisation Lovable proposée :
 module `predibot` (catégorie "11. Comptabilité & PrediBot", agent IA directeur) — cohérent
 avec l'app "Predibot" affichée à l'écran ; alternative possible : module `comptabilite`
 (angle réception/HACCP fournisseur). À confirmer si besoin, sinon `predibot` sera retenu.
