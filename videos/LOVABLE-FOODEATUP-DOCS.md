@@ -142,6 +142,11 @@ l'avatar était conservée) : ici la voix native est explicitely coupée.
 
 ## Tutoriels publiés
 
+⚠️ Ce tableau est en retard sur `src/data/tutorials.ts` (constaté le 2026-08-04 : le fichier
+compte déjà 20 entrées `moduleSlug: "haccp"` en plus des 10 lignes Configuration ci-dessous,
+publiées par d'autres sessions/branches). Ne pas se fier au tableau seul pour connaître l'état
+réel du site — vérifier `src/data/tutorials.ts` via `mcp__Lovable__read_file`.
+
 | # | Module | Sous-catégorie | Slug | claudePrompt ? |
 |---|---|---|---|---|
 | 1 | Configuration | 1 - Inscription, e-mail de confirmation | `creer-son-compte` | non — pas d'outil MCP (signup) |
@@ -154,3 +159,4 @@ l'avatar était conservée) : ici la voix native est explicitely coupée.
 | 8 | Configuration | 8 - saisir ses ingrédients | `saisir-ses-ingredients` | **oui, 2 prompts** — `create_ingredient` (direct) + prompt "facture fournisseur (image)". Première vidéo à utiliser `claudePrompts[]` (nouveau champ, plusieurs exemples) et `chefTipAvatar` (photo réelle de Michael). Publiée le 2026-08-02 (RapidoCMS + LinkedIn 2026-08-07 07h + Lovable) |
 | 9 | Configuration | 9 - régler ses unités | `regler-ses-unites` | non — `list_units` seul existe (lecture seule), pas de `create_unit`. Publiée le 2026-08-02 (RapidoCMS + LinkedIn 2026-08-06 16h + Lovable) |
 | 10 | Configuration | 9 - créer ses produits | `creer-ses-produits` | **oui, 2 prompts** — `create_product` (direct) + prompt "photo du code-barres". Rush sans UI d'affiliation recette/ingrédient (et `create_product` n'a pas ce champ non plus) : logique métier (produit avec/sans recette → ce que la liste de courses ajoute) documentée en `chefTip` sur explication de Michael, pas inventée à l'écran. Publiée le 2026-08-02 (RapidoCMS + LinkedIn 2026-08-07 16h + Lovable) |
+| — | HACCP | Historique du contrôle à réception | `retrouver-lhistorique-du-controle-a-reception` | **oui** — `create_haccp_reception` (les champs du modal « Modifier le contrôle » correspondent 1:1 ; pas d'`update_haccp_reception` côté MCP, donc le prompt enregistre un nouveau contrôle plutôt que de modifier l'existant montré à l'écran, même bénéfice pour le restaurateur). Script validé par Michael le 2026-08-04, montage `videos/foodeatup-historique-reception-tuto/` (47s). Publiée le 2026-08-04 (RapidoCMS + LinkedIn 2026-09-06 07h + Lovable, déployée en production) |
