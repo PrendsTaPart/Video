@@ -157,3 +157,14 @@ l'avatar était conservée) : ici la voix native est explicitely coupée.
 | 11 | StockVisionAI | Suivre ses livraisons : statuts et dates | `suivre-ses-livraisons` | non — `list_deliveries` seul existe (lecture seule) pour les livraisons fournisseurs ; `update_order_status` existe mais s'applique aux commandes clients, objet différent. Validée par Michael le 2026-08-04. Publiée sur Lovable le 2026-08-04 (RapidoCMS mis à jour comme hébergement du MP4/vignette ; LinkedIn non demandé pour l'instant) |
 | 12 | HACCP | Créer et valider une checklist hygiène | `creer-sa-checklist-hygiene` | **oui, 2 prompts** — `create_hygiene_checklist` (création) + `create_hygiene_checklist_validation` (validation). Séquence Claude vidéo sur le prompt de création ; `claudePrompts[]` Lovable avec les 2 prompts (même pattern que `saisir-ses-ingredients`). Validée par Michael le 2026-08-04 (dérive VO recalibrée avant livraison : <1s partout contre ~9s dans un premier montage). Publiée le 2026-08-04 : RapidoCMS (vidéo + vignette), LinkedIn programmé 2026-08-16 07h (rotation 2/j déjà pleine jusqu'au 15/08), Lovable |
 | 11 | Configuration | 10 - ouvrir sa vitrine en ligne | `ouvrir-sa-vitrine` | **oui** — `apply_site_template` + `set_site_theme` + `publish_site` combinés en un seul prompt (correspond exactement au flux montré : template → charte → publication). Premier avatar depuis `foodeatup-boutique-tuto`. RapidoCMS + Lovable publiés le 2026-08-03 (LinkedIn non demandé cette fois — à programmer sur demande) |
+| 11 | HACCP | 10 - Ajouter et paramétrer un plan de nettoyage | `parametrer-son-plan-de-nettoyage` | **oui** — `create_cleaning_zone`. Validée et publiée le 2026-08-04 (RapidoCMS + LinkedIn programmé 2026-08-16 07h, file pleine jusqu'au 15/08 + Lovable, insérée après `pointer-ses-actions-de-nettoyage`) |
+
+**Écart constaté le 2026-08-04** : `src/data/tutorials.ts` sur Lovable contient déjà des
+entrées (ex. `pointer-ses-actions-de-nettoyage`, module HACCP #11 "Éditer votre plan de
+nettoyage chaque jour", et d'autres — recettes, vitrine, QR code, MCP, RH...) absentes de
+ce tableau et de tout dossier `videos/foodeatup-*` de ce dépôt. Le site est en avance sur
+ce suivi local ; le tableau ci-dessus ne couvre que les vidéos produites **depuis ce
+dépôt**, pas l'état réel complet de `tutorials.ts`. À rapprocher de la question du total
+de 157 vidéos posée par Michael le 2026-08-04 (non résolue) — voir aussi le calendrier
+LinkedIn RapidoCMS, déjà rempli jusqu'au 2026-08-15 avec des tutoriels (employés, planning,
+pointage, contrats...) qui n'ont eux non plus aucune trace dans ce dépôt.
