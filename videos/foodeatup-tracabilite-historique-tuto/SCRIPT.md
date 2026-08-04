@@ -1,7 +1,14 @@
 # Tutoriel — Retrouver ma traçabilité (historique) FoodEatUp
 
-**STATUT : BROUILLON — en attente de validation Michael (STOP obligatoire avant génération audio,
-voir `FOODEATUP-TUTORIELS-WORKFLOW.md` étape 3).**
+**STATUT : MONTAGE LIVRÉ — en attente de validation Michael avant toute publication**
+**(STOP obligatoire, voir `FOODEATUP-TUTORIELS-WORKFLOW.md` étape 6 / `LOVABLE-FOODEATUP-DOCS.md`
+"Règle de validation"). Aucun upload RapidoCMS, aucun envoi LinkedIn, aucun message Lovable
+tant que ce retour n'est pas arrivé.**
+
+Durée livrée : **42,84 s** — H.264 High/yuv420p 1920×828, AAC 48 kHz stéréo, faststart.
+Audio : max_volume **-7,2 dBFS** (identique au réglage de référence `foodeatup-tva-tuto`).
+Fichiers : `out/foodeatup-tracabilite-historique-tuto-v1.mp4`, `out/thumbnail-youtube.jpg`
+(1280×720, recadré depuis la carte d'intro, même méthode que les tutos précédents).
 
 Module 4 « HACCP » (30 vidéos prévues). Rush fourni : `Historique_de_la_traçabilité.mp4`
 (1920×828, 22,28 s, aucun avatar — cohérent avec le constat de `FAISABILITE-SERIE-TUTORIELS.md`
