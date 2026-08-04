@@ -205,6 +205,22 @@ réutilisables telles quelles pour générer des visuels statiques (pas seulemen
   résolvait en décalage constant (le rendu restait correct, c'est pourquoi ça
   n'avait pas été repéré) — l'écrire en statique plutôt que de laisser croire
   à une animation.
+- **`drawbox` n'évalue son `x` qu'une fois (à l'init) sur ffmpeg 6.1.1.** Le
+  bandeau d'étape de `banner()` glisse via une expression en `t` ; `drawtext`
+  la réévalue à chaque frame, `drawbox` non. À `t=0` l'expression vaut
+  `x=-640` : le filet orange et le panneau bleu sont hors champ et ne
+  reviennent jamais, alors que le texte blanc, lui, s'affiche — donc du blanc
+  sur blanc, illisible. Rencontré sur `foodeatup-temperature-tuto` après
+  réinstallation de ffmpeg (les builds précédents tournaient sur un autre
+  build d'ffmpeg où drawbox suivait). Correctif retenu : dessiner le bandeau
+  une fois en PNG RGBA (PIL) et le glisser avec `overlay`, qui réévalue son
+  `x` par frame (`eval=frame` par défaut). Rendu identique.
+  **Deux pièges enchaînés avec ce correctif** : (1) `fps=FPS` doit passer
+  AVANT l'`overlay` — le framesync d'`overlay` jette les dernières frames
+  d'une entrée VFR, un segment sortait à 2,32 s au lieu de 3,20 s ; (2)
+  entrée PNG en `-loop 1` + `overlay=...:shortest=1`, sinon c'est le PNG
+  (1 frame, ou sa durée `-t`) qui décide de la longueur du segment.
+  Bénéfice collatéral : plus de contrainte d'apostrophe dans les libellés.
 - **Apostrophe dans un texte de bandeau (`banner()`) = même bug que le `%`
   dans les prompts Claude.** Le texte est injecté entre guillemets simples
   dans l'argument `-vf` (`text='{text}'`) ; une apostrophe dedans (ex. "seuil
