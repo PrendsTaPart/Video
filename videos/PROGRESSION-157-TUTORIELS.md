@@ -21,7 +21,7 @@ les occurrences de `moduleSlug: "<slug>"` dans `tutorials.ts` (via
 | `stockvision-ai` | StockVision AI | 7 | 20 | 13 |
 | `predibot` | PrediBot (Agent IA Directeur) | 2 | 3 | 1 |
 | `hubrise-livraisons` | HubRise & Livraisons | 1 | 4 | 3 |
-| `site-web-vitrine` | Site Web & Vitrine | 0 | 8 | 8 |
+| `site-web-vitrine` | Site Web & Vitrine | 1 | 8 | 7 |
 | `caisse-pos` | Caisse POS & Matériel | 0 | 7 | 7 |
 | `caroline-ia` | Agent IA Caroline | 0 | 6 | 6 |
 | `reservation-salle` | Réservations & Plan de salle | 0 | 5 | 5 |
@@ -41,6 +41,13 @@ ne pas bloquer dessus.
 - `creer-sa-fiche-plat-pour-production` — module `haccp` (créer un plat +
   ingrédients + date/quantité de production, prompts Claude `create_recipe` +
   `create_production_plan`).
+- `creer-un-site-par-ia` — module `site-web-vitrine` (interview IA en 12
+  questions qui génère le site, prompts Claude `apply_site_template` +
+  `publish_site`). Fiche déjà présente en placeholder sur Lovable, remplie en
+  place (voir `videos/foodeatup-site-ia-tuto/SCRIPT.md`). Autres sessions
+  actives en parallèle sur ce fichier le même jour (`Total` ci-dessus déjà
+  dépassé en réalité, voir la note de fragmentation dans `SUIVI-157-TUTORIELS.md`
+  — ne pas prendre ce tableau pour la vérité absolue, seul `tutorials.ts` l'est).
 
 ## Modules à zéro tutoriel — prioriser si on veut couvrir toute la série
 
