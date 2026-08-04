@@ -105,11 +105,27 @@ le limiteur -alimiter=0.6, ~-4,4 dBFS). Vignette `out/thumbnail-youtube.jpg`
 
 ## Statut
 
-Script validé par Michael (2026-08-04) → VO générée (ElevenLabs) → montage
-terminé. **STOP obligatoire avant publication** (RapidoCMS/LinkedIn/Lovable),
-conformément à `FOODEATUP-TUTORIELS-WORKFLOW.md` : vidéo livrée à Michael
-pour validation via `SendUserFile` — ne pas publier avant retour explicite.
-Un retour de correction relance le cycle (corriger → remonter → relivrer).
+**Publiée** (2026-08-04). Script validé par Michael → VO générée (ElevenLabs)
+→ montage → vidéo livrée pour validation (`SendUserFile`) → Michael a
+confirmé → publication :
+
+- Upload RapidoCMS (vidéo + vignette = carte d'intro) via `upload_file_tool`,
+  en pointant les URL GitHub raw des fichiers poussés sur cette branche
+  (`videos/foodeatup-historique-productions-tuto/out/...mp4` et
+  `assets/intro.jpg`) — S3 : `foodeatup-historique-productions-tuto-v1` /
+  `-thumbnail`.
+- Entrée ajoutée dans `src/data/tutorials.ts` (module `haccp`, slug
+  `retrouver-historique-productions`) via `mcp__Lovable__send_message`,
+  commit `0d0021f`, typecheck OK.
+- Site redéployé (`mcp__Lovable__deploy_project`) →
+  https://foodeatup-guide-star.lovable.app
+- Pas de créneau LinkedIn programmé dans cette session (aucune rotation
+  demandée par Michael) — à faire séparément si souhaité.
+
+Point signalé à Michael avant publication : une entrée voisine existait déjà
+sur le site (`tracer-ses-productions-historique`, écran "Mes productions"
+par statut) — vérifié que les deux documentent des écrans différents avant
+d'ajouter celle-ci, gardées distinctes.
 
 Point signalé séparément à Michael : sa demande mentionne une série de
 **157 vidéos**, mais la mémoire du dépôt (`FAISABILITE-SERIE-TUTORIELS.md`,
