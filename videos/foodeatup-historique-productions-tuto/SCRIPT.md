@@ -27,42 +27,54 @@ carte **Production**, puis montre le tableau de bord **Historique > Productions*
 (module HACCP, sous-catégorie Historique/Production) pour le champ `subcategory`
 côté Lovable — non déductible du rush seul.
 
-## Voix off (9 lignes) — proposition, à valider avant génération ElevenLabs
+## Voix off (9 lignes) — validée par Michael, générée
 
-| # | Texte | Segment |
-|---|---|---|
-| N0 | Retrouvez l'historique de toutes vos productions FoodEatUp, en un coup d'œil. | intro |
-| N1 | Depuis Historique, cliquez sur Production pour ouvrir le suivi. | A + clic B |
-| N2 | Productions réalisées, portions produites, efficacité moyenne : tout est calculé automatiquement. | C — KPIs |
-| N3 | La tendance des 6 derniers mois vous montre l'évolution de votre activité. | D — graphique |
-| N4 | Recherchez un plat, filtrez par période et exportez tout en CSV en un clic. | E — liste + outils |
-| N5 | De quoi repérer vos best-sellers et ajuster vos prochaines productions. | F — bénéfice |
-| N6 | Vous pouvez aussi le faire depuis Claude : copiez ce prompt, remplacez les crochets. | étages 1+2 (réutilisé) |
-| N7 | Collez-le dans la conversation : votre historique de production s'affiche en quelques secondes. | étage 3 |
-| N8 | Passez à la restauration intelligente avec FoodEatUp. Essayez gratuitement dès aujourd'hui ! | carte de fin (CTA, réutilisé) |
+| # | Texte | Durée | Segment |
+|---|---|---:|---|
+| N0 | Retrouvez l'historique de toutes vos productions FoodEatUp, en un coup d'œil. | 3,94 s | intro |
+| N1 | Depuis Historique, cliquez sur Production pour ouvrir le suivi. | 3,24 s | A + clic |
+| N2 | Productions réalisées, portions produites, efficacité moyenne : tout est calculé automatiquement. | 5,75 s | C — KPIs |
+| N3 | La tendance des 6 derniers mois vous montre l'évolution de votre activité. | 3,84 s | D — graphique |
+| N4 | Recherchez un plat, filtrez par période et exportez tout en CSV en un clic. | 4,73 s | E — liste + outils |
+| N5 | De quoi repérer vos best-sellers et ajuster vos prochaines productions. | 3,60 s | E — bénéfice (même écran) |
+| N6 | Vous pouvez aussi le faire depuis Claude : copiez ce prompt, remplacez les crochets. | 4,41 s | claude1+2 (réutilisé) |
+| N7 | Collez-le dans la conversation : votre historique de production s'affiche en quelques secondes. | 4,62 s | claude3 |
+| N8 | Passez à la restauration intelligente avec FoodEatUp. Essayez gratuitement dès aujourd'hui ! | 5,02 s | carte de fin (CTA, réutilisé) |
 
-N6/N8 réutilisables tels quels depuis `foodeatup-tva-tuto/vo/` (texte générique,
-zéro crédit ElevenLabs à dépenser dessus). N0-N5 et N7 sont nouvelles lignes à
-générer (voix Adam FR `TGAegA0zNRi8I6nUdq3i`, `eleven_multilingual_v2`).
+N6/N8 réutilisés tels quels depuis `foodeatup-tva-tuto/vo/` (texte identique,
+zéro crédit ElevenLabs dépensé dessus). N0-N5 et N7 générés (voix Adam FR
+`TGAegA0zNRi8I6nUdq3i`, `eleven_multilingual_v2`).
 
-## Découpage — estimation avant montage (à recaler sur la durée réelle des VO)
+## Découpage — tel que monté
 
-| Seg | Source | Contenu |
-|---|---|---|
-| intro | carte | RETROUVER SES PRODUCTIONS HISTORIQUE |
-| A | 0,00 → 4,30 | page « historique haccp », 4 cartes, survol de Production |
-| clic | 4,30 → 4,60 | **zoom-punch** sur la carte Production (≈1556, 610) |
-| C | 4,60 → 6,60 | 6 indicateurs (KPIs) du tableau de bord |
-| D | 6,60 → 9,50 | graphique « Tendance des 6 derniers mois » |
-| E | 9,50 → 16,48 | recherche / filtre Période / Exporter CSV + liste des plats-recettes (scroll) |
-| claude1 | carte générée | reveal — prompt en gros, fond crème |
-| claude2 | carte générée | confirmation « Copié dans le presse-papiers ! » |
-| claude3 | carte générée | mockup chatbot Claude |
-| outro | carte | CTA |
+| Seg | Source | Sortie | Contenu |
+|---|---|---:|---|
+| intro | carte | 3,20 s | RETROUVER SES PRODUCTIONS HISTORIQUE |
+| A | 0,00 → 4,10 | 4,20 s | page « historique haccp », 4 cartes, survol de Production |
+| clic | 4,10 → 4,40 | 0,90 s | **zoom-punch** sur la carte Production (1620, 657) |
+| C | 5,20 → 7,20 | 9,50 s | 6 indicateurs (KPIs) du tableau de bord |
+| D | 7,20 → 9,50 | 4,50 s | graphique « Tendance des 6 derniers mois » |
+| E | 9,50 → 16,40 | 9,50 s | recherche / filtre Période / Exporter CSV + liste des plats-recettes (scroll) |
+| claude1 | carte générée | 6,00 s | reveal — prompt en gros, fond crème |
+| claude2 | carte générée | 3,00 s | confirmation « Copié dans le presse-papiers ! » |
+| claude3 | carte générée | 6,00 s | mockup chatbot Claude |
+| outro | carte | 6,20 s | CTA |
 
-Coordonnées de clic estimées par lecture visuelle des frames (survol carte
-Production entre t≈4,0 s et t≈4,7 s dans le rush) — à confirmer par seuillage
-colorimétrique au moment du montage, comme sur le reste de la série.
+Coordonnées de clic mesurées par seuillage colorimétrique sur le contour bleu
+de la carte (`RGB 27,109,243`, identique au reste de la charte) sur la frame
+brute à t=0,75 s : carte « Production » centrée en **(1620, 657)**, taille
+**506×264**.
+
+Premier passage de montage avec des segments C/D/E trop courts (6,00 s pour
+C) : N2 (5,75 s, la ligne la plus longue) débordait de ~2,7 s sur le segment
+D suivant — la narration des KPIs continuait à jouer alors que le graphique
+était déjà à l'écran. Corrigé en élargissant C à 9,50 s (règle du pipeline :
+mesurer la durée réelle de chaque ligne de VO avant de fixer les durées de
+segment, pas après — cf. bug identique documenté sur `foodeatup-tva-tuto`).
+Après correction : plus aucun décalage sur N3/N4/N6/N7/N8 ; seuls N2 (2,68 s,
+absorbé dans son propre segment élargi) et N5 (0,65 s, même segment E que
+N4) dérivent encore, sans conséquence car ils ne débordent pas sur un autre
+contenu visuel. Vérifié par extraction de frames aux timestamps clés.
 
 ## Séquence Claude — module partagé
 
@@ -83,14 +95,23 @@ bandeaux d'étape, encadré orange pulsant sur le clic (un seul clic dans ce
 rush, pas de formulaire à remplir — écran de consultation uniquement). Pas de
 clip avatar dans ce dossier.
 
+## Rendu final
+
+`out/foodeatup-historique-productions-tuto-v1.mp4` — **50,64 s**, H.264
+High/yuv420p, 1920×828, 25 fps, AAC 48 kHz stéréo, +faststart (moov avant
+mdat confirmé). Decode 0 erreur. Peak audio **-7,16 dBFS** (marge saine sous
+le limiteur -alimiter=0.6, ~-4,4 dBFS). Vignette `out/thumbnail-youtube.jpg`
+(1280×720, recadrage de la carte d'intro).
+
 ## Statut
 
-**Script proposé, en attente de validation de Michael — STOP obligatoire avant
-génération audio ElevenLabs**, conformément à `FOODEATUP-TUTORIELS-WORKFLOW.md`
-(étape 3). Ne pas générer la VO, monter, publier sur RapidoCMS/LinkedIn/Lovable
-tant que ce script n'est pas confirmé (ou ajusté selon retour).
+Script validé par Michael (2026-08-04) → VO générée (ElevenLabs) → montage
+terminé. **STOP obligatoire avant publication** (RapidoCMS/LinkedIn/Lovable),
+conformément à `FOODEATUP-TUTORIELS-WORKFLOW.md` : vidéo livrée à Michael
+pour validation via `SendUserFile` — ne pas publier avant retour explicite.
+Un retour de correction relance le cycle (corriger → remonter → relivrer).
 
-Point à signaler séparément à Michael : sa demande mentionne une série de
+Point signalé séparément à Michael : sa demande mentionne une série de
 **157 vidéos**, mais la mémoire du dépôt (`FAISABILITE-SERIE-TUTORIELS.md`,
 `LOVABLE-FOODEATUP-DOCS.md`) documente un périmètre de **91-92 vidéos** (94
 annoncées, 92 dossiers Drive réels, 91 avec rush complet), dont 10 déjà
