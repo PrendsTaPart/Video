@@ -110,8 +110,29 @@ en quelques clics, au lieu de chercher vos papiers la veille."
 
 ## Statut publication
 
-DRAFT — script à valider avant génération VO (ElevenLabs) et montage. Une fois
-validé : build.py (calibration zoom-punch/bandeaux sur coordonnées mesurées),
-livraison `SendUserFile` pour validation finale, puis (après OK) RapidoCMS +
-LinkedIn + Lovable (`foodeatup-haccp-export-tuto`, module `haccp`, slug
-`exporter-son-classeur-haccp`).
+**Validée par Michael et publiée (2026-08-04).**
+
+- **RapidoCMS** : vidéo + vignette uploadées sous `foodeatup-classeur-haccp-tuto-v1`
+  / `foodeatup-classeur-haccp-tuto-thumbnail` (URL GitHub raw de ce dossier comme
+  source, branche `claude/foodeatup-video-tutorial-3d84l1`).
+- **LinkedIn** : ce nom correspond à un créneau déjà planifié dans la rotation
+  FoodEatUp (id 477, compte `FoodEatUp` / `68807312`) — **"Ouvrir son classeur
+  HACCP"**, programmé le **2026-08-27 à 07h00**, légende déjà rédigée (comment ça
+  marche / astuce du chef / cas d'usage Claude) et cohérente avec cette vidéo.
+  Aucun nouveau brouillon créé : l'upload RapidoCMS a rempli en place le créneau
+  existant (même mécanisme que `tva` : écrase la ressource S3, le brouillon déjà
+  programmé pointe automatiquement sur le nouveau fichier).
+- **Lovable** (`FoodEatUp Academy`, projet `55ff35b7-c442-42c4-950c-8c7fd420c645`) :
+  entrée déjà présente dans `src/data/tutorials.ts` sous
+  `slug: "ouvrir-son-classeur-haccp"` (module `haccp`), `videoUrl`/`thumbnailUrl`
+  pointant déjà vers ces mêmes noms RapidoCMS, `howItWorks`/`whatItsFor`/`chefTip`/
+  `claudePrompt` déjà écrits et cohérents avec cette vidéo (même structure
+  comment-ça-marche / astuce du chef / cas d'usage que demandé). Seul
+  `durationSeconds` mis à jour : 45 → 48 (commit Lovable
+  `b3a7a0bba300793ea95c22db7199cfbd8d6d4872`).
+
+Le dossier local du projet garde le nom `foodeatup-haccp-export-tuto` (créé avant
+de découvrir le créneau pré-planifié `ouvrir-son-classeur-haccp` / `classeur-haccp`
+dans RapidoCMS+Lovable) — même vidéo, juste deux noms différents entre le repo
+Video et la bibliothèque RapidoCMS/le slug Lovable. Voir aussi l'entrée ajoutée
+dans `videos/LOVABLE-FOODEATUP-DOCS.md` (tableau "Tutoriels publiés").
