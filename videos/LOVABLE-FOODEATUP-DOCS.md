@@ -21,6 +21,14 @@ prompt Lovable correspondant au projet. **Avant de choisir un sujet, vérifier `
 tutorials.ts` en direct sur Lovable** (pas seulement ce tableau, souvent en retard) : plusieurs
 branches produisent en parallèle sans se voir, voir la note de fragmentation dans le tableau
 plus bas.
+Lovable qui documente les tutoriels FoodEatUp. Chaque vidéo livrée doit se terminer par
+l'ajout de son entrée ici (tableau "Tutoriels publiés" en bas) et l'envoi du prompt Lovable
+correspondant au projet.
+
+Le total de la série a été communiqué à 157 vidéos le 2026-08-04 (précédemment 91-94
+d'après l'audit Drive du 2026-08-02) — voir `SUIVI-157-TUTORIELS.md` pour l'écart entre
+les deux chiffres et ce qui reste à clarifier avec Michael avant de l'utiliser comme
+référence de planification.
 
 ## Identifiants du projet
 
@@ -433,3 +441,4 @@ d'ajouter une entrée, pour ne pas créer de doublon (vérifié pour celle-ci).
 > le fichier Lovable lui-même — lire `src/data/tutorials.ts` avant de supposer qu'un
 > tutoriel n'existe pas encore, plutôt que de se fier à ce tableau seul.
 | 11 | HACCP | Relevé de température des équipements | `relever-une-temperature-equipement` | **oui, 3 prompts** — `add_temperature`. Vidéo produite à partir des 3 intrants fournis (carte intro, carte outro, screen recording HACCP > Températures : Frigo 5 6°C→9°C, non-conformité auto-détectée vs seuil 4°C). Fiche Lovable préexistante (plus riche, 8 étapes + 3 claudePrompts) mise à jour avec les vraies URLs vidéo/vignette + durée 38s ; premier `claudePrompt` réaligné sur le texte affiché à l'écran dans la vidéo. Validée et publiée le 2026-08-04 (RapidoCMS + LinkedIn 2026-09-09 16h — rotation pleine jusque-là + Lovable) |
+| 11 | HACCP | Traçabilité complète (sélection produit, lot, DLC, remarques) | `creer-une-tracabilite-complete` | **oui** — `create_haccp_tracabilite` (`type="complete"`). Validée par Michael le 2026-08-04 (`videos/foodeatup-tracabilite-complete-tuto/` — dossier renommé lors de la fusion des branches le 2026-08-04, collision avec un autre tutoriel `foodeatup-tracabilite-tuto` déjà présent : « Historique de la production et traçabilité » ; 52,2 s, voix Adam FR). Publiée : RapidoCMS (`foodeatup-tracabilite-tuto-v1` / `foodeatup-tracabilite-tuto-thumbnail`) + Lovable (`src/data/tutorials.ts`, commit `82b5ca2`, juste après `creer-une-tracabilite-simplifiee`). **LinkedIn pas encore programmé** — planning du compte FoodEatUp déjà rempli jusqu'au 2026-08-25 par ailleurs (voir `SUIVI-157-TUTORIELS.md`, risque de collision de créneau constaté). |
