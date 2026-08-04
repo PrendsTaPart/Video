@@ -4,11 +4,26 @@ Module HACCP, dossier Drive `10- Ajouter ,et paramètrer un plan de nettoyage`.
 Rush source : `assets/screen.mp4` (1920×828, 25fps, 57,9 s).
 Carte d'ouverture fournie par Michael : `assets/intro.jpg` (« PARAMÉTRER SON NETTOYAGE PLAN & ZONES »).
 
-**STATUT : script validé par Michael (2026-08-04) — VO générée (ElevenLabs, voix Adam FR
-`TGAegA0zNRi8I6nUdq3i`), montage terminé. Durée livrée : 40,24 s — H.264 High/yuv420p,
-AAC 48 kHz stéréo, faststart (moov avant mdat vérifié). Audio : true peak **-6,95 dBFS**.
-En attente de validation de la vidéo finale avant publication (RapidoCMS/LinkedIn/Lovable)
-— règle STOP obligatoire du repo, §6.**
+**STATUT : validée par Michael et publiée le 2026-08-04.** RapidoCMS : vidéo + vignette
+uploadées (`foodeatup-nettoyage-tuto-v1` / `foodeatup-nettoyage-tuto-thumbnail`). LinkedIn
+FoodEatUp : brouillon #613 créé et programmé le **2026-08-16 07h00** (prochain créneau
+libre de la rotation 2/jour, la file est pleine jusqu'au 15/08). Lovable : tutoriel
+`parametrer-son-plan-de-nettoyage` ajouté dans `src/data/tutorials.ts`, module HACCP,
+sous-catégorie « 10 - Ajouter et paramétrer un plan de nettoyage » (juste après
+`pointer-ses-actions-de-nettoyage`, déjà présent côté site — voir note plus bas).
+
+Durée livrée : 40,24 s — H.264 High/yuv420p, AAC 48 kHz stéréo, faststart (moov avant
+mdat vérifié). Audio : true peak **-6,95 dBFS**.
+
+## Note — écart entre le suivi local et le site Lovable (2026-08-04)
+
+En ajoutant ce tutoriel, `src/data/tutorials.ts` contenait déjà une entrée
+`pointer-ses-actions-de-nettoyage` (module HACCP #11, « Éditer votre plan de nettoyage
+chaque jour ») que ce dépôt ne référence nulle part (ni `LOVABLE-FOODEATUP-DOCS.md`, ni
+aucun dossier `videos/foodeatup-*`). Le site est donc en avance sur le suivi local — signe
+que d'autres tutoriels ont été publiés directement (autre session, ou édition manuelle)
+sans repasser par ce dépôt. À rapprocher de la question ouverte sur le total de 157 vidéos :
+le vrai décompte est peut-être sur Lovable, pas dans ce repo.
 
 ## Découpage final (`build.py`, retimé pour éviter l'extension d'outro)
 

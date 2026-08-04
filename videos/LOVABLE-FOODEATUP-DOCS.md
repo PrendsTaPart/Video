@@ -154,3 +154,14 @@ l'avatar était conservée) : ici la voix native est explicitely coupée.
 | 8 | Configuration | 8 - saisir ses ingrédients | `saisir-ses-ingredients` | **oui, 2 prompts** — `create_ingredient` (direct) + prompt "facture fournisseur (image)". Première vidéo à utiliser `claudePrompts[]` (nouveau champ, plusieurs exemples) et `chefTipAvatar` (photo réelle de Michael). Publiée le 2026-08-02 (RapidoCMS + LinkedIn 2026-08-07 07h + Lovable) |
 | 9 | Configuration | 9 - régler ses unités | `regler-ses-unites` | non — `list_units` seul existe (lecture seule), pas de `create_unit`. Publiée le 2026-08-02 (RapidoCMS + LinkedIn 2026-08-06 16h + Lovable) |
 | 10 | Configuration | 9 - créer ses produits | `creer-ses-produits` | **oui, 2 prompts** — `create_product` (direct) + prompt "photo du code-barres". Rush sans UI d'affiliation recette/ingrédient (et `create_product` n'a pas ce champ non plus) : logique métier (produit avec/sans recette → ce que la liste de courses ajoute) documentée en `chefTip` sur explication de Michael, pas inventée à l'écran. Publiée le 2026-08-02 (RapidoCMS + LinkedIn 2026-08-07 16h + Lovable) |
+| 11 | HACCP | 10 - Ajouter et paramétrer un plan de nettoyage | `parametrer-son-plan-de-nettoyage` | **oui** — `create_cleaning_zone`. Validée et publiée le 2026-08-04 (RapidoCMS + LinkedIn programmé 2026-08-16 07h, file pleine jusqu'au 15/08 + Lovable, insérée après `pointer-ses-actions-de-nettoyage`) |
+
+**Écart constaté le 2026-08-04** : `src/data/tutorials.ts` sur Lovable contient déjà des
+entrées (ex. `pointer-ses-actions-de-nettoyage`, module HACCP #11 "Éditer votre plan de
+nettoyage chaque jour", et d'autres — recettes, vitrine, QR code, MCP, RH...) absentes de
+ce tableau et de tout dossier `videos/foodeatup-*` de ce dépôt. Le site est en avance sur
+ce suivi local ; le tableau ci-dessus ne couvre que les vidéos produites **depuis ce
+dépôt**, pas l'état réel complet de `tutorials.ts`. À rapprocher de la question du total
+de 157 vidéos posée par Michael le 2026-08-04 (non résolue) — voir aussi le calendrier
+LinkedIn RapidoCMS, déjà rempli jusqu'au 2026-08-15 avec des tutoriels (employés, planning,
+pointage, contrats...) qui n'ont eux non plus aucune trace dans ce dépôt.
