@@ -1,9 +1,15 @@
-# Tutoriel — Créer une facture (FoodEatUp) · Script voix off (FR) — DRAFT, non validé
+# Tutoriel — Créer une facture (FoodEatUp) · Script voix off (FR)
+
+**Script validé par Michael le 2026-08-04.** Montage terminé, en attente de validation de la
+vidéo (STOP obligatoire avant publication — voir `FOODEATUP-TUTORIELS-WORKFLOW.md`).
 
 Module Lovable : **Comptabilité** (`comptabilite`). Sous-catégorie Drive (image d'ouverture
 fournie) : « Créer une facture comptabilité ». Voix : Adam FR / Adam-Instructor (ElevenLabs,
 `TGAegA0zNRi8I6nUdq3i`) — même voix que toute la série. Rush source : `assets/screen.mp4`
 (1920x828, 25 fps, 80,49 s).
+
+Durée livrée : **54,96 s** — H.264 High/yuv420p, AAC 48 kHz stéréo, faststart. Audio : true
+peak **-7,27 dBFS**. Decode 0 erreur, moov avant mdat (faststart confirmé).
 
 ## Ce que montre le rush
 
@@ -33,25 +39,47 @@ avec désignation/quantité/prix unitaire HT/TVA ligne, TVA globale, remise, dat
 paiement) → séquence de fin « cas d'usage + prompt Claude » applicable (3 temps, module
 partagé `_shared/claude_prompt_sequence.py`), comme pour tva/catégories/fournisseurs/produits.
 
-## Voix off — proposition (10 lignes)
+## Voix off (11 lignes)
 
-| # | Texte |
-|---|---|
-| N0 | Facturer vos clients à la main ? Avec FoodEatUp, votre facture est prête en quelques clics. |
-| N1 | Cliquez sur Créer une facture. |
-| N2 | Choisissez votre client, et complétez son numéro de TVA si besoin. |
-| N3 | Recherchez un produit dans votre catalogue, ou créez-le à la volée. |
-| N4 | Fixez la quantité, le prix et la TVA, et appliquez une offre ou une remise si besoin. |
-| N5 | Renseignez la date de facture et la date d'échéance. |
-| N6 | Choisissez le mode de paiement, puis cliquez sur Enregistrer. |
-| N7 | Votre facture est aussitôt conforme à la norme Factur-X 2026, et prête à télécharger ou à envoyer par e-mail. |
-| N8 | Vous pouvez aussi le faire depuis Claude : copiez ce prompt, remplacez les crochets. |
-| N9 | Collez-le dans la conversation : votre facture est créée en quelques secondes. |
-| N10 | Passez à la restauration intelligente avec FoodEatUp. Essayez gratuitement dès aujourd'hui ! |
+| # | Texte | Durée | Segment |
+|---|---|---:|---|
+| N0 | Facturer vos clients à la main ? Avec FoodEatUp, votre facture est prête en quelques clics. | 4,83 s | intro |
+| N1 | Cliquez sur Créer une facture. | 1,62 s | clic Créer une facture |
+| N2 | Choisissez votre client, et complétez son numéro de TVA si besoin. | 4,00 s | C — client / TVA |
+| N3 | Recherchez un produit dans votre catalogue, ou créez-le à la volée. | 3,47 s | D — recherche produit |
+| N4 | Fixez la quantité, le prix et la TVA, et appliquez une offre ou une remise si besoin. | 5,20 s | E — qty/prix/TVA/offre |
+| N5 | Renseignez la date de facture et la date d'échéance. | 2,69 s | F — dates/remise |
+| N6 | Choisissez le mode de paiement, puis cliquez sur Enregistrer. | 3,06 s | F2 — relecture + clic Enregistrer |
+| N7 | Votre facture est aussitôt conforme à la norme Factur-X 2026, et prête à télécharger ou à envoyer par e-mail. | 6,50 s | H — résultat (conformité 100%) |
+| N8 | Vous pouvez aussi le faire depuis Claude : copiez ce prompt, remplacez les crochets. | 4,41 s | étages 1+2 (réutilisé) |
+| N9 | Collez-le dans la conversation : votre facture est créée en quelques secondes. | 4,31 s | étage 3 |
+| N10 | Passez à la restauration intelligente avec FoodEatUp. Essayez gratuitement dès aujourd'hui ! | 5,02 s | carte de fin (CTA, réutilisé) |
 
-N8 et N10 sont **réutilisables tels quels** depuis `foodeatup-produits-tuto/vo/` (texte
-générique identique) — zéro crédit ElevenLabs dépensé sur ces deux lignes. N9 est spécifique
-(« votre facture est créée ») donc à générer.
+N8 et N10 réutilisés tels quels depuis `foodeatup-produits-tuto/vo/` (texte générique
+identique) — zéro crédit ElevenLabs dépensé sur ces deux lignes.
+
+## Découpage
+
+| Seg | Source | Sortie | Contenu |
+|---|---|---:|---|
+| intro | carte | 3,00 s | CRÉER UNE FACTURE COMPTABILITÉ |
+| A | 0,20 → 10,00 | 2,50 s | liste « Facturation », KPIs, 0 facture sélectionnée |
+| B | 10,00 → 10,35 | 0,90 s | **zoom-punch** sur Créer une facture (1681, 171) |
+| C | 10,60 → 20,00 | 5,00 s | client, numéro de TVA intracommunautaire, référence |
+| D | 20,00 → 34,00 | 5,00 s | recherche produit, suggestion de création, sélection |
+| E | 34,00 → 50,00 | 6,00 s | quantité, prix HT, TVA ligne, offre appliquée |
+| F | 50,00 → 58,50 | 4,00 s | TVA globale, dates, remise |
+| F2 | 62,00 → 65,10 | 4,00 s | relecture (client/TVA/mode de paiement/totaux) |
+| G | 65,10 → 65,45 | 0,90 s | **zoom-punch** sur Enregistrer (1690, 320) |
+| H | 65,50 → 78,49 | 6,00 s | chargement puis conformité 100 % + retour liste |
+| claude1 | carte générée | 6,00 s | reveal — prompt en gros, fond crème |
+| claude2 | carte générée | 3,00 s | confirmation « Copié dans le presse-papiers ! » |
+| claude3 | carte générée | 6,00 s | mockup chatbot Claude |
+| outro | carte | 6,20 s | CTA |
+
+La fenêtre 58,5-62,0 s du rush (relecture redondante déjà couverte par C-F) est coupée du
+montage, comme pratiqué sur produits/ingrédients pour éviter de re-montrer des champs déjà
+vus. Coordonnées mesurées sur les frames réelles (`work/frames*/`, non versionné).
 
 ## Séquence Claude (cas d'usage) — prompt proposé
 
@@ -71,13 +99,12 @@ Même texte côté fiche Lovable (`claudePrompt`).
 devient obligatoire pour toutes les entreprises en France. FoodEatUp vous evite les mauvaises
 surprises en vérifiant vos factures en temps réel. »
 
-## À valider avant de continuer
+## Statut
 
-1. Le texte des lignes N0–N7 (N8/N10 déjà figées, réutilisées ; N9 sera généré une fois le
-   reste validé).
-2. Le prompt Claude et l'astuce du chef ci-dessus.
-3. Le nom de slug proposé : `creer-une-facture` (sous-catégorie affichée : « Créer une
-   facture »), dossier vidéo `videos/foodeatup-factures-tuto/`.
+Slug retenu : `creer-une-facture` (sous-catégorie affichée : « Créer une facture »), dossier
+vidéo `videos/foodeatup-factures-tuto/`.
 
-**Conformément à la règle du pipeline (`FOODEATUP-TUTORIELS-WORKFLOW.md`), aucune génération
-audio ni montage ne démarre avant validation explicite de ce script.**
+**Script validé par Michael le 2026-08-04. VO générée, montage terminé, checklist de
+compatibilité passée. En attente de validation de la vidéo montée avant publication
+(RapidoCMS, LinkedIn, Lovable) — conformément à la règle du pipeline
+(`FOODEATUP-TUTORIELS-WORKFLOW.md`).**
