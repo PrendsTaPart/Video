@@ -1,5 +1,10 @@
 # Tutoriel — Relever une température d'équipement FoodEatUp
 
+Durée livrée : **37,68 s** — H.264 High/yuv420p, AAC 48 kHz stéréo, faststart.
+Audio : true peak **-7,25 dBFS** (mesuré sur le MP4 final). Vignette YouTube
+`out/thumbnail-youtube.jpg` (1280×720, 112 Ko, recadrage neutre de `assets/intro.jpg`,
+aucun redesign).
+
 Module **HACCP**, sous-catégorie proposée : **« Relevé des températures des équipements »**
 (à confirmer/corriger si le sous-dossier Drive porte un autre intitulé exact).
 
