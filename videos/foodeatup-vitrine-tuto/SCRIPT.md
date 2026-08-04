@@ -71,4 +71,10 @@ au traitement des cartes.
 
 ## Statut publication
 
-Vidéo à livrer à Michael pour validation avant publication RapidoCMS/LinkedIn/Lovable.
+**Validée par Michael, publiée sur RapidoCMS et Lovable le 2026-08-03** (demande
+explicite : "publi la vidéo sur lovable" — RapidoCMS fait au passage pour obtenir
+les URLs stables S3 nécessaires à Lovable). Vidéo + vignette uploadées
+(`foodeatup-vitrine-tuto-v1` / `-thumbnail`). Tutoriel `ouvrir-sa-vitrine` ajouté
+dans `src/data/tutorials.ts`, module Configuration (sous-catégorie "10").
+**LinkedIn non programmé cette fois** — la demande portait uniquement sur Lovable,
+pas de draft créé ; à faire sur demande ultérieure si souhaité.
