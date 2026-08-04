@@ -227,6 +227,10 @@ du Drive d'origine, pas `predibot`/`hubrise-livraisons` ajoutés depuis). Aucune
 dépôt d'un chiffre de 157 vidéos — à clarifier avec Michael si ce nombre doit devenir la cible
 officielle. Ce tableau reste tenu à jour pour les vidéos produites *depuis ce dépôt*, mais n'est
 plus la source de vérité du nombre total de tutoriels publiés (c'est `tutorials.ts` sur Lovable).
+⚠️ Ce tableau est en retard sur `src/data/tutorials.ts` (constaté le 2026-08-04 : le fichier
+compte déjà 20 entrées `moduleSlug: "haccp"` en plus des 10 lignes Configuration ci-dessous,
+publiées par d'autres sessions/branches). Ne pas se fier au tableau seul pour connaître l'état
+réel du site — vérifier `src/data/tutorials.ts` via `mcp__Lovable__read_file`.
 
 | # | Module | Sous-catégorie | Slug | claudePrompt ? |
 |---|---|---|---|---|
@@ -340,3 +344,5 @@ site FoodEatUp Academy — 157 semble couvrir un périmètre plus large
 pour ces autres séries). Pas de liste unique consolidée à 157 trouvée dans le
 dépôt : à confirmer avec Michael avant de fabriquer un chiffre de suivi global.
 | 11 | HACCP | 14 - Retrouver toutes vos production | `consulter-ses-productions-en-cours` | **oui** — `list_production_plans`. Première vidéo du module HACCP. Validée par Michael le 2026-08-04. RapidoCMS **non disponible dans cette session** (connecteur non installé) : vidéo/vignette servies depuis GitHub raw (`claude/foodeatup-video-tutorials-u4ljhv`) en attendant reconnexion — pas de post LinkedIn programmé pour cette raison. Voir `videos/SUIVI-VIDEOS.md` pour le détail et `videos/foodeatup-productions-tuto/SCRIPT.md` pour le ré-audit Drive (137 vidéos vérifiées le 2026-08-04, 5 nouveaux modules découverts) |
+| — | HACCP | Historique du contrôle à réception | `retrouver-lhistorique-du-controle-a-reception` | **oui** — `create_haccp_reception` (les champs du modal « Modifier le contrôle » correspondent 1:1 ; pas d'`update_haccp_reception` côté MCP, donc le prompt enregistre un nouveau contrôle plutôt que de modifier l'existant montré à l'écran, même bénéfice pour le restaurateur). Script validé par Michael le 2026-08-04, montage `videos/foodeatup-historique-reception-tuto/` (47s). Publiée le 2026-08-04 (RapidoCMS + LinkedIn 2026-09-06 07h + Lovable, déployée en production) |
+| — | Comptabilité | Relier ses achats à ses livraisons | `relier-ses-achats-a-ses-livraisons` | **oui** — `create_expense` (fournisseur, référence facture, lignes produits, totaux auto ; pas de champ « livraison associée » côté MCP, donc le prompt enregistre directement la dépense plutôt que de reproduire l'étape d'import OCR — même bénéfice). ⚠️ Sujet proche de `scanner-sa-facture-ocr` et `classer-ses-factures-dans-les-depenses` déjà publiées par une autre session (même déroulé livraison→facture→OCR→dépense, rush différent) — à vérifier avec Michael si une consolidation est souhaitée. Script validé par Michael le 2026-08-04, montage `videos/foodeatup-depenses-livraisons-tuto/` (45,7s). Publiée le 2026-08-04 (RapidoCMS + LinkedIn 2026-09-10 07h + Lovable, déployée en production) |
