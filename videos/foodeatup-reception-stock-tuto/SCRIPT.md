@@ -115,6 +115,9 @@ bandeaux d'etape (3), encadre orange pulsant sur les 2 clics logistique
 
 ## Statut publication
 
-**Script valide par l'utilisateur.** Video montee, checklist de compatibilite
-passee. **En attente de validation du rendu final avant publication** (RapidoCMS,
-LinkedIn, Lovable) — regle standing du projet.
+**Script et rendu final valides.** Video + vignette uploadees sur RapidoCMS
+(`foodeatup-reception-stock-tuto-v1` / `-thumbnail`). Tutoriel
+`controler-sa-reception-stock` ajoute sur Lovable (`src/data/tutorials.ts`,
+module HACCP — premiere video du module) le 2026-08-04. LinkedIn : pas encore
+programme (publication Lovable demandee explicitement dans ce tour, pas la
+diffusion reseaux sociaux).
