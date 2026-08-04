@@ -93,4 +93,8 @@ les recreer, il suffit de les telecharger et de les afficher en cuisine.
 ("publie la video une fois fini").** RapidoCMS : video + vignette uploadees
 (`foodeatup-templates-tuto-v1` / `-thumbnail`). Lovable : tutoriel
 `utiliser-nos-modeles-foodeatup` ajoute dans `src/data/tutorials.ts`, module
-HACCP, sans `claudePrompt` (pas d'outil MCP correspondant).
+HACCP, sans `claudePrompt` (pas d'outil MCP correspondant). Verifie via
+`get_diff(message_id=...)` sur le tour precis (ce projet Lovable est modifie
+par plusieurs sessions en parallele : `get_project`/`read_file` seuls peuvent
+refleter l'edition d'une AUTRE session plus recente que la sienne, voir note
+dans `LOVABLE-FOODEATUP-DOCS.md`).

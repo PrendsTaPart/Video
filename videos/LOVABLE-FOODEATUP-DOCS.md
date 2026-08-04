@@ -47,6 +47,16 @@ suivi). Un retour de correction relance le cycle (corriger → relivrer → atte
 le même prompt en double sur un timeout. Vérifier avec `get_project` (le `latest_commit_sha`
 avance) ou `read_file` sur `src/data/tutorials.ts` avant de renvoyer quoi que ce soit.
 
+⚠️ **Ce projet Lovable est édité en concurrence par plusieurs sessions** (constaté le
+2026-08-04 : `list_messages` a montré des messages d'autres sessions arrivant à quelques
+secondes des miens, sur d'autres sujets HACCP). Conséquence : après un `send_message`,
+`get_project`/`read_file` peut renvoyer l'état d'une édition concurrente plus récente que la
+sienne (le `latest_commit_sha` avance à chaque édition, pas seulement la sienne) — ne pas
+conclure à un échec sur cette seule base. Vérification fiable : `list_messages` pour retrouver
+son propre tour (apparier user/assistant par timestamp), puis `get_diff(message_id=<id de la
+réponse assistant>)` pour voir précisément ce que CE tour a changé, indépendamment des autres
+éditions en cours.
+
 ## Modèle de données (`src/data/tutorials.ts`)
 
 ```ts
@@ -155,3 +165,4 @@ l'avatar était conservée) : ici la voix native est explicitely coupée.
 | 9 | Configuration | 9 - régler ses unités | `regler-ses-unites` | non — `list_units` seul existe (lecture seule), pas de `create_unit`. Publiée le 2026-08-02 (RapidoCMS + LinkedIn 2026-08-06 16h + Lovable) |
 | 10 | Configuration | 9 - créer ses produits | `creer-ses-produits` | **oui, 2 prompts** — `create_product` (direct) + prompt "photo du code-barres". Rush sans UI d'affiliation recette/ingrédient (et `create_product` n'a pas ce champ non plus) : logique métier (produit avec/sans recette → ce que la liste de courses ajoute) documentée en `chefTip` sur explication de Michael, pas inventée à l'écran. Publiée le 2026-08-02 (RapidoCMS + LinkedIn 2026-08-07 16h + Lovable) |
 | 11 | HACCP | Contrôle de réception (température & EAN) | `controler-sa-reception-stock` | **oui, 2 prompts** — `create_haccp_reception` (contrôle de réception, température) + `create_haccp_label` (étiquette EAN/DLC). Première vidéo du module HACCP. Publiée sur Lovable le 2026-08-04 (RapidoCMS mis à jour ; publication LinkedIn en attente — non demandée dans ce tour) |
+| 12 | HACCP | Documents (modèles prédéfinis) | `utiliser-nos-modeles-foodeatup` | non — pas d'outil MCP correspondant (bibliothèque de documents statiques, ni `list_employee_documents` ni `list_site_templates` ne correspondent). Publiée le 2026-08-04 (RapidoCMS + Lovable, demande explicite de publication immédiate). **Note** : une carte d'intro "RETROUVER MES ÉTIQUETTES HISTORIQUE" a été fournie en même temps mais sans rush correspondant — pas de vidéo produite pour ce sujet, en attente d'un enregistrement d'écran |
