@@ -76,16 +76,20 @@ BTN_VALID  = (1024, 758); SZ_VALID  = (123, 60)  # "Valider" (modale validation)
 
 # (name, src_start, src_end, target_out_duration, button, btn_size, caption)
 segs = [
-    ("A", 0.20,  7.00,  2.00, None,       None,      "1 - Ouvrir Checklist hygiene"),
+    ("A", 0.20,  7.00,  4.25, None,       None,      "1 - Ouvrir Checklist hygiene"),
     ("B", 7.00,  7.35,  0.90, BTN_ADD,    SZ_ADD,    None),
-    ("C", 7.50,  32.50, 5.00, None,       None,      "2 - Nom, categorie, description"),
+    ("C", 7.50,  32.50, 4.25, None,       None,      "2 - Nom, categorie, description"),
     ("D", 32.50, 32.85, 0.90, BTN_CREATE, SZ_CREATE, None),
-    ("E", 33.50, 41.00, 4.00, None,       None,      "Checklist creee"),
-    ("F", 41.00, 58.50, 4.50, None,       None,      "3 - Zone et reponse"),
+    ("E", 33.50, 41.00, 3.95, None,       None,      "Checklist creee"),
+    ("F", 41.00, 58.50, 4.55, None,       None,      "3 - Zone et reponse"),
     ("G", 58.50, 58.85, 0.90, BTN_VALID,  SZ_VALID,  None),
-    ("H", 59.00, 67.80, 4.00, None,       None,      "Checklist validee"),
+    ("H", 59.00, 67.80, 6.45, None,       None,      "Checklist validee"),
 ]
-INTRO_D, OUTRO_D = 3.00, 5.40
+# +0.45s padding on every non-punch segment vs. the raw VO-matched value,
+# to absorb the xfade crossfade overlap (XF=0.28s eaten at each of the ~12
+# cuts) -- without it, drift compounds across the timeline (observed ~4.2s
+# by the outro on the previous pass) and forces an oversized silent outro.
+INTRO_D, OUTRO_D = 3.85, 5.55
 
 def encode_seg(name, s, e, target, btn, btn_sz, caption):
     out = f"{SEG}/{name}.mp4"
@@ -127,6 +131,9 @@ CLAUDE_PROMPT = ("Cree une checklist hygiene [nom du point de controle] pour la 
                   "points de controle [liste des points], pour mon etablissement "
                   "FoodEatUp (ID [ID etablissement]).")
 CLAUDE_RESPONSE = "Bien sur ! Je cree cette checklist hygiene pour votre etablissement..."
+# Widened vs. the module default [2.20, 1.30, 2.50]: N6 (4.41s) needs to fit
+# across stage1+2 (reveal+copied), N7 (4.21s) needs to fit within stage3 alone.
+CLAUDE_STAGE_D = [3.35, 2.15, 4.85]
 
 def build_silent(outro_d):
     card(f"{ROOT}/assets/intro.jpg", f"{SEG}/intro.mp4", INTRO_D, zoom_in=True)
