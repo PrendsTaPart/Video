@@ -238,3 +238,4 @@ catalogue des 157 tutoriels cibles transmis par Michael, un unique prompt Lovabl
 modifiés : les 16 tutoriels déjà publiés ci-dessus sont intacts, aucune régression de
 contenu. Question toujours en attente de réponse de Michael : re-rendre `ouvrir-sa-vitrine-en-ligne`
 (#11) pour corriger le bug des bandeaux d'étape invisibles ?
+| 11 | HACCP | Historique de la production et traçabilité | `tracer-ses-productions-historique` | **oui, 3 prompts** — `list_production_plans` (statut + période, exactement les deux filtres montrés à l'écran), un second cadré « préparer un contrôle sanitaire », et `list_top_productions` (hors vidéo, prompt de site uniquement). Publiée le 2026-08-03 (RapidoCMS + Lovable + déploiement). Vidéo 64 s. Première vidéo de la série dont les bandeaux d'étape s'affichent réellement — voir le bug `drawbox`/`t` documenté dans `FOODEATUP-TUTORIELS-WORKFLOW.md` |
