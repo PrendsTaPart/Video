@@ -169,6 +169,7 @@ prompts · 03 Parler à **PrediBot** avec nos prompts
 Voir le tableau « Tutoriels publiés » dans `LOVABLE-FOODEATUP-DOCS.md` pour l'état
 réel (vidéos déjà tournées/publiées) — ce fichier-ci est la cible catalogue, pas
 l'état d'avancement.
+<<<<<<< HEAD
 
 **2026-08-03 — Architecture implémentée.** Les 11 catégories / 14 modules et couleurs
 de ce catalogue sont désormais en place sur le site Lovable (`src/data/tutorials.ts`,
@@ -181,3 +182,5 @@ vides (`site-web-vitrine`, `caisse-pos`, `hubrise-livraisons`, `caroline-ia`,
 `reservation-salle`, `service-commande`, `kds-cuisine`, `marketing-fidelite`,
 `predibot`) au fur et à mesure des rushes reçus — l'architecture n'a plus besoin
 d'être retouchée pour ça.
+=======
+>>>>>>> origin/claude/foodeatup-tutorial-video-vn7udf
