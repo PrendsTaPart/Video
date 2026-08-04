@@ -263,3 +263,4 @@ et de modules (`site-web-vitrine`, `caisse-pos`, `hubrise-livraisons`, `caroline
 `predibot`, etc.) que ce que ce tableau local liste. Se fier à
 `mcp__Lovable__read_file` sur `src/data/tutorials.ts` pour l'état réel du site avant
 toute nouvelle publication, plutôt qu'à ce tableau seul.
+| 11 | HACCP | Relevés de température | `ajouter-temperature-plat` | non — `add_temperature` est limité à l'onglet Équipements, pas Plats (montré dans ce rush) ; `create_recipe`/`create_dish` n'ont pas les champs vus (allergènes, durée de vie, pièce jointe). 1ère vidéo publiée du module HACCP. Validée par Michael le 2026-08-03, publiée le 2026-08-03 (RapidoCMS + Lovable — LinkedIn pas encore demandé pour cette vidéo) |
