@@ -140,6 +140,17 @@ l'image — la voix ElevenLabs prend le relais sur toute la narration, sans conf
 l'inverse exact du traitement appliqué sur `foodeatup-boutique-tuto` (où la voix native de
 l'avatar était conservée) : ici la voix native est explicitely coupée.
 
+## Progression série (mise à jour 2026-08-04)
+
+**55 / 157 tutoriels publiés** sur `src/data/tutorials.ts` (157 = somme des `expectedCount` de
+tous les modules — configuration 14, équipe-planning 20, site-web-vitrine 8, caisse-pos 7,
+hubrise-livraisons 4, caroline-ia 6, reservation-salle 5, service-commande 3, kds-cuisine 3,
+marketing-fidelite 24, stockvision-ai 20, haccp 30, comptabilite 10, predibot 3). Décompte exact
+par module visible en direct sur le site (barres de progression "X / Y vidéos" par module,
+page d'accueil). Cette table ne relogue pas rétroactivement chaque vidéo déjà publiée avant sa
+mise en place (l'historique complet reste dans les messages `git log` de ce dépôt) — elle est
+tenue à jour à partir d'ici pour chaque nouvelle vidéo.
+
 ## Tutoriels publiés
 
 | # | Module | Sous-catégorie | Slug | claudePrompt ? |
@@ -154,3 +165,6 @@ l'avatar était conservée) : ici la voix native est explicitely coupée.
 | 8 | Configuration | 8 - saisir ses ingrédients | `saisir-ses-ingredients` | **oui, 2 prompts** — `create_ingredient` (direct) + prompt "facture fournisseur (image)". Première vidéo à utiliser `claudePrompts[]` (nouveau champ, plusieurs exemples) et `chefTipAvatar` (photo réelle de Michael). Publiée le 2026-08-02 (RapidoCMS + LinkedIn 2026-08-07 07h + Lovable) |
 | 9 | Configuration | 9 - régler ses unités | `regler-ses-unites` | non — `list_units` seul existe (lecture seule), pas de `create_unit`. Publiée le 2026-08-02 (RapidoCMS + LinkedIn 2026-08-06 16h + Lovable) |
 | 10 | Configuration | 9 - créer ses produits | `creer-ses-produits` | **oui, 2 prompts** — `create_product` (direct) + prompt "photo du code-barres". Rush sans UI d'affiliation recette/ingrédient (et `create_product` n'a pas ce champ non plus) : logique métier (produit avec/sans recette → ce que la liste de courses ajoute) documentée en `chefTip` sur explication de Michael, pas inventée à l'écran. Publiée le 2026-08-02 (RapidoCMS + LinkedIn 2026-08-07 16h + Lovable) |
+| 11 | PrediBot | 1 - prédire ses commandes (ventes & production) | `predire-ses-commandes` | non — fonctionnalité de lecture seule (prédiction IA), aucun outil MCP ne correspond. Validée par Michael et publiée le 2026-08-03 (Lovable uniquement — pas de demande RapidoCMS/LinkedIn sur cette vidéo). Rattrapage : entrée non loguée ici au moment de la publication, ajoutée a posteriori le 2026-08-04 |
+
+*(les entrées 12+ ne sont ajoutées ici qu'après validation explicite de Michael sur la vidéo livrée — voir "Règle de validation" en haut de ce fichier ; `retrouver-lhistorique-des-zones-de-nettoyage` est montée et livrée pour validation au 2026-08-04, pas encore publiée)*
