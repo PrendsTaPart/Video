@@ -95,10 +95,13 @@ ElevenLabs sur toute la vidéo). Séquence "Utilisez cette fonctionnalité avec 
 module partagé `videos/_shared/claude_prompt_sequence.py`. Aucune apostrophe dans les textes de
 bandeau (piège déjà rencontré sur `foodeatup-ingredients-tuto`).
 
-## Statut — STOP obligatoire avant publication
+## Statut — publiée
 
-Conforme à la règle de validation de `LOVABLE-FOODEATUP-DOCS.md` (« Ne plus publier aucune
-vidéo sur Lovable ni sur LinkedIn sans validation explicite de Michael au préalable ») : montage
-terminé, projet commité/poussé sur la branche `claude/foodeatup-video-tutorial-3uthjr`, vidéo
-livrée à Michael pour validation (`SendUserFile`). **Aucune publication Lovable / RapidoCMS /
-LinkedIn tant que le retour n'est pas reçu.**
+Validée par Michael le 2026-08-04 (« publi sur lovable et Rapidocms »). Publiée sur Lovable
+(`src/data/tutorials.ts`, module `stockvision-ai`, slug `gerer-son-stock-par-whatsapp`, commit
+`f82f83ab`) — voir `LOVABLE-FOODEATUP-DOCS.md` pour le détail de la collision de slug évitée
+avec `parler-a-predibot-avec-nos-prompts` (module `predibot`, déjà pris par une autre session
+sur un rush différent). **RapidoCMS non publiée** : aucun connecteur `mcp__RapidoCMS__*`
+disponible dans cette session — `videoUrl`/`thumbnailUrl` sur Lovable pointent temporairement
+sur le raw GitHub de cette branche, à remplacer par les URLs S3 RapidoCMS dès que le connecteur
+est accessible. LinkedIn non demandé pour cette vidéo.
