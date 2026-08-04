@@ -59,22 +59,46 @@ Donne-moi le détail des ingrédients (stock, DLC, manquants) pour la production
 
 - slug : `consulter-ses-productions-en-cours`
 - moduleSlug : `haccp`
-- subcategory : « Consulter ses productions en cours »
+- subcategory : « 14 - Retrouver toutes vos production » (nom exact du sous-dossier
+  Drive, module 4 HACCP — confirmé le 2026-08-04, voir ré-audit ci-dessous ; le titre
+  affiché à l'écran/sur le site reste « Consulter ses productions en cours »,
+  celui de la carte d'intro fournie)
 - howItWorks : à partir des lignes N1-N4 ci-dessus (à l'impératif)
 - whatItsFor : suivi HACCP en temps réel de toutes les productions du restaurant, sans
   ressaisie, avec alerte stock et traçabilité (DLC, lot)
 
-## ⚠️ Point à clarifier avec Michael avant de lancer la suite
+## Ré-audit Drive (2026-08-04) — le mystère des 157 vidéos partiellement résolu
 
-La demande mentionne **157 vidéos** à suivre. L'audit du Drive
-(`FAISABILITE-SERIE-TUTORIELS.md`, fait le 2026-08-02) ne trouve que **92 dossiers**
-(94 annoncés, 91 productibles + 1 bloquée par rush manquant). Le tableau de suivi
-GitHub sera mis à jour avec le vrai décompte une fois ce point tranché — proposition :
-soit 91/92 si 157 est une confusion, soit il faut qu'un module supplémentaire (13 vidéos
-d'écart déjà notées, + d'éventuelles déclinaisons 9x16) soit partagé dans le Drive pour
-atteindre 157.
+L'audit du 2026-08-02 (`FAISABILITE-SERIE-TUTORIELS.md`) ne portait que sur 5 modules
+(94 annoncés / 92 dossiers). Revérification le 2026-08-04 : **5 nouveaux modules ont été
+ajoutés dans le Drive le 2026-08-03** (Mon Site, Marketing, Service, KDS, Réservation),
+et les 2 dossiers manquants du module 1 (Configuration) ont été comblés entretemps.
+
+| Module | Dossiers (2026-08-04) |
+|---|---:|
+| 1 — Configuration | 14 (complet, les 2 trous du 2026-08-02 sont comblés) |
+| 2 — Équipe & Planning | 20 |
+| 3 — Comptabilité | 10 |
+| 4 — HACCP | 30 |
+| 5 — StockVision AI | 20 |
+| 6 — Mon Site | 8 |
+| 7 — Marketing | 24 |
+| 8 — Service | 3 |
+| 9 — KDS | 3 |
+| 10 — Réservation | 5 |
+| **Total** | **137** |
+
+**137, pas encore 157** (écart de 20) — mais très au-dessus des 92 du dernier audit. Le
+suivi GitHub (`videos/SUIVI-VIDEOS.md`) est mis à jour avec ce chiffre vérifié aujourd'hui,
+l'écart à 157 est documenté comme point ouvert (nouveaux dossiers encore à venir, et/ou
+déclinaisons 9x16 non comptées dans cette arborescence — hypothèse déjà posée le
+2026-08-02, toujours pas tranchée).
 
 ## Statut
 
-**En attente de validation du script par Michael.** Aucun audio ElevenLabs généré, aucun
-montage lancé, rien publié — conformément à la règle STOP du pipeline.
+**Validé par Michael le 2026-08-04.** Audio ElevenLabs généré (voix Adam FR), montage v1
+livré et validé. Publication en cours : Lovable (module `haccp`) + suivi GitHub.
+RapidoCMS non disponible dans cette session (connecteur non installé pour cet
+espace de travail) — vidéo et vignette servies depuis GitHub raw
+(`claude/foodeatup-video-tutorials-u4ljhv`) en attendant que RapidoCMS soit reconnecté ;
+LinkedIn non programmé pour cette raison.
