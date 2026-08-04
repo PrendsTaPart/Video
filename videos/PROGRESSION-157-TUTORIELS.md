@@ -21,7 +21,7 @@ les occurrences de `moduleSlug: "<slug>"` dans `tutorials.ts` (via
 | `stockvision-ai` | StockVision AI | 7 | 20 | 13 |
 | `predibot` | PrediBot (Agent IA Directeur) | 2 | 3 | 1 |
 | `hubrise-livraisons` | HubRise & Livraisons | 1 | 4 | 3 |
-| `site-web-vitrine` | Site Web & Vitrine | 0 | 8 | 8 |
+| `site-web-vitrine` | Site Web & Vitrine | 1+ | 8 | 7- |
 | `caisse-pos` | Caisse POS & Matériel | 0 | 7 | 7 |
 | `caroline-ia` | Agent IA Caroline | 0 | 6 | 6 |
 | `reservation-salle` | Réservations & Plan de salle | 0 | 5 | 5 |
@@ -41,6 +41,13 @@ ne pas bloquer dessus.
 - `creer-sa-fiche-plat-pour-production` — module `haccp` (créer un plat +
   ingrédients + date/quantité de production, prompts Claude `create_recipe` +
   `create_production_plan`).
+- `ajouter-du-contenu-sur-son-site` — module `site-web-vitrine`, tutoriel 07/8
+  (Recrutement, Producteurs, Boissons, Privatisations, Agenda ; prompts Claude
+  `create_job_offer` + `upsert_beverage_item`). Vidéo/dossier :
+  `videos/foodeatup-contenu-site-tuto/`. **D'autres sessions publient en
+  parallèle sur ce même module** (`gerer-les-pages-de-son-site` posté quelques
+  minutes avant celui-ci) — le compteur `1+` ci-dessus est donc une borne
+  basse, relire `src/data/tutorials.ts` en direct pour le compte exact.
 
 ## Modules à zéro tutoriel — prioriser si on veut couvrir toute la série
 
