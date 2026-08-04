@@ -120,3 +120,24 @@ autres tutos de la série).
 **Statut : publiée le 2026-08-04** (RapidoCMS + Lovable, sans étape de validation
 intermédiaire — instruction explicite de Michael pour cette vidéo). Voir
 `LOVABLE-FOODEATUP-DOCS.md` pour l'entrée du tableau de suivi.
+
+## Doublon détecté et résolu (2026-08-04)
+
+En publiant sur Lovable, l'agent a signalé une entrée existante `controler-reception-livraisons`
+(« Contrôler à réception de vos livraisons (Module HACCP) ») couvrant le même écran
+(Réception du jour → Contrôle à réception → date/heure/photo/référence/fournisseur →
+conforme/non conforme, + menu DLC/Température/Scanner) avec sa propre vidéo
+(`foodeatup-reception-tuto-v1`, 51 s). Je n'avais pas vérifié l'existant avant de
+monter cette vidéo. Question posée à Michael : garder les deux, remplacer l'ancienne,
+ou annuler la nouvelle — **réponse : remplacer l'ancienne**. L'entrée
+`controler-reception-livraisons` a été supprimée de `src/data/tutorials.ts` (le fichier
+vidéo reste dans la bibliothèque RapidoCMS, jamais supprimé — règle standing de
+sauvegarde). ⚠️ Chevauchement partiel non résolu : `scanner-ean-et-dlc-reception`
+couvre déjà en détail le menu DLC/Température/Scanner avec ses propres
+`claudePrompts[]` — cette vidéo n'y touche que dans son dernier segment/N8, à garder
+en tête pour la prochaine vidéo réception/HACCP plutôt que d'ajouter un 3e doublon.
+
+**Leçon pour la suite** : avant de monter une nouvelle vidéo, grep les slugs/mots-clés
+du sujet dans `src/data/tutorials.ts` (via `mcp__Lovable__read_file` ou
+`search_files`) pour repérer un doublon éventuel AVANT de générer la VO et le montage,
+pas après publication.
