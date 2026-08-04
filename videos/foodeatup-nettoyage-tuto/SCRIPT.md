@@ -4,9 +4,33 @@ Module HACCP, dossier Drive `10- Ajouter ,et paramètrer un plan de nettoyage`.
 Rush source : `assets/screen.mp4` (1920×828, 25fps, 57,9 s).
 Carte d'ouverture fournie par Michael : `assets/intro.jpg` (« PARAMÉTRER SON NETTOYAGE PLAN & ZONES »).
 
-**STATUT : brouillon en attente de validation du script — ne pas générer la VO tant que
-Michael n'a pas validé le texte ci-dessous** (règle du repo, voir
-`FOODEATUP-TUTORIELS-WORKFLOW.md` §3).
+**STATUT : script validé par Michael (2026-08-04) — VO générée (ElevenLabs, voix Adam FR
+`TGAegA0zNRi8I6nUdq3i`), montage terminé. Durée livrée : 40,24 s — H.264 High/yuv420p,
+AAC 48 kHz stéréo, faststart (moov avant mdat vérifié). Audio : true peak **-6,95 dBFS**.
+En attente de validation de la vidéo finale avant publication (RapidoCMS/LinkedIn/Lovable)
+— règle STOP obligatoire du repo, §6.**
+
+## Découpage final (`build.py`, retimé pour éviter l'extension d'outro)
+
+| Seg | Source | Sortie | Contenu |
+|---|---|---:|---|
+| intro | carte | 4,75 s | PARAMÉTRER SON NETTOYAGE PLAN & ZONES |
+| A | 0,30 → 9,00 | 4,60 s | liste des zones (5 zones existantes) |
+| B | 9,00 → 9,30 | 0,90 s | **zoom-punch** sur Ajouter une zone de nettoyage (1591, 43) |
+| C | 9,60 → 24,90 | 5,20 s | modal Nom « Cuisine » + Description |
+| D | 24,90 → 25,20 | 0,90 s | **zoom-punch** sur Enregistrer (1024, 658) |
+| E | 25,30 → 29,00 | 3,80 s | toast « Zone créée avec succès ! » + liste mise à jour |
+| F | 29,00 → 57,92 | 5,90 s | modal Date de l'action + Valider + détail des postes |
+| claude1 | carte générée | 3,00 s | reveal — prompt en gros, fond crème |
+| claude2 | carte générée | 2,30 s | confirmation « Copié dans le presse-papiers ! » |
+| claude3 | carte générée | 5,30 s | mockup chatbot Claude |
+| outro | carte | 6,20 s | CTA (pas d'extension nécessaire après retiming) |
+
+Offsets VO vérifiés contre les ancrages `S[...]` (0 écart) : N0=0.30 N1=5.20 N2=9.86
+N3=13.08 N4=16.30 N5=20.52 N6=25.10 N7=29.74 N8=34.39, voice_end=39.41s. Premier build
+(segments non retimés) avait forcé l'outro à s'étendre 6,20→13,03s pour absorber le
+décalage VO/visuel — corrigé en allongeant A/C/E/F et l'intro avant de rebuilder (bug
+déjà documenté dans `FOODEATUP-TUTORIELS-WORKFLOW.md`, reproduit puis évité ici).
 
 ## Déroulé observé dans le rush (analyse frame par frame)
 
