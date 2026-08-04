@@ -1,9 +1,13 @@
 # FoodEatUp Academy — site de documentation Lovable (mémoire du projet)
 
-**À relire à chaque nouvelle vidéo produite.** Ce fichier est la source de vérité du site
-Lovable qui documente les 91 tutoriels FoodEatUp. Chaque vidéo livrée doit se terminer par
-l'ajout de son entrée ici (tableau "Tutoriels publiés" en bas) et l'envoi du prompt Lovable
-correspondant au projet.
+**À relire à chaque nouvelle vidéo produite.** Ce fichier documente le site Lovable qui
+héberge la série de **157 tutoriels FoodEatUp** (somme des `expectedCount` du tableau
+`modules` de `src/data/tutorials.ts` — voir le calcul dans
+`videos/PROGRESSION-157-TUTORIELS.md`, qui est le tableau de suivi à jour : 71/157 publiés
+au 2026-08-04). Chaque vidéo livrée doit se terminer par l'ajout de son entrée ici (tableau
+"Tutoriels publiés" en bas, **qui a pris du retard sur le site réel — voir avertissement plus
+bas**) et l'envoi du prompt Lovable correspondant au projet, puis par la mise à jour de
+`videos/PROGRESSION-157-TUTORIELS.md`.
 
 ## Identifiants du projet
 
@@ -155,5 +159,6 @@ l'avatar était conservée) : ici la voix native est explicitely coupée.
 | 9 | Configuration | 9 - régler ses unités | `regler-ses-unites` | non — `list_units` seul existe (lecture seule), pas de `create_unit`. Publiée le 2026-08-02 (RapidoCMS + LinkedIn 2026-08-06 16h + Lovable) |
 | 10 | Configuration | 9 - créer ses produits | `creer-ses-produits` | **oui, 2 prompts** — `create_product` (direct) + prompt "photo du code-barres". Rush sans UI d'affiliation recette/ingrédient (et `create_product` n'a pas ce champ non plus) : logique métier (produit avec/sans recette → ce que la liste de courses ajoute) documentée en `chefTip` sur explication de Michael, pas inventée à l'écran. Publiée le 2026-08-02 (RapidoCMS + LinkedIn 2026-08-07 16h + Lovable) |
 | 11 | StockVision AI | Liste des courses : ajouter, modifier et supprimer un produit | `tenir-sa-liste-de-courses` | **oui** — `create_supplier_order` (la commande fournisseur, suite logique de la liste construite à l'écran). Publiée sur Lovable (RapidoCMS archivé, pas de post LinkedIn — non demandé). **Voix mixte** : N0/N6/N8 ElevenLabs Adam, N1-N5/N7 en secours Piper local (quota ElevenLabs épuisé en cours de production) — à régénérer en Adam dès que le quota est reconstitué, voir `videos/foodeatup-liste-courses-tuto/SCRIPT.md` |
+| 12 | Hygiène & HACCP | Créer un plat pour la production (ingrédients, date, quantité) | `creer-sa-fiche-plat-pour-production` | **oui, 2 prompts** — `create_recipe` (plat + ingrédients) + `create_production_plan` (date/quantité). Publiée sur Lovable (RapidoCMS archivé, pas de post LinkedIn — non demandé). Voix 100% ElevenLabs Adam (quota reconstitué). Voir `videos/foodeatup-fiche-plat-tuto/SCRIPT.md` |
 
 ⚠️ **Ce tableau est incomplet par rapport au site Lovable réel** : le site a évolué au-delà de ce fichier (modules/catégories renommés — voir `src/data/tutorials.ts`, ex. `moduleSlug: "stockvision-ai"` existe déjà avec plusieurs tutoriels non listés ici : `deduire-ses-besoins-de-production`, `imprimer-ses-ingredients-de-production`, `sortir-ses-ingredients-du-stock`, `saisir-un-mouvement-de-stock`, `lire-ses-mouvements-de-stock`). Se fier à `src/data/tutorials.ts` (via `read_file`) comme source de vérité pour éviter les doublons, pas seulement à ce tableau.
