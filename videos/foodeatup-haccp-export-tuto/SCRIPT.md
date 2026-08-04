@@ -7,8 +7,23 @@ Historique du module HACCP.mp4`, 1920x828, 25fps, 58,4 s, exploitable en entier
 (pas de rush corrompu cette fois — pipeline `build.py` standard, pas la variante
 scène HTML de `foodeatup-rapport-historique-tuto`).
 
-**Statut : DRAFT — en attente de validation avant génération VO (STOP obligatoire,
-voir FOODEATUP-TUTORIELS-WORKFLOW.md étape 3).**
+**Statut : v1 montée, en attente de validation de Michael avant publication**
+(RapidoCMS/LinkedIn/Lovable) — STOP obligatoire, voir
+FOODEATUP-TUTORIELS-WORKFLOW.md étape 6. Script VO validé, VO générée
+(ElevenLabs, N6/N8 réutilisés tels quels depuis `foodeatup-fournisseurs-tuto`
+— zéro crédit sur ces deux lignes), montage `build.py` terminé.
+
+Durée livrée : **48,48 s** — H.264 High/yuv420p 1920x828, AAC 48 kHz stéréo,
+faststart confirmé (moov avant mdat). Peak level mesuré sur le MP4 final :
+**-7,2 dBFS** (même marge que `tva`/`ingrédients`).
+
+Note de calage : la narration (N0-N8, 47,4 s de parole cumulée) dépassait la
+durée "naturelle" des segments visuels de première passe (dérive montée à
+9,7 s avant correction) — corrigé en allongeant les segments informatifs (A,
+C, E, F, H) pour qu'ils couvrent la ligne VO qui les commente, comme sur
+`tva` v3. Dérive résiduelle contenue (1,0-2,5 s par ligne, pas de cascade)
+absorbée par l'auto-extension de la carte de sortie (6,20 s → 8,47 s), pattern
+accepté ailleurs dans la série (voir `foodeatup-ingredients-tuto/SCRIPT.md`).
 
 ## Déroulé observé dans le rush (extraction de frames toutes les 2s + frames ciblées)
 
