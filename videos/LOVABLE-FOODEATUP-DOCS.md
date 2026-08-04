@@ -1,9 +1,13 @@
 # FoodEatUp Academy — site de documentation Lovable (mémoire du projet)
 
-**À relire à chaque nouvelle vidéo produite.** Ce fichier est la source de vérité du site
-Lovable qui documente les 91 tutoriels FoodEatUp. Chaque vidéo livrée doit se terminer par
-l'ajout de son entrée ici (tableau "Tutoriels publiés" en bas) et l'envoi du prompt Lovable
-correspondant au projet.
+**À relire à chaque nouvelle vidéo produite.** Ce fichier documente le site Lovable qui
+héberge la série de **157 tutoriels FoodEatUp** (somme des `expectedCount` du tableau
+`modules` de `src/data/tutorials.ts` — voir le calcul dans
+`videos/PROGRESSION-157-TUTORIELS.md`, qui est le tableau de suivi à jour : 71/157 publiés
+au 2026-08-04). Chaque vidéo livrée doit se terminer par l'ajout de son entrée ici (tableau
+"Tutoriels publiés" en bas, **qui a pris du retard sur le site réel — voir avertissement plus
+bas**) et l'envoi du prompt Lovable correspondant au projet, puis par la mise à jour de
+`videos/PROGRESSION-157-TUTORIELS.md`.
 
 ## Identifiants du projet
 
@@ -266,3 +270,6 @@ toute nouvelle publication, plutôt qu'à ce tableau seul.
 | 11 | HACCP | Relevés de température | `ajouter-temperature-plat` | non — `add_temperature` est limité à l'onglet Équipements, pas Plats (montré dans ce rush) ; `create_recipe`/`create_dish` n'ont pas les champs vus (allergènes, durée de vie, pièce jointe). 1ère vidéo publiée du module HACCP. Validée par Michael le 2026-08-03, publiée le 2026-08-03 (RapidoCMS + Lovable — LinkedIn pas encore demandé pour cette vidéo) |
 | 11 | HACCP | Traçabilité simplifiée (photo express, sans produit ni lot) | `creer-une-tracabilite-simplifiee` | **oui** — `create_haccp_tracabilite` avec `type: "simple"` (vs `type: "complete"` pour la carte "Traçabilité complète"). Rush fourni par Michael (screen recording réel de la fonctionnalité) ; un aléa d'enregistrement (erreur caméra "Permission dismissed" vers 10-12s dans la source) a été identifié et coupé au montage, pas montré ni commenté en VO. Validée et publiée le 2026-08-04 (RapidoCMS + LinkedIn 2026-08-08 07h + Lovable) |
 | 12 | Configuration | Configuration de sa vitrine | `ouvrir-sa-vitrine-en-ligne` | **oui** — combine `apply_site_template`, `set_site_theme`, `publish_site`. Vidéo montée le 2026-08-02 (avatar HeyGen sur N0, reste ElevenLabs) mais restée non publiée (`SCRIPT.md` marquait "à livrer à Michael pour validation") ; publiée le 2026-08-04 sur instruction explicite de Michael de publier toutes les vidéos réalisées : RapidoCMS + LinkedIn (2026-08-08 16h) + Lovable (une entrée `ouvrir-sa-vitrine-en-ligne` existait déjà avec une vidéo provisoire, mise à jour avec l'URL RapidoCMS définitive plutôt que dupliquée) |
+| 11 | StockVision AI | Liste des courses : ajouter, modifier et supprimer un produit | `tenir-sa-liste-de-courses` | **oui** — `create_supplier_order` (la commande fournisseur, suite logique de la liste construite à l'écran). Publiée sur Lovable (RapidoCMS archivé, pas de post LinkedIn — non demandé). **Voix mixte** : N0/N6/N8 ElevenLabs Adam, N1-N5/N7 en secours Piper local (quota ElevenLabs épuisé en cours de production) — à régénérer en Adam dès que le quota est reconstitué, voir `videos/foodeatup-liste-courses-tuto/SCRIPT.md` |
+| 12 | Hygiène & HACCP | Créer un plat pour la production (ingrédients, date, quantité) | `creer-sa-fiche-plat-pour-production` | **oui, 2 prompts** — `create_recipe` (plat + ingrédients) + `create_production_plan` (date/quantité). Publiée sur Lovable (RapidoCMS archivé, pas de post LinkedIn — non demandé). Voix 100% ElevenLabs Adam (quota reconstitué). Voir `videos/foodeatup-fiche-plat-tuto/SCRIPT.md` |
+⚠️ **Ce tableau est incomplet par rapport au site Lovable réel** : le site a évolué au-delà de ce fichier (modules/catégories renommés — voir `src/data/tutorials.ts`, ex. `moduleSlug: "stockvision-ai"` existe déjà avec plusieurs tutoriels non listés ici : `deduire-ses-besoins-de-production`, `imprimer-ses-ingredients-de-production`, `sortir-ses-ingredients-du-stock`, `saisir-un-mouvement-de-stock`, `lire-ses-mouvements-de-stock`). Se fier à `src/data/tutorials.ts` (via `read_file`) comme source de vérité pour éviter les doublons, pas seulement à ce tableau.
