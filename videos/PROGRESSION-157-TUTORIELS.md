@@ -21,7 +21,7 @@ les occurrences de `moduleSlug: "<slug>"` dans `tutorials.ts` (via
 | `stockvision-ai` | StockVision AI | 7 | 20 | 13 |
 | `predibot` | PrediBot (Agent IA Directeur) | 2 | 3 | 1 |
 | `hubrise-livraisons` | HubRise & Livraisons | 1 | 4 | 3 |
-| `site-web-vitrine` | Site Web & Vitrine | 0 | 8 | 8 |
+| `site-web-vitrine` | Site Web & Vitrine | 5 | 8 | 3 |
 | `caisse-pos` | Caisse POS & Matériel | 0 | 7 | 7 |
 | `caroline-ia` | Agent IA Caroline | 0 | 6 | 6 |
 | `reservation-salle` | Réservations & Plan de salle | 0 | 5 | 5 |
@@ -44,9 +44,11 @@ ne pas bloquer dessus.
 
 ## Modules à zéro tutoriel — prioriser si on veut couvrir toute la série
 
-`site-web-vitrine`, `caisse-pos`, `caroline-ia`, `reservation-salle`,
+`caisse-pos`, `caroline-ia`, `reservation-salle`,
 `marketing-fidelite` (le plus gros, 24 attendus), `service-commande`,
-`kds-cuisine`. Vérifier dans `references/mcp-plugins-video-catalog.md` et les
+`kds-cuisine`. `site-web-vitrine` n'est plus a zero (5/8, dont
+`personnaliser-son-site` ajoute le 2026-08-04). Vérifier dans
+`references/mcp-plugins-video-catalog.md` et les
 outils `mcp__FoodEatUp__*` quels cas d'usage de ces modules ont un outil MCP
 correspondant, pour préparer scripts + `claudePrompt(s)` en amont du prochain
 rush fourni par Michael.

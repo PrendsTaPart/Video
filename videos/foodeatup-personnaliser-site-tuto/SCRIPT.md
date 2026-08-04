@@ -90,6 +90,10 @@ Adam FR sur toute la narration).
 
 ## Statut publication
 
-Montage en cours — **STOP validation obligatoire avant publication** (règle du
-2026-08-02) : livraison du fichier via `SendUserFile`, attente d'un retour
-explicite de Michael avant tout upload RapidoCMS/LinkedIn ou mise à jour Lovable.
+Livrée et validée le 2026-08-04. Publiée sur Lovable le 2026-08-04 : remplace la
+fiche placeholder préexistante `personnaliser-son-site` (module `site-web-vitrine`,
+order 3) dans `src/data/tutorials.ts` via `mcp__Lovable__send_message`, `tsgo
+--noEmit` OK. Vidéo/vignette hébergées en raw GitHub
+(`videos/foodeatup-personnaliser-site-tuto/out/`, branche
+`claude/foodeatup-video-tutorial-4qnhnz`) — RapidoCMS non disponible dans cette
+session, LinkedIn non demandé.
