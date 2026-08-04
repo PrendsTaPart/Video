@@ -61,3 +61,12 @@ Crée une checklist hygiène [nom du point de contrôle] pour la catégorie
    contrôle] pour la zone [zone contrôlée] : réponse [Oui/Non/Non évalué],
    commentaire [commentaire], pour mon établissement FoodEatUp (ID [ID
    établissement]).`
+
+## Statut publication
+
+**Publiée le 2026-08-04** (validation de Michael, puis "tu peux publier"). RapidoCMS :
+vidéo + vignette uploadées (`foodeatup-checklist-hygiene-tuto-v1` / `-thumbnail`). LinkedIn :
+draft créé et programmé pour le 2026-08-16 07h00 (rotation FoodEatUp 2 posts/jour déjà pleine
+jusqu'au 15/08 au moment de la publication). Lovable : tutoriel `creer-sa-checklist-hygiene`
+ajouté dans `src/data/tutorials.ts`, module HACCP, avec `claudePrompts[]` (création +
+validation).
