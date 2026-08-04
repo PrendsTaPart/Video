@@ -325,3 +325,17 @@ toute nouvelle publication, plutôt qu'à ce tableau seul.
 | 11 | HACCP | Historique traçabilité | `retrouver-lhistorique-de-la-tracabilite` | **oui** — `list_haccp_tracabilite`. Rush fourni par Michael (screen recording + cartes intro/outro), validée puis publiée le 2026-08-04 (RapidoCMS + Lovable — pas de post LinkedIn, non demandé) |
 | 11 | HACCP | Créer un produit à sélectionner pour vos étiquettes | `creer-produit-pour-etiquetage` | non — `create_haccp_label` (déjà utilisé sur `imprimer-ses-etiquettes`) crée l'étiquette DLC en aval, pas ce produit-catalogue réutilisable (marque, code-barres, allergènes, durée de vie) montré dans ce rush. Validée et publiée le 2026-08-04 (Lovable ; **pas de RapidoCMS/LinkedIn** — connecteur RapidoCMS non disponible dans cette session, `videoUrl`/`thumbnailUrl` pointent en attendant vers le raw GitHub de la branche `claude/foodeatup-video-tutorials-6hna9b`, même convention que `imprimer-ses-etiquettes`) |
 | 11 | HACCP | Historique - Production | `retrouver-historique-productions` | **oui** — `list_top_productions` (lecture seule, aucune action de création dans le rush). Validée par Michael le 2026-08-04, publiée (RapidoCMS + Lovable, `commit_sha` `0d0021f`). Pas de créneau LinkedIn programmé dans cette session. Voisine de `tracer-ses-productions-historique` (déjà présente sur le site, écran différent — gestion "Mes productions" par statut) : les deux entrées documentent des écrans distincts, gardées séparées exprès. `subcategory` est une estimation (nom exact du sous-dossier Drive non confirmé) |
+## En attente de validation (montées, pas encore publiées)
+Vidéos montées et poussées sur la branche mais **pas publiées** — règle "STOP
+obligatoire" ci-dessus (pas d'upload RapidoCMS / draft LinkedIn / entrée
+Lovable tant que Michael n'a pas validé le montage livré).
+| Module | Sous-catégorie | Slug prévu | claudePrompt ? | Statut |
+|---|---|---|---|---|
+| HACCP | Poser une DLC sur ses productions | `poser-une-dlc` | **oui** — `create_haccp_label` (paramètre `dlc` natif). Prompt : voir `foodeatup-dlc-tuto/SCRIPT.md` | Montée le 2026-08-04 (`videos/foodeatup-dlc-tuto/`, 44,5 s), livrée pour validation. Réutilise le rush "Créer les étiquettes de vos productions" (même flux HACCP, focus recadré sur le champ DLC). En attente de retour Michael avant RapidoCMS/LinkedIn/Lovable. |
+**Sur le total de 157 vidéos mentionné par Michael** : le suivi ci-dessus (et
+le tableau des 5 modules plus haut) totalise 94 vidéos identifiées pour le
+site FoodEatUp Academy — 157 semble couvrir un périmètre plus large
+(Reels FoodEatUp, série-30, séries Rapido, stories 30 jours — voir
+`videos/PLAN-TIKTOK-ET-MANQUANTS.md` et `references/mcp-plugins-video-catalog.md`
+pour ces autres séries). Pas de liste unique consolidée à 157 trouvée dans le
+dépôt : à confirmer avec Michael avant de fabriquer un chiffre de suivi global.
