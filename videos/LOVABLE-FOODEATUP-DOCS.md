@@ -218,6 +218,16 @@ tenue à jour à partir d'ici pour chaque nouvelle vidéo.
 
 ## Tutoriels publiés
 
+**Note (2026-08-04)** : ce tableau n'était plus synchronisé avec le site — `src/data/tutorials.ts`
+contient déjà **80 tutoriels** répartis sur 7 modules (`configuration` 15, `equipe-planning` 19,
+`comptabilite` 10, `haccp` 14→15 avec l'ajout ci-dessous, `stockvision-ai` 7, `predibot` 2,
+`hubrise-livraisons` 1) — bien au-delà des 10 lignes listées ici et du chiffre de 91/92 vidéos
+« productibles » audité dans `FAISABILITE-SERIE-TUTORIELS.md` (qui ne couvrait que les 5 modules
+du Drive d'origine, pas `predibot`/`hubrise-livraisons` ajoutés depuis). Aucune trace dans le
+dépôt d'un chiffre de 157 vidéos — à clarifier avec Michael si ce nombre doit devenir la cible
+officielle. Ce tableau reste tenu à jour pour les vidéos produites *depuis ce dépôt*, mais n'est
+plus la source de vérité du nombre total de tutoriels publiés (c'est `tutorials.ts` sur Lovable).
+
 | # | Module | Sous-catégorie | Slug | claudePrompt ? |
 |---|---|---|---|---|
 | 1 | Configuration | 1 - Inscription, e-mail de confirmation | `creer-son-compte` | non — pas d'outil MCP (signup) |
@@ -312,3 +322,4 @@ toute nouvelle publication, plutôt qu'à ce tableau seul.
 *(les entrées 13+ ne sont ajoutées ici qu'après validation explicite de Michael sur la vidéo livrée — voir "Règle de validation" en haut de ce fichier)*
 | 11 | HACCP | Accueil et historique du classeur HACCP | `ouvrir-son-classeur-haccp` | **oui** — `list_haccp_temperatures` (étages vidéo) + `list_haccp_tracabilite` (2e cas d'usage, fiche seulement). Dossier repo `videos/foodeatup-haccp-export-tuto` (intro/outro fournis par Michael, rush "Retrouver et exporter les Historique du module HACCP", exploitable en entier). Validée et publiée le 2026-08-04 : RapidoCMS (`foodeatup-classeur-haccp-tuto-v1`/`-thumbnail`, a rempli en place le créneau LinkedIn déjà planifié `FoodEatUp — Ouvrir son classeur HACCP`, 2026-08-27 07h) + Lovable (entrée déjà présente dans `tutorials.ts`, seul `durationSeconds` corrigé 45→48) |
 | 11 | Comptabilité | 2 - créer une facture | `creer-une-facture` | **oui** — `create_invoice`. Rush montre client + TVA intracommunautaire, recherche/création produit, quantité/prix/TVA ligne, offre, remise, dates, mode de paiement, et l'indicateur de conformité Factur-X (2026) grimpant à 100 % en direct — repris en `chefTip` (facturation électronique obligatoire 2026 en France). Publiée le 2026-08-04 (RapidoCMS + LinkedIn 2026-09-10 16h + Lovable, juste après `creer-un-devis`) |
+| 11 | HACCP | Historique traçabilité | `retrouver-lhistorique-de-la-tracabilite` | **oui** — `list_haccp_tracabilite`. Rush fourni par Michael (screen recording + cartes intro/outro), validée puis publiée le 2026-08-04 (RapidoCMS + Lovable — pas de post LinkedIn, non demandé) |
