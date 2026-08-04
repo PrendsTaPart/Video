@@ -154,3 +154,21 @@ l'avatar était conservée) : ici la voix native est explicitely coupée.
 | 8 | Configuration | 8 - saisir ses ingrédients | `saisir-ses-ingredients` | **oui, 2 prompts** — `create_ingredient` (direct) + prompt "facture fournisseur (image)". Première vidéo à utiliser `claudePrompts[]` (nouveau champ, plusieurs exemples) et `chefTipAvatar` (photo réelle de Michael). Publiée le 2026-08-02 (RapidoCMS + LinkedIn 2026-08-07 07h + Lovable) |
 | 9 | Configuration | 9 - régler ses unités | `regler-ses-unites` | non — `list_units` seul existe (lecture seule), pas de `create_unit`. Publiée le 2026-08-02 (RapidoCMS + LinkedIn 2026-08-06 16h + Lovable) |
 | 10 | Configuration | 9 - créer ses produits | `creer-ses-produits` | **oui, 2 prompts** — `create_product` (direct) + prompt "photo du code-barres". Rush sans UI d'affiliation recette/ingrédient (et `create_product` n'a pas ce champ non plus) : logique métier (produit avec/sans recette → ce que la liste de courses ajoute) documentée en `chefTip` sur explication de Michael, pas inventée à l'écran. Publiée le 2026-08-02 (RapidoCMS + LinkedIn 2026-08-07 16h + Lovable) |
+
+## En attente de validation (montées, pas encore publiées)
+
+Vidéos montées et poussées sur la branche mais **pas publiées** — règle "STOP
+obligatoire" ci-dessus (pas d'upload RapidoCMS / draft LinkedIn / entrée
+Lovable tant que Michael n'a pas validé le montage livré).
+
+| Module | Sous-catégorie | Slug prévu | claudePrompt ? | Statut |
+|---|---|---|---|---|
+| HACCP | Poser une DLC sur ses productions | `poser-une-dlc` | **oui** — `create_haccp_label` (paramètre `dlc` natif). Prompt : voir `foodeatup-dlc-tuto/SCRIPT.md` | Montée le 2026-08-04 (`videos/foodeatup-dlc-tuto/`, 44,5 s), livrée pour validation. Réutilise le rush "Créer les étiquettes de vos productions" (même flux HACCP, focus recadré sur le champ DLC). En attente de retour Michael avant RapidoCMS/LinkedIn/Lovable. |
+
+**Sur le total de 157 vidéos mentionné par Michael** : le suivi ci-dessus (et
+le tableau des 5 modules plus haut) totalise 94 vidéos identifiées pour le
+site FoodEatUp Academy — 157 semble couvrir un périmètre plus large
+(Reels FoodEatUp, série-30, séries Rapido, stories 30 jours — voir
+`videos/PLAN-TIKTOK-ET-MANQUANTS.md` et `references/mcp-plugins-video-catalog.md`
+pour ces autres séries). Pas de liste unique consolidée à 157 trouvée dans le
+dépôt : à confirmer avec Michael avant de fabriquer un chiffre de suivi global.
