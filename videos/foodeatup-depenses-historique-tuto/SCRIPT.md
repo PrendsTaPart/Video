@@ -81,7 +81,10 @@ toujours visible en un coup d'œil.
 ## Statut publication
 
 Montage terminé et checklist de compatibilité passée (H.264 High/yuv420p,
-AAC 48 kHz stéréo, faststart, peak -7,2 dBFS, 0 erreur de décodage).
-**En attente de validation de Michael avant toute publication** (règle du
-workflow : ni Lovable, ni RapidoCMS/LinkedIn tant que le retour explicite
-n'est pas reçu).
+AAC 48 kHz stéréo, faststart, peak -7,2 dBFS, 0 erreur de décodage). Vidéo
+livrée à Michael, validée. Tutoriel `classer-ses-factures-dans-les-depenses`
+ajouté sur Lovable (module `comptabilite`, subcategory "7 - classer ses
+factures dans les dépenses") le 2026-08-03, vidéo et vignette servies en
+raw GitHub depuis la branche `claude/foodeatup-tutorial-video-c52fkn`.
+Pas d'upload RapidoCMS ni de programmation LinkedIn demandés pour cette
+vidéo — publication limitée à Lovable.
