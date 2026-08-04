@@ -98,8 +98,23 @@ chefTip: (à écrire — astuce du chef sur l'usage terrain, ex: "Gardez votre t
 chefTipAvatar: (photo réelle de Michael si fournie, sinon icône chef par défaut)
 ```
 
-## STOP obligatoire
+## Statut
 
-Script ci-dessus **proposé, pas validé**. Pas de génération audio ElevenLabs, pas de montage,
-pas de publication (RapidoCMS/LinkedIn/Lovable/GitHub) tant que Michael n'a pas donné son
-accord explicite (ou demandé des ajustements — dans ce cas, corriger puis re-soumettre).
+Script validé par Michael ("continue"). VO générée (ElevenLabs, voix Adam FR
+`TGAegA0zNRi8I6nUdq3i`, `eleven_multilingual_v2`) pour N0-N7 ; **N8 réutilisé tel quel**
+(byte-identique à `foodeatup-temperature-tuto/vo/N8.mp3`, md5 `e525d2f8d8350dce70e11f27a595fecd`).
+
+Montage terminé : `out/foodeatup-agent-haccp-tuto-v1.mp4` — **48,48 s**, H.264 High/yuv420p
+1526x1032 25 fps, AAC LC 48 kHz stéréo, faststart (`ftyp`→`moov`→`free`→`mdat` confirmé),
+0 erreur de décodage. Audio : true peak **-7,09 dBFS** (marge confortable sous 0 dBFS).
+Vignette YouTube : `out/thumbnail-youtube.jpg` (1280x720, réutilisation neutre de
+`assets/intro.jpg`, aucun redesign).
+
+Note de calibrage : les segments WhatsApp (pas de bouton à cliquer, juste un fil de discussion
+qui défile) ont été calibrés par proportion sur les 8,3 premières secondes du rush plutôt que
+par seuillage colorimétrique d'un clic précis — sans conséquence visuelle car le décor ne
+change pas dans ce passage. Un peu de dérive (2,4 à 5,8 s cumulés) a été absorbée par
+l'auto-extension de la carte de sortie (`build.py`), comme conçu.
+
+Livrée à Michael pour visionnage. Prochaine étape : ajout sur le site Lovable (module `haccp`)
+et mise à jour du tableau de suivi.
