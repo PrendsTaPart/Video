@@ -5,8 +5,18 @@ Audio : true peak **-7,25 dBFS** (mesuré sur le MP4 final). Vignette YouTube
 `out/thumbnail-youtube.jpg` (1280×720, 112 Ko, recadrage neutre de `assets/intro.jpg`,
 aucun redesign).
 
-Module **HACCP**, sous-catégorie proposée : **« Relevé des températures des équipements »**
-(à confirmer/corriger si le sous-dossier Drive porte un autre intitulé exact).
+Module **HACCP**, sous-catégorie : **« Relevé de température des équipements »** (confirmée —
+une fiche Lovable préexistante pour ce même tutoriel portait déjà ce nom exact, voir
+`LOVABLE-FOODEATUP-DOCS.md`).
+
+## Publication (2026-08-04)
+
+RapidoCMS : vidéo + vignette uploadées. LinkedIn (compte FoodEatUp, `68807312`) : programmé le
+2026-09-09 16h00 — rotation 07h/16h pleine jusqu'à cette date. Lovable : fiche préexistante
+`relever-une-temperature-equipement` (module haccp) mise à jour avec les vraies URLs vidéo/
+vignette et la durée réelle (38s) ; son premier `claudePrompt` (3 prompts déjà présents,
+plus riches que le brouillon ci-dessous) réaligné sur le texte affiché à l'écran dans la
+vidéo pour rester cohérent vidéo/site.
 
 Source : `assets/screen.mp4` (1920×828, 25fps, 20,68s) — page **Production > Températures**.
 
