@@ -425,3 +425,10 @@ tutoriel, toujours relire `src/data/tutorials.ts` en direct sur Lovable (pas seu
 contient aussi des fiches ajoutées depuis d'autres branches de travail (ex. `predibot`,
 `valider-une-production`) — toujours relire `src/data/tutorials.ts` côté Lovable avant
 d'ajouter une entrée, pour ne pas créer de doublon (vérifié pour celle-ci).
+| — | StockVision AI | Mouvements de stock : détails et suppression | `lire-ses-mouvements-de-stock` | **oui, 2 prompts** — `list_stocks`/`list_low_stocks` (faire le point) + `adjust_stock` (corriger une ligne, l'outil écrit lui-même un mouvement tracé). Aucun outil MCP ne supprime un mouvement : pas de prompt inventé pour ce geste. Publiée le 2026-08-03 (RapidoCMS + Lovable, commit `a485c03`). Pas de planification LinkedIn — non demandée. |
+> ⚠️ **Ce tableau a pris du retard sur le site.** `src/data/tutorials.ts` contient
+> aujourd'hui bien plus d'entrées que les 10 listées ci-dessus (modules `equipe-planning`,
+> `haccp`, `comptabilite`, `marketing-fidelite`, `stockvision-ai`…), et le fichier a gagné
+> des modules qui ne figurent pas dans la liste des 5 plus haut. La source de vérité est
+> le fichier Lovable lui-même — lire `src/data/tutorials.ts` avant de supposer qu'un
+> tutoriel n'existe pas encore, plutôt que de se fier à ce tableau seul.

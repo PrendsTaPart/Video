@@ -240,6 +240,31 @@ réutilisables telles quelles pour générer des visuels statiques (pas seulemen
   apostrophe/`%` ne s'applique plus aux bandeaux (elle reste vraie partout où
   `drawtext` est encore utilisé). **Les tutoriels déjà publiés ont ce défaut** et
   gagneraient à être re-rendus sur ce `build.py`.
+- **`drawbox` n'a pas de variable d'horodatage — son `t` est l'ÉPAISSEUR du trait.**
+  Piège majeur, découvert sur `foodeatup-mouvements-stock-tuto` (2026-08-03), et qui
+  **affecte rétroactivement toutes les vidéos de la série déjà livrées**. Le `banner()`
+  historique dessinait la plaque bleue + le liseré orange avec `drawbox`, en animant `x`
+  par une expression en `t` pour l'effet de glissement. Comme le pipeline passe `t=fill`,
+  `t` vaut un nombre énorme dans l'expression : les rampes `min(1\,max(0\,(t-…)/0.32))`
+  saturent à 1 en permanence et `x = -640+700*1-700*1 = -640`. **La plaque est donc garée
+  hors champ à chaque image, sur chaque vidéo.** Aucune erreur ffmpeg : le filtre est
+  valide, il dessine simplement hors cadre. `drawtext` expose bien `t`, donc le *texte*
+  glissait normalement — résultat : des bandeaux réduits à du texte blanc sur fond de page
+  clair, quasi illisibles. Vérifiable sur n'importe quel livrable antérieur
+  (`foodeatup-vitrine-tuto-v1.mp4`, t≈12/16/22 s : aucun pixel bleu sous le texte).
+  **Correction à reprendre dans tout nouveau `build.py`** : dessiner la plaque avec le
+  `box=1` de `drawtext` (il suit le texte et partage son `t`), en deux passes — une orange
+  décalée de ~14 px à gauche qui dépasse en liseré, puis la bleue par-dessus, même `y` et
+  même `boxborderw`. Voir `videos/foodeatup-mouvements-stock-tuto/build.py`. Règle
+  générale : **n'animer sur `t` que des filtres qui exposent `t`** (`drawtext`, `overlay`,
+  `fade`, `zoompan` via `on`) ; pour `drawbox`, passer par `enable=` (système timeline,
+  qui a bien `t`) et une position fixe.
+- **Dimensionner un segment sur sa ligne VO doit compter le recouvrement `xfade`.**
+  Un segment ne contribue que `target - XF` à la timeline finale. Une ligne couvrant les
+  segments X..Z tient donc si `somme(target) - n*XF >= ligne + amorce + GAP`. Oublier le
+  terme `n*XF` produit exactement la dérive décrite plus haut (2,3 s accumulés sur
+  `foodeatup-mouvements-stock-tuto` au premier passage). Faire échouer le build sur
+  `drift` non nul plutôt que de vérifier à l'œil — trois lignes dans `build.py`.
 - **Apostrophe dans un texte de bandeau (`banner()`) = même bug que le `%`
   dans les prompts Claude.** Le texte est injecté entre guillemets simples
   dans l'argument `-vf` (`text='{text}'`) ; une apostrophe dedans (ex. "seuil
