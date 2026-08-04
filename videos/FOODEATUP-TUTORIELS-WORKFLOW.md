@@ -221,6 +221,25 @@ réutilisables telles quelles pour générer des visuels statiques (pas seulemen
   entrée PNG en `-loop 1` + `overlay=...:shortest=1`, sinon c'est le PNG
   (1 frame, ou sa durée `-t`) qui décide de la longueur du segment.
   Bénéfice collatéral : plus de contrainte d'apostrophe dans les libellés.
+- **Les bandeaux d'étape ne s'affichaient pas du tout (corrigé le 2026-08-03).**
+  `banner()` dessinait le filet orange et la plaque bleue avec deux `drawbox` dont
+  le `x` était une expression de `t` (glissement latéral). **`drawbox` (ffmpeg 6.1)
+  n'évalue x/y/w/h qu'une seule fois, à la configuration du filtre**, donc à `t=0`,
+  où l'expression de glissement vaut encore `x=-640` — hors champ. Les deux boîtes
+  n'étaient donc jamais dessinées ; seul `drawtext`, qui réévalue bien son `x` à
+  chaque frame, s'affichait, en texte blanc nu sur une UI claire : illisible.
+  **Correctif de référence dans `videos/foodeatup-production-ingredients-tuto/build.py`**
+  (`render_banner_png` + `banner_x_expr`) : le bandeau complet est rendu une fois en
+  PNG RGBA avec PIL, puis glissé avec `overlay`, qui honore `eval=frame`. Deux
+  pièges en le reprenant :
+  - `overlay` doit recevoir **`shortest=1`** — le PNG est une entrée `-loop 1`
+    infinie, sans quoi l'encodage du segment ne se termine jamais.
+  - `punch_highlight()` passe en **géométrie statique** pour la même raison : son
+    pulse `sin(t)` était figé à sa valeur t=0 de toute façon.
+  Corollaire : PIL dessinant désormais le texte du bandeau, la contrainte
+  apostrophe/`%` ne s'applique plus aux bandeaux (elle reste vraie partout où
+  `drawtext` est encore utilisé). **Les tutoriels déjà publiés ont ce défaut** et
+  gagneraient à être re-rendus sur ce `build.py`.
 - **Apostrophe dans un texte de bandeau (`banner()`) = même bug que le `%`
   dans les prompts Claude.** Le texte est injecté entre guillemets simples
   dans l'argument `-vf` (`text='{text}'`) ; une apostrophe dedans (ex. "seuil

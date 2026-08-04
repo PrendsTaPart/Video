@@ -12,4 +12,4 @@ videos/foodeatup-tutoriel-5min/
 videos/rapidorh-presentation-4min/
 videos/rapidocms-presentation-4min/assets/avatar/
 # Per-project scratch (frames, segments, silent renders)
-videos/*/work/
+videos/**/work/
