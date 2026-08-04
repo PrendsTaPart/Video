@@ -104,7 +104,9 @@ surprises en vérifiant vos factures en temps réel. »
 Slug retenu : `creer-une-facture` (sous-catégorie affichée : « Créer une facture »), dossier
 vidéo `videos/foodeatup-factures-tuto/`.
 
-**Script validé par Michael le 2026-08-04. VO générée, montage terminé, checklist de
-compatibilité passée. En attente de validation de la vidéo montée avant publication
-(RapidoCMS, LinkedIn, Lovable) — conformément à la règle du pipeline
-(`FOODEATUP-TUTORIELS-WORKFLOW.md`).**
+**Validée par Michael et publiée le 2026-08-04.** RapidoCMS : vidéo + vignette uploadées
+(`foodeatup-factures-tuto-v1` / `-thumbnail`), draft LinkedIn créé et programmé le
+2026-09-10 16h00 (prochain créneau libre de la rotation FoodEatUp). Lovable : tutoriel
+`creer-une-facture` ajouté dans `src/data/tutorials.ts` (module `comptabilite`,
+structure `claudePrompts[]`, `chefTip` sur la conformité Factur-X 2026), juste après
+`creer-un-devis`.
