@@ -1,9 +1,9 @@
 # Tutoriel — Retrouver ma traçabilité (historique) FoodEatUp
 
-**STATUT : MONTAGE LIVRÉ — en attente de validation Michael avant toute publication**
-**(STOP obligatoire, voir `FOODEATUP-TUTORIELS-WORKFLOW.md` étape 6 / `LOVABLE-FOODEATUP-DOCS.md`
-"Règle de validation"). Aucun upload RapidoCMS, aucun envoi LinkedIn, aucun message Lovable
-tant que ce retour n'est pas arrivé.**
+**STATUT : PUBLIÉE (2026-08-04).** Validée, uploadée sur RapidoCMS (vidéo + vignette), et
+ajoutée à `src/data/tutorials.ts` sur le site Lovable FoodEatUp Academy (module `haccp`,
+slug `retrouver-lhistorique-de-la-tracabilite`). Pas de post LinkedIn programmé (non demandé
+pour cette vidéo).
 
 Durée livrée : **42,84 s** — H.264 High/yuv420p 1920×828, AAC 48 kHz stéréo, faststart.
 Audio : max_volume **-7,2 dBFS** (identique au réglage de référence `foodeatup-tva-tuto`).

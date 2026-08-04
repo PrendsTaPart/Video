@@ -142,6 +142,16 @@ l'avatar était conservée) : ici la voix native est explicitely coupée.
 
 ## Tutoriels publiés
 
+**Note (2026-08-04)** : ce tableau n'était plus synchronisé avec le site — `src/data/tutorials.ts`
+contient déjà **80 tutoriels** répartis sur 7 modules (`configuration` 15, `equipe-planning` 19,
+`comptabilite` 10, `haccp` 14→15 avec l'ajout ci-dessous, `stockvision-ai` 7, `predibot` 2,
+`hubrise-livraisons` 1) — bien au-delà des 10 lignes listées ici et du chiffre de 91/92 vidéos
+« productibles » audité dans `FAISABILITE-SERIE-TUTORIELS.md` (qui ne couvrait que les 5 modules
+du Drive d'origine, pas `predibot`/`hubrise-livraisons` ajoutés depuis). Aucune trace dans le
+dépôt d'un chiffre de 157 vidéos — à clarifier avec Michael si ce nombre doit devenir la cible
+officielle. Ce tableau reste tenu à jour pour les vidéos produites *depuis ce dépôt*, mais n'est
+plus la source de vérité du nombre total de tutoriels publiés (c'est `tutorials.ts` sur Lovable).
+
 | # | Module | Sous-catégorie | Slug | claudePrompt ? |
 |---|---|---|---|---|
 | 1 | Configuration | 1 - Inscription, e-mail de confirmation | `creer-son-compte` | non — pas d'outil MCP (signup) |
@@ -154,3 +164,4 @@ l'avatar était conservée) : ici la voix native est explicitely coupée.
 | 8 | Configuration | 8 - saisir ses ingrédients | `saisir-ses-ingredients` | **oui, 2 prompts** — `create_ingredient` (direct) + prompt "facture fournisseur (image)". Première vidéo à utiliser `claudePrompts[]` (nouveau champ, plusieurs exemples) et `chefTipAvatar` (photo réelle de Michael). Publiée le 2026-08-02 (RapidoCMS + LinkedIn 2026-08-07 07h + Lovable) |
 | 9 | Configuration | 9 - régler ses unités | `regler-ses-unites` | non — `list_units` seul existe (lecture seule), pas de `create_unit`. Publiée le 2026-08-02 (RapidoCMS + LinkedIn 2026-08-06 16h + Lovable) |
 | 10 | Configuration | 9 - créer ses produits | `creer-ses-produits` | **oui, 2 prompts** — `create_product` (direct) + prompt "photo du code-barres". Rush sans UI d'affiliation recette/ingrédient (et `create_product` n'a pas ce champ non plus) : logique métier (produit avec/sans recette → ce que la liste de courses ajoute) documentée en `chefTip` sur explication de Michael, pas inventée à l'écran. Publiée le 2026-08-02 (RapidoCMS + LinkedIn 2026-08-07 16h + Lovable) |
+| 11 | HACCP | Historique traçabilité | `retrouver-lhistorique-de-la-tracabilite` | **oui** — `list_haccp_tracabilite`. Rush fourni par Michael (screen recording + cartes intro/outro), validée puis publiée le 2026-08-04 (RapidoCMS + Lovable — pas de post LinkedIn, non demandé) |
