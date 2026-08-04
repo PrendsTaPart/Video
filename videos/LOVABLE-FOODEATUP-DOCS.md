@@ -339,3 +339,4 @@ site FoodEatUp Academy — 157 semble couvrir un périmètre plus large
 `videos/PLAN-TIKTOK-ET-MANQUANTS.md` et `references/mcp-plugins-video-catalog.md`
 pour ces autres séries). Pas de liste unique consolidée à 157 trouvée dans le
 dépôt : à confirmer avec Michael avant de fabriquer un chiffre de suivi global.
+| 11 | HACCP | 14 - Retrouver toutes vos production | `consulter-ses-productions-en-cours` | **oui** — `list_production_plans`. Première vidéo du module HACCP. Validée par Michael le 2026-08-04. RapidoCMS **non disponible dans cette session** (connecteur non installé) : vidéo/vignette servies depuis GitHub raw (`claude/foodeatup-video-tutorials-u4ljhv`) en attendant reconnexion — pas de post LinkedIn programmé pour cette raison. Voir `videos/SUIVI-VIDEOS.md` pour le détail et `videos/foodeatup-productions-tuto/SCRIPT.md` pour le ré-audit Drive (137 vidéos vérifiées le 2026-08-04, 5 nouveaux modules découverts) |
