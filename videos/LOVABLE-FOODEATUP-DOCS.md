@@ -1,9 +1,10 @@
 # FoodEatUp Academy — site de documentation Lovable (mémoire du projet)
 
 **À relire à chaque nouvelle vidéo produite.** Ce fichier est la source de vérité du site
-Lovable qui documente les 91 tutoriels FoodEatUp. Chaque vidéo livrée doit se terminer par
-l'ajout de son entrée ici (tableau "Tutoriels publiés" en bas) et l'envoi du prompt Lovable
-correspondant au projet.
+Lovable qui documente les 157 tutoriels FoodEatUp (somme des `expectedCount` des 14
+modules de `src/data/tutorials.ts` sur Lovable — chiffre confirmé par Michael le
+2026-08-03). Chaque vidéo livrée doit se terminer par l'ajout de son entrée ici (tableau
+"Tutoriels publiés" en bas) et l'envoi du prompt Lovable correspondant au projet.
 
 ## Identifiants du projet
 
@@ -75,15 +76,26 @@ type Tutorial = {
 };
 ```
 
-## Les 5 modules (catégories du site = catégories du Drive)
+## Les 14 modules (mis à jour le 2026-08-03 depuis `src/data/tutorials.ts` — la
+## précédente liste de 5 modules ici était obsolète, cf. `modules` côté Lovable)
 
 | moduleSlug | Nom | Vidéos attendues |
 |---|---|---:|
-| `configuration` | Configuration | 14 |
-| `equipe-planning` | Équipe & Planning | 20 |
-| `comptabilite` | Comptabilité | 10 |
-| `haccp` | HACCP | 30 |
+| `configuration` | Configuration Boutique | 14 |
+| `equipe-planning` | Équipe, Planning & RH | 20 |
+| `site-web-vitrine` | Site Web & Vitrine | 8 |
+| `caisse-pos` | Caisse POS & Matériel | 7 |
+| `hubrise-livraisons` | HubRise & Livraisons | 4 |
+| `caroline-ia` | Agent IA Caroline | 6 |
+| `reservation-salle` | Réservations & Plan de salle | 5 |
+| `service-commande` | Service Multi-Canal | 3 |
+| `kds-cuisine` | Écran Cuisine (KDS) | 3 |
+| `marketing-fidelite` | Marketing, Fidélité & Iris | 24 |
 | `stockvision-ai` | StockVision AI | 20 |
+| `haccp` | Hygiène & HACCP | 30 |
+| `comptabilite` | Comptabilité & Achats | 10 |
+| `predibot` | PrediBot (Agent IA Directeur) | 3 |
+| **Total** | | **157** |
 
 ## Charte graphique appliquée au site
 
@@ -154,3 +166,6 @@ l'avatar était conservée) : ici la voix native est explicitely coupée.
 | 8 | Configuration | 8 - saisir ses ingrédients | `saisir-ses-ingredients` | **oui, 2 prompts** — `create_ingredient` (direct) + prompt "facture fournisseur (image)". Première vidéo à utiliser `claudePrompts[]` (nouveau champ, plusieurs exemples) et `chefTipAvatar` (photo réelle de Michael). Publiée le 2026-08-02 (RapidoCMS + LinkedIn 2026-08-07 07h + Lovable) |
 | 9 | Configuration | 9 - régler ses unités | `regler-ses-unites` | non — `list_units` seul existe (lecture seule), pas de `create_unit`. Publiée le 2026-08-02 (RapidoCMS + LinkedIn 2026-08-06 16h + Lovable) |
 | 10 | Configuration | 9 - créer ses produits | `creer-ses-produits` | **oui, 2 prompts** — `create_product` (direct) + prompt "photo du code-barres". Rush sans UI d'affiliation recette/ingrédient (et `create_product` n'a pas ce champ non plus) : logique métier (produit avec/sans recette → ce que la liste de courses ajoute) documentée en `chefTip` sur explication de Michael, pas inventée à l'écran. Publiée le 2026-08-02 (RapidoCMS + LinkedIn 2026-08-07 16h + Lovable) |
+| 11 | Configuration | 13 - votre vitrine en ligne | `ouvrir-sa-vitrine-en-ligne` | **oui** — prompt combiné `apply_site_template` + `set_site_theme` + `publish_site`. Publiée (Lovable) — entrée rétroactive ajoutée le 2026-08-03, vidéo déjà en ligne (PR #6 mergée) |
+| 12 | StockVision AI (1er tuto du module) | 1 - déduire ses besoins de production | `deduire-ses-besoins-de-production` | **oui** — prompt combiné `create_production_plan` + `get_production_ingredients`. Publiée sur Lovable le 2026-08-03 (validation Michael "ok publi sur lovable") — RapidoCMS/LinkedIn non demandés |
+| 13 | Hygiène & HACCP (1er tuto du module) | 1 - pointer ses actions de nettoyage | `pointer-ses-actions-de-nettoyage` | **oui** — `record_cleaning_action`. Rush contient un état cassé en fin de tournage (bouton "Valider" en masse → erreur "Zone non trouvée") : exclu du montage, voir `videos/foodeatup-nettoyage-tuto/SCRIPT.md` |
