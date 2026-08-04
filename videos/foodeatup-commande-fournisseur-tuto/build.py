@@ -62,11 +62,21 @@ def banner(text, seg_dur):
             f"drawtext=fontfile={FONT}:text='{text}':fontsize=31:fontcolor=white"
             f":x='({x})+34':y={y+16}")
 
-# Buttons measured on the real rush frames (1920x828 source space).
-BTN_COMMANDER = (1670, 353); SZ_COMMANDER = (220, 46)  # "Commander (23)" (header)
-BTN_EMAIL     = (1457, 353); SZ_EMAIL     = (130, 46)  # "Email" (header)
-BTN_ENV_TOUS  = (1596, 182); SZ_ENV_TOUS  = (390, 46)  # "Envoyer à tous les fournisseurs"
-BTN_ENV_22    = (860, 643);  SZ_ENV_22    = (275, 58)  # "Envoyer à tous (22)" (modal submit)
+# Buttons measured on the real rush frames (1920x828 source space) via
+# per-pixel color-region detection (PIL bbox scan on the fill color of each
+# pill), not eyeballed -- an earlier eyeballed guess for BTN_COMMANDER put it
+# on the wrong UI row entirely (mixed up two differently-scrolled frames) and
+# the zoom-punch landed on "Vider la liste" instead of "Commander (23)";
+# caught by rendering a test crop and re-measuring with bbox_for() below.
+BTN_COMMANDER = (1687, 194); SZ_COMMANDER = (214, 61)  # "Commander (23)" (header, t~4.0)
+# NB: the page layout shifts vertically between the early rush (t~4s, header
+# buttons at y~194) and t~12s (same buttons at y~352, extra skeleton/loading
+# bar above nav) -- measured separately at D's actual click time, not reused
+# from the t~4s frame (that earlier reuse put the crop centered on empty
+# space between the nav bar and the button row).
+BTN_EMAIL     = (1457, 352); SZ_EMAIL     = (130, 61)  # "Email" (header, t~12.3)
+BTN_ENV_TOUS  = (1596, 181); SZ_ENV_TOUS  = (396, 60)  # "Envoyer à tous les fournisseurs"
+BTN_ENV_22    = (860, 643);  SZ_ENV_22    = (274, 70)  # "Envoyer à tous (22)" (modal submit)
 
 # (name, src_start, src_end, target_out_duration, click_time_or_None, button, btn_size, caption)
 # Targets sized against the *measured* VO durations (vo/*.mp3), narration
@@ -77,17 +87,17 @@ BTN_ENV_22    = (860, 643);  SZ_ENV_22    = (275, 58)  # "Envoyer à tous (22)" 
 # modal fades, so it stays a plain informative beat -- no click asserted
 # that isn't actually visible on screen.
 segs = [
-    ("A", 0.20, 3.90, 5.90, None, None,          None,        "1 · Votre liste de courses"),
+    ("A", 0.20, 3.90, 6.10, None, None,          None,        "1 · Votre liste de courses"),
     ("B", 3.90, 4.15, 0.90, 4.00, BTN_COMMANDER,  SZ_COMMANDER, None),
-    ("C", 5.60, 6.10, 3.30, None, None,          None,        "Commander tout en un clic"),
+    ("C", 5.60, 6.10, 4.00, None, None,          None,        "Commander tout en un clic"),
     ("D", 12.20, 12.45, 0.90, 12.30, BTN_EMAIL,   SZ_EMAIL,    "2 · Envoyer par email"),
-    ("E", 12.80, 16.20, 5.00, None, None,        None,        None),
+    ("E", 12.80, 16.20, 5.70, None, None,        None,        None),
     ("F", 17.60, 17.85, 0.90, 17.90, BTN_ENV_TOUS, SZ_ENV_TOUS, "3 · Envoyer à tous"),
-    ("G", 18.00, 21.00, 3.83, None, None,        None,        None),
+    ("G", 18.00, 21.00, 4.65, None, None,        None,        None),
     ("H", 24.40, 24.65, 0.90, 24.50, BTN_ENV_22,  SZ_ENV_22,   None),
-    ("I", 26.00, 29.00, 4.30, None, None,        None,        "Fournisseurs prévenus"),
+    ("I", 26.00, 29.00, 5.10, None, None,        None,        "Fournisseurs prévenus"),
 ]
-INTRO_D, OUTRO_D = 4.30, 6.20
+INTRO_D, OUTRO_D = 4.70, 6.20
 
 def encode_seg(name, s, e, target, btn, btn_sz, caption):
     out = f"{SEG}/{name}.mp4"
