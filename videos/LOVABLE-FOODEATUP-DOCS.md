@@ -8,6 +8,11 @@ au 2026-08-04). Chaque vidéo livrée doit se terminer par l'ajout de son entré
 "Tutoriels publiés" en bas, **qui a pris du retard sur le site réel — voir avertissement plus
 bas**) et l'envoi du prompt Lovable correspondant au projet, puis par la mise à jour de
 `videos/PROGRESSION-157-TUTORIELS.md`.
+**À relire à chaque nouvelle vidéo produite.** Ce fichier est la source de vérité du site
+Lovable qui documente les 157 tutoriels FoodEatUp (somme des `expectedCount` des 14
+modules de `src/data/tutorials.ts` sur Lovable — chiffre confirmé par Michael le
+2026-08-03). Chaque vidéo livrée doit se terminer par l'ajout de son entrée ici (tableau
+"Tutoriels publiés" en bas) et l'envoi du prompt Lovable correspondant au projet.
 
 ## Identifiants du projet
 
@@ -96,7 +101,6 @@ catalogue des 157 tutoriels transmis par Michael (voir `CATALOGUE-157-TUTORIELS.
 un prompt Lovable unique a fait évoluer `src/data/tutorials.ts` avec deux nouveaux
 types `Category` et `Module` (un module référence sa catégorie via `categorySlug`,
 une catégorie porte juste `slug`/`name`/`color`). Commit `12fb06d2510edcdda4116f886a3d259f638559a8`.
-
 | categorySlug | Nom catégorie | Couleur | Modules (slug — nom — vidéos attendues) |
 |---|---|---|---|
 | `configuration-boutique` | Configuration Boutique | `#0D6EFD` | `configuration` — Configuration Boutique — 14 |
@@ -110,7 +114,6 @@ une catégorie porte juste `slug`/`name`/`color`). Commit `12fb06d2510edcdda4116
 | `stockvision` | StockVision AI | `#10B981` | `stockvision-ai` — StockVision AI — 20 |
 | `hygiene-haccp` | Hygiène & HACCP | `#DC2626` | `haccp` — Hygiène & HACCP — 30 |
 | `comptabilite-predibot` | Comptabilité & PrediBot | `#475569` | `comptabilite` — Comptabilité & Achats — 10 ; `predibot` — PrediBot (Agent IA Directeur) — 3 |
-
 Les 5 modules déjà en production (`configuration`, `equipe-planning`, `comptabilite`,
 `haccp`, `stockvision-ai`) ont gardé leur `slug` exact et tous leurs tutoriels
 existants — vérifié par lecture complète de `tutorials.ts` au commit ci-dessus, aucune
@@ -120,7 +123,6 @@ ajoutés (`site-web-vitrine`, `caisse-pos`, `hubrise-livraisons`, `caroline-ia`,
 `predibot`), prêts à recevoir leurs tutoriels au fil de la production — plus besoin
 de toucher à l'architecture pour les prochaines vidéos, juste ajouter l'objet
 `Tutorial` avec le bon `moduleSlug`.
-
 Autres changements livrés dans le même prompt :
 - `src/data/module-icons.ts` : icônes Lucide ajoutées pour les 9 nouveaux modules
   (Globe, CreditCard, Truck, Mic, CalendarCheck, UtensilsCrossed, MonitorSmartphone,
@@ -135,19 +137,29 @@ Autres changements livrés dans le même prompt :
   (`whatItsFor` tronqué à 158 car.), og:title/description/type(`video.other`)/url,
   twitter:card, `<link rel="canonical">`, JSON-LD `VideoObject` (name, description,
   thumbnailUrl, contentUrl, uploadDate constant `2026-01-01`, duration `PT{n}S`).
-
 Vérifié par l'agent Lovable via `tsgo --noEmit` (aucune erreur de type) et captures
 Playwright (accueil, une page module, une page tutoriel) avant de livrer le commit.
-
 ### Historique — 5 modules d'origine (avant le 2026-08-03)
+## Les 14 modules (mis à jour le 2026-08-03 depuis `src/data/tutorials.ts` — la
+## précédente liste de 5 modules ici était obsolète, cf. `modules` côté Lovable)
 
 | moduleSlug | Nom | Vidéos attendues |
 |---|---|---:|
-| `configuration` | Configuration | 14 |
-| `equipe-planning` | Équipe & Planning | 20 |
-| `comptabilite` | Comptabilité | 10 |
-| `haccp` | HACCP | 30 |
+| `configuration` | Configuration Boutique | 14 |
+| `equipe-planning` | Équipe, Planning & RH | 20 |
+| `site-web-vitrine` | Site Web & Vitrine | 8 |
+| `caisse-pos` | Caisse POS & Matériel | 7 |
+| `hubrise-livraisons` | HubRise & Livraisons | 4 |
+| `caroline-ia` | Agent IA Caroline | 6 |
+| `reservation-salle` | Réservations & Plan de salle | 5 |
+| `service-commande` | Service Multi-Canal | 3 |
+| `kds-cuisine` | Écran Cuisine (KDS) | 3 |
+| `marketing-fidelite` | Marketing, Fidélité & Iris | 24 |
 | `stockvision-ai` | StockVision AI | 20 |
+| `haccp` | Hygiène & HACCP | 30 |
+| `comptabilite` | Comptabilité & Achats | 10 |
+| `predibot` | PrediBot (Agent IA Directeur) | 3 |
+| **Total** | | **157** |
 
 ## Charte graphique appliquée au site
 
@@ -346,3 +358,6 @@ dépôt : à confirmer avec Michael avant de fabriquer un chiffre de suivi globa
 | 11 | HACCP | 14 - Retrouver toutes vos production | `consulter-ses-productions-en-cours` | **oui** — `list_production_plans`. Première vidéo du module HACCP. Validée par Michael le 2026-08-04. RapidoCMS **non disponible dans cette session** (connecteur non installé) : vidéo/vignette servies depuis GitHub raw (`claude/foodeatup-video-tutorials-u4ljhv`) en attendant reconnexion — pas de post LinkedIn programmé pour cette raison. Voir `videos/SUIVI-VIDEOS.md` pour le détail et `videos/foodeatup-productions-tuto/SCRIPT.md` pour le ré-audit Drive (137 vidéos vérifiées le 2026-08-04, 5 nouveaux modules découverts) |
 | — | HACCP | Historique du contrôle à réception | `retrouver-lhistorique-du-controle-a-reception` | **oui** — `create_haccp_reception` (les champs du modal « Modifier le contrôle » correspondent 1:1 ; pas d'`update_haccp_reception` côté MCP, donc le prompt enregistre un nouveau contrôle plutôt que de modifier l'existant montré à l'écran, même bénéfice pour le restaurateur). Script validé par Michael le 2026-08-04, montage `videos/foodeatup-historique-reception-tuto/` (47s). Publiée le 2026-08-04 (RapidoCMS + LinkedIn 2026-09-06 07h + Lovable, déployée en production) |
 | — | Comptabilité | Relier ses achats à ses livraisons | `relier-ses-achats-a-ses-livraisons` | **oui** — `create_expense` (fournisseur, référence facture, lignes produits, totaux auto ; pas de champ « livraison associée » côté MCP, donc le prompt enregistre directement la dépense plutôt que de reproduire l'étape d'import OCR — même bénéfice). ⚠️ Sujet proche de `scanner-sa-facture-ocr` et `classer-ses-factures-dans-les-depenses` déjà publiées par une autre session (même déroulé livraison→facture→OCR→dépense, rush différent) — à vérifier avec Michael si une consolidation est souhaitée. Script validé par Michael le 2026-08-04, montage `videos/foodeatup-depenses-livraisons-tuto/` (45,7s). Publiée le 2026-08-04 (RapidoCMS + LinkedIn 2026-09-10 07h + Lovable, déployée en production) |
+| 11 | Configuration | 13 - votre vitrine en ligne | `ouvrir-sa-vitrine-en-ligne` | **oui** — prompt combiné `apply_site_template` + `set_site_theme` + `publish_site`. Publiée (Lovable) — entrée rétroactive ajoutée le 2026-08-03, vidéo déjà en ligne (PR #6 mergée) |
+| 12 | StockVision AI (1er tuto du module) | 1 - déduire ses besoins de production | `deduire-ses-besoins-de-production` | **oui** — prompt combiné `create_production_plan` + `get_production_ingredients`. Publiée sur Lovable le 2026-08-03 (validation Michael "ok publi sur lovable") — RapidoCMS/LinkedIn non demandés |
+| 13 | Hygiène & HACCP (1er tuto du module) | 1 - pointer ses actions de nettoyage | `pointer-ses-actions-de-nettoyage` | **oui** — `record_cleaning_action`. Rush contient un état cassé en fin de tournage (bouton "Valider" en masse → erreur "Zone non trouvée") : exclu du montage, voir `videos/foodeatup-nettoyage-tuto/SCRIPT.md` |
