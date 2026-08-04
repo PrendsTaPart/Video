@@ -204,6 +204,18 @@ l'image — la voix ElevenLabs prend le relais sur toute la narration, sans conf
 l'inverse exact du traitement appliqué sur `foodeatup-boutique-tuto` (où la voix native de
 l'avatar était conservée) : ici la voix native est explicitely coupée.
 
+## Progression série (mise à jour 2026-08-04)
+
+**56 / 157 tutoriels publiés** sur `src/data/tutorials.ts` (mise à jour 2026-08-04, après
+publication de `retrouver-lhistorique-des-zones-de-nettoyage`) (157 = somme des `expectedCount` de
+tous les modules — configuration 14, équipe-planning 20, site-web-vitrine 8, caisse-pos 7,
+hubrise-livraisons 4, caroline-ia 6, reservation-salle 5, service-commande 3, kds-cuisine 3,
+marketing-fidelite 24, stockvision-ai 20, haccp 30, comptabilite 10, predibot 3). Décompte exact
+par module visible en direct sur le site (barres de progression "X / Y vidéos" par module,
+page d'accueil). Cette table ne relogue pas rétroactivement chaque vidéo déjà publiée avant sa
+mise en place (l'historique complet reste dans les messages `git log` de ce dépôt) — elle est
+tenue à jour à partir d'ici pour chaque nouvelle vidéo.
+
 ## Tutoriels publiés
 
 | # | Module | Sous-catégorie | Slug | claudePrompt ? |
@@ -295,3 +307,6 @@ toute nouvelle publication, plutôt qu'à ce tableau seul.
 | 12 | HACCP | Contrôle à réception : produits, DLC, température, conformité | `controler-reception-livraisons` | **oui** — `create_haccp_reception` (les 4 actions rapides par produit — Photo DLC, DLC manuelle, Température, Scanner produit — n'ont pas d'outil MCP dédié). Publiée sur Lovable le 2026-08-04 à la demande explicite de Michael (MP4 + vignette uploadés sur RapidoCMS). **LinkedIn non demandé pour ce tuto** — pas de brouillon programmé. ⚠️ **Remplacée peu après par une session concurrente** : `list_messages` sur le projet Lovable montre que cette entrée a été supprimée le 2026-08-04 (~02:49) et remplacée par `ajouter-modifier-ou-valider-une-reception-livraison` (58,88 s, mêmes écrans mais couvrant explicitement ajouter/modifier/valider), poussée depuis une autre branche/session — pas un commit de cette branche-ci. À réconcilier au moment du merge. |
 | 13 | HACCP | Contrôle de conformité par photo (analyse IA) | `photo-ia-controle-nettoyage` | non — aucun outil MCP pour "upload photo → analyse IA automatique" (le candidat le plus proche, `create_hygiene_checklist_validation`, est une soumission manuelle de checklist, pas un upload photo/IA). Publiée sur Lovable le 2026-08-04 à la demande explicite de Michael (MP4 + vignette uploadés sur RapidoCMS). Vidéo volontairement courte (28 s, une seule action, pas de séquence Claude). **LinkedIn non demandé pour ce tuto** — pas de brouillon programmé. |
 | 14 | Service Multi-Canal | Créer, consulter, modifier et supprimer une commande | `mes-commandes-tous-canaux` | **oui, 2 prompts** — `create_order` (création, montré dans la vidéo) + `update_order_status` (changement de statut, `claudePrompts[]` uniquement). Pas de prompt pour la suppression (pas d'outil MCP dédié). Publiée sur Lovable le 2026-08-04 à la demande explicite de Michael (MP4 + vignette uploadés sur RapidoCMS). Vidéo la plus longue de la série à ce jour (68,7 s — create + view + edit + delete). **LinkedIn non demandé pour ce tuto** — pas de brouillon programmé. |
+| 11 | PrediBot | 1 - prédire ses commandes (ventes & production) | `predire-ses-commandes` | non — fonctionnalité de lecture seule (prédiction IA), aucun outil MCP ne correspond. Validée par Michael et publiée le 2026-08-03 (Lovable uniquement — pas de demande RapidoCMS/LinkedIn sur cette vidéo). Rattrapage : entrée non loguée ici au moment de la publication, ajoutée a posteriori le 2026-08-04 |
+| 12 | HACCP | Historique de vos zones de nettoyage | `retrouver-lhistorique-des-zones-de-nettoyage` | **oui, 3 prompts** — `list_cleaning_actions` (historique période + préparation contrôle sanitaire) + `record_cleaning_action` (enregistrer). Séquence Claude animée dans la vidéo (module partagé). Validée par Michael et publiée le 2026-08-04 (Lovable uniquement — pas de demande RapidoCMS/LinkedIn sur cette vidéo) |
+*(les entrées 13+ ne sont ajoutées ici qu'après validation explicite de Michael sur la vidéo livrée — voir "Règle de validation" en haut de ce fichier)*
