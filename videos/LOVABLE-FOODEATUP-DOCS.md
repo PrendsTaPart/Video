@@ -51,6 +51,16 @@ suivi). Un retour de correction relance le cycle (corriger → relivrer → atte
 le même prompt en double sur un timeout. Vérifier avec `get_project` (le `latest_commit_sha`
 avance) ou `read_file` sur `src/data/tutorials.ts` avant de renvoyer quoi que ce soit.
 
+⚠️ **Ce projet Lovable est édité en concurrence par plusieurs sessions** (constaté le
+2026-08-04 : `list_messages` a montré des messages d'autres sessions arrivant à quelques
+secondes des miens, sur d'autres sujets HACCP). Conséquence : après un `send_message`,
+`get_project`/`read_file` peut renvoyer l'état d'une édition concurrente plus récente que la
+sienne (le `latest_commit_sha` avance à chaque édition, pas seulement la sienne) — ne pas
+conclure à un échec sur cette seule base. Vérification fiable : `list_messages` pour retrouver
+son propre tour (apparier user/assistant par timestamp), puis `get_diff(message_id=<id de la
+réponse assistant>)` pour voir précisément ce que CE tour a changé, indépendamment des autres
+éditions en cours.
+
 ## Modèle de données (`src/data/tutorials.ts`)
 
 ```ts
@@ -275,3 +285,5 @@ toute nouvelle publication, plutôt qu'à ce tableau seul.
 ⚠️ **Ce tableau est incomplet par rapport au site Lovable réel** : le site a évolué au-delà de ce fichier (modules/catégories renommés — voir `src/data/tutorials.ts`, ex. `moduleSlug: "stockvision-ai"` existe déjà avec plusieurs tutoriels non listés ici : `deduire-ses-besoins-de-production`, `imprimer-ses-ingredients-de-production`, `sortir-ses-ingredients-du-stock`, `saisir-un-mouvement-de-stock`, `lire-ses-mouvements-de-stock`). Se fier à `src/data/tutorials.ts` (via `read_file`) comme source de vérité pour éviter les doublons, pas seulement à ce tableau.
 | 11 | StockVision AI | Liste des courses : commander et envoyer aux fournisseurs | `envoyer-sa-commande-au-fournisseur` | **oui** — `create_supplier_order`. Complète `tenir-sa-liste-de-courses` (gestion des lignes) avec l'action de commande/envoi elle-même (bouton Commander + modale "Commander tout", flux Email par fournisseur avec date de livraison). Deux bugs de montage rencontrés et corrigés : décalage voix/image cumulatif (même bug que `foodeatup-tva-tuto`) et zoom-punch mal positionné faute de mesure colorimétrique des boutons (voir `SCRIPT.md` du dossier). Validée et publiée le 2026-08-04 (RapidoCMS + LinkedIn 2026-08-16 07h + Lovable, inséré après `tenir-sa-liste-de-courses`) |
 *(Note : cette table n'a pas été tenue à jour à chaque publication depuis son ajout — `src/data/tutorials.ts` contient plus d'entrées que celles listées ici. Ne pas s'y fier comme source exhaustive, seulement comme historique partiel.)*
+| 11 | HACCP | Contrôle de réception (température & EAN) | `controler-sa-reception-stock` | **oui, 2 prompts** — `create_haccp_reception` (contrôle de réception, température) + `create_haccp_label` (étiquette EAN/DLC). Première vidéo du module HACCP. Publiée sur Lovable le 2026-08-04 (RapidoCMS mis à jour ; publication LinkedIn en attente — non demandée dans ce tour) |
+| 12 | HACCP | Documents (modèles prédéfinis) | `utiliser-nos-modeles-foodeatup` | non — pas d'outil MCP correspondant (bibliothèque de documents statiques, ni `list_employee_documents` ni `list_site_templates` ne correspondent). Publiée le 2026-08-04 (RapidoCMS + Lovable, demande explicite de publication immédiate). **Note** : une carte d'intro "RETROUVER MES ÉTIQUETTES HISTORIQUE" a été fournie en même temps mais sans rush correspondant — pas de vidéo produite pour ce sujet, en attente d'un enregistrement d'écran |
