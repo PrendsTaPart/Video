@@ -21,7 +21,7 @@ les occurrences de `moduleSlug: "<slug>"` dans `tutorials.ts` (via
 | `stockvision-ai` | StockVision AI | 7 | 20 | 13 |
 | `predibot` | PrediBot (Agent IA Directeur) | 2 | 3 | 1 |
 | `hubrise-livraisons` | HubRise & Livraisons | 1 | 4 | 3 |
-| `site-web-vitrine` | Site Web & Vitrine | 0 | 8 | 8 |
+| `site-web-vitrine` | Site Web & Vitrine | 1 | 8 | 7 |
 | `caisse-pos` | Caisse POS & Matériel | 0 | 7 | 7 |
 | `caroline-ia` | Agent IA Caroline | 0 | 6 | 6 |
 | `reservation-salle` | Réservations & Plan de salle | 0 | 5 | 5 |
@@ -41,12 +41,27 @@ ne pas bloquer dessus.
 - `creer-sa-fiche-plat-pour-production` — module `haccp` (créer un plat +
   ingrédients + date/quantité de production, prompts Claude `create_recipe` +
   `create_production_plan`).
+- `choisir-son-template` — module `site-web-vitrine` (1ère vidéo du module ;
+  remplit la fiche placeholder déjà en place, pas une nouvelle entrée créée).
+  Bibliothèque de templates > filtre par catégorie > Aperçu grandeur nature >
+  Utiliser > confirmation (sauvegarde auto), prompt Claude
+  `apply_site_template`. Dossier `videos/foodeatup-choisir-template-tuto/`.
+  `videoUrl`/`thumbnailUrl` pointent temporairement sur le raw GitHub de la
+  branche `claude/foodeatup-video-tutorial-8ddbi5` (connecteur RapidoCMS
+  indisponible dans cette session) — à remplacer par les URLs S3 RapidoCMS dès
+  que le connecteur est disponible.
+  ⚠️ Ce tableau (71/157) est déjà en retard sur le site Lovable réel (86/157
+  au moment de cette édition, voir avertissement en tête de fichier) — le
+  compteur `site-web-vitrine` ci-dessus est corrigé (0→1) mais le total
+  général n'a pas été recalculé pour éviter d'écraser les ajouts d'autres
+  sessions concurrentes ; se fier à `tutorials.ts` pour le vrai total.
 
 ## Modules à zéro tutoriel — prioriser si on veut couvrir toute la série
 
-`site-web-vitrine`, `caisse-pos`, `caroline-ia`, `reservation-salle`,
-`marketing-fidelite` (le plus gros, 24 attendus), `service-commande`,
-`kds-cuisine`. Vérifier dans `references/mcp-plugins-video-catalog.md` et les
-outils `mcp__FoodEatUp__*` quels cas d'usage de ces modules ont un outil MCP
+`caisse-pos`, `caroline-ia`, `reservation-salle`, `marketing-fidelite` (le
+plus gros, 24 attendus), `service-commande`, `kds-cuisine`. `site-web-vitrine`
+a maintenant sa première vidéo (`choisir-son-template`), reste 7. Vérifier
+dans `references/mcp-plugins-video-catalog.md` et les outils
+`mcp__FoodEatUp__*` quels cas d'usage de ces modules ont un outil MCP
 correspondant, pour préparer scripts + `claudePrompt(s)` en amont du prochain
 rush fourni par Michael.
