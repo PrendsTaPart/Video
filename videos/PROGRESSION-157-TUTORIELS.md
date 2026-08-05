@@ -10,7 +10,7 @@ les occurrences de `moduleSlug: "<slug>"` dans `tutorials.ts` (via
 
 ## État au 2026-08-05
 
-**72 / 157 publiés (46 %).** (Le compteur homepage Lovable affiche 109/157 —
+**73 / 157 publiés (46 %).** (Le compteur homepage Lovable affiche 123/157 —
 écart déjà documenté ailleurs, voir `LOVABLE-FOODEATUP-DOCS.md` : d'autres
 branches/sessions publient en parallèle sans que ce fichier de suivi local
 en ait toujours trace. Ce tableau ne couvre que ce qui a été produit *depuis
@@ -26,13 +26,13 @@ ce dépôt*.)
 | `predibot` | PrediBot (Agent IA Directeur) | 2 | 3 | 1 |
 | `hubrise-livraisons` | HubRise & Livraisons | 1 | 4 | 3 |
 | `site-web-vitrine` | Site Web & Vitrine | 1 | 8 | 7 |
+| `marketing-fidelite` | Marketing, Fidélité & Iris | 1 | 24 | 23 |
 | `caisse-pos` | Caisse POS & Matériel | 0 | 7 | 7 |
 | `caroline-ia` | Agent IA Caroline | 0 | 6 | 6 |
 | `reservation-salle` | Réservations & Plan de salle | 0 | 5 | 5 |
-| `marketing-fidelite` | Marketing, Fidélité & Iris | 0 | 24 | 24 |
 | `service-commande` | Service Multi-Canal | 0 | 3 | 3 |
 | `kds-cuisine` | Écran Cuisine (KDS) | 0 | 3 | 3 |
-| **Total** | | **72** | **157** | **85** |
+| **Total** | | **73** | **157** | **84** |
 
 `configuration` dépasse son `expectedCount` d'origine (15 publiés pour 14
 attendus) — le chiffre attendu est une estimation de départ, pas un plafond ;
@@ -45,6 +45,12 @@ ne pas bloquer dessus.
   CNAME, clic Vérifier maintenant ; prompt Claude `get_domain_status`). Rush
   et cartes intro/outro fournis par Michael. Voir
   `videos/foodeatup-domaine-tuto/SCRIPT.md`.
+- `debloquer-les-avis-clients` — module `marketing-fidelite` (premier
+  tutoriel du plus gros module du catalogue : achat/activation de l'option
+  "Avis & réputation Google" à 29€/mois via paiement Stripe ; pas de prompt
+  Claude, achat d'abonnement = aucun outil MCP correspondant, même cas que
+  `choisir-son-abonnement`). Rush et cartes intro/outro fournis par Michael.
+  Voir `videos/foodeatup-avis-abonnement-tuto/SCRIPT.md`.
 
 ## Ajoutés session précédente (2026-08-04)
 
