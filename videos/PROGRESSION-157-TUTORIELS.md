@@ -31,7 +31,7 @@ de planifier la prochaine vidéo.
 | `caisse-pos` | Caisse POS & Matériel | 0 | 7 | 7 |
 | `caroline-ia` | Agent IA Caroline | 0 | 6 | 6 |
 | `reservation-salle` | Réservations & Plan de salle | 0 | 5 | 5 |
-| `marketing-fidelite` | Marketing, Fidélité & Iris | 1 | 24 | 23 |
+| `marketing-fidelite` | Marketing, Fidélité & Iris | 2 | 24 | 22 |
 | `service-commande` | Service Multi-Canal | 0 | 3 | 3 |
 | `kds-cuisine` | Écran Cuisine (KDS) | 0 | 3 | 3 |
 | **Total** | | **71** | **157** | **86** |
@@ -46,6 +46,12 @@ ne pas bloquer dessus.
   Google, badge connecté, Synchroniser, Lien de dépôt ; prompts Claude
   `list_reviews` + `reply_review`, aucun outil pour la connexion elle-même).
   Placeholder déjà en place (order 2, section "Avis clients") rempli en place.
+- `repondre-aux-avis` — module `marketing-fidelite` (moderer un avis en
+  attente puis y repondre ; prompts Claude `moderate_review` + `reply_review`,
+  premiere sequence Claude animee dans la video elle-meme de toute la serie).
+  Placeholder deja en place (order 3, section "Avis clients") rempli en place.
+  LinkedIn non programme : compte FoodEatUp deconnecte de RapidoCMS, a
+  reconnecter par Michael avant de programmer ce post.
 
 ## Ajoutés cette session (2026-08-04)
 
