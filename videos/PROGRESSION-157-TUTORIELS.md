@@ -10,12 +10,12 @@ les occurrences de `moduleSlug: "<slug>"` dans `tutorials.ts` (via
 
 ## État au 2026-08-04
 
-**71 / 157 publiés (45 %).**
+**72 / 157 publiés (46 %).**
 
 | moduleSlug | Nom | Publiés | Attendus | Reste |
 |---|---|---:|---:|---:|
 | `equipe-planning` | Équipe, Planning & RH | 19 | 20 | 1 |
-| `haccp` | Hygiène & HACCP | 16 | 30 | 14 |
+| `haccp` | Hygiène & HACCP | 17 | 30 | 13 |
 | `configuration` | Configuration Boutique | 15 | 14 | ✅ dépassé (+1) |
 | `comptabilite` | Comptabilité & Achats | 10 | 10 | ✅ complet |
 | `stockvision-ai` | StockVision AI | 7 | 20 | 13 |
@@ -28,7 +28,7 @@ les occurrences de `moduleSlug: "<slug>"` dans `tutorials.ts` (via
 | `marketing-fidelite` | Marketing, Fidélité & Iris | 0 | 24 | 24 |
 | `service-commande` | Service Multi-Canal | 0 | 3 | 3 |
 | `kds-cuisine` | Écran Cuisine (KDS) | 0 | 3 | 3 |
-| **Total** | | **71** | **157** | **86** |
+| **Total** | | **72** | **157** | **85** |
 
 `configuration` dépasse son `expectedCount` d'origine (15 publiés pour 14
 attendus) — le chiffre attendu est une estimation de départ, pas un plafond ;
@@ -41,6 +41,12 @@ ne pas bloquer dessus.
 - `creer-sa-fiche-plat-pour-production` — module `haccp` (créer un plat +
   ingrédients + date/quantité de production, prompts Claude `create_recipe` +
   `create_production_plan`).
+
+## Ajoutés cette session (2026-08-05)
+
+- `archiver-ses-documents-de-nettoyage` — module `haccp` (upload/aperçu/
+  renommage d'un document dans le dossier HACCP > Documents > Nettoyage et
+  désinfection, pas de `claudePrompt` — aucun outil MCP correspondant).
 
 ## Modules à zéro tutoriel — prioriser si on veut couvrir toute la série
 
