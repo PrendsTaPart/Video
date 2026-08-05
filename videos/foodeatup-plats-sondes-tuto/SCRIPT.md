@@ -110,8 +110,28 @@ ressaisir depuis le début.
   gardant une trace datée et attribuée de chaque contrôle, consultable et corrigeable à
   tout moment.
 
+## Rendu final
+
+`out/foodeatup-plats-sondes-tuto-v1.mp4` — **54,28 s**, H.264 High/yuv420p, 1920×828, 25 fps,
+AAC 48 kHz stéréo, +faststart (moov avant mdat confirmé). Decode 0 erreur. Peak audio
+**-7,24 dBFS** (marge saine sous le limiteur -alimiter=0.6). Vignette
+`out/thumbnail-youtube.jpg` (1280×720, recadrage centré de la carte d'intro).
+
+Bug rencontré et corrigé pendant le montage : la coordonnée de la carte « Températures »
+(clic vers l'historique) avait été mesurée sur une frame à un état de scroll différent de
+celui de la frame réellement utilisée dans le segment `L` — le cadre orange encadrait la
+carte « Contrôle à réception » (rangée du dessous) au lieu de « Températures ». Corrigé en
+re-mesurant sur la frame source exacte du clic (t=17,1 s) : carte « Températures » centrée
+en **(342, 375)**, taille **378×290**. Vérifié par extraction de frame sur le rendu final.
+
+Premier calibrage des durées de segment trop court (34 s de contenu pour ~48,7 s de VO
+séquentielle) : tout le retard s'accumulait sur la carte de fin (outro auto-étendue à
+13,1 s). Corrigé en élargissant les segments porteurs de contenu (C, E, G, I, K, M, O) —
+dérive résiduelle maximale 3,46 s (sur le segment O, long de 13,5 s, sans conséquence),
+plus aucune extension d'outro nécessaire.
+
 ## Statut
 
-**Script en attente de validation — STOP obligatoire avant génération ElevenLabs et montage**
-(règle `videos/FOODEATUP-TUTORIELS-WORKFLOW.md`, étape 3). Ne pas générer les .mp3 ni lancer
-`build.py` avant retour explicite.
+**Script validé, VO générée (ElevenLabs, N9 réutilisé à 0 crédit), montage terminé, vignette
+générée.** Vidéo livrée pour validation finale avant publication (RapidoCMS + Lovable +
+mise à jour des docs de suivi du dépôt).
