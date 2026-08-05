@@ -90,6 +90,21 @@ type de récompense plutôt que de tout compresser.
 
 ## Statut
 
-**Brouillon — en attente de validation du script par Michael (STOP obligatoire du
-pipeline, `videos/FOODEATUP-TUTORIELS-WORKFLOW.md` étape 3).** Aucune VO ElevenLabs
-générée, aucun montage lancé, rien publié.
+**Script validé.** VO générée (ElevenLabs Adam FR Instructor pour N0-N6/N8 ; N7/N9
+réutilisées telles quelles depuis `foodeatup-tva-tuto/vo/`, texte identique).
+
+**Montage terminé** — `out/foodeatup-gerer-recompenses-tuto-v1.mp4`, **70,64 s**,
+H.264 High/yuv420p, 1920×828, 25 fps, AAC 48 kHz stéréo, +faststart (moov avant mdat
+confirmé), decode 0 erreur. Peak audio **-7,30 dBFS** (marge saine sous le limiteur
+`alimiter=0.6`). Bandeaux d'étape avec le correctif `drawtext` double-passage (pas
+`drawbox`). Deux zoom-punch vérifiés (bouton "Enregistrer le catalogue", 1er et 2e
+clics, coordonnées mesurées par seuillage colorimétrique sur chaque frame de clic
+réelle — la position y diffère car le catalogue a une ligne de plus au 2e clic).
+Séquence Claude vérifiée avec accents français corrects. Chaque ligne VO vérifiée dans
+la fenêtre de son segment visuel (script de vérification dédié) — un léger débordement
+de N2 sur le segment B (0,2 s) jugé sans conséquence (même contexte visuel). Vignette
+`out/thumbnail-youtube.jpg` (1280×720, crop neutre de la carte d'intro).
+
+**Livrée à Michael pour validation (`SendUserFile`) — STOP avant publication**
+(`FOODEATUP-TUTORIELS-WORKFLOW.md` étape 6). Pas encore uploadée sur RapidoCMS, pas
+encore ajoutée sur Lovable, pas de mise à jour de `LOVABLE-FOODEATUP-DOCS.md`.
