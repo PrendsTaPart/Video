@@ -55,7 +55,33 @@ Aucun outil MCP ne permet de *connecter* un domaine (pas d'équivalent à l'acti
 
 Même texte prévu côté fiche Lovable (`claudePrompt`).
 
+## Montage (2026-08-05)
+
+Script validé par Michael. Bonne carte d'intro reçue (`Connecter_ton_domaine`,
+titre "CONNECTER TON DOMAINE" — remplace l'image mal nommée reçue initialement).
+VO générées (Adam FR, ElevenLabs) sauf N6/N8 réutilisées telles quelles depuis
+`foodeatup-tva-tuto/vo/` (texte identique).
+
+**Calibrage offsets vs ancrages** (`build.py`, gabarit `foodeatup-tva-tuto`) :
+N1/N3/N5 sont des lignes longues (8,9 / 7,0 / 9,8 s) pour un rush court (31,6 s) —
+les segments non-cliqués ont donc été dimensionnés sur la durée VO réelle plutôt
+que sur la durée brute du rush (règle du workflow), avec un ralenti (`setpts`)
+plus marqué que d'habitude sur les segments A (saisie), C (bloc CNAME, étiré à
+10,8 s) et G (toast final, étiré à 12,46 s). Après calibrage : **N0, N1, N2, N4,
+N6, N7, N8 démarrent exactement à leur ancrage (drift 0,00 s)** ; N3 et N5
+démarrent ~3 s après leur ancrage nominal mais restent dans la fenêtre de leur
+propre segment (marge de 0,4 s avant le segment suivant dans les deux cas) —
+aucune ligne ne joue sur le mauvais segment ni sur le mauvais étage Claude.
+
+**QA technique** (fichier final) : H.264 High/yuv420p 1920x828 25fps, AAC 48kHz
+stéréo 192k, moov avant mdat (faststart confirmé par lecture des atomes), 0 erreur
+de décodage, peak audio **-7,0 dBFS** (dans la marge cible). Durée finale **55,36 s**.
+Vignette YouTube : `out/thumbnail-youtube.jpg` (1280x720, redimensionnement neutre
+de `assets/intro.jpg`, pas de recréation).
+
 ## Statut
 
-**Brouillon — en attente de validation du script avant génération ElevenLabs**
-(règle `FOODEATUP-TUTORIELS-WORKFLOW.md` §3, STOP obligatoire).
+**Montage terminé, en attente de validation de Michael avant publication**
+(règle `FOODEATUP-TUTORIELS-WORKFLOW.md` §6, STOP obligatoire) — livré via
+`SendUserFile`, aucune publication RapidoCMS/Lovable/GitHub-catalogue tant que
+le retour n'est pas explicite.

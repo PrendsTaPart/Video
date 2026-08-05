@@ -70,15 +70,20 @@ BTN_VERIFIER  = (534, 710);   SZ_VERIFIER  = (222, 46)   # "Vérifier maintenant
 
 # (name, src_start, src_end, target_out_duration, click_time_or_None, button, btn_size, caption)
 segs = [
-    ("A", 0.00, 17.00, 9.30, None,  None,          None,         "1 · Saisissez votre domaine"),
+    ("A", 0.00, 17.00, 9.45, None,  None,          None,         "1 · Saisissez votre domaine"),
     ("B", 17.35, 17.70, 0.90, 17.50, BTN_CONNECTER, SZ_CONNECTER, None),
-    ("C", 19.50, 23.20, 7.20, None,  None,          None,         "2 · Copiez cet enregistrement CNAME"),
+    ("C", 19.50, 23.20, 10.80, None, None,          None,         "2 · Copiez cet enregistrement CNAME"),
     ("D", 23.85, 24.15, 0.90, 24.00, BTN_COPIER,    SZ_COPIER,    None),
-    ("E", 24.20, 27.15, 2.00, None,  None,          None,         None),
+    ("E", 24.20, 27.15, 1.00, None,  None,          None,         None),
     ("F", 27.15, 27.50, 0.90, 27.30, BTN_VERIFIER,  SZ_VERIFIER,  "3 · Vérifiez la propagation DNS"),
-    ("G", 27.50, 31.60, 8.60, None,  None,          None,         None),
+    ("G", 27.50, 31.60, 12.46, None, None,          None,         None),
 ]
-INTRO_D, OUTRO_D = 5.00, 6.20
+# Retimed (see calibration pass below in SCRIPT.md): N3/N5 are long lines
+# describing content that lingers on screen (CNAME block, final DNS toast),
+# so C and G are sized generously to keep them within their own segment's
+# window rather than spilling onto the next click/stage (measured against
+# each VO line's real duration, not the raw rush timing).
+INTRO_D, OUTRO_D = 5.10, 6.20
 
 def encode_seg(name, s, e, target, btn, btn_sz, caption):
     out = f"{SEG}/{name}.mp4"
@@ -186,7 +191,7 @@ anchor = {
     "N2": S["B"] + 0.20,
     "N3": S["C"] + 0.20,
     "N4": S["D"] + 0.20,
-    "N5": S["F"] + 0.20,
+    "N5": S["E"] + 0.20,
     "N6": S["claude1"] + 0.20,
     "N7": S["claude3"] + 0.20,
     "N8": OUTRO_START + 0.35,
