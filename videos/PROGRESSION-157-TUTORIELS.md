@@ -42,6 +42,19 @@ ne pas bloquer dessus.
   ingrédients + date/quantité de production, prompts Claude `create_recipe` +
   `create_production_plan`).
 
+## Ajouté le 2026-08-05
+
+- `vue-publique-fidelite-cote-client` — module `marketing-fidelite` (prompts
+  Claude `get_loyalty_account` + `list_loyalty_rewards`, vue client en lecture
+  seule). **Le module `marketing-fidelite` n'est plus à 0/24** : en relisant
+  `tutorials.ts` avant d'ajouter cette fiche, ses 24 emplacements du catalogue
+  s'y sont trouvés déjà scaffoldés (placeholders « en préparation ») et
+  plusieurs déjà remplis par d'autres branches (`booster-la-fidelite-programme`,
+  `gerer-les-recompenses-fidelite`, `lancer-un-jeu-concours`...) — le tableau
+  ci-dessus (0/24, 2026-08-04) est donc dépassé pour ce module. Ne pas
+  recompter depuis ce fichier : relire `tutorials.ts` en direct avant de
+  choisir le prochain sujet du module.
+
 ## Modules à zéro tutoriel — prioriser si on veut couvrir toute la série
 
 `site-web-vitrine`, `caisse-pos`, `caroline-ia`, `reservation-salle`,

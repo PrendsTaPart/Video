@@ -95,7 +95,9 @@ rendu une fois en PNG RGBA (PIL), glissé avec `overlay` (qui honore `eval=frame
 ## Statut publication
 
 Vidéo montée, vérifiée (bandeaux, zoom-punch, séquence Claude, peak audio
--7,19 dBFS) et poussée sur la branche — **en attente de validation par Michael**
-avant publication (RapidoCMS, Lovable, LinkedIn), conformément à la règle du
-2026-08-02 dans `LOVABLE-FOODEATUP-DOCS.md` (« ne plus publier aucune vidéo sans
-validation explicite au préalable »).
+-7,19 dBFS), livrée pour validation puis **publiée le 2026-08-05 sur instruction
+explicite** : upload RapidoCMS (vidéo + vignette) et mise à jour de la fiche
+Lovable préexistante `vue-publique-fidelite-cote-client` dans `src/data/
+tutorials.ts` (commit `5679dd3a`, module `marketing-fidelite`). LinkedIn non
+demandé pour cette vidéo. Voir `videos/LOVABLE-FOODEATUP-DOCS.md` (tableau
+« Tutoriels publiés ») et `videos/PROGRESSION-157-TUTORIELS.md`.
