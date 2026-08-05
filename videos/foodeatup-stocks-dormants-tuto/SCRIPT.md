@@ -117,8 +117,26 @@ vos stocks pour vous proposer des campagnes ciblées… »
 
 ## Statut
 
-**Script v1 soumis à validation (STOP obligatoire, règle
-`FOODEATUP-TUTORIELS-WORKFLOW.md` §3) — aucun audio ElevenLabs généré, aucun montage
-lancé.** En attente d'un retour avant de passer à la génération VO (voix Adam FR
-`TGAegA0zNRi8I6nUdq3i`) puis au montage (`build.py`, calqué sur
-`foodeatup-mouvements-stock-tuto/build.py`, référence la plus récente pour `banner()`).
+Script v1 validé. VO générée (ElevenLabs, voix Adam FR `TGAegA0zNRi8I6nUdq3i`) pour
+N0-N7 ; N8 (CTA) réutilisé tel quel depuis `foodeatup-predibot-tuto/vo/N7.mp3` (texte
+identique, md5 `e525d2f8d8350dce70e11f27a595fecd`).
+
+Montage terminé au premier passage (`build.py`, calqué sur
+`foodeatup-mouvements-stock-tuto/build.py`) : **zéro dérive** — chaque offset réel
+correspond exactement à son ancrage (`drift vs anchors: none`). Durée livrée
+**47,92 s** — H.264 High/yuv420p 1920×828, AAC 48 kHz stéréo, faststart
+(`ftyp`→`moov`→`mdat` confirmé). Decode 0 erreur. Audio : peak **-7,07 dBFS**.
+
+Vérifié visuellement (frames extraites à chaque beat) : bandeaux d'étape lisibles
+(plate + texte, méthode `drawtext:box=1`, pas de `drawbox`), zoom-punch correctement
+positionné sur "Redétecter maintenant" (bbox mesurée 1478,402→1795,463), toast "11
+signal(aux) détecté(s)" visible, séquence Claude 3 temps (reveal / copié / mockup
+chatbot) conforme au gabarit partagé.
+
+Livrables : `out/foodeatup-stocks-dormants-tuto-v1.mp4` +
+`out/thumbnail-youtube.jpg` (1280×720, réutilisation neutre de `assets/intro.jpg`,
+aucun redesign).
+
+**STOP obligatoire (règle `FOODEATUP-TUTORIELS-WORKFLOW.md` §6) : vidéo livrée pour
+validation. Pas de publication (RapidoCMS, LinkedIn, Lovable) tant qu'un retour OK
+explicite n'est pas reçu.**
