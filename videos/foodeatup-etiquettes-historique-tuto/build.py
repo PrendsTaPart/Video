@@ -62,7 +62,7 @@ segs = [
     ("D", 30.20, 39.20, 5.93, "4 · Exportez en PDF"),
     ("E", 39.20, 51.65, 4.55, "Historique centralisé"),
 ]
-INTRO_D, OUTRO_D = 3.00, 6.20
+INTRO_D, OUTRO_D = 6.00, 6.20
 
 def encode_seg(name, s, e, target, caption):
     out = f"{SEG}/{name}.mp4"
