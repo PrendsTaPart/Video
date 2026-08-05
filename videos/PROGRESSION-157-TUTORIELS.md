@@ -10,12 +10,17 @@ les occurrences de `moduleSlug: "<slug>"` dans `tutorials.ts` (via
 
 ## État au 2026-08-04
 
-**72 / 157 publiés (46 %).**
+**79 / 157 publiés (50 %)** — `marketing-fidelite` recompté en direct sur
+`tutorials.ts` le 2026-08-05 (8 `videoUrl` non vides sur 24), n'apparaissait qu'en
+doublon obsolète (0/24) dans ce tableau jusqu'ici : le saut de 72→79 vient de
+cette correction de ligne, pas d'un rythme de production soudain — voir
+avertissement plus haut.
 
 | moduleSlug | Nom | Publiés | Attendus | Reste |
 |---|---|---:|---:|---:|
 | `equipe-planning` | Équipe, Planning & RH | 19 | 20 | 1 |
 | `haccp` | Hygiène & HACCP | 17 | 30 | 13 |
+| `marketing-fidelite` | Marketing, Fidélité & Iris | 8 | 24 | 16 |
 | `configuration` | Configuration Boutique | 15 | 14 | ✅ dépassé (+1) |
 | `comptabilite` | Comptabilité & Achats | 10 | 10 | ✅ complet |
 | `stockvision-ai` | StockVision AI | 7 | 20 | 13 |
@@ -25,10 +30,9 @@ les occurrences de `moduleSlug: "<slug>"` dans `tutorials.ts` (via
 | `caisse-pos` | Caisse POS & Matériel | 0 | 7 | 7 |
 | `caroline-ia` | Agent IA Caroline | 0 | 6 | 6 |
 | `reservation-salle` | Réservations & Plan de salle | 0 | 5 | 5 |
-| `marketing-fidelite` | Marketing, Fidélité & Iris | 0 | 24 | 24 |
 | `service-commande` | Service Multi-Canal | 0 | 3 | 3 |
 | `kds-cuisine` | Écran Cuisine (KDS) | 0 | 3 | 3 |
-| **Total** | | **72** | **157** | **85** |
+| **Total** | | **79** | **157** | **78** |
 
 `configuration` dépasse son `expectedCount` d'origine (15 publiés pour 14
 attendus) — le chiffre attendu est une estimation de départ, pas un plafond ;
@@ -47,6 +51,9 @@ ne pas bloquer dessus.
 - `archiver-ses-documents-de-nettoyage` — module `haccp` (upload/aperçu/
   renommage d'un document dans le dossier HACCP > Documents > Nettoyage et
   désinfection, pas de `claudePrompt` — aucun outil MCP correspondant).
+- `resultats-des-sondages-historique` — module `marketing-fidelite` (partage
+  du lien sondage, réponse client, consultation des résultats agrégés,
+  `claudePrompt` sur `get_survey_results`).
 
 ## Modules à zéro tutoriel — prioriser si on veut couvrir toute la série
 
