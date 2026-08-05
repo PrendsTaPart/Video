@@ -2,7 +2,7 @@
 
 **Client :** EatNow — système de réservation tout-en-un pour restaurants
 **Objet :** vidéo de lancement du WhatsApp Agent (source : `EatNow_Brief_Motion_WhatsApp_Agent.pdf`, brief fourni le 2026-08-04)
-**Registre :** aucune voix off — la vidéo se lit entièrement à l'écran (UI de chat, cartons de texte, interface produit). Silence + son design uniquement.
+**Registre :** le brief d'origine prévoyait aucune voix off (lecture 100% à l'écran). **Ajout demandé par l'agence le 2026-08-05 : une voix off féminine FR**, en complément — jamais en répétition verbatim des bulles de chat (voir § Voix off). Le reste de l'information continue de se lire à l'écran (UI de chat, cartons de texte, interface produit).
 
 ---
 
@@ -75,6 +75,39 @@ Preuves : **24/7 · 0% commission**
 
 **Typo :** Geist Bold pour les titres (tracking −0.04em) · Fraunces italic pour une ligne émotionnelle par écran (plans 1 et 5).
 **Motif :** champ de points 8px, densité différente par surface (dense sur Ink, discret sur Paper).
+
+## Voix off
+
+**Voix :** Kokoro-82M, voix `ff_siwis` (français, féminine) — moteur local/offline. *Pas de clé HeyGen/ElevenLabs configurée dans cet environnement (`npx hyperframes auth status` → non connecté) ; décision prise en mode autonome de continuer avec le moteur local plutôt que bloquer sur une connexion impossible ici (pas de navigateur pour l'OAuth). À remplacer par une voix HeyGen/ElevenLabs si l'agence a un compte et une préférence de voix précise — Kokoro reste une voix correcte mais générique.*
+**Vitesse :** 1.0 (naturelle).
+**Direction :** autorité tranquille, registre praticien (cf. `BRAND.md` § 9 Voix & Ton) — jamais démonstratif, phrases courtes, silence assumé entre les lignes. La voix off **complète** ce qui est à l'écran, elle ne le répète pas verbatim (exception : la ligne Fraunces du plan 5, reprise à l'identique — technique standard "la voix lit le carton").
+
+| # | Ligne | Départ global | Durée réelle | Plan |
+|---|---|---|---|---|
+| 1 | « Personne n'a décroché. » | 0.6s | 1.34s | 1 |
+| 2 | « Un message arrive, un dimanche soir. » | 3.2s | 2.03s | 2 |
+| 3 | « L'agent répond avec ce que vous savez déjà. » | 8.0s | 2.43s | 3 |
+| 4 | « La conversation devient une table. » | 12.3s | 1.92s | 4 |
+| 5 | « Et ça tombe dans votre carnet, avec toutes les autres. » | 17.0s | 2.82s | 5 |
+| 6 | « EatNow. Un agent qui répond, et réserve. » | 20.4s | 2.65s | 6 |
+
+Fichiers : `assets/voice/line-01.wav` → `line-06.wav`. Aucun chevauchement entre lignes ; silences généreux entre les beats (~50% du film reste sans voix) — cohérent avec le registre "calme, jamais fort" de la marque.
+
+## Habillage sonore (SFX)
+
+Bibliothèque offline Pixabay (licence libre, sans attribution requise) via le skill `media-use`. Volume ~0.3, toujours sous la voix.
+
+| Cue | Fichier | Départ global | Usage |
+|---|---|---|---|
+| Notification | `assets/sfx/notification.mp3` | 5.2s | arrivée bulle client (plan 2) |
+| Notification | `assets/sfx/notification.mp3` | 8.15s | arrivée bulle agent (plan 3) |
+| Pop | `assets/sfx/pop.mp3` | 9.7s | repère "base de connaissances" (plan 3) |
+| Whoosh (court) | `assets/sfx/whoosh-short.mp3` | 12.5s | dépliage de la carte (plan 4) |
+| Chime | `assets/sfx/chime.mp3` | 14.5s | pastille "Confirmé" (plan 4) |
+| Whoosh (court) | `assets/sfx/whoosh-short.mp3` | 16.0s | la carte glisse vers le carnet (plan 5) |
+| Chime (volume réduit ~0.22) | `assets/sfx/chime.mp3` | 20.85s | le repère EatNow se dessine (plan 6) — signal calme, pas une 2ᵉ confirmation |
+
+Pas de musique de fond (aucune mentionnée dans le brief, confirmé silence assumé + son design seul).
 
 ## Statut assets
 
