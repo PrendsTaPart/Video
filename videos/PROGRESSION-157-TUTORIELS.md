@@ -20,7 +20,7 @@ avertissement plus haut.
 |---|---|---:|---:|---:|
 | `equipe-planning` | Équipe, Planning & RH | 19 | 20 | 1 |
 | `haccp` | Hygiène & HACCP | 17 | 30 | 13 |
-| `marketing-fidelite` | Marketing, Fidélité & Iris | 8 | 24 | 16 |
+| `marketing-fidelite` | Marketing, Fidélité & Iris | 9 | 24 | 15 |
 | `configuration` | Configuration Boutique | 15 | 14 | ✅ dépassé (+1) |
 | `comptabilite` | Comptabilité & Achats | 10 | 10 | ✅ complet |
 | `stockvision-ai` | StockVision AI | 7 | 20 | 13 |
@@ -32,7 +32,7 @@ avertissement plus haut.
 | `reservation-salle` | Réservations & Plan de salle | 0 | 5 | 5 |
 | `service-commande` | Service Multi-Canal | 0 | 3 | 3 |
 | `kds-cuisine` | Écran Cuisine (KDS) | 0 | 3 | 3 |
-| **Total** | | **79** | **157** | **78** |
+| **Total** | | **80** | **157** | **77** |
 
 `configuration` dépasse son `expectedCount` d'origine (15 publiés pour 14
 attendus) — le chiffre attendu est une estimation de départ, pas un plafond ;
@@ -54,6 +54,9 @@ ne pas bloquer dessus.
 - `resultats-des-sondages-historique` — module `marketing-fidelite` (partage
   du lien sondage, réponse client, consultation des résultats agrégés,
   `claudePrompt` sur `get_survey_results`).
+- `recharger-ses-credits-pack-com` — module `marketing-fidelite` (crédits
+  SMS/Email/WhatsApp inclus dans le Pack Marketing & Commercial, pas de
+  `claudePrompt` — facturation Stripe, aucun outil MCP correspondant).
 
 ## Modules à zéro tutoriel — prioriser si on veut couvrir toute la série
 
