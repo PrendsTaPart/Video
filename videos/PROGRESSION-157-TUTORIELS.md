@@ -34,6 +34,14 @@ les occurrences de `moduleSlug: "<slug>"` dans `tutorials.ts` (via
 attendus) — le chiffre attendu est une estimation de départ, pas un plafond ;
 ne pas bloquer dessus.
 
+## Ajoutés cette session (2026-08-05)
+
+- `retrouver-historique-plats-sondes` — module `haccp` (fiche préexistante en
+  placeholder mise à jour avec la vraie vidéo, pas un nouvel ajout au compte
+  `tutorials.ts` — voir `LOVABLE-FOODEATUP-DOCS.md`). Compteur `haccp` ci-dessus
+  non retouché sans relecture fraîche de `tutorials.ts` (plusieurs branches
+  publient en parallèle, cf. avertissement en tête de fichier).
+
 ## Ajoutés cette session (2026-08-04)
 
 - `tenir-sa-liste-de-courses` — module `stockvision-ai` (add/edit/delete sur la
