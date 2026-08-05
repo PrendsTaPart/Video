@@ -5,11 +5,10 @@ Rush fourni par Michael : `Retrouver votre agenda marketing.mp4` (40,8 s, 1920×
 chef, calendrier), outro `page_fin_vid..jpg` — carte CTA générique déjà utilisée sur
 le reste de la série (identique octet pour octet à `foodeatup-haccp-export-tuto/assets/outro.jpg`).
 
-**Statut : v1 montée, en attente de validation de Michael avant publication**
-(RapidoCMS/LinkedIn/Lovable) — STOP obligatoire, voir `FOODEATUP-TUTORIELS-WORKFLOW.md`
-étape 6. VO générée (ElevenLabs, voix Adam FR `TGAegA0zNRi8I6nUdq3i` ; N6 et N8
-réutilisés tels quels depuis `foodeatup-haccp-export-tuto/vo/` — texte générique
-identique, zéro crédit sur ces deux lignes), montage `build.py` terminé.
+**Statut : v1 montée, validée et publiée (2026-08-05).** VO générée (ElevenLabs,
+voix Adam FR `TGAegA0zNRi8I6nUdq3i` ; N6 et N8 réutilisés tels quels depuis
+`foodeatup-haccp-export-tuto/vo/` — texte générique identique, zéro crédit sur ces
+deux lignes), montage `build.py` terminé.
 
 Durée livrée : **54,72 s** — H.264 High/yuv420p 1920×828 25 fps, AAC 48 kHz stéréo,
 faststart confirmé (moov avant mdat). Peak level mesuré sur le MP4 final : **-7,1 dBFS**
@@ -119,30 +118,42 @@ d'étage vidéo dédié) : `mcp__FoodEatUp__create_campaign(...)` pour créer di
 le brouillon de campagne depuis Claude, une fois la cible choisie — pattern
 `saisir-ses-ingredients`.
 
-## Astuce du chef (Lovable, `chefTip`)
+## Astuce du chef / conseil (Lovable, `chefTip`)
 
 « Votre agenda marketing repère vos jours creux tout seul : pas besoin d'ouvrir un
-tableur pour savoir quand relancer. Laissez l'Agent IA proposer la campagne, vous
-n'avez plus qu'à valider et planifier — le reste part automatiquement dans la
-fenêtre légale. »
+tableur pour savoir quand relancer. Laissez l'Agent IA proposer la campagne
+chiffrée, vous n'avez plus qu'à choisir votre segment et valider — le reste part
+automatiquement dans la fenêtre légale. Conseil : envoyez votre offre 3 jours
+avant un marronnier, pas le jour même — c'est le délai conseillé par FoodEatUp
+pour laisser le temps à vos clients de réserver. »
 
 ## Cas d'usage (Lovable, `howItWorks` / `whatItsFor`)
 
 - **Comment ça marche** : Ouvrez Campagnes & automatisations → onglet Agenda →
-  repérez les jours creux détectés sur votre calendrier → cliquez sur Créer →
-  choisissez votre segment de clients (étape Cible) → rédigez votre message avec
-  offre et code promo (étape Message) → planifiez la date d'envoi (étape
-  Planification) → vérifiez la conformité (contacts joignables, coût, exclusions
-  STOP) → confirmez : la campagne part automatiquement dans la fenêtre légale.
-- **À quoi ça sert** : ne plus laisser un jour creux filer sans action — l'agenda
-  marketing détecte automatiquement les jours à faible activité et les marronniers
-  à venir, et l'Agent IA propose des campagnes déjà chiffrées sur les vraies
-  données de l'établissement (segments RFM, marge, historique).
+  repérez les jours creux détectés sur votre calendrier ainsi que les marronniers
+  à venir → cliquez sur Créer → choisissez votre segment de clients (étape Cible)
+  → rédigez votre message avec offre et code promo (étape Message) → planifiez la
+  date d'envoi (étape Planification) → vérifiez la conformité (contacts
+  joignables, coût, exclusions STOP) → confirmez : la campagne part
+  automatiquement dans la fenêtre légale.
+- **À quoi sert le marketing dans un restaurant** : remplir les tables aux
+  moments qui en ont besoin — relancer un client qui ne revient plus, combler un
+  jour creux, ou profiter d'un temps fort commercial. Un **marronnier**, c'est une
+  date fixe et récurrente du calendrier (Rentrée, Halloween, Saint-Valentin...)
+  sur laquelle les clients attendent une offre chaque année. L'agenda marketing
+  centralise tout ça au même endroit : jours creux détectés automatiquement dans
+  l'activité de l'établissement et marronniers à venir (alerte 3 jours avant
+  chaque échéance), avec des campagnes déjà chiffrées proposées par l'Agent IA
+  sur les vraies données (segments RFM, marge, historique).
 
 ## Statut publication
 
-Vidéo montée et corrigée (bug bandeau) suite à la demande de Michael. Séquence
-Claude ajoutée (`propose_campaigns`, donnée réelle vérifiée). **En attente de
-validation avant publication** RapidoCMS + LinkedIn + Lovable (FoodEatUp Academy,
-module à déterminer avec Michael — proposé : `marketing` ou sous-catégorie dédiée
-« Agenda & campagnes », cohérent avec `Campagnes & automatisations` dans l'app).
+Vidéo montée, bug du bandeau corrigé, validée et **publiée le 2026-08-05** :
+- **RapidoCMS** : `foodeatup-agenda-marketing-tuto-v1` / `-thumbnail`
+- **LinkedIn** (compte FoodEatUp, id 68807312) : brouillon `id 631` planifié au
+  prochain créneau libre de la rotation (2 vidéos/j, 7h/16h) — **2026-09-11 07:00**
+- **Lovable** (FoodEatUp Academy) : remplit la fiche placeholder déjà présente
+  dans `src/data/tutorials.ts` — slug `retrouver-son-agenda-marketing`, module
+  `marketing-fidelite` (Marketing, Fidélité & Iris), sous-catégorie
+  « 07 · Pack marketing & campagnes », `howItWorks`/`whatItsFor`/`chefTip`/
+  `claudePrompt` renseignés (commit Lovable `89a1940`).
