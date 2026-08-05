@@ -73,11 +73,15 @@ du défaut 2,20/1,30/2,50) car N8 et N9 sont plus longues que la moyenne de la s
 
 ## Fiche Lovable
 
-- **slug** : `creer-campagne-agent-ia`
-- **title** : Créer une campagne avec l'agent IA FoodEatUp
-- **moduleSlug** : `marketing-fidelite` (première vidéo du module — catégorie *Marketing,
-  Fidélité & Iris*)
-- **subcategory** : Agent IA marketing — Campagnes & automatisations
+- **slug** : `creer-une-campagne-par-ia` — fiche placeholder déjà existante dans le scaffold
+  du module (order 6, section "Pack marketing & campagnes", titre imposé par
+  `CATALOGUE-157-TUTORIELS.md`), remplie avec le contenu complet plutôt que dupliquée.
+  Premier envoi Lovable créé par erreur un doublon sous le slug `creer-campagne-agent-ia`
+  (sans repérer le placeholder existant) — supprimé dans un second envoi correctif.
+- **title** : Créer une campagne par IA — agent FoodEatUp
+- **moduleSlug** : `marketing-fidelite` (première vidéo publiée dans ce module — catégorie
+  *Marketing, Fidélité & Iris*, 23 fiches placeholder restantes)
+- **subcategory** : 06 · Pack marketing & campagnes
 - **whatItsFor** : Laisser l'agent IA de FoodEatUp analyser vos segments clients, vos jours
   creux et vos marges pour proposer des campagnes marketing chiffrées, prêtes à l'envoi en
   quelques clics — email, SMS, WhatsApp ou vocal, conformité (STOP, dédoublonnage) vérifiée

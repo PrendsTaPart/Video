@@ -10,7 +10,9 @@ les occurrences de `moduleSlug: "<slug>"` dans `tutorials.ts` (via
 
 ## État au 2026-08-04
 
-**71 / 157 publiés (45 %).**
+**71 / 157 publiés (45 %).** ⚠️ Le site Lovable affiche déjà "100 vidéos en ligne sur 157"
+au 2026-08-05 (autres sessions en parallèle) — ce tableau ne compte que les tutoriels
+produits depuis ce dépôt, voir avertissement de fragmentation dans `LOVABLE-FOODEATUP-DOCS.md`.
 
 | moduleSlug | Nom | Publiés | Attendus | Reste |
 |---|---|---:|---:|---:|
@@ -25,10 +27,10 @@ les occurrences de `moduleSlug: "<slug>"` dans `tutorials.ts` (via
 | `caisse-pos` | Caisse POS & Matériel | 0 | 7 | 7 |
 | `caroline-ia` | Agent IA Caroline | 0 | 6 | 6 |
 | `reservation-salle` | Réservations & Plan de salle | 0 | 5 | 5 |
-| `marketing-fidelite` | Marketing, Fidélité & Iris | 0 | 24 | 24 |
+| `marketing-fidelite` | Marketing, Fidélité & Iris | 1 | 24 | 23 |
 | `service-commande` | Service Multi-Canal | 0 | 3 | 3 |
 | `kds-cuisine` | Écran Cuisine (KDS) | 0 | 3 | 3 |
-| **Total** | | **71** | **157** | **86** |
+| **Total** | | **72** | **157** | **85** |
 
 `configuration` dépasse son `expectedCount` d'origine (15 publiés pour 14
 attendus) — le chiffre attendu est une estimation de départ, pas un plafond ;
@@ -41,6 +43,14 @@ ne pas bloquer dessus.
 - `creer-sa-fiche-plat-pour-production` — module `haccp` (créer un plat +
   ingrédients + date/quantité de production, prompts Claude `create_recipe` +
   `create_production_plan`).
+
+## Ajoutés cette session (2026-08-05)
+
+- `creer-une-campagne-par-ia` — module `marketing-fidelite` (première vidéo du module :
+  agent IA marketing qui propose des campagnes chiffrées depuis les segments RFM, jours
+  creux et marges, puis assistant de création/lancement en 4 étapes ; prompts Claude
+  `propose_campaigns` + `create_campaign`). Placeholder existant rempli, pas de nouvelle
+  entrée créée (voir correction de doublon documentée dans le `SCRIPT.md` du tuto).
 
 ## Modules à zéro tutoriel — prioriser si on veut couvrir toute la série
 
