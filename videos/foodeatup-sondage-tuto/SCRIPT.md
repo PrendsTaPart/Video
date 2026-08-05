@@ -50,5 +50,9 @@ sondage (`get_survey_results`) sont laissés au tutoriel dédié déjà prévu a
 
 - **RapidoCMS** : vidéo `fe-sondage-tuto`, vignette `fe-sondage-tuto-thumb`.
 - **Lovable** (`project_id 55ff35b7-c442-42c4-950c-8c7fd420c645`) : module
-  `marketing-fidelite`, slug `creer-un-sondage-fidelite`.
+  `marketing-fidelite`, slug `creer-un-sondage-fidelite`. Une fiche placeholder
+  existait déjà sous ce même slug (section "17 · Jeux & sondages", créée par une
+  autre session, `durationSeconds: 0`, contenu "en cours de tournage") — l'agent
+  Lovable l'a détectée et mise à jour avec le contenu réel plutôt que de créer un
+  doublon.
 - **GitHub** : commit sur `claude/foodeatup-video-tutorials-mgemxu`.
