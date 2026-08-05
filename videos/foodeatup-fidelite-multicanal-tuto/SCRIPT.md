@@ -1,6 +1,8 @@
 # Tutoriel — Fidélité Multi-canal (canaux de vente)
 
-**STATUT : BROUILLON — en attente de validation avant génération de la voix off.**
+**STATUT : PUBLIÉ (2026-08-05)** — validé par Michael, monté (v1, 46,4s), archivé sur
+RapidoCMS et ajouté sur Lovable FoodEatUp Academy (mise à jour de la fiche placeholder
+`fidelite-multi-canal` déjà présente, module `marketing-fidelite`). LinkedIn non demandé.
 
 Module 8 « Marketing, Fidélité & Iris » (`marketing-fidelite`), item **19/24** du
 catalogue (`videos/CATALOGUE-157-TUTORIELS.md`) : « Fidélité Multi-canal (canaux de
@@ -57,13 +59,32 @@ l'action montrée (config + activation du programme).
 > établissement]) en mode [par euro dépensé / par passage / hybride], avec
 > [points] point(s) par euro dépensé et une validité de [durée] mois.
 
-## À faire une fois le script validé
+## Réalisé
 
-1. Générer N0-N7 via ElevenLabs (voix Adam FR), réutiliser N8.mp3 existant.
-2. Monter `build.py` (zoom-punch sur les clics config + clic « Voir la page
-   publique », découpage du long temps d'attente OTP en un raccourci monté).
-3. Rendre le MP4 + vignette YouTube (= `assets/intro.jpg`, redimensionnée si besoin).
-4. **STOP obligatoire** — livrer à Michael pour validation avant toute publication
-   (RapidoCMS, Lovable, réseaux).
-5. Après OK : upload RapidoCMS, ajout sur Lovable (`marketing-fidelite`), mise à
-   jour de `PROGRESSION-157-TUTORIELS.md`, push GitHub.
+1. VO générée via ElevenLabs (voix Adam FR `TGAegA0zNRi8I6nUdq3i`), N8 réutilisée
+   depuis `foodeatup-qrcode-tuto/vo/N8.mp3`.
+2. `build.py` : 3 bugs rencontrés et corrigés avant livraison —
+   - **Décalage voix/image cumulatif** (même famille que `foodeatup-tva-tuto`) :
+     les cibles initiales des segments A-F étaient trop courtes par rapport aux
+     lignes VO réellement mesurées, la voix finissait par jouer sur le mauvais
+     segment (N5 arrivait quasi à la fin du segment F au lieu de le couvrir).
+     Corrigé en retimant A/B/C/E/F sur la durée de leur ligne VO + marge, puis en
+     élargissant `CLAUDE_STAGE_D` pour que N6/N7 finissent avant `claude3`/`outro`.
+   - **`banner()` copié depuis `tva` reproduisait le bug `drawbox`/`t` documenté
+     dans `FOODEATUP-TUTORIELS-WORKFLOW.md`** (plaque orange/bleue jamais dessinée,
+     texte blanc flottant sur fond clair). Corrigé en reprenant le pattern à deux
+     `drawtext` (`box=1`) de `foodeatup-mouvement-stock-tuto/build.py`.
+   - **Segment E (page publique) démarrait encore sur l'écran noir de la
+     transition d'onglet** (le noir dure jusqu'à ~7,6s dans le rush, pas 6,5s comme
+     estimé au premier passage) — décalé, vérifié frame par frame après coup.
+3. Rendu final : `out/foodeatup-fidelite-multicanal-tuto-v1.mp4` (46,4s, peak audio
+   -7,2dBFS, cohérent avec le reste de la série).
+4. Vignette YouTube = `assets/intro.jpg` redimensionnée 1280x720 sans recadrage
+   créatif → `out/thumbnail-youtube.jpg`.
+5. Livré à Michael (STOP obligatoire respecté) → validé, publication autorisée.
+6. Publication : upload RapidoCMS (vidéo + vignette, bibliothèque `company_id 321`),
+   mise à jour de la fiche Lovable `fidelite-multi-canal` (déjà présente en
+   placeholder — pas de doublon créé), `PROGRESSION-157-TUTORIELS.md` et
+   `LOVABLE-FOODEATUP-DOCS.md` mis à jour, tout poussé sur GitHub.
+   LinkedIn/RapidoCMS social non demandé pour cette vidéo — seule l'archive
+   bibliothèque a été faite (règle standing), pas de post programmé.

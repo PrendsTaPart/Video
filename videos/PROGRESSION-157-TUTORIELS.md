@@ -50,3 +50,16 @@ ne pas bloquer dessus.
 outils `mcp__FoodEatUp__*` quels cas d'usage de ces modules ont un outil MCP
 correspondant, pour préparer scripts + `claudePrompt(s)` en amont du prochain
 rush fourni par Michael.
+
+⚠️ Cette table date du 2026-08-04 (71/157) — le site est allé bien au-delà depuis
+(constaté 119/157 le 2026-08-05 via `mcp__Lovable__get_project`, plusieurs sessions
+publient en parallèle). Ne pas recalculer ce tableau à la main sans relire
+`tutorials.ts` en direct.
+
+## Ajouté le 2026-08-05
+
+- `fidelite-multi-canal` — module `marketing-fidelite` (n'est donc plus à zéro).
+  Mise à jour d'une fiche placeholder déjà présente sur Lovable (pas de doublon
+  créé) : programme de fidélité configuré une fois puis instantanément actif sur
+  tous les canaux de vente, prompt Claude `update_loyalty_program`. Voir
+  `videos/foodeatup-fidelite-multicanal-tuto/SCRIPT.md`.
