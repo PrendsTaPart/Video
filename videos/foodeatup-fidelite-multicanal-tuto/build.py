@@ -50,18 +50,27 @@ def punch_highlight(btn, btn_wh, crop_box):
             f":w='{bw+2*p}+2*({br})':h='{bh+2*p}+2*({br})'"
             f":color={ORANGE}@0.95:t=5")
 
+BANNER_Y = H - 108
+
 def banner(text, seg_dur):
+    # NOTE: drawbox does not evaluate x/y as a function of t on this ffmpeg
+    # build (6.1.1) -- it's set once at filter init. Using drawbox for the
+    # sliding plate leaves naked white drawtext floating with no background
+    # (bug documented in FOODEATUP-TUTORIELS-WORKFLOW.md, hit again here on
+    # first render). Fix: two drawtext calls with box=1 -- drawtext DOES
+    # re-evaluate t per frame, so the "plate" (its own box) slides correctly.
+    # Reference: videos/foodeatup-mouvement-stock-tuto/build.py banner().
     if not text: return None
     tin, sl = 0.15, 0.32
     tout = max(tin + sl + 0.3, seg_dur - 0.55)
     a = f"min(1\\,max(0\\,(t-{tin})/{sl}))"
     b = f"min(1\\,max(0\\,(t-{tout})/{sl}))"
     x = f"-640+700*({a})-700*({b})"
-    y = H - 108
-    return (f"drawbox=x='{x}':y={y}:w=10:h=62:color={ORANGE}@0.98:t=fill,"
-            f"drawbox=x='({x})+10':y={y}:w=560:h=62:color={BLUE}@0.90:t=fill,"
-            f"drawtext=fontfile={FONT}:text='{text}':fontsize=31:fontcolor=white"
-            f":x='({x})+34':y={y+16}")
+    label = f" {text} "
+    return (f"drawtext=fontfile={FONT}:text='{label}':fontsize=31:fontcolor=white"
+            f":box=1:boxcolor={ORANGE}@0.98:boxborderw=16:x='({x})-10':y={BANNER_Y},"
+            f"drawtext=fontfile={FONT}:text='{label}':fontsize=31:fontcolor=white"
+            f":box=1:boxcolor={BLUE}@0.92:boxborderw=16:x='({x})':y={BANNER_Y}")
 
 BTN_PUBLIC = (1113, 671); SZ_PUBLIC = (300, 53)   # "Voir la page publique" (bas du formulaire)
 
