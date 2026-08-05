@@ -86,8 +86,8 @@ segs = [
     ("A", 0.35, 2.05, 5.10, None, None,       None,       "1 · Mode de gain"),
     ("B", 2.05, 3.50, 4.70, None, None,       None,       "2 · Multiplicateur jours creux"),
     ("C", 3.50, 4.55, 4.65, None, None,       None,       "3 · Règles & validité"),
-    ("D", 4.55, 4.85, 0.90, 4.65, BTN_PUBLIC, SZ_PUBLIC,  None),
-    ("E", 6.50, 9.30, 5.95, None, None,       None,       "Vue publique — GoSushi Démo"),
+    ("D", 4.55, 4.75, 0.90, 4.65, BTN_PUBLIC, SZ_PUBLIC,  None),
+    ("E", 7.60, 9.30, 5.95, None, None,       None,       "Vue publique — GoSushi Démo"),
     ("F", 77.60, 80.68, 4.85, None, None,     None,       None),
 ]
 INTRO_D, OUTRO_D = 5.50, 5.60
