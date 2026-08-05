@@ -441,4 +441,29 @@ d'ajouter une entrée, pour ne pas créer de doublon (vérifié pour celle-ci).
 > le fichier Lovable lui-même — lire `src/data/tutorials.ts` avant de supposer qu'un
 > tutoriel n'existe pas encore, plutôt que de se fier à ce tableau seul.
 | 11 | HACCP | Relevé de température des équipements | `relever-une-temperature-equipement` | **oui, 3 prompts** — `add_temperature`. Vidéo produite à partir des 3 intrants fournis (carte intro, carte outro, screen recording HACCP > Températures : Frigo 5 6°C→9°C, non-conformité auto-détectée vs seuil 4°C). Fiche Lovable préexistante (plus riche, 8 étapes + 3 claudePrompts) mise à jour avec les vraies URLs vidéo/vignette + durée 38s ; premier `claudePrompt` réaligné sur le texte affiché à l'écran dans la vidéo. Validée et publiée le 2026-08-04 (RapidoCMS + LinkedIn 2026-09-09 16h — rotation pleine jusque-là + Lovable) |
+
+## Doublon rencontré et évité — `retrouver-mes-plats-sondes` (2026-08-05)
+
+Nouvelle vidéo produite depuis `videos/foodeatup-plats-sondes-tuto/` (rush fourni
+directement par l'utilisateur : carte intro « RETROUVER MES PLATS SONDÉS HISTORIQUE »,
+carte outro CTA, screen recording HACCP > Températures > Plats + Historique > Plats,
+item catalogue HACCP 06). Script, VO ElevenLabs, montage et vignette terminés, upload
+RapidoCMS fait (`foodeatup-plats-sondes-tuto-v1` / `-thumbnail`) — **mais au moment
+d'ajouter l'entrée dans `tutorials.ts`, l'agent Lovable a signalé qu'une session
+parallèle avait déjà publié `retrouver-historique-plats-sondes`** (même sous-catégorie
+`06`, même `order: 6`) documentant **le même écran et le même flux exactement**
+(contrairement à `tracer-ses-productions-historique` vs `retrouver-historique-productions`,
+qui sont deux écrans réellement différents et restent tous les deux en ligne à raison).
+Entrée `retrouver-mes-plats-sondes` retirée aussitôt (commit Lovable `caab2cf0`) — seule
+`retrouver-historique-plats-sondes` reste en ligne. Assets de cette session conservés
+dans le dépôt vidéo (branche `claude/foodeatup-video-tutorials-vl3hoq`) comme second cut
+de référence, non rattachés au site.
+
+**Leçon pour la prochaine session** : le rappel « lire `src/data/tutorials.ts` avant
+d'ajouter une entrée » (plus haut dans ce fichier) doit se faire **avant de lancer tout
+le pipeline de production** (script/VO/montage), pas seulement avant l'étape 4
+(`send_message` Lovable) — ici tout le montage a été fait avant que le doublon soit
+détecté. Pour un sujet HACCP « historique », vérifier aussi les autres branches en
+cours (le catalogue est produit par plusieurs sessions en parallèle sans se voir, cf.
+note de fragmentation plus haut) avant d'investir du temps de montage.
 | 11 | HACCP | Traçabilité complète (sélection produit, lot, DLC, remarques) | `creer-une-tracabilite-complete` | **oui** — `create_haccp_tracabilite` (`type="complete"`). Validée par Michael le 2026-08-04 (`videos/foodeatup-tracabilite-complete-tuto/` — dossier renommé lors de la fusion des branches le 2026-08-04, collision avec un autre tutoriel `foodeatup-tracabilite-tuto` déjà présent : « Historique de la production et traçabilité » ; 52,2 s, voix Adam FR). Publiée : RapidoCMS (`foodeatup-tracabilite-tuto-v1` / `foodeatup-tracabilite-tuto-thumbnail`) + Lovable (`src/data/tutorials.ts`, commit `82b5ca2`, juste après `creer-une-tracabilite-simplifiee`). **LinkedIn pas encore programmé** — planning du compte FoodEatUp déjà rempli jusqu'au 2026-08-25 par ailleurs (voir `SUIVI-157-TUTORIELS.md`, risque de collision de créneau constaté). |

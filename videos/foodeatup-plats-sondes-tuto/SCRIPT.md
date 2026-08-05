@@ -132,6 +132,21 @@ plus aucune extension d'outro nécessaire.
 
 ## Statut
 
-**Script validé, VO générée (ElevenLabs, N9 réutilisé à 0 crédit), montage terminé, vignette
-générée.** Vidéo livrée pour validation finale avant publication (RapidoCMS + Lovable +
-mise à jour des docs de suivi du dépôt).
+**Production complète (script → VO ElevenLabs → montage → vignette → upload RapidoCMS),
+mais NON publiée sur le site Lovable — doublon détecté.**
+
+Au moment d'ajouter l'entrée dans `src/data/tutorials.ts`, l'agent Lovable a signalé
+qu'un tutoriel `retrouver-historique-plats-sondes` existait déjà (`order: 6`, même
+sous-catégorie `06`), produit par une session parallèle. Vérification faite : cette
+entrée documente **exactement le même écran et le même flux** (Production >
+Températures > onglet Plats > Enregistrer > Historique > onglet Plats), contrairement
+au précédent `tracer-ses-productions-historique` vs `retrouver-historique-productions`
+qui documentaient deux écrans réellement différents. Ce n'est donc pas un cas où garder
+les deux entrées se justifie — **l'entrée que j'avais ajoutée a été retirée** (commit
+Lovable `caab2cf0`), seule `retrouver-historique-plats-sondes` reste en ligne.
+
+Assets produits dans cette session (rush, script, VO, montage, vignette, upload
+RapidoCMS `foodeatup-plats-sondes-tuto-v1` / `-thumbnail`) conservés dans ce dossier à
+titre de référence/second cut, mais **pas rattachés au site**. Pas de mise à jour de
+`PROGRESSION-157-TUTORIELS.md` (aucun nouveau tutoriel publié — le compteur HACCP reste
+inchangé). Note ajoutée dans `LOVABLE-FOODEATUP-DOCS.md` pour les sessions futures.
