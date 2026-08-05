@@ -42,6 +42,21 @@ ne pas bloquer dessus.
   ingrédients + date/quantité de production, prompts Claude `create_recipe` +
   `create_production_plan`).
 
+## Ajoutés le 2026-08-05
+
+- `booster-les-stocks-dormants` — module `marketing-fidelite` (agent Iris,
+  onglet Opportunités, détection de surstocks à écouler ; prompt Claude
+  `propose_campaigns`). Publiée (Facebook FoodEatUp programmé 2026-08-06 07h00,
+  site Lovable commit `53a89c8`).
+
+⚠️ En ajoutant cette fiche, `get_diff` a montré une entrée déjà existante juste
+avant la mienne dans `marketing-fidelite` (`claudePrompt` "Utilise Iris pour me
+proposer 2 à 4 campagnes marketing chiffrées...") — la ligne « 0 publié » de ce
+module dans le tableau ci-dessus est donc déjà fausse avant même cet ajout.
+Confirme l'avertissement de fragmentation déjà noté dans ce fichier : ne pas se
+fier à ce tableau pour ce module sans revérifier `src/data/tutorials.ts` en
+direct.
+
 ## Modules à zéro tutoriel — prioriser si on veut couvrir toute la série
 
 `site-web-vitrine`, `caisse-pos`, `caroline-ia`, `reservation-salle`,
