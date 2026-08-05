@@ -10,7 +10,13 @@ les occurrences de `moduleSlug: "<slug>"` dans `tutorials.ts` (via
 
 ## État au 2026-08-04
 
-**71 / 157 publiés (45 %).**
+**71 / 157 publiés (45 %).** ⚠️ Ce tableau n'a pas été recompté dans son ensemble
+depuis — le site affichait déjà "102 vidéos en ligne sur 157" au 2026-08-05
+(d'autres sessions publient en parallèle sans se voir, cf. avertissement
+`LOVABLE-FOODEATUP-DOCS.md`). Seule la ligne `marketing-fidelite` ci-dessous a
+été mise à jour ponctuellement (1 publié le 2026-08-05, `synchroniser-google-avis`)
+— ne pas se fier au total 71/86 restants, relire `tutorials.ts` en direct avant
+de planifier la prochaine vidéo.
 
 | moduleSlug | Nom | Publiés | Attendus | Reste |
 |---|---|---:|---:|---:|
@@ -25,7 +31,7 @@ les occurrences de `moduleSlug: "<slug>"` dans `tutorials.ts` (via
 | `caisse-pos` | Caisse POS & Matériel | 0 | 7 | 7 |
 | `caroline-ia` | Agent IA Caroline | 0 | 6 | 6 |
 | `reservation-salle` | Réservations & Plan de salle | 0 | 5 | 5 |
-| `marketing-fidelite` | Marketing, Fidélité & Iris | 0 | 24 | 24 |
+| `marketing-fidelite` | Marketing, Fidélité & Iris | 1 | 24 | 23 |
 | `service-commande` | Service Multi-Canal | 0 | 3 | 3 |
 | `kds-cuisine` | Écran Cuisine (KDS) | 0 | 3 | 3 |
 | **Total** | | **71** | **157** | **86** |
@@ -33,6 +39,13 @@ les occurrences de `moduleSlug: "<slug>"` dans `tutorials.ts` (via
 `configuration` dépasse son `expectedCount` d'origine (15 publiés pour 14
 attendus) — le chiffre attendu est une estimation de départ, pas un plafond ;
 ne pas bloquer dessus.
+
+## Ajoutés cette session (2026-08-05)
+
+- `synchroniser-google-avis` — module `marketing-fidelite` (connexion OAuth
+  Google, badge connecté, Synchroniser, Lien de dépôt ; prompts Claude
+  `list_reviews` + `reply_review`, aucun outil pour la connexion elle-même).
+  Placeholder déjà en place (order 2, section "Avis clients") rempli en place.
 
 ## Ajoutés cette session (2026-08-04)
 
