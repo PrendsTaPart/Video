@@ -90,6 +90,13 @@ Séquence Claude vérifiée avec accents français corrects. Chaque ligne VO vé
 dans la fenêtre de son segment visuel. Vignette `out/thumbnail-youtube.jpg` (1280×720,
 crop neutre de la carte d'intro).
 
-**Livrée à Michael pour validation (`SendUserFile`) — STOP avant publication**
-(`FOODEATUP-TUTORIELS-WORKFLOW.md` étape 6). Pas encore uploadée sur RapidoCMS, pas
-encore ajoutée sur Lovable.
+**Publiée** (2026-08-05). Livrée à Michael pour validation (`SendUserFile`) → validée
+("tu peux publier") → publication :
+
+- Upload RapidoCMS (vidéo + vignette) via `upload_file_tool` → S3 :
+  `foodeatup-resultats-sondages-tuto-v1` / `-thumbnail`.
+- Fiche Lovable préexistante en placeholder (`resultats-des-sondages-historique`) mise à
+  jour avec vidéo/vignette/étapes/astuce du chef/prompt Claude plutôt que dupliquée
+  (commit `69d1d3b`).
+- Site redéployé (`deploy_project`) → https://foodeatup-guide-star.lovable.app
+- Pas de créneau LinkedIn programmé dans cette session (non demandé).
