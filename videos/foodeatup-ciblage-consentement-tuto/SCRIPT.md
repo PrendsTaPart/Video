@@ -91,5 +91,12 @@ segment ?
 
 ## Statut
 
-Script en attente de validation (STOP obligatoire du pipeline avant génération audio
-ElevenLabs — voir `FOODEATUP-TUTORIELS-WORKFLOW.md`).
+Script validé par Michael le 2026-08-05. VO générée (7 lignes ElevenLabs, voix Adam FR
+`TGAegA0zNRi8I6nUdq3i` ; N6/N8 copiées telles quelles depuis `foodeatup-checklist-hygiene-tuto`,
+0 crédit). Montage terminé (`build.py`, ffmpeg) : **60,6 s**, dérive voix/image ≤0,1 s sur
+toutes les lignes, pic audio final -7,17 dBFS. Vignette YouTube générée depuis
+`assets/intro.jpg` (1280x720, 90 Ko, sans recadrage créatif). Livrables dans `out/`.
+
+**STOP obligatoire toujours en vigueur avant publication** (Lovable/RapidoCMS/LinkedIn) :
+en attente de validation explicite du montage final par Michael — voir
+`LOVABLE-FOODEATUP-DOCS.md`, règle ajoutée le 2026-08-02.
