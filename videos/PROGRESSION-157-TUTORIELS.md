@@ -8,7 +8,7 @@ vient de la somme des `expectedCount` du tableau `modules` du même fichier
 les occurrences de `moduleSlug: "<slug>"` dans `tutorials.ts` (via
 `mcp__Lovable__read_file`) et comparer à `expectedCount`.
 
-## État au 2026-08-04
+## État au 2026-08-04 (voir mise à jour ponctuelle 2026-08-05 ci-dessous)
 
 **71 / 157 publiés (45 %).**
 
@@ -30,6 +30,12 @@ les occurrences de `moduleSlug: "<slug>"` dans `tutorials.ts` (via
 | `kds-cuisine` | Écran Cuisine (KDS) | 0 | 3 | 3 |
 | **Total** | | **71** | **157** | **86** |
 
+**Mise à jour 2026-08-05** : `marketing-fidelite` passe à **1/24** avec la publication de
+`calendrier-de-com-agent-iris` (voir section « Ajouté le 2026-08-05 » plus bas) — total
+approximatif **72/157**. Ce tableau global n'est pas recalculé en entier à chaque vidéo
+(d'autres sessions publient en parallèle) ; se fier à `src/data/tutorials.ts` sur Lovable
+pour le décompte exact à un instant donné.
+
 `configuration` dépasse son `expectedCount` d'origine (15 publiés pour 14
 attendus) — le chiffre attendu est une estimation de départ, pas un plafond ;
 ne pas bloquer dessus.
@@ -41,6 +47,16 @@ ne pas bloquer dessus.
 - `creer-sa-fiche-plat-pour-production` — module `haccp` (créer un plat +
   ingrédients + date/quantité de production, prompts Claude `create_recipe` +
   `create_production_plan`).
+
+## Ajouté le 2026-08-05
+
+- `calendrier-de-com-agent-iris` — module `marketing-fidelite` (agent Iris :
+  détection d'opportunités, génération des propositions de la semaine,
+  validation d'une proposition ; prompt Claude `propose_campaigns`).
+  **Premier tutoriel publié de ce module** (0/24 -> 1/24). Voir
+  `videos/foodeatup-calendrier-iris-tuto/SCRIPT.md`. Produit et publié en une
+  fois sur demande explicite (branche `claude/foodeatup-video-tutorial-hc21s2`,
+  commit `ac346d9`).
 
 ## Modules à zéro tutoriel — prioriser si on veut couvrir toute la série
 
