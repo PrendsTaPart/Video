@@ -90,10 +90,21 @@ aussi les plats, on garde ce prompt tel quel ; sinon, on retire la séquence Cla
 
 ## Statut
 
-**Brouillon — en attente de validation du script par Michael (STOP obligatoire du
-pipeline, `videos/FOODEATUP-TUTORIELS-WORKFLOW.md` étape 3).** Aucune VO ElevenLabs
-générée, aucun montage lancé, rien publié. Deux points à trancher avant de continuer :
-1. Le texte des 9 lignes ci-dessus (ou ses ajustements).
-2. La validité de la séquence Claude / `list_haccp_temperatures` sur les plats (voir
-   ci-dessus) — sinon, tutoriel sans séquence Claude, comme `utiliser-nos-modeles-
-   foodeatup` ou `sonder-ses-plats-a-coeur` (non fourni ici).
+**Script validé par Michael.** VO générée (ElevenLabs Adam FR Instructor pour N0-N5/N7 ;
+N6/N8 réutilisées telles quelles depuis `foodeatup-tva-tuto/vo/`, texte identique).
+
+**Montage terminé** — `out/foodeatup-plats-sondes-historique-tuto-v1.mp4`, **56,48 s**,
+H.264 High/yuv420p, 1920×828, 25 fps, AAC 48 kHz stéréo, +faststart (moov avant mdat
+confirmé), decode 0 erreur. Peak audio **-7,12 dBFS** (marge saine sous le limiteur
+`alimiter=0.6`, ~-4,4 dBFS). Bandeaux d'étape avec le correctif `drawtext` double-passage
+(pas `drawbox`, cf. bug documenté plus haut dans `FOODEATUP-TUTORIELS-WORKFLOW.md`) —
+vérifiés visibles sur chaque segment par extraction de frames. Zoom-punch vérifié sur le
+bouton "Enregistrer les relevés de température". Séquence Claude vérifiée avec accents
+français corrects (un premier rendu avait perdu les accents, corrigé avant livraison).
+Chaque ligne VO vérifiée dans la fenêtre de son segment visuel (script de vérification
+dédié, aucun dépassement). Vignette `out/thumbnail-youtube.jpg` (1280×720, crop neutre de
+la carte d'intro, pas de redesign).
+
+Publication lancée sur instruction explicite de Michael ("continue le montage vidéo et
+ajoute à lovable"), sans repasser par la livraison-validation intermédiaire (précédent
+déjà appliqué sur `saisir-un-mouvement-de-stock`, voir `LOVABLE-FOODEATUP-DOCS.md`).
