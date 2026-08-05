@@ -10,6 +10,7 @@
 # on real footage). xfade on every cut, forced back to yuv420p at the end of
 # the chain. 48kHz stereo AAC, +faststart.
 import subprocess, os, sys
+from PIL import Image, ImageDraw, ImageFont
 sys.path.insert(0, "/home/user/Video/videos/_shared")
 from claude_prompt_sequence import (
     render_claude_stage1_png, render_claude_stage2_png, render_claude_stage3_png,
@@ -44,28 +45,46 @@ def crop_for(btn):
     return f"crop={cw}:{ch}:{x}:{y},scale={W}:{H}:flags=bicubic", (cw, ch, x, y)
 
 def punch_highlight(btn, btn_wh, crop_box):
+    """Static ring around the clicked button. Deliberately NOT animated:
+    `drawbox` in this ffmpeg (6.1) evaluates x/y/w/h once at config time, so a
+    `sin(t)` pulse would silently freeze at its t=0 value anyway (documented
+    pitfall in FOODEATUP-TUTORIELS-WORKFLOW.md)."""
     cw, ch, cx, cy = crop_box
     sx, sy = W / cw, H / ch
     bw, bh = btn_wh[0] * sx, btn_wh[1] * sy
     ox, oy = (btn[0] - cx) * sx, (btn[1] - cy) * sy
     p = 14
-    br = "6*sin(2*PI*t*2.2)"  # static in practice (drawbox doesn't animate on t) -- kept as documented
-    return (f"drawbox=x='{ox-bw/2-p}-{br}':y='{oy-bh/2-p}-{br}'"
-            f":w='{bw+2*p}+2*({br})':h='{bh+2*p}+2*({br})'"
-            f":color={ORANGE}@0.95:t=5")
+    return (f"drawbox=x={ox-bw/2-p:.0f}:y={oy-bh/2-p:.0f}"
+            f":w={bw+2*p:.0f}:h={bh+2*p:.0f}:color={ORANGE}@0.95:t=5")
 
-def banner(text, seg_dur):
-    if not text: return None
+BANNER_H = 62
+def render_banner_png(text, path):
+    """Step banner rendered once with PIL, then slid in with `overlay`.
+
+    The old approach chained `drawbox`/`drawtext` with a time-based x
+    expression. `drawtext` re-evaluates x per frame but `drawbox` does NOT
+    (ffmpeg 6.1 evaluates it once at config time, i.e. at t=0, where the
+    slide-in expression is still off-screen at x=-640) -- the orange rule and
+    blue plate were never drawn, only bare white drawtext text over the page.
+    `overlay` honours eval=frame, so the whole banner is one RGBA image that
+    really slides. Fix documented in FOODEATUP-TUTORIELS-WORKFLOW.md."""
+    f = ImageFont.truetype(FONT, 31)
+    probe = ImageDraw.Draw(Image.new("RGBA", (8, 8)))
+    w = max(570, int(34 + probe.textlength(text, font=f) + 28))
+    im = Image.new("RGBA", (w, BANNER_H), (0, 0, 0, 0))
+    d = ImageDraw.Draw(im)
+    d.rectangle([0, 0, 9, BANNER_H - 1], fill=(247, 148, 29, 250))       # rule (orange)
+    d.rectangle([10, 0, w - 1, BANNER_H - 1], fill=(27, 109, 243, 230))  # plate (blue)
+    d.text((34, BANNER_H // 2), text, font=f, fill=(255, 255, 255, 255), anchor="lm")
+    im.save(path)
+    return w
+
+def banner_x_expr(bw, seg_dur):
     tin, sl = 0.15, 0.32
     tout = max(tin + sl + 0.3, seg_dur - 0.55)
     a = f"min(1\\,max(0\\,(t-{tin})/{sl}))"
     b = f"min(1\\,max(0\\,(t-{tout})/{sl}))"
-    x = f"-640+700*({a})-700*({b})"
-    y = H - 108
-    return (f"drawbox=x='{x}':y={y}:w=10:h=62:color={ORANGE}@0.98:t=fill,"
-            f"drawbox=x='({x})+10':y={y}:w=560:h=62:color={BLUE}@0.90:t=fill,"
-            f"drawtext=fontfile={FONT}:text='{text}':fontsize=31:fontcolor=white"
-            f":x='({x})+34':y={y+16}")
+    return f"-{bw}+{bw + 60}*({a})-{bw + 60}*({b})"
 
 # Coordinates measured visually on the real frames (tab bar row, outline-style
 # buttons). No apostrophe in any caption (bug hit on foodeatup-ingredients-tuto
@@ -76,17 +95,19 @@ BTN_MES_INFOS     = (1065, 338); SZ_MES_INFOS     = (209, 46)
 # (name, src_start, src_end, target_out_duration, click_time_or_None, button, btn_size, caption)
 segs = [
     ("A",  0.40,  1.90, 1.50, None, None,              None,              None),
-    ("B1", 1.90,  3.60, 3.60, None, None,              None,              "1 - Solde et prochaine recompense"),
-    ("B2", 3.60,  7.60, 4.80, None, None,              None,              "2 - Vos recompenses disponibles"),
+    ("B1", 1.90,  3.60, 3.85, None, None,              None,              "1 - Solde et prochaine recompense"),
+    ("B2", 3.60,  7.60, 5.25, None, None,              None,              "2 - Vos recompenses disponibles"),
     ("C",  7.60,  7.95, 0.90, 7.60, BTN_MES_COMMANDES, SZ_MES_COMMANDES,  None),
-    ("D",  7.95, 11.80, 3.85, None, None,              None,              "3 - Onglet Mes commandes"),
-    ("E", 15.85, 16.10, 0.90, 15.85, BTN_MES_INFOS,    SZ_MES_INFOS,      None),
-    ("F", 16.10, 19.28, 3.60, None, None,              None,              "4 - Connexion sans mot de passe"),
+    ("D",  7.95, 11.80, 4.15, None, None,              None,              "3 - Onglet Mes commandes"),
+    ("E", 16.85, 17.12, 0.90, 16.85, BTN_MES_INFOS,    SZ_MES_INFOS,      None),
+    ("F", 17.12, 19.28, 5.65, None, None,              None,              "4 - Connexion sans mot de passe"),
 ]
-# 11.80 -> 15.85 (retour bref sur l'onglet Fidélité, même contenu que
+# 11.80 -> 16.85 (retour bref sur l'onglet Fidélité, même contenu que
 # A/B1/B2) volontairement coupé : temps mort de redite, rien de nouveau à
 # montrer avant le clic sur "Mes infos" -- même logique que les coupes de
-# spinner/chargement sur les autres tutos de la série.
+# spinner/chargement sur les autres tutos de la série. Bascule réelle vers
+# "Mon compte" mesurée entre 17.10 et 17.14 sur le rush (pas 16.0 comme un
+# premier passage au montage l'avait supposé -- vérifié image par image).
 INTRO_D, OUTRO_D = 2.60, 6.20
 
 def encode_seg(name, s, e, target, btn, btn_sz, caption):
@@ -98,11 +119,20 @@ def encode_seg(name, s, e, target, btn, btn_sz, caption):
         vf += f",{crop_vf},{punch_highlight(btn, btn_sz, box)}"
     else:
         vf += f",scale={W}:{H}"
-    b = banner(caption, target)
-    if b: vf += f",{b}"
-    vf += f",fps={FPS},format=yuv420p"
-    run(["ffmpeg","-y","-v","error","-ss",str(s),"-to",str(e),"-i",SRC,"-an",
-         "-vf",vf,"-r",str(FPS),"-c:v","libx264","-preset","medium","-crf","18",out])
+    cmd = ["ffmpeg","-y","-v","error","-ss",str(s),"-to",str(e),"-i",SRC,"-an"]
+    if caption:
+        png = f"{SEG}/{name}_banner.png"
+        bw = render_banner_png(caption, png)
+        # shortest=1 is mandatory: the banner is an infinite -loop 1 still, so
+        # without it overlay keeps emitting frames forever once the segment ends.
+        fc = (f"[0:v]{vf}[base];"
+              f"[base][1:v]overlay=x='{banner_x_expr(bw, target)}':y={H - 108}"
+              f":eval=frame:shortest=1,fps={FPS},format=yuv420p[v]")
+        cmd += ["-loop","1","-i",png,"-filter_complex",fc,"-map","[v]"]
+    else:
+        cmd += ["-vf", f"{vf},fps={FPS},format=yuv420p"]
+    cmd += ["-r",str(FPS),"-c:v","libx264","-preset","medium","-crf","18",out]
+    run(cmd)
     return out
 
 # ---------------------------------------------------------------------------
@@ -136,7 +166,7 @@ def card(img, out, secs, zoom_in=True, fade=True):
          "-filter_complex",vf,"-r",str(FPS),
          "-c:v","libx264","-preset","medium","-crf","18",out])
 
-CLAUDE_STAGE_D = [2.60, 2.00, 6.20]  # reveal, copied, chatbot mockup
+CLAUDE_STAGE_D = [2.60, 2.40, 6.00]  # reveal, copied, chatbot mockup
 
 def build_silent(outro_d):
     card(f"{ROOT}/assets/intro.jpg", f"{SEG}/intro.mp4", INTRO_D, zoom_in=True)
