@@ -8,9 +8,13 @@ vient de la somme des `expectedCount` du tableau `modules` du même fichier
 les occurrences de `moduleSlug: "<slug>"` dans `tutorials.ts` (via
 `mcp__Lovable__read_file`) et comparer à `expectedCount`.
 
-## État au 2026-08-04
+## État au 2026-08-05
 
-**71 / 157 publiés (45 %).**
+**72 / 157 publiés (46 %).** (Le compteur homepage Lovable affiche 109/157 —
+écart déjà documenté ailleurs, voir `LOVABLE-FOODEATUP-DOCS.md` : d'autres
+branches/sessions publient en parallèle sans que ce fichier de suivi local
+en ait toujours trace. Ce tableau ne couvre que ce qui a été produit *depuis
+ce dépôt*.)
 
 | moduleSlug | Nom | Publiés | Attendus | Reste |
 |---|---|---:|---:|---:|
@@ -21,20 +25,28 @@ les occurrences de `moduleSlug: "<slug>"` dans `tutorials.ts` (via
 | `stockvision-ai` | StockVision AI | 7 | 20 | 13 |
 | `predibot` | PrediBot (Agent IA Directeur) | 2 | 3 | 1 |
 | `hubrise-livraisons` | HubRise & Livraisons | 1 | 4 | 3 |
-| `site-web-vitrine` | Site Web & Vitrine | 0 | 8 | 8 |
+| `site-web-vitrine` | Site Web & Vitrine | 1 | 8 | 7 |
 | `caisse-pos` | Caisse POS & Matériel | 0 | 7 | 7 |
 | `caroline-ia` | Agent IA Caroline | 0 | 6 | 6 |
 | `reservation-salle` | Réservations & Plan de salle | 0 | 5 | 5 |
 | `marketing-fidelite` | Marketing, Fidélité & Iris | 0 | 24 | 24 |
 | `service-commande` | Service Multi-Canal | 0 | 3 | 3 |
 | `kds-cuisine` | Écran Cuisine (KDS) | 0 | 3 | 3 |
-| **Total** | | **71** | **157** | **86** |
+| **Total** | | **72** | **157** | **85** |
 
 `configuration` dépasse son `expectedCount` d'origine (15 publiés pour 14
 attendus) — le chiffre attendu est une estimation de départ, pas un plafond ;
 ne pas bloquer dessus.
 
-## Ajoutés cette session (2026-08-04)
+## Ajoutés cette session (2026-08-05)
+
+- `connecter-son-domaine` — module `site-web-vitrine` (premier tutoriel du
+  module : saisie du domaine, clic Connecter, copie de l'enregistrement
+  CNAME, clic Vérifier maintenant ; prompt Claude `get_domain_status`). Rush
+  et cartes intro/outro fournis par Michael. Voir
+  `videos/foodeatup-domaine-tuto/SCRIPT.md`.
+
+## Ajoutés session précédente (2026-08-04)
 
 - `tenir-sa-liste-de-courses` — module `stockvision-ai` (add/edit/delete sur la
   liste de courses, prompt Claude `create_supplier_order`).
