@@ -128,9 +128,14 @@ def card(img, out, secs, zoom_in=True, fade=True):
          "-filter_complex",vf,"-r",str(FPS),
          "-c:v","libx264","-preset","medium","-crf","18",out])
 
-# N6=4.41s doit couvrir stage1(reveal)+stage2(copié), N7=4.26s couvre stage3
-# (mockup chatbot) -- mesuré sur vo/N6.mp3 et vo/N7.mp3 avant de fixer ces durées.
-CLAUDE_STAGE_D = [2.50, 2.00, 4.30]  # reveal, copied, chatbot mockup
+# N6=4.41s doit finir avant le début de claude3 (stage1+stage2 élargis en
+# conséquence), N7=4.26s doit finir avant le début de l'outro (stage3
+# élargi) -- vérifié via les offsets réels imprimés par ce script (placement
+# séquentiel piloté par la chaîne des durées VO N0-N5, qui dépasse la durée
+# visuelle des segments A-F : stage1/2/3 sont donc dimensionnés au-delà de
+# leur minimum "naturel" pour absorber ce décalage, pas juste sur la durée
+# de N6/N7 seules -- mesuré et corrigé le 2026-08-05, voir SCRIPT.md).
+CLAUDE_STAGE_D = [3.40, 2.60, 4.90]  # reveal, copied, chatbot mockup
 
 def build_silent(outro_d):
     card(f"{ROOT}/assets/intro.jpg", f"{SEG}/intro.mp4", INTRO_D, zoom_in=True)
