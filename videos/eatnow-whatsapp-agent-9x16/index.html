@@ -1,8 +1,8 @@
 <!doctype html>
-<html lang="fr" data-resolution="square">
+<html lang="fr" data-resolution="portrait">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=1080, height=1080" />
+    <meta name="viewport" content="width=1080, height=1920" />
     <script src="assets/vendor/gsap.min.js"></script>
     <style>
       * {
@@ -14,7 +14,7 @@
       body {
         margin: 0;
         width: 1080px;
-        height: 1080px;
+        height: 1920px;
         overflow: hidden;
         background: #141210;
       }
@@ -31,7 +31,7 @@
       data-start="0"
       data-duration="24"
       data-width="1080"
-      data-height="1080"
+      data-height="1920"
     >
       <!-- Frame 1 — Personne n'a décroché (0-3s) -->
       <div
@@ -42,7 +42,7 @@
         data-duration="3"
         data-track-index="1"
         data-width="1080"
-        data-height="1080"
+        data-height="1920"
       ></div>
 
       <!-- Frame 2 — Le téléphone monte (3-7s) -->
@@ -54,7 +54,7 @@
         data-duration="4"
         data-track-index="1"
         data-width="1080"
-        data-height="1080"
+        data-height="1920"
       ></div>
 
       <!-- Frame 3 — L'agent répond (7-11s) -->
@@ -66,7 +66,7 @@
         data-duration="4"
         data-track-index="1"
         data-width="1080"
-        data-height="1080"
+        data-height="1920"
       ></div>
 
       <!-- Frame 4 — La réservation se prend (11-16s) -->
@@ -78,7 +78,7 @@
         data-duration="5"
         data-track-index="1"
         data-width="1080"
-        data-height="1080"
+        data-height="1920"
       ></div>
 
       <!-- Frame 5 — Ça tombe dans le carnet (16-20s) -->
@@ -90,7 +90,7 @@
         data-duration="4"
         data-track-index="1"
         data-width="1080"
-        data-height="1080"
+        data-height="1920"
       ></div>
 
       <!-- Frame 6 — Un agent qui répond et réserve (20-24s) -->
@@ -102,10 +102,10 @@
         data-duration="4"
         data-track-index="1"
         data-width="1080"
-        data-height="1080"
+        data-height="1920"
       ></div>
 
-      <!-- Voix off (ElevenLabs, Charlotte fr — voix féminine chaleureuse) — non chevauchante, track 10 -->
+      <!-- Voix off (ElevenLabs, Charlotte fr — voix féminine chaleureuse) — identique au master 1:1, non chevauchante -->
       <audio id="voice-line-01" src="assets/voice/line-01.mp3" data-start="0.6" data-duration="1.437" data-track-index="10" data-volume="1"></audio>
       <audio id="voice-line-02" src="assets/voice/line-02.mp3" data-start="3.2" data-duration="2.508" data-track-index="10" data-volume="1"></audio>
       <audio id="voice-line-03" src="assets/voice/line-03.mp3" data-start="8.0" data-duration="2.273" data-track-index="10" data-volume="1"></audio>
@@ -113,7 +113,7 @@
       <audio id="voice-line-05" src="assets/voice/line-05.mp3" data-start="16.3" data-duration="3.161" data-track-index="10" data-volume="1"></audio>
       <audio id="voice-line-06" src="assets/voice/line-06.mp3" data-start="20.4" data-duration="2.691" data-track-index="10" data-volume="1"></audio>
 
-      <!-- Habillage sonore — chaque cue sur sa propre piste pour éviter tout chevauchement -->
+      <!-- Habillage sonore -->
       <audio id="sfx-notification-01" src="assets/sfx/notification.mp3" data-start="5.2" data-duration="1.2" data-track-index="11" data-volume="0.3"></audio>
       <audio id="sfx-notification-02" src="assets/sfx/notification.mp3" data-start="8.15" data-duration="1.2" data-track-index="12" data-volume="0.3"></audio>
       <audio id="sfx-pop-knowledge" src="assets/sfx/pop.mp3" data-start="9.7" data-duration="0.72" data-track-index="13" data-volume="0.3"></audio>

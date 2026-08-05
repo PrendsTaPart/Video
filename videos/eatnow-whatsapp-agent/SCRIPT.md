@@ -78,20 +78,20 @@ Preuves : **24/7 · 0% commission**
 
 ## Voix off
 
-**Voix :** Kokoro-82M, voix `ff_siwis` (français, féminine) — moteur local/offline. *Pas de clé HeyGen/ElevenLabs configurée dans cet environnement (`npx hyperframes auth status` → non connecté) ; décision prise en mode autonome de continuer avec le moteur local plutôt que bloquer sur une connexion impossible ici (pas de navigateur pour l'OAuth). À remplacer par une voix HeyGen/ElevenLabs si l'agence a un compte et une préférence de voix précise — Kokoro reste une voix correcte mais générique.*
-**Vitesse :** 1.0 (naturelle).
+**Voix :** ElevenLabs (connecteur MCP de la session, `eleven_multilingual_v2`), voix **Charlotte** (`XB0fDUnXU5powFXDhCwa`) — voix féminine chaleureuse. *Première version livrée avec Kokoro local (`ff_siwis`, seule voix FR du moteur offline) ; l'agence a demandé une voix "plus chaleureuse" — remplacée par cette voix ElevenLabs via le connecteur MCP déjà autorisé dans la session (pas besoin de clé API).*
+**Vitesse :** naturelle (pas de contrôle de vitesse exposé par le connecteur MCP, contrairement à Kokoro).
 **Direction :** autorité tranquille, registre praticien (cf. `BRAND.md` § 9 Voix & Ton) — jamais démonstratif, phrases courtes, silence assumé entre les lignes. La voix off **complète** ce qui est à l'écran, elle ne le répète pas verbatim (exception : la ligne Fraunces du plan 5, reprise à l'identique — technique standard "la voix lit le carton").
 
 | # | Ligne | Départ global | Durée réelle | Plan |
 |---|---|---|---|---|
-| 1 | « Personne n'a décroché. » | 0.6s | 1.34s | 1 |
-| 2 | « Un message arrive, un dimanche soir. » | 3.2s | 2.03s | 2 |
-| 3 | « L'agent répond avec ce que vous savez déjà. » | 8.0s | 2.43s | 3 |
-| 4 | « La conversation devient une table. » | 12.3s | 1.92s | 4 |
-| 5 | « Et ça tombe dans votre carnet, avec toutes les autres. » | 17.0s | 2.82s | 5 |
-| 6 | « EatNow. Un agent qui répond, et réserve. » | 20.4s | 2.65s | 6 |
+| 1 | « Personne n'a décroché. » | 0.6s | 1.44s | 1 |
+| 2 | « Un message arrive, un dimanche soir. » | 3.2s | 2.51s | 2 |
+| 3 | « L'agent répond avec ce que vous savez déjà. » | 8.0s | 2.27s | 3 |
+| 4 | « La conversation devient une table. » | 12.3s | 2.09s | 4 |
+| 5 | « Et ça tombe dans votre carnet, avec toutes les autres. » | 16.3s | 3.16s | 5 |
+| 6 | « EatNow. Un agent qui répond, et réserve. » | 20.4s | 2.69s | 6 |
 
-Fichiers : `assets/voice/line-01.wav` → `line-06.wav`. Aucun chevauchement entre lignes ; silences généreux entre les beats (~50% du film reste sans voix) — cohérent avec le registre "calme, jamais fort" de la marque.
+Fichiers : `assets/voice/line-01.mp3` → `line-06.mp3`. Aucun chevauchement entre lignes ; silences généreux entre les beats (~45% du film reste sans voix) — cohérent avec le registre "calme, jamais fort" de la marque.
 
 ## Habillage sonore (SFX)
 

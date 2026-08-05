@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 300" width="480" height="300">
+  <rect width="480" height="300" fill="#FAF8F2"/>
+  <text x="32" y="56" font-family="system-ui, serif" font-weight="300" font-style="italic" font-size="32" fill="#141210">Thank you for choosing our table.</text>
+  <rect x="400" y="220" width="8" height="8" rx="1" fill="#141210"/>
+  <rect x="410" y="220" width="8" height="8" rx="1" fill="#141210"/>
+  <rect x="430" y="220" width="8" height="8" rx="1" fill="#141210"/>
+  <rect x="440" y="220" width="8" height="8" rx="1" fill="#141210"/>
+  <rect x="400" y="230" width="8" height="8" rx="1" fill="#141210"/>
+  <rect x="420" y="230" width="8" height="8" rx="1" fill="#141210"/>
+  <rect x="440" y="230" width="8" height="8" rx="1" fill="#141210"/>
+  <rect x="410" y="240" width="8" height="8" rx="1" fill="#141210"/>
+  <rect x="420" y="240" width="8" height="8" rx="1" fill="#141210"/>
+  <rect x="430" y="240" width="8" height="8" rx="1" fill="#141210"/>
+  <rect x="400" y="250" width="8" height="8" rx="1" fill="#141210"/>
+  <rect x="420" y="250" width="8" height="8" rx="1" fill="#141210"/>
+  <rect x="440" y="250" width="8" height="8" rx="1" fill="#141210"/>
+  <rect x="400" y="260" width="8" height="8" rx="1" fill="#141210"/>
+  <rect x="410" y="260" width="8" height="8" rx="1" fill="#141210"/>
+  <rect x="430" y="260" width="8" height="8" rx="1" fill="#141210"/>
+  <rect x="440" y="260" width="8" height="8" rx="1" fill="#141210"/>
+</svg>

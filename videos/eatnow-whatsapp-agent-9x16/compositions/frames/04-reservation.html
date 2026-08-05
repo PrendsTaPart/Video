@@ -1,0 +1,230 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+  </head>
+  <body>
+    <template>
+      <style>
+        @font-face {
+          font-family: "Geist";
+          font-weight: 400;
+          font-style: normal;
+          font-display: block;
+          src: url("assets/fonts/Geist-Regular-400.ttf") format("truetype");
+        }
+        @font-face {
+          font-family: "Geist";
+          font-weight: 700;
+          font-style: normal;
+          font-display: block;
+          src: url("assets/fonts/Geist-Bold-700.ttf") format("truetype");
+        }
+
+        #root {
+          position: absolute;
+          inset: 0;
+          background: #faf8f2;
+          overflow: hidden;
+          font-family: "Geist", sans-serif;
+        }
+
+        .phone {
+          position: absolute;
+          left: 50%;
+          bottom: 130px;
+          width: 930px;
+          height: 1440px;
+          margin-left: -465px;
+          background: #ffffff;
+          border-radius: 84px;
+          box-shadow: 0 56px 120px rgba(20, 18, 16, 0.16);
+          overflow: hidden;
+        }
+
+        .phone-header {
+          position: absolute;
+          top: 0;
+          left: 0;
+          right: 0;
+          height: 195px;
+          background: #ddd6c6;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          padding: 0 60px;
+        }
+
+        .header-name {
+          font-weight: 700;
+          font-size: 50px;
+          letter-spacing: -0.02em;
+          color: #141210;
+        }
+
+        .header-status {
+          margin-top: 9px;
+          display: flex;
+          align-items: center;
+          gap: 14px;
+          font-weight: 400;
+          font-size: 32px;
+          color: #4a463f;
+        }
+
+        .status-dot {
+          width: 17px;
+          height: 17px;
+          border-radius: 50%;
+          background: #25d366;
+        }
+
+        .phone-body {
+          position: absolute;
+          top: 195px;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          padding: 60px;
+          display: flex;
+          flex-direction: column;
+          gap: 24px;
+        }
+
+        /* Compressed context bubbles — the exchange is happening, but the card is the focus. */
+        .ghost-bubble {
+          height: 84px;
+          border-radius: 30px;
+          background: #ddd6c6;
+          opacity: 0;
+          will-change: transform, opacity;
+        }
+        .ghost-bubble.client {
+          align-self: flex-end;
+          width: 55%;
+          background: #dcf8c6;
+        }
+        .ghost-bubble.agent {
+          align-self: flex-start;
+          width: 68%;
+        }
+
+        .card-slot {
+          margin-top: auto;
+        }
+
+        .card {
+          position: relative;
+          background: #faf8f2;
+          border: 1.5px solid rgba(20, 18, 16, 0.08);
+          border-radius: 42px;
+          box-shadow: 0 36px 72px rgba(20, 18, 16, 0.12);
+          padding: 60px 54px;
+          transform-origin: 50% 100%;
+          transform: scaleY(0);
+          opacity: 0;
+          will-change: transform, opacity;
+        }
+
+        .card-detail {
+          font-weight: 700;
+          font-size: 48px;
+          letter-spacing: -0.02em;
+          color: #141210;
+          line-height: 1.4;
+          opacity: 0;
+        }
+
+        .confirmed-pill {
+          position: absolute;
+          top: -33px;
+          right: 42px;
+          background: #3d7a58;
+          color: #faf8f2;
+          font-weight: 700;
+          font-size: 30px;
+          letter-spacing: -0.01em;
+          padding: 18px 39px;
+          border-radius: 999px;
+          transform: scale(0);
+          opacity: 0;
+          transform-origin: 50% 50%;
+          will-change: transform, opacity;
+        }
+      </style>
+
+      <div
+        id="root"
+        data-composition-id="04-reservation"
+        data-width="1080"
+        data-height="1920"
+        data-duration="5"
+      >
+        <div class="phone">
+          <div class="phone-header">
+            <div class="header-name">Le Comptoir</div>
+            <div class="header-status">
+              <span class="status-dot"></span>
+              Agent IA · en ligne
+            </div>
+          </div>
+          <div class="phone-body">
+            <div class="ghost-bubble client" id="ghost-1"></div>
+            <div class="ghost-bubble agent" id="ghost-2"></div>
+            <div class="card-slot">
+              <div class="card" id="card">
+                <div class="confirmed-pill" id="confirmed">Confirmé</div>
+                <div class="card-detail" id="card-text">
+                  4 couverts · dimanche 20h30<br />terrasse · table 12
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <script>
+        window.__timelines = window.__timelines || {};
+        const tl = gsap.timeline({ paused: true });
+
+        // Scene 1 (0.0-1.5s): the last exchange happens, compressed — focus stays ahead of it.
+        tl.fromTo(
+          "#ghost-1",
+          { opacity: 0, y: 14 },
+          { opacity: 1, y: 0, duration: 0.4, ease: "power3.out" },
+          0.1,
+        );
+        tl.fromTo(
+          "#ghost-2",
+          { opacity: 0, y: 14 },
+          { opacity: 1, y: 0, duration: 0.4, ease: "power3.out" },
+          0.55,
+        );
+
+        // Scene 2 (1.5-3.5s): the card unfolds from the bottom edge.
+        tl.fromTo(
+          "#card",
+          { scaleY: 0, opacity: 0 },
+          { scaleY: 1, opacity: 1, duration: 0.7, ease: "power3.out" },
+          1.5,
+        );
+        tl.fromTo(
+          "#card-text",
+          { opacity: 0, y: 10 },
+          { opacity: 1, y: 0, duration: 0.4, ease: "power2.out" },
+          2.0,
+        );
+
+        // Scene 3 (3.5-5.0s): the Confirmé pill spring-pops.
+        tl.fromTo(
+          "#confirmed",
+          { scale: 0, opacity: 0 },
+          { scale: 1, opacity: 1, duration: 0.5, ease: "power3.out" },
+          3.5,
+        );
+
+        window.__timelines["04-reservation"] = tl;
+      </script>
+    </template>
+  </body>
+</html>
