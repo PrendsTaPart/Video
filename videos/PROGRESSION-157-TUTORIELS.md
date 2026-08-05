@@ -8,9 +8,9 @@ vient de la somme des `expectedCount` du tableau `modules` du même fichier
 les occurrences de `moduleSlug: "<slug>"` dans `tutorials.ts` (via
 `mcp__Lovable__read_file`) et comparer à `expectedCount`.
 
-## État au 2026-08-04
+## État au 2026-08-04 (voir note 2026-08-05 plus bas — plusieurs sessions publient en parallèle, ce tableau prend du retard entre deux relectures de `tutorials.ts`)
 
-**71 / 157 publiés (45 %).**
+**71 / 157 publiés (45 %) au 2026-08-04.**
 
 | moduleSlug | Nom | Publiés | Attendus | Reste |
 |---|---|---:|---:|---:|
@@ -25,10 +25,10 @@ les occurrences de `moduleSlug: "<slug>"` dans `tutorials.ts` (via
 | `caisse-pos` | Caisse POS & Matériel | 0 | 7 | 7 |
 | `caroline-ia` | Agent IA Caroline | 0 | 6 | 6 |
 | `reservation-salle` | Réservations & Plan de salle | 0 | 5 | 5 |
-| `marketing-fidelite` | Marketing, Fidélité & Iris | 0 | 24 | 24 |
+| `marketing-fidelite` | Marketing, Fidélité & Iris | 1 | 24 | 23 |
 | `service-commande` | Service Multi-Canal | 0 | 3 | 3 |
 | `kds-cuisine` | Écran Cuisine (KDS) | 0 | 3 | 3 |
-| **Total** | | **71** | **157** | **86** |
+| **Total** | | **72** | **157** | **85** |
 
 `configuration` dépasse son `expectedCount` d'origine (15 publiés pour 14
 attendus) — le chiffre attendu est une estimation de départ, pas un plafond ;
@@ -41,6 +41,20 @@ ne pas bloquer dessus.
 - `creer-sa-fiche-plat-pour-production` — module `haccp` (créer un plat +
   ingrédients + date/quantité de production, prompts Claude `create_recipe` +
   `create_production_plan`).
+
+## Ajoutés le 2026-08-05
+
+- `lancer-un-jeu-concours` — module `marketing-fidelite`, **premier tutoriel
+  publié sur ce module** (le stub "en cours de tournage" déjà en place sur
+  Lovable a été rempli en place, pas de nouvelle entrée créée). Pas de
+  `claudePrompt` : le MCP FoodEatUp n'expose aucun outil de création de roue
+  cadeaux (`list_wheel_games`/`get_wheel_stats` sont en lecture seule). Voir
+  `videos/foodeatup-jeu-concours-tuto/SCRIPT.md`.
+  Note : au moment de cette session, une autre session publiait en parallèle
+  sur ce même module (`retrouver-son-agenda-marketing` programmé sur LinkedIn
+  le 2026-08-05 pendant cette même session) — recompter `tutorials.ts` en
+  direct avant de repartir d'un chiffre "Publiés" ici, ce tableau est
+  volontairement laissé en retard entre deux sessions.
 
 ## Modules à zéro tutoriel — prioriser si on veut couvrir toute la série
 
