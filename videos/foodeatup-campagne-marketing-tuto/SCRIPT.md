@@ -6,8 +6,13 @@
 Trois zoom-punch (clic "Nouvelle campagne", sélection segment "Tous les clients", clic
 "Lancer vers 38 client(s)") — coordonnées mesurées par seuillage couleur (PIL/numpy) sur
 les frames réelles, vérifiées visuellement après montage. Pas de `banner()` : la modale
-affiche déjà ses 4 étapes en toutes lettres. **En attente de validation Michael avant
-publication (STOP obligatoire, voir `FOODEATUP-TUTORIELS-WORKFLOW.md` §6).**
+affiche déjà ses 4 étapes en toutes lettres.
+
+**Statut final : validée par Michael le 2026-08-05 et publiée.** RapidoCMS
+(`foodeatup-campagne-marketing-tuto-v1` / `foodeatup-campagne-marketing-tuto-thumbnail`)
++ Lovable (`src/data/tutorials.ts`, module `marketing-fidelite`, a rempli la fiche stub
+préexistante du même slug — voir `LOVABLE-FOODEATUP-DOCS.md`). LinkedIn non demandé pour
+l'instant.
 
 Module 8 « MARKETING, FIDÉLITÉ & IRIS » (`marketing-fidelite`), catalogue 157 tutoriels,
 item **05 « Lancer une Campagne marketing »** (`videos/CATALOGUE-157-TUTORIELS.md`).
