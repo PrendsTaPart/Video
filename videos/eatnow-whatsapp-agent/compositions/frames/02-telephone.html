@@ -1,0 +1,173 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+  </head>
+  <body>
+    <template>
+      <style>
+        @font-face {
+          font-family: "Geist";
+          font-weight: 400;
+          font-style: normal;
+          font-display: block;
+          src: url("assets/fonts/Geist-Regular-400.ttf") format("truetype");
+        }
+        @font-face {
+          font-family: "Geist";
+          font-weight: 600;
+          font-style: normal;
+          font-display: block;
+          src: url("assets/fonts/Geist-SemiBold-600.ttf") format("truetype");
+        }
+        @font-face {
+          font-family: "Geist";
+          font-weight: 700;
+          font-style: normal;
+          font-display: block;
+          src: url("assets/fonts/Geist-Bold-700.ttf") format("truetype");
+        }
+
+        #root {
+          position: absolute;
+          inset: 0;
+          background: #faf8f2;
+          overflow: hidden;
+          font-family: "Geist", sans-serif;
+        }
+
+        .phone {
+          position: absolute;
+          left: 50%;
+          bottom: 40px;
+          width: 580px;
+          height: 900px;
+          margin-left: -290px;
+          background: #ffffff;
+          border-radius: 56px;
+          box-shadow: 0 40px 90px rgba(20, 18, 16, 0.16);
+          overflow: hidden;
+          will-change: transform, opacity;
+        }
+
+        .phone-header {
+          position: absolute;
+          top: 0;
+          left: 0;
+          right: 0;
+          height: 130px;
+          background: #ddd6c6;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          padding: 0 40px;
+          opacity: 0;
+        }
+
+        .header-name {
+          font-family: "Geist", sans-serif;
+          font-weight: 700;
+          font-size: 34px;
+          letter-spacing: -0.02em;
+          color: #141210;
+        }
+
+        .header-status {
+          margin-top: 6px;
+          display: flex;
+          align-items: center;
+          gap: 10px;
+          font-family: "Geist", sans-serif;
+          font-weight: 400;
+          font-size: 22px;
+          color: #4a463f;
+        }
+
+        .status-dot {
+          width: 12px;
+          height: 12px;
+          border-radius: 50%;
+          background: #25d366;
+        }
+
+        .phone-body {
+          position: absolute;
+          top: 130px;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          padding: 40px;
+        }
+
+        .bubble-client {
+          max-width: 78%;
+          background: #dcf8c6;
+          border-radius: 26px 26px 26px 6px;
+          padding: 26px 30px;
+          font-family: "Geist", sans-serif;
+          font-weight: 400;
+          font-size: 27px;
+          line-height: 1.35;
+          color: #141210;
+          opacity: 0;
+          transform-origin: 0% 100%;
+          will-change: transform, opacity;
+        }
+      </style>
+
+      <div
+        id="root"
+        data-composition-id="02-telephone"
+        data-width="1080"
+        data-height="1080"
+        data-duration="4"
+      >
+        <div class="phone" id="phone">
+          <div class="phone-header" id="header">
+            <div class="header-name">Le Comptoir</div>
+            <div class="header-status">
+              <span class="status-dot"></span>
+              Agent IA · en ligne
+            </div>
+          </div>
+          <div class="phone-body">
+            <div class="bubble-client" id="bubble">
+              Bonsoir, vous avez une terrasse&nbsp;? Ouvert dimanche soir&nbsp;?
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <script>
+        window.__timelines = window.__timelines || {};
+        const tl = gsap.timeline({ paused: true });
+
+        // Scene 1 (0.0-1.2s): the phone rises from below and settles — calm long-tail.
+        tl.fromTo(
+          "#phone",
+          { y: 180, opacity: 0 },
+          { y: 0, opacity: 1, duration: 1.0, ease: "power3.out" },
+          0.1,
+        );
+
+        // Scene 2 (1.2-2.2s): the thread header settles in.
+        tl.fromTo(
+          "#header",
+          { opacity: 0, y: 16 },
+          { opacity: 1, y: 0, duration: 0.5, ease: "power3.out" },
+          1.2,
+        );
+
+        // Scene 3 (2.2-4.0s): the client bubble arrives — the only green in the frame.
+        tl.fromTo(
+          "#bubble",
+          { scale: 0, opacity: 0 },
+          { scale: 1, opacity: 1, duration: 0.55, ease: "power3.out" },
+          2.2,
+        );
+
+        window.__timelines["02-telephone"] = tl;
+      </script>
+    </template>
+  </body>
+</html>

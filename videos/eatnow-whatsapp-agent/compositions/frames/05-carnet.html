@@ -1,0 +1,260 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+  </head>
+  <body>
+    <template>
+      <style>
+        @font-face {
+          font-family: "Fraunces Italic";
+          font-style: italic;
+          font-weight: 500;
+          font-display: block;
+          src: url("assets/fonts/Fraunces-Italic-500.ttf") format("truetype");
+        }
+        @font-face {
+          font-family: "Geist";
+          font-weight: 700;
+          font-style: normal;
+          font-display: block;
+          src: url("assets/fonts/Geist-Bold-700.ttf") format("truetype");
+        }
+
+        #root {
+          position: absolute;
+          inset: 0;
+          background: #faf8f2;
+          overflow: hidden;
+          font-family: "Geist", sans-serif;
+        }
+
+        .link-svg {
+          position: absolute;
+          inset: 0;
+          width: 1080px;
+          height: 1080px;
+        }
+
+        .link-path {
+          fill: none;
+          stroke: #10386b;
+          stroke-width: 5;
+          stroke-linecap: round;
+        }
+
+        .travel-chip {
+          position: absolute;
+          width: 64px;
+          height: 64px;
+          margin-left: -32px;
+          margin-top: -32px;
+          background: #faf8f2;
+          border: 3px solid #10386b;
+          border-radius: 16px;
+          opacity: 0;
+        }
+
+        .floor-plan {
+          position: absolute;
+          right: 130px;
+          bottom: 140px;
+          width: 300px;
+          height: 300px;
+          display: grid;
+          grid-template-columns: repeat(3, 1fr);
+          grid-template-rows: repeat(3, 1fr);
+          gap: 16px;
+          opacity: 0;
+        }
+
+        .table {
+          background: #ddd6c6;
+          border-radius: 14px;
+        }
+
+        .table.active {
+          background: #10386b;
+          transform: scale(0);
+        }
+
+        .channels {
+          position: absolute;
+          inset: 0;
+        }
+
+        .channel {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          width: 74px;
+          height: 74px;
+          margin-left: -37px;
+          margin-top: -37px;
+          border-radius: 50%;
+          border: 3px solid #10386b;
+          background: #faf8f2;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          opacity: 0;
+          will-change: transform, opacity;
+        }
+
+        .channel svg {
+          width: 34px;
+          height: 34px;
+          stroke: #10386b;
+          fill: none;
+          stroke-width: 2.4;
+        }
+
+        .caption {
+          position: absolute;
+          left: 0;
+          right: 0;
+          bottom: 70px;
+          text-align: center;
+          font-family: "Fraunces Italic", serif;
+          font-style: italic;
+          font-weight: 500;
+          font-size: 44px;
+          color: #141210;
+          padding: 0 90px;
+          opacity: 0;
+        }
+      </style>
+
+      <div
+        id="root"
+        data-composition-id="05-carnet"
+        data-width="1080"
+        data-height="1080"
+        data-duration="4"
+      >
+        <svg class="link-svg" viewBox="0 0 1080 1080">
+          <path
+            id="link-path"
+            class="link-path"
+            d="M 240 260 Q 700 280 780 780"
+          />
+        </svg>
+
+        <div class="travel-chip" id="chip"></div>
+
+        <div class="floor-plan" id="floor-plan">
+          <div class="table"></div>
+          <div class="table"></div>
+          <div class="table"></div>
+          <div class="table"></div>
+          <div class="table"></div>
+          <div class="table active" id="table-active"></div>
+          <div class="table"></div>
+          <div class="table"></div>
+          <div class="table"></div>
+        </div>
+
+        <div class="channels" id="channels">
+          <div class="channel" id="ch-1" data-target-x="-360" data-target-y="-320">
+            <!-- WhatsApp-style chat bubble, generic line art (no brand color) -->
+            <svg viewBox="0 0 24 24"><path d="M4 20l1.6-4A8 8 0 1 1 9 19.4L4 20z" /></svg>
+          </div>
+          <div class="channel" id="ch-2" data-target-x="340" data-target-y="-340">
+            <!-- pin, generic "find us" mark -->
+            <svg viewBox="0 0 24 24"><path d="M12 22s7-7.3 7-12a7 7 0 1 0-14 0c0 4.7 7 12 7 12z" /><circle cx="12" cy="10" r="2.4" /></svg>
+          </div>
+          <div class="channel" id="ch-3" data-target-x="-380" data-target-y="220">
+            <!-- square camera outline, generic "photo feed" mark -->
+            <svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="5" /><circle cx="12" cy="12" r="4" /></svg>
+          </div>
+          <div class="channel" id="ch-4" data-target-x="320" data-target-y="200">
+            <!-- globe, generic "site" mark -->
+            <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9" /><path d="M3 12h18M12 3a14 14 0 0 1 0 18M12 3a14 14 0 0 0 0 18" /></svg>
+          </div>
+        </div>
+
+        <div class="caption" id="caption">
+          Et ça tombe dans votre carnet,<br />avec toutes les autres.
+        </div>
+      </div>
+
+      <script>
+        window.__timelines = window.__timelines || {};
+        const tl = gsap.timeline({ paused: true });
+
+        const path = document.getElementById("link-path");
+        const chip = document.getElementById("chip");
+        const L = path.getTotalLength();
+        path.style.strokeDasharray = String(L);
+        path.style.strokeDashoffset = String(L);
+
+        // Scene 1 (0.0-1.2s): the reservation chip travels while the connecting
+        // line draws underneath it — one shared progress driver (svg-path-draw +
+        // a position marker read from the same path, deterministic, no plugin).
+        tl.set(chip, { opacity: 1 }, 0);
+        const drive = { p: 0 };
+        tl.to(
+          drive,
+          {
+            p: 1,
+            duration: 1.2,
+            ease: "power2.inOut",
+            onUpdate: () => {
+              const dist = L * drive.p;
+              path.style.strokeDashoffset = String(L - dist);
+              const pt = path.getPointAtLength(dist);
+              gsap.set(chip, { x: pt.x, y: pt.y });
+            },
+          },
+          0,
+        );
+        tl.to(chip, { opacity: 0, duration: 0.25, ease: "power1.out" }, 1.1);
+
+        // Scene 2 (1.2-2.6s): the floor plan appears and table 12 lights up on arrival.
+        tl.fromTo(
+          "#floor-plan",
+          { opacity: 0 },
+          { opacity: 1, duration: 0.4, ease: "power2.out" },
+          1.15,
+        );
+        tl.fromTo(
+          "#table-active",
+          { scale: 0 },
+          { scale: 1, duration: 0.45, ease: "power3.out" },
+          1.35,
+        );
+
+        // Scene 2 (cont.): the 4 channels converge onto the same landing point —
+        // center-outward-expansion run in reverse (target -> 0 instead of 0 -> target).
+        ["#ch-1", "#ch-2", "#ch-3", "#ch-4"].forEach((sel, i) => {
+          const el = document.querySelector(sel);
+          const tx = Number(el.dataset.targetX);
+          const ty = Number(el.dataset.targetY);
+          tl.fromTo(
+            sel,
+            { xPercent: -50, yPercent: -50, x: tx, y: ty, scale: 0.6, opacity: 0 },
+            {
+              x: tx * 0.18,
+              y: ty * 0.18,
+              scale: 1,
+              opacity: 1,
+              duration: 0.6,
+              ease: "power3.out",
+            },
+            1.4 + i * 0.06,
+          );
+        });
+
+        // Scene 3 (2.6-4.0s): the caption line settles.
+        tl.fromTo(
+          "#caption",
+          { opacity: 0, y: 16 },
+          { opacity: 1, y: 0, duration: 0.5, ease: "power3.out" },
+          2.7,
+        );
+
+        window.__timelines["05-carnet"] = tl;
+      </script>
+    </template>
+  </body>
+</html>

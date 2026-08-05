@@ -1,0 +1,129 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+  </head>
+  <body>
+    <template>
+      <style>
+        @font-face {
+          font-family: "Fraunces Italic";
+          font-style: italic;
+          font-weight: 500;
+          font-display: block;
+          src: url("assets/fonts/Fraunces-Italic-500.ttf") format("truetype");
+        }
+
+        #root {
+          position: absolute;
+          inset: 0;
+          background: #141210;
+          overflow: hidden;
+          font-family: "Fraunces Italic", serif;
+        }
+
+        .dot-field {
+          position: absolute;
+          inset: 0;
+          background-image: radial-gradient(
+            circle,
+            rgba(250, 248, 242, 0.14) 4px,
+            transparent 4px
+          );
+          background-size: 36px 36px;
+          background-position: 18px 18px;
+        }
+
+        .line-wrap {
+          position: absolute;
+          inset: 0;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          padding: 0 90px;
+        }
+
+        .line {
+          font-family: "Fraunces Italic", serif;
+          font-style: italic;
+          font-weight: 500;
+          font-size: 96px;
+          line-height: 1.15;
+          color: #faf8f2;
+          text-align: center;
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: center;
+          gap: 0 28px;
+        }
+
+        .word {
+          display: inline-block;
+          opacity: 0;
+          will-change: transform, opacity;
+        }
+      </style>
+
+      <div
+        id="root"
+        data-composition-id="01-ouverture"
+        data-width="1080"
+        data-height="1080"
+        data-duration="3"
+      >
+        <div class="dot-field" id="dots"></div>
+        <div class="line-wrap">
+          <div class="line">
+            <span class="word" id="w1">Personne</span>
+            <span class="word" id="w2">n'a</span>
+            <span class="word" id="w3">décroché.</span>
+          </div>
+        </div>
+      </div>
+
+      <script>
+        window.__timelines = window.__timelines || {};
+        const tl = gsap.timeline({ paused: true });
+
+        // Scene 1 (0.0-0.6s): dot field breathes in.
+        tl.fromTo(
+          "#dots",
+          { opacity: 0 },
+          { opacity: 1, duration: 0.6, ease: "power1.out" },
+          0,
+        );
+
+        // Scene 2 (0.6-2.4s): the line reveals word by word — restrained waterfall,
+        // small offsets and power4.out per the rule, calmer register (brief calls for
+        // restraint, not a punchy title-card whip).
+        const words = ["#w1", "#w2", "#w3"];
+        const yFrom = [26, 22, 30];
+        const dur = [0.34, 0.3, 0.36];
+        let t = 0.7;
+        words.forEach((sel, i) => {
+          tl.set(sel, { opacity: 1, y: yFrom[i] }, t);
+          tl.to(sel, { y: 0, duration: dur[i], ease: "power4.out" }, t);
+          t += dur[i] * 0.55; // overlap — a wave, not a queue
+        });
+
+        // Scene 3: slow ambient breathing on the dot field for the rest of the hold.
+        const phase = { p: 0 };
+        tl.to(
+          phase,
+          {
+            p: Math.PI * 2 * 0.6,
+            duration: 1.7,
+            ease: "none",
+            onUpdate: () => {
+              const s = Math.sin(phase.p);
+              gsap.set("#dots", { opacity: 1 + s * 0.03 });
+            },
+          },
+          1.3,
+        );
+
+        window.__timelines["01-ouverture"] = tl;
+      </script>
+    </template>
+  </body>
+</html>

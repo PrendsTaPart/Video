@@ -1,0 +1,239 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+  </head>
+  <body>
+    <template>
+      <style>
+        @font-face {
+          font-family: "Geist";
+          font-weight: 400;
+          font-style: normal;
+          font-display: block;
+          src: url("assets/fonts/Geist-Regular-400.ttf") format("truetype");
+        }
+        @font-face {
+          font-family: "Geist";
+          font-weight: 600;
+          font-style: normal;
+          font-display: block;
+          src: url("assets/fonts/Geist-SemiBold-600.ttf") format("truetype");
+        }
+        @font-face {
+          font-family: "Geist";
+          font-weight: 700;
+          font-style: normal;
+          font-display: block;
+          src: url("assets/fonts/Geist-Bold-700.ttf") format("truetype");
+        }
+
+        #root {
+          position: absolute;
+          inset: 0;
+          background: #faf8f2;
+          overflow: hidden;
+          font-family: "Geist", sans-serif;
+        }
+
+        .phone {
+          position: absolute;
+          left: 50%;
+          bottom: 40px;
+          width: 580px;
+          height: 900px;
+          margin-left: -290px;
+          background: #ffffff;
+          border-radius: 56px;
+          box-shadow: 0 40px 90px rgba(20, 18, 16, 0.16);
+          overflow: hidden;
+        }
+
+        .phone-header {
+          position: absolute;
+          top: 0;
+          left: 0;
+          right: 0;
+          height: 130px;
+          background: #ddd6c6;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          padding: 0 40px;
+        }
+
+        .header-name {
+          font-weight: 700;
+          font-size: 34px;
+          letter-spacing: -0.02em;
+          color: #141210;
+        }
+
+        .header-status {
+          margin-top: 6px;
+          display: flex;
+          align-items: center;
+          gap: 10px;
+          font-weight: 400;
+          font-size: 22px;
+          color: #4a463f;
+        }
+
+        .status-dot {
+          width: 12px;
+          height: 12px;
+          border-radius: 50%;
+          background: #25d366;
+        }
+
+        .phone-body {
+          position: absolute;
+          top: 130px;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          padding: 40px;
+          display: flex;
+          flex-direction: column;
+          gap: 22px;
+        }
+
+        .bubble-client {
+          max-width: 78%;
+          background: #dcf8c6;
+          border-radius: 26px 26px 26px 6px;
+          padding: 26px 30px;
+          font-weight: 400;
+          font-size: 27px;
+          line-height: 1.35;
+          color: #141210;
+        }
+
+        .bubble-typing {
+          align-self: flex-start;
+          background: #ddd6c6;
+          border-radius: 26px 26px 26px 6px;
+          padding: 22px 28px;
+          display: flex;
+          gap: 10px;
+        }
+
+        .typing-dot {
+          width: 12px;
+          height: 12px;
+          border-radius: 50%;
+          background: #6b665c;
+        }
+
+        .bubble-agent {
+          max-width: 82%;
+          align-self: flex-start;
+          background: #ddd6c6;
+          border-radius: 26px 26px 26px 6px;
+          padding: 26px 30px;
+          font-weight: 400;
+          font-size: 27px;
+          line-height: 1.35;
+          color: #141210;
+          opacity: 0;
+          transform-origin: 0% 100%;
+        }
+
+        .knowledge-pill {
+          align-self: flex-start;
+          display: flex;
+          align-items: center;
+          gap: 10px;
+          background: #10386b;
+          color: #faf8f2;
+          border-radius: 999px;
+          padding: 12px 24px;
+          font-weight: 600;
+          font-size: 19px;
+          opacity: 0;
+        }
+
+        .pill-dot {
+          width: 8px;
+          height: 8px;
+          border-radius: 50%;
+          background: #faf8f2;
+        }
+      </style>
+
+      <div
+        id="root"
+        data-composition-id="03-reponse"
+        data-width="1080"
+        data-height="1080"
+        data-duration="4"
+      >
+        <div class="phone">
+          <div class="phone-header">
+            <div class="header-name">Le Comptoir</div>
+            <div class="header-status">
+              <span class="status-dot"></span>
+              Agent IA · en ligne
+            </div>
+          </div>
+          <div class="phone-body">
+            <div class="bubble-client">
+              Bonsoir, vous avez une terrasse&nbsp;? Ouvert dimanche soir&nbsp;?
+            </div>
+            <div class="bubble-typing" id="typing">
+              <span class="typing-dot" id="dot1"></span>
+              <span class="typing-dot" id="dot2"></span>
+              <span class="typing-dot" id="dot3"></span>
+            </div>
+            <div class="bubble-agent" id="agent-bubble">
+              Grande terrasse côté jardin, service dimanche jusqu'à 23h.
+            </div>
+            <div class="knowledge-pill" id="pill">
+              <span class="pill-dot"></span>
+              Depuis votre base de connaissances
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <script>
+        window.__timelines = window.__timelines || {};
+        const tl = gsap.timeline({ paused: true });
+
+        // Scene 1 (0.0-1.0s): typing indicator pulses — diegetic working-state motion.
+        ["#dot1", "#dot2", "#dot3"].forEach((sel, i) => {
+          tl.to(
+            sel,
+            {
+              y: -8,
+              duration: 0.32,
+              ease: "sine.inOut",
+              yoyo: true,
+              repeat: 3,
+            },
+            0.05 + i * 0.12,
+          );
+        });
+
+        // Scene 2 (1.0-2.6s): typing indicator dies the instant the reply lands.
+        tl.to("#typing", { opacity: 0, duration: 0.2, ease: "power1.out" }, 1.0);
+        tl.fromTo(
+          "#agent-bubble",
+          { scale: 0, opacity: 0 },
+          { scale: 1, opacity: 1, duration: 0.5, ease: "power3.out" },
+          1.15,
+        );
+
+        // Scene 3 (2.6-4.0s): the knowledge-base pill settles beside the reply.
+        tl.fromTo(
+          "#pill",
+          { opacity: 0, x: 40 },
+          { opacity: 1, x: 0, duration: 0.45, ease: "power3.out" },
+          2.7,
+        );
+
+        window.__timelines["03-reponse"] = tl;
+      </script>
+    </template>
+  </body>
+</html>

@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="fr" data-resolution="square">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=1080, height=1080" />
+    <script src="assets/vendor/gsap.min.js"></script>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      html,
+      body {
+        margin: 0;
+        width: 1080px;
+        height: 1080px;
+        overflow: hidden;
+        background: #141210;
+      }
+      #root > div[data-composition-src] {
+        position: absolute;
+        inset: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div
+      id="root"
+      data-composition-id="main"
+      data-start="0"
+      data-duration="24"
+      data-width="1080"
+      data-height="1080"
+    >
+      <!-- Frame 1 — Personne n'a décroché (0-3s) -->
+      <div
+        id="el-01"
+        data-composition-id="01-ouverture"
+        data-composition-src="compositions/frames/01-ouverture.html"
+        data-start="0"
+        data-duration="3"
+        data-track-index="1"
+        data-width="1080"
+        data-height="1080"
+      ></div>
+
+      <!-- Frame 2 — Le téléphone monte (3-7s) -->
+      <div
+        id="el-02"
+        data-composition-id="02-telephone"
+        data-composition-src="compositions/frames/02-telephone.html"
+        data-start="3"
+        data-duration="4"
+        data-track-index="1"
+        data-width="1080"
+        data-height="1080"
+      ></div>
+
+      <!-- Frame 3 — L'agent répond (7-11s) -->
+      <div
+        id="el-03"
+        data-composition-id="03-reponse"
+        data-composition-src="compositions/frames/03-reponse.html"
+        data-start="7"
+        data-duration="4"
+        data-track-index="1"
+        data-width="1080"
+        data-height="1080"
+      ></div>
+
+      <!-- Frame 4 — La réservation se prend (11-16s) -->
+      <div
+        id="el-04"
+        data-composition-id="04-reservation"
+        data-composition-src="compositions/frames/04-reservation.html"
+        data-start="11"
+        data-duration="5"
+        data-track-index="1"
+        data-width="1080"
+        data-height="1080"
+      ></div>
+
+      <!-- Frame 5 — Ça tombe dans le carnet (16-20s) -->
+      <div
+        id="el-05"
+        data-composition-id="05-carnet"
+        data-composition-src="compositions/frames/05-carnet.html"
+        data-start="16"
+        data-duration="4"
+        data-track-index="1"
+        data-width="1080"
+        data-height="1080"
+      ></div>
+
+      <!-- Frame 6 — Un agent qui répond et réserve (20-24s) -->
+      <div
+        id="el-06"
+        data-composition-id="06-cta"
+        data-composition-src="compositions/frames/06-cta.html"
+        data-start="20"
+        data-duration="4"
+        data-track-index="1"
+        data-width="1080"
+        data-height="1080"
+      ></div>
+    </div>
+
+    <script>
+      window.__timelines = window.__timelines || {};
+      window.__timelines["main"] = gsap.timeline({ paused: true });
+    </script>
+  </body>
+</html>

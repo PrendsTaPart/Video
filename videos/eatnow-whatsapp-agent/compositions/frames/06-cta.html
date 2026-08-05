@@ -1,0 +1,193 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+  </head>
+  <body>
+    <template>
+      <style>
+        @font-face {
+          font-family: "Geist";
+          font-weight: 400;
+          font-style: normal;
+          font-display: block;
+          src: url("assets/fonts/Geist-Regular-400.ttf") format("truetype");
+        }
+        @font-face {
+          font-family: "Geist";
+          font-weight: 600;
+          font-style: normal;
+          font-display: block;
+          src: url("assets/fonts/Geist-SemiBold-600.ttf") format("truetype");
+        }
+        @font-face {
+          font-family: "Geist";
+          font-weight: 700;
+          font-style: normal;
+          font-display: block;
+          src: url("assets/fonts/Geist-Bold-700.ttf") format("truetype");
+        }
+
+        #root {
+          position: absolute;
+          inset: 0;
+          background: #141210;
+          overflow: hidden;
+          font-family: "Geist", sans-serif;
+        }
+
+        .dot-field {
+          position: absolute;
+          inset: 0;
+          background-image: radial-gradient(
+            circle,
+            rgba(250, 248, 242, 0.14) 4px,
+            transparent 4px
+          );
+          background-size: 36px 36px;
+          background-position: 18px 18px;
+        }
+
+        .stack {
+          position: absolute;
+          inset: 0;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          gap: 30px;
+        }
+
+        .mark {
+          width: 216px;
+          height: 216px;
+          color: #faf8f2;
+        }
+
+        .mark rect {
+          fill: currentColor;
+          opacity: 0;
+          transform-box: fill-box;
+          transform-origin: 50% 50%;
+        }
+
+        .wordmark {
+          font-weight: 700;
+          font-size: 68px;
+          letter-spacing: -0.04em;
+          color: #faf8f2;
+          opacity: 0;
+          transform: translateY(14px);
+        }
+
+        .tagline {
+          font-weight: 400;
+          font-size: 30px;
+          color: #ddd6c6;
+          opacity: 0;
+          transform: translateY(10px);
+        }
+
+        .cta-row {
+          margin-top: 14px;
+          display: flex;
+          align-items: center;
+          gap: 26px;
+          opacity: 0;
+          transform: scale(0.94);
+        }
+
+        .cta-pill {
+          background: #10386b;
+          color: #faf8f2;
+          font-weight: 600;
+          font-size: 26px;
+          padding: 18px 34px;
+          border-radius: 999px;
+        }
+
+        .proof {
+          display: flex;
+          gap: 22px;
+          font-weight: 600;
+          font-size: 22px;
+          color: #ddd6c6;
+        }
+      </style>
+
+      <div
+        id="root"
+        data-composition-id="06-cta"
+        data-width="1080"
+        data-height="1080"
+        data-duration="4"
+      >
+        <div class="dot-field" id="dots"></div>
+        <div class="stack">
+          <svg class="mark" id="mark" viewBox="0 0 596 596" xmlns="http://www.w3.org/2000/svg">
+            <rect data-index="0" x="0" y="0" width="100" height="100" rx="18" />
+            <rect data-index="1" x="124" y="0" width="100" height="100" rx="18" />
+            <rect data-index="2" x="372" y="0" width="100" height="100" rx="18" />
+            <rect data-index="3" x="496" y="0" width="100" height="100" rx="18" />
+            <rect data-index="4" x="0" y="124" width="100" height="100" rx="18" />
+            <rect data-index="5" x="248" y="124" width="100" height="100" rx="18" />
+            <rect data-index="6" x="496" y="124" width="100" height="100" rx="18" />
+            <rect data-index="7" x="124" y="248" width="100" height="100" rx="18" />
+            <rect data-index="8" x="248" y="248" width="100" height="100" rx="18" />
+            <rect data-index="9" x="372" y="248" width="100" height="100" rx="18" />
+            <rect data-index="10" x="0" y="372" width="100" height="100" rx="18" />
+            <rect data-index="11" x="248" y="372" width="100" height="100" rx="18" />
+            <rect data-index="12" x="496" y="372" width="100" height="100" rx="18" />
+            <rect data-index="13" x="0" y="496" width="100" height="100" rx="18" />
+            <rect data-index="14" x="124" y="496" width="100" height="100" rx="18" />
+            <rect data-index="15" x="372" y="496" width="100" height="100" rx="18" />
+            <rect data-index="16" x="496" y="496" width="100" height="100" rx="18" />
+          </svg>
+          <div class="wordmark" id="wordmark">EatNow</div>
+          <div class="tagline" id="tagline">Un agent qui répond et réserve.</div>
+          <div class="cta-row" id="cta-row">
+            <div class="cta-pill">Demander une démo →</div>
+            <div class="proof">
+              <span>24/7</span>
+              <span>0% commission</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <script>
+        window.__timelines = window.__timelines || {};
+        const tl = gsap.timeline({ paused: true });
+
+        // Scene 1 (0.0-0.8s): the dot field returns — visual bookend with Frame 1.
+        tl.fromTo("#dots", { opacity: 0 }, { opacity: 1, duration: 0.6, ease: "power1.out" }, 0);
+
+        // Scene 2 (0.8-2.0s): the mark draws itself case by case — deterministic,
+        // index-derived stagger (a spring-pop per square, never simultaneous).
+        const squares = gsap.utils.toArray("#mark rect");
+        squares.forEach((el, i) => {
+          tl.fromTo(
+            el,
+            { scale: 0, opacity: 0 },
+            { scale: 1, opacity: 1, duration: 0.34, ease: "power3.out" },
+            0.85 + i * 0.045,
+          );
+        });
+
+        // Scene 3 (2.0-2.8s): the wordmark locks under the mark, tagline follows.
+        tl.to("#wordmark", { opacity: 1, y: 0, duration: 0.45, ease: "power3.out" }, 2.05);
+        tl.to("#tagline", { opacity: 1, y: 0, duration: 0.4, ease: "power3.out" }, 2.3);
+
+        // Scene 4 (2.8-4.0s): the CTA + proof points spring-pop, final hold.
+        tl.fromTo(
+          "#cta-row",
+          { opacity: 0, scale: 0.94 },
+          { opacity: 1, scale: 1, duration: 0.5, ease: "power3.out" },
+          2.85,
+        );
+
+        window.__timelines["06-cta"] = tl;
+      </script>
+    </template>
+  </body>
+</html>
