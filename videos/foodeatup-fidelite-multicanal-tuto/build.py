@@ -74,12 +74,12 @@ BTN_PUBLIC = (1113, 671); SZ_PUBLIC = (300, 53)   # "Voir la page publique" (bas
 # sautées : on va direct du formulaire de connexion au dashboard fidélité
 # client validé.
 segs = [
-    ("A", 0.35, 2.05, 4.40, None, None,       None,       "1 · Mode de gain"),
-    ("B", 2.05, 3.50, 4.00, None, None,       None,       "2 · Multiplicateur jours creux"),
-    ("C", 3.50, 4.55, 3.20, None, None,       None,       "3 · Règles & validité"),
+    ("A", 0.35, 2.05, 5.10, None, None,       None,       "1 · Mode de gain"),
+    ("B", 2.05, 3.50, 4.70, None, None,       None,       "2 · Multiplicateur jours creux"),
+    ("C", 3.50, 4.55, 4.65, None, None,       None,       "3 · Règles & validité"),
     ("D", 4.55, 4.85, 0.90, 4.65, BTN_PUBLIC, SZ_PUBLIC,  None),
-    ("E", 6.50, 9.30, 5.50, None, None,       None,       "Vue publique — GoSushi Démo"),
-    ("F", 77.60, 80.68, 4.50, None, None,     None,       None),
+    ("E", 6.50, 9.30, 5.95, None, None,       None,       "Vue publique — GoSushi Démo"),
+    ("F", 77.60, 80.68, 4.85, None, None,     None,       None),
 ]
 INTRO_D, OUTRO_D = 5.50, 5.60
 
