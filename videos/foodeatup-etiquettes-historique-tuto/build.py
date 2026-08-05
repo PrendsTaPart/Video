@@ -55,12 +55,19 @@ def banner(text, seg_dur):
             f":x='({x})+34':y={y+16}")
 
 # (name, src_start, src_end, target_out_duration, caption)
+# Targets = matching VO line duration + 0.5s slack. Without this margin, a
+# line anchored at S[segment]+0.20 whose own duration equals the segment's
+# raw target inevitably overruns into the next segment by ~0.2-0.5s -- and
+# with no slack to absorb it, that overrun compounds forward for every
+# following line (bug hit here: drift grew from 0.2s to 5.2s by N8 with
+# zero buffer). The 0.5s margin keeps each line's audio finishing before
+# its segment's visual actually ends.
 segs = [
-    ("A", 0.20,  9.20,  5.85, "1 · Ouvrez une etiquette"),
-    ("B", 9.20,  18.20, 5.75, "2 · Etiquette : historique"),
-    ("C", 18.20, 30.20, 7.29, "3 · Journal audit HACCP"),
-    ("D", 30.20, 39.20, 5.93, "4 · Exportez en PDF"),
-    ("E", 39.20, 51.65, 4.55, "Historique centralisé"),
+    ("A", 0.20,  9.20,  6.35, "1 · Ouvrez une etiquette"),
+    ("B", 9.20,  18.20, 6.25, "2 · Etiquette : historique"),
+    ("C", 18.20, 30.20, 7.79, "3 · Journal audit HACCP"),
+    ("D", 30.20, 39.20, 6.43, "4 · Exportez en PDF"),
+    ("E", 39.20, 51.65, 5.05, "Historique centralisé"),
 ]
 INTRO_D, OUTRO_D = 6.00, 6.20
 
@@ -103,7 +110,7 @@ def card(img, out, secs, zoom_in=True, fade=True):
 
 # N6 (explains the prompt) covers stage1+2, N7 (paste + result) covers
 # stage3 -- stage durations sized against those measured/reused lines.
-CLAUDE_STAGE_D = [3.00, 1.40, 3.40]
+CLAUDE_STAGE_D = [3.00, 1.90, 3.40]
 
 def build_silent(outro_d):
     card(f"{ROOT}/assets/intro.jpg", f"{SEG}/intro.mp4", INTRO_D, zoom_in=True)
