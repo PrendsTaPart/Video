@@ -88,7 +88,10 @@ whatItsFor: "Écrire à vos clients par WhatsApp même hors de la fenêtre de 24
 claudePrompt: "<voir ci-dessus>"
 ```
 
-## À valider avec Michael avant de continuer
+## Statut final : validée par Michael le 2026-08-05 et publiée
 
-1. Script voix off ci-dessus (STOP obligatoire avant génération ElevenLabs).
-2. Nom du template utilisé dans le rush, **« reconquete_clients »** — je le garde tel quel ?
+RapidoCMS (`foodeatup-templates-whatsapp-tuto-v1` / `foodeatup-templates-whatsapp-tuto-thumbnail`)
++ Lovable (`src/data/tutorials.ts`, module `marketing-fidelite`, section "Pack marketing &
+campagnes" — a rempli la fiche stub préexistante du même slug, qui portait par erreur la
+section "WhatsApp, SMS & crédits" ; corrigée à cette occasion). LinkedIn non demandé pour
+l'instant.

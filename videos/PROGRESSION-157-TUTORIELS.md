@@ -25,10 +25,10 @@ les occurrences de `moduleSlug: "<slug>"` dans `tutorials.ts` (via
 | `caisse-pos` | Caisse POS & Matériel | 0 | 7 | 7 |
 | `caroline-ia` | Agent IA Caroline | 0 | 6 | 6 |
 | `reservation-salle` | Réservations & Plan de salle | 0 | 5 | 5 |
-| `marketing-fidelite` | Marketing, Fidélité & Iris | 1 | 24 | 23 |
+| `marketing-fidelite` | Marketing, Fidélité & Iris | 2 | 24 | 22 |
 | `service-commande` | Service Multi-Canal | 0 | 3 | 3 |
 | `kds-cuisine` | Écran Cuisine (KDS) | 0 | 3 | 3 |
-| **Total** | | **72** | **157** | **85** |
+| **Total** | | **73** | **157** | **84** |
 
 `configuration` dépasse son `expectedCount` d'origine (15 publiés pour 14
 attendus) — le chiffre attendu est une estimation de départ, pas un plafond ;
@@ -51,6 +51,6 @@ quels cas d'usage de ces modules ont un outil MCP correspondant, pour
 préparer scripts + `claudePrompt(s)` en amont du prochain rush fourni par
 Michael.
 
-`marketing-fidelite` a désormais son premier tutoriel (1/24), voir
-`lancer-une-campagne-marketing` dans `LOVABLE-FOODEATUP-DOCS.md` — reste le
-plus gros module à couvrir (23 restants).
+`marketing-fidelite` compte désormais 2 tutoriels (2/24) : `lancer-une-campagne-marketing`
+et `creer-ses-templates-whatsapp`, voir `LOVABLE-FOODEATUP-DOCS.md` — reste le plus gros
+module à couvrir (22 restants).
