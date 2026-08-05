@@ -79,6 +79,17 @@ Même texte côté fiche Lovable (`claudePrompt`).
 
 ## Statut
 
-**Brouillon — en attente de validation du script par Michael (STOP obligatoire du
-pipeline, `videos/FOODEATUP-TUTORIELS-WORKFLOW.md` étape 3).** Aucune VO ElevenLabs
-générée, aucun montage lancé, rien publié.
+**Script validé.** VO générée (ElevenLabs Adam FR Instructor pour N0-N5/N7 ; N6/N8
+réutilisées telles quelles depuis `foodeatup-tva-tuto/vo/`, texte identique).
+
+**Montage terminé** — `out/foodeatup-resultats-sondages-tuto-v1.mp4`, **53,00 s**,
+H.264 High/yuv420p, 1920×828, 25 fps, AAC 48 kHz stéréo, +faststart (moov avant mdat
+confirmé), decode 0 erreur. Peak audio **-7,23 dBFS**. Bandeaux d'étape avec le
+correctif `drawtext` double-passage. Zoom-punch vérifié sur le bouton "Résultats".
+Séquence Claude vérifiée avec accents français corrects. Chaque ligne VO vérifiée
+dans la fenêtre de son segment visuel. Vignette `out/thumbnail-youtube.jpg` (1280×720,
+crop neutre de la carte d'intro).
+
+**Livrée à Michael pour validation (`SendUserFile`) — STOP avant publication**
+(`FOODEATUP-TUTORIELS-WORKFLOW.md` étape 6). Pas encore uploadée sur RapidoCMS, pas
+encore ajoutée sur Lovable.
