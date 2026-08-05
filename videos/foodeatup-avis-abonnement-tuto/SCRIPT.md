@@ -50,7 +50,32 @@ rush. Pas de séquence "Utilisez cette fonctionnalité avec Claude" sur cette
 vidéo, ni de `claudePrompt` sur la fiche Lovable (règle du workflow : ne pas
 fabriquer de prompt sans action MCP correspondante à l'écran).
 
+## Montage (2026-08-05)
+
+Script validé par Michael. VO générées (Adam FR, ElevenLabs) sauf N6 réutilisée
+telle quelle depuis `foodeatup-tva-tuto/vo/N8.mp3` (texte identique).
+
+**Calibrage offsets vs ancrages** (`build.py`, gabarit `foodeatup-abonnement-tuto`,
+sans séquence Claude) : N2 (clic "Ajouter cette option", 4,41 s) et N5 (paiement
+Stripe, 6,35 s) sont des lignes longues pour un rush très court (19,72 s) — les
+segments non-cliqués ont été dimensionnés sur la durée VO réelle plutôt que sur
+la durée brute du rush (règle du workflow), avec un ralenti marqué sur C
+(récapitulatif, étiré à 10,3 s) et E (paiement Stripe, étiré à 9,2 s). Après
+calibrage : **N0, N1, N2, N4, N6 démarrent à leur ancrage (drift ≤ 0,2 s)** ; N3
+et N5 démarrent 3-4 s après leur ancrage nominal mais restent dans la fenêtre de
+leur propre segment (léger débordement de 0,3-0,9 s sur le beat suivant,
+comparable aux marges déjà acceptées sur `foodeatup-domaine-tuto`) — aucune
+ligne ne joue sur un segment sans rapport avec son contenu.
+
+**QA technique** (fichier final) : H.264 High/yuv420p 1920x828 25fps, AAC 48kHz
+stéréo 192k, moov avant mdat (faststart confirmé), 0 erreur de décodage, peak
+audio **-7,3 dBFS** (dans la marge cible). Durée finale **38,56 s**. Vignette
+YouTube : `out/thumbnail-youtube.jpg` (1280x720, redimensionnement neutre de
+`assets/intro.jpg`, pas de recréation).
+
 ## Statut
 
-**Brouillon — en attente de validation du script avant génération ElevenLabs**
-(règle `FOODEATUP-TUTORIELS-WORKFLOW.md` §3, STOP obligatoire).
+**Montage terminé, en attente de validation de Michael avant publication**
+(règle `FOODEATUP-TUTORIELS-WORKFLOW.md` §6, STOP obligatoire) — livré via
+`SendUserFile`, aucune publication RapidoCMS/Lovable/GitHub-catalogue tant que
+le retour n'est pas explicite.
