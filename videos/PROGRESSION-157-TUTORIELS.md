@@ -26,7 +26,7 @@ est même passé de 106 à 110 pendant la publication d'un seul tutoriel par cet
 | `stockvision-ai` | StockVision AI | 19 | 19 | 20 | 1 |
 | `comptabilite` | Comptabilité & Achats | 8 | 10 | 10 | 2 |
 | `predibot` | PrediBot (Agent IA Directeur) | 5 | 7 | 3 | ✅ dépassé (entrées > attendu d'origine) |
-| `marketing-fidelite` | Marketing, Fidélité & Iris | 9 | 24 | 24 | 15 |
+| `marketing-fidelite` | Marketing, Fidélité & Iris | 10 | 24 | 24 | 14 |
 | `site-web-vitrine` | Site Web & Vitrine | 6 | 8 | 8 | 2 |
 | `service-commande` | Service Multi-Canal | 1 | 3 | 3 | 2 |
 | `hubrise-livraisons` | HubRise & Livraisons | 0 | 4 | 4 | 4 |
@@ -34,7 +34,7 @@ est même passé de 106 à 110 pendant la publication d'un seul tutoriel par cet
 | `caroline-ia` | Agent IA Caroline | 0 | 6 | 6 | 6 |
 | `reservation-salle` | Réservations & Plan de salle | 0 | 5 | 5 | 5 |
 | `kds-cuisine` | Écran Cuisine (KDS) | 0 | 3 | 3 | 3 |
-| **Total** | | **111** | **162** | **157** | — |
+| **Total** | | **112** (instantané 2026-08-05 après-midi, avant d'autres publications concurrentes) | **162** | **157** | — |
 
 Le total "Entrées" (162) dépasse 157 car plusieurs modules ont désormais plus de stubs
 que leur `expectedCount` d'origine (estimation de départ, pas un plafond — voir note
@@ -49,6 +49,10 @@ comme "publié".
   `list_rfm_segments` (consultation segments RFM) + `create_campaign` (`claudePrompts[]`).
   Détail complet : `LOVABLE-FOODEATUP-DOCS.md` (tableau "Tutoriels publiés") et
   `videos/foodeatup-ciblage-consentement-tuto/SCRIPT.md`.
+- `suivre-ses-credits-sms-whatsapp` — module `marketing-fidelite` (10/24 sur ce module
+  après celle-ci). Remplit une autre fiche stub préexistante. Pas de `claudePrompt` :
+  aucun outil MCP ne lit le solde de crédits/quotas. Détail complet :
+  `LOVABLE-FOODEATUP-DOCS.md` et `videos/foodeatup-credits-com-tuto/SCRIPT.md`.
 
 ## Ajoutés session précédente (2026-08-04)
 
