@@ -27,10 +27,10 @@ produits depuis ce dépôt, voir avertissement de fragmentation dans `LOVABLE-FO
 | `caisse-pos` | Caisse POS & Matériel | 0 | 7 | 7 |
 | `caroline-ia` | Agent IA Caroline | 0 | 6 | 6 |
 | `reservation-salle` | Réservations & Plan de salle | 0 | 5 | 5 |
-| `marketing-fidelite` | Marketing, Fidélité & Iris | 2 | 24 | 22 |
+| `marketing-fidelite` | Marketing, Fidélité & Iris | 3 | 24 | 21 |
 | `service-commande` | Service Multi-Canal | 0 | 3 | 3 |
 | `kds-cuisine` | Écran Cuisine (KDS) | 0 | 3 | 3 |
-| **Total** | | **73** | **157** | **84** |
+| **Total** | | **74** | **157** | **83** |
 
 `configuration` dépasse son `expectedCount` d'origine (15 publiés pour 14
 attendus) — le chiffre attendu est une estimation de départ, pas un plafond ;
@@ -55,6 +55,10 @@ ne pas bloquer dessus.
   programme de fidélité : mode de gain par passage, multiplicateur jours creux,
   validité des points et plafond par commande ; prompt Claude `update_loyalty_program`).
   Placeholder existant rempli directement, sans doublon cette fois.
+- `activer-le-pack-marketing` — module `marketing-fidelite` (activation du pack
+  d'abonnement Marketing & Commercial : campagnes email/SMS/WhatsApp/vocal, agent IA,
+  jeux concours et sondages). Pas de prompt Claude : achat/activation d'un pack passe
+  par Stripe, aucun outil MCP équivalent.
 
 ## Modules à zéro tutoriel — prioriser si on veut couvrir toute la série
 
