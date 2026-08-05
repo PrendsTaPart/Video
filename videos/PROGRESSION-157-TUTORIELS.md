@@ -42,6 +42,15 @@ ne pas bloquer dessus.
   ingrédients + date/quantité de production, prompts Claude `create_recipe` +
   `create_production_plan`).
 
+## Ajoutés cette session (2026-08-05)
+
+- `synchroniser-la-charte-graphique-iris` — module `marketing-fidelite` (pairage
+  marque RapidoCMS/Iris : couleurs, police, logo, comptes sociaux ; pas de
+  `claudePrompt`, aucun outil MCP ne couvre cette action). Remplace la fiche
+  placeholder préexistante (même slug/order 22). Le tableau ci-dessus (0/24 sur
+  `marketing-fidelite` au 2026-08-04) est donc déjà dépassé — comme indiqué plus
+  haut, ne pas s'y fier sans recompter `tutorials.ts` en direct.
+
 ## Modules à zéro tutoriel — prioriser si on veut couvrir toute la série
 
 `site-web-vitrine`, `caisse-pos`, `caroline-ia`, `reservation-salle`,
