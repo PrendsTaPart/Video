@@ -1,6 +1,23 @@
 # Tutoriel — Activer l'abonnement Éditeur de site (module « Site Web & Vitrine », 01/08)
 
-**Statut : DRAFT — en attente de validation de Michael avant génération VO / montage.**
+**Statut : PUBLIÉ (2026-08-05).** Validation explicite de Michael reçue en cours de
+session ("tu peux publier"). Livrable final : `out/foodeatup-editeur-web-tuto-v1.mp4`
+(34,28 s, H.264 High/yuv420p, AAC 48kHz stéréo, faststart, peak -7,3 dBFS).
+
+## Publication
+
+- **RapidoCMS** : vidéo `fe-editeur-web-tuto`, vignette `fe-editeur-web-tuto-thumb`
+  (`https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/...`).
+- **Lovable** (`project_id 55ff35b7-c442-42c4-950c-8c7fd420c645`, `src/data/tutorials.ts`) :
+  slug final `activer-abonnement-editeur-web` (renommé par l'agent Lovable depuis
+  `activer-labonnement-editeur-web` proposé — correction grammaticale bienvenue),
+  module `site-web-vitrine`, `order: 1`, section "Activer l'éditeur". Les 7 autres
+  vidéos du module (order 2 à 8) avaient été publiées entre-temps par d'autres
+  sessions en parallèle — le module est maintenant complet (8/8).
+- **GitHub** : commit sur `claude/foodeatup-video-tutorials-mgemxu` (assets, vo/,
+  build.py, out/).
+- LinkedIn / RapidoCMS planning social : non fait (non demandé explicitement pour
+  cette vidéo).
 
 Rush fourni : `assets/screen.mp4` (16,88 s, 1920x828, 25 fps, H.264/AAC).
 Intro card : `assets/intro.jpg` (« ACTIVER L'ÉDITEUR WEB »).

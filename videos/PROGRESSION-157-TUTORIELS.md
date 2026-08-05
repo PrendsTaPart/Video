@@ -21,7 +21,7 @@ les occurrences de `moduleSlug: "<slug>"` dans `tutorials.ts` (via
 | `stockvision-ai` | StockVision AI | 7 | 20 | 13 |
 | `predibot` | PrediBot (Agent IA Directeur) | 2 | 3 | 1 |
 | `hubrise-livraisons` | HubRise & Livraisons | 1 | 4 | 3 |
-| `site-web-vitrine` | Site Web & Vitrine | 0 | 8 | 8 |
+| `site-web-vitrine` | Site Web & Vitrine | 8 | 8 | ✅ complet |
 | `caisse-pos` | Caisse POS & Matériel | 0 | 7 | 7 |
 | `caroline-ia` | Agent IA Caroline | 0 | 6 | 6 |
 | `reservation-salle` | Réservations & Plan de salle | 0 | 5 | 5 |
@@ -41,6 +41,19 @@ ne pas bloquer dessus.
 - `creer-sa-fiche-plat-pour-production` — module `haccp` (créer un plat +
   ingrédients + date/quantité de production, prompts Claude `create_recipe` +
   `create_production_plan`).
+
+## Ajouté cette session (2026-08-05)
+
+- `activer-abonnement-editeur-web` — module `site-web-vitrine`, 1ère vidéo du
+  module (`order: 1`, section "Activer l'éditeur"). Ajout de l'option payante
+  "Éditeur de site IA" (29€/mois) à l'abonnement, jusqu'à la vérification
+  d'identité Stripe (le rush fourni s'arrête avant l'écran de confirmation
+  finale — pas d'écran de succès inventé). Pas de `claudePrompt` : activation
+  d'un abonnement, aucun outil MCP FoodEatUp équivalent. RapidoCMS (vidéo +
+  vignette) + Lovable faits. Dossier vidéo : `videos/foodeatup-editeur-web-tuto/`
+  (voir son `SCRIPT.md`). En arrivant sur le module, les 7 autres emplacements
+  (`order` 2 à 8) étaient déjà remplis par d'autres sessions en parallèle —
+  le module `site-web-vitrine` est donc désormais **complet (8/8)**.
 
 ## Modules à zéro tutoriel — prioriser si on veut couvrir toute la série
 
