@@ -1,15 +1,25 @@
-# Brand assets — statut PLACEHOLDER
+# Brand assets
 
-Le kit de marque officiel EatNow (`amine.zip`) envoyé par le client est corrompu — tous ses
-fichiers (logo, wordmark, motifs SVG/PNG, `BRAND.md`) sont à 0 octet. En attendant le vrai
-fichier, ce dossier contient des reconstructions placeholder :
+Le vrai kit de marque EatNow a été reçu le 2026-08-05 (`amine.zip`, `eatnow-brand-assets/`) après
+deux envois précédents corrompus (fichiers à 0 octet). Les assets officiels utilisés dans cette
+composition vivent dans `official/` :
 
-- **`motif-stamp-placeholder.svg`** — motif "tampon" recréé à partir de l'image de référence
-  envoyée par le client (grille 5×5 de carrés arrondis, 17 cases actives, symétrique). Utilisé
-  au Frame 6 (clôture) pour le repère EatNow qui se dessine case par case. `currentColor` +
-  `data-index` par case pour piloter le stagger d'apparition en GSAP.
-- **Wordmark** — pas de fichier séparé : rendu en texte "EatNow" (Geist Bold) directement dans
-  `compositions/frames/06-cta.html`, pas d'image.
+- **`official/BRAND.md`** — charte complète (couleurs, typo, motif, voix). Référence faisant foi.
+- **`official/tokens.json`** — tokens couleurs (Ink/Paper/Navy/Beige + neutres + fonctionnels).
+- **`official/brandmark-paper.svg`** / **`brandmark-ink.svg`** — le repère (grille 5×5, 17 points,
+  symétrie 4 côtés) — inliné directement dans `compositions/frames/06-cta.html` (rects individuels
+  avec `data-index` pour le stagger d'apparition case par case).
+- **`official/wordmark-paper.svg`** / **`wordmark-ink.svg`** — le wordmark "EatNow" (tracé vectoriel
+  réel, Geist Bold) — inliné dans `compositions/frames/06-cta.html`.
+- **`official/motif-06-logo-stamp.svg`** — exemple d'usage du repère en tampon (coin de carte) ;
+  non utilisé directement dans cette vidéo, gardé pour référence.
 
-**À remplacer dès réception du vrai kit de marque** : le motif officiel `06-motifs/svg/motif-06-logo-stamp.svg`
-et le wordmark officiel `02-wordmark/svg/` (structure attendue du zip, voir `SCRIPT.md` § Statut assets).
+Le motif que j'avais recréé à partir de l'image de référence envoyée par le client correspondait
+exactement à la grille officielle (même disposition des 17 points) — aucune reprise structurelle
+n'a été nécessaire pour le Frame 6, seul le SVG source a été remplacé par le vrai fichier.
+
+**Polices** : Geist (400/500/700) et Fraunces italic (300, avec `font-variation-settings: "opsz" 144,
+"SOFT" 100, "WONK" 1` et `letter-spacing: -0.03em` selon `official/BRAND.md` § 3) — vendorées dans
+`../fonts/` depuis Google Fonts (fichiers statiques ; les axes variables SOFT/WONK/opsz ne sont pas
+pilotables via l'API `css2` de Google pour un fichier statique — approximation acceptée pour cette
+vidéo, la police variable complète n'a pas été poursuivie).

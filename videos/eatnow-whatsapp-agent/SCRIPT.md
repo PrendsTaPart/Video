@@ -76,11 +76,19 @@ Preuves : **24/7 · 0% commission**
 **Typo :** Geist Bold pour les titres (tracking −0.04em) · Fraunces italic pour une ligne émotionnelle par écran (plans 1 et 5).
 **Motif :** champ de points 8px, densité différente par surface (dense sur Ink, discret sur Paper).
 
-## Statut assets (bloquant à lever avant rendu final)
+## Statut assets
 
-- **Kit de marque reçu (`amine.zip`) corrompu** — tous les fichiers (logo, wordmark, motifs SVG/PNG, `BRAND.md`) sont à 0 octet. Aucun asset réel récupéré.
-- **Décision (validée avec le client interne 2026-08-05) : on avance avec un wordmark texte placeholder** (« EatNow », Geist Bold) et un motif de tampon recréé à partir de l'image de référence envoyée (grille 5×5 de carrés arrondis), en attendant le vrai zip. À remplacer dès réception des vrais fichiers `01-brandmark/`, `02-wordmark/`, `06-motifs/`.
-- **Polices Geist et Fraunces non vendorées dans le repo** — à télécharger (Google Fonts / Vercel) et déposer dans `assets/fonts/` avant le rendu (règle du studio : jamais de CDN dans une composition HyperFrames).
+- **Vrai kit de marque reçu le 2026-08-05** (`amine.zip`, 3ᵉ envoi — les deux précédents étaient
+  corrompus, fichiers à 0 octet). Assets officiels intégrés dans `assets/brand/official/` :
+  brandmark (grille 5×5, 17 points), wordmark (tracé vectoriel réel), `BRAND.md` (charte complète),
+  `tokens.json` (couleurs). Plus aucun placeholder logo/wordmark dans la composition.
+- Le motif recréé à partir de l'image de référence envoyée par le client correspondait exactement
+  à la grille officielle — aucune reprise structurelle nécessaire, seul le SVG source a été
+  remplacé au Frame 6.
+- Polices **Geist** (400/500/700) et **Fraunces italic** (300) vendorées dans `assets/fonts/`
+  (Google Fonts, fichiers statiques). Détail des réglages `font-variation-settings` et la limite
+  connue (axes variables SOFT/WONK/opsz non pilotables sur un fichier statique) dans
+  `assets/brand/README.md`.
 
 ## Références de style (fournies par le client)
 
