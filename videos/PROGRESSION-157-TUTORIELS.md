@@ -42,6 +42,21 @@ ne pas bloquer dessus.
   ingrédients + date/quantité de production, prompts Claude `create_recipe` +
   `create_production_plan`).
 
+## Ajoutés cette session (2026-08-05)
+
+- `retrouver-son-qr-code-jeu-concours` — module `marketing-fidelite` (tuto #15
+  du catalogue : QR imprimable + copier le lien de la roue cadeaux, prompt
+  Claude `list_wheel_games`/`get_wheel_stats`). Publié sur RapidoCMS (LinkedIn
+  FoodEatUp, planifié le 2026-09-12 07:00, prochain créneau libre de la
+  rotation) et sur Lovable (remplace le stub "en cours de tournage" déjà en
+  place). Projet vidéo : `videos/foodeatup-qrcode-jeu-concours-tuto/`.
+  **Le tableau ci-dessus est déjà en retard sur `tutorials.ts`** : la lecture
+  de `list_messages` sur le projet Lovable montre au moins 2 autres tutoriels
+  `marketing-fidelite` publiés le même jour par d'autres sessions
+  (`lancer-un-jeu-concours`, `resultats-des-sondages-historique`) — le
+  décompte "0/24" de la ligne `marketing-fidelite` est donc obsolète, à
+  recompter depuis `tutorials.ts` avant de s'y fier.
+
 ## Modules à zéro tutoriel — prioriser si on veut couvrir toute la série
 
 `site-web-vitrine`, `caisse-pos`, `caroline-ia`, `reservation-salle`,
