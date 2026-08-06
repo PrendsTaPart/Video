@@ -89,6 +89,24 @@ Réutilisation directe de `assets/intro.jpg` (pas de redesign), livrable
 
 ## Statut
 
-**STOP obligatoire (règle `FOODEATUP-TUTORIELS-WORKFLOW.md` §3)** : script ci-dessus soumis à
-Michael. Aucun audio ElevenLabs généré, aucun montage lancé, rien poussé sur Lovable/RapidoCMS
-tant qu'un retour explicite (validation ou correction) n'est reçu.
+Script validé par Michael (« c'est validé »). VO générée (ElevenLabs, voix Adam FR) pour
+N0-N5 ; N6 (CTA) réutilisé tel quel depuis `foodeatup-accueil-role-tuto/vo/N8.mp3` (md5
+identique aux 82 autres tutos qui le réutilisent déjà). Montage terminé :
+`out/foodeatup-predibot-previsions-tuto-v1.mp4` (42,48 s — H.264 High/yuv420p 1920x828, AAC
+48 kHz stéréo, faststart confirmé `ftyp`→`moov`→`mdat`, decode 0 erreur, peak audio
+**-7,18 dBFS**) + `out/thumbnail-youtube.jpg` (1280x720, réutilisation neutre de
+`assets/intro.jpg`, aucun redesign). Vérification visuelle des bandeaux d'étape et des
+zoom-punch sur les 3 clics (frames extraites du rendu final) : OK, aucune boîte invisible
+(piège `drawbox` documenté dans `FOODEATUP-TUTORIELS-WORKFLOW.md` évité par construction —
+bandeau en `drawtext`/`box`, jamais de `drawbox` animé sur `t`).
+
+Ajustement fait pendant le montage : les cibles de segments initiales étaient trop courtes
+pour porter les 7 lignes de VO (~41,7 s cumulées) — même piège documenté dans
+`FOODEATUP-TUTORIELS-WORKFLOW.md` (« segments trop rapides → outro tenue en silence
+exagérément long », outro auto-étendue à 12,3 s dans un premier essai). Corrigé en
+recalibrant les cibles des segments A/C/E/G sur la durée réelle des lignes VO qu'ils
+portent ; l'outro ne s'étend plus qu'à 7,86 s (contre 6,2 s de base).
+
+Publication demandée explicitement par Michael dans le même tour ("publie la vidéo... FoodEatUp
+académy... met à jour le dépôt github") — pas de second STOP de validation post-montage,
+conformément à cette instruction directe.
