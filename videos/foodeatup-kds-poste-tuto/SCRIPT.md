@@ -74,14 +74,27 @@ Créer le poste). Pas de clip avatar dans ce dossier (voix ElevenLabs de bout en
 
 ## Cas d'usage / astuce du chef (pour la fiche Lovable, `howItWorks` / `whatItsFor` / `chefTip`)
 
-- **Comment ça marche** : Cuisine (kds) → + Nouveau poste → nommer le poste (ex. Froid,
-  Chaud, Pass) → choisir son type (Préparation ou Pass/envois) → choisir une couleur de
-  repérage → Créer le poste. Chaque poste obtient son propre lien d'écran (bouton « Ouvrir
-  l'écran », à afficher sur une tablette ou une TV en cuisine) et peut être régénéré
-  (« Nouveau lien ») ou supprimé.
-- **À quoi ça sert** : découper la cuisine en postes de production (chaud, froid, pizza,
-  pass...) pour que chaque équipier ne voie que ce qui le concerne sur son propre écran, en
-  temps réel, dès qu'une commande est confirmée.
+**Mise à jour du 2026-08-06** — texte enrichi sur demande explicite (définition du KDS,
+temps réel, exemples concrets de postes pour le dispatch des bons de commande). Publié sur
+Lovable (`src/data/tutorials.ts`, commit `e37791e`) et déployé en production.
+
+- **Qu'est-ce que le KDS** : Kitchen Display System, ou écran d'affichage cuisine — remplace
+  les tickets papier par un écran par poste (tablette ou télé) installé directement sur
+  chaque zone de préparation.
+- **Comment ça marche** : Cuisine (kds) → + Nouveau poste → nommer le poste selon sa zone
+  réelle (ex. Entrée, Chaud, Grillade, Bar) → choisir son type (Préparation ou Pass/envois)
+  → choisir une couleur de repérage → Créer le poste. Chaque poste obtient son propre lien
+  d'écran (bouton « Ouvrir l'écran ») et peut être régénéré (« Nouveau lien ») ou supprimé.
+  Ensuite, associer ses catégories de plats dans le routage du poste (section « Routage —
+  quelles catégories arrivent sur ce poste ? » visible sur chaque carte poste).
+- **Temps réel** : dès qu'une commande est confirmée (comptoir, table, QR code ou
+  livraison), elle s'affiche instantanément sur le ou les postes concernés — sans
+  impression, sans allers-retours.
+- **Personnalisation par poste / dispatch des bons de commande** : chaque poste peut être
+  dédié à une zone de préparation précise — Entrée, Chaud, Grillade, Bar... — et FoodEatUp
+  route automatiquement chaque ligne de commande vers le bon poste selon la catégorie du
+  plat : les entrées atterrissent chez le chef entrée, les grillades chez le grillardin, les
+  boissons/desserts au bar, chacun ne voyant que ce qui le concerne.
 - **Astuce du chef** : un poste marqué « Poste par défaut (tout le reste) » récupère toutes
   les catégories de plats non explicitement routées vers un poste précis — toujours garder
   un poste par défaut actif pour ne perdre aucune commande. Le poste type « Pass » sert de
