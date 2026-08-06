@@ -51,6 +51,15 @@ ne pas bloquer dessus.
   `marketing-fidelite` au 2026-08-04) est donc déjà dépassé — comme indiqué plus
   haut, ne pas s'y fier sans recompter `tutorials.ts` en direct.
 
+## Ajoutés cette session (2026-08-06)
+
+- `gerer-ses-no-shows` — module `reservation-salle` (menu à trois points sur une
+  réservation : Modifier / No-show / Supprimer ; `claudePrompt` = `no_show_reservation`,
+  seul geste des trois avec un équivalent MCP). Remplace la fiche placeholder
+  préexistante (même slug, order 3). Publiée RapidoCMS + Facebook (2026-08-07 07h) +
+  Lovable — commit `6fcf62bc`, workspace Lovable désormais `Braindcode` (corrigé par
+  Michael, id `7gbZqk6lsnITUluFMgSc`, ancien nom noté par erreur : `Contact.prendstapart`).
+
 ## Modules à zéro tutoriel — prioriser si on veut couvrir toute la série
 
 `site-web-vitrine`, `caisse-pos`, `caroline-ia`, `reservation-salle`,
