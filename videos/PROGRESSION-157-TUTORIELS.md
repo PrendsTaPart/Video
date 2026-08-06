@@ -18,6 +18,10 @@ les occurrences de `moduleSlug: "<slug>"` dans `tutorials.ts` (via
 > tournage") — le total de 157 ci-dessous et la ligne `service-commande` n'ont pas été recalculés
 > dans le reste de ce fichier au-delà de cette ligne ; `src/data/tutorials.ts` reste la source de
 > vérité.
+>
+> **Mise à jour 2026-08-06 (suite)** : `commander-sur-site-qr-ou-vocal` publié également (remplit
+> un slot placeholder préexistant, pas de nouvelle entrée) — `service-commande` passe à 3/4
+> tutoriels avec contenu réel, `expectedCount` inchangé à 4.
 
 | moduleSlug | Nom | Publiés | Attendus | Reste |
 |---|---|---:|---:|---:|
@@ -33,7 +37,7 @@ les occurrences de `moduleSlug: "<slug>"` dans `tutorials.ts` (via
 | `caroline-ia` | Agent IA Caroline | 0 | 6 | 6 |
 | `reservation-salle` | Réservations & Plan de salle | 0 | 5 | 5 |
 | `marketing-fidelite` | Marketing, Fidélité & Iris | 0 | 24 | 24 |
-| `service-commande` | Service Multi-Canal | 2 | 4 | 2 |
+| `service-commande` | Service Multi-Canal | 3 | 4 | 1 |
 | `kds-cuisine` | Écran Cuisine (KDS) | 0 | 3 | 3 |
 | **Total** | | **71** | **157** | **86** |
 
