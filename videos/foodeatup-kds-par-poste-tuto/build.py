@@ -78,13 +78,13 @@ BTN_OPEN = (1221, 282); SZ_OPEN = (158, 38)   # "Ouvrir l'écran" (poste chaud)
 # bascules Pass (peuplement ~12,5-14,0s, on démarre après) et Froid (stable dès
 # ~17,0s).
 segs = [
-    ("A", 0.30,  3.30,  5.00, None, None,     None,    "1 · Vos postes de travail"),
+    ("A", 0.30,  3.30,  5.78, None, None,     None,    "1 · Vos postes de travail"),
     ("B", 3.30,  3.65,  0.90, 3.50, BTN_OPEN, SZ_OPEN, None),
-    ("C", 6.80,  8.60,  4.80, None, None,     None,    "2 · Poste Chaud"),
-    ("D", 14.00, 15.50, 4.80, None, None,     None,    "3 · Poste Pass"),
-    ("E", 17.00, 19.00, 5.90, None, None,     None,    "4 · Poste Froid"),
+    ("C", 6.80,  8.60,  8.90, None, None,     None,    "2 · Poste Chaud"),
+    ("D", 14.00, 15.50, 5.28, None, None,     None,    "3 · Poste Pass"),
+    ("E", 17.00, 19.00, 6.25, None, None,     None,    "4 · Poste Froid"),
 ]
-INTRO_D, OUTRO_D = 6.80, 6.20
+INTRO_D, OUTRO_D = 7.18, 6.20
 
 def encode_seg(name, s, e, target, btn, btn_sz, caption):
     out = f"{SEG}/{name}.mp4"
@@ -131,7 +131,7 @@ def card(img, out, secs, zoom_in=True, fade=True):
 
 # N6=5,67s doit couvrir stage1(reveal)+stage2(copié), N7=4,26s couvre stage3
 # (mockup chatbot) -- mesuré sur vo/N6.mp3 et vo/N7.mp3 avant de fixer ces durées.
-CLAUDE_STAGE_D = [3.00, 2.50, 4.30]  # reveal, copied, chatbot mockup
+CLAUDE_STAGE_D = [3.40, 2.77, 4.61]  # reveal, copied, chatbot mockup
 
 def build_silent(outro_d):
     card(f"{ROOT}/assets/intro.jpg", f"{SEG}/intro.mp4", INTRO_D, zoom_in=True)
