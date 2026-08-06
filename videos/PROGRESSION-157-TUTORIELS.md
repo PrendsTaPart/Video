@@ -10,10 +10,11 @@ les occurrences de `moduleSlug: "<slug>"` dans `tutorials.ts` (via
 
 ## État au 2026-08-06
 
-**72 / 157 publiés (46 %).** (71 au 2026-08-04 + `creer-un-poste-de-travail`,
-module `kds-cuisine` — voir ci-dessous. Les autres modules n'ont pas été
-recomptés depuis le 2026-08-04 : plusieurs branches publient en parallèle sur
-le même projet Lovable, ce tableau peut être en retard sur `tutorials.ts`.)
+**73 / 157 publiés (46 %).** (71 au 2026-08-04 + `creer-un-poste-de-travail` module
+`kds-cuisine` + `ajouter-une-reservation` module `reservation-salle` — voir ci-dessous.
+Les autres modules n'ont pas été recomptés depuis le 2026-08-04 : plusieurs branches
+publient en parallèle sur le même projet Lovable, ce tableau peut être en retard sur
+`tutorials.ts`.)
 
 | moduleSlug | Nom | Publiés | Attendus | Reste |
 |---|---|---:|---:|---:|
@@ -25,13 +26,13 @@ le même projet Lovable, ce tableau peut être en retard sur `tutorials.ts`.)
 | `predibot` | PrediBot (Agent IA Directeur) | 2 | 3 | 1 |
 | `hubrise-livraisons` | HubRise & Livraisons | 1 | 4 | 3 |
 | `kds-cuisine` | Écran Cuisine (KDS) | 1 | 3 | 2 |
+| `reservation-salle` | Réservations & Plan de salle | 1 | 5 | 4 |
 | `site-web-vitrine` | Site Web & Vitrine | 0 | 8 | 8 |
 | `caisse-pos` | Caisse POS & Matériel | 0 | 7 | 7 |
 | `caroline-ia` | Agent IA Caroline | 0 | 6 | 6 |
-| `reservation-salle` | Réservations & Plan de salle | 0 | 5 | 5 |
 | `marketing-fidelite` | Marketing, Fidélité & Iris | 0 | 24 | 24 |
 | `service-commande` | Service Multi-Canal | 0 | 3 | 3 |
-| **Total** | | **72** | **157** | **85** |
+| **Total** | | **73** | **157** | **84** |
 
 `configuration` dépasse son `expectedCount` d'origine (15 publiés pour 14
 attendus) — le chiffre attendu est une estimation de départ, pas un plafond ;
@@ -44,6 +45,11 @@ ne pas bloquer dessus.
   `claudePrompt` (aucun outil MCP FoodEatUp de création de poste KDS). A
   remplacé la fiche stub préexistante sur Lovable (mêmes `subcategory`/`order`,
   champs de contenu conservés). Voir `videos/foodeatup-kds-poste-tuto/SCRIPT.md`.
+- `ajouter-une-reservation` — module `reservation-salle`, **première vidéo du
+  module** (nouvelle réservation : nom/téléphone/email, date/heure/couverts,
+  table auto ou manuelle). `claudePrompt` sur `create_reservation`. A remplacé
+  la fiche stub préexistante sur Lovable (mêmes `subcategory`/`order`, champs
+  conservés). Voir `videos/foodeatup-reservation-tuto/SCRIPT.md`.
 
 ## Ajoutés le 2026-08-04
 
@@ -55,10 +61,12 @@ ne pas bloquer dessus.
 
 ## Modules à zéro tutoriel — prioriser si on veut couvrir toute la série
 
-`site-web-vitrine`, `caisse-pos`, `caroline-ia`, `reservation-salle`,
-`marketing-fidelite` (le plus gros, 24 attendus), `service-commande`.
-`kds-cuisine` a maintenant sa première vidéo (`creer-un-poste-de-travail`) —
-il reste `afficher-le-kds-par-poste` et `gerer-une-commande-en-direct-kds`
+`site-web-vitrine`, `caisse-pos`, `caroline-ia`, `marketing-fidelite` (le plus
+gros, 24 attendus), `service-commande`. `kds-cuisine` et `reservation-salle`
+ont maintenant chacun leur première vidéo (`creer-un-poste-de-travail`,
+`ajouter-une-reservation`) — il reste respectivement `afficher-le-kds-par-poste`
++ `gerer-une-commande-en-direct-kds`, et `retrouver-ses-reservations-du-jour` +
+`gerer-ses-no-shows` + `placer-un-client-a-table` + `scanner-le-qr-code-de-la-table`
 (fiches stub déjà en place sur Lovable, en attente de rush). Vérifier dans
 `references/mcp-plugins-video-catalog.md` et les outils `mcp__FoodEatUp__*`
 quels cas d'usage de ces modules ont un outil MCP correspondant, pour préparer
