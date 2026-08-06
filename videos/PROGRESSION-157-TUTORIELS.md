@@ -8,9 +8,12 @@ vient de la somme des `expectedCount` du tableau `modules` du même fichier
 les occurrences de `moduleSlug: "<slug>"` dans `tutorials.ts` (via
 `mcp__Lovable__read_file`) et comparer à `expectedCount`.
 
-## État au 2026-08-04
+## État au 2026-08-04 (table ci-dessous non recomptée depuis, voir note 2026-08-06 sur `site-web-vitrine`)
 
-**71 / 157 publiés (45 %).**
+**71 / 157 publiés (45 %)** au 2026-08-04 ; +1 le 2026-08-06
+(`commander-via-site-vocal-qrcode`) → **72 / 157 (46 %)**, mais ce total
+reste indicatif tant que les autres modules n'ont pas été recomptés sur
+`tutorials.ts` en direct (voir avertissement ci-dessus).
 
 | moduleSlug | Nom | Publiés | Attendus | Reste |
 |---|---|---:|---:|---:|
@@ -21,7 +24,7 @@ les occurrences de `moduleSlug: "<slug>"` dans `tutorials.ts` (via
 | `stockvision-ai` | StockVision AI | 7 | 20 | 13 |
 | `predibot` | PrediBot (Agent IA Directeur) | 2 | 3 | 1 |
 | `hubrise-livraisons` | HubRise & Livraisons | 1 | 4 | 3 |
-| `site-web-vitrine` | Site Web & Vitrine | 0 | 8 | 8 |
+| `site-web-vitrine` | Site Web & Vitrine | 9 | 9 | ✅ complet (dépassé, voir note 2026-08-06) |
 | `caisse-pos` | Caisse POS & Matériel | 0 | 7 | 7 |
 | `caroline-ia` | Agent IA Caroline | 0 | 6 | 6 |
 | `reservation-salle` | Réservations & Plan de salle | 0 | 5 | 5 |
@@ -33,6 +36,19 @@ les occurrences de `moduleSlug: "<slug>"` dans `tutorials.ts` (via
 `configuration` dépasse son `expectedCount` d'origine (15 publiés pour 14
 attendus) — le chiffre attendu est une estimation de départ, pas un plafond ;
 ne pas bloquer dessus.
+
+## Ajoutés le 2026-08-06
+
+- `commander-via-site-vocal-qrcode` — module `site-web-vitrine` (rush fourni
+  par Michael : parcours de commande sur le site vitrine ; agent vocal et QR
+  code à table introduits en VO + carte dédiée, non filmables). Prompts
+  Claude `list_orders` filtré par `channel` (vitrine/agent_vocal/sur_place).
+  9ème tutoriel du module (`expectedCount` du module passé de 8 à 9 sur
+  Lovable — ce constat a aussi révélé que le module `site-web-vitrine`,
+  encore à 0 dans ce tableau, était en réalité déjà à 8/8 sur le site réel
+  avant cet ajout : ce tableau local a pris du retard sur `tutorials.ts`,
+  comme documenté pour d'autres modules — ne pas s'y fier seul pour planifier
+  la suite, vérifier `tutorials.ts` en direct).
 
 ## Ajoutés cette session (2026-08-04)
 
