@@ -49,6 +49,12 @@ ne pas bloquer dessus.
   avant cet ajout : ce tableau local a pris du retard sur `tutorials.ts`,
   comme documenté pour d'autres modules — ne pas s'y fier seul pour planifier
   la suite, vérifier `tutorials.ts` en direct).
+- `placer-un-client-a-table` — module `reservation-salle` (rush fourni par
+  Michael : check-in d'une réservation + réassignation de table via
+  Modifier). Prompt Claude `checkin_reservation`, correspondance exacte.
+  Complète une fiche placeholder déjà présente sur le site ("en cours de
+  tournage", `order: 4`) — pas de nouvelle entrée créée, `expectedCount` du
+  module inchangé.
 
 ## Ajoutés cette session (2026-08-04)
 
