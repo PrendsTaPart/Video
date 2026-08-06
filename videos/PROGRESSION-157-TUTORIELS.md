@@ -23,16 +23,20 @@ les occurrences de `moduleSlug: "<slug>"` dans `tutorials.ts` (via
 | `hubrise-livraisons` | HubRise & Livraisons | 1 | 4 | 3 |
 | `site-web-vitrine` | Site Web & Vitrine | 0 | 8 | 8 |
 | `caisse-pos` | Caisse POS & Matériel | 0 | 7 | 7 |
-| `caroline-ia` | Agent IA Caroline | 0 | 6 | 6 |
+| `caroline-ia` | Agent IA Caroline | 2 | 6 | 4 |
 | `reservation-salle` | Réservations & Plan de salle | 0 | 5 | 5 |
 | `marketing-fidelite` | Marketing, Fidélité & Iris | 0 | 24 | 24 |
 | `service-commande` | Service Multi-Canal | 0 | 3 | 3 |
 | `kds-cuisine` | Écran Cuisine (KDS) | 0 | 3 | 3 |
-| **Total** | | **71** | **157** | **86** |
+| **Total** | | **73** | **157** | **84** |
 
 `configuration` dépasse son `expectedCount` d'origine (15 publiés pour 14
 attendus) — le chiffre attendu est une estimation de départ, pas un plafond ;
-ne pas bloquer dessus.
+ne pas bloquer dessus. Ligne `caroline-ia` mise à jour le 2026-08-06 à partir
+du seul retour de l'agent Lovable sur cette entrée (« module Caroline affiche
+désormais 2/6 ») — le reste du tableau date toujours du 2026-08-04, ne pas le
+prendre pour une actualisation générale (relire `tutorials.ts` en direct pour
+ça).
 
 ## Ajoutés cette session (2026-08-04)
 
@@ -42,11 +46,20 @@ ne pas bloquer dessus.
   ingrédients + date/quantité de production, prompts Claude `create_recipe` +
   `create_production_plan`).
 
+## Ajoutés cette session (2026-08-06)
+
+- `reecouter-ses-appels-et-reservations` — module `caroline-ia` (résumé +
+  transcription complète d'un appel, filtre par statut ; pas de `claudePrompt`,
+  aucun outil MCP ne couvre l'écoute d'appels). A remplacé un placeholder
+  préexistant du même sujet sur une autre branche. Module `caroline-ia` passé
+  de 0/6 à 2/6 (une autre fiche, `01 Configurer Caroline`, avait déjà été
+  publiée entre-temps par une session concurrente).
+
 ## Modules à zéro tutoriel — prioriser si on veut couvrir toute la série
 
-`site-web-vitrine`, `caisse-pos`, `caroline-ia`, `reservation-salle`,
+`site-web-vitrine`, `caisse-pos`, `reservation-salle`,
 `marketing-fidelite` (le plus gros, 24 attendus), `service-commande`,
-`kds-cuisine`. Vérifier dans `references/mcp-plugins-video-catalog.md` et les
-outils `mcp__FoodEatUp__*` quels cas d'usage de ces modules ont un outil MCP
-correspondant, pour préparer scripts + `claudePrompt(s)` en amont du prochain
-rush fourni par Michael.
+`kds-cuisine`. `caroline-ia` a démarré (2/6) le 2026-08-06. Vérifier dans
+`references/mcp-plugins-video-catalog.md` et les outils `mcp__FoodEatUp__*`
+quels cas d'usage de ces modules ont un outil MCP correspondant, pour préparer
+scripts + `claudePrompt(s)` en amont du prochain rush fourni par Michael.

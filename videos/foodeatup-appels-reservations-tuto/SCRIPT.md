@@ -81,10 +81,14 @@ apostrophe dans les textes de bandeau.
 
 ## Statut publication
 
-Montage en cours de production sur la branche
-`claude/foodeatup-video-tutorials-nwj10n`. Étapes restantes avant publication
-(règle de validation du 2026-08-02, voir `videos/LOVABLE-FOODEATUP-DOCS.md`) :
-livrer le MP4 à Michael, **attendre son accord explicite**, puis seulement
-après : upload RapidoCMS, entrée `src/data/tutorials.ts` (module `caroline-ia`)
-via un prompt Lovable, mise à jour de `videos/LOVABLE-FOODEATUP-DOCS.md` et
-`videos/PROGRESSION-157-TUTORIELS.md`.
+Validée par Michael puis publiée le 2026-08-06 :
+- RapidoCMS : `foodeatup-appels-reservations-tuto-v1` (vidéo) +
+  `foodeatup-appels-reservations-tuto-thumbnail` (vignette), URLs S3 stables.
+- Lovable (`src/data/tutorials.ts`, module `caroline-ia`, commit `3cc5d912`) —
+  a remplacé un placeholder préexistant du même sujet créé par une autre
+  session. Module `caroline-ia` passé de 0/6 à 2/6 (une autre fiche,
+  `01 Configurer Caroline`, avait entre-temps été publiée par une session
+  concurrente). Pas de `claudePrompt`, conforme à l'analyse ci-dessus.
+- `videos/LOVABLE-FOODEATUP-DOCS.md` et `videos/PROGRESSION-157-TUTORIELS.md`
+  mis à jour en conséquence.
+- LinkedIn/RapidoCMS scheduling : **non demandé**, pas de brouillon programmé.
