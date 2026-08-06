@@ -12,6 +12,13 @@ les occurrences de `moduleSlug: "<slug>"` dans `tutorials.ts` (via
 
 **71 / 157 publiés (45 %).**
 
+> **Mise à jour 2026-08-06** : `retrouver-ses-commandes-multi-canal` publié dans le module
+> `service-commande` (voir `LOVABLE-FOODEATUP-DOCS.md`, tableau "Tutoriels publiés"). Ce module
+> passe de `expectedCount: 3` à `4` (2 fiches avec contenu réel + 2 placeholders "en cours de
+> tournage") — le total de 157 ci-dessous et la ligne `service-commande` n'ont pas été recalculés
+> dans le reste de ce fichier au-delà de cette ligne ; `src/data/tutorials.ts` reste la source de
+> vérité.
+
 | moduleSlug | Nom | Publiés | Attendus | Reste |
 |---|---|---:|---:|---:|
 | `equipe-planning` | Équipe, Planning & RH | 19 | 20 | 1 |
@@ -26,7 +33,7 @@ les occurrences de `moduleSlug: "<slug>"` dans `tutorials.ts` (via
 | `caroline-ia` | Agent IA Caroline | 0 | 6 | 6 |
 | `reservation-salle` | Réservations & Plan de salle | 0 | 5 | 5 |
 | `marketing-fidelite` | Marketing, Fidélité & Iris | 0 | 24 | 24 |
-| `service-commande` | Service Multi-Canal | 0 | 3 | 3 |
+| `service-commande` | Service Multi-Canal | 2 | 4 | 2 |
 | `kds-cuisine` | Écran Cuisine (KDS) | 0 | 3 | 3 |
 | **Total** | | **71** | **157** | **86** |
 
