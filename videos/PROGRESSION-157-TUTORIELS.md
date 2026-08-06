@@ -50,3 +50,17 @@ ne pas bloquer dessus.
 outils `mcp__FoodEatUp__*` quels cas d'usage de ces modules ont un outil MCP
 correspondant, pour préparer scripts + `claudePrompt(s)` en amont du prochain
 rush fourni par Michael.
+
+## Ajouté cette session (2026-08-06)
+
+- `ouvrir-ses-creneaux-de-reservation` — module `caroline-ia` (rush analysé :
+  réservation refusée hors horaires Storefront → Configuration boutique >
+  Ma Vitrine > Horaires d'ouverture → case du jour cochée → Enregistrer →
+  réservation acceptée ; prompt Claude `reservation_availability`). Vidéo
+  montée et vérifiée, RapidoCMS uploadé, commit/push fait sur
+  `claude/foodeatup-video-tutorials-5bfibs`. **Fiche Lovable non mise à jour
+  — workspace Lovable à court de crédits au moment de l'envoi
+  (`mcp__Lovable__send_message` a échoué explicitement avec "workspace is
+  out of credits", pas de contenu halluciné) — à renvoyer dès que les
+  crédits sont réapprovisionnés, voir `LOVABLE-FOODEATUP-DOCS.md` ligne 33
+  pour le bloc complet.**
