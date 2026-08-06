@@ -54,10 +54,10 @@ def banner(text, seg_dur):
 # changer d'écran.
 segs = [
     ("A", 0.40,  1.40,  6.17, "1 · Plan de salle"),
-    ("B", 4.00,  5.00,  6.35, "2 · File d'attente"),
+    ("B", 4.00,  5.00,  6.35, "2 · Clients en attente"),
     ("C", 9.00,  10.50, 6.80, "3 · Réservations du jour"),
     ("D", 11.50, 13.00, 5.28, None),
-    ("E", 18.00, 20.00, 5.75, "Vue d'ensemble"),
+    ("E", 18.00, 20.00, 5.75, "Vue globale"),
 ]
 INTRO_D, OUTRO_D = 5.80, 6.20
 
