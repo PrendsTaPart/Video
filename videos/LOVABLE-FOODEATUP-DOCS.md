@@ -32,11 +32,16 @@ référence de planification.
 
 ## Identifiants du projet
 
-- **Workspace Lovable** : `Contact.prendstapart` (id `NetRd8k1jtiPYJO1Jlaz`) — c'est le
-  workspace "PrendsTaPart" demandé par Michael (le nom exact affiché diffère légèrement de
-  celui qu'il a donné à l'oral, mais c'est le seul workspace de ce compte qui correspond à
-  la marque PrendsTaPart, rôle *owner*).
-- **Project ID** : `55ff35b7-c442-42c4-950c-8c7fd420c645`
+- **Workspace Lovable** : `Braindcode` (id `7gbZqk6lsnITUluFMgSc`) — **changé le 2026-08-06 sur
+  demande explicite de Michael** ("le workplace a changer c'est BraindCode"). Le projet
+  `55ff35b7-c442-42c4-950c-8c7fd420c645` (FoodEatUp Academy) est resté le même, seul son
+  workspace de rattachement a changé — confirmé via `mcp__Lovable__list_projects` sur ce
+  workspace, même `project_id`, même URL `foodeatup-guide-star.lovable.app`. L'ancien
+  workspace `Contact.prendstapart` (id `NetRd8k1jtiPYJO1Jlaz`) ne doit plus être utilisé pour
+  ce projet — ne pas y chercher `55ff35b7-...`, il n'y apparaît plus. Attention : ce compte a
+  de très nombreux workspaces nommés "BraindCode"/"Braindcode X" (variantes numérotées, la
+  plupart vides ou `free`) — le bon est celui avec 128 projets en plan `business`.
+- **Project ID** : `55ff35b7-c442-42c4-950c-8c7fd420c645` (inchangé)
 - **Nom du projet** (auto-généré par Lovable) : *FoodEatUp Academy*
 - **Preview** : https://id-preview--55ff35b7-c442-42c4-950c-8c7fd420c645.lovable.app
 - **Éditeur Lovable** : https://lovable.dev/projects/55ff35b7-c442-42c4-950c-8c7fd420c645
@@ -445,3 +450,4 @@ d'ajouter une entrée, pour ne pas créer de doublon (vérifié pour celle-ci).
 > tutoriel n'existe pas encore, plutôt que de se fier à ce tableau seul.
 | 11 | HACCP | Relevé de température des équipements | `relever-une-temperature-equipement` | **oui, 3 prompts** — `add_temperature`. Vidéo produite à partir des 3 intrants fournis (carte intro, carte outro, screen recording HACCP > Températures : Frigo 5 6°C→9°C, non-conformité auto-détectée vs seuil 4°C). Fiche Lovable préexistante (plus riche, 8 étapes + 3 claudePrompts) mise à jour avec les vraies URLs vidéo/vignette + durée 38s ; premier `claudePrompt` réaligné sur le texte affiché à l'écran dans la vidéo. Validée et publiée le 2026-08-04 (RapidoCMS + LinkedIn 2026-09-09 16h — rotation pleine jusque-là + Lovable) |
 | 11 | HACCP | Traçabilité complète (sélection produit, lot, DLC, remarques) | `creer-une-tracabilite-complete` | **oui** — `create_haccp_tracabilite` (`type="complete"`). Validée par Michael le 2026-08-04 (`videos/foodeatup-tracabilite-complete-tuto/` — dossier renommé lors de la fusion des branches le 2026-08-04, collision avec un autre tutoriel `foodeatup-tracabilite-tuto` déjà présent : « Historique de la production et traçabilité » ; 52,2 s, voix Adam FR). Publiée : RapidoCMS (`foodeatup-tracabilite-tuto-v1` / `foodeatup-tracabilite-tuto-thumbnail`) + Lovable (`src/data/tutorials.ts`, commit `82b5ca2`, juste après `creer-une-tracabilite-simplifiee`). **LinkedIn pas encore programmé** — planning du compte FoodEatUp déjà rempli jusqu'au 2026-08-25 par ailleurs (voir `SUIVI-157-TUTORIELS.md`, risque de collision de créneau constaté). |
+| 33 | **Agent IA Caroline** *(nouveau module, première vidéo)* | 06 · Appels & réservations | `tenir-ses-reservations-au-quotidien` | **oui** — `create_reservation` (point d'entrée du flux ; `confirm_reservation`/`checkin_reservation` couvrent la suite mais non repris dans le prompt pour rester simple). Rush (78,29 s) : créer une réservation (nom/téléphone/email/créneau/couverts) → assigner la table T9 → elle apparaît en liste + sur le plan de salle → menu d'action « Confirmer » (table → Réservée) → menu d'action « Check-in » (toast commande créée automatiquement, table → Occupée). Remplace une fiche stub préexistante sur Lovable (module `caroline-ia`, `section: "Appels & réservations"`, `order: 6`, déjà en place avant cette session — champs conservés). `videos/foodeatup-reservations-tuto/` (branche `claude/foodeatup-video-tutorials-tjscva`, commit `d2371c1`). Checklist de compatibilité passée (H.264 High/yuv420p, AAC 48kHz stéréo, faststart, peak -7,2 dBFS). Script + vidéo validés par Michael le 2026-08-06. Publiée le 2026-08-06 : RapidoCMS (`foodeatup-reservations-tuto-v1` / `foodeatup-reservations-tuto-thumbnail`), LinkedIn programmé 2026-08-29 07h (rotation FoodEatUp pleine jusque fin août — au moins deux autres sessions publient en parallèle sur ce même module, voir `job_id` 655/656 du 2026-08-06 sur `list_scheduled_posts`, à surveiller pour collision), Lovable (`src/data/tutorials.ts`, commit `630d78e`) — workspace **Braindcode** (voir note plus haut, changement du 2026-08-06). |

@@ -23,7 +23,7 @@ les occurrences de `moduleSlug: "<slug>"` dans `tutorials.ts` (via
 | `hubrise-livraisons` | HubRise & Livraisons | 1 | 4 | 3 |
 | `site-web-vitrine` | Site Web & Vitrine | 0 | 8 | 8 |
 | `caisse-pos` | Caisse POS & Matériel | 0 | 7 | 7 |
-| `caroline-ia` | Agent IA Caroline | 0 | 6 | 6 |
+| `caroline-ia` | Agent IA Caroline | 1 | 6 | 5 |
 | `reservation-salle` | Réservations & Plan de salle | 0 | 5 | 5 |
 | `marketing-fidelite` | Marketing, Fidélité & Iris | 0 | 24 | 24 |
 | `service-commande` | Service Multi-Canal | 0 | 3 | 3 |
@@ -33,6 +33,13 @@ les occurrences de `moduleSlug: "<slug>"` dans `tutorials.ts` (via
 `configuration` dépasse son `expectedCount` d'origine (15 publiés pour 14
 attendus) — le chiffre attendu est une estimation de départ, pas un plafond ;
 ne pas bloquer dessus.
+
+## Ajoutés cette session (2026-08-06)
+
+- `tenir-ses-reservations-au-quotidien` — module `caroline-ia` (première vidéo du module ;
+  create_reservation, confirm_reservation, checkin_reservation). Workspace Lovable devenu
+  **Braindcode** (id `7gbZqk6lsnITUluFMgSc`) le 2026-08-06, même `project_id` — voir
+  `LOVABLE-FOODEATUP-DOCS.md`.
 
 ## Ajoutés cette session (2026-08-04)
 

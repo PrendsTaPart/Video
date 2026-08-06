@@ -113,6 +113,9 @@ N9 réutilisée telle quelle depuis `foodeatup-reception-ean-dlc-tuto/vo/N8.mp3`
 faststart (`moov` avant `mdat`), 0 erreur de décodage, peak -7,2 dBFS. Vignette YouTube générée
 depuis `assets/intro.jpg` sans recadrage créatif (`out/thumbnail-youtube.jpg`, 1280x720).
 
-**En attente de validation avant publication** (règle du 2026-08-02,
-`videos/LOVABLE-FOODEATUP-DOCS.md`) : pas d'upload RapidoCMS/LinkedIn, pas d'envoi du prompt
-Lovable, pas de mise à jour du tableau de suivi tant que la vidéo n'a pas été revue par Michael.
+**Publiée le 2026-08-06** (validation de Michael reçue) : RapidoCMS (vidéo + vignette uploadées
+sur S3), LinkedIn programmé sur le compte FoodEatUp le 2026-08-29 07h (rotation pleine jusque
+fin août), et Lovable (`src/data/tutorials.ts`, module `caroline-ia`, commit `630d78e` — a
+remplacé une fiche stub déjà en place, mêmes `slug`/`section`/`order`). Voir l'entrée #33 dans
+`videos/LOVABLE-FOODEATUP-DOCS.md` pour le détail complet. Workspace Lovable **Braindcode**
+(changé le 2026-08-06, même `project_id`).
