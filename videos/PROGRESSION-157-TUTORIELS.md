@@ -72,3 +72,16 @@ publient en parallèle). Ne pas recalculer ce tableau à la main sans relire
   → Fire Service, prompt Claude `get_station_load`. Fiche enrichie sur demande
   explicite (bump/temps réel/synchronisation Pass détaillés dans `howItWorks`
   et `chefTip`). Voir `videos/foodeatup-kds-par-poste-tuto/SCRIPT.md`.
+- `retrouver-ses-reservations-du-jour` — module `reservation-salle` (1/5, n'est
+  donc plus à zéro). Mise à jour d'une fiche placeholder déjà présente : plan de
+  salle temps réel + file d'attente + réservations du jour centralisés sur un
+  seul écran, prompt Claude `list_reservations`. Voir
+  `videos/foodeatup-reservations-jour-tuto/SCRIPT.md`.
+
+## Note workspace Lovable (2026-08-06)
+
+Michael a confirmé que le workspace correct pour ce projet est **`Braindcode`**
+(id `7gbZqk6lsnITUluFMgSc`), pas "Contact.prendstapart" comme documenté
+précédemment. Sans impact opérationnel : toutes les publications de ce dépôt
+adressent le projet par `project_id` (`55ff35b7-c442-42c4-950c-8c7fd420c645`),
+pas par workspace — voir `LOVABLE-FOODEATUP-DOCS.md` pour le détail.

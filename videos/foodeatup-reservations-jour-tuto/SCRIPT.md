@@ -1,6 +1,9 @@
 # Tutoriel — Retrouver ses réservations du jour
 
-**STATUT : BROUILLON — en attente de validation avant génération de la voix off.**
+**STATUT : PUBLIÉ (2026-08-06)** — validé par Michael, monté (v1, 50,8s), archivé sur
+RapidoCMS et ajouté sur Lovable FoodEatUp Academy (mise à jour de la fiche placeholder
+`retrouver-ses-reservations-du-jour` déjà présente, module `reservation-salle`,
+premier tutoriel du module). LinkedIn non demandé.
 
 Module 6b « Réservations & Plan de salle » (`reservation-salle`, catégorie
 `caroline-reservation`), item **01/05** du catalogue : « Retrouver ses réservations
