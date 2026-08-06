@@ -83,5 +83,25 @@ occupée ») et crée la commande sur place."* — paramètres `establishment_id
 
 ## Statut
 
-**v1 — en attente de validation avant génération ElevenLabs et montage**
-(règle STOP du workflow — script plus court cette fois, mais même règle).
+**v1 livrée.** Script validé par Michael (2026-08-06).
+
+Durée livrée : **38,44 s** — H.264 High/yuv420p 1920x828 25fps, AAC 48 kHz
+stéréo, faststart. Audio : true peak **-7,3 dBFS** (mesuré sur le MP4 final).
+
+Offsets VO mesurés (`offsets:` de `build.py`, zéro dérive) :
+
+| # | Offset | Durée |
+|---|---:|---:|
+| N0 | 0,30 s | 4,00 s |
+| N1 | 4,52 s | 6,16 s |
+| N2 | 10,90 s | 3,37 s |
+| N3 | 14,49 s | 3,47 s |
+| N4 | 18,19 s | 5,46 s |
+| N5 | 23,87 s | 4,41 s |
+| N6 | 28,50 s | 3,89 s |
+| N7 | 32,61 s | 5,02 s |
+
+Outro auto-étendue de 6,20 s → 7,99 s pour absorber la fin de N7.
+
+Livrables : `out/foodeatup-placer-un-client-a-table-tuto-v1.mp4` +
+`out/thumbnail-youtube.jpg` (recadrage neutre de `assets/intro.jpg`).
