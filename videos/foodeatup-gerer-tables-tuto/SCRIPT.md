@@ -106,6 +106,18 @@ affiché)** :
 
 ## Statut
 
-**Script en attente de validation (règle `LOVABLE-FOODEATUP-DOCS.md` §"Règle de
-validation" / `FOODEATUP-TUTORIELS-WORKFLOW.md` étape 3) : STOP obligatoire avant génération
-VO (ElevenLabs) et montage.** Aucun audio généré, aucun montage lancé.
+Montage terminé : durée livrée **63,40 s** — H.264/yuv420p 1920x828, AAC 48 kHz stéréo,
+faststart confirmé. VO générée pour N0-N5 et N7 (Adam FR, ElevenLabs) ; N6 et N8 réutilisés
+tels quels (texte identique, zéro coût). Peak audio final **-7,21 dBFS** (`astats`), aucun
+écrêtage. Bug rencontré et corrigé pendant le montage : le zoom-punch du segment final
+("Bloquée → Libre") couvrait toute la fin du rush (57,45→64,09 s source) alors que la page
+défile et revient en haut d'écran sur les 2 dernières secondes — même piège que documenté
+dans `FOODEATUP-TUTORIELS-WORKFLOW.md` ("ne pas supposer un bouton immobile d'un bout à
+l'autre du rush"), corrigé en recadrant la source du segment à 57,45→62,00 s (juste après la
+confirmation visuelle du retour à Libre, avant que la page ne défile). Vérification visuelle
+faite sur bandeaux (lisibles), zoom-punch (cadrage correct sur toute sa durée après
+correction), séquence Claude (3 étages corrects), première/dernière frame (cartes intro/outro).
+
+**STOP obligatoire (règle `LOVABLE-FOODEATUP-DOCS.md` §"Règle de validation") : vidéo livrée
+pour validation. Pas de publication (RapidoCMS, LinkedIn, Lovable) tant qu'un retour OK
+explicite n'est pas reçu.**
