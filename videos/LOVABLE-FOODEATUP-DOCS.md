@@ -1,5 +1,55 @@
 # FoodEatUp Academy — site de documentation Lovable (mémoire du projet)
 
+## Migration hébergement GitHub raw → RapidoCMS S3 (2026-08-06)
+
+Audit du dépôt (`videos/foodeatup-*-tuto/out/*.mp4`, 90 vidéos rendues) croisé avec
+`src/data/tutorials.ts` : 89/90 déjà publiées (certaines sous un nom d'URL différent du
+nom de dossier, suite aux renommages documentés lors des fusions de branches). Une seule
+absente de fait : `foodeatup-nettoyage-actions-tuto` — la fiche du même sujet
+(`pointer-ses-actions-de-nettoyage`) pointait vers le montage d'une **autre branche**
+(`foodeatup-nettoyage-tuto`, branche `...-buhrdu`), pas vers le rendu de ce dépôt.
+
+En plus de ce cas, **60 fiches** de `tutorials.ts` (116 URLs vidéo+vignette) pointaient
+encore vers des URLs GitHub raw temporaires (branches de travail diverses : `n04713`,
+`difgjz`, `vn7udf`, `buhrdu`, `xcm8uz`, `gddrek`, `qtwswo`, `c52fkn`, `rdu0k9`, `fjmsqz`,
+`avgyzn`, `u4ljhv`, `6hna9b`, `xkz86w`, `kvrhtf`, `o6l2ea`, `i2rrhv`, `3uthjr`, `zqtpn1`,
+`2z3kid`, `ky005u`, `8ddbi5`, `4qnhnz`, `ncql3u`, `mx3ez2`, un commit SHA nu) — fragile
+(cassera si ces branches sont un jour supprimées), conformément à l'avertissement déjà
+noté ailleurs dans ce fichier ("à remplacer dès que le connecteur RapidoCMS est
+disponible").
+
+**Migration effectuée** : chaque fichier (vidéo + vignette, quelle que soit la branche
+source) re-uploadé sur RapidoCMS (`mcp__RapidoCMS__upload_file_tool`, nommé
+`<slug>-v1`/`<slug>-thumbnail`), puis un script Python envoyé à l'agent Lovable
+(`code--exec`) a remplacé en une passe les 116 anciennes URLs par les nouvelles URLs S3
+dans `tutorials.ts` (find-and-replace exact, aucune autre logique). Deux fiches
+(`creer-un-devis`, `saisir-ses-depenses-fournisseur`) avaient déjà une vignette hébergée
+nativement par Lovable (`/__l5e/assets-v1/...`) — laissée telle quelle, seule la vidéo a
+été migrée pour ces deux-là.
+
+**Cas `pointer-ses-actions-de-nettoyage`** : au lieu de re-migrer la vidéo de l'autre
+branche (qui aurait perpétué le mauvais lien), la vraie vidéo de ce dépôt
+(`foodeatup-nettoyage-actions-tuto`, 46,52 s) a été uploadée sous le nom
+`pointer-ses-actions-de-nettoyage-v1`/`-thumbnail` et substituée à l'ancienne, avec
+`durationSeconds` corrigé à 47.
+
+Script envoyé le 2026-08-06 (message Lovable ~37 Ko, timeout client à 60s comme prévenu
+plus bas dans ce fichier — ne pas renvoyer en double, vérifier via `get_project`/
+`list_messages` avant de reproposer).
+
+**Résultat (vérifié)** : 116 URLs remplacées, typecheck OK, commit `95bd44c0`.
+L'agent Lovable a lui-même détecté un doublon dans le script (deux fiches,
+`installer-son-restaurant-avec-le-configurateur` et `configurer-sa-boutique-avec-predibot`,
+partagent la même vidéo source `foodeatup-configurateur-cas-usage-tuto` — le premier
+`str.replace` avait donc déjà consommé les deux occurrences avant la deuxième règle,
+laissant les deux fiches sur la même URL S3) et corrigé la seconde fiche à la main
+(`configurer-sa-boutique-avec-predibot-v1`/`-thumbnail`). Vérifié après coup par lecture
+directe de `tutorials.ts` : les 60 fiches ciblées n'ont plus aucune URL
+`raw.githubusercontent.com`, `pointer-ses-actions-de-nettoyage` pointe bien vers notre
+propre vidéo (`durationSeconds: 47`). Il reste 46 références GitHub raw dans le fichier
+sur des fiches ajoutées par d'autres sessions après cet audit — hors périmètre de cette
+passe, à reprendre dans une prochaine migration.
+
 **À relire à chaque nouvelle vidéo produite.** Ce fichier documente le site Lovable qui
 héberge la série de **157 tutoriels FoodEatUp** (somme des `expectedCount` du tableau
 `modules` de `src/data/tutorials.ts` — voir le calcul dans
