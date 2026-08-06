@@ -1,6 +1,10 @@
 # Tutoriel — Afficher le KDS par poste
 
-**STATUT : BROUILLON — en attente de validation avant génération de la voix off.**
+**STATUT : PUBLIÉ (2026-08-06)** — validé par Michael, monté (v1, 49,2s), archivé sur
+RapidoCMS et ajouté sur Lovable FoodEatUp Academy (mise à jour de la fiche placeholder
+`afficher-le-kds-par-poste` déjà présente, module `kds-cuisine`). Fiche enrichie sur
+demande explicite (explication du bump, du temps réel, et de la synchronisation des
+postes sur le Pass — voir `howItWorks`/`chefTip` ci-dessous). LinkedIn non demandé.
 
 Module 7b « Écran Cuisine (KDS) » (`kds-cuisine`, catégorie `service-kds`), item **02/03**
 du catalogue (`videos/CATALOGUE-157-TUTORIELS.md`) : « Afficher le KDS par poste ».
@@ -66,15 +70,27 @@ actifs par poste) et correspond exactement à l'action de consultation montrée 
 > pass ne voit que ce qui doit partir en salle — moins de bruit visuel, moins
 > d'erreurs de service en coup de feu.
 
-## À faire une fois le script validé
+## Réalisé
 
-1. Générer N0-N7 via ElevenLabs (voix Adam FR), réutiliser N8.mp3 existant.
-2. Monter `build.py` — zoom-punch sur le clic « Ouvrir l'écran », coupure de
-   scène (slideleft) au tab switch, retimer les segments sur les VO mesurées
-   (ne pas répéter le bug de drift déjà rencontré sur `fidelite-multicanal-tuto`).
-   Réutiliser directement le `banner()` corrigé (2 `drawtext`, pas `drawbox`+`t`).
-3. Rendre le MP4 + vignette YouTube (= `assets/intro.jpg`, redimensionnée si besoin).
-4. **STOP obligatoire** — livrer à Michael pour validation avant toute publication.
-5. Après OK : upload RapidoCMS, mise à jour de la fiche Lovable
-   `afficher-le-kds-par-poste` (déjà en placeholder), mise à jour de
-   `PROGRESSION-157-TUTORIELS.md` / `LOVABLE-FOODEATUP-DOCS.md`, push GitHub.
+1. VO ElevenLabs (Adam FR), N8 réutilisée depuis `foodeatup-qrcode-tuto/vo/N8.mp3`.
+2. `build.py` : le même bug de drift voix/image que `fidelite-multicanal-tuto`
+   est réapparu au premier rendu (segments trop courts par rapport aux VO
+   mesurées — N5/N6 tombaient dans la séquence Claude au lieu de Froid/du
+   reveal). Corrigé en calculant précisément les cibles de segment à partir des
+   offsets voix "purs" (chaîne séquentielle GAP=0,22s), pas en devinant :
+   `INTRO=7.18, A=5.78, B=0.90 (punch), C=8.90 (absorbe la fin de N2 + tout N3),
+   D=5.28, E=6.25, CLAUDE_STAGE_D=[3.40,2.77,4.61]`. Vérifié image par image
+   après coup sur chaque ancrage — zéro dérive. `banner()` réutilisait déjà le
+   pattern corrigé (2 `drawtext`) dès la première passe.
+3. Rendu final : `out/foodeatup-kds-par-poste-tuto-v1.mp4` (49,2s, peak audio
+   -7,3dBFS). Vignette = `assets/intro.jpg` redimensionnée 1280x720.
+4. Livré à Michael (STOP respecté) → validé, publication autorisée, avec demande
+   explicite d'enrichir la fiche : expliquer le bump, le temps réel, et la
+   synchronisation des postes sur le Pass.
+5. Publication : RapidoCMS (vidéo + vignette), fiche Lovable
+   `afficher-le-kds-par-poste` mise à jour en place avec un `howItWorks` étendu
+   (6 étapes, dont le mécanisme bump/Fire Service) et un `chefTip` dédié
+   (bump = "prêt et transmis" au poste amont, pas "servi" ; Fire Service = envoi
+   réel en salle ; un ticket reste bloqué au Pass tant qu'un poste n'a pas
+   bumpé son plat — anti-commande-incomplète). `PROGRESSION-157-TUTORIELS.md` /
+   `LOVABLE-FOODEATUP-DOCS.md` mis à jour, tout poussé sur GitHub.

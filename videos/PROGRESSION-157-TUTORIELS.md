@@ -63,3 +63,12 @@ publient en parallèle). Ne pas recalculer ce tableau à la main sans relire
   créé) : programme de fidélité configuré une fois puis instantanément actif sur
   tous les canaux de vente, prompt Claude `update_loyalty_program`. Voir
   `videos/foodeatup-fidelite-multicanal-tuto/SCRIPT.md`.
+
+## Ajouté le 2026-08-06
+
+- `afficher-le-kds-par-poste` — module `kds-cuisine` (2/3 tutoriels du module).
+  Mise à jour d'une fiche placeholder déjà présente sur Lovable : chaque poste
+  de cuisine (chaud/pass/froid) a son écran filtré, temps réel, mécanisme bump
+  → Fire Service, prompt Claude `get_station_load`. Fiche enrichie sur demande
+  explicite (bump/temps réel/synchronisation Pass détaillés dans `howItWorks`
+  et `chefTip`). Voir `videos/foodeatup-kds-par-poste-tuto/SCRIPT.md`.
