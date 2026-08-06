@@ -19,7 +19,7 @@ les occurrences de `moduleSlug: "<slug>"` dans `tutorials.ts` (via
 | `configuration` | Configuration Boutique | 15 | 14 | ✅ dépassé (+1) |
 | `comptabilite` | Comptabilité & Achats | 10 | 10 | ✅ complet |
 | `stockvision-ai` | StockVision AI | 7 | 20 | 13 |
-| `predibot` | PrediBot (Agent IA Directeur) | 2 | 3 | 1 |
+| `predibot` | PrediBot (Agent IA Directeur) | 3 | 3 | ✅ complet |
 | `hubrise-livraisons` | HubRise & Livraisons | 1 | 4 | 3 |
 | `site-web-vitrine` | Site Web & Vitrine | 0 | 8 | 8 |
 | `caisse-pos` | Caisse POS & Matériel | 0 | 7 | 7 |
@@ -41,6 +41,16 @@ ne pas bloquer dessus.
 - `creer-sa-fiche-plat-pour-production` — module `haccp` (créer un plat +
   ingrédients + date/quantité de production, prompts Claude `create_recipe` +
   `create_production_plan`).
+
+## Ajouté le 2026-08-06
+
+- `lire-ses-previsions-predibot` — module `predibot` (tour du tableau de bord
+  PrediBot : Prédictions de stock, Prévisions de commandes, Production
+  recommandée — 42 s). Complète le module `predibot` (3/3). Pas de
+  `claudePrompt` : aucun outil `mcp__Foodeatup__*` ne reproduit une prédiction
+  IA en lecture seule (voir `videos/foodeatup-predibot-previsions-tuto/SCRIPT.md`).
+  Publié directement sur la fiche placeholder déjà présente dans
+  `tutorials.ts` (même slug) — pas de doublon créé.
 
 ## Modules à zéro tutoriel — prioriser si on veut couvrir toute la série
 
