@@ -26,9 +26,9 @@ les occurrences de `moduleSlug: "<slug>"` dans `tutorials.ts` (via
 | `caroline-ia` | Agent IA Caroline | 0 | 6 | 6 |
 | `reservation-salle` | Réservations & Plan de salle | 0 | 5 | 5 |
 | `marketing-fidelite` | Marketing, Fidélité & Iris | 0 | 24 | 24 |
-| `service-commande` | Service Multi-Canal | 0 | 3 | 3 |
+| `service-commande` | Service Multi-Canal | 1 | 3 | 2 |
 | `kds-cuisine` | Écran Cuisine (KDS) | 0 | 3 | 3 |
-| **Total** | | **71** | **157** | **86** |
+| **Total** | | **72** | **157** | **85** |
 
 `configuration` dépasse son `expectedCount` d'origine (15 publiés pour 14
 attendus) — le chiffre attendu est une estimation de départ, pas un plafond ;
@@ -41,6 +41,15 @@ ne pas bloquer dessus.
 - `creer-sa-fiche-plat-pour-production` — module `haccp` (créer un plat +
   ingrédients + date/quantité de production, prompts Claude `create_recipe` +
   `create_production_plan`).
+
+## Ajouté le 2026-08-06
+
+- `commander-qr-code` — module `service-commande` (plan de salle → QR code de
+  la table → commande client → paiement carte, prompt Claude `create_order`).
+  Vidéo : `videos/foodeatup-commander-qrcode-tuto/`. Seul ce module a été
+  recompté ; le reste du tableau ci-dessus reste un instantané du 2026-08-04
+  (peut être en retard sur `tutorials.ts`, voir avertissement en tête de
+  fichier).
 
 ## Modules à zéro tutoriel — prioriser si on veut couvrir toute la série
 
