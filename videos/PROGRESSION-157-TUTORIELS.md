@@ -58,9 +58,8 @@ rush fourni par Michael.
   Ma Vitrine > Horaires d'ouverture → case du jour cochée → Enregistrer →
   réservation acceptée ; prompt Claude `reservation_availability`). Vidéo
   montée et vérifiée, RapidoCMS uploadé, commit/push fait sur
-  `claude/foodeatup-video-tutorials-5bfibs`. **Fiche Lovable non mise à jour
-  — workspace Lovable à court de crédits au moment de l'envoi
-  (`mcp__Lovable__send_message` a échoué explicitement avec "workspace is
-  out of credits", pas de contenu halluciné) — à renvoyer dès que les
-  crédits sont réapprovisionnés, voir `LOVABLE-FOODEATUP-DOCS.md` ligne 33
-  pour le bloc complet.**
+  `claude/foodeatup-video-tutorials-5bfibs`. **Fiche Lovable publiée** —
+  premier envoi refusé (workspace `Contact.prendstapart` à court de
+  crédits), Michael a rattaché le projet au workspace `Braindcode`
+  (crédits business dispo), renvoi réussi (commit Lovable `899c30d9`).
+  Module `caroline-ia` : 1/6 tutoriels avec vidéo réelle.
