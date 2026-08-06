@@ -1,5 +1,16 @@
 # 📊 Rapport vidéos — état de production (2026-07-11)
 
+## Mise à jour 2026-08-06
+
+Nouveau tutoriel FoodEatUp Academy : **Configurer Caroline (voix & prompts)**
+(`videos/foodeatup-caroline-voix-tuto/`) — premier du module `caroline-ia`
+(0/6 → 1/6). Script + voix ElevenLabs (Adam FR) + montage + vignette, publié
+sur RapidoCMS, programmé LinkedIn/Facebook FoodEatUp le 2026-08-21 07h
+(rotation pleine jusqu'au 2026-08-20), et ajouté sur Lovable (remplace le
+placeholder préexistant du module). Voir `videos/PROGRESSION-157-TUTORIELS.md`
+pour le suivi 157 tutoriels et `videos/LOVABLE-FOODEATUP-DOCS.md` pour la
+fiche complète.
+
 ## 1) Total réalisé
 **~34 fichiers vidéo rendus** (≈ 25 contenus uniques, certains en 2 formats 16:9 + 9:16).
 
