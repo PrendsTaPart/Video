@@ -107,5 +107,12 @@ séquence Claude 3 temps (module partagé `videos/_shared/claude_prompt_sequence
 
 ## Statut
 
-**Script en attente de validation (STOP obligatoire, `FOODEATUP-TUTORIELS-WORKFLOW.md` étape 3)
-— aucune génération ElevenLabs, aucun montage tant que le texte ci-dessus n'est pas confirmé.**
+Script validé par Michael le 2026-08-06. VO générée (ElevenLabs, Adam FR `TGAegA0zNRi8I6nUdq3i`,
+N9 réutilisée telle quelle depuis `foodeatup-reception-ean-dlc-tuto/vo/N8.mp3`). Montage terminé
+(`build.py`) et checklist de compatibilité passée : H.264 High/yuv420p, AAC 48 kHz stéréo,
+faststart (`moov` avant `mdat`), 0 erreur de décodage, peak -7,2 dBFS. Vignette YouTube générée
+depuis `assets/intro.jpg` sans recadrage créatif (`out/thumbnail-youtube.jpg`, 1280x720).
+
+**En attente de validation avant publication** (règle du 2026-08-02,
+`videos/LOVABLE-FOODEATUP-DOCS.md`) : pas d'upload RapidoCMS/LinkedIn, pas d'envoi du prompt
+Lovable, pas de mise à jour du tableau de suivi tant que la vidéo n'a pas été revue par Michael.
