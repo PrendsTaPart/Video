@@ -37,8 +37,18 @@ MAPPING = {
     # retombe sur un personnage existant plutôt que sur un placeholder.
     "boucle-06-communication":         {"probleme": "surstock-clients-muets", "resultat": "commerciale-chef"},
     "boucle-07-fidelite":              {"probleme": "clients-qui-ne-reviennent-pas", "resultat": "equipe-tablette"},
+
     "boucle-08-comptabilite":          {"probleme": "compta-chaos",        "resultat": "chef-desk-calm"},
 }
+
+# Le détourage par remplissage depuis les bords suppose un sujet isolé sur du
+# blanc. Une image dont le SUJET est pâle et fondu dans le fond (les silhouettes
+# fantômes des clients qui ne reviennent pas, la salle vide en arrière-plan) y
+# perdrait justement ce qu'elle raconte. Pour celles-là on teinte : chaque pixel
+# est multiplié par le crème de la charte, si bien que le blanc pur devient
+# exactement le fond de page et disparaît, pendant que tout le reste survit.
+TEINTER = {"clients-qui-ne-reviennent-pas"}
+CREME = (252, 249, 230)
 
 # Les images générées ont un fond quasi blanc, mais pas exactement #FFFFFF
 # (compression, léger dégradé). 26 attrape le fond sans mordre sur la toque
@@ -86,14 +96,26 @@ def detourer(im: Image.Image) -> Image.Image:
     return im
 
 
+def teinter(im: Image.Image) -> Image.Image:
+    """Multiplie l'image par le crème de la charte : le blanc pur devient le fond
+    de page exact, donc invisible, sans toucher à l'alpha."""
+    im = im.convert("RGB")
+    r, g, b = im.split()
+    canaux = [c.point(lambda v, k=k: round(v * k / 255)) for c, k in zip((r, g, b), CREME)]
+    return Image.merge("RGB", canaux).convert("RGBA")
+
+
 def traiter(nom: str) -> pathlib.Path | None:
     src = SRC / f"{nom}.png"
     if not src.exists():
         return None
-    im = detourer(Image.open(src))
-    bbox = im.getchannel("A").getbbox()
-    if bbox:
-        im = im.crop(bbox)
+    if nom in TEINTER:
+        im = teinter(Image.open(src))
+    else:
+        im = detourer(Image.open(src))
+        bbox = im.getchannel("A").getbbox()
+        if bbox:
+            im = im.crop(bbox)
     ratio = HAUTEUR_CIBLE / im.height
     if ratio < 1:
         im = im.resize((round(im.width * ratio), HAUTEUR_CIBLE), Image.LANCZOS)

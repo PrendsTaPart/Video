@@ -43,6 +43,9 @@
   --illu-bas: -30px;
   --illu-h: 780px;
   --colonne-texte: 1180px;
+  --plan-justify: center;
+  --pad-haut: 110px;
+  --illu-gauche: auto;
 }
 /* Charte Academy — aucune couleur hors palette.
    crème #FCF9E6 · marine #0F1A23 · bleu #007BFF · bleu système #147AFF · orange #FFA500
@@ -77,12 +80,15 @@ html, body {
   overflow: hidden;
 }
 
-/* Un plan occupe toute la scène ; `render(t)` pilote opacity/visibility. */
+/* Un plan occupe toute la scène ; `render(t)` pilote opacity/visibility.
+   En 16:9 le contenu est centré verticalement ; en 9:16 il est calé en haut,
+   pour laisser le bas du cadre au personnage. */
 .plan {
   position: absolute; inset: 0;
   display: flex; flex-direction: column;
-  justify-content: center;
+  justify-content: var(--plan-justify);
   padding: var(--pad);
+  padding-top: var(--pad-haut);
   opacity: 0;
   will-change: opacity, transform;
 }
@@ -403,8 +409,10 @@ html, body {
 .illu {
   position: absolute;
   right: var(--illu-droite);
+  left: var(--illu-gauche);
   bottom: var(--illu-bas);
   height: var(--illu-h);
+  display: flex; justify-content: center;
   will-change: opacity, transform;
   pointer-events: none;
 }
