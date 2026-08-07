@@ -326,8 +326,12 @@
       tl.to("#bar-9", { width: "58%", duration: 0.75, ease: "power2.inOut" }, 21.28);
       tl.to("#bar-10", { width: "49%", duration: 0.75, ease: "power2.inOut" }, 21.60);
       tl.to("#bar-11", { width: "45%", duration: 0.75, ease: "power2.inOut" }, 21.92);
-      /* la plus basse et la plus haute se surlignent */
-      tl.to("#bar-0", { backgroundColor: "#007BFF", duration: 0.5, ease: "power2.out" }, 23.9);
+      /* la plus basse et la plus haute se surlignent.
+         Le minimum passe en MARINE, pas en accent #007BFF : à l'écran, l'accent est
+         indiscernable du bleu système #147AFF des onze autres barres — le surlignage
+         du meilleur magasin ne se voyait pas du tout (constaté au contrôle visuel).
+         Marine = la référence, orange = l'alerte : les deux extrêmes se lisent. */
+      tl.to("#bar-0", { backgroundColor: "#0F1A23", duration: 0.5, ease: "power2.out" }, 23.9);
       tl.to("#bar-6", { backgroundColor: "#FFA500", duration: 0.5, ease: "power2.out" }, 24.3);
       tl.to("#barrow-0 .bar-label", { color: "#0F1A23", duration: 0.5 }, 23.9);
       tl.to("#barrow-6 .bar-label", { color: "#0F1A23", duration: 0.5 }, 24.3);

@@ -424,8 +424,12 @@ def build() -> str:
       /* toutes alignées au départ : même prix de vente, même production.
          Puis chaque barre se déforme, une par une. */
       {js_bars}
-      /* la plus basse et la plus haute se surlignent */
-      tl.to("#bar-{I_MIN}", {{ backgroundColor: "{ACCENT}", duration: 0.5, ease: "power2.out" }}, {S2 + 8.9});
+      /* la plus basse et la plus haute se surlignent.
+         Le minimum passe en MARINE, pas en accent #007BFF : à l'écran, l'accent est
+         indiscernable du bleu système #147AFF des onze autres barres — le surlignage
+         du meilleur magasin ne se voyait pas du tout (constaté au contrôle visuel).
+         Marine = la référence, orange = l'alerte : les deux extrêmes se lisent. */
+      tl.to("#bar-{I_MIN}", {{ backgroundColor: "{MARINE}", duration: 0.5, ease: "power2.out" }}, {S2 + 8.9});
       tl.to("#bar-{I_MAX}", {{ backgroundColor: "{ORANGE}", duration: 0.5, ease: "power2.out" }}, {S2 + 9.3});
       tl.to("#barrow-{I_MIN} .bar-label", {{ color: "{MARINE}", duration: 0.5 }}, {S2 + 8.9});
       tl.to("#barrow-{I_MAX} .bar-label", {{ color: "{MARINE}", duration: 0.5 }}, {S2 + 9.3});
