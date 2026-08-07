@@ -5,23 +5,35 @@ Série de 9 vidéos (1 "principe" + 8 boucles) pour l'Academy FoodEatUp
 
 ## Décisions actées avec Michael (2026-08-07)
 
-- **Pipeline** : MCP `HyperFrames_by_HeyGen` (`compose` + `render_video`, paiant) +
-  MCP `ElevenLabs` (`text_to_speech`, payant) — PAS le pipeline local
-  ffmpeg/PIL de `videos/FOODEATUP-TUTORIELS-WORKFLOW.md` (qui régit une série
-  différente : tutoriels screen-recording produit). Pas non plus le pipeline
-  local `npx hyperframes` de `studio-video/` (Reels verticaux) : décision
-  explicite de Michael de suivre P0 tel quel malgré l'auto-désactivation
-  documentée du MCP pour les clients CLI — à vérifier au premier appel.
+- **Pipeline (confirmé, remplace la première décision)** : le MCP hébergé
+  `HyperFrames_by_HeyGen` (`compose`/`render_video`) est **désactivé** pour
+  cette session CLI (erreur reçue au premier appel réel, comme anticipé lors
+  de l'audit initial). Pipeline réel : compositions HyperFrames locales dans
+  `studio-video/compositions/boucle-NN-*/` (skills `npx skills add
+  heygen-com/hyperframes`, routage `/hyperframes` → `/general-video`,
+  rendu via `npx hyperframes render`, gratuit) + VO MCP `ElevenLabs`
+  (`text_to_speech`, payant, un appel par vidéo, préflight avant chaque
+  appel). `ffmpeg`/`ffprobe` installés dans l'environnement pour la QA
+  (extraction de frames) — absents par défaut.
 - **Palette** : crème `#FCF9E6` / marine `#0F1A23` / bleu `#007BFF`
   (+ bleu marketing `#147AFF` pour le schéma des boucles) / orange CTA
   `#FFA500` — voir `boucles.json`.
-- **Ordre de production** : Boucle 02 (Équipe) en premier (pilote), avant
-  la vidéo 0 et la Boucle 01.
+- **Ordre de production réel** : Boucle 02 (Équipe) en premier (pilote,
+  demandé explicitement), puis Boucle 03 (StockVisionAI, boucle pilier).
+  Vidéo 0 et Boucle 01 pas encore produites.
 - **Vignettes** : logo FoodEatUp (pas une frame extraite), voir
   `studio-video/assets/brand/logo-v2/`.
 - **Intégration Academy** : édition directe de `src/data/tutorials.ts` dans
   `foodeatup-guide-star` (accès dépôt direct) — pas de prompts à coller
   dans Lovable (L1-L4 de la doc d'origine remplacés par des commits directs).
+- **Visuels de plat/produit (règle ajoutée le 2026-08-07, vaut pour les 8
+  vidéos)** : quand un plan de storyboard met en scène un plat ou un produit
+  précis (le saumon en rupture, un burger, du poulet fermier...), ne jamais
+  se contenter d'une icône SVG générique — générer un vrai visuel via
+  `mcp__RapidoCMS__generate_image` (photographie culinaire propre, fond
+  neutre/blanc pour bien s'intégrer aux cartes) et le stocker dans
+  `studio-video/assets/brand/dishes/`. Réutiliser un visuel déjà généré
+  avant d'en regénérer un nouveau pour le même plat.
 
 ## Assets de marque réutilisables
 
@@ -54,6 +66,9 @@ lots transmis le 2026-08-07 étaient déjà présents dans le dépôt.
     FoodEatUp) pour illustrer un post marketing type sans jamais présenter
     un vrai client comme témoignage — à utiliser seulement si le plan 6/7
     d'une boucle a besoin d'un exemple de post, jamais présenté comme réel.
+  - `dishes/` — visuels de plats générés via RapidoCMS (voir règle ci-dessus).
+    `saumon.jpg` (Boucle 03, généré le 2026-08-07). À compléter au fil des
+    boucles : burger + poulet fermier probables pour la Boucle 01.
 - `third-party-logos/` — logos IA tiers (Claude, OpenAI, Mistral) pour les
   mentions factuelles des modèles utilisés.
 - `profile/michael-chef-mascot.jpg` — photo réelle de Michael en mascotte

@@ -1,0 +1,121 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+  </head>
+  <body>
+    <template>
+      <style>
+        @font-face {
+          font-family: "Fredoka";
+          src: url("assets/vendor/fonts/Fredoka-Variable.woff2") format("woff2-variations");
+          font-weight: 300 700;
+          font-display: block;
+        }
+        #root {
+          position: absolute;
+          inset: 0;
+          background: #fcf9e6;
+          overflow: hidden;
+          font-family: "Inter", sans-serif;
+        }
+        .header {
+          position: absolute;
+          top: 220px;
+          left: 0;
+          right: 0;
+          text-align: center;
+          font-family: "Fredoka", sans-serif;
+          font-weight: 700;
+          font-size: 40px;
+          color: #0f1a23;
+          opacity: 0;
+        }
+        .stat-row {
+          position: absolute;
+          top: 400px;
+          left: 60px;
+          right: 60px;
+          display: flex;
+          gap: 40px;
+          justify-content: center;
+        }
+        .stat-card {
+          width: 420px;
+          height: 340px;
+          background: #ffffff;
+          border: 3px solid #0f1a23;
+          border-radius: 24px;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          opacity: 0;
+          transform: scale(0.85);
+        }
+        .stat-value {
+          font-family: "Fredoka", sans-serif;
+          font-weight: 700;
+          font-size: 72px;
+          color: #007bff;
+          font-variant-numeric: tabular-nums;
+        }
+        .stat-label {
+          margin-top: 16px;
+          font-family: "Fredoka", sans-serif;
+          font-weight: 600;
+          font-size: 26px;
+          color: #0f1a23;
+          text-align: center;
+          padding: 0 30px;
+        }
+        .stat-card.highlight .stat-value {
+          color: #0f1a23;
+        }
+      </style>
+
+      <div
+        id="root"
+        data-composition-id="b01-scene6-resultat"
+        data-width="1920"
+        data-height="1080"
+        data-duration="9.99"
+      >
+        <div class="header" id="header">Votre burger, en direct</div>
+        <div class="stat-row" id="stat-row">
+          <div class="stat-card" id="stat-1">
+            <div class="stat-value">4,38 €</div>
+            <div class="stat-label">coût matière</div>
+          </div>
+          <div class="stat-card highlight" id="stat-2">
+            <div class="stat-value">9,62 €</div>
+            <div class="stat-label">marge</div>
+          </div>
+          <div class="stat-card" id="stat-3">
+            <div class="stat-value">68,7 %</div>
+            <div class="stat-label">taux de marge</div>
+          </div>
+          <div class="stat-card" id="stat-4">
+            <div class="stat-value">+0,41 €</div>
+            <div class="stat-label">vs mois dernier</div>
+          </div>
+        </div>
+      </div>
+
+      <script>
+        window.__timelines = window.__timelines || {};
+        const tl = gsap.timeline({ paused: true });
+
+        tl.fromTo("#header", { opacity: 0, y: -14 }, { opacity: 1, y: 0, duration: 0.45, ease: "power2.out" }, 0.1);
+        tl.fromTo(
+          ["#stat-1", "#stat-2", "#stat-3", "#stat-4"],
+          { opacity: 0, scale: 0.85, y: 20 },
+          { opacity: 1, scale: 1, y: 0, duration: 0.5, ease: "back.out(1.7)", stagger: 0.16 },
+          0.5
+        );
+
+        window.__timelines["b01-scene6-resultat"] = tl;
+      </script>
+    </template>
+  </body>
+</html>

@@ -1,0 +1,183 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+  </head>
+  <body>
+    <template>
+      <style>
+        @font-face {
+          font-family: "Fredoka";
+          src: url("assets/vendor/fonts/Fredoka-Variable.woff2") format("woff2-variations");
+          font-weight: 300 700;
+          font-display: block;
+        }
+        #root {
+          position: absolute;
+          inset: 0;
+          background: #fcf9e6;
+          overflow: hidden;
+          font-family: "Inter", sans-serif;
+        }
+        .eyebrow {
+          position: absolute;
+          top: 90px;
+          left: 0;
+          right: 0;
+          text-align: center;
+          font-family: "Fredoka", sans-serif;
+          font-weight: 600;
+          font-size: 34px;
+          letter-spacing: 0.02em;
+          color: #0f1a23;
+          opacity: 0;
+        }
+        .dish-card {
+          position: absolute;
+          left: 220px;
+          top: 260px;
+          width: 620px;
+          height: 600px;
+          background: #ffffff;
+          border: 3px solid #0f1a23;
+          border-radius: 28px;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          overflow: hidden;
+          opacity: 0;
+          transform: scale(0.85);
+        }
+        .dish-photo-wrap {
+          width: 100%;
+          height: 440px;
+          overflow: hidden;
+        }
+        .dish-photo {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          object-position: center 35%;
+        }
+        .dish-text {
+          padding: 20px 0 0 0;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+        }
+        .dish-name {
+          font-family: "Fredoka", sans-serif;
+          font-weight: 700;
+          font-size: 44px;
+          color: #0f1a23;
+        }
+        .price-tag {
+          position: absolute;
+          left: 24px;
+          top: 24px;
+          background: #007bff;
+          color: #fcf9e6;
+          font-family: "Fredoka", sans-serif;
+          font-weight: 700;
+          font-size: 40px;
+          padding: 10px 22px;
+          border-radius: 14px;
+          transform: scale(0);
+        }
+        .consequence {
+          position: absolute;
+          right: 200px;
+          top: 330px;
+          width: 660px;
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          opacity: 0;
+          transform: translateX(30px);
+        }
+        .cost-row {
+          display: flex;
+          align-items: baseline;
+          gap: 14px;
+        }
+        .cost-value {
+          font-family: "Fredoka", sans-serif;
+          font-weight: 700;
+          font-size: 100px;
+          color: #0f1a23;
+          font-variant-numeric: tabular-nums;
+          line-height: 1;
+        }
+        .cost-mark {
+          font-family: "Fredoka", sans-serif;
+          font-weight: 700;
+          font-size: 72px;
+          color: #0f1a23;
+          opacity: 0.4;
+        }
+        .cost-label {
+          margin-top: 10px;
+          font-family: "Fredoka", sans-serif;
+          font-weight: 600;
+          font-size: 30px;
+          color: #0f1a23;
+          opacity: 0.7;
+        }
+        .stale-note {
+          margin-top: 40px;
+          border: 2px dashed #0f1a23;
+          border-radius: 16px;
+          padding: 20px 28px;
+          font-size: 26px;
+          color: #0f1a23;
+          opacity: 0.75;
+          max-width: 600px;
+        }
+      </style>
+
+      <div
+        id="root"
+        data-composition-id="b01-scene1-probleme"
+        data-width="1920"
+        data-height="1080"
+        data-duration="14.10"
+      >
+        <div class="eyebrow" id="eyebrow">VOTRE CARTE, AUJOURD'HUI</div>
+
+        <div class="dish-card" id="dish-card">
+          <div class="price-tag" id="price-tag">14,00 €</div>
+          <div class="dish-photo-wrap">
+            <img class="dish-photo" src="assets/brand/dishes/burger.jpg" alt="Burger" />
+          </div>
+          <div class="dish-text">
+            <div class="dish-name">Burger maison</div>
+          </div>
+        </div>
+
+        <div class="consequence" id="consequence">
+          <div class="cost-row">
+            <div class="cost-value">4,00 €</div>
+            <div class="cost-mark">?</div>
+          </div>
+          <div class="cost-label">c'est ce que vous croyez qu'il vous coûte</div>
+          <div class="stale-note">Fiche jamais rouverte depuis 18 mois — le bœuf a bougé 3 fois cette année, le pain a augmenté en janvier.</div>
+        </div>
+      </div>
+
+      <script>
+        window.__timelines = window.__timelines || {};
+        const tl = gsap.timeline({ paused: true });
+
+        tl.fromTo("#eyebrow", { opacity: 0, y: -14 }, { opacity: 0.55, y: 0, duration: 0.45, ease: "power2.out" }, 0.05);
+        tl.fromTo("#dish-card", { opacity: 0, scale: 0.85 }, { opacity: 1, scale: 1, duration: 0.55, ease: "back.out(1.6)" }, 0.3);
+        tl.fromTo("#price-tag", { scale: 0 }, { scale: 1, duration: 0.4, ease: "back.out(2.4)" }, 0.95);
+        tl.fromTo("#consequence", { opacity: 0, x: 30 }, { opacity: 1, x: 0, duration: 0.55, ease: "power2.out" }, 1.5);
+
+        // The "?" pulses gently to underline the uncertainty.
+        tl.to(".cost-mark", { opacity: 0.7, duration: 1.2, ease: "sine.inOut", repeat: 4, yoyo: true }, 2.2);
+
+        window.__timelines["b01-scene1-probleme"] = tl;
+      </script>
+    </template>
+  </body>
+</html>

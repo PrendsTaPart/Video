@@ -1,0 +1,147 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+  </head>
+  <body>
+    <template>
+      <style>
+        @font-face {
+          font-family: "Fredoka";
+          src: url("assets/vendor/fonts/Fredoka-Variable.woff2") format("woff2-variations");
+          font-weight: 300 700;
+          font-display: block;
+        }
+        #root {
+          position: absolute;
+          inset: 0;
+          background: #fcf9e6;
+          overflow: hidden;
+          font-family: "Inter", sans-serif;
+        }
+        .eyebrow {
+          position: absolute;
+          top: 56px;
+          left: 0;
+          right: 0;
+          text-align: center;
+          font-family: "Fredoka", sans-serif;
+          font-weight: 600;
+          font-size: 34px;
+          letter-spacing: 0.02em;
+          color: #0f1a23;
+          opacity: 0;
+        }
+        #node-layer {
+          position: absolute;
+          inset: 0;
+        }
+        .node {
+          position: absolute;
+          width: 380px;
+          height: 140px;
+          border-radius: 20px;
+          background: #ffffff;
+          border: 3px solid #0f1a23;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          text-align: center;
+          padding: 0 20px;
+          font-family: "Fredoka", sans-serif;
+          font-weight: 600;
+          font-size: 28px;
+          color: #0f1a23;
+          transform: scale(0);
+        }
+        .proof-caption {
+          position: absolute;
+          left: 0;
+          right: 0;
+          bottom: 60px;
+          text-align: center;
+          font-family: "Fredoka", sans-serif;
+          font-weight: 600;
+          font-size: 26px;
+          color: #007bff;
+          opacity: 0;
+        }
+      </style>
+
+      <div
+        id="root"
+        data-composition-id="b01-scene3-cascade"
+        data-width="1920"
+        data-height="1080"
+        data-duration="14.04"
+      >
+        <div class="eyebrow" id="eyebrow">CE QUI SE RECALCULE</div>
+
+        <svg id="path-svg" width="1920" height="1080" style="position:absolute; inset:0;">
+          <polyline
+            id="chain-path"
+            points="300,370 740,370 1180,370 1620,370 1620,710 1180,710 740,710 300,710"
+            fill="none"
+            stroke="#0f1a23"
+            stroke-opacity="0.18"
+            stroke-width="4"
+            stroke-dasharray="1740"
+            stroke-dashoffset="1740"
+          />
+          <circle id="dot" cx="300" cy="370" r="13" fill="#007bff" opacity="0" />
+          <circle id="dot-halo" cx="300" cy="370" r="22" fill="#007bff" opacity="0" fill-opacity="0.18" />
+        </svg>
+
+        <div id="node-layer">
+          <div class="node" id="node-1" style="left:110px; top:300px;">Prix fournisseur</div>
+          <div class="node" id="node-2" style="left:550px; top:300px;">Ingrédient</div>
+          <div class="node" id="node-3" style="left:990px; top:300px;">Fiche technique</div>
+          <div class="node" id="node-4" style="left:1430px; top:300px;">Food cost</div>
+          <div class="node" id="node-5" style="left:1430px; top:640px;">Marge par plat</div>
+          <div class="node" id="node-6" style="left:990px; top:640px;">Carte &amp; prix de vente</div>
+          <div class="node" id="node-7" style="left:550px; top:640px;">Achats &amp; production</div>
+          <div class="node" id="node-8" style="left:110px; top:640px;">Stock &amp; rentabilité</div>
+        </div>
+
+        <div class="proof-caption" id="proof-caption">21 outils MCP exécutent cette boucle</div>
+      </div>
+
+      <script>
+        window.__timelines = window.__timelines || {};
+        const tl = gsap.timeline({ paused: true });
+
+        const pts = [
+          [300, 370], [740, 370], [1180, 370], [1620, 370],
+          [1620, 710], [1180, 710], [740, 710], [300, 710]
+        ];
+        const NODE_START = 1.5;
+        const NODE_STEP = 1.57;
+        const BLUE = "#007bff";
+        const WHITE_TXT = "#fcf9e6";
+
+        tl.fromTo("#eyebrow", { opacity: 0, y: -14 }, { opacity: 0.55, y: 0, duration: 0.4, ease: "power2.out" }, 0.05);
+        tl.to("#chain-path", { strokeDashoffset: 0, duration: 0.8, ease: "power2.out" }, 0.3);
+        tl.fromTo(".node", { scale: 0 }, { scale: 1, duration: 0.32, ease: "back.out(2.2)", stagger: 0.05 }, 0.95);
+
+        for (let i = 0; i < pts.length; i++) {
+          const t = NODE_START + i * NODE_STEP;
+          tl.to(`#node-${i + 1}`, { backgroundColor: BLUE, borderColor: BLUE, color: WHITE_TXT, duration: 0.35, ease: "power2.out" }, t);
+          tl.to(`#node-${i + 1}`, { scale: 1.06, duration: 0.16, ease: "power2.out", yoyo: true, repeat: 1 }, t);
+
+          if (i < pts.length - 1) {
+            const [x0, y0] = pts[i];
+            const [x1, y1] = pts[i + 1];
+            tl.set("#dot, #dot-halo", { attr: { cx: x0, cy: y0 }, opacity: 1 }, t + 0.12);
+            tl.to("#dot, #dot-halo", { attr: { cx: x1, cy: y1 }, duration: NODE_STEP - 0.3, ease: "power1.inOut" }, t + 0.12);
+          } else {
+            tl.to("#dot, #dot-halo", { opacity: 0, duration: 0.3 }, t + 0.25);
+          }
+        }
+
+        tl.fromTo("#proof-caption", { opacity: 0 }, { opacity: 0.75, duration: 0.5, ease: "power2.out" }, NODE_START + 3 * NODE_STEP);
+
+        window.__timelines["b01-scene3-cascade"] = tl;
+      </script>
+    </template>
+  </body>
+</html>
