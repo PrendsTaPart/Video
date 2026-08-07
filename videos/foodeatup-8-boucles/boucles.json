@@ -1,0 +1,267 @@
+{
+  "serie": "Les 8 boucles FoodEatUp",
+  "cible": "FoodEatUp Academy (foodeatup-guide-star)",
+  "formats": {
+    "master": { "w": 1920, "h": 1080, "fps": 30 },
+    "reel": { "w": 1080, "h": 1920, "fps": 30 }
+  },
+  "charte": {
+    "creme": "#FCF9E6",
+    "marine": "#0F1A23",
+    "bleu": "#007BFF",
+    "bleuSysteme": "#147AFF",
+    "orange": "#FFA500",
+    "policeTitres": "Baloo 2",
+    "policeCorps": "Inter"
+  },
+  "voix": {
+    "provider": "elevenlabs",
+    "voice_id": "TGAegA0zNRi8I6nUdq3i",
+    "nom": "Adam-Instructor (FR)",
+    "model_id": "eleven_multilingual_v2",
+    "settings": { "stability": 0.55, "similarity_boost": 0.75, "style": 0.1, "use_speaker_boost": true },
+    "note": "Voix unique figée pour toute la série — identique au reste du catalogue FoodEatUp (boucle-stockvision, tutoriels). Ne pas changer."
+  },
+  "outilsMcp": {
+    "total": 177,
+    "source": "recompté sur le serveur MCP Foodeatup le 2026-08-07 — voir tools/count_mcp_tools.py et mcp-tool-counts.json",
+    "note": "Les compteurs par boucle du brief initial (21/18/14/17/22/14/23/17) sommaient à 146 et ne correspondaient à rien de vérifiable. Le total 177 était juste ; la répartition ci-dessous est la vraie."
+  },
+  "videos": [
+    {
+      "slug": "boucle-00-principe",
+      "dossier": "00-principe",
+      "ordre": 0,
+      "titre": "Le principe : une boucle se referme",
+      "dureeCible": 45,
+      "agents": [],
+      "outilsMcp": 177,
+      "statut": "script",
+      "plans": [
+        { "n": 1, "role": "Le mot « boucle », pris au sérieux", "vo": "Dans un restaurant, rien n'arrive seul. Un prix qui bouge déplace une marge. Une vente vide un stock. Ce n'est pas huit sujets, c'est un système." },
+        { "n": 2, "role": "La loi des boucles, règle 1", "vo": "Règle une : une boucle se referme. Son dernier maillon nourrit son premier." },
+        { "n": 3, "role": "Le ∞ — les deux boucles et leurs croisements", "vo": "Deux boucles : la gestion, pouvoir ouvrir demain. La vente, faire venir et revenir. Elles se croisent sur la commande et la trésorerie." },
+        { "n": 4, "role": "La loi des boucles, règle 2", "vo": "Règle deux : aucune boucle n'est autonome." },
+        { "n": 5, "role": "La loi des boucles, règle 3", "vo": "Règle trois : huit logiciels qui tiennent chacun une boucle font huit tunnels." },
+        { "n": 6, "role": "Les 8 boucles + le compteur", "vo": "Huit boucles, cent soixante-dix-sept outils MCP, une seule base de données." }
+      ]
+    },
+    {
+      "slug": "boucle-01-configuration-boutique",
+      "dossier": "01-configuration-boutique",
+      "ordre": 1,
+      "titre": "Configuration boutique : un prix change, toutes vos marges se recalculent",
+      "dureeCible": 85,
+      "agents": ["Jarvis", "PrédiBot"],
+      "outilsMcp": 39,
+      "statut": "script",
+      "cascade": ["Prix fournisseur", "Ingrédient", "Fiche technique", "Food cost", "Marge par plat", "Carte et prix de vente", "Achats et production", "Stock et rentabilité"],
+      "boucleVoisines": ["StockVisionAI", "HACCP", "E-commerce", "Comptabilité"],
+      "chiffres": [
+        { "label": "Coût matière", "valeur": "4,38 €" },
+        { "label": "Marge", "valeur": "9,62 €" },
+        { "label": "Taux de marge", "valeur": "68,7 %" },
+        { "label": "vs mois dernier", "valeur": "+0,41 €" }
+      ],
+      "plans": [
+        { "n": 1, "role": "Le problème", "vo": "Votre burger, vous le vendez quatorze euros. Vous savez qu'il vous coûte « environ quatre euros ». Sauf que le prix du bœuf a bougé trois fois cette année. Le pain a augmenté en janvier. Et personne n'a rouvert la fiche depuis dix-huit mois." },
+        { "n": 2, "role": "La phrase dite à l'agent", "vo": "Alors vous dites simplement : « Ajoute le poulet fermier à douze euros quatre-vingts le kilo, chez Metro. »" },
+        { "n": 3, "role": "La cascade de recalcul", "vo": "Et là, FoodEatUp ne stocke pas une ligne. Il fait circuler l'information. L'ingrédient est créé. Le fournisseur est lié. Toutes les fiches techniques qui contiennent du poulet se recalculent. Le food cost bouge. La marge par plat aussi." },
+        { "n": 4, "role": "Détection, proposition, Valider", "vo": "Trois plats viennent de passer sous votre seuil. FoodEatUp vous le dit, et vous propose l'ajustement. C'est vous qui validez." },
+        { "n": 5, "role": "Les boucles voisines s'allument", "vo": "Au même moment, votre stock, votre carte en ligne et votre comptabilité travaillent déjà avec les bons chiffres." },
+        { "n": 6, "role": "Le résultat chiffré", "vo": "Résultat : votre burger coûte quatre euros trente-huit. Marge : neuf euros soixante-deux. Soit soixante-huit virgule sept pour cent. Et vous le saviez avant le service." },
+        { "n": 7, "role": "Si elle est coupée + CTA", "vo": "Si cette boucle est coupée, tout le reste tourne à vide." }
+      ],
+      "plan7Phrase": "Une fiche fausse fausse le food cost, le stock, la marge et le prix."
+    },
+    {
+      "slug": "boucle-02-equipe",
+      "dossier": "02-equipe",
+      "ordre": 2,
+      "titre": "Équipe : vos plannings tiennent compte de l'activité réelle",
+      "dureeCible": 80,
+      "agents": ["PrédiBot"],
+      "outilsMcp": 21,
+      "statut": "script",
+      "cascade": ["Recrutement", "Contrat", "Planning", "Pointage réel", "Congés", "Coût constaté", "Écart prévu/réel", "Planning suivant"],
+      "boucleVoisines": ["Comptabilité"],
+      "chiffres": [
+        { "label": "Planning", "valeur": "10 min" },
+        { "label": "Coût du travail", "valeur": "25 à 35 % du CA" }
+      ],
+      "plans": [
+        { "n": 1, "role": "Le problème", "vo": "Le mardi, vous êtes trois en salle pour douze couverts. Le samedi, vous êtes trois aussi — pour soixante. Personne n'a jamais regardé l'historique. On fait comme d'habitude." },
+        { "n": 2, "role": "La phrase dite à l'agent", "vo": "Alors vous demandez : « Qui bosse samedi soir ? »" },
+        { "n": 3, "role": "La cascade de recalcul", "vo": "FoodEatUp ne lit pas un tableau blanc. Il croise. Le planning de la semaine. Les contrats en cours. Les pointages réels, pas les horaires prévus. Et surtout, les réservations déjà prises pour samedi." },
+        { "n": 4, "role": "Détection, proposition, Valider", "vo": "Là, il voit le trou : soixante couverts attendus, deux personnes en cuisine. Il vous propose un shift de plus, et il vous montre ce qu'il coûte. Vous validez, ou pas." },
+        { "n": 5, "role": "Les boucles voisines s'allument", "vo": "« Valide le congé de Sarah pour la semaine du douze. » Le congé passe, le planning se met à jour, l'équipe est prévenue. Et le coût du travail — vingt-cinq à trente-cinq pour cent de votre chiffre d'affaires — remonte tout seul dans votre comptabilité." },
+        { "n": 6, "role": "Le résultat chiffré", "vo": "Résultat : un planning fait en dix minutes, sur l'activité réelle." },
+        { "n": 7, "role": "Si elle est coupée + CTA", "vo": "Si cette boucle est coupée : sur-effectif le mardi, sous-effectif le samedi. Systématiquement." }
+      ],
+      "plan7Phrase": "Sur-effectif le mardi, sous-effectif le samedi. Systématiquement.",
+      "mentionsObligatoires": ["Contrat, planning contractuel et suppression d'employé exigent une confirmation humaine."]
+    },
+    {
+      "slug": "boucle-03-stockvision",
+      "dossier": "03-stockvision",
+      "ordre": 3,
+      "titre": "StockVisionAI : vos ventes deviennent vos achats et votre production",
+      "dureeCible": 90,
+      "agents": ["Jarvis", "PrédiBot"],
+      "outilsMcp": 11,
+      "statut": "script",
+      "pilier": true,
+      "cascade": ["Besoins des fiches", "Commande fournisseur", "Réception et contrôle", "Entrée en stock", "Consommation production", "Inventaire", "Écart", "Nouveaux besoins"],
+      "boucleVoisines": ["HACCP", "E-commerce", "Communication", "Comptabilité"],
+      "chiffres": [
+        { "label": "Rupture le samedi", "valeur": "0" },
+        { "label": "Gaspillage évité", "valeur": "4 à 10 %" }
+      ],
+      "plans": [
+        { "n": 1, "role": "Le problème", "vo": "Vendredi, dix-huit heures. Le saumon est fini. Vous retirez de la carte le plat qui rapporte le plus. Trente couverts qui prendront autre chose. Ou qui ne reviendront pas." },
+        { "n": 2, "role": "La phrase dite à l'agent", "vo": "« Il me reste combien de saumon ? »" },
+        { "n": 3, "role": "La cascade de recalcul", "vo": "FoodEatUp ne compte pas un stock. Il le fait parler. La quantité réelle. La date limite. Et les plats qui en consomment — parce que vos fiches techniques le savent déjà. C'est la seule boucle qui contient une prévision : le modèle lit l'historique par jour de semaine, écarte les valeurs aberrantes, et injecte les jours fériés français." },
+        { "n": 4, "role": "Détection, proposition, Valider", "vo": "Alors il détecte ce qui va manquer ce week-end, et prépare la commande fournisseur, ligne par ligne. Vous validez avant l'envoi. Toujours." },
+        { "n": 5, "role": "Les boucles voisines s'allument", "vo": "À la réception, le contrôle HACCP se déclenche, le stock entre, la production se cale sur ce qui s'est vraiment vendu." },
+        { "n": 6, "role": "Le résultat chiffré", "vo": "Résultat : plus de rupture le samedi, et quatre à dix pour cent d'achats qui ne finissent plus à la poubelle le dimanche." },
+        { "n": 7, "role": "Si elle est coupée + CTA", "vo": "Une rupture un samedi soir, ou quatre à dix pour cent des achats à la poubelle le dimanche." }
+      ],
+      "plan7Phrase": "Une rupture un samedi soir, ou quatre à dix pour cent des achats à la poubelle le dimanche."
+    },
+    {
+      "slug": "boucle-04-haccp",
+      "dossier": "04-haccp",
+      "ordre": 4,
+      "titre": "HACCP : votre dossier de conformité se construit chaque jour",
+      "dureeCible": 85,
+      "agents": ["Jarvis"],
+      "outilsMcp": 16,
+      "statut": "script",
+      "registre": "sobre",
+      "cascade": ["Plan de maîtrise", "Relevés de températures", "Contrôles à réception", "Étiquetage DLC", "Checklists", "Plan de nettoyage", "Journal quotidien", "Action corrective"],
+      "boucleVoisines": ["StockVisionAI"],
+      "chiffres": [
+        { "label": "Dossier", "valeur": "horodaté, exportable" },
+        { "label": "Anomalie", "valeur": "détectée le jour même" }
+      ],
+      "plans": [
+        { "n": 1, "role": "Le problème", "vo": "Le contrôleur pousse la porte un mardi, à onze heures. Vous cherchez le classeur. Les relevés du mois dernier ont été remplis d'un coup, la veille, de mémoire. Vous le savez. Lui aussi." },
+        { "n": 2, "role": "La phrase dite à l'agent", "vo": "« Frigo un : trois degrés. »" },
+        { "n": 3, "role": "La cascade de recalcul", "vo": "Vous l'avez dit en cuisine, les mains prises. C'est enregistré, horodaté, rattaché à l'équipement. Et si la valeur sort des limites — quatre degrés en froid positif, moins dix-huit en congélation — l'anomalie remonte tout de suite, avec l'action corrective." },
+        { "n": 4, "role": "Détection, proposition, Valider", "vo": "FoodEatUp ne remplit jamais un relevé à votre place : une température se mesure, elle ne s'invente pas. Ce qu'il fait, c'est compter les trous. Les jours sans relevé. Les livraisons sans contrôle à réception. Les zones jamais nettoyées." },
+        { "n": 5, "role": "Les boucles voisines s'allument", "vo": "« La livraison Metro est arrivée, tout est conforme. » Le contrôle est validé, les températures notées, le stock entré. La même phrase alimente StockVisionAI." },
+        { "n": 6, "role": "Le résultat chiffré", "vo": "Résultat : un dossier horodaté, exportable en un clic." },
+        { "n": 7, "role": "Si elle est coupée + CTA", "vo": "Les sept autres boucles coûtent de la marge. Celle-ci coûte la fermeture." }
+      ],
+      "plan7Phrase": "La seule boucle dont l'échec n'est pas financier, mais existentiel.",
+      "mentionsObligatoires": ["Un jour sans relevé est « non conforme », pas « probablement fait »."]
+    },
+    {
+      "slug": "boucle-05-ecommerce",
+      "dossier": "05-ecommerce",
+      "ordre": 5,
+      "titre": "E-commerce : votre carte en ligne, sans commission",
+      "dureeCible": 85,
+      "agents": ["Jarvis", "Caroline"],
+      "outilsMcp": 39,
+      "statut": "script",
+      "cascade": ["Carte en ligne", "Visite", "Panier ou réservation", "Commande", "Service", "Avis", "Ajustement de la carte"],
+      "boucleVoisines": ["Fidélité", "Communication", "Comptabilité"],
+      "chiffres": [
+        { "label": "Commission", "valeur": "0 %" },
+        { "label": "Fichier client", "valeur": "vous appartient" }
+      ],
+      "plans": [
+        { "n": 1, "role": "Le problème", "vo": "Un client cherche votre restaurant à dix-neuf heures. Il trouve une plateforme de livraison qui prend trente pour cent sur chaque commande. Et un menu PDF de deux mille vingt-trois qui ne s'ouvre pas sur son téléphone." },
+        { "n": 2, "role": "La phrase dite à l'agent", "vo": "« Mets le plat du jour en ligne. »" },
+        { "n": 3, "role": "La cascade de recalcul", "vo": "Une phrase, un seul endroit. Le plat apparaît sur votre site, sur le QR de table, et dans la commande en ligne. Une carte, mise à jour d'un endroit, visible partout. Et derrière, tout est branché : les réservations et la capacité restante, la caisse et les ardoises ouvertes, les zones de livraison, les demandes de privatisation." },
+        { "n": 4, "role": "Détection, proposition, Valider", "vo": "« Combien de couverts ce soir ? » Les réservations, le taux de remplissage, les tables encore libres. Caroline, elle, décroche pendant que vous êtes en salle. Une demande de groupe sans réponse depuis quarante-huit heures ? Elle passe en tête de vos actions." },
+        { "n": 5, "role": "Les boucles voisines s'allument", "vo": "Fidélité, communication, comptabilité : le même client, la même donnée, d'un bout à l'autre." },
+        { "n": 6, "role": "Le résultat chiffré", "vo": "Résultat : le client commande chez vous, et vous savez qui il est." },
+        { "n": 7, "role": "Si elle est coupée + CTA", "vo": "Sans cette boucle, vous louez vos clients à une plateforme." }
+      ],
+      "plan7Phrase": "Le restaurant dépend des plateformes et leur cède une commission sur des clients qu'il ne connaîtra jamais.",
+      "mentionsObligatoires": ["Publier le site, appliquer un template, réécrire la carte vitrine, clôturer la caisse et encaisser exigent une confirmation humaine."]
+    },
+    {
+      "slug": "boucle-06-communication",
+      "dossier": "06-communication",
+      "ordre": 6,
+      "titre": "Communication : ce que vous savez, vos clients le savent le matin même",
+      "dureeCible": 85,
+      "agents": ["Iris"],
+      "outilsMcp": 15,
+      "statut": "script",
+      "cascade": ["Événement ou intention", "Choix du canal", "Création du contenu", "Contrôle de charte", "Diffusion", "Mesure", "Apprentissage"],
+      "boucleVoisines": ["Fidélité", "E-commerce"],
+      "chiffres": [
+        { "label": "Clients prévenus", "valeur": "340, le matin même" },
+        { "label": "Commandes attribuées", "valeur": "à 7 jours" }
+      ],
+      "plans": [
+        { "n": 1, "role": "Le problème", "vo": "Il vous reste douze kilos de saumon, date limite vendredi. Vous le savez. Vos trois cent quarante clients qui adorent le poisson ne le savent pas. Et vous n'aurez pas le temps de leur dire." },
+        { "n": 2, "role": "La phrase dite à l'agent", "vo": "« Préviens les habitués qu'on a du saumon frais ce midi. »" },
+        { "n": 3, "role": "La cascade de recalcul", "vo": "Iris ne rédige pas dans le vide. Elle part de vos données : le stock qui presse, la marge du plat, le segment qui commande du poisson. Elle constitue le segment, écrit le message, génère le visuel aux couleurs de la maison." },
+        { "n": 4, "role": "Le refus", "vo": "Et elle compte avant de proposer. Moins de dix contacts dans le segment ? Elle refuse la campagne et vous dit pourquoi — une base trop petite ne produit aucun signal exploitable. Rien ne part sans vous. La diffusion attend votre accord, toujours." },
+        { "n": 5, "role": "Les boucles voisines s'allument", "vo": "Ensuite elle mesure : envois, clics, commandes réellement attribuées. C'est la seule boucle qui touche les sept autres." },
+        { "n": 6, "role": "Le résultat chiffré", "vo": "Trois cent quarante clients prévenus le matin même, et des commandes qu'on sait rattacher à la campagne." },
+        { "n": 7, "role": "Si elle est coupée + CTA", "vo": "Quand elle est coupée, rien ne casse. Tout ralentit. Et personne ne sait que votre restaurant tourne bien." }
+      ],
+      "plan7Phrase": "Rien ne casse. Tout ralentit."
+    },
+    {
+      "slug": "boucle-07-fidelite",
+      "dossier": "07-fidelite",
+      "ordre": 7,
+      "titre": "Fidélité et marketing : chaque client servi devient une relation réactivable",
+      "dureeCible": 85,
+      "agents": ["PrédiBot", "Iris"],
+      "outilsMcp": 19,
+      "statut": "script",
+      "cascade": ["Client servi", "Consentement", "Segmentation", "Campagne ciblée", "Retour en salle", "Points et récompenses", "Nouvelle donnée"],
+      "boucleVoisines": ["E-commerce", "Communication"],
+      "chiffres": [
+        { "label": "Faire revenir", "valeur": "5 à 7 fois moins cher qu'acquérir" }
+      ],
+      "plans": [
+        { "n": 1, "role": "Le problème", "vo": "Vous avez servi trois cents personnes cette semaine. Combien pouvez-vous rappeler demain matin ? Si la réponse est aucune, vous rachetez vos clients à chaque fois. Indéfiniment." },
+        { "n": 2, "role": "La phrase dite à l'agent", "vo": "« Qui n'est pas revenu depuis trois mois ? »" },
+        { "n": 3, "role": "La cascade de recalcul", "vo": "La liste arrive. Avec ce qu'ils commandaient, et ce qu'ils dépensaient. Parce que chaque client servi a laissé une trace : un consentement, des points, un segment. Première chose que FoodEatUp vérifie : votre programme est-il actif ? Un catalogue de récompenses posé sur un programme éteint ne produit rien — autant le savoir avant de construire par-dessus." },
+        { "n": 4, "role": "Détection, proposition, Valider", "vo": "Ensuite il regarde ce qui tourne vraiment : les bons émis contre les bons utilisés, les récompenses en rupture qui frustrent au lieu de fidéliser, l'encours de cartes cadeaux — qui est une dette, pas un chiffre d'affaires." },
+        { "n": 5, "role": "Les boucles voisines s'allument", "vo": "« Envoie une offre à mes habitués du mardi. » Le segment est ciblé, le message préparé. L'envoi attend votre accord." },
+        { "n": 6, "role": "Le résultat chiffré", "vo": "Faire revenir coûte cinq à sept fois moins cher qu'acquérir. C'est tout le sujet." },
+        { "n": 7, "role": "Si elle est coupée + CTA", "vo": "Sans elle, on rachète chaque client à chaque fois." }
+      ],
+      "plan7Phrase": "On rachète chaque client à chaque fois.",
+      "mentionsObligatoires": ["La création d'une roue cadeaux ou d'un sondage se fait en back-office, pas par l'agent."]
+    },
+    {
+      "slug": "boucle-08-comptabilite",
+      "dossier": "08-comptabilite",
+      "ordre": 8,
+      "titre": "Comptabilité : le chiffre du jour, avant d'éteindre la lumière",
+      "dureeCible": 80,
+      "agents": ["PrédiBot"],
+      "outilsMcp": 17,
+      "statut": "script",
+      "cascade": ["Vente", "Facture", "Encaissement", "Dépenses et achats", "Marge constatée", "Trésorerie", "Capacité d'achat", "Commandes fournisseurs"],
+      "boucleVoisines": ["StockVisionAI", "Équipe"],
+      "chiffres": [
+        { "label": "CA du jour", "valeur": "donnée à confirmer" },
+        { "label": "Ticket moyen", "valeur": "donnée à confirmer" },
+        { "label": "Marge", "valeur": "donnée à confirmer" }
+      ],
+      "plans": [
+        { "n": 1, "role": "Le problème", "vo": "Vous saurez si le mois a été bon quand votre comptable vous le dira. C'est-à-dire dans six semaines. D'ici là, vous pilotez à l'aveugle." },
+        { "n": 2, "role": "La phrase dite à l'agent", "vo": "« Fais le Z. »" },
+        { "n": 3, "role": "La cascade de recalcul", "vo": "La caisse est clôturée, le rapport généré, l'écart calculé. Et le stock, lui, est déjà à jour — parce que chaque vente est passée par la cuisine avant de passer par la caisse. FoodEatUp rapproche ce que les logiciels séparent : les encaissements d'un côté, les factures de l'autre." },
+        { "n": 4, "role": "Détection, proposition, Valider", "vo": "Les impayés, les devis sans réponse, les dépenses de la période. Et surtout les écarts entre les deux — c'est le livrable le plus utile. Une règle : une facture ne passe à « payée » que si vous le dites. Jamais par déduction." },
+        { "n": 5, "role": "Les boucles voisines s'allument", "vo": "« J'ai fait combien cette semaine ? » Chiffre d'affaires, ticket moyen, couverts, marge, comparés à la semaine précédente. La trésorerie que vous constatez ici finance les commandes de lundi." },
+        { "n": 6, "role": "Le résultat chiffré", "vo": "C'est le second fil qui traverse le service." },
+        { "n": 7, "role": "Si elle est coupée + CTA", "vo": "Sans elle, on découvre trop tard." }
+      ],
+      "plan7Phrase": "On ignore si l'on gagne de l'argent, et on le découvre trop tard.",
+      "mentionsObligatoires": ["« Payée » ne se déduit jamais."]
+    }
+  ]
+}
