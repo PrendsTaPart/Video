@@ -2,7 +2,7 @@
 <html lang="fr">
   <head>
     <meta charset="UTF-8" />
-    <title>Frame 03 — La note</title>
+    <title>Frame 03 — La note (physique réelle)</title>
   </head>
   <body>
     <template>
@@ -27,15 +27,15 @@
         .rail { position: absolute; left: 120px; top: 90px; right: 120px; bottom: 90px; border-radius: 28px;
           border: 14px solid #1a2436; box-shadow: inset 0 0 60px rgba(0, 0, 0, 0.5);
         }
-        .pocket { position: absolute; width: 46px; height: 46px; margin-left: -23px; margin-top: -23px;
+        .pocket { position: absolute; width: 52px; height: 52px; margin-left: -26px; margin-top: -26px;
           border-radius: 50%; background: radial-gradient(circle at 40% 35%, #2a2f3a, #05070a 70%);
           box-shadow: inset 0 0 12px rgba(0, 0, 0, 0.8);
         }
-        .glow { position: absolute; width: 90px; height: 90px; margin-left: -45px; margin-top: -45px; border-radius: 50%;
-          background: radial-gradient(circle, rgba(30,155,240,0.55), transparent 70%); opacity: 0;
+        .glow { position: absolute; left: 0; top: 0; width: 100px; height: 100px; margin-left: -50px; margin-top: -50px;
+          border-radius: 50%; background: radial-gradient(circle, rgba(30,155,240,0.6), transparent 70%); opacity: 0;
         }
 
-        .ball { position: absolute; width: 88px; height: 88px; margin-left: -44px; margin-top: -44px; border-radius: 50%;
+        .ball { position: absolute; left: 0; top: 0; width: 88px; height: 88px; margin-left: -44px; margin-top: -44px; border-radius: 50%;
           box-shadow: 0 10px 22px rgba(0, 0, 0, 0.55);
         }
         .ball .disc { position: absolute; inset: 0; border-radius: 50%; background: var(--bc); overflow: hidden; }
@@ -45,9 +45,9 @@
         .ball .num { font-family: "Poppins", sans-serif; font-weight: 700; font-size: 24px; color: #191b1f; }
         .ball.ghost .outline { position: absolute; inset: 0; border-radius: 50%; border: 3px dashed rgba(247, 249, 252, 0.55); background: rgba(247, 249, 252, 0.03); }
 
-        .receipt { position: absolute; right: 90px; top: 130px; width: 430px; display: flex; flex-direction: column; gap: 10px; }
-        .rline { display: flex; align-items: center; gap: 12px; padding: 10px 16px; background: rgba(5,7,12,0.78);
-          border: 1.5px solid rgba(247,249,252,0.18); border-radius: 10px; font-size: 20px; font-weight: 500; opacity: 0;
+        .receipt { position: absolute; right: 90px; top: 110px; width: 430px; display: flex; flex-direction: column; gap: 9px; }
+        .rline { display: flex; align-items: center; gap: 12px; padding: 9px 16px; background: rgba(5,7,12,0.78);
+          border: 1.5px solid rgba(247,249,252,0.18); border-radius: 10px; font-size: 19px; font-weight: 500; opacity: 0;
         }
         .rline .rdot { width: 10px; height: 10px; border-radius: 50%; background: var(--dc); flex: none; }
 
@@ -66,174 +66,181 @@
         }
       </style>
 
-      <div id="root" data-composition-id="03-note" data-width="1920" data-height="1080" data-duration="10">
-        <div class="clip" id="bg" data-start="0" data-duration="10" data-track-index="0">
+      <div id="root" data-composition-id="03-note" data-width="1920" data-height="1080" data-duration="12.233">
+        <div class="clip" id="bg" data-start="0" data-duration="12.233" data-track-index="0">
           <div class="felt"></div>
           <div class="rail">
-            <div class="pocket" id="pTL" style="left: 40px; top: 44px"></div>
-            <div class="pocket" id="pTC" style="left: 800px; top: 8px"></div>
-            <div class="pocket" id="pTR" style="left: 1560px; top: 44px"></div>
-            <div class="pocket" id="pBL" style="left: 40px; top: 846px"></div>
-            <div class="pocket" id="pBC" style="left: 800px; top: 882px"></div>
-            <div class="pocket" id="pBR" style="left: 1560px; top: 846px"></div>
+            <div class="pocket" style="left: 0px; top: 0px"></div>
+            <div class="pocket" style="left: 800px; top: -36px"></div>
+            <div class="pocket" style="left: 1600px; top: 0px"></div>
+            <div class="pocket" style="left: 0px; top: 800px"></div>
+            <div class="pocket" style="left: 800px; top: 836px"></div>
+            <div class="pocket" style="left: 1600px; top: 800px"></div>
           </div>
         </div>
 
-        <div class="clip scene" data-start="0" data-duration="10" data-track-index="1">
+        <div class="clip scene" data-start="0" data-duration="12.233" data-track-index="1">
           <div class="ballLayer"></div>
           <div class="glowLayer"></div>
         </div>
 
-        <div class="clip subLayer" data-start="0" data-duration="10" data-track-index="2"></div>
-        <div class="clip receipt" data-start="0" data-duration="10" data-track-index="3"></div>
+        <div class="clip subLayer" data-start="0" data-duration="12.233" data-track-index="2"></div>
+        <div class="clip receipt" data-start="0" data-duration="12.233" data-track-index="3"></div>
 
-        <div class="clip counterWrap" data-start="0" data-duration="10" data-track-index="4">
+        <div class="clip counterWrap" data-start="0" data-duration="12.233" data-track-index="4">
           <div class="counterLabel">Un restaurant équipé paie</div>
           <div class="counterValue"><span class="tumble">0 €</span></div>
           <div class="counterSub">par mois · hors caisse · hors paie</div>
         </div>
 
-        <div class="clip legal" data-start="0" data-duration="10" data-track-index="5">
+        <div class="clip legal" data-start="0" data-duration="12.233" data-track-index="5">
           Fourchette relevée sur les grilles publiques des éditeurs, juillet 2026 — hors caisse et hors paie.
           Marques citées à titre d'identification. site.foodeatup.com/comparateur
         </div>
 
-        <audio id="voice03" src="assets/voice/03.mp3" data-start="0.4" data-duration="6.217" data-track-index="10" data-volume="1"></audio>
-        <audio id="sfx03a" src="assets/sfx/pop.mp3" data-start="0.55" data-duration="0.312" data-track-index="20" data-volume="0.4"></audio>
-        <audio id="sfx03b" src="assets/sfx/pop.mp3" data-start="1.9" data-duration="0.312" data-track-index="21" data-volume="0.4"></audio>
-        <audio id="sfx03c" src="assets/sfx/pop.mp3" data-start="3.3" data-duration="0.312" data-track-index="22" data-volume="0.4"></audio>
-        <audio id="sfx03d" src="assets/sfx/pop.mp3" data-start="4.7" data-duration="0.312" data-track-index="23" data-volume="0.4"></audio>
-        <audio id="sfx03e" src="assets/sfx/chime.mp3" data-start="7.4" data-duration="0.72" data-track-index="24" data-volume="0.45"></audio>
+        <audio id="voice03" src="assets/voice/03.mp3" data-start="0.3" data-duration="6.217" data-track-index="10" data-volume="1"></audio>
+        <audio id="sfx03e" src="assets/sfx/chime.mp3" data-start="9.3" data-duration="0.72" data-track-index="24" data-volume="0.45"></audio>
       </div>
 
       <script src="assets/vendor/gsap.min.js"></script>
+      <script src="compositions/data/physics-data.js"></script>
       <script>
         window.__timelines = window.__timelines || {};
         (function () {
           var root = document.querySelector('[data-composition-id="03-note"][id="root"]');
           if (!root) root = document.querySelector('[data-composition-id="03-note"]');
-
-          var POCKETS = {
-            TL: [160, 134], TC: [920, 98], TR: [1680, 134],
-            BL: [160, 936], BC: [920, 972], BR: [1680, 936],
-          };
-
-          // Start positions = frame 02's scatter resting spots. Each falls into its pocket.
-          var BALLS = [
-            { n: "1", cat: "Caisse & encaissement", c: "#F2C94C", from: [420, 260], to: "TL" },
-            { n: "2", cat: "Réservation & salle", c: "#2D9CDB", from: [1500, 230], to: "TR" },
-            { n: "9", cat: "Avis & e-réputation", c: "#F2C94C", from: [1100, 260], to: "TC", stripe: true },
-            { n: "3", cat: "Agent vocal téléphonique", c: "#EB5757", from: [300, 520], to: "TL" },
-            { n: "4", cat: "Food cost & stock", c: "#9B51E0", from: [1620, 480], to: "TR" },
-            { n: "12", cat: "BI, compta & pilotage", c: "#9B51E0", from: [1350, 560], to: "BR", stripe: true },
-            { n: "7", cat: "Fidélité & animation", c: "#8A3B4E", from: [520, 700], to: "BL" },
-            { n: "10", cat: "Site & commande en ligne", c: "#2D9CDB", from: [1550, 700], to: "BR", stripe: true },
-            { n: "5", cat: "HACCP", c: "#F2994A", from: [700, 860], to: "BC" },
-            { n: "11", cat: "Messages sortants", c: "#EB5757", from: [380, 850], to: "BL", stripe: true },
-            { n: "6", cat: "Planning & RH", c: "#27AE60", from: [1250, 840], to: "BC" },
-          ];
-          var EIGHT = { n: "8", c: "#15181d", at: [960, 480] };
-          // ghost x/y from the frame 01/02 rack math (row4 col2,3,4) — never physical balls
-          var GHOSTS = [[960, 612], [1048, 612], [1136, 612]];
+          var PHYS = window.__PHYSICS__;
+          var LOCAL_DURATION = (PHYS.totalFrames - PHYS.breakEndFrame) / PHYS.fps;
 
           var ballLayer = root.querySelector(".ballLayer");
           var glowLayer = root.querySelector(".glowLayer");
           var receipt = root.querySelector(".receipt");
-          var subLayer = root.querySelector(".subLayer");
 
-          BALLS.forEach(function (b) {
+          var ballsById = {};
+          PHYS.balls.forEach(function (b) {
+            if (b.eight) return; // the 8 isn't part of this clearance — it never falls
             var el = document.createElement("div");
             el.className = "ball";
-            el.style.left = b.from[0] + "px";
-            el.style.top = b.from[1] + "px";
             el.style.setProperty("--bc", b.c);
             var inner = '<div class="disc">' + (b.stripe ? '<div class="band"></div>' : "") + "</div>";
             inner += '<div class="shine"></div>';
-            inner += '<div class="numWrap"><span class="num">' + b.n + "</span></div>";
+            inner += '<div class="numWrap"><span class="num">' + b.id + "</span></div>";
             el.innerHTML = inner;
             ballLayer.appendChild(el);
-            b._el = el;
-
-            var line = document.createElement("div");
-            line.className = "rline";
-            line.innerHTML = '<span class="rdot" style="background:' + b.c + '"></span>' + b.cat;
-            receipt.appendChild(line);
-            b._line = line;
+            ballsById[b.id] = { el: el, cat: b.cat, c: b.c };
           });
-
-          // the 8 stays put, centered
+          // the 8, present but untouched throughout
+          var eightMeta = PHYS.balls.find(function (b) { return b.eight; });
           var eightEl = document.createElement("div");
           eightEl.className = "ball";
-          eightEl.style.left = EIGHT.at[0] + "px";
-          eightEl.style.top = EIGHT.at[1] + "px";
-          eightEl.style.setProperty("--bc", EIGHT.c);
-          eightEl.innerHTML =
-            '<div class="disc"></div><div class="shine"></div><div class="numWrap"><span class="num">8</span></div>';
+          eightEl.style.setProperty("--bc", eightMeta.c);
+          eightEl.innerHTML = '<div class="disc"></div><div class="shine"></div><div class="numWrap"><span class="num">8</span></div>';
           ballLayer.appendChild(eightEl);
 
+          var GHOSTS = [[960, 612], [1048, 612], [1136, 612]];
           GHOSTS.forEach(function (p) {
             var el = document.createElement("div");
             el.className = "ball ghost";
-            el.style.left = p[0] + "px";
-            el.style.top = p[1] + "px";
             el.innerHTML = '<div class="outline"></div>';
+            el.style.transform = "translate(" + p[0] + "px," + p[1] + "px)";
             ballLayer.appendChild(el);
           });
 
-          var tl = gsap.timeline({ paused: true });
-
-          BALLS.forEach(function (b, i) {
-            var t = 0.5 + i * 0.42;
-            var target = POCKETS[b.to];
+          // one glow + one receipt line per real pot event, in the order it actually happened
+          var pocketPos = PHYS.pockets;
+          PHYS.events.forEach(function (ev) {
             var glow = document.createElement("div");
+            var pk = pocketPos[ev.pocket];
             glow.className = "glow";
-            glow.style.left = target[0] + "px";
-            glow.style.top = target[1] + "px";
+            glow.style.transform = "translate(" + pk.x + "px," + pk.y + "px)";
             glowLayer.appendChild(glow);
+            ev._glowEl = glow;
 
-            var dx = target[0] - b.from[0];
-            var dy = target[1] - b.from[1];
-            tl.to(b._el, { x: dx, y: dy, scale: 0.3, duration: 0.4, ease: "power2.in" }, t);
-            tl.to(b._el, { opacity: 0, duration: 0.12 }, t + 0.32);
-            tl.fromTo(glow, { opacity: 0 }, { opacity: 1, duration: 0.15, ease: "power1.out" }, t + 0.3);
-            tl.to(glow, { opacity: 0, duration: 0.3, ease: "power1.in" }, t + 0.45);
-
-            tl.fromTo(
-              b._line,
-              { opacity: 0, x: 40, scale: 0.9 },
-              { opacity: 1, x: 0, scale: 1, duration: 0.35, ease: "back.out(1.8)" },
-              t + 0.15
-            );
+            var meta = ballsById[ev.id];
+            var line = document.createElement("div");
+            line.className = "rline";
+            line.innerHTML = '<span class="rdot" style="background:' + meta.c + '"></span>' + meta.cat;
+            receipt.appendChild(line);
+            ev._lineEl = line;
+            ev.localFrame = ev.frame - PHYS.breakEndFrame;
           });
 
+          function renderAt(localT) {
+            var idx = Math.min(PHYS.totalFrames - PHYS.breakEndFrame - 1, Math.max(0, Math.round(localT * PHYS.fps)));
+            var frame = PHYS.frames[PHYS.breakEndFrame + idx];
+            Object.keys(ballsById).forEach(function (id) {
+              var b = ballsById[id];
+              var p = frame[id];
+              if (p) {
+                b.el.style.opacity = 1;
+                b.el.style.transform = "translate(" + p.x + "px," + p.y + "px)";
+              } else {
+                b.el.style.opacity = 0;
+              }
+            });
+            var eightP = frame["8"];
+            if (eightP) eightEl.style.transform = "translate(" + eightP.x + "px," + eightP.y + "px)";
+
+            PHYS.events.forEach(function (ev) {
+              var since = idx - ev.localFrame;
+              var visible = since >= 0;
+              ev._lineEl.style.opacity = visible ? Math.min(1, since / 8 + 0.4) : 0;
+              ev._lineEl.style.transform = visible ? "none" : "translateX(24px)";
+              var glowT = since / 12;
+              ev._glowEl.style.opacity = visible ? Math.max(0, 1 - glowT) : 0;
+              ev._glowEl.style.transform = "translate(" + pocketPos[ev.pocket].x + "px," + pocketPos[ev.pocket].y + "px) scale(" + (1 + glowT * 0.6) + ")";
+            });
+          }
+
+          var tl = gsap.timeline({ paused: true });
+          var driver = { t: 0 };
+          tl.to(
+            driver,
+            {
+              t: LOCAL_DURATION,
+              duration: LOCAL_DURATION,
+              ease: "none",
+              onUpdate: function () {
+                renderAt(driver.t);
+              },
+            },
+            0
+          );
+
           // Counter: tumble through nonsense-fast numbers, resolve on the real range
+          // once the table's actually clear (last real pot event), not on a guess.
+          var lastEventLocalT = Math.max.apply(
+            null,
+            PHYS.events.map(function (e) { return e.localFrame / PHYS.fps; })
+          );
+          var counterAt = Math.min(LOCAL_DURATION - 2.0, lastEventLocalT + 0.5);
           var tumble = root.querySelector(".tumble");
           var counterWrap = root.querySelector(".counterWrap");
-          tl.fromTo(counterWrap, { opacity: 0, y: 18 }, { opacity: 1, y: 0, duration: 0.4, ease: "power2.out" }, 5.6);
+          tl.fromTo(counterWrap, { opacity: 0, y: 18 }, { opacity: 1, y: 0, duration: 0.4, ease: "power2.out" }, counterAt);
           var tumbleSteps = ["120 €", "260 €", "410 €", "590 €", "730 €", "880 €", "1 010 €"];
           tumbleSteps.forEach(function (v, i) {
-            tl.set(tumble, { textContent: v }, 5.7 + i * 0.09);
+            tl.set(tumble, { textContent: v }, counterAt + 0.1 + i * 0.09);
           });
           tl.call(
             function () {
               tumble.innerHTML = '<span class="range">540 € – 1 040 €</span> / mois';
             },
             null,
-            6.35
+            counterAt + 0.75
           );
-          tl.fromTo(tumble, { scale: 1.08 }, { scale: 1, duration: 0.3, ease: "back.out(2)" }, 6.35);
+          tl.fromTo(tumble, { scale: 1.08 }, { scale: 1, duration: 0.3, ease: "back.out(2)" }, counterAt + 0.75);
 
-          // Legal bandeau — 3s+ on screen
           var legal = root.querySelector(".legal");
-          tl.fromTo(legal, { opacity: 0 }, { opacity: 1, duration: 0.4, ease: "power2.out" }, 6.6);
-          tl.to(legal, { opacity: 0, duration: 0.3 }, 9.8);
+          tl.fromTo(legal, { opacity: 0 }, { opacity: 1, duration: 0.4, ease: "power2.out" }, counterAt + 1.0);
+          tl.to(legal, { opacity: 0, duration: 0.3 }, LOCAL_DURATION - 0.4);
 
           // Subtitles
+          var subLayer = root.querySelector(".subLayer");
           var LINES = [
-            [0.4, 2.9, "Un restaurant équipé paie entre"],
-            [2.9, 5.35, "cinq cent quarante et mille quarante euros par mois"],
-            [5.35, 6.04, "Hors caisse."],
-            [6.04, 6.62, "Hors paie."],
+            [0.3, 2.8, "Un restaurant équipé paie entre"],
+            [2.8, 5.25, "cinq cent quarante et mille quarante euros par mois"],
+            [5.25, 5.94, "Hors caisse."],
+            [5.94, 6.52, "Hors paie."],
           ];
           LINES.forEach(function (l) {
             var el = document.createElement("div");

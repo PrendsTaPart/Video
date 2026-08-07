@@ -91,11 +91,12 @@
 
           var ballLayer = root.querySelector(".ballLayer");
 
-          // the 8, still centered, still there
+          // the 8 — wherever the real break/clearance physics actually left it
+          // (never targeted, never pocketed, but not pinned to table-center either)
           var eight = document.createElement("div");
           eight.className = "ball";
-          eight.style.left = "960px";
-          eight.style.top = "480px";
+          eight.style.left = "1363px";
+          eight.style.top = "698px";
           eight.style.setProperty("--bc", "#15181d");
           eight.innerHTML = '<div class="disc"></div><div class="shine"></div><div class="numWrap"><span class="num">8</span></div>';
           ballLayer.appendChild(eight);

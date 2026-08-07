@@ -97,13 +97,21 @@
 
           var tl = gsap.timeline({ paused: true });
           var ballWrap = root.querySelector(".ballWrap");
+          var ball8 = root.querySelector(".ball8");
           var discBlack = root.querySelector(".discBlack");
           var discBlue = root.querySelector(".discBlue");
           var halo = root.querySelector(".halo");
           var tint = root.querySelector(".tint");
           var caption = root.querySelector(".caption");
 
+          // The 8 didn't teleport to center between frames — it's wherever the
+          // real physics of frames 02/03 actually left it (never pocketed, but
+          // not parked mid-table either). This frame is the cut back to it:
+          // find it, then settle onto the center as the line lands.
+          var EIGHT_REST = { x: 1363, y: 698.4 };
+          gsap.set(ball8, { x: EIGHT_REST.x - 960, y: EIGHT_REST.y - 480 });
           tl.fromTo(ballWrap, { scale: 0.85, opacity: 0 }, { scale: 1, opacity: 1, duration: 0.5, ease: "power2.out" }, 0);
+          tl.to(ball8, { x: 0, y: 0, duration: 1.1, ease: "power3.inOut" }, 0.15);
           tl.to(ballWrap, { rotation: 6, duration: 2.2, ease: "sine.inOut", yoyo: true, repeat: 1 }, 0.4);
 
           // Color pivot on "Ici aussi" (t≈2.76)

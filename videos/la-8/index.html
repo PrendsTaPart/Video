@@ -16,7 +16,7 @@
       id="root"
       data-composition-id="main"
       data-start="0"
-      data-duration="60"
+      data-duration="61.733"
       data-width="1920"
       data-height="1080"
     >
@@ -36,7 +36,7 @@
         data-composition-id="02-break"
         data-composition-src="compositions/frames/02-break.html"
         data-start="14"
-        data-duration="8"
+        data-duration="7.5"
         data-track-index="1"
       ></div>
 
@@ -45,8 +45,8 @@
         class="scene"
         data-composition-id="03-note"
         data-composition-src="compositions/frames/03-note.html"
-        data-start="22"
-        data-duration="10"
+        data-start="21.5"
+        data-duration="12.233"
         data-track-index="0"
       ></div>
 
@@ -55,7 +55,7 @@
         class="scene"
         data-composition-id="04-trous"
         data-composition-src="compositions/frames/04-trous.html"
-        data-start="32"
+        data-start="33.733"
         data-duration="7"
         data-track-index="1"
       ></div>
@@ -65,7 +65,7 @@
         class="scene"
         data-composition-id="05-la8"
         data-composition-src="compositions/frames/05-la8.html"
-        data-start="39"
+        data-start="40.733"
         data-duration="7"
         data-track-index="0"
       ></div>
@@ -75,7 +75,7 @@
         class="scene"
         data-composition-id="06-cta"
         data-composition-src="compositions/frames/06-cta.html"
-        data-start="46"
+        data-start="47.733"
         data-duration="14"
         data-track-index="1"
       ></div>
@@ -90,22 +90,22 @@
         tl.set("#el-01-triangle", { opacity: 0 }, 14);
 
         // 02 → 03: quick crossfade
-        tl.to("#el-02-break", { opacity: 0, duration: 0.35, ease: "power2.inOut" }, 22);
-        tl.fromTo("#el-03-note", { opacity: 0 }, { opacity: 1, duration: 0.35, ease: "power2.inOut" }, 22);
+        tl.to("#el-02-break", { opacity: 0, duration: 0.35, ease: "power2.inOut" }, 21.5);
+        tl.fromTo("#el-03-note", { opacity: 0 }, { opacity: 1, duration: 0.35, ease: "power2.inOut" }, 21.5);
 
         // 03 → 04: crossfade
-        tl.to("#el-03-note", { opacity: 0, duration: 0.4, ease: "power2.inOut" }, 32);
-        tl.fromTo("#el-04-trous", { opacity: 0 }, { opacity: 1, duration: 0.4, ease: "power2.inOut" }, 32);
+        tl.to("#el-03-note", { opacity: 0, duration: 0.4, ease: "power2.inOut" }, 33.733);
+        tl.fromTo("#el-04-trous", { opacity: 0 }, { opacity: 1, duration: 0.4, ease: "power2.inOut" }, 33.733);
 
         // 04 → 05: hard-ish cut with a flash of white (the pivot to "la 8")
-        tl.to("#el-04-trous", { opacity: 0, duration: 0.18, ease: "power1.in" }, 39);
-        tl.fromTo("#el-05-la8", { opacity: 0 }, { opacity: 1, duration: 0.18, ease: "power1.out" }, 39);
+        tl.to("#el-04-trous", { opacity: 0, duration: 0.18, ease: "power1.in" }, 40.733);
+        tl.fromTo("#el-05-la8", { opacity: 0 }, { opacity: 1, duration: 0.18, ease: "power1.out" }, 40.733);
 
         // 05 → 06: crossfade
-        tl.to("#el-05-la8", { opacity: 0, duration: 0.4, ease: "power2.inOut" }, 46);
-        tl.fromTo("#el-06-cta", { opacity: 0 }, { opacity: 1, duration: 0.4, ease: "power2.inOut" }, 46);
+        tl.to("#el-05-la8", { opacity: 0, duration: 0.4, ease: "power2.inOut" }, 47.733);
+        tl.fromTo("#el-06-cta", { opacity: 0 }, { opacity: 1, duration: 0.4, ease: "power2.inOut" }, 47.733);
 
-        tl.to({}, { duration: 60 }, 0); // full-span anchor — main.duration() == 60s master
+        tl.to({}, { duration: 61.733 }, 0); // full-span anchor — main.duration() == master duration
       })();
     </script>
   </body>
