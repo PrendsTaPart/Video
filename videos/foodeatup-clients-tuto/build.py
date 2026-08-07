@@ -1,0 +1,257 @@
+#!/usr/bin/env python3
+# FoodEatUp "Gérer ses clients côté ventes" tutorial.
+# Sibling of foodeatup-fournisseurs-achats-tuto (même section "Fournisseurs &
+# clients" du module comptabilite) -- même moteur, mêmes réglages.
+# No avatar clip, no séquence Claude animée (3 claudePrompts texte suffisent,
+# comme sur le jumeau). Speed = setpts (jamais zoompan sur les rushs réels).
+# xfade "fade" uniquement (même écran d'un bout à l'autre, y compris le saut
+# de pagination). 48kHz stereo AAC, +faststart.
+import subprocess, os, sys
+
+ROOT = "/home/user/Video/videos/foodeatup-clients-tuto"
+SRC  = f"{ROOT}/assets/screen.mp4"
+W, H, FPS = 1920, 828, 25
+SEG = f"{ROOT}/work/seg"
+FONT = "/usr/share/fonts/truetype/liberation/LiberationSans-Bold.ttf"
+BLUE, ORANGE = "0x1B6DF3", "0xF7941D"
+XF = 0.28
+os.makedirs(SEG, exist_ok=True)
+
+def run(cmd):
+    r = subprocess.run(cmd, capture_output=True, text=True)
+    if r.returncode != 0:
+        print("ERR:", " ".join(cmd)[:300]); print(r.stderr[-2000:]); raise SystemExit(1)
+
+def dur(path):
+    r = subprocess.run(["ffprobe","-v","error","-show_entries","format=duration",
+                        "-of","csv=p=0",path], capture_output=True, text=True)
+    return float(r.stdout.strip())
+
+def clamp(v, lo, hi): return max(lo, min(hi, v))
+
+ZOOM = 1.20
+def crop_for(btn):
+    bx, by = btn
+    cw, ch = int(W/ZOOM), int(H/ZOOM); cw -= cw % 2; ch -= ch % 2
+    x = int(clamp(bx - cw/2, 0, W - cw)); y = int(clamp(by - ch/2, 0, H - ch))
+    return f"crop={cw}:{ch}:{x}:{y},scale={W}:{H}:flags=bicubic", (cw, ch, x, y)
+
+def punch_highlight(btn, btn_wh, crop_box):
+    cw, ch, cx, cy = crop_box
+    sx, sy = W / cw, H / ch
+    bw, bh = btn_wh[0] * sx, btn_wh[1] * sy
+    ox, oy = (btn[0] - cx) * sx, (btn[1] - cy) * sy
+    p = 14
+    return (f"drawbox=x='{ox-bw/2-p}':y='{oy-bh/2-p}'"
+            f":w='{bw+2*p}':h='{bh+2*p}'"
+            f":color={ORANGE}@0.95:t=5")
+
+# Bandeaux d'étape rendus en PNG (PIL) puis glissés avec overlay -- drawbox
+# n'évalue pas t sur cet ffmpeg (piège documenté dans FOODEATUP-TUTORIELS-
+# WORKFLOW.md), et le rendu PIL évite aussi la contrainte apostrophe/%.
+from PIL import Image, ImageDraw, ImageFont
+BANNER_H = 62
+def render_banner_png(text, path):
+    f = ImageFont.truetype(FONT, 31)
+    tmp = Image.new("RGB", (10, 10))
+    bbox = ImageDraw.Draw(tmp).textbbox((0, 0), text, font=f)
+    tw = bbox[2] - bbox[0]
+    plate_w = tw + 68
+    img = Image.new("RGBA", (plate_w + 10, BANNER_H), (0, 0, 0, 0))
+    d = ImageDraw.Draw(img)
+    d.rectangle([0, 0, plate_w + 10 - 1, BANNER_H - 1], fill="#F7941DFA")
+    d.rectangle([10, 0, plate_w - 1, BANNER_H - 1], fill="#1B6DF3E6")
+    d.text((34, 16), text, font=f, fill="white")
+    img.save(path)
+
+def banner_overlay(text, seg_dur, idx):
+    if not text: return None, None
+    png = f"{SEG}/banner_{idx}.png"
+    render_banner_png(text, png)
+    im = Image.open(png)
+    plate_w = im.width
+    tin, sl = 0.15, 0.32
+    x = f"-{plate_w}+({plate_w}+24)*min(1\\,max(0\\,(t-{tin})/{sl}))"
+    y = H - 108
+    return png, f"overlay=x='{x}':y={y}:shortest=1"
+
+def banner(text, seg_dur, idx):
+    png, ov = banner_overlay(text, seg_dur, idx)
+    return png, ov
+
+# Coordonnées de clic mesurées directement sur les frames extraites du rush,
+# résolution source native 1920x828 (voir analyse -- ffmpeg fps=5 diff +
+# frames ciblées ss=1.95 / 27.9 / 35.5 / 39.9 / 42.5 / 45.5 / 46.8).
+BTN_ADD_CLIENT   = (1601, 183); SZ_ADD_CLIENT   = (280, 48)   # "Ajouter un nouveau client"
+BTN_ENREGISTRER  = (1032, 722); SZ_ENREGISTRER  = (235, 49)   # "Enregistrer le client"
+BTN_MODIFIER     = (1621, 648); SZ_MODIFIER     = (190, 50)   # "Modifier" (carte Jean dupont)
+BTN_SUPPRIMER    = (1361, 648); SZ_SUPPRIMER    = (220, 50)   # "Supprimer" (carte Jean dupont)
+BTN_OUI_SUPPR    = (1029, 745); SZ_OUI_SUPPR    = (178, 52)   # "Oui, supprimer"
+BTN_ANNULER      = (861,  745); SZ_ANNULER      = (178, 52)   # "Annuler" (modale suppression)
+
+# (name, src_start, src_end, target_out_duration, button, btn_size, caption)
+# Durées calibrées sur la VO qui les commente (règle du WORKFLOW.md), pas
+# l'inverse. N5 ("Modifiez-le ... options avancées") court sur H+I ; N6
+# ("fiche complète") sur J ; N7 ("suppression, confirmation") sur L.
+segs = [
+    ("A",  0.20,  1.90,  2.60, None,            None,            "Liste des clients"),
+    ("B",  1.90,  2.20,  0.80, BTN_ADD_CLIENT,  SZ_ADD_CLIENT,   None),
+    ("C1", 2.20,  20.00, 4.80, None,            None,            "1 · Identité, coordonnées et adresse"),
+    ("C2", 20.00, 27.80, 5.40, None,            None,            "2 · Détails & facturation (optionnel)"),
+    ("D",  27.80, 28.30, 0.80, BTN_ENREGISTRER, SZ_ENREGISTRER,  None),
+    ("E",  28.30, 29.60, 1.80, None,            None,            "Client ajouté"),
+    ("G",  36.30, 36.90, 0.80, BTN_MODIFIER,    SZ_MODIFIER,     None),
+    ("H",  36.90, 39.60, 2.80, None,            None,            "3 · Modifier ses informations"),
+    ("I",  42.70, 44.30, 3.30, None,            None,            "4 · Options avancées"),
+    ("J",  40.20, 41.85, 3.40, None,            None,            "5 · Fiche détaillée"),
+    ("K",  45.50, 45.70, 0.70, BTN_SUPPRIMER,   SZ_SUPPRIMER,    None),
+    ("L",  45.70, 46.80, 5.80, None,            None,            "6 · Suppression : confirmation obligatoire"),
+    ("M",  46.80, 47.00, 0.70, BTN_ANNULER,     SZ_ANNULER,      None),
+]
+INTRO_D, OUTRO_D = 3.20, 6.20
+
+def encode_seg(idx, name, s, e, target, btn, btn_sz, caption):
+    out = f"{SEG}/{name}.mp4"
+    factor = (e - s) / target
+    vf = f"setpts=(PTS-STARTPTS)/{factor:.6f}"
+    if btn:
+        crop_vf, box = crop_for(btn)
+        vf += f",{crop_vf},{punch_highlight(btn, btn_sz, box)}"
+    else:
+        vf += f",scale={W}:{H}"
+    vf += f",fps={FPS},format=yuv420p"
+    png, ov = (None, None)
+    if caption:
+        png, ov = banner(caption, target, idx)
+    if ov:
+        run(["ffmpeg","-y","-v","error","-ss",str(s),"-to",str(e),"-i",SRC,
+             "-loop","1","-i",png,"-an",
+             "-filter_complex", f"[0:v]{vf}[base];[base][1:v]{ov}[vout]",
+             "-map","[vout]","-r",str(FPS),"-c:v","libx264","-preset","medium","-crf","18",out])
+    else:
+        run(["ffmpeg","-y","-v","error","-ss",str(s),"-to",str(e),"-i",SRC,"-an",
+             "-vf",vf,"-r",str(FPS),"-c:v","libx264","-preset","medium","-crf","18",out])
+    return out
+
+def card(img, out, secs, zoom_in=True):
+    z0, z1 = (1.0, 1.09) if zoom_in else (1.09, 1.0)
+    frames = int(secs * FPS)
+    zexpr = f"{z0}+({z1}-{z0})*on/{frames}"
+    vf = (f"[0:v]scale={W}:{H}:force_original_aspect_ratio=increase,crop={W}:{H},"
+          f"boxblur=20:2,eq=brightness=-0.06[bg];"
+          f"[0:v]scale={W}:{H}:force_original_aspect_ratio=decrease[fg];"
+          f"[bg][fg]overlay=(W-w)/2:(H-h)/2,scale={W*2}:{H*2},"
+          f"zoompan=z='{zexpr}':x='iw/2-(iw/zoom/2)':y='ih/2-(ih/zoom/2)'"
+          f":d=1:s={W}x{H}:fps={FPS}"
+          f",fade=t=in:st=0:d=0.4,fade=t=out:st={secs-0.4:.3f}:d=0.4,format=yuv420p")
+    run(["ffmpeg","-y","-v","error","-loop","1","-t",str(secs),"-i",img,
+         "-filter_complex",vf,"-r",str(FPS),
+         "-c:v","libx264","-preset","medium","-crf","18",out])
+
+def still_seg(idx, img, out, secs, caption):
+    """Freeze-frame segment (no fade-in/out of its own -- xfade handles the
+    cut) for source states that are genuinely static (dialogs, confirmations):
+    avoids the artificial slow-motion a large setpts stretch would produce on
+    real footage that isn't actually moving during that window."""
+    frames = int(secs * FPS)
+    zexpr = f"1.0+0.05*on/{frames}"
+    vf = (f"scale={W*2}:{H*2},zoompan=z='{zexpr}':x='iw/2-(iw/zoom/2)':y='ih/2-(ih/zoom/2)'"
+          f":d=1:s={W}x{H}:fps={FPS}")
+    png, ov = (None, None)
+    if caption:
+        png, ov = banner(caption, secs, idx)
+    if ov:
+        run(["ffmpeg","-y","-v","error","-loop","1","-t",str(secs),"-i",img,
+             "-loop","1","-i",png,
+             "-filter_complex", f"[0:v]{vf}[base];[base][1:v]{ov},format=yuv420p[vout]",
+             "-map","[vout]","-r",str(FPS),"-c:v","libx264","-preset","medium","-crf","18",out])
+    else:
+        run(["ffmpeg","-y","-v","error","-loop","1","-t",str(secs),"-i",img,
+             "-vf",vf+",format=yuv420p","-r",str(FPS),"-c:v","libx264","-preset","medium","-crf","18",out])
+    return out
+
+def build_silent(outro_d):
+    card(f"{ROOT}/assets/intro.jpg", f"{SEG}/intro.mp4", INTRO_D, zoom_in=True)
+    card(f"{ROOT}/assets/outro.jpg", f"{SEG}/outro.mp4", outro_d, zoom_in=False)
+    parts = [f"{SEG}/intro.mp4"]
+    for i, (name, s, e, target, btn, sz, cap) in enumerate(segs):
+        if name == "L":
+            parts.append(still_seg(i, f"{ROOT}/assets/delete-confirm.jpg",
+                                    f"{SEG}/{name}.mp4", target, cap))
+        else:
+            parts.append(encode_seg(i, name, s, e, target, btn, sz, cap))
+    parts.append(f"{SEG}/outro.mp4")
+
+    trans = ["fade"] * (len(parts) - 1)
+    durs = [dur(p) for p in parts]
+    starts, acc = [], 0.0
+    for i, d in enumerate(durs):
+        starts.append(acc); acc += d - (XF if i < len(durs) - 1 else 0)
+    total = acc
+
+    inputs, fc, cur = [], [], "[0:v]"
+    for p in parts: inputs += ["-i", p]
+    for k in range(len(parts) - 1):
+        off = starts[k + 1]
+        lbl = f"[x{k}]"
+        fc.append(f"{cur}[{k+1}:v]xfade=transition={trans[k]}:duration={XF}"
+                  f":offset={off:.4f}{lbl}")
+        cur = lbl
+    fc.append(f"{cur}format=yuv420p[vout]")
+    silent = f"{ROOT}/work/video_silent.mp4"
+    run(["ffmpeg","-y","-v","error"] + inputs +
+        ["-filter_complex", ";".join(fc), "-map", "[vout]",
+         "-r",str(FPS),"-c:v","libx264","-profile:v","high","-pix_fmt","yuv420p",
+         "-preset","medium","-crf","18", silent])
+    return silent, starts, total
+
+silent, starts, total = build_silent(OUTRO_D)
+print(f"SILENT TOTAL: {dur(silent):.2f}s")
+labels_order = ["intro"] + [s[0] for s in segs] + ["outro"]
+S = dict(zip(labels_order, starts))
+OUTRO_START = S["outro"]
+
+GAP = 0.22
+anchor = {
+    "N0": 0.30,                 # intro hook
+    "N1": S["A"] + 0.15,        # liste des clients
+    "N2": S["C1"] + 0.20,       # identité, coordonnées, adresse
+    "N3": S["C2"] + 0.20,       # détails & facturation optionnels
+    "N4": S["E"] + 0.10,        # ajouté à la liste
+    "N5": S["H"] + 0.20,        # modifier -- se poursuit sur I (options avancées)
+    "N6": S["J"] + 0.20,        # fiche détaillée
+    "N7": S["L"] + 0.20,        # suppression : confirmation obligatoire
+    "N8": OUTRO_START + 0.35,   # CTA (réutilisée telle quelle)
+}
+keys = [f"N{i}" for i in range(9)]
+vo_files = {k: f"{ROOT}/vo/{k}.mp3" for k in keys}
+off, prev_end = {}, -GAP
+for k in keys:
+    o = max(anchor[k], prev_end + GAP); off[k] = o
+    prev_end = o + dur(vo_files[k])
+print("offsets:", {k: round(v, 2) for k, v in off.items()}, "voice_end:", round(prev_end, 2))
+drift = {k: round(off[k] - anchor[k], 2) for k in keys if off[k] - anchor[k] > 0.05}
+print("drift vs anchors:", drift if drift else "none -- all lines on their anchors")
+
+needed = prev_end - OUTRO_START + 0.80
+if needed > OUTRO_D:
+    print(f"extending outro {OUTRO_D:.2f} -> {needed:.2f}")
+    silent, starts, total = build_silent(needed)
+    print(f"SILENT TOTAL (extended): {dur(silent):.2f}s")
+
+total = dur(silent)
+inputs, filters, labels = [], [], []
+for i, k in enumerate(keys):
+    inputs += ["-i", vo_files[k]]; ms = int(off[k] * 1000)
+    filters.append(f"[{i+1}:a]loudnorm=I=-16:TP=-1.5:LRA=11,adelay={ms}|{ms},apad[a{i}]")
+    labels.append(f"[a{i}]")
+filters.append("".join(labels) + f"amix=inputs={len(keys)}:normalize=0:duration=first[mix]")
+filters.append(f"[mix]atrim=0:{total:.3f},alimiter=limit=0.6:level=disabled,"
+               f"aresample=48000,aformat=sample_fmts=fltp:channel_layouts=stereo,"
+               f"asetpts=N/SR/TB[voa]")
+FINAL = f"{ROOT}/out/foodeatup-clients-tuto-v1.mp4"
+run(["ffmpeg","-y","-v","error","-i",silent] + inputs +
+    ["-filter_complex",";".join(filters),"-map","0:v","-map","[voa]",
+     "-c:v","copy","-c:a","aac","-b:a","192k","-ar","48000","-ac","2",
+     "-movflags","+faststart","-t",f"{total:.3f}",FINAL])
+print(f"DONE: {FINAL}  {dur(FINAL):.2f}s")
