@@ -111,10 +111,12 @@ orange pulsant sur les 6 clics. Pas de séquence Claude animée (3
 
 ## Statut publication
 
-Montage terminé, checklist de compatibilité passée (H.264 High/yuv420p, AAC
-48 kHz stéréo, faststart, peak -7,17 dBFS). **En attente de validation par
-Michael avant publication** (règle du workflow) : livré via `SendUserFile`,
-commit/push du dossier projet sur la branche
-`claude/foodeatup-video-tutorials-qclxxe`. Pas encore uploadé sur
-RapidoCMS/LinkedIn ni mis à jour dans `tutorials.ts` — en attente d'un retour
-explicite.
+**Validée par Michael et publiée le 2026-08-07.** RapidoCMS : vidéo + vignette
+uploadées (`gerer-ses-clients-cote-ventes-v1` / `-thumbnail`, pointant vers le
+raw GitHub de cette branche). Lovable (FoodEatUp Academy,
+`foodeatup-guide-star`) : fiche placeholder `gerer-ses-clients-cote-ventes`
+complétée avec `howItWorks`, `whatItsFor`, `chefTip` (mention explicite de la
+base clients pour les campagnes marketing SMS/jeux concours/sondages,
+alimentée par tous les canaux de vente — demande de Michael) et 3
+`claudePrompts` (commit Lovable `c49ffbe`). Pas de draft LinkedIn programmé
+sur cette passe (non demandé).
