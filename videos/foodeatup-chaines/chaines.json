@@ -1,0 +1,49 @@
+{
+  "projet": "foodeatup-chaines",
+  "format": "1920x1080",
+  "cible": "dirigeants et directeurs financiers de chaînes de boulangerie et de restauration (5 à 60 points de vente)",
+  "angle": "l'écart entre sites, pas la moyenne",
+  "voix_off": {
+    "fournisseur": "ElevenLabs",
+    "modele": "eleven_multilingual_v2",
+    "langue": "fr",
+    "voice_id": null,
+    "statut": "NON GÉNÉRÉE — en attente de l'accord de coût (préflight C0) et du choix de voix",
+    "note": "Ne PAS reprendre par défaut la voix Adam FR (TGAegA0zNRi8I6nUdq3i) de la série tutoriels : son registre est 'simple et ludique', l'opposé de celui demandé ici ('un directeur financier qui expose un constat à un pair'). Une voix posée, grave, sans sourire, à choisir explicitement."
+  },
+  "chiffres": {
+    "version": "sans chiffres",
+    "raison": "les 4 chiffres [À CONFIRMER] n'ont pas été fournis — voir SOURCES.md. Clause C0 appliquée : formuler la question plutôt qu'affirmer la réponse."
+  },
+  "variantes": [
+    {
+      "variante": "boulangerie",
+      "kpi": "taux d'invendus par magasin",
+      "statut": "composition muette rendue et vérifiée (40/40 critères) — VO en attente",
+      "duree_cible": 55.0,
+      "duree_reelle": 55.0,
+      "note_duree": "durée provisoire : les data-duration devront être recalées sur la durée réelle de la VO une fois celle-ci générée (règle C0 : la VO fixe les durées)",
+      "sequences": [
+        { "n": 1, "titre": "Le chiffre qui manque", "scene": "s1", "start": 0.0, "duree": 15.0 },
+        { "n": 2, "titre": "L'écart révélé (les 12 barres)", "scene": "s2", "start": 15.0, "duree": 13.0 },
+        { "n": 2, "titre": "L'écart révélé (le mot)", "scene": "s3", "start": 28.0, "duree": 5.0 },
+        { "n": 3, "titre": "Pourquoi personne ne le voit", "scene": "s4", "start": 33.0, "duree": 12.0 },
+        { "n": 4, "titre": "Le coût du délai", "scene": "s5", "start": 45.0, "duree": 10.0 }
+      ]
+    },
+    {
+      "variante": "restauration",
+      "kpi": "food cost par site à carte identique",
+      "statut": "non produite (C3 — après validation de la séquence 2 boulangerie)",
+      "duree_cible": 55.0,
+      "duree_reelle": null
+    },
+    {
+      "variante": "commun",
+      "perimetre": "séquences 5 à 9",
+      "statut": "BLOQUÉ — la vue consolidée multi-établissements n'existe pas dans le MCP FoodEatUp (voir SOURCES.md). Les séquences 5, 6 et 8 montreraient un écran non vérifié.",
+      "duree_cible": 65.0,
+      "duree_reelle": null
+    }
+  ]
+}
