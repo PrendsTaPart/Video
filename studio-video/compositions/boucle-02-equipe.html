@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=1920, height=1080" />
+    <script src="assets/vendor/gsap.min.js"></script>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      html,
+      body {
+        width: 1920px;
+        height: 1080px;
+        overflow: hidden;
+        background: #fcf9e6;
+      }
+      body {
+        font-family: "Inter", sans-serif;
+      }
+
+      @font-face {
+        font-family: "Fredoka";
+        src: url("assets/vendor/fonts/Fredoka-Variable.woff2") format("woff2-variations");
+        font-weight: 300 700;
+        font-display: block;
+      }
+
+      #root {
+        position: relative;
+        width: 1920px;
+        height: 1080px;
+        overflow: hidden;
+        background: #fcf9e6;
+      }
+      /* Sub-comp slots fill the root. */
+      #root > div[data-composition-src] {
+        position: absolute;
+        inset: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div
+      id="root"
+      data-composition-id="boucle-02-equipe"
+      data-start="0"
+      data-width="1920"
+      data-height="1080"
+      data-duration="62"
+    >
+      <div
+        id="el-scene1"
+        data-composition-id="b02-scene1-probleme"
+        data-composition-src="compositions/boucle-02/scene-1-probleme.html"
+        data-start="0"
+        data-duration="10.12"
+        data-track-index="1"
+        data-width="1920"
+        data-height="1080"
+      ></div>
+
+      <div
+        id="el-scene2"
+        data-composition-id="b02-scene2-question"
+        data-composition-src="compositions/boucle-02/scene-2-question.html"
+        data-start="10.12"
+        data-duration="2.64"
+        data-track-index="1"
+        data-width="1920"
+        data-height="1080"
+      ></div>
+
+      <div
+        id="el-scene3"
+        data-composition-id="b02-scene3-cascade"
+        data-composition-src="compositions/boucle-02/scene-3-cascade.html"
+        data-start="12.76"
+        data-duration="21.41"
+        data-track-index="1"
+        data-width="1920"
+        data-height="1080"
+      ></div>
+
+      <div
+        id="el-scene4"
+        data-composition-id="b02-scene4-detection"
+        data-composition-src="compositions/boucle-02/scene-4-detection.html"
+        data-start="34.17"
+        data-duration="6.79"
+        data-track-index="1"
+        data-width="1920"
+        data-height="1080"
+      ></div>
+
+      <div
+        id="el-scene5"
+        data-composition-id="b02-scene5-boucles"
+        data-composition-src="compositions/boucle-02/scene-5-boucles-voisines.html"
+        data-start="40.96"
+        data-duration="7.67"
+        data-track-index="1"
+        data-width="1920"
+        data-height="1080"
+      ></div>
+
+      <div
+        id="el-scene6"
+        data-composition-id="b02-scene6-resultat"
+        data-composition-src="compositions/boucle-02/scene-6-resultat.html"
+        data-start="48.63"
+        data-duration="3.86"
+        data-track-index="1"
+        data-width="1920"
+        data-height="1080"
+      ></div>
+
+      <div
+        id="el-scene7"
+        data-composition-id="b02-scene7-cta"
+        data-composition-src="compositions/boucle-02/scene-7-cta.html"
+        data-start="52.49"
+        data-duration="9.51"
+        data-track-index="1"
+        data-width="1920"
+        data-height="1080"
+      ></div>
+
+      <!-- Continuous French voiceover — survives every scene cut. -->
+      <audio
+        id="el-vo"
+        src="assets/audio/boucle-02-equipe-vo.mp3"
+        data-start="0"
+        data-duration="58"
+        data-track-index="10"
+        data-volume="1"
+      ></audio>
+    </div>
+
+    <script>
+      window.__timelines = window.__timelines || {};
+      window.__timelines["boucle-02-equipe"] = gsap.timeline({ paused: true });
+    </script>
+  </body>
+</html>

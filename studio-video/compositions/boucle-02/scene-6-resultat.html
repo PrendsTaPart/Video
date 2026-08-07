@@ -1,0 +1,92 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+  </head>
+  <body>
+    <template>
+      <style>
+        @font-face {
+          font-family: "Fredoka";
+          src: url("assets/vendor/fonts/Fredoka-Variable.woff2") format("woff2-variations");
+          font-weight: 300 700;
+          font-display: block;
+        }
+        #root {
+          position: absolute;
+          inset: 0;
+          background: #fcf9e6;
+          overflow: hidden;
+          font-family: "Inter", sans-serif;
+        }
+        .stat-card {
+          position: absolute;
+          top: 350px;
+          width: 780px;
+          height: 380px;
+          background: #ffffff;
+          border: 3px solid #0f1a23;
+          border-radius: 24px;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          opacity: 0;
+          transform: scale(0.85);
+        }
+        #stat-time {
+          left: 130px;
+        }
+        #stat-cost {
+          left: 1010px;
+        }
+        .stat-value {
+          font-family: "Fredoka", sans-serif;
+          font-weight: 700;
+          font-size: 128px;
+          color: #007bff;
+          font-variant-numeric: tabular-nums;
+        }
+        .stat-label {
+          margin-top: 20px;
+          font-family: "Fredoka", sans-serif;
+          font-weight: 600;
+          font-size: 34px;
+          color: #0f1a23;
+          text-align: center;
+          padding: 0 60px;
+        }
+      </style>
+
+      <div
+        id="root"
+        data-composition-id="b02-scene6-resultat"
+        data-width="1920"
+        data-height="1080"
+        data-duration="3.86"
+      >
+        <div class="stat-card" id="stat-time">
+          <div class="stat-value" id="val-time">10 min</div>
+          <div class="stat-label">Planning fait en 10 minutes</div>
+        </div>
+        <div class="stat-card" id="stat-cost">
+          <div class="stat-value" id="val-cost">25-35%</div>
+          <div class="stat-label">Coût du travail par service, vs. chiffre d'affaires</div>
+        </div>
+      </div>
+
+      <script>
+        window.__timelines = window.__timelines || {};
+        const tl = gsap.timeline({ paused: true });
+
+        tl.fromTo("#stat-time", { opacity: 0, scale: 0.85, x: -20 }, { opacity: 1, scale: 1, x: 0, duration: 0.5, ease: "back.out(1.7)" }, 0.1);
+        tl.fromTo("#stat-cost", { opacity: 0, scale: 0.85, x: 20 }, { opacity: 1, scale: 1, x: 0, duration: 0.5, ease: "back.out(1.7)" }, 0.28);
+
+        tl.fromTo("#val-time", { scale: 0.6 }, { scale: 1, duration: 0.4, ease: "back.out(2.2)" }, 0.5);
+        tl.fromTo("#val-cost", { scale: 0.6 }, { scale: 1, duration: 0.4, ease: "back.out(2.2)" }, 0.65);
+
+        window.__timelines["b02-scene6-resultat"] = tl;
+      </script>
+    </template>
+  </body>
+</html>

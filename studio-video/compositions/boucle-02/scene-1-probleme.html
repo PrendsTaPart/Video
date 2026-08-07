@@ -1,0 +1,176 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+  </head>
+  <body>
+    <template>
+      <style>
+        @font-face {
+          font-family: "Fredoka";
+          src: url("assets/vendor/fonts/Fredoka-Variable.woff2") format("woff2-variations");
+          font-weight: 300 700;
+          font-display: block;
+        }
+        #root {
+          position: absolute;
+          inset: 0;
+          background: #fcf9e6;
+          overflow: hidden;
+          font-family: "Inter", sans-serif;
+        }
+        .eyebrow {
+          position: absolute;
+          top: 90px;
+          left: 0;
+          right: 0;
+          text-align: center;
+          font-family: "Fredoka", sans-serif;
+          font-weight: 600;
+          font-size: 34px;
+          letter-spacing: 0.02em;
+          color: #0f1a23;
+          opacity: 0.55;
+        }
+        .divider {
+          position: absolute;
+          left: 960px;
+          top: 220px;
+          width: 3px;
+          height: 620px;
+          background: #0f1a23;
+          opacity: 0.12;
+          transform-origin: top center;
+        }
+        .panel {
+          position: absolute;
+          top: 230px;
+          width: 760px;
+          height: 600px;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+        }
+        #panel-tue {
+          left: 90px;
+        }
+        #panel-sat {
+          left: 1070px;
+        }
+        .day-label {
+          font-family: "Fredoka", sans-serif;
+          font-weight: 700;
+          font-size: 56px;
+          color: #0f1a23;
+        }
+        .staff-row {
+          display: flex;
+          gap: 24px;
+          margin-top: 36px;
+        }
+        .staff-icon {
+          width: 64px;
+          height: 64px;
+          border-radius: 50%;
+          background: #007bff;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+        .staff-icon svg {
+          width: 34px;
+          height: 34px;
+          fill: #fcf9e6;
+        }
+        .bar-wrap {
+          margin-top: 48px;
+          width: 220px;
+          height: 340px;
+          display: flex;
+          flex-direction: column-reverse;
+        }
+        .bar {
+          width: 100%;
+          background: #007bff;
+          border-radius: 14px 14px 0 0;
+          transform: scaleY(0);
+          transform-origin: bottom;
+        }
+        .cover-count {
+          margin-top: 28px;
+          font-family: "Fredoka", sans-serif;
+          font-weight: 700;
+          font-size: 96px;
+          font-variant-numeric: tabular-nums;
+          color: #0f1a23;
+        }
+        .cover-label {
+          font-size: 26px;
+          color: #0f1a23;
+          opacity: 0.6;
+          margin-top: -6px;
+        }
+        #panel-sat .cover-count {
+          color: #007bff;
+        }
+      </style>
+
+      <div
+        id="root"
+        data-composition-id="b02-scene1-probleme"
+        data-width="1920"
+        data-height="1080"
+        data-duration="10.12"
+      >
+        <div class="eyebrow" id="eyebrow">MÊME ÉQUIPE, DEUX SOIRS</div>
+        <div class="divider" id="divider"></div>
+
+        <div class="panel" id="panel-tue">
+          <div class="day-label">Mardi</div>
+          <div class="staff-row" id="staff-tue">
+            <div class="staff-icon"><svg viewBox="0 0 24 24"><path d="M12 12c2.7 0 5-2.3 5-5s-2.3-5-5-5-5 2.3-5 5 2.3 5 5 5zm0 2c-3.3 0-10 1.7-10 5v3h20v-3c0-3.3-6.7-5-10-5z"/></svg></div>
+            <div class="staff-icon"><svg viewBox="0 0 24 24"><path d="M12 12c2.7 0 5-2.3 5-5s-2.3-5-5-5-5 2.3-5 5 2.3 5 5 5zm0 2c-3.3 0-10 1.7-10 5v3h20v-3c0-3.3-6.7-5-10-5z"/></svg></div>
+            <div class="staff-icon"><svg viewBox="0 0 24 24"><path d="M12 12c2.7 0 5-2.3 5-5s-2.3-5-5-5-5 2.3-5 5 2.3 5 5 5zm0 2c-3.3 0-10 1.7-10 5v3h20v-3c0-3.3-6.7-5-10-5z"/></svg></div>
+          </div>
+          <div class="bar-wrap"><div class="bar" id="bar-tue" style="height:22%"></div></div>
+          <div class="cover-count">12</div>
+          <div class="cover-label">couverts</div>
+        </div>
+
+        <div class="panel" id="panel-sat">
+          <div class="day-label">Samedi</div>
+          <div class="staff-row" id="staff-sat">
+            <div class="staff-icon"><svg viewBox="0 0 24 24"><path d="M12 12c2.7 0 5-2.3 5-5s-2.3-5-5-5-5 2.3-5 5 2.3 5 5 5zm0 2c-3.3 0-10 1.7-10 5v3h20v-3c0-3.3-6.7-5-10-5z"/></svg></div>
+            <div class="staff-icon"><svg viewBox="0 0 24 24"><path d="M12 12c2.7 0 5-2.3 5-5s-2.3-5-5-5-5 2.3-5 5 2.3 5 5 5zm0 2c-3.3 0-10 1.7-10 5v3h20v-3c0-3.3-6.7-5-10-5z"/></svg></div>
+            <div class="staff-icon"><svg viewBox="0 0 24 24"><path d="M12 12c2.7 0 5-2.3 5-5s-2.3-5-5-5-5 2.3-5 5 2.3 5 5 5zm0 2c-3.3 0-10 1.7-10 5v3h20v-3c0-3.3-6.7-5-10-5z"/></svg></div>
+          </div>
+          <div class="bar-wrap"><div class="bar" id="bar-sat" style="height:100%"></div></div>
+          <div class="cover-count">60</div>
+          <div class="cover-label">couverts</div>
+        </div>
+      </div>
+
+      <script>
+        window.__timelines = window.__timelines || {};
+        const tl = gsap.timeline({ paused: true });
+
+        tl.fromTo("#eyebrow", { opacity: 0, y: -16 }, { opacity: 0.55, y: 0, duration: 0.5, ease: "power2.out" }, 0.1);
+        tl.fromTo("#divider", { scaleY: 0 }, { scaleY: 1, duration: 0.6, ease: "power2.out" }, 0.25);
+
+        tl.fromTo("#panel-tue", { opacity: 0, y: 40 }, { opacity: 1, y: 0, duration: 0.6, ease: "back.out(1.6)" }, 0.35);
+        tl.fromTo("#panel-sat", { opacity: 0, y: 40 }, { opacity: 1, y: 0, duration: 0.6, ease: "back.out(1.6)" }, 0.55);
+
+        tl.fromTo("#staff-tue .staff-icon", { scale: 0 }, { scale: 1, duration: 0.4, ease: "back.out(2.4)", stagger: 0.08 }, 0.9);
+        tl.fromTo("#staff-sat .staff-icon", { scale: 0 }, { scale: 1, duration: 0.4, ease: "back.out(2.4)", stagger: 0.08 }, 1.05);
+
+        tl.fromTo("#bar-tue", { scaleY: 0 }, { scaleY: 1, duration: 0.7, ease: "power3.out" }, 1.5);
+        tl.fromTo("#bar-sat", { scaleY: 0 }, { scaleY: 1, duration: 0.9, ease: "power3.out" }, 1.65);
+
+        // Ambient breathing on the divider so the frame doesn't feel static while the VO plays.
+        tl.to("#divider", { opacity: 0.2, duration: 1.6, ease: "sine.inOut", repeat: 3, yoyo: true }, 2.6);
+
+        window.__timelines["b02-scene1-probleme"] = tl;
+      </script>
+    </template>
+  </body>
+</html>

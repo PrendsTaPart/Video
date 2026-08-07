@@ -1,0 +1,189 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+  </head>
+  <body>
+    <template>
+      <style>
+        @font-face {
+          font-family: "Fredoka";
+          src: url("assets/vendor/fonts/Fredoka-Variable.woff2") format("woff2-variations");
+          font-weight: 300 700;
+          font-display: block;
+        }
+        #root {
+          position: absolute;
+          inset: 0;
+          background: #fcf9e6;
+          overflow: hidden;
+          font-family: "Inter", sans-serif;
+        }
+        .eyebrow {
+          position: absolute;
+          top: 56px;
+          left: 0;
+          right: 0;
+          text-align: center;
+          font-family: "Fredoka", sans-serif;
+          font-weight: 600;
+          font-size: 34px;
+          letter-spacing: 0.02em;
+          color: #0f1a23;
+          opacity: 0;
+        }
+        #node-layer {
+          position: absolute;
+          inset: 0;
+        }
+        .node {
+          position: absolute;
+          width: 380px;
+          height: 140px;
+          border-radius: 20px;
+          background: #ffffff;
+          border: 3px solid #0f1a23;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          text-align: center;
+          padding: 0 24px;
+          font-family: "Fredoka", sans-serif;
+          font-weight: 600;
+          font-size: 32px;
+          color: #0f1a23;
+          transform: scale(0);
+        }
+        .chart-panel {
+          position: absolute;
+          left: 260px;
+          top: 830px;
+          width: 1400px;
+          height: 190px;
+          background: #ffffff;
+          border: 3px solid #0f1a23;
+          border-radius: 20px;
+          opacity: 0;
+          transform: translateY(24px);
+          padding: 20px 32px;
+        }
+        .chart-label {
+          font-family: "Fredoka", sans-serif;
+          font-weight: 600;
+          font-size: 24px;
+          color: #0f1a23;
+          opacity: 0.65;
+        }
+      </style>
+
+      <div
+        id="root"
+        data-composition-id="b02-scene3-cascade"
+        data-width="1920"
+        data-height="1080"
+        data-duration="21.41"
+      >
+        <div class="eyebrow" id="eyebrow">CE QUI SE RECALCULE</div>
+
+        <svg id="path-svg" width="1920" height="1080" style="position:absolute; inset:0;">
+          <polyline
+            id="chain-path"
+            points="300,370 740,370 1180,370 1620,370 1620,710 1180,710 740,710 300,710"
+            fill="none"
+            stroke="#0f1a23"
+            stroke-opacity="0.18"
+            stroke-width="4"
+            stroke-dasharray="1740"
+            stroke-dashoffset="1740"
+          />
+          <circle id="dot" cx="300" cy="370" r="13" fill="#007bff" opacity="0" />
+          <circle id="dot-halo" cx="300" cy="370" r="22" fill="#007bff" opacity="0" fill-opacity="0.18" />
+        </svg>
+
+        <div id="node-layer">
+          <div class="node" id="node-1" style="left:110px; top:300px;">Recrutement</div>
+          <div class="node" id="node-2" style="left:550px; top:300px;">Contrat</div>
+          <div class="node" id="node-3" style="left:990px; top:300px;">Planning</div>
+          <div class="node" id="node-4" style="left:1430px; top:300px;">Pointage réel</div>
+          <div class="node" id="node-5" style="left:1430px; top:640px;">Congés</div>
+          <div class="node" id="node-6" style="left:990px; top:640px;">Coût constaté</div>
+          <div class="node" id="node-7" style="left:550px; top:640px;">Écart prévu / réel</div>
+          <div class="node" id="node-8" style="left:110px; top:640px;">Planning suivant</div>
+        </div>
+
+        <div class="chart-panel" id="chart-panel">
+          <div class="chart-label">Couverts par créneau — la courbe qui déforme le planning</div>
+          <svg width="1336" height="110" viewBox="0 0 1336 110" style="margin-top:8px;">
+            <polyline
+              id="chart-line"
+              points="0,90 160,78 320,82 480,40 640,58 800,20 960,34 1120,10 1336,16"
+              fill="none"
+              stroke="#007bff"
+              stroke-width="5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-dasharray="1500"
+              stroke-dashoffset="1500"
+            />
+          </svg>
+        </div>
+      </div>
+
+      <script>
+        window.__timelines = window.__timelines || {};
+        const tl = gsap.timeline({ paused: true });
+
+        const pts = [
+          [300, 370], [740, 370], [1180, 370], [1620, 370],
+          [1620, 710], [1180, 710], [740, 710], [300, 710]
+        ];
+        const NODE_START = 1.7;
+        const NODE_STEP = 1.725;
+        const BLUE = "#007bff";
+        const WHITE_TXT = "#fcf9e6";
+
+        tl.fromTo("#eyebrow", { opacity: 0, y: -14 }, { opacity: 0.55, y: 0, duration: 0.45, ease: "power2.out" }, 0.05);
+
+        // Base chain path draws in first.
+        tl.to("#chain-path", { strokeDashoffset: 0, duration: 0.9, ease: "power2.out" }, 0.35);
+
+        // Nodes spring in together (capped stagger).
+        tl.fromTo(
+          ".node",
+          { scale: 0 },
+          { scale: 1, duration: 0.35, ease: "back.out(2.2)", stagger: 0.05 },
+          1.0
+        );
+
+        // Sequential light-up + traveling pulse dot along the chain.
+        for (let i = 0; i < pts.length; i++) {
+          const t = NODE_START + i * NODE_STEP;
+          tl.to(`#node-${i + 1}`, { backgroundColor: BLUE, borderColor: BLUE, color: WHITE_TXT, duration: 0.4, ease: "power2.out" }, t);
+          tl.to(`#node-${i + 1}`, { scale: 1.06, duration: 0.18, ease: "power2.out", yoyo: true, repeat: 1 }, t);
+
+          if (i < pts.length - 1) {
+            const [x0, y0] = pts[i];
+            const [x1, y1] = pts[i + 1];
+            tl.set("#dot, #dot-halo", { attr: { cx: x0, cy: y0 }, opacity: 1 }, t + 0.15);
+            tl.to("#dot, #dot-halo", { attr: { cx: x1, cy: y1 }, duration: NODE_STEP - 0.3, ease: "power1.inOut" }, t + 0.15);
+          } else {
+            tl.to("#dot, #dot-halo", { opacity: 0, duration: 0.3 }, t + 0.3);
+          }
+        }
+
+        // Chart overlay panel appears once most of the chain has lit.
+        const chartAt = NODE_START + 6 * NODE_STEP;
+        tl.to("#chart-panel", { opacity: 1, y: 0, duration: 0.6, ease: "power2.out" }, chartAt);
+        tl.to("#chart-line", { strokeDashoffset: 0, duration: 1.1, ease: "power2.out" }, chartAt + 0.15);
+
+        // The curve visibly "pulls" the node row — small deterministic per-node nudge.
+        const nudge = [-6, 4, -8, 6, -5, 7, -4, 5];
+        for (let i = 0; i < pts.length; i++) {
+          tl.to(`#node-${i + 1}`, { y: nudge[i], duration: 0.7, ease: "sine.inOut" }, chartAt + 0.3 + i * 0.03);
+        }
+
+        window.__timelines["b02-scene3-cascade"] = tl;
+      </script>
+    </template>
+  </body>
+</html>

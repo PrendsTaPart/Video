@@ -1,0 +1,168 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+  </head>
+  <body>
+    <template>
+      <style>
+        @font-face {
+          font-family: "Fredoka";
+          src: url("assets/vendor/fonts/Fredoka-Variable.woff2") format("woff2-variations");
+          font-weight: 300 700;
+          font-display: block;
+        }
+        #root {
+          position: absolute;
+          inset: 0;
+          background: #fcf9e6;
+          overflow: hidden;
+          font-family: "Inter", sans-serif;
+        }
+        .alert-card {
+          position: absolute;
+          left: 260px;
+          top: 130px;
+          width: 1400px;
+          background: #fff4de;
+          border: 3px solid #ffa500;
+          border-radius: 20px;
+          padding: 40px 52px;
+          display: flex;
+          align-items: center;
+          gap: 30px;
+          transform: scale(0.9);
+          opacity: 0;
+        }
+        .alert-badge {
+          width: 84px;
+          height: 84px;
+          min-width: 84px;
+          border-radius: 50%;
+          background: #ffa500;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+        .alert-badge svg {
+          width: 44px;
+          height: 44px;
+          fill: #fcf9e6;
+        }
+        .alert-text {
+          font-family: "Fredoka", sans-serif;
+          font-weight: 700;
+          font-size: 46px;
+          color: #0f1a23;
+          line-height: 1.2;
+        }
+        .proposal-card {
+          position: absolute;
+          left: 260px;
+          top: 400px;
+          width: 1400px;
+          background: #ffffff;
+          border: 3px solid #0f1a23;
+          border-radius: 20px;
+          padding: 44px 56px;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          opacity: 0;
+          transform: translateY(28px);
+        }
+        .proposal-left {
+          display: flex;
+          flex-direction: column;
+          gap: 10px;
+        }
+        .proposal-title {
+          font-family: "Fredoka", sans-serif;
+          font-weight: 600;
+          font-size: 36px;
+          color: #0f1a23;
+        }
+        .proposal-sub {
+          font-size: 26px;
+          color: #0f1a23;
+          opacity: 0.6;
+        }
+        .proposal-cost {
+          font-family: "Fredoka", sans-serif;
+          font-weight: 700;
+          font-size: 52px;
+          color: #007bff;
+          font-variant-numeric: tabular-nums;
+        }
+        .btn-valider {
+          margin-left: 50px;
+          background: #007bff;
+          color: #fcf9e6;
+          font-family: "Fredoka", sans-serif;
+          font-weight: 700;
+          font-size: 34px;
+          padding: 22px 54px;
+          border-radius: 16px;
+          white-space: nowrap;
+        }
+        .caption {
+          position: absolute;
+          left: 260px;
+          right: 260px;
+          top: 760px;
+          text-align: center;
+          font-size: 26px;
+          color: #0f1a23;
+          opacity: 0;
+        }
+      </style>
+
+      <div
+        id="root"
+        data-composition-id="b02-scene4-detection"
+        data-width="1920"
+        data-height="1080"
+        data-duration="6.79"
+      >
+        <div class="alert-card" id="alert">
+          <div class="alert-badge">
+            <svg viewBox="0 0 24 24"><path d="M1 21h22L12 2 1 21zm12-3h-2v-2h2v2zm0-4h-2v-4h2v4z"/></svg>
+          </div>
+          <div class="alert-text">Samedi 20h — 60 couverts attendus, 2 en cuisine</div>
+        </div>
+
+        <div class="proposal-card" id="proposal">
+          <div class="proposal-left">
+            <div class="proposal-title">Shift supplémentaire — 19h·23h</div>
+            <div class="proposal-sub">1 personne en cuisine, coût affiché avant validation</div>
+            <div class="proposal-cost" id="cost">96&nbsp;€</div>
+          </div>
+          <div class="btn-valider" id="btn">Valider</div>
+        </div>
+
+        <div class="caption" id="caption">
+          Contrat, planning contractuel et suppression d'employé exigent une confirmation humaine.
+        </div>
+      </div>
+
+      <script>
+        window.__timelines = window.__timelines || {};
+        const tl = gsap.timeline({ paused: true });
+
+        tl.fromTo("#alert", { scale: 0.9, opacity: 0 }, { scale: 1, opacity: 1, duration: 0.55, ease: "back.out(1.6)" }, 0.1);
+        tl.to("#alert", { x: 6, duration: 0.08, ease: "power1.inOut", yoyo: true, repeat: 3 }, 0.7);
+
+        tl.fromTo("#proposal", { opacity: 0, y: 28 }, { opacity: 1, y: 0, duration: 0.5, ease: "power2.out" }, 1.4);
+        tl.fromTo("#cost", { opacity: 0, y: 10 }, { opacity: 1, y: 0, duration: 0.4, ease: "power2.out" }, 1.9);
+
+        tl.fromTo("#btn", { scale: 0 }, { scale: 1, duration: 0.4, ease: "back.out(2.2)" }, 2.1);
+        tl.to("#btn", { scale: 0.92, duration: 0.12, ease: "power1.in" }, 2.9);
+        tl.to("#btn", { scale: 1, duration: 0.28, ease: "elastic.out(1, 0.5)" }, 3.02);
+
+        tl.fromTo("#caption", { opacity: 0 }, { opacity: 0.7, duration: 0.5, ease: "power2.out" }, 3.6);
+
+        window.__timelines["b02-scene4-detection"] = tl;
+      </script>
+    </template>
+  </body>
+</html>

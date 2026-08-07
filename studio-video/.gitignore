@@ -2,3 +2,10 @@ node_modules/
 *.log
 .DS_Store
 .env
+
+# Local HyperFrames skill installs / tool symlinks (machine-local, not project content)
+.claude/
+.agents/skills/
+
+# HyperFrames render scratch (transaction + work dirs; final rendered files are committed, not this)
+**/out/*/

@@ -1,7 +1,7 @@
 {
-  "_comment": "Manifeste de la série « Les 8 boucles FoodEatUp ». Pipeline : MCP HyperFrames (compose/render_video) + MCP ElevenLabs (text_to_speech), validé par Michael le 2026-08-07 en remplacement du pipeline local ffmpeg/PIL de FOODEATUP-TUTORIELS-WORKFLOW.md (qui régit une série différente : tutoriels screen-recording).",
-  "voice_id": null,
-  "voice_name": null,
+  "_comment": "Manifeste de la série « Les 8 boucles FoodEatUp ». Pipeline réel (2026-08-07) : compositions HyperFrames locales dans studio-video/compositions/boucle-NN-*/ (npx hyperframes render, gratuit) + VO MCP ElevenLabs (text_to_speech, payant, un appel par vidéo) — le MCP HyperFrames hébergé (compose/render_video) est désactivé pour les clients CLI avec accès fichiers, confirmé par erreur sur la Boucle 02. Pipeline distinct de FOODEATUP-TUTORIELS-WORKFLOW.md (ffmpeg/PIL, autre série : tutoriels screen-recording).",
+  "voice_id": "TGAegA0zNRi8I6nUdq3i",
+  "voice_name": "Adam - Instructor (ElevenLabs)",
   "model_id": "eleven_multilingual_v2",
   "palette": {
     "bg_cream": "#FCF9E6",
@@ -15,7 +15,7 @@
   "videos": [
     { "slug": "00-principe", "order": 0, "title": "Le principe : une boucle se referme", "duration_target_s": 45, "agent": null, "status": "a_produire" },
     { "slug": "boucle-01-configuration-boutique", "order": 1, "title": "Configuration boutique", "duration_target_s": 85, "agent": "Jarvis puis PrédiBot", "status": "a_produire" },
-    { "slug": "boucle-02-equipe", "order": 2, "title": "Équipe", "duration_target_s": 80, "agent": "PrédiBot", "status": "script" },
+    { "slug": "boucle-02-equipe", "order": 2, "title": "Équipe", "duration_target_s": 80, "duration_actual_s": 62, "agent": "PrédiBot", "status": "rendu", "composition": "studio-video/compositions/boucle-02-equipe.html", "vo": "videos/foodeatup-8-boucles/02-equipe/assets/vo.mp3", "output": "videos/foodeatup-8-boucles/02-equipe/out/boucle-02-equipe.mp4" },
     { "slug": "boucle-03-stockvision", "order": 3, "title": "StockVisionAI", "duration_target_s": 90, "agent": "Jarvis puis PrédiBot", "status": "a_produire" },
     { "slug": "boucle-04-haccp", "order": 4, "title": "HACCP", "duration_target_s": 85, "agent": "Jarvis", "status": "a_produire" },
     { "slug": "boucle-05-ecommerce", "order": 5, "title": "E-commerce", "duration_target_s": 85, "agent": "Jarvis / Caroline", "status": "a_produire" },

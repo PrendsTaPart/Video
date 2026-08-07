@@ -1,0 +1,99 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+  </head>
+  <body>
+    <template>
+      <style>
+        @font-face {
+          font-family: "Fredoka";
+          src: url("assets/vendor/fonts/Fredoka-Variable.woff2") format("woff2-variations");
+          font-weight: 300 700;
+          font-display: block;
+        }
+        #root {
+          position: absolute;
+          inset: 0;
+          background: #fcf9e6;
+          overflow: hidden;
+          font-family: "Inter", sans-serif;
+        }
+        .phase {
+          position: absolute;
+          inset: 0;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          opacity: 0;
+        }
+        .statement {
+          width: 1500px;
+          font-family: "Fredoka", sans-serif;
+          font-weight: 700;
+          font-size: 74px;
+          line-height: 1.25;
+          text-align: center;
+          color: #0f1a23;
+        }
+        .proof {
+          margin-top: 44px;
+          font-family: "Fredoka", sans-serif;
+          font-weight: 600;
+          font-size: 30px;
+          color: #007bff;
+          border: 2px solid #007bff;
+          border-radius: 999px;
+          padding: 14px 40px;
+        }
+        .cta-logo {
+          width: 620px;
+          height: auto;
+        }
+        .cta-sub {
+          margin-top: 42px;
+          font-family: "Fredoka", sans-serif;
+          font-weight: 600;
+          font-size: 40px;
+          color: #0f1a23;
+          opacity: 0.75;
+        }
+      </style>
+
+      <div
+        id="root"
+        data-composition-id="b02-scene7-cta"
+        data-width="1920"
+        data-height="1080"
+        data-duration="9.51"
+      >
+        <div class="phase" id="phase-statement">
+          <div class="statement">Sur-effectif le mardi, sous-effectif le samedi. Systématiquement.</div>
+          <div class="proof" id="proof">18 outils MCP</div>
+        </div>
+
+        <div class="phase" id="phase-cta">
+          <img class="cta-logo" src="assets/brand/logo-v2/foodeatup-logo-horizontal-mascot.png" alt="FoodEatUp" />
+          <div class="cta-sub">FoodEatUp Academy</div>
+        </div>
+      </div>
+
+      <script>
+        window.__timelines = window.__timelines || {};
+        const tl = gsap.timeline({ paused: true });
+
+        tl.set("#phase-statement", { opacity: 1 }, 0);
+        tl.fromTo(".statement", { opacity: 0, y: 24 }, { opacity: 1, y: 0, duration: 0.6, ease: "power2.out" }, 0.15);
+        tl.fromTo("#proof", { opacity: 0, scale: 0.8 }, { opacity: 1, scale: 1, duration: 0.4, ease: "back.out(1.8)" }, 0.75);
+
+        tl.to("#phase-statement", { opacity: 0, duration: 0.5, ease: "power2.inOut" }, 4.0);
+        tl.set("#phase-cta", { opacity: 1 }, 4.35);
+        tl.fromTo(".cta-logo", { opacity: 0, scale: 0.85 }, { opacity: 1, scale: 1, duration: 0.6, ease: "back.out(1.6)" }, 4.5);
+        tl.fromTo(".cta-sub", { opacity: 0, y: 14 }, { opacity: 0.75, y: 0, duration: 0.5, ease: "power2.out" }, 4.95);
+
+        window.__timelines["b02-scene7-cta"] = tl;
+      </script>
+    </template>
+  </body>
+</html>
