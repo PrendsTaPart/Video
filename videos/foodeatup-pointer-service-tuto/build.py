@@ -3,26 +3,23 @@
 # Planning & RH, item 15). Fills the Lovable placeholder slug
 # `pointer-son-service-cote-employe`.
 #
-# NO USABLE SCREEN RECORDING for this one -- see SCRIPT.md. The rush sent
-# under this title is the same mislabeled Google Drive file already
-# documented in videos/LOVABLE-FOODEATUP-DOCS.md (row 17,
-# creer-ses-roles-et-permissions): it shows Accueil/QR code/Roles, not the
-# employee clock-in/pause/photo screen. Rather than reuse that same footage
-# a second time (near-duplicate of an already-published tutorial) or invent
-# a fake app screen, this build is card-based: real product screenshot
-# (studio-video/assets/brand/product-screenshots/pointage.png, cropped into
-# 3 close-ups) + one clearly-illustrative custom graphic for the photo/
-# anti-fraud beat (not dressed up as a fabricated app screen) + the shared
-# "use it with Claude" 3-stage sequence. Same engine (card() Ken Burns,
-# xfade, loudnorm-per-line then alimiter) as the rest of the series.
+# v2 -- built on the real screen recording (assets/screen.mp4, 23.88s), sent
+# by Michael to replace the first (mislabeled) rush -- see SCRIPT.md for the
+# full timeline / click coordinates measured frame-by-frame. Same engine as
+# the rest of the series: setpts for speed (never zoompan on real footage),
+# fixed crop+scale zoom-punch on each click, xfade on every cut forced back
+# to yuv420p, 48kHz stereo AAC, +faststart.
 import subprocess, os, sys
 sys.path.insert(0, "/home/user/Video/videos/_shared")
 from claude_prompt_sequence import (render_claude_stage1_png, render_claude_stage2_png,
                                      render_claude_stage3_png, CLAUDE_STAGE_D)
 
 ROOT = "/home/user/Video/videos/foodeatup-pointer-service-tuto"
+SRC  = f"{ROOT}/assets/screen.mp4"
 W, H, FPS = 1920, 828, 25
 SEG = f"{ROOT}/work/seg"
+FONT = "/usr/share/fonts/truetype/liberation/LiberationSans-Bold.ttf"
+BLUE, ORANGE = "0x1B6DF3", "0xF7941D"
 XF = 0.28
 os.makedirs(SEG, exist_ok=True)
 os.makedirs(f"{ROOT}/out", exist_ok=True)
@@ -36,6 +33,77 @@ def dur(path):
     r = subprocess.run(["ffprobe","-v","error","-show_entries","format=duration",
                         "-of","csv=p=0",path], capture_output=True, text=True)
     return float(r.stdout.strip())
+
+def clamp(v, lo, hi): return max(lo, min(hi, v))
+
+ZOOM = 1.20
+def crop_for(btn):
+    bx, by = btn
+    cw, ch = int(W/ZOOM), int(H/ZOOM); cw -= cw % 2; ch -= ch % 2
+    x = int(clamp(bx - cw/2, 0, W - cw)); y = int(clamp(by - ch/2, 0, H - ch))
+    return f"crop={cw}:{ch}:{x}:{y},scale={W}:{H}:flags=bicubic", (cw, ch, x, y)
+
+def punch_highlight(btn, btn_wh, crop_box):
+    cw, ch, cx, cy = crop_box
+    sx, sy = W / cw, H / ch
+    bw, bh = btn_wh[0] * sx, btn_wh[1] * sy
+    ox, oy = (btn[0] - cx) * sx, (btn[1] - cy) * sy
+    p = 14
+    return (f"drawbox=x={ox-bw/2-p:.0f}:y={oy-bh/2-p:.0f}"
+            f":w={bw+2*p:.0f}:h={bh+2*p:.0f}:color={ORANGE}@0.95:t=5")
+
+def banner(text, seg_dur):
+    if not text: return None
+    tin, sl = 0.15, 0.32
+    a = f"min(1\\,max(0\\,(t-{tin})/{sl}))"
+    x = f"-640+700*({a})"
+    y = H - 108
+    return (f"drawbox=x='{x}':y={y}:w=10:h=62:color={ORANGE}@0.98:t=fill,"
+            f"drawbox=x='({x})+10':y={y}:w=560:h=62:color={BLUE}@0.90:t=fill,"
+            f"drawtext=fontfile={FONT}:text='{text}':fontsize=31:fontcolor=white"
+            f":x='({x})+34':y={y+16}")
+
+# Coordinates measured on full-res frames (see SCRIPT.md timeline).
+BTN_BADGE  = (1598, 601); SZ_BADGE  = (340, 52)   # "Pas encore pointe" badge
+BTN_ENTREE = (688, 672);  SZ_BTN    = (275, 60)   # Entree
+BTN_PAUSE  = (968, 672);  SZ_BTN2   = (275, 60)   # Pause / Fin pause (same slot)
+BTN_SORTIE = (1248, 672); SZ_BTN3   = (275, 60)   # Sortie
+
+# (name, src_start, src_end, target_out_duration, button, btn_size, caption)
+segs = [
+    ("A1", 0.00,  1.85, 2.20, None,       None,    None),
+    ("A2", 1.85,  2.60, 1.30, BTN_BADGE,  SZ_BADGE, "Ouvrir Pointage"),
+    ("B1", 2.60,  2.90, 1.60, None,       None,    None),
+    ("B2", 2.90,  3.20, 1.30, BTN_ENTREE, SZ_BTN,  None),
+    ("B3", 3.20,  5.40, 1.80, None,       None,    "Photo + pointage envoyes"),
+    ("C1", 5.90,  6.80, 2.00, None,       None,    "Entree enregistree"),
+    ("D1", 6.90,  7.90, 1.80, BTN_PAUSE,  SZ_BTN2, None),
+    ("D2", 8.00,  9.90, 1.60, None,       None,    "Pause enregistree"),
+    ("E1", 11.00, 11.90, 1.80, None,      None,    "En pause"),
+    ("F1", 12.00, 13.00, 1.80, BTN_PAUSE, SZ_BTN2, None),
+    ("F2", 14.00, 15.00, 1.40, None,      None,    "Fin de pause enregistree"),
+    ("G1", 16.00, 16.90, 1.80, None,      None,    "Duree de pause calculee"),
+    ("G2", 16.90, 18.00, 1.80, BTN_SORTIE, SZ_BTN3, None),
+    ("G3", 18.00, 19.90, 1.60, None,      None,    "Sortie enregistree"),
+    ("H1", 20.00, 20.90, 2.30, None,      None,    "Journee terminee"),
+]
+INTRO_D = 2.50
+
+def encode_seg(name, s, e, target, btn, btn_sz, caption):
+    out = f"{SEG}/{name}.mp4"
+    factor = (e - s) / target
+    vf = f"setpts=(PTS-STARTPTS)/{factor:.6f}"
+    if btn:
+        crop_vf, box = crop_for(btn)
+        vf += f",{crop_vf},{punch_highlight(btn, btn_sz, box)}"
+    else:
+        vf += f",scale={W}:{H}"
+    b = banner(caption, target)
+    if b: vf += f",{b}"
+    vf += f",fps={FPS},format=yuv420p"
+    run(["ffmpeg","-y","-v","error","-ss",str(s),"-to",str(e),"-i",SRC,"-an",
+         "-vf",vf,"-r",str(FPS),"-c:v","libx264","-preset","medium","-crf","18",out])
+    return out
 
 def card(img, out, secs, zoom_in=True, fade=True):
     z0, z1 = (1.0, 1.09) if zoom_in else (1.09, 1.0)
@@ -58,11 +126,7 @@ CLAUDE_PROMPT = ("Fais-moi un resume de mes heures et de mes pauses pointees cet
                   "semaine pour [nom employe].")
 
 def build_silent(outro_d):
-    card(f"{ROOT}/assets/intro.jpg", f"{SEG}/intro.mp4", 3.00, zoom_in=True)
-    card(f"{ROOT}/assets/pointage-popup.png", f"{SEG}/overview.mp4", 5.50, zoom_in=True)
-    card(f"{ROOT}/assets/crop_entree.png", f"{SEG}/entree.mp4", 5.00, zoom_in=True)
-    card(f"{ROOT}/assets/crop_pause.png", f"{SEG}/pause.mp4", 5.00, zoom_in=True)
-    card(f"{ROOT}/assets/crop_boutons.png", f"{SEG}/sortie.mp4", 4.60, zoom_in=True)
+    card(f"{ROOT}/assets/intro.jpg", f"{SEG}/intro.mp4", INTRO_D, zoom_in=True)
     card(f"{ROOT}/assets/photo-confirmation.png", f"{SEG}/photo.mp4", 6.00, zoom_in=True)
 
     render_claude_stage1_png(f"{SEG}/claude1.png", W, H, CLAUDE_PROMPT)
@@ -74,19 +138,32 @@ def build_silent(outro_d):
 
     card(f"{ROOT}/assets/outro.jpg", f"{SEG}/outro.mp4", outro_d, zoom_in=False)
 
-    names = ["intro","overview","entree","pause","sortie","photo",
-             "claude1","claude2","claude3","outro"]
-    parts = [f"{SEG}/{n}.mp4" for n in names]
+    parts = [f"{SEG}/intro.mp4"]
+    for name, s, e, target, btn, sz, cap in segs:
+        parts.append(encode_seg(name, s, e, target, btn, sz, cap))
+    parts += [f"{SEG}/photo.mp4", f"{SEG}/claude1.mp4", f"{SEG}/claude2.mp4",
+              f"{SEG}/claude3.mp4", f"{SEG}/outro.mp4"]
 
-    trans = ["fade",       # intro -> overview (continuous reveal)
-             "slideleft",  # overview -> entree
-             "slideleft",  # entree -> pause
-             "slideleft",  # pause -> sortie
-             "slideleft",  # sortie -> photo
-             "slideleft",  # photo -> claude1
-             "slideleft",  # claude1 -> claude2
-             "slideleft",  # claude2 -> claude3
-             "fade"]       # claude3 -> outro
+    trans = (["fade"] +                       # intro -> A1
+             ["fade"] +                       # A1 -> A2 (continuous: click badge)
+             ["fade"] +                       # A2 -> B1 (modal opens)
+             ["fade"] +                       # B1 -> B2 (click Entree)
+             ["fade"] +                       # B2 -> B3 (continuous: processing)
+             ["slideleft"] +                  # B3 -> C1 (cut to dashboard)
+             ["slideleft"] +                  # C1 -> D1 (cut to modal reopened)
+             ["fade"] +                       # D1 -> D2 (continuous: processing)
+             ["slideleft"] +                  # D2 -> E1 (cut to dashboard)
+             ["slideleft"] +                  # E1 -> F1 (cut to modal reopened)
+             ["fade"] +                       # F1 -> F2 (continuous: processing)
+             ["slideleft"] +                  # F2 -> G1 (cut to dashboard)
+             ["slideleft"] +                  # G1 -> G2 (cut to modal reopened)
+             ["fade"] +                       # G2 -> G3 (continuous: processing)
+             ["slideleft"] +                  # G3 -> H1 (cut to dashboard)
+             ["slideleft"] +                  # H1 -> photo
+             ["slideleft"] +                  # photo -> claude1
+             ["slideleft"] +                  # claude1 -> claude2
+             ["slideleft"] +                  # claude2 -> claude3
+             ["fade"])                        # claude3 -> outro
     durs = [dur(p) for p in parts]
     starts, acc = [], 0.0
     for i, d in enumerate(durs):
@@ -106,6 +183,8 @@ def build_silent(outro_d):
         ["-filter_complex", ";".join(fc), "-map", "[vout]",
          "-r",str(FPS),"-c:v","libx264","-profile:v","high","-pix_fmt","yuv420p",
          "-preset","medium","-crf","18", silent])
+    names = (["intro"] + [s[0] for s in segs] +
+             ["photo","claude1","claude2","claude3","outro"])
     return silent, dict(zip(names, starts))
 
 OUTRO_D = 6.00
@@ -115,15 +194,16 @@ OUTRO_START = S["outro"]
 
 GAP = 0.22
 anchor = {
-    "N0": S["intro"]    + 0.15,
-    "N1": S["entree"]   + 0.15,
-    "N2": S["pause"]    + 0.15,
-    "N3": S["sortie"]   + 0.15,
-    "N4": S["photo"]    + 0.15,
-    "N5": S["claude1"]  + 0.15,
-    "N6": OUTRO_START   + 0.30,
+    "N0": S["intro"]  + 0.15,
+    "N1": S["B2"]     + 0.15,   # click Entree
+    "N2": S["D1"]     + 0.15,   # click Pause
+    "N3": S["F1"]     + 0.15,   # click Fin pause
+    "N4": S["G2"]     + 0.15,   # click Sortie
+    "N5": S["photo"]  + 0.15,
+    "N6": S["claude1"] + 0.15,
+    "N7": OUTRO_START + 0.30,
 }
-keys = ["N0","N1","N2","N3","N4","N5","N6"]
+keys = ["N0","N1","N2","N3","N4","N5","N6","N7"]
 off, prev_end = {}, -GAP
 for k in keys:
     o = max(anchor[k], prev_end + GAP); off[k] = o
@@ -149,7 +229,7 @@ filters.append("".join(labels) + f"amix=inputs={len(keys)}:normalize=0:duration=
 filters.append(f"[mix]atrim=0:{total:.3f},alimiter=limit=0.6:level=disabled,"
                f"aresample=48000,aformat=sample_fmts=fltp:channel_layouts=stereo,"
                f"asetpts=N/SR/TB[voa]")
-FINAL = f"{ROOT}/out/foodeatup-pointer-service-tuto-v1.mp4"
+FINAL = f"{ROOT}/out/foodeatup-pointer-service-tuto-v2.mp4"
 run(["ffmpeg","-y","-v","error","-i",silent] + inputs +
     ["-filter_complex",";".join(filters),"-map","0:v","-map","[voa]",
      "-c:v","copy","-c:a","aac","-b:a","192k","-ar","48000","-ac","2",

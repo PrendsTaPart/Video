@@ -1,78 +1,82 @@
 # Tutoriel — Pointer son service (pauses & photo), côté employé
 
 Module Équipe, Planning & RH, item **15 "Pointer son Service (pauses & photo)"**
-(`videos/CATALOGUE-157-TUTORIELS.md`). Le slot existe déjà sur Lovable en placeholder
-"à venir" : slug `pointer-son-service-cote-employe`, `videoUrl: ""`, `durationSeconds: 0`.
+(`videos/CATALOGUE-157-TUTORIELS.md`). Slug Lovable : `pointer-son-service-cote-employe`.
 
-## ⚠️ Constat sur le rush fourni (à relire avant de refaire cette vidéo)
+## Historique du rush (important pour une future session)
 
-Le fichier envoyé pour cette vidéo (`Gestion_des_pauses_pointage_entrée_et_sortie_et_
-Empreinte_photo_du_pointage.mp4`, 41,52 s, 1920×828) a été vérifié image par image
-(`ffmpeg -ss t -frames:v 1` toutes les 1-2 s, planche-contact incluse). **Il ne montre
-pas l'écran de pointage (entrée/sortie/pause/photo)** : il montre en réalité, dans
-l'ordre, **Accueil "mon espace"** (grille de modules selon le rôle, item 14) →
-**QR code de pointage actif** (item 8, déjà couvert par `generer-qr-code-pointage`) →
-**Rôles & Permissions, modale "Modifier le rôle"** (item 1, déjà couvert par
-`creer-ses-roles-et-permissions`, qui a d'ailleurs été construite avec un `claudePrompts`
-sur les pauses — voir plus bas).
+Le premier envoi (`Gestion_des_pauses_pointage_entrée_et_sortie_et_Empreinte_photo_du_
+pointage.mp4`, 41,52 s) était le même fichier Drive mal étiqueté déjà documenté sur
+`creer-ses-roles-et-permissions` (Accueil/QR code/Rôles, pas le pointage). Une v1
+carte-based avait été montée et publiée à partir de ça (voir git log) — voir plus bas.
 
-C'est **exactement le même bug d'étiquetage Google Drive déjà documenté** dans
-`videos/LOVABLE-FOODEATUP-DOCS.md` (tableau "Tutoriels publiés", ligne #17,
-`creer-ses-roles-et-permissions`) : le fichier du dossier Drive 15 contient en réalité
-l'enregistrement du dossier 1. Le problème n'a donc pas été corrigé côté Drive entre les
-deux sessions — un nouvel envoi du même fichier mal étiqueté a été fait.
+**Michael a renvoyé le bon fichier** le même jour (23,88 s, même nom, taille différente :
+7,07 Mo au lieu de 31 Mo). Vérifié image par image (`ffmpeg -ss t -frames:v 1` tous les
+0,3 à 0,5 s) : c'est bien le flux "Pointage" côté employé — Entrée → Pause → Fin de pause
+→ Sortie, chaque étape confirmée par une capture photo. **Cette version remplace la v1
+carte-based.**
 
-**Décision prise ici (pas de validation Michael obtenue avant, faute de rush exploitable
-à lui soumettre en l'état)** : ne pas refaire un troisième tutoriel quasi identique à
-partir du même écran Rôles/Permissions (déjà utilisé une fois). À la place :
-- Utiliser la **vraie capture d'écran produit** déjà présente dans le dépôt,
-  `studio-video/assets/brand/product-screenshots/pointage.png` — un vrai popup
-  "Pointage" FoodEatUp montrant Pointage d'entrée / Pointage déjeuner (pause, avec
-  heure de début-fin) / Pointage de sortie. C'est un asset réel, pas une invention.
-  Zoom/Ken Burns successifs sur ses 3 lignes pour rythmer la vidéo malgré l'absence de
-  screen recording.
-- **Ne pas montrer d'écran de capture photo inventé** : aucun asset ne le documente.
-  La confirmation par photo à chaque pointage est mentionnée **en voix off uniquement**
-  (fait réel, déjà documenté comme mécanisme anti-fraude dans
-  `videos/foodeatup-qrcode-pointage-tuto/SCRIPT.md` — "pointage fiable et anti-fraude" —
-  et cohérent avec le titre "Empreinte photo du pointage" du dossier Drive), sans habillage
-  d'interface fabriqué.
-- Vidéo volontairement courte et construite sur cartes + un visuel réel (même traitement
-  que `brancher-son-mcp-sur-claude` / `diffuser-son-qrcode`, tutoriels déjà publiés sans
-  rush screen recording exploitable).
+## Déroulé du rush (1920×828, 25 im/s, 23,88 s)
 
-**À rattraper si/quand un vrai screen recording du flux employé (pointer entrée → pause →
-sortie → capture photo) est fourni** : reprendre ce dossier avec un montage type
-zoom-punch complet comme le reste de la série, remplacer ce montage carte-based.
-
-## Voix off (7 lignes, Adam FR `TGAegA0zNRi8I6nUdq3i`)
-
-| # | Texte |
+| t | Contenu |
 |---|---|
-| N0 | Pointer votre service dans FoodEatUp ? Entrée, pause, sortie : tout se passe en quelques secondes, directement depuis votre espace employé. |
-| N1 | Dès votre arrivée, un seul geste enregistre votre pointage d'entrée, horodaté à la seconde. |
-| N2 | Une pause déjeuner ? Pointez-la aussi : FoodEatUp calcule automatiquement sa durée. |
-| N3 | En fin de service, un dernier pointage de sortie, et votre journée est bouclée. |
-| N4 | Chaque pointage est confirmé par une photo instantanée : impossible de pointer à la place d'un collègue absent. |
-| N5 | Vous pouvez aussi demander à Claude un résumé de vos heures ou de vos pauses de la semaine. |
-| N6 | Passez à la restauration intelligente avec FoodEatUp. Essayez gratuitement dès aujourd'hui ! |
+| 0,00–1,85 | Dashboard employé "bonjour, alice !" — carte Shift "Pas encore pointé" |
+| ~1,9 | Clic sur le badge "Pas encore pointé" (1598, 601) → ouvre la modale Pointage |
+| 2,10–2,85 | Modale "Pointage", zone photo noire "Une photo sera prise au pointage", 3 boutons Entrée/Pause/Sortie (688/968/1248, y=672, ~275×60 chacun) |
+| ~2,9 | Clic **Entrée** (688, 672) |
+| 3,00–5,40 | Traitement en cours (photo + envoi) |
+| 5,90–6,80 | Dashboard : badge "Au travail", ligne "Pointage d'entrée 17:51" |
+| ~6,9 | Réouverture modale (même badge) |
+| 7,00–7,90 | Ligne Entrée verte affichée, clic **Pause** (968, 672) |
+| 8,00–9,90 | Traitement en cours (photo pause) |
+| 11,00–11,90 | Dashboard : badge "En pause depuis 17:51", ligne "Pause déjeuner 17:51" (début seul) |
+| ~11,9 | Réouverture modale |
+| 12,00–13,00 | Lignes Entrée + Pause (début) affichées, clic **Fin pause** (968, 672, même bouton relabellisé) |
+| 14,00–15,00 | Traitement en cours (photo fin de pause) |
+| 16,00–16,90 | Dashboard : ligne "Pause déjeuner 17:51 - 17:51" (plage complète) |
+| ~16,9 | Réouverture modale |
+| 17,00–18,00 | Lignes Entrée + Pause affichées, clic **Sortie** (1248, 672, en rouge) |
+| 18,00–19,90 | Traitement en cours (photo sortie) |
+| 20,00–20,90 | Dashboard final : badge "Journée terminée", les 3 lignes remplies |
 
-(N6 réutilisée telle quelle d'un tuto à l'autre, cf. règle N6/N8 de
-`FOODEATUP-TUTORIELS-WORKFLOW.md`.)
+## Voix off (8 lignes, Adam FR `TGAegA0zNRi8I6nUdq3i`)
+
+| # | Texte | Durée |
+|---|---|---:|
+| N0 | Pointer votre service dans FoodEatUp ? Entrée, pause, sortie : tout se fait en quelques secondes, avec une photo à chaque étape. | 7,71 s |
+| N1 | Dès votre arrivée, un tap sur Pointage, une photo, et votre entrée est enregistrée à la seconde. | 5,51 s |
+| N2 | Une pause déjeuner ? Le même geste : une photo, et l'heure de départ est pointée. | 4,68 s |
+| N3 | De retour de pause, pointez à nouveau : FoodEatUp calcule automatiquement sa durée. | 4,55 s |
+| N4 | En fin de service, un dernier pointage de sortie boucle votre journée. | 3,58 s |
+| N5 | Chaque pointage est confirmé par une photo instantanée : impossible de pointer à la place d'un collègue absent. | 5,80 s |
+| N6 | Vous pouvez aussi demander à Claude un résumé de vos heures ou de vos pauses de la semaine. | 4,83 s |
+| N7 | Passez à la restauration intelligente avec FoodEatUp. Essayez gratuitement dès aujourd'hui ! | 4,83 s |
+
+N5/N6/N7 réutilisées telles quelles de la v1 carte-based (texte inchangé) — évite 3
+aller-retours ElevenLabs inutiles.
+
+## Découpage vidéo
+
+Screen recording réel avec zoom-punch (crop fixe centré sur le bouton, jamais de
+`zoompan` sur vidéo), `setpts` pour accélérer les "Traitement en cours" (~2× pour ne pas
+faire traîner l'attente). Enchaîné : intro carte → dashboard/ouverture (badge) → Entrée
+(clic + traitement) → dashboard entrée confirmée → Pause (clic + traitement) → dashboard
+en pause → Fin pause (clic + traitement) → dashboard plage complète → Sortie (clic +
+traitement) → dashboard journée terminée → graphique "photo anti-fraude" (déjà utilisé
+en v1, toujours pertinent pour appuyer N5) → séquence "Utiliser avec Claude" (3 temps,
+module partagé `_shared/claude_prompt_sequence.py`) → carte de fin CTA.
 
 ## Séquence "Utiliser avec Claude"
 
 Pas d'outil MCP pour pointer soi-même (action employé self-service, comme
-`se-connecter-cote-employe` / `creer-son-code-pin`) mais `list_attendances` couvre la
-lecture de ses propres pointages/pauses — même outil que `retrouver-les-pointages-historique`
-et le `claudePrompts` pauses de `creer-ses-roles-et-permissions`, réutilisé ici sous l'angle
-employé (voir aussi `voir-son-planning-cote-employe`, même tolérance de chevauchement
-documentée dans `LOVABLE-FOODEATUP-DOCS.md` quand l'angle diffère) :
-prompt "Résumé de mes heures et pauses de la semaine".
+`se-connecter-cote-employe` / `creer-son-code-pin`), mais `list_attendances` couvre la
+lecture de ses propres pointages/pauses. Prompt : "Fais-moi un résumé de mes heures et de
+mes pauses pointées cette semaine pour [nom employé]." (même texte des deux côtés,
+vidéo + fiche Lovable, cf. règle `FOODEATUP-TUTORIELS-WORKFLOW.md`).
 
 ## Statut
 
-Montage carte-based construit malgré le rush inexploitable (voir constat ci-dessus).
-**À livrer à Michael pour validation avant publication RapidoCMS/LinkedIn/Lovable**, comme
-le veut la règle standing de `LOVABLE-FOODEATUP-DOCS.md` — d'autant plus ici vu l'écart
-avec le rush attendu.
+v2 construite sur le vrai rush, remplace la v1 carte-based (`out/
+foodeatup-pointer-service-tuto-v1.mp4`, conservée dans l'historique git mais plus
+référencée sur RapidoCMS/Lovable). Livrée directement sur demande explicite de Michael
+("voici la vraie séquence vidéo tu peux remplacer").
