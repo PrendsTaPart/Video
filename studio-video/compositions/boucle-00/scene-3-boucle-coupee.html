@@ -1,0 +1,146 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+  </head>
+  <body>
+    <template>
+      <style>
+        @font-face {
+          font-family: "Fredoka";
+          src: url("assets/vendor/fonts/Fredoka-Variable.woff2") format("woff2-variations");
+          font-weight: 300 700;
+          font-display: block;
+        }
+        #root {
+          position: absolute;
+          inset: 0;
+          background: #fcf9e6;
+          overflow: hidden;
+          font-family: "Inter", sans-serif;
+        }
+        .eyebrow {
+          position: absolute;
+          top: 70px;
+          left: 0;
+          right: 0;
+          text-align: center;
+          font-family: "Fredoka", sans-serif;
+          font-weight: 600;
+          font-size: 34px;
+          color: #0f1a23;
+          opacity: 0;
+        }
+        .break-label {
+          position: absolute;
+          left: 435px;
+          top: 512px;
+          transform: scale(0);
+          background: #0f1a23;
+          color: #fcf9e6;
+          font-family: "Fredoka", sans-serif;
+          font-weight: 700;
+          font-size: 28px;
+          padding: 12px 26px;
+          border-radius: 12px;
+          white-space: nowrap;
+        }
+        .consequences {
+          position: absolute;
+          right: 170px;
+          top: 300px;
+          width: 640px;
+          display: flex;
+          flex-direction: column;
+          gap: 30px;
+        }
+        .cons {
+          display: flex;
+          align-items: center;
+          gap: 22px;
+          background: #ffffff;
+          border: 3px solid #0f1a23;
+          border-radius: 20px;
+          padding: 24px 30px;
+          opacity: 0;
+        }
+        .cons-dot {
+          width: 20px;
+          height: 20px;
+          border-radius: 50%;
+          background: #ffa500;
+          flex-shrink: 0;
+        }
+        .cons-text {
+          font-family: "Fredoka", sans-serif;
+          font-weight: 600;
+          font-size: 32px;
+          color: #0f1a23;
+        }
+        .verdict {
+          position: absolute;
+          left: 0;
+          right: 0;
+          bottom: 90px;
+          text-align: center;
+          font-family: "Fredoka", sans-serif;
+          font-weight: 700;
+          font-size: 44px;
+          color: #0f1a23;
+          opacity: 0;
+        }
+        .verdict b { color: #ffa500; }
+      </style>
+
+      <div
+        id="root"
+        data-composition-id="b00-scene3-boucle-coupee"
+        data-width="1920"
+        data-height="1080"
+        data-duration="9.38"
+      >
+        <div class="eyebrow" id="eyebrow">UNE BOUCLE COUPÉE</div>
+
+        <svg width="1920" height="1080" style="position:absolute; inset:0;">
+          <!-- Cercle laissé ouvert : un quart manque, la boucle ne se referme plus. -->
+          <path
+            id="arc-intact"
+            d="M 620 250 A 290 290 0 1 1 330 540"
+            fill="none" stroke="#0f1a23" stroke-opacity="0.25" stroke-width="8"
+            stroke-dasharray="1370" stroke-dashoffset="1370"
+          />
+          <circle id="gap-a" cx="620" cy="250" r="11" fill="#0f1a23" opacity="0" />
+          <circle id="gap-b" cx="330" cy="540" r="11" fill="#0f1a23" opacity="0" />
+        </svg>
+
+        <div class="break-label" id="break-label">le tour ne se referme plus</div>
+
+        <div class="consequences">
+          <div class="cons" id="cons-1"><div class="cons-dot"></div><div class="cons-text">Un stock faux</div></div>
+          <div class="cons" id="cons-2"><div class="cons-dot"></div><div class="cons-text">Une marge qui fond</div></div>
+          <div class="cons" id="cons-3"><div class="cons-dot"></div><div class="cons-text">Un client qui ne revient pas</div></div>
+        </div>
+
+        <div class="verdict" id="verdict">Rien ne casse tout de suite. <b>Ça se voit ailleurs.</b></div>
+      </div>
+
+      <script>
+        window.__timelines = window.__timelines || {};
+        const tl = gsap.timeline({ paused: true });
+
+        tl.fromTo("#eyebrow", { opacity: 0, y: -14 }, { opacity: 0.55, y: 0, duration: 0.4, ease: "power2.out" }, 0.05);
+        tl.to("#arc-intact", { strokeDashoffset: 0, duration: 0.9, ease: "power2.out" }, 0.3);
+        tl.fromTo("#gap-a, #gap-b", { opacity: 0, scale: 0 }, { opacity: 1, scale: 1, duration: 0.35, ease: "back.out(2)" }, 1.2);
+        tl.fromTo("#break-label", { scale: 0 }, { scale: 1, duration: 0.4, ease: "back.out(1.9)" }, 1.5);
+
+        tl.fromTo("#cons-1", { opacity: 0, x: 24 }, { opacity: 1, x: 0, duration: 0.4, ease: "power2.out" }, 3.6);
+        tl.fromTo("#cons-2", { opacity: 0, x: 24 }, { opacity: 1, x: 0, duration: 0.4, ease: "power2.out" }, 4.3);
+        tl.fromTo("#cons-3", { opacity: 0, x: 24 }, { opacity: 1, x: 0, duration: 0.4, ease: "power2.out" }, 5.0);
+
+        tl.fromTo("#verdict", { opacity: 0, y: 14 }, { opacity: 1, y: 0, duration: 0.5, ease: "power2.out" }, 6.2);
+
+        window.__timelines["b00-scene3-boucle-coupee"] = tl;
+      </script>
+    </template>
+  </body>
+</html>

@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=1920, height=1080" />
+    <script src="assets/vendor/gsap.min.js"></script>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      html,
+      body {
+        width: 1920px;
+        height: 1080px;
+        overflow: hidden;
+        background: #fcf9e6;
+      }
+      body {
+        font-family: "Inter", sans-serif;
+      }
+
+      @font-face {
+        font-family: "Fredoka";
+        src: url("assets/vendor/fonts/Fredoka-Variable.woff2") format("woff2-variations");
+        font-weight: 300 700;
+        font-display: block;
+      }
+
+      #root {
+        position: relative;
+        width: 1920px;
+        height: 1080px;
+        overflow: hidden;
+        background: #fcf9e6;
+      }
+      #root > div[data-composition-src] {
+        position: absolute;
+        inset: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div
+      id="root"
+      data-composition-id="boucle-00-principe"
+      data-start="0"
+      data-width="1920"
+      data-height="1080"
+      data-duration="42.80"
+    >
+      <div
+        id="el-scene1"
+        data-composition-id="b00-scene1-pas-une-liste"
+        data-composition-src="compositions/boucle-00/scene-1-pas-une-liste.html"
+        data-start="0"
+        data-duration="6.19"
+        data-track-index="1"
+        data-width="1920"
+        data-height="1080"
+      ></div>
+
+      <div
+        id="el-scene2"
+        data-composition-id="b00-scene2-anatomie"
+        data-composition-src="compositions/boucle-00/scene-2-anatomie.html"
+        data-start="6.19"
+        data-duration="12.90"
+        data-track-index="1"
+        data-width="1920"
+        data-height="1080"
+      ></div>
+
+      <div
+        id="el-scene3"
+        data-composition-id="b00-scene3-boucle-coupee"
+        data-composition-src="compositions/boucle-00/scene-3-boucle-coupee.html"
+        data-start="19.09"
+        data-duration="9.38"
+        data-track-index="1"
+        data-width="1920"
+        data-height="1080"
+      ></div>
+
+      <div
+        id="el-scene4"
+        data-composition-id="b00-scene4-huit-boucles"
+        data-composition-src="compositions/boucle-00/scene-4-huit-boucles.html"
+        data-start="28.47"
+        data-duration="9.32"
+        data-track-index="1"
+        data-width="1920"
+        data-height="1080"
+      ></div>
+
+      <div
+        id="el-scene5"
+        data-composition-id="b00-scene5-cta"
+        data-composition-src="compositions/boucle-00/scene-5-cta.html"
+        data-start="37.79"
+        data-duration="5.01"
+        data-track-index="1"
+        data-width="1920"
+        data-height="1080"
+      ></div>
+
+      <!-- Continuous French voiceover — survives every scene cut. -->
+      <audio
+        id="el-vo"
+        src="assets/audio/boucle-00-principe-vo.mp3"
+        data-start="0"
+        data-duration="37.80"
+        data-track-index="10"
+        data-volume="1"
+      ></audio>
+    </div>
+
+    <script>
+      window.__timelines = window.__timelines || {};
+      window.__timelines["boucle-00-principe"] = gsap.timeline({ paused: true });
+    </script>
+  </body>
+</html>

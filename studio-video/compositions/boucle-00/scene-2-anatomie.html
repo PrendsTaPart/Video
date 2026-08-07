@@ -1,0 +1,175 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+  </head>
+  <body>
+    <template>
+      <style>
+        @font-face {
+          font-family: "Fredoka";
+          src: url("assets/vendor/fonts/Fredoka-Variable.woff2") format("woff2-variations");
+          font-weight: 300 700;
+          font-display: block;
+        }
+        #root {
+          position: absolute;
+          inset: 0;
+          background: #fcf9e6;
+          overflow: hidden;
+          font-family: "Inter", sans-serif;
+        }
+        .eyebrow {
+          position: absolute;
+          top: 70px;
+          left: 0;
+          right: 0;
+          text-align: center;
+          font-family: "Fredoka", sans-serif;
+          font-weight: 600;
+          font-size: 34px;
+          color: #0f1a23;
+          opacity: 0;
+        }
+        .step {
+          position: absolute;
+          width: 260px;
+          height: 260px;
+          margin-left: -130px;
+          margin-top: -130px;
+          border-radius: 50%;
+          background: #ffffff;
+          border: 3px solid #0f1a23;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          gap: 10px;
+          text-align: center;
+          transform: scale(0);
+        }
+        .step-name {
+          font-family: "Fredoka", sans-serif;
+          font-weight: 700;
+          font-size: 34px;
+          color: #0f1a23;
+        }
+        .step-note {
+          font-size: 20px;
+          color: #0f1a23;
+          opacity: 0.6;
+          padding: 0 26px;
+          line-height: 1.35;
+        }
+        .closing {
+          position: absolute;
+          left: 0;
+          right: 0;
+          bottom: 48px;
+          text-align: center;
+          font-family: "Fredoka", sans-serif;
+          font-weight: 700;
+          font-size: 40px;
+          color: #0f1a23;
+          opacity: 0;
+        }
+        .closing b { color: #007bff; }
+      </style>
+
+      <div
+        id="root"
+        data-composition-id="b00-scene2-anatomie"
+        data-width="1920"
+        data-height="1080"
+        data-duration="12.90"
+      >
+        <div class="eyebrow" id="eyebrow">ANATOMIE D'UNE BOUCLE</div>
+
+        <svg width="1920" height="1080" style="position:absolute; inset:0;">
+          <defs>
+            <marker id="head" markerWidth="9" markerHeight="9" refX="7" refY="4.5" orient="auto">
+              <path d="M0,0 L9,4.5 L0,9 z" fill="#007bff" />
+            </marker>
+          </defs>
+          <circle
+            id="orbit"
+            cx="960" cy="555" r="265"
+            fill="none" stroke="#0f1a23" stroke-opacity="0.18" stroke-width="4"
+            stroke-dasharray="1665" stroke-dashoffset="1665"
+            transform="rotate(-90 960 555)"
+          />
+          <circle id="dot" cx="960" cy="290" r="15" fill="#007bff" opacity="0" />
+          <circle id="dot-halo" cx="960" cy="290" r="26" fill="#007bff" fill-opacity="0.18" opacity="0" />
+        </svg>
+
+        <div class="step" id="step-1" style="left:960px; top:290px;">
+          <div class="step-name">Action</div>
+          <div class="step-note">un geste réel en salle ou en cuisine</div>
+        </div>
+        <div class="step" id="step-2" style="left:1225px; top:555px;">
+          <div class="step-name">Donnée</div>
+          <div class="step-note">la trace que ce geste laisse</div>
+        </div>
+        <div class="step" id="step-3" style="left:960px; top:820px;">
+          <div class="step-name">Décision</div>
+          <div class="step-note">ce que la donnée permet de trancher</div>
+        </div>
+        <div class="step" id="step-4" style="left:695px; top:555px;">
+          <div class="step-name">Action</div>
+          <div class="step-note">le geste suivant, mieux informé</div>
+        </div>
+
+        <div class="closing" id="closing">Tant que le tour se referme, <b>le restaurant apprend de lui-même.</b></div>
+      </div>
+
+      <script>
+        window.__timelines = window.__timelines || {};
+        const tl = gsap.timeline({ paused: true });
+
+        const cx = 960, cy = 555, r = 265;
+        const START = 1.4;
+        const STEP = 2.1;
+        const BLUE = "#007bff";
+        const CREAM = "#fcf9e6";
+
+        tl.fromTo("#eyebrow", { opacity: 0, y: -14 }, { opacity: 0.55, y: 0, duration: 0.4, ease: "power2.out" }, 0.05);
+        tl.to("#orbit", { strokeDashoffset: 0, duration: 0.9, ease: "power2.out" }, 0.25);
+        tl.fromTo(".step", { scale: 0 }, { scale: 1, duration: 0.35, ease: "back.out(1.6)", stagger: 0.12 }, 0.5);
+        tl.set("#dot, #dot-halo", { opacity: 1 }, START + 0.12);
+
+        // Le point parcourt le cercle, de nœud en nœud, et boucle au départ.
+        for (let i = 0; i < 5; i++) {
+          const t = START + i * STEP;
+          const idx = i % 4;
+          tl.to(`#step-${idx + 1}`, { backgroundColor: BLUE, borderColor: BLUE, duration: 0.3, ease: "power2.out" }, t);
+          tl.to(`#step-${idx + 1} .step-name`, { color: CREAM, duration: 0.3 }, t);
+          tl.to(`#step-${idx + 1} .step-note`, { color: CREAM, opacity: 0.85, duration: 0.3 }, t);
+          tl.to(`#step-${idx + 1}`, { scale: 1.06, duration: 0.16, ease: "power2.out", yoyo: true, repeat: 1 }, t);
+
+          if (i < 4) {
+            const a0 = -90 + idx * 90;
+            const a1 = a0 + 90;
+            const state = { a: a0 };
+            tl.to(state, {
+              a: a1,
+              duration: STEP - 0.3,
+              ease: "power1.inOut",
+              onUpdate: () => {
+                const rad = (state.a * Math.PI) / 180;
+                const x = cx + r * Math.cos(rad);
+                const y = cy + r * Math.sin(rad);
+                gsap.set("#dot, #dot-halo", { attr: { cx: x, cy: y } });
+              }
+            }, t + 0.12);
+          } else {
+            tl.to("#dot, #dot-halo", { opacity: 0, duration: 0.25 }, t + 0.2);
+          }
+        }
+
+        tl.fromTo("#closing", { opacity: 0, y: 14 }, { opacity: 1, y: 0, duration: 0.5, ease: "power2.out" }, 10.2);
+
+        window.__timelines["b00-scene2-anatomie"] = tl;
+      </script>
+    </template>
+  </body>
+</html>

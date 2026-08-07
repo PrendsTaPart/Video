@@ -1,0 +1,127 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+  </head>
+  <body>
+    <template>
+      <style>
+        @font-face {
+          font-family: "Fredoka";
+          src: url("assets/vendor/fonts/Fredoka-Variable.woff2") format("woff2-variations");
+          font-weight: 300 700;
+          font-display: block;
+        }
+        #root {
+          position: absolute;
+          inset: 0;
+          background: #fcf9e6;
+          overflow: hidden;
+          font-family: "Inter", sans-serif;
+        }
+        .checklist {
+          position: absolute;
+          left: 50%;
+          top: 250px;
+          transform: translateX(-50%);
+          width: 760px;
+          display: flex;
+          flex-direction: column;
+          gap: 26px;
+        }
+        .task {
+          display: flex;
+          align-items: center;
+          gap: 22px;
+          opacity: 0;
+        }
+        .box {
+          width: 46px;
+          height: 46px;
+          border-radius: 10px;
+          border: 3px solid #0f1a23;
+          flex-shrink: 0;
+        }
+        .task-text {
+          font-family: "Fredoka", sans-serif;
+          font-weight: 600;
+          font-size: 38px;
+          color: #0f1a23;
+        }
+        .ring-wrap {
+          position: absolute;
+          inset: 0;
+          opacity: 0;
+        }
+        .ring-label {
+          position: absolute;
+          left: 0;
+          right: 0;
+          top: 495px;
+          text-align: center;
+          font-family: "Fredoka", sans-serif;
+          font-weight: 700;
+          font-size: 66px;
+          color: #0f1a23;
+        }
+        .ring-sub {
+          position: absolute;
+          left: 0;
+          right: 0;
+          top: 585px;
+          text-align: center;
+          font-family: "Fredoka", sans-serif;
+          font-weight: 600;
+          font-size: 32px;
+          color: #0f1a23;
+          opacity: 0.6;
+        }
+      </style>
+
+      <div
+        id="root"
+        data-composition-id="b00-scene1-pas-une-liste"
+        data-width="1920"
+        data-height="1080"
+        data-duration="6.19"
+      >
+        <div class="checklist" id="checklist">
+          <div class="task"><div class="box"></div><div class="task-text">Commander chez le fournisseur</div></div>
+          <div class="task"><div class="box"></div><div class="task-text">Faire le planning</div></div>
+          <div class="task"><div class="box"></div><div class="task-text">Relever les températures</div></div>
+          <div class="task"><div class="box"></div><div class="task-text">Publier sur les réseaux</div></div>
+          <div class="task"><div class="box"></div><div class="task-text">Envoyer au comptable</div></div>
+        </div>
+
+        <div class="ring-wrap" id="ring-wrap">
+          <svg width="1920" height="1080" style="position:absolute; inset:0;">
+            <circle
+              id="ring"
+              cx="960" cy="540" r="330"
+              fill="none" stroke="#007bff" stroke-width="10"
+              stroke-dasharray="2074" stroke-dashoffset="2074"
+              transform="rotate(-90 960 540)"
+            />
+          </svg>
+          <div class="ring-label">Huit boucles</div>
+          <div class="ring-sub">qui tournent en même temps</div>
+        </div>
+      </div>
+
+      <script>
+        window.__timelines = window.__timelines || {};
+        const tl = gsap.timeline({ paused: true });
+
+        tl.fromTo(".task", { opacity: 0, x: -20 }, { opacity: 1, x: 0, duration: 0.3, ease: "power2.out", stagger: 0.16 }, 0.15);
+        tl.to("#checklist", { opacity: 0, y: -20, duration: 0.5, ease: "power2.in" }, 2.5);
+
+        tl.set("#ring-wrap", { opacity: 1 }, 2.95);
+        tl.to("#ring", { strokeDashoffset: 0, duration: 1.2, ease: "power2.inOut" }, 3.0);
+        tl.fromTo(".ring-label", { opacity: 0, scale: 0.85 }, { opacity: 1, scale: 1, duration: 0.5, ease: "back.out(1.7)" }, 3.5);
+        tl.fromTo(".ring-sub", { opacity: 0 }, { opacity: 0.6, duration: 0.4, ease: "power2.out" }, 4.0);
+
+        window.__timelines["b00-scene1-pas-une-liste"] = tl;
+      </script>
+    </template>
+  </body>
+</html>
