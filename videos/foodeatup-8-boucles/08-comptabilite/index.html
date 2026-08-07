@@ -727,17 +727,30 @@ html, body {
   // Le ∞ : deux boucles, huit nœuds, les voisines s'allument.
 
   var NOEUDS = [
-    // Boucle gestion (lobe gauche) puis boucle vente (lobe droit).
+    // Boucle gestion — lobe GAUCHE, dans l'ordre des boucles 01 à 04.
     { id: "Configuration", court: "Config." }, { id: "Équipe", court: "Équipe" },
     { id: "StockVisionAI", court: "Stock" }, { id: "HACCP", court: "HACCP" },
+    // Boucle vente — lobe DROIT, boucles 05 à 08.
     { id: "E-commerce", court: "E-com." }, { id: "Communication", court: "Commu." },
     { id: "Fidélité", court: "Fidélité" }, { id: "Comptabilité", court: "Compta." }
   ];
 
   // Lemniscate de Gerono — paramétrage stable, donc positions reproductibles.
-  function pointInfini(u, rx, ry) {
-    var a = u * Math.PI * 2;
+  function pointInfini(a, rx, ry) {
     return { x: rx * Math.cos(a), y: ry * Math.sin(a) * Math.cos(a) };
+  }
+
+  // Angle du i-ème nœud. Le signe de cos(a) décide du lobe : répartir les huit
+  // nœuds sur un tour complet les ferait sauter d'un lobe à l'autre à chaque
+  // passage par le croisement central, et la boucle gestion se retrouverait à
+  // cheval sur les deux — exactement ce que le schéma doit démentir. On cantonne
+  // donc les quatre boucles de gestion à cos(a) < 0 (gauche) et les quatre de
+  // vente à cos(a) > 0 (droite).
+  function angleNoeud(i) {
+    var rang = (i % 4 + 0.5) / 4;              // 0,125 · 0,375 · 0,625 · 0,875
+    return i < 4
+      ? Math.PI / 2 + rang * Math.PI          // lobe gauche  — gestion
+      : -Math.PI / 2 + rang * Math.PI;        // lobe droit   — vente
   }
 
   function bâtirPlan5(root, d) {
@@ -751,7 +764,7 @@ html, body {
 
     var pts = [];
     for (var i = 0; i <= 240; i++) {
-      var p = pointInfini(i / 240, rx, ry);
+      var p = pointInfini((i / 240) * Math.PI * 2, rx, ry);
       pts.push((cx + p.x).toFixed(2) + "," + (cy + p.y).toFixed(2));
     }
     var trace = document.createElementNS("http://www.w3.org/2000/svg", "polyline");
@@ -773,9 +786,7 @@ html, body {
     root._flux = flux;
 
     root._noeuds = NOEUDS.map(function (n, i) {
-      // Les huit nœuds répartis sur la courbe, en sautant le croisement central.
-      var u = (i + 0.5) / 8;
-      var p = pointInfini(u, rx, ry);
+      var p = pointInfini(angleNoeud(i), rx, ry);
       var g = document.createElementNS("http://www.w3.org/2000/svg", "g");
       var c = document.createElementNS("http://www.w3.org/2000/svg", "circle");
       c.setAttribute("cx", cx + p.x); c.setAttribute("cy", cy + p.y);
