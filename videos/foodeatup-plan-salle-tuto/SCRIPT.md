@@ -1,8 +1,5 @@
 # Tutoriel — Dessiner son plan de salle / QR code à table FoodEatUp
 
-**BROUILLON — en attente de validation (règle `FOODEATUP-TUTORIELS-WORKFLOW.md` étape 3 :
-STOP obligatoire avant de générer la VO ou de monter quoi que ce soit).**
-
 Rush fourni : `assets/screen.mp4` — 1920x828, 25 fps, 40,0 s, H.264/AAC.
 Carte d'ouverture fournie : `assets/intro.jpg` (« DESSINER SON PLAN DE SALLE / QR CODE À
 TABLE », mascotte + QR code, identique au gabarit des autres vignettes).
@@ -110,7 +107,10 @@ Même texte côté fiche Lovable (`claudePrompt`).
 
 ## Statut publication
 
-**Brouillon.** En attente de validation du script par Michael avant génération VO
-(ElevenLabs), montage, puis livraison (`SendUserFile`) et — seulement après un second OK
-explicite — publication RapidoCMS + LinkedIn + Lovable + mise à jour du tableau
-« Tutoriels publiés » dans `videos/LOVABLE-FOODEATUP-DOCS.md`.
+**Validée et publiée le 2026-08-07.** Montage livré et validé (script puis vidéo finale,
+2 stops respectés). RapidoCMS : vidéo + vignette uploadées (`foodeatup-plan-salle-tuto-v1`
+/ `-thumbnail`). LinkedIn : draft créé et programmé — calendrier FoodEatUp plein jusqu'au
+2026-08-20 (2 posts/jour, 7h/16h), prochain créneau libre pris : 2026-08-21 07h00. Lovable :
+tutoriel `dessiner-son-plan-de-salle` ajouté à `src/data/tutorials.ts` (module
+`configuration`, 11e vidéo). Entrée notée dans le tableau « Tutoriels publiés » de
+`videos/LOVABLE-FOODEATUP-DOCS.md`.
