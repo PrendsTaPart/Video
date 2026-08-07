@@ -22,12 +22,21 @@ HERE = pathlib.Path(__file__).resolve().parent
 PROJ = HERE.parent
 REPO = PROJ.parent.parent
 
-# Débit de lecture d'Adam en français, mesuré sur les VO déjà produites de la
-# série (boucle-stockvision) : ~14,2 caractères par seconde.
-CPS = 14.2
-# Silence laissé après chaque ligne pour que le plan ne coupe pas sur le dernier
-# mot, et amorce avant qu'elle ne démarre.
+# Débit réel d'Adam en français, mesuré sur les 7 lignes de la boucle 01 :
+# 1 045 caractères pour 60,94 s de parole, soit 17,1 c/s. (L'estimation initiale
+# à 14,2 c/s, reprise de boucle-stockvision, donnait 20 % de trop.)
+CPS = 17.1
+# Amorce avant la ligne, silence après, pour que le plan ne coupe pas sur le
+# dernier mot.
 AMORCE, QUEUE = 0.45, 0.75
+
+# Respiration supplémentaire, par type de plan. Ce n'est pas du rembourrage : la
+# VO d'Adam est plus rapide que le temps dont l'image a besoin sur trois plans
+# précis, et sans ces secondes l'animation est tronquée.
+#   3 — la cascade : 8 maillons à lire, c'est le plan pilier de la série ;
+#   6 — les chiffres : le compte-à-rebours doit finir avant la coupe ;
+#   7 — le CTA : la phrase, le bouton et le logo entrent en 2,2 s à eux seuls.
+RESPIRATION = {3: 3.0, 6: 1.5, 7: 2.5}
 
 
 def ffmpeg() -> str:
@@ -98,35 +107,45 @@ FORMATS = {
 }
 
 
-def minutages(video: dict, dossier: pathlib.Path, exiger_vo: bool) -> list[dict]:
-    """Une entrée par plan : type, données visuelles, start et durée."""
+def minutages(video: dict, dossier: pathlib.Path, exiger_vo: bool,
+              types: dict) -> list[dict]:
+    """Une entrée par plan : numéro, début et durée.
+
+    La durée d'un plan est celle de sa ligne de VO — jamais l'inverse. On y
+    ajoute l'amorce, le silence de queue, et la respiration propre au type de
+    plan (voir RESPIRATION).
+    """
     plans, curseur = [], 0.0
     for p in video["plans"]:
         mp3 = dossier / "assets" / "vo" / f"p{p['n']:02d}.mp3"
         if mp3.exists():
-            d = duree_mp3(mp3) + AMORCE + QUEUE
+            parole = duree_mp3(mp3)
             source = "vo"
         elif exiger_vo:
             sys.exit(f"ERREUR — VO manquante : {mp3}. Build final refusé.")
         else:
-            d = len(p["vo"]) / CPS + AMORCE + QUEUE
+            parole = len(p["vo"]) / CPS
             source = "estimée"
+        d = parole + AMORCE + QUEUE + RESPIRATION.get(types[p["n"]], 0.0)
         plans.append({"n": p["n"], "start": round(curseur, 3),
-                      "dur": round(d, 3), "source": source})
+                      "dur": round(d, 3), "parole": round(parole, 3),
+                      "source": source})
         curseur += d
     return plans
 
 
-def construire(video: dict, visuel: dict, fmt_nom: str, exiger_vo: bool) -> tuple[str, float]:
+def construire(video: dict, visuel: dict, fmt_nom: str,
+               exiger_vo: bool) -> tuple[str, float, str]:
     F = FORMATS[fmt_nom]
     dossier = PROJ / video["dossier"]
-    tm = minutages(video, dossier, exiger_vo)
 
-    # Le plan 0 (vidéo de principe) n'a que 6 plans et pas de cascade : on mappe
-    # chaque plan sur le type de gabarit qui lui correspond, sans en inventer.
+    # La vidéo 0 n'a que 6 plans et pas de cascade : on mappe chaque plan sur le
+    # gabarit qui lui correspond, sans en inventer un.
     TYPES = {1: 1, 2: 2, 3: 3, 4: 4, 5: 5, 6: 6, 7: 7}
     if video["slug"] == "boucle-00-principe":
         TYPES = {1: 1, 2: 2, 3: 5, 4: 2, 5: 7, 6: 6}
+
+    tm = minutages(video, dossier, exiger_vo, TYPES)
 
     logo = REPO / "studio-video/assets/brand/logo-v2/foodeatup-logo-horizontal-mascot.png"
 
@@ -222,7 +241,8 @@ def construire(video: dict, visuel: dict, fmt_nom: str, exiger_vo: bool) -> tupl
 </script>
 </body></html>
 """
-    return html, duree
+    source = "VO réelle" if all(t["source"] == "vo" for t in tm) else "durées estimées"
+    return html, duree, source
 
 
 def main() -> None:
@@ -244,13 +264,15 @@ def main() -> None:
         (dossier / "assets" / "img").mkdir(parents=True, exist_ok=True)
 
         for fmt_nom, nom_fichier in (("master", "index.html"), ("reel", "index-reel.html")):
-            html, duree = construire(video, visuels[video["slug"]], fmt_nom, args.exiger_vo)
+            html, duree, source = construire(
+                video, visuels[video["slug"]], fmt_nom, args.exiger_vo
+            )
             (dossier / nom_fichier).write_text(html, encoding="utf-8")
 
         ecart = duree - video["dureeCible"]
         drapeau = "OK " if abs(ecart) <= 2 else "!! "
         print(f"{drapeau}{video['slug']:34s} {duree:6.2f}s "
-              f"(cible {video['dureeCible']}s, écart {ecart:+.1f}s)")
+              f"(cible {video['dureeCible']}s, écart {ecart:+.1f}s) [{source}]")
 
 
 if __name__ == "__main__":
