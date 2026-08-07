@@ -19,8 +19,9 @@
     "bleu": "#007BFF",
     "bleuSysteme": "#147AFF",
     "orange": "#FFA500",
-    "policeTitres": "Baloo 2",
-    "policeCorps": "Inter"
+    "policeTitres": "Fredoka",
+    "policeCorps": "Inter",
+    "notePolices": "Fredoka est la police maison du studio, remplaçante de Goodly (la vraie police de marque, pas encore fournie) et déjà vendorée dans le dépôt. P0 autorisait Baloo 2 ou Fredoka ; on prend celle que le reste du catalogue utilise."
   },
   "voix": {
     "provider": "elevenlabs",
