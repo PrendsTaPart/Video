@@ -11,8 +11,8 @@ Durées : mesurées sur le MP4 final. Le brief demandait ffprobe ; le wheel
 `imageio-ffmpeg` ne livre que ffmpeg, mais `ffmpeg -i` expose la même durée de
 conteneur — c'est bien le fichier rendu qu'on mesure, jamais le script.
 
-Le manifeste laisse `videoUrl` et `thumbnailUrl` vides : ils ne sont connus
-qu'après l'upload RapidoCMS, qui est une publication et attend une validation.
+Les URLs pointent la bibliothèque RapidoCMS, où les fichiers ont été versés
+sous les noms imposés par P9.
 """
 import argparse
 import json
@@ -24,6 +24,11 @@ HERE = pathlib.Path(__file__).resolve().parent
 PROJ = HERE.parent
 sys.path.insert(0, str(HERE))
 from build_html import duree_mp3, ffmpeg, minutages  # noqa: E402
+
+# Bibliothèque RapidoCMS. Les noms de fichiers sont ceux imposés par P9
+# (`boucle-NN-<slug>-v1` et `-thumbnail`), donc l'URL S3 est déductible du slug —
+# pas besoin de relire la bibliothèque pour construire le manifeste.
+S3 = "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/"
 
 TYPES_DEFAUT = {1: 1, 2: 2, 3: 3, 4: 4, 5: 5, 6: 6, 7: 7}
 TYPES_PRINCIPE = {1: 1, 2: 2, 3: 5, 4: 2, 5: 7, 6: 6}
@@ -75,8 +80,8 @@ def main() -> None:
             "slug": video["slug"],
             "order": video["ordre"],
             "title": video["titre"],
-            "videoUrl": "",
-            "thumbnailUrl": "",
+            "videoUrl": S3 + f"{video['slug']}-v1",
+            "thumbnailUrl": S3 + f"{video['slug']}-thumbnail",
             "durationSeconds": round(duree_mp4(mp4)),
             "outilsMcp": video["outilsMcp"],
         })
