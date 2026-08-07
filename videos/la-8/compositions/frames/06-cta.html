@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Frame 06 — CTA</title>
+  </head>
+  <body>
+    <template>
+      <style>
+        @font-face { font-family: "Poppins"; src: url("assets/fonts/Poppins-800.woff2") format("woff2"); font-weight: 800; }
+        @font-face { font-family: "Poppins"; src: url("assets/fonts/Poppins-700.woff2") format("woff2"); font-weight: 700; }
+        @font-face { font-family: "Poppins"; src: url("assets/fonts/Poppins-600.woff2") format("woff2"); font-weight: 600; }
+        @font-face { font-family: "Inter"; src: url("assets/fonts/Inter-Variable.woff2") format("woff2-variations"); font-weight: 100 900; }
+
+        #root {
+          position: absolute; inset: 0; width: 1920px; height: 1080px; overflow: hidden;
+          font-family: "Inter", sans-serif; color: #f7f9fc;
+          background: radial-gradient(ellipse 1500px 1100px at 50% 45%, #2aa3ff 0%, #1E9BF0 45%, #0f6fc4 85%, #0a4f8c 100%);
+        }
+
+        .card { position: absolute; left: 50%; top: 230px; width: 760px; margin-left: -380px;
+          background: #f7f9fc; border-radius: 28px; padding: 56px 64px; text-align: center;
+          box-shadow: 0 40px 90px rgba(0,0,0,0.35); opacity: 0;
+        }
+        .card img { width: 96px; height: 96px; object-fit: contain; margin-bottom: 18px; }
+        .wordmark { font-family: "Poppins", sans-serif; font-weight: 800; font-size: 46px; color: #1B2A41; letter-spacing: -0.01em; }
+        .priceLine { margin-top: 26px; font-family: "Poppins", sans-serif; font-weight: 700; font-size: 32px; color: #0B5CAD; }
+        .priceLine .from { font-size: 22px; font-weight: 500; color: #1B2A41; display: block; margin-bottom: 4px; }
+        .subLine { margin-top: 16px; font-family: "Inter", sans-serif; font-weight: 500; font-size: 21px; color: #6B6B6B; }
+
+        .ctaWrap { position: absolute; inset: 0; display: flex; flex-direction: column; align-items: center; justify-content: center; opacity: 0; }
+        .ctaTitle { font-family: "Poppins", sans-serif; font-weight: 800; font-size: 84px; color: #ffffff; letter-spacing: -0.01em; text-align: center; }
+        .ctaUrl { margin-top: 30px; font-family: "Poppins", sans-serif; font-weight: 600; font-size: 40px; color: #ffffff;
+          background: rgba(5,7,12,0.22); padding: 16px 40px; border-radius: 100px; border: 2px solid rgba(255,255,255,0.5);
+        }
+
+        .legal { position: absolute; left: 0; right: 0; bottom: 40px; text-align: center; font-family: "Inter", sans-serif;
+          font-size: 17px; color: rgba(5,7,12,0.7); padding: 0 200px; opacity: 0;
+        }
+        .subtitle { position: absolute; left: 0; right: 0; bottom: 130px; text-align: center; font-family: "Poppins", sans-serif;
+          font-weight: 700; font-size: 40px; color: #ffffff; -webkit-text-stroke: 5px #05070c; paint-order: stroke fill; opacity: 0;
+        }
+      </style>
+
+      <div id="root" data-composition-id="06-cta" data-width="1920" data-height="1080" data-duration="14">
+        <div class="clip card" data-start="0" data-duration="14" data-track-index="0">
+          <img src="public/foodeatup-mark-eight.png" alt="" />
+          <div class="wordmark">FoodEatUp</div>
+          <div class="priceLine"><span class="from">à partir de</span>49 €/mois <span style="color:#1B2A41; font-weight:500; font-size:22px">· tout inclus 119 €/mois</span></div>
+          <div class="subLine">Essai 7 jours · sans engagement</div>
+        </div>
+
+        <div class="clip ctaWrap" data-start="0" data-duration="14" data-track-index="1">
+          <div class="ctaTitle">Faites le compte.</div>
+          <div class="ctaUrl">site.foodeatup.com/comparateur</div>
+        </div>
+
+        <div class="clip subLayer" data-start="0" data-duration="14" data-track-index="2"></div>
+
+        <div class="clip legal" data-start="0" data-duration="14" data-track-index="3">
+          Le comparateur utilise vos grilles de prix réelles. Marques citées à titre d'identification.
+          Fourchette éditeurs relevée en juillet 2026.
+        </div>
+
+        <audio id="voice06" src="assets/voice/06.mp3" data-start="1.0" data-duration="7.34" data-track-index="10" data-volume="1"></audio>
+        <audio id="sfx06a" src="assets/sfx/sparkle.mp3" data-start="0.8" data-duration="3.329" data-track-index="20" data-volume="0.35"></audio>
+        <audio id="sfx06b" src="assets/sfx/chime.mp3" data-start="7.0" data-duration="0.72" data-track-index="21" data-volume="0.5"></audio>
+      </div>
+
+      <script src="assets/vendor/gsap.min.js"></script>
+      <script>
+        window.__timelines = window.__timelines || {};
+        (function () {
+          var root = document.querySelector('[data-composition-id="06-cta"][id="root"]');
+          if (!root) root = document.querySelector('[data-composition-id="06-cta"]');
+
+          var tl = gsap.timeline({ paused: true });
+          var card = root.querySelector(".card");
+          var ctaWrap = root.querySelector(".ctaWrap");
+          var legal = root.querySelector(".legal");
+
+          tl.fromTo(card, { opacity: 0, y: 30, scale: 0.92 }, { opacity: 1, y: 0, scale: 1, duration: 0.6, ease: "back.out(1.6)" }, 0.8);
+          tl.fromTo(legal, { opacity: 0 }, { opacity: 1, duration: 0.4 }, 1.2);
+          tl.to(legal, { opacity: 0, duration: 0.4 }, 7.6);
+
+          tl.to(card, { opacity: 0, y: -24, scale: 0.94, duration: 0.5, ease: "power2.in" }, 7.8);
+          tl.fromTo(ctaWrap, { opacity: 0 }, { opacity: 1, duration: 0.6, ease: "power2.out" }, 8.1);
+
+          var subLayer = root.querySelector(".subLayer");
+          var LINES = [
+            [1.0, 1.73, "Un logiciel."],
+            [1.73, 2.46, "Une facture."],
+            [2.46, 3.67, "Quarante-neuf euros."],
+            [3.67, 4.76, "Faites le compte."],
+            [4.76, 6.16, "Le comparateur utilise"],
+            [6.16, 8.34, "vos vrais chiffres, pas les nôtres"],
+          ];
+          LINES.forEach(function (l) {
+            var el = document.createElement("div");
+            el.className = "subtitle";
+            el.textContent = l[2];
+            subLayer.appendChild(el);
+            tl.set(el, { opacity: 1 }, l[0]);
+            tl.set(el, { opacity: 0 }, l[1] - 0.05);
+          });
+
+          window.__timelines["06-cta"] = tl;
+        })();
+      </script>
+    </template>
+  </body>
+</html>

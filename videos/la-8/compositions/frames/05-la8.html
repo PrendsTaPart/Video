@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Frame 05 — La 8</title>
+  </head>
+  <body>
+    <template>
+      <style>
+        @font-face { font-family: "Poppins"; src: url("assets/fonts/Poppins-700.woff2") format("woff2"); font-weight: 700; }
+        @font-face { font-family: "Poppins"; src: url("assets/fonts/Poppins-600.woff2") format("woff2"); font-weight: 600; }
+        @font-face { font-family: "Inter"; src: url("assets/fonts/Inter-Variable.woff2") format("woff2-variations"); font-weight: 100 900; }
+
+        #root {
+          position: absolute; inset: 0; width: 1920px; height: 1080px; overflow: hidden;
+          background: #05070c; font-family: "Inter", sans-serif; color: #f7f9fc;
+        }
+        .felt { position: absolute; inset: 0;
+          background: radial-gradient(ellipse 1400px 1000px at 50% 50%, #0e2a4d 0%, #081826 55%, #05070c 100%);
+        }
+        .tint { position: absolute; inset: 0; background: radial-gradient(ellipse 1300px 900px at 50% 50%, rgba(30,155,240,0.28), transparent 65%); opacity: 0; }
+
+        .gridLayer { position: absolute; inset: 0; }
+        .tile { position: absolute; width: 220px; height: 150px; margin-left: -110px; margin-top: -75px;
+          border-radius: 16px; background: rgba(30,155,240,0.07); border: 1.5px solid rgba(30,155,240,0.35);
+          opacity: 0;
+        }
+
+        .ballWrap { position: absolute; left: 960px; top: 480px; width: 220px; height: 220px; margin-left: -110px; margin-top: -110px; }
+        .ball8 { position: absolute; inset: 0; border-radius: 50%; box-shadow: 0 0 0 rgba(30,155,240,0); }
+        .discBlack { position: absolute; inset: 0; border-radius: 50%; background: #15181d; }
+        .discBlue { position: absolute; inset: 0; border-radius: 50%;
+          background: radial-gradient(circle at 38% 30%, #4fb3ff, #1E9BF0 55%, #0f6fc4 100%); opacity: 0;
+        }
+        .shine { position: absolute; inset: 0; border-radius: 50%; background: radial-gradient(circle at 34% 26%, rgba(255,255,255,0.9), transparent 46%); }
+        .numWrap { position: absolute; left: 50%; top: 50%; width: 88px; height: 88px; margin-left: -44px; margin-top: -44px;
+          border-radius: 50%; background: #f4f2ea; display: flex; align-items: center; justify-content: center;
+        }
+        .num8 { font-family: "Poppins", sans-serif; font-weight: 700; font-size: 52px; color: #191b1f; }
+        .halo { position: absolute; inset: -60px; border-radius: 50%; background: radial-gradient(circle, rgba(30,155,240,0.5), transparent 70%); opacity: 0; }
+
+        .caption { position: absolute; left: 0; right: 0; bottom: 150px; text-align: center; opacity: 0; }
+        .caption .big { font-family: "Poppins", sans-serif; font-weight: 700; font-size: 54px; color: #ffffff; }
+        .caption .big .accent { color: #1E9BF0; }
+
+        .subtitle { position: absolute; left: 0; right: 0; bottom: 76px; text-align: center; font-family: "Poppins", sans-serif;
+          font-weight: 700; font-size: 38px; color: #ffffff; -webkit-text-stroke: 5px #000000; paint-order: stroke fill; opacity: 0;
+        }
+      </style>
+
+      <div id="root" data-composition-id="05-la8" data-width="1920" data-height="1080" data-duration="7">
+        <div class="clip felt" data-start="0" data-duration="7" data-track-index="0"></div>
+        <div class="clip tint" data-start="0" data-duration="7" data-track-index="1"></div>
+        <div class="clip gridLayer" data-start="0" data-duration="7" data-track-index="2"></div>
+
+        <div class="clip ballWrap" data-start="0" data-duration="7" data-track-index="3">
+          <div class="halo"></div>
+          <div class="ball8">
+            <div class="discBlack"></div>
+            <div class="discBlue"></div>
+            <div class="shine"></div>
+            <div class="numWrap"><span class="num8">8</span></div>
+          </div>
+        </div>
+
+        <div class="clip caption" data-start="0" data-duration="7" data-track-index="4">
+          <div class="big">12 poches. 177 outils. <span class="accent">1 bille.</span></div>
+        </div>
+
+        <div class="clip subLayer" data-start="0" data-duration="7" data-track-index="5"></div>
+
+        <audio id="voice05" src="assets/voice/05.mp3" data-start="0.5" data-duration="5.042" data-track-index="10" data-volume="1"></audio>
+        <audio id="sfx05a" src="assets/sfx/chime.mp3" data-start="3.9" data-duration="0.72" data-track-index="20" data-volume="0.5"></audio>
+      </div>
+
+      <script src="assets/vendor/gsap.min.js"></script>
+      <script>
+        window.__timelines = window.__timelines || {};
+        (function () {
+          var root = document.querySelector('[data-composition-id="05-la8"][id="root"]');
+          if (!root) root = document.querySelector('[data-composition-id="05-la8"]');
+
+          // 12 dashboard modules, 4×3 grid
+          var gridLayer = root.querySelector(".gridLayer");
+          var cols = 4, rows = 3, gx = 250, gy = 190, startX = 960 - ((cols - 1) * gx) / 2, startY = 300;
+          var tiles = [];
+          for (var r = 0; r < rows; r++) {
+            for (var c = 0; c < cols; c++) {
+              var el = document.createElement("div");
+              el.className = "tile";
+              el.style.left = startX + c * gx + "px";
+              el.style.top = startY + r * gy + "px";
+              gridLayer.appendChild(el);
+              tiles.push(el);
+            }
+          }
+
+          var tl = gsap.timeline({ paused: true });
+          var ballWrap = root.querySelector(".ballWrap");
+          var discBlack = root.querySelector(".discBlack");
+          var discBlue = root.querySelector(".discBlue");
+          var halo = root.querySelector(".halo");
+          var tint = root.querySelector(".tint");
+          var caption = root.querySelector(".caption");
+
+          tl.fromTo(ballWrap, { scale: 0.85, opacity: 0 }, { scale: 1, opacity: 1, duration: 0.5, ease: "power2.out" }, 0);
+          tl.to(ballWrap, { rotation: 6, duration: 2.2, ease: "sine.inOut", yoyo: true, repeat: 1 }, 0.4);
+
+          // Color pivot on "Ici aussi" (t≈2.76)
+          tl.to(discBlack, { opacity: 0, duration: 1.1, ease: "power2.inOut" }, 2.7);
+          tl.to(discBlue, { opacity: 1, duration: 1.1, ease: "power2.inOut" }, 2.7);
+          tl.to(tint, { opacity: 1, duration: 1.3, ease: "power2.inOut" }, 2.7);
+          tl.fromTo(halo, { opacity: 0, scale: 0.7 }, { opacity: 0.9, scale: 1, duration: 1.2, ease: "power2.out" }, 2.8);
+
+          // Dashboard grid reveal
+          tiles.forEach(function (t, i) {
+            tl.fromTo(t, { opacity: 0, y: 14, scale: 0.9 }, { opacity: 1, y: 0, scale: 1, duration: 0.4, ease: "back.out(1.8)" }, 3.9 + i * 0.05);
+          });
+
+          // Caption
+          tl.fromTo(caption, { opacity: 0, y: 14 }, { opacity: 1, y: 0, duration: 0.5, ease: "power2.out" }, 4.6);
+
+          var subLayer = root.querySelector(".subLayer");
+          var LINES = [
+            [0.5, 2.76, "Au billard, la 8 se garde pour la fin"],
+            [2.76, 3.4, "Ici aussi :"],
+            [3.4, 5.54, "c'est la dernière que vous garderez"],
+          ];
+          LINES.forEach(function (l) {
+            var el = document.createElement("div");
+            el.className = "subtitle";
+            el.textContent = l[2];
+            subLayer.appendChild(el);
+            tl.set(el, { opacity: 1 }, l[0]);
+            tl.set(el, { opacity: 0 }, l[1] - 0.05);
+          });
+
+          window.__timelines["05-la8"] = tl;
+        })();
+      </script>
+    </template>
+  </body>
+</html>

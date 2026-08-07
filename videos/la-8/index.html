@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=1920, height=1080" />
+    <script src="assets/vendor/gsap.min.js"></script>
+    <style>
+      * { margin: 0; padding: 0; box-sizing: border-box; }
+      html, body { width: 1920px; height: 1080px; overflow: hidden; background: #000; }
+      #root { position: relative; width: 1920px; height: 1080px; overflow: hidden; background: #05070c; }
+      .scene { position: absolute; inset: 0; width: 100%; height: 100%; }
+    </style>
+  </head>
+  <body>
+    <div
+      id="root"
+      data-composition-id="main"
+      data-start="0"
+      data-duration="60"
+      data-width="1920"
+      data-height="1080"
+    >
+      <div
+        id="el-01-triangle"
+        class="scene"
+        data-composition-id="01-triangle"
+        data-composition-src="compositions/frames/01-triangle.html"
+        data-start="0"
+        data-duration="14"
+        data-track-index="0"
+      ></div>
+
+      <div
+        id="el-02-break"
+        class="scene"
+        data-composition-id="02-break"
+        data-composition-src="compositions/frames/02-break.html"
+        data-start="14"
+        data-duration="8"
+        data-track-index="1"
+      ></div>
+
+      <div
+        id="el-03-note"
+        class="scene"
+        data-composition-id="03-note"
+        data-composition-src="compositions/frames/03-note.html"
+        data-start="22"
+        data-duration="10"
+        data-track-index="0"
+      ></div>
+
+      <div
+        id="el-04-trous"
+        class="scene"
+        data-composition-id="04-trous"
+        data-composition-src="compositions/frames/04-trous.html"
+        data-start="32"
+        data-duration="7"
+        data-track-index="1"
+      ></div>
+
+      <div
+        id="el-05-la8"
+        class="scene"
+        data-composition-id="05-la8"
+        data-composition-src="compositions/frames/05-la8.html"
+        data-start="39"
+        data-duration="7"
+        data-track-index="0"
+      ></div>
+
+      <div
+        id="el-06-cta"
+        class="scene"
+        data-composition-id="06-cta"
+        data-composition-src="compositions/frames/06-cta.html"
+        data-start="46"
+        data-duration="14"
+        data-track-index="1"
+      ></div>
+    </div>
+
+    <script>
+      window.__timelines = window.__timelines || {};
+      window.__timelines["main"] = gsap.timeline({ paused: true });
+      (function () {
+        var tl = window.__timelines["main"];
+        // 01 → 02: hard cut on the break (impact carries the cut, no crossfade)
+        tl.set("#el-01-triangle", { opacity: 0 }, 14);
+
+        // 02 → 03: quick crossfade
+        tl.to("#el-02-break", { opacity: 0, duration: 0.35, ease: "power2.inOut" }, 22);
+        tl.fromTo("#el-03-note", { opacity: 0 }, { opacity: 1, duration: 0.35, ease: "power2.inOut" }, 22);
+
+        // 03 → 04: crossfade
+        tl.to("#el-03-note", { opacity: 0, duration: 0.4, ease: "power2.inOut" }, 32);
+        tl.fromTo("#el-04-trous", { opacity: 0 }, { opacity: 1, duration: 0.4, ease: "power2.inOut" }, 32);
+
+        // 04 → 05: hard-ish cut with a flash of white (the pivot to "la 8")
+        tl.to("#el-04-trous", { opacity: 0, duration: 0.18, ease: "power1.in" }, 39);
+        tl.fromTo("#el-05-la8", { opacity: 0 }, { opacity: 1, duration: 0.18, ease: "power1.out" }, 39);
+
+        // 05 → 06: crossfade
+        tl.to("#el-05-la8", { opacity: 0, duration: 0.4, ease: "power2.inOut" }, 46);
+        tl.fromTo("#el-06-cta", { opacity: 0 }, { opacity: 1, duration: 0.4, ease: "power2.inOut" }, 46);
+
+        tl.to({}, { duration: 60 }, 0); // full-span anchor — main.duration() == 60s master
+      })();
+    </script>
+  </body>
+</html>

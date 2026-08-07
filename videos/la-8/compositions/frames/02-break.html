@@ -1,0 +1,262 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Frame 02 — Le break</title>
+  </head>
+  <body>
+    <template>
+      <style>
+        @font-face {
+          font-family: "Poppins";
+          src: url("assets/fonts/Poppins-700.woff2") format("woff2");
+          font-weight: 700;
+        }
+        #root {
+          position: absolute;
+          inset: 0;
+          width: 1920px;
+          height: 1080px;
+          overflow: hidden;
+          background: #05070c;
+          font-family: "Inter", sans-serif;
+          color: #f7f9fc;
+        }
+        #bg {
+          position: absolute;
+          inset: 0;
+        }
+        .felt {
+          position: absolute;
+          inset: 0;
+          background:
+            radial-gradient(ellipse 900px 620px at 50% 46%, rgba(30, 155, 240, 0.16), transparent 62%),
+            radial-gradient(ellipse 1400px 1000px at 50% 50%, #14395f 0%, #0e2a4d 45%, #081826 78%, #05070c 100%);
+        }
+        .felt::after {
+          content: "";
+          position: absolute;
+          inset: 0;
+          background: radial-gradient(ellipse 1100px 780px at 50% 48%, transparent 60%, rgba(0, 0, 0, 0.55) 100%);
+        }
+        .rail {
+          position: absolute;
+          left: 120px;
+          top: 90px;
+          right: 120px;
+          bottom: 90px;
+          border-radius: 28px;
+          border: 14px solid #1a2436;
+          box-shadow: inset 0 0 60px rgba(0, 0, 0, 0.5);
+        }
+        .pocket {
+          position: absolute;
+          width: 46px;
+          height: 46px;
+          margin-left: -23px;
+          margin-top: -23px;
+          border-radius: 50%;
+          background: radial-gradient(circle at 40% 35%, #2a2f3a, #05070a 70%);
+          box-shadow: inset 0 0 12px rgba(0, 0, 0, 0.8);
+        }
+
+        .shakeWrap {
+          position: absolute;
+          inset: 0;
+        }
+
+        .ball {
+          position: absolute;
+          width: 88px;
+          height: 88px;
+          margin-left: -44px;
+          margin-top: -44px;
+          border-radius: 50%;
+          box-shadow: 0 10px 22px rgba(0, 0, 0, 0.55);
+        }
+        .ball .disc { position: absolute; inset: 0; border-radius: 50%; background: var(--bc); overflow: hidden; }
+        .ball .shine { position: absolute; inset: 0; border-radius: 50%; background: radial-gradient(circle at 34% 28%, rgba(255,255,255,0.85), transparent 46%); }
+        .ball .band { position: absolute; left: 0; right: 0; top: 30px; bottom: 30px; background: #f4f2ea; }
+        .ball .numWrap { position: absolute; left: 50%; top: 50%; width: 44px; height: 44px; margin-left: -22px; margin-top: -22px; border-radius: 50%; background: #f4f2ea; display: flex; align-items: center; justify-content: center; }
+        .ball .num { font-family: "Poppins", sans-serif; font-weight: 700; font-size: 24px; color: #191b1f; }
+        .ball.ghost .outline { position: absolute; inset: 0; border-radius: 50%; border: 3px dashed rgba(247, 249, 252, 0.55); background: rgba(247, 249, 252, 0.03); }
+
+        .cueBall {
+          position: absolute;
+          width: 78px;
+          height: 78px;
+          margin-left: -39px;
+          margin-top: -39px;
+          border-radius: 50%;
+          background: radial-gradient(circle at 34% 28%, #ffffff, #dfe6ee 70%);
+          box-shadow: 0 10px 22px rgba(0, 0, 0, 0.55);
+        }
+
+        .cue {
+          position: absolute;
+          width: 620px;
+          height: 16px;
+          left: 1180px;
+          top: 940px;
+          border-radius: 8px;
+          background: linear-gradient(90deg, #8a5a2f, #c99a5c 60%, #e9c68e);
+          transform-origin: right center;
+          transform: rotate(-26deg);
+          box-shadow: 0 6px 14px rgba(0, 0, 0, 0.5);
+        }
+
+        .flash {
+          position: absolute;
+          inset: 0;
+          background: radial-gradient(circle at 50% 50%, rgba(255, 255, 255, 0.9), transparent 55%);
+          opacity: 0;
+        }
+      </style>
+
+      <div id="root" data-composition-id="02-break" data-width="1920" data-height="1080" data-duration="8">
+        <div class="clip" id="bg" data-start="0" data-duration="8" data-track-index="0">
+          <div class="felt"></div>
+          <div class="rail">
+            <div class="pocket" style="left: 40px; top: 44px"></div>
+            <div class="pocket" style="left: 800px; top: 8px"></div>
+            <div class="pocket" style="left: 1560px; top: 44px"></div>
+            <div class="pocket" style="left: 40px; top: 846px"></div>
+            <div class="pocket" style="left: 800px; top: 882px"></div>
+            <div class="pocket" style="left: 1560px; top: 846px"></div>
+          </div>
+        </div>
+
+        <div class="clip shakeWrap" data-start="0" data-duration="8" data-track-index="1">
+          <div class="ballLayer"></div>
+          <div class="cueBall" style="left: 960px; top: 940px"></div>
+          <div class="cue"></div>
+        </div>
+
+        <div class="clip flash" data-start="0" data-duration="8" data-track-index="2"></div>
+
+        <audio id="sfx02a" src="assets/sfx/impact-bass-1.mp3" data-start="3.85" data-duration="2.758" data-track-index="20" data-volume="0.85"></audio>
+        <audio id="sfx02b" src="assets/sfx/click-soft.mp3" data-start="1.2" data-duration="0.264" data-track-index="21" data-volume="0.3"></audio>
+      </div>
+
+      <script src="assets/vendor/gsap.min.js"></script>
+      <script>
+        window.__timelines = window.__timelines || {};
+        (function () {
+          var root = document.querySelector('[data-composition-id="02-break"][id="root"]');
+          if (!root) root = document.querySelector('[data-composition-id="02-break"]');
+
+          var CX = 960;
+          var ROWS_Y = [300, 378, 456, 534, 612];
+          function rowX(row, col) {
+            var count = row + 1;
+            var start = CX - ((count - 1) * 88) / 2;
+            return start + col * 88;
+          }
+          // Rack positions (identical to frame 01) + scatter targets for the 11 movers.
+          // The 8-ball stays put (never falls) — it settles near center and holds there
+          // through frames 03–05. The 3 ghosts never existed as physical balls: no entry.
+          var BALLS = [
+            { row: 0, col: 0, n: "1", c: "#F2C94C", to: [420, 260] },
+            { row: 1, col: 0, n: "2", c: "#2D9CDB", to: [1500, 230] },
+            { row: 1, col: 1, n: "3", c: "#EB5757", to: [300, 520] },
+            { row: 2, col: 0, n: "4", c: "#9B51E0", to: [1620, 480] },
+            { row: 2, col: 1, n: "8", c: "#15181d", to: [960, 480], eight: true },
+            { row: 2, col: 2, n: "5", c: "#F2994A", to: [700, 860] },
+            { row: 3, col: 0, n: "6", c: "#27AE60", to: [1250, 840] },
+            { row: 3, col: 1, n: "7", c: "#8A3B4E", to: [520, 700] },
+            { row: 3, col: 2, n: "9", c: "#F2C94C", to: [1100, 260], stripe: true },
+            { row: 3, col: 3, n: "10", c: "#2D9CDB", to: [1550, 700], stripe: true },
+            { row: 4, col: 0, n: "11", c: "#EB5757", to: [380, 850], stripe: true },
+            { row: 4, col: 1, n: "12", c: "#9B51E0", to: [1350, 560], stripe: true },
+          ];
+          BALLS.forEach(function (b) {
+            b.x = rowX(b.row, b.col);
+            b.y = ROWS_Y[b.row];
+          });
+
+          var ballLayer = root.querySelector(".ballLayer");
+          BALLS.forEach(function (b) {
+            var el = document.createElement("div");
+            el.className = "ball" + (b.eight ? " eight" : "");
+            el.style.left = b.x + "px";
+            el.style.top = b.y + "px";
+            el.style.setProperty("--bc", b.c);
+            var inner = '<div class="disc">' + (b.stripe ? '<div class="band"></div>' : "") + "</div>";
+            inner += '<div class="shine"></div>';
+            inner += '<div class="numWrap"><span class="num">' + b.n + "</span></div>";
+            el.innerHTML = inner;
+            ballLayer.appendChild(el);
+            b._el = el;
+          });
+
+          // ghost outlines (static, never move)
+          var GHOSTS_XY = [
+            [rowX(4, 2), ROWS_Y[4]],
+            [rowX(4, 3), ROWS_Y[4]],
+            [rowX(4, 4), ROWS_Y[4]],
+          ];
+          GHOSTS_XY.forEach(function (p) {
+            var el = document.createElement("div");
+            el.className = "ball ghost";
+            el.style.left = p[0] + "px";
+            el.style.top = p[1] + "px";
+            el.innerHTML = '<div class="outline"></div>';
+            ballLayer.appendChild(el);
+          });
+
+          var tl = gsap.timeline({ paused: true });
+          var cue = root.querySelector(".cue");
+          var cueBall = root.querySelector(".cueBall");
+          var flash = root.querySelector(".flash");
+          var shake = root.querySelector(".shakeWrap");
+
+          // Approach (0 – 3.85s): cue slides back and forth, tension building
+          tl.fromTo(cue, { x: 60 }, { x: -40, duration: 1.1, ease: "power1.inOut" }, 0.2);
+          tl.to(cue, { x: 90, duration: 0.9, ease: "power1.inOut" }, 1.3);
+          tl.to(cue, { x: -30, duration: 0.7, ease: "power1.inOut" }, 2.2);
+          tl.to(cue, { x: 700, duration: 0.42, ease: "power4.in" }, 3.43); // the strike
+
+          // Cue ball shoots up into the rack
+          tl.to(cueBall, { y: -420, duration: 0.42, ease: "power4.in" }, 3.43);
+          tl.to(cueBall, { opacity: 0, duration: 0.15 }, 3.85);
+
+          // Impact flash + shake
+          tl.fromTo(flash, { opacity: 0 }, { opacity: 0.8, duration: 0.08, ease: "power1.out" }, 3.85);
+          tl.to(flash, { opacity: 0, duration: 0.35, ease: "power2.out" }, 3.93);
+          var shk = { t: 0 };
+          tl.to(
+            shk,
+            {
+              t: 1,
+              duration: 0.6,
+              ease: "none",
+              onUpdate: function () {
+                var tt = shk.t;
+                var env = 1 - tt;
+                var x = Math.sin(tt * Math.PI * 10) * 10 * env;
+                var y = Math.sin(tt * Math.PI * 8) * 7 * env;
+                shake.style.transform = "translate(" + x + "px," + y + "px)";
+              },
+            },
+            3.85
+          );
+
+          // The scatter: each ball flies out to its resting spot with a slight rotation-like pop.
+          // Anchored at its rack position (left/top, static) and moved via transform (x/y) —
+          // GSAP tweens on left/top snap to integer device pixels under the seek-by-frame
+          // capture engine, transforms interpolate sub-pixel and stay smooth.
+          BALLS.forEach(function (b, i) {
+            var dur = 0.55 + (i % 4) * 0.05;
+            var dx = b.to[0] - b.x;
+            var dy = b.to[1] - b.y;
+            tl.to(b._el, { x: dx, y: dy, duration: dur, ease: "power3.out" }, 3.87 + i * 0.015);
+            tl.fromTo(b._el, { scale: 1 }, { scale: 0.94, duration: 0.12, ease: "power1.out" }, 3.87 + i * 0.015);
+            tl.to(b._el, { scale: 1, duration: 0.25, ease: "power2.out" }, 4.0 + i * 0.015);
+          });
+
+          window.__timelines["02-break"] = tl;
+        })();
+      </script>
+    </template>
+  </body>
+</html>

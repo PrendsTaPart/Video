@@ -1,0 +1,417 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Frame 01 — Le triangle</title>
+  </head>
+  <body>
+    <template>
+      <style>
+        @font-face {
+          font-family: "Poppins";
+          src: url("assets/fonts/Poppins-700.woff2") format("woff2");
+          font-weight: 700;
+        }
+        @font-face {
+          font-family: "Poppins";
+          src: url("assets/fonts/Poppins-600.woff2") format("woff2");
+          font-weight: 600;
+        }
+        @font-face {
+          font-family: "Inter";
+          src: url("assets/fonts/Inter-Variable.woff2") format("woff2-variations");
+          font-weight: 100 900;
+        }
+
+        #root {
+          position: absolute;
+          inset: 0;
+          width: 1920px;
+          height: 1080px;
+          overflow: hidden;
+          background: #05070c;
+          font-family: "Inter", sans-serif;
+          color: #f7f9fc;
+        }
+
+        /* Track 0 — felt table + single overhead lamp */
+        #bg {
+          position: absolute;
+          inset: 0;
+        }
+        .felt {
+          position: absolute;
+          inset: 0;
+          background:
+            radial-gradient(ellipse 900px 620px at 50% 46%, rgba(30, 155, 240, 0.16), transparent 62%),
+            radial-gradient(ellipse 1400px 1000px at 50% 50%, #14395f 0%, #0e2a4d 45%, #081826 78%, #05070c 100%);
+        }
+        .felt::after {
+          /* vignette */
+          content: "";
+          position: absolute;
+          inset: 0;
+          background: radial-gradient(ellipse 1100px 780px at 50% 48%, transparent 60%, rgba(0, 0, 0, 0.55) 100%);
+        }
+        .rail {
+          position: absolute;
+          left: 120px;
+          top: 90px;
+          right: 120px;
+          bottom: 90px;
+          border-radius: 28px;
+          border: 14px solid #1a2436;
+          box-shadow: inset 0 0 60px rgba(0, 0, 0, 0.5);
+        }
+
+        /* Track 1 — chalk cube + dust */
+        .chalkScene {
+          position: absolute;
+          inset: 0;
+        }
+        .chalkCube {
+          position: absolute;
+          left: 890px;
+          top: 470px;
+          width: 140px;
+          height: 140px;
+          border-radius: 10px;
+          background: linear-gradient(145deg, #2f6fb0, #1c4d80);
+          box-shadow: 0 18px 40px rgba(0, 0, 0, 0.5), inset 0 0 0 3px rgba(255, 255, 255, 0.08);
+        }
+        .dust {
+          position: absolute;
+          left: 960px;
+          top: 540px;
+          width: 6px;
+          height: 6px;
+          border-radius: 50%;
+          background: rgba(180, 210, 240, 0.85);
+          filter: blur(0.5px);
+        }
+
+        /* Track 2 — the triangle */
+        .rack {
+          position: absolute;
+          inset: 0;
+        }
+        .ball {
+          position: absolute;
+          width: 88px;
+          height: 88px;
+          margin-left: -44px;
+          margin-top: -44px;
+          border-radius: 50%;
+          box-shadow: 0 10px 22px rgba(0, 0, 0, 0.55);
+        }
+        .ball .disc {
+          position: absolute;
+          inset: 0;
+          border-radius: 50%;
+          background: var(--bc);
+          overflow: hidden;
+        }
+        .ball .shine {
+          position: absolute;
+          inset: 0;
+          border-radius: 50%;
+          background: radial-gradient(circle at 34% 28%, rgba(255, 255, 255, 0.85), transparent 46%);
+        }
+        .ball .band {
+          position: absolute;
+          left: 0;
+          right: 0;
+          top: 30px;
+          bottom: 30px;
+          background: #f4f2ea;
+        }
+        .ball .numWrap {
+          position: absolute;
+          left: 50%;
+          top: 50%;
+          width: 44px;
+          height: 44px;
+          margin-left: -22px;
+          margin-top: -22px;
+          border-radius: 50%;
+          background: #f4f2ea;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+        .ball.eight .numWrap {
+          background: #f4f2ea;
+        }
+        .ball .num {
+          font-family: "Poppins", sans-serif;
+          font-weight: 700;
+          font-size: 24px;
+          color: #191b1f;
+        }
+        .ball.ghost {
+          box-shadow: none;
+        }
+        .ball.ghost .outline {
+          position: absolute;
+          inset: 0;
+          border-radius: 50%;
+          border: 3px dashed rgba(247, 249, 252, 0.55);
+          background: rgba(247, 249, 252, 0.03);
+        }
+
+        /* Track 3 — category tags */
+        .tag {
+          position: absolute;
+          display: flex;
+          align-items: center;
+          gap: 10px;
+          padding: 9px 18px 9px 14px;
+          background: rgba(5, 7, 12, 0.82);
+          border: 1.5px solid rgba(30, 155, 240, 0.45);
+          border-radius: 100px;
+          white-space: nowrap;
+          font-family: "Inter", sans-serif;
+          font-weight: 500;
+          font-size: 21px;
+          color: #f7f9fc;
+        }
+        .tag .dot {
+          width: 10px;
+          height: 10px;
+          border-radius: 50%;
+          background: var(--dc);
+          flex: none;
+        }
+        .tag.ghostTag {
+          border-color: rgba(247, 249, 252, 0.3);
+          color: rgba(247, 249, 252, 0.75);
+        }
+
+        /* Track — opening line */
+        .headline {
+          position: absolute;
+          left: 0;
+          right: 0;
+          top: 96px;
+          text-align: center;
+          font-family: "Poppins", sans-serif;
+          font-weight: 600;
+          font-size: 46px;
+          letter-spacing: -0.01em;
+          color: #f7f9fc;
+        }
+
+        /* Subtitles */
+        .subtitle {
+          position: absolute;
+          left: 0;
+          right: 0;
+          bottom: 76px;
+          text-align: center;
+          font-family: "Poppins", sans-serif;
+          font-weight: 700;
+          font-size: 38px;
+          color: #ffffff;
+          -webkit-text-stroke: 5px #000000;
+          paint-order: stroke fill;
+        }
+      </style>
+
+      <div id="root" data-composition-id="01-triangle" data-width="1920" data-height="1080" data-duration="14">
+        <!-- Track 0: full-duration background -->
+        <div class="clip" id="bg" data-start="0" data-duration="14" data-track-index="0">
+          <div class="felt"></div>
+          <div class="rail"></div>
+        </div>
+
+        <!-- Track 1: chalk -->
+        <div class="clip chalkScene" data-start="0" data-duration="4.2" data-track-index="1">
+          <div class="chalkCube"></div>
+          <div class="dustLayer"></div>
+        </div>
+
+        <!-- Track 2: the rack -->
+        <div class="clip rack" data-start="0" data-duration="14" data-track-index="2">
+          <div class="headline">Voici votre restaurant.</div>
+          <div class="ballLayer"></div>
+          <div class="tagLayer"></div>
+        </div>
+
+        <!-- Subtitles -->
+        <div class="clip subLayer" data-start="0" data-duration="14" data-track-index="3"></div>
+
+        <!-- VO -->
+        <audio
+          id="voice01"
+          src="assets/voice/01.mp3"
+          data-start="4.0"
+          data-duration="8.78"
+          data-track-index="10"
+          data-volume="1"
+        ></audio>
+
+        <!-- SFX -->
+        <audio id="sfx01a" src="assets/sfx/click-soft.mp3" data-start="0.3" data-duration="0.264" data-track-index="20" data-volume="0.35"></audio>
+        <audio id="sfx01b" src="assets/sfx/pop.mp3" data-start="3.55" data-duration="0.312" data-track-index="21" data-volume="0.35"></audio>
+      </div>
+
+      <script src="assets/vendor/gsap.min.js"></script>
+      <script>
+        window.__timelines = window.__timelines || {};
+        (function () {
+          var root = document.querySelector('[data-composition-id="01-triangle"][id="root"]');
+          if (!root) root = document.querySelector('[data-composition-id="01-triangle"]');
+
+          // ── ball rack data: row, x, y, number, category, color, stripe, ghost, eight ──
+          var CX = 960;
+          var ROWS_Y = [300, 378, 456, 534, 612];
+          var BALLS = [
+            { row: 0, col: 0, n: "1", cat: "Caisse & encaissement", c: "#F2C94C", stripe: false },
+            { row: 1, col: 0, n: "2", cat: "Réservation & salle", c: "#2D9CDB", stripe: false },
+            { row: 1, col: 1, n: "3", cat: "Agent vocal téléphonique", c: "#EB5757", stripe: false },
+            { row: 2, col: 0, n: "4", cat: "Food cost & stock", c: "#9B51E0", stripe: false },
+            { row: 2, col: 1, n: "8", cat: "FoodEatUp", c: "#15181d", stripe: false, eight: true },
+            { row: 2, col: 2, n: "5", cat: "HACCP", c: "#F2994A", stripe: false },
+            { row: 3, col: 0, n: "6", cat: "Planning & RH", c: "#27AE60", stripe: false },
+            { row: 3, col: 1, n: "7", cat: "Fidélité & animation", c: "#8A3B4E", stripe: false },
+            { row: 3, col: 2, n: "9", cat: "Avis & e-réputation", c: "#F2C94C", stripe: true },
+            { row: 3, col: 3, n: "10", cat: "Site & commande en ligne", c: "#2D9CDB", stripe: true },
+            { row: 4, col: 0, n: "11", cat: "Messages sortants", c: "#EB5757", stripe: true },
+            { row: 4, col: 1, n: "12", cat: "BI, compta & pilotage", c: "#9B51E0", stripe: true },
+            { row: 4, col: 2, n: "13", cat: "OCR factures", ghost: true },
+            { row: 4, col: 3, n: "14", cat: "Prédiction IA stock & ventes", ghost: true },
+            { row: 4, col: 4, n: "15", cat: "Agents IA internes", ghost: true },
+          ];
+          function rowX(row, col) {
+            var count = row + 1;
+            var start = CX - ((count - 1) * 88) / 2;
+            return start + col * 88;
+          }
+          BALLS.forEach(function (b) {
+            b.x = rowX(b.row, b.col);
+            b.y = ROWS_Y[b.row];
+          });
+
+          var ballLayer = root.querySelector(".ballLayer");
+          var tagLayer = root.querySelector(".tagLayer");
+          var dustLayer = root.querySelector(".dustLayer");
+
+          BALLS.forEach(function (b) {
+            var el = document.createElement("div");
+            el.className = "ball" + (b.ghost ? " ghost" : "") + (b.eight ? " eight" : "");
+            el.style.left = b.x + "px";
+            el.style.top = b.y + "px";
+            if (b.ghost) {
+              el.innerHTML = '<div class="outline"></div>';
+            } else {
+              el.style.setProperty("--bc", b.c);
+              var inner = '<div class="disc">' + (b.stripe ? '<div class="band"></div>' : "") + "</div>";
+              inner += '<div class="shine"></div>';
+              inner += '<div class="numWrap"><span class="num">' + b.n + "</span></div>";
+              el.innerHTML = inner;
+            }
+            ballLayer.appendChild(el);
+
+            var tag = document.createElement("div");
+            tag.className = "tag" + (b.ghost ? " ghostTag" : "");
+            var dotColor = b.ghost ? "rgba(247,249,252,0.5)" : b.eight ? "#1E9BF0" : b.c;
+            tag.innerHTML = '<span class="dot" style="background:' + dotColor + '"></span>' + b.cat;
+            // place tag offset from ball, alternating above/below to reduce overlap
+            var above = b.row < 3;
+            var tx = b.x - 90;
+            var ty = above ? b.y - 70 : b.y + 46;
+            tag.style.left = tx + "px";
+            tag.style.top = ty + "px";
+            tagLayer.appendChild(tag);
+            b._tagEl = tag;
+            b._ballEl = el;
+          });
+
+          // dust particles (deterministic offsets)
+          var DUST = [
+            [0, 0, 0.2], [14, -18, 0.6], [-16, -10, 0.9], [22, -30, 1.2], [-10, -26, 1.5],
+            [30, -14, 0.4], [-24, -22, 1.0], [8, -34, 1.7], [-30, -6, 0.7], [18, -40, 1.9],
+          ];
+          DUST.forEach(function (d) {
+            var p = document.createElement("div");
+            p.className = "dust";
+            p.style.left = 960 + d[0] + "px";
+            p.style.top = 540 + d[1] + "px";
+            dustLayer.appendChild(p);
+            p._delay = d[2];
+          });
+
+          var tl = gsap.timeline({ paused: true });
+
+          // Chalk: fade in cube, dust drifts up and fades
+          var cube = root.querySelector(".chalkCube");
+          tl.fromTo(cube, { opacity: 0, y: -10 }, { opacity: 1, y: 0, duration: 0.5, ease: "power2.out" }, 0.15);
+          tl.to(cube, { rotation: -6, duration: 0.35, ease: "power2.inOut", yoyo: true, repeat: 3 }, 0.35);
+          tl.to(cube, { opacity: 0, duration: 0.4, ease: "power1.in" }, 3.7);
+          Array.prototype.forEach.call(dustLayer.children, function (p) {
+            var dx = (parseFloat(p.style.left) - 960) * 2.4;
+            var dy = -70 - Math.abs(parseFloat(p.style.left) - 960) * 0.6;
+            tl.fromTo(
+              p,
+              { opacity: 0, x: 0, y: 0, scale: 0.6 },
+              { opacity: 0.8, x: dx, y: dy, scale: 1, duration: 1.6, ease: "power1.out" },
+              0.35 + p._delay
+            );
+            tl.to(p, { opacity: 0, duration: 0.6, ease: "power1.in" }, 1.6 + p._delay);
+          });
+
+          // Headline
+          var headline = root.querySelector(".headline");
+          tl.fromTo(headline, { opacity: 0, y: -14 }, { opacity: 1, y: 0, duration: 0.6, ease: "power2.out" }, 2.0);
+          tl.to(headline, { opacity: 0, duration: 0.5, ease: "power1.in" }, 9.0);
+
+          // Rack pops in (apex first, outward)
+          BALLS.forEach(function (b, i) {
+            var t = 2.15 + b.row * 0.12 + b.col * 0.04;
+            tl.fromTo(
+              b._ballEl,
+              { scale: 0, opacity: b.ghost ? 0 : 0 },
+              { scale: 1, opacity: 1, duration: 0.5, ease: "back.out(2.2)" },
+              t
+            );
+          });
+          tl.to({}, { duration: 0.1 }, "+=0"); // anchor
+
+          // Category tags: stagger reveal synced with "Quatorze billes. Quatorze abonnements."
+          BALLS.forEach(function (b, i) {
+            var t = 4.05 + i * 0.14;
+            tl.fromTo(
+              b._tagEl,
+              { opacity: 0, scale: 0.7, y: 10 },
+              { opacity: 1, scale: 1, y: 0, duration: 0.35, ease: "back.out(2)" },
+              t
+            );
+            tl.to(b._tagEl, { opacity: 0, duration: 0.45, ease: "power1.in" }, 10.9 + i * 0.03);
+          });
+
+          // Subtitles (proportional to VO line lengths, VO starts at 4.0s)
+          var subLayer = root.querySelector(".subLayer");
+          var LINES = [
+            [4.0, 5.52, "Voici votre restaurant"],
+            [5.52, 6.53, "Quatorze billes"],
+            [6.53, 7.86, "Quatorze abonnements"],
+            [7.86, 9.19, "Chacune a sa facture"],
+            [9.19, 10.89, "Chacune a son mot de passe"],
+            [10.89, 12.78, "Et aucune ne parle aux autres"],
+          ];
+          LINES.forEach(function (l) {
+            var el = document.createElement("div");
+            el.className = "subtitle";
+            el.textContent = l[2];
+            el.style.opacity = "0";
+            subLayer.appendChild(el);
+            tl.set(el, { opacity: 1 }, l[0]);
+            tl.set(el, { opacity: 0 }, l[1] - 0.06);
+          });
+
+          window.__timelines["01-triangle"] = tl;
+        })();
+      </script>
+    </template>
+  </body>
+</html>
