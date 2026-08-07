@@ -217,6 +217,16 @@ html, body {
   margin-left: auto; font-weight: 700;
   font-variant-numeric: tabular-nums;
 }
+
+/* Photo du plat concerné, découpée en cercle en amont (prepare_assets.py). */
+.pastille-plat {
+  flex: 0 0 auto;
+  width: var(--pastille-plat); height: var(--pastille-plat);
+  display: block;
+  box-shadow: 0 4px 12px rgba(15, 26, 35, 0.16);
+  border-radius: 50%;
+}
+.carte-proposition .lignes .pastille-plat { margin-right: 0.1em; }
 .fiche.hot { border-color: var(--orange); background: rgba(255, 165, 0, 0.12); }
 .fiche.hot .cout { color: var(--orange); }
 
@@ -253,11 +263,14 @@ html, body {
   font-size: var(--fs-fiche);
 }
 .carte-proposition .lignes div {
-  display: flex; justify-content: space-between; gap: 1em;
+  display: flex; align-items: center; gap: 0.7em;
   border-bottom: 2px solid rgba(15, 26, 35, 0.09);
   padding-bottom: 0.32em;
 }
-.carte-proposition .lignes b { font-variant-numeric: tabular-nums; }
+.carte-proposition .lignes b {
+  margin-left: auto;
+  font-variant-numeric: tabular-nums;
+}
 
 .boutons { display: flex; gap: 0.7em; margin-top: 1em; }
 .btn {

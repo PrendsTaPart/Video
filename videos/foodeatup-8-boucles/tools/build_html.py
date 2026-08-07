@@ -84,7 +84,7 @@ FORMATS = {
         # Contenu centré verticalement, personnage ancré en bas à droite.
         "planJustify": "center", "padHaut": 110,
         "illuDroite": 70, "illuGauche": "auto", "illuBas": -30,
-        "illuH": 780, "colonneTexte": 1180,
+        "illuH": 780, "colonneTexte": 1180, "pastillePlat": 62,
     },
     "reel": {
         "W": 1080, "H": 1920, "pad": 84,
@@ -102,7 +102,7 @@ FORMATS = {
         # en 9:16 un personnage collé au coin sort du champ de lecture.
         "planJustify": "flex-start", "padHaut": 200,
         "illuDroite": 0, "illuGauche": 0, "illuBas": -20,
-        "illuH": 760, "colonneTexte": 912,
+        "illuH": 760, "colonneTexte": 912, "pastillePlat": 66,
     },
 }
 
@@ -183,10 +183,24 @@ def construire(video: dict, visuel: dict, fmt_nom: str,
             d["phrase"] = video["plans"][t["n"] - 1]["vo"].strip("« »")
         plans_js.append(d)
 
+    # Les photos de plats sont inlinées une fois et référencées par nom : la
+    # même pastille sert souvent sur deux plans, l'inliner deux fois doublerait
+    # son poids dans la composition.
+    plats = {}
+    for p in plans_js:
+        for ligne in list(p.get("fiches", [])) + list(
+            p.get("proposition", {}).get("lignes", [])
+        ):
+            nom = ligne.get("photo")
+            if nom and nom not in plats:
+                f = PROJ / "assets/img" / f"plat-{nom}.webp"
+                if f.exists():
+                    plats[nom] = data_uri(f)
+
     duree = round(sum(t["dur"] for t in tm), 3)
     donnees = {
         "slug": video["slug"], "format": fmt_nom, "duree": duree,
-        "W": F["W"], "H": F["H"], "plans": plans_js,
+        "W": F["W"], "H": F["H"], "plans": plans_js, "plats": plats,
         "infiniRx": F["infiniRx"], "infiniRy": F["infiniRy"],
         "infiniTrait": F["infiniTrait"], "infiniNoeud": F["infiniNoeud"],
         "fsNoeud": F["fs"]["noeud"],
@@ -213,6 +227,7 @@ def construire(video: dict, visuel: dict, fmt_nom: str,
             f"  --illu-bas: {F['illuBas']}px;",
             f"  --illu-h: {F['illuH']}px;",
             f"  --colonne-texte: {F['colonneTexte']}px;",
+            f"  --pastille-plat: {F['pastillePlat']}px;",
             f"  --plan-justify: {F['planJustify']};",
             f"  --pad-haut: {F['padHaut']}px;",
             f"  --illu-gauche: {F['illuGauche']}"

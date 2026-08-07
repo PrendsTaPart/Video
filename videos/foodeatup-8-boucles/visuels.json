@@ -1,269 +1,805 @@
 {
   "_note": "Contenu affiché à l'écran, plan par plan. Séparé de boucles.json, qui reste le manifeste (VO, durées, statut). Tout chiffre ici provient du script validé — rien d'inventé ; les inconnues portent la mention « donnée à confirmer ».",
-
   "boucle-00-principe": {
-    "1": { "kicker": "Le principe", "titre": "Rien n'arrive<br>seul.", "lignes": ["Un prix qui bouge déplace une marge.", "Une vente vide un stock.", "Un stock vide annule un plat.", "Ce ne sont pas huit sujets. C'est un système."] },
-    "2": { "agent": "La loi des boucles · règle 1", "phrase": "Une boucle se referme : son dernier maillon nourrit son premier." },
-    "5": { "voisines": ["Configuration", "Équipe", "StockVisionAI", "HACCP", "E-commerce", "Communication", "Fidélité", "Comptabilité"] },
-    "6": { "chiffres": [{ "label": "Boucles", "valeur": "8" }, { "label": "Outils MCP", "valeur": "177" }, { "label": "Base de données", "valeur": "1" }] },
-    "7": { "coupure": "Huit logiciels qui tiennent chacun une boucle font huit tunnels, pas huit boucles connectées.", "cta": "Les 8 Boucles · FoodEatUp Academy" }
+    "1": {
+      "kicker": "Le principe",
+      "titre": "Rien n'arrive<br>seul.",
+      "lignes": [
+        "Un prix qui bouge déplace une marge.",
+        "Une vente vide un stock.",
+        "Un stock vide annule un plat.",
+        "Ce ne sont pas huit sujets. C'est un système."
+      ]
+    },
+    "2": {
+      "agent": "La loi des boucles · règle 1",
+      "phrase": "Une boucle se referme : son dernier maillon nourrit son premier."
+    },
+    "5": {
+      "voisines": [
+        "Configuration",
+        "Équipe",
+        "StockVisionAI",
+        "HACCP",
+        "E-commerce",
+        "Communication",
+        "Fidélité",
+        "Comptabilité"
+      ]
+    },
+    "6": {
+      "chiffres": [
+        {
+          "label": "Boucles",
+          "valeur": "8"
+        },
+        {
+          "label": "Outils MCP",
+          "valeur": "177"
+        },
+        {
+          "label": "Base de données",
+          "valeur": "1"
+        }
+      ]
+    },
+    "7": {
+      "coupure": "Huit logiciels qui tiennent chacun une boucle font huit tunnels, pas huit boucles connectées.",
+      "cta": "Les 8 Boucles · FoodEatUp Academy"
+    }
   },
-
   "boucle-01-configuration-boutique": {
-    "1": { "titre": "Votre burger,<br>vous le vendez 14 €.", "lignes": ["Vous savez qu'il vous coûte « environ 4 € ».", "Le prix du bœuf a bougé trois fois cette année.", "Le pain a augmenté en janvier.", "Personne n'a rouvert la fiche depuis dix-huit mois."] },
-    "2": { "agent": "Jarvis", "phrase": "Ajoute le poulet fermier à 12,80 € le kilo, chez Metro." },
+    "1": {
+      "titre": "Votre burger,<br>vous le vendez 14 €.",
+      "lignes": [
+        "Vous savez qu'il vous coûte « environ 4 € ».",
+        "Le prix du bœuf a bougé trois fois cette année.",
+        "Le pain a augmenté en janvier.",
+        "Personne n'a rouvert la fiche depuis dix-huit mois."
+      ]
+    },
+    "2": {
+      "agent": "Jarvis",
+      "phrase": "Ajoute le poulet fermier à 12,80 € le kilo, chez Metro."
+    },
     "3": {
       "cascade": [
-        { "nom": "Prix fournisseur", "valeur": "12,80 €/kg" },
-        { "nom": "Ingrédient", "valeur": "créé" },
-        { "nom": "Fiche technique", "valeur": "7 fiches" },
-        { "nom": "Food cost", "valeur": "4,38 €" },
-        { "nom": "Marge par plat", "valeur": "9,62 €" },
-        { "nom": "Carte et prix de vente", "valeur": "14,00 €" },
-        { "nom": "Achats et production", "valeur": "recalculés" },
-        { "nom": "Stock et rentabilité", "valeur": "à jour" }
+        {
+          "nom": "Prix fournisseur",
+          "valeur": "12,80 €/kg"
+        },
+        {
+          "nom": "Ingrédient",
+          "valeur": "créé"
+        },
+        {
+          "nom": "Fiche technique",
+          "valeur": "7 fiches"
+        },
+        {
+          "nom": "Food cost",
+          "valeur": "4,38 €"
+        },
+        {
+          "nom": "Marge par plat",
+          "valeur": "9,62 €"
+        },
+        {
+          "nom": "Carte et prix de vente",
+          "valeur": "14,00 €"
+        },
+        {
+          "nom": "Achats et production",
+          "valeur": "recalculés"
+        },
+        {
+          "nom": "Stock et rentabilité",
+          "valeur": "à jour"
+        }
       ],
       "fiches": [
-        { "nom": "Suprême de poulet fermier", "valeur": "sous le seuil" },
-        { "nom": "Caesar au poulet", "valeur": "sous le seuil" },
-        { "nom": "Wrap fermier", "valeur": "sous le seuil" }
+        {
+          "nom": "Suprême de poulet fermier",
+          "valeur": "sous le seuil",
+          "photo": "supreme-poulet-fermier"
+        },
+        {
+          "nom": "Caesar au poulet",
+          "valeur": "sous le seuil",
+          "photo": "caesar-poulet"
+        },
+        {
+          "nom": "Wrap fermier",
+          "valeur": "sous le seuil",
+          "photo": "wrap-fermier"
+        }
       ]
     },
     "4": {
       "alerte": "3 plats sous votre seuil de marge",
-      "proposition": { "titre": "Ajustement proposé", "lignes": [
-        { "nom": "Suprême de poulet fermier", "valeur": "18,50 € → 19,40 €" },
-        { "nom": "Caesar au poulet", "valeur": "14,00 € → 14,80 €" },
-        { "nom": "Wrap fermier", "valeur": "11,50 € → 12,10 €" }
-      ] }
+      "proposition": {
+        "titre": "Ajustement proposé",
+        "lignes": [
+          {
+            "nom": "Suprême de poulet fermier",
+            "valeur": "18,50 € → 19,40 €",
+            "photo": "supreme-poulet-fermier"
+          },
+          {
+            "nom": "Caesar au poulet",
+            "valeur": "14,00 € → 14,80 €",
+            "photo": "caesar-poulet"
+          },
+          {
+            "nom": "Wrap fermier",
+            "valeur": "11,50 € → 12,10 €",
+            "photo": "wrap-fermier"
+          }
+        ]
+      }
     },
-    "5": { "voisines": ["StockVisionAI", "HACCP", "E-commerce", "Comptabilité"] },
-    "7": { "coupure": "Une fiche fausse fausse le food cost, le stock, la marge et le prix.", "cta": "Les 8 Boucles · FoodEatUp Academy" }
+    "5": {
+      "voisines": [
+        "StockVisionAI",
+        "HACCP",
+        "E-commerce",
+        "Comptabilité"
+      ]
+    },
+    "7": {
+      "coupure": "Une fiche fausse fausse le food cost, le stock, la marge et le prix.",
+      "cta": "Les 8 Boucles · FoodEatUp Academy"
+    }
   },
-
   "boucle-02-equipe": {
-    "1": { "titre": "Trois en salle<br>le mardi. Trois aussi<br>le samedi.", "lignes": ["Douze couverts le mardi. Soixante le samedi.", "Personne n'a jamais regardé l'historique.", "On fait comme d'habitude."] },
-    "2": { "agent": "PrédiBot", "phrase": "Qui bosse samedi soir ?" },
+    "1": {
+      "titre": "Trois en salle<br>le mardi. Trois aussi<br>le samedi.",
+      "lignes": [
+        "Douze couverts le mardi. Soixante le samedi.",
+        "Personne n'a jamais regardé l'historique.",
+        "On fait comme d'habitude."
+      ]
+    },
+    "2": {
+      "agent": "PrédiBot",
+      "phrase": "Qui bosse samedi soir ?"
+    },
     "3": {
       "cascade": [
-        { "nom": "Recrutement", "valeur": "2 candidatures" },
-        { "nom": "Contrat", "valeur": "en cours" },
-        { "nom": "Planning", "valeur": "semaine 12" },
-        { "nom": "Pointage réel", "valeur": "≠ prévu" },
-        { "nom": "Congés", "valeur": "1 en attente" },
-        { "nom": "Coût constaté", "valeur": "25 à 35 % du CA" },
-        { "nom": "Écart prévu / réel", "valeur": "mesuré" },
-        { "nom": "Planning suivant", "valeur": "corrigé" }
+        {
+          "nom": "Recrutement",
+          "valeur": "2 candidatures"
+        },
+        {
+          "nom": "Contrat",
+          "valeur": "en cours"
+        },
+        {
+          "nom": "Planning",
+          "valeur": "semaine 12"
+        },
+        {
+          "nom": "Pointage réel",
+          "valeur": "≠ prévu"
+        },
+        {
+          "nom": "Congés",
+          "valeur": "1 en attente"
+        },
+        {
+          "nom": "Coût constaté",
+          "valeur": "25 à 35 % du CA"
+        },
+        {
+          "nom": "Écart prévu / réel",
+          "valeur": "mesuré"
+        },
+        {
+          "nom": "Planning suivant",
+          "valeur": "corrigé"
+        }
       ],
       "fiches": [
-        { "nom": "Mardi · 12 couverts attendus", "valeur": "3 en salle" },
-        { "nom": "Samedi · 60 couverts attendus", "valeur": "2 en cuisine" }
+        {
+          "nom": "Mardi · 12 couverts attendus",
+          "valeur": "3 en salle"
+        },
+        {
+          "nom": "Samedi · 60 couverts attendus",
+          "valeur": "2 en cuisine"
+        }
       ]
     },
     "4": {
       "alerte": "Samedi 20 h — 60 couverts attendus, 2 en cuisine",
-      "proposition": { "titre": "Shift proposé", "lignes": [
-        { "nom": "Poste", "valeur": "Cuisine · samedi 18 h – 23 h" },
-        { "nom": "Coût du shift", "valeur": "donnée à confirmer" },
-        { "nom": "Couverture après ajout", "valeur": "3 en cuisine" }
-      ] },
+      "proposition": {
+        "titre": "Shift proposé",
+        "lignes": [
+          {
+            "nom": "Poste",
+            "valeur": "Cuisine · samedi 18 h – 23 h"
+          },
+          {
+            "nom": "Coût du shift",
+            "valeur": "donnée à confirmer"
+          },
+          {
+            "nom": "Couverture après ajout",
+            "valeur": "3 en cuisine"
+          }
+        ]
+      },
       "mention": "Contrat, planning contractuel et suppression d'employé exigent une confirmation humaine."
     },
-    "5": { "voisines": ["Comptabilité"] },
-    "7": { "coupure": "Sur-effectif le mardi, sous-effectif le samedi. Systématiquement.", "cta": "Les 8 Boucles · FoodEatUp Academy" }
+    "5": {
+      "voisines": [
+        "Comptabilité"
+      ]
+    },
+    "7": {
+      "coupure": "Sur-effectif le mardi, sous-effectif le samedi. Systématiquement.",
+      "cta": "Les 8 Boucles · FoodEatUp Academy"
+    }
   },
-
   "boucle-03-stockvision": {
-    "1": { "titre": "Vendredi, 18 h.<br>Le saumon est fini.", "lignes": ["Vous retirez de la carte le plat qui rapporte le plus.", "Trente couverts qui prendront autre chose.", "Ou qui ne reviendront pas."] },
-    "2": { "agent": "Jarvis", "phrase": "Il me reste combien de saumon ?" },
+    "1": {
+      "titre": "Vendredi, 18 h.<br>Le saumon est fini.",
+      "lignes": [
+        "Vous retirez de la carte le plat qui rapporte le plus.",
+        "Trente couverts qui prendront autre chose.",
+        "Ou qui ne reviendront pas."
+      ]
+    },
+    "2": {
+      "agent": "Jarvis",
+      "phrase": "Il me reste combien de saumon ?"
+    },
     "3": {
       "cascade": [
-        { "nom": "Besoins des fiches", "valeur": "12 kg" },
-        { "nom": "Commande fournisseur", "valeur": "préparée" },
-        { "nom": "Réception et contrôle", "valeur": "HACCP" },
-        { "nom": "Entrée en stock", "valeur": "+ 12 kg" },
-        { "nom": "Consommation production", "valeur": "sur ventes réelles" },
-        { "nom": "Inventaire", "valeur": "compté" },
-        { "nom": "Écart", "valeur": "mesuré" },
-        { "nom": "Nouveaux besoins", "valeur": "recalculés" }
+        {
+          "nom": "Besoins des fiches",
+          "valeur": "12 kg"
+        },
+        {
+          "nom": "Commande fournisseur",
+          "valeur": "préparée"
+        },
+        {
+          "nom": "Réception et contrôle",
+          "valeur": "HACCP"
+        },
+        {
+          "nom": "Entrée en stock",
+          "valeur": "+ 12 kg"
+        },
+        {
+          "nom": "Consommation production",
+          "valeur": "sur ventes réelles"
+        },
+        {
+          "nom": "Inventaire",
+          "valeur": "compté"
+        },
+        {
+          "nom": "Écart",
+          "valeur": "mesuré"
+        },
+        {
+          "nom": "Nouveaux besoins",
+          "valeur": "recalculés"
+        }
       ],
       "fiches": [
-        { "nom": "Prévision · historique par jour", "valeur": "lu" },
-        { "nom": "Valeur aberrante", "valeur": "écartée" },
-        { "nom": "Jours fériés français", "valeur": "injectés" }
+        {
+          "nom": "Prévision · historique par jour",
+          "valeur": "lu"
+        },
+        {
+          "nom": "Valeur aberrante",
+          "valeur": "écartée"
+        },
+        {
+          "nom": "Jours fériés français",
+          "valeur": "injectés"
+        }
       ]
     },
     "4": {
       "alerte": "Rupture prévue ce week-end — 3 lignes à commander",
-      "proposition": { "titre": "Commande fournisseur — à valider avant envoi", "lignes": [
-        { "nom": "Saumon frais", "valeur": "12 kg" },
-        { "nom": "Crème liquide", "valeur": "6 L" },
-        { "nom": "Aneth", "valeur": "300 g" }
-      ] }
+      "proposition": {
+        "titre": "Commande fournisseur — à valider avant envoi",
+        "lignes": [
+          {
+            "nom": "Saumon frais",
+            "valeur": "12 kg",
+            "photo": "pave-saumon"
+          },
+          {
+            "nom": "Crème liquide",
+            "valeur": "6 L"
+          },
+          {
+            "nom": "Aneth",
+            "valeur": "300 g"
+          }
+        ]
+      }
     },
-    "5": { "voisines": ["HACCP", "E-commerce", "Communication", "Comptabilité"] },
-    "7": { "coupure": "Une rupture un samedi soir, ou 4 à 10 % des achats à la poubelle le dimanche.", "cta": "Les 8 Boucles · FoodEatUp Academy" }
+    "5": {
+      "voisines": [
+        "HACCP",
+        "E-commerce",
+        "Communication",
+        "Comptabilité"
+      ]
+    },
+    "7": {
+      "coupure": "Une rupture un samedi soir, ou 4 à 10 % des achats à la poubelle le dimanche.",
+      "cta": "Les 8 Boucles · FoodEatUp Academy"
+    }
   },
-
   "boucle-04-haccp": {
-    "1": { "titre": "Le contrôleur pousse<br>la porte un mardi,<br>à 11 h.", "lignes": ["Vous cherchez le classeur.", "Les relevés du mois dernier ont été remplis d'un coup, la veille, de mémoire.", "Vous le savez. Lui aussi."] },
-    "2": { "agent": "Jarvis", "phrase": "Frigo 1 : trois degrés." },
+    "1": {
+      "titre": "Le contrôleur pousse<br>la porte un mardi,<br>à 11 h.",
+      "lignes": [
+        "Vous cherchez le classeur.",
+        "Les relevés du mois dernier ont été remplis d'un coup, la veille, de mémoire.",
+        "Vous le savez. Lui aussi."
+      ]
+    },
+    "2": {
+      "agent": "Jarvis",
+      "phrase": "Frigo 1 : trois degrés."
+    },
     "3": {
       "cascade": [
-        { "nom": "Plan de maîtrise", "valeur": "le cadre" },
-        { "nom": "Relevés de températures", "valeur": "3 °C" },
-        { "nom": "Contrôles à réception", "valeur": "à chaque livraison" },
-        { "nom": "Étiquetage DLC", "valeur": "posé" },
-        { "nom": "Checklists", "valeur": "validées" },
-        { "nom": "Plan de nettoyage", "valeur": "par zone" },
-        { "nom": "Journal quotidien", "valeur": "horodaté" },
-        { "nom": "Action corrective", "valeur": "déclenchée" }
+        {
+          "nom": "Plan de maîtrise",
+          "valeur": "le cadre"
+        },
+        {
+          "nom": "Relevés de températures",
+          "valeur": "3 °C"
+        },
+        {
+          "nom": "Contrôles à réception",
+          "valeur": "à chaque livraison"
+        },
+        {
+          "nom": "Étiquetage DLC",
+          "valeur": "posé"
+        },
+        {
+          "nom": "Checklists",
+          "valeur": "validées"
+        },
+        {
+          "nom": "Plan de nettoyage",
+          "valeur": "par zone"
+        },
+        {
+          "nom": "Journal quotidien",
+          "valeur": "horodaté"
+        },
+        {
+          "nom": "Action corrective",
+          "valeur": "déclenchée"
+        }
       ],
       "fiches": [
-        { "nom": "Froid positif — limite", "valeur": "4 °C" },
-        { "nom": "Congélation — limite", "valeur": "− 18 °C" },
-        { "nom": "Frigo 2 · 4 jours sans relevé", "valeur": "non conforme" }
+        {
+          "nom": "Froid positif — limite",
+          "valeur": "4 °C"
+        },
+        {
+          "nom": "Congélation — limite",
+          "valeur": "− 18 °C"
+        },
+        {
+          "nom": "Frigo 2 · 4 jours sans relevé",
+          "valeur": "non conforme"
+        }
       ]
     },
     "4": {
       "alerte": "Complétude 87 % — 4 jours sans relevé sur frigo 2",
-      "proposition": { "titre": "Ce que FoodEatUp compte", "lignes": [
-        { "nom": "Jours sans relevé", "valeur": "4" },
-        { "nom": "Livraisons sans contrôle", "valeur": "donnée à confirmer" },
-        { "nom": "Zones jamais nettoyées", "valeur": "donnée à confirmer" }
-      ] },
+      "proposition": {
+        "titre": "Ce que FoodEatUp compte",
+        "lignes": [
+          {
+            "nom": "Jours sans relevé",
+            "valeur": "4"
+          },
+          {
+            "nom": "Livraisons sans contrôle",
+            "valeur": "donnée à confirmer"
+          },
+          {
+            "nom": "Zones jamais nettoyées",
+            "valeur": "donnée à confirmer"
+          }
+        ]
+      },
       "mention": "Un jour sans relevé est « non conforme », pas « probablement fait ». Une température se mesure, elle ne s'invente pas."
     },
-    "5": { "voisines": ["StockVisionAI"] },
-    "7": { "coupure": "La seule boucle dont l'échec n'est pas financier, mais existentiel.", "cta": "Les 8 Boucles · FoodEatUp Academy" }
+    "5": {
+      "voisines": [
+        "StockVisionAI"
+      ]
+    },
+    "7": {
+      "coupure": "La seule boucle dont l'échec n'est pas financier, mais existentiel.",
+      "cta": "Les 8 Boucles · FoodEatUp Academy"
+    }
   },
-
   "boucle-05-ecommerce": {
-    "1": { "titre": "19 h. Un client<br>cherche votre<br>restaurant.", "lignes": ["Il trouve une plateforme qui prend 30 % sur chaque commande.", "Et un menu PDF de 2023 qui ne s'ouvre pas sur son téléphone."] },
-    "2": { "agent": "Jarvis", "phrase": "Mets le plat du jour en ligne." },
+    "1": {
+      "titre": "19 h. Un client<br>cherche votre<br>restaurant.",
+      "lignes": [
+        "Il trouve une plateforme qui prend 30 % sur chaque commande.",
+        "Et un menu PDF de 2023 qui ne s'ouvre pas sur son téléphone."
+      ]
+    },
+    "2": {
+      "agent": "Jarvis",
+      "phrase": "Mets le plat du jour en ligne."
+    },
     "3": {
       "cascade": [
-        { "nom": "Carte en ligne", "valeur": "un seul endroit" },
-        { "nom": "Visite", "valeur": "QR, site, réseaux" },
-        { "nom": "Panier ou réservation", "valeur": "ouvert" },
-        { "nom": "Commande", "valeur": "reçue" },
-        { "nom": "Service", "valeur": "en salle" },
-        { "nom": "Avis", "valeur": "collecté" },
-        { "nom": "Ajustement de la carte", "valeur": "et ça recommence" }
+        {
+          "nom": "Carte en ligne",
+          "valeur": "un seul endroit"
+        },
+        {
+          "nom": "Visite",
+          "valeur": "QR, site, réseaux"
+        },
+        {
+          "nom": "Panier ou réservation",
+          "valeur": "ouvert"
+        },
+        {
+          "nom": "Commande",
+          "valeur": "reçue"
+        },
+        {
+          "nom": "Service",
+          "valeur": "en salle"
+        },
+        {
+          "nom": "Avis",
+          "valeur": "collecté"
+        },
+        {
+          "nom": "Ajustement de la carte",
+          "valeur": "et ça recommence"
+        }
       ],
       "fiches": [
-        { "nom": "Site vitrine", "valeur": "plat visible" },
-        { "nom": "QR de table", "valeur": "plat visible" },
-        { "nom": "Commande en ligne", "valeur": "plat visible" }
+        {
+          "nom": "Site vitrine",
+          "valeur": "plat visible",
+          "photo": "plat-du-jour"
+        },
+        {
+          "nom": "QR de table",
+          "valeur": "plat visible",
+          "photo": "plat-du-jour"
+        },
+        {
+          "nom": "Commande en ligne",
+          "valeur": "plat visible",
+          "photo": "plat-du-jour"
+        }
       ]
     },
     "4": {
       "alerte": "Demande de privatisation sans réponse depuis 48 h",
-      "proposition": { "titre": "En tête de vos actions", "lignes": [
-        { "nom": "Demande de groupe", "valeur": "sans réponse · 48 h" },
-        { "nom": "Couverts ce soir", "valeur": "donnée à confirmer" },
-        { "nom": "Tables encore libres", "valeur": "donnée à confirmer" }
-      ] },
+      "proposition": {
+        "titre": "En tête de vos actions",
+        "lignes": [
+          {
+            "nom": "Demande de groupe",
+            "valeur": "sans réponse · 48 h"
+          },
+          {
+            "nom": "Couverts ce soir",
+            "valeur": "donnée à confirmer"
+          },
+          {
+            "nom": "Tables encore libres",
+            "valeur": "donnée à confirmer"
+          }
+        ]
+      },
       "mention": "Publier le site, appliquer un template, réécrire la carte vitrine, clôturer la caisse et encaisser exigent une confirmation humaine."
     },
-    "5": { "voisines": ["Fidélité", "Communication", "Comptabilité"] },
-    "7": { "coupure": "Le restaurant dépend des plateformes et leur cède une commission sur des clients qu'il ne connaîtra jamais.", "cta": "Les 8 Boucles · FoodEatUp Academy" }
+    "5": {
+      "voisines": [
+        "Fidélité",
+        "Communication",
+        "Comptabilité"
+      ]
+    },
+    "7": {
+      "coupure": "Le restaurant dépend des plateformes et leur cède une commission sur des clients qu'il ne connaîtra jamais.",
+      "cta": "Les 8 Boucles · FoodEatUp Academy"
+    }
   },
-
   "boucle-06-communication": {
-    "1": { "titre": "12 kg de saumon,<br>date limite vendredi.", "lignes": ["Vous le savez.", "Vos 340 clients qui adorent le poisson ne le savent pas.", "Et vous n'aurez pas le temps de leur dire."] },
-    "2": { "agent": "Iris", "phrase": "Préviens les habitués qu'on a du saumon frais ce midi." },
+    "1": {
+      "titre": "12 kg de saumon,<br>date limite vendredi.",
+      "lignes": [
+        "Vous le savez.",
+        "Vos 340 clients qui adorent le poisson ne le savent pas.",
+        "Et vous n'aurez pas le temps de leur dire."
+      ]
+    },
+    "2": {
+      "agent": "Iris",
+      "phrase": "Préviens les habitués qu'on a du saumon frais ce midi."
+    },
     "3": {
       "cascade": [
-        { "nom": "Événement ou intention", "valeur": "stock qui presse" },
-        { "nom": "Choix du canal", "valeur": "e-mail" },
-        { "nom": "Création du contenu", "valeur": "par Iris" },
-        { "nom": "Contrôle de charte", "valeur": "hors palette : rejeté" },
-        { "nom": "Diffusion", "valeur": "après votre accord" },
-        { "nom": "Mesure", "valeur": "envois, clics, commandes" },
-        { "nom": "Apprentissage", "valeur": "nourrit la suivante" }
+        {
+          "nom": "Événement ou intention",
+          "valeur": "stock qui presse"
+        },
+        {
+          "nom": "Choix du canal",
+          "valeur": "e-mail"
+        },
+        {
+          "nom": "Création du contenu",
+          "valeur": "par Iris"
+        },
+        {
+          "nom": "Contrôle de charte",
+          "valeur": "hors palette : rejeté"
+        },
+        {
+          "nom": "Diffusion",
+          "valeur": "après votre accord"
+        },
+        {
+          "nom": "Mesure",
+          "valeur": "envois, clics, commandes"
+        },
+        {
+          "nom": "Apprentissage",
+          "valeur": "nourrit la suivante"
+        }
       ],
       "fiches": [
-        { "nom": "Visuel hors palette", "valeur": "rejeté" },
-        { "nom": "Visuel conforme", "valeur": "accepté" }
+        {
+          "nom": "Visuel hors palette",
+          "valeur": "rejeté"
+        },
+        {
+          "nom": "Visuel conforme",
+          "valeur": "accepté"
+        }
       ]
     },
     "4": {
       "alerte": "Segment : 6 contacts — campagne non proposée",
-      "proposition": { "titre": "Pourquoi Iris refuse", "lignes": [
-        { "nom": "Segment « brunch »", "valeur": "6 contacts · refusé" },
-        { "nom": "Seuil minimum", "valeur": "10 contacts" },
-        { "nom": "Segment « amateurs de poisson »", "valeur": "340 contacts · proposé" }
-      ] },
+      "proposition": {
+        "titre": "Pourquoi Iris refuse",
+        "lignes": [
+          {
+            "nom": "Segment « brunch »",
+            "valeur": "6 contacts · refusé"
+          },
+          {
+            "nom": "Seuil minimum",
+            "valeur": "10 contacts"
+          },
+          {
+            "nom": "Segment « amateurs de poisson »",
+            "valeur": "340 contacts · proposé"
+          }
+        ]
+      },
       "mention": "Une base sous 10 contacts ne produit aucun signal exploitable. Rien ne part sans votre accord."
     },
-    "5": { "voisines": ["Fidélité", "E-commerce"] },
-    "7": { "coupure": "Rien ne casse. Tout ralentit.", "cta": "Les 8 Boucles · FoodEatUp Academy" }
+    "5": {
+      "voisines": [
+        "Fidélité",
+        "E-commerce"
+      ]
+    },
+    "7": {
+      "coupure": "Rien ne casse. Tout ralentit.",
+      "cta": "Les 8 Boucles · FoodEatUp Academy"
+    }
   },
-
   "boucle-07-fidelite": {
-    "1": { "titre": "300 personnes<br>servies cette semaine.", "lignes": ["Combien pouvez-vous rappeler demain matin ?", "Si la réponse est aucune, vous rachetez vos clients à chaque fois.", "Indéfiniment."] },
-    "2": { "agent": "PrédiBot", "phrase": "Qui n'est pas revenu depuis trois mois ?" },
+    "1": {
+      "titre": "300 personnes<br>servies cette semaine.",
+      "lignes": [
+        "Combien pouvez-vous rappeler demain matin ?",
+        "Si la réponse est aucune, vous rachetez vos clients à chaque fois.",
+        "Indéfiniment."
+      ]
+    },
+    "2": {
+      "agent": "PrédiBot",
+      "phrase": "Qui n'est pas revenu depuis trois mois ?"
+    },
     "3": {
       "cascade": [
-        { "nom": "Programme de fidélité", "valeur": "ACTIF" },
-        { "nom": "Client servi", "valeur": "300 / semaine" },
-        { "nom": "Consentement", "valeur": "recueilli" },
-        { "nom": "Segmentation", "valeur": "RFM" },
-        { "nom": "Campagne ciblée", "valeur": "préparée" },
-        { "nom": "Retour en salle", "valeur": "mesuré" },
-        { "nom": "Points et récompenses", "valeur": "crédités" },
-        { "nom": "Nouvelle donnée", "valeur": "affine le segment" }
+        {
+          "nom": "Programme de fidélité",
+          "valeur": "ACTIF"
+        },
+        {
+          "nom": "Client servi",
+          "valeur": "300 / semaine"
+        },
+        {
+          "nom": "Consentement",
+          "valeur": "recueilli"
+        },
+        {
+          "nom": "Segmentation",
+          "valeur": "RFM"
+        },
+        {
+          "nom": "Campagne ciblée",
+          "valeur": "préparée"
+        },
+        {
+          "nom": "Retour en salle",
+          "valeur": "mesuré"
+        },
+        {
+          "nom": "Points et récompenses",
+          "valeur": "crédités"
+        },
+        {
+          "nom": "Nouvelle donnée",
+          "valeur": "affine le segment"
+        }
       ],
       "fiches": [
-        { "nom": "Bons émis vs utilisés", "valeur": "donnée à confirmer" },
-        { "nom": "Récompense en rupture", "valeur": "signalée" },
-        { "nom": "Encours cartes cadeaux", "valeur": "une dette" }
+        {
+          "nom": "Bons émis vs utilisés",
+          "valeur": "donnée à confirmer"
+        },
+        {
+          "nom": "Récompense en rupture",
+          "valeur": "signalée"
+        },
+        {
+          "nom": "Encours cartes cadeaux",
+          "valeur": "une dette"
+        }
       ]
     },
     "4": {
       "alerte": "Programme inactif ? Toute la cascade reste grise.",
-      "proposition": { "titre": "Ce qui tourne vraiment", "lignes": [
-        { "nom": "Bons émis / utilisés", "valeur": "donnée à confirmer" },
-        { "nom": "Récompenses en rupture", "valeur": "donnée à confirmer" },
-        { "nom": "Encours cartes cadeaux", "valeur": "dette, pas du CA" }
-      ] },
+      "proposition": {
+        "titre": "Ce qui tourne vraiment",
+        "lignes": [
+          {
+            "nom": "Bons émis / utilisés",
+            "valeur": "donnée à confirmer"
+          },
+          {
+            "nom": "Récompenses en rupture",
+            "valeur": "donnée à confirmer"
+          },
+          {
+            "nom": "Encours cartes cadeaux",
+            "valeur": "dette, pas du CA"
+          }
+        ]
+      },
       "mention": "La création d'une roue cadeaux ou d'un sondage se fait en back-office, pas par l'agent."
     },
-    "5": { "voisines": ["E-commerce", "Communication"] },
-    "7": { "coupure": "On rachète chaque client à chaque fois.", "cta": "Les 8 Boucles · FoodEatUp Academy" }
+    "5": {
+      "voisines": [
+        "E-commerce",
+        "Communication"
+      ]
+    },
+    "7": {
+      "coupure": "On rachète chaque client à chaque fois.",
+      "cta": "Les 8 Boucles · FoodEatUp Academy"
+    }
   },
-
   "boucle-08-comptabilite": {
-    "1": { "titre": "Vous saurez si le mois<br>a été bon dans<br>six semaines.", "lignes": ["Quand votre comptable vous le dira.", "D'ici là, vous pilotez à l'aveugle."] },
-    "2": { "agent": "PrédiBot", "phrase": "Fais le Z." },
+    "1": {
+      "titre": "Vous saurez si le mois<br>a été bon dans<br>six semaines.",
+      "lignes": [
+        "Quand votre comptable vous le dira.",
+        "D'ici là, vous pilotez à l'aveugle."
+      ]
+    },
+    "2": {
+      "agent": "PrédiBot",
+      "phrase": "Fais le Z."
+    },
     "3": {
       "cascade": [
-        { "nom": "Vente", "valeur": "passée en cuisine" },
-        { "nom": "Facture", "valeur": "émise" },
-        { "nom": "Encaissement", "valeur": "rapproché" },
-        { "nom": "Dépenses et achats", "valeur": "de la période" },
-        { "nom": "Marge constatée", "valeur": "calculée" },
-        { "nom": "Trésorerie", "valeur": "constatée" },
-        { "nom": "Capacité d'achat", "valeur": "→ boucle 03" },
-        { "nom": "Commandes fournisseurs", "valeur": "financées" }
+        {
+          "nom": "Vente",
+          "valeur": "passée en cuisine"
+        },
+        {
+          "nom": "Facture",
+          "valeur": "émise"
+        },
+        {
+          "nom": "Encaissement",
+          "valeur": "rapproché"
+        },
+        {
+          "nom": "Dépenses et achats",
+          "valeur": "de la période"
+        },
+        {
+          "nom": "Marge constatée",
+          "valeur": "calculée"
+        },
+        {
+          "nom": "Trésorerie",
+          "valeur": "constatée"
+        },
+        {
+          "nom": "Capacité d'achat",
+          "valeur": "→ boucle 03"
+        },
+        {
+          "nom": "Commandes fournisseurs",
+          "valeur": "financées"
+        }
       ],
       "fiches": [
-        { "nom": "Écart caisse vs factures", "valeur": "le livrable utile" },
-        { "nom": "Impayés par ancienneté", "valeur": "triés" },
-        { "nom": "Devis sans réponse", "valeur": "relancés" }
+        {
+          "nom": "Écart caisse vs factures",
+          "valeur": "le livrable utile"
+        },
+        {
+          "nom": "Impayés par ancienneté",
+          "valeur": "triés"
+        },
+        {
+          "nom": "Devis sans réponse",
+          "valeur": "relancés"
+        }
       ]
     },
     "4": {
       "alerte": "Écarts caisse / factures à rapprocher",
-      "proposition": { "titre": "Écarts et impayés", "lignes": [
-        { "nom": "Rapport de caisse", "valeur": "donnée à confirmer" },
-        { "nom": "Factures de la période", "valeur": "donnée à confirmer" },
-        { "nom": "Écart", "valeur": "donnée à confirmer" }
-      ] },
+      "proposition": {
+        "titre": "Écarts et impayés",
+        "lignes": [
+          {
+            "nom": "Rapport de caisse",
+            "valeur": "donnée à confirmer"
+          },
+          {
+            "nom": "Factures de la période",
+            "valeur": "donnée à confirmer"
+          },
+          {
+            "nom": "Écart",
+            "valeur": "donnée à confirmer"
+          }
+        ]
+      },
       "mention": "« Payée » ne se déduit jamais : une facture ne change d'état que sur votre information explicite."
     },
-    "5": { "voisines": ["StockVisionAI", "Équipe"] },
-    "7": { "coupure": "On ignore si l'on gagne de l'argent, et on le découvre trop tard.", "cta": "Les 8 Boucles · FoodEatUp Academy" }
+    "5": {
+      "voisines": [
+        "StockVisionAI",
+        "Équipe"
+      ]
+    },
+    "7": {
+      "coupure": "On ignore si l'on gagne de l'argent, et on le découvre trop tard.",
+      "cta": "Les 8 Boucles · FoodEatUp Academy"
+    }
   }
 }

@@ -58,6 +58,16 @@
     return box;
   }
 
+  // Pastille ronde de plat, à gauche d'une ligne qui nomme un plat. Les photos
+  // sont pré-découpées en cercle par tools/prepare_assets.py — pas de
+  // border-radius ici, dont le bord crénèle au rendu.
+  function pastillePlat(nom) {
+    var img = document.createElement("img");
+    img.className = "pastille-plat";
+    img.src = V.plats[nom];
+    return img;
+  }
+
   // Entrée du personnage : il glisse depuis la droite puis respire lentement.
   // La respiration est une fonction de `t`, donc reproductible au seek près.
   function majIllustration(box, t, dur) {
@@ -162,6 +172,7 @@
       f.appendChild(el("div", "entete", "Ce que ça touche"));
       root._fiches = d.fiches.map(function (x) {
         var n = el("div", "fiche");
+        if (x.photo) n.appendChild(pastillePlat(x.photo));
         n.appendChild(el("span", null, x.nom));
         n.appendChild(el("span", "cout", x.valeur));
         f.appendChild(n);
@@ -234,6 +245,7 @@
     var lg = el("div", "lignes");
     d.proposition.lignes.forEach(function (l) {
       var r = el("div");
+      if (l.photo) r.appendChild(pastillePlat(l.photo));
       r.appendChild(el("span", null, l.nom));
       r.appendChild(el("b", null, l.valeur));
       lg.appendChild(r);

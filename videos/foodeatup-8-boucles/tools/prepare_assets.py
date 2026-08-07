@@ -15,7 +15,7 @@ import collections
 import json
 import pathlib
 
-from PIL import Image
+from PIL import Image, ImageDraw
 
 HERE = pathlib.Path(__file__).resolve().parent
 PROJ = HERE.parent
@@ -126,6 +126,43 @@ def traiter(nom: str) -> pathlib.Path | None:
     return dst
 
 
+# Photos de plats, en pastille ronde à gauche des lignes qui nomment un plat
+# (fiches du plan 3, lignes de proposition du plan 4). Elles rendent concret ce
+# qui reste sinon une liste de libellés — c'est le plat qui perd de la marge,
+# pas une ligne de tableau.
+PLATS = REPO / "videos/shared-images/plats"
+TAILLE_PASTILLE = 220
+
+
+def pastille(nom: str) -> pathlib.Path | None:
+    """Recadre une photo de plat au carré centré, la réduit, et lui applique un
+    masque circulaire — le fond crème de la photo disparaît hors du cercle."""
+    src = PLATS / f"{nom}.jpg"
+    if not src.exists():
+        return None
+    im = Image.open(src).convert("RGBA")
+    cote = min(im.size)
+    g, h = (im.width - cote) // 2, (im.height - cote) // 2
+    im = im.crop((g, h, g + cote, h + cote)).resize(
+        (TAILLE_PASTILLE, TAILLE_PASTILLE), Image.LANCZOS
+    )
+    # Masque antialiasé : on le dessine 4× trop grand puis on le réduit, sinon
+    # le bord du cercle est crénelé et se voit à l'écran.
+    k = 4
+    masque = Image.new("L", (TAILLE_PASTILLE * k, TAILLE_PASTILLE * k), 0)
+    ImageDraw.Draw(masque).ellipse(
+        (0, 0, TAILLE_PASTILLE * k - 1, TAILLE_PASTILLE * k - 1), fill=255
+    )
+    im.putalpha(masque.resize((TAILLE_PASTILLE, TAILLE_PASTILLE), Image.LANCZOS))
+
+    OUT.mkdir(parents=True, exist_ok=True)
+    dst = OUT / f"plat-{nom}.webp"
+    im.save(dst, "WEBP", quality=90, method=6)
+    print(f"  plat-{nom:28s} {TAILLE_PASTILLE}×{TAILLE_PASTILLE}  "
+          f"{dst.stat().st_size // 1024} Ko")
+    return dst
+
+
 def main() -> None:
     print(f"Détourage depuis {SRC.relative_to(REPO)}\n")
     manquants = []
@@ -133,6 +170,10 @@ def main() -> None:
         for role, nom in r.items():
             if traiter(nom) is None:
                 manquants.append((slug, role, nom))
+
+    print(f"\nPastilles de plats depuis {PLATS.relative_to(REPO)}\n")
+    for nom in sorted(f.stem for f in PLATS.glob("*.jpg")):
+        pastille(nom)
 
     (PROJ / "assets/img/mapping.json").write_text(
         json.dumps(MAPPING, ensure_ascii=False, indent=2) + "\n", encoding="utf-8"
