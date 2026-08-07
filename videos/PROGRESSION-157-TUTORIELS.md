@@ -34,6 +34,22 @@ les occurrences de `moduleSlug: "<slug>"` dans `tutorials.ts` (via
 attendus) — le chiffre attendu est une estimation de départ, pas un plafond ;
 ne pas bloquer dessus.
 
+## Ajouté le 2026-08-07
+
+- `pointer-son-service-cote-employe` — module `equipe-planning`, item 15
+  "Pointer son Service (pauses & photo)". Comblait le dernier placeholder
+  "à venir" du module (`equipe-planning` passe donc à 20/20, module complet
+  sur ce dépôt — sous réserve de vérifier `tutorials.ts` en direct, plusieurs
+  sessions publiant en parallèle). **Rush inexploitable** : le fichier envoyé
+  pour ce dossier est le même fichier Drive mal étiqueté déjà documenté sur
+  `creer-ses-roles-et-permissions` (montre Accueil/QR code/Rôles, pas le flux
+  de pointage employé). Montage carte-based construit à la place à partir de
+  la vraie capture produit `pointage.png` + un graphique illustratif pour le
+  volet photo anti-fraude — voir `videos/foodeatup-pointer-service-tuto/SCRIPT.md`
+  pour le détail et la marche à suivre si un vrai rush est fourni plus tard.
+  RapidoCMS (vidéo + vignette) + Lovable mis à jour, GitHub poussé sur
+  `claude/foodeatup-video-tutorials-x5a46z`. LinkedIn non demandé.
+
 ## Ajoutés cette session (2026-08-04)
 
 - `tenir-sa-liste-de-courses` — module `stockvision-ai` (add/edit/delete sur la
