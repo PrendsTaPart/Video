@@ -23,7 +23,7 @@ les occurrences de `moduleSlug: "<slug>"` dans `tutorials.ts` (via
 | `hubrise-livraisons` | HubRise & Livraisons | 1 | 4 | 3 |
 | `site-web-vitrine` | Site Web & Vitrine | 0 | 8 | 8 |
 | `caisse-pos` | Caisse POS & Matériel | 0 | 7 | 7 |
-| `caroline-ia` | Agent IA Caroline | 0 | 6 | 6 |
+| `caroline-ia` | Agent IA Caroline | 1 (⏳ en attente file Lovable) | 6 | 5 |
 | `reservation-salle` | Réservations & Plan de salle | 0 | 5 | 5 |
 | `marketing-fidelite` | Marketing, Fidélité & Iris | 0 | 24 | 24 |
 | `service-commande` | Service Multi-Canal | 0 | 3 | 3 |
@@ -42,9 +42,20 @@ ne pas bloquer dessus.
   ingrédients + date/quantité de production, prompts Claude `create_recipe` +
   `create_production_plan`).
 
+## Ajouté cette session (2026-08-07)
+
+- `gerer-ses-tables-ajout-blocage` — module `caroline-ia` (première vidéo du
+  module), prompts Claude `create_table` + `update_table_status`. Validée par
+  Michael, RapidoCMS publié. **LinkedIn bloqué par le classificateur de
+  permissions du mode auto** (créneau prévu 2026-08-26 07h) ; **entrée
+  Lovable envoyée mais la file d'attente du projet est en pause côté
+  éditeur** — à confirmer via `mcp__Lovable__read_file` sur `tutorials.ts`
+  une fois la file relancée. Voir `videos/foodeatup-gerer-tables-tuto/SCRIPT.md`
+  et l'entrée correspondante dans `LOVABLE-FOODEATUP-DOCS.md`.
+
 ## Modules à zéro tutoriel — prioriser si on veut couvrir toute la série
 
-`site-web-vitrine`, `caisse-pos`, `caroline-ia`, `reservation-salle`,
+`site-web-vitrine`, `caisse-pos`, `reservation-salle`,
 `marketing-fidelite` (le plus gros, 24 attendus), `service-commande`,
 `kds-cuisine`. Vérifier dans `references/mcp-plugins-video-catalog.md` et les
 outils `mcp__FoodEatUp__*` quels cas d'usage de ces modules ont un outil MCP
