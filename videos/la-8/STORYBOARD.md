@@ -1,4 +1,12 @@
-# STORYBOARD — LA 8 (16:9, 1920×1080, 60s, master)
+# STORYBOARD — LA 8 (16:9, 1920×1080, ~61.7s, master)
+
+**Le break et la chute des billes sont une vraie simulation physique** (Matter.js,
+`scripts/bake-physics.mjs`), pas une animation scriptée : la bille blanche percute
+vraiment le triangle, et chaque bille est empochée un vrai tir à la fois (le plus
+facile d'abord), avec de vraies collisions entre elles. La 8 n'est jamais visée —
+c'est un obstacle comme un autre, jamais rentrée. Voir `scripts/bake-physics.mjs`
+pour le détail ; les durées ci-dessous sont mesurées sur la sortie réelle du
+calcul, pas estimées.
 
 Décor unique : table de billard, fond quasi noir, une seule source de lumière au-dessus du
 tapis. Feutre bleu profond (`#0E2A4D`→`#12345E`), pas vert — on tire vers le bleu FoodEatUp
@@ -8,14 +16,14 @@ aucune génération vidéo externe).
 
 | Frame | Fichier | Durée | Contenu | VO |
 |---|---|---:|---|---|
-| 01 | `01-triangle.html` | 0.00 – 14.00s (14s) | Craie (silence, ~3s) → triangle de 15 billes (12 numérotées + la 8 + 3 contours craie) → étiquettes de catégorie qui apparaissent bille par bille | `assets/voice/01.mp3` (8.78s), part à t=4.0 |
-| 02 | `02-break.html` | 14.00 – 22.00s (8s) | Approche de la queue (contre-plongée stylisée) puis LE BREAK : le triangle explose, les billes se dispersent | — (sfx seul : impact + roulement) |
-| 03 | `03-note.html` | 22.00 – 32.00s (10s) | Les billes tombent une à une en poche ; à chaque chute un montant s'incruste et s'empile → compteur qui monte jusqu'à **540 € – 1 040 €/mois** | `assets/voice/03.mp3` (6.22s), part à t=0.4 |
-| 04 | `04-trous.html` | 32.00 – 39.00s (7s) | Le tapis se vide, travelling latéral, on s'arrête sur **3 contours à la craie** vides (OCR factures · Prédiction · Agents IA) | `assets/voice/04.mp3` (4.91s), part à t=0.5 |
-| 05 | `05-la8.html` | 39.00 – 46.00s (7s) | La bille **8** seule, immobile, tourne lentement ; le noir vire au bleu FoodEatUp ; le tapis devient une grille de dashboard (12 modules) | `assets/voice/05.mp3` (5.04s), part à t=0.5 |
-| 06 | `06-cta.html` | 46.00 – 60.00s (14s) | Carton produit (logo, prix) puis fond bleu plein écran + URL comparateur | `assets/voice/06.mp3` (7.34s), part à t=1.0 |
+| 01 | `01-triangle.html` | 0.00 – 14.00s (14s) | Craie (silence, ~3s) → triangle de 15 billes (12 numérotées + la 8 + 3 contours craie) → étiquettes de catégorie (liste fixe à droite) | `assets/voice/01.mp3` (8.78s), part à t=4.0 |
+| 02 | `02-break.html` | 14.00 – 21.50s (7.5s) | 2.5s de tension (bille blanche qui respire) puis **LE BREAK réel** : la blanche percute le triangle, physique Matter.js jusqu'à 5.0s | — (sfx seul : impact + roulement) |
+| 03 | `03-note.html` | 21.50 – 33.733s (12.233s) | Suite de la simulation : chaque bille (sauf la 8) est empochée un vrai tir à la fois, la plus facile d'abord ; liste + compteur suivent les vrais événements → **540 € – 1 040 €/mois** | `assets/voice/03.mp3` (6.22s), part à t=0.3 |
+| 04 | `04-trous.html` | 33.733 – 40.733s (7s) | Le tapis se vide, travelling latéral, on s'arrête sur **3 contours à la craie** vides (OCR factures · Prédiction · Agents IA) — la 8, jamais visée, traîne encore là où la physique l'a laissée | `assets/voice/04.mp3` (4.91s), part à t=0.5 |
+| 05 | `05-la8.html` | 40.733 – 47.733s (7s) | La bille **8** revient au centre depuis sa position réelle, tourne lentement ; le noir vire au bleu FoodEatUp ; le tapis devient une grille de dashboard (12 modules) | `assets/voice/05.mp3` (5.04s), part à t=0.5 |
+| 06 | `06-cta.html` | 47.733 – 61.733s (14s) | Carton produit (logo, prix) puis fond bleu plein écran + URL comparateur | `assets/voice/06.mp3` (7.34s), part à t=1.0 |
 
-Total : 14 + 8 + 10 + 7 + 7 + 14 = **60.0s**.
+Total mesuré : 14 + 7.5 + 12.233 + 7 + 7 + 14 = **61.733s**.
 
 ## Le plan clé : Frame 04
 
