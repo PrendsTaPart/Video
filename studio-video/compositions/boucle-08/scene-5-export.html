@@ -1,0 +1,161 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+  </head>
+  <body>
+    <template>
+      <style>
+        @font-face {
+          font-family: "Fredoka";
+          src: url("assets/vendor/fonts/Fredoka-Variable.woff2") format("woff2-variations");
+          font-weight: 300 700;
+          font-display: block;
+        }
+        #root {
+          position: absolute;
+          inset: 0;
+          background: #fcf9e6;
+          overflow: hidden;
+          font-family: "Inter", sans-serif;
+        }
+        .mascot {
+          position: absolute;
+          right: 150px;
+          bottom: -30px;
+          width: 230px;
+          height: auto;
+          transform: scale(0);
+          transform-origin: bottom center;
+        }
+        .bubble {
+          position: absolute;
+          right: 200px;
+          top: 130px;
+          width: 1120px;
+          background: #ffffff;
+          border: 3px solid #0f1a23;
+          border-radius: 28px;
+          padding: 36px 44px;
+          transform: scale(0.85);
+          opacity: 0;
+        }
+        .bubble-label {
+          font-family: "Fredoka", sans-serif;
+          font-weight: 600;
+          font-size: 24px;
+          color: #007bff;
+          margin-bottom: 12px;
+        }
+        .bubble-text {
+          font-family: "Fredoka", sans-serif;
+          font-weight: 700;
+          font-size: 46px;
+          color: #0f1a23;
+          line-height: 1.25;
+        }
+        .status-card {
+          position: absolute;
+          left: 150px;
+          top: 420px;
+          width: 940px;
+          background: #ffffff;
+          border: 3px solid #0f1a23;
+          border-radius: 24px;
+          padding: 36px 44px;
+          display: flex;
+          flex-direction: column;
+          gap: 22px;
+          opacity: 0;
+          transform: scale(0.9);
+        }
+        .status-row {
+          display: flex;
+          align-items: center;
+          gap: 18px;
+          opacity: 0;
+        }
+        .check {
+          width: 40px;
+          height: 40px;
+          border-radius: 50%;
+          background: #007bff;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          flex-shrink: 0;
+          transform: scale(0);
+        }
+        .check.warn { background: #ffa500; }
+        .check svg { width: 22px; height: 22px; fill: #fcf9e6; }
+        .check.warn svg { fill: #0f1a23; }
+        .status-text {
+          font-family: "Fredoka", sans-serif;
+          font-weight: 600;
+          font-size: 30px;
+          color: #0f1a23;
+        }
+        .status-text b { color: #007bff; }
+        .cta-btn {
+          position: absolute;
+          left: 150px;
+          top: 760px;
+          padding: 22px 46px;
+          background: #ffa500;
+          border-radius: 999px;
+          font-family: "Fredoka", sans-serif;
+          font-weight: 700;
+          font-size: 30px;
+          color: #0f1a23;
+          opacity: 0;
+          transform: scale(0.85);
+        }
+      </style>
+
+      <div
+        id="root"
+        data-composition-id="b08-scene5-export"
+        data-width="1920"
+        data-height="1080"
+        data-duration="8.37"
+      >
+        <img class="mascot" id="mascot" src="assets/brand/mascots/agent-laptop-homme.png" alt="" />
+        <div class="bubble" id="bubble">
+          <div class="bubble-label">À PrédiBot</div>
+          <div class="bubble-text">« Prépare l'export du mois pour mon&nbsp;comptable.&nbsp;»</div>
+        </div>
+
+        <div class="status-card" id="status-card">
+          <div class="status-row" id="row-1">
+            <div class="check" id="check-1"><svg viewBox="0 0 24 24"><path d="M9 16.2l-3.5-3.5L4 14.2l5 5 11-11-1.5-1.5z"/></svg></div>
+            <div class="status-text">Écritures rassemblées — <b>1 284 lignes</b></div>
+          </div>
+          <div class="status-row" id="row-2">
+            <div class="check warn" id="check-2"><svg viewBox="0 0 24 24"><path d="M1 21h22L12 2 1 21zm12-3h-2v-2h2v2zm0-4h-2v-4h2v4z"/></svg></div>
+            <div class="status-text">2 écarts de caisse signalés</div>
+          </div>
+        </div>
+
+        <div class="cta-btn" id="cta-btn">Dossier — en attente de votre relecture</div>
+      </div>
+
+      <script>
+        window.__timelines = window.__timelines || {};
+        const tl = gsap.timeline({ paused: true });
+
+        tl.fromTo("#mascot", { scale: 0 }, { scale: 1, duration: 0.4, ease: "back.out(1.8)" }, 0.03);
+        tl.fromTo("#bubble", { scale: 0.85, opacity: 0, y: 20 }, { scale: 1, opacity: 1, y: 0, duration: 0.4, ease: "back.out(1.7)" }, 0.22);
+
+        tl.fromTo("#status-card", { opacity: 0, scale: 0.9 }, { opacity: 1, scale: 1, duration: 0.45, ease: "power2.out" }, 2.0);
+        tl.fromTo("#row-1", { opacity: 0 }, { opacity: 1, duration: 0.2 }, 2.5);
+        tl.fromTo("#check-1", { scale: 0 }, { scale: 1, duration: 0.3, ease: "back.out(2.2)" }, 2.55);
+        tl.fromTo("#row-2", { opacity: 0 }, { opacity: 1, duration: 0.2 }, 3.1);
+        tl.fromTo("#check-2", { scale: 0 }, { scale: 1, duration: 0.3, ease: "back.out(2.2)" }, 3.15);
+
+        tl.fromTo("#cta-btn", { opacity: 0, scale: 0.85 }, { opacity: 1, scale: 1, duration: 0.4, ease: "back.out(1.8)" }, 4.2);
+
+        window.__timelines["b08-scene5-export"] = tl;
+      </script>
+    </template>
+  </body>
+</html>

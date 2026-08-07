@@ -1,0 +1,191 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+  </head>
+  <body>
+    <template>
+      <style>
+        @font-face {
+          font-family: "Fredoka";
+          src: url("assets/vendor/fonts/Fredoka-Variable.woff2") format("woff2-variations");
+          font-weight: 300 700;
+          font-display: block;
+        }
+        #root {
+          position: absolute;
+          inset: 0;
+          background: #fcf9e6;
+          overflow: hidden;
+          font-family: "Inter", sans-serif;
+        }
+        .eyebrow {
+          position: absolute;
+          top: 56px;
+          left: 0;
+          right: 0;
+          text-align: center;
+          font-family: "Fredoka", sans-serif;
+          font-weight: 600;
+          font-size: 32px;
+          color: #0f1a23;
+          opacity: 0;
+        }
+        .tva-check {
+          position: absolute;
+          left: 50%;
+          top: 122px;
+          transform: translateX(-50%);
+          display: flex;
+          gap: 24px;
+          opacity: 0;
+        }
+        .tva-chip {
+          display: flex;
+          align-items: center;
+          gap: 14px;
+          padding: 12px 26px;
+          border-radius: 999px;
+          font-family: "Fredoka", sans-serif;
+          font-weight: 700;
+          font-size: 26px;
+          white-space: nowrap;
+        }
+        .tva-chip.bad {
+          background: #fcf9e6;
+          border: 3px dashed rgba(15, 26, 35, 0.45);
+          color: rgba(15, 26, 35, 0.55);
+        }
+        .tva-chip.good {
+          background: #007bff;
+          border: 3px solid #007bff;
+          color: #fcf9e6;
+        }
+        .tva-chip svg { width: 24px; height: 24px; }
+        .tva-chip.bad svg { fill: rgba(15, 26, 35, 0.55); }
+        .tva-chip.good svg { fill: #fcf9e6; }
+
+        #node-layer { position: absolute; inset: 0; }
+        .node {
+          position: absolute;
+          width: 380px;
+          height: 130px;
+          border-radius: 20px;
+          background: #ffffff;
+          border: 3px solid #0f1a23;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          text-align: center;
+          padding: 0 20px;
+          font-family: "Fredoka", sans-serif;
+          font-weight: 600;
+          font-size: 26px;
+          color: #0f1a23;
+          transform: scale(0);
+        }
+        .caption {
+          position: absolute;
+          left: 0;
+          right: 0;
+          bottom: 70px;
+          text-align: center;
+          font-family: "Fredoka", sans-serif;
+          font-weight: 600;
+          font-size: 28px;
+          color: #0f1a23;
+          opacity: 0;
+        }
+      </style>
+
+      <div
+        id="root"
+        data-composition-id="b08-scene3-cascade"
+        data-width="1920"
+        data-height="1080"
+        data-duration="20.50"
+      >
+        <div class="eyebrow" id="eyebrow">CHAQUE GESTE EST DÉJÀ UN CHIFFRE</div>
+
+        <div class="tva-check" id="tva-check">
+          <div class="tva-chip bad" id="chip-bad">
+            <svg viewBox="0 0 24 24"><path d="M18.3 5.71L12 12.01l-6.3-6.3-1.4 1.4 6.3 6.3-6.3 6.3 1.4 1.4 6.3-6.3 6.3 6.3 1.4-1.4-6.3-6.3 6.3-6.3z"/></svg>
+            Encaissement rangé en 20 %
+          </div>
+          <div class="tva-chip good" id="chip-good">
+            <svg viewBox="0 0 24 24"><path d="M9 16.2l-3.5-3.5L4 14.2l5 5 11-11-1.5-1.5z"/></svg>
+            Sur place → 10 %
+          </div>
+        </div>
+
+        <svg id="path-svg" width="1920" height="1080" style="position:absolute; inset:0;">
+          <polyline
+            id="chain-path"
+            points="300,370 740,370 1180,370 1620,370 1620,700 1180,700 740,700"
+            fill="none"
+            stroke="#0f1a23"
+            stroke-opacity="0.18"
+            stroke-width="4"
+            stroke-dasharray="1560"
+            stroke-dashoffset="1560"
+          />
+          <circle id="dot" cx="300" cy="370" r="13" fill="#007bff" opacity="0" />
+          <circle id="dot-halo" cx="300" cy="370" r="22" fill="#007bff" opacity="0" fill-opacity="0.18" />
+        </svg>
+
+        <div id="node-layer">
+          <div class="node" id="node-1" style="left:110px; top:305px;">Service encaissé</div>
+          <div class="node" id="node-2" style="left:550px; top:305px;">Écriture TVA</div>
+          <div class="node" id="node-3" style="left:990px; top:305px;">Facture fournisseur</div>
+          <div class="node" id="node-4" style="left:1430px; top:305px;">Heures pointées</div>
+          <div class="node" id="node-5" style="left:1430px; top:635px;">Charge du mois</div>
+          <div class="node" id="node-6" style="left:990px; top:635px;">Marge réelle</div>
+          <div class="node" id="node-7" style="left:550px; top:635px;">Décision</div>
+        </div>
+
+        <div class="caption" id="caption">Un taux mal rangé, et toute la déclaration part de travers.</div>
+      </div>
+
+      <script>
+        window.__timelines = window.__timelines || {};
+        const tl = gsap.timeline({ paused: true });
+
+        const pts = [
+          [300, 370], [740, 370], [1180, 370], [1620, 370],
+          [1620, 700], [1180, 700], [740, 700]
+        ];
+        const NODE_START = 4.6;
+        const NODE_STEP = 2.1;
+        const BLUE = "#007bff";
+        const CREAM = "#fcf9e6";
+
+        tl.fromTo("#eyebrow", { opacity: 0, y: -14 }, { opacity: 0.55, y: 0, duration: 0.35, ease: "power2.out" }, 0.05);
+        tl.to("#chain-path", { strokeDashoffset: 0, duration: 0.7, ease: "power2.out" }, 0.2);
+        tl.fromTo(".node", { scale: 0 }, { scale: 1, duration: 0.28, ease: "power2.out", stagger: 0.05 }, 0.5);
+
+        // Contrôle TVA d'abord : mauvais taux barré, bon taux retenu.
+        tl.fromTo("#tva-check", { opacity: 0, y: -10 }, { opacity: 1, y: 0, duration: 0.4, ease: "power2.out" }, 1.5);
+        tl.fromTo("#caption", { opacity: 0, y: 10 }, { opacity: 1, y: 0, duration: 0.4, ease: "power2.out" }, 2.2);
+        tl.to("#chip-bad", { opacity: 0.35, scale: 0.94, duration: 0.35, ease: "power2.out" }, 3.1);
+        tl.to("#caption", { opacity: 0, duration: 0.35, ease: "power2.in" }, 4.3);
+
+        for (let i = 0; i < pts.length; i++) {
+          const t = NODE_START + i * NODE_STEP;
+          tl.to(`#node-${i + 1}`, { backgroundColor: BLUE, borderColor: BLUE, color: CREAM, duration: 0.32, ease: "power2.out" }, t);
+          tl.to(`#node-${i + 1}`, { scale: 1.05, duration: 0.15, ease: "power2.out", yoyo: true, repeat: 1 }, t);
+
+          if (i < pts.length - 1) {
+            const [x0, y0] = pts[i];
+            const [x1, y1] = pts[i + 1];
+            tl.set("#dot, #dot-halo", { attr: { cx: x0, cy: y0 }, opacity: 1 }, t + 0.1);
+            tl.to("#dot, #dot-halo", { attr: { cx: x1, cy: y1 }, duration: NODE_STEP - 0.25, ease: "power1.inOut" }, t + 0.1);
+          } else {
+            tl.to("#dot, #dot-halo", { opacity: 0, duration: 0.25 }, t + 0.2);
+          }
+        }
+
+        window.__timelines["b08-scene3-cascade"] = tl;
+      </script>
+    </template>
+  </body>
+</html>

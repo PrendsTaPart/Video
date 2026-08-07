@@ -1,0 +1,166 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+  </head>
+  <body>
+    <template>
+      <style>
+        @font-face {
+          font-family: "Fredoka";
+          src: url("assets/vendor/fonts/Fredoka-Variable.woff2") format("woff2-variations");
+          font-weight: 300 700;
+          font-display: block;
+        }
+        #root {
+          position: absolute;
+          inset: 0;
+          background: #fcf9e6;
+          overflow: hidden;
+          font-family: "Inter", sans-serif;
+        }
+        .eyebrow {
+          position: absolute;
+          top: 62px;
+          left: 0;
+          right: 0;
+          text-align: center;
+          font-family: "Fredoka", sans-serif;
+          font-weight: 600;
+          font-size: 32px;
+          color: #0f1a23;
+          opacity: 0;
+        }
+        .row {
+          position: absolute;
+          left: 200px;
+          width: 1520px;
+          height: 210px;
+          background: #ffffff;
+          border: 3px solid #0f1a23;
+          border-radius: 24px;
+          padding: 0 48px;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          opacity: 0;
+          transform: scale(0.9);
+        }
+        #row-impayees { top: 172px; }
+        #row-devis { top: 424px; }
+        #row-masse { top: 676px; }
+
+        .row-left { display: flex; flex-direction: column; gap: 8px; }
+        .row-title {
+          font-family: "Fredoka", sans-serif;
+          font-weight: 700;
+          font-size: 34px;
+          color: #0f1a23;
+        }
+        .row-sub {
+          font-size: 24px;
+          color: #0f1a23;
+          opacity: 0.6;
+          max-width: 820px;
+        }
+        .amount {
+          font-family: "Fredoka", sans-serif;
+          font-weight: 700;
+          font-size: 60px;
+          color: #0f1a23;
+        }
+        .amount.warn { color: #ffa500; }
+        .right-stack {
+          display: flex;
+          flex-direction: column;
+          align-items: flex-end;
+          gap: 8px;
+        }
+        .right-note {
+          font-family: "Fredoka", sans-serif;
+          font-weight: 600;
+          font-size: 22px;
+          color: #0f1a23;
+          opacity: 0.55;
+        }
+        .ratio-track {
+          width: 520px;
+          height: 34px;
+          border-radius: 999px;
+          background: rgba(15, 26, 35, 0.12);
+          overflow: hidden;
+        }
+        .ratio-fill {
+          height: 100%;
+          width: 100%;
+          background: #007bff;
+          border-radius: 999px;
+          transform: scaleX(0);
+          transform-origin: left;
+        }
+        .ratio-value {
+          font-family: "Fredoka", sans-serif;
+          font-weight: 700;
+          font-size: 46px;
+          color: #007bff;
+        }
+      </style>
+
+      <div
+        id="root"
+        data-composition-id="b08-scene4-tableau-bord"
+        data-width="1920"
+        data-height="1080"
+        data-duration="14.14"
+      >
+        <div class="eyebrow" id="eyebrow">CE QUI SE JOUE VRAIMENT</div>
+
+        <div class="row" id="row-impayees">
+          <div class="row-left">
+            <div class="row-title">Factures fournisseurs impayées</div>
+            <div class="row-sub">7 factures, la plus ancienne à 46 jours</div>
+          </div>
+          <div class="amount" id="amount-impayees">8&nbsp;140&nbsp;€</div>
+        </div>
+
+        <div class="row" id="row-devis">
+          <div class="row-left">
+            <div class="row-title">Devis acceptés, jamais facturés</div>
+            <div class="row-sub">De l'argent laissé sur la table</div>
+          </div>
+          <div class="amount warn" id="amount-devis">2&nbsp;350&nbsp;€</div>
+        </div>
+
+        <div class="row" id="row-masse">
+          <div class="row-left">
+            <div class="row-title">Masse salariale / chiffre d'affaires</div>
+            <div class="ratio-track"><div class="ratio-fill" id="ratio-fill"></div></div>
+          </div>
+          <div class="right-stack">
+            <div class="ratio-value" id="ratio-value">34 %</div>
+            <div class="right-note">La ligne qui décide de la fin du mois</div>
+          </div>
+        </div>
+      </div>
+
+      <script>
+        window.__timelines = window.__timelines || {};
+        const tl = gsap.timeline({ paused: true });
+
+        tl.fromTo("#eyebrow", { opacity: 0, y: -14 }, { opacity: 0.55, y: 0, duration: 0.4, ease: "power2.out" }, 0.05);
+
+        tl.fromTo("#row-impayees", { opacity: 0, scale: 0.9 }, { opacity: 1, scale: 1, duration: 0.5, ease: "power2.out" }, 0.35);
+        tl.fromTo("#amount-impayees", { opacity: 0, x: 20 }, { opacity: 1, x: 0, duration: 0.4, ease: "power2.out" }, 0.95);
+
+        tl.fromTo("#row-devis", { opacity: 0, scale: 0.9 }, { opacity: 1, scale: 1, duration: 0.5, ease: "power2.out" }, 4.9);
+        tl.fromTo("#amount-devis", { opacity: 0, x: 20 }, { opacity: 1, x: 0, duration: 0.4, ease: "power2.out" }, 5.5);
+
+        tl.fromTo("#row-masse", { opacity: 0, scale: 0.9 }, { opacity: 1, scale: 1, duration: 0.5, ease: "power2.out" }, 9.4);
+        tl.fromTo("#ratio-fill", { scaleX: 0 }, { scaleX: 0.34, duration: 0.7, ease: "power2.out" }, 10.0);
+        tl.fromTo("#ratio-value", { opacity: 0, scale: 0.8 }, { opacity: 1, scale: 1, duration: 0.35, ease: "back.out(2)" }, 10.4);
+
+        window.__timelines["b08-scene4-tableau-bord"] = tl;
+      </script>
+    </template>
+  </body>
+</html>

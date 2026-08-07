@@ -1,0 +1,94 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+  </head>
+  <body>
+    <template>
+      <style>
+        @font-face {
+          font-family: "Fredoka";
+          src: url("assets/vendor/fonts/Fredoka-Variable.woff2") format("woff2-variations");
+          font-weight: 300 700;
+          font-display: block;
+        }
+        #root {
+          position: absolute;
+          inset: 0;
+          background: #fcf9e6;
+          overflow: hidden;
+          font-family: "Inter", sans-serif;
+        }
+        .eyebrow {
+          position: absolute;
+          top: 70px;
+          left: 0;
+          right: 0;
+          text-align: center;
+          font-family: "Fredoka", sans-serif;
+          font-weight: 600;
+          font-size: 34px;
+          color: #0f1a23;
+          opacity: 0;
+        }
+        .loop-node {
+          position: absolute;
+          width: 210px;
+          height: 92px;
+          margin-left: -105px;
+          margin-top: -46px;
+          border-radius: 46px;
+          background: #fcf9e6;
+          border: 3px solid #0f1a23;
+          opacity: 0.35;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          font-family: "Fredoka", sans-serif;
+          font-weight: 600;
+          font-size: 24px;
+          color: #0f1a23;
+        }
+      </style>
+
+      <div
+        id="root"
+        data-composition-id="b08-scene6-boucles"
+        data-width="1920"
+        data-height="1080"
+        data-duration="2.60"
+      >
+        <div class="eyebrow" id="eyebrow">LES SEPT AUTRES BOUCLES L'ALIMENTENT</div>
+
+        <svg width="1920" height="1080" style="position:absolute; inset:0;">
+          <circle cx="650" cy="540" r="260" fill="none" stroke="#0f1a23" stroke-opacity="0.2" stroke-width="4" />
+          <circle cx="1270" cy="540" r="260" fill="none" stroke="#0f1a23" stroke-opacity="0.2" stroke-width="4" />
+        </svg>
+
+        <div class="loop-node" id="n-config" style="left:583px; top:791px;">Configuration</div>
+        <div class="loop-node" id="n-equipe" style="left:399px; top:607px;">Équipe</div>
+        <div class="loop-node" id="n-stock" style="left:466px; top:356px;">StockVisionAI</div>
+        <div class="loop-node" id="n-haccp" style="left:717px; top:289px;">HACCP</div>
+        <div class="loop-node" id="n-ecom" style="left:1337px; top:791px;">E-commerce</div>
+        <div class="loop-node" id="n-comm" style="left:1521px; top:607px;">Communication</div>
+        <div class="loop-node" id="n-fidelite" style="left:1454px; top:356px;">Fidélité</div>
+        <div class="loop-node" id="n-compta" style="left:1203px; top:289px;">Comptabilité</div>
+      </div>
+
+      <script>
+        window.__timelines = window.__timelines || {};
+        const tl = gsap.timeline({ paused: true });
+
+        tl.fromTo("#eyebrow", { opacity: 0 }, { opacity: 0.55, duration: 0.3, ease: "power2.out" }, 0.02);
+
+        const all = ["#n-config", "#n-equipe", "#n-stock", "#n-haccp", "#n-ecom", "#n-comm", "#n-fidelite", "#n-compta"];
+        tl.to(all, { backgroundColor: "#147aff", borderColor: "#147aff", color: "#fcf9e6", opacity: 1, duration: 0.25, ease: "power2.out" }, 0.15);
+
+        const settle = ["#n-config", "#n-equipe", "#n-stock", "#n-haccp", "#n-ecom", "#n-comm", "#n-fidelite"];
+        tl.to(settle, { backgroundColor: "#fcf9e6", borderColor: "#0f1a23", color: "#0f1a23", opacity: 0.35, duration: 0.3, ease: "power2.out" }, 1.0);
+
+        window.__timelines["b08-scene6-boucles"] = tl;
+      </script>
+    </template>
+  </body>
+</html>

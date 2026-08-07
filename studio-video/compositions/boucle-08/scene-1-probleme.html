@@ -1,0 +1,159 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+  </head>
+  <body>
+    <template>
+      <style>
+        @font-face {
+          font-family: "Fredoka";
+          src: url("assets/vendor/fonts/Fredoka-Variable.woff2") format("woff2-variations");
+          font-weight: 300 700;
+          font-display: block;
+        }
+        #root {
+          position: absolute;
+          inset: 0;
+          background: #fcf9e6;
+          overflow: hidden;
+          font-family: "Inter", sans-serif;
+        }
+        .eyebrow {
+          position: absolute;
+          top: 84px;
+          left: 0;
+          right: 0;
+          text-align: center;
+          font-family: "Fredoka", sans-serif;
+          font-weight: 600;
+          font-size: 34px;
+          color: #0f1a23;
+          opacity: 0;
+        }
+        .month {
+          position: absolute;
+          top: 280px;
+          width: 620px;
+          height: 340px;
+          border-radius: 26px;
+          border: 3px solid #0f1a23;
+          background: #ffffff;
+          padding: 26px 30px;
+          opacity: 0;
+          transform: scale(0.9);
+        }
+        #month-now { left: 180px; }
+        #month-next { right: 180px; }
+        .month-name {
+          font-family: "Fredoka", sans-serif;
+          font-weight: 700;
+          font-size: 34px;
+          color: #0f1a23;
+          margin-bottom: 20px;
+        }
+        .grid {
+          display: grid;
+          grid-template-columns: repeat(7, 1fr);
+          gap: 10px;
+        }
+        .day {
+          height: 38px;
+          border-radius: 8px;
+          background: rgba(15, 26, 35, 0.1);
+        }
+        .day.marked { background: #ffa500; }
+        .arrow-lag {
+          position: absolute;
+          left: 50%;
+          top: 430px;
+          transform: translateX(-50%) scale(0);
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          gap: 12px;
+        }
+        .arrow-glyph {
+          font-family: "Fredoka", sans-serif;
+          font-weight: 700;
+          font-size: 56px;
+          color: #ffa500;
+        }
+        .lag-label {
+          font-family: "Fredoka", sans-serif;
+          font-weight: 700;
+          font-size: 26px;
+          color: #0f1a23;
+          background: #ffa500;
+          padding: 10px 22px;
+          border-radius: 12px;
+          white-space: nowrap;
+        }
+        .conclusion {
+          position: absolute;
+          left: 0;
+          right: 0;
+          bottom: 130px;
+          text-align: center;
+          font-family: "Fredoka", sans-serif;
+          font-weight: 700;
+          font-size: 48px;
+          color: #0f1a23;
+          opacity: 0;
+        }
+        .conclusion b { color: #ffa500; }
+      </style>
+
+      <div
+        id="root"
+        data-composition-id="b08-scene1-probleme"
+        data-width="1920"
+        data-height="1080"
+        data-duration="8.13"
+      >
+        <div class="eyebrow" id="eyebrow">LE DÉCALAGE COMPTABLE</div>
+
+        <div class="month" id="month-now">
+          <div class="month-name">Mois écoulé</div>
+          <div class="grid" id="grid-now"></div>
+        </div>
+
+        <div class="arrow-lag" id="arrow-lag">
+          <div class="arrow-glyph">→</div>
+          <div class="lag-label">+ 15 jours</div>
+        </div>
+
+        <div class="month" id="month-next">
+          <div class="month-name">Vous recevez les chiffres</div>
+          <div class="grid" id="grid-next"></div>
+        </div>
+
+        <div class="conclusion" id="conclusion">Vous ne pilotez plus. <b>Vous constatez.</b></div>
+      </div>
+
+      <script>
+        window.__timelines = window.__timelines || {};
+        const tl = gsap.timeline({ paused: true });
+
+        const gridNow = document.getElementById("grid-now");
+        const gridNext = document.getElementById("grid-next");
+        for (let i = 0; i < 28; i++) {
+          const a = document.createElement("div");
+          a.className = "day";
+          gridNow.appendChild(a);
+          const b = document.createElement("div");
+          b.className = i === 14 ? "day marked" : "day";
+          gridNext.appendChild(b);
+        }
+
+        tl.fromTo("#eyebrow", { opacity: 0, y: -14 }, { opacity: 0.55, y: 0, duration: 0.4, ease: "power2.out" }, 0.05);
+        tl.fromTo("#month-now", { opacity: 0, scale: 0.9 }, { opacity: 1, scale: 1, duration: 0.5, ease: "power2.out" }, 0.3);
+        tl.fromTo("#arrow-lag", { scale: 0 }, { scale: 1, duration: 0.4, ease: "back.out(2)" }, 1.0);
+        tl.fromTo("#month-next", { opacity: 0, scale: 0.9 }, { opacity: 1, scale: 1, duration: 0.5, ease: "power2.out" }, 1.3);
+        tl.fromTo("#conclusion", { opacity: 0, y: 16 }, { opacity: 1, y: 0, duration: 0.5, ease: "power2.out" }, 2.5);
+
+        window.__timelines["b08-scene1-probleme"] = tl;
+      </script>
+    </template>
+  </body>
+</html>
