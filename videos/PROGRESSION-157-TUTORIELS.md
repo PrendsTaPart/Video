@@ -12,6 +12,13 @@ les occurrences de `moduleSlug: "<slug>"` dans `tutorials.ts` (via
 
 **71 / 157 publiés (45 %).**
 
+**2026-08-07** : 3e et dernière vidéo du module `predibot` produite —
+« Piocher dans la marketplace de prompts » (`videos/foodeatup-predibot-marketplace-tuto/`,
+commit `1063fac`, branche `claude/foodeatup-video-tutorials-yixs14`). Montage terminé et
+vérifié, **pas encore publiée sur Lovable/RapidoCMS/LinkedIn** (en attente de validation
+de Michael, voir `LOVABLE-FOODEATUP-DOCS.md`) — le compteur `predibot` ci-dessous reste à
+2/3 jusqu'à validation + envoi du prompt Lovable.
+
 | moduleSlug | Nom | Publiés | Attendus | Reste |
 |---|---|---:|---:|---:|
 | `equipe-planning` | Équipe, Planning & RH | 19 | 20 | 1 |

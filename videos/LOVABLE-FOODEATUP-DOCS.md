@@ -445,3 +445,30 @@ d'ajouter une entrée, pour ne pas créer de doublon (vérifié pour celle-ci).
 > tutoriel n'existe pas encore, plutôt que de se fier à ce tableau seul.
 | 11 | HACCP | Relevé de température des équipements | `relever-une-temperature-equipement` | **oui, 3 prompts** — `add_temperature`. Vidéo produite à partir des 3 intrants fournis (carte intro, carte outro, screen recording HACCP > Températures : Frigo 5 6°C→9°C, non-conformité auto-détectée vs seuil 4°C). Fiche Lovable préexistante (plus riche, 8 étapes + 3 claudePrompts) mise à jour avec les vraies URLs vidéo/vignette + durée 38s ; premier `claudePrompt` réaligné sur le texte affiché à l'écran dans la vidéo. Validée et publiée le 2026-08-04 (RapidoCMS + LinkedIn 2026-09-09 16h — rotation pleine jusque-là + Lovable) |
 | 11 | HACCP | Traçabilité complète (sélection produit, lot, DLC, remarques) | `creer-une-tracabilite-complete` | **oui** — `create_haccp_tracabilite` (`type="complete"`). Validée par Michael le 2026-08-04 (`videos/foodeatup-tracabilite-complete-tuto/` — dossier renommé lors de la fusion des branches le 2026-08-04, collision avec un autre tutoriel `foodeatup-tracabilite-tuto` déjà présent : « Historique de la production et traçabilité » ; 52,2 s, voix Adam FR). Publiée : RapidoCMS (`foodeatup-tracabilite-tuto-v1` / `foodeatup-tracabilite-tuto-thumbnail`) + Lovable (`src/data/tutorials.ts`, commit `82b5ca2`, juste après `creer-une-tracabilite-simplifiee`). **LinkedIn pas encore programmé** — planning du compte FoodEatUp déjà rempli jusqu'au 2026-08-25 par ailleurs (voir `SUIVI-157-TUTORIELS.md`, risque de collision de créneau constaté). |
+| — | PrediBot (Agent IA Directeur) | 02 - Piocher dans la marketplace de prompts | `piocher-dans-la-marketplace-de-prompts` | **PAS ENCORE PUBLIÉE — en attente de validation de Michael (règle du 2026-08-02, voir plus haut).** Complète le module `predibot` (3/3). `claudePrompt` : `create_supplier`, prompt identique à celui affiché dans la vidéo (carte marketplace « Crée un nouveau fournisseur »). Pas de séquence Claude synthétique en fin de vidéo : le rush montre déjà le round-trip marketplace → Claude → FoodEatUp en entier (voir `videos/foodeatup-predibot-marketplace-tuto/SCRIPT.md`). Montage 39,68 s, peak -7,15 dBFS, voix Adam FR. Vidéo + vignette livrées à Michael via `SendUserFile` le 2026-08-07. Poussé sur `claude/foodeatup-video-tutorials-yixs14` (commit `1063fac`). **Dès validation** : uploader `out/foodeatup-predibot-marketplace-tuto-v1.mp4` + `out/thumbnail-youtube.jpg` sur RapidoCMS, puis envoyer le prompt Lovable ci-dessous. |
+
+### Prompt Lovable prêt à envoyer (dès validation de Michael)
+
+```ts
+{
+  slug: "piocher-dans-la-marketplace-de-prompts",
+  title: "Piocher dans la marketplace de prompts",
+  moduleSlug: "predibot",
+  subcategory: "02 Piocher dans la Marketplace de prompts",
+  videoUrl: "[URL S3 RapidoCMS après upload]",
+  thumbnailUrl: "[URL S3 RapidoCMS après upload]",
+  durationSeconds: 40,
+  howItWorks: [
+    "Ouvrez la marketplace de prompts FoodEatUp (182 prompts, triés par catégorie : Stock & Appro, Carte & Recettes, Commandes, Réservations, Finance, RH, Production, HACCP, Système, Orchestration).",
+    "Trouvez le prompt qu'il vous faut, par exemple « Crée un nouveau fournisseur », et cliquez sur Tester en live.",
+    "Le prompt s'ouvre directement dans Claude, déjà rempli avec l'identifiant de votre établissement.",
+    "Répondez en une seule phrase avec les informations utiles (nom, type de produits, coordonnées...) : Claude structure le reste.",
+    "Envoyez votre message : le fournisseur est créé en quelques secondes.",
+    "Retournez sur FoodEatUp : la nouvelle fiche apparaît aussitôt dans votre liste."
+  ],
+  whatItsFor: "Utilisez la marketplace de prompts pour piloter FoodEatUp directement depuis Claude, sans naviguer dans les menus : chaque prompt est prêt à l'emploi et pré-rempli pour votre établissement.",
+  claudePrompt: "Pour mon établissement (ID [ID établissement]), crée un nouveau fournisseur pour un établissement. Demande-moi les informations nécessaires.",
+  chefTip: "Copiez plusieurs prompts d'affilée dans la même conversation Claude : il garde le contexte de votre établissement d'un message à l'autre, pas besoin de répéter l'ID à chaque fois."
+}
+```
+
