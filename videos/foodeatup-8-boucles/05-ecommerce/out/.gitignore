@@ -1,0 +1,3 @@
+# HyperFrames render scratch (transaction + work dirs) — final rendered files are committed, not this.
+work-*/
+*hf-transaction*/

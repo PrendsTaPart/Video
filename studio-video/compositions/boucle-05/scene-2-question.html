@@ -1,0 +1,81 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+  </head>
+  <body>
+    <template>
+      <style>
+        @font-face {
+          font-family: "Fredoka";
+          src: url("assets/vendor/fonts/Fredoka-Variable.woff2") format("woff2-variations");
+          font-weight: 300 700;
+          font-display: block;
+        }
+        #root {
+          position: absolute;
+          inset: 0;
+          background: #fcf9e6;
+          overflow: hidden;
+          font-family: "Inter", sans-serif;
+        }
+        .bubble {
+          position: absolute;
+          left: 200px;
+          top: 400px;
+          width: 1080px;
+          background: #ffffff;
+          border: 3px solid #0f1a23;
+          border-radius: 28px;
+          padding: 48px 56px;
+          transform: scale(0.85);
+          opacity: 0;
+        }
+        .bubble-label {
+          font-family: "Fredoka", sans-serif;
+          font-weight: 600;
+          font-size: 26px;
+          color: #007bff;
+          margin-bottom: 16px;
+        }
+        .bubble-text {
+          font-family: "Fredoka", sans-serif;
+          font-weight: 700;
+          font-size: 70px;
+          color: #0f1a23;
+        }
+        .mascot {
+          position: absolute;
+          left: 120px;
+          bottom: -30px;
+          width: 220px;
+          height: auto;
+          transform: scale(0);
+          transform-origin: bottom center;
+        }
+      </style>
+
+      <div
+        id="root"
+        data-composition-id="b05-scene2-question"
+        data-width="1920"
+        data-height="1080"
+        data-duration="1.78"
+      >
+        <img class="mascot" id="mascot" src="assets/brand/mascots/agent-laptop-homme.png" alt="" />
+        <div class="bubble" id="bubble">
+          <div class="bubble-label">À Jarvis</div>
+          <div class="bubble-text">« Mets le plat du jour en ligne. »</div>
+        </div>
+      </div>
+
+      <script>
+        window.__timelines = window.__timelines || {};
+        const tl = gsap.timeline({ paused: true });
+        tl.fromTo("#mascot", { scale: 0 }, { scale: 1, duration: 0.45, ease: "back.out(1.8)" }, 0.03);
+        tl.fromTo("#bubble", { scale: 0.85, opacity: 0, y: 20 }, { scale: 1, opacity: 1, y: 0, duration: 0.45, ease: "back.out(1.7)" }, 0.25);
+        window.__timelines["b05-scene2-question"] = tl;
+      </script>
+    </template>
+  </body>
+</html>

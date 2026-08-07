@@ -1,0 +1,147 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+  </head>
+  <body>
+    <template>
+      <style>
+        @font-face {
+          font-family: "Fredoka";
+          src: url("assets/vendor/fonts/Fredoka-Variable.woff2") format("woff2-variations");
+          font-weight: 300 700;
+          font-display: block;
+        }
+        #root {
+          position: absolute;
+          inset: 0;
+          background: #fcf9e6;
+          overflow: hidden;
+          font-family: "Inter", sans-serif;
+        }
+        .eyebrow {
+          position: absolute;
+          top: 90px;
+          left: 0;
+          right: 0;
+          text-align: center;
+          font-family: "Fredoka", sans-serif;
+          font-weight: 600;
+          font-size: 34px;
+          letter-spacing: 0.02em;
+          color: #0f1a23;
+          opacity: 0;
+        }
+        .panel {
+          position: absolute;
+          top: 260px;
+          width: 700px;
+          height: 560px;
+          background: #ffffff;
+          border: 3px solid #0f1a23;
+          border-radius: 28px;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          opacity: 0;
+          transform: scale(0.85);
+        }
+        #panel-platform {
+          left: 200px;
+        }
+        #panel-pdf {
+          right: 200px;
+        }
+        .commission-value {
+          font-family: "Fredoka", sans-serif;
+          font-weight: 700;
+          font-size: 140px;
+          color: #007bff;
+          line-height: 1;
+        }
+        .panel-label {
+          margin-top: 22px;
+          font-family: "Fredoka", sans-serif;
+          font-weight: 600;
+          font-size: 32px;
+          color: #0f1a23;
+          text-align: center;
+          padding: 0 50px;
+        }
+        .pdf-icon {
+          width: 180px;
+          height: 220px;
+          border: 4px solid #0f1a23;
+          border-radius: 12px;
+          position: relative;
+          opacity: 0.55;
+        }
+        .pdf-icon::before {
+          content: "";
+          position: absolute;
+          left: 20px;
+          right: 20px;
+          top: 40px;
+          height: 12px;
+          background: #0f1a23;
+          opacity: 0.3;
+        }
+        .pdf-icon::after {
+          content: "";
+          position: absolute;
+          left: 20px;
+          right: 20px;
+          top: 70px;
+          height: 12px;
+          background: #0f1a23;
+          opacity: 0.3;
+          box-shadow: 0 30px 0 rgba(15,26,35,0.3), 0 60px 0 rgba(15,26,35,0.3);
+        }
+        .broken-tag {
+          margin-top: -30px;
+          background: #0f1a23;
+          color: #fcf9e6;
+          font-family: "Fredoka", sans-serif;
+          font-weight: 700;
+          font-size: 24px;
+          padding: 8px 20px;
+          border-radius: 12px;
+          transform: scale(0);
+        }
+      </style>
+
+      <div
+        id="root"
+        data-composition-id="b05-scene1-probleme"
+        data-width="1920"
+        data-height="1080"
+        data-duration="12.88"
+      >
+        <div class="eyebrow" id="eyebrow">19H · UN CLIENT VOUS CHERCHE</div>
+
+        <div class="panel" id="panel-platform">
+          <div class="commission-value">−30%</div>
+          <div class="panel-label">de commission sur chaque commande de plateforme</div>
+        </div>
+
+        <div class="panel" id="panel-pdf">
+          <div class="pdf-icon"></div>
+          <div class="broken-tag" id="broken-tag">menu.pdf · 2023</div>
+        </div>
+      </div>
+
+      <script>
+        window.__timelines = window.__timelines || {};
+        const tl = gsap.timeline({ paused: true });
+
+        tl.fromTo("#eyebrow", { opacity: 0, y: -14 }, { opacity: 0.55, y: 0, duration: 0.45, ease: "power2.out" }, 0.05);
+        tl.fromTo("#panel-platform", { opacity: 0, scale: 0.85 }, { opacity: 1, scale: 1, duration: 0.55, ease: "power2.out" }, 0.3);
+        tl.fromTo("#panel-pdf", { opacity: 0, scale: 0.85 }, { opacity: 1, scale: 1, duration: 0.55, ease: "power2.out" }, 0.5);
+        tl.fromTo("#broken-tag", { scale: 0 }, { scale: 1, duration: 0.4, ease: "back.out(2)" }, 1.1);
+
+        window.__timelines["b05-scene1-probleme"] = tl;
+      </script>
+    </template>
+  </body>
+</html>
