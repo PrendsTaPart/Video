@@ -10,14 +10,14 @@ les occurrences de `moduleSlug: "<slug>"` dans `tutorials.ts` (via
 
 ## État au 2026-08-04
 
-**71 / 157 publiés (45 %).**
+**72 / 157 publiés (46 %)** — mis à jour le 2026-08-07 avec la publication de
+`piocher-dans-la-marketplace-de-prompts` (module `predibot`, désormais complet).
 
-**2026-08-07** : 3e et dernière vidéo du module `predibot` produite —
+**2026-08-07** : 3e et dernière vidéo du module `predibot` produite et **publiée** —
 « Piocher dans la marketplace de prompts » (`videos/foodeatup-predibot-marketplace-tuto/`,
-commit `1063fac`, branche `claude/foodeatup-video-tutorials-yixs14`). Montage terminé et
-vérifié, **pas encore publiée sur Lovable/RapidoCMS/LinkedIn** (en attente de validation
-de Michael, voir `LOVABLE-FOODEATUP-DOCS.md`) — le compteur `predibot` ci-dessous reste à
-2/3 jusqu'à validation + envoi du prompt Lovable.
+commit `1063fac`, branche `claude/foodeatup-video-tutorials-yixs14`). Validée par Michael,
+publiée sur RapidoCMS + Lovable (commit `ebc815c`) + LinkedIn FoodEatUp (programmé
+2026-08-21 07h00). **Module `predibot` complet : 3/3.**
 
 | moduleSlug | Nom | Publiés | Attendus | Reste |
 |---|---|---:|---:|---:|
@@ -26,7 +26,7 @@ de Michael, voir `LOVABLE-FOODEATUP-DOCS.md`) — le compteur `predibot` ci-dess
 | `configuration` | Configuration Boutique | 15 | 14 | ✅ dépassé (+1) |
 | `comptabilite` | Comptabilité & Achats | 10 | 10 | ✅ complet |
 | `stockvision-ai` | StockVision AI | 7 | 20 | 13 |
-| `predibot` | PrediBot (Agent IA Directeur) | 2 | 3 | 1 |
+| `predibot` | PrediBot (Agent IA Directeur) | 3 | 3 | ✅ complet |
 | `hubrise-livraisons` | HubRise & Livraisons | 1 | 4 | 3 |
 | `site-web-vitrine` | Site Web & Vitrine | 0 | 8 | 8 |
 | `caisse-pos` | Caisse POS & Matériel | 0 | 7 | 7 |
