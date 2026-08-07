@@ -34,5 +34,50 @@
     "thumbnailUrl": "",
     "durationSeconds": 73,
     "outilsMcp": 11
+  },
+  {
+    "slug": "boucle-04-haccp",
+    "order": 4,
+    "title": "HACCP : votre dossier de conformité se construit chaque jour",
+    "videoUrl": "",
+    "thumbnailUrl": "",
+    "durationSeconds": 74,
+    "outilsMcp": 16
+  },
+  {
+    "slug": "boucle-05-ecommerce",
+    "order": 5,
+    "title": "E-commerce : votre carte en ligne, sans commission",
+    "videoUrl": "",
+    "thumbnailUrl": "",
+    "durationSeconds": 75,
+    "outilsMcp": 39
+  },
+  {
+    "slug": "boucle-06-communication",
+    "order": 6,
+    "title": "Communication : ce que vous savez, vos clients le savent le matin même",
+    "videoUrl": "",
+    "thumbnailUrl": "",
+    "durationSeconds": 72,
+    "outilsMcp": 15
+  },
+  {
+    "slug": "boucle-07-fidelite",
+    "order": 7,
+    "title": "Fidélité et marketing : chaque client servi devient une relation réactivable",
+    "videoUrl": "",
+    "thumbnailUrl": "",
+    "durationSeconds": 71,
+    "outilsMcp": 19
+  },
+  {
+    "slug": "boucle-08-comptabilite",
+    "order": 8,
+    "title": "Comptabilité : le chiffre du jour, avant d'éteindre la lumière",
+    "videoUrl": "",
+    "thumbnailUrl": "",
+    "durationSeconds": 68,
+    "outilsMcp": 17
   }
 ]
