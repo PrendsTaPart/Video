@@ -1,0 +1,173 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+  </head>
+  <body>
+    <template>
+      <style>
+        @font-face {
+          font-family: "Fredoka";
+          src: url("assets/vendor/fonts/Fredoka-Variable.woff2") format("woff2-variations");
+          font-weight: 300 700;
+          font-display: block;
+        }
+        #root {
+          position: absolute;
+          inset: 0;
+          background: #fcf9e6;
+          overflow: hidden;
+          font-family: "Inter", sans-serif;
+        }
+        .eyebrow {
+          position: absolute;
+          top: 56px;
+          left: 0;
+          right: 0;
+          text-align: center;
+          font-family: "Fredoka", sans-serif;
+          font-weight: 600;
+          font-size: 34px;
+          letter-spacing: 0.02em;
+          color: #0f1a23;
+          opacity: 0;
+        }
+        #node-layer {
+          position: absolute;
+          inset: 0;
+        }
+        .node {
+          position: absolute;
+          width: 380px;
+          height: 130px;
+          border-radius: 20px;
+          background: #ffffff;
+          border: 3px solid #0f1a23;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          text-align: center;
+          padding: 0 20px;
+          font-family: "Fredoka", sans-serif;
+          font-weight: 600;
+          font-size: 27px;
+          color: #0f1a23;
+          transform: scale(0);
+        }
+        .charte-check {
+          position: absolute;
+          left: 550px;
+          top: 130px;
+          display: flex;
+          gap: 16px;
+          opacity: 0;
+        }
+        .swatch {
+          width: 74px;
+          height: 74px;
+          border-radius: 14px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+        .swatch.reject {
+          background: #fcf9e6;
+          border: 3px dashed #0f1a23;
+          opacity: 0.5;
+        }
+        .swatch.approve {
+          background: #007bff;
+        }
+        .swatch svg {
+          width: 34px;
+          height: 34px;
+          fill: #fcf9e6;
+        }
+        .swatch.reject svg {
+          fill: #0f1a23;
+        }
+      </style>
+
+      <div
+        id="root"
+        data-composition-id="b06-scene3-cascade"
+        data-width="1920"
+        data-height="1080"
+        data-duration="12.12"
+      >
+        <div class="eyebrow" id="eyebrow">CE QUI SE PASSE AVANT L'ENVOI</div>
+
+        <svg id="path-svg" width="1920" height="1080" style="position:absolute; inset:0;">
+          <polyline
+            id="chain-path"
+            points="300,280 740,280 1180,280 1620,280 1620,610 1180,610 740,610"
+            fill="none"
+            stroke="#0f1a23"
+            stroke-opacity="0.18"
+            stroke-width="4"
+            stroke-dasharray="1560"
+            stroke-dashoffset="1560"
+          />
+          <circle id="dot" cx="300" cy="280" r="13" fill="#007bff" opacity="0" />
+          <circle id="dot-halo" cx="300" cy="280" r="22" fill="#007bff" opacity="0" fill-opacity="0.18" />
+        </svg>
+
+        <div id="node-layer">
+          <div class="node" id="node-1" style="left:110px; top:215px;">Événement ou intention</div>
+          <div class="node" id="node-2" style="left:550px; top:215px;">Choix du canal</div>
+          <div class="node" id="node-3" style="left:990px; top:215px;">Création du contenu</div>
+          <div class="node" id="node-4" style="left:1430px; top:215px;">Contrôle de charte</div>
+          <div class="node" id="node-5" style="left:1430px; top:545px;">Diffusion</div>
+          <div class="node" id="node-6" style="left:990px; top:545px;">Mesure</div>
+          <div class="node" id="node-7" style="left:550px; top:545px;">Apprentissage</div>
+        </div>
+
+        <div class="charte-check" id="charte-check">
+          <div class="swatch reject"><svg viewBox="0 0 24 24"><path d="M18.3 5.71L12 12.01l-6.3-6.3-1.4 1.4 6.3 6.3-6.3 6.3 1.4 1.4 6.3-6.3 6.3 6.3 1.4-1.4-6.3-6.3 6.3-6.3z"/></svg></div>
+          <div class="swatch approve"><svg viewBox="0 0 24 24"><path d="M9 16.2l-3.5-3.5L4 14.2l5 5 11-11-1.5-1.5z"/></svg></div>
+        </div>
+      </div>
+
+      <script>
+        window.__timelines = window.__timelines || {};
+        const tl = gsap.timeline({ paused: true });
+
+        const pts = [
+          [300, 280], [740, 280], [1180, 280], [1620, 280],
+          [1620, 610], [1180, 610], [740, 610]
+        ];
+        const NODE_START = 0.95;
+        const NODE_STEP = 1.6;
+        const BLUE = "#007bff";
+        const CREAM = "#fcf9e6";
+
+        tl.fromTo("#eyebrow", { opacity: 0, y: -14 }, { opacity: 0.55, y: 0, duration: 0.35, ease: "power2.out" }, 0.05);
+        tl.to("#chain-path", { strokeDashoffset: 0, duration: 0.65, ease: "power2.out" }, 0.2);
+        tl.fromTo(".node", { scale: 0 }, { scale: 1, duration: 0.28, ease: "power2.out", stagger: 0.04 }, 0.55);
+
+        for (let i = 0; i < pts.length; i++) {
+          const t = NODE_START + i * NODE_STEP;
+          tl.to(`#node-${i + 1}`, { backgroundColor: BLUE, borderColor: BLUE, color: CREAM, duration: 0.32, ease: "power2.out" }, t);
+          tl.to(`#node-${i + 1}`, { scale: 1.05, duration: 0.15, ease: "power2.out", yoyo: true, repeat: 1 }, t);
+
+          if (i < pts.length - 1) {
+            const [x0, y0] = pts[i];
+            const [x1, y1] = pts[i + 1];
+            tl.set("#dot, #dot-halo", { attr: { cx: x0, cy: y0 }, opacity: 1 }, t + 0.1);
+            tl.to("#dot, #dot-halo", { attr: { cx: x1, cy: y1 }, duration: NODE_STEP - 0.25, ease: "power1.inOut" }, t + 0.1);
+          } else {
+            tl.to("#dot, #dot-halo", { opacity: 0, duration: 0.25 }, t + 0.2);
+          }
+
+          // Node 4 = "Contrôle de charte": show the reject/approve swatches briefly.
+          if (i === 3) {
+            tl.fromTo("#charte-check", { opacity: 0, y: 10 }, { opacity: 1, y: 0, duration: 0.3, ease: "power2.out" }, t + 0.3);
+            tl.to("#charte-check", { opacity: 0, duration: 0.3, ease: "power2.in" }, t + NODE_STEP - 0.15);
+          }
+        }
+
+        window.__timelines["b06-scene3-cascade"] = tl;
+      </script>
+    </template>
+  </body>
+</html>

@@ -1,0 +1,166 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+  </head>
+  <body>
+    <template>
+      <style>
+        @font-face {
+          font-family: "Fredoka";
+          src: url("assets/vendor/fonts/Fredoka-Variable.woff2") format("woff2-variations");
+          font-weight: 300 700;
+          font-display: block;
+        }
+        #root {
+          position: absolute;
+          inset: 0;
+          background: #fcf9e6;
+          overflow: hidden;
+          font-family: "Inter", sans-serif;
+        }
+        .eyebrow {
+          position: absolute;
+          top: 80px;
+          left: 0;
+          right: 0;
+          text-align: center;
+          font-family: "Fredoka", sans-serif;
+          font-weight: 600;
+          font-size: 34px;
+          color: #0f1a23;
+          opacity: 0;
+        }
+        .card {
+          position: absolute;
+          left: 260px;
+          top: 220px;
+          width: 1400px;
+          background: #ffffff;
+          border: 3px dashed #0f1a23;
+          border-radius: 24px;
+          padding: 40px 56px;
+          opacity: 0;
+          transform: scale(0.9);
+        }
+        .card-top {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+        }
+        .segment-name {
+          font-family: "Fredoka", sans-serif;
+          font-weight: 700;
+          font-size: 40px;
+          color: #0f1a23;
+          opacity: 0.6;
+        }
+        .segment-count {
+          font-family: "Fredoka", sans-serif;
+          font-weight: 700;
+          font-size: 56px;
+          color: #0f1a23;
+          opacity: 0.6;
+        }
+        .refuse-tag {
+          margin-top: 22px;
+          display: inline-block;
+          background: #0f1a23;
+          color: #fcf9e6;
+          font-family: "Fredoka", sans-serif;
+          font-weight: 700;
+          font-size: 28px;
+          padding: 10px 24px;
+          border-radius: 12px;
+        }
+        .reason {
+          margin-top: 22px;
+          font-size: 27px;
+          color: #0f1a23;
+          opacity: 0.7;
+          max-width: 1100px;
+        }
+
+        .card2 {
+          position: absolute;
+          left: 260px;
+          top: 620px;
+          width: 1400px;
+          background: #007bff;
+          border: 3px solid #007bff;
+          border-radius: 24px;
+          padding: 40px 56px;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          opacity: 0;
+          transform: scale(0.9);
+        }
+        .segment-name2 {
+          font-family: "Fredoka", sans-serif;
+          font-weight: 700;
+          font-size: 44px;
+          color: #fcf9e6;
+        }
+        .segment-count2 {
+          font-family: "Fredoka", sans-serif;
+          font-weight: 700;
+          font-size: 60px;
+          color: #fcf9e6;
+        }
+        .approve-tag {
+          position: absolute;
+          right: 56px;
+          top: -26px;
+          background: #fcf9e6;
+          color: #0f1a23;
+          font-family: "Fredoka", sans-serif;
+          font-weight: 700;
+          font-size: 26px;
+          padding: 10px 22px;
+          border-radius: 12px;
+          transform: scale(0);
+        }
+      </style>
+
+      <div
+        id="root"
+        data-composition-id="b06-scene4-refus"
+        data-width="1920"
+        data-height="1080"
+        data-duration="13.31"
+      >
+        <div class="eyebrow" id="eyebrow">ELLE COMPTE AVANT DE PROPOSER</div>
+
+        <div class="card" id="card1">
+          <div class="card-top">
+            <div class="segment-name">Anniversaires ce mois</div>
+            <div class="segment-count">6 contacts</div>
+          </div>
+          <div class="refuse-tag" id="refuse-tag">Campagne non proposée</div>
+          <div class="reason">Base sous 10 contacts — aucun signal exploitable.</div>
+        </div>
+
+        <div class="card2" id="card2">
+          <div class="approve-tag" id="approve-tag">Campagne proposée</div>
+          <div class="segment-name2">Amateurs de poisson</div>
+          <div class="segment-count2">340 contacts</div>
+        </div>
+      </div>
+
+      <script>
+        window.__timelines = window.__timelines || {};
+        const tl = gsap.timeline({ paused: true });
+
+        tl.fromTo("#eyebrow", { opacity: 0, y: -14 }, { opacity: 0.55, y: 0, duration: 0.4, ease: "power2.out" }, 0.05);
+        tl.fromTo("#card1", { opacity: 0, scale: 0.9 }, { opacity: 1, scale: 1, duration: 0.5, ease: "power2.out" }, 0.35);
+        tl.fromTo("#refuse-tag", { opacity: 0, y: 8 }, { opacity: 1, y: 0, duration: 0.35, ease: "power2.out" }, 1.4);
+
+        tl.fromTo("#card2", { opacity: 0, scale: 0.9 }, { opacity: 1, scale: 1, duration: 0.5, ease: "back.out(1.6)" }, 6.4);
+        tl.fromTo("#approve-tag", { scale: 0 }, { scale: 1, duration: 0.35, ease: "back.out(2.2)" }, 6.9);
+
+        window.__timelines["b06-scene4-refus"] = tl;
+      </script>
+    </template>
+  </body>
+</html>
