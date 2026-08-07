@@ -1,0 +1,38 @@
+[
+  {
+    "slug": "boucle-00-principe",
+    "order": 0,
+    "title": "Le principe : une boucle se referme",
+    "videoUrl": "",
+    "thumbnailUrl": "",
+    "durationSeconds": 44,
+    "outilsMcp": 177
+  },
+  {
+    "slug": "boucle-01-configuration-boutique",
+    "order": 1,
+    "title": "Configuration boutique : un prix change, toutes vos marges se recalculent",
+    "videoUrl": "",
+    "thumbnailUrl": "",
+    "durationSeconds": 76,
+    "outilsMcp": 39
+  },
+  {
+    "slug": "boucle-02-equipe",
+    "order": 2,
+    "title": "Équipe : vos plannings tiennent compte de l'activité réelle",
+    "videoUrl": "",
+    "thumbnailUrl": "",
+    "durationSeconds": 72,
+    "outilsMcp": 21
+  },
+  {
+    "slug": "boucle-03-stockvision",
+    "order": 3,
+    "title": "StockVisionAI : vos ventes deviennent vos achats et votre production",
+    "videoUrl": "",
+    "thumbnailUrl": "",
+    "durationSeconds": 73,
+    "outilsMcp": 11
+  }
+]

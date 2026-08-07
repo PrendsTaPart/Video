@@ -49,7 +49,8 @@ python3 tools/prepare_assets.py     # une fois — détourage des personnages
 python3 tools/count_mcp_tools.py    # une fois — compteurs affichés au plan 3
 
 # 1. VO d'abord : c'est elle qui fixe la durée des plans, jamais l'inverse.
-#    Générée via le MCP ElevenLabs, déposée en NN-<slug>/assets/vo/pNN.mp3
+#    Générée via le MCP ElevenLabs, puis récupérée par :
+python3 tools/fetch_vo.py <<< '{"01-configuration-boutique": {"p01": "<url>"}}'
 
 # 2. Compositions, calées sur la durée réelle des mp3
 python3 tools/build_html.py --exiger-vo
@@ -58,15 +59,23 @@ python3 tools/check_palette.py
 # 3. Contrôle visuel avant de rendre 2 500 frames
 node capture.cjs --html 01-.../index.html --out work/qa --at 4,30,52,72
 
-# 4. Rendu
-node capture.cjs --html 01-.../index.html --out work/frames
-python3 build.py --slug boucle-01-configuration-boutique
+# 4. Rendu (capture + assemblage + nettoyage des frames)
+./render_all.sh boucle-01-configuration-boutique
+FORMAT=reel ./render_all.sh boucle-01-configuration-boutique
+
+# 5. Livrables Academy
+python3 tools/make_deliverables.py --vignettes
 ```
 
 `--exiger-vo` fait échouer le build si un mp3 manque : sans lui, `build_html.py`
-retombe sur une **estimation** de durée (14,2 caractères/seconde, débit d'Adam
+retombe sur une **estimation** de durée (17,1 caractères/seconde, débit d'Adam
 mesuré sur la série) — pratique pour maquetter, jamais acceptable pour un rendu
 final.
+
+Les liens rendus par le MCP ElevenLabs sont **signés et valables 15 minutes**.
+`fetch_vo.py` les passe tels quels : recomposer la query string, ne serait-ce
+que pour réordonner les paramètres, casse la signature et fait télécharger une
+erreur XML de 860 octets à la place du mp3.
 
 ## Décisions prises, et pourquoi
 
