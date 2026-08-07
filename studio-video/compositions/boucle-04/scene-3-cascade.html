@@ -1,0 +1,131 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+  </head>
+  <body>
+    <template>
+      <style>
+        @font-face {
+          font-family: "Fredoka";
+          src: url("assets/vendor/fonts/Fredoka-Variable.woff2") format("woff2-variations");
+          font-weight: 300 700;
+          font-display: block;
+        }
+        #root {
+          position: absolute;
+          inset: 0;
+          background: #fcf9e6;
+          overflow: hidden;
+          font-family: "Inter", sans-serif;
+        }
+        .eyebrow {
+          position: absolute;
+          top: 90px;
+          left: 0;
+          right: 0;
+          text-align: center;
+          font-family: "Fredoka", sans-serif;
+          font-weight: 600;
+          font-size: 34px;
+          letter-spacing: 0.02em;
+          color: #0f1a23;
+          opacity: 0;
+        }
+        #node-layer {
+          position: absolute;
+          inset: 0;
+        }
+        .node {
+          position: absolute;
+          width: 380px;
+          height: 140px;
+          border-radius: 20px;
+          background: #ffffff;
+          border: 3px solid #0f1a23;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          text-align: center;
+          padding: 0 20px;
+          font-family: "Fredoka", sans-serif;
+          font-weight: 600;
+          font-size: 27px;
+          color: #0f1a23;
+          transform: scale(0);
+        }
+      </style>
+
+      <div
+        id="root"
+        data-composition-id="b04-scene3-cascade"
+        data-width="1920"
+        data-height="1080"
+        data-duration="15.85"
+      >
+        <div class="eyebrow" id="eyebrow">CE QUI SE TRACE, CHAQUE JOUR</div>
+
+        <svg id="path-svg" width="1920" height="1080" style="position:absolute; inset:0;">
+          <polyline
+            id="chain-path"
+            points="300,300 740,300 1180,300 1620,300 1620,640 1180,640 740,640 300,640"
+            fill="none"
+            stroke="#0f1a23"
+            stroke-opacity="0.18"
+            stroke-width="4"
+            stroke-dasharray="1740"
+            stroke-dashoffset="1740"
+          />
+          <circle id="dot" cx="300" cy="300" r="13" fill="#007bff" opacity="0" />
+          <circle id="dot-halo" cx="300" cy="300" r="22" fill="#007bff" opacity="0" fill-opacity="0.18" />
+        </svg>
+
+        <div id="node-layer">
+          <div class="node" id="node-1" style="left:110px; top:230px;">Plan de maîtrise</div>
+          <div class="node" id="node-2" style="left:550px; top:230px;">Relevés de températures</div>
+          <div class="node" id="node-3" style="left:990px; top:230px;">Contrôles à réception</div>
+          <div class="node" id="node-4" style="left:1430px; top:230px;">Étiquetage DLC</div>
+          <div class="node" id="node-5" style="left:1430px; top:570px;">Checklists</div>
+          <div class="node" id="node-6" style="left:990px; top:570px;">Plan de nettoyage</div>
+          <div class="node" id="node-7" style="left:550px; top:570px;">Journal quotidien</div>
+          <div class="node" id="node-8" style="left:110px; top:570px;">Action corrective</div>
+        </div>
+      </div>
+
+      <script>
+        window.__timelines = window.__timelines || {};
+        const tl = gsap.timeline({ paused: true });
+
+        const pts = [
+          [300, 300], [740, 300], [1180, 300], [1620, 300],
+          [1620, 640], [1180, 640], [740, 640], [300, 640]
+        ];
+        const NODE_START = 1.3;
+        const NODE_STEP = 1.82;
+        const BLUE = "#007bff";
+        const CREAM = "#fcf9e6";
+
+        tl.fromTo("#eyebrow", { opacity: 0, y: -14 }, { opacity: 0.55, y: 0, duration: 0.4, ease: "power2.out" }, 0.05);
+        tl.to("#chain-path", { strokeDashoffset: 0, duration: 0.75, ease: "power2.out" }, 0.25);
+        tl.fromTo(".node", { scale: 0 }, { scale: 1, duration: 0.3, ease: "power2.out", stagger: 0.05 }, 0.85);
+
+        for (let i = 0; i < pts.length; i++) {
+          const t = NODE_START + i * NODE_STEP;
+          tl.to(`#node-${i + 1}`, { backgroundColor: BLUE, borderColor: BLUE, color: CREAM, duration: 0.35, ease: "power2.out" }, t);
+          tl.to(`#node-${i + 1}`, { scale: 1.05, duration: 0.16, ease: "power2.out", yoyo: true, repeat: 1 }, t);
+
+          if (i < pts.length - 1) {
+            const [x0, y0] = pts[i];
+            const [x1, y1] = pts[i + 1];
+            tl.set("#dot, #dot-halo", { attr: { cx: x0, cy: y0 }, opacity: 1 }, t + 0.12);
+            tl.to("#dot, #dot-halo", { attr: { cx: x1, cy: y1 }, duration: NODE_STEP - 0.3, ease: "power1.inOut" }, t + 0.12);
+          } else {
+            tl.to("#dot, #dot-halo", { opacity: 0, duration: 0.3 }, t + 0.25);
+          }
+        }
+
+        window.__timelines["b04-scene3-cascade"] = tl;
+      </script>
+    </template>
+  </body>
+</html>

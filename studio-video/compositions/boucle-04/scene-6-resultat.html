@@ -1,0 +1,96 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+  </head>
+  <body>
+    <template>
+      <style>
+        @font-face {
+          font-family: "Fredoka";
+          src: url("assets/vendor/fonts/Fredoka-Variable.woff2") format("woff2-variations");
+          font-weight: 300 700;
+          font-display: block;
+        }
+        #root {
+          position: absolute;
+          inset: 0;
+          background: #fcf9e6;
+          overflow: hidden;
+          font-family: "Inter", sans-serif;
+        }
+        .stat-card {
+          position: absolute;
+          top: 350px;
+          width: 780px;
+          height: 380px;
+          background: #ffffff;
+          border: 3px solid #0f1a23;
+          border-radius: 24px;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          opacity: 0;
+          transform: scale(0.9);
+        }
+        #stat-dossier {
+          left: 130px;
+        }
+        #stat-anomalie {
+          left: 1010px;
+        }
+        .stat-icon {
+          width: 84px;
+          height: 84px;
+          border-radius: 50%;
+          background: #007bff;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          margin-bottom: 22px;
+        }
+        .stat-icon svg {
+          width: 44px;
+          height: 44px;
+          fill: #fcf9e6;
+        }
+        .stat-label {
+          font-family: "Fredoka", sans-serif;
+          font-weight: 700;
+          font-size: 36px;
+          color: #0f1a23;
+          text-align: center;
+          padding: 0 50px;
+        }
+      </style>
+
+      <div
+        id="root"
+        data-composition-id="b04-scene6-resultat"
+        data-width="1920"
+        data-height="1080"
+        data-duration="3.33"
+      >
+        <div class="stat-card" id="stat-dossier">
+          <div class="stat-icon"><svg viewBox="0 0 24 24"><path d="M12 2l8 4v6c0 5-3.5 8.5-8 10-4.5-1.5-8-5-8-10V6l8-4zm-1 13l5-5-1.4-1.4L11 12.2l-2.6-2.6L7 11l4 4z"/></svg></div>
+          <div class="stat-label">Dossier horodaté, exportable en un clic</div>
+        </div>
+        <div class="stat-card" id="stat-anomalie">
+          <div class="stat-icon"><svg viewBox="0 0 24 24"><path d="M12 2l1.2 6.4L20 10l-6.8 1.6L12 18l-1.2-6.4L4 10l6.8-1.6z"/></svg></div>
+          <div class="stat-label">Anomalie détectée le jour même</div>
+        </div>
+      </div>
+
+      <script>
+        window.__timelines = window.__timelines || {};
+        const tl = gsap.timeline({ paused: true });
+
+        tl.fromTo("#stat-dossier", { opacity: 0, scale: 0.9, x: -20 }, { opacity: 1, scale: 1, x: 0, duration: 0.5, ease: "power2.out" }, 0.1);
+        tl.fromTo("#stat-anomalie", { opacity: 0, scale: 0.9, x: 20 }, { opacity: 1, scale: 1, x: 0, duration: 0.5, ease: "power2.out" }, 0.28);
+
+        window.__timelines["b04-scene6-resultat"] = tl;
+      </script>
+    </template>
+  </body>
+</html>

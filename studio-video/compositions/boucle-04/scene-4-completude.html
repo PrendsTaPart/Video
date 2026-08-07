@@ -1,0 +1,132 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+  </head>
+  <body>
+    <template>
+      <style>
+        @font-face {
+          font-family: "Fredoka";
+          src: url("assets/vendor/fonts/Fredoka-Variable.woff2") format("woff2-variations");
+          font-weight: 300 700;
+          font-display: block;
+        }
+        #root {
+          position: absolute;
+          inset: 0;
+          background: #fcf9e6;
+          overflow: hidden;
+          font-family: "Inter", sans-serif;
+        }
+        .eyebrow {
+          position: absolute;
+          top: 80px;
+          left: 0;
+          right: 0;
+          text-align: center;
+          font-family: "Fredoka", sans-serif;
+          font-weight: 600;
+          font-size: 34px;
+          color: #0f1a23;
+          opacity: 0;
+        }
+        .calendar {
+          position: absolute;
+          left: 220px;
+          top: 260px;
+          display: grid;
+          grid-template-columns: repeat(7, 80px);
+          grid-auto-rows: 80px;
+          gap: 12px;
+        }
+        .cell {
+          border-radius: 12px;
+          background: #007bff;
+          transform: scale(0);
+        }
+        .cell.missing {
+          background: transparent;
+          border: 3px dashed #0f1a23;
+          opacity: 0.55;
+        }
+        .score-panel {
+          position: absolute;
+          right: 220px;
+          top: 300px;
+          width: 620px;
+          opacity: 0;
+          transform: translateX(30px);
+        }
+        .score-value {
+          font-family: "Fredoka", sans-serif;
+          font-weight: 700;
+          font-size: 150px;
+          color: #007bff;
+          line-height: 1;
+        }
+        .score-label {
+          margin-top: 14px;
+          font-family: "Fredoka", sans-serif;
+          font-weight: 600;
+          font-size: 30px;
+          color: #0f1a23;
+        }
+        .rule-note {
+          margin-top: 44px;
+          border: 2px dashed #0f1a23;
+          border-radius: 16px;
+          padding: 24px 30px;
+          font-size: 27px;
+          color: #0f1a23;
+          opacity: 0.8;
+          line-height: 1.4;
+        }
+      </style>
+
+      <div
+        id="root"
+        data-composition-id="b04-scene4-completude"
+        data-width="1920"
+        data-height="1080"
+        data-duration="14.56"
+      >
+        <div class="eyebrow" id="eyebrow">CE QUE FOODEATUP COMPTE — LES TROUS</div>
+
+        <div class="calendar" id="calendar"></div>
+
+        <div class="score-panel" id="score-panel">
+          <div class="score-value">87 %</div>
+          <div class="score-label">4 jours sans relevé sur frigo 2</div>
+          <div class="rule-note">Un jour sans relevé est « non conforme » — pas « probablement fait ».</div>
+        </div>
+      </div>
+
+      <script>
+        window.__timelines = window.__timelines || {};
+        const tl = gsap.timeline({ paused: true });
+
+        // 28 cells (4 weeks), 4 missing scattered deterministically.
+        const missing = new Set([5, 12, 19, 24]);
+        const calendar = document.getElementById("calendar");
+        for (let i = 0; i < 28; i++) {
+          const cell = document.createElement("div");
+          cell.className = "cell" + (missing.has(i) ? " missing" : "");
+          cell.id = "cell-" + i;
+          calendar.appendChild(cell);
+        }
+
+        tl.fromTo("#eyebrow", { opacity: 0, y: -14 }, { opacity: 0.55, y: 0, duration: 0.4, ease: "power2.out" }, 0.05);
+        tl.fromTo(
+          ".cell",
+          { scale: 0 },
+          { scale: 1, duration: 0.28, ease: "power2.out", stagger: { each: 0.025, from: "start" } },
+          0.5
+        );
+        tl.fromTo("#score-panel", { opacity: 0, x: 30 }, { opacity: 1, x: 0, duration: 0.55, ease: "power2.out" }, 1.9);
+
+        window.__timelines["b04-scene4-completude"] = tl;
+      </script>
+    </template>
+  </body>
+</html>

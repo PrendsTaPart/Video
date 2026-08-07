@@ -1,0 +1,128 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+  </head>
+  <body>
+    <template>
+      <style>
+        @font-face {
+          font-family: "Fredoka";
+          src: url("assets/vendor/fonts/Fredoka-Variable.woff2") format("woff2-variations");
+          font-weight: 300 700;
+          font-display: block;
+        }
+        #root {
+          position: absolute;
+          inset: 0;
+          background: #fcf9e6;
+          overflow: hidden;
+          font-family: "Inter", sans-serif;
+        }
+        .eyebrow {
+          position: absolute;
+          top: 90px;
+          left: 0;
+          right: 0;
+          text-align: center;
+          font-family: "Fredoka", sans-serif;
+          font-weight: 600;
+          font-size: 34px;
+          letter-spacing: 0.02em;
+          color: #0f1a23;
+          opacity: 0;
+        }
+        .photo-card {
+          position: absolute;
+          left: 220px;
+          top: 240px;
+          width: 560px;
+          height: 640px;
+          border-radius: 28px;
+          overflow: hidden;
+          border: 3px solid #0f1a23;
+          opacity: 0;
+          transform: scale(0.85);
+        }
+        .photo-card img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+        .time-tag {
+          position: absolute;
+          left: 24px;
+          top: 24px;
+          background: #0f1a23;
+          color: #fcf9e6;
+          font-family: "Fredoka", sans-serif;
+          font-weight: 700;
+          font-size: 32px;
+          padding: 10px 22px;
+          border-radius: 14px;
+          transform: scale(0);
+        }
+        .consequence {
+          position: absolute;
+          right: 200px;
+          top: 340px;
+          width: 640px;
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          opacity: 0;
+          transform: translateX(30px);
+        }
+        .consequence-title {
+          font-family: "Fredoka", sans-serif;
+          font-weight: 700;
+          font-size: 48px;
+          color: #0f1a23;
+          line-height: 1.3;
+        }
+        .stale-note {
+          margin-top: 34px;
+          border: 2px dashed #0f1a23;
+          border-radius: 16px;
+          padding: 22px 28px;
+          font-size: 27px;
+          color: #0f1a23;
+          opacity: 0.75;
+          max-width: 600px;
+        }
+      </style>
+
+      <div
+        id="root"
+        data-composition-id="b04-scene1-probleme"
+        data-width="1920"
+        data-height="1080"
+        data-duration="11.41"
+      >
+        <div class="eyebrow" id="eyebrow">MARDI · 11H</div>
+
+        <div class="photo-card" id="photo-card">
+          <div class="time-tag" id="time-tag">Contrôle</div>
+          <img src="assets/brand/dishes/classeur-haccp.jpg" alt="Classeur HACCP" />
+        </div>
+
+        <div class="consequence" id="consequence">
+          <div class="consequence-title">Le contrôleur cherche le classeur.</div>
+          <div class="stale-note">Les relevés du mois dernier ont été remplis d'un coup, la veille, de mémoire. Vous le savez. Lui aussi.</div>
+        </div>
+      </div>
+
+      <script>
+        window.__timelines = window.__timelines || {};
+        const tl = gsap.timeline({ paused: true });
+
+        tl.fromTo("#eyebrow", { opacity: 0, y: -14 }, { opacity: 0.55, y: 0, duration: 0.45, ease: "power2.out" }, 0.05);
+        tl.fromTo("#photo-card", { opacity: 0, scale: 0.85 }, { opacity: 1, scale: 1, duration: 0.55, ease: "power2.out" }, 0.3);
+        tl.fromTo("#time-tag", { scale: 0 }, { scale: 1, duration: 0.4, ease: "back.out(2)" }, 0.95);
+        tl.fromTo("#consequence", { opacity: 0, x: 30 }, { opacity: 1, x: 0, duration: 0.55, ease: "power2.out" }, 1.5);
+
+        window.__timelines["b04-scene1-probleme"] = tl;
+      </script>
+    </template>
+  </body>
+</html>
