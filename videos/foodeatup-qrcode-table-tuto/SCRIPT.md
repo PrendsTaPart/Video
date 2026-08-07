@@ -75,6 +75,11 @@ Même texte côté fiche Lovable (`claudePrompt`).
 
 ## Statut publication
 
-Vidéo + vignette livrées à Michael pour validation. **Pas de publication**
-(RapidoCMS / LinkedIn / Lovable) tant que le retour n'est pas explicite —
-règle STOP du workflow.
+Validée par Michael le 2026-08-07. Publiée le même jour :
+- RapidoCMS : `foodeatup-qrcode-table-tuto` (vidéo) / `foodeatup-qrcode-table-tuto-thumbnail` (vignette).
+- LinkedIn FoodEatUp (`68807312`) : draft 688, programmé 2026-09-16 07:00 (rotation 7h/16h pleine
+  jusqu'à cette date — prochain créneau libre).
+- Lovable (`55ff35b7-c442-42c4-950c-8c7fd420c645`) : a remplacé la fiche stub existante
+  `scanner-le-qr-code-de-la-table` (module `reservation-salle`, ordre 5) — `videoUrl`,
+  `thumbnailUrl`, `durationSeconds`, `howItWorks`, `whatItsFor`, `chefTip`, `claudePrompt`
+  renseignés, diff vérifié (`get_diff`, `commit_sha` `a1973ae`) : aucune autre fiche touchée.
