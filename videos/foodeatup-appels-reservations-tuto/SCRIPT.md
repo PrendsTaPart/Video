@@ -91,4 +91,11 @@ Validée par Michael puis publiée le 2026-08-06 :
   concurrente). Pas de `claudePrompt`, conforme à l'analyse ci-dessus.
 - `videos/LOVABLE-FOODEATUP-DOCS.md` et `videos/PROGRESSION-157-TUTORIELS.md`
   mis à jour en conséquence.
-- LinkedIn/RapidoCMS scheduling : **non demandé**, pas de brouillon programmé.
+- LinkedIn FoodEatUp (`68807312`) : brouillon programmé le 2026-09-21 à 07:00
+  (post `575`) — prochain créneau libre, le calendrier était complet jusqu'au
+  2026-09-20 (2 posts/jour, alimenté par plusieurs sessions en parallèle).
+- Facebook FoodEatUp (`201499969703551`) : brouillon créé (`685`) mais
+  **programmation refusée** — « date supérieure à la date d'expiration du
+  compte » (même blocage que celui déjà documenté dans `RAPPORT-VIDEOS.md`
+  au 2026-07-11). Le compte doit être renouvelé par Michael avant de pouvoir
+  reprogrammer ce brouillon.
