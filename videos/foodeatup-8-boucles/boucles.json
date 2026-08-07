@@ -1,0 +1,26 @@
+{
+  "_comment": "Manifeste de la série « Les 8 boucles FoodEatUp ». Pipeline : MCP HyperFrames (compose/render_video) + MCP ElevenLabs (text_to_speech), validé par Michael le 2026-08-07 en remplacement du pipeline local ffmpeg/PIL de FOODEATUP-TUTORIELS-WORKFLOW.md (qui régit une série différente : tutoriels screen-recording).",
+  "voice_id": null,
+  "voice_name": null,
+  "model_id": "eleven_multilingual_v2",
+  "palette": {
+    "bg_cream": "#FCF9E6",
+    "ink_navy": "#0F1A23",
+    "accent_blue": "#007BFF",
+    "marketing_blue": "#147AFF",
+    "cta_orange": "#FFA500"
+  },
+  "master_format": "1920x1080",
+  "reel_format": "1080x1920",
+  "videos": [
+    { "slug": "00-principe", "order": 0, "title": "Le principe : une boucle se referme", "duration_target_s": 45, "agent": null, "status": "a_produire" },
+    { "slug": "boucle-01-configuration-boutique", "order": 1, "title": "Configuration boutique", "duration_target_s": 85, "agent": "Jarvis puis PrédiBot", "status": "a_produire" },
+    { "slug": "boucle-02-equipe", "order": 2, "title": "Équipe", "duration_target_s": 80, "agent": "PrédiBot", "status": "script" },
+    { "slug": "boucle-03-stockvision", "order": 3, "title": "StockVisionAI", "duration_target_s": 90, "agent": "Jarvis puis PrédiBot", "status": "a_produire" },
+    { "slug": "boucle-04-haccp", "order": 4, "title": "HACCP", "duration_target_s": 85, "agent": "Jarvis", "status": "a_produire" },
+    { "slug": "boucle-05-ecommerce", "order": 5, "title": "E-commerce", "duration_target_s": 85, "agent": "Jarvis / Caroline", "status": "a_produire" },
+    { "slug": "boucle-06-communication", "order": 6, "title": "Communication", "duration_target_s": 85, "agent": "Iris", "status": "a_produire" },
+    { "slug": "boucle-07-fidelite", "order": 7, "title": "Fidélité et marketing", "duration_target_s": 85, "agent": "PrédiBot puis Iris", "status": "a_produire" },
+    { "slug": "boucle-08-comptabilite", "order": 8, "title": "Comptabilité", "duration_target_s": 80, "agent": "PrédiBot", "status": "a_produire" }
+  ]
+}
