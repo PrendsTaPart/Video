@@ -40,14 +40,15 @@ ne pas bloquer dessus.
   "Pointer son Service (pauses & photo)". Comblait le dernier placeholder
   "à venir" du module (`equipe-planning` passe donc à 20/20, module complet
   sur ce dépôt — sous réserve de vérifier `tutorials.ts` en direct, plusieurs
-  sessions publiant en parallèle). **Rush inexploitable** : le fichier envoyé
-  pour ce dossier est le même fichier Drive mal étiqueté déjà documenté sur
-  `creer-ses-roles-et-permissions` (montre Accueil/QR code/Rôles, pas le flux
-  de pointage employé). Montage carte-based construit à la place à partir de
-  la vraie capture produit `pointage.png` + un graphique illustratif pour le
-  volet photo anti-fraude — voir `videos/foodeatup-pointer-service-tuto/SCRIPT.md`
-  pour le détail et la marche à suivre si un vrai rush est fourni plus tard.
-  RapidoCMS (vidéo + vignette) + Lovable mis à jour, GitHub poussé sur
+  sessions publiant en parallèle). **v1 puis v2 le même jour** : le premier
+  rush envoyé était le même fichier Drive mal étiqueté déjà documenté sur
+  `creer-ses-roles-et-permissions` — v1 montée en carte-based (capture produit
+  statique + graphique illustratif) en attendant. Michael a renvoyé le bon
+  fichier (23,88 s, vrai flux Entrée → Pause → Fin de pause → Sortie avec
+  photo à chaque étape) ; v2 remontée en zoom-punch classique sur ce rush,
+  remplace v1 sur RapidoCMS/Lovable. Voir
+  `videos/foodeatup-pointer-service-tuto/SCRIPT.md` pour le détail complet.
+  RapidoCMS (vidéo v2 + vignette) + Lovable mis à jour, GitHub poussé sur
   `claude/foodeatup-video-tutorials-x5a46z`. LinkedIn non demandé.
 
 ## Ajoutés cette session (2026-08-04)
