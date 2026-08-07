@@ -1,0 +1,223 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+  </head>
+  <body>
+    <template>
+      <style>
+        @font-face {
+          font-family: "Fredoka";
+          src: url("assets/vendor/fonts/Fredoka-Variable.woff2") format("woff2-variations");
+          font-weight: 300 700;
+          font-display: block;
+        }
+        #root {
+          position: absolute;
+          inset: 0;
+          background: #fcf9e6;
+          overflow: hidden;
+          font-family: "Inter", sans-serif;
+        }
+        .eyebrow {
+          position: absolute;
+          top: 56px;
+          left: 0;
+          right: 0;
+          text-align: center;
+          font-family: "Fredoka", sans-serif;
+          font-weight: 600;
+          font-size: 34px;
+          letter-spacing: 0.02em;
+          color: #0f1a23;
+          opacity: 0;
+        }
+        #node-layer {
+          position: absolute;
+          inset: 0;
+        }
+        .node {
+          position: absolute;
+          width: 380px;
+          height: 140px;
+          border-radius: 20px;
+          background: #ffffff;
+          border: 3px solid #0f1a23;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          text-align: center;
+          padding: 0 20px;
+          font-family: "Fredoka", sans-serif;
+          font-weight: 600;
+          font-size: 28px;
+          color: #0f1a23;
+          transform: scale(0);
+        }
+        .forecast-panel {
+          position: absolute;
+          left: 260px;
+          top: 830px;
+          width: 1400px;
+          height: 190px;
+          background: #ffffff;
+          border: 3px solid #0f1a23;
+          border-radius: 20px;
+          opacity: 0;
+          transform: translateY(24px);
+          padding: 18px 32px;
+        }
+        .forecast-label {
+          font-family: "Fredoka", sans-serif;
+          font-weight: 600;
+          font-size: 24px;
+          color: #0f1a23;
+          opacity: 0.65;
+        }
+        .forecast-bars {
+          display: flex;
+          align-items: flex-end;
+          gap: 24px;
+          height: 110px;
+          margin-top: 10px;
+        }
+        .fbar-wrap {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          width: 150px;
+        }
+        .fbar-col {
+          width: 64px;
+          height: 92px;
+          display: flex;
+          align-items: flex-end;
+        }
+        .fbar {
+          width: 100%;
+          background: #007bff;
+          border-radius: 8px 8px 0 0;
+          transform: scaleY(0);
+          transform-origin: bottom;
+        }
+        .fbar.holiday {
+          background: #147aff;
+        }
+        .fbar.outlier {
+          background: transparent;
+          border: 3px dashed #0f1a23;
+          opacity: 0.5;
+        }
+        .fday {
+          margin-top: 8px;
+          font-size: 20px;
+          color: #0f1a23;
+          opacity: 0.6;
+        }
+        .fmark {
+          font-size: 16px;
+          font-weight: 700;
+          color: #0f1a23;
+          opacity: 0;
+          height: 18px;
+        }
+      </style>
+
+      <div
+        id="root"
+        data-composition-id="b03-scene3-cascade"
+        data-width="1920"
+        data-height="1080"
+        data-duration="20.66"
+      >
+        <div class="eyebrow" id="eyebrow">CE QUI SE RECALCULE</div>
+
+        <svg id="path-svg" width="1920" height="1080" style="position:absolute; inset:0;">
+          <polyline
+            id="chain-path"
+            points="300,370 740,370 1180,370 1620,370 1620,710 1180,710 740,710 300,710"
+            fill="none"
+            stroke="#0f1a23"
+            stroke-opacity="0.18"
+            stroke-width="4"
+            stroke-dasharray="1740"
+            stroke-dashoffset="1740"
+          />
+          <circle id="dot" cx="300" cy="370" r="13" fill="#007bff" opacity="0" />
+          <circle id="dot-halo" cx="300" cy="370" r="22" fill="#007bff" opacity="0" fill-opacity="0.18" />
+        </svg>
+
+        <div id="node-layer">
+          <div class="node" id="node-1" style="left:110px; top:300px;">Besoins des fiches</div>
+          <div class="node" id="node-2" style="left:550px; top:300px;">Commande fournisseur</div>
+          <div class="node" id="node-3" style="left:990px; top:300px;">Réception &amp; contrôle</div>
+          <div class="node" id="node-4" style="left:1430px; top:300px;">Entrée en stock</div>
+          <div class="node" id="node-5" style="left:1430px; top:640px;">Consommation production</div>
+          <div class="node" id="node-6" style="left:990px; top:640px;">Inventaire</div>
+          <div class="node" id="node-7" style="left:550px; top:640px;">Écart</div>
+          <div class="node" id="node-8" style="left:110px; top:640px;">Nouveaux besoins</div>
+        </div>
+
+        <div class="forecast-panel" id="forecast-panel">
+          <div class="forecast-label">Prévision — historique des ventes par jour de semaine</div>
+          <div class="forecast-bars">
+            <div class="fbar-wrap"><div class="fmark">&nbsp;</div><div class="fbar-col"><div class="fbar" id="fb-1" style="height:55%"></div></div><div class="fday">Lun</div></div>
+            <div class="fbar-wrap"><div class="fmark">&nbsp;</div><div class="fbar-col"><div class="fbar" id="fb-2" style="height:62%"></div></div><div class="fday">Mar</div></div>
+            <div class="fbar-wrap"><div class="fmark" id="fmark-3">écartée</div><div class="fbar-col"><div class="fbar outlier" id="fb-3" style="height:98%"></div></div><div class="fday">Mer</div></div>
+            <div class="fbar-wrap"><div class="fmark">&nbsp;</div><div class="fbar-col"><div class="fbar" id="fb-4" style="height:58%"></div></div><div class="fday">Jeu</div></div>
+            <div class="fbar-wrap"><div class="fmark" id="fmark-5">férié</div><div class="fbar-col"><div class="fbar holiday" id="fb-5" style="height:74%"></div></div><div class="fday">Ven</div></div>
+            <div class="fbar-wrap"><div class="fmark">&nbsp;</div><div class="fbar-col"><div class="fbar" id="fb-6" style="height:88%"></div></div><div class="fday">Sam</div></div>
+            <div class="fbar-wrap"><div class="fmark">&nbsp;</div><div class="fbar-col"><div class="fbar" id="fb-7" style="height:70%"></div></div><div class="fday">Dim</div></div>
+          </div>
+        </div>
+      </div>
+
+      <script>
+        window.__timelines = window.__timelines || {};
+        const tl = gsap.timeline({ paused: true });
+
+        const pts = [
+          [300, 370], [740, 370], [1180, 370], [1620, 370],
+          [1620, 710], [1180, 710], [740, 710], [300, 710]
+        ];
+        const NODE_START = 1.7;
+        const NODE_STEP = 2.37;
+        const BLUE = "#007bff";
+        const WHITE_TXT = "#fcf9e6";
+
+        tl.fromTo("#eyebrow", { opacity: 0, y: -14 }, { opacity: 0.55, y: 0, duration: 0.45, ease: "power2.out" }, 0.05);
+        tl.to("#chain-path", { strokeDashoffset: 0, duration: 0.9, ease: "power2.out" }, 0.35);
+        tl.fromTo(".node", { scale: 0 }, { scale: 1, duration: 0.35, ease: "back.out(2.2)", stagger: 0.05 }, 1.0);
+
+        for (let i = 0; i < pts.length; i++) {
+          const t = NODE_START + i * NODE_STEP;
+          tl.to(`#node-${i + 1}`, { backgroundColor: BLUE, borderColor: BLUE, color: WHITE_TXT, duration: 0.4, ease: "power2.out" }, t);
+          tl.to(`#node-${i + 1}`, { scale: 1.06, duration: 0.18, ease: "power2.out", yoyo: true, repeat: 1 }, t);
+
+          if (i < pts.length - 1) {
+            const [x0, y0] = pts[i];
+            const [x1, y1] = pts[i + 1];
+            tl.set("#dot, #dot-halo", { attr: { cx: x0, cy: y0 }, opacity: 1 }, t + 0.15);
+            tl.to("#dot, #dot-halo", { attr: { cx: x1, cy: y1 }, duration: NODE_STEP - 0.4, ease: "power1.inOut" }, t + 0.15);
+          } else {
+            tl.to("#dot, #dot-halo", { opacity: 0, duration: 0.3 }, t + 0.3);
+          }
+        }
+
+        // Forecast insert — appears once most of the chain has lit.
+        const forecastAt = NODE_START + 6 * NODE_STEP;
+        tl.to("#forecast-panel", { opacity: 1, y: 0, duration: 0.55, ease: "power2.out" }, forecastAt);
+        tl.fromTo(
+          ["#fb-1", "#fb-2", "#fb-3", "#fb-4", "#fb-5", "#fb-6", "#fb-7"],
+          { scaleY: 0 },
+          { scaleY: 1, duration: 0.4, ease: "power2.out", stagger: 0.05 },
+          forecastAt + 0.2
+        );
+        tl.to("#fmark-3", { opacity: 0.6, duration: 0.3, ease: "power2.out" }, forecastAt + 0.7);
+        tl.to("#fmark-5", { opacity: 1, color: "#147aff", duration: 0.3, ease: "power2.out" }, forecastAt + 0.85);
+
+        window.__timelines["b03-scene3-cascade"] = tl;
+      </script>
+    </template>
+  </body>
+</html>

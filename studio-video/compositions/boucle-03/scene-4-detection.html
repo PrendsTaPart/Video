@@ -1,0 +1,162 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+  </head>
+  <body>
+    <template>
+      <style>
+        @font-face {
+          font-family: "Fredoka";
+          src: url("assets/vendor/fonts/Fredoka-Variable.woff2") format("woff2-variations");
+          font-weight: 300 700;
+          font-display: block;
+        }
+        #root {
+          position: absolute;
+          inset: 0;
+          background: #fcf9e6;
+          overflow: hidden;
+          font-family: "Inter", sans-serif;
+        }
+        .header {
+          position: absolute;
+          left: 260px;
+          top: 110px;
+          font-family: "Fredoka", sans-serif;
+          font-weight: 700;
+          font-size: 44px;
+          color: #0f1a23;
+          opacity: 0;
+        }
+        .order-card {
+          position: absolute;
+          left: 260px;
+          top: 230px;
+          width: 1400px;
+          background: #ffffff;
+          border: 3px solid #0f1a23;
+          border-radius: 20px;
+          padding: 20px 44px;
+          opacity: 0;
+          transform: translateY(24px);
+        }
+        .order-row {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          padding: 22px 0;
+          border-bottom: 2px solid rgba(15, 26, 35, 0.12);
+          opacity: 0;
+        }
+        .order-row:last-child {
+          border-bottom: none;
+        }
+        .order-name {
+          font-family: "Fredoka", sans-serif;
+          font-weight: 600;
+          font-size: 32px;
+          color: #0f1a23;
+          width: 480px;
+        }
+        .order-qty {
+          font-family: "Fredoka", sans-serif;
+          font-weight: 700;
+          font-size: 32px;
+          color: #007bff;
+          font-variant-numeric: tabular-nums;
+          width: 200px;
+        }
+        .order-supplier {
+          font-size: 26px;
+          color: #0f1a23;
+          opacity: 0.6;
+        }
+        .btn-row {
+          position: absolute;
+          left: 260px;
+          top: 780px;
+          width: 1400px;
+          display: flex;
+          justify-content: flex-end;
+        }
+        .btn-valider {
+          background: #007bff;
+          color: #fcf9e6;
+          font-family: "Fredoka", sans-serif;
+          font-weight: 700;
+          font-size: 34px;
+          padding: 22px 54px;
+          border-radius: 16px;
+          opacity: 0;
+          transform: scale(0.85);
+        }
+        .caption {
+          position: absolute;
+          left: 260px;
+          right: 260px;
+          top: 900px;
+          text-align: right;
+          font-family: "Fredoka", sans-serif;
+          font-weight: 600;
+          font-size: 28px;
+          color: #0f1a23;
+          opacity: 0;
+        }
+      </style>
+
+      <div
+        id="root"
+        data-composition-id="b03-scene4-detection"
+        data-width="1920"
+        data-height="1080"
+        data-duration="8.49"
+      >
+        <div class="header" id="header">Commande fournisseur — préparée automatiquement</div>
+
+        <div class="order-card" id="order-card">
+          <div class="order-row" id="row-1">
+            <div class="order-name">Saumon</div>
+            <div class="order-qty">8 kg</div>
+            <div class="order-supplier">Marée Fraîche</div>
+          </div>
+          <div class="order-row" id="row-2">
+            <div class="order-name">Poulet fermier</div>
+            <div class="order-qty">12 kg</div>
+            <div class="order-supplier">Metro</div>
+          </div>
+          <div class="order-row" id="row-3">
+            <div class="order-name">Crevettes</div>
+            <div class="order-qty">5 kg</div>
+            <div class="order-supplier">Marée Fraîche</div>
+          </div>
+        </div>
+
+        <div class="btn-row"><div class="btn-valider" id="btn">Valider avant l'envoi</div></div>
+        <div class="caption" id="caption">Vous validez avant l'envoi. Toujours.</div>
+      </div>
+
+      <script>
+        window.__timelines = window.__timelines || {};
+        const tl = gsap.timeline({ paused: true });
+
+        tl.fromTo("#header", { opacity: 0, y: -14 }, { opacity: 1, y: 0, duration: 0.45, ease: "power2.out" }, 0.1);
+        tl.fromTo("#order-card", { opacity: 0, y: 24 }, { opacity: 1, y: 0, duration: 0.5, ease: "power2.out" }, 0.35);
+        tl.fromTo(
+          ["#row-1", "#row-2", "#row-3"],
+          { opacity: 0, x: -20 },
+          { opacity: 1, x: 0, duration: 0.4, ease: "power2.out", stagger: 0.18 },
+          0.75
+        );
+
+        tl.fromTo("#btn", { opacity: 0, scale: 0.85 }, { opacity: 1, scale: 1, duration: 0.4, ease: "back.out(2)" }, 1.7);
+        tl.to("#btn", { scale: 0.92, duration: 0.12, ease: "power1.in" }, 2.5);
+        tl.to("#btn", { scale: 1, duration: 0.28, ease: "elastic.out(1, 0.5)" }, 2.62);
+
+        tl.fromTo("#caption", { opacity: 0 }, { opacity: 0.75, duration: 0.4, ease: "power2.out" }, 3.0);
+
+        window.__timelines["b03-scene4-detection"] = tl;
+      </script>
+    </template>
+  </body>
+</html>

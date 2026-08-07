@@ -1,0 +1,168 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+  </head>
+  <body>
+    <template>
+      <style>
+        @font-face {
+          font-family: "Fredoka";
+          src: url("assets/vendor/fonts/Fredoka-Variable.woff2") format("woff2-variations");
+          font-weight: 300 700;
+          font-display: block;
+        }
+        #root {
+          position: absolute;
+          inset: 0;
+          background: #fcf9e6;
+          overflow: hidden;
+          font-family: "Inter", sans-serif;
+        }
+        .eyebrow {
+          position: absolute;
+          top: 90px;
+          left: 0;
+          right: 0;
+          text-align: center;
+          font-family: "Fredoka", sans-serif;
+          font-weight: 600;
+          font-size: 34px;
+          letter-spacing: 0.02em;
+          color: #0f1a23;
+          opacity: 0;
+        }
+        .dish-card {
+          position: absolute;
+          left: 220px;
+          top: 300px;
+          width: 640px;
+          height: 520px;
+          background: #ffffff;
+          border: 3px solid #0f1a23;
+          border-radius: 28px;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          opacity: 0;
+          transform: scale(0.85);
+        }
+        .dish-icon {
+          width: 140px;
+          height: 140px;
+          border-radius: 50%;
+          background: #007bff;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+        .dish-icon svg {
+          width: 72px;
+          height: 72px;
+          fill: #fcf9e6;
+        }
+        .dish-name {
+          margin-top: 32px;
+          font-family: "Fredoka", sans-serif;
+          font-weight: 700;
+          font-size: 52px;
+          color: #0f1a23;
+        }
+        .dish-sub {
+          margin-top: 10px;
+          font-size: 26px;
+          color: #0f1a23;
+          opacity: 0.6;
+        }
+        .rupture-stamp {
+          position: absolute;
+          left: 90px;
+          top: 90px;
+          border: 4px solid #0f1a23;
+          border-radius: 14px;
+          padding: 10px 26px;
+          font-family: "Fredoka", sans-serif;
+          font-weight: 700;
+          font-size: 30px;
+          color: #0f1a23;
+          transform: rotate(-8deg) scale(0);
+          letter-spacing: 0.06em;
+        }
+        .consequence {
+          position: absolute;
+          right: 220px;
+          top: 350px;
+          width: 620px;
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          opacity: 0;
+          transform: translateX(30px);
+        }
+        .consequence-value {
+          font-family: "Fredoka", sans-serif;
+          font-weight: 700;
+          font-size: 140px;
+          color: #007bff;
+          font-variant-numeric: tabular-nums;
+          line-height: 1;
+        }
+        .consequence-label {
+          margin-top: 10px;
+          font-family: "Fredoka", sans-serif;
+          font-weight: 600;
+          font-size: 32px;
+          color: #0f1a23;
+        }
+        .consequence-sub {
+          margin-top: 18px;
+          font-size: 26px;
+          color: #0f1a23;
+          opacity: 0.65;
+          max-width: 560px;
+        }
+      </style>
+
+      <div
+        id="root"
+        data-composition-id="b03-scene1-probleme"
+        data-width="1920"
+        data-height="1080"
+        data-duration="10.52"
+      >
+        <div class="eyebrow" id="eyebrow">VENDREDI · 18H</div>
+
+        <div class="dish-card" id="dish-card">
+          <div class="rupture-stamp" id="stamp">RUPTURE</div>
+          <div class="dish-icon">
+            <svg viewBox="0 0 24 24"><path d="M2 16s2-6 10-6 10 6 10 6-2 2-10 2-10-2-10-2zm10-9c1.1 0 2 .9 2 2s-.9 2-2 2-2-.9-2-2 .9-2 2-2z"/></svg>
+          </div>
+          <div class="dish-name">Saumon</div>
+          <div class="dish-sub">le plat le plus rentable de la carte</div>
+        </div>
+
+        <div class="consequence" id="consequence">
+          <div class="consequence-value">30</div>
+          <div class="consequence-label">couverts</div>
+          <div class="consequence-sub">prennent autre chose — ou ne reviennent pas.</div>
+        </div>
+      </div>
+
+      <script>
+        window.__timelines = window.__timelines || {};
+        const tl = gsap.timeline({ paused: true });
+
+        tl.fromTo("#eyebrow", { opacity: 0, y: -14 }, { opacity: 0.55, y: 0, duration: 0.45, ease: "power2.out" }, 0.05);
+        tl.fromTo("#dish-card", { opacity: 0, scale: 0.85 }, { opacity: 1, scale: 1, duration: 0.55, ease: "back.out(1.6)" }, 0.3);
+        tl.fromTo("#stamp", { scale: 0, rotation: -8 }, { scale: 1, rotation: -8, duration: 0.4, ease: "back.out(2.4)" }, 1.0);
+        tl.fromTo("#consequence", { opacity: 0, x: 30 }, { opacity: 1, x: 0, duration: 0.55, ease: "power2.out" }, 1.5);
+
+        // Ambient breathing on the stamp so the frame stays alive during the VO.
+        tl.to("#stamp", { rotation: -4, duration: 1.4, ease: "sine.inOut", repeat: 3, yoyo: true }, 2.2);
+
+        window.__timelines["b03-scene1-probleme"] = tl;
+      </script>
+    </template>
+  </body>
+</html>
