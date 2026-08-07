@@ -4,3 +4,6 @@ _bisect*.html
 .localtest/
 # sources brutes des illustrations (récupérables depuis RapidoCMS)
 *-src.png
+
+# rendu local de contrôle
+_render.html
