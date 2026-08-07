@@ -96,6 +96,20 @@ erreur XML de 860 octets à la place du mp3.
 - **ffmpeg** n'est pas installé dans l'image : la chaîne prend le binaire static
   livré par le wheel `imageio-ffmpeg` (7.0.2).
 
+## Publication
+
+Les 9 masters et leurs 9 vignettes sont dans la bibliothèque RapidoCMS, sous les
+noms imposés par P9 (`boucle-NN-<slug>-v1` en `video`, `-thumbnail` en `image`).
+`manifest-academy.json` porte leurs URLs S3 et les durées mesurées sur les MP4.
+
+**Ne pas se fier au champ `taille` de `list_all_files`** : il vaut `0` pour tout
+fichier versé par URL, y compris des uploads antérieurs parfaitement intacts.
+Pour vérifier un upload, interroger S3 directement et comparer le
+`Content-Length` au fichier local — c'est ce que fait le contrôle de livraison.
+
+Les reels 1080×1920 ne sont pas publiés : P9 ne les demande pas et l'Academy
+consomme le master. Ils restent dans le dépôt pour un usage réseaux.
+
 ## Écarts au script, à valider
 
 Les VO des boucles 01 à 08 sont **mot à mot** celles des prompts P1-P8, à trois
@@ -110,6 +124,22 @@ fournissait 6 :
 
 La VO de **la vidéo 0** est entièrement rédigée ici : le brief en donnait
 l'intention (45 s, présenter le principe), pas le texte.
+
+### Durées
+
+Les vidéos font 44 à 76 s, là où le brief visait 45 à 90 s. Adam lit à
+**17,1 caractères par seconde**, plus vite que l'estimation initiale. Trois plans
+reçoivent de la respiration parce que l'image en a besoin (cascade, chiffres,
+CTA — voir `RESPIRATION`) ; le reste n'est pas rembourré. Atteindre les durées
+cibles demanderait d'écrire plus de texte, pas d'étirer les blancs.
+
+### Chiffres inventés
+
+Les montants d'ajustement du plan 4 de la boucle 01 (`18,50 € → 19,40 €` et les
+deux autres lignes) **ne viennent pas du brief** : le script disait « il vous
+propose l'ajustement » sans chiffrer. Ils sont plausibles mais non vérifiés — à
+remplacer par de vraies valeurs, ou à basculer en « donnée à confirmer » comme
+partout ailleurs où le brief était muet.
 
 ## Données manquantes
 
