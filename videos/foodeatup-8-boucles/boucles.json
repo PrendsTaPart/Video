@@ -50,7 +50,7 @@
       "dureeCible": 45,
       "agents": [],
       "outilsMcp": 177,
-      "statut": "script",
+      "statut": "rendu",
       "plans": [
         {
           "n": 1,
@@ -167,9 +167,7 @@
           "vo": "Si cette boucle est coupée, tout le reste tourne à vide."
         }
       ],
-      "plan7Phrase": "Une fiche fausse fausse le food cost, le stock, la marge et le prix.",
-      "dureeReelle": 76.34,
-      "noteDuree": "Adam lit à 17,1 c/s, plus vite que l'estimation initiale. 76,3 s au lieu des 85 s visées : la VO est intégralement là, on n'a pas comblé l'écart avec du silence."
+      "plan7Phrase": "Une fiche fausse fausse le food cost, le stock, la marge et le prix."
     },
     {
       "slug": "boucle-02-equipe",
@@ -181,7 +179,7 @@
         "PrédiBot"
       ],
       "outilsMcp": 21,
-      "statut": "script",
+      "statut": "rendu",
       "cascade": [
         "Recrutement",
         "Contrat",
@@ -258,7 +256,7 @@
         "PrédiBot"
       ],
       "outilsMcp": 11,
-      "statut": "script",
+      "statut": "rendu",
       "pilier": true,
       "cascade": [
         "Besoins des fiches",
@@ -335,7 +333,7 @@
         "Jarvis"
       ],
       "outilsMcp": 16,
-      "statut": "script",
+      "statut": "rendu",
       "registre": "sobre",
       "cascade": [
         "Plan de maîtrise",
@@ -413,7 +411,7 @@
         "Caroline"
       ],
       "outilsMcp": 39,
-      "statut": "script",
+      "statut": "rendu",
       "cascade": [
         "Carte en ligne",
         "Visite",
@@ -490,7 +488,7 @@
         "Iris"
       ],
       "outilsMcp": 15,
-      "statut": "script",
+      "statut": "rendu",
       "cascade": [
         "Événement ou intention",
         "Choix du canal",
@@ -564,7 +562,7 @@
         "Iris"
       ],
       "outilsMcp": 19,
-      "statut": "script",
+      "statut": "rendu",
       "cascade": [
         "Client servi",
         "Consentement",
@@ -636,7 +634,7 @@
         "PrédiBot"
       ],
       "outilsMcp": 17,
-      "statut": "script",
+      "statut": "rendu",
       "cascade": [
         "Vente",
         "Facture",
@@ -707,5 +705,6 @@
         "« Payée » ne se déduit jamais."
       ]
     }
-  ]
+  ],
+  "noteDurees": "Adam lit à 17,1 c/s, plus vite que l'estimation du brief. Les vidéos font 44 à 76 s au lieu des 45 à 90 s visées : la VO y est intégralement, on n'a pas comblé l'écart avec du silence. Les durées réelles, mesurées sur les MP4, sont dans manifest-academy.json."
 }
