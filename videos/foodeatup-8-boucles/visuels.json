@@ -674,7 +674,12 @@
           "nom": "Encours cartes cadeaux",
           "valeur": "une dette"
         }
-      ]
+      ],
+      "voyant": {
+        "avant": "INACTIF",
+        "apres": "ACTIF",
+        "bascule": 2.0
+      }
     },
     "4": {
       "alerte": "Programme inactif ? Toute la cascade reste grise.",

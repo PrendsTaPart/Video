@@ -155,7 +155,7 @@
       var n = el("div", "maillon");
       n.appendChild(el("span", "puce"));
       n.appendChild(el("span", null, m.nom));
-      if (m.valeur) n.appendChild(el("span", "valeur", m.valeur));
+      if (m.valeur) n._val = n.appendChild(el("span", "valeur", m.valeur));
       if (i < d.cascade.length - 1) {
         var lien = el("div", "lien");
         lien.appendChild(el("i"));
@@ -166,6 +166,8 @@
       return n;
     });
     grille.appendChild(col);
+    root._cascade = col;
+    root._voyant = d.voyant || null;
 
     if (d.fiches && d.fiches.length) {
       var f = el("div", "fiches");
@@ -194,20 +196,41 @@
     entree(root._k, span(t, 0.1, 0.7), 14);
 
     var n = root._maillons.length;
-    var t0 = 0.75;                       // le premier maillon s'allume ici
+    var v = root._voyant;
+
+    // Voyant d'entrée (boucle 07) : tant que le programme est INACTIF, toute la
+    // cascade reste grise. C'est l'image que le script réclame — un catalogue de
+    // récompenses posé sur un programme éteint ne produit rien. Le premier
+    // maillon EST le voyant : il est visible dès le début, les autres attendent.
+    var bascule = v ? v.bascule : 0;
+    if (v) {
+      var actif = t >= bascule;
+      if (actif) root._cascade.classList.remove("eteinte");
+      else root._cascade.classList.add("eteinte");
+      root._maillons[0]._val.textContent = actif ? v.apres : v.avant;
+    }
+
+    var t0 = 0.75 + bascule;             // le premier maillon s'allume ici
     var fin = Math.max(t0 + 2, dur - 2.4); // le dernier, avant la fin du plan
     var pas = (fin - t0) / n;
 
     root._maillons.forEach(function (m, i) {
       var a = t0 + i * pas;
-      // Apparition de la boîte, puis allumage quand la valeur la traverse.
-      entree(m, span(t, a - 0.42, a + 0.16), 20);
-      var allume = span(t, a, a + 0.3);
+      // Avec un voyant, toute la chaîne est posée dès l'ouverture du plan : ce
+      // qu'il faut montrer, c'est une cascade GRISE, pas un écran vide. Sans
+      // voyant, chaque maillon apparaît juste avant que la valeur l'atteigne.
+      var e0 = v ? 0.2 + i * 0.08 : a - 0.42;
+      var e1 = v ? 0.75 + i * 0.08 : a + 0.16;
+      var pe = span(t, e0, e1);
+      entree(m, pe, 20);
+
+      // Le voyant lui-même est allumé d'emblée — c'est un état, pas une étape.
+      var allume = v && i === 0 ? 1 : span(t, a, a + 0.3);
       if (allume > 0.5) m.classList.add("on"); else m.classList.remove("on");
       // Petit à-coup au moment exact où la valeur entre dans le maillon.
       var kick = span(t, a, a + 0.34);
       var s = 1 + Math.sin(kick * Math.PI) * 0.022;
-      m.style.transform = "translateY(" + ((1 - ease.out(span(t, a - 0.42, a + 0.16))) * 20).toFixed(2)
+      m.style.transform = "translateY(" + ((1 - ease.out(pe)) * 20).toFixed(2)
         + "px) scale(" + s.toFixed(4) + ")";
       // Le flux qui descend vers le maillon suivant.
       if (m._flux) {

@@ -140,6 +140,25 @@ html, body {
 
 .cascade { display: flex; flex-direction: column; gap: var(--gap-maillon); }
 
+/* Programme de fidélité éteint : la chaîne reste grise, sauf le voyant qui la
+   commande — lui passe en orange, parce que c'est lui la cause.
+   Le grisage est posé maillon par maillon, jamais sur le conteneur : un
+   `filter` sur un parent s'applique à toute sa descendance et aucun `filter`
+   d'enfant ne peut l'annuler — le voyant serait gris lui aussi. */
+.cascade.eteinte .maillon:not(:first-child) {
+  filter: grayscale(1);
+  opacity: 0.4;
+}
+.cascade.eteinte .maillon:first-child {
+  border-color: var(--orange);
+  background: rgba(255, 165, 0, 0.16);
+}
+.cascade.eteinte .maillon:first-child .valeur { color: var(--orange); }
+.cascade.eteinte .maillon:first-child .puce {
+  background: var(--orange); border-color: var(--orange);
+}
+.cascade.eteinte .lien i { background: rgba(15, 26, 35, 0.18); }
+
 .maillon {
   position: relative;
   display: flex; align-items: center; gap: 0.9em;
