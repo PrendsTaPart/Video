@@ -1,0 +1,137 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+  </head>
+  <body>
+    <template>
+      <style>
+        @font-face {
+          font-family: "Fredoka";
+          src: url("assets/vendor/fonts/Fredoka-Variable.woff2") format("woff2-variations");
+          font-weight: 300 700;
+          font-display: block;
+        }
+        #root {
+          position: absolute;
+          inset: 0;
+          background: #fcf9e6;
+          overflow: hidden;
+          font-family: "Inter", sans-serif;
+        }
+        .eyebrow {
+          position: absolute;
+          top: 90px;
+          left: 0;
+          right: 0;
+          text-align: center;
+          font-family: "Fredoka", sans-serif;
+          font-weight: 600;
+          font-size: 34px;
+          letter-spacing: 0.02em;
+          color: #0f1a23;
+          opacity: 0;
+        }
+        .stat-block {
+          position: absolute;
+          top: 300px;
+          width: 700px;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          opacity: 0;
+          transform: scale(0.85);
+        }
+        .stat-block.left {
+          left: 130px;
+        }
+        .stat-block.right {
+          right: 130px;
+        }
+        .stat-value {
+          font-family: "Fredoka", sans-serif;
+          font-weight: 700;
+          font-size: 220px;
+          line-height: 1;
+        }
+        .stat-block.left .stat-value {
+          color: #0f1a23;
+        }
+        .stat-block.right .stat-value {
+          color: #ffa500;
+        }
+        .stat-label {
+          margin-top: 18px;
+          font-family: "Fredoka", sans-serif;
+          font-weight: 600;
+          font-size: 32px;
+          color: #0f1a23;
+          text-align: center;
+        }
+        .versus {
+          position: absolute;
+          left: 50%;
+          top: 420px;
+          transform: translateX(-50%) scale(0);
+          font-family: "Fredoka", sans-serif;
+          font-weight: 700;
+          font-size: 48px;
+          color: #0f1a23;
+          opacity: 0.4;
+        }
+        .conclusion {
+          position: absolute;
+          left: 0;
+          right: 0;
+          bottom: 130px;
+          text-align: center;
+          font-family: "Fredoka", sans-serif;
+          font-weight: 700;
+          font-size: 44px;
+          color: #0f1a23;
+          opacity: 0;
+        }
+        .conclusion b {
+          color: #ffa500;
+        }
+      </style>
+
+      <div
+        id="root"
+        data-composition-id="b07-scene1-probleme"
+        data-width="1920"
+        data-height="1080"
+        data-duration="10.55"
+      >
+        <div class="eyebrow" id="eyebrow">CETTE SEMAINE, DANS VOTRE SALLE</div>
+
+        <div class="stat-block left" id="stat-left">
+          <div class="stat-value">300</div>
+          <div class="stat-label">clients servis</div>
+        </div>
+
+        <div class="versus" id="versus">→</div>
+
+        <div class="stat-block right" id="stat-right">
+          <div class="stat-value">0</div>
+          <div class="stat-label">rappelables demain matin</div>
+        </div>
+
+        <div class="conclusion" id="conclusion">Vous rachetez vos clients à chaque fois. <b>Indéfiniment.</b></div>
+      </div>
+
+      <script>
+        window.__timelines = window.__timelines || {};
+        const tl = gsap.timeline({ paused: true });
+
+        tl.fromTo("#eyebrow", { opacity: 0, y: -14 }, { opacity: 0.55, y: 0, duration: 0.45, ease: "power2.out" }, 0.05);
+        tl.fromTo("#stat-left", { opacity: 0, scale: 0.85 }, { opacity: 1, scale: 1, duration: 0.55, ease: "power2.out" }, 0.3);
+        tl.fromTo("#versus", { scale: 0 }, { scale: 1, duration: 0.35, ease: "back.out(2)" }, 0.95);
+        tl.fromTo("#stat-right", { opacity: 0, scale: 0.85 }, { opacity: 1, scale: 1, duration: 0.55, ease: "power2.out" }, 1.15);
+        tl.fromTo("#conclusion", { opacity: 0, y: 16 }, { opacity: 1, y: 0, duration: 0.5, ease: "power2.out" }, 2.2);
+
+        window.__timelines["b07-scene1-probleme"] = tl;
+      </script>
+    </template>
+  </body>
+</html>

@@ -1,0 +1,201 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+  </head>
+  <body>
+    <template>
+      <style>
+        @font-face {
+          font-family: "Fredoka";
+          src: url("assets/vendor/fonts/Fredoka-Variable.woff2") format("woff2-variations");
+          font-weight: 300 700;
+          font-display: block;
+        }
+        #root {
+          position: absolute;
+          inset: 0;
+          background: #fcf9e6;
+          overflow: hidden;
+          font-family: "Inter", sans-serif;
+        }
+        .eyebrow {
+          position: absolute;
+          top: 56px;
+          left: 0;
+          right: 0;
+          text-align: center;
+          font-family: "Fredoka", sans-serif;
+          font-weight: 600;
+          font-size: 32px;
+          letter-spacing: 0.02em;
+          color: #0f1a23;
+          opacity: 0;
+        }
+        #node-layer {
+          position: absolute;
+          inset: 0;
+        }
+        .node {
+          position: absolute;
+          width: 380px;
+          height: 130px;
+          border-radius: 20px;
+          background: #fcf9e6;
+          border: 3px solid rgba(15, 26, 35, 0.35);
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          text-align: center;
+          padding: 0 20px;
+          font-family: "Fredoka", sans-serif;
+          font-weight: 600;
+          font-size: 26px;
+          color: rgba(15, 26, 35, 0.5);
+          transform: scale(0);
+        }
+        .pill {
+          position: absolute;
+          left: 50%;
+          top: 128px;
+          transform: translateX(-50%) scale(0);
+          font-family: "Fredoka", sans-serif;
+          font-weight: 700;
+          font-size: 30px;
+          padding: 14px 40px;
+          border-radius: 999px;
+          white-space: nowrap;
+        }
+        .pill.inactif {
+          background: #fcf9e6;
+          border: 3px dashed rgba(15, 26, 35, 0.45);
+          color: rgba(15, 26, 35, 0.55);
+        }
+        .pill.actif {
+          background: #007bff;
+          border: 3px solid #007bff;
+          color: #fcf9e6;
+          opacity: 0;
+        }
+        .caption {
+          position: absolute;
+          left: 0;
+          right: 0;
+          bottom: 70px;
+          text-align: center;
+          font-family: "Fredoka", sans-serif;
+          font-weight: 600;
+          font-size: 28px;
+          color: #0f1a23;
+          opacity: 0;
+        }
+      </style>
+
+      <div
+        id="root"
+        data-composition-id="b07-scene3-cascade"
+        data-width="1920"
+        data-height="1080"
+        data-duration="21.28"
+      >
+        <div class="eyebrow" id="eyebrow">AVANT TOUTE CAMPAGNE, UN CONTRÔLE</div>
+
+        <div class="pill inactif" id="pill-inactif">PROGRAMME&nbsp;: INACTIF</div>
+        <div class="pill actif" id="pill-actif">PROGRAMME&nbsp;: ACTIF</div>
+
+        <svg id="path-svg" width="1920" height="1080" style="position:absolute; inset:0;">
+          <defs>
+            <marker id="arrowhead" markerWidth="9" markerHeight="9" refX="7" refY="4.5" orient="auto">
+              <path d="M0,0 L9,4.5 L0,9 z" fill="#007bff" />
+            </marker>
+          </defs>
+          <polyline
+            id="chain-path"
+            points="300,280 740,280 1180,280 1620,280 1620,610 1180,610 740,610"
+            fill="none"
+            stroke="#0f1a23"
+            stroke-opacity="0.18"
+            stroke-width="4"
+            stroke-dasharray="1560"
+            stroke-dashoffset="1560"
+          />
+          <path
+            id="return-path"
+            d="M740,675 Q300,900 300,345"
+            fill="none"
+            stroke="#007bff"
+            stroke-width="4"
+            stroke-dasharray="620"
+            stroke-dashoffset="620"
+            opacity="0"
+            marker-end="url(#arrowhead)"
+          />
+          <circle id="dot" cx="300" cy="280" r="13" fill="#007bff" opacity="0" />
+          <circle id="dot-halo" cx="300" cy="280" r="22" fill="#007bff" opacity="0" fill-opacity="0.18" />
+        </svg>
+
+        <div id="node-layer">
+          <div class="node" id="node-1" style="left:110px; top:215px;">Client servi</div>
+          <div class="node" id="node-2" style="left:550px; top:215px;">Consentement</div>
+          <div class="node" id="node-3" style="left:990px; top:215px;">Segmentation</div>
+          <div class="node" id="node-4" style="left:1430px; top:215px;">Campagne ciblée</div>
+          <div class="node" id="node-5" style="left:1430px; top:545px;">Retour en salle</div>
+          <div class="node" id="node-6" style="left:990px; top:545px;">Points &amp; récompenses</div>
+          <div class="node" id="node-7" style="left:550px; top:545px;">Nouvelle donnée</div>
+        </div>
+
+        <div class="caption" id="caption">Un catalogue posé sur un programme éteint&nbsp;: ça ne produit rien.</div>
+      </div>
+
+      <script>
+        window.__timelines = window.__timelines || {};
+        const tl = gsap.timeline({ paused: true });
+
+        const pts = [
+          [300, 280], [740, 280], [1180, 280], [1620, 280],
+          [1620, 610], [1180, 610], [740, 610]
+        ];
+        const NODE_START = 5.0;
+        const NODE_STEP = 1.85;
+        const BLUE = "#007bff";
+        const CREAM = "#fcf9e6";
+
+        // Phase 1 — programme éteint : tout apparaît gris, immobile.
+        tl.fromTo("#eyebrow", { opacity: 0, y: -14 }, { opacity: 0.55, y: 0, duration: 0.35, ease: "power2.out" }, 0.05);
+        tl.fromTo("#pill-inactif", { scale: 0 }, { scale: 1, duration: 0.4, ease: "back.out(1.8)" }, 0.15);
+        tl.fromTo(".node", { scale: 0 }, { scale: 1, duration: 0.3, ease: "power2.out", stagger: 0.08 }, 0.35);
+        tl.to("#chain-path", { strokeDashoffset: 0, strokeOpacity: 0.18, duration: 0.9, ease: "power2.out" }, 0.35);
+
+        tl.fromTo("#caption", { opacity: 0, y: 10 }, { opacity: 1, y: 0, duration: 0.4, ease: "power2.out" }, 1.5);
+        tl.to("#caption", { opacity: 0, duration: 0.35, ease: "power2.in" }, 4.0);
+
+        // Phase 2 — on active le programme : le voyant bascule.
+        tl.to("#pill-inactif", { opacity: 0, scale: 0.85, duration: 0.3, ease: "power2.in" }, 4.35);
+        tl.fromTo("#pill-actif", { opacity: 0, scale: 0.85 }, { opacity: 1, scale: 1, duration: 0.4, ease: "back.out(2)" }, 4.6);
+
+        // Phase 3 — la cascade s'anime, nœud par nœud.
+        for (let i = 0; i < pts.length; i++) {
+          const t = NODE_START + i * NODE_STEP;
+          tl.to(`#node-${i + 1}`, { backgroundColor: BLUE, borderColor: BLUE, color: CREAM, duration: 0.32, ease: "power2.out" }, t);
+          tl.to(`#node-${i + 1}`, { scale: 1.05, duration: 0.15, ease: "power2.out", yoyo: true, repeat: 1 }, t);
+
+          if (i < pts.length - 1) {
+            const [x0, y0] = pts[i];
+            const [x1, y1] = pts[i + 1];
+            tl.set("#dot, #dot-halo", { attr: { cx: x0, cy: y0 }, opacity: 1 }, t + 0.1);
+            tl.to("#dot, #dot-halo", { attr: { cx: x1, cy: y1 }, duration: NODE_STEP - 0.25, ease: "power1.inOut" }, t + 0.1);
+          } else {
+            tl.to("#dot, #dot-halo", { opacity: 0, duration: 0.25 }, t + 0.2);
+          }
+        }
+
+        // Phase 4 — la boucle se referme : retour visuel vers le premier nœud.
+        const loopT = NODE_START + pts.length * NODE_STEP + 0.3;
+        tl.to("#return-path", { opacity: 0.55, strokeDashoffset: 0, duration: 1.1, ease: "power2.inOut" }, loopT);
+        tl.to("#node-1", { scale: 1.08, duration: 0.2, ease: "power2.out", yoyo: true, repeat: 1 }, loopT + 1.0);
+
+        window.__timelines["b07-scene3-cascade"] = tl;
+      </script>
+    </template>
+  </body>
+</html>

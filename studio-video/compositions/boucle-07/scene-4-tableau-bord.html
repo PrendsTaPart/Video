@@ -1,0 +1,187 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+  </head>
+  <body>
+    <template>
+      <style>
+        @font-face {
+          font-family: "Fredoka";
+          src: url("assets/vendor/fonts/Fredoka-Variable.woff2") format("woff2-variations");
+          font-weight: 300 700;
+          font-display: block;
+        }
+        #root {
+          position: absolute;
+          inset: 0;
+          background: #fcf9e6;
+          overflow: hidden;
+          font-family: "Inter", sans-serif;
+        }
+        .eyebrow {
+          position: absolute;
+          top: 62px;
+          left: 0;
+          right: 0;
+          text-align: center;
+          font-family: "Fredoka", sans-serif;
+          font-weight: 600;
+          font-size: 32px;
+          color: #0f1a23;
+          opacity: 0;
+        }
+        .row {
+          position: absolute;
+          left: 200px;
+          width: 1520px;
+          height: 210px;
+          background: #ffffff;
+          border: 3px solid #0f1a23;
+          border-radius: 24px;
+          padding: 0 48px;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          opacity: 0;
+          transform: scale(0.9);
+        }
+        #row-bons { top: 172px; }
+        #row-rupture { top: 424px; }
+        #row-encours { top: 676px; }
+
+        .row-left { display: flex; flex-direction: column; gap: 6px; }
+        .row-title {
+          font-family: "Fredoka", sans-serif;
+          font-weight: 700;
+          font-size: 34px;
+          color: #0f1a23;
+        }
+        .row-sub {
+          font-size: 24px;
+          color: #0f1a23;
+          opacity: 0.6;
+          max-width: 780px;
+        }
+        .bars {
+          display: flex;
+          align-items: flex-end;
+          gap: 26px;
+          height: 110px;
+        }
+        .bar-wrap {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: flex-end;
+          height: 100%;
+          gap: 8px;
+        }
+        .bar {
+          width: 54px;
+          border-radius: 8px 8px 0 0;
+          transform: scaleY(0);
+          transform-origin: bottom;
+        }
+        .bar.emis { height: 100px; background: rgba(15, 26, 35, 0.25); }
+        .bar.utilises { height: 56px; background: #007bff; }
+        .bar-label { font-size: 20px; color: #0f1a23; opacity: 0.7; }
+
+        .tag {
+          font-family: "Fredoka", sans-serif;
+          font-weight: 700;
+          font-size: 26px;
+          padding: 12px 26px;
+          border-radius: 12px;
+          transform: scale(0);
+          white-space: nowrap;
+        }
+        .tag.rupture { background: #0f1a23; color: #fcf9e6; }
+        .tag.dette { background: #ffa500; color: #0f1a23; }
+
+        .reward-card {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          gap: 20px;
+          opacity: 0.45;
+        }
+        .reward-icon {
+          width: 64px;
+          height: 64px;
+          border-radius: 14px;
+          border: 3px dashed rgba(15, 26, 35, 0.4);
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+        .reward-icon svg { width: 32px; height: 32px; fill: rgba(15, 26, 35, 0.4); }
+
+        .encours-value {
+          font-family: "Fredoka", sans-serif;
+          font-weight: 700;
+          font-size: 60px;
+          color: #0f1a23;
+        }
+      </style>
+
+      <div
+        id="root"
+        data-composition-id="b07-scene4-tableau-bord"
+        data-width="1920"
+        data-height="1080"
+        data-duration="13.23"
+      >
+        <div class="eyebrow" id="eyebrow">CE QUI TOURNE VRAIMENT</div>
+
+        <div class="row" id="row-bons">
+          <div class="row-left">
+            <div class="row-title">Bons émis / utilisés</div>
+            <div class="row-sub">Taux d'usage réel du programme</div>
+          </div>
+          <div class="bars">
+            <div class="bar-wrap"><div class="bar emis" id="bar-emis"></div><div class="bar-label">182 émis</div></div>
+            <div class="bar-wrap"><div class="bar utilises" id="bar-utilises"></div><div class="bar-label">96 utilisés</div></div>
+          </div>
+        </div>
+
+        <div class="row" id="row-rupture">
+          <div class="row-left reward-card">
+            <div class="reward-icon">
+              <svg viewBox="0 0 24 24"><path d="M20 6h-2.18c.11-.31.18-.65.18-1a2.5 2.5 0 0 0-2.5-2.5c-1.19 0-2.21.7-2.7 1.72L12 5.5l-.8-1.28A2.98 2.98 0 0 0 8.5 2.5 2.5 2.5 0 0 0 6 5c0 .35.07.69.18 1H4a2 2 0 0 0-2 2v2a1 1 0 0 0 1 1h18a1 1 0 0 0 1-1V8a2 2 0 0 0-2-2zM4 12v8a2 2 0 0 0 2 2h5v-10H4zm9 0v10h5a2 2 0 0 0 2-2v-8h-7z"/></svg>
+            </div>
+            <div class="row-title" style="opacity:0.7;">Menu du chef — dessert offert</div>
+          </div>
+          <div class="tag rupture" id="tag-rupture">En rupture</div>
+        </div>
+
+        <div class="row" id="row-encours">
+          <div class="row-left">
+            <div class="row-title">Encours cartes cadeaux</div>
+            <div class="encours-value">3&nbsp;420&nbsp;€</div>
+          </div>
+          <div class="tag dette" id="tag-dette">Dette, pas du CA</div>
+        </div>
+      </div>
+
+      <script>
+        window.__timelines = window.__timelines || {};
+        const tl = gsap.timeline({ paused: true });
+
+        tl.fromTo("#eyebrow", { opacity: 0, y: -14 }, { opacity: 0.55, y: 0, duration: 0.4, ease: "power2.out" }, 0.05);
+
+        tl.fromTo("#row-bons", { opacity: 0, scale: 0.9 }, { opacity: 1, scale: 1, duration: 0.5, ease: "power2.out" }, 0.35);
+        tl.fromTo("#bar-emis", { scaleY: 0 }, { scaleY: 1, duration: 0.45, ease: "power2.out" }, 0.9);
+        tl.fromTo("#bar-utilises", { scaleY: 0 }, { scaleY: 1, duration: 0.45, ease: "power2.out" }, 1.1);
+
+        tl.fromTo("#row-rupture", { opacity: 0, scale: 0.9 }, { opacity: 1, scale: 1, duration: 0.5, ease: "power2.out" }, 4.7);
+        tl.fromTo("#tag-rupture", { scale: 0 }, { scale: 1, duration: 0.35, ease: "back.out(2.2)" }, 5.35);
+
+        tl.fromTo("#row-encours", { opacity: 0, scale: 0.9 }, { opacity: 1, scale: 1, duration: 0.5, ease: "power2.out" }, 9.0);
+        tl.fromTo("#tag-dette", { scale: 0 }, { scale: 1, duration: 0.35, ease: "back.out(2.2)" }, 9.65);
+
+        window.__timelines["b07-scene4-tableau-bord"] = tl;
+      </script>
+    </template>
+  </body>
+</html>
