@@ -3,6 +3,7 @@
   "private": true,
   "type": "module",
   "scripts": {
+    "build": "node scripts/build-static.mjs",
     "dev": "npx hyperframes preview",
     "check": "npx hyperframes lint && npx hyperframes validate && npx hyperframes inspect",
     "render:hero": "npx hyperframes render",
