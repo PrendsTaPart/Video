@@ -38,33 +38,24 @@ d'ouverture et le carton final. Textes intégraux dans `_serie/films_sans.py`.
 
 ## Points à examiner en priorité
 
-### 1. Le plan `sept-onglets` (photo, carton final de D1′ et D2′)
+### 1. Le plan `sans-onglets` (animé, ouverture de D1′ et D3′)
 
-Écran d'ordinateur portable dans une pièce sombre, sept onglets de navigateur
-ouverts, pense-bête collé au bord de l'écran.
+Le directeur devant son écran, le soir. Fenêtres empilées, texte illisible à
+l'image, aucun logo, aucune interface d'éditeur reconnaissable.
 
-Relu au zoom ×3,5 : les libellés d'onglets sont du **faux texte illisible**
-produit par le modèle, les favicons sont des ronds gris uniformes, le
-pense-bête porte une écriture manuscrite sans mot lisible. Le chrome du
-navigateur est générique.
+C'est **le seul endroit de tout le volet** où un écran d'ordinateur est visible.
+Une photo du même sujet (`sept-onglets`, un portable à sept onglets de
+navigateur) avait d'abord été montée puis **retirée** : au recadrage nécessaire
+pour qu'elle soit lisible, les libellés d'onglets devenaient plus nets qu'ils
+ne devaient l'être. Elle n'est plus dans aucun film.
 
-Un floutage de la barre a été essayé puis abandonné : il effaçait les onglets,
-et un plan qui dit « sept onglets » sans qu'on puisse les compter ne dit plus
-rien. **Le plan est donc monté en clair.** C'est le seul endroit de tout le
-volet où un navigateur est visible ; à trancher.
-
-### 2. Le plan `sans-onglets` (animé, ouverture de D1′ et D3′)
-
-Même sujet en mouvement : le directeur devant son écran le soir. Fenêtres
-empilées, texte illisible à l'image, aucun logo. Même question que ci-dessus.
-
-### 3. Le plan `sans-tablettes` (animé, ouverture de S2′)
+### 2. Le plan `sans-tablettes` (animé, ouverture de S2′)
 
 Trois tablettes dépareillées derrière un comptoir, chacune affichant une
 interface grise unie. Générées avec la consigne explicite `no invented
 software interface` : les écrans sont des aplats. À confirmer visuellement.
 
-### 4. Les fourchettes chiffrées
+### 3. Les fourchettes chiffrées
 
 Voir plus haut. Elles sont défendables dans leur forme, pas encore dans leur
 source.
