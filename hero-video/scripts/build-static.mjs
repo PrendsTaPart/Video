@@ -197,11 +197,23 @@ if (hero.clin && hero.clin.file) {
 }
 
 // Music beds, one per sequence matching its avec/sans/resolution state.
+// Tiled back-to-back across the full sequence length (data-duration per
+// tag never exceeds the bed's real length) so a short bed never runs out
+// and leaves silence for the rest of the scene — confirmed happening
+// before this fix on S6/S7, both scored with the 15s "resolution" bed
+// while running 25-30s.
 if (hero.musicBeds) {
   for (const seq of hero.sequences) {
     const bedKey = seq.music === 'silence' ? null : seq.music;
     const bed = bedKey && hero.musicBeds[bedKey];
-    if (bed) audioTag(bed.file, seq.fromSeconds, seq.durationSeconds, 9300 + trackCounter++);
+    if (!bed) continue;
+    const bedDuration = bed.naturalDurationSeconds || seq.durationSeconds;
+    let offset = 0;
+    while (offset < seq.durationSeconds) {
+      const clipDuration = Math.min(bedDuration, seq.durationSeconds - offset);
+      audioTag(bed.file, seq.fromSeconds + offset, clipDuration, 9300 + trackCounter++);
+      offset += bedDuration;
+    }
   }
 }
 
@@ -212,6 +224,15 @@ const staticMarkup = out.join('\n');
 
 const indexPath = path.join(ROOT, 'index.html');
 let html = readFileSync(indexPath, 'utf8');
+
+// Keep the root composition's data-duration in sync with hero.json — it's
+// hand-authored markup, not part of the generated block below, and was
+// found stale (still "225" after a retime dropped the real total to
+// 208.06s) because nothing else here ever touched it.
+html = html.replace(
+  /(<div id="hero" class="composition"[^>]*data-duration=")[^"]*(")/,
+  `$1${hero.durationSeconds}$2`,
+);
 
 const heroDivOpenMarker = /(<div id="hero"[^>]*>)([\s\S]*?)(<\/div>\s*<script>window\.__timelines)/;
 if (!heroDivOpenMarker.test(html)) {
