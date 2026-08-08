@@ -40,6 +40,7 @@
       'data-duration': duration,
       'data-track-index': track,
       'data-volume': '1',
+      'data-has-audio': 'true',
       preload: 'auto'
     });
     parent.appendChild(a);
