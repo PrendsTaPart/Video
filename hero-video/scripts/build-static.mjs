@@ -64,26 +64,30 @@ function videoTag(cls, src, start, duration, track, mediaStart) {
   );
 }
 
+// All motion graphics are wordless by design: no HTML labels, no baked-in
+// captions. Everything they used to spell out in text is already said in
+// the beat's own VO — repeating it as on-screen text was pure clutter (and
+// exactly what the brief itself warns against: the visual adds information,
+// it never repeats what's already said out loud).
 function motionGraphic(key, beat) {
-  if (key === 'carton-texte') {
-    out.push(`<div class="card opening"><h1>${esc(beat.text)}</h1></div>`);
-    return;
-  }
   if (key === 'convergence-multicanal') {
+    const icons = (beat.source && beat.source.icons) || [];
+    const target = (beat.source && beat.source.targetIcon) || 'assets/brand/foodeatup-mark-eight.png';
     out.push('<div class="converge-stage">');
-    const labels = ['QR Table 7', 'Site web', 'Agent vocal', 'Livraison'];
     const corners = ['tl', 'tr', 'bl', 'br'];
     corners.forEach((c, i) => {
-      out.push(`<div class="converge-node" data-corner="${c}">${esc(labels[i])}</div>`);
+      if (!icons[i]) return;
+      out.push(`<div class="converge-node" data-corner="${c}"><img src="${esc(icons[i])}" alt="" /></div>`);
     });
-    out.push('<div class="converge-line">Une seule file</div>');
+    out.push(`<div class="converge-target"><img src="${esc(target)}" alt="" /></div>`);
     out.push('</div>');
     return;
   }
   if (key === 'notification-cascade-iris') {
+    const icon = (beat.source && beat.source.icon) || 'assets/image/icons/icon-notification.jpg';
     out.push('<div class="iris-stage">');
     for (let s = 1; s <= 3; s++) {
-      out.push(`<div class="iris-device" data-slot="${s}"><div class="toast">Saumon ce soir — Iris</div></div>`);
+      out.push(`<div class="iris-device" data-slot="${s}"><div class="toast"><img src="${esc(icon)}" alt="" /></div></div>`);
     }
     out.push('</div>');
     return;
@@ -94,9 +98,7 @@ function motionGraphic(key, beat) {
   }
   if (key === 'logo-cta') {
     const logo = (beat.source && beat.source.logo) || 'assets/brand/foodeatup-logo-mascot.png';
-    out.push(
-      `<div class="cta-card"><img class="logo" src="${esc(logo)}" alt="FoodEatUp" /><div class="slogan">${esc(beat.text)}</div><div class="cta">${esc(beat.cta)}</div></div>`,
-    );
+    out.push(`<div class="cta-card"><img class="logo" src="${esc(logo)}" alt="FoodEatUp" /></div>`);
     return;
   }
   // trois-visages-silence is handled directly in renderBeat (needs the
@@ -157,19 +159,12 @@ function renderBeat(beat, track) {
     }
   }
 
-  if (beat.speaker && beat.speaker !== 'narratrice') {
-    clipOpen('speaker-tag', beat.fromSeconds, beat.durationSeconds, track + 500);
-    out.push(esc(beat.speaker));
-    clipClose();
-  }
-
-  if (beat.vo && beat.vo.text) {
-    clipOpen('subtitle', beat.fromSeconds, beat.durationSeconds, track + 1000);
-    out.push(`<span>${esc(beat.vo.subtitleFr || beat.vo.text)}</span>`);
-    clipClose();
-    if (beat.vo.file) {
-      audioTag(beat.vo.file, beat.fromSeconds, beat.durationSeconds, track + 2000);
-    }
+  // No burned-in speaker tags or subtitles: the film is meant to be watched
+  // with sound, and the .vtt track (scripts outside this build) already
+  // carries the same text for accessibility / SEO without cluttering the
+  // frame. Only the audio track is emitted here.
+  if (beat.vo && beat.vo.file) {
+    audioTag(beat.vo.file, beat.fromSeconds, beat.durationSeconds, track + 2000);
   }
 }
 

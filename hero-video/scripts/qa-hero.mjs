@@ -40,13 +40,15 @@ if (hero.wipe.avecToSans.atSeconds.length !== 2) {
   fail(`Le repli gris doit apparaître exactement 2 fois (trouvé: ${hero.wipe.avecToSans.atSeconds.length}).`);
 }
 
-// 4. Le beat Jarvis multilingue doit avoir deux volets strictement symétriques
-//    (même durée) entre le chef (beatB-jarvis-chef1) et le commis (beatB-jarvis-commis).
+// 4. Le beat Jarvis (compréhension peu importe qui parle en cuisine) ne doit
+//    plus contenir de volet en langue étrangère (le commis en espagnol a été
+//    retiré sur demande explicite : "enlève toutes les voix anglais").
 const s4beats = Object.fromEntries((s4?.beats ?? []).map((b) => [b.id, b]));
-const chef1 = s4beats['s4-beatB-jarvis-chef1'];
-const commis = s4beats['s4-beatB-jarvis-commis'];
-if (!chef1 || !commis || chef1.durationSeconds !== commis.durationSeconds) {
-  fail('Le beat Jarvis multilingue doit avoir deux volets de durée strictement identique (chef / commis).');
+if (s4beats['s4-beatB-jarvis-commis']) {
+  fail('Le beat commis (langue étrangère) doit être supprimé, pas seulement ignoré.');
+}
+if (!s4beats['s4-beatB-jarvis-chef1'] || !s4beats['s4-beatB-jarvis-chef2']) {
+  fail('Le beat Jarvis doit conserver ses deux volets chef1/chef2 (en français).');
 }
 
 // 5. Aucun nom de marque concurrente dans les données ou le code de la composition.
