@@ -7,9 +7,21 @@
     "fournisseur": "ElevenLabs",
     "modele": "eleven_multilingual_v2",
     "langue": "fr",
-    "voice_id": null,
-    "statut": "NON GÉNÉRÉE — en attente de l'accord de coût (préflight C0) et du choix de voix",
-    "note": "Ne PAS reprendre par défaut la voix Adam FR (TGAegA0zNRi8I6nUdq3i) de la série tutoriels : son registre est 'simple et ludique', l'opposé de celui demandé ici ('un directeur financier qui expose un constat à un pair'). Une voix posée, grave, sans sourire, à choisir explicitement."
+    "voice_id": "eOwAMwUJEGkP44SKOXIH",
+    "voice_name": "Julien - Professional customer service",
+    "reglages": {
+      "stability": 0.55,
+      "similarity_boost": 0.8,
+      "style": 0.0,
+      "use_speaker_boost": true
+    },
+    "statut": "GÉNÉRÉE et montée sur les deux variantes",
+    "texte": "figé dans _shared/vo.py (version SANS CHIFFRES)",
+    "pourquoi_cette_voix": "Accent standard, « calme et posé, professionnel, clair, articulé » — le registre C0 : un directeur financier qui expose un constat à un pair. Paul K « French Ad & Trailer » a été écarté : sa fiche annonce « energetic, persuasive, punchy », l'inverse du brief, et son débit de bande-annonce mettait 14,3 s sur une phrase que Julien dit en 8,3 s — il ne tenait pas dans la fenêtre de 13 s de la séquence 2.",
+    "alternatives_testees": {
+      "Paul K — French Ad & Trailer": "ecxPjiGTvAfpGEams6ec",
+      "Stella - French Narration": "ebRwkdEFVZIx2A6YucFh"
+    }
   },
   "chiffres": {
     "version": "sans chiffres",
@@ -19,7 +31,7 @@
     {
       "variante": "boulangerie",
       "kpi": "taux d'invendus par magasin",
-      "statut": "composition vérifiée (41/41) + master habillé (nappe + bruitages) — VOIX OFF toujours en attente",
+      "statut": "TERMINÉE pour les séquences 1 à 4 — composition 41/41, voix off, nappe et bruitages montés",
       "duree_cible": 55.0,
       "duree_reelle": 55.0,
       "note_duree": "durée provisoire : les data-duration devront être recalées sur la durée réelle de la VO une fois celle-ci générée (règle C0 : la VO fixe les durées)",
@@ -66,7 +78,7 @@
     {
       "variante": "restauration",
       "kpi": "food cost par site à carte identique",
-      "statut": "composition vérifiée (41/41) + master habillé (nappe + bruitages) — VOIX OFF toujours en attente",
+      "statut": "TERMINÉE pour les séquences 1 à 4 — composition 41/41, voix off, nappe et bruitages montés",
       "duree_cible": 55.0,
       "duree_reelle": 55.0,
       "rendu": "out/foodeatup-chaines-restauration-seq1-4-v1.mp4",
@@ -131,7 +143,9 @@
     "nappe": "55 s, registre comité de direction : pas de mélodie, pas de percussion, pas de montée",
     "mix": "nappe à -30 LUFS, bruitages normalisés à la CRÊTE, limiteur limit=0.6 level=disabled",
     "note": "la nappe est volontairement basse pour laisser la place à la voix off à venir",
-    "higgsfield": "non connecté à cette session — aucun asset récupérable",
-    "rapidocms": "330 fichiers, tous des vidéos produit ; aucun asset sonore, et les rushes produit sont exclus par la règle « aucun plan produit avant la seconde 60 »"
-  }
+    "higgsfield": "connecté depuis peu ; non utilisé sur cette version",
+    "rapidocms": "330 fichiers, tous des vidéos produit ; aucun asset sonore, et les rushes produit sont exclus par la règle « aucun plan produit avant la seconde 60 »",
+    "voix": "loudnorm par ligne à -17 LUFS, posée 0,8 s après le début de sa scène"
+  },
+  "recalage_durees": "aucun : toutes les lignes de voix off tiennent dans les fenêtres de scène d'origine (la plus longue, 9,61 s, dans une fenêtre de 13 s). Les durées 15/13/5/12/10 sont conservées."
 }

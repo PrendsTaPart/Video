@@ -9,8 +9,8 @@ Cible : dirigeants et directeurs financiers de chaînes de boulangerie et de res
 
 | Bloc | Périmètre | État |
 |---|---|---|
-| `boulangerie/` | séquences 1 à 4 (55 s) | **41/41 + master habillé** (nappe + bruitages) — voix off en attente |
-| `restauration/` | séquences 1 à 4 (55 s) | **41/41 + master habillé** (nappe + bruitages) — voix off en attente |
+| `boulangerie/` | séquences 1 à 4 (55 s) | **terminée** — 41/41, voix off + nappe + bruitages |
+| `restauration/` | séquences 1 à 4 (55 s) | **terminée** — 41/41, voix off + nappe + bruitages |
 | `commun/` | séquences 5 à 9 | **bloqué** — voir ci-dessous |
 
 Les deux variantes partagent leur socle (`_shared/base.py`) : charte, squelette de
@@ -157,6 +157,27 @@ crête de la nappe seule — tous émergent de 7 à 14 dB. Crête finale ≈ -5,
 (aucun serveur MCP de ce nom). RapidoCMS contient 330 fichiers, tous des vidéos
 produit — aucun asset sonore ; et ces rushes sont des captures produit, exclues ici
 par la règle « aucun plan produit avant la seconde 60 ».
+
+## Voix off
+
+`_shared/vo.py` porte le texte exact (version sans chiffres) et génère les quatre
+lignes par variante. La clé API vient de l'environnement, jamais du fichier.
+
+**Voix retenue : Julien — `eOwAMwUJEGkP44SKOXIH`**, français accent standard,
+« calme et posé, professionnel, clair, articulé ». C'est le registre C0 : un
+directeur financier qui expose un constat à un pair.
+
+**Paul K « French Ad & Trailer » a été écarté** bien qu'il soit la voix « pub »
+évidente : sa fiche annonce « energetic, persuasive, punchy », l'exact inverse du
+brief — et surtout, son débit de bande-annonce met **14,3 s** sur une phrase que
+Julien dit en **8,3 s**. Il ne tenait pas dans la fenêtre de 13 s de la séquence 2.
+L'argument n'est pas que de goût.
+
+**Aucun recalage des scènes n'a été nécessaire** : la plus longue ligne fait 9,61 s
+dans une fenêtre de 13 s. Les durées 15/13/5/12/10 sont conservées.
+
+La séquence 2b (« L'écart ») n'a **aucune** ligne : le brief impose trois secondes
+sans voix. Vérifié à la mesure — nappe seule à -30,3 dB sur toute la fenêtre.
 
 ## Prochaines étapes
 

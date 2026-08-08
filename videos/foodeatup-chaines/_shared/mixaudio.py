@@ -52,6 +52,14 @@ CRETE_SFX = {
 # repère visuel qu'il est censé accompagner.
 DESILENCE = "silenceremove=start_periods=1:start_threshold=-45dB:start_silence=0"
 
+# Voix off : une ligne par scène, posée AMORCE secondes après le début de la
+# scène pour laisser le plan s'installer. La séquence 2b (s3, « L'écart ») n'a
+# volontairement AUCUNE ligne — c'est le plan qui doit rester en tête, le brief
+# impose trois secondes sans voix.
+DEBUT_SCENE = {"s1": 0.0, "s2": 15.0, "s4": 33.0, "s5": 45.0}
+AMORCE = 0.8
+I_VO = -17       # LUFS de la voix : elle domine la nappe (-30) sans écraser
+
 # Chaque bruitage est calé sur l'instant exact de l'animation qu'il accompagne.
 PLACEMENTS = {
     "boulangerie": [
@@ -88,8 +96,13 @@ def build(variante: str) -> pathlib.Path:
         sys.exit(f"master muet introuvable : {src}")
 
     placements = PLACEMENTS[variante]
+    # les lignes de voix off réellement présentes sur le disque
+    vo = [(f"vo-{variante}-{s}.mp3", DEBUT_SCENE[s] + AMORCE)
+          for s in ("s1", "s2", "s4", "s5")
+          if (EL / f"vo-{variante}-{s}.mp3").exists()]
+
     cmd = [FF, "-v", "error", "-y", "-i", str(src), "-i", str(EL / "nappe.mp3")]
-    for name, _ in placements:
+    for name, _ in placements + vo:
         cmd += ["-i", str(EL / name)]
 
     parts = [
@@ -102,6 +115,17 @@ def build(variante: str) -> pathlib.Path:
         gain = CRETE_SFX[name] - crete_db(EL / name)
         parts.append(
             f"[{i + 2}:a]{DESILENCE},volume={gain:.2f}dB,"
+            f"adelay={int(at * 1000)}|{int(at * 1000)}{lbl}"
+        )
+        labels.append(lbl)
+    # Voix off : `loudnorm` PAR LIGNE avant `adelay`, jamais sur le mix — règle
+    # du workflow maison. Ici la loudness intégrée est le bon critère (contrairement
+    # aux bruitages) : une ligne parlée est un signal continu, pas un transitoire.
+    n0 = 2 + len(placements)
+    for j, (name, at) in enumerate(vo):
+        lbl = f"[v{j}]"
+        parts.append(
+            f"[{n0 + j}:a]loudnorm=I={I_VO}:TP=-3:LRA=11,"
             f"adelay={int(at * 1000)}|{int(at * 1000)}{lbl}"
         )
         labels.append(lbl)
