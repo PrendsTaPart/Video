@@ -1,0 +1,478 @@
+{
+ "_comment": "Film héros « Le même jour, deux fois » — 19e vidéo du projet. Spécification figée le 2026-08-08. Le film alterne SANS et AVEC à chaque phase de la journée, porté par trois métiers qui sont LES MÊMES personnes dans les deux états. Aucun narrateur, sauf une phrase à 3:26.",
+ "slug": "hero-le-meme-jour-deux-fois",
+ "titre": "Le même jour, deux fois",
+ "dureeS": 225,
+ "fps": 30,
+ "format": {
+  "master": [
+   1920,
+   1080
+  ],
+  "reel": [
+   1080,
+   1920
+  ],
+  "carre": [
+   1080,
+   1080
+  ]
+ },
+ "palette": {
+  "avec": {
+   "bleu": "#1E9BF0",
+   "marine": "#1B2A41",
+   "blancCasse": "#F7F9FC",
+   "orange": "#FFA500"
+  },
+  "sans": {
+   "gris": "#8A9099",
+   "anthracite": "#3A3F45",
+   "blancFroid": "#EDEEF0",
+   "alerte": "#D64545"
+  }
+ },
+ "sequences": [
+  {
+   "id": "S0",
+   "etat": "neutre",
+   "fromFrame": 0,
+   "dureeFrames": 450,
+   "titre": "Ouverture — le même lieu, deux ambiances",
+   "musique": "silence"
+  },
+  {
+   "id": "S1",
+   "etat": "sans",
+   "fromFrame": 450,
+   "dureeFrames": 750,
+   "titre": "Avant le service",
+   "musique": "sans"
+  },
+  {
+   "id": "S2",
+   "etat": "avec",
+   "fromFrame": 1200,
+   "dureeFrames": 1050,
+   "titre": "Avant le service",
+   "musique": "avec"
+  },
+  {
+   "id": "S3",
+   "etat": "sans",
+   "fromFrame": 2250,
+   "dureeFrames": 750,
+   "titre": "Pendant le service",
+   "musique": "sans"
+  },
+  {
+   "id": "S4",
+   "etat": "avec",
+   "fromFrame": 3000,
+   "dureeFrames": 1350,
+   "titre": "Pendant le service",
+   "musique": "avec",
+   "intouchable": true,
+   "note": "Contient les 4 beats qui vendent le produit. Si le film doit être raccourci, raccourcir S1, S3, S5 — jamais S4."
+  },
+  {
+   "id": "S5",
+   "etat": "sans",
+   "fromFrame": 4350,
+   "dureeFrames": 750,
+   "titre": "Après le service",
+   "musique": "sans"
+  },
+  {
+   "id": "S6",
+   "etat": "avec",
+   "fromFrame": 5100,
+   "dureeFrames": 900,
+   "titre": "Après le service",
+   "musique": "avec"
+  },
+  {
+   "id": "S7",
+   "etat": "avec",
+   "fromFrame": 6000,
+   "dureeFrames": 750,
+   "titre": "Clôture",
+   "musique": "resolution"
+  }
+ ],
+ "transitions": {
+  "balayageBleu": {
+   "sens": "sans→avec",
+   "dureeFrames": 21,
+   "easing": "cubic-bezier(0.65, 0, 0.35, 1)",
+   "frames": [
+    1200,
+    3000,
+    5100
+   ],
+   "note": "Désaturation, son, ligne recomposée : les 4 effets pilotés par la MÊME progression (useWipeProgress)."
+  },
+  "repliGris": {
+   "sens": "avec→sans",
+   "dureeFrames": 12,
+   "easing": "aucun",
+   "frames": [
+    2250,
+    4350
+   ]
+  },
+  "interdits": [
+   "fondu au blanc",
+   "glitch",
+   "zoom transition",
+   "wipe circulaire",
+   "particules"
+  ]
+ },
+ "clin": {
+  "fichier": "son-clin-passe.wav",
+  "occurrences": 3,
+  "frames": [
+   3870,
+   5940,
+   6690
+  ],
+  "note": "Exactement trois fois. Enregistré sur une vraie cloche de passe, accordé sur la tonique (ré) — le dernier tombe sur la résolution musicale."
+ },
+ "sequencesEcranSource": [
+  {
+   "tc": "0:44",
+   "beat": "PrediBot ouvre la journée",
+   "slug": "lire-ses-previsions-predibot",
+   "extrait": "Le brief du jour qui s'affiche",
+   "dureeS": 4,
+   "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-tutorials-bivyyp/videos/foodeatup-predibot-previsions-tuto/out/foodeatup-predibot-previsions-tuto-v1.mp4",
+   "statut": "recuperable"
+  },
+  {
+   "tc": "0:53",
+   "beat": "Commande fournisseur",
+   "slug": "envoyer-sa-commande-au-fournisseur",
+   "extrait": "L'envoi + la confirmation",
+   "dureeS": 3,
+   "url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/foodeatup-commande-fournisseur-tuto-v1",
+   "statut": "recuperable"
+  },
+  {
+   "tc": "1:00",
+   "beat": "Scan DLC",
+   "slug": "scanner-ean-et-dlc-reception",
+   "extrait": "Le scan et le remplissage auto des champs",
+   "dureeS": 4,
+   "url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/scanner-ean-et-dlc-reception-v1",
+   "statut": "recuperable"
+  },
+  {
+   "tc": "1:08",
+   "beat": "Caroline a pris l'appel",
+   "slug": "reecouter-ses-appels-et-reservations",
+   "extrait": "Forme d'onde + réservation créée",
+   "dureeS": 4,
+   "url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/foodeatup-appels-reservations-tuto",
+   "statut": "recuperable"
+  },
+  {
+   "tc": "1:12",
+   "beat": "Plan de table",
+   "slug": "placer-un-client-a-table",
+   "extrait": "L'assignation sur le plan de salle",
+   "dureeS": 3,
+   "url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/foodeatup-placer-un-client-a-table-tuto-v1",
+   "statut": "recuperable"
+  },
+  {
+   "tc": "1:43",
+   "beat": "Multi-canal",
+   "slug": "mes-commandes-tous-canaux",
+   "extrait": "La file unique qui se remplit",
+   "dureeS": 5,
+   "url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/foodeatup-mes-commandes-tuto-v1",
+   "statut": "acces_refuse_403"
+  },
+  {
+   "tc": "1:55",
+   "beat": "Jarvis / sortie de stock",
+   "slug": "sortir-ses-ingredients-du-stock",
+   "extrait": "Dictée vocale + décrémentation",
+   "dureeS": 5,
+   "url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/foodeatup-sortie-stock-tuto-v1",
+   "statut": "recuperable"
+  },
+  {
+   "tc": "2:07",
+   "beat": "KDS plat prêt",
+   "slug": "afficher-le-kds-par-poste",
+   "extrait": "Le passage au vert d'un plat",
+   "dureeS": 3,
+   "url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/foodeatup-kds-par-poste-tuto",
+   "statut": "recuperable"
+  },
+  {
+   "tc": "2:17",
+   "beat": "Stocks dormants",
+   "slug": "booster-les-stocks-dormants",
+   "extrait": "L'alerte DLC sur un lot",
+   "dureeS": 3,
+   "url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/foodeatup-stocks-dormants-tuto-v1",
+   "statut": "recuperable"
+  },
+  {
+   "tc": "2:20",
+   "beat": "Iris publie",
+   "slug": "creer-une-campagne-par-ia",
+   "extrait": "Proposition de campagne + validation",
+   "dureeS": 5,
+   "url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/creer-une-campagne-par-ia-v1",
+   "statut": "recuperable"
+  },
+  {
+   "tc": "2:58",
+   "beat": "Avis clients",
+   "slug": "repondre-aux-avis-clients",
+   "extrait": "La réponse qui s'écrit",
+   "dureeS": 3,
+   "url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/foodeatup-repondre-avis-tuto-v1",
+   "statut": "recuperable"
+  },
+  {
+   "tc": "3:05",
+   "beat": "Photo IA nettoyage",
+   "slug": "photo-ia-controle-nettoyage",
+   "extrait": "Photo prise, analyse, verdict",
+   "dureeS": 4,
+   "url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/foodeatup-nettoyage-ia-tuto-v1",
+   "statut": "recuperable"
+  },
+  {
+   "tc": "3:10",
+   "beat": "Classeur HACCP",
+   "slug": "exporter-les-historiques-haccp",
+   "extrait": "Les pages qui défilent",
+   "dureeS": 3,
+   "url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/foodeatup-classeur-haccp-tuto-v1",
+   "statut": "recuperable"
+  },
+  {
+   "tc": "3:16",
+   "beat": "Le chiffre du jour",
+   "slug": "lire-ses-statistiques-par-module",
+   "extrait": "Le tableau de bord",
+   "dureeS": 3,
+   "url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/foodeatup-statistiques-module-tuto-v1",
+   "statut": "recuperable"
+  }
+ ],
+ "sequencesEcranManquantes": [
+  {
+   "tc": "2:52",
+   "beat": "Le ticket Z",
+   "raison": "Le module Caisse POS n'a aucune vidéo en ligne",
+   "solution": "à enregistrer — plan clé du film"
+  },
+  {
+   "tc": "1:32",
+   "beat": "La rupture non signalée (sans)",
+   "raison": "maquette grise, pas une vraie interface",
+   "solution": "à fabriquer en motion design"
+  }
+ ],
+ "captationsAtourner": [
+  {
+   "fichier": "hero-cuisine-vide-matin.mp4",
+   "contenu": "Cuisine vide au petit matin, plan fixe",
+   "dureeS": 8
+  },
+  {
+   "fichier": "hero-chef-scan-carton.mp4",
+   "contenu": "Chef scannant un carton à la réception",
+   "dureeS": 6,
+   "paire": "scan"
+  },
+  {
+   "fichier": "hero-chef-carnet-dlc.mp4",
+   "contenu": "Le même, écrivant sur un carnet (sans)",
+   "dureeS": 6,
+   "paire": "scan"
+  },
+  {
+   "fichier": "hero-brigade-deux-langues.mp4",
+   "contenu": "Deux commis qui se répondent au plan de travail",
+   "dureeS": 12
+  },
+  {
+   "fichier": "hero-cloche-passe.mp4",
+   "contenu": "La cloche du passe, macro, en vibration",
+   "dureeS": 4
+  },
+  {
+   "fichier": "hero-kds-mural.mp4",
+   "contenu": "Chef devant l'écran cuisine, geste de validation",
+   "dureeS": 6
+  },
+  {
+   "fichier": "hero-salle-vide-matin.mp4",
+   "contenu": "Salle vide, chaises retournées",
+   "dureeS": 6
+  },
+  {
+   "fichier": "hero-serveur-plan-table.mp4",
+   "contenu": "Serveur devant sa tablette, salle vide",
+   "dureeS": 6,
+   "paire": "salle-matin"
+  },
+  {
+   "fichier": "hero-serveur-trois-tablettes.mp4",
+   "contenu": "Trois tablettes derrière le comptoir (sans)",
+   "dureeS": 6,
+   "paire": "salle-matin"
+  },
+  {
+   "fichier": "hero-serveur-place-client.mp4",
+   "contenu": "Accueil et placement d'un client",
+   "dureeS": 6
+  },
+  {
+   "fichier": "hero-caisse-ticket-z.mp4",
+   "contenu": "Imprimante thermique, ticket Z qui sort",
+   "dureeS": 8
+  },
+  {
+   "fichier": "hero-directeur-bureau-matin.mp4",
+   "contenu": "Directeur au bureau, ordinateur fermé puis ouvert",
+   "dureeS": 8,
+   "paire": "bureau"
+  },
+  {
+   "fichier": "hero-directeur-sept-onglets.mp4",
+   "contenu": "Écran, sept onglets, curseur qui recopie (sans)",
+   "dureeS": 10,
+   "paire": "bureau"
+  },
+  {
+   "fichier": "hero-fermeture-lumieres.mp4",
+   "contenu": "Extinction des lumières, vu de la rue",
+   "dureeS": 6
+  },
+  {
+   "fichier": "hero-portrait-chef.mp4",
+   "contenu": "Portrait de clôture",
+   "dureeS": 6,
+   "triptyque": true
+  },
+  {
+   "fichier": "hero-portrait-serveur.mp4",
+   "contenu": "Portrait de clôture",
+   "dureeS": 6,
+   "triptyque": true
+  },
+  {
+   "fichier": "hero-portrait-directeur.mp4",
+   "contenu": "Portrait de clôture",
+   "dureeS": 6,
+   "triptyque": true
+  }
+ ],
+ "sonsAenregistrer": [
+  "son-clin-passe.wav",
+  "son-scanner-bip.wav",
+  "son-etiqueteuse.wav",
+  "son-imprimante-z.wav",
+  "son-tiroir-caisse.wav",
+  "son-badge-pointage.wav",
+  "son-ambiance-cuisine-service.wav",
+  "son-ambiance-salle-service.wav"
+ ],
+ "voix": [
+  {
+   "fichier": "vo-chef.mp3",
+   "role": "chef"
+  },
+  {
+   "fichier": "vo-serveur.mp3",
+   "role": "serveur"
+  },
+  {
+   "fichier": "vo-directeur.mp3",
+   "role": "directeur"
+  },
+  {
+   "fichier": "vo-narratrice-finale.mp3",
+   "role": "narratrice",
+   "note": "Une seule phrase, à 3:26."
+  }
+ ],
+ "lexiqueSonore": [
+  {
+   "action": "Pointage entrée/sortie",
+   "son": "double tap sourd",
+   "dureeMs": 200
+  },
+  {
+   "action": "Scan EAN / DLC",
+   "son": "vrai bip du lecteur",
+   "dureeMs": 120
+  },
+  {
+   "action": "Température validée",
+   "son": "deux notes montantes, quinte",
+   "dureeMs": 350
+  },
+  {
+   "action": "Étiquette imprimée",
+   "son": "vrai moteur d'étiqueteuse",
+   "dureeMs": 600
+  },
+  {
+   "action": "Jarvis écoute",
+   "son": "triade chaude montante — jamais robotique",
+   "dureeMs": 400
+  },
+  {
+   "action": "Jarvis a compris",
+   "son": "même triade, descendante",
+   "dureeMs": 250
+  },
+  {
+   "action": "Commande reçue (tous canaux)",
+   "son": "une note courte, identique pour les 4 canaux",
+   "dureeMs": 180
+  },
+  {
+   "action": "Plat prêt / envoyé",
+   "son": "le clin",
+   "dureeMs": 1200
+  },
+  {
+   "action": "Encaissement",
+   "son": "tiroir-caisse + imprimante",
+   "dureeMs": 900
+  },
+  {
+   "action": "Ticket Z",
+   "son": "imprimante thermique en continu",
+   "dureeMs": 4000
+  },
+  {
+   "action": "Iris publie",
+   "son": "whoosh doux + 3 notifications en cascade",
+   "dureeMs": 1500
+  },
+  {
+   "action": "Validation HACCP",
+   "son": "clic de crayon coché",
+   "dureeMs": 150
+  }
+ ],
+ "livrables": [
+  "render:hero (1920x1080 + .srt + .vtt)",
+  "render:hero:loop (boucle 12 s muette + poster)",
+  "render:hero:social (1080x1920 et 1080x1080, sous-titres incrustés)",
+  "render:hero:teaser (45 s : S0+S3+S4+S7)"
+ ],
+ "statut": "a_produire"
+}
