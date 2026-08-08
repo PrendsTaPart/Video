@@ -1,0 +1,15 @@
+{
+  "name": "hero-video",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "npx hyperframes preview",
+    "check": "npx hyperframes lint && npx hyperframes validate && npx hyperframes inspect",
+    "render:hero": "npx hyperframes render",
+    "render:hero:loop": "npx hyperframes render --composition compositions/loop.html",
+    "qa:hero": "node scripts/qa-hero.mjs"
+  },
+  "dependencies": {
+    "gsap": "^3.15.0"
+  }
+}

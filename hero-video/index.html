@@ -1,0 +1,517 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8" />
+<title>FoodEatUp — Le même jour, deux fois</title>
+<style>
+  :root {
+    --avec-blue: #1E9BF0;
+    --avec-navy: #1B2A41;
+    --avec-offwhite: #F7F9FC;
+    --avec-orange: #FFA500;
+    --sans-grey: #8A9099;
+    --sans-dark-grey: #3A3F45;
+    --sans-light-grey: #EDEEF0;
+    --sans-alert-red: #D64545;
+    --wipe-progress: 0;
+  }
+  html, body { margin: 0; padding: 0; background: #000; }
+  #hero {
+    position: relative;
+    width: 1920px;
+    height: 1080px;
+    overflow: hidden;
+    background: #000;
+    font-family: "Nunito", "Poppins", system-ui, sans-serif;
+  }
+  .clip { position: absolute; inset: 0; visibility: hidden; }
+  .clip.media-fill video, .clip.media-fill img { width: 100%; height: 100%; object-fit: cover; display: block; }
+
+  /* Sequence-level color grading: sans = 60% desaturated LUT, avec = full color */
+  .seq-sans .media-fill video, .seq-sans .media-fill img { filter: saturate(0.4) grayscale(0.35) contrast(0.96); }
+  .seq-avec .media-fill video, .seq-avec .media-fill img { filter: none; }
+  .seq-neutre .media-fill video, .seq-neutre .media-fill img { filter: none; }
+
+  /* The signature blue wipe: a vertical line sweeping left -> right, revealing color */
+  .wipe-sweep {
+    position: absolute; inset: 0; z-index: 50; pointer-events: none;
+  }
+  .wipe-sweep .line {
+    position: absolute; top: 0; bottom: 0;
+    left: calc(var(--wipe-progress) * 100%);
+    width: 6px; margin-left: -3px;
+    background: var(--avec-blue);
+    box-shadow: 0 0 60px 10px var(--avec-blue), 0 0 120px 30px rgba(30,155,240,0.5);
+  }
+  .wipe-sweep .veil-left {
+    position: absolute; top: 0; bottom: 0; left: 0;
+    width: calc(var(--wipe-progress) * 100%);
+    background: transparent;
+  }
+  /* Grey snap (avec -> sans): a hard, sourceless flash line, no glow, no easing */
+  .snap-sweep .line { box-shadow: none; background: var(--sans-grey); width: 4px; }
+
+  .subtitle {
+    z-index: 60;
+    display: flex; align-items: flex-end; justify-content: center;
+    padding-bottom: 64px;
+  }
+  .subtitle span {
+    font-weight: 700; font-size: 44px; line-height: 1.25; color: #fff;
+    text-align: center; max-width: 1400px;
+    -webkit-text-stroke: 3px var(--avec-navy);
+    paint-order: stroke fill;
+  }
+  .seq-sans .subtitle span { -webkit-text-stroke: 3px var(--sans-dark-grey); opacity: 0.92; }
+
+  .speaker-tag {
+    position: absolute; top: 48px; left: 64px; z-index: 60;
+    font-weight: 700; font-size: 22px; letter-spacing: 0.08em; text-transform: uppercase;
+    color: rgba(255,255,255,0.75);
+  }
+
+  .card {
+    position: absolute; inset: 0; display: flex; flex-direction: column;
+    align-items: center; justify-content: center; text-align: center;
+    background: var(--avec-navy); color: #fff;
+  }
+  .card.opening { background: var(--avec-navy); }
+  .card h1 { font-size: 64px; font-weight: 800; line-height: 1.3; margin: 0; white-space: pre-line; }
+
+  .black-frame { position: absolute; inset: 0; background: #000; z-index: 80; }
+
+  /* Beat A — convergence multi-canal (motion graphic) */
+  .converge-stage { position: absolute; inset: 0; background: var(--avec-navy); }
+  .converge-node {
+    position: absolute; width: 220px; height: 90px; border-radius: 14px;
+    background: rgba(255,255,255,0.08); border: 2px solid var(--avec-blue);
+    color: #fff; display: flex; align-items: center; justify-content: center;
+    font-weight: 700; font-size: 26px;
+  }
+  .converge-node[data-corner="tl"] { top: 8%; left: 8%; }
+  .converge-node[data-corner="tr"] { top: 8%; right: 8%; }
+  .converge-node[data-corner="bl"] { bottom: 8%; left: 8%; }
+  .converge-node[data-corner="br"] { bottom: 8%; right: 8%; }
+  .converge-line {
+    position: absolute; left: 50%; top: 50%; width: 640px; height: 90px;
+    margin-left: -320px; margin-top: -45px; border-radius: 14px;
+    background: var(--avec-blue); color: #fff; display: flex; align-items: center; justify-content: center;
+    font-weight: 800; font-size: 30px; opacity: 0; transform: scale(0.6);
+  }
+
+  /* Beat D — cascade de notifications (motion graphic) */
+  .iris-stage { position: absolute; inset: 0; background: var(--avec-offwhite); }
+  .iris-device {
+    position: absolute; width: 260px; height: 160px; border-radius: 18px;
+    background: #fff; box-shadow: 0 20px 60px rgba(27,42,65,0.25);
+    display: flex; align-items: center; justify-content: center; padding: 16px; box-sizing: border-box;
+  }
+  .iris-device .toast {
+    background: var(--avec-orange); color: var(--avec-navy); font-weight: 800; font-size: 20px;
+    border-radius: 10px; padding: 10px 14px; opacity: 0; transform: translateY(14px);
+  }
+  .iris-device[data-slot="1"] { top: 18%; left: 12%; }
+  .iris-device[data-slot="2"] { top: 40%; left: 42%; }
+  .iris-device[data-slot="3"] { top: 62%; left: 66%; }
+
+  .triptych { position: absolute; inset: 0; display: flex; }
+  .triptych .panel { position: relative; flex: 1; overflow: hidden; }
+  .triptych .panel video { width: 100%; height: 100%; object-fit: cover; }
+  .triptych .panel::after { content: ""; position: absolute; inset: 0; border-right: 2px solid rgba(255,255,255,0.15); }
+
+  .cta-card { position: absolute; inset: 0; background: var(--avec-navy); display: flex; flex-direction: column; align-items: center; justify-content: center; color: #fff; }
+  .cta-card img.logo { height: 180px; margin-bottom: 32px; }
+  .cta-card .slogan { font-size: 30px; font-weight: 600; opacity: 0.9; margin-bottom: 24px; }
+  .cta-card .cta { font-size: 28px; font-weight: 800; color: var(--avec-orange); }
+</style>
+</head>
+<body>
+
+<script id="hero-data" type="application/json">
+{
+  "title": "Le même jour, deux fois",
+  "fps": 30,
+  "durationSeconds": 225,
+  "width": 1920,
+  "height": 1080,
+  "wipe": {
+    "sansToAvec": { "durationSeconds": 0.7, "easing": "cubic-bezier(0.65,0,0.35,1)", "atSeconds": [40, 100, 170] },
+    "avecToSans": { "durationSeconds": 0.4, "easing": "none", "atSeconds": [75, 145] }
+  },
+  "clin": {
+    "file": "assets/sfx/son-clin-passe-take1.mp3",
+    "alternates": ["assets/sfx/son-clin-passe-take2.mp3", "assets/sfx/son-clin-passe-take3.mp3"],
+    "status": "AI_GENERATED_PLACEHOLDER",
+    "statusNote": "Généré par l'API Sound Effects ElevenLabs, PAS une vraie cloche de passe enregistrée en cuisine. Utilisable pour un premier montage/validation du rythme ; le brief demande explicitement un enregistrement réel pour la version finale (réverbération du vrai lieu, accordage sur la tonique de la musique).",
+    "atSeconds": [129, 198, 223.5],
+    "rule": "Doit sonner exactement 3 fois dans tout le film."
+  },
+  "musicBeds": {
+    "sans": { "file": "assets/music/musique-sans.mp3", "status": "AI_GENERATED_PLACEHOLDER", "coversSequences": ["S1", "S3", "S5"] },
+    "avec": { "file": "assets/music/musique-avec.mp3", "status": "AI_GENERATED_PLACEHOLDER", "coversSequences": ["S2", "S4", "S6"] },
+    "resolution": { "file": "assets/music/musique-resolution-finale.mp3", "status": "AI_GENERATED_PLACEHOLDER", "coversSequences": ["S7"] }
+  },
+  "sfxCues": [
+    { "file": "assets/sfx/son-scanner-bip.mp3", "atSeconds": 60, "note": "Chef scanne le carton (S2)." },
+    { "file": "assets/sfx/son-jarvis-ecoute.mp3", "atSeconds": 112, "note": "Jarvis écoute (beat B, chef)." },
+    { "file": "assets/sfx/son-jarvis-compris.mp3", "atSeconds": 122, "note": "Jarvis a compris (beat B, chef2)." },
+    { "file": "assets/sfx/son-imprimante-z.mp3", "atSeconds": 172, "note": "Ticket Z (S6)." },
+    { "file": "assets/sfx/son-iris-publie.mp3", "atSeconds": 141, "note": "Iris publie (beat D)." },
+    { "file": "assets/sfx/son-validation-haccp.mp3", "atSeconds": 184, "note": "Photo IA nettoyage (S6)." }
+  ],
+  "sequences": [
+    {
+      "id": "S0",
+      "label": "Ouverture",
+      "state": "neutre",
+      "fromSeconds": 0,
+      "durationSeconds": 15,
+      "music": "silence",
+      "beats": [
+        {
+          "id": "s0-cuisine-vide",
+          "fromSeconds": 0,
+          "durationSeconds": 9,
+          "source": { "kind": "image", "key": "assets/image/ambiance/hero-01-cuisine-vide.png" },
+          "note": "Plan fixe cuisine vide, puis dédoublement gris/couleur à 9-12s (3s), la couleur disparaît."
+        },
+        {
+          "id": "s0-carton",
+          "fromSeconds": 12,
+          "durationSeconds": 3,
+          "source": { "kind": "motion", "key": "carton-texte" },
+          "text": "Un restaurant.\nUn jour.\nDeux fois.",
+          "sfx": ["note-piano-12s"]
+        }
+      ]
+    },
+    {
+      "id": "S1",
+      "label": "Avant le service",
+      "state": "sans",
+      "fromSeconds": 15,
+      "durationSeconds": 25,
+      "music": "sans",
+      "beats": [
+        {
+          "id": "s1-directeur",
+          "fromSeconds": 16,
+          "durationSeconds": 12,
+          "speaker": "directeur",
+          "vo": { "file": "assets/voice/s1-directeur.mp3", "text": "Huit heures... J'ouvre mes sept onglets. Le stock ne sait pas ce que la caisse a vendu. Alors je fais le pont, à la main." },
+          "source": { "kind": "footage", "key": "assets/video/hero-directeur-sept-onglets.mp4" },
+          "pairId": "directeur-sept-onglets"
+        },
+        {
+          "id": "s1-chef",
+          "fromSeconds": 28,
+          "durationSeconds": 6,
+          "speaker": "chef",
+          "vo": { "file": "assets/voice/s1-chef.mp3", "text": "Les DLC, je les note sur un carnet... Je les ressaisirai ce soir. Si j'y pense." },
+          "source": { "kind": "footage", "key": "assets/video/hero-chef-carnet-dlc.mp4" },
+          "pairId": "chef-reception"
+        },
+        {
+          "id": "s1-serveur",
+          "fromSeconds": 34,
+          "durationSeconds": 6,
+          "speaker": "serveur",
+          "vo": { "file": "assets/voice/s1-serveur.mp3", "text": "Onze messages sur le répondeur... Personne n'a décroché entre quinze heures et dix-huit heures hier. On ne saura jamais combien ça nous a coûté." },
+          "source": { "kind": "footage", "key": "assets/video/hero-serveur-trois-tablettes.mp4" },
+          "note": "GAP: pas de plan répondeur dédié généré, réemploi temporaire de hero-serveur-trois-tablettes.mp4",
+          "pairId": "serveur-reservations"
+        }
+      ]
+    },
+    {
+      "id": "S2",
+      "label": "Avant le service",
+      "state": "avec",
+      "fromSeconds": 40,
+      "durationSeconds": 35,
+      "music": "avec",
+      "beats": [
+        {
+          "id": "s2-directeur",
+          "fromSeconds": 42,
+          "durationSeconds": 17,
+          "speaker": "directeur",
+          "vo": { "file": "assets/voice/s2-directeur.mp3", "text": "Huit heures... Je n'ouvre pas un tableur. J'ouvre ce que PrediBot a préparé cette nuit. Ce qu'on va vendre. Ce qu'il faut produire. Ce qu'il manque... Ma commande part chez mes fournisseurs. Je n'ai appelé personne." },
+          "source": { "kind": "footage", "key": "assets/video/hero-directeur-bureau-matin.mp4" },
+          "pairId": "directeur-sept-onglets"
+        },
+        {
+          "id": "s2-chef",
+          "fromSeconds": 59,
+          "durationSeconds": 7,
+          "speaker": "chef",
+          "vo": { "file": "assets/voice/s2-chef.mp3", "text": "Je scanne... La DLC, le lot, la température. C'est tracé avant même que je pose le carton." },
+          "source": { "kind": "footage", "key": "assets/video/hero-chef-scan-carton.mp4" },
+          "pairId": "chef-reception"
+        },
+        {
+          "id": "s2-serveur",
+          "fromSeconds": 66,
+          "durationSeconds": 9,
+          "speaker": "serveur",
+          "vo": { "file": "assets/voice/s2-serveur.mp3", "text": "Les appels de cette nuit, Caroline les a pris... Vingt-deux heures quarante, une table de six. Je n'ai pas décroché. Mon plan de table est fait avant que quiconque pousse la porte." },
+          "source": { "kind": "footage", "key": "assets/video/hero-serveur-plan-table.mp4" },
+          "pairId": "serveur-reservations"
+        }
+      ]
+    },
+    {
+      "id": "S3",
+      "label": "Pendant le service",
+      "state": "sans",
+      "fromSeconds": 75,
+      "durationSeconds": 25,
+      "music": "sans",
+      "beats": [
+        {
+          "id": "s3-serveur",
+          "fromSeconds": 77,
+          "durationSeconds": 7,
+          "speaker": "serveur",
+          "vo": { "file": "assets/voice/s3-serveur.mp3", "text": "Uber sur cette tablette. La livraison sur celle-là. La salle sur la troisième." },
+          "source": { "kind": "footage", "key": "assets/video/hero-serveur-trois-tablettes.mp4" }
+        },
+        {
+          "id": "s3-chef",
+          "fromSeconds": 84,
+          "durationSeconds": 12,
+          "speaker": "chef",
+          "vo": { "file": "assets/voice/s3-chef.mp3", "text": "Un bon est tombé par terre... On s'en rendra compte au dessert. Le tartare est fini depuis midi... Le site l'a vendu trois fois de plus." },
+          "source": { "kind": "image", "key": "assets/image/ambiance/hero-05-bon-tombe.png" },
+          "note": "GAP: image fixe seulement, pas de plan vidéo dédié généré."
+        },
+        {
+          "id": "s3-directeur",
+          "fromSeconds": 96,
+          "durationSeconds": 4,
+          "speaker": "directeur",
+          "vo": { "file": "assets/voice/s3-directeur.mp3", "text": "Je ne sais pas ce qui se passe en salle... Je descends voir." },
+          "source": { "kind": "footage", "key": "assets/video/hero-salle-vide-matin.mp4" },
+          "note": "GAP: pas de plan \"descend l'escalier\" dédié, réemploi temporaire."
+        }
+      ]
+    },
+    {
+      "id": "S4",
+      "label": "Pendant le service",
+      "state": "avec",
+      "fromSeconds": 100,
+      "durationSeconds": 45,
+      "music": "avec",
+      "locked": true,
+      "lockNote": "INTOUCHABLE. Si le film doit être raccourci, raccourcir S1/S3/S5 en priorité, jamais S4.",
+      "beats": [
+        {
+          "id": "s4-beatA-multicanal",
+          "fromSeconds": 100,
+          "durationSeconds": 12,
+          "speaker": "serveur",
+          "vo": { "file": "assets/voice/s4a-serveur.mp3", "text": "Le QR de la table sept. Le site. L'agent vocal. La livraison... Tout arrive au même endroit." },
+          "source": { "kind": "motion", "key": "convergence-multicanal" },
+          "keyBeat": true,
+          "note": "Motion design HTML/CSS/GSAP : 4 sources aux coins convergent vers une file centrale, easing back.out(1.4), 900ms."
+        },
+        {
+          "id": "s4-beatB-jarvis-chef1",
+          "fromSeconds": 112,
+          "durationSeconds": 5,
+          "speaker": "chef",
+          "vo": { "file": "assets/voice/s4b-chef1.mp3", "text": "Je sors trois kilos de saumon." },
+          "source": { "kind": "footage", "key": "assets/video/hero-brigade-deux-langues.mp4", "mediaStartSeconds": 0 },
+          "keyBeat": true
+        },
+        {
+          "id": "s4-beatB-jarvis-commis",
+          "fromSeconds": 117,
+          "durationSeconds": 5,
+          "speaker": "commis",
+          "vo": { "file": "assets/voice/s4b-commis-es.mp3", "text": "Voy a sacar tres kilos de salmón.", "subtitleFr": "Je sors trois kilos de saumon." },
+          "source": { "kind": "footage", "key": "assets/video/hero-brigade-deux-langues.mp4", "mediaStartSeconds": 5 },
+          "keyBeat": true,
+          "note": "Traitement strictement symétrique au beat précédent : même cadrage, même durée, même style de sous-titre, aucun label de langue."
+        },
+        {
+          "id": "s4-beatB-jarvis-chef2",
+          "fromSeconds": 122,
+          "durationSeconds": 3,
+          "speaker": "chef",
+          "vo": { "file": "assets/voice/s4b-chef2.mp3", "text": "Jarvis comprend les deux... Mon stock aussi." },
+          "source": { "kind": "footage", "key": "assets/video/hero-brigade-deux-langues.mp4", "mediaStartSeconds": 10 },
+          "keyBeat": true
+        },
+        {
+          "id": "s4-beatC-envoi-chef",
+          "fromSeconds": 125,
+          "durationSeconds": 4,
+          "speaker": "chef",
+          "vo": { "file": "assets/voice/s4c-chef-platpret.mp3", "text": "Plat prêt." },
+          "source": { "kind": "footage", "key": "assets/video/hero-kds-mural.mp4" },
+          "sfx": ["clin@129"],
+          "keyBeat": true
+        },
+        {
+          "id": "s4-beatC-envoi-serveur",
+          "fromSeconds": 129,
+          "durationSeconds": 5,
+          "speaker": "serveur",
+          "vo": { "file": "assets/voice/s4c-serveur.mp3", "text": "Je n'ai pas eu besoin qu'on me le crie." },
+          "source": { "kind": "footage", "key": "assets/video/hero-serveur-plan-table.mp4" },
+          "keyBeat": true
+        },
+        {
+          "id": "s4-beatD-iris",
+          "fromSeconds": 134,
+          "durationSeconds": 11,
+          "speaker": "directeur",
+          "vo": { "file": "assets/voice/s4d-directeur.mp3", "text": "Trente kilos de saumon à écouler avant jeudi... Iris le voit aussi. À treize heures, mes clients savent qu'il y a du saumon ce soir... Le problème est devenu le plat du jour." },
+          "source": { "kind": "motion", "key": "notification-cascade-iris" },
+          "keyBeat": true,
+          "note": "Motion design : whoosh + trois notifications en cascade sur trois appareils, comme spécifié en §4.3. Aucun plan captation généré pour ce beat."
+        }
+      ]
+    },
+    {
+      "id": "S5",
+      "label": "Après le service",
+      "state": "sans",
+      "fromSeconds": 145,
+      "durationSeconds": 25,
+      "music": "sans",
+      "beats": [
+        {
+          "id": "s5-serveur",
+          "fromSeconds": 147,
+          "durationSeconds": 11,
+          "speaker": "serveur",
+          "vo": { "file": "assets/voice/s5-serveur.mp3", "text": "La caisse, je la compte... Je la recompte. L'écart, c'est trois euros quarante, ou trente-quatre. On saura demain." },
+          "source": { "kind": "image", "key": "assets/image/ambiance/hero-09-caisse-fin-service.png" }
+        },
+        {
+          "id": "s5-chef",
+          "fromSeconds": 158,
+          "durationSeconds": 6,
+          "speaker": "chef",
+          "vo": { "file": "assets/voice/s5-chef.mp3", "text": "Le contrôle, c'est jeudi... Je remplirai le classeur mercredi soir, de mémoire." },
+          "source": { "kind": "footage", "key": "assets/video/hero-chef-carnet-dlc.mp4" },
+          "note": "Réemploi du plan carnet DLC de S1 (même geste, même douleur)."
+        },
+        {
+          "id": "s5-directeur",
+          "fromSeconds": 164,
+          "durationSeconds": 6,
+          "speaker": "directeur",
+          "vo": { "file": "assets/voice/s5-directeur.mp3", "text": "Mon chiffre de mars... je le connaîtrai en mai." },
+          "source": { "kind": "footage", "key": "assets/video/hero-directeur-sept-onglets.mp4" }
+        }
+      ]
+    },
+    {
+      "id": "S6",
+      "label": "Après le service",
+      "state": "avec",
+      "fromSeconds": 170,
+      "durationSeconds": 30,
+      "music": "resolution",
+      "beats": [
+        {
+          "id": "s6-serveur",
+          "fromSeconds": 172,
+          "durationSeconds": 12,
+          "speaker": "serveur",
+          "vo": { "file": "assets/voice/s6-serveur.mp3", "text": "Le Z... Un geste. L'écart est là, expliqué, archivé... Et les avis du jour ont déjà une réponse." },
+          "source": { "kind": "footage", "key": "assets/video/hero-caisse-ticket-z.mp4" }
+        },
+        {
+          "id": "s6-chef",
+          "fromSeconds": 184,
+          "durationSeconds": 10,
+          "speaker": "chef",
+          "vo": { "file": "assets/voice/s6-chef.mp3", "text": "Une photo... L'IA contrôle mon nettoyage. Mon classeur HACCP s'est écrit tout seul... Pendant que je cuisinais." },
+          "source": { "kind": "footage", "key": "assets/video/hero-kds-mural.mp4" },
+          "note": "GAP: pas de plan \"photo IA nettoyage\" dédié généré, réemploi temporaire."
+        },
+        {
+          "id": "s6-directeur",
+          "fromSeconds": 194,
+          "durationSeconds": 6,
+          "speaker": "directeur",
+          "vo": { "file": "assets/voice/s6-directeur.mp3", "text": "Dix-huit heures... Je connais mon chiffre." },
+          "source": { "kind": "footage", "key": "assets/video/hero-directeur-bureau-matin.mp4" },
+          "sfx": ["clin@198"],
+          "keyBeat": true
+        }
+      ]
+    },
+    {
+      "id": "S7",
+      "label": "Clôture",
+      "state": "avec",
+      "fromSeconds": 200,
+      "durationSeconds": 25,
+      "music": "resolution",
+      "beats": [
+        {
+          "id": "s7-triptyque",
+          "fromSeconds": 200,
+          "durationSeconds": 6,
+          "source": { "kind": "footage", "key": ["assets/video/hero-portrait-chef.mp4", "assets/video/hero-portrait-serveur.mp4", "assets/video/hero-portrait-directeur.mp4"] },
+          "note": "Split-screen 3 volets, silence complet pendant 3s après le split (règle §4.4)."
+        },
+        {
+          "id": "s7-noir",
+          "fromSeconds": 206,
+          "durationSeconds": 0.4,
+          "source": { "kind": "motion", "key": "noir" }
+        },
+        {
+          "id": "s7-narratrice",
+          "fromSeconds": 206.5,
+          "durationSeconds": 4,
+          "speaker": "narratrice",
+          "vo": { "file": "assets/voice/s7-narratrice.mp3", "text": "Ce n'est pas la même journée... C'est le même restaurant." },
+          "source": { "kind": "motion", "key": "trois-visages-silence" },
+          "keyBeat": true,
+          "note": "Seule voix hors chef/serveur/directeur de tout le film."
+        },
+        {
+          "id": "s7-logo-cta",
+          "fromSeconds": 211,
+          "durationSeconds": 14,
+          "source": { "kind": "motion", "key": "logo-cta", "logo": "assets/brand/foodeatup-logo-mascot.png" },
+          "text": "Une infinité de solutions pour gérer votre restaurant.",
+          "cta": "Essai gratuit 14 jours — foodeatup.com",
+          "sfx": ["clin@223.5-solo"]
+        }
+      ]
+    }
+  ],
+  "tokens": {
+    "avec": { "blue": "#1E9BF0", "navy": "#1B2A41", "offwhite": "#F7F9FC", "orange": "#FFA500" },
+    "sans": { "grey": "#8A9099", "darkGrey": "#3A3F45", "lightGrey": "#EDEEF0", "alertRed": "#D64545" }
+  },
+  "characters": {
+    "chef": { "voiceId": "pNInz6obpgDQGcFmaJgB", "referenceElementId": "c841147a-6375-4c5e-b146-e45c1cab7e99", "characterSheet": "assets/image/characters/chef-character-sheet.png" },
+    "serveur": { "voiceId": "EXAVITQu4vr4xnSDxMaL", "referenceElementId": "a8f9dfa9-47cf-4ba3-86f8-93ab0b4a11c1", "characterSheet": "assets/image/characters/serveur-character-sheet.png" },
+    "directeur": { "voiceId": "VR6AewLTigWG4xSOukaG", "referenceElementId": "2f3b8e65-a41d-429a-abf7-5df04baddf7a", "characterSheet": "assets/image/characters/directeur-character-sheet.png" },
+    "commis": { "voiceId": "TxGEqnHWrfWFTfGW9XjX", "note": "Second cuisinier, apparaît uniquement dans le beat Jarvis multilingue, pas d'élément de référence dédié." },
+    "narratrice": { "voiceId": "21m00Tcm4TlvDq8ikWAM" }
+  }
+}
+</script>
+
+<div id="hero" class="composition" data-composition-id="hero" data-width="1920" data-height="1080" data-start="0" data-duration="225">
+  <!-- Populated at load time from #hero-data by hero-build.js. Kept out of hand-authored
+       markup on purpose: subtitles and clip timings must always come from data/hero.json,
+       never be retyped in HTML (see brief §"Sous-titres"). -->
+</div>
+
+<script>window.__timelines = window.__timelines || {};</script>
+<script src="assets/vendor/gsap.min.js"></script>
+<script src="hero-build.js"></script>
+</body>
+</html>
