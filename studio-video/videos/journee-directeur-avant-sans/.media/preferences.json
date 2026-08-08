@@ -1,0 +1,27 @@
+{
+  "version": 1,
+  "preferences": {
+    "style_preset.faceless-explainer": {
+      "value": "cartesian",
+      "confirmed_in": [
+        "journee-directeur-avant-sans"
+      ],
+      "updated_at": "2026-08-08T14:57:53.597Z"
+    },
+    "aspect": {
+      "value": "1920x1080",
+      "confirmed_in": [
+        "journee-directeur-avant-sans"
+      ],
+      "updated_at": "2026-08-08T14:57:53.649Z"
+    },
+    "language": {
+      "value": "fr",
+      "confirmed_in": [
+        "journee-directeur-avant-sans"
+      ],
+      "updated_at": "2026-08-08T14:57:53.699Z"
+    }
+  },
+  "sightings": {}
+}

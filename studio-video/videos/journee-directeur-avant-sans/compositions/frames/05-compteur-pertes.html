@@ -1,0 +1,139 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+  </head>
+  <body>
+    <template>
+      <style>
+        @font-face { font-family: "Inter"; src: url("assets/fonts/Inter-400.woff2") format("woff2"); font-weight: 400; font-style: normal; font-display: block; }
+        @font-face { font-family: "Inter"; src: url("assets/fonts/Inter-600.woff2") format("woff2"); font-weight: 600; font-style: normal; font-display: block; }
+        @font-face { font-family: "Inter"; src: url("assets/fonts/Inter-700.woff2") format("woff2"); font-weight: 700; font-style: normal; font-display: block; }
+        @font-face { font-family: "Inter"; src: url("assets/fonts/Inter-800.woff2") format("woff2"); font-weight: 800; font-style: normal; font-display: block; }
+
+        #root {
+          position: relative;
+          width: 1920px;
+          height: 1080px;
+          overflow: hidden;
+          font-family: "Inter", sans-serif;
+          color: #3A3F45;
+        }
+        .f5-bg { position: absolute; inset: 0; background: #EDEEF0; }
+
+        .f5-brokenline { position: absolute; left: 140px; right: 140px; top: 940px; height: 2px; }
+        .f5-brokenline span { position: absolute; top: 0; height: 2px; background: #8A9099; opacity: 0.5; transform-origin: 0% 50%; }
+
+        .f5-stats { position: absolute; left: 220px; top: 120px; width: 1480px; }
+        .f5-row { display: flex; align-items: baseline; gap: 34px; margin-bottom: 20px; }
+        .f5-row .num { font-size: 118px; font-weight: 800; color: #D64545; font-variant-numeric: tabular-nums; min-width: 260px; text-align: right; }
+        .f5-row .label { font-size: 34px; font-weight: 600; color: rgba(58,63,69,0.85); }
+        .f5-rowwrap { margin-bottom: 26px; }
+        .f5-barrail { position: relative; height: 6px; width: 900px; margin: 10px 0 0 294px; background: rgba(58,63,69,0.08); }
+        .f5-barfill { position: absolute; inset: 0; background: #D64545; opacity: 0.55; transform-origin: 0% 50%; transform: scaleX(0); }
+
+        .f5-chip {
+          position: absolute; left: 660px; top: 800px; width: 620px; height: 130px;
+          border: 2px solid #D64545; border-radius: 14px;
+          display: flex; align-items: center; justify-content: center; gap: 18px;
+        }
+        .f5-chip .range { font-size: 62px; font-weight: 800; color: #D64545; font-variant-numeric: tabular-nums; }
+        .f5-chip .unit { font-size: 30px; font-weight: 600; color: rgba(58,63,69,0.85); }
+      </style>
+
+      <div id="root" data-composition-id="05-compteur-pertes" data-width="1920" data-height="1080">
+        <div class="f5-bg clip" id="f5-bgclip" data-start="0" data-duration="12.069" data-track-index="1"></div>
+
+        <div class="f5-brokenline" id="f5-brokenline">
+          <span style="left:2%; width:14%;"></span>
+          <span style="left:22%; width:18%; top:-3px;"></span>
+          <span style="left:46%; width:12%; top:2px;"></span>
+          <span style="left:64%; width:20%;"></span>
+          <span style="left:88%; width:10%; top:-2px;"></span>
+        </div>
+
+        <div class="f5-stats">
+          <div class="f5-rowwrap">
+            <div class="f5-row" id="f5-row1"><div class="num" id="f5-n1">0</div><div class="label">abonnements à payer</div></div>
+            <div class="f5-barrail"><div class="f5-barfill" id="f5-bar1"></div></div>
+          </div>
+          <div class="f5-rowwrap">
+            <div class="f5-row" id="f5-row2"><div class="num" id="f5-n2">0</div><div class="label">doubles saisies / semaine</div></div>
+            <div class="f5-barrail"><div class="f5-barfill" id="f5-bar2"></div></div>
+          </div>
+          <div class="f5-rowwrap">
+            <div class="f5-row" id="f5-row3"><div class="num" id="f5-n3">0</div><div class="label">minutes perdues / semaine</div></div>
+            <div class="f5-barrail"><div class="f5-barfill" id="f5-bar3"></div></div>
+          </div>
+        </div>
+
+        <div class="f5-chip" id="f5-chip">
+          <div class="range" id="f5-range">—</div>
+          <div class="unit">€ / mois</div>
+        </div>
+      </div>
+
+      <script>
+        window.__timelines = window.__timelines || {};
+        const tl = gsap.timeline({ paused: true });
+
+        gsap.set(["#f5-row1", "#f5-row2", "#f5-row3"], { opacity: 0, y: 16 });
+        gsap.set("#f5-chip", { opacity: 0, scale: 0.92 });
+        gsap.set("#f5-stats", { y: 0 });
+        gsap.set("#f5-brokenline span", { opacity: 0, scaleX: 0 });
+
+        // broken line draws itself on, segment by segment (more visible motion than a fade)
+        tl.to("#f5-brokenline span", { opacity: 0.5, duration: 0.01 }, 0);
+        tl.to("#f5-brokenline span", { scaleX: 1, duration: 0.4, ease: "power2.out", stagger: 0.08 }, 0.05);
+
+        // count-up + a paired bar-fill (same ease/duration so number and bar land together)
+        function countUp(id, barId, target, max, dur, at) {
+          const el = document.getElementById(id);
+          const state = { v: 0 };
+          tl.to(state, {
+            v: target, duration: dur, ease: "power2.out",
+            onUpdate: () => { el.textContent = Math.round(state.v).toLocaleString("fr-FR"); }
+          }, at);
+          if (barId) {
+            tl.fromTo(`#${barId}`, { scaleX: 0 }, { scaleX: Math.min(1, target / max), duration: dur, ease: "power2.out" }, at);
+          }
+        }
+
+        // Scene 1 (0.0-1.59s): "Sept abonnements à payer." — row 1, count 0->7 + bar
+        tl.to("#f5-row1", { opacity: 1, y: 0, duration: 0.4, ease: "power3.out" }, 0.15);
+        countUp("f5-n1", "f5-bar1", 7, 45, 1.1, 0.2);
+
+        // Scene 2 (1.59-3.77s): "Des doubles saisies, chaque semaine." — row 2, count 0->12 + bar
+        tl.to("#f5-row2", { opacity: 1, y: 0, duration: 0.4, ease: "power3.out" }, 1.75);
+        countUp("f5-n2", "f5-bar2", 12, 45, 1.3, 1.85);
+
+        // Scene 3 (3.77-5.53s): "Des minutes qui s'accumulent." — row 3, count 0->45 + bar (full rail — the worst of the three)
+        tl.to("#f5-row3", { opacity: 1, y: 0, duration: 0.4, ease: "power3.out" }, 3.9);
+        countUp("f5-n3", "f5-bar3", 45, 45, 1.4, 4.0);
+
+        // Scene 4 (5.53-8.22s): "Et un coût que je ne connais qu'en fourchette :" — stats compress up, chip outline appears
+        tl.to("#f5-stats", { y: -18, duration: 0.6, ease: "power3.out" }, 5.7);
+        tl.to("#f5-chip", { opacity: 1, scale: 1, duration: 0.4, ease: "power3.out" }, 6.4);
+
+        // Scene 5 (8.22-10.27s): "entre 350 et 900 euros par mois." — the range lands, both bounds together
+        tl.call(() => { document.getElementById("f5-range").textContent = "—"; }, [], 8.3);
+        tl.fromTo("#f5-range", { opacity: 0.3 }, {
+          opacity: 1, duration: 0.6, ease: "power3.out",
+          onStart: () => { document.getElementById("f5-range").textContent = "350–900"; }
+        }, 8.45);
+
+        // Scene 6 (10.27-12.069s): hold — subtle jitter on the chip only
+        const f5phase = { p: 0 };
+        tl.to(f5phase, {
+          p: Math.PI * 2 * 1.2, duration: 1.7, ease: "none",
+          onUpdate: () => {
+            const s = Math.sin(f5phase.p);
+            gsap.set("#f5-chip", { scale: 1 + s * 0.008 });
+          }
+        }, 10.35);
+
+        window.__timelines["05-compteur-pertes"] = tl;
+      </script>
+    </template>
+  </body>
+</html>
