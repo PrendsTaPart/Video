@@ -1,0 +1,195 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=1920, height=1080" />
+    <script src="assets/vendor/gsap.min.js"></script>
+    <style>
+      * { margin:0; padding:0; box-sizing:border-box; }
+      html, body { width:1920px; height:1080px; overflow:hidden; background:#FCF9E6; }
+      body { font-family:"Inter",sans-serif; }
+      @font-face {
+        font-family:"Fredoka";
+        src:url("assets/vendor/fonts/Fredoka-Variable.woff2") format("woff2-variations");
+        font-weight:300 700; font-display:block;
+      }
+      #root { position:relative; width:1920px; height:1080px; overflow:hidden; background:#FCF9E6; }
+      #root > div[data-composition-src] { position:absolute; inset:0; }
+    </style>
+  </head>
+  <body>
+    <div
+      id="root"
+      data-composition-id="s1-salle-avant"
+      data-start="0"
+      data-width="1920"
+      data-height="1080"
+      data-duration="73.3"
+    >
+      <div
+        id="el-s1-s1-salle-vide"
+        data-composition-id="s1-s1-salle-vide"
+        data-composition-src="compositions/s1/s1-s1-salle-vide.html"
+        data-start="0.00"
+        data-duration="7.39"
+        data-track-index="1"
+        data-width="1920"
+        data-height="1080"
+      ></div>
+      <div
+        id="el-s1-s2-ouverture"
+        data-composition-id="s1-s2-ouverture"
+        data-composition-src="compositions/s1/s1-s2-ouverture.html"
+        data-start="7.39"
+        data-duration="4.56"
+        data-track-index="1"
+        data-width="1920"
+        data-height="1080"
+      ></div>
+      <div
+        id="el-s1-s3-reservations"
+        data-composition-id="s1-s3-reservations"
+        data-composition-src="compositions/s1/s1-s3-reservations.html"
+        data-start="11.95"
+        data-duration="6.52"
+        data-track-index="1"
+        data-width="1920"
+        data-height="1080"
+      ></div>
+      <div
+        id="el-s1-s4-appels"
+        data-composition-id="s1-s4-appels"
+        data-composition-src="compositions/s1/s1-s4-appels.html"
+        data-start="18.47"
+        data-duration="11.05"
+        data-track-index="1"
+        data-width="1920"
+        data-height="1080"
+      ></div>
+      <div
+        id="el-s1-s5-ajout"
+        data-composition-id="s1-s5-ajout"
+        data-composition-src="compositions/s1/s1-s5-ajout.html"
+        data-start="29.52"
+        data-duration="5.24"
+        data-track-index="1"
+        data-width="1920"
+        data-height="1080"
+      ></div>
+      <div
+        id="el-s1-s6-creneaux"
+        data-composition-id="s1-s6-creneaux"
+        data-composition-src="compositions/s1/s1-s6-creneaux.html"
+        data-start="34.76"
+        data-duration="5.92"
+        data-track-index="1"
+        data-width="1920"
+        data-height="1080"
+      ></div>
+      <div
+        id="el-s1-s7-tables"
+        data-composition-id="s1-s7-tables"
+        data-composition-src="compositions/s1/s1-s7-tables.html"
+        data-start="40.68"
+        data-duration="4.80"
+        data-track-index="1"
+        data-width="1920"
+        data-height="1080"
+      ></div>
+      <div
+        id="el-s1-s8-plan"
+        data-composition-id="s1-s8-plan"
+        data-composition-src="compositions/s1/s1-s8-plan.html"
+        data-start="45.48"
+        data-duration="5.76"
+        data-track-index="1"
+        data-width="1920"
+        data-height="1080"
+      ></div>
+      <div
+        id="el-s1-s9-qrcode"
+        data-composition-id="s1-s9-qrcode"
+        data-composition-src="compositions/s1/s1-s9-qrcode.html"
+        data-start="51.24"
+        data-duration="7.00"
+        data-track-index="1"
+        data-width="1920"
+        data-height="1080"
+      ></div>
+      <div
+        id="el-s1-s10-web"
+        data-composition-id="s1-s10-web"
+        data-composition-src="compositions/s1/s1-s10-web.html"
+        data-start="58.24"
+        data-duration="5.76"
+        data-track-index="1"
+        data-width="1920"
+        data-height="1080"
+      ></div>
+      <div
+        id="el-s1-s11-prete"
+        data-composition-id="s1-s11-prete"
+        data-composition-src="compositions/s1/s1-s11-prete.html"
+        data-start="64.00"
+        data-duration="9.30"
+        data-track-index="1"
+        data-width="1920"
+        data-height="1080"
+      ></div>
+
+      <!-- Voix off continue — survit à chaque coupe. -->
+      <audio
+        id="el-vo"
+        src="assets/audio/s1-salle-avant-vo.mp3"
+        data-start="0"
+        data-duration="68.72"
+        data-track-index="10"
+        data-volume="1"
+      ></audio>
+
+      <!-- Musique : ré mineur, 90 BPM montant — registre « avant ». -->
+      <audio id="sfx-music" src="assets/audio/s1/music.mp3" data-start="0.00" data-duration="73.30" data-track-index="11" data-volume="0.5"></audio>
+
+      <!-- Ambiance de salle fermée, sous l'ouverture et la clôture. -->
+      <audio id="sfx-salle-1" src="assets/audio/s1/salle.mp3" data-start="0.00" data-duration="20.00" data-track-index="12" data-volume="0.5"></audio>
+      <audio id="sfx-salle-2" src="assets/audio/s1/salle.mp3" data-start="56.00" data-duration="17.30" data-track-index="12" data-volume="0.45"></audio>
+
+      <!-- Une chaise qu'on descend d'une table : le seul geste physique
+           du film, posé sur « les chaises encore sur les tables ». -->
+      <audio id="sfx-chaise" src="assets/audio/s1/chaises.mp3" data-start="2.60" data-duration="2.23" data-track-index="13" data-volume="0.4"></audio>
+
+      <!-- Le répondeur, sur « Caroline a décroché » (18,47 s). -->
+      <audio id="sfx-repondeur" src="assets/audio/s1/telephone.mp3" data-start="20.10" data-duration="1.94" data-track-index="14" data-volume="0.34"></audio>
+
+      <!-- Un tic par coche. Deux pistes en alternance : 280 ms d'écart
+           pour un clip de 288 ms. -->
+      <audio id="sfx-tick-01" src="assets/audio/s1/tick.mp3" data-start="9.14" data-duration="0.29" data-track-index="15" data-volume="0.32"></audio>
+      <audio id="sfx-tick-02" src="assets/audio/s1/tick.mp3" data-start="9.42" data-duration="0.29" data-track-index="16" data-volume="0.32"></audio>
+      <audio id="sfx-tick-03" src="assets/audio/s1/tick.mp3" data-start="13.70" data-duration="0.29" data-track-index="15" data-volume="0.32"></audio>
+      <audio id="sfx-tick-04" src="assets/audio/s1/tick.mp3" data-start="13.98" data-duration="0.29" data-track-index="16" data-volume="0.32"></audio>
+      <audio id="sfx-tick-05" src="assets/audio/s1/tick.mp3" data-start="14.26" data-duration="0.29" data-track-index="15" data-volume="0.32"></audio>
+      <audio id="sfx-tick-06" src="assets/audio/s1/tick.mp3" data-start="14.54" data-duration="0.29" data-track-index="16" data-volume="0.32"></audio>
+      <audio id="sfx-tick-07" src="assets/audio/s1/tick.mp3" data-start="20.22" data-duration="0.29" data-track-index="15" data-volume="0.32"></audio>
+      <audio id="sfx-tick-08" src="assets/audio/s1/tick.mp3" data-start="20.50" data-duration="0.29" data-track-index="16" data-volume="0.32"></audio>
+      <audio id="sfx-tick-09" src="assets/audio/s1/tick.mp3" data-start="20.78" data-duration="0.29" data-track-index="15" data-volume="0.32"></audio>
+      <audio id="sfx-tick-10" src="assets/audio/s1/tick.mp3" data-start="31.27" data-duration="0.29" data-track-index="15" data-volume="0.32"></audio>
+      <audio id="sfx-tick-11" src="assets/audio/s1/tick.mp3" data-start="31.55" data-duration="0.29" data-track-index="16" data-volume="0.32"></audio>
+      <audio id="sfx-tick-12" src="assets/audio/s1/tick.mp3" data-start="36.51" data-duration="0.29" data-track-index="15" data-volume="0.32"></audio>
+      <audio id="sfx-tick-13" src="assets/audio/s1/tick.mp3" data-start="36.79" data-duration="0.29" data-track-index="16" data-volume="0.32"></audio>
+      <audio id="sfx-tick-14" src="assets/audio/s1/tick.mp3" data-start="42.43" data-duration="0.29" data-track-index="15" data-volume="0.32"></audio>
+      <audio id="sfx-tick-15" src="assets/audio/s1/tick.mp3" data-start="42.71" data-duration="0.29" data-track-index="16" data-volume="0.32"></audio>
+      <audio id="sfx-tick-16" src="assets/audio/s1/tick.mp3" data-start="47.23" data-duration="0.29" data-track-index="15" data-volume="0.32"></audio>
+      <audio id="sfx-tick-17" src="assets/audio/s1/tick.mp3" data-start="47.51" data-duration="0.29" data-track-index="16" data-volume="0.32"></audio>
+      <audio id="sfx-tick-18" src="assets/audio/s1/tick.mp3" data-start="47.79" data-duration="0.29" data-track-index="15" data-volume="0.32"></audio>
+      <audio id="sfx-tick-19" src="assets/audio/s1/tick.mp3" data-start="52.99" data-duration="0.29" data-track-index="15" data-volume="0.32"></audio>
+      <audio id="sfx-tick-20" src="assets/audio/s1/tick.mp3" data-start="53.27" data-duration="0.29" data-track-index="16" data-volume="0.32"></audio>
+      <audio id="sfx-tick-21" src="assets/audio/s1/tick.mp3" data-start="59.99" data-duration="0.29" data-track-index="15" data-volume="0.32"></audio>
+      <audio id="sfx-tick-22" src="assets/audio/s1/tick.mp3" data-start="60.27" data-duration="0.29" data-track-index="16" data-volume="0.32"></audio>
+    </div>
+
+    <script>
+      window.__timelines = window.__timelines || {};
+      window.__timelines["s1-salle-avant"] = gsap.timeline({ paused: true });
+    </script>
+  </body>
+</html>

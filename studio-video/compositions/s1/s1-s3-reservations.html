@@ -1,0 +1,122 @@
+<!doctype html>
+<html>
+  <head><meta charset="UTF-8" /></head>
+  <body>
+    <template>
+      <style>
+        @font-face {
+          font-family: "Fredoka";
+          src: url("assets/vendor/fonts/Fredoka-Variable.woff2") format("woff2-variations");
+          font-weight: 300 700; font-display: block;
+        }
+        #root { position:absolute; inset:0; background:#FCF9E6; overflow:hidden;
+                 font-family:"Inter",sans-serif; }
+
+        /* Fond à la charte du site : le crème, plus les deux dégradés du
+           hero-glow (bleu en haut à gauche, orange en haut à droite). Ils
+           sont animés — un aplat immobile pendant 75 s se lit comme une
+           image figée. */
+        .glow { position:absolute; border-radius:50%; filter:blur(10px); }
+        .glow-a { left:-360px; top:-420px; width:1500px; height:820px;
+                   background:radial-gradient(closest-side, rgba(0,123,255,.16), rgba(0,123,255,0) 70%); }
+        .glow-b { right:-420px; top:-360px; width:1400px; height:760px;
+                   background:radial-gradient(closest-side, rgba(255,165,0,.22), rgba(255,165,0,0) 70%); }
+        .glow-c { left:34%; bottom:-560px; width:1300px; height:900px;
+                   background:radial-gradient(closest-side, rgba(245,158,11,0.1), rgba(245,158,11,0) 70%); }
+
+        /* Trame de points, reprise du motif de conversation du site. Elle
+           donne au fond une texture qui bouge sans jamais attirer l'œil. */
+        .grid { position:absolute; left:-160px; top:-160px; width:2280px; height:1420px;
+                 background-image:radial-gradient(circle at 1px 1px, #E1DDC7 0 2px, transparent 2px);
+                 background-size:48px 48px; opacity:.55; }
+
+        /* Liseré métier en haut de cadre — signature de la série. */
+        .metier { position:absolute; top:0; left:0; right:0; height:5px; background:#F59E0B; }
+
+        .clock { position:absolute; top:44px; left:64px; font-family:"Fredoka",sans-serif;
+                  font-weight:700; font-size:46px; color:#0F1A23; opacity:0; letter-spacing:.02em; }
+        .eyebrow { position:absolute; top:52px; left:340px; right:340px; text-align:center;
+                    font-family:"Fredoka",sans-serif; font-weight:600; font-size:40px;
+                    color:#4C5760; opacity:0; }
+
+        /* Cadre tablette incliné 6°, posé sur le plan — grammaire commune.
+           Positionné en absolu, pas en translate(-50%,-50%) : GSAP réécrit
+           tout le transform quand il anime scale, ce qui perdrait le centrage. */
+        .frame { position:absolute; left:180px; top:226px;
+                  width:1560px; height:546px; border-radius:24px; overflow:hidden;
+                  background:#0F1A23; box-shadow:0 48px 110px rgba(15,26,35,.30);
+                  opacity:0; transform-origin:center center; }
+        .frame video { position:relative; display:block; width:100%; height:100%;
+                        object-fit:cover; }
+        /* Veille du cadre : ce qu'on voit sous l'écran pendant les 320 ms
+           d'apparition. Un aplat marine y était lu comme un plan noir. */
+        .veille { position:absolute; inset:0;
+                   background:linear-gradient(118deg, #0F1A23 0%, #16283a 46%, #0F1A23 100%); }
+        /* Pas de skewX en CSS : GSAP anime x et réécrit tout le transform,
+           l'inclinaison serait perdue. Elle est portée par le tween. */
+        .veille-scan { position:absolute; top:-20%; left:-40%; width:38%; height:140%;
+                        background:linear-gradient(90deg, rgba(0,123,255,0), rgba(0,123,255,.20), rgba(0,123,255,0)); }
+
+        .checks { position:absolute; left:0; right:0; top:830px;
+                   display:flex; flex-direction:row; justify-content:center;
+                   align-items:center; gap:26px; }
+        .check { display:flex; align-items:center; gap:12px; background:#FFA500; color:#0F1A23;
+                  font-family:"Fredoka",sans-serif; font-weight:700; font-size:30px;
+                  padding:14px 28px; border-radius:999px; opacity:0; transform:scale(.8);
+                  white-space:nowrap; box-shadow:0 10px 26px rgba(255,165,0,.28); }
+
+        .amb { position:absolute; inset:0; width:100%; height:100%; object-fit:cover; opacity:0; }
+        .title { position:absolute; left:0; right:0; bottom:132px; text-align:center;
+                  font-family:"Fredoka",sans-serif; font-weight:700; font-size:76px; color:#FCF9E6;
+                  text-shadow:0 6px 30px rgba(15,26,35,.6); opacity:0; }
+        .sub { position:absolute; left:0; right:0; bottom:74px; text-align:center;
+                font-family:"Fredoka",sans-serif; font-weight:600; font-size:34px; color:#FCF9E6;
+                text-shadow:0 2px 16px rgba(15,26,35,.65); opacity:0; }
+
+      </style>
+
+      <div id="root" data-composition-id="s1-s3-reservations" data-width="1920" data-height="1080" data-duration="6.52">
+        <div class="metier"></div>
+        <div class="glow glow-a" id="glowA"></div>
+        <div class="glow glow-b" id="glowB"></div>
+        <div class="glow glow-c" id="glowC"></div>
+        <div class="grid" id="grid"></div>
+        <div class="clock" id="clock">09:40</div>
+        <div class="eyebrow" id="eyebrow">MES RÉSERVATIONS DU JOUR</div>
+        <div class="frame" id="frame">
+            <div class="veille"></div>
+            <div class="veille-scan" id="scan"></div>
+          <video id="vid-scene-3" src="assets/screens/s1/SCENE-3.mp4" muted playsinline class="clip" data-start="0" data-duration="18.47" data-track-index="2"></video>
+        </div>
+        <div class="checks">
+          <div class="check" id="ck0"><span>✓</span>Le nom</div>
+          <div class="check" id="ck1"><span>✓</span>L'heure</div>
+          <div class="check" id="ck2"><span>✓</span>Les couverts</div>
+          <div class="check" id="ck3"><span>✓</span>La table</div>
+        </div>
+      </div>
+
+      <script>
+        window.__timelines = window.__timelines || {};
+        const tl = gsap.timeline({ paused: true });
+
+        // Fond vivant : les dégradés dérivent et respirent, la trame glisse.
+        tl.to("#glowA", { x:70, y:38, scale:1.10, duration:11, ease:"sine.inOut", yoyo:true, repeat:1 }, 0);
+        tl.to("#glowB", { x:-56, y:44, scale:1.14, duration:9, ease:"sine.inOut", yoyo:true, repeat:1 }, 0);
+        tl.to("#glowC", { x:48, scale:1.08, duration:13, ease:"sine.inOut", yoyo:true, repeat:1 }, 0);
+        tl.to("#grid", { x:-48, y:-48, duration:16, ease:"none", repeat:1 }, 0);
+        tl.fromTo("#scan", { x:0, skewX:-12 }, { x:4300, skewX:-12, duration:3.4, ease:"none", repeat:2 }, 0);
+        tl.fromTo("#clock", { opacity:0, y:-12 }, { opacity:1, y:0, duration:.4, ease:"power2.out" }, .05);
+        tl.fromTo("#eyebrow", { opacity:0, y:-12 }, { opacity:.9, y:0, duration:.4, ease:"power2.out" }, .12);
+        // Le cadre apparaît en 320 ms ; l'action à l'écran démarre 250 ms après.
+        tl.fromTo("#frame", { opacity:0, scale:.94, rotateY:6 }, { opacity:1, scale:1, rotateY:6, duration:.32, ease:"back.out(1.6)" }, 0.35);
+        tl.fromTo("#ck0", { opacity:0, scale:.8, y:14 }, { opacity:1, scale:1, y:0, duration:.24, ease:"back.out(2)" }, 1.75);
+        tl.fromTo("#ck1", { opacity:0, scale:.8, y:14 }, { opacity:1, scale:1, y:0, duration:.24, ease:"back.out(2)" }, 2.03);
+        tl.fromTo("#ck2", { opacity:0, scale:.8, y:14 }, { opacity:1, scale:1, y:0, duration:.24, ease:"back.out(2)" }, 2.31);
+        tl.fromTo("#ck3", { opacity:0, scale:.8, y:14 }, { opacity:1, scale:1, y:0, duration:.24, ease:"back.out(2)" }, 2.59);
+
+        window.__timelines["s1-s3-reservations"] = tl;
+      </script>
+    </template>
+  </body>
+</html>
