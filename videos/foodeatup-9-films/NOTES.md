@@ -291,3 +291,71 @@ Décisions structurantes :
   obligations légales.
 - **Le parcours prouve que le produit est complet, pas qu'il est simple.**
   C'est précisément ce que le volet « sans » corrige.
+
+---
+
+## 7. Chaîne de fabrication d'un film
+
+Établie sur C1, rodée sur C2. Les sept films suivants suivent le même chemin.
+
+```
+1.  Écrire SCRIPT.md          — voix off verbatim + table des étapes couvertes
+2.  Générer la voix           — ElevenLabs, Adam - Instructor (TGAegA0zNRi8I6nUdq3i),
+                                eleven_multilingual_v2, fr
+3.  Transcrire                — npx hyperframes transcribe assets/vo.mp3 --model small
+                                --language fr   → les bornes de scènes viennent des
+                                timings RÉELS, jamais d'une estimation
+4.  ./build-screens.sh        — rushes → une bobine par scène, plus longue que la scène
+5.  python3 build-compositions.py  — table de scènes → 8 HTML via _serie/serie.py
+6.  npx hyperframes lint      — doit être à 0 erreur ET 0 avertissement sur le film
+7.  npx hyperframes render -c compositions/<film>.html --video-frame-format png
+8.  QA luminance + planche de contact  — aucun plan éteint hors carton volontaire
+```
+
+### 7.1 Le module `_serie/serie.py`
+
+La grammaire vit à un seul endroit. Un film ne décrit que ses scènes :
+
+```python
+s = Serie(metier=Serie.CUISINE, sous="c2")
+s.ecrire({"c2-s1-midi.html": s.carton(...), "c2-s2-postes.html": s.ecran(...)})
+```
+
+Trois pièges y sont inscrits, chacun payé une fois :
+
+1. **GSAP réécrit tout le `transform`** dès qu'il anime `scale` ou `x`. Rien
+   qui doive survivre à un tween ne peut vivre en CSS — ni le centrage du
+   cadre, ni l'inclinaison du balayage de veille.
+2. **`repeat: -1` déclenche un avertissement de troncature.** Les boucles de
+   fond ont un compte fini, calculé sur la durée de la scène.
+3. **La fenêtre déclarée d'un clip est celle de la scène**, jamais celle du
+   fichier. Le fichier est plus long — c'est la marge — mais un clip censé
+   survivre à sa propre composition n'a pas de sens défini.
+
+### 7.2 Coupes franches, pas de fondus enchaînés — provisoire
+
+Sur C1, une bobine montée en `xfade` imbriqué s'éteignait au rendu à partir
+de sa **seconde** transition, à la milliseconde près, alors qu'une bobine
+voisine montée exactement de la même façon rendait ses trois segments.
+
+Écartés par l'expérience, dans cet ordre : images-clés espacées (réencodage
+en GOP 30 — zone morte inchangée), flux laissé par le filtre (réencodage à
+plat — inchangée), fenêtre déclarée plus longue que la scène (alignée —
+inchangée). **La cause n'est pas établie.** La seule variable restante était
+le contenu : le segment du milieu venait de la seule source en 1920×1020.
+
+Tant que ce n'est pas compris, on ne remet pas 350 ms de fondu en jeu contre
+le risque d'un plan éteint. Les bobines sont montées en coupes franches, sur
+une respiration de la voix. À rouvrir si quelqu'un identifie la cause.
+
+### 7.3 Sons
+
+ElevenLabs, deux points d'entrée : `/v1/sound-generation` pour les bruitages
+(`duration_seconds`, `prompt_influence`) et `/v1/music` pour la musique
+(`music_length_ms`). Les rendus bruts sont conservés dans `src/` et
+retravaillés au montage — les niveaux sortis du modèle sont très inégaux
+(de −1 dB à −55 dB crête selon le prompt), donc **toujours mesurer avant de
+poser**, jamais faire confiance au fichier tel quel.
+
+Registres retenus : « avant » ré mineur 90 BPM montant, « pendant » ré mineur
+124 BPM tendu, « après » ré mineur 76 BPM descendant.

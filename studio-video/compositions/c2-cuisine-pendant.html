@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=1920, height=1080" />
+    <script src="assets/vendor/gsap.min.js"></script>
+    <style>
+      * { margin:0; padding:0; box-sizing:border-box; }
+      html, body { width:1920px; height:1080px; overflow:hidden; background:#FCF9E6; }
+      body { font-family:"Inter",sans-serif; }
+      @font-face {
+        font-family:"Fredoka";
+        src:url("assets/vendor/fonts/Fredoka-Variable.woff2") format("woff2-variations");
+        font-weight:300 700; font-display:block;
+      }
+      #root { position:relative; width:1920px; height:1080px; overflow:hidden; background:#FCF9E6; }
+      #root > div[data-composition-src] { position:absolute; inset:0; }
+    </style>
+  </head>
+  <body>
+    <div
+      id="root"
+      data-composition-id="c2-cuisine-pendant"
+      data-start="0"
+      data-width="1920"
+      data-height="1080"
+      data-duration="77.58"
+    >
+      <div
+        id="el-c2-s1-midi"
+        data-composition-id="c2-s1-midi"
+        data-composition-src="compositions/c2/c2-s1-midi.html"
+        data-start="0.00"
+        data-duration="7.48"
+        data-track-index="1"
+        data-width="1920"
+        data-height="1080"
+      ></div>
+      <div
+        id="el-c2-s2-postes"
+        data-composition-id="c2-s2-postes"
+        data-composition-src="compositions/c2/c2-s2-postes.html"
+        data-start="7.48"
+        data-duration="12.84"
+        data-track-index="1"
+        data-width="1920"
+        data-height="1080"
+      ></div>
+      <div
+        id="el-c2-s3-canaux"
+        data-composition-id="c2-s3-canaux"
+        data-composition-src="compositions/c2/c2-s3-canaux.html"
+        data-start="20.32"
+        data-duration="15.48"
+        data-track-index="1"
+        data-width="1920"
+        data-height="1080"
+      ></div>
+      <div
+        id="el-c2-s4-avancement"
+        data-composition-id="c2-s4-avancement"
+        data-composition-src="compositions/c2/c2-s4-avancement.html"
+        data-start="35.80"
+        data-duration="8.40"
+        data-track-index="1"
+        data-width="1920"
+        data-height="1080"
+      ></div>
+      <div
+        id="el-c2-s5-rupture"
+        data-composition-id="c2-s5-rupture"
+        data-composition-src="compositions/c2/c2-s5-rupture.html"
+        data-start="44.20"
+        data-duration="6.72"
+        data-track-index="1"
+        data-width="1920"
+        data-height="1080"
+      ></div>
+      <div
+        id="el-c2-s6-retour"
+        data-composition-id="c2-s6-retour"
+        data-composition-src="compositions/c2/c2-s6-retour.html"
+        data-start="50.92"
+        data-duration="6.68"
+        data-track-index="1"
+        data-width="1920"
+        data-height="1080"
+      ></div>
+      <div
+        id="el-c2-s7-predibot"
+        data-composition-id="c2-s7-predibot"
+        data-composition-src="compositions/c2/c2-s7-predibot.html"
+        data-start="57.60"
+        data-duration="10.39"
+        data-track-index="1"
+        data-width="1920"
+        data-height="1080"
+      ></div>
+      <div
+        id="el-c2-s8-soir"
+        data-composition-id="c2-s8-soir"
+        data-composition-src="compositions/c2/c2-s8-soir.html"
+        data-start="67.99"
+        data-duration="9.59"
+        data-track-index="1"
+        data-width="1920"
+        data-height="1080"
+      ></div>
+
+      <!-- Voix off continue — survit à chaque coupe. -->
+      <audio
+        id="el-vo"
+        src="assets/audio/c2-cuisine-pendant-vo.mp3"
+        data-start="0"
+        data-duration="73.04"
+        data-track-index="10"
+        data-volume="1"
+      ></audio>
+
+      <!-- Musique : ré mineur, 124 BPM tendu — registre « pendant ». -->
+      <audio id="sfx-music" src="assets/audio/c2/music.mp3" data-start="0.00" data-duration="77.58" data-track-index="11" data-volume="0.5"></audio>
+
+      <!-- Ambiance de service, sous les scènes de coup de feu. -->
+      <audio id="sfx-service-1" src="assets/audio/c2/service.mp3" data-start="7.48" data-duration="22.00" data-track-index="12" data-volume="0.45"></audio>
+      <audio id="sfx-service-2" src="assets/audio/c2/service.mp3" data-start="35.80" data-duration="15.00" data-track-index="12" data-volume="0.4"></audio>
+
+      <!-- La cloche du passe, sur le plan macro d'ouverture. -->
+      <audio id="sfx-cloche" src="assets/audio/c2/cloche.mp3" data-start="0.55" data-duration="2.42" data-track-index="13" data-volume="0.62"></audio>
+
+      <!-- Un tic par coche orange. 280 ms d'écart, clip de 384 ms :
+           deux pistes en alternance pour qu'ils ne se croisent pas. -->
+      <audio id="sfx-bump-01" src="assets/audio/c2/bump.mp3" data-start="9.23" data-duration="0.38" data-track-index="14" data-volume="0.34"></audio>
+      <audio id="sfx-bump-02" src="assets/audio/c2/bump.mp3" data-start="9.51" data-duration="0.38" data-track-index="15" data-volume="0.34"></audio>
+      <audio id="sfx-bump-03" src="assets/audio/c2/bump.mp3" data-start="9.79" data-duration="0.38" data-track-index="14" data-volume="0.34"></audio>
+      <audio id="sfx-bump-04" src="assets/audio/c2/bump.mp3" data-start="22.07" data-duration="0.38" data-track-index="14" data-volume="0.34"></audio>
+      <audio id="sfx-bump-05" src="assets/audio/c2/bump.mp3" data-start="22.35" data-duration="0.38" data-track-index="15" data-volume="0.34"></audio>
+      <audio id="sfx-bump-06" src="assets/audio/c2/bump.mp3" data-start="22.63" data-duration="0.38" data-track-index="14" data-volume="0.34"></audio>
+      <audio id="sfx-bump-07" src="assets/audio/c2/bump.mp3" data-start="22.91" data-duration="0.38" data-track-index="15" data-volume="0.34"></audio>
+      <audio id="sfx-bump-08" src="assets/audio/c2/bump.mp3" data-start="37.55" data-duration="0.38" data-track-index="14" data-volume="0.34"></audio>
+      <audio id="sfx-bump-09" src="assets/audio/c2/bump.mp3" data-start="37.83" data-duration="0.38" data-track-index="15" data-volume="0.34"></audio>
+      <audio id="sfx-bump-10" src="assets/audio/c2/bump.mp3" data-start="52.67" data-duration="0.38" data-track-index="14" data-volume="0.34"></audio>
+      <audio id="sfx-bump-11" src="assets/audio/c2/bump.mp3" data-start="52.95" data-duration="0.38" data-track-index="15" data-volume="0.34"></audio>
+      <audio id="sfx-bump-12" src="assets/audio/c2/bump.mp3" data-start="59.35" data-duration="0.38" data-track-index="14" data-volume="0.34"></audio>
+      <audio id="sfx-bump-13" src="assets/audio/c2/bump.mp3" data-start="59.63" data-duration="0.38" data-track-index="15" data-volume="0.34"></audio>
+      <audio id="sfx-bump-14" src="assets/audio/c2/bump.mp3" data-start="59.91" data-duration="0.38" data-track-index="14" data-volume="0.34"></audio>
+
+      <!-- L'imprimante à tickets, quand les commandes entrent. -->
+      <audio id="sfx-ticket" src="assets/audio/c2/ticket.mp3" data-start="21.60" data-duration="1.94" data-track-index="16" data-volume="0.34"></audio>
+    </div>
+
+    <script>
+      window.__timelines = window.__timelines || {};
+      window.__timelines["c2-cuisine-pendant"] = gsap.timeline({ paused: true });
+    </script>
+  </body>
+</html>

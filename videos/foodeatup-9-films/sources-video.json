@@ -30,7 +30,6 @@
   "gerer-ses-no-shows",
   "gerer-ses-tables-ajout-blocage",
   "gerer-son-stock-par-whatsapp",
-  "gerer-une-commande-en-direct-kds",
   "imprimer-ses-etiquettes",
   "imprimer-ses-ingredients-de-production",
   "imprimer-son-planning-par-poste",
@@ -142,7 +141,6 @@
   "commander-qr-code": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/foodeatup-commander-qrcode-tuto-v1",
   "creer-un-poste-de-travail": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/foodeatup-kds-poste-tuto-v1",
   "afficher-le-kds-par-poste": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/foodeatup-kds-par-poste-tuto",
-  "gerer-une-commande-en-direct-kds": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/foodeatup-avis-abonnement-tuto-v1.mp4",
   "debloquer-les-avis-clients": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/foodeatup-avis-abonnement-tuto-v1.mp4",
   "synchroniser-google-avis": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/foodeatup-avis-google-tuto-v1",
   "repondre-aux-avis-clients": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/foodeatup-repondre-avis-tuto-v1",
@@ -238,5 +236,13 @@
   "_comment": "Les deux seules sources que S3 refuse (403). Michael les a fournies le 2026-08-08 ; ce dépôt en est la seule copie, elles sont donc versionnées telles quelles.",
   "mes-commandes-tous-canaux": "_sources-non-reproductibles/foodeatup-mes-commandes-tuto-v1.mp4",
   "retrouver-ses-reservations-du-jour": "_sources-non-reproductibles/foodeatup-reservations-jour-tuto.mp4"
+ },
+ "mauvaisMapping": {
+  "_comment": "Entrées du catalogue dont l'URL ne correspond pas au sujet. Vérifié image par image, pas déduit du nom.",
+  "gerer-une-commande-en-direct-kds": {
+   "urlCataloguee": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/foodeatup-avis-abonnement-tuto-v1.mp4",
+   "contenuReel": "tutoriel abonnement / changement de plan / paiement Stripe — rien à voir avec le KDS",
+   "contournement": "prélever la séquence du tableau KDS en direct dans foodeatup-kds-par-poste-tuto, qui la contient"
+  }
  }
 }

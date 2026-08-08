@@ -89,7 +89,25 @@ xfade2() { # <sortie> <a> <b> <dA>
     "${enc[@]}" "$OUT/$1.mp4" -y
 }
 
-xfade3 SCENE-2 s2a s2b s2c 4.49 4.49
+# Scène 2 : coupes franches, pas de fondu enchaîné.
+#
+# Montée en xfade imbriqué comme la scène 3, elle s'éteignait au rendu à
+# partir de la SECONDE transition — à la milliseconde près. Écartés par
+# l'expérience, dans cet ordre : les images-clés espacées (réencodage en
+# GOP 30, zone morte inchangée), le flux laissé par le filtre (réencodage à
+# plat, inchangé), et la fenêtre déclarée plus longue que la scène (alignée
+# sur la scène, inchangé). La scène 3 utilise pourtant le même xfade3 et rend
+# ses trois segments. La seule variable restante est le contenu : s2b vient
+# de ECRAN-02, seule source en 1920x1020 au lieu de 1920x828.
+#
+# Le fondu vaut 350 ms ; le plan vaut la scène entière. On coupe franc.
+concat_c() { # <sortie> <segments...>
+  local out=$1; shift
+  local list="$TMP/$out.txt"; : > "$list"
+  for seg in "$@"; do echo "file '$TMP/$seg.mp4'" >> "$list"; done
+  ffmpeg -nostdin -v error -f concat -safe 0 -i "$list" "${enc[@]}" "$OUT/$out.mp4" -y
+}
+concat_c SCENE-2 s2a s2b s2c
 xfade3 SCENE-3 s3a s3b s3c 4.50 6.33
 cp "$TMP/s4a.mp4" "$OUT/SCENE-4.mp4"
 xfade2 SCENE-5 s5a s5b 4.41
