@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=1920, height=1080" />
+    <script src="assets/vendor/gsap.min.js"></script>
+    <style>
+      * { margin:0; padding:0; box-sizing:border-box; }
+      html, body { width:1920px; height:1080px; overflow:hidden; background:#F7F9FC; }
+      body { font-family:"Inter",sans-serif; }
+      @font-face {
+        font-family:"Fredoka";
+        src:url("assets/vendor/fonts/Fredoka-Variable.woff2") format("woff2-variations");
+        font-weight:300 700; font-display:block;
+      }
+      #root { position:relative; width:1920px; height:1080px; overflow:hidden; background:#F7F9FC; }
+      #root > div[data-composition-src] { position:absolute; inset:0; }
+    </style>
+  </head>
+  <body>
+    <div
+      id="root"
+      data-composition-id="c1-cuisine-avant"
+      data-start="0"
+      data-width="1920"
+      data-height="1080"
+      data-duration="75.38"
+    >
+      <div
+        id="el-c1-s1-ouverture"
+        data-composition-id="c1-s1-ouverture"
+        data-composition-src="compositions/c1/c1-s1-ouverture.html"
+        data-start="0.00"
+        data-duration="4.61"
+        data-track-index="1"
+        data-width="1920"
+        data-height="1080"
+      ></div>
+
+      <div
+        id="el-c1-s2-ouverture-poste"
+        data-composition-id="c1-s2-ouverture-poste"
+        data-composition-src="compositions/c1/c1-s2-ouverture-poste.html"
+        data-start="4.61"
+        data-duration="12.77"
+        data-track-index="1"
+        data-width="1920"
+        data-height="1080"
+      ></div>
+
+      <div
+        id="el-c1-s3-reception"
+        data-composition-id="c1-s3-reception"
+        data-composition-src="compositions/c1/c1-s3-reception.html"
+        data-start="17.38"
+        data-duration="16.13"
+        data-track-index="1"
+        data-width="1920"
+        data-height="1080"
+      ></div>
+
+      <div
+        id="el-c1-s4-jarvis"
+        data-composition-id="c1-s4-jarvis"
+        data-composition-src="compositions/c1/c1-s4-jarvis.html"
+        data-start="33.51"
+        data-duration="9.78"
+        data-track-index="1"
+        data-width="1920"
+        data-height="1080"
+      ></div>
+
+      <div
+        id="el-c1-s5-production"
+        data-composition-id="c1-s5-production"
+        data-composition-src="compositions/c1/c1-s5-production.html"
+        data-start="43.29"
+        data-duration="8.47"
+        data-track-index="1"
+        data-width="1920"
+        data-height="1080"
+      ></div>
+
+      <div
+        id="el-c1-s6-etiquetage"
+        data-composition-id="c1-s6-etiquetage"
+        data-composition-src="compositions/c1/c1-s6-etiquetage.html"
+        data-start="51.76"
+        data-duration="10.15"
+        data-track-index="1"
+        data-width="1920"
+        data-height="1080"
+      ></div>
+
+      <div
+        id="el-c1-s7-validation"
+        data-composition-id="c1-s7-validation"
+        data-composition-src="compositions/c1/c1-s7-validation.html"
+        data-start="61.91"
+        data-duration="8.97"
+        data-track-index="1"
+        data-width="1920"
+        data-height="1080"
+      ></div>
+
+      <div
+        id="el-c1-s8-cta"
+        data-composition-id="c1-s8-cta"
+        data-composition-src="compositions/c1/c1-s8-cta.html"
+        data-start="70.88"
+        data-duration="4.50"
+        data-track-index="1"
+        data-width="1920"
+        data-height="1080"
+      ></div>
+
+      <!-- Voix off continue — survit à chaque coupe. -->
+      <audio
+        id="el-vo"
+        src="assets/audio/c1-cuisine-avant-vo.mp3"
+        data-start="0"
+        data-duration="70.87"
+        data-track-index="10"
+        data-volume="1"
+      ></audio>
+    </div>
+
+    <script>
+      window.__timelines = window.__timelines || {};
+      window.__timelines["c1-cuisine-avant"] = gsap.timeline({ paused: true });
+    </script>
+  </body>
+</html>

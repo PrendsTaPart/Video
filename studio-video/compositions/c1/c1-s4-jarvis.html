@@ -1,0 +1,67 @@
+<!doctype html>
+<html>
+  <head><meta charset="UTF-8" /></head>
+  <body>
+    <template>
+      <style>
+        @font-face {
+          font-family: "Fredoka";
+          src: url("assets/vendor/fonts/Fredoka-Variable.woff2") format("woff2-variations");
+          font-weight: 300 700; font-display: block;
+        }
+        #root { position:absolute; inset:0; background:#F7F9FC; overflow:hidden; font-family:"Inter",sans-serif; }
+        /* Liseré métier cuisine, en haut de cadre — signature de la série. */
+        .metier { position:absolute; top:0; left:0; right:0; height:3px; background:#059669; }
+        .clock { position:absolute; top:42px; left:64px; font-family:"Fredoka",sans-serif;
+                 font-weight:700; font-size:34px; color:#1B2A41; opacity:0; letter-spacing:.02em; }
+        .eyebrow { position:absolute; top:44px; left:0; right:0; text-align:center;
+                   font-family:"Fredoka",sans-serif; font-weight:600; font-size:28px; color:#1B2A41; opacity:0; }
+        /* Cadre tablette incliné 6°, posé sur le plan — grammaire commune. */
+        /* Positionné en absolu, pas en translate(-50%,-50%) : GSAP réécrit
+           tout le transform quand il anime scale, ce qui perdrait le centrage. */
+        .frame { position:absolute; left:280px; top:180px;
+                 width:1360px; border-radius:20px; overflow:hidden; background:#0f1a23;
+                 box-shadow:0 40px 90px rgba(27,42,65,.28); opacity:0;
+                 transform-origin:center center; }
+        .frame video { display:block; width:100%; height:auto; }
+        .checks { position:absolute; right:56px; top:150px; display:flex; flex-direction:column; gap:12px; align-items:flex-end; }
+        .check { display:flex; align-items:center; gap:10px; background:#FFA500; color:#1B2A41;
+                 font-family:"Fredoka",sans-serif; font-weight:700; font-size:20px;
+                 padding:9px 18px; border-radius:999px; opacity:0; transform:scale(.8); white-space:nowrap; }
+        .amb { position:absolute; inset:0; width:100%; height:100%; object-fit:cover; opacity:0; }
+        .title { position:absolute; left:0; right:0; bottom:120px; text-align:center;
+                 font-family:"Fredoka",sans-serif; font-weight:700; font-size:64px; color:#F7F9FC;
+                 text-shadow:0 4px 24px rgba(27,42,65,.55); opacity:0; }
+        .sub { position:absolute; left:0; right:0; bottom:74px; text-align:center;
+               font-family:"Fredoka",sans-serif; font-weight:600; font-size:28px; color:#F7F9FC;
+               text-shadow:0 2px 14px rgba(27,42,65,.6); opacity:0; }
+      </style>
+
+      <div id="root" data-composition-id="c1-s4-jarvis" data-width="1920" data-height="1080" data-duration="9.78">
+        <div class="metier"></div>
+        <div class="clock" id="clock">07:25</div>
+        <div class="eyebrow" id="eyebrow">JE PARLE, LE STOCK SUIT</div>
+        <div class="frame" id="frame">
+          <video id="vid-ecran-07" src="assets/screens/c1/ECRAN-07.mp4" muted playsinline class="clip" data-start="0" data-duration="8.00" data-track-index="2"></video>
+        </div>
+        <div class="checks">
+          <div class="check" id="ck0"><span>✓</span>Sortie dictée</div>
+          <div class="check" id="ck1"><span>✓</span>Stock décrémenté</div>
+        </div>
+      </div>
+
+      <script>
+        window.__timelines = window.__timelines || {};
+        const tl = gsap.timeline({ paused: true });
+        tl.fromTo("#clock", { opacity:0, y:-10 }, { opacity:.85, y:0, duration:.4, ease:"power2.out" }, .05);
+        tl.fromTo("#eyebrow", { opacity:0, y:-10 }, { opacity:.55, y:0, duration:.4, ease:"power2.out" }, .12);
+        // Le cadre apparaît en 320 ms ; l'action à l'écran démarre 250 ms après.
+        tl.fromTo("#frame", { opacity:0, scale:.94, rotateY:6 }, { opacity:1, scale:1, rotateY:6, duration:.32, ease:"back.out(1.6)" }, 0.35);
+        tl.fromTo("#ck0", { opacity:0, scale:.8 }, { opacity:1, scale:1, duration:.2, ease:"back.out(2)" }, 1.75);
+        tl.fromTo("#ck1", { opacity:0, scale:.8 }, { opacity:1, scale:1, duration:.2, ease:"back.out(2)" }, 2.0);
+
+        window.__timelines["c1-s4-jarvis"] = tl;
+      </script>
+    </template>
+  </body>
+</html>

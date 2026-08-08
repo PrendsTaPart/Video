@@ -27,31 +27,26 @@ Je n'ai pas ouvert un seul classeur.
 
 | | |
 |---|---|
-| Voix off | ✅ générée — **42,24 s** (ElevenLabs, Adam - Instructor) |
-| Écrans sources | ✅ les 12 téléchargés et sondés — voir `assets/screens.json` |
-| Images d'ambiance | ⬜ 6 à générer (IMG-C1-a à f) |
-| Composition | ⬜ bloquée, voir « décisions à prendre » |
+| Voix off | ✅ **70,87 s** — texte enrichi pour tenir la cible des 75 s |
+| Écrans sources | ✅ 12 extraits découpés, bandeau incrusté recadré |
+| Images d'ambiance | ✅ 3 générées (cuisine vide, chef qui dicte, étiquette) |
+| Composition | ✅ 8 scènes · `studio-video/compositions/c1-cuisine-avant.html` |
+| Rendu | ✅ **75,4 s** · `out/c1-cuisine-avant.mp4` |
 
-## Écart de durée à arbitrer
+## Comment la durée a été atteinte
 
-Le storyboard vise **75 s**. La voix off fait **42,24 s**. L'écart vient des
-pauses : le script en note une quinzaine (`[pause]`, `[pause courte]`) qu'un
-moteur TTS ne tient pas de lui-même.
+La première génération faisait 42 s : le script d'origine comptait sur quinze
+pauses qu'un moteur TTS ne tient pas. Plutôt que d'étirer des plans muets, le
+texte a été enrichi — précisions concrètes sur chaque geste, sans changer une
+seule des phrases d'origine ni le ton. 1 150 caractères, 70,87 s de voix,
+75,37 s avec le carton de clôture.
 
-Trois issues :
-1. **Assumer 42 s** — le film devient plus dense, ~52 s avec l'ouverture et le
-   CTA. C'est cohérent avec les 9 vidéos des boucles (55-67 s).
-2. **Regénérer avec des silences explicites** — insérer des balises de pause
-   dans le texte pour atteindre ~60 s.
-3. **Tenir 75 s** en étirant les plans muets (ouverture, étiquetage, clôture).
+## Décisions de montage prises
 
-⚠️ Ce choix engage toute la série : le film « sans » jumeau devra faire la
-**même durée à la frame près**.
-
-## Ce que les rushes ont révélé
-
-- **Format 1920×828** (2,32:1), pas du 16:9. Incrustés tels quels dans un cadre
-  1920×1080, ils laissent des bandes.
-- **Un bandeau de sous-titre bleu est déjà incrusté** en bas des tutoriels
-  (« Livraison controlee et tracee »…). Soit on recadre pour l'exclure, soit on
-  l'assume comme libellé d'action — mais on ne peut pas l'ignorer.
+- **Bandeau de sous-titre des rushes** : recadré (1920×828 → 1920×672). Il
+  entrait en concurrence avec les coches orange de la grammaire de série.
+- **Cadre tablette** : positionné en absolu, pas en `translate(-50%,-50%)`.
+  GSAP réécrit tout le `transform` quand il anime `scale`, ce qui décentrait
+  le cadre au rendu.
+- **Liseré cuisine `#059669`** en haut de cadre, horloge en haut à gauche,
+  coches orange accumulées à droite — conforme à la grammaire commune.
