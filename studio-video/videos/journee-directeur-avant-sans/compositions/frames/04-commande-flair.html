@@ -1,0 +1,126 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+  </head>
+  <body>
+    <template>
+      <style>
+        @font-face { font-family: "Inter"; src: url("assets/fonts/Inter-400.woff2") format("woff2"); font-weight: 400; font-style: normal; font-display: block; }
+        @font-face { font-family: "Inter"; src: url("assets/fonts/Inter-500.woff2") format("woff2"); font-weight: 500; font-style: normal; font-display: block; }
+        @font-face { font-family: "Inter"; src: url("assets/fonts/Inter-700.woff2") format("woff2"); font-weight: 700; font-style: normal; font-display: block; }
+        @font-face { font-family: "Inter"; src: url("assets/fonts/Inter-800.woff2") format("woff2"); font-weight: 800; font-style: normal; font-display: block; }
+
+        #root {
+          position: relative;
+          width: 1920px;
+          height: 1080px;
+          overflow: hidden;
+          font-family: "Inter", sans-serif;
+          color: #3A3F45;
+        }
+        .f4-bg { position: absolute; inset: 0; background: #EDEEF0; }
+        .f4-tabecho {
+          position: absolute; left: 140px; top: 56px; width: 1640px; height: 40px;
+          display: flex; gap: 8px; opacity: 0.1;
+        }
+        .f4-tabecho div { width: 220px; height: 100%; border: 1px solid #8A9099; }
+
+        .f4-bubble {
+          position: absolute; left: 190px; top: 380px; width: 700px; min-height: 220px;
+          border: 1px solid #8A9099; border-radius: 18px; background: rgba(58,63,69,0.045);
+          padding: 44px; box-sizing: border-box;
+        }
+        .f4-bubble .txt { font-size: 40px; font-weight: 600; line-height: 1.4; }
+        .f4-caret { display: inline-block; width: 6px; height: 40px; background: #3A3F45; vertical-align: -6px; margin-left: 2px; }
+        .f4-timestamp { position: absolute; left: 194px; top: 620px; font-size: 22px; color: rgba(58,63,69,0.85); font-weight: 500; }
+
+        .f4-chartbox {
+          position: absolute; right: 200px; top: 380px; width: 640px; height: 340px;
+          border: 2px dashed #8A9099;
+          display: flex; align-items: center; justify-content: center;
+          overflow: hidden;
+        }
+        .f4-chartbox-bg { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; opacity: 0.8; }
+        .f4-chartbox .qmark { position: relative; font-size: 160px; font-weight: 800; color: #D64545; }
+
+        .f4-flag { position: absolute; height: 2px; background: #D64545; opacity: 0; }
+        .f4-flag.bubble { left: 190px; top: 610px; width: 700px; }
+        .f4-flag.chart { right: 200px; top: 730px; width: 640px; }
+      </style>
+
+      <div id="root" data-composition-id="04-commande-flair" data-width="1920" data-height="1080" data-duration="10.531">
+        <div class="f4-bg clip" id="f4-bgclip" data-start="0" data-duration="10.531" data-track-index="1"></div>
+
+        <div class="f4-tabecho">
+          <div></div><div></div><div></div><div></div><div></div><div></div><div></div>
+        </div>
+
+        <div class="f4-bubble" id="f4-bubble">
+          <span class="txt" id="f4-txt"></span><span class="f4-caret" id="f4-caret"></span>
+        </div>
+        <div class="f4-timestamp" id="f4-timestamp">envoyé — 07:02</div>
+
+        <div class="f4-chartbox" id="f4-chartbox">
+          <img class="f4-chartbox-bg" src="public/generated/06-graphique-vide.jpg" alt="" />
+          <div class="qmark" id="f4-qmark">?</div>
+        </div>
+
+        <div class="f4-flag bubble" id="f4-flag1"></div>
+        <div class="f4-flag chart" id="f4-flag2"></div>
+      </div>
+
+      <script>
+        window.__timelines = window.__timelines || {};
+        const tl = gsap.timeline({ paused: true });
+
+        gsap.set("#f4-bubble", { opacity: 0, y: 12 });
+        gsap.set("#f4-timestamp", { opacity: 0 });
+        gsap.set("#f4-chartbox", { opacity: 0 });
+        gsap.set("#f4-qmark", { opacity: 0, scale: 0 });
+
+        // Scene 1 (0.0-1.0s): bubble outline visible, caret blinking, waiting
+        tl.to("#f4-bubble", { opacity: 1, y: 0, duration: 0.4, ease: "power3.out" }, 0.3);
+
+        // Scene 2 (1.0-3.15s): "La commande fournisseur, je la passe au flair." — type it in
+        const fullText = "La commande fournisseur, je la passe au flair.";
+        const txtEl = document.getElementById("f4-txt");
+        const len = { v: 0 };
+        tl.to(len, {
+          v: fullText.length, duration: 2.1, ease: "power1.inOut",
+          onUpdate: () => { txtEl.textContent = fullText.substring(0, Math.floor(len.v)); }
+        }, 1.0);
+
+        // caret blink, deterministic sine square wave across the whole frame
+        const blink = { p: 0 };
+        const caretEl = document.getElementById("f4-caret");
+        tl.to(blink, {
+          p: Math.PI * 2 * 12, duration: 10.031, ease: "none",
+          onUpdate: () => { caretEl.style.opacity = Math.sin(blink.p) > 0 ? "1" : "0"; }
+        }, 0);
+
+        // Scene 3 (3.15-4.71s): "Par SMS. À sept heures." — timestamp fades in
+        tl.to("#f4-timestamp", { opacity: 1, duration: 0.35, ease: "power3.out" }, 3.3);
+
+        // Scene 4 (4.71-7.53s): "Pas de prévision. Pas de données croisées." — empty chart frame, then "?"
+        tl.to("#f4-chartbox", { opacity: 1, duration: 0.4, ease: "power3.out" }, 4.8);
+        tl.fromTo("#f4-qmark", { opacity: 0, scale: 0 }, { opacity: 1, scale: 1, duration: 0.5, ease: "power3.out" }, 6.4);
+
+        // Scene 5 (7.53-8.73s): "Juste l'habitude." — thin red underline flags on both
+        tl.to(["#f4-flag1", "#f4-flag2"], { opacity: 0.8, duration: 0.3, ease: "power3.out" }, 7.65);
+
+        // Scene 6 (8.73-10.031s): hold — subtle jitter on the "?" only
+        const f4phase = { p: 0 };
+        tl.to(f4phase, {
+          p: Math.PI * 2 * 1.1, duration: 1.1, ease: "none",
+          onUpdate: () => {
+            const s = Math.sin(f4phase.p);
+            gsap.set("#f4-qmark", { y: s * 2 });
+          }
+        }, 8.85);
+
+        window.__timelines["04-commande-flair"] = tl;
+      </script>
+    </template>
+  </body>
+</html>

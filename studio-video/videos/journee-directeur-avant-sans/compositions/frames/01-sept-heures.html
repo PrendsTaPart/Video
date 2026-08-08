@@ -1,0 +1,291 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+  </head>
+  <body>
+    <template>
+      <style>
+        @font-face { font-family: "Inter"; src: url("assets/fonts/Inter-400.woff2") format("woff2"); font-weight: 400; font-style: normal; font-display: block; }
+        @font-face { font-family: "Inter"; src: url("assets/fonts/Inter-500.woff2") format("woff2"); font-weight: 500; font-style: normal; font-display: block; }
+        @font-face { font-family: "Inter"; src: url("assets/fonts/Inter-600.woff2") format("woff2"); font-weight: 600; font-style: normal; font-display: block; }
+        @font-face { font-family: "Inter"; src: url("assets/fonts/Inter-700.woff2") format("woff2"); font-weight: 700; font-style: normal; font-display: block; }
+        @font-face { font-family: "Inter"; src: url("assets/fonts/Inter-800.woff2") format("woff2"); font-weight: 800; font-style: normal; font-display: block; }
+
+        #root {
+          position: relative;
+          width: 1920px;
+          height: 1080px;
+          overflow: hidden;
+          font-family: "Inter", sans-serif;
+          color: #3A3F45;
+        }
+        .f1-bg {
+          position: absolute;
+          inset: 0;
+          background: #EDEEF0;
+          overflow: hidden;
+        }
+        .f1-bg img {
+          position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover;
+          filter: grayscale(1) contrast(1.05) brightness(0.88);
+        }
+        .f1-stage {
+          position: absolute;
+          inset: 0;
+        }
+        /* broken line motif — segments that never meet */
+        .f1-brokenline { position: absolute; left: 140px; right: 140px; top: 862px; height: 2px; }
+        .f1-brokenline span {
+          position: absolute;
+          top: 0;
+          height: 2px;
+          background: #8A9099;
+          opacity: 0.55;
+          transform-origin: 0% 50%;
+        }
+        .f1-clock {
+          position: absolute;
+          left: 140px;
+          top: 96px;
+          font-size: 96px;
+          font-weight: 700;
+          letter-spacing: -0.01em;
+          transform-origin: 0% 50%;
+        }
+        .f1-clock .unit { font-size: 44px; font-weight: 500; color: rgba(58,63,69,0.85); margin-left: 10px; }
+        .f1-sublabel {
+          position: absolute;
+          left: 142px;
+          top: 210px;
+          font-size: 30px;
+          font-weight: 500;
+          color: rgba(58,63,69,0.85);
+        }
+        .f1-screens {
+          position: absolute;
+          right: 120px;
+          top: 90px;
+          width: 980px;
+          height: 420px;
+          border: 1px solid #8A9099;
+          box-shadow: 0 20px 50px rgba(20,22,25,0.14);
+          overflow: hidden;
+        }
+        .f1-screens img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          object-position: top center;
+          filter: grayscale(0.85) contrast(1.05) brightness(1.03);
+          display: block;
+        }
+        .f1-tabbar {
+          position: absolute;
+          left: 140px;
+          top: 470px;
+          width: 1640px;
+          height: 64px;
+          display: flex;
+          gap: 10px;
+        }
+        .f1-tab {
+          width: 220px;
+          height: 100%;
+          border: 1px solid #8A9099;
+          background: #EDEEF0;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          font-size: 22px;
+          font-weight: 500;
+          color: rgba(58,63,69,0.85);
+        }
+        .f1-tab.active { border-color: #3A3F45; border-width: 2px; color: #3A3F45; font-weight: 700; }
+        .f1-passrow {
+          position: absolute;
+          left: 140px;
+          top: 590px;
+          display: flex;
+          gap: 22px;
+        }
+        .f1-dot { width: 14px; height: 14px; border-radius: 50%; background: #8A9099; }
+        .f1-passlabel {
+          position: absolute;
+          left: 142px;
+          top: 630px;
+          font-size: 26px;
+          color: rgba(58,63,69,0.85);
+          font-weight: 500;
+        }
+        .f1-invoices {
+          position: absolute;
+          left: 140px;
+          top: 690px;
+          width: 300px;
+          height: 190px;
+          border: 1px solid #8A9099;
+          box-shadow: 0 16px 34px rgba(20,22,25,0.12);
+          overflow: hidden;
+        }
+        .f1-invoices img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          filter: grayscale(0.65) contrast(1.05);
+          display: block;
+        }
+        .f1-invoicelabel { position: absolute; left: 500px; top: 706px; width: 300px; font-size: 26px; line-height: 1.3; color: rgba(58,63,69,0.85); font-weight: 500; }
+        .f1-count7 {
+          position: absolute;
+          left: 850px;
+          top: 700px;
+          font-size: 120px;
+          font-weight: 800;
+          color: #D64545;
+        }
+        .f1-count7 .suffix { font-size: 40px; font-weight: 600; color: rgba(58,63,69,0.85); margin-left: 8px; }
+        .f1-count7-ring {
+          position: absolute;
+          left: 820px;
+          top: 672px;
+          width: 210px;
+          height: 210px;
+          border-radius: 50%;
+          border: 3px solid #D64545;
+          opacity: 0;
+        }
+      </style>
+
+      <div id="root" data-composition-id="01-sept-heures" data-width="1920" data-height="1080" data-duration="12.046">
+        <div class="f1-bg clip" id="f1-bgclip" data-start="0" data-duration="12.046" data-track-index="1">
+          <img id="f1-bg-photo" src="public/generated/09-bureau-matin.jpg" alt="" />
+        </div>
+
+        <div class="f1-stage">
+          <div class="f1-brokenline" id="f1-brokenline">
+            <span style="left:0%; width:16%;"></span>
+            <span style="left:20%; width:22%; top:-3px;"></span>
+            <span style="left:46%; width:14%; top:2px;"></span>
+            <span style="left:64%; width:20%;"></span>
+            <span style="left:88%; width:12%; top:-2px;"></span>
+          </div>
+
+          <div class="f1-clock" id="f1-clock">7<span class="unit">H</span></div>
+          <div class="f1-sublabel" id="f1-sublabel">la salle est vide</div>
+
+          <div class="f1-screens" id="f1-screens">
+            <img id="f1-screens-img" src="public/generated/02-navigateur-onglets.jpg" alt="" />
+          </div>
+
+          <div class="f1-tabbar" id="f1-tabbar">
+            <div class="f1-tab active">onglet</div>
+            <div class="f1-tab">onglet</div>
+            <div class="f1-tab">onglet</div>
+            <div class="f1-tab">onglet</div>
+            <div class="f1-tab">onglet</div>
+            <div class="f1-tab">onglet</div>
+            <div class="f1-tab">onglet</div>
+          </div>
+
+          <div class="f1-passrow" id="f1-passrow">
+            <div class="f1-dot"></div><div class="f1-dot"></div><div class="f1-dot"></div>
+            <div class="f1-dot"></div><div class="f1-dot"></div><div class="f1-dot"></div>
+            <div class="f1-dot"></div>
+          </div>
+          <div class="f1-passlabel" id="f1-passlabel">sept mots de passe</div>
+
+          <div class="f1-invoices" id="f1-invoices">
+            <img id="f1-invoices-img" src="public/generated/01-factures.jpg" alt="" />
+          </div>
+          <div class="f1-invoicelabel" id="f1-invoicelabel">factures d'abonnement — chaque mois</div>
+          <div class="f1-count7" id="f1-count7">0<span class="suffix">× / mois</span></div>
+          <div class="f1-count7-ring" id="f1-count7-ring"></div>
+        </div>
+      </div>
+
+      <script>
+        window.__timelines = window.__timelines || {};
+        const tl = gsap.timeline({ paused: true });
+
+        // initial states (fromTo-correct at t=0)
+        gsap.set("#f1-brokenline span", { opacity: 0, scaleX: 0 });
+        gsap.set(["#f1-clock", "#f1-sublabel"], { opacity: 0 });
+        gsap.set("#f1-screens-img", { opacity: 0, x: 40 });
+        gsap.set(".f1-tab", { opacity: 0, y: 24 });
+        gsap.set(["#f1-passrow", "#f1-passlabel"], { opacity: 0 });
+        gsap.set(".f1-dot", { opacity: 0, scale: 0 });
+        gsap.set("#f1-invoices-img", { opacity: 0, y: 20, scale: 0.9 });
+        gsap.set("#f1-invoicelabel", { opacity: 0 });
+        gsap.set("#f1-count7", { opacity: 0 });
+        gsap.set("#f1-count7-ring", { opacity: 0, scale: 0.85 });
+        gsap.set("#f1-bg-photo", { opacity: 0.55 });
+
+        // Scene 1 (0.0-1.0s): broken line draws itself on, segment by segment — more visible
+        // motion than a plain fade (each segment grows from its left edge, like a pen dragging
+        // and lifting between disconnected strokes).
+        tl.to("#f1-brokenline span", { opacity: 0.55, duration: 0.01 }, 0.2);
+        tl.to("#f1-brokenline span", { scaleX: 1, duration: 0.45, ease: "power2.out", stagger: 0.09 }, 0.2);
+
+        // Continuous low-amplitude cinematic drift on the whole stage — keeps the frame alive
+        // throughout rather than only during the final hold (finite, sine-driven, seek-safe).
+        const f1drift = { p: 0 };
+        const f1stage = document.querySelector(".f1-stage");
+        tl.to(f1drift, {
+          p: Math.PI * 2 * 3.2, duration: 11.2, ease: "none",
+          onUpdate: () => {
+            const s = Math.sin(f1drift.p);
+            f1stage.style.transform = `translate(${s * 3}px, ${Math.sin(f1drift.p * 0.6) * 2}px) scale(${1 + s * 0.0025})`;
+          }
+        }, 0.3);
+
+        // Scene 2 (1.0-2.3s): "Sept heures. La salle est vide."
+        tl.fromTo("#f1-clock", { scale: 0, opacity: 0 }, { scale: 1, opacity: 1, duration: 0.5, ease: "power3.out" }, 1.0);
+        tl.fromTo("#f1-sublabel", { opacity: 0, y: 10 }, { opacity: 1, y: 0, duration: 0.45, ease: "power3.out" }, 1.6);
+
+        // cold-open establishing photo (empty office, early morning) recedes into the flat
+        // "sans" background once the UI content starts populating the frame
+        tl.to("#f1-bg-photo", { opacity: 0, duration: 0.7, ease: "power2.in" }, 1.9);
+
+        // Scene 3 (2.3-4.7s): "Mes écrans, eux, sont déjà pleins." — the real seven-tab dashboard
+        // photo slides/fades in as one piece (replaces the old three abstract placeholder boxes).
+        tl.to("#f1-screens-img", { opacity: 1, x: 0, duration: 0.9, ease: "power3.out" }, 2.6);
+
+        // Scene 4 (4.7-7.6s): "Sept onglets ouverts. Sept mots de passe." — tab row + password dots
+        gsap.utils.toArray(".f1-tab").forEach((el, i) => {
+          tl.to(el, { opacity: 1, y: 0, duration: 0.4, ease: "power3.out" }, 4.75 + i * 0.09);
+        });
+        tl.to("#f1-passrow", { opacity: 1, duration: 0.3, ease: "power3.out" }, 6.3);
+        gsap.utils.toArray(".f1-dot").forEach((el, i) => {
+          tl.to(el, { opacity: 1, scale: 1, duration: 0.3, ease: "power3.out" }, 6.35 + i * 0.06);
+        });
+        tl.to("#f1-passlabel", { opacity: 1, duration: 0.3, ease: "power3.out" }, 6.9);
+
+        // Scene 5 (7.6-10.53s): "Sept factures d'abonnement — chaque mois." — real invoice-pile
+        // photo + counter, with a red urgency ring that lands on the beat with the final count.
+        tl.to("#f1-invoices-img", { opacity: 1, y: 0, scale: 1, duration: 0.5, ease: "power3.out" }, 7.7);
+        tl.to("#f1-invoicelabel", { opacity: 1, duration: 0.35, ease: "power3.out" }, 8.2);
+        const f1count = { v: 0 };
+        const f1el = document.getElementById("f1-count7");
+        tl.to(f1count, {
+          v: 7, duration: 1.2, ease: "power2.out",
+          onUpdate: () => { f1el.firstChild.nodeValue = Math.round(f1count.v); }
+        }, 9.2);
+        tl.to("#f1-count7", { opacity: 1, duration: 0.3, ease: "power3.out" }, 9.2);
+        tl.fromTo("#f1-count7-ring", { opacity: 0, scale: 0.85 }, { opacity: 0.8, scale: 1, duration: 0.4, ease: "power3.out" }, 10.15);
+
+        // Scene 6 (10.53-11.546s): hold — subtle jitter on the tab row only
+        const f1phase = { p: 0 };
+        tl.to(f1phase, {
+          p: Math.PI * 2 * 1.4, duration: 1.0, ease: "none",
+          onUpdate: () => {
+            const s = Math.sin(f1phase.p);
+            document.getElementById("f1-tabbar").style.transform = `translateY(${s * 1.5}px)`;
+          }
+        }, 10.55);
+
+        window.__timelines["01-sept-heures"] = tl;
+      </script>
+    </template>
+  </body>
+</html>
