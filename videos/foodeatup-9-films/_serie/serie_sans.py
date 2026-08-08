@@ -260,11 +260,20 @@ class SerieSans:
                       font-family:"Fredoka",sans-serif; font-weight:600; font-size:46px;
                       color:{GRIS}; opacity:0; }}
 
+        /* Photo de fond du compteur. Le carton « ce que la journée a coûté »
+           tenait sur un aplat : un compteur de fatigue posé sur une image de
+           fatigue se lit tout autrement. Les blocs restent opaques, donc
+           lisibles quelle que soit la photo dessous. */
+        .fond-photo {{ position:absolute; inset:0; width:100%; height:100%;
+                       object-fit:cover; opacity:0; }}
+        .fond-voile {{ position:absolute; inset:0; background:rgba(237,238,240,.78);
+                       opacity:0; }}
+
         .compteur {{ position:absolute; left:0; right:0; top:400px;
                      display:flex; justify-content:center; gap:40px; }}
         .compteur .bloc {{ width:400px; text-align:center; background:#FFFFFF;
                            border:2px solid #D4D8DD; border-radius:12px; padding:30px 0 34px;
-                           opacity:0; }}
+                           opacity:0; box-shadow:0 18px 44px rgba(27,32,37,.16); }}
         /* `nowrap` n'est pas cosmétique : « 350 à 900 € » cassait en deux
            lignes et le libellé passait sous le bloc. La taille est réduite en
            Python selon la longueur de la valeur, pas ici. */
@@ -567,7 +576,7 @@ class SerieSans:
         )
         return _TEMPLATE.format(style=self.style, cid=cid, dur=dur, body=body, js=js)
 
-    def compteur(self, cid, abs_debut, dur, clock, eyebrow, blocs):
+    def compteur(self, cid, abs_debut, dur, clock, eyebrow, blocs, photo=None):
         """Le compteur du volet : ce que la journée a coûté.
 
         `blocs` est une liste de couples (valeur, libellé). Les valeurs sont
@@ -586,12 +595,27 @@ class SerieSans:
             f'<div class="lib">{lib}</div></div>\n'
             for i, (v, lib) in enumerate(blocs)
         )
+        fond = ""
+        if photo:
+            fond = (f'        <img class="fond-photo" id="fondPhoto"'
+                    f' src="assets/photos/sans/{photo}.jpg" alt="" />\n'
+                    '        <div class="fond-voile" id="fondVoile"></div>\n')
+
         body = (
             _FOND_HTML
+            + fond
             + self._entete(clock, eyebrow)
             + f'        <div class="compteur">\n{cases}        </div>\n'
         )
-        js = self._fond_js(dur) + self._entete_js()
+        js = self._fond_js(dur)
+        if photo:
+            # La photo entre avant l'en-tête et pousse lentement : elle doit
+            # être déjà là quand le premier chiffre tombe, pas arriver avec.
+            js += ('        tl.fromTo("#fondPhoto", { opacity:0, scale:1.05 },'
+                   ' { opacity:1, scale:1, duration:1.0, ease:"power2.out" }, 0);\n'
+                   f'        tl.to("#fondPhoto", {{ scale:1.035, duration:{max(0.5, float(dur) - 1.0):.2f}, ease:"none" }}, 1.0);\n'
+                   '        tl.fromTo("#fondVoile", { opacity:0 }, { opacity:1, duration:.7 }, .25);\n')
+        js += self._entete_js()
         for i in range(len(blocs)):
             js += (f'        tl.fromTo("#bl{i}", {{ opacity:0, y:26 }},'
                    f' {{ opacity:1, y:0, duration:.4, ease:"back.out(1.4)" }}, {0.5 + i * .35:.2f});\n')

@@ -45,6 +45,22 @@ ONGLETS = {
                   "Campagnes", "Paie", "Compta"],
 }
 
+# Photo de fond du carton « ce que la journée a coûté ». Cinq images du
+# registre « sans » déjà présentes dans la bibliothèque Higgsfield, jamais
+# montées jusqu'ici. Aucune ne montre d'interface tierce lisible (§6.1) ; la
+# note de relecture sur `sept-onglets` est dans `photos-sans.sh`.
+PHOTOS_COMPTEUR = {
+    "c1s-cuisine-avant-sans":     "cahier-spirale",
+    "c2s-cuisine-pendant-sans":   "ticket-au-sol",
+    "c3s-cuisine-apres-sans":     "cahier-spirale",
+    "s1s-salle-avant-sans":       "tablettes-depareillees",
+    "s2s-salle-pendant-sans":     "tablettes-depareillees",
+    "s3s-salle-apres-sans":       "comptoir-fin-service",
+    "d1s-direction-avant-sans":   "sept-onglets",
+    "d2s-direction-pendant-sans": "sept-onglets",
+    "d3s-direction-apres-sans":   "comptoir-fin-service",
+}
+
 # Les horloges des quatre scènes à en-tête (outils, outils, onglets, compteur).
 # Rassemblées ici plutôt que dispersées dans les blocs : c'est côte à côte
 # qu'on vérifie qu'une journée avance, et qu'aucun film ne recule.

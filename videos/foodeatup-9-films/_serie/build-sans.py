@@ -30,8 +30,8 @@ import sys
 
 ICI = pathlib.Path(__file__).resolve().parent
 sys.path.insert(0, str(ICI))
-from films_sans import (FILMS, HORLOGES, ONGLETS, REFRAIN,  # noqa: E402
-                        REFRAIN_APPUI, SURTITRES)
+from films_sans import (FILMS, HORLOGES, ONGLETS,  # noqa: E402
+                        PHOTOS_COMPTEUR, REFRAIN, REFRAIN_APPUI, SURTITRES)
 from serie_sans import SerieSans  # noqa: E402
 
 RACINE = ICI.parent
@@ -129,7 +129,8 @@ def construire(film, spec):
             allers=allers)),
         f"{sous}-s7-compteur.html": ("compteur", s.compteur(
             f"{sous}-s7-compteur", b[5]["debut"], b[5]["duree"],
-            horloges[3], "CE QUE LA JOURNÉE A COÛTÉ", spec["compteur"])),
+            horloges[3], "CE QUE LA JOURNÉE A COÛTÉ", spec["compteur"],
+            photo=PHOTOS_COMPTEUR[film])),
         f"{sous}-s8-cloture.html": ("carton", s.carton(
             f"{sous}-s8-cloture", b[6]["debut"], b[6]["duree"],
             spec["plates"][1], f"vid-{sous}-clo", clo_t, clo_s,

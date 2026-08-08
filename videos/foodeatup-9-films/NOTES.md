@@ -292,6 +292,67 @@ Décisions structurantes :
 - **Le parcours prouve que le produit est complet, pas qu'il est simple.**
   C'est précisément ce que le volet « sans » corrige.
 
+### 6.7 État de fabrication — 2026-08-08
+
+Les neuf films « sans » sont montés et rendus. L'ordre du §6.5 n'a pas été
+suivi à la lettre : Michael a demandé les neuf films, et D1′ a servi de pilote
+à l'intérieur de la série plutôt qu'avant elle — il a été rendu et relu seul,
+et les deux corrections qu'il a révélées (compteur qui casse sur les valeurs
+longues, plan des sept onglets au ventre vide) ont été portées dans la
+grammaire avant que les huit autres ne partent au rendu. Le mode « sans »
+textuel et le bouton bascule (point 1 du §6.5) restent à faire, et gardent
+tout leur intérêt.
+
+**Armature commune, générée et non recopiée.** Un seul générateur
+(`_serie/build-sans.py`) produit les neuf montages, ce qui rend structurellement
+impossible d'oublier l'un des trois éléments que le §6.3 impose :
+
+    hook · carton · outils · REFRAIN · outils · TAB-CHAOS · compteur ·
+    carton · punchline
+
+**Trois choix qui diffèrent du volet « avec ».**
+
+1. *Le hook est une scène, pas un habillage.* Sur les films « avec »,
+   l'ouverture a été insérée après coup et il a fallu décaler toute la ligne de
+   temps — ce décalage a éteint les cent-deux plans des neuf films d'un seul
+   geste. Ici le hook est déclaré à 0,00 s dès le départ et rien n'est décalé
+   après.
+
+2. *La voix est générée segment par segment.* Chaque durée est donc mesurée et
+   non lue dans une transcription. Les bornes de scène en découlent
+   (`vo-sans.py` → `timing.json` → `build-sans.py`) : une scène ne peut pas se
+   refermer avant sa phrase, c'est vrai par construction.
+
+3. *Les débuts sont arrondis, les durées déduites de leur différence.*
+   Arrondir les deux séparément faisait retomber `debut + duree` un centième à
+   côté du début suivant, et le lint rejetait des clips qui se chevauchaient de
+   dix millisecondes.
+
+**Sources image : rien de neuf n'a été généré.** Treize plans animés et cinq
+photos de la bibliothèque Higgsfield, ré-étalonnés au registre « sans »
+(désaturation à 18 %, refroidissement, contraste écrassé). Les cinq photos —
+un cahier à spirale taché, un ticket tombé au sol, un comptoir de fin de
+service, trois tablettes dépareillées, un écran à sept onglets — dormaient dans
+la bibliothèque depuis le 8 août et ont exactement le sujet des films. Elles
+doublent le carton « ce que la journée a coûté », qui tenait jusque-là sur un
+aplat.
+
+**La bibliothèque RapidoCMS n'a rien fourni, et c'était prévisible.** Ses 691
+images sont des visuels de marque FoodEatUp ou des vignettes de tutoriels
+FoodEatUp. Montrer l'un d'eux dans un film qui raconte l'absence du produit
+serait doublement faux : au récit, et au carton final, dont tout l'effet tient
+à ce que la charte n'ait pas paru avant.
+
+**Ce qui reste dû avant diffusion** — et qui n'est pas négociable :
+`RELECTURE-JURIDIQUE-SANS.md` liste les points, dont les deux garde-fous du
+§6.1. Les fourchettes chiffrées sont défendables dans leur forme mais **pas
+encore sourcées** ; c'est le point faible du dossier.
+
+Les plans qui manquent encore, avec leurs prompts prêts à coller, sont dans
+`PROMPTS-PLANS-SANS.md`. Aucun n'est bloquant : trois plans servent deux fois,
+ce qui ne se voit pas d'un film à l'autre mais se verra quand les neuf seront
+regardés à la suite.
+
 ---
 
 ## 7. Chaîne de fabrication d'un film
