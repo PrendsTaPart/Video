@@ -188,8 +188,12 @@ def scene_ecran(cid, dur, clock, eyebrow, reel, reel_dur, vid_id, checks):
         + f'        <div class="eyebrow" id="eyebrow">{eyebrow}</div>\n'
         + '        <div class="frame" id="frame">\n'
         + VEILLE_HTML
+        # La fenêtre déclarée est celle de la SCÈNE, pas celle du fichier.
+        # Le fichier est volontairement plus long (marge de sécurité), mais
+        # un clip qui déclare survivre à sa propre composition est un
+        # contrat mal défini — et c'est ce qui éteignait la scène 2.
         + f'          <video id="{vid_id}" src="assets/screens/c1/{reel}.mp4" muted playsinline'
-        f' class="clip" data-start="0" data-duration="{reel_dur:.2f}" data-track-index="2"></video>\n'
+        f' class="clip" data-start="0" data-duration="{float(dur):.2f}" data-track-index="2"></video>\n'
         + "        </div>\n"
         + f'        <div class="checks">\n{chips}        </div>\n'
     )
@@ -220,7 +224,7 @@ def scene_carton(cid, dur, plate, plate_dur, vid_id, title, sub, amb_opacity, ti
     body = (
         BG_HTML
         + f'        <video class="amb clip" id="{vid_id}" src="assets/plates/c1/{plate}.mp4"'
-        f' muted playsinline data-start="0" data-duration="{plate_dur:.2f}"'
+        f' muted playsinline data-start="0" data-duration="{float(dur):.2f}"'
         ' data-track-index="2"></video>\n'
         + f'        <div class="title" id="title">{title}</div>\n'
         + f'        <div class="sub" id="sub">{sub}</div>\n'
