@@ -20,3 +20,8 @@ videos/**/work/
 videos/**/out/work-*/
 videos/**/out/*hf-transaction*/
 videos/**/out/qa/
+
+# Journal de la file de rendu du volet « sans » : il grossit à chaque rendu et
+# n'a de valeur que pendant la file. Le versionner ferait un fichier qui change
+# à chaque exécution sans rien apprendre à personne.
+videos/foodeatup-9-films/_plans-sans/rendus.log
