@@ -1,7 +1,7 @@
 {
   "title": "Le même jour, deux fois",
   "fps": 30,
-  "durationSeconds": 208.06,
+  "durationSeconds": 196.71,
   "width": 1920,
   "height": 1080,
   "wipe": {
@@ -9,17 +9,17 @@
       "durationSeconds": 0.7,
       "easing": "cubic-bezier(0.65,0,0.35,1)",
       "atSeconds": [
-        38.22,
-        96.7,
-        162.16
+        34.22,
+        89.25,
+        153.43
       ]
     },
     "avecToSans": {
       "durationSeconds": 0.4,
       "easing": "none",
       "atSeconds": [
-        74.51,
-        141.7
+        67.92,
+        134.25
       ]
     }
   },
@@ -37,9 +37,9 @@
     "status": "AI_GENERATED_PLACEHOLDER",
     "statusNote": "Généré par l'API Sound Effects ElevenLabs, PAS une vraie cloche de passe enregistrée en cuisine. Utilisable pour un premier montage/validation du rythme ; le brief demande explicitement un enregistrement réel pour la version finale (réverbération du vrai lieu, accordage sur la tonique de la musique).",
     "atSeconds": [
-      120.73,
-      186.54,
-      201.56
+      113.93,
+      176.58,
+      190.21
     ],
     "rule": "Doit sonner exactement 3 fois dans tout le film."
   },
@@ -76,32 +76,32 @@
   "sfxCues": [
     {
       "file": "assets/sfx/son-scanner-bip.mp3",
-      "atSeconds": 57,
+      "atSeconds": 50.41,
       "note": "Chef scanne le carton (S2)."
     },
     {
       "file": "assets/sfx/son-jarvis-ecoute.mp3",
-      "atSeconds": 110.1,
+      "atSeconds": 102.82,
       "note": "Jarvis écoute (beat B, chef)."
     },
     {
       "file": "assets/sfx/son-jarvis-compris.mp3",
-      "atSeconds": 113.95,
+      "atSeconds": 106.91,
       "note": "Jarvis a compris (beat B, chef2)."
     },
     {
       "file": "assets/sfx/son-imprimante-z.mp3",
-      "atSeconds": 165.55,
+      "atSeconds": 156.04,
       "note": "Ticket Z (S6)."
     },
     {
       "file": "assets/sfx/son-iris-publie.mp3",
-      "atSeconds": 128.2,
+      "atSeconds": 121.88,
       "note": "Iris publie (beat D)."
     },
     {
       "file": "assets/sfx/son-validation-haccp.mp3",
-      "atSeconds": 173.2,
+      "atSeconds": 163.69,
       "note": "Photo IA nettoyage (S6)."
     }
   ],
@@ -111,13 +111,13 @@
       "label": "Ouverture",
       "state": "neutre",
       "fromSeconds": 0,
-      "durationSeconds": 11.07,
+      "durationSeconds": 8.43,
       "music": "silence",
       "beats": [
         {
           "id": "s0-cuisine-vide",
           "fromSeconds": 0,
-          "durationSeconds": 11.07,
+          "durationSeconds": 8.43,
           "speaker": "narratrice",
           "vo": {
             "file": "assets/voice/n-intro.mp3",
@@ -135,14 +135,14 @@
       "id": "S1",
       "label": "Avant le service",
       "state": "sans",
-      "fromSeconds": 11.07,
-      "durationSeconds": 27.15,
+      "fromSeconds": 8.43,
+      "durationSeconds": 25.79,
       "music": "sans",
       "beats": [
         {
           "id": "s1-narratrice",
-          "fromSeconds": 11.07,
-          "durationSeconds": 2.8,
+          "fromSeconds": 8.43,
+          "durationSeconds": 2.07,
           "speaker": "narratrice",
           "vo": {
             "file": "assets/voice/n-s1.mp3",
@@ -155,8 +155,8 @@
         },
         {
           "id": "s1-directeur",
-          "fromSeconds": 13.87,
-          "durationSeconds": 8.37,
+          "fromSeconds": 10.5,
+          "durationSeconds": 7.74,
           "speaker": "directeur",
           "vo": {
             "file": "assets/voice/s1-directeur.mp3",
@@ -170,7 +170,7 @@
         },
         {
           "id": "s1-chef",
-          "fromSeconds": 22.24,
+          "fromSeconds": 18.24,
           "durationSeconds": 6.62,
           "speaker": "chef",
           "vo": {
@@ -185,7 +185,7 @@
         },
         {
           "id": "s1-serveur",
-          "fromSeconds": 28.86,
+          "fromSeconds": 24.86,
           "durationSeconds": 9.36,
           "speaker": "serveur",
           "vo": {
@@ -205,14 +205,14 @@
       "id": "S2",
       "label": "Avant le service",
       "state": "avec",
-      "fromSeconds": 38.22,
-      "durationSeconds": 36.29,
+      "fromSeconds": 34.22,
+      "durationSeconds": 33.7,
       "music": "avec",
       "beats": [
         {
           "id": "s2-narratrice",
-          "fromSeconds": 38.22,
-          "durationSeconds": 2.8,
+          "fromSeconds": 34.22,
+          "durationSeconds": 2.07,
           "speaker": "narratrice",
           "vo": {
             "file": "assets/voice/n-s2.mp3",
@@ -225,8 +225,8 @@
         },
         {
           "id": "s2-directeur",
-          "fromSeconds": 41.02,
-          "durationSeconds": 14.98,
+          "fromSeconds": 36.29,
+          "durationSeconds": 13.12,
           "speaker": "directeur",
           "vo": {
             "file": "assets/voice/s2-directeur.mp3",
@@ -240,7 +240,7 @@
         },
         {
           "id": "s2-chef",
-          "fromSeconds": 56,
+          "fromSeconds": 49.41,
           "durationSeconds": 7.58,
           "speaker": "chef",
           "vo": {
@@ -255,7 +255,7 @@
         },
         {
           "id": "s2-serveur",
-          "fromSeconds": 63.58,
+          "fromSeconds": 56.99,
           "durationSeconds": 10.93,
           "speaker": "serveur",
           "vo": {
@@ -274,14 +274,14 @@
       "id": "S3",
       "label": "Pendant le service",
       "state": "sans",
-      "fromSeconds": 74.51,
-      "durationSeconds": 22.19,
+      "fromSeconds": 67.92,
+      "durationSeconds": 21.33,
       "music": "sans",
       "beats": [
         {
           "id": "s3-narratrice",
-          "fromSeconds": 74.51,
-          "durationSeconds": 3.33,
+          "fromSeconds": 67.92,
+          "durationSeconds": 2.52,
           "speaker": "narratrice",
           "vo": {
             "file": "assets/voice/n-s3.mp3",
@@ -294,7 +294,7 @@
         },
         {
           "id": "s3-serveur",
-          "fromSeconds": 77.84,
+          "fromSeconds": 70.44,
           "durationSeconds": 5.26,
           "speaker": "serveur",
           "vo": {
@@ -308,7 +308,7 @@
         },
         {
           "id": "s3-chef",
-          "fromSeconds": 83.1,
+          "fromSeconds": 75.7,
           "durationSeconds": 9.78,
           "speaker": "chef",
           "vo": {
@@ -323,8 +323,8 @@
         },
         {
           "id": "s3-directeur",
-          "fromSeconds": 92.88,
-          "durationSeconds": 3.82,
+          "fromSeconds": 85.48,
+          "durationSeconds": 3.77,
           "speaker": "directeur",
           "vo": {
             "file": "assets/voice/s3-directeur.mp3",
@@ -342,7 +342,7 @@
       "id": "S4",
       "label": "Pendant le service",
       "state": "avec",
-      "fromSeconds": 96.7,
+      "fromSeconds": 89.25,
       "durationSeconds": 45,
       "music": "avec",
       "locked": true,
@@ -350,8 +350,8 @@
       "beats": [
         {
           "id": "s4-narratrice",
-          "fromSeconds": 96.7,
-          "durationSeconds": 4.35,
+          "fromSeconds": 89.25,
+          "durationSeconds": 4.28,
           "speaker": "narratrice",
           "vo": {
             "file": "assets/voice/n-s4.mp3",
@@ -372,8 +372,8 @@
         },
         {
           "id": "s4-beatA-multicanal",
-          "fromSeconds": 101.05,
-          "durationSeconds": 9.05,
+          "fromSeconds": 93.53,
+          "durationSeconds": 9.29,
           "speaker": "serveur",
           "vo": {
             "file": "assets/voice/s4a-serveur.mp3",
@@ -395,8 +395,8 @@
         },
         {
           "id": "s4-beatB-jarvis-chef1",
-          "fromSeconds": 110.1,
-          "durationSeconds": 3.85,
+          "fromSeconds": 102.82,
+          "durationSeconds": 4.09,
           "speaker": "chef",
           "vo": {
             "file": "assets/voice/s4b-chef1.mp3",
@@ -411,8 +411,8 @@
         },
         {
           "id": "s4-beatB-jarvis-chef2",
-          "fromSeconds": 113.95,
-          "durationSeconds": 6.78,
+          "fromSeconds": 106.91,
+          "durationSeconds": 7.02,
           "speaker": "chef",
           "vo": {
             "file": "assets/voice/s4b-chef2.mp3",
@@ -428,8 +428,8 @@
         },
         {
           "id": "s4-beatC-envoi-chef",
-          "fromSeconds": 120.73,
-          "durationSeconds": 3.07,
+          "fromSeconds": 113.93,
+          "durationSeconds": 3.31,
           "speaker": "chef",
           "vo": {
             "file": "assets/voice/s4c-chef-platpret.mp3",
@@ -446,8 +446,8 @@
         },
         {
           "id": "s4-beatC-envoi-serveur",
-          "fromSeconds": 123.8,
-          "durationSeconds": 4.4,
+          "fromSeconds": 117.24,
+          "durationSeconds": 4.64,
           "speaker": "serveur",
           "vo": {
             "file": "assets/voice/s4c-serveur.mp3",
@@ -461,8 +461,8 @@
         },
         {
           "id": "s4-beatD-iris",
-          "fromSeconds": 128.2,
-          "durationSeconds": 13.5,
+          "fromSeconds": 121.88,
+          "durationSeconds": 12.37,
           "speaker": "directeur",
           "vo": {
             "file": "assets/voice/s4d-directeur.mp3",
@@ -482,14 +482,14 @@
       "id": "S5",
       "label": "Après le service",
       "state": "sans",
-      "fromSeconds": 141.7,
-      "durationSeconds": 20.46,
+      "fromSeconds": 134.25,
+      "durationSeconds": 19.18,
       "music": "sans",
       "beats": [
         {
           "id": "s5-narratrice",
-          "fromSeconds": 141.7,
-          "durationSeconds": 3.64,
+          "fromSeconds": 134.25,
+          "durationSeconds": 2.93,
           "speaker": "narratrice",
           "vo": {
             "file": "assets/voice/n-s5.mp3",
@@ -502,7 +502,7 @@
         },
         {
           "id": "s5-serveur",
-          "fromSeconds": 145.34,
+          "fromSeconds": 137.18,
           "durationSeconds": 7.77,
           "speaker": "serveur",
           "vo": {
@@ -516,7 +516,7 @@
         },
         {
           "id": "s5-chef",
-          "fromSeconds": 153.11,
+          "fromSeconds": 144.95,
           "durationSeconds": 5.49,
           "speaker": "chef",
           "vo": {
@@ -531,8 +531,8 @@
         },
         {
           "id": "s5-directeur",
-          "fromSeconds": 158.6,
-          "durationSeconds": 3.56,
+          "fromSeconds": 150.44,
+          "durationSeconds": 2.99,
           "speaker": "directeur",
           "vo": {
             "file": "assets/voice/s5-directeur.mp3",
@@ -549,14 +549,14 @@
       "id": "S6",
       "label": "Après le service",
       "state": "avec",
-      "fromSeconds": 162.16,
-      "durationSeconds": 24.88,
+      "fromSeconds": 153.43,
+      "durationSeconds": 23.65,
       "music": "resolution",
       "beats": [
         {
           "id": "s6-narratrice",
-          "fromSeconds": 162.16,
-          "durationSeconds": 3.09,
+          "fromSeconds": 153.43,
+          "durationSeconds": 2.31,
           "speaker": "narratrice",
           "vo": {
             "file": "assets/voice/n-s6.mp3",
@@ -569,7 +569,7 @@
         },
         {
           "id": "s6-serveur",
-          "fromSeconds": 165.25,
+          "fromSeconds": 155.74,
           "durationSeconds": 7.95,
           "speaker": "serveur",
           "vo": {
@@ -583,7 +583,7 @@
         },
         {
           "id": "s6-chef",
-          "fromSeconds": 173.2,
+          "fromSeconds": 163.69,
           "durationSeconds": 10.67,
           "speaker": "chef",
           "vo": {
@@ -598,8 +598,8 @@
         },
         {
           "id": "s6-directeur",
-          "fromSeconds": 183.87,
-          "durationSeconds": 3.17,
+          "fromSeconds": 174.36,
+          "durationSeconds": 2.72,
           "speaker": "directeur",
           "vo": {
             "file": "assets/voice/s6-directeur.mp3",
@@ -617,13 +617,13 @@
       "id": "S7",
       "label": "Clôture",
       "state": "avec",
-      "fromSeconds": 187.04,
-      "durationSeconds": 21.02,
+      "fromSeconds": 177.08,
+      "durationSeconds": 19.63,
       "music": "resolution",
       "beats": [
         {
           "id": "s7-triptyque",
-          "fromSeconds": 187.04,
+          "fromSeconds": 177.08,
           "durationSeconds": 6,
           "source": {
             "kind": "footage",
@@ -637,7 +637,7 @@
         },
         {
           "id": "s7-noir",
-          "fromSeconds": 193.04,
+          "fromSeconds": 183.08,
           "durationSeconds": 0.4,
           "source": {
             "kind": "motion",
@@ -646,8 +646,8 @@
         },
         {
           "id": "s7-narratrice",
-          "fromSeconds": 193.44,
-          "durationSeconds": 6.62,
+          "fromSeconds": 183.48,
+          "durationSeconds": 5.23,
           "speaker": "narratrice",
           "vo": {
             "file": "assets/voice/s7-narratrice.mp3",
@@ -662,7 +662,7 @@
         },
         {
           "id": "s7-logo-cta",
-          "fromSeconds": 200.06,
+          "fromSeconds": 188.71,
           "durationSeconds": 8,
           "source": {
             "kind": "motion",
@@ -706,12 +706,12 @@
     },
     "directeur": {
       "name": "Marc",
-      "voiceId": "VR6AewLTigWG4xSOukaG",
+      "voiceId": "rgFgMEXfdGwXCYio7I0J",
       "referenceElementId": "2f3b8e65-a41d-429a-abf7-5df04baddf7a",
       "characterSheet": "assets/image/characters/directeur-character-sheet.png"
     },
     "narratrice": {
-      "voiceId": "21m00Tcm4TlvDq8ikWAM"
+      "voiceId": "5OnMHwgTFgvPVwE8jP6B"
     }
   }
 }
