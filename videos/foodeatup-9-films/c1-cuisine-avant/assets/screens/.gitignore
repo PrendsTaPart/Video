@@ -1,0 +1,3 @@
+# Rushes téléchargés depuis S3 — reproductibles via ../../sources-video.json
+# et le manifeste screens.json. On ne versionne pas 77 Mo de sources dérivables.
+*.mp4

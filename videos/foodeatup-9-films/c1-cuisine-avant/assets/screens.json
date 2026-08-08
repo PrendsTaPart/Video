@@ -1,0 +1,106 @@
+{
+ "_comment": "Écrans du film C1 · Cuisine avant le service. Les sources sont les tutoriels déjà en ligne : on n'invente aucune interface. Les .mp4 ne sont pas versionnés (77 Mo, reproductibles depuis les URLs ci-dessous).",
+ "constatsSources": {
+  "dimensions": "1920x828 (2.32:1), pas du 16:9 — prévoir un cadrage ou des bandes",
+  "sousTitresIncrustes": "les rushes portent déjà un bandeau bleu de sous-titre en bas à gauche",
+  "consequence": "soit on recadre pour l'exclure, soit on l'assume comme libellé d'action — décision à prendre avant montage"
+ },
+ "ecrans": [
+  {
+   "ref": "ECRAN-01",
+   "slug": "pointer-son-service-cote-employe",
+   "label": "pointage employé",
+   "url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/pointer-son-service-cote-employe-v2",
+   "dureeSourceS": 43.96,
+   "dimensions": "1920,828"
+  },
+  {
+   "ref": "ECRAN-02",
+   "slug": "lire-ses-notifications",
+   "label": "tâches du jour",
+   "url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/lire-ses-notifications-v1",
+   "dureeSourceS": 29.24,
+   "dimensions": "1920,1020"
+  },
+  {
+   "ref": "ECRAN-03",
+   "slug": "relever-une-temperature-equipement",
+   "label": "relevé T° équipement",
+   "url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/foodeatup-temperature-tuto-v1.mp4",
+   "dureeSourceS": 37.68,
+   "dimensions": "1920,828"
+  },
+  {
+   "ref": "ECRAN-04",
+   "slug": "ajouter-modifier-ou-valider-une-reception-livraison",
+   "label": "contrôle réception",
+   "url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/foodeatup-reception-livraison-tuto-v1",
+   "dureeSourceS": 58.88,
+   "dimensions": "1920,828"
+  },
+  {
+   "ref": "ECRAN-05",
+   "slug": "scanner-ean-et-dlc-reception",
+   "label": "scan EAN + DLC",
+   "url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/scanner-ean-et-dlc-reception-v1",
+   "dureeSourceS": 47.32,
+   "dimensions": "1920,828"
+  },
+  {
+   "ref": "ECRAN-06",
+   "slug": "scanner-sa-facture-ocr",
+   "label": "OCR facture",
+   "url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/scanner-sa-facture-ocr-v1",
+   "dureeSourceS": 62.64,
+   "dimensions": "1920,828"
+  },
+  {
+   "ref": "ECRAN-07",
+   "slug": "sortir-ses-ingredients-du-stock",
+   "label": "Jarvis vocal",
+   "url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/foodeatup-sortie-stock-tuto-v1",
+   "dureeSourceS": 51.8,
+   "dimensions": "1920,828"
+  },
+  {
+   "ref": "ECRAN-08",
+   "slug": "monter-ses-recettes",
+   "label": "fiche technique",
+   "url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/monter-ses-recettes-v1",
+   "dureeSourceS": 46.24,
+   "dimensions": "1920,828"
+  },
+  {
+   "ref": "ECRAN-09",
+   "slug": "consulter-ses-productions-en-cours",
+   "label": "production du jour",
+   "url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/consulter-ses-productions-en-cours-v1",
+   "dureeSourceS": 52.76,
+   "dimensions": "1920,828"
+  },
+  {
+   "ref": "ECRAN-10",
+   "slug": "imprimer-ses-etiquettes",
+   "label": "générateur d'étiquettes",
+   "url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/imprimer-ses-etiquettes-v1",
+   "dureeSourceS": 61.68,
+   "dimensions": "1920,828"
+  },
+  {
+   "ref": "ECRAN-11",
+   "slug": "valider-une-production",
+   "label": "validation production",
+   "url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/foodeatup-valider-une-production",
+   "dureeSourceS": 47.0,
+   "dimensions": "1920,828"
+  },
+  {
+   "ref": "ECRAN-12",
+   "slug": "ajouter-temperature-plat",
+   "label": "température plats",
+   "url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/foodeatup-temperatures-tuto-v1",
+   "dureeSourceS": 37.84,
+   "dimensions": "1920,828"
+  }
+ ]
+}
