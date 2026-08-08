@@ -263,13 +263,13 @@ class Serie:
                        width:180px; height:6px; border-radius:3px; background:{self.metier};
                        transform-origin:center; transform:scaleX(0); }}
         /* Clôture : la marque à gauche, Michael à droite. */
-        .fin-logo {{ position:absolute; left:150px; top:250px; width:560px; opacity:0; }}
-        .fin-nom {{ position:absolute; left:150px; top:380px; width:700px;
-                    font-family:"Fredoka",sans-serif; font-weight:700; font-size:84px;
-                    color:{INK}; opacity:0; }}
-        .fin-baseline {{ position:absolute; left:150px; top:510px; width:760px;
-                         font-family:"Fredoka",sans-serif; font-weight:600; font-size:38px;
-                         color:{INK_SOFT}; opacity:0; line-height:1.35; }}
+        .fin-logo {{ position:absolute; left:150px; top:290px; width:680px; opacity:0; }}
+        .fin-baseline {{ position:absolute; left:150px; top:470px; width:820px;
+                         font-family:"Fredoka",sans-serif; font-weight:600; font-size:50px;
+                         color:{INK}; opacity:0; line-height:1.32; }}
+        .fin-lisere {{ position:absolute; left:150px; top:690px; width:180px; height:6px;
+                       border-radius:3px; background:{self.metier};
+                       transform-origin:left center; transform:scaleX(0); }}
         .fin-photo {{ position:absolute; right:140px; bottom:0; height:980px; opacity:0; }}
         .amb {{ position:absolute; inset:0; width:100%; height:100%; object-fit:cover; opacity:0; }}
         .title {{ position:absolute; left:0; right:0; bottom:132px; text-align:center;
@@ -565,16 +565,16 @@ class Serie:
             _BG_HTML
             + '        <img class="fin-photo" id="finPhoto" src="assets/brand/serie/michael-chef-cadre.jpg" alt="" />\n'
             + '        <img class="fin-logo" id="finLogo" src="assets/brand/serie/logo-mascot.png" alt="" />\n'
-            + '        <div class="fin-nom" id="finNom">FoodEatUp</div>\n'
             + '        <div class="fin-baseline" id="finBase">La solution qui s&rsquo;occupe de votre'
               ' établissement<br />avant, pendant et après votre service</div>\n'
+            + '        <div class="fin-lisere" id="finLisere"></div>\n'
         )
         js = (
             self._bg_js(dur)
             + '        tl.fromTo("#finPhoto", { opacity:0, x:60 }, { opacity:1, x:0, duration:.7, ease:"power2.out" }, .1);\n'
             + '        tl.fromTo("#finLogo", { opacity:0, y:18 }, { opacity:1, y:0, duration:.45, ease:"power2.out" }, .5);\n'
-            + '        tl.fromTo("#finNom", { opacity:0, y:18 }, { opacity:1, y:0, duration:.45, ease:"power2.out" }, .9);\n'
-            + '        tl.fromTo("#finBase", { opacity:0, y:14 }, { opacity:1, y:0, duration:.5, ease:"power2.out" }, 1.4);\n'
+            + '        tl.fromTo("#finBase", { opacity:0, y:14 }, { opacity:1, y:0, duration:.5, ease:"power2.out" }, 1.0);\n'
+            + '        tl.fromTo("#finLisere", { scaleX:0 }, { scaleX:1, duration:.45, ease:"power2.out" }, 1.6);\n'
         )
         return _TEMPLATE.format(style=self.style, cid=cid, dur=dur, body=body, js=js)
 
