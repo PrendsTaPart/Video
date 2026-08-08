@@ -1,0 +1,982 @@
+[
+  {
+    "text": "14h30",
+    "start": 0.11,
+    "end": 1.1
+  },
+  {
+    "text": "Le",
+    "start": 1.39,
+    "end": 1.57
+  },
+  {
+    "text": "service",
+    "start": 1.72,
+    "end": 2.18
+  },
+  {
+    "text": "est",
+    "start": 2.18,
+    "end": 2.43
+  },
+  {
+    "text": "fini.",
+    "start": 2.43,
+    "end": 2.84
+  },
+  {
+    "text": "Ce",
+    "start": 2.99,
+    "end": 3.11
+  },
+  {
+    "text": "qu'il",
+    "start": 3.23,
+    "end": 3.37
+  },
+  {
+    "text": "reste",
+    "start": 3.43,
+    "end": 3.76
+  },
+  {
+    "text": "sur",
+    "start": 3.76,
+    "end": 3.91
+  },
+  {
+    "text": "les",
+    "start": 3.91,
+    "end": 4
+  },
+  {
+    "text": "plans",
+    "start": 4,
+    "end": 4.16
+  },
+  {
+    "text": "de",
+    "start": 4.16,
+    "end": 4.34
+  },
+  {
+    "text": "travail,",
+    "start": 4.34,
+    "end": 5.04
+  },
+  {
+    "text": "personne",
+    "start": 5.07,
+    "end": 5.38
+  },
+  {
+    "text": "ne",
+    "start": 5.38,
+    "end": 5.45
+  },
+  {
+    "text": "s'en",
+    "start": 5.48,
+    "end": 5.63
+  },
+  {
+    "text": "souviendra",
+    "start": 5.75,
+    "end": 6.26
+  },
+  {
+    "text": "demain",
+    "start": 6.26,
+    "end": 6.57
+  },
+  {
+    "text": "matin.",
+    "start": 6.68,
+    "end": 7.14
+  },
+  {
+    "text": "Sauf",
+    "start": 7.16,
+    "end": 7.42
+  },
+  {
+    "text": "si",
+    "start": 7.42,
+    "end": 7.55
+  },
+  {
+    "text": "je",
+    "start": 7.55,
+    "end": 7.68
+  },
+  {
+    "text": "l'écris",
+    "start": 7.68,
+    "end": 8.13
+  },
+  {
+    "text": "maintenant,",
+    "start": 8.13,
+    "end": 8.93
+  },
+  {
+    "text": "pendant",
+    "start": 8.93,
+    "end": 9.46
+  },
+  {
+    "text": "que",
+    "start": 9.46,
+    "end": 9.67
+  },
+  {
+    "text": "je",
+    "start": 9.67,
+    "end": 9.81
+  },
+  {
+    "text": "l'ai",
+    "start": 9.81,
+    "end": 10.08
+  },
+  {
+    "text": "encore",
+    "start": 10.11,
+    "end": 10.41
+  },
+  {
+    "text": "sous",
+    "start": 10.41,
+    "end": 10.71
+  },
+  {
+    "text": "les",
+    "start": 10.71,
+    "end": 10.8
+  },
+  {
+    "text": "yeux.",
+    "start": 10.8,
+    "end": 11.71
+  },
+  {
+    "text": "Chaque",
+    "start": 11.83,
+    "end": 12.14
+  },
+  {
+    "text": "reste",
+    "start": 12.14,
+    "end": 12.5
+  },
+  {
+    "text": "reçoit",
+    "start": 12.5,
+    "end": 12.88
+  },
+  {
+    "text": "sa",
+    "start": 13.05,
+    "end": 13.06
+  },
+  {
+    "text": "date",
+    "start": 13.09,
+    "end": 13.1
+  },
+  {
+    "text": "limite.",
+    "start": 13.44,
+    "end": 14.04
+  },
+  {
+    "text": "Le",
+    "start": 14.04,
+    "end": 14.2
+  },
+  {
+    "text": "plat,",
+    "start": 14.2,
+    "end": 14.56
+  },
+  {
+    "text": "la",
+    "start": 14.71,
+    "end": 14.84
+  },
+  {
+    "text": "quantité,",
+    "start": 15,
+    "end": 15.68
+  },
+  {
+    "text": "l'équipement",
+    "start": 15.68,
+    "end": 16.06
+  },
+  {
+    "text": "de",
+    "start": 16.13,
+    "end": 16.27
+  },
+  {
+    "text": "stockage,",
+    "start": 16.27,
+    "end": 17.08
+  },
+  {
+    "text": "trois",
+    "start": 17.19,
+    "end": 17.4
+  },
+  {
+    "text": "champs,",
+    "start": 17.4,
+    "end": 17.9
+  },
+  {
+    "text": "pas",
+    "start": 17.9,
+    "end": 18.04
+  },
+  {
+    "text": "trois",
+    "start": 18.12,
+    "end": 18.23
+  },
+  {
+    "text": "cahiers.",
+    "start": 18.41,
+    "end": 19.08
+  },
+  {
+    "text": "J'imprime",
+    "start": 19.08,
+    "end": 19.7
+  },
+  {
+    "text": "mes",
+    "start": 19.7,
+    "end": 19.76
+  },
+  {
+    "text": "étiquettes,",
+    "start": 19.9,
+    "end": 20.76
+  },
+  {
+    "text": "je",
+    "start": 20.76,
+    "end": 20.89
+  },
+  {
+    "text": "les",
+    "start": 20.89,
+    "end": 21.11
+  },
+  {
+    "text": "colle,",
+    "start": 21.11,
+    "end": 21.6
+  },
+  {
+    "text": "et",
+    "start": 21.6,
+    "end": 21.72
+  },
+  {
+    "text": "le",
+    "start": 21.72,
+    "end": 21.84
+  },
+  {
+    "text": "frigo",
+    "start": 21.84,
+    "end": 22.16
+  },
+  {
+    "text": "redevient",
+    "start": 22.27,
+    "end": 22.74
+  },
+  {
+    "text": "lisible",
+    "start": 22.76,
+    "end": 23.22
+  },
+  {
+    "text": "pour",
+    "start": 23.22,
+    "end": 23.32
+  },
+  {
+    "text": "toute",
+    "start": 23.32,
+    "end": 23.88
+  },
+  {
+    "text": "l'équipe.",
+    "start": 23.88,
+    "end": 24.59
+  },
+  {
+    "text": "Ce",
+    "start": 24.59,
+    "end": 24.74
+  },
+  {
+    "text": "qui",
+    "start": 24.74,
+    "end": 24.84
+  },
+  {
+    "text": "est",
+    "start": 24.98,
+    "end": 25.21
+  },
+  {
+    "text": "parti",
+    "start": 25.42,
+    "end": 25.53
+  },
+  {
+    "text": "en",
+    "start": 25.62,
+    "end": 25.73
+  },
+  {
+    "text": "perte,",
+    "start": 25.74,
+    "end": 26.2
+  },
+  {
+    "text": "je",
+    "start": 26.27,
+    "end": 26.42
+  },
+  {
+    "text": "le",
+    "start": 26.42,
+    "end": 26.5
+  },
+  {
+    "text": "saisis.",
+    "start": 26.57,
+    "end": 27.32
+  },
+  {
+    "text": "Ce",
+    "start": 27.32,
+    "end": 27.52
+  },
+  {
+    "text": "qui",
+    "start": 27.63,
+    "end": 27.69
+  },
+  {
+    "text": "a",
+    "start": 27.75,
+    "end": 27.77
+  },
+  {
+    "text": "été",
+    "start": 27.77,
+    "end": 27.95
+  },
+  {
+    "text": "transformé",
+    "start": 27.95,
+    "end": 28.58
+  },
+  {
+    "text": "aussi.",
+    "start": 28.58,
+    "end": 29.09
+  },
+  {
+    "text": "Mon",
+    "start": 29.24,
+    "end": 29.28
+  },
+  {
+    "text": "stock",
+    "start": 29.28,
+    "end": 29.59
+  },
+  {
+    "text": "du",
+    "start": 29.59,
+    "end": 29.71
+  },
+  {
+    "text": "soir",
+    "start": 29.71,
+    "end": 29.95
+  },
+  {
+    "text": "n'est",
+    "start": 29.96,
+    "end": 30.2
+  },
+  {
+    "text": "pas",
+    "start": 30.2,
+    "end": 30.46
+  },
+  {
+    "text": "une",
+    "start": 30.46,
+    "end": 30.65
+  },
+  {
+    "text": "estimation",
+    "start": 30.81,
+    "end": 31.36
+  },
+  {
+    "text": "faite",
+    "start": 31.36,
+    "end": 31.56
+  },
+  {
+    "text": "de",
+    "start": 31.56,
+    "end": 31.74
+  },
+  {
+    "text": "tête,",
+    "start": 31.85,
+    "end": 32.17
+  },
+  {
+    "text": "c'est",
+    "start": 32.22,
+    "end": 32.58
+  },
+  {
+    "text": "un",
+    "start": 32.58,
+    "end": 32.7
+  },
+  {
+    "text": "relevé.",
+    "start": 32.7,
+    "end": 33.42
+  },
+  {
+    "text": "Ma",
+    "start": 33.46,
+    "end": 33.57
+  },
+  {
+    "text": "traçabilité",
+    "start": 33.57,
+    "end": 34.4
+  },
+  {
+    "text": "du",
+    "start": 34.4,
+    "end": 34.43
+  },
+  {
+    "text": "midi",
+    "start": 34.56,
+    "end": 34.86
+  },
+  {
+    "text": "se",
+    "start": 34.99,
+    "end": 35.01
+  },
+  {
+    "text": "referme",
+    "start": 35.03,
+    "end": 35.72
+  },
+  {
+    "text": "en",
+    "start": 35.72,
+    "end": 35.78
+  },
+  {
+    "text": "trois",
+    "start": 35.85,
+    "end": 36.16
+  },
+  {
+    "text": "gestes.",
+    "start": 36.16,
+    "end": 36.48
+  },
+  {
+    "text": "Je",
+    "start": 36.48,
+    "end": 37.08
+  },
+  {
+    "text": "pointe",
+    "start": 37.08,
+    "end": 37.36
+  },
+  {
+    "text": "ma",
+    "start": 37.36,
+    "end": 37.48
+  },
+  {
+    "text": "coupure.",
+    "start": 37.57,
+    "end": 37.92
+  },
+  {
+    "text": "22h15",
+    "start": 38.03,
+    "end": 38.97
+  },
+  {
+    "text": "Le",
+    "start": 38.97,
+    "end": 39.08
+  },
+  {
+    "text": "vrai",
+    "start": 39.08,
+    "end": 39.64
+  },
+  {
+    "text": "travail",
+    "start": 39.64,
+    "end": 40.21
+  },
+  {
+    "text": "de",
+    "start": 40.21,
+    "end": 40.39
+  },
+  {
+    "text": "fermeture",
+    "start": 40.39,
+    "end": 41.24
+  },
+  {
+    "text": "commence.",
+    "start": 41.24,
+    "end": 41.76
+  },
+  {
+    "text": "Même",
+    "start": 41.8,
+    "end": 42.4
+  },
+  {
+    "text": "étiquette,",
+    "start": 42.51,
+    "end": 43.17
+  },
+  {
+    "text": "même",
+    "start": 43.17,
+    "end": 43.45
+  },
+  {
+    "text": "date",
+    "start": 43.45,
+    "end": 43.56
+  },
+  {
+    "text": "limite,",
+    "start": 44.12,
+    "end": 44.29
+  },
+  {
+    "text": "même",
+    "start": 44.29,
+    "end": 44.57
+  },
+  {
+    "text": "perte.",
+    "start": 44.57,
+    "end": 45.08
+  },
+  {
+    "text": "Puis",
+    "start": 45.17,
+    "end": 45.4
+  },
+  {
+    "text": "je",
+    "start": 45.42,
+    "end": 45.55
+  },
+  {
+    "text": "pointe",
+    "start": 45.68,
+    "end": 45.97
+  },
+  {
+    "text": "mes",
+    "start": 45.97,
+    "end": 46.18
+  },
+  {
+    "text": "ondes",
+    "start": 46.18,
+    "end": 46.53
+  },
+  {
+    "text": "de",
+    "start": 46.53,
+    "end": 46.67
+  },
+  {
+    "text": "nettoyage",
+    "start": 46.67,
+    "end": 47.17
+  },
+  {
+    "text": "une",
+    "start": 47.47,
+    "end": 47.76
+  },
+  {
+    "text": "par",
+    "start": 47.76,
+    "end": 47.96
+  },
+  {
+    "text": "une",
+    "start": 47.96,
+    "end": 48.14
+  },
+  {
+    "text": "au",
+    "start": 48.23,
+    "end": 48.44
+  },
+  {
+    "text": "fur",
+    "start": 48.55,
+    "end": 48.61
+  },
+  {
+    "text": "et",
+    "start": 48.67,
+    "end": 48.77
+  },
+  {
+    "text": "à",
+    "start": 48.77,
+    "end": 48.83
+  },
+  {
+    "text": "mesure,",
+    "start": 48.83,
+    "end": 49.36
+  },
+  {
+    "text": "pas",
+    "start": 49.36,
+    "end": 49.54
+  },
+  {
+    "text": "toutes",
+    "start": 49.54,
+    "end": 49.85
+  },
+  {
+    "text": "d'un",
+    "start": 49.96,
+    "end": 50.21
+  },
+  {
+    "text": "coup",
+    "start": 50.21,
+    "end": 50.47
+  },
+  {
+    "text": "à",
+    "start": 50.47,
+    "end": 50.53
+  },
+  {
+    "text": "la",
+    "start": 50.53,
+    "end": 50.66
+  },
+  {
+    "text": "fin.",
+    "start": 50.66,
+    "end": 51.05
+  },
+  {
+    "text": "Une",
+    "start": 51.05,
+    "end": 51.12
+  },
+  {
+    "text": "photo.",
+    "start": 51.26,
+    "end": 51.79
+  },
+  {
+    "text": "L'intelligence",
+    "start": 51.79,
+    "end": 52.71
+  },
+  {
+    "text": "artificielle",
+    "start": 52.71,
+    "end": 53.6
+  },
+  {
+    "text": "regarde",
+    "start": 53.6,
+    "end": 54.12
+  },
+  {
+    "text": "à",
+    "start": 54.12,
+    "end": 54.18
+  },
+  {
+    "text": "ma",
+    "start": 54.27,
+    "end": 54.36
+  },
+  {
+    "text": "place",
+    "start": 54.47,
+    "end": 54.66
+  },
+  {
+    "text": "et",
+    "start": 54.66,
+    "end": 54.78
+  },
+  {
+    "text": "me",
+    "start": 54.78,
+    "end": 54.9
+  },
+  {
+    "text": "dit",
+    "start": 54.9,
+    "end": 55.02
+  },
+  {
+    "text": "ce",
+    "start": 55.1,
+    "end": 55.2
+  },
+  {
+    "text": "qui",
+    "start": 55.2,
+    "end": 55.32
+  },
+  {
+    "text": "n'est",
+    "start": 55.4,
+    "end": 55.52
+  },
+  {
+    "text": "pas",
+    "start": 55.68,
+    "end": 55.85
+  },
+  {
+    "text": "propre.",
+    "start": 56.08,
+    "end": 56.4
+  },
+  {
+    "text": "Pas",
+    "start": 56.4,
+    "end": 56.58
+  },
+  {
+    "text": "le",
+    "start": 56.58,
+    "end": 56.7
+  },
+  {
+    "text": "lendemain",
+    "start": 56.7,
+    "end": 57.24
+  },
+  {
+    "text": "matin",
+    "start": 57.35,
+    "end": 57.36
+  },
+  {
+    "text": "devant",
+    "start": 57.65,
+    "end": 57.9
+  },
+  {
+    "text": "un",
+    "start": 57.9,
+    "end": 58.02
+  },
+  {
+    "text": "inspecteur.",
+    "start": 58.02,
+    "end": 58.88
+  },
+  {
+    "text": "Maintenant,",
+    "start": 58.99,
+    "end": 59.67
+  },
+  {
+    "text": "quand",
+    "start": 59.67,
+    "end": 59.98
+  },
+  {
+    "text": "je",
+    "start": 59.98,
+    "end": 60.04
+  },
+  {
+    "text": "peux",
+    "start": 60.15,
+    "end": 60.35
+  },
+  {
+    "text": "encore",
+    "start": 60.6,
+    "end": 60.78
+  },
+  {
+    "text": "y",
+    "start": 60.78,
+    "end": 60.84
+  },
+  {
+    "text": "retourner,",
+    "start": 60.84,
+    "end": 61.55
+  },
+  {
+    "text": "ma",
+    "start": 61.55,
+    "end": 61.57
+  },
+  {
+    "text": "checklist",
+    "start": 62.13,
+    "end": 62.25
+  },
+  {
+    "text": "de",
+    "start": 62.34,
+    "end": 62.4
+  },
+  {
+    "text": "conformité.",
+    "start": 62.4,
+    "end": 63.31
+  },
+  {
+    "text": "Mon",
+    "start": 63.32,
+    "end": 63.57
+  },
+  {
+    "text": "dernier",
+    "start": 63.57,
+    "end": 64.15
+  },
+  {
+    "text": "relevé",
+    "start": 64.16,
+    "end": 64.62
+  },
+  {
+    "text": "de",
+    "start": 64.79,
+    "end": 64.83
+  },
+  {
+    "text": "température,",
+    "start": 64.83,
+    "end": 65.81
+  },
+  {
+    "text": "23h,",
+    "start": 65.81,
+    "end": 66.49
+  },
+  {
+    "text": "je",
+    "start": 66.49,
+    "end": 66.64
+  },
+  {
+    "text": "pointe",
+    "start": 66.64,
+    "end": 67.06
+  },
+  {
+    "text": "ma",
+    "start": 67.11,
+    "end": 67.23
+  },
+  {
+    "text": "sortie.",
+    "start": 67.23,
+    "end": 67.93
+  },
+  {
+    "text": "Ma",
+    "start": 67.95,
+    "end": 68.05
+  },
+  {
+    "text": "journée",
+    "start": 68.11,
+    "end": 68.62
+  },
+  {
+    "text": "entière",
+    "start": 68.62,
+    "end": 69.23
+  },
+  {
+    "text": "est",
+    "start": 69.24,
+    "end": 69.45
+  },
+  {
+    "text": "écrite",
+    "start": 69.45,
+    "end": 69.87
+  },
+  {
+    "text": "et",
+    "start": 69.89,
+    "end": 70.01
+  },
+  {
+    "text": "je",
+    "start": 70.01,
+    "end": 70.13
+  },
+  {
+    "text": "n'ai",
+    "start": 70.16,
+    "end": 70.42
+  },
+  {
+    "text": "rien",
+    "start": 70.51,
+    "end": 70.75
+  },
+  {
+    "text": "recopié.",
+    "start": 70.87,
+    "end": 71.42
+  }
+]
