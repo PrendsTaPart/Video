@@ -54,7 +54,18 @@ seg s2b "$SRC" KDS  24.0 6.65
 seg s3a "$SRC" COMMANDES 3.5 15.70
 
 # --- Scène 4 · je fais avancer les plats (8,40 s) --------------------------
-seg s4a "$SRC" KDS 15.0 8.60
+# Michael a fourni un montage court du même tutoriel (KDS-COURT, 21,32 s) en
+# demandant d'en utiliser la fin. Elle va à cette scène plutôt qu'à la 2 :
+# on y voit les boutons BUMP CHAUD et un plat déjà barré « en cours », qui
+# est littéralement le geste décrit par la voix. La scène 2, elle, garde le
+# parcours de configuration plus long de la version S3.
+#
+# Bornes relevées à la mesure, pas à l'œil : la luminance moyenne du tableau
+# vaut 35,0 quand il est vide, 52 à 66 quand il porte des cartes, 223 sur la
+# page de configuration. Les deux plages pleines sont 6,4-12,2 et 13,2-16,6 ;
+# on prend l'une puis l'autre, en enjambant le creux.
+seg s4a "$SRC" KDS-COURT  6.50 5.20
+seg s4b "$SRC" KDS-COURT 13.20 3.40
 
 # --- Scène 6 · retour de coupure et températures (6,68 s) ------------------
 # Deux écrans déjà prélevés pour C1 : le pointage et le relevé d'équipement.
@@ -68,7 +79,7 @@ seg s7a "$SRC" PREDIBOT 8.0 10.60
 
 concat_c SCENE-2 s2a s2b
 cp "$TMP/s3a.mp4" "$OUT/SCENE-3.mp4"
-cp "$TMP/s4a.mp4" "$OUT/SCENE-4.mp4"
+concat_c SCENE-4 s4a s4b
 concat_c SCENE-6 s6a s6b
 cp "$TMP/s7a.mp4" "$OUT/SCENE-7.mp4"
 

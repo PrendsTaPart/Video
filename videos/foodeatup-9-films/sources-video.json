@@ -235,7 +235,9 @@
  "fourniLocal": {
   "_comment": "Les deux seules sources que S3 refuse (403). Michael les a fournies le 2026-08-08 ; ce dépôt en est la seule copie, elles sont donc versionnées telles quelles.",
   "mes-commandes-tous-canaux": "_sources-non-reproductibles/foodeatup-mes-commandes-tuto-v1.mp4",
-  "retrouver-ses-reservations-du-jour": "_sources-non-reproductibles/foodeatup-reservations-jour-tuto.mp4"
+  "retrouver-ses-reservations-du-jour": "_sources-non-reproductibles/foodeatup-reservations-jour-tuto.mp4",
+  "afficher-le-kds-par-poste (montage court)": "_sources-non-reproductibles/foodeatup-kds-par-poste-montage-court.mp4",
+  "_note_kds": "21,32 s. Montage plus court et plus riche que la version S3 : tableaux en direct avec tickets et boutons BUMP, bascule Chaud -> Pass -> Froid, et AUCUN carton marketing final — la règle des 65 % ne s'y applique pas. Fourni par Michael le 2026-08-08 avec la consigne d'en utiliser la fin."
  },
  "mauvaisMapping": {
   "_comment": "Entrées du catalogue dont l'URL ne correspond pas au sujet. Vérifié image par image, pas déduit du nom.",
