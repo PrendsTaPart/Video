@@ -9,8 +9,8 @@ Cible : dirigeants et directeurs financiers de chaînes de boulangerie et de res
 
 | Bloc | Périmètre | État |
 |---|---|---|
-| `boulangerie/` | séquences 1 à 4 (55 s) | **vérifiée 41/41 + MP4 muet rendu** — VO en attente |
-| `restauration/` | séquences 1 à 4 (55 s) | **vérifiée 41/41 + MP4 muet rendu** — VO en attente |
+| `boulangerie/` | séquences 1 à 4 (55 s) | **41/41 + master habillé** (nappe + bruitages) — voix off en attente |
+| `restauration/` | séquences 1 à 4 (55 s) | **41/41 + master habillé** (nappe + bruitages) — voix off en attente |
 | `commun/` | séquences 5 à 9 | **bloqué** — voir ci-dessous |
 
 Les deux variantes partagent leur socle (`_shared/base.py`) : charte, squelette de
@@ -126,6 +126,37 @@ en H.264. **Deux écarts assumés par rapport au rendu cloud :**
 
 Coût du rendu cloud, pour mémoire : l'import est gratuit, le rendu est facturé
 **20 crédits par minute rendue** (≈ 18 crédits pour 55 s).
+
+## Habillage sonore
+
+`_shared/mixaudio.py <variante>` colle la nappe et les bruitages sur le master muet.
+Les assets sont générés avec **ElevenLabs** et versionnés dans `_shared/audio/` :
+`/v1/music` pour la nappe (55 s), `/v1/sound-generation` pour les cinq bruitages.
+
+Registre : nappe tenue, **pas de mélodie, pas de percussion, pas de montée** — la
+consigne C0 vaut aussi pour le son. Les bruitages ne soulignent que cinq instants :
+le CA qui se remplit, l'impact sur « L'écart », la séquence 3, l'empilement, la ligne
+finale.
+
+Trois réglages qui ont demandé une mesure, pas une intuition :
+
+- **Les bruitages sont normalisés à la CRÊTE, pas en LUFS.** `loudnorm` mesure une
+  loudness intégrée : sur un son bref noyé de silence il ne corrige quasiment rien, et
+  au premier mix le froissement des fiches et la pose des plateaux étaient purement
+  inaudibles sous la nappe (mesuré : +0,0 dB).
+- **Le silence de tête est retiré** (`silenceremove`) : la pose de plateau commençait
+  par 0,63 s de vide, elle tombait donc bien après le repère visuel.
+- **La nappe est à -30 LUFS**, pas -26 : à -26 elle crêtait à -15,8 dBFS, au niveau
+  même des bruitages, et plus rien n'en émergeait. Elle doit de toute façon rester
+  basse pour laisser la place à la voix off.
+
+Contrôle : chaque bruitage est vérifié en mesurant sa crête au timecode voulu contre la
+crête de la nappe seule — tous émergent de 7 à 14 dB. Crête finale ≈ -5,3 dBFS.
+
+**Ce qui n'était pas disponible :** Higgsfield n'est pas connecté à cette session
+(aucun serveur MCP de ce nom). RapidoCMS contient 330 fichiers, tous des vidéos
+produit — aucun asset sonore ; et ces rushes sont des captures produit, exclues ici
+par la règle « aucun plan produit avant la seconde 60 ».
 
 ## Prochaines étapes
 

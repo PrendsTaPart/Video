@@ -19,7 +19,7 @@
     {
       "variante": "boulangerie",
       "kpi": "taux d'invendus par magasin",
-      "statut": "composition vérifiée (41/41) + MP4 muet de contrôle rendu — VO en attente",
+      "statut": "composition vérifiée (41/41) + master habillé (nappe + bruitages) — VOIX OFF toujours en attente",
       "duree_cible": 55.0,
       "duree_reelle": 55.0,
       "note_duree": "durée provisoire : les data-duration devront être recalées sur la durée réelle de la VO une fois celle-ci générée (règle C0 : la VO fixe les durées)",
@@ -60,15 +60,16 @@
           "duree": 10.0
         }
       ],
-      "rendu": "out/foodeatup-chaines-boulangerie-seq1-4-muet-v1.mp4"
+      "rendu": "out/foodeatup-chaines-boulangerie-seq1-4-v1.mp4",
+      "rendu_muet": "out/foodeatup-chaines-boulangerie-seq1-4-muet-v1.mp4"
     },
     {
       "variante": "restauration",
       "kpi": "food cost par site à carte identique",
-      "statut": "composition vérifiée (41/41) + MP4 muet de contrôle rendu — VO en attente",
+      "statut": "composition vérifiée (41/41) + master habillé (nappe + bruitages) — VOIX OFF toujours en attente",
       "duree_cible": 55.0,
       "duree_reelle": 55.0,
-      "rendu": "out/foodeatup-chaines-restauration-seq1-4-muet-v1.mp4",
+      "rendu": "out/foodeatup-chaines-restauration-seq1-4-v1.mp4",
       "note_duree": "durée provisoire : à recaler sur la durée réelle de la VO (règle C0)",
       "sequences": [
         {
@@ -106,7 +107,8 @@
           "start": 45.0,
           "duree": 10.0
         }
-      ]
+      ],
+      "rendu_muet": "out/foodeatup-chaines-restauration-seq1-4-muet-v1.mp4"
     },
     {
       "variante": "commun",
@@ -122,5 +124,14 @@
       "muet (le son s'ajoute à l'étape enhance)",
       "transition shader cinematic-zoom remplacée par un fondu croisé 0,5 s (WebGL plante le renderer headless)"
     ]
+  },
+  "habillage_sonore": {
+    "source": "ElevenLabs — /v1/music pour la nappe, /v1/sound-generation pour les 5 bruitages",
+    "assets": "_shared/audio/ (versionnés)",
+    "nappe": "55 s, registre comité de direction : pas de mélodie, pas de percussion, pas de montée",
+    "mix": "nappe à -30 LUFS, bruitages normalisés à la CRÊTE, limiteur limit=0.6 level=disabled",
+    "note": "la nappe est volontairement basse pour laisser la place à la voix off à venir",
+    "higgsfield": "non connecté à cette session — aucun asset récupérable",
+    "rapidocms": "330 fichiers, tous des vidéos produit ; aucun asset sonore, et les rushes produit sont exclus par la règle « aucun plan produit avant la seconde 60 »"
   }
 }
