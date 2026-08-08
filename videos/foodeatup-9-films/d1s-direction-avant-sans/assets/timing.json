@@ -1,0 +1,54 @@
+{
+  "hook": 4.2,
+  "total": 55.89,
+  "scenes": [
+    {
+      "index": 0,
+      "debut": 4.2,
+      "duree": 5.23,
+      "voix": 4.68
+    },
+    {
+      "index": 1,
+      "debut": 9.43,
+      "duree": 9.58,
+      "voix": 9.04
+    },
+    {
+      "index": 2,
+      "debut": 19.01,
+      "duree": 6.98,
+      "voix": 5.88
+    },
+    {
+      "index": 3,
+      "debut": 25.99,
+      "duree": 7.32,
+      "voix": 6.77
+    },
+    {
+      "index": 4,
+      "debut": 33.31,
+      "duree": 5.09,
+      "voix": 4.55
+    },
+    {
+      "index": 5,
+      "debut": 38.4,
+      "duree": 5.23,
+      "voix": 4.68
+    },
+    {
+      "index": 6,
+      "debut": 43.63,
+      "duree": 4.26,
+      "voix": 3.71
+    },
+    {
+      "index": 7,
+      "debut": 47.89,
+      "duree": 8.0,
+      "voix": 7.11
+    }
+  ]
+}

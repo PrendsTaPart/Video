@@ -5,9 +5,17 @@ Trois vérifications, dans cet ordre d'importance :
 
 1. **Aucun cadre écran éteint.** C'est le défaut qui est passé deux fois : un
    clip dont la fenêtre ne couvre pas sa scène laisse voir le fond marine du
-   cadre. On mesure la luminance moyenne dans la zone du cadre tablette, et on
-   ignore les scènes qui n'en ont pas — habillages, cartons pleins écran et
-   schémas animés, dont les bornes sont lues dans l'orchestrateur.
+   cadre. On mesure la luminance dans la zone du cadre tablette, et on ignore
+   les scènes qui n'en ont pas — habillages, cartons pleins écran et schémas
+   animés, dont les bornes sont lues dans l'orchestrateur.
+
+   ⚠️ La luminance moyenne seule ne suffit pas. Le KDS de C2 est une
+   interface sombre : elle mesure 52, à peine au-dessus d'un cadre vide, et
+   le contrôle criait au défaut sur trente images parfaitement bonnes. Ce
+   qui sépare vraiment les deux cas n'est pas la moyenne mais le **point le
+   plus clair** : un cadre vide est un aplat marine uniforme, une interface
+   porte toujours du texte blanc ou une pastille vive. On exige donc les
+   deux — moyenne basse *et* aucun pixel clair (`YMAX`).
 
 2. **La durée rendue correspond à la durée déclarée**, à une image près.
 
@@ -26,8 +34,11 @@ RACINE = pathlib.Path(__file__).resolve().parents[3]
 COMPO = RACINE / "studio-video" / "compositions"
 # Zone du cadre tablette dans l'image (cf. serie.py).
 CADRE = "1560:546:180:226"
-# Un cadre éteint mesure ~43 ; une interface, même sombre comme un KDS, > 60.
+# Un cadre éteint mesure ~43 de moyenne — mais le KDS de C2 en mesure 52, la
+# marge est trop mince pour décider seule. Le second seuil tranche : l'aplat
+# marine du cadre vide ne dépasse jamais 120, le KDS monte à 241.
 SEUIL = 60
+SEUIL_CLAIR = 120
 
 
 def scenes_avec_ecran(film, sous):
@@ -70,20 +81,23 @@ def main():
     subprocess.run(
         ["ffmpeg", "-nostdin", "-v", "error", "-i", str(mp4),
          "-vf", f"fps=2,crop={CADRE},signalstats,"
-                f"metadata=print:key=lavfi.signalstats.YAVG:file={txt}",
+                f"metadata=print:file={txt}",
          "-f", "null", "-"], check=True)
 
-    vals, t = [], None
+    vals, t, moy = [], None, None
     for ligne in txt.read_text().splitlines():
         ligne = ligne.strip()
         if ligne.startswith("frame:"):
             t = float(ligne.split("pts_time:")[1])
-        elif "YAVG" in ligne:
-            vals.append((t, float(ligne.split("=")[1])))
+        elif ligne.startswith("lavfi.signalstats.YAVG="):
+            moy = float(ligne.split("=")[1])
+        elif ligne.startswith("lavfi.signalstats.YMAX="):
+            vals.append((t, moy, float(ligne.split("=")[1])))
 
     fenetres = scenes_avec_ecran(film, sous)
-    eteints = [(t, y) for t, y in vals
-               if y < SEUIL and any(a + 0.5 < t < b - 0.2 for _, a, b in fenetres)]
+    eteints = [(t, y, ymax) for t, y, ymax in vals
+               if y < SEUIL and ymax < SEUIL_CLAIR
+               and any(a + 0.5 < t < b - 0.2 for _, a, b in fenetres)]
 
     print(f"  film              {film}")
     print(f"  durée             {duree:.2f} s "
@@ -93,8 +107,8 @@ def main():
     print(f"  scènes à écran    {len(fenetres)}")
     print(f"  cadres éteints    {len(eteints)} "
           f"({'ok' if not eteints else 'DÉFAUT'})")
-    for t, y in eteints[:8]:
-        print(f"                    t={t:6.2f} s  luminance {y:.1f}")
+    for t, y, ymax in eteints[:8]:
+        print(f"                    t={t:6.2f} s  moyenne {y:.1f}  point clair {ymax:.0f}")
     sys.exit(1 if (eteints or "audio" not in pistes or abs(duree - declaree) > 0.05) else 0)
 
 

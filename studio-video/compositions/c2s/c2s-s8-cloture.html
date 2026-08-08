@@ -1,0 +1,209 @@
+<!doctype html>
+<html>
+  <head><meta charset="UTF-8" /></head>
+  <body>
+    <template>
+      <style>
+        @font-face {
+          font-family: "Fredoka";
+          src: url("assets/vendor/fonts/Fredoka-Variable.woff2") format("woff2-variations");
+          font-weight: 300 700; font-display: block;
+        }
+        #root { position:absolute; inset:0; background:#EDEEF0; overflow:hidden;
+                 font-family:"Fredoka",sans-serif; }
+
+        /* Sept lignes grises brisées, qui ne se touchent jamais. Elles
+           dérivent lentement et à des vitesses différentes : deux lignes qui
+           avanceraient ensemble suggéreraient une coordination. */
+        .ligne { position:absolute; height:3px; background:#C7CBD1; opacity:.9; }
+        .l0 { top:118px; left:-60px; width:520px; }
+        .l1 { top:246px; left:640px; width:380px; }
+        .l2 { top:372px; left:120px; width:300px; }
+        .l3 { top:498px; left:980px; width:640px; }
+        .l4 { top:624px; left:40px; width:460px; }
+        .l5 { top:802px; left:700px; width:520px; }
+        .l6 { top:946px; left:220px; width:340px; }
+
+        /* Voile froid : casse le blanc pur, qui à l'écran vire au bleu. */
+        .voile { position:absolute; inset:0;
+                  background:linear-gradient(160deg, rgba(58,63,69,.05), rgba(58,63,69,0) 55%); }
+
+        .clock { position:absolute; top:44px; left:64px; font-family:"Fredoka",sans-serif;
+                  font-weight:700; font-size:46px; color:#3A3F45; opacity:0; letter-spacing:.02em; }
+        .eyebrow { position:absolute; top:52px; left:340px; right:340px; text-align:center;
+                    font-family:"Fredoka",sans-serif; font-weight:600; font-size:40px;
+                    color:#8A9099; opacity:0; }
+
+        /* --- Maquettes d'outils --------------------------------------------
+           Tout ce qui suit est dessiné par nous. Aucune capture, aucun logo,
+           aucune palette d'éditeur : typographie système, gris, angles droits.
+           Voir la contrainte juridique en tête de module. */
+        .board { position:absolute; left:180px; top:226px;
+                  width:1560px; height:546px; opacity:0; }
+
+        .outil { position:absolute; top:0; background:#FFFFFF;
+                  border:2px solid #D4D8DD; border-radius:8px; overflow:hidden;
+                  box-shadow:0 12px 30px rgba(58,63,69,.10); opacity:0; }
+        .outil .barre { height:44px; background:#8A9099;
+                         display:flex; align-items:center; padding:0 16px; gap:8px; }
+        .outil .pastille { width:11px; height:11px; border-radius:50%;
+                            background:rgba(255,255,255,.55); }
+        .outil .nom { font-family:ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; font-size:20px; font-weight:600;
+                       color:#FFFFFF; margin-left:10px; letter-spacing:.01em; }
+        .outil .corps { padding:18px 16px; }
+        .outil .rang { height:12px; background:#E3E6EA; border-radius:2px; margin-bottom:12px; }
+        .outil .rang.court { width:58%; }
+        .outil .rang.moyen { width:78%; }
+
+        /* La croix rouge remplace la coche orange de la série « avec ». */
+        .croix { position:absolute; font-family:"Fredoka",sans-serif; font-weight:700;
+                  font-size:52px; color:#D64545; opacity:0; }
+
+        .manques { position:absolute; left:0; right:0; top:830px;
+                    display:flex; justify-content:center; align-items:center; gap:26px; }
+        .manque { display:flex; align-items:center; gap:12px; background:#FFFFFF;
+                   border:2px solid #D64545; color:#3A3F45;
+                   font-family:"Fredoka",sans-serif; font-weight:700; font-size:30px;
+                   padding:13px 27px; border-radius:999px; opacity:0; white-space:nowrap; }
+        .manque span { color:#D64545; font-size:34px; line-height:1; }
+
+        /* --- Le plan obligatoire : sept onglets, un chiffre recopié -------- */
+        .tabs { position:absolute; left:0; right:0; top:0; height:56px;
+                 display:flex; align-items:flex-end; padding-left:14px; gap:4px;
+                 background:#DDE1E6; }
+        .tab { height:42px; width:200px; background:#C9CED4; border-radius:8px 8px 0 0;
+                display:flex; align-items:center; justify-content:center;
+                font-family:ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; font-size:17px; color:#5D646C; }
+        .tab.actif { background:#FFFFFF; color:#3A3F45; height:48px; }
+        .page { position:absolute; left:0; right:0; top:56px; bottom:0; background:#FFFFFF; }
+        .champ { position:absolute; width:300px; height:64px; border:2px solid #C9CED4;
+                  border-radius:4px; background:#FFFFFF;
+                  font-family:ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; font-size:34px; color:#3A3F45;
+                  display:flex; align-items:center; justify-content:center; }
+        .champ.vide { color:#B7BCC2; }
+        .champ-lib { position:absolute; font-family:ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; font-size:22px;
+                      color:#7A8189; }
+        /* Matière de la page. Sans elle le plan avait un ventre blanc de
+           400 px, et la règle de la série veut qu'aucun plan ne finisse sur
+           du vide (NOTES §5 bis). */
+        .fausse-ligne { position:absolute; height:11px; background:#E9ECEF;
+                         border-radius:2px; }
+        /* Curseur dessiné en SVG et non en bordures CSS : le triangle obtenu
+           par bordures mesurait vingt pixels et se lisait comme une tache sur
+           le chiffre qu'il désigne. */
+        .curseur { position:absolute; width:42px; height:46px;
+                    filter:drop-shadow(0 3px 5px rgba(0,0,0,.32)); }
+        .porte { position:absolute; font-family:ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; font-size:30px; font-weight:700;
+                  color:#3A3F45; background:#FFF6C2; border:2px solid #E4D68A;
+                  border-radius:4px; padding:6px 14px; opacity:0; white-space:nowrap; }
+
+        /* --- Cartons, refrain, compteur ------------------------------------ */
+        .amb { position:absolute; inset:0; width:100%; height:100%; object-fit:cover; opacity:0; }
+        .assombri { position:absolute; inset:0; background:rgba(27,32,37,.34); opacity:0; }
+        .title { position:absolute; left:0; right:0; bottom:132px; text-align:center;
+                  font-family:"Fredoka",sans-serif; font-weight:700; font-size:76px; color:#F4F5F7;
+                  text-shadow:0 6px 30px rgba(20,24,28,.75); opacity:0; }
+        .sub { position:absolute; left:0; right:0; bottom:74px; text-align:center;
+                font-family:"Fredoka",sans-serif; font-weight:600; font-size:34px; color:#DCDEE2;
+                text-shadow:0 2px 16px rgba(20,24,28,.8); opacity:0; }
+
+        .refrain { position:absolute; left:150px; right:150px; top:380px; text-align:center;
+                    font-family:"Fredoka",sans-serif; font-weight:700; font-size:78px;
+                    color:#3A3F45; opacity:0; line-height:1.22; }
+        .refrain-b { position:absolute; left:150px; right:150px; top:640px; text-align:center;
+                      font-family:"Fredoka",sans-serif; font-weight:600; font-size:46px;
+                      color:#8A9099; opacity:0; }
+
+        .compteur { position:absolute; left:0; right:0; top:400px;
+                     display:flex; justify-content:center; gap:40px; }
+        .compteur .bloc { width:400px; text-align:center; background:#FFFFFF;
+                           border:2px solid #D4D8DD; border-radius:12px; padding:30px 0 34px;
+                           opacity:0; }
+        /* `nowrap` n'est pas cosmétique : « 350 à 900 € » cassait en deux
+           lignes et le libellé passait sous le bloc. La taille est réduite en
+           Python selon la longueur de la valeur, pas ici. */
+        .compteur .val { font-family:"Fredoka",sans-serif; font-weight:700; font-size:78px;
+                          color:#D64545; white-space:nowrap; line-height:1.05; }
+        .compteur .lib { font-family:"Fredoka",sans-serif; font-weight:600; font-size:30px;
+                          color:#8A9099; margin-top:8px; }
+
+        /* --- Hook d'ouverture ---------------------------------------------- */
+        .hk-sur { position:absolute; left:0; right:0; top:296px; text-align:center;
+                   font-family:"Fredoka",sans-serif; font-weight:600; font-size:48px;
+                   color:#8A9099; opacity:0; letter-spacing:.04em; }
+        .hk-titre { position:absolute; left:0; right:0; top:376px; text-align:center;
+                     font-family:"Fredoka",sans-serif; font-weight:700; font-size:112px;
+                     color:#3A3F45; opacity:0; }
+        .hk-titre em { font-style:normal; color:#D64545; }
+        .hk-phase { position:absolute; left:0; right:0; top:552px; text-align:center;
+                     font-family:"Fredoka",sans-serif; font-weight:600; font-size:52px;
+                     color:#3A3F45; opacity:0; }
+        .hk-lieu { position:absolute; left:0; right:0; top:632px; text-align:center;
+                    font-family:"Fredoka",sans-serif; font-weight:600; font-size:40px;
+                    color:#8A9099; opacity:0; }
+        .hk-barre { position:absolute; left:50%; margin-left:-90px; top:724px;
+                     width:180px; height:6px; border-radius:3px; background:#D64545;
+                     transform-origin:center; transform:scaleX(0); }
+
+        /* --- Punchline : la charte revient ---------------------------------
+           Seul plan du film qui porte les couleurs FoodEatUp. La bascule est
+           l'argument : elle doit être franche, pas fondue. */
+        .pl-fond { position:absolute; inset:0; background:#1B2A41; opacity:0; }
+        .pl-lueur-a { position:absolute; left:-320px; top:-380px; width:1400px; height:800px;
+                       border-radius:50%; filter:blur(10px); opacity:0;
+                       background:radial-gradient(closest-side, rgba(0,123,255,.30), rgba(0,123,255,0) 70%); }
+        .pl-lueur-b { position:absolute; right:-380px; bottom:-420px; width:1300px; height:820px;
+                       border-radius:50%; filter:blur(10px); opacity:0;
+                       background:radial-gradient(closest-side, rgba(255,165,0,.26), rgba(255,165,0,0) 70%); }
+        .pl-photo { position:absolute; right:30px; bottom:0; height:880px; opacity:0; }
+        .pl-logo { position:absolute; left:140px; top:236px; width:620px; opacity:0; }
+        .pl-une { position:absolute; left:140px; top:432px; width:1020px;
+                   font-family:"Fredoka",sans-serif; font-weight:700; font-size:62px;
+                   color:#FCF9E6; opacity:0; line-height:1.2; }
+        .pl-deux { position:absolute; left:140px; top:596px; width:980px;
+                    font-family:"Fredoka",sans-serif; font-weight:600; font-size:38px;
+                    color:#D9DEE6; opacity:0; line-height:1.36; }
+        .pl-barre { position:absolute; left:140px; top:744px; width:180px; height:6px;
+                     border-radius:3px; background:#FFA500;
+                     transform-origin:left center; transform:scaleX(0); }
+
+      </style>
+
+      <div id="root" data-composition-id="c2s-s8-cloture" data-width="1920" data-height="1080" data-duration="5.22">
+        <div class="ligne l0"></div>
+        <div class="ligne l1"></div>
+        <div class="ligne l2"></div>
+        <div class="ligne l3"></div>
+        <div class="ligne l4"></div>
+        <div class="ligne l5"></div>
+        <div class="ligne l6"></div>
+        <div class="voile"></div>
+        <video class="amb clip" id="vid-c2s-clo" src="assets/plates/c2s/tickets-empiles.mp4" muted playsinline data-start="0" data-duration="45.56" data-track-index="2"></video>
+        <div class="assombri" id="voile"></div>
+        <div class="title" id="title">Quatorze heures</div>
+        <div class="sub" id="sub">On a servi tout le monde, personne n'a compté</div>
+      </div>
+
+      <script>
+        window.__timelines = window.__timelines || {};
+        const tl = gsap.timeline({ paused: true });
+
+        // Sept lignes qui dérivent séparément — rien n'est synchronisé.
+        tl.to(".l0", { x:46, duration:17, ease:"sine.inOut", yoyo:true, repeat:1 }, 0);
+        tl.to(".l1", { x:-46, duration:13, ease:"sine.inOut", yoyo:true, repeat:1 }, 0);
+        tl.to(".l2", { x:46, duration:21, ease:"sine.inOut", yoyo:true, repeat:1 }, 0);
+        tl.to(".l3", { x:-46, duration:11, ease:"sine.inOut", yoyo:true, repeat:1 }, 0);
+        tl.to(".l4", { x:46, duration:19, ease:"sine.inOut", yoyo:true, repeat:1 }, 0);
+        tl.to(".l5", { x:-46, duration:15, ease:"sine.inOut", yoyo:true, repeat:1 }, 0);
+        tl.to(".l6", { x:46, duration:23, ease:"sine.inOut", yoyo:true, repeat:1 }, 0);
+        tl.fromTo("#vid-c2s-clo", { opacity:0, scale:1.06 }, { opacity:1, scale:1, duration:1.1, ease:"power2.out" }, 0);
+        tl.to("#vid-c2s-clo", { scale:1.04, duration:4.12, ease:"none" }, 1.1);
+        tl.fromTo("#voile", { opacity:0 }, { opacity:1, duration:.8 }, .3);
+        tl.fromTo("#title", { opacity:0, y:24 }, { opacity:1, y:0, duration:.6, ease:"power2.out" }, .5);
+        tl.fromTo("#sub", { opacity:0, y:14 }, { opacity:.94, y:0, duration:.5, ease:"power2.out" }, 1.2);
+
+        window.__timelines["c2s-s8-cloture"] = tl;
+      </script>
+    </template>
+  </body>
+</html>

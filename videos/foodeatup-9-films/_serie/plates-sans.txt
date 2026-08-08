@@ -1,0 +1,23 @@
+# sous-dossier   plan
+# Deux plans par film : l'ouverture et la clôture. Les trois plans nés au
+# registre « sans » sont placés là où ils portent le propos du film, pas
+# répartis pour faire nombre — les onglets ouvrent D1′ parce que c'est
+# exactement le sujet de D1′.
+c1s sans-cahier
+c1s cuisine-vide-matin
+c2s couloir-cuisine
+c2s tickets-empiles
+c3s cuisine-vide-nuit
+c3s telephone-comptoir
+s1s salle-chaises
+s1s salle-prete
+s2s sans-tablettes
+s2s telephone-comptoir
+s3s imprimante-z
+s3s salle-apres
+d1s sans-onglets
+d1s bureau-matin
+d2s bureau-matin
+d2s tickets-empiles
+d3s sans-onglets
+d3s devanture-nuit
