@@ -61,6 +61,15 @@ LIGNES = {
         ("s5", "Et l'écart ne se voit pas dans le chiffre d'affaires. Il se voit dans la marge, "
                "que vous lisez plusieurs semaines plus tard, agrégée, sur une seule ligne."),
     ],
+    # Bloc de fin (séquences 7 et 9). La ligne C1 « Vous voyez les trous avant le
+    # contrôleur » est VOLONTAIREMENT retirée : c'est une promesse de visibilité
+    # conformité au niveau groupe, donc une affirmation sur un écran non vérifié.
+    # Ne reste que l'argument de risque de marque, qui n'engage aucun produit.
+    "fin": [
+        ("s1", "La conformité suit la même logique. Un relevé manqué sur un site n'est pas un "
+               "détail local : c'est votre enseigne qui est exposée."),
+        ("s2", "Trois sites. Soixante jours. Vos chiffres, pas les nôtres."),
+    ],
 }
 
 
@@ -107,8 +116,12 @@ if __name__ == "__main__":
     if not key:
         sys.exit("ELEVENLABS_API_KEY absent de l'environnement")
     print(f"voix : {VOICE_NAME} ({VOICE_ID})  ·  {MODEL}\n")
-    for v in ("boulangerie", "restauration"):
+    cibles = sys.argv[1:] or ["boulangerie", "restauration"]
+    for v in cibles:
         d = genere(v, key)
+        if v == "fin":
+            print()
+            continue
         r = recalage(d)
         total = r["s1"] + r["s2"] + r["s3"] + r["s4"] + r["s5"]
         print(f"  -> scènes {v}: s1={r['s1']} s2={r['s2']} s3={r['s3']} "

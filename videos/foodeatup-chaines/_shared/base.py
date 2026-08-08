@@ -241,6 +241,9 @@ def cursor_svg() -> str:
         </svg>"""
 
 
+NOTE = """      /* Le premier tween d'une scene demarre a son instant EXACT (voir README). */\n"""
+
+
 def seq1_js(n_empty: int) -> str:
     """Timeline de la séquence 1 — identique aux deux variantes."""
     rows = "\n      ".join(
@@ -248,7 +251,7 @@ def seq1_js(n_empty: int) -> str:
         f'ease: "power2.out" }}, {S1 + 5.2 + i * 0.55:.2f});'
         for i in range(n_empty)
     )
-    return f"""tl.from("#board", {{ autoAlpha: 0, y: 40, duration: 0.9, ease: "power3.out" }}, {S1 + 0.2});
+    return f"""{NOTE}tl.from("#board", {{ autoAlpha: 0, y: 40, duration: 0.9, ease: "power3.out" }}, {S1});
       tl.from("#row-ca", {{ autoAlpha: 0, x: -24, duration: 0.6, ease: "power2.out" }}, {S1 + 1.5});
       tl.from("#row-ca-val", {{ scaleX: 0, duration: 0.8, ease: "expo.out" }}, {S1 + 2.2});
       {rows}
@@ -269,7 +272,7 @@ def seq2_js(targets: list[int], i_min: int, i_max: int) -> str:
         f'ease: "power2.inOut" }}, {S2 + 3.4 + i * 0.32:.2f});'
         for i in range(len(targets))
     )
-    return f"""tl.from("#s2-kicker", {{ autoAlpha: 0, y: -18, duration: 0.6, ease: "power2.out" }}, {S2 + 0.2});
+    return f"""{NOTE}tl.from("#s2-kicker", {{ autoAlpha: 0, y: -18, duration: 0.6, ease: "power2.out" }}, {S2});
       tl.from(".bar-row", {{
         autoAlpha: 0, x: -30, duration: 0.5, ease: "power2.out",
         stagger: {{ each: 0.11, from: "start" }}
@@ -288,9 +291,9 @@ def seq2_js(targets: list[int], i_min: int, i_max: int) -> str:
 
 def seq2b_js() -> str:
     """« L'écart » — trois secondes sans voix off, le plan qui doit rester."""
-    return f"""tl.from("#s3-kicker", {{ autoAlpha: 0, duration: 0.5, ease: "power2.out" }}, {S3 + 0.25});
-      tl.from("#s3-word", {{ autoAlpha: 0, yPercent: 22, duration: 0.8, ease: "power4.out" }}, {S3 + 0.4});
-      tl.from("#s3-sub", {{ autoAlpha: 0, y: 22, duration: 0.6, ease: "power2.out" }}, {S3 + 1.2});
+    return f"""{NOTE}tl.from("#s3-kicker", {{ autoAlpha: 0, duration: 0.5, ease: "power2.out" }}, {S3});
+      tl.from("#s3-word", {{ autoAlpha: 0, yPercent: 22, duration: 0.8, ease: "power4.out" }}, {S3 + 0.05});
+      tl.from("#s3-sub", {{ autoAlpha: 0, y: 22, duration: 0.6, ease: "power2.out" }}, {S3 + 0.9});
       tl.to("#s3-word", {{ y: -7, duration: 1.5, ease: "sine.inOut", yoyo: true, repeat: 1 }}, {S3 + 1.6});"""
 
 
@@ -313,8 +316,13 @@ def shader_js() -> str:
 
 
 def document(title: str, extra_css: str, logo_uri: str,
-             scenes_html: str, script_body: str) -> str:
-    """Assemble la composition complète, conforme au contrat d'import."""
+             scenes_html: str, script_body: str, duree: float = None) -> str:
+    """Assemble la composition complète, conforme au contrat d'import.
+
+    `duree` permet à un bloc plus court (le bloc de fin, séquences 7 et 9) de
+    réutiliser le même socle que les variantes de 55 s.
+    """
+    duree = TOTAL if duree is None else duree
     return f"""<!doctype html>
 <html lang="fr" style="overflow:hidden; margin:0">
   <head>
@@ -335,7 +343,7 @@ def document(title: str, extra_css: str, logo_uri: str,
   <body>
     <div id="main" data-composition-id="main"
          data-width="1920" data-height="1080"
-         data-start="0" data-duration="{TOTAL}">
+         data-start="0" data-duration="{duree}">
 {scenes_html}
     </div>
 
@@ -346,7 +354,7 @@ def document(title: str, extra_css: str, logo_uri: str,
 {script_body}
 
       /* cale la durée de la timeline sur data-duration */
-      tl.set("#main", {{}}, {TOTAL});
+      tl.set("#main", {{}}, {duree});
 
       window.__timelines["main"] = tl;
     </script>

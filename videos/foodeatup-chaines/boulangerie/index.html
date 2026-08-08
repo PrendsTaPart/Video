@@ -285,7 +285,8 @@
       tl.set("#s5", { autoAlpha: 1 }, 45.0);
 
       /* ================= SÉQUENCE 1 — le tableau de bord siège ================= */
-      tl.from("#board", { autoAlpha: 0, y: 40, duration: 0.9, ease: "power3.out" }, 0.2);
+            /* Le premier tween d'une scene demarre a son instant EXACT (voir README). */
+tl.from("#board", { autoAlpha: 0, y: 40, duration: 0.9, ease: "power3.out" }, 0.0);
       tl.from("#row-ca", { autoAlpha: 0, x: -24, duration: 0.6, ease: "power2.out" }, 1.5);
       tl.from("#row-ca-val", { scaleX: 0, duration: 0.8, ease: "expo.out" }, 2.2);
       tl.from("#row-e0", { autoAlpha: 0, x: -24, duration: 0.5, ease: "power2.out" }, 5.20);
@@ -303,7 +304,8 @@
       tl.to("#board", { y: -6, duration: 1.6, ease: "sine.inOut", yoyo: true, repeat: 1 }, 4.0);
 
       /* ================= SÉQUENCE 2a — les douze barres ================= */
-      tl.from("#s2-kicker", { autoAlpha: 0, y: -18, duration: 0.6, ease: "power2.out" }, 15.2);
+            /* Le premier tween d'une scene demarre a son instant EXACT (voir README). */
+tl.from("#s2-kicker", { autoAlpha: 0, y: -18, duration: 0.6, ease: "power2.out" }, 15.0);
       tl.from(".bar-row", {
         autoAlpha: 0, x: -30, duration: 0.5, ease: "power2.out",
         stagger: { each: 0.11, from: "start" }
@@ -331,24 +333,25 @@
       /* pas d'exit tween : le shader EST la sortie de cette scène */
 
       /* ================= SÉQUENCE 2b — « L'écart » ================= */
-      tl.from("#s3-kicker", { autoAlpha: 0, duration: 0.5, ease: "power2.out" }, 28.25);
-      tl.from("#s3-word", { autoAlpha: 0, yPercent: 22, duration: 0.8, ease: "power4.out" }, 28.4);
-      tl.from("#s3-sub", { autoAlpha: 0, y: 22, duration: 0.6, ease: "power2.out" }, 29.2);
+            /* Le premier tween d'une scene demarre a son instant EXACT (voir README). */
+tl.from("#s3-kicker", { autoAlpha: 0, duration: 0.5, ease: "power2.out" }, 28.0);
+      tl.from("#s3-word", { autoAlpha: 0, yPercent: 22, duration: 0.8, ease: "power4.out" }, 28.05);
+      tl.from("#s3-sub", { autoAlpha: 0, y: 22, duration: 0.6, ease: "power2.out" }, 28.9);
       tl.to("#s3-word", { y: -7, duration: 1.5, ease: "sine.inOut", yoyo: true, repeat: 1 }, 29.6);
 
       /* ================= SÉQUENCE 3 — les douze carnets ================= */
-      tl.from("#carnet-0", { autoAlpha: 0, y: 34, scale: 0.86, duration: 0.55, ease: "back.out(1.4)" }, 33.30);
-      tl.from("#carnet-1", { autoAlpha: 0, y: 34, scale: 0.86, duration: 0.55, ease: "back.out(1.4)" }, 33.46);
-      tl.from("#carnet-2", { autoAlpha: 0, y: 34, scale: 0.86, duration: 0.55, ease: "back.out(1.4)" }, 33.62);
-      tl.from("#carnet-3", { autoAlpha: 0, y: 34, scale: 0.86, duration: 0.55, ease: "back.out(1.4)" }, 33.78);
-      tl.from("#carnet-4", { autoAlpha: 0, y: 34, scale: 0.86, duration: 0.55, ease: "back.out(1.4)" }, 33.94);
-      tl.from("#carnet-5", { autoAlpha: 0, y: 34, scale: 0.86, duration: 0.55, ease: "back.out(1.4)" }, 34.10);
-      tl.from("#carnet-6", { autoAlpha: 0, y: 34, scale: 0.86, duration: 0.55, ease: "back.out(1.4)" }, 34.26);
-      tl.from("#carnet-7", { autoAlpha: 0, y: 34, scale: 0.86, duration: 0.55, ease: "back.out(1.4)" }, 34.42);
-      tl.from("#carnet-8", { autoAlpha: 0, y: 34, scale: 0.86, duration: 0.55, ease: "back.out(1.4)" }, 34.58);
-      tl.from("#carnet-9", { autoAlpha: 0, y: 34, scale: 0.86, duration: 0.55, ease: "back.out(1.4)" }, 34.74);
-      tl.from("#carnet-10", { autoAlpha: 0, y: 34, scale: 0.86, duration: 0.55, ease: "back.out(1.4)" }, 34.90);
-      tl.from("#carnet-11", { autoAlpha: 0, y: 34, scale: 0.86, duration: 0.55, ease: "back.out(1.4)" }, 35.06);
+      tl.from("#carnet-0", { autoAlpha: 0, y: 34, scale: 0.86, duration: 0.55, ease: "back.out(1.4)" }, 33.00);
+      tl.from("#carnet-1", { autoAlpha: 0, y: 34, scale: 0.86, duration: 0.55, ease: "back.out(1.4)" }, 33.16);
+      tl.from("#carnet-2", { autoAlpha: 0, y: 34, scale: 0.86, duration: 0.55, ease: "back.out(1.4)" }, 33.32);
+      tl.from("#carnet-3", { autoAlpha: 0, y: 34, scale: 0.86, duration: 0.55, ease: "back.out(1.4)" }, 33.48);
+      tl.from("#carnet-4", { autoAlpha: 0, y: 34, scale: 0.86, duration: 0.55, ease: "back.out(1.4)" }, 33.64);
+      tl.from("#carnet-5", { autoAlpha: 0, y: 34, scale: 0.86, duration: 0.55, ease: "back.out(1.4)" }, 33.80);
+      tl.from("#carnet-6", { autoAlpha: 0, y: 34, scale: 0.86, duration: 0.55, ease: "back.out(1.4)" }, 33.96);
+      tl.from("#carnet-7", { autoAlpha: 0, y: 34, scale: 0.86, duration: 0.55, ease: "back.out(1.4)" }, 34.12);
+      tl.from("#carnet-8", { autoAlpha: 0, y: 34, scale: 0.86, duration: 0.55, ease: "back.out(1.4)" }, 34.28);
+      tl.from("#carnet-9", { autoAlpha: 0, y: 34, scale: 0.86, duration: 0.55, ease: "back.out(1.4)" }, 34.44);
+      tl.from("#carnet-10", { autoAlpha: 0, y: 34, scale: 0.86, duration: 0.55, ease: "back.out(1.4)" }, 34.60);
+      tl.from("#carnet-11", { autoAlpha: 0, y: 34, scale: 0.86, duration: 0.55, ease: "back.out(1.4)" }, 34.76);
       /* ils se referment */
       tl.to(".carnet", {
         scaleX: 0.46, opacity: 0.5, duration: 0.7, ease: "power2.inOut",
@@ -358,7 +361,6 @@
       tl.to("#s4-line", { y: -5, duration: 1.4, ease: "sine.inOut", yoyo: true, repeat: 1 }, 41.6);
 
       /* ================= SÉQUENCE 4 — la frise du délai ================= */
-      tl.from("#frise", { scaleX: 0, transformOrigin: "left center", duration: 0.8, ease: "power2.out" }, 45.2);
       tl.to("#frise-prog", { width: "100%", duration: 3.4, ease: "none" }, 46.0);
       /* au jour 1, une fournée de trop, discrète — puis l'empilement grandit */
       tl.from("#fournee-0", { autoAlpha: 0, y: -30, duration: 0.45, ease: "power2.out" }, 47.20);

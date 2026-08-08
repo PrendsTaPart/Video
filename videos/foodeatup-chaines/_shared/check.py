@@ -12,8 +12,6 @@ import re
 import sys
 
 PALETTE = {"#fcf9e6", "#0f1a23", "#007bff", "#147aff", "#ffa500", "#fff", "#ffffff"}
-ROOT_DURATION = 55.0
-N_SCENES = 5
 
 ok, bad = [], []
 
@@ -25,13 +23,19 @@ def chk(cond, msg):
 def main(path: pathlib.Path) -> int:
     h = path.read_text(encoding="utf-8")
 
+    # durée et nombre de scènes sont LUS dans le fichier, pas supposés : le même
+    # contrôle sert aux variantes de 55 s et au bloc de fin, plus court.
+    m = re.search(r'id="main"[^>]*data-duration="([\d.]+)"', h)
+    root_duration = float(m.group(1)) if m else -1.0
+    n_scenes = len(re.findall(r'class="scene clip"', h))
+
     # --- contrat d'import ---
     chk(bool(re.search(r'id="main"[^>]*data-composition-id="main"', h)),
         'racine live data-composition-id="main"')
     chk("<template" not in h, "aucun <template> (la racine doit être dans le DOM live)")
-    for attr in ('data-width="1920"', 'data-height="1080"', 'data-start="0"',
-                 f'data-duration="{ROOT_DURATION}"'):
+    for attr in ('data-width="1920"', 'data-height="1080"', 'data-start="0"'):
         chk(attr in h, f"racine {attr}")
+    chk(root_duration > 0, f"racine data-duration numérique ({root_duration}s)")
     chk('window.__timelines["main"] = tl;' in h, 'timeline sur __timelines["main"]')
     chk("gsap.timeline({ paused: true })" in h, "timeline paused")
     chk("window.__resources" not in h, "pas de manifeste splash-loader")
@@ -39,16 +43,16 @@ def main(path: pathlib.Path) -> int:
     # --- scènes jointives ---
     scenes = re.findall(
         r'id="(s\d+)"[^>]*data-start="([\d.]+)"[^>]*data-duration="([\d.]+)"', h)
-    chk(len(scenes) == N_SCENES, f"{N_SCENES} scènes ({len(scenes)} trouvées)")
+    chk(len(scenes) == n_scenes, f"{n_scenes} scènes déclarées et tuilées")
     t = 0.0
     for sid, s, d in scenes:
         s, d = float(s), float(d)
         chk(abs(s - t) < 1e-6, f"{sid} jointive à {t}s")
         t = s + d
-    chk(abs(t - ROOT_DURATION) < 1e-6, f"somme des scènes = {t}s == data-duration")
+    chk(abs(t - root_duration) < 1e-6, f"somme des scènes = {t}s == data-duration")
 
     # --- empilement explicite (sinon la scène sortante transparaît) ---
-    for i in range(1, N_SCENES + 1):
+    for i in range(1, n_scenes + 1):
         chk(re.search(rf"#s{i} \{{ z-index: {i}; \}}", h) is not None,
             f"#s{i} a un z-index explicite")
 
@@ -69,15 +73,18 @@ def main(path: pathlib.Path) -> int:
     chk(h.count("@font-face") == 2, "2 @font-face inlinés (Fredoka + Baloo 2)")
     chk("s3://" not in h and "amazonaws.com" not in h, "aucune URL expirante/privée")
     chk("placehold" not in h, "aucun asset placeholder")
-    chk(h.count("cdn.jsdelivr.net") == 3, "runtime/GSAP/shaders depuis le CDN (non inlinés)")
+    chk(h.count("cdn.jsdelivr.net") >= 2, "runtime/GSAP depuis le CDN (non inlinés)")
 
-    # --- shader ---
-    sc = re.search(r"scenes:\s*\[([^\]]+)\]", h)
-    n_tr = len(re.findall(r"\{ time:", h))
-    n_sc = len(sc.group(1).split(",")) if sc else 0
-    chk(n_sc == n_tr + 1, f"scenes({n_sc}) == transitions({n_tr})+1")
-    dm = re.search(r'shader:\s*"[^"]+",\s*duration:\s*([\d.]+)', h)
-    chk(dm and float(dm.group(1)) >= 0.3, "durée shader >= 0.3s")
+    # --- shader (optionnel : un bloc en coupes franches n'en a pas) ---
+    if "HyperShader.init" in h:
+        sc = re.search(r"scenes:\s*\[([^\]]+)\]", h)
+        n_tr = len(re.findall(r"\{ time:", h))
+        n_sc = len(sc.group(1).split(",")) if sc else 0
+        chk(n_sc == n_tr + 1, f"scenes({n_sc}) == transitions({n_tr})+1")
+        dm = re.search(r'shader:\s*"[^"]+",\s*duration:\s*([\d.]+)', h)
+        chk(dm and float(dm.group(1)) >= 0.3, "durée shader >= 0.3s")
+    else:
+        ok.append("aucun shader (coupes franches) — contrôle sans objet")
 
     # --- charte C0 ---
     off = {x.lower() for x in re.findall(r"#[0-9a-fA-F]{3,6}\b", h)} - PALETTE

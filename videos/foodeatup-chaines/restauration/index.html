@@ -308,7 +308,8 @@
       tl.set("#s5", { autoAlpha: 1 }, 45.0);
 
       /* ================= SÉQUENCE 1 — le tableau de bord siège ================= */
-      tl.from("#board", { autoAlpha: 0, y: 40, duration: 0.9, ease: "power3.out" }, 0.2);
+            /* Le premier tween d'une scene demarre a son instant EXACT (voir README). */
+tl.from("#board", { autoAlpha: 0, y: 40, duration: 0.9, ease: "power3.out" }, 0.0);
       tl.from("#row-ca", { autoAlpha: 0, x: -24, duration: 0.6, ease: "power2.out" }, 1.5);
       tl.from("#row-ca-val", { scaleX: 0, duration: 0.8, ease: "expo.out" }, 2.2);
       tl.from("#row-e0", { autoAlpha: 0, x: -24, duration: 0.5, ease: "power2.out" }, 5.20);
@@ -326,7 +327,8 @@
       tl.to("#board", { y: -6, duration: 1.6, ease: "sine.inOut", yoyo: true, repeat: 1 }, 4.0);
 
       /* ================= SÉQUENCE 2a — les douze barres ================= */
-      tl.from("#s2-kicker", { autoAlpha: 0, y: -18, duration: 0.6, ease: "power2.out" }, 15.2);
+            /* Le premier tween d'une scene demarre a son instant EXACT (voir README). */
+tl.from("#s2-kicker", { autoAlpha: 0, y: -18, duration: 0.6, ease: "power2.out" }, 15.0);
       tl.from(".bar-row", {
         autoAlpha: 0, x: -30, duration: 0.5, ease: "power2.out",
         stagger: { each: 0.11, from: "start" }
@@ -354,24 +356,25 @@
       /* pas d'exit tween : le shader EST la sortie de cette scène */
 
       /* ================= SÉQUENCE 2b — « L'écart » ================= */
-      tl.from("#s3-kicker", { autoAlpha: 0, duration: 0.5, ease: "power2.out" }, 28.25);
-      tl.from("#s3-word", { autoAlpha: 0, yPercent: 22, duration: 0.8, ease: "power4.out" }, 28.4);
-      tl.from("#s3-sub", { autoAlpha: 0, y: 22, duration: 0.6, ease: "power2.out" }, 29.2);
+            /* Le premier tween d'une scene demarre a son instant EXACT (voir README). */
+tl.from("#s3-kicker", { autoAlpha: 0, duration: 0.5, ease: "power2.out" }, 28.0);
+      tl.from("#s3-word", { autoAlpha: 0, yPercent: 22, duration: 0.8, ease: "power4.out" }, 28.05);
+      tl.from("#s3-sub", { autoAlpha: 0, y: 22, duration: 0.6, ease: "power2.out" }, 28.9);
       tl.to("#s3-word", { y: -7, duration: 1.5, ease: "sine.inOut", yoyo: true, repeat: 1 }, 29.6);
 
       /* ================= SÉQUENCE 3 — les douze fiches ================= */
-      tl.from("#fiche-0", { autoAlpha: 0, y: 34, scale: 0.88, duration: 0.55, ease: "back.out(1.4)" }, 33.30);
-      tl.from("#fiche-1", { autoAlpha: 0, y: 34, scale: 0.88, duration: 0.55, ease: "back.out(1.4)" }, 33.46);
-      tl.from("#fiche-2", { autoAlpha: 0, y: 34, scale: 0.88, duration: 0.55, ease: "back.out(1.4)" }, 33.62);
-      tl.from("#fiche-3", { autoAlpha: 0, y: 34, scale: 0.88, duration: 0.55, ease: "back.out(1.4)" }, 33.78);
-      tl.from("#fiche-4", { autoAlpha: 0, y: 34, scale: 0.88, duration: 0.55, ease: "back.out(1.4)" }, 33.94);
-      tl.from("#fiche-5", { autoAlpha: 0, y: 34, scale: 0.88, duration: 0.55, ease: "back.out(1.4)" }, 34.10);
-      tl.from("#fiche-6", { autoAlpha: 0, y: 34, scale: 0.88, duration: 0.55, ease: "back.out(1.4)" }, 34.26);
-      tl.from("#fiche-7", { autoAlpha: 0, y: 34, scale: 0.88, duration: 0.55, ease: "back.out(1.4)" }, 34.42);
-      tl.from("#fiche-8", { autoAlpha: 0, y: 34, scale: 0.88, duration: 0.55, ease: "back.out(1.4)" }, 34.58);
-      tl.from("#fiche-9", { autoAlpha: 0, y: 34, scale: 0.88, duration: 0.55, ease: "back.out(1.4)" }, 34.74);
-      tl.from("#fiche-10", { autoAlpha: 0, y: 34, scale: 0.88, duration: 0.55, ease: "back.out(1.4)" }, 34.90);
-      tl.from("#fiche-11", { autoAlpha: 0, y: 34, scale: 0.88, duration: 0.55, ease: "back.out(1.4)" }, 35.06);
+      tl.from("#fiche-0", { autoAlpha: 0, y: 34, scale: 0.88, duration: 0.55, ease: "back.out(1.4)" }, 33.00);
+      tl.from("#fiche-1", { autoAlpha: 0, y: 34, scale: 0.88, duration: 0.55, ease: "back.out(1.4)" }, 33.16);
+      tl.from("#fiche-2", { autoAlpha: 0, y: 34, scale: 0.88, duration: 0.55, ease: "back.out(1.4)" }, 33.32);
+      tl.from("#fiche-3", { autoAlpha: 0, y: 34, scale: 0.88, duration: 0.55, ease: "back.out(1.4)" }, 33.48);
+      tl.from("#fiche-4", { autoAlpha: 0, y: 34, scale: 0.88, duration: 0.55, ease: "back.out(1.4)" }, 33.64);
+      tl.from("#fiche-5", { autoAlpha: 0, y: 34, scale: 0.88, duration: 0.55, ease: "back.out(1.4)" }, 33.80);
+      tl.from("#fiche-6", { autoAlpha: 0, y: 34, scale: 0.88, duration: 0.55, ease: "back.out(1.4)" }, 33.96);
+      tl.from("#fiche-7", { autoAlpha: 0, y: 34, scale: 0.88, duration: 0.55, ease: "back.out(1.4)" }, 34.12);
+      tl.from("#fiche-8", { autoAlpha: 0, y: 34, scale: 0.88, duration: 0.55, ease: "back.out(1.4)" }, 34.28);
+      tl.from("#fiche-9", { autoAlpha: 0, y: 34, scale: 0.88, duration: 0.55, ease: "back.out(1.4)" }, 34.44);
+      tl.from("#fiche-10", { autoAlpha: 0, y: 34, scale: 0.88, duration: 0.55, ease: "back.out(1.4)" }, 34.60);
+      tl.from("#fiche-11", { autoAlpha: 0, y: 34, scale: 0.88, duration: 0.55, ease: "back.out(1.4)" }, 34.76);
       /* les grammages se révèlent : même plat, douze recettes */
       tl.from(".fiche-qty", {
         scaleX: 0, transformOrigin: "left center", duration: 0.5, ease: "power2.out",
@@ -385,7 +388,6 @@
       tl.to("#c-marge", { strokeDashoffset: 0, duration: 2.6, ease: "none" }, 45.4);
       tl.from("#lg-prix", { autoAlpha: 0, x: 24, duration: 0.5, ease: "power2.out" }, 47.4);
       tl.from("#lg-marge", { autoAlpha: 0, x: 24, duration: 0.5, ease: "power2.out" }, 47.7);
-      tl.from("#frise", { scaleX: 0, transformOrigin: "left center", duration: 0.8, ease: "power2.out" }, 45.2);
       tl.to("#frise-prog", { width: "100%", duration: 3.0, ease: "none" }, 45.9);
       tl.from("#s5-line", { autoAlpha: 0, y: 26, duration: 0.7, ease: "power3.out" }, 50.4);
       tl.from("#s5-logo", { autoAlpha: 0, duration: 0.6, ease: "sine.out" }, 51.4);

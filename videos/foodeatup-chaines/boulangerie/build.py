@@ -62,7 +62,7 @@ def build() -> str:
 
     js_carnets = "\n      ".join(
         f'tl.from("#carnet-{i}", {{ autoAlpha: 0, y: 34, scale: 0.86, duration: 0.55, '
-        f'ease: "back.out(1.4)" }}, {B.S4 + 0.3 + i * 0.16:.2f});'
+        f'ease: "back.out(1.4)" }}, {B.S4 + i * 0.16:.2f});'
         for i in range(12)
     )
     js_stack = "\n      ".join(
@@ -186,7 +186,6 @@ def build() -> str:
       tl.to("#s4-line", {{ y: -5, duration: 1.4, ease: "sine.inOut", yoyo: true, repeat: 1 }}, {B.S4 + 8.6});
 
       /* ================= SÉQUENCE 4 — la frise du délai ================= */
-      tl.from("#frise", {{ scaleX: 0, transformOrigin: "left center", duration: 0.8, ease: "power2.out" }}, {B.S5 + 0.2});
       tl.to("#frise-prog", {{ width: "100%", duration: 3.4, ease: "none" }}, {B.S5 + 1.0});
       /* au jour 1, une fournée de trop, discrète — puis l'empilement grandit */
       {js_stack}

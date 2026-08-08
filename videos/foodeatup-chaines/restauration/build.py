@@ -78,7 +78,7 @@ def build() -> str:
 
     js_fiches = "\n      ".join(
         f'tl.from("#fiche-{i}", {{ autoAlpha: 0, y: 34, scale: 0.88, duration: 0.55, '
-        f'ease: "back.out(1.4)" }}, {B.S4 + 0.3 + i * 0.16:.2f});'
+        f'ease: "back.out(1.4)" }}, {B.S4 + i * 0.16:.2f});'
         for i in range(12)
     )
 
@@ -228,7 +228,6 @@ def build() -> str:
       tl.to("#c-marge", {{ strokeDashoffset: 0, duration: 2.6, ease: "none" }}, {B.S5 + 0.4});
       tl.from("#lg-prix", {{ autoAlpha: 0, x: 24, duration: 0.5, ease: "power2.out" }}, {B.S5 + 2.4});
       tl.from("#lg-marge", {{ autoAlpha: 0, x: 24, duration: 0.5, ease: "power2.out" }}, {B.S5 + 2.7});
-      tl.from("#frise", {{ scaleX: 0, transformOrigin: "left center", duration: 0.8, ease: "power2.out" }}, {B.S5 + 0.2});
       tl.to("#frise-prog", {{ width: "100%", duration: 3.0, ease: "none" }}, {B.S5 + 0.9});
       tl.from("#s5-line", {{ autoAlpha: 0, y: 26, duration: 0.7, ease: "power3.out" }}, {B.S5 + 5.4});
       tl.from("#s5-logo", {{ autoAlpha: 0, duration: 0.6, ease: "sine.out" }}, {B.S5 + 6.4});
