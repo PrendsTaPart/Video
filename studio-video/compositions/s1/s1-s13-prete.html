@@ -65,6 +65,36 @@
                   padding:14px 28px; border-radius:999px; opacity:0; transform:scale(.8);
                   white-space:nowrap; box-shadow:0 10px 26px rgba(255,165,0,.28); }
 
+
+        /* --- Scènes « motion design » -------------------------------------
+           Pour les étapes qui n'ont aucun tutoriel filmé. Volontairement
+           schématiques : jamais une fausse capture d'écran. La règle du
+           projet interdit d'inventer une interface, donc on explique le
+           mécanisme au lieu de le mettre en scène. */
+        .board { position:absolute; left:180px; top:226px;
+                  width:1560px; height:546px; opacity:0; }
+        .md-card { position:absolute; left:50%; top:96px; width:520px; margin-left:-260px;
+                    background:#FFFFFF; border:3px solid #E1DDC7; border-radius:20px;
+                    padding:26px 30px; box-shadow:0 18px 44px rgba(15,26,35,.12); }
+        .md-card .nom { font-family:"Fredoka",sans-serif; font-weight:700; font-size:38px; color:#0F1A23; }
+        .md-card .prix { font-family:"Fredoka",sans-serif; font-weight:600; font-size:30px; color:#4C5760; margin-top:6px; }
+        .md-barre { position:absolute; left:30px; right:30px; top:56px; height:5px;
+                     background:#C64B3A; transform-origin:left center; transform:scaleX(0); }
+        .md-canal { position:absolute; top:392px; width:400px; text-align:center;
+                     background:#FFFFFF; border:3px solid #E1DDC7; border-radius:16px;
+                     padding:18px 0; font-family:"Fredoka",sans-serif; font-weight:700;
+                     font-size:30px; color:#0F1A23; opacity:0; }
+        .md-canal .etat { display:block; font-size:24px; font-weight:600; color:#4C5760; margin-top:6px; }
+        .md-lien { position:absolute; top:250px; height:4px; background:#E1DDC7;
+                    transform-origin:left center; transform:scaleX(0); }
+        .md-tiroir { position:absolute; left:50%; margin-left:-330px; top:150px;
+                      width:660px; height:230px; border:5px solid #0F1A23; border-radius:18px;
+                      background:#FFFFFF; overflow:hidden; }
+        .md-tiroir-face { position:absolute; left:0; right:0; bottom:0; height:96px;
+                           background:#F5F0D4; border-top:5px solid #0F1A23; }
+        .md-montant { position:absolute; left:0; right:0; top:60px; text-align:center;
+                       font-family:"Fredoka",sans-serif; font-weight:700; font-size:76px; color:#0F1A23; }
+
         .amb { position:absolute; inset:0; width:100%; height:100%; object-fit:cover; opacity:0; }
         .title { position:absolute; left:0; right:0; bottom:132px; text-align:center;
                   font-family:"Fredoka",sans-serif; font-weight:700; font-size:76px; color:#FCF9E6;
@@ -75,13 +105,13 @@
 
       </style>
 
-      <div id="root" data-composition-id="s1-s11-prete" data-width="1920" data-height="1080" data-duration="9.30">
+      <div id="root" data-composition-id="s1-s13-prete" data-width="1920" data-height="1080" data-duration="8.24">
         <div class="metier"></div>
         <div class="glow glow-a" id="glowA"></div>
         <div class="glow glow-b" id="glowB"></div>
         <div class="glow glow-c" id="glowC"></div>
         <div class="grid" id="grid"></div>
-        <video class="amb clip" id="vid-plate-prete" src="assets/plates/s1/salle-prete.mp4" muted playsinline data-start="0" data-duration="73.30" data-track-index="2"></video>
+        <video class="amb clip" id="vid-plate-prete" src="assets/plates/s1/salle-prete.mp4" muted playsinline data-start="0" data-duration="89.20" data-track-index="2"></video>
         <div class="title" id="title">Ma salle est prête</div>
         <div class="sub" id="sub">Et je n'ai encore vu personne</div>
       </div>
@@ -92,15 +122,15 @@
 
         // Fond vivant : les dégradés dérivent et respirent, la trame glisse.
         tl.to("#glowA", { x:70, y:38, scale:1.10, duration:11, ease:"sine.inOut", yoyo:true, repeat:1 }, 0);
-        tl.to("#glowB", { x:-56, y:44, scale:1.14, duration:9, ease:"sine.inOut", yoyo:true, repeat:2 }, 0);
+        tl.to("#glowB", { x:-56, y:44, scale:1.14, duration:9, ease:"sine.inOut", yoyo:true, repeat:1 }, 0);
         tl.to("#glowC", { x:48, scale:1.08, duration:13, ease:"sine.inOut", yoyo:true, repeat:1 }, 0);
         tl.to("#grid", { x:-48, y:-48, duration:16, ease:"none", repeat:1 }, 0);
         tl.fromTo("#vid-plate-prete", { opacity:0, scale:1.06 }, { opacity:.9, scale:1, duration:1.2, ease:"power2.out" }, 0);
-        tl.to("#vid-plate-prete", { scale:1.045, duration:8.10, ease:"none" }, 1.2);
-        tl.fromTo("#title", { opacity:0, y:24 }, { opacity:1, y:0, duration:.6, ease:"power2.out" }, .6);
-        tl.fromTo("#sub", { opacity:0, y:14 }, { opacity:.92, y:0, duration:.5, ease:"power2.out" }, 1.4);
+        tl.to("#vid-plate-prete", { scale:1.045, duration:7.04, ease:"none" }, 1.2);
+        tl.fromTo("#title", { opacity:0, y:24 }, { opacity:1, y:0, duration:.6, ease:"power2.out" }, .5);
+        tl.fromTo("#sub", { opacity:0, y:14 }, { opacity:.92, y:0, duration:.5, ease:"power2.out" }, 1.2);
 
-        window.__timelines["s1-s11-prete"] = tl;
+        window.__timelines["s1-s13-prete"] = tl;
       </script>
     </template>
   </body>

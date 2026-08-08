@@ -65,6 +65,36 @@
                   padding:14px 28px; border-radius:999px; opacity:0; transform:scale(.8);
                   white-space:nowrap; box-shadow:0 10px 26px rgba(255,165,0,.28); }
 
+
+        /* --- Scènes « motion design » -------------------------------------
+           Pour les étapes qui n'ont aucun tutoriel filmé. Volontairement
+           schématiques : jamais une fausse capture d'écran. La règle du
+           projet interdit d'inventer une interface, donc on explique le
+           mécanisme au lieu de le mettre en scène. */
+        .board { position:absolute; left:180px; top:226px;
+                  width:1560px; height:546px; opacity:0; }
+        .md-card { position:absolute; left:50%; top:96px; width:520px; margin-left:-260px;
+                    background:#FFFFFF; border:3px solid #E1DDC7; border-radius:20px;
+                    padding:26px 30px; box-shadow:0 18px 44px rgba(15,26,35,.12); }
+        .md-card .nom { font-family:"Fredoka",sans-serif; font-weight:700; font-size:38px; color:#0F1A23; }
+        .md-card .prix { font-family:"Fredoka",sans-serif; font-weight:600; font-size:30px; color:#4C5760; margin-top:6px; }
+        .md-barre { position:absolute; left:30px; right:30px; top:56px; height:5px;
+                     background:#C64B3A; transform-origin:left center; transform:scaleX(0); }
+        .md-canal { position:absolute; top:392px; width:400px; text-align:center;
+                     background:#FFFFFF; border:3px solid #E1DDC7; border-radius:16px;
+                     padding:18px 0; font-family:"Fredoka",sans-serif; font-weight:700;
+                     font-size:30px; color:#0F1A23; opacity:0; }
+        .md-canal .etat { display:block; font-size:24px; font-weight:600; color:#4C5760; margin-top:6px; }
+        .md-lien { position:absolute; top:250px; height:4px; background:#E1DDC7;
+                    transform-origin:left center; transform:scaleX(0); }
+        .md-tiroir { position:absolute; left:50%; margin-left:-330px; top:150px;
+                      width:660px; height:230px; border:5px solid #0F1A23; border-radius:18px;
+                      background:#FFFFFF; overflow:hidden; }
+        .md-tiroir-face { position:absolute; left:0; right:0; bottom:0; height:96px;
+                           background:#F5F0D4; border-top:5px solid #0F1A23; }
+        .md-montant { position:absolute; left:0; right:0; top:60px; text-align:center;
+                       font-family:"Fredoka",sans-serif; font-weight:700; font-size:76px; color:#0F1A23; }
+
         .amb { position:absolute; inset:0; width:100%; height:100%; object-fit:cover; opacity:0; }
         .title { position:absolute; left:0; right:0; bottom:132px; text-align:center;
                   font-family:"Fredoka",sans-serif; font-weight:700; font-size:76px; color:#FCF9E6;
@@ -75,22 +105,31 @@
 
       </style>
 
-      <div id="root" data-composition-id="s1-s10-web" data-width="1920" data-height="1080" data-duration="5.76">
+      <div id="root" data-composition-id="s1-s10-rupture" data-width="1920" data-height="1080" data-duration="7.26">
         <div class="metier"></div>
         <div class="glow glow-a" id="glowA"></div>
         <div class="glow glow-b" id="glowB"></div>
         <div class="glow glow-c" id="glowC"></div>
         <div class="grid" id="grid"></div>
-        <div class="clock" id="clock">11:15</div>
-        <div class="eyebrow" id="eyebrow">LES COMMANDES WEB SONT TOMBÉES</div>
-        <div class="frame" id="frame">
-            <div class="veille"></div>
-            <div class="veille-scan" id="scan"></div>
-          <video id="vid-scene-10" src="assets/screens/s1/SCENE-10.mp4" muted playsinline class="clip" data-start="0" data-duration="64.00" data-track-index="2"></video>
+        <div class="clock" id="clock">11:00</div>
+        <div class="eyebrow" id="eyebrow">UN PLAT EN RUPTURE</div>
+        <div class="board" id="board">
+          <div class="md-card" id="mdCard">
+            <div class="nom">Tartare de bœuf</div>
+            <div class="prix">19,50 €</div>
+            <div class="md-barre" id="mdBarre"></div>
+          </div>
+          <div class="md-lien" id="mdLien0" style="left:260px; width:520px;"></div>
+          <div class="md-canal" id="mdCanal0" style="left:60px;">Site<span class="etat" id="mdEtat0">disponible</span></div>
+          <div class="md-lien" id="mdLien1" style="left:780px; width:1px;"></div>
+          <div class="md-canal" id="mdCanal1" style="left:580px;">Plateformes<span class="etat" id="mdEtat1">disponible</span></div>
+          <div class="md-lien" id="mdLien2" style="left:780px; width:520px;"></div>
+          <div class="md-canal" id="mdCanal2" style="left:1100px;">Salle<span class="etat" id="mdEtat2">disponible</span></div>
         </div>
         <div class="checks">
-          <div class="check" id="ck0"><span>✓</span>Vues avant l'ouverture</div>
-          <div class="check" id="ck1"><span>✓</span>Pas pendant le coup de feu</div>
+          <div class="check" id="ck0"><span>✓</span>Un seul geste</div>
+          <div class="check" id="ck1"><span>✓</span>Site à jour</div>
+          <div class="check" id="ck2"><span>✓</span>Plateformes à jour</div>
         </div>
       </div>
 
@@ -103,15 +142,35 @@
         tl.to("#glowB", { x:-56, y:44, scale:1.14, duration:9, ease:"sine.inOut", yoyo:true, repeat:1 }, 0);
         tl.to("#glowC", { x:48, scale:1.08, duration:13, ease:"sine.inOut", yoyo:true, repeat:1 }, 0);
         tl.to("#grid", { x:-48, y:-48, duration:16, ease:"none", repeat:1 }, 0);
-        tl.fromTo("#scan", { x:0, skewX:-12 }, { x:4300, skewX:-12, duration:3.4, ease:"none", repeat:2 }, 0);
         tl.fromTo("#clock", { opacity:0, y:-12 }, { opacity:1, y:0, duration:.4, ease:"power2.out" }, .05);
         tl.fromTo("#eyebrow", { opacity:0, y:-12 }, { opacity:.9, y:0, duration:.4, ease:"power2.out" }, .12);
-        // Le cadre apparaît en 320 ms ; l'action à l'écran démarre 250 ms après.
-        tl.fromTo("#frame", { opacity:0, scale:.94, rotateY:6 }, { opacity:1, scale:1, rotateY:6, duration:.32, ease:"back.out(1.6)" }, 0.35);
+        tl.fromTo("#board", { opacity:0, y:18 }, { opacity:1, y:0, duration:.35, ease:"power2.out" }, .3);
+        tl.fromTo("#mdCard", { opacity:0, scale:.94 }, { opacity:1, scale:1, duration:.3, ease:"back.out(1.5)" }, .45);
+        tl.to("#mdLien0", { scaleX:1, duration:.3, ease:"power2.out" }, 0.70);
+        tl.fromTo("#mdCanal0", { opacity:0, y:14 }, { opacity:1, y:0, duration:.28, ease:"power2.out" }, 0.85);
+        tl.to("#mdLien1", { scaleX:1, duration:.3, ease:"power2.out" }, 0.82);
+        tl.fromTo("#mdCanal1", { opacity:0, y:14 }, { opacity:1, y:0, duration:.28, ease:"power2.out" }, 0.97);
+        tl.to("#mdLien2", { scaleX:1, duration:.3, ease:"power2.out" }, 0.94);
+        tl.fromTo("#mdCanal2", { opacity:0, y:14 }, { opacity:1, y:0, duration:.28, ease:"power2.out" }, 1.09);
+        tl.to("#mdBarre", { scaleX:1, duration:.35, ease:"power2.inOut" }, 2.0);
+        tl.to("#mdCard", { opacity:.4, duration:.4 }, 2.2);
+        tl.to("#mdEtat0", { opacity:0, duration:.15 }, 2.45);
+        tl.set("#mdEtat0", { innerText:"retiré", color:"#C64B3A" }, 2.6);
+        tl.to("#mdEtat0", { opacity:1, duration:.2 }, 2.6);
+        tl.to("#mdCanal0", { borderColor:"#C64B3A", duration:.3 }, 2.6);
+        tl.to("#mdEtat1", { opacity:0, duration:.15 }, 2.45);
+        tl.set("#mdEtat1", { innerText:"retiré", color:"#C64B3A" }, 2.6);
+        tl.to("#mdEtat1", { opacity:1, duration:.2 }, 2.6);
+        tl.to("#mdCanal1", { borderColor:"#C64B3A", duration:.3 }, 2.6);
+        tl.to("#mdEtat2", { opacity:0, duration:.15 }, 2.45);
+        tl.set("#mdEtat2", { innerText:"retiré", color:"#C64B3A" }, 2.6);
+        tl.to("#mdEtat2", { opacity:1, duration:.2 }, 2.6);
+        tl.to("#mdCanal2", { borderColor:"#C64B3A", duration:.3 }, 2.6);
         tl.fromTo("#ck0", { opacity:0, scale:.8, y:14 }, { opacity:1, scale:1, y:0, duration:.24, ease:"back.out(2)" }, 1.75);
         tl.fromTo("#ck1", { opacity:0, scale:.8, y:14 }, { opacity:1, scale:1, y:0, duration:.24, ease:"back.out(2)" }, 2.03);
+        tl.fromTo("#ck2", { opacity:0, scale:.8, y:14 }, { opacity:1, scale:1, y:0, duration:.24, ease:"back.out(2)" }, 2.31);
 
-        window.__timelines["s1-s10-web"] = tl;
+        window.__timelines["s1-s10-rupture"] = tl;
       </script>
     </template>
   </body>

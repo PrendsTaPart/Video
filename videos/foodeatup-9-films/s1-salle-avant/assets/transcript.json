@@ -1,992 +1,1167 @@
 [
   {
     "text": "9h30.",
-    "start": 0.03,
-    "end": 1.05
+    "start": 0,
+    "end": 2.13
   },
   {
     "text": "La",
-    "start": 1.05,
-    "end": 1.37
-  },
-  {
-    "text": "salée",
-    "start": 1.37,
-    "end": 1.74
-  },
-  {
-    "text": "vide",
-    "start": 1.74,
-    "end": 2.04
-  },
-  {
-    "text": "les",
-    "start": 2.04,
-    "end": 2.24
-  },
-  {
-    "text": "chaises",
-    "start": 2.48,
-    "end": 2.78
-  },
-  {
-    "text": "encore",
-    "start": 2.78,
-    "end": 3.23
-  },
-  {
-    "text": "sur",
-    "start": 3.23,
-    "end": 3.39
-  },
-  {
-    "text": "les",
-    "start": 3.44,
-    "end": 3.67
-  },
-  {
-    "text": "tables.",
-    "start": 3.67,
-    "end": 4.33
-  },
-  {
-    "text": "Mais",
-    "start": 4.36,
-    "end": 4.51
-  },
-  {
-    "text": "la",
-    "start": 4.51,
-    "end": 4.6
-  },
-  {
-    "text": "journée,",
-    "start": 4.6,
-    "end": 4.94
-  },
-  {
-    "text": "elle",
-    "start": 5.26,
-    "end": 5.53
-  },
-  {
-    "text": "a",
-    "start": 5.53,
-    "end": 5.73
-  },
-  {
-    "text": "déjà",
-    "start": 5.73,
-    "end": 6.02
-  },
-  {
-    "text": "commencé",
-    "start": 6.04,
-    "end": 6.54
-  },
-  {
-    "text": "sans",
-    "start": 6.65,
-    "end": 6.91
-  },
-  {
-    "text": "moi.",
-    "start": 6.98,
-    "end": 7.38
-  },
-  {
-    "text": "Je",
-    "start": 7.39,
-    "end": 7.53
-  },
-  {
-    "text": "pointe,",
-    "start": 7.53,
-    "end": 8.12
-  },
-  {
-    "text": "je",
-    "start": 8.12,
-    "end": 8.26
-  },
-  {
-    "text": "récupère",
-    "start": 8.51,
-    "end": 8.88
-  },
-  {
-    "text": "mes",
-    "start": 8.88,
-    "end": 9.11
-  },
-  {
-    "text": "tâches",
-    "start": 9.11,
-    "end": 9.54
-  },
-  {
-    "text": "et",
-    "start": 9.54,
-    "end": 9.7
-  },
-  {
-    "text": "je",
-    "start": 9.7,
-    "end": 9.85
-  },
-  {
-    "text": "regarde",
-    "start": 9.85,
-    "end": 10.38
-  },
-  {
-    "text": "ce",
-    "start": 10.38,
-    "end": 10.53
-  },
-  {
-    "text": "que",
-    "start": 10.53,
-    "end": 10.76
-  },
-  {
-    "text": "la",
-    "start": 10.76,
-    "end": 10.91
-  },
-  {
-    "text": "nuit",
-    "start": 10.91,
-    "end": 11.32
-  },
-  {
-    "text": "a",
-    "start": 11.35,
-    "end": 11.38
-  },
-  {
-    "text": "laissé.",
-    "start": 11.38,
-    "end": 11.85
-  },
-  {
-    "text": "Mes",
-    "start": 11.95,
-    "end": 12.13
-  },
-  {
-    "text": "réservations",
-    "start": 12.13,
-    "end": 12.89
-  },
-  {
-    "text": "du",
-    "start": 12.89,
-    "end": 13.01
-  },
-  {
-    "text": "jour,",
-    "start": 13.01,
-    "end": 13.38
-  },
-  {
-    "text": "dans",
-    "start": 13.38,
-    "end": 13.56
-  },
-  {
-    "text": "l'ordre.",
-    "start": 13.69,
-    "end": 14.36
-  },
-  {
-    "text": "Le",
-    "start": 14.36,
-    "end": 14.52
-  },
-  {
-    "text": "nom,",
-    "start": 14.54,
-    "end": 14.96
-  },
-  {
-    "text": "l'heure,",
-    "start": 14.96,
-    "end": 15.73
-  },
-  {
-    "text": "le",
-    "start": 15.73,
-    "end": 15.9
-  },
-  {
-    "text": "nombre",
-    "start": 15.9,
-    "end": 16.26
-  },
-  {
-    "text": "de",
-    "start": 16.58,
-    "end": 16.6
-  },
-  {
-    "text": "couverts,",
-    "start": 16.6,
-    "end": 17.44
-  },
-  {
-    "text": "la",
-    "start": 17.46,
-    "end": 17.64
-  },
-  {
-    "text": "table.",
-    "start": 17.64,
-    "end": 18.44
-  },
-  {
-    "text": "Cette",
-    "start": 18.47,
-    "end": 18.75
-  },
-  {
-    "text": "nuit,",
-    "start": 18.75,
-    "end": 19.12
-  },
-  {
-    "text": "pendant",
-    "start": 19.12,
-    "end": 19.47
-  },
-  {
-    "text": "que",
-    "start": 19.47,
-    "end": 19.81
-  },
-  {
-    "text": "personne",
-    "start": 19.81,
-    "end": 20.25
-  },
-  {
-    "text": "n'était",
-    "start": 20.29,
-    "end": 20.68
-  },
-  {
-    "text": "là,",
-    "start": 20.68,
-    "end": 20.92
-  },
-  {
-    "text": "Caroline",
-    "start": 20.94,
-    "end": 21.41
-  },
-  {
-    "text": "a",
-    "start": 21.47,
-    "end": 21.48
-  },
-  {
-    "text": "décroché.",
-    "start": 21.48,
-    "end": 22.17
-  },
-  {
-    "text": "Je",
-    "start": 22.25,
-    "end": 22.41
-  },
-  {
-    "text": "réécoute",
-    "start": 22.41,
-    "end": 23.12
-  },
-  {
-    "text": "les",
-    "start": 23.12,
-    "end": 23.2
-  },
-  {
-    "text": "appels,",
-    "start": 23.22,
-    "end": 23.7
-  },
-  {
-    "text": "je",
-    "start": 23.7,
-    "end": 23.73
-  },
-  {
-    "text": "vérifie",
-    "start": 23.83,
-    "end": 24.23
-  },
-  {
-    "text": "ce",
-    "start": 24.23,
-    "end": 24.5
-  },
-  {
-    "text": "qu'elle",
-    "start": 24.5,
-    "end": 24.81
-  },
-  {
-    "text": "a",
-    "start": 24.81,
-    "end": 24.87
-  },
-  {
-    "text": "noté.",
-    "start": 24.87,
-    "end": 25.36
-  },
-  {
-    "text": "Rien",
-    "start": 25.36,
-    "end": 25.72
-  },
-  {
-    "text": "ne",
-    "start": 25.73,
-    "end": 25.9
-  },
-  {
-    "text": "s'est",
-    "start": 25.9,
-    "end": 26.32
-  },
-  {
-    "text": "perdu",
-    "start": 26.39,
-    "end": 26.81
-  },
-  {
-    "text": "à",
-    "start": 26.81,
-    "end": 26.9
-  },
-  {
-    "text": "11h",
-    "start": 26.9,
-    "end": 27.54
-  },
-  {
-    "text": "du",
-    "start": 27.56,
-    "end": 27.72
-  },
-  {
-    "text": "soir",
-    "start": 27.72,
-    "end": 28.08
-  },
-  {
-    "text": "sur",
-    "start": 28.08,
-    "end": 28.14
-  },
-  {
-    "text": "un",
-    "start": 28.46,
-    "end": 28.52
-  },
-  {
-    "text": "répandeur.",
-    "start": 28.54,
-    "end": 29.52
-  },
-  {
-    "text": "Un",
-    "start": 29.52,
-    "end": 29.57
-  },
-  {
-    "text": "appel",
-    "start": 29.89,
-    "end": 29.98
-  },
-  {
-    "text": "ce",
-    "start": 29.98,
-    "end": 30.11
-  },
-  {
-    "text": "matin,",
-    "start": 30.11,
-    "end": 30.57
-  },
-  {
-    "text": "une",
-    "start": 30.57,
-    "end": 30.76
-  },
-  {
-    "text": "réservation",
-    "start": 30.77,
-    "end": 31.5
-  },
-  {
-    "text": "de",
-    "start": 31.55,
-    "end": 31.65
-  },
-  {
-    "text": "plus.",
-    "start": 31.71,
-    "end": 32.12
-  },
-  {
-    "text": "Je",
-    "start": 32.12,
-    "end": 32.52
-  },
-  {
-    "text": "l'ajoute,",
-    "start": 32.52,
-    "end": 32.97
-  },
-  {
-    "text": "elle",
-    "start": 32.97,
-    "end": 33.16
-  },
-  {
-    "text": "prend",
-    "start": 33.16,
-    "end": 33.39
-  },
-  {
-    "text": "sa",
-    "start": 33.39,
-    "end": 33.46
-  },
-  {
-    "text": "place",
-    "start": 33.46,
-    "end": 33.78
-  },
-  {
-    "text": "dans",
-    "start": 33.78,
-    "end": 33.99
-  },
-  {
-    "text": "le",
-    "start": 34.01,
-    "end": 34.13
-  },
-  {
-    "text": "service.",
-    "start": 34.13,
-    "end": 34.76
-  },
-  {
-    "text": "Ce",
-    "start": 34.76,
-    "end": 34.81
-  },
-  {
-    "text": "soir,",
-    "start": 35.13,
-    "end": 35.29
-  },
-  {
-    "text": "je",
-    "start": 35.29,
-    "end": 35.42
-  },
-  {
-    "text": "suis",
-    "start": 35.42,
-    "end": 35.65
-  },
-  {
-    "text": "complet",
-    "start": 35.65,
-    "end": 36
-  },
-  {
-    "text": "à",
-    "start": 36,
-    "end": 36.25
-  },
-  {
-    "text": "20h.",
-    "start": 36.25,
-    "end": 36.88
-  },
-  {
-    "text": "Je",
-    "start": 36.88,
-    "end": 37.01
-  },
-  {
-    "text": "ferme",
-    "start": 37.01,
-    "end": 37.34
-  },
-  {
-    "text": "le",
-    "start": 37.34,
-    "end": 37.47
-  },
-  {
-    "text": "créneau.",
-    "start": 37.47,
-    "end": 38.13
-  },
-  {
-    "text": "Personne",
-    "start": 38.13,
-    "end": 38.66
-  },
-  {
-    "text": "ne",
-    "start": 38.66,
-    "end": 38.71
-  },
-  {
-    "text": "réservera",
-    "start": 38.9,
-    "end": 39.32
-  },
-  {
-    "text": "une",
-    "start": 39.34,
-    "end": 39.41
-  },
-  {
-    "text": "table",
-    "start": 39.51,
-    "end": 39.74
-  },
-  {
-    "text": "qui",
-    "start": 39.74,
-    "end": 39.9
-  },
-  {
-    "text": "n'existe",
-    "start": 39.9,
-    "end": 40.31
-  },
-  {
-    "text": "pas.",
-    "start": 40.31,
-    "end": 40.67
-  },
-  {
-    "text": "La",
-    "start": 40.68,
-    "end": 40.83
-  },
-  {
-    "text": "6",
-    "start": 40.83,
-    "end": 41.05
-  },
-  {
-    "text": "est",
-    "start": 41.05,
-    "end": 41.13
-  },
-  {
-    "text": "bancale,",
-    "start": 41.37,
-    "end": 41.94
-  },
-  {
-    "text": "je",
-    "start": 41.94,
-    "end": 42.08
-  },
-  {
-    "text": "la",
-    "start": 42.1,
-    "end": 42.22
-  },
-  {
-    "text": "bloque.",
-    "start": 42.26,
-    "end": 42.9
-  },
-  {
-    "text": "Elle",
-    "start": 42.91,
-    "end": 42.98
-  },
-  {
-    "text": "disparaît",
-    "start": 43.24,
-    "end": 43.82
-  },
-  {
-    "text": "du",
-    "start": 43.98,
-    "end": 44.13
-  },
-  {
-    "text": "plan",
-    "start": 44.13,
-    "end": 44.48
-  },
-  {
-    "text": "et",
-    "start": 44.48,
-    "end": 44.65
-  },
-  {
-    "text": "du",
-    "start": 44.65,
-    "end": 44.82
-  },
-  {
-    "text": "site.",
-    "start": 44.82,
-    "end": 45.48
-  },
-  {
-    "text": "Je",
-    "start": 45.48,
-    "end": 45.61
-  },
-  {
-    "text": "prépare",
-    "start": 45.61,
-    "end": 46.05
-  },
-  {
-    "text": "mon",
-    "start": 46.05,
-    "end": 46.2
-  },
-  {
-    "text": "plan",
-    "start": 46.45,
-    "end": 46.52
-  },
-  {
-    "text": "de",
-    "start": 46.52,
-    "end": 46.65
-  },
-  {
-    "text": "salle,",
-    "start": 46.65,
-    "end": 47.09
-  },
-  {
-    "text": "qui",
-    "start": 47.15,
-    "end": 47.29
-  },
-  {
-    "text": "va",
-    "start": 47.3,
-    "end": 47.42
-  },
-  {
-    "text": "où,",
-    "start": 47.42,
-    "end": 47.69
-  },
-  {
-    "text": "avec",
-    "start": 47.69,
-    "end": 47.95
-  },
-  {
-    "text": "combien",
-    "start": 47.95,
-    "end": 48.41
-  },
-  {
-    "text": "de",
-    "start": 48.41,
-    "end": 48.54
-  },
-  {
-    "text": "couverts,",
-    "start": 48.54,
-    "end": 49.28
-  },
-  {
-    "text": "et",
-    "start": 49.3,
-    "end": 49.4
-  },
-  {
-    "text": "à",
-    "start": 49.4,
-    "end": 49.46
-  },
-  {
-    "text": "quelle",
-    "start": 49.46,
-    "end": 49.8
-  },
-  {
-    "text": "heure",
-    "start": 49.81,
-    "end": 50.12
-  },
-  {
-    "text": "la",
-    "start": 50.12,
-    "end": 50.17
-  },
-  {
-    "text": "table",
-    "start": 50.24,
-    "end": 50.33
-  },
-  {
-    "text": "se",
-    "start": 50.65,
-    "end": 50.66
-  },
-  {
-    "text": "libère.",
-    "start": 50.66,
-    "end": 51.24
-  },
-  {
-    "text": "Je",
-    "start": 51.24,
-    "end": 51.36
-  },
-  {
-    "text": "vérifie",
-    "start": 51.37,
-    "end": 51.84
-  },
-  {
-    "text": "les",
-    "start": 51.84,
-    "end": 52.04
-  },
-  {
-    "text": "QR",
-    "start": 52.04,
-    "end": 52.17
-  },
-  {
-    "text": "codes",
-    "start": 52.17,
-    "end": 52.51
-  },
-  {
-    "text": "de",
-    "start": 52.51,
-    "end": 52.62
-  },
-  {
-    "text": "mes",
-    "start": 52.66,
-    "end": 52.84
-  },
-  {
-    "text": "tables.",
-    "start": 52.84,
-    "end": 53.38
-  },
-  {
-    "text": "C'est",
-    "start": 53.59,
-    "end": 53.88
-  },
-  {
-    "text": "par",
-    "start": 53.91,
-    "end": 54.14
-  },
-  {
-    "text": "là",
-    "start": 54.16,
-    "end": 54.34
-  },
-  {
-    "text": "que",
-    "start": 54.34,
-    "end": 54.61
-  },
-  {
-    "text": "mes",
-    "start": 54.62,
-    "end": 54.9
-  },
-  {
-    "text": "clients",
-    "start": 55.25,
-    "end": 55.58
-  },
-  {
-    "text": "commanderont",
-    "start": 55.58,
-    "end": 56.72
-  },
-  {
-    "text": "tout",
-    "start": 56.72,
-    "end": 57.08
-  },
-  {
-    "text": "à",
-    "start": 57.1,
-    "end": 57.19
-  },
-  {
-    "text": "l'heure.",
-    "start": 57.19,
-    "end": 57.98
-  },
-  {
-    "text": "11h15,",
-    "start": 58.24,
-    "end": 58.82
-  },
-  {
-    "text": "les",
-    "start": 58.82,
-    "end": 58.83
-  },
-  {
-    "text": "commandes",
-    "start": 59.14,
-    "end": 59.31
-  },
-  {
-    "text": "web",
-    "start": 59.31,
-    "end": 59.4
-  },
-  {
-    "text": "sont",
-    "start": 59.61,
-    "end": 59.64
-  },
-  {
-    "text": "déjà",
-    "start": 59.66,
-    "end": 59.87
-  },
-  {
-    "text": "tombées.",
-    "start": 59.89,
-    "end": 60.48
-  },
-  {
-    "text": "Je",
-    "start": 60.48,
-    "end": 60.53
-  },
-  {
-    "text": "les",
-    "start": 60.6,
-    "end": 60.68
-  },
-  {
-    "text": "regarde",
-    "start": 61.01,
-    "end": 61.19
-  },
-  {
-    "text": "avant",
-    "start": 61.2,
-    "end": 61.5
-  },
-  {
-    "text": "d'ouvrir,",
-    "start": 61.5,
-    "end": 62.1
-  },
-  {
-    "text": "pas",
-    "start": 62.13,
-    "end": 62.28
-  },
-  {
-    "text": "pendant",
-    "start": 62.28,
-    "end": 62.76
-  },
-  {
-    "text": "le",
-    "start": 62.76,
-    "end": 62.93
-  },
-  {
-    "text": "coup",
-    "start": 62.93,
-    "end": 63.28
-  },
-  {
-    "text": "de",
-    "start": 63.28,
-    "end": 63.37
-  },
-  {
-    "text": "feu.",
-    "start": 63.45,
-    "end": 64
-  },
-  {
-    "text": "11h45,",
-    "start": 64,
-    "end": 65.67
-  },
-  {
-    "text": "ma",
-    "start": 65.67,
-    "end": 65.89
+    "start": 2.14,
+    "end": 2.23
   },
   {
     "text": "salle",
-    "start": 65.89,
-    "end": 66.48
+    "start": 2.23,
+    "end": 2.46
   },
   {
     "text": "est",
-    "start": 66.5,
-    "end": 66.68
+    "start": 2.46,
+    "end": 2.6
   },
   {
-    "text": "prête",
-    "start": 66.68,
-    "end": 67
+    "text": "vide,",
+    "start": 2.6,
+    "end": 2.9
   },
   {
-    "text": "et",
-    "start": 67.01,
-    "end": 67.12
+    "text": "les",
+    "start": 3.02,
+    "end": 3.09
   },
   {
-    "text": "je",
-    "start": 67.12,
-    "end": 67.27
-  },
-  {
-    "text": "n'ai",
-    "start": 67.27,
-    "end": 67.52
+    "text": "chaises",
+    "start": 3.09,
+    "end": 3.46
   },
   {
     "text": "encore",
-    "start": 67.85,
-    "end": 67.92
+    "start": 3.52,
+    "end": 3.83
+  },
+  {
+    "text": "sur",
+    "start": 3.83,
+    "end": 4.02
+  },
+  {
+    "text": "les",
+    "start": 4.02,
+    "end": 4.28
+  },
+  {
+    "text": "tables,",
+    "start": 4.28,
+    "end": 4.96
+  },
+  {
+    "text": "mais",
+    "start": 4.96,
+    "end": 5.27
+  },
+  {
+    "text": "la",
+    "start": 5.29,
+    "end": 5.44
+  },
+  {
+    "text": "journée",
+    "start": 5.44,
+    "end": 6.01
+  },
+  {
+    "text": "elle",
+    "start": 6.01,
+    "end": 6.16
+  },
+  {
+    "text": "a",
+    "start": 6.42,
+    "end": 6.48
+  },
+  {
+    "text": "déjà",
+    "start": 6.48,
+    "end": 6.72
+  },
+  {
+    "text": "commencé",
+    "start": 6.72,
+    "end": 7.27
+  },
+  {
+    "text": "son",
+    "start": 7.29,
+    "end": 7.35
+  },
+  {
+    "text": "mois.",
+    "start": 7.52,
+    "end": 7.97
+  },
+  {
+    "text": "Je",
+    "start": 7.97,
+    "end": 8.29
+  },
+  {
+    "text": "pointe,",
+    "start": 8.29,
+    "end": 8.72
+  },
+  {
+    "text": "je",
+    "start": 8.72,
+    "end": 8.85
+  },
+  {
+    "text": "récupère",
+    "start": 8.86,
+    "end": 9.39
+  },
+  {
+    "text": "mes",
+    "start": 9.44,
+    "end": 9.47
+  },
+  {
+    "text": "tâches",
+    "start": 9.71,
+    "end": 10.07
+  },
+  {
+    "text": "et",
+    "start": 10.07,
+    "end": 10.18
+  },
+  {
+    "text": "je",
+    "start": 10.24,
+    "end": 10.35
+  },
+  {
+    "text": "regarde",
+    "start": 10.35,
+    "end": 10.85
+  },
+  {
+    "text": "ce",
+    "start": 10.85,
+    "end": 11
+  },
+  {
+    "text": "que",
+    "start": 11,
+    "end": 11.2
+  },
+  {
+    "text": "la",
+    "start": 11.2,
+    "end": 11.22
+  },
+  {
+    "text": "nuit",
+    "start": 11.67,
+    "end": 11.76
+  },
+  {
+    "text": "a",
+    "start": 11.77,
+    "end": 11.86
+  },
+  {
+    "text": "laissé.",
+    "start": 11.86,
+    "end": 12.76
+  },
+  {
+    "text": "Mes",
+    "start": 12.76,
+    "end": 12.96
+  },
+  {
+    "text": "réservations",
+    "start": 12.96,
+    "end": 13.82
+  },
+  {
+    "text": "du",
+    "start": 13.82,
+    "end": 13.96
+  },
+  {
+    "text": "jour",
+    "start": 13.96,
+    "end": 14.25
+  },
+  {
+    "text": "dans",
+    "start": 14.25,
+    "end": 14.43
+  },
+  {
+    "text": "l'ordre.",
+    "start": 14.47,
+    "end": 15.32
+  },
+  {
+    "text": "Le",
+    "start": 15.32,
+    "end": 15.52
+  },
+  {
+    "text": "nom,",
+    "start": 15.52,
+    "end": 16.01
+  },
+  {
+    "text": "l'heure,",
+    "start": 16.01,
+    "end": 16.88
+  },
+  {
+    "text": "le",
+    "start": 16.88,
+    "end": 17.08
+  },
+  {
+    "text": "nombre",
+    "start": 17.08,
+    "end": 17.72
+  },
+  {
+    "text": "de",
+    "start": 17.72,
+    "end": 17.82
+  },
+  {
+    "text": "couverts,",
+    "start": 17.82,
+    "end": 18.76
+  },
+  {
+    "text": "la",
+    "start": 18.76,
+    "end": 18.96
+  },
+  {
+    "text": "table.",
+    "start": 18.96,
+    "end": 19.76
+  },
+  {
+    "text": "Cette",
+    "start": 19.76,
+    "end": 19.96
+  },
+  {
+    "text": "nuit,",
+    "start": 19.96,
+    "end": 20.33
+  },
+  {
+    "text": "pendant",
+    "start": 20.57,
+    "end": 20.7
+  },
+  {
+    "text": "que",
+    "start": 20.7,
+    "end": 20.86
+  },
+  {
+    "text": "personne",
+    "start": 20.86,
+    "end": 21.28
+  },
+  {
+    "text": "n'était",
+    "start": 21.28,
+    "end": 21.49
+  },
+  {
+    "text": "là,",
+    "start": 21.78,
+    "end": 21.97
+  },
+  {
+    "text": "Caroline",
+    "start": 21.99,
+    "end": 22.55
+  },
+  {
+    "text": "a",
+    "start": 22.58,
+    "end": 22.65
+  },
+  {
+    "text": "décroché.",
+    "start": 22.65,
+    "end": 23.26
+  },
+  {
+    "text": "Je",
+    "start": 23.42,
+    "end": 23.61
+  },
+  {
+    "text": "réécoute",
+    "start": 23.71,
+    "end": 24.24
+  },
+  {
+    "text": "les",
+    "start": 24.24,
+    "end": 24.45
+  },
+  {
+    "text": "appels,",
+    "start": 24.52,
+    "end": 25.08
+  },
+  {
+    "text": "je",
+    "start": 25.08,
+    "end": 25.22
+  },
+  {
+    "text": "vérifie",
+    "start": 25.22,
+    "end": 25.52
+  },
+  {
+    "text": "ce",
+    "start": 25.8,
+    "end": 25.92
+  },
+  {
+    "text": "qu'elle",
+    "start": 26.05,
+    "end": 26.45
+  },
+  {
+    "text": "a",
+    "start": 26.45,
+    "end": 26.51
+  },
+  {
+    "text": "noté.",
+    "start": 26.52,
+    "end": 26.91
+  },
+  {
+    "text": "Rien",
+    "start": 26.94,
+    "end": 27.35
+  },
+  {
+    "text": "ne",
+    "start": 27.35,
+    "end": 27.5
+  },
+  {
+    "text": "s'est",
+    "start": 27.5,
+    "end": 27.87
+  },
+  {
+    "text": "perdu",
+    "start": 27.87,
+    "end": 28.25
+  },
+  {
+    "text": "à",
+    "start": 28.25,
+    "end": 28.32
+  },
+  {
+    "text": "11h",
+    "start": 28.32,
+    "end": 28.85
+  },
+  {
+    "text": "du",
+    "start": 28.85,
+    "end": 29
+  },
+  {
+    "text": "soir",
+    "start": 29.19,
+    "end": 29.31
+  },
+  {
+    "text": "sur",
+    "start": 29.31,
+    "end": 29.68
+  },
+  {
+    "text": "un",
+    "start": 29.68,
+    "end": 29.76
+  },
+  {
+    "text": "répandeur.",
+    "start": 29.76,
+    "end": 30.64
+  },
+  {
+    "text": "Un",
+    "start": 30.64,
+    "end": 30.78
+  },
+  {
+    "text": "appel",
+    "start": 30.78,
+    "end": 31.01
+  },
+  {
+    "text": "ce",
+    "start": 31.01,
+    "end": 31.57
+  },
+  {
+    "text": "matin,",
+    "start": 31.57,
+    "end": 31.85
+  },
+  {
+    "text": "une",
+    "start": 31.85,
+    "end": 32.02
+  },
+  {
+    "text": "réservation",
+    "start": 32.08,
+    "end": 32.89
+  },
+  {
+    "text": "de",
+    "start": 32.89,
+    "end": 33.12
+  },
+  {
+    "text": "plus.",
+    "start": 33.12,
+    "end": 33.76
+  },
+  {
+    "text": "Je",
+    "start": 33.76,
+    "end": 33.9
+  },
+  {
+    "text": "l'ajoute,",
+    "start": 33.96,
+    "end": 34.57
+  },
+  {
+    "text": "elle",
+    "start": 34.71,
+    "end": 34.82
+  },
+  {
+    "text": "prend",
+    "start": 34.82,
+    "end": 35.14
+  },
+  {
+    "text": "sa",
+    "start": 35.14,
+    "end": 35.26
+  },
+  {
+    "text": "place",
+    "start": 35.26,
+    "end": 35.54
+  },
+  {
+    "text": "dans",
+    "start": 35.64,
+    "end": 35.85
+  },
+  {
+    "text": "le",
+    "start": 35.92,
+    "end": 36.03
+  },
+  {
+    "text": "service.",
+    "start": 36.03,
+    "end": 36.67
+  },
+  {
+    "text": "Ce",
+    "start": 36.67,
+    "end": 36.81
+  },
+  {
+    "text": "soir,",
+    "start": 36.81,
+    "end": 37.2
+  },
+  {
+    "text": "je",
+    "start": 37.21,
+    "end": 37.33
+  },
+  {
+    "text": "suis",
+    "start": 37.45,
+    "end": 37.59
+  },
+  {
+    "text": "complet",
+    "start": 37.59,
+    "end": 38.05
+  },
+  {
+    "text": "à",
+    "start": 38.05,
+    "end": 38.11
+  },
+  {
+    "text": "20h,",
+    "start": 38.11,
+    "end": 38.69
+  },
+  {
+    "text": "je",
+    "start": 38.69,
+    "end": 38.82
+  },
+  {
+    "text": "ferme",
+    "start": 38.82,
+    "end": 39.24
+  },
+  {
+    "text": "le",
+    "start": 39.24,
+    "end": 39.37
+  },
+  {
+    "text": "crénon.",
+    "start": 39.37,
+    "end": 39.95
+  },
+  {
+    "text": "Personne",
+    "start": 39.95,
+    "end": 40.47
+  },
+  {
+    "text": "ne",
+    "start": 40.59,
+    "end": 40.64
+  },
+  {
+    "text": "réservera",
+    "start": 40.64,
+    "end": 41.08
+  },
+  {
+    "text": "une",
+    "start": 41.08,
+    "end": 41.28
+  },
+  {
+    "text": "table",
+    "start": 41.28,
+    "end": 41.61
+  },
+  {
+    "text": "qui",
+    "start": 41.61,
+    "end": 41.71
+  },
+  {
+    "text": "n'existe",
+    "start": 41.87,
+    "end": 42.27
+  },
+  {
+    "text": "pas.",
+    "start": 42.27,
+    "end": 42.73
+  },
+  {
+    "text": "La",
+    "start": 42.73,
+    "end": 42.89
+  },
+  {
+    "text": "6",
+    "start": 42.89,
+    "end": 43.06
+  },
+  {
+    "text": "est",
+    "start": 43.07,
+    "end": 43.26
+  },
+  {
+    "text": "bancale,",
+    "start": 43.26,
+    "end": 43.75
+  },
+  {
+    "text": "je",
+    "start": 43.79,
+    "end": 43.98
+  },
+  {
+    "text": "la",
+    "start": 44.1,
+    "end": 44.12
+  },
+  {
+    "text": "bloque.",
+    "start": 44.12,
+    "end": 44.71
+  },
+  {
+    "text": "Elle",
+    "start": 44.77,
+    "end": 44.98
+  },
+  {
+    "text": "disparaît",
+    "start": 44.98,
+    "end": 45.57
+  },
+  {
+    "text": "du",
+    "start": 45.62,
+    "end": 45.85
+  },
+  {
+    "text": "plan",
+    "start": 46.03,
+    "end": 46.18
+  },
+  {
+    "text": "et",
+    "start": 46.18,
+    "end": 46.24
+  },
+  {
+    "text": "du",
+    "start": 46.37,
+    "end": 46.52
+  },
+  {
+    "text": "site.",
+    "start": 46.52,
+    "end": 46.99
+  },
+  {
+    "text": "Je",
+    "start": 46.99,
+    "end": 47.12
+  },
+  {
+    "text": "prépare",
+    "start": 47.12,
+    "end": 47.58
+  },
+  {
+    "text": "mon",
+    "start": 47.58,
+    "end": 47.75
+  },
+  {
+    "text": "plan",
+    "start": 47.75,
+    "end": 47.79
+  },
+  {
+    "text": "de",
+    "start": 48.08,
+    "end": 48.18
+  },
+  {
+    "text": "salle.",
+    "start": 48.18,
+    "end": 48.71
+  },
+  {
+    "text": "Qui",
+    "start": 48.71,
+    "end": 48.9
+  },
+  {
+    "text": "va",
+    "start": 48.91,
+    "end": 49.04
+  },
+  {
+    "text": "où,",
+    "start": 49.04,
+    "end": 49.19
+  },
+  {
+    "text": "avec",
+    "start": 49.54,
+    "end": 49.57
+  },
+  {
+    "text": "combien",
+    "start": 49.57,
+    "end": 49.98
+  },
+  {
+    "text": "de",
+    "start": 50.04,
+    "end": 50.15
+  },
+  {
+    "text": "couverts",
+    "start": 50.21,
+    "end": 50.65
+  },
+  {
+    "text": "et",
+    "start": 50.72,
+    "end": 50.84
+  },
+  {
+    "text": "à",
+    "start": 50.84,
+    "end": 50.9
+  },
+  {
+    "text": "quelle",
+    "start": 50.9,
+    "end": 51.01
+  },
+  {
+    "text": "heure",
+    "start": 51.45,
+    "end": 51.74
+  },
+  {
+    "text": "la",
+    "start": 51.78,
+    "end": 51.91
+  },
+  {
+    "text": "table",
+    "start": 51.91,
+    "end": 52.07
+  },
+  {
+    "text": "se",
+    "start": 52.24,
+    "end": 52.38
+  },
+  {
+    "text": "libère.",
+    "start": 52.38,
+    "end": 52.98
+  },
+  {
+    "text": "Je",
+    "start": 53,
+    "end": 53.11
+  },
+  {
+    "text": "vérifie",
+    "start": 53.25,
+    "end": 53.57
+  },
+  {
+    "text": "les",
+    "start": 53.58,
+    "end": 53.7
+  },
+  {
+    "text": "QR",
+    "start": 53.79,
+    "end": 53.91
+  },
+  {
+    "text": "codes",
+    "start": 53.91,
+    "end": 54.11
+  },
+  {
+    "text": "de",
+    "start": 54.15,
+    "end": 54.37
+  },
+  {
+    "text": "mes",
+    "start": 54.46,
+    "end": 54.58
+  },
+  {
+    "text": "tables,",
+    "start": 54.58,
+    "end": 55.25
+  },
+  {
+    "text": "c'est",
+    "start": 55.26,
+    "end": 55.4
+  },
+  {
+    "text": "par",
+    "start": 55.4,
+    "end": 55.58
+  },
+  {
+    "text": "là",
+    "start": 55.64,
+    "end": 55.74
+  },
+  {
+    "text": "que",
+    "start": 55.74,
+    "end": 55.93
+  },
+  {
+    "text": "mes",
+    "start": 55.96,
+    "end": 56.17
+  },
+  {
+    "text": "clients",
+    "start": 56.18,
+    "end": 56.59
+  },
+  {
+    "text": "commanderont",
+    "start": 56.76,
+    "end": 57.61
+  },
+  {
+    "text": "tout",
+    "start": 57.77,
+    "end": 57.91
+  },
+  {
+    "text": "à",
+    "start": 57.95,
+    "end": 57.98
+  },
+  {
+    "text": "l'heure.",
+    "start": 57.98,
+    "end": 58.63
+  },
+  {
+    "text": "11h.",
+    "start": 58.98,
+    "end": 59.42
+  },
+  {
+    "text": "Le",
+    "start": 59.48,
+    "end": 59.59
+  },
+  {
+    "text": "tartar",
+    "start": 59.65,
+    "end": 60.05
+  },
+  {
+    "text": "est",
+    "start": 60.05,
+    "end": 60.27
+  },
+  {
+    "text": "en",
+    "start": 60.27,
+    "end": 60.42
+  },
+  {
+    "text": "rupture.",
+    "start": 60.42,
+    "end": 61.12
+  },
+  {
+    "text": "Je",
+    "start": 61.24,
+    "end": 61.31
+  },
+  {
+    "text": "le",
+    "start": 61.31,
+    "end": 61.46
+  },
+  {
+    "text": "retire",
+    "start": 61.46,
+    "end": 62.04
+  },
+  {
+    "text": "une",
+    "start": 62.04,
+    "end": 62.22
+  },
+  {
+    "text": "fois",
+    "start": 62.22,
+    "end": 62.47
+  },
+  {
+    "text": "et",
+    "start": 62.47,
+    "end": 62.58
+  },
+  {
+    "text": "il",
+    "start": 62.58,
+    "end": 62.67
+  },
+  {
+    "text": "disparaît",
+    "start": 62.85,
+    "end": 63.25
+  },
+  {
+    "text": "du",
+    "start": 63.25,
+    "end": 63.3
+  },
+  {
+    "text": "site,",
+    "start": 63.6,
+    "end": 63.75
+  },
+  {
+    "text": "des",
+    "start": 63.85,
+    "end": 63.93
+  },
+  {
+    "text": "plateformes",
+    "start": 63.93,
+    "end": 64.61
+  },
+  {
+    "text": "et",
+    "start": 64.61,
+    "end": 64.7
+  },
+  {
+    "text": "de",
+    "start": 64.7,
+    "end": 64.85
+  },
+  {
+    "text": "la",
+    "start": 64.85,
+    "end": 64.97
+  },
+  {
+    "text": "salle",
+    "start": 65.03,
+    "end": 65.28
+  },
+  {
+    "text": "en",
+    "start": 65.28,
+    "end": 65.4
+  },
+  {
+    "text": "même",
+    "start": 65.4,
+    "end": 65.65
+  },
+  {
+    "text": "temps.",
+    "start": 65.65,
+    "end": 66.18
+  },
+  {
+    "text": "11h15.",
+    "start": 66.24,
+    "end": 68.2
+  },
+  {
+    "text": "Les",
+    "start": 68.2,
+    "end": 68.92
+  },
+  {
+    "text": "commandes",
+    "start": 68.93,
+    "end": 69.47
+  },
+  {
+    "text": "web",
+    "start": 69.47,
+    "end": 69.55
+  },
+  {
+    "text": "sont",
+    "start": 69.72,
+    "end": 69.92
+  },
+  {
+    "text": "déjà",
+    "start": 69.92,
+    "end": 70.12
+  },
+  {
+    "text": "tombées.",
+    "start": 70.12,
+    "end": 70.8
+  },
+  {
+    "text": "Je",
+    "start": 70.8,
+    "end": 70.92
+  },
+  {
+    "text": "les",
+    "start": 70.92,
+    "end": 71.11
+  },
+  {
+    "text": "regarde",
+    "start": 71.11,
+    "end": 71.55
+  },
+  {
+    "text": "avant",
+    "start": 71.55,
+    "end": 71.65
+  },
+  {
+    "text": "d'ouvrir.",
+    "start": 71.92,
+    "end": 72.55
+  },
+  {
+    "text": "Pas",
+    "start": 72.55,
+    "end": 72.73
+  },
+  {
+    "text": "pendant",
+    "start": 72.74,
+    "end": 73.24
+  },
+  {
+    "text": "le",
+    "start": 73.24,
+    "end": 73.41
+  },
+  {
+    "text": "coup",
+    "start": 73.41,
+    "end": 73.56
+  },
+  {
+    "text": "de",
+    "start": 73.56,
+    "end": 73.74
+  },
+  {
+    "text": "feu.",
+    "start": 73.74,
+    "end": 74.19
+  },
+  {
+    "text": "11h45.",
+    "start": 74.36,
+    "end": 75.73
+  },
+  {
+    "text": "J'ouvre",
+    "start": 75.73,
+    "end": 76.23
+  },
+  {
+    "text": "mon",
+    "start": 76.58,
+    "end": 76.63
+  },
+  {
+    "text": "fond",
+    "start": 76.63,
+    "end": 76.99
+  },
+  {
+    "text": "de",
+    "start": 76.99,
+    "end": 77.17
+  },
+  {
+    "text": "caisse.",
+    "start": 77.17,
+    "end": 77.98
+  },
+  {
+    "text": "150",
+    "start": 77.98,
+    "end": 78.72
+  },
+  {
+    "text": "euros,",
+    "start": 78.85,
+    "end": 79.34
+  },
+  {
+    "text": "comptez,",
+    "start": 79.45,
+    "end": 80.24
+  },
+  {
+    "text": "notez.",
+    "start": 80.24,
+    "end": 80.96
+  },
+  {
+    "text": "Ma",
+    "start": 80.96,
+    "end": 81.14
+  },
+  {
+    "text": "salle",
+    "start": 81.14,
+    "end": 81.46
+  },
+  {
+    "text": "est",
+    "start": 81.69,
+    "end": 82
+  },
+  {
+    "text": "prête",
+    "start": 82,
+    "end": 82.68
+  },
+  {
+    "text": "et",
+    "start": 82.69,
+    "end": 82.8
+  },
+  {
+    "text": "je",
+    "start": 82.8,
+    "end": 82.89
+  },
+  {
+    "text": "n'ai",
+    "start": 82.96,
+    "end": 83.16
+  },
+  {
+    "text": "encore",
+    "start": 83.16,
+    "end": 83.54
   },
   {
     "text": "vu",
-    "start": 67.92,
-    "end": 68.05
+    "start": 83.54,
+    "end": 83.66
   },
   {
     "text": "personne.",
-    "start": 68.05,
-    "end": 68.72
+    "start": 83.66,
+    "end": 84.4
   }
 ]

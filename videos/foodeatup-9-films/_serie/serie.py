@@ -190,6 +190,36 @@ class Serie:
                   padding:14px 28px; border-radius:999px; opacity:0; transform:scale(.8);
                   white-space:nowrap; box-shadow:0 10px 26px rgba(255,165,0,.28); }}
 
+
+        /* --- Scènes « motion design » -------------------------------------
+           Pour les étapes qui n'ont aucun tutoriel filmé. Volontairement
+           schématiques : jamais une fausse capture d'écran. La règle du
+           projet interdit d'inventer une interface, donc on explique le
+           mécanisme au lieu de le mettre en scène. */
+        .board {{ position:absolute; left:180px; top:{FRAME_Y}px;
+                  width:{FRAME_W}px; height:{FRAME_H}px; opacity:0; }}
+        .md-card {{ position:absolute; left:50%; top:96px; width:520px; margin-left:-260px;
+                    background:#FFFFFF; border:3px solid {BORDER}; border-radius:20px;
+                    padding:26px 30px; box-shadow:0 18px 44px rgba(15,26,35,.12); }}
+        .md-card .nom {{ font-family:"Fredoka",sans-serif; font-weight:700; font-size:38px; color:{INK}; }}
+        .md-card .prix {{ font-family:"Fredoka",sans-serif; font-weight:600; font-size:30px; color:{INK_SOFT}; margin-top:6px; }}
+        .md-barre {{ position:absolute; left:30px; right:30px; top:56px; height:5px;
+                     background:#C64B3A; transform-origin:left center; transform:scaleX(0); }}
+        .md-canal {{ position:absolute; top:392px; width:400px; text-align:center;
+                     background:#FFFFFF; border:3px solid {BORDER}; border-radius:16px;
+                     padding:18px 0; font-family:"Fredoka",sans-serif; font-weight:700;
+                     font-size:30px; color:{INK}; opacity:0; }}
+        .md-canal .etat {{ display:block; font-size:24px; font-weight:600; color:{INK_SOFT}; margin-top:6px; }}
+        .md-lien {{ position:absolute; top:250px; height:4px; background:{BORDER};
+                    transform-origin:left center; transform:scaleX(0); }}
+        .md-tiroir {{ position:absolute; left:50%; margin-left:-330px; top:150px;
+                      width:660px; height:230px; border:5px solid {INK}; border-radius:18px;
+                      background:#FFFFFF; overflow:hidden; }}
+        .md-tiroir-face {{ position:absolute; left:0; right:0; bottom:0; height:96px;
+                           background:{CREAM_DEEP}; border-top:5px solid {INK}; }}
+        .md-montant {{ position:absolute; left:0; right:0; top:60px; text-align:center;
+                       font-family:"Fredoka",sans-serif; font-weight:700; font-size:76px; color:{INK}; }}
+
         .amb {{ position:absolute; inset:0; width:100%; height:100%; object-fit:cover; opacity:0; }}
         .title {{ position:absolute; left:0; right:0; bottom:132px; text-align:center;
                   font-family:"Fredoka",sans-serif; font-weight:700; font-size:76px; color:{CREAM};
@@ -289,6 +319,92 @@ class Serie:
             + f'        tl.fromTo("#sub", {{ opacity:0, y:14 }}, {{ opacity:.92, y:0, duration:.5, ease:"power2.out" }}, {sub_at});\n'
         )
         return _TEMPLATE.format(style=self.style, cid=cid, dur=dur, body=body, js=js)
+
+
+    # ── scènes « motion design » ─────────────────────────────────────────
+    def _motion(self, cid, abs_debut, dur, clock, eyebrow, board_html, board_js, checks):
+        """Ossature commune aux scènes schématiques.
+
+        Même en-tête que les scènes écran — horloge, surtitre, coches — mais
+        le cadre tablette est remplacé par un tableau schématique. Aucune
+        vidéo, donc aucun `data-duration` absolu à gérer ici.
+        """
+        chips = "".join(
+            f'          <div class="check" id="ck{i}"><span>✓</span>{t}</div>\n'
+            for i, t in enumerate(checks)
+        )
+        body = (
+            _BG_HTML
+            + f'        <div class="clock" id="clock">{clock}</div>\n'
+            + f'        <div class="eyebrow" id="eyebrow">{eyebrow}</div>\n'
+            + f'        <div class="board" id="board">\n{board_html}        </div>\n'
+            + f'        <div class="checks">\n{chips}        </div>\n'
+        )
+        js = (
+            self._bg_js(dur)
+            + '        tl.fromTo("#clock", { opacity:0, y:-12 }, { opacity:1, y:0, duration:.4, ease:"power2.out" }, .05);\n'
+            + '        tl.fromTo("#eyebrow", { opacity:0, y:-12 }, { opacity:.9, y:0, duration:.4, ease:"power2.out" }, .12);\n'
+            + '        tl.fromTo("#board", { opacity:0, y:18 }, { opacity:1, y:0, duration:.35, ease:"power2.out" }, .3);\n'
+            + board_js
+        )
+        for i in range(len(checks)):
+            js += (
+                f'        tl.fromTo("#ck{i}", {{ opacity:0, scale:.8, y:14 }},'
+                f' {{ opacity:1, scale:1, y:0, duration:.24, ease:"back.out(2)" }}, {1.75 + i * .28:.2f});\n'
+            )
+        return _TEMPLATE.format(style=self.style, cid=cid, dur=dur, body=body, js=js)
+
+    def motion_retrait_carte(self, cid, abs_debut, dur, clock, eyebrow, plat, prix, canaux):
+        """« Je retire un plat : il disparaît de tous les canaux à la fois. »
+
+        Le propos n'est pas l'écran, c'est la simultanéité. Le schéma la
+        montre littéralement : un seul geste sur la fiche, et les trois
+        canaux basculent ensemble.
+        """
+        n = len(canaux)
+        ecart = 1560 // n
+        html = ('          <div class="md-card" id="mdCard">\n'
+                f'            <div class="nom">{plat}</div>\n'
+                f'            <div class="prix">{prix}</div>\n'
+                '            <div class="md-barre" id="mdBarre"></div>\n'
+                '          </div>\n')
+        for i, c in enumerate(canaux):
+            gauche = i * ecart + (ecart - 400) // 2
+            centre = gauche + 200
+            largeur = abs(centre - 780) or 1
+            x = min(centre, 780)
+            html += (f'          <div class="md-lien" id="mdLien{i}" style="left:{x}px; width:{largeur}px;"></div>\n'
+                     f'          <div class="md-canal" id="mdCanal{i}" style="left:{gauche}px;">{c}'
+                     f'<span class="etat" id="mdEtat{i}">disponible</span></div>\n')
+        js = ('        tl.fromTo("#mdCard", { opacity:0, scale:.94 }, { opacity:1, scale:1, duration:.3, ease:"back.out(1.5)" }, .45);\n')
+        for i in range(n):
+            js += (f'        tl.to("#mdLien{i}", {{ scaleX:1, duration:.3, ease:"power2.out" }}, {0.7 + i * .12:.2f});\n'
+                   f'        tl.fromTo("#mdCanal{i}", {{ opacity:0, y:14 }}, {{ opacity:1, y:0, duration:.28, ease:"power2.out" }}, {0.85 + i * .12:.2f});\n')
+        # Le geste, puis la bascule simultanée : c'est tout le sujet.
+        js += '        tl.to("#mdBarre", { scaleX:1, duration:.35, ease:"power2.inOut" }, 2.0);\n'
+        js += '        tl.to("#mdCard", { opacity:.4, duration:.4 }, 2.2);\n'
+        for i in range(n):
+            js += (f'        tl.to("#mdEtat{i}", {{ opacity:0, duration:.15 }}, 2.45);\n'
+                   f'        tl.set("#mdEtat{i}", {{ innerText:"retiré", color:"#C64B3A" }}, 2.6);\n'
+                   f'        tl.to("#mdEtat{i}", {{ opacity:1, duration:.2 }}, 2.6);\n'
+                   f'        tl.to("#mdCanal{i}", {{ borderColor:"#C64B3A", duration:.3 }}, 2.6);\n')
+        return self._motion(cid, abs_debut, dur, clock, eyebrow, html, js, ["Un seul geste"] + [f"{c} à jour" for c in canaux[:2]])
+
+    def motion_fond_caisse(self, cid, abs_debut, dur, clock, eyebrow, montant, checks):
+        """« J'ouvre mon fond de caisse. » Un tiroir, un montant qui se pose."""
+        html = ('          <div class="md-tiroir" id="mdTiroir">\n'
+                f'            <div class="md-montant" id="mdMontant">0,00 €</div>\n'
+                '            <div class="md-tiroir-face" id="mdFace"></div>\n'
+                '          </div>\n')
+        js = ('        tl.fromTo("#mdTiroir", { opacity:0, y:20 }, { opacity:1, y:0, duration:.35, ease:"back.out(1.4)" }, .45);\n'
+              '        tl.fromTo("#mdFace", { y:0 }, { y:70, duration:.5, ease:"power2.out" }, .9);\n'
+              # Le compteur est animé par un objet intermédiaire : GSAP ne sait
+              # pas interpoler un texte, seulement un nombre.
+              '        const compteur = { v: 0 };\n'
+              f'        tl.to(compteur, {{ v:{montant}, duration:1.1, ease:"power2.out",\n'
+              '          onUpdate: () => { document.getElementById("mdMontant").textContent =\n'
+              '            compteur.v.toFixed(2).replace(".", ",") + " €"; } }, 1.1);\n')
+        return self._motion(cid, abs_debut, dur, clock, eyebrow, html, js, checks)
 
     # ── écriture ─────────────────────────────────────────────────────────
     def ecrire(self, scenes):

@@ -105,22 +105,24 @@
 
       </style>
 
-      <div id="root" data-composition-id="s1-s6-creneaux" data-width="1920" data-height="1080" data-duration="6.06">
+      <div id="root" data-composition-id="s1-s12-caisse" data-width="1920" data-height="1080" data-duration="6.60">
         <div class="metier"></div>
         <div class="glow glow-a" id="glowA"></div>
         <div class="glow glow-b" id="glowB"></div>
         <div class="glow glow-c" id="glowC"></div>
         <div class="grid" id="grid"></div>
-        <div class="clock" id="clock">10:10</div>
-        <div class="eyebrow" id="eyebrow">JE FERME UN CRÉNEAU</div>
-        <div class="frame" id="frame">
-            <div class="veille"></div>
-            <div class="veille-scan" id="scan"></div>
-          <video id="vid-scene-6" src="assets/screens/s1/SCENE-6.mp4" muted playsinline class="clip" data-start="0" data-duration="42.73" data-track-index="2"></video>
+        <div class="clock" id="clock">11:45</div>
+        <div class="eyebrow" id="eyebrow">J'OUVRE MON FOND DE CAISSE</div>
+        <div class="board" id="board">
+          <div class="md-tiroir" id="mdTiroir">
+            <div class="md-montant" id="mdMontant">0,00 €</div>
+            <div class="md-tiroir-face" id="mdFace"></div>
+          </div>
         </div>
         <div class="checks">
-          <div class="check" id="ck0"><span>✓</span>Complet à 20 h</div>
-          <div class="check" id="ck1"><span>✓</span>Invisible en ligne</div>
+          <div class="check" id="ck0"><span>✓</span>Comptés</div>
+          <div class="check" id="ck1"><span>✓</span>Notés</div>
+          <div class="check" id="ck2"><span>✓</span>Caisse ouverte</div>
         </div>
       </div>
 
@@ -133,15 +135,20 @@
         tl.to("#glowB", { x:-56, y:44, scale:1.14, duration:9, ease:"sine.inOut", yoyo:true, repeat:1 }, 0);
         tl.to("#glowC", { x:48, scale:1.08, duration:13, ease:"sine.inOut", yoyo:true, repeat:1 }, 0);
         tl.to("#grid", { x:-48, y:-48, duration:16, ease:"none", repeat:1 }, 0);
-        tl.fromTo("#scan", { x:0, skewX:-12 }, { x:4300, skewX:-12, duration:3.4, ease:"none", repeat:2 }, 0);
         tl.fromTo("#clock", { opacity:0, y:-12 }, { opacity:1, y:0, duration:.4, ease:"power2.out" }, .05);
         tl.fromTo("#eyebrow", { opacity:0, y:-12 }, { opacity:.9, y:0, duration:.4, ease:"power2.out" }, .12);
-        // Le cadre apparaît en 320 ms ; l'action à l'écran démarre 250 ms après.
-        tl.fromTo("#frame", { opacity:0, scale:.94, rotateY:6 }, { opacity:1, scale:1, rotateY:6, duration:.32, ease:"back.out(1.6)" }, 0.35);
+        tl.fromTo("#board", { opacity:0, y:18 }, { opacity:1, y:0, duration:.35, ease:"power2.out" }, .3);
+        tl.fromTo("#mdTiroir", { opacity:0, y:20 }, { opacity:1, y:0, duration:.35, ease:"back.out(1.4)" }, .45);
+        tl.fromTo("#mdFace", { y:0 }, { y:70, duration:.5, ease:"power2.out" }, .9);
+        const compteur = { v: 0 };
+        tl.to(compteur, { v:150, duration:1.1, ease:"power2.out",
+          onUpdate: () => { document.getElementById("mdMontant").textContent =
+            compteur.v.toFixed(2).replace(".", ",") + " €"; } }, 1.1);
         tl.fromTo("#ck0", { opacity:0, scale:.8, y:14 }, { opacity:1, scale:1, y:0, duration:.24, ease:"back.out(2)" }, 1.75);
         tl.fromTo("#ck1", { opacity:0, scale:.8, y:14 }, { opacity:1, scale:1, y:0, duration:.24, ease:"back.out(2)" }, 2.03);
+        tl.fromTo("#ck2", { opacity:0, scale:.8, y:14 }, { opacity:1, scale:1, y:0, duration:.24, ease:"back.out(2)" }, 2.31);
 
-        window.__timelines["s1-s6-creneaux"] = tl;
+        window.__timelines["s1-s12-caisse"] = tl;
       </script>
     </template>
   </body>
