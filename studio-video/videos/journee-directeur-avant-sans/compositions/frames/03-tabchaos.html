@@ -1,0 +1,215 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+  </head>
+  <body>
+    <template>
+      <style>
+        @font-face { font-family: "Inter"; src: url("assets/fonts/Inter-400.woff2") format("woff2"); font-weight: 400; font-style: normal; font-display: block; }
+        @font-face { font-family: "Inter"; src: url("assets/fonts/Inter-500.woff2") format("woff2"); font-weight: 500; font-style: normal; font-display: block; }
+        @font-face { font-family: "Inter"; src: url("assets/fonts/Inter-600.woff2") format("woff2"); font-weight: 600; font-style: normal; font-display: block; }
+        @font-face { font-family: "Inter"; src: url("assets/fonts/Inter-700.woff2") format("woff2"); font-weight: 700; font-style: normal; font-display: block; }
+        @font-face { font-family: "Inter"; src: url("assets/fonts/Inter-800.woff2") format("woff2"); font-weight: 800; font-style: normal; font-display: block; }
+
+        #root {
+          position: relative;
+          width: 1920px;
+          height: 1080px;
+          overflow: hidden;
+          font-family: "Inter", sans-serif;
+          color: #3A3F45;
+        }
+        .f3-bg { position: absolute; inset: 0; background: #EDEEF0; }
+        .f3-stage { position: absolute; inset: 0; }
+
+        .f3-context { position: absolute; left: 140px; top: 56px; font-size: 26px; font-weight: 500; color: rgba(58,63,69,0.85); }
+
+        .f3-tabbar {
+          position: absolute; left: 140px; top: 120px; width: 1640px; height: 64px;
+          display: flex; gap: 10px;
+        }
+        .f3-tab {
+          width: 220px; height: 100%; border: 1px solid #8A9099; background: #EDEEF0;
+          display: flex; align-items: center; justify-content: center;
+          font-size: 22px; font-weight: 500; color: rgba(58,63,69,0.85);
+        }
+        .f3-tab.stock { font-weight: 700; }
+        .f3-tabunderline { position: absolute; left: 140px; top: 182px; width: 220px; height: 3px; background: #3A3F45; }
+
+        .f3-panel {
+          position: absolute; left: 140px; top: 230px; width: 700px; height: 300px;
+          border: 1px solid #8A9099; background: rgba(58,63,69,0.045);
+          display: flex; align-items: center; justify-content: center;
+          overflow: hidden;
+        }
+        .f3-panel-bg { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; opacity: 0.5; }
+        .f3-panel .value { font-size: 140px; font-weight: 800; color: #3A3F45; position: relative; }
+        .f3-panel .ring {
+          position: absolute; inset: -30px; border: 3px solid #D64545; border-radius: 50%; opacity: 0;
+        }
+
+        .f3-grid {
+          position: absolute; right: 140px; top: 230px; width: 700px; height: 300px;
+          border: 1px solid #8A9099; background: #EDEEF0;
+          display: grid; grid-template-columns: repeat(3, 1fr); grid-template-rows: repeat(3, 1fr);
+          overflow: hidden;
+        }
+        .f3-grid-bg { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; opacity: 0.92; }
+        .f3-grid .cell { border: 1px solid #8A9099; position: relative; }
+        .f3-grid .cell.active { display: flex; align-items: center; justify-content: center; background: rgba(237,238,240,0.94); z-index: 1; }
+        .f3-grid .cell.active .txt { font-size: 46px; font-weight: 700; color: #3A3F45; }
+        .f3-grid .cell.active .caret { display: inline-block; width: 4px; height: 44px; background: #3A3F45; margin-left: 4px; vertical-align: -8px; }
+
+        .f3-cursor-pos {
+          position: absolute; left: 230px; top: 150px; width: 0; height: 0;
+        }
+        .f3-cursor {
+          width: 0; height: 0;
+          border-left: 16px solid #3A3F45; border-bottom: 26px solid transparent;
+          transform-origin: 0 0;
+          filter: drop-shadow(0 1px 0 rgba(0,0,0,0.15));
+        }
+
+        .f3-tally { position: absolute; left: 140px; top: 570px; display: flex; gap: 20px; }
+        .f3-tally .mark {
+          width: 40px; height: 60px; border: 1px solid #8A9099; display: flex; align-items: center; justify-content: center;
+          font-size: 26px; font-weight: 700; color: rgba(58,63,69,0.85);
+        }
+
+        .f3-echo { position: absolute; left: 140px; bottom: 90px; font-size: 22px; color: rgba(58,63,69,0.85); font-weight: 500; }
+      </style>
+
+      <div id="root" data-composition-id="03-tabchaos" data-width="1920" data-height="1080" data-duration="14.528">
+        <div class="f3-bg clip" id="f3-bgclip" data-start="0" data-duration="14.528" data-track-index="1"></div>
+
+        <div class="f3-stage" id="f3-stage">
+        <div class="f3-context" id="f3-context">chaque lundi</div>
+
+        <div class="f3-tabbar" id="f3-tabbar">
+          <div class="f3-tab stock">stock</div>
+          <div class="f3-tab">onglet</div>
+          <div class="f3-tab">onglet</div>
+          <div class="f3-tab">onglet</div>
+          <div class="f3-tab">onglet</div>
+          <div class="f3-tab">onglet</div>
+          <div class="f3-tab">tableur</div>
+        </div>
+        <div class="f3-tabunderline" id="f3-underline"></div>
+
+        <div class="f3-panel" id="f3-panel">
+          <img class="f3-panel-bg" src="public/generated/06-graphique-vide.jpg" alt="" />
+          <div class="ring" id="f3-ring"></div>
+          <div class="value" id="f3-value">128</div>
+        </div>
+
+        <div class="f3-grid" id="f3-grid">
+          <img class="f3-grid-bg" src="public/generated/04-tableur.jpg" alt="" />
+          <div class="cell"></div><div class="cell"></div><div class="cell"></div>
+          <div class="cell"></div><div class="cell active" id="f3-cell"><span class="txt" id="f3-celltxt"></span><span class="caret" id="f3-caret"></span></div><div class="cell"></div>
+          <div class="cell"></div><div class="cell"></div><div class="cell"></div>
+        </div>
+
+        <div class="f3-cursor-pos" id="f3-cursor-pos"><div class="f3-cursor" id="f3-cursor"></div></div>
+
+        <div class="f3-tally" id="f3-tally">
+          <div class="mark" id="f3-m1" style="opacity:0;">I</div>
+          <div class="mark" id="f3-m2" style="opacity:0;">II</div>
+          <div class="mark" id="f3-m3" style="opacity:0;">III</div>
+        </div>
+        <div class="f3-echo">6 autres onglets — jamais ouverts aujourd'hui</div>
+        </div>
+      </div>
+
+      <script>
+        window.__timelines = window.__timelines || {};
+        const tl = gsap.timeline({ paused: true });
+
+        gsap.set("#f3-context", { opacity: 0 });
+        gsap.set("#f3-underline", { opacity: 0 });
+        gsap.set("#f3-panel", { opacity: 0, y: 16 });
+        gsap.set("#f3-value", { opacity: 0 });
+        gsap.set("#f3-ring", { opacity: 0, scale: 0.85 });
+        gsap.set(["#f3-m1", "#f3-m2", "#f3-m3"], { opacity: 0, scale: 0 });
+        gsap.set("#f3-celltxt", { opacity: 0 });
+
+        // helper: cursor move (eased) — animates transform x/y (offset from the
+        // element's static base position at left:230/top:150), never left/top.
+        function moveCursor(x, y, dur, at, ease) {
+          tl.to("#f3-cursor-pos", { x: x - 230, y: y - 150, duration: dur, ease: ease || "power2.inOut" }, at);
+        }
+
+        // Scene 1 (0.0-1.58s): "Tous les lundis." — plateau visible, cursor idle on tab 1
+        tl.to("#f3-context", { opacity: 1, duration: 0.4, ease: "power3.out" }, 0.3);
+        tl.to("#f3-panel", { opacity: 1, y: 0, duration: 0.4, ease: "power3.out" }, 0.5);
+        tl.to("#f3-grid", { opacity: 1, duration: 0.01 }, 0);
+
+        // Scene 2 (1.58-4.01s): "J'ouvre l'onglet du stock." — cursor already rests on tab 1 (base
+        // position); it clicks in place, panel reveals value
+        tl.to("#f3-cursor", { scale: 0.85, duration: 0.08, ease: "power2.in", yoyo: true, repeat: 1 }, 2.15);
+        tl.to("#f3-underline", { opacity: 1, duration: 0.2 }, 2.2);
+        tl.fromTo("#f3-value", { opacity: 0, scale: 0.9 }, { opacity: 1, scale: 1, duration: 0.4, ease: "power3.out" }, 2.3);
+
+        // Scene 3 (4.01-5.77s): "Je note un chiffre." — circle marker draws around it, fades
+        tl.to("#f3-ring", { opacity: 1, scale: 1, duration: 0.35, ease: "power2.out" }, 4.2);
+        tl.to("#f3-ring", { opacity: 0, duration: 0.35, ease: "power1.out" }, 5.35);
+
+        // Scene 4 (5.77-7.57s): "Je change d'onglet." — cursor travels to the grid, tab deactivates
+        tl.to("#f3-underline", { opacity: 0.15, duration: 0.3 }, 5.9);
+        moveCursor(1350, 380, 0.9, 5.9, "power2.inOut");
+
+        // Scene 5 (7.57-10.31s): "Je le recopie dans un tableur." — number types into the cell, tally I
+        const seq128 = "128";
+        const cellTxt = document.getElementById("f3-celltxt");
+        tl.to("#f3-celltxt", { opacity: 1, duration: 0.01 }, 7.7);
+        seq128.split("").forEach((ch, i) => {
+          tl.call(() => { cellTxt.textContent = seq128.slice(0, i + 1); }, [], 7.75 + i * 0.14);
+        });
+        tl.to("#f3-cursor", { scale: 0.85, duration: 0.08, ease: "power2.in", yoyo: true, repeat: 1 }, 8.1);
+        tl.fromTo("#f3-m1", { opacity: 0, scale: 0 }, { opacity: 1, scale: 1, duration: 0.35, ease: "power3.out" }, 9.8);
+
+        // Scene 6 (10.31-11.04s): "Encore." — fast round-trip 2 (~0.7s), hard-cut number flash, tally II
+        moveCursor(230, 150, 0.32, 10.37, "power2.inOut");
+        tl.call(() => { document.getElementById("f3-value").textContent = "214"; }, [], 10.69);
+        tl.to("#f3-value", { opacity: 0.4, duration: 0.06, ease: "none", yoyo: true, repeat: 1 }, 10.69);
+        tl.fromTo("#f3-m2", { opacity: 0, scale: 0 }, { opacity: 1, scale: 1, duration: 0.3, ease: "power3.out" }, 10.95);
+
+        // Scene 7 (11.10-12.02s): "Et encore." — round-trip 3, same fast cadence, tally III
+        moveCursor(1350, 380, 0.3, 11.15, "power2.inOut");
+        tl.call(() => { cellTxt.textContent = "214"; }, [], 11.5);
+        tl.fromTo("#f3-m3", { opacity: 0, scale: 0 }, { opacity: 1, scale: 1, duration: 0.3, ease: "power3.out" }, 11.75);
+
+        // Scene 8 (12.02-14.028s): hold — three tally marks + last number sit still; subtle jitter on
+        // the cursor's resting position only (composes on top of its last x/y, never overwrites via
+        // raw style — uses gsap.set so GSAP's own transform cache stays authoritative).
+        const f3RestX = 1350 - 230, f3RestY = 380 - 150;
+        const f3cursorPos = document.getElementById("f3-cursor-pos");
+        const f3phase = { p: 0 };
+        tl.to(f3phase, {
+          p: Math.PI * 2 * 1.3, duration: 1.9, ease: "none",
+          onUpdate: () => {
+            const s = Math.sin(f3phase.p);
+            gsap.set(f3cursorPos, { x: f3RestX + s * 1.5, y: f3RestY + s * 1.5 });
+          }
+        }, 12.1);
+
+        // Continuous low-amplitude cinematic drift on the whole stage (multi-phase-camera
+        // doctrine, drift channel only — no phase zoom needed here, the cuts/cursor already
+        // carry the pacing). Runs under everything, independent of the cursor/element tweens
+        // above (a separate wrapper, per the rule's "background stays off the camera" pattern).
+        const f3stage = document.getElementById("f3-stage");
+        const f3drift = { p: 0 };
+        tl.to(f3drift, {
+          p: Math.PI * 2 * 4.0, duration: 13.6, ease: "none",
+          onUpdate: () => {
+            const s = Math.sin(f3drift.p);
+            const s2 = Math.sin(f3drift.p * 1.3);
+            f3stage.style.transform = `translate(${s * 2.5}px, ${s2 * 1.8}px) scale(${1 + s * 0.002})`;
+          }
+        }, 0.2);
+
+        window.__timelines["03-tabchaos"] = tl;
+      </script>
+    </template>
+  </body>
+</html>

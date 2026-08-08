@@ -1,0 +1,1058 @@
+{
+  "bgm": null,
+  "bgm_pending": false,
+  "voices": [
+    {
+      "frame": 1,
+      "path": "assets/audio/vo-01.mp3",
+      "duration_s": 11.546,
+      "words": [
+        {
+          "id": 0,
+          "text": "Sept",
+          "start": 0.12,
+          "end": 0.408
+        },
+        {
+          "id": 1,
+          "text": "heures.",
+          "start": 0.463,
+          "end": 0.968
+        },
+        {
+          "id": 2,
+          "text": "La",
+          "start": 1.023,
+          "end": 1.168
+        },
+        {
+          "id": 3,
+          "text": "salle",
+          "start": 1.223,
+          "end": 1.583
+        },
+        {
+          "id": 4,
+          "text": "est",
+          "start": 1.638,
+          "end": 1.855
+        },
+        {
+          "id": 5,
+          "text": "vide.",
+          "start": 1.91,
+          "end": 2.27
+        },
+        {
+          "id": 6,
+          "text": "Mes",
+          "start": 2.325,
+          "end": 2.542
+        },
+        {
+          "id": 7,
+          "text": "écrans,",
+          "start": 2.597,
+          "end": 3.101
+        },
+        {
+          "id": 8,
+          "text": "eux,",
+          "start": 3.156,
+          "end": 3.445
+        },
+        {
+          "id": 9,
+          "text": "sont",
+          "start": 3.5,
+          "end": 3.788
+        },
+        {
+          "id": 10,
+          "text": "déjà",
+          "start": 3.843,
+          "end": 4.132
+        },
+        {
+          "id": 11,
+          "text": "pleins.",
+          "start": 4.187,
+          "end": 4.692
+        },
+        {
+          "id": 12,
+          "text": "Sept",
+          "start": 4.747,
+          "end": 5.035
+        },
+        {
+          "id": 13,
+          "text": "onglets",
+          "start": 5.09,
+          "end": 5.595
+        },
+        {
+          "id": 14,
+          "text": "ouverts.",
+          "start": 5.65,
+          "end": 6.227
+        },
+        {
+          "id": 15,
+          "text": "Sept",
+          "start": 6.282,
+          "end": 6.571
+        },
+        {
+          "id": 16,
+          "text": "mots",
+          "start": 6.626,
+          "end": 6.914
+        },
+        {
+          "id": 17,
+          "text": "de",
+          "start": 6.969,
+          "end": 7.113
+        },
+        {
+          "id": 18,
+          "text": "passe.",
+          "start": 7.168,
+          "end": 7.601
+        },
+        {
+          "id": 19,
+          "text": "Sept",
+          "start": 7.656,
+          "end": 7.944
+        },
+        {
+          "id": 20,
+          "text": "factures",
+          "start": 7.999,
+          "end": 8.576
+        },
+        {
+          "id": 21,
+          "text": "d'abonnement",
+          "start": 8.631,
+          "end": 9.497
+        },
+        {
+          "id": 22,
+          "text": "—",
+          "start": 9.552,
+          "end": 9.624
+        },
+        {
+          "id": 23,
+          "text": "chaque",
+          "start": 9.679,
+          "end": 10.112
+        },
+        {
+          "id": 24,
+          "text": "mois.",
+          "start": 10.167,
+          "end": 10.527
+        }
+      ]
+    },
+    {
+      "frame": 2,
+      "path": "assets/audio/vo-02.mp3",
+      "duration_s": 8.333,
+      "words": [
+        {
+          "id": 0,
+          "text": "Mon",
+          "start": 0.12,
+          "end": 0.279
+        },
+        {
+          "id": 1,
+          "text": "logiciel",
+          "start": 0.334,
+          "end": 0.759
+        },
+        {
+          "id": 2,
+          "text": "de",
+          "start": 0.814,
+          "end": 0.921
+        },
+        {
+          "id": 3,
+          "text": "stock",
+          "start": 0.976,
+          "end": 1.241
+        },
+        {
+          "id": 4,
+          "text": "ne",
+          "start": 1.296,
+          "end": 1.402
+        },
+        {
+          "id": 5,
+          "text": "sait",
+          "start": 1.457,
+          "end": 1.67
+        },
+        {
+          "id": 6,
+          "text": "pas",
+          "start": 1.725,
+          "end": 1.884
+        },
+        {
+          "id": 7,
+          "text": "ce",
+          "start": 1.939,
+          "end": 2.045
+        },
+        {
+          "id": 8,
+          "text": "que",
+          "start": 2.1,
+          "end": 2.26
+        },
+        {
+          "id": 9,
+          "text": "ma",
+          "start": 2.315,
+          "end": 2.421
+        },
+        {
+          "id": 10,
+          "text": "caisse",
+          "start": 2.476,
+          "end": 2.795
+        },
+        {
+          "id": 11,
+          "text": "a",
+          "start": 2.85,
+          "end": 2.903
+        },
+        {
+          "id": 12,
+          "text": "vendu",
+          "start": 2.958,
+          "end": 3.224
+        },
+        {
+          "id": 13,
+          "text": "hier",
+          "start": 3.279,
+          "end": 3.491
+        },
+        {
+          "id": 14,
+          "text": "soir.",
+          "start": 3.546,
+          "end": 3.812
+        },
+        {
+          "id": 15,
+          "text": "Les",
+          "start": 3.867,
+          "end": 4.026
+        },
+        {
+          "id": 16,
+          "text": "deux",
+          "start": 4.081,
+          "end": 4.293
+        },
+        {
+          "id": 17,
+          "text": "ne",
+          "start": 4.348,
+          "end": 4.455
+        },
+        {
+          "id": 18,
+          "text": "se",
+          "start": 4.51,
+          "end": 4.616
+        },
+        {
+          "id": 19,
+          "text": "parlent",
+          "start": 4.671,
+          "end": 5.043
+        },
+        {
+          "id": 20,
+          "text": "pas.",
+          "start": 5.098,
+          "end": 5.31
+        },
+        {
+          "id": 21,
+          "text": "Alors",
+          "start": 5.365,
+          "end": 5.631
+        },
+        {
+          "id": 22,
+          "text": "je",
+          "start": 5.686,
+          "end": 5.792
+        },
+        {
+          "id": 23,
+          "text": "fais",
+          "start": 5.847,
+          "end": 6.06
+        },
+        {
+          "id": 24,
+          "text": "le",
+          "start": 6.115,
+          "end": 6.221
+        },
+        {
+          "id": 25,
+          "text": "pont.",
+          "start": 6.276,
+          "end": 6.541
+        },
+        {
+          "id": 26,
+          "text": "À",
+          "start": 6.596,
+          "end": 6.65
+        },
+        {
+          "id": 27,
+          "text": "la",
+          "start": 6.705,
+          "end": 6.811
+        },
+        {
+          "id": 28,
+          "text": "main.",
+          "start": 6.866,
+          "end": 7.131
+        }
+      ]
+    },
+    {
+      "frame": 3,
+      "path": "assets/audio/vo-03.mp3",
+      "duration_s": 14.028,
+      "words": [
+        {
+          "id": 0,
+          "text": "Tous",
+          "start": 0.12,
+          "end": 0.505
+        },
+        {
+          "id": 1,
+          "text": "les",
+          "start": 0.56,
+          "end": 0.849
+        },
+        {
+          "id": 2,
+          "text": "lundis.",
+          "start": 0.904,
+          "end": 1.578
+        },
+        {
+          "id": 3,
+          "text": "J'ouvre",
+          "start": 1.633,
+          "end": 2.307
+        },
+        {
+          "id": 4,
+          "text": "l'onglet",
+          "start": 2.362,
+          "end": 3.132
+        },
+        {
+          "id": 5,
+          "text": "du",
+          "start": 3.187,
+          "end": 3.379
+        },
+        {
+          "id": 6,
+          "text": "stock.",
+          "start": 3.434,
+          "end": 4.012
+        },
+        {
+          "id": 7,
+          "text": "Je",
+          "start": 4.067,
+          "end": 4.26
+        },
+        {
+          "id": 8,
+          "text": "note",
+          "start": 4.315,
+          "end": 4.7
+        },
+        {
+          "id": 9,
+          "text": "un",
+          "start": 4.755,
+          "end": 4.947
+        },
+        {
+          "id": 10,
+          "text": "chiffre.",
+          "start": 5.002,
+          "end": 5.772
+        },
+        {
+          "id": 11,
+          "text": "Je",
+          "start": 5.827,
+          "end": 6.02
+        },
+        {
+          "id": 12,
+          "text": "change",
+          "start": 6.075,
+          "end": 6.653
+        },
+        {
+          "id": 13,
+          "text": "d'onglet.",
+          "start": 6.708,
+          "end": 7.574
+        },
+        {
+          "id": 14,
+          "text": "Je",
+          "start": 7.629,
+          "end": 7.822
+        },
+        {
+          "id": 15,
+          "text": "le",
+          "start": 7.877,
+          "end": 8.069
+        },
+        {
+          "id": 16,
+          "text": "recopie",
+          "start": 8.124,
+          "end": 8.798
+        },
+        {
+          "id": 17,
+          "text": "dans",
+          "start": 8.853,
+          "end": 9.238
+        },
+        {
+          "id": 18,
+          "text": "un",
+          "start": 9.293,
+          "end": 9.486
+        },
+        {
+          "id": 19,
+          "text": "tableur.",
+          "start": 9.541,
+          "end": 10.311
+        },
+        {
+          "id": 20,
+          "text": "Encore.",
+          "start": 10.366,
+          "end": 11.04
+        },
+        {
+          "id": 21,
+          "text": "Et",
+          "start": 11.095,
+          "end": 11.287
+        },
+        {
+          "id": 22,
+          "text": "encore.",
+          "start": 11.342,
+          "end": 12.016
+        }
+      ]
+    },
+    {
+      "frame": 4,
+      "path": "assets/audio/vo-04.mp3",
+      "duration_s": 10.031,
+      "words": [
+        {
+          "id": 0,
+          "text": "La",
+          "start": 0.12,
+          "end": 0.255
+        },
+        {
+          "id": 1,
+          "text": "commande",
+          "start": 0.31,
+          "end": 0.852
+        },
+        {
+          "id": 2,
+          "text": "fournisseur,",
+          "start": 0.907,
+          "end": 1.72
+        },
+        {
+          "id": 3,
+          "text": "je",
+          "start": 1.775,
+          "end": 1.91
+        },
+        {
+          "id": 4,
+          "text": "la",
+          "start": 1.965,
+          "end": 2.101
+        },
+        {
+          "id": 5,
+          "text": "passe",
+          "start": 2.156,
+          "end": 2.495
+        },
+        {
+          "id": 6,
+          "text": "au",
+          "start": 2.55,
+          "end": 2.685
+        },
+        {
+          "id": 7,
+          "text": "flair.",
+          "start": 2.74,
+          "end": 3.146
+        },
+        {
+          "id": 8,
+          "text": "Par",
+          "start": 3.201,
+          "end": 3.405
+        },
+        {
+          "id": 9,
+          "text": "SMS.",
+          "start": 3.46,
+          "end": 3.73
+        },
+        {
+          "id": 10,
+          "text": "À",
+          "start": 3.785,
+          "end": 3.853
+        },
+        {
+          "id": 11,
+          "text": "sept",
+          "start": 3.908,
+          "end": 4.179
+        },
+        {
+          "id": 12,
+          "text": "heures.",
+          "start": 4.234,
+          "end": 4.708
+        },
+        {
+          "id": 13,
+          "text": "Pas",
+          "start": 4.763,
+          "end": 4.966
+        },
+        {
+          "id": 14,
+          "text": "de",
+          "start": 5.021,
+          "end": 5.157
+        },
+        {
+          "id": 15,
+          "text": "prévision.",
+          "start": 5.212,
+          "end": 5.889
+        },
+        {
+          "id": 16,
+          "text": "Pas",
+          "start": 5.944,
+          "end": 6.147
+        },
+        {
+          "id": 17,
+          "text": "de",
+          "start": 6.202,
+          "end": 6.338
+        },
+        {
+          "id": 18,
+          "text": "données",
+          "start": 6.393,
+          "end": 6.867
+        },
+        {
+          "id": 19,
+          "text": "croisées.",
+          "start": 6.922,
+          "end": 7.531
+        },
+        {
+          "id": 20,
+          "text": "Juste",
+          "start": 7.586,
+          "end": 7.925
+        },
+        {
+          "id": 21,
+          "text": "l'habitude.",
+          "start": 7.98,
+          "end": 8.725
+        }
+      ]
+    },
+    {
+      "frame": 5,
+      "path": "assets/audio/vo-05.mp3",
+      "duration_s": 12.069,
+      "words": [
+        {
+          "id": 0,
+          "text": "Sept",
+          "start": 0.12,
+          "end": 0.358
+        },
+        {
+          "id": 1,
+          "text": "abonnements",
+          "start": 0.413,
+          "end": 1.066
+        },
+        {
+          "id": 2,
+          "text": "à",
+          "start": 1.121,
+          "end": 1.18
+        },
+        {
+          "id": 3,
+          "text": "payer.",
+          "start": 1.235,
+          "end": 1.591
+        },
+        {
+          "id": 4,
+          "text": "Des",
+          "start": 1.646,
+          "end": 1.825
+        },
+        {
+          "id": 5,
+          "text": "doubles",
+          "start": 1.88,
+          "end": 2.295
+        },
+        {
+          "id": 6,
+          "text": "saisies,",
+          "start": 2.35,
+          "end": 2.825
+        },
+        {
+          "id": 7,
+          "text": "chaque",
+          "start": 2.88,
+          "end": 3.237
+        },
+        {
+          "id": 8,
+          "text": "semaine.",
+          "start": 3.292,
+          "end": 3.767
+        },
+        {
+          "id": 9,
+          "text": "Des",
+          "start": 3.822,
+          "end": 4
+        },
+        {
+          "id": 10,
+          "text": "minutes",
+          "start": 4.055,
+          "end": 4.47
+        },
+        {
+          "id": 11,
+          "text": "qui",
+          "start": 4.525,
+          "end": 4.704
+        },
+        {
+          "id": 12,
+          "text": "s'accumulent.",
+          "start": 4.759,
+          "end": 5.531
+        },
+        {
+          "id": 13,
+          "text": "Et",
+          "start": 5.586,
+          "end": 5.704
+        },
+        {
+          "id": 14,
+          "text": "un",
+          "start": 5.759,
+          "end": 5.878
+        },
+        {
+          "id": 15,
+          "text": "coût",
+          "start": 5.933,
+          "end": 6.171
+        },
+        {
+          "id": 16,
+          "text": "que",
+          "start": 6.226,
+          "end": 6.404
+        },
+        {
+          "id": 17,
+          "text": "je",
+          "start": 6.459,
+          "end": 6.578
+        },
+        {
+          "id": 18,
+          "text": "ne",
+          "start": 6.633,
+          "end": 6.751
+        },
+        {
+          "id": 19,
+          "text": "connais",
+          "start": 6.806,
+          "end": 7.222
+        },
+        {
+          "id": 20,
+          "text": "qu'en",
+          "start": 7.277,
+          "end": 7.574
+        },
+        {
+          "id": 21,
+          "text": "fourchette",
+          "start": 7.629,
+          "end": 8.223
+        },
+        {
+          "id": 22,
+          "text": ":",
+          "start": 8.278,
+          "end": 8.337
+        },
+        {
+          "id": 23,
+          "text": "entre",
+          "start": 8.392,
+          "end": 8.689
+        },
+        {
+          "id": 24,
+          "text": "350",
+          "start": 8.744,
+          "end": 8.922
+        },
+        {
+          "id": 25,
+          "text": "et",
+          "start": 8.977,
+          "end": 9.096
+        },
+        {
+          "id": 26,
+          "text": "900",
+          "start": 9.151,
+          "end": 9.329
+        },
+        {
+          "id": 27,
+          "text": "euros",
+          "start": 9.384,
+          "end": 9.681
+        },
+        {
+          "id": 28,
+          "text": "par",
+          "start": 9.736,
+          "end": 9.914
+        },
+        {
+          "id": 29,
+          "text": "mois.",
+          "start": 9.969,
+          "end": 10.266
+        }
+      ]
+    },
+    {
+      "frame": 6,
+      "path": "assets/audio/vo-06.mp3",
+      "duration_s": 7.576,
+      "words": [
+        {
+          "id": 0,
+          "text": "Le",
+          "start": 0.12,
+          "end": 0.249
+        },
+        {
+          "id": 1,
+          "text": "pire",
+          "start": 0.304,
+          "end": 0.562
+        },
+        {
+          "id": 2,
+          "text": "?",
+          "start": 0.617,
+          "end": 0.681
+        },
+        {
+          "id": 3,
+          "text": "Je",
+          "start": 0.736,
+          "end": 0.865
+        },
+        {
+          "id": 4,
+          "text": "paie",
+          "start": 0.92,
+          "end": 1.178
+        },
+        {
+          "id": 5,
+          "text": "sept",
+          "start": 1.233,
+          "end": 1.49
+        },
+        {
+          "id": 6,
+          "text": "abonnements.",
+          "start": 1.545,
+          "end": 2.318
+        },
+        {
+          "id": 7,
+          "text": "Mon",
+          "start": 2.373,
+          "end": 2.567
+        },
+        {
+          "id": 8,
+          "text": "équipe",
+          "start": 2.622,
+          "end": 3.008
+        },
+        {
+          "id": 9,
+          "text": "en",
+          "start": 3.063,
+          "end": 3.192
+        },
+        {
+          "id": 10,
+          "text": "utilise",
+          "start": 3.247,
+          "end": 3.698
+        },
+        {
+          "id": 11,
+          "text": "deux.",
+          "start": 3.753,
+          "end": 4.075
+        }
+      ]
+    },
+    {
+      "frame": 7,
+      "path": "assets/audio/vo-07.mp3",
+      "duration_s": 10.919,
+      "words": [
+        {
+          "id": 0,
+          "text": "Le",
+          "start": 0.12,
+          "end": 0.234
+        },
+        {
+          "id": 1,
+          "text": "vrai",
+          "start": 0.289,
+          "end": 0.517
+        },
+        {
+          "id": 2,
+          "text": "chiffre",
+          "start": 0.572,
+          "end": 0.97
+        },
+        {
+          "id": 3,
+          "text": "du",
+          "start": 1.025,
+          "end": 1.139
+        },
+        {
+          "id": 4,
+          "text": "mois",
+          "start": 1.194,
+          "end": 1.422
+        },
+        {
+          "id": 5,
+          "text": "?",
+          "start": 1.477,
+          "end": 1.534
+        },
+        {
+          "id": 6,
+          "text": "Je",
+          "start": 1.589,
+          "end": 1.703
+        },
+        {
+          "id": 7,
+          "text": "ne",
+          "start": 1.758,
+          "end": 1.872
+        },
+        {
+          "id": 8,
+          "text": "le",
+          "start": 1.927,
+          "end": 2.041
+        },
+        {
+          "id": 9,
+          "text": "saurai",
+          "start": 2.096,
+          "end": 2.438
+        },
+        {
+          "id": 10,
+          "text": "que",
+          "start": 2.493,
+          "end": 2.664
+        },
+        {
+          "id": 11,
+          "text": "dans",
+          "start": 2.719,
+          "end": 2.946
+        },
+        {
+          "id": 12,
+          "text": "six",
+          "start": 3.001,
+          "end": 3.172
+        },
+        {
+          "id": 13,
+          "text": "semaines.",
+          "start": 3.227,
+          "end": 3.74
+        },
+        {
+          "id": 14,
+          "text": "Le",
+          "start": 3.795,
+          "end": 3.909
+        },
+        {
+          "id": 15,
+          "text": "temps",
+          "start": 3.964,
+          "end": 4.249
+        },
+        {
+          "id": 16,
+          "text": "que",
+          "start": 4.304,
+          "end": 4.475
+        },
+        {
+          "id": 17,
+          "text": "quelqu'un,",
+          "start": 4.53,
+          "end": 5.099
+        },
+        {
+          "id": 18,
+          "text": "quelque",
+          "start": 5.154,
+          "end": 5.553
+        },
+        {
+          "id": 19,
+          "text": "part,",
+          "start": 5.608,
+          "end": 5.893
+        },
+        {
+          "id": 20,
+          "text": "recopie",
+          "start": 5.948,
+          "end": 6.346
+        },
+        {
+          "id": 21,
+          "text": "tout",
+          "start": 6.401,
+          "end": 6.629
+        },
+        {
+          "id": 22,
+          "text": "ça",
+          "start": 6.684,
+          "end": 6.798
+        },
+        {
+          "id": 23,
+          "text": "à",
+          "start": 6.853,
+          "end": 6.91
+        },
+        {
+          "id": 24,
+          "text": "la",
+          "start": 6.965,
+          "end": 7.079
+        },
+        {
+          "id": 25,
+          "text": "main.",
+          "start": 7.134,
+          "end": 7.419
+        }
+      ]
+    }
+  ],
+  "sfx": []
+}
