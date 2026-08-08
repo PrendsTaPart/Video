@@ -120,6 +120,16 @@ class Serie:
     SALLE = "#F59E0B"
     DIRECTION = "#475569"
 
+    # L'ouverture de série précède toutes les scènes du film. Comme la fenêtre
+    # d'un clip se lit en temps ABSOLU (piège 3 ci-dessus), une scène qui
+    # commence 4,20 s plus tard doit déclarer 4,20 s de plus — sinon elle
+    # s'éteint exactement à la fin de l'ouverture décalée.
+    #
+    # C'est l'erreur qui a éteint TOUS les plans des neuf films quand
+    # l'habillage a été posé : les data-start de l'orchestrateur avaient bien
+    # été décalés, les durées déclarées à l'intérieur des scènes non.
+    DECALAGE_HABILLAGE = 4.20
+
     def __init__(self, metier, sous):
         self.metier = metier
         self.sous = sous  # "c1", "c2", … : sous-dossier des médias et des HTML
@@ -328,7 +338,7 @@ class Serie:
             + _VEILLE_HTML
             + f'          <video id="{vid_id}" src="assets/screens/{self.sous}/{reel}.mp4"'
             f' muted playsinline class="clip" data-start="0"'
-            f' data-duration="{float(abs_debut) + float(dur):.2f}"'
+            f' data-duration="{float(abs_debut) + self.DECALAGE_HABILLAGE + float(dur):.2f}"'
             ' data-track-index="2"></video>\n'
             + "        </div>\n"
             + f'        <div class="checks">\n{chips}        </div>\n'
@@ -355,7 +365,7 @@ class Serie:
             _BG_HTML
             + f'        <video class="amb clip" id="{vid_id}" src="assets/plates/{self.sous}/{plate}.mp4"'
             f' muted playsinline data-start="0"'
-            f' data-duration="{float(abs_debut) + float(dur):.2f}"'
+            f' data-duration="{float(abs_debut) + self.DECALAGE_HABILLAGE + float(dur):.2f}"'
             ' data-track-index="2"></video>\n'
             + f'        <div class="title" id="title">{title}</div>\n'
             + f'        <div class="sub" id="sub">{sub}</div>\n'
