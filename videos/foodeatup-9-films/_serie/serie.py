@@ -251,6 +251,26 @@ class Serie:
                      text-align:center; background:{ORANGE}; color:{INK}; border-radius:999px;
                      padding:18px 0; font-family:"Fredoka",sans-serif; font-weight:700;
                      font-size:40px; opacity:0; box-shadow:0 12px 30px rgba(255,165,0,.3); }}
+        /* --- Habillages de série : ouverture et clôture ------------------- */
+        .hab-logo {{ position:absolute; left:50%; margin-left:-330px; top:290px; width:660px; opacity:0; }}
+        .hab-hook {{ position:absolute; left:120px; right:120px; top:520px; text-align:center;
+                     font-family:"Fredoka",sans-serif; font-weight:700; font-size:62px;
+                     color:{INK}; opacity:0; line-height:1.25; }}
+        .hab-metier {{ position:absolute; left:0; right:0; top:700px; text-align:center;
+                       font-family:"Fredoka",sans-serif; font-weight:600; font-size:40px;
+                       color:{INK_SOFT}; opacity:0; }}
+        .hab-lisere {{ position:absolute; left:50%; margin-left:-90px; top:790px;
+                       width:180px; height:6px; border-radius:3px; background:{self.metier};
+                       transform-origin:center; transform:scaleX(0); }}
+        /* Clôture : la marque à gauche, Michael à droite. */
+        .fin-logo {{ position:absolute; left:150px; top:250px; width:560px; opacity:0; }}
+        .fin-nom {{ position:absolute; left:150px; top:380px; width:700px;
+                    font-family:"Fredoka",sans-serif; font-weight:700; font-size:84px;
+                    color:{INK}; opacity:0; }}
+        .fin-baseline {{ position:absolute; left:150px; top:510px; width:760px;
+                         font-family:"Fredoka",sans-serif; font-weight:600; font-size:38px;
+                         color:{INK_SOFT}; opacity:0; line-height:1.35; }}
+        .fin-photo {{ position:absolute; right:140px; bottom:0; height:980px; opacity:0; }}
         .amb {{ position:absolute; inset:0; width:100%; height:100%; object-fit:cover; opacity:0; }}
         .title {{ position:absolute; left:0; right:0; bottom:132px; text-align:center;
                   font-family:"Fredoka",sans-serif; font-weight:700; font-size:76px; color:{CREAM};
@@ -502,6 +522,61 @@ class Serie:
         js += ('        tl.fromTo("#mdEcart", { opacity:0, scale:.75 },'
                ' { opacity:1, scale:1, duration:.4, ease:"back.out(2)" }, 2.1);\n')
         return self.motion(cid, abs_debut, dur, clock, eyebrow, html, js, checks)
+
+
+    # ── habillages de série ──────────────────────────────────────────────
+    #
+    # Michael, 2026-08-08 : chaque film porte le logo à l'ouverture et à la
+    # clôture, une accroche qui annonce la phase et le métier, et se termine
+    # sur la signature de la marque avec sa photo.
+    #
+    # Ce sont des scènes comme les autres : elles entrent dans le pavage de la
+    # ligne de temps et décalent la voix off d'autant. Le décalage est calculé
+    # par le film, pas deviné ici.
+
+    PHASES = {
+        "avant": "Une journée AVANT le service",
+        "pendant": "Une journée PENDANT le service",
+        "apres": "Une journée APRÈS le service",
+    }
+    LIEUX = {"#059669": "en cuisine", "#F59E0B": "en salle", "#475569": "au bureau"}
+
+    def intro(self, cid, abs_debut, dur, phase):
+        """Ouverture : le logo, puis l'accroche de la phase et le lieu."""
+        body = (
+            _BG_HTML
+            + '        <img class="hab-logo" id="habLogo" src="assets/brand/serie/logo-mascot.png" alt="" />\n'
+            + f'        <div class="hab-hook" id="habHook">{self.PHASES[phase]}<br />avec FoodEatUp</div>\n'
+            + f'        <div class="hab-metier" id="habMetier">{self.LIEUX[self.metier]}</div>\n'
+            + '        <div class="hab-lisere" id="habLisere"></div>\n'
+        )
+        js = (
+            self._bg_js(dur)
+            + '        tl.fromTo("#habLogo", { opacity:0, y:24, scale:.94 }, { opacity:1, y:0, scale:1, duration:.5, ease:"back.out(1.5)" }, .15);\n'
+            + '        tl.fromTo("#habHook", { opacity:0, y:20 }, { opacity:1, y:0, duration:.45, ease:"power2.out" }, .75);\n'
+            + '        tl.fromTo("#habMetier", { opacity:0 }, { opacity:1, duration:.35 }, 1.15);\n'
+            + '        tl.fromTo("#habLisere", { scaleX:0 }, { scaleX:1, duration:.4, ease:"power2.out" }, 1.35);\n'
+        )
+        return _TEMPLATE.format(style=self.style, cid=cid, dur=dur, body=body, js=js)
+
+    def outro(self, cid, abs_debut, dur):
+        """Clôture : la signature de la marque, et Michael."""
+        body = (
+            _BG_HTML
+            + '        <img class="fin-photo" id="finPhoto" src="assets/brand/serie/michael-chef-cadre.jpg" alt="" />\n'
+            + '        <img class="fin-logo" id="finLogo" src="assets/brand/serie/logo-mascot.png" alt="" />\n'
+            + '        <div class="fin-nom" id="finNom">FoodEatUp</div>\n'
+            + '        <div class="fin-baseline" id="finBase">La solution qui s&rsquo;occupe de votre'
+              ' établissement<br />avant, pendant et après votre service</div>\n'
+        )
+        js = (
+            self._bg_js(dur)
+            + '        tl.fromTo("#finPhoto", { opacity:0, x:60 }, { opacity:1, x:0, duration:.7, ease:"power2.out" }, .1);\n'
+            + '        tl.fromTo("#finLogo", { opacity:0, y:18 }, { opacity:1, y:0, duration:.45, ease:"power2.out" }, .5);\n'
+            + '        tl.fromTo("#finNom", { opacity:0, y:18 }, { opacity:1, y:0, duration:.45, ease:"power2.out" }, .9);\n'
+            + '        tl.fromTo("#finBase", { opacity:0, y:14 }, { opacity:1, y:0, duration:.5, ease:"power2.out" }, 1.4);\n'
+        )
+        return _TEMPLATE.format(style=self.style, cid=cid, dur=dur, body=body, js=js)
 
     # ── écriture ─────────────────────────────────────────────────────────
     def ecrire(self, scenes):

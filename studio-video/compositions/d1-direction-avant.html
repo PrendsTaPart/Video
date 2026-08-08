@@ -18,13 +18,24 @@
     </style>
   </head>
   <body>
-    <div id="root" data-composition-id="d1-direction-avant" data-start="0"
-         data-width="1920" data-height="1080" data-duration="72.6">
+    <div id="root" data-composition-id="d1-direction-avant" data-start="4.20"
+         data-width="1920" data-height="1080" data-duration="83.3">
+      <div
+        id="el-d1-direction-avant-intro"
+        data-composition-id="d1-direction-avant-intro"
+        data-composition-src="compositions/d1/d1-direction-avant-intro.html"
+        data-start="0.00"
+        data-duration="4.20"
+        data-track-index="1"
+        data-width="1920"
+        data-height="1080"
+      ></div>
+
       <div
         id="el-d1-s1-huit-heures"
         data-composition-id="d1-s1-huit-heures"
         data-composition-src="compositions/d1/d1-s1-huit-heures.html"
-        data-start="0.00"
+        data-start="4.20"
         data-duration="7.67"
         data-track-index="1"
         data-width="1920"
@@ -34,7 +45,7 @@
         id="el-d1-s2-previsions"
         data-composition-id="d1-s2-previsions"
         data-composition-src="compositions/d1/d1-s2-previsions.html"
-        data-start="7.67"
+        data-start="11.87"
         data-duration="11.84"
         data-track-index="1"
         data-width="1920"
@@ -44,7 +55,7 @@
         id="el-d1-s3-courses"
         data-composition-id="d1-s3-courses"
         data-composition-src="compositions/d1/d1-s3-courses.html"
-        data-start="19.51"
+        data-start="23.71"
         data-duration="7.90"
         data-track-index="1"
         data-width="1920"
@@ -54,7 +65,7 @@
         id="el-d1-s4-fournisseurs"
         data-composition-id="d1-s4-fournisseurs"
         data-composition-src="compositions/d1/d1-s4-fournisseurs.html"
-        data-start="27.41"
+        data-start="31.61"
         data-duration="7.86"
         data-track-index="1"
         data-width="1920"
@@ -64,7 +75,7 @@
         id="el-d1-s5-factures"
         data-composition-id="d1-s5-factures"
         data-composition-src="compositions/d1/d1-s5-factures.html"
-        data-start="35.27"
+        data-start="39.47"
         data-duration="7.48"
         data-track-index="1"
         data-width="1920"
@@ -74,7 +85,7 @@
         id="el-d1-s6-equipe"
         data-composition-id="d1-s6-equipe"
         data-composition-src="compositions/d1/d1-s6-equipe.html"
-        data-start="42.75"
+        data-start="46.95"
         data-duration="8.20"
         data-track-index="1"
         data-width="1920"
@@ -84,7 +95,7 @@
         id="el-d1-s7-conge"
         data-composition-id="d1-s7-conge"
         data-composition-src="compositions/d1/d1-s7-conge.html"
-        data-start="50.95"
+        data-start="55.15"
         data-duration="4.76"
         data-track-index="1"
         data-width="1920"
@@ -94,7 +105,7 @@
         id="el-d1-s8-pointages"
         data-composition-id="d1-s8-pointages"
         data-composition-src="compositions/d1/d1-s8-pointages.html"
-        data-start="55.71"
+        data-start="59.91"
         data-duration="7.56"
         data-track-index="1"
         data-width="1920"
@@ -104,47 +115,58 @@
         id="el-d1-s9-onze-heures"
         data-composition-id="d1-s9-onze-heures"
         data-composition-src="compositions/d1/d1-s9-onze-heures.html"
-        data-start="63.27"
+        data-start="67.47"
         data-duration="9.33"
         data-track-index="1"
         data-width="1920"
         data-height="1080"
       ></div>
 
+      <div
+        id="el-d1-direction-avant-outro"
+        data-composition-id="d1-direction-avant-outro"
+        data-composition-src="compositions/d1/d1-direction-avant-outro.html"
+        data-start="76.80"
+        data-duration="6.50"
+        data-track-index="1"
+        data-width="1920"
+        data-height="1080"
+      ></div>
+
       <!-- Voix off continue — survit à chaque coupe. -->
-      <audio id="el-vo" src="assets/audio/d1-direction-avant-vo.mp3" data-start="0"
+      <audio id="el-vo" src="assets/audio/d1-direction-avant-vo.mp3" data-start="4.20"
              data-duration="67.68" data-track-index="10" data-volume="1"></audio>
 
       <!-- Musique : ré mineur, 90 BPM montant — registre « avant ». -->
-      <audio id="sfx-music" src="assets/audio/d1/music.mp3" data-start="0.00" data-duration="72.60" data-track-index="11" data-volume="0.5"></audio>
+      <audio id="sfx-music" src="assets/audio/d1/music.mp3" data-start="4.20" data-duration="72.60" data-track-index="11" data-volume="0.5"></audio>
 
       <!-- Le bureau, seul lieu du film : le directeur ne bouge pas. -->
-      <audio id="sfx-bureau-1" src="assets/audio/d1/bureau.mp3" data-start="0.00" data-duration="22.00" data-track-index="12" data-volume="0.5"></audio>
-      <audio id="sfx-bureau-2" src="assets/audio/d1/bureau.mp3" data-start="50.60" data-duration="22.00" data-track-index="12" data-volume="0.44"></audio>
+      <audio id="sfx-bureau-1" src="assets/audio/d1/bureau.mp3" data-start="4.20" data-duration="22.00" data-track-index="12" data-volume="0.5"></audio>
+      <audio id="sfx-bureau-2" src="assets/audio/d1/bureau.mp3" data-start="54.80" data-duration="22.00" data-track-index="12" data-volume="0.44"></audio>
 
       <!-- L'envoi des commandes aux fournisseurs (27,41 s). -->
-      <audio id="sfx-envoi" src="assets/audio/d1/envoi.mp3" data-start="28.60" data-duration="1.03" data-track-index="13" data-volume="0.36"></audio>
+      <audio id="sfx-envoi" src="assets/audio/d1/envoi.mp3" data-start="32.80" data-duration="1.03" data-track-index="13" data-volume="0.36"></audio>
 
       <!-- Un tic par coche, deux pistes en alternance. -->
-      <audio id="sfx-tick-01" src="assets/audio/d1/tick.mp3" data-start="9.42" data-duration="0.29" data-track-index="14" data-volume="0.32"></audio>
-      <audio id="sfx-tick-02" src="assets/audio/d1/tick.mp3" data-start="9.70" data-duration="0.29" data-track-index="15" data-volume="0.32"></audio>
-      <audio id="sfx-tick-03" src="assets/audio/d1/tick.mp3" data-start="9.98" data-duration="0.29" data-track-index="14" data-volume="0.32"></audio>
-      <audio id="sfx-tick-04" src="assets/audio/d1/tick.mp3" data-start="21.26" data-duration="0.29" data-track-index="14" data-volume="0.32"></audio>
-      <audio id="sfx-tick-05" src="assets/audio/d1/tick.mp3" data-start="21.54" data-duration="0.29" data-track-index="15" data-volume="0.32"></audio>
-      <audio id="sfx-tick-06" src="assets/audio/d1/tick.mp3" data-start="21.82" data-duration="0.29" data-track-index="14" data-volume="0.32"></audio>
-      <audio id="sfx-tick-07" src="assets/audio/d1/tick.mp3" data-start="29.16" data-duration="0.29" data-track-index="14" data-volume="0.32"></audio>
-      <audio id="sfx-tick-08" src="assets/audio/d1/tick.mp3" data-start="29.44" data-duration="0.29" data-track-index="15" data-volume="0.32"></audio>
-      <audio id="sfx-tick-09" src="assets/audio/d1/tick.mp3" data-start="29.72" data-duration="0.29" data-track-index="14" data-volume="0.32"></audio>
-      <audio id="sfx-tick-10" src="assets/audio/d1/tick.mp3" data-start="37.02" data-duration="0.29" data-track-index="14" data-volume="0.32"></audio>
-      <audio id="sfx-tick-11" src="assets/audio/d1/tick.mp3" data-start="37.30" data-duration="0.29" data-track-index="15" data-volume="0.32"></audio>
-      <audio id="sfx-tick-12" src="assets/audio/d1/tick.mp3" data-start="37.58" data-duration="0.29" data-track-index="14" data-volume="0.32"></audio>
-      <audio id="sfx-tick-13" src="assets/audio/d1/tick.mp3" data-start="44.50" data-duration="0.29" data-track-index="14" data-volume="0.32"></audio>
-      <audio id="sfx-tick-14" src="assets/audio/d1/tick.mp3" data-start="44.78" data-duration="0.29" data-track-index="15" data-volume="0.32"></audio>
-      <audio id="sfx-tick-15" src="assets/audio/d1/tick.mp3" data-start="45.06" data-duration="0.29" data-track-index="14" data-volume="0.32"></audio>
-      <audio id="sfx-tick-16" src="assets/audio/d1/tick.mp3" data-start="52.70" data-duration="0.29" data-track-index="14" data-volume="0.32"></audio>
-      <audio id="sfx-tick-17" src="assets/audio/d1/tick.mp3" data-start="52.98" data-duration="0.29" data-track-index="15" data-volume="0.32"></audio>
-      <audio id="sfx-tick-18" src="assets/audio/d1/tick.mp3" data-start="57.46" data-duration="0.29" data-track-index="14" data-volume="0.32"></audio>
-      <audio id="sfx-tick-19" src="assets/audio/d1/tick.mp3" data-start="57.74" data-duration="0.29" data-track-index="15" data-volume="0.32"></audio>
+      <audio id="sfx-tick-01" src="assets/audio/d1/tick.mp3" data-start="13.62" data-duration="0.29" data-track-index="14" data-volume="0.32"></audio>
+      <audio id="sfx-tick-02" src="assets/audio/d1/tick.mp3" data-start="13.90" data-duration="0.29" data-track-index="15" data-volume="0.32"></audio>
+      <audio id="sfx-tick-03" src="assets/audio/d1/tick.mp3" data-start="14.18" data-duration="0.29" data-track-index="14" data-volume="0.32"></audio>
+      <audio id="sfx-tick-04" src="assets/audio/d1/tick.mp3" data-start="25.46" data-duration="0.29" data-track-index="14" data-volume="0.32"></audio>
+      <audio id="sfx-tick-05" src="assets/audio/d1/tick.mp3" data-start="25.74" data-duration="0.29" data-track-index="15" data-volume="0.32"></audio>
+      <audio id="sfx-tick-06" src="assets/audio/d1/tick.mp3" data-start="26.02" data-duration="0.29" data-track-index="14" data-volume="0.32"></audio>
+      <audio id="sfx-tick-07" src="assets/audio/d1/tick.mp3" data-start="33.36" data-duration="0.29" data-track-index="14" data-volume="0.32"></audio>
+      <audio id="sfx-tick-08" src="assets/audio/d1/tick.mp3" data-start="33.64" data-duration="0.29" data-track-index="15" data-volume="0.32"></audio>
+      <audio id="sfx-tick-09" src="assets/audio/d1/tick.mp3" data-start="33.92" data-duration="0.29" data-track-index="14" data-volume="0.32"></audio>
+      <audio id="sfx-tick-10" src="assets/audio/d1/tick.mp3" data-start="41.22" data-duration="0.29" data-track-index="14" data-volume="0.32"></audio>
+      <audio id="sfx-tick-11" src="assets/audio/d1/tick.mp3" data-start="41.50" data-duration="0.29" data-track-index="15" data-volume="0.32"></audio>
+      <audio id="sfx-tick-12" src="assets/audio/d1/tick.mp3" data-start="41.78" data-duration="0.29" data-track-index="14" data-volume="0.32"></audio>
+      <audio id="sfx-tick-13" src="assets/audio/d1/tick.mp3" data-start="48.70" data-duration="0.29" data-track-index="14" data-volume="0.32"></audio>
+      <audio id="sfx-tick-14" src="assets/audio/d1/tick.mp3" data-start="48.98" data-duration="0.29" data-track-index="15" data-volume="0.32"></audio>
+      <audio id="sfx-tick-15" src="assets/audio/d1/tick.mp3" data-start="49.26" data-duration="0.29" data-track-index="14" data-volume="0.32"></audio>
+      <audio id="sfx-tick-16" src="assets/audio/d1/tick.mp3" data-start="56.90" data-duration="0.29" data-track-index="14" data-volume="0.32"></audio>
+      <audio id="sfx-tick-17" src="assets/audio/d1/tick.mp3" data-start="57.18" data-duration="0.29" data-track-index="15" data-volume="0.32"></audio>
+      <audio id="sfx-tick-18" src="assets/audio/d1/tick.mp3" data-start="61.66" data-duration="0.29" data-track-index="14" data-volume="0.32"></audio>
+      <audio id="sfx-tick-19" src="assets/audio/d1/tick.mp3" data-start="61.94" data-duration="0.29" data-track-index="15" data-volume="0.32"></audio>
     </div>
 
     <script>

@@ -14,3 +14,9 @@ videos/rapidorh-presentation-4min/
 videos/rapidocms-presentation-4min/assets/avatar/
 # Per-project scratch (frames, segments, silent renders)
 videos/**/work/
+# Dossiers de travail des rendus HyperFrames : intermédiaires volumineux,
+# recréés à chaque rendu. La règle est ici plutôt que dans un .gitignore par
+# film — sur sept films, en oublier un suffit à commiter des milliers de PNG.
+videos/**/out/work-*/
+videos/**/out/*hf-transaction*/
+videos/**/out/qa/
