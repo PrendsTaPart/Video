@@ -7,17 +7,19 @@ le pipeline réel de ce dépôt est HyperFrames/GSAP, voir `studio-video/CLAUDE.
 
 | Élément | État |
 |---|---|
-| Timeline (`data/hero.json`) | ✅ Complète, 8 séquences, ~30 beats, source de vérité unique |
-| Composition (`index.html` + `hero-build.js`) | ✅ Construite dynamiquement depuis `hero.json`, validée (`npx hyperframes validate` → 0 erreur) |
+| Timeline (`data/hero.json`) | ✅ Complète, 8 séquences, une narratrice en fil conducteur au début de chaque séquence, source de vérité unique |
+| Composition (`index.html` + `hero-build.js`) | ✅ Aucun texte brûlé à l'écran (ni sous-titres, ni tags locuteur, ni carton de titre, ni labels sur les motion graphics) — le film se regarde avec le son ; transition motion design générique (fade + scale-in) sur chaque coupe de plan |
 | Balayage bleu / repli gris | ✅ Implémenté (`--wipe-progress` piloté par un seul tween GSAP, ligne + désaturation) |
-| Personnages (chef, serveur, directeur) | ✅ Générés (Higgsfield, character sheets + Reference Elements pour la cohérence "sans"/"avec") |
+| Personnages (chef, serveur, directeur) | ✅ Générés (Higgsfield, character sheets + Reference Elements pour la cohérence "sans"/"avec"). **Règle du dépôt (`CLAUDE.md`) : ne plus générer de nouveaux plans via Higgsfield — réutiliser la bibliothèque existante ou fournir le prompt.** |
 | 17 plans vidéo | ✅ Générés (Higgsfield / Seedance 2.0), `assets/video/` |
 | 10 images d'ambiance (HERO-01→10) | ✅ Générées (Higgsfield / Nano Banana Pro), `assets/image/ambiance/` |
-| 4 voix (chef, serveur, directeur, narratrice) + commis | ✅ Générées (ElevenLabs TTS), `assets/voice/` — chaque personnage a une voix ElevenLabs fixe, cohérente entre ses répliques "sans" et "avec" |
+| Icônes des motion graphics (convergence multicanal, cascade Iris, CTA) | ✅ Générées sans texte (RapidoCMS), `assets/image/icons/` — remplacent les anciens labels HTML |
+| Voix (chef, serveur, directeur, narratrice) | ✅ Régénérées via ElevenLabs TTS avec des réglages plus réalistes (stability/style ajustés par registre "sans"/"avec"), `assets/voice/`. La réplique en espagnol du commis a été supprimée (plus aucune voix étrangère). |
 | Cloche du passe ("clin") | ⚠️ **Placeholder IA** (ElevenLabs Sound Effects), PAS un vrai enregistrement. Voir `data/hero.json → clin.statusNote`. |
 | Lexique SFX (scanner, imprimante, Jarvis, Iris...) | ⚠️ **Placeholder IA**, `assets/sfx/` — sons plausibles mais génériques, pas les vrais bips/mécaniques FoodEatUp |
 | Musique (sans désaccordée / avec résolue) | ⚠️ **Placeholder IA** (ElevenLabs Music), `assets/music/` — à recomposer avec un vrai compositeur pour la sortie finale |
-| Rendu final (mp4) | ❌ Pas rendu dans cette session : **ffmpeg indisponible** dans cet environnement. À rendre depuis `studio-video`'s environnement (qui a ffmpeg + Chrome headless opérationnels, voir son `CLAUDE.md`) |
+| Rendu final (mp4) | ✅ `renders/hero-video_2026-08-08_18-58-37.mp4` — 3'45, vidéo + audio confirmés (ffprobe), + `renders/hero-video-compressed.mp4` (720p, ~19 Mo) et `renders/hero-video-poster.jpg` |
+| Sous-titres (`.vtt`) | ✅ Régénérés depuis `hero.json` (`npm run build:vtt`) — inclut désormais les répliques de la narratrice ; sert l'accessibilité/SEO, jamais affiché à l'écran |
 | 14 séquences d'écran extraites des tutoriels | ❌ Non faites — le fichier catalogue avec les URLs S3 exactes (mentionné dans le brief) n'est pas dans ce dépôt. Nécessaire : le déposer dans `rapido-kb/` ou fournir les URLs. |
 | Portraits/plans identiques day-of (cohérence lumière) | ⚠️ Générés par IA, donc cohérents par construction — mais ne remplacent pas un vrai tournage si l'objectif final reste un film 100% réel |
 
@@ -54,9 +56,11 @@ fichiers dans `assets/` sans toucher à `hero.json` ni à la composition.
 ## Commandes
 
 ```bash
-npm run check          # lint + validate (fonctionne dans cet environnement)
-node scripts/qa-hero.mjs   # QA mécanique (clin ×3, S4 intouchée, symétrie Jarvis, assets présents...)
-npm run render:hero    # nécessite ffmpeg — à lancer depuis un environnement qui l'a
+npm run build           # bake data/hero.json -> markup statique dans index.html
+npm run build:vtt       # régénère renders/hero-video.vtt depuis data/hero.json
+npm run check            # lint + validate
+node scripts/qa-hero.mjs   # QA mécanique (clin ×3, S4 intouchée, pas de commis, assets présents...)
+npm run render:hero      # rend le film (npx hyperframes render), nécessite ffmpeg
 ```
 
 ## Notes techniques

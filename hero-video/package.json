@@ -4,6 +4,7 @@
   "type": "module",
   "scripts": {
     "build": "node scripts/build-static.mjs",
+    "build:vtt": "node scripts/build-vtt.mjs",
     "dev": "npx hyperframes preview",
     "check": "npx hyperframes lint && npx hyperframes validate && npx hyperframes inspect",
     "render:hero": "npx hyperframes render",

@@ -51,55 +51,35 @@
   /* Grey snap (avec -> sans): a hard, sourceless flash line, no glow, no easing */
   .snap-sweep .line { box-shadow: none; background: var(--sans-grey); width: 4px; }
 
-  .subtitle {
-    z-index: 60;
-    display: flex; align-items: flex-end; justify-content: center;
-    padding-bottom: 64px;
-  }
-  .subtitle span {
-    font-weight: 700; font-size: 44px; line-height: 1.25; color: #fff;
-    text-align: center; max-width: 1400px;
-    -webkit-text-stroke: 3px var(--avec-navy);
-    paint-order: stroke fill;
-  }
-  .seq-sans .subtitle span { -webkit-text-stroke: 3px var(--sans-dark-grey); opacity: 0.92; }
-
-  .speaker-tag {
-    position: absolute; top: 48px; left: 64px; z-index: 60;
-    font-weight: 700; font-size: 22px; letter-spacing: 0.08em; text-transform: uppercase;
-    color: rgba(255,255,255,0.75);
-  }
-
-  .card {
-    position: absolute; inset: 0; display: flex; flex-direction: column;
-    align-items: center; justify-content: center; text-align: center;
-    background: var(--avec-navy); color: #fff;
-  }
-  .card.opening { background: var(--avec-navy); }
-  .card h1 { font-size: 64px; font-weight: 800; line-height: 1.3; margin: 0; white-space: pre-line; }
+  /* No burned-in text anywhere in the composition: no subtitles, no speaker
+     tags, no title card, no on-screen labels. The film plays with sound;
+     the .vtt track (generated separately from hero.json) carries the same
+     words for accessibility without cluttering the frame. */
 
   .black-frame { position: absolute; inset: 0; background: #000; z-index: 80; }
 
-  /* Beat A — convergence multi-canal (motion graphic) */
+  /* Beat A — convergence multi-canal (motion graphic, wordless: icons only) */
   .converge-stage { position: absolute; inset: 0; background: var(--avec-navy); }
   .converge-node {
-    position: absolute; width: 220px; height: 90px; border-radius: 14px;
+    position: absolute; width: 120px; height: 120px; border-radius: 24px;
     background: rgba(255,255,255,0.08); border: 2px solid var(--avec-blue);
-    color: #fff; display: flex; align-items: center; justify-content: center;
-    font-weight: 700; font-size: 26px;
+    display: flex; align-items: center; justify-content: center; overflow: hidden;
   }
-  .converge-node[data-corner="tl"] { top: 8%; left: 8%; }
-  .converge-node[data-corner="tr"] { top: 8%; right: 8%; }
-  .converge-node[data-corner="bl"] { bottom: 8%; left: 8%; }
-  .converge-node[data-corner="br"] { bottom: 8%; right: 8%; }
-  .converge-line {
-    position: absolute; left: 50%; top: 50%; width: 640px; height: 90px;
-    margin-left: -320px; margin-top: -45px; border-radius: 14px;
-    background: var(--avec-blue); color: #fff; display: flex; align-items: center; justify-content: center;
-    font-weight: 800; font-size: 30px; opacity: 0; transform: scale(0.6);
+  .converge-node img { width: 60%; height: 60%; object-fit: contain; }
+  .converge-node[data-corner="tl"] { top: 10%; left: 10%; }
+  .converge-node[data-corner="tr"] { top: 10%; right: 10%; }
+  .converge-node[data-corner="bl"] { bottom: 10%; left: 10%; }
+  .converge-node[data-corner="br"] { bottom: 10%; right: 10%; }
+  .converge-target {
+    position: absolute; left: 50%; top: 50%; width: 180px; height: 180px;
+    margin-left: -90px; margin-top: -90px; border-radius: 50%;
+    background: var(--avec-blue); display: flex; align-items: center; justify-content: center;
+    opacity: 0; transform: scale(0.6);
+    box-shadow: 0 0 80px 20px rgba(30,155,240,0.45);
   }
+  .converge-target img { width: 55%; height: 55%; object-fit: contain; filter: brightness(0) invert(1); }
 
-  /* Beat D — cascade de notifications (motion graphic) */
+  /* Beat D — cascade de notifications (motion graphic, wordless: icon badge only) */
   .iris-stage { position: absolute; inset: 0; background: var(--avec-offwhite); }
   .iris-device {
     position: absolute; width: 260px; height: 160px; border-radius: 18px;
@@ -107,9 +87,11 @@
     display: flex; align-items: center; justify-content: center; padding: 16px; box-sizing: border-box;
   }
   .iris-device .toast {
-    background: var(--avec-orange); color: var(--avec-navy); font-weight: 800; font-size: 20px;
-    border-radius: 10px; padding: 10px 14px; opacity: 0; transform: translateY(14px);
+    width: 56px; height: 56px; border-radius: 50%;
+    background: var(--avec-orange); display: flex; align-items: center; justify-content: center;
+    opacity: 0; transform: translateY(14px) scale(0.7); overflow: hidden;
   }
+  .iris-device .toast img { width: 62%; height: 62%; object-fit: contain; filter: brightness(0) invert(1); }
   .iris-device[data-slot="1"] { top: 18%; left: 12%; }
   .iris-device[data-slot="2"] { top: 40%; left: 42%; }
   .iris-device[data-slot="3"] { top: 62%; left: 66%; }
@@ -119,10 +101,10 @@
   .triptych .panel video { width: 100%; height: 100%; object-fit: cover; }
   .triptych .panel::after { content: ""; position: absolute; inset: 0; border-right: 2px solid rgba(255,255,255,0.15); }
 
-  .cta-card { position: absolute; inset: 0; background: var(--avec-navy); display: flex; flex-direction: column; align-items: center; justify-content: center; color: #fff; }
-  .cta-card img.logo { height: 180px; margin-bottom: 32px; }
-  .cta-card .slogan { font-size: 30px; font-weight: 600; opacity: 0.9; margin-bottom: 24px; }
-  .cta-card .cta { font-size: 28px; font-weight: 800; color: var(--avec-orange); }
+  /* Closing card: the logo mark only, no baked-in slogan/CTA text — the
+     narratrice speaks the tagline, the site's own CTA carries the click. */
+  .cta-card { position: absolute; inset: 0; background: var(--avec-navy); display: flex; align-items: center; justify-content: center; }
+  .cta-card img.logo { height: 220px; }
 </style>
 </head>
 <body>
@@ -138,12 +120,13 @@
     "sansToAvec": { "durationSeconds": 0.7, "easing": "cubic-bezier(0.65,0,0.35,1)", "atSeconds": [40, 100, 170] },
     "avecToSans": { "durationSeconds": 0.4, "easing": "none", "atSeconds": [75, 145] }
   },
+  "beatTransition": { "durationSeconds": 0.35, "easing": "power1.out", "scaleFrom": 0.98 },
   "clin": {
     "file": "assets/sfx/son-clin-passe-take1.mp3",
     "alternates": ["assets/sfx/son-clin-passe-take2.mp3", "assets/sfx/son-clin-passe-take3.mp3"],
     "status": "AI_GENERATED_PLACEHOLDER",
     "statusNote": "Généré par l'API Sound Effects ElevenLabs, PAS une vraie cloche de passe enregistrée en cuisine. Utilisable pour un premier montage/validation du rythme ; le brief demande explicitement un enregistrement réel pour la version finale (réverbération du vrai lieu, accordage sur la tonique de la musique).",
-    "atSeconds": [129, 198, 223.5],
+    "atSeconds": [125, 198, 220],
     "rule": "Doit sonner exactement 3 fois dans tout le film."
   },
   "musicBeds": {
@@ -154,7 +137,7 @@
   "sfxCues": [
     { "file": "assets/sfx/son-scanner-bip.mp3", "atSeconds": 60, "note": "Chef scanne le carton (S2)." },
     { "file": "assets/sfx/son-jarvis-ecoute.mp3", "atSeconds": 112, "note": "Jarvis écoute (beat B, chef)." },
-    { "file": "assets/sfx/son-jarvis-compris.mp3", "atSeconds": 122, "note": "Jarvis a compris (beat B, chef2)." },
+    { "file": "assets/sfx/son-jarvis-compris.mp3", "atSeconds": 119, "note": "Jarvis a compris (beat B, chef2)." },
     { "file": "assets/sfx/son-imprimante-z.mp3", "atSeconds": 172, "note": "Ticket Z (S6)." },
     { "file": "assets/sfx/son-iris-publie.mp3", "atSeconds": 141, "note": "Iris publie (beat D)." },
     { "file": "assets/sfx/son-validation-haccp.mp3", "atSeconds": 184, "note": "Photo IA nettoyage (S6)." }
@@ -171,17 +154,11 @@
         {
           "id": "s0-cuisine-vide",
           "fromSeconds": 0,
-          "durationSeconds": 9,
+          "durationSeconds": 15,
+          "speaker": "narratrice",
+          "vo": { "file": "assets/voice/n-intro.mp3", "text": "Karim. Léa. Marc. Le chef, la salle, la direction. Même restaurant, même journée — jouée deux fois." },
           "source": { "kind": "image", "key": "assets/image/ambiance/hero-01-cuisine-vide.png" },
-          "note": "Plan fixe cuisine vide, puis dédoublement gris/couleur à 9-12s (3s), la couleur disparaît."
-        },
-        {
-          "id": "s0-carton",
-          "fromSeconds": 12,
-          "durationSeconds": 3,
-          "source": { "kind": "motion", "key": "carton-texte" },
-          "text": "Un restaurant.\nUn jour.\nDeux fois.",
-          "sfx": ["note-piano-12s"]
+          "note": "Plan fixe cuisine vide, dédoublement gris/couleur à 9-12s puis retour au gris. Plus de carton texte : la narratrice pose le fil conducteur à l'oral."
         }
       ]
     },
@@ -194,9 +171,17 @@
       "music": "sans",
       "beats": [
         {
+          "id": "s1-narratrice",
+          "fromSeconds": 15,
+          "durationSeconds": 1.5,
+          "speaker": "narratrice",
+          "vo": { "file": "assets/voice/n-s1.mp3", "text": "Sept heures. Sans FoodEatUp." },
+          "source": { "kind": "footage", "key": "assets/video/hero-directeur-sept-onglets.mp4" }
+        },
+        {
           "id": "s1-directeur",
-          "fromSeconds": 16,
-          "durationSeconds": 12,
+          "fromSeconds": 16.5,
+          "durationSeconds": 11.5,
           "speaker": "directeur",
           "vo": { "file": "assets/voice/s1-directeur.mp3", "text": "Huit heures... J'ouvre mes sept onglets. Le stock ne sait pas ce que la caisse a vendu. Alors je fais le pont, à la main." },
           "source": { "kind": "footage", "key": "assets/video/hero-directeur-sept-onglets.mp4" },
@@ -232,9 +217,17 @@
       "music": "avec",
       "beats": [
         {
+          "id": "s2-narratrice",
+          "fromSeconds": 40,
+          "durationSeconds": 1.7,
+          "speaker": "narratrice",
+          "vo": { "file": "assets/voice/n-s2.mp3", "text": "La même heure. Avec FoodEatUp." },
+          "source": { "kind": "footage", "key": "assets/video/hero-directeur-bureau-matin.mp4" }
+        },
+        {
           "id": "s2-directeur",
-          "fromSeconds": 42,
-          "durationSeconds": 17,
+          "fromSeconds": 41.7,
+          "durationSeconds": 17.3,
           "speaker": "directeur",
           "vo": { "file": "assets/voice/s2-directeur.mp3", "text": "Huit heures... Je n'ouvre pas un tableur. J'ouvre ce que PrediBot a préparé cette nuit. Ce qu'on va vendre. Ce qu'il faut produire. Ce qu'il manque... Ma commande part chez mes fournisseurs. Je n'ai appelé personne." },
           "source": { "kind": "footage", "key": "assets/video/hero-directeur-bureau-matin.mp4" },
@@ -269,9 +262,17 @@
       "music": "sans",
       "beats": [
         {
+          "id": "s3-narratrice",
+          "fromSeconds": 75,
+          "durationSeconds": 1.7,
+          "speaker": "narratrice",
+          "vo": { "file": "assets/voice/n-s3.mp3", "text": "Midi. Le coup de feu. Sans FoodEatUp." },
+          "source": { "kind": "footage", "key": "assets/video/hero-serveur-trois-tablettes.mp4" }
+        },
+        {
           "id": "s3-serveur",
-          "fromSeconds": 77,
-          "durationSeconds": 7,
+          "fromSeconds": 76.7,
+          "durationSeconds": 7.3,
           "speaker": "serveur",
           "vo": { "file": "assets/voice/s3-serveur.mp3", "text": "Uber sur cette tablette. La livraison sur celle-là. La salle sur la troisième." },
           "source": { "kind": "footage", "key": "assets/video/hero-serveur-trois-tablettes.mp4" }
@@ -307,42 +308,42 @@
       "lockNote": "INTOUCHABLE. Si le film doit être raccourci, raccourcir S1/S3/S5 en priorité, jamais S4.",
       "beats": [
         {
-          "id": "s4-beatA-multicanal",
+          "id": "s4-narratrice",
           "fromSeconds": 100,
-          "durationSeconds": 12,
+          "durationSeconds": 1.8,
+          "speaker": "narratrice",
+          "vo": { "file": "assets/voice/n-s4.mp3", "text": "Le même service. Avec FoodEatUp." },
+          "source": { "kind": "motion", "key": "convergence-multicanal", "icons": ["assets/image/icons/icon-qr.jpg", "assets/image/icons/icon-web.jpg", "assets/image/icons/icon-phone.jpg", "assets/image/icons/icon-delivery.jpg"], "targetIcon": "assets/brand/foodeatup-mark-eight.png" },
+          "note": "La narratrice ouvre le beat A ; les icônes convergent silencieusement pendant qu'elle parle, avant l'entrée de la serveuse."
+        },
+        {
+          "id": "s4-beatA-multicanal",
+          "fromSeconds": 101.8,
+          "durationSeconds": 10.2,
           "speaker": "serveur",
           "vo": { "file": "assets/voice/s4a-serveur.mp3", "text": "Le QR de la table sept. Le site. L'agent vocal. La livraison... Tout arrive au même endroit." },
-          "source": { "kind": "motion", "key": "convergence-multicanal" },
+          "source": { "kind": "motion", "key": "convergence-multicanal", "icons": ["assets/image/icons/icon-qr.jpg", "assets/image/icons/icon-web.jpg", "assets/image/icons/icon-phone.jpg", "assets/image/icons/icon-delivery.jpg"], "targetIcon": "assets/brand/foodeatup-mark-eight.png" },
           "keyBeat": true,
-          "note": "Motion design HTML/CSS/GSAP : 4 sources aux coins convergent vers une file centrale, easing back.out(1.4), 900ms."
+          "note": "Motion design HTML/CSS/GSAP, wordless : 4 icônes RapidoCMS aux coins convergent vers le symbole FoodEatUp au centre, easing back.out(1.4), 900ms."
         },
         {
           "id": "s4-beatB-jarvis-chef1",
           "fromSeconds": 112,
-          "durationSeconds": 5,
+          "durationSeconds": 7,
           "speaker": "chef",
           "vo": { "file": "assets/voice/s4b-chef1.mp3", "text": "Je sors trois kilos de saumon." },
           "source": { "kind": "footage", "key": "assets/video/hero-brigade-deux-langues.mp4", "mediaStartSeconds": 0 },
           "keyBeat": true
         },
         {
-          "id": "s4-beatB-jarvis-commis",
-          "fromSeconds": 117,
-          "durationSeconds": 5,
-          "speaker": "commis",
-          "vo": { "file": "assets/voice/s4b-commis-es.mp3", "text": "Voy a sacar tres kilos de salmón.", "subtitleFr": "Je sors trois kilos de saumon." },
-          "source": { "kind": "footage", "key": "assets/video/hero-brigade-deux-langues.mp4", "mediaStartSeconds": 5 },
-          "keyBeat": true,
-          "note": "Traitement strictement symétrique au beat précédent : même cadrage, même durée, même style de sous-titre, aucun label de langue."
-        },
-        {
           "id": "s4-beatB-jarvis-chef2",
-          "fromSeconds": 122,
-          "durationSeconds": 3,
+          "fromSeconds": 119,
+          "durationSeconds": 6,
           "speaker": "chef",
-          "vo": { "file": "assets/voice/s4b-chef2.mp3", "text": "Jarvis comprend les deux... Mon stock aussi." },
-          "source": { "kind": "footage", "key": "assets/video/hero-brigade-deux-langues.mp4", "mediaStartSeconds": 10 },
-          "keyBeat": true
+          "vo": { "file": "assets/voice/s4b-chef2.mp3", "text": "Jarvis comprend, peu importe qui parle en cuisine... Mon stock aussi." },
+          "source": { "kind": "footage", "key": "assets/video/hero-brigade-deux-langues.mp4", "mediaStartSeconds": 7 },
+          "keyBeat": true,
+          "note": "Plus de second commis hispanophone doublé : le plan garde les deux cuisiniers à l'image (diversité montrée, pas doublée en VO étrangère), Jarvis est décrit plutôt que démontré en langue seconde."
         },
         {
           "id": "s4-beatC-envoi-chef",
@@ -351,7 +352,7 @@
           "speaker": "chef",
           "vo": { "file": "assets/voice/s4c-chef-platpret.mp3", "text": "Plat prêt." },
           "source": { "kind": "footage", "key": "assets/video/hero-kds-mural.mp4" },
-          "sfx": ["clin@129"],
+          "sfx": ["clin@125"],
           "keyBeat": true
         },
         {
@@ -369,9 +370,9 @@
           "durationSeconds": 11,
           "speaker": "directeur",
           "vo": { "file": "assets/voice/s4d-directeur.mp3", "text": "Trente kilos de saumon à écouler avant jeudi... Iris le voit aussi. À treize heures, mes clients savent qu'il y a du saumon ce soir... Le problème est devenu le plat du jour." },
-          "source": { "kind": "motion", "key": "notification-cascade-iris" },
+          "source": { "kind": "motion", "key": "notification-cascade-iris", "icon": "assets/image/icons/icon-notification.jpg" },
           "keyBeat": true,
-          "note": "Motion design : whoosh + trois notifications en cascade sur trois appareils, comme spécifié en §4.3. Aucun plan captation généré pour ce beat."
+          "note": "Motion design wordless : whoosh + trois pastilles de notification (icône RapidoCMS) en cascade sur trois appareils, plus de texte de toast."
         }
       ]
     },
@@ -384,9 +385,17 @@
       "music": "sans",
       "beats": [
         {
+          "id": "s5-narratrice",
+          "fromSeconds": 145,
+          "durationSeconds": 1.7,
+          "speaker": "narratrice",
+          "vo": { "file": "assets/voice/n-s5.mp3", "text": "Le soir. La fermeture. Sans FoodEatUp." },
+          "source": { "kind": "image", "key": "assets/image/ambiance/hero-09-caisse-fin-service.png" }
+        },
+        {
           "id": "s5-serveur",
-          "fromSeconds": 147,
-          "durationSeconds": 11,
+          "fromSeconds": 146.7,
+          "durationSeconds": 11.3,
           "speaker": "serveur",
           "vo": { "file": "assets/voice/s5-serveur.mp3", "text": "La caisse, je la compte... Je la recompte. L'écart, c'est trois euros quarante, ou trente-quatre. On saura demain." },
           "source": { "kind": "image", "key": "assets/image/ambiance/hero-09-caisse-fin-service.png" }
@@ -419,9 +428,17 @@
       "music": "resolution",
       "beats": [
         {
+          "id": "s6-narratrice",
+          "fromSeconds": 170,
+          "durationSeconds": 1.7,
+          "speaker": "narratrice",
+          "vo": { "file": "assets/voice/n-s6.mp3", "text": "La même fermeture. Avec FoodEatUp." },
+          "source": { "kind": "footage", "key": "assets/video/hero-caisse-ticket-z.mp4" }
+        },
+        {
           "id": "s6-serveur",
-          "fromSeconds": 172,
-          "durationSeconds": 12,
+          "fromSeconds": 171.7,
+          "durationSeconds": 12.3,
           "speaker": "serveur",
           "vo": { "file": "assets/voice/s6-serveur.mp3", "text": "Le Z... Un geste. L'écart est là, expliqué, archivé... Et les avis du jour ont déjà une réponse." },
           "source": { "kind": "footage", "key": "assets/video/hero-caisse-ticket-z.mp4" }
@@ -442,7 +459,6 @@
           "speaker": "directeur",
           "vo": { "file": "assets/voice/s6-directeur.mp3", "text": "Dix-huit heures... Je connais mon chiffre." },
           "source": { "kind": "footage", "key": "assets/video/hero-directeur-bureau-matin.mp4" },
-          "sfx": ["clin@198"],
           "keyBeat": true
         }
       ]
@@ -471,21 +487,20 @@
         {
           "id": "s7-narratrice",
           "fromSeconds": 206.5,
-          "durationSeconds": 4,
+          "durationSeconds": 6.5,
           "speaker": "narratrice",
-          "vo": { "file": "assets/voice/s7-narratrice.mp3", "text": "Ce n'est pas la même journée... C'est le même restaurant." },
+          "vo": { "file": "assets/voice/s7-narratrice.mp3", "text": "Ce n'est pas la même journée... C'est le même restaurant. Une infinité de solutions pour gérer le vôtre." },
           "source": { "kind": "motion", "key": "trois-visages-silence" },
           "keyBeat": true,
-          "note": "Seule voix hors chef/serveur/directeur de tout le film."
+          "note": "Seule voix hors chef/serveur/directeur de tout le film. Porte aussi le slogan, à l'oral plutôt qu'en texte incrusté."
         },
         {
           "id": "s7-logo-cta",
-          "fromSeconds": 211,
-          "durationSeconds": 14,
+          "fromSeconds": 213,
+          "durationSeconds": 12,
           "source": { "kind": "motion", "key": "logo-cta", "logo": "assets/brand/foodeatup-logo-mascot.png" },
-          "text": "Une infinité de solutions pour gérer votre restaurant.",
-          "cta": "Essai gratuit 14 jours — foodeatup.com",
-          "sfx": ["clin@223.5-solo"]
+          "sfx": ["clin@220-solo"],
+          "note": "Logo seul, aucun texte HTML incrusté (slogan/CTA portés à l'oral par la narratrice ; le CTA du site prend le relais autour du lecteur)."
         }
       ]
     }
@@ -495,10 +510,9 @@
     "sans": { "grey": "#8A9099", "darkGrey": "#3A3F45", "lightGrey": "#EDEEF0", "alertRed": "#D64545" }
   },
   "characters": {
-    "chef": { "voiceId": "pNInz6obpgDQGcFmaJgB", "referenceElementId": "c841147a-6375-4c5e-b146-e45c1cab7e99", "characterSheet": "assets/image/characters/chef-character-sheet.png" },
-    "serveur": { "voiceId": "EXAVITQu4vr4xnSDxMaL", "referenceElementId": "a8f9dfa9-47cf-4ba3-86f8-93ab0b4a11c1", "characterSheet": "assets/image/characters/serveur-character-sheet.png" },
-    "directeur": { "voiceId": "VR6AewLTigWG4xSOukaG", "referenceElementId": "2f3b8e65-a41d-429a-abf7-5df04baddf7a", "characterSheet": "assets/image/characters/directeur-character-sheet.png" },
-    "commis": { "voiceId": "TxGEqnHWrfWFTfGW9XjX", "note": "Second cuisinier, apparaît uniquement dans le beat Jarvis multilingue, pas d'élément de référence dédié." },
+    "chef": { "name": "Karim", "voiceId": "pNInz6obpgDQGcFmaJgB", "referenceElementId": "c841147a-6375-4c5e-b146-e45c1cab7e99", "characterSheet": "assets/image/characters/chef-character-sheet.png" },
+    "serveur": { "name": "Léa", "voiceId": "EXAVITQu4vr4xnSDxMaL", "referenceElementId": "a8f9dfa9-47cf-4ba3-86f8-93ab0b4a11c1", "characterSheet": "assets/image/characters/serveur-character-sheet.png" },
+    "directeur": { "name": "Marc", "voiceId": "VR6AewLTigWG4xSOukaG", "referenceElementId": "2f3b8e65-a41d-429a-abf7-5df04baddf7a", "characterSheet": "assets/image/characters/directeur-character-sheet.png" },
     "narratrice": { "voiceId": "21m00Tcm4TlvDq8ikWAM" }
   }
 }
@@ -506,253 +520,134 @@
 
 <div id="hero" class="composition" data-composition-id="hero" data-width="1920" data-height="1080" data-start="0" data-duration="225">
 <div class="seq-neutre" data-sequence-id="S0" style="position:absolute;inset:0">
-<div class="clip media-fill" data-start="0" data-duration="9" data-track-index="0">
+<div class="clip media-fill" data-start="0" data-duration="15" data-track-index="0">
 <img src="assets/image/ambiance/hero-01-cuisine-vide.png" alt="" />
 </div>
-<div class="clip" data-start="12" data-duration="3" data-track-index="1">
-<div class="card opening"><h1>Un restaurant.
-Un jour.
-Deux fois.</h1></div>
-</div>
+<audio id="audio-1" class="clip" src="assets/voice/n-intro.mp3" data-start="0" data-duration="15" data-track-index="2000" data-volume="1" data-has-audio="true" preload="auto"></audio>
 </div>
 <div class="seq-sans" data-sequence-id="S1" style="position:absolute;inset:0">
-<video id="video-1" class="clip media-fill" src="assets/video/hero-directeur-sept-onglets.mp4" data-start="16" data-duration="12" data-track-index="2" muted autoplay playsinline data-media-start="0"></video>
-<div class="clip speaker-tag" data-start="16" data-duration="12" data-track-index="502">
-directeur
-</div>
-<div class="clip subtitle" data-start="16" data-duration="12" data-track-index="1002">
-<span>Huit heures... J'ouvre mes sept onglets. Le stock ne sait pas ce que la caisse a vendu. Alors je fais le pont, à la main.</span>
-</div>
-<audio id="audio-2" class="clip" src="assets/voice/s1-directeur.mp3" data-start="16" data-duration="12" data-track-index="2002" data-volume="1" data-has-audio="true" preload="auto"></audio>
-<video id="video-3" class="clip media-fill" src="assets/video/hero-chef-carnet-dlc.mp4" data-start="28" data-duration="6" data-track-index="3" muted autoplay playsinline data-media-start="0"></video>
-<div class="clip speaker-tag" data-start="28" data-duration="6" data-track-index="503">
-chef
-</div>
-<div class="clip subtitle" data-start="28" data-duration="6" data-track-index="1003">
-<span>Les DLC, je les note sur un carnet... Je les ressaisirai ce soir. Si j'y pense.</span>
-</div>
-<audio id="audio-4" class="clip" src="assets/voice/s1-chef.mp3" data-start="28" data-duration="6" data-track-index="2003" data-volume="1" data-has-audio="true" preload="auto"></audio>
-<video id="video-5" class="clip media-fill" src="assets/video/hero-serveur-trois-tablettes.mp4" data-start="34" data-duration="6" data-track-index="4" muted autoplay playsinline data-media-start="0"></video>
-<div class="clip speaker-tag" data-start="34" data-duration="6" data-track-index="504">
-serveur
-</div>
-<div class="clip subtitle" data-start="34" data-duration="6" data-track-index="1004">
-<span>Onze messages sur le répondeur... Personne n'a décroché entre quinze heures et dix-huit heures hier. On ne saura jamais combien ça nous a coûté.</span>
-</div>
-<audio id="audio-6" class="clip" src="assets/voice/s1-serveur.mp3" data-start="34" data-duration="6" data-track-index="2004" data-volume="1" data-has-audio="true" preload="auto"></audio>
+<video id="video-2" class="clip media-fill" src="assets/video/hero-directeur-sept-onglets.mp4" data-start="15" data-duration="1.5" data-track-index="1" muted autoplay playsinline data-media-start="0"></video>
+<audio id="audio-3" class="clip" src="assets/voice/n-s1.mp3" data-start="15" data-duration="1.5" data-track-index="2001" data-volume="1" data-has-audio="true" preload="auto"></audio>
+<video id="video-4" class="clip media-fill" src="assets/video/hero-directeur-sept-onglets.mp4" data-start="16.5" data-duration="11.5" data-track-index="2" muted autoplay playsinline data-media-start="0"></video>
+<audio id="audio-5" class="clip" src="assets/voice/s1-directeur.mp3" data-start="16.5" data-duration="11.5" data-track-index="2002" data-volume="1" data-has-audio="true" preload="auto"></audio>
+<video id="video-6" class="clip media-fill" src="assets/video/hero-chef-carnet-dlc.mp4" data-start="28" data-duration="6" data-track-index="3" muted autoplay playsinline data-media-start="0"></video>
+<audio id="audio-7" class="clip" src="assets/voice/s1-chef.mp3" data-start="28" data-duration="6" data-track-index="2003" data-volume="1" data-has-audio="true" preload="auto"></audio>
+<video id="video-8" class="clip media-fill" src="assets/video/hero-serveur-trois-tablettes.mp4" data-start="34" data-duration="6" data-track-index="4" muted autoplay playsinline data-media-start="0"></video>
+<audio id="audio-9" class="clip" src="assets/voice/s1-serveur.mp3" data-start="34" data-duration="6" data-track-index="2004" data-volume="1" data-has-audio="true" preload="auto"></audio>
 </div>
 <div class="seq-avec" data-sequence-id="S2" style="position:absolute;inset:0">
-<video id="video-7" class="clip media-fill" src="assets/video/hero-directeur-bureau-matin.mp4" data-start="42" data-duration="17" data-track-index="5" muted autoplay playsinline data-media-start="0"></video>
-<div class="clip speaker-tag" data-start="42" data-duration="17" data-track-index="505">
-directeur
-</div>
-<div class="clip subtitle" data-start="42" data-duration="17" data-track-index="1005">
-<span>Huit heures... Je n'ouvre pas un tableur. J'ouvre ce que PrediBot a préparé cette nuit. Ce qu'on va vendre. Ce qu'il faut produire. Ce qu'il manque... Ma commande part chez mes fournisseurs. Je n'ai appelé personne.</span>
-</div>
-<audio id="audio-8" class="clip" src="assets/voice/s2-directeur.mp3" data-start="42" data-duration="17" data-track-index="2005" data-volume="1" data-has-audio="true" preload="auto"></audio>
-<video id="video-9" class="clip media-fill" src="assets/video/hero-chef-scan-carton.mp4" data-start="59" data-duration="7" data-track-index="6" muted autoplay playsinline data-media-start="0"></video>
-<div class="clip speaker-tag" data-start="59" data-duration="7" data-track-index="506">
-chef
-</div>
-<div class="clip subtitle" data-start="59" data-duration="7" data-track-index="1006">
-<span>Je scanne... La DLC, le lot, la température. C'est tracé avant même que je pose le carton.</span>
-</div>
-<audio id="audio-10" class="clip" src="assets/voice/s2-chef.mp3" data-start="59" data-duration="7" data-track-index="2006" data-volume="1" data-has-audio="true" preload="auto"></audio>
-<video id="video-11" class="clip media-fill" src="assets/video/hero-serveur-plan-table.mp4" data-start="66" data-duration="9" data-track-index="7" muted autoplay playsinline data-media-start="0"></video>
-<div class="clip speaker-tag" data-start="66" data-duration="9" data-track-index="507">
-serveur
-</div>
-<div class="clip subtitle" data-start="66" data-duration="9" data-track-index="1007">
-<span>Les appels de cette nuit, Caroline les a pris... Vingt-deux heures quarante, une table de six. Je n'ai pas décroché. Mon plan de table est fait avant que quiconque pousse la porte.</span>
-</div>
-<audio id="audio-12" class="clip" src="assets/voice/s2-serveur.mp3" data-start="66" data-duration="9" data-track-index="2007" data-volume="1" data-has-audio="true" preload="auto"></audio>
+<video id="video-10" class="clip media-fill" src="assets/video/hero-directeur-bureau-matin.mp4" data-start="40" data-duration="1.7" data-track-index="5" muted autoplay playsinline data-media-start="0"></video>
+<audio id="audio-11" class="clip" src="assets/voice/n-s2.mp3" data-start="40" data-duration="1.7" data-track-index="2005" data-volume="1" data-has-audio="true" preload="auto"></audio>
+<video id="video-12" class="clip media-fill" src="assets/video/hero-directeur-bureau-matin.mp4" data-start="41.7" data-duration="17.3" data-track-index="6" muted autoplay playsinline data-media-start="0"></video>
+<audio id="audio-13" class="clip" src="assets/voice/s2-directeur.mp3" data-start="41.7" data-duration="17.3" data-track-index="2006" data-volume="1" data-has-audio="true" preload="auto"></audio>
+<video id="video-14" class="clip media-fill" src="assets/video/hero-chef-scan-carton.mp4" data-start="59" data-duration="7" data-track-index="7" muted autoplay playsinline data-media-start="0"></video>
+<audio id="audio-15" class="clip" src="assets/voice/s2-chef.mp3" data-start="59" data-duration="7" data-track-index="2007" data-volume="1" data-has-audio="true" preload="auto"></audio>
+<video id="video-16" class="clip media-fill" src="assets/video/hero-serveur-plan-table.mp4" data-start="66" data-duration="9" data-track-index="8" muted autoplay playsinline data-media-start="0"></video>
+<audio id="audio-17" class="clip" src="assets/voice/s2-serveur.mp3" data-start="66" data-duration="9" data-track-index="2008" data-volume="1" data-has-audio="true" preload="auto"></audio>
 </div>
 <div class="seq-sans" data-sequence-id="S3" style="position:absolute;inset:0">
-<video id="video-13" class="clip media-fill" src="assets/video/hero-serveur-trois-tablettes.mp4" data-start="77" data-duration="7" data-track-index="8" muted autoplay playsinline data-media-start="0"></video>
-<div class="clip speaker-tag" data-start="77" data-duration="7" data-track-index="508">
-serveur
-</div>
-<div class="clip subtitle" data-start="77" data-duration="7" data-track-index="1008">
-<span>Uber sur cette tablette. La livraison sur celle-là. La salle sur la troisième.</span>
-</div>
-<audio id="audio-14" class="clip" src="assets/voice/s3-serveur.mp3" data-start="77" data-duration="7" data-track-index="2008" data-volume="1" data-has-audio="true" preload="auto"></audio>
-<div class="clip media-fill" data-start="84" data-duration="12" data-track-index="9">
+<video id="video-18" class="clip media-fill" src="assets/video/hero-serveur-trois-tablettes.mp4" data-start="75" data-duration="1.7" data-track-index="9" muted autoplay playsinline data-media-start="0"></video>
+<audio id="audio-19" class="clip" src="assets/voice/n-s3.mp3" data-start="75" data-duration="1.7" data-track-index="2009" data-volume="1" data-has-audio="true" preload="auto"></audio>
+<video id="video-20" class="clip media-fill" src="assets/video/hero-serveur-trois-tablettes.mp4" data-start="76.7" data-duration="7.3" data-track-index="10" muted autoplay playsinline data-media-start="0"></video>
+<audio id="audio-21" class="clip" src="assets/voice/s3-serveur.mp3" data-start="76.7" data-duration="7.3" data-track-index="2010" data-volume="1" data-has-audio="true" preload="auto"></audio>
+<div class="clip media-fill" data-start="84" data-duration="12" data-track-index="11">
 <img src="assets/image/ambiance/hero-05-bon-tombe.png" alt="" />
 </div>
-<div class="clip speaker-tag" data-start="84" data-duration="12" data-track-index="509">
-chef
-</div>
-<div class="clip subtitle" data-start="84" data-duration="12" data-track-index="1009">
-<span>Un bon est tombé par terre... On s'en rendra compte au dessert. Le tartare est fini depuis midi... Le site l'a vendu trois fois de plus.</span>
-</div>
-<audio id="audio-15" class="clip" src="assets/voice/s3-chef.mp3" data-start="84" data-duration="12" data-track-index="2009" data-volume="1" data-has-audio="true" preload="auto"></audio>
-<video id="video-16" class="clip media-fill" src="assets/video/hero-salle-vide-matin.mp4" data-start="96" data-duration="4" data-track-index="10" muted autoplay playsinline data-media-start="0"></video>
-<div class="clip speaker-tag" data-start="96" data-duration="4" data-track-index="510">
-directeur
-</div>
-<div class="clip subtitle" data-start="96" data-duration="4" data-track-index="1010">
-<span>Je ne sais pas ce qui se passe en salle... Je descends voir.</span>
-</div>
-<audio id="audio-17" class="clip" src="assets/voice/s3-directeur.mp3" data-start="96" data-duration="4" data-track-index="2010" data-volume="1" data-has-audio="true" preload="auto"></audio>
+<audio id="audio-22" class="clip" src="assets/voice/s3-chef.mp3" data-start="84" data-duration="12" data-track-index="2011" data-volume="1" data-has-audio="true" preload="auto"></audio>
+<video id="video-23" class="clip media-fill" src="assets/video/hero-salle-vide-matin.mp4" data-start="96" data-duration="4" data-track-index="12" muted autoplay playsinline data-media-start="0"></video>
+<audio id="audio-24" class="clip" src="assets/voice/s3-directeur.mp3" data-start="96" data-duration="4" data-track-index="2012" data-volume="1" data-has-audio="true" preload="auto"></audio>
 </div>
 <div class="seq-avec" data-sequence-id="S4" style="position:absolute;inset:0">
-<div class="clip" data-start="100" data-duration="12" data-track-index="11">
+<div class="clip" data-start="100" data-duration="1.8" data-track-index="13">
 <div class="converge-stage">
-<div class="converge-node" data-corner="tl">QR Table 7</div>
-<div class="converge-node" data-corner="tr">Site web</div>
-<div class="converge-node" data-corner="bl">Agent vocal</div>
-<div class="converge-node" data-corner="br">Livraison</div>
-<div class="converge-line">Une seule file</div>
+<div class="converge-node" data-corner="tl"><img src="assets/image/icons/icon-qr.jpg" alt="" /></div>
+<div class="converge-node" data-corner="tr"><img src="assets/image/icons/icon-web.jpg" alt="" /></div>
+<div class="converge-node" data-corner="bl"><img src="assets/image/icons/icon-phone.jpg" alt="" /></div>
+<div class="converge-node" data-corner="br"><img src="assets/image/icons/icon-delivery.jpg" alt="" /></div>
+<div class="converge-target"><img src="assets/brand/foodeatup-mark-eight.png" alt="" /></div>
 </div>
 </div>
-<div class="clip speaker-tag" data-start="100" data-duration="12" data-track-index="511">
-serveur
+<audio id="audio-25" class="clip" src="assets/voice/n-s4.mp3" data-start="100" data-duration="1.8" data-track-index="2013" data-volume="1" data-has-audio="true" preload="auto"></audio>
+<div class="clip" data-start="101.8" data-duration="10.2" data-track-index="14">
+<div class="converge-stage">
+<div class="converge-node" data-corner="tl"><img src="assets/image/icons/icon-qr.jpg" alt="" /></div>
+<div class="converge-node" data-corner="tr"><img src="assets/image/icons/icon-web.jpg" alt="" /></div>
+<div class="converge-node" data-corner="bl"><img src="assets/image/icons/icon-phone.jpg" alt="" /></div>
+<div class="converge-node" data-corner="br"><img src="assets/image/icons/icon-delivery.jpg" alt="" /></div>
+<div class="converge-target"><img src="assets/brand/foodeatup-mark-eight.png" alt="" /></div>
 </div>
-<div class="clip subtitle" data-start="100" data-duration="12" data-track-index="1011">
-<span>Le QR de la table sept. Le site. L'agent vocal. La livraison... Tout arrive au même endroit.</span>
 </div>
-<audio id="audio-18" class="clip" src="assets/voice/s4a-serveur.mp3" data-start="100" data-duration="12" data-track-index="2011" data-volume="1" data-has-audio="true" preload="auto"></audio>
-<video id="video-19" class="clip media-fill" src="assets/video/hero-brigade-deux-langues.mp4" data-start="112" data-duration="5" data-track-index="12" muted autoplay playsinline data-media-start="0"></video>
-<div class="clip speaker-tag" data-start="112" data-duration="5" data-track-index="512">
-chef
-</div>
-<div class="clip subtitle" data-start="112" data-duration="5" data-track-index="1012">
-<span>Je sors trois kilos de saumon.</span>
-</div>
-<audio id="audio-20" class="clip" src="assets/voice/s4b-chef1.mp3" data-start="112" data-duration="5" data-track-index="2012" data-volume="1" data-has-audio="true" preload="auto"></audio>
-<video id="video-21" class="clip media-fill" src="assets/video/hero-brigade-deux-langues.mp4" data-start="117" data-duration="5" data-track-index="13" muted autoplay playsinline data-media-start="5"></video>
-<div class="clip speaker-tag" data-start="117" data-duration="5" data-track-index="513">
-commis
-</div>
-<div class="clip subtitle" data-start="117" data-duration="5" data-track-index="1013">
-<span>Je sors trois kilos de saumon.</span>
-</div>
-<audio id="audio-22" class="clip" src="assets/voice/s4b-commis-es.mp3" data-start="117" data-duration="5" data-track-index="2013" data-volume="1" data-has-audio="true" preload="auto"></audio>
-<video id="video-23" class="clip media-fill" src="assets/video/hero-brigade-deux-langues.mp4" data-start="122" data-duration="3" data-track-index="14" muted autoplay playsinline data-media-start="10"></video>
-<div class="clip speaker-tag" data-start="122" data-duration="3" data-track-index="514">
-chef
-</div>
-<div class="clip subtitle" data-start="122" data-duration="3" data-track-index="1014">
-<span>Jarvis comprend les deux... Mon stock aussi.</span>
-</div>
-<audio id="audio-24" class="clip" src="assets/voice/s4b-chef2.mp3" data-start="122" data-duration="3" data-track-index="2014" data-volume="1" data-has-audio="true" preload="auto"></audio>
-<video id="video-25" class="clip media-fill" src="assets/video/hero-kds-mural.mp4" data-start="125" data-duration="4" data-track-index="15" muted autoplay playsinline data-media-start="0"></video>
-<div class="clip speaker-tag" data-start="125" data-duration="4" data-track-index="515">
-chef
-</div>
-<div class="clip subtitle" data-start="125" data-duration="4" data-track-index="1015">
-<span>Plat prêt.</span>
-</div>
-<audio id="audio-26" class="clip" src="assets/voice/s4c-chef-platpret.mp3" data-start="125" data-duration="4" data-track-index="2015" data-volume="1" data-has-audio="true" preload="auto"></audio>
-<video id="video-27" class="clip media-fill" src="assets/video/hero-serveur-plan-table.mp4" data-start="129" data-duration="5" data-track-index="16" muted autoplay playsinline data-media-start="0"></video>
-<div class="clip speaker-tag" data-start="129" data-duration="5" data-track-index="516">
-serveur
-</div>
-<div class="clip subtitle" data-start="129" data-duration="5" data-track-index="1016">
-<span>Je n'ai pas eu besoin qu'on me le crie.</span>
-</div>
-<audio id="audio-28" class="clip" src="assets/voice/s4c-serveur.mp3" data-start="129" data-duration="5" data-track-index="2016" data-volume="1" data-has-audio="true" preload="auto"></audio>
-<div class="clip" data-start="134" data-duration="11" data-track-index="17">
+<audio id="audio-26" class="clip" src="assets/voice/s4a-serveur.mp3" data-start="101.8" data-duration="10.2" data-track-index="2014" data-volume="1" data-has-audio="true" preload="auto"></audio>
+<video id="video-27" class="clip media-fill" src="assets/video/hero-brigade-deux-langues.mp4" data-start="112" data-duration="7" data-track-index="15" muted autoplay playsinline data-media-start="0"></video>
+<audio id="audio-28" class="clip" src="assets/voice/s4b-chef1.mp3" data-start="112" data-duration="7" data-track-index="2015" data-volume="1" data-has-audio="true" preload="auto"></audio>
+<video id="video-29" class="clip media-fill" src="assets/video/hero-brigade-deux-langues.mp4" data-start="119" data-duration="6" data-track-index="16" muted autoplay playsinline data-media-start="7"></video>
+<audio id="audio-30" class="clip" src="assets/voice/s4b-chef2.mp3" data-start="119" data-duration="6" data-track-index="2016" data-volume="1" data-has-audio="true" preload="auto"></audio>
+<video id="video-31" class="clip media-fill" src="assets/video/hero-kds-mural.mp4" data-start="125" data-duration="4" data-track-index="17" muted autoplay playsinline data-media-start="0"></video>
+<audio id="audio-32" class="clip" src="assets/voice/s4c-chef-platpret.mp3" data-start="125" data-duration="4" data-track-index="2017" data-volume="1" data-has-audio="true" preload="auto"></audio>
+<video id="video-33" class="clip media-fill" src="assets/video/hero-serveur-plan-table.mp4" data-start="129" data-duration="5" data-track-index="18" muted autoplay playsinline data-media-start="0"></video>
+<audio id="audio-34" class="clip" src="assets/voice/s4c-serveur.mp3" data-start="129" data-duration="5" data-track-index="2018" data-volume="1" data-has-audio="true" preload="auto"></audio>
+<div class="clip" data-start="134" data-duration="11" data-track-index="19">
 <div class="iris-stage">
-<div class="iris-device" data-slot="1"><div class="toast">Saumon ce soir — Iris</div></div>
-<div class="iris-device" data-slot="2"><div class="toast">Saumon ce soir — Iris</div></div>
-<div class="iris-device" data-slot="3"><div class="toast">Saumon ce soir — Iris</div></div>
+<div class="iris-device" data-slot="1"><div class="toast"><img src="assets/image/icons/icon-notification.jpg" alt="" /></div></div>
+<div class="iris-device" data-slot="2"><div class="toast"><img src="assets/image/icons/icon-notification.jpg" alt="" /></div></div>
+<div class="iris-device" data-slot="3"><div class="toast"><img src="assets/image/icons/icon-notification.jpg" alt="" /></div></div>
 </div>
 </div>
-<div class="clip speaker-tag" data-start="134" data-duration="11" data-track-index="517">
-directeur
-</div>
-<div class="clip subtitle" data-start="134" data-duration="11" data-track-index="1017">
-<span>Trente kilos de saumon à écouler avant jeudi... Iris le voit aussi. À treize heures, mes clients savent qu'il y a du saumon ce soir... Le problème est devenu le plat du jour.</span>
-</div>
-<audio id="audio-29" class="clip" src="assets/voice/s4d-directeur.mp3" data-start="134" data-duration="11" data-track-index="2017" data-volume="1" data-has-audio="true" preload="auto"></audio>
+<audio id="audio-35" class="clip" src="assets/voice/s4d-directeur.mp3" data-start="134" data-duration="11" data-track-index="2019" data-volume="1" data-has-audio="true" preload="auto"></audio>
 </div>
 <div class="seq-sans" data-sequence-id="S5" style="position:absolute;inset:0">
-<div class="clip media-fill" data-start="147" data-duration="11" data-track-index="18">
+<div class="clip media-fill" data-start="145" data-duration="1.7" data-track-index="20">
 <img src="assets/image/ambiance/hero-09-caisse-fin-service.png" alt="" />
 </div>
-<div class="clip speaker-tag" data-start="147" data-duration="11" data-track-index="518">
-serveur
+<audio id="audio-36" class="clip" src="assets/voice/n-s5.mp3" data-start="145" data-duration="1.7" data-track-index="2020" data-volume="1" data-has-audio="true" preload="auto"></audio>
+<div class="clip media-fill" data-start="146.7" data-duration="11.3" data-track-index="21">
+<img src="assets/image/ambiance/hero-09-caisse-fin-service.png" alt="" />
 </div>
-<div class="clip subtitle" data-start="147" data-duration="11" data-track-index="1018">
-<span>La caisse, je la compte... Je la recompte. L'écart, c'est trois euros quarante, ou trente-quatre. On saura demain.</span>
-</div>
-<audio id="audio-30" class="clip" src="assets/voice/s5-serveur.mp3" data-start="147" data-duration="11" data-track-index="2018" data-volume="1" data-has-audio="true" preload="auto"></audio>
-<video id="video-31" class="clip media-fill" src="assets/video/hero-chef-carnet-dlc.mp4" data-start="158" data-duration="6" data-track-index="19" muted autoplay playsinline data-media-start="0"></video>
-<div class="clip speaker-tag" data-start="158" data-duration="6" data-track-index="519">
-chef
-</div>
-<div class="clip subtitle" data-start="158" data-duration="6" data-track-index="1019">
-<span>Le contrôle, c'est jeudi... Je remplirai le classeur mercredi soir, de mémoire.</span>
-</div>
-<audio id="audio-32" class="clip" src="assets/voice/s5-chef.mp3" data-start="158" data-duration="6" data-track-index="2019" data-volume="1" data-has-audio="true" preload="auto"></audio>
-<video id="video-33" class="clip media-fill" src="assets/video/hero-directeur-sept-onglets.mp4" data-start="164" data-duration="6" data-track-index="20" muted autoplay playsinline data-media-start="0"></video>
-<div class="clip speaker-tag" data-start="164" data-duration="6" data-track-index="520">
-directeur
-</div>
-<div class="clip subtitle" data-start="164" data-duration="6" data-track-index="1020">
-<span>Mon chiffre de mars... je le connaîtrai en mai.</span>
-</div>
-<audio id="audio-34" class="clip" src="assets/voice/s5-directeur.mp3" data-start="164" data-duration="6" data-track-index="2020" data-volume="1" data-has-audio="true" preload="auto"></audio>
+<audio id="audio-37" class="clip" src="assets/voice/s5-serveur.mp3" data-start="146.7" data-duration="11.3" data-track-index="2021" data-volume="1" data-has-audio="true" preload="auto"></audio>
+<video id="video-38" class="clip media-fill" src="assets/video/hero-chef-carnet-dlc.mp4" data-start="158" data-duration="6" data-track-index="22" muted autoplay playsinline data-media-start="0"></video>
+<audio id="audio-39" class="clip" src="assets/voice/s5-chef.mp3" data-start="158" data-duration="6" data-track-index="2022" data-volume="1" data-has-audio="true" preload="auto"></audio>
+<video id="video-40" class="clip media-fill" src="assets/video/hero-directeur-sept-onglets.mp4" data-start="164" data-duration="6" data-track-index="23" muted autoplay playsinline data-media-start="0"></video>
+<audio id="audio-41" class="clip" src="assets/voice/s5-directeur.mp3" data-start="164" data-duration="6" data-track-index="2023" data-volume="1" data-has-audio="true" preload="auto"></audio>
 </div>
 <div class="seq-avec" data-sequence-id="S6" style="position:absolute;inset:0">
-<video id="video-35" class="clip media-fill" src="assets/video/hero-caisse-ticket-z.mp4" data-start="172" data-duration="12" data-track-index="21" muted autoplay playsinline data-media-start="0"></video>
-<div class="clip speaker-tag" data-start="172" data-duration="12" data-track-index="521">
-serveur
-</div>
-<div class="clip subtitle" data-start="172" data-duration="12" data-track-index="1021">
-<span>Le Z... Un geste. L'écart est là, expliqué, archivé... Et les avis du jour ont déjà une réponse.</span>
-</div>
-<audio id="audio-36" class="clip" src="assets/voice/s6-serveur.mp3" data-start="172" data-duration="12" data-track-index="2021" data-volume="1" data-has-audio="true" preload="auto"></audio>
-<video id="video-37" class="clip media-fill" src="assets/video/hero-kds-mural.mp4" data-start="184" data-duration="10" data-track-index="22" muted autoplay playsinline data-media-start="0"></video>
-<div class="clip speaker-tag" data-start="184" data-duration="10" data-track-index="522">
-chef
-</div>
-<div class="clip subtitle" data-start="184" data-duration="10" data-track-index="1022">
-<span>Une photo... L'IA contrôle mon nettoyage. Mon classeur HACCP s'est écrit tout seul... Pendant que je cuisinais.</span>
-</div>
-<audio id="audio-38" class="clip" src="assets/voice/s6-chef.mp3" data-start="184" data-duration="10" data-track-index="2022" data-volume="1" data-has-audio="true" preload="auto"></audio>
-<video id="video-39" class="clip media-fill" src="assets/video/hero-directeur-bureau-matin.mp4" data-start="194" data-duration="6" data-track-index="23" muted autoplay playsinline data-media-start="0"></video>
-<div class="clip speaker-tag" data-start="194" data-duration="6" data-track-index="523">
-directeur
-</div>
-<div class="clip subtitle" data-start="194" data-duration="6" data-track-index="1023">
-<span>Dix-huit heures... Je connais mon chiffre.</span>
-</div>
-<audio id="audio-40" class="clip" src="assets/voice/s6-directeur.mp3" data-start="194" data-duration="6" data-track-index="2023" data-volume="1" data-has-audio="true" preload="auto"></audio>
+<video id="video-42" class="clip media-fill" src="assets/video/hero-caisse-ticket-z.mp4" data-start="170" data-duration="1.7" data-track-index="24" muted autoplay playsinline data-media-start="0"></video>
+<audio id="audio-43" class="clip" src="assets/voice/n-s6.mp3" data-start="170" data-duration="1.7" data-track-index="2024" data-volume="1" data-has-audio="true" preload="auto"></audio>
+<video id="video-44" class="clip media-fill" src="assets/video/hero-caisse-ticket-z.mp4" data-start="171.7" data-duration="12.3" data-track-index="25" muted autoplay playsinline data-media-start="0"></video>
+<audio id="audio-45" class="clip" src="assets/voice/s6-serveur.mp3" data-start="171.7" data-duration="12.3" data-track-index="2025" data-volume="1" data-has-audio="true" preload="auto"></audio>
+<video id="video-46" class="clip media-fill" src="assets/video/hero-kds-mural.mp4" data-start="184" data-duration="10" data-track-index="26" muted autoplay playsinline data-media-start="0"></video>
+<audio id="audio-47" class="clip" src="assets/voice/s6-chef.mp3" data-start="184" data-duration="10" data-track-index="2026" data-volume="1" data-has-audio="true" preload="auto"></audio>
+<video id="video-48" class="clip media-fill" src="assets/video/hero-directeur-bureau-matin.mp4" data-start="194" data-duration="6" data-track-index="27" muted autoplay playsinline data-media-start="0"></video>
+<audio id="audio-49" class="clip" src="assets/voice/s6-directeur.mp3" data-start="194" data-duration="6" data-track-index="2027" data-volume="1" data-has-audio="true" preload="auto"></audio>
 </div>
 <div class="seq-avec" data-sequence-id="S7" style="position:absolute;inset:0">
 <div class="triptych">
 <div class="panel">
-<video id="video-41" class="clip" src="assets/video/hero-portrait-chef.mp4" data-start="200" data-duration="6" data-track-index="240" muted autoplay playsinline data-media-start="0"></video>
+<video id="video-50" class="clip" src="assets/video/hero-portrait-chef.mp4" data-start="200" data-duration="6" data-track-index="280" muted autoplay playsinline data-media-start="0"></video>
 </div>
 <div class="panel">
-<video id="video-42" class="clip" src="assets/video/hero-portrait-serveur.mp4" data-start="200" data-duration="6" data-track-index="241" muted autoplay playsinline data-media-start="0"></video>
+<video id="video-51" class="clip" src="assets/video/hero-portrait-serveur.mp4" data-start="200" data-duration="6" data-track-index="281" muted autoplay playsinline data-media-start="0"></video>
 </div>
 <div class="panel">
-<video id="video-43" class="clip" src="assets/video/hero-portrait-directeur.mp4" data-start="200" data-duration="6" data-track-index="242" muted autoplay playsinline data-media-start="0"></video>
+<video id="video-52" class="clip" src="assets/video/hero-portrait-directeur.mp4" data-start="200" data-duration="6" data-track-index="282" muted autoplay playsinline data-media-start="0"></video>
 </div>
 </div>
-<div class="clip" data-start="206" data-duration="0.4" data-track-index="25">
+<div class="clip" data-start="206" data-duration="0.4" data-track-index="29">
 <div class="black-frame"></div>
 </div>
 <div class="triptych">
 <div class="panel">
-<video id="video-44" class="clip" src="assets/video/hero-portrait-chef.mp4" data-start="206.5" data-duration="4" data-track-index="260" muted autoplay playsinline data-media-start="0"></video>
+<video id="video-53" class="clip" src="assets/video/hero-portrait-chef.mp4" data-start="206.5" data-duration="6.5" data-track-index="300" muted autoplay playsinline data-media-start="0"></video>
 </div>
 <div class="panel">
-<video id="video-45" class="clip" src="assets/video/hero-portrait-serveur.mp4" data-start="206.5" data-duration="4" data-track-index="261" muted autoplay playsinline data-media-start="0"></video>
+<video id="video-54" class="clip" src="assets/video/hero-portrait-serveur.mp4" data-start="206.5" data-duration="6.5" data-track-index="301" muted autoplay playsinline data-media-start="0"></video>
 </div>
 <div class="panel">
-<video id="video-46" class="clip" src="assets/video/hero-portrait-directeur.mp4" data-start="206.5" data-duration="4" data-track-index="262" muted autoplay playsinline data-media-start="0"></video>
+<video id="video-55" class="clip" src="assets/video/hero-portrait-directeur.mp4" data-start="206.5" data-duration="6.5" data-track-index="302" muted autoplay playsinline data-media-start="0"></video>
 </div>
 </div>
-<div class="clip subtitle" data-start="206.5" data-duration="4" data-track-index="1026">
-<span>Ce n'est pas la même journée... C'est le même restaurant.</span>
-</div>
-<audio id="audio-47" class="clip" src="assets/voice/s7-narratrice.mp3" data-start="206.5" data-duration="4" data-track-index="2026" data-volume="1" data-has-audio="true" preload="auto"></audio>
-<div class="clip" data-start="211" data-duration="14" data-track-index="27">
-<div class="cta-card"><img class="logo" src="assets/brand/foodeatup-logo-mascot.png" alt="FoodEatUp" /><div class="slogan">Une infinité de solutions pour gérer votre restaurant.</div><div class="cta">Essai gratuit 14 jours — foodeatup.com</div></div>
+<audio id="audio-56" class="clip" src="assets/voice/s7-narratrice.mp3" data-start="206.5" data-duration="6.5" data-track-index="2030" data-volume="1" data-has-audio="true" preload="auto"></audio>
+<div class="clip" data-start="213" data-duration="12" data-track-index="31">
+<div class="cta-card"><img class="logo" src="assets/brand/foodeatup-logo-mascot.png" alt="FoodEatUp" /></div>
 </div>
 </div>
 <div class="clip wipe-sweep" data-start="39.65" data-duration="0.7" data-track-index="9000" data-wipe-kind="sans-to-avec">
@@ -770,22 +665,22 @@ directeur
 <div class="clip wipe-sweep snap-sweep" data-start="144.8" data-duration="0.4" data-track-index="9101" data-wipe-kind="avec-to-sans">
 <div class="line"></div>
 </div>
-<audio id="audio-48" class="clip" src="assets/sfx/son-clin-passe-take1.mp3" data-start="129" data-duration="1.2" data-track-index="9200" data-volume="1" data-has-audio="true" preload="auto"></audio>
-<audio id="audio-49" class="clip" src="assets/sfx/son-clin-passe-take1.mp3" data-start="198" data-duration="1.2" data-track-index="9201" data-volume="1" data-has-audio="true" preload="auto"></audio>
-<audio id="audio-50" class="clip" src="assets/sfx/son-clin-passe-take1.mp3" data-start="223.5" data-duration="1.2" data-track-index="9202" data-volume="1" data-has-audio="true" preload="auto"></audio>
-<audio id="audio-51" class="clip" src="assets/music/musique-sans.mp3" data-start="15" data-duration="25" data-track-index="9328" data-volume="1" data-has-audio="true" preload="auto"></audio>
-<audio id="audio-52" class="clip" src="assets/music/musique-avec.mp3" data-start="40" data-duration="35" data-track-index="9329" data-volume="1" data-has-audio="true" preload="auto"></audio>
-<audio id="audio-53" class="clip" src="assets/music/musique-sans.mp3" data-start="75" data-duration="25" data-track-index="9330" data-volume="1" data-has-audio="true" preload="auto"></audio>
-<audio id="audio-54" class="clip" src="assets/music/musique-avec.mp3" data-start="100" data-duration="45" data-track-index="9331" data-volume="1" data-has-audio="true" preload="auto"></audio>
-<audio id="audio-55" class="clip" src="assets/music/musique-sans.mp3" data-start="145" data-duration="25" data-track-index="9332" data-volume="1" data-has-audio="true" preload="auto"></audio>
-<audio id="audio-56" class="clip" src="assets/music/musique-resolution-finale.mp3" data-start="170" data-duration="30" data-track-index="9333" data-volume="1" data-has-audio="true" preload="auto"></audio>
-<audio id="audio-57" class="clip" src="assets/music/musique-resolution-finale.mp3" data-start="200" data-duration="25" data-track-index="9334" data-volume="1" data-has-audio="true" preload="auto"></audio>
-<audio id="audio-58" class="clip" src="assets/sfx/son-scanner-bip.mp3" data-start="60" data-duration="1.5" data-track-index="9400" data-volume="1" data-has-audio="true" preload="auto"></audio>
-<audio id="audio-59" class="clip" src="assets/sfx/son-jarvis-ecoute.mp3" data-start="112" data-duration="1.5" data-track-index="9401" data-volume="1" data-has-audio="true" preload="auto"></audio>
-<audio id="audio-60" class="clip" src="assets/sfx/son-jarvis-compris.mp3" data-start="122" data-duration="1.5" data-track-index="9402" data-volume="1" data-has-audio="true" preload="auto"></audio>
-<audio id="audio-61" class="clip" src="assets/sfx/son-imprimante-z.mp3" data-start="172" data-duration="1.5" data-track-index="9403" data-volume="1" data-has-audio="true" preload="auto"></audio>
-<audio id="audio-62" class="clip" src="assets/sfx/son-iris-publie.mp3" data-start="141" data-duration="1.5" data-track-index="9404" data-volume="1" data-has-audio="true" preload="auto"></audio>
-<audio id="audio-63" class="clip" src="assets/sfx/son-validation-haccp.mp3" data-start="184" data-duration="1.5" data-track-index="9405" data-volume="1" data-has-audio="true" preload="auto"></audio>
+<audio id="audio-57" class="clip" src="assets/sfx/son-clin-passe-take1.mp3" data-start="125" data-duration="1.2" data-track-index="9200" data-volume="1" data-has-audio="true" preload="auto"></audio>
+<audio id="audio-58" class="clip" src="assets/sfx/son-clin-passe-take1.mp3" data-start="198" data-duration="1.2" data-track-index="9201" data-volume="1" data-has-audio="true" preload="auto"></audio>
+<audio id="audio-59" class="clip" src="assets/sfx/son-clin-passe-take1.mp3" data-start="220" data-duration="1.2" data-track-index="9202" data-volume="1" data-has-audio="true" preload="auto"></audio>
+<audio id="audio-60" class="clip" src="assets/music/musique-sans.mp3" data-start="15" data-duration="25" data-track-index="9332" data-volume="1" data-has-audio="true" preload="auto"></audio>
+<audio id="audio-61" class="clip" src="assets/music/musique-avec.mp3" data-start="40" data-duration="35" data-track-index="9333" data-volume="1" data-has-audio="true" preload="auto"></audio>
+<audio id="audio-62" class="clip" src="assets/music/musique-sans.mp3" data-start="75" data-duration="25" data-track-index="9334" data-volume="1" data-has-audio="true" preload="auto"></audio>
+<audio id="audio-63" class="clip" src="assets/music/musique-avec.mp3" data-start="100" data-duration="45" data-track-index="9335" data-volume="1" data-has-audio="true" preload="auto"></audio>
+<audio id="audio-64" class="clip" src="assets/music/musique-sans.mp3" data-start="145" data-duration="25" data-track-index="9336" data-volume="1" data-has-audio="true" preload="auto"></audio>
+<audio id="audio-65" class="clip" src="assets/music/musique-resolution-finale.mp3" data-start="170" data-duration="30" data-track-index="9337" data-volume="1" data-has-audio="true" preload="auto"></audio>
+<audio id="audio-66" class="clip" src="assets/music/musique-resolution-finale.mp3" data-start="200" data-duration="25" data-track-index="9338" data-volume="1" data-has-audio="true" preload="auto"></audio>
+<audio id="audio-67" class="clip" src="assets/sfx/son-scanner-bip.mp3" data-start="60" data-duration="1.5" data-track-index="9400" data-volume="1" data-has-audio="true" preload="auto"></audio>
+<audio id="audio-68" class="clip" src="assets/sfx/son-jarvis-ecoute.mp3" data-start="112" data-duration="1.5" data-track-index="9401" data-volume="1" data-has-audio="true" preload="auto"></audio>
+<audio id="audio-69" class="clip" src="assets/sfx/son-jarvis-compris.mp3" data-start="119" data-duration="1.5" data-track-index="9402" data-volume="1" data-has-audio="true" preload="auto"></audio>
+<audio id="audio-70" class="clip" src="assets/sfx/son-imprimante-z.mp3" data-start="172" data-duration="1.5" data-track-index="9403" data-volume="1" data-has-audio="true" preload="auto"></audio>
+<audio id="audio-71" class="clip" src="assets/sfx/son-iris-publie.mp3" data-start="141" data-duration="1.5" data-track-index="9404" data-volume="1" data-has-audio="true" preload="auto"></audio>
+<audio id="audio-72" class="clip" src="assets/sfx/son-validation-haccp.mp3" data-start="184" data-duration="1.5" data-track-index="9405" data-volume="1" data-has-audio="true" preload="auto"></audio>
 </div>
 
 <script>window.__timelines = window.__timelines || {};</script>
