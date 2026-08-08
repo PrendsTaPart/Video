@@ -239,6 +239,18 @@ class Serie:
                       background:{ORANGE}; color:{INK}; border-radius:999px; padding:14px 0;
                       text-align:center; font-family:"Fredoka",sans-serif; font-weight:700;
                       font-size:32px; opacity:0; box-shadow:0 10px 26px rgba(255,165,0,.3); }}
+        .md-colonne {{ position:absolute; top:70px; width:420px; text-align:center;
+                       background:#FFFFFF; border:3px solid {BORDER}; border-radius:18px;
+                       padding:26px 0 30px; opacity:0;
+                       box-shadow:0 16px 38px rgba(15,26,35,.10); }}
+        .md-colonne .lib {{ font-family:"Fredoka",sans-serif; font-weight:600; font-size:28px;
+                            color:{INK_SOFT}; }}
+        .md-colonne .val {{ font-family:"Fredoka",sans-serif; font-weight:700; font-size:56px;
+                            color:{INK}; margin-top:12px; }}
+        .md-ecart {{ position:absolute; left:50%; margin-left:-230px; top:376px; width:460px;
+                     text-align:center; background:{ORANGE}; color:{INK}; border-radius:999px;
+                     padding:18px 0; font-family:"Fredoka",sans-serif; font-weight:700;
+                     font-size:40px; opacity:0; box-shadow:0 12px 30px rgba(255,165,0,.3); }}
         .amb {{ position:absolute; inset:0; width:100%; height:100%; object-fit:cover; opacity:0; }}
         .title {{ position:absolute; left:0; right:0; bottom:132px; text-align:center;
                   font-family:"Fredoka",sans-serif; font-weight:700; font-size:76px; color:{CREAM};
@@ -341,8 +353,12 @@ class Serie:
 
 
     # ── scènes « motion design » ─────────────────────────────────────────
-    def _motion(self, cid, abs_debut, dur, clock, eyebrow, board_html, board_js, checks):
+    def motion(self, cid, abs_debut, dur, clock, eyebrow, board_html, board_js, checks):
         """Ossature commune aux scènes schématiques.
+
+        Publique : un schéma qui ne sert qu'à un seul film n'a rien à faire
+        dans la grammaire commune, il s'écrit dans le build de ce film et
+        passe son HTML et son JS ici.
 
         Même en-tête que les scènes écran — horloge, surtitre, coches — mais
         le cadre tablette est remplacé par un tableau schématique. Aucune
@@ -407,7 +423,7 @@ class Serie:
                    f'        tl.set("#mdEtat{i}", {{ innerText:"retiré", color:"#C64B3A" }}, 2.6);\n'
                    f'        tl.to("#mdEtat{i}", {{ opacity:1, duration:.2 }}, 2.6);\n'
                    f'        tl.to("#mdCanal{i}", {{ borderColor:"#C64B3A", duration:.3 }}, 2.6);\n')
-        return self._motion(cid, abs_debut, dur, clock, eyebrow, html, js, ["Un seul geste"] + [f"{c} à jour" for c in canaux[:2]])
+        return self.motion(cid, abs_debut, dur, clock, eyebrow, html, js, ["Un seul geste"] + [f"{c} à jour" for c in canaux[:2]])
 
     def motion_fond_caisse(self, cid, abs_debut, dur, clock, eyebrow, montant, checks):
         """« J'ouvre mon fond de caisse. » Un tiroir, un montant qui se pose."""
@@ -423,7 +439,7 @@ class Serie:
               f'        tl.to(compteur, {{ v:{montant}, duration:1.1, ease:"power2.out",\n'
               '          onUpdate: () => { document.getElementById("mdMontant").textContent =\n'
               '            compteur.v.toFixed(2).replace(".", ",") + " €"; } }, 1.1);\n')
-        return self._motion(cid, abs_debut, dur, clock, eyebrow, html, js, checks)
+        return self.motion(cid, abs_debut, dur, clock, eyebrow, html, js, checks)
 
 
     def motion_note(self, cid, abs_debut, dur, clock, eyebrow, table, lignes, total, parts, remise):
@@ -459,8 +475,33 @@ class Serie:
         # Puis la remise, posée sur l'ensemble.
         js += '        tl.fromTo("#mdRemise", { opacity:0, scale:.7 }, { opacity:1, scale:1, duration:.35, ease:"back.out(2)" }, 5.9);\n'
         js += f'        tl.to("#mdPart{n - 1}", {{ borderColor:"{ORANGE}", duration:.3 }}, 6.1);\n'
-        return self._motion(cid, abs_debut, dur, clock, eyebrow, html, js,
+        return self.motion(cid, abs_debut, dur, clock, eyebrow, html, js,
                             ["Encaissé", "Séparé", "Remise appliquée"])
+
+
+    def motion_ecart(self, cid, abs_debut, dur, clock, eyebrow, colonnes, ecart, checks):
+        """« Je compte mon tiroir. » Théorique, compté, et l'écart entre les deux.
+
+        Le propos est que l'écart est *écrit*, pas qu'il est nul. Le schéma
+        le pose donc en clair, en orange, plutôt que de le cacher.
+        """
+        n = len(colonnes)
+        ecart_px = 1560 // n
+        html = ""
+        for i, (lib, val) in enumerate(colonnes):
+            gauche = i * ecart_px + (ecart_px - 420) // 2
+            html += (f'          <div class="md-colonne" id="mdCol{i}" style="left:{gauche}px;">\n'
+                     f'            <div class="lib">{lib}</div>\n'
+                     f'            <div class="val">{val}</div>\n'
+                     '          </div>\n')
+        html += f'          <div class="md-ecart" id="mdEcart">{ecart}</div>\n'
+        js = ""
+        for i in range(n):
+            js += (f'        tl.fromTo("#mdCol{i}", {{ opacity:0, y:20 }},'
+                   f' {{ opacity:1, y:0, duration:.35, ease:"back.out(1.5)" }}, {0.5 + i * .22:.2f});\n')
+        js += ('        tl.fromTo("#mdEcart", { opacity:0, scale:.75 },'
+               ' { opacity:1, scale:1, duration:.4, ease:"back.out(2)" }, 2.1);\n')
+        return self.motion(cid, abs_debut, dur, clock, eyebrow, html, js, checks)
 
     # ── écriture ─────────────────────────────────────────────────────────
     def ecrire(self, scenes):

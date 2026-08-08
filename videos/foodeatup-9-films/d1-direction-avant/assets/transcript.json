@@ -1,0 +1,1022 @@
+[
+  {
+    "text": "8h.",
+    "start": 0.07,
+    "end": 1.19
+  },
+  {
+    "text": "Le",
+    "start": 1.19,
+    "end": 1.32
+  },
+  {
+    "text": "restaurant",
+    "start": 1.32,
+    "end": 1.97
+  },
+  {
+    "text": "est",
+    "start": 1.97,
+    "end": 2.16
+  },
+  {
+    "text": "vide,",
+    "start": 2.16,
+    "end": 2.55
+  },
+  {
+    "text": "mais",
+    "start": 2.55,
+    "end": 2.73
+  },
+  {
+    "text": "la",
+    "start": 2.83,
+    "end": 2.88
+  },
+  {
+    "text": "journée",
+    "start": 2.88,
+    "end": 3.27
+  },
+  {
+    "text": "est",
+    "start": 3.28,
+    "end": 3.44
+  },
+  {
+    "text": "déjà",
+    "start": 3.44,
+    "end": 3.67
+  },
+  {
+    "text": "écrite",
+    "start": 3.68,
+    "end": 4.16
+  },
+  {
+    "text": "quelque",
+    "start": 4.16,
+    "end": 4.68
+  },
+  {
+    "text": "part.",
+    "start": 4.68,
+    "end": 5.18
+  },
+  {
+    "text": "Il",
+    "start": 5.18,
+    "end": 5.32
+  },
+  {
+    "text": "suffit",
+    "start": 5.32,
+    "end": 5.58
+  },
+  {
+    "text": "de",
+    "start": 5.66,
+    "end": 5.84
+  },
+  {
+    "text": "savoir",
+    "start": 5.84,
+    "end": 6.26
+  },
+  {
+    "text": "où",
+    "start": 6.26,
+    "end": 6.4
+  },
+  {
+    "text": "la",
+    "start": 6.4,
+    "end": 6.55
+  },
+  {
+    "text": "lire.",
+    "start": 6.55,
+    "end": 7.12
+  },
+  {
+    "text": "Prédibote",
+    "start": 7.67,
+    "end": 8.01
+  },
+  {
+    "text": "me",
+    "start": 8.05,
+    "end": 8.22
+  },
+  {
+    "text": "dit",
+    "start": 8.22,
+    "end": 8.25
+  },
+  {
+    "text": "ce",
+    "start": 8.4,
+    "end": 8.53
+  },
+  {
+    "text": "qui",
+    "start": 8.53,
+    "end": 8.78
+  },
+  {
+    "text": "va",
+    "start": 8.78,
+    "end": 8.83
+  },
+  {
+    "text": "sortir",
+    "start": 8.83,
+    "end": 9.18
+  },
+  {
+    "text": "aujourd'hui,",
+    "start": 9.18,
+    "end": 9.93
+  },
+  {
+    "text": "à",
+    "start": 9.93,
+    "end": 10.14
+  },
+  {
+    "text": "partir",
+    "start": 10.14,
+    "end": 10.46
+  },
+  {
+    "text": "de",
+    "start": 10.46,
+    "end": 10.59
+  },
+  {
+    "text": "mes",
+    "start": 10.59,
+    "end": 10.79
+  },
+  {
+    "text": "trois",
+    "start": 10.79,
+    "end": 11.12
+  },
+  {
+    "text": "dernières",
+    "start": 11.12,
+    "end": 11.66
+  },
+  {
+    "text": "semaines.",
+    "start": 11.72,
+    "end": 12.39
+  },
+  {
+    "text": "StockVision",
+    "start": 12.55,
+    "end": 13.05
+  },
+  {
+    "text": "me",
+    "start": 13.21,
+    "end": 13.32
+  },
+  {
+    "text": "dit",
+    "start": 13.32,
+    "end": 13.66
+  },
+  {
+    "text": "ce",
+    "start": 13.66,
+    "end": 13.68
+  },
+  {
+    "text": "qu'il",
+    "start": 13.68,
+    "end": 14
+  },
+  {
+    "text": "me",
+    "start": 14,
+    "end": 14.13
+  },
+  {
+    "text": "restera",
+    "start": 14.13,
+    "end": 14.6
+  },
+  {
+    "text": "ce",
+    "start": 14.6,
+    "end": 14.73
+  },
+  {
+    "text": "soir.",
+    "start": 15,
+    "end": 15.22
+  },
+  {
+    "text": "Je",
+    "start": 15.3,
+    "end": 15.42
+  },
+  {
+    "text": "n'achète",
+    "start": 15.42,
+    "end": 15.98
+  },
+  {
+    "text": "plus",
+    "start": 15.98,
+    "end": 16.26
+  },
+  {
+    "text": "au",
+    "start": 16.26,
+    "end": 16.4
+  },
+  {
+    "text": "feeling",
+    "start": 16.4,
+    "end": 16.92
+  },
+  {
+    "text": "et",
+    "start": 16.92,
+    "end": 17.06
+  },
+  {
+    "text": "je",
+    "start": 17.06,
+    "end": 17.19
+  },
+  {
+    "text": "ne",
+    "start": 17.19,
+    "end": 17.27
+  },
+  {
+    "text": "commande",
+    "start": 17.76,
+    "end": 17.84
+  },
+  {
+    "text": "plus",
+    "start": 17.84,
+    "end": 17.96
+  },
+  {
+    "text": "deux",
+    "start": 17.99,
+    "end": 18.22
+  },
+  {
+    "text": "fois",
+    "start": 18.22,
+    "end": 18.48
+  },
+  {
+    "text": "la",
+    "start": 18.48,
+    "end": 18.61
+  },
+  {
+    "text": "même",
+    "start": 18.61,
+    "end": 18.88
+  },
+  {
+    "text": "chose.",
+    "start": 18.88,
+    "end": 19.44
+  },
+  {
+    "text": "De",
+    "start": 19.51,
+    "end": 19.56
+  },
+  {
+    "text": "ces",
+    "start": 19.56,
+    "end": 19.74
+  },
+  {
+    "text": "deux-là,",
+    "start": 19.74,
+    "end": 20.24
+  },
+  {
+    "text": "je",
+    "start": 20.26,
+    "end": 20.39
+  },
+  {
+    "text": "déduis",
+    "start": 20.53,
+    "end": 20.77
+  },
+  {
+    "text": "mes",
+    "start": 20.77,
+    "end": 20.95
+  },
+  {
+    "text": "besoins",
+    "start": 20.95,
+    "end": 21.37
+  },
+  {
+    "text": "de",
+    "start": 21.37,
+    "end": 21.49
+  },
+  {
+    "text": "production.",
+    "start": 21.49,
+    "end": 22.4
+  },
+  {
+    "text": "Ma",
+    "start": 22.4,
+    "end": 22.52
+  },
+  {
+    "text": "liste",
+    "start": 22.52,
+    "end": 22.83
+  },
+  {
+    "text": "de",
+    "start": 22.83,
+    "end": 22.95
+  },
+  {
+    "text": "courses",
+    "start": 22.95,
+    "end": 23.38
+  },
+  {
+    "text": "se",
+    "start": 23.38,
+    "end": 23.5
+  },
+  {
+    "text": "remplit",
+    "start": 23.5,
+    "end": 23.93
+  },
+  {
+    "text": "toute",
+    "start": 23.93,
+    "end": 24.21
+  },
+  {
+    "text": "seule,",
+    "start": 24.21,
+    "end": 24.72
+  },
+  {
+    "text": "produit",
+    "start": 24.76,
+    "end": 25.22
+  },
+  {
+    "text": "par",
+    "start": 25.22,
+    "end": 25.43
+  },
+  {
+    "text": "produit,",
+    "start": 25.43,
+    "end": 26.08
+  },
+  {
+    "text": "avec",
+    "start": 26.08,
+    "end": 26.23
+  },
+  {
+    "text": "les",
+    "start": 26.31,
+    "end": 26.53
+  },
+  {
+    "text": "quantités.",
+    "start": 26.53,
+    "end": 27.36
+  },
+  {
+    "text": "J'envoie",
+    "start": 27.41,
+    "end": 27.77
+  },
+  {
+    "text": "mes",
+    "start": 27.79,
+    "end": 27.93
+  },
+  {
+    "text": "commandes",
+    "start": 27.93,
+    "end": 28.46
+  },
+  {
+    "text": "au",
+    "start": 28.54,
+    "end": 28.57
+  },
+  {
+    "text": "fournisseur.",
+    "start": 28.57,
+    "end": 29.34
+  },
+  {
+    "text": "Je",
+    "start": 29.34,
+    "end": 29.43
+  },
+  {
+    "text": "suis",
+    "start": 29.45,
+    "end": 29.61
+  },
+  {
+    "text": "mes",
+    "start": 29.66,
+    "end": 29.69
+  },
+  {
+    "text": "livraisons",
+    "start": 29.9,
+    "end": 30.39
+  },
+  {
+    "text": "en",
+    "start": 30.39,
+    "end": 30.5
+  },
+  {
+    "text": "cours.",
+    "start": 30.5,
+    "end": 31.03
+  },
+  {
+    "text": "Je",
+    "start": 31.04,
+    "end": 31.17
+  },
+  {
+    "text": "valide",
+    "start": 31.17,
+    "end": 31.53
+  },
+  {
+    "text": "un",
+    "start": 31.62,
+    "end": 31.73
+  },
+  {
+    "text": "bon",
+    "start": 31.79,
+    "end": 31.95
+  },
+  {
+    "text": "de",
+    "start": 31.95,
+    "end": 32.07
+  },
+  {
+    "text": "livraisons,",
+    "start": 32.1,
+    "end": 32.93
+  },
+  {
+    "text": "ligne",
+    "start": 33.02,
+    "end": 33.32
+  },
+  {
+    "text": "par",
+    "start": 33.32,
+    "end": 33.51
+  },
+  {
+    "text": "ligne,",
+    "start": 33.51,
+    "end": 33.95
+  },
+  {
+    "text": "sans",
+    "start": 33.95,
+    "end": 34.13
+  },
+  {
+    "text": "rien",
+    "start": 34.23,
+    "end": 34.43
+  },
+  {
+    "text": "recopier.",
+    "start": 34.43,
+    "end": 35.2
+  },
+  {
+    "text": "Mes",
+    "start": 35.27,
+    "end": 35.36
+  },
+  {
+    "text": "factures",
+    "start": 35.36,
+    "end": 35.75
+  },
+  {
+    "text": "partent",
+    "start": 35.75,
+    "end": 36.18
+  },
+  {
+    "text": "dans",
+    "start": 36.38,
+    "end": 36.4
+  },
+  {
+    "text": "les",
+    "start": 36.4,
+    "end": 36.56
+  },
+  {
+    "text": "dépenses,",
+    "start": 36.56,
+    "end": 37.11
+  },
+  {
+    "text": "reliées",
+    "start": 37.11,
+    "end": 37.46
+  },
+  {
+    "text": "aux",
+    "start": 37.46,
+    "end": 37.55
+  },
+  {
+    "text": "livraisons",
+    "start": 37.74,
+    "end": 38.19
+  },
+  {
+    "text": "qui",
+    "start": 38.19,
+    "end": 38.35
+  },
+  {
+    "text": "leur",
+    "start": 38.35,
+    "end": 38.49
+  },
+  {
+    "text": "correspondent.",
+    "start": 38.58,
+    "end": 39.57
+  },
+  {
+    "text": "En",
+    "start": 39.67,
+    "end": 39.74
+  },
+  {
+    "text": "fin",
+    "start": 39.74,
+    "end": 39.96
+  },
+  {
+    "text": "de",
+    "start": 39.96,
+    "end": 40.01
+  },
+  {
+    "text": "mois,",
+    "start": 40.05,
+    "end": 40.53
+  },
+  {
+    "text": "il",
+    "start": 40.53,
+    "end": 40.74
+  },
+  {
+    "text": "n'y",
+    "start": 40.74,
+    "end": 40.88
+  },
+  {
+    "text": "aura",
+    "start": 40.88,
+    "end": 41.17
+  },
+  {
+    "text": "rien",
+    "start": 41.17,
+    "end": 41.46
+  },
+  {
+    "text": "à",
+    "start": 41.46,
+    "end": 41.53
+  },
+  {
+    "text": "reconstituer.",
+    "start": 41.53,
+    "end": 42.68
+  },
+  {
+    "text": "10h.",
+    "start": 42.75,
+    "end": 43.33
+  },
+  {
+    "text": "Mon",
+    "start": 43.33,
+    "end": 43.86
+  },
+  {
+    "text": "équipe.",
+    "start": 43.86,
+    "end": 44.52
+  },
+  {
+    "text": "J'assigne",
+    "start": 44.52,
+    "end": 44.94
+  },
+  {
+    "text": "l'étage",
+    "start": 44.94,
+    "end": 45.4
+  },
+  {
+    "text": "de",
+    "start": 45.4,
+    "end": 45.41
+  },
+  {
+    "text": "la",
+    "start": 45.51,
+    "end": 45.62
+  },
+  {
+    "text": "semaine,",
+    "start": 45.62,
+    "end": 46.24
+  },
+  {
+    "text": "je",
+    "start": 46.24,
+    "end": 46.35
+  },
+  {
+    "text": "publie",
+    "start": 46.44,
+    "end": 46.74
+  },
+  {
+    "text": "le",
+    "start": 46.8,
+    "end": 46.85
+  },
+  {
+    "text": "planning",
+    "start": 46.94,
+    "end": 47.39
+  },
+  {
+    "text": "par",
+    "start": 47.43,
+    "end": 47.64
+  },
+  {
+    "text": "poste",
+    "start": 47.65,
+    "end": 48
+  },
+  {
+    "text": "et",
+    "start": 48,
+    "end": 48.12
+  },
+  {
+    "text": "je",
+    "start": 48.12,
+    "end": 48.24
+  },
+  {
+    "text": "l'imprime",
+    "start": 48.24,
+    "end": 48.74
+  },
+  {
+    "text": "pour",
+    "start": 48.78,
+    "end": 48.94
+  },
+  {
+    "text": "ceux",
+    "start": 49.07,
+    "end": 49.28
+  },
+  {
+    "text": "qui",
+    "start": 49.28,
+    "end": 49.45
+  },
+  {
+    "text": "préfèrent",
+    "start": 49.45,
+    "end": 49.85
+  },
+  {
+    "text": "de",
+    "start": 50.05,
+    "end": 50.13
+  },
+  {
+    "text": "le",
+    "start": 50.13,
+    "end": 50.24
+  },
+  {
+    "text": "papier.",
+    "start": 50.39,
+    "end": 50.8
+  },
+  {
+    "text": "Une",
+    "start": 50.95,
+    "end": 51.05
+  },
+  {
+    "text": "demande",
+    "start": 51.11,
+    "end": 51.29
+  },
+  {
+    "text": "de",
+    "start": 51.29,
+    "end": 51.53
+  },
+  {
+    "text": "congé",
+    "start": 51.64,
+    "end": 51.97
+  },
+  {
+    "text": "arrive.",
+    "start": 52.06,
+    "end": 52.54
+  },
+  {
+    "text": "Je",
+    "start": 52.54,
+    "end": 52.68
+  },
+  {
+    "text": "réponds",
+    "start": 52.68,
+    "end": 53.12
+  },
+  {
+    "text": "une",
+    "start": 53.12,
+    "end": 53.22
+  },
+  {
+    "text": "fois",
+    "start": 53.42,
+    "end": 53.58
+  },
+  {
+    "text": "et",
+    "start": 53.58,
+    "end": 53.61
+  },
+  {
+    "text": "le",
+    "start": 53.71,
+    "end": 53.84
+  },
+  {
+    "text": "planning",
+    "start": 53.84,
+    "end": 54.33
+  },
+  {
+    "text": "se",
+    "start": 54.36,
+    "end": 54.49
+  },
+  {
+    "text": "met",
+    "start": 54.49,
+    "end": 54.68
+  },
+  {
+    "text": "à",
+    "start": 54.68,
+    "end": 54.74
+  },
+  {
+    "text": "jour",
+    "start": 54.74,
+    "end": 54.94
+  },
+  {
+    "text": "tout",
+    "start": 55,
+    "end": 55.25
+  },
+  {
+    "text": "seul.",
+    "start": 55.31,
+    "end": 55.67
+  },
+  {
+    "text": "Je",
+    "start": 55.71,
+    "end": 55.84
+  },
+  {
+    "text": "vérifie",
+    "start": 55.84,
+    "end": 56.29
+  },
+  {
+    "text": "les",
+    "start": 56.29,
+    "end": 56.46
+  },
+  {
+    "text": "pointages",
+    "start": 56.54,
+    "end": 57.07
+  },
+  {
+    "text": "de",
+    "start": 57.07,
+    "end": 57.14
+  },
+  {
+    "text": "la",
+    "start": 57.27,
+    "end": 57.33
+  },
+  {
+    "text": "semaine.",
+    "start": 57.33,
+    "end": 58
+  },
+  {
+    "text": "Ce",
+    "start": 58.23,
+    "end": 58.29
+  },
+  {
+    "text": "qui",
+    "start": 58.29,
+    "end": 58.49
+  },
+  {
+    "text": "sera",
+    "start": 58.49,
+    "end": 58.71
+  },
+  {
+    "text": "payé,",
+    "start": 58.71,
+    "end": 59.14
+  },
+  {
+    "text": "c'est",
+    "start": 59.14,
+    "end": 59.47
+  },
+  {
+    "text": "ce",
+    "start": 59.47,
+    "end": 59.56
+  },
+  {
+    "text": "qui",
+    "start": 59.62,
+    "end": 59.8
+  },
+  {
+    "text": "a",
+    "start": 59.8,
+    "end": 59.84
+  },
+  {
+    "text": "été",
+    "start": 59.91,
+    "end": 60.05
+  },
+  {
+    "text": "travaillé.",
+    "start": 60.05,
+    "end": 61
+  },
+  {
+    "text": "Pas",
+    "start": 61,
+    "end": 61.22
+  },
+  {
+    "text": "une",
+    "start": 61.22,
+    "end": 61.43
+  },
+  {
+    "text": "estimation,",
+    "start": 61.44,
+    "end": 62.33
+  },
+  {
+    "text": "un",
+    "start": 62.42,
+    "end": 62.49
+  },
+  {
+    "text": "relevé.",
+    "start": 62.49,
+    "end": 63.2
+  },
+  {
+    "text": "11h.",
+    "start": 63.27,
+    "end": 63.84
+  },
+  {
+    "text": "Je",
+    "start": 63.92,
+    "end": 64.04
+  },
+  {
+    "text": "n'ai",
+    "start": 64.08,
+    "end": 64.38
+  },
+  {
+    "text": "encore",
+    "start": 64.38,
+    "end": 64.83
+  },
+  {
+    "text": "parlé",
+    "start": 64.83,
+    "end": 65.19
+  },
+  {
+    "text": "à",
+    "start": 65.19,
+    "end": 65.26
+  },
+  {
+    "text": "personne",
+    "start": 65.27,
+    "end": 65.87
+  },
+  {
+    "text": "et",
+    "start": 65.87,
+    "end": 65.93
+  },
+  {
+    "text": "tout",
+    "start": 66.03,
+    "end": 66.32
+  },
+  {
+    "text": "est",
+    "start": 66.32,
+    "end": 66.49
+  },
+  {
+    "text": "déjà",
+    "start": 66.58,
+    "end": 66.84
+  },
+  {
+    "text": "en",
+    "start": 66.84,
+    "end": 66.99
+  },
+  {
+    "text": "route.",
+    "start": 66.99,
+    "end": 67.68
+  }
+]
