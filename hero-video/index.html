@@ -25,12 +25,12 @@
     font-family: "Nunito", "Poppins", system-ui, sans-serif;
   }
   .clip { position: absolute; inset: 0; visibility: hidden; }
-  .clip.media-fill video, .clip.media-fill img { width: 100%; height: 100%; object-fit: cover; display: block; }
+  video.media-fill, .clip.media-fill img { width: 100%; height: 100%; object-fit: cover; display: block; }
 
   /* Sequence-level color grading: sans = 60% desaturated LUT, avec = full color */
-  .seq-sans .media-fill video, .seq-sans .media-fill img { filter: saturate(0.4) grayscale(0.35) contrast(0.96); }
-  .seq-avec .media-fill video, .seq-avec .media-fill img { filter: none; }
-  .seq-neutre .media-fill video, .seq-neutre .media-fill img { filter: none; }
+  .seq-sans video.media-fill, .seq-sans .media-fill img { filter: saturate(0.4) grayscale(0.35) contrast(0.96); }
+  .seq-avec video.media-fill, .seq-avec .media-fill img { filter: none; }
+  .seq-neutre video.media-fill, .seq-neutre .media-fill img { filter: none; }
 
   /* The signature blue wipe: a vertical line sweeping left -> right, revealing color */
   .wipe-sweep {
@@ -505,9 +505,287 @@
 </script>
 
 <div id="hero" class="composition" data-composition-id="hero" data-width="1920" data-height="1080" data-start="0" data-duration="225">
-  <!-- Populated at load time from #hero-data by hero-build.js. Kept out of hand-authored
-       markup on purpose: subtitles and clip timings must always come from data/hero.json,
-       never be retyped in HTML (see brief §"Sous-titres"). -->
+<div class="seq-neutre" data-sequence-id="S0" style="position:absolute;inset:0">
+<div class="clip media-fill" data-start="0" data-duration="9" data-track-index="0">
+<img src="assets/image/ambiance/hero-01-cuisine-vide.png" alt="" />
+</div>
+<div class="clip" data-start="12" data-duration="3" data-track-index="1">
+<div class="card opening"><h1>Un restaurant.
+Un jour.
+Deux fois.</h1></div>
+</div>
+</div>
+<div class="seq-sans" data-sequence-id="S1" style="position:absolute;inset:0">
+<video id="video-1" class="clip media-fill" src="assets/video/hero-directeur-sept-onglets.mp4" data-start="16" data-duration="12" data-track-index="2" muted autoplay playsinline data-media-start="0"></video>
+<div class="clip speaker-tag" data-start="16" data-duration="12" data-track-index="502">
+directeur
+</div>
+<div class="clip subtitle" data-start="16" data-duration="12" data-track-index="1002">
+<span>Huit heures... J'ouvre mes sept onglets. Le stock ne sait pas ce que la caisse a vendu. Alors je fais le pont, à la main.</span>
+</div>
+<audio id="audio-2" class="clip" src="assets/voice/s1-directeur.mp3" data-start="16" data-duration="12" data-track-index="2002" data-volume="1" data-has-audio="true" preload="auto"></audio>
+<video id="video-3" class="clip media-fill" src="assets/video/hero-chef-carnet-dlc.mp4" data-start="28" data-duration="6" data-track-index="3" muted autoplay playsinline data-media-start="0"></video>
+<div class="clip speaker-tag" data-start="28" data-duration="6" data-track-index="503">
+chef
+</div>
+<div class="clip subtitle" data-start="28" data-duration="6" data-track-index="1003">
+<span>Les DLC, je les note sur un carnet... Je les ressaisirai ce soir. Si j'y pense.</span>
+</div>
+<audio id="audio-4" class="clip" src="assets/voice/s1-chef.mp3" data-start="28" data-duration="6" data-track-index="2003" data-volume="1" data-has-audio="true" preload="auto"></audio>
+<video id="video-5" class="clip media-fill" src="assets/video/hero-serveur-trois-tablettes.mp4" data-start="34" data-duration="6" data-track-index="4" muted autoplay playsinline data-media-start="0"></video>
+<div class="clip speaker-tag" data-start="34" data-duration="6" data-track-index="504">
+serveur
+</div>
+<div class="clip subtitle" data-start="34" data-duration="6" data-track-index="1004">
+<span>Onze messages sur le répondeur... Personne n'a décroché entre quinze heures et dix-huit heures hier. On ne saura jamais combien ça nous a coûté.</span>
+</div>
+<audio id="audio-6" class="clip" src="assets/voice/s1-serveur.mp3" data-start="34" data-duration="6" data-track-index="2004" data-volume="1" data-has-audio="true" preload="auto"></audio>
+</div>
+<div class="seq-avec" data-sequence-id="S2" style="position:absolute;inset:0">
+<video id="video-7" class="clip media-fill" src="assets/video/hero-directeur-bureau-matin.mp4" data-start="42" data-duration="17" data-track-index="5" muted autoplay playsinline data-media-start="0"></video>
+<div class="clip speaker-tag" data-start="42" data-duration="17" data-track-index="505">
+directeur
+</div>
+<div class="clip subtitle" data-start="42" data-duration="17" data-track-index="1005">
+<span>Huit heures... Je n'ouvre pas un tableur. J'ouvre ce que PrediBot a préparé cette nuit. Ce qu'on va vendre. Ce qu'il faut produire. Ce qu'il manque... Ma commande part chez mes fournisseurs. Je n'ai appelé personne.</span>
+</div>
+<audio id="audio-8" class="clip" src="assets/voice/s2-directeur.mp3" data-start="42" data-duration="17" data-track-index="2005" data-volume="1" data-has-audio="true" preload="auto"></audio>
+<video id="video-9" class="clip media-fill" src="assets/video/hero-chef-scan-carton.mp4" data-start="59" data-duration="7" data-track-index="6" muted autoplay playsinline data-media-start="0"></video>
+<div class="clip speaker-tag" data-start="59" data-duration="7" data-track-index="506">
+chef
+</div>
+<div class="clip subtitle" data-start="59" data-duration="7" data-track-index="1006">
+<span>Je scanne... La DLC, le lot, la température. C'est tracé avant même que je pose le carton.</span>
+</div>
+<audio id="audio-10" class="clip" src="assets/voice/s2-chef.mp3" data-start="59" data-duration="7" data-track-index="2006" data-volume="1" data-has-audio="true" preload="auto"></audio>
+<video id="video-11" class="clip media-fill" src="assets/video/hero-serveur-plan-table.mp4" data-start="66" data-duration="9" data-track-index="7" muted autoplay playsinline data-media-start="0"></video>
+<div class="clip speaker-tag" data-start="66" data-duration="9" data-track-index="507">
+serveur
+</div>
+<div class="clip subtitle" data-start="66" data-duration="9" data-track-index="1007">
+<span>Les appels de cette nuit, Caroline les a pris... Vingt-deux heures quarante, une table de six. Je n'ai pas décroché. Mon plan de table est fait avant que quiconque pousse la porte.</span>
+</div>
+<audio id="audio-12" class="clip" src="assets/voice/s2-serveur.mp3" data-start="66" data-duration="9" data-track-index="2007" data-volume="1" data-has-audio="true" preload="auto"></audio>
+</div>
+<div class="seq-sans" data-sequence-id="S3" style="position:absolute;inset:0">
+<video id="video-13" class="clip media-fill" src="assets/video/hero-serveur-trois-tablettes.mp4" data-start="77" data-duration="7" data-track-index="8" muted autoplay playsinline data-media-start="0"></video>
+<div class="clip speaker-tag" data-start="77" data-duration="7" data-track-index="508">
+serveur
+</div>
+<div class="clip subtitle" data-start="77" data-duration="7" data-track-index="1008">
+<span>Uber sur cette tablette. La livraison sur celle-là. La salle sur la troisième.</span>
+</div>
+<audio id="audio-14" class="clip" src="assets/voice/s3-serveur.mp3" data-start="77" data-duration="7" data-track-index="2008" data-volume="1" data-has-audio="true" preload="auto"></audio>
+<div class="clip media-fill" data-start="84" data-duration="12" data-track-index="9">
+<img src="assets/image/ambiance/hero-05-bon-tombe.png" alt="" />
+</div>
+<div class="clip speaker-tag" data-start="84" data-duration="12" data-track-index="509">
+chef
+</div>
+<div class="clip subtitle" data-start="84" data-duration="12" data-track-index="1009">
+<span>Un bon est tombé par terre... On s'en rendra compte au dessert. Le tartare est fini depuis midi... Le site l'a vendu trois fois de plus.</span>
+</div>
+<audio id="audio-15" class="clip" src="assets/voice/s3-chef.mp3" data-start="84" data-duration="12" data-track-index="2009" data-volume="1" data-has-audio="true" preload="auto"></audio>
+<video id="video-16" class="clip media-fill" src="assets/video/hero-salle-vide-matin.mp4" data-start="96" data-duration="4" data-track-index="10" muted autoplay playsinline data-media-start="0"></video>
+<div class="clip speaker-tag" data-start="96" data-duration="4" data-track-index="510">
+directeur
+</div>
+<div class="clip subtitle" data-start="96" data-duration="4" data-track-index="1010">
+<span>Je ne sais pas ce qui se passe en salle... Je descends voir.</span>
+</div>
+<audio id="audio-17" class="clip" src="assets/voice/s3-directeur.mp3" data-start="96" data-duration="4" data-track-index="2010" data-volume="1" data-has-audio="true" preload="auto"></audio>
+</div>
+<div class="seq-avec" data-sequence-id="S4" style="position:absolute;inset:0">
+<div class="clip" data-start="100" data-duration="12" data-track-index="11">
+<div class="converge-stage">
+<div class="converge-node" data-corner="tl">QR Table 7</div>
+<div class="converge-node" data-corner="tr">Site web</div>
+<div class="converge-node" data-corner="bl">Agent vocal</div>
+<div class="converge-node" data-corner="br">Livraison</div>
+<div class="converge-line">Une seule file</div>
+</div>
+</div>
+<div class="clip speaker-tag" data-start="100" data-duration="12" data-track-index="511">
+serveur
+</div>
+<div class="clip subtitle" data-start="100" data-duration="12" data-track-index="1011">
+<span>Le QR de la table sept. Le site. L'agent vocal. La livraison... Tout arrive au même endroit.</span>
+</div>
+<audio id="audio-18" class="clip" src="assets/voice/s4a-serveur.mp3" data-start="100" data-duration="12" data-track-index="2011" data-volume="1" data-has-audio="true" preload="auto"></audio>
+<video id="video-19" class="clip media-fill" src="assets/video/hero-brigade-deux-langues.mp4" data-start="112" data-duration="5" data-track-index="12" muted autoplay playsinline data-media-start="0"></video>
+<div class="clip speaker-tag" data-start="112" data-duration="5" data-track-index="512">
+chef
+</div>
+<div class="clip subtitle" data-start="112" data-duration="5" data-track-index="1012">
+<span>Je sors trois kilos de saumon.</span>
+</div>
+<audio id="audio-20" class="clip" src="assets/voice/s4b-chef1.mp3" data-start="112" data-duration="5" data-track-index="2012" data-volume="1" data-has-audio="true" preload="auto"></audio>
+<video id="video-21" class="clip media-fill" src="assets/video/hero-brigade-deux-langues.mp4" data-start="117" data-duration="5" data-track-index="13" muted autoplay playsinline data-media-start="5"></video>
+<div class="clip speaker-tag" data-start="117" data-duration="5" data-track-index="513">
+commis
+</div>
+<div class="clip subtitle" data-start="117" data-duration="5" data-track-index="1013">
+<span>Je sors trois kilos de saumon.</span>
+</div>
+<audio id="audio-22" class="clip" src="assets/voice/s4b-commis-es.mp3" data-start="117" data-duration="5" data-track-index="2013" data-volume="1" data-has-audio="true" preload="auto"></audio>
+<video id="video-23" class="clip media-fill" src="assets/video/hero-brigade-deux-langues.mp4" data-start="122" data-duration="3" data-track-index="14" muted autoplay playsinline data-media-start="10"></video>
+<div class="clip speaker-tag" data-start="122" data-duration="3" data-track-index="514">
+chef
+</div>
+<div class="clip subtitle" data-start="122" data-duration="3" data-track-index="1014">
+<span>Jarvis comprend les deux... Mon stock aussi.</span>
+</div>
+<audio id="audio-24" class="clip" src="assets/voice/s4b-chef2.mp3" data-start="122" data-duration="3" data-track-index="2014" data-volume="1" data-has-audio="true" preload="auto"></audio>
+<video id="video-25" class="clip media-fill" src="assets/video/hero-kds-mural.mp4" data-start="125" data-duration="4" data-track-index="15" muted autoplay playsinline data-media-start="0"></video>
+<div class="clip speaker-tag" data-start="125" data-duration="4" data-track-index="515">
+chef
+</div>
+<div class="clip subtitle" data-start="125" data-duration="4" data-track-index="1015">
+<span>Plat prêt.</span>
+</div>
+<audio id="audio-26" class="clip" src="assets/voice/s4c-chef-platpret.mp3" data-start="125" data-duration="4" data-track-index="2015" data-volume="1" data-has-audio="true" preload="auto"></audio>
+<video id="video-27" class="clip media-fill" src="assets/video/hero-serveur-plan-table.mp4" data-start="129" data-duration="5" data-track-index="16" muted autoplay playsinline data-media-start="0"></video>
+<div class="clip speaker-tag" data-start="129" data-duration="5" data-track-index="516">
+serveur
+</div>
+<div class="clip subtitle" data-start="129" data-duration="5" data-track-index="1016">
+<span>Je n'ai pas eu besoin qu'on me le crie.</span>
+</div>
+<audio id="audio-28" class="clip" src="assets/voice/s4c-serveur.mp3" data-start="129" data-duration="5" data-track-index="2016" data-volume="1" data-has-audio="true" preload="auto"></audio>
+<div class="clip" data-start="134" data-duration="11" data-track-index="17">
+<div class="iris-stage">
+<div class="iris-device" data-slot="1"><div class="toast">Saumon ce soir — Iris</div></div>
+<div class="iris-device" data-slot="2"><div class="toast">Saumon ce soir — Iris</div></div>
+<div class="iris-device" data-slot="3"><div class="toast">Saumon ce soir — Iris</div></div>
+</div>
+</div>
+<div class="clip speaker-tag" data-start="134" data-duration="11" data-track-index="517">
+directeur
+</div>
+<div class="clip subtitle" data-start="134" data-duration="11" data-track-index="1017">
+<span>Trente kilos de saumon à écouler avant jeudi... Iris le voit aussi. À treize heures, mes clients savent qu'il y a du saumon ce soir... Le problème est devenu le plat du jour.</span>
+</div>
+<audio id="audio-29" class="clip" src="assets/voice/s4d-directeur.mp3" data-start="134" data-duration="11" data-track-index="2017" data-volume="1" data-has-audio="true" preload="auto"></audio>
+</div>
+<div class="seq-sans" data-sequence-id="S5" style="position:absolute;inset:0">
+<div class="clip media-fill" data-start="147" data-duration="11" data-track-index="18">
+<img src="assets/image/ambiance/hero-09-caisse-fin-service.png" alt="" />
+</div>
+<div class="clip speaker-tag" data-start="147" data-duration="11" data-track-index="518">
+serveur
+</div>
+<div class="clip subtitle" data-start="147" data-duration="11" data-track-index="1018">
+<span>La caisse, je la compte... Je la recompte. L'écart, c'est trois euros quarante, ou trente-quatre. On saura demain.</span>
+</div>
+<audio id="audio-30" class="clip" src="assets/voice/s5-serveur.mp3" data-start="147" data-duration="11" data-track-index="2018" data-volume="1" data-has-audio="true" preload="auto"></audio>
+<video id="video-31" class="clip media-fill" src="assets/video/hero-chef-carnet-dlc.mp4" data-start="158" data-duration="6" data-track-index="19" muted autoplay playsinline data-media-start="0"></video>
+<div class="clip speaker-tag" data-start="158" data-duration="6" data-track-index="519">
+chef
+</div>
+<div class="clip subtitle" data-start="158" data-duration="6" data-track-index="1019">
+<span>Le contrôle, c'est jeudi... Je remplirai le classeur mercredi soir, de mémoire.</span>
+</div>
+<audio id="audio-32" class="clip" src="assets/voice/s5-chef.mp3" data-start="158" data-duration="6" data-track-index="2019" data-volume="1" data-has-audio="true" preload="auto"></audio>
+<video id="video-33" class="clip media-fill" src="assets/video/hero-directeur-sept-onglets.mp4" data-start="164" data-duration="6" data-track-index="20" muted autoplay playsinline data-media-start="0"></video>
+<div class="clip speaker-tag" data-start="164" data-duration="6" data-track-index="520">
+directeur
+</div>
+<div class="clip subtitle" data-start="164" data-duration="6" data-track-index="1020">
+<span>Mon chiffre de mars... je le connaîtrai en mai.</span>
+</div>
+<audio id="audio-34" class="clip" src="assets/voice/s5-directeur.mp3" data-start="164" data-duration="6" data-track-index="2020" data-volume="1" data-has-audio="true" preload="auto"></audio>
+</div>
+<div class="seq-avec" data-sequence-id="S6" style="position:absolute;inset:0">
+<video id="video-35" class="clip media-fill" src="assets/video/hero-caisse-ticket-z.mp4" data-start="172" data-duration="12" data-track-index="21" muted autoplay playsinline data-media-start="0"></video>
+<div class="clip speaker-tag" data-start="172" data-duration="12" data-track-index="521">
+serveur
+</div>
+<div class="clip subtitle" data-start="172" data-duration="12" data-track-index="1021">
+<span>Le Z... Un geste. L'écart est là, expliqué, archivé... Et les avis du jour ont déjà une réponse.</span>
+</div>
+<audio id="audio-36" class="clip" src="assets/voice/s6-serveur.mp3" data-start="172" data-duration="12" data-track-index="2021" data-volume="1" data-has-audio="true" preload="auto"></audio>
+<video id="video-37" class="clip media-fill" src="assets/video/hero-kds-mural.mp4" data-start="184" data-duration="10" data-track-index="22" muted autoplay playsinline data-media-start="0"></video>
+<div class="clip speaker-tag" data-start="184" data-duration="10" data-track-index="522">
+chef
+</div>
+<div class="clip subtitle" data-start="184" data-duration="10" data-track-index="1022">
+<span>Une photo... L'IA contrôle mon nettoyage. Mon classeur HACCP s'est écrit tout seul... Pendant que je cuisinais.</span>
+</div>
+<audio id="audio-38" class="clip" src="assets/voice/s6-chef.mp3" data-start="184" data-duration="10" data-track-index="2022" data-volume="1" data-has-audio="true" preload="auto"></audio>
+<video id="video-39" class="clip media-fill" src="assets/video/hero-directeur-bureau-matin.mp4" data-start="194" data-duration="6" data-track-index="23" muted autoplay playsinline data-media-start="0"></video>
+<div class="clip speaker-tag" data-start="194" data-duration="6" data-track-index="523">
+directeur
+</div>
+<div class="clip subtitle" data-start="194" data-duration="6" data-track-index="1023">
+<span>Dix-huit heures... Je connais mon chiffre.</span>
+</div>
+<audio id="audio-40" class="clip" src="assets/voice/s6-directeur.mp3" data-start="194" data-duration="6" data-track-index="2023" data-volume="1" data-has-audio="true" preload="auto"></audio>
+</div>
+<div class="seq-avec" data-sequence-id="S7" style="position:absolute;inset:0">
+<div class="triptych">
+<div class="panel">
+<video id="video-41" class="clip" src="assets/video/hero-portrait-chef.mp4" data-start="200" data-duration="6" data-track-index="240" muted autoplay playsinline data-media-start="0"></video>
+</div>
+<div class="panel">
+<video id="video-42" class="clip" src="assets/video/hero-portrait-serveur.mp4" data-start="200" data-duration="6" data-track-index="241" muted autoplay playsinline data-media-start="0"></video>
+</div>
+<div class="panel">
+<video id="video-43" class="clip" src="assets/video/hero-portrait-directeur.mp4" data-start="200" data-duration="6" data-track-index="242" muted autoplay playsinline data-media-start="0"></video>
+</div>
+</div>
+<div class="clip" data-start="206" data-duration="0.4" data-track-index="25">
+<div class="black-frame"></div>
+</div>
+<div class="triptych">
+<div class="panel">
+<video id="video-44" class="clip" src="assets/video/hero-portrait-chef.mp4" data-start="206.5" data-duration="4" data-track-index="260" muted autoplay playsinline data-media-start="0"></video>
+</div>
+<div class="panel">
+<video id="video-45" class="clip" src="assets/video/hero-portrait-serveur.mp4" data-start="206.5" data-duration="4" data-track-index="261" muted autoplay playsinline data-media-start="0"></video>
+</div>
+<div class="panel">
+<video id="video-46" class="clip" src="assets/video/hero-portrait-directeur.mp4" data-start="206.5" data-duration="4" data-track-index="262" muted autoplay playsinline data-media-start="0"></video>
+</div>
+</div>
+<div class="clip subtitle" data-start="206.5" data-duration="4" data-track-index="1026">
+<span>Ce n'est pas la même journée... C'est le même restaurant.</span>
+</div>
+<audio id="audio-47" class="clip" src="assets/voice/s7-narratrice.mp3" data-start="206.5" data-duration="4" data-track-index="2026" data-volume="1" data-has-audio="true" preload="auto"></audio>
+<div class="clip" data-start="211" data-duration="14" data-track-index="27">
+<div class="cta-card"><img class="logo" src="assets/brand/foodeatup-logo-mascot.png" alt="FoodEatUp" /><div class="slogan">Une infinité de solutions pour gérer votre restaurant.</div><div class="cta">Essai gratuit 14 jours — foodeatup.com</div></div>
+</div>
+</div>
+<div class="clip wipe-sweep" data-start="39.65" data-duration="0.7" data-track-index="9000" data-wipe-kind="sans-to-avec">
+<div class="line"></div>
+</div>
+<div class="clip wipe-sweep" data-start="99.65" data-duration="0.7" data-track-index="9001" data-wipe-kind="sans-to-avec">
+<div class="line"></div>
+</div>
+<div class="clip wipe-sweep" data-start="169.65" data-duration="0.7" data-track-index="9002" data-wipe-kind="sans-to-avec">
+<div class="line"></div>
+</div>
+<div class="clip wipe-sweep snap-sweep" data-start="74.8" data-duration="0.4" data-track-index="9100" data-wipe-kind="avec-to-sans">
+<div class="line"></div>
+</div>
+<div class="clip wipe-sweep snap-sweep" data-start="144.8" data-duration="0.4" data-track-index="9101" data-wipe-kind="avec-to-sans">
+<div class="line"></div>
+</div>
+<audio id="audio-48" class="clip" src="assets/sfx/son-clin-passe-take1.mp3" data-start="129" data-duration="1.2" data-track-index="9200" data-volume="1" data-has-audio="true" preload="auto"></audio>
+<audio id="audio-49" class="clip" src="assets/sfx/son-clin-passe-take1.mp3" data-start="198" data-duration="1.2" data-track-index="9201" data-volume="1" data-has-audio="true" preload="auto"></audio>
+<audio id="audio-50" class="clip" src="assets/sfx/son-clin-passe-take1.mp3" data-start="223.5" data-duration="1.2" data-track-index="9202" data-volume="1" data-has-audio="true" preload="auto"></audio>
+<audio id="audio-51" class="clip" src="assets/music/musique-sans.mp3" data-start="15" data-duration="25" data-track-index="9328" data-volume="1" data-has-audio="true" preload="auto"></audio>
+<audio id="audio-52" class="clip" src="assets/music/musique-avec.mp3" data-start="40" data-duration="35" data-track-index="9329" data-volume="1" data-has-audio="true" preload="auto"></audio>
+<audio id="audio-53" class="clip" src="assets/music/musique-sans.mp3" data-start="75" data-duration="25" data-track-index="9330" data-volume="1" data-has-audio="true" preload="auto"></audio>
+<audio id="audio-54" class="clip" src="assets/music/musique-avec.mp3" data-start="100" data-duration="45" data-track-index="9331" data-volume="1" data-has-audio="true" preload="auto"></audio>
+<audio id="audio-55" class="clip" src="assets/music/musique-sans.mp3" data-start="145" data-duration="25" data-track-index="9332" data-volume="1" data-has-audio="true" preload="auto"></audio>
+<audio id="audio-56" class="clip" src="assets/music/musique-resolution-finale.mp3" data-start="170" data-duration="30" data-track-index="9333" data-volume="1" data-has-audio="true" preload="auto"></audio>
+<audio id="audio-57" class="clip" src="assets/music/musique-resolution-finale.mp3" data-start="200" data-duration="25" data-track-index="9334" data-volume="1" data-has-audio="true" preload="auto"></audio>
+<audio id="audio-58" class="clip" src="assets/sfx/son-scanner-bip.mp3" data-start="60" data-duration="1.5" data-track-index="9400" data-volume="1" data-has-audio="true" preload="auto"></audio>
+<audio id="audio-59" class="clip" src="assets/sfx/son-jarvis-ecoute.mp3" data-start="112" data-duration="1.5" data-track-index="9401" data-volume="1" data-has-audio="true" preload="auto"></audio>
+<audio id="audio-60" class="clip" src="assets/sfx/son-jarvis-compris.mp3" data-start="122" data-duration="1.5" data-track-index="9402" data-volume="1" data-has-audio="true" preload="auto"></audio>
+<audio id="audio-61" class="clip" src="assets/sfx/son-imprimante-z.mp3" data-start="172" data-duration="1.5" data-track-index="9403" data-volume="1" data-has-audio="true" preload="auto"></audio>
+<audio id="audio-62" class="clip" src="assets/sfx/son-iris-publie.mp3" data-start="141" data-duration="1.5" data-track-index="9404" data-volume="1" data-has-audio="true" preload="auto"></audio>
+<audio id="audio-63" class="clip" src="assets/sfx/son-validation-haccp.mp3" data-start="184" data-duration="1.5" data-track-index="9405" data-volume="1" data-has-audio="true" preload="auto"></audio>
 </div>
 
 <script>window.__timelines = window.__timelines || {};</script>
