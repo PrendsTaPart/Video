@@ -59,21 +59,20 @@ Sur les 75 vidéos dont les 9 films ont besoin :
 | 🔒 Accès refusé (403) | **2** | à rendre lisibles, voir ci-dessous |
 | ⬜ Aucune vidéo (module Caisse POS + 5 sujets neufs) | **6** | tournage prévu en dernier |
 
-### 3.1 — Les 2 vidéos à débloquer
+### 3.1 — Les 2 vidéos à débloquer — ✅ reçues le 2026-08-08
 
-Ces deux fichiers sont référencés dans le catalogue mais renvoient `403` sur
-S3. Ce sont les deux seules dont j'ai besoin et que je ne peux pas atteindre.
+Ces deux fichiers renvoyaient `403` sur S3. Michael les a envoyées
+directement. **Ce dépôt en est la seule copie**, donc contrairement aux 67
+autres elles sont versionnées telles quelles, dans
+`_sources-non-reproductibles/` — ne pas les ajouter au `.gitignore` des
+rushes, elles ne se retéléchargent pas.
 
-| Slug | Fichier S3 | Sert aux plans |
+| Slug | Fichier archivé | Sert aux plans |
 |---|---|---|
-| `mes-commandes-tous-canaux` | `foodeatup-mes-commandes-tuto-v1` | **C2 — convergence multi-canal** (plan clé), S2 multi-canal salle |
-| `retrouver-ses-reservations-du-jour` | `foodeatup-reservations-jour-tuto` | **S1 — réservations du jour** (plan clé), S3 reprise du soir |
+| `mes-commandes-tous-canaux` | `_sources-non-reproductibles/foodeatup-mes-commandes-tuto-v1.mp4` (30,88 s · 1920×828) | **C2 — convergence multi-canal** (plan clé), S2 multi-canal salle |
+| `retrouver-ses-reservations-du-jour` | `_sources-non-reproductibles/foodeatup-reservations-jour-tuto.mp4` (24,68 s · 1920×828) | **S1 — réservations du jour** (plan clé), S3 reprise du soir |
 
-Deux façons de les obtenir, au choix :
-1. rendre ces deux objets publics dans le bucket, comme les 67 autres ;
-2. les déposer dans le Drive — je les importerai via RapidoCMS.
-
-C'est tout ce dont j'ai besoin côté captures. **Pas 22 vidéos : 2.**
+Côté captures, il ne reste donc que les 6 tournages ci-dessous.
 
 ### 3.2 — Les 6 vidéos qui n'existent pas encore
 
@@ -119,9 +118,59 @@ Sous-titres burn-in au-dessus de la ligne de temps, 42 caractères, 2 lignes.
 Musique en ré mineur sur les neuf : avant 90 BPM montant, pendant 124 BPM
 tendu, après 76 BPM descendant. Ducking −9 dB, normalisation −14 LUFS.
 
-**Palette des films** : `#1E9BF0` `#1B2A41` `#F7F9FC` `#FFA500` + les trois
-couleurs métier. À ne pas confondre avec la palette du site Academy
-(`#FCF9E6` `#0F1A23` `#007BFF` `#FFA500`).
+---
+
+## 5 bis. Charte de rendu — arbitrage Michael du 2026-08-08
+
+Trois consignes qui s'appliquent à **toutes** les vidéos à produire, pas
+seulement à C1. Elles annulent les valeurs correspondantes du §5.
+
+### 5 bis.1 — Le fond suit la charte du site, pas une palette de film à part
+
+Il n'y a plus deux palettes. Le fond des films reprend **exactement** les
+jetons de `src/styles.css` du site Academy, pour que la vidéo et la page qui
+l'héberge soient le même univers :
+
+| Jeton du site | oklch | Hex | Usage dans les films |
+|---|---|---|---|
+| `--cream` | `oklch(.979 .025 99.5)` | `#FCF9E6` | fond de scène (remplace `#F7F9FC`, gris froid) |
+| `--cream-deep` | `oklch(.952 .037 98.7)` | `#F5F0D4` | aplats secondaires, ombre du cadre |
+| `--ink` | `oklch(.212 .024 243.9)` | `#0F1A23` | texte, fond de l'écran incrusté |
+| `--ink-soft` | `oklch(.45 .02 243.9)` | `#4C5760` | surtitres, texte secondaire |
+| `--brand-blue` | `oklch(.605 .217 257.2)` | `#007BFF` | ligne de temps (remplace `#1E9BF0`) |
+| `--brand-orange` | `oklch(.793 .171 70.7)` | `#FFA500` | coches, accents |
+| `--border` | `oklch(.895 .03 98.7)` | `#E1DDC7` | filets |
+
+Le fond n'est pas un aplat : il reprend le `hero-glow` du site — deux
+dégradés radiaux, bleu à 10 % en haut à gauche, orange à 14 % en haut à
+droite — animés lentement pour que les plans ne soient jamais inertes.
+
+### 5 bis.2 — L'écran est le sujet, il occupe le cadre
+
+Le cadre tablette passe de 1360 px à **1560 px de large** (81 % de la largeur
+d'image). Un tutoriel filmé en 1920 de large et réduit à 1360 était illisible
+sur mobile : les libellés de l'interface tombaient sous 10 px de hauteur
+apparente.
+
+### 5 bis.3 — Les mots-clés sont lus de loin
+
+Horloge 34 → **46 px**, surtitre 28 → **40 px**, coches 20 → **30 px**,
+titres de carton 64 → **76 px**. Ce sont les seuls mots que le spectateur
+lit ; ils doivent tenir sur un téléphone tenu à bout de bras.
+
+### 5 bis.4 — Aucun plan ne finit sur du vide
+
+**La règle qui a fait rater le premier montage de C1** : la durée du `<video>`
+doit couvrir **toute** la durée de sa scène. Dès que le clip s'arrête,
+HyperFrames cesse de le peindre et c'est le fond `#0F1A23` du cadre qui reste
+à l'écran — sur C1, près de la moitié des plans étaient un rectangle noir.
+Quand une scène est plus longue que son extrait, enchaîner un deuxième écran
+plutôt que d'étirer le premier.
+
+Corollaire de découpe : **les tutoriels sources se terminent tous par un
+carton marketing** (« Passez à la restauration intelligente ») ou par une
+carte de prompt Claude. Ne prélever qu'entre **10 % et 65 %** de la durée
+source.
 
 ---
 

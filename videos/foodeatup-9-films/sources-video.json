@@ -68,10 +68,7 @@
   "valider-son-bl-en-detail",
   "valider-une-production"
  ],
- "denied": [
-  "mes-commandes-tous-canaux",
-  "retrouver-ses-reservations-du-jour"
- ],
+ "denied": [],
  "nourl": [
   "appliquer-une-remise",
   "cloturer-sa-caisse",
@@ -236,5 +233,10 @@
   "agent-gestion-fournisseur-whatsapp": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/agent-gestion-fournisseur-whatsapp-v1",
   "agent-haccp-whatsapp": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/agent-haccp-whatsapp-v1",
   "gerer-son-stock-par-whatsapp": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/gerer-son-stock-par-whatsapp-v1"
+ },
+ "fourniLocal": {
+  "_comment": "Les deux seules sources que S3 refuse (403). Michael les a fournies le 2026-08-08 ; ce dépôt en est la seule copie, elles sont donc versionnées telles quelles.",
+  "mes-commandes-tous-canaux": "_sources-non-reproductibles/foodeatup-mes-commandes-tuto-v1.mp4",
+  "retrouver-ses-reservations-du-jour": "_sources-non-reproductibles/foodeatup-reservations-jour-tuto.mp4"
  }
 }

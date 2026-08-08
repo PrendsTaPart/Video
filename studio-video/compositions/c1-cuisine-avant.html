@@ -6,14 +6,14 @@
     <script src="assets/vendor/gsap.min.js"></script>
     <style>
       * { margin:0; padding:0; box-sizing:border-box; }
-      html, body { width:1920px; height:1080px; overflow:hidden; background:#F7F9FC; }
+      html, body { width:1920px; height:1080px; overflow:hidden; background:#FCF9E6; }
       body { font-family:"Inter",sans-serif; }
       @font-face {
         font-family:"Fredoka";
         src:url("assets/vendor/fonts/Fredoka-Variable.woff2") format("woff2-variations");
         font-weight:300 700; font-display:block;
       }
-      #root { position:relative; width:1920px; height:1080px; overflow:hidden; background:#F7F9FC; }
+      #root { position:relative; width:1920px; height:1080px; overflow:hidden; background:#FCF9E6; }
       #root > div[data-composition-src] { position:absolute; inset:0; }
     </style>
   </head>
@@ -123,6 +123,48 @@
         data-track-index="10"
         data-volume="1"
       ></audio>
+
+      <!-- Musique : ré mineur, 90 BPM montant, posée sous la voix. -->
+      <audio id="sfx-music" src="assets/audio/c1/music.mp3" data-start="0.00" data-duration="75.38" data-track-index="11" data-volume="0.5"></audio>
+
+      <!-- Fond de cuisine déserte, seulement sous le carton d'ouverture. -->
+      <audio id="sfx-room" src="assets/audio/c1/room.mp3" data-start="0.00" data-duration="9.02" data-track-index="12" data-volume="0.55"></audio>
+
+      <!-- Une coche orange = un tic. Espacés de 280 ms pour un clip de
+           264 ms : ils tiennent tous sur une seule piste sans se croiser. -->
+      <audio id="sfx-chip-01" src="assets/audio/c1/chip.mp3" data-start="6.36" data-duration="0.26" data-track-index="13" data-volume="0.34"></audio>
+      <audio id="sfx-chip-02" src="assets/audio/c1/chip.mp3" data-start="6.64" data-duration="0.26" data-track-index="13" data-volume="0.34"></audio>
+      <audio id="sfx-chip-03" src="assets/audio/c1/chip.mp3" data-start="6.92" data-duration="0.26" data-track-index="13" data-volume="0.34"></audio>
+      <audio id="sfx-chip-04" src="assets/audio/c1/chip.mp3" data-start="19.13" data-duration="0.26" data-track-index="13" data-volume="0.34"></audio>
+      <audio id="sfx-chip-05" src="assets/audio/c1/chip.mp3" data-start="19.41" data-duration="0.26" data-track-index="13" data-volume="0.34"></audio>
+      <audio id="sfx-chip-06" src="assets/audio/c1/chip.mp3" data-start="19.69" data-duration="0.26" data-track-index="13" data-volume="0.34"></audio>
+      <audio id="sfx-chip-07" src="assets/audio/c1/chip.mp3" data-start="19.97" data-duration="0.26" data-track-index="13" data-volume="0.34"></audio>
+      <audio id="sfx-chip-08" src="assets/audio/c1/chip.mp3" data-start="35.26" data-duration="0.26" data-track-index="13" data-volume="0.34"></audio>
+      <audio id="sfx-chip-09" src="assets/audio/c1/chip.mp3" data-start="35.54" data-duration="0.26" data-track-index="13" data-volume="0.34"></audio>
+      <audio id="sfx-chip-10" src="assets/audio/c1/chip.mp3" data-start="45.04" data-duration="0.26" data-track-index="13" data-volume="0.34"></audio>
+      <audio id="sfx-chip-11" src="assets/audio/c1/chip.mp3" data-start="45.32" data-duration="0.26" data-track-index="13" data-volume="0.34"></audio>
+      <audio id="sfx-chip-12" src="assets/audio/c1/chip.mp3" data-start="53.51" data-duration="0.26" data-track-index="13" data-volume="0.34"></audio>
+      <audio id="sfx-chip-13" src="assets/audio/c1/chip.mp3" data-start="53.79" data-duration="0.26" data-track-index="13" data-volume="0.34"></audio>
+      <audio id="sfx-chip-14" src="assets/audio/c1/chip.mp3" data-start="54.07" data-duration="0.26" data-track-index="13" data-volume="0.34"></audio>
+      <audio id="sfx-chip-15" src="assets/audio/c1/chip.mp3" data-start="63.66" data-duration="0.26" data-track-index="13" data-volume="0.34"></audio>
+      <audio id="sfx-chip-16" src="assets/audio/c1/chip.mp3" data-start="63.94" data-duration="0.26" data-track-index="13" data-volume="0.34"></audio>
+      <audio id="sfx-chip-17" src="assets/audio/c1/chip.mp3" data-start="64.22" data-duration="0.26" data-track-index="13" data-volume="0.34"></audio>
+
+      <!-- Souffle de transition, sur chaque changement de scène. -->
+      <audio id="sfx-whoosh-1" src="assets/audio/c1/whoosh.mp3" data-start="4.61" data-duration="0.62" data-track-index="14" data-volume="0.28"></audio>
+      <audio id="sfx-whoosh-2" src="assets/audio/c1/whoosh.mp3" data-start="17.38" data-duration="0.62" data-track-index="14" data-volume="0.28"></audio>
+      <audio id="sfx-whoosh-3" src="assets/audio/c1/whoosh.mp3" data-start="33.51" data-duration="0.62" data-track-index="14" data-volume="0.28"></audio>
+      <audio id="sfx-whoosh-4" src="assets/audio/c1/whoosh.mp3" data-start="43.29" data-duration="0.62" data-track-index="14" data-volume="0.28"></audio>
+      <audio id="sfx-whoosh-5" src="assets/audio/c1/whoosh.mp3" data-start="51.76" data-duration="0.62" data-track-index="14" data-volume="0.28"></audio>
+      <audio id="sfx-whoosh-6" src="assets/audio/c1/whoosh.mp3" data-start="61.91" data-duration="0.62" data-track-index="14" data-volume="0.28"></audio>
+      <audio id="sfx-whoosh-7" src="assets/audio/c1/whoosh.mp3" data-start="70.88" data-duration="0.62" data-track-index="14" data-volume="0.28"></audio>
+
+      <!-- Bip du scanner, calé sur l'ouverture du lecteur EAN à l'écran. -->
+      <audio id="sfx-scan" src="assets/audio/c1/scan.mp3" data-start="24.40" data-duration="0.57" data-track-index="15" data-volume="0.5"></audio>
+
+      <!-- Carillon de validation : production validée, puis carton final. -->
+      <audio id="sfx-valide-1" src="assets/audio/c1/valide.mp3" data-start="64.22" data-duration="1.22" data-track-index="16" data-volume="0.42"></audio>
+      <audio id="sfx-valide-2" src="assets/audio/c1/valide.mp3" data-start="70.88" data-duration="1.22" data-track-index="17" data-volume="0.36"></audio>
     </div>
 
     <script>
