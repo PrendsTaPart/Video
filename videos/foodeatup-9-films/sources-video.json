@@ -9,7 +9,6 @@
   "booster-la-fidelite-programme",
   "booster-les-stocks-dormants",
   "calendrier-de-com-agent-iris",
-  "centraliser-les-commandes-livraison",
   "classer-ses-factures-dans-les-depenses",
   "consulter-ses-productions-en-cours",
   "creer-produit-pour-etiquetage",
@@ -123,7 +122,6 @@
   "ajouter-du-contenu-sur-son-site": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/ajouter-du-contenu-sur-son-site-v1",
   "connecter-son-domaine": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/foodeatup-domaine-tuto-v1.mp4",
   "commander-via-site-vocal-qrcode": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/foodeatup-commander-via-site-vocal-qrcode-tuto-v1",
-  "centraliser-les-commandes-livraison": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/foodeatup-caroline-voix-tuto-v1",
   "configurer-caroline-voix-prompts": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/foodeatup-caroline-voix-tuto-v1",
   "reecouter-ses-appels-et-reservations": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/foodeatup-appels-reservations-tuto",
   "ouvrir-ses-creneaux-de-reservation": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/foodeatup-creneaux-reservation-tuto-v1.mp4",
@@ -245,6 +243,17 @@
    "urlCataloguee": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/foodeatup-avis-abonnement-tuto-v1.mp4",
    "contenuReel": "tutoriel abonnement / changement de plan / paiement Stripe — rien à voir avec le KDS",
    "contournement": "prélever la séquence du tableau KDS en direct dans foodeatup-kds-par-poste-tuto, qui la contient"
-  }
+  },
+  "centraliser-les-commandes-livraison": {
+   "urlCataloguee": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/foodeatup-caroline-voix-tuto-v1",
+   "contenuReel": "configuration de l'agent vocal Caroline — prompt système, simulateur de conversation, voix et téléphonie. Rien sur les commandes de livraison.",
+   "contournement": "prélever une commande au badge livraison dans foodeatup-commandes-multicanal-tuto-v1, qui les liste vraiment."
+  },
+  "retrouver-toutes-mes-commandes": {
+   "urlCataloguee": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-tutorials-bivyyp/videos/foodeatup-predibot-previsions-tuto/out/foodeatup-predibot-previsions-tuto-v1.mp4",
+   "contenuReel": "pointe sur le tutoriel PrediBot (prévisions). Non vérifié image par image, mais le nom de fichier ne correspond pas au sujet — à contrôler avant usage.",
+   "contournement": "non utilisé pour l'instant."
+  },
+  "_avertissement_fidelite": "booster-la-fidelite-programme-v1 : vers 55-65 % de la source, l'enregistrement laisse apparaître la fenêtre de l'application Claude sur le bureau. Ne pas prélever dans cette plage — une appli tierce n'a rien à faire dans un film FoodEatUp."
  }
 }
