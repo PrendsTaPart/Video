@@ -147,5 +147,17 @@
     "rapidocms": "330 fichiers, tous des vidéos produit ; aucun asset sonore, et les rushes produit sont exclus par la règle « aucun plan produit avant la seconde 60 »",
     "voix": "loudnorm par ligne à -17 LUFS, posée 0,8 s après le début de sa scène"
   },
-  "recalage_durees": "aucun : toutes les lignes de voix off tiennent dans les fenêtres de scène d'origine (la plus longue, 9,61 s, dans une fenêtre de 13 s). Les durées 15/13/5/12/10 sont conservées."
+  "recalage_durees": "aucun : toutes les lignes de voix off tiennent dans les fenêtres de scène d'origine (la plus longue, 9,61 s, dans une fenêtre de 13 s). Les durées 15/13/5/12/10 sont conservées.",
+  "publication_rapidocms": {
+    "date": "2026-08-08",
+    "validation": "accord explicite de Michael",
+    "fichiers": {
+      "foodeatup-chaines-boulangerie-v1": "video (id 1235)",
+      "foodeatup-chaines-restauration-v1": "video (id 1236)",
+      "foodeatup-chaines-boulangerie-thumbnail": "image (id 1237)",
+      "foodeatup-chaines-restauration-thumbnail": "image (id 1238)"
+    },
+    "verification": "taille identique a l'octet pres a la source, type MIME correct",
+    "reseaux_sociaux": "AUCUNE publication programmee — l'accord portait sur le depot RapidoCMS seul"
+  }
 }
