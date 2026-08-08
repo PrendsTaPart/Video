@@ -19,24 +19,94 @@
     {
       "variante": "boulangerie",
       "kpi": "taux d'invendus par magasin",
-      "statut": "composition muette rendue et vérifiée (40/40 critères) — VO en attente",
+      "statut": "composition vérifiée (41/41) + MP4 muet de contrôle rendu — VO en attente",
       "duree_cible": 55.0,
       "duree_reelle": 55.0,
       "note_duree": "durée provisoire : les data-duration devront être recalées sur la durée réelle de la VO une fois celle-ci générée (règle C0 : la VO fixe les durées)",
       "sequences": [
-        { "n": 1, "titre": "Le chiffre qui manque", "scene": "s1", "start": 0.0, "duree": 15.0 },
-        { "n": 2, "titre": "L'écart révélé (les 12 barres)", "scene": "s2", "start": 15.0, "duree": 13.0 },
-        { "n": 2, "titre": "L'écart révélé (le mot)", "scene": "s3", "start": 28.0, "duree": 5.0 },
-        { "n": 3, "titre": "Pourquoi personne ne le voit", "scene": "s4", "start": 33.0, "duree": 12.0 },
-        { "n": 4, "titre": "Le coût du délai", "scene": "s5", "start": 45.0, "duree": 10.0 }
-      ]
+        {
+          "n": 1,
+          "titre": "Le chiffre qui manque",
+          "scene": "s1",
+          "start": 0.0,
+          "duree": 15.0
+        },
+        {
+          "n": 2,
+          "titre": "L'écart révélé (les 12 barres)",
+          "scene": "s2",
+          "start": 15.0,
+          "duree": 13.0
+        },
+        {
+          "n": 2,
+          "titre": "L'écart révélé (le mot)",
+          "scene": "s3",
+          "start": 28.0,
+          "duree": 5.0
+        },
+        {
+          "n": 3,
+          "titre": "Pourquoi personne ne le voit",
+          "scene": "s4",
+          "start": 33.0,
+          "duree": 12.0
+        },
+        {
+          "n": 4,
+          "titre": "Le coût du délai",
+          "scene": "s5",
+          "start": 45.0,
+          "duree": 10.0
+        }
+      ],
+      "rendu": "out/foodeatup-chaines-boulangerie-seq1-4-muet-v1.mp4"
     },
     {
       "variante": "restauration",
       "kpi": "food cost par site à carte identique",
-      "statut": "non produite (C3 — après validation de la séquence 2 boulangerie)",
+      "statut": "composition vérifiée (41/41) + MP4 muet de contrôle rendu — VO en attente",
       "duree_cible": 55.0,
-      "duree_reelle": null
+      "duree_reelle": 55.0,
+      "rendu": "out/foodeatup-chaines-restauration-seq1-4-muet-v1.mp4",
+      "note_duree": "durée provisoire : à recaler sur la durée réelle de la VO (règle C0)",
+      "sequences": [
+        {
+          "n": 1,
+          "titre": "Le chiffre qui manque",
+          "scene": "s1",
+          "start": 0.0,
+          "duree": 15.0
+        },
+        {
+          "n": 2,
+          "titre": "L'écart révélé (les 12 barres)",
+          "scene": "s2",
+          "start": 15.0,
+          "duree": 13.0
+        },
+        {
+          "n": 2,
+          "titre": "L'écart révélé (le mot)",
+          "scene": "s3",
+          "start": 28.0,
+          "duree": 5.0
+        },
+        {
+          "n": 3,
+          "titre": "Douze fiches techniques du même plat",
+          "scene": "s4",
+          "start": 33.0,
+          "duree": 12.0
+        },
+        {
+          "n": 4,
+          "titre": "Le coût du délai (prix fournisseur vs marge)",
+          "scene": "s5",
+          "start": 45.0,
+          "duree": 10.0
+        }
+      ]
     },
     {
       "variante": "commun",
@@ -45,5 +115,12 @@
       "duree_cible": 65.0,
       "duree_reelle": null
     }
-  ]
+  ],
+  "rendu_de_controle": {
+    "methode": "capture temps réel Chromium + encodage H.264 (le MCP HyperFrames refuse l'import : « Import URL host is not an allowed Claude Design origin »)",
+    "ecarts_vs_rendu_cloud": [
+      "muet (le son s'ajoute à l'étape enhance)",
+      "transition shader cinematic-zoom remplacée par un fondu croisé 0,5 s (WebGL plante le renderer headless)"
+    ]
+  }
 }

@@ -84,9 +84,14 @@ def main(path: pathlib.Path) -> int:
     chk(not off, f"aucune couleur hors palette ({sorted(off)})")
 
     # --- aucun chiffre non sourcé à l'écran ---
+    # On ne garde que le TEXTE rendu : on retire script/style, puis toutes les
+    # balises AVEC leurs attributs. Sans ça, un style="width:62%" (largeur de
+    # barre, invisible pour le spectateur) ferait échouer le critère à tort.
     visible = re.sub(r"<script.*?</script>|<style.*?</style>", "", h, flags=re.S)
+    visible = re.sub(r"<[^>]+>", " ", visible)
     chk("%" not in visible, "aucun pourcentage affiché")
     chk("€" not in visible, "aucun montant affiché")
+    chk(not re.search(r"\d[\d\s.,]*\s*(g|kg|€|%)\b", visible), "aucune quantité chiffrée affichée")
 
     print("\n".join("  OK   " + x for x in ok))
     if bad:

@@ -39,9 +39,12 @@ Aucun n'a été fourni. Aucun n'est utilisé dans la production actuelle.
 
 | Élément | Valeur | Traitement à l'écran |
 |---|---|---|
-| Nombre de magasins | 12 | Cardinal narratif, pas une mesure. Nommés « Magasin 01 » à « Magasin 12 ». |
+| Nombre de points de vente | 12 | Cardinal narratif, pas une mesure. Nommés « Magasin 01 » à « Magasin 12 » (boulangerie) ou « Site 01 » à « Site 12 » (restauration). |
 | Longueurs relatives des 12 barres (séq. 2) | générées, non chiffrées | Aucun nombre affiché. Suite déterministe figée en dur dans le HTML (pas de `Math.random()` — contrainte de déterminisme HyperFrames). |
-| Quantités manuscrites des carnets (séq. 3) | illisibles par construction | Rendues comme des gribouillis, jamais comme des nombres lisibles. Aucune valeur à sourcer. |
+| Quantités manuscrites des carnets (séq. 3, boulangerie) | illisibles par construction | Rendues comme des gribouillis, jamais comme des nombres lisibles. Aucune valeur à sourcer. |
+| Grammages des 12 fiches techniques (séq. 3, restauration) | rendus en **barres**, pas en nombres | Le brief demande « grammages différents surlignés en orange ». Afficher des grammes reviendrait à écrire à l'écran des chiffres absents de ce fichier : chaque grammage est donc une barre orange de longueur variable. La différence entre recettes se voit, aucune quantité n'est affirmée. |
+| Nom du plat (séq. 3, restauration) | « Burger maison » | Libellé générique de carte, inventé pour la démonstration. Aucune enseigne, aucune marque, aucun plat réel. |
+| Courbes prix fournisseur / marge (séq. 4, restauration) | sans axe ni graduation | Deux tracés de tendance : le prix monte, la marge s'érode. Aucune valeur, aucune échelle, aucun pourcentage. |
 
 Aucun de ces éléments n'est présenté comme une donnée de marché ni comme un résultat
 FoodEatUp.

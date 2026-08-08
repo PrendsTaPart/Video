@@ -9,9 +9,13 @@ Cible : dirigeants et directeurs financiers de chaînes de boulangerie et de res
 
 | Bloc | Périmètre | État |
 |---|---|---|
-| `boulangerie/` | séquences 1 à 4 (~55 s) | **composition muette rendue et vérifiée** — VO en attente |
-| `restauration/` | séquences 1 à 4 | non produit (C3) |
+| `boulangerie/` | séquences 1 à 4 (55 s) | **vérifiée 41/41 + MP4 muet rendu** — VO en attente |
+| `restauration/` | séquences 1 à 4 (55 s) | **vérifiée 41/41 + MP4 muet rendu** — VO en attente |
 | `commun/` | séquences 5 à 9 | **bloqué** — voir ci-dessous |
+
+Les deux variantes partagent leur socle (`_shared/base.py`) : charte, squelette de
+scènes, tableau de bord siège, douze barres, frise, timeline des séquences 1 et 2.
+Chaque `build.py` n'apporte que son KPI, ses libellés et sa séquence 3.
 
 ### Deux points bloquants, tous deux documentés dans `SOURCES.md`
 
@@ -33,22 +37,30 @@ Cible : dirigeants et directeurs financiers de chaînes de boulangerie et de res
 
 ```
 foodeatup-chaines/
-  chaines.json          état, durées, voix off
-  SOURCES.md            tout chiffre affiché doit y figurer (aujourd'hui : aucun)
-  _fonts/               Fredoka + Baloo 2 (woff2, inlinés en base64 au build)
+  chaines.json           état, durées, voix off
+  SOURCES.md             tout chiffre affiché doit y figurer (aujourd'hui : aucun)
+  _fonts/                Fredoka + Baloo 2 (woff2, inlinés en base64 au build)
+  _shared/
+    base.py              socle commun aux deux variantes
+    check.py             41 critères d'acceptation (C0 + contrat HyperFrames)
   boulangerie/
-    build.py            génère index.html
-    check.py            40 critères d'acceptation (C0 + contrat HyperFrames)
-    index.html          la composition — 530 Ko, auto-portée
-    assets/img/         carnet.png, fournee.png, logo-horizontal.png, mark-eight.png
+    build.py             KPI invendus ; séq. 3 = les douze carnets
+    index.html           la composition — 531 Ko, auto-portée
+    assets/img/          carnet.png, fournee.png, logo, mark-eight
+    out/                 MP4 muet de contrôle
+  restauration/
+    build.py             KPI food cost ; séq. 3 = les douze fiches techniques
+    index.html           la composition — 222 Ko, auto-portée
+    assets/img/          plat.png, logo, mark-eight
+    out/                 MP4 muet de contrôle
 ```
 
 ## Régénérer
 
 ```bash
-cd boulangerie
-python3 build.py     # réécrit index.html
-python3 check.py     # 40/40 attendu
+cd boulangerie   # ou restauration
+python3 build.py
+python3 ../_shared/check.py index.html    # 41/41 attendu
 ```
 
 ## Choix techniques à connaître
@@ -64,7 +76,7 @@ sortante reste visible **sous** la suivante : GSAP promeut les éléments animé
 de composition, et un calque promu se rasterise au-dessus du fond d'une scène frère
 postérieure — alors même que l'ordre DOM, les styles calculés et `elementFromPoint`
 indiquent tous l'inverse. Constaté au contrôle visuel : « L'écart » (s3) transparaissait
-sous les séquences 3 et 4. `check.py` vérifie ce point.
+sous les séquences 3 et 4. `_shared/check.py` vérifie ce point.
 
 **Scènes longues assumées.** Le guide HyperFrames conseille ≤ 5 s par scène ; ici une
 scène = une séquence du brief (10 à 15 s), parce que chaque séquence est **une animation
@@ -76,9 +88,14 @@ s'arrêtent à 55 s — elles ne montrent donc aucune capture, par construction.
 
 ## Contrôle visuel
 
-Le rendu a été vérifié sur 10 frames réelles (Chromium). Deux défauts trouvés et corrigés :
-la scène « L'écart » qui transparaissait (z-index), et les 5 plateaux de la séquence 4
-superposés au pixel près — l'empilement ne se voyait pas.
+Chaque variante est vérifiée sur 10 frames réelles (Chromium). Défauts trouvés ainsi,
+puis corrigés — aucun n'aurait été vu sans regarder les images :
+- la scène « L'écart » (s3) transparaissait sous les séquences 3 et 4 → `z-index` ;
+- les 5 plateaux de la séquence 4 étaient superposés au pixel près → décalés ;
+- le surlignage du meilleur point de vente, en accent `#007BFF`, était indiscernable du
+  bleu système `#147AFF` des onze autres barres → passé en marine ;
+- en restauration, les légendes « Prix fournisseur » / « Marge » chevauchaient la fin
+  des courbes → dégagées verticalement.
 
 Pour re-vérifier, il faut une copie de test : le runtime HyperFrames et les shaders WebGL
 plantent le renderer headless, et `python3 -m http.server` (mono-thread) bloque le
@@ -90,6 +107,26 @@ Piège rencontré : `page.evaluate("tl.pause(t)")` renvoie l'objet Timeline GSAP
 Playwright tente de sérialiser — graphe circulaire, blocage complet. Écrire
 `page.evaluate("(t)=>{tl.pause(t);}", t)`, qui ne renvoie rien.
 
+## Le rendu de contrôle (`out/`)
+
+Le MCP HyperFrames **refuse l'import** — `Import URL host is not an allowed Claude
+Design origin` — aussi bien depuis `raw.githubusercontent.com` que depuis une URL
+d'artifact Claude : la voie d'import passe par le bouton « Send to HyperFrames »
+côté Claude Design, pas par une URL qu'on lui fournit.
+
+Pour que les séquences puissent être jugées tout de suite, chaque composition est
+donc capturée en temps réel dans Chromium (55,00 s, 1920×1080, 25 fps) puis encodée
+en H.264. **Deux écarts assumés par rapport au rendu cloud :**
+
+- **muet** — c'est le cas de tout export de ce type (le guide HyperFrames le dit :
+  le son s'ajoute à l'étape « enhance ») ; et la VO n'est de toute façon pas générée ;
+- la transition shader `cinematic-zoom` (s2 → s3) est remplacée par un **fondu croisé
+  de 0,5 s** au même instant : les shaders WebGL plantent le renderer headless.
+  Les `index.html` gardent bien le shader.
+
+Coût du rendu cloud, pour mémoire : l'import est gratuit, le rendu est facturé
+**20 crédits par minute rendue** (≈ 18 crédits pour 55 s).
+
 ## Prochaines étapes
 
 1. Trancher sur la vue groupe (existe / roadmap / n'existe pas).
@@ -100,6 +137,7 @@ Playwright tente de sérialiser — graphe circulaire, blocage complet. Écrire
 
 ## Provenance des visuels
 
-`carnet.png` et `fournee.png` ont été générés sur RapidoCMS (`generate_image`), puis
-détourés (flood fill depuis les bords), recadrés et réduits. Aucune IP tierce, aucun
-logo d'enseigne, aucun visage, aucun texte lisible dans les illustrations.
+`carnet.png`, `fournee.png` (boulangerie) et `plat.png` (restauration) ont été générés
+sur RapidoCMS (`generate_image`), puis détourés (flood fill depuis les bords), recadrés
+et réduits. Les logos sont ceux fournis par Michael. Aucune IP tierce, aucun logo
+d'enseigne, aucun visage, aucun texte lisible dans les illustrations.

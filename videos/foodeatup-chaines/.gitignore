@@ -7,3 +7,4 @@ _bisect*.html
 
 # rendu local de contrôle
 _render.html
+__pycache__/
