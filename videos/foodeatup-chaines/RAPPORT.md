@@ -120,7 +120,15 @@ balaie tout le fichier à la recherche d'images vides.
   La séquence 6 étant bloquée, elle se réduirait à séquence 2 + séquence 9, soit ≈ 28 s.
   Et C4 impose de **proposer la voix off réduite AVANT de la générer** : la proposition
   est ci-dessous, rien n'a été généré.
-- **Upload RapidoCMS** — voir la section ci-dessous.
+- **Upload RapidoCMS** — **volontairement pas fait**, et c'est un désaccord assumé
+  avec C4. `videos/FOODEATUP-TUTORIELS-WORKFLOW.md` (étape 6, « STOP obligatoire »)
+  pose la règle inverse : *« Ne pas publier tant que la vidéo n'est pas validée : ni
+  upload/schedule RapidoCMS+LinkedIn, ni mise à jour du site Lovable. Attendre un
+  retour explicite. »* C4 supposait que C1/C2/C3 avaient été validées avant d'arriver
+  là — ce n'est pas le cas, et deux points de fond restent ouverts (les chiffres, la
+  vue groupe). Déposer les fichiers dans la bibliothèque RapidoCMS, d'où partent les
+  publications, avant validation, serait prendre une décision qui ne m'appartient pas.
+  Les six lignes de `upload_file_tool` sont prêtes : un mot et je les lance.
 - **Pull request** — non ouverte : `videos/FOODEATUP-TUTORIELS-WORKFLOW.md` note que le
   dépôt n'a pas de branche `main` distincte, la branche désignée EST la branche par
   défaut. Tout est poussé sur `claude/foodeatup-chaines-video-1vij8y`.
