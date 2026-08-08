@@ -33,6 +33,8 @@ FILMS = {
     "s2-salle-pendant":   ("s2", "pendant", "#F59E0B"),
     "s3-salle-apres":     ("s3", "apres",   "#F59E0B"),
     "d1-direction-avant": ("d1", "avant",   "#475569"),
+    "d2-direction-pendant": ("d2", "pendant", "#475569"),
+    "d3-direction-apres":  ("d3", "apres",   "#475569"),
 }
 
 ICI = pathlib.Path(__file__).resolve().parent
