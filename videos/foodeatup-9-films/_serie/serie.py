@@ -220,6 +220,25 @@ class Serie:
         .md-montant {{ position:absolute; left:0; right:0; top:60px; text-align:center;
                        font-family:"Fredoka",sans-serif; font-weight:700; font-size:76px; color:{INK}; }}
 
+        .md-note {{ position:absolute; left:50%; margin-left:-250px; top:40px; width:500px;
+                    background:#FFFFFF; border:3px solid {BORDER}; border-radius:18px;
+                    padding:22px 26px; box-shadow:0 18px 44px rgba(15,26,35,.12); }}
+        .md-note .entete {{ font-family:"Fredoka",sans-serif; font-weight:700; font-size:30px;
+                            color:{INK}; border-bottom:2px solid {BORDER}; padding-bottom:12px; }}
+        .md-note .ligne {{ display:flex; justify-content:space-between; margin-top:14px;
+                           font-family:"Fredoka",sans-serif; font-weight:600; font-size:26px; color:{INK_SOFT}; }}
+        .md-note .total {{ display:flex; justify-content:space-between; margin-top:18px;
+                           padding-top:14px; border-top:2px solid {BORDER};
+                           font-family:"Fredoka",sans-serif; font-weight:700; font-size:34px; color:{INK}; }}
+        .md-part {{ position:absolute; top:150px; width:300px; background:#FFFFFF;
+                    border:3px solid {BORDER}; border-radius:16px; padding:18px 0; text-align:center;
+                    font-family:"Fredoka",sans-serif; font-weight:700; font-size:34px; color:{INK};
+                    opacity:0; box-shadow:0 14px 34px rgba(15,26,35,.10); }}
+        .md-part span {{ display:block; font-size:22px; font-weight:600; color:{INK_SOFT}; margin-top:4px; }}
+        .md-remise {{ position:absolute; left:50%; margin-left:-130px; top:400px; width:260px;
+                      background:{ORANGE}; color:{INK}; border-radius:999px; padding:14px 0;
+                      text-align:center; font-family:"Fredoka",sans-serif; font-weight:700;
+                      font-size:32px; opacity:0; box-shadow:0 10px 26px rgba(255,165,0,.3); }}
         .amb {{ position:absolute; inset:0; width:100%; height:100%; object-fit:cover; opacity:0; }}
         .title {{ position:absolute; left:0; right:0; bottom:132px; text-align:center;
                   font-family:"Fredoka",sans-serif; font-weight:700; font-size:76px; color:{CREAM};
@@ -405,6 +424,43 @@ class Serie:
               '          onUpdate: () => { document.getElementById("mdMontant").textContent =\n'
               '            compteur.v.toFixed(2).replace(".", ",") + " €"; } }, 1.1);\n')
         return self._motion(cid, abs_debut, dur, clock, eyebrow, html, js, checks)
+
+
+    def motion_note(self, cid, abs_debut, dur, clock, eyebrow, table, lignes, total, parts, remise):
+        """« J'encaisse, je sépare, j'applique la remise. » Une seule note.
+
+        Les trois étapes du module Caisse POS sont réunies ici plutôt que
+        d'occuper trois scènes de deux secondes : la voix les nomme dans la
+        même respiration et c'est le même objet à l'écran.
+        """
+        html = '          <div class="md-note" id="mdNote">\n'
+        html += f'            <div class="entete">{table}</div>\n'
+        for i, (lib, px) in enumerate(lignes):
+            html += f'            <div class="ligne" id="mdL{i}"><span>{lib}</span><span>{px}</span></div>\n'
+        html += f'            <div class="total" id="mdTotal"><span>Total</span><span>{total}</span></div>\n'
+        html += "          </div>\n"
+        n = len(parts)
+        ecart = 1560 // n
+        for i, p in enumerate(parts):
+            gauche = i * ecart + (ecart - 300) // 2
+            html += (f'          <div class="md-part" id="mdPart{i}" style="left:{gauche}px;">{p}'
+                     f'<span>part {i + 1}</span></div>\n')
+        html += f'          <div class="md-remise" id="mdRemise">{remise}</div>\n'
+
+        js = '        tl.fromTo("#mdNote", { opacity:0, y:16 }, { opacity:1, y:0, duration:.35, ease:"back.out(1.4)" }, .45);\n'
+        for i in range(len(lignes)):
+            js += f'        tl.fromTo("#mdL{i}", {{ opacity:0, x:-14 }}, {{ opacity:1, x:0, duration:.22 }}, {0.75 + i * .14:.2f});\n'
+        js += '        tl.fromTo("#mdTotal", { opacity:0 }, { opacity:1, duration:.3 }, 1.3);\n'
+        # La note se sépare : elle recule, les parts descendent d'elle.
+        js += '        tl.to("#mdNote", { scale:.72, y:-70, duration:.5, ease:"power2.inOut" }, 3.4);\n'
+        for i in range(n):
+            js += (f'        tl.fromTo("#mdPart{i}", {{ opacity:0, y:-40, scale:.85 }},'
+                   f' {{ opacity:1, y:0, scale:1, duration:.4, ease:"back.out(1.6)" }}, {3.7 + i * .16:.2f});\n')
+        # Puis la remise, posée sur l'ensemble.
+        js += '        tl.fromTo("#mdRemise", { opacity:0, scale:.7 }, { opacity:1, scale:1, duration:.35, ease:"back.out(2)" }, 5.9);\n'
+        js += f'        tl.to("#mdPart{n - 1}", {{ borderColor:"{ORANGE}", duration:.3 }}, 6.1);\n'
+        return self._motion(cid, abs_debut, dur, clock, eyebrow, html, js,
+                            ["Encaissé", "Séparé", "Remise appliquée"])
 
     # ── écriture ─────────────────────────────────────────────────────────
     def ecrire(self, scenes):

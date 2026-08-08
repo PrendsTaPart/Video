@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=1920, height=1080" />
+    <script src="assets/vendor/gsap.min.js"></script>
+    <style>
+      * { margin:0; padding:0; box-sizing:border-box; }
+      html, body { width:1920px; height:1080px; overflow:hidden; background:#FCF9E6; }
+      body { font-family:"Inter",sans-serif; }
+      @font-face {
+        font-family:"Fredoka";
+        src:url("assets/vendor/fonts/Fredoka-Variable.woff2") format("woff2-variations");
+        font-weight:300 700; font-display:block;
+      }
+      #root { position:relative; width:1920px; height:1080px; overflow:hidden; background:#FCF9E6; }
+      #root > div[data-composition-src] { position:absolute; inset:0; }
+    </style>
+  </head>
+  <body>
+    <div id="root" data-composition-id="s2-salle-pendant" data-start="0"
+         data-width="1920" data-height="1080" data-duration="68.4">
+      <div
+        id="el-s2-s1-midi"
+        data-composition-id="s2-s1-midi"
+        data-composition-src="compositions/s2/s2-s1-midi.html"
+        data-start="0.00"
+        data-duration="2.15"
+        data-track-index="1"
+        data-width="1920"
+        data-height="1080"
+      ></div>
+      <div
+        id="el-s2-s2-placer"
+        data-composition-id="s2-s2-placer"
+        data-composition-src="compositions/s2/s2-s2-placer.html"
+        data-start="2.15"
+        data-duration="4.95"
+        data-track-index="1"
+        data-width="1920"
+        data-height="1080"
+      ></div>
+      <div
+        id="el-s2-s3-qr"
+        data-composition-id="s2-s3-qr"
+        data-composition-src="compositions/s2/s2-s3-qr.html"
+        data-start="7.10"
+        data-duration="5.94"
+        data-track-index="1"
+        data-width="1920"
+        data-height="1080"
+      ></div>
+      <div
+        id="el-s2-s4-canaux"
+        data-composition-id="s2-s4-canaux"
+        data-composition-src="compositions/s2/s2-s4-canaux.html"
+        data-start="13.04"
+        data-duration="8.48"
+        data-track-index="1"
+        data-width="1920"
+        data-height="1080"
+      ></div>
+      <div
+        id="el-s2-s5-livraison"
+        data-composition-id="s2-s5-livraison"
+        data-composition-src="compositions/s2/s2-s5-livraison.html"
+        data-start="21.52"
+        data-duration="7.07"
+        data-track-index="1"
+        data-width="1920"
+        data-height="1080"
+      ></div>
+      <div
+        id="el-s2-s6-noshow"
+        data-composition-id="s2-s6-noshow"
+        data-composition-src="compositions/s2/s2-s6-noshow.html"
+        data-start="28.59"
+        data-duration="6.97"
+        data-track-index="1"
+        data-width="1920"
+        data-height="1080"
+      ></div>
+      <div
+        id="el-s2-s7-note"
+        data-composition-id="s2-s7-note"
+        data-composition-src="compositions/s2/s2-s7-note.html"
+        data-start="35.56"
+        data-duration="8.83"
+        data-track-index="1"
+        data-width="1920"
+        data-height="1080"
+      ></div>
+      <div
+        id="el-s2-s8-fidelite"
+        data-composition-id="s2-s8-fidelite"
+        data-composition-src="compositions/s2/s2-s8-fidelite.html"
+        data-start="44.39"
+        data-duration="6.57"
+        data-track-index="1"
+        data-width="1920"
+        data-height="1080"
+      ></div>
+      <div
+        id="el-s2-s9-recompense"
+        data-composition-id="s2-s9-recompense"
+        data-composition-src="compositions/s2/s2-s9-recompense.html"
+        data-start="50.96"
+        data-duration="3.06"
+        data-track-index="1"
+        data-width="1920"
+        data-height="1080"
+      ></div>
+      <div
+        id="el-s2-s10-soir"
+        data-composition-id="s2-s10-soir"
+        data-composition-src="compositions/s2/s2-s10-soir.html"
+        data-start="54.02"
+        data-duration="5.92"
+        data-track-index="1"
+        data-width="1920"
+        data-height="1080"
+      ></div>
+      <div
+        id="el-s2-s11-service"
+        data-composition-id="s2-s11-service"
+        data-composition-src="compositions/s2/s2-s11-service.html"
+        data-start="59.94"
+        data-duration="8.46"
+        data-track-index="1"
+        data-width="1920"
+        data-height="1080"
+      ></div>
+
+      <!-- Voix off continue — survit à chaque coupe. -->
+      <audio id="el-vo" src="assets/audio/s2-salle-pendant-vo.mp3" data-start="0"
+             data-duration="63.44" data-track-index="10" data-volume="1"></audio>
+
+      <!-- Musique : ré mineur, 124 BPM tendu — registre « pendant ». -->
+      <audio id="sfx-music" src="assets/audio/s2/music.mp3" data-start="0.00" data-duration="68.40" data-track-index="11" data-volume="0.5"></audio>
+
+      <!-- Ambiance de salle en service, du premier client au second service. -->
+      <audio id="sfx-salle-1" src="assets/audio/s2/salle-service.mp3" data-start="0.00" data-duration="22.00" data-track-index="12" data-volume="0.5"></audio>
+      <audio id="sfx-salle-2" src="assets/audio/s2/salle-service.mp3" data-start="46.40" data-duration="22.00" data-track-index="12" data-volume="0.46"></audio>
+
+      <!-- Le QR scanné par le client (7,10 s). -->
+      <audio id="sfx-qr" src="assets/audio/s2/scan-qr.mp3" data-start="8.40" data-duration="1.03" data-track-index="13" data-volume="0.42"></audio>
+
+      <!-- Le terminal de paiement, sur « au comptoir j'encaisse » (35,56 s). -->
+      <audio id="sfx-caisse" src="assets/audio/s2/caisse.mp3" data-start="36.60" data-duration="1.34" data-track-index="14" data-volume="0.4"></audio>
+
+      <!-- Un tic par coche. Deux pistes en alternance : 280 ms d'écart
+           pour un clip de 288 ms. Le tic est celui de S1, déjà calibré —
+           celui régénéré pour ce film est sorti 33 dB trop bas. -->
+      <audio id="sfx-tick-01" src="assets/audio/s2/tick.mp3" data-start="3.90" data-duration="0.29" data-track-index="15" data-volume="0.32"></audio>
+      <audio id="sfx-tick-02" src="assets/audio/s2/tick.mp3" data-start="4.18" data-duration="0.29" data-track-index="16" data-volume="0.32"></audio>
+      <audio id="sfx-tick-03" src="assets/audio/s2/tick.mp3" data-start="8.85" data-duration="0.29" data-track-index="15" data-volume="0.32"></audio>
+      <audio id="sfx-tick-04" src="assets/audio/s2/tick.mp3" data-start="9.13" data-duration="0.29" data-track-index="16" data-volume="0.32"></audio>
+      <audio id="sfx-tick-05" src="assets/audio/s2/tick.mp3" data-start="14.79" data-duration="0.29" data-track-index="15" data-volume="0.32"></audio>
+      <audio id="sfx-tick-06" src="assets/audio/s2/tick.mp3" data-start="15.07" data-duration="0.29" data-track-index="16" data-volume="0.32"></audio>
+      <audio id="sfx-tick-07" src="assets/audio/s2/tick.mp3" data-start="15.35" data-duration="0.29" data-track-index="15" data-volume="0.32"></audio>
+      <audio id="sfx-tick-08" src="assets/audio/s2/tick.mp3" data-start="15.63" data-duration="0.29" data-track-index="16" data-volume="0.32"></audio>
+      <audio id="sfx-tick-09" src="assets/audio/s2/tick.mp3" data-start="23.27" data-duration="0.29" data-track-index="15" data-volume="0.32"></audio>
+      <audio id="sfx-tick-10" src="assets/audio/s2/tick.mp3" data-start="23.55" data-duration="0.29" data-track-index="16" data-volume="0.32"></audio>
+      <audio id="sfx-tick-11" src="assets/audio/s2/tick.mp3" data-start="23.83" data-duration="0.29" data-track-index="15" data-volume="0.32"></audio>
+      <audio id="sfx-tick-12" src="assets/audio/s2/tick.mp3" data-start="30.34" data-duration="0.29" data-track-index="15" data-volume="0.32"></audio>
+      <audio id="sfx-tick-13" src="assets/audio/s2/tick.mp3" data-start="30.62" data-duration="0.29" data-track-index="16" data-volume="0.32"></audio>
+      <audio id="sfx-tick-14" src="assets/audio/s2/tick.mp3" data-start="37.31" data-duration="0.29" data-track-index="15" data-volume="0.32"></audio>
+      <audio id="sfx-tick-15" src="assets/audio/s2/tick.mp3" data-start="37.59" data-duration="0.29" data-track-index="16" data-volume="0.32"></audio>
+      <audio id="sfx-tick-16" src="assets/audio/s2/tick.mp3" data-start="37.87" data-duration="0.29" data-track-index="15" data-volume="0.32"></audio>
+      <audio id="sfx-tick-17" src="assets/audio/s2/tick.mp3" data-start="46.14" data-duration="0.29" data-track-index="15" data-volume="0.32"></audio>
+      <audio id="sfx-tick-18" src="assets/audio/s2/tick.mp3" data-start="46.42" data-duration="0.29" data-track-index="16" data-volume="0.32"></audio>
+      <audio id="sfx-tick-19" src="assets/audio/s2/tick.mp3" data-start="52.71" data-duration="0.29" data-track-index="15" data-volume="0.32"></audio>
+      <audio id="sfx-tick-20" src="assets/audio/s2/tick.mp3" data-start="55.77" data-duration="0.29" data-track-index="15" data-volume="0.32"></audio>
+      <audio id="sfx-tick-21" src="assets/audio/s2/tick.mp3" data-start="56.05" data-duration="0.29" data-track-index="16" data-volume="0.32"></audio>
+    </div>
+
+    <script>
+      window.__timelines = window.__timelines || {};
+      window.__timelines["s2-salle-pendant"] = gsap.timeline({ paused: true });
+    </script>
+  </body>
+</html>
