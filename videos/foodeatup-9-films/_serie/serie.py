@@ -264,13 +264,13 @@ class Serie:
                        transform-origin:center; transform:scaleX(0); }}
         /* Clôture : la marque à gauche, Michael à droite. */
         .fin-logo {{ position:absolute; left:150px; top:290px; width:680px; opacity:0; }}
-        .fin-baseline {{ position:absolute; left:150px; top:470px; width:820px;
-                         font-family:"Fredoka",sans-serif; font-weight:600; font-size:50px;
-                         color:{INK}; opacity:0; line-height:1.32; }}
-        .fin-lisere {{ position:absolute; left:150px; top:690px; width:180px; height:6px;
+        .fin-baseline {{ position:absolute; left:150px; top:480px; width:1000px;
+                         font-family:"Fredoka",sans-serif; font-weight:600; font-size:42px;
+                         color:{INK}; opacity:0; line-height:1.38; }}
+        .fin-lisere {{ position:absolute; left:150px; top:660px; width:180px; height:6px;
                        border-radius:3px; background:{self.metier};
                        transform-origin:left center; transform:scaleX(0); }}
-        .fin-photo {{ position:absolute; right:140px; bottom:0; height:980px; opacity:0; }}
+        .fin-photo {{ position:absolute; right:40px; bottom:0; height:900px; opacity:0; }}
         .amb {{ position:absolute; inset:0; width:100%; height:100%; object-fit:cover; opacity:0; }}
         .title {{ position:absolute; left:0; right:0; bottom:132px; text-align:center;
                   font-family:"Fredoka",sans-serif; font-weight:700; font-size:76px; color:{CREAM};

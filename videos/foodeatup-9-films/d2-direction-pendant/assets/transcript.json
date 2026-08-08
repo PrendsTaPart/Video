@@ -1,0 +1,897 @@
+[
+  {
+    "text": "11h15.",
+    "start": 0.06,
+    "end": 1.06
+  },
+  {
+    "text": "Le",
+    "start": 1.28,
+    "end": 1.41
+  },
+  {
+    "text": "service",
+    "start": 1.71,
+    "end": 2.01
+  },
+  {
+    "text": "a",
+    "start": 2.01,
+    "end": 2.09
+  },
+  {
+    "text": "commencé",
+    "start": 2.09,
+    "end": 2.74
+  },
+  {
+    "text": "sans",
+    "start": 2.77,
+    "end": 3.11
+  },
+  {
+    "text": "moi",
+    "start": 3.11,
+    "end": 3.14
+  },
+  {
+    "text": "et",
+    "start": 3.45,
+    "end": 3.46
+  },
+  {
+    "text": "c'est",
+    "start": 3.46,
+    "end": 3.64
+  },
+  {
+    "text": "très",
+    "start": 3.64,
+    "end": 3.88
+  },
+  {
+    "text": "bien",
+    "start": 3.88,
+    "end": 4.16
+  },
+  {
+    "text": "comme",
+    "start": 4.16,
+    "end": 4.55
+  },
+  {
+    "text": "ça.",
+    "start": 4.59,
+    "end": 5.02
+  },
+  {
+    "text": "Mon",
+    "start": 5.02,
+    "end": 5.3
+  },
+  {
+    "text": "travail",
+    "start": 5.3,
+    "end": 5.88
+  },
+  {
+    "text": "cet",
+    "start": 5.93,
+    "end": 6.09
+  },
+  {
+    "text": "après-midi,",
+    "start": 6.18,
+    "end": 6.85
+  },
+  {
+    "text": "c'est",
+    "start": 6.85,
+    "end": 7.15
+  },
+  {
+    "text": "de",
+    "start": 7.15,
+    "end": 7.18
+  },
+  {
+    "text": "regarder",
+    "start": 7.18,
+    "end": 7.83
+  },
+  {
+    "text": "ce",
+    "start": 7.83,
+    "end": 7.88
+  },
+  {
+    "text": "que",
+    "start": 7.88,
+    "end": 8.06
+  },
+  {
+    "text": "la",
+    "start": 8.06,
+    "end": 8.18
+  },
+  {
+    "text": "machine",
+    "start": 8.18,
+    "end": 8.61
+  },
+  {
+    "text": "a",
+    "start": 8.61,
+    "end": 8.67
+  },
+  {
+    "text": "préparé",
+    "start": 8.67,
+    "end": 9.1
+  },
+  {
+    "text": "pendant",
+    "start": 9.1,
+    "end": 9.26
+  },
+  {
+    "text": "que",
+    "start": 9.57,
+    "end": 9.71
+  },
+  {
+    "text": "je",
+    "start": 9.71,
+    "end": 9.76
+  },
+  {
+    "text": "faisais",
+    "start": 9.88,
+    "end": 10.28
+  },
+  {
+    "text": "autre",
+    "start": 10.4,
+    "end": 10.8
+  },
+  {
+    "text": "chose.",
+    "start": 10.8,
+    "end": 11.4
+  },
+  {
+    "text": "Iris",
+    "start": 11.63,
+    "end": 11.73
+  },
+  {
+    "text": "m'a",
+    "start": 11.78,
+    "end": 11.92
+  },
+  {
+    "text": "construit",
+    "start": 12.05,
+    "end": 12.4
+  },
+  {
+    "text": "mon",
+    "start": 12.4,
+    "end": 12.55
+  },
+  {
+    "text": "calendrier",
+    "start": 12.56,
+    "end": 13.08
+  },
+  {
+    "text": "de",
+    "start": 13.09,
+    "end": 13.19
+  },
+  {
+    "text": "communication.",
+    "start": 13.19,
+    "end": 14.12
+  },
+  {
+    "text": "Je",
+    "start": 14.12,
+    "end": 14.24
+  },
+  {
+    "text": "regarde",
+    "start": 14.24,
+    "end": 14.67
+  },
+  {
+    "text": "ce",
+    "start": 14.67,
+    "end": 14.79
+  },
+  {
+    "text": "qu'elle",
+    "start": 14.79,
+    "end": 15.02
+  },
+  {
+    "text": "propose,",
+    "start": 15.64,
+    "end": 16.16
+  },
+  {
+    "text": "je",
+    "start": 16.21,
+    "end": 16.32
+  },
+  {
+    "text": "garde,",
+    "start": 16.32,
+    "end": 16.89
+  },
+  {
+    "text": "j'écarte.",
+    "start": 16.89,
+    "end": 17.78
+  },
+  {
+    "text": "Rien",
+    "start": 17.86,
+    "end": 18.1
+  },
+  {
+    "text": "ne",
+    "start": 18.1,
+    "end": 18.26
+  },
+  {
+    "text": "part",
+    "start": 18.26,
+    "end": 18.59
+  },
+  {
+    "text": "sans",
+    "start": 18.59,
+    "end": 18.9
+  },
+  {
+    "text": "mon",
+    "start": 18.93,
+    "end": 19.15
+  },
+  {
+    "text": "accord.",
+    "start": 19.15,
+    "end": 19.98
+  },
+  {
+    "text": "Mais",
+    "start": 19.98,
+    "end": 20.2
+  },
+  {
+    "text": "stock",
+    "start": 20.2,
+    "end": 20.47
+  },
+  {
+    "text": "dormant.",
+    "start": 20.47,
+    "end": 20.89
+  },
+  {
+    "text": "Ce",
+    "start": 21.09,
+    "end": 21.25
+  },
+  {
+    "text": "qui",
+    "start": 21.46,
+    "end": 21.57
+  },
+  {
+    "text": "ne",
+    "start": 21.57,
+    "end": 21.8
+  },
+  {
+    "text": "bouge",
+    "start": 21.8,
+    "end": 22.04
+  },
+  {
+    "text": "plus,",
+    "start": 22.13,
+    "end": 22.45
+  },
+  {
+    "text": "ce",
+    "start": 22.45,
+    "end": 22.58
+  },
+  {
+    "text": "qui",
+    "start": 22.58,
+    "end": 22.67
+  },
+  {
+    "text": "va",
+    "start": 22.76,
+    "end": 22.9
+  },
+  {
+    "text": "bientôt",
+    "start": 22.9,
+    "end": 23.14
+  },
+  {
+    "text": "périmer,",
+    "start": 23.35,
+    "end": 23.9
+  },
+  {
+    "text": "ce",
+    "start": 23.9,
+    "end": 24.03
+  },
+  {
+    "text": "que",
+    "start": 24.03,
+    "end": 24.21
+  },
+  {
+    "text": "je",
+    "start": 24.21,
+    "end": 24.35
+  },
+  {
+    "text": "ferai",
+    "start": 24.35,
+    "end": 24.66
+  },
+  {
+    "text": "mieux",
+    "start": 24.66,
+    "end": 24.98
+  },
+  {
+    "text": "de",
+    "start": 24.98,
+    "end": 25.11
+  },
+  {
+    "text": "vendre",
+    "start": 25.11,
+    "end": 25.48
+  },
+  {
+    "text": "cette",
+    "start": 25.53,
+    "end": 25.73
+  },
+  {
+    "text": "semaine",
+    "start": 25.84,
+    "end": 26.35
+  },
+  {
+    "text": "plutôt",
+    "start": 26.37,
+    "end": 26.63
+  },
+  {
+    "text": "que",
+    "start": 26.69,
+    "end": 26.83
+  },
+  {
+    "text": "de",
+    "start": 26.83,
+    "end": 26.95
+  },
+  {
+    "text": "jeter",
+    "start": 26.95,
+    "end": 27.23
+  },
+  {
+    "text": "la",
+    "start": 27.32,
+    "end": 27.38
+  },
+  {
+    "text": "semaine",
+    "start": 27.38,
+    "end": 27.69
+  },
+  {
+    "text": "prochaine.",
+    "start": 28.35,
+    "end": 28.58
+  },
+  {
+    "text": "Justement,",
+    "start": 28.58,
+    "end": 29.24
+  },
+  {
+    "text": "une",
+    "start": 29.27,
+    "end": 29.45
+  },
+  {
+    "text": "campagne.",
+    "start": 29.45,
+    "end": 30.14
+  },
+  {
+    "text": "L'IA",
+    "start": 30.14,
+    "end": 30.28
+  },
+  {
+    "text": "l'écrit,",
+    "start": 30.4,
+    "end": 31.04
+  },
+  {
+    "text": "je",
+    "start": 31.04,
+    "end": 31.19
+  },
+  {
+    "text": "la",
+    "start": 31.19,
+    "end": 31.57
+  },
+  {
+    "text": "relie,",
+    "start": 31.89,
+    "end": 32
+  },
+  {
+    "text": "je",
+    "start": 32.05,
+    "end": 32.14
+  },
+  {
+    "text": "la",
+    "start": 32.14,
+    "end": 32.23
+  },
+  {
+    "text": "lance.",
+    "start": 32.31,
+    "end": 32.87
+  },
+  {
+    "text": "Ce",
+    "start": 32.87,
+    "end": 33.01
+  },
+  {
+    "text": "qui",
+    "start": 33.01,
+    "end": 33.07
+  },
+  {
+    "text": "me",
+    "start": 33.23,
+    "end": 33.36
+  },
+  {
+    "text": "prenait",
+    "start": 33.38,
+    "end": 33.87
+  },
+  {
+    "text": "une",
+    "start": 33.87,
+    "end": 34.09
+  },
+  {
+    "text": "matinée",
+    "start": 34.09,
+    "end": 34.6
+  },
+  {
+    "text": "me",
+    "start": 34.6,
+    "end": 34.74
+  },
+  {
+    "text": "prend",
+    "start": 34.74,
+    "end": 35.11
+  },
+  {
+    "text": "3",
+    "start": 35.11,
+    "end": 35.25
+  },
+  {
+    "text": "clics.",
+    "start": 35.45,
+    "end": 35.91
+  },
+  {
+    "text": "Mes",
+    "start": 35.91,
+    "end": 36.13
+  },
+  {
+    "text": "crédits",
+    "start": 36.13,
+    "end": 36.55
+  },
+  {
+    "text": "SMS",
+    "start": 36.59,
+    "end": 36.68
+  },
+  {
+    "text": "et",
+    "start": 36.89,
+    "end": 37
+  },
+  {
+    "text": "WhatsApp,",
+    "start": 37.3,
+    "end": 37.72
+  },
+  {
+    "text": "pour",
+    "start": 37.78,
+    "end": 37.96
+  },
+  {
+    "text": "ne",
+    "start": 38.03,
+    "end": 38.11
+  },
+  {
+    "text": "pas",
+    "start": 38.11,
+    "end": 38.31
+  },
+  {
+    "text": "découvrir",
+    "start": 38.31,
+    "end": 38.76
+  },
+  {
+    "text": "un",
+    "start": 38.9,
+    "end": 39.04
+  },
+  {
+    "text": "vendredi",
+    "start": 39.04,
+    "end": 39.56
+  },
+  {
+    "text": "soir",
+    "start": 39.56,
+    "end": 39.82
+  },
+  {
+    "text": "qu'il",
+    "start": 39.82,
+    "end": 40.14
+  },
+  {
+    "text": "n'en",
+    "start": 40.14,
+    "end": 40.39
+  },
+  {
+    "text": "reste",
+    "start": 40.39,
+    "end": 40.72
+  },
+  {
+    "text": "plus.",
+    "start": 40.72,
+    "end": 41.28
+  },
+  {
+    "text": "13h30.",
+    "start": 41.28,
+    "end": 42.88
+  },
+  {
+    "text": "Je",
+    "start": 43.02,
+    "end": 43.03
+  },
+  {
+    "text": "synchronise",
+    "start": 43.03,
+    "end": 43.81
+  },
+  {
+    "text": "mes",
+    "start": 43.88,
+    "end": 44.12
+  },
+  {
+    "text": "avis",
+    "start": 44.18,
+    "end": 44.36
+  },
+  {
+    "text": "Google.",
+    "start": 44.43,
+    "end": 44.96
+  },
+  {
+    "text": "Ils",
+    "start": 44.96,
+    "end": 45.14
+  },
+  {
+    "text": "arrivent",
+    "start": 45.14,
+    "end": 45.67
+  },
+  {
+    "text": "au",
+    "start": 45.67,
+    "end": 45.83
+  },
+  {
+    "text": "même",
+    "start": 45.83,
+    "end": 46.06
+  },
+  {
+    "text": "endroit",
+    "start": 46.06,
+    "end": 46.51
+  },
+  {
+    "text": "que",
+    "start": 46.51,
+    "end": 46.7
+  },
+  {
+    "text": "tout",
+    "start": 46.7,
+    "end": 46.96
+  },
+  {
+    "text": "le",
+    "start": 46.96,
+    "end": 47.08
+  },
+  {
+    "text": "reste",
+    "start": 47.08,
+    "end": 47.26
+  },
+  {
+    "text": "et",
+    "start": 47.26,
+    "end": 47.57
+  },
+  {
+    "text": "je",
+    "start": 47.57,
+    "end": 47.67
+  },
+  {
+    "text": "n'ai",
+    "start": 47.67,
+    "end": 47.92
+  },
+  {
+    "text": "pas",
+    "start": 47.92,
+    "end": 48.11
+  },
+  {
+    "text": "un",
+    "start": 48.11,
+    "end": 48.24
+  },
+  {
+    "text": "anglais",
+    "start": 48.24,
+    "end": 48.67
+  },
+  {
+    "text": "de",
+    "start": 48.71,
+    "end": 48.79
+  },
+  {
+    "text": "plus",
+    "start": 48.91,
+    "end": 49.12
+  },
+  {
+    "text": "à",
+    "start": 49.18,
+    "end": 49.31
+  },
+  {
+    "text": "surveiller.",
+    "start": 49.38,
+    "end": 50.23
+  },
+  {
+    "text": "14h.",
+    "start": 50.23,
+    "end": 50.93
+  },
+  {
+    "text": "Je",
+    "start": 51.03,
+    "end": 51.07
+  },
+  {
+    "text": "regarde",
+    "start": 51.07,
+    "end": 51.56
+  },
+  {
+    "text": "mon",
+    "start": 51.56,
+    "end": 51.77
+  },
+  {
+    "text": "service",
+    "start": 51.77,
+    "end": 52.26
+  },
+  {
+    "text": "en",
+    "start": 52.26,
+    "end": 52.4
+  },
+  {
+    "text": "direct,",
+    "start": 52.4,
+    "end": 52.96
+  },
+  {
+    "text": "module",
+    "start": 52.96,
+    "end": 53.38
+  },
+  {
+    "text": "par",
+    "start": 53.38,
+    "end": 53.59
+  },
+  {
+    "text": "module.",
+    "start": 53.59,
+    "end": 54.05
+  },
+  {
+    "text": "Ceux",
+    "start": 54.25,
+    "end": 54.5
+  },
+  {
+    "text": "qui",
+    "start": 54.62,
+    "end": 54.71
+  },
+  {
+    "text": "tournent,",
+    "start": 54.71,
+    "end": 55.41
+  },
+  {
+    "text": "ceux",
+    "start": 55.5,
+    "end": 55.67
+  },
+  {
+    "text": "qui",
+    "start": 55.75,
+    "end": 55.98
+  },
+  {
+    "text": "coïncent",
+    "start": 55.98,
+    "end": 56.48
+  },
+  {
+    "text": "et",
+    "start": 56.48,
+    "end": 57.15
+  },
+  {
+    "text": "exactement",
+    "start": 57.15,
+    "end": 57.51
+  },
+  {
+    "text": "où.",
+    "start": 57.51,
+    "end": 57.89
+  },
+  {
+    "text": "Je",
+    "start": 57.89,
+    "end": 58.04
+  },
+  {
+    "text": "n'ai",
+    "start": 58.04,
+    "end": 58.33
+  },
+  {
+    "text": "pas",
+    "start": 58.33,
+    "end": 58.55
+  },
+  {
+    "text": "quitté",
+    "start": 58.55,
+    "end": 59.01
+  },
+  {
+    "text": "mon",
+    "start": 59.01,
+    "end": 59.24
+  },
+  {
+    "text": "bureau",
+    "start": 59.24,
+    "end": 59.71
+  },
+  {
+    "text": "et",
+    "start": 59.71,
+    "end": 59.86
+  },
+  {
+    "text": "je",
+    "start": 59.86,
+    "end": 59.99
+  },
+  {
+    "text": "sais",
+    "start": 59.99,
+    "end": 60.11
+  },
+  {
+    "text": "précisément",
+    "start": 60.74,
+    "end": 61.08
+  },
+  {
+    "text": "ce",
+    "start": 61.08,
+    "end": 61.24
+  },
+  {
+    "text": "qui",
+    "start": 61.29,
+    "end": 61.36
+  },
+  {
+    "text": "s'est",
+    "start": 61.36,
+    "end": 61.47
+  },
+  {
+    "text": "passé",
+    "start": 61.55,
+    "end": 61.73
+  },
+  {
+    "text": "en",
+    "start": 61.73,
+    "end": 61.81
+  },
+  {
+    "text": "salle.",
+    "start": 61.81,
+    "end": 62.16
+  }
+]
