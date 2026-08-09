@@ -3,6 +3,21 @@
 **✅ Montage assemblé** — `renders/video-01-fidelite.mp4` (36.3s, 1080×1920, prêt à publier
 sous réserve de validation de Michael). Voir "Montage final" en bas de fichier.
 
+**Bug corrigé (2026-08-09)** : le premier rendu masquait HOOK et PROBLÈME derrière un fond
+crème vide pendant 11s (Michael : "on ne voit pas la séquence Higgsfield", "il manque la
+voix off"). Cause : `#solution-crop` était un `<div>` conteneur SANS `data-start`/`data-duration`
+— un élément non minuté est peint sur **toute** la durée de la composition (0–36.3s), pas
+seulement pendant la fenêtre où son contenu minuté à l'intérieur est actif. Étant plus loin
+dans le DOM que HOOK et PROBLÈME, il se peignait par-dessus eux tout du long, mais restait
+en dessous de RÉSULTAT/PUNCHLINE (plus tard dans le DOM) — d'où un bug qui touchait
+uniquement les deux premiers segments. Fix : fond, logiciel, trait accent et logo du
+segment SOLUTION sont maintenant 4 clips SIBLINGS correctement minutés (`data-start="11"
+data-duration="14"`), plus de wrapper non minuté. Ajouté au passage : une animation
+(logo "8" qui respire + trait orange) dans l'espace sous le logiciel, suite à la demande
+"il manque l'animation en bas de la vidéo du logiciel". Vérifié image par image sur
+l'ensemble des 36.3s (24 échantillons) + niveaux audio (`ffmpeg volumedetect`) avant
+renvoi — voir `snapshots/fix2-sheet-*.jpg`.
+
 Statut des 5 segments (2026-08-09) :
 
 | Segment | Durée réelle | Statut | Détail |
