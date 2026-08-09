@@ -13,7 +13,9 @@
       "video": "assets/video/hero-chef-scan-carton.mp4",
       "vo": "assets/voice/body-stock.mp3",
       "caption": "Je scanne. Le stock se met à jour tout seul.",
-      "punchline": "Le stock qui se gère tout seul."
+      "punchline": "Le stock qui se gère tout seul.",
+      "explain": "Un scan à la réception, et FoodEatUp remplit le stock, la traçabilité et l'HACCP.",
+      "explainVo": "assets/voice/explain/story-1-stock.mp3"
     },
     {
       "id": "story-2-multicanal",
@@ -21,7 +23,9 @@
       "video": "assets/video/hero-serveur-trois-tablettes.mp4",
       "vo": "assets/voice/body-multicanal.mp3",
       "caption": "Uber, livraison, salle. Tout arrive au même endroit.",
-      "punchline": "Toutes vos commandes, un seul endroit."
+      "punchline": "Toutes vos commandes, un seul endroit.",
+      "explain": "FoodEatUp réunit le QR de table, le site, la livraison et le téléphone dans une seule caisse.",
+      "explainVo": "assets/voice/explain/story-2-multicanal.mp3"
     },
     {
       "id": "story-3-jarvis",
@@ -29,7 +33,9 @@
       "video": "assets/video/hero-brigade-deux-langues.mp4",
       "vo": "assets/voice/body-jarvis.mp3",
       "caption": "Jarvis comprend, peu importe qui parle en cuisine. Le stock aussi.",
-      "punchline": "Une brigade. Un seul stock, à jour."
+      "punchline": "Une brigade. Un seul stock, à jour.",
+      "explain": "Jarvis, l'assistant vocal de FoodEatUp, déduit votre stock à la voix, quelle que soit la langue.",
+      "explainVo": "assets/voice/explain/story-3-jarvis.mp3"
     },
     {
       "id": "story-4-caisse",
@@ -37,7 +43,9 @@
       "video": "assets/video/hero-caisse-ticket-z.mp4",
       "vo": "assets/voice/body-caisse.mp3",
       "caption": "Le Z. Un geste. Le chiffre du jour, déjà là.",
-      "punchline": "La caisse qui se ferme en un geste."
+      "punchline": "La caisse qui se ferme en un geste.",
+      "explain": "FoodEatUp clôture la caisse en un geste : ticket Z, écart expliqué, archivage automatique.",
+      "explainVo": "assets/voice/explain/story-4-caisse.mp3"
     },
     {
       "id": "story-5-haccp",
@@ -45,7 +53,9 @@
       "video": "assets/video/hero-kds-mural.mp4",
       "vo": "assets/voice/body-haccp.mp3",
       "caption": "Une photo. L'IA contrôle. C'est tracé.",
-      "punchline": "Le classeur HACCP qui s'écrit tout seul."
+      "punchline": "Le classeur HACCP qui s'écrit tout seul.",
+      "explain": "Vous photographiez, l'IA de FoodEatUp contrôle et archive. Votre classeur HACCP s'écrit seul.",
+      "explainVo": "assets/voice/explain/story-5-haccp.mp3"
     }
   ]
 }

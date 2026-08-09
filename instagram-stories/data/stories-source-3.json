@@ -13,7 +13,9 @@
       "video": "assets/video/hf2/09-fermeture-salle.mp4",
       "vo": "assets/voice/hf2/vo9-fermeture-salle.mp3",
       "caption": "Service fini. La paperasse commence.",
-      "punchline": "Et si la paperasse était déjà faite ?"
+      "punchline": "Et si la paperasse était déjà faite ?",
+      "explain": "Caisse, HACCP et stock s'enregistrent pendant le service. À la fermeture, tout est déjà fait.",
+      "explainVo": "assets/voice/explain/hf3-09-fermeture-salle.mp3"
     },
     {
       "id": "hf3-10-notification-depart",
@@ -21,7 +23,9 @@
       "video": "assets/video/hf2/10-notification-depart.mp4",
       "vo": "assets/voice/hf2/vo10-notification-depart.mp3",
       "caption": "Il valide, il éteint, il rentre.",
-      "punchline": "Fermer, c'est un geste."
+      "punchline": "Fermer, c'est un geste.",
+      "explain": "Une notification, une validation, et votre restaurant est clôturé. FoodEatUp fait le reste.",
+      "explainVo": "assets/voice/explain/hf3-10-notification-depart.mp3"
     },
     {
       "id": "hf3-11-chef-plan-sequence",
@@ -29,7 +33,9 @@
       "video": "assets/video/hf2/11-chef-plan-sequence.mp4",
       "vo": "assets/voice/hf2/vo11-chef-plan-sequence.mp3",
       "caption": "Une journée entière. Un seul outil.",
-      "punchline": "Huit métiers. Une seule boucle."
+      "punchline": "Huit métiers. Une seule boucle.",
+      "explain": "De la réception au ticket Z, FoodEatUp couvre la journée entière. Une seule saisie.",
+      "explainVo": "assets/voice/explain/hf3-11-chef-plan-sequence.mp3"
     },
     {
       "id": "hf3-12-tickets-rail",
@@ -37,7 +43,9 @@
       "video": "assets/video/hf2/12-tickets-rail.mp4",
       "vo": "assets/voice/hf2/vo12-tickets-rail.mp3",
       "caption": "Huit tickets. Aucun ordre. Et le service qui monte.",
-      "punchline": "Un écran. Le bon ordre. Toujours."
+      "punchline": "Un écran. Le bon ordre. Toujours.",
+      "explain": "L'écran de cuisine FoodEatUp classe vos commandes par ordre d'envoi, tous canaux confondus.",
+      "explainVo": "assets/voice/explain/hf3-12-tickets-rail.mp3"
     },
     {
       "id": "hf3-13-cuisine-vide-nuit",
@@ -45,7 +53,9 @@
       "video": "assets/video/hf2/13-cuisine-vide-nuit.mp4",
       "vo": "assets/voice/hf2/vo13-cuisine-vide-nuit.mp3",
       "caption": "La cuisine dort. Les données, non.",
-      "punchline": "PrediBot prépare votre demain."
+      "punchline": "PrediBot prépare votre demain.",
+      "explain": "PrediBot analyse vos ventes la nuit et prépare vos commandes fournisseurs pour le lendemain.",
+      "explainVo": "assets/voice/explain/hf3-13-cuisine-vide-nuit.mp3"
     },
     {
       "id": "hf3-14-chef-apres-service",
@@ -53,7 +63,9 @@
       "video": "assets/video/hf2/14-chef-apres-service.mp4",
       "vo": "assets/voice/hf2/vo14-chef-apres-service.mp3",
       "caption": "Service fini. Le classeur s'est rempli tout seul.",
-      "punchline": "Votre HACCP s'écrit pendant que vous cuisinez."
+      "punchline": "Votre HACCP s'écrit pendant que vous cuisinez.",
+      "explain": "Chaque geste tracé pendant le service remplit votre classeur HACCP. À la fermeture, il est complet.",
+      "explainVo": "assets/voice/explain/hf3-14-chef-apres-service.mp3"
     },
     {
       "id": "hf3-15-couloir-traversee",
@@ -61,7 +73,9 @@
       "video": "assets/video/hf2/15-couloir-traversee.mp4",
       "vo": "assets/voice/hf2/vo15-couloir-traversee.mp3",
       "caption": "Huit métiers. Un seul couloir.",
-      "punchline": "Tout communique. Enfin."
+      "punchline": "Tout communique. Enfin.",
+      "explain": "Cuisine, salle, stock, bureau : la même donnée circule partout, sans double saisie.",
+      "explainVo": "assets/voice/explain/hf3-15-couloir-traversee.mp3"
     },
     {
       "id": "hf3-16-salle-prete",
@@ -69,7 +83,9 @@
       "video": "assets/video/hf2/16-salle-prete.mp4",
       "vo": "assets/voice/hf2/vo16-salle-prete.mp3",
       "caption": "Tout est prêt. Personne n'a couru.",
-      "punchline": "L'ouverture sans le stress."
+      "punchline": "L'ouverture sans le stress.",
+      "explain": "Production validée, plan de table fait, carte à jour : FoodEatUp prépare le service pour vous.",
+      "explainVo": "assets/voice/explain/hf3-16-salle-prete.mp3"
     },
     {
       "id": "hf3-17-salle-service-soir",
@@ -77,7 +93,9 @@
       "video": "assets/video/hf2/17-salle-service-soir.mp4",
       "vo": "assets/voice/hf2/vo17-salle-service-soir.mp3",
       "caption": "Le service tourne. Sans un mot de trop.",
-      "punchline": "La salle et la cuisine, synchronisées."
+      "punchline": "La salle et la cuisine, synchronisées.",
+      "explain": "Salle et cuisine travaillent sur la même information en temps réel, pendant tout le service.",
+      "explainVo": "assets/voice/explain/hf3-17-salle-service-soir.mp3"
     },
     {
       "id": "hf3-18-salle-apres-midi",
@@ -85,7 +103,9 @@
       "video": "assets/video/hf2/18-salle-apres-midi.mp4",
       "vo": "assets/voice/hf2/vo18-salle-apres-midi.mp3",
       "caption": "Entre deux services. Enfin le temps de souffler.",
-      "punchline": "Le temps que vous récupérez."
+      "punchline": "Le temps que vous récupérez.",
+      "explain": "En automatisant la saisie, FoodEatUp vous rend les heures passées sur la paperasse.",
+      "explainVo": "assets/voice/explain/hf3-18-salle-apres-midi.mp3"
     },
     {
       "id": "hf3-19-serveur-fermeture",
@@ -93,7 +113,9 @@
       "video": "assets/video/hf2/19-serveur-fermeture.mp4",
       "vo": "assets/voice/hf2/vo19-serveur-fermeture.mp3",
       "caption": "Il ferme. Tout est déjà en ordre.",
-      "punchline": "La clôture, en un geste."
+      "punchline": "La clôture, en un geste.",
+      "explain": "Caisse clôturée, stock à jour, HACCP archivé : avec FoodEatUp, fermer prend un geste.",
+      "explainVo": "assets/voice/explain/hf3-19-serveur-fermeture.mp3"
     },
     {
       "id": "hf3-20-directeur-dashboard",
@@ -101,7 +123,9 @@
       "video": "assets/video/hf2/20-directeur-dashboard.mp4",
       "vo": "assets/voice/hf2/vo20-directeur-dashboard.mp3",
       "caption": "Son chiffre du jour. Sans ouvrir un tableur.",
-      "punchline": "Vos marges, en direct."
+      "punchline": "Vos marges, en direct.",
+      "explain": "FoodEatUp affiche vos marges, vos ventes et votre conformité en direct, sans tableur.",
+      "explainVo": "assets/voice/explain/hf3-20-directeur-dashboard.mp3"
     },
     {
       "id": "hf3-21-chef-tablette",
@@ -109,7 +133,9 @@
       "video": "assets/video/hf2/21-chef-tablette.mp4",
       "vo": "assets/voice/hf2/vo21-chef-tablette.mp3",
       "caption": "Un doigt. Et plus rien n'est urgent.",
-      "punchline": "Un seul écran remplace les dix."
+      "punchline": "Un seul écran remplace les dix.",
+      "explain": "Une seule application pour la caisse, le stock, l'HACCP et le planning.",
+      "explainVo": "assets/voice/explain/hf3-21-chef-tablette.mp3"
     },
     {
       "id": "hf3-22-notifications-desordre",
@@ -117,7 +143,9 @@
       "video": "assets/video/hf2/22-notifications-desordre.mp4",
       "vo": "assets/voice/hf2/vo22-notifications-desordre.mp3",
       "caption": "Les alertes s'empilent. Aucune ne dit quoi faire.",
-      "punchline": "Des alertes qui disent quoi faire."
+      "punchline": "Des alertes qui disent quoi faire.",
+      "explain": "Chaque alerte FoodEatUp arrive avec son contexte et l'action à faire.",
+      "explainVo": "assets/voice/explain/hf3-22-notifications-desordre.mp3"
     },
     {
       "id": "hf3-23-classeur-poussiereux",
@@ -125,7 +153,9 @@
       "video": "assets/video/hf2/23-classeur-poussiereux.mp4",
       "vo": "assets/voice/hf2/vo23-classeur-poussiereux.mp3",
       "caption": "Le classeur HACCP. Vide depuis trois semaines.",
-      "punchline": "Votre classeur, à jour sans y penser."
+      "punchline": "Votre classeur, à jour sans y penser.",
+      "explain": "FoodEatUp remplit votre classeur HACCP automatiquement : températures, traçabilité, nettoyage.",
+      "explainVo": "assets/voice/explain/hf3-23-classeur-poussiereux.mp3"
     },
     {
       "id": "hf3-24-chambre-froide",
@@ -133,7 +163,9 @@
       "video": "assets/video/hf2/24-chambre-froide.mp4",
       "vo": "assets/voice/hf2/vo24-chambre-froide.mp3",
       "caption": "La température se relève toute seule.",
-      "punchline": "La traçabilité, sans le carnet."
+      "punchline": "La traçabilité, sans le carnet.",
+      "explain": "Approchez votre téléphone du thermomètre : la température est relevée et archivée toute seule.",
+      "explainVo": "assets/voice/explain/hf3-24-chambre-froide.mp3"
     },
     {
       "id": "hf3-25-reserve-immobile",
@@ -141,7 +173,9 @@
       "video": "assets/video/hf2/25-reserve-immobile.mp4",
       "vo": "assets/voice/hf2/vo25-reserve-immobile.mp3",
       "caption": "Face aux étagères. Sans savoir ce qu'il reste.",
-      "punchline": "Votre stock, toujours à jour."
+      "punchline": "Votre stock, toujours à jour.",
+      "explain": "FoodEatUp tient votre stock en temps réel : chaque réception scannée, chaque sortie déduite.",
+      "explainVo": "assets/voice/explain/hf3-25-reserve-immobile.mp3"
     },
     {
       "id": "hf3-26-comptage-recommence",
@@ -149,7 +183,9 @@
       "video": "assets/video/hf2/26-comptage-recommence.mp4",
       "vo": "assets/voice/hf2/vo26-comptage-recommence.mp3",
       "caption": "Il compte. Il se trompe. Il recommence.",
-      "punchline": "L'inventaire sans le recomptage."
+      "punchline": "L'inventaire sans le recomptage.",
+      "explain": "StockVision AI compte votre stock à partir d'une simple vidéo de vos étagères.",
+      "explainVo": "assets/voice/explain/hf3-26-comptage-recommence.mp3"
     },
     {
       "id": "hf3-27-scan-etagere",
@@ -157,7 +193,9 @@
       "video": "assets/video/hf2/27-scan-etagere.mp4",
       "vo": "assets/voice/hf2/vo27-scan-etagere.mp3",
       "caption": "Un balayage. L'inventaire est fait.",
-      "punchline": "StockVision AI compte pour vous."
+      "punchline": "StockVision AI compte pour vous.",
+      "explain": "StockVision AI fait votre inventaire en balayant les rayonnages avec votre téléphone.",
+      "explainVo": "assets/voice/explain/hf3-27-scan-etagere.mp3"
     },
     {
       "id": "hf3-28-pouce-nuit",
@@ -165,7 +203,9 @@
       "video": "assets/video/hf2/28-pouce-nuit.mp4",
       "vo": "assets/voice/hf2/vo28-pouce-nuit.mp3",
       "caption": "Vingt-trois heures. Il ressaisit ce qu'il a déjà noté.",
-      "punchline": "Une saisie, pas dix."
+      "punchline": "Une saisie, pas dix.",
+      "explain": "Une seule saisie : la donnée circule de la caisse au stock, puis à la comptabilité.",
+      "explainVo": "assets/voice/explain/hf3-28-pouce-nuit.mp3"
     }
   ]
 }

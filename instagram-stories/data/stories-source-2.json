@@ -13,7 +13,9 @@
       "video": "assets/video/hf2/01-six-heures.mp4",
       "vo": "assets/voice/hf2/vo1-six-heures.mp3",
       "caption": "Six heures du matin. Ton restaurant dort encore. Toi, non.",
-      "punchline": "FoodEatUp travaille avant toi."
+      "punchline": "FoodEatUp travaille avant toi.",
+      "explain": "La nuit, FoodEatUp prévoit vos ventes, calcule la production et prépare vos commandes fournisseurs.",
+      "explainVo": "assets/voice/explain/hf2-01-six-heures.mp3"
     },
     {
       "id": "hf2-02-trois-ecrans",
@@ -21,7 +23,9 @@
       "video": "assets/video/hf2/02-trois-ecrans.mp4",
       "vo": "assets/voice/hf2/vo2-trois-ecrans.mp3",
       "caption": "Le téléphone. Les tickets. Le stock. Trois écrans, et aucune réponse.",
-      "punchline": "Un seul écran. Toutes les réponses."
+      "punchline": "Un seul écran. Toutes les réponses.",
+      "explain": "FoodEatUp remplace le téléphone, les tickets papier et le tableur par une seule application.",
+      "explainVo": "assets/voice/explain/hf2-02-trois-ecrans.mp3"
     },
     {
       "id": "hf2-03-declic",
@@ -29,7 +33,9 @@
       "video": "assets/video/hf2/03-declic.mp4",
       "vo": "assets/voice/hf2/vo3-declic.mp3",
       "caption": "Et si tout ça tenait sur un seul ?",
-      "punchline": "Un seul outil pour tout gérer."
+      "punchline": "Un seul outil pour tout gérer.",
+      "explain": "Caisse, stock, HACCP, planning : tout dans une seule application pilotée par l'IA.",
+      "explainVo": "assets/voice/explain/hf2-03-declic.mp3"
     },
     {
       "id": "hf2-04-cuisine-salle",
@@ -37,7 +43,9 @@
       "video": "assets/video/hf2/04-cuisine-salle.mp4",
       "vo": "assets/voice/hf2/vo4-cuisine-salle.mp3",
       "caption": "La cuisine sait. La salle sait. Plus personne ne court après l'information.",
-      "punchline": "L'info circule. Enfin."
+      "punchline": "L'info circule. Enfin.",
+      "explain": "L'écran de cuisine et la salle partagent la même information en direct, sans un cri.",
+      "explainVo": "assets/voice/explain/hf2-04-cuisine-salle.mp3"
     },
     {
       "id": "hf2-05-fin-service",
@@ -45,7 +53,9 @@
       "video": "assets/video/hf2/05-fin-service.mp4",
       "vo": "assets/voice/hf2/vo5-fin-service.mp3",
       "caption": "Tes marges, tes clients, ta conformité. Enfin visibles.",
-      "punchline": "Tout, visible, en un coup d'œil."
+      "punchline": "Tout, visible, en un coup d'œil.",
+      "explain": "FoodEatUp calcule vos marges plat par plat et tient votre conformité à jour, en direct.",
+      "explainVo": "assets/voice/explain/hf2-05-fin-service.mp3"
     },
     {
       "id": "hf2-06-marque",
@@ -53,7 +63,9 @@
       "video": "assets/video/hf2/06-marque.mp4",
       "vo": "assets/voice/hf2/vo6-marque.mp3",
       "caption": "FoodEatUp. Huit métiers. Une seule boucle.",
-      "punchline": "Le mode d'emploi du restaurant qui se gère tout seul."
+      "punchline": "Le mode d'emploi du restaurant qui se gère tout seul.",
+      "explain": "Huit métiers réunis dans une seule boucle : une saisie, et la donnée circule partout.",
+      "explainVo": "assets/voice/explain/hf2-06-marque.mp3"
     },
     {
       "id": "hf2-07-client-salle",
@@ -61,7 +73,9 @@
       "video": "assets/video/hf2/07-client-salle.mp4",
       "vo": "assets/voice/hf2/vo7-client-salle.mp3",
       "caption": "Il pousse la porte à vingt heures. Sa table est prête. Il ne se posera aucune question.",
-      "punchline": "Vos clients ne voient que le résultat."
+      "punchline": "Vos clients ne voient que le résultat.",
+      "explain": "Caroline, l'agent vocal de FoodEatUp, prend vos réservations jour et nuit et remplit le plan de table.",
+      "explainVo": "assets/voice/explain/hf2-07-client-salle.mp3"
     },
     {
       "id": "hf2-08-tracabilite",
@@ -69,7 +83,9 @@
       "video": "assets/video/hf2/08-tracabilite.mp4",
       "vo": "assets/voice/hf2/vo8-tracabilite.mp3",
       "caption": "Il ne verra jamais la chambre froide relevée à sept heures du matin.",
-      "punchline": "La traçabilité, invisible et automatique."
+      "punchline": "La traçabilité, invisible et automatique.",
+      "explain": "FoodEatUp trace vos réceptions, vos DLC et vos températures sans que personne y pense.",
+      "explainVo": "assets/voice/explain/hf2-08-tracabilite.mp3"
     }
   ]
 }

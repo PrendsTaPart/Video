@@ -1,8 +1,9 @@
 #!/usr/bin/env node
 // Builds 5 Instagram Stories (1080x1920) from data/stories-source.json.
 // Each story: HOOK card (logo + punchy line) -> BODY (footage pillarboxed,
-// caption, watermark, VO) -> CTA card (logo + story punchline + button,
-// shared brand VO). Timing computed from real audio durations (ffprobe) —
+// caption, watermark, VO) -> CTA card (logo + punchline + what FoodEatUp
+// actually does, written and spoken + button). Timing computed from real
+// audio durations (ffprobe) —
 // never hand-authored, see hero-video/scripts/retime.mjs for why a guessed
 // slot causes audible overlaps or dead air. Video/audio elements are always
 // direct timed children, never nested inside another timed wrapper (that
@@ -65,10 +66,14 @@ const CSS = `
   .caption-bar { top: auto; height: auto; left: 0; right: 0; bottom: 0; padding: 48px 64px 120px; background: linear-gradient(to top, rgba(15,26,35,0.95) 0%, rgba(15,26,35,0.8) 55%, rgba(15,26,35,0) 100%); }
   .caption-bar span { display: block; color: #fff; font-size: 58px; font-weight: 800; line-height: 1.25; text-wrap: balance; }
 
-  .cta-card { display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 36px; background: var(--cream); text-align: center; padding: 0 90px; }
-  .cta-card .logo { width: 260px; height: auto; }
-  .cta-card .punchline { color: var(--navy); font-size: 58px; font-weight: 900; line-height: 1.2; max-width: 880px; }
-  .cta-card .cta-sub { color: #fff; background: var(--orange); font-size: 40px; font-weight: 800; padding: 24px 52px; border-radius: 999px; }
+  .cta-card { display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 30px; background: var(--cream); text-align: center; padding: 0 84px; }
+  .cta-card .logo { width: 230px; height: auto; }
+  .cta-card .punchline { color: var(--navy); font-size: 54px; font-weight: 900; line-height: 1.18; max-width: 880px; }
+  /* The explanation is the part that makes the story legible to someone who
+     has never heard of FoodEatUp, so it gets real reading size — set below
+     the punchline in weight and scale so the hierarchy still reads. */
+  .cta-card .explain { color: #3C4A55; font-size: 36px; font-weight: 600; line-height: 1.38; max-width: 830px; }
+  .cta-card .cta-sub { color: #fff; background: var(--orange); font-size: 38px; font-weight: 800; padding: 22px 48px; border-radius: 999px; }
 `;
 
 const JS = `
@@ -85,7 +90,8 @@ const JS = `
     var s = parseFloat(cta.getAttribute('data-start'));
     tl.fromTo(cta.querySelector('.logo'), { opacity: 0, scale: 0.85 }, { opacity: 1, scale: 1, duration: 0.5, ease: 'back.out(1.6)' }, s);
     tl.fromTo(cta.querySelector('.punchline'), { opacity: 0, y: 16 }, { opacity: 1, y: 0, duration: 0.4, ease: 'power1.out' }, s + 0.25);
-    tl.fromTo(cta.querySelector('.cta-sub'), { opacity: 0, y: 16 }, { opacity: 1, y: 0, duration: 0.4, ease: 'power1.out' }, s + 0.5);
+    tl.fromTo(cta.querySelector('.explain'), { opacity: 0, y: 16 }, { opacity: 1, y: 0, duration: 0.4, ease: 'power1.out' }, s + 0.5);
+    tl.fromTo(cta.querySelector('.cta-sub'), { opacity: 0, y: 16 }, { opacity: 1, y: 0, duration: 0.4, ease: 'power1.out' }, s + 0.75);
   }
   tl.duration(data.durationSeconds);
   window.__timelines = window.__timelines || {};
@@ -110,7 +116,7 @@ function buildStory(story) {
   out.push(`<audio id="${nextId('audio')}" class="clip" src="${esc(src.clin)}" data-start="${hookStart}" data-duration="${CLIN_DUR}" data-track-index="1" data-volume="1" data-has-audio="true" preload="auto"></audio>`);
   cursor += HOOK_DUR;
 
-  // BODY
+  // BODY — the observation, over the shot.
   const voDur = realDuration(story.vo);
   const videoDur = realDuration(story.video);
   // Never truncate mid-action: some source clips are deliberate single
@@ -132,16 +138,23 @@ function buildStory(story) {
   out.push(`<audio id="${nextId('audio')}" class="clip" src="${esc(story.vo)}" data-start="${bodyStart}" data-duration="${bodyDur}" data-track-index="2005" data-volume="1" data-has-audio="true" preload="auto"></audio>`);
   cursor = bodyStart + bodyDur;
 
-  // CTA
-  const ctaVoDur = realDuration(src.ctaVo);
-  const ctaDur = round2(ctaVoDur + CTA_TAIL);
+  // CTA — carries the explanation, spoken and written.
+  // It used to close on one generic brand line, identical across all 33
+  // stories, so a viewer never learned what FoodEatUp actually does. Each
+  // story now closes on its own concrete answer to the problem it just
+  // showed. The card is static artwork, not footage, so it can run as long
+  // as the sentence needs without freezing on a last video frame — which is
+  // why the explanation sits here rather than over the shot.
+  const explainDur = realDuration(story.explainVo);
+  const ctaDur = round2(explainDur + CTA_TAIL);
   const ctaStart = round2(cursor);
   out.push(`<div id="${nextId('cta')}" class="clip beat cta-card" data-start="${ctaStart}" data-duration="${ctaDur}" data-track-index="6">`);
   out.push(`<img class="logo" src="${esc(src.logo)}" alt="FoodEatUp" />`);
   out.push(`<div class="punchline">${esc(story.punchline)}</div>`);
+  out.push(`<div class="explain">${esc(story.explain)}</div>`);
   out.push(`<div class="cta-sub">${esc(src.ctaSub)}</div>`);
   out.push('</div>');
-  out.push(`<audio id="${nextId('audio')}" class="clip" src="${esc(src.ctaVo)}" data-start="${ctaStart}" data-duration="${ctaDur}" data-track-index="2010" data-volume="1" data-has-audio="true" preload="auto"></audio>`);
+  out.push(`<audio id="${nextId('audio')}" class="clip" src="${esc(story.explainVo)}" data-start="${ctaStart}" data-duration="${ctaDur}" data-track-index="2010" data-volume="1" data-has-audio="true" preload="auto"></audio>`);
   cursor = ctaStart + ctaDur;
 
   const durationSeconds = round2(cursor);

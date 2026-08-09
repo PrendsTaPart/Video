@@ -27,17 +27,21 @@
   .caption-bar { top: auto; height: auto; left: 0; right: 0; bottom: 0; padding: 48px 64px 120px; background: linear-gradient(to top, rgba(15,26,35,0.95) 0%, rgba(15,26,35,0.8) 55%, rgba(15,26,35,0) 100%); }
   .caption-bar span { display: block; color: #fff; font-size: 58px; font-weight: 800; line-height: 1.25; text-wrap: balance; }
 
-  .cta-card { display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 36px; background: var(--cream); text-align: center; padding: 0 90px; }
-  .cta-card .logo { width: 260px; height: auto; }
-  .cta-card .punchline { color: var(--navy); font-size: 58px; font-weight: 900; line-height: 1.2; max-width: 880px; }
-  .cta-card .cta-sub { color: #fff; background: var(--orange); font-size: 40px; font-weight: 800; padding: 24px 52px; border-radius: 999px; }
+  .cta-card { display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 30px; background: var(--cream); text-align: center; padding: 0 84px; }
+  .cta-card .logo { width: 230px; height: auto; }
+  .cta-card .punchline { color: var(--navy); font-size: 54px; font-weight: 900; line-height: 1.18; max-width: 880px; }
+  /* The explanation is the part that makes the story legible to someone who
+     has never heard of FoodEatUp, so it gets real reading size — set below
+     the punchline in weight and scale so the hierarchy still reads. */
+  .cta-card .explain { color: #3C4A55; font-size: 36px; font-weight: 600; line-height: 1.38; max-width: 830px; }
+  .cta-card .cta-sub { color: #fff; background: var(--orange); font-size: 38px; font-weight: 800; padding: 22px 48px; border-radius: 999px; }
 </style>
 </head>
 <body>
 
-<script id="ad-data" type="application/json">{"durationSeconds":17.6}</script>
+<script id="ad-data" type="application/json">{"durationSeconds":18.91}</script>
 
-<div id="ad" class="composition" data-composition-id="ad" data-width="1080" data-height="1920" data-start="0" data-duration="17.6">
+<div id="ad" class="composition" data-composition-id="ad" data-width="1080" data-height="1920" data-start="0" data-duration="18.91">
 <div id="hook-1" class="clip beat hook-card" data-start="0" data-duration="1.77" data-track-index="0">
 <img class="logo" src="assets/brand/foodeatup-logo-mascot.png" alt="FoodEatUp" />
 <div class="hook-line">Il recompte.</div>
@@ -47,12 +51,13 @@
 <div id="caption-4" class="clip beat caption-bar" data-start="1.77" data-duration="10.04" data-track-index="3"><span>Il compte. Il se trompe. Il recommence.</span></div>
 <div id="wm-5" class="clip beat watermark" data-start="1.77" data-duration="10.04" data-track-index="4"><img src="assets/brand/foodeatup-logo-mascot.png" alt="" /></div>
 <audio id="audio-6" class="clip" src="assets/voice/hf2/vo26-comptage-recommence.mp3" data-start="1.77" data-duration="10.04" data-track-index="2005" data-volume="1" data-has-audio="true" preload="auto"></audio>
-<div id="cta-7" class="clip beat cta-card" data-start="11.81" data-duration="5.79" data-track-index="6">
+<div id="cta-7" class="clip beat cta-card" data-start="11.81" data-duration="7.1" data-track-index="6">
 <img class="logo" src="assets/brand/foodeatup-logo-mascot.png" alt="FoodEatUp" />
 <div class="punchline">L'inventaire sans le recomptage.</div>
+<div class="explain">StockVision AI compte votre stock à partir d'une simple vidéo de vos étagères.</div>
 <div class="cta-sub">Essayez 7 jours gratuitement</div>
 </div>
-<audio id="audio-8" class="clip" src="assets/voice/cta.mp3" data-start="11.81" data-duration="5.79" data-track-index="2010" data-volume="1" data-has-audio="true" preload="auto"></audio>
+<audio id="audio-8" class="clip" src="assets/voice/explain/hf3-26-comptage-recommence.mp3" data-start="11.81" data-duration="7.1" data-track-index="2010" data-volume="1" data-has-audio="true" preload="auto"></audio>
 </div>
 
 <script>window.__timelines = window.__timelines || {};</script>
@@ -71,7 +76,8 @@
     var s = parseFloat(cta.getAttribute('data-start'));
     tl.fromTo(cta.querySelector('.logo'), { opacity: 0, scale: 0.85 }, { opacity: 1, scale: 1, duration: 0.5, ease: 'back.out(1.6)' }, s);
     tl.fromTo(cta.querySelector('.punchline'), { opacity: 0, y: 16 }, { opacity: 1, y: 0, duration: 0.4, ease: 'power1.out' }, s + 0.25);
-    tl.fromTo(cta.querySelector('.cta-sub'), { opacity: 0, y: 16 }, { opacity: 1, y: 0, duration: 0.4, ease: 'power1.out' }, s + 0.5);
+    tl.fromTo(cta.querySelector('.explain'), { opacity: 0, y: 16 }, { opacity: 1, y: 0, duration: 0.4, ease: 'power1.out' }, s + 0.5);
+    tl.fromTo(cta.querySelector('.cta-sub'), { opacity: 0, y: 16 }, { opacity: 1, y: 0, duration: 0.4, ease: 'power1.out' }, s + 0.75);
   }
   tl.duration(data.durationSeconds);
   window.__timelines = window.__timelines || {};
