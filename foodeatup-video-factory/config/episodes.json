@@ -145,7 +145,13 @@
       "titre": "Le chien qui te regarde",
       "hook": "Lui aussi attend ta commande.",
       "punchline": "Sauf que lui, il est patient. Tes clients, non.",
-      "caption": "Ton chien attend. Tes clients, eux, partent.\n\nRéservations, commandes, caisse, cuisine : un seul outil qui parle à tout le reste."
+      "caption": "Ton chien attend. Tes clients, eux, partent.\n\nRéservations, commandes, caisse, cuisine : un seul outil qui parle à tout le reste.",
+      "demo": {
+        "site_web": "vitrine",
+        "caisse_pos": "borne",
+        "kds": "besoins-production",
+        "marketing": "jarvis"
+      }
     },
     {
       "id": "EP02",
@@ -153,203 +159,377 @@
       "hook": "Ton service du samedi soir.",
       "punchline": "Ça finit toujours par terre.",
       "caption": "Le samedi soir, tout tient sur l'équilibre.\n\nFoodEatUp reprend la main avant, pendant et après le service.",
-      "cut_out": 8.6
+      "cut_out": 8.6,
+      "demo": {
+        "site_web": "boutique",
+        "caisse_pos": "mes-commandes",
+        "kds": "production-ingredients",
+        "marketing": "ereporting"
+      }
     },
     {
       "id": "EP03",
       "titre": "Le plat dans la piscine",
       "hook": "Ta marge, en ce moment.",
       "punchline": "Elle coule. On va la repêcher.",
-      "caption": "Ta marge coule sans que tu la voies partir.\n\nCoût matière par plat, marge réelle, scénarios de prix : tout est là."
+      "caption": "Ta marge coule sans que tu la voies partir.\n\nCoût matière par plat, marge réelle, scénarios de prix : tout est là.",
+      "demo": {
+        "site_web": "produits",
+        "caisse_pos": "factures",
+        "kds": "recettes",
+        "marketing": "predibot-suggestions"
+      }
     },
     {
       "id": "EP04",
       "titre": "Le chat sur la caisse",
       "hook": "Ton nouveau responsable de caisse.",
       "punchline": "Il gère mieux que ton logiciel actuel.",
-      "caption": "Ta caisse mérite mieux qu'un chat. Et mieux que ton logiciel actuel.\n\nCaisse, KDS, site et stock connectés."
+      "caption": "Ta caisse mérite mieux qu'un chat. Et mieux que ton logiciel actuel.\n\nCaisse, KDS, site et stock connectés.",
+      "demo": {
+        "site_web": "categories",
+        "caisse_pos": "facture-statuts",
+        "kds": "production",
+        "marketing": "pin-jarvis"
+      }
     },
     {
       "id": "EP05",
       "titre": "Le serveur qui glisse",
       "hook": "Trois logiciels. Deux mains.",
       "punchline": "Un seul outil, ça change tout.",
-      "caption": "Trois logiciels, deux mains, un service.\n\nUn seul outil, et tu récupères tes soirées."
+      "caption": "Trois logiciels, deux mains, un service.\n\nUn seul outil, et tu récupères tes soirées.",
+      "demo": {
+        "site_web": "fiche-plat",
+        "caisse_pos": "creer-devis",
+        "kds": "historique-productions",
+        "marketing": "statistiques-module"
+      }
     },
     {
       "id": "EP06",
       "titre": "La pizza frisbee",
       "hook": "Ta pizza part plus vite que ton stock.",
       "punchline": "Enfin… c'était avant.",
-      "caption": "Tu vends vite. Tu suis mal.\n\nStock en temps réel, alertes de production, réappro fournisseurs automatique."
+      "caption": "Tu vends vite. Tu suis mal.\n\nStock en temps réel, alertes de production, réappro fournisseurs automatique.",
+      "demo": {
+        "site_web": "templates",
+        "caisse_pos": "devis-statuts",
+        "kds": "production",
+        "marketing": "predibot"
+      }
     },
     {
       "id": "EP07",
       "titre": "La mamie qui goûte",
       "hook": "Le seul avis client qui compte.",
       "punchline": "Les quatre cents autres, on s'en occupe.",
-      "caption": "Un avis compte. Quatre cents, ça devient un métier.\n\nCollecte, modération et réponse aux avis, centralisées."
+      "caption": "Un avis compte. Quatre cents, ça devient un métier.\n\nCollecte, modération et réponse aux avis, centralisées.",
+      "demo": {
+        "site_web": "profil-entreprise",
+        "caisse_pos": "tva",
+        "kds": "productions",
+        "marketing": "mcp"
+      }
     },
     {
       "id": "EP08",
       "titre": "La pile de tickets",
       "hook": "Fin de mois. Encore.",
       "punchline": "Et si la compta se faisait toute seule ?",
-      "caption": "La fin de mois ne devrait pas prendre un week-end.\n\nFactures, devis, dépenses et synthèse financière au même endroit."
+      "caption": "La fin de mois ne devrait pas prendre un week-end.\n\nFactures, devis, dépenses et synthèse financière au même endroit.",
+      "demo": {
+        "site_web": "qrcode",
+        "caisse_pos": "borne",
+        "kds": "recettes",
+        "marketing": "performances"
+      }
     },
     {
       "id": "EP09",
       "titre": "Le pigeon voleur",
       "hook": "Il y a toujours quelqu'un qui prend ta marge.",
       "punchline": "Ton abonnement logiciel, par exemple.",
-      "caption": "Chaque mois, quelqu'un prend une part de ta marge.\n\nDix abonnements remplacés par un seul."
+      "caption": "Chaque mois, quelqu'un prend une part de ta marge.\n\nDix abonnements remplacés par un seul.",
+      "demo": {
+        "site_web": "vitrine",
+        "caisse_pos": "mes-commandes",
+        "kds": "besoins-production",
+        "marketing": "jarvis"
+      }
     },
     {
       "id": "EP10",
       "titre": "Le flambage raté",
       "hook": "Toi, devant ta facture logicielle.",
       "punchline": "Mille euros par mois. Pour dix outils qui ne se parlent pas.",
-      "caption": "Mille euros par mois pour dix outils qui s'ignorent.\n\nOn arrête là."
+      "caption": "Mille euros par mois pour dix outils qui s'ignorent.\n\nOn arrête là.",
+      "demo": {
+        "site_web": "boutique",
+        "caisse_pos": "factures",
+        "kds": "production-ingredients",
+        "marketing": "ereporting"
+      }
     },
     {
       "id": "EP11",
       "titre": "Le livreur et le dos d'âne",
       "hook": "Ta livraison sans intégration.",
       "punchline": "Avec, tout arrive à bon port.",
-      "caption": "Commandes livraison éparpillées sur trois plateformes ?\n\nTout remonte dans une seule cuisine, un seul KDS."
+      "caption": "Commandes livraison éparpillées sur trois plateformes ?\n\nTout remonte dans une seule cuisine, un seul KDS.",
+      "demo": {
+        "site_web": "produits",
+        "caisse_pos": "facture-statuts",
+        "kds": "liste-courses",
+        "marketing": "predibot-suggestions"
+      }
     },
     {
       "id": "EP12",
       "titre": "Le client qui attend",
       "hook": "Temps d'attente : « on regarde ».",
       "punchline": "Avec un KDS, il regarde son plat arriver.",
-      "caption": "« On regarde » n'est pas un temps d'attente.\n\nKDS temps réel : chaque plat a un statut, chaque table une réponse."
+      "caption": "« On regarde » n'est pas un temps d'attente.\n\nKDS temps réel : chaque plat a un statut, chaque table une réponse.",
+      "demo": {
+        "site_web": "categories",
+        "caisse_pos": "creer-devis",
+        "kds": "besoins-production",
+        "marketing": "pin-jarvis"
+      }
     },
     {
       "id": "EP13",
       "titre": "L'avalanche de notifications",
       "hook": "Dix logiciels. Dix notifications.",
       "punchline": "Un seul, ça suffisait.",
-      "caption": "Dix outils, dix notifications, zéro vision d'ensemble.\n\nUn seul tableau de bord."
+      "caption": "Dix outils, dix notifications, zéro vision d'ensemble.\n\nUn seul tableau de bord.",
+      "demo": {
+        "site_web": "fiche-plat",
+        "caisse_pos": "devis-statuts",
+        "kds": "historique-productions",
+        "marketing": "statistiques-module"
+      }
     },
     {
       "id": "EP14",
       "titre": "Le raton laveur",
       "hook": "Ton gaspillage alimentaire.",
       "punchline": "Lui au moins, il sait ce qu'il y a en stock.",
-      "caption": "Le gaspillage se voit dans la poubelle. Trop tard.\n\nStock prédictif, DLC suivies, production planifiée."
+      "caption": "Le gaspillage se voit dans la poubelle. Trop tard.\n\nStock prédictif, DLC suivies, production planifiée.",
+      "demo": {
+        "site_web": "templates",
+        "caisse_pos": "tva",
+        "kds": "liste-courses",
+        "marketing": "predibot"
+      }
     },
     {
       "id": "EP15",
       "titre": "La tour d'assiettes",
       "hook": "Ta gestion actuelle.",
       "punchline": "Une pièce bouge, tout s'écroule.",
-      "caption": "Un logiciel tombe, tout le service suit.\n\nUne seule base, toutes tes opérations."
+      "caption": "Un logiciel tombe, tout le service suit.\n\nUne seule base, toutes tes opérations.",
+      "demo": {
+        "site_web": "profil-entreprise",
+        "caisse_pos": "borne",
+        "kds": "productions",
+        "marketing": "mcp"
+      }
     },
     {
       "id": "EP16",
       "titre": "Le geyser à café",
       "hook": "Tes coûts, ce trimestre.",
       "punchline": "On va refermer le robinet.",
-      "caption": "Les coûts montent sans prévenir.\n\nDépenses, marges et rentabilité par plat, suivies en continu."
+      "caption": "Les coûts montent sans prévenir.\n\nDépenses, marges et rentabilité par plat, suivies en continu.",
+      "demo": {
+        "site_web": "qrcode",
+        "caisse_pos": "mes-commandes",
+        "kds": "recettes",
+        "marketing": "performances"
+      }
     },
     {
       "id": "EP17",
       "titre": "Le ninja de la frite",
       "hook": "Personne ne touche à ta dernière frite.",
       "punchline": "Ni à ta marge.",
-      "caption": "Défends ta dernière frite. Et ta marge.\n\nIngénierie de menu : garde ce qui rapporte, coupe le reste."
+      "caption": "Défends ta dernière frite. Et ta marge.\n\nIngénierie de menu : garde ce qui rapporte, coupe le reste.",
+      "demo": {
+        "site_web": "vitrine",
+        "caisse_pos": "factures",
+        "kds": "recettes",
+        "marketing": "jarvis"
+      }
     },
     {
       "id": "EP18",
       "titre": "Le serveur Baywatch",
       "hook": "Le rush de vingt heures.",
       "punchline": "Sauve ton service, pas ton dos.",
-      "caption": "Le rush ne se gère pas en courant plus vite.\n\nPlan de salle, file d'attente, KDS et caisse synchronisés."
+      "caption": "Le rush ne se gère pas en courant plus vite.\n\nPlan de salle, file d'attente, KDS et caisse synchronisés.",
+      "demo": {
+        "site_web": "boutique",
+        "caisse_pos": "facture-statuts",
+        "kds": "production-ingredients",
+        "marketing": "ereporting"
+      }
     },
     {
       "id": "EP19",
       "titre": "Le burger qui rebondit",
       "hook": "Ton chiffre d'affaires, sans outil.",
       "punchline": "Ça rebondit rarement tout seul.",
-      "caption": "Un CA ne remonte pas par hasard.\n\nCampagnes, fidélité et site de commande dans la même boucle."
+      "caption": "Un CA ne remonte pas par hasard.\n\nCampagnes, fidélité et site de commande dans la même boucle.",
+      "demo": {
+        "site_web": "produits",
+        "caisse_pos": "creer-devis",
+        "kds": "liste-courses",
+        "marketing": "predibot-suggestions"
+      }
     },
     {
       "id": "EP20",
       "titre": "Le chien qui a réservé",
       "hook": "Lui, il a réservé.",
       "punchline": "Tes vrais clients aussi devraient pouvoir.",
-      "caption": "Si réserver chez toi est compliqué, on réserve ailleurs.\n\nRéservation en ligne connectée au plan de salle."
+      "caption": "Si réserver chez toi est compliqué, on réserve ailleurs.\n\nRéservation en ligne connectée au plan de salle.",
+      "demo": {
+        "site_web": "categories",
+        "caisse_pos": "devis-statuts",
+        "kds": "production",
+        "marketing": "pin-jarvis"
+      }
     },
     {
       "id": "EP21",
       "titre": "Chef contre imprimante",
       "hook": "Le vrai ennemi du service.",
       "punchline": "Un KDS, et le combat s'arrête.",
-      "caption": "L'imprimante à tickets a fait son temps.\n\nKDS par poste, charge cuisine visible, zéro ticket perdu."
+      "caption": "L'imprimante à tickets a fait son temps.\n\nKDS par poste, charge cuisine visible, zéro ticket perdu.",
+      "demo": {
+        "site_web": "fiche-plat",
+        "caisse_pos": "tva",
+        "kds": "besoins-production",
+        "marketing": "statistiques-module"
+      }
     },
     {
       "id": "EP22",
       "titre": "La facture qui fait pleurer",
       "hook": "Mille euros par mois.",
       "punchline": "Pour dix logiciels qui ne se parlent même pas.",
-      "caption": "Additionne tes abonnements. Vraiment.\n\nUn seul outil pour tout le restaurant."
+      "caption": "Additionne tes abonnements. Vraiment.\n\nUn seul outil pour tout le restaurant.",
+      "demo": {
+        "site_web": "templates",
+        "caisse_pos": "borne",
+        "kds": "ingredients",
+        "marketing": "predibot"
+      }
     },
     {
       "id": "EP23",
       "titre": "L'aspirateur robot",
       "hook": "Ton automatisation actuelle.",
       "punchline": "Automatiser, oui. Mais bien.",
-      "caption": "Automatiser à moitié, c'est empirer.\n\nDes automatisations qui tiennent compte de tes vraies données."
+      "caption": "Automatiser à moitié, c'est empirer.\n\nDes automatisations qui tiennent compte de tes vraies données.",
+      "demo": {
+        "site_web": "profil-entreprise",
+        "caisse_pos": "mes-commandes",
+        "kds": "productions",
+        "marketing": "predibot"
+      }
     },
     {
       "id": "EP24",
       "titre": "La mouette braqueuse",
       "hook": "Encore une commission en moins.",
       "punchline": "Récupère tes commandes en direct.",
-      "caption": "Chaque commande via une plateforme te coûte une commission.\n\nTon site, tes commandes, ta marge."
+      "caption": "Chaque commande via une plateforme te coûte une commission.\n\nTon site, tes commandes, ta marge.",
+      "demo": {
+        "site_web": "qrcode",
+        "caisse_pos": "factures",
+        "kds": "recettes",
+        "marketing": "performances"
+      }
     },
     {
       "id": "EP25",
       "titre": "Le mixeur sans couvercle",
       "hook": "Quand tu lances une promo sans données.",
       "punchline": "Ça éclabousse. Et rarement toi.",
-      "caption": "Une promo sans données, c'est une marge en moins.\n\nSegments clients, ROI par campagne, CA attribué."
+      "caption": "Une promo sans données, c'est une marge en moins.\n\nSegments clients, ROI par campagne, CA attribué.",
+      "demo": {
+        "site_web": "vitrine",
+        "caisse_pos": "facture-statuts",
+        "kds": "besoins-production",
+        "marketing": "jarvis"
+      }
     },
     {
       "id": "EP26",
       "titre": "Le ballon qui explose",
       "hook": "Ton stock avant le week-end.",
       "punchline": "Prévois, au lieu de subir.",
-      "caption": "Le vendredi soir n'est pas le bon moment pour découvrir une rupture.\n\nAlertes de production et réappro anticipés."
+      "caption": "Le vendredi soir n'est pas le bon moment pour découvrir une rupture.\n\nAlertes de production et réappro anticipés.",
+      "demo": {
+        "site_web": "boutique",
+        "caisse_pos": "creer-devis",
+        "kds": "production-ingredients",
+        "marketing": "predibot-suggestions"
+      }
     },
     {
       "id": "EP27",
       "titre": "Le chat et le verre",
       "hook": "Ta trésorerie, chaque lundi.",
       "punchline": "Il suffit d'un truc mal placé.",
-      "caption": "Une facture oubliée, et le mois bascule.\n\nImpayés, devis en attente et dépenses sous les yeux."
+      "caption": "Une facture oubliée, et le mois bascule.\n\nImpayés, devis en attente et dépenses sous les yeux.",
+      "demo": {
+        "site_web": "produits",
+        "caisse_pos": "devis-statuts",
+        "kds": "liste-courses",
+        "marketing": "predibot-suggestions"
+      }
     },
     {
       "id": "EP28",
       "titre": "Le tapis à sushis fou",
       "hook": "Tes commandes en ligne, un vendredi.",
       "punchline": "Tout arrive. Nulle part.",
-      "caption": "Les commandes arrivent. Mais où ?\n\nSite, livraison et caisse dans le même flux cuisine."
+      "caption": "Les commandes arrivent. Mais où ?\n\nSite, livraison et caisse dans le même flux cuisine.",
+      "demo": {
+        "site_web": "categories",
+        "caisse_pos": "tva",
+        "kds": "production",
+        "marketing": "pin-jarvis"
+      }
     },
     {
       "id": "EP29",
       "titre": "Les douze assiettes",
       "hook": "Toi, gérant, en 2026.",
       "punchline": "Personne ne devrait travailler comme ça.",
-      "caption": "Gérer un restaurant en 2026 ne devrait pas ressembler à ça.\n\nUn outil qui porte les assiettes à ta place."
+      "caption": "Gérer un restaurant en 2026 ne devrait pas ressembler à ça.\n\nUn outil qui porte les assiettes à ta place.",
+      "demo": {
+        "site_web": "fiche-plat",
+        "caisse_pos": "borne",
+        "kds": "historique-productions",
+        "marketing": "statistiques-module"
+      }
     },
     {
       "id": "EP30",
       "titre": "Le pingouin en cuisine",
       "hook": "Le nouveau, jour 1.",
       "punchline": "Forme-le en un clic avec l'Académy.",
-      "caption": "Former un nouveau prend des semaines. Ou une vidéo.\n\nFoodEatUp Académy : tes process, en tutoriels."
+      "caption": "Former un nouveau prend des semaines. Ou une vidéo.\n\nFoodEatUp Académy : tes process, en tutoriels.",
+      "demo": {
+        "site_web": "templates",
+        "caisse_pos": "mes-commandes",
+        "kds": "ingredients",
+        "marketing": "predibot"
+      }
     }
   ]
 }

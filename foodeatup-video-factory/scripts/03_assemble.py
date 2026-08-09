@@ -185,25 +185,30 @@ def build_simple(src_rel: str, block: dict, fmt: dict, tag: str, name: str,
 
 
 def build_demo(block: dict, fmt: dict, tag: str, fmt_name: str,
-               ep_index: int) -> Path:
+               ep: dict) -> Path:
     """4 sous-plans égaux + fondu au blanc sur la fin du bloc.
 
-    L'ordre des rôles ne change jamais (la VO annonce site → caisse → KDS →
-    marketing), mais quand un rôle a plusieurs captures on en choisit une selon
-    l'index de l'épisode : les 30 vidéos ne montrent pas toutes les mêmes
-    écrans, et le choix reste déterministe donc reproductible.
+    Chaque épisode a ses 4 captures logiciel, déclarées dans
+    `episodes.json → demo` : aucun bloc D n'est identique à un autre sur les 30.
+    L'ordre des rôles, lui, ne change jamais — la VO annonce site → caisse →
+    KDS → marketing dans cet ordre.
     """
     want = block_seconds(block)
     # Mêmes durées frame-exactes que celles produites par 01_fetch_assets.py.
     subs = ff.split_seconds(want, fmt["fps"], len(DEMO_ORDER))
+    demo = ep.get("demo") or {}
     parts = []
     for name, sub in zip(DEMO_ORDER, subs):
-        dispo = sorted(BUILD.glob(f"demo_{name}_v*_{fmt_name}.mp4"))
-        if not dispo:
+        capture = demo.get(name)
+        if not capture:
             raise SystemExit(
-                f"MISSING_DEMO demo_{name}_*_{fmt_name}.mp4 — lance "
-                f"scripts/01_fetch_assets.py --format {fmt_name}")
-        p = dispo[ep_index % len(dispo)]
+                f"NO_DEMO_MAPPING {ep['id']} — episodes.json → demo.{name} "
+                f"absent")
+        p = BUILD / f"demo_{capture}_{fmt_name}.mp4"
+        if not p.exists():
+            raise SystemExit(
+                f"MISSING_DEMO {p.name} — lance scripts/01_fetch_assets.py "
+                f"--format {fmt_name}")
         parts.append(ff.normalize(p, BUILD / f"norm_D_{name}_{tag}.mp4",
                                   width=fmt["width"], height=fmt["height"],
                                   fps=fmt["fps"], seconds=sub))
@@ -378,10 +383,17 @@ def mix_audio(video: Path, vo: Path | None, bed: Path, dst: Path,
 
     m = ff.measure_loudness(raw, target_i=MASTER_LUFS,
                             target_tp=MASTER_TP_TARGET)
+    # Filet de sécurité après loudnorm : sur un hook très percussif (le « boing »
+    # du burger d'EP19), le limiteur interne de loudnorm laisse passer des
+    # crêtes et le master sortait à −0,23 dBTP, hors charte. `alimiter` à
+    # −2 dBFS échantillon garantit un true peak sous −1 dBTP, l'écart
+    # inter-échantillon étant d'au plus ~0,5 dB. `level=disabled` empêche le
+    # filtre de remonter le niveau et de défaire le calage loudnorm.
+    limiteur = ",alimiter=limit=0.794:level=disabled"
     dst.parent.mkdir(parents=True, exist_ok=True)
     ff.ffmpeg(["-i", str(video), "-i", str(raw),
                "-af", ff.loudnorm_filter(m, target_i=MASTER_LUFS,
-                                         target_tp=MASTER_TP_TARGET),
+                                         target_tp=MASTER_TP_TARGET) + limiteur,
                "-map", "0:v:0", "-map", "1:a:0", "-c:v", "copy",
                *ff.ACODEC, "-t", f"{total:.4f}", str(dst)])
     return dst
@@ -453,7 +465,6 @@ def main() -> int:
 
     cfg = ff.load_config()
     ep = ff.episode(cfg, args.episode)
-    ep_index = [e["id"] for e in cfg["episodes"]].index(ep["id"])
     fmt = cfg["formats"][args.format]
     tag = f"{ep['id']}_{args.format}"
     total = fmt["total_s"]
@@ -471,7 +482,7 @@ def main() -> int:
         build_hook(ep, blocks["A"], fmt, tag),
         build_simple("assets/brand/sting-logo.mp4", blocks["B"], fmt, tag, "B"),
         build_simple("assets/brand/probleme.mp4", blocks["C"], fmt, tag, "C"),
-        build_demo(blocks["D"], fmt, tag, args.format, ep_index),
+        build_demo(blocks["D"], fmt, tag, args.format, ep),
         build_simple("assets/brand/outro.mp4", blocks["E"], fmt, tag, "E",
                      fade_in_white=True),
     ]

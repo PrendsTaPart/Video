@@ -1,73 +1,281 @@
 {
-  "_comment": "Points d'entrée et cadrage des sous-plans du bloc D. Un rôle peut avoir plusieurs captures : clé 'role' pour assets/demo/role_raw.mp4, puis 'role#1', 'role#2'… pour role-b_raw.mp4, role-c_raw.mp4. 03_assemble.py en choisit une par épisode (index de l'épisode modulo le nombre de variantes) pour que les 30 vidéos ne montrent pas toutes les mêmes écrans. L'ORDRE des rôles ne bouge jamais : la voix off du bloc D annonce site -> caisse -> KDS -> marketing. zoom=1.0 : capture entière sur fond flou plein cadre. --redetect recalcule les points d'entrée.",
-  "_provenance": {
-    "site_web": "vitrine (site vitrine) + boutique (boutique en ligne)",
-    "caisse_pos": "borne de commande + mes commandes multi-canal",
-    "kds": "SUBSTITUTS — besoins de production + productions. Le vrai tuto KDS est sur le Drive (id 1Q25eSBcjIuq1XkHnJkFN_QJyK23o1GVg, 9,6 Mo) mais download_file_content renvoie 'session expired' sur ce compte.",
-    "marketing": "SUBSTITUTS — QR code + cartes NFC. Le vrai tuto marketing est sur le Drive (page publique du programme fidélité, id 1nUloQCmx2rMx7VpeoN4RjFb9Coj-EfuD, 7,1 Mo)."
-  },
-  "site_web": {
-    "src": "assets/demo/site_web_raw.mp4",
-    "start": 64.81,
-    "focus_x": 0.833,
-    "focus_y": 0.5,
-    "zoom": 1.0,
-    "detected": true
-  },
-  "site_web#1": {
-    "src": "assets/demo/site_web-b_raw.mp4",
-    "start": 6.35,
-    "focus_x": 0.5,
-    "focus_y": 0.5,
-    "zoom": 1.0,
-    "detected": true
-  },
-  "caisse_pos": {
-    "src": "assets/demo/caisse_pos_raw.mp4",
-    "start": 11.06,
-    "focus_x": 0.5,
-    "focus_y": 0.833,
-    "zoom": 1.0,
-    "detected": true
-  },
-  "caisse_pos#1": {
-    "src": "assets/demo/caisse_pos-b_raw.mp4",
-    "start": 47.65,
-    "focus_x": 0.167,
-    "focus_y": 0.5,
-    "zoom": 1.0,
-    "detected": true
-  },
-  "kds": {
-    "src": "assets/demo/kds_raw.mp4",
+  "besoins-production": {
+    "src": "assets/demo/besoins-production_raw.mp4",
     "start": 4.82,
     "focus_x": 0.5,
     "focus_y": 0.167,
     "zoom": 1.0,
+    "role": "besoins-production",
     "detected": true
   },
-  "kds#1": {
-    "src": "assets/demo/kds-b_raw.mp4",
-    "start": 17.66,
+  "borne": {
+    "src": "assets/demo/borne_raw.mp4",
+    "start": 11.06,
     "focus_x": 0.5,
     "focus_y": 0.833,
     "zoom": 1.0,
+    "role": "borne",
     "detected": true
   },
-  "marketing": {
-    "src": "assets/demo/marketing_raw.mp4",
-    "start": 13.54,
-    "focus_x": 0.833,
+  "boutique": {
+    "src": "assets/demo/boutique_raw.mp4",
+    "start": 6.35,
+    "focus_x": 0.5,
     "focus_y": 0.5,
     "zoom": 1.0,
+    "role": "boutique",
     "detected": true
   },
-  "marketing#1": {
-    "src": "assets/demo/marketing-b_raw.mp4",
+  "categories": {
+    "src": "assets/demo/categories_raw.mp4",
+    "start": 41.78,
+    "focus_x": 0.5,
+    "focus_y": 0.167,
+    "zoom": 1.0,
+    "role": "categories",
+    "detected": true
+  },
+  "creer-devis": {
+    "src": "assets/demo/creer-devis_raw.mp4",
+    "start": 45.43,
+    "focus_x": 0.5,
+    "focus_y": 0.167,
+    "zoom": 1.0,
+    "role": "creer-devis",
+    "detected": true
+  },
+  "devis-statuts": {
+    "src": "assets/demo/devis-statuts_raw.mp4",
+    "start": 7.81,
+    "focus_x": 0.833,
+    "focus_y": 0.833,
+    "zoom": 1.0,
+    "role": "devis-statuts",
+    "detected": true
+  },
+  "ereporting": {
+    "src": "assets/demo/ereporting_raw.mp4",
+    "start": 13.68,
+    "focus_x": 0.833,
+    "focus_y": 0.167,
+    "zoom": 1.0,
+    "role": "ereporting",
+    "detected": true
+  },
+  "facture-statuts": {
+    "src": "assets/demo/facture-statuts_raw.mp4",
+    "start": 28.43,
+    "focus_x": 0.167,
+    "focus_y": 0.833,
+    "zoom": 1.0,
+    "role": "facture-statuts",
+    "detected": true
+  },
+  "factures": {
+    "src": "assets/demo/factures_raw.mp4",
+    "start": 60.55,
+    "focus_x": 0.167,
+    "focus_y": 0.833,
+    "zoom": 1.0,
+    "role": "factures",
+    "detected": true
+  },
+  "fiche-plat": {
+    "src": "assets/demo/fiche-plat_raw.mp4",
+    "start": 35.24,
+    "focus_x": 0.5,
+    "focus_y": 0.5,
+    "zoom": 1.0,
+    "role": "fiche-plat",
+    "detected": true
+  },
+  "historique-productions": {
+    "src": "assets/demo/historique-productions_raw.mp4",
+    "start": 6.65,
+    "focus_x": 0.833,
+    "focus_y": 0.167,
+    "zoom": 1.0,
+    "role": "historique-productions",
+    "detected": true
+  },
+  "ingredients": {
+    "src": "assets/demo/ingredients_raw.mp4",
+    "start": 66.4,
+    "focus_x": 0.167,
+    "focus_y": 0.833,
+    "zoom": 1.0,
+    "role": "ingredients",
+    "detected": true
+  },
+  "jarvis": {
+    "src": "assets/demo/jarvis_raw.mp4",
     "start": 29.07,
     "focus_x": 0.5,
     "focus_y": 0.5,
     "zoom": 1.0,
+    "role": "jarvis",
+    "detected": true
+  },
+  "liste-courses": {
+    "src": "assets/demo/liste-courses_raw.mp4",
+    "start": 33.03,
+    "focus_x": 0.5,
+    "focus_y": 0.833,
+    "zoom": 1.0,
+    "role": "liste-courses",
+    "detected": true
+  },
+  "mcp": {
+    "src": "assets/demo/mcp_raw.mp4",
+    "start": 8.43,
+    "focus_x": 0.167,
+    "focus_y": 0.5,
+    "zoom": 1.0,
+    "role": "mcp",
+    "detected": true
+  },
+  "mes-commandes": {
+    "src": "assets/demo/mes-commandes_raw.mp4",
+    "start": 47.65,
+    "focus_x": 0.167,
+    "focus_y": 0.5,
+    "zoom": 1.0,
+    "role": "mes-commandes",
+    "detected": true
+  },
+  "performances": {
+    "src": "assets/demo/performances_raw.mp4",
+    "start": 14.34,
+    "focus_x": 0.167,
+    "focus_y": 0.833,
+    "zoom": 1.0,
+    "role": "performances",
+    "detected": true
+  },
+  "pin-jarvis": {
+    "src": "assets/demo/pin-jarvis_raw.mp4",
+    "start": 3.94,
+    "focus_x": 0.5,
+    "focus_y": 0.167,
+    "zoom": 1.0,
+    "role": "pin-jarvis",
+    "detected": true
+  },
+  "predibot": {
+    "src": "assets/demo/predibot_raw.mp4",
+    "start": 1.5,
+    "focus_x": 0.5,
+    "focus_y": 0.833,
+    "zoom": 1.0,
+    "role": "predibot",
+    "detected": true
+  },
+  "predibot-suggestions": {
+    "src": "assets/demo/predibot-suggestions_raw.mp4",
+    "start": 6.22,
+    "focus_x": 0.167,
+    "focus_y": 0.5,
+    "zoom": 1.0,
+    "role": "predibot-suggestions",
+    "detected": true
+  },
+  "production": {
+    "src": "assets/demo/production_raw.mp4",
+    "start": 3.22,
+    "focus_x": 0.5,
+    "focus_y": 0.833,
+    "zoom": 1.0,
+    "role": "production",
+    "detected": true
+  },
+  "production-ingredients": {
+    "src": "assets/demo/production-ingredients_raw.mp4",
+    "start": 44.12,
+    "focus_x": 0.5,
+    "focus_y": 0.167,
+    "zoom": 1.0,
+    "role": "production-ingredients",
+    "detected": true
+  },
+  "productions": {
+    "src": "assets/demo/productions_raw.mp4",
+    "start": 17.66,
+    "focus_x": 0.5,
+    "focus_y": 0.833,
+    "zoom": 1.0,
+    "role": "productions",
+    "detected": true
+  },
+  "produits": {
+    "src": "assets/demo/produits_raw.mp4",
+    "start": 7.96,
+    "focus_x": 0.167,
+    "focus_y": 0.5,
+    "zoom": 1.0,
+    "role": "produits",
+    "detected": true
+  },
+  "profil-entreprise": {
+    "src": "assets/demo/profil-entreprise_raw.mp4",
+    "start": 9.5,
+    "focus_x": 0.167,
+    "focus_y": 0.167,
+    "zoom": 1.0,
+    "role": "profil-entreprise",
+    "detected": true
+  },
+  "qrcode": {
+    "src": "assets/demo/qrcode_raw.mp4",
+    "start": 13.54,
+    "focus_x": 0.833,
+    "focus_y": 0.5,
+    "zoom": 1.0,
+    "role": "qrcode",
+    "detected": true
+  },
+  "recettes": {
+    "src": "assets/demo/recettes_raw.mp4",
+    "start": 21.81,
+    "focus_x": 0.5,
+    "focus_y": 0.5,
+    "zoom": 1.0,
+    "role": "recettes",
+    "detected": true
+  },
+  "statistiques-module": {
+    "src": "assets/demo/statistiques-module_raw.mp4",
+    "start": 33.56,
+    "focus_x": 0.5,
+    "focus_y": 0.833,
+    "zoom": 1.0,
+    "role": "statistiques-module",
+    "detected": true
+  },
+  "templates": {
+    "src": "assets/demo/templates_raw.mp4",
+    "start": 3.0,
+    "focus_x": 0.833,
+    "focus_y": 0.5,
+    "zoom": 1.0,
+    "role": "templates",
+    "detected": true
+  },
+  "tva": {
+    "src": "assets/demo/tva_raw.mp4",
+    "start": 7.32,
+    "focus_x": 0.5,
+    "focus_y": 0.833,
+    "zoom": 1.0,
+    "role": "tva",
+    "detected": true
+  },
+  "vitrine": {
+    "src": "assets/demo/vitrine_raw.mp4",
+    "start": 64.81,
+    "focus_x": 0.833,
+    "focus_y": 0.5,
+    "zoom": 1.0,
+    "role": "vitrine",
     "detected": true
   }
 }

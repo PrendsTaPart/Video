@@ -226,45 +226,45 @@ def main() -> int:
         if CUTS_PATH.exists() else {}
     changed = False
 
-    for idx, name in enumerate(DEMO_ORDER):
+    # Chaque épisode déclare ses 4 captures dans `episodes.json → demo`, une par
+    # rôle. Les pools sont disjoints, donc une capture appartient toujours au
+    # même rôle et hérite de la durée de son créneau. L'ORDRE des rôles ne bouge
+    # jamais : la VO du bloc D annonce site → caisse → KDS → marketing.
+    besoins: dict[str, int] = {}
+    for ep in cfg["episodes"]:
+        for idx, role in enumerate(DEMO_ORDER):
+            nom = (ep.get("demo") or {}).get(role)
+            if nom:
+                besoins[nom] = idx
+
+    for nom, idx in sorted(besoins.items()):
         want = subs[idx]
-        # Un rôle peut avoir plusieurs captures : `name_raw.mp4`, puis
-        # `name-b_raw.mp4`, `name-c_raw.mp4`… `03_assemble.py` en choisit une
-        # par épisode pour que les 30 vidéos ne montrent pas toutes les mêmes
-        # écrans. L'ordre des rôles, lui, ne bouge jamais : la voix off du
-        # bloc D annonce site → caisse → KDS → marketing dans cet ordre.
-        variantes = sorted(
-            (ROOT / "assets" / "demo").glob(f"{name}_raw.mp4")) + sorted(
-            (ROOT / "assets" / "demo").glob(f"{name}-*_raw.mp4"))
-        if not variantes:
-            fid = cfg["drive"]["demo_clips"].get(name, {})
+        raw = ROOT / "assets" / "demo" / f"{nom}_raw.mp4"
+        if not raw.exists():
             report["missing"].append(
-                f"NEED_MCP_DRIVE {name} — search_files(parentId="
-                f"{fid.get('folder_id')}) puis download_file_content "
-                f"→ assets/demo/{name}_raw.mp4"
+                f"MISSING_DEMO_SRC assets/demo/{nom}_raw.mp4 — capture "
+                f"référencée par episodes.json → demo"
             )
             continue
 
-        for v, raw in enumerate(variantes):
-            cle = name if v == 0 else f"{name}#{v}"
-            cut = cuts.get(cle)
-            if cut is None or args.redetect:
-                ff.log(f"DETECT {cle} — recherche du meilleur segment …")
-                start = pick_window(raw, want)
-                fx, fy = find_focus(raw, start, want)
-                cut = {"src": str(raw.relative_to(ROOT)), "start": start,
-                       "focus_x": fx, "focus_y": fy, "zoom": 1.0,
-                       "detected": True}
-                cuts[cle] = cut
-                changed = True
-                ff.log(f"       start={start}s focus=({fx}, {fy})")
+        cut = cuts.get(nom)
+        if cut is None or args.redetect:
+            ff.log(f"DETECT {nom} …")
+            start = pick_window(raw, want)
+            fx, fy = find_focus(raw, start, want)
+            cut = {"src": f"assets/demo/{nom}_raw.mp4", "start": start,
+                   "focus_x": fx, "focus_y": fy, "zoom": 1.0, "role": nom,
+                   "detected": True}
+            cuts[nom] = cut
+            changed = True
+            ff.log(f"       start={start}s focus=({fx}, {fy})")
 
-            dst = ROOT / "build" / f"demo_{name}_v{v}_{args.format}.mp4"
-            cut_demo(raw, dst, cut, width=W, height=H, fps=FPS, seconds=want)
-            report["ok"].append(
-                f"demo {cle}: {dst.name} {ff.duration(dst):.3f}s / "
-                f"{ff.frames(dst)} images @ start={cut['start']}s"
-            )
+        dst = ROOT / "build" / f"demo_{nom}_{args.format}.mp4"
+        cut_demo(raw, dst, cut, width=W, height=H, fps=FPS, seconds=want)
+        report["ok"].append(
+            f"demo {nom}: {ff.duration(dst):.3f}s / {ff.frames(dst)} images "
+            f"@ start={cut['start']}s"
+        )
 
     if changed:
         CUTS_PATH.write_text(
