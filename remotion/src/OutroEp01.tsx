@@ -1,13 +1,8 @@
 /**
  * BLOC C — MOTION DESIGN, Épisode 1 « La Rentrée » (25s → 40s du master, 15s de durée propre)
  *
- * Squelette Remotion. Composition autonome démarrant à la frame 0 (= 00:25 dans le master).
- * fps = 30 → 450 frames pour 15s. Adapter fps/durationInFrames dans Root.tsx si différent.
- *
- * NOTE : aucun projet Remotion n'existe encore dans ce dépôt (pas de package.json / remotion.config.ts).
- * Avant de pouvoir prévisualiser ou rendre ce fichier, scaffolder le projet, p. ex. :
- *   npx create-video@latest remotion-project --template=blank
- * puis copier ce composant dans src/ et l'enregistrer dans Root.tsx.
+ * Composition autonome démarrant à la frame 0 (= 00:25 dans le master).
+ * fps = 30 → 450 frames pour 15s. Enregistrée dans src/Root.tsx sous l'id "OutroEp01".
  */
 import React from 'react';
 import {

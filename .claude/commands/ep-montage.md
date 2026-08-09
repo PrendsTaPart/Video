@@ -12,9 +12,12 @@ Refuse de s'exécuter si `manifest.json.pipeline.ep-ingest.status != "done"`.
 
 ## Étapes
 
-1. Rendre `remotion/OutroEp01.tsx` (Bloc C, 25→40 s) en injectant les variables résolues de
-   `manifest.json.pipeline.ep-data.variables` — tout carton `"__SUPPRIMER__"` n'est
-   simplement **pas rendu**.
+1. Rendre la composition `OutroEp01` (Bloc C, 25→40 s, projet dans `remotion/`) via
+   `npx remotion render src/index.ts OutroEp01 out/outro_c.mp4 --props='{"variables":{...}}'`
+   en injectant les variables résolues de `manifest.json.pipeline.ep-data.variables` (dont
+   `logoUrl`, non codé en dur dans `Root.tsx` car l'URL S3 signée expire) — tout carton
+   `"__SUPPRIMER__"` n'est simplement **pas rendu**. Copier le résultat vers
+   `episodes/ep01-la-rentree/build/outro_c.mp4` pour `build_master.sh`.
 2. Lancer `scripts/build_master.sh` : concat `A_hook.mp4` + `B_corps.mp4` + outro Remotion,
    mix de la VO (`episodes/ep01-la-rentree/voix/`), loudnorm à **-14 LUFS**, sous-titres
    brûlés (lisibles son coupé).

@@ -285,7 +285,7 @@ prompt définitif, puisqu'il ajoute du contenu narratif non prévu à l'origine.
 
 Le Plan 5 (retournement) glisserait alors de 20–25 s à 23–29 s, et le Bloc C démarrerait à
 29 s au lieu de 25 s (motion design à raccourcir de 15 s à 11 s en conséquence, ou`
-`remotion/OutroEp01.tsx` à ajuster).
+`remotion/src/OutroEp01.tsx` à ajuster).
 
 **Non prioritaire** tant que la version 15 s (Seedance 2.0, structure ci-dessus) n'est pas
 validée — c'est elle qui « tourne partout » quel que soit votre compte.
