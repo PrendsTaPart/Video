@@ -14,8 +14,15 @@ assez étroite pour ne désigner qu'un seul acteur du marché.
 
 ⚠️ Tout chiffre est une **fourchette** (NOTES §6.2). Une publicité comparative
 doit être vérifiable ; une valeur unique est attaquable, une fourchette sourcée
-ne l'est pas. Référence retenue : 5 à 8 abonnements, 350 à 900 €/mois, à
-revérifier avant diffusion.
+ne l'est pas. Référence retenue : 5 à 8 abonnements, 350 à 900 €/mois.
+
+Cette fourchette est désormais sourcée, et elle est conservatrice : calculée
+sur les 47 éditeurs du comparateur du site vitrine, tarifs publics relevés en
+juillet 2026, un empilement de cinq abonnements au prix médian de sa catégorie
+revient à 363 € (les cinq catégories les moins chères) ou 918 € (les cinq les
+plus chères). Huit abonnements coûteraient 711 à 1 211 €. Le détail du calcul
+est dans RELECTURE-JURIDIQUE-SANS.md, réserve 3. À revérifier si la diffusion
+dépasse douze mois.
 
 Chaque film porte huit segments de voix, un par scène de corps. L'armature
 complète, générée par `build-sans.py`, fait dix scènes :

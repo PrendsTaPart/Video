@@ -57,17 +57,52 @@ software interface` : les écrans sont des aplats. À confirmer visuellement.
 
 ### 3. Les fourchettes chiffrées
 
-Voir plus haut. Elles sont défendables dans leur forme, pas encore dans leur
-source.
+**Levée.** La fourchette de 350 à 900 €/mois est désormais sourcée, et elle est
+conservatrice.
+
+Source : `src/data/competitors.ts` du dépôt vitrine
+(`food-heartbeat-site-57e96f24`), qui recense 47 éditeurs répartis en onze
+catégories fonctionnelles, avec les tarifs relevés sur leurs grilles publiques
+en juillet 2026. Les éditeurs qui ne publient pas leurs prix y portent
+`pricingModel: "quote"` et sont exclus du calcul — le fichier ne leur invente
+jamais de tarif.
+
+Méthode : pour chaque catégorie, on prend le milieu de la fourchette de chaque
+outil coté publiquement, puis la médiane de ces milieux. Un empilement de cinq
+abonnements coûte alors, selon les catégories retenues :
+
+| Empilement | Coût mensuel HT |
+| --- | --- |
+| 5 abonnements, les cinq catégories les moins chères | **363 €** |
+| 5 abonnements, les cinq catégories les plus chères | **918 €** |
+| 8 abonnements, les huit catégories les moins chères | 711 € |
+| 8 abonnements, les huit catégories les plus chères | 1 211 € |
+
+La fourchette annoncée dans les films — 350 à 900 € — correspond donc au cas de
+**cinq** abonnements, borne basse et borne haute. Elle sous-estime le cas de
+huit abonnements, que le refrain mentionne pourtant. C'est le bon sens dans une
+publicité comparative : on annonce le chiffre le plus prudent, pas le plus
+spectaculaire.
+
+Médianes par catégorie, pour la relecture : fidélité 49 €, SMS 57 €, site et
+commande 74 €, avis 88 €, caisse 95 €, HACCP 110 €, réservation 114 €, agent
+vocal 124 €, planning et RH 155 €, pilotage 225 €, food cost 300 €.
+
+⚠️ Le relevé date de juillet 2026. À revérifier si la diffusion s'étale au-delà
+de douze mois — une grille tarifaire bouge.
 
 ## Ce qui reste dû
 
-- [ ] **`no-competitor-check.ts`** — échoue si un nom de marque apparaît dans
-  un fichier du volet « sans » ou dans les champs `sans.*` des parcours.
-  **Michael doit fournir la liste des marques à surveiller** ; le contrôle
-  n'est pas écrit tant que la liste n'existe pas, parce qu'un contrôle avec une
-  liste inventée donnerait une fausse assurance.
-- [ ] **Sourcer les fourchettes** de 5–8 abonnements et 350–900 €/mois.
+- [x] **Contrôle des marques** — `_serie/controle-marques.py`, exécuté au vert
+  sur les trois fichiers qui portent du texte diffusé. La liste des 81 marques
+  surveillées n'est pas inventée : elle est dérivée du dépôt vitrine
+  (`competitors.ts`, `integrations-partners.ts`, `comparatifs.ts`), tenu à jour
+  pour le comparateur du site, augmentée de la liste manuelle de l'Académie.
+  Contrôle négatif effectué : deux marques insérées volontairement dans le
+  refrain ont bien été attrapées, y compris à travers une balise HTML.
+  Les parcours `sans.*` du site sont couverts séparément par
+  `assertNoCompetitorNames()` dans `src/data/journees.ts`, qui échoue au build.
+- [x] **Sourcer les fourchettes** — fait, voir la réserve 3 ci-dessus.
 - [ ] **Relecture par un avocat**, ce document en main, avec les neuf fichiers.
 
 ## Inventaire des sources image
