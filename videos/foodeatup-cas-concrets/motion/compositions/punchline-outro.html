@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="fr" data-resolution="portrait">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=1080, height=1920" />
+    <script src="assets/vendor/gsap.min.js"></script>
+    <style>
+      @font-face {
+        font-family: "Fredoka";
+        src: url("assets/vendor/fonts/fredoka-400.woff2") format("woff2");
+        font-weight: 400;
+        font-display: block;
+      }
+      @font-face {
+        font-family: "Fredoka";
+        src: url("assets/vendor/fonts/fredoka-700.woff2") format("woff2");
+        font-weight: 700;
+        font-display: block;
+      }
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      html,
+      body {
+        width: 1080px;
+        height: 1920px;
+        overflow: hidden;
+        background: #fcf9e6;
+      }
+      body {
+        font-family: "Fredoka", sans-serif;
+      }
+
+      #bg {
+        position: absolute;
+        inset: 0;
+        background: radial-gradient(120% 80% at 50% 38%, #ffffff 0%, #fcf9e6 55%, #f4efd2 100%);
+      }
+
+      #lockup {
+        position: absolute;
+        left: 50%;
+        top: 40%;
+        width: 620px;
+      }
+      #lockup img {
+        width: 100%;
+        height: auto;
+        display: block;
+        filter: drop-shadow(0 18px 40px rgba(15, 26, 35, 0.18));
+      }
+
+      #tagline {
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 61%;
+        text-align: center;
+        padding: 0 90px;
+      }
+      #tagline .line1 {
+        font-weight: 700;
+        font-size: 58px;
+        color: #0f1a23;
+      }
+      #tagline .line2 {
+        margin-top: 14px;
+        font-weight: 700;
+        font-size: 58px;
+        color: #007bff;
+      }
+      #tagline .word {
+        display: inline-block;
+        opacity: 0;
+      }
+
+      #underline {
+        position: absolute;
+        left: 50%;
+        top: 57.4%;
+        width: 210px;
+        height: 8px;
+        background: #ffa500;
+        border-radius: 6px;
+      }
+    </style>
+  </head>
+  <body>
+    <div
+      id="root"
+      data-composition-id="punchline-outro"
+      data-start="0"
+      data-duration="3"
+      data-width="1080"
+      data-height="1920"
+    >
+      <div id="bg" class="clip" data-start="0" data-duration="3" data-track-index="0"></div>
+
+      <div id="lockup" class="clip" data-start="0" data-duration="3" data-track-index="1">
+        <img src="assets/brand/foodeatup-logo-mascot.png" alt="FoodEatUp" />
+      </div>
+
+      <div id="underline" class="clip" data-start="0" data-duration="3" data-track-index="2"></div>
+
+      <div id="tagline" class="clip" data-start="0" data-duration="3" data-track-index="3">
+        <div class="line1">
+          <span class="word">FoodEatUp.</span>
+        </div>
+        <div class="line2">
+          <span class="word">Ton</span> <span class="word">restaurant,</span>
+          <span class="word">en</span> <span class="word">entier.</span>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      window.__timelines = window.__timelines || {};
+
+      // états initiaux : hors timeline (gsap.set immédiat), pour que la frame 0 soit correcte
+      gsap.set("#lockup", { xPercent: -50, yPercent: -50, scale: 0, rotate: -10 });
+      gsap.set("#underline", { xPercent: -50, scaleX: 0, transformOrigin: "0% 50%" });
+      gsap.set("#tagline .word", { y: 24 });
+
+      const tl = gsap.timeline({ paused: true });
+
+      // le logo "bloome" au centre depuis zéro, léger effet ressort
+      tl.to("#lockup", { xPercent: -50, yPercent: -50, scale: 1, rotate: 0, duration: 0.7, ease: "back.out(2.2)" }, 0.05);
+
+      // le trait orange souligne le passage logo -> texte
+      tl.to("#underline", { xPercent: -50, scaleX: 1, duration: 0.35, ease: "power2.out" }, 0.55);
+
+      // la punchline arrive mot par mot
+      tl.to("#tagline .line1 .word", { opacity: 1, y: 0, duration: 0.35, ease: "back.out(1.6)" }, 0.65);
+      tl.to("#tagline .line2 .word", { opacity: 1, y: 0, duration: 0.35, stagger: 0.07, ease: "back.out(1.6)" }, 0.85);
+
+      // très léger souffle continu sur le logo pendant le hold
+      tl.to(
+        "#lockup",
+        { xPercent: -50, yPercent: -50, scale: 1.03, duration: 1.0, ease: "sine.inOut", yoyo: true, repeat: 1 },
+        1.5
+      );
+
+      window.__timelines["punchline-outro"] = tl;
+    </script>
+  </body>
+</html>

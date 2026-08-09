@@ -4,6 +4,14 @@
 Plan complet, vérifié contre le Drive (`1LpWivm0KEPwX5XhNHiw08426NjT6PXHC`) et contre la
 bibliothèque Higgsfield déjà générée (`hero-video/assets/video/`), le 2026-08-09.
 
+**Mise à jour 2026-08-09** : les deux blocs fixes du montage (HOOK 0–3s et PUNCHLINE
+33–36s) sont produits — voir `foodeatup-cas-concrets/motion/` (projet HyperFrames,
+`renders/hook-intro.mp4` instancié sur le hook vidéo 1, `renders/punchline-outro.mp4`
+identique sur les 10 vidéos, thumbnail TikTok dans `motion/thumbnail/`). Assets de marque
+fournis par Michael (logo mascotte, mark "8", logo carte bleue, photo réelle du chef) —
+déjà présents dans le dépôt (`studio-video/assets/brand/`), rien de nouveau à ajouter.
+Détail et ce qui reste à trancher : `foodeatup-cas-concrets/motion/README.md`.
+
 ---
 
 ## Le format
