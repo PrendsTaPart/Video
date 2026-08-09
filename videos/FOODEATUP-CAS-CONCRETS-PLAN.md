@@ -67,11 +67,12 @@ Elements Higgsfield, voir `hero-video/data/hero.json → characters`). Résultat
   Higgsfield est fourni **à donner à l'utilisateur pour génération manuelle dans
   l'interface Higgsfield** — ce dépôt n'appelle pas l'API.
 
-Si tu génères ces 8 plans manuellement, utilise en Reference Element le **character sheet
-du chef Karim** déjà utilisé sur `hero-video` (`referenceElementId:
-c841147a-6375-4c5e-b146-e45c1cab7e99`, voir `hero-video/assets/image/characters/chef-character-sheet.png`)
-plutôt que d'en recréer un nouveau : ça garde le même visage sur l'ensemble de la
-bibliothèque FoodEatUp (site + série hero + cette série TikTok).
+**Mise à jour 2026-08-09** : Michael a fourni sa vraie photo (`studio-video/assets/brand/profile/michael-chef-mascot.jpg`).
+Pour ces 8 plans, **Référence image 1 = cette photo réelle**, pas le personnage IA "Karim"
+de `hero-video` — c'est ce vrai visage qui doit apparaître dans les 8 plans "problème" à
+générer manuellement. (Si tu préfères garder la cohérence avec l'univers `hero-video`
+plutôt que le vrai visage, dis-le et je repasse sur le character sheet Karim
+— `referenceElementId: c841147a-6375-4c5e-b146-e45c1cab7e99`.)
 
 ---
 
@@ -92,10 +93,11 @@ hook). Détail vidéo par vidéo ci-dessous.
 
 > Plan unique continu de 8 secondes, vertical 9:16, 4K, 24 images/seconde, style
 > documentaire, grain fin. Palette froide et désaturée : gris #8A9099, surfaces #EDEEF0,
-> encre #3A3F45. Lumière plate de néon, sans chaleur. Référence image 1 = photo du chef :
-> visage, morphologie et tenue à conserver strictement à l'identique. Son d'ambiance seul,
-> aucune voix, aucune musique. Aucune coupe, aucun personnage dupliqué, aucun texte à
-> l'écran, aucun logo, aucune marque ni application identifiable, aucun sous-titre.
+> encre #3A3F45. Lumière plate de néon, sans chaleur. Référence image 1 = photo du chef
+> (`studio-video/assets/brand/profile/michael-chef-mascot.jpg`) : visage, morphologie et
+> tenue à conserver strictement à l'identique. Son d'ambiance seul, aucune voix, aucune
+> musique. Aucune coupe, aucun personnage dupliqué, aucun texte à l'écran, aucun logo,
+> aucune marque ni application identifiable, aucun sous-titre.
 
 **BLOC HEYGEN** (en tête de chaque prompt résultat)
 
