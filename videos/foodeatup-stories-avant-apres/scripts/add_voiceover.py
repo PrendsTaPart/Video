@@ -11,7 +11,7 @@ import os, sys
 from common import MANIFEST, WORK, OUT, FPS, run, duration
 
 VO_START = 0.4
-AMBIENCE_DUCK = 0.3  # ambience kept at 30% under the voiceover
+AMBIENCE_DUCK = 0.0  # ambience fully removed — voiceover only, per user request
 
 
 def add_voiceover(story_id):
