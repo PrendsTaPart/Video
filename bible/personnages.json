@@ -1,0 +1,179 @@
+{
+  "$schema": "canon-verrouille-v1",
+  "serie": "La Brigade Végéfruitée",
+  "client": "FoodEatUp",
+  "regle_or": "Seedance verrouille l'identité par image de référence, pas par texte. Toujours joindre l'image de référence ET redécrire le personnage en texte (double-bind). Références en premier, jamais après.",
+  "interdit_regenerer_portrait_valide": true,
+  "protocole": [
+    "Étape A — générer les portraits canoniques (RapidoCMS generate_image)",
+    "Étape B — les valider + les uploader dans la bibliothèque RapidoCMS",
+    "Étape C — les joindre comme références Seedance AVANT d'écrire le prompt"
+  ],
+  "interdits_absolus_prompts": [
+    "Aucun nom de film, studio d'animation, réalisateur ou artiste vivant",
+    "Aucune marque tierce visible (logos de fournisseurs, concurrents)",
+    "Aucun visage humain photoréaliste",
+    "Aucun chiffre de performance non sourcé à l'écran",
+    "Aucune allégation santé (B2B logiciel, pas nutrition)"
+  ],
+  "axes_variables_par_episode": [
+    "le décor",
+    "l'heure et la lumière",
+    "l'action et l'émotion",
+    "le cadre et le mouvement de caméra",
+    "les accessoires de scène (pas les accessoires de personnage)"
+  ],
+  "personnages": [
+    {
+      "id": "tom",
+      "nom": "TOM ATEMAN",
+      "emoji": "🍅",
+      "role": "le chef — patron, straight man, celui qui prend le contrôle",
+      "module": "briefing du jour / tableau de bord",
+      "traits_verrouilles": {
+        "corps": "Tomate mûre, peau rouge profond brillante, subsurface scattering doux, calice vert 5 branches sur le dessus",
+        "yeux": "Grands, expressifs, cartoon, iris marron",
+        "accessoire_1": "Lunettes de vue fines, rectangulaires, monture noire",
+        "accessoire_2": "Casquette blanche portée à l'envers",
+        "tenue": "Veste de chef blanche ouverte, manches retroussées",
+        "membres": "Bras et jambes fins, style cartoon, mains à 4 doigts",
+        "taille": "~ taille d'un enfant de 6 ans par rapport à la cuisine"
+      },
+      "voix_elevenlabs": "Masculine, 30 ans, posée, chaleureuse, débit normal",
+      "signature_de_jeu": "Ne cligne pas des yeux quand il est calme. Un doigt levé avant chaque décision.",
+      "verbatim_2021": "J'ai 27 ans, je suis plutôt beau gosse, et assez cultivé. Je passe partout et m'adapte à tout."
+    },
+    {
+      "id": "mama_batata",
+      "nom": "MAMA BATATA",
+      "emoji": "🥔",
+      "role": "la manager — fait douze choses en même temps, ne délègue rien",
+      "module": "RH, planning, contrats, congés",
+      "traits_verrouilles": {
+        "corps": "Pomme de terre allongée, peau beige-doré mate, petits « yeux » de tubercule visibles",
+        "yeux": "Doux, cernés légers",
+        "accessoire_1": "Sac à main porté au bras en permanence, même en cuisine",
+        "accessoire_2": "Téléphone coincé entre l'épaule et la joue",
+        "tenue": "Tablier bistro bordeaux, torchon à la ceinture"
+      },
+      "voix_elevenlabs": "Féminine, 35-40 ans, douce, débit rapide, légèrement essoufflée",
+      "signature_de_jeu": "Ne pose jamais rien. Tient toujours 3 objets."
+    },
+    {
+      "id": "rott_k",
+      "nom": "ROTT-K LA CAROTTE",
+      "emoji": "🥕",
+      "role": "l'hygiène — rabat-joie qui a toujours raison",
+      "module": "HACCP, relevés T°, DLC, traçabilité",
+      "traits_verrouilles": {
+        "corps": "Carotte orange vif, fanes vertes touffues sur le dessus",
+        "yeux": "Mi-clos, sceptiques",
+        "accessoire_1": "Long collier en bois style bohème",
+        "accessoire_2": "Sonde de température dans la poche poitrine + calepin",
+        "tenue": "Blouse blanche courte, charlotte parfois"
+      },
+      "voix_elevenlabs": "Féminine, 40-45 ans, douce mais coupante, articulation nette",
+      "signature_de_jeu": "Regarde la caméra une demi-seconde après chaque désastre."
+    },
+    {
+      "id": "brocoli",
+      "nom": "BRO LE BROCOLI",
+      "emoji": "🥦",
+      "role": "l'analyste (personnage-clé) — parle une seule fois par épisode, sa réplique déclenche le retournement",
+      "module": "BI / analytics / PrediBot",
+      "traits_verrouilles": {
+        "corps": "Brocoli vert, tête en fleurettes denses, tige claire",
+        "yeux": "Calmes, grands, très peu de clignements",
+        "accessoire_1": "Casque audio over-ear bleu #147AFF autour du cou",
+        "accessoire_2": "Tablette tenue à deux mains, écran bleu",
+        "tenue": "Sweat gris uni, capuche baissée"
+      },
+      "voix_elevenlabs": "Féminine, 25 ans, neutre, calme, presque monocorde — contraste total avec le chaos",
+      "signature_de_jeu": "Immobile pendant que tout bouge. Toujours éclairée en bleu par son écran.",
+      "regle_replique": "Sa réplique unique finit toujours par une question ouverte."
+    },
+    {
+      "id": "oignon",
+      "nom": "OIGNON",
+      "emoji": "🧅",
+      "role": "livreur — râle, sent mauvais, indispensable",
+      "module": "fournisseurs, stocks, réappro, ruptures",
+      "traits_verrouilles": {
+        "corps": "Bulbe jaune-orangé, pousses vertes hautes, sourcils froncés en permanence, grand",
+        "accessoire_commun": "Sacoche banane marron ringarde + gilet réfléchissant jaune",
+        "accessoire_specifique": "Bon de livraison chiffonné"
+      },
+      "voix_elevenlabs": "Masculine, grave, rauque, agacée",
+      "signature_de_jeu": "Jamais dans le même cadre qu'Ail à moins de 50 cm."
+    },
+    {
+      "id": "ail",
+      "nom": "AIL",
+      "emoji": "🧄",
+      "role": "livreur — râle, sent mauvais, indispensable",
+      "module": "fournisseurs, stocks, réappro, ruptures",
+      "traits_verrouilles": {
+        "corps": "Tête d'ail blanche nacrée, visage espiègle, joues roses, petit (moitié de la taille d'Oignon)",
+        "accessoire_commun": "Sacoche banane marron ringarde + gilet réfléchissant jaune"
+      },
+      "voix_elevenlabs": "Masculine, aiguë, rapide, moqueuse",
+      "signature_de_jeu": "Jamais dans le même cadre qu'Oignon à moins de 50 cm."
+    },
+    {
+      "id": "firase",
+      "nom": "FIRASE LA FRAISE",
+      "emoji": "🍓",
+      "role": "la com — filme tout, ne vend rien",
+      "module": "campagnes, avis clients, réseaux",
+      "traits_verrouilles": {
+        "corps": "Fraise rouge brillante, akènes jaunes visibles, collerette verte",
+        "accessoire": "Smartphone en perche, toujours en mode selfie",
+        "tenue": "Veste crop rose pâle, barrette"
+      },
+      "voix_elevenlabs": "Féminine, 22 ans, aiguë, enthousiaste, débit très rapide",
+      "signature_de_jeu": "Le smartphone entre dans le cadre avant elle."
+    },
+    {
+      "id": "navy",
+      "nom": "NAVY LE NAVET",
+      "emoji": "🍠",
+      "role": "le narrateur — casse le 4e mur, voix off de toute la série, porte le CTA",
+      "module": "la voix de la marque",
+      "traits_verrouilles": {
+        "corps": "Navet blanc et violet, fanes vertes courtes",
+        "accessoire": "Serviette de sport autour du cou + chrono",
+        "tenue": "Débardeur gris"
+      },
+      "voix_elevenlabs": "Masculine, 32 ans, grave, complice, ton de documentaire pince-sans-rire",
+      "signature_de_jeu": "Le seul personnage autorisé à regarder l'objectif plus d'une seconde.",
+      "notes": "Repris directement du scénario 2021, où Navy rattrape déjà la caméra qui s'éloigne."
+    },
+    {
+      "id": "betterave",
+      "nom": "BETTERAVE",
+      "emoji": "🫐",
+      "role": "le runner — vitesse, chaos, gag visuel. Efface le CTA à la fin de chaque épisode.",
+      "module": "salle, réservations, KDS",
+      "traits_verrouilles": {
+        "corps": "Betterave rouge-pourpre en forme de goutte, très petit",
+        "accessoire": "Trottinette + plateau de service tenu d'une main"
+      },
+      "voix_elevenlabs": "Masculine, jeune, aiguë, débit ultra rapide",
+      "signature_de_jeu": "Traverse toujours l'écran de droite à gauche.",
+      "notes": "Gag de fin repris à l'identique du scénario 2021 (où c'était Courge). Passe assez bas pour effacer la phrase sans effacer le logo. Doit apparaître dans TOUS les épisodes."
+    },
+    {
+      "id": "don_citrone",
+      "nom": "DON CITRONE",
+      "emoji": "🍋",
+      "role": "le client — toujours pressé, jamais content",
+      "module": "commande en ligne, fidélité",
+      "traits_verrouilles": {
+        "corps": "Citron jaune vif, deux feuilles vertes, identique au flyer existant",
+        "accessoire": "Montre au poignet qu'il regarde toutes les 2 secondes"
+      },
+      "voix_elevenlabs": "Masculine, 50 ans, impatiente, débit saccadé",
+      "notes": "Pont avec le flyer citron déjà produit."
+    }
+  ]
+}

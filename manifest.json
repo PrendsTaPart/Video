@@ -1,0 +1,73 @@
+{
+  "$schema": "manifest-v1",
+  "episode": "ep01-la-rentree",
+  "serie": "La Brigade Végéfruitée",
+  "client": "FoodEatUp",
+  "updated_at": null,
+  "etape_0_marque": {
+    "status": "pending",
+    "brand_id": 7,
+    "note": "get_brand doit être appelé avant toute génération d'image. Si couleurs/logo sont null, proposer edit_brand (#147AFF / #0B0B0F / #FFFFFF + logo_url) et attendre validation humaine."
+  },
+  "pipeline": {
+    "ep-refs": {
+      "status": "pending",
+      "description": "Portraits canoniques de la série (une fois pour toutes)",
+      "mcp": ["RapidoCMS"],
+      "blocked_by": ["etape_0_marque"]
+    },
+    "ep-data": {
+      "status": "pending",
+      "description": "Chiffres réels FoodEatUp → variables {{...}}",
+      "mcp": ["FoodEatUp (lecture)"],
+      "variables": {
+        "CA_MOIS": null,
+        "COUVERTS": null,
+        "RUPTURES_EVITEES": null
+      },
+      "blocked_by": ["ep-refs"]
+    },
+    "ep-voix": {
+      "status": "pending",
+      "description": "VO française, une piste par réplique + timing JSON",
+      "mcp": ["ElevenLabs"],
+      "source": "episodes/ep01-la-rentree/voix/ep01.voix.json",
+      "blocked_by": ["ep-data"]
+    },
+    "ep-ingest": {
+      "status": "pending",
+      "description": "Contrôle qualité + normalisation des 2 MP4 sources",
+      "mcp": [],
+      "requires_files": [
+        "episodes/ep01-la-rentree/sources/A_hook.mp4",
+        "episodes/ep01-la-rentree/sources/B_corps.mp4"
+      ],
+      "note": "Ces 2 fichiers sont générés manuellement par l'humain sur Higgsfield. Claude Code s'arrête net si absents.",
+      "blocked_by": ["ep-voix"]
+    },
+    "ep-montage": {
+      "status": "pending",
+      "description": "Master + 8 déclinaisons + thumbnails",
+      "mcp": ["RapidoCMS (images)"],
+      "blocked_by": ["ep-ingest"]
+    },
+    "ep-publish": {
+      "status": "pending",
+      "description": "Upload bibliothèque + brouillons LinkedIn/Facebook/Instagram + campagne FoodEatUp brouillon",
+      "mcp": ["RapidoCMS", "FoodEatUp"],
+      "note": "Brouillons uniquement. Aucune planification ni lancement sans confirmation écrite.",
+      "blocked_by": ["ep-montage"]
+    }
+  },
+  "definition_of_done": {
+    "manifest_complet": false,
+    "master_9x16_40s_loudnorm_-14lufs": false,
+    "sous_titres_brules": false,
+    "declinaisons_9x16_1x1_16x9_teaser_3extraits": false,
+    "thumbnails_1080x1350_1080x1920": false,
+    "variables_resolues_ou_cartons_supprimes": false,
+    "fichiers_dans_bibliotheque_rapidocms": false,
+    "brouillons_linkedin_facebook_crees_non_planifies": false,
+    "campagne_foodeatup_brouillon_non_lancee": false
+  }
+}
