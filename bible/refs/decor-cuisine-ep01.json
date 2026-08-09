@@ -1,0 +1,11 @@
+{
+  "type": "decor",
+  "nom": "Cuisine FoodEatUp — premier matin de septembre",
+  "episode": "ep01-la-rentree",
+  "status": "valide",
+  "valide_le": "2026-08-09",
+  "local_file": "bible/refs/decor-cuisine-ep01.jpg",
+  "rapidocms_url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/brigade-vegefruitee_decor-cuisine-ep01_ref",
+  "prompt": "Environment reference board / concept art, wide establishing shot, a restaurant professional kitchen at dawn on the first day of September, cold morning light through windows. Dust-cover sheets draped over the pass/counter, a flickering neon light fixture, a wall calendar stuck on July, wilted dried herbs in a jar, unopened supplier delivery crates stacked against a service door. Empty, still, slightly abandoned atmosphere, muted warm-copper undertones mixed with cold blue dawn light. No characters, no people, no text, no logos, no brand names visible. Clean stylized 3D-cartoon animation background art, consistent with a cheerful vegetable-mascot animated series, high detail, cinematic wide angle, for use as an environment/set reference.",
+  "note": "Le décor est un axe variable d'épisode en épisode (voir bible/01-BIBLE-PERSONNAGES.md) — cette planche est spécifique à l'épisode 1."
+}

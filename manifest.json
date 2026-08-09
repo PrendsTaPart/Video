@@ -13,10 +13,24 @@
   },
   "pipeline": {
     "ep-refs": {
-      "status": "pending",
+      "status": "done",
       "description": "Portraits canoniques de la série (une fois pour toutes)",
       "mcp": ["RapidoCMS"],
-      "blocked_by": ["etape_0_marque"]
+      "blocked_by": ["etape_0_marque"],
+      "portraits_valides": [
+        "bible/refs/tom.json",
+        "bible/refs/batata.json",
+        "bible/refs/rottk.json",
+        "bible/refs/brocoli.json",
+        "bible/refs/oignon.json",
+        "bible/refs/ail.json",
+        "bible/refs/firase.json",
+        "bible/refs/navy.json",
+        "bible/refs/betterave.json",
+        "bible/refs/citrone.json"
+      ],
+      "decor_valide": "bible/refs/decor-cuisine-ep01.json",
+      "note": "10 personnages (Ail et Oignon comptés séparément) + 1 planche décor, générés et uploadés dans RapidoCMS le 2026-08-09. Ne jamais régénérer — repartir via images_to_image pour de nouvelles poses."
     },
     "ep-data": {
       "status": "pending",

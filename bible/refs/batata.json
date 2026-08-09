@@ -1,0 +1,10 @@
+{
+  "personnage_id": "mama_batata",
+  "nom": "MAMA BATATA",
+  "status": "valide",
+  "valide_le": "2026-08-09",
+  "local_file": "bible/refs/batata.jpg",
+  "rapidocms_url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/brigade-vegefruitee_mama-batata_ref",
+  "prompt": "Character reference sheet, single full-body portrait, centered on a plain neutral light grey studio background, soft even lighting, front-facing 3/4 view. Cartoon mascot character: an elongated potato with matte beige-gold skin, small visible tuber \"eyes\" dotting the skin. Soft eyes with light under-eye circles, warm and slightly frazzled expression. Carries a handbag on her arm at all times (even though she's in a kitchen). Has a phone wedged between her shoulder and cheek. Wears a burgundy bistro apron with a kitchen towel tucked into the waist. Holds three folded kitchen towels and a binder/folder in her free arms/hands, never empty-handed. Thin cartoon arms and legs, four-fingered hands, child-like proportions matching the rest of the cast. Busy, harried, multitasking energy but friendly. No text, no logos, no other characters, no photorealistic human face. Clean vector-illustration / 3D-cartoon animation style, high detail, consistent flat studio lighting for use as a character turnaround reference.",
+  "note": "Ne jamais régénérer depuis zéro. Pour une nouvelle pose, repartir de ce fichier via images_to_image."
+}

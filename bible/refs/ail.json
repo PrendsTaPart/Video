@@ -1,0 +1,10 @@
+{
+  "personnage_id": "ail",
+  "nom": "AIL",
+  "status": "valide",
+  "valide_le": "2026-08-09",
+  "local_file": "bible/refs/ail.jpg",
+  "rapidocms_url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/brigade-vegefruitee_ail_ref",
+  "prompt": "Character reference sheet, single full-body portrait, centered on a plain neutral light grey studio background, soft even lighting, front-facing 3/4 view. Cartoon mascot character: a small pearly-white garlic bulb head, mischievous playful face, rosy pink cheeks, notably small in size (about half the height of a larger onion-type companion character). Wears a scruffy brown fanny-pack bag and a yellow high-visibility safety vest. Thin cartoon arms and legs, four-fingered hands, child-like proportions matching the rest of the cast. Cheeky, teasing, energetic expression. No text, no logos, no other characters, no photorealistic human face. Clean vector-illustration / 3D-cartoon animation style, high detail, consistent flat studio lighting for use as a character turnaround reference.",
+  "note": "Ne jamais régénérer depuis zéro. Pour une nouvelle pose, repartir de ce fichier via images_to_image. Jamais dans le même cadre qu'Oignon à moins de 50cm."
+}
