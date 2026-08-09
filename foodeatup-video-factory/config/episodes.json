@@ -1,0 +1,91 @@
+{
+  "$schema_version": "1.0",
+  "brand": {
+    "name": "FoodEatUp",
+    "logo_path": "assets/brand/logo-foodeatup.png",
+    "logo_position": "top-right",
+    "logo_margin_px": 40,
+    "logo_height_px": 90,
+    "logo_opacity": 0.85,
+    "cta_url": "https://foodeatup.com"
+  },
+  "formats": {
+    "tiktok_30": {
+      "width": 1080, "height": 1920, "fps": 30, "total_s": 30.0,
+      "targets": ["tiktok", "instagram"],
+      "blocks": [
+        {"id": "A", "source": "hook", "start": 0.0, "end": 7.0},
+        {"id": "B", "source": "sting", "start": 7.0, "end": 9.0},
+        {"id": "C", "source": "probleme", "start": 9.0, "end": 16.5},
+        {"id": "D", "source": "demo", "start": 16.5, "end": 26.0},
+        {"id": "E", "source": "outro", "start": 26.0, "end": 30.0}
+      ],
+      "vo": {"B": "vo/common/B-sting.mp3", "C": "vo/common/C-probleme-30.mp3", "D": "vo/common/D-demo-30.mp3", "E": "vo/common/E-closing-30.mp3"},
+      "punch_at_s": 5.0,
+      "hook_text_in_s": 0.8,
+      "hook_text_out_s": 3.5
+    },
+    "linkedin_45": {
+      "width": 1080, "height": 1080, "fps": 30, "total_s": 45.0,
+      "targets": ["linkedin"],
+      "blocks": [
+        {"id": "A", "source": "hook", "start": 0.0, "end": 10.0},
+        {"id": "B", "source": "sting", "start": 10.0, "end": 15.0},
+        {"id": "C", "source": "probleme", "start": 15.0, "end": 27.0},
+        {"id": "D", "source": "demo", "start": 27.0, "end": 40.0},
+        {"id": "E", "source": "outro", "start": 40.0, "end": 45.0}
+      ],
+      "vo": {"B": "vo/common/B-sting.mp3", "C": "vo/common/C-probleme-45.mp3", "D": "vo/common/D-demo-45.mp3", "E": "vo/common/E-closing-45.mp3"},
+      "punch_at_s": 6.0,
+      "hook_text_in_s": 1.0,
+      "hook_text_out_s": 4.5
+    }
+  },
+  "drive": {
+    "root_folder_id": "1LpWivm0KEPwX5XhNHiw08426NjT6PXHC",
+    "demo_clips": {
+      "site_web": {"folder_id": "1WZsVdrBvcL2OQiYcRdnBCgzUx6u9J6p9", "file_id": "1MEMdJJMq2MhQ6H-dU5Nb5ls8ifoqM3U4", "name": "Créer son site avec l'IA.mp4"},
+      "caisse_pos": {"folder_id": "1nHjH82ig0i-MtQqDmYp131htOSThaPIQ"},
+      "kds": {"folder_id": "1wQAkcP9pY90DLu_sE8GLiI6WYHZuYwq9"},
+      "marketing": {"folder_id": "1hBc6Axd0DE2ocTiXXKGlmj1dyagOwKFg"},
+      "hubrise": {"folder_id": "19D09dNt_jZSKpcwVCU8Mn1OkMLkY_ojd"}
+    }
+  },
+  "hashtags": {
+    "tiktok": "#restaurant #restaurateur #gestionrestaurant #foodeatup #cuisine",
+    "instagram": "#restaurant #restaurateur #gestionrestaurant #foodtech #foodeatup",
+    "linkedin": "#restauration #foodtech #digitalisation #SaaS #FoodEatUp"
+  },
+  "episodes": [
+    {"id": "EP01", "titre": "Le chien qui te regarde", "hook": "Lui aussi attend ta commande.", "punchline": "Sauf que lui, il est patient. Tes clients, non.", "caption": "Ton chien attend. Tes clients, eux, partent.\n\nRéservations, commandes, caisse, cuisine : un seul outil qui parle à tout le reste."},
+    {"id": "EP02", "titre": "La chute en skateboard", "hook": "Ton service du samedi soir.", "punchline": "Ça finit toujours par terre.", "caption": "Le samedi soir, tout tient sur l'équilibre.\n\nFoodEatUp reprend la main avant, pendant et après le service."},
+    {"id": "EP03", "titre": "Le plat dans la piscine", "hook": "Ta marge, en ce moment.", "punchline": "Elle coule. On va la repêcher.", "caption": "Ta marge coule sans que tu la voies partir.\n\nCoût matière par plat, marge réelle, scénarios de prix : tout est là."},
+    {"id": "EP04", "titre": "Le chat sur la caisse", "hook": "Ton nouveau responsable de caisse.", "punchline": "Il gère mieux que ton logiciel actuel.", "caption": "Ta caisse mérite mieux qu'un chat. Et mieux que ton logiciel actuel.\n\nCaisse, KDS, site et stock connectés."},
+    {"id": "EP05", "titre": "Le serveur qui glisse", "hook": "Trois logiciels. Deux mains.", "punchline": "Un seul outil, ça change tout.", "caption": "Trois logiciels, deux mains, un service.\n\nUn seul outil, et tu récupères tes soirées."},
+    {"id": "EP06", "titre": "La pizza frisbee", "hook": "Ta pizza part plus vite que ton stock.", "punchline": "Enfin… c'était avant.", "caption": "Tu vends vite. Tu suis mal.\n\nStock en temps réel, alertes de production, réappro fournisseurs automatique."},
+    {"id": "EP07", "titre": "La mamie qui goûte", "hook": "Le seul avis client qui compte.", "punchline": "Les quatre cents autres, on s'en occupe.", "caption": "Un avis compte. Quatre cents, ça devient un métier.\n\nCollecte, modération et réponse aux avis, centralisées."},
+    {"id": "EP08", "titre": "La pile de tickets", "hook": "Fin de mois. Encore.", "punchline": "Et si la compta se faisait toute seule ?", "caption": "La fin de mois ne devrait pas prendre un week-end.\n\nFactures, devis, dépenses et synthèse financière au même endroit."},
+    {"id": "EP09", "titre": "Le pigeon voleur", "hook": "Il y a toujours quelqu'un qui prend ta marge.", "punchline": "Ton abonnement logiciel, par exemple.", "caption": "Chaque mois, quelqu'un prend une part de ta marge.\n\nDix abonnements remplacés par un seul."},
+    {"id": "EP10", "titre": "Le flambage raté", "hook": "Toi, devant ta facture logicielle.", "punchline": "Mille euros par mois. Pour dix outils qui ne se parlent pas.", "caption": "Mille euros par mois pour dix outils qui s'ignorent.\n\nOn arrête là."},
+    {"id": "EP11", "titre": "Le livreur et le dos d'âne", "hook": "Ta livraison sans intégration.", "punchline": "Avec, tout arrive à bon port.", "caption": "Commandes livraison éparpillées sur trois plateformes ?\n\nTout remonte dans une seule cuisine, un seul KDS.", "cut_out": 8.6},
+    {"id": "EP12", "titre": "Le client qui attend", "hook": "Temps d'attente : « on regarde ».", "punchline": "Avec un KDS, il regarde son plat arriver.", "caption": "« On regarde » n'est pas un temps d'attente.\n\nKDS temps réel : chaque plat a un statut, chaque table une réponse."},
+    {"id": "EP13", "titre": "L'avalanche de notifications", "hook": "Dix logiciels. Dix notifications.", "punchline": "Un seul, ça suffisait.", "caption": "Dix outils, dix notifications, zéro vision d'ensemble.\n\nUn seul tableau de bord."},
+    {"id": "EP14", "titre": "Le raton laveur", "hook": "Ton gaspillage alimentaire.", "punchline": "Lui au moins, il sait ce qu'il y a en stock.", "caption": "Le gaspillage se voit dans la poubelle. Trop tard.\n\nStock prédictif, DLC suivies, production planifiée."},
+    {"id": "EP15", "titre": "La tour d'assiettes", "hook": "Ta gestion actuelle.", "punchline": "Une pièce bouge, tout s'écroule.", "caption": "Un logiciel tombe, tout le service suit.\n\nUne seule base, toutes tes opérations."},
+    {"id": "EP16", "titre": "Le geyser à café", "hook": "Tes coûts, ce trimestre.", "punchline": "On va refermer le robinet.", "caption": "Les coûts montent sans prévenir.\n\nDépenses, marges et rentabilité par plat, suivies en continu."},
+    {"id": "EP17", "titre": "Le ninja de la frite", "hook": "Personne ne touche à ta dernière frite.", "punchline": "Ni à ta marge.", "caption": "Défends ta dernière frite. Et ta marge.\n\nIngénierie de menu : garde ce qui rapporte, coupe le reste."},
+    {"id": "EP18", "titre": "Le serveur Baywatch", "hook": "Le rush de vingt heures.", "punchline": "Sauve ton service, pas ton dos.", "caption": "Le rush ne se gère pas en courant plus vite.\n\nPlan de salle, file d'attente, KDS et caisse synchronisés."},
+    {"id": "EP19", "titre": "Le burger qui rebondit", "hook": "Ton chiffre d'affaires, sans outil.", "punchline": "Ça rebondit rarement tout seul.", "caption": "Un CA ne remonte pas par hasard.\n\nCampagnes, fidélité et site de commande dans la même boucle."},
+    {"id": "EP20", "titre": "Le chien qui a réservé", "hook": "Lui, il a réservé.", "punchline": "Tes vrais clients aussi devraient pouvoir.", "caption": "Si réserver chez toi est compliqué, on réserve ailleurs.\n\nRéservation en ligne connectée au plan de salle."},
+    {"id": "EP21", "titre": "Chef contre imprimante", "hook": "Le vrai ennemi du service.", "punchline": "Un KDS, et le combat s'arrête.", "caption": "L'imprimante à tickets a fait son temps.\n\nKDS par poste, charge cuisine visible, zéro ticket perdu."},
+    {"id": "EP22", "titre": "La facture qui fait pleurer", "hook": "Mille euros par mois.", "punchline": "Pour dix logiciels qui ne se parlent même pas.", "caption": "Additionne tes abonnements. Vraiment.\n\nUn seul outil pour tout le restaurant."},
+    {"id": "EP23", "titre": "L'aspirateur robot", "hook": "Ton automatisation actuelle.", "punchline": "Automatiser, oui. Mais bien.", "caption": "Automatiser à moitié, c'est empirer.\n\nDes automatisations qui tiennent compte de tes vraies données."},
+    {"id": "EP24", "titre": "La mouette braqueuse", "hook": "Encore une commission en moins.", "punchline": "Récupère tes commandes en direct.", "caption": "Chaque commande via une plateforme te coûte une commission.\n\nTon site, tes commandes, ta marge."},
+    {"id": "EP25", "titre": "Le mixeur sans couvercle", "hook": "Quand tu lances une promo sans données.", "punchline": "Ça éclabousse. Et rarement toi.", "caption": "Une promo sans données, c'est une marge en moins.\n\nSegments clients, ROI par campagne, CA attribué."},
+    {"id": "EP26", "titre": "Le ballon qui explose", "hook": "Ton stock avant le week-end.", "punchline": "Prévois, au lieu de subir.", "caption": "Le vendredi soir n'est pas le bon moment pour découvrir une rupture.\n\nAlertes de production et réappro anticipés."},
+    {"id": "EP27", "titre": "Le chat et le verre", "hook": "Ta trésorerie, chaque lundi.", "punchline": "Il suffit d'un truc mal placé.", "caption": "Une facture oubliée, et le mois bascule.\n\nImpayés, devis en attente et dépenses sous les yeux."},
+    {"id": "EP28", "titre": "Le tapis à sushis fou", "hook": "Tes commandes en ligne, un vendredi.", "punchline": "Tout arrive. Nulle part.", "caption": "Les commandes arrivent. Mais où ?\n\nSite, livraison et caisse dans le même flux cuisine."},
+    {"id": "EP29", "titre": "Les douze assiettes", "hook": "Toi, gérant, en 2026.", "punchline": "Personne ne devrait travailler comme ça.", "caption": "Gérer un restaurant en 2026 ne devrait pas ressembler à ça.\n\nUn outil qui porte les assiettes à ta place."},
+    {"id": "EP30", "titre": "Le pingouin en cuisine", "hook": "Le nouveau, jour 1.", "punchline": "Forme-le en un clic avec l'Académy.", "caption": "Former un nouveau prend des semaines. Ou une vidéo.\n\nFoodEatUp Académy : tes process, en tutoriels."}
+  ]
+}

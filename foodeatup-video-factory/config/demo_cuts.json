@@ -1,0 +1,43 @@
+{
+  "_comment": "Points d'entrée et cadrage des 4 sous-plans du bloc D. Détectés automatiquement par 01_fetch_assets.py puis figés ici pour que le montage soit reproductible. Éditables à la main : --redetect les recalcule.",
+  "_provenance": {
+    "site_web": "OK — Module Mon Site, création de site par IA",
+    "caisse_pos": "OK — borne de commande",
+    "kds": "SUBSTITUT — capture 'mes commandes' faute de tuto KDS sur le disque ; le vrai tuto est dans le Drive 1wQAkcP9pY90DLu_sE8GLiI6WYHZuYwq9 ('Afficher le kds par poste de travail.mp4', id 1PmYYGKH00qGUcMc1zehHng3C9fQiH84O)",
+    "marketing": "SUBSTITUT — capture QR code faute de tuto marketing sur le disque ; le vrai tuto est dans le Drive ('Visualiser le Calendrier de communication de Iris.mp4', id 1NaTIjzXl8NU1dwX3Xrxl0DrhKIbVy34F)"
+  },
+  "site_web": {
+    "src": "assets/demo/site_web_raw.mp4",
+    "start": 64.81,
+    "focus_x": 0.833,
+    "focus_y": 0.5,
+    "zoom": 1.35,
+    "detected": true
+  },
+  "caisse_pos": {
+    "src": "assets/demo/caisse_pos_raw.mp4",
+    "start": 11.06,
+    "focus_x": 0.5,
+    "focus_y": 0.833,
+    "zoom": 1.35,
+    "detected": true
+  },
+  "kds": {
+    "src": "assets/demo/kds_raw.mp4",
+    "start": 47.65,
+    "focus_x": 0.167,
+    "focus_y": 0.5,
+    "zoom": 1.35,
+    "detected": true,
+    "substitut": true
+  },
+  "marketing": {
+    "src": "assets/demo/marketing_raw.mp4",
+    "start": 13.54,
+    "focus_x": 0.833,
+    "focus_y": 0.5,
+    "zoom": 1.35,
+    "detected": true,
+    "substitut": true
+  }
+}

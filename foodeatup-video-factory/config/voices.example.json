@@ -1,0 +1,13 @@
+{
+  "_comment": "Copier en voices.json. voice_id DOIT venir d'un appel réel à la liste des voix ElevenLabs — ne jamais l'inventer.",
+  "voice_id": "",
+  "model_id": "eleven_multilingual_v2",
+  "language": "fr",
+  "settings": {
+    "stability": 0.45,
+    "similarity_boost": 0.75,
+    "style": 0.35,
+    "use_speaker_boost": true
+  },
+  "speed": 1.05
+}

@@ -1,0 +1,8 @@
+# secrets
+config/secrets.env
+# intermédiaires ffmpeg jetables (regénérés par les scripts)
+build/
+# tutos produit bruts tirés du Drive : lourds et retéléchargeables
+assets/demo/*_raw.mp4
+__pycache__/
+*.pyc
