@@ -19,7 +19,7 @@ mkdir -p "$OUT"
 # titre entre 0,7 s plus tard ; 6,4 s laisse le sous-titre monter aussi.
 INSTANT=6.4
 
-for d in "$SERIE"/*-sans; do
+for d in "$SERIE"/[cds][0-9]s-*-sans; do
   film=$(basename "$d")
   mp4="$d/out/$film.mp4"
   [ -s "$mp4" ] || { echo "  ! $film : pas de rendu"; continue; }
