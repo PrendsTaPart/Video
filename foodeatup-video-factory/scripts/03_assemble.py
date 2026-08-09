@@ -248,35 +248,60 @@ def overlay_logo(src: Path, dst: Path, cfg: dict, fmt: dict) -> Path:
 # Audio
 # ---------------------------------------------------------------------------
 
+VO_GAP = 0.12          # silence minimal entre deux prises de parole
+
+
 def build_vo_track(ep: dict, fmt: dict, tag: str, total: float) -> Path | None:
-    """Pose chaque VO à sa place sur une piste unique de `total` secondes."""
-    placed: list[tuple[Path, float]] = []
+    """Pose chaque VO à sa place sur une piste unique de `total` secondes.
+
+    Deux VO ne doivent JAMAIS parler en même temps : la punchline de l'épisode
+    (posée sur le beat comique du hook) débordait sur la VO « FoodEatUp » du
+    sting, et sur le format 45 s la VO de démo chevauchait celle du closing.
+    """
+    segs: list[dict] = []
     for bid, rel in fmt["vo"].items():
         p = ROOT / rel
         blk = next(x for x in fmt["blocks"] if x["id"] == bid)
         if not p.exists():
             ff.log(f"  WARN MISSING_VO {rel}", err=True)
             continue
-        at = blk["start"]
         d = ff.duration(p)
+        at = blk["start"]
         over = (at + d) - blk["end"]
         if over > 0.01:
-            # La VO déborde de son bloc : on l'avance pour qu'elle finisse
-            # avec le bloc, plutôt que de la laisser couper en plein mot par
-            # le `-t` final. Elle mord sur la fin du bloc précédent, ce qui
-            # s'entend beaucoup moins qu'une phrase tronquée.
+            # VO plus longue que son bloc : on l'avance pour qu'elle finisse
+            # avec le bloc, plutôt que de la laisser tronquer en plein mot par
+            # le `-t` final.
             at = max(0.0, at - over)
-            ff.log(f"  INFO VO_AVANCEE {bid} {rel} : {d:.2f}s pour un bloc de "
+            ff.log(f"  INFO VO_AVANCEE {bid} : {d:.2f}s pour un bloc de "
                    f"{blk['end'] - blk['start']:.2f}s → départ à {at:.2f}s")
-        placed.append((p, at))
+        segs.append({"path": p, "at": at, "dur": d, "nom": bid})
+
     punch = ROOT / "vo" / "punch" / f"{ep['id']}.mp3"
     if punch.exists():
-        placed.append((punch, fmt["punch_at_s"]))
+        segs.append({"path": punch, "at": float(fmt["punch_at_s"]),
+                     "dur": ff.duration(punch), "nom": "punchline"})
     else:
         ff.log(f"  WARN MISSING_VO vo/punch/{ep['id']}.mp3", err=True)
 
-    if not placed:
+    if not segs:
         return None
+
+    # Passe arrière : on remonte depuis la fin et on recule ce qui déborde sur
+    # le suivant. On recule le PRÉCÉDENT plutôt que de repousser le suivant —
+    # repousser ferait sortir la dernière VO du montage.
+    segs.sort(key=lambda s: s["at"])
+    for i in range(len(segs) - 1, 0, -1):
+        prev, cur = segs[i - 1], segs[i]
+        fin_max = cur["at"] - VO_GAP
+        if prev["at"] + prev["dur"] > fin_max:
+            nouveau = max(0.0, fin_max - prev["dur"])
+            ff.log(f"  INFO VO_ANTI_CHEVAUCHEMENT {prev['nom']} recalée "
+                   f"{prev['at']:.2f}s → {nouveau:.2f}s "
+                   f"(parlait par-dessus {cur['nom']})")
+            prev["at"] = nouveau
+
+    placed = [(s["path"], s["at"]) for s in segs]
 
     args: list[str] = []
     chains: list[str] = []

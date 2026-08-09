@@ -202,6 +202,18 @@ Quatre sources : son diégétique du hook, VO commune, punchline, lit musical.
   couper une VO »). Loggé en `INFO VO_AVANCEE`.
   Concerne surtout `E-closing-45` : 7,65 s mesurées pour un bloc de 5,0 s — la
   cible de 4,8 s du brief était irréaliste pour ce texte.
+
+- **Jamais deux voix en même temps.** Une passe arrière parcourt les VO de la
+  fin vers le début et recule celle qui déborde sur la suivante (silence minimal
+  `VO_GAP` = 0,12 s). On recule la précédente plutôt que de repousser la
+  suivante : repousser ferait sortir la dernière VO du montage.
+  Loggé en `INFO VO_ANTI_CHEVAUCHEMENT`.
+
+  **Bug corrigé par cette passe** : la punchline est posée sur le beat comique
+  (5,0 s) mais dure jusqu'à 3,4 s selon l'épisode — elle parlait donc par-dessus
+  la VO « FoodEatUp » du sting qui démarre à 7,0 s. Sur EP01 la punchline est
+  désormais recalée à 3,93 s et se termine à 6,88 s. Même correction sur le
+  format 45 s, où la VO de démo chevauchait celle du closing.
 - Le lit musical est bouclé puis calé à **−22 LUFS** (loudnorm 2 passes, mis en
   cache par durée).
 - `sidechaincompress` baisse la musique **et** le son diégétique dès que la voix
