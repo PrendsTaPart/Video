@@ -34,7 +34,7 @@ const DomainPill: React.FC<{label: string; index: number}> = ({label, index}) =>
 	const enter = useEnterStyle(index, GRID_START);
 	return (
 		<div style={{opacity: enter.opacity, transform: enter.transform}}>
-			<Pill label={label} active />
+			<Pill label={label} active style={{fontSize: 30, padding: '17px 22px'}} />
 		</div>
 	);
 };
@@ -83,11 +83,11 @@ export const Scene05: React.FC = () => {
 		<SceneLayout background={COLORS.cream}>
 			<div style={{display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 56}}>
 				<div style={{display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 12}}>
-					<span style={{color: COLORS.primary, fontSize: 112, fontWeight: 700}}>
+					<span style={{color: COLORS.primary, fontSize: 124, fontWeight: 700}}>
 						<Counter target={175} suffix="+" startFrame={COUNTER_START} />
 					</span>
 					<AnimatedLine lineIndex={0} startFrame={LABEL_START}>
-						<span style={{color: COLORS.navy, fontSize: 40, fontWeight: 600}}>
+						<span style={{color: COLORS.navy, fontSize: 46, fontWeight: 600}}>
 							outils MCP, cœur restaurant
 						</span>
 					</AnimatedLine>
@@ -95,9 +95,9 @@ export const Scene05: React.FC = () => {
 				<div
 					style={{
 						display: 'grid',
-						gridTemplateColumns: 'repeat(3, 220px)',
+						gridTemplateColumns: 'repeat(3, 230px)',
 						justifyItems: 'center',
-						gap: 18,
+						gap: 16,
 					}}
 				>
 					{DOMAINS.map((d, i) => (

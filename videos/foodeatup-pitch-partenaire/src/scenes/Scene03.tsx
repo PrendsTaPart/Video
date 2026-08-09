@@ -96,7 +96,7 @@ export const Scene03: React.FC = () => {
 							justifyContent: 'center',
 						}}
 					>
-						<span style={{color: COLORS.white, fontSize: 46, fontWeight: 700}}>MCP</span>
+						<span style={{color: COLORS.white, fontSize: 52, fontWeight: 700}}>MCP</span>
 					</div>
 				</div>
 
@@ -105,7 +105,7 @@ export const Scene03: React.FC = () => {
 					startFrame={TEXT_START}
 					lineStyle={{
 						color: COLORS.navy,
-						fontSize: 66,
+						fontSize: 78,
 						fontWeight: 700,
 						textAlign: 'center',
 					}}

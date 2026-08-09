@@ -17,7 +17,7 @@ export const Scene12: React.FC = () => {
 					<span
 						style={{
 							color: COLORS.navy,
-							fontSize: 38,
+							fontSize: 44,
 							fontWeight: 600,
 							textAlign: 'center',
 						}}
@@ -26,7 +26,7 @@ export const Scene12: React.FC = () => {
 					</span>
 				</AnimatedLine>
 				<AnimatedLine lineIndex={2} startFrame={0}>
-					<span style={{color: COLORS.primary, fontSize: 30, fontWeight: 600}}>
+					<span style={{color: COLORS.primary, fontSize: 34, fontWeight: 600}}>
 						site.foodeatup.com
 					</span>
 				</AnimatedLine>

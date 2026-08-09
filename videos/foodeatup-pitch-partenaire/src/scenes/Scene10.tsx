@@ -55,11 +55,11 @@ const PlanCard: React.FC<{name: string; price: string; unit: string; index: numb
 				backgroundColor: COLORS.creamDeep,
 			}}
 		>
-			<span style={{color: COLORS.navy, fontSize: 30, fontWeight: 700, textAlign: 'center'}}>
+			<span style={{color: COLORS.navy, fontSize: 33, fontWeight: 700, textAlign: 'center'}}>
 				{name}
 			</span>
-			<span style={{color: COLORS.primary, fontSize: 56, fontWeight: 700}}>{price}</span>
-			<span style={{color: COLORS.navy, fontSize: 23, fontWeight: 500, opacity: 0.75}}>{unit}</span>
+			<span style={{color: COLORS.primary, fontSize: 60, fontWeight: 700}}>{price}</span>
+			<span style={{color: COLORS.navy, fontSize: 25, fontWeight: 500, opacity: 0.75}}>{unit}</span>
 		</div>
 	);
 };
@@ -80,8 +80,8 @@ const OptionRow: React.FC<{name: string; price: string; index: number}> = ({name
 				backgroundColor: COLORS.creamDeep,
 			}}
 		>
-			<span style={{color: COLORS.navy, fontSize: 30, fontWeight: 600}}>{name}</span>
-			<span style={{color: COLORS.primary, fontSize: 30, fontWeight: 700, whiteSpace: 'nowrap'}}>
+			<span style={{color: COLORS.navy, fontSize: 32, fontWeight: 600}}>{name}</span>
+			<span style={{color: COLORS.primary, fontSize: 32, fontWeight: 700, whiteSpace: 'nowrap'}}>
 				{price}
 			</span>
 		</div>
@@ -99,7 +99,7 @@ export const Scene10: React.FC = () => {
 				</div>
 
 				<AnimatedLine lineIndex={0} startFrame={OPTIONS_START - 20}>
-					<span style={{color: COLORS.navy, fontSize: 34, fontWeight: 700}}>
+					<span style={{color: COLORS.navy, fontSize: 38, fontWeight: 700}}>
 						Options à la carte, empilables
 					</span>
 				</AnimatedLine>

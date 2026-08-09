@@ -44,7 +44,7 @@ const Cartouche: React.FC<{label: string; start: number}> = ({label, start}) => 
 				width: 720,
 			}}
 		>
-			<span style={{color: COLORS.navy, fontSize: 36, fontWeight: 600}}>{label}</span>
+			<span style={{color: COLORS.navy, fontSize: 42, fontWeight: 600}}>{label}</span>
 		</div>
 	);
 };

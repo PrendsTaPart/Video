@@ -124,12 +124,12 @@ export const Scene06: React.FC = () => {
 						}}
 					>
 						<Img src={staticFile('img/official-mark-8.png')} style={{height: 64}} />
-						<span style={{color: COLORS.navy, fontSize: 22, fontWeight: 700}}>FoodEatUp</span>
+						<span style={{color: COLORS.navy, fontSize: 25, fontWeight: 700}}>FoodEatUp</span>
 					</div>
 				</div>
 
 				<AnimatedLine lineIndex={0} startFrame={STAT_START}>
-					<span style={{color: COLORS.primary, fontSize: 48, fontWeight: 700}}>
+					<span style={{color: COLORS.primary, fontSize: 56, fontWeight: 700}}>
 						Une même famille · 4 logiciels · 1 agent
 					</span>
 				</AnimatedLine>

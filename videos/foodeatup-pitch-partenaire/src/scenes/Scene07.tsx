@@ -63,7 +63,7 @@ const Badge: React.FC<{label: string; index: number}> = ({label, index}) => {
 	const enter = useEnterStyle(index, BADGES_START);
 	return (
 		<div style={{opacity: enter.opacity, transform: enter.transform}}>
-			<Pill label={label} active style={{fontSize: 36}} />
+			<Pill label={label} active style={{fontSize: 42}} />
 		</div>
 	);
 };
@@ -130,7 +130,7 @@ export const Scene07: React.FC = () => {
 						}}
 					>
 						<AnimatedLine lineIndex={0} startFrame={TITLE_START}>
-							<span style={{color: COLORS.navy, fontSize: 66, fontWeight: 700}}>Confirmer ?</span>
+							<span style={{color: COLORS.navy, fontSize: 78, fontWeight: 700}}>Confirmer ?</span>
 						</AnimatedLine>
 						<ConfirmSlider />
 					</div>

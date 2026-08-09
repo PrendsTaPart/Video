@@ -48,14 +48,14 @@ const Panel: React.FC<{number: string; title: string; subtitle: string; start: n
 				justifyContent: 'center',
 			}}
 		>
-			<span style={{color: COLORS.primary, fontSize: 50}}>{number}</span>
-			<span style={{color: COLORS.navy, fontSize: 44, fontWeight: 700, letterSpacing: 1}}>
+			<span style={{color: COLORS.primary, fontSize: 56}}>{number}</span>
+			<span style={{color: COLORS.navy, fontSize: 50, fontWeight: 700, letterSpacing: 1}}>
 				{title}
 			</span>
 			<span
 				style={{
 					color: COLORS.navy,
-					fontSize: 30,
+					fontSize: 34,
 					fontWeight: 500,
 					textAlign: 'center',
 					opacity: 0.85,

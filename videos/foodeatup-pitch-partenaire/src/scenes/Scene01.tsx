@@ -83,7 +83,7 @@ export const Scene01: React.FC = () => {
 							msPerChar={55}
 							style={{
 								color: COLORS.navy,
-								fontSize: 48,
+								fontSize: 56,
 								fontWeight: 600,
 							}}
 						/>
@@ -92,7 +92,7 @@ export const Scene01: React.FC = () => {
 						<span
 							style={{
 								color: COLORS.primary,
-								fontSize: 42,
+								fontSize: 50,
 								fontWeight: 700,
 							}}
 						>

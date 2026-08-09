@@ -46,7 +46,7 @@ export const Scene11: React.FC = () => {
 					gap={26}
 					lineStyle={{
 						color: COLORS.navy,
-						fontSize: 42,
+						fontSize: 48,
 						fontWeight: 600,
 					}}
 				/>

@@ -109,7 +109,7 @@ export const Scene02: React.FC = () => {
 				<div style={{height: 90, display: 'flex', alignItems: 'center', justifyContent: 'center'}}>
 					<AnimatedLine lineIndex={0} startFrame={activeStat.start}>
 						{activeStat.kind === 'counter' ? (
-							<span style={{color: COLORS.primary, fontSize: 76, fontWeight: 700}}>
+							<span style={{color: COLORS.primary, fontSize: 88, fontWeight: 700}}>
 								<Counter
 									target={activeStat.target}
 									startFrame={activeStat.start}
@@ -117,7 +117,7 @@ export const Scene02: React.FC = () => {
 								/>
 							</span>
 						) : (
-							<span style={{color: COLORS.primary, fontSize: 56, fontWeight: 700}}>
+							<span style={{color: COLORS.primary, fontSize: 66, fontWeight: 700}}>
 								{activeStat.label}
 							</span>
 						)}

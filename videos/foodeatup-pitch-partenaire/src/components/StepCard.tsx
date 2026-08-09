@@ -57,7 +57,7 @@ export const StepCard: React.FC<{
 				backgroundColor: activation > 0 ? 'rgba(0,123,255,0.10)' : COLORS.creamDeep,
 				opacity: interpolate(entrance, [0, 1], [0, 1]),
 				transform: `translateY(${interpolate(entrance, [0, 1], [16, 0])}px)`,
-				minHeight: 320,
+				minHeight: 340,
 				boxSizing: 'border-box',
 			}}
 		>
@@ -91,7 +91,7 @@ export const StepCard: React.FC<{
 							border: `2px solid ${COLORS.primary}`,
 						}}
 					>
-						<span style={{color: activation > 0 ? COLORS.white : COLORS.primary, fontSize: 36, fontWeight: 700}}>
+						<span style={{color: activation > 0 ? COLORS.white : COLORS.primary, fontSize: 40, fontWeight: 700}}>
 							{index + 1}
 						</span>
 					</div>
@@ -121,7 +121,7 @@ export const StepCard: React.FC<{
 			<div
 				style={{
 					color: COLORS.navy,
-					fontSize: 36,
+					fontSize: 42,
 					fontWeight: 600,
 					textAlign: 'center',
 					lineHeight: 1.25,
