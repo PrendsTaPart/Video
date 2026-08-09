@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="fr" data-resolution="portrait">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=1080, height=1920" />
+    <script src="assets/vendor/gsap.min.js"></script>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      html,
+      body {
+        width: 1080px;
+        height: 1920px;
+        overflow: hidden;
+        background: #000;
+      }
+
+      .full {
+        position: absolute;
+        inset: 0;
+        width: 1080px;
+        height: 1920px;
+        object-fit: cover;
+      }
+
+      /* Conteneur NON minuté (pas de data-start) : la vidéo minutée à l'intérieur porte sa
+         propre temporalité, voir variables-and-media.md ("Do not nest video inside a timed
+         wrapper"). Le logiciel est affiché en pleine largeur, intégralement, sans recadrage
+         ni coupe, ancré en haut de l'écran (demande explicite : "ne le coupe pas"). */
+      #solution-crop {
+        position: absolute;
+        inset: 0;
+        width: 1080px;
+        height: 1920px;
+        overflow: hidden;
+        background: radial-gradient(120% 70% at 50% 0%, #ffffff 0%, #fcf9e6 55%, #f4efd2 100%);
+      }
+      #solution-video {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 1080px;
+        height: 465.75px;
+        box-shadow: 0 18px 40px rgba(15, 26, 35, 0.18);
+      }
+    </style>
+  </head>
+  <body>
+    <div
+      id="root"
+      data-composition-id="v01-fidelite"
+      data-start="0"
+      data-duration="36.3"
+      data-width="1080"
+      data-height="1920"
+    >
+      <!-- HOOK 0-3s -->
+      <video
+        id="seg-hook"
+        class="clip full"
+        data-start="0"
+        data-duration="3"
+        data-track-index="0"
+        src="assets/hook/hook-intro.mp4"
+        muted
+        playsinline
+      ></video>
+
+      <!-- PROBLÈME (Higgsfield) 3-11s -->
+      <video
+        id="seg-probleme"
+        class="clip full"
+        data-start="3"
+        data-duration="8"
+        data-track-index="0"
+        data-media-start="0"
+        src="assets/higgsfield/probleme.mp4"
+        muted
+        playsinline
+      ></video>
+      <audio
+        id="seg-probleme-audio"
+        src="assets/higgsfield/probleme.mp4"
+        data-start="3"
+        data-duration="8"
+        data-media-start="0"
+        data-track-index="10"
+        data-volume="0.6"
+      ></audio>
+
+      <!-- SOLUTION (capture écran) 11-25s : fenêtre 14-28s de la source, recadrée + zoom/pan.
+           Silencieuse (capture d'écran ~ -91dB, pas de son exploitable). -->
+      <div id="solution-crop">
+        <video
+          id="solution-video"
+          class="clip"
+          data-start="11"
+          data-duration="14"
+          data-track-index="0"
+          data-media-start="14"
+          src="assets/solution/programme-fidelite.mp4"
+          muted
+          playsinline
+        ></video>
+      </div>
+
+      <!-- RÉSULTAT (HeyGen) 25-32.298s -->
+      <video
+        id="seg-resultat"
+        class="clip full"
+        data-start="25"
+        data-duration="7.298"
+        data-track-index="0"
+        data-media-start="0"
+        src="assets/heygen/resultat.mp4"
+        muted
+        playsinline
+      ></video>
+      <audio
+        id="seg-resultat-audio"
+        src="assets/heygen/resultat.mp4"
+        data-start="25"
+        data-duration="7.298"
+        data-media-start="0"
+        data-track-index="10"
+        data-volume="1"
+      ></audio>
+
+      <!-- PUNCHLINE 32.3-36.3s -->
+      <video
+        id="seg-punchline"
+        class="clip full"
+        data-start="32.3"
+        data-duration="4"
+        data-track-index="0"
+        src="assets/punchline/punchline-outro.mp4"
+        muted
+        playsinline
+      ></video>
+    </div>
+
+    <script>
+      window.__timelines = window.__timelines || {};
+
+      // Capture écran affichée en pleine largeur (1080px = largeur source complète, échelle
+      // 0.5625), intégralement, sans recadrage : rien n'est coupé. Ancrée en haut de l'écran.
+      // Seule animation : un fondu d'entrée net (pas de zoom/pan qui recadrerait l'image).
+      gsap.set("#solution-video", { opacity: 0, y: -12 });
+
+      // Le timeline racine couvre les 36.3s de la vidéo entière : ce tween est donc
+      // positionné au temps ABSOLU où le segment SOLUTION est actif (data-start="11").
+      const SOLUTION_START = 11;
+      const tl = gsap.timeline({ paused: true });
+      tl.to(
+        "#solution-video",
+        { opacity: 1, y: 0, duration: 0.5, ease: "power2.out" },
+        SOLUTION_START
+      );
+
+      window.__timelines["v01-fidelite"] = tl;
+    </script>
+  </body>
+</html>
