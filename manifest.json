@@ -46,10 +46,11 @@
       "blocked_by": ["ep-refs"]
     },
     "ep-voix": {
-      "status": "pending",
+      "status": "done",
       "description": "VO française, une piste par réplique + timing JSON",
       "mcp": ["ElevenLabs"],
       "source": "episodes/ep01-la-rentree/voix/ep01.voix.json",
+      "note": "12 répliques générées (11 Navy / 1 Brocoli), eleven_multilingual_v2, voix premade ElevenLabs (pas de list_voices disponible dans cette session — à remplacer par des voix dédiées si besoin). Fichiers dans episodes/ep01-la-rentree/voix/tracks/.",
       "blocked_by": ["ep-data"]
     },
     "ep-ingest": {

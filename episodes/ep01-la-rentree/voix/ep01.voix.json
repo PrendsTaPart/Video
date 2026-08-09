@@ -6,16 +6,20 @@
     "NAVY": {
       "role": "narrateur",
       "description": "Masculine, 32 ans, grave, complice, ton de documentaire pince-sans-rire",
+      "elevenlabs_voice_id": "pNInz6obpgDQGcFmaJgB",
+      "elevenlabs_model_id": "eleven_multilingual_v2",
       "elevenlabs_settings": {
         "stability": 0.45,
         "similarity_boost": 0.80,
         "style": 0.35
       },
-      "direction": "Marquer une vraie pause avant « Il a tort. »"
+      "direction": "Marquer une vraie pause avant « Il a tort. » (réalisé via un « … » en tête de texte)"
     },
     "BROCOLI": {
       "role": "analyste",
       "description": "Féminine, 25 ans, neutre, calme, presque monocorde — contraste total avec le chaos",
+      "elevenlabs_voice_id": "21m00Tcm4TlvDq8ikWAM",
+      "elevenlabs_model_id": "eleven_multilingual_v2",
       "elevenlabs_settings": {
         "stability": 0.75,
         "similarity_boost": 0.85,
@@ -24,18 +28,19 @@
       "direction": "Aucune emphase. C'est le contraste qui fait la réplique."
     }
   },
+  "note_voix": "Pas d'outil list_voices disponible sur ce compte ElevenLabs dans cette session (seul Higgsfield en propose un, MCP interdit par CLAUDE.md). Voix premade ElevenLabs standards utilisées (Adam pour Navy, Rachel pour Brocoli) avec le modèle multilingue pour le français. À réécouter et remplacer par des voix dédiées/clonées si besoin.",
   "repliques": [
-    { "tc": "00:00.5", "voix": "NAVY", "texte": "1er septembre. 8h02. Le restaurant rouvre.", "bloc": "A" },
-    { "tc": "00:04.0", "voix": "NAVY", "texte": "Lui, c'est Tom. Il pense que ça va bien se passer.", "bloc": "A" },
-    { "tc": "00:08.0", "voix": "NAVY", "texte": "Il a tort.", "bloc": "A" },
-    { "tc": "00:10.5", "voix": "NAVY", "texte": "Le stock a fondu. Le planning est vide. Les résas de septembre sont… quelque part.", "bloc": "B" },
-    { "tc": "00:15.0", "voix": "NAVY", "texte": "Ail et Oignon ont livré la mauvaise commande. Carotte a trois semaines de relevés en retard.", "bloc": "B" },
-    { "tc": "00:19.5", "voix": "NAVY", "texte": "Et Brocoli n'a toujours rien dit.", "bloc": "B" },
-    { "tc": "00:21.5", "voix": "BROCOLI", "texte": "Et si vos données bossaient pour vous, plutôt que l'inverse ?", "bloc": "B" },
-    { "tc": "00:26.0", "voix": "NAVY", "texte": "FoodEatUp. Le stock, l'équipe, l'hygiène, les résas, la caisse, les avis. Un seul écran.", "bloc": "C" },
-    { "tc": "00:31.0", "voix": "NAVY", "texte": "L'IA lit tes chiffres.", "bloc": "C" },
-    { "tc": "00:34.0", "voix": "NAVY", "texte": "Tu reprends le contrôle.", "bloc": "C" },
-    { "tc": "00:37.0", "voix": "NAVY", "texte": "La rentrée, c'est maintenant.", "bloc": "C" },
-    { "tc": "00:39.0", "voix": "NAVY", "texte": "La suite… au prochain épisode.", "bloc": "C" }
+    { "tc": "00:00.5", "voix": "NAVY", "texte": "1er septembre. 8h02. Le restaurant rouvre.", "bloc": "A", "audio_path": "tracks/000.5_NAVY.mp3" },
+    { "tc": "00:04.0", "voix": "NAVY", "texte": "Lui, c'est Tom. Il pense que ça va bien se passer.", "bloc": "A", "audio_path": "tracks/004.0_NAVY.mp3" },
+    { "tc": "00:08.0", "voix": "NAVY", "texte": "Il a tort.", "bloc": "A", "audio_path": "tracks/008.0_NAVY.mp3" },
+    { "tc": "00:10.5", "voix": "NAVY", "texte": "Le stock a fondu. Le planning est vide. Les résas de septembre sont… quelque part.", "bloc": "B", "audio_path": "tracks/010.5_NAVY.mp3" },
+    { "tc": "00:15.0", "voix": "NAVY", "texte": "Ail et Oignon ont livré la mauvaise commande. Carotte a trois semaines de relevés en retard.", "bloc": "B", "audio_path": "tracks/015.0_NAVY.mp3" },
+    { "tc": "00:19.5", "voix": "NAVY", "texte": "Et Brocoli n'a toujours rien dit.", "bloc": "B", "audio_path": "tracks/019.5_NAVY.mp3" },
+    { "tc": "00:21.5", "voix": "BROCOLI", "texte": "Et si vos données bossaient pour vous, plutôt que l'inverse ?", "bloc": "B", "audio_path": "tracks/021.5_BROCOLI.mp3" },
+    { "tc": "00:26.0", "voix": "NAVY", "texte": "FoodEatUp. Le stock, l'équipe, l'hygiène, les résas, la caisse, les avis. Un seul écran.", "bloc": "C", "audio_path": "tracks/026.0_NAVY.mp3" },
+    { "tc": "00:31.0", "voix": "NAVY", "texte": "L'IA lit tes chiffres.", "bloc": "C", "audio_path": "tracks/031.0_NAVY.mp3" },
+    { "tc": "00:34.0", "voix": "NAVY", "texte": "Tu reprends le contrôle.", "bloc": "C", "audio_path": "tracks/034.0_NAVY.mp3" },
+    { "tc": "00:37.0", "voix": "NAVY", "texte": "La rentrée, c'est maintenant.", "bloc": "C", "audio_path": "tracks/037.0_NAVY.mp3" },
+    { "tc": "00:39.0", "voix": "NAVY", "texte": "La suite… au prochain épisode.", "bloc": "C", "audio_path": "tracks/039.0_NAVY.mp3" }
   ]
 }
