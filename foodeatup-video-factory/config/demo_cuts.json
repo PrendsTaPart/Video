@@ -1,15 +1,23 @@
 {
-  "_comment": "Points d'entrée et cadrage des 4 sous-plans du bloc D. Détectés automatiquement par 01_fetch_assets.py puis figés ici pour que le montage soit reproductible. zoom=1.0 : la capture est affichée ENTIÈRE, sans rognage, sur un fond flou plein cadre. Éditables à la main ; --redetect recalcule les points d'entrée.",
+  "_comment": "Points d'entrée et cadrage des sous-plans du bloc D. Un rôle peut avoir plusieurs captures : clé 'role' pour assets/demo/role_raw.mp4, puis 'role#1', 'role#2'… pour role-b_raw.mp4, role-c_raw.mp4. 03_assemble.py en choisit une par épisode (index de l'épisode modulo le nombre de variantes) pour que les 30 vidéos ne montrent pas toutes les mêmes écrans. L'ORDRE des rôles ne bouge jamais : la voix off du bloc D annonce site -> caisse -> KDS -> marketing. zoom=1.0 : capture entière sur fond flou plein cadre. --redetect recalcule les points d'entrée.",
   "_provenance": {
-    "site_web": "OK — Module Mon Site, création de site par IA",
-    "caisse_pos": "OK — borne de commande",
-    "kds": "SUBSTITUT — capture 'mes commandes' faute de tuto KDS sur le disque ; le vrai tuto est dans le Drive 1wQAkcP9pY90DLu_sE8GLiI6WYHZuYwq9 ('Afficher le kds par poste de travail.mp4', id 1PmYYGKH00qGUcMc1zehHng3C9fQiH84O)",
-    "marketing": "SUBSTITUT — capture QR code faute de tuto marketing sur le disque ; le vrai tuto est dans le Drive ('Visualiser le Calendrier de communication de Iris.mp4', id 1NaTIjzXl8NU1dwX3Xrxl0DrhKIbVy34F)"
+    "site_web": "vitrine (site vitrine) + boutique (boutique en ligne)",
+    "caisse_pos": "borne de commande + mes commandes multi-canal",
+    "kds": "SUBSTITUTS — besoins de production + productions. Le vrai tuto KDS est sur le Drive (id 1Q25eSBcjIuq1XkHnJkFN_QJyK23o1GVg, 9,6 Mo) mais download_file_content renvoie 'session expired' sur ce compte.",
+    "marketing": "SUBSTITUTS — QR code + cartes NFC. Le vrai tuto marketing est sur le Drive (page publique du programme fidélité, id 1nUloQCmx2rMx7VpeoN4RjFb9Coj-EfuD, 7,1 Mo)."
   },
   "site_web": {
     "src": "assets/demo/site_web_raw.mp4",
     "start": 64.81,
     "focus_x": 0.833,
+    "focus_y": 0.5,
+    "zoom": 1.0,
+    "detected": true
+  },
+  "site_web#1": {
+    "src": "assets/demo/site_web-b_raw.mp4",
+    "start": 6.35,
+    "focus_x": 0.5,
     "focus_y": 0.5,
     "zoom": 1.0,
     "detected": true
@@ -22,14 +30,29 @@
     "zoom": 1.0,
     "detected": true
   },
-  "kds": {
-    "src": "assets/demo/kds_raw.mp4",
+  "caisse_pos#1": {
+    "src": "assets/demo/caisse_pos-b_raw.mp4",
     "start": 47.65,
     "focus_x": 0.167,
     "focus_y": 0.5,
     "zoom": 1.0,
-    "detected": true,
-    "substitut": true
+    "detected": true
+  },
+  "kds": {
+    "src": "assets/demo/kds_raw.mp4",
+    "start": 4.82,
+    "focus_x": 0.5,
+    "focus_y": 0.167,
+    "zoom": 1.0,
+    "detected": true
+  },
+  "kds#1": {
+    "src": "assets/demo/kds-b_raw.mp4",
+    "start": 17.66,
+    "focus_x": 0.5,
+    "focus_y": 0.833,
+    "zoom": 1.0,
+    "detected": true
   },
   "marketing": {
     "src": "assets/demo/marketing_raw.mp4",
@@ -37,7 +60,14 @@
     "focus_x": 0.833,
     "focus_y": 0.5,
     "zoom": 1.0,
-    "detected": true,
-    "substitut": true
+    "detected": true
+  },
+  "marketing#1": {
+    "src": "assets/demo/marketing-b_raw.mp4",
+    "start": 29.07,
+    "focus_x": 0.5,
+    "focus_y": 0.5,
+    "zoom": 1.0,
+    "detected": true
   }
 }

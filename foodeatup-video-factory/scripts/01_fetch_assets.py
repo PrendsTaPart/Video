@@ -228,8 +228,15 @@ def main() -> int:
 
     for idx, name in enumerate(DEMO_ORDER):
         want = subs[idx]
-        raw = ROOT / "assets" / "demo" / f"{name}_raw.mp4"
-        if not raw.exists():
+        # Un rôle peut avoir plusieurs captures : `name_raw.mp4`, puis
+        # `name-b_raw.mp4`, `name-c_raw.mp4`… `03_assemble.py` en choisit une
+        # par épisode pour que les 30 vidéos ne montrent pas toutes les mêmes
+        # écrans. L'ordre des rôles, lui, ne bouge jamais : la voix off du
+        # bloc D annonce site → caisse → KDS → marketing dans cet ordre.
+        variantes = sorted(
+            (ROOT / "assets" / "demo").glob(f"{name}_raw.mp4")) + sorted(
+            (ROOT / "assets" / "demo").glob(f"{name}-*_raw.mp4"))
+        if not variantes:
             fid = cfg["drive"]["demo_clips"].get(name, {})
             report["missing"].append(
                 f"NEED_MCP_DRIVE {name} — search_files(parentId="
@@ -238,25 +245,26 @@ def main() -> int:
             )
             continue
 
-        cut = cuts.get(name)
-        if cut is None or args.redetect:
-            ff.log(f"DETECT {name} — recherche du meilleur segment …")
-            start = pick_window(raw, want)
-            fx, fy = find_focus(raw, start, want)
-            cut = {"src": f"assets/demo/{name}_raw.mp4", "start": start,
-                   "focus_x": fx, "focus_y": fy, "zoom": 1.35,
-                   "detected": True}
-            cuts[name] = cut
-            changed = True
-            ff.log(f"       start={start}s focus=({fx}, {fy})")
+        for v, raw in enumerate(variantes):
+            cle = name if v == 0 else f"{name}#{v}"
+            cut = cuts.get(cle)
+            if cut is None or args.redetect:
+                ff.log(f"DETECT {cle} — recherche du meilleur segment …")
+                start = pick_window(raw, want)
+                fx, fy = find_focus(raw, start, want)
+                cut = {"src": str(raw.relative_to(ROOT)), "start": start,
+                       "focus_x": fx, "focus_y": fy, "zoom": 1.0,
+                       "detected": True}
+                cuts[cle] = cut
+                changed = True
+                ff.log(f"       start={start}s focus=({fx}, {fy})")
 
-        dst = ROOT / "build" / f"demo_{name}_{args.format}.mp4"
-        cut_demo(raw, dst, cut, width=W, height=H, fps=FPS, seconds=want)
-        got = ff.duration(dst)
-        report["ok"].append(
-            f"demo {name}: {dst.name} {got:.3f}s / {ff.frames(dst)} images "
-            f"@ start={cut['start']}s"
-        )
+            dst = ROOT / "build" / f"demo_{name}_v{v}_{args.format}.mp4"
+            cut_demo(raw, dst, cut, width=W, height=H, fps=FPS, seconds=want)
+            report["ok"].append(
+                f"demo {cle}: {dst.name} {ff.duration(dst):.3f}s / "
+                f"{ff.frames(dst)} images @ start={cut['start']}s"
+            )
 
     if changed:
         CUTS_PATH.write_text(

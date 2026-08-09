@@ -184,18 +184,26 @@ def build_simple(src_rel: str, block: dict, fmt: dict, tag: str, name: str,
         fps=fmt["fps"])
 
 
-def build_demo(block: dict, fmt: dict, tag: str, fmt_name: str) -> Path:
-    """4 sous-plans égaux + fondu au blanc sur la fin du bloc."""
+def build_demo(block: dict, fmt: dict, tag: str, fmt_name: str,
+               ep_index: int) -> Path:
+    """4 sous-plans égaux + fondu au blanc sur la fin du bloc.
+
+    L'ordre des rôles ne change jamais (la VO annonce site → caisse → KDS →
+    marketing), mais quand un rôle a plusieurs captures on en choisit une selon
+    l'index de l'épisode : les 30 vidéos ne montrent pas toutes les mêmes
+    écrans, et le choix reste déterministe donc reproductible.
+    """
     want = block_seconds(block)
     # Mêmes durées frame-exactes que celles produites par 01_fetch_assets.py.
     subs = ff.split_seconds(want, fmt["fps"], len(DEMO_ORDER))
     parts = []
     for name, sub in zip(DEMO_ORDER, subs):
-        p = BUILD / f"demo_{name}_{fmt_name}.mp4"
-        if not p.exists():
+        dispo = sorted(BUILD.glob(f"demo_{name}_v*_{fmt_name}.mp4"))
+        if not dispo:
             raise SystemExit(
-                f"MISSING_DEMO {p.name} — lance scripts/01_fetch_assets.py "
-                f"--format {fmt_name} (les tutos bruts viennent du Drive)")
+                f"MISSING_DEMO demo_{name}_*_{fmt_name}.mp4 — lance "
+                f"scripts/01_fetch_assets.py --format {fmt_name}")
+        p = dispo[ep_index % len(dispo)]
         parts.append(ff.normalize(p, BUILD / f"norm_D_{name}_{tag}.mp4",
                                   width=fmt["width"], height=fmt["height"],
                                   fps=fmt["fps"], seconds=sub))
@@ -445,6 +453,7 @@ def main() -> int:
 
     cfg = ff.load_config()
     ep = ff.episode(cfg, args.episode)
+    ep_index = [e["id"] for e in cfg["episodes"]].index(ep["id"])
     fmt = cfg["formats"][args.format]
     tag = f"{ep['id']}_{args.format}"
     total = fmt["total_s"]
@@ -462,7 +471,7 @@ def main() -> int:
         build_hook(ep, blocks["A"], fmt, tag),
         build_simple("assets/brand/sting-logo.mp4", blocks["B"], fmt, tag, "B"),
         build_simple("assets/brand/probleme.mp4", blocks["C"], fmt, tag, "C"),
-        build_demo(blocks["D"], fmt, tag, args.format),
+        build_demo(blocks["D"], fmt, tag, args.format, ep_index),
         build_simple("assets/brand/outro.mp4", blocks["E"], fmt, tag, "E",
                      fade_in_white=True),
     ]

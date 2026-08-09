@@ -87,6 +87,18 @@ assombrie. Aucune zone vide, aucun contenu perdu.
 capture autour de la zone d'action détectée : à n'utiliser que si l'UI d'un tuto
 donné est vraiment trop petite, en connaissance de cause.
 
+### Plusieurs captures par rôle
+
+Un rôle peut avoir plusieurs sources : `assets/demo/<role>_raw.mp4`, puis
+`<role>-b_raw.mp4`, `<role>-c_raw.mp4`… `01_fetch_assets.py` les découpe toutes
+(`build/demo_<role>_v<N>_<format>.mp4`) et `03_assemble.py` en choisit une par
+épisode — index de l'épisode modulo le nombre de variantes. Les 30 vidéos ne
+montrent donc pas toutes les mêmes écrans, et le choix reste déterministe.
+
+**L'ORDRE des rôles ne change jamais** : la VO du bloc D annonce
+« ton site … ta caisse … ton KDS … ta boucle marketing » dans cet ordre. Varier
+les rôles par épisode désynchroniserait la narration.
+
 ### Garde-fou
 
 `assets/hooks/EPxx.mp4` absent → `MISSING_HOOK EPxx`, épisode exclu du lot.
