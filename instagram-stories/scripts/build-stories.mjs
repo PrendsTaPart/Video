@@ -13,7 +13,8 @@ import { fileURLToPath } from 'node:url';
 import path from 'node:path';
 
 const ROOT = path.dirname(path.dirname(fileURLToPath(import.meta.url)));
-const src = JSON.parse(readFileSync(path.join(ROOT, 'data/stories-source.json'), 'utf8'));
+const sourceFile = process.argv[2] || 'data/stories-source.json';
+const src = JSON.parse(readFileSync(path.join(ROOT, sourceFile), 'utf8'));
 
 const PAD = 0.4;
 const HOOK_DUR = 1.1;
@@ -100,7 +101,12 @@ function buildStory(story) {
 
   // BODY
   const voDur = realDuration(story.vo);
-  const bodyDur = round2(voDur + PAD);
+  const videoDur = realDuration(story.video);
+  // Never truncate mid-action: some source clips are deliberate single
+  // continuous shots choreographed beat-by-beat over their full length
+  // (door opens -> action -> resolution) — cutting at VO length alone
+  // would chop the payoff. Body runs at least as long as the footage.
+  const bodyDur = round2(Math.max(voDur + PAD, videoDur));
   const bodyStart = round2(cursor);
   out.push(`<video id="${nextId('video')}" class="clip beat media-fill" src="${esc(story.video)}" data-start="${bodyStart}" data-duration="${bodyDur}" data-track-index="2" muted autoplay playsinline></video>`);
   out.push(`<div id="${nextId('caption')}" class="clip beat caption-bar" data-start="${bodyStart}" data-duration="${bodyDur}" data-track-index="3"><span>${esc(story.caption)}</span></div>`);
