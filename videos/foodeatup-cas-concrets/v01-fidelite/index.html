@@ -36,29 +36,30 @@
         height: 1920px;
         background: radial-gradient(120% 70% at 50% 0%, #ffffff 0%, #fcf9e6 55%, #f4efd2 100%);
       }
-      /* Logiciel affiché en pleine largeur, intégralement, sans recadrage ni coupe, ancré
-         en haut de l'écran (demande explicite : "ne le coupe pas"). */
+      /* Logiciel affiché en pleine largeur, intégralement, sans recadrage ni coupe
+         (demande explicite : "ne le coupe pas"), centré verticalement à l'écran. */
       #solution-video {
         position: absolute;
-        top: 0;
+        top: 727.1px;
         left: 0;
         width: 1080px;
         height: 465.75px;
         box-shadow: 0 18px 40px rgba(15, 26, 35, 0.18);
       }
-      /* Animation dans l'espace sous le logiciel, pour que ce ne soit pas un aplat mort. */
-      #solution-mark {
+      /* Logo FoodEatUp en haut de l'écran — respire en continu pour garder de la vie. */
+      #solution-logo {
         position: absolute;
         left: 50%;
-        top: 1180px;
-        width: 130px;
+        top: 110px;
+        width: 420px;
         height: auto;
-        filter: drop-shadow(0 0 26px rgba(0, 123, 255, 0.35));
+        filter: drop-shadow(0 6px 18px rgba(15, 26, 35, 0.12));
       }
+      /* Trait d'accent sous le logiciel. */
       #solution-accent {
         position: absolute;
         left: 50%;
-        top: 1000px;
+        top: 1233px;
         width: 96px;
         height: 6px;
         background: #ffa500;
@@ -127,13 +128,13 @@
       ></video>
       <div id="solution-accent" class="clip" data-start="11" data-duration="14" data-track-index="2"></div>
       <img
-        id="solution-mark"
+        id="solution-logo"
         class="clip"
         data-start="11"
         data-duration="14"
         data-track-index="3"
-        src="assets/brand/foodeatup-mark-eight.png"
-        alt=""
+        src="assets/brand/foodeatup-logo-mascot.png"
+        alt="FoodEatUp"
       />
 
       <!-- RÉSULTAT (HeyGen) 25-32.298s -->
@@ -175,36 +176,36 @@
       window.__timelines = window.__timelines || {};
 
       // Capture écran affichée en pleine largeur (1080px = largeur source complète, échelle
-      // 0.5625), intégralement, sans recadrage : rien n'est coupé. Ancrée en haut de l'écran.
+      // 0.5625), intégralement, sans recadrage : rien n'est coupé. Centrée verticalement.
       gsap.set("#solution-video", { opacity: 0, y: -12 });
       gsap.set("#solution-accent", { xPercent: -50, scaleX: 0, transformOrigin: "50% 50%" });
-      gsap.set("#solution-mark", { xPercent: -50, scale: 0, rotate: -8, transformOrigin: "50% 50%" });
+      gsap.set("#solution-logo", { xPercent: -50, scale: 0, rotate: -6, transformOrigin: "50% 50%" });
 
       // Le timeline racine couvre les 36.3s de la vidéo entière : ces tweens sont donc
       // positionnés au temps ABSOLU où le segment SOLUTION est actif (data-start="11").
       const SOLUTION_START = 11;
       const tl = gsap.timeline({ paused: true });
+      // le logo FoodEatUp claque en haut en premier
+      tl.to(
+        "#solution-logo",
+        { xPercent: -50, scale: 1, rotate: 0, duration: 0.6, ease: "back.out(2.2)" },
+        SOLUTION_START
+      );
       tl.to(
         "#solution-video",
         { opacity: 1, y: 0, duration: 0.5, ease: "power2.out" },
-        SOLUTION_START
+        SOLUTION_START + 0.3
       );
       tl.to(
         "#solution-accent",
         { xPercent: -50, scaleX: 1, duration: 0.4, ease: "power2.out" },
-        SOLUTION_START + 0.6
+        SOLUTION_START + 0.8
       );
+      // respiration continue du logo pendant tout le hold, pour garder de la vie en haut
       tl.to(
-        "#solution-mark",
-        { xPercent: -50, scale: 1, rotate: 0, duration: 0.6, ease: "back.out(2.2)" },
-        SOLUTION_START + 0.9
-      );
-      // respiration continue du mark pendant tout le hold, pour que le bas de l'écran ne
-      // soit jamais un aplat mort
-      tl.to(
-        "#solution-mark",
-        { xPercent: -50, scale: 1.12, duration: 1.6, ease: "sine.inOut", yoyo: true, repeat: 6 },
-        SOLUTION_START + 1.6
+        "#solution-logo",
+        { xPercent: -50, scale: 1.06, duration: 1.6, ease: "sine.inOut", yoyo: true, repeat: 6 },
+        SOLUTION_START + 1.4
       );
 
       window.__timelines["v01-fidelite"] = tl;
