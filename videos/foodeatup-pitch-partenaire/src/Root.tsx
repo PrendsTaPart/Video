@@ -3,7 +3,7 @@ import {Composition} from 'remotion';
 import {Main} from './Main';
 import {COLORS} from './theme';
 
-export const TOTAL_FRAMES = 3600;
+export const TOTAL_FRAMES = 3900;
 export const FPS = 30;
 
 export const Root: React.FC = () => {

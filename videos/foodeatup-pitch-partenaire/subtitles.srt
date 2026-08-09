@@ -1,160 +1,167 @@
 1
-00:00:00,000 --> 00:00:05,817
-Sur cette phrase, quatre logiciels viennent de s'exécuter.
+00:00:00,000 --> 00:00:03,000
+Connectez FoodEatUp à Claude, une seule fois.
 
 2
-00:00:05,897 --> 00:00:07,000
-Aucun clic.
+00:00:03,000 --> 00:00:08,200
+Puis parlez à votre restaurant en langage naturel : il répond avec vos vraies données, jamais des généralités.
 
 3
-00:00:07,000 --> 00:00:10,920
-Un restaurateur jongle avec dix logiciels qui ne se parlent pas.
+00:00:10,000 --> 00:00:15,817
+Sur cette phrase, quatre logiciels viennent de s'exécuter.
 
 4
-00:00:11,000 --> 00:00:13,266
-Chaque jour, environ treize appels restent sans réponse,
+00:00:15,897 --> 00:00:17,000
+Aucun clic.
 
 5
-00:00:13,346 --> 00:00:18,000
-et ce sont près de 87 000 euros de commandes perdues chaque année.
+00:00:17,000 --> 00:00:20,920
+Un restaurateur jongle avec dix logiciels qui ne se parlent pas.
 
 6
-00:00:18,000 --> 00:00:19,681
-FoodEatUp renverse le problème.
+00:00:21,000 --> 00:00:23,266
+Chaque jour, environ treize appels restent sans réponse,
 
 7
-00:00:19,761 --> 00:00:23,502
-Via le protocole MCP, n'importe quelle IA — Claude, ChatGPT, Mistral —
+00:00:23,346 --> 00:00:28,000
+et ce sont près de 87 000 euros de commandes perdues chaque année.
 
 8
-00:00:23,582 --> 00:00:25,263
-pilote directement le logiciel.
+00:00:28,000 --> 00:00:29,681
+FoodEatUp renverse le problème.
 
 9
-00:00:25,343 --> 00:00:28,000
-Elle ne recommande pas une action : elle la fait.
+00:00:29,761 --> 00:00:33,502
+Via le protocole MCP, n'importe quelle IA — Claude, ChatGPT, Mistral —
 
 10
-00:00:28,000 --> 00:00:28,990
-Une phrase.
+00:00:33,582 --> 00:00:35,263
+pilote directement le logiciel.
 
 11
-00:00:29,070 --> 00:00:31,483
-La promotion bascule en caisse.
+00:00:35,343 --> 00:00:38,000
+Elle ne recommande pas une action : elle la fait.
 
 12
-00:00:31,563 --> 00:00:34,210
-Les posts partent sur les réseaux.
+00:00:38,000 --> 00:00:38,990
+Une phrase.
 
 13
-00:00:34,290 --> 00:00:36,780
-Le SMS atteint les bons clients.
+00:00:39,070 --> 00:00:41,483
+La promotion bascule en caisse.
 
 14
-00:00:36,860 --> 00:00:39,896
-Et les commandes entrantes sont prises.
+00:00:41,563 --> 00:00:44,210
+Les posts partent sur les réseaux.
 
 15
-00:00:39,976 --> 00:00:42,000
-Sans ouvrir un seul écran.
+00:00:44,290 --> 00:00:46,780
+Le SMS atteint les bons clients.
 
 16
-00:00:42,000 --> 00:00:45,681
-Cent soixante-quinze outils et plus, douze domaines.
+00:00:46,860 --> 00:00:49,896
+Et les commandes entrantes sont prises.
 
 17
-00:00:45,761 --> 00:00:49,114
-De la réservation à la clôture de caisse,
+00:00:49,976 --> 00:00:52,000
+Sans ouvrir un seul écran.
 
 18
-00:00:49,194 --> 00:00:52,221
-du coût matière au plan de nettoyage.
+00:00:52,000 --> 00:00:55,681
+Cent soixante-quinze outils et plus, douze domaines.
 
 19
-00:00:52,301 --> 00:00:55,000
-Le métier entier, pas une brique.
+00:00:55,761 --> 00:00:59,114
+De la réservation à la clôture de caisse,
 
 20
-00:00:55,000 --> 00:00:57,706
-Autour du cœur restaurant, trois logiciels :
+00:00:59,194 --> 00:01:02,221
+du coût matière au plan de nettoyage.
 
 21
-00:00:57,786 --> 00:01:01,599
-la relation client, la communication, les ressources humaines.
+00:01:02,301 --> 00:01:05,000
+Le métier entier, pas une brique.
 
 22
-00:01:01,679 --> 00:01:05,000
-Quatre logiciels d'une même famille, pilotés par un seul agent.
+00:01:05,000 --> 00:01:07,706
+Autour du cœur restaurant, trois logiciels :
 
 23
-00:01:05,000 --> 00:01:07,327
-Une IA autonome doit être une IA sûre.
+00:01:07,786 --> 00:01:11,599
+la relation client, la communication, les ressources humaines.
 
 24
-00:01:07,407 --> 00:01:11,021
-Toute action irréversible exige une confirmation explicite.
+00:01:11,679 --> 00:01:15,000
+Quatre logiciels d'une même famille, pilotés par un seul agent.
 
 25
-00:01:11,101 --> 00:01:16,000
-Et la conformité française est inscrite dans le système, pas ajoutée après coup.
+00:01:15,000 --> 00:01:17,327
+Une IA autonome doit être une IA sûre.
 
 26
-00:01:16,000 --> 00:01:18,500
-GoSushi a remplacé cinq outils par FoodEatUp et une IA.
+00:01:17,407 --> 00:01:21,021
+Toute action irréversible exige une confirmation explicite.
 
 27
-00:01:18,580 --> 00:01:20,500
-Résultat : deux fois moins de temps en back-office.
+00:01:21,101 --> 00:01:26,000
+Et la conformité française est inscrite dans le système, pas ajoutée après coup.
 
 28
-00:01:20,580 --> 00:01:23,500
-Cent pour cent du HACCP dématérialisé, moins dix-sept pour cent en abonnement annuel.
+00:01:26,000 --> 00:01:28,500
+GoSushi a remplacé cinq outils par FoodEatUp et une IA.
 
 29
-00:01:23,580 --> 00:01:26,000
-Et nos choix techniques sont validés par les programmes AWS et NVIDIA.
+00:01:28,580 --> 00:01:30,500
+Résultat : deux fois moins de temps en back-office.
 
 30
-00:01:26,000 --> 00:01:28,737
-Trois façons de travailler ensemble.
+00:01:30,580 --> 00:01:33,500
+Cent pour cent du HACCP dématérialisé, moins dix-sept pour cent en abonnement annuel.
 
 31
-00:01:28,817 --> 00:01:32,086
-Intégrez nos MCP dans votre propre produit.
+00:01:33,580 --> 00:01:36,000
+Et nos choix techniques sont validés par les programmes AWS et NVIDIA.
 
 32
-00:01:32,166 --> 00:01:35,739
-Distribuez la suite complète sous votre marque.
+00:01:36,000 --> 00:01:38,737
+Trois façons de travailler ensemble.
 
 33
-00:01:35,819 --> 00:01:40,000
-Ou prescrivez-la à vos clients, et laissez-nous opérer.
+00:01:38,817 --> 00:01:42,086
+Intégrez nos MCP dans votre propre produit.
 
 34
-00:01:40,000 --> 00:01:41,992
-Le modèle est simple.
+00:01:42,166 --> 00:01:45,739
+Distribuez la suite complète sous votre marque.
 
 35
-00:01:42,072 --> 00:01:47,385
-StockVision à 49 euros, HACCP à 99, Prédiction IA à 119 euros par mois.
+00:01:45,819 --> 00:01:50,000
+Ou prescrivez-la à vos clients, et laissez-nous opérer.
 
 36
-00:01:47,465 --> 00:01:50,000
-Vos clients choisissent leur niveau.
+00:01:50,000 --> 00:01:51,992
+Le modèle est simple.
 
 37
-00:01:50,000 --> 00:01:53,264
-La fenêtre est ouverte, et elle ne le restera pas.
+00:01:52,072 --> 00:01:57,385
+StockVision à 49 euros, HACCP à 99, Prédiction IA à 119 euros par mois.
 
 38
-00:01:53,344 --> 00:01:57,000
-Personne ne domine encore l'agent vocal en restauration.
+00:01:57,465 --> 00:02:00,000
+Vos clients choisissent leur niveau.
 
 39
-00:01:57,000 --> 00:01:58,390
-FoodEatUp.
+00:02:00,000 --> 00:02:03,264
+La fenêtre est ouverte, et elle ne le restera pas.
 
 40
-00:01:58,470 --> 00:02:00,000
-Parlons-en.
+00:02:03,344 --> 00:02:07,000
+Personne ne domine encore l'agent vocal en restauration.
 
+41
+00:02:07,000 --> 00:02:08,390
+FoodEatUp.
+
+42
+00:02:08,470 --> 00:02:10,000
+Parlons-en.

@@ -1,5 +1,6 @@
 import React from 'react';
 import {Series} from 'remotion';
+import {Scene00} from './scenes/Scene00';
 import {Scene01} from './scenes/Scene01';
 import {Scene02} from './scenes/Scene02';
 import {Scene03} from './scenes/Scene03';
@@ -13,8 +14,10 @@ import {Scene10} from './scenes/Scene10';
 import {Scene11} from './scenes/Scene11';
 import {Scene12} from './scenes/Scene12';
 
-// Découpage exact du storyboard, 30fps — total 3600 frames (2:00).
+// Découpage exact du storyboard, 30fps — total 3900 frames (2:10) avec
+// l'intro avatar S0 (bulle HeyGen réelle) prépendue au pitch original de 2:00.
 export const SCENES = [
+	{name: 'S0 Intro avatar', frames: 300, Component: Scene00},
 	{name: 'S1 Hook', frames: 210, Component: Scene01},
 	{name: 'S2 Le problème', frames: 330, Component: Scene02},
 	{name: 'S3 Le renversement', frames: 300, Component: Scene03},
