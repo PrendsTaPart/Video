@@ -25,3 +25,9 @@ videos/**/out/qa/
 # n'a de valeur que pendant la file. Le versionner ferait un fichier qui change
 # à chaque exécution sans rien apprendre à personne.
 videos/foodeatup-9-films/_plans-sans/rendus.log
+
+# Les segments de voix off, un fichier par phrase. Ils ne servent qu'au montage
+# et se régénèrent depuis `scripts.py` ; seul `vo.mp3`, la voix assemblée, est
+# versionné. Cent dix-huit MP3 de deux secondes n'ont rien à faire dans
+# l'historique.
+videos/foodeatup-16-tutoriels/*/assets/seg/

@@ -1,0 +1,77 @@
+{
+  "total": 42.991,
+  "scenes": [
+    {
+      "genre": "ouverture",
+      "ident": "N0",
+      "texte": "Les horaires du site ne sont pas un affichage : ce sont eux qui ouvrent et ferment les créneaux.",
+      "debut": 0.0,
+      "duree": 6.098,
+      "voix_a": 0.45,
+      "voix_duree": 5.198
+    },
+    {
+      "genre": "planche:0",
+      "ident": "N1",
+      "texte": "Saisissez-les jour par jour, coupures comprises.",
+      "debut": 6.098,
+      "duree": 3.086,
+      "voix_a": 6.348,
+      "voix_duree": 2.586
+    },
+    {
+      "genre": "planche:1",
+      "ident": "N2",
+      "texte": "Activez la page réservations, puis publiez-la. En brouillon, elle n'existe pas pour le client.",
+      "debut": 9.184,
+      "duree": 6.169,
+      "voix_a": 9.434,
+      "voix_duree": 5.669
+    },
+    {
+      "genre": "planche:2",
+      "ident": "N3",
+      "texte": "Réglez la durée d'un couvert et la capacité : c'est ce qui détermine combien de tables un créneau accepte.",
+      "debut": 15.353,
+      "duree": 5.751,
+      "voix_a": 15.603,
+      "voix_duree": 5.251
+    },
+    {
+      "genre": "planche:3",
+      "ident": "N4",
+      "texte": "Vérifiez les disponibilités réelles sur une date avant d'annoncer l'ouverture.",
+      "debut": 21.104,
+      "duree": 4.34,
+      "voix_a": 21.354,
+      "voix_duree": 3.84
+    },
+    {
+      "genre": "planche:4",
+      "ident": "N5",
+      "texte": "Et contrôlez le domaine : une page publiée sur un domaine non validé reste invisible.",
+      "debut": 25.444,
+      "duree": 5.045,
+      "voix_a": 25.694,
+      "voix_duree": 4.545
+    },
+    {
+      "genre": "prompt",
+      "ident": "CLAUDE",
+      "texte": "Vous pouvez aussi le faire depuis Claude : copiez ce prompt, remplacez les crochets, et collez-le dans la conversation.",
+      "debut": 30.489,
+      "duree": 6.769,
+      "voix_a": 30.739,
+      "voix_duree": 6.269
+    },
+    {
+      "genre": "cloture",
+      "ident": "CTA",
+      "texte": "Passez à la restauration intelligente avec FoodEatUp. Essayez gratuitement dès aujourd'hui !",
+      "debut": 37.258,
+      "duree": 5.733,
+      "voix_a": 37.708,
+      "voix_duree": 4.833
+    }
+  ]
+}

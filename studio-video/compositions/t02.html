@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=1920, height=1080" />
+    <script src="assets/vendor/gsap.min.js"></script>
+    <style>
+      * { margin:0; padding:0; box-sizing:border-box; }
+      html, body { width:1920px; height:1080px; overflow:hidden; background:#EDEEF0; }
+      body { font-family:"Inter",sans-serif; }
+      @font-face {
+        font-family:"Fredoka";
+        src:url("assets/vendor/fonts/Fredoka-Variable.woff2") format("woff2-variations");
+        font-weight:300 700; font-display:block;
+      }
+      #root { position:relative; width:1920px; height:1080px; overflow:hidden; background:#EDEEF0; }
+      #root > div[data-composition-src] { position:absolute; inset:0; }
+    </style>
+  </head>
+  <body>
+    <div id="root" data-composition-id="t02" data-start="0"
+         data-width="1920" data-height="1080" data-duration="41.52">
+      <div
+        id="el-t02-s1-ouverture"
+        data-composition-id="t02-s1-ouverture"
+        data-composition-src="compositions/t02/t02-s1-ouverture.html"
+        data-start="0.00"
+        data-duration="7.12"
+        data-track-index="1"
+        data-width="1920"
+        data-height="1080"
+      ></div>
+
+      <div
+        id="el-t02-s2-planche"
+        data-composition-id="t02-s2-planche"
+        data-composition-src="compositions/t02/t02-s2-planche.html"
+        data-start="7.12"
+        data-duration="5.54"
+        data-track-index="1"
+        data-width="1920"
+        data-height="1080"
+      ></div>
+
+      <div
+        id="el-t02-s3-planche"
+        data-composition-id="t02-s3-planche"
+        data-composition-src="compositions/t02/t02-s3-planche.html"
+        data-start="12.66"
+        data-duration="5.70"
+        data-track-index="1"
+        data-width="1920"
+        data-height="1080"
+      ></div>
+
+      <div
+        id="el-t02-s4-planche"
+        data-composition-id="t02-s4-planche"
+        data-composition-src="compositions/t02/t02-s4-planche.html"
+        data-start="18.36"
+        data-duration="4.86"
+        data-track-index="1"
+        data-width="1920"
+        data-height="1080"
+      ></div>
+
+      <div
+        id="el-t02-s5-planche"
+        data-composition-id="t02-s5-planche"
+        data-composition-src="compositions/t02/t02-s5-planche.html"
+        data-start="23.22"
+        data-duration="5.83"
+        data-track-index="1"
+        data-width="1920"
+        data-height="1080"
+      ></div>
+
+      <div
+        id="el-t02-s6-prompt"
+        data-composition-id="t02-s6-prompt"
+        data-composition-src="compositions/t02/t02-s6-prompt.html"
+        data-start="29.05"
+        data-duration="6.66"
+        data-track-index="1"
+        data-width="1920"
+        data-height="1080"
+      ></div>
+
+      <div
+        id="el-t02-s7-cloture"
+        data-composition-id="t02-s7-cloture"
+        data-composition-src="compositions/t02/t02-s7-cloture.html"
+        data-start="35.71"
+        data-duration="5.81"
+        data-track-index="1"
+        data-width="1920"
+        data-height="1080"
+      ></div>
+
+      <!-- Voix off. Le fichier porte déjà ses silences : chaque segment a été
+           posé à son instant exact par vo.py, donc la piste commence à 0 et
+           rien n'est à recaler ici. -->
+      <audio id="el-vo" src="assets/audio/t02-vo.mp3" data-start="0"
+             data-duration="41.52" data-track-index="10" data-volume="1"></audio>
+    </div>
+
+    <script>
+      window.__timelines = window.__timelines || {};
+      window.__timelines["t02"] = gsap.timeline({ paused: true });
+    </script>
+  </body>
+</html>

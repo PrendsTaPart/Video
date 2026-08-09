@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=1920, height=1080" />
+    <script src="assets/vendor/gsap.min.js"></script>
+    <style>
+      * { margin:0; padding:0; box-sizing:border-box; }
+      html, body { width:1920px; height:1080px; overflow:hidden; background:#EDEEF0; }
+      body { font-family:"Inter",sans-serif; }
+      @font-face {
+        font-family:"Fredoka";
+        src:url("assets/vendor/fonts/Fredoka-Variable.woff2") format("woff2-variations");
+        font-weight:300 700; font-display:block;
+      }
+      #root { position:relative; width:1920px; height:1080px; overflow:hidden; background:#EDEEF0; }
+      #root > div[data-composition-src] { position:absolute; inset:0; }
+    </style>
+  </head>
+  <body>
+    <div id="root" data-composition-id="t08" data-start="0"
+         data-width="1920" data-height="1080" data-duration="43.90">
+      <div
+        id="el-t08-s1-ouverture"
+        data-composition-id="t08-s1-ouverture"
+        data-composition-src="compositions/t08/t08-s1-ouverture.html"
+        data-start="0.00"
+        data-duration="7.40"
+        data-track-index="1"
+        data-width="1920"
+        data-height="1080"
+      ></div>
+
+      <div
+        id="el-t08-s2-planche"
+        data-composition-id="t08-s2-planche"
+        data-composition-src="compositions/t08/t08-s2-planche.html"
+        data-start="7.40"
+        data-duration="3.69"
+        data-track-index="1"
+        data-width="1920"
+        data-height="1080"
+      ></div>
+
+      <div
+        id="el-t08-s3-planche"
+        data-composition-id="t08-s3-planche"
+        data-composition-src="compositions/t08/t08-s3-planche.html"
+        data-start="11.09"
+        data-duration="7.87"
+        data-track-index="1"
+        data-width="1920"
+        data-height="1080"
+      ></div>
+
+      <div
+        id="el-t08-s4-planche"
+        data-composition-id="t08-s4-planche"
+        data-composition-src="compositions/t08/t08-s4-planche.html"
+        data-start="18.96"
+        data-duration="5.12"
+        data-track-index="1"
+        data-width="1920"
+        data-height="1080"
+      ></div>
+
+      <div
+        id="el-t08-s5-planche"
+        data-composition-id="t08-s5-planche"
+        data-composition-src="compositions/t08/t08-s5-planche.html"
+        data-start="24.08"
+        data-duration="7.01"
+        data-track-index="1"
+        data-width="1920"
+        data-height="1080"
+      ></div>
+
+      <div
+        id="el-t08-s6-prompt"
+        data-composition-id="t08-s6-prompt"
+        data-composition-src="compositions/t08/t08-s6-prompt.html"
+        data-start="31.09"
+        data-duration="7.08"
+        data-track-index="1"
+        data-width="1920"
+        data-height="1080"
+      ></div>
+
+      <div
+        id="el-t08-s7-cloture"
+        data-composition-id="t08-s7-cloture"
+        data-composition-src="compositions/t08/t08-s7-cloture.html"
+        data-start="38.17"
+        data-duration="5.73"
+        data-track-index="1"
+        data-width="1920"
+        data-height="1080"
+      ></div>
+
+      <!-- Voix off. Le fichier porte déjà ses silences : chaque segment a été
+           posé à son instant exact par vo.py, donc la piste commence à 0 et
+           rien n'est à recaler ici. -->
+      <audio id="el-vo" src="assets/audio/t08-vo.mp3" data-start="0"
+             data-duration="43.90" data-track-index="10" data-volume="1"></audio>
+    </div>
+
+    <script>
+      window.__timelines = window.__timelines || {};
+      window.__timelines["t08"] = gsap.timeline({ paused: true });
+    </script>
+  </body>
+</html>

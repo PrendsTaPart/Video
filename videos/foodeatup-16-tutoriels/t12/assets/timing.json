@@ -1,0 +1,77 @@
+{
+  "total": 46.073,
+  "scenes": [
+    {
+      "genre": "ouverture",
+      "ident": "N0",
+      "texte": "Le KDS ne suit pas des commandes, il suit des plats. L'entrée part pendant que le chaud cuit.",
+      "debut": 0.0,
+      "duree": 6.046,
+      "voix_a": 0.45,
+      "voix_duree": 5.146
+    },
+    {
+      "genre": "planche:0",
+      "ident": "N1",
+      "texte": "Le ticket arrive au poste dès que la commande est confirmée.",
+      "debut": 6.046,
+      "duree": 3.452,
+      "voix_a": 6.296,
+      "voix_duree": 2.952
+    },
+    {
+      "genre": "planche:1",
+      "ident": "N2",
+      "texte": "Faites avancer chaque plat séparément : à faire, en cours, prêt, servi.",
+      "debut": 9.498,
+      "duree": 5.411,
+      "voix_a": 9.748,
+      "voix_duree": 4.911
+    },
+    {
+      "genre": "planche:2",
+      "ident": "N3",
+      "texte": "Passez un plat en « en cours » quand vous le commencez, pas quand vous le voyez. C'est ce qui rend le compteur d'attente juste.",
+      "debut": 14.909,
+      "duree": 7.631,
+      "voix_a": 15.159,
+      "voix_duree": 7.131
+    },
+    {
+      "genre": "planche:3",
+      "ident": "N4",
+      "texte": "« Prêt » l'envoie au pass. Le ticket ne disparaît qu'une fois tous ses plats servis.",
+      "debut": 22.54,
+      "duree": 5.411,
+      "voix_a": 22.79,
+      "voix_duree": 4.911
+    },
+    {
+      "genre": "planche:4",
+      "ident": "N5",
+      "texte": "Et la charge des postes se met à jour à chaque changement : elle dit où ça bloque, en direct.",
+      "debut": 27.951,
+      "duree": 5.829,
+      "voix_a": 28.201,
+      "voix_duree": 5.329
+    },
+    {
+      "genre": "prompt",
+      "ident": "CLAUDE",
+      "texte": "Vous pouvez aussi le faire depuis Claude : copiez ce prompt, remplacez les crochets, et collez-le dans la conversation.",
+      "debut": 33.78,
+      "duree": 6.613,
+      "voix_a": 34.03,
+      "voix_duree": 6.113
+    },
+    {
+      "genre": "cloture",
+      "ident": "CTA",
+      "texte": "Passez à la restauration intelligente avec FoodEatUp. Essayez gratuitement dès aujourd'hui !",
+      "debut": 40.393,
+      "duree": 5.68,
+      "voix_a": 40.843,
+      "voix_duree": 4.78
+    }
+  ]
+}

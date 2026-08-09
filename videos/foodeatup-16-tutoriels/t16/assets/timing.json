@@ -1,0 +1,77 @@
+{
+  "total": 45.42,
+  "scenes": [
+    {
+      "genre": "ouverture",
+      "ident": "N0",
+      "texte": "Chaque commande crée sa facture et son devis. Le rapprochement, lui, compte au moment du contrôle.",
+      "debut": 0.0,
+      "duree": 6.36,
+      "voix_a": 0.45,
+      "voix_duree": 5.46
+    },
+    {
+      "genre": "planche:0",
+      "ident": "N1",
+      "texte": "Partez de la facture, et remontez à la commande qui l'a générée.",
+      "debut": 6.36,
+      "duree": 3.791,
+      "voix_a": 6.61,
+      "voix_duree": 3.291
+    },
+    {
+      "genre": "planche:1",
+      "ident": "N2",
+      "texte": "Filtrez par canal, par statut ou par date quand vous n'avez que l'à-peu-près.",
+      "debut": 10.151,
+      "duree": 4.915,
+      "voix_a": 10.401,
+      "voix_duree": 4.415
+    },
+    {
+      "genre": "planche:2",
+      "ident": "N3",
+      "texte": "Ouvrez le détail : les articles, le client, le total, et les liens vers la facture et le devis.",
+      "debut": 15.066,
+      "duree": 6.169,
+      "voix_a": 15.316,
+      "voix_duree": 5.669
+    },
+    {
+      "genre": "planche:3",
+      "ident": "N4",
+      "texte": "Vérifiez la concordance des statuts : changer celui de la commande se répercute sur les deux.",
+      "debut": 21.234,
+      "duree": 5.542,
+      "voix_a": 21.484,
+      "voix_duree": 5.042
+    },
+    {
+      "genre": "planche:4",
+      "ident": "N5",
+      "texte": "Une commande annulée dont la facture reste ouverte est l'écart que le contrôle trouvera à votre place.",
+      "debut": 26.776,
+      "duree": 5.751,
+      "voix_a": 27.026,
+      "voix_duree": 5.251
+    },
+    {
+      "genre": "prompt",
+      "ident": "CLAUDE",
+      "texte": "Vous pouvez aussi le faire depuis Claude : copiez ce prompt, remplacez les crochets, et collez-le dans la conversation.",
+      "debut": 32.527,
+      "duree": 6.952,
+      "voix_a": 32.777,
+      "voix_duree": 6.452
+    },
+    {
+      "genre": "cloture",
+      "ident": "CTA",
+      "texte": "Passez à la restauration intelligente avec FoodEatUp. Essayez gratuitement dès aujourd'hui !",
+      "debut": 39.479,
+      "duree": 5.942,
+      "voix_a": 39.929,
+      "voix_duree": 5.042
+    }
+  ]
+}

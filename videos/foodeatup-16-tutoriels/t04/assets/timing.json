@@ -1,0 +1,59 @@
+{
+  "total": 34.938,
+  "scenes": [
+    {
+      "genre": "ouverture",
+      "ident": "N0",
+      "texte": "Une remise accordée de tête et non saisie disparaît deux fois : du ticket, et du rapport.",
+      "debut": 0.0,
+      "duree": 5.811,
+      "voix_a": 0.45,
+      "voix_duree": 4.911
+    },
+    {
+      "genre": "planche:0",
+      "ident": "N1",
+      "texte": "Appliquez-la sur la note avant l'encaissement. Une note soldée ne se remise plus.",
+      "debut": 5.811,
+      "duree": 5.176,
+      "voix_a": 6.061,
+      "voix_duree": 4.676
+    },
+    {
+      "genre": "planche:1",
+      "ident": "N2",
+      "texte": "Choisissez le motif : geste commercial, plat non conforme, avoir. C'est lui qu'on relit ensuite.",
+      "debut": 10.987,
+      "duree": 6.613,
+      "voix_a": 11.237,
+      "voix_duree": 6.113
+    },
+    {
+      "genre": "planche:2",
+      "ident": "N3",
+      "texte": "Un avoir, lui, se pose sur la note suivante du même client. C'est une créance, pas une ristourne.",
+      "debut": 17.6,
+      "duree": 6.299,
+      "voix_a": 17.85,
+      "voix_duree": 5.799
+    },
+    {
+      "genre": "planche:3",
+      "ident": "N4",
+      "texte": "Le rapport totalise les remises à part du chiffre d'affaires : la marge reste lisible.",
+      "debut": 23.899,
+      "duree": 5.124,
+      "voix_a": 24.149,
+      "voix_duree": 4.624
+    },
+    {
+      "genre": "cloture",
+      "ident": "CTA",
+      "texte": "Passez à la restauration intelligente avec FoodEatUp. Essayez gratuitement dès aujourd'hui !",
+      "debut": 29.022,
+      "duree": 5.916,
+      "voix_a": 29.472,
+      "voix_duree": 5.016
+    }
+  ]
+}

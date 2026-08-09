@@ -1,0 +1,77 @@
+{
+  "total": 41.946,
+  "scenes": [
+    {
+      "genre": "ouverture",
+      "ident": "N0",
+      "texte": "Une roue cadeaux se juge sur deux chiffres, et ce ne sont pas les lancers.",
+      "debut": 0.0,
+      "duree": 4.975,
+      "voix_a": 0.45,
+      "voix_duree": 4.075
+    },
+    {
+      "genre": "planche:0",
+      "ident": "N1",
+      "texte": "Ouvrez la roue : son statut, ses lancers, ses contacts captés.",
+      "debut": 4.975,
+      "duree": 4.444,
+      "voix_a": 5.225,
+      "voix_duree": 3.944
+    },
+    {
+      "genre": "planche:1",
+      "ident": "N2",
+      "texte": "Lisez les statistiques. Le rapport entre lancers et lots gagnés dit si la roue est trop généreuse.",
+      "debut": 9.42,
+      "duree": 5.698,
+      "voix_a": 9.67,
+      "voix_duree": 5.198
+    },
+    {
+      "genre": "planche:2",
+      "ident": "N3",
+      "texte": "Puis passez aux bons émis : actifs, utilisés, expirés.",
+      "debut": 15.118,
+      "duree": 3.974,
+      "voix_a": 15.368,
+      "voix_duree": 3.474
+    },
+    {
+      "genre": "planche:3",
+      "ident": "N4",
+      "texte": "Ce sont les bons utilisés qui mesurent le retour — pas les lots gagnés.",
+      "debut": 19.092,
+      "duree": 4.288,
+      "voix_a": 19.342,
+      "voix_duree": 3.788
+    },
+    {
+      "genre": "planche:4",
+      "ident": "N5",
+      "texte": "Et un taux d'expiration élevé signale un lot peu désirable, ou une validité trop courte.",
+      "debut": 23.38,
+      "duree": 5.542,
+      "voix_a": 23.63,
+      "voix_duree": 5.042
+    },
+    {
+      "genre": "prompt",
+      "ident": "CLAUDE",
+      "texte": "Vous pouvez aussi le faire depuis Claude : copiez ce prompt, remplacez les crochets, et collez-le dans la conversation.",
+      "debut": 28.922,
+      "duree": 7.083,
+      "voix_a": 29.172,
+      "voix_duree": 6.583
+    },
+    {
+      "genre": "cloture",
+      "ident": "CTA",
+      "texte": "Passez à la restauration intelligente avec FoodEatUp. Essayez gratuitement dès aujourd'hui !",
+      "debut": 36.004,
+      "duree": 5.942,
+      "voix_a": 36.454,
+      "voix_duree": 5.042
+    }
+  ]
+}

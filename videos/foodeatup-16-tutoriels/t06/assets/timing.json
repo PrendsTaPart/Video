@@ -1,0 +1,68 @@
+{
+  "total": 39.957,
+  "scenes": [
+    {
+      "genre": "ouverture",
+      "ident": "N0",
+      "texte": "La clôture fige le chiffre du jour, sa TVA et son écart. Une session oubliée emporte le service du lendemain.",
+      "debut": 0.0,
+      "duree": 7.352,
+      "voix_a": 0.45,
+      "voix_duree": 6.452
+    },
+    {
+      "genre": "planche:0",
+      "ident": "N1",
+      "texte": "Lisez le rapport X avant de compter : la session en cours, son chiffre, ses modes de paiement, sa TVA, ses remises.",
+      "debut": 7.352,
+      "duree": 7.684,
+      "voix_a": 7.602,
+      "voix_duree": 7.184
+    },
+    {
+      "genre": "planche:1",
+      "ident": "N2",
+      "texte": "Comptez les espèces, et saisissez le montant compté.",
+      "debut": 15.036,
+      "duree": 3.191,
+      "voix_a": 15.286,
+      "voix_duree": 2.691
+    },
+    {
+      "genre": "planche:2",
+      "ident": "N3",
+      "texte": "Confirmez : l'écart se calcule entre le théorique et le compté.",
+      "debut": 18.227,
+      "duree": 4.105,
+      "voix_a": 18.477,
+      "voix_duree": 3.605
+    },
+    {
+      "genre": "planche:3",
+      "ident": "N4",
+      "texte": "Le rapport Z est figé. Il ne se recalcule plus, même si une correction arrive après.",
+      "debut": 22.331,
+      "duree": 4.993,
+      "voix_a": 22.581,
+      "voix_duree": 4.493
+    },
+    {
+      "genre": "prompt",
+      "ident": "CLAUDE",
+      "texte": "Vous pouvez aussi le faire depuis Claude : copiez ce prompt, remplacez les crochets, et collez-le dans la conversation.",
+      "debut": 27.324,
+      "duree": 6.9,
+      "voix_a": 27.574,
+      "voix_duree": 6.4
+    },
+    {
+      "genre": "cloture",
+      "ident": "CTA",
+      "texte": "Passez à la restauration intelligente avec FoodEatUp. Essayez gratuitement dès aujourd'hui !",
+      "debut": 34.224,
+      "duree": 5.733,
+      "voix_a": 34.674,
+      "voix_duree": 4.833
+    }
+  ]
+}

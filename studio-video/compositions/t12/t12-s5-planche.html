@@ -1,0 +1,137 @@
+<!doctype html>
+<html>
+  <head><meta charset="UTF-8" /></head>
+  <body>
+    <template>
+      <style>
+        @font-face {
+          font-family: "Fredoka";
+          src: url("assets/vendor/fonts/Fredoka-Variable.woff2") format("woff2-variations");
+          font-weight: 300 700; font-display: block;
+        }
+        #root { position:absolute; inset:0; background:#FCF9E6; overflow:hidden;
+                 font-family:"Inter",sans-serif; }
+
+        /* Fond à la charte : le crème du site, plus les deux halos du hero.
+           Ils respirent lentement — un aplat immobile pendant cinquante
+           secondes se lit comme une image figée, et on croit la vidéo bloquée. */
+        .glow { position:absolute; border-radius:50%; filter:blur(10px); }
+        .glow-a { left:-360px; top:-420px; width:1500px; height:820px;
+                   background:radial-gradient(closest-side, rgba(0,123,255,.16), rgba(0,123,255,0) 70%); }
+        .glow-b { right:-420px; top:-360px; width:1400px; height:760px;
+                   background:radial-gradient(closest-side, rgba(255,165,0,.22), rgba(255,165,0,0) 70%); }
+        .grid { position:absolute; left:-160px; top:-160px; width:2280px; height:1420px;
+                 background-image:radial-gradient(circle at 1px 1px, #E3DDC0 0 2px, transparent 2px);
+                 background-size:48px 48px; opacity:.55; }
+
+        /* Liseré d'accent : signature du module, en haut de cadre. */
+        .accent { position:absolute; top:0; left:0; right:0; height:6px; background:#E8590C; }
+
+        .eyebrow { position:absolute; top:58px; left:120px; right:120px;
+                    font-family:"Fredoka",sans-serif; font-weight:600; font-size:38px;
+                    letter-spacing:.06em; text-transform:uppercase;
+                    color:#E8590C; opacity:0; }
+
+        .etape { position:absolute; top:58px; right:120px; font-family:"Fredoka",sans-serif;
+                  font-weight:700; font-size:38px; color:#4C5760; opacity:0; }
+
+        /* La planche : le bloc de contenu d'une scène. Posée en absolu et
+           centrée par `left/right`, jamais par `translate` — GSAP réécrit le
+           transform entier dès qu'il touche à `scale`. */
+        /* La carte occupe toute la bande centrale et centre son texte, plutôt
+           que de coller en haut et de laisser trois cents pixels de vide
+           au-dessus de la frise. Le centrage est fait par `align-items`, jamais
+           par `translate` : GSAP anime `y` sur cette carte, et un tween qui
+           touche au transform effacerait un `translateY(-50%)` posé en CSS. */
+        .board { position:absolute; left:150px; right:150px; top:190px; bottom:250px;
+                  display:flex; align-items:center;
+                  background:#FFFFFF; border:2px solid #E3DDC0; border-radius:38px;
+                  padding:56px 72px; opacity:0;
+                  box-shadow:0 26px 60px rgba(15,26,35,.10); }
+
+        .phrase { font-family:"Fredoka",sans-serif; font-weight:600; font-size:60px;
+                   line-height:1.24; color:#0F1A23; }
+        .phrase b { color:#E8590C; font-weight:700; }
+
+        .jalons { position:absolute; left:150px; right:150px; bottom:110px;
+                   display:flex; gap:22px; }
+        .jalon { flex:1; border:2px solid #E3DDC0; border-radius:22px; background:#F5F0D4;
+                  padding:22px 26px; font-family:"Fredoka",sans-serif; font-weight:600;
+                  font-size:32px; color:#4C5760; text-align:center; opacity:.45; }
+        .jalon.on { background:#E8590C; border-color:#E8590C; color:#FFFFFF; opacity:1; }
+
+        /* La plaque : un plan réel de la bibliothèque, plein cadre, derrière le
+           carton. Le voile qui la couvre n'est pas décoratif — sans lui, un
+           titre blanc posé sur une image contrastée devient illisible dès que
+           l'image bouge, et elle bouge tout le temps. */
+        .plaque { position:absolute; inset:0; width:1920px; height:1080px;
+                   object-fit:cover; opacity:0; }
+        .voile { position:absolute; inset:0; opacity:0;
+                  background:linear-gradient(180deg,
+                    rgba(252,249,230,.86) 0%, rgba(252,249,230,.80) 45%,
+                    rgba(252,249,230,.92) 100%); }
+
+        /* Carton d'ouverture et de fin. */
+        .carton { position:absolute; inset:0; display:flex; flex-direction:column;
+                   align-items:center; justify-content:center; padding:0 200px; text-align:center; }
+        .cart-module { font-family:"Fredoka",sans-serif; font-weight:600; font-size:40px;
+                        letter-spacing:.08em; text-transform:uppercase; color:#E8590C; opacity:0; }
+        .cart-titre { font-family:"Fredoka",sans-serif; font-weight:700; font-size:104px;
+                       line-height:1.1; color:#0F1A23; margin-top:34px; opacity:0; }
+        .cart-sous { font-family:"Inter",sans-serif; font-weight:500; font-size:44px;
+                      color:#4C5760; margin-top:34px; opacity:0; }
+        .trait { width:200px; height:8px; border-radius:4px; background:#E8590C;
+                  margin-top:52px; opacity:0; transform-origin:center; }
+
+        /* Le bloc de prompt : cadre sombre, texte clair — la seule surface
+           foncée de la série, pour qu'on la reconnaisse d'un coup d'œil. */
+        .prompt { position:absolute; left:180px; right:180px; top:220px; bottom:220px;
+                   display:flex; flex-direction:column; justify-content:center;
+                   background:#0F1A23; border-radius:34px; padding:56px 64px; opacity:0; }
+        .prompt-titre { font-family:"Fredoka",sans-serif; font-weight:600; font-size:34px;
+                         letter-spacing:.06em; text-transform:uppercase; color:#FFA500; }
+        .prompt-texte { font-family:"Inter",sans-serif; font-weight:500; font-size:44px;
+                         line-height:1.42; color:#F4F6F8; margin-top:30px; }
+        .prompt-outils { margin-top:40px; display:flex; flex-wrap:wrap; gap:16px; }
+        .outil { font-family:"Inter",sans-serif; font-weight:600; font-size:28px;
+                  color:#FCF9E6; background:rgba(255,255,255,.10); border-radius:999px;
+                  padding:12px 24px; opacity:0; }
+        
+      </style>
+
+      <div id="root" data-composition-id="t12-s5-planche" data-width="1920" data-height="1080" data-duration="27.95">
+        <div class="accent"></div>
+        <div class="glow glow-a" id="glowA"></div>
+        <div class="glow glow-b" id="glowB"></div>
+        <div class="grid" id="grid"></div>
+        <div class="eyebrow" id="eb">Écran Cuisine (KDS)</div>
+        <div class="etape" id="et">4 / 5</div>
+        <div class="board" id="bd"><div class="phrase">« Prêt » l'envoie au pass. Le ticket ne disparaît qu'une fois tous ses plats servis.</div></div>
+        <div class="jalons">
+          <div class="jalon" id="jl0">par plat</div>
+          <div class="jalon" id="jl1">quatre statuts</div>
+          <div class="jalon" id="jl2">en cours</div>
+          <div class="jalon on" id="jl3">charge des postes</div>
+        </div>
+      </div>
+
+      <script>
+        window.__timelines = window.__timelines || {};
+        const tl = gsap.timeline({ paused: true });
+        tl.to("#glowA", { scale:1.06, duration:4.5, ease:"sine.inOut", yoyo:true, repeat:1 }, 0);
+        tl.to("#glowB", { scale:1.05, duration:5.2, ease:"sine.inOut", yoyo:true, repeat:1 }, 0);
+        tl.to("#grid", { x:-48, y:-48, duration:6.0, ease:"none", repeat:1 }, 0);
+        tl.fromTo("#eb", { opacity:0, y:-12 }, { opacity:1, y:0, duration:.4, ease:"power2.out" }, .05);
+        tl.fromTo("#et", { opacity:0 }, { opacity:.9, duration:.4 }, .12);
+        tl.fromTo("#bd", { opacity:0, y:22 }, { opacity:1, y:0, duration:.45, ease:"power3.out" }, .22);
+        tl.fromTo("#jl0", { opacity:0, y:16 }, { opacity:.45, y:0, duration:.3, ease:"back.out(1.7)" }, 0.55);
+        tl.fromTo("#jl1", { opacity:0, y:16 }, { opacity:.45, y:0, duration:.3, ease:"back.out(1.7)" }, 0.67);
+        tl.fromTo("#jl2", { opacity:0, y:16 }, { opacity:.45, y:0, duration:.3, ease:"back.out(1.7)" }, 0.79);
+        tl.fromTo("#jl3", { opacity:0, y:16 }, { opacity:1, y:0, duration:.3, ease:"back.out(1.7)" }, 0.91);
+        tl.to("#jl3", { scale:1.04, duration:1.6, ease:"sine.inOut", yoyo:true, repeat:2 }, 1.1);
+
+        window.__timelines["t12-s5-planche"] = tl;
+      </script>
+    </template>
+  </body>
+</html>
