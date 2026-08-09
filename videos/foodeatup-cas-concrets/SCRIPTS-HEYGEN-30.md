@@ -6,6 +6,34 @@ Généré le 2026-08-09 à partir de l'inventaire réel des assets disponibles :
 - **17 plans Higgsfield** (`hero-video/assets/video/`) + **5 boucles d'ambiance**
   (`studio-video/assets/brand/loops/`) — bibliothèque existante, réutilisée conformément à
   la règle du dépôt (`CLAUDE.md` : ne pas générer de nouveaux plans Higgsfield).
+
+> ### ⚠️ Correction du 2026-08-09 — les plans Higgsfield ne sont pas au bon format
+>
+> J'ai écrit plus bas « aucun nouveau plan Higgsfield à générer ». **C'est faux**, et je
+> l'ai constaté en montant les 4 premières vidéos :
+>
+> - Les 17 plans de `hero-video/assets/video/` sont en **1280 × 720 paysage** — ils ont été
+>   produits pour le film héros 16:9, pas pour du vertical. Recadrés en 9:16, il ne reste
+>   que la bande centrale (~28 % de la largeur), ce qui détruit précisément ce qui rend ces
+>   plans lisibles (le directeur ET ses sept onglets, le serveur ET ses trois tablettes).
+> - Deux des trois plans utilisés ne durent que **6,04 s**, alors que le bloc problème en
+>   demande 8.
+> - Ils mettent en scène le **personnage IA « Karim »** du film héros, pas le vrai visage de
+>   Michael — alors que la vidéo 1 validée utilise sa vraie photo.
+> - Ils sont **muets** : le son du film héros est monté séparément. Le bloc problème de ces
+>   4 vidéos est donc silencieux, là où celui de la vidéo 1 avait son ambiance (chaises,
+>   porte, brouhaha). Sur 6 à 8 secondes, ce silence s'entend.
+>
+> Le seul plan nativement vertical du dépôt est celui que Michael a généré lui-même pour la
+> vidéo 1 (`v01-fidelite/assets/higgsfield/probleme.mp4`, 720 × 1280).
+>
+> **Solution retenue en attendant** : les plans 16:9 sont montés en *pillarbox* (le plan
+> centré sur un fond flouté assombri tiré de lui-même). C'est regardable et ça permet de
+> valider la structure, mais c'est en dessous de la vidéo 1. Pour la qualité finale, il faut
+> générer les plans problème en **vertical 9:16, 8 s, référence = la photo de Michael**,
+> avec les prompts du plan principal (`../FOODEATUP-CAS-CONCRETS-PLAN.md` → BLOC HIGGSFIELD).
+> Le tableau de réutilisation en fin de fichier reste valable comme *intention de mise en
+> scène* — il indique quel plan tourner, pas un fichier déjà prêt à l'emploi.
 - Structure validée sur la **vidéo 1 (fidélité)** : `v01-fidelite/`.
 
 ---
