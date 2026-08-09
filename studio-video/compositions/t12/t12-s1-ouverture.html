@@ -101,32 +101,14 @@
 
       <div id="root" data-composition-id="t12-s1-ouverture" data-width="1920" data-height="1080" data-duration="6.05">
         <div class="accent"></div>
-        <div class="glow glow-a" id="glowA"></div>
-        <div class="glow glow-b" id="glowB"></div>
-        <div class="grid" id="grid"></div>
-        <video class="plaque clip" id="vid-ouv" src="assets/plates/c2/chef-kds.mp4" muted playsinline data-start="0" data-duration="6.05" data-track-index="2"></video>
-        <div class="voile" id="voile"></div>
-        <div class="carton">
-          <div class="cart-module" id="mod">Écran Cuisine (KDS)</div>
-          <div class="cart-titre" id="ti">Gérer une commande en direct sur le KDS</div>
-          <div class="trait" id="tr"></div>
-          <div class="cart-sous" id="su">Faire avancer un ticket plat par plat, pendant le service.</div>
-        </div>
+        <img class="plaque clip" id="vid-intro" src="assets/plates/tuto/intro-t12.jpg" data-start="0" data-duration="6.05" data-track-index="2"></img>
       </div>
 
       <script>
         window.__timelines = window.__timelines || {};
         const tl = gsap.timeline({ paused: true });
-        tl.to("#glowA", { scale:1.06, duration:4.5, ease:"sine.inOut", yoyo:true, repeat:1 }, 0);
-        tl.to("#glowB", { scale:1.05, duration:5.2, ease:"sine.inOut", yoyo:true, repeat:1 }, 0);
-        tl.to("#grid", { x:-48, y:-48, duration:6.0, ease:"none", repeat:2 }, 0);
-        tl.fromTo("#vid-ouv", { opacity:0, scale:1.06 }, { opacity:1, scale:1, duration:1.1, ease:"power2.out" }, 0);
-        tl.to("#vid-ouv", { scale:1.04, duration:4.95, ease:"none" }, 1.1);
-        tl.fromTo("#voile", { opacity:0 }, { opacity:1, duration:.8, ease:"power2.out" }, .15);
-        tl.fromTo("#mod", { opacity:0, y:-16 }, { opacity:1, y:0, duration:.5, ease:"power2.out" }, .15);
-        tl.fromTo("#ti", { opacity:0, y:26 }, { opacity:1, y:0, duration:.6, ease:"power3.out" }, .45);
-        tl.fromTo("#tr", { opacity:0, scaleX:0 }, { opacity:1, scaleX:1, duration:.5, ease:"power2.out" }, .95);
-        tl.fromTo("#su", { opacity:0, y:18 }, { opacity:1, y:0, duration:.5, ease:"power2.out" }, 1.2);
+        tl.fromTo("#vid-intro", { opacity:0 }, { opacity:1, duration:.5, ease:"power2.out" }, 0);
+        tl.to("#vid-intro", { scale:1.035, duration:5.55, ease:"none" }, .5);
 
         window.__timelines["t12-s1-ouverture"] = tl;
       </script>

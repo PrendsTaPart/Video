@@ -21,6 +21,19 @@ image fixe qui bouge lentement se tient aussi bien qu'un plan, à condition de
 l'assumer comme une image.
 """
 
+# Le carton d'intro officiel, récupéré du Drive de Michael.
+#
+# **Il remplace le carton fabriqué.** Ces images ouvrent les cent cinquante-sept
+# tutoriels déjà publiés et servent aussi de vignette sur le site : logo, photo
+# du fondateur, titre, appel à l'action. Un carton maison en plus ferait deux
+# titres d'affilée, et le nôtre serait le moins bon des deux — il n'a ni la
+# marque ni le visage.
+#
+# `t16` n'en a pas : c'est la fiche réanglée en « Retrouver la commande derrière
+# une facture », qui n'existait pas au moment du tournage des intros. Elle garde
+# le carton fabriqué, et sa vignette sera extraite du film lui-même.
+INTROS = {f"t{i:02d}": f"tuto/intro-t{i:02d}.jpg" for i in range(1, 16)}
+
 # tutoriel → (plan d'ouverture, plan de clôture)
 #
 # Le plan de clôture est toujours un plan de fin de journée ou de lieu qui se

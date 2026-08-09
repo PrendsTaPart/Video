@@ -15,7 +15,7 @@ import sys
 
 ICI = pathlib.Path(__file__).resolve().parent
 sys.path.insert(0, str(ICI))
-from plaques import PLAQUES  # noqa: E402
+from plaques import INTROS, PLAQUES  # noqa: E402
 from scripts import TUTORIELS  # noqa: E402
 from tuto import NOMS_MODULES, Tuto  # noqa: E402
 
@@ -120,7 +120,13 @@ def construire(t):
         duree = round(debuts[i + 1] - debuts[i], 2)
 
         if s["genre"] == "ouverture":
-            html = g.ouverture(cid, debut, duree, t["titre"], t["intention"], ouv_plaque)
+            # L'intro officielle quand elle existe ; le carton fabriqué sinon.
+            intro = INTROS.get(sous)
+            html = (
+                g.intro(cid, debut, duree, intro)
+                if intro
+                else g.ouverture(cid, debut, duree, t["titre"], t["intention"], ouv_plaque)
+            )
         elif s["genre"] == "cloture":
             html = g.cloture(cid, debut, duree, fin_plaque)
         elif s["genre"] == "prompt":

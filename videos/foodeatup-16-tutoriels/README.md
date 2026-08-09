@@ -40,10 +40,19 @@ Cinq sujets n'existaient pas dans cette bibliothèque, tournée pour une journé
 de restaurant : livreur, roue cadeaux, connecteurs. Ils reçoivent une
 **illustration fabriquée sur RapidoCMS**, animée en lent zoom.
 
-⚠️ Aucune marque tierce n'est visible. « Uber Eats » et « Deliveroo » sont
-nommés dans le titre d'un tutoriel — c'est un fait, et le dire est légitime.
-Montrer leurs logos demanderait leur autorisation : le scooter et le sac
+⚠️ **Aucune marque tierce n'est visible dans les plans que ce dossier
+fabrique.** « Uber Eats » et « Deliveroo » sont nommés dans le titre d'un
+tutoriel — c'est un fait, et le dire est légitime. Le scooter et le sac
 isotherme de l'illustration sont entièrement neutres.
+
+La réserve porte ailleurs : **le carton d'intro Drive de ce tutoriel-là, lui,
+affiche les deux logos.** C'est un asset FoodEatUp existant, tourné hors de ce
+dossier et déjà utilisé par les tutoriels en ligne — il est repris tel quel,
+pas retouché ici. Citer une marque pour décrire une interopérabilité réelle est
+un usage nominatif défendable ; reproduire son logo relève en revanche des
+chartes de marque d'Uber Eats et de Deliveroo, qui demandent une autorisation.
+**À vérifier côté FoodEatUp**, pour ce carton comme pour les autres de la série
+qui feraient de même — ce n'est pas une décision de montage.
 
 ## Le module Caisse POS reste en brouillon
 
@@ -68,8 +77,26 @@ changer, pas un texte à écrire.
 4.  _tuto/monter.py             → studio-video/compositions/<sous>{,.html}
 5.  npx hyperframes lint        doit être à 0 erreur
 6.  _tuto/rendre.sh             → <sous>/out/<sous>.mp4, avec contrôle
-7.  _tuto/remplir-fiches.py     → tutorials.ts + fiches.sql
+7.  _tuto/vignettes.py          → _vignettes/tuto-<slug>-thumbnail.jpg
+8.  _tuto/remplir-fiches.py     → tutorials.ts + fiches.sql
 ```
+
+## La vignette porte le nom que la bibliothèque attend
+
+Le film est `tuto-<slug>-v1`, sa vignette `tuto-<slug>-thumbnail` : le `-v1` est
+**remplacé**, jamais suffixé. Cent vingt et une des cent vingt-quatre fiches
+déjà en ligne le font ainsi, et une vignette mal nommée ne casse rien — elle
+laisse simplement une tuile creuse dans la grille, ce qui ne se voit qu'au
+chargement du catalogue.
+
+Quinze vignettes sont les cartons d'intro officiels récupérés sur le Drive,
+ramenés au format de la bibliothèque (1280×720, ~100 ko — relevé sur une
+vignette en ligne, et non sur le film : une tuile de catalogue servie en
+1920×1080 ferait payer trois fois le poids utile à chaque visiteur).
+
+La seizième n'a pas de carton — `retrouver-toutes-mes-commandes` a été réanglée
+après le tournage des intros. Elle est **extraite de son propre film**, donc à
+la même charte par construction.
 
 **Le sens du montage est inversé, et c'est délibéré.** On ne génère pas une voix
 d'un bloc pour y relever ensuite des bornes à la lecture : chaque segment est

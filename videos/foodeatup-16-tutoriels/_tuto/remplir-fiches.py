@@ -34,8 +34,19 @@ MEDIA = "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/b
 
 
 def nom_media(t):
-    """Le nom du média en bibliothèque. `-v1` comme toute la série."""
+    """Le nom du film en bibliothèque. `-v1` comme toute la série."""
     return f"tuto-{t['slug']}-v1"
+
+
+def nom_vignette(t):
+    """Le nom de la vignette en bibliothèque.
+
+    Le `-v1` du film est **remplacé** par `-thumbnail`, il ne s'y ajoute pas :
+    cent vingt et une des cent vingt-quatre fiches déjà en ligne nomment ainsi
+    leur vignette (`…-tuto-v1` → `…-tuto-thumbnail`). Écrire `-v1-thumbnail`
+    ferait seize fiches à part dans une bibliothèque qu'on parcourt à l'œil.
+    """
+    return f"tuto-{t['slug']}-thumbnail"
 
 
 # Le module Caisse POS est annoncé sur le site comme « en préparation par notre
@@ -79,7 +90,7 @@ def bloc_ts(t, duree):
     )
     return (
         f'    videoUrl: {ts(f"{MEDIA}/{nom_media(t)}")},\n'
-        f'    thumbnailUrl: {ts(f"{MEDIA}/{nom_media(t)}-poster")},\n'
+        f'    thumbnailUrl: {ts(f"{MEDIA}/{nom_vignette(t)}")},\n'
         f"    durationSeconds: {int(round(duree))},\n"
         f"    howItWorks: [\n{etapes}\n    ],\n"
         f"    whatItsFor:\n      {ts(t['a_quoi'])},\n"
@@ -140,7 +151,7 @@ def main():
             f"UPDATE public.tutorials SET "
             f"titre={q(t['titre_fiche'])}, "
             f"video_url={q(f'{MEDIA}/{nom_media(t)}')}, "
-            f"thumbnail_url={q(f'{MEDIA}/{nom_media(t)}-poster')}, "
+            f"thumbnail_url={q(f'{MEDIA}/{nom_vignette(t)}')}, "
             f"duree_secondes={duree}, "
             f"how_it_works={arr}, "
             f"what_its_for={q(t['a_quoi'])}, "

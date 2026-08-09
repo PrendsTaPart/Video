@@ -265,6 +265,32 @@ class Tuto:
         )
         return html, js
 
+    def intro(self, cid, abs_debut, dur, image):
+        """Le carton d'intro officiel de la série, plein cadre.
+
+        **Il remplace le carton fabriqué, il ne s'y ajoute pas.** Ces images
+        viennent du Drive : logo, photo du fondateur, titre du tutoriel, appel
+        à l'action. C'est ce qu'ouvrent les cent cinquante-sept tutoriels déjà
+        publiés, et c'est aussi leur vignette sur le site. Poser mon carton
+        derrière ou devant ferait deux titres d'affilée.
+
+        Pas de voile ici, contrairement aux plaques : l'image est composée pour
+        être lue telle quelle, et rien n'est écrit par-dessus. Le lent zoom est
+        la seule liberté prise — une image parfaitement immobile pendant sept
+        secondes se lit comme une vidéo bloquée.
+        """
+        body = (
+            f'        <img class="plaque clip" id="vid-intro" src="assets/plates/{image}"'
+            f' data-start="0" data-duration="{float(abs_debut) + float(dur):.2f}"'
+            ' data-track-index="2"></img>\n'
+        )
+        js = (
+            '        tl.fromTo("#vid-intro", { opacity:0 }, { opacity:1, duration:.5, ease:"power2.out" }, 0);\n'
+            f'        tl.to("#vid-intro", {{ scale:1.035, duration:{max(0.5, float(dur) - 0.5):.2f},'
+            ' ease:"none" }, .5);\n'
+        )
+        return _TEMPLATE.format(style=self.style, cid=cid, dur=f"{abs_debut + dur:.2f}", body=body, js=js)
+
     # ── carton d'ouverture ─────────────────────────────────────────────────
     def ouverture(self, cid, abs_debut, dur, titre, intention, plaque=None):
         p_html, p_js = self._plaque(abs_debut, dur, plaque, "vid-ouv")
