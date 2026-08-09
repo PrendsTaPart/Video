@@ -353,6 +353,21 @@ Les plans qui manquent encore, avec leurs prompts prêts à coller, sont dans
 ce qui ne se voit pas d'un film à l'autre mais se verra quand les neuf seront
 regardés à la suite.
 
+### 6.8 En ligne — 2026-08-09
+
+Les dix-huit films sont déposés sur la bibliothèque RapidoCMS et branchés dans
+`journees.ts`. Neuf « avec » (72 à 100 s), neuf « sans » (48 à 56 s), fusionnés
+sur `main`.
+
+Le câblage du mode « sans » a révélé un défaut que rien d'autre n'aurait
+montré : le lecteur affichait `durationSeconds` quel que soit le mode, donc
+annonçait 1 min 26 sur un film de 54 secondes. Le type portait d'ailleurs
+« même durée et mêmes timecodes », ce qui était vrai à l'écriture du champ et
+ne l'est plus. Corrigé par `durationSecondsSans`.
+
+Les données structurées ne décrivent que la version « avec » : c'est cohérent
+avec le §6.4, où le canonique pointe toujours vers elle.
+
 ---
 
 ## 7. Chaîne de fabrication d'un film
