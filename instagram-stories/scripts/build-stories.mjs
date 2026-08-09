@@ -42,7 +42,11 @@ const CSS = `
     background: var(--navy); font-family: "Nunito", "Poppins", system-ui, sans-serif;
   }
   .clip { position: absolute; inset: 0; visibility: hidden; }
+  /* Landscape sources sit letterboxed on the brand navy ground rather than
+     being blown up and cropped to 9:16, which would cut heads off. */
   video.media-fill { position: absolute; top: 50%; right: auto; bottom: auto; left: 0; width: 1080px; height: 607.5px; transform: translateY(-50%); object-fit: cover; display: block; }
+  /* Sources already shot 9:16 fill the whole frame. */
+  video.media-fill.native-vertical { top: 0; height: 1920px; transform: none; }
 
   .hook-card { display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 40px; background: var(--cream); text-align: center; padding: 0 90px; }
   .hook-card .logo { width: 220px; height: auto; }
@@ -108,7 +112,14 @@ function buildStory(story) {
   // would chop the payoff. Body runs at least as long as the footage.
   const bodyDur = round2(Math.max(voDur + PAD, videoDur));
   const bodyStart = round2(cursor);
-  out.push(`<video id="${nextId('video')}" class="clip beat media-fill" src="${esc(story.video)}" data-start="${bodyStart}" data-duration="${bodyDur}" data-track-index="2" muted autoplay playsinline></video>`);
+  // Probe the real aspect: a source already shot 9:16 fills the frame,
+  // anything wider is letterboxed instead of cropped.
+  const dims = execSync(
+    `ffprobe -v error -select_streams v:0 -show_entries stream=width,height -of csv=p=0 "${path.join(ROOT, story.video)}"`,
+  ).toString().trim().split(',').map(Number);
+  const isVertical = dims[1] > dims[0];
+  const fillClass = isVertical ? 'media-fill native-vertical' : 'media-fill';
+  out.push(`<video id="${nextId('video')}" class="clip beat ${fillClass}" src="${esc(story.video)}" data-start="${bodyStart}" data-duration="${bodyDur}" data-track-index="2" muted autoplay playsinline></video>`);
   out.push(`<div id="${nextId('caption')}" class="clip beat caption-bar" data-start="${bodyStart}" data-duration="${bodyDur}" data-track-index="3"><span>${esc(story.caption)}</span></div>`);
   out.push(`<div id="${nextId('wm')}" class="clip beat watermark" data-start="${bodyStart}" data-duration="${bodyDur}" data-track-index="4"><img src="${esc(src.logo)}" alt="" /></div>`);
   out.push(`<audio id="${nextId('audio')}" class="clip" src="${esc(story.vo)}" data-start="${bodyStart}" data-duration="${bodyDur}" data-track-index="2005" data-volume="1" data-has-audio="true" preload="auto"></audio>`);
