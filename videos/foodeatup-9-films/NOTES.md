@@ -368,6 +368,45 @@ ne l'est plus. Corrigé par `durationSecondsSans`.
 Les données structurées ne décrivent que la version « avec » : c'est cohérent
 avec le §6.4, où le canonique pointe toujours vers elle.
 
+### 6.9 Musique et bruitages passés sous la voix — 2026-08-09
+
+Michael les trouvait trop présents. Un facteur unique, 0,25 (−12 dB), sur tout
+ce qui n'est pas la voix off : la balance entre les bruitages avait été
+travaillée, il n'y avait pas lieu de la défaire, seulement de passer l'ensemble
+sous la voix.
+
+**Les films n'ont pas été re-rendus.** La composition déclare chaque son avec
+son fichier, son instant, sa durée et son volume — de quoi reconstruire la
+bande-son hors du navigateur. `_serie/adoucir-ambiance.py` la refait avec
+ffmpeg et la remonte en `-c:v copy` : l'image n'est pas ré-encodée, c'est au
+bit près celle qui a été contrôlée plan par plan. Quelques minutes contre
+plusieurs heures de rendu.
+
+Mesuré sur les neuf : ambiance −12,4 dB, crêtes de voix inchangées à 0,2 dB
+près, nombre d'images identique avant et après.
+
+Deux pièges, tous deux attrapés par la mesure et non par la relecture :
+
+1. Le premier mixage numérotait les entrées ffmpeg à partir de zéro, or
+   l'entrée 0 est le MP4 lui-même : le mixage d'origine se retrouvait rajouté à
+   plein niveau. Le fichier changeait de taille, la sonie ne bougeait pas d'un
+   décibel. **Un fichier qui change n'est pas un fichier corrigé.**
+2. Reconstruire le mixage hors du moteur de rendu fait perdre 2 dB à la voix,
+   gain que la composition ne déclare pas. Compensé côté ffmpeg seulement : le
+   reporter dans la composition l'appliquerait deux fois.
+
+Les deux scripts se tiennent désormais l'un l'autre. `build-sans.py` porte le
+même facteur — sinon le prochain rendu aurait réintroduit les anciens niveaux
+sans que personne le remarque — et pose en retour un marqueur
+`ambiance-adoucie` dans la composition, sur lequel `adoucir-ambiance.py`
+s'arrête : il multiplie ce qu'il lit, donc l'enchaîner sur une composition déjà
+abaissée aurait donné −24 dB.
+
+Republiés sur RapidoCMS sous les mêmes noms, donc sans toucher à `journees.ts`.
+Vérifié par md5 : les neuf objets en ligne sont identiques aux fichiers locaux.
+Les vignettes n'ont pas bougé — elles sont extraites de l'image, qui n'a pas
+changé.
+
 ---
 
 ## 7. Chaîne de fabrication d'un film
