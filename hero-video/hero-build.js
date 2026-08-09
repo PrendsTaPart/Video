@@ -53,22 +53,35 @@
   // mark, back.out(1.4), 900ms. Two `.converge-stage` instances exist (the
   // narratrice's setup beat, then the real beatA) — only the second, real
   // one animates; the first sits static as a calm establishing frame.
+  // Timing is read from the beat's own data-start/data-duration rather than
+  // hardcoded seconds, so a re-timed hero.json (scripts/retime.mjs) never
+  // desyncs the animation from the cut.
   var convergeStages = document.querySelectorAll('.converge-stage');
   var beatA = convergeStages[convergeStages.length - 1];
   if (beatA) {
+    var beatAClip = beatA.closest('.clip');
     var nodes = beatA.querySelectorAll('.converge-node');
     var target = beatA.querySelector('.converge-target');
-    var beatAAnimStart = 107.8; // late in s4-beatA-multicanal (101.8 -> 112), lands before the beat ends
+    var beatAStart = parseFloat(beatAClip.getAttribute('data-start'));
+    var beatADuration = parseFloat(beatAClip.getAttribute('data-duration'));
+    // Lands ~150ms before the beat ends (two 900ms tweens, offset by 150ms).
+    var beatAAnimStart = Math.max(beatAStart, beatAStart + beatADuration - 1.05);
     tl.to(nodes, { opacity: 0, scale: 0.7, duration: 0.9, ease: 'back.in(1.4)', stagger: 0.08 }, beatAAnimStart);
     tl.to(target, { opacity: 1, scale: 1, duration: 0.9, ease: 'back.out(1.4)' }, beatAAnimStart + 0.15);
   }
 
-  // Beat D notification cascade: three badges arriving in sequence.
+  // Beat D notification cascade: three badges arriving in sequence, spaced
+  // evenly across whatever the beat's actual duration turns out to be.
+  var irisStage = document.querySelector('.iris-stage');
   var toasts = document.querySelectorAll('.iris-device .toast');
-  if (toasts.length) {
-    var beatDStart = 134; // s4-beatD-iris fromSeconds
+  if (toasts.length && irisStage) {
+    var beatDClip = irisStage.closest('.clip');
+    var beatDStart = parseFloat(beatDClip.getAttribute('data-start'));
+    var beatDDuration = parseFloat(beatDClip.getAttribute('data-duration'));
+    var leadIn = 0.6;
+    var stagger = Math.max(0.3, (beatDDuration - leadIn - 0.4) / toasts.length);
     toasts.forEach(function (toast, i) {
-      tl.to(toast, { opacity: 1, y: 0, scale: 1, duration: 0.4, ease: 'back.out(2)' }, beatDStart + 1 + i * 0.5);
+      tl.to(toast, { opacity: 1, y: 0, scale: 1, duration: 0.4, ease: 'back.out(2)' }, beatDStart + leadIn + i * stagger);
     });
   }
 

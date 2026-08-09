@@ -1,0 +1,75 @@
+{
+  "width": 1080,
+  "height": 1920,
+  "fps": 30,
+  "logo": "assets/brand/foodeatup-logo-mascot.png",
+  "clin": "assets/sfx/son-clin-passe-take1.mp3",
+  "ctaVo": "assets/voice/cta.mp3",
+  "ctaSub": "Essayez 7 jours gratuitement",
+  "stories": [
+    {
+      "id": "hf2-01-six-heures",
+      "hook": "6h00.",
+      "video": "assets/video/hf2/01-six-heures.mp4",
+      "vo": "assets/voice/hf2/vo1-six-heures.mp3",
+      "caption": "Six heures du matin. Ton restaurant dort encore. Toi, non.",
+      "punchline": "FoodEatUp travaille avant toi."
+    },
+    {
+      "id": "hf2-02-trois-ecrans",
+      "hook": "Trois écrans.",
+      "video": "assets/video/hf2/02-trois-ecrans.mp4",
+      "vo": "assets/voice/hf2/vo2-trois-ecrans.mp3",
+      "caption": "Le téléphone. Les tickets. Le stock. Trois écrans, et aucune réponse.",
+      "punchline": "Un seul écran. Toutes les réponses."
+    },
+    {
+      "id": "hf2-03-declic",
+      "hook": "Et si...",
+      "video": "assets/video/hf2/03-declic.mp4",
+      "vo": "assets/voice/hf2/vo3-declic.mp3",
+      "caption": "Et si tout ça tenait sur un seul ?",
+      "punchline": "Un seul outil pour tout gérer."
+    },
+    {
+      "id": "hf2-04-cuisine-salle",
+      "hook": "Cuisine. Salle.",
+      "video": "assets/video/hf2/04-cuisine-salle.mp4",
+      "vo": "assets/voice/hf2/vo4-cuisine-salle.mp3",
+      "caption": "La cuisine sait. La salle sait. Plus personne ne court après l'information.",
+      "punchline": "L'info circule. Enfin."
+    },
+    {
+      "id": "hf2-05-fin-service",
+      "hook": "Fin de service.",
+      "video": "assets/video/hf2/05-fin-service.mp4",
+      "vo": "assets/voice/hf2/vo5-fin-service.mp3",
+      "caption": "Tes marges, tes clients, ta conformité. Enfin visibles.",
+      "punchline": "Tout, visible, en un coup d'œil."
+    },
+    {
+      "id": "hf2-06-marque",
+      "hook": "FoodEatUp.",
+      "video": "assets/video/hf2/06-marque.mp4",
+      "vo": "assets/voice/hf2/vo6-marque.mp3",
+      "caption": "FoodEatUp. Huit métiers. Une seule boucle.",
+      "punchline": "Le mode d'emploi du restaurant qui se gère tout seul."
+    },
+    {
+      "id": "hf2-07-client-salle",
+      "hook": "20 heures.",
+      "video": "assets/video/hf2/07-client-salle.mp4",
+      "vo": "assets/voice/hf2/vo7-client-salle.mp3",
+      "caption": "Il pousse la porte à vingt heures. Sa table est prête. Il ne se posera aucune question.",
+      "punchline": "Vos clients ne voient que le résultat."
+    },
+    {
+      "id": "hf2-08-tracabilite",
+      "hook": "7 heures.",
+      "video": "assets/video/hf2/08-tracabilite.mp4",
+      "vo": "assets/voice/hf2/vo8-tracabilite.mp3",
+      "caption": "Il ne verra jamais la chambre froide relevée à sept heures du matin.",
+      "punchline": "La traçabilité, invisible et automatique."
+    }
+  ]
+}

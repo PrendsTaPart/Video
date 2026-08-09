@@ -14,7 +14,7 @@ le pipeline réel de ce dépôt est HyperFrames/GSAP, voir `studio-video/CLAUDE.
 | 17 plans vidéo | ✅ Générés (Higgsfield / Seedance 2.0), `assets/video/` |
 | 10 images d'ambiance (HERO-01→10) | ✅ Générées (Higgsfield / Nano Banana Pro), `assets/image/ambiance/` |
 | Icônes des motion graphics (convergence multicanal, cascade Iris, CTA) | ✅ Générées sans texte (RapidoCMS), `assets/image/icons/` — remplacent les anciens labels HTML |
-| Voix (chef, serveur, directeur, narratrice) | ✅ Régénérées via ElevenLabs TTS avec des réglages plus réalistes (stability/style ajustés par registre "sans"/"avec"), `assets/voice/`. La réplique en espagnol du commis a été supprimée (plus aucune voix étrangère). |
+| Voix (chef, serveur, directeur, narratrice) | ✅ Régénérées via ElevenLabs TTS avec des réglages plus réalistes (stability/style ajustés par registre "sans"/"avec"), `assets/voice/`. La réplique en espagnol du commis a été supprimée (plus aucune voix étrangère). Directeur (Olivier, `rgFgMEXfdGwXCYio7I0J`) et narratrice (Anaïs, `5OnMHwgTFgvPVwE8jP6B`) utilisent des voix natives françaises de la bibliothèque ElevenLabs — les presets par défaut (Arnold, Rachel) gardaient un accent anglais perceptible même en `eleven_multilingual_v2`. |
 | Cloche du passe ("clin") | ⚠️ **Placeholder IA** (ElevenLabs Sound Effects), PAS un vrai enregistrement. Voir `data/hero.json → clin.statusNote`. |
 | Lexique SFX (scanner, imprimante, Jarvis, Iris...) | ⚠️ **Placeholder IA**, `assets/sfx/` — sons plausibles mais génériques, pas les vrais bips/mécaniques FoodEatUp |
 | Musique (sans désaccordée / avec résolue) | ⚠️ **Placeholder IA** (ElevenLabs Music), `assets/music/` — à recomposer avec un vrai compositeur pour la sortie finale |
