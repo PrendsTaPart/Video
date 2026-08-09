@@ -31,10 +31,35 @@ const beats = src.beats.map((b) => {
   return beat;
 });
 
-const ctaDur = round2(realDuration(src.cta.vo) + src.cta.tailHoldSeconds);
-const cta = { ...src.cta, fromSeconds: round2(cursor), durationSeconds: ctaDur };
-const clinAt = round2(cursor + 0.15); // sting right on the cut into the CTA card
-cursor += ctaDur;
+// The closing card: sting, then the tagline, then what FoodEatUp actually is.
+// Two things were wrong before. The sting fired 0.15s into the card while the
+// tagline VO was already speaking, so it stepped on the first word — the same
+// defect the client heard on the stories. And the ad closed on a tagline that
+// never says what the product is, so a viewer meeting FoodEatUp on LinkedIn
+// learned five benefits and no category. The bell now rings out in the clear
+// before anyone speaks, and the explanation follows the tagline.
+const STING_AIR = 0.25; // silence between the end of the bell and the first word
+const BEAT_GAP = 0.4;   // breath between the tagline and the explanation
+const ctaStart = round2(cursor);
+const clinDur = round2(realDuration(src.clin));
+const clinAt = ctaStart;
+const ctaVoAt = round2(ctaStart + clinDur + STING_AIR);
+const ctaVoDur = round2(realDuration(src.cta.vo));
+const explainAt = round2(ctaVoAt + ctaVoDur + BEAT_GAP);
+const explainDur = round2(realDuration(src.cta.explainVo));
+// The card is static artwork, not footage, so it can run as long as the two
+// lines need without freezing on a last video frame.
+const ctaDur = round2(explainAt + explainDur + src.cta.tailHoldSeconds - ctaStart);
+const cta = {
+  ...src.cta,
+  fromSeconds: ctaStart,
+  durationSeconds: ctaDur,
+  voFromSeconds: ctaVoAt,
+  voDurationSeconds: ctaVoDur,
+  explainFromSeconds: explainAt,
+  explainDurationSeconds: explainDur,
+};
+cursor = ctaStart + ctaDur;
 
 const ad = {
   title: src.title,
@@ -44,7 +69,7 @@ const ad = {
   durationSeconds: round2(cursor),
   beats,
   cta,
-  clin: { file: src.clin, atSeconds: clinAt },
+  clin: { file: src.clin, atSeconds: clinAt, durationSeconds: clinDur },
 };
 writeFileSync(path.join(ROOT, 'data/ad.json'), JSON.stringify(ad, null, 2) + '\n');
 
@@ -86,13 +111,18 @@ ad.beats.forEach((b) => {
   audioTag(b.vo, b.fromSeconds, b.durationSeconds, 2000 + track++);
 });
 
-out.push(`<div class="clip beat cta-card" data-start="${ad.cta.fromSeconds}" data-duration="${ad.cta.durationSeconds}" data-track-index="${track++}">`);
+out.push(`<div id="${nextId('cta')}" class="clip beat cta-card" data-start="${ad.cta.fromSeconds}" data-duration="${ad.cta.durationSeconds}" data-track-index="${track++}">`);
 out.push(`<img class="logo" src="${esc(ad.cta.logo)}" alt="FoodEatUp" />`);
 out.push(`<div class="cta-line2">${esc(ad.cta.line2)}</div>`);
+out.push(`<div class="cta-explain">${esc(ad.cta.explain)}</div>`);
 out.push(`<div class="cta-sub">${esc(ad.cta.subCta)}</div>`);
 out.push('</div>');
-audioTag(ad.cta.vo, ad.cta.fromSeconds, ad.cta.durationSeconds, 2000 + track++);
-audioTag(ad.clin.file, ad.clin.atSeconds, 1.5, 2000 + track++);
+// Each closing sound gets exactly its own slot, back to back — the bell's real
+// measured length, then the tagline, then the explanation. Hard-coding 1.5s for
+// a 1.52s sample is how the bell used to bleed over the voice.
+audioTag(ad.clin.file, ad.clin.atSeconds, ad.clin.durationSeconds, 2000 + track++);
+audioTag(ad.cta.vo, ad.cta.voFromSeconds, ad.cta.voDurationSeconds, 2000 + track++);
+audioTag(ad.cta.explainVo, ad.cta.explainFromSeconds, ad.cta.explainDurationSeconds, 2000 + track++);
 
 const staticMarkup = out.join('\n');
 

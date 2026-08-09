@@ -42,7 +42,9 @@
     "line1": "FoodEatUp",
     "line2": "Le mode d'emploi du restaurant qui se gère tout seul.",
     "subCta": "Essayez 7 jours gratuitement",
-    "tailHoldSeconds": 2.5
+    "tailHoldSeconds": 2.5,
+    "explain": "Caisse, stock, HACCP, planning, compta : une seule application, pilotée par l'IA.",
+    "explainVo": "assets/voice/explain.mp3"
   },
   "clin": "assets/sfx/son-clin-passe-take1.mp3"
 }

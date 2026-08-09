@@ -3,7 +3,7 @@
   "fps": 30,
   "width": 1080,
   "height": 1080,
-  "durationSeconds": 16.83,
+  "durationSeconds": 27.25,
   "beats": [
     {
       "id": "b1",
@@ -54,11 +54,18 @@
     "line2": "Le mode d'emploi du restaurant qui se gère tout seul.",
     "subCta": "Essayez 7 jours gratuitement",
     "tailHoldSeconds": 2.5,
+    "explain": "Caisse, stock, HACCP, planning, compta : une seule application, pilotée par l'IA.",
+    "explainVo": "assets/voice/explain.mp3",
     "fromSeconds": 11.04,
-    "durationSeconds": 5.79
+    "durationSeconds": 16.21,
+    "voFromSeconds": 12.81,
+    "voDurationSeconds": 3.29,
+    "explainFromSeconds": 16.5,
+    "explainDurationSeconds": 8.25
   },
   "clin": {
     "file": "assets/sfx/son-clin-passe-take1.mp3",
-    "atSeconds": 11.19
+    "atSeconds": 11.04,
+    "durationSeconds": 1.52
   }
 }

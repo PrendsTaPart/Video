@@ -58,6 +58,13 @@
     line-height: 1.25;
     max-width: 820px;
   }
+  .cta-card .cta-explain {
+    color: #3C4A55;
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 1.38;
+    max-width: 780px;
+  }
   .cta-card .cta-sub {
     color: #fff;
     background: var(--orange);
@@ -71,10 +78,10 @@
 <body>
 
 <script id="ad-data" type="application/json">
-{"title":"FoodEatUp — Pub LinkedIn","fps":30,"width":1080,"height":1080,"durationSeconds":16.83,"beats":[{"id":"b1","video":"assets/video/hero-chef-scan-carton.mp4","vo":"assets/voice/b1.mp3","caption":"Un service. Zéro ressaisie.","fromSeconds":0,"durationSeconds":2.1},{"id":"b2","video":"assets/video/hero-kds-mural.mp4","vo":"assets/voice/b2.mp3","caption":"Le stock qui se met à jour tout seul.","fromSeconds":2.1,"durationSeconds":2.31},{"id":"b3","video":"assets/video/hero-serveur-plan-table.mp4","vo":"assets/voice/b3.mp3","caption":"La salle qui se remplit sans un appel manqué.","fromSeconds":4.41,"durationSeconds":2.72},{"id":"b4","video":"assets/video/hero-caisse-ticket-z.mp4","vo":"assets/voice/b4.mp3","caption":"La caisse qui se ferme en un geste.","fromSeconds":7.13,"durationSeconds":2.07},{"id":"b5","video":"assets/video/hero-directeur-bureau-matin.mp4","vo":"assets/voice/b5.mp3","caption":"Le chiffre du jour, déjà là.","fromSeconds":9.2,"durationSeconds":1.84}],"cta":{"id":"cta","vo":"assets/voice/cta.mp3","logo":"assets/brand/foodeatup-logo-mascot.png","line1":"FoodEatUp","line2":"Le mode d'emploi du restaurant qui se gère tout seul.","subCta":"Essayez 7 jours gratuitement","tailHoldSeconds":2.5,"fromSeconds":11.04,"durationSeconds":5.79},"clin":{"file":"assets/sfx/son-clin-passe-take1.mp3","atSeconds":11.19}}
+{"title":"FoodEatUp — Pub LinkedIn","fps":30,"width":1080,"height":1080,"durationSeconds":27.25,"beats":[{"id":"b1","video":"assets/video/hero-chef-scan-carton.mp4","vo":"assets/voice/b1.mp3","caption":"Un service. Zéro ressaisie.","fromSeconds":0,"durationSeconds":2.1},{"id":"b2","video":"assets/video/hero-kds-mural.mp4","vo":"assets/voice/b2.mp3","caption":"Le stock qui se met à jour tout seul.","fromSeconds":2.1,"durationSeconds":2.31},{"id":"b3","video":"assets/video/hero-serveur-plan-table.mp4","vo":"assets/voice/b3.mp3","caption":"La salle qui se remplit sans un appel manqué.","fromSeconds":4.41,"durationSeconds":2.72},{"id":"b4","video":"assets/video/hero-caisse-ticket-z.mp4","vo":"assets/voice/b4.mp3","caption":"La caisse qui se ferme en un geste.","fromSeconds":7.13,"durationSeconds":2.07},{"id":"b5","video":"assets/video/hero-directeur-bureau-matin.mp4","vo":"assets/voice/b5.mp3","caption":"Le chiffre du jour, déjà là.","fromSeconds":9.2,"durationSeconds":1.84}],"cta":{"id":"cta","vo":"assets/voice/cta.mp3","logo":"assets/brand/foodeatup-logo-mascot.png","line1":"FoodEatUp","line2":"Le mode d'emploi du restaurant qui se gère tout seul.","subCta":"Essayez 7 jours gratuitement","tailHoldSeconds":2.5,"explain":"Caisse, stock, HACCP, planning, compta : une seule application, pilotée par l'IA.","explainVo":"assets/voice/explain.mp3","fromSeconds":11.04,"durationSeconds":16.21,"voFromSeconds":12.81,"voDurationSeconds":3.29,"explainFromSeconds":16.5,"explainDurationSeconds":8.25},"clin":{"file":"assets/sfx/son-clin-passe-take1.mp3","atSeconds":11.04,"durationSeconds":1.52}}
 </script>
 
-<div id="ad" class="composition" data-composition-id="ad" data-width="1080" data-height="1080" data-start="0" data-duration="16.83">
+<div id="ad" class="composition" data-composition-id="ad" data-width="1080" data-height="1080" data-start="0" data-duration="27.25">
 <video id="video-1" class="clip beat media-fill" src="assets/video/hero-chef-scan-carton.mp4" data-start="0" data-duration="2.1" data-track-index="0" muted autoplay playsinline></video>
 <div id="caption-2" class="clip beat caption-bar" data-start="0" data-duration="2.1" data-track-index="1"><span>Un service. Zéro ressaisie.</span></div>
 <audio id="audio-3" class="clip" src="assets/voice/b1.mp3" data-start="0" data-duration="2.1" data-track-index="2002" data-volume="1" data-has-audio="true" preload="auto"></audio>
@@ -90,13 +97,15 @@
 <video id="video-13" class="clip beat media-fill" src="assets/video/hero-directeur-bureau-matin.mp4" data-start="9.2" data-duration="1.84" data-track-index="12" muted autoplay playsinline></video>
 <div id="caption-14" class="clip beat caption-bar" data-start="9.2" data-duration="1.84" data-track-index="13"><span>Le chiffre du jour, déjà là.</span></div>
 <audio id="audio-15" class="clip" src="assets/voice/b5.mp3" data-start="9.2" data-duration="1.84" data-track-index="2014" data-volume="1" data-has-audio="true" preload="auto"></audio>
-<div class="clip beat cta-card" data-start="11.04" data-duration="5.79" data-track-index="15">
+<div id="cta-16" class="clip beat cta-card" data-start="11.04" data-duration="16.21" data-track-index="15">
 <img class="logo" src="assets/brand/foodeatup-logo-mascot.png" alt="FoodEatUp" />
 <div class="cta-line2">Le mode d'emploi du restaurant qui se gère tout seul.</div>
+<div class="cta-explain">Caisse, stock, HACCP, planning, compta : une seule application, pilotée par l'IA.</div>
 <div class="cta-sub">Essayez 7 jours gratuitement</div>
 </div>
-<audio id="audio-16" class="clip" src="assets/voice/cta.mp3" data-start="11.04" data-duration="5.79" data-track-index="2016" data-volume="1" data-has-audio="true" preload="auto"></audio>
-<audio id="audio-17" class="clip" src="assets/sfx/son-clin-passe-take1.mp3" data-start="11.19" data-duration="1.5" data-track-index="2017" data-volume="1" data-has-audio="true" preload="auto"></audio>
+<audio id="audio-17" class="clip" src="assets/sfx/son-clin-passe-take1.mp3" data-start="11.04" data-duration="1.52" data-track-index="2016" data-volume="1" data-has-audio="true" preload="auto"></audio>
+<audio id="audio-18" class="clip" src="assets/voice/cta.mp3" data-start="12.81" data-duration="3.29" data-track-index="2017" data-volume="1" data-has-audio="true" preload="auto"></audio>
+<audio id="audio-19" class="clip" src="assets/voice/explain.mp3" data-start="16.5" data-duration="8.25" data-track-index="2018" data-volume="1" data-has-audio="true" preload="auto"></audio>
 </div>
 
 <script>window.__timelines = window.__timelines || {};</script>

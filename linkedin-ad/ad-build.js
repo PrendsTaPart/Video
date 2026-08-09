@@ -19,10 +19,14 @@
     var ctaStart = parseFloat(cta.getAttribute('data-start'));
     var logo = cta.querySelector('.logo');
     var line2 = cta.querySelector('.cta-line2');
+    var explain = cta.querySelector('.cta-explain');
     var sub = cta.querySelector('.cta-sub');
+    var voAt = data.cta.voFromSeconds;
+    var explainAt = data.cta.explainFromSeconds;
     tl.fromTo(logo, { opacity: 0, scale: 0.85 }, { opacity: 1, scale: 1, duration: 0.5, ease: 'back.out(1.6)' }, ctaStart);
-    tl.fromTo(line2, { opacity: 0, y: 16 }, { opacity: 1, y: 0, duration: 0.4, ease: 'power1.out' }, ctaStart + 0.25);
-    tl.fromTo(sub, { opacity: 0, y: 16 }, { opacity: 1, y: 0, duration: 0.4, ease: 'power1.out' }, ctaStart + 0.5);
+    tl.fromTo(line2, { opacity: 0, y: 16 }, { opacity: 1, y: 0, duration: 0.4, ease: 'power1.out' }, voAt - 0.2);
+    tl.fromTo(explain, { opacity: 0, y: 16 }, { opacity: 1, y: 0, duration: 0.4, ease: 'power1.out' }, explainAt - 0.2);
+    tl.fromTo(sub, { opacity: 0, y: 16 }, { opacity: 1, y: 0, duration: 0.4, ease: 'power1.out' }, explainAt + 0.2);
   }
 
   tl.duration(data.durationSeconds);
