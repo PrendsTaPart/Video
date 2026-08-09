@@ -7,7 +7,7 @@ Statut des 4 segments (2026-08-09) :
 | HOOK | 0–3s | ✅ prêt | `../motion/renders/hook-intro.mp4` (déjà instancié sur cette vidéo) |
 | PROBLÈME (Higgsfield) | 3–11s | ⏳ en attente | prompt ci-dessous, à générer manuellement par Michael |
 | SOLUTION (capture écran) | 11–25s | ⏳ en attente | Drive `Créer un programme fidélité.mp4` (11,6 Mo, > limite 10 Mo de l'outil Drive de cette session) — à déposer directement dans le chat |
-| RÉSULTAT (HeyGen) | 25–33s | ⏳ en attente | script ci-dessous, avatar Mika (voir `studio-video/CLAUDE.md`) — HEYGEN_API_KEY absente de cette session, à refournir ou généré manuellement |
+| RÉSULTAT (HeyGen) | 25–33s | ⏳ en attente | script ci-dessous, avatar Mika (voir `studio-video/CLAUDE.md`) — clé reçue et stockée (`studio-video/.env`), **mais `api.heygen.com` est bloqué par la politique réseau de cette session** (proxy : 403 sur le CONNECT, host non autorisé) ; je ne peux pas appeler l'API depuis ici. À générer manuellement dans HeyGen Studio (avatar Mika) puis déposé ici, comme pour Higgsfield. |
 | PUNCHLINE | 33–37s | ✅ prêt | `../motion/renders/punchline-outro.mp4` |
 
 ## Prompt Higgsfield à générer manuellement
