@@ -17,8 +17,8 @@ const sourceFile = process.argv[2] || 'data/stories-source.json';
 const src = JSON.parse(readFileSync(path.join(ROOT, sourceFile), 'utf8'));
 
 const PAD = 0.4;
-const HOOK_DUR = 1.1;
 const CTA_TAIL = 2.5;
+const HOOK_AIR = 0.25; // silence between the end of the bell and the first word
 const round2 = (n) => Math.round(n * 100) / 100;
 
 function realDuration(file) {
@@ -26,6 +26,13 @@ function realDuration(file) {
   const out = execSync(`ffprobe -v error -show_entries format=duration -of csv=p=0 "${abs}"`).toString().trim();
   return parseFloat(out);
 }
+
+// The hook card lasts exactly as long as the bell needs to ring out, plus a
+// beat of air. Hard-coding it shorter than the bell (it was 1.1s against a
+// 1.52s sample) let the bell's tail run over the first syllable of the VO on
+// every single story — the overlap the client heard.
+const CLIN_DUR = round2(realDuration(src.clin));
+const HOOK_DUR = round2(CLIN_DUR + HOOK_AIR);
 
 const esc = (s) =>
   String(s ?? '')
@@ -100,7 +107,7 @@ function buildStory(story) {
   out.push(`<img class="logo" src="${esc(src.logo)}" alt="FoodEatUp" />`);
   out.push(`<div class="hook-line">${esc(story.hook)}</div>`);
   out.push('</div>');
-  out.push(`<audio id="${nextId('audio')}" class="clip" src="${esc(src.clin)}" data-start="${hookStart}" data-duration="1.2" data-track-index="1" data-volume="1" data-has-audio="true" preload="auto"></audio>`);
+  out.push(`<audio id="${nextId('audio')}" class="clip" src="${esc(src.clin)}" data-start="${hookStart}" data-duration="${CLIN_DUR}" data-track-index="1" data-volume="1" data-has-audio="true" preload="auto"></audio>`);
   cursor += HOOK_DUR;
 
   // BODY
