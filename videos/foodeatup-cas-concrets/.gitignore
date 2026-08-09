@@ -1,0 +1,10 @@
+# Assets d'assemblage des vidéos tutoriels : ce sont des COPIES de fichiers déjà versionnés
+# ailleurs dans le dépôt (rushes logiciel de videos/foodeatup-*-tuto/, clips avatar de
+# _heygen-inbox/, cartons de motion/renders/) plus les plans problème dérivés par ffmpeg.
+# `python3 build_videos.py` les reconstruit à l'identique — les versionner dupliquerait
+# ~30 Mo par vidéo, soit ~1 Go sur les 30.
+t*/assets/
+.cache/
+
+# Répertoires de travail laissés par un rendu interrompu
+*/renders/work-*/

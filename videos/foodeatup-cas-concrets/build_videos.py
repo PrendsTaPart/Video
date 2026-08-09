@@ -4,27 +4,48 @@ import pathlib
 import shutil
 import subprocess
 
-ROOT = pathlib.Path("/home/user/Video")
+ROOT = pathlib.Path(__file__).resolve().parents[2]
 BASE = ROOT / "videos/foodeatup-cas-concrets"
 MOTION = BASE / "motion"
 INBOX = BASE / "_heygen-inbox"
-PROB = pathlib.Path(
-    "/tmp/claude-0/-home-user-Video/7b547880-00a2-54cd-816c-b0b5d5dfda3c/scratchpad/prob"
+HERO = ROOT / "hero-video/assets/video"
+PROB = BASE / ".cache/probleme-916"
+
+# Les plans de hero-video/ sont en 1280x720 paysage (produits pour le film 16:9). Pour les
+# monter en 9:16 sans les recadrer — ce qui couperait justement ce qui les rend lisibles —
+# on les place au centre d'un fond flouté et assombri tiré du plan lui-même (pillarbox).
+# Solution d'attente : un plan nativement vertical reste préférable. Voir SCRIPTS-HEYGEN-30.md.
+PILLARBOX = (
+    "[0:v]scale=-2:1920,crop=1080:1920,boxblur=32:3,eq=brightness=-0.14:saturation=0.55[bg];"
+    "[0:v]scale=1080:-2[fg];[bg][fg]overlay=(W-w)/2:(H-h)/2,format=yuv420p"
 )
 
-# slug, hook_render, probleme_src, probleme_dur, tuto_projet, media_start, avatar_src, avatar_dur
+
+def make_pillarbox(name):
+    """Fabrique (une fois) la version 9:16 d'un plan hero-video. Retourne le chemin."""
+    PROB.mkdir(parents=True, exist_ok=True)
+    out = PROB / f"{name}-916.mp4"
+    if out.exists():
+        return out
+    subprocess.run(
+        ["ffmpeg", "-y", "-i", str(HERO / f"{name}.mp4"), "-filter_complex", PILLARBOX,
+         "-c:v", "libx264", "-crf", "18", "-preset", "medium", "-an", str(out)],
+        check=True, capture_output=True)
+    return out
+
+# slug, hook_render, plan_hero (sans extension), probleme_dur, tuto_projet, media_start, avatar_src, avatar_dur
 VIDEOS = [
     ("t01-ingredients", "hook-t01.mp4",
-     "hero-directeur-sept-onglets-916.mp4", 8.0,
+     "hero-directeur-sept-onglets", 8.0,
      "foodeatup-ingredients-tuto", 85, "gen-1_1786317231351.mp4", 10.22),
     ("t02-recettes", "hook-t02.mp4",
-     "hero-chef-carnet-dlc-916.mp4", 6.0,
+     "hero-chef-carnet-dlc", 6.0,
      "foodeatup-recettes-tuto", 74, "gen-2_1786317254794.mp4", 12.14),
     ("t03-fournisseurs", "hook-t03.mp4",
-     "hero-directeur-sept-onglets-916.mp4", 8.0,
+     "hero-directeur-sept-onglets", 8.0,
      "foodeatup-fournisseurs-tuto", 44, "gen-3_1786317280068.mp4", 9.24),
     ("t04-mes-commandes", "hook-t04.mp4",
-     "hero-serveur-trois-tablettes-916.mp4", 6.0,
+     "hero-serveur-trois-tablettes", 6.0,
      "foodeatup-mes-commandes-tuto", 20, "gen-4_1786317311124.mp4", 9.24),
 ]
 
@@ -147,7 +168,7 @@ for slug, hook, prob_src, pdur, tuto, ms, avatar, adur in VIDEOS:
         (proj / sub).mkdir(parents=True, exist_ok=True)
 
     shutil.copy(MOTION / "renders" / hook, proj / "assets/hook/hook.mp4")
-    shutil.copy(PROB / prob_src, proj / "assets/higgsfield/probleme.mp4")
+    shutil.copy(make_pillarbox(prob_src), proj / "assets/higgsfield/probleme.mp4")
     shutil.copy(ROOT / "videos" / tuto / "assets/screen.mp4", proj / "assets/solution/screen.mp4")
     shutil.copy(INBOX / avatar, proj / "assets/heygen/resultat.mp4")
     shutil.copy(MOTION / "renders/punchline-outro.mp4", proj / "assets/punchline/punchline.mp4")
