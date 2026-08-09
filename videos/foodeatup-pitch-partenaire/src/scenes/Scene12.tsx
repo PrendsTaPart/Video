@@ -8,7 +8,7 @@ import {COLORS} from '../theme';
 // Logo FoodEatUp (asset officiel de marque), slogan, URL. Rien d'autre.
 export const Scene12: React.FC = () => {
 	return (
-		<SceneLayout background={COLORS.offwhite}>
+		<SceneLayout background={COLORS.cream}>
 			<div style={{display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 44}}>
 				<AnimatedLine lineIndex={0} startFrame={0}>
 					<Img src={staticFile('img/official-logo-horizontal.png')} style={{height: 96}} />

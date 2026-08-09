@@ -36,7 +36,7 @@ const ConfirmSlider: React.FC = () => {
 				height: thumbSize + 8,
 				borderRadius: 999,
 				border: `2px solid ${COLORS.primary}`,
-				backgroundColor: t > 0.05 ? 'rgba(20,122,255,0.14)' : COLORS.offwhite,
+				backgroundColor: t > 0.05 ? 'rgba(0,123,255,0.14)' : COLORS.creamDeep,
 			}}
 		>
 			<div
@@ -65,7 +65,7 @@ const Badge: React.FC<{label: string; index: number}> = ({label, index}) => {
 
 export const Scene07: React.FC = () => {
 	return (
-		<SceneLayout background={COLORS.white}>
+		<SceneLayout background={COLORS.cream}>
 			<div
 				style={{
 					display: 'flex',

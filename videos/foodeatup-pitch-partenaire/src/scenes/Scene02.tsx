@@ -57,7 +57,7 @@ export const Scene02: React.FC = () => {
 	const activeStat = STATS[active];
 
 	return (
-		<SceneLayout background={COLORS.white}>
+		<SceneLayout background={COLORS.cream}>
 			<div style={{display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 90}}>
 				<div style={{position: 'relative', width, height}}>
 					<svg

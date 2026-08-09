@@ -1,19 +1,19 @@
-// Charte FoodEatUp — alignée sur les couleurs réelles de site.foodeatup.com
-// (extraites de assets/styles-*.css — tokens --surface, --surface-alt,
-// --surface-dark, --brand, --ink). Le site est à dominante CLAIRE : fond
-// blanc/blanc cassé, texte foncé, bleu en accent. Le navy ne sert plus de
-// fond de scène par défaut — seulement de couleur de texte / accent foncé
-// ponctuel, comme sur le site.
+// Charte graphique OFFICIELLE FoodEatUp (PDF de marque de Michael), confirmée
+// à l'identique par deux sources indépendantes : le repo de doc produit
+// (foodeatup-guide-star, src/styles.css + README) et studio-video/CLAUDE.md.
+// Fond crème (sable) par défaut, texte marine, bleu en accent primaire,
+// orange en accent secondaire (CTA, badges, surlignages).
 export const COLORS = {
-	primary: '#147AFF',
+	cream: '#FCF9E6',
+	creamDeep: '#F5F0D4',
+	navy: '#0F1A23',
+	primary: '#007BFF',
+	orange: '#FFA500',
 	white: '#FFFFFF',
-	offwhite: '#F2F7FF',
-	navy: '#0F172B',
-	// Couleurs d'accent secondaires, utilisées uniquement pour des petits
-	// éléments ponctuels (badges d'intégration, cf. site) — jamais comme
-	// fond ni comme couleur de texte principale.
+	// Couleurs d'accent tertiaires, utilisées uniquement pour des petits
+	// éléments ponctuels (badges d'intégration) — jamais comme fond ni
+	// comme couleur de texte principale.
 	whatsappGreen: '#25D366',
-	successGreen: '#1EB857',
 } as const;
 
 export const FONT_FAMILY = '"Trebuchet MS", sans-serif';

@@ -42,7 +42,7 @@ const Panel: React.FC<{number: string; title: string; subtitle: string; start: n
 				padding: '52px 32px',
 				borderRadius: 24,
 				border: `2px solid ${COLORS.primary}`,
-				backgroundColor: 'rgba(20,122,255,0.07)',
+				backgroundColor: 'rgba(0,123,255,0.07)',
 				minHeight: 460,
 				boxSizing: 'border-box',
 				justifyContent: 'center',
@@ -69,7 +69,7 @@ const Panel: React.FC<{number: string; title: string; subtitle: string; start: n
 
 export const Scene09: React.FC = () => {
 	return (
-		<SceneLayout background={COLORS.white}>
+		<SceneLayout background={COLORS.cream}>
 			<div style={{display: 'flex', flexDirection: 'row', gap: 32, width: '100%'}}>
 				{PANELS.map((p) => (
 					<Panel key={p.title} {...p} />

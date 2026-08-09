@@ -14,7 +14,7 @@ export const Pill: React.FC<{
 				borderRadius: 999,
 				border: `2px solid ${COLORS.primary}`,
 				backgroundColor: active ? COLORS.primary : 'transparent',
-				color: active ? COLORS.offwhite : textColor,
+				color: active ? COLORS.white : textColor,
 				fontSize: 28,
 				fontWeight: 600,
 				whiteSpace: 'nowrap',

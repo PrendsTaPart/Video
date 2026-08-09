@@ -4,11 +4,13 @@ import {useEnterStyle} from '../components/enter';
 import {COLORS} from '../theme';
 
 // S10 · 1:40–1:50 (300f) — L'ÉCONOMIE DU PARTENARIAT
-// Trois lignes tarifaires, apparition séquentielle.
+// Trois lignes tarifaires, apparition séquentielle. Prix réels — source
+// unique : src/data/pricing.ts du dépôt food-heartbeat-site (PACK_STOCKVISION,
+// PACK_HACCP, PACK_PREDICTION).
 const LINES = [
-	{label: 'Marque blanche — 10 000 € + 999 €/an', start: 10},
-	{label: 'Licence régionale — 100 000 € + 1 000 €/mois', start: 90},
-	{label: 'Commission — 30 % sur la consommation IA', start: 170},
+	{label: 'StockVision — 49 €/mois', start: 10},
+	{label: '+ OCR + HACCP — 99 €/mois', start: 90},
+	{label: '+ Prédiction IA — 119 €/mois', start: 170},
 ];
 
 const TariffLine: React.FC<{label: string; start: number}> = ({label, start}) => {
@@ -39,7 +41,7 @@ const TariffLine: React.FC<{label: string; start: number}> = ({label, start}) =>
 
 export const Scene10: React.FC = () => {
 	return (
-		<SceneLayout background={COLORS.white}>
+		<SceneLayout background={COLORS.cream}>
 			<div style={{display: 'flex', flexDirection: 'column', gap: 48, alignItems: 'flex-start'}}>
 				{LINES.map((l) => (
 					<TariffLine key={l.label} label={l.label} start={l.start} />

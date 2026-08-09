@@ -18,7 +18,7 @@ const CARDS_START = 6;
 
 export const Scene04: React.FC = () => {
 	return (
-		<SceneLayout background={COLORS.white}>
+		<SceneLayout background={COLORS.cream}>
 			<div
 				style={{
 					display: 'flex',

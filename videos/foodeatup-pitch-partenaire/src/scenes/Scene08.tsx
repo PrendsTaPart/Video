@@ -38,7 +38,7 @@ const Cartouche: React.FC<{label: string; start: number}> = ({label, start}) => 
 				padding: '26px 36px',
 				borderRadius: 16,
 				borderLeft: `6px solid ${COLORS.primary}`,
-				backgroundColor: COLORS.offwhite,
+				backgroundColor: COLORS.creamDeep,
 				width: 720,
 			}}
 		>
@@ -58,7 +58,7 @@ const LogoBadge: React.FC<{src: string; index: number}> = ({src, index}) => {
 				height: 118,
 				borderRadius: 16,
 				backgroundColor: COLORS.white,
-				border: '1px solid rgba(15,23,43,0.12)',
+				border: '1px solid rgba(15,26,35,0.12)',
 				display: 'flex',
 				alignItems: 'center',
 				justifyContent: 'center',
@@ -73,7 +73,7 @@ const LogoBadge: React.FC<{src: string; index: number}> = ({src, index}) => {
 
 export const Scene08: React.FC = () => {
 	return (
-		<SceneLayout background={COLORS.white}>
+		<SceneLayout background={COLORS.cream}>
 			<div style={{display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 48}}>
 				<div
 					style={{

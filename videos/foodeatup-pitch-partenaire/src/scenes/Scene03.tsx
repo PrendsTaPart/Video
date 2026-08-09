@@ -41,7 +41,7 @@ export const Scene03: React.FC = () => {
 	});
 
 	return (
-		<SceneLayout background={COLORS.white}>
+		<SceneLayout background={COLORS.cream}>
 			<div
 				style={{
 					display: 'flex',

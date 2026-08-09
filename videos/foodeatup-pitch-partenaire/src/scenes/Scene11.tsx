@@ -21,7 +21,7 @@ export const Scene11: React.FC = () => {
 	});
 
 	return (
-		<SceneLayout background={COLORS.white}>
+		<SceneLayout background={COLORS.cream}>
 			<div
 				style={{
 					position: 'relative',
@@ -29,8 +29,8 @@ export const Scene11: React.FC = () => {
 					padding: '80px 90px',
 					borderRadius: 28,
 					border: `2px solid ${COLORS.primary}`,
-					backgroundColor: COLORS.offwhite,
-					boxShadow: `0 0 ${interpolate(openT, [0, 1], [0, 90])}px rgba(20,122,255,${interpolate(openT, [0, 1], [0, 0.35])})`,
+					backgroundColor: COLORS.creamDeep,
+					boxShadow: `0 0 ${interpolate(openT, [0, 1], [0, 90])}px rgba(0,123,255,${interpolate(openT, [0, 1], [0, 0.35])})`,
 					transform: `scaleX(${openT})`,
 					transformOrigin: 'center',
 					boxSizing: 'border-box',

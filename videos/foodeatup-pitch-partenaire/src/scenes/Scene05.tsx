@@ -38,7 +38,7 @@ const DomainPill: React.FC<{label: string; index: number}> = ({label, index}) =>
 
 export const Scene05: React.FC = () => {
 	return (
-		<SceneLayout background={COLORS.offwhite}>
+		<SceneLayout background={COLORS.cream}>
 			<div style={{display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 56}}>
 				<div style={{display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 12}}>
 					<span style={{color: COLORS.primary, fontSize: 112, fontWeight: 700}}>

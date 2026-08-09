@@ -40,7 +40,7 @@ export const Scene06: React.FC = () => {
 	});
 
 	return (
-		<SceneLayout background={COLORS.white}>
+		<SceneLayout background={COLORS.cream}>
 			<div style={{display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 66}}>
 				<div style={{position: 'relative', width: SAT_RADIUS * 2 + 260, height: DIAGRAM_HEIGHT}}>
 					<svg
@@ -88,7 +88,7 @@ export const Scene06: React.FC = () => {
 										height: SAT_NODE_SIZE,
 										borderRadius: '50%',
 										border: `2px solid ${COLORS.primary}`,
-										backgroundColor: COLORS.offwhite,
+										backgroundColor: COLORS.white,
 										display: 'flex',
 										alignItems: 'center',
 										justifyContent: 'center',
@@ -113,7 +113,7 @@ export const Scene06: React.FC = () => {
 							width: 200,
 							height: 200,
 							borderRadius: '50%',
-							backgroundColor: COLORS.offwhite,
+							backgroundColor: COLORS.white,
 							border: `3px solid ${COLORS.primary}`,
 							opacity: hubOpacity,
 							display: 'flex',

@@ -132,15 +132,15 @@ Ou prescrivez-la à vos clients, et laissez-nous opérer.
 
 34
 00:01:40,000 --> 00:01:41,992
-Le modèle est clair et récurrent.
+Le modèle est simple.
 
 35
 00:01:42,072 --> 00:01:47,385
-Une licence de marque blanche, une exclusivité régionale, ou une commission sur l’usage.
+StockVision à 49 euros, HACCP à 99, Prédiction IA à 119 euros par mois.
 
 36
 00:01:47,465 --> 00:01:50,000
-Vous choisissez votre niveau d'engagement.
+Vos clients choisissent leur niveau.
 
 37
 00:01:50,000 --> 00:01:53,264
