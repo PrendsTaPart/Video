@@ -1,4 +1,5 @@
 import React from 'react';
+import {Img, staticFile} from 'remotion';
 import {SceneLayout} from '../components/SceneLayout';
 import {AnimatedLine} from '../components/AnimatedLines';
 import {Counter} from '../components/Counter';
@@ -26,12 +27,52 @@ const DOMAINS = [
 const COUNTER_START = 6;
 const LABEL_START = 30;
 const GRID_START = 90;
+const SCREENSHOT_START = 200;
 
 const DomainPill: React.FC<{label: string; index: number}> = ({label, index}) => {
 	const enter = useEnterStyle(index, GRID_START);
 	return (
 		<div style={{opacity: enter.opacity, transform: enter.transform}}>
 			<Pill label={label} active />
+		</div>
+	);
+};
+
+const ScreenshotInset: React.FC = () => {
+	const enter = useEnterStyle(0, SCREENSHOT_START);
+	return (
+		<div
+			style={{
+				position: 'absolute',
+				right: 120,
+				bottom: 120,
+				opacity: enter.opacity,
+				transform: enter.transform,
+				width: 420,
+				borderRadius: 16,
+				overflow: 'hidden',
+				border: `2px solid ${COLORS.primary}`,
+				boxShadow: '0 20px 50px -20px rgba(15,26,35,0.3)',
+				backgroundColor: COLORS.white,
+			}}
+		>
+			<div
+				style={{
+					display: 'flex',
+					alignItems: 'center',
+					gap: 8,
+					padding: '10px 14px',
+					backgroundColor: COLORS.creamDeep,
+				}}
+			>
+				{[COLORS.primary, COLORS.navy, COLORS.primary].map((c, i) => (
+					<div key={i} style={{width: 10, height: 10, borderRadius: '50%', backgroundColor: c, opacity: 0.5}} />
+				))}
+			</div>
+			<Img
+				src={staticFile('img/screenshot-dashboard-stocks.png')}
+				style={{width: '100%', display: 'block'}}
+			/>
 		</div>
 	);
 };
@@ -52,11 +93,10 @@ export const Scene05: React.FC = () => {
 				</div>
 				<div
 					style={{
-						display: 'flex',
-						flexWrap: 'wrap',
-						justifyContent: 'center',
-						gap: 20,
-						maxWidth: 1500,
+						display: 'grid',
+						gridTemplateColumns: 'repeat(3, 220px)',
+						justifyItems: 'center',
+						gap: 18,
 					}}
 				>
 					{DOMAINS.map((d, i) => (
@@ -64,6 +104,7 @@ export const Scene05: React.FC = () => {
 					))}
 				</div>
 			</div>
+			<ScreenshotInset />
 		</SceneLayout>
 	);
 };

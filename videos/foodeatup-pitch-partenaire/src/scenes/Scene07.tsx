@@ -1,5 +1,5 @@
 import React from 'react';
-import {Easing, interpolate, useCurrentFrame} from 'remotion';
+import {Easing, Img, interpolate, staticFile, useCurrentFrame} from 'remotion';
 import {SceneLayout} from '../components/SceneLayout';
 import {AnimatedLine} from '../components/AnimatedLines';
 import {Pill} from '../components/Pill';
@@ -8,7 +8,7 @@ import {COLORS, ENTER_BEZIER} from '../theme';
 
 // S7 · 1:05–1:16 (330f) — LA CONFIANCE
 // Gauche : bandeau "Confirmer ?" avec un curseur qui valide.
-// Droite : quatre badges de conformité.
+// Droite : quatre badges de conformité. Bas : aperçu réel du module HACCP.
 
 const easing = Easing.bezier(...ENTER_BEZIER);
 const BADGES = ['NF525', 'TVA', 'DSN', 'HACCP'];
@@ -17,6 +17,7 @@ const TITLE_START = 0;
 const SLIDER_START = 40;
 const SLIDER_END = 90;
 const BADGES_START = 70;
+const SCREENSHOT_START = 150;
 
 const ConfirmSlider: React.FC = () => {
 	const frame = useCurrentFrame();
@@ -63,45 +64,87 @@ const Badge: React.FC<{label: string; index: number}> = ({label, index}) => {
 	);
 };
 
-export const Scene07: React.FC = () => {
+const ScreenshotInset: React.FC = () => {
+	const enter = useEnterStyle(0, SCREENSHOT_START);
 	return (
-		<SceneLayout background={COLORS.cream}>
+		<div
+			style={{
+				opacity: enter.opacity,
+				transform: enter.transform,
+				width: 520,
+				borderRadius: 16,
+				overflow: 'hidden',
+				border: `2px solid ${COLORS.primary}`,
+				boxShadow: '0 20px 50px -20px rgba(15,26,35,0.3)',
+				backgroundColor: COLORS.white,
+			}}
+		>
 			<div
 				style={{
 					display: 'flex',
-					flexDirection: 'row',
-					width: '100%',
 					alignItems: 'center',
-					justifyContent: 'space-between',
+					gap: 8,
+					padding: '10px 14px',
+					backgroundColor: COLORS.creamDeep,
 				}}
 			>
+				{[COLORS.primary, COLORS.navy, COLORS.primary].map((c, i) => (
+					<div
+						key={i}
+						style={{width: 10, height: 10, borderRadius: '50%', backgroundColor: c, opacity: 0.5}}
+					/>
+				))}
+			</div>
+			<Img
+				src={staticFile('img/screenshot-haccp-modules.png')}
+				style={{width: '100%', display: 'block'}}
+			/>
+		</div>
+	);
+};
+
+export const Scene07: React.FC = () => {
+	return (
+		<SceneLayout background={COLORS.cream}>
+			<div style={{display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 40, width: '100%'}}>
 				<div
 					style={{
-						flex: 1,
 						display: 'flex',
-						flexDirection: 'column',
-						alignItems: 'flex-start',
-						gap: 44,
+						flexDirection: 'row',
+						width: '100%',
+						alignItems: 'center',
+						justifyContent: 'space-between',
 					}}
 				>
-					<AnimatedLine lineIndex={0} startFrame={TITLE_START}>
-						<span style={{color: COLORS.navy, fontSize: 66, fontWeight: 700}}>Confirmer ?</span>
-					</AnimatedLine>
-					<ConfirmSlider />
+					<div
+						style={{
+							flex: 1,
+							display: 'flex',
+							flexDirection: 'column',
+							alignItems: 'flex-start',
+							gap: 44,
+						}}
+					>
+						<AnimatedLine lineIndex={0} startFrame={TITLE_START}>
+							<span style={{color: COLORS.navy, fontSize: 66, fontWeight: 700}}>Confirmer ?</span>
+						</AnimatedLine>
+						<ConfirmSlider />
+					</div>
+					<div
+						style={{
+							flex: 1,
+							display: 'flex',
+							flexDirection: 'column',
+							alignItems: 'flex-end',
+							gap: 24,
+						}}
+					>
+						{BADGES.map((b, i) => (
+							<Badge key={b} label={b} index={i} />
+						))}
+					</div>
 				</div>
-				<div
-					style={{
-						flex: 1,
-						display: 'flex',
-						flexDirection: 'column',
-						alignItems: 'flex-end',
-						gap: 24,
-					}}
-				>
-					{BADGES.map((b, i) => (
-						<Badge key={b} label={b} index={i} />
-					))}
-				</div>
+				<ScreenshotInset />
 			</div>
 		</SceneLayout>
 	);
