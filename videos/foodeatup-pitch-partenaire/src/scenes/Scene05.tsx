@@ -8,20 +8,21 @@ import {useEnterStyle} from '../components/enter';
 import {COLORS} from '../theme';
 
 // S5 · 0:42–0:55 (390f) — LA PLATEFORME (fond blanc cassé)
-// Compteur "185" puis label, puis grille de 11 pastilles de domaine
-// qui se remplissent en cascade.
+// Compteur "175+" puis label, puis grille des 12 familles réelles du
+// serveur MCP FoodEatUp (src/data/mcp-families.ts du dépôt du site).
 const DOMAINS = [
-	'Salle',
-	'Commandes',
+	'Réservations',
 	'Caisse',
-	'Carte',
-	'Recettes',
-	'Stock',
+	'Commandes',
+	'Stocks',
 	'HACCP',
 	'RH',
 	'Clients',
+	'Marketing',
+	'Finances',
+	'Production',
 	'Site',
-	'Finance',
+	'Pilotage',
 ];
 
 const COUNTER_START = 6;
@@ -83,7 +84,7 @@ export const Scene05: React.FC = () => {
 			<div style={{display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 56}}>
 				<div style={{display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 12}}>
 					<span style={{color: COLORS.primary, fontSize: 112, fontWeight: 700}}>
-						<Counter target={185} startFrame={COUNTER_START} />
+						<Counter target={175} suffix="+" startFrame={COUNTER_START} />
 					</span>
 					<AnimatedLine lineIndex={0} startFrame={LABEL_START}>
 						<span style={{color: COLORS.navy, fontSize: 40, fontWeight: 600}}>

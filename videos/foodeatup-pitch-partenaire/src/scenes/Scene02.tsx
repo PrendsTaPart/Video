@@ -35,10 +35,14 @@ const LINKS = [
 const BREAK_START = 6;
 const BREAK_STEP = 16;
 
+// Chiffres vérifiés dans le dépôt du site (le-restaurant-augmente.tsx,
+// chapitre « le téléphone qui sonne dans le vide ») : 28 appels/jour,
+// 52 % décrochés → ≈13 appels manqués/jour → ≈87 000 €/an de commandes
+// perdues.
 const STATS = [
 	{kind: 'counter' as const, prefix: '', suffix: ' outils', target: 10, start: 40},
-	{kind: 'text' as const, label: '1 à 2 h perdues par jour', start: 160},
-	{kind: 'text' as const, label: 'Des appels manqués', start: 250},
+	{kind: 'text' as const, label: '≈13 appels manqués par jour', start: 160},
+	{kind: 'text' as const, label: '≈87 000 € perdus par an', start: 250},
 ];
 
 const activeStatIndex = (frame: number): number => {

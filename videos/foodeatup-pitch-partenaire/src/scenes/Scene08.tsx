@@ -7,11 +7,13 @@ import {COLORS} from '../theme';
 // S8 · 1:16–1:26 (300f) — LA PREUVE
 // Quatre cartouches chiffrées, apparition décalée, puis les vrais logos
 // des programmes / labels obtenus (preuve visuelle, pas seulement du texte).
+// Source : cas client GoSushi + bloc "Preuves & chiffres" du site
+// (food-heartbeat-site/src/routes/index.tsx).
 const CARTOUCHES = [
-	{label: '+200 briques R&D', start: 0},
-	{label: '15 projets livrés, dont SNCF', start: 45},
-	{label: 'Déployé en Inde et à Dubaï', start: 90},
-	{label: 'AWS Startups · NVIDIA Inception', start: 135},
+	{label: 'GoSushi : 5 outils remplacés par 1', start: 0},
+	{label: '−50 % de temps en back-office', start: 45},
+	{label: '100 % HACCP dématérialisé', start: 90},
+	{label: '−17 % en abonnement annuel', start: 135},
 ];
 
 const LOGOS = [

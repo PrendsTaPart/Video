@@ -130,7 +130,7 @@ export const Scene06: React.FC = () => {
 
 				<AnimatedLine lineIndex={0} startFrame={STAT_START}>
 					<span style={{color: COLORS.primary, fontSize: 48, fontWeight: 700}}>
-						+300 outils · 4 logiciels · 1 agent
+						Une même famille · 4 logiciels · 1 agent
 					</span>
 				</AnimatedLine>
 			</div>

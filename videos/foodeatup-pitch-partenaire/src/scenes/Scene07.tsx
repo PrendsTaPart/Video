@@ -11,7 +11,11 @@ import {COLORS, ENTER_BEZIER} from '../theme';
 // Droite : quatre badges de conformité. Bas : aperçu réel du module HACCP.
 
 const easing = Easing.bezier(...ENTER_BEZIER);
-const BADGES = ['NF525', 'TVA', 'DSN', 'HACCP'];
+// 4 points vérifiés dans /conformite du dépôt du site — le module de
+// caisse (NF525) est explicitement "en développement, pas encore
+// commercialisé" et n'est donc PAS un badge de conformité acquis :
+// on affiche à la place les 4 garanties déjà en place aujourd'hui.
+const BADGES = ['RGPD', 'HACCP', 'Sécurité', 'Réversibilité'];
 
 const TITLE_START = 0;
 const SLIDER_START = 40;
