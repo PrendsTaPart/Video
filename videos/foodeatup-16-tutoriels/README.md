@@ -98,6 +98,29 @@ La seizième n'a pas de carton — `retrouver-toutes-mes-commandes` a été réa
 après le tournage des intros. Elle est **extraite de son propre film**, donc à
 la même charte par construction.
 
+## Comment les fichiers entrent en bibliothèque
+
+`upload_file_tool` de RapidoCMS ne prend pas d'octets : il prend une **URL
+publique** qu'il va chercher lui-même, et enregistre le fichier sous le nom
+qu'on lui donne — ce nom devient la clé S3, donc l'URL exacte que la fiche
+référence. D'où deux sources, l'une et l'autre déjà publiques :
+
+- **les vignettes**, depuis leur lien de partage Drive ;
+- **les films**, depuis `raw.githubusercontent.com` — ce dépôt est public et les
+  films y sont versionnés. L'URL est **épinglée sur le SHA du commit**, jamais
+  sur le nom de branche : une branche bouge, et l'on veut savoir des mois plus
+  tard quel montage exact est parti en bibliothèque.
+
+Chaque envoi est vérifié en relisant l'URL S3 et en comparant le SHA-256 à celui
+du fichier local. Un transfert tronqué donne un MP4 qui s'ouvre et se coupe au
+milieu — ça ne se voit qu'en le regardant en entier, donc on ne le regarde pas :
+on compare les empreintes.
+
+⚠️ **Les films partent en bibliothèque avant le SQL des fiches.** Une fiche
+publiée qui pointe vers un média absent affiche un lecteur vide, et c'est le
+lecteur vide que verra le visiteur — pas un message d'erreur qu'on pourrait
+remarquer.
+
 **Le sens du montage est inversé, et c'est délibéré.** On ne génère pas une voix
 d'un bloc pour y relever ensuite des bornes à la lecture : chaque segment est
 généré séparément, donc sa durée est *mesurée*, et la scène qui le porte dure

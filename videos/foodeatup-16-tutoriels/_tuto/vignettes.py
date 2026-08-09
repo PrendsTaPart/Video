@@ -17,6 +17,18 @@ Le nom de sortie suit la règle de la bibliothèque : le `-v1` du film est
 suffixé. Cent vingt et une des cent vingt-quatre fiches déjà en ligne le font
 ainsi.
 
+**Ce que ce script produit n'est pas ce qui part en bibliothèque, sauf pour la
+seizième.** RapidoCMS n'accepte pas d'octets, seulement une URL publique : les
+quinze cartons y sont donc envoyés depuis leur lien Drive, tels quels. Le
+dossier `_vignettes/` sert de copie locale contrôlable — et de seule source
+possible pour le tutoriel qui n'a pas de carton.
+
+L'écart entre les deux est d'un pixel (1281×721 côté Drive, 1280×720 ici) et ne
+se voit pas dans une tuile de catalogue. Le noter reste utile : c'est la raison
+pour laquelle une comparaison d'empreintes entre `_vignettes/` et ce que sert la
+bibliothèque échouerait sur quinze fichiers sur seize, sans que rien ne soit
+cassé.
+
 Usage : python3 _tuto/vignettes.py
 """
 
