@@ -6,8 +6,8 @@ Statut des 4 segments (2026-08-09) :
 |---|---|---|---|
 | HOOK | 0–3s | ✅ prêt | `../motion/renders/hook-intro.mp4` (déjà instancié sur cette vidéo) |
 | PROBLÈME (Higgsfield) | 3–11s | ✅ reçu | `assets/higgsfield/probleme.mp4` — chef de dos, salle qui se vide, clients qui partent. 720×1280, 24fps, 10.08s (à recadrer sur ~8s au montage). Palette plus chaude que demandé (grise/désaturée dans le prompt) mais cadrage et action conformes — utilisable tel quel. |
-| SOLUTION (capture écran) | 11–25s | ⏳ en attente | Drive `Créer un programme fidélité.mp4` (11,6 Mo, > limite 10 Mo de l'outil Drive de cette session) — à déposer directement dans le chat |
-| RÉSULTAT (HeyGen) | 25–33s | ⏳ en attente | script ci-dessous, avatar Mika (voir `studio-video/CLAUDE.md`) — clé reçue et stockée (`studio-video/.env`), **mais `api.heygen.com` est bloqué par la politique réseau de cette session** (proxy : 403 sur le CONNECT, host non autorisé) ; je ne peux pas appeler l'API depuis ici. À générer manuellement dans HeyGen Studio (avatar Mika) puis déposé ici, comme pour Higgsfield. |
+| SOLUTION (capture écran) | 11–25s | ✅ reçu | `assets/solution/programme-fidelite.mp4` — capture horizontale 1920×828, 25fps, 28.76s, confirme bien l'écran "Fidélité & jeux" (points, multiplicateurs, Enregistrer le programme). À recadrer/zoomer en 9:16 et raccourcir à ~14s (2-3 gestes utiles + Enregistrer) au montage. |
+| RÉSULTAT (HeyGen) | 25–33s | ⚠️ reçu, à refaire | `assets/heygen/resultat-v1-a-refaire.mp4` — voir "Problème sur le clip HeyGen reçu" ci-dessous |
 | PUNCHLINE | 33–37s | ✅ prêt | `../motion/renders/punchline-outro.mp4` |
 
 ## Prompt Higgsfield à générer manuellement
@@ -42,6 +42,29 @@ sont ajoutés au montage. Aucun logo, aucun texte incrusté.
 Script exact : « Tu ne perds pas des clients. Tu ne les reconnais pas. Le programme se
 déclenche à la première visite, et le deuxième passage arrive tout seul. »
 ```
+
+## Problème sur le clip HeyGen reçu (2026-08-09)
+
+`assets/heygen/resultat-v1-a-refaire.mp4` (1080×1920, 25fps, 7.56s) — le chef Mika dit bien
+le bon texte, la voix est bonne. Mais ce n'est pas un avatar "propre" comme demandé dans le
+plan :
+
+- Il ne parle que **~3 secondes** (« Tu ne perds pas des clients. Tu ne les reconnais
+  pas. »), puis le clip **coupe sur un template graphique générique** HeyGen pendant les
+  ~4,5s restantes : fond bleu, titre « FIDÉLITÉ AUTOMATIQUE », sous-titre « L'expérience
+  client réinventée », photo stock d'une femme avec une tablette (pas un vrai visuel
+  FoodEatUp), fin du texte incrustée dedans.
+- **Logo FoodEatUp et sous-titres brûlés à l'image** sur toute la durée — le plan les veut
+  ajoutés au montage, pas incrustés par HeyGen (pour rester dans notre propre habillage,
+  cohérent avec le carton HOOK/PUNCHLINE déjà fait).
+
+→ Ça vient du **type de génération choisi dans HeyGen Studio** : un mode "template/scene"
+plutôt qu'un export "avatar seul". Pour la vidéo 1 (et pareil pour les 9 suivantes), il
+faut régénérer en choisissant l'option **avatar seul / plan unique**, sans template de
+scène ni sous-titres/logo intégrés — juste Mika qui parle les 8 secondes pleines, cadrage
+buste, fond de cuisine flouté, comme décrit dans le script ci-dessus. C'est ce clip-là que
+je monterai avec nos propres sous-titres et notre propre logo (déjà faits dans
+`../motion/`).
 
 ## À déposer ici au fur et à mesure
 
