@@ -33,14 +33,16 @@
       "note": "10 personnages (Ail et Oignon comptés séparément) + 1 planche décor, générés et uploadés dans RapidoCMS le 2026-08-09. Ne jamais régénérer — repartir via images_to_image pour de nouvelles poses."
     },
     "ep-data": {
-      "status": "pending",
+      "status": "done",
       "description": "Chiffres réels FoodEatUp → variables {{...}}",
       "mcp": ["FoodEatUp (lecture)"],
+      "establishment_id": 26,
       "variables": {
-        "CA_MOIS": null,
-        "COUVERTS": null,
-        "RUPTURES_EVITEES": null
+        "CA_MOIS": "__SUPPRIMER__",
+        "COUVERTS": "__SUPPRIMER__",
+        "RUPTURES_EVITEES": "__SUPPRIMER__"
       },
+      "note": "finance_summary (01→09 août) renvoie 0€ facturé/encaissé — non représentatif (pos_revenue du jour = 174,10€, hors périmètre finance_summary). Aucun des 3 outils autorisés (finance_summary, get_daily_brief, list_low_stocks) ne fournit de vrai nombre de couverts. list_low_stocks ne donne que les ruptures ACTUELLES (22), pas les ruptures évitées — sémantique différente, donc non réutilisable. Décision : les 3 cartons sautent du motion design plutôt que d'afficher un chiffre non représentatif ou mal interprété (règle zéro chiffre inventé, CLAUDE.md).",
       "blocked_by": ["ep-refs"]
     },
     "ep-voix": {
