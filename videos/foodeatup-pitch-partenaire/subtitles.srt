@@ -1,0 +1,160 @@
+1
+00:00:00,000 --> 00:00:05,817
+Sur cette phrase, quatre logiciels viennent de s'exécuter.
+
+2
+00:00:05,897 --> 00:00:07,000
+Aucun clic.
+
+3
+00:00:07,000 --> 00:00:10,920
+Un restaurateur jongle avec dix logiciels qui ne se parlent pas.
+
+4
+00:00:11,000 --> 00:00:13,266
+Il y perd une à deux heures par jour,
+
+5
+00:00:13,346 --> 00:00:18,000
+et les appels qu'il ne décroche pas sont des commandes qu'il ne fera jamais.
+
+6
+00:00:18,000 --> 00:00:19,681
+FoodEatUp renverse le problème.
+
+7
+00:00:19,761 --> 00:00:23,502
+Via le protocole MCP, n'importe quelle IA — Claude, ChatGPT, Gemini —
+
+8
+00:00:23,582 --> 00:00:25,263
+pilote directement le logiciel.
+
+9
+00:00:25,343 --> 00:00:28,000
+Elle ne recommande pas une action : elle la fait.
+
+10
+00:00:28,000 --> 00:00:28,990
+Une phrase.
+
+11
+00:00:29,070 --> 00:00:31,483
+La promotion bascule en caisse.
+
+12
+00:00:31,563 --> 00:00:34,210
+Les posts partent sur les réseaux.
+
+13
+00:00:34,290 --> 00:00:36,780
+Le SMS atteint les bons clients.
+
+14
+00:00:36,860 --> 00:00:39,896
+Et les commandes entrantes sont prises.
+
+15
+00:00:39,976 --> 00:00:42,000
+Sans ouvrir un seul écran.
+
+16
+00:00:42,000 --> 00:00:45,681
+Cent quatre-vingt-cinq outils, onze domaines.
+
+17
+00:00:45,761 --> 00:00:49,114
+De la réservation à la clôture de caisse,
+
+18
+00:00:49,194 --> 00:00:52,221
+du coût matière au plan de nettoyage.
+
+19
+00:00:52,301 --> 00:00:55,000
+Le métier entier, pas une brique.
+
+20
+00:00:55,000 --> 00:00:57,706
+Autour du cœur restaurant, trois logiciels :
+
+21
+00:00:57,786 --> 00:01:01,599
+la relation client, la communication, les ressources humaines.
+
+22
+00:01:01,679 --> 00:01:05,000
+Plus de trois cents outils, pilotés par un seul agent.
+
+23
+00:01:05,000 --> 00:01:07,327
+Une IA autonome doit être une IA sûre.
+
+24
+00:01:07,407 --> 00:01:11,021
+Toute action irréversible exige une confirmation explicite.
+
+25
+00:01:11,101 --> 00:01:16,000
+Et la conformité française est inscrite dans le système, pas ajoutée après coup.
+
+26
+00:01:16,000 --> 00:01:17,513
+Deux cents briques développées.
+
+27
+00:01:17,593 --> 00:01:19,350
+Quinze projets livrés, dont la SNCF.
+
+28
+00:01:19,430 --> 00:01:22,504
+La plateforme tourne déjà en marque blanche en Inde et à Dubaï.
+
+29
+00:01:22,584 --> 00:01:26,000
+Et nos choix techniques sont validés par les programmes AWS et NVIDIA.
+
+30
+00:01:26,000 --> 00:01:28,737
+Trois façons de travailler ensemble.
+
+31
+00:01:28,817 --> 00:01:32,086
+Intégrez nos MCP dans votre propre produit.
+
+32
+00:01:32,166 --> 00:01:35,739
+Distribuez la suite complète sous votre marque.
+
+33
+00:01:35,819 --> 00:01:40,000
+Ou prescrivez-la à vos clients, et laissez-nous opérer.
+
+34
+00:01:40,000 --> 00:01:41,992
+Le modèle est clair et récurrent.
+
+35
+00:01:42,072 --> 00:01:47,385
+Une licence de marque blanche, une exclusivité régionale, ou une commission sur l’usage.
+
+36
+00:01:47,465 --> 00:01:50,000
+Vous choisissez votre niveau d'engagement.
+
+37
+00:01:50,000 --> 00:01:53,264
+La fenêtre est ouverte, et elle ne le restera pas.
+
+38
+00:01:53,344 --> 00:01:57,000
+Personne ne domine encore l'agent vocal en restauration.
+
+39
+00:01:57,000 --> 00:01:58,390
+FoodEatUp.
+
+40
+00:01:58,470 --> 00:02:00,000
+Parlons-en.
+
