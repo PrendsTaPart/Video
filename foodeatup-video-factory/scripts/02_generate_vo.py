@@ -125,6 +125,18 @@ def tts_http(text: str, dst: Path, voice: dict, speed: float) -> None:
         dst.write_bytes(resp.read())
 
 
+def _registry(data: dict | None = None) -> dict:
+    """Registre des VO déjà normalisées (build/vo_normalized.json)."""
+    p = ROOT / "build" / "vo_normalized.json"
+    if data is not None:
+        p.parent.mkdir(parents=True, exist_ok=True)
+        p.write_text(json.dumps(data, indent=2) + "\n", encoding="utf-8")
+        return data
+    if p.exists():
+        return json.loads(p.read_text(encoding="utf-8"))
+    return {}
+
+
 def normalize_vo(path: Path) -> None:
     """loudnorm I=-16 TP=-1.5 LRA=11 (SPEC §2.4), en place."""
     tmp = path.with_suffix(".norm.mp3")
@@ -140,6 +152,16 @@ def produce(name: str, text: str, target: float, dst: Path, voice: dict,
              "target_s": target, "chars": len(text)}
 
     if dst.exists() and not force:
+        # Un MP3 déposé à la main (appels MCP) n'est pas encore normalisé :
+        # on le fait une fois et on l'inscrit au registre, pour ne jamais
+        # empiler deux passes de loudnorm sur le même fichier.
+        reg = _registry()
+        key = str(dst.relative_to(ROOT))
+        if key not in reg:
+            normalize_vo(dst)
+            reg[key] = round(dst.stat().st_size)
+            _registry(reg)
+            entry["normalise"] = True
         entry["status"] = "skip"
         entry["duration_s"] = round(ff.duration(dst), 3)
         entry["delta_pct"] = round(
@@ -160,6 +182,9 @@ def produce(name: str, text: str, target: float, dst: Path, voice: dict,
     while True:
         tts_http(text, dst, voice, speed)
         normalize_vo(dst)
+        r = _registry()
+        r[str(dst.relative_to(ROOT))] = dst.stat().st_size
+        _registry(r)
         got = ff.duration(dst)
         delta = (got - target) / target
         entry.update(duration_s=round(got, 3), speed=round(speed, 3),

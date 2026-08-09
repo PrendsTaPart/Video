@@ -84,5 +84,17 @@ lisibles une fois tronqués à la durée du master 30 s.
 
 - ✅ scripts 00 → 04, testés de bout en bout
 - ✅ QA 7 tests, bloquante
-- ⏳ hooks : 3/30 déposés (EP01, EP03, EP11)
-- ⏳ voix off : `config/voices.json` à renseigner (voir `SPEC.md` §2)
+- ✅ voix off : **Olivier** (`rgFgMEXfdGwXCYio7I0J`, voix française native déjà
+  utilisée dans `hero-video/`) — 7 blocs communs + punchlines, normalisés
+- ⏳ hooks : **8/30** récupérés depuis Higgsfield
+  (EP01, EP02, EP03, EP04, EP06, EP09, EP10, EP11 ; une 2ᵉ prise d'EP04 est
+  rangée dans `assets/hooks/alt/`)
+- ⏳ bloc D : les sous-plans `kds` et `marketing` sont des **substituts** pris
+  dans les captures du dépôt — les vrais tutos sont sur le Drive, IDs notés dans
+  `config/demo_cuts.json`
+
+### Mapping hook ↔ épisode
+
+Établi à partir des prompts Higgsfield eux-mêmes, pas d'une hypothèse sur
+l'image : `9b79bede` (scooter + dos d'âne) est EP11, tandis que `b5d50c1e`
+(skateboard) est EP02 — les deux montrent un livreur qui tombe.

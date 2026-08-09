@@ -1,0 +1,14 @@
+{
+  "_source": "voice_id vérifié : voix française native déjà retenue dans hero-video/ (Olivier), après avoir écarté les presets anglais Arnold/Rachel qui gardaient un accent perceptible en eleven_multilingual_v2. Choisi par l'humain le 2026-08-09.",
+  "voice_name": "Olivier",
+  "voice_id": "rgFgMEXfdGwXCYio7I0J",
+  "model_id": "eleven_multilingual_v2",
+  "language": "fr",
+  "settings": {
+    "stability": 0.45,
+    "similarity_boost": 0.75,
+    "style": 0.35,
+    "use_speaker_boost": true
+  },
+  "speed": 1.05
+}

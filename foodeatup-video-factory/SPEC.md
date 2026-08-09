@@ -76,12 +76,16 @@ suivant, éditables à la main) — le montage est donc reproductible.
 
 **Écart majeur.** Le brief prévoyait `crop` centré vers 1080×1920. Les tutos sont
 des captures **1920×828 (2,3:1)** : un recadrage 9:16 n'en garde que ~24 % de la
-largeur et l'interface devient illisible — ni le bouton, ni son résultat.
+largeur et l'interface devient illisible — ni le bouton cliqué, ni son résultat.
 
-Implémenté : la capture est zoomée (×1,6 par défaut) sur la zone d'action, puis
-posée **en bande pleine largeur** sur le fond crème de la charte, centrée dans le
-cadre. Le texte de l'UI reste à une échelle proche du 1:1, et la bande tient dans
-le carré central donc le recadrage 1:1 LinkedIn ne coupe rien.
+Implémenté : **plein cadre sans jamais couper la capture**. Elle est affichée
+entière, à la largeur du cadre, par-dessus un fond qui remplit tout l'écran — la
+même image agrandie pour couvrir, floutée (`gblur=sigma=42`) et légèrement
+assombrie. Aucune zone vide, aucun contenu perdu.
+
+`zoom` reste à **1,0** dans `config/demo_cuts.json`. Une valeur > 1 rogne la
+capture autour de la zone d'action détectée : à n'utiliser que si l'UI d'un tuto
+donné est vraiment trop petite, en connaissance de cause.
 
 ### Garde-fou
 
@@ -192,6 +196,12 @@ Quatre sources : son diégétique du hook, VO commune, punchline, lit musical.
 
 - La piste VO est construite par `adelay` + `amix` : chaque bloc à sa place,
   punchline à `punch_at_s`.
+- **VO plus longue que son bloc** : elle est **avancée** pour finir avec le bloc,
+  au lieu d'être tronquée par le `-t` final. Mordre sur la fin du bloc précédent
+  s'entend beaucoup moins qu'une phrase coupée en plein mot (règle « ne jamais
+  couper une VO »). Loggé en `INFO VO_AVANCEE`.
+  Concerne surtout `E-closing-45` : 7,65 s mesurées pour un bloc de 5,0 s — la
+  cible de 4,8 s du brief était irréaliste pour ce texte.
 - Le lit musical est bouclé puis calé à **−22 LUFS** (loudnorm 2 passes, mis en
   cache par durée).
 - `sidechaincompress` baisse la musique **et** le son diégétique dès que la voix

@@ -1,5 +1,5 @@
 {
-  "_comment": "Points d'entrée et cadrage des 4 sous-plans du bloc D. Détectés automatiquement par 01_fetch_assets.py puis figés ici pour que le montage soit reproductible. Éditables à la main : --redetect les recalcule.",
+  "_comment": "Points d'entrée et cadrage des 4 sous-plans du bloc D. Détectés automatiquement par 01_fetch_assets.py puis figés ici pour que le montage soit reproductible. zoom=1.0 : la capture est affichée ENTIÈRE, sans rognage, sur un fond flou plein cadre. Éditables à la main ; --redetect recalcule les points d'entrée.",
   "_provenance": {
     "site_web": "OK — Module Mon Site, création de site par IA",
     "caisse_pos": "OK — borne de commande",
@@ -11,7 +11,7 @@
     "start": 64.81,
     "focus_x": 0.833,
     "focus_y": 0.5,
-    "zoom": 1.35,
+    "zoom": 1.0,
     "detected": true
   },
   "caisse_pos": {
@@ -19,7 +19,7 @@
     "start": 11.06,
     "focus_x": 0.5,
     "focus_y": 0.833,
-    "zoom": 1.35,
+    "zoom": 1.0,
     "detected": true
   },
   "kds": {
@@ -27,7 +27,7 @@
     "start": 47.65,
     "focus_x": 0.167,
     "focus_y": 0.5,
-    "zoom": 1.35,
+    "zoom": 1.0,
     "detected": true,
     "substitut": true
   },
@@ -36,7 +36,7 @@
     "start": 13.54,
     "focus_x": 0.833,
     "focus_y": 0.5,
-    "zoom": 1.35,
+    "zoom": 1.0,
     "detected": true,
     "substitut": true
   }

@@ -124,38 +124,48 @@ def find_focus(src: Path, start: float, want: float) -> tuple[float, float]:
 
 def cut_demo(src: Path, dst: Path, cut: dict, *, width: int, height: int,
              fps: int, seconds: float) -> None:
-    """Extrait le sous-plan en BANDE, zoomée sur la zone d'action.
+    """Extrait le sous-plan en PLEIN CADRE, sans jamais couper la capture.
 
-    Les tutos sont des captures d'écran très larges (1920×828, soit 2,3:1).
-    Les recadrer en 9:16 ne garderait que ~24 % de la largeur : l'interface
-    devient illisible, on ne voit plus ni le bouton cliqué ni son résultat.
+    Les tutos sont des captures très larges (1920×828, soit 2,3:1). Les recadrer
+    en 9:16 n'en garderait que ~24 % de la largeur : on perdrait le bouton
+    cliqué comme son résultat.
 
-    On garde donc la capture sur toute la largeur du cadre, en bande centrée
-    sur le fond crème de la charte, avec un zoom sur la zone d'action détectée.
-    Le texte de l'UI reste à une échelle proche du 1:1, et la bande tient dans
-    le carré central — le recadrage 1:1 LinkedIn ne coupe rien.
+    La capture est donc affichée **entière**, à la largeur du cadre, par-dessus
+    un fond qui remplit tout l'écran : la même image agrandie pour couvrir et
+    floutée. Rien n'est coupé, et il ne reste aucune zone vide.
+
+    `zoom` > 1 est possible mais rogne la capture — laisser à 1,0 par défaut.
     """
     fx, fy = cut["focus_x"], cut["focus_y"]
-    zoom = cut.get("zoom", 1.6)
-    band = round(height * (0.42 if height > width else 0.64))
+    zoom = float(cut.get("zoom", 1.0))
     sw = round(width * zoom)
+    if sw % 2:
+        sw += 1
+
+    fg = f"[fg]scale={sw}:-2:flags=lanczos"
+    if zoom > 1.0:
+        # rognage optionnel, recentré sur la zone d'action détectée
+        fg += (f",crop='min(iw\\,{width})':'min(ih\\,{height})':"
+               f"'clip(iw*{fx}-{width}/2\\,0\\,max(0\\,iw-{width}))':"
+               f"'clip(ih*{fy}-{height}/2\\,0\\,max(0\\,ih-{height}))'")
+    fg += "[fgs]"
 
     vf = (
-        # 1) la source occupe `zoom` fois la largeur du cadre
-        f"scale={sw}:-2:flags=lanczos,"
-        # 2) fenêtre large du cadre, haute de la bande, centrée sur l'action
-        f"crop='min(iw\\,{width})':'min(ih\\,{band})':"
-        f"'clip(iw*{fx}-{width}/2\\,0\\,max(0\\,iw-{width}))':"
-        f"'clip(ih*{fy}-{band}/2\\,0\\,max(0\\,ih-{band}))',"
-        # 3) posée sur le fond de marque, au centre du cadre
-        f"pad={width}:{height}:(ow-iw)/2:(oh-ih)/2:color={BAND_BG},"
-        f"fps={fps},format=yuv420p"
+        "[0:v]split=2[bgsrc][fg];"
+        # fond : la capture agrandie pour couvrir le cadre, floutée et assombrie
+        f"[bgsrc]scale={width}:{height}:force_original_aspect_ratio=increase,"
+        f"crop={width}:{height},gblur=sigma=42,eq=brightness=-0.07[bgb];"
+        f"{fg};"
+        # capture entière, centrée, par-dessus le fond
+        f"[bgb][fgs]overlay=(W-w)/2:(H-h)/2:format=auto,"
+        f"fps={fps},format=yuv420p[out]"
     )
     dst.parent.mkdir(parents=True, exist_ok=True)
     ff.ffmpeg([
         "-ss", f"{cut['start']:.3f}", "-i", str(src),
         *ff.exact_cut(seconds, fps),
-        "-vf", vf, "-an", *ff.VCODEC, *ff.TIMESCALE, str(dst),
+        "-filter_complex", vf, "-map", "[out]", "-an",
+        *ff.VCODEC, *ff.TIMESCALE, str(dst),
     ])
 
 

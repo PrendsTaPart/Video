@@ -254,10 +254,21 @@ def build_vo_track(ep: dict, fmt: dict, tag: str, total: float) -> Path | None:
     for bid, rel in fmt["vo"].items():
         p = ROOT / rel
         blk = next(x for x in fmt["blocks"] if x["id"] == bid)
-        if p.exists():
-            placed.append((p, blk["start"]))
-        else:
+        if not p.exists():
             ff.log(f"  WARN MISSING_VO {rel}", err=True)
+            continue
+        at = blk["start"]
+        d = ff.duration(p)
+        over = (at + d) - blk["end"]
+        if over > 0.01:
+            # La VO déborde de son bloc : on l'avance pour qu'elle finisse
+            # avec le bloc, plutôt que de la laisser couper en plein mot par
+            # le `-t` final. Elle mord sur la fin du bloc précédent, ce qui
+            # s'entend beaucoup moins qu'une phrase tronquée.
+            at = max(0.0, at - over)
+            ff.log(f"  INFO VO_AVANCEE {bid} {rel} : {d:.2f}s pour un bloc de "
+                   f"{blk['end'] - blk['start']:.2f}s → départ à {at:.2f}s")
+        placed.append((p, at))
     punch = ROOT / "vo" / "punch" / f"{ep['id']}.mp3"
     if punch.exists():
         placed.append((punch, fmt["punch_at_s"]))
