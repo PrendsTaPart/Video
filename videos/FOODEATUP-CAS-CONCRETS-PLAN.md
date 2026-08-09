@@ -23,7 +23,7 @@ Chaque vidéo suit exactement la même mécanique, ~36 secondes, vertical 9:16 :
 3 – 11 s   LE PROBLÈME   Généré sur Higgsfield (ou réutilisé, voir règle ci-dessous). 8 s. Muet, ambiance seule.
 11 – 25 s  LA SOLUTION   Capture écran FoodEatUp récupérée du Drive. 14 s.
 25 – 33 s  LE RÉSULTAT   Avatar HeyGen face caméra. 8 s. Il parle.
-33 – 36 s  PUNCHLINE     Carton logo.
+33 – 37 s  PUNCHLINE     Carton logo. 4 s (voir ci-dessous).
 ```
 
 **Pourquoi ce découpage marche sur TikTok** : le hook chiffré arrête le pouce, le problème
@@ -31,8 +31,24 @@ crée l'identification, la capture écran apporte la preuve — c'est le seul mo
 montre le produit —, et l'avatar humanise la conclusion. Aucun de ces quatre blocs n'est
 décoratif.
 
-**Punchline fixe sur les 10** : *« FoodEatUp. Ton restaurant, en entier. »* Une punchline
-unique répétée dix fois s'installe ; dix punchlines différentes ne s'installent jamais.
+**Punchline fixe sur les 10** (mise à jour 2026-08-09, produite dans
+`foodeatup-cas-concrets/motion/`) :
+
+> FoodEatUp.
+> Avant. Pendant. Après le service.
+> Plus de chiffre. Moins de gaspillage.
+
+Distillée du positionnement complet de Michael (« le logiciel qui gère ton resto avant
+pendant et après le service et qui fait communiquer les données pour augmenter ton chiffre
+d'affaires et réduire ton gaspillage et optimiser ton équipe tout en gérant tes ventes et
+ton HACCP ») — gardé : le cycle complet (avant/pendant/après) qui est la promesse la plus
+différenciante et la plus courte à dire, et les deux résultats les plus chiffrables
+(chiffre d'affaires ↑, gaspillage ↓). Volontairement coupé de la punchline : équipe
+optimisée, ventes et HACCP gérés — ces bénéfices-là sont déjà **prouvés par les vidéos
+elles-mêmes** (la vidéo 5 démontre l'équipe, la vidéo 6 démontre HACCP, etc.), la punchline
+n'a donc pas besoin de les redire, elle doit rester courte pour s'installer en étant répétée
+dix fois. Si les cinq bénéfices doivent absolument être dans le carton final, dis-le et je
+rallonge.
 
 ---
 

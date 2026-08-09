@@ -56,9 +56,9 @@
         position: absolute;
         left: 0;
         right: 0;
-        top: 61%;
+        top: 60%;
         text-align: center;
-        padding: 0 90px;
+        padding: 0 84px;
       }
       #tagline .line1 {
         font-weight: 700;
@@ -66,10 +66,16 @@
         color: #0f1a23;
       }
       #tagline .line2 {
-        margin-top: 14px;
+        margin-top: 22px;
         font-weight: 700;
-        font-size: 58px;
+        font-size: 46px;
         color: #007bff;
+      }
+      #tagline .line3 {
+        margin-top: 18px;
+        font-weight: 700;
+        font-size: 40px;
+        color: #0f1a23;
       }
       #tagline .word {
         display: inline-block;
@@ -92,25 +98,29 @@
       id="root"
       data-composition-id="punchline-outro"
       data-start="0"
-      data-duration="3"
+      data-duration="4"
       data-width="1080"
       data-height="1920"
     >
-      <div id="bg" class="clip" data-start="0" data-duration="3" data-track-index="0"></div>
+      <div id="bg" class="clip" data-start="0" data-duration="4" data-track-index="0"></div>
 
-      <div id="lockup" class="clip" data-start="0" data-duration="3" data-track-index="1">
+      <div id="lockup" class="clip" data-start="0" data-duration="4" data-track-index="1">
         <img src="assets/brand/foodeatup-logo-mascot.png" alt="FoodEatUp" />
       </div>
 
-      <div id="underline" class="clip" data-start="0" data-duration="3" data-track-index="2"></div>
+      <div id="underline" class="clip" data-start="0" data-duration="4" data-track-index="2"></div>
 
-      <div id="tagline" class="clip" data-start="0" data-duration="3" data-track-index="3">
+      <div id="tagline" class="clip" data-start="0" data-duration="4" data-track-index="3">
         <div class="line1">
           <span class="word">FoodEatUp.</span>
         </div>
         <div class="line2">
-          <span class="word">Ton</span> <span class="word">restaurant,</span>
-          <span class="word">en</span> <span class="word">entier.</span>
+          <span class="word">Avant.</span> <span class="word">Pendant.</span>
+          <span class="word">Après&nbsp;le&nbsp;service.</span>
+        </div>
+        <div class="line3">
+          <span class="word">Plus&nbsp;de&nbsp;chiffre.</span>
+          <span class="word">Moins&nbsp;de&nbsp;gaspillage.</span>
         </div>
       </div>
     </div>
@@ -131,15 +141,16 @@
       // le trait orange souligne le passage logo -> texte
       tl.to("#underline", { xPercent: -50, scaleX: 1, duration: 0.35, ease: "power2.out" }, 0.55);
 
-      // la punchline arrive mot par mot
+      // la punchline arrive mot par mot, ligne par ligne
       tl.to("#tagline .line1 .word", { opacity: 1, y: 0, duration: 0.35, ease: "back.out(1.6)" }, 0.65);
-      tl.to("#tagline .line2 .word", { opacity: 1, y: 0, duration: 0.35, stagger: 0.07, ease: "back.out(1.6)" }, 0.85);
+      tl.to("#tagline .line2 .word", { opacity: 1, y: 0, duration: 0.35, stagger: 0.12, ease: "back.out(1.6)" }, 0.9);
+      tl.to("#tagline .line3 .word", { opacity: 1, y: 0, duration: 0.35, stagger: 0.12, ease: "back.out(1.6)" }, 1.55);
 
-      // très léger souffle continu sur le logo pendant le hold
+      // très léger souffle continu sur le logo pendant le hold (le temps de lire les 3 lignes)
       tl.to(
         "#lockup",
-        { xPercent: -50, yPercent: -50, scale: 1.03, duration: 1.0, ease: "sine.inOut", yoyo: true, repeat: 1 },
-        1.5
+        { xPercent: -50, yPercent: -50, scale: 1.03, duration: 1.2, ease: "sine.inOut", yoyo: true, repeat: 1 },
+        2.1
       );
 
       window.__timelines["punchline-outro"] = tl;

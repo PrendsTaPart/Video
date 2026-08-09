@@ -11,7 +11,7 @@ façon. Projet HyperFrames autonome (`npx hyperframes init . --example blank`), 
 | Fichier | Rôle | Durée |
 |---|---|---|
 | `renders/hook-intro.mp4` | Carton HOOK, instancié avec le chiffre de la **vidéo 1** (« 250 couverts aujourd'hui. 10 clients fidèles. ») | 3.0 s |
-| `renders/punchline-outro.mp4` | Carton PUNCHLINE fixe, identique sur les 10 vidéos (« FoodEatUp. Ton restaurant, en entier. ») | 3.0 s |
+| `renders/punchline-outro.mp4` | Carton PUNCHLINE fixe, identique sur les 10 vidéos (« FoodEatUp. Avant. Pendant. Après le service. Plus de chiffre. Moins de gaspillage. ») | 4.0 s |
 | `thumbnail/cover-hook-v1.png` | Thumbnail/cover TikTok — frame extraite du hook vidéo 1, texte posé | — |
 | `thumbnail/cover-punchline.png` | Frame de secours (logo + tagline posés), si un thumbnail neutre est préféré | — |
 
