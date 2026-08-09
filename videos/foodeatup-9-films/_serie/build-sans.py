@@ -39,6 +39,28 @@ STUDIO = ICI.parents[2] / "studio-video"
 COMPO = STUDIO / "compositions"
 AUDIO = STUDIO / "assets" / "audio"
 
+# Ambiance et voix.
+#
+# Michael a trouvé musique et bruitages trop présents. Un facteur unique plutôt
+# que huit réglages retouchés un par un : la balance entre les bruitages avait
+# été travaillée, il n'y avait pas lieu de la défaire, seulement de passer
+# l'ensemble sous la voix. 0,25 vaut −12 dB.
+#
+# ⚠️ Ce facteur doit rester identique à celui de `adoucir-ambiance.py`, qui a
+# servi à corriger les neuf films déjà rendus sans les re-rendre. S'ils
+# divergent, un nouveau rendu réintroduira les anciens niveaux sans que
+# personne le remarque.
+AMBIANCE = 0.25
+
+# La voix ne bouge pas. C'est justement pour mieux l'entendre qu'on baisse le
+# reste : y toucher défairait le gain obtenu.
+#
+# Ne pas y reporter le `GAIN_VOIX = 1.26` de `adoucir-ambiance.py`. Ce 1,26
+# compense une perte propre à la reconstruction du mixage par ffmpeg — le
+# moteur de rendu, lui, applique déjà ce gain. Le déclarer ici l'appliquerait
+# deux fois et sortirait un rendu 2 dB au-dessus des neuf films existants.
+VOIX = 1
+
 HOOK = 4.20
 
 ORCHESTRATEUR = """<!doctype html>
@@ -151,22 +173,26 @@ def construire(film, spec):
            "apres": "lit-apres"}[spec["phase"]]
 
     lignes = [
+        # Marqueur lu par `adoucir-ambiance.py`, qui refuse alors de tourner :
+        # il multiplie les volumes déclarés par le même facteur, donc l'appliquer
+        # sur une composition qui le porte déjà donnerait −24 dB au lieu de −12.
+        f'      <!-- ambiance-adoucie={AMBIANCE} -->',
         "      <!-- Voix off. Le fichier porte déjà ses silences : les segments",
         "           ont été posés à leur instant exact par vo-sans.py, donc la",
         "           piste commence à 0 et rien n'est à recaler ici. -->",
         f'      <audio id="el-vo" src="assets/audio/{film}-vo.mp3" data-start="0"'
-        f' data-duration="{total:.2f}" data-track-index="10" data-volume="1"></audio>',
+        f' data-duration="{total:.2f}" data-track-index="10" data-volume="{VOIX}"></audio>',
         "",
         "      <!-- Lit non résolu : il tourne sans jamais retomber sur sa",
         "           fondamentale, et il s'arrête net à l'entrée du carton final. -->",
         f'      <audio id="sfx-lit" src="assets/audio/sans/{lit}.mp3" data-start="0"'
-        f' data-duration="{pl_debut:.2f}" data-track-index="11" data-volume="0.42"></audio>',
+        f' data-duration="{pl_debut:.2f}" data-track-index="11" data-volume="{0.42 * AMBIANCE:.4f}"></audio>',
         "",
         "      <!-- La cadence. Seul accord qui se referme de tout le film, et",
         "           c'est lui l'argument (NOTES §6.3). -->",
         f'      <audio id="sfx-resolution" src="assets/audio/sans/resolution.mp3"'
         f' data-start="{pl_debut:.2f}" data-duration="{pl_duree:.2f}"'
-        ' data-track-index="11" data-volume="0.62"></audio>',
+        f' data-track-index="11" data-volume="{0.62 * AMBIANCE:.4f}"></audio>',
         "",
         "      <!-- Une page tournée à chaque fenêtre d'outil qui apparaît. -->",
     ]
@@ -181,7 +207,7 @@ def construire(film, spec):
             lignes.append(
                 f'      <audio id="sfx-papier-{n:02d}" src="assets/audio/sans/papier.mp3"'
                 f' data-start="{at:.2f}" data-duration="0.90"'
-                f' data-track-index="{12 + n}" data-volume="0.85"></audio>')
+                f' data-track-index="{12 + n}" data-volume="{0.85 * AMBIANCE:.4f}"></audio>')
 
     lignes += ["",
                "      <!-- Une frappe par aller-retour du curseur : c'est le bruit",
@@ -191,17 +217,17 @@ def construire(film, spec):
         lignes.append(
             f'      <audio id="sfx-frappe-{k + 1:02d}" src="assets/audio/sans/frappe.mp3"'
             f' data-start="{at:.2f}" data-duration="0.52"'
-            f' data-track-index="{20 + k % 2}" data-volume="0.30"></audio>')
+            f' data-track-index="{20 + k % 2}" data-volume="{0.30 * AMBIANCE:.4f}"></audio>')
         lignes.append(
             f'      <audio id="sfx-clic-{k + 1:02d}" src="assets/audio/sans/clic-mat.mp3"'
             f' data-start="{at + 0.58:.2f}" data-duration="0.52"'
-            f' data-track-index="{22 + k % 2}" data-volume="0.26"></audio>')
+            f' data-track-index="{22 + k % 2}" data-volume="{0.26 * AMBIANCE:.4f}"></audio>')
 
     lignes += ["",
                "      <!-- Le compteur tombe sur un souffle de machine qui s'arrête. -->",
                f'      <audio id="sfx-soupir" src="assets/audio/sans/soupir-machine.mp3"'
                f' data-start="{b[5]["debut"] + 0.35:.2f}" data-duration="1.65"'
-               ' data-track-index="24" data-volume="0.18"></audio>']
+               f' data-track-index="24" data-volume="{0.18 * AMBIANCE:.4f}"></audio>']
 
     (COMPO / f"{film}.html").write_text(
         ORCHESTRATEUR.format(film=film, total=f"{total:.2f}",
