@@ -26,9 +26,10 @@
         object-fit: cover;
       }
 
-      /* Fond du segment SOLUTION — élément MINUTÉ à part entière (data-start/duration),
-         jamais un wrapper non minuté : un wrapper sans timing est peint sur toute la durée
-         de la composition (bug constaté : il recouvrait HOOK et PROBLÈME). */
+      /* Segment SOLUTION+RÉSULTAT fusionné : avatar HeyGen en haut qui présente,
+         logiciel en bas. Chaque élément est un clip MINUTÉ à part entière (data-start/
+         duration), jamais un wrapper non minuté (bug déjà rencontré : un wrapper sans
+         timing est peint sur toute la durée de la composition). */
       #solution-bg {
         position: absolute;
         inset: 0;
@@ -36,34 +37,36 @@
         height: 1920px;
         background: radial-gradient(120% 70% at 50% 0%, #ffffff 0%, #fcf9e6 55%, #f4efd2 100%);
       }
-      /* Logiciel affiché en pleine largeur, intégralement, sans recadrage ni coupe
-         (demande explicite : "ne le coupe pas"), centré verticalement à l'écran. */
-      #solution-video {
+      /* Avatar en haut : recadré (object-fit: cover) sur sa propre boîte, buste + visage,
+         pas de déformation. */
+      #solution-avatar {
         position: absolute;
-        top: 727.1px;
+        top: 0;
         left: 0;
         width: 1080px;
-        height: 465.75px;
-        box-shadow: 0 18px 40px rgba(15, 26, 35, 0.18);
+        height: 1250px;
+        object-fit: cover;
+        object-position: 50% 12%;
       }
-      /* Logo FoodEatUp en haut de l'écran — respire en continu pour garder de la vie. */
-      #solution-logo {
-        position: absolute;
-        left: 50%;
-        top: 110px;
-        width: 420px;
-        height: auto;
-        filter: drop-shadow(0 6px 18px rgba(15, 26, 35, 0.12));
-      }
-      /* Trait d'accent sous le logiciel. */
+      /* Trait d'accent entre l'avatar et le logiciel. */
       #solution-accent {
         position: absolute;
         left: 50%;
-        top: 1233px;
+        top: 1290px;
         width: 96px;
         height: 6px;
         background: #ffa500;
         border-radius: 6px;
+      }
+      /* Logiciel en bas, pleine largeur, intégralement, sans recadrage ni coupe
+         (demande explicite : "ne le coupe pas"). */
+      #solution-video {
+        position: absolute;
+        top: 1350px;
+        left: 0;
+        width: 1080px;
+        height: 465.75px;
+        box-shadow: 0 18px 40px rgba(15, 26, 35, 0.18);
       }
     </style>
   </head>
@@ -72,7 +75,7 @@
       id="root"
       data-composition-id="v01-fidelite"
       data-start="0"
-      data-duration="36.3"
+      data-duration="29"
       data-width="1080"
       data-height="1920"
     >
@@ -110,10 +113,10 @@
         data-volume="0.6"
       ></audio>
 
-      <!-- SOLUTION (capture écran) 11-25s : fenêtre 14-28s de la source, pleine largeur,
-           aucun recadrage. Silencieuse (capture d'écran ~ -91dB, pas de son exploitable).
-           Fond + logiciel + accents sont 3 clips minutés SIBLINGS (pas de wrapper non
-           minuté) pour ne jamais déborder de leur fenêtre 11-25s. -->
+      <!-- SOLUTION + RÉSULTAT fusionnés, 11-25s (14s) : le logiciel est visible tout le
+           segment, l'avatar HeyGen apparaît par-dessus (en haut) et le présente à la voix,
+           depuis 11.3s pour sa durée réelle (7.298s), avant de laisser le logiciel seul
+           pour les dernières secondes. -->
       <div id="solution-bg" class="clip" data-start="11" data-duration="14" data-track-index="0"></div>
       <video
         id="solution-video"
@@ -127,43 +130,32 @@
         playsinline
       ></video>
       <div id="solution-accent" class="clip" data-start="11" data-duration="14" data-track-index="2"></div>
-      <img
-        id="solution-logo"
-        class="clip"
-        data-start="11"
-        data-duration="14"
-        data-track-index="3"
-        src="assets/brand/foodeatup-logo-mascot.png"
-        alt="FoodEatUp"
-      />
-
-      <!-- RÉSULTAT (HeyGen) 25-32.298s -->
       <video
-        id="seg-resultat"
-        class="clip full"
-        data-start="25"
+        id="solution-avatar"
+        class="clip"
+        data-start="11.3"
         data-duration="7.298"
-        data-track-index="0"
+        data-track-index="3"
         data-media-start="0"
         src="assets/heygen/resultat.mp4"
         muted
         playsinline
       ></video>
       <audio
-        id="seg-resultat-audio"
+        id="solution-avatar-audio"
         src="assets/heygen/resultat.mp4"
-        data-start="25"
+        data-start="11.3"
         data-duration="7.298"
         data-media-start="0"
         data-track-index="10"
         data-volume="1"
       ></audio>
 
-      <!-- PUNCHLINE 32.3-36.3s -->
+      <!-- PUNCHLINE 25-29s -->
       <video
         id="seg-punchline"
         class="clip full"
-        data-start="32.3"
+        data-start="25"
         data-duration="4"
         data-track-index="0"
         src="assets/punchline/punchline-outro.mp4"
@@ -175,37 +167,37 @@
     <script>
       window.__timelines = window.__timelines || {};
 
-      // Capture écran affichée en pleine largeur (1080px = largeur source complète, échelle
-      // 0.5625), intégralement, sans recadrage : rien n'est coupé. Centrée verticalement.
       gsap.set("#solution-video", { opacity: 0, y: -12 });
       gsap.set("#solution-accent", { xPercent: -50, scaleX: 0, transformOrigin: "50% 50%" });
-      gsap.set("#solution-logo", { xPercent: -50, scale: 0, rotate: -6, transformOrigin: "50% 50%" });
+      gsap.set("#solution-avatar", { opacity: 0, scale: 1.04, transformOrigin: "50% 0%" });
 
-      // Le timeline racine couvre les 36.3s de la vidéo entière : ces tweens sont donc
-      // positionnés au temps ABSOLU où le segment SOLUTION est actif (data-start="11").
+      // Le timeline racine couvre toute la composition (29s) : ces tweens sont donc
+      // positionnés au temps ABSOLU où le segment est actif (data-start="11").
       const SOLUTION_START = 11;
       const tl = gsap.timeline({ paused: true });
-      // le logo FoodEatUp claque en haut en premier
-      tl.to(
-        "#solution-logo",
-        { xPercent: -50, scale: 1, rotate: 0, duration: 0.6, ease: "back.out(2.2)" },
-        SOLUTION_START
-      );
+      // le logiciel s'installe en premier, discrètement, en fond
       tl.to(
         "#solution-video",
         { opacity: 1, y: 0, duration: 0.5, ease: "power2.out" },
-        SOLUTION_START + 0.3
+        SOLUTION_START
       );
       tl.to(
         "#solution-accent",
         { xPercent: -50, scaleX: 1, duration: 0.4, ease: "power2.out" },
-        SOLUTION_START + 0.8
+        SOLUTION_START + 0.4
       );
-      // respiration continue du logo pendant tout le hold, pour garder de la vie en haut
+      // l'avatar arrive juste avant de commencer à parler (11.3s)
       tl.to(
-        "#solution-logo",
-        { xPercent: -50, scale: 1.06, duration: 1.6, ease: "sine.inOut", yoyo: true, repeat: 6 },
-        SOLUTION_START + 1.4
+        "#solution-avatar",
+        { opacity: 1, scale: 1, duration: 0.4, ease: "power2.out" },
+        SOLUTION_START + 0.3
+      );
+      // et disparaît en douceur une fois sa réplique terminée (11.3 + 7.298 = 18.598s),
+      // pour laisser le logiciel seul le temps restant
+      tl.to(
+        "#solution-avatar",
+        { opacity: 0, duration: 0.5, ease: "power2.in" },
+        SOLUTION_START + 7.4
       );
 
       window.__timelines["v01-fidelite"] = tl;

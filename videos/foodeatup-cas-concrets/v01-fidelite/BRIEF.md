@@ -1,7 +1,14 @@
 # Vidéo 1 — 250 couverts, 10 fidèles
 
-**✅ Montage assemblé** — `renders/video-01-fidelite.mp4` (36.3s, 1080×1920, prêt à publier
+**✅ Montage assemblé** — `renders/video-01-fidelite.mp4` (29s, 1080×1920, prêt à publier
 sous réserve de validation de Michael). Voir "Montage final" en bas de fichier.
+
+**Restructuration 2026-08-09** : SOLUTION et RÉSULTAT fusionnés en un seul segment (11–25s)
+suite à la demande de Michael ("il manque la voix off qui présente le logiciel") — l'avatar
+HeyGen apparaît maintenant **par-dessus** le logiciel (en haut de l'écran) et le présente à
+la voix pendant 7.3s, puis disparaît en fondu pour laisser le logiciel seul jusqu'à la fin
+du segment. Le bloc RÉSULTAT autonome (25–32.3s) n'existe plus — durée totale de la vidéo
+ramenée de 36.3s à **29s**.
 
 **Bug corrigé (2026-08-09)** : le premier rendu masquait HOOK et PROBLÈME derrière un fond
 crème vide pendant 11s (Michael : "on ne voit pas la séquence Higgsfield", "il manque la
@@ -18,15 +25,14 @@ data-duration="14"`), plus de wrapper non minuté. Ajouté au passage : une anim
 l'ensemble des 36.3s (24 échantillons) + niveaux audio (`ffmpeg volumedetect`) avant
 renvoi — voir `snapshots/fix2-sheet-*.jpg`.
 
-Statut des 5 segments (2026-08-09) :
+Statut des 4 segments (2026-08-09, après fusion SOLUTION+RÉSULTAT) :
 
 | Segment | Durée réelle | Statut | Détail |
 |---|---|---|---|
 | HOOK | 0–3s | ✅ | `assets/hook/hook-intro.mp4` |
 | PROBLÈME (Higgsfield) | 3–11s | ✅ | `assets/higgsfield/probleme.mp4` — chef de dos, salle qui se vide, clients qui partent. 720×1280, 24fps ; fenêtre 0–8s utilisée. Palette plus chaude que demandé (grise/désaturée dans le prompt) mais cadrage et action conformes. |
-| SOLUTION (capture écran) | 11–25s | ✅ | `assets/solution/programme-fidelite.mp4` — écran "Fidélité & jeux" (points, multiplicateurs, Enregistrer le programme). Affiché **en pleine largeur (1080px), intégralement, sans recadrage, centré verticalement**, avec le **logo FoodEatUp en haut** (spring pop-in + respiration continue) et un trait accent orange sous le logiciel ; fenêtre source 14–28s. |
-| RÉSULTAT (HeyGen) | 25–32.3s | ✅ | `assets/heygen/resultat.mp4` (7.298s) — avatar seul, plan unique, sans template ni sous-titres/logo intégrés (2 tentatives précédentes rejetées, voir historique ci-dessous). |
-| PUNCHLINE | 32.3–36.3s | ✅ | `assets/punchline/punchline-outro.mp4` |
+| SOLUTION + RÉSULTAT (fusionnés) | 11–25s | ✅ | `assets/solution/programme-fidelite.mp4` en fond (pleine largeur, sans recadrage, centré en bas d'écran, fenêtre source 14–28s) + `assets/heygen/resultat.mp4` par-dessus en haut (11.3–18.598s, sa durée réelle de 7.298s) qui présente le logiciel à la voix, puis disparaît en fondu pour laisser le logiciel seul jusqu'à 25s. Trait accent orange entre les deux. |
+| PUNCHLINE | 25–29s | ✅ | `assets/punchline/punchline-outro.mp4` |
 
 ## Prompt Higgsfield à générer manuellement
 
@@ -87,18 +93,22 @@ je monterai avec nos propres sous-titres et notre propre logo (déjà faits dans
 ## Montage final
 
 `index.html` (projet HyperFrames autonome, 1080×1920, `npx hyperframes render . -q high -o
-renders/video-01-fidelite.mp4`) concatène les 5 segments en coupes franches (pas de
+renders/video-01-fidelite.mp4`) concatène les 4 segments en coupes franches (pas de
 crossfade, cohérent avec le rythme TikTok voulu) :
 
 - HOOK et PUNCHLINE : mp4 déjà rendus dans `../motion/`, copiés tels quels.
 - PROBLÈME : `assets/higgsfield/probleme.mp4`, fenêtre 0–8s, son d'ambiance à 0.6.
-- SOLUTION : `assets/solution/programme-fidelite.mp4` affiché pleine largeur (1080px = la
-  largeur source complète, échelle 0.5625, donc **aucun recadrage, rien n'est coupé**),
-  ancré en haut de l'écran, fond crème de marque en dessous, fenêtre source 14–28s (couvre
-  la configuration des règles, le clic sur "Enregistrer le programme" et la confirmation).
-  Un premier essai avec recadrage/pan serré a été refait suite à la demande explicite de
-  Michael de tout montrer sans couper.
-- RÉSULTAT : `assets/heygen/resultat.mp4` en plein cadre natif, son à volume 1.
+- SOLUTION+RÉSULTAT fusionnés (11–25s, 14s) :
+  - `assets/solution/programme-fidelite.mp4` en fond, affiché pleine largeur (1080px = la
+    largeur source complète, échelle 0.5625, donc **aucun recadrage, rien n'est coupé**),
+    centré en bas d'écran, fenêtre source 14–28s (configuration des règles, clic sur
+    "Enregistrer le programme", confirmation). Trois itérations avant cette version : d'abord
+    un recadrage/pan serré (refait car "ne le coupe pas"), puis logiciel plein cadre ancré en
+    haut avec juste le logo (refait car "il manque la voix off qui présente le logiciel").
+  - `assets/heygen/resultat.mp4` par-dessus, en haut de l'écran (recadré à la hauteur de sa
+    boîte, buste + visage, aucune déformation), actif 11.3–18.598s (sa durée réelle), fondu
+    entrée/sortie ; le logiciel reste seul le temps restant du segment.
+  - Trait accent orange entre les deux zones.
 - Vidéo muette + `<audio>` séparé pour les segments avec son (règle HyperFrames : la
   `<video>` reste `muted`, le son passe par un `<audio>` distinct même sur la même source).
 
