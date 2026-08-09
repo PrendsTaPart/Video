@@ -5,9 +5,11 @@
   "client": "FoodEatUp",
   "updated_at": null,
   "etape_0_marque": {
-    "status": "pending",
+    "status": "done",
     "brand_id": 7,
-    "note": "get_brand doit être appelé avant toute génération d'image. Si couleurs/logo sont null, proposer edit_brand (#147AFF / #0B0B0F / #FFFFFF + logo_url) et attendre validation humaine."
+    "note": "get_brand confirmé le 2026-08-09. La fiche a des couleurs/logo différents de CLAUDE.md (#147AFF/#0B0B0F/#FFFFFF) mais déjà renseignés (#1E9BF0/#1B2A41/#F7F9FC + logo existant). Décision utilisateur : garder l'existant tel quel, ne pas écraser via edit_brand.",
+    "couleurs_utilisees": "#1E9BF0,#1B2A41,#F7F9FC",
+    "logo": "logo_6a75daa80ba9d5.80309250.jpg"
   },
   "pipeline": {
     "ep-refs": {
