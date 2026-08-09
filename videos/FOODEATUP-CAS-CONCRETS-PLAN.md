@@ -12,6 +12,14 @@ fournis par Michael (logo mascotte, mark "8", logo carte bleue, photo réelle du
 déjà présents dans le dépôt (`studio-video/assets/brand/`), rien de nouveau à ajouter.
 Détail et ce qui reste à trancher : `foodeatup-cas-concrets/motion/README.md`.
 
+**Vidéo 1 (fidélité) montée et validée** : `foodeatup-cas-concrets/v01-fidelite/`.
+
+**Scripts voix off retravaillés** — les répliques "Script exact" ci-dessous (bloc HEYGEN)
+sont les versions d'origine. Une passe de réécriture "pitch parfait" (formule à 3 temps,
+rythme resserré) est dans `foodeatup-cas-concrets/SCRIPT.md` — utiliser les versions
+"Retravaillé" de ce fichier pour générer les vidéos 2 à 10 ; la vidéo 1 est verrouillée sur
+sa réplique d'origine (déjà enregistrée).
+
 ---
 
 ## Le format
