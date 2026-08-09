@@ -75,7 +75,7 @@
       id="root"
       data-composition-id="v01-fidelite"
       data-start="0"
-      data-duration="29"
+      data-duration="30.2"
       data-width="1080"
       data-height="1920"
     >
@@ -151,17 +151,27 @@
         data-volume="1"
       ></audio>
 
-      <!-- PUNCHLINE 25-29s -->
+      <!-- PUNCHLINE 25-30.2s : voix off qui lit la punchline et referme la vidéo. -->
       <video
         id="seg-punchline"
         class="clip full"
         data-start="25"
-        data-duration="4"
+        data-duration="5.2"
         data-track-index="0"
+        data-media-start="0"
         src="assets/punchline/punchline-outro.mp4"
         muted
         playsinline
       ></video>
+      <audio
+        id="seg-punchline-audio"
+        src="assets/punchline/punchline-outro.mp4"
+        data-start="25"
+        data-duration="5.2"
+        data-media-start="0"
+        data-track-index="10"
+        data-volume="1"
+      ></audio>
     </div>
 
     <script>
