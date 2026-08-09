@@ -1,0 +1,133 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+  </head>
+  <body>
+    <template>
+      <style>
+        @font-face { font-family: "Inter"; src: url("assets/fonts/Inter-400.woff2") format("woff2"); font-weight: 400; font-style: normal; font-display: block; }
+        @font-face { font-family: "Inter"; src: url("assets/fonts/Inter-500.woff2") format("woff2"); font-weight: 500; font-style: normal; font-display: block; }
+        @font-face { font-family: "Inter"; src: url("assets/fonts/Inter-600.woff2") format("woff2"); font-weight: 600; font-style: normal; font-display: block; }
+        @font-face { font-family: "Inter"; src: url("assets/fonts/Inter-700.woff2") format("woff2"); font-weight: 700; font-style: normal; font-display: block; }
+
+        #root {
+          position: relative;
+          width: 1920px;
+          height: 1080px;
+          overflow: hidden;
+          font-family: "Inter", sans-serif;
+          color: #3A3F45;
+        }
+        .fe-bg { position: absolute; inset: 0; background: #EDEEF0; }
+        .fe-stage { position: absolute; inset: 0; }
+
+        .fe-context { position: absolute; left: 0; right: 0; top: 130px; text-align: center; font-size: 30px; font-weight: 600; color: rgba(58,63,69,0.85); opacity: 0; }
+
+        .fe-row { position: absolute; left: 180px; top: 300px; width: 1560px; height: 440px; display: flex; gap: 60px; }
+        .fe-tablet {
+          position: relative; width: 480px; height: 100%;
+          border: 1px solid #8A9099; background: #EDEEF0;
+          box-sizing: border-box; padding: 22px;
+          opacity: 0;
+        }
+        .fe-tablet .head { display: flex; align-items: center; justify-content: space-between; border-bottom: 1px solid #8A9099; padding-bottom: 16px; margin-bottom: 20px; }
+        .fe-tablet .head .label { font-size: 22px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.08em; color: rgba(58,63,69,0.85); }
+        .fe-tablet .pulse { width: 16px; height: 16px; border-radius: 50%; background: #D64545; opacity: 0; }
+        .fe-tablet .line { height: 28px; border: 1px solid #8A9099; background: rgba(58,63,69,0.045); margin-bottom: 14px; }
+        .fe-tablet .line.short { width: 55%; }
+        .fe-tablet .line.med { width: 78%; }
+
+        .fe-brokenline { position: absolute; left: 180px; right: 180px; top: 800px; height: 2px; }
+        .fe-brokenline span { position: absolute; top: 0; height: 2px; background: #8A9099; opacity: 0.5; transform-origin: 0% 50%; }
+
+        .fe-footnote { position: absolute; left: 0; right: 0; top: 856px; text-align: center; font-size: 28px; font-weight: 500; color: rgba(58,63,69,0.85); opacity: 0; }
+      </style>
+
+      <div id="root" data-composition-id="05-service-continue" data-width="1920" data-height="1080" data-duration="11.0">
+        <div class="fe-bg clip" id="fe-bgclip" data-start="0" data-duration="11.0" data-track-index="1"></div>
+
+        <div class="fe-stage" id="fe-stage">
+          <div class="fe-context" id="fe-context">le service continue</div>
+
+          <div class="fe-row">
+            <div class="fe-tablet" id="fe-t1">
+              <div class="head"><span class="label">livraison</span><span class="pulse" id="fe-p1"></span></div>
+              <div class="line short"></div><div class="line med"></div><div class="line"></div>
+            </div>
+            <div class="fe-tablet" id="fe-t2">
+              <div class="head"><span class="label">caisse</span><span class="pulse" id="fe-p2"></span></div>
+              <div class="line med"></div><div class="line"></div><div class="line short"></div>
+            </div>
+            <div class="fe-tablet" id="fe-t3">
+              <div class="head"><span class="label">salle</span><span class="pulse" id="fe-p3"></span></div>
+              <div class="line"></div><div class="line short"></div><div class="line med"></div>
+            </div>
+          </div>
+
+          <div class="fe-brokenline" id="fe-brokenline">
+            <span style="left:3%; width:17%;"></span>
+            <span style="left:27%; width:21%; top:2px;"></span>
+            <span style="left:53%; width:15%; top:-2px;"></span>
+            <span style="left:75%; width:23%;"></span>
+          </div>
+
+          <div class="fe-footnote" id="fe-footnote">Chacun de leur côté.</div>
+        </div>
+      </div>
+
+      <script>
+        window.__timelines = window.__timelines || {};
+        const tl = gsap.timeline({ paused: true });
+
+        gsap.set("#fe-context", { opacity: 0 });
+        gsap.set(["#fe-t1", "#fe-t2", "#fe-t3"], { opacity: 0, y: 14 });
+        gsap.set("#fe-brokenline span", { opacity: 0, scaleX: 0 });
+        gsap.set("#fe-footnote", { opacity: 0, y: 8 });
+
+        // Scene 1 (0.0-1.0s, cue "Le service continue..."): the label and the three tablets return
+        tl.to("#fe-context", { opacity: 1, duration: 0.4, ease: "power3.out" }, 0.25);
+        tl.to("#fe-t1", { opacity: 1, y: 0, duration: 0.4, ease: "power3.out" }, 0.5);
+        tl.to("#fe-t2", { opacity: 1, y: 0, duration: 0.4, ease: "power3.out" }, 0.65);
+        tl.to("#fe-t3", { opacity: 1, y: 0, duration: 0.4, ease: "power3.out" }, 0.8);
+
+        // Scene 2 (1.3-3.84s, cue "...les trois écrans clignotent chacun de leur côté."):
+        // broken line draws on beneath them, unresolved
+        tl.to("#fe-brokenline span", { opacity: 0.5, duration: 0.01 }, 1.3);
+        tl.to("#fe-brokenline span", { scaleX: 1, duration: 0.4, ease: "power2.out", stagger: 0.08 }, 1.3);
+
+        // Scene 3 (1.6-11.0s): each screen blinks on its own, unsynchronized rhythm — the point
+        // being the mismatch itself, three separate clocks that never line up.
+        function blink(id, period, phaseOffset, duration) {
+          const state = { p: phaseOffset };
+          tl.to(state, {
+            p: phaseOffset + (Math.PI * 2 * duration) / period, duration, ease: "none",
+            onUpdate: () => {
+              const v = Math.sin(state.p);
+              gsap.set(id, { opacity: v > 0.35 ? 1 : 0 });
+            }
+          }, 1.6);
+        }
+        blink("#fe-p1", 1.7, 0.0, 9.4);
+        blink("#fe-p2", 2.3, 1.1, 9.4);
+        blink("#fe-p3", 1.35, 2.4, 9.4);
+
+        tl.to("#fe-footnote", { opacity: 1, y: 0, duration: 0.4, ease: "power3.out" }, 4.2);
+
+        // Scene 4: continuous low-amplitude camera drift under everything
+        const feStage = document.getElementById("fe-stage");
+        const feDrift = { p: 0 };
+        tl.to(feDrift, {
+          p: Math.PI * 2 * 3.0, duration: 10.5, ease: "none",
+          onUpdate: () => {
+            const s = Math.sin(feDrift.p);
+            const s2 = Math.sin(feDrift.p * 1.3);
+            feStage.style.transform = `translate(${s * 2.2}px, ${s2 * 1.6}px) scale(${1 + s * 0.002})`;
+          }
+        }, 0.2);
+
+        window.__timelines["05-service-continue"] = tl;
+      </script>
+    </template>
+  </body>
+</html>

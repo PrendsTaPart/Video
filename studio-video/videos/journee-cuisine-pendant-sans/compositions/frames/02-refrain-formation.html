@@ -1,0 +1,83 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+  </head>
+  <body>
+    <template>
+      <style>
+        @font-face { font-family: "Inter"; src: url("assets/fonts/Inter-600.woff2") format("woff2"); font-weight: 600; font-style: normal; font-display: block; }
+        @font-face { font-family: "Inter"; src: url("assets/fonts/Inter-800.woff2") format("woff2"); font-weight: 800; font-style: normal; font-display: block; }
+
+        #root {
+          position: relative;
+          width: 1920px;
+          height: 1080px;
+          overflow: hidden;
+          font-family: "Inter", sans-serif;
+          color: #3A3F45;
+        }
+        .c2-bg { position: absolute; inset: 0; background: #EDEEF0; }
+
+        .c2-lead {
+          position: absolute; left: 0; right: 0; top: 200px; text-align: center;
+          font-size: 36px; font-weight: 600; color: rgba(58,63,69,0.85); opacity: 0;
+        }
+        .c2-numeral {
+          position: absolute; left: 0; right: 0; top: 390px; text-align: center;
+          font-size: 330px; font-weight: 800; color: #D64545; line-height: 1;
+          font-variant-numeric: tabular-nums;
+        }
+        .c2-sub {
+          position: absolute; left: 0; right: 0; top: 790px; text-align: center;
+          font-size: 36px; font-weight: 600; color: rgba(58,63,69,0.85); opacity: 0;
+        }
+      </style>
+
+      <div id="root" data-composition-id="02-refrain-formation" data-width="1920" data-height="1080" data-duration="8.0">
+        <div class="c2-bg clip" id="c2-bgclip" data-start="0" data-duration="8.0" data-track-index="1"></div>
+
+        <div class="c2-lead" id="c2-lead">la nouvelle</div>
+        <div class="c2-numeral" id="c2-numeral">3H</div>
+        <div class="c2-sub" id="c2-sub">de formation</div>
+      </div>
+
+      <script>
+        window.__timelines = window.__timelines || {};
+        const tl = gsap.timeline({ paused: true });
+
+        gsap.set("#c2-lead", { opacity: 0 });
+        gsap.set("#c2-numeral", { opacity: 0, scale: 0 });
+        gsap.set("#c2-sub", { opacity: 0 });
+
+        // Scene 1 (0.0-0.6s): quiet lead-in label
+        tl.to("#c2-lead", { opacity: 1, duration: 0.35, ease: "power3.out" }, 0.12);
+
+        // Scene 2 (0.6-2.0s, cue "La nouvelle a été formée trois heures."): "3H" spring-pops,
+        // sub-label settles.
+        tl.fromTo("#c2-numeral", { scale: 0, opacity: 0 }, { scale: 1, opacity: 1, duration: 0.55, ease: "power3.out" }, 0.65);
+        tl.to("#c2-sub", { opacity: 1, duration: 0.35, ease: "power3.out" }, 1.25);
+
+        // Scene 3 (2.6-4.49s, cue "Elle est partie au bout de six semaines."): hard-cut 3H -> 6,
+        // "de formation" -> "avant de partir" — the film's signature instant swap (no morph, no fade).
+        tl.call(() => {
+          document.getElementById("c2-numeral").textContent = "6";
+          document.getElementById("c2-sub").textContent = "semaines avant de partir";
+        }, [], 2.65);
+
+        // Scene 4 (4.49-7.5s): hold — dead still, the longest hold of this beat. Only a
+        // barely-perceptible subtle jitter, well below the default range.
+        const c2phase = { p: 0 };
+        tl.to(c2phase, {
+          p: Math.PI * 2 * 1.1, duration: 2.9, ease: "none",
+          onUpdate: () => {
+            const s = Math.sin(c2phase.p);
+            gsap.set("#c2-numeral", { scale: 1 + s * 0.004 });
+          }
+        }, 4.55);
+
+        window.__timelines["02-refrain-formation"] = tl;
+      </script>
+    </template>
+  </body>
+</html>

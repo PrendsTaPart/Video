@@ -1,0 +1,86 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+  </head>
+  <body>
+    <template>
+      <style>
+        @font-face { font-family: "Inter"; src: url("assets/fonts/Inter-500.woff2") format("woff2"); font-weight: 500; font-style: normal; font-display: block; }
+        @font-face { font-family: "Inter"; src: url("assets/fonts/Inter-600.woff2") format("woff2"); font-weight: 600; font-style: normal; font-display: block; }
+        @font-face { font-family: "Inter"; src: url("assets/fonts/Inter-700.woff2") format("woff2"); font-weight: 700; font-style: normal; font-display: block; }
+
+        #root {
+          position: relative;
+          width: 1920px;
+          height: 1080px;
+          overflow: hidden;
+          font-family: "Inter", sans-serif;
+          color: #3A3F45;
+        }
+        .fc-bg { position: absolute; inset: 0; background: #EDEEF0; }
+
+        .fc-ring {
+          position: absolute; left: 50%; top: 50%; width: 900px; height: 900px;
+          margin-left: -450px; margin-top: -450px; border-radius: 50%;
+          border: 1px solid #8A9099; opacity: 0;
+        }
+        .fc-ring::before {
+          content: ""; position: absolute; inset: 9%; border-radius: 50%;
+          border: 1px dashed #8A9099; opacity: 0.6;
+        }
+
+        .fc-l1 {
+          position: absolute; left: 0; right: 0; top: 420px; text-align: center;
+          font-size: 66px; font-weight: 600; line-height: 1.2; opacity: 0;
+        }
+        .fc-l2 {
+          position: absolute; left: 0; right: 0; top: 560px; text-align: center;
+          font-size: 66px; font-weight: 700; line-height: 1.2; opacity: 0;
+        }
+        .fc-l2 .em { color: #D64545; }
+      </style>
+
+      <div id="root" data-composition-id="03-refrain" data-width="1920" data-height="1080" data-duration="8.0">
+        <div class="fc-bg clip" id="fc-bgclip" data-start="0" data-duration="8.0" data-track-index="0"></div>
+
+        <div class="fc-ring" id="fc-ring"></div>
+
+        <div class="fc-l1" id="fc-l1">On avait un outil pour ça.</div>
+        <div class="fc-l2" id="fc-l2">Plus <span class="em">personne</span> ne l'ouvre.</div>
+      </div>
+
+      <script>
+        window.__timelines = window.__timelines || {};
+        const tl = gsap.timeline({ paused: true });
+
+        gsap.set("#fc-ring", { opacity: 0, scale: 0.9 });
+        gsap.set("#fc-l1", { opacity: 0, y: 14 });
+        gsap.set("#fc-l2", { opacity: 0, y: 14 });
+
+        // Scene 1 (0.0-0.7s): the compass ring blooms in behind the statement
+        tl.to("#fc-ring", { opacity: 0.4, scale: 1, duration: 0.7, ease: "power2.out" }, 0.15);
+
+        // Scene 2 (0.3-0.9s, cue "On avait un outil pour ça."): first clause settles
+        tl.to("#fc-l1", { opacity: 1, y: 0, duration: 0.5, ease: "power3.out" }, 0.3);
+
+        // Scene 3 (1.6-2.15s, cue "Plus personne ne l'ouvre."): second clause lands, hard-cut in
+        // — the punch of the refrain — "personne" carries the film's one accent color.
+        tl.to("#fc-l2", { opacity: 1, y: 0, duration: 0.4, ease: "power3.out" }, 1.6);
+
+        // Scene 4 (2.4-8.0s): a long, dead-still hold — the refrain needs room to land.
+        // Only a barely-perceptible breathing jitter on the ring.
+        const fcPhase = { p: 0 };
+        tl.to(fcPhase, {
+          p: Math.PI * 2 * 1.4, duration: 5.4, ease: "none",
+          onUpdate: () => {
+            const s = Math.sin(fcPhase.p);
+            gsap.set("#fc-ring", { scale: 1 + s * 0.006 });
+          }
+        }, 2.5);
+
+        window.__timelines["03-refrain"] = tl;
+      </script>
+    </template>
+  </body>
+</html>

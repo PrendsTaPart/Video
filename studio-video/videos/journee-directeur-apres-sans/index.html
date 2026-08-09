@@ -1,0 +1,239 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=1920, height=1080" />
+    <script src="assets/vendor/gsap.min.js"></script>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      html,
+      body {
+        width: 1920px;
+        height: 1080px;
+        overflow: hidden;
+        background: #000;
+      }
+      #root {
+        position: relative;
+        width: 1920px;
+        height: 1080px;
+        overflow: hidden;
+        background: #EDEEF0;
+      }
+      .scene {
+        position: absolute;
+        inset: 0;
+        width: 100%;
+        height: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <div
+      id="root"
+      data-composition-id="main"
+      data-start="0"
+      data-duration="101.282"
+      data-width="1920"
+      data-height="1080"
+    >
+      <!-- opening title card: "Une journée SANS FoodEatUp" — bookends the closing card,
+           same marine charter break, before the film drops into the desaturated "sans" world.
+           Copied verbatim from the "avant" pilot (journee-directeur-avant-sans). -->
+      <div
+        id="el-00-titre"
+        class="scene"
+        data-composition-id="00-titre"
+        data-composition-src="compositions/frames/00-titre.html"
+        data-start="0"
+        data-duration="3.5"
+        data-track-index="0"
+      ></div>
+
+      <!-- context frame: explains the premise in concrete "to do X, I use Y" terms before
+           the montage begins. Copied verbatim (identical for every "sans" film in the series). -->
+      <div
+        id="el-00b-contexte"
+        class="scene"
+        data-composition-id="00b-contexte"
+        data-composition-src="compositions/frames/00b-contexte.html"
+        data-start="3.5"
+        data-duration="22.782"
+        data-track-index="1"
+      ></div>
+      <audio
+        id="el-00b-contexte-voice"
+        src="assets/audio/vo-00b.mp3"
+        data-start="3.5"
+        data-duration="22.282"
+        data-track-index="10"
+        data-volume="1"
+      ></audio>
+
+      <!-- ===== D3s body: Directeur, après le service — Sunday-night bilan (~65s) ===== -->
+
+      <div
+        id="el-01-dimanche-soir"
+        class="scene"
+        data-composition-id="01-dimanche-soir"
+        data-composition-src="compositions/frames/01-dimanche-soir.html"
+        data-start="26.282"
+        data-duration="7.0"
+        data-track-index="0"
+      ></div>
+      <audio
+        id="el-01-dimanche-soir-voice"
+        src="assets/audio/vo-01.mp3"
+        data-start="26.282"
+        data-duration="2.534"
+        data-track-index="10"
+        data-volume="1"
+      ></audio>
+
+      <div
+        id="el-02-trois-chiffres"
+        class="scene"
+        data-composition-id="02-trois-chiffres"
+        data-composition-src="compositions/frames/02-trois-chiffres.html"
+        data-start="33.282"
+        data-duration="15.0"
+        data-track-index="1"
+      ></div>
+      <audio
+        id="el-02-trois-chiffres-voice"
+        src="assets/audio/vo-02.mp3"
+        data-start="33.282"
+        data-duration="7.288"
+        data-track-index="10"
+        data-volume="1"
+      ></audio>
+
+      <div
+        id="el-03-quel-plat"
+        class="scene"
+        data-composition-id="03-quel-plat"
+        data-composition-src="compositions/frames/03-quel-plat.html"
+        data-start="48.282"
+        data-duration="10.0"
+        data-track-index="0"
+      ></div>
+      <audio
+        id="el-03-quel-plat-voice"
+        src="assets/audio/vo-03.mp3"
+        data-start="48.282"
+        data-duration="4.493"
+        data-track-index="10"
+        data-volume="1"
+      ></audio>
+
+      <div
+        id="el-04-sept-abonnements"
+        class="scene"
+        data-composition-id="04-sept-abonnements"
+        data-composition-src="compositions/frames/04-sept-abonnements.html"
+        data-start="58.282"
+        data-duration="10.0"
+        data-track-index="1"
+      ></div>
+      <audio
+        id="el-04-sept-abonnements-voice"
+        src="assets/audio/vo-04.mp3"
+        data-start="58.282"
+        data-duration="3.187"
+        data-track-index="10"
+        data-volume="1"
+      ></audio>
+
+      <!-- closing line of the whole nine-film series: long, deliberate hold before the cut
+           to the punchline card — see frame's own comments. -->
+      <div
+        id="el-05-vrai-chiffre-mars"
+        class="scene"
+        data-composition-id="05-vrai-chiffre-mars"
+        data-composition-src="compositions/frames/05-vrai-chiffre-mars.html"
+        data-start="68.282"
+        data-duration="23.0"
+        data-track-index="0"
+      ></div>
+      <audio
+        id="el-05-vrai-chiffre-mars-voice"
+        src="assets/audio/vo-05.mp3"
+        data-start="68.282"
+        data-duration="7.367"
+        data-track-index="10"
+        data-volume="1"
+      ></audio>
+
+      <!-- ===== shared closing block — copied verbatim from the pilot ===== -->
+
+      <div
+        id="el-08-carte-marque"
+        class="scene"
+        data-composition-id="08-carte-marque"
+        data-composition-src="compositions/frames/08-carte-marque.html"
+        data-start="91.282"
+        data-duration="5.6"
+        data-track-index="1"
+      ></div>
+      <audio
+        id="el-08-carte-marque-voice"
+        src="assets/audio/vo-08.mp3"
+        data-start="91.582"
+        data-duration="4.18"
+        data-track-index="10"
+        data-volume="1"
+      ></audio>
+
+      <!-- CTA end card: points to the "avec FoodEatUp" counterpart journey on the same
+           marine ground, no cut — reads as one continuous ending -->
+      <div
+        id="el-09-cta-decouvrir"
+        class="scene"
+        data-composition-id="09-cta-decouvrir"
+        data-composition-src="compositions/frames/09-cta-decouvrir.html"
+        data-start="96.882"
+        data-duration="4.4"
+        data-track-index="0"
+      ></div>
+
+      <!-- permanent discreet FoodEatUp watermark, "sans" body only (starts once we enter
+           Frame 1, fades out before the final card, where the full-strength logo takes over) -->
+      <div
+        id="el-watermark"
+        class="scene"
+        data-composition-id="watermark"
+        data-composition-src="compositions/watermark.html"
+        data-start="26.282"
+        data-duration="65.0"
+        data-track-index="3"
+      ></div>
+
+    </div>
+
+    <script>
+      window.__timelines = window.__timelines || {};
+      window.__timelines["main"] = gsap.timeline({ paused: true });
+      // ── frame transitions — same grammar as the pilot: crossfades between declarative
+      //    beats, with the connective tissue kept minimal so each beat reads cleanly ──
+      (function () { var tl = window.__timelines["main"];
+        tl.to("#el-00-titre", { opacity: 0, duration: 0.6, ease: "power2.inOut" }, 3.5);
+        tl.fromTo("#el-00b-contexte", { opacity: 0 }, { opacity: 1, duration: 0.6, ease: "power2.inOut" }, 3.5);
+        tl.to("#el-00b-contexte", { opacity: 0, duration: 0.5, ease: "power2.inOut" }, 26.282);
+        tl.fromTo("#el-01-dimanche-soir", { opacity: 0 }, { opacity: 1, duration: 0.5, ease: "power2.inOut" }, 26.282);
+        tl.to("#el-01-dimanche-soir", { opacity: 0, duration: 0.5, ease: "power2.inOut" }, 33.282);
+        tl.fromTo("#el-02-trois-chiffres", { opacity: 0 }, { opacity: 1, duration: 0.5, ease: "power2.inOut" }, 33.282);
+        tl.to("#el-02-trois-chiffres", { opacity: 0, duration: 0.5, ease: "power2.inOut" }, 48.282);
+        tl.fromTo("#el-03-quel-plat", { opacity: 0 }, { opacity: 1, duration: 0.5, ease: "power2.inOut" }, 48.282);
+        // hard cut into the subscriptions beat — a small jolt of rhythm variation
+        tl.fromTo("#el-04-sept-abonnements", { opacity: 0 }, { opacity: 1, duration: 0.15, ease: "power1.out" }, 58.282);
+        tl.to("#el-04-sept-abonnements", { opacity: 0, duration: 0.5, ease: "power2.inOut" }, 68.282);
+        tl.fromTo("#el-05-vrai-chiffre-mars", { opacity: 0 }, { opacity: 1, duration: 0.5, ease: "power2.inOut" }, 68.282);
+        tl.to({}, { duration: 101.282 }, 0); // full-span anchor — main.duration() == composition total (Studio master duration)
+      })();
+    </script>
+  </body>
+</html>

@@ -1,0 +1,234 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=1920, height=1080" />
+    <script src="assets/vendor/gsap.min.js"></script>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      html,
+      body {
+        width: 1920px;
+        height: 1080px;
+        overflow: hidden;
+        background: #000;
+      }
+      #root {
+        position: relative;
+        width: 1920px;
+        height: 1080px;
+        overflow: hidden;
+        background: #EDEEF0;
+      }
+      .scene {
+        position: absolute;
+        inset: 0;
+        width: 100%;
+        height: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <div
+      id="root"
+      data-composition-id="main"
+      data-start="0"
+      data-duration="106.282"
+      data-width="1920"
+      data-height="1080"
+    >
+      <!-- opening title card: "Une journée SANS FoodEatUp" — shared with the whole series,
+           same marine charter break, before the film drops into the desaturated "sans" world -->
+      <div
+        id="el-00-titre"
+        class="scene"
+        data-composition-id="00-titre"
+        data-composition-src="compositions/frames/00-titre.html"
+        data-start="0"
+        data-duration="3.5"
+        data-track-index="0"
+      ></div>
+
+      <!-- context frame: explains the premise in concrete "to do X, I use Y" terms before
+           the montage begins — shared verbatim with the pilot -->
+      <div
+        id="el-00b-contexte"
+        class="scene"
+        data-composition-id="00b-contexte"
+        data-composition-src="compositions/frames/00b-contexte.html"
+        data-start="3.5"
+        data-duration="22.782"
+        data-track-index="1"
+      ></div>
+      <audio
+        id="el-00b-contexte-voice"
+        src="assets/audio/vo-00b.mp3"
+        data-start="3.5"
+        data-duration="22.282"
+        data-track-index="10"
+        data-volume="1"
+      ></audio>
+
+      <!-- S1s body — "Salle, avant l'ouverture" — a server/floor manager, early morning -->
+
+      <div
+        id="el-01-repondeur"
+        class="scene"
+        data-composition-id="01-repondeur"
+        data-composition-src="compositions/frames/01-repondeur.html"
+        data-start="26.282"
+        data-duration="14"
+        data-track-index="0"
+      ></div>
+      <audio
+        id="el-01-repondeur-voice"
+        src="assets/audio/vo-01.mp3"
+        data-start="26.282"
+        data-duration="8.255"
+        data-track-index="10"
+        data-volume="1"
+      ></audio>
+
+      <div
+        id="el-02-refrain"
+        class="scene"
+        data-composition-id="02-refrain"
+        data-composition-src="compositions/frames/02-refrain.html"
+        data-start="40.282"
+        data-duration="6"
+        data-track-index="1"
+      ></div>
+      <audio
+        id="el-02-refrain-voice"
+        src="assets/audio/vo-02.mp3"
+        data-start="40.282"
+        data-duration="2.743"
+        data-track-index="10"
+        data-volume="1"
+      ></audio>
+
+      <div
+        id="el-03-cahier"
+        class="scene"
+        data-composition-id="03-cahier"
+        data-composition-src="compositions/frames/03-cahier.html"
+        data-start="46.282"
+        data-duration="14"
+        data-track-index="0"
+      ></div>
+      <audio
+        id="el-03-cahier-voice"
+        src="assets/audio/vo-03.mp3"
+        data-start="46.282"
+        data-duration="6.348"
+        data-track-index="10"
+        data-volume="1"
+      ></audio>
+
+      <div
+        id="el-04-plan-salle"
+        class="scene"
+        data-composition-id="04-plan-salle"
+        data-composition-src="compositions/frames/04-plan-salle.html"
+        data-start="60.282"
+        data-duration="18"
+        data-track-index="1"
+      ></div>
+      <audio
+        id="el-04-plan-salle-voice"
+        src="assets/audio/vo-04.mp3"
+        data-start="60.282"
+        data-duration="9.038"
+        data-track-index="10"
+        data-volume="1"
+      ></audio>
+
+      <div
+        id="el-05-neuf-trente"
+        class="scene"
+        data-composition-id="05-neuf-trente"
+        data-composition-src="compositions/frames/05-neuf-trente.html"
+        data-start="78.282"
+        data-duration="18"
+        data-track-index="0"
+      ></div>
+      <audio
+        id="el-05-neuf-trente-voice"
+        src="assets/audio/vo-05.mp3"
+        data-start="78.282"
+        data-duration="6.348"
+        data-track-index="10"
+        data-volume="1"
+      ></audio>
+
+      <div
+        id="el-08-carte-marque"
+        class="scene"
+        data-composition-id="08-carte-marque"
+        data-composition-src="compositions/frames/08-carte-marque.html"
+        data-start="96.282"
+        data-duration="5.6"
+        data-track-index="1"
+      ></div>
+      <audio
+        id="el-08-carte-marque-voice"
+        src="assets/audio/vo-08.mp3"
+        data-start="96.582"
+        data-duration="4.18"
+        data-track-index="10"
+        data-volume="1"
+      ></audio>
+
+      <!-- CTA end card: points to the "avec FoodEatUp" counterpart journey, no cut — reads as
+           one continuous ending — shared verbatim with the pilot -->
+      <div
+        id="el-09-cta-decouvrir"
+        class="scene"
+        data-composition-id="09-cta-decouvrir"
+        data-composition-src="compositions/frames/09-cta-decouvrir.html"
+        data-start="101.882"
+        data-duration="4.4"
+        data-track-index="0"
+      ></div>
+
+      <!-- permanent discreet FoodEatUp watermark, "sans" body only (starts once we enter
+           Frame 1, fades out before the final card) -->
+      <div
+        id="el-watermark"
+        class="scene"
+        data-composition-id="watermark"
+        data-composition-src="compositions/watermark.html"
+        data-start="26.282"
+        data-duration="70"
+        data-track-index="3"
+      ></div>
+    </div>
+
+    <script>
+      window.__timelines = window.__timelines || {};
+      window.__timelines["main"] = gsap.timeline({ paused: true });
+      // ── frame transitions ──
+      (function () { var tl = window.__timelines["main"];
+        tl.to("#el-00-titre", { opacity: 0, duration: 0.6, ease: "power2.inOut" }, 3.5);
+        tl.fromTo("#el-00b-contexte", { opacity: 0 }, { opacity: 1, duration: 0.6, ease: "power2.inOut" }, 3.5);
+        tl.to("#el-00b-contexte", { opacity: 0, duration: 0.5, ease: "power2.inOut" }, 26.282);
+        tl.fromTo("#el-01-repondeur", { opacity: 0 }, { opacity: 1, duration: 0.5, ease: "power2.inOut" }, 26.282);
+        tl.to("#el-01-repondeur", { x: -1920, duration: 0.5, ease: "power3.inOut" }, 40.282);
+        tl.fromTo("#el-02-refrain", { x: 1920, opacity: 1 }, { x: 0, duration: 0.5, ease: "power3.inOut" }, 40.282);
+        tl.to("#el-02-refrain", { opacity: 0, duration: 0.5, ease: "power2.inOut" }, 46.282);
+        tl.fromTo("#el-03-cahier", { opacity: 0 }, { opacity: 1, duration: 0.5, ease: "power2.inOut" }, 46.282);
+        tl.to("#el-03-cahier", { x: -1920, duration: 0.5, ease: "power3.inOut" }, 60.282);
+        tl.fromTo("#el-04-plan-salle", { x: 1920, opacity: 1 }, { x: 0, duration: 0.5, ease: "power3.inOut" }, 60.282);
+        tl.to("#el-04-plan-salle", { opacity: 0, duration: 0.5, ease: "power2.inOut" }, 78.282);
+        tl.fromTo("#el-05-neuf-trente", { opacity: 0 }, { opacity: 1, duration: 0.5, ease: "power2.inOut" }, 78.282);
+        tl.to("#el-05-neuf-trente", { opacity: 0, duration: 0.5, ease: "power2.inOut" }, 96.282);
+        tl.fromTo("#el-08-carte-marque", { opacity: 0 }, { opacity: 1, duration: 0.5, ease: "power2.inOut" }, 96.282);
+        tl.to({}, { duration: 106.282 }, 0); // full-span anchor — main.duration() == composition total
+      })();
+    </script>
+  </body>
+</html>

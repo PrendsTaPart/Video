@@ -1,0 +1,267 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=1920, height=1080" />
+    <script src="assets/vendor/gsap.min.js"></script>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      html,
+      body {
+        width: 1920px;
+        height: 1080px;
+        overflow: hidden;
+        background: #000;
+      }
+      #root {
+        position: relative;
+        width: 1920px;
+        height: 1080px;
+        overflow: hidden;
+        background: #EDEEF0;
+      }
+      .scene {
+        position: absolute;
+        inset: 0;
+        width: 100%;
+        height: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <div
+      id="root"
+      data-composition-id="main"
+      data-start="0"
+      data-duration="96.282"
+      data-width="1920"
+      data-height="1080"
+    >
+      <!-- opening title card: "Une journée SANS FoodEatUp" — identical across the series,
+           reused verbatim from the pilot (journee-directeur-avant-sans) -->
+      <div
+        id="el-00-titre"
+        class="scene"
+        data-composition-id="00-titre"
+        data-composition-src="compositions/frames/00-titre.html"
+        data-start="0"
+        data-duration="3.5"
+        data-track-index="0"
+      ></div>
+
+      <!-- context frame: identical across the series, reused verbatim -->
+      <div
+        id="el-00b-contexte"
+        class="scene"
+        data-composition-id="00b-contexte"
+        data-composition-src="compositions/frames/00b-contexte.html"
+        data-start="3.5"
+        data-duration="22.782"
+        data-track-index="1"
+      ></div>
+      <audio
+        id="el-00b-contexte-voice"
+        src="assets/audio/vo-00b.mp3"
+        data-start="3.5"
+        data-duration="22.282"
+        data-track-index="10"
+        data-volume="1"
+      ></audio>
+
+      <!-- ===== C3s — Cuisine, après le service — body (~60s) ===== -->
+
+      <div
+        id="el-01-quarante-cinq-minutes"
+        class="scene"
+        data-composition-id="01-quarante-cinq-minutes"
+        data-composition-src="compositions/frames/01-quarante-cinq-minutes.html"
+        data-start="26.282"
+        data-duration="8.0"
+        data-track-index="0"
+      ></div>
+      <audio
+        id="el-01-quarante-cinq-minutes-voice"
+        src="assets/audio/vo-01.mp3"
+        data-start="26.282"
+        data-duration="7.5"
+        data-track-index="10"
+        data-volume="1"
+      ></audio>
+
+      <div
+        id="el-02-refrain"
+        class="scene"
+        data-composition-id="02-refrain"
+        data-composition-src="compositions/frames/02-refrain.html"
+        data-start="34.282"
+        data-duration="9.0"
+        data-track-index="1"
+      ></div>
+      <audio
+        id="el-02-refrain-voice"
+        src="assets/audio/vo-02-refrain.mp3"
+        data-start="34.282"
+        data-duration="8.5"
+        data-track-index="10"
+        data-volume="1"
+      ></audio>
+
+      <div
+        id="el-03-classeur-haccp"
+        class="scene"
+        data-composition-id="03-classeur-haccp"
+        data-composition-src="compositions/frames/03-classeur-haccp.html"
+        data-start="43.282"
+        data-duration="14.5"
+        data-track-index="0"
+      ></div>
+      <audio
+        id="el-03-classeur-haccp-voice"
+        src="assets/audio/vo-03.mp3"
+        data-start="43.282"
+        data-duration="14.0"
+        data-track-index="10"
+        data-volume="1"
+      ></audio>
+
+      <div
+        id="el-04-controle-jeudi"
+        class="scene"
+        data-composition-id="04-controle-jeudi"
+        data-composition-src="compositions/frames/04-controle-jeudi.html"
+        data-start="57.782"
+        data-duration="8.0"
+        data-track-index="1"
+      ></div>
+      <audio
+        id="el-04-controle-jeudi-voice"
+        src="assets/audio/vo-04.mp3"
+        data-start="57.782"
+        data-duration="7.5"
+        data-track-index="10"
+        data-volume="1"
+      ></audio>
+
+      <div
+        id="el-05-plan-nettoyage"
+        class="scene"
+        data-composition-id="05-plan-nettoyage"
+        data-composition-src="compositions/frames/05-plan-nettoyage.html"
+        data-start="65.782"
+        data-duration="14.0"
+        data-track-index="0"
+      ></div>
+      <audio
+        id="el-05-plan-nettoyage-voice"
+        src="assets/audio/vo-05.mp3"
+        data-start="65.782"
+        data-duration="13.5"
+        data-track-index="10"
+        data-volume="1"
+      ></audio>
+
+      <div
+        id="el-06-minuit-moins-le-quart"
+        class="scene"
+        data-composition-id="06-minuit-moins-le-quart"
+        data-composition-src="compositions/frames/06-minuit-moins-le-quart.html"
+        data-start="79.782"
+        data-duration="6.5"
+        data-track-index="1"
+      ></div>
+      <audio
+        id="el-06-minuit-moins-le-quart-voice"
+        src="assets/audio/vo-06.mp3"
+        data-start="79.782"
+        data-duration="6.0"
+        data-track-index="10"
+        data-volume="1"
+      ></audio>
+
+      <!-- ===== end body — brand card + CTA (identical across the series) ===== -->
+
+      <div
+        id="el-08-carte-marque"
+        class="scene"
+        data-composition-id="08-carte-marque"
+        data-composition-src="compositions/frames/08-carte-marque.html"
+        data-start="86.282"
+        data-duration="5.6"
+        data-track-index="0"
+      ></div>
+      <audio
+        id="el-08-carte-marque-voice"
+        src="assets/audio/vo-08.mp3"
+        data-start="86.582"
+        data-duration="4.18"
+        data-track-index="10"
+        data-volume="1"
+      ></audio>
+
+      <div
+        id="el-09-cta-decouvrir"
+        class="scene"
+        data-composition-id="09-cta-decouvrir"
+        data-composition-src="compositions/frames/09-cta-decouvrir.html"
+        data-start="91.882"
+        data-duration="4.4"
+        data-track-index="1"
+      ></div>
+
+      <!-- permanent discreet FoodEatUp watermark, "sans" body only (starts once we enter
+           Frame 1, ends exactly when the brand card cuts in — watermark.html is reused
+           verbatim from the pilot; its internal fade-out is tuned for the pilot's own
+           74.502s span so it does not fire inside our shorter 60s body — see BRIEF.md
+           "Simplifications documentées": the watermark disappears on the hard cut into
+           the brand card instead of the pilot's extra half-second soft fade) -->
+      <div
+        id="el-watermark"
+        class="scene"
+        data-composition-id="watermark"
+        data-composition-src="compositions/watermark.html"
+        data-start="26.282"
+        data-duration="60.0"
+        data-track-index="3"
+      ></div>
+
+    </div>
+
+    <script>
+      window.__timelines = window.__timelines || {};
+      window.__timelines["main"] = gsap.timeline({ paused: true });
+      // ── frame transitions: simultaneous crossfades/slides at each exact boundary
+      //    timestamp (no time-shifted overlap) — see BRIEF.md for the reasoning ──
+      (function () { var tl = window.__timelines["main"];
+        tl.to("#el-00-titre", { opacity: 0, duration: 0.6, ease: "power2.inOut" }, 3.5);
+        tl.fromTo("#el-00b-contexte", { opacity: 0 }, { opacity: 1, duration: 0.6, ease: "power2.inOut" }, 3.5);
+
+        tl.to("#el-00b-contexte", { opacity: 0, duration: 0.5, ease: "power2.inOut" }, 26.282);
+        tl.fromTo("#el-01-quarante-cinq-minutes", { opacity: 0 }, { opacity: 1, duration: 0.5, ease: "power2.inOut" }, 26.282);
+
+        tl.to("#el-01-quarante-cinq-minutes", { x: -1920, duration: 0.5, ease: "power3.inOut" }, 34.282);
+        tl.fromTo("#el-02-refrain", { x: 1920, opacity: 1 }, { x: 0, duration: 0.5, ease: "power3.inOut" }, 34.282);
+
+        tl.to("#el-02-refrain", { opacity: 0, duration: 0.5, ease: "power2.inOut" }, 43.282);
+        tl.fromTo("#el-03-classeur-haccp", { opacity: 0 }, { opacity: 1, duration: 0.5, ease: "power2.inOut" }, 43.282);
+
+        tl.to("#el-03-classeur-haccp", { x: -1920, duration: 0.5, ease: "power3.inOut" }, 57.782);
+        tl.fromTo("#el-04-controle-jeudi", { x: 1920, opacity: 1 }, { x: 0, duration: 0.5, ease: "power3.inOut" }, 57.782);
+
+        tl.to("#el-04-controle-jeudi", { opacity: 0, duration: 0.5, ease: "power2.inOut" }, 65.782);
+        tl.fromTo("#el-05-plan-nettoyage", { opacity: 0 }, { opacity: 1, duration: 0.5, ease: "power2.inOut" }, 65.782);
+
+        tl.to("#el-05-plan-nettoyage", { opacity: 0, duration: 0.5, ease: "power2.inOut" }, 79.782);
+        tl.fromTo("#el-06-minuit-moins-le-quart", { opacity: 0 }, { opacity: 1, duration: 0.5, ease: "power2.inOut" }, 79.782);
+
+        tl.to("#el-06-minuit-moins-le-quart", { opacity: 0, duration: 0.4, ease: "power2.inOut" }, 86.282);
+        tl.fromTo("#el-08-carte-marque", { opacity: 0 }, { opacity: 1, duration: 0.4, ease: "power2.inOut" }, 86.282);
+
+        tl.to({}, { duration: 96.282 }, 0); // full-span anchor — main.duration() == composition total (Studio master duration)
+      })();
+    </script>
+  </body>
+</html>

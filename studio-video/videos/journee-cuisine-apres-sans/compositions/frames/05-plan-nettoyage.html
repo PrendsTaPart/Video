@@ -1,0 +1,141 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+  </head>
+  <body>
+    <template>
+      <style>
+        @font-face { font-family: "Inter"; src: url("assets/fonts/Inter-400.woff2") format("woff2"); font-weight: 400; font-style: normal; font-display: block; }
+        @font-face { font-family: "Inter"; src: url("assets/fonts/Inter-500.woff2") format("woff2"); font-weight: 500; font-style: normal; font-display: block; }
+        @font-face { font-family: "Inter"; src: url("assets/fonts/Inter-600.woff2") format("woff2"); font-weight: 600; font-style: normal; font-display: block; }
+        @font-face { font-family: "Inter"; src: url("assets/fonts/Inter-700.woff2") format("woff2"); font-weight: 700; font-style: normal; font-display: block; }
+        @font-face { font-family: "Inter"; src: url("assets/fonts/Inter-800.woff2") format("woff2"); font-weight: 800; font-style: normal; font-display: block; }
+
+        #root {
+          position: relative;
+          width: 1920px;
+          height: 1080px;
+          overflow: hidden;
+          font-family: "Inter", sans-serif;
+          color: #3A3F45;
+        }
+        .g5-bg { position: absolute; inset: 0; background: #EDEEF0; overflow: hidden; }
+        .g5-bg img {
+          position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover;
+          filter: grayscale(1) contrast(1.05) brightness(1.25);
+          opacity: 0.28;
+        }
+        .g5-stage { position: absolute; inset: 0; }
+
+        .g5-brokenline { position: absolute; left: 200px; right: 200px; top: 96px; height: 2px; }
+        .g5-brokenline span { position: absolute; top: 0; height: 2px; background: #8A9099; opacity: 0.5; transform-origin: 0% 50%; }
+
+        .g5-label { position: absolute; left: 0; right: 0; top: 150px; text-align: center; font-size: 56px; font-weight: 700; opacity: 0; }
+        .g5-sub { position: absolute; left: 0; right: 0; top: 236px; text-align: center; font-size: 32px; font-weight: 500; color: rgba(58,63,69,0.85); opacity: 0; }
+
+        .g5-grid { position: absolute; left: 50%; top: 400px; transform: translateX(-50%); display: flex; gap: 20px; }
+        .g5-cell {
+          width: 180px; height: 180px; border: 1px solid #8A9099; background: rgba(58,63,69,0.045);
+          display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 16px;
+          opacity: 0;
+        }
+        .g5-cell .day { font-size: 22px; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; color: rgba(58,63,69,0.85); }
+        .g5-cell .stamp {
+          width: 56px; height: 56px; border-radius: 50%; border: 1px solid #8A9099;
+          display: flex; align-items: center; justify-content: center;
+          font-size: 26px; font-weight: 700; color: rgba(58,63,69,0.85);
+        }
+
+        .g5-punch { position: absolute; left: 0; right: 0; top: 700px; text-align: center; font-size: 34px; font-weight: 600; color: rgba(58,63,69,0.85); width: 1100px; margin: 0 auto; left: 0; right: 0; opacity: 0; }
+
+        .g5-question {
+          position: absolute; left: 50%; top: 372px; margin-left: -180px;
+          font-size: 300px; font-weight: 800; color: #D64545; line-height: 1;
+          transform: rotate(-7deg); opacity: 0;
+        }
+      </style>
+
+      <div id="root" data-composition-id="05-plan-nettoyage" data-width="1920" data-height="1080" data-duration="14.0">
+        <div class="g5-bg clip" id="g5-bgclip" data-start="0" data-duration="14.0" data-track-index="1">
+          <img src="public/generated/whiteboard-wiped.jpg" alt="" />
+        </div>
+
+        <div class="g5-stage" id="g5-stage">
+          <div class="g5-brokenline" id="g5-brokenline">
+            <span style="left:4%; width:16%;"></span>
+            <span style="left:26%; width:20%; top:-3px;"></span>
+            <span style="left:52%; width:14%; top:2px;"></span>
+            <span style="left:72%; width:22%;"></span>
+          </div>
+
+          <div class="g5-label" id="g5-label">Le plan de nettoyage ?</div>
+          <div class="g5-sub" id="g5-sub">Signé à l'avance, pour toute la semaine.</div>
+
+          <div class="g5-grid">
+            <div class="g5-cell" id="g5-c1"><span class="day">Lun</span><span class="stamp">S.</span></div>
+            <div class="g5-cell" id="g5-c2"><span class="day">Mar</span><span class="stamp">S.</span></div>
+            <div class="g5-cell" id="g5-c3"><span class="day">Mer</span><span class="stamp">S.</span></div>
+            <div class="g5-cell" id="g5-c4"><span class="day">Jeu</span><span class="stamp">S.</span></div>
+            <div class="g5-cell" id="g5-c5"><span class="day">Ven</span><span class="stamp">S.</span></div>
+            <div class="g5-cell" id="g5-c6"><span class="day">Sam</span><span class="stamp">S.</span></div>
+            <div class="g5-cell" id="g5-c7"><span class="day">Dim</span><span class="stamp">S.</span></div>
+          </div>
+
+          <div class="g5-question" id="g5-question" data-layout-allow-overlap="true">?</div>
+
+          <div class="g5-punch" id="g5-punch">Personne ne vérifie vraiment qui a nettoyé quoi.</div>
+        </div>
+      </div>
+
+      <script>
+        window.__timelines = window.__timelines || {};
+        const tl = gsap.timeline({ paused: true });
+
+        gsap.set("#g5-brokenline span", { opacity: 0, scaleX: 0 });
+        gsap.set("#g5-label", { opacity: 0, y: 12 });
+        gsap.set("#g5-sub", { opacity: 0, y: 10 });
+        gsap.set(["#g5-c1", "#g5-c2", "#g5-c3", "#g5-c4", "#g5-c5", "#g5-c6", "#g5-c7"], { opacity: 0, y: 14 });
+        gsap.set("#g5-punch", { opacity: 0, y: 12 });
+        gsap.set("#g5-question", { opacity: 0, scale: 0.6, rotation: -7 });
+
+        // Scene 1 (0.0-0.6s): broken line draws itself on
+        tl.to("#g5-brokenline span", { opacity: 0.5, duration: 0.01 }, 0.1);
+        tl.to("#g5-brokenline span", { scaleX: 1, duration: 0.4, ease: "power2.out", stagger: 0.07 }, 0.1);
+
+        // Scene 2 (0.2-0.9s, cue "Le plan de nettoyage ?"): label fades in
+        tl.to("#g5-label", { opacity: 1, y: 0, duration: 0.5, ease: "power3.out" }, 0.25);
+
+        // Scene 3 (1.3-3.6s, cue "Signé à l'avance, pour toute la semaine."): sub-line settles,
+        // then the seven days fill with the SAME identical stamp mark, one after another — a
+        // mechanical, uniform "signature" rather than a real per-day check.
+        tl.to("#g5-sub", { opacity: 1, y: 0, duration: 0.5, ease: "power3.out" }, 1.35);
+        ["#g5-c1", "#g5-c2", "#g5-c3", "#g5-c4", "#g5-c5", "#g5-c6", "#g5-c7"].forEach((id, i) => {
+          tl.to(id, { opacity: 1, y: 0, duration: 0.3, ease: "power3.out" }, 1.9 + i * 0.14);
+        });
+
+        // Scene 4 (3.6-4.3s, cue "Personne ne vérifie vraiment"): the punch line fades in beneath
+        tl.to("#g5-punch", { opacity: 1, y: 0, duration: 0.5, ease: "power3.out" }, 3.65);
+
+        // Scene 5 (4.3-5.0s, cue "qui a nettoyé quoi."): a giant red "?" slams across the grid
+        tl.fromTo("#g5-question", { opacity: 0, scale: 0.6, rotation: -7 }, { opacity: 0.88, scale: 1, rotation: -7, duration: 0.4, ease: "back.out(1.6)" }, 4.35);
+
+        // Scene 6 (5.0-14.0s): hold — continuous low-amplitude drift on the whole stage; a later,
+        // second beat gives the "?" a slow single pulse mid-hold.
+        const g5stage = document.getElementById("g5-stage");
+        const g5drift = { p: 0 };
+        tl.to(g5drift, {
+          p: Math.PI * 2 * 2.5, duration: 8.6, ease: "none",
+          onUpdate: () => {
+            const s = Math.sin(g5drift.p);
+            g5stage.style.transform = `translate(${s * 2.5}px, ${Math.sin(g5drift.p * 0.6) * 1.8}px) scale(${1 + s * 0.002})`;
+          }
+        }, 5.1);
+        tl.to("#g5-question", { scale: 1.06, duration: 0.6, ease: "power2.out" }, 8.5);
+        tl.to("#g5-question", { scale: 1, duration: 0.6, ease: "power2.inOut" }, 9.1);
+
+        window.__timelines["05-plan-nettoyage"] = tl;
+      </script>
+    </template>
+  </body>
+</html>

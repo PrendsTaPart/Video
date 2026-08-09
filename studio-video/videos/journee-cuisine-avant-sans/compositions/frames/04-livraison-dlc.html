@@ -1,0 +1,112 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+  </head>
+  <body>
+    <template>
+      <style>
+        @font-face { font-family: "Inter"; src: url("assets/fonts/Inter-400.woff2") format("woff2"); font-weight: 400; font-style: normal; font-display: block; }
+        @font-face { font-family: "Inter"; src: url("assets/fonts/Inter-500.woff2") format("woff2"); font-weight: 500; font-style: normal; font-display: block; }
+        @font-face { font-family: "Inter"; src: url("assets/fonts/Inter-700.woff2") format("woff2"); font-weight: 700; font-style: normal; font-display: block; }
+        @font-face { font-family: "Inter"; src: url("assets/fonts/Inter-800.woff2") format("woff2"); font-weight: 800; font-style: normal; font-display: block; }
+
+        #root {
+          position: relative;
+          width: 1920px;
+          height: 1080px;
+          overflow: hidden;
+          font-family: "Inter", sans-serif;
+          color: #3A3F45;
+        }
+        .f4-bg { position: absolute; inset: 0; background: #EDEEF0; }
+
+        .f4-photo { position: absolute; left: 170px; top: 210px; width: 640px; height: 640px; border: 1px solid #8A9099; box-shadow: 0 20px 50px rgba(20,22,25,0.14); overflow: hidden; }
+        .f4-photo img { width: 100%; height: 100%; object-fit: cover; filter: grayscale(0.85) contrast(1.05) brightness(1.05); display: block; }
+        .f4-photolabel { position: absolute; left: 170px; top: 864px; width: 640px; font-size: 30px; font-weight: 600; }
+
+        .f4-card {
+          position: absolute; right: 190px; top: 210px; width: 680px; min-height: 460px;
+          border: 1px solid #8A9099; background: rgba(58,63,69,0.045); padding: 44px; box-sizing: border-box;
+        }
+        .f4-card .title { font-size: 26px; font-weight: 700; text-transform: uppercase; letter-spacing: 2px; color: rgba(58,63,69,0.85); margin-bottom: 30px; }
+        .f4-line { font-size: 34px; font-weight: 500; margin-bottom: 20px; opacity: 0; }
+        .f4-caret { display: inline-block; width: 5px; height: 32px; background: #3A3F45; vertical-align: -5px; margin-left: 2px; }
+
+        .f4-note { position: absolute; right: 190px; top: 720px; width: 680px; }
+        .f4-note .txt { font-size: 32px; font-weight: 600; color: rgba(58,63,69,0.85); opacity: 0; }
+        .f4-qmark { display: inline-block; margin-left: 12px; width: 46px; height: 46px; border-radius: 50%; border: 2px solid #D64545; color: #D64545; font-size: 30px; font-weight: 800; text-align: center; line-height: 42px; opacity: 0; vertical-align: -12px; }
+      </style>
+
+      <div id="root" data-composition-id="04-livraison-dlc" data-width="1920" data-height="1080" data-duration="10.501">
+        <div class="f4-bg clip" id="f4-bgclip" data-start="0" data-duration="10.501" data-track-index="1"></div>
+
+        <div class="f4-photo" id="f4-photo">
+          <img src="public/generated/salmon-crate.jpg" alt="" />
+        </div>
+        <div class="f4-photolabel" id="f4-photolabel">la livraison arrive</div>
+
+        <div class="f4-card" id="f4-card">
+          <div class="title">carnet — DLC du jour</div>
+          <div class="f4-line" id="f4-line1">Cabillaud — <span id="f4-l1-caret" class="f4-caret"></span></div>
+          <div class="f4-line" id="f4-line2">Volaille — <span id="f4-l2-caret" class="f4-caret"></span></div>
+          <div class="f4-line" id="f4-line3">Crème — <span id="f4-l3-caret" class="f4-caret"></span></div>
+        </div>
+
+        <div class="f4-note" id="f4-note">
+          <span class="txt" id="f4-notetxt">à ressaisir ce soir</span><span class="f4-qmark" id="f4-qmark">?</span>
+        </div>
+      </div>
+
+      <script>
+        window.__timelines = window.__timelines || {};
+        const tl = gsap.timeline({ paused: true });
+
+        gsap.set("#f4-photo", { opacity: 0, x: -40, scale: 0.96 });
+        gsap.set("#f4-photolabel", { opacity: 0 });
+        gsap.set("#f4-card", { opacity: 0, y: 12 });
+        gsap.set(["#f4-line1", "#f4-line2", "#f4-line3"], { opacity: 0 });
+        gsap.set("#f4-notetxt", { opacity: 0 });
+        gsap.set("#f4-qmark", { opacity: 0, scale: 0 });
+
+        // Scene 1 (0.0-1.15s): "La livraison arrive." — crate photo settles from the left
+        tl.to("#f4-photo", { opacity: 1, x: 0, scale: 1, duration: 0.6, ease: "power3.out" }, 0.25);
+        tl.to("#f4-photolabel", { opacity: 1, duration: 0.35, ease: "power3.out" }, 0.65);
+
+        // Scene 2 (1.15-1.55s): notebook card outline appears
+        tl.to("#f4-card", { opacity: 1, y: 0, duration: 0.4, ease: "power3.out" }, 1.15);
+
+        function typeCaret(id, at, dur) {
+          const el = document.getElementById(id);
+          tl.to(el, { opacity: 1, duration: 0.2 }, at);
+          const blink = { p: 0 };
+          tl.to(blink, {
+            p: Math.PI * 2 * 3, duration: dur, ease: "none",
+            onUpdate: () => { el.style.opacity = Math.sin(blink.p) > 0 ? "1" : "0.15"; }
+          }, at);
+        }
+
+        // Scene 3 (1.6-4.6s): "Je note les DLC sur un carnet." — three lines write themselves in, staggered
+        tl.to("#f4-line1", { opacity: 1, duration: 0.3, ease: "power3.out" }, 1.7);
+        typeCaret("f4-l1-caret", 1.7, 0.9);
+        tl.to("#f4-line2", { opacity: 1, duration: 0.3, ease: "power3.out" }, 2.6);
+        typeCaret("f4-l2-caret", 2.6, 0.9);
+        tl.to("#f4-line3", { opacity: 1, duration: 0.3, ease: "power3.out" }, 3.5);
+        typeCaret("f4-l3-caret", 3.5, 0.9);
+
+        // Scene 4 (5.0-7.0s): "Je les ressaisirai ce soir — enfin, si j'y pense." — note + red "?" pop
+        tl.to("#f4-notetxt", { opacity: 1, duration: 0.4, ease: "power3.out" }, 5.1);
+        tl.fromTo("#f4-qmark", { opacity: 0, scale: 0 }, { opacity: 1, scale: 1, duration: 0.45, ease: "power3.out" }, 5.7);
+
+        // Scene 5 (7.0-10.501s): hold — subtle jitter on the "?" only
+        const f4phase = { p: 0 };
+        tl.to(f4phase, {
+          p: Math.PI * 2 * 1.1, duration: 3.3, ease: "none",
+          onUpdate: () => { gsap.set("#f4-qmark", { y: Math.sin(f4phase.p) * 2 }); }
+        }, 7.1);
+
+        window.__timelines["04-livraison-dlc"] = tl;
+      </script>
+    </template>
+  </body>
+</html>

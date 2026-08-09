@@ -1,0 +1,104 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+  </head>
+  <body>
+    <template>
+      <style>
+        @font-face { font-family: "Inter"; src: url("assets/fonts/Inter-400.woff2") format("woff2"); font-weight: 400; font-style: normal; font-display: block; }
+        @font-face { font-family: "Inter"; src: url("assets/fonts/Inter-500.woff2") format("woff2"); font-weight: 500; font-style: normal; font-display: block; }
+        @font-face { font-family: "Inter"; src: url("assets/fonts/Inter-700.woff2") format("woff2"); font-weight: 700; font-style: normal; font-display: block; }
+
+        #root {
+          position: relative;
+          width: 1920px;
+          height: 1080px;
+          overflow: hidden;
+          font-family: "Inter", sans-serif;
+          color: #3A3F45;
+        }
+        .f2-bg { position: absolute; inset: 0; background: #EDEEF0; }
+        .f2-stage { position: absolute; inset: 0; }
+
+        .f2-panel {
+          position: absolute; top: 260px; width: 700px; height: 560px;
+          border: 1px solid #8A9099; background: rgba(58,63,69,0.045);
+          padding: 40px; box-sizing: border-box; transform-style: preserve-3d;
+        }
+        .f2-panel.left { left: 150px; transform-origin: 100% 50%; }
+        .f2-panel.right { right: 150px; transform-origin: 0% 50%; }
+        .f2-panel .shot { width: 620px; height: 340px; margin-bottom: 26px; border: 1px solid #8A9099; overflow: hidden; }
+        .f2-panel .shot img { width: 100%; height: 100%; object-fit: cover; filter: grayscale(0.8) contrast(1.05); display: block; }
+        .f2-panel .label { font-size: 36px; font-weight: 700; color: #3A3F45; margin-bottom: 12px; }
+        .f2-panel .sub { font-size: 24px; font-weight: 500; color: rgba(58,63,69,0.85); line-height: 1.4; }
+
+        .f2-boxrow { display: flex; gap: 14px; margin-top: 18px; }
+        .f2-box { width: 34px; height: 34px; border: 1px solid #8A9099; opacity: 0; }
+      </style>
+
+      <div id="root" data-composition-id="02-temperatures-tableau" data-width="1920" data-height="1080" data-duration="11.990">
+        <div class="f2-bg clip" id="f2-bgclip" data-start="0" data-duration="11.990" data-track-index="1"></div>
+
+        <div class="f2-stage" id="f2-stage">
+          <div class="f2-panel left" id="f2-left">
+            <div class="shot"><img src="public/generated/temperature-log-clipboard.jpg" alt="" /></div>
+            <div class="label">les températures</div>
+            <div class="sub">feuille plastifiée — si le stylo marche</div>
+          </div>
+
+          <div class="f2-panel right" id="f2-right">
+            <div class="shot"><img src="public/generated/whiteboard-wiped.jpg" alt="" /></div>
+            <div class="label">les tâches du jour</div>
+            <div class="sub" id="f2-right-sub">tableau blanc</div>
+            <div class="f2-boxrow" id="f2-boxrow">
+              <div class="f2-box"></div><div class="f2-box"></div><div class="f2-box"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <script>
+        window.__timelines = window.__timelines || {};
+        const tl = gsap.timeline({ paused: true });
+
+        gsap.set("#f2-left", { opacity: 0, x: -60, rotationY: 20 });
+        gsap.set("#f2-right", { opacity: 0, x: 60, rotationY: -20 });
+        gsap.set("#f2-box", { opacity: 0, scale: 0.4 });
+
+        const f2drift = { p: 0 };
+        const f2stage = document.getElementById("f2-stage");
+        tl.to(f2drift, {
+          p: Math.PI * 2 * 3.2, duration: 11.4, ease: "none",
+          onUpdate: () => {
+            const s = Math.sin(f2drift.p);
+            f2stage.style.transform = `translate(${s * 2.5}px, ${Math.sin(f2drift.p * 0.6) * 1.6}px)`;
+          }
+        }, 0.1);
+
+        // Scene 1 (0.0-1.9s): "Les températures, sur la feuille plastifiée" — left panel tilt-in
+        tl.fromTo("#f2-left", { opacity: 0, x: -60, rotationY: 20 }, { opacity: 1, x: 0, rotationY: 0, duration: 0.65, ease: "power3.out" }, 0.4);
+
+        // Scene 2 (1.9-3.7s): "si le stylo marche" — mock jitter, nothing added, the sub-copy already carries the doubt
+
+        // Scene 3 (3.7-6.0s): "Les tâches du jour ? Sur un tableau blanc." — right panel tilt-in
+        tl.fromTo("#f2-right", { opacity: 0, x: 60, rotationY: -20 }, { opacity: 1, x: 0, rotationY: 0, duration: 0.65, ease: "power3.out" }, 4.0);
+
+        // Scene 4 (6.0-8.7s): "Effacé hier soir." — sub-label swaps, three empty boxes (friction marks — never a check) pop in where tasks should be listed
+        tl.call(() => { document.getElementById("f2-right-sub").textContent = "effacé hier soir"; }, [], 6.2);
+        gsap.utils.toArray("#f2-boxrow .f2-box").forEach((el, i) => {
+          tl.to(el, { opacity: 0.85, scale: 1, duration: 0.35, ease: "power3.out" }, 6.35 + i * 0.12);
+        });
+
+        // Scene 5 (8.7-11.990s): hold — subtle jitter on the box row only
+        const f2phase = { p: 0 };
+        tl.to(f2phase, {
+          p: Math.PI * 2 * 1.1, duration: 3.0, ease: "none",
+          onUpdate: () => { gsap.set("#f2-boxrow", { y: Math.sin(f2phase.p) * 1.4 }); }
+        }, 8.9);
+
+        window.__timelines["02-temperatures-tableau"] = tl;
+      </script>
+    </template>
+  </body>
+</html>

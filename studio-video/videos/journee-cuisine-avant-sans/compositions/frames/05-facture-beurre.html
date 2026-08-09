@@ -1,0 +1,82 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+  </head>
+  <body>
+    <template>
+      <style>
+        @font-face { font-family: "Inter"; src: url("assets/fonts/Inter-500.woff2") format("woff2"); font-weight: 500; font-style: normal; font-display: block; }
+        @font-face { font-family: "Inter"; src: url("assets/fonts/Inter-700.woff2") format("woff2"); font-weight: 700; font-style: normal; font-display: block; }
+        @font-face { font-family: "Inter"; src: url("assets/fonts/Inter-800.woff2") format("woff2"); font-weight: 800; font-style: normal; font-display: block; }
+
+        #root {
+          position: relative;
+          width: 1920px;
+          height: 1080px;
+          overflow: hidden;
+          font-family: "Inter", sans-serif;
+          color: #3A3F45;
+        }
+        .f5-bg { position: absolute; inset: 0; background: #EDEEF0; }
+
+        .f5-photo { position: absolute; left: 170px; top: 170px; width: 460px; height: 700px; border: 1px solid #8A9099; box-shadow: 0 20px 50px rgba(20,22,25,0.14); overflow: hidden; }
+        .f5-photo img { width: 100%; height: 100%; object-fit: cover; filter: grayscale(0.7) contrast(1.05); display: block; }
+        .f5-photolabel { position: absolute; left: 170px; top: 886px; width: 460px; font-size: 28px; font-weight: 600; }
+
+        .f5-stats { position: absolute; left: 750px; top: 260px; width: 1000px; }
+        .f5-row { display: flex; align-items: baseline; gap: 28px; margin-bottom: 60px; opacity: 0; }
+        .f5-row .num { font-size: 130px; font-weight: 800; color: #D64545; font-variant-numeric: tabular-nums; min-width: 220px; text-align: right; }
+        .f5-row .label { font-size: 32px; font-weight: 600; color: rgba(58,63,69,0.85); max-width: 560px; line-height: 1.3; }
+      </style>
+
+      <div id="root" data-composition-id="05-facture-beurre" data-width="1920" data-height="1080" data-duration="11.494">
+        <div class="f5-bg clip" id="f5-bgclip" data-start="0" data-duration="11.494" data-track-index="0"></div>
+
+        <div class="f5-photo" id="f5-photo">
+          <img src="public/generated/01-factures.jpg" alt="" />
+        </div>
+        <div class="f5-photolabel" id="f5-photolabel">la facture, dans la pile</div>
+
+        <div class="f5-stats">
+          <div class="f5-row" id="f5-row1"><div class="num" id="f5-n1">0</div><div class="label">semaines avant que le comptable la voie</div></div>
+          <div class="f5-row" id="f5-row2"><div class="num" id="f5-n2">—</div><div class="label">le kilo de beurre me coûte ça</div></div>
+        </div>
+      </div>
+
+      <script>
+        window.__timelines = window.__timelines || {};
+        const tl = gsap.timeline({ paused: true });
+
+        gsap.set("#f5-photo", { opacity: 0, x: -40, scale: 0.96 });
+        gsap.set("#f5-photolabel", { opacity: 0 });
+
+        // Scene 1 (0.0-1.15s): "La facture, je la mets dans la pile." — invoice photo settles
+        tl.to("#f5-photo", { opacity: 1, x: 0, scale: 1, duration: 0.6, ease: "power3.out" }, 0.25);
+        tl.to("#f5-photolabel", { opacity: 1, duration: 0.35, ease: "power3.out" }, 0.65);
+
+        // Scene 2 (1.5-4.0s): "Le comptable la verra dans six semaines." — count-up 0 -> 6
+        tl.to("#f5-row1", { opacity: 1, duration: 0.35, ease: "power3.out" }, 1.6);
+        const f5count = { v: 0 };
+        const f5el = document.getElementById("f5-n1");
+        tl.to(f5count, {
+          v: 6, duration: 1.3, ease: "power2.out",
+          onUpdate: () => { f5el.textContent = Math.round(f5count.v); }
+        }, 1.75);
+
+        // Scene 3 (5.0-7.5s): "D'ici là, je ne sais pas ce que me coûte mon kilo de beurre." —
+        // the unknown-cost row lands on a bare em-dash placeholder (never an invented figure)
+        tl.to("#f5-row2", { opacity: 1, duration: 0.4, ease: "power3.out" }, 5.1);
+
+        // Scene 4 (7.5-11.494s): hold — subtle jitter on the placeholder dash
+        const f5phase = { p: 0 };
+        tl.to(f5phase, {
+          p: Math.PI * 2 * 1.2, duration: 3.6, ease: "none",
+          onUpdate: () => { gsap.set("#f5-n2", { opacity: 1 - Math.abs(Math.sin(f5phase.p)) * 0.08 }); }
+        }, 7.6);
+
+        window.__timelines["05-facture-beurre"] = tl;
+      </script>
+    </template>
+  </body>
+</html>

@@ -1,0 +1,111 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+  </head>
+  <body>
+    <template>
+      <style>
+        @font-face { font-family: "Inter"; src: url("assets/fonts/Inter-400.woff2") format("woff2"); font-weight: 400; font-style: normal; font-display: block; }
+        @font-face { font-family: "Inter"; src: url("assets/fonts/Inter-500.woff2") format("woff2"); font-weight: 500; font-style: normal; font-display: block; }
+        @font-face { font-family: "Inter"; src: url("assets/fonts/Inter-600.woff2") format("woff2"); font-weight: 600; font-style: normal; font-display: block; }
+        @font-face { font-family: "Inter"; src: url("assets/fonts/Inter-700.woff2") format("woff2"); font-weight: 700; font-style: normal; font-display: block; }
+
+        #root {
+          position: relative;
+          width: 1920px;
+          height: 1080px;
+          overflow: hidden;
+          font-family: "Inter", sans-serif;
+          color: #3A3F45;
+        }
+        .f5-bg { position: absolute; inset: 0; background: #EDEEF0; }
+        .f5-stage { position: absolute; inset: 0; }
+
+        .f5-brokenline { position: absolute; left: 200px; right: 200px; top: 260px; height: 2px; }
+        .f5-brokenline span { position: absolute; top: 0; height: 2px; background: #8A9099; opacity: 0.45; transform-origin: 0% 50%; }
+
+        .f5-lines { position: absolute; left: 0; right: 0; top: 360px; text-align: center; }
+        .f5-l1 { font-size: 58px; font-weight: 700; line-height: 1.3; }
+        .f5-l2 { font-size: 58px; font-weight: 700; line-height: 1.3; margin-top: 8px; }
+        .f5-l2 .em { color: #D64545; }
+        .f5-l3 { font-size: 32px; font-weight: 500; color: rgba(58,63,69,0.85); margin-top: 34px; }
+
+        .f5-calendar { position: absolute; left: 0; right: 0; top: 700px; text-align: center; }
+        .f5-calendar img { width: 280px; height: auto; opacity: 0; filter: grayscale(1) contrast(1.05); }
+      </style>
+
+      <div id="root" data-composition-id="05-vrai-chiffre-mars" data-width="1920" data-height="1080" data-duration="23.0">
+        <div class="f5-bg clip" id="f5-bgclip" data-start="0" data-duration="23.0" data-track-index="0"></div>
+
+        <div class="f5-stage" id="f5-stage">
+          <div class="f5-brokenline" id="f5-brokenline">
+            <span style="left:4%; width:16%;"></span>
+            <span style="left:26%; width:20%; top:-3px;"></span>
+            <span style="left:52%; width:14%; top:2px;"></span>
+            <span style="left:72%; width:22%;"></span>
+          </div>
+
+          <div class="f5-lines">
+            <div class="f5-l1" id="f5-l1">Le vrai chiffre du mois de mars&nbsp;?</div>
+            <div class="f5-l2" id="f5-l2">Je le connaîtrai <span class="em">en mai</span>.</div>
+            <div class="f5-l3" id="f5-l3">le temps que quelqu'un, quelque part, recopie tout ça à la main.</div>
+          </div>
+          <div class="f5-calendar"><img id="f5-calendar-img" src="public/generated/08-calendrier.jpg" alt="" /></div>
+        </div>
+      </div>
+
+      <script>
+        window.__timelines = window.__timelines || {};
+        const tl = gsap.timeline({ paused: true });
+
+        gsap.set("#f5-brokenline span", { opacity: 0, scaleX: 0 });
+        gsap.set("#f5-l1", { opacity: 0, y: 14 });
+        gsap.set("#f5-l2", { opacity: 0, y: 14 });
+        gsap.set("#f5-l3", { opacity: 0, y: 10 });
+        gsap.set("#f5-calendar-img", { opacity: 0, y: 10 });
+
+        // Scene 1 (0.0-1.5s, cue "Le vrai chiffre du mois de mars ?"): broken line draws itself
+        // on segment by segment — one last, most visible pass of the through-line motif — as
+        // the question that closes the whole series lands.
+        tl.to("#f5-brokenline span", { opacity: 0.45, duration: 0.01 }, 0.1);
+        tl.to("#f5-brokenline span", { scaleX: 1, duration: 0.4, ease: "power2.out", stagger: 0.07 }, 0.1);
+        tl.to("#f5-l1", { opacity: 1, y: 0, duration: 0.55, ease: "power3.out" }, 0.35);
+
+        // Scene 2 (1.9-2.45s, cue "Je le connaîtrai en mai."): the answer, calm and flat
+        tl.to("#f5-l2", { opacity: 1, y: 0, duration: 0.55, ease: "power3.out" }, 1.9);
+
+        // Scene 3 (3.6-4.9s, cue "Le temps que quelqu'un, quelque part, recopie tout ça à la
+        // main."): the final clause of the entire nine-film series settles, smaller, quieter
+        tl.to("#f5-l3", { opacity: 1, y: 0, duration: 0.55, ease: "power3.out" }, 3.6);
+        tl.to("#f5-calendar-img", { opacity: 0.8, y: 0, duration: 0.5, ease: "power3.out" }, 4.2);
+
+        // Scene 4 (4.9-23.0s): a long, deliberate hold — the closing line of the whole series
+        // is left to sit, undisturbed, before the cut to the punchline card. Only a barely
+        // perceptible drift keeps the frame alive (broken line jitter + a slow, low-amplitude
+        // camera drift on the whole stage).
+        const f5phase = { p: 0 };
+        tl.to(f5phase, {
+          p: Math.PI * 2 * 2.1, duration: 6.0, ease: "none",
+          onUpdate: () => {
+            const s = Math.sin(f5phase.p);
+            gsap.set("#f5-brokenline", { y: s * 1.5 });
+          }
+        }, 5.0);
+
+        const f5stage = document.getElementById("f5-stage");
+        const f5drift = { p: 0 };
+        tl.to(f5drift, {
+          p: Math.PI * 2 * 2.2, duration: 18.0, ease: "none",
+          onUpdate: () => {
+            const s = Math.sin(f5drift.p);
+            const s2 = Math.sin(f5drift.p * 1.4);
+            f5stage.style.transform = `translate(${s * 3}px, ${s2 * 2}px) scale(${1 + s * 0.0025})`;
+          }
+        }, 4.9);
+
+        window.__timelines["05-vrai-chiffre-mars"] = tl;
+      </script>
+    </template>
+  </body>
+</html>

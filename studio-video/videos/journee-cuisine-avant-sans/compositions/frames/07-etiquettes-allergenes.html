@@ -1,0 +1,91 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+  </head>
+  <body>
+    <template>
+      <style>
+        @font-face { font-family: "Inter"; src: url("assets/fonts/Inter-400.woff2") format("woff2"); font-weight: 400; font-style: normal; font-display: block; }
+        @font-face { font-family: "Inter"; src: url("assets/fonts/Inter-500.woff2") format("woff2"); font-weight: 500; font-style: normal; font-display: block; }
+        @font-face { font-family: "Inter"; src: url("assets/fonts/Inter-700.woff2") format("woff2"); font-weight: 700; font-style: normal; font-display: block; }
+
+        #root {
+          position: relative;
+          width: 1920px;
+          height: 1080px;
+          overflow: hidden;
+          font-family: "Inter", sans-serif;
+          color: #3A3F45;
+        }
+        .f7-bg { position: absolute; inset: 0; background: #EDEEF0; }
+
+        .f7-photo { position: absolute; left: 170px; top: 210px; width: 640px; height: 640px; border: 1px solid #8A9099; box-shadow: 0 20px 50px rgba(20,22,25,0.14); overflow: hidden; }
+        .f7-photo img { width: 100%; height: 100%; object-fit: cover; filter: grayscale(0.85) contrast(1.05) brightness(1.05); display: block; }
+        .f7-photolabel { position: absolute; left: 170px; top: 864px; width: 640px; font-size: 30px; font-weight: 600; }
+
+        .f7-chips { position: absolute; right: 190px; top: 300px; width: 620px; }
+        .f7-chip {
+          display: flex; align-items: center; gap: 22px; padding: 20px 0;
+          border-bottom: 1px dashed #8A9099; opacity: 0;
+        }
+        .f7-chip .name { flex: 1; font-size: 34px; font-weight: 600; }
+        .f7-chip .q {
+          width: 44px; height: 44px; border-radius: 50%; border: 1px solid #8A9099;
+          color: rgba(58,63,69,0.85); font-size: 26px; font-weight: 700;
+          display: flex; align-items: center; justify-content: center;
+        }
+        .f7-espere { position: absolute; right: 190px; top: 720px; width: 620px; font-size: 30px; font-weight: 600; color: #D64545; opacity: 0; }
+      </style>
+
+      <div id="root" data-composition-id="07-etiquettes-allergenes" data-width="1920" data-height="1080" data-duration="10.501">
+        <div class="f7-bg clip" id="f7-bgclip" data-start="0" data-duration="10.501" data-track-index="0"></div>
+
+        <div class="f7-photo" id="f7-photo">
+          <img src="public/generated/marker-labels.jpg" alt="" />
+        </div>
+        <div class="f7-photolabel" id="f7-photolabel">étiquettes écrites au marqueur</div>
+
+        <div class="f7-chips">
+          <div class="f7-chip" id="f7-c1"><div class="name">gluten</div><div class="q">?</div></div>
+          <div class="f7-chip" id="f7-c2"><div class="name">lactose</div><div class="q">?</div></div>
+          <div class="f7-chip" id="f7-c3"><div class="name">fruits à coque</div><div class="q">?</div></div>
+          <div class="f7-chip" id="f7-c4"><div class="name">crustacés</div><div class="q">?</div></div>
+        </div>
+        <div class="f7-espere" id="f7-espere">— j'espère.</div>
+      </div>
+
+      <script>
+        window.__timelines = window.__timelines || {};
+        const tl = gsap.timeline({ paused: true });
+
+        gsap.set("#f7-photo", { opacity: 0, x: -40, scale: 0.96 });
+        gsap.set("#f7-photolabel", { opacity: 0 });
+        gsap.set(["#f7-c1", "#f7-c2", "#f7-c3", "#f7-c4"], { opacity: 0, y: 10 });
+        gsap.set("#f7-espere", { opacity: 0 });
+
+        // Scene 1 (0.0-1.15s): "Les étiquettes, je les écris au marqueur." — photo settles
+        tl.to("#f7-photo", { opacity: 1, x: 0, scale: 1, duration: 0.6, ease: "power3.out" }, 0.25);
+        tl.to("#f7-photolabel", { opacity: 1, duration: 0.35, ease: "power3.out" }, 0.65);
+
+        // Scene 2 (2.0-4.5s): "Les allergènes, je les connais par cœur" — chips stagger in,
+        // each with a "?" mark instead of a check (friction mark — a green check never appears here)
+        ["#f7-c1", "#f7-c2", "#f7-c3", "#f7-c4"].forEach((sel, i) => {
+          tl.to(sel, { opacity: 1, y: 0, duration: 0.4, ease: "power3.out" }, 2.1 + i * 0.35);
+        });
+
+        // Scene 3 (4.8-5.6s): "— j'espère." — the doubt lands, in the one red accent of the frame
+        tl.to("#f7-espere", { opacity: 1, duration: 0.4, ease: "power3.out" }, 4.9);
+
+        // Scene 4 (5.6-10.501s): hold — subtle jitter on the chip column only
+        const f7phase = { p: 0 };
+        tl.to(f7phase, {
+          p: Math.PI * 2 * 1.2, duration: 3.4, ease: "none",
+          onUpdate: () => { gsap.set(".f7-chips", { y: Math.sin(f7phase.p) * 1.4 }); }
+        }, 5.7);
+
+        window.__timelines["07-etiquettes-allergenes"] = tl;
+      </script>
+    </template>
+  </body>
+</html>

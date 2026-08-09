@@ -1,0 +1,162 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+  </head>
+  <body>
+    <template>
+      <style>
+        @font-face { font-family: "Inter"; src: url("assets/fonts/Inter-400.woff2") format("woff2"); font-weight: 400; font-style: normal; font-display: block; }
+        @font-face { font-family: "Inter"; src: url("assets/fonts/Inter-500.woff2") format("woff2"); font-weight: 500; font-style: normal; font-display: block; }
+        @font-face { font-family: "Inter"; src: url("assets/fonts/Inter-600.woff2") format("woff2"); font-weight: 600; font-style: normal; font-display: block; }
+        @font-face { font-family: "Inter"; src: url("assets/fonts/Inter-700.woff2") format("woff2"); font-weight: 700; font-style: normal; font-display: block; }
+        @font-face { font-family: "Inter"; src: url("assets/fonts/Inter-800.woff2") format("woff2"); font-weight: 800; font-style: normal; font-display: block; }
+
+        #root {
+          position: relative;
+          width: 1920px;
+          height: 1080px;
+          overflow: hidden;
+          font-family: "Inter", sans-serif;
+          color: #3A3F45;
+        }
+        .f1r-bg { position: absolute; inset: 0; background: #EDEEF0; }
+        .f1r-stage { position: absolute; inset: 0; }
+
+        .f1r-brokenline { position: absolute; left: 140px; right: 140px; top: 96px; height: 2px; }
+        .f1r-brokenline span {
+          position: absolute; top: 0; height: 2px; background: #8A9099; opacity: 0.55; transform-origin: 0% 50%;
+        }
+
+        .f1r-count { position: absolute; left: 140px; top: 150px; font-size: 200px; font-weight: 800; color: #D64545; line-height: 1; }
+        .f1r-count .suffix { display: block; font-size: 40px; font-weight: 600; color: rgba(58,63,69,0.85); margin-top: 14px; }
+
+        .f1r-photo {
+          position: absolute; right: 140px; top: 140px; width: 700px; height: 460px;
+          border: 1px solid #8A9099; box-shadow: 0 20px 50px rgba(20,22,25,0.14); overflow: hidden;
+        }
+        .f1r-photo img {
+          width: 100%; height: 100%; object-fit: cover; display: block;
+          filter: grayscale(0.9) contrast(1.08) brightness(0.96);
+        }
+
+        .f1r-timeline { position: absolute; left: 140px; right: 140px; top: 700px; height: 2px; background: rgba(58,63,69,0.18); }
+        .f1r-tick { position: absolute; top: -5px; width: 1px; height: 12px; background: #8A9099; }
+        .f1r-ticklabel { position: absolute; top: 16px; font-size: 20px; font-weight: 500; color: rgba(58,63,69,0.85); transform: translateX(-50%); }
+        .f1r-gap {
+          position: absolute; top: -2px; height: 6px; background: #D64545; opacity: 0;
+          transform-origin: 0% 50%;
+        }
+        .f1r-gaplabel {
+          position: absolute; top: 40px; font-size: 26px; font-weight: 600; color: #D64545; opacity: 0;
+        }
+
+        .f1r-closing {
+          position: absolute; left: 140px; right: 500px; top: 840px;
+          font-size: 40px; font-weight: 600; line-height: 1.35; color: #3A3F45; opacity: 0;
+        }
+        .f1r-qmark {
+          position: absolute; right: 200px; top: 800px; width: 130px; height: 130px;
+          border: 2px solid rgba(58,63,69,0.65); border-radius: 50%;
+          display: flex; align-items: center; justify-content: center;
+          font-size: 74px; font-weight: 700; color: rgba(58,63,69,0.65); opacity: 0;
+        }
+      </style>
+
+      <div id="root" data-composition-id="01-repondeur" data-width="1920" data-height="1080" data-duration="14">
+        <div class="f1r-bg clip" id="f1r-bgclip" data-start="0" data-duration="14" data-track-index="1"></div>
+
+        <div class="f1r-stage">
+          <div class="f1r-brokenline" id="f1r-brokenline">
+            <span style="left:0%; width:16%;"></span>
+            <span style="left:20%; width:22%; top:-3px;"></span>
+            <span style="left:46%; width:14%; top:2px;"></span>
+            <span style="left:64%; width:20%;"></span>
+            <span style="left:88%; width:12%; top:-2px;"></span>
+          </div>
+
+          <div class="f1r-count" id="f1r-count">0<span class="suffix">messages sur le répondeur</span></div>
+
+          <div class="f1r-photo" id="f1r-photo">
+            <img src="public/photos/answering-machine.jpg" alt="" />
+          </div>
+
+          <div class="f1r-timeline" id="f1r-timeline">
+            <div class="f1r-tick" style="left:0%;"></div><div class="f1r-ticklabel" style="left:0%;">9h</div>
+            <div class="f1r-tick" style="left:23%;"></div><div class="f1r-ticklabel" style="left:23%;">12h</div>
+            <div class="f1r-tick" style="left:46%;"></div><div class="f1r-ticklabel" style="left:46%;">15h</div>
+            <div class="f1r-tick" style="left:69%;"></div><div class="f1r-ticklabel" style="left:69%;">18h</div>
+            <div class="f1r-tick" style="left:100%;"></div><div class="f1r-ticklabel" style="left:100%;">22h</div>
+            <div class="f1r-gap" id="f1r-gap" style="left:46%; width:23%;"></div>
+          </div>
+          <div class="f1r-gaplabel" id="f1r-gaplabel" style="left:46%;">Personne n'a décroché</div>
+
+          <div class="f1r-closing" id="f1r-closing">On ne saura jamais combien ça nous a coûté.</div>
+          <div class="f1r-qmark" id="f1r-qmark">?</div>
+        </div>
+      </div>
+
+      <script>
+        window.__timelines = window.__timelines || {};
+        const tl = gsap.timeline({ paused: true });
+
+        gsap.set("#f1r-brokenline span", { opacity: 0, scaleX: 0 });
+        gsap.set("#f1r-count", { opacity: 0 });
+        gsap.set("#f1r-photo", { opacity: 0, x: 40 });
+        gsap.set("#f1r-gap", { opacity: 0, scaleX: 0 });
+        gsap.set("#f1r-gaplabel", { opacity: 0, y: 8 });
+        gsap.set("#f1r-closing", { opacity: 0, y: 12 });
+        gsap.set("#f1r-qmark", { opacity: 0, scale: 0.7 });
+
+        // Scene 1 (0.0-1.0s): broken line draws itself on
+        tl.to("#f1r-brokenline span", { opacity: 0.55, duration: 0.01 }, 0.15);
+        tl.to("#f1r-brokenline span", { scaleX: 1, duration: 0.4, ease: "power2.out", stagger: 0.08 }, 0.15);
+
+        // continuous low-amplitude drift, keeps the frame alive
+        const f1rdrift = { p: 0 };
+        const f1rstage = document.querySelector(".f1r-stage");
+        tl.to(f1rdrift, {
+          p: Math.PI * 2 * 3.6, duration: 13.4, ease: "none",
+          onUpdate: () => {
+            const s = Math.sin(f1rdrift.p);
+            f1rstage.style.transform = `translate(${s * 3}px, ${Math.sin(f1rdrift.p * 0.6) * 2}px) scale(${1 + s * 0.0025})`;
+          }
+        }, 0.3);
+
+        // Scene 2 (0.4-2.2s, cue "Le répondeur affiche onze messages."): the photo settles, the
+        // counter climbs from 0 to 11 on the beat.
+        tl.to("#f1r-photo", { opacity: 1, x: 0, duration: 0.6, ease: "power3.out" }, 0.5);
+        tl.to("#f1r-count", { opacity: 1, duration: 0.3 }, 1.0);
+        const f1rcount = { v: 0 };
+        const f1rEl = document.getElementById("f1r-count");
+        tl.to(f1rcount, {
+          v: 11, duration: 1.1, ease: "power2.out",
+          onUpdate: () => { f1rEl.firstChild.nodeValue = Math.round(f1rcount.v); }
+        }, 1.1);
+
+        // Scene 3 (2.4-4.5s, cue "Personne n'a décroché entre quinze heures et dix-huit heures."):
+        // the timeline draws, then the red gap segment grows to mark the unanswered window.
+        tl.to("#f1r-timeline", { opacity: 1, duration: 0.3 }, 2.4);
+        tl.to("#f1r-gap", { opacity: 1, scaleX: 1, duration: 0.7, ease: "power2.out" }, 2.9);
+        tl.to("#f1r-gaplabel", { opacity: 1, y: 0, duration: 0.4, ease: "power3.out" }, 3.4);
+
+        // Scene 4 (5.0-8.6s, cue "On ne saura jamais combien ça nous a coûté."): the closing line
+        // and the empty-cost "?" mark land together.
+        tl.to("#f1r-closing", { opacity: 1, y: 0, duration: 0.5, ease: "power3.out" }, 5.4);
+        tl.fromTo("#f1r-qmark", { opacity: 0, scale: 0.7 }, { opacity: 1, scale: 1, duration: 0.5, ease: "power3.out" }, 5.8);
+
+        // Scene 5 (8.6-14s): hold — subtle jitter on the "?" only
+        const f1rphase = { p: 0 };
+        tl.to(f1rphase, {
+          p: Math.PI * 2 * 1.6, duration: 2.0, ease: "none",
+          onUpdate: () => {
+            const s = Math.sin(f1rphase.p);
+            document.getElementById("f1r-qmark").style.transform = `scale(${1 + s * 0.012})`;
+          }
+        }, 8.7);
+
+        window.__timelines["01-repondeur"] = tl;
+      </script>
+    </template>
+  </body>
+</html>

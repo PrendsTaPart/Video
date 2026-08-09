@@ -1,0 +1,203 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+  </head>
+  <body>
+    <template>
+      <style>
+        @font-face { font-family: "Inter"; src: url("assets/fonts/Inter-400.woff2") format("woff2"); font-weight: 400; font-style: normal; font-display: block; }
+        @font-face { font-family: "Inter"; src: url("assets/fonts/Inter-500.woff2") format("woff2"); font-weight: 500; font-style: normal; font-display: block; }
+        @font-face { font-family: "Inter"; src: url("assets/fonts/Inter-600.woff2") format("woff2"); font-weight: 600; font-style: normal; font-display: block; }
+        @font-face { font-family: "Inter"; src: url("assets/fonts/Inter-700.woff2") format("woff2"); font-weight: 700; font-style: normal; font-display: block; }
+        @font-face { font-family: "Inter"; src: url("assets/fonts/Inter-800.woff2") format("woff2"); font-weight: 800; font-style: normal; font-display: block; }
+
+        #root {
+          position: relative;
+          width: 1920px;
+          height: 1080px;
+          overflow: hidden;
+          font-family: "Inter", sans-serif;
+          color: #3A3F45;
+        }
+        .f2-bg { position: absolute; inset: 0; background: #EDEEF0; }
+        .f2-stage { position: absolute; inset: 0; }
+
+        .f2-context { position: absolute; left: 140px; top: 80px; font-size: 30px; font-weight: 500; color: rgba(58,63,69,0.85); opacity: 0; }
+
+        .f2-station { position: absolute; top: 250px; width: 480px; opacity: 0; }
+        .f2-s1 { left: 180px; }
+        .f2-s2 { left: 720px; }
+        .f2-s3 { left: 1260px; }
+
+        .f2-panel {
+          position: relative; width: 480px; height: 380px;
+          border: 1px solid #8A9099; background: rgba(58,63,69,0.045);
+          overflow: hidden;
+        }
+        .f2-panel img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; opacity: 0.55; }
+
+        .f2-panel .cellwrap { position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; }
+        .f2-panel .cell {
+          background: rgba(237,238,240,0.94); border: 1px solid #8A9099;
+          padding: 14px 26px; font-size: 52px; font-weight: 700; color: #3A3F45;
+          font-variant-numeric: tabular-nums;
+        }
+        .f2-panel .caret { display: inline-block; width: 4px; height: 46px; background: #3A3F45; margin-left: 4px; vertical-align: -8px; }
+
+        .f2-label { margin-top: 22px; font-size: 30px; font-weight: 600; color: rgba(58,63,69,0.85); text-align: center; }
+        .f2-sub { margin-top: 6px; font-size: 22px; font-weight: 500; color: rgba(58,63,69,0.85); text-align: center; }
+
+        .f2-cursor-pos { position: absolute; left: 0; top: 0; width: 0; height: 0; }
+        .f2-cursor {
+          width: 0; height: 0;
+          border-left: 16px solid #3A3F45; border-bottom: 26px solid transparent;
+          transform-origin: 0 0;
+          filter: drop-shadow(0 1px 0 rgba(0,0,0,0.15));
+        }
+
+        .f2-connectors { position: absolute; left: 180px; right: 180px; top: 195px; height: 2px; }
+        .f2-connectors span { position: absolute; top: 0; height: 2px; background: #8A9099; opacity: 0; transform-origin: 0% 50%; }
+
+        .f2-echo { position: absolute; left: 0; right: 0; top: 800px; text-align: center; font-size: 26px; font-weight: 500; color: rgba(58,63,69,0.85); opacity: 0; }
+      </style>
+
+      <div id="root" data-composition-id="02-ticket-tableur-tva" data-width="1920" data-height="1080" data-duration="16.5">
+        <div class="f2-bg clip" id="f2-bgclip" data-start="0" data-duration="16.5" data-track-index="1"></div>
+
+        <div class="f2-stage" id="f2-stage">
+        <div class="f2-context" id="f2-context">22h50 — clôture</div>
+
+        <div class="f2-connectors" id="f2-connectors">
+          <span style="left:0%; width:22%;"></span>
+          <span style="left:26%; width:20%; top:-3px;"></span>
+          <span style="left:52%; width:22%; top:2px;"></span>
+          <span style="left:78%; width:22%;"></span>
+        </div>
+
+        <div class="f2-station f2-s1" id="f2-s1">
+          <div class="f2-panel">
+            <img src="public/generated/receipt-printer-z.jpg" alt="" />
+          </div>
+          <div class="f2-label">Ticket Z</div>
+          <div class="f2-sub">un système</div>
+        </div>
+
+        <div class="f2-station f2-s2" id="f2-s2">
+          <div class="f2-panel">
+            <img src="public/generated/04-tableur.jpg" alt="" />
+            <div class="cellwrap"><span class="cell" id="f2-cell">0,00</span><span class="caret" id="f2-caret"></span></div>
+          </div>
+          <div class="f2-label">Recettes recopiées</div>
+          <div class="f2-sub">un tableur, à la main</div>
+        </div>
+
+        <div class="f2-station f2-s3" id="f2-s3">
+          <div class="f2-panel">
+            <img src="public/generated/calculator.jpg" alt="" />
+            <div class="cellwrap"><span class="cell" id="f2-cell2">0,00</span><span class="caret" id="f2-caret2"></span></div>
+          </div>
+          <div class="f2-label">TVA calculée à part</div>
+          <div class="f2-sub">une feuille différente</div>
+        </div>
+
+        <div class="f2-cursor-pos" id="f2-cursor-pos"><div class="f2-cursor" id="f2-cursor"></div></div>
+
+        <div class="f2-echo" id="f2-echo">3 outils. Aucun lien entre eux.</div>
+        </div>
+      </div>
+
+      <script>
+        window.__timelines = window.__timelines || {};
+        const tl = gsap.timeline({ paused: true });
+
+        gsap.set("#f2-context", { opacity: 0, y: 10 });
+        gsap.set(["#f2-s1", "#f2-s2", "#f2-s3"], { opacity: 0, y: 16 });
+        gsap.set("#f2-connectors span", { opacity: 0, scaleX: 0 });
+        gsap.set("#f2-cursor-pos", { x: 400, y: 430, opacity: 0 });
+        gsap.set("#f2-caret", { opacity: 0 });
+        gsap.set("#f2-caret2", { opacity: 0 });
+        gsap.set("#f2-echo", { opacity: 0, y: 10 });
+
+        function moveCursor2(x, y, dur, at, ease) {
+          tl.to("#f2-cursor-pos", { x, y, duration: dur, ease: ease || "power2.inOut" }, at);
+        }
+
+        // Scene 1 (0.0-0.9s): context label settles — the last clock-check of the night
+        tl.to("#f2-context", { opacity: 1, y: 0, duration: 0.5, ease: "power3.out" }, 0.2);
+
+        // Scene 2 (0.4-2.9s, cue "Le ticket Z sort d'un système."): station 1 reveals
+        tl.to("#f2-s1", { opacity: 1, y: 0, duration: 0.45, ease: "power3.out" }, 0.6);
+        tl.to("#f2-cursor-pos", { opacity: 1, duration: 0.2 }, 1.6);
+
+        // Scene 3 (2.9-3.6s): connector 1 draws — the eye is asked to follow a link that doesn't
+        // really exist (broken, never a solid joining line)
+        tl.to("#f2-connectors span:nth-child(1)", { opacity: 0.5, scaleX: 1, duration: 0.35, ease: "power2.out" }, 2.9);
+
+        // Scene 4 (3.2-4.1s): station 2 (the spreadsheet) reveals, cursor travels toward it —
+        // resting just below-right of the cell, never on top of the digits it's about to type.
+        tl.to("#f2-s2", { opacity: 1, y: 0, duration: 0.45, ease: "power3.out" }, 3.2);
+        moveCursor2(1105, 500, 0.7, 3.3, "power2.inOut");
+
+        // Scene 5 (4.1-6.6s, cue "Les recettes, je les reporte à la main dans un tableur."):
+        // the recette is typed into the cell by hand, digit by digit — the film's central gesture.
+        const f2cell = document.getElementById("f2-cell");
+        const seqRecette = "1 842,50";
+        tl.to("#f2-caret", { opacity: 1, duration: 0.01 }, 4.15);
+        tl.call(() => { f2cell.textContent = ""; }, [], 4.15);
+        for (let i = 1; i <= seqRecette.length; i++) {
+          tl.call(() => { f2cell.textContent = seqRecette.slice(0, i); }, [], 4.2 + i * 0.14);
+        }
+        tl.to("#f2-cursor", { scale: 0.85, duration: 0.08, ease: "power2.in", yoyo: true, repeat: 1 }, 4.3);
+
+        // Scene 6 (6.6-7.4s): connector 2 draws, hold on the typed value
+        tl.to("#f2-connectors span:nth-child(2)", { opacity: 0.5, scaleX: 1, duration: 0.35, ease: "power2.out" }, 6.7);
+
+        // Scene 7 (7.4-8.3s, cue "La TVA, je la calcule à part,"): station 3 (calculator + a
+        // DIFFERENT sheet) reveals — the point is the separateness, not the device itself.
+        tl.to("#f2-s3", { opacity: 1, y: 0, duration: 0.45, ease: "power3.out" }, 7.5);
+        tl.to("#f2-connectors span:nth-child(3)", { opacity: 0.5, scaleX: 1, duration: 0.35, ease: "power2.out" }, 7.7);
+        moveCursor2(1645, 500, 0.7, 7.9, "power2.inOut");
+
+        // Scene 8 (8.3-11.0s, cue "sur une feuille différente."): TVA figure typed into the
+        // second, unrelated cell — a second manual re-entry of numbers already known.
+        const f2cell2 = document.getElementById("f2-cell2");
+        const seqTva = "184,25";
+        tl.to("#f2-caret2", { opacity: 1, duration: 0.01 }, 8.6);
+        tl.call(() => { f2cell2.textContent = ""; }, [], 8.6);
+        for (let i = 1; i <= seqTva.length; i++) {
+          tl.call(() => { f2cell2.textContent = seqTva.slice(0, i); }, [], 8.65 + i * 0.14);
+        }
+        tl.to("#f2-cursor", { scale: 0.85, duration: 0.08, ease: "power2.in", yoyo: true, repeat: 1 }, 8.7);
+        tl.to("#f2-connectors span:nth-child(4)", { opacity: 0.5, scaleX: 1, duration: 0.35, ease: "power2.out" }, 10.4);
+
+        // Scene 9 (10.7-11.9s): the punch line lands — three tools, laid bare, no real link
+        tl.to("#f2-echo", { opacity: 1, y: 0, duration: 0.5, ease: "power3.out" }, 10.9);
+
+        // Scene 10 (11.9-16.5s): hold — the whole board sits still, a slow low-amplitude stage
+        // drift (multi-phase-camera doctrine) keeps the frame alive without adding new information.
+        const f2phase = { p: 0 };
+        tl.to(f2phase, {
+          p: Math.PI * 2 * 1.6, duration: 3.6, ease: "none",
+          onUpdate: () => {
+            const s = Math.sin(f2phase.p);
+            gsap.set("#f2-cursor-pos", { y: 500 + s * 1.5 });
+          }
+        }, 12.0);
+
+        const f2stage = document.getElementById("f2-stage");
+        const f2drift = { p: 0 };
+        tl.to(f2drift, {
+          p: Math.PI * 2 * 4.5, duration: 16.0, ease: "none",
+          onUpdate: () => {
+            const s = Math.sin(f2drift.p);
+            const s2 = Math.sin(f2drift.p * 1.3);
+            f2stage.style.transform = `translate(${s * 1}px, ${s2 * 0.8}px)`;
+          }
+        }, 0.2);
+
+        window.__timelines["02-ticket-tableur-tva"] = tl;
+      </script>
+    </template>
+  </body>
+</html>

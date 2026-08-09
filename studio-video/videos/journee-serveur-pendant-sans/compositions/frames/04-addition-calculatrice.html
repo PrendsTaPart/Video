@@ -1,0 +1,142 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+  </head>
+  <body>
+    <template>
+      <style>
+        @font-face { font-family: "Inter"; src: url("assets/fonts/Inter-400.woff2") format("woff2"); font-weight: 400; font-style: normal; font-display: block; }
+        @font-face { font-family: "Inter"; src: url("assets/fonts/Inter-500.woff2") format("woff2"); font-weight: 500; font-style: normal; font-display: block; }
+        @font-face { font-family: "Inter"; src: url("assets/fonts/Inter-700.woff2") format("woff2"); font-weight: 700; font-style: normal; font-display: block; }
+        @font-face { font-family: "Inter"; src: url("assets/fonts/Inter-800.woff2") format("woff2"); font-weight: 800; font-style: normal; font-display: block; }
+
+        #root {
+          position: relative;
+          width: 1920px;
+          height: 1080px;
+          overflow: hidden;
+          font-family: "Inter", sans-serif;
+          color: #3A3F45;
+        }
+        .fd-bg { position: absolute; inset: 0; background: #EDEEF0; }
+        .fd-stage { position: absolute; inset: 0; }
+
+        .fd-context { position: absolute; left: 140px; top: 56px; font-size: 26px; font-weight: 500; color: rgba(58,63,69,0.85); }
+
+        .fd-receipt {
+          position: absolute; left: 200px; top: 190px; width: 560px; height: 660px;
+          border: 1px solid #8A9099; background: rgba(58,63,69,0.045);
+          box-sizing: border-box; padding: 40px 36px;
+          opacity: 0;
+        }
+        .fd-receipt .row { display: flex; justify-content: space-between; padding: 12px 0; border-bottom: 1px dashed #8A9099; font-size: 24px; font-weight: 500; color: rgba(58,63,69,0.85); }
+        .fd-receipt .total { display: flex; justify-content: space-between; padding-top: 26px; font-size: 40px; font-weight: 700; }
+
+        .fd-split { position: absolute; left: 782px; width: 190px; text-align: left; opacity: 0; }
+        .fd-split .mark { display: inline-block; font-size: 110px; font-weight: 800; color: #D64545; line-height: 1; transform: rotate(-8deg); }
+
+        .fd-photo {
+          position: absolute; right: 210px; top: 190px; width: 620px; height: 620px;
+          border: 1px solid #8A9099; overflow: hidden; opacity: 0;
+        }
+        .fd-photo img {
+          width: 100%; height: 100%; object-fit: cover;
+          filter: grayscale(0.85) contrast(1.05) brightness(0.96) sepia(0.06);
+        }
+        .fd-photo .wash { position: absolute; inset: 0; background: rgba(58,63,69,0.12); }
+
+        .fd-chips { position: absolute; right: 210px; top: 838px; width: 620px; display: flex; gap: 14px; flex-wrap: wrap; }
+        .fd-chips .chip {
+          border: 1px solid #8A9099; padding: 14px 22px; font-size: 24px; font-weight: 600;
+          color: rgba(58,63,69,0.85); opacity: 0;
+        }
+
+        .fd-flag { position: absolute; left: 200px; top: 872px; width: 560px; height: 2px; background: #D64545; opacity: 0; }
+        .fd-footnote { position: absolute; left: 200px; top: 900px; font-size: 24px; font-weight: 500; color: rgba(58,63,69,0.85); opacity: 0; }
+      </style>
+
+      <div id="root" data-composition-id="04-addition-calculatrice" data-width="1920" data-height="1080" data-duration="11.0">
+        <div class="fd-bg clip" id="fd-bgclip" data-start="0" data-duration="11.0" data-track-index="0"></div>
+
+        <div class="fd-stage" id="fd-stage">
+          <div class="fd-context" id="fd-context">table 12</div>
+
+          <div class="fd-receipt" id="fd-receipt">
+            <div class="row"><span>plat</span><span>18,00 €</span></div>
+            <div class="row"><span>plat</span><span>16,50 €</span></div>
+            <div class="row"><span>boissons</span><span>22,00 €</span></div>
+            <div class="row"><span>dessert</span><span>17,50 €</span></div>
+            <div class="total"><span>total</span><span>94,00 €</span></div>
+          </div>
+
+          <div class="fd-split" id="fd-split" style="top: 380px;"><span class="mark">÷4</span></div>
+
+          <div class="fd-photo" id="fd-photo">
+            <div class="wash"></div>
+            <img src="public/generated/calculator.jpg" alt="" />
+          </div>
+
+          <div class="fd-chips" id="fd-chips">
+            <div class="chip" id="fd-c1">23,50 €</div>
+            <div class="chip" id="fd-c2">23,50 €</div>
+            <div class="chip" id="fd-c3">23,50 €</div>
+            <div class="chip" id="fd-c4">23,50 €</div>
+          </div>
+
+          <div class="fd-flag" id="fd-flag"></div>
+          <div class="fd-footnote" id="fd-footnote">à la main, à chaque table</div>
+        </div>
+      </div>
+
+      <script>
+        window.__timelines = window.__timelines || {};
+        const tl = gsap.timeline({ paused: true });
+
+        gsap.set("#fd-context", { opacity: 0 });
+        gsap.set("#fd-receipt", { opacity: 0, y: 14 });
+        gsap.set("#fd-split", { opacity: 0, scale: 0 });
+        gsap.set("#fd-photo", { opacity: 0, x: 20, scale: 0.96 });
+        gsap.set(["#fd-c1", "#fd-c2", "#fd-c3", "#fd-c4"], { opacity: 0, y: 8 });
+        gsap.set("#fd-flag", { opacity: 0 });
+        gsap.set("#fd-footnote", { opacity: 0, y: 8 });
+
+        // Scene 1 (0.0-1.0s): context label, the receipt settles in
+        tl.to("#fd-context", { opacity: 1, duration: 0.4, ease: "power3.out" }, 0.25);
+        tl.to("#fd-receipt", { opacity: 1, y: 0, duration: 0.45, ease: "power3.out" }, 0.4);
+
+        // Scene 2 (1.0-2.74s, cue "Une table demande à séparer l'addition en quatre."):
+        // the split mark pops onto the total — the request, made visible.
+        tl.fromTo("#fd-split", { opacity: 0, scale: 0 }, { opacity: 1, scale: 1, duration: 0.45, ease: "back.out(1.6)" }, 1.5);
+
+        // Scene 3 (2.74-3.6s, cue "Je sors la calculatrice."): the desaturated, real-world tool
+        // slides in — the one photographic object in this frame, muted to the film's palette.
+        tl.to("#fd-photo", { opacity: 1, x: 0, scale: 1, duration: 0.5, ease: "power3.out" }, 2.8);
+
+        // Scene 4 (3.6-4.74s): a thin red flag under the receipt — no built-in way to do this
+        tl.to("#fd-flag", { opacity: 0.8, duration: 0.3, ease: "power3.out" }, 3.7);
+        tl.to("#fd-footnote", { opacity: 1, y: 0, duration: 0.35, ease: "power3.out" }, 3.85);
+
+        // Scene 5 (4.9-6.9s): four shares appear one by one — the arithmetic, done by hand
+        tl.to("#fd-c1", { opacity: 1, y: 0, duration: 0.3, ease: "power3.out" }, 4.9);
+        tl.to("#fd-c2", { opacity: 1, y: 0, duration: 0.3, ease: "power3.out" }, 5.4);
+        tl.to("#fd-c3", { opacity: 1, y: 0, duration: 0.3, ease: "power3.out" }, 5.9);
+        tl.to("#fd-c4", { opacity: 1, y: 0, duration: 0.3, ease: "power3.out" }, 6.4);
+
+        // Scene 6 (7.0-11.0s): hold — low-amplitude drift
+        const fdStage = document.getElementById("fd-stage");
+        const fdDrift = { p: 0 };
+        tl.to(fdDrift, {
+          p: Math.PI * 2 * 3.0, duration: 10.5, ease: "none",
+          onUpdate: () => {
+            const s = Math.sin(fdDrift.p);
+            const s2 = Math.sin(fdDrift.p * 1.3);
+            fdStage.style.transform = `translate(${s * 2.2}px, ${s2 * 1.5}px) scale(${1 + s * 0.002})`;
+          }
+        }, 0.2);
+
+        window.__timelines["04-addition-calculatrice"] = tl;
+      </script>
+    </template>
+  </body>
+</html>

@@ -1,0 +1,129 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+  </head>
+  <body>
+    <template>
+      <style>
+        @font-face { font-family: "Inter"; src: url("assets/fonts/Inter-400.woff2") format("woff2"); font-weight: 400; font-style: normal; font-display: block; }
+        @font-face { font-family: "Inter"; src: url("assets/fonts/Inter-500.woff2") format("woff2"); font-weight: 500; font-style: normal; font-display: block; }
+        @font-face { font-family: "Inter"; src: url("assets/fonts/Inter-600.woff2") format("woff2"); font-weight: 600; font-style: normal; font-display: block; }
+        @font-face { font-family: "Inter"; src: url("assets/fonts/Inter-700.woff2") format("woff2"); font-weight: 700; font-style: normal; font-display: block; }
+        @font-face { font-family: "Inter"; src: url("assets/fonts/Inter-800.woff2") format("woff2"); font-weight: 800; font-style: normal; font-display: block; }
+
+        #root {
+          position: relative;
+          width: 1920px;
+          height: 1080px;
+          overflow: hidden;
+          font-family: "Inter", sans-serif;
+          color: #3A3F45;
+        }
+        .f1-bg { position: absolute; inset: 0; background: #EDEEF0; }
+
+        .f1-brokenline { position: absolute; left: 200px; right: 200px; top: 210px; height: 2px; }
+        .f1-brokenline span { position: absolute; top: 0; height: 2px; background: #8A9099; opacity: 0.5; transform-origin: 0% 50%; }
+
+        .f1-lines { position: absolute; left: 0; right: 0; top: 280px; text-align: center; }
+        .f1-line { font-size: 50px; font-weight: 500; color: rgba(58,63,69,0.85); margin-bottom: 16px; opacity: 0; }
+        .f1-line.emph { font-weight: 700; color: #3A3F45; }
+        .f1-line.emph .accent { color: #D64545; }
+
+        .f1-diagram { position: absolute; left: 0; right: 0; top: 560px; text-align: center; opacity: 0; }
+        .f1-floors { position: relative; display: inline-block; width: 720px; }
+        .f1-floor {
+          border: 1px solid #8A9099; background: rgba(58,63,69,0.045);
+          padding: 26px 0; margin-bottom: 18px;
+        }
+        .f1-floor .flabel { font-size: 22px; font-weight: 600; letter-spacing: 3px; text-transform: uppercase; color: rgba(58,63,69,0.85); }
+        .f1-floor.salle { border-style: dashed; position: relative; height: 190px; padding-top: 18px; }
+        .f1-floor.salle .flabel { position: absolute; left: 24px; top: 18px; }
+        .f1-qmark {
+          position: absolute; left: 50%; top: 118px; margin-left: -34px; margin-top: -34px;
+          width: 68px; height: 68px; border: 2px solid #D64545; border-radius: 50%;
+          display: flex; align-items: center; justify-content: center;
+          font-size: 44px; font-weight: 800; color: #D64545; opacity: 0;
+        }
+        .f1-arrow { position: absolute; left: 50%; margin-left: -1px; top: 176px; width: 2px; height: 40px; background: #8A9099; opacity: 0; }
+        .f1-arrow::after {
+          content: ""; position: absolute; left: -6px; bottom: -2px;
+          border: 6px solid transparent; border-top-color: #8A9099;
+        }
+      </style>
+
+      <div id="root" data-composition-id="01-pas-en-salle" data-width="1920" data-height="1080" data-duration="11.498">
+        <div class="f1-bg clip" id="f1-bgclip" data-start="0" data-duration="11.498" data-track-index="0"></div>
+
+        <div class="f1-brokenline" id="f1-brokenline">
+          <span style="left:4%; width:16%;"></span>
+          <span style="left:26%; width:20%; top:-3px;"></span>
+          <span style="left:52%; width:14%; top:2px;"></span>
+          <span style="left:72%; width:22%;"></span>
+        </div>
+
+        <div class="f1-lines" id="f1-lines">
+          <div class="f1-line" id="f1-l1">Je ne suis pas en salle.</div>
+          <div class="f1-line" id="f1-l2">Je ne sais pas ce qui s'y passe.</div>
+          <div class="f1-line emph" id="f1-l3">Je descends <span class="accent">voir</span>.</div>
+        </div>
+
+        <div class="f1-diagram" id="f1-diagram">
+          <div class="f1-floors">
+            <div class="f1-floor bureau"><span class="flabel">bureau</span></div>
+            <div class="f1-arrow" id="f1-arrow"></div>
+            <div class="f1-floor salle">
+              <span class="flabel">salle</span>
+              <div class="f1-qmark" id="f1-qmark">?</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <script>
+        window.__timelines = window.__timelines || {};
+        const tl = gsap.timeline({ paused: true });
+
+        gsap.set("#f1-brokenline span", { opacity: 0, scaleX: 0 });
+        gsap.set(["#f1-l1", "#f1-l2", "#f1-l3"], { opacity: 0, y: 12 });
+        gsap.set("#f1-diagram", { opacity: 0, y: 14 });
+        gsap.set("#f1-arrow", { opacity: 0 });
+        gsap.set("#f1-qmark", { opacity: 0, scale: 0 });
+
+        // Scene 0 (0.0-0.6s): the crossfade from the context frame lands here — broken line
+        // draws itself on, segment by segment.
+        tl.to("#f1-brokenline span", { opacity: 0.5, duration: 0.01 }, 0.1);
+        tl.to("#f1-brokenline span", { scaleX: 1, duration: 0.4, ease: "power2.out", stagger: 0.08 }, 0.1);
+
+        // Scene 1 (0.0-1.45s, cue "Je ne suis pas en salle."): line 1
+        tl.to("#f1-l1", { opacity: 1, y: 0, duration: 0.4, ease: "power3.out" }, 0.25);
+
+        // Scene 2 (1.45-3.37s, cue "Je ne sais pas ce qui s'y passe."): line 2
+        tl.to("#f1-l2", { opacity: 1, y: 0, duration: 0.4, ease: "power3.out" }, 1.55);
+
+        // Scene 3 (3.37-4.41s, cue "Je descends voir."): line 3, the resolve
+        tl.to("#f1-l3", { opacity: 1, y: 0, duration: 0.45, ease: "power3.out" }, 3.45);
+
+        // Scene 4 (4.6-6.3s): the two-floor diagram settles in as the speech ends — bureau
+        // above, salle below, a broken connector between them that never resolves into a
+        // continuous stroke, and the red "?" sitting where certainty should be.
+        tl.to("#f1-diagram", { opacity: 1, y: 0, duration: 0.55, ease: "power3.out" }, 4.6);
+        tl.to("#f1-arrow", { opacity: 0.7, duration: 0.4, ease: "power3.out" }, 5.1);
+        tl.fromTo("#f1-qmark", { opacity: 0, scale: 0 }, { opacity: 1, scale: 1, duration: 0.5, ease: "power3.out" }, 5.6);
+
+        // Scene 5 (6.3-11.498s): long silent hold — he is on his way down, still nothing
+        // resolved. Barely-perceptible jitter on the "?" only, deterministic sine.
+        const f1phase = { p: 0 };
+        tl.to(f1phase, {
+          p: Math.PI * 2 * 1.6, duration: 4.9, ease: "none",
+          onUpdate: () => {
+            const s = Math.sin(f1phase.p);
+            gsap.set("#f1-qmark", { y: s * 2, scale: 1 + s * 0.01 });
+          }
+        }, 6.4);
+
+        window.__timelines["01-pas-en-salle"] = tl;
+      </script>
+    </template>
+  </body>
+</html>

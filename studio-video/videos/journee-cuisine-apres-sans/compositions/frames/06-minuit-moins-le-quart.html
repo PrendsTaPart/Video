@@ -1,0 +1,136 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+  </head>
+  <body>
+    <template>
+      <style>
+        @font-face { font-family: "Inter"; src: url("assets/fonts/Inter-400.woff2") format("woff2"); font-weight: 400; font-style: normal; font-display: block; }
+        @font-face { font-family: "Inter"; src: url("assets/fonts/Inter-500.woff2") format("woff2"); font-weight: 500; font-style: normal; font-display: block; }
+        @font-face { font-family: "Inter"; src: url("assets/fonts/Inter-600.woff2") format("woff2"); font-weight: 600; font-style: normal; font-display: block; }
+        @font-face { font-family: "Inter"; src: url("assets/fonts/Inter-700.woff2") format("woff2"); font-weight: 700; font-style: normal; font-display: block; }
+        @font-face { font-family: "Inter"; src: url("assets/fonts/Inter-800.woff2") format("woff2"); font-weight: 800; font-style: normal; font-display: block; }
+
+        #root {
+          position: relative;
+          width: 1920px;
+          height: 1080px;
+          overflow: hidden;
+          font-family: "Inter", sans-serif;
+          color: #3A3F45;
+        }
+        .g6-bg { position: absolute; inset: 0; background: #EDEEF0; }
+        .g6-stage { position: absolute; inset: 0; }
+
+        .g6-brokenline { position: absolute; left: 200px; right: 200px; top: 96px; height: 2px; }
+        .g6-brokenline span { position: absolute; top: 0; height: 2px; background: #8A9099; opacity: 0.5; transform-origin: 0% 50%; }
+
+        .g6-clock {
+          position: absolute; left: 0; right: 0; top: 150px; text-align: center;
+          font-size: 170px; font-weight: 800; letter-spacing: -0.01em; line-height: 1; opacity: 0;
+          font-variant-numeric: tabular-nums;
+        }
+        .g6-clocklabel {
+          position: absolute; left: 0; right: 0; top: 366px; text-align: center;
+          font-size: 30px; font-weight: 500; letter-spacing: 0.12em; text-transform: uppercase;
+          color: rgba(58,63,69,0.85); opacity: 0;
+        }
+
+        .g6-punch1 {
+          position: absolute; left: 0; right: 0; top: 460px; text-align: center;
+          font-size: 70px; font-weight: 800; opacity: 0;
+        }
+        .g6-punch2 {
+          position: absolute; left: 0; right: 0; top: 580px; text-align: center;
+          font-size: 36px; font-weight: 600; color: rgba(58,63,69,0.85); width: 1200px; margin: 0 auto;
+          left: 0; right: 0; opacity: 0;
+        }
+
+        .g6-binder {
+          position: absolute; left: 50%; top: 690px; margin-left: -170px;
+          width: 340px; height: 230px; border: 1px solid #8A9099;
+          box-shadow: 0 20px 44px rgba(20,22,25,0.14); overflow: hidden; opacity: 0;
+        }
+        .g6-binder img {
+          width: 100%; height: 100%; object-fit: cover;
+          filter: grayscale(1) contrast(1.08) brightness(0.98);
+          display: block;
+        }
+        .g6-tag {
+          position: absolute; left: 50%; top: 660px; margin-left: 60px;
+          padding: 10px 20px; border: 2px solid #D64545; color: #D64545;
+          font-size: 22px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase;
+          background: #EDEEF0; opacity: 0;
+        }
+      </style>
+
+      <div id="root" data-composition-id="06-minuit-moins-le-quart" data-width="1920" data-height="1080" data-duration="6.5">
+        <div class="g6-bg clip" id="g6-bgclip" data-start="0" data-duration="6.5" data-track-index="1"></div>
+
+        <div class="g6-stage" id="g6-stage">
+          <div class="g6-brokenline" id="g6-brokenline">
+            <span style="left:2%; width:14%;"></span>
+            <span style="left:22%; width:18%; top:-3px;"></span>
+            <span style="left:46%; width:12%; top:2px;"></span>
+            <span style="left:64%; width:20%;"></span>
+            <span style="left:88%; width:10%; top:-2px;"></span>
+          </div>
+
+          <div class="g6-clock" id="g6-clock">23H45</div>
+          <div class="g6-clocklabel" id="g6-clocklabel">minuit moins le quart</div>
+
+          <div class="g6-punch1" id="g6-punch1">Je ferme.</div>
+          <div class="g6-punch2" id="g6-punch2">Le classeur, lui, reste ouvert jusqu'à demain.</div>
+
+          <div class="g6-binder" id="g6-binder"><img src="public/generated/haccp-binder.jpg" alt="" /></div>
+          <div class="g6-tag" id="g6-tag">Ouvert</div>
+        </div>
+      </div>
+
+      <script>
+        window.__timelines = window.__timelines || {};
+        const tl = gsap.timeline({ paused: true });
+
+        gsap.set("#g6-brokenline span", { opacity: 0, scaleX: 0 });
+        gsap.set("#g6-clock", { opacity: 0, y: 12 });
+        gsap.set("#g6-clocklabel", { opacity: 0 });
+        gsap.set("#g6-punch1", { opacity: 0, y: 14 });
+        gsap.set("#g6-punch2", { opacity: 0, y: 12 });
+        gsap.set("#g6-binder", { opacity: 0, scale: 0.92 });
+        gsap.set("#g6-tag", { opacity: 0, y: -6 });
+
+        // Scene 1 (0.0-0.6s): broken line draws itself on
+        tl.to("#g6-brokenline span", { opacity: 0.5, duration: 0.01 }, 0.1);
+        tl.to("#g6-brokenline span", { scaleX: 1, duration: 0.4, ease: "power2.out", stagger: 0.07 }, 0.1);
+
+        // Scene 2 (0.2-1.0s, cue "Minuit moins le quart."): the clock lands — the closing bookend
+        // to Frame 1's opening clock, same register, same anthracite (no alert red on the time itself)
+        tl.fromTo("#g6-clock", { opacity: 0, y: 12 }, { opacity: 1, y: 0, duration: 0.5, ease: "power3.out" }, 0.25);
+        tl.to("#g6-clocklabel", { opacity: 1, duration: 0.4, ease: "power3.out" }, 0.55);
+
+        // Scene 3 (1.6-2.2s, cue "Je ferme."): the short punch line
+        tl.to("#g6-punch1", { opacity: 1, y: 0, duration: 0.5, ease: "power3.out" }, 1.65);
+
+        // Scene 4 (2.6-3.6s, cue "Le classeur, lui, reste ouvert jusqu'à demain."): the closing
+        // line, the binder photo (same object as Frame 3, the throughline) and its red "still open"
+        // tag land together
+        tl.to("#g6-punch2", { opacity: 1, y: 0, duration: 0.5, ease: "power3.out" }, 2.65);
+        tl.fromTo("#g6-binder", { opacity: 0, scale: 0.92 }, { opacity: 1, scale: 1, duration: 0.5, ease: "power3.out" }, 2.9);
+        tl.fromTo("#g6-tag", { opacity: 0, y: -6 }, { opacity: 1, y: 0, duration: 0.4, ease: "power3.out" }, 3.15);
+
+        // Scene 5 (3.6-6.5s): hold — subtle jitter on the tag only, the film's last visible motion
+        const g6phase = { p: 0 };
+        tl.to(g6phase, {
+          p: Math.PI * 2 * 1.0, duration: 2.9, ease: "none",
+          onUpdate: () => {
+            const s = Math.sin(g6phase.p);
+            gsap.set("#g6-tag", { scale: 1 + s * 0.02 });
+          }
+        }, 3.6);
+
+        window.__timelines["06-minuit-moins-le-quart"] = tl;
+      </script>
+    </template>
+  </body>
+</html>

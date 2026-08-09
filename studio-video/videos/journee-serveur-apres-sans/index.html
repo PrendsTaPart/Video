@@ -1,0 +1,272 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=1920, height=1080" />
+    <script src="assets/vendor/gsap.min.js"></script>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      html,
+      body {
+        width: 1920px;
+        height: 1080px;
+        overflow: hidden;
+        background: #000;
+      }
+      #root {
+        position: relative;
+        width: 1920px;
+        height: 1080px;
+        overflow: hidden;
+        background: #EDEEF0;
+      }
+      .scene {
+        position: absolute;
+        inset: 0;
+        width: 100%;
+        height: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <div
+      id="root"
+      data-composition-id="main"
+      data-start="0"
+      data-duration="96.282"
+      data-width="1920"
+      data-height="1080"
+    >
+      <!-- opening title card: "Une journée SANS FoodEatUp" — bookends the closing card,
+           same marine charter break, before the film drops into the desaturated "sans" world.
+           Reused verbatim from the pilot (journee-directeur-avant-sans). -->
+      <div
+        id="el-00-titre"
+        class="scene"
+        data-composition-id="00-titre"
+        data-composition-src="compositions/frames/00-titre.html"
+        data-start="0"
+        data-duration="3.5"
+        data-track-index="0"
+      ></div>
+
+      <!-- context frame: shared series premise ("chaque tâche, son outil") — reused verbatim
+           from the pilot, same VO clip. -->
+      <div
+        id="el-00b-contexte"
+        class="scene"
+        data-composition-id="00b-contexte"
+        data-composition-src="compositions/frames/00b-contexte.html"
+        data-start="3.5"
+        data-duration="22.782"
+        data-track-index="1"
+      ></div>
+      <audio
+        id="el-00b-contexte-voice"
+        src="assets/audio/vo-00b.mp3"
+        data-start="3.5"
+        data-duration="22.282"
+        data-track-index="10"
+        data-volume="1"
+      ></audio>
+
+      <!-- ===== body: S3s — Salle, après le service (60.0s, 26.282 -> 86.282) ===== -->
+
+      <div
+        id="el-01-caisse-fermee"
+        class="scene"
+        data-composition-id="01-caisse-fermee"
+        data-composition-src="compositions/frames/01-caisse-fermee.html"
+        data-start="26.282"
+        data-duration="10.5"
+        data-track-index="0"
+      ></div>
+      <audio
+        id="el-01-caisse-fermee-voice"
+        src="assets/audio/vo-01.mp3"
+        data-start="26.282"
+        data-duration="10.0"
+        data-track-index="10"
+        data-volume="1"
+      ></audio>
+
+      <div
+        id="el-02-ticket-tableur-tva"
+        class="scene"
+        data-composition-id="02-ticket-tableur-tva"
+        data-composition-src="compositions/frames/02-ticket-tableur-tva.html"
+        data-start="36.782"
+        data-duration="16.5"
+        data-track-index="1"
+      ></div>
+      <audio
+        id="el-02-ticket-tableur-tva-voice"
+        src="assets/audio/vo-02.mp3"
+        data-start="36.782"
+        data-duration="16.0"
+        data-track-index="10"
+        data-volume="1"
+      ></audio>
+
+      <div
+        id="el-03-vingt-minutes"
+        class="scene"
+        data-composition-id="03-vingt-minutes"
+        data-composition-src="compositions/frames/03-vingt-minutes.html"
+        data-start="53.282"
+        data-duration="7.5"
+        data-track-index="0"
+      ></div>
+      <audio
+        id="el-03-vingt-minutes-voice"
+        src="assets/audio/vo-03.mp3"
+        data-start="53.282"
+        data-duration="7.5"
+        data-track-index="10"
+        data-volume="1"
+      ></audio>
+
+      <div
+        id="el-04-refrain"
+        class="scene"
+        data-composition-id="04-refrain"
+        data-composition-src="compositions/frames/04-refrain.html"
+        data-start="60.782"
+        data-duration="5.0"
+        data-track-index="1"
+      ></div>
+      <audio
+        id="el-04-refrain-voice"
+        src="assets/audio/vo-04.mp3"
+        data-start="60.782"
+        data-duration="4.5"
+        data-track-index="10"
+        data-volume="1"
+      ></audio>
+
+      <div
+        id="el-05-avis-google"
+        class="scene"
+        data-composition-id="05-avis-google"
+        data-composition-src="compositions/frames/05-avis-google.html"
+        data-start="65.782"
+        data-duration="8.5"
+        data-track-index="0"
+      ></div>
+      <audio
+        id="el-05-avis-google-voice"
+        src="assets/audio/vo-05.mp3"
+        data-start="65.782"
+        data-duration="8.0"
+        data-track-index="10"
+        data-volume="1"
+      ></audio>
+
+      <div
+        id="el-06-vingt-trois-heures"
+        class="scene"
+        data-composition-id="06-vingt-trois-heures"
+        data-composition-src="compositions/frames/06-vingt-trois-heures.html"
+        data-start="74.282"
+        data-duration="12.0"
+        data-track-index="1"
+      ></div>
+      <audio
+        id="el-06-vingt-trois-heures-voice"
+        src="assets/audio/vo-06.mp3"
+        data-start="74.282"
+        data-duration="12.0"
+        data-track-index="10"
+        data-volume="1"
+      ></audio>
+
+      <!-- ===== end body ===== -->
+
+      <div
+        id="el-08-carte-marque"
+        class="scene"
+        data-composition-id="08-carte-marque"
+        data-composition-src="compositions/frames/08-carte-marque.html"
+        data-start="86.282"
+        data-duration="5.6"
+        data-track-index="0"
+      ></div>
+      <audio
+        id="el-08-carte-marque-voice"
+        src="assets/audio/vo-08.mp3"
+        data-start="86.582"
+        data-duration="4.18"
+        data-track-index="10"
+        data-volume="1"
+      ></audio>
+
+      <!-- CTA end card: points to the "avec FoodEatUp" counterpart journey on the same
+           marine ground, no cut — reads as one continuous ending. Reused verbatim. -->
+      <div
+        id="el-09-cta-decouvrir"
+        class="scene"
+        data-composition-id="09-cta-decouvrir"
+        data-composition-src="compositions/frames/09-cta-decouvrir.html"
+        data-start="91.882"
+        data-duration="4.4"
+        data-track-index="1"
+      ></div>
+
+      <!-- permanent discreet FoodEatUp watermark, "sans" body only (starts once the body begins,
+           fades out before the final card, where the full-strength logo takes over) -->
+      <div
+        id="el-watermark"
+        class="scene"
+        data-composition-id="watermark"
+        data-composition-src="compositions/watermark.html"
+        data-start="26.282"
+        data-duration="60.0"
+        data-track-index="3"
+      ></div>
+    </div>
+
+    <script>
+      window.__timelines = window.__timelines || {};
+      window.__timelines["main"] = gsap.timeline({ paused: true });
+      (function () { var tl = window.__timelines["main"];
+        // 00-titre -> 00b-contexte: crossfade (reused pilot beat, unchanged)
+        tl.to("#el-00-titre", { opacity: 0, duration: 0.6, ease: "power2.inOut" }, 3.5);
+        tl.fromTo("#el-00b-contexte", { opacity: 0 }, { opacity: 1, duration: 0.6, ease: "power2.inOut" }, 3.5);
+
+        // 00b-contexte -> 01 (caisse fermée): crossfade — the film settles from the shared
+        // premise into tonight's specific close.
+        tl.to("#el-00b-contexte", { opacity: 0, duration: 0.5, ease: "power2.inOut" }, 26.282);
+        tl.fromTo("#el-01-caisse-fermee", { opacity: 0 }, { opacity: 1, duration: 0.5, ease: "power2.inOut" }, 26.282);
+
+        // 01 -> 02 (ticket/tableur/TVA): push-slide — the busiest, most procedural beat of the
+        // film gets the one push transition, a small jolt of motion before the long hold frames.
+        tl.to("#el-01-caisse-fermee", { x: -1920, duration: 0.5, ease: "power3.inOut" }, 36.782);
+        tl.fromTo("#el-02-ticket-tableur-tva", { x: 1920, opacity: 1 }, { x: 0, duration: 0.5, ease: "power3.inOut" }, 36.782);
+
+        // 02 -> 03 (vingt minutes): crossfade
+        tl.to("#el-02-ticket-tableur-tva", { opacity: 0, duration: 0.5, ease: "power2.inOut" }, 53.282);
+        tl.fromTo("#el-03-vingt-minutes", { opacity: 0 }, { opacity: 1, duration: 0.5, ease: "power2.inOut" }, 53.282);
+
+        // 03 -> 04 (refrain): hard cut — the refrain always lands flat, no easing, per the
+        // series signature ("Plus personne ne l'ouvre." hits without a soft entrance).
+
+        // 04 -> 05 (avis Google / onze jours): crossfade
+        tl.to("#el-04-refrain", { opacity: 0, duration: 0.5, ease: "power2.inOut" }, 65.782);
+        tl.fromTo("#el-05-avis-google", { opacity: 0 }, { opacity: 1, duration: 0.5, ease: "power2.inOut" }, 65.782);
+
+        // 05 -> 06 (23h, salle vide): crossfade
+        tl.to("#el-05-avis-google", { opacity: 0, duration: 0.5, ease: "power2.inOut" }, 74.282);
+        tl.fromTo("#el-06-vingt-trois-heures", { opacity: 0 }, { opacity: 1, duration: 0.5, ease: "power2.inOut" }, 74.282);
+
+        // 06 -> 08-carte-marque: hard cut into full-bleed marine — the palette break IS the
+        // impact (matches 08's own in-file comment; the pilot uses the same device).
+
+        tl.to({}, { duration: 96.282 }, 0); // full-span anchor — main.duration() == composition total
+      })();
+    </script>
+  </body>
+</html>
