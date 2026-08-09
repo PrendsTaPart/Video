@@ -24,7 +24,7 @@ Statut des 5 segments (2026-08-09) :
 |---|---|---|---|
 | HOOK | 0–3s | ✅ | `assets/hook/hook-intro.mp4` |
 | PROBLÈME (Higgsfield) | 3–11s | ✅ | `assets/higgsfield/probleme.mp4` — chef de dos, salle qui se vide, clients qui partent. 720×1280, 24fps ; fenêtre 0–8s utilisée. Palette plus chaude que demandé (grise/désaturée dans le prompt) mais cadrage et action conformes. |
-| SOLUTION (capture écran) | 11–25s | ✅ | `assets/solution/programme-fidelite.mp4` — écran "Fidélité & jeux" (points, multiplicateurs, Enregistrer le programme). Affiché **en pleine largeur (1080px), intégralement, sans recadrage, ancré en haut de l'écran** (demande explicite de Michael : "ne le coupe pas") ; fenêtre source 14–28s. |
+| SOLUTION (capture écran) | 11–25s | ✅ | `assets/solution/programme-fidelite.mp4` — écran "Fidélité & jeux" (points, multiplicateurs, Enregistrer le programme). Affiché **en pleine largeur (1080px), intégralement, sans recadrage, centré verticalement**, avec le **logo FoodEatUp en haut** (spring pop-in + respiration continue) et un trait accent orange sous le logiciel ; fenêtre source 14–28s. |
 | RÉSULTAT (HeyGen) | 25–32.3s | ✅ | `assets/heygen/resultat.mp4` (7.298s) — avatar seul, plan unique, sans template ni sous-titres/logo intégrés (2 tentatives précédentes rejetées, voir historique ci-dessous). |
 | PUNCHLINE | 32.3–36.3s | ✅ | `assets/punchline/punchline-outro.mp4` |
 
