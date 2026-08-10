@@ -55,7 +55,9 @@ d=sys.stdin.buffer.read();n=len(d)//2
 s=struct.unpack('<%dh'%n,d[:n*2]) if n else (0,)
 r=math.sqrt(sum(x*x for x in s)/max(1,len(s)))
 print(int(20*math.log10(r/32768+1e-12)))")
-[ "$RESP" -lt -22 ] \
+# -20 dBFS : au-dessus, quelqu'un parle. En dessous, c'est le lit musical seul,
+# qui tourne entre -28 et -22 selon l'épisode après normalisation.
+[ "$RESP" -lt -20 ] \
   && ok "respiration avant la signature (${RESP} dBFS)" \
   || ko "l'avatar parle encore juste avant 26 s (${RESP} dBFS) — voix superposées"
 

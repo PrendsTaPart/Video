@@ -13,9 +13,9 @@
     "hook": "ok",
     "avatar": "ok",
     "software": "ok",
-    "vo": "manquant",
-    "build": "segment D seul",
+    "vo": "ok",
+    "build": "ok",
     "publie": "manquant"
   },
-  "notes": "Assets avatar et logiciel reçus. Segment D monté et validé au cadrage. Manque le hook Higgsfield (job 6fc46148, présent dans l'historique mais CloudFront refusé par le proxy) pour boucler le master."
+  "notes": "Master complet avec bloc contact de fin (06 14 18 92 25)."
 }

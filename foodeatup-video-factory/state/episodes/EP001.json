@@ -10,12 +10,12 @@
   "vo_punchline": "Sauf que lui, il est patient. Tes clients, non.",
   "heygen_script": "Ici, toutes tes commandes arrivent au même endroit : la salle, le téléphone, le site, la livraison. Une seule file, dans l'ordre d'arrivée. Plus personne n'attend parce qu'on a oublié un ticket.",
   "etat": {
-    "hook": "repris du master de référence",
+    "hook": "ok",
     "avatar": "ok",
     "software": "ok",
-    "vo": "incluse dans le segment A",
+    "vo": "ok",
     "build": "ok",
     "publie": "manquant"
   },
-  "notes": "Avatar HeyGen livré à 12,27 s pour un créneau de 10 s (11,85 s de parole) : atempo 1,185 appliqué, hauteur préservée. Viser 10 s au rendu pour éviter l'accélération. Segment A repris du master de référence — le hook Higgsfield d50f483c n'est pas téléchargeable depuis la session (proxy 403 sur CloudFront)."
+  "notes": "Master complet avec bloc contact de fin (06 14 18 92 25)."
 }
