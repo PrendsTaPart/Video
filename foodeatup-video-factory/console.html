@@ -61,7 +61,26 @@ input[type="search"]::placeholder{color:var(--muted)}
 
 .list{display:flex;flex-direction:column;gap:12px}
 .ep{background:var(--surface);border:1px solid var(--line);border-radius:12px;
-  padding:18px 20px;box-shadow:var(--shadow)}
+  padding:18px 20px;box-shadow:var(--shadow);border-left:3px solid transparent;
+  transition:border-color .18s,background .18s}
+.ep.done{border-left-color:var(--ok);background:var(--ok-soft)}
+.ep.done .ttl{color:var(--ok)}
+.ep.done .script,.ep.done pre{background:var(--surface)}
+.tick{display:flex;align-items:center;gap:8px;cursor:pointer;user-select:none;
+  font-size:12px;letter-spacing:.04em;text-transform:uppercase;color:var(--muted);
+  font-weight:640;white-space:nowrap}
+.tick input{appearance:none;width:19px;height:19px;margin:0;flex:none;cursor:pointer;
+  border:1.5px solid var(--line);border-radius:5px;background:var(--raised);
+  display:grid;place-content:center}
+.tick input:checked{background:var(--ok);border-color:var(--ok)}
+.tick input:checked::after{content:"";width:5px;height:9px;border:solid #fff;
+  border-width:0 2px 2px 0;transform:rotate(45deg) translate(-1px,-1px)}
+.tick input:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.ep.done .tick{color:var(--ok)}
+.bar{height:5px;border-radius:3px;background:var(--line-2);overflow:hidden;
+  margin-top:12px;max-width:420px}
+.bar i{display:block;height:100%;background:var(--ok);border-radius:3px;
+  transition:width .3s}
 .ep-head{display:flex;gap:12px;align-items:baseline;flex-wrap:wrap;margin-bottom:4px}
 .num{font-variant-numeric:tabular-nums;font-weight:680;font-size:13px;color:var(--accent);
   background:var(--accent-soft);border-radius:6px;padding:3px 8px;letter-spacing:.01em}
@@ -123,6 +142,7 @@ pre{margin:10px 0 0;background:var(--raised);border:1px solid var(--line-2);bord
   <div class="seg" id="seasons" role="group" aria-label="Filtrer par saison"></div>
   <input type="search" id="q" placeholder="Chercher un titre, un module, un mot du script…"
          aria-label="Rechercher un épisode">
+  <div class="seg"><button type="button" id="restants" aria-pressed="false">Reste à faire</button></div>
 </div>
 
 <div class="list" id="list"></div>
@@ -134,15 +154,28 @@ pre{margin:10px 0 0;background:var(--raised);border:1px solid var(--line-2);bord
 const EPS = JSON.parse(document.getElementById('data').textContent);
 const list = document.getElementById('list');
 const empty = document.getElementById('empty');
-let saison = 0, q = '';
+let saison = 0, q = '', restants = false;
+
+// L'avancement vit dans le navigateur : rien à sauvegarder, rien à synchroniser.
+const CLE = 'foodeatup-episodes-montes';
+let done = new Set();
+try { done = new Set(JSON.parse(localStorage.getItem(CLE) || '[]')); } catch {}
+const sauver = () => {
+  try { localStorage.setItem(CLE, JSON.stringify([...done])); } catch {}
+};
 
 const esc = s => s.replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
 
-document.getElementById('stats').innerHTML = [
-  ['épisodes', EPS.length],
-  ['chapitres Drive résolus', EPS.filter(e => e.sur).length],
-  ['hooks déjà générés', EPS.filter(e => e.rendu).length]
-].map(([l, v]) => `<div class="stat"><b>${v}</b> ${l}</div>`).join('');
+function stats() {
+  const n = done.size, pct = Math.round(n / EPS.length * 100);
+  document.getElementById('stats').innerHTML = [
+    [`${n} / ${EPS.length}`, 'épisodes montés'],
+    [EPS.filter(e => e.sur).length, 'chapitres Drive résolus'],
+    [EPS.filter(e => e.rendu).length, 'hooks déjà générés']
+  ].map(([v, l]) => `<div class="stat"><b>${v}</b> ${l}</div>`).join('')
+   + `<div class="bar" role="img" aria-label="${pct}% des épisodes montés"><i style="width:${pct}%"></i></div>`;
+}
+stats();
 
 const seg = document.getElementById('seasons');
 seg.innerHTML = ['Toutes', 1, 2, 3, 4, 5].map((l, i) =>
@@ -157,17 +190,36 @@ seg.addEventListener('click', e => {
 document.getElementById('q').addEventListener('input', e => {
   q = e.target.value.toLowerCase().trim(); render();
 });
+document.getElementById('restants').addEventListener('click', e => {
+  restants = !restants;
+  e.target.setAttribute('aria-pressed', restants);
+  render();
+});
+
+// Cocher n'entraîne pas de re-rendu : la carte se colore sur place, sinon on
+// perdrait le prompt qu'on vient d'ouvrir juste au-dessus.
+document.addEventListener('change', e => {
+  const c = e.target.closest('input[data-done]'); if (!c) return;
+  const id = c.dataset.done;
+  c.checked ? done.add(id) : done.delete(id);
+  sauver();
+  document.querySelector(`[data-ep="${id}"]`).classList.toggle('done', c.checked);
+  stats();
+});
 
 function card(e) {
   const drive = e.url
     ? `<a class="drive ${e.sur ? '' : 'pale'}" href="${e.url}" target="_blank" rel="noopener">
          ${e.sur ? 'Ouvrir le chapitre Drive' : 'Ouvrir le module (chapitre à confirmer)'}</a>`
     : '';
-  return `<article class="ep">
+  return `<article class="ep ${done.has(e.id) ? 'done' : ''}" data-ep="${e.id}">
     <div class="ep-head">
       <span class="num">${e.id}</span>
       <h2 class="ttl">${esc(e.t)}</h2>
       <div class="chips">
+        <label class="tick" title="Marquer l'épisode comme monté">
+          <input type="checkbox" data-done="${e.id}" ${done.has(e.id) ? 'checked' : ''}>
+          Monté</label>
         <span class="chip">Saison ${e.s}</span>
         ${e.rendu ? '<span class="chip ok">hook généré</span>' : ''}
         ${e.sur ? '' : '<span class="chip flag">chapitre à confirmer</span>'}
@@ -203,6 +255,7 @@ function card(e) {
 function render() {
   const vis = EPS.filter(e =>
     (!saison || e.s === saison) &&
+    (!restants || !done.has(e.id)) &&
     (!q || (e.t + ' ' + e.mod + ' ' + e.ch + ' ' + e.heygen + ' ' + e.hook + ' ' +
             e.punch + ' ' + e.id).toLowerCase().includes(q)));
   list.innerHTML = vis.map(card).join('');
