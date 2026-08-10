@@ -103,14 +103,16 @@
         muted
         playsinline
       ></video>
+      <!-- ambiance du plan (chaises, porte, brouhaha) : baissée depuis 0.6, la voix off
+           passe maintenant par-dessus -->
       <audio
         id="seg-probleme-audio"
         src="assets/higgsfield/probleme.mp4"
         data-start="3"
         data-duration="8"
         data-media-start="0"
-        data-track-index="10"
-        data-volume="0.6"
+        data-track-index="9"
+        data-volume="0.3"
       ></audio>
 
       <!-- SOLUTION + RÉSULTAT fusionnés, 11-25s (14s) : le logiciel est visible tout le
@@ -143,11 +145,11 @@
       ></video>
       <audio
         id="solution-avatar-audio"
-        src="assets/heygen/resultat.mp4"
+        src="assets/audio/vo-avatar.mp3"
         data-start="11.3"
         data-duration="7.298"
         data-media-start="0"
-        data-track-index="10"
+        data-track-index="12"
         data-volume="1"
       ></audio>
 
@@ -165,11 +167,44 @@
       ></video>
       <audio
         id="seg-punchline-audio"
-        src="assets/punchline/punchline-outro.mp4"
+        src="assets/audio/vo-punch.mp3"
         data-start="25"
         data-duration="5.2"
         data-media-start="0"
+        data-track-index="12"
+        data-volume="1"
+      ></audio>
+
+      <!-- lit d'ambiance continu, sous tout le reste -->
+      <audio
+        id="bed"
+        src="assets/audio/bed.mp3"
+        data-start="0"
+        data-duration="30.2"
+        data-media-start="0"
+        data-track-index="8"
+        data-volume="0.45"
+      ></audio>
+
+      <!-- voix off du hook -->
+      <audio
+        id="vo-hook"
+        src="assets/audio/vo-hook.mp3"
+        data-start="0.05"
+        data-duration="3.38"
+        data-media-start="0"
         data-track-index="10"
+        data-volume="1"
+      ></audio>
+
+      <!-- voix off du bloc problème -->
+      <audio
+        id="vo-prob"
+        src="assets/audio/vo-prob.mp3"
+        data-start="3.6"
+        data-duration="4.34"
+        data-media-start="0"
+        data-track-index="11"
         data-volume="1"
       ></audio>
     </div>
@@ -209,6 +244,8 @@
         { opacity: 0, duration: 0.5, ease: "power2.in" },
         SOLUTION_START + 7.4
       );
+      // le lit d'ambiance se retire doucement sur la toute fin
+      tl.to("#bed", { volume: 0, duration: 1.0, ease: "power1.in" }, 29.2);
 
       window.__timelines["v01-fidelite"] = tl;
     </script>

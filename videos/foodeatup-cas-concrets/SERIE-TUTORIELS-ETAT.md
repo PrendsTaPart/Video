@@ -45,21 +45,21 @@ ingrédients avec coût total, fiche fournisseur créée, commande créée + lis
 Les durées diffèrent d'une vidéo à l'autre parce que chaque bloc est calé sur la durée réelle
 de son contenu (voix off, réplique de l'avatar, plan disponible). C'est voulu, pas un oubli.
 
-## Réserves sur ces 4 montages
+## Réserve restante sur les plans problème
 
-Trois écarts par rapport à la vidéo 1 validée, tous dus aux plans problème :
+Deux écarts par rapport à la vidéo 1 validée. (Le silence du bloc problème, qui en était un
+troisième, est réglé : la voix off le couvre désormais.)
 
 1. **Format** — les plans `hero-video/` sont en 1280 × 720 paysage. Ils sont montés en
    pillarbox (plan centré sur un fond flouté tiré de lui-même) : regardable, mais en
    dessous d'un plan nativement vertical.
-2. **Silence** — ces plans n'ont pas de piste audio. Le bloc problème est donc muet
-   pendant 6 à 8 s, là où celui de la vidéo 1 avait son ambiance.
-3. **Visage** — c'est le personnage IA « Karim » du film héros, pas la photo de Michael
+2. **Visage** — c'est le personnage IA « Karim » du film héros, pas la photo de Michael
    utilisée dans la vidéo 1.
 
-Le correctif est le même pour les trois : générer les plans problème en **9:16 natif, 8 s,
-référence = photo de Michael**, avec les prompts du plan principal. Ces montages sont alors
-mis à jour par simple remplacement de `assets/higgsfield/probleme.mp4` et re-rendu.
+Même correctif pour les deux : générer les plans problème en **9:16 natif, 8 s, référence =
+photo de Michael**, avec les prompts du plan principal. Les montages se mettent alors à jour
+par simple remplacement de `assets/higgsfield/probleme.mp4` et re-rendu — rien d'autre à
+refaire.
 
 ## Rendre à nouveau une vidéo
 
@@ -81,7 +81,7 @@ npx hyperframes render . -c compositions/hook-card.html -q high \
 ```
 
 Puis le générateur d'assemblage :
-`scratchpad/build_videos.py` (une entrée par vidéo dans la liste `VIDEOS`, puis
+`build_videos.py` (une entrée par vidéo dans la liste `VIDEOS`, puis
 `npx hyperframes render`). Il calcule seul la hauteur d'affichage du logiciel à partir des
 dimensions réelles du rush, et cale l'avatar sur sa durée réelle.
 
@@ -106,3 +106,14 @@ off du problème) puis de les générer. Tout le reste est automatisé :
 3. Générer les 2 voix off (ElevenLabs, voix Adam `TGAegA0zNRi8I6nUdq3i`), les normaliser à
    −16 LUFS dans `motion/assets/audio/norm/`.
 4. `python3 build_videos.py` puis `npx hyperframes render`.
+
+## Fenêtres logiciel déjà repérées pour les prochaines vidéos
+
+Repérées en échantillonnant les rushes, pour que le montage suive dès l'arrivée du clip
+avatar. Chaque fenêtre couvre le geste **et** sa confirmation à l'écran.
+
+| # | Projet tuto | `media_start` | Ce qu'on voit |
+|---|---|---|---|
+| 07 | `foodeatup-contrat-tuto` (66 s) | 52 | fin du formulaire → « Créer le contrat » → fiche salaire enregistrée (brut, transport, congés) |
+| 08 | `foodeatup-planning-poste-tuto` (83 s) | 48 | grille hebdo colorée par poste → « Enregistré » → export PDF du planning |
+| 09 | `foodeatup-taches-tuto` (85 s) | 58 | tâche assignée à un créneau → « Enregistré » → ligne dans « Tâches de la semaine » |
