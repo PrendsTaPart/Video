@@ -11,11 +11,11 @@
   "heygen_script": "À chaque clôture, l'écart entre le théorique et le compté s'affiche. Tu vois quel service dérape et de combien. Ce qui se mesure s'arrête.",
   "etat": {
     "hook": "ok",
-    "avatar": "manquant",
+    "avatar": "ok",
     "software": "manquant",
     "vo": "manquant",
     "build": "manquant",
     "publie": "manquant"
   },
-  "notes": ""
+  "notes": "Avatar HeyGen reçu. BLOQUÉ sur le screencast : le module Caisse POS n'a aucune vidéo dans le Drive — les 7 chapitres ne contiennent que des JPG. Le fichier PrediBot envoyé avec cet épisode est le même que celui d'EP010 (md5 identique) et ne correspond pas au chapitre « écarts de caisse »."
 }

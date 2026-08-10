@@ -65,28 +65,41 @@ Ces 13 secondes sont **identiques sur les 150**. Les modifier change les 150
 épisodes d'un coup : PR dédiée, revue par quelqu'un d'autre, jamais dans une
 branche `ep/`.
 
-## 5. L'anatomie des 30 secondes ne se négocie pas
+## 5. L'anatomie ne se négocie pas
 
 | Segment | Plage | Voix | Source |
 |---|---|---|---|
-| A | 0 → 7 | son du clip + punchline ElevenLabs à 5,0 | `assets/hooks/EPxxx.mp4` |
-| sting + B + C | 7 → 16 | VO_A, VO_B | `templates/` |
-| **D** | **16 → 26** | **HeyGen seul** | `assets/avatar/` + `assets/software/` |
-| E | 26 → 30 | VO_C | `templates/COMMUN_E.mp4` |
-| sting de marque | 30 → 35 | VO du sting | `templates/sting-fin.mp4` |
+| A | 0 → 9,5 | son du clip + punchline ElevenLabs à 5,0 | `assets/hooks/EPxxx.mp4` |
+| sting + B + C | 9,5 → 18,5 | VO_A, VO_B | `templates/COMMUN_sting_BC.mp4` |
+| **D** | **18,5 → 28,5** | **HeyGen seul** | `assets/avatar/` + `assets/software/` |
+| E | 28,5 → 32,5 | VO_C | `templates/COMMUN_E.mp4` |
+| sting de marque | 32,5 → 37,5 | VO du sting | `templates/sting-fin.mp4` |
 
-**Le master fait 35,0 s**, pas 30,0. Le brief fixait 30 s ; le sting de marque
-— le huit qui se dessine en huit pulsations, puis le logo, la baseline et le
-bloc contact — a été ajouté après coup et allonge chaque épisode de 5 s. Décision
-prise en connaissance de cause : la reconnaissance de série prime ici sur la
-contrainte de durée initiale.
+**Le master fait 37,5 s**, pas 30,0. Deux écarts assumés par rapport au brief.
+Le sting de marque — le huit qui se dessine en huit pulsations, puis le logo, la
+baseline et le bloc contact — a été ajouté après coup : +5 s. Et le segment A est
+passé de 7 à 9,5 s parce qu'à 7 s la chute du clip Higgsfield était coupée en
+plein milieu : +2,5 s. La reconnaissance de série et la scène comique entière
+priment ici sur la contrainte de durée initiale.
+
+**La punchline ne se normalise pas dans le filtergraph.** `loudnorm` sur une
+entrée de 2 à 3 s ressort ses frames avec des PTS décalés ; le `atrim` qui suit
+prend ce décalage pour du temps écoulé et supprime la voix — mesuré à
+−240 dBFS, c'est-à-dire un silence parfait. `build-segment-a.sh` normalise donc
+la punchline dans une **passe séparée** vers un WAV, qu'il réinjecte ensuite.
+Ne remets jamais `loudnorm` dans le graphe principal.
+
+Sous la punchline, le clip est baissé de 16 dB par une enveloppe explicite —
+pas par `sidechaincompress`, essayé d'abord et insuffisant face aux 14 dB
+d'écart entre un rendu ElevenLabs et un clip Higgsfield. Les rampes durent
+0,25 s et se calent sur la longueur réelle de la voix.
 
 Le screencast du segment D est incrusté dans une **coque d'appareil**
 (`templates/tablette.png`, ou `tablette-caisse.png` pour les épisodes du module
 Caisse POS). La coque est choisie automatiquement d'après le module de
 l'épisode.
 
-**Entre 16,0 et 26,0 il n'y a qu'une voix : celle de l'avatar.** Deux sources
+**Entre 18,5 et 28,5 il n'y a qu'une voix : celle de l'avatar.** Deux sources
 actives sur cette plage = épisode rejeté. C'est vérifié par `qc-episode.sh`.
 
 Le beat comique du clip tombe à 5,0 s. Si le clip généré décale ce beat, on
@@ -112,8 +125,9 @@ rendu par épisode. Ne redemande pas un plan qui existe.
 ./scripts/qc-episode.sh   EPxxx    # contrôle seul
 ```
 
-Durée 30,0 ±0,2 · 1080×1920 @30 · −14 LUFS ±1 · peak ≤ −1 dBTP · première frame
-non noire · logo présent à 1/15/29 s. Un master qui échoue reste dans `build/`
+Durée 37,5 ±0,2 · 1080×1920 @30 · −14 LUFS ±1 · peak ≤ −1 dBTP · première frame
+non noire · logo présent à 1/15/23/31 s, logo du sting à 35,5 s, bloc contact à
+37,1 s, respiration avant la signature à 28,05 s. Un master qui échoue reste dans `build/`
 et part au rapport. **Le pipeline ne s'arrête jamais sur un épisode incomplet** :
 on marque, on passe au suivant.
 

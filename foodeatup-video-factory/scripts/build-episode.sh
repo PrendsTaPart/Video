@@ -1,11 +1,11 @@
 #!/usr/bin/env bash
-# Monte un épisode de 30,0 s à partir d'assets DÉJÀ produits.
+# Monte un épisode de 37,5 s à partir d'assets DÉJÀ produits.
 # Aucune génération : ni Higgsfield, ni HeyGen, ni image. Uniquement ffmpeg local.
 #
 #   ./build-episode.sh EP001
 #
 # Attendus :
-#   assets/hooks/EPxxx.mp4       clip Higgsfield récupéré (7 s utiles)
+#   assets/hooks/EPxxx.mp4       clip Higgsfield récupéré (9,5 s utiles)
 #   assets/avatar/EPxxx.mp4      segment HeyGen déposé à la main (<= 12 s, avec audio)
 #   assets/software/EPxxx.mp4    10 s extraites d'un tuto Drive
 #   build/EPxxx_A.mp4            segment A monté (hook + texte + punchline)
@@ -104,20 +104,28 @@ fade=t=out:st=9.70:d=0.30:color=$SABLE,format=yuv420p[v];\
  [0:a]atrim=start=$DEBUT,asetpts=PTS-STARTPTS,aresample=48000,\
 atempo=$TEMPO,apad,atrim=0:10,asetpts=PTS-STARTPTS,volume=1.0[voice];\
  [3:a]aresample=48000,atrim=16:26,asetpts=PTS-STARTPTS,volume=$BED_GAIN,\
-afade=t=in:st=0:d=0.3[bed];\
+afade=t=in:st=0:d=0.3,afade=t=out:st=9.40:d=0.60[bed];\
  [4:a]aresample=48000,volume=$SFX_GAIN,apad,atrim=0:10,asetpts=PTS-STARTPTS[wh];\
  [voice][bed][wh]amix=inputs=3:duration=first:dropout_transition=0:normalize=0[a]" \
  -map "[v]" -map "[a]" -t 10 \
  -c:v libx264 -preset medium -crf 18 -r 30 -c:a aac -b:a 192k \
  "$R/build/${EP}_D.mp4" -y
 
+# Le mixage de D somme la voix, le lit et le whoosh sans normalisation : il
+# écrêtait à +2,8 dBTP. On le cale sur le niveau des gabarits.
+"$R/scripts/normaliser-segment.sh" "$R/build/${EP}_D.mp4" -21 -9
+
 if [ "$SEUL_D" = "--segment-d" ]; then
   echo "$EP -> build/${EP}_D.mp4 (segment D seul)"
   exit 0
 fi
 
-# --- Assemblage : A (7) + sting/B/C (9) + D (10) + E (4) = 30,0 s -------------
-# puis le sting de marque (5 s) est collé derrière -> 35,0 s au total.
+# Le segment A sort à des niveaux très variables selon le clip Higgsfield.
+# Sans ce calage, le hook passait 12 dB sous l'avatar.
+"$R/scripts/normaliser-segment.sh" "$R/build/${EP}_A.mp4" -21 -9
+
+# --- Assemblage : A (9,5) + sting/B/C (9) + D (10) + E (4) = 32,5 s -----------
+# puis le sting de marque (5 s) est collé derrière -> 37,5 s au total.
 cat > "$R/build/${EP}_list.txt" <<EOF
 file '$R/build/${EP}_A.mp4'
 file '$R/templates/COMMUN_sting_BC.mp4'
@@ -125,27 +133,73 @@ file '$R/build/${EP}_D.mp4'
 file '$R/templates/COMMUN_E.mp4'
 EOF
 
+# L'assemblage ne normalise pas : l'audio brut est recollé tel quel. La
+# normalisation arrive une seule fois, tout à la fin, sur le mixage complet.
 ffmpeg -v error -f concat -safe 0 -i "$R/build/${EP}_list.txt" \
- -filter_complex "[0:a]loudnorm=I=-14:TP=-1.5:LRA=11,apad[a]" \
- -map 0:v -map "[a]" -t 30 \
+ -filter_complex "[0:a]aresample=48000,apad[a]" \
+ -map 0:v -map "[a]" -t 32.5 \
  -c:v libx264 -preset medium -crf 18 -r 30 -pix_fmt yuv420p \
- -c:a aac -b:a 192k -ar 48000 "$R/build/${EP}_30s.mp4" -y
+ -c:a pcm_s16le -ar 48000 "$R/build/${EP}_court.mov" -y
 
 # Le sting de marque ferme l'épisode. acrossfade ne croise que l'audio sur
-# 0,3 s : l'image, elle, est bout à bout, donc 30 + 5 = 35,0 s.
-ffmpeg -v error -i "$R/build/${EP}_30s.mp4" -i "$R/templates/sting-fin.mp4" \
+# 0,3 s : l'image, elle, est bout à bout, donc 32,5 + 5 = 37,5 s.
+ffmpeg -v error -i "$R/build/${EP}_court.mov" -i "$R/templates/sting-fin.mp4" \
+ -filter_complex "\
+ [0:a]aresample=48000,asetpts=PTS-STARTPTS[a0];\
+ [1:a]aresample=48000,asetpts=PTS-STARTPTS[a1];\
+ [a0][a1]acrossfade=d=0.3:c1=tri:c2=tri[a]" \
+ -map "[a]" -c:a pcm_s16le -ar 48000 "$R/build/${EP}_mix.wav" -y
+
+# --- Normalisation finale : gain constant + limiteur ---------------------------
+# loudnorm a été essayé ici, en une passe puis en deux avec linear=true. Les deux
+# retombent en mode dynamique dès que le gain demandé ferait dépasser la crête —
+# ce qui est toujours le cas sur un master à -14 LUFS. Et en dynamique, loudnorm
+# remonte les passages calmes : le lit musical sortait à -17 dBFS dans la
+# respiration qui précède la signature, assez fort pour s'entendre comme une
+# pompe. Un gain constant ne touche à aucun rapport interne du mixage.
+mesure_mix() {
+  ffmpeg -hide_banner -nostats -i "$1" -af ebur128=peak=true -f null - 2>&1 \
+  | sed -n '/Summary/,$p' \
+  | awk '/^[[:space:]]+I:/{i=$2} /Peak:/{if(p=="")p=$2} END{print i, p}'
+}
+# L'image est encodée UNE fois, sans son. Le calage du niveau se joue ensuite en
+# remuxant l'audio par copie du flux vidéo — sinon chaque itération coûterait un
+# encodage x264 en preset slow.
+ffmpeg -v error -i "$R/build/${EP}_court.mov" -i "$R/templates/sting-fin.mp4" \
  -filter_complex "\
  [0:v]scale=1080:1920,setsar=1,fps=30[v0];\
  [1:v]scale=1080:1920,setsar=1,fps=30[v1];\
- [v0][v1]concat=n=2:v=1:a=0[v];\
- [0:a]aresample=48000,asetpts=PTS-STARTPTS[a0];\
- [1:a]aresample=48000,asetpts=PTS-STARTPTS[a1];\
- [a0][a1]acrossfade=d=0.3:c1=tri:c2=tri,loudnorm=I=-14:TP=-1.5:LRA=11,\
-alimiter=limit=0.79:level=disabled[a]" \
- -map "[v]" -map "[a]" -t 35 \
+ [v0][v1]concat=n=2:v=1:a=0[v]" \
+ -map "[v]" -t 37.5 -an \
  -c:v libx264 -preset slow -crf 20 -r 30 -pix_fmt yuv420p \
- -c:a aac -b:a 192k -ar 48000 -movflags +faststart \
- "$R/dist/tiktok/$EP.mp4" -y
+ "$R/build/${EP}_muet.mp4" -y
+
+# La boucle se ferme sur le MASTER ENCODÉ, pas sur le WAV. L'encodage AAC fait
+# remonter la crête, et de façon très inégale : sur EP007 le WAV sortait à
+# -1,8 dBTP et le master aussi, sur EP002 le même WAV à -1,8 donnait -0,3 dBTP
+# après AAC. Mesurer le WAV ne dit donc rien du livrable. On mesure le fichier
+# qui part en ligne, et on rabaisse le plafond du limiteur tant qu'il déborde.
+read -r MIX_I MIX_TP <<<"$(mesure_mix "$R/build/${EP}_mix.wav")"
+GAIN_M="$(python3 -c "print(f'{-14.0-($MIX_I):.2f}')")"
+PLAF=0.72
+for _ in 1 2 3 4 5; do
+  ffmpeg -v error -i "$R/build/${EP}_mix.wav" \
+   -af "volume=${GAIN_M}dB,alimiter=limit=$PLAF:level=disabled:attack=5:release=60" \
+   -ar 48000 -c:a pcm_s16le "$R/build/${EP}_mixn.wav" -y
+  ffmpeg -v error -i "$R/build/${EP}_muet.mp4" -i "$R/build/${EP}_mixn.wav" \
+   -map 0:v -map 1:a -t 37.5 -c:v copy \
+   -c:a aac -b:a 192k -ar 48000 -movflags +faststart \
+   "$R/dist/tiktok/$EP.mp4" -y
+  read -r NEW_I NEW_TP <<<"$(mesure_mix "$R/dist/tiktok/$EP.mp4")"
+  # -1,4 dBTP de marge : la cible QC est -1, on ne s'y colle pas.
+  DEBORDE="$(python3 -c "print(1 if $NEW_TP > -1.4 else 0)")"
+  ECART_I="$(python3 -c "print(1 if abs(-14.0-($NEW_I))>0.4 else 0)")"
+  [ "$DEBORDE" = "0" ] && [ "$ECART_I" = "0" ] && break
+  [ "$DEBORDE" = "1" ] && PLAF="$(python3 -c "print(f'{$PLAF*10**((-1.6-($NEW_TP))/20):.4f}')")"
+  [ "$ECART_I" = "1" ] && GAIN_M="$(python3 -c "print(f'{$GAIN_M+(-14.0-($NEW_I)):.2f}')")"
+done
+echo "  mixage : $MIX_I LUFS / $MIX_TP dBTP -> $NEW_I LUFS / $NEW_TP dBTP (gain ${GAIN_M} dB, plafond $PLAF)"
+rm -f "$R/build/${EP}_mix.wav" "$R/build/${EP}_mixn.wav" "$R/build/${EP}_muet.mp4"
 
 echo "$EP -> dist/tiktok/$EP.mp4"
 "$R/scripts/qc-episode.sh" "$EP"
