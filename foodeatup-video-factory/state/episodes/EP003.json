@@ -11,11 +11,11 @@
   "heygen_script": "Chaque plat de ta carte a son coût matière calculé depuis tes ingrédients. Tu vois ta marge réelle, plat par plat, avant même de fixer ton prix.",
   "etat": {
     "hook": "manquant",
-    "avatar": "manquant",
-    "software": "manquant",
+    "avatar": "ok",
+    "software": "ok",
     "vo": "manquant",
-    "build": "manquant",
+    "build": "segment D seul",
     "publie": "manquant"
   },
-  "notes": ""
+  "notes": "Assets avatar et logiciel reçus. Segment D monté et validé au cadrage. Manque le hook Higgsfield (job 6fc46148, présent dans l'historique mais CloudFront refusé par le proxy) pour boucler le master."
 }

@@ -11,11 +11,11 @@
   "heygen_script": "Tu prends la commande à table, elle part en cuisine dans la seconde. Pas de carnet, pas d'aller-retour, pas de ticket perdu entre la salle et le pass.",
   "etat": {
     "hook": "manquant",
-    "avatar": "manquant",
+    "avatar": "ok",
     "software": "manquant",
     "vo": "manquant",
     "build": "manquant",
     "publie": "manquant"
   },
-  "notes": ""
+  "notes": "Avatar HeyGen reçu (8,45 s). Manque la vidéo logiciel du chapitre Service > 3 - Envoi direct cuisine."
 }

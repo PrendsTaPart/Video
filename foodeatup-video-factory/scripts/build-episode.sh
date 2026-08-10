@@ -13,7 +13,10 @@
 # total) sont identiques sur les 150 : ne jamais les régénérer par épisode.
 set -euo pipefail
 
-EP="${1:?usage: build-episode.sh EPxxx}"
+EP="${1:?usage: build-episode.sh EPxxx [--segment-d]}"
+# --segment-d : monte le segment D seul et s'arrête. Sert à valider le cadrage
+# avant que le hook Higgsfield soit disponible.
+SEUL_D="${2:-}"
 R="$(cd "$(dirname "$0")/.." && pwd)"
 
 SABLE="0xFAF6E3"   # fond de charte FoodEatUp, relevé sur le master de référence
@@ -81,6 +84,11 @@ afade=t=in:st=0:d=0.3[bed];\
  -map "[v]" -map "[a]" -t 10 \
  -c:v libx264 -preset medium -crf 18 -r 30 -c:a aac -b:a 192k \
  "$R/build/${EP}_D.mp4" -y
+
+if [ "$SEUL_D" = "--segment-d" ]; then
+  echo "$EP -> build/${EP}_D.mp4 (segment D seul)"
+  exit 0
+fi
 
 # --- Assemblage : A (7) + sting/B/C (9) + D (10) + E (4) = 30,0 s -------------
 cat > "$R/build/${EP}_list.txt" <<EOF
