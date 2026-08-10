@@ -29,6 +29,9 @@ export type StingProps = {
   transparent: boolean;
   /** Ferme le plan sur le fond nu, pour que la dernière image égale la première. */
   boucle: boolean;
+  /** Appel à l'action de fin. Vide = pas de bloc contact. */
+  cta: string;
+  telephone: string;
 };
 
 export const defauts: StingProps = {
@@ -43,6 +46,8 @@ export const defauts: StingProps = {
   pulsations: 8,
   transparent: false,
   boucle: false,
+  cta: "Demander une démo",
+  telephone: "06 14 18 92 25",
 };
 
 // Repères de la séquence, en secondes. Changer un bloc ici suffit : aucun
@@ -51,8 +56,9 @@ const T = {
   point: [0.0, 0.4],
   trace: [0.4, 2.4],
   fermeture: [2.4, 3.0],
-  baseline: [3.0, 4.2],
-  url: [4.2, 5.0],
+  baseline: [3.0, 3.9],
+  url: [3.9, 4.35],
+  contact: [4.35, 5.0],
 } as const;
 
 const seg = (t: number, [a, b]: readonly [number, number]) =>
@@ -78,6 +84,7 @@ const avance = (u: number) => {
 
 export const Sting: React.FC<StingProps> = ({
   baseline, url, accent, fond, encre, logo, avecVo, avecSon, pulsations, transparent, boucle,
+  cta, telephone,
 }) => {
   const frame = useCurrentFrame();
   const { fps, width, height, durationInFrames } = useVideoConfig();
@@ -102,6 +109,7 @@ export const Sting: React.FC<StingProps> = ({
   const uBase = seg(t, T.baseline);
   const montee = spring({ frame: frame - T.baseline[0] * fps, fps, config: { damping: 200 } });
   const uUrl = seg(t, T.url);
+  const uContact = seg(t, T.contact);
   // En mode boucle le plan se referme sur le fond nu : la dernière image est
   // alors identique à la première, et le raccord ne se voit pas.
   // dernière image rendue, pas la durée : sinon le fondu se termine une image
@@ -112,7 +120,7 @@ export const Sting: React.FC<StingProps> = ({
   });
 
   // La marque monte légèrement quand la baseline arrive, pour lui faire place.
-  const centreY = height * 0.40 - uBase * height * 0.055;
+  const centreY = height * 0.40 - uBase * height * 0.085;
   const margeMarque = 1080 * k; // le sigle tient la moitié de la hauteur
 
   return (
@@ -181,7 +189,7 @@ export const Sting: React.FC<StingProps> = ({
         style={{
           position: "absolute",
           left: "50%",
-          top: height * 0.615,
+          top: height * 0.545,
           transform: "translateX(-50%)",
           width: Math.min(width * 0.82, 820 * k),
           display: "flex",
@@ -194,7 +202,7 @@ export const Sting: React.FC<StingProps> = ({
         <div
           style={{
             color: encre,
-            fontSize: 50 * k,
+            fontSize: 44 * k,
             fontWeight: 700,
             letterSpacing: -0.6 * k,
             lineHeight: 1.3,
@@ -230,6 +238,16 @@ export const Sting: React.FC<StingProps> = ({
         >
           {url}
         </div>
+
+        {cta !== "" && (
+          <Contact
+            cta={cta}
+            telephone={telephone}
+            encre={encre}
+            k={k}
+            avance={uContact}
+          />
+        )}
       </div>
 
       {/* fermeture de la boucle : deux images de flash */}
@@ -240,6 +258,63 @@ export const Sting: React.FC<StingProps> = ({
       {avecSon && <Audio src={staticFile("sting-lit.wav")} volume={0.5} />}
       {avecVo && <Audio src={staticFile("sting-vo.mp3")} volume={1} />}
     </AbsoluteFill>
+  );
+};
+
+/** Bloc d'appel à l'action : accroche, puis pastille verte avec le numéro. */
+const Contact: React.FC<{
+  cta: string; telephone: string; encre: string; k: number; avance: number;
+}> = ({ cta, telephone, encre, k, avance }) => {
+  const VERT = "#25D366";
+  const paru = interpolate(avance, [0, 0.45], [0, 1], {
+    extrapolateLeft: "clamp", extrapolateRight: "clamp",
+  });
+  return (
+    <div
+      style={{
+        marginTop: 42 * k,
+        display: "flex",
+        flexDirection: "column",
+        alignItems: "center",
+        opacity: paru,
+        transform: `translateY(${(1 - paru) * 14 * k}px)`,
+      }}
+    >
+      <div style={{ color: encre, fontSize: 38 * k, fontWeight: 800, letterSpacing: -0.3 * k }}>
+        {cta}
+      </div>
+      <div
+        style={{
+          marginTop: 18 * k,
+          display: "flex",
+          alignItems: "center",
+          gap: 18 * k,
+          backgroundColor: VERT,
+          borderRadius: 999,
+          padding: `${16 * k}px ${34 * k}px`,
+        }}
+      >
+        <svg width={52 * k} height={52 * k} viewBox="0 0 52 52">
+          <circle cx="26" cy="26" r="26" fill="#FFFFFF" />
+          <path d="M8 46 L14 38 L20 44 Z" fill="#FFFFFF" />
+          <path
+            d="M18.5 15.5c-.6 0-1.2.3-1.6.8l-1.4 1.8c-.7.9-.8 2.1-.3 3.1 1.3 2.6 3.1 5 5.3 7.2 2.2 2.2 4.6 4 7.2 5.3 1 .5 2.2.4 3.1-.3l1.8-1.4c.5-.4.8-1 .8-1.6 0-.6-.3-1.2-.8-1.5l-3.1-2c-.8-.5-1.8-.4-2.5.2l-1 .9c-1.6-.9-3-2-4.3-3.3-1.3-1.3-2.4-2.7-3.3-4.3l.9-1c.6-.7.7-1.7.2-2.5l-2-3.1c-.3-.5-.9-.8-1.5-.8Z"
+            fill={VERT}
+          />
+        </svg>
+        <div
+          style={{
+            color: "#FFFFFF",
+            fontSize: 46 * k,
+            fontWeight: 800,
+            letterSpacing: 0.6 * k,
+            fontVariantNumeric: "tabular-nums",
+          }}
+        >
+          {telephone}
+        </div>
+      </div>
+    </div>
   );
 };
 

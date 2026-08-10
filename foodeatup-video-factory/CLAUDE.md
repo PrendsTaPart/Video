@@ -72,7 +72,19 @@ branche `ep/`.
 | A | 0 → 7 | son du clip + punchline ElevenLabs à 5,0 | `assets/hooks/EPxxx.mp4` |
 | sting + B + C | 7 → 16 | VO_A, VO_B | `templates/` |
 | **D** | **16 → 26** | **HeyGen seul** | `assets/avatar/` + `assets/software/` |
-| E | 26 → 30 | VO_C | `templates/` |
+| E | 26 → 30 | VO_C | `templates/COMMUN_E.mp4` |
+| sting de marque | 30 → 35 | VO du sting | `templates/sting-fin.mp4` |
+
+**Le master fait 35,0 s**, pas 30,0. Le brief fixait 30 s ; le sting de marque
+— le huit qui se dessine en huit pulsations, puis le logo, la baseline et le
+bloc contact — a été ajouté après coup et allonge chaque épisode de 5 s. Décision
+prise en connaissance de cause : la reconnaissance de série prime ici sur la
+contrainte de durée initiale.
+
+Le screencast du segment D est incrusté dans une **coque d'appareil**
+(`templates/tablette.png`, ou `tablette-caisse.png` pour les épisodes du module
+Caisse POS). La coque est choisie automatiquement d'après le module de
+l'épisode.
 
 **Entre 16,0 et 26,0 il n'y a qu'une voix : celle de l'avatar.** Deux sources
 actives sur cette plage = épisode rejeté. C'est vérifié par `qc-episode.sh`.

@@ -28,6 +28,17 @@ SOFT_H=768         # logiciel : 2/5
 BAND_H=192         # bandeau de marque : 0,5/5, le logo y est centré
 RESPIR=0.6         # respiration avant 26,0 s : l'avatar doit avoir fini de parler
                    # avant que la voix de fin démarre, sinon les deux se marchent dessus
+# Coque d'appareil : le screencast s'incruste dans une tablette. Les épisodes
+# du module Caisse POS prennent la variante posée sur un tiroir-caisse.
+MODULE="$(python3 -c "import json;print(json.load(open('$R/state/episodes/$EP.json'))['module'])" 2>/dev/null || echo "")"
+case "$MODULE" in
+  "Caisse POS") COQUE=tablette-caisse; COQ_Y=85;  ECR_Y=111 ;;
+  *)            COQUE=tablette;        COQ_Y=151; ECR_Y=177 ;;
+esac
+COQ_X=34; ECR_X=60           # trou d'écran à (26,26) dans une coque de 1012 de large
+ECR_W=960; ECR_H=414         # ratio exact du screencast 1920x828
+echo "  coque  : $COQUE (module $MODULE)"
+
 BED_GAIN=0.224     # -13 dB : cale la musique sur le plancher -28 dBFS de la référence
 SFX_GAIN=2.0       # +6 dB : whoosh audible sous la voix
 
@@ -75,12 +86,16 @@ ffmpeg -v error \
  -i "$R/templates/logo_foodeatup.png" \
  -i "$R/templates/bgm.mp3" \
  -i "$R/templates/sfx_transition.mp3" \
+ -loop 1 -t 10 -i "$R/templates/$COQUE.png" \
  -filter_complex "\
  [0:v]trim=start=$DEBUT,setpts=(PTS-STARTPTS)/$TEMPO,fps=30,\
 crop=1080:$AV_H:0:$AV_CROP_Y,tpad=stop_mode=clone:stop_duration=3,\
 trim=0:10,setpts=PTS-STARTPTS[top];\
- [1:v]fps=30,scale=1080:$SOFT_H:force_original_aspect_ratio=decrease,\
-pad=1080:$SOFT_H:(ow-iw)/2:(oh-ih)/2:color=$SABLE[mid];\
+ color=c=$SABLE:s=1080x$SOFT_H:r=30,trim=0:10,setpts=PTS-STARTPTS[fond];\
+ [1:v]fps=30,scale=$ECR_W:$ECR_H[ecran];\
+ [fond][ecran]overlay=$ECR_X:$ECR_Y[avec];\
+ [5:v]fps=30,format=rgba[coque];\
+ [avec][coque]overlay=$COQ_X:$COQ_Y[mid];\
  color=c=$SABLE:s=1080x$BAND_H:r=30,trim=0:10[band];\
  [top][mid][band]vstack=inputs=3[stack];\
  [stack][2:v]overlay=(W-w)/2:H-$BAND_H+(($BAND_H-h)/2):format=auto[ov];\
@@ -102,6 +117,7 @@ if [ "$SEUL_D" = "--segment-d" ]; then
 fi
 
 # --- Assemblage : A (7) + sting/B/C (9) + D (10) + E (4) = 30,0 s -------------
+# puis le sting de marque (5 s) est collé derrière -> 35,0 s au total.
 cat > "$R/build/${EP}_list.txt" <<EOF
 file '$R/build/${EP}_A.mp4'
 file '$R/templates/COMMUN_sting_BC.mp4'
@@ -112,6 +128,21 @@ EOF
 ffmpeg -v error -f concat -safe 0 -i "$R/build/${EP}_list.txt" \
  -filter_complex "[0:a]loudnorm=I=-14:TP=-1.5:LRA=11,apad[a]" \
  -map 0:v -map "[a]" -t 30 \
+ -c:v libx264 -preset medium -crf 18 -r 30 -pix_fmt yuv420p \
+ -c:a aac -b:a 192k -ar 48000 "$R/build/${EP}_30s.mp4" -y
+
+# Le sting de marque ferme l'épisode. acrossfade ne croise que l'audio sur
+# 0,3 s : l'image, elle, est bout à bout, donc 30 + 5 = 35,0 s.
+ffmpeg -v error -i "$R/build/${EP}_30s.mp4" -i "$R/templates/sting-fin.mp4" \
+ -filter_complex "\
+ [0:v]scale=1080:1920,setsar=1,fps=30[v0];\
+ [1:v]scale=1080:1920,setsar=1,fps=30[v1];\
+ [v0][v1]concat=n=2:v=1:a=0[v];\
+ [0:a]aresample=48000,asetpts=PTS-STARTPTS[a0];\
+ [1:a]aresample=48000,asetpts=PTS-STARTPTS[a1];\
+ [a0][a1]acrossfade=d=0.3:c1=tri:c2=tri,loudnorm=I=-14:TP=-1.5:LRA=11,\
+alimiter=limit=0.79:level=disabled[a]" \
+ -map "[v]" -map "[a]" -t 35 \
  -c:v libx264 -preset slow -crf 20 -r 30 -pix_fmt yuv420p \
  -c:a aac -b:a 192k -ar 48000 -movflags +faststart \
  "$R/dist/tiktok/$EP.mp4" -y

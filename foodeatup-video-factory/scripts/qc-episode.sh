@@ -13,8 +13,9 @@ ko(){ printf '  \033[31mECHEC\033[0m %s\n' "$1"; FAIL=1; }
 echo "=== Contrôle $EP ==="
 
 D=$(ffprobe -v error -show_entries format=duration -of csv=p=0 "$M")
-awk -v d="$D" 'BEGIN{exit !(d>29.8 && d<30.2)}' \
-  && ok "durée ${D}s (30,0 ±0,2)" || ko "durée ${D}s hors 30,0 ±0,2"
+# 30 s d'épisode + 5 s de sting de marque
+awk -v d="$D" 'BEGIN{exit !(d>34.8 && d<35.2)}' \
+  && ok "durée ${D}s (35,0 ±0,2)" || ko "durée ${D}s hors 35,0 ±0,2"
 
 WH=$(ffprobe -v error -select_streams v -show_entries stream=width,height,r_frame_rate -of csv=p=0 "$M")
 [ "$WH" = "1080,1920,30/1" ] && ok "format $WH" || ko "format $WH (attendu 1080,1920,30/1)"
@@ -45,6 +46,21 @@ verifie_logo 21 "250:93:415:1777" "bandeau bas"
 # sur le carton de fin le filigrane est retiré : c'est la grande signature centrale
 # qui porte la marque, sinon on aurait deux logos à l'écran.
 verifie_logo 29 "400:150:340:780" "signature centrale"
+# Le sting de marque doit être là. On ne mesure pas une luminance : sur fond
+# sable, le logo bleu se repère à sa couleur, pas à sa clarté.
+BLEU=$(ffmpeg -v error -ss 33 -i "$M" -frames:v 1 -f rawvideo -pix_fmt rgb24 - 2>/dev/null \
+  | python3 -c "
+import sys
+d=sys.stdin.buffer.read()
+n=sum(1 for i in range(0,len(d)-2,3*17) if d[i+2]>150 and d[i]<120)
+print(n)")
+[ "$BLEU" -gt 300 ] && ok "logo du sting présent à 33s ($BLEU px bleus)" \
+  || ko "logo du sting absent à 33s ($BLEU px bleus)"
+PILL=$(ffmpeg -v error -ss 34.6 -i "$M" -frames:v 1 \
+  -vf "crop=300:80:390:1290,scale=10:3,format=gray" -f rawvideo - 2>/dev/null \
+  | python3 -c "import sys;d=sys.stdin.buffer.read();print(int(sum(d)/len(d)) if d else 0)")
+[ "$PILL" -gt 40 ] && ok "bloc contact présent à 34,6s" \
+  || ko "bloc contact absent à 34,6s (luminance $PILL)"
 
 # Respiration avant la voix de fin : si l'avatar parle encore à 25,8 s, sa
 # dernière syllabe tombe sur le premier mot de la signature.
