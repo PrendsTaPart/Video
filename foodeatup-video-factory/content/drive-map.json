@@ -1,0 +1,1202 @@
+{
+  "EP001": {
+    "module": "Service",
+    "chapitre_brief": "1 - Commandes multi-canaux",
+    "chapitre_drive": "1 - COMMANDES MULTI-CANAUX",
+    "folder": "1V0xXbnYuqBsDUiD2Q_itQLIk4Ps1rw4l",
+    "url": "https://drive.google.com/drive/folders/1V0xXbnYuqBsDUiD2Q_itQLIk4Ps1rw4l",
+    "resolution": "numéro"
+  },
+  "EP002": {
+    "module": "Service",
+    "chapitre_brief": "3 - Envoi direct cuisine",
+    "chapitre_drive": "3 - ENVOI DIRECT CUISINE",
+    "folder": "163wYyl14_2hFJ8gUGuunJWhYVqEo0AJu",
+    "url": "https://drive.google.com/drive/folders/163wYyl14_2hFJ8gUGuunJWhYVqEo0AJu",
+    "resolution": "numéro"
+  },
+  "EP003": {
+    "module": "StockVision",
+    "chapitre_brief": "1 - Ma carte",
+    "chapitre_drive": "1- Ma carte - Création et modifications de la carte du restaurant",
+    "folder": "1bGMZ8R1udBoMF4XrJJqEnpYKkVrwBxx7",
+    "url": "https://drive.google.com/drive/folders/1bGMZ8R1udBoMF4XrJJqEnpYKkVrwBxx7",
+    "resolution": "numéro"
+  },
+  "EP004": {
+    "module": "Caisse POS",
+    "chapitre_brief": "1 - Configurer sa caisse",
+    "chapitre_drive": "1 - CONFIGURER SA CAISSE POS TPE & TICKET",
+    "folder": "1hQ5RgiSyb2DGfkP_EIQ3mwWzVQOQBcOc",
+    "url": "https://drive.google.com/drive/folders/1hQ5RgiSyb2DGfkP_EIQ3mwWzVQOQBcOc",
+    "resolution": "numéro"
+  },
+  "EP005": {
+    "module": "Configuration",
+    "chapitre_brief": "vue d'ensemble",
+    "chapitre_drive": "1 - Monter votre boutique",
+    "folder": "1xCJAtFHgNO8DwcZ_Im4VgV_EqX0yV0Vf",
+    "url": "https://drive.google.com/drive/folders/1xCJAtFHgNO8DwcZ_Im4VgV_EqX0yV0Vf",
+    "resolution": "correspondance manuelle"
+  },
+  "EP006": {
+    "module": "StockVision",
+    "chapitre_brief": "17 - Ajouter et modifier un mouvement",
+    "chapitre_drive": "17- Stock - Ajouter et modifier un mouvement",
+    "folder": "1TEPT2xy-s0P_l3ghbupKLWuPa4J6DVra",
+    "url": "https://drive.google.com/drive/folders/1TEPT2xy-s0P_l3ghbupKLWuPa4J6DVra",
+    "resolution": "numéro"
+  },
+  "EP007": {
+    "module": "Marketing",
+    "chapitre_brief": "3 - Répondre aux avis",
+    "chapitre_drive": "3 - RÉPONDRE AUX AVIS",
+    "folder": "1ZXZeT7GyPTkQT95XNGu8svx6OI1aUgNA",
+    "url": "https://drive.google.com/drive/folders/1ZXZeT7GyPTkQT95XNGu8svx6OI1aUgNA",
+    "resolution": "numéro"
+  },
+  "EP008": {
+    "module": "Comptabilité",
+    "chapitre_brief": "facturation",
+    "chapitre_drive": "5- Créer une facture",
+    "folder": "1026gmGm615P9PAOfk4CUGaxRava0Nm6k",
+    "url": "https://drive.google.com/drive/folders/1026gmGm615P9PAOfk4CUGaxRava0Nm6k",
+    "resolution": "correspondance manuelle"
+  },
+  "EP009": {
+    "module": "Caisse POS",
+    "chapitre_brief": "7 - Suivre les écarts de caisse",
+    "chapitre_drive": "7 - SUIVRE LES ÉCARTS CAISSE",
+    "folder": "1XpLa01_iscSfjrfA8GkM2uEuHdDZIw4d",
+    "url": "https://drive.google.com/drive/folders/1XpLa01_iscSfjrfA8GkM2uEuHdDZIw4d",
+    "resolution": "numéro"
+  },
+  "EP010": {
+    "module": "PrediBot",
+    "chapitre_brief": "1 - Lire ses prévisions",
+    "chapitre_drive": "1 - LIRE SES PRÉVISIONS",
+    "folder": "19KbPaohx3zwWwsG4Ud3KfJU9WlqeqIoE",
+    "url": "https://drive.google.com/drive/folders/19KbPaohx3zwWwsG4Ud3KfJU9WlqeqIoE",
+    "resolution": "numéro"
+  },
+  "EP011": {
+    "module": "HubRise",
+    "chapitre_brief": "1 - Connecter son HubRise",
+    "chapitre_drive": "1 - CONNECTER SON HUBRISE",
+    "folder": "1kqu2sTxvzVvBFx-Y4WgFdF6qOz4wh0o9",
+    "url": "https://drive.google.com/drive/folders/1kqu2sTxvzVvBFx-Y4WgFdF6qOz4wh0o9",
+    "resolution": "numéro"
+  },
+  "EP012": {
+    "module": "KDS",
+    "chapitre_brief": "3 - Gérer le KDS en direct",
+    "chapitre_drive": "3 - GÉRER LE KDS EN DIRECT",
+    "folder": "1RnmeyK_4aYgVpGKKNdPOrClzmpHw9Ljg",
+    "url": "https://drive.google.com/drive/folders/1RnmeyK_4aYgVpGKKNdPOrClzmpHw9Ljg",
+    "resolution": "numéro"
+  },
+  "EP013": {
+    "module": "PrediBot",
+    "chapitre_brief": "3 - Parler à PrediBot",
+    "chapitre_drive": "3 - PARLER À PREDIBOT",
+    "folder": "10__yAAWsF5AzYJFvViRjWlSYTzIlIyBQ",
+    "url": "https://drive.google.com/drive/folders/10__yAAWsF5AzYJFvViRjWlSYTzIlIyBQ",
+    "resolution": "numéro"
+  },
+  "EP014": {
+    "module": "StockVision",
+    "chapitre_brief": "16 - Mouvements de stock",
+    "chapitre_drive": "16- Stock - Mouvements de stock",
+    "folder": "1DvhP8VJ6MFa2Zokkwgkdx_BUm7WUbIMp",
+    "url": "https://drive.google.com/drive/folders/1DvhP8VJ6MFa2Zokkwgkdx_BUm7WUbIMp",
+    "resolution": "numéro"
+  },
+  "EP015": {
+    "module": "Configuration",
+    "chapitre_brief": "référentiels",
+    "chapitre_drive": "7 - Vos catégories",
+    "folder": "1l4i6EF6MJikoXuL4vKDglHiwunFS0WT9",
+    "url": "https://drive.google.com/drive/folders/1l4i6EF6MJikoXuL4vKDglHiwunFS0WT9",
+    "resolution": "correspondance manuelle"
+  },
+  "EP016": {
+    "module": "Comptabilité",
+    "chapitre_brief": "dépenses",
+    "chapitre_drive": "8- Archivage des dépenses",
+    "folder": "1LKE7TtSjPJRnWVF_4-Tt89KmnudV-dcY",
+    "url": "https://drive.google.com/drive/folders/1LKE7TtSjPJRnWVF_4-Tt89KmnudV-dcY",
+    "resolution": "texte 0.48"
+  },
+  "EP017": {
+    "module": "StockVision",
+    "chapitre_brief": "19 - Création d'un rapport",
+    "chapitre_drive": "19- Statistiques - Création d'un rapport",
+    "folder": "1yvp9ZXQST0g2t8Y6_DFMGeU_W2VtTwUa",
+    "url": "https://drive.google.com/drive/folders/1yvp9ZXQST0g2t8Y6_DFMGeU_W2VtTwUa",
+    "resolution": "numéro"
+  },
+  "EP018": {
+    "module": "Service",
+    "chapitre_brief": "2 - Site, vocal et QR code",
+    "chapitre_drive": "2 - SITE, VOCAL & QR CODE",
+    "folder": "1Qx4wDHzoPibj-O4HHwRExlnU7bLvP6aR",
+    "url": "https://drive.google.com/drive/folders/1Qx4wDHzoPibj-O4HHwRExlnU7bLvP6aR",
+    "resolution": "numéro"
+  },
+  "EP019": {
+    "module": "StockVision",
+    "chapitre_brief": "3 - Prédictions des commandes",
+    "chapitre_drive": "3- Ma carte - Prédictions des commandes",
+    "folder": "107h7JIXDFCD5cjyF90tiOZT2LSkFSjFj",
+    "url": "https://drive.google.com/drive/folders/107h7JIXDFCD5cjyF90tiOZT2LSkFSjFj",
+    "resolution": "numéro"
+  },
+  "EP020": {
+    "module": "Réservation",
+    "chapitre_brief": "2 - Ajouter une réservation",
+    "chapitre_drive": "2 - AJOUTER UNE RÉSERVATION",
+    "folder": "1FCKxILOc1EB5X51xFCrWZgXTQ27IXLeE",
+    "url": "https://drive.google.com/drive/folders/1FCKxILOc1EB5X51xFCrWZgXTQ27IXLeE",
+    "resolution": "numéro"
+  },
+  "EP021": {
+    "module": "KDS",
+    "chapitre_brief": "1 - Créer tes postes KDS",
+    "chapitre_drive": "1 - CRÉER TES POSTES KDS",
+    "folder": "1NU0o445gOk4pdMf4uimNPOts3XIcR7LO",
+    "url": "https://drive.google.com/drive/folders/1NU0o445gOk4pdMf4uimNPOts3XIcR7LO",
+    "resolution": "numéro"
+  },
+  "EP022": {
+    "module": "PrediBot",
+    "chapitre_brief": "2 - Marketplace de prompts",
+    "chapitre_drive": "2 - MARKETPLACE DE PROMPTS",
+    "folder": "1RYZ8XwLFAfblkQTaotx4OBWbeGn9FHzR",
+    "url": "https://drive.google.com/drive/folders/1RYZ8XwLFAfblkQTaotx4OBWbeGn9FHzR",
+    "resolution": "numéro"
+  },
+  "EP023": {
+    "module": "Marketing",
+    "chapitre_brief": "24 - Calendrier IA avec Iris",
+    "chapitre_drive": "24 - CALENDRIER IA AVEC IRIS",
+    "folder": "1xBOpXD3_d349XcOQbXjWZI2ejA316C_0",
+    "url": "https://drive.google.com/drive/folders/1xBOpXD3_d349XcOQbXjWZI2ejA316C_0",
+    "resolution": "numéro"
+  },
+  "EP024": {
+    "module": "Mon Site",
+    "chapitre_brief": "5 - Créer un site par IA",
+    "chapitre_drive": "5 - CRÉER UN SITE PAR IA",
+    "folder": "1WZsVdrBvcL2OQiYcRdnBCgzUx6u9J6p9",
+    "url": "https://drive.google.com/drive/folders/1WZsVdrBvcL2OQiYcRdnBCgzUx6u9J6p9",
+    "resolution": "numéro"
+  },
+  "EP025": {
+    "module": "Marketing",
+    "chapitre_brief": "6 - Campagne 100 % IA",
+    "chapitre_drive": "6 - CAMPAGNE 100% IA",
+    "folder": "14eSl0L3tVXmecDdmsaTReOkXcE-DGM3d",
+    "url": "https://drive.google.com/drive/folders/14eSl0L3tVXmecDdmsaTReOkXcE-DGM3d",
+    "resolution": "numéro"
+  },
+  "EP026": {
+    "module": "StockVision",
+    "chapitre_brief": "5 - Envoyer sa liste de courses au fournisseur",
+    "chapitre_drive": "5- Liste des courses - Commander au fournisseur",
+    "folder": "18dlgcwepziokEkkpTQFu1-ifGJ5ajOYB",
+    "url": "https://drive.google.com/drive/folders/18dlgcwepziokEkkpTQFu1-ifGJ5ajOYB",
+    "resolution": "numéro"
+  },
+  "EP027": {
+    "module": "Caisse POS",
+    "chapitre_brief": "6 - Clôturer sa caisse, le Z",
+    "chapitre_drive": "6 - CLÔTURER SA CAISSE LE Z",
+    "folder": "1ht1CI-2jBkP6DdhvMdT3xVCPbzrwUU3m",
+    "url": "https://drive.google.com/drive/folders/1ht1CI-2jBkP6DdhvMdT3xVCPbzrwUU3m",
+    "resolution": "numéro"
+  },
+  "EP028": {
+    "module": "HubRise",
+    "chapitre_brief": "4 - Centraliser les commandes",
+    "chapitre_drive": "4 - CENTRALISER LES COMMANDES",
+    "folder": "1Qt_omsrE2w9UqlhhlfkhwJaCjeL_ddow",
+    "url": "https://drive.google.com/drive/folders/1Qt_omsrE2w9UqlhhlfkhwJaCjeL_ddow",
+    "resolution": "numéro"
+  },
+  "EP029": {
+    "module": "PrediBot",
+    "chapitre_brief": "1 - Lire ses prévisions",
+    "chapitre_drive": "1 - LIRE SES PRÉVISIONS",
+    "folder": "19KbPaohx3zwWwsG4Ud3KfJU9WlqeqIoE",
+    "url": "https://drive.google.com/drive/folders/19KbPaohx3zwWwsG4Ud3KfJU9WlqeqIoE",
+    "resolution": "numéro"
+  },
+  "EP030": {
+    "module": "Configuration",
+    "chapitre_brief": "Academy",
+    "chapitre_drive": null,
+    "folder": "19xTrrkXtWO3yfJqtC3SIlDgpBjSEc4N9",
+    "url": "https://drive.google.com/drive/folders/19xTrrkXtWO3yfJqtC3SIlDgpBjSEc4N9",
+    "resolution": "à confirmer — dossier module"
+  },
+  "EP031": {
+    "module": "HACCP",
+    "chapitre_brief": "étiquettes DLC",
+    "chapitre_drive": "15-Créer les étiquettes de production",
+    "folder": "1LP5M_d-WFsTZCb1ddBTNlTGfUQhEzO76",
+    "url": "https://drive.google.com/drive/folders/1LP5M_d-WFsTZCb1ddBTNlTGfUQhEzO76",
+    "resolution": "texte 0.51"
+  },
+  "EP032": {
+    "module": "StockVision",
+    "chapitre_brief": "1 - Ma carte, fiche recette",
+    "chapitre_drive": "1- Ma carte - Création et modifications de la carte du restaurant",
+    "folder": "1bGMZ8R1udBoMF4XrJJqEnpYKkVrwBxx7",
+    "url": "https://drive.google.com/drive/folders/1bGMZ8R1udBoMF4XrJJqEnpYKkVrwBxx7",
+    "resolution": "numéro"
+  },
+  "EP033": {
+    "module": "StockVision",
+    "chapitre_brief": "16 - Mouvements de stock",
+    "chapitre_drive": "16- Stock - Mouvements de stock",
+    "folder": "1DvhP8VJ6MFa2Zokkwgkdx_BUm7WUbIMp",
+    "url": "https://drive.google.com/drive/folders/1DvhP8VJ6MFa2Zokkwgkdx_BUm7WUbIMp",
+    "resolution": "numéro"
+  },
+  "EP034": {
+    "module": "Configuration",
+    "chapitre_brief": "process",
+    "chapitre_drive": null,
+    "folder": "19xTrrkXtWO3yfJqtC3SIlDgpBjSEc4N9",
+    "url": "https://drive.google.com/drive/folders/19xTrrkXtWO3yfJqtC3SIlDgpBjSEc4N9",
+    "resolution": "à confirmer — dossier module"
+  },
+  "EP035": {
+    "module": "PrediBot",
+    "chapitre_brief": "1 - Lire ses prévisions",
+    "chapitre_drive": "1 - LIRE SES PRÉVISIONS",
+    "folder": "19KbPaohx3zwWwsG4Ud3KfJU9WlqeqIoE",
+    "url": "https://drive.google.com/drive/folders/19KbPaohx3zwWwsG4Ud3KfJU9WlqeqIoE",
+    "resolution": "numéro"
+  },
+  "EP036": {
+    "module": "PrediBot",
+    "chapitre_brief": "2 - Un seul abonnement",
+    "chapitre_drive": "2 - MARKETPLACE DE PROMPTS",
+    "folder": "1RYZ8XwLFAfblkQTaotx4OBWbeGn9FHzR",
+    "url": "https://drive.google.com/drive/folders/1RYZ8XwLFAfblkQTaotx4OBWbeGn9FHzR",
+    "resolution": "numéro"
+  },
+  "EP037": {
+    "module": "Équipe & Planning",
+    "chapitre_brief": "créer un shift",
+    "chapitre_drive": "6-Planning par employé ou par poste",
+    "folder": "1sLZB_zcuk_uL3BpFvj63LdU2W_7oKU-X",
+    "url": "https://drive.google.com/drive/folders/1sLZB_zcuk_uL3BpFvj63LdU2W_7oKU-X",
+    "resolution": "correspondance manuelle"
+  },
+  "EP038": {
+    "module": "StockVision",
+    "chapitre_brief": "4 - Ma liste de courses",
+    "chapitre_drive": "4- Liste des courses - Ajouter, modifier",
+    "folder": "1wOLOfH054cLrfHRx_GmGlKxrfW10cHhb",
+    "url": "https://drive.google.com/drive/folders/1wOLOfH054cLrfHRx_GmGlKxrfW10cHhb",
+    "resolution": "numéro"
+  },
+  "EP039": {
+    "module": "Réservation",
+    "chapitre_brief": "3 - Gérer et no-shows",
+    "chapitre_drive": "3 - GÉRER & NO-SHOWS",
+    "folder": "11I5195HrUUPsZVqectjWhfM9f-EEo1y5",
+    "url": "https://drive.google.com/drive/folders/11I5195HrUUPsZVqectjWhfM9f-EEo1y5",
+    "resolution": "numéro"
+  },
+  "EP040": {
+    "module": "StockVision",
+    "chapitre_brief": "17 - Ajouter un mouvement",
+    "chapitre_drive": "17- Stock - Ajouter et modifier un mouvement",
+    "folder": "1TEPT2xy-s0P_l3ghbupKLWuPa4J6DVra",
+    "url": "https://drive.google.com/drive/folders/1TEPT2xy-s0P_l3ghbupKLWuPa4J6DVra",
+    "resolution": "numéro"
+  },
+  "EP041": {
+    "module": "StockVision",
+    "chapitre_brief": "15 - Sortie des ingrédients de la production",
+    "chapitre_drive": "15- Production - Sortie des ingrédients",
+    "folder": "1R39Whn8WiAr8zxH7Yb1Ive7L2FMxYvvx",
+    "url": "https://drive.google.com/drive/folders/1R39Whn8WiAr8zxH7Yb1Ive7L2FMxYvvx",
+    "resolution": "numéro"
+  },
+  "EP042": {
+    "module": "Marketing",
+    "chapitre_brief": "21 - MCP RapidoCMS et Iris",
+    "chapitre_drive": "21 - MCP RAPIDOCMS + IRIS",
+    "folder": "151n4TXZAZrkPpDC_FBJrSw-6eto3l8al",
+    "url": "https://drive.google.com/drive/folders/151n4TXZAZrkPpDC_FBJrSw-6eto3l8al",
+    "resolution": "numéro"
+  },
+  "EP043": {
+    "module": "Caisse POS",
+    "chapitre_brief": "4 - Remises et avoirs",
+    "chapitre_drive": "4 - APPLIQUER UNE REMISE ET AVOIRS",
+    "folder": "18GcdgyGAX_u3kEzXatVqew0t9VvTFqAQ",
+    "url": "https://drive.google.com/drive/folders/18GcdgyGAX_u3kEzXatVqew0t9VvTFqAQ",
+    "resolution": "numéro"
+  },
+  "EP044": {
+    "module": "Réservation",
+    "chapitre_brief": "5 - Commander par QR code",
+    "chapitre_drive": "5 - COMMANDER PAR QR CODE",
+    "folder": "1z8q4btyT2yAqNIenhuvwtssyCvK2Qk9S",
+    "url": "https://drive.google.com/drive/folders/1z8q4btyT2yAqNIenhuvwtssyCvK2Qk9S",
+    "resolution": "numéro"
+  },
+  "EP045": {
+    "module": "StockVision",
+    "chapitre_brief": "18 - Statistiques par module",
+    "chapitre_drive": "18- Statistiques par module",
+    "folder": "1e7LZCLhyA2ANmednWevCt7-AreosC4Yw",
+    "url": "https://drive.google.com/drive/folders/1e7LZCLhyA2ANmednWevCt7-AreosC4Yw",
+    "resolution": "numéro"
+  },
+  "EP046": {
+    "module": "StockVision",
+    "chapitre_brief": "20 - Agent IA et suggestions",
+    "chapitre_drive": "20- Statistiques - Agent IA et suggestions",
+    "folder": "1QJDmtxJcqBCKRegKngmvvxAD_4q_8V57",
+    "url": "https://drive.google.com/drive/folders/1QJDmtxJcqBCKRegKngmvvxAD_4q_8V57",
+    "resolution": "numéro"
+  },
+  "EP047": {
+    "module": "HACCP",
+    "chapitre_brief": "contrôle à réception",
+    "chapitre_drive": "25-Contrôle à réception",
+    "folder": "1gZmtvcVR5A6PnBuwf01gFFDioWJ5EQ_V",
+    "url": "https://drive.google.com/drive/folders/1gZmtvcVR5A6PnBuwf01gFFDioWJ5EQ_V",
+    "resolution": "texte 0.93"
+  },
+  "EP048": {
+    "module": "Configuration",
+    "chapitre_brief": "paramétrage initial",
+    "chapitre_drive": "1 - Monter votre boutique",
+    "folder": "1xCJAtFHgNO8DwcZ_Im4VgV_EqX0yV0Vf",
+    "url": "https://drive.google.com/drive/folders/1xCJAtFHgNO8DwcZ_Im4VgV_EqX0yV0Vf",
+    "resolution": "correspondance manuelle"
+  },
+  "EP049": {
+    "module": "HACCP",
+    "chapitre_brief": "Relevé de température",
+    "chapitre_drive": "3-Enregistrer une température",
+    "folder": "1ohzkWaC6hB6wEa2ow1gOtoLWz_zjd5_O",
+    "url": "https://drive.google.com/drive/folders/1ohzkWaC6hB6wEa2ow1gOtoLWz_zjd5_O",
+    "resolution": "texte 0.68"
+  },
+  "EP050": {
+    "module": "HACCP",
+    "chapitre_brief": "Équipements",
+    "chapitre_drive": "2-Ajouter un équipement",
+    "folder": "1WQDVmCZUct__2ovbFBELmewN_Vp-GkHw",
+    "url": "https://drive.google.com/drive/folders/1WQDVmCZUct__2ovbFBELmewN_Vp-GkHw",
+    "resolution": "texte 0.59"
+  },
+  "EP051": {
+    "module": "HACCP",
+    "chapitre_brief": "Étiquettes DLC",
+    "chapitre_drive": "15-Créer les étiquettes de production",
+    "folder": "1LP5M_d-WFsTZCb1ddBTNlTGfUQhEzO76",
+    "url": "https://drive.google.com/drive/folders/1LP5M_d-WFsTZCb1ddBTNlTGfUQhEzO76",
+    "resolution": "texte 0.51"
+  },
+  "EP052": {
+    "module": "HACCP",
+    "chapitre_brief": "Traçabilité",
+    "chapitre_drive": "8-Traçabilité complète",
+    "folder": "1KjJgNDZmrf1NR_6aihWwN9Q77UaHp2Yk",
+    "url": "https://drive.google.com/drive/folders/1KjJgNDZmrf1NR_6aihWwN9Q77UaHp2Yk",
+    "resolution": "texte 0.67"
+  },
+  "EP053": {
+    "module": "HACCP",
+    "chapitre_brief": "Réception fournisseur",
+    "chapitre_drive": "25-Contrôle à réception",
+    "folder": "1gZmtvcVR5A6PnBuwf01gFFDioWJ5EQ_V",
+    "url": "https://drive.google.com/drive/folders/1gZmtvcVR5A6PnBuwf01gFFDioWJ5EQ_V",
+    "resolution": "correspondance manuelle"
+  },
+  "EP054": {
+    "module": "HACCP",
+    "chapitre_brief": "Plan de nettoyage",
+    "chapitre_drive": "11-Éditer le plan de nettoyage",
+    "folder": "19-6NubgRphdSbQ3C2HNN3KmWavmfKUvO",
+    "url": "https://drive.google.com/drive/folders/19-6NubgRphdSbQ3C2HNN3KmWavmfKUvO",
+    "resolution": "texte 0.72"
+  },
+  "EP055": {
+    "module": "HACCP",
+    "chapitre_brief": "Checklists hygiène",
+    "chapitre_drive": "22-Créer une check-list hygiène",
+    "folder": "15CwOKunwpcys81_j-rwf0W2bLfghvsXv",
+    "url": "https://drive.google.com/drive/folders/15CwOKunwpcys81_j-rwf0W2bLfghvsXv",
+    "resolution": "texte 0.69"
+  },
+  "EP056": {
+    "module": "HACCP",
+    "chapitre_brief": "Historique",
+    "chapitre_drive": "1-Accueil et Historique",
+    "folder": "14eutFL8vuT8ImEadyltp1UBs15KWmEZ_",
+    "url": "https://drive.google.com/drive/folders/14eutFL8vuT8ImEadyltp1UBs15KWmEZ_",
+    "resolution": "texte 0.61"
+  },
+  "EP057": {
+    "module": "HACCP",
+    "chapitre_brief": "Alertes",
+    "chapitre_drive": "3-Enregistrer une température",
+    "folder": "1ohzkWaC6hB6wEa2ow1gOtoLWz_zjd5_O",
+    "url": "https://drive.google.com/drive/folders/1ohzkWaC6hB6wEa2ow1gOtoLWz_zjd5_O",
+    "resolution": "correspondance manuelle"
+  },
+  "EP058": {
+    "module": "HACCP",
+    "chapitre_brief": "Rôles",
+    "chapitre_drive": null,
+    "folder": "10rqzHFjXbjkGi73uJyjt3XQM92eaIMK_",
+    "url": "https://drive.google.com/drive/folders/10rqzHFjXbjkGi73uJyjt3XQM92eaIMK_",
+    "resolution": "à confirmer — dossier module"
+  },
+  "EP059": {
+    "module": "HACCP",
+    "chapitre_brief": "Non-conformité",
+    "chapitre_drive": "23-Contrôles de conformité",
+    "folder": "14aDxJMZU_ZnneMXrv0ucr2B1cpKJnAWl",
+    "url": "https://drive.google.com/drive/folders/14aDxJMZU_ZnneMXrv0ucr2B1cpKJnAWl",
+    "resolution": "texte 0.65"
+  },
+  "EP060": {
+    "module": "HACCP",
+    "chapitre_brief": "Congélation",
+    "chapitre_drive": "25-Contrôle à réception",
+    "folder": "1gZmtvcVR5A6PnBuwf01gFFDioWJ5EQ_V",
+    "url": "https://drive.google.com/drive/folders/1gZmtvcVR5A6PnBuwf01gFFDioWJ5EQ_V",
+    "resolution": "texte 0.53"
+  },
+  "EP061": {
+    "module": "HACCP",
+    "chapitre_brief": "Rapport HACCP",
+    "chapitre_drive": "30-Exporter l'historique HACCP",
+    "folder": "1zW01WAMfEsT4x62i4D1nwm4BCb3cYM_e",
+    "url": "https://drive.google.com/drive/folders/1zW01WAMfEsT4x62i4D1nwm4BCb3cYM_e",
+    "resolution": "texte 0.47"
+  },
+  "EP062": {
+    "module": "HACCP",
+    "chapitre_brief": "Routine du jour",
+    "chapitre_drive": null,
+    "folder": "10rqzHFjXbjkGi73uJyjt3XQM92eaIMK_",
+    "url": "https://drive.google.com/drive/folders/10rqzHFjXbjkGi73uJyjt3XQM92eaIMK_",
+    "resolution": "à confirmer — dossier module"
+  },
+  "EP063": {
+    "module": "Équipe & Planning",
+    "chapitre_brief": "Créer un employé",
+    "chapitre_drive": "4-Horaires d'un employé",
+    "folder": "1LH1Yc5W_TjOZlRh3yalK5FGLesAKKNA4",
+    "url": "https://drive.google.com/drive/folders/1LH1Yc5W_TjOZlRh3yalK5FGLesAKKNA4",
+    "resolution": "texte 0.67"
+  },
+  "EP064": {
+    "module": "Équipe & Planning",
+    "chapitre_brief": "Planning semaine",
+    "chapitre_drive": "16-Planning et tâches de l'employé",
+    "folder": "1IRoEhrDK6gE4PqPwSDmhXOP7XjjFi6xq",
+    "url": "https://drive.google.com/drive/folders/1IRoEhrDK6gE4PqPwSDmhXOP7XjjFi6xq",
+    "resolution": "texte 0.52"
+  },
+  "EP065": {
+    "module": "Équipe & Planning",
+    "chapitre_brief": "Pointages",
+    "chapitre_drive": "12-Historique des pointages",
+    "folder": "165Pq4ZXw8IGWVge3kACbiiLJ162oDYij",
+    "url": "https://drive.google.com/drive/folders/165Pq4ZXw8IGWVge3kACbiiLJ162oDYij",
+    "resolution": "texte 0.50"
+  },
+  "EP066": {
+    "module": "Équipe & Planning",
+    "chapitre_brief": "Congés",
+    "chapitre_drive": "17-Demande d'absence ou de congé",
+    "folder": "1Y_WxNxLa301L_2rhVS2zjpi2CqqrS5iw",
+    "url": "https://drive.google.com/drive/folders/1Y_WxNxLa301L_2rhVS2zjpi2CqqrS5iw",
+    "resolution": "correspondance manuelle"
+  },
+  "EP067": {
+    "module": "Équipe & Planning",
+    "chapitre_brief": "Contrats",
+    "chapitre_drive": "3-Salaire et contrat",
+    "folder": "1KduEmNhweEXZBv2CJ6nUr6rwNnkx3k6F",
+    "url": "https://drive.google.com/drive/folders/1KduEmNhweEXZBv2CJ6nUr6rwNnkx3k6F",
+    "resolution": "texte 0.50"
+  },
+  "EP068": {
+    "module": "Équipe & Planning",
+    "chapitre_brief": "Coût du travail",
+    "chapitre_drive": "6-Planning par employé ou par poste",
+    "folder": "1sLZB_zcuk_uL3BpFvj63LdU2W_7oKU-X",
+    "url": "https://drive.google.com/drive/folders/1sLZB_zcuk_uL3BpFvj63LdU2W_7oKU-X",
+    "resolution": "correspondance manuelle"
+  },
+  "EP069": {
+    "module": "Équipe & Planning",
+    "chapitre_brief": "Recrutement",
+    "chapitre_drive": null,
+    "folder": "1wboT7bVjEwxbhpU9Xgz8sRjjqn9XEd7X",
+    "url": "https://drive.google.com/drive/folders/1wboT7bVjEwxbhpU9Xgz8sRjjqn9XEd7X",
+    "resolution": "à confirmer — dossier module"
+  },
+  "EP070": {
+    "module": "Équipe & Planning",
+    "chapitre_brief": "Onboarding",
+    "chapitre_drive": "2-Configuration des employés",
+    "folder": "1GYwVOPg4veg-cFhZh_rxhvWmwOFy_4mB",
+    "url": "https://drive.google.com/drive/folders/1GYwVOPg4veg-cFhZh_rxhvWmwOFy_4mB",
+    "resolution": "correspondance manuelle"
+  },
+  "EP071": {
+    "module": "Équipe & Planning",
+    "chapitre_brief": "Multi-postes",
+    "chapitre_drive": "6-Planning par employé ou par poste",
+    "folder": "1sLZB_zcuk_uL3BpFvj63LdU2W_7oKU-X",
+    "url": "https://drive.google.com/drive/folders/1sLZB_zcuk_uL3BpFvj63LdU2W_7oKU-X",
+    "resolution": "correspondance manuelle"
+  },
+  "EP072": {
+    "module": "Équipe & Planning",
+    "chapitre_brief": "Absences",
+    "chapitre_drive": "17-Demande d'absence ou de congé",
+    "folder": "1Y_WxNxLa301L_2rhVS2zjpi2CqqrS5iw",
+    "url": "https://drive.google.com/drive/folders/1Y_WxNxLa301L_2rhVS2zjpi2CqqrS5iw",
+    "resolution": "correspondance manuelle"
+  },
+  "EP073": {
+    "module": "Configuration",
+    "chapitre_brief": "Établissement",
+    "chapitre_drive": "3 - Profil entreprise",
+    "folder": "1PVGsQbmoDU3_qmv3NFnx_zSovCNaxWjA",
+    "url": "https://drive.google.com/drive/folders/1PVGsQbmoDU3_qmv3NFnx_zSovCNaxWjA",
+    "resolution": "correspondance manuelle"
+  },
+  "EP074": {
+    "module": "Configuration",
+    "chapitre_brief": "Catégories",
+    "chapitre_drive": "7 - Vos catégories",
+    "folder": "1l4i6EF6MJikoXuL4vKDglHiwunFS0WT9",
+    "url": "https://drive.google.com/drive/folders/1l4i6EF6MJikoXuL4vKDglHiwunFS0WT9",
+    "resolution": "texte 0.71"
+  },
+  "EP075": {
+    "module": "Configuration",
+    "chapitre_brief": "TVA",
+    "chapitre_drive": "4 - Vos taux de TVA",
+    "folder": "1lIal8J0XjvMrxQ7a3Hb3eZi93GwH8XsX",
+    "url": "https://drive.google.com/drive/folders/1lIal8J0XjvMrxQ7a3Hb3eZi93GwH8XsX",
+    "resolution": "correspondance manuelle"
+  },
+  "EP076": {
+    "module": "Configuration",
+    "chapitre_brief": "Zones et tables",
+    "chapitre_drive": "11 - Recettes et étapes",
+    "folder": "1Y-vOFdJvRgFuder7nb8GHK2AIlM2es10",
+    "url": "https://drive.google.com/drive/folders/1Y-vOFdJvRgFuder7nb8GHK2AIlM2es10",
+    "resolution": "texte 0.53"
+  },
+  "EP077": {
+    "module": "Configuration",
+    "chapitre_brief": "Équipements",
+    "chapitre_drive": null,
+    "folder": "19xTrrkXtWO3yfJqtC3SIlDgpBjSEc4N9",
+    "url": "https://drive.google.com/drive/folders/19xTrrkXtWO3yfJqtC3SIlDgpBjSEc4N9",
+    "resolution": "à confirmer — dossier module"
+  },
+  "EP078": {
+    "module": "Configuration",
+    "chapitre_brief": "Utilisateurs",
+    "chapitre_drive": null,
+    "folder": "19xTrrkXtWO3yfJqtC3SIlDgpBjSEc4N9",
+    "url": "https://drive.google.com/drive/folders/19xTrrkXtWO3yfJqtC3SIlDgpBjSEc4N9",
+    "resolution": "à confirmer — dossier module"
+  },
+  "EP079": {
+    "module": "Configuration",
+    "chapitre_brief": "Import de carte",
+    "chapitre_drive": null,
+    "folder": "19xTrrkXtWO3yfJqtC3SIlDgpBjSEc4N9",
+    "url": "https://drive.google.com/drive/folders/19xTrrkXtWO3yfJqtC3SIlDgpBjSEc4N9",
+    "resolution": "à confirmer — dossier module"
+  },
+  "EP080": {
+    "module": "Configuration",
+    "chapitre_brief": "Abonnement",
+    "chapitre_drive": "2 - Choisir votre abonnement",
+    "folder": "1VpbJkqpt9ckLSWXPbLyS6miIHYwU29d3",
+    "url": "https://drive.google.com/drive/folders/1VpbJkqpt9ckLSWXPbLyS6miIHYwU29d3",
+    "resolution": "texte 0.53"
+  },
+  "EP081": {
+    "module": "Comptabilité",
+    "chapitre_brief": "Factures",
+    "chapitre_drive": "5- Créer une facture",
+    "folder": "1026gmGm615P9PAOfk4CUGaxRava0Nm6k",
+    "url": "https://drive.google.com/drive/folders/1026gmGm615P9PAOfk4CUGaxRava0Nm6k",
+    "resolution": "texte 0.50"
+  },
+  "EP082": {
+    "module": "Comptabilité",
+    "chapitre_brief": "Devis",
+    "chapitre_drive": "3- Créer un devis",
+    "folder": "1vEqEBl6EYPfsXAsDkHKMKjMCFs845eQH",
+    "url": "https://drive.google.com/drive/folders/1vEqEBl6EYPfsXAsDkHKMKjMCFs845eQH",
+    "resolution": "texte 0.45"
+  },
+  "EP083": {
+    "module": "Comptabilité",
+    "chapitre_brief": "Impayés",
+    "chapitre_drive": "6- Statuts d'une facture",
+    "folder": "1qWdK1lFjjCML6JADIDzpU1C2Z9-c6KTa",
+    "url": "https://drive.google.com/drive/folders/1qWdK1lFjjCML6JADIDzpU1C2Z9-c6KTa",
+    "resolution": "correspondance manuelle"
+  },
+  "EP084": {
+    "module": "Comptabilité",
+    "chapitre_brief": "Dépenses",
+    "chapitre_drive": "8- Archivage des dépenses",
+    "folder": "1LKE7TtSjPJRnWVF_4-Tt89KmnudV-dcY",
+    "url": "https://drive.google.com/drive/folders/1LKE7TtSjPJRnWVF_4-Tt89KmnudV-dcY",
+    "resolution": "texte 0.48"
+  },
+  "EP085": {
+    "module": "Comptabilité",
+    "chapitre_brief": "Synthèse",
+    "chapitre_drive": "9- E-reporting et archivage des factures",
+    "folder": "1uGc7EccEyaH6I157DL4UxrbQK90IiC3Y",
+    "url": "https://drive.google.com/drive/folders/1uGc7EccEyaH6I157DL4UxrbQK90IiC3Y",
+    "resolution": "correspondance manuelle"
+  },
+  "EP086": {
+    "module": "Comptabilité",
+    "chapitre_brief": "Export comptable",
+    "chapitre_drive": "9- E-reporting et archivage des factures",
+    "folder": "1uGc7EccEyaH6I157DL4UxrbQK90IiC3Y",
+    "url": "https://drive.google.com/drive/folders/1uGc7EccEyaH6I157DL4UxrbQK90IiC3Y",
+    "resolution": "correspondance manuelle"
+  },
+  "EP087": {
+    "module": "Mon Site",
+    "chapitre_brief": "Éditeur",
+    "chapitre_drive": "1 - ACTIVER L'ÉDITEUR WEB",
+    "folder": "1kM8I-Lgo65v3teUnjLRb1WuJm2O5JUhC",
+    "url": "https://drive.google.com/drive/folders/1kM8I-Lgo65v3teUnjLRb1WuJm2O5JUhC",
+    "resolution": "correspondance manuelle"
+  },
+  "EP088": {
+    "module": "Mon Site",
+    "chapitre_brief": "Pages",
+    "chapitre_drive": "4 - GÉRER TES PAGES",
+    "folder": "1QbHNfWD_5KMcl5Nro4mVPlWcih71u5ri",
+    "url": "https://drive.google.com/drive/folders/1QbHNfWD_5KMcl5Nro4mVPlWcih71u5ri",
+    "resolution": "correspondance manuelle"
+  },
+  "EP089": {
+    "module": "Mon Site",
+    "chapitre_brief": "Domaine",
+    "chapitre_drive": "8 - CONNECTER TON DOMAINE",
+    "folder": "1aAdfanPg2pUrFl3JVMYL-5RWXagOciv7",
+    "url": "https://drive.google.com/drive/folders/1aAdfanPg2pUrFl3JVMYL-5RWXagOciv7",
+    "resolution": "correspondance manuelle"
+  },
+  "EP090": {
+    "module": "Mon Site",
+    "chapitre_brief": "Leads du site",
+    "chapitre_drive": null,
+    "folder": "1ykcHl2BaY22WlCsBA3DuwXaEMvQZUtMF",
+    "url": "https://drive.google.com/drive/folders/1ykcHl2BaY22WlCsBA3DuwXaEMvQZUtMF",
+    "resolution": "à confirmer — dossier module"
+  },
+  "EP091": {
+    "module": "Réservation",
+    "chapitre_brief": "2 - Ajouter une réservation",
+    "chapitre_drive": "2 - AJOUTER UNE RÉSERVATION",
+    "folder": "1FCKxILOc1EB5X51xFCrWZgXTQ27IXLeE",
+    "url": "https://drive.google.com/drive/folders/1FCKxILOc1EB5X51xFCrWZgXTQ27IXLeE",
+    "resolution": "numéro"
+  },
+  "EP092": {
+    "module": "Réservation",
+    "chapitre_brief": "3 - Gérer et no-shows",
+    "chapitre_drive": "3 - GÉRER & NO-SHOWS",
+    "folder": "11I5195HrUUPsZVqectjWhfM9f-EEo1y5",
+    "url": "https://drive.google.com/drive/folders/11I5195HrUUPsZVqectjWhfM9f-EEo1y5",
+    "resolution": "numéro"
+  },
+  "EP093": {
+    "module": "StockVision",
+    "chapitre_brief": "3 - Prédictions des commandes",
+    "chapitre_drive": "3- Ma carte - Prédictions des commandes",
+    "folder": "107h7JIXDFCD5cjyF90tiOZT2LSkFSjFj",
+    "url": "https://drive.google.com/drive/folders/107h7JIXDFCD5cjyF90tiOZT2LSkFSjFj",
+    "resolution": "numéro"
+  },
+  "EP094": {
+    "module": "HubRise",
+    "chapitre_brief": "4 - Centraliser les commandes",
+    "chapitre_drive": "4 - CENTRALISER LES COMMANDES",
+    "folder": "1Qt_omsrE2w9UqlhhlfkhwJaCjeL_ddow",
+    "url": "https://drive.google.com/drive/folders/1Qt_omsrE2w9UqlhhlfkhwJaCjeL_ddow",
+    "resolution": "numéro"
+  },
+  "EP095": {
+    "module": "KDS",
+    "chapitre_brief": "3 - Gérer le KDS en direct",
+    "chapitre_drive": "3 - GÉRER LE KDS EN DIRECT",
+    "folder": "1RnmeyK_4aYgVpGKKNdPOrClzmpHw9Ljg",
+    "url": "https://drive.google.com/drive/folders/1RnmeyK_4aYgVpGKKNdPOrClzmpHw9Ljg",
+    "resolution": "numéro"
+  },
+  "EP096": {
+    "module": "HACCP",
+    "chapitre_brief": "relevé de température",
+    "chapitre_drive": "3-Enregistrer une température",
+    "folder": "1ohzkWaC6hB6wEa2ow1gOtoLWz_zjd5_O",
+    "url": "https://drive.google.com/drive/folders/1ohzkWaC6hB6wEa2ow1gOtoLWz_zjd5_O",
+    "resolution": "texte 0.68"
+  },
+  "EP097": {
+    "module": "HubRise",
+    "chapitre_brief": "2 - Relier Uber Eats et Deliveroo",
+    "chapitre_drive": "2 - RELIER UBER EATS & DELIVEROO",
+    "folder": "109Fn97h2rydpDX7zeHt_EFzKtZIbFa-k",
+    "url": "https://drive.google.com/drive/folders/109Fn97h2rydpDX7zeHt_EFzKtZIbFa-k",
+    "resolution": "numéro"
+  },
+  "EP098": {
+    "module": "Service",
+    "chapitre_brief": "1 - Commandes multi-canaux",
+    "chapitre_drive": "1 - COMMANDES MULTI-CANAUX",
+    "folder": "1V0xXbnYuqBsDUiD2Q_itQLIk4Ps1rw4l",
+    "url": "https://drive.google.com/drive/folders/1V0xXbnYuqBsDUiD2Q_itQLIk4Ps1rw4l",
+    "resolution": "numéro"
+  },
+  "EP099": {
+    "module": "Caroline",
+    "chapitre_brief": "1 - Configurer voix et prompts",
+    "chapitre_drive": "1 - CONFIGURER CAROLINE VOIX & PROMPTS",
+    "folder": "1GqODoJqsP5RS8ePzb-CAwfjfSIfQ0F0n",
+    "url": "https://drive.google.com/drive/folders/1GqODoJqsP5RS8ePzb-CAwfjfSIfQ0F0n",
+    "resolution": "numéro"
+  },
+  "EP100": {
+    "module": "Marketing",
+    "chapitre_brief": "1 - Débloquer les avis",
+    "chapitre_drive": "1 - DÉBLOQUER LES AVIS",
+    "folder": "1qKR-8QOFNaR5OIbNYKodlUB1Qmgr1CLW",
+    "url": "https://drive.google.com/drive/folders/1qKR-8QOFNaR5OIbNYKodlUB1Qmgr1CLW",
+    "resolution": "numéro"
+  },
+  "EP101": {
+    "module": "Caisse POS",
+    "chapitre_brief": "6 - Clôturer sa caisse",
+    "chapitre_drive": "6 - CLÔTURER SA CAISSE LE Z",
+    "folder": "1ht1CI-2jBkP6DdhvMdT3xVCPbzrwUU3m",
+    "url": "https://drive.google.com/drive/folders/1ht1CI-2jBkP6DdhvMdT3xVCPbzrwUU3m",
+    "resolution": "numéro"
+  },
+  "EP102": {
+    "module": "HACCP",
+    "chapitre_brief": "checklists hygiène",
+    "chapitre_drive": "22-Créer une check-list hygiène",
+    "folder": "15CwOKunwpcys81_j-rwf0W2bLfghvsXv",
+    "url": "https://drive.google.com/drive/folders/15CwOKunwpcys81_j-rwf0W2bLfghvsXv",
+    "resolution": "texte 0.69"
+  },
+  "EP103": {
+    "module": "Réservation",
+    "chapitre_brief": "1 - Réservations du jour",
+    "chapitre_drive": "1 - RÉSERVATIONS DU JOUR",
+    "folder": "1L_ewdqi9eYPYPMdzLIL-Rj3JwvEzTJQm",
+    "url": "https://drive.google.com/drive/folders/1L_ewdqi9eYPYPMdzLIL-Rj3JwvEzTJQm",
+    "resolution": "numéro"
+  },
+  "EP104": {
+    "module": "Réservation",
+    "chapitre_brief": "3 - Gérer et no-shows",
+    "chapitre_drive": "3 - GÉRER & NO-SHOWS",
+    "folder": "11I5195HrUUPsZVqectjWhfM9f-EEo1y5",
+    "url": "https://drive.google.com/drive/folders/11I5195HrUUPsZVqectjWhfM9f-EEo1y5",
+    "resolution": "numéro"
+  },
+  "EP105": {
+    "module": "Mon Site",
+    "chapitre_brief": "6 - Réservations et horaires",
+    "chapitre_drive": "6 - RÉSERVATIONS & HORAIRES",
+    "folder": "148lKdynNnugQ6WDGFYTM03Es8i-L_lVt",
+    "url": "https://drive.google.com/drive/folders/148lKdynNnugQ6WDGFYTM03Es8i-L_lVt",
+    "resolution": "numéro"
+  },
+  "EP106": {
+    "module": "Caisse POS",
+    "chapitre_brief": "5 - Séparer une addition",
+    "chapitre_drive": "5 - SÉPARER UNE ADDITION",
+    "folder": "1SeLJel_btaKEnvS8W3s6u8C0-ZnjaB4t",
+    "url": "https://drive.google.com/drive/folders/1SeLJel_btaKEnvS8W3s6u8C0-ZnjaB4t",
+    "resolution": "numéro"
+  },
+  "EP107": {
+    "module": "Caisse POS",
+    "chapitre_brief": "3 - Encaisser une commande",
+    "chapitre_drive": "3 - ENCAISSER UNE COMMANDE",
+    "folder": "1FfRiDgDtAi_ERE7oTv9yfgbkjPQRwK-T",
+    "url": "https://drive.google.com/drive/folders/1FfRiDgDtAi_ERE7oTv9yfgbkjPQRwK-T",
+    "resolution": "numéro"
+  },
+  "EP108": {
+    "module": "KDS",
+    "chapitre_brief": "2 - Vue KDS par poste",
+    "chapitre_drive": "2 - VUE KDS PAR POSTE",
+    "folder": "1L83RmygIEnYQwa2ELdR7viJODqI764wD",
+    "url": "https://drive.google.com/drive/folders/1L83RmygIEnYQwa2ELdR7viJODqI764wD",
+    "resolution": "numéro"
+  },
+  "EP109": {
+    "module": "HACCP",
+    "chapitre_brief": "traçabilité",
+    "chapitre_drive": "8-Traçabilité complète",
+    "folder": "1KjJgNDZmrf1NR_6aihWwN9Q77UaHp2Yk",
+    "url": "https://drive.google.com/drive/folders/1KjJgNDZmrf1NR_6aihWwN9Q77UaHp2Yk",
+    "resolution": "texte 0.67"
+  },
+  "EP110": {
+    "module": "StockVision",
+    "chapitre_brief": "18 - Statistiques par module",
+    "chapitre_drive": "18- Statistiques par module",
+    "folder": "1e7LZCLhyA2ANmednWevCt7-AreosC4Yw",
+    "url": "https://drive.google.com/drive/folders/1e7LZCLhyA2ANmednWevCt7-AreosC4Yw",
+    "resolution": "numéro"
+  },
+  "EP111": {
+    "module": "StockVision",
+    "chapitre_brief": "12 - Valider une production",
+    "chapitre_drive": "12- Production - Valider une production",
+    "folder": "1JCRKsZ3Hk50JI9_Cn_WVknci92yTuwEb",
+    "url": "https://drive.google.com/drive/folders/1JCRKsZ3Hk50JI9_Cn_WVknci92yTuwEb",
+    "resolution": "numéro"
+  },
+  "EP112": {
+    "module": "Mon Site",
+    "chapitre_brief": "2 - Choisir ton template",
+    "chapitre_drive": "2 - CHOISIR TON TEMPLATE",
+    "folder": "1X5m9uQ-73PZS_-_3eJ43ofizr1W3APVB",
+    "url": "https://drive.google.com/drive/folders/1X5m9uQ-73PZS_-_3eJ43ofizr1W3APVB",
+    "resolution": "numéro"
+  },
+  "EP113": {
+    "module": "HubRise",
+    "chapitre_brief": "4 - Centraliser les commandes",
+    "chapitre_drive": "4 - CENTRALISER LES COMMANDES",
+    "folder": "1Qt_omsrE2w9UqlhhlfkhwJaCjeL_ddow",
+    "url": "https://drive.google.com/drive/folders/1Qt_omsrE2w9UqlhhlfkhwJaCjeL_ddow",
+    "resolution": "numéro"
+  },
+  "EP114": {
+    "module": "Marketing",
+    "chapitre_brief": "5 - Lancer une campagne",
+    "chapitre_drive": "5 - LANCER UNE CAMPAGNE",
+    "folder": "1ZnYZoyJD4pM5RPWQQo5cFqTU69LZPDXt",
+    "url": "https://drive.google.com/drive/folders/1ZnYZoyJD4pM5RPWQQo5cFqTU69LZPDXt",
+    "resolution": "numéro"
+  },
+  "EP115": {
+    "module": "StockVision",
+    "chapitre_brief": "16 - Mouvements de stock",
+    "chapitre_drive": "16- Stock - Mouvements de stock",
+    "folder": "1DvhP8VJ6MFa2Zokkwgkdx_BUm7WUbIMp",
+    "url": "https://drive.google.com/drive/folders/1DvhP8VJ6MFa2Zokkwgkdx_BUm7WUbIMp",
+    "resolution": "numéro"
+  },
+  "EP116": {
+    "module": "KDS",
+    "chapitre_brief": "1 - Créer tes postes KDS",
+    "chapitre_drive": "1 - CRÉER TES POSTES KDS",
+    "folder": "1NU0o445gOk4pdMf4uimNPOts3XIcR7LO",
+    "url": "https://drive.google.com/drive/folders/1NU0o445gOk4pdMf4uimNPOts3XIcR7LO",
+    "resolution": "numéro"
+  },
+  "EP117": {
+    "module": "StockVision",
+    "chapitre_brief": "1 - Ma carte, fiche recette",
+    "chapitre_drive": "1- Ma carte - Création et modifications de la carte du restaurant",
+    "folder": "1bGMZ8R1udBoMF4XrJJqEnpYKkVrwBxx7",
+    "url": "https://drive.google.com/drive/folders/1bGMZ8R1udBoMF4XrJJqEnpYKkVrwBxx7",
+    "resolution": "numéro"
+  },
+  "EP118": {
+    "module": "Mon Site",
+    "chapitre_brief": "5 - Créer un site par IA",
+    "chapitre_drive": "5 - CRÉER UN SITE PAR IA",
+    "folder": "1WZsVdrBvcL2OQiYcRdnBCgzUx6u9J6p9",
+    "url": "https://drive.google.com/drive/folders/1WZsVdrBvcL2OQiYcRdnBCgzUx6u9J6p9",
+    "resolution": "numéro"
+  },
+  "EP119": {
+    "module": "Marketing",
+    "chapitre_brief": "9 - Ciblage et consentement",
+    "chapitre_drive": "9 - CIBLAGE & CONSENTEMENT",
+    "folder": "1D8h1RL3WM71FddvsmAK_k2T206taQNWO",
+    "url": "https://drive.google.com/drive/folders/1D8h1RL3WM71FddvsmAK_k2T206taQNWO",
+    "resolution": "numéro"
+  },
+  "EP120": {
+    "module": "PrediBot",
+    "chapitre_brief": "1 - Lire ses prévisions",
+    "chapitre_drive": "1 - LIRE SES PRÉVISIONS",
+    "folder": "19KbPaohx3zwWwsG4Ud3KfJU9WlqeqIoE",
+    "url": "https://drive.google.com/drive/folders/19KbPaohx3zwWwsG4Ud3KfJU9WlqeqIoE",
+    "resolution": "numéro"
+  },
+  "EP121": {
+    "module": "Service",
+    "chapitre_brief": "3 - Envoi direct cuisine",
+    "chapitre_drive": "3 - ENVOI DIRECT CUISINE",
+    "folder": "163wYyl14_2hFJ8gUGuunJWhYVqEo0AJu",
+    "url": "https://drive.google.com/drive/folders/163wYyl14_2hFJ8gUGuunJWhYVqEo0AJu",
+    "resolution": "numéro"
+  },
+  "EP122": {
+    "module": "Marketing",
+    "chapitre_brief": "20 - Vue client fidélité",
+    "chapitre_drive": "20 - VUE CLIENT FIDÉLITÉ",
+    "folder": "18JE8aUMjo0tFGD_V1NFNfxW3svy9EIl9",
+    "url": "https://drive.google.com/drive/folders/18JE8aUMjo0tFGD_V1NFNfxW3svy9EIl9",
+    "resolution": "numéro"
+  },
+  "EP123": {
+    "module": "StockVision",
+    "chapitre_brief": "1 - Ma carte, allergènes",
+    "chapitre_drive": "1- Ma carte - Création et modifications de la carte du restaurant",
+    "folder": "1bGMZ8R1udBoMF4XrJJqEnpYKkVrwBxx7",
+    "url": "https://drive.google.com/drive/folders/1bGMZ8R1udBoMF4XrJJqEnpYKkVrwBxx7",
+    "resolution": "numéro"
+  },
+  "EP124": {
+    "module": "Caisse POS",
+    "chapitre_brief": "6 - Clôturer sa caisse",
+    "chapitre_drive": "6 - CLÔTURER SA CAISSE LE Z",
+    "folder": "1ht1CI-2jBkP6DdhvMdT3xVCPbzrwUU3m",
+    "url": "https://drive.google.com/drive/folders/1ht1CI-2jBkP6DdhvMdT3xVCPbzrwUU3m",
+    "resolution": "numéro"
+  },
+  "EP125": {
+    "module": "Caroline",
+    "chapitre_brief": "3 - Dessiner son plan de salle",
+    "chapitre_drive": "3 - DESSINER SON PLAN DE SALLE",
+    "folder": "1Y_TFKokdQ6-x54EmTehizW9rApt_jn75",
+    "url": "https://drive.google.com/drive/folders/1Y_TFKokdQ6-x54EmTehizW9rApt_jn75",
+    "resolution": "numéro"
+  },
+  "EP126": {
+    "module": "Caisse POS",
+    "chapitre_brief": "5 - Séparer une addition",
+    "chapitre_drive": "5 - SÉPARER UNE ADDITION",
+    "folder": "1SeLJel_btaKEnvS8W3s6u8C0-ZnjaB4t",
+    "url": "https://drive.google.com/drive/folders/1SeLJel_btaKEnvS8W3s6u8C0-ZnjaB4t",
+    "resolution": "numéro"
+  },
+  "EP127": {
+    "module": "Réservation",
+    "chapitre_brief": "1 - Réservations du jour",
+    "chapitre_drive": "1 - RÉSERVATIONS DU JOUR",
+    "folder": "1L_ewdqi9eYPYPMdzLIL-Rj3JwvEzTJQm",
+    "url": "https://drive.google.com/drive/folders/1L_ewdqi9eYPYPMdzLIL-Rj3JwvEzTJQm",
+    "resolution": "numéro"
+  },
+  "EP128": {
+    "module": "Réservation",
+    "chapitre_brief": "4 - Placer un client à table",
+    "chapitre_drive": "4 - PLACER UN CLIENT À TABLE",
+    "folder": "1OPt9xLWcJHMHt-LCOM4gAfWP-I0MeaC8",
+    "url": "https://drive.google.com/drive/folders/1OPt9xLWcJHMHt-LCOM4gAfWP-I0MeaC8",
+    "resolution": "numéro"
+  },
+  "EP129": {
+    "module": "Caroline",
+    "chapitre_brief": "4 - Gérer ses tables",
+    "chapitre_drive": "4 - GÉRER SES TABLES",
+    "folder": "1OweOYbfTDAi0nPosQOg8_VY-VBxg6khF",
+    "url": "https://drive.google.com/drive/folders/1OweOYbfTDAi0nPosQOg8_VY-VBxg6khF",
+    "resolution": "numéro"
+  },
+  "EP130": {
+    "module": "Marketing",
+    "chapitre_brief": "7 - Ton agenda marketing",
+    "chapitre_drive": "7 - TON AGENDA MARKETING",
+    "folder": "19FSkQgF_ZaAskaAmxFfTIuXJ7ezCVLns",
+    "url": "https://drive.google.com/drive/folders/19FSkQgF_ZaAskaAmxFfTIuXJ7ezCVLns",
+    "resolution": "numéro"
+  },
+  "EP131": {
+    "module": "Équipe & Planning",
+    "chapitre_brief": "planning de la semaine",
+    "chapitre_drive": "16-Planning et tâches de l'employé",
+    "folder": "1IRoEhrDK6gE4PqPwSDmhXOP7XjjFi6xq",
+    "url": "https://drive.google.com/drive/folders/1IRoEhrDK6gE4PqPwSDmhXOP7XjjFi6xq",
+    "resolution": "texte 0.61"
+  },
+  "EP132": {
+    "module": "Mon Site",
+    "chapitre_brief": "6 - Réservations et horaires",
+    "chapitre_drive": "6 - RÉSERVATIONS & HORAIRES",
+    "folder": "148lKdynNnugQ6WDGFYTM03Es8i-L_lVt",
+    "url": "https://drive.google.com/drive/folders/148lKdynNnugQ6WDGFYTM03Es8i-L_lVt",
+    "resolution": "numéro"
+  },
+  "EP133": {
+    "module": "Caisse POS",
+    "chapitre_brief": "3 - Encaisser une commande",
+    "chapitre_drive": "3 - ENCAISSER UNE COMMANDE",
+    "folder": "1FfRiDgDtAi_ERE7oTv9yfgbkjPQRwK-T",
+    "url": "https://drive.google.com/drive/folders/1FfRiDgDtAi_ERE7oTv9yfgbkjPQRwK-T",
+    "resolution": "numéro"
+  },
+  "EP134": {
+    "module": "HACCP",
+    "chapitre_brief": "relevé de température",
+    "chapitre_drive": "3-Enregistrer une température",
+    "folder": "1ohzkWaC6hB6wEa2ow1gOtoLWz_zjd5_O",
+    "url": "https://drive.google.com/drive/folders/1ohzkWaC6hB6wEa2ow1gOtoLWz_zjd5_O",
+    "resolution": "texte 0.68"
+  },
+  "EP135": {
+    "module": "Réservation",
+    "chapitre_brief": "1 - Réservations du jour",
+    "chapitre_drive": "1 - RÉSERVATIONS DU JOUR",
+    "folder": "1L_ewdqi9eYPYPMdzLIL-Rj3JwvEzTJQm",
+    "url": "https://drive.google.com/drive/folders/1L_ewdqi9eYPYPMdzLIL-Rj3JwvEzTJQm",
+    "resolution": "numéro"
+  },
+  "EP136": {
+    "module": "Service",
+    "chapitre_brief": "1 - Commandes multi-canaux",
+    "chapitre_drive": "1 - COMMANDES MULTI-CANAUX",
+    "folder": "1V0xXbnYuqBsDUiD2Q_itQLIk4Ps1rw4l",
+    "url": "https://drive.google.com/drive/folders/1V0xXbnYuqBsDUiD2Q_itQLIk4Ps1rw4l",
+    "resolution": "numéro"
+  },
+  "EP137": {
+    "module": "Caisse POS",
+    "chapitre_brief": "3 - Encaisser une commande",
+    "chapitre_drive": "3 - ENCAISSER UNE COMMANDE",
+    "folder": "1FfRiDgDtAi_ERE7oTv9yfgbkjPQRwK-T",
+    "url": "https://drive.google.com/drive/folders/1FfRiDgDtAi_ERE7oTv9yfgbkjPQRwK-T",
+    "resolution": "numéro"
+  },
+  "EP138": {
+    "module": "KDS",
+    "chapitre_brief": "3 - Gérer le KDS en direct",
+    "chapitre_drive": "3 - GÉRER LE KDS EN DIRECT",
+    "folder": "1RnmeyK_4aYgVpGKKNdPOrClzmpHw9Ljg",
+    "url": "https://drive.google.com/drive/folders/1RnmeyK_4aYgVpGKKNdPOrClzmpHw9Ljg",
+    "resolution": "numéro"
+  },
+  "EP139": {
+    "module": "KDS",
+    "chapitre_brief": "2 - Vue KDS par poste",
+    "chapitre_drive": "2 - VUE KDS PAR POSTE",
+    "folder": "1L83RmygIEnYQwa2ELdR7viJODqI764wD",
+    "url": "https://drive.google.com/drive/folders/1L83RmygIEnYQwa2ELdR7viJODqI764wD",
+    "resolution": "numéro"
+  },
+  "EP140": {
+    "module": "StockVision",
+    "chapitre_brief": "16 - Mouvements de stock",
+    "chapitre_drive": "16- Stock - Mouvements de stock",
+    "folder": "1DvhP8VJ6MFa2Zokkwgkdx_BUm7WUbIMp",
+    "url": "https://drive.google.com/drive/folders/1DvhP8VJ6MFa2Zokkwgkdx_BUm7WUbIMp",
+    "resolution": "numéro"
+  },
+  "EP141": {
+    "module": "PrediBot",
+    "chapitre_brief": "3 - Parler à PrediBot",
+    "chapitre_drive": "3 - PARLER À PREDIBOT",
+    "folder": "10__yAAWsF5AzYJFvViRjWlSYTzIlIyBQ",
+    "url": "https://drive.google.com/drive/folders/10__yAAWsF5AzYJFvViRjWlSYTzIlIyBQ",
+    "resolution": "numéro"
+  },
+  "EP142": {
+    "module": "Équipe & Planning",
+    "chapitre_brief": "affectation des postes",
+    "chapitre_drive": "2-Configuration des employés",
+    "folder": "1GYwVOPg4veg-cFhZh_rxhvWmwOFy_4mB",
+    "url": "https://drive.google.com/drive/folders/1GYwVOPg4veg-cFhZh_rxhvWmwOFy_4mB",
+    "resolution": "texte 0.60"
+  },
+  "EP143": {
+    "module": "Comptabilité",
+    "chapitre_brief": "devis",
+    "chapitre_drive": "3- Créer un devis",
+    "folder": "1vEqEBl6EYPfsXAsDkHKMKjMCFs845eQH",
+    "url": "https://drive.google.com/drive/folders/1vEqEBl6EYPfsXAsDkHKMKjMCFs845eQH",
+    "resolution": "texte 0.45"
+  },
+  "EP144": {
+    "module": "Marketing",
+    "chapitre_brief": "3 - Répondre aux avis",
+    "chapitre_drive": "3 - RÉPONDRE AUX AVIS",
+    "folder": "1ZXZeT7GyPTkQT95XNGu8svx6OI1aUgNA",
+    "url": "https://drive.google.com/drive/folders/1ZXZeT7GyPTkQT95XNGu8svx6OI1aUgNA",
+    "resolution": "numéro"
+  },
+  "EP145": {
+    "module": "PrediBot",
+    "chapitre_brief": "1 - Lire ses prévisions",
+    "chapitre_drive": "1 - LIRE SES PRÉVISIONS",
+    "folder": "19KbPaohx3zwWwsG4Ud3KfJU9WlqeqIoE",
+    "url": "https://drive.google.com/drive/folders/19KbPaohx3zwWwsG4Ud3KfJU9WlqeqIoE",
+    "resolution": "numéro"
+  },
+  "EP146": {
+    "module": "Comptabilité",
+    "chapitre_brief": "événements privés",
+    "chapitre_drive": "3- Créer un devis",
+    "folder": "1vEqEBl6EYPfsXAsDkHKMKjMCFs845eQH",
+    "url": "https://drive.google.com/drive/folders/1vEqEBl6EYPfsXAsDkHKMKjMCFs845eQH",
+    "resolution": "correspondance manuelle"
+  },
+  "EP147": {
+    "module": "Comptabilité",
+    "chapitre_brief": "facture et devis",
+    "chapitre_drive": "3- Créer un devis",
+    "folder": "1vEqEBl6EYPfsXAsDkHKMKjMCFs845eQH",
+    "url": "https://drive.google.com/drive/folders/1vEqEBl6EYPfsXAsDkHKMKjMCFs845eQH",
+    "resolution": "texte 0.61"
+  },
+  "EP148": {
+    "module": "HubRise",
+    "chapitre_brief": "3 - Synchro caisse tierce",
+    "chapitre_drive": "3 - SYNCHRO CAISSE TIERCE",
+    "folder": "1f0MRbPQ_eBDxH1zOYMpVwPdBqa4avYi2",
+    "url": "https://drive.google.com/drive/folders/1f0MRbPQ_eBDxH1zOYMpVwPdBqa4avYi2",
+    "resolution": "numéro"
+  },
+  "EP149": {
+    "module": "Marketing",
+    "chapitre_brief": "5 - Lancer une campagne",
+    "chapitre_drive": "5 - LANCER UNE CAMPAGNE",
+    "folder": "1ZnYZoyJD4pM5RPWQQo5cFqTU69LZPDXt",
+    "url": "https://drive.google.com/drive/folders/1ZnYZoyJD4pM5RPWQQo5cFqTU69LZPDXt",
+    "resolution": "numéro"
+  },
+  "EP150": {
+    "module": "PrediBot",
+    "chapitre_brief": "1 - Lire ses prévisions",
+    "chapitre_drive": "1 - LIRE SES PRÉVISIONS",
+    "folder": "19KbPaohx3zwWwsG4Ud3KfJU9WlqeqIoE",
+    "url": "https://drive.google.com/drive/folders/19KbPaohx3zwWwsG4Ud3KfJU9WlqeqIoE",
+    "resolution": "numéro"
+  }
+}
