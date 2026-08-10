@@ -1,0 +1,8 @@
+{
+  "_source": "voix maison FoodEatUp, déjà utilisée sur tous les tutoriels du dépôt",
+  "voice_id": "TGAegA0zNRi8I6nUdq3i",
+  "voice_name": "Adam FR",
+  "model_id": "eleven_multilingual_v2",
+  "language_code": "fr",
+  "output_format": "mp3_44100_128"
+}

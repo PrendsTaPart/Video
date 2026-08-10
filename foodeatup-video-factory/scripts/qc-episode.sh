@@ -46,5 +46,18 @@ verifie_logo 21 "250:93:415:1777" "bandeau bas"
 # qui porte la marque, sinon on aurait deux logos à l'écran.
 verifie_logo 29 "400:150:340:780" "signature centrale"
 
+# Respiration avant la voix de fin : si l'avatar parle encore à 25,8 s, sa
+# dernière syllabe tombe sur le premier mot de la signature.
+RESP=$(ffmpeg -v error -ss 25.55 -t 0.35 -i "$M" -ac 1 -ar 16000 -f s16le - 2>/dev/null \
+  | python3 -c "
+import sys,struct,math
+d=sys.stdin.buffer.read();n=len(d)//2
+s=struct.unpack('<%dh'%n,d[:n*2]) if n else (0,)
+r=math.sqrt(sum(x*x for x in s)/max(1,len(s)))
+print(int(20*math.log10(r/32768+1e-12)))")
+[ "$RESP" -lt -22 ] \
+  && ok "respiration avant la signature (${RESP} dBFS)" \
+  || ko "l'avatar parle encore juste avant 26 s (${RESP} dBFS) — voix superposées"
+
 [ $FAIL -eq 0 ] && echo "=== $EP CONFORME ===" || echo "=== $EP RESTE DANS build/ ==="
 exit $FAIL

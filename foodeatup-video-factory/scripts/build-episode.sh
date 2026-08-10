@@ -26,6 +26,8 @@ AV_CROP_Y=30       # décalage du crop avatar : garde la toque, coupe bas sur le
 AV_H=960           # avatar : 2,5/5 de l'écran
 SOFT_H=768         # logiciel : 2/5
 BAND_H=192         # bandeau de marque : 0,5/5, le logo y est centré
+RESPIR=0.6         # respiration avant 26,0 s : l'avatar doit avoir fini de parler
+                   # avant que la voix de fin démarre, sinon les deux se marchent dessus
 BED_GAIN=0.224     # -13 dB : cale la musique sur le plancher -28 dBFS de la référence
 SFX_GAIN=2.0       # +6 dB : whoosh audible sous la voix
 
@@ -50,8 +52,17 @@ print(f'{idx[0]*0.05:.2f} {(idx[-1]+1)*0.05:.2f}' if idx else '0 0')")"
 DEBUT="$(echo "$LECTURE" | cut -d' ' -f1)"
 FIN="$(echo "$LECTURE" | cut -d' ' -f2)"
 UTILE="$(python3 -c "print(f'{max(0.1,$FIN-$DEBUT):.3f}')")"
-TEMPO="$(python3 -c "print(f'{max(1.0,$UTILE/10.0):.4f}')")"
-echo "  avatar : parole ${DEBUT}s → ${FIN}s (${UTILE}s utiles), atempo ${TEMPO}"
+FENETRE="$(python3 -c "print(f'{10.0-$RESPIR:.2f}')")"
+TEMPO="$(python3 -c "print(f'{max(1.0,$UTILE/$FENETRE):.4f}')")"
+echo "  avatar : parole ${DEBUT}s → ${FIN}s (${UTILE}s utiles), fenêtre ${FENETRE}s, atempo ${TEMPO}"
+# Au-delà de 1,12 l'accélération s'entend nettement. On monte quand même —
+# un épisode livré vaut mieux qu'un épisode bloqué — mais on le dit.
+python3 -c "
+t=$TEMPO
+if t>1.12:
+    print(f'  ATTENTION : atempo {t:.3f}, le script HeyGen est trop long pour la fenêtre.')
+    print(f'  Correction réelle = re-rendu avec un script plus court, pas une accélération.')
+"
 
 # --- Segment D : avatar 45 % (864 px) au-dessus du logiciel 55 % (1056 px) -----
 # Le screencast n'est JAMAIS rogné : il est padé sur le fond sable.
