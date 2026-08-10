@@ -104,20 +104,21 @@ dans `00_build_brand_clips.py` suffit à toutes les redimensionner.
 ## État
 
 - ✅ scripts 00 → 04, testés de bout en bout
-- ✅ QA 7 tests, bloquante — **58 masters, 58 publiables**
-- ✅ voix off **Olivier** (`rgFgMEXfdGwXCYio7I0J`) : blocs communs, 29 punchlines
-  et **29 pitchs de démo**, un par épisode, tous normalisés
-- ✅ **29 épisodes sur 30** montés en TikTok 30 s ET LinkedIn 1:1 45 s
-- ✅ 29 plans de publication prêts dans `build/publish_plan_EPxx.json`
-- ✅ les 58 masters et les 29 sources Higgsfield sont dans la **bibliothèque
-  RapidoCMS** (660 Mo, taille vérifiée fichier par fichier)
-- ⏳ **EP24** (la mouette braqueuse) : séquence Higgsfield à générer —
-  prompt prêt dans `docs/EP24-prompt-higgsfield.md`
+- ✅ QA 7 tests, bloquante — **60 masters, 60 publiables**
+- ✅ voix off **Olivier** (`rgFgMEXfdGwXCYio7I0J`) : blocs communs, 30 punchlines
+  et **30 pitchs de démo**, un par épisode, tous normalisés
+- ✅ **les 30 épisodes** montés en TikTok 30 s — durée 30,000 s partout,
+  loudness −14,9 → −14,0 LUFS, crête maximale −1,41 dBTP
+- ✅ 30 plans de publication prêts dans `build/publish_plan_EPxx.json`
+- ✅ les masters et les 30 sources Higgsfield sont dans la **bibliothèque
+  RapidoCMS**, taille vérifiée fichier par fichier
+- ⏳ **LinkedIn** : seul EP24 porte les nouvelles icônes du bloc C ; les 29
+  autres masters 1:1 sont encore sur l'ancienne version
 - ⏳ publication : rien n'est envoyé, TikTok reste en `SELF_ONLY`
 
 ### Bibliothèque RapidoCMS
 
-`config/rapidocms_library.json` liste les 87 fichiers déposés et leur taille :
+`config/rapidocms_library.json` liste les fichiers déposés et leur taille :
 
 | Nom | Contenu |
 |---|---|
@@ -131,7 +132,7 @@ le plan tombe de 13 à 9 appels, sans marqueur à remplacer côté média.
 
 ### Hooks : toujours l'original Higgsfield
 
-Les 29 hooks sont les fichiers `rawUrl` d'origine (4,1 → 13,4 Mbit/s), pas des
+Les 30 hooks sont les fichiers `rawUrl` d'origine (4,1 → 13,4 Mbit/s), pas des
 copies ré-encodées. EP18, EP27 puis EP20 ont été remplacés après coup : la copie
 d'EP20 tournait à 2,0 Mbit/s contre 5,7 pour le job d'origine
 (`cdb75d02`, « le chien qui a réservé »).
