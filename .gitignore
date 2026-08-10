@@ -35,7 +35,12 @@ videos/foodeatup-16-tutoriels/*/assets/seg/
 # Les vignettes des seize tutoriels : recalculées par `_tuto/vignettes.py` à
 # partir des cartons d'intro, qui sont eux versionnés. C'est un dossier de
 # livraison — on l'envoie en bibliothèque, on ne l'archive pas deux fois.
-videos/foodeatup-16-tutoriels/_vignettes/
+#
+# On exclut le *contenu* du dossier (`/*`) et non le dossier lui-même : git
+# n'entre pas dans un dossier exclu, si bien qu'une exception portant sur un
+# fichier à l'intérieur n'y serait jamais lue. La règle ci-dessous marche, celle
+# qui se terminerait par `_vignettes/` ne marcherait pas — et sans bruit.
+videos/foodeatup-16-tutoriels/_vignettes/*
 # … sauf celle du seizième tutoriel, qui n'a pas de carton Drive : elle est
 # extraite de son propre film, donc ce dépôt en est la seule source. Et comme
 # RapidoCMS ne sait aller chercher qu'une URL publique, c'est par cette URL
