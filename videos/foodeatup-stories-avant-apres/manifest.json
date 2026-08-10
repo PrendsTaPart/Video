@@ -1,0 +1,113 @@
+{
+  "campaign": "FoodEatUp — 9 stories Instagram Avant/Après + signature",
+  "output": {"width": 1080, "height": 1920, "fps": 24, "codec": "h264"},
+  "half": {"width": 1080, "height": 958},
+  "seam_px": 4,
+  "seam_color": "0xFCF9E6",
+  "palette": {
+    "sans_trait": "0x8A9099",
+    "sans_encre": "0x3A3F45",
+    "sans_surface": "0xEDEEF0",
+    "sans_alerte": "0xD64545",
+    "avec_creme": "0xFCF9E6",
+    "avec_marine": "0x0F1A23",
+    "avec_bleu": "0x007BFF"
+  },
+  "endcard": {
+    "seconds": 2,
+    "source": "/home/user/Video/studio-video/assets/brand/logo-v2/foodeatup-logo-on-blue-card.png",
+    "_note": "Carte logo FoodEatUp sur fond bleu, confirmée par l'utilisateur le 2026-08-09."
+  },
+  "stories": [
+    {
+      "id": "story-01",
+      "theme": "cuisine",
+      "moment": "avant-service",
+      "clip_sans": "story-01-cuisine-avant-service-sans",
+      "clip_avec": "story-01-cuisine-avant-service-avec",
+      "texte_haut": "Avant le service. Avant FoodEatUp.",
+      "texte_bas": "Avant le service. Avec FoodEatUp."
+    },
+    {
+      "id": "story-02",
+      "theme": "salle",
+      "moment": "avant-service",
+      "clip_sans": "story-02-salle-avant-service-sans",
+      "clip_avec": "story-02-salle-avant-service-avec",
+      "texte_haut": "Avant le service. Avant FoodEatUp.",
+      "texte_bas": "Avant le service. Avec FoodEatUp."
+    },
+    {
+      "id": "story-03",
+      "theme": "direction",
+      "moment": "avant-service",
+      "clip_sans": "story-03-direction-avant-service-sans",
+      "clip_avec": "story-03-direction-avant-service-avec",
+      "texte_haut": "Avant le service. Avant FoodEatUp.",
+      "texte_bas": "Avant le service. Avec FoodEatUp."
+    },
+    {
+      "id": "story-04",
+      "theme": "cuisine",
+      "moment": "pendant-service",
+      "clip_sans": "story-04-cuisine-pendant-service-sans",
+      "clip_avec": "story-04-cuisine-pendant-service-avec",
+      "texte_haut": "Pendant le service. Avant FoodEatUp.",
+      "texte_bas": "Pendant le service. Avec FoodEatUp."
+    },
+    {
+      "id": "story-05",
+      "theme": "salle",
+      "moment": "pendant-service",
+      "clip_sans": "story-05-salle-pendant-service-sans",
+      "clip_avec": "story-05-salle-pendant-service-avec",
+      "texte_haut": "Pendant le service. Avant FoodEatUp.",
+      "texte_bas": "Pendant le service. Avec FoodEatUp."
+    },
+    {
+      "id": "story-06",
+      "theme": "direction",
+      "moment": "pendant-service",
+      "clip_sans": "story-06-direction-pendant-service-sans",
+      "clip_avec": "story-06-direction-pendant-service-avec",
+      "texte_haut": "Pendant le service. Avant FoodEatUp.",
+      "texte_bas": "Pendant le service. Avec FoodEatUp."
+    },
+    {
+      "id": "story-07",
+      "theme": "cuisine",
+      "moment": "apres-service",
+      "clip_sans": "story-07-cuisine-apres-service-sans",
+      "clip_avec": "story-07-cuisine-apres-service-avec",
+      "texte_haut": "Après le service. Avant FoodEatUp.",
+      "texte_bas": "Après le service. Avec FoodEatUp."
+    },
+    {
+      "id": "story-08",
+      "theme": "salle",
+      "moment": "apres-service",
+      "clip_sans": "story-08-salle-apres-service-sans",
+      "clip_avec": "story-08-salle-apres-service-avec",
+      "texte_haut": "Après le service. Avant FoodEatUp.",
+      "texte_bas": "Après le service. Avec FoodEatUp."
+    },
+    {
+      "id": "story-09",
+      "theme": "direction",
+      "moment": "apres-service",
+      "clip_sans": "story-09-direction-apres-service-sans",
+      "clip_avec": "story-09-direction-apres-service-avec",
+      "texte_haut": "Après le service. Avant FoodEatUp.",
+      "texte_bas": "Après le service. Avec FoodEatUp."
+    },
+    {
+      "id": "story-10",
+      "theme": "signature",
+      "moment": "signature",
+      "clip_full": "story-10-signature",
+      "split": false,
+      "texte_1": "Avant. Pendant. Après.",
+      "texte_2": "Un seul outil pour les trois."
+    }
+  ]
+}
