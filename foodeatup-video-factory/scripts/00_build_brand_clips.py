@@ -31,7 +31,7 @@ import sys
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
-from lib import ff  # noqa: E402
+from lib import ff, icons  # noqa: E402
 
 ROOT = ff.ROOT
 BRAND = ROOT / "assets" / "brand"
@@ -40,7 +40,7 @@ FONT = ROOT / "assets" / "fonts" / "Anton-Regular.ttf"
 
 W, H, FPS = 1080, 1920, 30
 CREAM, NAVY, BLUE, ORANGE = "0xFCF9E6", "0x0F1A23", "0x007BFF", "0xFFA500"
-TILE = "0xC9D4E0"
+TILE_W = 150                # côté d'une vignette « logiciel » du bloc C
 
 # Carré central conservé par le recadrage 1:1
 SQ_TOP, SQ_BOT = 420, 1500
@@ -105,21 +105,28 @@ def build_sting(dst: Path) -> None:
 # ---------------------------------------------------------------------------
 
 def build_probleme(dst: Path) -> None:
-    parts = [f"color=c={CREAM}:s={W}x{H}:r={FPS}:d=12[bg];[bg]"]
-
-    # 10 tuiles « logiciels » qui ne se touchent jamais : 5 colonnes × 2 rangées.
-    tw, gap, cols = 150, 24, 5
+    # 10 vignettes « logiciels » qui ne se touchent jamais : 5 colonnes × 2
+    # rangées. Elles arrivent une par une — c'est l'accumulation qui raconte
+    # le problème, pas la grille finale.
+    icones = icons.build(BRAND / "icons", size=TILE_W)
+    tw, gap, cols = TILE_W, 24, 5
     x0 = (W - (cols * tw + (cols - 1) * gap)) // 2
     y0 = 720
-    boxes = []
-    for i in range(10):
-        cx = x0 + (i % cols) * (tw + gap)
-        cy = y0 + (i // cols) * (tw + gap)
-        appear = 0.35 + i * 0.13
-        boxes.append(f"drawbox=x={cx}:y={cy}:w={tw}:h={tw}:color={TILE}@1:"
-                     f"t=fill:enable='gte(t\\,{appear:.2f})'")
 
-    chain = boxes + [
+    fc = [f"color=c={CREAM}:s={W}x{H}:r={FPS}:d=12[bg];"]
+    src = "[bg]"
+    for i in range(len(icones)):
+        appear = 0.35 + i * 0.13
+        # fade alpha plutôt que enable : l'apparition est franche mais pas
+        # sèche, et l'alpha est nul avant `st` — donc rien ne fuit à t=0.
+        fc.append(f"[{i + 1}:v]format=rgba,"
+                  f"fade=t=in:st={appear:.2f}:d=0.12:alpha=1[ic{i}];")
+        x = x0 + (i % cols) * (tw + gap)
+        y = y0 + (i // cols) * (tw + gap)
+        fc.append(f"{src}[ic{i}]overlay=x={x}:y={y}:format=auto[st{i}];")
+        src = f"[st{i}]"
+
+    chain = [
         drawtext("c_kicker", "LE PROBLÈME", size=44, color=BLUE, y=470,
                  appear=0.15),
         drawtext("c_head", "DIX LOGICIELS", size=104, color=NAVY, y=545,
@@ -129,10 +136,15 @@ def build_probleme(dst: Path) -> None:
         drawtext("c_none", "ET AUCUN NE SE PARLE", size=62, color=NAVY, y=1260,
                  appear=5.00),
     ]
-    fc = "".join(parts) + ",".join(chain) + f",format=yuv420p[v]"
+    fc.append(src + ",".join(chain) + ",format=yuv420p[v]")
+
+    entrees = []
+    for p in icones:
+        entrees += ["-loop", "1", "-framerate", str(FPS), "-t", "12",
+                    "-i", str(p)]
     ff.ffmpeg([
-        "-f", "lavfi", "-i", "anullsrc=r=48000:cl=stereo:d=12",
-        "-filter_complex", fc, "-map", "[v]", "-map", "0:a",
+        "-f", "lavfi", "-i", "anullsrc=r=48000:cl=stereo:d=12", *entrees,
+        "-filter_complex", "".join(fc), "-map", "[v]", "-map", "0:a",
         "-t", "12.0", *ff.VCODEC, *ff.ACODEC, *ff.TIMESCALE, str(dst),
     ])
 

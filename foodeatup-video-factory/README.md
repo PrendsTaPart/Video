@@ -73,12 +73,33 @@ Les trois logos officiels sont versionnés dans `assets/brand/` :
 | Clip | Durée | Contenu |
 |---|---|---|
 | `sting-logo.mp4` | 5,0 s | pictogramme qui rebondit, puis le logo |
-| `probleme.mp4` | 12,0 s | « DIX LOGICIELS » · 10 tuiles isolées · « 1 000 € PAR MOIS » · « ET AUCUN NE SE PARLE » |
+| `probleme.mp4` | 12,0 s | « DIX LOGICIELS » · 10 icônes qui tombent une par une · « 1 000 € PAR MOIS » · « ET AUCUN NE SE PARLE » |
 | `outro.mp4` | 5,0 s | logo + « Avant, pendant, après le service. » + CTA |
 
 Ils sont composés dans le **carré central 1080×1080** (y ∈ [420, 1500]) pour que
 le recadrage 1:1 LinkedIn ne coupe rien, et leurs beats sont calés pour rester
 lisibles une fois tronqués à la durée du master 30 s.
+
+### Les dix icônes du bloc « problème »
+
+`assets/brand/icons/` contient dix vignettes 150×150 — caisse, livraison,
+réservation, stock, planning, comptabilité, marketing, fidélité, site web, KDS
+— chacune d'une couleur différente. Elles tombent une par une entre 0,35 s et
+1,52 s : c'est l'accumulation qui raconte « dix logiciels », pas la grille
+finale.
+
+Ce sont des **pictogrammes de catégorie, pas des logos de marques réelles** :
+reproduire la marque d'un tiers dans une pub comparative n'apporterait rien et
+poserait un problème inutile.
+
+Elles sont **dessinées en géométrie pure** par `scripts/lib/icons.py`, sur un
+encodeur PNG et un rasteriseur écrits dans `scripts/lib/png.py` — 240 lignes de
+stdlib, pas de Pillow, pas de rasteriseur SVG, et surtout aucune image générée
+par IA (CLAUDE.md §1 et §3). L'anticrénelage se fait par suréchantillonnage ×6.
+Les formes sont décrites dans un carré de 100 unités, donc changer `TILE_W`
+dans `00_build_brand_clips.py` suffit à toutes les redimensionner.
+
+    python scripts/00_build_brand_clips.py --only probleme --force
 
 ## État
 
