@@ -36,6 +36,11 @@ videos/foodeatup-16-tutoriels/*/assets/seg/
 # partir des cartons d'intro, qui sont eux versionnés. C'est un dossier de
 # livraison — on l'envoie en bibliothèque, on ne l'archive pas deux fois.
 videos/foodeatup-16-tutoriels/_vignettes/
+# … sauf celle du seizième tutoriel, qui n'a pas de carton Drive : elle est
+# extraite de son propre film, donc ce dépôt en est la seule source. Et comme
+# RapidoCMS ne sait aller chercher qu'une URL publique, c'est par cette URL
+# versionnée qu'elle entre en bibliothèque.
+!videos/foodeatup-16-tutoriels/_vignettes/tuto-retrouver-toutes-mes-commandes-thumbnail.jpg
 
 # Sortie par défaut de `hyperframes render` quand on ne lui donne pas de `-o` :
 # un MP4 horodaté par rendu, plus ses dossiers de travail. C'est du scratch de
