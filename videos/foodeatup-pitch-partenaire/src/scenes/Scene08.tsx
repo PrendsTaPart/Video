@@ -4,16 +4,18 @@ import {SceneLayout} from '../components/SceneLayout';
 import {useEnterStyle} from '../components/enter';
 import {COLORS} from '../theme';
 
-// S8 · 1:16–1:26 (300f) — LA PREUVE
-// Quatre cartouches chiffrées, apparition décalée, puis les vrais logos
-// des programmes / labels obtenus (preuve visuelle, pas seulement du texte).
+// S8 · LA PREUVE (558f — recalée sur la durée réelle de la VO ElevenLabs,
+// 18,26 s, très supérieure aux 300f/10s initialement prévues).
+// Quatre cartouches chiffrées, apparition décalée et étalée sur la durée
+// réelle du texte lu (proportionnelle au nombre de mots de chaque phrase),
+// puis les vrais logos des programmes / labels obtenus.
 // Source : cas client GoSushi + bloc "Preuves & chiffres" du site
 // (food-heartbeat-site/src/routes/index.tsx).
 const CARTOUCHES = [
 	{label: 'GoSushi : 5 outils remplacés par 1', start: 0},
-	{label: '−50 % de temps en back-office', start: 45},
-	{label: '100 % HACCP dématérialisé', start: 90},
-	{label: '−17 % en abonnement annuel', start: 135},
+	{label: '−50 % de temps en back-office', start: 130},
+	{label: '100 % HACCP dématérialisé', start: 250},
+	{label: '−17 % en abonnement annuel', start: 400},
 ];
 
 const LOGOS = [
@@ -25,7 +27,7 @@ const LOGOS = [
 	'img/logo-vivatechnology.png',
 	'img/logo-lescalator.jpeg',
 ];
-const LOGO_STRIP_START = 190;
+const LOGO_STRIP_START = 470;
 
 const Cartouche: React.FC<{label: string; start: number}> = ({label, start}) => {
 	const enter = useEnterStyle(0, start);
