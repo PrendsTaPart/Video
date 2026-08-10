@@ -4,21 +4,46 @@ Suivi des 30 vidéos décrites dans `SCRIPTS-HEYGEN-30.md`. Chaque vidéo suit l
 validée sur `v01-fidelite/` : hook → problème → démo (logiciel + avatar par-dessus) →
 punchline.
 
-## Montées (4 / 30)
+## Le son (revu le 2026-08-10)
+
+Michael : « il manque la voix off au début de chaque vidéo et pendant la séquence
+Higgsfield », « les vidéos Higgsfield en mute », « toute la vidéo doit avoir du son ».
+Trois couches audio, donc plus aucun silence :
+
+| Piste | Contenu | Niveau |
+|---|---|---|
+| 8 | lit d'ambiance continu (`planit-ambient-pad.mp3`), fondu de sortie sur la dernière seconde | ~20 dB sous la voix |
+| 10 | voix off du hook | −16 LUFS |
+| 11 | voix off du bloc problème | −16 LUFS |
+| 12 | voix de l'avatar, puis voix off de la punchline | −16 LUFS |
+
+Les plans Higgsfield sont montés **sans aucune piste audio**.
+
+Toutes les voix sont passées au `loudnorm` **−16 LUFS** avant montage : les sorties
+ElevenLabs arrivaient ~8 dB sous la voix des clips HeyGen, ce qui obligeait à monter le son
+au début puis à le baisser à l'arrivée de l'avatar. Les fichiers normalisés sont dans
+`motion/assets/audio/norm/`, les originaux à côté.
+
+Le bloc démo est aussi resserré : il dure maintenant la réplique de l'avatar + 2 s, au lieu
+de 14 s fixes. Le logiciel ne tourne plus 4 s en silence après la fin de la voix.
+
+## Montées (6 / 30)
 
 | # | Projet | Durée | Avatar HeyGen | Vidéo logiciel (fenêtre) |
 |---|---|---|---|---|
-| 01 | `t01-ingredients/` | 30,2 s | `gen-1` (10,22 s) | `foodeatup-ingredients-tuto` · 85→99 s |
-| 02 | `t02-recettes/` | 28,2 s | `gen-2` (12,14 s) | `foodeatup-recettes-tuto` · 74→88 s |
-| 03 | `t03-fournisseurs/` | 30,2 s | `gen-3` (9,24 s) | `foodeatup-fournisseurs-tuto` · 44→58 s |
-| 04 | `t04-mes-commandes/` | 28,2 s | `gen-4` (9,24 s) | `foodeatup-mes-commandes-tuto` · 20→34 s |
+| 01 | `t01-ingredients/` | 28,4 s | `gen-1` (10,22 s) | `foodeatup-ingredients-tuto` · 85→97 s |
+| 02 | `t02-recettes/` | 28,3 s | `gen-2` (12,14 s) | `foodeatup-recettes-tuto` · 74→88 s |
+| 03 | `t03-fournisseurs/` | 27,4 s | `gen-3` (9,24 s) | `foodeatup-fournisseurs-tuto` · 44→55 s |
+| 04 | `t04-mes-commandes/` | 25,4 s | `gen-4` (9,24 s) | `foodeatup-mes-commandes-tuto` · 20→31 s |
+| 05 | `t05-mcp-claude/` | 27,6 s | `gen-5` (9,35 s) | `foodeatup-mcp-tuto` · 30→41 s |
+| 06 | `t06-employes/` | 27,7 s | `gen-6` (9,47 s) | `foodeatup-employes-tuto` · 38→49 s |
 
-Les fenêtres de 14 s ont été choisies en échantillonnant chaque rush : elles couvrent le
+Les fenêtres du logiciel ont été choisies en échantillonnant chaque rush : elles couvrent le
 geste utile **et** sa confirmation à l'écran (« Succès ! Ingrédient ajouté », tableau des
 ingrédients avec coût total, fiche fournisseur créée, commande créée + liste multicanal).
 
-Les durées diffèrent (28,2 s / 30,2 s) parce que deux plans problème ne durent que 6 s au
-lieu de 8. Sans importance pour TikTok, mais c'est voulu, pas un oubli.
+Les durées diffèrent d'une vidéo à l'autre parce que chaque bloc est calé sur la durée réelle
+de son contenu (voix off, réplique de l'avatar, plan disponible). C'est voulu, pas un oubli.
 
 ## Réserves sur ces 4 montages
 
@@ -62,5 +87,22 @@ dimensions réelles du rush, et cale l'avatar sur sa durée réelle.
 
 ## Clips HeyGen restants
 
-26 sur 30. Ils arrivent par lots dans `_heygen-inbox/` — voir son README pour la convention
+24 sur 30. Ils arrivent par lots dans `_heygen-inbox/` — voir son README pour la convention
 de nommage et le contrôle qualité appliqué à chaque clip.
+
+**Attention aux doublons** : sur les 8 fichiers reçus jusqu'ici, 2 étaient des renvois d'un
+clip déjà fourni (vérifié par hash md5). Le lot du 2026-08-10 annonçait 3 clips mais n'en
+contenait que 2 nouveaux — le troisième était le clip 03 re-téléchargé, ce qui laisse penser
+que le **script 07 (Contrat & salaire) n'a pas encore été généré**.
+
+## Ce qu'il reste à faire pour chaque nouvelle vidéo
+
+Le seul travail manuel restant par vidéo est d'écrire deux phrases (voix off du hook, voix
+off du problème) puis de les générer. Tout le reste est automatisé :
+
+1. Ajouter une ligne dans `VIDEOS` (`build_videos.py`) : plan problème, projet tuto, fenêtre,
+   clip avatar, durée.
+2. Rendre le carton hook avec `--variables`.
+3. Générer les 2 voix off (ElevenLabs, voix Adam `TGAegA0zNRi8I6nUdq3i`), les normaliser à
+   −16 LUFS dans `motion/assets/audio/norm/`.
+4. `python3 build_videos.py` puis `npx hyperframes render`.

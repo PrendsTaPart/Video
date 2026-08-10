@@ -37,45 +37,64 @@
       id="root"
       data-composition-id="t03-fournisseurs"
       data-start="0"
-      data-duration="30.2"
+      data-duration="27.44"
       data-width="1080"
       data-height="1920"
     >
-      <!-- HOOK 0–3 s -->
-      <video id="seg-hook" class="clip full" data-start="0" data-duration="3"
+      <!-- ================= IMAGE ================= -->
+
+      <!-- HOOK 0–3.0 s -->
+      <video id="seg-hook" class="clip full" data-start="0" data-duration="3.0"
              data-track-index="0" src="assets/hook/hook.mp4" muted playsinline></video>
 
-      <!-- PROBLÈME 3.0–11.0 s -->
+      <!-- PROBLÈME 3.0–11.0 s — plan MUET (aucune piste audio dans la source) -->
       <video id="seg-probleme" class="clip full" data-start="3.0" data-duration="8.0"
              data-track-index="0" data-media-start="0"
              src="assets/higgsfield/probleme.mp4" muted playsinline></video>
-      <!-- Pas d'élément <audio> ici : les plans de hero-video/ sont MUETS (produits pour
-           le film 16:9, dont le son est monté séparément). Le bloc problème est donc
-           silencieux, contrairement à la vidéo 1 dont le plan vertical avait son ambiance.
-           À reprendre quand les plans verticaux avec son seront générés. -->
 
-      <!-- DÉMO 11.0–25.0 s : logiciel en bas, avatar par-dessus qui le présente -->
-      <div id="demo-bg" class="clip" data-start="11.0" data-duration="14.0"
+      <!-- DÉMO 11.0–22.24 s : logiciel en bas, avatar par-dessus qui le présente -->
+      <div id="demo-bg" class="clip" data-start="11.0" data-duration="11.24"
            data-track-index="0"></div>
-      <video id="demo-screen" class="clip" data-start="11.0" data-duration="14.0"
+      <video id="demo-screen" class="clip" data-start="11.0" data-duration="11.24"
              data-track-index="1" data-media-start="44"
              src="assets/solution/screen.mp4" muted playsinline></video>
-      <div id="demo-accent" class="clip" data-start="11.0" data-duration="14.0"
+      <div id="demo-accent" class="clip" data-start="11.0" data-duration="11.24"
            data-track-index="2"></div>
       <video id="demo-avatar" class="clip" data-start="11.3" data-duration="9.24"
              data-track-index="3" data-media-start="0"
              src="assets/heygen/resultat.mp4" muted playsinline></video>
-      <audio id="demo-avatar-audio" src="assets/heygen/resultat.mp4"
-             data-start="11.3" data-duration="9.24" data-media-start="0"
-             data-track-index="10" data-volume="1"></audio>
 
-      <!-- PUNCHLINE 25.0–30.2 s (voix off incluse) -->
-      <video id="seg-punchline" class="clip full" data-start="25.0" data-duration="5.2"
+      <!-- PUNCHLINE 22.24–27.44 s -->
+      <video id="seg-punchline" class="clip full" data-start="22.24" data-duration="5.2"
              data-track-index="0" data-media-start="0"
              src="assets/punchline/punchline.mp4" muted playsinline></video>
-      <audio id="seg-punchline-audio" src="assets/punchline/punchline.mp4"
-             data-start="25.0" data-duration="5.2" data-media-start="0"
+
+      <!-- ================= SON ================= -->
+
+      <!-- lit d'ambiance continu, sous tout le reste -->
+      <audio id="bed" src="assets/audio/bed.mp3"
+             data-start="0" data-duration="27.44" data-media-start="0"
+             data-track-index="8" data-volume="0.45"></audio>
+
+      <!-- voix off du hook -->
+      <audio id="vo-hook" src="assets/audio/vo-hook.mp3"
+             data-start="0.05" data-duration="2.45" data-media-start="0"
              data-track-index="10" data-volume="1"></audio>
+
+      <!-- voix off du bloc problème -->
+      <audio id="vo-prob" src="assets/audio/vo-prob.mp3"
+             data-start="3.15" data-duration="5.76" data-media-start="0"
+             data-track-index="11" data-volume="1"></audio>
+
+      <!-- voix de l'avatar -->
+      <audio id="vo-avatar" src="assets/audio/vo-avatar.mp3"
+             data-start="11.3" data-duration="9.24" data-media-start="0"
+             data-track-index="12" data-volume="1"></audio>
+
+      <!-- voix off de la punchline (déjà dans le mp4 du carton) -->
+      <audio id="vo-punch" src="assets/audio/vo-punch.mp3"
+             data-start="22.24" data-duration="5.2" data-media-start="0"
+             data-track-index="12" data-volume="1"></audio>
     </div>
 
     <script>
@@ -85,13 +104,15 @@
       gsap.set("#demo-accent", { xPercent: -50, scaleX: 0, transformOrigin: "50% 50%" });
       gsap.set("#demo-avatar", { opacity: 0, scale: 1.04, transformOrigin: "50% 0%" });
 
-      // temps ABSOLUS sur le timeline racine (le segment démo commence à 11.0 s)
+      // temps ABSOLUS sur le timeline racine (le bloc démo commence à 11.0 s)
       const D = 11.0;
       const tl = gsap.timeline({ paused: true });
       tl.to("#demo-screen", { opacity: 1, y: 0, duration: 0.5, ease: "power2.out" }, D);
       tl.to("#demo-accent", { xPercent: -50, scaleX: 1, duration: 0.4, ease: "power2.out" }, D + 0.4);
       tl.to("#demo-avatar", { opacity: 1, scale: 1, duration: 0.4, ease: "power2.out" }, D + 0.3);
       tl.to("#demo-avatar", { opacity: 0, duration: 0.5, ease: "power2.in" }, D + 0.3 + 9.24 - 0.5);
+      // le lit d'ambiance se retire doucement sur la toute fin
+      tl.to("#bed", { volume: 0, duration: 1.0, ease: "power1.in" }, 27.44 - 1.0);
 
       window.__timelines["t03-fournisseurs"] = tl;
     </script>

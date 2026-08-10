@@ -40,3 +40,24 @@ Fond gris-vert et veste à boutons sans tablier FoodEatUp, là où les trois aut
 clip déjà monté dans `../v01-fidelite/assets/heygen/resultat.mp4` — ont un fond clair et
 le tablier siglé. Sur une série publiée à un rythme régulier, cette rupture se remarquera.
 À refaire dans la même apparence que les autres, sauf si c'est voulu.
+
+## Lot du 2026-08-10 (2 clips uniques sur 3 déposés)
+
+| Fichier | Durée | Attribution |
+|---|---|---|
+| `gen-5_1786325920661.mp4` | 9,35 s | script **05** — Brancher son MCP sur Claude |
+| `gen-6_1786325937242.mp4` | 9,47 s | script **06** — Ajouter ses employés |
+
+Le troisième fichier déposé (`1c9ae6e9-…958033`) était **byte-identique à `gen-3`**
+(md5 `b9b097ff…`) : c'est le clip 03 re-téléchargé, pas une nouvelle génération. Supprimé.
+
+Comme il a été déposé en dernier alors que les deux précédents suivaient l'ordre 05 puis 06,
+il occupait la place du **script 07 (Établir un contrat et son salaire)** — celui-là reste
+donc à générer.
+
+## Normalisation audio
+
+Les clips HeyGen sortent à ~−17 dB de moyenne, les voix off ElevenLabs à ~−30 dB. Toutes les
+voix sont donc passées au `loudnorm I=-16:TP=-1.5:LRA=11` avant montage
+(`../motion/assets/audio/norm/vo-avatar-genN.mp3`). Sans ça, le spectateur doit monter le son
+au début de la vidéo puis le baisser à l'arrivée de l'avatar.

@@ -1,56 +1,61 @@
 #!/usr/bin/env python3
-"""Génère les projets d'assemblage des vidéos tutoriels (structure validée sur v01)."""
+"""Génère les projets d'assemblage des vidéos tutoriels.
+
+Structure (validée sur v01-fidelite, + voix off ajoutée le 2026-08-10) :
+
+    HOOK       0 → 3 s          carton chiffré + voix off qui lit le hook
+    PROBLÈME   3 → 3+P          plan Higgsfield MUET + voix off qui pose la douleur
+    DÉMO       … → …+D          logiciel en bas + avatar HeyGen par-dessus qui présente
+    PUNCHLINE  … → …+5,2 s      carton logo + voix off de la punchline
+
+Trois couches audio, donc du son du début à la fin :
+  1. les voix off (hook, problème)          — ElevenLabs, voix Adam FR
+  2. la voix de l'avatar / de la punchline  — piste des mp4 correspondants
+  3. un lit d'ambiance continu              — sous tout le reste, ~20 dB sous la voix
+
+Les plans Higgsfield sont montés SANS piste audio (ils n'en ont pas : produits pour le
+film héros 16:9 dont le son est monté à part).
+"""
 import pathlib
 import shutil
 import subprocess
 
-ROOT = pathlib.Path(__file__).resolve().parents[2]
+ROOT = pathlib.Path("/home/user/Video")
 BASE = ROOT / "videos/foodeatup-cas-concrets"
 MOTION = BASE / "motion"
+AUDIO = MOTION / "assets/audio/norm"
 INBOX = BASE / "_heygen-inbox"
-HERO = ROOT / "hero-video/assets/video"
-PROB = BASE / ".cache/probleme-916"
-
-# Les plans de hero-video/ sont en 1280x720 paysage (produits pour le film 16:9). Pour les
-# monter en 9:16 sans les recadrer — ce qui couperait justement ce qui les rend lisibles —
-# on les place au centre d'un fond flouté et assombri tiré du plan lui-même (pillarbox).
-# Solution d'attente : un plan nativement vertical reste préférable. Voir SCRIPTS-HEYGEN-30.md.
-PILLARBOX = (
-    "[0:v]scale=-2:1920,crop=1080:1920,boxblur=32:3,eq=brightness=-0.14:saturation=0.55[bg];"
-    "[0:v]scale=1080:-2[fg];[bg][fg]overlay=(W-w)/2:(H-h)/2,format=yuv420p"
+PROB = pathlib.Path(
+    "/tmp/claude-0/-home-user-Video/7b547880-00a2-54cd-816c-b0b5d5dfda3c/scratchpad/prob"
 )
+BED = ROOT / "videos/planit-product-launch/assets/music/planit-ambient-pad.mp3"
 
-
-def make_pillarbox(name):
-    """Fabrique (une fois) la version 9:16 d'un plan hero-video. Retourne le chemin."""
-    PROB.mkdir(parents=True, exist_ok=True)
-    out = PROB / f"{name}-916.mp4"
-    if out.exists():
-        return out
-    subprocess.run(
-        ["ffmpeg", "-y", "-i", str(HERO / f"{name}.mp4"), "-filter_complex", PILLARBOX,
-         "-c:v", "libx264", "-crf", "18", "-preset", "medium", "-an", str(out)],
-        check=True, capture_output=True)
-    return out
-
-# slug, hook_render, plan_hero (sans extension), probleme_dur, tuto_projet, media_start, avatar_src, avatar_dur
+# slug, n, plan_probleme, duree_probleme, projet_tuto, media_start, clip_avatar, duree_avatar
 VIDEOS = [
-    ("t01-ingredients", "hook-t01.mp4",
-     "hero-directeur-sept-onglets", 8.0,
+    ("t01-ingredients", "01",
+     "hero-directeur-sept-onglets-916.mp4", 8.0,
      "foodeatup-ingredients-tuto", 85, "gen-1_1786317231351.mp4", 10.22),
-    ("t02-recettes", "hook-t02.mp4",
-     "hero-chef-carnet-dlc", 6.0,
+    ("t02-recettes", "02",
+     "hero-chef-carnet-dlc-916.mp4", 6.0,
      "foodeatup-recettes-tuto", 74, "gen-2_1786317254794.mp4", 12.14),
-    ("t03-fournisseurs", "hook-t03.mp4",
-     "hero-directeur-sept-onglets", 8.0,
+    ("t03-fournisseurs", "03",
+     "hero-directeur-sept-onglets-916.mp4", 8.0,
      "foodeatup-fournisseurs-tuto", 44, "gen-3_1786317280068.mp4", 9.24),
-    ("t04-mes-commandes", "hook-t04.mp4",
-     "hero-serveur-trois-tablettes", 6.0,
+    ("t04-mes-commandes", "04",
+     "hero-serveur-trois-tablettes-916.mp4", 6.0,
      "foodeatup-mes-commandes-tuto", 20, "gen-4_1786317311124.mp4", 9.24),
+    ("t05-mcp-claude", "05",
+     "hero-directeur-bureau-matin-916.mp4", 8.0,
+     "foodeatup-mcp-tuto", 30, "gen-5_1786325920661.mp4", 9.35),
+    ("t06-employes", "06",
+     "hero-brigade-deux-langues-916.mp4", 8.0,
+     "foodeatup-employes-tuto", 38, "gen-6_1786325937242.mp4", 9.47),
 ]
 
-DEMO = 14.0
+HOOK = 3.0
 PUNCH = 5.2
+QUEUE = 2.0      # temps où le logiciel reste seul après la réplique de l'avatar
+BED_VOL = 0.45   # le pad est déjà à -31,8 dB : ça le pose ~20 dB sous la voix
 
 TPL = """<!doctype html>
 <html lang="fr" data-resolution="portrait">
@@ -95,20 +100,18 @@ TPL = """<!doctype html>
       data-width="1080"
       data-height="1920"
     >
-      <!-- HOOK 0–3 s -->
-      <video id="seg-hook" class="clip full" data-start="0" data-duration="3"
+      <!-- ================= IMAGE ================= -->
+
+      <!-- HOOK 0–{hook} s -->
+      <video id="seg-hook" class="clip full" data-start="0" data-duration="{hook}"
              data-track-index="0" src="assets/hook/hook.mp4" muted playsinline></video>
 
-      <!-- PROBLÈME {p0}–{p1} s -->
+      <!-- PROBLÈME {p0}–{d0} s — plan MUET (aucune piste audio dans la source) -->
       <video id="seg-probleme" class="clip full" data-start="{p0}" data-duration="{pdur}"
              data-track-index="0" data-media-start="0"
              src="assets/higgsfield/probleme.mp4" muted playsinline></video>
-      <!-- Pas d'élément <audio> ici : les plans de hero-video/ sont MUETS (produits pour
-           le film 16:9, dont le son est monté séparément). Le bloc problème est donc
-           silencieux, contrairement à la vidéo 1 dont le plan vertical avait son ambiance.
-           À reprendre quand les plans verticaux avec son seront générés. -->
 
-      <!-- DÉMO {d0}–{d1} s : logiciel en bas, avatar par-dessus qui le présente -->
+      <!-- DÉMO {d0}–{u0} s : logiciel en bas, avatar par-dessus qui le présente -->
       <div id="demo-bg" class="clip" data-start="{d0}" data-duration="{demo}"
            data-track-index="0"></div>
       <video id="demo-screen" class="clip" data-start="{d0}" data-duration="{demo}"
@@ -119,17 +122,38 @@ TPL = """<!doctype html>
       <video id="demo-avatar" class="clip" data-start="{a0}" data-duration="{adur}"
              data-track-index="3" data-media-start="0"
              src="assets/heygen/resultat.mp4" muted playsinline></video>
-      <audio id="demo-avatar-audio" src="assets/heygen/resultat.mp4"
-             data-start="{a0}" data-duration="{adur}" data-media-start="0"
-             data-track-index="10" data-volume="1"></audio>
 
-      <!-- PUNCHLINE {u0}–{total} s (voix off incluse) -->
+      <!-- PUNCHLINE {u0}–{total} s -->
       <video id="seg-punchline" class="clip full" data-start="{u0}" data-duration="{punch}"
              data-track-index="0" data-media-start="0"
              src="assets/punchline/punchline.mp4" muted playsinline></video>
-      <audio id="seg-punchline-audio" src="assets/punchline/punchline.mp4"
-             data-start="{u0}" data-duration="{punch}" data-media-start="0"
+
+      <!-- ================= SON ================= -->
+
+      <!-- lit d'ambiance continu, sous tout le reste -->
+      <audio id="bed" src="assets/audio/bed.mp3"
+             data-start="0" data-duration="{total}" data-media-start="0"
+             data-track-index="8" data-volume="{bed_vol}"></audio>
+
+      <!-- voix off du hook -->
+      <audio id="vo-hook" src="assets/audio/vo-hook.mp3"
+             data-start="0.05" data-duration="{vo_hook}" data-media-start="0"
              data-track-index="10" data-volume="1"></audio>
+
+      <!-- voix off du bloc problème -->
+      <audio id="vo-prob" src="assets/audio/vo-prob.mp3"
+             data-start="{vp0}" data-duration="{vo_prob}" data-media-start="0"
+             data-track-index="11" data-volume="1"></audio>
+
+      <!-- voix de l'avatar -->
+      <audio id="vo-avatar" src="assets/audio/vo-avatar.mp3"
+             data-start="{a0}" data-duration="{adur}" data-media-start="0"
+             data-track-index="12" data-volume="1"></audio>
+
+      <!-- voix off de la punchline (déjà dans le mp4 du carton) -->
+      <audio id="vo-punch" src="assets/audio/vo-punch.mp3"
+             data-start="{u0}" data-duration="{punch}" data-media-start="0"
+             data-track-index="12" data-volume="1"></audio>
     </div>
 
     <script>
@@ -139,13 +163,15 @@ TPL = """<!doctype html>
       gsap.set("#demo-accent", {{ xPercent: -50, scaleX: 0, transformOrigin: "50% 50%" }});
       gsap.set("#demo-avatar", {{ opacity: 0, scale: 1.04, transformOrigin: "50% 0%" }});
 
-      // temps ABSOLUS sur le timeline racine (le segment démo commence à {d0} s)
+      // temps ABSOLUS sur le timeline racine (le bloc démo commence à {d0} s)
       const D = {d0};
       const tl = gsap.timeline({{ paused: true }});
       tl.to("#demo-screen", {{ opacity: 1, y: 0, duration: 0.5, ease: "power2.out" }}, D);
       tl.to("#demo-accent", {{ xPercent: -50, scaleX: 1, duration: 0.4, ease: "power2.out" }}, D + 0.4);
       tl.to("#demo-avatar", {{ opacity: 1, scale: 1, duration: 0.4, ease: "power2.out" }}, D + 0.3);
       tl.to("#demo-avatar", {{ opacity: 0, duration: 0.5, ease: "power2.in" }}, D + 0.3 + {adur} - 0.5);
+      // le lit d'ambiance se retire doucement sur la toute fin
+      tl.to("#bed", {{ volume: 0, duration: 1.0, ease: "power1.in" }}, {total} - 1.0);
 
       window.__timelines["{slug}"] = tl;
     </script>
@@ -154,46 +180,68 @@ TPL = """<!doctype html>
 """
 
 
-def probe(path, entries):
-    out = subprocess.run(
-        ["ffprobe", "-v", "error", "-show_entries", entries, "-of", "csv=p=0", str(path)],
-        capture_output=True, text=True).stdout.strip()
-    return out
+def dur(path):
+    return float(subprocess.run(
+        ["ffprobe", "-v", "error", "-show_entries", "format=duration",
+         "-of", "csv=p=0", str(path)], capture_output=True, text=True).stdout.strip())
 
 
-for slug, hook, prob_src, pdur, tuto, ms, avatar, adur in VIDEOS:
+for slug, n, prob_src, pdur, tuto, ms, avatar, adur in VIDEOS:
+    gen = avatar.split('_')[0].replace('-', '')  # 'gen3'
     proj = BASE / slug
-    for sub in ("assets/hook", "assets/higgsfield", "assets/solution",
-                "assets/heygen", "assets/punchline", "assets/vendor", "renders"):
+    for sub in ("assets/hook", "assets/higgsfield", "assets/solution", "assets/heygen",
+                "assets/punchline", "assets/audio", "assets/vendor", "renders"):
         (proj / sub).mkdir(parents=True, exist_ok=True)
 
-    shutil.copy(MOTION / "renders" / hook, proj / "assets/hook/hook.mp4")
-    shutil.copy(make_pillarbox(prob_src), proj / "assets/higgsfield/probleme.mp4")
+    shutil.copy(MOTION / f"renders/hook-t{n}.mp4", proj / "assets/hook/hook.mp4")
+    shutil.copy(PROB / prob_src, proj / "assets/higgsfield/probleme.mp4")
     shutil.copy(ROOT / "videos" / tuto / "assets/screen.mp4", proj / "assets/solution/screen.mp4")
     shutil.copy(INBOX / avatar, proj / "assets/heygen/resultat.mp4")
     shutil.copy(MOTION / "renders/punchline-outro.mp4", proj / "assets/punchline/punchline.mp4")
     shutil.copy(MOTION / "assets/vendor/gsap.min.js", proj / "assets/vendor/gsap.min.js")
+    shutil.copy(AUDIO / f"vo-hook-t{n}.mp3", proj / "assets/audio/vo-hook.mp3")
+    shutil.copy(AUDIO / f"vo-prob-t{n}.mp3", proj / "assets/audio/vo-prob.mp3")
+    shutil.copy(AUDIO / f"vo-avatar-{gen}.mp3", proj / "assets/audio/vo-avatar.mp3")
+    shutil.copy(MOTION / "assets/audio/norm/punchline-vo.mp3",
+                proj / "assets/audio/vo-punch.mp3")
+    shutil.copy(BED, proj / "assets/audio/bed.mp3")
 
-    # hauteur d'affichage du logiciel : largeur pleine (1080) sans déformation
-    wh = probe(proj / "assets/solution/screen.mp4", "stream=width,height").split("\n")[0]
+    wh = subprocess.run(
+        ["ffprobe", "-v", "error", "-select_streams", "v:0", "-show_entries",
+         "stream=width,height", "-of", "csv=p=0", str(proj / "assets/solution/screen.mp4")],
+        capture_output=True, text=True).stdout.strip()
     w, h = (int(x) for x in wh.split(","))
     screen_h = 1080 * h / w
 
-    p0, d0 = 3.0, 3.0 + pdur
-    u0 = d0 + DEMO
+    vo_hook = dur(proj / "assets/audio/vo-hook.mp3")
+    vo_prob = dur(proj / "assets/audio/vo-prob.mp3")
+
+    p0 = HOOK
+    d0 = round(HOOK + pdur, 2)
+    demo = round(adur + QUEUE, 2)
+    u0 = round(d0 + demo, 2)
     total = round(u0 + PUNCH, 2)
+    a0 = round(d0 + 0.3, 2)
+    vp0 = round(p0 + 0.15, 2)
 
     (proj / "index.html").write_text(TPL.format(
-        slug=slug, total=total, p0=p0, p1=d0, pdur=pdur, d0=d0, d1=u0, demo=DEMO,
-        ms=ms, a0=round(d0 + 0.3, 2), adur=adur, u0=u0, punch=PUNCH, screen_h=screen_h,
+        slug=slug, total=total, hook=HOOK, p0=p0, pdur=pdur, d0=d0, demo=demo,
+        ms=ms, a0=a0, adur=adur, u0=u0, punch=PUNCH, screen_h=screen_h,
+        vo_hook=round(vo_hook, 2), vo_prob=round(vo_prob, 2), vp0=vp0, bed_vol=BED_VOL,
     ), encoding="utf-8")
 
-    (proj / "meta.json").write_text(
-        '{"id":"%s","name":"%s"}' % (slug, slug), encoding="utf-8")
+    (proj / "meta.json").write_text('{"id":"%s","name":"%s"}' % (slug, slug), encoding="utf-8")
     (proj / "hyperframes.json").write_text(
         '{"$schema":"https://hyperframes.heygen.com/schema/hyperframes.json",'
         '"paths":{"blocks":"compositions","components":"compositions/components",'
         '"assets":"assets"},"media":{"autoProxy":true},'
         '"authoringSkill":"general-video"}', encoding="utf-8")
 
-    print(f"{slug:20s} total={total:5.1f}s  problème={pdur}s  screen_h={screen_h:.0f}px  avatar={adur}s")
+    # contrôle : la voix off tient-elle dans son bloc ?
+    warn = ""
+    if vo_hook > HOOK + 0.4:
+        warn += f"  ⚠ VO hook {vo_hook:.2f}s > bloc {HOOK}s"
+    if vo_prob > pdur:
+        warn += f"  ⚠ VO problème {vo_prob:.2f}s > bloc {pdur}s"
+    print(f"{slug:20s} total={total:5.1f}s  hook_vo={vo_hook:.2f}  prob_vo={vo_prob:.2f}"
+          f"  demo={demo:.2f}{warn}")
