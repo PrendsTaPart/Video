@@ -19,7 +19,10 @@ R="$(cd "$(dirname "$0")/.." && pwd)"
 SABLE="0xFAF6E3"   # fond de charte FoodEatUp, relevé sur le master de référence
 LOGO_X=795         # position du badge, identique sur toute la durée
 LOGO_Y=57
-AV_CROP_Y=30       # décalage du crop avatar : garde la toque et le menton
+AV_CROP_Y=30       # décalage du crop avatar : garde la toque, coupe bas sur le buste
+AV_H=960           # avatar : 2,5/5 de l'écran
+SOFT_H=768         # logiciel : 2/5
+BAND_H=192         # bandeau de marque : 0,5/5, le logo y est centré
 BED_GAIN=0.224     # -13 dB : cale la musique sur le plancher -28 dBFS de la référence
 SFX_GAIN=2.0       # +6 dB : whoosh audible sous la voix
 
@@ -60,12 +63,13 @@ ffmpeg -v error \
  -i "$R/templates/sfx_transition.mp3" \
  -filter_complex "\
  [0:v]trim=start=$DEBUT,setpts=(PTS-STARTPTS)/$TEMPO,fps=30,\
-crop=1080:864:0:$AV_CROP_Y,tpad=stop_mode=clone:stop_duration=3,\
+crop=1080:$AV_H:0:$AV_CROP_Y,tpad=stop_mode=clone:stop_duration=3,\
 trim=0:10,setpts=PTS-STARTPTS[top];\
- [1:v]fps=30,scale=1080:1056:force_original_aspect_ratio=decrease,\
-pad=1080:1056:(ow-iw)/2:(oh-ih)/2:color=$SABLE[bot];\
- [top][bot]vstack=inputs=2[stack];\
- [stack][2:v]overlay=$LOGO_X:$LOGO_Y:format=auto[ov];\
+ [1:v]fps=30,scale=1080:$SOFT_H:force_original_aspect_ratio=decrease,\
+pad=1080:$SOFT_H:(ow-iw)/2:(oh-ih)/2:color=$SABLE[mid];\
+ color=c=$SABLE:s=1080x$BAND_H:r=30,trim=0:10[band];\
+ [top][mid][band]vstack=inputs=3[stack];\
+ [stack][2:v]overlay=(W-w)/2:H-$BAND_H+(($BAND_H-h)/2):format=auto[ov];\
  [ov]fade=t=in:st=0:d=0.35:color=$SABLE,format=yuv420p[v];\
  [0:a]atrim=start=$DEBUT,asetpts=PTS-STARTPTS,aresample=48000,\
 atempo=$TEMPO,apad,atrim=0:10,asetpts=PTS-STARTPTS,volume=1.0[voice];\

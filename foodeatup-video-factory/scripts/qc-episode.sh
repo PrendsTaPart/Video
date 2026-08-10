@@ -32,13 +32,16 @@ L=$(ffmpeg -v error -i "$M" -frames:v 1 -vf "scale=64:64,format=gray" -f rawvide
     | python3 -c "import sys;d=sys.stdin.buffer.read();print(int(sum(d)/len(d)))")
 [ "$L" -ge 12 ] && ok "première frame non noire (luminance $L)" || ko "première frame noire (luminance $L)"
 
-# Logo présent du début à la fin.
-for t in 1 15 29; do
-  BL=$(ffmpeg -v error -ss $t -i "$M" -frames:v 1 -vf "crop=250:93:795:57,scale=25:9,format=gray" \
+# Logo présent du début à la fin. Il est haut-droite partout, sauf sur le
+# segment D (16 → 26 s) où il descend dans le bandeau de marque du bas.
+verifie_logo() {  # $1 = seconde, $2 = crop ffmpeg, $3 = libellé
+  BL=$(ffmpeg -v error -ss "$1" -i "$M" -frames:v 1 -vf "crop=$2,scale=25:9,format=gray" \
        -f rawvideo - 2>/dev/null | python3 -c "import sys;d=sys.stdin.buffer.read();print(int(sum(d)/len(d)))")
   { [ "$BL" -gt 60 ] && [ "$BL" -lt 200 ]; } \
-    && ok "logo présent à ${t}s" || ko "logo absent/illisible à ${t}s (luminance $BL)"
-done
+    && ok "logo présent à $1s ($3)" || ko "logo absent/illisible à $1s ($3, luminance $BL)"
+}
+for t in 1 15 29; do verifie_logo "$t" "250:93:795:57" "haut-droite"; done
+verifie_logo 21 "250:93:415:1777" "bandeau bas"
 
 [ $FAIL -eq 0 ] && echo "=== $EP CONFORME ===" || echo "=== $EP RESTE DANS build/ ==="
 exit $FAIL
