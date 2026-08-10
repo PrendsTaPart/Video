@@ -88,8 +88,25 @@ lisibles une fois tronqués à la durée du master 30 s.
   et **29 pitchs de démo**, un par épisode, tous normalisés
 - ✅ **29 épisodes sur 30** montés en TikTok 30 s ET LinkedIn 1:1 45 s
 - ✅ 29 plans de publication prêts dans `build/publish_plan_EPxx.json`
-- ⏳ **EP24** (la mouette braqueuse) : séquence Higgsfield à générer
+- ✅ les 58 masters et les 29 sources Higgsfield sont dans la **bibliothèque
+  RapidoCMS** (660 Mo, taille vérifiée fichier par fichier)
+- ⏳ **EP24** (la mouette braqueuse) : séquence Higgsfield à générer —
+  prompt prêt dans `docs/EP24-prompt-higgsfield.md`
 - ⏳ publication : rien n'est envoyé, TikTok reste en `SELF_ONLY`
+
+### Bibliothèque RapidoCMS
+
+`config/rapidocms_library.json` liste les 87 fichiers déposés et leur taille :
+
+| Nom | Contenu |
+|---|---|
+| `foodeatup-promo-EPxx-tiktok-30` | master 1080×1920, 30,00 s |
+| `foodeatup-promo-EPxx-linkedin-45` | master 1080×1080, 45,00 s |
+| `foodeatup-hook-EPxx-higgsfield` | séquence Higgsfield d'origine, non montée |
+
+Tant qu'un master figure dans cet inventaire, `04_publish_rapidocms.py` écrit
+son URL réelle dans le brouillon et **supprime les étapes Drive + upload** :
+le plan tombe de 13 à 9 appels, sans marqueur à remplacer côté média.
 
 ### Hooks : toujours l'original Higgsfield
 

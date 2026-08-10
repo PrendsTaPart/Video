@@ -18,9 +18,13 @@ Garde-fous appliqués avant d'écrire le plan :
   * on ne produit que des BROUILLONS planifiés, jamais de publication immédiate.
 
 Chaîne d'URL publique (SPEC §5.1) : `upload_file_tool` ne lit pas le disque, il
-exige une URL publique. Le plan enchaîne donc Drive (create_file dans le dossier
-partagé) → URL de téléchargement direct → upload_file_tool → create_draft_tool
-→ schedule_draft_tool.
+exige une URL publique. Deux cas :
+
+  * le master est DÉJÀ dans la bibliothèque RapidoCMS — son URL S3 figure dans
+    `config/rapidocms_library.json` — alors le plan s'arrête à
+    create_draft_tool → schedule_draft_tool, sans réenvoi ;
+  * sinon le plan enchaîne Drive (create_file dans le dossier partagé) → URL de
+    téléchargement direct → upload_file_tool, puis les deux mêmes étapes.
 
 Usage :
     python scripts/04_publish_rapidocms.py --episode EP01
@@ -55,6 +59,17 @@ OFFSET_H = {"tiktok": 0, "instagram": 2, "linkedin": 4, "facebook": 6}
 WEEKDAYS = [0, 2, 4]                       # lundi, mercredi, vendredi
 BASE_HOUR = 12
 DRIVE_FOLDER = "FoodEatUp — Vidéos promo"
+LIBRARY = ROOT / "config" / "rapidocms_library.json"
+# Nom sous lequel un master vit dans la bibliothèque RapidoCMS.
+BIBLIO_NOM = {"tiktok_30": "tiktok-30", "linkedin_45": "linkedin-45"}
+
+
+def library() -> dict:
+    """URLs des fichiers déjà déposés dans la bibliothèque, si l'inventaire
+    existe. Absent = on retombe sur la chaîne Drive → upload."""
+    if not LIBRARY.exists():
+        return {}
+    return json.loads(LIBRARY.read_text(encoding="utf-8"))
 
 
 def latest_run(ep_id: str, fmt: str) -> dict | None:
@@ -129,7 +144,16 @@ def main() -> int:
         "note": "récupère les account_id réels ; ne jamais les coder en dur",
     })
 
+    biblio = library()
+    media_url: dict[str, str] = {}
     for fmt, path in masters.items():
+        nom = f"foodeatup-promo-{ep['id']}-{BIBLIO_NOM[fmt]}"
+        depose = biblio.get(nom)
+        if depose:
+            # Déjà en bibliothèque : on connaît l'URL, rien à réenvoyer.
+            media_url[fmt] = depose["url"]
+            continue
+        media_url[fmt] = f"<file_url renvoyé par biblio:{fmt}>"
         steps.append({
             "step": f"drive_upload:{fmt}",
             "tool": "GoogleDrive:create_file",
@@ -144,7 +168,7 @@ def main() -> int:
             "tool": "RapidoCMS:upload_file_tool",
             "args": {"file_url": "https://drive.google.com/uc?export=download"
                                  "&id=<FILE_ID de l'étape précédente>",
-                     "name": f"{ep['id']}_{fmt}", "type": "video"},
+                     "name": nom, "type": "video"},
             "note": "si RapidoCMS refuse l'URL Drive (antivirus sur les gros "
                     "fichiers), basculer sur un hébergement statique maîtrisé "
                     "et le documenter — ne PAS regénérer la vidéo ailleurs",
@@ -162,7 +186,7 @@ def main() -> int:
             "post_type": "mediatext",
             "media_type": "video",
             "media_source": "biblio",
-            "media_url": f"<file_url renvoyé par biblio:{fmt}>",
+            "media_url": media_url[fmt],
             "media_caption": caption,
         }
         if net == "tiktok":
@@ -185,6 +209,7 @@ def main() -> int:
         "episode": ep["id"], "titre": ep["titre"],
         "genere_le": dt.datetime.now().isoformat(timespec="seconds"),
         "masters": {k: str(v.relative_to(ROOT)) for k, v in masters.items()},
+        "media_url": media_url,
         "tiktok_public": args.tiktok_public,
         "publication_directe": False,
         "steps": steps,
