@@ -5,7 +5,11 @@
     "chapitre_drive": "1 - COMMANDES MULTI-CANAUX",
     "folder": "1V0xXbnYuqBsDUiD2Q_itQLIk4Ps1rw4l",
     "url": "https://drive.google.com/drive/folders/1V0xXbnYuqBsDUiD2Q_itQLIk4Ps1rw4l",
-    "resolution": "numéro"
+    "resolution": "numéro",
+    "fichier_id": "10GjJltEF3utZtfmwHR0qLZ8CTQr5_ioC",
+    "fichier_titre": "Retrouver vos commandes multi-Canal.mp4",
+    "url_fichier": "https://drive.google.com/file/d/10GjJltEF3utZtfmwHR0qLZ8CTQr5_ioC/view",
+    "video": true
   },
   "EP002": {
     "module": "Service",
@@ -13,7 +17,11 @@
     "chapitre_drive": "3 - ENVOI DIRECT CUISINE",
     "folder": "163wYyl14_2hFJ8gUGuunJWhYVqEo0AJu",
     "url": "https://drive.google.com/drive/folders/163wYyl14_2hFJ8gUGuunJWhYVqEo0AJu",
-    "resolution": "numéro"
+    "resolution": "numéro",
+    "fichier_id": "1PucAO7TE28El_TCLBrAOjct2VJS4mZu2",
+    "fichier_titre": "Envoyer la commande en cuisine.mp4",
+    "url_fichier": "https://drive.google.com/file/d/1PucAO7TE28El_TCLBrAOjct2VJS4mZu2/view",
+    "video": true
   },
   "EP003": {
     "module": "StockVision",
@@ -21,7 +29,11 @@
     "chapitre_drive": "1- Ma carte - Création et modifications de la carte du restaurant",
     "folder": "1bGMZ8R1udBoMF4XrJJqEnpYKkVrwBxx7",
     "url": "https://drive.google.com/drive/folders/1bGMZ8R1udBoMF4XrJJqEnpYKkVrwBxx7",
-    "resolution": "numéro"
+    "resolution": "numéro",
+    "fichier_id": "1yqhyPMj9uBq1awmqTwUhisuBJBpY5kt-",
+    "fichier_titre": "Création et modifications de la carte du restaurant.mp4",
+    "url_fichier": "https://drive.google.com/file/d/1yqhyPMj9uBq1awmqTwUhisuBJBpY5kt-/view",
+    "video": true
   },
   "EP004": {
     "module": "Caisse POS",
@@ -29,7 +41,8 @@
     "chapitre_drive": "1 - CONFIGURER SA CAISSE POS TPE & TICKET",
     "folder": "1hQ5RgiSyb2DGfkP_EIQ3mwWzVQOQBcOc",
     "url": "https://drive.google.com/drive/folders/1hQ5RgiSyb2DGfkP_EIQ3mwWzVQOQBcOc",
-    "resolution": "numéro"
+    "resolution": "numéro",
+    "video": false
   },
   "EP005": {
     "module": "Configuration",
@@ -37,7 +50,11 @@
     "chapitre_drive": "1 - Monter votre boutique",
     "folder": "1xCJAtFHgNO8DwcZ_Im4VgV_EqX0yV0Vf",
     "url": "https://drive.google.com/drive/folders/1xCJAtFHgNO8DwcZ_Im4VgV_EqX0yV0Vf",
-    "resolution": "correspondance manuelle"
+    "resolution": "correspondance manuelle",
+    "fichier_id": "1hp7mZd-tQliPUemhyIKHWMl9xUgKHwoq",
+    "fichier_titre": "Création d'une boutique.mp4",
+    "url_fichier": "https://drive.google.com/file/d/1hp7mZd-tQliPUemhyIKHWMl9xUgKHwoq/view",
+    "video": true
   },
   "EP006": {
     "module": "StockVision",
@@ -45,7 +62,11 @@
     "chapitre_drive": "17- Stock - Ajouter et modifier un mouvement",
     "folder": "1TEPT2xy-s0P_l3ghbupKLWuPa4J6DVra",
     "url": "https://drive.google.com/drive/folders/1TEPT2xy-s0P_l3ghbupKLWuPa4J6DVra",
-    "resolution": "numéro"
+    "resolution": "numéro",
+    "fichier_id": "1xxxr8zsy8ZvK7NCizf1F9q8W3u48Npgt",
+    "fichier_titre": "Ajoute et modifier un mouvement.mp4",
+    "url_fichier": "https://drive.google.com/file/d/1xxxr8zsy8ZvK7NCizf1F9q8W3u48Npgt/view",
+    "video": true
   },
   "EP007": {
     "module": "Marketing",
@@ -53,7 +74,11 @@
     "chapitre_drive": "3 - RÉPONDRE AUX AVIS",
     "folder": "1ZXZeT7GyPTkQT95XNGu8svx6OI1aUgNA",
     "url": "https://drive.google.com/drive/folders/1ZXZeT7GyPTkQT95XNGu8svx6OI1aUgNA",
-    "resolution": "numéro"
+    "resolution": "numéro",
+    "fichier_id": "1CMKvqIypwbr8KHTj0dCs_w06sjkaQKV4",
+    "fichier_titre": "Répondre a un avis client.mp4",
+    "url_fichier": "https://drive.google.com/file/d/1CMKvqIypwbr8KHTj0dCs_w06sjkaQKV4/view",
+    "video": true
   },
   "EP008": {
     "module": "Comptabilité",
@@ -61,7 +86,11 @@
     "chapitre_drive": "5- Créer une facture",
     "folder": "1026gmGm615P9PAOfk4CUGaxRava0Nm6k",
     "url": "https://drive.google.com/drive/folders/1026gmGm615P9PAOfk4CUGaxRava0Nm6k",
-    "resolution": "correspondance manuelle"
+    "resolution": "correspondance manuelle",
+    "fichier_id": "1bN_o6_HYz9Za1kGyIst6INWrJJz9MagE",
+    "fichier_titre": "Créer une facture.mp4",
+    "url_fichier": "https://drive.google.com/file/d/1bN_o6_HYz9Za1kGyIst6INWrJJz9MagE/view",
+    "video": true
   },
   "EP009": {
     "module": "Caisse POS",
@@ -69,7 +98,8 @@
     "chapitre_drive": "7 - SUIVRE LES ÉCARTS CAISSE",
     "folder": "1XpLa01_iscSfjrfA8GkM2uEuHdDZIw4d",
     "url": "https://drive.google.com/drive/folders/1XpLa01_iscSfjrfA8GkM2uEuHdDZIw4d",
-    "resolution": "numéro"
+    "resolution": "numéro",
+    "video": false
   },
   "EP010": {
     "module": "PrediBot",
@@ -77,7 +107,11 @@
     "chapitre_drive": "1 - LIRE SES PRÉVISIONS",
     "folder": "19KbPaohx3zwWwsG4Ud3KfJU9WlqeqIoE",
     "url": "https://drive.google.com/drive/folders/19KbPaohx3zwWwsG4Ud3KfJU9WlqeqIoE",
-    "resolution": "numéro"
+    "resolution": "numéro",
+    "fichier_id": "1MWkfZ-OZ_qv2z6QD9VPwabO5XnGd5UaB",
+    "fichier_titre": "lire ses prévisions predibot.mp4",
+    "url_fichier": "https://drive.google.com/file/d/1MWkfZ-OZ_qv2z6QD9VPwabO5XnGd5UaB/view",
+    "video": true
   },
   "EP011": {
     "module": "HubRise",
@@ -85,7 +119,8 @@
     "chapitre_drive": "1 - CONNECTER SON HUBRISE",
     "folder": "1kqu2sTxvzVvBFx-Y4WgFdF6qOz4wh0o9",
     "url": "https://drive.google.com/drive/folders/1kqu2sTxvzVvBFx-Y4WgFdF6qOz4wh0o9",
-    "resolution": "numéro"
+    "resolution": "numéro",
+    "video": false
   },
   "EP012": {
     "module": "KDS",
@@ -93,7 +128,8 @@
     "chapitre_drive": "3 - GÉRER LE KDS EN DIRECT",
     "folder": "1RnmeyK_4aYgVpGKKNdPOrClzmpHw9Ljg",
     "url": "https://drive.google.com/drive/folders/1RnmeyK_4aYgVpGKKNdPOrClzmpHw9Ljg",
-    "resolution": "numéro"
+    "resolution": "numéro",
+    "video": false
   },
   "EP013": {
     "module": "PrediBot",
@@ -101,7 +137,11 @@
     "chapitre_drive": "3 - PARLER À PREDIBOT",
     "folder": "10__yAAWsF5AzYJFvViRjWlSYTzIlIyBQ",
     "url": "https://drive.google.com/drive/folders/10__yAAWsF5AzYJFvViRjWlSYTzIlIyBQ",
-    "resolution": "numéro"
+    "resolution": "numéro",
+    "fichier_id": "1nuFxXTOCXeHKtSbJBScCH0O3khJxTiB4",
+    "fichier_titre": "parler à predibot avec nos prompts.mp4",
+    "url_fichier": "https://drive.google.com/file/d/1nuFxXTOCXeHKtSbJBScCH0O3khJxTiB4/view",
+    "video": true
   },
   "EP014": {
     "module": "StockVision",
@@ -109,7 +149,11 @@
     "chapitre_drive": "16- Stock - Mouvements de stock",
     "folder": "1DvhP8VJ6MFa2Zokkwgkdx_BUm7WUbIMp",
     "url": "https://drive.google.com/drive/folders/1DvhP8VJ6MFa2Zokkwgkdx_BUm7WUbIMp",
-    "resolution": "numéro"
+    "resolution": "numéro",
+    "fichier_id": "124mIM7NudoQy5wun_rlSZ6MCrJ2wNykL",
+    "fichier_titre": "Mouvements de stock, Détails, Supprimer.mp4",
+    "url_fichier": "https://drive.google.com/file/d/124mIM7NudoQy5wun_rlSZ6MCrJ2wNykL/view",
+    "video": true
   },
   "EP015": {
     "module": "Configuration",
@@ -117,7 +161,11 @@
     "chapitre_drive": "7 - Vos catégories",
     "folder": "1l4i6EF6MJikoXuL4vKDglHiwunFS0WT9",
     "url": "https://drive.google.com/drive/folders/1l4i6EF6MJikoXuL4vKDglHiwunFS0WT9",
-    "resolution": "correspondance manuelle"
+    "resolution": "correspondance manuelle",
+    "fichier_id": "17ZDwHrTaTvQmiCmTYBwZnnJo_OLrXzyo",
+    "fichier_titre": "Création de ces catégories.mp4",
+    "url_fichier": "https://drive.google.com/file/d/17ZDwHrTaTvQmiCmTYBwZnnJo_OLrXzyo/view",
+    "video": true
   },
   "EP016": {
     "module": "Comptabilité",
@@ -125,7 +173,11 @@
     "chapitre_drive": "8- Archivage des dépenses",
     "folder": "1LKE7TtSjPJRnWVF_4-Tt89KmnudV-dcY",
     "url": "https://drive.google.com/drive/folders/1LKE7TtSjPJRnWVF_4-Tt89KmnudV-dcY",
-    "resolution": "texte 0.48"
+    "resolution": "texte 0.48",
+    "fichier_id": "13gsBIjozDhLKJBi0uOwqIE3ShA_V7d3R",
+    "fichier_titre": "Archivage de mes dépenses et connexion au livraisons.mp4",
+    "url_fichier": "https://drive.google.com/file/d/13gsBIjozDhLKJBi0uOwqIE3ShA_V7d3R/view",
+    "video": true
   },
   "EP017": {
     "module": "StockVision",
@@ -133,7 +185,11 @@
     "chapitre_drive": "19- Statistiques - Création d'un rapport",
     "folder": "1yvp9ZXQST0g2t8Y6_DFMGeU_W2VtTwUa",
     "url": "https://drive.google.com/drive/folders/1yvp9ZXQST0g2t8Y6_DFMGeU_W2VtTwUa",
-    "resolution": "numéro"
+    "resolution": "numéro",
+    "fichier_id": "1yOgpFr18I9GyIkFegEj1MJNU_ksMtRLy",
+    "fichier_titre": "Création d'un rapport et Historique des statistiques par Module.mp4",
+    "url_fichier": "https://drive.google.com/file/d/1yOgpFr18I9GyIkFegEj1MJNU_ksMtRLy/view",
+    "video": true
   },
   "EP018": {
     "module": "Service",
@@ -141,7 +197,11 @@
     "chapitre_drive": "2 - SITE, VOCAL & QR CODE",
     "folder": "1Qx4wDHzoPibj-O4HHwRExlnU7bLvP6aR",
     "url": "https://drive.google.com/drive/folders/1Qx4wDHzoPibj-O4HHwRExlnU7bLvP6aR",
-    "resolution": "numéro"
+    "resolution": "numéro",
+    "fichier_id": "1jSK_Zv7MtSgTqwGaV7WeffGjiZ0g4MWk",
+    "fichier_titre": "Commander sur votre site, Agent vocal ou qrcode a table.mp4",
+    "url_fichier": "https://drive.google.com/file/d/1jSK_Zv7MtSgTqwGaV7WeffGjiZ0g4MWk/view",
+    "video": true
   },
   "EP019": {
     "module": "StockVision",
@@ -149,7 +209,11 @@
     "chapitre_drive": "3- Ma carte - Prédictions des commandes",
     "folder": "107h7JIXDFCD5cjyF90tiOZT2LSkFSjFj",
     "url": "https://drive.google.com/drive/folders/107h7JIXDFCD5cjyF90tiOZT2LSkFSjFj",
-    "resolution": "numéro"
+    "resolution": "numéro",
+    "fichier_id": "14GntP3F4hhloVyYBDJrPCj55Ny1gvDx9",
+    "fichier_titre": "Prédictions des commandes en fonction de vos ventes et production.mp4",
+    "url_fichier": "https://drive.google.com/file/d/14GntP3F4hhloVyYBDJrPCj55Ny1gvDx9/view",
+    "video": true
   },
   "EP020": {
     "module": "Réservation",
@@ -157,7 +221,11 @@
     "chapitre_drive": "2 - AJOUTER UNE RÉSERVATION",
     "folder": "1FCKxILOc1EB5X51xFCrWZgXTQ27IXLeE",
     "url": "https://drive.google.com/drive/folders/1FCKxILOc1EB5X51xFCrWZgXTQ27IXLeE",
-    "resolution": "numéro"
+    "resolution": "numéro",
+    "fichier_id": "1ITy-Ia2Q3FSeKSRRd4bWEFw4eDlzFZ6q",
+    "fichier_titre": "Ajouter une réservation.mp4",
+    "url_fichier": "https://drive.google.com/file/d/1ITy-Ia2Q3FSeKSRRd4bWEFw4eDlzFZ6q/view",
+    "video": true
   },
   "EP021": {
     "module": "KDS",
@@ -165,7 +233,11 @@
     "chapitre_drive": "1 - CRÉER TES POSTES KDS",
     "folder": "1NU0o445gOk4pdMf4uimNPOts3XIcR7LO",
     "url": "https://drive.google.com/drive/folders/1NU0o445gOk4pdMf4uimNPOts3XIcR7LO",
-    "resolution": "numéro"
+    "resolution": "numéro",
+    "fichier_id": "1Q25eSBcjIuq1XkHnJkFN_QJyK23o1GVg",
+    "fichier_titre": "Créer un poste de travail (Préparation,Pass,Bar) sur le KDS.mp4",
+    "url_fichier": "https://drive.google.com/file/d/1Q25eSBcjIuq1XkHnJkFN_QJyK23o1GVg/view",
+    "video": true
   },
   "EP022": {
     "module": "PrediBot",
@@ -173,7 +245,11 @@
     "chapitre_drive": "2 - MARKETPLACE DE PROMPTS",
     "folder": "1RYZ8XwLFAfblkQTaotx4OBWbeGn9FHzR",
     "url": "https://drive.google.com/drive/folders/1RYZ8XwLFAfblkQTaotx4OBWbeGn9FHzR",
-    "resolution": "numéro"
+    "resolution": "numéro",
+    "fichier_id": "16kN9JwGuVugkCtjQ93OObZ2tAlmsbgZl",
+    "fichier_titre": "video-2 piocher dans la marketplace de prompts.mp4",
+    "url_fichier": "https://drive.google.com/file/d/16kN9JwGuVugkCtjQ93OObZ2tAlmsbgZl/view",
+    "video": true
   },
   "EP023": {
     "module": "Marketing",
@@ -181,7 +257,11 @@
     "chapitre_drive": "24 - CALENDRIER IA AVEC IRIS",
     "folder": "1xBOpXD3_d349XcOQbXjWZI2ejA316C_0",
     "url": "https://drive.google.com/drive/folders/1xBOpXD3_d349XcOQbXjWZI2ejA316C_0",
-    "resolution": "numéro"
+    "resolution": "numéro",
+    "fichier_id": "1NaTIjzXl8NU1dwX3Xrxl0DrhKIbVy34F",
+    "fichier_titre": "Visualiser le Calendrier de communication de Iris.mp4",
+    "url_fichier": "https://drive.google.com/file/d/1NaTIjzXl8NU1dwX3Xrxl0DrhKIbVy34F/view",
+    "video": true
   },
   "EP024": {
     "module": "Mon Site",
@@ -189,7 +269,11 @@
     "chapitre_drive": "5 - CRÉER UN SITE PAR IA",
     "folder": "1WZsVdrBvcL2OQiYcRdnBCgzUx6u9J6p9",
     "url": "https://drive.google.com/drive/folders/1WZsVdrBvcL2OQiYcRdnBCgzUx6u9J6p9",
-    "resolution": "numéro"
+    "resolution": "numéro",
+    "fichier_id": "1MEMdJJMq2MhQ6H-dU5Nb5ls8ifoqM3U4",
+    "fichier_titre": "Créer son site avec l'IA.mp4",
+    "url_fichier": "https://drive.google.com/file/d/1MEMdJJMq2MhQ6H-dU5Nb5ls8ifoqM3U4/view",
+    "video": true
   },
   "EP025": {
     "module": "Marketing",
@@ -197,7 +281,11 @@
     "chapitre_drive": "6 - CAMPAGNE 100% IA",
     "folder": "14eSl0L3tVXmecDdmsaTReOkXcE-DGM3d",
     "url": "https://drive.google.com/drive/folders/14eSl0L3tVXmecDdmsaTReOkXcE-DGM3d",
-    "resolution": "numéro"
+    "resolution": "numéro",
+    "fichier_id": "1awOr8pckNt0S-V2iyhlnBSS171wM0fkF",
+    "fichier_titre": "Créer une campagne avec l'agent I-A FoodEatUp.mp4",
+    "url_fichier": "https://drive.google.com/file/d/1awOr8pckNt0S-V2iyhlnBSS171wM0fkF/view",
+    "video": true
   },
   "EP026": {
     "module": "StockVision",
@@ -205,7 +293,11 @@
     "chapitre_drive": "5- Liste des courses - Commander au fournisseur",
     "folder": "18dlgcwepziokEkkpTQFu1-ifGJ5ajOYB",
     "url": "https://drive.google.com/drive/folders/18dlgcwepziokEkkpTQFu1-ifGJ5ajOYB",
-    "resolution": "numéro"
+    "resolution": "numéro",
+    "fichier_id": "1biVi8MCCRbLYAEZHfNd-Gw-kAcW8jhiL",
+    "fichier_titre": "Commandé et envoyé ma liste de courses au fournisseur.mp4",
+    "url_fichier": "https://drive.google.com/file/d/1biVi8MCCRbLYAEZHfNd-Gw-kAcW8jhiL/view",
+    "video": true
   },
   "EP027": {
     "module": "Caisse POS",
@@ -213,7 +305,8 @@
     "chapitre_drive": "6 - CLÔTURER SA CAISSE LE Z",
     "folder": "1ht1CI-2jBkP6DdhvMdT3xVCPbzrwUU3m",
     "url": "https://drive.google.com/drive/folders/1ht1CI-2jBkP6DdhvMdT3xVCPbzrwUU3m",
-    "resolution": "numéro"
+    "resolution": "numéro",
+    "video": false
   },
   "EP028": {
     "module": "HubRise",
@@ -221,7 +314,8 @@
     "chapitre_drive": "4 - CENTRALISER LES COMMANDES",
     "folder": "1Qt_omsrE2w9UqlhhlfkhwJaCjeL_ddow",
     "url": "https://drive.google.com/drive/folders/1Qt_omsrE2w9UqlhhlfkhwJaCjeL_ddow",
-    "resolution": "numéro"
+    "resolution": "numéro",
+    "video": false
   },
   "EP029": {
     "module": "PrediBot",
@@ -229,7 +323,11 @@
     "chapitre_drive": "1 - LIRE SES PRÉVISIONS",
     "folder": "19KbPaohx3zwWwsG4Ud3KfJU9WlqeqIoE",
     "url": "https://drive.google.com/drive/folders/19KbPaohx3zwWwsG4Ud3KfJU9WlqeqIoE",
-    "resolution": "numéro"
+    "resolution": "numéro",
+    "fichier_id": "1MWkfZ-OZ_qv2z6QD9VPwabO5XnGd5UaB",
+    "fichier_titre": "lire ses prévisions predibot.mp4",
+    "url_fichier": "https://drive.google.com/file/d/1MWkfZ-OZ_qv2z6QD9VPwabO5XnGd5UaB/view",
+    "video": true
   },
   "EP030": {
     "module": "Configuration",
@@ -237,7 +335,8 @@
     "chapitre_drive": null,
     "folder": "19xTrrkXtWO3yfJqtC3SIlDgpBjSEc4N9",
     "url": "https://drive.google.com/drive/folders/19xTrrkXtWO3yfJqtC3SIlDgpBjSEc4N9",
-    "resolution": "à confirmer — dossier module"
+    "resolution": "à confirmer — dossier module",
+    "video": false
   },
   "EP031": {
     "module": "HACCP",
@@ -245,7 +344,11 @@
     "chapitre_drive": "15-Créer les étiquettes de production",
     "folder": "1LP5M_d-WFsTZCb1ddBTNlTGfUQhEzO76",
     "url": "https://drive.google.com/drive/folders/1LP5M_d-WFsTZCb1ddBTNlTGfUQhEzO76",
-    "resolution": "texte 0.51"
+    "resolution": "texte 0.51",
+    "fichier_id": "1Cb7c55HN3pKh7zD7LlozCdVIzl85ux6M",
+    "fichier_titre": "Créer les étiquettes de vos production.mp4",
+    "url_fichier": "https://drive.google.com/file/d/1Cb7c55HN3pKh7zD7LlozCdVIzl85ux6M/view",
+    "video": true
   },
   "EP032": {
     "module": "StockVision",
@@ -253,7 +356,11 @@
     "chapitre_drive": "1- Ma carte - Création et modifications de la carte du restaurant",
     "folder": "1bGMZ8R1udBoMF4XrJJqEnpYKkVrwBxx7",
     "url": "https://drive.google.com/drive/folders/1bGMZ8R1udBoMF4XrJJqEnpYKkVrwBxx7",
-    "resolution": "numéro"
+    "resolution": "numéro",
+    "fichier_id": "1yqhyPMj9uBq1awmqTwUhisuBJBpY5kt-",
+    "fichier_titre": "Création et modifications de la carte du restaurant.mp4",
+    "url_fichier": "https://drive.google.com/file/d/1yqhyPMj9uBq1awmqTwUhisuBJBpY5kt-/view",
+    "video": true
   },
   "EP033": {
     "module": "StockVision",
@@ -261,7 +368,11 @@
     "chapitre_drive": "16- Stock - Mouvements de stock",
     "folder": "1DvhP8VJ6MFa2Zokkwgkdx_BUm7WUbIMp",
     "url": "https://drive.google.com/drive/folders/1DvhP8VJ6MFa2Zokkwgkdx_BUm7WUbIMp",
-    "resolution": "numéro"
+    "resolution": "numéro",
+    "fichier_id": "124mIM7NudoQy5wun_rlSZ6MCrJ2wNykL",
+    "fichier_titre": "Mouvements de stock, Détails, Supprimer.mp4",
+    "url_fichier": "https://drive.google.com/file/d/124mIM7NudoQy5wun_rlSZ6MCrJ2wNykL/view",
+    "video": true
   },
   "EP034": {
     "module": "Configuration",
@@ -269,7 +380,8 @@
     "chapitre_drive": null,
     "folder": "19xTrrkXtWO3yfJqtC3SIlDgpBjSEc4N9",
     "url": "https://drive.google.com/drive/folders/19xTrrkXtWO3yfJqtC3SIlDgpBjSEc4N9",
-    "resolution": "à confirmer — dossier module"
+    "resolution": "à confirmer — dossier module",
+    "video": false
   },
   "EP035": {
     "module": "PrediBot",
@@ -277,7 +389,11 @@
     "chapitre_drive": "1 - LIRE SES PRÉVISIONS",
     "folder": "19KbPaohx3zwWwsG4Ud3KfJU9WlqeqIoE",
     "url": "https://drive.google.com/drive/folders/19KbPaohx3zwWwsG4Ud3KfJU9WlqeqIoE",
-    "resolution": "numéro"
+    "resolution": "numéro",
+    "fichier_id": "1MWkfZ-OZ_qv2z6QD9VPwabO5XnGd5UaB",
+    "fichier_titre": "lire ses prévisions predibot.mp4",
+    "url_fichier": "https://drive.google.com/file/d/1MWkfZ-OZ_qv2z6QD9VPwabO5XnGd5UaB/view",
+    "video": true
   },
   "EP036": {
     "module": "PrediBot",
@@ -285,7 +401,11 @@
     "chapitre_drive": "2 - MARKETPLACE DE PROMPTS",
     "folder": "1RYZ8XwLFAfblkQTaotx4OBWbeGn9FHzR",
     "url": "https://drive.google.com/drive/folders/1RYZ8XwLFAfblkQTaotx4OBWbeGn9FHzR",
-    "resolution": "numéro"
+    "resolution": "numéro",
+    "fichier_id": "16kN9JwGuVugkCtjQ93OObZ2tAlmsbgZl",
+    "fichier_titre": "video-2 piocher dans la marketplace de prompts.mp4",
+    "url_fichier": "https://drive.google.com/file/d/16kN9JwGuVugkCtjQ93OObZ2tAlmsbgZl/view",
+    "video": true
   },
   "EP037": {
     "module": "Équipe & Planning",
@@ -293,7 +413,11 @@
     "chapitre_drive": "6-Planning par employé ou par poste",
     "folder": "1sLZB_zcuk_uL3BpFvj63LdU2W_7oKU-X",
     "url": "https://drive.google.com/drive/folders/1sLZB_zcuk_uL3BpFvj63LdU2W_7oKU-X",
-    "resolution": "correspondance manuelle"
+    "resolution": "correspondance manuelle",
+    "fichier_id": "174AfDA9zywpeMof070Mc33_doWgDcsp5",
+    "fichier_titre": "Affichages et impression du planning Équipe.mp4",
+    "url_fichier": "https://drive.google.com/file/d/174AfDA9zywpeMof070Mc33_doWgDcsp5/view",
+    "video": true
   },
   "EP038": {
     "module": "StockVision",
@@ -301,7 +425,11 @@
     "chapitre_drive": "4- Liste des courses - Ajouter, modifier",
     "folder": "1wOLOfH054cLrfHRx_GmGlKxrfW10cHhb",
     "url": "https://drive.google.com/drive/folders/1wOLOfH054cLrfHRx_GmGlKxrfW10cHhb",
-    "resolution": "numéro"
+    "resolution": "numéro",
+    "fichier_id": "17wdt0v2xgwuoollWJSO7QcDMexXMCK9H",
+    "fichier_titre": "Ajouter, Modifier, Supprimer ma liste de courses et modifier la quantité.mp4",
+    "url_fichier": "https://drive.google.com/file/d/17wdt0v2xgwuoollWJSO7QcDMexXMCK9H/view",
+    "video": true
   },
   "EP039": {
     "module": "Réservation",
@@ -309,7 +437,11 @@
     "chapitre_drive": "3 - GÉRER & NO-SHOWS",
     "folder": "11I5195HrUUPsZVqectjWhfM9f-EEo1y5",
     "url": "https://drive.google.com/drive/folders/11I5195HrUUPsZVqectjWhfM9f-EEo1y5",
-    "resolution": "numéro"
+    "resolution": "numéro",
+    "fichier_id": "1DZKefLYV1_F9_uL-sJ79fb5srfGnROBp",
+    "fichier_titre": "Modifier, Supprimer, Nowshow sur une réservation.mp4",
+    "url_fichier": "https://drive.google.com/file/d/1DZKefLYV1_F9_uL-sJ79fb5srfGnROBp/view",
+    "video": true
   },
   "EP040": {
     "module": "StockVision",
@@ -317,7 +449,11 @@
     "chapitre_drive": "17- Stock - Ajouter et modifier un mouvement",
     "folder": "1TEPT2xy-s0P_l3ghbupKLWuPa4J6DVra",
     "url": "https://drive.google.com/drive/folders/1TEPT2xy-s0P_l3ghbupKLWuPa4J6DVra",
-    "resolution": "numéro"
+    "resolution": "numéro",
+    "fichier_id": "1xxxr8zsy8ZvK7NCizf1F9q8W3u48Npgt",
+    "fichier_titre": "Ajoute et modifier un mouvement.mp4",
+    "url_fichier": "https://drive.google.com/file/d/1xxxr8zsy8ZvK7NCizf1F9q8W3u48Npgt/view",
+    "video": true
   },
   "EP041": {
     "module": "StockVision",
@@ -325,7 +461,11 @@
     "chapitre_drive": "15- Production - Sortie des ingrédients",
     "folder": "1R39Whn8WiAr8zxH7Yb1Ive7L2FMxYvvx",
     "url": "https://drive.google.com/drive/folders/1R39Whn8WiAr8zxH7Yb1Ive7L2FMxYvvx",
-    "resolution": "numéro"
+    "resolution": "numéro",
+    "fichier_id": "15a_HkRxFA6AobiCgyHhXpl9sCM4mQdiC",
+    "fichier_titre": "Sortie des ingrédients du stock de la production.mp4",
+    "url_fichier": "https://drive.google.com/file/d/15a_HkRxFA6AobiCgyHhXpl9sCM4mQdiC/view",
+    "video": true
   },
   "EP042": {
     "module": "Marketing",
@@ -333,7 +473,8 @@
     "chapitre_drive": "21 - MCP RAPIDOCMS + IRIS",
     "folder": "151n4TXZAZrkPpDC_FBJrSw-6eto3l8al",
     "url": "https://drive.google.com/drive/folders/151n4TXZAZrkPpDC_FBJrSw-6eto3l8al",
-    "resolution": "numéro"
+    "resolution": "numéro",
+    "video": false
   },
   "EP043": {
     "module": "Caisse POS",
@@ -341,7 +482,8 @@
     "chapitre_drive": "4 - APPLIQUER UNE REMISE ET AVOIRS",
     "folder": "18GcdgyGAX_u3kEzXatVqew0t9VvTFqAQ",
     "url": "https://drive.google.com/drive/folders/18GcdgyGAX_u3kEzXatVqew0t9VvTFqAQ",
-    "resolution": "numéro"
+    "resolution": "numéro",
+    "video": false
   },
   "EP044": {
     "module": "Réservation",
@@ -349,7 +491,11 @@
     "chapitre_drive": "5 - COMMANDER PAR QR CODE",
     "folder": "1z8q4btyT2yAqNIenhuvwtssyCvK2Qk9S",
     "url": "https://drive.google.com/drive/folders/1z8q4btyT2yAqNIenhuvwtssyCvK2Qk9S",
-    "resolution": "numéro"
+    "resolution": "numéro",
+    "fichier_id": "1rTMXZj_uLAVaGPjxBT-ncZ4hcTU8UetZ",
+    "fichier_titre": "scanner le qrcode de la table pour réaliser une commande.mp4",
+    "url_fichier": "https://drive.google.com/file/d/1rTMXZj_uLAVaGPjxBT-ncZ4hcTU8UetZ/view",
+    "video": true
   },
   "EP045": {
     "module": "StockVision",
@@ -357,7 +503,11 @@
     "chapitre_drive": "18- Statistiques par module",
     "folder": "1e7LZCLhyA2ANmednWevCt7-AreosC4Yw",
     "url": "https://drive.google.com/drive/folders/1e7LZCLhyA2ANmednWevCt7-AreosC4Yw",
-    "resolution": "numéro"
+    "resolution": "numéro",
+    "fichier_id": "13BlvDmhkU0IsKHXo77VHM7TwMSHKHmpv",
+    "fichier_titre": "Statistique et performances par Module.mp4",
+    "url_fichier": "https://drive.google.com/file/d/13BlvDmhkU0IsKHXo77VHM7TwMSHKHmpv/view",
+    "video": true
   },
   "EP046": {
     "module": "StockVision",
@@ -365,7 +515,11 @@
     "chapitre_drive": "20- Statistiques - Agent IA et suggestions",
     "folder": "1QJDmtxJcqBCKRegKngmvvxAD_4q_8V57",
     "url": "https://drive.google.com/drive/folders/1QJDmtxJcqBCKRegKngmvvxAD_4q_8V57",
-    "resolution": "numéro"
+    "resolution": "numéro",
+    "fichier_id": "1pmXqNyUyZnwszglIDsXeFXtGiA0HDZm9",
+    "fichier_titre": "Agent ia et suggestion.mp4",
+    "url_fichier": "https://drive.google.com/file/d/1pmXqNyUyZnwszglIDsXeFXtGiA0HDZm9/view",
+    "video": true
   },
   "EP047": {
     "module": "HACCP",
@@ -373,7 +527,11 @@
     "chapitre_drive": "25-Contrôle à réception",
     "folder": "1gZmtvcVR5A6PnBuwf01gFFDioWJ5EQ_V",
     "url": "https://drive.google.com/drive/folders/1gZmtvcVR5A6PnBuwf01gFFDioWJ5EQ_V",
-    "resolution": "texte 0.93"
+    "resolution": "texte 0.93",
+    "fichier_id": "1JkMe74c9n4TFjeRRJ7pSpSQoB6bP2jEf",
+    "fichier_titre": "Contrôle a réception de vos livraison.mp4",
+    "url_fichier": "https://drive.google.com/file/d/1JkMe74c9n4TFjeRRJ7pSpSQoB6bP2jEf/view",
+    "video": true
   },
   "EP048": {
     "module": "Configuration",
@@ -381,7 +539,11 @@
     "chapitre_drive": "1 - Monter votre boutique",
     "folder": "1xCJAtFHgNO8DwcZ_Im4VgV_EqX0yV0Vf",
     "url": "https://drive.google.com/drive/folders/1xCJAtFHgNO8DwcZ_Im4VgV_EqX0yV0Vf",
-    "resolution": "correspondance manuelle"
+    "resolution": "correspondance manuelle",
+    "fichier_id": "1hp7mZd-tQliPUemhyIKHWMl9xUgKHwoq",
+    "fichier_titre": "Création d'une boutique.mp4",
+    "url_fichier": "https://drive.google.com/file/d/1hp7mZd-tQliPUemhyIKHWMl9xUgKHwoq/view",
+    "video": true
   },
   "EP049": {
     "module": "HACCP",
@@ -389,7 +551,11 @@
     "chapitre_drive": "3-Enregistrer une température",
     "folder": "1ohzkWaC6hB6wEa2ow1gOtoLWz_zjd5_O",
     "url": "https://drive.google.com/drive/folders/1ohzkWaC6hB6wEa2ow1gOtoLWz_zjd5_O",
-    "resolution": "texte 0.68"
+    "resolution": "texte 0.68",
+    "fichier_id": "14OmsNUd3EMgWNxGVvmOwLgR3ZloWKNKW",
+    "fichier_titre": "Enregistré une température.mp4",
+    "url_fichier": "https://drive.google.com/file/d/14OmsNUd3EMgWNxGVvmOwLgR3ZloWKNKW/view",
+    "video": true
   },
   "EP050": {
     "module": "HACCP",
@@ -397,7 +563,11 @@
     "chapitre_drive": "2-Ajouter un équipement",
     "folder": "1WQDVmCZUct__2ovbFBELmewN_Vp-GkHw",
     "url": "https://drive.google.com/drive/folders/1WQDVmCZUct__2ovbFBELmewN_Vp-GkHw",
-    "resolution": "texte 0.59"
+    "resolution": "texte 0.59",
+    "fichier_id": "1FoFUKA32NsE78xp_YxFfvwKL_d3Qzi1x",
+    "fichier_titre": "Ajouter, Supprimer, Modifier un équipement.mp4",
+    "url_fichier": "https://drive.google.com/file/d/1FoFUKA32NsE78xp_YxFfvwKL_d3Qzi1x/view",
+    "video": true
   },
   "EP051": {
     "module": "HACCP",
@@ -405,7 +575,11 @@
     "chapitre_drive": "15-Créer les étiquettes de production",
     "folder": "1LP5M_d-WFsTZCb1ddBTNlTGfUQhEzO76",
     "url": "https://drive.google.com/drive/folders/1LP5M_d-WFsTZCb1ddBTNlTGfUQhEzO76",
-    "resolution": "texte 0.51"
+    "resolution": "texte 0.51",
+    "fichier_id": "1Cb7c55HN3pKh7zD7LlozCdVIzl85ux6M",
+    "fichier_titre": "Créer les étiquettes de vos production.mp4",
+    "url_fichier": "https://drive.google.com/file/d/1Cb7c55HN3pKh7zD7LlozCdVIzl85ux6M/view",
+    "video": true
   },
   "EP052": {
     "module": "HACCP",
@@ -413,7 +587,11 @@
     "chapitre_drive": "8-Traçabilité complète",
     "folder": "1KjJgNDZmrf1NR_6aihWwN9Q77UaHp2Yk",
     "url": "https://drive.google.com/drive/folders/1KjJgNDZmrf1NR_6aihWwN9Q77UaHp2Yk",
-    "resolution": "texte 0.67"
+    "resolution": "texte 0.67",
+    "fichier_id": "1qwwJNILNZv3EpqCowlCFUhxeC_2qyZgm",
+    "fichier_titre": "Créer une traçabilité complète synchroniser avec vos produits.mp4",
+    "url_fichier": "https://drive.google.com/file/d/1qwwJNILNZv3EpqCowlCFUhxeC_2qyZgm/view",
+    "video": true
   },
   "EP053": {
     "module": "HACCP",
@@ -421,7 +599,11 @@
     "chapitre_drive": "25-Contrôle à réception",
     "folder": "1gZmtvcVR5A6PnBuwf01gFFDioWJ5EQ_V",
     "url": "https://drive.google.com/drive/folders/1gZmtvcVR5A6PnBuwf01gFFDioWJ5EQ_V",
-    "resolution": "correspondance manuelle"
+    "resolution": "correspondance manuelle",
+    "fichier_id": "1JkMe74c9n4TFjeRRJ7pSpSQoB6bP2jEf",
+    "fichier_titre": "Contrôle a réception de vos livraison.mp4",
+    "url_fichier": "https://drive.google.com/file/d/1JkMe74c9n4TFjeRRJ7pSpSQoB6bP2jEf/view",
+    "video": true
   },
   "EP054": {
     "module": "HACCP",
@@ -429,7 +611,11 @@
     "chapitre_drive": "11-Éditer le plan de nettoyage",
     "folder": "19-6NubgRphdSbQ3C2HNN3KmWavmfKUvO",
     "url": "https://drive.google.com/drive/folders/19-6NubgRphdSbQ3C2HNN3KmWavmfKUvO",
-    "resolution": "texte 0.72"
+    "resolution": "texte 0.72",
+    "fichier_id": "1GPF2hFYK3Ds91avjyrG1z7dZDMbFggI6",
+    "fichier_titre": "Éditer votre plan de nettoyage chaque jours avec les actions de votre équipe.mp4",
+    "url_fichier": "https://drive.google.com/file/d/1GPF2hFYK3Ds91avjyrG1z7dZDMbFggI6/view",
+    "video": true
   },
   "EP055": {
     "module": "HACCP",
@@ -437,7 +623,11 @@
     "chapitre_drive": "22-Créer une check-list hygiène",
     "folder": "15CwOKunwpcys81_j-rwf0W2bLfghvsXv",
     "url": "https://drive.google.com/drive/folders/15CwOKunwpcys81_j-rwf0W2bLfghvsXv",
-    "resolution": "texte 0.69"
+    "resolution": "texte 0.69",
+    "fichier_id": "1BiubjVB2WUaP8COM9a9V6_DMWNc1ltvh",
+    "fichier_titre": "Créer une check liste hygiène.mp4",
+    "url_fichier": "https://drive.google.com/file/d/1BiubjVB2WUaP8COM9a9V6_DMWNc1ltvh/view",
+    "video": true
   },
   "EP056": {
     "module": "HACCP",
@@ -445,7 +635,11 @@
     "chapitre_drive": "1-Accueil et Historique",
     "folder": "14eutFL8vuT8ImEadyltp1UBs15KWmEZ_",
     "url": "https://drive.google.com/drive/folders/14eutFL8vuT8ImEadyltp1UBs15KWmEZ_",
-    "resolution": "texte 0.61"
+    "resolution": "texte 0.61",
+    "fichier_id": "1jXUousFn16eOB60LdGPObwwlic2VD5Ic",
+    "fichier_titre": "Accueil et Historique.mp4",
+    "url_fichier": "https://drive.google.com/file/d/1jXUousFn16eOB60LdGPObwwlic2VD5Ic/view",
+    "video": true
   },
   "EP057": {
     "module": "HACCP",
@@ -453,7 +647,11 @@
     "chapitre_drive": "3-Enregistrer une température",
     "folder": "1ohzkWaC6hB6wEa2ow1gOtoLWz_zjd5_O",
     "url": "https://drive.google.com/drive/folders/1ohzkWaC6hB6wEa2ow1gOtoLWz_zjd5_O",
-    "resolution": "correspondance manuelle"
+    "resolution": "correspondance manuelle",
+    "fichier_id": "14OmsNUd3EMgWNxGVvmOwLgR3ZloWKNKW",
+    "fichier_titre": "Enregistré une température.mp4",
+    "url_fichier": "https://drive.google.com/file/d/14OmsNUd3EMgWNxGVvmOwLgR3ZloWKNKW/view",
+    "video": true
   },
   "EP058": {
     "module": "HACCP",
@@ -461,7 +659,8 @@
     "chapitre_drive": null,
     "folder": "10rqzHFjXbjkGi73uJyjt3XQM92eaIMK_",
     "url": "https://drive.google.com/drive/folders/10rqzHFjXbjkGi73uJyjt3XQM92eaIMK_",
-    "resolution": "à confirmer — dossier module"
+    "resolution": "à confirmer — dossier module",
+    "video": false
   },
   "EP059": {
     "module": "HACCP",
@@ -469,7 +668,11 @@
     "chapitre_drive": "23-Contrôles de conformité",
     "folder": "14aDxJMZU_ZnneMXrv0ucr2B1cpKJnAWl",
     "url": "https://drive.google.com/drive/folders/14aDxJMZU_ZnneMXrv0ucr2B1cpKJnAWl",
-    "resolution": "texte 0.65"
+    "resolution": "texte 0.65",
+    "fichier_id": "1Typp5DHDNQO1RErN8flaUywe9yS3HBme",
+    "fichier_titre": "Realise des contrôles de conformité grâce au check liste hygiène.mp4",
+    "url_fichier": "https://drive.google.com/file/d/1Typp5DHDNQO1RErN8flaUywe9yS3HBme/view",
+    "video": true
   },
   "EP060": {
     "module": "HACCP",
@@ -477,7 +680,11 @@
     "chapitre_drive": "25-Contrôle à réception",
     "folder": "1gZmtvcVR5A6PnBuwf01gFFDioWJ5EQ_V",
     "url": "https://drive.google.com/drive/folders/1gZmtvcVR5A6PnBuwf01gFFDioWJ5EQ_V",
-    "resolution": "texte 0.53"
+    "resolution": "texte 0.53",
+    "fichier_id": "1JkMe74c9n4TFjeRRJ7pSpSQoB6bP2jEf",
+    "fichier_titre": "Contrôle a réception de vos livraison.mp4",
+    "url_fichier": "https://drive.google.com/file/d/1JkMe74c9n4TFjeRRJ7pSpSQoB6bP2jEf/view",
+    "video": true
   },
   "EP061": {
     "module": "HACCP",
@@ -485,7 +692,11 @@
     "chapitre_drive": "30-Exporter l'historique HACCP",
     "folder": "1zW01WAMfEsT4x62i4D1nwm4BCb3cYM_e",
     "url": "https://drive.google.com/drive/folders/1zW01WAMfEsT4x62i4D1nwm4BCb3cYM_e",
-    "resolution": "texte 0.47"
+    "resolution": "texte 0.47",
+    "fichier_id": "1Sdqt1w99LFbrJP2RpqbPSRahwZGHcPC2",
+    "fichier_titre": "Retrouver et exporté les Historique du module HACCP.mp4",
+    "url_fichier": "https://drive.google.com/file/d/1Sdqt1w99LFbrJP2RpqbPSRahwZGHcPC2/view",
+    "video": true
   },
   "EP062": {
     "module": "HACCP",
@@ -493,7 +704,8 @@
     "chapitre_drive": null,
     "folder": "10rqzHFjXbjkGi73uJyjt3XQM92eaIMK_",
     "url": "https://drive.google.com/drive/folders/10rqzHFjXbjkGi73uJyjt3XQM92eaIMK_",
-    "resolution": "à confirmer — dossier module"
+    "resolution": "à confirmer — dossier module",
+    "video": false
   },
   "EP063": {
     "module": "Équipe & Planning",
@@ -501,7 +713,11 @@
     "chapitre_drive": "4-Horaires d'un employé",
     "folder": "1LH1Yc5W_TjOZlRh3yalK5FGLesAKKNA4",
     "url": "https://drive.google.com/drive/folders/1LH1Yc5W_TjOZlRh3yalK5FGLesAKKNA4",
-    "resolution": "texte 0.67"
+    "resolution": "texte 0.67",
+    "fichier_id": "1Bhu8KC2mW5P9Gr1qSEVxiNvYoHbUTLCX",
+    "fichier_titre": "Configuration et modifications des horaires d'un employé.mp4",
+    "url_fichier": "https://drive.google.com/file/d/1Bhu8KC2mW5P9Gr1qSEVxiNvYoHbUTLCX/view",
+    "video": true
   },
   "EP064": {
     "module": "Équipe & Planning",
@@ -509,7 +725,11 @@
     "chapitre_drive": "16-Planning et tâches de l'employé",
     "folder": "1IRoEhrDK6gE4PqPwSDmhXOP7XjjFi6xq",
     "url": "https://drive.google.com/drive/folders/1IRoEhrDK6gE4PqPwSDmhXOP7XjjFi6xq",
-    "resolution": "texte 0.52"
+    "resolution": "texte 0.52",
+    "fichier_id": "1CdAnJgR_iq1ESyAgcCCpFjnCfYzaUhIR",
+    "fichier_titre": "video-16 Affichages du planning de l'employé et de ces tâches.mp4",
+    "url_fichier": "https://drive.google.com/file/d/1CdAnJgR_iq1ESyAgcCCpFjnCfYzaUhIR/view",
+    "video": true
   },
   "EP065": {
     "module": "Équipe & Planning",
@@ -517,7 +737,11 @@
     "chapitre_drive": "12-Historique des pointages",
     "folder": "165Pq4ZXw8IGWVge3kACbiiLJ162oDYij",
     "url": "https://drive.google.com/drive/folders/165Pq4ZXw8IGWVge3kACbiiLJ162oDYij",
-    "resolution": "texte 0.50"
+    "resolution": "texte 0.50",
+    "fichier_id": "1J1Q1Tv2kx9RCiiW6m5SiSh6psnrjtLMb",
+    "fichier_titre": "Historique des pointage des employés.mp4",
+    "url_fichier": "https://drive.google.com/file/d/1J1Q1Tv2kx9RCiiW6m5SiSh6psnrjtLMb/view",
+    "video": true
   },
   "EP066": {
     "module": "Équipe & Planning",
@@ -525,7 +749,11 @@
     "chapitre_drive": "17-Demande d'absence ou de congé",
     "folder": "1Y_WxNxLa301L_2rhVS2zjpi2CqqrS5iw",
     "url": "https://drive.google.com/drive/folders/1Y_WxNxLa301L_2rhVS2zjpi2CqqrS5iw",
-    "resolution": "correspondance manuelle"
+    "resolution": "correspondance manuelle",
+    "fichier_id": "1gY1t4M0AUXTI54sCrB22r7yeiCDe3W35",
+    "fichier_titre": "video-17 Demande d'absence ou de congé de l'employé.mp4",
+    "url_fichier": "https://drive.google.com/file/d/1gY1t4M0AUXTI54sCrB22r7yeiCDe3W35/view",
+    "video": true
   },
   "EP067": {
     "module": "Équipe & Planning",
@@ -533,7 +761,11 @@
     "chapitre_drive": "3-Salaire et contrat",
     "folder": "1KduEmNhweEXZBv2CJ6nUr6rwNnkx3k6F",
     "url": "https://drive.google.com/drive/folders/1KduEmNhweEXZBv2CJ6nUr6rwNnkx3k6F",
-    "resolution": "texte 0.50"
+    "resolution": "texte 0.50",
+    "fichier_id": "1nbIsc-SROPwONiTIm1BuLpYuNSSTTHm7",
+    "fichier_titre": "Configuration et modifications, salaire, Contrat.mp4",
+    "url_fichier": "https://drive.google.com/file/d/1nbIsc-SROPwONiTIm1BuLpYuNSSTTHm7/view",
+    "video": true
   },
   "EP068": {
     "module": "Équipe & Planning",
@@ -541,7 +773,11 @@
     "chapitre_drive": "6-Planning par employé ou par poste",
     "folder": "1sLZB_zcuk_uL3BpFvj63LdU2W_7oKU-X",
     "url": "https://drive.google.com/drive/folders/1sLZB_zcuk_uL3BpFvj63LdU2W_7oKU-X",
-    "resolution": "correspondance manuelle"
+    "resolution": "correspondance manuelle",
+    "fichier_id": "174AfDA9zywpeMof070Mc33_doWgDcsp5",
+    "fichier_titre": "Affichages et impression du planning Équipe.mp4",
+    "url_fichier": "https://drive.google.com/file/d/174AfDA9zywpeMof070Mc33_doWgDcsp5/view",
+    "video": true
   },
   "EP069": {
     "module": "Équipe & Planning",
@@ -549,7 +785,8 @@
     "chapitre_drive": null,
     "folder": "1wboT7bVjEwxbhpU9Xgz8sRjjqn9XEd7X",
     "url": "https://drive.google.com/drive/folders/1wboT7bVjEwxbhpU9Xgz8sRjjqn9XEd7X",
-    "resolution": "à confirmer — dossier module"
+    "resolution": "à confirmer — dossier module",
+    "video": false
   },
   "EP070": {
     "module": "Équipe & Planning",
@@ -557,7 +794,11 @@
     "chapitre_drive": "2-Configuration des employés",
     "folder": "1GYwVOPg4veg-cFhZh_rxhvWmwOFy_4mB",
     "url": "https://drive.google.com/drive/folders/1GYwVOPg4veg-cFhZh_rxhvWmwOFy_4mB",
-    "resolution": "correspondance manuelle"
+    "resolution": "correspondance manuelle",
+    "fichier_id": "13w9aRHXfQFkxF3UvqtaLczqKPN5rr7E0",
+    "fichier_titre": "Configuration des employés.mp4",
+    "url_fichier": "https://drive.google.com/file/d/13w9aRHXfQFkxF3UvqtaLczqKPN5rr7E0/view",
+    "video": true
   },
   "EP071": {
     "module": "Équipe & Planning",
@@ -565,7 +806,11 @@
     "chapitre_drive": "6-Planning par employé ou par poste",
     "folder": "1sLZB_zcuk_uL3BpFvj63LdU2W_7oKU-X",
     "url": "https://drive.google.com/drive/folders/1sLZB_zcuk_uL3BpFvj63LdU2W_7oKU-X",
-    "resolution": "correspondance manuelle"
+    "resolution": "correspondance manuelle",
+    "fichier_id": "174AfDA9zywpeMof070Mc33_doWgDcsp5",
+    "fichier_titre": "Affichages et impression du planning Équipe.mp4",
+    "url_fichier": "https://drive.google.com/file/d/174AfDA9zywpeMof070Mc33_doWgDcsp5/view",
+    "video": true
   },
   "EP072": {
     "module": "Équipe & Planning",
@@ -573,7 +818,11 @@
     "chapitre_drive": "17-Demande d'absence ou de congé",
     "folder": "1Y_WxNxLa301L_2rhVS2zjpi2CqqrS5iw",
     "url": "https://drive.google.com/drive/folders/1Y_WxNxLa301L_2rhVS2zjpi2CqqrS5iw",
-    "resolution": "correspondance manuelle"
+    "resolution": "correspondance manuelle",
+    "fichier_id": "1gY1t4M0AUXTI54sCrB22r7yeiCDe3W35",
+    "fichier_titre": "video-17 Demande d'absence ou de congé de l'employé.mp4",
+    "url_fichier": "https://drive.google.com/file/d/1gY1t4M0AUXTI54sCrB22r7yeiCDe3W35/view",
+    "video": true
   },
   "EP073": {
     "module": "Configuration",
@@ -581,7 +830,11 @@
     "chapitre_drive": "3 - Profil entreprise",
     "folder": "1PVGsQbmoDU3_qmv3NFnx_zSovCNaxWjA",
     "url": "https://drive.google.com/drive/folders/1PVGsQbmoDU3_qmv3NFnx_zSovCNaxWjA",
-    "resolution": "correspondance manuelle"
+    "resolution": "correspondance manuelle",
+    "fichier_id": "1gB8THFEj2zZuPj7UPJ99yXb9yRXsdPwi",
+    "fichier_titre": "Configuration de son profil entreprise.mp4",
+    "url_fichier": "https://drive.google.com/file/d/1gB8THFEj2zZuPj7UPJ99yXb9yRXsdPwi/view",
+    "video": true
   },
   "EP074": {
     "module": "Configuration",
@@ -589,7 +842,11 @@
     "chapitre_drive": "7 - Vos catégories",
     "folder": "1l4i6EF6MJikoXuL4vKDglHiwunFS0WT9",
     "url": "https://drive.google.com/drive/folders/1l4i6EF6MJikoXuL4vKDglHiwunFS0WT9",
-    "resolution": "texte 0.71"
+    "resolution": "texte 0.71",
+    "fichier_id": "17ZDwHrTaTvQmiCmTYBwZnnJo_OLrXzyo",
+    "fichier_titre": "Création de ces catégories.mp4",
+    "url_fichier": "https://drive.google.com/file/d/17ZDwHrTaTvQmiCmTYBwZnnJo_OLrXzyo/view",
+    "video": true
   },
   "EP075": {
     "module": "Configuration",
@@ -597,7 +854,11 @@
     "chapitre_drive": "4 - Vos taux de TVA",
     "folder": "1lIal8J0XjvMrxQ7a3Hb3eZi93GwH8XsX",
     "url": "https://drive.google.com/drive/folders/1lIal8J0XjvMrxQ7a3Hb3eZi93GwH8XsX",
-    "resolution": "correspondance manuelle"
+    "resolution": "correspondance manuelle",
+    "fichier_id": "1_cZ3_hXyP6JA3IdvyXCg9AT0bTprgi5P",
+    "fichier_titre": "Création des TVA de son entreprise.mp4",
+    "url_fichier": "https://drive.google.com/file/d/1_cZ3_hXyP6JA3IdvyXCg9AT0bTprgi5P/view",
+    "video": true
   },
   "EP076": {
     "module": "Configuration",
@@ -605,7 +866,11 @@
     "chapitre_drive": "11 - Recettes et étapes",
     "folder": "1Y-vOFdJvRgFuder7nb8GHK2AIlM2es10",
     "url": "https://drive.google.com/drive/folders/1Y-vOFdJvRgFuder7nb8GHK2AIlM2es10",
-    "resolution": "texte 0.53"
+    "resolution": "texte 0.53",
+    "fichier_id": "1tmPsD8uYQ5KAWQ1aVBqta0OAq7FpOMWC",
+    "fichier_titre": "Configuration de ces recette et étape recette.mp4",
+    "url_fichier": "https://drive.google.com/file/d/1tmPsD8uYQ5KAWQ1aVBqta0OAq7FpOMWC/view",
+    "video": true
   },
   "EP077": {
     "module": "Configuration",
@@ -613,7 +878,8 @@
     "chapitre_drive": null,
     "folder": "19xTrrkXtWO3yfJqtC3SIlDgpBjSEc4N9",
     "url": "https://drive.google.com/drive/folders/19xTrrkXtWO3yfJqtC3SIlDgpBjSEc4N9",
-    "resolution": "à confirmer — dossier module"
+    "resolution": "à confirmer — dossier module",
+    "video": false
   },
   "EP078": {
     "module": "Configuration",
@@ -621,7 +887,8 @@
     "chapitre_drive": null,
     "folder": "19xTrrkXtWO3yfJqtC3SIlDgpBjSEc4N9",
     "url": "https://drive.google.com/drive/folders/19xTrrkXtWO3yfJqtC3SIlDgpBjSEc4N9",
-    "resolution": "à confirmer — dossier module"
+    "resolution": "à confirmer — dossier module",
+    "video": false
   },
   "EP079": {
     "module": "Configuration",
@@ -629,7 +896,8 @@
     "chapitre_drive": null,
     "folder": "19xTrrkXtWO3yfJqtC3SIlDgpBjSEc4N9",
     "url": "https://drive.google.com/drive/folders/19xTrrkXtWO3yfJqtC3SIlDgpBjSEc4N9",
-    "resolution": "à confirmer — dossier module"
+    "resolution": "à confirmer — dossier module",
+    "video": false
   },
   "EP080": {
     "module": "Configuration",
@@ -637,7 +905,11 @@
     "chapitre_drive": "2 - Choisir votre abonnement",
     "folder": "1VpbJkqpt9ckLSWXPbLyS6miIHYwU29d3",
     "url": "https://drive.google.com/drive/folders/1VpbJkqpt9ckLSWXPbLyS6miIHYwU29d3",
-    "resolution": "texte 0.53"
+    "resolution": "texte 0.53",
+    "fichier_id": "1k2HJJNz5jMR0jbV-Sr-u_p-ZGdWBmspG",
+    "fichier_titre": "Choix de son abonnement.mp4",
+    "url_fichier": "https://drive.google.com/file/d/1k2HJJNz5jMR0jbV-Sr-u_p-ZGdWBmspG/view",
+    "video": true
   },
   "EP081": {
     "module": "Comptabilité",
@@ -645,7 +917,11 @@
     "chapitre_drive": "5- Créer une facture",
     "folder": "1026gmGm615P9PAOfk4CUGaxRava0Nm6k",
     "url": "https://drive.google.com/drive/folders/1026gmGm615P9PAOfk4CUGaxRava0Nm6k",
-    "resolution": "texte 0.50"
+    "resolution": "texte 0.50",
+    "fichier_id": "1bN_o6_HYz9Za1kGyIst6INWrJJz9MagE",
+    "fichier_titre": "Créer une facture.mp4",
+    "url_fichier": "https://drive.google.com/file/d/1bN_o6_HYz9Za1kGyIst6INWrJJz9MagE/view",
+    "video": true
   },
   "EP082": {
     "module": "Comptabilité",
@@ -653,7 +929,11 @@
     "chapitre_drive": "3- Créer un devis",
     "folder": "1vEqEBl6EYPfsXAsDkHKMKjMCFs845eQH",
     "url": "https://drive.google.com/drive/folders/1vEqEBl6EYPfsXAsDkHKMKjMCFs845eQH",
-    "resolution": "texte 0.45"
+    "resolution": "texte 0.45",
+    "fichier_id": "1LRxi9R1Sbj1sQ0Cg4RZhpE_cxZHygksu",
+    "fichier_titre": "Créer un devis.mp4",
+    "url_fichier": "https://drive.google.com/file/d/1LRxi9R1Sbj1sQ0Cg4RZhpE_cxZHygksu/view",
+    "video": true
   },
   "EP083": {
     "module": "Comptabilité",
@@ -661,7 +941,11 @@
     "chapitre_drive": "6- Statuts d'une facture",
     "folder": "1qWdK1lFjjCML6JADIDzpU1C2Z9-c6KTa",
     "url": "https://drive.google.com/drive/folders/1qWdK1lFjjCML6JADIDzpU1C2Z9-c6KTa",
-    "resolution": "correspondance manuelle"
+    "resolution": "correspondance manuelle",
+    "fichier_id": "1sEyZker3x2-dybI2fKHlLjFv1gGig62-",
+    "fichier_titre": "Changer les statuts d'une facture.mp4",
+    "url_fichier": "https://drive.google.com/file/d/1sEyZker3x2-dybI2fKHlLjFv1gGig62-/view",
+    "video": true
   },
   "EP084": {
     "module": "Comptabilité",
@@ -669,7 +953,11 @@
     "chapitre_drive": "8- Archivage des dépenses",
     "folder": "1LKE7TtSjPJRnWVF_4-Tt89KmnudV-dcY",
     "url": "https://drive.google.com/drive/folders/1LKE7TtSjPJRnWVF_4-Tt89KmnudV-dcY",
-    "resolution": "texte 0.48"
+    "resolution": "texte 0.48",
+    "fichier_id": "13gsBIjozDhLKJBi0uOwqIE3ShA_V7d3R",
+    "fichier_titre": "Archivage de mes dépenses et connexion au livraisons.mp4",
+    "url_fichier": "https://drive.google.com/file/d/13gsBIjozDhLKJBi0uOwqIE3ShA_V7d3R/view",
+    "video": true
   },
   "EP085": {
     "module": "Comptabilité",
@@ -677,7 +965,11 @@
     "chapitre_drive": "9- E-reporting et archivage des factures",
     "folder": "1uGc7EccEyaH6I157DL4UxrbQK90IiC3Y",
     "url": "https://drive.google.com/drive/folders/1uGc7EccEyaH6I157DL4UxrbQK90IiC3Y",
-    "resolution": "correspondance manuelle"
+    "resolution": "correspondance manuelle",
+    "fichier_id": "1v1VoM-qg4mhn3XkvtlLeyYJYy2aDMzEK",
+    "fichier_titre": "E-reporting et archivage des factures.mp4",
+    "url_fichier": "https://drive.google.com/file/d/1v1VoM-qg4mhn3XkvtlLeyYJYy2aDMzEK/view",
+    "video": true
   },
   "EP086": {
     "module": "Comptabilité",
@@ -685,7 +977,11 @@
     "chapitre_drive": "9- E-reporting et archivage des factures",
     "folder": "1uGc7EccEyaH6I157DL4UxrbQK90IiC3Y",
     "url": "https://drive.google.com/drive/folders/1uGc7EccEyaH6I157DL4UxrbQK90IiC3Y",
-    "resolution": "correspondance manuelle"
+    "resolution": "correspondance manuelle",
+    "fichier_id": "1v1VoM-qg4mhn3XkvtlLeyYJYy2aDMzEK",
+    "fichier_titre": "E-reporting et archivage des factures.mp4",
+    "url_fichier": "https://drive.google.com/file/d/1v1VoM-qg4mhn3XkvtlLeyYJYy2aDMzEK/view",
+    "video": true
   },
   "EP087": {
     "module": "Mon Site",
@@ -693,7 +989,11 @@
     "chapitre_drive": "1 - ACTIVER L'ÉDITEUR WEB",
     "folder": "1kM8I-Lgo65v3teUnjLRb1WuJm2O5JUhC",
     "url": "https://drive.google.com/drive/folders/1kM8I-Lgo65v3teUnjLRb1WuJm2O5JUhC",
-    "resolution": "correspondance manuelle"
+    "resolution": "correspondance manuelle",
+    "fichier_id": "1qolUPeBCCB5sxVN_479AGHKtOdGCO77z",
+    "fichier_titre": "Acheter l'abonnement éditeurs de site.mp4",
+    "url_fichier": "https://drive.google.com/file/d/1qolUPeBCCB5sxVN_479AGHKtOdGCO77z/view",
+    "video": true
   },
   "EP088": {
     "module": "Mon Site",
@@ -701,7 +1001,11 @@
     "chapitre_drive": "4 - GÉRER TES PAGES",
     "folder": "1QbHNfWD_5KMcl5Nro4mVPlWcih71u5ri",
     "url": "https://drive.google.com/drive/folders/1QbHNfWD_5KMcl5Nro4mVPlWcih71u5ri",
-    "resolution": "correspondance manuelle"
+    "resolution": "correspondance manuelle",
+    "fichier_id": "10KyerYfWEkSisld01WnoRb2NNzeromab",
+    "fichier_titre": "Gérer les pages de son site.mp4",
+    "url_fichier": "https://drive.google.com/file/d/10KyerYfWEkSisld01WnoRb2NNzeromab/view",
+    "video": true
   },
   "EP089": {
     "module": "Mon Site",
@@ -709,7 +1013,11 @@
     "chapitre_drive": "8 - CONNECTER TON DOMAINE",
     "folder": "1aAdfanPg2pUrFl3JVMYL-5RWXagOciv7",
     "url": "https://drive.google.com/drive/folders/1aAdfanPg2pUrFl3JVMYL-5RWXagOciv7",
-    "resolution": "correspondance manuelle"
+    "resolution": "correspondance manuelle",
+    "fichier_id": "14DlIfkcKDPDBLhKCc5WRxTKg6jehslQc",
+    "fichier_titre": "Attacher un nom de domaine à son site.mp4",
+    "url_fichier": "https://drive.google.com/file/d/14DlIfkcKDPDBLhKCc5WRxTKg6jehslQc/view",
+    "video": true
   },
   "EP090": {
     "module": "Mon Site",
@@ -717,7 +1025,8 @@
     "chapitre_drive": null,
     "folder": "1ykcHl2BaY22WlCsBA3DuwXaEMvQZUtMF",
     "url": "https://drive.google.com/drive/folders/1ykcHl2BaY22WlCsBA3DuwXaEMvQZUtMF",
-    "resolution": "à confirmer — dossier module"
+    "resolution": "à confirmer — dossier module",
+    "video": false
   },
   "EP091": {
     "module": "Réservation",
@@ -725,7 +1034,11 @@
     "chapitre_drive": "2 - AJOUTER UNE RÉSERVATION",
     "folder": "1FCKxILOc1EB5X51xFCrWZgXTQ27IXLeE",
     "url": "https://drive.google.com/drive/folders/1FCKxILOc1EB5X51xFCrWZgXTQ27IXLeE",
-    "resolution": "numéro"
+    "resolution": "numéro",
+    "fichier_id": "1ITy-Ia2Q3FSeKSRRd4bWEFw4eDlzFZ6q",
+    "fichier_titre": "Ajouter une réservation.mp4",
+    "url_fichier": "https://drive.google.com/file/d/1ITy-Ia2Q3FSeKSRRd4bWEFw4eDlzFZ6q/view",
+    "video": true
   },
   "EP092": {
     "module": "Réservation",
@@ -733,7 +1046,11 @@
     "chapitre_drive": "3 - GÉRER & NO-SHOWS",
     "folder": "11I5195HrUUPsZVqectjWhfM9f-EEo1y5",
     "url": "https://drive.google.com/drive/folders/11I5195HrUUPsZVqectjWhfM9f-EEo1y5",
-    "resolution": "numéro"
+    "resolution": "numéro",
+    "fichier_id": "1DZKefLYV1_F9_uL-sJ79fb5srfGnROBp",
+    "fichier_titre": "Modifier, Supprimer, Nowshow sur une réservation.mp4",
+    "url_fichier": "https://drive.google.com/file/d/1DZKefLYV1_F9_uL-sJ79fb5srfGnROBp/view",
+    "video": true
   },
   "EP093": {
     "module": "StockVision",
@@ -741,7 +1058,11 @@
     "chapitre_drive": "3- Ma carte - Prédictions des commandes",
     "folder": "107h7JIXDFCD5cjyF90tiOZT2LSkFSjFj",
     "url": "https://drive.google.com/drive/folders/107h7JIXDFCD5cjyF90tiOZT2LSkFSjFj",
-    "resolution": "numéro"
+    "resolution": "numéro",
+    "fichier_id": "14GntP3F4hhloVyYBDJrPCj55Ny1gvDx9",
+    "fichier_titre": "Prédictions des commandes en fonction de vos ventes et production.mp4",
+    "url_fichier": "https://drive.google.com/file/d/14GntP3F4hhloVyYBDJrPCj55Ny1gvDx9/view",
+    "video": true
   },
   "EP094": {
     "module": "HubRise",
@@ -749,7 +1070,8 @@
     "chapitre_drive": "4 - CENTRALISER LES COMMANDES",
     "folder": "1Qt_omsrE2w9UqlhhlfkhwJaCjeL_ddow",
     "url": "https://drive.google.com/drive/folders/1Qt_omsrE2w9UqlhhlfkhwJaCjeL_ddow",
-    "resolution": "numéro"
+    "resolution": "numéro",
+    "video": false
   },
   "EP095": {
     "module": "KDS",
@@ -757,7 +1079,8 @@
     "chapitre_drive": "3 - GÉRER LE KDS EN DIRECT",
     "folder": "1RnmeyK_4aYgVpGKKNdPOrClzmpHw9Ljg",
     "url": "https://drive.google.com/drive/folders/1RnmeyK_4aYgVpGKKNdPOrClzmpHw9Ljg",
-    "resolution": "numéro"
+    "resolution": "numéro",
+    "video": false
   },
   "EP096": {
     "module": "HACCP",
@@ -765,7 +1088,11 @@
     "chapitre_drive": "3-Enregistrer une température",
     "folder": "1ohzkWaC6hB6wEa2ow1gOtoLWz_zjd5_O",
     "url": "https://drive.google.com/drive/folders/1ohzkWaC6hB6wEa2ow1gOtoLWz_zjd5_O",
-    "resolution": "texte 0.68"
+    "resolution": "texte 0.68",
+    "fichier_id": "14OmsNUd3EMgWNxGVvmOwLgR3ZloWKNKW",
+    "fichier_titre": "Enregistré une température.mp4",
+    "url_fichier": "https://drive.google.com/file/d/14OmsNUd3EMgWNxGVvmOwLgR3ZloWKNKW/view",
+    "video": true
   },
   "EP097": {
     "module": "HubRise",
@@ -773,7 +1100,8 @@
     "chapitre_drive": "2 - RELIER UBER EATS & DELIVEROO",
     "folder": "109Fn97h2rydpDX7zeHt_EFzKtZIbFa-k",
     "url": "https://drive.google.com/drive/folders/109Fn97h2rydpDX7zeHt_EFzKtZIbFa-k",
-    "resolution": "numéro"
+    "resolution": "numéro",
+    "video": false
   },
   "EP098": {
     "module": "Service",
@@ -781,7 +1109,11 @@
     "chapitre_drive": "1 - COMMANDES MULTI-CANAUX",
     "folder": "1V0xXbnYuqBsDUiD2Q_itQLIk4Ps1rw4l",
     "url": "https://drive.google.com/drive/folders/1V0xXbnYuqBsDUiD2Q_itQLIk4Ps1rw4l",
-    "resolution": "numéro"
+    "resolution": "numéro",
+    "fichier_id": "10GjJltEF3utZtfmwHR0qLZ8CTQr5_ioC",
+    "fichier_titre": "Retrouver vos commandes multi-Canal.mp4",
+    "url_fichier": "https://drive.google.com/file/d/10GjJltEF3utZtfmwHR0qLZ8CTQr5_ioC/view",
+    "video": true
   },
   "EP099": {
     "module": "Caroline",
@@ -789,7 +1121,11 @@
     "chapitre_drive": "1 - CONFIGURER CAROLINE VOIX & PROMPTS",
     "folder": "1GqODoJqsP5RS8ePzb-CAwfjfSIfQ0F0n",
     "url": "https://drive.google.com/drive/folders/1GqODoJqsP5RS8ePzb-CAwfjfSIfQ0F0n",
-    "resolution": "numéro"
+    "resolution": "numéro",
+    "fichier_id": "1bMK0HmSH2_JZ1kLF-eaO5a08o50V-WOE",
+    "fichier_titre": "configurer caroline voix & prompts.mp4",
+    "url_fichier": "https://drive.google.com/file/d/1bMK0HmSH2_JZ1kLF-eaO5a08o50V-WOE/view",
+    "video": true
   },
   "EP100": {
     "module": "Marketing",
@@ -797,7 +1133,11 @@
     "chapitre_drive": "1 - DÉBLOQUER LES AVIS",
     "folder": "1qKR-8QOFNaR5OIbNYKodlUB1Qmgr1CLW",
     "url": "https://drive.google.com/drive/folders/1qKR-8QOFNaR5OIbNYKodlUB1Qmgr1CLW",
-    "resolution": "numéro"
+    "resolution": "numéro",
+    "fichier_id": "1Ojw6yesSa0nYEvoCxyNO98EarXVrfaqD",
+    "fichier_titre": "Acheter l'abonnement Avis client.mp4",
+    "url_fichier": "https://drive.google.com/file/d/1Ojw6yesSa0nYEvoCxyNO98EarXVrfaqD/view",
+    "video": true
   },
   "EP101": {
     "module": "Caisse POS",
@@ -805,7 +1145,8 @@
     "chapitre_drive": "6 - CLÔTURER SA CAISSE LE Z",
     "folder": "1ht1CI-2jBkP6DdhvMdT3xVCPbzrwUU3m",
     "url": "https://drive.google.com/drive/folders/1ht1CI-2jBkP6DdhvMdT3xVCPbzrwUU3m",
-    "resolution": "numéro"
+    "resolution": "numéro",
+    "video": false
   },
   "EP102": {
     "module": "HACCP",
@@ -813,7 +1154,11 @@
     "chapitre_drive": "22-Créer une check-list hygiène",
     "folder": "15CwOKunwpcys81_j-rwf0W2bLfghvsXv",
     "url": "https://drive.google.com/drive/folders/15CwOKunwpcys81_j-rwf0W2bLfghvsXv",
-    "resolution": "texte 0.69"
+    "resolution": "texte 0.69",
+    "fichier_id": "1BiubjVB2WUaP8COM9a9V6_DMWNc1ltvh",
+    "fichier_titre": "Créer une check liste hygiène.mp4",
+    "url_fichier": "https://drive.google.com/file/d/1BiubjVB2WUaP8COM9a9V6_DMWNc1ltvh/view",
+    "video": true
   },
   "EP103": {
     "module": "Réservation",
@@ -821,7 +1166,11 @@
     "chapitre_drive": "1 - RÉSERVATIONS DU JOUR",
     "folder": "1L_ewdqi9eYPYPMdzLIL-Rj3JwvEzTJQm",
     "url": "https://drive.google.com/drive/folders/1L_ewdqi9eYPYPMdzLIL-Rj3JwvEzTJQm",
-    "resolution": "numéro"
+    "resolution": "numéro",
+    "fichier_id": "1ZcJIts_SFzUvjChwJSxcCGtnlT3NHOCP",
+    "fichier_titre": "Retrouver vos réservation du jour.mp4",
+    "url_fichier": "https://drive.google.com/file/d/1ZcJIts_SFzUvjChwJSxcCGtnlT3NHOCP/view",
+    "video": true
   },
   "EP104": {
     "module": "Réservation",
@@ -829,7 +1178,11 @@
     "chapitre_drive": "3 - GÉRER & NO-SHOWS",
     "folder": "11I5195HrUUPsZVqectjWhfM9f-EEo1y5",
     "url": "https://drive.google.com/drive/folders/11I5195HrUUPsZVqectjWhfM9f-EEo1y5",
-    "resolution": "numéro"
+    "resolution": "numéro",
+    "fichier_id": "1DZKefLYV1_F9_uL-sJ79fb5srfGnROBp",
+    "fichier_titre": "Modifier, Supprimer, Nowshow sur une réservation.mp4",
+    "url_fichier": "https://drive.google.com/file/d/1DZKefLYV1_F9_uL-sJ79fb5srfGnROBp/view",
+    "video": true
   },
   "EP105": {
     "module": "Mon Site",
@@ -837,7 +1190,8 @@
     "chapitre_drive": "6 - RÉSERVATIONS & HORAIRES",
     "folder": "148lKdynNnugQ6WDGFYTM03Es8i-L_lVt",
     "url": "https://drive.google.com/drive/folders/148lKdynNnugQ6WDGFYTM03Es8i-L_lVt",
-    "resolution": "numéro"
+    "resolution": "numéro",
+    "video": false
   },
   "EP106": {
     "module": "Caisse POS",
@@ -845,7 +1199,8 @@
     "chapitre_drive": "5 - SÉPARER UNE ADDITION",
     "folder": "1SeLJel_btaKEnvS8W3s6u8C0-ZnjaB4t",
     "url": "https://drive.google.com/drive/folders/1SeLJel_btaKEnvS8W3s6u8C0-ZnjaB4t",
-    "resolution": "numéro"
+    "resolution": "numéro",
+    "video": false
   },
   "EP107": {
     "module": "Caisse POS",
@@ -853,7 +1208,8 @@
     "chapitre_drive": "3 - ENCAISSER UNE COMMANDE",
     "folder": "1FfRiDgDtAi_ERE7oTv9yfgbkjPQRwK-T",
     "url": "https://drive.google.com/drive/folders/1FfRiDgDtAi_ERE7oTv9yfgbkjPQRwK-T",
-    "resolution": "numéro"
+    "resolution": "numéro",
+    "video": false
   },
   "EP108": {
     "module": "KDS",
@@ -861,7 +1217,11 @@
     "chapitre_drive": "2 - VUE KDS PAR POSTE",
     "folder": "1L83RmygIEnYQwa2ELdR7viJODqI764wD",
     "url": "https://drive.google.com/drive/folders/1L83RmygIEnYQwa2ELdR7viJODqI764wD",
-    "resolution": "numéro"
+    "resolution": "numéro",
+    "fichier_id": "1PmYYGKH00qGUcMc1zehHng3C9fQiH84O",
+    "fichier_titre": "Afficher le kds par poste de travail.mp4",
+    "url_fichier": "https://drive.google.com/file/d/1PmYYGKH00qGUcMc1zehHng3C9fQiH84O/view",
+    "video": true
   },
   "EP109": {
     "module": "HACCP",
@@ -869,7 +1229,11 @@
     "chapitre_drive": "8-Traçabilité complète",
     "folder": "1KjJgNDZmrf1NR_6aihWwN9Q77UaHp2Yk",
     "url": "https://drive.google.com/drive/folders/1KjJgNDZmrf1NR_6aihWwN9Q77UaHp2Yk",
-    "resolution": "texte 0.67"
+    "resolution": "texte 0.67",
+    "fichier_id": "1qwwJNILNZv3EpqCowlCFUhxeC_2qyZgm",
+    "fichier_titre": "Créer une traçabilité complète synchroniser avec vos produits.mp4",
+    "url_fichier": "https://drive.google.com/file/d/1qwwJNILNZv3EpqCowlCFUhxeC_2qyZgm/view",
+    "video": true
   },
   "EP110": {
     "module": "StockVision",
@@ -877,7 +1241,11 @@
     "chapitre_drive": "18- Statistiques par module",
     "folder": "1e7LZCLhyA2ANmednWevCt7-AreosC4Yw",
     "url": "https://drive.google.com/drive/folders/1e7LZCLhyA2ANmednWevCt7-AreosC4Yw",
-    "resolution": "numéro"
+    "resolution": "numéro",
+    "fichier_id": "13BlvDmhkU0IsKHXo77VHM7TwMSHKHmpv",
+    "fichier_titre": "Statistique et performances par Module.mp4",
+    "url_fichier": "https://drive.google.com/file/d/13BlvDmhkU0IsKHXo77VHM7TwMSHKHmpv/view",
+    "video": true
   },
   "EP111": {
     "module": "StockVision",
@@ -885,7 +1253,11 @@
     "chapitre_drive": "12- Production - Valider une production",
     "folder": "1JCRKsZ3Hk50JI9_Cn_WVknci92yTuwEb",
     "url": "https://drive.google.com/drive/folders/1JCRKsZ3Hk50JI9_Cn_WVknci92yTuwEb",
-    "resolution": "numéro"
+    "resolution": "numéro",
+    "fichier_id": "1dGFzc7owIIEXOJoqqbfZ9aw_J0d1OLLw",
+    "fichier_titre": "Valider une production, Quantité, Température, note.mp4",
+    "url_fichier": "https://drive.google.com/file/d/1dGFzc7owIIEXOJoqqbfZ9aw_J0d1OLLw/view",
+    "video": true
   },
   "EP112": {
     "module": "Mon Site",
@@ -893,7 +1265,11 @@
     "chapitre_drive": "2 - CHOISIR TON TEMPLATE",
     "folder": "1X5m9uQ-73PZS_-_3eJ43ofizr1W3APVB",
     "url": "https://drive.google.com/drive/folders/1X5m9uQ-73PZS_-_3eJ43ofizr1W3APVB",
-    "resolution": "numéro"
+    "resolution": "numéro",
+    "fichier_id": "1vf3VeotBty8YMbxSwe8ZnH0v5jjfq4VS",
+    "fichier_titre": "Choisir un template.mp4",
+    "url_fichier": "https://drive.google.com/file/d/1vf3VeotBty8YMbxSwe8ZnH0v5jjfq4VS/view",
+    "video": true
   },
   "EP113": {
     "module": "HubRise",
@@ -901,7 +1277,8 @@
     "chapitre_drive": "4 - CENTRALISER LES COMMANDES",
     "folder": "1Qt_omsrE2w9UqlhhlfkhwJaCjeL_ddow",
     "url": "https://drive.google.com/drive/folders/1Qt_omsrE2w9UqlhhlfkhwJaCjeL_ddow",
-    "resolution": "numéro"
+    "resolution": "numéro",
+    "video": false
   },
   "EP114": {
     "module": "Marketing",
@@ -909,7 +1286,11 @@
     "chapitre_drive": "5 - LANCER UNE CAMPAGNE",
     "folder": "1ZnYZoyJD4pM5RPWQQo5cFqTU69LZPDXt",
     "url": "https://drive.google.com/drive/folders/1ZnYZoyJD4pM5RPWQQo5cFqTU69LZPDXt",
-    "resolution": "numéro"
+    "resolution": "numéro",
+    "fichier_id": "1L1RnS8OdOEMKsVjDho2rKnj4gzihgfW9",
+    "fichier_titre": "Créer une campagne marketing.mp4",
+    "url_fichier": "https://drive.google.com/file/d/1L1RnS8OdOEMKsVjDho2rKnj4gzihgfW9/view",
+    "video": true
   },
   "EP115": {
     "module": "StockVision",
@@ -917,7 +1298,11 @@
     "chapitre_drive": "16- Stock - Mouvements de stock",
     "folder": "1DvhP8VJ6MFa2Zokkwgkdx_BUm7WUbIMp",
     "url": "https://drive.google.com/drive/folders/1DvhP8VJ6MFa2Zokkwgkdx_BUm7WUbIMp",
-    "resolution": "numéro"
+    "resolution": "numéro",
+    "fichier_id": "124mIM7NudoQy5wun_rlSZ6MCrJ2wNykL",
+    "fichier_titre": "Mouvements de stock, Détails, Supprimer.mp4",
+    "url_fichier": "https://drive.google.com/file/d/124mIM7NudoQy5wun_rlSZ6MCrJ2wNykL/view",
+    "video": true
   },
   "EP116": {
     "module": "KDS",
@@ -925,7 +1310,11 @@
     "chapitre_drive": "1 - CRÉER TES POSTES KDS",
     "folder": "1NU0o445gOk4pdMf4uimNPOts3XIcR7LO",
     "url": "https://drive.google.com/drive/folders/1NU0o445gOk4pdMf4uimNPOts3XIcR7LO",
-    "resolution": "numéro"
+    "resolution": "numéro",
+    "fichier_id": "1Q25eSBcjIuq1XkHnJkFN_QJyK23o1GVg",
+    "fichier_titre": "Créer un poste de travail (Préparation,Pass,Bar) sur le KDS.mp4",
+    "url_fichier": "https://drive.google.com/file/d/1Q25eSBcjIuq1XkHnJkFN_QJyK23o1GVg/view",
+    "video": true
   },
   "EP117": {
     "module": "StockVision",
@@ -933,7 +1322,11 @@
     "chapitre_drive": "1- Ma carte - Création et modifications de la carte du restaurant",
     "folder": "1bGMZ8R1udBoMF4XrJJqEnpYKkVrwBxx7",
     "url": "https://drive.google.com/drive/folders/1bGMZ8R1udBoMF4XrJJqEnpYKkVrwBxx7",
-    "resolution": "numéro"
+    "resolution": "numéro",
+    "fichier_id": "1yqhyPMj9uBq1awmqTwUhisuBJBpY5kt-",
+    "fichier_titre": "Création et modifications de la carte du restaurant.mp4",
+    "url_fichier": "https://drive.google.com/file/d/1yqhyPMj9uBq1awmqTwUhisuBJBpY5kt-/view",
+    "video": true
   },
   "EP118": {
     "module": "Mon Site",
@@ -941,7 +1334,11 @@
     "chapitre_drive": "5 - CRÉER UN SITE PAR IA",
     "folder": "1WZsVdrBvcL2OQiYcRdnBCgzUx6u9J6p9",
     "url": "https://drive.google.com/drive/folders/1WZsVdrBvcL2OQiYcRdnBCgzUx6u9J6p9",
-    "resolution": "numéro"
+    "resolution": "numéro",
+    "fichier_id": "1MEMdJJMq2MhQ6H-dU5Nb5ls8ifoqM3U4",
+    "fichier_titre": "Créer son site avec l'IA.mp4",
+    "url_fichier": "https://drive.google.com/file/d/1MEMdJJMq2MhQ6H-dU5Nb5ls8ifoqM3U4/view",
+    "video": true
   },
   "EP119": {
     "module": "Marketing",
@@ -949,7 +1346,11 @@
     "chapitre_drive": "9 - CIBLAGE & CONSENTEMENT",
     "folder": "1D8h1RL3WM71FddvsmAK_k2T206taQNWO",
     "url": "https://drive.google.com/drive/folders/1D8h1RL3WM71FddvsmAK_k2T206taQNWO",
-    "resolution": "numéro"
+    "resolution": "numéro",
+    "fichier_id": "16Ecg7UgVAVDat_ImQG5q-QKYLtAQjX_m",
+    "fichier_titre": "Segment et consentement de vos clients.mp4",
+    "url_fichier": "https://drive.google.com/file/d/16Ecg7UgVAVDat_ImQG5q-QKYLtAQjX_m/view",
+    "video": true
   },
   "EP120": {
     "module": "PrediBot",
@@ -957,7 +1358,11 @@
     "chapitre_drive": "1 - LIRE SES PRÉVISIONS",
     "folder": "19KbPaohx3zwWwsG4Ud3KfJU9WlqeqIoE",
     "url": "https://drive.google.com/drive/folders/19KbPaohx3zwWwsG4Ud3KfJU9WlqeqIoE",
-    "resolution": "numéro"
+    "resolution": "numéro",
+    "fichier_id": "1MWkfZ-OZ_qv2z6QD9VPwabO5XnGd5UaB",
+    "fichier_titre": "lire ses prévisions predibot.mp4",
+    "url_fichier": "https://drive.google.com/file/d/1MWkfZ-OZ_qv2z6QD9VPwabO5XnGd5UaB/view",
+    "video": true
   },
   "EP121": {
     "module": "Service",
@@ -965,7 +1370,11 @@
     "chapitre_drive": "3 - ENVOI DIRECT CUISINE",
     "folder": "163wYyl14_2hFJ8gUGuunJWhYVqEo0AJu",
     "url": "https://drive.google.com/drive/folders/163wYyl14_2hFJ8gUGuunJWhYVqEo0AJu",
-    "resolution": "numéro"
+    "resolution": "numéro",
+    "fichier_id": "1PucAO7TE28El_TCLBrAOjct2VJS4mZu2",
+    "fichier_titre": "Envoyer la commande en cuisine.mp4",
+    "url_fichier": "https://drive.google.com/file/d/1PucAO7TE28El_TCLBrAOjct2VJS4mZu2/view",
+    "video": true
   },
   "EP122": {
     "module": "Marketing",
@@ -973,7 +1382,11 @@
     "chapitre_drive": "20 - VUE CLIENT FIDÉLITÉ",
     "folder": "18JE8aUMjo0tFGD_V1NFNfxW3svy9EIl9",
     "url": "https://drive.google.com/drive/folders/18JE8aUMjo0tFGD_V1NFNfxW3svy9EIl9",
-    "resolution": "numéro"
+    "resolution": "numéro",
+    "fichier_id": "1nUloQCmx2rMx7VpeoN4RjFb9Coj-EfuD",
+    "fichier_titre": "Voir la page publique du programme fidélité.mp4",
+    "url_fichier": "https://drive.google.com/file/d/1nUloQCmx2rMx7VpeoN4RjFb9Coj-EfuD/view",
+    "video": true
   },
   "EP123": {
     "module": "StockVision",
@@ -981,7 +1394,11 @@
     "chapitre_drive": "1- Ma carte - Création et modifications de la carte du restaurant",
     "folder": "1bGMZ8R1udBoMF4XrJJqEnpYKkVrwBxx7",
     "url": "https://drive.google.com/drive/folders/1bGMZ8R1udBoMF4XrJJqEnpYKkVrwBxx7",
-    "resolution": "numéro"
+    "resolution": "numéro",
+    "fichier_id": "1yqhyPMj9uBq1awmqTwUhisuBJBpY5kt-",
+    "fichier_titre": "Création et modifications de la carte du restaurant.mp4",
+    "url_fichier": "https://drive.google.com/file/d/1yqhyPMj9uBq1awmqTwUhisuBJBpY5kt-/view",
+    "video": true
   },
   "EP124": {
     "module": "Caisse POS",
@@ -989,7 +1406,8 @@
     "chapitre_drive": "6 - CLÔTURER SA CAISSE LE Z",
     "folder": "1ht1CI-2jBkP6DdhvMdT3xVCPbzrwUU3m",
     "url": "https://drive.google.com/drive/folders/1ht1CI-2jBkP6DdhvMdT3xVCPbzrwUU3m",
-    "resolution": "numéro"
+    "resolution": "numéro",
+    "video": false
   },
   "EP125": {
     "module": "Caroline",
@@ -997,7 +1415,11 @@
     "chapitre_drive": "3 - DESSINER SON PLAN DE SALLE",
     "folder": "1Y_TFKokdQ6-x54EmTehizW9rApt_jn75",
     "url": "https://drive.google.com/drive/folders/1Y_TFKokdQ6-x54EmTehizW9rApt_jn75",
-    "resolution": "numéro"
+    "resolution": "numéro",
+    "fichier_id": "1TOGCHAw6Yc43gQxScRWt62B5ZkuJO8jg",
+    "fichier_titre": "dessiner son plan de salle qr code à table.mp4",
+    "url_fichier": "https://drive.google.com/file/d/1TOGCHAw6Yc43gQxScRWt62B5ZkuJO8jg/view",
+    "video": true
   },
   "EP126": {
     "module": "Caisse POS",
@@ -1005,7 +1427,8 @@
     "chapitre_drive": "5 - SÉPARER UNE ADDITION",
     "folder": "1SeLJel_btaKEnvS8W3s6u8C0-ZnjaB4t",
     "url": "https://drive.google.com/drive/folders/1SeLJel_btaKEnvS8W3s6u8C0-ZnjaB4t",
-    "resolution": "numéro"
+    "resolution": "numéro",
+    "video": false
   },
   "EP127": {
     "module": "Réservation",
@@ -1013,7 +1436,11 @@
     "chapitre_drive": "1 - RÉSERVATIONS DU JOUR",
     "folder": "1L_ewdqi9eYPYPMdzLIL-Rj3JwvEzTJQm",
     "url": "https://drive.google.com/drive/folders/1L_ewdqi9eYPYPMdzLIL-Rj3JwvEzTJQm",
-    "resolution": "numéro"
+    "resolution": "numéro",
+    "fichier_id": "1ZcJIts_SFzUvjChwJSxcCGtnlT3NHOCP",
+    "fichier_titre": "Retrouver vos réservation du jour.mp4",
+    "url_fichier": "https://drive.google.com/file/d/1ZcJIts_SFzUvjChwJSxcCGtnlT3NHOCP/view",
+    "video": true
   },
   "EP128": {
     "module": "Réservation",
@@ -1021,7 +1448,11 @@
     "chapitre_drive": "4 - PLACER UN CLIENT À TABLE",
     "folder": "1OPt9xLWcJHMHt-LCOM4gAfWP-I0MeaC8",
     "url": "https://drive.google.com/drive/folders/1OPt9xLWcJHMHt-LCOM4gAfWP-I0MeaC8",
-    "resolution": "numéro"
+    "resolution": "numéro",
+    "fichier_id": "12589ZMOfTgifLClS2v-afJ2P6naWZmdB",
+    "fichier_titre": "Ajouter un client a une table.mp4",
+    "url_fichier": "https://drive.google.com/file/d/12589ZMOfTgifLClS2v-afJ2P6naWZmdB/view",
+    "video": true
   },
   "EP129": {
     "module": "Caroline",
@@ -1029,7 +1460,11 @@
     "chapitre_drive": "4 - GÉRER SES TABLES",
     "folder": "1OweOYbfTDAi0nPosQOg8_VY-VBxg6khF",
     "url": "https://drive.google.com/drive/folders/1OweOYbfTDAi0nPosQOg8_VY-VBxg6khF",
-    "resolution": "numéro"
+    "resolution": "numéro",
+    "fichier_id": "18dIJKyCb9DuZGIcN8Cr_EQkjzwlRUCnz",
+    "fichier_titre": "gérer ses tables ajout & blocage.mp4",
+    "url_fichier": "https://drive.google.com/file/d/18dIJKyCb9DuZGIcN8Cr_EQkjzwlRUCnz/view",
+    "video": true
   },
   "EP130": {
     "module": "Marketing",
@@ -1037,7 +1472,11 @@
     "chapitre_drive": "7 - TON AGENDA MARKETING",
     "folder": "19FSkQgF_ZaAskaAmxFfTIuXJ7ezCVLns",
     "url": "https://drive.google.com/drive/folders/19FSkQgF_ZaAskaAmxFfTIuXJ7ezCVLns",
-    "resolution": "numéro"
+    "resolution": "numéro",
+    "fichier_id": "17j87qbBA5aySV44RakgltrNLsJpnRNBz",
+    "fichier_titre": "Retrouver votre agenda marketing.mp4",
+    "url_fichier": "https://drive.google.com/file/d/17j87qbBA5aySV44RakgltrNLsJpnRNBz/view",
+    "video": true
   },
   "EP131": {
     "module": "Équipe & Planning",
@@ -1045,7 +1484,11 @@
     "chapitre_drive": "16-Planning et tâches de l'employé",
     "folder": "1IRoEhrDK6gE4PqPwSDmhXOP7XjjFi6xq",
     "url": "https://drive.google.com/drive/folders/1IRoEhrDK6gE4PqPwSDmhXOP7XjjFi6xq",
-    "resolution": "texte 0.61"
+    "resolution": "texte 0.61",
+    "fichier_id": "1CdAnJgR_iq1ESyAgcCCpFjnCfYzaUhIR",
+    "fichier_titre": "video-16 Affichages du planning de l'employé et de ces tâches.mp4",
+    "url_fichier": "https://drive.google.com/file/d/1CdAnJgR_iq1ESyAgcCCpFjnCfYzaUhIR/view",
+    "video": true
   },
   "EP132": {
     "module": "Mon Site",
@@ -1053,7 +1496,8 @@
     "chapitre_drive": "6 - RÉSERVATIONS & HORAIRES",
     "folder": "148lKdynNnugQ6WDGFYTM03Es8i-L_lVt",
     "url": "https://drive.google.com/drive/folders/148lKdynNnugQ6WDGFYTM03Es8i-L_lVt",
-    "resolution": "numéro"
+    "resolution": "numéro",
+    "video": false
   },
   "EP133": {
     "module": "Caisse POS",
@@ -1061,7 +1505,8 @@
     "chapitre_drive": "3 - ENCAISSER UNE COMMANDE",
     "folder": "1FfRiDgDtAi_ERE7oTv9yfgbkjPQRwK-T",
     "url": "https://drive.google.com/drive/folders/1FfRiDgDtAi_ERE7oTv9yfgbkjPQRwK-T",
-    "resolution": "numéro"
+    "resolution": "numéro",
+    "video": false
   },
   "EP134": {
     "module": "HACCP",
@@ -1069,7 +1514,11 @@
     "chapitre_drive": "3-Enregistrer une température",
     "folder": "1ohzkWaC6hB6wEa2ow1gOtoLWz_zjd5_O",
     "url": "https://drive.google.com/drive/folders/1ohzkWaC6hB6wEa2ow1gOtoLWz_zjd5_O",
-    "resolution": "texte 0.68"
+    "resolution": "texte 0.68",
+    "fichier_id": "14OmsNUd3EMgWNxGVvmOwLgR3ZloWKNKW",
+    "fichier_titre": "Enregistré une température.mp4",
+    "url_fichier": "https://drive.google.com/file/d/14OmsNUd3EMgWNxGVvmOwLgR3ZloWKNKW/view",
+    "video": true
   },
   "EP135": {
     "module": "Réservation",
@@ -1077,7 +1526,11 @@
     "chapitre_drive": "1 - RÉSERVATIONS DU JOUR",
     "folder": "1L_ewdqi9eYPYPMdzLIL-Rj3JwvEzTJQm",
     "url": "https://drive.google.com/drive/folders/1L_ewdqi9eYPYPMdzLIL-Rj3JwvEzTJQm",
-    "resolution": "numéro"
+    "resolution": "numéro",
+    "fichier_id": "1ZcJIts_SFzUvjChwJSxcCGtnlT3NHOCP",
+    "fichier_titre": "Retrouver vos réservation du jour.mp4",
+    "url_fichier": "https://drive.google.com/file/d/1ZcJIts_SFzUvjChwJSxcCGtnlT3NHOCP/view",
+    "video": true
   },
   "EP136": {
     "module": "Service",
@@ -1085,7 +1538,11 @@
     "chapitre_drive": "1 - COMMANDES MULTI-CANAUX",
     "folder": "1V0xXbnYuqBsDUiD2Q_itQLIk4Ps1rw4l",
     "url": "https://drive.google.com/drive/folders/1V0xXbnYuqBsDUiD2Q_itQLIk4Ps1rw4l",
-    "resolution": "numéro"
+    "resolution": "numéro",
+    "fichier_id": "10GjJltEF3utZtfmwHR0qLZ8CTQr5_ioC",
+    "fichier_titre": "Retrouver vos commandes multi-Canal.mp4",
+    "url_fichier": "https://drive.google.com/file/d/10GjJltEF3utZtfmwHR0qLZ8CTQr5_ioC/view",
+    "video": true
   },
   "EP137": {
     "module": "Caisse POS",
@@ -1093,7 +1550,8 @@
     "chapitre_drive": "3 - ENCAISSER UNE COMMANDE",
     "folder": "1FfRiDgDtAi_ERE7oTv9yfgbkjPQRwK-T",
     "url": "https://drive.google.com/drive/folders/1FfRiDgDtAi_ERE7oTv9yfgbkjPQRwK-T",
-    "resolution": "numéro"
+    "resolution": "numéro",
+    "video": false
   },
   "EP138": {
     "module": "KDS",
@@ -1101,7 +1559,8 @@
     "chapitre_drive": "3 - GÉRER LE KDS EN DIRECT",
     "folder": "1RnmeyK_4aYgVpGKKNdPOrClzmpHw9Ljg",
     "url": "https://drive.google.com/drive/folders/1RnmeyK_4aYgVpGKKNdPOrClzmpHw9Ljg",
-    "resolution": "numéro"
+    "resolution": "numéro",
+    "video": false
   },
   "EP139": {
     "module": "KDS",
@@ -1109,7 +1568,11 @@
     "chapitre_drive": "2 - VUE KDS PAR POSTE",
     "folder": "1L83RmygIEnYQwa2ELdR7viJODqI764wD",
     "url": "https://drive.google.com/drive/folders/1L83RmygIEnYQwa2ELdR7viJODqI764wD",
-    "resolution": "numéro"
+    "resolution": "numéro",
+    "fichier_id": "1PmYYGKH00qGUcMc1zehHng3C9fQiH84O",
+    "fichier_titre": "Afficher le kds par poste de travail.mp4",
+    "url_fichier": "https://drive.google.com/file/d/1PmYYGKH00qGUcMc1zehHng3C9fQiH84O/view",
+    "video": true
   },
   "EP140": {
     "module": "StockVision",
@@ -1117,7 +1580,11 @@
     "chapitre_drive": "16- Stock - Mouvements de stock",
     "folder": "1DvhP8VJ6MFa2Zokkwgkdx_BUm7WUbIMp",
     "url": "https://drive.google.com/drive/folders/1DvhP8VJ6MFa2Zokkwgkdx_BUm7WUbIMp",
-    "resolution": "numéro"
+    "resolution": "numéro",
+    "fichier_id": "124mIM7NudoQy5wun_rlSZ6MCrJ2wNykL",
+    "fichier_titre": "Mouvements de stock, Détails, Supprimer.mp4",
+    "url_fichier": "https://drive.google.com/file/d/124mIM7NudoQy5wun_rlSZ6MCrJ2wNykL/view",
+    "video": true
   },
   "EP141": {
     "module": "PrediBot",
@@ -1125,7 +1592,11 @@
     "chapitre_drive": "3 - PARLER À PREDIBOT",
     "folder": "10__yAAWsF5AzYJFvViRjWlSYTzIlIyBQ",
     "url": "https://drive.google.com/drive/folders/10__yAAWsF5AzYJFvViRjWlSYTzIlIyBQ",
-    "resolution": "numéro"
+    "resolution": "numéro",
+    "fichier_id": "1nuFxXTOCXeHKtSbJBScCH0O3khJxTiB4",
+    "fichier_titre": "parler à predibot avec nos prompts.mp4",
+    "url_fichier": "https://drive.google.com/file/d/1nuFxXTOCXeHKtSbJBScCH0O3khJxTiB4/view",
+    "video": true
   },
   "EP142": {
     "module": "Équipe & Planning",
@@ -1133,7 +1604,11 @@
     "chapitre_drive": "2-Configuration des employés",
     "folder": "1GYwVOPg4veg-cFhZh_rxhvWmwOFy_4mB",
     "url": "https://drive.google.com/drive/folders/1GYwVOPg4veg-cFhZh_rxhvWmwOFy_4mB",
-    "resolution": "texte 0.60"
+    "resolution": "texte 0.60",
+    "fichier_id": "13w9aRHXfQFkxF3UvqtaLczqKPN5rr7E0",
+    "fichier_titre": "Configuration des employés.mp4",
+    "url_fichier": "https://drive.google.com/file/d/13w9aRHXfQFkxF3UvqtaLczqKPN5rr7E0/view",
+    "video": true
   },
   "EP143": {
     "module": "Comptabilité",
@@ -1141,7 +1616,11 @@
     "chapitre_drive": "3- Créer un devis",
     "folder": "1vEqEBl6EYPfsXAsDkHKMKjMCFs845eQH",
     "url": "https://drive.google.com/drive/folders/1vEqEBl6EYPfsXAsDkHKMKjMCFs845eQH",
-    "resolution": "texte 0.45"
+    "resolution": "texte 0.45",
+    "fichier_id": "1LRxi9R1Sbj1sQ0Cg4RZhpE_cxZHygksu",
+    "fichier_titre": "Créer un devis.mp4",
+    "url_fichier": "https://drive.google.com/file/d/1LRxi9R1Sbj1sQ0Cg4RZhpE_cxZHygksu/view",
+    "video": true
   },
   "EP144": {
     "module": "Marketing",
@@ -1149,7 +1628,11 @@
     "chapitre_drive": "3 - RÉPONDRE AUX AVIS",
     "folder": "1ZXZeT7GyPTkQT95XNGu8svx6OI1aUgNA",
     "url": "https://drive.google.com/drive/folders/1ZXZeT7GyPTkQT95XNGu8svx6OI1aUgNA",
-    "resolution": "numéro"
+    "resolution": "numéro",
+    "fichier_id": "1CMKvqIypwbr8KHTj0dCs_w06sjkaQKV4",
+    "fichier_titre": "Répondre a un avis client.mp4",
+    "url_fichier": "https://drive.google.com/file/d/1CMKvqIypwbr8KHTj0dCs_w06sjkaQKV4/view",
+    "video": true
   },
   "EP145": {
     "module": "PrediBot",
@@ -1157,7 +1640,11 @@
     "chapitre_drive": "1 - LIRE SES PRÉVISIONS",
     "folder": "19KbPaohx3zwWwsG4Ud3KfJU9WlqeqIoE",
     "url": "https://drive.google.com/drive/folders/19KbPaohx3zwWwsG4Ud3KfJU9WlqeqIoE",
-    "resolution": "numéro"
+    "resolution": "numéro",
+    "fichier_id": "1MWkfZ-OZ_qv2z6QD9VPwabO5XnGd5UaB",
+    "fichier_titre": "lire ses prévisions predibot.mp4",
+    "url_fichier": "https://drive.google.com/file/d/1MWkfZ-OZ_qv2z6QD9VPwabO5XnGd5UaB/view",
+    "video": true
   },
   "EP146": {
     "module": "Comptabilité",
@@ -1165,7 +1652,11 @@
     "chapitre_drive": "3- Créer un devis",
     "folder": "1vEqEBl6EYPfsXAsDkHKMKjMCFs845eQH",
     "url": "https://drive.google.com/drive/folders/1vEqEBl6EYPfsXAsDkHKMKjMCFs845eQH",
-    "resolution": "correspondance manuelle"
+    "resolution": "correspondance manuelle",
+    "fichier_id": "1LRxi9R1Sbj1sQ0Cg4RZhpE_cxZHygksu",
+    "fichier_titre": "Créer un devis.mp4",
+    "url_fichier": "https://drive.google.com/file/d/1LRxi9R1Sbj1sQ0Cg4RZhpE_cxZHygksu/view",
+    "video": true
   },
   "EP147": {
     "module": "Comptabilité",
@@ -1173,7 +1664,11 @@
     "chapitre_drive": "3- Créer un devis",
     "folder": "1vEqEBl6EYPfsXAsDkHKMKjMCFs845eQH",
     "url": "https://drive.google.com/drive/folders/1vEqEBl6EYPfsXAsDkHKMKjMCFs845eQH",
-    "resolution": "texte 0.61"
+    "resolution": "texte 0.61",
+    "fichier_id": "1LRxi9R1Sbj1sQ0Cg4RZhpE_cxZHygksu",
+    "fichier_titre": "Créer un devis.mp4",
+    "url_fichier": "https://drive.google.com/file/d/1LRxi9R1Sbj1sQ0Cg4RZhpE_cxZHygksu/view",
+    "video": true
   },
   "EP148": {
     "module": "HubRise",
@@ -1181,7 +1676,8 @@
     "chapitre_drive": "3 - SYNCHRO CAISSE TIERCE",
     "folder": "1f0MRbPQ_eBDxH1zOYMpVwPdBqa4avYi2",
     "url": "https://drive.google.com/drive/folders/1f0MRbPQ_eBDxH1zOYMpVwPdBqa4avYi2",
-    "resolution": "numéro"
+    "resolution": "numéro",
+    "video": false
   },
   "EP149": {
     "module": "Marketing",
@@ -1189,7 +1685,11 @@
     "chapitre_drive": "5 - LANCER UNE CAMPAGNE",
     "folder": "1ZnYZoyJD4pM5RPWQQo5cFqTU69LZPDXt",
     "url": "https://drive.google.com/drive/folders/1ZnYZoyJD4pM5RPWQQo5cFqTU69LZPDXt",
-    "resolution": "numéro"
+    "resolution": "numéro",
+    "fichier_id": "1L1RnS8OdOEMKsVjDho2rKnj4gzihgfW9",
+    "fichier_titre": "Créer une campagne marketing.mp4",
+    "url_fichier": "https://drive.google.com/file/d/1L1RnS8OdOEMKsVjDho2rKnj4gzihgfW9/view",
+    "video": true
   },
   "EP150": {
     "module": "PrediBot",
@@ -1197,6 +1697,10 @@
     "chapitre_drive": "1 - LIRE SES PRÉVISIONS",
     "folder": "19KbPaohx3zwWwsG4Ud3KfJU9WlqeqIoE",
     "url": "https://drive.google.com/drive/folders/19KbPaohx3zwWwsG4Ud3KfJU9WlqeqIoE",
-    "resolution": "numéro"
+    "resolution": "numéro",
+    "fichier_id": "1MWkfZ-OZ_qv2z6QD9VPwabO5XnGd5UaB",
+    "fichier_titre": "lire ses prévisions predibot.mp4",
+    "url_fichier": "https://drive.google.com/file/d/1MWkfZ-OZ_qv2z6QD9VPwabO5XnGd5UaB/view",
+    "video": true
   }
 }

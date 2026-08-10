@@ -17,5 +17,5 @@
     "build": "manquant",
     "publie": "manquant"
   },
-  "notes": "Avatar HeyGen reçu. BLOQUÉ sur le screencast : le module Caisse POS n'a aucune vidéo dans le Drive — les 7 chapitres ne contiennent que des JPG. Le fichier PrediBot envoyé avec cet épisode est le même que celui d'EP010 (md5 identique) et ne correspond pas au chapitre « écarts de caisse »."
+  "notes": "BLOQUÉ : le chapitre « 7 - SUIVRE LES ÉCARTS CAISSE » n'a aucune vidéo dans le Drive, seulement un JPG. Le module entier est concerné pour Caisse POS (7 chapitres), HubRise et KDS. Il faut enregistrer l'écran côté humain, ou basculer sur un autre chapitre."
 }

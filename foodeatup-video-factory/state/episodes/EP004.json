@@ -17,5 +17,5 @@
     "build": "manquant",
     "publie": "manquant"
   },
-  "notes": "Hook récupéré. Manque l'avatar HeyGen et le screencast du chapitre Caisse POS 1."
+  "notes": "BLOQUÉ : le chapitre « 1 - CONFIGURER SA CAISSE POS TPE & TICKET » n'a aucune vidéo dans le Drive, seulement un JPG. Le module entier est concerné pour Caisse POS (7 chapitres), HubRise et KDS. Il faut enregistrer l'écran côté humain, ou basculer sur un autre chapitre."
 }
