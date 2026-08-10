@@ -49,19 +49,18 @@ def nom_vignette(t):
     return f"tuto-{t['slug']}-thumbnail"
 
 
-# Le module Caisse POS est annoncé sur le site comme « en préparation par notre
-# équipe de développeurs · arrive en v2 », et ses sept fiches sont en brouillon.
+# Plus aucun module n'est retenu en brouillon.
 #
-# Ses huit outils MCP existent pourtant, et sont détaillés : `open_pos_session`,
-# `record_pos_payment`, `close_pos_session`… La fonction est donc là côté API.
-# Mais **basculer un module en production n'est pas une décision de montage** :
-# publier sept tutoriels sous un module que le site annonce comme non livré
-# ferait dire au site deux choses contraires le même jour.
+# Caisse POS l'a été, le temps d'une décision qui n'appartenait pas au montage :
+# le site l'annonçait « en préparation · arrive en v2 » alors que ses huit
+# outils MCP existaient et étaient détaillés. Publier sept tutoriels sous un
+# module annoncé comme non livré aurait fait dire au site deux choses contraires
+# le même jour. Les fiches ont donc été écrites entièrement et gardées en
+# brouillon, prêtes.
 #
-# Les sept fiches reçoivent donc leur contenu réel et restent en brouillon.
-# Le jour où Michael retire l'indicateur du module, elles sont prêtes — il n'y
-# a qu'un statut à changer, pas un texte à écrire.
-MODULE_EN_PREPARATION = {"caisse-pos"}
+# Michael a tranché : le module s'ouvre. Il n'y avait qu'un statut à changer,
+# pas un texte à écrire — c'était exactement le but.
+MODULE_EN_PREPARATION: set[str] = set()
 
 
 def statut_sql(t):
@@ -134,7 +133,13 @@ def main():
     source = FICHIER.read_text(encoding="utf-8")
     avant = source.count('    slug: "')
 
-    sql = ["BEGIN;"]
+    # Le module d'abord, les fiches ensuite. RLS ne laisse lire une fiche que si
+    # son module est publié : l'ordre inverse ouvrirait sept pages rattachées à
+    # un module encore fermé, le temps de la transaction.
+    sql = [
+        "BEGIN;",
+        "UPDATE public.modules SET statut='publie' WHERE slug='caisse-pos';",
+    ]
     for t in TUTORIELS:
         timing = json.loads(
             (RACINE / t["sous"] / "assets" / "timing.json").read_text(encoding="utf-8")
