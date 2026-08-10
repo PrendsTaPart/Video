@@ -1,0 +1,69 @@
+#!/usr/bin/env bash
+# Monte un épisode de 30,0 s à partir d'assets DÉJÀ produits.
+# Aucune génération : ni Higgsfield, ni HeyGen, ni image. Uniquement ffmpeg local.
+#
+#   ./build-episode.sh EP001
+#
+# Attendus :
+#   assets/hooks/EPxxx.mp4       clip Higgsfield récupéré (7 s utiles)
+#   assets/avatar/EPxxx.mp4      segment HeyGen déposé à la main (<= 12 s, avec audio)
+#   assets/software/EPxxx.mp4    10 s extraites d'un tuto Drive
+#   build/COMMUN_sting_BC.mp4    sting + VO_A + VO_B (9 s, identique sur les 150)
+#   build/COMMUN_E.mp4           outro + VO_C (4 s, identique sur les 150)
+set -euo pipefail
+
+EP="${1:?usage: build-episode.sh EPxxx}"
+R="$(cd "$(dirname "$0")/.." && pwd)"
+
+SABLE="0xFAF6E3"   # fond de charte FoodEatUp, relevé sur le master de référence
+LOGO_X=795         # position du badge, identique sur toute la durée
+LOGO_Y=57
+AV_CROP_Y=30       # décalage du crop avatar : garde la toque et le menton
+BED_GAIN=0.224     # -13 dB : cale la musique sur le plancher -28 dBFS de la référence
+SFX_GAIN=2.0       # +6 dB : whoosh audible sous la voix
+
+# --- Segment D : avatar 45 % (864 px) au-dessus du logiciel 55 % (1056 px) -----
+# Le screencast n'est JAMAIS rogné : il est padé sur le fond sable.
+# L'avatar est plus court que 10 s -> dernière frame clonée, audio complété en silence.
+# La voix change ici (ElevenLabs -> HeyGen) : fondu sable de 0,35 s + whoosh sur la coupe.
+# Le lit musical couvre les 10 s, sinon le segment sonne mort face aux voisins.
+ffmpeg -v error \
+ -i "$R/assets/avatar/$EP.mp4" \
+ -i "$R/assets/software/$EP.mp4" \
+ -i "$R/assets/brand/logo_foodeatup.png" \
+ -i "$R/assets/brand/bgm.mp3" \
+ -i "$R/assets/brand/sfx_transition.mp3" \
+ -filter_complex "\
+ [0:v]fps=30,crop=1080:864:0:$AV_CROP_Y,tpad=stop_mode=clone:stop_duration=3,\
+trim=0:10,setpts=PTS-STARTPTS[top];\
+ [1:v]fps=30,scale=1080:1056:force_original_aspect_ratio=decrease,\
+pad=1080:1056:(ow-iw)/2:(oh-ih)/2:color=$SABLE[bot];\
+ [top][bot]vstack=inputs=2[stack];\
+ [stack][2:v]overlay=$LOGO_X:$LOGO_Y:format=auto[ov];\
+ [ov]fade=t=in:st=0:d=0.35:color=$SABLE,format=yuv420p[v];\
+ [0:a]aresample=48000,apad,atrim=0:10,asetpts=PTS-STARTPTS,volume=1.0[voice];\
+ [3:a]aresample=48000,atrim=16:26,asetpts=PTS-STARTPTS,volume=$BED_GAIN,\
+afade=t=in:st=0:d=0.3[bed];\
+ [4:a]aresample=48000,volume=$SFX_GAIN,apad,atrim=0:10,asetpts=PTS-STARTPTS[wh];\
+ [voice][bed][wh]amix=inputs=3:duration=first:dropout_transition=0:normalize=0[a]" \
+ -map "[v]" -map "[a]" -t 10 \
+ -c:v libx264 -preset medium -crf 18 -r 30 -c:a aac -b:a 192k \
+ "$R/build/${EP}_D.mp4" -y
+
+# --- Assemblage : A (7) + sting/B/C (9) + D (10) + E (4) = 30,0 s -------------
+cat > "$R/build/${EP}_list.txt" <<EOF
+file '${EP}_A.mp4'
+file 'COMMUN_sting_BC.mp4'
+file '${EP}_D.mp4'
+file 'COMMUN_E.mp4'
+EOF
+
+ffmpeg -v error -f concat -safe 0 -i "$R/build/${EP}_list.txt" \
+ -filter_complex "[0:a]loudnorm=I=-14:TP=-1.5:LRA=11,apad[a]" \
+ -map 0:v -map "[a]" -t 30 \
+ -c:v libx264 -preset slow -crf 20 -r 30 -pix_fmt yuv420p \
+ -c:a aac -b:a 192k -ar 48000 -movflags +faststart \
+ "$R/dist/tiktok/$EP.mp4" -y
+
+echo "$EP -> dist/tiktok/$EP.mp4"
+"$R/scripts/qc-episode.sh" "$EP"

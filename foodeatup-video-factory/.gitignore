@@ -1,0 +1,4 @@
+# sources lourdes non versionnées (rushes bruts déposés à la main)
+assets/software/*_src.mp4
+build/*.mp4
+build/*_list.txt
