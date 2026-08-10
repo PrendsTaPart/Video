@@ -61,34 +61,43 @@ def scene_scores(src: Path, rate: int = 5) -> list[tuple[float, float]]:
     return [(i / rate, s) for i, s in enumerate(scores)]
 
 
-def pick_window(src: Path, want: float) -> float:
-    """Instant de départ du segment le plus lisible de `want` secondes."""
+def pick_windows(src: Path, want: float, n: int = 1) -> list[float]:
+    """`n` instants de départ, répartis sur le tuto, chacun le plus lisible.
+
+    Le bloc D montre `n` moments DIFFÉRENTS du même tutoriel : on découpe le
+    corps du tuto en `n` tranches et on prend la meilleure fenêtre de chacune,
+    ce qui raconte la fonctionnalité au lieu de figer un seul écran.
+    """
     total = ff.duration(src)
-    if total <= want + 2.0:
-        return max(0.0, (total - want) / 2)
+    if total <= want * n + 2.0:
+        base = max(0.0, (total - want) / 2)
+        return [round(min(base + i * want, max(0.0, total - want)), 2)
+                for i in range(n)]
 
     samples = scene_scores(src)
-    if not samples:
-        return max(0.0, (total - want) / 2)
-
-    # Les tutos commencent par un carton titre et finissent par une page de fin :
-    # on ne cherche que dans le corps du tuto, là où l'action se passe.
+    # Les tutos ouvrent sur un carton titre et ferment sur une page de fin :
+    # on ne cherche que dans le corps, là où l'action se passe.
     lo = max(1.5, total * 0.10)
-    hi = min(total - want - 1.0, total * 0.85)
+    hi = min(total - want - 1.0, total * 0.88)
     if hi <= lo:
         lo, hi = 1.5, max(1.5, total - want - 1.0)
-    best_t, best_score = lo, -1.0
-    step = 0.5
-    t = lo
-    while t <= hi:
-        win = [s for ts, s in samples if t <= ts < t + want]
-        t += step
-        if not win or max(win) > HARD_CUT:
-            continue                      # coupe franche dans la fenêtre
-        mean = sum(win) / len(win)
-        if mean > best_score:
-            best_score, best_t = mean, t - step
-    return round(best_t if best_score >= 0 else lo, 2)
+
+    starts: list[float] = []
+    tranche = (hi - lo) / n
+    for i in range(n):
+        a, b = lo + i * tranche, lo + (i + 1) * tranche
+        best_t, best_score = a, -1.0
+        t = a
+        while t <= b:
+            win = [s for ts, s in samples if t <= ts < t + want]
+            t += 0.5
+            if not win or max(win) > HARD_CUT:
+                continue              # coupe franche dans la fenêtre
+            mean = sum(win) / len(win)
+            if mean > best_score:
+                best_score, best_t = mean, t - 0.5
+        starts.append(round(best_t, 2))
+    return starts
 
 
 def find_focus(src: Path, start: float, want: float) -> tuple[float, float]:
@@ -230,40 +239,37 @@ def main() -> int:
     # rôle. Les pools sont disjoints, donc une capture appartient toujours au
     # même rôle et hérite de la durée de son créneau. L'ORDRE des rôles ne bouge
     # jamais : la VO du bloc D annonce site → caisse → KDS → marketing.
-    besoins: dict[str, int] = {}
-    for ep in cfg["episodes"]:
-        for idx, role in enumerate(DEMO_ORDER):
-            nom = (ep.get("demo") or {}).get(role)
-            if nom:
-                besoins[nom] = idx
+    # Chaque épisode a SA capture logiciel (`episodes.json → demo_capture`) et
+    # son pitch de voix off. Le bloc D en montre 4 moments différents.
+    besoins = {ep["demo_capture"] for ep in cfg["episodes"]
+               if ep.get("demo_capture")}
 
-    for nom, idx in sorted(besoins.items()):
-        want = subs[idx]
+    for nom in sorted(besoins):
         raw = ROOT / "assets" / "demo" / f"{nom}_raw.mp4"
         if not raw.exists():
             report["missing"].append(
                 f"MISSING_DEMO_SRC assets/demo/{nom}_raw.mp4 — capture "
-                f"référencée par episodes.json → demo"
+                f"référencée par episodes.json → demo_capture"
             )
             continue
 
         cut = cuts.get(nom)
-        if cut is None or args.redetect:
+        if cut is None or args.redetect or "starts" not in cut:
             ff.log(f"DETECT {nom} …")
-            start = pick_window(raw, want)
-            fx, fy = find_focus(raw, start, want)
-            cut = {"src": f"assets/demo/{nom}_raw.mp4", "start": start,
-                   "focus_x": fx, "focus_y": fy, "zoom": 1.0, "role": nom,
+            starts = pick_windows(raw, max(subs), n=len(DEMO_ORDER))
+            cut = {"src": f"assets/demo/{nom}_raw.mp4", "starts": starts,
+                   "focus_x": 0.5, "focus_y": 0.5, "zoom": 1.0,
                    "detected": True}
             cuts[nom] = cut
             changed = True
-            ff.log(f"       start={start}s focus=({fx}, {fy})")
+            ff.log(f"       moments : {starts}")
 
-        dst = ROOT / "build" / f"demo_{nom}_{args.format}.mp4"
-        cut_demo(raw, dst, cut, width=W, height=H, fps=FPS, seconds=want)
+        for i, (start, want) in enumerate(zip(cut["starts"], subs)):
+            dst = ROOT / "build" / f"demo_{nom}_s{i}_{args.format}.mp4"
+            cut_demo(raw, dst, {**cut, "start": start},
+                     width=W, height=H, fps=FPS, seconds=want)
         report["ok"].append(
-            f"demo {nom}: {ff.duration(dst):.3f}s / {ff.frames(dst)} images "
-            f"@ start={cut['start']}s"
+            f"demo {nom}: {len(cut['starts'])} moments @ {cut['starts']}"
         )
 
     if changed:

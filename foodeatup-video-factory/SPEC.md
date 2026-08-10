@@ -57,20 +57,31 @@ regénération IA.
 Via MCP Google Drive (`search_files` sur `episodes.json → drive.demo_clips`, puis
 `download_file_content`) → `assets/demo/<nom>_raw.mp4`.
 
-Le bloc D enchaîne `site_web` → `caisse_pos` → `kds` → `marketing`.
+Le bloc D d'un épisode vient d'un SEUL tutoriel — voir « une démo par épisode ».
 
 ### Choix automatique du plan
 
-1. **Point d'entrée** — score de changement de scène échantillonné à 5 Hz ; on
-   garde la fenêtre la plus animée qui ne contient **aucune coupe franche**
-   (score > 0,35). La recherche est limitée au corps du tuto (10 % → 85 %) :
-   les tutos ouvrent sur un carton titre et ferment sur une page de fin.
-2. **Zone d'action** — grille 3×3, énergie de différence temporelle par case
-   (`tblend=difference` + `signalstats`) ; on retient la case qui bouge le plus.
-   C'est là que se trouve le bouton cliqué ou la carte qui se génère.
+**Points d'entrée** — score de changement de scène échantillonné à 5 Hz. Le
+corps du tuto (10 % → 88 %) est découpé en 4 tranches ; dans chacune on garde la
+fenêtre la plus animée qui ne contient **aucune coupe franche** (score > 0,35).
+Les tutos ouvrent sur un carton titre et ferment sur une page de fin, d'où les
+marges.
 
 Les choix sont figés dans `config/demo_cuts.json` (relus tels quels au run
 suivant, éditables à la main) — le montage est donc reproductible.
+
+### Bloc D : une démo par épisode
+
+Chaque épisode déclare **sa** capture logiciel (`demo_capture`) et **son** pitch
+de voix off (`demo_vo`) dans `episodes.json`. Le bloc D montre **4 moments
+différents du même tutoriel** — `pick_windows()` découpe le corps du tuto en 4
+tranches et retient la meilleure fenêtre de chacune, ce qui raconte la
+fonctionnalité au lieu de figer un écran.
+
+30 captures distinctes pour 30 épisodes : aucune démo n'est partagée.
+
+La VO de démo commune (`D-demo-30` / `D-demo-45`) ne sert plus que de repli
+quand `vo/demo/EPxx.mp3` n'a pas encore été généré.
 
 ### Cadrage du bloc D
 
@@ -86,18 +97,6 @@ assombrie. Aucune zone vide, aucun contenu perdu.
 `zoom` reste à **1,0** dans `config/demo_cuts.json`. Une valeur > 1 rogne la
 capture autour de la zone d'action détectée : à n'utiliser que si l'UI d'un tuto
 donné est vraiment trop petite, en connaissance de cause.
-
-### Plusieurs captures par rôle
-
-Un rôle peut avoir plusieurs sources : `assets/demo/<role>_raw.mp4`, puis
-`<role>-b_raw.mp4`, `<role>-c_raw.mp4`… `01_fetch_assets.py` les découpe toutes
-(`build/demo_<role>_v<N>_<format>.mp4`) et `03_assemble.py` en choisit une par
-épisode — index de l'épisode modulo le nombre de variantes. Les 30 vidéos ne
-montrent donc pas toutes les mêmes écrans, et le choix reste déterministe.
-
-**L'ORDRE des rôles ne change jamais** : la VO du bloc D annonce
-« ton site … ta caisse … ton KDS … ta boucle marketing » dans cet ordre. Varier
-les rôles par épisode désynchroniserait la narration.
 
 ### Garde-fou
 
@@ -131,8 +130,10 @@ de 0,6 la voix devient plate.
 
 ### Coût
 
-7 blocs communs générés **une seule fois** (B, C-30, C-45, D-30, D-45, E-30,
-E-45) + 30 punchlines courtes. Un MP3 déjà présent est ignoré sans `--force`.
+4 blocs communs réellement utilisés (B, C-30, C-45, E-30, E-45) + **30 pitchs de
+démo** (un par épisode, `vo/demo/EPxx.mp3`) + 30 punchlines. Un MP3 déjà présent
+est ignoré sans `--force` ; la normalisation loudnorm est inscrite dans
+`build/vo_normalized.json` pour ne jamais s'appliquer deux fois.
 
 ### Calage
 

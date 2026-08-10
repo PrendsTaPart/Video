@@ -229,6 +229,24 @@ def main() -> int:
                f"(cible {target}s)")
 
     wanted = {x.upper() for x in args.episode} if args.episode else None
+
+    # Pitch de démo : un par épisode, il présente LA fonctionnalité montrée
+    # dans le bloc D de cet épisode. Remplace la VO de démo commune.
+    ff.log("\nPitchs de démo (un par épisode) :")
+    for ep in cfg["episodes"]:
+        if wanted and ep["id"] not in wanted:
+            continue
+        texte = ep.get("demo_vo")
+        if not texte:
+            continue
+        dst = ROOT / "vo" / "demo" / f"{ep['id']}.mp3"
+        e = produce(f"demo-{ep['id']}", texte, len(texte) / 15.0, dst, voice,
+                    force=args.force, jobs=jobs)
+        journal.append(e)
+        ff.log(f"  {e['status']:<12} {ep['id']:<16} "
+               f"{e.get('duration_s', '—')}s / cible "
+               f"{len(texte) / 15.0:.1f}s")
+
     ff.log("\nPunchlines :")
     for ep in cfg["episodes"]:
         if wanted and ep["id"] not in wanted:

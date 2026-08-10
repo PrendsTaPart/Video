@@ -48,7 +48,7 @@ BUILD = ROOT / "build"
 OUT = ROOT / "out"
 FONTS = ROOT / "assets" / "fonts"
 
-DEMO_ORDER = ["site_web", "caisse_pos", "kds", "marketing"]
+SOUS_PLANS = 4            # le bloc D montre 4 moments du même tutoriel
 WHITE_FADE = 0.25          # fondu au blanc entre D et E
 MUSIC_LUFS = -22.0         # charte : musique à −22 LUFS
 MASTER_LUFS = -14.0
@@ -188,28 +188,25 @@ def build_demo(block: dict, fmt: dict, tag: str, fmt_name: str,
                ep: dict) -> Path:
     """4 sous-plans égaux + fondu au blanc sur la fin du bloc.
 
-    Chaque épisode a ses 4 captures logiciel, déclarées dans
-    `episodes.json → demo` : aucun bloc D n'est identique à un autre sur les 30.
-    L'ordre des rôles, lui, ne change jamais — la VO annonce site → caisse →
-    KDS → marketing dans cet ordre.
+    Chaque épisode a SA capture logiciel et SON pitch de voix off : le bloc D
+    montre 4 moments du même tutoriel, ce qui raconte la fonctionnalité au lieu
+    de figer un écran. Aucun épisode ne partage sa démo avec un autre.
     """
     want = block_seconds(block)
     # Mêmes durées frame-exactes que celles produites par 01_fetch_assets.py.
-    subs = ff.split_seconds(want, fmt["fps"], len(DEMO_ORDER))
-    demo = ep.get("demo") or {}
+    subs = ff.split_seconds(want, fmt["fps"], SOUS_PLANS)
+    capture = ep.get("demo_capture")
+    if not capture:
+        raise SystemExit(f"NO_DEMO_CAPTURE {ep['id']} — episodes.json → "
+                         f"demo_capture absent")
     parts = []
-    for name, sub in zip(DEMO_ORDER, subs):
-        capture = demo.get(name)
-        if not capture:
-            raise SystemExit(
-                f"NO_DEMO_MAPPING {ep['id']} — episodes.json → demo.{name} "
-                f"absent")
-        p = BUILD / f"demo_{capture}_{fmt_name}.mp4"
+    for i, sub in enumerate(subs):
+        p = BUILD / f"demo_{capture}_s{i}_{fmt_name}.mp4"
         if not p.exists():
             raise SystemExit(
                 f"MISSING_DEMO {p.name} — lance scripts/01_fetch_assets.py "
                 f"--format {fmt_name}")
-        parts.append(ff.normalize(p, BUILD / f"norm_D_{name}_{tag}.mp4",
+        parts.append(ff.normalize(p, BUILD / f"norm_D{i}_{tag}.mp4",
                                   width=fmt["width"], height=fmt["height"],
                                   fps=fmt["fps"], seconds=sub))
     joined = ff.concat(parts, BUILD / f"demo_join_{tag}.mp4", BUILD)
@@ -274,6 +271,12 @@ def build_vo_track(ep: dict, fmt: dict, tag: str, total: float) -> Path | None:
     segs: list[dict] = []
     for bid, rel in fmt["vo"].items():
         p = ROOT / rel
+        if bid == "D":
+            # Le pitch de démo est propre à l'épisode ; la VO commune ne sert
+            # plus que de repli si le pitch n'a pas encore été généré.
+            perso = ROOT / "vo" / "demo" / f"{ep['id']}.mp3"
+            if perso.exists():
+                p = perso
         blk = next(x for x in fmt["blocks"] if x["id"] == bid)
         if not p.exists():
             ff.log(f"  WARN MISSING_VO {rel}", err=True)
@@ -383,19 +386,26 @@ def mix_audio(video: Path, vo: Path | None, bed: Path, dst: Path,
 
     m = ff.measure_loudness(raw, target_i=MASTER_LUFS,
                             target_tp=MASTER_TP_TARGET)
-    # Filet de sécurité après loudnorm : sur un hook très percussif (le « boing »
-    # du burger d'EP19), le limiteur interne de loudnorm laisse passer des
-    # crêtes et le master sortait à −0,23 dBTP, hors charte. `alimiter` à
-    # −2 dBFS échantillon garantit un true peak sous −1 dBTP, l'écart
-    # inter-échantillon étant d'au plus ~0,5 dB. `level=disabled` empêche le
-    # filtre de remonter le niveau et de défaire le calage loudnorm.
-    limiteur = ",alimiter=limit=0.794:level=disabled"
     dst.parent.mkdir(parents=True, exist_ok=True)
-    ff.ffmpeg(["-i", str(video), "-i", str(raw),
-               "-af", ff.loudnorm_filter(m, target_i=MASTER_LUFS,
-                                         target_tp=MASTER_TP_TARGET) + limiteur,
-               "-map", "0:v:0", "-map", "1:a:0", "-c:v", "copy",
-               *ff.ACODEC, "-t", f"{total:.4f}", str(dst)])
+
+    # Le true peak se mesure APRÈS encodage AAC, et l'encodeur réintroduit des
+    # crêtes : sur EP08 (froissement de papier, très riche en aigus) la chaîne
+    # sortait à −2,0 dBFS et le master livré mesurait +2,13 dBTP. On limite
+    # donc, on vérifie le fichier encodé, et on resserre tant que la charte
+    # n'est pas tenue. `level=disabled` empêche alimiter de remonter le niveau
+    # et de défaire le calage loudnorm.
+    for limite in (0.794, 0.560, 0.400):
+        ff.ffmpeg(["-i", str(video), "-i", str(raw),
+                   "-af", ff.loudnorm_filter(m, target_i=MASTER_LUFS,
+                                             target_tp=MASTER_TP_TARGET)
+                   + f",alimiter=limit={limite}:level=disabled",
+                   "-map", "0:v:0", "-map", "1:a:0", "-c:v", "copy",
+                   *ff.ACODEC, "-t", f"{total:.4f}", str(dst)])
+        lr = ff.loudness_report(dst)
+        if lr["input_tp"] <= MASTER_TP_LIMIT:
+            break
+        ff.log(f"  INFO CRETE_AAC {lr['input_tp']:.2f} dBTP à limit={limite} "
+               f"→ on resserre le limiteur")
     return dst
 
 
@@ -512,9 +522,11 @@ def main() -> int:
         "vo_incluse": not args.skip_vo,
         "sources": {
             "hook": f"assets/hooks/{ep['id']}.mp4",
+            "demo_capture": ep.get("demo_capture"),
             "sting": "assets/brand/sting-logo.mp4",
             "probleme": "assets/brand/probleme.mp4",
-            "demo": [f"build/demo_{n}_{args.format}.mp4" for n in DEMO_ORDER],
+            "demo": [f"build/demo_{ep.get('demo_capture')}_s{i}_"
+                     f"{args.format}.mp4" for i in range(SOUS_PLANS)],
             "outro": "assets/brand/outro.mp4",
             "musique": "assets/music/bed.mp3",
             "vo": None if vo is None else str(vo.relative_to(ROOT)),

@@ -1,281 +1,392 @@
 {
+  "abonnement": {
+    "src": "assets/demo/abonnement_raw.mp4",
+    "starts": [
+      10.18,
+      19.76,
+      35.33,
+      44.41
+    ],
+    "focus_x": 0.5,
+    "focus_y": 0.5,
+    "zoom": 1.0,
+    "detected": true
+  },
+  "accueil-role": {
+    "src": "assets/demo/accueil-role_raw.mp4",
+    "starts": [
+      4.65,
+      14.75,
+      23.34,
+      35.94
+    ],
+    "focus_x": 0.5,
+    "focus_y": 0.5,
+    "zoom": 1.0,
+    "detected": true
+  },
   "besoins-production": {
     "src": "assets/demo/besoins-production_raw.mp4",
-    "start": 4.82,
+    "starts": [
+      4.82,
+      13.33,
+      19.33,
+      24.34
+    ],
     "focus_x": 0.5,
-    "focus_y": 0.167,
+    "focus_y": 0.5,
     "zoom": 1.0,
-    "role": "besoins-production",
     "detected": true
   },
   "borne": {
     "src": "assets/demo/borne_raw.mp4",
-    "start": 11.06,
+    "starts": [
+      2.06,
+      6.71,
+      7.86,
+      11.01
+    ],
     "focus_x": 0.5,
-    "focus_y": 0.833,
+    "focus_y": 0.5,
     "zoom": 1.0,
-    "role": "borne",
     "detected": true
   },
   "boutique": {
     "src": "assets/demo/boutique_raw.mp4",
-    "start": 6.35,
+    "starts": [
+      6.35,
+      21.73,
+      31.11,
+      47.98
+    ],
     "focus_x": 0.5,
     "focus_y": 0.5,
     "zoom": 1.0,
-    "role": "boutique",
     "detected": true
   },
-  "categories": {
-    "src": "assets/demo/categories_raw.mp4",
-    "start": 41.78,
+  "depenses": {
+    "src": "assets/demo/depenses_raw.mp4",
+    "starts": [
+      3.22,
+      9.99,
+      16.76,
+      26.03
+    ],
     "focus_x": 0.5,
-    "focus_y": 0.167,
+    "focus_y": 0.5,
     "zoom": 1.0,
-    "role": "categories",
     "detected": true
   },
-  "creer-devis": {
-    "src": "assets/demo/creer-devis_raw.mp4",
-    "start": 45.43,
+  "depenses-historique": {
+    "src": "assets/demo/depenses-historique_raw.mp4",
+    "starts": [
+      4.8,
+      20.16,
+      25.52,
+      40.38
+    ],
     "focus_x": 0.5,
-    "focus_y": 0.167,
+    "focus_y": 0.5,
     "zoom": 1.0,
-    "role": "creer-devis",
     "detected": true
   },
   "devis-statuts": {
     "src": "assets/demo/devis-statuts_raw.mp4",
-    "start": 7.81,
-    "focus_x": 0.833,
-    "focus_y": 0.833,
+    "starts": [
+      8.81,
+      11.75,
+      24.18,
+      31.61
+    ],
+    "focus_x": 0.5,
+    "focus_y": 0.5,
     "zoom": 1.0,
-    "role": "devis-statuts",
     "detected": true
   },
-  "ereporting": {
-    "src": "assets/demo/ereporting_raw.mp4",
-    "start": 13.68,
-    "focus_x": 0.833,
-    "focus_y": 0.167,
+  "dlc": {
+    "src": "assets/demo/dlc_raw.mp4",
+    "starts": [
+      5.75,
+      16.03,
+      22.32,
+      33.1
+    ],
+    "focus_x": 0.5,
+    "focus_y": 0.5,
     "zoom": 1.0,
-    "role": "ereporting",
+    "detected": true
+  },
+  "documents": {
+    "src": "assets/demo/documents_raw.mp4",
+    "starts": [
+      6.39,
+      19.92,
+      27.96,
+      35.49
+    ],
+    "focus_x": 0.5,
+    "focus_y": 0.5,
+    "zoom": 1.0,
     "detected": true
   },
   "facture-statuts": {
     "src": "assets/demo/facture-statuts_raw.mp4",
-    "start": 28.43,
-    "focus_x": 0.167,
-    "focus_y": 0.833,
+    "starts": [
+      7.93,
+      11.59,
+      26.75,
+      28.91
+    ],
+    "focus_x": 0.5,
+    "focus_y": 0.5,
     "zoom": 1.0,
-    "role": "facture-statuts",
     "detected": true
   },
   "factures": {
     "src": "assets/demo/factures_raw.mp4",
-    "start": 60.55,
-    "focus_x": 0.167,
-    "focus_y": 0.833,
+    "starts": [
+      9.05,
+      32.74,
+      48.44,
+      61.64
+    ],
+    "focus_x": 0.5,
+    "focus_y": 0.5,
     "zoom": 1.0,
-    "role": "factures",
     "detected": true
   },
   "fiche-plat": {
     "src": "assets/demo/fiche-plat_raw.mp4",
-    "start": 35.24,
+    "starts": [
+      9.24,
+      35.29,
+      52.35,
+      76.4
+    ],
     "focus_x": 0.5,
     "focus_y": 0.5,
     "zoom": 1.0,
-    "role": "fiche-plat",
-    "detected": true
-  },
-  "historique-productions": {
-    "src": "assets/demo/historique-productions_raw.mp4",
-    "start": 6.65,
-    "focus_x": 0.833,
-    "focus_y": 0.167,
-    "zoom": 1.0,
-    "role": "historique-productions",
-    "detected": true
-  },
-  "ingredients": {
-    "src": "assets/demo/ingredients_raw.mp4",
-    "start": 66.4,
-    "focus_x": 0.167,
-    "focus_y": 0.833,
-    "zoom": 1.0,
-    "role": "ingredients",
     "detected": true
   },
   "jarvis": {
     "src": "assets/demo/jarvis_raw.mp4",
-    "start": 29.07,
+    "starts": [
+      9.57,
+      17.98,
+      28.88,
+      39.79
+    ],
     "focus_x": 0.5,
     "focus_y": 0.5,
     "zoom": 1.0,
-    "role": "jarvis",
     "detected": true
   },
-  "liste-courses": {
-    "src": "assets/demo/liste-courses_raw.mp4",
-    "start": 33.03,
+  "livraisons": {
+    "src": "assets/demo/livraisons_raw.mp4",
+    "starts": [
+      12.95,
+      13.12,
+      27.78,
+      31.95
+    ],
     "focus_x": 0.5,
-    "focus_y": 0.833,
-    "zoom": 1.0,
-    "role": "liste-courses",
-    "detected": true
-  },
-  "mcp": {
-    "src": "assets/demo/mcp_raw.mp4",
-    "start": 8.43,
-    "focus_x": 0.167,
     "focus_y": 0.5,
     "zoom": 1.0,
-    "role": "mcp",
     "detected": true
   },
   "mes-commandes": {
     "src": "assets/demo/mes-commandes_raw.mp4",
-    "start": 47.65,
-    "focus_x": 0.167,
+    "starts": [
+      16.65,
+      21.67,
+      27.69,
+      47.22
+    ],
+    "focus_x": 0.5,
     "focus_y": 0.5,
     "zoom": 1.0,
-    "role": "mes-commandes",
+    "detected": true
+  },
+  "mouvements-stock": {
+    "src": "assets/demo/mouvements-stock_raw.mp4",
+    "starts": [
+      6.91,
+      7.48,
+      11.54,
+      18.61
+    ],
+    "focus_x": 0.5,
+    "focus_y": 0.5,
+    "zoom": 1.0,
+    "detected": true
+  },
+  "notifications": {
+    "src": "assets/demo/notifications_raw.mp4",
+    "starts": [
+      2.36,
+      5.21,
+      8.55,
+      13.89
+    ],
+    "focus_x": 0.5,
+    "focus_y": 0.5,
+    "zoom": 1.0,
     "detected": true
   },
   "performances": {
     "src": "assets/demo/performances_raw.mp4",
-    "start": 14.34,
-    "focus_x": 0.167,
-    "focus_y": 0.833,
+    "starts": [
+      4.84,
+      6.64,
+      8.43,
+      14.22
+    ],
+    "focus_x": 0.5,
+    "focus_y": 0.5,
     "zoom": 1.0,
-    "role": "performances",
     "detected": true
   },
-  "pin-jarvis": {
-    "src": "assets/demo/pin-jarvis_raw.mp4",
-    "start": 3.94,
+  "planning-employe": {
+    "src": "assets/demo/planning-employe_raw.mp4",
+    "starts": [
+      4.12,
+      9.65,
+      16.19,
+      17.73
+    ],
     "focus_x": 0.5,
-    "focus_y": 0.167,
+    "focus_y": 0.5,
     "zoom": 1.0,
-    "role": "pin-jarvis",
+    "detected": true
+  },
+  "planning-poste": {
+    "src": "assets/demo/planning-poste_raw.mp4",
+    "starts": [
+      10.8,
+      40.5,
+      45.69,
+      63.39
+    ],
+    "focus_x": 0.5,
+    "focus_y": 0.5,
+    "zoom": 1.0,
     "detected": true
   },
   "predibot": {
     "src": "assets/demo/predibot_raw.mp4",
-    "start": 1.5,
+    "starts": [
+      1.5,
+      5.0,
+      5.49,
+      8.98
+    ],
     "focus_x": 0.5,
-    "focus_y": 0.833,
+    "focus_y": 0.5,
     "zoom": 1.0,
-    "role": "predibot",
     "detected": true
   },
   "predibot-suggestions": {
     "src": "assets/demo/predibot-suggestions_raw.mp4",
-    "start": 6.22,
-    "focus_x": 0.167,
+    "starts": [
+      6.22,
+      14.96,
+      27.2,
+      34.43
+    ],
+    "focus_x": 0.5,
     "focus_y": 0.5,
     "zoom": 1.0,
-    "role": "predibot-suggestions",
     "detected": true
   },
   "production": {
     "src": "assets/demo/production_raw.mp4",
-    "start": 3.22,
+    "starts": [
+      9.22,
+      10.0,
+      19.78,
+      26.56
+    ],
     "focus_x": 0.5,
-    "focus_y": 0.833,
-    "zoom": 1.0,
-    "role": "production",
-    "detected": true
-  },
-  "production-ingredients": {
-    "src": "assets/demo/production-ingredients_raw.mp4",
-    "start": 44.12,
-    "focus_x": 0.5,
-    "focus_y": 0.167,
-    "zoom": 1.0,
-    "role": "production-ingredients",
-    "detected": true
-  },
-  "productions": {
-    "src": "assets/demo/productions_raw.mp4",
-    "start": 17.66,
-    "focus_x": 0.5,
-    "focus_y": 0.833,
-    "zoom": 1.0,
-    "role": "productions",
-    "detected": true
-  },
-  "produits": {
-    "src": "assets/demo/produits_raw.mp4",
-    "start": 7.96,
-    "focus_x": 0.167,
     "focus_y": 0.5,
     "zoom": 1.0,
-    "role": "produits",
     "detected": true
   },
   "profil-entreprise": {
     "src": "assets/demo/profil-entreprise_raw.mp4",
-    "start": 9.5,
-    "focus_x": 0.167,
-    "focus_y": 0.167,
+    "starts": [
+      1.5,
+      3.82,
+      8.15,
+      9.47
+    ],
+    "focus_x": 0.5,
+    "focus_y": 0.5,
     "zoom": 1.0,
-    "role": "profil-entreprise",
     "detected": true
   },
   "qrcode": {
     "src": "assets/demo/qrcode_raw.mp4",
-    "start": 13.54,
-    "focus_x": 0.833,
+    "starts": [
+      13.54,
+      26.35,
+      32.67,
+      48.48
+    ],
+    "focus_x": 0.5,
     "focus_y": 0.5,
     "zoom": 1.0,
-    "role": "qrcode",
     "detected": true
   },
   "recettes": {
     "src": "assets/demo/recettes_raw.mp4",
-    "start": 21.81,
+    "starts": [
+      15.31,
+      33.97,
+      54.63,
+      76.29
+    ],
     "focus_x": 0.5,
     "focus_y": 0.5,
     "zoom": 1.0,
-    "role": "recettes",
     "detected": true
   },
   "statistiques-module": {
     "src": "assets/demo/statistiques-module_raw.mp4",
-    "start": 33.56,
+    "starts": [
+      12.06,
+      16.44,
+      33.81,
+      34.69
+    ],
     "focus_x": 0.5,
-    "focus_y": 0.833,
-    "zoom": 1.0,
-    "role": "statistiques-module",
-    "detected": true
-  },
-  "templates": {
-    "src": "assets/demo/templates_raw.mp4",
-    "start": 3.0,
-    "focus_x": 0.833,
     "focus_y": 0.5,
     "zoom": 1.0,
-    "role": "templates",
     "detected": true
   },
-  "tva": {
-    "src": "assets/demo/tva_raw.mp4",
-    "start": 7.32,
+  "taches": {
+    "src": "assets/demo/taches_raw.mp4",
+    "starts": [
+      17.01,
+      27.6,
+      47.69,
+      72.28
+    ],
     "focus_x": 0.5,
-    "focus_y": 0.833,
+    "focus_y": 0.5,
     "zoom": 1.0,
-    "role": "tva",
     "detected": true
   },
   "vitrine": {
     "src": "assets/demo/vitrine_raw.mp4",
-    "start": 64.81,
-    "focus_x": 0.833,
+    "starts": [
+      23.81,
+      64.75,
+      65.2,
+      91.64
+    ],
+    "focus_x": 0.5,
     "focus_y": 0.5,
     "zoom": 1.0,
-    "role": "vitrine",
     "detected": true
   }
 }
