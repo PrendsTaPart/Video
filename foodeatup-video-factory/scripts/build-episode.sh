@@ -70,7 +70,8 @@ pad=1080:$SOFT_H:(ow-iw)/2:(oh-ih)/2:color=$SABLE[mid];\
  color=c=$SABLE:s=1080x$BAND_H:r=30,trim=0:10[band];\
  [top][mid][band]vstack=inputs=3[stack];\
  [stack][2:v]overlay=(W-w)/2:H-$BAND_H+(($BAND_H-h)/2):format=auto[ov];\
- [ov]fade=t=in:st=0:d=0.35:color=$SABLE,format=yuv420p[v];\
+ [ov]fade=t=in:st=0:d=0.35:color=$SABLE,\
+fade=t=out:st=9.70:d=0.30:color=$SABLE,format=yuv420p[v];\
  [0:a]atrim=start=$DEBUT,asetpts=PTS-STARTPTS,aresample=48000,\
 atempo=$TEMPO,apad,atrim=0:10,asetpts=PTS-STARTPTS,volume=1.0[voice];\
  [3:a]aresample=48000,atrim=16:26,asetpts=PTS-STARTPTS,volume=$BED_GAIN,\

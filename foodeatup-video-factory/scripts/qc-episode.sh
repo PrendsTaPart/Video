@@ -40,8 +40,11 @@ verifie_logo() {  # $1 = seconde, $2 = crop ffmpeg, $3 = libellé
   { [ "$BL" -gt 60 ] && [ "$BL" -lt 200 ]; } \
     && ok "logo présent à $1s ($3)" || ko "logo absent/illisible à $1s ($3, luminance $BL)"
 }
-for t in 1 15 29; do verifie_logo "$t" "250:93:795:57" "haut-droite"; done
+for t in 1 15; do verifie_logo "$t" "250:93:795:57" "haut-droite"; done
 verifie_logo 21 "250:93:415:1777" "bandeau bas"
+# sur le carton de fin le filigrane est retiré : c'est la grande signature centrale
+# qui porte la marque, sinon on aurait deux logos à l'écran.
+verifie_logo 29 "400:150:340:780" "signature centrale"
 
 [ $FAIL -eq 0 ] && echo "=== $EP CONFORME ===" || echo "=== $EP RESTE DANS build/ ==="
 exit $FAIL
