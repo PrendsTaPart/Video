@@ -28,6 +28,8 @@ réutilisables entre les vidéos du studio. Générées via RapidoCMS.
 - `setup-blank.png` — gérant devant un compte FoodEatUp vide à configurer (cartes vides, ?)
 - `configurateur-agent.png` — agent robot IA « Configurateur » qui assemble le setup (menu, tables, équipe, checklist)
 - `chef-haccp-badge.png` — chef moustachu 3D, gants noirs, badge HACCP sur la veste (fourni par Michael 2026-07-11)
+- `surstock-clients-muets.png` — chef inquiet, cagette de saumon trop pleine devant une chambre froide, clients en silhouettes grises avec bulles vides (généré 2026-08-07, série « 8 boucles »)
+- `clients-qui-ne-reviennent-pas.png` — gérant pensif dans une salle vide, clients fantômes qui s'effacent (généré 2026-08-07, série « 8 boucles »). ⚠️ Son sujet est pâle et fondu dans le fond : ne pas la détourer par remplissage depuis les bords, on y perdrait les silhouettes.
 
 Pour utiliser dans un projet : copier le PNG voulu dans `<projet>/public/`
 (les chemins d'assets HyperFrames sont relatifs à la racine du projet).

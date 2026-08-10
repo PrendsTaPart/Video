@@ -1,0 +1,38 @@
+{
+  "boucle-00-principe": {
+    "probleme": "chef-robot-highfive",
+    "resultat": "chef-kitchen-calm"
+  },
+  "boucle-01-configuration-boutique": {
+    "probleme": "setup-blank",
+    "resultat": "configurateur-agent"
+  },
+  "boucle-02-equipe": {
+    "probleme": "planning-chaos",
+    "resultat": "chef-planning-board"
+  },
+  "boucle-03-stockvision": {
+    "probleme": "stock-chaos",
+    "resultat": "chef-storeroom"
+  },
+  "boucle-04-haccp": {
+    "probleme": "haccp-paperwork",
+    "resultat": "chef-fridge-temp"
+  },
+  "boucle-05-ecommerce": {
+    "probleme": "phone-chaos",
+    "resultat": "caroline-agent"
+  },
+  "boucle-06-communication": {
+    "probleme": "surstock-clients-muets",
+    "resultat": "commerciale-chef"
+  },
+  "boucle-07-fidelite": {
+    "probleme": "clients-qui-ne-reviennent-pas",
+    "resultat": "equipe-tablette"
+  },
+  "boucle-08-comptabilite": {
+    "probleme": "compta-chaos",
+    "resultat": "chef-desk-calm"
+  }
+}

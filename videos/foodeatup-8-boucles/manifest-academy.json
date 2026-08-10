@@ -1,0 +1,83 @@
+[
+  {
+    "slug": "boucle-00-principe",
+    "order": 0,
+    "title": "Le principe : une boucle se referme",
+    "videoUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/boucle-00-principe-v1",
+    "thumbnailUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/boucle-00-principe-thumbnail",
+    "durationSeconds": 44,
+    "outilsMcp": 177
+  },
+  {
+    "slug": "boucle-01-configuration-boutique",
+    "order": 1,
+    "title": "Configuration boutique : un prix change, toutes vos marges se recalculent",
+    "videoUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/boucle-01-configuration-boutique-v1",
+    "thumbnailUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/boucle-01-configuration-boutique-thumbnail",
+    "durationSeconds": 76,
+    "outilsMcp": 39
+  },
+  {
+    "slug": "boucle-02-equipe",
+    "order": 2,
+    "title": "Équipe : vos plannings tiennent compte de l'activité réelle",
+    "videoUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/boucle-02-equipe-v1",
+    "thumbnailUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/boucle-02-equipe-thumbnail",
+    "durationSeconds": 72,
+    "outilsMcp": 21
+  },
+  {
+    "slug": "boucle-03-stockvision",
+    "order": 3,
+    "title": "StockVisionAI : vos ventes deviennent vos achats et votre production",
+    "videoUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/boucle-03-stockvision-v1",
+    "thumbnailUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/boucle-03-stockvision-thumbnail",
+    "durationSeconds": 73,
+    "outilsMcp": 11
+  },
+  {
+    "slug": "boucle-04-haccp",
+    "order": 4,
+    "title": "HACCP : votre dossier de conformité se construit chaque jour",
+    "videoUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/boucle-04-haccp-v1",
+    "thumbnailUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/boucle-04-haccp-thumbnail",
+    "durationSeconds": 74,
+    "outilsMcp": 16
+  },
+  {
+    "slug": "boucle-05-ecommerce",
+    "order": 5,
+    "title": "E-commerce : votre carte en ligne, sans commission",
+    "videoUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/boucle-05-ecommerce-v1",
+    "thumbnailUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/boucle-05-ecommerce-thumbnail",
+    "durationSeconds": 75,
+    "outilsMcp": 39
+  },
+  {
+    "slug": "boucle-06-communication",
+    "order": 6,
+    "title": "Communication : ce que vous savez, vos clients le savent le matin même",
+    "videoUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/boucle-06-communication-v1",
+    "thumbnailUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/boucle-06-communication-thumbnail",
+    "durationSeconds": 72,
+    "outilsMcp": 15
+  },
+  {
+    "slug": "boucle-07-fidelite",
+    "order": 7,
+    "title": "Fidélité et marketing : chaque client servi devient une relation réactivable",
+    "videoUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/boucle-07-fidelite-v1",
+    "thumbnailUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/boucle-07-fidelite-thumbnail",
+    "durationSeconds": 71,
+    "outilsMcp": 19
+  },
+  {
+    "slug": "boucle-08-comptabilite",
+    "order": 8,
+    "title": "Comptabilité : le chiffre du jour, avant d'éteindre la lumière",
+    "videoUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/boucle-08-comptabilite-v1",
+    "thumbnailUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/boucle-08-comptabilite-thumbnail",
+    "durationSeconds": 68,
+    "outilsMcp": 17
+  }
+]
