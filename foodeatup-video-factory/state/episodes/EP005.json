@@ -10,12 +10,12 @@
   "vo_punchline": "Un seul outil, ça change tout.",
   "heygen_script": "Un seul paramétrage : ta carte, tes zones, tes tables, ta TVA. Tout le reste s'appuie dessus. Tu ne ressaisis jamais deux fois la même information.",
   "etat": {
-    "hook": "manquant",
-    "avatar": "manquant",
-    "software": "manquant",
-    "vo": "manquant",
-    "build": "manquant",
+    "hook": "ok",
+    "avatar": "ok",
+    "software": "ok",
+    "vo": "ok",
+    "build": "ok",
     "publie": "manquant"
   },
-  "notes": ""
+  "notes": "Monté de bout en bout. Aucune accélération de l'avatar."
 }
