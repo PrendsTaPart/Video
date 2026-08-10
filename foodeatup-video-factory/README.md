@@ -83,18 +83,22 @@ lisibles une fois tronqués à la durée du master 30 s.
 ## État
 
 - ✅ scripts 00 → 04, testés de bout en bout
-- ✅ QA 7 tests, bloquante
-- ✅ voix off : **Olivier** (`rgFgMEXfdGwXCYio7I0J`, voix française native déjà
-  utilisée dans `hero-video/`) — 7 blocs communs + punchlines, normalisés
-- ⏳ hooks : **8/30** récupérés depuis Higgsfield
-  (EP01, EP02, EP03, EP04, EP06, EP09, EP10, EP11 ; une 2ᵉ prise d'EP04 est
-  rangée dans `assets/hooks/alt/`)
-- ⏳ bloc D : les sous-plans `kds` et `marketing` sont des **substituts** pris
-  dans les captures du dépôt — les vrais tutos sont sur le Drive, IDs notés dans
-  `config/demo_cuts.json`
+- ✅ QA 7 tests, bloquante — **56 masters, 56 publiables**
+- ✅ voix off **Olivier** (`rgFgMEXfdGwXCYio7I0J`) : blocs communs, 28 punchlines
+  et **28 pitchs de démo**, un par épisode, tous normalisés
+- ✅ **28 épisodes sur 30** montés en TikTok 30 s ET LinkedIn 1:1 45 s
+- ✅ 28 plans de publication prêts dans `build/publish_plan_EPxx.json`
+- ⏳ **EP24** (la mouette braqueuse) et **EP28** (le tapis à sushis fou) :
+  séquences Higgsfield à générer
+- ⏳ publication : rien n'est envoyé, TikTok reste en `SELF_ONLY`
 
-### Mapping hook ↔ épisode
+### Une démo par épisode
 
-Établi à partir des prompts Higgsfield eux-mêmes, pas d'une hypothèse sur
-l'image : `9b79bede` (scooter + dos d'âne) est EP11, tandis que `b5d50c1e`
-(skateboard) est EP02 — les deux montrent un livreur qui tombe.
+Chaque épisode a **sa** capture logiciel et **son** pitch de voix off, écrits
+dans `episodes.json` (`demo_capture`, `demo_vo`). Le bloc D montre 4 moments du
+même tutoriel. 30 captures distinctes : aucun épisode ne partage sa démo.
+
+### Cadence de publication
+
+3 posts par semaine et par réseau (lundi / mercredi / vendredi), 2 h d'écart
+entre réseaux. Départ au 17/08/2026, EP30 tombe le 23/10 — soit ~10 semaines.
