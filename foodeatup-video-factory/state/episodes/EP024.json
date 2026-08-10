@@ -10,7 +10,7 @@
   "vo_punchline": "Récupère tes commandes en direct.",
   "heygen_script": "Ton site de commande est créé par l'IA depuis ta carte. Tes clients commandent en direct, chez toi. Zéro commission sur ces commandes-là.",
   "etat": {
-    "hook": "manquant",
+    "hook": "ok",
     "avatar": "manquant",
     "software": "manquant",
     "vo": "manquant",

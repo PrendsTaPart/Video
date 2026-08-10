@@ -10,7 +10,7 @@
   "vo_punchline": "Ce qui n'est pas suivi finit par disparaître.",
   "heygen_script": "Ce qui n'est pas suivi disparaît. Ici chaque produit a son niveau, son seuil et son historique. Tu vois le trou avant le service, pas après.",
   "etat": {
-    "hook": "manquant",
+    "hook": "ok",
     "avatar": "manquant",
     "software": "manquant",
     "vo": "manquant",

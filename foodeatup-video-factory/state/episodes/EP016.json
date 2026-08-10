@@ -10,7 +10,7 @@
   "vo_punchline": "On va refermer le robinet.",
   "heygen_script": "Tu enregistres tes achats fournisseurs avec le détail des lignes. Tes dépenses du mois s'additionnent toutes seules, en face de ton chiffre d'affaires.",
   "etat": {
-    "hook": "manquant",
+    "hook": "ok",
     "avatar": "manquant",
     "software": "manquant",
     "vo": "manquant",

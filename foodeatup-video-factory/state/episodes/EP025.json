@@ -10,7 +10,7 @@
   "vo_punchline": "Ça éclabousse. Et rarement toi.",
   "heygen_script": "Tu ne lances plus une promo au hasard. FoodEatUp te propose la campagne depuis tes vraies données clients : qui cibler, avec quelle offre, quel jour.",
   "etat": {
-    "hook": "manquant",
+    "hook": "ok",
     "avatar": "manquant",
     "software": "manquant",
     "vo": "manquant",

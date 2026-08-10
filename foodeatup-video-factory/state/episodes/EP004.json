@@ -10,7 +10,7 @@
   "vo_punchline": "Il gère mieux que ton logiciel actuel.",
   "heygen_script": "Ta caisse se configure en quelques minutes : TPE, ticket, moyens de paiement. Elle est reliée à ta carte et à ta cuisine, pas posée à côté.",
   "etat": {
-    "hook": "manquant",
+    "hook": "ok",
     "avatar": "manquant",
     "software": "manquant",
     "vo": "manquant",

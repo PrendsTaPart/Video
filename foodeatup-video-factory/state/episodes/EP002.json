@@ -10,7 +10,7 @@
   "vo_punchline": "Ça finit toujours par terre.",
   "heygen_script": "Tu prends la commande à table, elle part en cuisine dans la seconde. Pas de carnet, pas d'aller-retour, pas de ticket perdu entre la salle et le pass.",
   "etat": {
-    "hook": "manquant",
+    "hook": "ok",
     "avatar": "ok",
     "software": "manquant",
     "vo": "manquant",

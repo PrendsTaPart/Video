@@ -10,7 +10,7 @@
   "vo_punchline": "Avec un KDS, il regarde son plat arriver.",
   "heygen_script": "Le KDS affiche chaque plat, son poste et son temps d'attente. Le client ne regarde plus la cuisine : il regarde son plat arriver.",
   "etat": {
-    "hook": "manquant",
+    "hook": "ok",
     "avatar": "manquant",
     "software": "manquant",
     "vo": "manquant",

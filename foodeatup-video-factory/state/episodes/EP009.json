@@ -10,7 +10,7 @@
   "vo_punchline": "Ton abonnement logiciel, par exemple.",
   "heygen_script": "À chaque clôture, l'écart entre le théorique et le compté s'affiche. Tu vois quel service dérape et de combien. Ce qui se mesure s'arrête.",
   "etat": {
-    "hook": "manquant",
+    "hook": "ok",
     "avatar": "manquant",
     "software": "manquant",
     "vo": "manquant",

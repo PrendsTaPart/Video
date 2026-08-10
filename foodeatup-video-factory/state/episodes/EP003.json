@@ -10,7 +10,7 @@
   "vo_punchline": "Elle coule. On va la repêcher.",
   "heygen_script": "Chaque plat de ta carte a son coût matière calculé depuis tes ingrédients. Tu vois ta marge réelle, plat par plat, avant même de fixer ton prix.",
   "etat": {
-    "hook": "manquant",
+    "hook": "ok",
     "avatar": "ok",
     "software": "ok",
     "vo": "manquant",

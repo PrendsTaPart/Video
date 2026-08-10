@@ -10,7 +10,7 @@
   "vo_punchline": "Pour dix logiciels qui ne se parlent même pas.",
   "heygen_script": "Tout est déjà là : caisse, stock, planning, marketing, HACCP. Un seul abonnement, une seule base de données. Tes outils arrêtent de s'ignorer.",
   "etat": {
-    "hook": "manquant",
+    "hook": "ok",
     "avatar": "manquant",
     "software": "manquant",
     "vo": "manquant",

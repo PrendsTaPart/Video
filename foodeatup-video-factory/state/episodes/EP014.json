@@ -10,7 +10,7 @@
   "vo_punchline": "Lui au moins, il sait ce qu'il y a en stock.",
   "heygen_script": "Chaque entrée, chaque sortie, chaque perte est enregistrée. Tu vois ce qui part sans être vendu. Le gaspillage devient une ligne, donc un problème réglable.",
   "etat": {
-    "hook": "manquant",
+    "hook": "ok",
     "avatar": "manquant",
     "software": "manquant",
     "vo": "manquant",

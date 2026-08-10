@@ -10,7 +10,7 @@
   "vo_punchline": "Tes vrais clients aussi devraient pouvoir.",
   "heygen_script": "Tu ajoutes une réservation en dix secondes, la table libre est proposée automatiquement. Et tes clients peuvent le faire eux-mêmes, depuis ton site.",
   "etat": {
-    "hook": "manquant",
+    "hook": "ok",
     "avatar": "manquant",
     "software": "manquant",
     "vo": "manquant",

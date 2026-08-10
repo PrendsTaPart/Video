@@ -10,7 +10,7 @@
   "vo_punchline": "Une fiche technique, et c'est pareil tous les jours.",
   "heygen_script": "Ta recette est enregistrée : ingrédients, quantités, étapes. Le plat sort pareil que ce soit toi ou ton commis. Et son coût est calculé.",
   "etat": {
-    "hook": "manquant",
+    "hook": "ok",
     "avatar": "manquant",
     "software": "manquant",
     "vo": "manquant",

@@ -10,7 +10,7 @@
   "vo_punchline": "Un KDS, et le combat s'arrête.",
   "heygen_script": "Tu crées tes postes : chaud, froid, dessert. Chaque plat part au bon écran. Plus d'imprimante à secouer au milieu du service.",
   "etat": {
-    "hook": "manquant",
+    "hook": "ok",
     "avatar": "manquant",
     "software": "manquant",
     "vo": "manquant",

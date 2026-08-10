@@ -10,7 +10,7 @@
   "vo_punchline": "Mille euros par mois. Pour dix outils qui ne se parlent pas.",
   "heygen_script": "Un écran, le matin : ton chiffre d'affaires prévu, ta fréquentation, tes points de tension. C'est ton point du jour, sans ouvrir dix onglets.",
   "etat": {
-    "hook": "manquant",
+    "hook": "ok",
     "avatar": "manquant",
     "software": "manquant",
     "vo": "manquant",
