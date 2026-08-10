@@ -23,6 +23,30 @@ AV_CROP_Y=30       # décalage du crop avatar : garde la toque et le menton
 BED_GAIN=0.224     # -13 dB : cale la musique sur le plancher -28 dBFS de la référence
 SFX_GAIN=2.0       # +6 dB : whoosh audible sous la voix
 
+# --- Calage de l'avatar sur le créneau de 10 s --------------------------------
+# L'avatar fait rarement 10,000 s. Deux cas, deux traitements :
+#   plus court -> dernière frame clonée, la musique tient le fond
+#   plus long  -> atempo sur la plage de parole utile (hauteur préservée)
+# On mesure la parole réelle, pas la durée du fichier : HeyGen laisse du silence
+# en tête et en queue, et l'accélérer serait accélérer du vide.
+LECTURE="$(ffmpeg -v error -i "$R/assets/avatar/$EP.mp4" -ac 1 -ar 16000 -f s16le - 2>/dev/null | python3 -c "
+import sys,struct,math
+d=sys.stdin.buffer.read();n=len(d)//2;s=struct.unpack('<%dh'%n,d[:n*2])
+SR,W=16000,800
+lv=[]
+for i in range(0,n,W):
+    ch=s[i:i+W]
+    if len(ch)<W//2: break
+    r=math.sqrt(sum(x*x for x in ch)/len(ch))
+    lv.append(20*math.log10(r/32768+1e-12))
+idx=[i for i,v in enumerate(lv) if v>-45]
+print(f'{idx[0]*0.05:.2f} {(idx[-1]+1)*0.05:.2f}' if idx else '0 0')")"
+DEBUT="$(echo "$LECTURE" | cut -d' ' -f1)"
+FIN="$(echo "$LECTURE" | cut -d' ' -f2)"
+UTILE="$(python3 -c "print(f'{max(0.1,$FIN-$DEBUT):.3f}')")"
+TEMPO="$(python3 -c "print(f'{max(1.0,$UTILE/10.0):.4f}')")"
+echo "  avatar : parole ${DEBUT}s → ${FIN}s (${UTILE}s utiles), atempo ${TEMPO}"
+
 # --- Segment D : avatar 45 % (864 px) au-dessus du logiciel 55 % (1056 px) -----
 # Le screencast n'est JAMAIS rogné : il est padé sur le fond sable.
 # L'avatar est plus court que 10 s -> dernière frame clonée, audio complété en silence.
@@ -35,14 +59,16 @@ ffmpeg -v error \
  -i "$R/templates/bgm.mp3" \
  -i "$R/templates/sfx_transition.mp3" \
  -filter_complex "\
- [0:v]fps=30,crop=1080:864:0:$AV_CROP_Y,tpad=stop_mode=clone:stop_duration=3,\
+ [0:v]trim=start=$DEBUT,setpts=(PTS-STARTPTS)/$TEMPO,fps=30,\
+crop=1080:864:0:$AV_CROP_Y,tpad=stop_mode=clone:stop_duration=3,\
 trim=0:10,setpts=PTS-STARTPTS[top];\
  [1:v]fps=30,scale=1080:1056:force_original_aspect_ratio=decrease,\
 pad=1080:1056:(ow-iw)/2:(oh-ih)/2:color=$SABLE[bot];\
  [top][bot]vstack=inputs=2[stack];\
  [stack][2:v]overlay=$LOGO_X:$LOGO_Y:format=auto[ov];\
  [ov]fade=t=in:st=0:d=0.35:color=$SABLE,format=yuv420p[v];\
- [0:a]aresample=48000,apad,atrim=0:10,asetpts=PTS-STARTPTS,volume=1.0[voice];\
+ [0:a]atrim=start=$DEBUT,asetpts=PTS-STARTPTS,aresample=48000,\
+atempo=$TEMPO,apad,atrim=0:10,asetpts=PTS-STARTPTS,volume=1.0[voice];\
  [3:a]aresample=48000,atrim=16:26,asetpts=PTS-STARTPTS,volume=$BED_GAIN,\
 afade=t=in:st=0:d=0.3[bed];\
  [4:a]aresample=48000,volume=$SFX_GAIN,apad,atrim=0:10,asetpts=PTS-STARTPTS[wh];\
