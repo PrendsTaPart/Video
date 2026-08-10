@@ -11,11 +11,11 @@
   "heygen_script": "Chaque commande génère sa facture. Tu retrouves le facturé, l'encaissé et les impayés dans le même écran. La fin de mois devient une lecture, pas une reconstitution.",
   "etat": {
     "hook": "manquant",
-    "avatar": "manquant",
-    "software": "manquant",
+    "avatar": "ok",
+    "software": "ok",
     "vo": "manquant",
-    "build": "manquant",
+    "build": "segment D seul",
     "publie": "manquant"
   },
-  "notes": ""
+  "notes": "Avatar et logiciel reçus, segment D monté. Le hook Higgsfield n'existe pas : EP008 est le seul des 33 premiers absent de l'historique. Prompt à générer côté humain, dans content/prompts-higgsfield.json."
 }
