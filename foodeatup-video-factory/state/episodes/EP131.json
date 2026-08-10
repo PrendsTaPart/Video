@@ -1,0 +1,21 @@
+{
+  "id": "EP131",
+  "num": 131,
+  "saison": 5,
+  "titre": "Rentrée : tout le monde est encore en vacances",
+  "module": "Équipe & Planning",
+  "chapitre": "planning de la semaine",
+  "module_drive_id": "1wboT7bVjEwxbhpU9Xgz8sRjjqn9XEd7X",
+  "hook": "1er septembre. Deux absents.",
+  "vo_punchline": "Un planning, ça se prépare avant la rentrée.",
+  "heygen_script": "Tu construis la semaine de rentrée en amont : shifts posés, congés validés, coût affiché. Le premier septembre, tu n'es pas seul en cuisine.",
+  "etat": {
+    "hook": "manquant",
+    "avatar": "manquant",
+    "software": "manquant",
+    "vo": "manquant",
+    "build": "manquant",
+    "publie": "manquant"
+  },
+  "notes": ""
+}

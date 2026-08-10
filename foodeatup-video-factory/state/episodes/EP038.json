@@ -1,0 +1,21 @@
+{
+  "id": "EP038",
+  "num": 38,
+  "saison": 2,
+  "titre": "Le chariot fou",
+  "module": "StockVision",
+  "chapitre": "4 - Ma liste de courses",
+  "module_drive_id": "1Ib_pKyJ8_jaFAwtIhkzhtmUU_DCtGSSY",
+  "hook": "Le réappro du lundi.",
+  "vo_punchline": "Commander à l'instinct, ça finit toujours en course.",
+  "heygen_script": "Ta commande fournisseur se construit depuis tes stocks bas et ta production prévue. Tu ne commandes plus à l'instinct dans les rayons.",
+  "etat": {
+    "hook": "manquant",
+    "avatar": "manquant",
+    "software": "manquant",
+    "vo": "manquant",
+    "build": "manquant",
+    "publie": "manquant"
+  },
+  "notes": ""
+}

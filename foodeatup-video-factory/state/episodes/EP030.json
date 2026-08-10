@@ -1,0 +1,21 @@
+{
+  "id": "EP030",
+  "num": 30,
+  "saison": 1,
+  "titre": "Le pingouin en cuisine",
+  "module": "Configuration",
+  "chapitre": "Academy",
+  "module_drive_id": "19xTrrkXtWO3yfJqtC3SIlDgpBjSEc4N9",
+  "hook": "Le nouveau, jour 1.",
+  "vo_punchline": "Forme-le en un clic avec l'Académy.",
+  "heygen_script": "Le nouveau se forme tout seul : chaque module a ses vidéos, dans l'ordre. Tu ne réexpliques plus la caisse à chaque embauche.",
+  "etat": {
+    "hook": "manquant",
+    "avatar": "manquant",
+    "software": "manquant",
+    "vo": "manquant",
+    "build": "manquant",
+    "publie": "manquant"
+  },
+  "notes": ""
+}

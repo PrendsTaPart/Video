@@ -1,0 +1,21 @@
+{
+  "id": "EP067",
+  "num": 67,
+  "saison": 3,
+  "titre": "Le thermomètre humain",
+  "module": "Équipe & Planning",
+  "chapitre": "Contrats",
+  "module_drive_id": "1wboT7bVjEwxbhpU9Xgz8sRjjqn9XEd7X",
+  "hook": "Ton relevé de température.",
+  "vo_punchline": "Un vrai relevé, horodaté, par équipement.",
+  "heygen_script": "Contrats et documents employés sont rangés au même endroit, avec leurs échéances.",
+  "etat": {
+    "hook": "manquant",
+    "avatar": "manquant",
+    "software": "manquant",
+    "vo": "manquant",
+    "build": "manquant",
+    "publie": "manquant"
+  },
+  "notes": ""
+}

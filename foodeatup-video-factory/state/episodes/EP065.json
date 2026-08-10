@@ -1,0 +1,21 @@
+{
+  "id": "EP065",
+  "num": 65,
+  "saison": 3,
+  "titre": "Le stagiaire au bureau",
+  "module": "Équipe & Planning",
+  "chapitre": "Pointages",
+  "module_drive_id": "1wboT7bVjEwxbhpU9Xgz8sRjjqn9XEd7X",
+  "hook": "Qui a accès à quoi ?",
+  "vo_punchline": "Chaque rôle voit exactement ce qu'il doit voir.",
+  "heygen_script": "Les heures réelles sont pointées. Tu compares le prévu et le réalisé, sans discussion de fin de mois.",
+  "etat": {
+    "hook": "manquant",
+    "avatar": "manquant",
+    "software": "manquant",
+    "vo": "manquant",
+    "build": "manquant",
+    "publie": "manquant"
+  },
+  "notes": ""
+}

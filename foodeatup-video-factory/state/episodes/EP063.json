@@ -1,0 +1,21 @@
+{
+  "id": "EP063",
+  "num": 63,
+  "saison": 3,
+  "titre": "Le post-it perdu",
+  "module": "Équipe & Planning",
+  "chapitre": "Créer un employé",
+  "module_drive_id": "1wboT7bVjEwxbhpU9Xgz8sRjjqn9XEd7X",
+  "hook": "Ta demande de congé.",
+  "vo_punchline": "Demandée, reçue, validée. Sans papier.",
+  "heygen_script": "Tu crées ta fiche employé avec son rôle et ses horaires. Elle alimente le planning, les pointages et la paie.",
+  "etat": {
+    "hook": "manquant",
+    "avatar": "manquant",
+    "software": "manquant",
+    "vo": "manquant",
+    "build": "manquant",
+    "publie": "manquant"
+  },
+  "notes": ""
+}

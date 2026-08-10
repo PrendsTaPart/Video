@@ -1,0 +1,21 @@
+{
+  "id": "EP136",
+  "num": 136,
+  "saison": 5,
+  "titre": "POV : le lave-verres",
+  "module": "Service",
+  "chapitre": "1 - Commandes multi-canaux",
+  "module_drive_id": "1z4li_rdzH8yC7VFoWgOa4yMHbbKIAG29",
+  "hook": "Deux minutes par cycle. Quatre-vingts cycles.",
+  "vo_punchline": "Le service, c'est ça aussi.",
+  "heygen_script": "Le service, c'est cent gestes invisibles. FoodEatUp en enregistre la trace pour que tu saches où part vraiment ton temps.",
+  "etat": {
+    "hook": "manquant",
+    "avatar": "manquant",
+    "software": "manquant",
+    "vo": "manquant",
+    "build": "manquant",
+    "publie": "manquant"
+  },
+  "notes": ""
+}

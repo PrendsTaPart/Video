@@ -1,0 +1,21 @@
+{
+  "id": "EP138",
+  "num": 138,
+  "saison": 5,
+  "titre": "POV : l'assiette, du pass à la table",
+  "module": "KDS",
+  "chapitre": "3 - Gérer le KDS en direct",
+  "module_drive_id": "1wQAkcP9pY90DLu_sE8GLiI6WYHZuYwq9",
+  "hook": "Quarante-cinq secondes de vie.",
+  "vo_punchline": "Chaque assiette compte. Compte-les.",
+  "heygen_script": "De l'envoi au pass, chaque plat a son statut et son chrono. Tu comptes tes assiettes, tu ne les devines pas.",
+  "etat": {
+    "hook": "manquant",
+    "avatar": "manquant",
+    "software": "manquant",
+    "vo": "manquant",
+    "build": "manquant",
+    "publie": "manquant"
+  },
+  "notes": ""
+}

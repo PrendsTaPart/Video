@@ -1,4 +1,4 @@
-# sources lourdes non versionnées (rushes bruts déposés à la main)
+# rushes bruts déposés à la main : trop lourds, non nécessaires au remontage
 assets/software/*_src.mp4
-build/*.mp4
-build/*_list.txt
+# intermédiaires de montage : reproductibles par build-episode.sh
+build/

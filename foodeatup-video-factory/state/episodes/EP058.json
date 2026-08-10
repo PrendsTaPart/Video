@@ -1,0 +1,21 @@
+{
+  "id": "EP058",
+  "num": 58,
+  "saison": 2,
+  "titre": "Les bougies",
+  "module": "HACCP",
+  "chapitre": "Rôles",
+  "module_drive_id": "10rqzHFjXbjkGi73uJyjt3XQM92eaIMK_",
+  "hook": "L'anniversaire de la table 12.",
+  "vo_punchline": "Anticiper, c'est aussi ça, le service.",
+  "heygen_script": "Chaque agent signe ses propres relevés. La responsabilité est claire, sans paperasse supplémentaire.",
+  "etat": {
+    "hook": "manquant",
+    "avatar": "manquant",
+    "software": "manquant",
+    "vo": "manquant",
+    "build": "manquant",
+    "publie": "manquant"
+  },
+  "notes": ""
+}

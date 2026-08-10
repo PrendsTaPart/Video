@@ -1,0 +1,21 @@
+{
+  "id": "EP029",
+  "num": 29,
+  "saison": 1,
+  "titre": "Les douze assiettes",
+  "module": "PrediBot",
+  "chapitre": "1 - Lire ses prévisions",
+  "module_drive_id": "19kYZliyRnKraKVg1zdFrXCocD38VZ2a9",
+  "hook": "Toi, gérant, en 2026.",
+  "vo_punchline": "Personne ne devrait travailler comme ça.",
+  "heygen_script": "Le brief du jour te dit ce qui compte avant que ça te tombe dessus : les réservations, les productions, les alertes. Tu diriges au lieu de courir.",
+  "etat": {
+    "hook": "manquant",
+    "avatar": "manquant",
+    "software": "manquant",
+    "vo": "manquant",
+    "build": "manquant",
+    "publie": "manquant"
+  },
+  "notes": ""
+}

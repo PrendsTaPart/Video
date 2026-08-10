@@ -1,0 +1,21 @@
+{
+  "id": "EP036",
+  "num": 36,
+  "saison": 2,
+  "titre": "L'addition",
+  "module": "PrediBot",
+  "chapitre": "2 - Un seul abonnement",
+  "module_drive_id": "19kYZliyRnKraKVg1zdFrXCocD38VZ2a9",
+  "hook": "Toi, devant tes abonnements.",
+  "vo_punchline": "Additionne-les. Vraiment.",
+  "heygen_script": "Additionne tes abonnements actuels. Ici, la caisse, le stock, le planning, la compta et le marketing sont dans le même outil, sur la même base.",
+  "etat": {
+    "hook": "manquant",
+    "avatar": "manquant",
+    "software": "manquant",
+    "vo": "manquant",
+    "build": "manquant",
+    "publie": "manquant"
+  },
+  "notes": ""
+}

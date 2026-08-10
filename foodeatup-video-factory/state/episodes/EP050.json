@@ -1,0 +1,21 @@
+{
+  "id": "EP050",
+  "num": 50,
+  "saison": 2,
+  "titre": "La casserole brûlante",
+  "module": "HACCP",
+  "chapitre": "Équipements",
+  "module_drive_id": "10rqzHFjXbjkGi73uJyjt3XQM92eaIMK_",
+  "hook": "Apprendre sur le tas.",
+  "vo_punchline": "Il y a plus rapide pour former quelqu'un.",
+  "heygen_script": "Chaque frigo, chaque chambre froide est déclaré avec ses seuils. Hors zone, tu es alerté. Tu sauves la marchandise avant de la jeter.",
+  "etat": {
+    "hook": "manquant",
+    "avatar": "manquant",
+    "software": "manquant",
+    "vo": "manquant",
+    "build": "manquant",
+    "publie": "manquant"
+  },
+  "notes": ""
+}

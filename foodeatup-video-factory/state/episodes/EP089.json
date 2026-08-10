@@ -1,0 +1,21 @@
+{
+  "id": "EP089",
+  "num": 89,
+  "saison": 3,
+  "titre": "Le bocal presque vide",
+  "module": "Mon Site",
+  "chapitre": "Domaine",
+  "module_drive_id": "1ykcHl2BaY22WlCsBA3DuwXaEMvQZUtMF",
+  "hook": "Ton jeu concours.",
+  "vo_punchline": "QR code, roue cadeaux, gagnants tracés.",
+  "heygen_script": "Tu branches ton nom de domaine. Tes clients arrivent chez toi, pas sur une plateforme.",
+  "etat": {
+    "hook": "manquant",
+    "avatar": "manquant",
+    "software": "manquant",
+    "vo": "manquant",
+    "build": "manquant",
+    "publie": "manquant"
+  },
+  "notes": ""
+}

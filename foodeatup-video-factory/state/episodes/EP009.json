@@ -1,0 +1,21 @@
+{
+  "id": "EP009",
+  "num": 9,
+  "saison": 1,
+  "titre": "Le pigeon voleur",
+  "module": "Caisse POS",
+  "chapitre": "7 - Suivre les écarts de caisse",
+  "module_drive_id": "1nHjH82ig0i-MtQqDmYp131htOSThaPIQ",
+  "hook": "Il y a toujours quelqu'un qui prend ta marge.",
+  "vo_punchline": "Ton abonnement logiciel, par exemple.",
+  "heygen_script": "À chaque clôture, l'écart entre le théorique et le compté s'affiche. Tu vois quel service dérape et de combien. Ce qui se mesure s'arrête.",
+  "etat": {
+    "hook": "manquant",
+    "avatar": "manquant",
+    "software": "manquant",
+    "vo": "manquant",
+    "build": "manquant",
+    "publie": "manquant"
+  },
+  "notes": ""
+}

@@ -1,0 +1,21 @@
+{
+  "id": "EP113",
+  "num": 113,
+  "saison": 4,
+  "titre": "Le drone qui se trompe de balcon",
+  "module": "HubRise",
+  "chapitre": "4 - Centraliser les commandes",
+  "module_drive_id": "19D09dNt_jZSKpcwVCU8Mn1OkMLkY_ojd",
+  "hook": "Livraison réussie. Presque.",
+  "vo_punchline": "Un suivi de commande, et personne ne mange ta pizza.",
+  "heygen_script": "Le suivi de commande affiche l'état en direct, de la prise à la remise. Tu sais toujours où est la commande et chez qui.",
+  "etat": {
+    "hook": "manquant",
+    "avatar": "manquant",
+    "software": "manquant",
+    "vo": "manquant",
+    "build": "manquant",
+    "publie": "manquant"
+  },
+  "notes": ""
+}

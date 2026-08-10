@@ -1,0 +1,21 @@
+{
+  "id": "EP104",
+  "num": 104,
+  "saison": 4,
+  "titre": "Le no-show western",
+  "module": "Réservation",
+  "chapitre": "3 - Gérer et no-shows",
+  "module_drive_id": "1m6WdjC_iNYWO_4U3LmDuOsc-_Y_DrZLu",
+  "hook": "Table de huit. 20 h 30.",
+  "vo_punchline": "Un no-show, ça se prévient.",
+  "heygen_script": "Tu marques le no-show, la table se libère immédiatement et repart à la vente. Le client, lui, garde son historique.",
+  "etat": {
+    "hook": "manquant",
+    "avatar": "manquant",
+    "software": "manquant",
+    "vo": "manquant",
+    "build": "manquant",
+    "publie": "manquant"
+  },
+  "notes": ""
+}

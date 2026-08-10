@@ -1,0 +1,21 @@
+{
+  "id": "EP083",
+  "num": 83,
+  "saison": 3,
+  "titre": "Le cri dans le vide",
+  "module": "Comptabilité",
+  "chapitre": "Impayés",
+  "module_drive_id": "1KlXihMLILGDrlxDuO2d3VCe1ic-kCAw_",
+  "hook": "J'AI DIT DEUX BURGERS !",
+  "vo_punchline": "Chaque poste voit ses plats. Sans crier.",
+  "heygen_script": "Tu vois ce qui est facturé, encaissé, et ce qui traîne. Les relances arrêtent d'être un jeu de mémoire.",
+  "etat": {
+    "hook": "manquant",
+    "avatar": "manquant",
+    "software": "manquant",
+    "vo": "manquant",
+    "build": "manquant",
+    "publie": "manquant"
+  },
+  "notes": ""
+}

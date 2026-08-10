@@ -1,0 +1,21 @@
+{
+  "id": "EP007",
+  "num": 7,
+  "saison": 1,
+  "titre": "La mamie qui goûte",
+  "module": "Marketing",
+  "chapitre": "3 - Répondre aux avis",
+  "module_drive_id": "1hBc6Axd0DE2ocTiXXKGlmj1dyagOwKFg",
+  "hook": "Le seul avis client qui compte.",
+  "vo_punchline": "Les quatre cents autres, on s'en occupe.",
+  "heygen_script": "Tes avis Google remontent ici. Tu réponds depuis FoodEatUp, l'IA te propose une réponse dans ton ton, tu valides. Le client voit que tu l'as lu.",
+  "etat": {
+    "hook": "manquant",
+    "avatar": "manquant",
+    "software": "manquant",
+    "vo": "manquant",
+    "build": "manquant",
+    "publie": "manquant"
+  },
+  "notes": ""
+}

@@ -1,0 +1,21 @@
+{
+  "id": "EP001",
+  "num": 1,
+  "saison": 1,
+  "titre": "Le chien qui te regarde",
+  "module": "Service",
+  "chapitre": "1 - Commandes multi-canaux",
+  "module_drive_id": "1z4li_rdzH8yC7VFoWgOa4yMHbbKIAG29",
+  "hook": "Lui aussi attend ta commande.",
+  "vo_punchline": "Sauf que lui, il est patient. Tes clients, non.",
+  "heygen_script": "Ici, toutes tes commandes arrivent au même endroit : la salle, le téléphone, le site, la livraison. Une seule file, dans l'ordre d'arrivée. Plus personne n'attend parce qu'on a oublié un ticket.",
+  "etat": {
+    "hook": "manquant",
+    "avatar": "manquant",
+    "software": "manquant",
+    "vo": "manquant",
+    "build": "manquant",
+    "publie": "manquant"
+  },
+  "notes": ""
+}

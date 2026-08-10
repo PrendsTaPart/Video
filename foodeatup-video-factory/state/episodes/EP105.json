@@ -1,0 +1,21 @@
+{
+  "id": "EP105",
+  "num": 105,
+  "saison": 4,
+  "titre": "Le duel de la dernière table",
+  "module": "Mon Site",
+  "chapitre": "6 - Réservations et horaires",
+  "module_drive_id": "1ykcHl2BaY22WlCsBA3DuwXaEMvQZUtMF",
+  "hook": "Dernière table du samedi.",
+  "vo_punchline": "Le plus rapide gagne. Rends-la réservable en ligne.",
+  "heygen_script": "Tes créneaux sont réservables en ligne, en direct, avec tes vraies disponibilités. Le premier qui réserve a la table.",
+  "etat": {
+    "hook": "manquant",
+    "avatar": "manquant",
+    "software": "manquant",
+    "vo": "manquant",
+    "build": "manquant",
+    "publie": "manquant"
+  },
+  "notes": ""
+}

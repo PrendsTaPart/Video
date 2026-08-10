@@ -1,0 +1,21 @@
+{
+  "id": "EP111",
+  "num": 111,
+  "saison": 4,
+  "titre": "L'imprimante 3D qui déraille",
+  "module": "StockVision",
+  "chapitre": "12 - Valider une production",
+  "module_drive_id": "1Ib_pKyJ8_jaFAwtIhkzhtmUU_DCtGSSY",
+  "hook": "La cuisine du futur.",
+  "vo_punchline": "Le futur utile, c'est celui qui te fait gagner du temps.",
+  "heygen_script": "La production planifiée sort ses ingrédients du stock, sa quantité est validée, sa traçabilité écrite. Le gain de temps est là, pas dans le gadget.",
+  "etat": {
+    "hook": "manquant",
+    "avatar": "manquant",
+    "software": "manquant",
+    "vo": "manquant",
+    "build": "manquant",
+    "publie": "manquant"
+  },
+  "notes": ""
+}

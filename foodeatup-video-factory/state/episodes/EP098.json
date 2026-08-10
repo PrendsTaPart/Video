@@ -1,0 +1,21 @@
+{
+  "id": "EP098",
+  "num": 98,
+  "saison": 4,
+  "titre": "Le robot serveur qui bugge et danse",
+  "module": "Service",
+  "chapitre": "1 - Commandes multi-canaux",
+  "module_drive_id": "1z4li_rdzH8yC7VFoWgOa4yMHbbKIAG29",
+  "hook": "Ton nouveau serveur, en période d'essai.",
+  "vo_punchline": "L'IA, c'est utile quand elle sert à quelque chose.",
+  "heygen_script": "L'intelligence utile, c'est celle qui range tes commandes, pas celle qui danse. Ici, chaque canal alimente le même service.",
+  "etat": {
+    "hook": "manquant",
+    "avatar": "manquant",
+    "software": "manquant",
+    "vo": "manquant",
+    "build": "manquant",
+    "publie": "manquant"
+  },
+  "notes": ""
+}

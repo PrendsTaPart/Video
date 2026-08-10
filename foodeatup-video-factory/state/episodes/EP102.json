@@ -1,0 +1,21 @@
+{
+  "id": "EP102",
+  "num": 102,
+  "saison": 4,
+  "titre": "L'inspecteur surprise",
+  "module": "HACCP",
+  "chapitre": "checklists hygiène",
+  "module_drive_id": "10rqzHFjXbjkGi73uJyjt3XQM92eaIMK_",
+  "hook": "Contrôle surprise. Ou pas.",
+  "vo_punchline": "Le jour où c'est le vrai, tu ne bouges pas.",
+  "heygen_script": "Ta checklist est validée chaque jour par ton équipe. Le jour du vrai contrôle, tu ouvres l'historique et tu ne bouges pas.",
+  "etat": {
+    "hook": "manquant",
+    "avatar": "manquant",
+    "software": "manquant",
+    "vo": "manquant",
+    "build": "manquant",
+    "publie": "manquant"
+  },
+  "notes": ""
+}

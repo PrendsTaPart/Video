@@ -1,0 +1,21 @@
+{
+  "id": "EP056",
+  "num": 56,
+  "saison": 2,
+  "titre": "Le passager clandestin",
+  "module": "HACCP",
+  "chapitre": "Historique",
+  "module_drive_id": "10rqzHFjXbjkGi73uJyjt3XQM92eaIMK_",
+  "hook": "Il y a toujours un truc en trop.",
+  "vo_punchline": "Ou en moins. Et tu le vois trop tard.",
+  "heygen_script": "Tes relevés, tes réceptions et tes validations sont conservés. Le jour du contrôle, tu ne cherches rien.",
+  "etat": {
+    "hook": "manquant",
+    "avatar": "manquant",
+    "software": "manquant",
+    "vo": "manquant",
+    "build": "manquant",
+    "publie": "manquant"
+  },
+  "notes": ""
+}

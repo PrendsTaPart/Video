@@ -1,0 +1,21 @@
+{
+  "id": "EP057",
+  "num": 57,
+  "saison": 2,
+  "titre": "Les pièces",
+  "module": "HACCP",
+  "chapitre": "Alertes",
+  "module_drive_id": "10rqzHFjXbjkGi73uJyjt3XQM92eaIMK_",
+  "hook": "La clôture de caisse.",
+  "vo_punchline": "Un Z propre, en une minute.",
+  "heygen_script": "Une température hors seuil déclenche une alerte immédiate. Tu réagis pendant le service, pas le lendemain.",
+  "etat": {
+    "hook": "manquant",
+    "avatar": "manquant",
+    "software": "manquant",
+    "vo": "manquant",
+    "build": "manquant",
+    "publie": "manquant"
+  },
+  "notes": ""
+}

@@ -1,0 +1,21 @@
+{
+  "id": "EP048",
+  "num": 48,
+  "saison": 2,
+  "titre": "La pyramide de sucre",
+  "module": "Configuration",
+  "chapitre": "paramétrage initial",
+  "module_drive_id": "19xTrrkXtWO3yfJqtC3SIlDgpBjSEc4N9",
+  "hook": "Ce que tu construis chaque jour.",
+  "vo_punchline": "Un système fragile finit toujours par tomber.",
+  "heygen_script": "Tu poses ta base une fois : établissement, TVA, zones, équipements. Tout le reste de FoodEatUp s'appuie dessus sans que tu y reviennes.",
+  "etat": {
+    "hook": "manquant",
+    "avatar": "manquant",
+    "software": "manquant",
+    "vo": "manquant",
+    "build": "manquant",
+    "publie": "manquant"
+  },
+  "notes": ""
+}

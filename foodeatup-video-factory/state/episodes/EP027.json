@@ -1,0 +1,21 @@
+{
+  "id": "EP027",
+  "num": 27,
+  "saison": 1,
+  "titre": "Le chat et le verre",
+  "module": "Caisse POS",
+  "chapitre": "6 - Clôturer sa caisse, le Z",
+  "module_drive_id": "1nHjH82ig0i-MtQqDmYp131htOSThaPIQ",
+  "hook": "Ta trésorerie, chaque lundi.",
+  "vo_punchline": "Il suffit d'un truc mal placé.",
+  "heygen_script": "Ton Z de caisse en un bouton : le compté, le théorique, l'écart, les moyens de paiement. Tu sais où tu en es tous les lundis matin.",
+  "etat": {
+    "hook": "manquant",
+    "avatar": "manquant",
+    "software": "manquant",
+    "vo": "manquant",
+    "build": "manquant",
+    "publie": "manquant"
+  },
+  "notes": ""
+}

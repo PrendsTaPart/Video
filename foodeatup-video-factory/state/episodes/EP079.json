@@ -1,0 +1,21 @@
+{
+  "id": "EP079",
+  "num": 79,
+  "saison": 3,
+  "titre": "Les quatorze cartes",
+  "module": "Configuration",
+  "chapitre": "Import de carte",
+  "module_drive_id": "19xTrrkXtWO3yfJqtC3SIlDgpBjSEc4N9",
+  "hook": "Ton programme de fidélité.",
+  "vo_punchline": "Un compte, tous les canaux, zéro carton.",
+  "heygen_script": "Tu importes ta carte entière en un appel : catégories, sous-catégories, plats, prix.",
+  "etat": {
+    "hook": "manquant",
+    "avatar": "manquant",
+    "software": "manquant",
+    "vo": "manquant",
+    "build": "manquant",
+    "publie": "manquant"
+  },
+  "notes": ""
+}

@@ -1,0 +1,21 @@
+{
+  "id": "EP082",
+  "num": 82,
+  "saison": 3,
+  "titre": "Le centime",
+  "module": "Comptabilité",
+  "chapitre": "Devis",
+  "module_drive_id": "1KlXihMLILGDrlxDuO2d3VCe1ic-kCAw_",
+  "hook": "Il manque un centime.",
+  "vo_punchline": "Le Z calcule l'écart. Toi, tu rentres chez toi.",
+  "heygen_script": "Un devis pour un groupe se crée en deux minutes et se transforme en commande quand il est accepté.",
+  "etat": {
+    "hook": "manquant",
+    "avatar": "manquant",
+    "software": "manquant",
+    "vo": "manquant",
+    "build": "manquant",
+    "publie": "manquant"
+  },
+  "notes": ""
+}

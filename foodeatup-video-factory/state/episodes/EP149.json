@@ -1,0 +1,21 @@
+{
+  "id": "EP149",
+  "num": 149,
+  "saison": 5,
+  "titre": "Le flash mob de la salle",
+  "module": "Marketing",
+  "chapitre": "5 - Lancer une campagne",
+  "module_drive_id": "1hBc6Axd0DE2ocTiXXKGlmj1dyagOwKFg",
+  "hook": "Ta salle a un truc que personne d'autre n'a.",
+  "vo_punchline": "Fais-le savoir.",
+  "heygen_script": "Ta salle a quelque chose d'unique : fais-le savoir. Campagne créée, segment choisi, résultats mesurés, CA attribué.",
+  "etat": {
+    "hook": "manquant",
+    "avatar": "manquant",
+    "software": "manquant",
+    "vo": "manquant",
+    "build": "manquant",
+    "publie": "manquant"
+  },
+  "notes": ""
+}

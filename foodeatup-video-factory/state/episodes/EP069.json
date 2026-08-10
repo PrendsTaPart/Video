@@ -1,0 +1,21 @@
+{
+  "id": "EP069",
+  "num": 69,
+  "saison": 3,
+  "titre": "Le livreur fantôme",
+  "module": "Équipe & Planning",
+  "chapitre": "Recrutement",
+  "module_drive_id": "1wboT7bVjEwxbhpU9Xgz8sRjjqn9XEd7X",
+  "hook": "Tu as vérifié la livraison ?",
+  "vo_punchline": "Température, DLC, code EAN. En scannant.",
+  "heygen_script": "Tu publies ton offre, tu suis les candidatures par statut, tu décides. Le recrutement arrête de traîner sur ton téléphone.",
+  "etat": {
+    "hook": "manquant",
+    "avatar": "manquant",
+    "software": "manquant",
+    "vo": "manquant",
+    "build": "manquant",
+    "publie": "manquant"
+  },
+  "notes": ""
+}

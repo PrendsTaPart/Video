@@ -1,0 +1,21 @@
+{
+  "id": "EP013",
+  "num": 13,
+  "saison": 1,
+  "titre": "L'avalanche de notifications",
+  "module": "PrediBot",
+  "chapitre": "3 - Parler à PrediBot",
+  "module_drive_id": "19kYZliyRnKraKVg1zdFrXCocD38VZ2a9",
+  "hook": "Dix logiciels. Dix notifications.",
+  "vo_punchline": "Un seul, ça suffisait.",
+  "heygen_script": "Tu poses ta question en français : combien j'ai fait hier, qu'est-ce qui manque demain. PrediBot lit tes vraies données et te répond. Une seule interface, pas dix.",
+  "etat": {
+    "hook": "manquant",
+    "avatar": "manquant",
+    "software": "manquant",
+    "vo": "manquant",
+    "build": "manquant",
+    "publie": "manquant"
+  },
+  "notes": ""
+}

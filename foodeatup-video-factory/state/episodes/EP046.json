@@ -1,0 +1,21 @@
+{
+  "id": "EP046",
+  "num": 46,
+  "saison": 2,
+  "titre": "Le sel",
+  "module": "StockVision",
+  "chapitre": "20 - Agent IA et suggestions",
+  "module_drive_id": "1Ib_pKyJ8_jaFAwtIhkzhtmUU_DCtGSSY",
+  "hook": "Un détail. Un service perdu.",
+  "vo_punchline": "Les petites erreurs coûtent cher quand personne ne les voit.",
+  "heygen_script": "L'IA remonte ce que tu n'as pas le temps de voir : un coût qui monte, un plat qui décroche, un stock qui dort. Le petit détail devient visible.",
+  "etat": {
+    "hook": "manquant",
+    "avatar": "manquant",
+    "software": "manquant",
+    "vo": "manquant",
+    "build": "manquant",
+    "publie": "manquant"
+  },
+  "notes": ""
+}

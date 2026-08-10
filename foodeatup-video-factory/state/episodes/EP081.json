@@ -1,0 +1,21 @@
+{
+  "id": "EP081",
+  "num": 81,
+  "saison": 3,
+  "titre": "Huit calculatrices",
+  "module": "Comptabilité",
+  "chapitre": "Factures",
+  "module_drive_id": "1KlXihMLILGDrlxDuO2d3VCe1ic-kCAw_",
+  "hook": "On peut séparer ?",
+  "vo_punchline": "Oui. Par personne, par article, par montant.",
+  "heygen_script": "Chaque commande produit sa facture, numérotée et conforme. Tu ne la ressaisis nulle part.",
+  "etat": {
+    "hook": "manquant",
+    "avatar": "manquant",
+    "software": "manquant",
+    "vo": "manquant",
+    "build": "manquant",
+    "publie": "manquant"
+  },
+  "notes": ""
+}

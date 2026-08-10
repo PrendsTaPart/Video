@@ -1,0 +1,21 @@
+{
+  "id": "EP143",
+  "num": 143,
+  "saison": 5,
+  "titre": "La commande de 200 pièces",
+  "module": "Comptabilité",
+  "chapitre": "devis",
+  "module_drive_id": "1KlXihMLILGDrlxDuO2d3VCe1ic-kCAw_",
+  "hook": "Une seule commande.",
+  "vo_punchline": "Deux cents parts. Anticipe-les.",
+  "heygen_script": "Deux cents parts, ça commence par un devis : quantités, prix, marge. Il se transforme en commande, puis en facture, sans ressaisie.",
+  "etat": {
+    "hook": "manquant",
+    "avatar": "manquant",
+    "software": "manquant",
+    "vo": "manquant",
+    "build": "manquant",
+    "publie": "manquant"
+  },
+  "notes": ""
+}

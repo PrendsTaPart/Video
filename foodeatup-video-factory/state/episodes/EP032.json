@@ -1,0 +1,21 @@
+{
+  "id": "EP032",
+  "num": 32,
+  "saison": 2,
+  "titre": "La sauce trop forte",
+  "module": "StockVision",
+  "chapitre": "1 - Ma carte, fiche recette",
+  "module_drive_id": "1Ib_pKyJ8_jaFAwtIhkzhtmUU_DCtGSSY",
+  "hook": "Ta recette « au feeling ».",
+  "vo_punchline": "Une fiche technique, et c'est pareil tous les jours.",
+  "heygen_script": "Ta recette est enregistrée : ingrédients, quantités, étapes. Le plat sort pareil que ce soit toi ou ton commis. Et son coût est calculé.",
+  "etat": {
+    "hook": "manquant",
+    "avatar": "manquant",
+    "software": "manquant",
+    "vo": "manquant",
+    "build": "manquant",
+    "publie": "manquant"
+  },
+  "notes": ""
+}

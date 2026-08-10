@@ -1,0 +1,21 @@
+{
+  "id": "EP101",
+  "num": 101,
+  "saison": 4,
+  "titre": "POV : thriller comptable",
+  "module": "Caisse POS",
+  "chapitre": "6 - Clôturer sa caisse",
+  "module_drive_id": "1nHjH82ig0i-MtQqDmYp131htOSThaPIQ",
+  "hook": "Rapprochement des caisses. Vendredi soir.",
+  "vo_punchline": "Ça devrait être une ligne, pas une enquête.",
+  "heygen_script": "La clôture, c'est un bouton. Le détail par moyen de paiement, la TVA, l'écart : tout est là, sans calculatrice ni suspense.",
+  "etat": {
+    "hook": "manquant",
+    "avatar": "manquant",
+    "software": "manquant",
+    "vo": "manquant",
+    "build": "manquant",
+    "publie": "manquant"
+  },
+  "notes": ""
+}

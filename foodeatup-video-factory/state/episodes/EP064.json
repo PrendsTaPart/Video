@@ -1,0 +1,21 @@
+{
+  "id": "EP064",
+  "num": 64,
+  "saison": 3,
+  "titre": "Le planning au marqueur",
+  "module": "Équipe & Planning",
+  "chapitre": "Planning semaine",
+  "module_drive_id": "1wboT7bVjEwxbhpU9Xgz8sRjjqn9XEd7X",
+  "hook": "Le planning de la semaine.",
+  "vo_punchline": "Par employé ou par poste. Imprimable. À jour.",
+  "heygen_script": "Le planning se construit en glisser-déposer, avec le coût de la semaine qui s'affiche pendant que tu poses les shifts.",
+  "etat": {
+    "hook": "manquant",
+    "avatar": "manquant",
+    "software": "manquant",
+    "vo": "manquant",
+    "build": "manquant",
+    "publie": "manquant"
+  },
+  "notes": ""
+}

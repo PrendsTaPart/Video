@@ -1,0 +1,21 @@
+{
+  "id": "EP061",
+  "num": 61,
+  "saison": 3,
+  "titre": "Le badge introuvable",
+  "module": "HACCP",
+  "chapitre": "Rapport HACCP",
+  "module_drive_id": "10rqzHFjXbjkGi73uJyjt3XQM92eaIMK_",
+  "hook": "Ton système de pointage.",
+  "vo_punchline": "Un badge, un QR code, un code PIN. Point.",
+  "heygen_script": "Tu édites ton dossier de conformité sur la période de ton choix, prêt à présenter.",
+  "etat": {
+    "hook": "manquant",
+    "avatar": "manquant",
+    "software": "manquant",
+    "vo": "manquant",
+    "build": "manquant",
+    "publie": "manquant"
+  },
+  "notes": ""
+}

@@ -1,0 +1,21 @@
+{
+  "id": "EP147",
+  "num": 147,
+  "saison": 5,
+  "titre": "Le gâteau à cinq étages",
+  "module": "Comptabilité",
+  "chapitre": "facture et devis",
+  "module_drive_id": "1KlXihMLILGDrlxDuO2d3VCe1ic-kCAw_",
+  "hook": "Douze mille euros de prestation.",
+  "vo_punchline": "Sur un devis, pas sur un post-it.",
+  "heygen_script": "Douze mille euros de prestation ne tiennent pas sur un post-it. Devis signé, acompte suivi, facture éditée : tout est dans le dossier.",
+  "etat": {
+    "hook": "manquant",
+    "avatar": "manquant",
+    "software": "manquant",
+    "vo": "manquant",
+    "build": "manquant",
+    "publie": "manquant"
+  },
+  "notes": ""
+}

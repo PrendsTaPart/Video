@@ -1,0 +1,21 @@
+{
+  "id": "EP115",
+  "num": 115,
+  "saison": 4,
+  "titre": "Les poules du potager du toit",
+  "module": "StockVision",
+  "chapitre": "16 - Mouvements de stock",
+  "module_drive_id": "1Ib_pKyJ8_jaFAwtIhkzhtmUU_DCtGSSY",
+  "hook": "Circuit court, très court.",
+  "vo_punchline": "Compte ce qui rentre. Et ce qui sort.",
+  "heygen_script": "Ce qui rentre, ce qui sort, ce qui se perd. Circuit court ou pas, la quantité doit être comptée.",
+  "etat": {
+    "hook": "manquant",
+    "avatar": "manquant",
+    "software": "manquant",
+    "vo": "manquant",
+    "build": "manquant",
+    "publie": "manquant"
+  },
+  "notes": ""
+}

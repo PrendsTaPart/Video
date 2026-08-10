@@ -1,0 +1,21 @@
+{
+  "id": "EP107",
+  "num": 107,
+  "saison": 4,
+  "titre": "Le magicien de l'addition",
+  "module": "Caisse POS",
+  "chapitre": "3 - Encaisser une commande",
+  "module_drive_id": "1nHjH82ig0i-MtQqDmYp131htOSThaPIQ",
+  "hook": "Tout le monde a un tour.",
+  "vo_punchline": "Ta caisse, elle, ne perd jamais une addition.",
+  "heygen_script": "L'addition est rattachée à la table dès la commande. Elle ne se perd pas, elle ne s'oublie pas, elle ne disparaît pas.",
+  "etat": {
+    "hook": "manquant",
+    "avatar": "manquant",
+    "software": "manquant",
+    "vo": "manquant",
+    "build": "manquant",
+    "publie": "manquant"
+  },
+  "notes": ""
+}

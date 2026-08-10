@@ -1,0 +1,21 @@
+{
+  "id": "EP077",
+  "num": 77,
+  "saison": 3,
+  "titre": "Le devis sur le set de table",
+  "module": "Configuration",
+  "chapitre": "Équipements",
+  "module_drive_id": "19xTrrkXtWO3yfJqtC3SIlDgpBjSEc4N9",
+  "hook": "Ton devis pour le mariage de samedi.",
+  "vo_punchline": "Devis, envoi, acceptation, facture. Une seule chaîne.",
+  "heygen_script": "Tu déclares tes équipements et leurs seuils. Ils remontent ensuite dans ton suivi HACCP.",
+  "etat": {
+    "hook": "manquant",
+    "avatar": "manquant",
+    "software": "manquant",
+    "vo": "manquant",
+    "build": "manquant",
+    "publie": "manquant"
+  },
+  "notes": ""
+}

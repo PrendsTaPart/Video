@@ -1,0 +1,21 @@
+{
+  "id": "EP019",
+  "num": 19,
+  "saison": 1,
+  "titre": "Le burger qui rebondit",
+  "module": "StockVision",
+  "chapitre": "3 - Prédictions des commandes",
+  "module_drive_id": "1Ib_pKyJ8_jaFAwtIhkzhtmUU_DCtGSSY",
+  "hook": "Ton chiffre d'affaires, sans outil.",
+  "vo_punchline": "Ça rebondit rarement tout seul.",
+  "heygen_script": "FoodEatUp regarde tes ventes passées et te dit quoi produire demain. Ton chiffre d'affaires ne dépend plus de ton intuition du lundi matin.",
+  "etat": {
+    "hook": "manquant",
+    "avatar": "manquant",
+    "software": "manquant",
+    "vo": "manquant",
+    "build": "manquant",
+    "publie": "manquant"
+  },
+  "notes": ""
+}

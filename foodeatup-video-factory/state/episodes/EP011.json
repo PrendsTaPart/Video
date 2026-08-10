@@ -1,0 +1,21 @@
+{
+  "id": "EP011",
+  "num": 11,
+  "saison": 1,
+  "titre": "Le livreur et le dos d'âne",
+  "module": "HubRise",
+  "chapitre": "1 - Connecter son HubRise",
+  "module_drive_id": "19D09dNt_jZSKpcwVCU8Mn1OkMLkY_ojd",
+  "hook": "Ta livraison sans intégration.",
+  "vo_punchline": "Avec, tout arrive à bon port.",
+  "heygen_script": "Tu connectes HubRise une fois. Tes plateformes de livraison envoient leurs commandes directement dans FoodEatUp. Plus de tablette à surveiller dans un coin.",
+  "etat": {
+    "hook": "manquant",
+    "avatar": "manquant",
+    "software": "manquant",
+    "vo": "manquant",
+    "build": "manquant",
+    "publie": "manquant"
+  },
+  "notes": ""
+}

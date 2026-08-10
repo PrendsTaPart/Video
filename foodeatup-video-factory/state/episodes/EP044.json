@@ -1,0 +1,21 @@
+{
+  "id": "EP044",
+  "num": 44,
+  "saison": 2,
+  "titre": "Les six stylos",
+  "module": "Réservation",
+  "chapitre": "5 - Commander par QR code",
+  "module_drive_id": "1m6WdjC_iNYWO_4U3LmDuOsc-_Y_DrZLu",
+  "hook": "Prendre la commande en 2026.",
+  "vo_punchline": "La commande devrait partir en cuisine toute seule.",
+  "heygen_script": "Le client scanne, commande, la cuisine reçoit. Ton serveur passe son temps en salle, pas à recopier des lignes sur un carnet.",
+  "etat": {
+    "hook": "manquant",
+    "avatar": "manquant",
+    "software": "manquant",
+    "vo": "manquant",
+    "build": "manquant",
+    "publie": "manquant"
+  },
+  "notes": ""
+}

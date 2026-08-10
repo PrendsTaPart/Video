@@ -1,0 +1,21 @@
+{
+  "id": "EP084",
+  "num": 84,
+  "saison": 3,
+  "titre": "Le QR code scotché",
+  "module": "Comptabilité",
+  "chapitre": "Dépenses",
+  "module_drive_id": "1KlXihMLILGDrlxDuO2d3VCe1ic-kCAw_",
+  "hook": "Commander à table.",
+  "vo_punchline": "Un plan de salle, un QR par table. Ça marche.",
+  "heygen_script": "Tu photographies la facture fournisseur, elle rentre dans tes dépenses avec ses lignes et son montant.",
+  "etat": {
+    "hook": "manquant",
+    "avatar": "manquant",
+    "software": "manquant",
+    "vo": "manquant",
+    "build": "manquant",
+    "publie": "manquant"
+  },
+  "notes": ""
+}

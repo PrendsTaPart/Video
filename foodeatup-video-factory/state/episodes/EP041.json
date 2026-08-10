@@ -1,0 +1,21 @@
+{
+  "id": "EP041",
+  "num": 41,
+  "saison": 2,
+  "titre": "Le poulet fugueur",
+  "module": "StockVision",
+  "chapitre": "15 - Sortie des ingrédients de la production",
+  "module_drive_id": "1Ib_pKyJ8_jaFAwtIhkzhtmUU_DCtGSSY",
+  "hook": "Ton contrôle des portions.",
+  "vo_punchline": "Ce qui part au sol, tu le paies quand même.",
+  "heygen_script": "La production sort exactement les quantités prévues de ton stock. Ce qui tombe au sol, tu le vois dans l'écart. Et ce qui se voit se corrige.",
+  "etat": {
+    "hook": "manquant",
+    "avatar": "manquant",
+    "software": "manquant",
+    "vo": "manquant",
+    "build": "manquant",
+    "publie": "manquant"
+  },
+  "notes": ""
+}

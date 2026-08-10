@@ -1,0 +1,21 @@
+{
+  "id": "EP123",
+  "num": 123,
+  "saison": 5,
+  "titre": "Le végétarien du dessert",
+  "module": "StockVision",
+  "chapitre": "1 - Ma carte, allergènes",
+  "module_drive_id": "1Ib_pKyJ8_jaFAwtIhkzhtmUU_DCtGSSY",
+  "hook": "Il annonce ça au dessert.",
+  "vo_punchline": "Les régimes et les allergènes, ça se note à la réservation.",
+  "heygen_script": "Les allergènes et les régimes sont portés par ta carte et par la réservation. L'info arrive en cuisine avant l'entrée, pas au dessert.",
+  "etat": {
+    "hook": "manquant",
+    "avatar": "manquant",
+    "software": "manquant",
+    "vo": "manquant",
+    "build": "manquant",
+    "publie": "manquant"
+  },
+  "notes": ""
+}

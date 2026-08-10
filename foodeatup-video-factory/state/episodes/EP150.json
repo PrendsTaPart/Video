@@ -1,0 +1,21 @@
+{
+  "id": "EP150",
+  "num": 150,
+  "saison": 5,
+  "titre": "Le salut final",
+  "module": "PrediBot",
+  "chapitre": "1 - Lire ses prévisions",
+  "module_drive_id": "19kYZliyRnKraKVg1zdFrXCocD38VZ2a9",
+  "hook": "Cent cinquante épisodes.",
+  "vo_punchline": "Une seule promesse : ton restaurant, avant, pendant et après le service.",
+  "heygen_script": "Cent cinquante épisodes pour dire une chose : ton restaurant tient dans un seul outil, avant, pendant et après ton service. Le reste, c'est du bruit.",
+  "etat": {
+    "hook": "manquant",
+    "avatar": "manquant",
+    "software": "manquant",
+    "vo": "manquant",
+    "build": "manquant",
+    "publie": "manquant"
+  },
+  "notes": ""
+}

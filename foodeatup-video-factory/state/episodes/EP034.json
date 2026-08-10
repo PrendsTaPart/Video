@@ -1,0 +1,21 @@
+{
+  "id": "EP034",
+  "num": 34,
+  "saison": 2,
+  "titre": "Le bouchon rebelle",
+  "module": "Configuration",
+  "chapitre": "process",
+  "module_drive_id": "19xTrrkXtWO3yfJqtC3SIlDgpBjSEc4N9",
+  "hook": "Chaque service, une improvisation.",
+  "vo_punchline": "Ça marche. Jusqu'au jour où ça ne marche plus.",
+  "heygen_script": "Tes procédures sont dans l'outil, pas dans ta tête. Le service ne dépend plus de qui est là ce soir.",
+  "etat": {
+    "hook": "manquant",
+    "avatar": "manquant",
+    "software": "manquant",
+    "vo": "manquant",
+    "build": "manquant",
+    "publie": "manquant"
+  },
+  "notes": ""
+}

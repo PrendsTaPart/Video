@@ -1,0 +1,21 @@
+{
+  "id": "EP016",
+  "num": 16,
+  "saison": 1,
+  "titre": "Le geyser à café",
+  "module": "Comptabilité",
+  "chapitre": "dépenses",
+  "module_drive_id": "1KlXihMLILGDrlxDuO2d3VCe1ic-kCAw_",
+  "hook": "Tes coûts, ce trimestre.",
+  "vo_punchline": "On va refermer le robinet.",
+  "heygen_script": "Tu enregistres tes achats fournisseurs avec le détail des lignes. Tes dépenses du mois s'additionnent toutes seules, en face de ton chiffre d'affaires.",
+  "etat": {
+    "hook": "manquant",
+    "avatar": "manquant",
+    "software": "manquant",
+    "vo": "manquant",
+    "build": "manquant",
+    "publie": "manquant"
+  },
+  "notes": ""
+}

@@ -1,0 +1,21 @@
+{
+  "id": "EP059",
+  "num": 59,
+  "saison": 2,
+  "titre": "L'ardoise",
+  "module": "HACCP",
+  "chapitre": "Non-conformité",
+  "module_drive_id": "10rqzHFjXbjkGi73uJyjt3XQM92eaIMK_",
+  "hook": "Ta com', chaque matin.",
+  "vo_punchline": "Il y a plus solide qu'une ardoise.",
+  "heygen_script": "Tu déclares une non-conformité, tu notes l'action corrective. C'est exactement ce qu'on te demandera de prouver.",
+  "etat": {
+    "hook": "manquant",
+    "avatar": "manquant",
+    "software": "manquant",
+    "vo": "manquant",
+    "build": "manquant",
+    "publie": "manquant"
+  },
+  "notes": ""
+}

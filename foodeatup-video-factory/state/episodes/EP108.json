@@ -1,0 +1,21 @@
+{
+  "id": "EP108",
+  "num": 108,
+  "saison": 4,
+  "titre": "Le poulpe du pass",
+  "module": "KDS",
+  "chapitre": "2 - Vue KDS par poste",
+  "module_drive_id": "1wQAkcP9pY90DLu_sE8GLiI6WYHZuYwq9",
+  "hook": "Il te faudrait six bras.",
+  "vo_punchline": "Ou un seul outil qui fait le reste.",
+  "heygen_script": "Chaque poste voit ce qui le concerne, et seulement ça. Tu n'as pas besoin de six bras, tu as besoin de six écrans qui parlent entre eux.",
+  "etat": {
+    "hook": "manquant",
+    "avatar": "manquant",
+    "software": "manquant",
+    "vo": "manquant",
+    "build": "manquant",
+    "publie": "manquant"
+  },
+  "notes": ""
+}

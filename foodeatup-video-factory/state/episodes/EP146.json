@@ -1,0 +1,21 @@
+{
+  "id": "EP146",
+  "num": 146,
+  "saison": 5,
+  "titre": "Quarante bougies et les sprinklers",
+  "module": "Comptabilité",
+  "chapitre": "événements privés",
+  "module_drive_id": "1KlXihMLILGDrlxDuO2d3VCe1ic-kCAw_",
+  "hook": "Quarante bougies. Une seule mauvaise idée.",
+  "vo_punchline": "Les gros événements, ça se prépare en amont.",
+  "heygen_script": "Un événement, c'est une demande, un devis, une réservation et une facture. Enchaînés. Rien ne se prépare la veille au soir.",
+  "etat": {
+    "hook": "manquant",
+    "avatar": "manquant",
+    "software": "manquant",
+    "vo": "manquant",
+    "build": "manquant",
+    "publie": "manquant"
+  },
+  "notes": ""
+}

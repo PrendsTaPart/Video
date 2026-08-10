@@ -1,0 +1,21 @@
+{
+  "id": "EP076",
+  "num": 76,
+  "saison": 3,
+  "titre": "Le recomptage",
+  "module": "Configuration",
+  "chapitre": "Zones et tables",
+  "module_drive_id": "19xTrrkXtWO3yfJqtC3SIlDgpBjSEc4N9",
+  "hook": "Ton inventaire du mardi.",
+  "vo_punchline": "La production sort les ingrédients du stock. Automatiquement.",
+  "heygen_script": "Tu dessines ta salle : zones, tables, capacités. Ton plan de salle devient vivant pendant le service.",
+  "etat": {
+    "hook": "manquant",
+    "avatar": "manquant",
+    "software": "manquant",
+    "vo": "manquant",
+    "build": "manquant",
+    "publie": "manquant"
+  },
+  "notes": ""
+}

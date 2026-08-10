@@ -1,0 +1,21 @@
+{
+  "id": "EP128",
+  "num": 128,
+  "saison": 5,
+  "titre": "Saint-Valentin surbookée",
+  "module": "Réservation",
+  "chapitre": "4 - Placer un client à table",
+  "module_drive_id": "1m6WdjC_iNYWO_4U3LmDuOsc-_Y_DrZLu",
+  "hook": "Trente couverts en plus, ça rentre.",
+  "vo_punchline": "Ça rentre. La question, c'est si ça revient.",
+  "heygen_script": "Tu places tes clients selon la vraie capacité de ta salle. Serrer, ça se décide — ça ne se subit pas un soir de Saint-Valentin.",
+  "etat": {
+    "hook": "manquant",
+    "avatar": "manquant",
+    "software": "manquant",
+    "vo": "manquant",
+    "build": "manquant",
+    "publie": "manquant"
+  },
+  "notes": ""
+}

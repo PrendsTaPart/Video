@@ -1,0 +1,21 @@
+{
+  "id": "EP039",
+  "num": 39,
+  "saison": 2,
+  "titre": "Le ballon dans la soupe",
+  "module": "Réservation",
+  "chapitre": "3 - Gérer et no-shows",
+  "module_drive_id": "1m6WdjC_iNYWO_4U3LmDuOsc-_Y_DrZLu",
+  "hook": "L'imprévu du service.",
+  "vo_punchline": "Il y en aura d'autres. Autant être prêt.",
+  "heygen_script": "L'imprévu, tu ne l'évites pas. Mais tu vois en direct l'état de ta salle, tes retards et tes annulations, et tu réattribues en un geste.",
+  "etat": {
+    "hook": "manquant",
+    "avatar": "manquant",
+    "software": "manquant",
+    "vo": "manquant",
+    "build": "manquant",
+    "publie": "manquant"
+  },
+  "notes": ""
+}

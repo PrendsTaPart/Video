@@ -1,0 +1,21 @@
+{
+  "id": "EP133",
+  "num": 133,
+  "saison": 5,
+  "titre": "Le but à la 90e",
+  "module": "Caisse POS",
+  "chapitre": "3 - Encaisser une commande",
+  "module_drive_id": "1nHjH82ig0i-MtQqDmYp131htOSThaPIQ",
+  "hook": "Une minute pour encaisser trois tournées.",
+  "vo_punchline": "Ta caisse doit tenir le rythme.",
+  "heygen_script": "Trois tournées en une minute : tu encaisses au comptoir ou à table, TPE relié, ticket envoyé. Ta caisse tient le rythme du match.",
+  "etat": {
+    "hook": "manquant",
+    "avatar": "manquant",
+    "software": "manquant",
+    "vo": "manquant",
+    "build": "manquant",
+    "publie": "manquant"
+  },
+  "notes": ""
+}

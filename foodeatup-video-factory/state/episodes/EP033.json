@@ -1,0 +1,21 @@
+{
+  "id": "EP033",
+  "num": 33,
+  "saison": 2,
+  "titre": "Le rôti disparu",
+  "module": "StockVision",
+  "chapitre": "16 - Mouvements de stock",
+  "module_drive_id": "1Ib_pKyJ8_jaFAwtIhkzhtmUU_DCtGSSY",
+  "hook": "Tu as tout préparé. Presque.",
+  "vo_punchline": "Ce qui n'est pas suivi finit par disparaître.",
+  "heygen_script": "Ce qui n'est pas suivi disparaît. Ici chaque produit a son niveau, son seuil et son historique. Tu vois le trou avant le service, pas après.",
+  "etat": {
+    "hook": "manquant",
+    "avatar": "manquant",
+    "software": "manquant",
+    "vo": "manquant",
+    "build": "manquant",
+    "publie": "manquant"
+  },
+  "notes": ""
+}

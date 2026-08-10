@@ -1,0 +1,21 @@
+{
+  "id": "EP025",
+  "num": 25,
+  "saison": 1,
+  "titre": "Le mixeur sans couvercle",
+  "module": "Marketing",
+  "chapitre": "6 - Campagne 100 % IA",
+  "module_drive_id": "1hBc6Axd0DE2ocTiXXKGlmj1dyagOwKFg",
+  "hook": "Quand tu lances une promo sans données.",
+  "vo_punchline": "Ça éclabousse. Et rarement toi.",
+  "heygen_script": "Tu ne lances plus une promo au hasard. FoodEatUp te propose la campagne depuis tes vraies données clients : qui cibler, avec quelle offre, quel jour.",
+  "etat": {
+    "hook": "manquant",
+    "avatar": "manquant",
+    "software": "manquant",
+    "vo": "manquant",
+    "build": "manquant",
+    "publie": "manquant"
+  },
+  "notes": ""
+}

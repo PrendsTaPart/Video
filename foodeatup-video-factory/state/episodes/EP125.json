@@ -1,0 +1,21 @@
+{
+  "id": "EP125",
+  "num": 125,
+  "saison": 5,
+  "titre": "Le client qui refait le plan de salle",
+  "module": "Caroline",
+  "chapitre": "3 - Dessiner son plan de salle",
+  "module_drive_id": "1SV1XsT61_cDqoRzD8JxehtRoOpyH5LaA",
+  "hook": "Je serais mieux là, non ?",
+  "vo_punchline": "Ton plan de salle, c'est toi qui le décides.",
+  "heygen_script": "Ton plan de salle est le tien : zones, tables, capacités, blocages. Tu places, tu bloques, tu libères en un geste.",
+  "etat": {
+    "hook": "manquant",
+    "avatar": "manquant",
+    "software": "manquant",
+    "vo": "manquant",
+    "build": "manquant",
+    "publie": "manquant"
+  },
+  "notes": ""
+}

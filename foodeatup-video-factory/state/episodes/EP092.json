@@ -1,0 +1,21 @@
+{
+  "id": "EP092",
+  "num": 92,
+  "saison": 4,
+  "titre": "Le super-héros qui a réservé",
+  "module": "Réservation",
+  "chapitre": "3 - Gérer et no-shows",
+  "module_drive_id": "1m6WdjC_iNYWO_4U3LmDuOsc-_Y_DrZLu",
+  "hook": "Lui, il avait réservé.",
+  "vo_punchline": "Ses quatre-vingts fans, non.",
+  "heygen_script": "Quatre-vingts personnes d'un coup, ça se voit venir. Tu ouvres ou tu fermes tes créneaux en direct, et la liste d'attente prend le relais.",
+  "etat": {
+    "hook": "manquant",
+    "avatar": "manquant",
+    "software": "manquant",
+    "vo": "manquant",
+    "build": "manquant",
+    "publie": "manquant"
+  },
+  "notes": ""
+}

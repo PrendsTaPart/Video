@@ -1,0 +1,21 @@
+{
+  "id": "EP040",
+  "num": 40,
+  "saison": 2,
+  "titre": "La chèvre au potager",
+  "module": "StockVision",
+  "chapitre": "17 - Ajouter un mouvement",
+  "module_drive_id": "1Ib_pKyJ8_jaFAwtIhkzhtmUU_DCtGSSY",
+  "hook": "Ton stock de basilic.",
+  "vo_punchline": "Ce qui n'est pas compté disparaît toujours.",
+  "heygen_script": "Tu comptes une fois, l'outil compte ensuite. Chaque sortie d'ingrédient est déduite de ton stock, plat par plat.",
+  "etat": {
+    "hook": "manquant",
+    "avatar": "manquant",
+    "software": "manquant",
+    "vo": "manquant",
+    "build": "manquant",
+    "publie": "manquant"
+  },
+  "notes": ""
+}

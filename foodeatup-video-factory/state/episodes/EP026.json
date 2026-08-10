@@ -1,0 +1,21 @@
+{
+  "id": "EP026",
+  "num": 26,
+  "saison": 1,
+  "titre": "Le ballon qui explose",
+  "module": "StockVision",
+  "chapitre": "5 - Envoyer sa liste de courses au fournisseur",
+  "module_drive_id": "1Ib_pKyJ8_jaFAwtIhkzhtmUU_DCtGSSY",
+  "hook": "Ton stock avant le week-end.",
+  "vo_punchline": "Prévois, au lieu de subir.",
+  "heygen_script": "Ta liste de courses se construit depuis ta production prévue. Tu l'envoies au fournisseur depuis l'écran. Le week-end se prépare le mercredi.",
+  "etat": {
+    "hook": "manquant",
+    "avatar": "manquant",
+    "software": "manquant",
+    "vo": "manquant",
+    "build": "manquant",
+    "publie": "manquant"
+  },
+  "notes": ""
+}

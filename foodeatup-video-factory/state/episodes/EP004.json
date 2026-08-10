@@ -1,0 +1,21 @@
+{
+  "id": "EP004",
+  "num": 4,
+  "saison": 1,
+  "titre": "Le chat sur la caisse",
+  "module": "Caisse POS",
+  "chapitre": "1 - Configurer sa caisse",
+  "module_drive_id": "1nHjH82ig0i-MtQqDmYp131htOSThaPIQ",
+  "hook": "Ton nouveau responsable de caisse.",
+  "vo_punchline": "Il gère mieux que ton logiciel actuel.",
+  "heygen_script": "Ta caisse se configure en quelques minutes : TPE, ticket, moyens de paiement. Elle est reliée à ta carte et à ta cuisine, pas posée à côté.",
+  "etat": {
+    "hook": "manquant",
+    "avatar": "manquant",
+    "software": "manquant",
+    "vo": "manquant",
+    "build": "manquant",
+    "publie": "manquant"
+  },
+  "notes": ""
+}

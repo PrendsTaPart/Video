@@ -1,0 +1,21 @@
+{
+  "id": "EP051",
+  "num": 51,
+  "saison": 2,
+  "titre": "La mousse",
+  "module": "HACCP",
+  "chapitre": "Étiquettes DLC",
+  "module_drive_id": "10rqzHFjXbjkGi73uJyjt3XQM92eaIMK_",
+  "hook": "Un mauvais réglage. Une seule fois.",
+  "vo_punchline": "Les process, ça évite ça.",
+  "heygen_script": "Étiquette produite, date de fabrication, DLC calculée. Ton bac étiqueté n'est plus un pari.",
+  "etat": {
+    "hook": "manquant",
+    "avatar": "manquant",
+    "software": "manquant",
+    "vo": "manquant",
+    "build": "manquant",
+    "publie": "manquant"
+  },
+  "notes": ""
+}

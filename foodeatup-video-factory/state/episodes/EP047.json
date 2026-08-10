@@ -1,0 +1,21 @@
+{
+  "id": "EP047",
+  "num": 47,
+  "saison": 2,
+  "titre": "Le camion dans la ruelle",
+  "module": "HACCP",
+  "chapitre": "contrôle à réception",
+  "module_drive_id": "10rqzHFjXbjkGi73uJyjt3XQM92eaIMK_",
+  "hook": "La livraison de 7 h.",
+  "vo_punchline": "Réceptionner, contrôler, tracer. Sans y penser.",
+  "heygen_script": "À la livraison, tu contrôles la température, tu prends la photo, c'est tracé. Sept heures du matin, et ta conformité est déjà faite.",
+  "etat": {
+    "hook": "manquant",
+    "avatar": "manquant",
+    "software": "manquant",
+    "vo": "manquant",
+    "build": "manquant",
+    "publie": "manquant"
+  },
+  "notes": ""
+}

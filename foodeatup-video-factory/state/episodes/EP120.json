@@ -1,0 +1,21 @@
+{
+  "id": "EP120",
+  "num": 120,
+  "saison": 4,
+  "titre": "La réunion des dix logiciels",
+  "module": "PrediBot",
+  "chapitre": "1 - Lire ses prévisions",
+  "module_drive_id": "19kYZliyRnKraKVg1zdFrXCocD38VZ2a9",
+  "hook": "Réunion de tes dix logiciels.",
+  "vo_punchline": "Ils ne se parlent toujours pas. FoodEatUp, si.",
+  "heygen_script": "Une base, un écran, une équipe. Ta caisse, ta cuisine, ton stock et ton marketing lisent les mêmes données. Ils finissent enfin par se parler.",
+  "etat": {
+    "hook": "manquant",
+    "avatar": "manquant",
+    "software": "manquant",
+    "vo": "manquant",
+    "build": "manquant",
+    "publie": "manquant"
+  },
+  "notes": ""
+}

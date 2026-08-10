@@ -1,0 +1,21 @@
+{
+  "id": "EP070",
+  "num": 70,
+  "saison": 3,
+  "titre": "La dalle propre",
+  "module": "Équipe & Planning",
+  "chapitre": "Onboarding",
+  "module_drive_id": "1wboT7bVjEwxbhpU9Xgz8sRjjqn9XEd7X",
+  "hook": "C'est fait.",
+  "vo_punchline": "Photo analysée par l'IA. Rapport objectif.",
+  "heygen_script": "Le nouveau arrive avec son accès, son planning et ses vidéos de formation. Jour un, il est utile.",
+  "etat": {
+    "hook": "manquant",
+    "avatar": "manquant",
+    "software": "manquant",
+    "vo": "manquant",
+    "build": "manquant",
+    "publie": "manquant"
+  },
+  "notes": ""
+}

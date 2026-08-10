@@ -1,0 +1,21 @@
+{
+  "id": "EP137",
+  "num": 137,
+  "saison": 5,
+  "titre": "POV : la machine à café",
+  "module": "Caisse POS",
+  "chapitre": "3 - Encaisser une commande",
+  "module_drive_id": "1nHjH82ig0i-MtQqDmYp131htOSThaPIQ",
+  "hook": "Deux cent quarante cafés. Aujourd'hui.",
+  "vo_punchline": "Combien encaissés ? Tu es sûr ?",
+  "heygen_script": "Deux cent quarante cafés, deux cent quarante lignes encaissées. Tu compares le vendu et l'encaissé, à l'unité près.",
+  "etat": {
+    "hook": "manquant",
+    "avatar": "manquant",
+    "software": "manquant",
+    "vo": "manquant",
+    "build": "manquant",
+    "publie": "manquant"
+  },
+  "notes": ""
+}

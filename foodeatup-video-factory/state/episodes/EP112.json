@@ -1,0 +1,21 @@
+{
+  "id": "EP112",
+  "num": 112,
+  "saison": 4,
+  "titre": "Le casque de réalité augmentée",
+  "module": "Mon Site",
+  "chapitre": "2 - Choisir ton template",
+  "module_drive_id": "1ykcHl2BaY22WlCsBA3DuwXaEMvQZUtMF",
+  "hook": "La carte du futur.",
+  "vo_punchline": "Ou juste une carte en ligne qui marche.",
+  "heygen_script": "Ta carte en ligne, propre, à jour, consultable par QR à table. Pas de casque, pas d'appli à installer.",
+  "etat": {
+    "hook": "manquant",
+    "avatar": "manquant",
+    "software": "manquant",
+    "vo": "manquant",
+    "build": "manquant",
+    "publie": "manquant"
+  },
+  "notes": ""
+}

@@ -1,0 +1,21 @@
+{
+  "id": "EP091",
+  "num": 91,
+  "saison": 4,
+  "titre": "Le pétard dans le tiramisu",
+  "module": "Réservation",
+  "chapitre": "2 - Ajouter une réservation",
+  "module_drive_id": "1m6WdjC_iNYWO_4U3LmDuOsc-_Y_DrZLu",
+  "hook": "Anniversaire de table 12.",
+  "vo_punchline": "Les surprises, c'est bien. Les imprévus, non.",
+  "heygen_script": "L'anniversaire est noté à la réservation, avec le nombre de couverts et la demande spéciale. La cuisine et la salle le savent avant que le client arrive.",
+  "etat": {
+    "hook": "manquant",
+    "avatar": "manquant",
+    "software": "manquant",
+    "vo": "manquant",
+    "build": "manquant",
+    "publie": "manquant"
+  },
+  "notes": ""
+}

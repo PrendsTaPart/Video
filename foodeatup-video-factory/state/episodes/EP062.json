@@ -1,0 +1,21 @@
+{
+  "id": "EP062",
+  "num": 62,
+  "saison": 3,
+  "titre": "La photo de pointage",
+  "module": "HACCP",
+  "chapitre": "Routine du jour",
+  "module_drive_id": "10rqzHFjXbjkGi73uJyjt3XQM92eaIMK_",
+  "hook": "Je te jure, j'étais là à 8 h.",
+  "vo_punchline": "Photo, heure, poste. Le débat est clos.",
+  "heygen_script": "La conformité devient une routine de deux minutes par service, au lieu d'un dimanche de rattrapage.",
+  "etat": {
+    "hook": "manquant",
+    "avatar": "manquant",
+    "software": "manquant",
+    "vo": "manquant",
+    "build": "manquant",
+    "publie": "manquant"
+  },
+  "notes": ""
+}

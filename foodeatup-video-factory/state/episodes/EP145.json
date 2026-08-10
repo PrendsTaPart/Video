@@ -1,0 +1,21 @@
+{
+  "id": "EP145",
+  "num": 145,
+  "saison": 5,
+  "titre": "Documentaire animalier : le gérant",
+  "module": "PrediBot",
+  "chapitre": "1 - Lire ses prévisions",
+  "module_drive_id": "19kYZliyRnKraKVg1zdFrXCocD38VZ2a9",
+  "hook": "Le gérant, dans son habitat naturel.",
+  "vo_punchline": "Espèce en voie d'épuisement.",
+  "heygen_script": "Ton point du jour en un écran : ce qui arrive, ce qui manque, ce qui coince. L'espèce « gérant épuisé » n'est pas obligée de survivre comme ça.",
+  "etat": {
+    "hook": "manquant",
+    "avatar": "manquant",
+    "software": "manquant",
+    "vo": "manquant",
+    "build": "manquant",
+    "publie": "manquant"
+  },
+  "notes": ""
+}

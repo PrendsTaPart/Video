@@ -1,0 +1,21 @@
+{
+  "id": "EP043",
+  "num": 43,
+  "saison": 2,
+  "titre": "L'écureuil et le croissant",
+  "module": "Caisse POS",
+  "chapitre": "4 - Remises et avoirs",
+  "module_drive_id": "1nHjH82ig0i-MtQqDmYp131htOSThaPIQ",
+  "hook": "Petit vol. Tous les jours.",
+  "vo_punchline": "Mis bout à bout, ça fait ta marge.",
+  "heygen_script": "Chaque remise et chaque avoir est tracé, avec qui l'a fait et pourquoi. Les petits gestes ne mangent plus ta marge en silence.",
+  "etat": {
+    "hook": "manquant",
+    "avatar": "manquant",
+    "software": "manquant",
+    "vo": "manquant",
+    "build": "manquant",
+    "publie": "manquant"
+  },
+  "notes": ""
+}

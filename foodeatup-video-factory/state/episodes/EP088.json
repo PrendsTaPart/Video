@@ -1,0 +1,21 @@
+{
+  "id": "EP088",
+  "num": 88,
+  "saison": 3,
+  "titre": "Une étoile",
+  "module": "Mon Site",
+  "chapitre": "Pages",
+  "module_drive_id": "1ykcHl2BaY22WlCsBA3DuwXaEMvQZUtMF",
+  "hook": "Un avis. Publié il y a six jours.",
+  "vo_punchline": "Vu, répondu, traité. Le jour même.",
+  "heygen_script": "Tu ajoutes tes pages : carte, avis, allergènes, recrutement. Elles se publient quand tu le décides.",
+  "etat": {
+    "hook": "manquant",
+    "avatar": "manquant",
+    "software": "manquant",
+    "vo": "manquant",
+    "build": "manquant",
+    "publie": "manquant"
+  },
+  "notes": ""
+}

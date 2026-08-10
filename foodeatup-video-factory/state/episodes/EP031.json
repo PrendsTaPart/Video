@@ -1,0 +1,21 @@
+{
+  "id": "EP031",
+  "num": 31,
+  "saison": 2,
+  "titre": "L'avalanche de tupperware",
+  "module": "HACCP",
+  "chapitre": "étiquettes DLC",
+  "module_drive_id": "10rqzHFjXbjkGi73uJyjt3XQM92eaIMK_",
+  "hook": "C'est quoi, ça ?",
+  "vo_punchline": "Sans DLC tracées, personne ne sait.",
+  "heygen_script": "Tu crées ton étiquette DLC en trois secondes, avec le produit, la date et l'agent. Plus personne n'ouvre un bac en se demandant ce que c'est.",
+  "etat": {
+    "hook": "manquant",
+    "avatar": "manquant",
+    "software": "manquant",
+    "vo": "manquant",
+    "build": "manquant",
+    "publie": "manquant"
+  },
+  "notes": ""
+}

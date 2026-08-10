@@ -1,0 +1,21 @@
+{
+  "id": "EP127",
+  "num": 127,
+  "saison": 5,
+  "titre": "Réveillon, 23 h 58",
+  "module": "Réservation",
+  "chapitre": "1 - Réservations du jour",
+  "module_drive_id": "1m6WdjC_iNYWO_4U3LmDuOsc-_Y_DrZLu",
+  "hook": "Bonne année à tout le monde.",
+  "vo_punchline": "Sauf à celui qui gère les deux cents couverts.",
+  "heygen_script": "Deux cents couverts un 31 décembre, ça se pilote : arrivées échelonnées, tables assignées, cuisine prévenue. La soirée reste une fête.",
+  "etat": {
+    "hook": "manquant",
+    "avatar": "manquant",
+    "software": "manquant",
+    "vo": "manquant",
+    "build": "manquant",
+    "publie": "manquant"
+  },
+  "notes": ""
+}

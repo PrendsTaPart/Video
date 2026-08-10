@@ -1,0 +1,21 @@
+{
+  "id": "EP003",
+  "num": 3,
+  "saison": 1,
+  "titre": "Le plat dans la piscine",
+  "module": "StockVision",
+  "chapitre": "1 - Ma carte",
+  "module_drive_id": "1Ib_pKyJ8_jaFAwtIhkzhtmUU_DCtGSSY",
+  "hook": "Ta marge, en ce moment.",
+  "vo_punchline": "Elle coule. On va la repêcher.",
+  "heygen_script": "Chaque plat de ta carte a son coût matière calculé depuis tes ingrédients. Tu vois ta marge réelle, plat par plat, avant même de fixer ton prix.",
+  "etat": {
+    "hook": "manquant",
+    "avatar": "manquant",
+    "software": "manquant",
+    "vo": "manquant",
+    "build": "manquant",
+    "publie": "manquant"
+  },
+  "notes": ""
+}

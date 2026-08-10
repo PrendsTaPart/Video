@@ -1,0 +1,21 @@
+{
+  "id": "EP080",
+  "num": 80,
+  "saison": 3,
+  "titre": "Le tiroir vide",
+  "module": "Configuration",
+  "chapitre": "Abonnement",
+  "module_drive_id": "19xTrrkXtWO3yfJqtC3SIlDgpBjSEc4N9",
+  "hook": "Ouverture. Fond de caisse : ?",
+  "vo_punchline": "Fond déclaré, opérateur identifié, service ouvert.",
+  "heygen_script": "Tu vois ton plan, tes options actives et ce que tu consommes. Aucune ligne surprise en fin de mois.",
+  "etat": {
+    "hook": "manquant",
+    "avatar": "manquant",
+    "software": "manquant",
+    "vo": "manquant",
+    "build": "manquant",
+    "publie": "manquant"
+  },
+  "notes": ""
+}

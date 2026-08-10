@@ -1,0 +1,21 @@
+{
+  "id": "EP134",
+  "num": 134,
+  "saison": 5,
+  "titre": "POV : la friteuse",
+  "module": "HACCP",
+  "chapitre": "relevé de température",
+  "module_drive_id": "10rqzHFjXbjkGi73uJyjt3XQM92eaIMK_",
+  "hook": "Sept heures de service. Vue d'en bas.",
+  "vo_punchline": "Elle aussi a une température à respecter.",
+  "heygen_script": "L'huile et les frigos ont leurs seuils. Le relevé se fait en dix secondes, il est daté et gardé. Ta friteuse aussi a une conformité.",
+  "etat": {
+    "hook": "manquant",
+    "avatar": "manquant",
+    "software": "manquant",
+    "vo": "manquant",
+    "build": "manquant",
+    "publie": "manquant"
+  },
+  "notes": ""
+}

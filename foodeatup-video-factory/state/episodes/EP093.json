@@ -1,0 +1,21 @@
+{
+  "id": "EP093",
+  "num": 93,
+  "saison": 4,
+  "titre": "Le chef part à la pêche",
+  "module": "StockVision",
+  "chapitre": "3 - Prédictions des commandes",
+  "module_drive_id": "1Ib_pKyJ8_jaFAwtIhkzhtmUU_DCtGSSY",
+  "hook": "Rupture de stock, 20 h 15.",
+  "vo_punchline": "Anticiper, c'est moins sportif.",
+  "heygen_script": "FoodEatUp prévoit tes ventes de poisson à partir de ton historique. Tu commandes la bonne quantité le mardi, pas la canne à pêche le samedi.",
+  "etat": {
+    "hook": "manquant",
+    "avatar": "manquant",
+    "software": "manquant",
+    "vo": "manquant",
+    "build": "manquant",
+    "publie": "manquant"
+  },
+  "notes": ""
+}

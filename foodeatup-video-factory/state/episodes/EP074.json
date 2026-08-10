@@ -1,0 +1,21 @@
+{
+  "id": "EP074",
+  "num": 74,
+  "saison": 3,
+  "titre": "La liste oubliée",
+  "module": "Configuration",
+  "chapitre": "Catégories",
+  "module_drive_id": "19xTrrkXtWO3yfJqtC3SIlDgpBjSEc4N9",
+  "hook": "Tu as oublié la liste.",
+  "vo_punchline": "Elle se construit toute seule. Et elle part au fournisseur.",
+  "heygen_script": "Tes catégories de produits, d'ingrédients et de recettes structurent tout le reste. Cinq minutes qui t'en font gagner cent.",
+  "etat": {
+    "hook": "manquant",
+    "avatar": "manquant",
+    "software": "manquant",
+    "vo": "manquant",
+    "build": "manquant",
+    "publie": "manquant"
+  },
+  "notes": ""
+}

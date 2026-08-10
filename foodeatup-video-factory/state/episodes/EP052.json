@@ -1,0 +1,21 @@
+{
+  "id": "EP052",
+  "num": 52,
+  "saison": 2,
+  "titre": "Le tablier coincé",
+  "module": "HACCP",
+  "chapitre": "Traçabilité",
+  "module_drive_id": "10rqzHFjXbjkGi73uJyjt3XQM92eaIMK_",
+  "hook": "Encore un truc qui te retient.",
+  "vo_punchline": "Enlève-les tous, un par un.",
+  "heygen_script": "Chaque lot reçu est rattaché à ce que tu produis. En cas de rappel, tu remontes la chaîne en quelques secondes.",
+  "etat": {
+    "hook": "manquant",
+    "avatar": "manquant",
+    "software": "manquant",
+    "vo": "manquant",
+    "build": "manquant",
+    "publie": "manquant"
+  },
+  "notes": ""
+}

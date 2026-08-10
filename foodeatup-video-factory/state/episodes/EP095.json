@@ -1,0 +1,21 @@
+{
+  "id": "EP095",
+  "num": 95,
+  "saison": 4,
+  "titre": "L'éclipse de 13 h 12",
+  "module": "KDS",
+  "chapitre": "3 - Gérer le KDS en direct",
+  "module_drive_id": "1wQAkcP9pY90DLu_sE8GLiI6WYHZuYwq9",
+  "hook": "Le service s'est arrêté deux minutes.",
+  "vo_punchline": "Le reste du temps, il ne devrait jamais s'arrêter.",
+  "heygen_script": "Sur le KDS, chaque plat a son chrono. Tu vois ce qui traîne au moment où ça traîne, et tu relances le bon poste.",
+  "etat": {
+    "hook": "manquant",
+    "avatar": "manquant",
+    "software": "manquant",
+    "vo": "manquant",
+    "build": "manquant",
+    "publie": "manquant"
+  },
+  "notes": ""
+}

@@ -1,0 +1,21 @@
+{
+  "id": "EP141",
+  "num": 141,
+  "saison": 5,
+  "titre": "Cuisine, cockpit spatial",
+  "module": "PrediBot",
+  "chapitre": "3 - Parler à PrediBot",
+  "module_drive_id": "19kYZliyRnKraKVg1zdFrXCocD38VZ2a9",
+  "hook": "Table 6 depuis 22 minutes.",
+  "vo_punchline": "Un pilote automatique, ça existe aussi en cuisine.",
+  "heygen_script": "Tu demandes, PrediBot répond avec tes vraies données : la table en attente, la production à lancer, l'alerte à traiter. Le pilote automatique existe.",
+  "etat": {
+    "hook": "manquant",
+    "avatar": "manquant",
+    "software": "manquant",
+    "vo": "manquant",
+    "build": "manquant",
+    "publie": "manquant"
+  },
+  "notes": ""
+}

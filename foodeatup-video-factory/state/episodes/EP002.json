@@ -1,0 +1,21 @@
+{
+  "id": "EP002",
+  "num": 2,
+  "saison": 1,
+  "titre": "La chute en skateboard",
+  "module": "Service",
+  "chapitre": "3 - Envoi direct cuisine",
+  "module_drive_id": "1z4li_rdzH8yC7VFoWgOa4yMHbbKIAG29",
+  "hook": "Ton service du samedi soir.",
+  "vo_punchline": "Ça finit toujours par terre.",
+  "heygen_script": "Tu prends la commande à table, elle part en cuisine dans la seconde. Pas de carnet, pas d'aller-retour, pas de ticket perdu entre la salle et le pass.",
+  "etat": {
+    "hook": "manquant",
+    "avatar": "manquant",
+    "software": "manquant",
+    "vo": "manquant",
+    "build": "manquant",
+    "publie": "manquant"
+  },
+  "notes": ""
+}

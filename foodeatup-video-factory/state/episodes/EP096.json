@@ -1,0 +1,21 @@
+{
+  "id": "EP096",
+  "num": 96,
+  "saison": 4,
+  "titre": "Canicule : le beurre fugueur",
+  "module": "HACCP",
+  "chapitre": "relevé de température",
+  "module_drive_id": "10rqzHFjXbjkGi73uJyjt3XQM92eaIMK_",
+  "hook": "39° en cuisine.",
+  "vo_punchline": "Une alerte température, et tu sauves la marchandise.",
+  "heygen_script": "Trente-neuf degrés en cuisine, ton frigo souffre. Le relevé hors seuil te prévient tout de suite. Tu sauves la marchandise.",
+  "etat": {
+    "hook": "manquant",
+    "avatar": "manquant",
+    "software": "manquant",
+    "vo": "manquant",
+    "build": "manquant",
+    "publie": "manquant"
+  },
+  "notes": ""
+}

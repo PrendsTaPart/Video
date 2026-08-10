@@ -1,0 +1,21 @@
+{
+  "id": "EP012",
+  "num": 12,
+  "saison": 1,
+  "titre": "Le client qui attend",
+  "module": "KDS",
+  "chapitre": "3 - Gérer le KDS en direct",
+  "module_drive_id": "1wQAkcP9pY90DLu_sE8GLiI6WYHZuYwq9",
+  "hook": "Temps d'attente : « on regarde ».",
+  "vo_punchline": "Avec un KDS, il regarde son plat arriver.",
+  "heygen_script": "Le KDS affiche chaque plat, son poste et son temps d'attente. Le client ne regarde plus la cuisine : il regarde son plat arriver.",
+  "etat": {
+    "hook": "manquant",
+    "avatar": "manquant",
+    "software": "manquant",
+    "vo": "manquant",
+    "build": "manquant",
+    "publie": "manquant"
+  },
+  "notes": ""
+}

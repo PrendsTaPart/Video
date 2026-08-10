@@ -1,0 +1,21 @@
+{
+  "id": "EP132",
+  "num": 132,
+  "saison": 5,
+  "titre": "Le 15 août, seul ouvert",
+  "module": "Mon Site",
+  "chapitre": "6 - Réservations et horaires",
+  "module_drive_id": "1ykcHl2BaY22WlCsBA3DuwXaEMvQZUtMF",
+  "hook": "Tout le quartier est fermé.",
+  "vo_punchline": "Sauf toi. Encore faut-il qu'on te trouve en ligne.",
+  "heygen_script": "Tes horaires d'ouverture sont à jour partout : site, réservation, Google. Quand tout le quartier ferme, on te trouve.",
+  "etat": {
+    "hook": "manquant",
+    "avatar": "manquant",
+    "software": "manquant",
+    "vo": "manquant",
+    "build": "manquant",
+    "publie": "manquant"
+  },
+  "notes": ""
+}

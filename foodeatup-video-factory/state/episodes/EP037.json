@@ -1,0 +1,21 @@
+{
+  "id": "EP037",
+  "num": 37,
+  "saison": 2,
+  "titre": "Le dormeur debout",
+  "module": "Équipe & Planning",
+  "chapitre": "créer un shift",
+  "module_drive_id": "1wboT7bVjEwxbhpU9Xgz8sRjjqn9XEd7X",
+  "hook": "Fermeture. Troisième soir d'affilée.",
+  "vo_punchline": "Un planning bien fait, ça se voit sur les visages.",
+  "heygen_script": "Tu construis le planning de la semaine par glisser-déposer, avec le coût qui s'affiche en direct. Tes équipes savent, et toi aussi.",
+  "etat": {
+    "hook": "manquant",
+    "avatar": "manquant",
+    "software": "manquant",
+    "vo": "manquant",
+    "build": "manquant",
+    "publie": "manquant"
+  },
+  "notes": ""
+}

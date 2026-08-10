@@ -1,0 +1,21 @@
+{
+  "id": "EP028",
+  "num": 28,
+  "saison": 1,
+  "titre": "Le tapis à sushis fou",
+  "module": "HubRise",
+  "chapitre": "4 - Centraliser les commandes",
+  "module_drive_id": "19D09dNt_jZSKpcwVCU8Mn1OkMLkY_ojd",
+  "hook": "Tes commandes en ligne, un vendredi.",
+  "vo_punchline": "Tout arrive. Nulle part.",
+  "heygen_script": "Uber Eats, Deliveroo, ton site, le comptoir : tout tombe dans la même file. Un vendredi soir, tu regardes un écran, pas quatre.",
+  "etat": {
+    "hook": "manquant",
+    "avatar": "manquant",
+    "software": "manquant",
+    "vo": "manquant",
+    "build": "manquant",
+    "publie": "manquant"
+  },
+  "notes": ""
+}

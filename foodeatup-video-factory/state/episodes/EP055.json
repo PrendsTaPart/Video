@@ -1,0 +1,21 @@
+{
+  "id": "EP055",
+  "num": 55,
+  "saison": 2,
+  "titre": "Le ventilateur",
+  "module": "HACCP",
+  "chapitre": "Checklists hygiène",
+  "module_drive_id": "10rqzHFjXbjkGi73uJyjt3XQM92eaIMK_",
+  "hook": "Ta compta, au format papier.",
+  "vo_punchline": "Scanne. Classe. Oublie.",
+  "heygen_script": "Tu crées ta checklist une fois, l'équipe la valide chaque jour. Ce qui est coché est daté et signé.",
+  "etat": {
+    "hook": "manquant",
+    "avatar": "manquant",
+    "software": "manquant",
+    "vo": "manquant",
+    "build": "manquant",
+    "publie": "manquant"
+  },
+  "notes": ""
+}

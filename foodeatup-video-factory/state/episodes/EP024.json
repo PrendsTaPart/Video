@@ -1,0 +1,21 @@
+{
+  "id": "EP024",
+  "num": 24,
+  "saison": 1,
+  "titre": "La mouette braqueuse",
+  "module": "Mon Site",
+  "chapitre": "5 - Créer un site par IA",
+  "module_drive_id": "1ykcHl2BaY22WlCsBA3DuwXaEMvQZUtMF",
+  "hook": "Encore une commission en moins.",
+  "vo_punchline": "Récupère tes commandes en direct.",
+  "heygen_script": "Ton site de commande est créé par l'IA depuis ta carte. Tes clients commandent en direct, chez toi. Zéro commission sur ces commandes-là.",
+  "etat": {
+    "hook": "manquant",
+    "avatar": "manquant",
+    "software": "manquant",
+    "vo": "manquant",
+    "build": "manquant",
+    "publie": "manquant"
+  },
+  "notes": ""
+}

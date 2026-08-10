@@ -1,0 +1,21 @@
+{
+  "id": "EP087",
+  "num": 87,
+  "saison": 3,
+  "titre": "Les trois tablettes",
+  "module": "Mon Site",
+  "chapitre": "Éditeur",
+  "module_drive_id": "1ykcHl2BaY22WlCsBA3DuwXaEMvQZUtMF",
+  "hook": "Trois plateformes. Trois écrans.",
+  "vo_punchline": "Une seule cuisine. Un seul flux.",
+  "heygen_script": "Tu actives l'éditeur, tu choisis ton template, ton site est en ligne le jour même, aux couleurs de ta maison.",
+  "etat": {
+    "hook": "manquant",
+    "avatar": "manquant",
+    "software": "manquant",
+    "vo": "manquant",
+    "build": "manquant",
+    "publie": "manquant"
+  },
+  "notes": ""
+}

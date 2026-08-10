@@ -1,0 +1,21 @@
+{
+  "id": "EP022",
+  "num": 22,
+  "saison": 1,
+  "titre": "La facture qui fait pleurer",
+  "module": "PrediBot",
+  "chapitre": "2 - Marketplace de prompts",
+  "module_drive_id": "19kYZliyRnKraKVg1zdFrXCocD38VZ2a9",
+  "hook": "Mille euros par mois.",
+  "vo_punchline": "Pour dix logiciels qui ne se parlent même pas.",
+  "heygen_script": "Tout est déjà là : caisse, stock, planning, marketing, HACCP. Un seul abonnement, une seule base de données. Tes outils arrêtent de s'ignorer.",
+  "etat": {
+    "hook": "manquant",
+    "avatar": "manquant",
+    "software": "manquant",
+    "vo": "manquant",
+    "build": "manquant",
+    "publie": "manquant"
+  },
+  "notes": ""
+}

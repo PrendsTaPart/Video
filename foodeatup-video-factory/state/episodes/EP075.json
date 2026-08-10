@@ -1,0 +1,21 @@
+{
+  "id": "EP075",
+  "num": 75,
+  "saison": 3,
+  "titre": "La facture dans la poche",
+  "module": "Configuration",
+  "chapitre": "TVA",
+  "module_drive_id": "19xTrrkXtWO3yfJqtC3SIlDgpBjSEc4N9",
+  "hook": "Ta facture fournisseur.",
+  "vo_punchline": "Photographie-la. Les prix se mettent à jour seuls.",
+  "heygen_script": "Tes taux de TVA sont posés une fois, appliqués partout : caisse, factures, comptabilité.",
+  "etat": {
+    "hook": "manquant",
+    "avatar": "manquant",
+    "software": "manquant",
+    "vo": "manquant",
+    "build": "manquant",
+    "publie": "manquant"
+  },
+  "notes": ""
+}

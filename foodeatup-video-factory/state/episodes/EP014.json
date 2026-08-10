@@ -1,0 +1,21 @@
+{
+  "id": "EP014",
+  "num": 14,
+  "saison": 1,
+  "titre": "Le raton laveur",
+  "module": "StockVision",
+  "chapitre": "16 - Mouvements de stock",
+  "module_drive_id": "1Ib_pKyJ8_jaFAwtIhkzhtmUU_DCtGSSY",
+  "hook": "Ton gaspillage alimentaire.",
+  "vo_punchline": "Lui au moins, il sait ce qu'il y a en stock.",
+  "heygen_script": "Chaque entrée, chaque sortie, chaque perte est enregistrée. Tu vois ce qui part sans être vendu. Le gaspillage devient une ligne, donc un problème réglable.",
+  "etat": {
+    "hook": "manquant",
+    "avatar": "manquant",
+    "software": "manquant",
+    "vo": "manquant",
+    "build": "manquant",
+    "publie": "manquant"
+  },
+  "notes": ""
+}

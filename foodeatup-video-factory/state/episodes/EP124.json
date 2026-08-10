@@ -1,0 +1,21 @@
+{
+  "id": "EP124",
+  "num": 124,
+  "saison": 5,
+  "titre": "La table qui ne part jamais",
+  "module": "Caisse POS",
+  "chapitre": "6 - Clôturer sa caisse",
+  "module_drive_id": "1nHjH82ig0i-MtQqDmYp131htOSThaPIQ",
+  "hook": "Il est minuit dix.",
+  "vo_punchline": "Le service a une fin. Ton logiciel devrait le savoir.",
+  "heygen_script": "Le service a une fin : tu clôtures, tu comptes, tu archives. L'écran te dit quand la journée est vraiment finie.",
+  "etat": {
+    "hook": "manquant",
+    "avatar": "manquant",
+    "software": "manquant",
+    "vo": "manquant",
+    "build": "manquant",
+    "publie": "manquant"
+  },
+  "notes": ""
+}

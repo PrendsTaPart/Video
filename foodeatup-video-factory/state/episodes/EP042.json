@@ -1,0 +1,21 @@
+{
+  "id": "EP042",
+  "num": 42,
+  "saison": 2,
+  "titre": "La nappe et le vent",
+  "module": "Marketing",
+  "chapitre": "21 - MCP RapidoCMS et Iris",
+  "module_drive_id": "1hBc6Axd0DE2ocTiXXKGlmj1dyagOwKFg",
+  "hook": "Tout faire seul.",
+  "vo_punchline": "À un moment, il faut être aidé.",
+  "heygen_script": "Tu n'as pas à tout faire seul. Iris prépare tes contenus, PrediBot surveille tes chiffres, tu gardes la validation.",
+  "etat": {
+    "hook": "manquant",
+    "avatar": "manquant",
+    "software": "manquant",
+    "vo": "manquant",
+    "build": "manquant",
+    "publie": "manquant"
+  },
+  "notes": ""
+}

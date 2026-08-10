@@ -1,0 +1,21 @@
+{
+  "id": "EP005",
+  "num": 5,
+  "saison": 1,
+  "titre": "Le serveur qui glisse",
+  "module": "Configuration",
+  "chapitre": "vue d'ensemble",
+  "module_drive_id": "19xTrrkXtWO3yfJqtC3SIlDgpBjSEc4N9",
+  "hook": "Trois logiciels. Deux mains.",
+  "vo_punchline": "Un seul outil, ça change tout.",
+  "heygen_script": "Un seul paramétrage : ta carte, tes zones, tes tables, ta TVA. Tout le reste s'appuie dessus. Tu ne ressaisis jamais deux fois la même information.",
+  "etat": {
+    "hook": "manquant",
+    "avatar": "manquant",
+    "software": "manquant",
+    "vo": "manquant",
+    "build": "manquant",
+    "publie": "manquant"
+  },
+  "notes": ""
+}

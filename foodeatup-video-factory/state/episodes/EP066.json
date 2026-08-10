@@ -1,0 +1,21 @@
+{
+  "id": "EP066",
+  "num": 66,
+  "saison": 3,
+  "titre": "Le grille-pain qui ne répond pas",
+  "module": "Équipe & Planning",
+  "chapitre": "Congés",
+  "module_drive_id": "1wboT7bVjEwxbhpU9Xgz8sRjjqn9XEd7X",
+  "hook": "Ta cuisine n'a personne à qui parler.",
+  "vo_punchline": "Jarvis répond, lui. Et il note.",
+  "heygen_script": "Une demande de congé arrive, tu valides ou tu refuses depuis l'écran. Le planning se met à jour tout seul.",
+  "etat": {
+    "hook": "manquant",
+    "avatar": "manquant",
+    "software": "manquant",
+    "vo": "manquant",
+    "build": "manquant",
+    "publie": "manquant"
+  },
+  "notes": ""
+}

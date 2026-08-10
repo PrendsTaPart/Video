@@ -1,0 +1,21 @@
+{
+  "id": "EP035",
+  "num": 35,
+  "saison": 2,
+  "titre": "Le parasol fugitif",
+  "module": "PrediBot",
+  "chapitre": "1 - Lire ses prévisions",
+  "module_drive_id": "19kYZliyRnKraKVg1zdFrXCocD38VZ2a9",
+  "hook": "Ta terrasse, un jour de vent.",
+  "vo_punchline": "Certaines choses se prévoient.",
+  "heygen_script": "Prévisions de fréquentation, météo, événements du quartier : PrediBot te dit à quoi ressemble ton service avant qu'il commence.",
+  "etat": {
+    "hook": "manquant",
+    "avatar": "manquant",
+    "software": "manquant",
+    "vo": "manquant",
+    "build": "manquant",
+    "publie": "manquant"
+  },
+  "notes": ""
+}

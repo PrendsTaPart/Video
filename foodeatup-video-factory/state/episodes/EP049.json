@@ -1,0 +1,21 @@
+{
+  "id": "EP049",
+  "num": 49,
+  "saison": 2,
+  "titre": "Le chien du pass",
+  "module": "HACCP",
+  "chapitre": "Relevé de température",
+  "module_drive_id": "10rqzHFjXbjkGi73uJyjt3XQM92eaIMK_",
+  "hook": "Il envoie plus vite que ton pass.",
+  "vo_punchline": "Un KDS, et la cuisine avance toute seule.",
+  "heygen_script": "Tu relèves tes frigos depuis ton téléphone. La mesure est datée, signée, archivée. Un contrôle, et tu sors trois mois d'historique en un clic.",
+  "etat": {
+    "hook": "manquant",
+    "avatar": "manquant",
+    "software": "manquant",
+    "vo": "manquant",
+    "build": "manquant",
+    "publie": "manquant"
+  },
+  "notes": ""
+}

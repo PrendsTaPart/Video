@@ -8,8 +8,9 @@
 #   assets/hooks/EPxxx.mp4       clip Higgsfield récupéré (7 s utiles)
 #   assets/avatar/EPxxx.mp4      segment HeyGen déposé à la main (<= 12 s, avec audio)
 #   assets/software/EPxxx.mp4    10 s extraites d'un tuto Drive
-#   build/COMMUN_sting_BC.mp4    sting + VO_A + VO_B (9 s, identique sur les 150)
-#   build/COMMUN_E.mp4           outro + VO_C (4 s, identique sur les 150)
+#   build/EPxxx_A.mp4            segment A monté (hook + texte + punchline)
+# Les gabarits templates/COMMUN_sting_BC.mp4 et templates/COMMUN_E.mp4 (13 s au
+# total) sont identiques sur les 150 : ne jamais les régénérer par épisode.
 set -euo pipefail
 
 EP="${1:?usage: build-episode.sh EPxxx}"
@@ -30,9 +31,9 @@ SFX_GAIN=2.0       # +6 dB : whoosh audible sous la voix
 ffmpeg -v error \
  -i "$R/assets/avatar/$EP.mp4" \
  -i "$R/assets/software/$EP.mp4" \
- -i "$R/assets/brand/logo_foodeatup.png" \
- -i "$R/assets/brand/bgm.mp3" \
- -i "$R/assets/brand/sfx_transition.mp3" \
+ -i "$R/templates/logo_foodeatup.png" \
+ -i "$R/templates/bgm.mp3" \
+ -i "$R/templates/sfx_transition.mp3" \
  -filter_complex "\
  [0:v]fps=30,crop=1080:864:0:$AV_CROP_Y,tpad=stop_mode=clone:stop_duration=3,\
 trim=0:10,setpts=PTS-STARTPTS[top];\
@@ -52,10 +53,10 @@ afade=t=in:st=0:d=0.3[bed];\
 
 # --- Assemblage : A (7) + sting/B/C (9) + D (10) + E (4) = 30,0 s -------------
 cat > "$R/build/${EP}_list.txt" <<EOF
-file '${EP}_A.mp4'
-file 'COMMUN_sting_BC.mp4'
-file '${EP}_D.mp4'
-file 'COMMUN_E.mp4'
+file '$R/build/${EP}_A.mp4'
+file '$R/templates/COMMUN_sting_BC.mp4'
+file '$R/build/${EP}_D.mp4'
+file '$R/templates/COMMUN_E.mp4'
 EOF
 
 ffmpeg -v error -f concat -safe 0 -i "$R/build/${EP}_list.txt" \

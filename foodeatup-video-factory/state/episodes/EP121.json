@@ -1,0 +1,21 @@
+{
+  "id": "EP121",
+  "num": 121,
+  "saison": 5,
+  "titre": "Le modificateur infini",
+  "module": "Service",
+  "chapitre": "3 - Envoi direct cuisine",
+  "module_drive_id": "1z4li_rdzH8yC7VFoWgOa4yMHbbKIAG29",
+  "hook": "Alors, sans oignon, mais…",
+  "vo_punchline": "Une commande complexe, ça se saisit. Pas ça se subit.",
+  "heygen_script": "Les modifications se saisissent sur la commande : sans oignon, cuisson, allergie. Elles partent en cuisine avec le plat, écrites noir sur blanc.",
+  "etat": {
+    "hook": "manquant",
+    "avatar": "manquant",
+    "software": "manquant",
+    "vo": "manquant",
+    "build": "manquant",
+    "publie": "manquant"
+  },
+  "notes": ""
+}

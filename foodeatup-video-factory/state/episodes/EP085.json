@@ -1,0 +1,21 @@
+{
+  "id": "EP085",
+  "num": 85,
+  "saison": 3,
+  "titre": "Le ballon qui se dégonfle",
+  "module": "Comptabilité",
+  "chapitre": "Synthèse",
+  "module_drive_id": "1KlXihMLILGDrlxDuO2d3VCe1ic-kCAw_",
+  "hook": "Table de 8. 20 h 30. Personne.",
+  "vo_punchline": "No-show marqué, table libérée, soirée sauvée.",
+  "heygen_script": "Chiffre d'affaires, dépenses, impayés, marge : la synthèse du mois tient sur un écran.",
+  "etat": {
+    "hook": "manquant",
+    "avatar": "manquant",
+    "software": "manquant",
+    "vo": "manquant",
+    "build": "manquant",
+    "publie": "manquant"
+  },
+  "notes": ""
+}

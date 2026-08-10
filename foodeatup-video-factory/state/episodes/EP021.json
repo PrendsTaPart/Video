@@ -1,0 +1,21 @@
+{
+  "id": "EP021",
+  "num": 21,
+  "saison": 1,
+  "titre": "Chef contre imprimante",
+  "module": "KDS",
+  "chapitre": "1 - Créer tes postes KDS",
+  "module_drive_id": "1wQAkcP9pY90DLu_sE8GLiI6WYHZuYwq9",
+  "hook": "Le vrai ennemi du service.",
+  "vo_punchline": "Un KDS, et le combat s'arrête.",
+  "heygen_script": "Tu crées tes postes : chaud, froid, dessert. Chaque plat part au bon écran. Plus d'imprimante à secouer au milieu du service.",
+  "etat": {
+    "hook": "manquant",
+    "avatar": "manquant",
+    "software": "manquant",
+    "vo": "manquant",
+    "build": "manquant",
+    "publie": "manquant"
+  },
+  "notes": ""
+}

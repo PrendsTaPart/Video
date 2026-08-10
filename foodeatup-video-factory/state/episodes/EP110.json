@@ -1,0 +1,21 @@
+{
+  "id": "EP110",
+  "num": 110,
+  "saison": 4,
+  "titre": "Le menu 100 % matcha",
+  "module": "StockVision",
+  "chapitre": "18 - Statistiques par module",
+  "module_drive_id": "1Ib_pKyJ8_jaFAwtIhkzhtmUU_DCtGSSY",
+  "hook": "Tu suis toutes les tendances.",
+  "vo_punchline": "Regarde surtout lesquelles se vendent.",
+  "heygen_script": "La tendance, tu la testes. Tu regardes ce que ce plat rapporte vraiment, et tu décides de le garder ou pas sur des chiffres.",
+  "etat": {
+    "hook": "manquant",
+    "avatar": "manquant",
+    "software": "manquant",
+    "vo": "manquant",
+    "build": "manquant",
+    "publie": "manquant"
+  },
+  "notes": ""
+}

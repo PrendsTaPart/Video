@@ -1,0 +1,21 @@
+{
+  "id": "EP086",
+  "num": 86,
+  "saison": 3,
+  "titre": "Le téléphone que personne ne prend",
+  "module": "Comptabilité",
+  "chapitre": "Export comptable",
+  "module_drive_id": "1KlXihMLILGDrlxDuO2d3VCe1ic-kCAw_",
+  "hook": "Trois appels manqués pendant le coup de feu.",
+  "vo_punchline": "Caroline décroche. Et elle prend la réservation.",
+  "heygen_script": "Tu envoies à ton comptable un export propre. Le dimanche soir redevient un dimanche soir.",
+  "etat": {
+    "hook": "manquant",
+    "avatar": "manquant",
+    "software": "manquant",
+    "vo": "manquant",
+    "build": "manquant",
+    "publie": "manquant"
+  },
+  "notes": ""
+}

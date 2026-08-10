@@ -1,0 +1,21 @@
+{
+  "id": "EP103",
+  "num": 103,
+  "saison": 4,
+  "titre": "Le car de 40 sans réservation",
+  "module": "Réservation",
+  "chapitre": "1 - Réservations du jour",
+  "module_drive_id": "1m6WdjC_iNYWO_4U3LmDuOsc-_Y_DrZLu",
+  "hook": "Quarante couverts. Sans prévenir.",
+  "vo_punchline": "Prévenu, tu aurais dit oui.",
+  "heygen_script": "Un groupe qui arrive, tu vérifies la disponibilité réelle en trois secondes : tables libres, horaires, capacité. Tu dis oui en connaissance de cause.",
+  "etat": {
+    "hook": "manquant",
+    "avatar": "manquant",
+    "software": "manquant",
+    "vo": "manquant",
+    "build": "manquant",
+    "publie": "manquant"
+  },
+  "notes": ""
+}

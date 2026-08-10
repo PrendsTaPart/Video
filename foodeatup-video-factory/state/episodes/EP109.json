@@ -1,0 +1,21 @@
+{
+  "id": "EP109",
+  "num": 109,
+  "saison": 4,
+  "titre": "Le kombucha qui explose",
+  "module": "HACCP",
+  "chapitre": "traçabilité",
+  "module_drive_id": "10rqzHFjXbjkGi73uJyjt3XQM92eaIMK_",
+  "hook": "Ta cave à ferments.",
+  "vo_punchline": "Suivie et datée, elle ne t'explose pas à la figure.",
+  "heygen_script": "Chaque production est datée, tracée, rattachée à son lot. Ce qui fermente en cave n'est plus une surprise.",
+  "etat": {
+    "hook": "manquant",
+    "avatar": "manquant",
+    "software": "manquant",
+    "vo": "manquant",
+    "build": "manquant",
+    "publie": "manquant"
+  },
+  "notes": ""
+}

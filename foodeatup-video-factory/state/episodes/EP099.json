@@ -1,0 +1,21 @@
+{
+  "id": "EP099",
+  "num": 99,
+  "saison": 4,
+  "titre": "Le répondeur préhistorique",
+  "module": "Caroline",
+  "chapitre": "1 - Configurer voix et prompts",
+  "module_drive_id": "1SV1XsT61_cDqoRzD8JxehtRoOpyH5LaA",
+  "hook": "Quarante appels pendant le rush.",
+  "vo_punchline": "Quelqu'un devrait répondre. Ce ne sera pas toi.",
+  "heygen_script": "Caroline répond au téléphone pendant ton rush. Elle prend la réservation, la note, et te la remonte. Aucun appel ne tombe dans le vide.",
+  "etat": {
+    "hook": "manquant",
+    "avatar": "manquant",
+    "software": "manquant",
+    "vo": "manquant",
+    "build": "manquant",
+    "publie": "manquant"
+  },
+  "notes": ""
+}

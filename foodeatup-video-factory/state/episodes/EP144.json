@@ -1,0 +1,21 @@
+{
+  "id": "EP144",
+  "num": 144,
+  "saison": 5,
+  "titre": "Le procès du steak trop cuit",
+  "module": "Marketing",
+  "chapitre": "3 - Répondre aux avis",
+  "module_drive_id": "1hBc6Axd0DE2ocTiXXKGlmj1dyagOwKFg",
+  "hook": "Un avis une étoile.",
+  "vo_punchline": "Réponds-y avant qu'il fasse jurisprudence.",
+  "heygen_script": "Un avis une étoile, tu le vois tout de suite et tu réponds depuis l'outil. Une réponse rapide vaut mieux qu'un long procès.",
+  "etat": {
+    "hook": "manquant",
+    "avatar": "manquant",
+    "software": "manquant",
+    "vo": "manquant",
+    "build": "manquant",
+    "publie": "manquant"
+  },
+  "notes": ""
+}

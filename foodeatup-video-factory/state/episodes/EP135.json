@@ -1,0 +1,21 @@
+{
+  "id": "EP135",
+  "num": 135,
+  "saison": 5,
+  "titre": "POV : le carnet de réservations",
+  "module": "Réservation",
+  "chapitre": "1 - Réservations du jour",
+  "module_drive_id": "1m6WdjC_iNYWO_4U3LmDuOsc-_Y_DrZLu",
+  "hook": "Toutes tes réservations du soir.",
+  "vo_punchline": "Sur du papier. Vraiment ?",
+  "heygen_script": "Tes réservations du soir sont ici, pas sur un carnet taché de café : contact, couverts, table, historique. Rien ne s'efface.",
+  "etat": {
+    "hook": "manquant",
+    "avatar": "manquant",
+    "software": "manquant",
+    "vo": "manquant",
+    "build": "manquant",
+    "publie": "manquant"
+  },
+  "notes": ""
+}

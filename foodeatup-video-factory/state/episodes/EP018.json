@@ -1,0 +1,21 @@
+{
+  "id": "EP018",
+  "num": 18,
+  "saison": 1,
+  "titre": "Le serveur Baywatch",
+  "module": "Service",
+  "chapitre": "2 - Site, vocal et QR code",
+  "module_drive_id": "1z4li_rdzH8yC7VFoWgOa4yMHbbKIAG29",
+  "hook": "Le rush de vingt heures.",
+  "vo_punchline": "Sauve ton service, pas ton dos.",
+  "heygen_script": "Pendant le rush, tes clients commandent seuls : par QR à table, par le site, par l'agent vocal. Ton équipe sert, elle ne court plus.",
+  "etat": {
+    "hook": "manquant",
+    "avatar": "manquant",
+    "software": "manquant",
+    "vo": "manquant",
+    "build": "manquant",
+    "publie": "manquant"
+  },
+  "notes": ""
+}

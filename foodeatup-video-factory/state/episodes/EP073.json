@@ -1,0 +1,21 @@
+{
+  "id": "EP073",
+  "num": 73,
+  "saison": 3,
+  "titre": "Pile ou face",
+  "module": "Configuration",
+  "chapitre": "Établissement",
+  "module_drive_id": "19xTrrkXtWO3yfJqtC3SIlDgpBjSEc4N9",
+  "hook": "Combien tu commandes pour samedi ?",
+  "vo_punchline": "Tes ventes le savent. Demande-leur.",
+  "heygen_script": "Tu paramètres ton établissement une fois : horaires, coordonnées, TVA. Tout FoodEatUp s'appuie dessus.",
+  "etat": {
+    "hook": "manquant",
+    "avatar": "manquant",
+    "software": "manquant",
+    "vo": "manquant",
+    "build": "manquant",
+    "publie": "manquant"
+  },
+  "notes": ""
+}

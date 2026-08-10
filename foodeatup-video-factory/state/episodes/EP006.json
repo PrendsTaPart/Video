@@ -1,0 +1,21 @@
+{
+  "id": "EP006",
+  "num": 6,
+  "saison": 1,
+  "titre": "La pizza frisbee",
+  "module": "StockVision",
+  "chapitre": "17 - Ajouter et modifier un mouvement",
+  "module_drive_id": "1Ib_pKyJ8_jaFAwtIhkzhtmUU_DCtGSSY",
+  "hook": "Ta pizza part plus vite que ton stock.",
+  "vo_punchline": "Enfin… c'était avant.",
+  "heygen_script": "Tu envoies un plat, le stock bouge tout seul. Chaque sortie est tracée, avec la quantité et l'heure. Tu sais ce qu'il te reste sans compter les cartons.",
+  "etat": {
+    "hook": "manquant",
+    "avatar": "manquant",
+    "software": "manquant",
+    "vo": "manquant",
+    "build": "manquant",
+    "publie": "manquant"
+  },
+  "notes": ""
+}

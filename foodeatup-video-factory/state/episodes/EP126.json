@@ -1,0 +1,21 @@
+{
+  "id": "EP126",
+  "num": 126,
+  "saison": 5,
+  "titre": "Six fourchettes, une salade",
+  "module": "Caisse POS",
+  "chapitre": "5 - Séparer une addition",
+  "module_drive_id": "1nHjH82ig0i-MtQqDmYp131htOSThaPIQ",
+  "hook": "On partage, c'est plus convivial.",
+  "vo_punchline": "Partage l'assiette. Pas l'addition, elle se divise toute seule.",
+  "heygen_script": "Tu partages l'addition par article ou par personne. Ce qui reste dû s'affiche en direct. Personne ne recompte à la main.",
+  "etat": {
+    "hook": "manquant",
+    "avatar": "manquant",
+    "software": "manquant",
+    "vo": "manquant",
+    "build": "manquant",
+    "publie": "manquant"
+  },
+  "notes": ""
+}

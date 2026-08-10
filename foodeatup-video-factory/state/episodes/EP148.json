@@ -1,0 +1,21 @@
+{
+  "id": "EP148",
+  "num": 148,
+  "saison": 5,
+  "titre": "Le sumo de la place de livraison",
+  "module": "HubRise",
+  "chapitre": "3 - Synchro caisse tierce",
+  "module_drive_id": "19D09dNt_jZSKpcwVCU8Mn1OkMLkY_ojd",
+  "hook": "Trois plateformes. Une place.",
+  "vo_punchline": "Centralise les commandes, pas les embouteillages.",
+  "heygen_script": "Trois plateformes, une seule file. Les commandes arrivent centralisées, avec leur horaire de retrait. Tes livreurs ne se croisent plus au même moment.",
+  "etat": {
+    "hook": "manquant",
+    "avatar": "manquant",
+    "software": "manquant",
+    "vo": "manquant",
+    "build": "manquant",
+    "publie": "manquant"
+  },
+  "notes": ""
+}

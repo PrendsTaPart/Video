@@ -1,0 +1,21 @@
+{
+  "id": "EP097",
+  "num": 97,
+  "saison": 4,
+  "titre": "Le mur de tablettes",
+  "module": "HubRise",
+  "chapitre": "2 - Relier Uber Eats et Deliveroo",
+  "module_drive_id": "19D09dNt_jZSKpcwVCU8Mn1OkMLkY_ojd",
+  "hook": "Six plateformes. Six alertes.",
+  "vo_punchline": "Une seule commande, un seul écran.",
+  "heygen_script": "Tes plateformes envoient tout dans FoodEatUp. Six alertes deviennent une file de commandes. La tablette murale, tu peux la ranger.",
+  "etat": {
+    "hook": "manquant",
+    "avatar": "manquant",
+    "software": "manquant",
+    "vo": "manquant",
+    "build": "manquant",
+    "publie": "manquant"
+  },
+  "notes": ""
+}

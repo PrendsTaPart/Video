@@ -1,0 +1,21 @@
+{
+  "id": "EP106",
+  "num": 106,
+  "saison": 4,
+  "titre": "L'addition en quatorze parts",
+  "module": "Caisse POS",
+  "chapitre": "5 - Séparer une addition",
+  "module_drive_id": "1nHjH82ig0i-MtQqDmYp131htOSThaPIQ",
+  "hook": "On peut payer chacun ?",
+  "vo_punchline": "Oui. En trois secondes, pas en trente minutes.",
+  "heygen_script": "Quatorze parts, quatorze cartes : tu découpes l'addition depuis l'écran, chacun paie ce qu'il doit, le reste dû s'affiche en direct.",
+  "etat": {
+    "hook": "manquant",
+    "avatar": "manquant",
+    "software": "manquant",
+    "vo": "manquant",
+    "build": "manquant",
+    "publie": "manquant"
+  },
+  "notes": ""
+}

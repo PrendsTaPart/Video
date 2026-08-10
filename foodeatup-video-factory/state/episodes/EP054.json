@@ -1,0 +1,21 @@
+{
+  "id": "EP054",
+  "num": 54,
+  "saison": 2,
+  "titre": "Le pois",
+  "module": "HACCP",
+  "chapitre": "Plan de nettoyage",
+  "module_drive_id": "10rqzHFjXbjkGi73uJyjt3XQM92eaIMK_",
+  "hook": "Ton prix ne raconte pas ton coût.",
+  "vo_punchline": "Marge réelle par plat. Ça change les décisions.",
+  "heygen_script": "Tes zones et tes postes de nettoyage sont listés. Qui a fait quoi, quand, c'est enregistré. Le plan de nettoyage vit vraiment.",
+  "etat": {
+    "hook": "manquant",
+    "avatar": "manquant",
+    "software": "manquant",
+    "vo": "manquant",
+    "build": "manquant",
+    "publie": "manquant"
+  },
+  "notes": ""
+}

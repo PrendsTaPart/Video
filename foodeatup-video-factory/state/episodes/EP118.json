@@ -1,0 +1,21 @@
+{
+  "id": "EP118",
+  "num": 118,
+  "saison": 4,
+  "titre": "La file du brunch",
+  "module": "Mon Site",
+  "chapitre": "5 - Créer un site par IA",
+  "module_drive_id": "1ykcHl2BaY22WlCsBA3DuwXaEMvQZUtMF",
+  "hook": "Le brunch du dimanche.",
+  "vo_punchline": "Ils feraient la queue chez toi aussi. Encore faut-il pouvoir réserver.",
+  "heygen_script": "Ton site de réservation et de commande est prêt en un clic, depuis ta carte. La file d'attente devient un carnet plein.",
+  "etat": {
+    "hook": "manquant",
+    "avatar": "manquant",
+    "software": "manquant",
+    "vo": "manquant",
+    "build": "manquant",
+    "publie": "manquant"
+  },
+  "notes": ""
+}

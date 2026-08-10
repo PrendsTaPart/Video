@@ -1,0 +1,21 @@
+{
+  "id": "EP023",
+  "num": 23,
+  "saison": 1,
+  "titre": "L'aspirateur robot",
+  "module": "Marketing",
+  "chapitre": "24 - Calendrier IA avec Iris",
+  "module_drive_id": "1hBc6Axd0DE2ocTiXXKGlmj1dyagOwKFg",
+  "hook": "Ton automatisation actuelle.",
+  "vo_punchline": "Automatiser, oui. Mais bien.",
+  "heygen_script": "Iris regarde ton exploitation et te propose quoi publier, et pourquoi. Tu valides ou tu refuses. L'automatisation te sert, elle ne t'échappe pas.",
+  "etat": {
+    "hook": "manquant",
+    "avatar": "manquant",
+    "software": "manquant",
+    "vo": "manquant",
+    "build": "manquant",
+    "publie": "manquant"
+  },
+  "notes": ""
+}

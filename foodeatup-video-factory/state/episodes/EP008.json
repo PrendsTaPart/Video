@@ -1,0 +1,21 @@
+{
+  "id": "EP008",
+  "num": 8,
+  "saison": 1,
+  "titre": "La pile de tickets",
+  "module": "Comptabilité",
+  "chapitre": "facturation",
+  "module_drive_id": "1KlXihMLILGDrlxDuO2d3VCe1ic-kCAw_",
+  "hook": "Fin de mois. Encore.",
+  "vo_punchline": "Et si la compta se faisait toute seule ?",
+  "heygen_script": "Chaque commande génère sa facture. Tu retrouves le facturé, l'encaissé et les impayés dans le même écran. La fin de mois devient une lecture, pas une reconstitution.",
+  "etat": {
+    "hook": "manquant",
+    "avatar": "manquant",
+    "software": "manquant",
+    "vo": "manquant",
+    "build": "manquant",
+    "publie": "manquant"
+  },
+  "notes": ""
+}

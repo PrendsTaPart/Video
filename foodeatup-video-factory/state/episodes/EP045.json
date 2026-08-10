@@ -1,0 +1,21 @@
+{
+  "id": "EP045",
+  "num": 45,
+  "saison": 2,
+  "titre": "La chambre froide",
+  "module": "StockVision",
+  "chapitre": "18 - Statistiques par module",
+  "module_drive_id": "1Ib_pKyJ8_jaFAwtIhkzhtmUU_DCtGSSY",
+  "hook": "Personne ne sait où tu es.",
+  "vo_punchline": "Ton restaurant non plus ne devrait pas être une boîte noire.",
+  "heygen_script": "Ton restaurant arrête d'être une boîte noire : ventes, marges, fréquentation, stock, module par module, sur la période que tu choisis.",
+  "etat": {
+    "hook": "manquant",
+    "avatar": "manquant",
+    "software": "manquant",
+    "vo": "manquant",
+    "build": "manquant",
+    "publie": "manquant"
+  },
+  "notes": ""
+}

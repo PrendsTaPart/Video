@@ -1,0 +1,21 @@
+{
+  "id": "EP122",
+  "num": 122,
+  "saison": 5,
+  "titre": "« Comme d'habitude »",
+  "module": "Marketing",
+  "chapitre": "20 - Vue client fidélité",
+  "module_drive_id": "1hBc6Axd0DE2ocTiXXKGlmj1dyagOwKFg",
+  "hook": "Il dit « comme d'habitude ».",
+  "vo_punchline": "Ton fichier client saurait, lui.",
+  "heygen_script": "La fiche client te dit qui il est, ce qu'il commande et quand il est venu la dernière fois. « Comme d'habitude » devient une information, pas un bluff.",
+  "etat": {
+    "hook": "manquant",
+    "avatar": "manquant",
+    "software": "manquant",
+    "vo": "manquant",
+    "build": "manquant",
+    "publie": "manquant"
+  },
+  "notes": ""
+}

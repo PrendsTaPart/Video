@@ -1,0 +1,21 @@
+{
+  "id": "EP117",
+  "num": 117,
+  "saison": 4,
+  "titre": "Le plat étoilé en dix minutes",
+  "module": "StockVision",
+  "chapitre": "1 - Ma carte, fiche recette",
+  "module_drive_id": "1Ib_pKyJ8_jaFAwtIhkzhtmUU_DCtGSSY",
+  "hook": "Le défi à dix minutes.",
+  "vo_punchline": "Une fiche technique, et c'est dix minutes tous les jours.",
+  "heygen_script": "La fiche technique fixe les quantités, les étapes et le coût. Le plat sort en dix minutes, tous les jours, par n'importe qui de ta brigade.",
+  "etat": {
+    "hook": "manquant",
+    "avatar": "manquant",
+    "software": "manquant",
+    "vo": "manquant",
+    "build": "manquant",
+    "publie": "manquant"
+  },
+  "notes": ""
+}

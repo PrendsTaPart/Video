@@ -1,0 +1,21 @@
+{
+  "id": "EP017",
+  "num": 17,
+  "saison": 1,
+  "titre": "Le ninja de la frite",
+  "module": "StockVision",
+  "chapitre": "19 - Création d'un rapport",
+  "module_drive_id": "1Ib_pKyJ8_jaFAwtIhkzhtmUU_DCtGSSY",
+  "hook": "Personne ne touche à ta dernière frite.",
+  "vo_punchline": "Ni à ta marge.",
+  "heygen_script": "Tu génères ton rapport par module en un clic : ventes, stock, production. L'historique est gardé. Tu compares ce mois-ci avec le mois dernier, pas avec ton souvenir.",
+  "etat": {
+    "hook": "manquant",
+    "avatar": "manquant",
+    "software": "manquant",
+    "vo": "manquant",
+    "build": "manquant",
+    "publie": "manquant"
+  },
+  "notes": ""
+}

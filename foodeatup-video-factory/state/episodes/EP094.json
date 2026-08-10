@@ -1,0 +1,21 @@
+{
+  "id": "EP094",
+  "num": 94,
+  "saison": 4,
+  "titre": "Le robot livreur qui double le scooter",
+  "module": "HubRise",
+  "chapitre": "4 - Centraliser les commandes",
+  "module_drive_id": "19D09dNt_jZSKpcwVCU8Mn1OkMLkY_ojd",
+  "hook": "2026, la livraison change de main.",
+  "vo_punchline": "Autant que tes commandes arrivent au bon endroit.",
+  "heygen_script": "Peu importe qui livre. Tes commandes arrivent dans la même file, avec la bonne adresse et le bon statut, jusqu'à la remise au client.",
+  "etat": {
+    "hook": "manquant",
+    "avatar": "manquant",
+    "software": "manquant",
+    "vo": "manquant",
+    "build": "manquant",
+    "publie": "manquant"
+  },
+  "notes": ""
+}

@@ -1,0 +1,21 @@
+{
+  "id": "EP010",
+  "num": 10,
+  "saison": 1,
+  "titre": "Le flambage raté",
+  "module": "PrediBot",
+  "chapitre": "1 - Lire ses prévisions",
+  "module_drive_id": "19kYZliyRnKraKVg1zdFrXCocD38VZ2a9",
+  "hook": "Toi, devant ta facture logicielle.",
+  "vo_punchline": "Mille euros par mois. Pour dix outils qui ne se parlent pas.",
+  "heygen_script": "Un écran, le matin : ton chiffre d'affaires prévu, ta fréquentation, tes points de tension. C'est ton point du jour, sans ouvrir dix onglets.",
+  "etat": {
+    "hook": "manquant",
+    "avatar": "manquant",
+    "software": "manquant",
+    "vo": "manquant",
+    "build": "manquant",
+    "publie": "manquant"
+  },
+  "notes": ""
+}

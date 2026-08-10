@@ -1,0 +1,21 @@
+{
+  "id": "EP071",
+  "num": 71,
+  "saison": 3,
+  "titre": "La liste à l'envers",
+  "module": "Équipe & Planning",
+  "chapitre": "Multi-postes",
+  "module_drive_id": "1wboT7bVjEwxbhpU9Xgz8sRjjqn9XEd7X",
+  "hook": "La check-list du soir.",
+  "vo_punchline": "Cochée, horodatée, signée par qui l'a faite.",
+  "heygen_script": "Tu affectes tes équipes par poste et par zone. Chacun sait où il est attendu ce soir.",
+  "etat": {
+    "hook": "manquant",
+    "avatar": "manquant",
+    "software": "manquant",
+    "vo": "manquant",
+    "build": "manquant",
+    "publie": "manquant"
+  },
+  "notes": ""
+}

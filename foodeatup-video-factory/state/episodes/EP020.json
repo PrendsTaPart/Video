@@ -1,0 +1,21 @@
+{
+  "id": "EP020",
+  "num": 20,
+  "saison": 1,
+  "titre": "Le chien qui a réservé",
+  "module": "Réservation",
+  "chapitre": "2 - Ajouter une réservation",
+  "module_drive_id": "1m6WdjC_iNYWO_4U3LmDuOsc-_Y_DrZLu",
+  "hook": "Lui, il a réservé.",
+  "vo_punchline": "Tes vrais clients aussi devraient pouvoir.",
+  "heygen_script": "Tu ajoutes une réservation en dix secondes, la table libre est proposée automatiquement. Et tes clients peuvent le faire eux-mêmes, depuis ton site.",
+  "etat": {
+    "hook": "manquant",
+    "avatar": "manquant",
+    "software": "manquant",
+    "vo": "manquant",
+    "build": "manquant",
+    "publie": "manquant"
+  },
+  "notes": ""
+}

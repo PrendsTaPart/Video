@@ -1,0 +1,21 @@
+{
+  "id": "EP140",
+  "num": 140,
+  "saison": 5,
+  "titre": "Le braquage du frigo",
+  "module": "StockVision",
+  "chapitre": "16 - Mouvements de stock",
+  "module_drive_id": "1Ib_pKyJ8_jaFAwtIhkzhtmUU_DCtGSSY",
+  "hook": "Ton inventaire, la nuit.",
+  "vo_punchline": "Ce qui disparaît finit toujours par se voir.",
+  "heygen_script": "L'inventaire est daté, signé, comparé au théorique. Ce qui disparaît la nuit finit toujours par apparaître dans l'écart.",
+  "etat": {
+    "hook": "manquant",
+    "avatar": "manquant",
+    "software": "manquant",
+    "vo": "manquant",
+    "build": "manquant",
+    "publie": "manquant"
+  },
+  "notes": ""
+}

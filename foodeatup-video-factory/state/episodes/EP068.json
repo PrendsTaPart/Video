@@ -1,0 +1,21 @@
+{
+  "id": "EP068",
+  "num": 68,
+  "saison": 3,
+  "titre": "Le second avis",
+  "module": "Équipe & Planning",
+  "chapitre": "Coût du travail",
+  "module_drive_id": "1wboT7bVjEwxbhpU9Xgz8sRjjqn9XEd7X",
+  "hook": "Le test scientifique du nez.",
+  "vo_punchline": "Une étiquette DLC, et plus personne ne renifle.",
+  "heygen_script": "Ton coût de personnel s'affiche en face de ton chiffre d'affaires prévu. Tu ajustes avant, pas après.",
+  "etat": {
+    "hook": "manquant",
+    "avatar": "manquant",
+    "software": "manquant",
+    "vo": "manquant",
+    "build": "manquant",
+    "publie": "manquant"
+  },
+  "notes": ""
+}

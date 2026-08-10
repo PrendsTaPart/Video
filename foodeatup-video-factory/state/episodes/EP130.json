@@ -1,0 +1,21 @@
+{
+  "id": "EP130",
+  "num": 130,
+  "saison": 5,
+  "titre": "Fête de la musique",
+  "module": "Marketing",
+  "chapitre": "7 - Ton agenda marketing",
+  "module_drive_id": "1hBc6Axd0DE2ocTiXXKGlmj1dyagOwKFg",
+  "hook": "21 juin. Devant ta porte.",
+  "vo_punchline": "Autant que les gens sachent que tu es ouvert.",
+  "heygen_script": "Ton agenda marketing connaît les temps forts de ton quartier. Tu prépares l'événement avant qu'il soit devant ta porte.",
+  "etat": {
+    "hook": "manquant",
+    "avatar": "manquant",
+    "software": "manquant",
+    "vo": "manquant",
+    "build": "manquant",
+    "publie": "manquant"
+  },
+  "notes": ""
+}

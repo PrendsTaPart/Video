@@ -1,0 +1,21 @@
+{
+  "id": "EP142",
+  "num": 142,
+  "saison": 5,
+  "titre": "Duel à la spatule",
+  "module": "Équipe & Planning",
+  "chapitre": "affectation des postes",
+  "module_drive_id": "1wboT7bVjEwxbhpU9Xgz8sRjjqn9XEd7X",
+  "hook": "Qui envoie le plat du jour.",
+  "vo_punchline": "Répartis les postes avant le service, pas pendant.",
+  "heygen_script": "Les postes sont répartis avant le service, pas pendant. Chacun sait ce qu'il envoie, personne ne dégaine sa spatule pour le savoir.",
+  "etat": {
+    "hook": "manquant",
+    "avatar": "manquant",
+    "software": "manquant",
+    "vo": "manquant",
+    "build": "manquant",
+    "publie": "manquant"
+  },
+  "notes": ""
+}

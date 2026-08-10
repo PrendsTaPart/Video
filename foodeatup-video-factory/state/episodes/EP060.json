@@ -1,0 +1,21 @@
+{
+  "id": "EP060",
+  "num": 60,
+  "saison": 2,
+  "titre": "Le poulpe multitâche",
+  "module": "HACCP",
+  "chapitre": "Congélation",
+  "module_drive_id": "10rqzHFjXbjkGi73uJyjt3XQM92eaIMK_",
+  "hook": "Ce qu'on te demande d'être.",
+  "vo_punchline": "Ou alors, un seul outil fait le reste.",
+  "heygen_script": "Tu enregistres une mise en congélation avec sa date et sa quantité. Plus de sac sans nom au fond du bac.",
+  "etat": {
+    "hook": "manquant",
+    "avatar": "manquant",
+    "software": "manquant",
+    "vo": "manquant",
+    "build": "manquant",
+    "publie": "manquant"
+  },
+  "notes": ""
+}

@@ -1,0 +1,21 @@
+{
+  "id": "EP129",
+  "num": 129,
+  "saison": 5,
+  "titre": "Premier jour de terrasse, 4 degrés",
+  "module": "Caroline",
+  "chapitre": "4 - Gérer ses tables",
+  "module_drive_id": "1SV1XsT61_cDqoRzD8JxehtRoOpyH5LaA",
+  "hook": "Premier rayon de soleil de l'année.",
+  "vo_punchline": "Ta terrasse ouvre. Ton service doit suivre.",
+  "heygen_script": "Tu ouvres ta terrasse dans le logiciel : tables ajoutées, capacité mise à jour, réservations ouvertes dessus. Le premier rayon de soleil est rentable.",
+  "etat": {
+    "hook": "manquant",
+    "avatar": "manquant",
+    "software": "manquant",
+    "vo": "manquant",
+    "build": "manquant",
+    "publie": "manquant"
+  },
+  "notes": ""
+}

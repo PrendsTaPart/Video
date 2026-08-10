@@ -1,0 +1,21 @@
+{
+  "id": "EP072",
+  "num": 72,
+  "saison": 3,
+  "titre": "Le classeur",
+  "module": "Équipe & Planning",
+  "chapitre": "Absences",
+  "module_drive_id": "1wboT7bVjEwxbhpU9Xgz8sRjjqn9XEd7X",
+  "hook": "Contrôle sanitaire. Ce matin.",
+  "vo_punchline": "Tout l'historique HACCP, exporté en un clic.",
+  "heygen_script": "Une absence, et tu vois immédiatement quel service est découvert. Tu remplaces avant l'ouverture.",
+  "etat": {
+    "hook": "manquant",
+    "avatar": "manquant",
+    "software": "manquant",
+    "vo": "manquant",
+    "build": "manquant",
+    "publie": "manquant"
+  },
+  "notes": ""
+}
