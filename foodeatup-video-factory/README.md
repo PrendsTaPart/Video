@@ -83,14 +83,20 @@ lisibles une fois tronqués à la durée du master 30 s.
 ## État
 
 - ✅ scripts 00 → 04, testés de bout en bout
-- ✅ QA 7 tests, bloquante — **56 masters, 56 publiables**
-- ✅ voix off **Olivier** (`rgFgMEXfdGwXCYio7I0J`) : blocs communs, 28 punchlines
-  et **28 pitchs de démo**, un par épisode, tous normalisés
-- ✅ **28 épisodes sur 30** montés en TikTok 30 s ET LinkedIn 1:1 45 s
-- ✅ 28 plans de publication prêts dans `build/publish_plan_EPxx.json`
-- ⏳ **EP24** (la mouette braqueuse) et **EP28** (le tapis à sushis fou) :
-  séquences Higgsfield à générer
+- ✅ QA 7 tests, bloquante — **58 masters, 58 publiables**
+- ✅ voix off **Olivier** (`rgFgMEXfdGwXCYio7I0J`) : blocs communs, 29 punchlines
+  et **29 pitchs de démo**, un par épisode, tous normalisés
+- ✅ **29 épisodes sur 30** montés en TikTok 30 s ET LinkedIn 1:1 45 s
+- ✅ 29 plans de publication prêts dans `build/publish_plan_EPxx.json`
+- ⏳ **EP24** (la mouette braqueuse) : séquence Higgsfield à générer
 - ⏳ publication : rien n'est envoyé, TikTok reste en `SELF_ONLY`
+
+### Hooks : toujours l'original Higgsfield
+
+Les 29 hooks sont les fichiers `rawUrl` d'origine (4,1 → 13,4 Mbit/s), pas des
+copies ré-encodées. EP18, EP27 puis EP20 ont été remplacés après coup : la copie
+d'EP20 tournait à 2,0 Mbit/s contre 5,7 pour le job d'origine
+(`cdb75d02`, « le chien qui a réservé »).
 
 ### Une démo par épisode
 
