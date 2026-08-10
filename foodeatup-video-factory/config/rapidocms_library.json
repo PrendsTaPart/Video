@@ -91,6 +91,10 @@
     "url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/foodeatup-hook-EP23-higgsfield",
     "octets": 10010009
   },
+  "foodeatup-hook-EP24-higgsfield": {
+    "url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/foodeatup-hook-EP24-higgsfield",
+    "octets": 9650283
+  },
   "foodeatup-hook-EP25-higgsfield": {
     "url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/foodeatup-hook-EP25-higgsfield",
     "octets": 11152810
@@ -121,7 +125,7 @@
   },
   "foodeatup-promo-EP01-tiktok-30": {
     "url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/foodeatup-promo-EP01-tiktok-30",
-    "octets": 6854151
+    "octets": 6908255
   },
   "foodeatup-promo-EP02-linkedin-45": {
     "url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/foodeatup-promo-EP02-linkedin-45",
@@ -129,7 +133,7 @@
   },
   "foodeatup-promo-EP02-tiktok-30": {
     "url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/foodeatup-promo-EP02-tiktok-30",
-    "octets": 7861738
+    "octets": 7917256
   },
   "foodeatup-promo-EP03-linkedin-45": {
     "url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/foodeatup-promo-EP03-linkedin-45",
@@ -137,7 +141,7 @@
   },
   "foodeatup-promo-EP03-tiktok-30": {
     "url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/foodeatup-promo-EP03-tiktok-30",
-    "octets": 9455262
+    "octets": 9509235
   },
   "foodeatup-promo-EP04-linkedin-45": {
     "url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/foodeatup-promo-EP04-linkedin-45",
@@ -145,7 +149,7 @@
   },
   "foodeatup-promo-EP04-tiktok-30": {
     "url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/foodeatup-promo-EP04-tiktok-30",
-    "octets": 5386144
+    "octets": 5441190
   },
   "foodeatup-promo-EP05-linkedin-45": {
     "url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/foodeatup-promo-EP05-linkedin-45",
@@ -153,7 +157,7 @@
   },
   "foodeatup-promo-EP05-tiktok-30": {
     "url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/foodeatup-promo-EP05-tiktok-30",
-    "octets": 8973939
+    "octets": 9029040
   },
   "foodeatup-promo-EP06-linkedin-45": {
     "url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/foodeatup-promo-EP06-linkedin-45",
@@ -161,7 +165,7 @@
   },
   "foodeatup-promo-EP06-tiktok-30": {
     "url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/foodeatup-promo-EP06-tiktok-30",
-    "octets": 7552573
+    "octets": 7607610
   },
   "foodeatup-promo-EP07-linkedin-45": {
     "url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/foodeatup-promo-EP07-linkedin-45",
@@ -169,7 +173,7 @@
   },
   "foodeatup-promo-EP07-tiktok-30": {
     "url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/foodeatup-promo-EP07-tiktok-30",
-    "octets": 5332677
+    "octets": 5387620
   },
   "foodeatup-promo-EP08-linkedin-45": {
     "url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/foodeatup-promo-EP08-linkedin-45",
@@ -177,7 +181,7 @@
   },
   "foodeatup-promo-EP08-tiktok-30": {
     "url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/foodeatup-promo-EP08-tiktok-30",
-    "octets": 5470901
+    "octets": 5525866
   },
   "foodeatup-promo-EP09-linkedin-45": {
     "url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/foodeatup-promo-EP09-linkedin-45",
@@ -185,7 +189,7 @@
   },
   "foodeatup-promo-EP09-tiktok-30": {
     "url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/foodeatup-promo-EP09-tiktok-30",
-    "octets": 6795220
+    "octets": 6850085
   },
   "foodeatup-promo-EP10-linkedin-45": {
     "url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/foodeatup-promo-EP10-linkedin-45",
@@ -193,7 +197,7 @@
   },
   "foodeatup-promo-EP10-tiktok-30": {
     "url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/foodeatup-promo-EP10-tiktok-30",
-    "octets": 9064111
+    "octets": 9119227
   },
   "foodeatup-promo-EP11-linkedin-45": {
     "url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/foodeatup-promo-EP11-linkedin-45",
@@ -201,7 +205,7 @@
   },
   "foodeatup-promo-EP11-tiktok-30": {
     "url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/foodeatup-promo-EP11-tiktok-30",
-    "octets": 10638193
+    "octets": 10691939
   },
   "foodeatup-promo-EP12-linkedin-45": {
     "url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/foodeatup-promo-EP12-linkedin-45",
@@ -209,7 +213,7 @@
   },
   "foodeatup-promo-EP12-tiktok-30": {
     "url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/foodeatup-promo-EP12-tiktok-30",
-    "octets": 6572592
+    "octets": 6627585
   },
   "foodeatup-promo-EP13-linkedin-45": {
     "url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/foodeatup-promo-EP13-linkedin-45",
@@ -217,7 +221,7 @@
   },
   "foodeatup-promo-EP13-tiktok-30": {
     "url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/foodeatup-promo-EP13-tiktok-30",
-    "octets": 5957034
+    "octets": 6011626
   },
   "foodeatup-promo-EP14-linkedin-45": {
     "url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/foodeatup-promo-EP14-linkedin-45",
@@ -225,7 +229,7 @@
   },
   "foodeatup-promo-EP14-tiktok-30": {
     "url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/foodeatup-promo-EP14-tiktok-30",
-    "octets": 4222583
+    "octets": 4277595
   },
   "foodeatup-promo-EP15-linkedin-45": {
     "url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/foodeatup-promo-EP15-linkedin-45",
@@ -233,7 +237,7 @@
   },
   "foodeatup-promo-EP15-tiktok-30": {
     "url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/foodeatup-promo-EP15-tiktok-30",
-    "octets": 6072737
+    "octets": 6126472
   },
   "foodeatup-promo-EP16-linkedin-45": {
     "url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/foodeatup-promo-EP16-linkedin-45",
@@ -241,7 +245,7 @@
   },
   "foodeatup-promo-EP16-tiktok-30": {
     "url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/foodeatup-promo-EP16-tiktok-30",
-    "octets": 7667677
+    "octets": 7722643
   },
   "foodeatup-promo-EP17-linkedin-45": {
     "url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/foodeatup-promo-EP17-linkedin-45",
@@ -249,7 +253,7 @@
   },
   "foodeatup-promo-EP17-tiktok-30": {
     "url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/foodeatup-promo-EP17-tiktok-30",
-    "octets": 4447577
+    "octets": 4502626
   },
   "foodeatup-promo-EP18-linkedin-45": {
     "url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/foodeatup-promo-EP18-linkedin-45",
@@ -257,7 +261,7 @@
   },
   "foodeatup-promo-EP18-tiktok-30": {
     "url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/foodeatup-promo-EP18-tiktok-30",
-    "octets": 6249997
+    "octets": 6305011
   },
   "foodeatup-promo-EP19-linkedin-45": {
     "url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/foodeatup-promo-EP19-linkedin-45",
@@ -265,7 +269,7 @@
   },
   "foodeatup-promo-EP19-tiktok-30": {
     "url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/foodeatup-promo-EP19-tiktok-30",
-    "octets": 5313072
+    "octets": 5368201
   },
   "foodeatup-promo-EP20-linkedin-45": {
     "url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/foodeatup-promo-EP20-linkedin-45",
@@ -273,7 +277,7 @@
   },
   "foodeatup-promo-EP20-tiktok-30": {
     "url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/foodeatup-promo-EP20-tiktok-30",
-    "octets": 5040131
+    "octets": 5094999
   },
   "foodeatup-promo-EP21-linkedin-45": {
     "url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/foodeatup-promo-EP21-linkedin-45",
@@ -281,7 +285,7 @@
   },
   "foodeatup-promo-EP21-tiktok-30": {
     "url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/foodeatup-promo-EP21-tiktok-30",
-    "octets": 7319736
+    "octets": 7374764
   },
   "foodeatup-promo-EP22-linkedin-45": {
     "url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/foodeatup-promo-EP22-linkedin-45",
@@ -289,7 +293,7 @@
   },
   "foodeatup-promo-EP22-tiktok-30": {
     "url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/foodeatup-promo-EP22-tiktok-30",
-    "octets": 6241915
+    "octets": 6296765
   },
   "foodeatup-promo-EP23-linkedin-45": {
     "url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/foodeatup-promo-EP23-linkedin-45",
@@ -297,7 +301,15 @@
   },
   "foodeatup-promo-EP23-tiktok-30": {
     "url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/foodeatup-promo-EP23-tiktok-30",
-    "octets": 7514976
+    "octets": 7569977
+  },
+  "foodeatup-promo-EP24-linkedin-45": {
+    "url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/foodeatup-promo-EP24-linkedin-45",
+    "octets": 6755302
+  },
+  "foodeatup-promo-EP24-tiktok-30": {
+    "url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/foodeatup-promo-EP24-tiktok-30",
+    "octets": 7109378
   },
   "foodeatup-promo-EP25-linkedin-45": {
     "url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/foodeatup-promo-EP25-linkedin-45",
@@ -305,7 +317,7 @@
   },
   "foodeatup-promo-EP25-tiktok-30": {
     "url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/foodeatup-promo-EP25-tiktok-30",
-    "octets": 7747824
+    "octets": 7801336
   },
   "foodeatup-promo-EP26-linkedin-45": {
     "url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/foodeatup-promo-EP26-linkedin-45",
@@ -313,7 +325,7 @@
   },
   "foodeatup-promo-EP26-tiktok-30": {
     "url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/foodeatup-promo-EP26-tiktok-30",
-    "octets": 5279494
+    "octets": 5334526
   },
   "foodeatup-promo-EP27-linkedin-45": {
     "url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/foodeatup-promo-EP27-linkedin-45",
@@ -321,7 +333,7 @@
   },
   "foodeatup-promo-EP27-tiktok-30": {
     "url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/foodeatup-promo-EP27-tiktok-30",
-    "octets": 5436767
+    "octets": 5491656
   },
   "foodeatup-promo-EP28-linkedin-45": {
     "url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/foodeatup-promo-EP28-linkedin-45",
@@ -329,7 +341,7 @@
   },
   "foodeatup-promo-EP28-tiktok-30": {
     "url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/foodeatup-promo-EP28-tiktok-30",
-    "octets": 7417998
+    "octets": 7472871
   },
   "foodeatup-promo-EP29-linkedin-45": {
     "url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/foodeatup-promo-EP29-linkedin-45",
@@ -337,7 +349,7 @@
   },
   "foodeatup-promo-EP29-tiktok-30": {
     "url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/foodeatup-promo-EP29-tiktok-30",
-    "octets": 5477275
+    "octets": 5532178
   },
   "foodeatup-promo-EP30-linkedin-45": {
     "url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/foodeatup-promo-EP30-linkedin-45",
@@ -345,6 +357,6 @@
   },
   "foodeatup-promo-EP30-tiktok-30": {
     "url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/foodeatup-promo-EP30-tiktok-30",
-    "octets": 7748907
+    "octets": 7803958
   }
 }
