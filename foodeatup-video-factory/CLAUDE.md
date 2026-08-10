@@ -80,7 +80,20 @@ actives sur cette plage = épisode rejeté. C'est vérifié par `qc-episode.sh`.
 Le beat comique du clip tombe à 5,0 s. Si le clip généré décale ce beat, on
 change de clip — on ne recale pas le montage.
 
-## 6. Rien ne passe en `dist/` sans contrôle
+## 6. Ce qu'on transmet à l'humain pour chaque épisode
+
+Deux choses, et rien d'autre :
+
+1. **Le script HeyGen — le texte seul.** Pas de bloc de réglages, pas de gabarit,
+   pas de consignes de cadrage. Juste la phrase que l'avatar doit dire. Les
+   réglages HeyGen sont déjà en place côté humain, les répéter est du bruit.
+2. **Le lien Drive de la vidéo logiciel**, pointant sur le fichier exact du
+   chapitre — pas sur le dossier du module.
+
+Le hook Higgsfield est déjà généré : `content/hooks-higgsfield.json` donne le
+rendu par épisode. Ne redemande pas un plan qui existe.
+
+## 7. Rien ne passe en `dist/` sans contrôle
 
 ```bash
 ./scripts/build-episode.sh EPxxx   # monte puis contrôle
@@ -92,14 +105,14 @@ non noire · logo présent à 1/15/29 s. Un master qui échoue reste dans `build
 et part au rapport. **Le pipeline ne s'arrête jamais sur un épisode incomplet** :
 on marque, on passe au suivant.
 
-## 7. Binaires
+## 8. Binaires
 
 `build/` n'est pas versionné. Les rushes bruts (`*_src.mp4`) non plus. Les
 masters de `dist/` sont versionnés — c'est le livrable. Les assets déposés à la
 main (`assets/hooks`, `assets/avatar`, `assets/software`) sont versionnés pour
 qu'une autre session puisse remonter un épisode sans redemander les fichiers.
 
-## 8. Publication
+## 9. Publication
 
 Tout part en **brouillon** dans RapidoCMS. La planification exige un `--confirm`
 explicite. Rien n'est publié sans validation humaine.
