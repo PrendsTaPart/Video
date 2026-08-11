@@ -26,8 +26,17 @@ AV_CROP_Y=30       # décalage du crop avatar : garde la toque, coupe bas sur le
 AV_H=960           # avatar : 2,5/5 de l'écran
 SOFT_H=768         # logiciel : 2/5
 BAND_H=192         # bandeau de marque : 0,5/5, le logo y est centré
-RESPIR=0.6         # respiration avant 26,0 s : l'avatar doit avoir fini de parler
-                   # avant que la voix de fin démarre, sinon les deux se marchent dessus
+# Respiration avant la signature : l'avatar doit avoir fini de parler avant que
+# la voix de fin démarre, sinon les deux se marchent dessus. 0,6 s suffit dans
+# la plupart des cas ; quand un script HeyGen déborde de quelques dixièmes, on
+# élargit la respiration pour cet épisode-là :
+#
+#   RESPIR=0.9 ./scripts/build-episode.sh EP017
+#
+# Ça comprime un peu plus la parole au lieu de rejeter l'épisode. Le vrai remède
+# reste un script plus court : au-delà d'atempo 1,12 l'accélération s'entend, et
+# élargir la respiration rapproche de ce seuil.
+RESPIR="${RESPIR:-0.6}"
 # Coque d'appareil : le screencast s'incruste dans une tablette. Les épisodes
 # du module Caisse POS prennent la variante posée sur un tiroir-caisse.
 MODULE="$(python3 -c "import json;print(json.load(open('$R/state/episodes/$EP.json'))['module'])" 2>/dev/null || echo "")"

@@ -11,11 +11,11 @@
   "heygen_script": "Tu génères ton rapport par module en un clic : ventes, stock, production. L'historique est gardé. Tu compares ce mois-ci avec le mois dernier, pas avec ton souvenir.",
   "etat": {
     "hook": "ok",
-    "avatar": "manquant",
-    "software": "manquant",
-    "vo": "manquant",
-    "build": "manquant",
+    "avatar": "ok",
+    "software": "ok",
+    "vo": "ok",
+    "build": "ok",
     "publie": "manquant"
   },
-  "notes": ""
+  "notes": "Master 37,5 s, monté avec RESPIR=0.9 : le script HeyGen fait 9,50 s pour une fenêtre de 9,40, la dernière syllabe touchait la voix de fin. atempo 1,044."
 }
