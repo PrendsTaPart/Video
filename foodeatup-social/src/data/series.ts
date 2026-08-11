@@ -1391,9 +1391,9 @@ export const series: Serie[] = [
             "accroche": "Tes coûts, ce trimestre.",
             "punchline": "On va refermer le robinet.",
             "resume": "Tu enregistres tes achats fournisseurs avec le détail des lignes. Tes dépenses du mois s'additionnent toutes seules, en face de ton chiffre d'affaires.",
-            "statut": "a_produire",
-            "dureeSecondes": null,
-            "videoUrl": null,
+            "statut": "monte",
+            "dureeSecondes": 37.5,
+            "videoUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/tiktok/EP016.mp4",
             "reseaux": {
               "facebook": {
                 "statut": "a_venir",
@@ -1436,7 +1436,7 @@ export const series: Serie[] = [
                 "lienCta": "https://site.foodeatup.com/"
               }
             },
-            "posterUrl": null,
+            "posterUrl": "/posters/EP016.jpg",
             "datePrevue": "2026-08-22",
             "troisMots": "DÉPENSES",
             "tutoriel": {
@@ -1450,12 +1450,12 @@ export const series: Serie[] = [
             },
             "tutorielModuleUrl": "https://tutoriel.foodeatup.com/module/comptabilite",
             "higgsfield": {
-              "videoSourceUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/hooks/EP016.mp4",
+              "videoSourceUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/Higgsfield-source-EP016-Le-geyser-a-cafe",
               "duree": "10 s",
               "format": "vertical 9:16",
-              "source": "depot"
+              "source": "rapidocms"
             },
-            "masterRapidoUrl": null
+            "masterRapidoUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/FoodEatUp-EP016-Depenses-et-livraisons"
           },
           {
             "id": "EP017",

@@ -2715,9 +2715,9 @@
               "accroche": "Tes coûts, ce trimestre.",
               "punchline": "On va refermer le robinet.",
               "resume": "Tu enregistres tes achats fournisseurs avec le détail des lignes. Tes dépenses du mois s'additionnent toutes seules, en face de ton chiffre d'affaires.",
-              "statut": "a_produire",
-              "dureeSecondes": null,
-              "videoUrl": null,
+              "statut": "monte",
+              "dureeSecondes": 37.5,
+              "videoUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/tiktok/EP016.mp4",
               "reseaux": {
                 "facebook": {
                   "statut": "a_venir",
@@ -2849,7 +2849,7 @@
                   "titre": "Dépenses — Comptabilité | FoodEatUp"
                 }
               },
-              "posterUrl": null,
+              "posterUrl": "/posters/EP016.jpg",
               "datePrevue": "2026-08-22",
               "troisMots": "DÉPENSES",
               "promptVignette": "Photo réaliste, cadrage vertical 9:16. Le chef de l'image de référence — MÊME visage, même barbe, même toque blanche, même veste de cuisine blanche, même tablier blanc au logo FoodEatUp bleu. Ne change ni ses traits ni sa morphologie. Son expression : l'air de quelqu'un qui a déjà vu ça cent fois, un sourcil levé. Scène : le geyser à café. Tes coûts, ce trimestre. Décor : une salle de restaurant en plein service, tables dressées, clients flous en arrière-plan. lumière chaude de fin de journée, reflets dorés. Le chef occupe les deux tiers droits du cadre, en plan poitrine, l'élément comique est visible à gauche. Bande crème #FCF9E6 en haut du cadre sur un cinquième de la hauteur, portant UNIQUEMENT le texte « DÉPENSES » en typographie arrondie très grasse, bleu marine #0F1A23, centré. Aucun autre texte, aucun logo ajouté, pas de filigrane, pas de bordure décorative.",
@@ -2876,12 +2876,12 @@
               "tutorielModuleUrl": "https://tutoriel.foodeatup.com/module/comptabilite",
               "higgsfield": {
                 "prompt": "Vertical 9:16, 10 seconds, photorealistic, close-up then wide, 4K. NO text overlay, NO subtitles, NO watermark, NO logo. A professional espresso machine begins to hiss abnormally. The barista taps it once. At 5 seconds a jet of steam and coffee erupts vertically from the group head, hitting the ceiling. Final 2 seconds: the barista stands completely still, drenched, holding an empty cup at arm's length under the spray. Audio: espresso machine hiss building into a pressurised roar, splattering liquid, dripping ceiling, then a single calm cup-on-saucer clink. No music.",
-                "videoSourceUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/hooks/EP016.mp4",
+                "videoSourceUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/Higgsfield-source-EP016-Le-geyser-a-cafe",
                 "duree": "10 s",
                 "format": "vertical 9:16",
-                "source": "depot"
+                "source": "rapidocms"
               },
-              "masterRapidoUrl": null
+              "masterRapidoUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/FoodEatUp-EP016-Depenses-et-livraisons"
             },
             {
               "id": "EP017",
