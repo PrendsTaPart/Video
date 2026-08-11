@@ -750,10 +750,10 @@
               "tutorielManquant": "Le module Caisse POS n'existe pas encore dans l'Academy.",
               "higgsfield": {
                 "prompt": "Vertical 9:16, 10 seconds, photorealistic, locked-off camera then slow push-in, 4K. NO text overlay, NO subtitles, NO watermark, NO logo. A grey tabby cat sits squarely on top of a restaurant POS touchscreen terminal, tail flicking, completely unbothered. A hand enters frame trying to gently move it; the cat presses one paw down on the screen and holds eye contact with the camera. Final 2 seconds: the cat lies down fully across the terminal, closing its eyes. Audio: kitchen ambience, a receipt printer chattering, three rapid electronic beeps as the paw presses the screen, a smug cat chirp. No music.",
-                "videoSourceUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/hooks/EP004.mp4",
+                "videoSourceUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/Higgsfield-source-EP004-Le-chat-sur-la-caisse",
                 "duree": "10 s",
                 "format": "vertical 9:16",
-                "source": "depot"
+                "source": "rapidocms"
               },
               "masterRapidoUrl": null
             },
@@ -1617,10 +1617,10 @@
               "tutorielManquant": "Le module Caisse POS n'existe pas encore dans l'Academy.",
               "higgsfield": {
                 "prompt": "Vertical 9:16, 10 seconds, photorealistic, handheld street-level, 4K. NO text overlay, NO subtitles, NO watermark, NO logo. A paper cone of fries sits on a café terrace table in the sun. A pigeon lands on the edge of the table and edges sideways toward it with absurd confidence. At 5 seconds it grabs a single fry and takes off. Final 2 seconds: the empty spot on the table, one feather drifting down in slow motion. Audio: terrace ambience, pigeon wing flaps, an exaggerated theft-movie sting as it grabs the fry, then a soft feather-drop silence. No music.",
-                "videoSourceUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/hooks/EP009.mp4",
+                "videoSourceUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/Higgsfield-source-EP009-Le-pigeon-voleur",
                 "duree": "10 s",
                 "format": "vertical 9:16",
-                "source": "depot"
+                "source": "rapidocms"
               },
               "masterRapidoUrl": null
             },
@@ -1978,10 +1978,10 @@
               "tutorielModuleUrl": "https://tutoriel.foodeatup.com/module/hubrise-livraisons",
               "higgsfield": {
                 "prompt": "Vertical 9:16, 10 seconds, photorealistic, low-angle tracking, 4K. NO text overlay, NO subtitles, NO watermark, NO logo. A delivery rider on a scooter with a large insulated backpack rides down a suburban street. At 5 seconds he hits a speed bump he clearly did not see; the backpack lid flips open and three wrapped burgers launch into the air in slow motion. Final 2 seconds: the rider has stopped, one foot down, watching a burger land softly in a hedge. Audio: scooter engine, a metallic bump and rattle, a slow-motion whoosh, a leafy rustle on landing, then engine idling. No music.",
-                "videoSourceUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/hooks/EP011.mp4",
+                "videoSourceUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/Higgsfield-source-EP011-Le-livreur-et-le-dos-d-ane",
                 "duree": "10 s",
                 "format": "vertical 9:16",
-                "source": "depot"
+                "source": "rapidocms"
               },
               "masterRapidoUrl": null
             },
@@ -2157,10 +2157,10 @@
               "tutorielModuleUrl": "https://tutoriel.foodeatup.com/module/kds-cuisine",
               "higgsfield": {
                 "prompt": "Vertical 9:16, 10 seconds, photorealistic, locked-off camera, timelapse effect, 4K. NO text overlay, NO subtitles, NO watermark, NO logo. A man sits alone at a restaurant table with an empty plate in front of him, looking politely toward the kitchen. Time accelerates around him: light shifts from day to evening, other tables fill and empty, and his stubble visibly grows into a full beard. Final 2 seconds: he is fully bearded, still smiling politely, still waiting. Audio: restaurant ambience speeding up and slowing down, a ticking clock rising in the mix, a single small stomach growl at the end. No music.",
-                "videoSourceUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/hooks/EP012.mp4",
+                "videoSourceUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/Higgsfield-source-EP012-Le-client-qui-attend",
                 "duree": "10 s",
                 "format": "vertical 9:16",
-                "source": "depot"
+                "source": "rapidocms"
               },
               "masterRapidoUrl": null
             },
@@ -3060,10 +3060,10 @@
               "tutorielModuleUrl": "https://tutoriel.foodeatup.com/module/stockvision-ai",
               "higgsfield": {
                 "prompt": "Vertical 9:16, 10 seconds, photorealistic, cinematic slow motion, 4K. NO text overlay, NO subtitles, NO watermark, NO logo. Two people share a basket of fries at a diner table; one fry remains. An adult hand moves toward it in slow motion. From the bottom of the frame a small child's hand shoots in and takes it with impossible speed. Final 2 seconds: the adult's hand closes on empty air; a child chews contentedly at the edge of frame. Audio: diner ambience, a dramatic slow-motion low drone, a sharp martial-arts whoosh at the snatch, a crunchy bite, one satisfied hum. No music.",
-                "videoSourceUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/hooks/EP017.mp4",
+                "videoSourceUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/Higgsfield-source-EP017-Le-ninja-de-la-frite",
                 "duree": "10 s",
                 "format": "vertical 9:16",
-                "source": "depot"
+                "source": "rapidocms"
               },
               "masterRapidoUrl": null
             },
@@ -3244,10 +3244,10 @@
               "tutorielModuleUrl": "https://tutoriel.foodeatup.com/module/service-commande",
               "higgsfield": {
                 "prompt": "Vertical 9:16, 10 seconds, photorealistic, slow motion, golden hour, 4K. NO text overlay, NO subtitles, NO watermark, NO logo. Extreme slow motion of a waiter running across a packed restaurant terrace holding a tray of drinks perfectly steady, apron and hair flowing dramatically, sunset backlight, deeply serious expression. He weaves between tables like a lifeguard on a beach. Final 2 seconds: he arrives, places the tray down, and is instantly out of breath in real time. Audio: heroic slow-motion breathing and heartbeat, glassware chiming softly, ambience, then a sudden snap back to normal speed with heavy panting. No music.",
-                "videoSourceUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/hooks/EP018.mp4",
+                "videoSourceUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/Higgsfield-source-EP018-Le-serveur-Baywatch",
                 "duree": "10 s",
                 "format": "vertical 9:16",
-                "source": "depot"
+                "source": "rapidocms"
               },
               "masterRapidoUrl": null
             },
@@ -3427,10 +3427,10 @@
               "tutorielModuleUrl": "https://tutoriel.foodeatup.com/module/stockvision-ai",
               "higgsfield": {
                 "prompt": "Vertical 9:16, 10 seconds, photorealistic, extreme slow motion macro, 4K. NO text overlay, NO subtitles, NO watermark, NO logo. A double cheeseburger falls in extreme slow motion toward a kitchen floor. Sesame seeds detach and float. It hits, compresses, and improbably bounces once, layers separating mid-air. Final 2 seconds: it lands fully deconstructed, each ingredient in a neat row, as if plated on purpose. Audio: a low slow-motion whoosh, a soft wet impact, a comedic boing on the bounce, then a delicate settling sound. No music.",
-                "videoSourceUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/hooks/EP019.mp4",
+                "videoSourceUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/Higgsfield-source-EP019-Le-burger-qui-rebondit",
                 "duree": "10 s",
                 "format": "vertical 9:16",
-                "source": "depot"
+                "source": "rapidocms"
               },
               "masterRapidoUrl": null
             },
@@ -3608,10 +3608,10 @@
               "tutorielModuleUrl": "https://tutoriel.foodeatup.com/module/reservation-salle",
               "higgsfield": {
                 "prompt": "Vertical 9:16, 10 seconds, photorealistic, warm restaurant lighting, 4K. NO text overlay, NO subtitles, NO watermark, NO logo. A large dog sits upright on a chair at a set restaurant table, a napkin tucked into its collar, front paws resting on the tablecloth, waiting with immense dignity. A waiter approaches with a menu and offers it. Final 2 seconds: the dog looks at the menu, then straight at the camera, and lets out one small impatient huff. Audio: cosy restaurant ambience, gentle chatter, cutlery, a paper menu rustle, one deep dog huff. No music.",
-                "videoSourceUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/hooks/EP020.mp4",
+                "videoSourceUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/Higgsfield-source-EP020-Le-chien-qui-a-reserve",
                 "duree": "10 s",
                 "format": "vertical 9:16",
-                "source": "depot"
+                "source": "rapidocms"
               },
               "masterRapidoUrl": null
             },
@@ -3791,10 +3791,10 @@
               "tutorielModuleUrl": "https://tutoriel.foodeatup.com/module/kds-cuisine",
               "higgsfield": {
                 "prompt": "Vertical 9:16, 10 seconds, photorealistic, handheld kitchen, 4K. NO text overlay, NO subtitles, NO watermark, NO logo. A chef at the pass fights with a jammed ticket printer, pulling a crumpled strip of paper that keeps tearing. He shakes it, opens the lid, closes it, hits it once with the flat of his hand. At 5 seconds it prints an enormous unbroken ribbon of tickets straight onto the floor. Final 2 seconds: he stands holding the ribbon with both hands, expressionless. Audio: busy kitchen, printer grinding and jamming, plastic lid snapping, a frustrated French \"Allez !\", then continuous printing. No music.",
-                "videoSourceUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/hooks/EP021.mp4",
+                "videoSourceUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/Higgsfield-source-EP021-Chef-contre-imprimante",
                 "duree": "10 s",
                 "format": "vertical 9:16",
-                "source": "depot"
+                "source": "rapidocms"
               },
               "masterRapidoUrl": null
             },
@@ -3974,10 +3974,10 @@
               "tutorielModuleUrl": "https://tutoriel.foodeatup.com/module/predibot",
               "higgsfield": {
                 "prompt": "Vertical 9:16, 10 seconds, photorealistic, moody desk lamp lighting, 4K. NO text overlay, NO subtitles, NO watermark, NO logo. A restaurant owner sits alone at night in the empty dining room with a laptop and a thick stack of invoices. He flips through them faster and faster, expression collapsing. At 5 seconds he stops, stares at one page, and slowly slides down until only his eyes are above the table edge. Final 2 seconds: just his eyes, the invoice held up beside them. Audio: empty room reverb, paper flipping accelerating, a chair creak, a long shaky exhale, a clock ticking. No music.",
-                "videoSourceUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/hooks/EP022.mp4",
+                "videoSourceUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/Higgsfield-source-EP022-La-facture-qui-fait-pleurer",
                 "duree": "10 s",
                 "format": "vertical 9:16",
-                "source": "depot"
+                "source": "rapidocms"
               },
               "masterRapidoUrl": null
             },
@@ -4151,10 +4151,10 @@
               "tutorielModuleUrl": "https://tutoriel.foodeatup.com/module/marketing-fidelite",
               "higgsfield": {
                 "prompt": "Vertical 9:16, 10 seconds, photorealistic, low floor-level camera, 4K. NO text overlay, NO subtitles, NO watermark, NO logo. A robot vacuum glides across a restaurant floor and catches the corner of a long tablecloth. It keeps going with total determination, dragging the cloth and everything on the table behind it in slow motion — glasses, cutlery, a vase. Final 2 seconds: the robot arrives at its dock, tablecloth and all, and its status light turns green. Audio: soft robot motor hum, fabric dragging, escalating glass and cutlery clatter, then a cheerful electronic docking chime. No music.",
-                "videoSourceUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/hooks/EP023.mp4",
+                "videoSourceUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/Higgsfield-source-EP023-L-aspirateur-robot",
                 "duree": "10 s",
                 "format": "vertical 9:16",
-                "source": "depot"
+                "source": "rapidocms"
               },
               "masterRapidoUrl": null
             },
@@ -4330,10 +4330,10 @@
               "tutorielModuleUrl": "https://tutoriel.foodeatup.com/module/site-web-vitrine",
               "higgsfield": {
                 "prompt": "Vertical 9:16, 10 seconds, photorealistic, seaside daylight, 4K. NO text overlay, NO subtitles, NO watermark, NO logo. A seaside restaurant terrace. A tray of fried fish and lemon sits on a table by the railing. A seagull swoops in from off-frame in a single confident dive, grabs the whole fish and pulls up. Final 2 seconds: the seagull perched on the railing with the fish, staring at the diners, wind ruffling its feathers. Audio: waves and sea wind, terrace chatter, a loud seagull cry, wing beats, a startled human gasp. No music.",
-                "videoSourceUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/hooks/EP024.mp4",
+                "videoSourceUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/Higgsfield-source-EP024-La-mouette-braqueuse",
                 "duree": "10 s",
                 "format": "vertical 9:16",
-                "source": "depot"
+                "source": "rapidocms"
               },
               "masterRapidoUrl": null
             },
@@ -4508,10 +4508,10 @@
               "tutorielModuleUrl": "https://tutoriel.foodeatup.com/module/marketing-fidelite",
               "higgsfield": {
                 "prompt": "Vertical 9:16, 10 seconds, photorealistic, kitchen close-up, 4K. NO text overlay, NO subtitles, NO watermark, NO logo. A cook pours bright orange soup into a professional blender and, without noticing the missing lid, presses the highest setting. At 5 seconds soup erupts upward and outward, coating the wall, the ceiling and the cook. Final 2 seconds: he switches it off, wipes one eye clear with a finger, and looks at the camera. Audio: blender motor screaming to full speed, wet splattering, dripping, an abrupt switch-off click, then a single drip. No music.",
-                "videoSourceUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/hooks/EP025.mp4",
+                "videoSourceUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/Higgsfield-source-EP025-Le-mixeur-sans-couvercle",
                 "duree": "10 s",
                 "format": "vertical 9:16",
-                "source": "depot"
+                "source": "rapidocms"
               },
               "masterRapidoUrl": null
             },
@@ -4693,10 +4693,10 @@
               "tutorielModuleUrl": "https://tutoriel.foodeatup.com/module/stockvision-ai",
               "higgsfield": {
                 "prompt": "Vertical 9:16, 10 seconds, photorealistic macro, studio lighting on a stainless kitchen counter, 4K. NO text overlay, NO subtitles, NO watermark, NO logo. A red balloon is being inflated far past its limit next to a neat pyramid of fresh vegetables. The rubber stretches thin and translucent, trembling. Extreme slow motion at 5 seconds as it bursts, fragments peeling outward. Final 2 seconds: the vegetable pyramid stands untouched, a shred of red rubber draped over the top tomato. Audio: rubber stretching creak rising in pitch, a sharp burst, then quiet room tone. No music.",
-                "videoSourceUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/hooks/EP026.mp4",
+                "videoSourceUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/Higgsfield-source-EP026-Le-ballon-qui-explose",
                 "duree": "10 s",
                 "format": "vertical 9:16",
-                "source": "depot"
+                "source": "rapidocms"
               },
               "masterRapidoUrl": null
             },
@@ -4860,10 +4860,10 @@
               "tutorielManquant": "Le module Caisse POS n'existe pas encore dans l'Academy.",
               "higgsfield": {
                 "prompt": "Vertical 9:16, 10 seconds, photorealistic, locked-off close-up, 4K. NO text overlay, NO subtitles, NO watermark, NO logo. A black cat sits on a bar counter beside a full wine glass. It makes prolonged eye contact with the camera, then extends one paw and pushes the glass millimetre by millimetre toward the edge. At 6 seconds the glass tips over the edge. Final 2 seconds: the cat looks down at the floor, then back at the camera, entirely satisfied. Audio: quiet bar ambience, faint glass sliding on wood, a glass shattering off-frame, then one soft meow. No music.",
-                "videoSourceUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/hooks/EP027.mp4",
+                "videoSourceUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/Higgsfield-source-EP027-Le-chat-et-le-verre",
                 "duree": "10 s",
                 "format": "vertical 9:16",
-                "source": "depot"
+                "source": "rapidocms"
               },
               "masterRapidoUrl": null
             },
@@ -5040,10 +5040,10 @@
               "tutorielModuleUrl": "https://tutoriel.foodeatup.com/module/hubrise-livraisons",
               "higgsfield": {
                 "prompt": "Vertical 9:16, 10 seconds, photorealistic, side tracking shot along the belt, 4K. NO text overlay, NO subtitles, NO watermark, NO logo. A conveyor-belt sushi restaurant. The belt slowly accelerates beyond normal speed; plates begin to blur past seated diners who turn their heads to follow. At 6 seconds plates start flying off the end of the belt one after another. Final 2 seconds: a diner calmly catches one out of the air with chopsticks without looking. Audio: mechanical belt hum rising in pitch, ceramic rattling, plates clattering off the end, a single clean chopstick click on the catch. No music.",
-                "videoSourceUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/hooks/EP028.mp4",
+                "videoSourceUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/Higgsfield-source-EP028-Le-tapis-a-sushis-fou",
                 "duree": "10 s",
                 "format": "vertical 9:16",
-                "source": "depot"
+                "source": "rapidocms"
               },
               "masterRapidoUrl": null
             },
@@ -5221,10 +5221,10 @@
               "tutorielModuleUrl": "https://tutoriel.foodeatup.com/module/predibot",
               "higgsfield": {
                 "prompt": "Vertical 9:16, 10 seconds, photorealistic, slow orbit around the subject, 4K. NO text overlay, NO subtitles, NO watermark, NO logo. A restaurant manager stands in a dining room with plates balanced everywhere — both forearms, one on his head, one in each hand, one wedged under his chin — while a phone rings in his apron pocket. He looks at the pocket, then at the camera, unable to move at all. Final 2 seconds: the phone keeps ringing; he closes his eyes. Audio: restaurant ambience, faint ceramic wobble, a phone ringing insistently from inside fabric, one long resigned breath. No music.",
-                "videoSourceUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/hooks/EP029.mp4",
+                "videoSourceUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/Higgsfield-source-EP029-Les-douze-assiettes",
                 "duree": "10 s",
                 "format": "vertical 9:16",
-                "source": "depot"
+                "source": "rapidocms"
               },
               "masterRapidoUrl": null
             },
@@ -5380,10 +5380,10 @@
               "tutorielManquant": "Ce chapitre n'a pas encore sa fiche dans l'Academy.",
               "higgsfield": {
                 "prompt": "Vertical 9:16, 10 seconds, photorealistic, wide kitchen shot, 4K. NO text overlay, NO subtitles, NO watermark, NO logo. A penguin waddles into a professional restaurant kitchen wearing a tiny white apron. It steps onto a freshly mopped tile floor, immediately loses traction and slides the entire length of the kitchen on its belly, passing surprised cooks. Final 2 seconds: it stops against the base of a fridge, stands up, and shakes itself off with dignity. Audio: kitchen ambience, a wet tile squeak, a long comedic slide whoosh, a soft thud against the fridge, one penguin squawk. No music.",
-                "videoSourceUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/hooks/EP030.mp4",
+                "videoSourceUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/Higgsfield-source-EP030-Le-pingouin-en-cuisine",
                 "duree": "10 s",
                 "format": "vertical 9:16",
-                "source": "depot"
+                "source": "rapidocms"
               },
               "masterRapidoUrl": null
             }
@@ -5571,10 +5571,10 @@
               "tutorielModuleUrl": "https://tutoriel.foodeatup.com/module/haccp",
               "higgsfield": {
                 "prompt": "Vertical 9:16, 10 seconds, photorealistic, cinematic handheld camera, shallow depth of field, 4K. NO text overlay, NO subtitles, NO watermark, NO logo. A cook opens the door of a tall stainless-steel restaurant fridge. For a beat nothing happens. At 5 seconds an avalanche of unlabelled plastic containers pours out onto the floor in slow motion, lids separating mid-air. Final 2 seconds: he stands ankle-deep in containers, holding the fridge door handle, staring at the camera. Audio: fridge seal sucking open, compressor hum, escalating plastic clattering, a lid spinning to a stop on the tiles, then silence. No music.",
-                "videoSourceUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/hooks/EP031.mp4",
+                "videoSourceUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/Higgsfield-source-EP031-L-avalanche-de-tupperware",
                 "duree": "10 s",
                 "format": "vertical 9:16",
-                "source": "depot"
+                "source": "rapidocms"
               },
               "masterRapidoUrl": null
             },
@@ -5756,10 +5756,10 @@
               "tutorielModuleUrl": "https://tutoriel.foodeatup.com/module/stockvision-ai",
               "higgsfield": {
                 "prompt": "Vertical 9:16, 10 seconds, photorealistic, tight close-up, warm kitchen light, 4K. NO text overlay, NO subtitles, NO watermark, NO logo. A chef tastes his own sauce from a wooden spoon with total confidence. His expression holds for two seconds, then cracks: eyes watering, face reddening, breathing through the mouth. At 5 seconds he grabs a jug of water and drinks straight from it. Final 2 seconds: he lowers the jug, gives a thumbs up to the camera, eyes still streaming. Audio: kitchen ambience, a spoon tap, sharp inhaling through teeth, gulping, a strangled French \"Ça va, ça va\", then a small cough. No music.",
-                "videoSourceUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/hooks/EP032.mp4",
+                "videoSourceUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/Higgsfield-source-EP032-La-sauce-trop-forte",
                 "duree": "10 s",
                 "format": "vertical 9:16",
-                "source": "depot"
+                "source": "rapidocms"
               },
               "masterRapidoUrl": null
             },
@@ -5941,10 +5941,10 @@
               "tutorielModuleUrl": "https://tutoriel.foodeatup.com/module/stockvision-ai",
               "higgsfield": {
                 "prompt": "Vertical 9:16, 10 seconds, photorealistic, warm dining room, 4K. NO text overlay, NO subtitles, NO watermark, NO logo. A long banquet table, beautifully set, a whole roast on a platter at the centre. Everyone has turned away to look off-frame. A large dog rises silently from under the table, takes the entire roast off the platter and disappears back down. At 5 seconds the guests turn back to an empty platter. Final 2 seconds: a slow tilt down to the dog under the table, roast between its paws, mid-bite. Audio: banquet chatter and cutlery, a soft platter scrape, chatter stopping abruptly, then contented chewing from below. No music.",
-                "videoSourceUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/hooks/EP033.mp4",
+                "videoSourceUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/Higgsfield-source-EP033-Le-roti-disparu",
                 "duree": "10 s",
                 "format": "vertical 9:16",
-                "source": "depot"
+                "source": "rapidocms"
               },
               "masterRapidoUrl": null
             },
@@ -6101,10 +6101,10 @@
               "tutorielManquant": "Ce chapitre n'a pas encore sa fiche dans l'Academy.",
               "higgsfield": {
                 "prompt": "Vertical 9:16, 10 seconds, photorealistic, cinematic medium shot, 4K. NO text overlay, NO subtitles, NO watermark, NO logo. A waiter presents a bottle of wine tableside and works the corkscrew with growing effort, bracing the bottle against his hip. At 5 seconds the cork releases explosively and rockets upward out of frame; he keeps the polite smile. Final 2 seconds: a distant clink off-screen, the cork drops back down and lands in a guest's empty glass. The waiter nods once as if it was intentional. Audio: restaurant ambience, corkscrew creaking, a loud pop, a whoosh upward, a small ceiling tap, a glass clink, one guest laugh. No music.",
-                "videoSourceUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/hooks/EP034.mp4",
+                "videoSourceUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/Higgsfield-source-EP034-Le-bouchon-rebelle",
                 "duree": "10 s",
                 "format": "vertical 9:16",
-                "source": "depot"
+                "source": "rapidocms"
               },
               "masterRapidoUrl": null
             },
@@ -6282,10 +6282,10 @@
               "tutorielModuleUrl": "https://tutoriel.foodeatup.com/module/predibot",
               "higgsfield": {
                 "prompt": "Vertical 9:16, 10 seconds, photorealistic, windy daylight, handheld chase, 4K. NO text overlay, NO subtitles, NO watermark, NO logo. A gust of wind lifts a large terrace parasol out of its base. A restaurant owner in an apron sprints after it down the pavement as it rolls and bounces ahead of him, always just out of reach. At 5 seconds he dives for it and misses. Final 2 seconds: he lies on the pavement, watching the parasol wedge itself politely into a bike rack twenty metres away. Audio: strong wind, fabric snapping, running footsteps, a scrape of metal on concrete, heavy breathing, a metallic clang on landing. No music.",
-                "videoSourceUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/hooks/EP035.mp4",
+                "videoSourceUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/Higgsfield-source-EP035-Le-parasol-fugitif",
                 "duree": "10 s",
                 "format": "vertical 9:16",
-                "source": "depot"
+                "source": "rapidocms"
               },
               "masterRapidoUrl": null
             },
@@ -6448,10 +6448,10 @@
               "tutorielManquant": "Ce chapitre n'a pas encore sa fiche dans l'Academy.",
               "higgsfield": {
                 "prompt": "Vertical 9:16, 10 seconds, photorealistic, moody restaurant lighting, slow push-in, 4K. NO text overlay, NO subtitles, NO watermark, NO logo. A man opens a leather bill folder at a restaurant table. He reads. He blinks. He removes his glasses, cleans them slowly on his napkin, puts them back on and reads again. Final 2 seconds: he closes the folder very gently, as if it were fragile, and stares into the middle distance. Audio: quiet restaurant ambience, leather creaking, a napkin rustle, one long slow exhale, distant glassware. No music.",
-                "videoSourceUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/hooks/EP036.mp4",
+                "videoSourceUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/Higgsfield-source-EP036-L-addition",
                 "duree": "10 s",
                 "format": "vertical 9:16",
-                "source": "depot"
+                "source": "rapidocms"
               },
               "masterRapidoUrl": null
             },
@@ -6630,10 +6630,10 @@
               "tutorielModuleUrl": "https://tutoriel.foodeatup.com/module/equipe-planning",
               "higgsfield": {
                 "prompt": "Vertical 9:16, 10 seconds, photorealistic, static wide, late-night restaurant, 4K. NO text overlay, NO subtitles, NO watermark, NO logo. Closing time in an empty dining room, chairs on tables. A young employee stands leaning on a broom handle, completely asleep upright, swaying very slightly. At 5 seconds the broom slips a few centimetres; he jolts awake, sweeps three energetic strokes, then goes still again. Final 2 seconds: asleep on the broom once more. Audio: empty room reverb, a fridge hum, faint street noise, a broom bristle scrape, a startled inhale, then quiet breathing. No music.",
-                "videoSourceUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/hooks/EP037.mp4",
+                "videoSourceUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/Higgsfield-source-EP037-Le-dormeur-debout",
                 "duree": "10 s",
                 "format": "vertical 9:16",
-                "source": "depot"
+                "source": "rapidocms"
               },
               "masterRapidoUrl": null
             },
@@ -6815,10 +6815,10 @@
               "tutorielModuleUrl": "https://tutoriel.foodeatup.com/module/stockvision-ai",
               "higgsfield": {
                 "prompt": "Vertical 9:16, 10 seconds, photorealistic, tracking shot in a cash-and-carry warehouse, 4K. NO text overlay, NO subtitles, NO watermark, NO logo. A restaurateur pushes an overloaded flatbed trolley down a wholesale aisle. It gains speed on a slight slope, one wheel shuddering. He jogs, then runs, then lets go. At 5 seconds the trolley glides on alone in slow motion between the racks. Final 2 seconds: it stops itself perfectly against a pallet of tomatoes, nothing falls, and he raises both arms in silent victory. Audio: warehouse ambience, a rattling wheel rising in pitch, running footsteps, a soft cardboard bump, a distant forklift beeping. No music.",
-                "videoSourceUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/hooks/EP038.mp4",
+                "videoSourceUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/Higgsfield-source-EP038-Le-chariot-fou",
                 "duree": "10 s",
                 "format": "vertical 9:16",
-                "source": "depot"
+                "source": "rapidocms"
               },
               "masterRapidoUrl": null
             },
@@ -6994,10 +6994,10 @@
               "tutorielModuleUrl": "https://tutoriel.foodeatup.com/module/reservation-salle",
               "higgsfield": {
                 "prompt": "Vertical 9:16, 10 seconds, photorealistic, sunny terrace, 4K. NO text overlay, NO subtitles, NO watermark, NO logo. Diners eat calmly on a street terrace. From off-frame a football arcs into shot in slow motion and lands squarely in a bowl of soup, sending an orange splash upward across the table. Final 2 seconds: total stillness, soup dripping off the edge of the table, everyone frozen mid-gesture, one child's face appearing at the terrace railing. Audio: terrace ambience, a distant kick, a whooshing arc, a wet heavy splash, dripping, then complete silence. No music.",
-                "videoSourceUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/hooks/EP039.mp4",
+                "videoSourceUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/Higgsfield-source-EP039-Le-ballon-dans-la-soupe",
                 "duree": "10 s",
                 "format": "vertical 9:16",
-                "source": "depot"
+                "source": "rapidocms"
               },
               "masterRapidoUrl": null
             },
@@ -7180,10 +7180,10 @@
               "tutorielModuleUrl": "https://tutoriel.foodeatup.com/module/stockvision-ai",
               "higgsfield": {
                 "prompt": "Vertical 9:16, 10 seconds, photorealistic, golden hour, garden setting, 4K. NO text overlay, NO subtitles, NO watermark, NO logo. A small restaurant herb garden in neat labelled rows. A goat wanders calmly into frame and begins eating an entire row of basil with great efficiency. At 5 seconds a chef appears at the back door and freezes. Final 2 seconds: the goat looks up, a wooden plant label sticking out of its mouth, chewing without breaking eye contact. Audio: birdsong, gentle chewing, a wooden door creak, a sharp human intake of breath, one goat bleat. No music.",
-                "videoSourceUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/hooks/EP040.mp4",
+                "videoSourceUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/Higgsfield-source-EP040-La-chevre-au-potager",
                 "duree": "10 s",
                 "format": "vertical 9:16",
-                "source": "depot"
+                "source": "rapidocms"
               },
               "masterRapidoUrl": null
             },
@@ -7366,10 +7366,10 @@
               "tutorielModuleUrl": "https://tutoriel.foodeatup.com/module/stockvision-ai",
               "higgsfield": {
                 "prompt": "Vertical 9:16, 10 seconds, photorealistic, kitchen close-up on a carving board, 4K. NO text overlay, NO subtitles, NO watermark, NO logo. A chef carves a glistening roast chicken with a long knife. On the third stroke the whole bird slides off the board in slow motion, skates across the stainless counter and drops off the far edge. Final 2 seconds: the chef is still holding the knife exactly where the chicken used to be, not yet looking down. Audio: knife on bone, a greasy slide across metal, a soft floor thud, kitchen extractor hum, one beat of silence. No music.",
-                "videoSourceUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/hooks/EP041.mp4",
+                "videoSourceUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/Higgsfield-source-EP041-Le-poulet-fugueur",
                 "duree": "10 s",
                 "format": "vertical 9:16",
-                "source": "depot"
+                "source": "rapidocms"
               },
               "masterRapidoUrl": null
             },
@@ -7541,10 +7541,10 @@
               "tutorielModuleUrl": "https://tutoriel.foodeatup.com/module/marketing-fidelite",
               "higgsfield": {
                 "prompt": "Vertical 9:16, 10 seconds, photorealistic, windy outdoor terrace, 4K. NO text overlay, NO subtitles, NO watermark, NO logo. A waiter tries to fold a huge white tablecloth alone in the wind. Each time he brings two corners together, a gust inflates the cloth like a sail and wraps it around him. At 5 seconds he disappears completely inside the fabric. Final 2 seconds: a person-shaped white ghost stands motionless on the terrace, one hand emerging to give a thumbs up. Audio: wind gusts, fabric snapping loudly, muffled human grunting from inside the cloth, a chair scraping. No music.",
-                "videoSourceUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/hooks/EP042.mp4",
+                "videoSourceUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/Higgsfield-source-EP042-La-nappe-et-le-vent",
                 "duree": "10 s",
                 "format": "vertical 9:16",
-                "source": "depot"
+                "source": "rapidocms"
               },
               "masterRapidoUrl": null
             },
@@ -7708,10 +7708,10 @@
               "tutorielManquant": "Le module Caisse POS n'existe pas encore dans l'Academy.",
               "higgsfield": {
                 "prompt": "Vertical 9:16, 10 seconds, photorealistic, morning park-side café, 4K. NO text overlay, NO subtitles, NO watermark, NO logo. A croissant sits on a small saucer beside a coffee on an outdoor café table. A squirrel climbs the table leg, assesses the croissant, and takes it with both paws — it is almost as big as the squirrel. At 5 seconds it drags the croissant off the table and struggles up a nearby tree trunk with it. Final 2 seconds: the squirrel on a branch, croissant held triumphantly, flakes raining down. Audio: morning birdsong, a ceramic saucer tick, tiny claws on wood and bark, a bakery-flake rustle, a distant espresso machine. No music.",
-                "videoSourceUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/hooks/EP043.mp4",
+                "videoSourceUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/Higgsfield-source-EP043-L-ecureuil-et-le-croissant",
                 "duree": "10 s",
                 "format": "vertical 9:16",
-                "source": "depot"
+                "source": "rapidocms"
               },
               "masterRapidoUrl": null
             },
@@ -7889,10 +7889,10 @@
               "tutorielModuleUrl": "https://tutoriel.foodeatup.com/module/reservation-salle",
               "higgsfield": {
                 "prompt": "Vertical 9:16, 10 seconds, photorealistic, over-the-shoulder at a dining table, 4K. NO text overlay, NO subtitles, NO watermark, NO logo. A waiter stands at a table with a notepad, ready to take an order. His pen does not write. He shakes it, scribbles, tries another from his apron, then another, then another, scribbling harder each time on the corner of the pad. At 5 seconds he has five dead pens lined up on the table. Final 2 seconds: he pulls out a sixth, it works, and the guests have already put their menus down and are looking at him. Audio: restaurant ambience, pen scribbling on paper, plastic pens clicking and tapping the table, one polite guest cough. No music.",
-                "videoSourceUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/hooks/EP044.mp4",
+                "videoSourceUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/Higgsfield-source-EP044-Les-six-stylos",
                 "duree": "10 s",
                 "format": "vertical 9:16",
-                "source": "depot"
+                "source": "rapidocms"
               },
               "masterRapidoUrl": null
             },
@@ -8072,10 +8072,10 @@
               "tutorielModuleUrl": "https://tutoriel.foodeatup.com/module/stockvision-ai",
               "higgsfield": {
                 "prompt": "Vertical 9:16, 10 seconds, photorealistic, cold blue interior light, 4K. NO text overlay, NO subtitles, NO watermark, NO logo. Interior of a walk-in cold room. A cook is checking shelves when the heavy insulated door swings slowly shut behind him. He turns, pushes the handle, nothing. At 5 seconds he knocks politely, then harder, breath visible in the cold air. Final 2 seconds: he sits down on an upturned crate, resigned, and starts eating a cherry tomato from the shelf. Audio: refrigeration unit droning, a heavy door thud and latch click, knuckles on metal, breathing in cold air, a small crunch. No music.",
-                "videoSourceUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/hooks/EP045.mp4",
+                "videoSourceUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/Higgsfield-source-EP045-La-chambre-froide",
                 "duree": "10 s",
                 "format": "vertical 9:16",
-                "source": "depot"
+                "source": "rapidocms"
               },
               "masterRapidoUrl": null
             },
@@ -10958,10 +10958,10 @@
               "tutorielModuleUrl": "https://tutoriel.foodeatup.com/module/haccp",
               "higgsfield": {
                 "prompt": "Vertical 9:16, 10 seconds, photorealistic, cinematic handheld camera, shallow depth of field, natural light, 4K. NO text overlay, NO subtitles, NO watermark, NO logo. Early morning at a restaurant staff entrance. A young employee taps a supermarket loyalty card against the door reader. Nothing. He tries a metro pass. Nothing. He tries his wrapped sandwich. At 5 seconds the door opens on its own because a colleague pushes it from inside, and he walks in holding the sandwich against the reader. Final 2 seconds: the reader blinks red, alone, as the door closes. Audio: quiet street ambience, three flat error beeps, plastic tapping on a reader, a door hinge, a colleague's mumbled \"Bonjour\", then one last error beep. No music.",
-                "videoSourceUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/hooks/EP061.mp4",
+                "videoSourceUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/Higgsfield-source-EP061-Le-badge-introuvable",
                 "duree": "10 s",
                 "format": "vertical 9:16",
-                "source": "depot"
+                "source": "rapidocms"
               },
               "masterRapidoUrl": null
             },
@@ -11140,10 +11140,10 @@
               "tutorielModuleUrl": "https://tutoriel.foodeatup.com/module/haccp",
               "higgsfield": {
                 "prompt": "Vertical 9:16, 10 seconds, photorealistic, front-on framing as if from a tablet camera, 4K. NO text overlay, NO subtitles, NO watermark, NO logo. An employee stands in front of a wall-mounted tablet at the staff entrance, taking his clock-in photo. He tries a neutral face, then a serious face, then a slight smile, then a full grin, adjusting his hair between each. At 5 seconds he settles on an intensely dramatic, chin-lifted expression. Final 2 seconds: he holds it perfectly still, absolutely committed. Audio: staff room ambience, a soft camera shutter repeated five times, fabric rustling, one satisfied exhale. No music.",
-                "videoSourceUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/hooks/EP062.mp4",
+                "videoSourceUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/Higgsfield-source-EP062-La-photo-de-pointage",
                 "duree": "10 s",
                 "format": "vertical 9:16",
-                "source": "depot"
+                "source": "rapidocms"
               },
               "masterRapidoUrl": null
             },
@@ -11506,10 +11506,10 @@
               "tutorielModuleUrl": "https://tutoriel.foodeatup.com/module/equipe-planning",
               "higgsfield": {
                 "prompt": "Vertical 9:16, 10 seconds, photorealistic, staff room, 4K. NO text overlay, NO subtitles, NO watermark, NO logo. A whiteboard weekly rota covered in layers of crossings-out, arrows, magnets and three different marker colours. A manager studies it, then adds a strip of masking tape over one section and writes a new name on the tape. At 5 seconds a magnet gives way and half the paper slips sideways. Final 2 seconds: he presses it back with one finger and holds it there, looking at the camera. Audio: staff room ambience, squeaky marker on whiteboard, tape tearing, a magnet clattering to the floor, one long exhale. No music.",
-                "videoSourceUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/hooks/EP064.mp4",
+                "videoSourceUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/Higgsfield-source-EP064-Le-planning-au-marqueur",
                 "duree": "10 s",
                 "format": "vertical 9:16",
-                "source": "depot"
+                "source": "rapidocms"
               },
               "masterRapidoUrl": null
             },
@@ -11691,10 +11691,10 @@
               "tutorielModuleUrl": "https://tutoriel.foodeatup.com/module/equipe-planning",
               "higgsfield": {
                 "prompt": "Vertical 9:16, 10 seconds, photorealistic, back office, 4K. NO text overlay, NO subtitles, NO watermark, NO logo. A very young intern sits in the manager's oversized leather chair, feet up on the desk, slowly spinning, holding the manager's coffee mug. He opens a drawer, looks inside, nods approvingly. At 5 seconds the office door opens off-frame; he freezes mid-spin, feet still on the desk. Final 2 seconds: he is standing perfectly straight beside the chair, mug behind his back. Audio: office ambience, a chair spinning and creaking, a drawer sliding, a door handle turning, an abrupt scramble, then silence. No music.",
-                "videoSourceUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/hooks/EP065.mp4",
+                "videoSourceUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/Higgsfield-source-EP065-Le-stagiaire-au-bureau",
                 "duree": "10 s",
                 "format": "vertical 9:16",
-                "source": "depot"
+                "source": "rapidocms"
               },
               "masterRapidoUrl": null
             },
@@ -11857,10 +11857,10 @@
               "tutorielManquant": "Ce chapitre n'a pas encore sa fiche dans l'Academy.",
               "higgsfield": {
                 "prompt": "Vertical 9:16, 10 seconds, photorealistic, professional kitchen, 4K. NO text overlay, NO subtitles, NO watermark, NO logo. A cook, hands covered in flour, leans toward a stainless-steel toaster on the counter and speaks to it clearly, waiting for an answer. Nothing. He speaks again, louder, more articulately. At 5 seconds the toaster ejects two slices of toast violently. He takes this as a response and nods. Final 2 seconds: he goes back to work, satisfied, having received his answer. Audio: kitchen ambience, a muffled human question, a pause, a second louder question, a metallic toaster spring-pop, one accepting \"Ah, d'accord.\" No music.",
-                "videoSourceUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/hooks/EP066.mp4",
+                "videoSourceUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/Higgsfield-source-EP066-Le-grille-pain-qui-ne-repond-pas",
                 "duree": "10 s",
                 "format": "vertical 9:16",
-                "source": "depot"
+                "source": "rapidocms"
               },
               "masterRapidoUrl": null
             },
@@ -12206,10 +12206,10 @@
               "tutorielManquant": "Ce chapitre n'a pas encore sa fiche dans l'Academy.",
               "higgsfield": {
                 "prompt": "Vertical 9:16, 10 seconds, photorealistic, kitchen close-up, 4K. NO text overlay, NO subtitles, NO watermark, NO logo. A cook opens a large tub of cream and sniffs it long and deeply, eyes narrowed in genuine scientific concentration. He sniffs again. Uncertain, he holds it out toward a colleague. The colleague sniffs, makes exactly the same face, and hands it back without a word. At 5 seconds a third cook enters frame, sniffs, and shrugs. Final 2 seconds: all three stand in a small circle staring at the tub, nobody deciding. Audio: kitchen ambience, deep deliberate sniffing, plastic lid flexing, a noncommittal grunt, a shrug of fabric, silence. No music.",
-                "videoSourceUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/hooks/EP068.mp4",
+                "videoSourceUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/Higgsfield-source-EP068-Le-second-avis",
                 "duree": "10 s",
                 "format": "vertical 9:16",
-                "source": "depot"
+                "source": "rapidocms"
               },
               "masterRapidoUrl": null
             },
@@ -13111,10 +13111,10 @@
               "tutorielModuleUrl": "https://tutoriel.foodeatup.com/module/configuration",
               "higgsfield": {
                 "prompt": "Vertical 9:16, 10 seconds, photorealistic, bakery kitchen at dawn, 4K. NO text overlay, NO subtitles, NO watermark, NO logo. A chef stands in front of empty bread racks holding a coin. He flips it, catches it on the back of his hand, looks at it, and writes a number on an order pad. Unsatisfied, he flips again. At 5 seconds he flips a third time, misses the catch, and the coin rolls under a rack. Final 2 seconds: he writes a number anyway, without the coin. Audio: quiet early-morning kitchen, a coin ringing off a thumb, a slap on skin, pen on paper, a coin rolling on tiles, then silence. No music.",
-                "videoSourceUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/hooks/EP073.mp4",
+                "videoSourceUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/Higgsfield-source-EP073-Pile-ou-face",
                 "duree": "10 s",
                 "format": "vertical 9:16",
-                "source": "depot"
+                "source": "rapidocms"
               },
               "masterRapidoUrl": null
             },
