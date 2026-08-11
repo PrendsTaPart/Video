@@ -1,5 +1,9 @@
 # Règles pour ce dépôt
 
+Le mode d'emploi opératoire — qui fait quoi, dans quel ordre, et ce qui casse
+quand on saute une étape — est dans `foodeatup-video-factory/METHODE.md`.
+Ce fichier-ci ne contient que les règles qui ne se discutent pas.
+
 ## Higgsfield : ne jamais générer de nouvelles vidéos
 
 Ne PAS générer de nouveaux plans vidéo via l'API/MCP Higgsfield. Si un plan

@@ -112,6 +112,36 @@ def main():
     )
     open(gabarit, "w").write(entete + corps)
 
+    # --- plan de site -------------------------------------------------------
+    # 150 pages d'épisode qu'aucun lien de navigation n'expose toutes : sans
+    # plan de site, les moteurs n'en trouvent qu'une poignée par exploration.
+    base = "https://foodeatup-social.lovable.app"
+    urls = [("/", "daily", "1.0"), ("/series", "weekly", "0.8"),
+            ("/calendrier", "daily", "0.8"), ("/methode", "monthly", "0.9"),
+            ("/rapidocms", "monthly", "0.9")]
+    for r in d["reseaux"]:
+        urls.append((f"/reseaux/{r['slug']}", "weekly", "0.6"))
+    for s_ in d["series"]:
+        urls.append((f"/series/{s_['slug']}", "weekly", "0.8"))
+        for sa in s_["saisons"]:
+            urls.append((f"/series/{s_['slug']}/saison/{sa['numero']}", "weekly", "0.7"))
+            for e in sa["episodes"]:
+                # Un épisode non produit n'a rien à montrer : l'indexer, c'est
+                # promettre une page vide dans les résultats de recherche.
+                if e["statut"] in ("publie", "monte"):
+                    urls.append((f"/episode/{e['slug']}", "monthly", "0.7"))
+    plan = ['<?xml version="1.0" encoding="UTF-8"?>',
+            '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">']
+    for loc, freq, prio in urls:
+        plan += ["  <url>", f"    <loc>{base}{loc}</loc>",
+                 f"    <changefreq>{freq}</changefreq>",
+                 f"    <priority>{prio}</priority>", "  </url>"]
+    plan.append("</urlset>")
+    pub = os.path.join(SOCIAL, "public")
+    os.makedirs(pub, exist_ok=True)
+    open(os.path.join(pub, "sitemap.xml"), "w").write("\n".join(plan) + "\n")
+    print(f"  sitemap.xml  {len(urls):6} URL")
+
     for f in ("series.ts", "contenu.ts"):
         print(f"  {f:12} {os.path.getsize(os.path.join(dst, f)) / 1024:6.0f} Ko")
 

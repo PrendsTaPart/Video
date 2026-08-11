@@ -56,7 +56,13 @@ export type Episode = {
   tutorielModuleUrl: string | null;
   tutorielManquant?: string;
   /** Le plan Higgsfield d'origine : le prompt et le clip source. */
-  higgsfield: { videoSourceUrl: string | null; duree: string; format: string };
+  higgsfield: {
+    videoSourceUrl: string | null;
+    /** "rapidocms" = versé en bibliothèque ; "depot" = servi depuis le dépôt. */
+    source: "rapidocms" | "depot" | null;
+    duree: string;
+    format: string;
+  };
   /** Le master hébergé dans la bibliothèque RapidoCMS. */
   masterRapidoUrl: string | null;
   posterUrl: string | null;
@@ -318,7 +324,8 @@ export const series: Serie[] = [
             "higgsfield": {
               "videoSourceUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/Higgsfield-source-EP001-Le-chien-qui-te-regarde",
               "duree": "10 s",
-              "format": "vertical 9:16"
+              "format": "vertical 9:16",
+              "source": "rapidocms"
             },
             "masterRapidoUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/FoodEatUp-EP001-Prendre-une-commande"
           },
@@ -395,7 +402,8 @@ export const series: Serie[] = [
             "higgsfield": {
               "videoSourceUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/Higgsfield-source-EP002-La-chute-en-skateboard",
               "duree": "10 s",
-              "format": "vertical 9:16"
+              "format": "vertical 9:16",
+              "source": "rapidocms"
             },
             "masterRapidoUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/FoodEatUp-EP002-Envoi-direct-cuisine"
           },
@@ -465,7 +473,8 @@ export const series: Serie[] = [
             "higgsfield": {
               "videoSourceUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/Higgsfield-source-EP003-Le-plat-dans-la-piscine",
               "duree": "10 s",
-              "format": "vertical 9:16"
+              "format": "vertical 9:16",
+              "source": "rapidocms"
             },
             "masterRapidoUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/FoodEatUp-EP003-Ma-carte"
           },
@@ -534,9 +543,10 @@ export const series: Serie[] = [
             "tutorielModuleUrl": null,
             "tutorielManquant": "Le module Caisse POS n'existe pas encore dans l'Academy.",
             "higgsfield": {
-              "videoSourceUrl": null,
+              "videoSourceUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/hooks/EP004.mp4",
               "duree": "10 s",
-              "format": "vertical 9:16"
+              "format": "vertical 9:16",
+              "source": "depot"
             },
             "masterRapidoUrl": null
           },
@@ -606,7 +616,8 @@ export const series: Serie[] = [
             "higgsfield": {
               "videoSourceUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/Higgsfield-source-EP005-Le-serveur-qui-glisse",
               "duree": "10 s",
-              "format": "vertical 9:16"
+              "format": "vertical 9:16",
+              "source": "rapidocms"
             },
             "masterRapidoUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/FoodEatUp-EP005-Vue-d-ensemble"
           },
@@ -683,7 +694,8 @@ export const series: Serie[] = [
             "higgsfield": {
               "videoSourceUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/Higgsfield-source-EP006-La-pizza-frisbee",
               "duree": "10 s",
-              "format": "vertical 9:16"
+              "format": "vertical 9:16",
+              "source": "rapidocms"
             },
             "masterRapidoUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/FoodEatUp-EP006-Ajouter-modifier-un-mouvement"
           },
@@ -760,7 +772,8 @@ export const series: Serie[] = [
             "higgsfield": {
               "videoSourceUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/Higgsfield-source-EP007-La-mamie-qui-goute",
               "duree": "10 s",
-              "format": "vertical 9:16"
+              "format": "vertical 9:16",
+              "source": "rapidocms"
             },
             "masterRapidoUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/FoodEatUp-EP007-Repondre-aux-avis"
           },
@@ -837,7 +850,8 @@ export const series: Serie[] = [
             "higgsfield": {
               "videoSourceUrl": null,
               "duree": "10 s",
-              "format": "vertical 9:16"
+              "format": "vertical 9:16",
+              "source": null
             },
             "masterRapidoUrl": null
           },
@@ -906,9 +920,10 @@ export const series: Serie[] = [
             "tutorielModuleUrl": null,
             "tutorielManquant": "Le module Caisse POS n'existe pas encore dans l'Academy.",
             "higgsfield": {
-              "videoSourceUrl": null,
+              "videoSourceUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/hooks/EP009.mp4",
               "duree": "10 s",
-              "format": "vertical 9:16"
+              "format": "vertical 9:16",
+              "source": "depot"
             },
             "masterRapidoUrl": null
           },
@@ -985,7 +1000,8 @@ export const series: Serie[] = [
             "higgsfield": {
               "videoSourceUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/Higgsfield-source-EP010-Le-flambage-rate",
               "duree": "10 s",
-              "format": "vertical 9:16"
+              "format": "vertical 9:16",
+              "source": "rapidocms"
             },
             "masterRapidoUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/FoodEatUp-EP010-Lire-ses-previsions"
           },
@@ -1061,9 +1077,10 @@ export const series: Serie[] = [
             },
             "tutorielModuleUrl": "https://tutoriel.foodeatup.com/module/hubrise-livraisons",
             "higgsfield": {
-              "videoSourceUrl": null,
+              "videoSourceUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/hooks/EP011.mp4",
               "duree": "10 s",
-              "format": "vertical 9:16"
+              "format": "vertical 9:16",
+              "source": "depot"
             },
             "masterRapidoUrl": null
           },
@@ -1139,9 +1156,10 @@ export const series: Serie[] = [
             },
             "tutorielModuleUrl": "https://tutoriel.foodeatup.com/module/kds-cuisine",
             "higgsfield": {
-              "videoSourceUrl": null,
+              "videoSourceUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/hooks/EP012.mp4",
               "duree": "10 s",
-              "format": "vertical 9:16"
+              "format": "vertical 9:16",
+              "source": "depot"
             },
             "masterRapidoUrl": null
           },
@@ -1216,9 +1234,10 @@ export const series: Serie[] = [
             },
             "tutorielModuleUrl": "https://tutoriel.foodeatup.com/module/predibot",
             "higgsfield": {
-              "videoSourceUrl": null,
+              "videoSourceUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/hooks/EP013.mp4",
               "duree": "10 s",
-              "format": "vertical 9:16"
+              "format": "vertical 9:16",
+              "source": "depot"
             },
             "masterRapidoUrl": null
           },
@@ -1293,9 +1312,10 @@ export const series: Serie[] = [
             },
             "tutorielModuleUrl": "https://tutoriel.foodeatup.com/module/stockvision-ai",
             "higgsfield": {
-              "videoSourceUrl": null,
+              "videoSourceUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/hooks/EP014.mp4",
               "duree": "10 s",
-              "format": "vertical 9:16"
+              "format": "vertical 9:16",
+              "source": "depot"
             },
             "masterRapidoUrl": null
           },
@@ -1370,9 +1390,10 @@ export const series: Serie[] = [
             },
             "tutorielModuleUrl": "https://tutoriel.foodeatup.com/module/configuration",
             "higgsfield": {
-              "videoSourceUrl": null,
+              "videoSourceUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/hooks/EP015.mp4",
               "duree": "10 s",
-              "format": "vertical 9:16"
+              "format": "vertical 9:16",
+              "source": "depot"
             },
             "masterRapidoUrl": null
           },
@@ -1447,9 +1468,10 @@ export const series: Serie[] = [
             },
             "tutorielModuleUrl": "https://tutoriel.foodeatup.com/module/comptabilite",
             "higgsfield": {
-              "videoSourceUrl": null,
+              "videoSourceUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/hooks/EP016.mp4",
               "duree": "10 s",
-              "format": "vertical 9:16"
+              "format": "vertical 9:16",
+              "source": "depot"
             },
             "masterRapidoUrl": null
           },
@@ -1524,9 +1546,10 @@ export const series: Serie[] = [
             },
             "tutorielModuleUrl": "https://tutoriel.foodeatup.com/module/stockvision-ai",
             "higgsfield": {
-              "videoSourceUrl": null,
+              "videoSourceUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/hooks/EP017.mp4",
               "duree": "10 s",
-              "format": "vertical 9:16"
+              "format": "vertical 9:16",
+              "source": "depot"
             },
             "masterRapidoUrl": null
           },
@@ -1601,9 +1624,10 @@ export const series: Serie[] = [
             },
             "tutorielModuleUrl": "https://tutoriel.foodeatup.com/module/service-commande",
             "higgsfield": {
-              "videoSourceUrl": null,
+              "videoSourceUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/hooks/EP018.mp4",
               "duree": "10 s",
-              "format": "vertical 9:16"
+              "format": "vertical 9:16",
+              "source": "depot"
             },
             "masterRapidoUrl": null
           },
@@ -1678,9 +1702,10 @@ export const series: Serie[] = [
             },
             "tutorielModuleUrl": "https://tutoriel.foodeatup.com/module/stockvision-ai",
             "higgsfield": {
-              "videoSourceUrl": null,
+              "videoSourceUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/hooks/EP019.mp4",
               "duree": "10 s",
-              "format": "vertical 9:16"
+              "format": "vertical 9:16",
+              "source": "depot"
             },
             "masterRapidoUrl": null
           },
@@ -1755,9 +1780,10 @@ export const series: Serie[] = [
             },
             "tutorielModuleUrl": "https://tutoriel.foodeatup.com/module/reservation-salle",
             "higgsfield": {
-              "videoSourceUrl": null,
+              "videoSourceUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/hooks/EP020.mp4",
               "duree": "10 s",
-              "format": "vertical 9:16"
+              "format": "vertical 9:16",
+              "source": "depot"
             },
             "masterRapidoUrl": null
           },
@@ -1832,9 +1858,10 @@ export const series: Serie[] = [
             },
             "tutorielModuleUrl": "https://tutoriel.foodeatup.com/module/kds-cuisine",
             "higgsfield": {
-              "videoSourceUrl": null,
+              "videoSourceUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/hooks/EP021.mp4",
               "duree": "10 s",
-              "format": "vertical 9:16"
+              "format": "vertical 9:16",
+              "source": "depot"
             },
             "masterRapidoUrl": null
           },
@@ -1909,9 +1936,10 @@ export const series: Serie[] = [
             },
             "tutorielModuleUrl": "https://tutoriel.foodeatup.com/module/predibot",
             "higgsfield": {
-              "videoSourceUrl": null,
+              "videoSourceUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/hooks/EP022.mp4",
               "duree": "10 s",
-              "format": "vertical 9:16"
+              "format": "vertical 9:16",
+              "source": "depot"
             },
             "masterRapidoUrl": null
           },
@@ -1986,9 +2014,10 @@ export const series: Serie[] = [
             },
             "tutorielModuleUrl": "https://tutoriel.foodeatup.com/module/marketing-fidelite",
             "higgsfield": {
-              "videoSourceUrl": null,
+              "videoSourceUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/hooks/EP023.mp4",
               "duree": "10 s",
-              "format": "vertical 9:16"
+              "format": "vertical 9:16",
+              "source": "depot"
             },
             "masterRapidoUrl": null
           },
@@ -2063,9 +2092,10 @@ export const series: Serie[] = [
             },
             "tutorielModuleUrl": "https://tutoriel.foodeatup.com/module/site-web-vitrine",
             "higgsfield": {
-              "videoSourceUrl": null,
+              "videoSourceUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/hooks/EP024.mp4",
               "duree": "10 s",
-              "format": "vertical 9:16"
+              "format": "vertical 9:16",
+              "source": "depot"
             },
             "masterRapidoUrl": null
           },
@@ -2140,9 +2170,10 @@ export const series: Serie[] = [
             },
             "tutorielModuleUrl": "https://tutoriel.foodeatup.com/module/marketing-fidelite",
             "higgsfield": {
-              "videoSourceUrl": null,
+              "videoSourceUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/hooks/EP025.mp4",
               "duree": "10 s",
-              "format": "vertical 9:16"
+              "format": "vertical 9:16",
+              "source": "depot"
             },
             "masterRapidoUrl": null
           },
@@ -2217,9 +2248,10 @@ export const series: Serie[] = [
             },
             "tutorielModuleUrl": "https://tutoriel.foodeatup.com/module/stockvision-ai",
             "higgsfield": {
-              "videoSourceUrl": null,
+              "videoSourceUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/hooks/EP026.mp4",
               "duree": "10 s",
-              "format": "vertical 9:16"
+              "format": "vertical 9:16",
+              "source": "depot"
             },
             "masterRapidoUrl": null
           },
@@ -2288,9 +2320,10 @@ export const series: Serie[] = [
             "tutorielModuleUrl": null,
             "tutorielManquant": "Le module Caisse POS n'existe pas encore dans l'Academy.",
             "higgsfield": {
-              "videoSourceUrl": null,
+              "videoSourceUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/hooks/EP027.mp4",
               "duree": "10 s",
-              "format": "vertical 9:16"
+              "format": "vertical 9:16",
+              "source": "depot"
             },
             "masterRapidoUrl": null
           },
@@ -2366,9 +2399,10 @@ export const series: Serie[] = [
             },
             "tutorielModuleUrl": "https://tutoriel.foodeatup.com/module/hubrise-livraisons",
             "higgsfield": {
-              "videoSourceUrl": null,
+              "videoSourceUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/hooks/EP028.mp4",
               "duree": "10 s",
-              "format": "vertical 9:16"
+              "format": "vertical 9:16",
+              "source": "depot"
             },
             "masterRapidoUrl": null
           },
@@ -2443,9 +2477,10 @@ export const series: Serie[] = [
             },
             "tutorielModuleUrl": "https://tutoriel.foodeatup.com/module/predibot",
             "higgsfield": {
-              "videoSourceUrl": null,
+              "videoSourceUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/hooks/EP029.mp4",
               "duree": "10 s",
-              "format": "vertical 9:16"
+              "format": "vertical 9:16",
+              "source": "depot"
             },
             "masterRapidoUrl": null
           },
@@ -2514,9 +2549,10 @@ export const series: Serie[] = [
             "tutorielModuleUrl": "https://tutoriel.foodeatup.com/module/configuration",
             "tutorielManquant": "Ce chapitre n'a pas encore sa fiche dans l'Academy.",
             "higgsfield": {
-              "videoSourceUrl": null,
+              "videoSourceUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/hooks/EP030.mp4",
               "duree": "10 s",
-              "format": "vertical 9:16"
+              "format": "vertical 9:16",
+              "source": "depot"
             },
             "masterRapidoUrl": null
           }
@@ -2598,9 +2634,10 @@ export const series: Serie[] = [
             },
             "tutorielModuleUrl": "https://tutoriel.foodeatup.com/module/haccp",
             "higgsfield": {
-              "videoSourceUrl": null,
+              "videoSourceUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/hooks/EP031.mp4",
               "duree": "10 s",
-              "format": "vertical 9:16"
+              "format": "vertical 9:16",
+              "source": "depot"
             },
             "masterRapidoUrl": null
           },
@@ -2675,9 +2712,10 @@ export const series: Serie[] = [
             },
             "tutorielModuleUrl": "https://tutoriel.foodeatup.com/module/stockvision-ai",
             "higgsfield": {
-              "videoSourceUrl": null,
+              "videoSourceUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/hooks/EP032.mp4",
               "duree": "10 s",
-              "format": "vertical 9:16"
+              "format": "vertical 9:16",
+              "source": "depot"
             },
             "masterRapidoUrl": null
           },
@@ -2752,9 +2790,10 @@ export const series: Serie[] = [
             },
             "tutorielModuleUrl": "https://tutoriel.foodeatup.com/module/stockvision-ai",
             "higgsfield": {
-              "videoSourceUrl": null,
+              "videoSourceUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/hooks/EP033.mp4",
               "duree": "10 s",
-              "format": "vertical 9:16"
+              "format": "vertical 9:16",
+              "source": "depot"
             },
             "masterRapidoUrl": null
           },
@@ -2825,7 +2864,8 @@ export const series: Serie[] = [
             "higgsfield": {
               "videoSourceUrl": null,
               "duree": "10 s",
-              "format": "vertical 9:16"
+              "format": "vertical 9:16",
+              "source": null
             },
             "masterRapidoUrl": null
           },
@@ -2902,7 +2942,8 @@ export const series: Serie[] = [
             "higgsfield": {
               "videoSourceUrl": null,
               "duree": "10 s",
-              "format": "vertical 9:16"
+              "format": "vertical 9:16",
+              "source": null
             },
             "masterRapidoUrl": null
           },
@@ -2972,7 +3013,8 @@ export const series: Serie[] = [
             "higgsfield": {
               "videoSourceUrl": null,
               "duree": "10 s",
-              "format": "vertical 9:16"
+              "format": "vertical 9:16",
+              "source": null
             },
             "masterRapidoUrl": null
           },
@@ -3049,7 +3091,8 @@ export const series: Serie[] = [
             "higgsfield": {
               "videoSourceUrl": null,
               "duree": "10 s",
-              "format": "vertical 9:16"
+              "format": "vertical 9:16",
+              "source": null
             },
             "masterRapidoUrl": null
           },
@@ -3126,7 +3169,8 @@ export const series: Serie[] = [
             "higgsfield": {
               "videoSourceUrl": null,
               "duree": "10 s",
-              "format": "vertical 9:16"
+              "format": "vertical 9:16",
+              "source": null
             },
             "masterRapidoUrl": null
           },
@@ -3203,7 +3247,8 @@ export const series: Serie[] = [
             "higgsfield": {
               "videoSourceUrl": null,
               "duree": "10 s",
-              "format": "vertical 9:16"
+              "format": "vertical 9:16",
+              "source": null
             },
             "masterRapidoUrl": null
           },
@@ -3280,7 +3325,8 @@ export const series: Serie[] = [
             "higgsfield": {
               "videoSourceUrl": null,
               "duree": "10 s",
-              "format": "vertical 9:16"
+              "format": "vertical 9:16",
+              "source": null
             },
             "masterRapidoUrl": null
           },
@@ -3357,7 +3403,8 @@ export const series: Serie[] = [
             "higgsfield": {
               "videoSourceUrl": null,
               "duree": "10 s",
-              "format": "vertical 9:16"
+              "format": "vertical 9:16",
+              "source": null
             },
             "masterRapidoUrl": null
           },
@@ -3435,7 +3482,8 @@ export const series: Serie[] = [
             "higgsfield": {
               "videoSourceUrl": null,
               "duree": "10 s",
-              "format": "vertical 9:16"
+              "format": "vertical 9:16",
+              "source": null
             },
             "masterRapidoUrl": null
           },
@@ -3506,7 +3554,8 @@ export const series: Serie[] = [
             "higgsfield": {
               "videoSourceUrl": null,
               "duree": "10 s",
-              "format": "vertical 9:16"
+              "format": "vertical 9:16",
+              "source": null
             },
             "masterRapidoUrl": null
           },
@@ -3583,7 +3632,8 @@ export const series: Serie[] = [
             "higgsfield": {
               "videoSourceUrl": null,
               "duree": "10 s",
-              "format": "vertical 9:16"
+              "format": "vertical 9:16",
+              "source": null
             },
             "masterRapidoUrl": null
           },
@@ -3660,7 +3710,8 @@ export const series: Serie[] = [
             "higgsfield": {
               "videoSourceUrl": null,
               "duree": "10 s",
-              "format": "vertical 9:16"
+              "format": "vertical 9:16",
+              "source": null
             },
             "masterRapidoUrl": null
           },
@@ -3737,7 +3788,8 @@ export const series: Serie[] = [
             "higgsfield": {
               "videoSourceUrl": null,
               "duree": "10 s",
-              "format": "vertical 9:16"
+              "format": "vertical 9:16",
+              "source": null
             },
             "masterRapidoUrl": null
           },
@@ -3814,7 +3866,8 @@ export const series: Serie[] = [
             "higgsfield": {
               "videoSourceUrl": null,
               "duree": "10 s",
-              "format": "vertical 9:16"
+              "format": "vertical 9:16",
+              "source": null
             },
             "masterRapidoUrl": null
           },
@@ -3891,7 +3944,8 @@ export const series: Serie[] = [
             "higgsfield": {
               "videoSourceUrl": null,
               "duree": "10 s",
-              "format": "vertical 9:16"
+              "format": "vertical 9:16",
+              "source": null
             },
             "masterRapidoUrl": null
           },
@@ -3968,7 +4022,8 @@ export const series: Serie[] = [
             "higgsfield": {
               "videoSourceUrl": null,
               "duree": "10 s",
-              "format": "vertical 9:16"
+              "format": "vertical 9:16",
+              "source": null
             },
             "masterRapidoUrl": null
           },
@@ -4045,7 +4100,8 @@ export const series: Serie[] = [
             "higgsfield": {
               "videoSourceUrl": null,
               "duree": "10 s",
-              "format": "vertical 9:16"
+              "format": "vertical 9:16",
+              "source": null
             },
             "masterRapidoUrl": null
           },
@@ -4122,7 +4178,8 @@ export const series: Serie[] = [
             "higgsfield": {
               "videoSourceUrl": null,
               "duree": "10 s",
-              "format": "vertical 9:16"
+              "format": "vertical 9:16",
+              "source": null
             },
             "masterRapidoUrl": null
           },
@@ -4199,7 +4256,8 @@ export const series: Serie[] = [
             "higgsfield": {
               "videoSourceUrl": null,
               "duree": "10 s",
-              "format": "vertical 9:16"
+              "format": "vertical 9:16",
+              "source": null
             },
             "masterRapidoUrl": null
           },
@@ -4276,7 +4334,8 @@ export const series: Serie[] = [
             "higgsfield": {
               "videoSourceUrl": null,
               "duree": "10 s",
-              "format": "vertical 9:16"
+              "format": "vertical 9:16",
+              "source": null
             },
             "masterRapidoUrl": null
           },
@@ -4353,7 +4412,8 @@ export const series: Serie[] = [
             "higgsfield": {
               "videoSourceUrl": null,
               "duree": "10 s",
-              "format": "vertical 9:16"
+              "format": "vertical 9:16",
+              "source": null
             },
             "masterRapidoUrl": null
           },
@@ -4430,7 +4490,8 @@ export const series: Serie[] = [
             "higgsfield": {
               "videoSourceUrl": null,
               "duree": "10 s",
-              "format": "vertical 9:16"
+              "format": "vertical 9:16",
+              "source": null
             },
             "masterRapidoUrl": null
           },
@@ -4507,7 +4568,8 @@ export const series: Serie[] = [
             "higgsfield": {
               "videoSourceUrl": null,
               "duree": "10 s",
-              "format": "vertical 9:16"
+              "format": "vertical 9:16",
+              "source": null
             },
             "masterRapidoUrl": null
           },
@@ -4577,7 +4639,8 @@ export const series: Serie[] = [
             "higgsfield": {
               "videoSourceUrl": null,
               "duree": "10 s",
-              "format": "vertical 9:16"
+              "format": "vertical 9:16",
+              "source": null
             },
             "masterRapidoUrl": null
           },
@@ -4648,7 +4711,8 @@ export const series: Serie[] = [
             "higgsfield": {
               "videoSourceUrl": null,
               "duree": "10 s",
-              "format": "vertical 9:16"
+              "format": "vertical 9:16",
+              "source": null
             },
             "masterRapidoUrl": null
           },
@@ -4725,7 +4789,8 @@ export const series: Serie[] = [
             "higgsfield": {
               "videoSourceUrl": null,
               "duree": "10 s",
-              "format": "vertical 9:16"
+              "format": "vertical 9:16",
+              "source": null
             },
             "masterRapidoUrl": null
           },
@@ -4802,7 +4867,8 @@ export const series: Serie[] = [
             "higgsfield": {
               "videoSourceUrl": null,
               "duree": "10 s",
-              "format": "vertical 9:16"
+              "format": "vertical 9:16",
+              "source": null
             },
             "masterRapidoUrl": null
           }
@@ -4886,7 +4952,8 @@ export const series: Serie[] = [
             "higgsfield": {
               "videoSourceUrl": null,
               "duree": "10 s",
-              "format": "vertical 9:16"
+              "format": "vertical 9:16",
+              "source": null
             },
             "masterRapidoUrl": null
           },
@@ -4964,7 +5031,8 @@ export const series: Serie[] = [
             "higgsfield": {
               "videoSourceUrl": null,
               "duree": "10 s",
-              "format": "vertical 9:16"
+              "format": "vertical 9:16",
+              "source": null
             },
             "masterRapidoUrl": null
           },
@@ -5041,7 +5109,8 @@ export const series: Serie[] = [
             "higgsfield": {
               "videoSourceUrl": null,
               "duree": "10 s",
-              "format": "vertical 9:16"
+              "format": "vertical 9:16",
+              "source": null
             },
             "masterRapidoUrl": null
           },
@@ -5118,7 +5187,8 @@ export const series: Serie[] = [
             "higgsfield": {
               "videoSourceUrl": null,
               "duree": "10 s",
-              "format": "vertical 9:16"
+              "format": "vertical 9:16",
+              "source": null
             },
             "masterRapidoUrl": null
           },
@@ -5195,7 +5265,8 @@ export const series: Serie[] = [
             "higgsfield": {
               "videoSourceUrl": null,
               "duree": "10 s",
-              "format": "vertical 9:16"
+              "format": "vertical 9:16",
+              "source": null
             },
             "masterRapidoUrl": null
           },
@@ -5265,7 +5336,8 @@ export const series: Serie[] = [
             "higgsfield": {
               "videoSourceUrl": null,
               "duree": "10 s",
-              "format": "vertical 9:16"
+              "format": "vertical 9:16",
+              "source": null
             },
             "masterRapidoUrl": null
           },
@@ -5342,7 +5414,8 @@ export const series: Serie[] = [
             "higgsfield": {
               "videoSourceUrl": null,
               "duree": "10 s",
-              "format": "vertical 9:16"
+              "format": "vertical 9:16",
+              "source": null
             },
             "masterRapidoUrl": null
           },
@@ -5412,7 +5485,8 @@ export const series: Serie[] = [
             "higgsfield": {
               "videoSourceUrl": null,
               "duree": "10 s",
-              "format": "vertical 9:16"
+              "format": "vertical 9:16",
+              "source": null
             },
             "masterRapidoUrl": null
           },
@@ -5490,7 +5564,8 @@ export const series: Serie[] = [
             "higgsfield": {
               "videoSourceUrl": null,
               "duree": "10 s",
-              "format": "vertical 9:16"
+              "format": "vertical 9:16",
+              "source": null
             },
             "masterRapidoUrl": null
           },
@@ -5567,7 +5642,8 @@ export const series: Serie[] = [
             "higgsfield": {
               "videoSourceUrl": null,
               "duree": "10 s",
-              "format": "vertical 9:16"
+              "format": "vertical 9:16",
+              "source": null
             },
             "masterRapidoUrl": null
           },
@@ -5644,7 +5720,8 @@ export const series: Serie[] = [
             "higgsfield": {
               "videoSourceUrl": null,
               "duree": "10 s",
-              "format": "vertical 9:16"
+              "format": "vertical 9:16",
+              "source": null
             },
             "masterRapidoUrl": null
           },
@@ -5721,7 +5798,8 @@ export const series: Serie[] = [
             "higgsfield": {
               "videoSourceUrl": null,
               "duree": "10 s",
-              "format": "vertical 9:16"
+              "format": "vertical 9:16",
+              "source": null
             },
             "masterRapidoUrl": null
           },
@@ -5798,7 +5876,8 @@ export const series: Serie[] = [
             "higgsfield": {
               "videoSourceUrl": null,
               "duree": "10 s",
-              "format": "vertical 9:16"
+              "format": "vertical 9:16",
+              "source": null
             },
             "masterRapidoUrl": null
           },
@@ -5875,7 +5954,8 @@ export const series: Serie[] = [
             "higgsfield": {
               "videoSourceUrl": null,
               "duree": "10 s",
-              "format": "vertical 9:16"
+              "format": "vertical 9:16",
+              "source": null
             },
             "masterRapidoUrl": null
           },
@@ -5952,7 +6032,8 @@ export const series: Serie[] = [
             "higgsfield": {
               "videoSourceUrl": null,
               "duree": "10 s",
-              "format": "vertical 9:16"
+              "format": "vertical 9:16",
+              "source": null
             },
             "masterRapidoUrl": null
           },
@@ -6029,7 +6110,8 @@ export const series: Serie[] = [
             "higgsfield": {
               "videoSourceUrl": null,
               "duree": "10 s",
-              "format": "vertical 9:16"
+              "format": "vertical 9:16",
+              "source": null
             },
             "masterRapidoUrl": null
           },
@@ -6107,7 +6189,8 @@ export const series: Serie[] = [
             "higgsfield": {
               "videoSourceUrl": null,
               "duree": "10 s",
-              "format": "vertical 9:16"
+              "format": "vertical 9:16",
+              "source": null
             },
             "masterRapidoUrl": null
           },
@@ -6185,7 +6268,8 @@ export const series: Serie[] = [
             "higgsfield": {
               "videoSourceUrl": null,
               "duree": "10 s",
-              "format": "vertical 9:16"
+              "format": "vertical 9:16",
+              "source": null
             },
             "masterRapidoUrl": null
           },
@@ -6263,7 +6347,8 @@ export const series: Serie[] = [
             "higgsfield": {
               "videoSourceUrl": null,
               "duree": "10 s",
-              "format": "vertical 9:16"
+              "format": "vertical 9:16",
+              "source": null
             },
             "masterRapidoUrl": null
           },
@@ -6340,7 +6425,8 @@ export const series: Serie[] = [
             "higgsfield": {
               "videoSourceUrl": null,
               "duree": "10 s",
-              "format": "vertical 9:16"
+              "format": "vertical 9:16",
+              "source": null
             },
             "masterRapidoUrl": null
           },
@@ -6417,7 +6503,8 @@ export const series: Serie[] = [
             "higgsfield": {
               "videoSourceUrl": null,
               "duree": "10 s",
-              "format": "vertical 9:16"
+              "format": "vertical 9:16",
+              "source": null
             },
             "masterRapidoUrl": null
           },
@@ -6494,7 +6581,8 @@ export const series: Serie[] = [
             "higgsfield": {
               "videoSourceUrl": null,
               "duree": "10 s",
-              "format": "vertical 9:16"
+              "format": "vertical 9:16",
+              "source": null
             },
             "masterRapidoUrl": null
           },
@@ -6564,7 +6652,8 @@ export const series: Serie[] = [
             "higgsfield": {
               "videoSourceUrl": null,
               "duree": "10 s",
-              "format": "vertical 9:16"
+              "format": "vertical 9:16",
+              "source": null
             },
             "masterRapidoUrl": null
           },
@@ -6641,7 +6730,8 @@ export const series: Serie[] = [
             "higgsfield": {
               "videoSourceUrl": null,
               "duree": "10 s",
-              "format": "vertical 9:16"
+              "format": "vertical 9:16",
+              "source": null
             },
             "masterRapidoUrl": null
           },
@@ -6711,7 +6801,8 @@ export const series: Serie[] = [
             "higgsfield": {
               "videoSourceUrl": null,
               "duree": "10 s",
-              "format": "vertical 9:16"
+              "format": "vertical 9:16",
+              "source": null
             },
             "masterRapidoUrl": null
           },
@@ -6788,7 +6879,8 @@ export const series: Serie[] = [
             "higgsfield": {
               "videoSourceUrl": null,
               "duree": "10 s",
-              "format": "vertical 9:16"
+              "format": "vertical 9:16",
+              "source": null
             },
             "masterRapidoUrl": null
           },
@@ -6865,7 +6957,8 @@ export const series: Serie[] = [
             "higgsfield": {
               "videoSourceUrl": null,
               "duree": "10 s",
-              "format": "vertical 9:16"
+              "format": "vertical 9:16",
+              "source": null
             },
             "masterRapidoUrl": null
           },
@@ -6935,7 +7028,8 @@ export const series: Serie[] = [
             "higgsfield": {
               "videoSourceUrl": null,
               "duree": "10 s",
-              "format": "vertical 9:16"
+              "format": "vertical 9:16",
+              "source": null
             },
             "masterRapidoUrl": null
           },
@@ -7012,7 +7106,8 @@ export const series: Serie[] = [
             "higgsfield": {
               "videoSourceUrl": null,
               "duree": "10 s",
-              "format": "vertical 9:16"
+              "format": "vertical 9:16",
+              "source": null
             },
             "masterRapidoUrl": null
           },
@@ -7090,7 +7185,8 @@ export const series: Serie[] = [
             "higgsfield": {
               "videoSourceUrl": null,
               "duree": "10 s",
-              "format": "vertical 9:16"
+              "format": "vertical 9:16",
+              "source": null
             },
             "masterRapidoUrl": null
           }
@@ -7174,7 +7270,8 @@ export const series: Serie[] = [
             "higgsfield": {
               "videoSourceUrl": null,
               "duree": "10 s",
-              "format": "vertical 9:16"
+              "format": "vertical 9:16",
+              "source": null
             },
             "masterRapidoUrl": null
           },
@@ -7251,7 +7348,8 @@ export const series: Serie[] = [
             "higgsfield": {
               "videoSourceUrl": null,
               "duree": "10 s",
-              "format": "vertical 9:16"
+              "format": "vertical 9:16",
+              "source": null
             },
             "masterRapidoUrl": null
           },
@@ -7328,7 +7426,8 @@ export const series: Serie[] = [
             "higgsfield": {
               "videoSourceUrl": null,
               "duree": "10 s",
-              "format": "vertical 9:16"
+              "format": "vertical 9:16",
+              "source": null
             },
             "masterRapidoUrl": null
           },
@@ -7406,7 +7505,8 @@ export const series: Serie[] = [
             "higgsfield": {
               "videoSourceUrl": null,
               "duree": "10 s",
-              "format": "vertical 9:16"
+              "format": "vertical 9:16",
+              "source": null
             },
             "masterRapidoUrl": null
           },
@@ -7484,7 +7584,8 @@ export const series: Serie[] = [
             "higgsfield": {
               "videoSourceUrl": null,
               "duree": "10 s",
-              "format": "vertical 9:16"
+              "format": "vertical 9:16",
+              "source": null
             },
             "masterRapidoUrl": null
           },
@@ -7561,7 +7662,8 @@ export const series: Serie[] = [
             "higgsfield": {
               "videoSourceUrl": null,
               "duree": "10 s",
-              "format": "vertical 9:16"
+              "format": "vertical 9:16",
+              "source": null
             },
             "masterRapidoUrl": null
           },
@@ -7639,7 +7741,8 @@ export const series: Serie[] = [
             "higgsfield": {
               "videoSourceUrl": null,
               "duree": "10 s",
-              "format": "vertical 9:16"
+              "format": "vertical 9:16",
+              "source": null
             },
             "masterRapidoUrl": null
           },
@@ -7716,7 +7819,8 @@ export const series: Serie[] = [
             "higgsfield": {
               "videoSourceUrl": null,
               "duree": "10 s",
-              "format": "vertical 9:16"
+              "format": "vertical 9:16",
+              "source": null
             },
             "masterRapidoUrl": null
           },
@@ -7793,7 +7897,8 @@ export const series: Serie[] = [
             "higgsfield": {
               "videoSourceUrl": null,
               "duree": "10 s",
-              "format": "vertical 9:16"
+              "format": "vertical 9:16",
+              "source": null
             },
             "masterRapidoUrl": null
           },
@@ -7870,7 +7975,8 @@ export const series: Serie[] = [
             "higgsfield": {
               "videoSourceUrl": null,
               "duree": "10 s",
-              "format": "vertical 9:16"
+              "format": "vertical 9:16",
+              "source": null
             },
             "masterRapidoUrl": null
           },
@@ -7941,7 +8047,8 @@ export const series: Serie[] = [
             "higgsfield": {
               "videoSourceUrl": null,
               "duree": "10 s",
-              "format": "vertical 9:16"
+              "format": "vertical 9:16",
+              "source": null
             },
             "masterRapidoUrl": null
           },
@@ -8018,7 +8125,8 @@ export const series: Serie[] = [
             "higgsfield": {
               "videoSourceUrl": null,
               "duree": "10 s",
-              "format": "vertical 9:16"
+              "format": "vertical 9:16",
+              "source": null
             },
             "masterRapidoUrl": null
           },
@@ -8095,7 +8203,8 @@ export const series: Serie[] = [
             "higgsfield": {
               "videoSourceUrl": null,
               "duree": "10 s",
-              "format": "vertical 9:16"
+              "format": "vertical 9:16",
+              "source": null
             },
             "masterRapidoUrl": null
           },
@@ -8172,7 +8281,8 @@ export const series: Serie[] = [
             "higgsfield": {
               "videoSourceUrl": null,
               "duree": "10 s",
-              "format": "vertical 9:16"
+              "format": "vertical 9:16",
+              "source": null
             },
             "masterRapidoUrl": null
           },
@@ -8250,7 +8360,8 @@ export const series: Serie[] = [
             "higgsfield": {
               "videoSourceUrl": null,
               "duree": "10 s",
-              "format": "vertical 9:16"
+              "format": "vertical 9:16",
+              "source": null
             },
             "masterRapidoUrl": null
           },
@@ -8321,7 +8432,8 @@ export const series: Serie[] = [
             "higgsfield": {
               "videoSourceUrl": null,
               "duree": "10 s",
-              "format": "vertical 9:16"
+              "format": "vertical 9:16",
+              "source": null
             },
             "masterRapidoUrl": null
           },
@@ -8392,7 +8504,8 @@ export const series: Serie[] = [
             "higgsfield": {
               "videoSourceUrl": null,
               "duree": "10 s",
-              "format": "vertical 9:16"
+              "format": "vertical 9:16",
+              "source": null
             },
             "masterRapidoUrl": null
           },
@@ -8469,7 +8582,8 @@ export const series: Serie[] = [
             "higgsfield": {
               "videoSourceUrl": null,
               "duree": "10 s",
-              "format": "vertical 9:16"
+              "format": "vertical 9:16",
+              "source": null
             },
             "masterRapidoUrl": null
           },
@@ -8546,7 +8660,8 @@ export const series: Serie[] = [
             "higgsfield": {
               "videoSourceUrl": null,
               "duree": "10 s",
-              "format": "vertical 9:16"
+              "format": "vertical 9:16",
+              "source": null
             },
             "masterRapidoUrl": null
           },
@@ -8623,7 +8738,8 @@ export const series: Serie[] = [
             "higgsfield": {
               "videoSourceUrl": null,
               "duree": "10 s",
-              "format": "vertical 9:16"
+              "format": "vertical 9:16",
+              "source": null
             },
             "masterRapidoUrl": null
           },
@@ -8700,7 +8816,8 @@ export const series: Serie[] = [
             "higgsfield": {
               "videoSourceUrl": null,
               "duree": "10 s",
-              "format": "vertical 9:16"
+              "format": "vertical 9:16",
+              "source": null
             },
             "masterRapidoUrl": null
           },
@@ -8777,7 +8894,8 @@ export const series: Serie[] = [
             "higgsfield": {
               "videoSourceUrl": null,
               "duree": "10 s",
-              "format": "vertical 9:16"
+              "format": "vertical 9:16",
+              "source": null
             },
             "masterRapidoUrl": null
           },
@@ -8855,7 +8973,8 @@ export const series: Serie[] = [
             "higgsfield": {
               "videoSourceUrl": null,
               "duree": "10 s",
-              "format": "vertical 9:16"
+              "format": "vertical 9:16",
+              "source": null
             },
             "masterRapidoUrl": null
           },
@@ -8932,7 +9051,8 @@ export const series: Serie[] = [
             "higgsfield": {
               "videoSourceUrl": null,
               "duree": "10 s",
-              "format": "vertical 9:16"
+              "format": "vertical 9:16",
+              "source": null
             },
             "masterRapidoUrl": null
           },
@@ -9009,7 +9129,8 @@ export const series: Serie[] = [
             "higgsfield": {
               "videoSourceUrl": null,
               "duree": "10 s",
-              "format": "vertical 9:16"
+              "format": "vertical 9:16",
+              "source": null
             },
             "masterRapidoUrl": null
           },
@@ -9086,7 +9207,8 @@ export const series: Serie[] = [
             "higgsfield": {
               "videoSourceUrl": null,
               "duree": "10 s",
-              "format": "vertical 9:16"
+              "format": "vertical 9:16",
+              "source": null
             },
             "masterRapidoUrl": null
           },
@@ -9163,7 +9285,8 @@ export const series: Serie[] = [
             "higgsfield": {
               "videoSourceUrl": null,
               "duree": "10 s",
-              "format": "vertical 9:16"
+              "format": "vertical 9:16",
+              "source": null
             },
             "masterRapidoUrl": null
           },
@@ -9240,7 +9363,8 @@ export const series: Serie[] = [
             "higgsfield": {
               "videoSourceUrl": null,
               "duree": "10 s",
-              "format": "vertical 9:16"
+              "format": "vertical 9:16",
+              "source": null
             },
             "masterRapidoUrl": null
           },
@@ -9317,7 +9441,8 @@ export const series: Serie[] = [
             "higgsfield": {
               "videoSourceUrl": null,
               "duree": "10 s",
-              "format": "vertical 9:16"
+              "format": "vertical 9:16",
+              "source": null
             },
             "masterRapidoUrl": null
           },
@@ -9394,7 +9519,8 @@ export const series: Serie[] = [
             "higgsfield": {
               "videoSourceUrl": null,
               "duree": "10 s",
-              "format": "vertical 9:16"
+              "format": "vertical 9:16",
+              "source": null
             },
             "masterRapidoUrl": null
           }
@@ -9478,7 +9604,8 @@ export const series: Serie[] = [
             "higgsfield": {
               "videoSourceUrl": null,
               "duree": "10 s",
-              "format": "vertical 9:16"
+              "format": "vertical 9:16",
+              "source": null
             },
             "masterRapidoUrl": null
           },
@@ -9555,7 +9682,8 @@ export const series: Serie[] = [
             "higgsfield": {
               "videoSourceUrl": null,
               "duree": "10 s",
-              "format": "vertical 9:16"
+              "format": "vertical 9:16",
+              "source": null
             },
             "masterRapidoUrl": null
           },
@@ -9632,7 +9760,8 @@ export const series: Serie[] = [
             "higgsfield": {
               "videoSourceUrl": null,
               "duree": "10 s",
-              "format": "vertical 9:16"
+              "format": "vertical 9:16",
+              "source": null
             },
             "masterRapidoUrl": null
           },
@@ -9703,7 +9832,8 @@ export const series: Serie[] = [
             "higgsfield": {
               "videoSourceUrl": null,
               "duree": "10 s",
-              "format": "vertical 9:16"
+              "format": "vertical 9:16",
+              "source": null
             },
             "masterRapidoUrl": null
           },
@@ -9780,7 +9910,8 @@ export const series: Serie[] = [
             "higgsfield": {
               "videoSourceUrl": null,
               "duree": "10 s",
-              "format": "vertical 9:16"
+              "format": "vertical 9:16",
+              "source": null
             },
             "masterRapidoUrl": null
           },
@@ -9851,7 +9982,8 @@ export const series: Serie[] = [
             "higgsfield": {
               "videoSourceUrl": null,
               "duree": "10 s",
-              "format": "vertical 9:16"
+              "format": "vertical 9:16",
+              "source": null
             },
             "masterRapidoUrl": null
           },
@@ -9928,7 +10060,8 @@ export const series: Serie[] = [
             "higgsfield": {
               "videoSourceUrl": null,
               "duree": "10 s",
-              "format": "vertical 9:16"
+              "format": "vertical 9:16",
+              "source": null
             },
             "masterRapidoUrl": null
           },
@@ -10005,7 +10138,8 @@ export const series: Serie[] = [
             "higgsfield": {
               "videoSourceUrl": null,
               "duree": "10 s",
-              "format": "vertical 9:16"
+              "format": "vertical 9:16",
+              "source": null
             },
             "masterRapidoUrl": null
           },
@@ -10082,7 +10216,8 @@ export const series: Serie[] = [
             "higgsfield": {
               "videoSourceUrl": null,
               "duree": "10 s",
-              "format": "vertical 9:16"
+              "format": "vertical 9:16",
+              "source": null
             },
             "masterRapidoUrl": null
           },
@@ -10159,7 +10294,8 @@ export const series: Serie[] = [
             "higgsfield": {
               "videoSourceUrl": null,
               "duree": "10 s",
-              "format": "vertical 9:16"
+              "format": "vertical 9:16",
+              "source": null
             },
             "masterRapidoUrl": null
           },
@@ -10236,7 +10372,8 @@ export const series: Serie[] = [
             "higgsfield": {
               "videoSourceUrl": null,
               "duree": "10 s",
-              "format": "vertical 9:16"
+              "format": "vertical 9:16",
+              "source": null
             },
             "masterRapidoUrl": null
           },
@@ -10314,7 +10451,8 @@ export const series: Serie[] = [
             "higgsfield": {
               "videoSourceUrl": null,
               "duree": "10 s",
-              "format": "vertical 9:16"
+              "format": "vertical 9:16",
+              "source": null
             },
             "masterRapidoUrl": null
           },
@@ -10385,7 +10523,8 @@ export const series: Serie[] = [
             "higgsfield": {
               "videoSourceUrl": null,
               "duree": "10 s",
-              "format": "vertical 9:16"
+              "format": "vertical 9:16",
+              "source": null
             },
             "masterRapidoUrl": null
           },
@@ -10462,7 +10601,8 @@ export const series: Serie[] = [
             "higgsfield": {
               "videoSourceUrl": null,
               "duree": "10 s",
-              "format": "vertical 9:16"
+              "format": "vertical 9:16",
+              "source": null
             },
             "masterRapidoUrl": null
           },
@@ -10539,7 +10679,8 @@ export const series: Serie[] = [
             "higgsfield": {
               "videoSourceUrl": null,
               "duree": "10 s",
-              "format": "vertical 9:16"
+              "format": "vertical 9:16",
+              "source": null
             },
             "masterRapidoUrl": null
           },
@@ -10616,7 +10757,8 @@ export const series: Serie[] = [
             "higgsfield": {
               "videoSourceUrl": null,
               "duree": "10 s",
-              "format": "vertical 9:16"
+              "format": "vertical 9:16",
+              "source": null
             },
             "masterRapidoUrl": null
           },
@@ -10687,7 +10829,8 @@ export const series: Serie[] = [
             "higgsfield": {
               "videoSourceUrl": null,
               "duree": "10 s",
-              "format": "vertical 9:16"
+              "format": "vertical 9:16",
+              "source": null
             },
             "masterRapidoUrl": null
           },
@@ -10765,7 +10908,8 @@ export const series: Serie[] = [
             "higgsfield": {
               "videoSourceUrl": null,
               "duree": "10 s",
-              "format": "vertical 9:16"
+              "format": "vertical 9:16",
+              "source": null
             },
             "masterRapidoUrl": null
           },
@@ -10842,7 +10986,8 @@ export const series: Serie[] = [
             "higgsfield": {
               "videoSourceUrl": null,
               "duree": "10 s",
-              "format": "vertical 9:16"
+              "format": "vertical 9:16",
+              "source": null
             },
             "masterRapidoUrl": null
           },
@@ -10919,7 +11064,8 @@ export const series: Serie[] = [
             "higgsfield": {
               "videoSourceUrl": null,
               "duree": "10 s",
-              "format": "vertical 9:16"
+              "format": "vertical 9:16",
+              "source": null
             },
             "masterRapidoUrl": null
           },
@@ -10996,7 +11142,8 @@ export const series: Serie[] = [
             "higgsfield": {
               "videoSourceUrl": null,
               "duree": "10 s",
-              "format": "vertical 9:16"
+              "format": "vertical 9:16",
+              "source": null
             },
             "masterRapidoUrl": null
           },
@@ -11073,7 +11220,8 @@ export const series: Serie[] = [
             "higgsfield": {
               "videoSourceUrl": null,
               "duree": "10 s",
-              "format": "vertical 9:16"
+              "format": "vertical 9:16",
+              "source": null
             },
             "masterRapidoUrl": null
           },
@@ -11150,7 +11298,8 @@ export const series: Serie[] = [
             "higgsfield": {
               "videoSourceUrl": null,
               "duree": "10 s",
-              "format": "vertical 9:16"
+              "format": "vertical 9:16",
+              "source": null
             },
             "masterRapidoUrl": null
           },
@@ -11227,7 +11376,8 @@ export const series: Serie[] = [
             "higgsfield": {
               "videoSourceUrl": null,
               "duree": "10 s",
-              "format": "vertical 9:16"
+              "format": "vertical 9:16",
+              "source": null
             },
             "masterRapidoUrl": null
           },
@@ -11304,7 +11454,8 @@ export const series: Serie[] = [
             "higgsfield": {
               "videoSourceUrl": null,
               "duree": "10 s",
-              "format": "vertical 9:16"
+              "format": "vertical 9:16",
+              "source": null
             },
             "masterRapidoUrl": null
           },
@@ -11381,7 +11532,8 @@ export const series: Serie[] = [
             "higgsfield": {
               "videoSourceUrl": null,
               "duree": "10 s",
-              "format": "vertical 9:16"
+              "format": "vertical 9:16",
+              "source": null
             },
             "masterRapidoUrl": null
           },
@@ -11458,7 +11610,8 @@ export const series: Serie[] = [
             "higgsfield": {
               "videoSourceUrl": null,
               "duree": "10 s",
-              "format": "vertical 9:16"
+              "format": "vertical 9:16",
+              "source": null
             },
             "masterRapidoUrl": null
           },
@@ -11536,7 +11689,8 @@ export const series: Serie[] = [
             "higgsfield": {
               "videoSourceUrl": null,
               "duree": "10 s",
-              "format": "vertical 9:16"
+              "format": "vertical 9:16",
+              "source": null
             },
             "masterRapidoUrl": null
           },
@@ -11613,7 +11767,8 @@ export const series: Serie[] = [
             "higgsfield": {
               "videoSourceUrl": null,
               "duree": "10 s",
-              "format": "vertical 9:16"
+              "format": "vertical 9:16",
+              "source": null
             },
             "masterRapidoUrl": null
           },
@@ -11690,7 +11845,8 @@ export const series: Serie[] = [
             "higgsfield": {
               "videoSourceUrl": null,
               "duree": "10 s",
-              "format": "vertical 9:16"
+              "format": "vertical 9:16",
+              "source": null
             },
             "masterRapidoUrl": null
           }
