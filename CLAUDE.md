@@ -59,6 +59,12 @@ Le script range les épisodes **montés** par ordre de production, pas par numé
 un épisode bloqué n'immobilise pas un lot, il entrera dans un lot ultérieur. Les
 lots complets sont écrits dans `foodeatup-social/lots/lot-NN.md`.
 
+Avant d'envoyer un lot, il faut avoir versé dans la bibliothèque RapidoCMS, pour
+chacun des dix épisodes : **le master monté** et **le clip Higgsfield source**.
+`upload_file_tool` n'accepte qu'une URL publique — les clips passent donc d'abord
+par `dist/hooks/` du dépôt. C'est ce qui permet aux visiteurs de FoodEatUp Social
+de rejouer la création, et c'est ce qui met RapidoCMS en avant.
+
 Entre deux lots, on accumule. Si l'humain demande une vignette isolée, on lui
 rappelle le coût et on propose d'attendre le lot — sauf s'il insiste, auquel cas
 on l'envoie.

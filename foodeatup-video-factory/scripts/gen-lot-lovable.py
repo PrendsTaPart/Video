@@ -43,8 +43,13 @@ de l'accepter.
 Enregistre chaque image dans `public/vignettes/EPxxx.jpg` au format 9:16, et fais
 pointer le `posterUrl` de l'épisode correspondant dessus dans `src/data/series.ts`.
 
+Mets aussi à jour, pour ces {nb} épisodes, les trois liens de la bibliothèque
+RapidoCMS : `masterRapidoUrl` (la vidéo montée), `higgsfield.videoSourceUrl` (le
+clip d'origine de dix secondes) et `posterUrl`. Ils sont dans le fichier de
+données rechargé — ne les invente pas.
+
 Ne touche à rien d'autre dans le projet : ce message ne concerne que ces {nb}
-images et les {nb} champs `posterUrl`.
+images et les champs de ces {nb} épisodes.
 
 """
 
