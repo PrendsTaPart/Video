@@ -11,11 +11,11 @@
   "heygen_script": "Tu poses ta question en français : combien j'ai fait hier, qu'est-ce qui manque demain. PrediBot lit tes vraies données et te répond. Une seule interface, pas dix.",
   "etat": {
     "hook": "ok",
-    "avatar": "manquant",
-    "software": "manquant",
-    "vo": "manquant",
-    "build": "manquant",
+    "avatar": "ok",
+    "software": "ok",
+    "vo": "ok",
+    "build": "ok",
     "publie": "manquant"
   },
-  "notes": ""
+  "notes": "Master 37,5 s. Screencast PrediBot « Parler à PrediBot » recadré 8→18 s. atempo 1,096."
 }
