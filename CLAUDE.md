@@ -46,6 +46,23 @@ Ces champs sont générés par `foodeatup-video-factory/scripts/gen-publications
 qui écrit aussi les cinq publications de chaque épisode (Facebook, Instagram,
 TikTok, LinkedIn, YouTube). Il ne s'édite pas à la main.
 
+## FoodEatUp Social : tous les posts en ligne, publiés ou non
+
+Le site est la **vitrine** de la série, pas le tableau de bord de RapidoCMS. Les
+cent cinquante posts sont écrits d'avance : **ils s'affichent tous, en entier,
+dès qu'ils sont écrits** — même si RapidoCMS ne les a pas encore envoyés sur
+Facebook, Instagram, LinkedIn, TikTok ou YouTube.
+
+Le statut réseau reste visible sur chaque post : c'est une information, pas un
+verrou. Ne jamais griser ni masquer le contenu d'un post pour cause de
+non-publication. Ce qui reste grisé, ce sont les vignettes d'épisodes **non
+produits** — là, il n'y a réellement rien à montrer.
+
+Le post s'affiche dans la maquette de son réseau, pas dans un cadre de code : on
+doit voir ce que verra le client. Deux interdits dans cette maquette — **aucun
+compteur de réactions inventé**, et **un seul bouton de copie, discret**, qui
+prend le texte entier. Le détail (mots-clés, format, créneau) se replie.
+
 ## Lovable : jamais un tour par épisode, un tour par lot de 10
 
 Un tour Lovable coûte la même chose qu'il traite un épisode ou dix. Envoyer les
