@@ -1,0 +1,5941 @@
+// FoodEatUp Social — données de la grille.
+//
+// Fichier GÉNÉRÉ par l'usine à vidéos (foodeatup-video-factory). Ne pas éditer
+// à la main : la prochaine régénération écraserait la correction. Pour changer
+// un texte d'épisode, il faut le changer dans content/episodes.json côté usine.
+//
+// Trois niveaux — série > saison > épisode — pour qu'une nouvelle série se
+// résume à un objet de plus dans `series`, sans toucher à une route.
+
+export type Statut = "publie" | "monte" | "a_produire" | "bloque";
+export type StatutReseau = "publie" | "planifie" | "brouillon" | "a_venir";
+export type Reseau = "facebook" | "instagram" | "tiktok" | "linkedin";
+
+export type Diffusion = {
+  statut: StatutReseau;
+  date: string | null;
+  compte: string;
+  url?: string;
+};
+
+export type Episode = {
+  id: string;
+  numero: number;
+  saison: number;
+  slug: string;
+  titre: string;
+  module: string;
+  chapitre: string;
+  accroche: string;
+  punchline: string;
+  resume: string;
+  statut: Statut;
+  blocage?: string;
+  dureeSecondes: number | null;
+  videoUrl: string | null;
+  tutorielUrl: string | null;
+  reseaux: Record<Reseau, Diffusion>;
+};
+
+export type Saison = {
+  numero: number;
+  titre: string;
+  pitch: string;
+  episodes: Episode[];
+};
+
+export type Serie = {
+  slug: string;
+  nom: string;
+  pitch: string;
+  format: string;
+  statut: "en-cours" | "terminee" | "a-venir";
+  premiereDiffusion: string;
+  saisons: Saison[];
+};
+
+export type ReseauInfo = {
+  slug: Reseau;
+  nom: string;
+  compte: string;
+  url: string;
+  couleur: string;
+};
+
+export const marque = {
+  "nom": "FoodEatUp Social",
+  "baseline": "Toutes nos vidéos sociales, saison après saison.",
+  "site": "foodeatup.com",
+  "telephone": "06 14 18 92 25",
+  "whatsapp": "https://wa.me/33614189225"
+};
+
+export const reseaux: ReseauInfo[] = [
+  {
+    "slug": "facebook",
+    "nom": "Facebook",
+    "compte": "FoodEatUp",
+    "url": "https://www.facebook.com/profile.php?id=201499969703551",
+    "couleur": "#1877F2"
+  },
+  {
+    "slug": "instagram",
+    "nom": "Instagram",
+    "compte": "foodeatup.cocuisinage",
+    "url": "https://www.instagram.com/foodeatup.cocuisinage/",
+    "couleur": "#E1306C"
+  },
+  {
+    "slug": "tiktok",
+    "nom": "TikTok",
+    "compte": "foodeatup",
+    "url": "https://www.tiktok.com/@foodeatup",
+    "couleur": "#000000"
+  },
+  {
+    "slug": "linkedin",
+    "nom": "LinkedIn",
+    "compte": "FoodEatUp",
+    "url": "https://www.linkedin.com/company/foodeatup/",
+    "couleur": "#0A66C2"
+  }
+];
+
+export const series: Serie[] = [
+  {
+    "slug": "le-coup-de-feu",
+    "nom": "Le Coup de Feu",
+    "pitch": "Trente secondes : une scène de restaurant qui part en vrille, puis la fonctionnalité FoodEatUp qui l'aurait évitée.",
+    "format": "Vertical 1080×1920 · 37,5 s · 1 épisode par jour",
+    "statut": "en-cours",
+    "premiereDiffusion": "2026-08-11",
+    "saisons": [
+      {
+        "numero": 1,
+        "titre": "Le service, sans les cris",
+        "pitch": "Salle, cuisine, commandes : ce qui se joue pendant le coup de feu.",
+        "episodes": [
+          {
+            "id": "EP001",
+            "numero": 1,
+            "saison": 1,
+            "slug": "ep001-le-chien-qui-te-regarde",
+            "titre": "Le chien qui te regarde",
+            "module": "Service",
+            "chapitre": "1 - Commandes multi-canaux",
+            "accroche": "Lui aussi attend ta commande.",
+            "punchline": "Sauf que lui, il est patient. Tes clients, non.",
+            "resume": "Ici, toutes tes commandes arrivent au même endroit : la salle, le téléphone, le site, la livraison. Une seule file, dans l'ordre d'arrivée. Plus personne n'attend parce qu'on a oublié un ticket.",
+            "statut": "publie",
+            "dureeSecondes": 37.5,
+            "videoUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/tiktok/EP001.mp4",
+            "tutorielUrl": "https://drive.google.com/file/d/10GjJltEF3utZtfmwHR0qLZ8CTQr5_ioC/view",
+            "reseaux": {
+              "facebook": {
+                "statut": "planifie",
+                "date": "2026-08-11",
+                "compte": "FoodEatUp"
+              },
+              "instagram": {
+                "statut": "brouillon",
+                "date": null,
+                "compte": "foodeatup.cocuisinage"
+              },
+              "tiktok": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "foodeatup"
+              },
+              "linkedin": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "FoodEatUp"
+              }
+            }
+          },
+          {
+            "id": "EP002",
+            "numero": 2,
+            "saison": 1,
+            "slug": "ep002-la-chute-en-skateboard",
+            "titre": "La chute en skateboard",
+            "module": "Service",
+            "chapitre": "3 - Envoi direct cuisine",
+            "accroche": "Ton service du samedi soir.",
+            "punchline": "Ça finit toujours par terre.",
+            "resume": "Tu prends la commande à table, elle part en cuisine dans la seconde. Pas de carnet, pas d'aller-retour, pas de ticket perdu entre la salle et le pass.",
+            "statut": "publie",
+            "dureeSecondes": 37.5,
+            "videoUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/tiktok/EP002.mp4",
+            "tutorielUrl": "https://drive.google.com/file/d/1PucAO7TE28El_TCLBrAOjct2VJS4mZu2/view",
+            "reseaux": {
+              "facebook": {
+                "statut": "planifie",
+                "date": "2026-08-12",
+                "compte": "FoodEatUp"
+              },
+              "instagram": {
+                "statut": "brouillon",
+                "date": null,
+                "compte": "foodeatup.cocuisinage"
+              },
+              "tiktok": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "foodeatup"
+              },
+              "linkedin": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "FoodEatUp"
+              }
+            }
+          },
+          {
+            "id": "EP003",
+            "numero": 3,
+            "saison": 1,
+            "slug": "ep003-le-plat-dans-la-piscine",
+            "titre": "Le plat dans la piscine",
+            "module": "StockVision",
+            "chapitre": "1 - Ma carte",
+            "accroche": "Ta marge, en ce moment.",
+            "punchline": "Elle coule. On va la repêcher.",
+            "resume": "Chaque plat de ta carte a son coût matière calculé depuis tes ingrédients. Tu vois ta marge réelle, plat par plat, avant même de fixer ton prix.",
+            "statut": "publie",
+            "dureeSecondes": 37.5,
+            "videoUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/tiktok/EP003.mp4",
+            "tutorielUrl": "https://drive.google.com/file/d/1yqhyPMj9uBq1awmqTwUhisuBJBpY5kt-/view",
+            "reseaux": {
+              "facebook": {
+                "statut": "planifie",
+                "date": "2026-08-13",
+                "compte": "FoodEatUp"
+              },
+              "instagram": {
+                "statut": "brouillon",
+                "date": null,
+                "compte": "foodeatup.cocuisinage"
+              },
+              "tiktok": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "foodeatup"
+              },
+              "linkedin": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "FoodEatUp"
+              }
+            }
+          },
+          {
+            "id": "EP004",
+            "numero": 4,
+            "saison": 1,
+            "slug": "ep004-le-chat-sur-la-caisse",
+            "titre": "Le chat sur la caisse",
+            "module": "Caisse POS",
+            "chapitre": "1 - Configurer sa caisse",
+            "accroche": "Ton nouveau responsable de caisse.",
+            "punchline": "Il gère mieux que ton logiciel actuel.",
+            "resume": "Ta caisse se configure en quelques minutes : TPE, ticket, moyens de paiement. Elle est reliée à ta carte et à ta cuisine, pas posée à côté.",
+            "statut": "bloque",
+            "dureeSecondes": null,
+            "videoUrl": null,
+            "tutorielUrl": null,
+            "reseaux": {
+              "facebook": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "FoodEatUp"
+              },
+              "instagram": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "foodeatup.cocuisinage"
+              },
+              "tiktok": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "foodeatup"
+              },
+              "linkedin": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "FoodEatUp"
+              }
+            },
+            "blocage": "Le chapitre correspondant n'a pas encore de vidéo dans le Drive interne."
+          },
+          {
+            "id": "EP005",
+            "numero": 5,
+            "saison": 1,
+            "slug": "ep005-le-serveur-qui-glisse",
+            "titre": "Le serveur qui glisse",
+            "module": "Configuration",
+            "chapitre": "vue d'ensemble",
+            "accroche": "Trois logiciels. Deux mains.",
+            "punchline": "Un seul outil, ça change tout.",
+            "resume": "Un seul paramétrage : ta carte, tes zones, tes tables, ta TVA. Tout le reste s'appuie dessus. Tu ne ressaisis jamais deux fois la même information.",
+            "statut": "publie",
+            "dureeSecondes": 37.5,
+            "videoUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/tiktok/EP005.mp4",
+            "tutorielUrl": "https://drive.google.com/file/d/1hp7mZd-tQliPUemhyIKHWMl9xUgKHwoq/view",
+            "reseaux": {
+              "facebook": {
+                "statut": "planifie",
+                "date": "2026-08-14",
+                "compte": "FoodEatUp"
+              },
+              "instagram": {
+                "statut": "brouillon",
+                "date": null,
+                "compte": "foodeatup.cocuisinage"
+              },
+              "tiktok": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "foodeatup"
+              },
+              "linkedin": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "FoodEatUp"
+              }
+            }
+          },
+          {
+            "id": "EP006",
+            "numero": 6,
+            "saison": 1,
+            "slug": "ep006-la-pizza-frisbee",
+            "titre": "La pizza frisbee",
+            "module": "StockVision",
+            "chapitre": "17 - Ajouter et modifier un mouvement",
+            "accroche": "Ta pizza part plus vite que ton stock.",
+            "punchline": "Enfin… c'était avant.",
+            "resume": "Tu envoies un plat, le stock bouge tout seul. Chaque sortie est tracée, avec la quantité et l'heure. Tu sais ce qu'il te reste sans compter les cartons.",
+            "statut": "publie",
+            "dureeSecondes": 37.5,
+            "videoUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/tiktok/EP006.mp4",
+            "tutorielUrl": "https://drive.google.com/file/d/1xxxr8zsy8ZvK7NCizf1F9q8W3u48Npgt/view",
+            "reseaux": {
+              "facebook": {
+                "statut": "planifie",
+                "date": "2026-08-15",
+                "compte": "FoodEatUp"
+              },
+              "instagram": {
+                "statut": "brouillon",
+                "date": null,
+                "compte": "foodeatup.cocuisinage"
+              },
+              "tiktok": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "foodeatup"
+              },
+              "linkedin": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "FoodEatUp"
+              }
+            }
+          },
+          {
+            "id": "EP007",
+            "numero": 7,
+            "saison": 1,
+            "slug": "ep007-la-mamie-qui-goute",
+            "titre": "La mamie qui goûte",
+            "module": "Marketing",
+            "chapitre": "3 - Répondre aux avis",
+            "accroche": "Le seul avis client qui compte.",
+            "punchline": "Les quatre cents autres, on s'en occupe.",
+            "resume": "Tes avis Google remontent ici. Tu réponds depuis FoodEatUp, l'IA te propose une réponse dans ton ton, tu valides. Le client voit que tu l'as lu.",
+            "statut": "publie",
+            "dureeSecondes": 37.5,
+            "videoUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/tiktok/EP007.mp4",
+            "tutorielUrl": "https://drive.google.com/file/d/1CMKvqIypwbr8KHTj0dCs_w06sjkaQKV4/view",
+            "reseaux": {
+              "facebook": {
+                "statut": "planifie",
+                "date": "2026-08-16",
+                "compte": "FoodEatUp"
+              },
+              "instagram": {
+                "statut": "brouillon",
+                "date": null,
+                "compte": "foodeatup.cocuisinage"
+              },
+              "tiktok": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "foodeatup"
+              },
+              "linkedin": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "FoodEatUp"
+              }
+            }
+          },
+          {
+            "id": "EP008",
+            "numero": 8,
+            "saison": 1,
+            "slug": "ep008-la-pile-de-tickets",
+            "titre": "La pile de tickets",
+            "module": "Comptabilité",
+            "chapitre": "facturation",
+            "accroche": "Fin de mois. Encore.",
+            "punchline": "Et si la compta se faisait toute seule ?",
+            "resume": "Chaque commande génère sa facture. Tu retrouves le facturé, l'encaissé et les impayés dans le même écran. La fin de mois devient une lecture, pas une reconstitution.",
+            "statut": "a_produire",
+            "dureeSecondes": null,
+            "videoUrl": null,
+            "tutorielUrl": "https://drive.google.com/file/d/1bN_o6_HYz9Za1kGyIst6INWrJJz9MagE/view",
+            "reseaux": {
+              "facebook": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "FoodEatUp"
+              },
+              "instagram": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "foodeatup.cocuisinage"
+              },
+              "tiktok": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "foodeatup"
+              },
+              "linkedin": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "FoodEatUp"
+              }
+            }
+          },
+          {
+            "id": "EP009",
+            "numero": 9,
+            "saison": 1,
+            "slug": "ep009-le-pigeon-voleur",
+            "titre": "Le pigeon voleur",
+            "module": "Caisse POS",
+            "chapitre": "7 - Suivre les écarts de caisse",
+            "accroche": "Il y a toujours quelqu'un qui prend ta marge.",
+            "punchline": "Ton abonnement logiciel, par exemple.",
+            "resume": "À chaque clôture, l'écart entre le théorique et le compté s'affiche. Tu vois quel service dérape et de combien. Ce qui se mesure s'arrête.",
+            "statut": "bloque",
+            "dureeSecondes": null,
+            "videoUrl": null,
+            "tutorielUrl": null,
+            "reseaux": {
+              "facebook": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "FoodEatUp"
+              },
+              "instagram": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "foodeatup.cocuisinage"
+              },
+              "tiktok": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "foodeatup"
+              },
+              "linkedin": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "FoodEatUp"
+              }
+            },
+            "blocage": "Le chapitre correspondant n'a pas encore de vidéo dans le Drive interne."
+          },
+          {
+            "id": "EP010",
+            "numero": 10,
+            "saison": 1,
+            "slug": "ep010-le-flambage-rate",
+            "titre": "Le flambage raté",
+            "module": "PrediBot",
+            "chapitre": "1 - Lire ses prévisions",
+            "accroche": "Toi, devant ta facture logicielle.",
+            "punchline": "Mille euros par mois. Pour dix outils qui ne se parlent pas.",
+            "resume": "Un écran, le matin : ton chiffre d'affaires prévu, ta fréquentation, tes points de tension. C'est ton point du jour, sans ouvrir dix onglets.",
+            "statut": "publie",
+            "dureeSecondes": 37.5,
+            "videoUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/tiktok/EP010.mp4",
+            "tutorielUrl": "https://drive.google.com/file/d/1MWkfZ-OZ_qv2z6QD9VPwabO5XnGd5UaB/view",
+            "reseaux": {
+              "facebook": {
+                "statut": "planifie",
+                "date": "2026-08-17",
+                "compte": "FoodEatUp"
+              },
+              "instagram": {
+                "statut": "brouillon",
+                "date": null,
+                "compte": "foodeatup.cocuisinage"
+              },
+              "tiktok": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "foodeatup"
+              },
+              "linkedin": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "FoodEatUp"
+              }
+            }
+          },
+          {
+            "id": "EP011",
+            "numero": 11,
+            "saison": 1,
+            "slug": "ep011-le-livreur-et-le-dos-d-ane",
+            "titre": "Le livreur et le dos d'âne",
+            "module": "HubRise",
+            "chapitre": "1 - Connecter son HubRise",
+            "accroche": "Ta livraison sans intégration.",
+            "punchline": "Avec, tout arrive à bon port.",
+            "resume": "Tu connectes HubRise une fois. Tes plateformes de livraison envoient leurs commandes directement dans FoodEatUp. Plus de tablette à surveiller dans un coin.",
+            "statut": "bloque",
+            "dureeSecondes": null,
+            "videoUrl": null,
+            "tutorielUrl": null,
+            "reseaux": {
+              "facebook": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "FoodEatUp"
+              },
+              "instagram": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "foodeatup.cocuisinage"
+              },
+              "tiktok": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "foodeatup"
+              },
+              "linkedin": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "FoodEatUp"
+              }
+            },
+            "blocage": "Le chapitre correspondant n'a pas encore de vidéo dans le Drive interne."
+          },
+          {
+            "id": "EP012",
+            "numero": 12,
+            "saison": 1,
+            "slug": "ep012-le-client-qui-attend",
+            "titre": "Le client qui attend",
+            "module": "KDS",
+            "chapitre": "3 - Gérer le KDS en direct",
+            "accroche": "Temps d'attente : « on regarde ».",
+            "punchline": "Avec un KDS, il regarde son plat arriver.",
+            "resume": "Le KDS affiche chaque plat, son poste et son temps d'attente. Le client ne regarde plus la cuisine : il regarde son plat arriver.",
+            "statut": "bloque",
+            "dureeSecondes": null,
+            "videoUrl": null,
+            "tutorielUrl": null,
+            "reseaux": {
+              "facebook": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "FoodEatUp"
+              },
+              "instagram": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "foodeatup.cocuisinage"
+              },
+              "tiktok": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "foodeatup"
+              },
+              "linkedin": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "FoodEatUp"
+              }
+            },
+            "blocage": "Le chapitre correspondant n'a pas encore de vidéo dans le Drive interne."
+          },
+          {
+            "id": "EP013",
+            "numero": 13,
+            "saison": 1,
+            "slug": "ep013-l-avalanche-de-notifications",
+            "titre": "L'avalanche de notifications",
+            "module": "PrediBot",
+            "chapitre": "3 - Parler à PrediBot",
+            "accroche": "Dix logiciels. Dix notifications.",
+            "punchline": "Un seul, ça suffisait.",
+            "resume": "Tu poses ta question en français : combien j'ai fait hier, qu'est-ce qui manque demain. PrediBot lit tes vraies données et te répond. Une seule interface, pas dix.",
+            "statut": "a_produire",
+            "dureeSecondes": null,
+            "videoUrl": null,
+            "tutorielUrl": "https://drive.google.com/file/d/1nuFxXTOCXeHKtSbJBScCH0O3khJxTiB4/view",
+            "reseaux": {
+              "facebook": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "FoodEatUp"
+              },
+              "instagram": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "foodeatup.cocuisinage"
+              },
+              "tiktok": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "foodeatup"
+              },
+              "linkedin": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "FoodEatUp"
+              }
+            }
+          },
+          {
+            "id": "EP014",
+            "numero": 14,
+            "saison": 1,
+            "slug": "ep014-le-raton-laveur",
+            "titre": "Le raton laveur",
+            "module": "StockVision",
+            "chapitre": "16 - Mouvements de stock",
+            "accroche": "Ton gaspillage alimentaire.",
+            "punchline": "Lui au moins, il sait ce qu'il y a en stock.",
+            "resume": "Chaque entrée, chaque sortie, chaque perte est enregistrée. Tu vois ce qui part sans être vendu. Le gaspillage devient une ligne, donc un problème réglable.",
+            "statut": "a_produire",
+            "dureeSecondes": null,
+            "videoUrl": null,
+            "tutorielUrl": "https://drive.google.com/file/d/124mIM7NudoQy5wun_rlSZ6MCrJ2wNykL/view",
+            "reseaux": {
+              "facebook": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "FoodEatUp"
+              },
+              "instagram": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "foodeatup.cocuisinage"
+              },
+              "tiktok": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "foodeatup"
+              },
+              "linkedin": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "FoodEatUp"
+              }
+            }
+          },
+          {
+            "id": "EP015",
+            "numero": 15,
+            "saison": 1,
+            "slug": "ep015-la-tour-d-assiettes",
+            "titre": "La tour d'assiettes",
+            "module": "Configuration",
+            "chapitre": "référentiels",
+            "accroche": "Ta gestion actuelle.",
+            "punchline": "Une pièce bouge, tout s'écroule.",
+            "resume": "Tes catégories, ta TVA, tes zones, tes équipements : tout est posé une fois, proprement. Quand une pièce bouge, le reste ne s'écroule pas.",
+            "statut": "a_produire",
+            "dureeSecondes": null,
+            "videoUrl": null,
+            "tutorielUrl": "https://drive.google.com/file/d/17ZDwHrTaTvQmiCmTYBwZnnJo_OLrXzyo/view",
+            "reseaux": {
+              "facebook": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "FoodEatUp"
+              },
+              "instagram": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "foodeatup.cocuisinage"
+              },
+              "tiktok": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "foodeatup"
+              },
+              "linkedin": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "FoodEatUp"
+              }
+            }
+          },
+          {
+            "id": "EP016",
+            "numero": 16,
+            "saison": 1,
+            "slug": "ep016-le-geyser-a-cafe",
+            "titre": "Le geyser à café",
+            "module": "Comptabilité",
+            "chapitre": "dépenses",
+            "accroche": "Tes coûts, ce trimestre.",
+            "punchline": "On va refermer le robinet.",
+            "resume": "Tu enregistres tes achats fournisseurs avec le détail des lignes. Tes dépenses du mois s'additionnent toutes seules, en face de ton chiffre d'affaires.",
+            "statut": "a_produire",
+            "dureeSecondes": null,
+            "videoUrl": null,
+            "tutorielUrl": "https://drive.google.com/file/d/13gsBIjozDhLKJBi0uOwqIE3ShA_V7d3R/view",
+            "reseaux": {
+              "facebook": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "FoodEatUp"
+              },
+              "instagram": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "foodeatup.cocuisinage"
+              },
+              "tiktok": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "foodeatup"
+              },
+              "linkedin": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "FoodEatUp"
+              }
+            }
+          },
+          {
+            "id": "EP017",
+            "numero": 17,
+            "saison": 1,
+            "slug": "ep017-le-ninja-de-la-frite",
+            "titre": "Le ninja de la frite",
+            "module": "StockVision",
+            "chapitre": "19 - Création d'un rapport",
+            "accroche": "Personne ne touche à ta dernière frite.",
+            "punchline": "Ni à ta marge.",
+            "resume": "Tu génères ton rapport par module en un clic : ventes, stock, production. L'historique est gardé. Tu compares ce mois-ci avec le mois dernier, pas avec ton souvenir.",
+            "statut": "a_produire",
+            "dureeSecondes": null,
+            "videoUrl": null,
+            "tutorielUrl": "https://drive.google.com/file/d/1yOgpFr18I9GyIkFegEj1MJNU_ksMtRLy/view",
+            "reseaux": {
+              "facebook": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "FoodEatUp"
+              },
+              "instagram": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "foodeatup.cocuisinage"
+              },
+              "tiktok": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "foodeatup"
+              },
+              "linkedin": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "FoodEatUp"
+              }
+            }
+          },
+          {
+            "id": "EP018",
+            "numero": 18,
+            "saison": 1,
+            "slug": "ep018-le-serveur-baywatch",
+            "titre": "Le serveur Baywatch",
+            "module": "Service",
+            "chapitre": "2 - Site, vocal et QR code",
+            "accroche": "Le rush de vingt heures.",
+            "punchline": "Sauve ton service, pas ton dos.",
+            "resume": "Pendant le rush, tes clients commandent seuls : par QR à table, par le site, par l'agent vocal. Ton équipe sert, elle ne court plus.",
+            "statut": "a_produire",
+            "dureeSecondes": null,
+            "videoUrl": null,
+            "tutorielUrl": "https://drive.google.com/file/d/1jSK_Zv7MtSgTqwGaV7WeffGjiZ0g4MWk/view",
+            "reseaux": {
+              "facebook": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "FoodEatUp"
+              },
+              "instagram": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "foodeatup.cocuisinage"
+              },
+              "tiktok": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "foodeatup"
+              },
+              "linkedin": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "FoodEatUp"
+              }
+            }
+          },
+          {
+            "id": "EP019",
+            "numero": 19,
+            "saison": 1,
+            "slug": "ep019-le-burger-qui-rebondit",
+            "titre": "Le burger qui rebondit",
+            "module": "StockVision",
+            "chapitre": "3 - Prédictions des commandes",
+            "accroche": "Ton chiffre d'affaires, sans outil.",
+            "punchline": "Ça rebondit rarement tout seul.",
+            "resume": "FoodEatUp regarde tes ventes passées et te dit quoi produire demain. Ton chiffre d'affaires ne dépend plus de ton intuition du lundi matin.",
+            "statut": "a_produire",
+            "dureeSecondes": null,
+            "videoUrl": null,
+            "tutorielUrl": "https://drive.google.com/file/d/14GntP3F4hhloVyYBDJrPCj55Ny1gvDx9/view",
+            "reseaux": {
+              "facebook": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "FoodEatUp"
+              },
+              "instagram": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "foodeatup.cocuisinage"
+              },
+              "tiktok": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "foodeatup"
+              },
+              "linkedin": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "FoodEatUp"
+              }
+            }
+          },
+          {
+            "id": "EP020",
+            "numero": 20,
+            "saison": 1,
+            "slug": "ep020-le-chien-qui-a-reserve",
+            "titre": "Le chien qui a réservé",
+            "module": "Réservation",
+            "chapitre": "2 - Ajouter une réservation",
+            "accroche": "Lui, il a réservé.",
+            "punchline": "Tes vrais clients aussi devraient pouvoir.",
+            "resume": "Tu ajoutes une réservation en dix secondes, la table libre est proposée automatiquement. Et tes clients peuvent le faire eux-mêmes, depuis ton site.",
+            "statut": "a_produire",
+            "dureeSecondes": null,
+            "videoUrl": null,
+            "tutorielUrl": "https://drive.google.com/file/d/1ITy-Ia2Q3FSeKSRRd4bWEFw4eDlzFZ6q/view",
+            "reseaux": {
+              "facebook": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "FoodEatUp"
+              },
+              "instagram": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "foodeatup.cocuisinage"
+              },
+              "tiktok": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "foodeatup"
+              },
+              "linkedin": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "FoodEatUp"
+              }
+            }
+          },
+          {
+            "id": "EP021",
+            "numero": 21,
+            "saison": 1,
+            "slug": "ep021-chef-contre-imprimante",
+            "titre": "Chef contre imprimante",
+            "module": "KDS",
+            "chapitre": "1 - Créer tes postes KDS",
+            "accroche": "Le vrai ennemi du service.",
+            "punchline": "Un KDS, et le combat s'arrête.",
+            "resume": "Tu crées tes postes : chaud, froid, dessert. Chaque plat part au bon écran. Plus d'imprimante à secouer au milieu du service.",
+            "statut": "a_produire",
+            "dureeSecondes": null,
+            "videoUrl": null,
+            "tutorielUrl": "https://drive.google.com/file/d/1Q25eSBcjIuq1XkHnJkFN_QJyK23o1GVg/view",
+            "reseaux": {
+              "facebook": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "FoodEatUp"
+              },
+              "instagram": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "foodeatup.cocuisinage"
+              },
+              "tiktok": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "foodeatup"
+              },
+              "linkedin": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "FoodEatUp"
+              }
+            }
+          },
+          {
+            "id": "EP022",
+            "numero": 22,
+            "saison": 1,
+            "slug": "ep022-la-facture-qui-fait-pleurer",
+            "titre": "La facture qui fait pleurer",
+            "module": "PrediBot",
+            "chapitre": "2 - Marketplace de prompts",
+            "accroche": "Mille euros par mois.",
+            "punchline": "Pour dix logiciels qui ne se parlent même pas.",
+            "resume": "Tout est déjà là : caisse, stock, planning, marketing, HACCP. Un seul abonnement, une seule base de données. Tes outils arrêtent de s'ignorer.",
+            "statut": "a_produire",
+            "dureeSecondes": null,
+            "videoUrl": null,
+            "tutorielUrl": "https://drive.google.com/file/d/16kN9JwGuVugkCtjQ93OObZ2tAlmsbgZl/view",
+            "reseaux": {
+              "facebook": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "FoodEatUp"
+              },
+              "instagram": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "foodeatup.cocuisinage"
+              },
+              "tiktok": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "foodeatup"
+              },
+              "linkedin": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "FoodEatUp"
+              }
+            }
+          },
+          {
+            "id": "EP023",
+            "numero": 23,
+            "saison": 1,
+            "slug": "ep023-l-aspirateur-robot",
+            "titre": "L'aspirateur robot",
+            "module": "Marketing",
+            "chapitre": "24 - Calendrier IA avec Iris",
+            "accroche": "Ton automatisation actuelle.",
+            "punchline": "Automatiser, oui. Mais bien.",
+            "resume": "Iris regarde ton exploitation et te propose quoi publier, et pourquoi. Tu valides ou tu refuses. L'automatisation te sert, elle ne t'échappe pas.",
+            "statut": "a_produire",
+            "dureeSecondes": null,
+            "videoUrl": null,
+            "tutorielUrl": "https://drive.google.com/file/d/1NaTIjzXl8NU1dwX3Xrxl0DrhKIbVy34F/view",
+            "reseaux": {
+              "facebook": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "FoodEatUp"
+              },
+              "instagram": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "foodeatup.cocuisinage"
+              },
+              "tiktok": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "foodeatup"
+              },
+              "linkedin": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "FoodEatUp"
+              }
+            }
+          },
+          {
+            "id": "EP024",
+            "numero": 24,
+            "saison": 1,
+            "slug": "ep024-la-mouette-braqueuse",
+            "titre": "La mouette braqueuse",
+            "module": "Mon Site",
+            "chapitre": "5 - Créer un site par IA",
+            "accroche": "Encore une commission en moins.",
+            "punchline": "Récupère tes commandes en direct.",
+            "resume": "Ton site de commande est créé par l'IA depuis ta carte. Tes clients commandent en direct, chez toi. Zéro commission sur ces commandes-là.",
+            "statut": "a_produire",
+            "dureeSecondes": null,
+            "videoUrl": null,
+            "tutorielUrl": "https://drive.google.com/file/d/1MEMdJJMq2MhQ6H-dU5Nb5ls8ifoqM3U4/view",
+            "reseaux": {
+              "facebook": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "FoodEatUp"
+              },
+              "instagram": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "foodeatup.cocuisinage"
+              },
+              "tiktok": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "foodeatup"
+              },
+              "linkedin": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "FoodEatUp"
+              }
+            }
+          },
+          {
+            "id": "EP025",
+            "numero": 25,
+            "saison": 1,
+            "slug": "ep025-le-mixeur-sans-couvercle",
+            "titre": "Le mixeur sans couvercle",
+            "module": "Marketing",
+            "chapitre": "6 - Campagne 100 % IA",
+            "accroche": "Quand tu lances une promo sans données.",
+            "punchline": "Ça éclabousse. Et rarement toi.",
+            "resume": "Tu ne lances plus une promo au hasard. FoodEatUp te propose la campagne depuis tes vraies données clients : qui cibler, avec quelle offre, quel jour.",
+            "statut": "a_produire",
+            "dureeSecondes": null,
+            "videoUrl": null,
+            "tutorielUrl": "https://drive.google.com/file/d/1awOr8pckNt0S-V2iyhlnBSS171wM0fkF/view",
+            "reseaux": {
+              "facebook": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "FoodEatUp"
+              },
+              "instagram": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "foodeatup.cocuisinage"
+              },
+              "tiktok": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "foodeatup"
+              },
+              "linkedin": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "FoodEatUp"
+              }
+            }
+          },
+          {
+            "id": "EP026",
+            "numero": 26,
+            "saison": 1,
+            "slug": "ep026-le-ballon-qui-explose",
+            "titre": "Le ballon qui explose",
+            "module": "StockVision",
+            "chapitre": "5 - Envoyer sa liste de courses au fournisseur",
+            "accroche": "Ton stock avant le week-end.",
+            "punchline": "Prévois, au lieu de subir.",
+            "resume": "Ta liste de courses se construit depuis ta production prévue. Tu l'envoies au fournisseur depuis l'écran. Le week-end se prépare le mercredi.",
+            "statut": "a_produire",
+            "dureeSecondes": null,
+            "videoUrl": null,
+            "tutorielUrl": "https://drive.google.com/file/d/1biVi8MCCRbLYAEZHfNd-Gw-kAcW8jhiL/view",
+            "reseaux": {
+              "facebook": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "FoodEatUp"
+              },
+              "instagram": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "foodeatup.cocuisinage"
+              },
+              "tiktok": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "foodeatup"
+              },
+              "linkedin": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "FoodEatUp"
+              }
+            }
+          },
+          {
+            "id": "EP027",
+            "numero": 27,
+            "saison": 1,
+            "slug": "ep027-le-chat-et-le-verre",
+            "titre": "Le chat et le verre",
+            "module": "Caisse POS",
+            "chapitre": "6 - Clôturer sa caisse, le Z",
+            "accroche": "Ta trésorerie, chaque lundi.",
+            "punchline": "Il suffit d'un truc mal placé.",
+            "resume": "Ton Z de caisse en un bouton : le compté, le théorique, l'écart, les moyens de paiement. Tu sais où tu en es tous les lundis matin.",
+            "statut": "bloque",
+            "dureeSecondes": null,
+            "videoUrl": null,
+            "tutorielUrl": null,
+            "reseaux": {
+              "facebook": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "FoodEatUp"
+              },
+              "instagram": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "foodeatup.cocuisinage"
+              },
+              "tiktok": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "foodeatup"
+              },
+              "linkedin": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "FoodEatUp"
+              }
+            },
+            "blocage": "Le chapitre correspondant n'a pas encore de vidéo dans le Drive interne."
+          },
+          {
+            "id": "EP028",
+            "numero": 28,
+            "saison": 1,
+            "slug": "ep028-le-tapis-a-sushis-fou",
+            "titre": "Le tapis à sushis fou",
+            "module": "HubRise",
+            "chapitre": "4 - Centraliser les commandes",
+            "accroche": "Tes commandes en ligne, un vendredi.",
+            "punchline": "Tout arrive. Nulle part.",
+            "resume": "Uber Eats, Deliveroo, ton site, le comptoir : tout tombe dans la même file. Un vendredi soir, tu regardes un écran, pas quatre.",
+            "statut": "bloque",
+            "dureeSecondes": null,
+            "videoUrl": null,
+            "tutorielUrl": null,
+            "reseaux": {
+              "facebook": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "FoodEatUp"
+              },
+              "instagram": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "foodeatup.cocuisinage"
+              },
+              "tiktok": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "foodeatup"
+              },
+              "linkedin": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "FoodEatUp"
+              }
+            },
+            "blocage": "Le chapitre correspondant n'a pas encore de vidéo dans le Drive interne."
+          },
+          {
+            "id": "EP029",
+            "numero": 29,
+            "saison": 1,
+            "slug": "ep029-les-douze-assiettes",
+            "titre": "Les douze assiettes",
+            "module": "PrediBot",
+            "chapitre": "1 - Lire ses prévisions",
+            "accroche": "Toi, gérant, en 2026.",
+            "punchline": "Personne ne devrait travailler comme ça.",
+            "resume": "Le brief du jour te dit ce qui compte avant que ça te tombe dessus : les réservations, les productions, les alertes. Tu diriges au lieu de courir.",
+            "statut": "a_produire",
+            "dureeSecondes": null,
+            "videoUrl": null,
+            "tutorielUrl": "https://drive.google.com/file/d/1MWkfZ-OZ_qv2z6QD9VPwabO5XnGd5UaB/view",
+            "reseaux": {
+              "facebook": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "FoodEatUp"
+              },
+              "instagram": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "foodeatup.cocuisinage"
+              },
+              "tiktok": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "foodeatup"
+              },
+              "linkedin": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "FoodEatUp"
+              }
+            }
+          },
+          {
+            "id": "EP030",
+            "numero": 30,
+            "saison": 1,
+            "slug": "ep030-le-pingouin-en-cuisine",
+            "titre": "Le pingouin en cuisine",
+            "module": "Configuration",
+            "chapitre": "Academy",
+            "accroche": "Le nouveau, jour 1.",
+            "punchline": "Forme-le en un clic avec l'Académy.",
+            "resume": "Le nouveau se forme tout seul : chaque module a ses vidéos, dans l'ordre. Tu ne réexpliques plus la caisse à chaque embauche.",
+            "statut": "bloque",
+            "dureeSecondes": null,
+            "videoUrl": null,
+            "tutorielUrl": null,
+            "reseaux": {
+              "facebook": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "FoodEatUp"
+              },
+              "instagram": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "foodeatup.cocuisinage"
+              },
+              "tiktok": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "foodeatup"
+              },
+              "linkedin": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "FoodEatUp"
+              }
+            },
+            "blocage": "Le chapitre correspondant n'a pas encore de vidéo dans le Drive interne."
+          }
+        ]
+      },
+      {
+        "numero": 2,
+        "titre": "Compter sans se tromper",
+        "pitch": "Stock, marge, factures : les chiffres qui décident de ta fin de mois.",
+        "episodes": [
+          {
+            "id": "EP031",
+            "numero": 31,
+            "saison": 2,
+            "slug": "ep031-l-avalanche-de-tupperware",
+            "titre": "L'avalanche de tupperware",
+            "module": "HACCP",
+            "chapitre": "étiquettes DLC",
+            "accroche": "C'est quoi, ça ?",
+            "punchline": "Sans DLC tracées, personne ne sait.",
+            "resume": "Tu crées ton étiquette DLC en trois secondes, avec le produit, la date et l'agent. Plus personne n'ouvre un bac en se demandant ce que c'est.",
+            "statut": "a_produire",
+            "dureeSecondes": null,
+            "videoUrl": null,
+            "tutorielUrl": "https://drive.google.com/file/d/1Cb7c55HN3pKh7zD7LlozCdVIzl85ux6M/view",
+            "reseaux": {
+              "facebook": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "FoodEatUp"
+              },
+              "instagram": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "foodeatup.cocuisinage"
+              },
+              "tiktok": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "foodeatup"
+              },
+              "linkedin": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "FoodEatUp"
+              }
+            }
+          },
+          {
+            "id": "EP032",
+            "numero": 32,
+            "saison": 2,
+            "slug": "ep032-la-sauce-trop-forte",
+            "titre": "La sauce trop forte",
+            "module": "StockVision",
+            "chapitre": "1 - Ma carte, fiche recette",
+            "accroche": "Ta recette « au feeling ».",
+            "punchline": "Une fiche technique, et c'est pareil tous les jours.",
+            "resume": "Ta recette est enregistrée : ingrédients, quantités, étapes. Le plat sort pareil que ce soit toi ou ton commis. Et son coût est calculé.",
+            "statut": "a_produire",
+            "dureeSecondes": null,
+            "videoUrl": null,
+            "tutorielUrl": "https://drive.google.com/file/d/1yqhyPMj9uBq1awmqTwUhisuBJBpY5kt-/view",
+            "reseaux": {
+              "facebook": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "FoodEatUp"
+              },
+              "instagram": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "foodeatup.cocuisinage"
+              },
+              "tiktok": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "foodeatup"
+              },
+              "linkedin": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "FoodEatUp"
+              }
+            }
+          },
+          {
+            "id": "EP033",
+            "numero": 33,
+            "saison": 2,
+            "slug": "ep033-le-roti-disparu",
+            "titre": "Le rôti disparu",
+            "module": "StockVision",
+            "chapitre": "16 - Mouvements de stock",
+            "accroche": "Tu as tout préparé. Presque.",
+            "punchline": "Ce qui n'est pas suivi finit par disparaître.",
+            "resume": "Ce qui n'est pas suivi disparaît. Ici chaque produit a son niveau, son seuil et son historique. Tu vois le trou avant le service, pas après.",
+            "statut": "a_produire",
+            "dureeSecondes": null,
+            "videoUrl": null,
+            "tutorielUrl": "https://drive.google.com/file/d/124mIM7NudoQy5wun_rlSZ6MCrJ2wNykL/view",
+            "reseaux": {
+              "facebook": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "FoodEatUp"
+              },
+              "instagram": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "foodeatup.cocuisinage"
+              },
+              "tiktok": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "foodeatup"
+              },
+              "linkedin": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "FoodEatUp"
+              }
+            }
+          },
+          {
+            "id": "EP034",
+            "numero": 34,
+            "saison": 2,
+            "slug": "ep034-le-bouchon-rebelle",
+            "titre": "Le bouchon rebelle",
+            "module": "Configuration",
+            "chapitre": "process",
+            "accroche": "Chaque service, une improvisation.",
+            "punchline": "Ça marche. Jusqu'au jour où ça ne marche plus.",
+            "resume": "Tes procédures sont dans l'outil, pas dans ta tête. Le service ne dépend plus de qui est là ce soir.",
+            "statut": "bloque",
+            "dureeSecondes": null,
+            "videoUrl": null,
+            "tutorielUrl": null,
+            "reseaux": {
+              "facebook": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "FoodEatUp"
+              },
+              "instagram": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "foodeatup.cocuisinage"
+              },
+              "tiktok": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "foodeatup"
+              },
+              "linkedin": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "FoodEatUp"
+              }
+            },
+            "blocage": "Le chapitre correspondant n'a pas encore de vidéo dans le Drive interne."
+          },
+          {
+            "id": "EP035",
+            "numero": 35,
+            "saison": 2,
+            "slug": "ep035-le-parasol-fugitif",
+            "titre": "Le parasol fugitif",
+            "module": "PrediBot",
+            "chapitre": "1 - Lire ses prévisions",
+            "accroche": "Ta terrasse, un jour de vent.",
+            "punchline": "Certaines choses se prévoient.",
+            "resume": "Prévisions de fréquentation, météo, événements du quartier : PrediBot te dit à quoi ressemble ton service avant qu'il commence.",
+            "statut": "a_produire",
+            "dureeSecondes": null,
+            "videoUrl": null,
+            "tutorielUrl": "https://drive.google.com/file/d/1MWkfZ-OZ_qv2z6QD9VPwabO5XnGd5UaB/view",
+            "reseaux": {
+              "facebook": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "FoodEatUp"
+              },
+              "instagram": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "foodeatup.cocuisinage"
+              },
+              "tiktok": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "foodeatup"
+              },
+              "linkedin": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "FoodEatUp"
+              }
+            }
+          },
+          {
+            "id": "EP036",
+            "numero": 36,
+            "saison": 2,
+            "slug": "ep036-l-addition",
+            "titre": "L'addition",
+            "module": "PrediBot",
+            "chapitre": "2 - Un seul abonnement",
+            "accroche": "Toi, devant tes abonnements.",
+            "punchline": "Additionne-les. Vraiment.",
+            "resume": "Additionne tes abonnements actuels. Ici, la caisse, le stock, le planning, la compta et le marketing sont dans le même outil, sur la même base.",
+            "statut": "a_produire",
+            "dureeSecondes": null,
+            "videoUrl": null,
+            "tutorielUrl": "https://drive.google.com/file/d/16kN9JwGuVugkCtjQ93OObZ2tAlmsbgZl/view",
+            "reseaux": {
+              "facebook": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "FoodEatUp"
+              },
+              "instagram": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "foodeatup.cocuisinage"
+              },
+              "tiktok": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "foodeatup"
+              },
+              "linkedin": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "FoodEatUp"
+              }
+            }
+          },
+          {
+            "id": "EP037",
+            "numero": 37,
+            "saison": 2,
+            "slug": "ep037-le-dormeur-debout",
+            "titre": "Le dormeur debout",
+            "module": "Équipe & Planning",
+            "chapitre": "créer un shift",
+            "accroche": "Fermeture. Troisième soir d'affilée.",
+            "punchline": "Un planning bien fait, ça se voit sur les visages.",
+            "resume": "Tu construis le planning de la semaine par glisser-déposer, avec le coût qui s'affiche en direct. Tes équipes savent, et toi aussi.",
+            "statut": "a_produire",
+            "dureeSecondes": null,
+            "videoUrl": null,
+            "tutorielUrl": "https://drive.google.com/file/d/174AfDA9zywpeMof070Mc33_doWgDcsp5/view",
+            "reseaux": {
+              "facebook": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "FoodEatUp"
+              },
+              "instagram": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "foodeatup.cocuisinage"
+              },
+              "tiktok": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "foodeatup"
+              },
+              "linkedin": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "FoodEatUp"
+              }
+            }
+          },
+          {
+            "id": "EP038",
+            "numero": 38,
+            "saison": 2,
+            "slug": "ep038-le-chariot-fou",
+            "titre": "Le chariot fou",
+            "module": "StockVision",
+            "chapitre": "4 - Ma liste de courses",
+            "accroche": "Le réappro du lundi.",
+            "punchline": "Commander à l'instinct, ça finit toujours en course.",
+            "resume": "Ta commande fournisseur se construit depuis tes stocks bas et ta production prévue. Tu ne commandes plus à l'instinct dans les rayons.",
+            "statut": "a_produire",
+            "dureeSecondes": null,
+            "videoUrl": null,
+            "tutorielUrl": "https://drive.google.com/file/d/17wdt0v2xgwuoollWJSO7QcDMexXMCK9H/view",
+            "reseaux": {
+              "facebook": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "FoodEatUp"
+              },
+              "instagram": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "foodeatup.cocuisinage"
+              },
+              "tiktok": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "foodeatup"
+              },
+              "linkedin": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "FoodEatUp"
+              }
+            }
+          },
+          {
+            "id": "EP039",
+            "numero": 39,
+            "saison": 2,
+            "slug": "ep039-le-ballon-dans-la-soupe",
+            "titre": "Le ballon dans la soupe",
+            "module": "Réservation",
+            "chapitre": "3 - Gérer et no-shows",
+            "accroche": "L'imprévu du service.",
+            "punchline": "Il y en aura d'autres. Autant être prêt.",
+            "resume": "L'imprévu, tu ne l'évites pas. Mais tu vois en direct l'état de ta salle, tes retards et tes annulations, et tu réattribues en un geste.",
+            "statut": "a_produire",
+            "dureeSecondes": null,
+            "videoUrl": null,
+            "tutorielUrl": "https://drive.google.com/file/d/1DZKefLYV1_F9_uL-sJ79fb5srfGnROBp/view",
+            "reseaux": {
+              "facebook": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "FoodEatUp"
+              },
+              "instagram": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "foodeatup.cocuisinage"
+              },
+              "tiktok": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "foodeatup"
+              },
+              "linkedin": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "FoodEatUp"
+              }
+            }
+          },
+          {
+            "id": "EP040",
+            "numero": 40,
+            "saison": 2,
+            "slug": "ep040-la-chevre-au-potager",
+            "titre": "La chèvre au potager",
+            "module": "StockVision",
+            "chapitre": "17 - Ajouter un mouvement",
+            "accroche": "Ton stock de basilic.",
+            "punchline": "Ce qui n'est pas compté disparaît toujours.",
+            "resume": "Tu comptes une fois, l'outil compte ensuite. Chaque sortie d'ingrédient est déduite de ton stock, plat par plat.",
+            "statut": "a_produire",
+            "dureeSecondes": null,
+            "videoUrl": null,
+            "tutorielUrl": "https://drive.google.com/file/d/1xxxr8zsy8ZvK7NCizf1F9q8W3u48Npgt/view",
+            "reseaux": {
+              "facebook": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "FoodEatUp"
+              },
+              "instagram": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "foodeatup.cocuisinage"
+              },
+              "tiktok": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "foodeatup"
+              },
+              "linkedin": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "FoodEatUp"
+              }
+            }
+          },
+          {
+            "id": "EP041",
+            "numero": 41,
+            "saison": 2,
+            "slug": "ep041-le-poulet-fugueur",
+            "titre": "Le poulet fugueur",
+            "module": "StockVision",
+            "chapitre": "15 - Sortie des ingrédients de la production",
+            "accroche": "Ton contrôle des portions.",
+            "punchline": "Ce qui part au sol, tu le paies quand même.",
+            "resume": "La production sort exactement les quantités prévues de ton stock. Ce qui tombe au sol, tu le vois dans l'écart. Et ce qui se voit se corrige.",
+            "statut": "a_produire",
+            "dureeSecondes": null,
+            "videoUrl": null,
+            "tutorielUrl": "https://drive.google.com/file/d/15a_HkRxFA6AobiCgyHhXpl9sCM4mQdiC/view",
+            "reseaux": {
+              "facebook": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "FoodEatUp"
+              },
+              "instagram": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "foodeatup.cocuisinage"
+              },
+              "tiktok": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "foodeatup"
+              },
+              "linkedin": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "FoodEatUp"
+              }
+            }
+          },
+          {
+            "id": "EP042",
+            "numero": 42,
+            "saison": 2,
+            "slug": "ep042-la-nappe-et-le-vent",
+            "titre": "La nappe et le vent",
+            "module": "Marketing",
+            "chapitre": "21 - MCP RapidoCMS et Iris",
+            "accroche": "Tout faire seul.",
+            "punchline": "À un moment, il faut être aidé.",
+            "resume": "Tu n'as pas à tout faire seul. Iris prépare tes contenus, PrediBot surveille tes chiffres, tu gardes la validation.",
+            "statut": "bloque",
+            "dureeSecondes": null,
+            "videoUrl": null,
+            "tutorielUrl": null,
+            "reseaux": {
+              "facebook": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "FoodEatUp"
+              },
+              "instagram": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "foodeatup.cocuisinage"
+              },
+              "tiktok": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "foodeatup"
+              },
+              "linkedin": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "FoodEatUp"
+              }
+            },
+            "blocage": "Le chapitre correspondant n'a pas encore de vidéo dans le Drive interne."
+          },
+          {
+            "id": "EP043",
+            "numero": 43,
+            "saison": 2,
+            "slug": "ep043-l-ecureuil-et-le-croissant",
+            "titre": "L'écureuil et le croissant",
+            "module": "Caisse POS",
+            "chapitre": "4 - Remises et avoirs",
+            "accroche": "Petit vol. Tous les jours.",
+            "punchline": "Mis bout à bout, ça fait ta marge.",
+            "resume": "Chaque remise et chaque avoir est tracé, avec qui l'a fait et pourquoi. Les petits gestes ne mangent plus ta marge en silence.",
+            "statut": "bloque",
+            "dureeSecondes": null,
+            "videoUrl": null,
+            "tutorielUrl": null,
+            "reseaux": {
+              "facebook": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "FoodEatUp"
+              },
+              "instagram": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "foodeatup.cocuisinage"
+              },
+              "tiktok": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "foodeatup"
+              },
+              "linkedin": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "FoodEatUp"
+              }
+            },
+            "blocage": "Le chapitre correspondant n'a pas encore de vidéo dans le Drive interne."
+          },
+          {
+            "id": "EP044",
+            "numero": 44,
+            "saison": 2,
+            "slug": "ep044-les-six-stylos",
+            "titre": "Les six stylos",
+            "module": "Réservation",
+            "chapitre": "5 - Commander par QR code",
+            "accroche": "Prendre la commande en 2026.",
+            "punchline": "La commande devrait partir en cuisine toute seule.",
+            "resume": "Le client scanne, commande, la cuisine reçoit. Ton serveur passe son temps en salle, pas à recopier des lignes sur un carnet.",
+            "statut": "a_produire",
+            "dureeSecondes": null,
+            "videoUrl": null,
+            "tutorielUrl": "https://drive.google.com/file/d/1rTMXZj_uLAVaGPjxBT-ncZ4hcTU8UetZ/view",
+            "reseaux": {
+              "facebook": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "FoodEatUp"
+              },
+              "instagram": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "foodeatup.cocuisinage"
+              },
+              "tiktok": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "foodeatup"
+              },
+              "linkedin": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "FoodEatUp"
+              }
+            }
+          },
+          {
+            "id": "EP045",
+            "numero": 45,
+            "saison": 2,
+            "slug": "ep045-la-chambre-froide",
+            "titre": "La chambre froide",
+            "module": "StockVision",
+            "chapitre": "18 - Statistiques par module",
+            "accroche": "Personne ne sait où tu es.",
+            "punchline": "Ton restaurant non plus ne devrait pas être une boîte noire.",
+            "resume": "Ton restaurant arrête d'être une boîte noire : ventes, marges, fréquentation, stock, module par module, sur la période que tu choisis.",
+            "statut": "a_produire",
+            "dureeSecondes": null,
+            "videoUrl": null,
+            "tutorielUrl": "https://drive.google.com/file/d/13BlvDmhkU0IsKHXo77VHM7TwMSHKHmpv/view",
+            "reseaux": {
+              "facebook": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "FoodEatUp"
+              },
+              "instagram": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "foodeatup.cocuisinage"
+              },
+              "tiktok": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "foodeatup"
+              },
+              "linkedin": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "FoodEatUp"
+              }
+            }
+          },
+          {
+            "id": "EP046",
+            "numero": 46,
+            "saison": 2,
+            "slug": "ep046-le-sel",
+            "titre": "Le sel",
+            "module": "StockVision",
+            "chapitre": "20 - Agent IA et suggestions",
+            "accroche": "Un détail. Un service perdu.",
+            "punchline": "Les petites erreurs coûtent cher quand personne ne les voit.",
+            "resume": "L'IA remonte ce que tu n'as pas le temps de voir : un coût qui monte, un plat qui décroche, un stock qui dort. Le petit détail devient visible.",
+            "statut": "a_produire",
+            "dureeSecondes": null,
+            "videoUrl": null,
+            "tutorielUrl": "https://drive.google.com/file/d/1pmXqNyUyZnwszglIDsXeFXtGiA0HDZm9/view",
+            "reseaux": {
+              "facebook": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "FoodEatUp"
+              },
+              "instagram": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "foodeatup.cocuisinage"
+              },
+              "tiktok": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "foodeatup"
+              },
+              "linkedin": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "FoodEatUp"
+              }
+            }
+          },
+          {
+            "id": "EP047",
+            "numero": 47,
+            "saison": 2,
+            "slug": "ep047-le-camion-dans-la-ruelle",
+            "titre": "Le camion dans la ruelle",
+            "module": "HACCP",
+            "chapitre": "contrôle à réception",
+            "accroche": "La livraison de 7 h.",
+            "punchline": "Réceptionner, contrôler, tracer. Sans y penser.",
+            "resume": "À la livraison, tu contrôles la température, tu prends la photo, c'est tracé. Sept heures du matin, et ta conformité est déjà faite.",
+            "statut": "a_produire",
+            "dureeSecondes": null,
+            "videoUrl": null,
+            "tutorielUrl": "https://drive.google.com/file/d/1JkMe74c9n4TFjeRRJ7pSpSQoB6bP2jEf/view",
+            "reseaux": {
+              "facebook": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "FoodEatUp"
+              },
+              "instagram": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "foodeatup.cocuisinage"
+              },
+              "tiktok": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "foodeatup"
+              },
+              "linkedin": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "FoodEatUp"
+              }
+            }
+          },
+          {
+            "id": "EP048",
+            "numero": 48,
+            "saison": 2,
+            "slug": "ep048-la-pyramide-de-sucre",
+            "titre": "La pyramide de sucre",
+            "module": "Configuration",
+            "chapitre": "paramétrage initial",
+            "accroche": "Ce que tu construis chaque jour.",
+            "punchline": "Un système fragile finit toujours par tomber.",
+            "resume": "Tu poses ta base une fois : établissement, TVA, zones, équipements. Tout le reste de FoodEatUp s'appuie dessus sans que tu y reviennes.",
+            "statut": "a_produire",
+            "dureeSecondes": null,
+            "videoUrl": null,
+            "tutorielUrl": "https://drive.google.com/file/d/1hp7mZd-tQliPUemhyIKHWMl9xUgKHwoq/view",
+            "reseaux": {
+              "facebook": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "FoodEatUp"
+              },
+              "instagram": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "foodeatup.cocuisinage"
+              },
+              "tiktok": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "foodeatup"
+              },
+              "linkedin": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "FoodEatUp"
+              }
+            }
+          },
+          {
+            "id": "EP049",
+            "numero": 49,
+            "saison": 2,
+            "slug": "ep049-le-chien-du-pass",
+            "titre": "Le chien du pass",
+            "module": "HACCP",
+            "chapitre": "Relevé de température",
+            "accroche": "Il envoie plus vite que ton pass.",
+            "punchline": "Un KDS, et la cuisine avance toute seule.",
+            "resume": "Tu relèves tes frigos depuis ton téléphone. La mesure est datée, signée, archivée. Un contrôle, et tu sors trois mois d'historique en un clic.",
+            "statut": "a_produire",
+            "dureeSecondes": null,
+            "videoUrl": null,
+            "tutorielUrl": "https://drive.google.com/file/d/14OmsNUd3EMgWNxGVvmOwLgR3ZloWKNKW/view",
+            "reseaux": {
+              "facebook": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "FoodEatUp"
+              },
+              "instagram": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "foodeatup.cocuisinage"
+              },
+              "tiktok": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "foodeatup"
+              },
+              "linkedin": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "FoodEatUp"
+              }
+            }
+          },
+          {
+            "id": "EP050",
+            "numero": 50,
+            "saison": 2,
+            "slug": "ep050-la-casserole-brulante",
+            "titre": "La casserole brûlante",
+            "module": "HACCP",
+            "chapitre": "Équipements",
+            "accroche": "Apprendre sur le tas.",
+            "punchline": "Il y a plus rapide pour former quelqu'un.",
+            "resume": "Chaque frigo, chaque chambre froide est déclaré avec ses seuils. Hors zone, tu es alerté. Tu sauves la marchandise avant de la jeter.",
+            "statut": "a_produire",
+            "dureeSecondes": null,
+            "videoUrl": null,
+            "tutorielUrl": "https://drive.google.com/file/d/1FoFUKA32NsE78xp_YxFfvwKL_d3Qzi1x/view",
+            "reseaux": {
+              "facebook": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "FoodEatUp"
+              },
+              "instagram": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "foodeatup.cocuisinage"
+              },
+              "tiktok": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "foodeatup"
+              },
+              "linkedin": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "FoodEatUp"
+              }
+            }
+          },
+          {
+            "id": "EP051",
+            "numero": 51,
+            "saison": 2,
+            "slug": "ep051-la-mousse",
+            "titre": "La mousse",
+            "module": "HACCP",
+            "chapitre": "Étiquettes DLC",
+            "accroche": "Un mauvais réglage. Une seule fois.",
+            "punchline": "Les process, ça évite ça.",
+            "resume": "Étiquette produite, date de fabrication, DLC calculée. Ton bac étiqueté n'est plus un pari.",
+            "statut": "a_produire",
+            "dureeSecondes": null,
+            "videoUrl": null,
+            "tutorielUrl": "https://drive.google.com/file/d/1Cb7c55HN3pKh7zD7LlozCdVIzl85ux6M/view",
+            "reseaux": {
+              "facebook": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "FoodEatUp"
+              },
+              "instagram": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "foodeatup.cocuisinage"
+              },
+              "tiktok": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "foodeatup"
+              },
+              "linkedin": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "FoodEatUp"
+              }
+            }
+          },
+          {
+            "id": "EP052",
+            "numero": 52,
+            "saison": 2,
+            "slug": "ep052-le-tablier-coince",
+            "titre": "Le tablier coincé",
+            "module": "HACCP",
+            "chapitre": "Traçabilité",
+            "accroche": "Encore un truc qui te retient.",
+            "punchline": "Enlève-les tous, un par un.",
+            "resume": "Chaque lot reçu est rattaché à ce que tu produis. En cas de rappel, tu remontes la chaîne en quelques secondes.",
+            "statut": "a_produire",
+            "dureeSecondes": null,
+            "videoUrl": null,
+            "tutorielUrl": "https://drive.google.com/file/d/1qwwJNILNZv3EpqCowlCFUhxeC_2qyZgm/view",
+            "reseaux": {
+              "facebook": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "FoodEatUp"
+              },
+              "instagram": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "foodeatup.cocuisinage"
+              },
+              "tiktok": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "foodeatup"
+              },
+              "linkedin": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "FoodEatUp"
+              }
+            }
+          },
+          {
+            "id": "EP053",
+            "numero": 53,
+            "saison": 2,
+            "slug": "ep053-la-file-et-la-salle-vide",
+            "titre": "La file et la salle vide",
+            "module": "HACCP",
+            "chapitre": "Réception fournisseur",
+            "accroche": "Complet dehors. Vide dedans.",
+            "punchline": "Ta salle et ta file devraient se parler.",
+            "resume": "Contrôle à réception : température, aspect, quantité, non-conformités. Tout part dans le dossier HACCP tout seul.",
+            "statut": "a_produire",
+            "dureeSecondes": null,
+            "videoUrl": null,
+            "tutorielUrl": "https://drive.google.com/file/d/1JkMe74c9n4TFjeRRJ7pSpSQoB6bP2jEf/view",
+            "reseaux": {
+              "facebook": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "FoodEatUp"
+              },
+              "instagram": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "foodeatup.cocuisinage"
+              },
+              "tiktok": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "foodeatup"
+              },
+              "linkedin": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "FoodEatUp"
+              }
+            }
+          },
+          {
+            "id": "EP054",
+            "numero": 54,
+            "saison": 2,
+            "slug": "ep054-le-pois",
+            "titre": "Le pois",
+            "module": "HACCP",
+            "chapitre": "Plan de nettoyage",
+            "accroche": "Ton prix ne raconte pas ton coût.",
+            "punchline": "Marge réelle par plat. Ça change les décisions.",
+            "resume": "Tes zones et tes postes de nettoyage sont listés. Qui a fait quoi, quand, c'est enregistré. Le plan de nettoyage vit vraiment.",
+            "statut": "a_produire",
+            "dureeSecondes": null,
+            "videoUrl": null,
+            "tutorielUrl": "https://drive.google.com/file/d/1GPF2hFYK3Ds91avjyrG1z7dZDMbFggI6/view",
+            "reseaux": {
+              "facebook": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "FoodEatUp"
+              },
+              "instagram": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "foodeatup.cocuisinage"
+              },
+              "tiktok": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "foodeatup"
+              },
+              "linkedin": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "FoodEatUp"
+              }
+            }
+          },
+          {
+            "id": "EP055",
+            "numero": 55,
+            "saison": 2,
+            "slug": "ep055-le-ventilateur",
+            "titre": "Le ventilateur",
+            "module": "HACCP",
+            "chapitre": "Checklists hygiène",
+            "accroche": "Ta compta, au format papier.",
+            "punchline": "Scanne. Classe. Oublie.",
+            "resume": "Tu crées ta checklist une fois, l'équipe la valide chaque jour. Ce qui est coché est daté et signé.",
+            "statut": "a_produire",
+            "dureeSecondes": null,
+            "videoUrl": null,
+            "tutorielUrl": "https://drive.google.com/file/d/1BiubjVB2WUaP8COM9a9V6_DMWNc1ltvh/view",
+            "reseaux": {
+              "facebook": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "FoodEatUp"
+              },
+              "instagram": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "foodeatup.cocuisinage"
+              },
+              "tiktok": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "foodeatup"
+              },
+              "linkedin": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "FoodEatUp"
+              }
+            }
+          },
+          {
+            "id": "EP056",
+            "numero": 56,
+            "saison": 2,
+            "slug": "ep056-le-passager-clandestin",
+            "titre": "Le passager clandestin",
+            "module": "HACCP",
+            "chapitre": "Historique",
+            "accroche": "Il y a toujours un truc en trop.",
+            "punchline": "Ou en moins. Et tu le vois trop tard.",
+            "resume": "Tes relevés, tes réceptions et tes validations sont conservés. Le jour du contrôle, tu ne cherches rien.",
+            "statut": "a_produire",
+            "dureeSecondes": null,
+            "videoUrl": null,
+            "tutorielUrl": "https://drive.google.com/file/d/1jXUousFn16eOB60LdGPObwwlic2VD5Ic/view",
+            "reseaux": {
+              "facebook": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "FoodEatUp"
+              },
+              "instagram": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "foodeatup.cocuisinage"
+              },
+              "tiktok": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "foodeatup"
+              },
+              "linkedin": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "FoodEatUp"
+              }
+            }
+          },
+          {
+            "id": "EP057",
+            "numero": 57,
+            "saison": 2,
+            "slug": "ep057-les-pieces",
+            "titre": "Les pièces",
+            "module": "HACCP",
+            "chapitre": "Alertes",
+            "accroche": "La clôture de caisse.",
+            "punchline": "Un Z propre, en une minute.",
+            "resume": "Une température hors seuil déclenche une alerte immédiate. Tu réagis pendant le service, pas le lendemain.",
+            "statut": "a_produire",
+            "dureeSecondes": null,
+            "videoUrl": null,
+            "tutorielUrl": "https://drive.google.com/file/d/14OmsNUd3EMgWNxGVvmOwLgR3ZloWKNKW/view",
+            "reseaux": {
+              "facebook": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "FoodEatUp"
+              },
+              "instagram": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "foodeatup.cocuisinage"
+              },
+              "tiktok": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "foodeatup"
+              },
+              "linkedin": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "FoodEatUp"
+              }
+            }
+          },
+          {
+            "id": "EP058",
+            "numero": 58,
+            "saison": 2,
+            "slug": "ep058-les-bougies",
+            "titre": "Les bougies",
+            "module": "HACCP",
+            "chapitre": "Rôles",
+            "accroche": "L'anniversaire de la table 12.",
+            "punchline": "Anticiper, c'est aussi ça, le service.",
+            "resume": "Chaque agent signe ses propres relevés. La responsabilité est claire, sans paperasse supplémentaire.",
+            "statut": "bloque",
+            "dureeSecondes": null,
+            "videoUrl": null,
+            "tutorielUrl": null,
+            "reseaux": {
+              "facebook": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "FoodEatUp"
+              },
+              "instagram": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "foodeatup.cocuisinage"
+              },
+              "tiktok": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "foodeatup"
+              },
+              "linkedin": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "FoodEatUp"
+              }
+            },
+            "blocage": "Le chapitre correspondant n'a pas encore de vidéo dans le Drive interne."
+          },
+          {
+            "id": "EP059",
+            "numero": 59,
+            "saison": 2,
+            "slug": "ep059-l-ardoise",
+            "titre": "L'ardoise",
+            "module": "HACCP",
+            "chapitre": "Non-conformité",
+            "accroche": "Ta com', chaque matin.",
+            "punchline": "Il y a plus solide qu'une ardoise.",
+            "resume": "Tu déclares une non-conformité, tu notes l'action corrective. C'est exactement ce qu'on te demandera de prouver.",
+            "statut": "a_produire",
+            "dureeSecondes": null,
+            "videoUrl": null,
+            "tutorielUrl": "https://drive.google.com/file/d/1Typp5DHDNQO1RErN8flaUywe9yS3HBme/view",
+            "reseaux": {
+              "facebook": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "FoodEatUp"
+              },
+              "instagram": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "foodeatup.cocuisinage"
+              },
+              "tiktok": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "foodeatup"
+              },
+              "linkedin": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "FoodEatUp"
+              }
+            }
+          },
+          {
+            "id": "EP060",
+            "numero": 60,
+            "saison": 2,
+            "slug": "ep060-le-poulpe-multitache",
+            "titre": "Le poulpe multitâche",
+            "module": "HACCP",
+            "chapitre": "Congélation",
+            "accroche": "Ce qu'on te demande d'être.",
+            "punchline": "Ou alors, un seul outil fait le reste.",
+            "resume": "Tu enregistres une mise en congélation avec sa date et sa quantité. Plus de sac sans nom au fond du bac.",
+            "statut": "a_produire",
+            "dureeSecondes": null,
+            "videoUrl": null,
+            "tutorielUrl": "https://drive.google.com/file/d/1JkMe74c9n4TFjeRRJ7pSpSQoB6bP2jEf/view",
+            "reseaux": {
+              "facebook": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "FoodEatUp"
+              },
+              "instagram": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "foodeatup.cocuisinage"
+              },
+              "tiktok": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "foodeatup"
+              },
+              "linkedin": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "FoodEatUp"
+              }
+            }
+          }
+        ]
+      },
+      {
+        "numero": 3,
+        "titre": "L'équipe qui tient",
+        "pitch": "Plannings, contrats, pointages : faire tourner une équipe sans y passer ses nuits.",
+        "episodes": [
+          {
+            "id": "EP061",
+            "numero": 61,
+            "saison": 3,
+            "slug": "ep061-le-badge-introuvable",
+            "titre": "Le badge introuvable",
+            "module": "HACCP",
+            "chapitre": "Rapport HACCP",
+            "accroche": "Ton système de pointage.",
+            "punchline": "Un badge, un QR code, un code PIN. Point.",
+            "resume": "Tu édites ton dossier de conformité sur la période de ton choix, prêt à présenter.",
+            "statut": "a_produire",
+            "dureeSecondes": null,
+            "videoUrl": null,
+            "tutorielUrl": "https://drive.google.com/file/d/1Sdqt1w99LFbrJP2RpqbPSRahwZGHcPC2/view",
+            "reseaux": {
+              "facebook": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "FoodEatUp"
+              },
+              "instagram": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "foodeatup.cocuisinage"
+              },
+              "tiktok": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "foodeatup"
+              },
+              "linkedin": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "FoodEatUp"
+              }
+            }
+          },
+          {
+            "id": "EP062",
+            "numero": 62,
+            "saison": 3,
+            "slug": "ep062-la-photo-de-pointage",
+            "titre": "La photo de pointage",
+            "module": "HACCP",
+            "chapitre": "Routine du jour",
+            "accroche": "Je te jure, j'étais là à 8 h.",
+            "punchline": "Photo, heure, poste. Le débat est clos.",
+            "resume": "La conformité devient une routine de deux minutes par service, au lieu d'un dimanche de rattrapage.",
+            "statut": "bloque",
+            "dureeSecondes": null,
+            "videoUrl": null,
+            "tutorielUrl": null,
+            "reseaux": {
+              "facebook": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "FoodEatUp"
+              },
+              "instagram": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "foodeatup.cocuisinage"
+              },
+              "tiktok": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "foodeatup"
+              },
+              "linkedin": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "FoodEatUp"
+              }
+            },
+            "blocage": "Le chapitre correspondant n'a pas encore de vidéo dans le Drive interne."
+          },
+          {
+            "id": "EP063",
+            "numero": 63,
+            "saison": 3,
+            "slug": "ep063-le-post-it-perdu",
+            "titre": "Le post-it perdu",
+            "module": "Équipe & Planning",
+            "chapitre": "Créer un employé",
+            "accroche": "Ta demande de congé.",
+            "punchline": "Demandée, reçue, validée. Sans papier.",
+            "resume": "Tu crées ta fiche employé avec son rôle et ses horaires. Elle alimente le planning, les pointages et la paie.",
+            "statut": "a_produire",
+            "dureeSecondes": null,
+            "videoUrl": null,
+            "tutorielUrl": "https://drive.google.com/file/d/1Bhu8KC2mW5P9Gr1qSEVxiNvYoHbUTLCX/view",
+            "reseaux": {
+              "facebook": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "FoodEatUp"
+              },
+              "instagram": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "foodeatup.cocuisinage"
+              },
+              "tiktok": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "foodeatup"
+              },
+              "linkedin": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "FoodEatUp"
+              }
+            }
+          },
+          {
+            "id": "EP064",
+            "numero": 64,
+            "saison": 3,
+            "slug": "ep064-le-planning-au-marqueur",
+            "titre": "Le planning au marqueur",
+            "module": "Équipe & Planning",
+            "chapitre": "Planning semaine",
+            "accroche": "Le planning de la semaine.",
+            "punchline": "Par employé ou par poste. Imprimable. À jour.",
+            "resume": "Le planning se construit en glisser-déposer, avec le coût de la semaine qui s'affiche pendant que tu poses les shifts.",
+            "statut": "a_produire",
+            "dureeSecondes": null,
+            "videoUrl": null,
+            "tutorielUrl": "https://drive.google.com/file/d/1CdAnJgR_iq1ESyAgcCCpFjnCfYzaUhIR/view",
+            "reseaux": {
+              "facebook": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "FoodEatUp"
+              },
+              "instagram": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "foodeatup.cocuisinage"
+              },
+              "tiktok": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "foodeatup"
+              },
+              "linkedin": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "FoodEatUp"
+              }
+            }
+          },
+          {
+            "id": "EP065",
+            "numero": 65,
+            "saison": 3,
+            "slug": "ep065-le-stagiaire-au-bureau",
+            "titre": "Le stagiaire au bureau",
+            "module": "Équipe & Planning",
+            "chapitre": "Pointages",
+            "accroche": "Qui a accès à quoi ?",
+            "punchline": "Chaque rôle voit exactement ce qu'il doit voir.",
+            "resume": "Les heures réelles sont pointées. Tu compares le prévu et le réalisé, sans discussion de fin de mois.",
+            "statut": "a_produire",
+            "dureeSecondes": null,
+            "videoUrl": null,
+            "tutorielUrl": "https://drive.google.com/file/d/1J1Q1Tv2kx9RCiiW6m5SiSh6psnrjtLMb/view",
+            "reseaux": {
+              "facebook": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "FoodEatUp"
+              },
+              "instagram": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "foodeatup.cocuisinage"
+              },
+              "tiktok": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "foodeatup"
+              },
+              "linkedin": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "FoodEatUp"
+              }
+            }
+          },
+          {
+            "id": "EP066",
+            "numero": 66,
+            "saison": 3,
+            "slug": "ep066-le-grille-pain-qui-ne-repond-pas",
+            "titre": "Le grille-pain qui ne répond pas",
+            "module": "Équipe & Planning",
+            "chapitre": "Congés",
+            "accroche": "Ta cuisine n'a personne à qui parler.",
+            "punchline": "Jarvis répond, lui. Et il note.",
+            "resume": "Une demande de congé arrive, tu valides ou tu refuses depuis l'écran. Le planning se met à jour tout seul.",
+            "statut": "a_produire",
+            "dureeSecondes": null,
+            "videoUrl": null,
+            "tutorielUrl": "https://drive.google.com/file/d/1gY1t4M0AUXTI54sCrB22r7yeiCDe3W35/view",
+            "reseaux": {
+              "facebook": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "FoodEatUp"
+              },
+              "instagram": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "foodeatup.cocuisinage"
+              },
+              "tiktok": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "foodeatup"
+              },
+              "linkedin": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "FoodEatUp"
+              }
+            }
+          },
+          {
+            "id": "EP067",
+            "numero": 67,
+            "saison": 3,
+            "slug": "ep067-le-thermometre-humain",
+            "titre": "Le thermomètre humain",
+            "module": "Équipe & Planning",
+            "chapitre": "Contrats",
+            "accroche": "Ton relevé de température.",
+            "punchline": "Un vrai relevé, horodaté, par équipement.",
+            "resume": "Contrats et documents employés sont rangés au même endroit, avec leurs échéances.",
+            "statut": "a_produire",
+            "dureeSecondes": null,
+            "videoUrl": null,
+            "tutorielUrl": "https://drive.google.com/file/d/1nbIsc-SROPwONiTIm1BuLpYuNSSTTHm7/view",
+            "reseaux": {
+              "facebook": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "FoodEatUp"
+              },
+              "instagram": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "foodeatup.cocuisinage"
+              },
+              "tiktok": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "foodeatup"
+              },
+              "linkedin": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "FoodEatUp"
+              }
+            }
+          },
+          {
+            "id": "EP068",
+            "numero": 68,
+            "saison": 3,
+            "slug": "ep068-le-second-avis",
+            "titre": "Le second avis",
+            "module": "Équipe & Planning",
+            "chapitre": "Coût du travail",
+            "accroche": "Le test scientifique du nez.",
+            "punchline": "Une étiquette DLC, et plus personne ne renifle.",
+            "resume": "Ton coût de personnel s'affiche en face de ton chiffre d'affaires prévu. Tu ajustes avant, pas après.",
+            "statut": "a_produire",
+            "dureeSecondes": null,
+            "videoUrl": null,
+            "tutorielUrl": "https://drive.google.com/file/d/174AfDA9zywpeMof070Mc33_doWgDcsp5/view",
+            "reseaux": {
+              "facebook": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "FoodEatUp"
+              },
+              "instagram": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "foodeatup.cocuisinage"
+              },
+              "tiktok": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "foodeatup"
+              },
+              "linkedin": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "FoodEatUp"
+              }
+            }
+          },
+          {
+            "id": "EP069",
+            "numero": 69,
+            "saison": 3,
+            "slug": "ep069-le-livreur-fantome",
+            "titre": "Le livreur fantôme",
+            "module": "Équipe & Planning",
+            "chapitre": "Recrutement",
+            "accroche": "Tu as vérifié la livraison ?",
+            "punchline": "Température, DLC, code EAN. En scannant.",
+            "resume": "Tu publies ton offre, tu suis les candidatures par statut, tu décides. Le recrutement arrête de traîner sur ton téléphone.",
+            "statut": "bloque",
+            "dureeSecondes": null,
+            "videoUrl": null,
+            "tutorielUrl": null,
+            "reseaux": {
+              "facebook": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "FoodEatUp"
+              },
+              "instagram": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "foodeatup.cocuisinage"
+              },
+              "tiktok": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "foodeatup"
+              },
+              "linkedin": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "FoodEatUp"
+              }
+            },
+            "blocage": "Le chapitre correspondant n'a pas encore de vidéo dans le Drive interne."
+          },
+          {
+            "id": "EP070",
+            "numero": 70,
+            "saison": 3,
+            "slug": "ep070-la-dalle-propre",
+            "titre": "La dalle propre",
+            "module": "Équipe & Planning",
+            "chapitre": "Onboarding",
+            "accroche": "C'est fait.",
+            "punchline": "Photo analysée par l'IA. Rapport objectif.",
+            "resume": "Le nouveau arrive avec son accès, son planning et ses vidéos de formation. Jour un, il est utile.",
+            "statut": "a_produire",
+            "dureeSecondes": null,
+            "videoUrl": null,
+            "tutorielUrl": "https://drive.google.com/file/d/13w9aRHXfQFkxF3UvqtaLczqKPN5rr7E0/view",
+            "reseaux": {
+              "facebook": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "FoodEatUp"
+              },
+              "instagram": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "foodeatup.cocuisinage"
+              },
+              "tiktok": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "foodeatup"
+              },
+              "linkedin": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "FoodEatUp"
+              }
+            }
+          },
+          {
+            "id": "EP071",
+            "numero": 71,
+            "saison": 3,
+            "slug": "ep071-la-liste-a-l-envers",
+            "titre": "La liste à l'envers",
+            "module": "Équipe & Planning",
+            "chapitre": "Multi-postes",
+            "accroche": "La check-list du soir.",
+            "punchline": "Cochée, horodatée, signée par qui l'a faite.",
+            "resume": "Tu affectes tes équipes par poste et par zone. Chacun sait où il est attendu ce soir.",
+            "statut": "a_produire",
+            "dureeSecondes": null,
+            "videoUrl": null,
+            "tutorielUrl": "https://drive.google.com/file/d/174AfDA9zywpeMof070Mc33_doWgDcsp5/view",
+            "reseaux": {
+              "facebook": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "FoodEatUp"
+              },
+              "instagram": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "foodeatup.cocuisinage"
+              },
+              "tiktok": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "foodeatup"
+              },
+              "linkedin": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "FoodEatUp"
+              }
+            }
+          },
+          {
+            "id": "EP072",
+            "numero": 72,
+            "saison": 3,
+            "slug": "ep072-le-classeur",
+            "titre": "Le classeur",
+            "module": "Équipe & Planning",
+            "chapitre": "Absences",
+            "accroche": "Contrôle sanitaire. Ce matin.",
+            "punchline": "Tout l'historique HACCP, exporté en un clic.",
+            "resume": "Une absence, et tu vois immédiatement quel service est découvert. Tu remplaces avant l'ouverture.",
+            "statut": "a_produire",
+            "dureeSecondes": null,
+            "videoUrl": null,
+            "tutorielUrl": "https://drive.google.com/file/d/1gY1t4M0AUXTI54sCrB22r7yeiCDe3W35/view",
+            "reseaux": {
+              "facebook": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "FoodEatUp"
+              },
+              "instagram": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "foodeatup.cocuisinage"
+              },
+              "tiktok": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "foodeatup"
+              },
+              "linkedin": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "FoodEatUp"
+              }
+            }
+          },
+          {
+            "id": "EP073",
+            "numero": 73,
+            "saison": 3,
+            "slug": "ep073-pile-ou-face",
+            "titre": "Pile ou face",
+            "module": "Configuration",
+            "chapitre": "Établissement",
+            "accroche": "Combien tu commandes pour samedi ?",
+            "punchline": "Tes ventes le savent. Demande-leur.",
+            "resume": "Tu paramètres ton établissement une fois : horaires, coordonnées, TVA. Tout FoodEatUp s'appuie dessus.",
+            "statut": "a_produire",
+            "dureeSecondes": null,
+            "videoUrl": null,
+            "tutorielUrl": "https://drive.google.com/file/d/1gB8THFEj2zZuPj7UPJ99yXb9yRXsdPwi/view",
+            "reseaux": {
+              "facebook": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "FoodEatUp"
+              },
+              "instagram": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "foodeatup.cocuisinage"
+              },
+              "tiktok": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "foodeatup"
+              },
+              "linkedin": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "FoodEatUp"
+              }
+            }
+          },
+          {
+            "id": "EP074",
+            "numero": 74,
+            "saison": 3,
+            "slug": "ep074-la-liste-oubliee",
+            "titre": "La liste oubliée",
+            "module": "Configuration",
+            "chapitre": "Catégories",
+            "accroche": "Tu as oublié la liste.",
+            "punchline": "Elle se construit toute seule. Et elle part au fournisseur.",
+            "resume": "Tes catégories de produits, d'ingrédients et de recettes structurent tout le reste. Cinq minutes qui t'en font gagner cent.",
+            "statut": "a_produire",
+            "dureeSecondes": null,
+            "videoUrl": null,
+            "tutorielUrl": "https://drive.google.com/file/d/17ZDwHrTaTvQmiCmTYBwZnnJo_OLrXzyo/view",
+            "reseaux": {
+              "facebook": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "FoodEatUp"
+              },
+              "instagram": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "foodeatup.cocuisinage"
+              },
+              "tiktok": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "foodeatup"
+              },
+              "linkedin": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "FoodEatUp"
+              }
+            }
+          },
+          {
+            "id": "EP075",
+            "numero": 75,
+            "saison": 3,
+            "slug": "ep075-la-facture-dans-la-poche",
+            "titre": "La facture dans la poche",
+            "module": "Configuration",
+            "chapitre": "TVA",
+            "accroche": "Ta facture fournisseur.",
+            "punchline": "Photographie-la. Les prix se mettent à jour seuls.",
+            "resume": "Tes taux de TVA sont posés une fois, appliqués partout : caisse, factures, comptabilité.",
+            "statut": "a_produire",
+            "dureeSecondes": null,
+            "videoUrl": null,
+            "tutorielUrl": "https://drive.google.com/file/d/1_cZ3_hXyP6JA3IdvyXCg9AT0bTprgi5P/view",
+            "reseaux": {
+              "facebook": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "FoodEatUp"
+              },
+              "instagram": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "foodeatup.cocuisinage"
+              },
+              "tiktok": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "foodeatup"
+              },
+              "linkedin": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "FoodEatUp"
+              }
+            }
+          },
+          {
+            "id": "EP076",
+            "numero": 76,
+            "saison": 3,
+            "slug": "ep076-le-recomptage",
+            "titre": "Le recomptage",
+            "module": "Configuration",
+            "chapitre": "Zones et tables",
+            "accroche": "Ton inventaire du mardi.",
+            "punchline": "La production sort les ingrédients du stock. Automatiquement.",
+            "resume": "Tu dessines ta salle : zones, tables, capacités. Ton plan de salle devient vivant pendant le service.",
+            "statut": "a_produire",
+            "dureeSecondes": null,
+            "videoUrl": null,
+            "tutorielUrl": "https://drive.google.com/file/d/1tmPsD8uYQ5KAWQ1aVBqta0OAq7FpOMWC/view",
+            "reseaux": {
+              "facebook": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "FoodEatUp"
+              },
+              "instagram": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "foodeatup.cocuisinage"
+              },
+              "tiktok": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "foodeatup"
+              },
+              "linkedin": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "FoodEatUp"
+              }
+            }
+          },
+          {
+            "id": "EP077",
+            "numero": 77,
+            "saison": 3,
+            "slug": "ep077-le-devis-sur-le-set-de-table",
+            "titre": "Le devis sur le set de table",
+            "module": "Configuration",
+            "chapitre": "Équipements",
+            "accroche": "Ton devis pour le mariage de samedi.",
+            "punchline": "Devis, envoi, acceptation, facture. Une seule chaîne.",
+            "resume": "Tu déclares tes équipements et leurs seuils. Ils remontent ensuite dans ton suivi HACCP.",
+            "statut": "bloque",
+            "dureeSecondes": null,
+            "videoUrl": null,
+            "tutorielUrl": null,
+            "reseaux": {
+              "facebook": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "FoodEatUp"
+              },
+              "instagram": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "foodeatup.cocuisinage"
+              },
+              "tiktok": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "foodeatup"
+              },
+              "linkedin": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "FoodEatUp"
+              }
+            },
+            "blocage": "Le chapitre correspondant n'a pas encore de vidéo dans le Drive interne."
+          },
+          {
+            "id": "EP078",
+            "numero": 78,
+            "saison": 3,
+            "slug": "ep078-la-boite-a-chaussures",
+            "titre": "La boîte à chaussures",
+            "module": "Configuration",
+            "chapitre": "Utilisateurs",
+            "accroche": "Ta comptabilité annuelle.",
+            "punchline": "Chaque dépense rattachée à sa livraison. Toute l'année.",
+            "resume": "Chaque membre de l'équipe a son accès et ses droits. Tout le monde ne voit pas la compta.",
+            "statut": "bloque",
+            "dureeSecondes": null,
+            "videoUrl": null,
+            "tutorielUrl": null,
+            "reseaux": {
+              "facebook": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "FoodEatUp"
+              },
+              "instagram": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "foodeatup.cocuisinage"
+              },
+              "tiktok": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "foodeatup"
+              },
+              "linkedin": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "FoodEatUp"
+              }
+            },
+            "blocage": "Le chapitre correspondant n'a pas encore de vidéo dans le Drive interne."
+          },
+          {
+            "id": "EP079",
+            "numero": 79,
+            "saison": 3,
+            "slug": "ep079-les-quatorze-cartes",
+            "titre": "Les quatorze cartes",
+            "module": "Configuration",
+            "chapitre": "Import de carte",
+            "accroche": "Ton programme de fidélité.",
+            "punchline": "Un compte, tous les canaux, zéro carton.",
+            "resume": "Tu importes ta carte entière en un appel : catégories, sous-catégories, plats, prix.",
+            "statut": "bloque",
+            "dureeSecondes": null,
+            "videoUrl": null,
+            "tutorielUrl": null,
+            "reseaux": {
+              "facebook": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "FoodEatUp"
+              },
+              "instagram": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "foodeatup.cocuisinage"
+              },
+              "tiktok": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "foodeatup"
+              },
+              "linkedin": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "FoodEatUp"
+              }
+            },
+            "blocage": "Le chapitre correspondant n'a pas encore de vidéo dans le Drive interne."
+          },
+          {
+            "id": "EP080",
+            "numero": 80,
+            "saison": 3,
+            "slug": "ep080-le-tiroir-vide",
+            "titre": "Le tiroir vide",
+            "module": "Configuration",
+            "chapitre": "Abonnement",
+            "accroche": "Ouverture. Fond de caisse : ?",
+            "punchline": "Fond déclaré, opérateur identifié, service ouvert.",
+            "resume": "Tu vois ton plan, tes options actives et ce que tu consommes. Aucune ligne surprise en fin de mois.",
+            "statut": "a_produire",
+            "dureeSecondes": null,
+            "videoUrl": null,
+            "tutorielUrl": "https://drive.google.com/file/d/1k2HJJNz5jMR0jbV-Sr-u_p-ZGdWBmspG/view",
+            "reseaux": {
+              "facebook": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "FoodEatUp"
+              },
+              "instagram": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "foodeatup.cocuisinage"
+              },
+              "tiktok": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "foodeatup"
+              },
+              "linkedin": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "FoodEatUp"
+              }
+            }
+          },
+          {
+            "id": "EP081",
+            "numero": 81,
+            "saison": 3,
+            "slug": "ep081-huit-calculatrices",
+            "titre": "Huit calculatrices",
+            "module": "Comptabilité",
+            "chapitre": "Factures",
+            "accroche": "On peut séparer ?",
+            "punchline": "Oui. Par personne, par article, par montant.",
+            "resume": "Chaque commande produit sa facture, numérotée et conforme. Tu ne la ressaisis nulle part.",
+            "statut": "a_produire",
+            "dureeSecondes": null,
+            "videoUrl": null,
+            "tutorielUrl": "https://drive.google.com/file/d/1bN_o6_HYz9Za1kGyIst6INWrJJz9MagE/view",
+            "reseaux": {
+              "facebook": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "FoodEatUp"
+              },
+              "instagram": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "foodeatup.cocuisinage"
+              },
+              "tiktok": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "foodeatup"
+              },
+              "linkedin": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "FoodEatUp"
+              }
+            }
+          },
+          {
+            "id": "EP082",
+            "numero": 82,
+            "saison": 3,
+            "slug": "ep082-le-centime",
+            "titre": "Le centime",
+            "module": "Comptabilité",
+            "chapitre": "Devis",
+            "accroche": "Il manque un centime.",
+            "punchline": "Le Z calcule l'écart. Toi, tu rentres chez toi.",
+            "resume": "Un devis pour un groupe se crée en deux minutes et se transforme en commande quand il est accepté.",
+            "statut": "a_produire",
+            "dureeSecondes": null,
+            "videoUrl": null,
+            "tutorielUrl": "https://drive.google.com/file/d/1LRxi9R1Sbj1sQ0Cg4RZhpE_cxZHygksu/view",
+            "reseaux": {
+              "facebook": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "FoodEatUp"
+              },
+              "instagram": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "foodeatup.cocuisinage"
+              },
+              "tiktok": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "foodeatup"
+              },
+              "linkedin": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "FoodEatUp"
+              }
+            }
+          },
+          {
+            "id": "EP083",
+            "numero": 83,
+            "saison": 3,
+            "slug": "ep083-le-cri-dans-le-vide",
+            "titre": "Le cri dans le vide",
+            "module": "Comptabilité",
+            "chapitre": "Impayés",
+            "accroche": "J'AI DIT DEUX BURGERS !",
+            "punchline": "Chaque poste voit ses plats. Sans crier.",
+            "resume": "Tu vois ce qui est facturé, encaissé, et ce qui traîne. Les relances arrêtent d'être un jeu de mémoire.",
+            "statut": "a_produire",
+            "dureeSecondes": null,
+            "videoUrl": null,
+            "tutorielUrl": "https://drive.google.com/file/d/1sEyZker3x2-dybI2fKHlLjFv1gGig62-/view",
+            "reseaux": {
+              "facebook": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "FoodEatUp"
+              },
+              "instagram": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "foodeatup.cocuisinage"
+              },
+              "tiktok": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "foodeatup"
+              },
+              "linkedin": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "FoodEatUp"
+              }
+            }
+          },
+          {
+            "id": "EP084",
+            "numero": 84,
+            "saison": 3,
+            "slug": "ep084-le-qr-code-scotche",
+            "titre": "Le QR code scotché",
+            "module": "Comptabilité",
+            "chapitre": "Dépenses",
+            "accroche": "Commander à table.",
+            "punchline": "Un plan de salle, un QR par table. Ça marche.",
+            "resume": "Tu photographies la facture fournisseur, elle rentre dans tes dépenses avec ses lignes et son montant.",
+            "statut": "a_produire",
+            "dureeSecondes": null,
+            "videoUrl": null,
+            "tutorielUrl": "https://drive.google.com/file/d/13gsBIjozDhLKJBi0uOwqIE3ShA_V7d3R/view",
+            "reseaux": {
+              "facebook": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "FoodEatUp"
+              },
+              "instagram": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "foodeatup.cocuisinage"
+              },
+              "tiktok": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "foodeatup"
+              },
+              "linkedin": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "FoodEatUp"
+              }
+            }
+          },
+          {
+            "id": "EP085",
+            "numero": 85,
+            "saison": 3,
+            "slug": "ep085-le-ballon-qui-se-degonfle",
+            "titre": "Le ballon qui se dégonfle",
+            "module": "Comptabilité",
+            "chapitre": "Synthèse",
+            "accroche": "Table de 8. 20 h 30. Personne.",
+            "punchline": "No-show marqué, table libérée, soirée sauvée.",
+            "resume": "Chiffre d'affaires, dépenses, impayés, marge : la synthèse du mois tient sur un écran.",
+            "statut": "a_produire",
+            "dureeSecondes": null,
+            "videoUrl": null,
+            "tutorielUrl": "https://drive.google.com/file/d/1v1VoM-qg4mhn3XkvtlLeyYJYy2aDMzEK/view",
+            "reseaux": {
+              "facebook": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "FoodEatUp"
+              },
+              "instagram": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "foodeatup.cocuisinage"
+              },
+              "tiktok": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "foodeatup"
+              },
+              "linkedin": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "FoodEatUp"
+              }
+            }
+          },
+          {
+            "id": "EP086",
+            "numero": 86,
+            "saison": 3,
+            "slug": "ep086-le-telephone-que-personne-ne-prend",
+            "titre": "Le téléphone que personne ne prend",
+            "module": "Comptabilité",
+            "chapitre": "Export comptable",
+            "accroche": "Trois appels manqués pendant le coup de feu.",
+            "punchline": "Caroline décroche. Et elle prend la réservation.",
+            "resume": "Tu envoies à ton comptable un export propre. Le dimanche soir redevient un dimanche soir.",
+            "statut": "a_produire",
+            "dureeSecondes": null,
+            "videoUrl": null,
+            "tutorielUrl": "https://drive.google.com/file/d/1v1VoM-qg4mhn3XkvtlLeyYJYy2aDMzEK/view",
+            "reseaux": {
+              "facebook": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "FoodEatUp"
+              },
+              "instagram": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "foodeatup.cocuisinage"
+              },
+              "tiktok": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "foodeatup"
+              },
+              "linkedin": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "FoodEatUp"
+              }
+            }
+          },
+          {
+            "id": "EP087",
+            "numero": 87,
+            "saison": 3,
+            "slug": "ep087-les-trois-tablettes",
+            "titre": "Les trois tablettes",
+            "module": "Mon Site",
+            "chapitre": "Éditeur",
+            "accroche": "Trois plateformes. Trois écrans.",
+            "punchline": "Une seule cuisine. Un seul flux.",
+            "resume": "Tu actives l'éditeur, tu choisis ton template, ton site est en ligne le jour même, aux couleurs de ta maison.",
+            "statut": "a_produire",
+            "dureeSecondes": null,
+            "videoUrl": null,
+            "tutorielUrl": "https://drive.google.com/file/d/1qolUPeBCCB5sxVN_479AGHKtOdGCO77z/view",
+            "reseaux": {
+              "facebook": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "FoodEatUp"
+              },
+              "instagram": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "foodeatup.cocuisinage"
+              },
+              "tiktok": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "foodeatup"
+              },
+              "linkedin": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "FoodEatUp"
+              }
+            }
+          },
+          {
+            "id": "EP088",
+            "numero": 88,
+            "saison": 3,
+            "slug": "ep088-une-etoile",
+            "titre": "Une étoile",
+            "module": "Mon Site",
+            "chapitre": "Pages",
+            "accroche": "Un avis. Publié il y a six jours.",
+            "punchline": "Vu, répondu, traité. Le jour même.",
+            "resume": "Tu ajoutes tes pages : carte, avis, allergènes, recrutement. Elles se publient quand tu le décides.",
+            "statut": "a_produire",
+            "dureeSecondes": null,
+            "videoUrl": null,
+            "tutorielUrl": "https://drive.google.com/file/d/10KyerYfWEkSisld01WnoRb2NNzeromab/view",
+            "reseaux": {
+              "facebook": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "FoodEatUp"
+              },
+              "instagram": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "foodeatup.cocuisinage"
+              },
+              "tiktok": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "foodeatup"
+              },
+              "linkedin": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "FoodEatUp"
+              }
+            }
+          },
+          {
+            "id": "EP089",
+            "numero": 89,
+            "saison": 3,
+            "slug": "ep089-le-bocal-presque-vide",
+            "titre": "Le bocal presque vide",
+            "module": "Mon Site",
+            "chapitre": "Domaine",
+            "accroche": "Ton jeu concours.",
+            "punchline": "QR code, roue cadeaux, gagnants tracés.",
+            "resume": "Tu branches ton nom de domaine. Tes clients arrivent chez toi, pas sur une plateforme.",
+            "statut": "a_produire",
+            "dureeSecondes": null,
+            "videoUrl": null,
+            "tutorielUrl": "https://drive.google.com/file/d/14DlIfkcKDPDBLhKCc5WRxTKg6jehslQc/view",
+            "reseaux": {
+              "facebook": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "FoodEatUp"
+              },
+              "instagram": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "foodeatup.cocuisinage"
+              },
+              "tiktok": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "foodeatup"
+              },
+              "linkedin": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "FoodEatUp"
+              }
+            }
+          },
+          {
+            "id": "EP090",
+            "numero": 90,
+            "saison": 3,
+            "slug": "ep090-le-marc-de-cafe",
+            "titre": "Le marc de café",
+            "module": "Mon Site",
+            "chapitre": "Leads du site",
+            "accroche": "Ta prévision pour samedi.",
+            "punchline": "PrediBot lit tes données. Pas ton café.",
+            "resume": "Chaque demande de privatisation ou de contact devient un lead dans ton fichier client.",
+            "statut": "bloque",
+            "dureeSecondes": null,
+            "videoUrl": null,
+            "tutorielUrl": null,
+            "reseaux": {
+              "facebook": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "FoodEatUp"
+              },
+              "instagram": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "foodeatup.cocuisinage"
+              },
+              "tiktok": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "foodeatup"
+              },
+              "linkedin": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "FoodEatUp"
+              }
+            },
+            "blocage": "Le chapitre correspondant n'a pas encore de vidéo dans le Drive interne."
+          }
+        ]
+      },
+      {
+        "numero": 4,
+        "titre": "Se faire connaître",
+        "pitch": "Site, avis, campagnes : remplir la salle avant même l'ouverture.",
+        "episodes": [
+          {
+            "id": "EP091",
+            "numero": 91,
+            "saison": 4,
+            "slug": "ep091-le-petard-dans-le-tiramisu",
+            "titre": "Le pétard dans le tiramisu",
+            "module": "Réservation",
+            "chapitre": "2 - Ajouter une réservation",
+            "accroche": "Anniversaire de table 12.",
+            "punchline": "Les surprises, c'est bien. Les imprévus, non.",
+            "resume": "L'anniversaire est noté à la réservation, avec le nombre de couverts et la demande spéciale. La cuisine et la salle le savent avant que le client arrive.",
+            "statut": "a_produire",
+            "dureeSecondes": null,
+            "videoUrl": null,
+            "tutorielUrl": "https://drive.google.com/file/d/1ITy-Ia2Q3FSeKSRRd4bWEFw4eDlzFZ6q/view",
+            "reseaux": {
+              "facebook": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "FoodEatUp"
+              },
+              "instagram": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "foodeatup.cocuisinage"
+              },
+              "tiktok": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "foodeatup"
+              },
+              "linkedin": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "FoodEatUp"
+              }
+            }
+          },
+          {
+            "id": "EP092",
+            "numero": 92,
+            "saison": 4,
+            "slug": "ep092-le-super-heros-qui-a-reserve",
+            "titre": "Le super-héros qui a réservé",
+            "module": "Réservation",
+            "chapitre": "3 - Gérer et no-shows",
+            "accroche": "Lui, il avait réservé.",
+            "punchline": "Ses quatre-vingts fans, non.",
+            "resume": "Quatre-vingts personnes d'un coup, ça se voit venir. Tu ouvres ou tu fermes tes créneaux en direct, et la liste d'attente prend le relais.",
+            "statut": "a_produire",
+            "dureeSecondes": null,
+            "videoUrl": null,
+            "tutorielUrl": "https://drive.google.com/file/d/1DZKefLYV1_F9_uL-sJ79fb5srfGnROBp/view",
+            "reseaux": {
+              "facebook": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "FoodEatUp"
+              },
+              "instagram": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "foodeatup.cocuisinage"
+              },
+              "tiktok": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "foodeatup"
+              },
+              "linkedin": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "FoodEatUp"
+              }
+            }
+          },
+          {
+            "id": "EP093",
+            "numero": 93,
+            "saison": 4,
+            "slug": "ep093-le-chef-part-a-la-peche",
+            "titre": "Le chef part à la pêche",
+            "module": "StockVision",
+            "chapitre": "3 - Prédictions des commandes",
+            "accroche": "Rupture de stock, 20 h 15.",
+            "punchline": "Anticiper, c'est moins sportif.",
+            "resume": "FoodEatUp prévoit tes ventes de poisson à partir de ton historique. Tu commandes la bonne quantité le mardi, pas la canne à pêche le samedi.",
+            "statut": "a_produire",
+            "dureeSecondes": null,
+            "videoUrl": null,
+            "tutorielUrl": "https://drive.google.com/file/d/14GntP3F4hhloVyYBDJrPCj55Ny1gvDx9/view",
+            "reseaux": {
+              "facebook": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "FoodEatUp"
+              },
+              "instagram": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "foodeatup.cocuisinage"
+              },
+              "tiktok": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "foodeatup"
+              },
+              "linkedin": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "FoodEatUp"
+              }
+            }
+          },
+          {
+            "id": "EP094",
+            "numero": 94,
+            "saison": 4,
+            "slug": "ep094-le-robot-livreur-qui-double-le-scooter",
+            "titre": "Le robot livreur qui double le scooter",
+            "module": "HubRise",
+            "chapitre": "4 - Centraliser les commandes",
+            "accroche": "2026, la livraison change de main.",
+            "punchline": "Autant que tes commandes arrivent au bon endroit.",
+            "resume": "Peu importe qui livre. Tes commandes arrivent dans la même file, avec la bonne adresse et le bon statut, jusqu'à la remise au client.",
+            "statut": "bloque",
+            "dureeSecondes": null,
+            "videoUrl": null,
+            "tutorielUrl": null,
+            "reseaux": {
+              "facebook": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "FoodEatUp"
+              },
+              "instagram": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "foodeatup.cocuisinage"
+              },
+              "tiktok": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "foodeatup"
+              },
+              "linkedin": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "FoodEatUp"
+              }
+            },
+            "blocage": "Le chapitre correspondant n'a pas encore de vidéo dans le Drive interne."
+          },
+          {
+            "id": "EP095",
+            "numero": 95,
+            "saison": 4,
+            "slug": "ep095-l-eclipse-de-13-h-12",
+            "titre": "L'éclipse de 13 h 12",
+            "module": "KDS",
+            "chapitre": "3 - Gérer le KDS en direct",
+            "accroche": "Le service s'est arrêté deux minutes.",
+            "punchline": "Le reste du temps, il ne devrait jamais s'arrêter.",
+            "resume": "Sur le KDS, chaque plat a son chrono. Tu vois ce qui traîne au moment où ça traîne, et tu relances le bon poste.",
+            "statut": "bloque",
+            "dureeSecondes": null,
+            "videoUrl": null,
+            "tutorielUrl": null,
+            "reseaux": {
+              "facebook": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "FoodEatUp"
+              },
+              "instagram": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "foodeatup.cocuisinage"
+              },
+              "tiktok": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "foodeatup"
+              },
+              "linkedin": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "FoodEatUp"
+              }
+            },
+            "blocage": "Le chapitre correspondant n'a pas encore de vidéo dans le Drive interne."
+          },
+          {
+            "id": "EP096",
+            "numero": 96,
+            "saison": 4,
+            "slug": "ep096-canicule-le-beurre-fugueur",
+            "titre": "Canicule : le beurre fugueur",
+            "module": "HACCP",
+            "chapitre": "relevé de température",
+            "accroche": "39° en cuisine.",
+            "punchline": "Une alerte température, et tu sauves la marchandise.",
+            "resume": "Trente-neuf degrés en cuisine, ton frigo souffre. Le relevé hors seuil te prévient tout de suite. Tu sauves la marchandise.",
+            "statut": "a_produire",
+            "dureeSecondes": null,
+            "videoUrl": null,
+            "tutorielUrl": "https://drive.google.com/file/d/14OmsNUd3EMgWNxGVvmOwLgR3ZloWKNKW/view",
+            "reseaux": {
+              "facebook": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "FoodEatUp"
+              },
+              "instagram": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "foodeatup.cocuisinage"
+              },
+              "tiktok": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "foodeatup"
+              },
+              "linkedin": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "FoodEatUp"
+              }
+            }
+          },
+          {
+            "id": "EP097",
+            "numero": 97,
+            "saison": 4,
+            "slug": "ep097-le-mur-de-tablettes",
+            "titre": "Le mur de tablettes",
+            "module": "HubRise",
+            "chapitre": "2 - Relier Uber Eats et Deliveroo",
+            "accroche": "Six plateformes. Six alertes.",
+            "punchline": "Une seule commande, un seul écran.",
+            "resume": "Tes plateformes envoient tout dans FoodEatUp. Six alertes deviennent une file de commandes. La tablette murale, tu peux la ranger.",
+            "statut": "bloque",
+            "dureeSecondes": null,
+            "videoUrl": null,
+            "tutorielUrl": null,
+            "reseaux": {
+              "facebook": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "FoodEatUp"
+              },
+              "instagram": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "foodeatup.cocuisinage"
+              },
+              "tiktok": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "foodeatup"
+              },
+              "linkedin": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "FoodEatUp"
+              }
+            },
+            "blocage": "Le chapitre correspondant n'a pas encore de vidéo dans le Drive interne."
+          },
+          {
+            "id": "EP098",
+            "numero": 98,
+            "saison": 4,
+            "slug": "ep098-le-robot-serveur-qui-bugge-et-danse",
+            "titre": "Le robot serveur qui bugge et danse",
+            "module": "Service",
+            "chapitre": "1 - Commandes multi-canaux",
+            "accroche": "Ton nouveau serveur, en période d'essai.",
+            "punchline": "L'IA, c'est utile quand elle sert à quelque chose.",
+            "resume": "L'intelligence utile, c'est celle qui range tes commandes, pas celle qui danse. Ici, chaque canal alimente le même service.",
+            "statut": "a_produire",
+            "dureeSecondes": null,
+            "videoUrl": null,
+            "tutorielUrl": "https://drive.google.com/file/d/10GjJltEF3utZtfmwHR0qLZ8CTQr5_ioC/view",
+            "reseaux": {
+              "facebook": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "FoodEatUp"
+              },
+              "instagram": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "foodeatup.cocuisinage"
+              },
+              "tiktok": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "foodeatup"
+              },
+              "linkedin": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "FoodEatUp"
+              }
+            }
+          },
+          {
+            "id": "EP099",
+            "numero": 99,
+            "saison": 4,
+            "slug": "ep099-le-repondeur-prehistorique",
+            "titre": "Le répondeur préhistorique",
+            "module": "Caroline",
+            "chapitre": "1 - Configurer voix et prompts",
+            "accroche": "Quarante appels pendant le rush.",
+            "punchline": "Quelqu'un devrait répondre. Ce ne sera pas toi.",
+            "resume": "Caroline répond au téléphone pendant ton rush. Elle prend la réservation, la note, et te la remonte. Aucun appel ne tombe dans le vide.",
+            "statut": "a_produire",
+            "dureeSecondes": null,
+            "videoUrl": null,
+            "tutorielUrl": "https://drive.google.com/file/d/1bMK0HmSH2_JZ1kLF-eaO5a08o50V-WOE/view",
+            "reseaux": {
+              "facebook": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "FoodEatUp"
+              },
+              "instagram": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "foodeatup.cocuisinage"
+              },
+              "tiktok": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "foodeatup"
+              },
+              "linkedin": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "FoodEatUp"
+              }
+            }
+          },
+          {
+            "id": "EP100",
+            "numero": 100,
+            "saison": 4,
+            "slug": "ep100-l-influenceur-au-ring-light",
+            "titre": "L'influenceur au ring light",
+            "module": "Marketing",
+            "chapitre": "1 - Débloquer les avis",
+            "accroche": "Il a mis vingt minutes à filmer.",
+            "punchline": "Et deux minutes à te mettre deux étoiles.",
+            "resume": "Tes avis remontent au même endroit, site et Google. Tu réponds à celui qui t'a mis deux étoiles avant qu'il devienne ta vitrine.",
+            "statut": "a_produire",
+            "dureeSecondes": null,
+            "videoUrl": null,
+            "tutorielUrl": "https://drive.google.com/file/d/1Ojw6yesSa0nYEvoCxyNO98EarXVrfaqD/view",
+            "reseaux": {
+              "facebook": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "FoodEatUp"
+              },
+              "instagram": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "foodeatup.cocuisinage"
+              },
+              "tiktok": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "foodeatup"
+              },
+              "linkedin": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "FoodEatUp"
+              }
+            }
+          },
+          {
+            "id": "EP101",
+            "numero": 101,
+            "saison": 4,
+            "slug": "ep101-pov-thriller-comptable",
+            "titre": "POV : thriller comptable",
+            "module": "Caisse POS",
+            "chapitre": "6 - Clôturer sa caisse",
+            "accroche": "Rapprochement des caisses. Vendredi soir.",
+            "punchline": "Ça devrait être une ligne, pas une enquête.",
+            "resume": "La clôture, c'est un bouton. Le détail par moyen de paiement, la TVA, l'écart : tout est là, sans calculatrice ni suspense.",
+            "statut": "bloque",
+            "dureeSecondes": null,
+            "videoUrl": null,
+            "tutorielUrl": null,
+            "reseaux": {
+              "facebook": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "FoodEatUp"
+              },
+              "instagram": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "foodeatup.cocuisinage"
+              },
+              "tiktok": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "foodeatup"
+              },
+              "linkedin": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "FoodEatUp"
+              }
+            },
+            "blocage": "Le chapitre correspondant n'a pas encore de vidéo dans le Drive interne."
+          },
+          {
+            "id": "EP102",
+            "numero": 102,
+            "saison": 4,
+            "slug": "ep102-l-inspecteur-surprise",
+            "titre": "L'inspecteur surprise",
+            "module": "HACCP",
+            "chapitre": "checklists hygiène",
+            "accroche": "Contrôle surprise. Ou pas.",
+            "punchline": "Le jour où c'est le vrai, tu ne bouges pas.",
+            "resume": "Ta checklist est validée chaque jour par ton équipe. Le jour du vrai contrôle, tu ouvres l'historique et tu ne bouges pas.",
+            "statut": "a_produire",
+            "dureeSecondes": null,
+            "videoUrl": null,
+            "tutorielUrl": "https://drive.google.com/file/d/1BiubjVB2WUaP8COM9a9V6_DMWNc1ltvh/view",
+            "reseaux": {
+              "facebook": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "FoodEatUp"
+              },
+              "instagram": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "foodeatup.cocuisinage"
+              },
+              "tiktok": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "foodeatup"
+              },
+              "linkedin": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "FoodEatUp"
+              }
+            }
+          },
+          {
+            "id": "EP103",
+            "numero": 103,
+            "saison": 4,
+            "slug": "ep103-le-car-de-40-sans-reservation",
+            "titre": "Le car de 40 sans réservation",
+            "module": "Réservation",
+            "chapitre": "1 - Réservations du jour",
+            "accroche": "Quarante couverts. Sans prévenir.",
+            "punchline": "Prévenu, tu aurais dit oui.",
+            "resume": "Un groupe qui arrive, tu vérifies la disponibilité réelle en trois secondes : tables libres, horaires, capacité. Tu dis oui en connaissance de cause.",
+            "statut": "a_produire",
+            "dureeSecondes": null,
+            "videoUrl": null,
+            "tutorielUrl": "https://drive.google.com/file/d/1ZcJIts_SFzUvjChwJSxcCGtnlT3NHOCP/view",
+            "reseaux": {
+              "facebook": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "FoodEatUp"
+              },
+              "instagram": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "foodeatup.cocuisinage"
+              },
+              "tiktok": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "foodeatup"
+              },
+              "linkedin": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "FoodEatUp"
+              }
+            }
+          },
+          {
+            "id": "EP104",
+            "numero": 104,
+            "saison": 4,
+            "slug": "ep104-le-no-show-western",
+            "titre": "Le no-show western",
+            "module": "Réservation",
+            "chapitre": "3 - Gérer et no-shows",
+            "accroche": "Table de huit. 20 h 30.",
+            "punchline": "Un no-show, ça se prévient.",
+            "resume": "Tu marques le no-show, la table se libère immédiatement et repart à la vente. Le client, lui, garde son historique.",
+            "statut": "a_produire",
+            "dureeSecondes": null,
+            "videoUrl": null,
+            "tutorielUrl": "https://drive.google.com/file/d/1DZKefLYV1_F9_uL-sJ79fb5srfGnROBp/view",
+            "reseaux": {
+              "facebook": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "FoodEatUp"
+              },
+              "instagram": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "foodeatup.cocuisinage"
+              },
+              "tiktok": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "foodeatup"
+              },
+              "linkedin": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "FoodEatUp"
+              }
+            }
+          },
+          {
+            "id": "EP105",
+            "numero": 105,
+            "saison": 4,
+            "slug": "ep105-le-duel-de-la-derniere-table",
+            "titre": "Le duel de la dernière table",
+            "module": "Mon Site",
+            "chapitre": "6 - Réservations et horaires",
+            "accroche": "Dernière table du samedi.",
+            "punchline": "Le plus rapide gagne. Rends-la réservable en ligne.",
+            "resume": "Tes créneaux sont réservables en ligne, en direct, avec tes vraies disponibilités. Le premier qui réserve a la table.",
+            "statut": "bloque",
+            "dureeSecondes": null,
+            "videoUrl": null,
+            "tutorielUrl": null,
+            "reseaux": {
+              "facebook": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "FoodEatUp"
+              },
+              "instagram": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "foodeatup.cocuisinage"
+              },
+              "tiktok": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "foodeatup"
+              },
+              "linkedin": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "FoodEatUp"
+              }
+            },
+            "blocage": "Le chapitre correspondant n'a pas encore de vidéo dans le Drive interne."
+          },
+          {
+            "id": "EP106",
+            "numero": 106,
+            "saison": 4,
+            "slug": "ep106-l-addition-en-quatorze-parts",
+            "titre": "L'addition en quatorze parts",
+            "module": "Caisse POS",
+            "chapitre": "5 - Séparer une addition",
+            "accroche": "On peut payer chacun ?",
+            "punchline": "Oui. En trois secondes, pas en trente minutes.",
+            "resume": "Quatorze parts, quatorze cartes : tu découpes l'addition depuis l'écran, chacun paie ce qu'il doit, le reste dû s'affiche en direct.",
+            "statut": "bloque",
+            "dureeSecondes": null,
+            "videoUrl": null,
+            "tutorielUrl": null,
+            "reseaux": {
+              "facebook": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "FoodEatUp"
+              },
+              "instagram": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "foodeatup.cocuisinage"
+              },
+              "tiktok": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "foodeatup"
+              },
+              "linkedin": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "FoodEatUp"
+              }
+            },
+            "blocage": "Le chapitre correspondant n'a pas encore de vidéo dans le Drive interne."
+          },
+          {
+            "id": "EP107",
+            "numero": 107,
+            "saison": 4,
+            "slug": "ep107-le-magicien-de-l-addition",
+            "titre": "Le magicien de l'addition",
+            "module": "Caisse POS",
+            "chapitre": "3 - Encaisser une commande",
+            "accroche": "Tout le monde a un tour.",
+            "punchline": "Ta caisse, elle, ne perd jamais une addition.",
+            "resume": "L'addition est rattachée à la table dès la commande. Elle ne se perd pas, elle ne s'oublie pas, elle ne disparaît pas.",
+            "statut": "bloque",
+            "dureeSecondes": null,
+            "videoUrl": null,
+            "tutorielUrl": null,
+            "reseaux": {
+              "facebook": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "FoodEatUp"
+              },
+              "instagram": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "foodeatup.cocuisinage"
+              },
+              "tiktok": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "foodeatup"
+              },
+              "linkedin": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "FoodEatUp"
+              }
+            },
+            "blocage": "Le chapitre correspondant n'a pas encore de vidéo dans le Drive interne."
+          },
+          {
+            "id": "EP108",
+            "numero": 108,
+            "saison": 4,
+            "slug": "ep108-le-poulpe-du-pass",
+            "titre": "Le poulpe du pass",
+            "module": "KDS",
+            "chapitre": "2 - Vue KDS par poste",
+            "accroche": "Il te faudrait six bras.",
+            "punchline": "Ou un seul outil qui fait le reste.",
+            "resume": "Chaque poste voit ce qui le concerne, et seulement ça. Tu n'as pas besoin de six bras, tu as besoin de six écrans qui parlent entre eux.",
+            "statut": "a_produire",
+            "dureeSecondes": null,
+            "videoUrl": null,
+            "tutorielUrl": "https://drive.google.com/file/d/1PmYYGKH00qGUcMc1zehHng3C9fQiH84O/view",
+            "reseaux": {
+              "facebook": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "FoodEatUp"
+              },
+              "instagram": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "foodeatup.cocuisinage"
+              },
+              "tiktok": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "foodeatup"
+              },
+              "linkedin": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "FoodEatUp"
+              }
+            }
+          },
+          {
+            "id": "EP109",
+            "numero": 109,
+            "saison": 4,
+            "slug": "ep109-le-kombucha-qui-explose",
+            "titre": "Le kombucha qui explose",
+            "module": "HACCP",
+            "chapitre": "traçabilité",
+            "accroche": "Ta cave à ferments.",
+            "punchline": "Suivie et datée, elle ne t'explose pas à la figure.",
+            "resume": "Chaque production est datée, tracée, rattachée à son lot. Ce qui fermente en cave n'est plus une surprise.",
+            "statut": "a_produire",
+            "dureeSecondes": null,
+            "videoUrl": null,
+            "tutorielUrl": "https://drive.google.com/file/d/1qwwJNILNZv3EpqCowlCFUhxeC_2qyZgm/view",
+            "reseaux": {
+              "facebook": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "FoodEatUp"
+              },
+              "instagram": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "foodeatup.cocuisinage"
+              },
+              "tiktok": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "foodeatup"
+              },
+              "linkedin": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "FoodEatUp"
+              }
+            }
+          },
+          {
+            "id": "EP110",
+            "numero": 110,
+            "saison": 4,
+            "slug": "ep110-le-menu-100-matcha",
+            "titre": "Le menu 100 % matcha",
+            "module": "StockVision",
+            "chapitre": "18 - Statistiques par module",
+            "accroche": "Tu suis toutes les tendances.",
+            "punchline": "Regarde surtout lesquelles se vendent.",
+            "resume": "La tendance, tu la testes. Tu regardes ce que ce plat rapporte vraiment, et tu décides de le garder ou pas sur des chiffres.",
+            "statut": "a_produire",
+            "dureeSecondes": null,
+            "videoUrl": null,
+            "tutorielUrl": "https://drive.google.com/file/d/13BlvDmhkU0IsKHXo77VHM7TwMSHKHmpv/view",
+            "reseaux": {
+              "facebook": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "FoodEatUp"
+              },
+              "instagram": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "foodeatup.cocuisinage"
+              },
+              "tiktok": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "foodeatup"
+              },
+              "linkedin": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "FoodEatUp"
+              }
+            }
+          },
+          {
+            "id": "EP111",
+            "numero": 111,
+            "saison": 4,
+            "slug": "ep111-l-imprimante-3d-qui-deraille",
+            "titre": "L'imprimante 3D qui déraille",
+            "module": "StockVision",
+            "chapitre": "12 - Valider une production",
+            "accroche": "La cuisine du futur.",
+            "punchline": "Le futur utile, c'est celui qui te fait gagner du temps.",
+            "resume": "La production planifiée sort ses ingrédients du stock, sa quantité est validée, sa traçabilité écrite. Le gain de temps est là, pas dans le gadget.",
+            "statut": "a_produire",
+            "dureeSecondes": null,
+            "videoUrl": null,
+            "tutorielUrl": "https://drive.google.com/file/d/1dGFzc7owIIEXOJoqqbfZ9aw_J0d1OLLw/view",
+            "reseaux": {
+              "facebook": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "FoodEatUp"
+              },
+              "instagram": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "foodeatup.cocuisinage"
+              },
+              "tiktok": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "foodeatup"
+              },
+              "linkedin": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "FoodEatUp"
+              }
+            }
+          },
+          {
+            "id": "EP112",
+            "numero": 112,
+            "saison": 4,
+            "slug": "ep112-le-casque-de-realite-augmentee",
+            "titre": "Le casque de réalité augmentée",
+            "module": "Mon Site",
+            "chapitre": "2 - Choisir ton template",
+            "accroche": "La carte du futur.",
+            "punchline": "Ou juste une carte en ligne qui marche.",
+            "resume": "Ta carte en ligne, propre, à jour, consultable par QR à table. Pas de casque, pas d'appli à installer.",
+            "statut": "a_produire",
+            "dureeSecondes": null,
+            "videoUrl": null,
+            "tutorielUrl": "https://drive.google.com/file/d/1vf3VeotBty8YMbxSwe8ZnH0v5jjfq4VS/view",
+            "reseaux": {
+              "facebook": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "FoodEatUp"
+              },
+              "instagram": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "foodeatup.cocuisinage"
+              },
+              "tiktok": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "foodeatup"
+              },
+              "linkedin": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "FoodEatUp"
+              }
+            }
+          },
+          {
+            "id": "EP113",
+            "numero": 113,
+            "saison": 4,
+            "slug": "ep113-le-drone-qui-se-trompe-de-balcon",
+            "titre": "Le drone qui se trompe de balcon",
+            "module": "HubRise",
+            "chapitre": "4 - Centraliser les commandes",
+            "accroche": "Livraison réussie. Presque.",
+            "punchline": "Un suivi de commande, et personne ne mange ta pizza.",
+            "resume": "Le suivi de commande affiche l'état en direct, de la prise à la remise. Tu sais toujours où est la commande et chez qui.",
+            "statut": "bloque",
+            "dureeSecondes": null,
+            "videoUrl": null,
+            "tutorielUrl": null,
+            "reseaux": {
+              "facebook": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "FoodEatUp"
+              },
+              "instagram": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "foodeatup.cocuisinage"
+              },
+              "tiktok": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "foodeatup"
+              },
+              "linkedin": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "FoodEatUp"
+              }
+            },
+            "blocage": "Le chapitre correspondant n'a pas encore de vidéo dans le Drive interne."
+          },
+          {
+            "id": "EP114",
+            "numero": 114,
+            "saison": 4,
+            "slug": "ep114-la-chore-pendant-que-ca-brule",
+            "titre": "La choré pendant que ça brûle",
+            "module": "Marketing",
+            "chapitre": "5 - Lancer une campagne",
+            "accroche": "Ton community manager, c'est ta brigade.",
+            "punchline": "Poste. Mais garde un œil sur le service.",
+            "resume": "Ce que ton équipe filme, tu peux l'exploiter : campagne, segment, envoi, résultats. Publier, oui — mesurer, encore mieux.",
+            "statut": "a_produire",
+            "dureeSecondes": null,
+            "videoUrl": null,
+            "tutorielUrl": "https://drive.google.com/file/d/1L1RnS8OdOEMKsVjDho2rKnj4gzihgfW9/view",
+            "reseaux": {
+              "facebook": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "FoodEatUp"
+              },
+              "instagram": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "foodeatup.cocuisinage"
+              },
+              "tiktok": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "foodeatup"
+              },
+              "linkedin": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "FoodEatUp"
+              }
+            }
+          },
+          {
+            "id": "EP115",
+            "numero": 115,
+            "saison": 4,
+            "slug": "ep115-les-poules-du-potager-du-toit",
+            "titre": "Les poules du potager du toit",
+            "module": "StockVision",
+            "chapitre": "16 - Mouvements de stock",
+            "accroche": "Circuit court, très court.",
+            "punchline": "Compte ce qui rentre. Et ce qui sort.",
+            "resume": "Ce qui rentre, ce qui sort, ce qui se perd. Circuit court ou pas, la quantité doit être comptée.",
+            "statut": "a_produire",
+            "dureeSecondes": null,
+            "videoUrl": null,
+            "tutorielUrl": "https://drive.google.com/file/d/124mIM7NudoQy5wun_rlSZ6MCrJ2wNykL/view",
+            "reseaux": {
+              "facebook": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "FoodEatUp"
+              },
+              "instagram": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "foodeatup.cocuisinage"
+              },
+              "tiktok": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "foodeatup"
+              },
+              "linkedin": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "FoodEatUp"
+              }
+            }
+          },
+          {
+            "id": "EP116",
+            "numero": 116,
+            "saison": 4,
+            "slug": "ep116-le-stagiaire-et-le-mur-de-craie",
+            "titre": "Le stagiaire et le mur de craie",
+            "module": "KDS",
+            "chapitre": "1 - Créer tes postes KDS",
+            "accroche": "Ton système de commandes.",
+            "punchline": "Il tient sur un mur. Il tiendrait sur un écran.",
+            "resume": "Tes commandes tiennent sur un écran, pas sur un mur. Chaque poste voit les siennes, dans l'ordre, avec son temps.",
+            "statut": "a_produire",
+            "dureeSecondes": null,
+            "videoUrl": null,
+            "tutorielUrl": "https://drive.google.com/file/d/1Q25eSBcjIuq1XkHnJkFN_QJyK23o1GVg/view",
+            "reseaux": {
+              "facebook": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "FoodEatUp"
+              },
+              "instagram": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "foodeatup.cocuisinage"
+              },
+              "tiktok": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "foodeatup"
+              },
+              "linkedin": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "FoodEatUp"
+              }
+            }
+          },
+          {
+            "id": "EP117",
+            "numero": 117,
+            "saison": 4,
+            "slug": "ep117-le-plat-etoile-en-dix-minutes",
+            "titre": "Le plat étoilé en dix minutes",
+            "module": "StockVision",
+            "chapitre": "1 - Ma carte, fiche recette",
+            "accroche": "Le défi à dix minutes.",
+            "punchline": "Une fiche technique, et c'est dix minutes tous les jours.",
+            "resume": "La fiche technique fixe les quantités, les étapes et le coût. Le plat sort en dix minutes, tous les jours, par n'importe qui de ta brigade.",
+            "statut": "a_produire",
+            "dureeSecondes": null,
+            "videoUrl": null,
+            "tutorielUrl": "https://drive.google.com/file/d/1yqhyPMj9uBq1awmqTwUhisuBJBpY5kt-/view",
+            "reseaux": {
+              "facebook": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "FoodEatUp"
+              },
+              "instagram": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "foodeatup.cocuisinage"
+              },
+              "tiktok": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "foodeatup"
+              },
+              "linkedin": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "FoodEatUp"
+              }
+            }
+          },
+          {
+            "id": "EP118",
+            "numero": 118,
+            "saison": 4,
+            "slug": "ep118-la-file-du-brunch",
+            "titre": "La file du brunch",
+            "module": "Mon Site",
+            "chapitre": "5 - Créer un site par IA",
+            "accroche": "Le brunch du dimanche.",
+            "punchline": "Ils feraient la queue chez toi aussi. Encore faut-il pouvoir réserver.",
+            "resume": "Ton site de réservation et de commande est prêt en un clic, depuis ta carte. La file d'attente devient un carnet plein.",
+            "statut": "a_produire",
+            "dureeSecondes": null,
+            "videoUrl": null,
+            "tutorielUrl": "https://drive.google.com/file/d/1MEMdJJMq2MhQ6H-dU5Nb5ls8ifoqM3U4/view",
+            "reseaux": {
+              "facebook": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "FoodEatUp"
+              },
+              "instagram": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "foodeatup.cocuisinage"
+              },
+              "tiktok": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "foodeatup"
+              },
+              "linkedin": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "FoodEatUp"
+              }
+            }
+          },
+          {
+            "id": "EP119",
+            "numero": 119,
+            "saison": 4,
+            "slug": "ep119-la-mascotte-poulet-et-le-vent",
+            "titre": "La mascotte poulet et le vent",
+            "module": "Marketing",
+            "chapitre": "9 - Ciblage et consentement",
+            "accroche": "Ta stratégie d'acquisition.",
+            "punchline": "Cinq cents tracts, zéro donnée.",
+            "resume": "Cinq cents tracts, zéro donnée. Ici, chaque client capté entre dans ton fichier, avec son consentement, et devient une campagne.",
+            "statut": "a_produire",
+            "dureeSecondes": null,
+            "videoUrl": null,
+            "tutorielUrl": "https://drive.google.com/file/d/16Ecg7UgVAVDat_ImQG5q-QKYLtAQjX_m/view",
+            "reseaux": {
+              "facebook": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "FoodEatUp"
+              },
+              "instagram": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "foodeatup.cocuisinage"
+              },
+              "tiktok": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "foodeatup"
+              },
+              "linkedin": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "FoodEatUp"
+              }
+            }
+          },
+          {
+            "id": "EP120",
+            "numero": 120,
+            "saison": 4,
+            "slug": "ep120-la-reunion-des-dix-logiciels",
+            "titre": "La réunion des dix logiciels",
+            "module": "PrediBot",
+            "chapitre": "1 - Lire ses prévisions",
+            "accroche": "Réunion de tes dix logiciels.",
+            "punchline": "Ils ne se parlent toujours pas. FoodEatUp, si.",
+            "resume": "Une base, un écran, une équipe. Ta caisse, ta cuisine, ton stock et ton marketing lisent les mêmes données. Ils finissent enfin par se parler.",
+            "statut": "a_produire",
+            "dureeSecondes": null,
+            "videoUrl": null,
+            "tutorielUrl": "https://drive.google.com/file/d/1MWkfZ-OZ_qv2z6QD9VPwabO5XnGd5UaB/view",
+            "reseaux": {
+              "facebook": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "FoodEatUp"
+              },
+              "instagram": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "foodeatup.cocuisinage"
+              },
+              "tiktok": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "foodeatup"
+              },
+              "linkedin": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "FoodEatUp"
+              }
+            }
+          }
+        ]
+      },
+      {
+        "numero": 5,
+        "titre": "Le restaurant qui anticipe",
+        "pitch": "Prévisions, HACCP, pilotage : voir venir au lieu de subir.",
+        "episodes": [
+          {
+            "id": "EP121",
+            "numero": 121,
+            "saison": 5,
+            "slug": "ep121-le-modificateur-infini",
+            "titre": "Le modificateur infini",
+            "module": "Service",
+            "chapitre": "3 - Envoi direct cuisine",
+            "accroche": "Alors, sans oignon, mais…",
+            "punchline": "Une commande complexe, ça se saisit. Pas ça se subit.",
+            "resume": "Les modifications se saisissent sur la commande : sans oignon, cuisson, allergie. Elles partent en cuisine avec le plat, écrites noir sur blanc.",
+            "statut": "a_produire",
+            "dureeSecondes": null,
+            "videoUrl": null,
+            "tutorielUrl": "https://drive.google.com/file/d/1PucAO7TE28El_TCLBrAOjct2VJS4mZu2/view",
+            "reseaux": {
+              "facebook": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "FoodEatUp"
+              },
+              "instagram": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "foodeatup.cocuisinage"
+              },
+              "tiktok": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "foodeatup"
+              },
+              "linkedin": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "FoodEatUp"
+              }
+            }
+          },
+          {
+            "id": "EP122",
+            "numero": 122,
+            "saison": 5,
+            "slug": "ep122-comme-d-habitude",
+            "titre": "« Comme d'habitude »",
+            "module": "Marketing",
+            "chapitre": "20 - Vue client fidélité",
+            "accroche": "Il dit « comme d'habitude ».",
+            "punchline": "Ton fichier client saurait, lui.",
+            "resume": "La fiche client te dit qui il est, ce qu'il commande et quand il est venu la dernière fois. « Comme d'habitude » devient une information, pas un bluff.",
+            "statut": "a_produire",
+            "dureeSecondes": null,
+            "videoUrl": null,
+            "tutorielUrl": "https://drive.google.com/file/d/1nUloQCmx2rMx7VpeoN4RjFb9Coj-EfuD/view",
+            "reseaux": {
+              "facebook": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "FoodEatUp"
+              },
+              "instagram": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "foodeatup.cocuisinage"
+              },
+              "tiktok": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "foodeatup"
+              },
+              "linkedin": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "FoodEatUp"
+              }
+            }
+          },
+          {
+            "id": "EP123",
+            "numero": 123,
+            "saison": 5,
+            "slug": "ep123-le-vegetarien-du-dessert",
+            "titre": "Le végétarien du dessert",
+            "module": "StockVision",
+            "chapitre": "1 - Ma carte, allergènes",
+            "accroche": "Il annonce ça au dessert.",
+            "punchline": "Les régimes et les allergènes, ça se note à la réservation.",
+            "resume": "Les allergènes et les régimes sont portés par ta carte et par la réservation. L'info arrive en cuisine avant l'entrée, pas au dessert.",
+            "statut": "a_produire",
+            "dureeSecondes": null,
+            "videoUrl": null,
+            "tutorielUrl": "https://drive.google.com/file/d/1yqhyPMj9uBq1awmqTwUhisuBJBpY5kt-/view",
+            "reseaux": {
+              "facebook": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "FoodEatUp"
+              },
+              "instagram": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "foodeatup.cocuisinage"
+              },
+              "tiktok": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "foodeatup"
+              },
+              "linkedin": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "FoodEatUp"
+              }
+            }
+          },
+          {
+            "id": "EP124",
+            "numero": 124,
+            "saison": 5,
+            "slug": "ep124-la-table-qui-ne-part-jamais",
+            "titre": "La table qui ne part jamais",
+            "module": "Caisse POS",
+            "chapitre": "6 - Clôturer sa caisse",
+            "accroche": "Il est minuit dix.",
+            "punchline": "Le service a une fin. Ton logiciel devrait le savoir.",
+            "resume": "Le service a une fin : tu clôtures, tu comptes, tu archives. L'écran te dit quand la journée est vraiment finie.",
+            "statut": "bloque",
+            "dureeSecondes": null,
+            "videoUrl": null,
+            "tutorielUrl": null,
+            "reseaux": {
+              "facebook": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "FoodEatUp"
+              },
+              "instagram": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "foodeatup.cocuisinage"
+              },
+              "tiktok": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "foodeatup"
+              },
+              "linkedin": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "FoodEatUp"
+              }
+            },
+            "blocage": "Le chapitre correspondant n'a pas encore de vidéo dans le Drive interne."
+          },
+          {
+            "id": "EP125",
+            "numero": 125,
+            "saison": 5,
+            "slug": "ep125-le-client-qui-refait-le-plan-de-salle",
+            "titre": "Le client qui refait le plan de salle",
+            "module": "Caroline",
+            "chapitre": "3 - Dessiner son plan de salle",
+            "accroche": "Je serais mieux là, non ?",
+            "punchline": "Ton plan de salle, c'est toi qui le décides.",
+            "resume": "Ton plan de salle est le tien : zones, tables, capacités, blocages. Tu places, tu bloques, tu libères en un geste.",
+            "statut": "a_produire",
+            "dureeSecondes": null,
+            "videoUrl": null,
+            "tutorielUrl": "https://drive.google.com/file/d/1TOGCHAw6Yc43gQxScRWt62B5ZkuJO8jg/view",
+            "reseaux": {
+              "facebook": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "FoodEatUp"
+              },
+              "instagram": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "foodeatup.cocuisinage"
+              },
+              "tiktok": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "foodeatup"
+              },
+              "linkedin": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "FoodEatUp"
+              }
+            }
+          },
+          {
+            "id": "EP126",
+            "numero": 126,
+            "saison": 5,
+            "slug": "ep126-six-fourchettes-une-salade",
+            "titre": "Six fourchettes, une salade",
+            "module": "Caisse POS",
+            "chapitre": "5 - Séparer une addition",
+            "accroche": "On partage, c'est plus convivial.",
+            "punchline": "Partage l'assiette. Pas l'addition, elle se divise toute seule.",
+            "resume": "Tu partages l'addition par article ou par personne. Ce qui reste dû s'affiche en direct. Personne ne recompte à la main.",
+            "statut": "bloque",
+            "dureeSecondes": null,
+            "videoUrl": null,
+            "tutorielUrl": null,
+            "reseaux": {
+              "facebook": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "FoodEatUp"
+              },
+              "instagram": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "foodeatup.cocuisinage"
+              },
+              "tiktok": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "foodeatup"
+              },
+              "linkedin": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "FoodEatUp"
+              }
+            },
+            "blocage": "Le chapitre correspondant n'a pas encore de vidéo dans le Drive interne."
+          },
+          {
+            "id": "EP127",
+            "numero": 127,
+            "saison": 5,
+            "slug": "ep127-reveillon-23-h-58",
+            "titre": "Réveillon, 23 h 58",
+            "module": "Réservation",
+            "chapitre": "1 - Réservations du jour",
+            "accroche": "Bonne année à tout le monde.",
+            "punchline": "Sauf à celui qui gère les deux cents couverts.",
+            "resume": "Deux cents couverts un 31 décembre, ça se pilote : arrivées échelonnées, tables assignées, cuisine prévenue. La soirée reste une fête.",
+            "statut": "a_produire",
+            "dureeSecondes": null,
+            "videoUrl": null,
+            "tutorielUrl": "https://drive.google.com/file/d/1ZcJIts_SFzUvjChwJSxcCGtnlT3NHOCP/view",
+            "reseaux": {
+              "facebook": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "FoodEatUp"
+              },
+              "instagram": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "foodeatup.cocuisinage"
+              },
+              "tiktok": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "foodeatup"
+              },
+              "linkedin": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "FoodEatUp"
+              }
+            }
+          },
+          {
+            "id": "EP128",
+            "numero": 128,
+            "saison": 5,
+            "slug": "ep128-saint-valentin-surbookee",
+            "titre": "Saint-Valentin surbookée",
+            "module": "Réservation",
+            "chapitre": "4 - Placer un client à table",
+            "accroche": "Trente couverts en plus, ça rentre.",
+            "punchline": "Ça rentre. La question, c'est si ça revient.",
+            "resume": "Tu places tes clients selon la vraie capacité de ta salle. Serrer, ça se décide — ça ne se subit pas un soir de Saint-Valentin.",
+            "statut": "a_produire",
+            "dureeSecondes": null,
+            "videoUrl": null,
+            "tutorielUrl": "https://drive.google.com/file/d/12589ZMOfTgifLClS2v-afJ2P6naWZmdB/view",
+            "reseaux": {
+              "facebook": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "FoodEatUp"
+              },
+              "instagram": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "foodeatup.cocuisinage"
+              },
+              "tiktok": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "foodeatup"
+              },
+              "linkedin": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "FoodEatUp"
+              }
+            }
+          },
+          {
+            "id": "EP129",
+            "numero": 129,
+            "saison": 5,
+            "slug": "ep129-premier-jour-de-terrasse-4-degres",
+            "titre": "Premier jour de terrasse, 4 degrés",
+            "module": "Caroline",
+            "chapitre": "4 - Gérer ses tables",
+            "accroche": "Premier rayon de soleil de l'année.",
+            "punchline": "Ta terrasse ouvre. Ton service doit suivre.",
+            "resume": "Tu ouvres ta terrasse dans le logiciel : tables ajoutées, capacité mise à jour, réservations ouvertes dessus. Le premier rayon de soleil est rentable.",
+            "statut": "a_produire",
+            "dureeSecondes": null,
+            "videoUrl": null,
+            "tutorielUrl": "https://drive.google.com/file/d/18dIJKyCb9DuZGIcN8Cr_EQkjzwlRUCnz/view",
+            "reseaux": {
+              "facebook": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "FoodEatUp"
+              },
+              "instagram": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "foodeatup.cocuisinage"
+              },
+              "tiktok": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "foodeatup"
+              },
+              "linkedin": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "FoodEatUp"
+              }
+            }
+          },
+          {
+            "id": "EP130",
+            "numero": 130,
+            "saison": 5,
+            "slug": "ep130-fete-de-la-musique",
+            "titre": "Fête de la musique",
+            "module": "Marketing",
+            "chapitre": "7 - Ton agenda marketing",
+            "accroche": "21 juin. Devant ta porte.",
+            "punchline": "Autant que les gens sachent que tu es ouvert.",
+            "resume": "Ton agenda marketing connaît les temps forts de ton quartier. Tu prépares l'événement avant qu'il soit devant ta porte.",
+            "statut": "a_produire",
+            "dureeSecondes": null,
+            "videoUrl": null,
+            "tutorielUrl": "https://drive.google.com/file/d/17j87qbBA5aySV44RakgltrNLsJpnRNBz/view",
+            "reseaux": {
+              "facebook": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "FoodEatUp"
+              },
+              "instagram": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "foodeatup.cocuisinage"
+              },
+              "tiktok": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "foodeatup"
+              },
+              "linkedin": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "FoodEatUp"
+              }
+            }
+          },
+          {
+            "id": "EP131",
+            "numero": 131,
+            "saison": 5,
+            "slug": "ep131-rentree-tout-le-monde-est-encore-en-vacances",
+            "titre": "Rentrée : tout le monde est encore en vacances",
+            "module": "Équipe & Planning",
+            "chapitre": "planning de la semaine",
+            "accroche": "1er septembre. Deux absents.",
+            "punchline": "Un planning, ça se prépare avant la rentrée.",
+            "resume": "Tu construis la semaine de rentrée en amont : shifts posés, congés validés, coût affiché. Le premier septembre, tu n'es pas seul en cuisine.",
+            "statut": "a_produire",
+            "dureeSecondes": null,
+            "videoUrl": null,
+            "tutorielUrl": "https://drive.google.com/file/d/1CdAnJgR_iq1ESyAgcCCpFjnCfYzaUhIR/view",
+            "reseaux": {
+              "facebook": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "FoodEatUp"
+              },
+              "instagram": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "foodeatup.cocuisinage"
+              },
+              "tiktok": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "foodeatup"
+              },
+              "linkedin": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "FoodEatUp"
+              }
+            }
+          },
+          {
+            "id": "EP132",
+            "numero": 132,
+            "saison": 5,
+            "slug": "ep132-le-15-aout-seul-ouvert",
+            "titre": "Le 15 août, seul ouvert",
+            "module": "Mon Site",
+            "chapitre": "6 - Réservations et horaires",
+            "accroche": "Tout le quartier est fermé.",
+            "punchline": "Sauf toi. Encore faut-il qu'on te trouve en ligne.",
+            "resume": "Tes horaires d'ouverture sont à jour partout : site, réservation, Google. Quand tout le quartier ferme, on te trouve.",
+            "statut": "bloque",
+            "dureeSecondes": null,
+            "videoUrl": null,
+            "tutorielUrl": null,
+            "reseaux": {
+              "facebook": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "FoodEatUp"
+              },
+              "instagram": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "foodeatup.cocuisinage"
+              },
+              "tiktok": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "foodeatup"
+              },
+              "linkedin": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "FoodEatUp"
+              }
+            },
+            "blocage": "Le chapitre correspondant n'a pas encore de vidéo dans le Drive interne."
+          },
+          {
+            "id": "EP133",
+            "numero": 133,
+            "saison": 5,
+            "slug": "ep133-le-but-a-la-90e",
+            "titre": "Le but à la 90e",
+            "module": "Caisse POS",
+            "chapitre": "3 - Encaisser une commande",
+            "accroche": "Une minute pour encaisser trois tournées.",
+            "punchline": "Ta caisse doit tenir le rythme.",
+            "resume": "Trois tournées en une minute : tu encaisses au comptoir ou à table, TPE relié, ticket envoyé. Ta caisse tient le rythme du match.",
+            "statut": "bloque",
+            "dureeSecondes": null,
+            "videoUrl": null,
+            "tutorielUrl": null,
+            "reseaux": {
+              "facebook": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "FoodEatUp"
+              },
+              "instagram": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "foodeatup.cocuisinage"
+              },
+              "tiktok": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "foodeatup"
+              },
+              "linkedin": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "FoodEatUp"
+              }
+            },
+            "blocage": "Le chapitre correspondant n'a pas encore de vidéo dans le Drive interne."
+          },
+          {
+            "id": "EP134",
+            "numero": 134,
+            "saison": 5,
+            "slug": "ep134-pov-la-friteuse",
+            "titre": "POV : la friteuse",
+            "module": "HACCP",
+            "chapitre": "relevé de température",
+            "accroche": "Sept heures de service. Vue d'en bas.",
+            "punchline": "Elle aussi a une température à respecter.",
+            "resume": "L'huile et les frigos ont leurs seuils. Le relevé se fait en dix secondes, il est daté et gardé. Ta friteuse aussi a une conformité.",
+            "statut": "a_produire",
+            "dureeSecondes": null,
+            "videoUrl": null,
+            "tutorielUrl": "https://drive.google.com/file/d/14OmsNUd3EMgWNxGVvmOwLgR3ZloWKNKW/view",
+            "reseaux": {
+              "facebook": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "FoodEatUp"
+              },
+              "instagram": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "foodeatup.cocuisinage"
+              },
+              "tiktok": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "foodeatup"
+              },
+              "linkedin": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "FoodEatUp"
+              }
+            }
+          },
+          {
+            "id": "EP135",
+            "numero": 135,
+            "saison": 5,
+            "slug": "ep135-pov-le-carnet-de-reservations",
+            "titre": "POV : le carnet de réservations",
+            "module": "Réservation",
+            "chapitre": "1 - Réservations du jour",
+            "accroche": "Toutes tes réservations du soir.",
+            "punchline": "Sur du papier. Vraiment ?",
+            "resume": "Tes réservations du soir sont ici, pas sur un carnet taché de café : contact, couverts, table, historique. Rien ne s'efface.",
+            "statut": "a_produire",
+            "dureeSecondes": null,
+            "videoUrl": null,
+            "tutorielUrl": "https://drive.google.com/file/d/1ZcJIts_SFzUvjChwJSxcCGtnlT3NHOCP/view",
+            "reseaux": {
+              "facebook": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "FoodEatUp"
+              },
+              "instagram": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "foodeatup.cocuisinage"
+              },
+              "tiktok": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "foodeatup"
+              },
+              "linkedin": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "FoodEatUp"
+              }
+            }
+          },
+          {
+            "id": "EP136",
+            "numero": 136,
+            "saison": 5,
+            "slug": "ep136-pov-le-lave-verres",
+            "titre": "POV : le lave-verres",
+            "module": "Service",
+            "chapitre": "1 - Commandes multi-canaux",
+            "accroche": "Deux minutes par cycle. Quatre-vingts cycles.",
+            "punchline": "Le service, c'est ça aussi.",
+            "resume": "Le service, c'est cent gestes invisibles. FoodEatUp en enregistre la trace pour que tu saches où part vraiment ton temps.",
+            "statut": "a_produire",
+            "dureeSecondes": null,
+            "videoUrl": null,
+            "tutorielUrl": "https://drive.google.com/file/d/10GjJltEF3utZtfmwHR0qLZ8CTQr5_ioC/view",
+            "reseaux": {
+              "facebook": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "FoodEatUp"
+              },
+              "instagram": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "foodeatup.cocuisinage"
+              },
+              "tiktok": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "foodeatup"
+              },
+              "linkedin": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "FoodEatUp"
+              }
+            }
+          },
+          {
+            "id": "EP137",
+            "numero": 137,
+            "saison": 5,
+            "slug": "ep137-pov-la-machine-a-cafe",
+            "titre": "POV : la machine à café",
+            "module": "Caisse POS",
+            "chapitre": "3 - Encaisser une commande",
+            "accroche": "Deux cent quarante cafés. Aujourd'hui.",
+            "punchline": "Combien encaissés ? Tu es sûr ?",
+            "resume": "Deux cent quarante cafés, deux cent quarante lignes encaissées. Tu compares le vendu et l'encaissé, à l'unité près.",
+            "statut": "bloque",
+            "dureeSecondes": null,
+            "videoUrl": null,
+            "tutorielUrl": null,
+            "reseaux": {
+              "facebook": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "FoodEatUp"
+              },
+              "instagram": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "foodeatup.cocuisinage"
+              },
+              "tiktok": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "foodeatup"
+              },
+              "linkedin": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "FoodEatUp"
+              }
+            },
+            "blocage": "Le chapitre correspondant n'a pas encore de vidéo dans le Drive interne."
+          },
+          {
+            "id": "EP138",
+            "numero": 138,
+            "saison": 5,
+            "slug": "ep138-pov-l-assiette-du-pass-a-la-table",
+            "titre": "POV : l'assiette, du pass à la table",
+            "module": "KDS",
+            "chapitre": "3 - Gérer le KDS en direct",
+            "accroche": "Quarante-cinq secondes de vie.",
+            "punchline": "Chaque assiette compte. Compte-les.",
+            "resume": "De l'envoi au pass, chaque plat a son statut et son chrono. Tu comptes tes assiettes, tu ne les devines pas.",
+            "statut": "bloque",
+            "dureeSecondes": null,
+            "videoUrl": null,
+            "tutorielUrl": null,
+            "reseaux": {
+              "facebook": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "FoodEatUp"
+              },
+              "instagram": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "foodeatup.cocuisinage"
+              },
+              "tiktok": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "foodeatup"
+              },
+              "linkedin": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "FoodEatUp"
+              }
+            },
+            "blocage": "Le chapitre correspondant n'a pas encore de vidéo dans le Drive interne."
+          },
+          {
+            "id": "EP139",
+            "numero": 139,
+            "saison": 5,
+            "slug": "ep139-le-rush-film-de-guerre",
+            "titre": "Le rush, film de guerre",
+            "module": "KDS",
+            "chapitre": "2 - Vue KDS par poste",
+            "accroche": "20 h 30. Le coup de feu.",
+            "punchline": "Sois équipé, pas héroïque.",
+            "resume": "Pendant le coup de feu, tu vois la charge de chaque poste. Tu envoies où il y a de la place. Être équipé, c'est ça.",
+            "statut": "a_produire",
+            "dureeSecondes": null,
+            "videoUrl": null,
+            "tutorielUrl": "https://drive.google.com/file/d/1PmYYGKH00qGUcMc1zehHng3C9fQiH84O/view",
+            "reseaux": {
+              "facebook": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "FoodEatUp"
+              },
+              "instagram": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "foodeatup.cocuisinage"
+              },
+              "tiktok": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "foodeatup"
+              },
+              "linkedin": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "FoodEatUp"
+              }
+            }
+          },
+          {
+            "id": "EP140",
+            "numero": 140,
+            "saison": 5,
+            "slug": "ep140-le-braquage-du-frigo",
+            "titre": "Le braquage du frigo",
+            "module": "StockVision",
+            "chapitre": "16 - Mouvements de stock",
+            "accroche": "Ton inventaire, la nuit.",
+            "punchline": "Ce qui disparaît finit toujours par se voir.",
+            "resume": "L'inventaire est daté, signé, comparé au théorique. Ce qui disparaît la nuit finit toujours par apparaître dans l'écart.",
+            "statut": "a_produire",
+            "dureeSecondes": null,
+            "videoUrl": null,
+            "tutorielUrl": "https://drive.google.com/file/d/124mIM7NudoQy5wun_rlSZ6MCrJ2wNykL/view",
+            "reseaux": {
+              "facebook": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "FoodEatUp"
+              },
+              "instagram": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "foodeatup.cocuisinage"
+              },
+              "tiktok": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "foodeatup"
+              },
+              "linkedin": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "FoodEatUp"
+              }
+            }
+          },
+          {
+            "id": "EP141",
+            "numero": 141,
+            "saison": 5,
+            "slug": "ep141-cuisine-cockpit-spatial",
+            "titre": "Cuisine, cockpit spatial",
+            "module": "PrediBot",
+            "chapitre": "3 - Parler à PrediBot",
+            "accroche": "Table 6 depuis 22 minutes.",
+            "punchline": "Un pilote automatique, ça existe aussi en cuisine.",
+            "resume": "Tu demandes, PrediBot répond avec tes vraies données : la table en attente, la production à lancer, l'alerte à traiter. Le pilote automatique existe.",
+            "statut": "a_produire",
+            "dureeSecondes": null,
+            "videoUrl": null,
+            "tutorielUrl": "https://drive.google.com/file/d/1nuFxXTOCXeHKtSbJBScCH0O3khJxTiB4/view",
+            "reseaux": {
+              "facebook": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "FoodEatUp"
+              },
+              "instagram": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "foodeatup.cocuisinage"
+              },
+              "tiktok": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "foodeatup"
+              },
+              "linkedin": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "FoodEatUp"
+              }
+            }
+          },
+          {
+            "id": "EP142",
+            "numero": 142,
+            "saison": 5,
+            "slug": "ep142-duel-a-la-spatule",
+            "titre": "Duel à la spatule",
+            "module": "Équipe & Planning",
+            "chapitre": "affectation des postes",
+            "accroche": "Qui envoie le plat du jour.",
+            "punchline": "Répartis les postes avant le service, pas pendant.",
+            "resume": "Les postes sont répartis avant le service, pas pendant. Chacun sait ce qu'il envoie, personne ne dégaine sa spatule pour le savoir.",
+            "statut": "a_produire",
+            "dureeSecondes": null,
+            "videoUrl": null,
+            "tutorielUrl": "https://drive.google.com/file/d/13w9aRHXfQFkxF3UvqtaLczqKPN5rr7E0/view",
+            "reseaux": {
+              "facebook": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "FoodEatUp"
+              },
+              "instagram": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "foodeatup.cocuisinage"
+              },
+              "tiktok": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "foodeatup"
+              },
+              "linkedin": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "FoodEatUp"
+              }
+            }
+          },
+          {
+            "id": "EP143",
+            "numero": 143,
+            "saison": 5,
+            "slug": "ep143-la-commande-de-200-pieces",
+            "titre": "La commande de 200 pièces",
+            "module": "Comptabilité",
+            "chapitre": "devis",
+            "accroche": "Une seule commande.",
+            "punchline": "Deux cents parts. Anticipe-les.",
+            "resume": "Deux cents parts, ça commence par un devis : quantités, prix, marge. Il se transforme en commande, puis en facture, sans ressaisie.",
+            "statut": "a_produire",
+            "dureeSecondes": null,
+            "videoUrl": null,
+            "tutorielUrl": "https://drive.google.com/file/d/1LRxi9R1Sbj1sQ0Cg4RZhpE_cxZHygksu/view",
+            "reseaux": {
+              "facebook": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "FoodEatUp"
+              },
+              "instagram": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "foodeatup.cocuisinage"
+              },
+              "tiktok": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "foodeatup"
+              },
+              "linkedin": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "FoodEatUp"
+              }
+            }
+          },
+          {
+            "id": "EP144",
+            "numero": 144,
+            "saison": 5,
+            "slug": "ep144-le-proces-du-steak-trop-cuit",
+            "titre": "Le procès du steak trop cuit",
+            "module": "Marketing",
+            "chapitre": "3 - Répondre aux avis",
+            "accroche": "Un avis une étoile.",
+            "punchline": "Réponds-y avant qu'il fasse jurisprudence.",
+            "resume": "Un avis une étoile, tu le vois tout de suite et tu réponds depuis l'outil. Une réponse rapide vaut mieux qu'un long procès.",
+            "statut": "a_produire",
+            "dureeSecondes": null,
+            "videoUrl": null,
+            "tutorielUrl": "https://drive.google.com/file/d/1CMKvqIypwbr8KHTj0dCs_w06sjkaQKV4/view",
+            "reseaux": {
+              "facebook": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "FoodEatUp"
+              },
+              "instagram": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "foodeatup.cocuisinage"
+              },
+              "tiktok": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "foodeatup"
+              },
+              "linkedin": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "FoodEatUp"
+              }
+            }
+          },
+          {
+            "id": "EP145",
+            "numero": 145,
+            "saison": 5,
+            "slug": "ep145-documentaire-animalier-le-gerant",
+            "titre": "Documentaire animalier : le gérant",
+            "module": "PrediBot",
+            "chapitre": "1 - Lire ses prévisions",
+            "accroche": "Le gérant, dans son habitat naturel.",
+            "punchline": "Espèce en voie d'épuisement.",
+            "resume": "Ton point du jour en un écran : ce qui arrive, ce qui manque, ce qui coince. L'espèce « gérant épuisé » n'est pas obligée de survivre comme ça.",
+            "statut": "a_produire",
+            "dureeSecondes": null,
+            "videoUrl": null,
+            "tutorielUrl": "https://drive.google.com/file/d/1MWkfZ-OZ_qv2z6QD9VPwabO5XnGd5UaB/view",
+            "reseaux": {
+              "facebook": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "FoodEatUp"
+              },
+              "instagram": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "foodeatup.cocuisinage"
+              },
+              "tiktok": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "foodeatup"
+              },
+              "linkedin": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "FoodEatUp"
+              }
+            }
+          },
+          {
+            "id": "EP146",
+            "numero": 146,
+            "saison": 5,
+            "slug": "ep146-quarante-bougies-et-les-sprinklers",
+            "titre": "Quarante bougies et les sprinklers",
+            "module": "Comptabilité",
+            "chapitre": "événements privés",
+            "accroche": "Quarante bougies. Une seule mauvaise idée.",
+            "punchline": "Les gros événements, ça se prépare en amont.",
+            "resume": "Un événement, c'est une demande, un devis, une réservation et une facture. Enchaînés. Rien ne se prépare la veille au soir.",
+            "statut": "a_produire",
+            "dureeSecondes": null,
+            "videoUrl": null,
+            "tutorielUrl": "https://drive.google.com/file/d/1LRxi9R1Sbj1sQ0Cg4RZhpE_cxZHygksu/view",
+            "reseaux": {
+              "facebook": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "FoodEatUp"
+              },
+              "instagram": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "foodeatup.cocuisinage"
+              },
+              "tiktok": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "foodeatup"
+              },
+              "linkedin": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "FoodEatUp"
+              }
+            }
+          },
+          {
+            "id": "EP147",
+            "numero": 147,
+            "saison": 5,
+            "slug": "ep147-le-gateau-a-cinq-etages",
+            "titre": "Le gâteau à cinq étages",
+            "module": "Comptabilité",
+            "chapitre": "facture et devis",
+            "accroche": "Douze mille euros de prestation.",
+            "punchline": "Sur un devis, pas sur un post-it.",
+            "resume": "Douze mille euros de prestation ne tiennent pas sur un post-it. Devis signé, acompte suivi, facture éditée : tout est dans le dossier.",
+            "statut": "a_produire",
+            "dureeSecondes": null,
+            "videoUrl": null,
+            "tutorielUrl": "https://drive.google.com/file/d/1LRxi9R1Sbj1sQ0Cg4RZhpE_cxZHygksu/view",
+            "reseaux": {
+              "facebook": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "FoodEatUp"
+              },
+              "instagram": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "foodeatup.cocuisinage"
+              },
+              "tiktok": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "foodeatup"
+              },
+              "linkedin": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "FoodEatUp"
+              }
+            }
+          },
+          {
+            "id": "EP148",
+            "numero": 148,
+            "saison": 5,
+            "slug": "ep148-le-sumo-de-la-place-de-livraison",
+            "titre": "Le sumo de la place de livraison",
+            "module": "HubRise",
+            "chapitre": "3 - Synchro caisse tierce",
+            "accroche": "Trois plateformes. Une place.",
+            "punchline": "Centralise les commandes, pas les embouteillages.",
+            "resume": "Trois plateformes, une seule file. Les commandes arrivent centralisées, avec leur horaire de retrait. Tes livreurs ne se croisent plus au même moment.",
+            "statut": "bloque",
+            "dureeSecondes": null,
+            "videoUrl": null,
+            "tutorielUrl": null,
+            "reseaux": {
+              "facebook": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "FoodEatUp"
+              },
+              "instagram": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "foodeatup.cocuisinage"
+              },
+              "tiktok": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "foodeatup"
+              },
+              "linkedin": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "FoodEatUp"
+              }
+            },
+            "blocage": "Le chapitre correspondant n'a pas encore de vidéo dans le Drive interne."
+          },
+          {
+            "id": "EP149",
+            "numero": 149,
+            "saison": 5,
+            "slug": "ep149-le-flash-mob-de-la-salle",
+            "titre": "Le flash mob de la salle",
+            "module": "Marketing",
+            "chapitre": "5 - Lancer une campagne",
+            "accroche": "Ta salle a un truc que personne d'autre n'a.",
+            "punchline": "Fais-le savoir.",
+            "resume": "Ta salle a quelque chose d'unique : fais-le savoir. Campagne créée, segment choisi, résultats mesurés, CA attribué.",
+            "statut": "a_produire",
+            "dureeSecondes": null,
+            "videoUrl": null,
+            "tutorielUrl": "https://drive.google.com/file/d/1L1RnS8OdOEMKsVjDho2rKnj4gzihgfW9/view",
+            "reseaux": {
+              "facebook": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "FoodEatUp"
+              },
+              "instagram": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "foodeatup.cocuisinage"
+              },
+              "tiktok": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "foodeatup"
+              },
+              "linkedin": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "FoodEatUp"
+              }
+            }
+          },
+          {
+            "id": "EP150",
+            "numero": 150,
+            "saison": 5,
+            "slug": "ep150-le-salut-final",
+            "titre": "Le salut final",
+            "module": "PrediBot",
+            "chapitre": "1 - Lire ses prévisions",
+            "accroche": "Cent cinquante épisodes.",
+            "punchline": "Une seule promesse : ton restaurant, avant, pendant et après le service.",
+            "resume": "Cent cinquante épisodes pour dire une chose : ton restaurant tient dans un seul outil, avant, pendant et après ton service. Le reste, c'est du bruit.",
+            "statut": "a_produire",
+            "dureeSecondes": null,
+            "videoUrl": null,
+            "tutorielUrl": "https://drive.google.com/file/d/1MWkfZ-OZ_qv2z6QD9VPwabO5XnGd5UaB/view",
+            "reseaux": {
+              "facebook": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "FoodEatUp"
+              },
+              "instagram": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "foodeatup.cocuisinage"
+              },
+              "tiktok": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "foodeatup"
+              },
+              "linkedin": {
+                "statut": "a_venir",
+                "date": null,
+                "compte": "FoodEatUp"
+              }
+            }
+          }
+        ]
+      }
+    ]
+  }
+];
+
+// --- Sélecteurs -------------------------------------------------------------
+// Tout se dérive d'ici. Aucun compteur n'est écrit à la main nulle part.
+
+export const tousLesEpisodes = (): Episode[] =>
+  series.flatMap((s) => s.saisons.flatMap((sa) => sa.episodes));
+
+export const episodeParSlug = (slug: string): Episode | undefined =>
+  tousLesEpisodes().find((e) => e.slug === slug);
+
+export const serieDeLEpisode = (e: Episode): Serie | undefined =>
+  series.find((s) => s.saisons.some((sa) => sa.episodes.includes(e)));
+
+export const estSorti = (e: Episode) => e.statut === "publie" || e.statut === "monte";
+
+export const avancement = (s: Serie) => {
+  const eps = s.saisons.flatMap((sa) => sa.episodes);
+  return { sortis: eps.filter(estSorti).length, total: eps.length };
+};
+
+export const avancementSaison = (sa: Saison) => ({
+  sortis: sa.episodes.filter(estSorti).length,
+  total: sa.episodes.length,
+});
+
+// L'ordre de lecture traverse les saisons : après le 30, on passe au 31.
+export const voisins = (e: Episode) => {
+  const s = serieDeLEpisode(e);
+  if (!s) return { precedent: undefined, suivant: undefined };
+  const ordre = s.saisons
+    .flatMap((sa) => sa.episodes)
+    .sort((a, b) => a.numero - b.numero);
+  const i = ordre.findIndex((x) => x.id === e.id);
+  return { precedent: ordre[i - 1], suivant: ordre[i + 1] };
+};
+
+export const episodesDuReseau = (slug: Reseau): Episode[] =>
+  tousLesEpisodes()
+    .filter((e) => e.reseaux[slug].statut !== "a_venir")
+    .sort((a, b) => (a.reseaux[slug].date ?? "").localeCompare(b.reseaux[slug].date ?? ""));
+
+export const planifieDansLesProchainsJours = (jours = 7) => {
+  const now = new Date();
+  const fin = new Date(now.getTime() + jours * 864e5);
+  const out: { episode: Episode; reseau: Reseau; date: string }[] = [];
+  for (const e of tousLesEpisodes())
+    for (const r of Object.keys(e.reseaux) as Reseau[]) {
+      const d = e.reseaux[r].date;
+      if (!d) continue;
+      const j = new Date(d);
+      if (j >= now && j <= fin) out.push({ episode: e, reseau: r, date: d });
+    }
+  return out.sort((a, b) => a.date.localeCompare(b.date));
+};
+
+export const dernierPublie = (): Episode | undefined =>
+  tousLesEpisodes()
+    .filter((e) => e.statut === "publie")
+    .sort((a, b) => b.numero - a.numero)[0];
