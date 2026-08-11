@@ -1237,9 +1237,9 @@ export const series: Serie[] = [
             "accroche": "Ton gaspillage alimentaire.",
             "punchline": "Lui au moins, il sait ce qu'il y a en stock.",
             "resume": "Chaque entrée, chaque sortie, chaque perte est enregistrée. Tu vois ce qui part sans être vendu. Le gaspillage devient une ligne, donc un problème réglable.",
-            "statut": "a_produire",
-            "dureeSecondes": null,
-            "videoUrl": null,
+            "statut": "monte",
+            "dureeSecondes": 37.5,
+            "videoUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/tiktok/EP014.mp4",
             "reseaux": {
               "facebook": {
                 "statut": "a_venir",
@@ -1282,7 +1282,7 @@ export const series: Serie[] = [
                 "lienCta": "https://site.foodeatup.com/"
               }
             },
-            "posterUrl": null,
+            "posterUrl": "/posters/EP014.jpg",
             "datePrevue": "2026-08-20",
             "troisMots": "MOUVEMENTS DE STOCK",
             "tutoriel": {
@@ -1296,12 +1296,12 @@ export const series: Serie[] = [
             },
             "tutorielModuleUrl": "https://tutoriel.foodeatup.com/module/stockvision-ai",
             "higgsfield": {
-              "videoSourceUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/hooks/EP014.mp4",
+              "videoSourceUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/Higgsfield-source-EP014-Le-raton-laveur",
               "duree": "10 s",
               "format": "vertical 9:16",
-              "source": "depot"
+              "source": "rapidocms"
             },
-            "masterRapidoUrl": null
+            "masterRapidoUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/FoodEatUp-EP014-Mouvements-de-stock"
           },
           {
             "id": "EP015",
@@ -1314,9 +1314,9 @@ export const series: Serie[] = [
             "accroche": "Ta gestion actuelle.",
             "punchline": "Une pièce bouge, tout s'écroule.",
             "resume": "Tes catégories, ta TVA, tes zones, tes équipements : tout est posé une fois, proprement. Quand une pièce bouge, le reste ne s'écroule pas.",
-            "statut": "a_produire",
-            "dureeSecondes": null,
-            "videoUrl": null,
+            "statut": "monte",
+            "dureeSecondes": 37.5,
+            "videoUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/tiktok/EP015.mp4",
             "reseaux": {
               "facebook": {
                 "statut": "a_venir",
@@ -1359,7 +1359,7 @@ export const series: Serie[] = [
                 "lienCta": "https://site.foodeatup.com/"
               }
             },
-            "posterUrl": null,
+            "posterUrl": "/posters/EP015.jpg",
             "datePrevue": "2026-08-21",
             "troisMots": "RÉFÉRENTIELS",
             "tutoriel": {
@@ -1373,12 +1373,12 @@ export const series: Serie[] = [
             },
             "tutorielModuleUrl": "https://tutoriel.foodeatup.com/module/configuration",
             "higgsfield": {
-              "videoSourceUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/hooks/EP015.mp4",
+              "videoSourceUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/Higgsfield-source-EP015-La-tour-d-assiettes",
               "duree": "10 s",
               "format": "vertical 9:16",
-              "source": "depot"
+              "source": "rapidocms"
             },
-            "masterRapidoUrl": null
+            "masterRapidoUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/FoodEatUp-EP015-Referentiels"
           },
           {
             "id": "EP016",

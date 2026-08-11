@@ -51,6 +51,26 @@ données rechargé — ne les invente pas.
 Ne touche à rien d'autre dans le projet : ce message ne concerne que ces {nb}
 images et les champs de ces {nb} épisodes.
 
+## Trois défauts du premier jet, à ne pas reproduire
+
+Les 300 vignettes générées jusqu'ici ont trois problèmes. Ils viennent d'une
+lecture rapide de la consigne, pas d'une limite de l'outil.
+
+1. **Le grisé ne se cuit pas dans l'image.** Les épisodes non sortis étaient
+   désaturés dans le fichier JPEG. Le jour où l'épisode sort, sa vignette reste
+   grise. Le grisé est un état, il est déjà posé en CSS par le site. Génère
+   TOUTES les images en couleur, sans exception.
+
+2. **Un seul logo.** Le tablier du chef porte déjà le logo FoodEatUp. N'ajoute
+   aucun second badge, en bas à droite ni ailleurs — et surtout pas un logo
+   redessiné. Deux marques sur la même image, dont une fausse, c'est le défaut
+   le plus visible du premier jet.
+
+3. **Chaque épisode a sa scène.** Les 300 premières images réutilisaient le même
+   décor et la même pose, seul le texte changeait. Le prompt de chaque épisode
+   décrit un gag précis et un décor de saison : suis-le. Si deux épisodes de la
+   même saison sortent identiques, l'image n'a pas été lue.
+
 """
 
 
