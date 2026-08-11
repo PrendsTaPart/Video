@@ -11,6 +11,17 @@ TEXTE="${2:?texte du hook manquant}"
 R="$(cd "$(dirname "$0")/.." && pwd)"
 
 POLICE="$R/templates/Poppins-800.ttf"
+
+# Le texte du hook passe par un FICHIER, jamais en ligne dans le filtergraph.
+# Vingt-trois accroches sur cent cinquante contiennent une apostrophe — « Ton
+# chiffre d'affaires », « L'addition »… — et une apostrophe referme le text='…'
+# de drawtext au milieu de la phrase : ffmpeg cherche alors un filtre nommé
+# « sans outil.:fontsize=62 » et s'arrête. Échapper à la main marche jusqu'à ce
+# qu'un titre contienne aussi un deux-points ou une virgule ; textfile ne se
+# trompe jamais.
+TEXTE_FIC="$(mktemp)"
+printf '%s' "$TEXTE" > "$TEXTE_FIC"
+trap 'rm -f "$TEXTE_FIC"' EXIT
 LOGO_X=795; LOGO_Y=57
 DUREE_A=9.5        # le clip tient 9,5 s : à 7 s la chute comique était coupée
 PUNCH=5.0          # le beat comique du clip tombe ici
@@ -69,7 +80,7 @@ ffmpeg -v error \
  -filter_complex "\
  [0:v]trim=0:$DUREE_A,setpts=PTS-STARTPTS,fps=30,\
 scale=1080:1920:force_original_aspect_ratio=increase,crop=1080:1920[v];\
- [v]drawtext=fontfile='$POLICE':text='$TEXTE':fontsize=62:fontcolor=white:\
+ [v]drawtext=fontfile='$POLICE':textfile='$TEXTE_FIC':fontsize=62:fontcolor=white:\
 borderw=6:bordercolor=black@0.8:x=(w-text_w)/2:y=h*0.13:\
 enable='between(t,$T_IN,$T_OUT)'[vt];\
  [vt][2:v]overlay=$LOGO_X:$LOGO_Y:format=auto,format=yuv420p[vo];\

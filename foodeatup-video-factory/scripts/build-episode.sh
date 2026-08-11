@@ -89,6 +89,10 @@ if t>1.12:
 # L'avatar est plus court que 10 s -> dernière frame clonée, audio complété en silence.
 # La voix change ici (ElevenLabs -> HeyGen) : fondu sable de 0,35 s + whoosh sur la coupe.
 # Le lit musical couvre les 10 s, sinon le segment sonne mort face aux voisins.
+# Il se referme à 9,45 s — soit 27,95 s dans le master — pour que la respiration
+# avant la signature soit VRAIMENT silencieuse. Avec une fermeture à 10,0 s, le
+# lit descendait encore pendant la fenêtre de contrôle : un épisode dont l'avatar
+# s'était tu deux secondes plus tôt échouait quand même, sur le bruit du lit.
 ffmpeg -v error \
  -i "$R/assets/avatar/$EP.mp4" \
  -i "$R/assets/software/$EP.mp4" \
@@ -113,7 +117,7 @@ fade=t=out:st=9.70:d=0.30:color=$SABLE,format=yuv420p[v];\
  [0:a]atrim=start=$DEBUT,asetpts=PTS-STARTPTS,aresample=48000,\
 atempo=$TEMPO,apad,atrim=0:10,asetpts=PTS-STARTPTS,volume=1.0[voice];\
  [3:a]aresample=48000,atrim=16:26,asetpts=PTS-STARTPTS,volume=$BED_GAIN,\
-afade=t=in:st=0:d=0.3,afade=t=out:st=9.40:d=0.60[bed];\
+afade=t=in:st=0:d=0.3,afade=t=out:st=8.90:d=0.55[bed];\
  [4:a]aresample=48000,volume=$SFX_GAIN,apad,atrim=0:10,asetpts=PTS-STARTPTS[wh];\
  [voice][bed][wh]amix=inputs=3:duration=first:dropout_transition=0:normalize=0[a]" \
  -map "[v]" -map "[a]" -t 10 \
