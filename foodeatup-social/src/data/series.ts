@@ -48,8 +48,6 @@ export type Episode = {
   blocage?: string;
   dureeSecondes: number | null;
   videoUrl: string | null;
-  /** Le fichier Drive du tutoriel, à usage interne. */
-  tutorielUrl: string | null;
   /** La fiche publique de l'Academy. null si elle n'existe pas encore. */
   tutoriel: Tutoriel | null;
   /** La page du module dans l'Academy — le repli quand la fiche manque. */
@@ -265,7 +263,6 @@ export const series: Serie[] = [
             "statut": "publie",
             "dureeSecondes": 37.5,
             "videoUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/tiktok/EP001.mp4",
-            "tutorielUrl": "https://drive.google.com/file/d/10GjJltEF3utZtfmwHR0qLZ8CTQr5_ioC/view",
             "reseaux": {
               "facebook": {
                 "statut": "planifie",
@@ -273,7 +270,7 @@ export const series: Serie[] = [
                 "heure": "12:00",
                 "compte": "FoodEatUp",
                 "format": "Vidéo native 9:16",
-                "lienCta": "https://drive.google.com/file/d/10GjJltEF3utZtfmwHR0qLZ8CTQr5_ioC/view"
+                "lienCta": "https://site.foodeatup.com/"
               },
               "instagram": {
                 "statut": "a_venir",
@@ -297,7 +294,7 @@ export const series: Serie[] = [
                 "heure": "08:00",
                 "compte": "FoodEatUp",
                 "format": "Vidéo native 9:16",
-                "lienCta": "https://drive.google.com/file/d/10GjJltEF3utZtfmwHR0qLZ8CTQr5_ioC/view"
+                "lienCta": "https://site.foodeatup.com/"
               },
               "youtube": {
                 "statut": "a_venir",
@@ -305,7 +302,7 @@ export const series: Serie[] = [
                 "heure": "10:00",
                 "compte": "@FoodEatUp",
                 "format": "Short 9:16",
-                "lienCta": "https://drive.google.com/file/d/10GjJltEF3utZtfmwHR0qLZ8CTQr5_ioC/view"
+                "lienCta": "https://site.foodeatup.com/"
               }
             },
             "posterUrl": "/posters/EP001.jpg",
@@ -343,7 +340,6 @@ export const series: Serie[] = [
             "statut": "publie",
             "dureeSecondes": 37.5,
             "videoUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/tiktok/EP002.mp4",
-            "tutorielUrl": "https://drive.google.com/file/d/1PucAO7TE28El_TCLBrAOjct2VJS4mZu2/view",
             "reseaux": {
               "facebook": {
                 "statut": "planifie",
@@ -351,7 +347,7 @@ export const series: Serie[] = [
                 "heure": "12:00",
                 "compte": "FoodEatUp",
                 "format": "Vidéo native 9:16",
-                "lienCta": "https://drive.google.com/file/d/1PucAO7TE28El_TCLBrAOjct2VJS4mZu2/view"
+                "lienCta": "https://site.foodeatup.com/"
               },
               "instagram": {
                 "statut": "a_venir",
@@ -375,7 +371,7 @@ export const series: Serie[] = [
                 "heure": "08:00",
                 "compte": "FoodEatUp",
                 "format": "Vidéo native 9:16",
-                "lienCta": "https://drive.google.com/file/d/1PucAO7TE28El_TCLBrAOjct2VJS4mZu2/view"
+                "lienCta": "https://site.foodeatup.com/"
               },
               "youtube": {
                 "statut": "a_venir",
@@ -383,7 +379,7 @@ export const series: Serie[] = [
                 "heure": "10:00",
                 "compte": "@FoodEatUp",
                 "format": "Short 9:16",
-                "lienCta": "https://drive.google.com/file/d/1PucAO7TE28El_TCLBrAOjct2VJS4mZu2/view"
+                "lienCta": "https://site.foodeatup.com/"
               }
             },
             "posterUrl": "/posters/EP002.jpg",
@@ -421,7 +417,6 @@ export const series: Serie[] = [
             "statut": "publie",
             "dureeSecondes": 37.5,
             "videoUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/tiktok/EP003.mp4",
-            "tutorielUrl": "https://drive.google.com/file/d/1yqhyPMj9uBq1awmqTwUhisuBJBpY5kt-/view",
             "reseaux": {
               "facebook": {
                 "statut": "planifie",
@@ -429,7 +424,7 @@ export const series: Serie[] = [
                 "heure": "12:00",
                 "compte": "FoodEatUp",
                 "format": "Vidéo native 9:16",
-                "lienCta": "https://drive.google.com/file/d/1yqhyPMj9uBq1awmqTwUhisuBJBpY5kt-/view"
+                "lienCta": "https://site.foodeatup.com/"
               },
               "instagram": {
                 "statut": "a_venir",
@@ -453,7 +448,7 @@ export const series: Serie[] = [
                 "heure": "08:00",
                 "compte": "FoodEatUp",
                 "format": "Vidéo native 9:16",
-                "lienCta": "https://drive.google.com/file/d/1yqhyPMj9uBq1awmqTwUhisuBJBpY5kt-/view"
+                "lienCta": "https://site.foodeatup.com/"
               },
               "youtube": {
                 "statut": "a_venir",
@@ -461,7 +456,7 @@ export const series: Serie[] = [
                 "heure": "10:00",
                 "compte": "@FoodEatUp",
                 "format": "Short 9:16",
-                "lienCta": "https://drive.google.com/file/d/1yqhyPMj9uBq1awmqTwUhisuBJBpY5kt-/view"
+                "lienCta": "https://site.foodeatup.com/"
               }
             },
             "posterUrl": "/posters/EP003.jpg",
@@ -492,7 +487,6 @@ export const series: Serie[] = [
             "statut": "bloque",
             "dureeSecondes": null,
             "videoUrl": null,
-            "tutorielUrl": null,
             "reseaux": {
               "facebook": {
                 "statut": "a_venir",
@@ -500,7 +494,7 @@ export const series: Serie[] = [
                 "heure": "12:00",
                 "compte": "FoodEatUp",
                 "format": "Vidéo native 9:16",
-                "lienCta": null
+                "lienCta": "https://site.foodeatup.com/"
               },
               "instagram": {
                 "statut": "a_venir",
@@ -524,7 +518,7 @@ export const series: Serie[] = [
                 "heure": "08:00",
                 "compte": "FoodEatUp",
                 "format": "Vidéo native 9:16",
-                "lienCta": null
+                "lienCta": "https://site.foodeatup.com/"
               },
               "youtube": {
                 "statut": "a_venir",
@@ -532,7 +526,7 @@ export const series: Serie[] = [
                 "heure": "10:00",
                 "compte": "@FoodEatUp",
                 "format": "Short 9:16",
-                "lienCta": null
+                "lienCta": "https://site.foodeatup.com/"
               }
             },
             "blocage": "Le chapitre correspondant n'a pas encore de vidéo dans le Drive interne.",
@@ -564,7 +558,6 @@ export const series: Serie[] = [
             "statut": "publie",
             "dureeSecondes": 37.5,
             "videoUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/tiktok/EP005.mp4",
-            "tutorielUrl": "https://drive.google.com/file/d/1hp7mZd-tQliPUemhyIKHWMl9xUgKHwoq/view",
             "reseaux": {
               "facebook": {
                 "statut": "planifie",
@@ -572,7 +565,7 @@ export const series: Serie[] = [
                 "heure": "12:00",
                 "compte": "FoodEatUp",
                 "format": "Vidéo native 9:16",
-                "lienCta": "https://drive.google.com/file/d/1hp7mZd-tQliPUemhyIKHWMl9xUgKHwoq/view"
+                "lienCta": "https://site.foodeatup.com/"
               },
               "instagram": {
                 "statut": "a_venir",
@@ -596,7 +589,7 @@ export const series: Serie[] = [
                 "heure": "08:00",
                 "compte": "FoodEatUp",
                 "format": "Vidéo native 9:16",
-                "lienCta": "https://drive.google.com/file/d/1hp7mZd-tQliPUemhyIKHWMl9xUgKHwoq/view"
+                "lienCta": "https://site.foodeatup.com/"
               },
               "youtube": {
                 "statut": "a_venir",
@@ -604,7 +597,7 @@ export const series: Serie[] = [
                 "heure": "10:00",
                 "compte": "@FoodEatUp",
                 "format": "Short 9:16",
-                "lienCta": "https://drive.google.com/file/d/1hp7mZd-tQliPUemhyIKHWMl9xUgKHwoq/view"
+                "lienCta": "https://site.foodeatup.com/"
               }
             },
             "posterUrl": "/posters/EP005.jpg",
@@ -635,7 +628,6 @@ export const series: Serie[] = [
             "statut": "publie",
             "dureeSecondes": 37.5,
             "videoUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/tiktok/EP006.mp4",
-            "tutorielUrl": "https://drive.google.com/file/d/1xxxr8zsy8ZvK7NCizf1F9q8W3u48Npgt/view",
             "reseaux": {
               "facebook": {
                 "statut": "planifie",
@@ -643,7 +635,7 @@ export const series: Serie[] = [
                 "heure": "12:00",
                 "compte": "FoodEatUp",
                 "format": "Vidéo native 9:16",
-                "lienCta": "https://drive.google.com/file/d/1xxxr8zsy8ZvK7NCizf1F9q8W3u48Npgt/view"
+                "lienCta": "https://site.foodeatup.com/"
               },
               "instagram": {
                 "statut": "a_venir",
@@ -667,7 +659,7 @@ export const series: Serie[] = [
                 "heure": "08:00",
                 "compte": "FoodEatUp",
                 "format": "Vidéo native 9:16",
-                "lienCta": "https://drive.google.com/file/d/1xxxr8zsy8ZvK7NCizf1F9q8W3u48Npgt/view"
+                "lienCta": "https://site.foodeatup.com/"
               },
               "youtube": {
                 "statut": "a_venir",
@@ -675,7 +667,7 @@ export const series: Serie[] = [
                 "heure": "10:00",
                 "compte": "@FoodEatUp",
                 "format": "Short 9:16",
-                "lienCta": "https://drive.google.com/file/d/1xxxr8zsy8ZvK7NCizf1F9q8W3u48Npgt/view"
+                "lienCta": "https://site.foodeatup.com/"
               }
             },
             "posterUrl": "/posters/EP006.jpg",
@@ -713,7 +705,6 @@ export const series: Serie[] = [
             "statut": "publie",
             "dureeSecondes": 37.5,
             "videoUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/tiktok/EP007.mp4",
-            "tutorielUrl": "https://drive.google.com/file/d/1CMKvqIypwbr8KHTj0dCs_w06sjkaQKV4/view",
             "reseaux": {
               "facebook": {
                 "statut": "planifie",
@@ -721,7 +712,7 @@ export const series: Serie[] = [
                 "heure": "12:00",
                 "compte": "FoodEatUp",
                 "format": "Vidéo native 9:16",
-                "lienCta": "https://drive.google.com/file/d/1CMKvqIypwbr8KHTj0dCs_w06sjkaQKV4/view"
+                "lienCta": "https://site.foodeatup.com/"
               },
               "instagram": {
                 "statut": "a_venir",
@@ -745,7 +736,7 @@ export const series: Serie[] = [
                 "heure": "08:00",
                 "compte": "FoodEatUp",
                 "format": "Vidéo native 9:16",
-                "lienCta": "https://drive.google.com/file/d/1CMKvqIypwbr8KHTj0dCs_w06sjkaQKV4/view"
+                "lienCta": "https://site.foodeatup.com/"
               },
               "youtube": {
                 "statut": "a_venir",
@@ -753,7 +744,7 @@ export const series: Serie[] = [
                 "heure": "10:00",
                 "compte": "@FoodEatUp",
                 "format": "Short 9:16",
-                "lienCta": "https://drive.google.com/file/d/1CMKvqIypwbr8KHTj0dCs_w06sjkaQKV4/view"
+                "lienCta": "https://site.foodeatup.com/"
               }
             },
             "posterUrl": "/posters/EP007.jpg",
@@ -791,7 +782,6 @@ export const series: Serie[] = [
             "statut": "a_produire",
             "dureeSecondes": null,
             "videoUrl": null,
-            "tutorielUrl": "https://drive.google.com/file/d/1bN_o6_HYz9Za1kGyIst6INWrJJz9MagE/view",
             "reseaux": {
               "facebook": {
                 "statut": "a_venir",
@@ -799,7 +789,7 @@ export const series: Serie[] = [
                 "heure": "12:00",
                 "compte": "FoodEatUp",
                 "format": "Vidéo native 9:16",
-                "lienCta": "https://drive.google.com/file/d/1bN_o6_HYz9Za1kGyIst6INWrJJz9MagE/view"
+                "lienCta": "https://site.foodeatup.com/"
               },
               "instagram": {
                 "statut": "a_venir",
@@ -823,7 +813,7 @@ export const series: Serie[] = [
                 "heure": "08:00",
                 "compte": "FoodEatUp",
                 "format": "Vidéo native 9:16",
-                "lienCta": "https://drive.google.com/file/d/1bN_o6_HYz9Za1kGyIst6INWrJJz9MagE/view"
+                "lienCta": "https://site.foodeatup.com/"
               },
               "youtube": {
                 "statut": "a_venir",
@@ -831,7 +821,7 @@ export const series: Serie[] = [
                 "heure": "10:00",
                 "compte": "@FoodEatUp",
                 "format": "Short 9:16",
-                "lienCta": "https://drive.google.com/file/d/1bN_o6_HYz9Za1kGyIst6INWrJJz9MagE/view"
+                "lienCta": "https://site.foodeatup.com/"
               }
             },
             "posterUrl": null,
@@ -869,7 +859,6 @@ export const series: Serie[] = [
             "statut": "bloque",
             "dureeSecondes": null,
             "videoUrl": null,
-            "tutorielUrl": null,
             "reseaux": {
               "facebook": {
                 "statut": "a_venir",
@@ -877,7 +866,7 @@ export const series: Serie[] = [
                 "heure": "12:00",
                 "compte": "FoodEatUp",
                 "format": "Vidéo native 9:16",
-                "lienCta": null
+                "lienCta": "https://site.foodeatup.com/"
               },
               "instagram": {
                 "statut": "a_venir",
@@ -901,7 +890,7 @@ export const series: Serie[] = [
                 "heure": "08:00",
                 "compte": "FoodEatUp",
                 "format": "Vidéo native 9:16",
-                "lienCta": null
+                "lienCta": "https://site.foodeatup.com/"
               },
               "youtube": {
                 "statut": "a_venir",
@@ -909,7 +898,7 @@ export const series: Serie[] = [
                 "heure": "10:00",
                 "compte": "@FoodEatUp",
                 "format": "Short 9:16",
-                "lienCta": null
+                "lienCta": "https://site.foodeatup.com/"
               }
             },
             "blocage": "Le chapitre correspondant n'a pas encore de vidéo dans le Drive interne.",
@@ -941,7 +930,6 @@ export const series: Serie[] = [
             "statut": "publie",
             "dureeSecondes": 37.5,
             "videoUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/tiktok/EP010.mp4",
-            "tutorielUrl": "https://drive.google.com/file/d/1MWkfZ-OZ_qv2z6QD9VPwabO5XnGd5UaB/view",
             "reseaux": {
               "facebook": {
                 "statut": "planifie",
@@ -949,7 +937,7 @@ export const series: Serie[] = [
                 "heure": "12:00",
                 "compte": "FoodEatUp",
                 "format": "Vidéo native 9:16",
-                "lienCta": "https://drive.google.com/file/d/1MWkfZ-OZ_qv2z6QD9VPwabO5XnGd5UaB/view"
+                "lienCta": "https://site.foodeatup.com/"
               },
               "instagram": {
                 "statut": "a_venir",
@@ -973,7 +961,7 @@ export const series: Serie[] = [
                 "heure": "08:00",
                 "compte": "FoodEatUp",
                 "format": "Vidéo native 9:16",
-                "lienCta": "https://drive.google.com/file/d/1MWkfZ-OZ_qv2z6QD9VPwabO5XnGd5UaB/view"
+                "lienCta": "https://site.foodeatup.com/"
               },
               "youtube": {
                 "statut": "a_venir",
@@ -981,7 +969,7 @@ export const series: Serie[] = [
                 "heure": "10:00",
                 "compte": "@FoodEatUp",
                 "format": "Short 9:16",
-                "lienCta": "https://drive.google.com/file/d/1MWkfZ-OZ_qv2z6QD9VPwabO5XnGd5UaB/view"
+                "lienCta": "https://site.foodeatup.com/"
               }
             },
             "posterUrl": "/posters/EP010.jpg",
@@ -1019,7 +1007,6 @@ export const series: Serie[] = [
             "statut": "bloque",
             "dureeSecondes": null,
             "videoUrl": null,
-            "tutorielUrl": null,
             "reseaux": {
               "facebook": {
                 "statut": "a_venir",
@@ -1027,7 +1014,7 @@ export const series: Serie[] = [
                 "heure": "12:00",
                 "compte": "FoodEatUp",
                 "format": "Vidéo native 9:16",
-                "lienCta": null
+                "lienCta": "https://site.foodeatup.com/"
               },
               "instagram": {
                 "statut": "a_venir",
@@ -1051,7 +1038,7 @@ export const series: Serie[] = [
                 "heure": "08:00",
                 "compte": "FoodEatUp",
                 "format": "Vidéo native 9:16",
-                "lienCta": null
+                "lienCta": "https://site.foodeatup.com/"
               },
               "youtube": {
                 "statut": "a_venir",
@@ -1059,7 +1046,7 @@ export const series: Serie[] = [
                 "heure": "10:00",
                 "compte": "@FoodEatUp",
                 "format": "Short 9:16",
-                "lienCta": null
+                "lienCta": "https://site.foodeatup.com/"
               }
             },
             "blocage": "Le chapitre correspondant n'a pas encore de vidéo dans le Drive interne.",
@@ -1098,7 +1085,6 @@ export const series: Serie[] = [
             "statut": "bloque",
             "dureeSecondes": null,
             "videoUrl": null,
-            "tutorielUrl": null,
             "reseaux": {
               "facebook": {
                 "statut": "a_venir",
@@ -1106,7 +1092,7 @@ export const series: Serie[] = [
                 "heure": "12:00",
                 "compte": "FoodEatUp",
                 "format": "Vidéo native 9:16",
-                "lienCta": null
+                "lienCta": "https://site.foodeatup.com/"
               },
               "instagram": {
                 "statut": "a_venir",
@@ -1130,7 +1116,7 @@ export const series: Serie[] = [
                 "heure": "08:00",
                 "compte": "FoodEatUp",
                 "format": "Vidéo native 9:16",
-                "lienCta": null
+                "lienCta": "https://site.foodeatup.com/"
               },
               "youtube": {
                 "statut": "a_venir",
@@ -1138,7 +1124,7 @@ export const series: Serie[] = [
                 "heure": "10:00",
                 "compte": "@FoodEatUp",
                 "format": "Short 9:16",
-                "lienCta": null
+                "lienCta": "https://site.foodeatup.com/"
               }
             },
             "blocage": "Le chapitre correspondant n'a pas encore de vidéo dans le Drive interne.",
@@ -1177,7 +1163,6 @@ export const series: Serie[] = [
             "statut": "a_produire",
             "dureeSecondes": null,
             "videoUrl": null,
-            "tutorielUrl": "https://drive.google.com/file/d/1nuFxXTOCXeHKtSbJBScCH0O3khJxTiB4/view",
             "reseaux": {
               "facebook": {
                 "statut": "a_venir",
@@ -1185,7 +1170,7 @@ export const series: Serie[] = [
                 "heure": "12:00",
                 "compte": "FoodEatUp",
                 "format": "Vidéo native 9:16",
-                "lienCta": "https://drive.google.com/file/d/1nuFxXTOCXeHKtSbJBScCH0O3khJxTiB4/view"
+                "lienCta": "https://site.foodeatup.com/"
               },
               "instagram": {
                 "statut": "a_venir",
@@ -1209,7 +1194,7 @@ export const series: Serie[] = [
                 "heure": "08:00",
                 "compte": "FoodEatUp",
                 "format": "Vidéo native 9:16",
-                "lienCta": "https://drive.google.com/file/d/1nuFxXTOCXeHKtSbJBScCH0O3khJxTiB4/view"
+                "lienCta": "https://site.foodeatup.com/"
               },
               "youtube": {
                 "statut": "a_venir",
@@ -1217,7 +1202,7 @@ export const series: Serie[] = [
                 "heure": "10:00",
                 "compte": "@FoodEatUp",
                 "format": "Short 9:16",
-                "lienCta": "https://drive.google.com/file/d/1nuFxXTOCXeHKtSbJBScCH0O3khJxTiB4/view"
+                "lienCta": "https://site.foodeatup.com/"
               }
             },
             "posterUrl": null,
@@ -1255,7 +1240,6 @@ export const series: Serie[] = [
             "statut": "a_produire",
             "dureeSecondes": null,
             "videoUrl": null,
-            "tutorielUrl": "https://drive.google.com/file/d/124mIM7NudoQy5wun_rlSZ6MCrJ2wNykL/view",
             "reseaux": {
               "facebook": {
                 "statut": "a_venir",
@@ -1263,7 +1247,7 @@ export const series: Serie[] = [
                 "heure": "12:00",
                 "compte": "FoodEatUp",
                 "format": "Vidéo native 9:16",
-                "lienCta": "https://drive.google.com/file/d/124mIM7NudoQy5wun_rlSZ6MCrJ2wNykL/view"
+                "lienCta": "https://site.foodeatup.com/"
               },
               "instagram": {
                 "statut": "a_venir",
@@ -1287,7 +1271,7 @@ export const series: Serie[] = [
                 "heure": "08:00",
                 "compte": "FoodEatUp",
                 "format": "Vidéo native 9:16",
-                "lienCta": "https://drive.google.com/file/d/124mIM7NudoQy5wun_rlSZ6MCrJ2wNykL/view"
+                "lienCta": "https://site.foodeatup.com/"
               },
               "youtube": {
                 "statut": "a_venir",
@@ -1295,7 +1279,7 @@ export const series: Serie[] = [
                 "heure": "10:00",
                 "compte": "@FoodEatUp",
                 "format": "Short 9:16",
-                "lienCta": "https://drive.google.com/file/d/124mIM7NudoQy5wun_rlSZ6MCrJ2wNykL/view"
+                "lienCta": "https://site.foodeatup.com/"
               }
             },
             "posterUrl": null,
@@ -1333,7 +1317,6 @@ export const series: Serie[] = [
             "statut": "a_produire",
             "dureeSecondes": null,
             "videoUrl": null,
-            "tutorielUrl": "https://drive.google.com/file/d/17ZDwHrTaTvQmiCmTYBwZnnJo_OLrXzyo/view",
             "reseaux": {
               "facebook": {
                 "statut": "a_venir",
@@ -1341,7 +1324,7 @@ export const series: Serie[] = [
                 "heure": "12:00",
                 "compte": "FoodEatUp",
                 "format": "Vidéo native 9:16",
-                "lienCta": "https://drive.google.com/file/d/17ZDwHrTaTvQmiCmTYBwZnnJo_OLrXzyo/view"
+                "lienCta": "https://site.foodeatup.com/"
               },
               "instagram": {
                 "statut": "a_venir",
@@ -1365,7 +1348,7 @@ export const series: Serie[] = [
                 "heure": "08:00",
                 "compte": "FoodEatUp",
                 "format": "Vidéo native 9:16",
-                "lienCta": "https://drive.google.com/file/d/17ZDwHrTaTvQmiCmTYBwZnnJo_OLrXzyo/view"
+                "lienCta": "https://site.foodeatup.com/"
               },
               "youtube": {
                 "statut": "a_venir",
@@ -1373,7 +1356,7 @@ export const series: Serie[] = [
                 "heure": "10:00",
                 "compte": "@FoodEatUp",
                 "format": "Short 9:16",
-                "lienCta": "https://drive.google.com/file/d/17ZDwHrTaTvQmiCmTYBwZnnJo_OLrXzyo/view"
+                "lienCta": "https://site.foodeatup.com/"
               }
             },
             "posterUrl": null,
@@ -1411,7 +1394,6 @@ export const series: Serie[] = [
             "statut": "a_produire",
             "dureeSecondes": null,
             "videoUrl": null,
-            "tutorielUrl": "https://drive.google.com/file/d/13gsBIjozDhLKJBi0uOwqIE3ShA_V7d3R/view",
             "reseaux": {
               "facebook": {
                 "statut": "a_venir",
@@ -1419,7 +1401,7 @@ export const series: Serie[] = [
                 "heure": "12:00",
                 "compte": "FoodEatUp",
                 "format": "Vidéo native 9:16",
-                "lienCta": "https://drive.google.com/file/d/13gsBIjozDhLKJBi0uOwqIE3ShA_V7d3R/view"
+                "lienCta": "https://site.foodeatup.com/"
               },
               "instagram": {
                 "statut": "a_venir",
@@ -1443,7 +1425,7 @@ export const series: Serie[] = [
                 "heure": "08:00",
                 "compte": "FoodEatUp",
                 "format": "Vidéo native 9:16",
-                "lienCta": "https://drive.google.com/file/d/13gsBIjozDhLKJBi0uOwqIE3ShA_V7d3R/view"
+                "lienCta": "https://site.foodeatup.com/"
               },
               "youtube": {
                 "statut": "a_venir",
@@ -1451,7 +1433,7 @@ export const series: Serie[] = [
                 "heure": "10:00",
                 "compte": "@FoodEatUp",
                 "format": "Short 9:16",
-                "lienCta": "https://drive.google.com/file/d/13gsBIjozDhLKJBi0uOwqIE3ShA_V7d3R/view"
+                "lienCta": "https://site.foodeatup.com/"
               }
             },
             "posterUrl": null,
@@ -1489,7 +1471,6 @@ export const series: Serie[] = [
             "statut": "a_produire",
             "dureeSecondes": null,
             "videoUrl": null,
-            "tutorielUrl": "https://drive.google.com/file/d/1yOgpFr18I9GyIkFegEj1MJNU_ksMtRLy/view",
             "reseaux": {
               "facebook": {
                 "statut": "a_venir",
@@ -1497,7 +1478,7 @@ export const series: Serie[] = [
                 "heure": "12:00",
                 "compte": "FoodEatUp",
                 "format": "Vidéo native 9:16",
-                "lienCta": "https://drive.google.com/file/d/1yOgpFr18I9GyIkFegEj1MJNU_ksMtRLy/view"
+                "lienCta": "https://site.foodeatup.com/"
               },
               "instagram": {
                 "statut": "a_venir",
@@ -1521,7 +1502,7 @@ export const series: Serie[] = [
                 "heure": "08:00",
                 "compte": "FoodEatUp",
                 "format": "Vidéo native 9:16",
-                "lienCta": "https://drive.google.com/file/d/1yOgpFr18I9GyIkFegEj1MJNU_ksMtRLy/view"
+                "lienCta": "https://site.foodeatup.com/"
               },
               "youtube": {
                 "statut": "a_venir",
@@ -1529,7 +1510,7 @@ export const series: Serie[] = [
                 "heure": "10:00",
                 "compte": "@FoodEatUp",
                 "format": "Short 9:16",
-                "lienCta": "https://drive.google.com/file/d/1yOgpFr18I9GyIkFegEj1MJNU_ksMtRLy/view"
+                "lienCta": "https://site.foodeatup.com/"
               }
             },
             "posterUrl": null,
@@ -1567,7 +1548,6 @@ export const series: Serie[] = [
             "statut": "a_produire",
             "dureeSecondes": null,
             "videoUrl": null,
-            "tutorielUrl": "https://drive.google.com/file/d/1jSK_Zv7MtSgTqwGaV7WeffGjiZ0g4MWk/view",
             "reseaux": {
               "facebook": {
                 "statut": "a_venir",
@@ -1575,7 +1555,7 @@ export const series: Serie[] = [
                 "heure": "12:00",
                 "compte": "FoodEatUp",
                 "format": "Vidéo native 9:16",
-                "lienCta": "https://drive.google.com/file/d/1jSK_Zv7MtSgTqwGaV7WeffGjiZ0g4MWk/view"
+                "lienCta": "https://site.foodeatup.com/"
               },
               "instagram": {
                 "statut": "a_venir",
@@ -1599,7 +1579,7 @@ export const series: Serie[] = [
                 "heure": "08:00",
                 "compte": "FoodEatUp",
                 "format": "Vidéo native 9:16",
-                "lienCta": "https://drive.google.com/file/d/1jSK_Zv7MtSgTqwGaV7WeffGjiZ0g4MWk/view"
+                "lienCta": "https://site.foodeatup.com/"
               },
               "youtube": {
                 "statut": "a_venir",
@@ -1607,7 +1587,7 @@ export const series: Serie[] = [
                 "heure": "10:00",
                 "compte": "@FoodEatUp",
                 "format": "Short 9:16",
-                "lienCta": "https://drive.google.com/file/d/1jSK_Zv7MtSgTqwGaV7WeffGjiZ0g4MWk/view"
+                "lienCta": "https://site.foodeatup.com/"
               }
             },
             "posterUrl": null,
@@ -1645,7 +1625,6 @@ export const series: Serie[] = [
             "statut": "a_produire",
             "dureeSecondes": null,
             "videoUrl": null,
-            "tutorielUrl": "https://drive.google.com/file/d/14GntP3F4hhloVyYBDJrPCj55Ny1gvDx9/view",
             "reseaux": {
               "facebook": {
                 "statut": "a_venir",
@@ -1653,7 +1632,7 @@ export const series: Serie[] = [
                 "heure": "12:00",
                 "compte": "FoodEatUp",
                 "format": "Vidéo native 9:16",
-                "lienCta": "https://drive.google.com/file/d/14GntP3F4hhloVyYBDJrPCj55Ny1gvDx9/view"
+                "lienCta": "https://site.foodeatup.com/"
               },
               "instagram": {
                 "statut": "a_venir",
@@ -1677,7 +1656,7 @@ export const series: Serie[] = [
                 "heure": "08:00",
                 "compte": "FoodEatUp",
                 "format": "Vidéo native 9:16",
-                "lienCta": "https://drive.google.com/file/d/14GntP3F4hhloVyYBDJrPCj55Ny1gvDx9/view"
+                "lienCta": "https://site.foodeatup.com/"
               },
               "youtube": {
                 "statut": "a_venir",
@@ -1685,7 +1664,7 @@ export const series: Serie[] = [
                 "heure": "10:00",
                 "compte": "@FoodEatUp",
                 "format": "Short 9:16",
-                "lienCta": "https://drive.google.com/file/d/14GntP3F4hhloVyYBDJrPCj55Ny1gvDx9/view"
+                "lienCta": "https://site.foodeatup.com/"
               }
             },
             "posterUrl": null,
@@ -1723,7 +1702,6 @@ export const series: Serie[] = [
             "statut": "a_produire",
             "dureeSecondes": null,
             "videoUrl": null,
-            "tutorielUrl": "https://drive.google.com/file/d/1ITy-Ia2Q3FSeKSRRd4bWEFw4eDlzFZ6q/view",
             "reseaux": {
               "facebook": {
                 "statut": "a_venir",
@@ -1731,7 +1709,7 @@ export const series: Serie[] = [
                 "heure": "12:00",
                 "compte": "FoodEatUp",
                 "format": "Vidéo native 9:16",
-                "lienCta": "https://drive.google.com/file/d/1ITy-Ia2Q3FSeKSRRd4bWEFw4eDlzFZ6q/view"
+                "lienCta": "https://site.foodeatup.com/"
               },
               "instagram": {
                 "statut": "a_venir",
@@ -1755,7 +1733,7 @@ export const series: Serie[] = [
                 "heure": "08:00",
                 "compte": "FoodEatUp",
                 "format": "Vidéo native 9:16",
-                "lienCta": "https://drive.google.com/file/d/1ITy-Ia2Q3FSeKSRRd4bWEFw4eDlzFZ6q/view"
+                "lienCta": "https://site.foodeatup.com/"
               },
               "youtube": {
                 "statut": "a_venir",
@@ -1763,7 +1741,7 @@ export const series: Serie[] = [
                 "heure": "10:00",
                 "compte": "@FoodEatUp",
                 "format": "Short 9:16",
-                "lienCta": "https://drive.google.com/file/d/1ITy-Ia2Q3FSeKSRRd4bWEFw4eDlzFZ6q/view"
+                "lienCta": "https://site.foodeatup.com/"
               }
             },
             "posterUrl": null,
@@ -1801,7 +1779,6 @@ export const series: Serie[] = [
             "statut": "a_produire",
             "dureeSecondes": null,
             "videoUrl": null,
-            "tutorielUrl": "https://drive.google.com/file/d/1Q25eSBcjIuq1XkHnJkFN_QJyK23o1GVg/view",
             "reseaux": {
               "facebook": {
                 "statut": "a_venir",
@@ -1809,7 +1786,7 @@ export const series: Serie[] = [
                 "heure": "12:00",
                 "compte": "FoodEatUp",
                 "format": "Vidéo native 9:16",
-                "lienCta": "https://drive.google.com/file/d/1Q25eSBcjIuq1XkHnJkFN_QJyK23o1GVg/view"
+                "lienCta": "https://site.foodeatup.com/"
               },
               "instagram": {
                 "statut": "a_venir",
@@ -1833,7 +1810,7 @@ export const series: Serie[] = [
                 "heure": "08:00",
                 "compte": "FoodEatUp",
                 "format": "Vidéo native 9:16",
-                "lienCta": "https://drive.google.com/file/d/1Q25eSBcjIuq1XkHnJkFN_QJyK23o1GVg/view"
+                "lienCta": "https://site.foodeatup.com/"
               },
               "youtube": {
                 "statut": "a_venir",
@@ -1841,7 +1818,7 @@ export const series: Serie[] = [
                 "heure": "10:00",
                 "compte": "@FoodEatUp",
                 "format": "Short 9:16",
-                "lienCta": "https://drive.google.com/file/d/1Q25eSBcjIuq1XkHnJkFN_QJyK23o1GVg/view"
+                "lienCta": "https://site.foodeatup.com/"
               }
             },
             "posterUrl": null,
@@ -1879,7 +1856,6 @@ export const series: Serie[] = [
             "statut": "a_produire",
             "dureeSecondes": null,
             "videoUrl": null,
-            "tutorielUrl": "https://drive.google.com/file/d/16kN9JwGuVugkCtjQ93OObZ2tAlmsbgZl/view",
             "reseaux": {
               "facebook": {
                 "statut": "a_venir",
@@ -1887,7 +1863,7 @@ export const series: Serie[] = [
                 "heure": "12:00",
                 "compte": "FoodEatUp",
                 "format": "Vidéo native 9:16",
-                "lienCta": "https://drive.google.com/file/d/16kN9JwGuVugkCtjQ93OObZ2tAlmsbgZl/view"
+                "lienCta": "https://site.foodeatup.com/"
               },
               "instagram": {
                 "statut": "a_venir",
@@ -1911,7 +1887,7 @@ export const series: Serie[] = [
                 "heure": "08:00",
                 "compte": "FoodEatUp",
                 "format": "Vidéo native 9:16",
-                "lienCta": "https://drive.google.com/file/d/16kN9JwGuVugkCtjQ93OObZ2tAlmsbgZl/view"
+                "lienCta": "https://site.foodeatup.com/"
               },
               "youtube": {
                 "statut": "a_venir",
@@ -1919,7 +1895,7 @@ export const series: Serie[] = [
                 "heure": "10:00",
                 "compte": "@FoodEatUp",
                 "format": "Short 9:16",
-                "lienCta": "https://drive.google.com/file/d/16kN9JwGuVugkCtjQ93OObZ2tAlmsbgZl/view"
+                "lienCta": "https://site.foodeatup.com/"
               }
             },
             "posterUrl": null,
@@ -1957,7 +1933,6 @@ export const series: Serie[] = [
             "statut": "a_produire",
             "dureeSecondes": null,
             "videoUrl": null,
-            "tutorielUrl": "https://drive.google.com/file/d/1NaTIjzXl8NU1dwX3Xrxl0DrhKIbVy34F/view",
             "reseaux": {
               "facebook": {
                 "statut": "a_venir",
@@ -1965,7 +1940,7 @@ export const series: Serie[] = [
                 "heure": "12:00",
                 "compte": "FoodEatUp",
                 "format": "Vidéo native 9:16",
-                "lienCta": "https://drive.google.com/file/d/1NaTIjzXl8NU1dwX3Xrxl0DrhKIbVy34F/view"
+                "lienCta": "https://site.foodeatup.com/"
               },
               "instagram": {
                 "statut": "a_venir",
@@ -1989,7 +1964,7 @@ export const series: Serie[] = [
                 "heure": "08:00",
                 "compte": "FoodEatUp",
                 "format": "Vidéo native 9:16",
-                "lienCta": "https://drive.google.com/file/d/1NaTIjzXl8NU1dwX3Xrxl0DrhKIbVy34F/view"
+                "lienCta": "https://site.foodeatup.com/"
               },
               "youtube": {
                 "statut": "a_venir",
@@ -1997,7 +1972,7 @@ export const series: Serie[] = [
                 "heure": "10:00",
                 "compte": "@FoodEatUp",
                 "format": "Short 9:16",
-                "lienCta": "https://drive.google.com/file/d/1NaTIjzXl8NU1dwX3Xrxl0DrhKIbVy34F/view"
+                "lienCta": "https://site.foodeatup.com/"
               }
             },
             "posterUrl": null,
@@ -2035,7 +2010,6 @@ export const series: Serie[] = [
             "statut": "a_produire",
             "dureeSecondes": null,
             "videoUrl": null,
-            "tutorielUrl": "https://drive.google.com/file/d/1MEMdJJMq2MhQ6H-dU5Nb5ls8ifoqM3U4/view",
             "reseaux": {
               "facebook": {
                 "statut": "a_venir",
@@ -2043,7 +2017,7 @@ export const series: Serie[] = [
                 "heure": "12:00",
                 "compte": "FoodEatUp",
                 "format": "Vidéo native 9:16",
-                "lienCta": "https://drive.google.com/file/d/1MEMdJJMq2MhQ6H-dU5Nb5ls8ifoqM3U4/view"
+                "lienCta": "https://site.foodeatup.com/"
               },
               "instagram": {
                 "statut": "a_venir",
@@ -2067,7 +2041,7 @@ export const series: Serie[] = [
                 "heure": "08:00",
                 "compte": "FoodEatUp",
                 "format": "Vidéo native 9:16",
-                "lienCta": "https://drive.google.com/file/d/1MEMdJJMq2MhQ6H-dU5Nb5ls8ifoqM3U4/view"
+                "lienCta": "https://site.foodeatup.com/"
               },
               "youtube": {
                 "statut": "a_venir",
@@ -2075,7 +2049,7 @@ export const series: Serie[] = [
                 "heure": "10:00",
                 "compte": "@FoodEatUp",
                 "format": "Short 9:16",
-                "lienCta": "https://drive.google.com/file/d/1MEMdJJMq2MhQ6H-dU5Nb5ls8ifoqM3U4/view"
+                "lienCta": "https://site.foodeatup.com/"
               }
             },
             "posterUrl": null,
@@ -2113,7 +2087,6 @@ export const series: Serie[] = [
             "statut": "a_produire",
             "dureeSecondes": null,
             "videoUrl": null,
-            "tutorielUrl": "https://drive.google.com/file/d/1awOr8pckNt0S-V2iyhlnBSS171wM0fkF/view",
             "reseaux": {
               "facebook": {
                 "statut": "a_venir",
@@ -2121,7 +2094,7 @@ export const series: Serie[] = [
                 "heure": "12:00",
                 "compte": "FoodEatUp",
                 "format": "Vidéo native 9:16",
-                "lienCta": "https://drive.google.com/file/d/1awOr8pckNt0S-V2iyhlnBSS171wM0fkF/view"
+                "lienCta": "https://site.foodeatup.com/"
               },
               "instagram": {
                 "statut": "a_venir",
@@ -2145,7 +2118,7 @@ export const series: Serie[] = [
                 "heure": "08:00",
                 "compte": "FoodEatUp",
                 "format": "Vidéo native 9:16",
-                "lienCta": "https://drive.google.com/file/d/1awOr8pckNt0S-V2iyhlnBSS171wM0fkF/view"
+                "lienCta": "https://site.foodeatup.com/"
               },
               "youtube": {
                 "statut": "a_venir",
@@ -2153,7 +2126,7 @@ export const series: Serie[] = [
                 "heure": "10:00",
                 "compte": "@FoodEatUp",
                 "format": "Short 9:16",
-                "lienCta": "https://drive.google.com/file/d/1awOr8pckNt0S-V2iyhlnBSS171wM0fkF/view"
+                "lienCta": "https://site.foodeatup.com/"
               }
             },
             "posterUrl": null,
@@ -2191,7 +2164,6 @@ export const series: Serie[] = [
             "statut": "a_produire",
             "dureeSecondes": null,
             "videoUrl": null,
-            "tutorielUrl": "https://drive.google.com/file/d/1biVi8MCCRbLYAEZHfNd-Gw-kAcW8jhiL/view",
             "reseaux": {
               "facebook": {
                 "statut": "a_venir",
@@ -2199,7 +2171,7 @@ export const series: Serie[] = [
                 "heure": "12:00",
                 "compte": "FoodEatUp",
                 "format": "Vidéo native 9:16",
-                "lienCta": "https://drive.google.com/file/d/1biVi8MCCRbLYAEZHfNd-Gw-kAcW8jhiL/view"
+                "lienCta": "https://site.foodeatup.com/"
               },
               "instagram": {
                 "statut": "a_venir",
@@ -2223,7 +2195,7 @@ export const series: Serie[] = [
                 "heure": "08:00",
                 "compte": "FoodEatUp",
                 "format": "Vidéo native 9:16",
-                "lienCta": "https://drive.google.com/file/d/1biVi8MCCRbLYAEZHfNd-Gw-kAcW8jhiL/view"
+                "lienCta": "https://site.foodeatup.com/"
               },
               "youtube": {
                 "statut": "a_venir",
@@ -2231,7 +2203,7 @@ export const series: Serie[] = [
                 "heure": "10:00",
                 "compte": "@FoodEatUp",
                 "format": "Short 9:16",
-                "lienCta": "https://drive.google.com/file/d/1biVi8MCCRbLYAEZHfNd-Gw-kAcW8jhiL/view"
+                "lienCta": "https://site.foodeatup.com/"
               }
             },
             "posterUrl": null,
@@ -2269,7 +2241,6 @@ export const series: Serie[] = [
             "statut": "bloque",
             "dureeSecondes": null,
             "videoUrl": null,
-            "tutorielUrl": null,
             "reseaux": {
               "facebook": {
                 "statut": "a_venir",
@@ -2277,7 +2248,7 @@ export const series: Serie[] = [
                 "heure": "12:00",
                 "compte": "FoodEatUp",
                 "format": "Vidéo native 9:16",
-                "lienCta": null
+                "lienCta": "https://site.foodeatup.com/"
               },
               "instagram": {
                 "statut": "a_venir",
@@ -2301,7 +2272,7 @@ export const series: Serie[] = [
                 "heure": "08:00",
                 "compte": "FoodEatUp",
                 "format": "Vidéo native 9:16",
-                "lienCta": null
+                "lienCta": "https://site.foodeatup.com/"
               },
               "youtube": {
                 "statut": "a_venir",
@@ -2309,7 +2280,7 @@ export const series: Serie[] = [
                 "heure": "10:00",
                 "compte": "@FoodEatUp",
                 "format": "Short 9:16",
-                "lienCta": null
+                "lienCta": "https://site.foodeatup.com/"
               }
             },
             "blocage": "Le chapitre correspondant n'a pas encore de vidéo dans le Drive interne.",
@@ -2341,7 +2312,6 @@ export const series: Serie[] = [
             "statut": "bloque",
             "dureeSecondes": null,
             "videoUrl": null,
-            "tutorielUrl": null,
             "reseaux": {
               "facebook": {
                 "statut": "a_venir",
@@ -2349,7 +2319,7 @@ export const series: Serie[] = [
                 "heure": "12:00",
                 "compte": "FoodEatUp",
                 "format": "Vidéo native 9:16",
-                "lienCta": null
+                "lienCta": "https://site.foodeatup.com/"
               },
               "instagram": {
                 "statut": "a_venir",
@@ -2373,7 +2343,7 @@ export const series: Serie[] = [
                 "heure": "08:00",
                 "compte": "FoodEatUp",
                 "format": "Vidéo native 9:16",
-                "lienCta": null
+                "lienCta": "https://site.foodeatup.com/"
               },
               "youtube": {
                 "statut": "a_venir",
@@ -2381,7 +2351,7 @@ export const series: Serie[] = [
                 "heure": "10:00",
                 "compte": "@FoodEatUp",
                 "format": "Short 9:16",
-                "lienCta": null
+                "lienCta": "https://site.foodeatup.com/"
               }
             },
             "blocage": "Le chapitre correspondant n'a pas encore de vidéo dans le Drive interne.",
@@ -2420,7 +2390,6 @@ export const series: Serie[] = [
             "statut": "a_produire",
             "dureeSecondes": null,
             "videoUrl": null,
-            "tutorielUrl": "https://drive.google.com/file/d/1MWkfZ-OZ_qv2z6QD9VPwabO5XnGd5UaB/view",
             "reseaux": {
               "facebook": {
                 "statut": "a_venir",
@@ -2428,7 +2397,7 @@ export const series: Serie[] = [
                 "heure": "12:00",
                 "compte": "FoodEatUp",
                 "format": "Vidéo native 9:16",
-                "lienCta": "https://drive.google.com/file/d/1MWkfZ-OZ_qv2z6QD9VPwabO5XnGd5UaB/view"
+                "lienCta": "https://site.foodeatup.com/"
               },
               "instagram": {
                 "statut": "a_venir",
@@ -2452,7 +2421,7 @@ export const series: Serie[] = [
                 "heure": "08:00",
                 "compte": "FoodEatUp",
                 "format": "Vidéo native 9:16",
-                "lienCta": "https://drive.google.com/file/d/1MWkfZ-OZ_qv2z6QD9VPwabO5XnGd5UaB/view"
+                "lienCta": "https://site.foodeatup.com/"
               },
               "youtube": {
                 "statut": "a_venir",
@@ -2460,7 +2429,7 @@ export const series: Serie[] = [
                 "heure": "10:00",
                 "compte": "@FoodEatUp",
                 "format": "Short 9:16",
-                "lienCta": "https://drive.google.com/file/d/1MWkfZ-OZ_qv2z6QD9VPwabO5XnGd5UaB/view"
+                "lienCta": "https://site.foodeatup.com/"
               }
             },
             "posterUrl": null,
@@ -2498,7 +2467,6 @@ export const series: Serie[] = [
             "statut": "bloque",
             "dureeSecondes": null,
             "videoUrl": null,
-            "tutorielUrl": null,
             "reseaux": {
               "facebook": {
                 "statut": "a_venir",
@@ -2506,7 +2474,7 @@ export const series: Serie[] = [
                 "heure": "12:00",
                 "compte": "FoodEatUp",
                 "format": "Vidéo native 9:16",
-                "lienCta": null
+                "lienCta": "https://site.foodeatup.com/"
               },
               "instagram": {
                 "statut": "a_venir",
@@ -2530,7 +2498,7 @@ export const series: Serie[] = [
                 "heure": "08:00",
                 "compte": "FoodEatUp",
                 "format": "Vidéo native 9:16",
-                "lienCta": null
+                "lienCta": "https://site.foodeatup.com/"
               },
               "youtube": {
                 "statut": "a_venir",
@@ -2538,7 +2506,7 @@ export const series: Serie[] = [
                 "heure": "10:00",
                 "compte": "@FoodEatUp",
                 "format": "Short 9:16",
-                "lienCta": null
+                "lienCta": "https://site.foodeatup.com/"
               }
             },
             "blocage": "Le chapitre correspondant n'a pas encore de vidéo dans le Drive interne.",
@@ -2577,7 +2545,6 @@ export const series: Serie[] = [
             "statut": "a_produire",
             "dureeSecondes": null,
             "videoUrl": null,
-            "tutorielUrl": "https://drive.google.com/file/d/1Cb7c55HN3pKh7zD7LlozCdVIzl85ux6M/view",
             "reseaux": {
               "facebook": {
                 "statut": "a_venir",
@@ -2585,7 +2552,7 @@ export const series: Serie[] = [
                 "heure": "12:00",
                 "compte": "FoodEatUp",
                 "format": "Vidéo native 9:16",
-                "lienCta": "https://drive.google.com/file/d/1Cb7c55HN3pKh7zD7LlozCdVIzl85ux6M/view"
+                "lienCta": "https://site.foodeatup.com/"
               },
               "instagram": {
                 "statut": "a_venir",
@@ -2609,7 +2576,7 @@ export const series: Serie[] = [
                 "heure": "08:00",
                 "compte": "FoodEatUp",
                 "format": "Vidéo native 9:16",
-                "lienCta": "https://drive.google.com/file/d/1Cb7c55HN3pKh7zD7LlozCdVIzl85ux6M/view"
+                "lienCta": "https://site.foodeatup.com/"
               },
               "youtube": {
                 "statut": "a_venir",
@@ -2617,7 +2584,7 @@ export const series: Serie[] = [
                 "heure": "10:00",
                 "compte": "@FoodEatUp",
                 "format": "Short 9:16",
-                "lienCta": "https://drive.google.com/file/d/1Cb7c55HN3pKh7zD7LlozCdVIzl85ux6M/view"
+                "lienCta": "https://site.foodeatup.com/"
               }
             },
             "posterUrl": null,
@@ -2655,7 +2622,6 @@ export const series: Serie[] = [
             "statut": "a_produire",
             "dureeSecondes": null,
             "videoUrl": null,
-            "tutorielUrl": "https://drive.google.com/file/d/1yqhyPMj9uBq1awmqTwUhisuBJBpY5kt-/view",
             "reseaux": {
               "facebook": {
                 "statut": "a_venir",
@@ -2663,7 +2629,7 @@ export const series: Serie[] = [
                 "heure": "12:00",
                 "compte": "FoodEatUp",
                 "format": "Vidéo native 9:16",
-                "lienCta": "https://drive.google.com/file/d/1yqhyPMj9uBq1awmqTwUhisuBJBpY5kt-/view"
+                "lienCta": "https://site.foodeatup.com/"
               },
               "instagram": {
                 "statut": "a_venir",
@@ -2687,7 +2653,7 @@ export const series: Serie[] = [
                 "heure": "08:00",
                 "compte": "FoodEatUp",
                 "format": "Vidéo native 9:16",
-                "lienCta": "https://drive.google.com/file/d/1yqhyPMj9uBq1awmqTwUhisuBJBpY5kt-/view"
+                "lienCta": "https://site.foodeatup.com/"
               },
               "youtube": {
                 "statut": "a_venir",
@@ -2695,7 +2661,7 @@ export const series: Serie[] = [
                 "heure": "10:00",
                 "compte": "@FoodEatUp",
                 "format": "Short 9:16",
-                "lienCta": "https://drive.google.com/file/d/1yqhyPMj9uBq1awmqTwUhisuBJBpY5kt-/view"
+                "lienCta": "https://site.foodeatup.com/"
               }
             },
             "posterUrl": null,
@@ -2733,7 +2699,6 @@ export const series: Serie[] = [
             "statut": "a_produire",
             "dureeSecondes": null,
             "videoUrl": null,
-            "tutorielUrl": "https://drive.google.com/file/d/124mIM7NudoQy5wun_rlSZ6MCrJ2wNykL/view",
             "reseaux": {
               "facebook": {
                 "statut": "a_venir",
@@ -2741,7 +2706,7 @@ export const series: Serie[] = [
                 "heure": "12:00",
                 "compte": "FoodEatUp",
                 "format": "Vidéo native 9:16",
-                "lienCta": "https://drive.google.com/file/d/124mIM7NudoQy5wun_rlSZ6MCrJ2wNykL/view"
+                "lienCta": "https://site.foodeatup.com/"
               },
               "instagram": {
                 "statut": "a_venir",
@@ -2765,7 +2730,7 @@ export const series: Serie[] = [
                 "heure": "08:00",
                 "compte": "FoodEatUp",
                 "format": "Vidéo native 9:16",
-                "lienCta": "https://drive.google.com/file/d/124mIM7NudoQy5wun_rlSZ6MCrJ2wNykL/view"
+                "lienCta": "https://site.foodeatup.com/"
               },
               "youtube": {
                 "statut": "a_venir",
@@ -2773,7 +2738,7 @@ export const series: Serie[] = [
                 "heure": "10:00",
                 "compte": "@FoodEatUp",
                 "format": "Short 9:16",
-                "lienCta": "https://drive.google.com/file/d/124mIM7NudoQy5wun_rlSZ6MCrJ2wNykL/view"
+                "lienCta": "https://site.foodeatup.com/"
               }
             },
             "posterUrl": null,
@@ -2811,7 +2776,6 @@ export const series: Serie[] = [
             "statut": "bloque",
             "dureeSecondes": null,
             "videoUrl": null,
-            "tutorielUrl": null,
             "reseaux": {
               "facebook": {
                 "statut": "a_venir",
@@ -2819,7 +2783,7 @@ export const series: Serie[] = [
                 "heure": "12:00",
                 "compte": "FoodEatUp",
                 "format": "Vidéo native 9:16",
-                "lienCta": null
+                "lienCta": "https://site.foodeatup.com/"
               },
               "instagram": {
                 "statut": "a_venir",
@@ -2843,7 +2807,7 @@ export const series: Serie[] = [
                 "heure": "08:00",
                 "compte": "FoodEatUp",
                 "format": "Vidéo native 9:16",
-                "lienCta": null
+                "lienCta": "https://site.foodeatup.com/"
               },
               "youtube": {
                 "statut": "a_venir",
@@ -2851,7 +2815,7 @@ export const series: Serie[] = [
                 "heure": "10:00",
                 "compte": "@FoodEatUp",
                 "format": "Short 9:16",
-                "lienCta": null
+                "lienCta": "https://site.foodeatup.com/"
               }
             },
             "blocage": "Le chapitre correspondant n'a pas encore de vidéo dans le Drive interne.",
@@ -2862,10 +2826,10 @@ export const series: Serie[] = [
             "tutorielModuleUrl": "https://tutoriel.foodeatup.com/module/configuration",
             "tutorielManquant": "Ce chapitre n'a pas encore sa fiche dans l'Academy.",
             "higgsfield": {
-              "videoSourceUrl": null,
+              "videoSourceUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/hooks/EP034.mp4",
               "duree": "10 s",
               "format": "vertical 9:16",
-              "source": null
+              "source": "depot"
             },
             "masterRapidoUrl": null
           },
@@ -2883,7 +2847,6 @@ export const series: Serie[] = [
             "statut": "a_produire",
             "dureeSecondes": null,
             "videoUrl": null,
-            "tutorielUrl": "https://drive.google.com/file/d/1MWkfZ-OZ_qv2z6QD9VPwabO5XnGd5UaB/view",
             "reseaux": {
               "facebook": {
                 "statut": "a_venir",
@@ -2891,7 +2854,7 @@ export const series: Serie[] = [
                 "heure": "12:00",
                 "compte": "FoodEatUp",
                 "format": "Vidéo native 9:16",
-                "lienCta": "https://drive.google.com/file/d/1MWkfZ-OZ_qv2z6QD9VPwabO5XnGd5UaB/view"
+                "lienCta": "https://site.foodeatup.com/"
               },
               "instagram": {
                 "statut": "a_venir",
@@ -2915,7 +2878,7 @@ export const series: Serie[] = [
                 "heure": "08:00",
                 "compte": "FoodEatUp",
                 "format": "Vidéo native 9:16",
-                "lienCta": "https://drive.google.com/file/d/1MWkfZ-OZ_qv2z6QD9VPwabO5XnGd5UaB/view"
+                "lienCta": "https://site.foodeatup.com/"
               },
               "youtube": {
                 "statut": "a_venir",
@@ -2923,7 +2886,7 @@ export const series: Serie[] = [
                 "heure": "10:00",
                 "compte": "@FoodEatUp",
                 "format": "Short 9:16",
-                "lienCta": "https://drive.google.com/file/d/1MWkfZ-OZ_qv2z6QD9VPwabO5XnGd5UaB/view"
+                "lienCta": "https://site.foodeatup.com/"
               }
             },
             "posterUrl": null,
@@ -2940,10 +2903,10 @@ export const series: Serie[] = [
             },
             "tutorielModuleUrl": "https://tutoriel.foodeatup.com/module/predibot",
             "higgsfield": {
-              "videoSourceUrl": null,
+              "videoSourceUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/hooks/EP035.mp4",
               "duree": "10 s",
               "format": "vertical 9:16",
-              "source": null
+              "source": "depot"
             },
             "masterRapidoUrl": null
           },
@@ -2961,7 +2924,6 @@ export const series: Serie[] = [
             "statut": "a_produire",
             "dureeSecondes": null,
             "videoUrl": null,
-            "tutorielUrl": "https://drive.google.com/file/d/16kN9JwGuVugkCtjQ93OObZ2tAlmsbgZl/view",
             "reseaux": {
               "facebook": {
                 "statut": "a_venir",
@@ -2969,7 +2931,7 @@ export const series: Serie[] = [
                 "heure": "12:00",
                 "compte": "FoodEatUp",
                 "format": "Vidéo native 9:16",
-                "lienCta": "https://drive.google.com/file/d/16kN9JwGuVugkCtjQ93OObZ2tAlmsbgZl/view"
+                "lienCta": "https://site.foodeatup.com/"
               },
               "instagram": {
                 "statut": "a_venir",
@@ -2993,7 +2955,7 @@ export const series: Serie[] = [
                 "heure": "08:00",
                 "compte": "FoodEatUp",
                 "format": "Vidéo native 9:16",
-                "lienCta": "https://drive.google.com/file/d/16kN9JwGuVugkCtjQ93OObZ2tAlmsbgZl/view"
+                "lienCta": "https://site.foodeatup.com/"
               },
               "youtube": {
                 "statut": "a_venir",
@@ -3001,7 +2963,7 @@ export const series: Serie[] = [
                 "heure": "10:00",
                 "compte": "@FoodEatUp",
                 "format": "Short 9:16",
-                "lienCta": "https://drive.google.com/file/d/16kN9JwGuVugkCtjQ93OObZ2tAlmsbgZl/view"
+                "lienCta": "https://site.foodeatup.com/"
               }
             },
             "posterUrl": null,
@@ -3011,10 +2973,10 @@ export const series: Serie[] = [
             "tutorielModuleUrl": "https://tutoriel.foodeatup.com/module/predibot",
             "tutorielManquant": "Ce chapitre n'a pas encore sa fiche dans l'Academy.",
             "higgsfield": {
-              "videoSourceUrl": null,
+              "videoSourceUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/hooks/EP036.mp4",
               "duree": "10 s",
               "format": "vertical 9:16",
-              "source": null
+              "source": "depot"
             },
             "masterRapidoUrl": null
           },
@@ -3032,7 +2994,6 @@ export const series: Serie[] = [
             "statut": "a_produire",
             "dureeSecondes": null,
             "videoUrl": null,
-            "tutorielUrl": "https://drive.google.com/file/d/174AfDA9zywpeMof070Mc33_doWgDcsp5/view",
             "reseaux": {
               "facebook": {
                 "statut": "a_venir",
@@ -3040,7 +3001,7 @@ export const series: Serie[] = [
                 "heure": "12:00",
                 "compte": "FoodEatUp",
                 "format": "Vidéo native 9:16",
-                "lienCta": "https://drive.google.com/file/d/174AfDA9zywpeMof070Mc33_doWgDcsp5/view"
+                "lienCta": "https://site.foodeatup.com/"
               },
               "instagram": {
                 "statut": "a_venir",
@@ -3064,7 +3025,7 @@ export const series: Serie[] = [
                 "heure": "08:00",
                 "compte": "FoodEatUp",
                 "format": "Vidéo native 9:16",
-                "lienCta": "https://drive.google.com/file/d/174AfDA9zywpeMof070Mc33_doWgDcsp5/view"
+                "lienCta": "https://site.foodeatup.com/"
               },
               "youtube": {
                 "statut": "a_venir",
@@ -3072,7 +3033,7 @@ export const series: Serie[] = [
                 "heure": "10:00",
                 "compte": "@FoodEatUp",
                 "format": "Short 9:16",
-                "lienCta": "https://drive.google.com/file/d/174AfDA9zywpeMof070Mc33_doWgDcsp5/view"
+                "lienCta": "https://site.foodeatup.com/"
               }
             },
             "posterUrl": null,
@@ -3089,10 +3050,10 @@ export const series: Serie[] = [
             },
             "tutorielModuleUrl": "https://tutoriel.foodeatup.com/module/equipe-planning",
             "higgsfield": {
-              "videoSourceUrl": null,
+              "videoSourceUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/hooks/EP037.mp4",
               "duree": "10 s",
               "format": "vertical 9:16",
-              "source": null
+              "source": "depot"
             },
             "masterRapidoUrl": null
           },
@@ -3110,7 +3071,6 @@ export const series: Serie[] = [
             "statut": "a_produire",
             "dureeSecondes": null,
             "videoUrl": null,
-            "tutorielUrl": "https://drive.google.com/file/d/17wdt0v2xgwuoollWJSO7QcDMexXMCK9H/view",
             "reseaux": {
               "facebook": {
                 "statut": "a_venir",
@@ -3118,7 +3078,7 @@ export const series: Serie[] = [
                 "heure": "12:00",
                 "compte": "FoodEatUp",
                 "format": "Vidéo native 9:16",
-                "lienCta": "https://drive.google.com/file/d/17wdt0v2xgwuoollWJSO7QcDMexXMCK9H/view"
+                "lienCta": "https://site.foodeatup.com/"
               },
               "instagram": {
                 "statut": "a_venir",
@@ -3142,7 +3102,7 @@ export const series: Serie[] = [
                 "heure": "08:00",
                 "compte": "FoodEatUp",
                 "format": "Vidéo native 9:16",
-                "lienCta": "https://drive.google.com/file/d/17wdt0v2xgwuoollWJSO7QcDMexXMCK9H/view"
+                "lienCta": "https://site.foodeatup.com/"
               },
               "youtube": {
                 "statut": "a_venir",
@@ -3150,7 +3110,7 @@ export const series: Serie[] = [
                 "heure": "10:00",
                 "compte": "@FoodEatUp",
                 "format": "Short 9:16",
-                "lienCta": "https://drive.google.com/file/d/17wdt0v2xgwuoollWJSO7QcDMexXMCK9H/view"
+                "lienCta": "https://site.foodeatup.com/"
               }
             },
             "posterUrl": null,
@@ -3167,10 +3127,10 @@ export const series: Serie[] = [
             },
             "tutorielModuleUrl": "https://tutoriel.foodeatup.com/module/stockvision-ai",
             "higgsfield": {
-              "videoSourceUrl": null,
+              "videoSourceUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/hooks/EP038.mp4",
               "duree": "10 s",
               "format": "vertical 9:16",
-              "source": null
+              "source": "depot"
             },
             "masterRapidoUrl": null
           },
@@ -3188,7 +3148,6 @@ export const series: Serie[] = [
             "statut": "a_produire",
             "dureeSecondes": null,
             "videoUrl": null,
-            "tutorielUrl": "https://drive.google.com/file/d/1DZKefLYV1_F9_uL-sJ79fb5srfGnROBp/view",
             "reseaux": {
               "facebook": {
                 "statut": "a_venir",
@@ -3196,7 +3155,7 @@ export const series: Serie[] = [
                 "heure": "12:00",
                 "compte": "FoodEatUp",
                 "format": "Vidéo native 9:16",
-                "lienCta": "https://drive.google.com/file/d/1DZKefLYV1_F9_uL-sJ79fb5srfGnROBp/view"
+                "lienCta": "https://site.foodeatup.com/"
               },
               "instagram": {
                 "statut": "a_venir",
@@ -3220,7 +3179,7 @@ export const series: Serie[] = [
                 "heure": "08:00",
                 "compte": "FoodEatUp",
                 "format": "Vidéo native 9:16",
-                "lienCta": "https://drive.google.com/file/d/1DZKefLYV1_F9_uL-sJ79fb5srfGnROBp/view"
+                "lienCta": "https://site.foodeatup.com/"
               },
               "youtube": {
                 "statut": "a_venir",
@@ -3228,7 +3187,7 @@ export const series: Serie[] = [
                 "heure": "10:00",
                 "compte": "@FoodEatUp",
                 "format": "Short 9:16",
-                "lienCta": "https://drive.google.com/file/d/1DZKefLYV1_F9_uL-sJ79fb5srfGnROBp/view"
+                "lienCta": "https://site.foodeatup.com/"
               }
             },
             "posterUrl": null,
@@ -3245,10 +3204,10 @@ export const series: Serie[] = [
             },
             "tutorielModuleUrl": "https://tutoriel.foodeatup.com/module/reservation-salle",
             "higgsfield": {
-              "videoSourceUrl": null,
+              "videoSourceUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/hooks/EP039.mp4",
               "duree": "10 s",
               "format": "vertical 9:16",
-              "source": null
+              "source": "depot"
             },
             "masterRapidoUrl": null
           },
@@ -3266,7 +3225,6 @@ export const series: Serie[] = [
             "statut": "a_produire",
             "dureeSecondes": null,
             "videoUrl": null,
-            "tutorielUrl": "https://drive.google.com/file/d/1xxxr8zsy8ZvK7NCizf1F9q8W3u48Npgt/view",
             "reseaux": {
               "facebook": {
                 "statut": "a_venir",
@@ -3274,7 +3232,7 @@ export const series: Serie[] = [
                 "heure": "12:00",
                 "compte": "FoodEatUp",
                 "format": "Vidéo native 9:16",
-                "lienCta": "https://drive.google.com/file/d/1xxxr8zsy8ZvK7NCizf1F9q8W3u48Npgt/view"
+                "lienCta": "https://site.foodeatup.com/"
               },
               "instagram": {
                 "statut": "a_venir",
@@ -3298,7 +3256,7 @@ export const series: Serie[] = [
                 "heure": "08:00",
                 "compte": "FoodEatUp",
                 "format": "Vidéo native 9:16",
-                "lienCta": "https://drive.google.com/file/d/1xxxr8zsy8ZvK7NCizf1F9q8W3u48Npgt/view"
+                "lienCta": "https://site.foodeatup.com/"
               },
               "youtube": {
                 "statut": "a_venir",
@@ -3306,7 +3264,7 @@ export const series: Serie[] = [
                 "heure": "10:00",
                 "compte": "@FoodEatUp",
                 "format": "Short 9:16",
-                "lienCta": "https://drive.google.com/file/d/1xxxr8zsy8ZvK7NCizf1F9q8W3u48Npgt/view"
+                "lienCta": "https://site.foodeatup.com/"
               }
             },
             "posterUrl": null,
@@ -3323,10 +3281,10 @@ export const series: Serie[] = [
             },
             "tutorielModuleUrl": "https://tutoriel.foodeatup.com/module/stockvision-ai",
             "higgsfield": {
-              "videoSourceUrl": null,
+              "videoSourceUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/hooks/EP040.mp4",
               "duree": "10 s",
               "format": "vertical 9:16",
-              "source": null
+              "source": "depot"
             },
             "masterRapidoUrl": null
           },
@@ -3344,7 +3302,6 @@ export const series: Serie[] = [
             "statut": "a_produire",
             "dureeSecondes": null,
             "videoUrl": null,
-            "tutorielUrl": "https://drive.google.com/file/d/15a_HkRxFA6AobiCgyHhXpl9sCM4mQdiC/view",
             "reseaux": {
               "facebook": {
                 "statut": "a_venir",
@@ -3352,7 +3309,7 @@ export const series: Serie[] = [
                 "heure": "12:00",
                 "compte": "FoodEatUp",
                 "format": "Vidéo native 9:16",
-                "lienCta": "https://drive.google.com/file/d/15a_HkRxFA6AobiCgyHhXpl9sCM4mQdiC/view"
+                "lienCta": "https://site.foodeatup.com/"
               },
               "instagram": {
                 "statut": "a_venir",
@@ -3376,7 +3333,7 @@ export const series: Serie[] = [
                 "heure": "08:00",
                 "compte": "FoodEatUp",
                 "format": "Vidéo native 9:16",
-                "lienCta": "https://drive.google.com/file/d/15a_HkRxFA6AobiCgyHhXpl9sCM4mQdiC/view"
+                "lienCta": "https://site.foodeatup.com/"
               },
               "youtube": {
                 "statut": "a_venir",
@@ -3384,7 +3341,7 @@ export const series: Serie[] = [
                 "heure": "10:00",
                 "compte": "@FoodEatUp",
                 "format": "Short 9:16",
-                "lienCta": "https://drive.google.com/file/d/15a_HkRxFA6AobiCgyHhXpl9sCM4mQdiC/view"
+                "lienCta": "https://site.foodeatup.com/"
               }
             },
             "posterUrl": null,
@@ -3401,10 +3358,10 @@ export const series: Serie[] = [
             },
             "tutorielModuleUrl": "https://tutoriel.foodeatup.com/module/stockvision-ai",
             "higgsfield": {
-              "videoSourceUrl": null,
+              "videoSourceUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/hooks/EP041.mp4",
               "duree": "10 s",
               "format": "vertical 9:16",
-              "source": null
+              "source": "depot"
             },
             "masterRapidoUrl": null
           },
@@ -3422,7 +3379,6 @@ export const series: Serie[] = [
             "statut": "bloque",
             "dureeSecondes": null,
             "videoUrl": null,
-            "tutorielUrl": null,
             "reseaux": {
               "facebook": {
                 "statut": "a_venir",
@@ -3430,7 +3386,7 @@ export const series: Serie[] = [
                 "heure": "12:00",
                 "compte": "FoodEatUp",
                 "format": "Vidéo native 9:16",
-                "lienCta": null
+                "lienCta": "https://site.foodeatup.com/"
               },
               "instagram": {
                 "statut": "a_venir",
@@ -3454,7 +3410,7 @@ export const series: Serie[] = [
                 "heure": "08:00",
                 "compte": "FoodEatUp",
                 "format": "Vidéo native 9:16",
-                "lienCta": null
+                "lienCta": "https://site.foodeatup.com/"
               },
               "youtube": {
                 "statut": "a_venir",
@@ -3462,7 +3418,7 @@ export const series: Serie[] = [
                 "heure": "10:00",
                 "compte": "@FoodEatUp",
                 "format": "Short 9:16",
-                "lienCta": null
+                "lienCta": "https://site.foodeatup.com/"
               }
             },
             "blocage": "Le chapitre correspondant n'a pas encore de vidéo dans le Drive interne.",
@@ -3480,10 +3436,10 @@ export const series: Serie[] = [
             },
             "tutorielModuleUrl": "https://tutoriel.foodeatup.com/module/marketing-fidelite",
             "higgsfield": {
-              "videoSourceUrl": null,
+              "videoSourceUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/hooks/EP042.mp4",
               "duree": "10 s",
               "format": "vertical 9:16",
-              "source": null
+              "source": "depot"
             },
             "masterRapidoUrl": null
           },
@@ -3501,7 +3457,6 @@ export const series: Serie[] = [
             "statut": "bloque",
             "dureeSecondes": null,
             "videoUrl": null,
-            "tutorielUrl": null,
             "reseaux": {
               "facebook": {
                 "statut": "a_venir",
@@ -3509,7 +3464,7 @@ export const series: Serie[] = [
                 "heure": "12:00",
                 "compte": "FoodEatUp",
                 "format": "Vidéo native 9:16",
-                "lienCta": null
+                "lienCta": "https://site.foodeatup.com/"
               },
               "instagram": {
                 "statut": "a_venir",
@@ -3533,7 +3488,7 @@ export const series: Serie[] = [
                 "heure": "08:00",
                 "compte": "FoodEatUp",
                 "format": "Vidéo native 9:16",
-                "lienCta": null
+                "lienCta": "https://site.foodeatup.com/"
               },
               "youtube": {
                 "statut": "a_venir",
@@ -3541,7 +3496,7 @@ export const series: Serie[] = [
                 "heure": "10:00",
                 "compte": "@FoodEatUp",
                 "format": "Short 9:16",
-                "lienCta": null
+                "lienCta": "https://site.foodeatup.com/"
               }
             },
             "blocage": "Le chapitre correspondant n'a pas encore de vidéo dans le Drive interne.",
@@ -3552,10 +3507,10 @@ export const series: Serie[] = [
             "tutorielModuleUrl": null,
             "tutorielManquant": "Le module Caisse POS n'existe pas encore dans l'Academy.",
             "higgsfield": {
-              "videoSourceUrl": null,
+              "videoSourceUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/hooks/EP043.mp4",
               "duree": "10 s",
               "format": "vertical 9:16",
-              "source": null
+              "source": "depot"
             },
             "masterRapidoUrl": null
           },
@@ -3573,7 +3528,6 @@ export const series: Serie[] = [
             "statut": "a_produire",
             "dureeSecondes": null,
             "videoUrl": null,
-            "tutorielUrl": "https://drive.google.com/file/d/1rTMXZj_uLAVaGPjxBT-ncZ4hcTU8UetZ/view",
             "reseaux": {
               "facebook": {
                 "statut": "a_venir",
@@ -3581,7 +3535,7 @@ export const series: Serie[] = [
                 "heure": "12:00",
                 "compte": "FoodEatUp",
                 "format": "Vidéo native 9:16",
-                "lienCta": "https://drive.google.com/file/d/1rTMXZj_uLAVaGPjxBT-ncZ4hcTU8UetZ/view"
+                "lienCta": "https://site.foodeatup.com/"
               },
               "instagram": {
                 "statut": "a_venir",
@@ -3605,7 +3559,7 @@ export const series: Serie[] = [
                 "heure": "08:00",
                 "compte": "FoodEatUp",
                 "format": "Vidéo native 9:16",
-                "lienCta": "https://drive.google.com/file/d/1rTMXZj_uLAVaGPjxBT-ncZ4hcTU8UetZ/view"
+                "lienCta": "https://site.foodeatup.com/"
               },
               "youtube": {
                 "statut": "a_venir",
@@ -3613,7 +3567,7 @@ export const series: Serie[] = [
                 "heure": "10:00",
                 "compte": "@FoodEatUp",
                 "format": "Short 9:16",
-                "lienCta": "https://drive.google.com/file/d/1rTMXZj_uLAVaGPjxBT-ncZ4hcTU8UetZ/view"
+                "lienCta": "https://site.foodeatup.com/"
               }
             },
             "posterUrl": null,
@@ -3630,10 +3584,10 @@ export const series: Serie[] = [
             },
             "tutorielModuleUrl": "https://tutoriel.foodeatup.com/module/reservation-salle",
             "higgsfield": {
-              "videoSourceUrl": null,
+              "videoSourceUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/hooks/EP044.mp4",
               "duree": "10 s",
               "format": "vertical 9:16",
-              "source": null
+              "source": "depot"
             },
             "masterRapidoUrl": null
           },
@@ -3651,7 +3605,6 @@ export const series: Serie[] = [
             "statut": "a_produire",
             "dureeSecondes": null,
             "videoUrl": null,
-            "tutorielUrl": "https://drive.google.com/file/d/13BlvDmhkU0IsKHXo77VHM7TwMSHKHmpv/view",
             "reseaux": {
               "facebook": {
                 "statut": "a_venir",
@@ -3659,7 +3612,7 @@ export const series: Serie[] = [
                 "heure": "12:00",
                 "compte": "FoodEatUp",
                 "format": "Vidéo native 9:16",
-                "lienCta": "https://drive.google.com/file/d/13BlvDmhkU0IsKHXo77VHM7TwMSHKHmpv/view"
+                "lienCta": "https://site.foodeatup.com/"
               },
               "instagram": {
                 "statut": "a_venir",
@@ -3683,7 +3636,7 @@ export const series: Serie[] = [
                 "heure": "08:00",
                 "compte": "FoodEatUp",
                 "format": "Vidéo native 9:16",
-                "lienCta": "https://drive.google.com/file/d/13BlvDmhkU0IsKHXo77VHM7TwMSHKHmpv/view"
+                "lienCta": "https://site.foodeatup.com/"
               },
               "youtube": {
                 "statut": "a_venir",
@@ -3691,7 +3644,7 @@ export const series: Serie[] = [
                 "heure": "10:00",
                 "compte": "@FoodEatUp",
                 "format": "Short 9:16",
-                "lienCta": "https://drive.google.com/file/d/13BlvDmhkU0IsKHXo77VHM7TwMSHKHmpv/view"
+                "lienCta": "https://site.foodeatup.com/"
               }
             },
             "posterUrl": null,
@@ -3708,10 +3661,10 @@ export const series: Serie[] = [
             },
             "tutorielModuleUrl": "https://tutoriel.foodeatup.com/module/stockvision-ai",
             "higgsfield": {
-              "videoSourceUrl": null,
+              "videoSourceUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/hooks/EP045.mp4",
               "duree": "10 s",
               "format": "vertical 9:16",
-              "source": null
+              "source": "depot"
             },
             "masterRapidoUrl": null
           },
@@ -3729,7 +3682,6 @@ export const series: Serie[] = [
             "statut": "a_produire",
             "dureeSecondes": null,
             "videoUrl": null,
-            "tutorielUrl": "https://drive.google.com/file/d/1pmXqNyUyZnwszglIDsXeFXtGiA0HDZm9/view",
             "reseaux": {
               "facebook": {
                 "statut": "a_venir",
@@ -3737,7 +3689,7 @@ export const series: Serie[] = [
                 "heure": "12:00",
                 "compte": "FoodEatUp",
                 "format": "Vidéo native 9:16",
-                "lienCta": "https://drive.google.com/file/d/1pmXqNyUyZnwszglIDsXeFXtGiA0HDZm9/view"
+                "lienCta": "https://site.foodeatup.com/"
               },
               "instagram": {
                 "statut": "a_venir",
@@ -3761,7 +3713,7 @@ export const series: Serie[] = [
                 "heure": "08:00",
                 "compte": "FoodEatUp",
                 "format": "Vidéo native 9:16",
-                "lienCta": "https://drive.google.com/file/d/1pmXqNyUyZnwszglIDsXeFXtGiA0HDZm9/view"
+                "lienCta": "https://site.foodeatup.com/"
               },
               "youtube": {
                 "statut": "a_venir",
@@ -3769,7 +3721,7 @@ export const series: Serie[] = [
                 "heure": "10:00",
                 "compte": "@FoodEatUp",
                 "format": "Short 9:16",
-                "lienCta": "https://drive.google.com/file/d/1pmXqNyUyZnwszglIDsXeFXtGiA0HDZm9/view"
+                "lienCta": "https://site.foodeatup.com/"
               }
             },
             "posterUrl": null,
@@ -3807,7 +3759,6 @@ export const series: Serie[] = [
             "statut": "a_produire",
             "dureeSecondes": null,
             "videoUrl": null,
-            "tutorielUrl": "https://drive.google.com/file/d/1JkMe74c9n4TFjeRRJ7pSpSQoB6bP2jEf/view",
             "reseaux": {
               "facebook": {
                 "statut": "a_venir",
@@ -3815,7 +3766,7 @@ export const series: Serie[] = [
                 "heure": "12:00",
                 "compte": "FoodEatUp",
                 "format": "Vidéo native 9:16",
-                "lienCta": "https://drive.google.com/file/d/1JkMe74c9n4TFjeRRJ7pSpSQoB6bP2jEf/view"
+                "lienCta": "https://site.foodeatup.com/"
               },
               "instagram": {
                 "statut": "a_venir",
@@ -3839,7 +3790,7 @@ export const series: Serie[] = [
                 "heure": "08:00",
                 "compte": "FoodEatUp",
                 "format": "Vidéo native 9:16",
-                "lienCta": "https://drive.google.com/file/d/1JkMe74c9n4TFjeRRJ7pSpSQoB6bP2jEf/view"
+                "lienCta": "https://site.foodeatup.com/"
               },
               "youtube": {
                 "statut": "a_venir",
@@ -3847,7 +3798,7 @@ export const series: Serie[] = [
                 "heure": "10:00",
                 "compte": "@FoodEatUp",
                 "format": "Short 9:16",
-                "lienCta": "https://drive.google.com/file/d/1JkMe74c9n4TFjeRRJ7pSpSQoB6bP2jEf/view"
+                "lienCta": "https://site.foodeatup.com/"
               }
             },
             "posterUrl": null,
@@ -3885,7 +3836,6 @@ export const series: Serie[] = [
             "statut": "a_produire",
             "dureeSecondes": null,
             "videoUrl": null,
-            "tutorielUrl": "https://drive.google.com/file/d/1hp7mZd-tQliPUemhyIKHWMl9xUgKHwoq/view",
             "reseaux": {
               "facebook": {
                 "statut": "a_venir",
@@ -3893,7 +3843,7 @@ export const series: Serie[] = [
                 "heure": "12:00",
                 "compte": "FoodEatUp",
                 "format": "Vidéo native 9:16",
-                "lienCta": "https://drive.google.com/file/d/1hp7mZd-tQliPUemhyIKHWMl9xUgKHwoq/view"
+                "lienCta": "https://site.foodeatup.com/"
               },
               "instagram": {
                 "statut": "a_venir",
@@ -3917,7 +3867,7 @@ export const series: Serie[] = [
                 "heure": "08:00",
                 "compte": "FoodEatUp",
                 "format": "Vidéo native 9:16",
-                "lienCta": "https://drive.google.com/file/d/1hp7mZd-tQliPUemhyIKHWMl9xUgKHwoq/view"
+                "lienCta": "https://site.foodeatup.com/"
               },
               "youtube": {
                 "statut": "a_venir",
@@ -3925,7 +3875,7 @@ export const series: Serie[] = [
                 "heure": "10:00",
                 "compte": "@FoodEatUp",
                 "format": "Short 9:16",
-                "lienCta": "https://drive.google.com/file/d/1hp7mZd-tQliPUemhyIKHWMl9xUgKHwoq/view"
+                "lienCta": "https://site.foodeatup.com/"
               }
             },
             "posterUrl": null,
@@ -3963,7 +3913,6 @@ export const series: Serie[] = [
             "statut": "a_produire",
             "dureeSecondes": null,
             "videoUrl": null,
-            "tutorielUrl": "https://drive.google.com/file/d/14OmsNUd3EMgWNxGVvmOwLgR3ZloWKNKW/view",
             "reseaux": {
               "facebook": {
                 "statut": "a_venir",
@@ -3971,7 +3920,7 @@ export const series: Serie[] = [
                 "heure": "12:00",
                 "compte": "FoodEatUp",
                 "format": "Vidéo native 9:16",
-                "lienCta": "https://drive.google.com/file/d/14OmsNUd3EMgWNxGVvmOwLgR3ZloWKNKW/view"
+                "lienCta": "https://site.foodeatup.com/"
               },
               "instagram": {
                 "statut": "a_venir",
@@ -3995,7 +3944,7 @@ export const series: Serie[] = [
                 "heure": "08:00",
                 "compte": "FoodEatUp",
                 "format": "Vidéo native 9:16",
-                "lienCta": "https://drive.google.com/file/d/14OmsNUd3EMgWNxGVvmOwLgR3ZloWKNKW/view"
+                "lienCta": "https://site.foodeatup.com/"
               },
               "youtube": {
                 "statut": "a_venir",
@@ -4003,7 +3952,7 @@ export const series: Serie[] = [
                 "heure": "10:00",
                 "compte": "@FoodEatUp",
                 "format": "Short 9:16",
-                "lienCta": "https://drive.google.com/file/d/14OmsNUd3EMgWNxGVvmOwLgR3ZloWKNKW/view"
+                "lienCta": "https://site.foodeatup.com/"
               }
             },
             "posterUrl": null,
@@ -4041,7 +3990,6 @@ export const series: Serie[] = [
             "statut": "a_produire",
             "dureeSecondes": null,
             "videoUrl": null,
-            "tutorielUrl": "https://drive.google.com/file/d/1FoFUKA32NsE78xp_YxFfvwKL_d3Qzi1x/view",
             "reseaux": {
               "facebook": {
                 "statut": "a_venir",
@@ -4049,7 +3997,7 @@ export const series: Serie[] = [
                 "heure": "12:00",
                 "compte": "FoodEatUp",
                 "format": "Vidéo native 9:16",
-                "lienCta": "https://drive.google.com/file/d/1FoFUKA32NsE78xp_YxFfvwKL_d3Qzi1x/view"
+                "lienCta": "https://site.foodeatup.com/"
               },
               "instagram": {
                 "statut": "a_venir",
@@ -4073,7 +4021,7 @@ export const series: Serie[] = [
                 "heure": "08:00",
                 "compte": "FoodEatUp",
                 "format": "Vidéo native 9:16",
-                "lienCta": "https://drive.google.com/file/d/1FoFUKA32NsE78xp_YxFfvwKL_d3Qzi1x/view"
+                "lienCta": "https://site.foodeatup.com/"
               },
               "youtube": {
                 "statut": "a_venir",
@@ -4081,7 +4029,7 @@ export const series: Serie[] = [
                 "heure": "10:00",
                 "compte": "@FoodEatUp",
                 "format": "Short 9:16",
-                "lienCta": "https://drive.google.com/file/d/1FoFUKA32NsE78xp_YxFfvwKL_d3Qzi1x/view"
+                "lienCta": "https://site.foodeatup.com/"
               }
             },
             "posterUrl": null,
@@ -4119,7 +4067,6 @@ export const series: Serie[] = [
             "statut": "a_produire",
             "dureeSecondes": null,
             "videoUrl": null,
-            "tutorielUrl": "https://drive.google.com/file/d/1Cb7c55HN3pKh7zD7LlozCdVIzl85ux6M/view",
             "reseaux": {
               "facebook": {
                 "statut": "a_venir",
@@ -4127,7 +4074,7 @@ export const series: Serie[] = [
                 "heure": "12:00",
                 "compte": "FoodEatUp",
                 "format": "Vidéo native 9:16",
-                "lienCta": "https://drive.google.com/file/d/1Cb7c55HN3pKh7zD7LlozCdVIzl85ux6M/view"
+                "lienCta": "https://site.foodeatup.com/"
               },
               "instagram": {
                 "statut": "a_venir",
@@ -4151,7 +4098,7 @@ export const series: Serie[] = [
                 "heure": "08:00",
                 "compte": "FoodEatUp",
                 "format": "Vidéo native 9:16",
-                "lienCta": "https://drive.google.com/file/d/1Cb7c55HN3pKh7zD7LlozCdVIzl85ux6M/view"
+                "lienCta": "https://site.foodeatup.com/"
               },
               "youtube": {
                 "statut": "a_venir",
@@ -4159,7 +4106,7 @@ export const series: Serie[] = [
                 "heure": "10:00",
                 "compte": "@FoodEatUp",
                 "format": "Short 9:16",
-                "lienCta": "https://drive.google.com/file/d/1Cb7c55HN3pKh7zD7LlozCdVIzl85ux6M/view"
+                "lienCta": "https://site.foodeatup.com/"
               }
             },
             "posterUrl": null,
@@ -4197,7 +4144,6 @@ export const series: Serie[] = [
             "statut": "a_produire",
             "dureeSecondes": null,
             "videoUrl": null,
-            "tutorielUrl": "https://drive.google.com/file/d/1qwwJNILNZv3EpqCowlCFUhxeC_2qyZgm/view",
             "reseaux": {
               "facebook": {
                 "statut": "a_venir",
@@ -4205,7 +4151,7 @@ export const series: Serie[] = [
                 "heure": "12:00",
                 "compte": "FoodEatUp",
                 "format": "Vidéo native 9:16",
-                "lienCta": "https://drive.google.com/file/d/1qwwJNILNZv3EpqCowlCFUhxeC_2qyZgm/view"
+                "lienCta": "https://site.foodeatup.com/"
               },
               "instagram": {
                 "statut": "a_venir",
@@ -4229,7 +4175,7 @@ export const series: Serie[] = [
                 "heure": "08:00",
                 "compte": "FoodEatUp",
                 "format": "Vidéo native 9:16",
-                "lienCta": "https://drive.google.com/file/d/1qwwJNILNZv3EpqCowlCFUhxeC_2qyZgm/view"
+                "lienCta": "https://site.foodeatup.com/"
               },
               "youtube": {
                 "statut": "a_venir",
@@ -4237,7 +4183,7 @@ export const series: Serie[] = [
                 "heure": "10:00",
                 "compte": "@FoodEatUp",
                 "format": "Short 9:16",
-                "lienCta": "https://drive.google.com/file/d/1qwwJNILNZv3EpqCowlCFUhxeC_2qyZgm/view"
+                "lienCta": "https://site.foodeatup.com/"
               }
             },
             "posterUrl": null,
@@ -4275,7 +4221,6 @@ export const series: Serie[] = [
             "statut": "a_produire",
             "dureeSecondes": null,
             "videoUrl": null,
-            "tutorielUrl": "https://drive.google.com/file/d/1JkMe74c9n4TFjeRRJ7pSpSQoB6bP2jEf/view",
             "reseaux": {
               "facebook": {
                 "statut": "a_venir",
@@ -4283,7 +4228,7 @@ export const series: Serie[] = [
                 "heure": "12:00",
                 "compte": "FoodEatUp",
                 "format": "Vidéo native 9:16",
-                "lienCta": "https://drive.google.com/file/d/1JkMe74c9n4TFjeRRJ7pSpSQoB6bP2jEf/view"
+                "lienCta": "https://site.foodeatup.com/"
               },
               "instagram": {
                 "statut": "a_venir",
@@ -4307,7 +4252,7 @@ export const series: Serie[] = [
                 "heure": "08:00",
                 "compte": "FoodEatUp",
                 "format": "Vidéo native 9:16",
-                "lienCta": "https://drive.google.com/file/d/1JkMe74c9n4TFjeRRJ7pSpSQoB6bP2jEf/view"
+                "lienCta": "https://site.foodeatup.com/"
               },
               "youtube": {
                 "statut": "a_venir",
@@ -4315,7 +4260,7 @@ export const series: Serie[] = [
                 "heure": "10:00",
                 "compte": "@FoodEatUp",
                 "format": "Short 9:16",
-                "lienCta": "https://drive.google.com/file/d/1JkMe74c9n4TFjeRRJ7pSpSQoB6bP2jEf/view"
+                "lienCta": "https://site.foodeatup.com/"
               }
             },
             "posterUrl": null,
@@ -4353,7 +4298,6 @@ export const series: Serie[] = [
             "statut": "a_produire",
             "dureeSecondes": null,
             "videoUrl": null,
-            "tutorielUrl": "https://drive.google.com/file/d/1GPF2hFYK3Ds91avjyrG1z7dZDMbFggI6/view",
             "reseaux": {
               "facebook": {
                 "statut": "a_venir",
@@ -4361,7 +4305,7 @@ export const series: Serie[] = [
                 "heure": "12:00",
                 "compte": "FoodEatUp",
                 "format": "Vidéo native 9:16",
-                "lienCta": "https://drive.google.com/file/d/1GPF2hFYK3Ds91avjyrG1z7dZDMbFggI6/view"
+                "lienCta": "https://site.foodeatup.com/"
               },
               "instagram": {
                 "statut": "a_venir",
@@ -4385,7 +4329,7 @@ export const series: Serie[] = [
                 "heure": "08:00",
                 "compte": "FoodEatUp",
                 "format": "Vidéo native 9:16",
-                "lienCta": "https://drive.google.com/file/d/1GPF2hFYK3Ds91avjyrG1z7dZDMbFggI6/view"
+                "lienCta": "https://site.foodeatup.com/"
               },
               "youtube": {
                 "statut": "a_venir",
@@ -4393,7 +4337,7 @@ export const series: Serie[] = [
                 "heure": "10:00",
                 "compte": "@FoodEatUp",
                 "format": "Short 9:16",
-                "lienCta": "https://drive.google.com/file/d/1GPF2hFYK3Ds91avjyrG1z7dZDMbFggI6/view"
+                "lienCta": "https://site.foodeatup.com/"
               }
             },
             "posterUrl": null,
@@ -4431,7 +4375,6 @@ export const series: Serie[] = [
             "statut": "a_produire",
             "dureeSecondes": null,
             "videoUrl": null,
-            "tutorielUrl": "https://drive.google.com/file/d/1BiubjVB2WUaP8COM9a9V6_DMWNc1ltvh/view",
             "reseaux": {
               "facebook": {
                 "statut": "a_venir",
@@ -4439,7 +4382,7 @@ export const series: Serie[] = [
                 "heure": "12:00",
                 "compte": "FoodEatUp",
                 "format": "Vidéo native 9:16",
-                "lienCta": "https://drive.google.com/file/d/1BiubjVB2WUaP8COM9a9V6_DMWNc1ltvh/view"
+                "lienCta": "https://site.foodeatup.com/"
               },
               "instagram": {
                 "statut": "a_venir",
@@ -4463,7 +4406,7 @@ export const series: Serie[] = [
                 "heure": "08:00",
                 "compte": "FoodEatUp",
                 "format": "Vidéo native 9:16",
-                "lienCta": "https://drive.google.com/file/d/1BiubjVB2WUaP8COM9a9V6_DMWNc1ltvh/view"
+                "lienCta": "https://site.foodeatup.com/"
               },
               "youtube": {
                 "statut": "a_venir",
@@ -4471,7 +4414,7 @@ export const series: Serie[] = [
                 "heure": "10:00",
                 "compte": "@FoodEatUp",
                 "format": "Short 9:16",
-                "lienCta": "https://drive.google.com/file/d/1BiubjVB2WUaP8COM9a9V6_DMWNc1ltvh/view"
+                "lienCta": "https://site.foodeatup.com/"
               }
             },
             "posterUrl": null,
@@ -4509,7 +4452,6 @@ export const series: Serie[] = [
             "statut": "a_produire",
             "dureeSecondes": null,
             "videoUrl": null,
-            "tutorielUrl": "https://drive.google.com/file/d/1jXUousFn16eOB60LdGPObwwlic2VD5Ic/view",
             "reseaux": {
               "facebook": {
                 "statut": "a_venir",
@@ -4517,7 +4459,7 @@ export const series: Serie[] = [
                 "heure": "12:00",
                 "compte": "FoodEatUp",
                 "format": "Vidéo native 9:16",
-                "lienCta": "https://drive.google.com/file/d/1jXUousFn16eOB60LdGPObwwlic2VD5Ic/view"
+                "lienCta": "https://site.foodeatup.com/"
               },
               "instagram": {
                 "statut": "a_venir",
@@ -4541,7 +4483,7 @@ export const series: Serie[] = [
                 "heure": "08:00",
                 "compte": "FoodEatUp",
                 "format": "Vidéo native 9:16",
-                "lienCta": "https://drive.google.com/file/d/1jXUousFn16eOB60LdGPObwwlic2VD5Ic/view"
+                "lienCta": "https://site.foodeatup.com/"
               },
               "youtube": {
                 "statut": "a_venir",
@@ -4549,7 +4491,7 @@ export const series: Serie[] = [
                 "heure": "10:00",
                 "compte": "@FoodEatUp",
                 "format": "Short 9:16",
-                "lienCta": "https://drive.google.com/file/d/1jXUousFn16eOB60LdGPObwwlic2VD5Ic/view"
+                "lienCta": "https://site.foodeatup.com/"
               }
             },
             "posterUrl": null,
@@ -4587,7 +4529,6 @@ export const series: Serie[] = [
             "statut": "a_produire",
             "dureeSecondes": null,
             "videoUrl": null,
-            "tutorielUrl": "https://drive.google.com/file/d/14OmsNUd3EMgWNxGVvmOwLgR3ZloWKNKW/view",
             "reseaux": {
               "facebook": {
                 "statut": "a_venir",
@@ -4595,7 +4536,7 @@ export const series: Serie[] = [
                 "heure": "12:00",
                 "compte": "FoodEatUp",
                 "format": "Vidéo native 9:16",
-                "lienCta": "https://drive.google.com/file/d/14OmsNUd3EMgWNxGVvmOwLgR3ZloWKNKW/view"
+                "lienCta": "https://site.foodeatup.com/"
               },
               "instagram": {
                 "statut": "a_venir",
@@ -4619,7 +4560,7 @@ export const series: Serie[] = [
                 "heure": "08:00",
                 "compte": "FoodEatUp",
                 "format": "Vidéo native 9:16",
-                "lienCta": "https://drive.google.com/file/d/14OmsNUd3EMgWNxGVvmOwLgR3ZloWKNKW/view"
+                "lienCta": "https://site.foodeatup.com/"
               },
               "youtube": {
                 "statut": "a_venir",
@@ -4627,7 +4568,7 @@ export const series: Serie[] = [
                 "heure": "10:00",
                 "compte": "@FoodEatUp",
                 "format": "Short 9:16",
-                "lienCta": "https://drive.google.com/file/d/14OmsNUd3EMgWNxGVvmOwLgR3ZloWKNKW/view"
+                "lienCta": "https://site.foodeatup.com/"
               }
             },
             "posterUrl": null,
@@ -4658,7 +4599,6 @@ export const series: Serie[] = [
             "statut": "bloque",
             "dureeSecondes": null,
             "videoUrl": null,
-            "tutorielUrl": null,
             "reseaux": {
               "facebook": {
                 "statut": "a_venir",
@@ -4666,7 +4606,7 @@ export const series: Serie[] = [
                 "heure": "12:00",
                 "compte": "FoodEatUp",
                 "format": "Vidéo native 9:16",
-                "lienCta": null
+                "lienCta": "https://site.foodeatup.com/"
               },
               "instagram": {
                 "statut": "a_venir",
@@ -4690,7 +4630,7 @@ export const series: Serie[] = [
                 "heure": "08:00",
                 "compte": "FoodEatUp",
                 "format": "Vidéo native 9:16",
-                "lienCta": null
+                "lienCta": "https://site.foodeatup.com/"
               },
               "youtube": {
                 "statut": "a_venir",
@@ -4698,7 +4638,7 @@ export const series: Serie[] = [
                 "heure": "10:00",
                 "compte": "@FoodEatUp",
                 "format": "Short 9:16",
-                "lienCta": null
+                "lienCta": "https://site.foodeatup.com/"
               }
             },
             "blocage": "Le chapitre correspondant n'a pas encore de vidéo dans le Drive interne.",
@@ -4730,7 +4670,6 @@ export const series: Serie[] = [
             "statut": "a_produire",
             "dureeSecondes": null,
             "videoUrl": null,
-            "tutorielUrl": "https://drive.google.com/file/d/1Typp5DHDNQO1RErN8flaUywe9yS3HBme/view",
             "reseaux": {
               "facebook": {
                 "statut": "a_venir",
@@ -4738,7 +4677,7 @@ export const series: Serie[] = [
                 "heure": "12:00",
                 "compte": "FoodEatUp",
                 "format": "Vidéo native 9:16",
-                "lienCta": "https://drive.google.com/file/d/1Typp5DHDNQO1RErN8flaUywe9yS3HBme/view"
+                "lienCta": "https://site.foodeatup.com/"
               },
               "instagram": {
                 "statut": "a_venir",
@@ -4762,7 +4701,7 @@ export const series: Serie[] = [
                 "heure": "08:00",
                 "compte": "FoodEatUp",
                 "format": "Vidéo native 9:16",
-                "lienCta": "https://drive.google.com/file/d/1Typp5DHDNQO1RErN8flaUywe9yS3HBme/view"
+                "lienCta": "https://site.foodeatup.com/"
               },
               "youtube": {
                 "statut": "a_venir",
@@ -4770,7 +4709,7 @@ export const series: Serie[] = [
                 "heure": "10:00",
                 "compte": "@FoodEatUp",
                 "format": "Short 9:16",
-                "lienCta": "https://drive.google.com/file/d/1Typp5DHDNQO1RErN8flaUywe9yS3HBme/view"
+                "lienCta": "https://site.foodeatup.com/"
               }
             },
             "posterUrl": null,
@@ -4808,7 +4747,6 @@ export const series: Serie[] = [
             "statut": "a_produire",
             "dureeSecondes": null,
             "videoUrl": null,
-            "tutorielUrl": "https://drive.google.com/file/d/1JkMe74c9n4TFjeRRJ7pSpSQoB6bP2jEf/view",
             "reseaux": {
               "facebook": {
                 "statut": "a_venir",
@@ -4816,7 +4754,7 @@ export const series: Serie[] = [
                 "heure": "12:00",
                 "compte": "FoodEatUp",
                 "format": "Vidéo native 9:16",
-                "lienCta": "https://drive.google.com/file/d/1JkMe74c9n4TFjeRRJ7pSpSQoB6bP2jEf/view"
+                "lienCta": "https://site.foodeatup.com/"
               },
               "instagram": {
                 "statut": "a_venir",
@@ -4840,7 +4778,7 @@ export const series: Serie[] = [
                 "heure": "08:00",
                 "compte": "FoodEatUp",
                 "format": "Vidéo native 9:16",
-                "lienCta": "https://drive.google.com/file/d/1JkMe74c9n4TFjeRRJ7pSpSQoB6bP2jEf/view"
+                "lienCta": "https://site.foodeatup.com/"
               },
               "youtube": {
                 "statut": "a_venir",
@@ -4848,7 +4786,7 @@ export const series: Serie[] = [
                 "heure": "10:00",
                 "compte": "@FoodEatUp",
                 "format": "Short 9:16",
-                "lienCta": "https://drive.google.com/file/d/1JkMe74c9n4TFjeRRJ7pSpSQoB6bP2jEf/view"
+                "lienCta": "https://site.foodeatup.com/"
               }
             },
             "posterUrl": null,
@@ -4893,7 +4831,6 @@ export const series: Serie[] = [
             "statut": "a_produire",
             "dureeSecondes": null,
             "videoUrl": null,
-            "tutorielUrl": "https://drive.google.com/file/d/1Sdqt1w99LFbrJP2RpqbPSRahwZGHcPC2/view",
             "reseaux": {
               "facebook": {
                 "statut": "a_venir",
@@ -4901,7 +4838,7 @@ export const series: Serie[] = [
                 "heure": "12:00",
                 "compte": "FoodEatUp",
                 "format": "Vidéo native 9:16",
-                "lienCta": "https://drive.google.com/file/d/1Sdqt1w99LFbrJP2RpqbPSRahwZGHcPC2/view"
+                "lienCta": "https://site.foodeatup.com/"
               },
               "instagram": {
                 "statut": "a_venir",
@@ -4925,7 +4862,7 @@ export const series: Serie[] = [
                 "heure": "08:00",
                 "compte": "FoodEatUp",
                 "format": "Vidéo native 9:16",
-                "lienCta": "https://drive.google.com/file/d/1Sdqt1w99LFbrJP2RpqbPSRahwZGHcPC2/view"
+                "lienCta": "https://site.foodeatup.com/"
               },
               "youtube": {
                 "statut": "a_venir",
@@ -4933,7 +4870,7 @@ export const series: Serie[] = [
                 "heure": "10:00",
                 "compte": "@FoodEatUp",
                 "format": "Short 9:16",
-                "lienCta": "https://drive.google.com/file/d/1Sdqt1w99LFbrJP2RpqbPSRahwZGHcPC2/view"
+                "lienCta": "https://site.foodeatup.com/"
               }
             },
             "posterUrl": null,
@@ -4950,10 +4887,10 @@ export const series: Serie[] = [
             },
             "tutorielModuleUrl": "https://tutoriel.foodeatup.com/module/haccp",
             "higgsfield": {
-              "videoSourceUrl": null,
+              "videoSourceUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/hooks/EP061.mp4",
               "duree": "10 s",
               "format": "vertical 9:16",
-              "source": null
+              "source": "depot"
             },
             "masterRapidoUrl": null
           },
@@ -4971,7 +4908,6 @@ export const series: Serie[] = [
             "statut": "bloque",
             "dureeSecondes": null,
             "videoUrl": null,
-            "tutorielUrl": null,
             "reseaux": {
               "facebook": {
                 "statut": "a_venir",
@@ -4979,7 +4915,7 @@ export const series: Serie[] = [
                 "heure": "12:00",
                 "compte": "FoodEatUp",
                 "format": "Vidéo native 9:16",
-                "lienCta": null
+                "lienCta": "https://site.foodeatup.com/"
               },
               "instagram": {
                 "statut": "a_venir",
@@ -5003,7 +4939,7 @@ export const series: Serie[] = [
                 "heure": "08:00",
                 "compte": "FoodEatUp",
                 "format": "Vidéo native 9:16",
-                "lienCta": null
+                "lienCta": "https://site.foodeatup.com/"
               },
               "youtube": {
                 "statut": "a_venir",
@@ -5011,7 +4947,7 @@ export const series: Serie[] = [
                 "heure": "10:00",
                 "compte": "@FoodEatUp",
                 "format": "Short 9:16",
-                "lienCta": null
+                "lienCta": "https://site.foodeatup.com/"
               }
             },
             "blocage": "Le chapitre correspondant n'a pas encore de vidéo dans le Drive interne.",
@@ -5029,10 +4965,10 @@ export const series: Serie[] = [
             },
             "tutorielModuleUrl": "https://tutoriel.foodeatup.com/module/haccp",
             "higgsfield": {
-              "videoSourceUrl": null,
+              "videoSourceUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/hooks/EP062.mp4",
               "duree": "10 s",
               "format": "vertical 9:16",
-              "source": null
+              "source": "depot"
             },
             "masterRapidoUrl": null
           },
@@ -5050,7 +4986,6 @@ export const series: Serie[] = [
             "statut": "a_produire",
             "dureeSecondes": null,
             "videoUrl": null,
-            "tutorielUrl": "https://drive.google.com/file/d/1Bhu8KC2mW5P9Gr1qSEVxiNvYoHbUTLCX/view",
             "reseaux": {
               "facebook": {
                 "statut": "a_venir",
@@ -5058,7 +4993,7 @@ export const series: Serie[] = [
                 "heure": "12:00",
                 "compte": "FoodEatUp",
                 "format": "Vidéo native 9:16",
-                "lienCta": "https://drive.google.com/file/d/1Bhu8KC2mW5P9Gr1qSEVxiNvYoHbUTLCX/view"
+                "lienCta": "https://site.foodeatup.com/"
               },
               "instagram": {
                 "statut": "a_venir",
@@ -5082,7 +5017,7 @@ export const series: Serie[] = [
                 "heure": "08:00",
                 "compte": "FoodEatUp",
                 "format": "Vidéo native 9:16",
-                "lienCta": "https://drive.google.com/file/d/1Bhu8KC2mW5P9Gr1qSEVxiNvYoHbUTLCX/view"
+                "lienCta": "https://site.foodeatup.com/"
               },
               "youtube": {
                 "statut": "a_venir",
@@ -5090,7 +5025,7 @@ export const series: Serie[] = [
                 "heure": "10:00",
                 "compte": "@FoodEatUp",
                 "format": "Short 9:16",
-                "lienCta": "https://drive.google.com/file/d/1Bhu8KC2mW5P9Gr1qSEVxiNvYoHbUTLCX/view"
+                "lienCta": "https://site.foodeatup.com/"
               }
             },
             "posterUrl": null,
@@ -5128,7 +5063,6 @@ export const series: Serie[] = [
             "statut": "a_produire",
             "dureeSecondes": null,
             "videoUrl": null,
-            "tutorielUrl": "https://drive.google.com/file/d/1CdAnJgR_iq1ESyAgcCCpFjnCfYzaUhIR/view",
             "reseaux": {
               "facebook": {
                 "statut": "a_venir",
@@ -5136,7 +5070,7 @@ export const series: Serie[] = [
                 "heure": "12:00",
                 "compte": "FoodEatUp",
                 "format": "Vidéo native 9:16",
-                "lienCta": "https://drive.google.com/file/d/1CdAnJgR_iq1ESyAgcCCpFjnCfYzaUhIR/view"
+                "lienCta": "https://site.foodeatup.com/"
               },
               "instagram": {
                 "statut": "a_venir",
@@ -5160,7 +5094,7 @@ export const series: Serie[] = [
                 "heure": "08:00",
                 "compte": "FoodEatUp",
                 "format": "Vidéo native 9:16",
-                "lienCta": "https://drive.google.com/file/d/1CdAnJgR_iq1ESyAgcCCpFjnCfYzaUhIR/view"
+                "lienCta": "https://site.foodeatup.com/"
               },
               "youtube": {
                 "statut": "a_venir",
@@ -5168,7 +5102,7 @@ export const series: Serie[] = [
                 "heure": "10:00",
                 "compte": "@FoodEatUp",
                 "format": "Short 9:16",
-                "lienCta": "https://drive.google.com/file/d/1CdAnJgR_iq1ESyAgcCCpFjnCfYzaUhIR/view"
+                "lienCta": "https://site.foodeatup.com/"
               }
             },
             "posterUrl": null,
@@ -5185,10 +5119,10 @@ export const series: Serie[] = [
             },
             "tutorielModuleUrl": "https://tutoriel.foodeatup.com/module/equipe-planning",
             "higgsfield": {
-              "videoSourceUrl": null,
+              "videoSourceUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/hooks/EP064.mp4",
               "duree": "10 s",
               "format": "vertical 9:16",
-              "source": null
+              "source": "depot"
             },
             "masterRapidoUrl": null
           },
@@ -5206,7 +5140,6 @@ export const series: Serie[] = [
             "statut": "a_produire",
             "dureeSecondes": null,
             "videoUrl": null,
-            "tutorielUrl": "https://drive.google.com/file/d/1J1Q1Tv2kx9RCiiW6m5SiSh6psnrjtLMb/view",
             "reseaux": {
               "facebook": {
                 "statut": "a_venir",
@@ -5214,7 +5147,7 @@ export const series: Serie[] = [
                 "heure": "12:00",
                 "compte": "FoodEatUp",
                 "format": "Vidéo native 9:16",
-                "lienCta": "https://drive.google.com/file/d/1J1Q1Tv2kx9RCiiW6m5SiSh6psnrjtLMb/view"
+                "lienCta": "https://site.foodeatup.com/"
               },
               "instagram": {
                 "statut": "a_venir",
@@ -5238,7 +5171,7 @@ export const series: Serie[] = [
                 "heure": "08:00",
                 "compte": "FoodEatUp",
                 "format": "Vidéo native 9:16",
-                "lienCta": "https://drive.google.com/file/d/1J1Q1Tv2kx9RCiiW6m5SiSh6psnrjtLMb/view"
+                "lienCta": "https://site.foodeatup.com/"
               },
               "youtube": {
                 "statut": "a_venir",
@@ -5246,7 +5179,7 @@ export const series: Serie[] = [
                 "heure": "10:00",
                 "compte": "@FoodEatUp",
                 "format": "Short 9:16",
-                "lienCta": "https://drive.google.com/file/d/1J1Q1Tv2kx9RCiiW6m5SiSh6psnrjtLMb/view"
+                "lienCta": "https://site.foodeatup.com/"
               }
             },
             "posterUrl": null,
@@ -5263,10 +5196,10 @@ export const series: Serie[] = [
             },
             "tutorielModuleUrl": "https://tutoriel.foodeatup.com/module/equipe-planning",
             "higgsfield": {
-              "videoSourceUrl": null,
+              "videoSourceUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/hooks/EP065.mp4",
               "duree": "10 s",
               "format": "vertical 9:16",
-              "source": null
+              "source": "depot"
             },
             "masterRapidoUrl": null
           },
@@ -5284,7 +5217,6 @@ export const series: Serie[] = [
             "statut": "a_produire",
             "dureeSecondes": null,
             "videoUrl": null,
-            "tutorielUrl": "https://drive.google.com/file/d/1gY1t4M0AUXTI54sCrB22r7yeiCDe3W35/view",
             "reseaux": {
               "facebook": {
                 "statut": "a_venir",
@@ -5292,7 +5224,7 @@ export const series: Serie[] = [
                 "heure": "12:00",
                 "compte": "FoodEatUp",
                 "format": "Vidéo native 9:16",
-                "lienCta": "https://drive.google.com/file/d/1gY1t4M0AUXTI54sCrB22r7yeiCDe3W35/view"
+                "lienCta": "https://site.foodeatup.com/"
               },
               "instagram": {
                 "statut": "a_venir",
@@ -5316,7 +5248,7 @@ export const series: Serie[] = [
                 "heure": "08:00",
                 "compte": "FoodEatUp",
                 "format": "Vidéo native 9:16",
-                "lienCta": "https://drive.google.com/file/d/1gY1t4M0AUXTI54sCrB22r7yeiCDe3W35/view"
+                "lienCta": "https://site.foodeatup.com/"
               },
               "youtube": {
                 "statut": "a_venir",
@@ -5324,7 +5256,7 @@ export const series: Serie[] = [
                 "heure": "10:00",
                 "compte": "@FoodEatUp",
                 "format": "Short 9:16",
-                "lienCta": "https://drive.google.com/file/d/1gY1t4M0AUXTI54sCrB22r7yeiCDe3W35/view"
+                "lienCta": "https://site.foodeatup.com/"
               }
             },
             "posterUrl": null,
@@ -5334,10 +5266,10 @@ export const series: Serie[] = [
             "tutorielModuleUrl": "https://tutoriel.foodeatup.com/module/equipe-planning",
             "tutorielManquant": "Ce chapitre n'a pas encore sa fiche dans l'Academy.",
             "higgsfield": {
-              "videoSourceUrl": null,
+              "videoSourceUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/hooks/EP066.mp4",
               "duree": "10 s",
               "format": "vertical 9:16",
-              "source": null
+              "source": "depot"
             },
             "masterRapidoUrl": null
           },
@@ -5355,7 +5287,6 @@ export const series: Serie[] = [
             "statut": "a_produire",
             "dureeSecondes": null,
             "videoUrl": null,
-            "tutorielUrl": "https://drive.google.com/file/d/1nbIsc-SROPwONiTIm1BuLpYuNSSTTHm7/view",
             "reseaux": {
               "facebook": {
                 "statut": "a_venir",
@@ -5363,7 +5294,7 @@ export const series: Serie[] = [
                 "heure": "12:00",
                 "compte": "FoodEatUp",
                 "format": "Vidéo native 9:16",
-                "lienCta": "https://drive.google.com/file/d/1nbIsc-SROPwONiTIm1BuLpYuNSSTTHm7/view"
+                "lienCta": "https://site.foodeatup.com/"
               },
               "instagram": {
                 "statut": "a_venir",
@@ -5387,7 +5318,7 @@ export const series: Serie[] = [
                 "heure": "08:00",
                 "compte": "FoodEatUp",
                 "format": "Vidéo native 9:16",
-                "lienCta": "https://drive.google.com/file/d/1nbIsc-SROPwONiTIm1BuLpYuNSSTTHm7/view"
+                "lienCta": "https://site.foodeatup.com/"
               },
               "youtube": {
                 "statut": "a_venir",
@@ -5395,7 +5326,7 @@ export const series: Serie[] = [
                 "heure": "10:00",
                 "compte": "@FoodEatUp",
                 "format": "Short 9:16",
-                "lienCta": "https://drive.google.com/file/d/1nbIsc-SROPwONiTIm1BuLpYuNSSTTHm7/view"
+                "lienCta": "https://site.foodeatup.com/"
               }
             },
             "posterUrl": null,
@@ -5433,7 +5364,6 @@ export const series: Serie[] = [
             "statut": "a_produire",
             "dureeSecondes": null,
             "videoUrl": null,
-            "tutorielUrl": "https://drive.google.com/file/d/174AfDA9zywpeMof070Mc33_doWgDcsp5/view",
             "reseaux": {
               "facebook": {
                 "statut": "a_venir",
@@ -5441,7 +5371,7 @@ export const series: Serie[] = [
                 "heure": "12:00",
                 "compte": "FoodEatUp",
                 "format": "Vidéo native 9:16",
-                "lienCta": "https://drive.google.com/file/d/174AfDA9zywpeMof070Mc33_doWgDcsp5/view"
+                "lienCta": "https://site.foodeatup.com/"
               },
               "instagram": {
                 "statut": "a_venir",
@@ -5465,7 +5395,7 @@ export const series: Serie[] = [
                 "heure": "08:00",
                 "compte": "FoodEatUp",
                 "format": "Vidéo native 9:16",
-                "lienCta": "https://drive.google.com/file/d/174AfDA9zywpeMof070Mc33_doWgDcsp5/view"
+                "lienCta": "https://site.foodeatup.com/"
               },
               "youtube": {
                 "statut": "a_venir",
@@ -5473,7 +5403,7 @@ export const series: Serie[] = [
                 "heure": "10:00",
                 "compte": "@FoodEatUp",
                 "format": "Short 9:16",
-                "lienCta": "https://drive.google.com/file/d/174AfDA9zywpeMof070Mc33_doWgDcsp5/view"
+                "lienCta": "https://site.foodeatup.com/"
               }
             },
             "posterUrl": null,
@@ -5483,10 +5413,10 @@ export const series: Serie[] = [
             "tutorielModuleUrl": "https://tutoriel.foodeatup.com/module/equipe-planning",
             "tutorielManquant": "Ce chapitre n'a pas encore sa fiche dans l'Academy.",
             "higgsfield": {
-              "videoSourceUrl": null,
+              "videoSourceUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/hooks/EP068.mp4",
               "duree": "10 s",
               "format": "vertical 9:16",
-              "source": null
+              "source": "depot"
             },
             "masterRapidoUrl": null
           },
@@ -5504,7 +5434,6 @@ export const series: Serie[] = [
             "statut": "bloque",
             "dureeSecondes": null,
             "videoUrl": null,
-            "tutorielUrl": null,
             "reseaux": {
               "facebook": {
                 "statut": "a_venir",
@@ -5512,7 +5441,7 @@ export const series: Serie[] = [
                 "heure": "12:00",
                 "compte": "FoodEatUp",
                 "format": "Vidéo native 9:16",
-                "lienCta": null
+                "lienCta": "https://site.foodeatup.com/"
               },
               "instagram": {
                 "statut": "a_venir",
@@ -5536,7 +5465,7 @@ export const series: Serie[] = [
                 "heure": "08:00",
                 "compte": "FoodEatUp",
                 "format": "Vidéo native 9:16",
-                "lienCta": null
+                "lienCta": "https://site.foodeatup.com/"
               },
               "youtube": {
                 "statut": "a_venir",
@@ -5544,7 +5473,7 @@ export const series: Serie[] = [
                 "heure": "10:00",
                 "compte": "@FoodEatUp",
                 "format": "Short 9:16",
-                "lienCta": null
+                "lienCta": "https://site.foodeatup.com/"
               }
             },
             "blocage": "Le chapitre correspondant n'a pas encore de vidéo dans le Drive interne.",
@@ -5583,7 +5512,6 @@ export const series: Serie[] = [
             "statut": "a_produire",
             "dureeSecondes": null,
             "videoUrl": null,
-            "tutorielUrl": "https://drive.google.com/file/d/13w9aRHXfQFkxF3UvqtaLczqKPN5rr7E0/view",
             "reseaux": {
               "facebook": {
                 "statut": "a_venir",
@@ -5591,7 +5519,7 @@ export const series: Serie[] = [
                 "heure": "12:00",
                 "compte": "FoodEatUp",
                 "format": "Vidéo native 9:16",
-                "lienCta": "https://drive.google.com/file/d/13w9aRHXfQFkxF3UvqtaLczqKPN5rr7E0/view"
+                "lienCta": "https://site.foodeatup.com/"
               },
               "instagram": {
                 "statut": "a_venir",
@@ -5615,7 +5543,7 @@ export const series: Serie[] = [
                 "heure": "08:00",
                 "compte": "FoodEatUp",
                 "format": "Vidéo native 9:16",
-                "lienCta": "https://drive.google.com/file/d/13w9aRHXfQFkxF3UvqtaLczqKPN5rr7E0/view"
+                "lienCta": "https://site.foodeatup.com/"
               },
               "youtube": {
                 "statut": "a_venir",
@@ -5623,7 +5551,7 @@ export const series: Serie[] = [
                 "heure": "10:00",
                 "compte": "@FoodEatUp",
                 "format": "Short 9:16",
-                "lienCta": "https://drive.google.com/file/d/13w9aRHXfQFkxF3UvqtaLczqKPN5rr7E0/view"
+                "lienCta": "https://site.foodeatup.com/"
               }
             },
             "posterUrl": null,
@@ -5661,7 +5589,6 @@ export const series: Serie[] = [
             "statut": "a_produire",
             "dureeSecondes": null,
             "videoUrl": null,
-            "tutorielUrl": "https://drive.google.com/file/d/174AfDA9zywpeMof070Mc33_doWgDcsp5/view",
             "reseaux": {
               "facebook": {
                 "statut": "a_venir",
@@ -5669,7 +5596,7 @@ export const series: Serie[] = [
                 "heure": "12:00",
                 "compte": "FoodEatUp",
                 "format": "Vidéo native 9:16",
-                "lienCta": "https://drive.google.com/file/d/174AfDA9zywpeMof070Mc33_doWgDcsp5/view"
+                "lienCta": "https://site.foodeatup.com/"
               },
               "instagram": {
                 "statut": "a_venir",
@@ -5693,7 +5620,7 @@ export const series: Serie[] = [
                 "heure": "08:00",
                 "compte": "FoodEatUp",
                 "format": "Vidéo native 9:16",
-                "lienCta": "https://drive.google.com/file/d/174AfDA9zywpeMof070Mc33_doWgDcsp5/view"
+                "lienCta": "https://site.foodeatup.com/"
               },
               "youtube": {
                 "statut": "a_venir",
@@ -5701,7 +5628,7 @@ export const series: Serie[] = [
                 "heure": "10:00",
                 "compte": "@FoodEatUp",
                 "format": "Short 9:16",
-                "lienCta": "https://drive.google.com/file/d/174AfDA9zywpeMof070Mc33_doWgDcsp5/view"
+                "lienCta": "https://site.foodeatup.com/"
               }
             },
             "posterUrl": null,
@@ -5739,7 +5666,6 @@ export const series: Serie[] = [
             "statut": "a_produire",
             "dureeSecondes": null,
             "videoUrl": null,
-            "tutorielUrl": "https://drive.google.com/file/d/1gY1t4M0AUXTI54sCrB22r7yeiCDe3W35/view",
             "reseaux": {
               "facebook": {
                 "statut": "a_venir",
@@ -5747,7 +5673,7 @@ export const series: Serie[] = [
                 "heure": "12:00",
                 "compte": "FoodEatUp",
                 "format": "Vidéo native 9:16",
-                "lienCta": "https://drive.google.com/file/d/1gY1t4M0AUXTI54sCrB22r7yeiCDe3W35/view"
+                "lienCta": "https://site.foodeatup.com/"
               },
               "instagram": {
                 "statut": "a_venir",
@@ -5771,7 +5697,7 @@ export const series: Serie[] = [
                 "heure": "08:00",
                 "compte": "FoodEatUp",
                 "format": "Vidéo native 9:16",
-                "lienCta": "https://drive.google.com/file/d/1gY1t4M0AUXTI54sCrB22r7yeiCDe3W35/view"
+                "lienCta": "https://site.foodeatup.com/"
               },
               "youtube": {
                 "statut": "a_venir",
@@ -5779,7 +5705,7 @@ export const series: Serie[] = [
                 "heure": "10:00",
                 "compte": "@FoodEatUp",
                 "format": "Short 9:16",
-                "lienCta": "https://drive.google.com/file/d/1gY1t4M0AUXTI54sCrB22r7yeiCDe3W35/view"
+                "lienCta": "https://site.foodeatup.com/"
               }
             },
             "posterUrl": null,
@@ -5817,7 +5743,6 @@ export const series: Serie[] = [
             "statut": "a_produire",
             "dureeSecondes": null,
             "videoUrl": null,
-            "tutorielUrl": "https://drive.google.com/file/d/1gB8THFEj2zZuPj7UPJ99yXb9yRXsdPwi/view",
             "reseaux": {
               "facebook": {
                 "statut": "a_venir",
@@ -5825,7 +5750,7 @@ export const series: Serie[] = [
                 "heure": "12:00",
                 "compte": "FoodEatUp",
                 "format": "Vidéo native 9:16",
-                "lienCta": "https://drive.google.com/file/d/1gB8THFEj2zZuPj7UPJ99yXb9yRXsdPwi/view"
+                "lienCta": "https://site.foodeatup.com/"
               },
               "instagram": {
                 "statut": "a_venir",
@@ -5849,7 +5774,7 @@ export const series: Serie[] = [
                 "heure": "08:00",
                 "compte": "FoodEatUp",
                 "format": "Vidéo native 9:16",
-                "lienCta": "https://drive.google.com/file/d/1gB8THFEj2zZuPj7UPJ99yXb9yRXsdPwi/view"
+                "lienCta": "https://site.foodeatup.com/"
               },
               "youtube": {
                 "statut": "a_venir",
@@ -5857,7 +5782,7 @@ export const series: Serie[] = [
                 "heure": "10:00",
                 "compte": "@FoodEatUp",
                 "format": "Short 9:16",
-                "lienCta": "https://drive.google.com/file/d/1gB8THFEj2zZuPj7UPJ99yXb9yRXsdPwi/view"
+                "lienCta": "https://site.foodeatup.com/"
               }
             },
             "posterUrl": null,
@@ -5874,10 +5799,10 @@ export const series: Serie[] = [
             },
             "tutorielModuleUrl": "https://tutoriel.foodeatup.com/module/configuration",
             "higgsfield": {
-              "videoSourceUrl": null,
+              "videoSourceUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/hooks/EP073.mp4",
               "duree": "10 s",
               "format": "vertical 9:16",
-              "source": null
+              "source": "depot"
             },
             "masterRapidoUrl": null
           },
@@ -5895,7 +5820,6 @@ export const series: Serie[] = [
             "statut": "a_produire",
             "dureeSecondes": null,
             "videoUrl": null,
-            "tutorielUrl": "https://drive.google.com/file/d/17ZDwHrTaTvQmiCmTYBwZnnJo_OLrXzyo/view",
             "reseaux": {
               "facebook": {
                 "statut": "a_venir",
@@ -5903,7 +5827,7 @@ export const series: Serie[] = [
                 "heure": "12:00",
                 "compte": "FoodEatUp",
                 "format": "Vidéo native 9:16",
-                "lienCta": "https://drive.google.com/file/d/17ZDwHrTaTvQmiCmTYBwZnnJo_OLrXzyo/view"
+                "lienCta": "https://site.foodeatup.com/"
               },
               "instagram": {
                 "statut": "a_venir",
@@ -5927,7 +5851,7 @@ export const series: Serie[] = [
                 "heure": "08:00",
                 "compte": "FoodEatUp",
                 "format": "Vidéo native 9:16",
-                "lienCta": "https://drive.google.com/file/d/17ZDwHrTaTvQmiCmTYBwZnnJo_OLrXzyo/view"
+                "lienCta": "https://site.foodeatup.com/"
               },
               "youtube": {
                 "statut": "a_venir",
@@ -5935,7 +5859,7 @@ export const series: Serie[] = [
                 "heure": "10:00",
                 "compte": "@FoodEatUp",
                 "format": "Short 9:16",
-                "lienCta": "https://drive.google.com/file/d/17ZDwHrTaTvQmiCmTYBwZnnJo_OLrXzyo/view"
+                "lienCta": "https://site.foodeatup.com/"
               }
             },
             "posterUrl": null,
@@ -5973,7 +5897,6 @@ export const series: Serie[] = [
             "statut": "a_produire",
             "dureeSecondes": null,
             "videoUrl": null,
-            "tutorielUrl": "https://drive.google.com/file/d/1_cZ3_hXyP6JA3IdvyXCg9AT0bTprgi5P/view",
             "reseaux": {
               "facebook": {
                 "statut": "a_venir",
@@ -5981,7 +5904,7 @@ export const series: Serie[] = [
                 "heure": "12:00",
                 "compte": "FoodEatUp",
                 "format": "Vidéo native 9:16",
-                "lienCta": "https://drive.google.com/file/d/1_cZ3_hXyP6JA3IdvyXCg9AT0bTprgi5P/view"
+                "lienCta": "https://site.foodeatup.com/"
               },
               "instagram": {
                 "statut": "a_venir",
@@ -6005,7 +5928,7 @@ export const series: Serie[] = [
                 "heure": "08:00",
                 "compte": "FoodEatUp",
                 "format": "Vidéo native 9:16",
-                "lienCta": "https://drive.google.com/file/d/1_cZ3_hXyP6JA3IdvyXCg9AT0bTprgi5P/view"
+                "lienCta": "https://site.foodeatup.com/"
               },
               "youtube": {
                 "statut": "a_venir",
@@ -6013,7 +5936,7 @@ export const series: Serie[] = [
                 "heure": "10:00",
                 "compte": "@FoodEatUp",
                 "format": "Short 9:16",
-                "lienCta": "https://drive.google.com/file/d/1_cZ3_hXyP6JA3IdvyXCg9AT0bTprgi5P/view"
+                "lienCta": "https://site.foodeatup.com/"
               }
             },
             "posterUrl": null,
@@ -6051,7 +5974,6 @@ export const series: Serie[] = [
             "statut": "a_produire",
             "dureeSecondes": null,
             "videoUrl": null,
-            "tutorielUrl": "https://drive.google.com/file/d/1tmPsD8uYQ5KAWQ1aVBqta0OAq7FpOMWC/view",
             "reseaux": {
               "facebook": {
                 "statut": "a_venir",
@@ -6059,7 +5981,7 @@ export const series: Serie[] = [
                 "heure": "12:00",
                 "compte": "FoodEatUp",
                 "format": "Vidéo native 9:16",
-                "lienCta": "https://drive.google.com/file/d/1tmPsD8uYQ5KAWQ1aVBqta0OAq7FpOMWC/view"
+                "lienCta": "https://site.foodeatup.com/"
               },
               "instagram": {
                 "statut": "a_venir",
@@ -6083,7 +6005,7 @@ export const series: Serie[] = [
                 "heure": "08:00",
                 "compte": "FoodEatUp",
                 "format": "Vidéo native 9:16",
-                "lienCta": "https://drive.google.com/file/d/1tmPsD8uYQ5KAWQ1aVBqta0OAq7FpOMWC/view"
+                "lienCta": "https://site.foodeatup.com/"
               },
               "youtube": {
                 "statut": "a_venir",
@@ -6091,7 +6013,7 @@ export const series: Serie[] = [
                 "heure": "10:00",
                 "compte": "@FoodEatUp",
                 "format": "Short 9:16",
-                "lienCta": "https://drive.google.com/file/d/1tmPsD8uYQ5KAWQ1aVBqta0OAq7FpOMWC/view"
+                "lienCta": "https://site.foodeatup.com/"
               }
             },
             "posterUrl": null,
@@ -6129,7 +6051,6 @@ export const series: Serie[] = [
             "statut": "bloque",
             "dureeSecondes": null,
             "videoUrl": null,
-            "tutorielUrl": null,
             "reseaux": {
               "facebook": {
                 "statut": "a_venir",
@@ -6137,7 +6058,7 @@ export const series: Serie[] = [
                 "heure": "12:00",
                 "compte": "FoodEatUp",
                 "format": "Vidéo native 9:16",
-                "lienCta": null
+                "lienCta": "https://site.foodeatup.com/"
               },
               "instagram": {
                 "statut": "a_venir",
@@ -6161,7 +6082,7 @@ export const series: Serie[] = [
                 "heure": "08:00",
                 "compte": "FoodEatUp",
                 "format": "Vidéo native 9:16",
-                "lienCta": null
+                "lienCta": "https://site.foodeatup.com/"
               },
               "youtube": {
                 "statut": "a_venir",
@@ -6169,7 +6090,7 @@ export const series: Serie[] = [
                 "heure": "10:00",
                 "compte": "@FoodEatUp",
                 "format": "Short 9:16",
-                "lienCta": null
+                "lienCta": "https://site.foodeatup.com/"
               }
             },
             "blocage": "Le chapitre correspondant n'a pas encore de vidéo dans le Drive interne.",
@@ -6208,7 +6129,6 @@ export const series: Serie[] = [
             "statut": "bloque",
             "dureeSecondes": null,
             "videoUrl": null,
-            "tutorielUrl": null,
             "reseaux": {
               "facebook": {
                 "statut": "a_venir",
@@ -6216,7 +6136,7 @@ export const series: Serie[] = [
                 "heure": "12:00",
                 "compte": "FoodEatUp",
                 "format": "Vidéo native 9:16",
-                "lienCta": null
+                "lienCta": "https://site.foodeatup.com/"
               },
               "instagram": {
                 "statut": "a_venir",
@@ -6240,7 +6160,7 @@ export const series: Serie[] = [
                 "heure": "08:00",
                 "compte": "FoodEatUp",
                 "format": "Vidéo native 9:16",
-                "lienCta": null
+                "lienCta": "https://site.foodeatup.com/"
               },
               "youtube": {
                 "statut": "a_venir",
@@ -6248,7 +6168,7 @@ export const series: Serie[] = [
                 "heure": "10:00",
                 "compte": "@FoodEatUp",
                 "format": "Short 9:16",
-                "lienCta": null
+                "lienCta": "https://site.foodeatup.com/"
               }
             },
             "blocage": "Le chapitre correspondant n'a pas encore de vidéo dans le Drive interne.",
@@ -6287,7 +6207,6 @@ export const series: Serie[] = [
             "statut": "bloque",
             "dureeSecondes": null,
             "videoUrl": null,
-            "tutorielUrl": null,
             "reseaux": {
               "facebook": {
                 "statut": "a_venir",
@@ -6295,7 +6214,7 @@ export const series: Serie[] = [
                 "heure": "12:00",
                 "compte": "FoodEatUp",
                 "format": "Vidéo native 9:16",
-                "lienCta": null
+                "lienCta": "https://site.foodeatup.com/"
               },
               "instagram": {
                 "statut": "a_venir",
@@ -6319,7 +6238,7 @@ export const series: Serie[] = [
                 "heure": "08:00",
                 "compte": "FoodEatUp",
                 "format": "Vidéo native 9:16",
-                "lienCta": null
+                "lienCta": "https://site.foodeatup.com/"
               },
               "youtube": {
                 "statut": "a_venir",
@@ -6327,7 +6246,7 @@ export const series: Serie[] = [
                 "heure": "10:00",
                 "compte": "@FoodEatUp",
                 "format": "Short 9:16",
-                "lienCta": null
+                "lienCta": "https://site.foodeatup.com/"
               }
             },
             "blocage": "Le chapitre correspondant n'a pas encore de vidéo dans le Drive interne.",
@@ -6366,7 +6285,6 @@ export const series: Serie[] = [
             "statut": "a_produire",
             "dureeSecondes": null,
             "videoUrl": null,
-            "tutorielUrl": "https://drive.google.com/file/d/1k2HJJNz5jMR0jbV-Sr-u_p-ZGdWBmspG/view",
             "reseaux": {
               "facebook": {
                 "statut": "a_venir",
@@ -6374,7 +6292,7 @@ export const series: Serie[] = [
                 "heure": "12:00",
                 "compte": "FoodEatUp",
                 "format": "Vidéo native 9:16",
-                "lienCta": "https://drive.google.com/file/d/1k2HJJNz5jMR0jbV-Sr-u_p-ZGdWBmspG/view"
+                "lienCta": "https://site.foodeatup.com/"
               },
               "instagram": {
                 "statut": "a_venir",
@@ -6398,7 +6316,7 @@ export const series: Serie[] = [
                 "heure": "08:00",
                 "compte": "FoodEatUp",
                 "format": "Vidéo native 9:16",
-                "lienCta": "https://drive.google.com/file/d/1k2HJJNz5jMR0jbV-Sr-u_p-ZGdWBmspG/view"
+                "lienCta": "https://site.foodeatup.com/"
               },
               "youtube": {
                 "statut": "a_venir",
@@ -6406,7 +6324,7 @@ export const series: Serie[] = [
                 "heure": "10:00",
                 "compte": "@FoodEatUp",
                 "format": "Short 9:16",
-                "lienCta": "https://drive.google.com/file/d/1k2HJJNz5jMR0jbV-Sr-u_p-ZGdWBmspG/view"
+                "lienCta": "https://site.foodeatup.com/"
               }
             },
             "posterUrl": null,
@@ -6444,7 +6362,6 @@ export const series: Serie[] = [
             "statut": "a_produire",
             "dureeSecondes": null,
             "videoUrl": null,
-            "tutorielUrl": "https://drive.google.com/file/d/1bN_o6_HYz9Za1kGyIst6INWrJJz9MagE/view",
             "reseaux": {
               "facebook": {
                 "statut": "a_venir",
@@ -6452,7 +6369,7 @@ export const series: Serie[] = [
                 "heure": "12:00",
                 "compte": "FoodEatUp",
                 "format": "Vidéo native 9:16",
-                "lienCta": "https://drive.google.com/file/d/1bN_o6_HYz9Za1kGyIst6INWrJJz9MagE/view"
+                "lienCta": "https://site.foodeatup.com/"
               },
               "instagram": {
                 "statut": "a_venir",
@@ -6476,7 +6393,7 @@ export const series: Serie[] = [
                 "heure": "08:00",
                 "compte": "FoodEatUp",
                 "format": "Vidéo native 9:16",
-                "lienCta": "https://drive.google.com/file/d/1bN_o6_HYz9Za1kGyIst6INWrJJz9MagE/view"
+                "lienCta": "https://site.foodeatup.com/"
               },
               "youtube": {
                 "statut": "a_venir",
@@ -6484,7 +6401,7 @@ export const series: Serie[] = [
                 "heure": "10:00",
                 "compte": "@FoodEatUp",
                 "format": "Short 9:16",
-                "lienCta": "https://drive.google.com/file/d/1bN_o6_HYz9Za1kGyIst6INWrJJz9MagE/view"
+                "lienCta": "https://site.foodeatup.com/"
               }
             },
             "posterUrl": null,
@@ -6522,7 +6439,6 @@ export const series: Serie[] = [
             "statut": "a_produire",
             "dureeSecondes": null,
             "videoUrl": null,
-            "tutorielUrl": "https://drive.google.com/file/d/1LRxi9R1Sbj1sQ0Cg4RZhpE_cxZHygksu/view",
             "reseaux": {
               "facebook": {
                 "statut": "a_venir",
@@ -6530,7 +6446,7 @@ export const series: Serie[] = [
                 "heure": "12:00",
                 "compte": "FoodEatUp",
                 "format": "Vidéo native 9:16",
-                "lienCta": "https://drive.google.com/file/d/1LRxi9R1Sbj1sQ0Cg4RZhpE_cxZHygksu/view"
+                "lienCta": "https://site.foodeatup.com/"
               },
               "instagram": {
                 "statut": "a_venir",
@@ -6554,7 +6470,7 @@ export const series: Serie[] = [
                 "heure": "08:00",
                 "compte": "FoodEatUp",
                 "format": "Vidéo native 9:16",
-                "lienCta": "https://drive.google.com/file/d/1LRxi9R1Sbj1sQ0Cg4RZhpE_cxZHygksu/view"
+                "lienCta": "https://site.foodeatup.com/"
               },
               "youtube": {
                 "statut": "a_venir",
@@ -6562,7 +6478,7 @@ export const series: Serie[] = [
                 "heure": "10:00",
                 "compte": "@FoodEatUp",
                 "format": "Short 9:16",
-                "lienCta": "https://drive.google.com/file/d/1LRxi9R1Sbj1sQ0Cg4RZhpE_cxZHygksu/view"
+                "lienCta": "https://site.foodeatup.com/"
               }
             },
             "posterUrl": null,
@@ -6600,7 +6516,6 @@ export const series: Serie[] = [
             "statut": "a_produire",
             "dureeSecondes": null,
             "videoUrl": null,
-            "tutorielUrl": "https://drive.google.com/file/d/1sEyZker3x2-dybI2fKHlLjFv1gGig62-/view",
             "reseaux": {
               "facebook": {
                 "statut": "a_venir",
@@ -6608,7 +6523,7 @@ export const series: Serie[] = [
                 "heure": "12:00",
                 "compte": "FoodEatUp",
                 "format": "Vidéo native 9:16",
-                "lienCta": "https://drive.google.com/file/d/1sEyZker3x2-dybI2fKHlLjFv1gGig62-/view"
+                "lienCta": "https://site.foodeatup.com/"
               },
               "instagram": {
                 "statut": "a_venir",
@@ -6632,7 +6547,7 @@ export const series: Serie[] = [
                 "heure": "08:00",
                 "compte": "FoodEatUp",
                 "format": "Vidéo native 9:16",
-                "lienCta": "https://drive.google.com/file/d/1sEyZker3x2-dybI2fKHlLjFv1gGig62-/view"
+                "lienCta": "https://site.foodeatup.com/"
               },
               "youtube": {
                 "statut": "a_venir",
@@ -6640,7 +6555,7 @@ export const series: Serie[] = [
                 "heure": "10:00",
                 "compte": "@FoodEatUp",
                 "format": "Short 9:16",
-                "lienCta": "https://drive.google.com/file/d/1sEyZker3x2-dybI2fKHlLjFv1gGig62-/view"
+                "lienCta": "https://site.foodeatup.com/"
               }
             },
             "posterUrl": null,
@@ -6671,7 +6586,6 @@ export const series: Serie[] = [
             "statut": "a_produire",
             "dureeSecondes": null,
             "videoUrl": null,
-            "tutorielUrl": "https://drive.google.com/file/d/13gsBIjozDhLKJBi0uOwqIE3ShA_V7d3R/view",
             "reseaux": {
               "facebook": {
                 "statut": "a_venir",
@@ -6679,7 +6593,7 @@ export const series: Serie[] = [
                 "heure": "12:00",
                 "compte": "FoodEatUp",
                 "format": "Vidéo native 9:16",
-                "lienCta": "https://drive.google.com/file/d/13gsBIjozDhLKJBi0uOwqIE3ShA_V7d3R/view"
+                "lienCta": "https://site.foodeatup.com/"
               },
               "instagram": {
                 "statut": "a_venir",
@@ -6703,7 +6617,7 @@ export const series: Serie[] = [
                 "heure": "08:00",
                 "compte": "FoodEatUp",
                 "format": "Vidéo native 9:16",
-                "lienCta": "https://drive.google.com/file/d/13gsBIjozDhLKJBi0uOwqIE3ShA_V7d3R/view"
+                "lienCta": "https://site.foodeatup.com/"
               },
               "youtube": {
                 "statut": "a_venir",
@@ -6711,7 +6625,7 @@ export const series: Serie[] = [
                 "heure": "10:00",
                 "compte": "@FoodEatUp",
                 "format": "Short 9:16",
-                "lienCta": "https://drive.google.com/file/d/13gsBIjozDhLKJBi0uOwqIE3ShA_V7d3R/view"
+                "lienCta": "https://site.foodeatup.com/"
               }
             },
             "posterUrl": null,
@@ -6749,7 +6663,6 @@ export const series: Serie[] = [
             "statut": "a_produire",
             "dureeSecondes": null,
             "videoUrl": null,
-            "tutorielUrl": "https://drive.google.com/file/d/1v1VoM-qg4mhn3XkvtlLeyYJYy2aDMzEK/view",
             "reseaux": {
               "facebook": {
                 "statut": "a_venir",
@@ -6757,7 +6670,7 @@ export const series: Serie[] = [
                 "heure": "12:00",
                 "compte": "FoodEatUp",
                 "format": "Vidéo native 9:16",
-                "lienCta": "https://drive.google.com/file/d/1v1VoM-qg4mhn3XkvtlLeyYJYy2aDMzEK/view"
+                "lienCta": "https://site.foodeatup.com/"
               },
               "instagram": {
                 "statut": "a_venir",
@@ -6781,7 +6694,7 @@ export const series: Serie[] = [
                 "heure": "08:00",
                 "compte": "FoodEatUp",
                 "format": "Vidéo native 9:16",
-                "lienCta": "https://drive.google.com/file/d/1v1VoM-qg4mhn3XkvtlLeyYJYy2aDMzEK/view"
+                "lienCta": "https://site.foodeatup.com/"
               },
               "youtube": {
                 "statut": "a_venir",
@@ -6789,7 +6702,7 @@ export const series: Serie[] = [
                 "heure": "10:00",
                 "compte": "@FoodEatUp",
                 "format": "Short 9:16",
-                "lienCta": "https://drive.google.com/file/d/1v1VoM-qg4mhn3XkvtlLeyYJYy2aDMzEK/view"
+                "lienCta": "https://site.foodeatup.com/"
               }
             },
             "posterUrl": null,
@@ -6820,7 +6733,6 @@ export const series: Serie[] = [
             "statut": "a_produire",
             "dureeSecondes": null,
             "videoUrl": null,
-            "tutorielUrl": "https://drive.google.com/file/d/1v1VoM-qg4mhn3XkvtlLeyYJYy2aDMzEK/view",
             "reseaux": {
               "facebook": {
                 "statut": "a_venir",
@@ -6828,7 +6740,7 @@ export const series: Serie[] = [
                 "heure": "12:00",
                 "compte": "FoodEatUp",
                 "format": "Vidéo native 9:16",
-                "lienCta": "https://drive.google.com/file/d/1v1VoM-qg4mhn3XkvtlLeyYJYy2aDMzEK/view"
+                "lienCta": "https://site.foodeatup.com/"
               },
               "instagram": {
                 "statut": "a_venir",
@@ -6852,7 +6764,7 @@ export const series: Serie[] = [
                 "heure": "08:00",
                 "compte": "FoodEatUp",
                 "format": "Vidéo native 9:16",
-                "lienCta": "https://drive.google.com/file/d/1v1VoM-qg4mhn3XkvtlLeyYJYy2aDMzEK/view"
+                "lienCta": "https://site.foodeatup.com/"
               },
               "youtube": {
                 "statut": "a_venir",
@@ -6860,7 +6772,7 @@ export const series: Serie[] = [
                 "heure": "10:00",
                 "compte": "@FoodEatUp",
                 "format": "Short 9:16",
-                "lienCta": "https://drive.google.com/file/d/1v1VoM-qg4mhn3XkvtlLeyYJYy2aDMzEK/view"
+                "lienCta": "https://site.foodeatup.com/"
               }
             },
             "posterUrl": null,
@@ -6898,7 +6810,6 @@ export const series: Serie[] = [
             "statut": "a_produire",
             "dureeSecondes": null,
             "videoUrl": null,
-            "tutorielUrl": "https://drive.google.com/file/d/1qolUPeBCCB5sxVN_479AGHKtOdGCO77z/view",
             "reseaux": {
               "facebook": {
                 "statut": "a_venir",
@@ -6906,7 +6817,7 @@ export const series: Serie[] = [
                 "heure": "12:00",
                 "compte": "FoodEatUp",
                 "format": "Vidéo native 9:16",
-                "lienCta": "https://drive.google.com/file/d/1qolUPeBCCB5sxVN_479AGHKtOdGCO77z/view"
+                "lienCta": "https://site.foodeatup.com/"
               },
               "instagram": {
                 "statut": "a_venir",
@@ -6930,7 +6841,7 @@ export const series: Serie[] = [
                 "heure": "08:00",
                 "compte": "FoodEatUp",
                 "format": "Vidéo native 9:16",
-                "lienCta": "https://drive.google.com/file/d/1qolUPeBCCB5sxVN_479AGHKtOdGCO77z/view"
+                "lienCta": "https://site.foodeatup.com/"
               },
               "youtube": {
                 "statut": "a_venir",
@@ -6938,7 +6849,7 @@ export const series: Serie[] = [
                 "heure": "10:00",
                 "compte": "@FoodEatUp",
                 "format": "Short 9:16",
-                "lienCta": "https://drive.google.com/file/d/1qolUPeBCCB5sxVN_479AGHKtOdGCO77z/view"
+                "lienCta": "https://site.foodeatup.com/"
               }
             },
             "posterUrl": null,
@@ -6976,7 +6887,6 @@ export const series: Serie[] = [
             "statut": "a_produire",
             "dureeSecondes": null,
             "videoUrl": null,
-            "tutorielUrl": "https://drive.google.com/file/d/10KyerYfWEkSisld01WnoRb2NNzeromab/view",
             "reseaux": {
               "facebook": {
                 "statut": "a_venir",
@@ -6984,7 +6894,7 @@ export const series: Serie[] = [
                 "heure": "12:00",
                 "compte": "FoodEatUp",
                 "format": "Vidéo native 9:16",
-                "lienCta": "https://drive.google.com/file/d/10KyerYfWEkSisld01WnoRb2NNzeromab/view"
+                "lienCta": "https://site.foodeatup.com/"
               },
               "instagram": {
                 "statut": "a_venir",
@@ -7008,7 +6918,7 @@ export const series: Serie[] = [
                 "heure": "08:00",
                 "compte": "FoodEatUp",
                 "format": "Vidéo native 9:16",
-                "lienCta": "https://drive.google.com/file/d/10KyerYfWEkSisld01WnoRb2NNzeromab/view"
+                "lienCta": "https://site.foodeatup.com/"
               },
               "youtube": {
                 "statut": "a_venir",
@@ -7016,7 +6926,7 @@ export const series: Serie[] = [
                 "heure": "10:00",
                 "compte": "@FoodEatUp",
                 "format": "Short 9:16",
-                "lienCta": "https://drive.google.com/file/d/10KyerYfWEkSisld01WnoRb2NNzeromab/view"
+                "lienCta": "https://site.foodeatup.com/"
               }
             },
             "posterUrl": null,
@@ -7047,7 +6957,6 @@ export const series: Serie[] = [
             "statut": "a_produire",
             "dureeSecondes": null,
             "videoUrl": null,
-            "tutorielUrl": "https://drive.google.com/file/d/14DlIfkcKDPDBLhKCc5WRxTKg6jehslQc/view",
             "reseaux": {
               "facebook": {
                 "statut": "a_venir",
@@ -7055,7 +6964,7 @@ export const series: Serie[] = [
                 "heure": "12:00",
                 "compte": "FoodEatUp",
                 "format": "Vidéo native 9:16",
-                "lienCta": "https://drive.google.com/file/d/14DlIfkcKDPDBLhKCc5WRxTKg6jehslQc/view"
+                "lienCta": "https://site.foodeatup.com/"
               },
               "instagram": {
                 "statut": "a_venir",
@@ -7079,7 +6988,7 @@ export const series: Serie[] = [
                 "heure": "08:00",
                 "compte": "FoodEatUp",
                 "format": "Vidéo native 9:16",
-                "lienCta": "https://drive.google.com/file/d/14DlIfkcKDPDBLhKCc5WRxTKg6jehslQc/view"
+                "lienCta": "https://site.foodeatup.com/"
               },
               "youtube": {
                 "statut": "a_venir",
@@ -7087,7 +6996,7 @@ export const series: Serie[] = [
                 "heure": "10:00",
                 "compte": "@FoodEatUp",
                 "format": "Short 9:16",
-                "lienCta": "https://drive.google.com/file/d/14DlIfkcKDPDBLhKCc5WRxTKg6jehslQc/view"
+                "lienCta": "https://site.foodeatup.com/"
               }
             },
             "posterUrl": null,
@@ -7125,7 +7034,6 @@ export const series: Serie[] = [
             "statut": "bloque",
             "dureeSecondes": null,
             "videoUrl": null,
-            "tutorielUrl": null,
             "reseaux": {
               "facebook": {
                 "statut": "a_venir",
@@ -7133,7 +7041,7 @@ export const series: Serie[] = [
                 "heure": "12:00",
                 "compte": "FoodEatUp",
                 "format": "Vidéo native 9:16",
-                "lienCta": null
+                "lienCta": "https://site.foodeatup.com/"
               },
               "instagram": {
                 "statut": "a_venir",
@@ -7157,7 +7065,7 @@ export const series: Serie[] = [
                 "heure": "08:00",
                 "compte": "FoodEatUp",
                 "format": "Vidéo native 9:16",
-                "lienCta": null
+                "lienCta": "https://site.foodeatup.com/"
               },
               "youtube": {
                 "statut": "a_venir",
@@ -7165,7 +7073,7 @@ export const series: Serie[] = [
                 "heure": "10:00",
                 "compte": "@FoodEatUp",
                 "format": "Short 9:16",
-                "lienCta": null
+                "lienCta": "https://site.foodeatup.com/"
               }
             },
             "blocage": "Le chapitre correspondant n'a pas encore de vidéo dans le Drive interne.",
@@ -7211,7 +7119,6 @@ export const series: Serie[] = [
             "statut": "a_produire",
             "dureeSecondes": null,
             "videoUrl": null,
-            "tutorielUrl": "https://drive.google.com/file/d/1ITy-Ia2Q3FSeKSRRd4bWEFw4eDlzFZ6q/view",
             "reseaux": {
               "facebook": {
                 "statut": "a_venir",
@@ -7219,7 +7126,7 @@ export const series: Serie[] = [
                 "heure": "12:00",
                 "compte": "FoodEatUp",
                 "format": "Vidéo native 9:16",
-                "lienCta": "https://drive.google.com/file/d/1ITy-Ia2Q3FSeKSRRd4bWEFw4eDlzFZ6q/view"
+                "lienCta": "https://site.foodeatup.com/"
               },
               "instagram": {
                 "statut": "a_venir",
@@ -7243,7 +7150,7 @@ export const series: Serie[] = [
                 "heure": "08:00",
                 "compte": "FoodEatUp",
                 "format": "Vidéo native 9:16",
-                "lienCta": "https://drive.google.com/file/d/1ITy-Ia2Q3FSeKSRRd4bWEFw4eDlzFZ6q/view"
+                "lienCta": "https://site.foodeatup.com/"
               },
               "youtube": {
                 "statut": "a_venir",
@@ -7251,7 +7158,7 @@ export const series: Serie[] = [
                 "heure": "10:00",
                 "compte": "@FoodEatUp",
                 "format": "Short 9:16",
-                "lienCta": "https://drive.google.com/file/d/1ITy-Ia2Q3FSeKSRRd4bWEFw4eDlzFZ6q/view"
+                "lienCta": "https://site.foodeatup.com/"
               }
             },
             "posterUrl": null,
@@ -7289,7 +7196,6 @@ export const series: Serie[] = [
             "statut": "a_produire",
             "dureeSecondes": null,
             "videoUrl": null,
-            "tutorielUrl": "https://drive.google.com/file/d/1DZKefLYV1_F9_uL-sJ79fb5srfGnROBp/view",
             "reseaux": {
               "facebook": {
                 "statut": "a_venir",
@@ -7297,7 +7203,7 @@ export const series: Serie[] = [
                 "heure": "12:00",
                 "compte": "FoodEatUp",
                 "format": "Vidéo native 9:16",
-                "lienCta": "https://drive.google.com/file/d/1DZKefLYV1_F9_uL-sJ79fb5srfGnROBp/view"
+                "lienCta": "https://site.foodeatup.com/"
               },
               "instagram": {
                 "statut": "a_venir",
@@ -7321,7 +7227,7 @@ export const series: Serie[] = [
                 "heure": "08:00",
                 "compte": "FoodEatUp",
                 "format": "Vidéo native 9:16",
-                "lienCta": "https://drive.google.com/file/d/1DZKefLYV1_F9_uL-sJ79fb5srfGnROBp/view"
+                "lienCta": "https://site.foodeatup.com/"
               },
               "youtube": {
                 "statut": "a_venir",
@@ -7329,7 +7235,7 @@ export const series: Serie[] = [
                 "heure": "10:00",
                 "compte": "@FoodEatUp",
                 "format": "Short 9:16",
-                "lienCta": "https://drive.google.com/file/d/1DZKefLYV1_F9_uL-sJ79fb5srfGnROBp/view"
+                "lienCta": "https://site.foodeatup.com/"
               }
             },
             "posterUrl": null,
@@ -7367,7 +7273,6 @@ export const series: Serie[] = [
             "statut": "a_produire",
             "dureeSecondes": null,
             "videoUrl": null,
-            "tutorielUrl": "https://drive.google.com/file/d/14GntP3F4hhloVyYBDJrPCj55Ny1gvDx9/view",
             "reseaux": {
               "facebook": {
                 "statut": "a_venir",
@@ -7375,7 +7280,7 @@ export const series: Serie[] = [
                 "heure": "12:00",
                 "compte": "FoodEatUp",
                 "format": "Vidéo native 9:16",
-                "lienCta": "https://drive.google.com/file/d/14GntP3F4hhloVyYBDJrPCj55Ny1gvDx9/view"
+                "lienCta": "https://site.foodeatup.com/"
               },
               "instagram": {
                 "statut": "a_venir",
@@ -7399,7 +7304,7 @@ export const series: Serie[] = [
                 "heure": "08:00",
                 "compte": "FoodEatUp",
                 "format": "Vidéo native 9:16",
-                "lienCta": "https://drive.google.com/file/d/14GntP3F4hhloVyYBDJrPCj55Ny1gvDx9/view"
+                "lienCta": "https://site.foodeatup.com/"
               },
               "youtube": {
                 "statut": "a_venir",
@@ -7407,7 +7312,7 @@ export const series: Serie[] = [
                 "heure": "10:00",
                 "compte": "@FoodEatUp",
                 "format": "Short 9:16",
-                "lienCta": "https://drive.google.com/file/d/14GntP3F4hhloVyYBDJrPCj55Ny1gvDx9/view"
+                "lienCta": "https://site.foodeatup.com/"
               }
             },
             "posterUrl": null,
@@ -7445,7 +7350,6 @@ export const series: Serie[] = [
             "statut": "bloque",
             "dureeSecondes": null,
             "videoUrl": null,
-            "tutorielUrl": null,
             "reseaux": {
               "facebook": {
                 "statut": "a_venir",
@@ -7453,7 +7357,7 @@ export const series: Serie[] = [
                 "heure": "12:00",
                 "compte": "FoodEatUp",
                 "format": "Vidéo native 9:16",
-                "lienCta": null
+                "lienCta": "https://site.foodeatup.com/"
               },
               "instagram": {
                 "statut": "a_venir",
@@ -7477,7 +7381,7 @@ export const series: Serie[] = [
                 "heure": "08:00",
                 "compte": "FoodEatUp",
                 "format": "Vidéo native 9:16",
-                "lienCta": null
+                "lienCta": "https://site.foodeatup.com/"
               },
               "youtube": {
                 "statut": "a_venir",
@@ -7485,7 +7389,7 @@ export const series: Serie[] = [
                 "heure": "10:00",
                 "compte": "@FoodEatUp",
                 "format": "Short 9:16",
-                "lienCta": null
+                "lienCta": "https://site.foodeatup.com/"
               }
             },
             "blocage": "Le chapitre correspondant n'a pas encore de vidéo dans le Drive interne.",
@@ -7524,7 +7428,6 @@ export const series: Serie[] = [
             "statut": "bloque",
             "dureeSecondes": null,
             "videoUrl": null,
-            "tutorielUrl": null,
             "reseaux": {
               "facebook": {
                 "statut": "a_venir",
@@ -7532,7 +7435,7 @@ export const series: Serie[] = [
                 "heure": "12:00",
                 "compte": "FoodEatUp",
                 "format": "Vidéo native 9:16",
-                "lienCta": null
+                "lienCta": "https://site.foodeatup.com/"
               },
               "instagram": {
                 "statut": "a_venir",
@@ -7556,7 +7459,7 @@ export const series: Serie[] = [
                 "heure": "08:00",
                 "compte": "FoodEatUp",
                 "format": "Vidéo native 9:16",
-                "lienCta": null
+                "lienCta": "https://site.foodeatup.com/"
               },
               "youtube": {
                 "statut": "a_venir",
@@ -7564,7 +7467,7 @@ export const series: Serie[] = [
                 "heure": "10:00",
                 "compte": "@FoodEatUp",
                 "format": "Short 9:16",
-                "lienCta": null
+                "lienCta": "https://site.foodeatup.com/"
               }
             },
             "blocage": "Le chapitre correspondant n'a pas encore de vidéo dans le Drive interne.",
@@ -7603,7 +7506,6 @@ export const series: Serie[] = [
             "statut": "a_produire",
             "dureeSecondes": null,
             "videoUrl": null,
-            "tutorielUrl": "https://drive.google.com/file/d/14OmsNUd3EMgWNxGVvmOwLgR3ZloWKNKW/view",
             "reseaux": {
               "facebook": {
                 "statut": "a_venir",
@@ -7611,7 +7513,7 @@ export const series: Serie[] = [
                 "heure": "12:00",
                 "compte": "FoodEatUp",
                 "format": "Vidéo native 9:16",
-                "lienCta": "https://drive.google.com/file/d/14OmsNUd3EMgWNxGVvmOwLgR3ZloWKNKW/view"
+                "lienCta": "https://site.foodeatup.com/"
               },
               "instagram": {
                 "statut": "a_venir",
@@ -7635,7 +7537,7 @@ export const series: Serie[] = [
                 "heure": "08:00",
                 "compte": "FoodEatUp",
                 "format": "Vidéo native 9:16",
-                "lienCta": "https://drive.google.com/file/d/14OmsNUd3EMgWNxGVvmOwLgR3ZloWKNKW/view"
+                "lienCta": "https://site.foodeatup.com/"
               },
               "youtube": {
                 "statut": "a_venir",
@@ -7643,7 +7545,7 @@ export const series: Serie[] = [
                 "heure": "10:00",
                 "compte": "@FoodEatUp",
                 "format": "Short 9:16",
-                "lienCta": "https://drive.google.com/file/d/14OmsNUd3EMgWNxGVvmOwLgR3ZloWKNKW/view"
+                "lienCta": "https://site.foodeatup.com/"
               }
             },
             "posterUrl": null,
@@ -7681,7 +7583,6 @@ export const series: Serie[] = [
             "statut": "bloque",
             "dureeSecondes": null,
             "videoUrl": null,
-            "tutorielUrl": null,
             "reseaux": {
               "facebook": {
                 "statut": "a_venir",
@@ -7689,7 +7590,7 @@ export const series: Serie[] = [
                 "heure": "12:00",
                 "compte": "FoodEatUp",
                 "format": "Vidéo native 9:16",
-                "lienCta": null
+                "lienCta": "https://site.foodeatup.com/"
               },
               "instagram": {
                 "statut": "a_venir",
@@ -7713,7 +7614,7 @@ export const series: Serie[] = [
                 "heure": "08:00",
                 "compte": "FoodEatUp",
                 "format": "Vidéo native 9:16",
-                "lienCta": null
+                "lienCta": "https://site.foodeatup.com/"
               },
               "youtube": {
                 "statut": "a_venir",
@@ -7721,7 +7622,7 @@ export const series: Serie[] = [
                 "heure": "10:00",
                 "compte": "@FoodEatUp",
                 "format": "Short 9:16",
-                "lienCta": null
+                "lienCta": "https://site.foodeatup.com/"
               }
             },
             "blocage": "Le chapitre correspondant n'a pas encore de vidéo dans le Drive interne.",
@@ -7760,7 +7661,6 @@ export const series: Serie[] = [
             "statut": "a_produire",
             "dureeSecondes": null,
             "videoUrl": null,
-            "tutorielUrl": "https://drive.google.com/file/d/10GjJltEF3utZtfmwHR0qLZ8CTQr5_ioC/view",
             "reseaux": {
               "facebook": {
                 "statut": "a_venir",
@@ -7768,7 +7668,7 @@ export const series: Serie[] = [
                 "heure": "12:00",
                 "compte": "FoodEatUp",
                 "format": "Vidéo native 9:16",
-                "lienCta": "https://drive.google.com/file/d/10GjJltEF3utZtfmwHR0qLZ8CTQr5_ioC/view"
+                "lienCta": "https://site.foodeatup.com/"
               },
               "instagram": {
                 "statut": "a_venir",
@@ -7792,7 +7692,7 @@ export const series: Serie[] = [
                 "heure": "08:00",
                 "compte": "FoodEatUp",
                 "format": "Vidéo native 9:16",
-                "lienCta": "https://drive.google.com/file/d/10GjJltEF3utZtfmwHR0qLZ8CTQr5_ioC/view"
+                "lienCta": "https://site.foodeatup.com/"
               },
               "youtube": {
                 "statut": "a_venir",
@@ -7800,7 +7700,7 @@ export const series: Serie[] = [
                 "heure": "10:00",
                 "compte": "@FoodEatUp",
                 "format": "Short 9:16",
-                "lienCta": "https://drive.google.com/file/d/10GjJltEF3utZtfmwHR0qLZ8CTQr5_ioC/view"
+                "lienCta": "https://site.foodeatup.com/"
               }
             },
             "posterUrl": null,
@@ -7838,7 +7738,6 @@ export const series: Serie[] = [
             "statut": "a_produire",
             "dureeSecondes": null,
             "videoUrl": null,
-            "tutorielUrl": "https://drive.google.com/file/d/1bMK0HmSH2_JZ1kLF-eaO5a08o50V-WOE/view",
             "reseaux": {
               "facebook": {
                 "statut": "a_venir",
@@ -7846,7 +7745,7 @@ export const series: Serie[] = [
                 "heure": "12:00",
                 "compte": "FoodEatUp",
                 "format": "Vidéo native 9:16",
-                "lienCta": "https://drive.google.com/file/d/1bMK0HmSH2_JZ1kLF-eaO5a08o50V-WOE/view"
+                "lienCta": "https://site.foodeatup.com/"
               },
               "instagram": {
                 "statut": "a_venir",
@@ -7870,7 +7769,7 @@ export const series: Serie[] = [
                 "heure": "08:00",
                 "compte": "FoodEatUp",
                 "format": "Vidéo native 9:16",
-                "lienCta": "https://drive.google.com/file/d/1bMK0HmSH2_JZ1kLF-eaO5a08o50V-WOE/view"
+                "lienCta": "https://site.foodeatup.com/"
               },
               "youtube": {
                 "statut": "a_venir",
@@ -7878,7 +7777,7 @@ export const series: Serie[] = [
                 "heure": "10:00",
                 "compte": "@FoodEatUp",
                 "format": "Short 9:16",
-                "lienCta": "https://drive.google.com/file/d/1bMK0HmSH2_JZ1kLF-eaO5a08o50V-WOE/view"
+                "lienCta": "https://site.foodeatup.com/"
               }
             },
             "posterUrl": null,
@@ -7916,7 +7815,6 @@ export const series: Serie[] = [
             "statut": "a_produire",
             "dureeSecondes": null,
             "videoUrl": null,
-            "tutorielUrl": "https://drive.google.com/file/d/1Ojw6yesSa0nYEvoCxyNO98EarXVrfaqD/view",
             "reseaux": {
               "facebook": {
                 "statut": "a_venir",
@@ -7924,7 +7822,7 @@ export const series: Serie[] = [
                 "heure": "12:00",
                 "compte": "FoodEatUp",
                 "format": "Vidéo native 9:16",
-                "lienCta": "https://drive.google.com/file/d/1Ojw6yesSa0nYEvoCxyNO98EarXVrfaqD/view"
+                "lienCta": "https://site.foodeatup.com/"
               },
               "instagram": {
                 "statut": "a_venir",
@@ -7948,7 +7846,7 @@ export const series: Serie[] = [
                 "heure": "08:00",
                 "compte": "FoodEatUp",
                 "format": "Vidéo native 9:16",
-                "lienCta": "https://drive.google.com/file/d/1Ojw6yesSa0nYEvoCxyNO98EarXVrfaqD/view"
+                "lienCta": "https://site.foodeatup.com/"
               },
               "youtube": {
                 "statut": "a_venir",
@@ -7956,7 +7854,7 @@ export const series: Serie[] = [
                 "heure": "10:00",
                 "compte": "@FoodEatUp",
                 "format": "Short 9:16",
-                "lienCta": "https://drive.google.com/file/d/1Ojw6yesSa0nYEvoCxyNO98EarXVrfaqD/view"
+                "lienCta": "https://site.foodeatup.com/"
               }
             },
             "posterUrl": null,
@@ -7994,7 +7892,6 @@ export const series: Serie[] = [
             "statut": "bloque",
             "dureeSecondes": null,
             "videoUrl": null,
-            "tutorielUrl": null,
             "reseaux": {
               "facebook": {
                 "statut": "a_venir",
@@ -8002,7 +7899,7 @@ export const series: Serie[] = [
                 "heure": "12:00",
                 "compte": "FoodEatUp",
                 "format": "Vidéo native 9:16",
-                "lienCta": null
+                "lienCta": "https://site.foodeatup.com/"
               },
               "instagram": {
                 "statut": "a_venir",
@@ -8026,7 +7923,7 @@ export const series: Serie[] = [
                 "heure": "08:00",
                 "compte": "FoodEatUp",
                 "format": "Vidéo native 9:16",
-                "lienCta": null
+                "lienCta": "https://site.foodeatup.com/"
               },
               "youtube": {
                 "statut": "a_venir",
@@ -8034,7 +7931,7 @@ export const series: Serie[] = [
                 "heure": "10:00",
                 "compte": "@FoodEatUp",
                 "format": "Short 9:16",
-                "lienCta": null
+                "lienCta": "https://site.foodeatup.com/"
               }
             },
             "blocage": "Le chapitre correspondant n'a pas encore de vidéo dans le Drive interne.",
@@ -8066,7 +7963,6 @@ export const series: Serie[] = [
             "statut": "a_produire",
             "dureeSecondes": null,
             "videoUrl": null,
-            "tutorielUrl": "https://drive.google.com/file/d/1BiubjVB2WUaP8COM9a9V6_DMWNc1ltvh/view",
             "reseaux": {
               "facebook": {
                 "statut": "a_venir",
@@ -8074,7 +7970,7 @@ export const series: Serie[] = [
                 "heure": "12:00",
                 "compte": "FoodEatUp",
                 "format": "Vidéo native 9:16",
-                "lienCta": "https://drive.google.com/file/d/1BiubjVB2WUaP8COM9a9V6_DMWNc1ltvh/view"
+                "lienCta": "https://site.foodeatup.com/"
               },
               "instagram": {
                 "statut": "a_venir",
@@ -8098,7 +7994,7 @@ export const series: Serie[] = [
                 "heure": "08:00",
                 "compte": "FoodEatUp",
                 "format": "Vidéo native 9:16",
-                "lienCta": "https://drive.google.com/file/d/1BiubjVB2WUaP8COM9a9V6_DMWNc1ltvh/view"
+                "lienCta": "https://site.foodeatup.com/"
               },
               "youtube": {
                 "statut": "a_venir",
@@ -8106,7 +8002,7 @@ export const series: Serie[] = [
                 "heure": "10:00",
                 "compte": "@FoodEatUp",
                 "format": "Short 9:16",
-                "lienCta": "https://drive.google.com/file/d/1BiubjVB2WUaP8COM9a9V6_DMWNc1ltvh/view"
+                "lienCta": "https://site.foodeatup.com/"
               }
             },
             "posterUrl": null,
@@ -8144,7 +8040,6 @@ export const series: Serie[] = [
             "statut": "a_produire",
             "dureeSecondes": null,
             "videoUrl": null,
-            "tutorielUrl": "https://drive.google.com/file/d/1ZcJIts_SFzUvjChwJSxcCGtnlT3NHOCP/view",
             "reseaux": {
               "facebook": {
                 "statut": "a_venir",
@@ -8152,7 +8047,7 @@ export const series: Serie[] = [
                 "heure": "12:00",
                 "compte": "FoodEatUp",
                 "format": "Vidéo native 9:16",
-                "lienCta": "https://drive.google.com/file/d/1ZcJIts_SFzUvjChwJSxcCGtnlT3NHOCP/view"
+                "lienCta": "https://site.foodeatup.com/"
               },
               "instagram": {
                 "statut": "a_venir",
@@ -8176,7 +8071,7 @@ export const series: Serie[] = [
                 "heure": "08:00",
                 "compte": "FoodEatUp",
                 "format": "Vidéo native 9:16",
-                "lienCta": "https://drive.google.com/file/d/1ZcJIts_SFzUvjChwJSxcCGtnlT3NHOCP/view"
+                "lienCta": "https://site.foodeatup.com/"
               },
               "youtube": {
                 "statut": "a_venir",
@@ -8184,7 +8079,7 @@ export const series: Serie[] = [
                 "heure": "10:00",
                 "compte": "@FoodEatUp",
                 "format": "Short 9:16",
-                "lienCta": "https://drive.google.com/file/d/1ZcJIts_SFzUvjChwJSxcCGtnlT3NHOCP/view"
+                "lienCta": "https://site.foodeatup.com/"
               }
             },
             "posterUrl": null,
@@ -8222,7 +8117,6 @@ export const series: Serie[] = [
             "statut": "a_produire",
             "dureeSecondes": null,
             "videoUrl": null,
-            "tutorielUrl": "https://drive.google.com/file/d/1DZKefLYV1_F9_uL-sJ79fb5srfGnROBp/view",
             "reseaux": {
               "facebook": {
                 "statut": "a_venir",
@@ -8230,7 +8124,7 @@ export const series: Serie[] = [
                 "heure": "12:00",
                 "compte": "FoodEatUp",
                 "format": "Vidéo native 9:16",
-                "lienCta": "https://drive.google.com/file/d/1DZKefLYV1_F9_uL-sJ79fb5srfGnROBp/view"
+                "lienCta": "https://site.foodeatup.com/"
               },
               "instagram": {
                 "statut": "a_venir",
@@ -8254,7 +8148,7 @@ export const series: Serie[] = [
                 "heure": "08:00",
                 "compte": "FoodEatUp",
                 "format": "Vidéo native 9:16",
-                "lienCta": "https://drive.google.com/file/d/1DZKefLYV1_F9_uL-sJ79fb5srfGnROBp/view"
+                "lienCta": "https://site.foodeatup.com/"
               },
               "youtube": {
                 "statut": "a_venir",
@@ -8262,7 +8156,7 @@ export const series: Serie[] = [
                 "heure": "10:00",
                 "compte": "@FoodEatUp",
                 "format": "Short 9:16",
-                "lienCta": "https://drive.google.com/file/d/1DZKefLYV1_F9_uL-sJ79fb5srfGnROBp/view"
+                "lienCta": "https://site.foodeatup.com/"
               }
             },
             "posterUrl": null,
@@ -8300,7 +8194,6 @@ export const series: Serie[] = [
             "statut": "bloque",
             "dureeSecondes": null,
             "videoUrl": null,
-            "tutorielUrl": null,
             "reseaux": {
               "facebook": {
                 "statut": "a_venir",
@@ -8308,7 +8201,7 @@ export const series: Serie[] = [
                 "heure": "12:00",
                 "compte": "FoodEatUp",
                 "format": "Vidéo native 9:16",
-                "lienCta": null
+                "lienCta": "https://site.foodeatup.com/"
               },
               "instagram": {
                 "statut": "a_venir",
@@ -8332,7 +8225,7 @@ export const series: Serie[] = [
                 "heure": "08:00",
                 "compte": "FoodEatUp",
                 "format": "Vidéo native 9:16",
-                "lienCta": null
+                "lienCta": "https://site.foodeatup.com/"
               },
               "youtube": {
                 "statut": "a_venir",
@@ -8340,7 +8233,7 @@ export const series: Serie[] = [
                 "heure": "10:00",
                 "compte": "@FoodEatUp",
                 "format": "Short 9:16",
-                "lienCta": null
+                "lienCta": "https://site.foodeatup.com/"
               }
             },
             "blocage": "Le chapitre correspondant n'a pas encore de vidéo dans le Drive interne.",
@@ -8379,7 +8272,6 @@ export const series: Serie[] = [
             "statut": "bloque",
             "dureeSecondes": null,
             "videoUrl": null,
-            "tutorielUrl": null,
             "reseaux": {
               "facebook": {
                 "statut": "a_venir",
@@ -8387,7 +8279,7 @@ export const series: Serie[] = [
                 "heure": "12:00",
                 "compte": "FoodEatUp",
                 "format": "Vidéo native 9:16",
-                "lienCta": null
+                "lienCta": "https://site.foodeatup.com/"
               },
               "instagram": {
                 "statut": "a_venir",
@@ -8411,7 +8303,7 @@ export const series: Serie[] = [
                 "heure": "08:00",
                 "compte": "FoodEatUp",
                 "format": "Vidéo native 9:16",
-                "lienCta": null
+                "lienCta": "https://site.foodeatup.com/"
               },
               "youtube": {
                 "statut": "a_venir",
@@ -8419,7 +8311,7 @@ export const series: Serie[] = [
                 "heure": "10:00",
                 "compte": "@FoodEatUp",
                 "format": "Short 9:16",
-                "lienCta": null
+                "lienCta": "https://site.foodeatup.com/"
               }
             },
             "blocage": "Le chapitre correspondant n'a pas encore de vidéo dans le Drive interne.",
@@ -8451,7 +8343,6 @@ export const series: Serie[] = [
             "statut": "bloque",
             "dureeSecondes": null,
             "videoUrl": null,
-            "tutorielUrl": null,
             "reseaux": {
               "facebook": {
                 "statut": "a_venir",
@@ -8459,7 +8350,7 @@ export const series: Serie[] = [
                 "heure": "12:00",
                 "compte": "FoodEatUp",
                 "format": "Vidéo native 9:16",
-                "lienCta": null
+                "lienCta": "https://site.foodeatup.com/"
               },
               "instagram": {
                 "statut": "a_venir",
@@ -8483,7 +8374,7 @@ export const series: Serie[] = [
                 "heure": "08:00",
                 "compte": "FoodEatUp",
                 "format": "Vidéo native 9:16",
-                "lienCta": null
+                "lienCta": "https://site.foodeatup.com/"
               },
               "youtube": {
                 "statut": "a_venir",
@@ -8491,7 +8382,7 @@ export const series: Serie[] = [
                 "heure": "10:00",
                 "compte": "@FoodEatUp",
                 "format": "Short 9:16",
-                "lienCta": null
+                "lienCta": "https://site.foodeatup.com/"
               }
             },
             "blocage": "Le chapitre correspondant n'a pas encore de vidéo dans le Drive interne.",
@@ -8523,7 +8414,6 @@ export const series: Serie[] = [
             "statut": "a_produire",
             "dureeSecondes": null,
             "videoUrl": null,
-            "tutorielUrl": "https://drive.google.com/file/d/1PmYYGKH00qGUcMc1zehHng3C9fQiH84O/view",
             "reseaux": {
               "facebook": {
                 "statut": "a_venir",
@@ -8531,7 +8421,7 @@ export const series: Serie[] = [
                 "heure": "12:00",
                 "compte": "FoodEatUp",
                 "format": "Vidéo native 9:16",
-                "lienCta": "https://drive.google.com/file/d/1PmYYGKH00qGUcMc1zehHng3C9fQiH84O/view"
+                "lienCta": "https://site.foodeatup.com/"
               },
               "instagram": {
                 "statut": "a_venir",
@@ -8555,7 +8445,7 @@ export const series: Serie[] = [
                 "heure": "08:00",
                 "compte": "FoodEatUp",
                 "format": "Vidéo native 9:16",
-                "lienCta": "https://drive.google.com/file/d/1PmYYGKH00qGUcMc1zehHng3C9fQiH84O/view"
+                "lienCta": "https://site.foodeatup.com/"
               },
               "youtube": {
                 "statut": "a_venir",
@@ -8563,7 +8453,7 @@ export const series: Serie[] = [
                 "heure": "10:00",
                 "compte": "@FoodEatUp",
                 "format": "Short 9:16",
-                "lienCta": "https://drive.google.com/file/d/1PmYYGKH00qGUcMc1zehHng3C9fQiH84O/view"
+                "lienCta": "https://site.foodeatup.com/"
               }
             },
             "posterUrl": null,
@@ -8601,7 +8491,6 @@ export const series: Serie[] = [
             "statut": "a_produire",
             "dureeSecondes": null,
             "videoUrl": null,
-            "tutorielUrl": "https://drive.google.com/file/d/1qwwJNILNZv3EpqCowlCFUhxeC_2qyZgm/view",
             "reseaux": {
               "facebook": {
                 "statut": "a_venir",
@@ -8609,7 +8498,7 @@ export const series: Serie[] = [
                 "heure": "12:00",
                 "compte": "FoodEatUp",
                 "format": "Vidéo native 9:16",
-                "lienCta": "https://drive.google.com/file/d/1qwwJNILNZv3EpqCowlCFUhxeC_2qyZgm/view"
+                "lienCta": "https://site.foodeatup.com/"
               },
               "instagram": {
                 "statut": "a_venir",
@@ -8633,7 +8522,7 @@ export const series: Serie[] = [
                 "heure": "08:00",
                 "compte": "FoodEatUp",
                 "format": "Vidéo native 9:16",
-                "lienCta": "https://drive.google.com/file/d/1qwwJNILNZv3EpqCowlCFUhxeC_2qyZgm/view"
+                "lienCta": "https://site.foodeatup.com/"
               },
               "youtube": {
                 "statut": "a_venir",
@@ -8641,7 +8530,7 @@ export const series: Serie[] = [
                 "heure": "10:00",
                 "compte": "@FoodEatUp",
                 "format": "Short 9:16",
-                "lienCta": "https://drive.google.com/file/d/1qwwJNILNZv3EpqCowlCFUhxeC_2qyZgm/view"
+                "lienCta": "https://site.foodeatup.com/"
               }
             },
             "posterUrl": null,
@@ -8679,7 +8568,6 @@ export const series: Serie[] = [
             "statut": "a_produire",
             "dureeSecondes": null,
             "videoUrl": null,
-            "tutorielUrl": "https://drive.google.com/file/d/13BlvDmhkU0IsKHXo77VHM7TwMSHKHmpv/view",
             "reseaux": {
               "facebook": {
                 "statut": "a_venir",
@@ -8687,7 +8575,7 @@ export const series: Serie[] = [
                 "heure": "12:00",
                 "compte": "FoodEatUp",
                 "format": "Vidéo native 9:16",
-                "lienCta": "https://drive.google.com/file/d/13BlvDmhkU0IsKHXo77VHM7TwMSHKHmpv/view"
+                "lienCta": "https://site.foodeatup.com/"
               },
               "instagram": {
                 "statut": "a_venir",
@@ -8711,7 +8599,7 @@ export const series: Serie[] = [
                 "heure": "08:00",
                 "compte": "FoodEatUp",
                 "format": "Vidéo native 9:16",
-                "lienCta": "https://drive.google.com/file/d/13BlvDmhkU0IsKHXo77VHM7TwMSHKHmpv/view"
+                "lienCta": "https://site.foodeatup.com/"
               },
               "youtube": {
                 "statut": "a_venir",
@@ -8719,7 +8607,7 @@ export const series: Serie[] = [
                 "heure": "10:00",
                 "compte": "@FoodEatUp",
                 "format": "Short 9:16",
-                "lienCta": "https://drive.google.com/file/d/13BlvDmhkU0IsKHXo77VHM7TwMSHKHmpv/view"
+                "lienCta": "https://site.foodeatup.com/"
               }
             },
             "posterUrl": null,
@@ -8757,7 +8645,6 @@ export const series: Serie[] = [
             "statut": "a_produire",
             "dureeSecondes": null,
             "videoUrl": null,
-            "tutorielUrl": "https://drive.google.com/file/d/1dGFzc7owIIEXOJoqqbfZ9aw_J0d1OLLw/view",
             "reseaux": {
               "facebook": {
                 "statut": "a_venir",
@@ -8765,7 +8652,7 @@ export const series: Serie[] = [
                 "heure": "12:00",
                 "compte": "FoodEatUp",
                 "format": "Vidéo native 9:16",
-                "lienCta": "https://drive.google.com/file/d/1dGFzc7owIIEXOJoqqbfZ9aw_J0d1OLLw/view"
+                "lienCta": "https://site.foodeatup.com/"
               },
               "instagram": {
                 "statut": "a_venir",
@@ -8789,7 +8676,7 @@ export const series: Serie[] = [
                 "heure": "08:00",
                 "compte": "FoodEatUp",
                 "format": "Vidéo native 9:16",
-                "lienCta": "https://drive.google.com/file/d/1dGFzc7owIIEXOJoqqbfZ9aw_J0d1OLLw/view"
+                "lienCta": "https://site.foodeatup.com/"
               },
               "youtube": {
                 "statut": "a_venir",
@@ -8797,7 +8684,7 @@ export const series: Serie[] = [
                 "heure": "10:00",
                 "compte": "@FoodEatUp",
                 "format": "Short 9:16",
-                "lienCta": "https://drive.google.com/file/d/1dGFzc7owIIEXOJoqqbfZ9aw_J0d1OLLw/view"
+                "lienCta": "https://site.foodeatup.com/"
               }
             },
             "posterUrl": null,
@@ -8835,7 +8722,6 @@ export const series: Serie[] = [
             "statut": "a_produire",
             "dureeSecondes": null,
             "videoUrl": null,
-            "tutorielUrl": "https://drive.google.com/file/d/1vf3VeotBty8YMbxSwe8ZnH0v5jjfq4VS/view",
             "reseaux": {
               "facebook": {
                 "statut": "a_venir",
@@ -8843,7 +8729,7 @@ export const series: Serie[] = [
                 "heure": "12:00",
                 "compte": "FoodEatUp",
                 "format": "Vidéo native 9:16",
-                "lienCta": "https://drive.google.com/file/d/1vf3VeotBty8YMbxSwe8ZnH0v5jjfq4VS/view"
+                "lienCta": "https://site.foodeatup.com/"
               },
               "instagram": {
                 "statut": "a_venir",
@@ -8867,7 +8753,7 @@ export const series: Serie[] = [
                 "heure": "08:00",
                 "compte": "FoodEatUp",
                 "format": "Vidéo native 9:16",
-                "lienCta": "https://drive.google.com/file/d/1vf3VeotBty8YMbxSwe8ZnH0v5jjfq4VS/view"
+                "lienCta": "https://site.foodeatup.com/"
               },
               "youtube": {
                 "statut": "a_venir",
@@ -8875,7 +8761,7 @@ export const series: Serie[] = [
                 "heure": "10:00",
                 "compte": "@FoodEatUp",
                 "format": "Short 9:16",
-                "lienCta": "https://drive.google.com/file/d/1vf3VeotBty8YMbxSwe8ZnH0v5jjfq4VS/view"
+                "lienCta": "https://site.foodeatup.com/"
               }
             },
             "posterUrl": null,
@@ -8913,7 +8799,6 @@ export const series: Serie[] = [
             "statut": "bloque",
             "dureeSecondes": null,
             "videoUrl": null,
-            "tutorielUrl": null,
             "reseaux": {
               "facebook": {
                 "statut": "a_venir",
@@ -8921,7 +8806,7 @@ export const series: Serie[] = [
                 "heure": "12:00",
                 "compte": "FoodEatUp",
                 "format": "Vidéo native 9:16",
-                "lienCta": null
+                "lienCta": "https://site.foodeatup.com/"
               },
               "instagram": {
                 "statut": "a_venir",
@@ -8945,7 +8830,7 @@ export const series: Serie[] = [
                 "heure": "08:00",
                 "compte": "FoodEatUp",
                 "format": "Vidéo native 9:16",
-                "lienCta": null
+                "lienCta": "https://site.foodeatup.com/"
               },
               "youtube": {
                 "statut": "a_venir",
@@ -8953,7 +8838,7 @@ export const series: Serie[] = [
                 "heure": "10:00",
                 "compte": "@FoodEatUp",
                 "format": "Short 9:16",
-                "lienCta": null
+                "lienCta": "https://site.foodeatup.com/"
               }
             },
             "blocage": "Le chapitre correspondant n'a pas encore de vidéo dans le Drive interne.",
@@ -8992,7 +8877,6 @@ export const series: Serie[] = [
             "statut": "a_produire",
             "dureeSecondes": null,
             "videoUrl": null,
-            "tutorielUrl": "https://drive.google.com/file/d/1L1RnS8OdOEMKsVjDho2rKnj4gzihgfW9/view",
             "reseaux": {
               "facebook": {
                 "statut": "a_venir",
@@ -9000,7 +8884,7 @@ export const series: Serie[] = [
                 "heure": "12:00",
                 "compte": "FoodEatUp",
                 "format": "Vidéo native 9:16",
-                "lienCta": "https://drive.google.com/file/d/1L1RnS8OdOEMKsVjDho2rKnj4gzihgfW9/view"
+                "lienCta": "https://site.foodeatup.com/"
               },
               "instagram": {
                 "statut": "a_venir",
@@ -9024,7 +8908,7 @@ export const series: Serie[] = [
                 "heure": "08:00",
                 "compte": "FoodEatUp",
                 "format": "Vidéo native 9:16",
-                "lienCta": "https://drive.google.com/file/d/1L1RnS8OdOEMKsVjDho2rKnj4gzihgfW9/view"
+                "lienCta": "https://site.foodeatup.com/"
               },
               "youtube": {
                 "statut": "a_venir",
@@ -9032,7 +8916,7 @@ export const series: Serie[] = [
                 "heure": "10:00",
                 "compte": "@FoodEatUp",
                 "format": "Short 9:16",
-                "lienCta": "https://drive.google.com/file/d/1L1RnS8OdOEMKsVjDho2rKnj4gzihgfW9/view"
+                "lienCta": "https://site.foodeatup.com/"
               }
             },
             "posterUrl": null,
@@ -9070,7 +8954,6 @@ export const series: Serie[] = [
             "statut": "a_produire",
             "dureeSecondes": null,
             "videoUrl": null,
-            "tutorielUrl": "https://drive.google.com/file/d/124mIM7NudoQy5wun_rlSZ6MCrJ2wNykL/view",
             "reseaux": {
               "facebook": {
                 "statut": "a_venir",
@@ -9078,7 +8961,7 @@ export const series: Serie[] = [
                 "heure": "12:00",
                 "compte": "FoodEatUp",
                 "format": "Vidéo native 9:16",
-                "lienCta": "https://drive.google.com/file/d/124mIM7NudoQy5wun_rlSZ6MCrJ2wNykL/view"
+                "lienCta": "https://site.foodeatup.com/"
               },
               "instagram": {
                 "statut": "a_venir",
@@ -9102,7 +8985,7 @@ export const series: Serie[] = [
                 "heure": "08:00",
                 "compte": "FoodEatUp",
                 "format": "Vidéo native 9:16",
-                "lienCta": "https://drive.google.com/file/d/124mIM7NudoQy5wun_rlSZ6MCrJ2wNykL/view"
+                "lienCta": "https://site.foodeatup.com/"
               },
               "youtube": {
                 "statut": "a_venir",
@@ -9110,7 +8993,7 @@ export const series: Serie[] = [
                 "heure": "10:00",
                 "compte": "@FoodEatUp",
                 "format": "Short 9:16",
-                "lienCta": "https://drive.google.com/file/d/124mIM7NudoQy5wun_rlSZ6MCrJ2wNykL/view"
+                "lienCta": "https://site.foodeatup.com/"
               }
             },
             "posterUrl": null,
@@ -9148,7 +9031,6 @@ export const series: Serie[] = [
             "statut": "a_produire",
             "dureeSecondes": null,
             "videoUrl": null,
-            "tutorielUrl": "https://drive.google.com/file/d/1Q25eSBcjIuq1XkHnJkFN_QJyK23o1GVg/view",
             "reseaux": {
               "facebook": {
                 "statut": "a_venir",
@@ -9156,7 +9038,7 @@ export const series: Serie[] = [
                 "heure": "12:00",
                 "compte": "FoodEatUp",
                 "format": "Vidéo native 9:16",
-                "lienCta": "https://drive.google.com/file/d/1Q25eSBcjIuq1XkHnJkFN_QJyK23o1GVg/view"
+                "lienCta": "https://site.foodeatup.com/"
               },
               "instagram": {
                 "statut": "a_venir",
@@ -9180,7 +9062,7 @@ export const series: Serie[] = [
                 "heure": "08:00",
                 "compte": "FoodEatUp",
                 "format": "Vidéo native 9:16",
-                "lienCta": "https://drive.google.com/file/d/1Q25eSBcjIuq1XkHnJkFN_QJyK23o1GVg/view"
+                "lienCta": "https://site.foodeatup.com/"
               },
               "youtube": {
                 "statut": "a_venir",
@@ -9188,7 +9070,7 @@ export const series: Serie[] = [
                 "heure": "10:00",
                 "compte": "@FoodEatUp",
                 "format": "Short 9:16",
-                "lienCta": "https://drive.google.com/file/d/1Q25eSBcjIuq1XkHnJkFN_QJyK23o1GVg/view"
+                "lienCta": "https://site.foodeatup.com/"
               }
             },
             "posterUrl": null,
@@ -9226,7 +9108,6 @@ export const series: Serie[] = [
             "statut": "a_produire",
             "dureeSecondes": null,
             "videoUrl": null,
-            "tutorielUrl": "https://drive.google.com/file/d/1yqhyPMj9uBq1awmqTwUhisuBJBpY5kt-/view",
             "reseaux": {
               "facebook": {
                 "statut": "a_venir",
@@ -9234,7 +9115,7 @@ export const series: Serie[] = [
                 "heure": "12:00",
                 "compte": "FoodEatUp",
                 "format": "Vidéo native 9:16",
-                "lienCta": "https://drive.google.com/file/d/1yqhyPMj9uBq1awmqTwUhisuBJBpY5kt-/view"
+                "lienCta": "https://site.foodeatup.com/"
               },
               "instagram": {
                 "statut": "a_venir",
@@ -9258,7 +9139,7 @@ export const series: Serie[] = [
                 "heure": "08:00",
                 "compte": "FoodEatUp",
                 "format": "Vidéo native 9:16",
-                "lienCta": "https://drive.google.com/file/d/1yqhyPMj9uBq1awmqTwUhisuBJBpY5kt-/view"
+                "lienCta": "https://site.foodeatup.com/"
               },
               "youtube": {
                 "statut": "a_venir",
@@ -9266,7 +9147,7 @@ export const series: Serie[] = [
                 "heure": "10:00",
                 "compte": "@FoodEatUp",
                 "format": "Short 9:16",
-                "lienCta": "https://drive.google.com/file/d/1yqhyPMj9uBq1awmqTwUhisuBJBpY5kt-/view"
+                "lienCta": "https://site.foodeatup.com/"
               }
             },
             "posterUrl": null,
@@ -9304,7 +9185,6 @@ export const series: Serie[] = [
             "statut": "a_produire",
             "dureeSecondes": null,
             "videoUrl": null,
-            "tutorielUrl": "https://drive.google.com/file/d/1MEMdJJMq2MhQ6H-dU5Nb5ls8ifoqM3U4/view",
             "reseaux": {
               "facebook": {
                 "statut": "a_venir",
@@ -9312,7 +9192,7 @@ export const series: Serie[] = [
                 "heure": "12:00",
                 "compte": "FoodEatUp",
                 "format": "Vidéo native 9:16",
-                "lienCta": "https://drive.google.com/file/d/1MEMdJJMq2MhQ6H-dU5Nb5ls8ifoqM3U4/view"
+                "lienCta": "https://site.foodeatup.com/"
               },
               "instagram": {
                 "statut": "a_venir",
@@ -9336,7 +9216,7 @@ export const series: Serie[] = [
                 "heure": "08:00",
                 "compte": "FoodEatUp",
                 "format": "Vidéo native 9:16",
-                "lienCta": "https://drive.google.com/file/d/1MEMdJJMq2MhQ6H-dU5Nb5ls8ifoqM3U4/view"
+                "lienCta": "https://site.foodeatup.com/"
               },
               "youtube": {
                 "statut": "a_venir",
@@ -9344,7 +9224,7 @@ export const series: Serie[] = [
                 "heure": "10:00",
                 "compte": "@FoodEatUp",
                 "format": "Short 9:16",
-                "lienCta": "https://drive.google.com/file/d/1MEMdJJMq2MhQ6H-dU5Nb5ls8ifoqM3U4/view"
+                "lienCta": "https://site.foodeatup.com/"
               }
             },
             "posterUrl": null,
@@ -9382,7 +9262,6 @@ export const series: Serie[] = [
             "statut": "a_produire",
             "dureeSecondes": null,
             "videoUrl": null,
-            "tutorielUrl": "https://drive.google.com/file/d/16Ecg7UgVAVDat_ImQG5q-QKYLtAQjX_m/view",
             "reseaux": {
               "facebook": {
                 "statut": "a_venir",
@@ -9390,7 +9269,7 @@ export const series: Serie[] = [
                 "heure": "12:00",
                 "compte": "FoodEatUp",
                 "format": "Vidéo native 9:16",
-                "lienCta": "https://drive.google.com/file/d/16Ecg7UgVAVDat_ImQG5q-QKYLtAQjX_m/view"
+                "lienCta": "https://site.foodeatup.com/"
               },
               "instagram": {
                 "statut": "a_venir",
@@ -9414,7 +9293,7 @@ export const series: Serie[] = [
                 "heure": "08:00",
                 "compte": "FoodEatUp",
                 "format": "Vidéo native 9:16",
-                "lienCta": "https://drive.google.com/file/d/16Ecg7UgVAVDat_ImQG5q-QKYLtAQjX_m/view"
+                "lienCta": "https://site.foodeatup.com/"
               },
               "youtube": {
                 "statut": "a_venir",
@@ -9422,7 +9301,7 @@ export const series: Serie[] = [
                 "heure": "10:00",
                 "compte": "@FoodEatUp",
                 "format": "Short 9:16",
-                "lienCta": "https://drive.google.com/file/d/16Ecg7UgVAVDat_ImQG5q-QKYLtAQjX_m/view"
+                "lienCta": "https://site.foodeatup.com/"
               }
             },
             "posterUrl": null,
@@ -9460,7 +9339,6 @@ export const series: Serie[] = [
             "statut": "a_produire",
             "dureeSecondes": null,
             "videoUrl": null,
-            "tutorielUrl": "https://drive.google.com/file/d/1MWkfZ-OZ_qv2z6QD9VPwabO5XnGd5UaB/view",
             "reseaux": {
               "facebook": {
                 "statut": "a_venir",
@@ -9468,7 +9346,7 @@ export const series: Serie[] = [
                 "heure": "12:00",
                 "compte": "FoodEatUp",
                 "format": "Vidéo native 9:16",
-                "lienCta": "https://drive.google.com/file/d/1MWkfZ-OZ_qv2z6QD9VPwabO5XnGd5UaB/view"
+                "lienCta": "https://site.foodeatup.com/"
               },
               "instagram": {
                 "statut": "a_venir",
@@ -9492,7 +9370,7 @@ export const series: Serie[] = [
                 "heure": "08:00",
                 "compte": "FoodEatUp",
                 "format": "Vidéo native 9:16",
-                "lienCta": "https://drive.google.com/file/d/1MWkfZ-OZ_qv2z6QD9VPwabO5XnGd5UaB/view"
+                "lienCta": "https://site.foodeatup.com/"
               },
               "youtube": {
                 "statut": "a_venir",
@@ -9500,7 +9378,7 @@ export const series: Serie[] = [
                 "heure": "10:00",
                 "compte": "@FoodEatUp",
                 "format": "Short 9:16",
-                "lienCta": "https://drive.google.com/file/d/1MWkfZ-OZ_qv2z6QD9VPwabO5XnGd5UaB/view"
+                "lienCta": "https://site.foodeatup.com/"
               }
             },
             "posterUrl": null,
@@ -9545,7 +9423,6 @@ export const series: Serie[] = [
             "statut": "a_produire",
             "dureeSecondes": null,
             "videoUrl": null,
-            "tutorielUrl": "https://drive.google.com/file/d/1PucAO7TE28El_TCLBrAOjct2VJS4mZu2/view",
             "reseaux": {
               "facebook": {
                 "statut": "a_venir",
@@ -9553,7 +9430,7 @@ export const series: Serie[] = [
                 "heure": "12:00",
                 "compte": "FoodEatUp",
                 "format": "Vidéo native 9:16",
-                "lienCta": "https://drive.google.com/file/d/1PucAO7TE28El_TCLBrAOjct2VJS4mZu2/view"
+                "lienCta": "https://site.foodeatup.com/"
               },
               "instagram": {
                 "statut": "a_venir",
@@ -9577,7 +9454,7 @@ export const series: Serie[] = [
                 "heure": "08:00",
                 "compte": "FoodEatUp",
                 "format": "Vidéo native 9:16",
-                "lienCta": "https://drive.google.com/file/d/1PucAO7TE28El_TCLBrAOjct2VJS4mZu2/view"
+                "lienCta": "https://site.foodeatup.com/"
               },
               "youtube": {
                 "statut": "a_venir",
@@ -9585,7 +9462,7 @@ export const series: Serie[] = [
                 "heure": "10:00",
                 "compte": "@FoodEatUp",
                 "format": "Short 9:16",
-                "lienCta": "https://drive.google.com/file/d/1PucAO7TE28El_TCLBrAOjct2VJS4mZu2/view"
+                "lienCta": "https://site.foodeatup.com/"
               }
             },
             "posterUrl": null,
@@ -9623,7 +9500,6 @@ export const series: Serie[] = [
             "statut": "a_produire",
             "dureeSecondes": null,
             "videoUrl": null,
-            "tutorielUrl": "https://drive.google.com/file/d/1nUloQCmx2rMx7VpeoN4RjFb9Coj-EfuD/view",
             "reseaux": {
               "facebook": {
                 "statut": "a_venir",
@@ -9631,7 +9507,7 @@ export const series: Serie[] = [
                 "heure": "12:00",
                 "compte": "FoodEatUp",
                 "format": "Vidéo native 9:16",
-                "lienCta": "https://drive.google.com/file/d/1nUloQCmx2rMx7VpeoN4RjFb9Coj-EfuD/view"
+                "lienCta": "https://site.foodeatup.com/"
               },
               "instagram": {
                 "statut": "a_venir",
@@ -9655,7 +9531,7 @@ export const series: Serie[] = [
                 "heure": "08:00",
                 "compte": "FoodEatUp",
                 "format": "Vidéo native 9:16",
-                "lienCta": "https://drive.google.com/file/d/1nUloQCmx2rMx7VpeoN4RjFb9Coj-EfuD/view"
+                "lienCta": "https://site.foodeatup.com/"
               },
               "youtube": {
                 "statut": "a_venir",
@@ -9663,7 +9539,7 @@ export const series: Serie[] = [
                 "heure": "10:00",
                 "compte": "@FoodEatUp",
                 "format": "Short 9:16",
-                "lienCta": "https://drive.google.com/file/d/1nUloQCmx2rMx7VpeoN4RjFb9Coj-EfuD/view"
+                "lienCta": "https://site.foodeatup.com/"
               }
             },
             "posterUrl": null,
@@ -9701,7 +9577,6 @@ export const series: Serie[] = [
             "statut": "a_produire",
             "dureeSecondes": null,
             "videoUrl": null,
-            "tutorielUrl": "https://drive.google.com/file/d/1yqhyPMj9uBq1awmqTwUhisuBJBpY5kt-/view",
             "reseaux": {
               "facebook": {
                 "statut": "a_venir",
@@ -9709,7 +9584,7 @@ export const series: Serie[] = [
                 "heure": "12:00",
                 "compte": "FoodEatUp",
                 "format": "Vidéo native 9:16",
-                "lienCta": "https://drive.google.com/file/d/1yqhyPMj9uBq1awmqTwUhisuBJBpY5kt-/view"
+                "lienCta": "https://site.foodeatup.com/"
               },
               "instagram": {
                 "statut": "a_venir",
@@ -9733,7 +9608,7 @@ export const series: Serie[] = [
                 "heure": "08:00",
                 "compte": "FoodEatUp",
                 "format": "Vidéo native 9:16",
-                "lienCta": "https://drive.google.com/file/d/1yqhyPMj9uBq1awmqTwUhisuBJBpY5kt-/view"
+                "lienCta": "https://site.foodeatup.com/"
               },
               "youtube": {
                 "statut": "a_venir",
@@ -9741,7 +9616,7 @@ export const series: Serie[] = [
                 "heure": "10:00",
                 "compte": "@FoodEatUp",
                 "format": "Short 9:16",
-                "lienCta": "https://drive.google.com/file/d/1yqhyPMj9uBq1awmqTwUhisuBJBpY5kt-/view"
+                "lienCta": "https://site.foodeatup.com/"
               }
             },
             "posterUrl": null,
@@ -9779,7 +9654,6 @@ export const series: Serie[] = [
             "statut": "bloque",
             "dureeSecondes": null,
             "videoUrl": null,
-            "tutorielUrl": null,
             "reseaux": {
               "facebook": {
                 "statut": "a_venir",
@@ -9787,7 +9661,7 @@ export const series: Serie[] = [
                 "heure": "12:00",
                 "compte": "FoodEatUp",
                 "format": "Vidéo native 9:16",
-                "lienCta": null
+                "lienCta": "https://site.foodeatup.com/"
               },
               "instagram": {
                 "statut": "a_venir",
@@ -9811,7 +9685,7 @@ export const series: Serie[] = [
                 "heure": "08:00",
                 "compte": "FoodEatUp",
                 "format": "Vidéo native 9:16",
-                "lienCta": null
+                "lienCta": "https://site.foodeatup.com/"
               },
               "youtube": {
                 "statut": "a_venir",
@@ -9819,7 +9693,7 @@ export const series: Serie[] = [
                 "heure": "10:00",
                 "compte": "@FoodEatUp",
                 "format": "Short 9:16",
-                "lienCta": null
+                "lienCta": "https://site.foodeatup.com/"
               }
             },
             "blocage": "Le chapitre correspondant n'a pas encore de vidéo dans le Drive interne.",
@@ -9851,7 +9725,6 @@ export const series: Serie[] = [
             "statut": "a_produire",
             "dureeSecondes": null,
             "videoUrl": null,
-            "tutorielUrl": "https://drive.google.com/file/d/1TOGCHAw6Yc43gQxScRWt62B5ZkuJO8jg/view",
             "reseaux": {
               "facebook": {
                 "statut": "a_venir",
@@ -9859,7 +9732,7 @@ export const series: Serie[] = [
                 "heure": "12:00",
                 "compte": "FoodEatUp",
                 "format": "Vidéo native 9:16",
-                "lienCta": "https://drive.google.com/file/d/1TOGCHAw6Yc43gQxScRWt62B5ZkuJO8jg/view"
+                "lienCta": "https://site.foodeatup.com/"
               },
               "instagram": {
                 "statut": "a_venir",
@@ -9883,7 +9756,7 @@ export const series: Serie[] = [
                 "heure": "08:00",
                 "compte": "FoodEatUp",
                 "format": "Vidéo native 9:16",
-                "lienCta": "https://drive.google.com/file/d/1TOGCHAw6Yc43gQxScRWt62B5ZkuJO8jg/view"
+                "lienCta": "https://site.foodeatup.com/"
               },
               "youtube": {
                 "statut": "a_venir",
@@ -9891,7 +9764,7 @@ export const series: Serie[] = [
                 "heure": "10:00",
                 "compte": "@FoodEatUp",
                 "format": "Short 9:16",
-                "lienCta": "https://drive.google.com/file/d/1TOGCHAw6Yc43gQxScRWt62B5ZkuJO8jg/view"
+                "lienCta": "https://site.foodeatup.com/"
               }
             },
             "posterUrl": null,
@@ -9929,7 +9802,6 @@ export const series: Serie[] = [
             "statut": "bloque",
             "dureeSecondes": null,
             "videoUrl": null,
-            "tutorielUrl": null,
             "reseaux": {
               "facebook": {
                 "statut": "a_venir",
@@ -9937,7 +9809,7 @@ export const series: Serie[] = [
                 "heure": "12:00",
                 "compte": "FoodEatUp",
                 "format": "Vidéo native 9:16",
-                "lienCta": null
+                "lienCta": "https://site.foodeatup.com/"
               },
               "instagram": {
                 "statut": "a_venir",
@@ -9961,7 +9833,7 @@ export const series: Serie[] = [
                 "heure": "08:00",
                 "compte": "FoodEatUp",
                 "format": "Vidéo native 9:16",
-                "lienCta": null
+                "lienCta": "https://site.foodeatup.com/"
               },
               "youtube": {
                 "statut": "a_venir",
@@ -9969,7 +9841,7 @@ export const series: Serie[] = [
                 "heure": "10:00",
                 "compte": "@FoodEatUp",
                 "format": "Short 9:16",
-                "lienCta": null
+                "lienCta": "https://site.foodeatup.com/"
               }
             },
             "blocage": "Le chapitre correspondant n'a pas encore de vidéo dans le Drive interne.",
@@ -10001,7 +9873,6 @@ export const series: Serie[] = [
             "statut": "a_produire",
             "dureeSecondes": null,
             "videoUrl": null,
-            "tutorielUrl": "https://drive.google.com/file/d/1ZcJIts_SFzUvjChwJSxcCGtnlT3NHOCP/view",
             "reseaux": {
               "facebook": {
                 "statut": "a_venir",
@@ -10009,7 +9880,7 @@ export const series: Serie[] = [
                 "heure": "12:00",
                 "compte": "FoodEatUp",
                 "format": "Vidéo native 9:16",
-                "lienCta": "https://drive.google.com/file/d/1ZcJIts_SFzUvjChwJSxcCGtnlT3NHOCP/view"
+                "lienCta": "https://site.foodeatup.com/"
               },
               "instagram": {
                 "statut": "a_venir",
@@ -10033,7 +9904,7 @@ export const series: Serie[] = [
                 "heure": "08:00",
                 "compte": "FoodEatUp",
                 "format": "Vidéo native 9:16",
-                "lienCta": "https://drive.google.com/file/d/1ZcJIts_SFzUvjChwJSxcCGtnlT3NHOCP/view"
+                "lienCta": "https://site.foodeatup.com/"
               },
               "youtube": {
                 "statut": "a_venir",
@@ -10041,7 +9912,7 @@ export const series: Serie[] = [
                 "heure": "10:00",
                 "compte": "@FoodEatUp",
                 "format": "Short 9:16",
-                "lienCta": "https://drive.google.com/file/d/1ZcJIts_SFzUvjChwJSxcCGtnlT3NHOCP/view"
+                "lienCta": "https://site.foodeatup.com/"
               }
             },
             "posterUrl": null,
@@ -10079,7 +9950,6 @@ export const series: Serie[] = [
             "statut": "a_produire",
             "dureeSecondes": null,
             "videoUrl": null,
-            "tutorielUrl": "https://drive.google.com/file/d/12589ZMOfTgifLClS2v-afJ2P6naWZmdB/view",
             "reseaux": {
               "facebook": {
                 "statut": "a_venir",
@@ -10087,7 +9957,7 @@ export const series: Serie[] = [
                 "heure": "12:00",
                 "compte": "FoodEatUp",
                 "format": "Vidéo native 9:16",
-                "lienCta": "https://drive.google.com/file/d/12589ZMOfTgifLClS2v-afJ2P6naWZmdB/view"
+                "lienCta": "https://site.foodeatup.com/"
               },
               "instagram": {
                 "statut": "a_venir",
@@ -10111,7 +9981,7 @@ export const series: Serie[] = [
                 "heure": "08:00",
                 "compte": "FoodEatUp",
                 "format": "Vidéo native 9:16",
-                "lienCta": "https://drive.google.com/file/d/12589ZMOfTgifLClS2v-afJ2P6naWZmdB/view"
+                "lienCta": "https://site.foodeatup.com/"
               },
               "youtube": {
                 "statut": "a_venir",
@@ -10119,7 +9989,7 @@ export const series: Serie[] = [
                 "heure": "10:00",
                 "compte": "@FoodEatUp",
                 "format": "Short 9:16",
-                "lienCta": "https://drive.google.com/file/d/12589ZMOfTgifLClS2v-afJ2P6naWZmdB/view"
+                "lienCta": "https://site.foodeatup.com/"
               }
             },
             "posterUrl": null,
@@ -10157,7 +10027,6 @@ export const series: Serie[] = [
             "statut": "a_produire",
             "dureeSecondes": null,
             "videoUrl": null,
-            "tutorielUrl": "https://drive.google.com/file/d/18dIJKyCb9DuZGIcN8Cr_EQkjzwlRUCnz/view",
             "reseaux": {
               "facebook": {
                 "statut": "a_venir",
@@ -10165,7 +10034,7 @@ export const series: Serie[] = [
                 "heure": "12:00",
                 "compte": "FoodEatUp",
                 "format": "Vidéo native 9:16",
-                "lienCta": "https://drive.google.com/file/d/18dIJKyCb9DuZGIcN8Cr_EQkjzwlRUCnz/view"
+                "lienCta": "https://site.foodeatup.com/"
               },
               "instagram": {
                 "statut": "a_venir",
@@ -10189,7 +10058,7 @@ export const series: Serie[] = [
                 "heure": "08:00",
                 "compte": "FoodEatUp",
                 "format": "Vidéo native 9:16",
-                "lienCta": "https://drive.google.com/file/d/18dIJKyCb9DuZGIcN8Cr_EQkjzwlRUCnz/view"
+                "lienCta": "https://site.foodeatup.com/"
               },
               "youtube": {
                 "statut": "a_venir",
@@ -10197,7 +10066,7 @@ export const series: Serie[] = [
                 "heure": "10:00",
                 "compte": "@FoodEatUp",
                 "format": "Short 9:16",
-                "lienCta": "https://drive.google.com/file/d/18dIJKyCb9DuZGIcN8Cr_EQkjzwlRUCnz/view"
+                "lienCta": "https://site.foodeatup.com/"
               }
             },
             "posterUrl": null,
@@ -10235,7 +10104,6 @@ export const series: Serie[] = [
             "statut": "a_produire",
             "dureeSecondes": null,
             "videoUrl": null,
-            "tutorielUrl": "https://drive.google.com/file/d/17j87qbBA5aySV44RakgltrNLsJpnRNBz/view",
             "reseaux": {
               "facebook": {
                 "statut": "a_venir",
@@ -10243,7 +10111,7 @@ export const series: Serie[] = [
                 "heure": "12:00",
                 "compte": "FoodEatUp",
                 "format": "Vidéo native 9:16",
-                "lienCta": "https://drive.google.com/file/d/17j87qbBA5aySV44RakgltrNLsJpnRNBz/view"
+                "lienCta": "https://site.foodeatup.com/"
               },
               "instagram": {
                 "statut": "a_venir",
@@ -10267,7 +10135,7 @@ export const series: Serie[] = [
                 "heure": "08:00",
                 "compte": "FoodEatUp",
                 "format": "Vidéo native 9:16",
-                "lienCta": "https://drive.google.com/file/d/17j87qbBA5aySV44RakgltrNLsJpnRNBz/view"
+                "lienCta": "https://site.foodeatup.com/"
               },
               "youtube": {
                 "statut": "a_venir",
@@ -10275,7 +10143,7 @@ export const series: Serie[] = [
                 "heure": "10:00",
                 "compte": "@FoodEatUp",
                 "format": "Short 9:16",
-                "lienCta": "https://drive.google.com/file/d/17j87qbBA5aySV44RakgltrNLsJpnRNBz/view"
+                "lienCta": "https://site.foodeatup.com/"
               }
             },
             "posterUrl": null,
@@ -10313,7 +10181,6 @@ export const series: Serie[] = [
             "statut": "a_produire",
             "dureeSecondes": null,
             "videoUrl": null,
-            "tutorielUrl": "https://drive.google.com/file/d/1CdAnJgR_iq1ESyAgcCCpFjnCfYzaUhIR/view",
             "reseaux": {
               "facebook": {
                 "statut": "a_venir",
@@ -10321,7 +10188,7 @@ export const series: Serie[] = [
                 "heure": "12:00",
                 "compte": "FoodEatUp",
                 "format": "Vidéo native 9:16",
-                "lienCta": "https://drive.google.com/file/d/1CdAnJgR_iq1ESyAgcCCpFjnCfYzaUhIR/view"
+                "lienCta": "https://site.foodeatup.com/"
               },
               "instagram": {
                 "statut": "a_venir",
@@ -10345,7 +10212,7 @@ export const series: Serie[] = [
                 "heure": "08:00",
                 "compte": "FoodEatUp",
                 "format": "Vidéo native 9:16",
-                "lienCta": "https://drive.google.com/file/d/1CdAnJgR_iq1ESyAgcCCpFjnCfYzaUhIR/view"
+                "lienCta": "https://site.foodeatup.com/"
               },
               "youtube": {
                 "statut": "a_venir",
@@ -10353,7 +10220,7 @@ export const series: Serie[] = [
                 "heure": "10:00",
                 "compte": "@FoodEatUp",
                 "format": "Short 9:16",
-                "lienCta": "https://drive.google.com/file/d/1CdAnJgR_iq1ESyAgcCCpFjnCfYzaUhIR/view"
+                "lienCta": "https://site.foodeatup.com/"
               }
             },
             "posterUrl": null,
@@ -10391,7 +10258,6 @@ export const series: Serie[] = [
             "statut": "bloque",
             "dureeSecondes": null,
             "videoUrl": null,
-            "tutorielUrl": null,
             "reseaux": {
               "facebook": {
                 "statut": "a_venir",
@@ -10399,7 +10265,7 @@ export const series: Serie[] = [
                 "heure": "12:00",
                 "compte": "FoodEatUp",
                 "format": "Vidéo native 9:16",
-                "lienCta": null
+                "lienCta": "https://site.foodeatup.com/"
               },
               "instagram": {
                 "statut": "a_venir",
@@ -10423,7 +10289,7 @@ export const series: Serie[] = [
                 "heure": "08:00",
                 "compte": "FoodEatUp",
                 "format": "Vidéo native 9:16",
-                "lienCta": null
+                "lienCta": "https://site.foodeatup.com/"
               },
               "youtube": {
                 "statut": "a_venir",
@@ -10431,7 +10297,7 @@ export const series: Serie[] = [
                 "heure": "10:00",
                 "compte": "@FoodEatUp",
                 "format": "Short 9:16",
-                "lienCta": null
+                "lienCta": "https://site.foodeatup.com/"
               }
             },
             "blocage": "Le chapitre correspondant n'a pas encore de vidéo dans le Drive interne.",
@@ -10470,7 +10336,6 @@ export const series: Serie[] = [
             "statut": "bloque",
             "dureeSecondes": null,
             "videoUrl": null,
-            "tutorielUrl": null,
             "reseaux": {
               "facebook": {
                 "statut": "a_venir",
@@ -10478,7 +10343,7 @@ export const series: Serie[] = [
                 "heure": "12:00",
                 "compte": "FoodEatUp",
                 "format": "Vidéo native 9:16",
-                "lienCta": null
+                "lienCta": "https://site.foodeatup.com/"
               },
               "instagram": {
                 "statut": "a_venir",
@@ -10502,7 +10367,7 @@ export const series: Serie[] = [
                 "heure": "08:00",
                 "compte": "FoodEatUp",
                 "format": "Vidéo native 9:16",
-                "lienCta": null
+                "lienCta": "https://site.foodeatup.com/"
               },
               "youtube": {
                 "statut": "a_venir",
@@ -10510,7 +10375,7 @@ export const series: Serie[] = [
                 "heure": "10:00",
                 "compte": "@FoodEatUp",
                 "format": "Short 9:16",
-                "lienCta": null
+                "lienCta": "https://site.foodeatup.com/"
               }
             },
             "blocage": "Le chapitre correspondant n'a pas encore de vidéo dans le Drive interne.",
@@ -10542,7 +10407,6 @@ export const series: Serie[] = [
             "statut": "a_produire",
             "dureeSecondes": null,
             "videoUrl": null,
-            "tutorielUrl": "https://drive.google.com/file/d/14OmsNUd3EMgWNxGVvmOwLgR3ZloWKNKW/view",
             "reseaux": {
               "facebook": {
                 "statut": "a_venir",
@@ -10550,7 +10414,7 @@ export const series: Serie[] = [
                 "heure": "12:00",
                 "compte": "FoodEatUp",
                 "format": "Vidéo native 9:16",
-                "lienCta": "https://drive.google.com/file/d/14OmsNUd3EMgWNxGVvmOwLgR3ZloWKNKW/view"
+                "lienCta": "https://site.foodeatup.com/"
               },
               "instagram": {
                 "statut": "a_venir",
@@ -10574,7 +10438,7 @@ export const series: Serie[] = [
                 "heure": "08:00",
                 "compte": "FoodEatUp",
                 "format": "Vidéo native 9:16",
-                "lienCta": "https://drive.google.com/file/d/14OmsNUd3EMgWNxGVvmOwLgR3ZloWKNKW/view"
+                "lienCta": "https://site.foodeatup.com/"
               },
               "youtube": {
                 "statut": "a_venir",
@@ -10582,7 +10446,7 @@ export const series: Serie[] = [
                 "heure": "10:00",
                 "compte": "@FoodEatUp",
                 "format": "Short 9:16",
-                "lienCta": "https://drive.google.com/file/d/14OmsNUd3EMgWNxGVvmOwLgR3ZloWKNKW/view"
+                "lienCta": "https://site.foodeatup.com/"
               }
             },
             "posterUrl": null,
@@ -10620,7 +10484,6 @@ export const series: Serie[] = [
             "statut": "a_produire",
             "dureeSecondes": null,
             "videoUrl": null,
-            "tutorielUrl": "https://drive.google.com/file/d/1ZcJIts_SFzUvjChwJSxcCGtnlT3NHOCP/view",
             "reseaux": {
               "facebook": {
                 "statut": "a_venir",
@@ -10628,7 +10491,7 @@ export const series: Serie[] = [
                 "heure": "12:00",
                 "compte": "FoodEatUp",
                 "format": "Vidéo native 9:16",
-                "lienCta": "https://drive.google.com/file/d/1ZcJIts_SFzUvjChwJSxcCGtnlT3NHOCP/view"
+                "lienCta": "https://site.foodeatup.com/"
               },
               "instagram": {
                 "statut": "a_venir",
@@ -10652,7 +10515,7 @@ export const series: Serie[] = [
                 "heure": "08:00",
                 "compte": "FoodEatUp",
                 "format": "Vidéo native 9:16",
-                "lienCta": "https://drive.google.com/file/d/1ZcJIts_SFzUvjChwJSxcCGtnlT3NHOCP/view"
+                "lienCta": "https://site.foodeatup.com/"
               },
               "youtube": {
                 "statut": "a_venir",
@@ -10660,7 +10523,7 @@ export const series: Serie[] = [
                 "heure": "10:00",
                 "compte": "@FoodEatUp",
                 "format": "Short 9:16",
-                "lienCta": "https://drive.google.com/file/d/1ZcJIts_SFzUvjChwJSxcCGtnlT3NHOCP/view"
+                "lienCta": "https://site.foodeatup.com/"
               }
             },
             "posterUrl": null,
@@ -10698,7 +10561,6 @@ export const series: Serie[] = [
             "statut": "a_produire",
             "dureeSecondes": null,
             "videoUrl": null,
-            "tutorielUrl": "https://drive.google.com/file/d/10GjJltEF3utZtfmwHR0qLZ8CTQr5_ioC/view",
             "reseaux": {
               "facebook": {
                 "statut": "a_venir",
@@ -10706,7 +10568,7 @@ export const series: Serie[] = [
                 "heure": "12:00",
                 "compte": "FoodEatUp",
                 "format": "Vidéo native 9:16",
-                "lienCta": "https://drive.google.com/file/d/10GjJltEF3utZtfmwHR0qLZ8CTQr5_ioC/view"
+                "lienCta": "https://site.foodeatup.com/"
               },
               "instagram": {
                 "statut": "a_venir",
@@ -10730,7 +10592,7 @@ export const series: Serie[] = [
                 "heure": "08:00",
                 "compte": "FoodEatUp",
                 "format": "Vidéo native 9:16",
-                "lienCta": "https://drive.google.com/file/d/10GjJltEF3utZtfmwHR0qLZ8CTQr5_ioC/view"
+                "lienCta": "https://site.foodeatup.com/"
               },
               "youtube": {
                 "statut": "a_venir",
@@ -10738,7 +10600,7 @@ export const series: Serie[] = [
                 "heure": "10:00",
                 "compte": "@FoodEatUp",
                 "format": "Short 9:16",
-                "lienCta": "https://drive.google.com/file/d/10GjJltEF3utZtfmwHR0qLZ8CTQr5_ioC/view"
+                "lienCta": "https://site.foodeatup.com/"
               }
             },
             "posterUrl": null,
@@ -10776,7 +10638,6 @@ export const series: Serie[] = [
             "statut": "bloque",
             "dureeSecondes": null,
             "videoUrl": null,
-            "tutorielUrl": null,
             "reseaux": {
               "facebook": {
                 "statut": "a_venir",
@@ -10784,7 +10645,7 @@ export const series: Serie[] = [
                 "heure": "12:00",
                 "compte": "FoodEatUp",
                 "format": "Vidéo native 9:16",
-                "lienCta": null
+                "lienCta": "https://site.foodeatup.com/"
               },
               "instagram": {
                 "statut": "a_venir",
@@ -10808,7 +10669,7 @@ export const series: Serie[] = [
                 "heure": "08:00",
                 "compte": "FoodEatUp",
                 "format": "Vidéo native 9:16",
-                "lienCta": null
+                "lienCta": "https://site.foodeatup.com/"
               },
               "youtube": {
                 "statut": "a_venir",
@@ -10816,7 +10677,7 @@ export const series: Serie[] = [
                 "heure": "10:00",
                 "compte": "@FoodEatUp",
                 "format": "Short 9:16",
-                "lienCta": null
+                "lienCta": "https://site.foodeatup.com/"
               }
             },
             "blocage": "Le chapitre correspondant n'a pas encore de vidéo dans le Drive interne.",
@@ -10848,7 +10709,6 @@ export const series: Serie[] = [
             "statut": "bloque",
             "dureeSecondes": null,
             "videoUrl": null,
-            "tutorielUrl": null,
             "reseaux": {
               "facebook": {
                 "statut": "a_venir",
@@ -10856,7 +10716,7 @@ export const series: Serie[] = [
                 "heure": "12:00",
                 "compte": "FoodEatUp",
                 "format": "Vidéo native 9:16",
-                "lienCta": null
+                "lienCta": "https://site.foodeatup.com/"
               },
               "instagram": {
                 "statut": "a_venir",
@@ -10880,7 +10740,7 @@ export const series: Serie[] = [
                 "heure": "08:00",
                 "compte": "FoodEatUp",
                 "format": "Vidéo native 9:16",
-                "lienCta": null
+                "lienCta": "https://site.foodeatup.com/"
               },
               "youtube": {
                 "statut": "a_venir",
@@ -10888,7 +10748,7 @@ export const series: Serie[] = [
                 "heure": "10:00",
                 "compte": "@FoodEatUp",
                 "format": "Short 9:16",
-                "lienCta": null
+                "lienCta": "https://site.foodeatup.com/"
               }
             },
             "blocage": "Le chapitre correspondant n'a pas encore de vidéo dans le Drive interne.",
@@ -10927,7 +10787,6 @@ export const series: Serie[] = [
             "statut": "a_produire",
             "dureeSecondes": null,
             "videoUrl": null,
-            "tutorielUrl": "https://drive.google.com/file/d/1PmYYGKH00qGUcMc1zehHng3C9fQiH84O/view",
             "reseaux": {
               "facebook": {
                 "statut": "a_venir",
@@ -10935,7 +10794,7 @@ export const series: Serie[] = [
                 "heure": "12:00",
                 "compte": "FoodEatUp",
                 "format": "Vidéo native 9:16",
-                "lienCta": "https://drive.google.com/file/d/1PmYYGKH00qGUcMc1zehHng3C9fQiH84O/view"
+                "lienCta": "https://site.foodeatup.com/"
               },
               "instagram": {
                 "statut": "a_venir",
@@ -10959,7 +10818,7 @@ export const series: Serie[] = [
                 "heure": "08:00",
                 "compte": "FoodEatUp",
                 "format": "Vidéo native 9:16",
-                "lienCta": "https://drive.google.com/file/d/1PmYYGKH00qGUcMc1zehHng3C9fQiH84O/view"
+                "lienCta": "https://site.foodeatup.com/"
               },
               "youtube": {
                 "statut": "a_venir",
@@ -10967,7 +10826,7 @@ export const series: Serie[] = [
                 "heure": "10:00",
                 "compte": "@FoodEatUp",
                 "format": "Short 9:16",
-                "lienCta": "https://drive.google.com/file/d/1PmYYGKH00qGUcMc1zehHng3C9fQiH84O/view"
+                "lienCta": "https://site.foodeatup.com/"
               }
             },
             "posterUrl": null,
@@ -11005,7 +10864,6 @@ export const series: Serie[] = [
             "statut": "a_produire",
             "dureeSecondes": null,
             "videoUrl": null,
-            "tutorielUrl": "https://drive.google.com/file/d/124mIM7NudoQy5wun_rlSZ6MCrJ2wNykL/view",
             "reseaux": {
               "facebook": {
                 "statut": "a_venir",
@@ -11013,7 +10871,7 @@ export const series: Serie[] = [
                 "heure": "12:00",
                 "compte": "FoodEatUp",
                 "format": "Vidéo native 9:16",
-                "lienCta": "https://drive.google.com/file/d/124mIM7NudoQy5wun_rlSZ6MCrJ2wNykL/view"
+                "lienCta": "https://site.foodeatup.com/"
               },
               "instagram": {
                 "statut": "a_venir",
@@ -11037,7 +10895,7 @@ export const series: Serie[] = [
                 "heure": "08:00",
                 "compte": "FoodEatUp",
                 "format": "Vidéo native 9:16",
-                "lienCta": "https://drive.google.com/file/d/124mIM7NudoQy5wun_rlSZ6MCrJ2wNykL/view"
+                "lienCta": "https://site.foodeatup.com/"
               },
               "youtube": {
                 "statut": "a_venir",
@@ -11045,7 +10903,7 @@ export const series: Serie[] = [
                 "heure": "10:00",
                 "compte": "@FoodEatUp",
                 "format": "Short 9:16",
-                "lienCta": "https://drive.google.com/file/d/124mIM7NudoQy5wun_rlSZ6MCrJ2wNykL/view"
+                "lienCta": "https://site.foodeatup.com/"
               }
             },
             "posterUrl": null,
@@ -11083,7 +10941,6 @@ export const series: Serie[] = [
             "statut": "a_produire",
             "dureeSecondes": null,
             "videoUrl": null,
-            "tutorielUrl": "https://drive.google.com/file/d/1nuFxXTOCXeHKtSbJBScCH0O3khJxTiB4/view",
             "reseaux": {
               "facebook": {
                 "statut": "a_venir",
@@ -11091,7 +10948,7 @@ export const series: Serie[] = [
                 "heure": "12:00",
                 "compte": "FoodEatUp",
                 "format": "Vidéo native 9:16",
-                "lienCta": "https://drive.google.com/file/d/1nuFxXTOCXeHKtSbJBScCH0O3khJxTiB4/view"
+                "lienCta": "https://site.foodeatup.com/"
               },
               "instagram": {
                 "statut": "a_venir",
@@ -11115,7 +10972,7 @@ export const series: Serie[] = [
                 "heure": "08:00",
                 "compte": "FoodEatUp",
                 "format": "Vidéo native 9:16",
-                "lienCta": "https://drive.google.com/file/d/1nuFxXTOCXeHKtSbJBScCH0O3khJxTiB4/view"
+                "lienCta": "https://site.foodeatup.com/"
               },
               "youtube": {
                 "statut": "a_venir",
@@ -11123,7 +10980,7 @@ export const series: Serie[] = [
                 "heure": "10:00",
                 "compte": "@FoodEatUp",
                 "format": "Short 9:16",
-                "lienCta": "https://drive.google.com/file/d/1nuFxXTOCXeHKtSbJBScCH0O3khJxTiB4/view"
+                "lienCta": "https://site.foodeatup.com/"
               }
             },
             "posterUrl": null,
@@ -11161,7 +11018,6 @@ export const series: Serie[] = [
             "statut": "a_produire",
             "dureeSecondes": null,
             "videoUrl": null,
-            "tutorielUrl": "https://drive.google.com/file/d/13w9aRHXfQFkxF3UvqtaLczqKPN5rr7E0/view",
             "reseaux": {
               "facebook": {
                 "statut": "a_venir",
@@ -11169,7 +11025,7 @@ export const series: Serie[] = [
                 "heure": "12:00",
                 "compte": "FoodEatUp",
                 "format": "Vidéo native 9:16",
-                "lienCta": "https://drive.google.com/file/d/13w9aRHXfQFkxF3UvqtaLczqKPN5rr7E0/view"
+                "lienCta": "https://site.foodeatup.com/"
               },
               "instagram": {
                 "statut": "a_venir",
@@ -11193,7 +11049,7 @@ export const series: Serie[] = [
                 "heure": "08:00",
                 "compte": "FoodEatUp",
                 "format": "Vidéo native 9:16",
-                "lienCta": "https://drive.google.com/file/d/13w9aRHXfQFkxF3UvqtaLczqKPN5rr7E0/view"
+                "lienCta": "https://site.foodeatup.com/"
               },
               "youtube": {
                 "statut": "a_venir",
@@ -11201,7 +11057,7 @@ export const series: Serie[] = [
                 "heure": "10:00",
                 "compte": "@FoodEatUp",
                 "format": "Short 9:16",
-                "lienCta": "https://drive.google.com/file/d/13w9aRHXfQFkxF3UvqtaLczqKPN5rr7E0/view"
+                "lienCta": "https://site.foodeatup.com/"
               }
             },
             "posterUrl": null,
@@ -11239,7 +11095,6 @@ export const series: Serie[] = [
             "statut": "a_produire",
             "dureeSecondes": null,
             "videoUrl": null,
-            "tutorielUrl": "https://drive.google.com/file/d/1LRxi9R1Sbj1sQ0Cg4RZhpE_cxZHygksu/view",
             "reseaux": {
               "facebook": {
                 "statut": "a_venir",
@@ -11247,7 +11102,7 @@ export const series: Serie[] = [
                 "heure": "12:00",
                 "compte": "FoodEatUp",
                 "format": "Vidéo native 9:16",
-                "lienCta": "https://drive.google.com/file/d/1LRxi9R1Sbj1sQ0Cg4RZhpE_cxZHygksu/view"
+                "lienCta": "https://site.foodeatup.com/"
               },
               "instagram": {
                 "statut": "a_venir",
@@ -11271,7 +11126,7 @@ export const series: Serie[] = [
                 "heure": "08:00",
                 "compte": "FoodEatUp",
                 "format": "Vidéo native 9:16",
-                "lienCta": "https://drive.google.com/file/d/1LRxi9R1Sbj1sQ0Cg4RZhpE_cxZHygksu/view"
+                "lienCta": "https://site.foodeatup.com/"
               },
               "youtube": {
                 "statut": "a_venir",
@@ -11279,7 +11134,7 @@ export const series: Serie[] = [
                 "heure": "10:00",
                 "compte": "@FoodEatUp",
                 "format": "Short 9:16",
-                "lienCta": "https://drive.google.com/file/d/1LRxi9R1Sbj1sQ0Cg4RZhpE_cxZHygksu/view"
+                "lienCta": "https://site.foodeatup.com/"
               }
             },
             "posterUrl": null,
@@ -11317,7 +11172,6 @@ export const series: Serie[] = [
             "statut": "a_produire",
             "dureeSecondes": null,
             "videoUrl": null,
-            "tutorielUrl": "https://drive.google.com/file/d/1CMKvqIypwbr8KHTj0dCs_w06sjkaQKV4/view",
             "reseaux": {
               "facebook": {
                 "statut": "a_venir",
@@ -11325,7 +11179,7 @@ export const series: Serie[] = [
                 "heure": "12:00",
                 "compte": "FoodEatUp",
                 "format": "Vidéo native 9:16",
-                "lienCta": "https://drive.google.com/file/d/1CMKvqIypwbr8KHTj0dCs_w06sjkaQKV4/view"
+                "lienCta": "https://site.foodeatup.com/"
               },
               "instagram": {
                 "statut": "a_venir",
@@ -11349,7 +11203,7 @@ export const series: Serie[] = [
                 "heure": "08:00",
                 "compte": "FoodEatUp",
                 "format": "Vidéo native 9:16",
-                "lienCta": "https://drive.google.com/file/d/1CMKvqIypwbr8KHTj0dCs_w06sjkaQKV4/view"
+                "lienCta": "https://site.foodeatup.com/"
               },
               "youtube": {
                 "statut": "a_venir",
@@ -11357,7 +11211,7 @@ export const series: Serie[] = [
                 "heure": "10:00",
                 "compte": "@FoodEatUp",
                 "format": "Short 9:16",
-                "lienCta": "https://drive.google.com/file/d/1CMKvqIypwbr8KHTj0dCs_w06sjkaQKV4/view"
+                "lienCta": "https://site.foodeatup.com/"
               }
             },
             "posterUrl": null,
@@ -11395,7 +11249,6 @@ export const series: Serie[] = [
             "statut": "a_produire",
             "dureeSecondes": null,
             "videoUrl": null,
-            "tutorielUrl": "https://drive.google.com/file/d/1MWkfZ-OZ_qv2z6QD9VPwabO5XnGd5UaB/view",
             "reseaux": {
               "facebook": {
                 "statut": "a_venir",
@@ -11403,7 +11256,7 @@ export const series: Serie[] = [
                 "heure": "12:00",
                 "compte": "FoodEatUp",
                 "format": "Vidéo native 9:16",
-                "lienCta": "https://drive.google.com/file/d/1MWkfZ-OZ_qv2z6QD9VPwabO5XnGd5UaB/view"
+                "lienCta": "https://site.foodeatup.com/"
               },
               "instagram": {
                 "statut": "a_venir",
@@ -11427,7 +11280,7 @@ export const series: Serie[] = [
                 "heure": "08:00",
                 "compte": "FoodEatUp",
                 "format": "Vidéo native 9:16",
-                "lienCta": "https://drive.google.com/file/d/1MWkfZ-OZ_qv2z6QD9VPwabO5XnGd5UaB/view"
+                "lienCta": "https://site.foodeatup.com/"
               },
               "youtube": {
                 "statut": "a_venir",
@@ -11435,7 +11288,7 @@ export const series: Serie[] = [
                 "heure": "10:00",
                 "compte": "@FoodEatUp",
                 "format": "Short 9:16",
-                "lienCta": "https://drive.google.com/file/d/1MWkfZ-OZ_qv2z6QD9VPwabO5XnGd5UaB/view"
+                "lienCta": "https://site.foodeatup.com/"
               }
             },
             "posterUrl": null,
@@ -11473,7 +11326,6 @@ export const series: Serie[] = [
             "statut": "a_produire",
             "dureeSecondes": null,
             "videoUrl": null,
-            "tutorielUrl": "https://drive.google.com/file/d/1LRxi9R1Sbj1sQ0Cg4RZhpE_cxZHygksu/view",
             "reseaux": {
               "facebook": {
                 "statut": "a_venir",
@@ -11481,7 +11333,7 @@ export const series: Serie[] = [
                 "heure": "12:00",
                 "compte": "FoodEatUp",
                 "format": "Vidéo native 9:16",
-                "lienCta": "https://drive.google.com/file/d/1LRxi9R1Sbj1sQ0Cg4RZhpE_cxZHygksu/view"
+                "lienCta": "https://site.foodeatup.com/"
               },
               "instagram": {
                 "statut": "a_venir",
@@ -11505,7 +11357,7 @@ export const series: Serie[] = [
                 "heure": "08:00",
                 "compte": "FoodEatUp",
                 "format": "Vidéo native 9:16",
-                "lienCta": "https://drive.google.com/file/d/1LRxi9R1Sbj1sQ0Cg4RZhpE_cxZHygksu/view"
+                "lienCta": "https://site.foodeatup.com/"
               },
               "youtube": {
                 "statut": "a_venir",
@@ -11513,7 +11365,7 @@ export const series: Serie[] = [
                 "heure": "10:00",
                 "compte": "@FoodEatUp",
                 "format": "Short 9:16",
-                "lienCta": "https://drive.google.com/file/d/1LRxi9R1Sbj1sQ0Cg4RZhpE_cxZHygksu/view"
+                "lienCta": "https://site.foodeatup.com/"
               }
             },
             "posterUrl": null,
@@ -11551,7 +11403,6 @@ export const series: Serie[] = [
             "statut": "a_produire",
             "dureeSecondes": null,
             "videoUrl": null,
-            "tutorielUrl": "https://drive.google.com/file/d/1LRxi9R1Sbj1sQ0Cg4RZhpE_cxZHygksu/view",
             "reseaux": {
               "facebook": {
                 "statut": "a_venir",
@@ -11559,7 +11410,7 @@ export const series: Serie[] = [
                 "heure": "12:00",
                 "compte": "FoodEatUp",
                 "format": "Vidéo native 9:16",
-                "lienCta": "https://drive.google.com/file/d/1LRxi9R1Sbj1sQ0Cg4RZhpE_cxZHygksu/view"
+                "lienCta": "https://site.foodeatup.com/"
               },
               "instagram": {
                 "statut": "a_venir",
@@ -11583,7 +11434,7 @@ export const series: Serie[] = [
                 "heure": "08:00",
                 "compte": "FoodEatUp",
                 "format": "Vidéo native 9:16",
-                "lienCta": "https://drive.google.com/file/d/1LRxi9R1Sbj1sQ0Cg4RZhpE_cxZHygksu/view"
+                "lienCta": "https://site.foodeatup.com/"
               },
               "youtube": {
                 "statut": "a_venir",
@@ -11591,7 +11442,7 @@ export const series: Serie[] = [
                 "heure": "10:00",
                 "compte": "@FoodEatUp",
                 "format": "Short 9:16",
-                "lienCta": "https://drive.google.com/file/d/1LRxi9R1Sbj1sQ0Cg4RZhpE_cxZHygksu/view"
+                "lienCta": "https://site.foodeatup.com/"
               }
             },
             "posterUrl": null,
@@ -11629,7 +11480,6 @@ export const series: Serie[] = [
             "statut": "bloque",
             "dureeSecondes": null,
             "videoUrl": null,
-            "tutorielUrl": null,
             "reseaux": {
               "facebook": {
                 "statut": "a_venir",
@@ -11637,7 +11487,7 @@ export const series: Serie[] = [
                 "heure": "12:00",
                 "compte": "FoodEatUp",
                 "format": "Vidéo native 9:16",
-                "lienCta": null
+                "lienCta": "https://site.foodeatup.com/"
               },
               "instagram": {
                 "statut": "a_venir",
@@ -11661,7 +11511,7 @@ export const series: Serie[] = [
                 "heure": "08:00",
                 "compte": "FoodEatUp",
                 "format": "Vidéo native 9:16",
-                "lienCta": null
+                "lienCta": "https://site.foodeatup.com/"
               },
               "youtube": {
                 "statut": "a_venir",
@@ -11669,7 +11519,7 @@ export const series: Serie[] = [
                 "heure": "10:00",
                 "compte": "@FoodEatUp",
                 "format": "Short 9:16",
-                "lienCta": null
+                "lienCta": "https://site.foodeatup.com/"
               }
             },
             "blocage": "Le chapitre correspondant n'a pas encore de vidéo dans le Drive interne.",
@@ -11708,7 +11558,6 @@ export const series: Serie[] = [
             "statut": "a_produire",
             "dureeSecondes": null,
             "videoUrl": null,
-            "tutorielUrl": "https://drive.google.com/file/d/1L1RnS8OdOEMKsVjDho2rKnj4gzihgfW9/view",
             "reseaux": {
               "facebook": {
                 "statut": "a_venir",
@@ -11716,7 +11565,7 @@ export const series: Serie[] = [
                 "heure": "12:00",
                 "compte": "FoodEatUp",
                 "format": "Vidéo native 9:16",
-                "lienCta": "https://drive.google.com/file/d/1L1RnS8OdOEMKsVjDho2rKnj4gzihgfW9/view"
+                "lienCta": "https://site.foodeatup.com/"
               },
               "instagram": {
                 "statut": "a_venir",
@@ -11740,7 +11589,7 @@ export const series: Serie[] = [
                 "heure": "08:00",
                 "compte": "FoodEatUp",
                 "format": "Vidéo native 9:16",
-                "lienCta": "https://drive.google.com/file/d/1L1RnS8OdOEMKsVjDho2rKnj4gzihgfW9/view"
+                "lienCta": "https://site.foodeatup.com/"
               },
               "youtube": {
                 "statut": "a_venir",
@@ -11748,7 +11597,7 @@ export const series: Serie[] = [
                 "heure": "10:00",
                 "compte": "@FoodEatUp",
                 "format": "Short 9:16",
-                "lienCta": "https://drive.google.com/file/d/1L1RnS8OdOEMKsVjDho2rKnj4gzihgfW9/view"
+                "lienCta": "https://site.foodeatup.com/"
               }
             },
             "posterUrl": null,
@@ -11786,7 +11635,6 @@ export const series: Serie[] = [
             "statut": "a_produire",
             "dureeSecondes": null,
             "videoUrl": null,
-            "tutorielUrl": "https://drive.google.com/file/d/1MWkfZ-OZ_qv2z6QD9VPwabO5XnGd5UaB/view",
             "reseaux": {
               "facebook": {
                 "statut": "a_venir",
@@ -11794,7 +11642,7 @@ export const series: Serie[] = [
                 "heure": "12:00",
                 "compte": "FoodEatUp",
                 "format": "Vidéo native 9:16",
-                "lienCta": "https://drive.google.com/file/d/1MWkfZ-OZ_qv2z6QD9VPwabO5XnGd5UaB/view"
+                "lienCta": "https://site.foodeatup.com/"
               },
               "instagram": {
                 "statut": "a_venir",
@@ -11818,7 +11666,7 @@ export const series: Serie[] = [
                 "heure": "08:00",
                 "compte": "FoodEatUp",
                 "format": "Vidéo native 9:16",
-                "lienCta": "https://drive.google.com/file/d/1MWkfZ-OZ_qv2z6QD9VPwabO5XnGd5UaB/view"
+                "lienCta": "https://site.foodeatup.com/"
               },
               "youtube": {
                 "statut": "a_venir",
@@ -11826,7 +11674,7 @@ export const series: Serie[] = [
                 "heure": "10:00",
                 "compte": "@FoodEatUp",
                 "format": "Short 9:16",
-                "lienCta": "https://drive.google.com/file/d/1MWkfZ-OZ_qv2z6QD9VPwabO5XnGd5UaB/view"
+                "lienCta": "https://site.foodeatup.com/"
               }
             },
             "posterUrl": null,

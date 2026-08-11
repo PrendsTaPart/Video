@@ -99,6 +99,17 @@ DEFAUT = {"tags": ["logicielrestaurant"], "cles": ["logiciel restaurant"],
 TEL = "06 14 18 92 25"
 SITE = "foodeatup.com"
 
+# Le lien public des publications. Il ne pointe JAMAIS sur le Drive : ces liens
+# sont internes à la production, ils exposent l'arborescence de travail et ne
+# survivraient pas à un partage large. Le Drive sert à découper le screencast,
+# rien de plus — il ne sort pas de l'usine.
+LIEN_PUBLIC = "https://site.foodeatup.com/"
+
+
+def lien_public(ep):
+    """Ce qu'on met dans un post. Toujours une adresse publique."""
+    return LIEN_PUBLIC
+
 # --- Le titre en trois mots de la vignette ------------------------------------
 # Trois mots, pas quatre : au-delà, sur une vignette lue au pouce sur un
 # téléphone, plus personne ne lit la troisième ligne.
@@ -186,13 +197,13 @@ def premiere_phrase(t):
 def legende(ep, reseau):
     """Le texte prêt à coller, sans les mots-dièse (ils sont à part)."""
     a, p, r = ep["accroche"], ep["punchline"], ep["resume"]
-    lien = ep.get("tutorielUrl")
+    lien = lien_public(ep)
     benef = MODULES.get(ep["module"], DEFAUT)["benefice"]
 
     if reseau == "facebook":
         bloc = [f"{a} {p}", "", r, ""]
         if lien:
-            bloc.append(f"👉 Le tutoriel complet : {lien}")
+            bloc.append(f"👉 Tout FoodEatUp : {lien}")
         bloc.append(f"Une démo ? {TEL} — {SITE}")
         return "\n".join(bloc)
 
@@ -200,7 +211,7 @@ def legende(ep, reseau):
         # Pas d'URL : Instagram ne la rend pas cliquable, elle ne ferait
         # qu'encombrer la légende.
         return "\n".join([a, p, "", r, "",
-                          "Le pas-à-pas complet est dans notre Academy — lien en bio.",
+                          "Tout est expliqué sur notre site — lien en bio.",
                           f"Une démo ? {TEL}"])
 
     if reseau == "tiktok":
@@ -215,7 +226,7 @@ def legende(ep, reseau):
     bloc = [f"{a}", "", r, "",
             f"Concrètement : {benef}.", ""]
     if lien:
-        bloc.append(f"Le tutoriel pas-à-pas : {lien}")
+        bloc.append(f"En savoir plus : {lien}")
     bloc.append(f"Une démo ? {TEL} — {SITE}")
     return "\n".join(bloc)
 
@@ -231,14 +242,14 @@ def titre_youtube(ep):
 
 
 def description_youtube(ep):
-    lien = ep.get("tutorielUrl")
+    lien = lien_public(ep)
     benef = MODULES.get(ep["module"], DEFAUT)["benefice"]
     bloc = [f"{ep['accroche']} {ep['punchline']}", "",
             ep["resume"], "",
             f"Concrètement : {benef}.", "",
             "— — —", ""]
     if lien:
-        bloc += [f"📺 Le tutoriel pas-à-pas : {lien}", ""]
+        bloc += [f"🔗 {lien}", ""]
     bloc += [f"📞 Une démo ? {TEL}",
              f"🌐 {SITE}", "",
              f"Série « Le Coup de Feu » — saison {ep['saison']}, épisode {ep['numero']}.",
@@ -272,13 +283,13 @@ def prompt_vignette(ep):
 
 
 def cta(ep, reseau):
-    if not ep.get("tutorielUrl"):
+    if not lien_public(ep):
         return "Demander une démo"
-    return {"facebook": "Voir le tutoriel complet",
-            "instagram": "Le pas-à-pas est en bio",
-            "tiktok": "Tuto complet en bio",
-            "linkedin": "Voir le tutoriel pas-à-pas",
-            "youtube": "Le tutoriel pas-à-pas"}[reseau]
+    return {"facebook": "Découvrir FoodEatUp",
+            "instagram": "Tout est en bio",
+            "tiktok": "Lien en bio",
+            "linkedin": "Découvrir FoodEatUp",
+            "youtube": "Découvrir FoodEatUp"}[reseau]
 
 
 def main():
@@ -308,7 +319,7 @@ def main():
                         "legende": legende(ep, res),
                         "hashtags": tags(ep, res),
                         "cta": cta(ep, res),
-                        "lienCta": ep.get("tutorielUrl") if cfg["lien_cliquable"] else None,
+                        "lienCta": lien_public(ep) if cfg["lien_cliquable"] else None,
                         "motsCles": mots_cles(ep),
                     }
                     if res == "youtube":

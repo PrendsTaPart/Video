@@ -26,7 +26,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
   "EP001": {
     "publications": {
       "facebook": {
-        "legende": "Lui aussi attend ta commande. Sauf que lui, il est patient. Tes clients, non.\n\nIci, toutes tes commandes arrivent au même endroit : la salle, le téléphone, le site, la livraison. Une seule file, dans l'ordre d'arrivée. Plus personne n'attend parce qu'on a oublié un ticket.\n\n👉 Le tutoriel complet : https://drive.google.com/file/d/10GjJltEF3utZtfmwHR0qLZ8CTQr5_ioC/view\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "legende": "Lui aussi attend ta commande. Sauf que lui, il est patient. Tes clients, non.\n\nIci, toutes tes commandes arrivent au même endroit : la salle, le téléphone, le site, la livraison. Une seule file, dans l'ordre d'arrivée. Plus personne n'attend parce qu'on a oublié un ticket.\n\n👉 Tout FoodEatUp : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
         "hashtags": [
           "restaurant",
           "restaurateur",
@@ -43,10 +43,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "commandes multi-canaux",
           "service restaurant"
         ],
-        "cta": "Voir le tutoriel complet"
+        "cta": "Découvrir FoodEatUp"
       },
       "instagram": {
-        "legende": "Lui aussi attend ta commande.\nSauf que lui, il est patient. Tes clients, non.\n\nIci, toutes tes commandes arrivent au même endroit : la salle, le téléphone, le site, la livraison. Une seule file, dans l'ordre d'arrivée. Plus personne n'attend parce qu'on a oublié un ticket.\n\nLe pas-à-pas complet est dans notre Academy — lien en bio.\nUne démo ? 06 14 18 92 25",
+        "legende": "Lui aussi attend ta commande.\nSauf que lui, il est patient. Tes clients, non.\n\nIci, toutes tes commandes arrivent au même endroit : la salle, le téléphone, le site, la livraison. Une seule file, dans l'ordre d'arrivée. Plus personne n'attend parce qu'on a oublié un ticket.\n\nTout est expliqué sur notre site — lien en bio.\nUne démo ? 06 14 18 92 25",
         "hashtags": [
           "restaurant",
           "restaurateur",
@@ -68,7 +68,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "commandes multi-canaux",
           "service restaurant"
         ],
-        "cta": "Le pas-à-pas est en bio"
+        "cta": "Tout est en bio"
       },
       "tiktok": {
         "legende": "Lui aussi attend ta commande. 😅\nSauf que lui, il est patient. Tes clients, non.\n\nIci, toutes tes commandes arrivent au même endroit : la salle, le téléphone, le site, la livraison.",
@@ -86,10 +86,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "commandes multi-canaux",
           "service restaurant"
         ],
-        "cta": "Tuto complet en bio"
+        "cta": "Lien en bio"
       },
       "linkedin": {
-        "legende": "Lui aussi attend ta commande.\n\nIci, toutes tes commandes arrivent au même endroit : la salle, le téléphone, le site, la livraison. Une seule file, dans l'ordre d'arrivée. Plus personne n'attend parce qu'on a oublié un ticket.\n\nConcrètement : moins de tickets perdus entre la salle et le pass.\n\nLe tutoriel pas-à-pas : https://drive.google.com/file/d/10GjJltEF3utZtfmwHR0qLZ8CTQr5_ioC/view\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "legende": "Lui aussi attend ta commande.\n\nIci, toutes tes commandes arrivent au même endroit : la salle, le téléphone, le site, la livraison. Une seule file, dans l'ordre d'arrivée. Plus personne n'attend parce qu'on a oublié un ticket.\n\nConcrètement : moins de tickets perdus entre la salle et le pass.\n\nEn savoir plus : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
         "hashtags": [
           "restauration",
           "foodeatup",
@@ -103,10 +103,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "commandes multi-canaux",
           "service restaurant"
         ],
-        "cta": "Voir le tutoriel pas-à-pas"
+        "cta": "Découvrir FoodEatUp"
       },
       "youtube": {
-        "legende": "Lui aussi attend ta commande. Sauf que lui, il est patient. Tes clients, non.\n\nIci, toutes tes commandes arrivent au même endroit : la salle, le téléphone, le site, la livraison. Une seule file, dans l'ordre d'arrivée. Plus personne n'attend parce qu'on a oublié un ticket.\n\nConcrètement : moins de tickets perdus entre la salle et le pass.\n\n— — —\n\n📺 Le tutoriel pas-à-pas : https://drive.google.com/file/d/10GjJltEF3utZtfmwHR0qLZ8CTQr5_ioC/view\n\n📞 Une démo ? 06 14 18 92 25\n🌐 foodeatup.com\n\nSérie « Le Coup de Feu » — saison 1, épisode 1.\nModule Service · Chapitre : 1 - Commandes multi-canaux\n\nFoodEatUp est le logiciel qui réunit la caisse, le stock, les plannings, l'HACCP et le marketing d'un restaurant au même endroit.\n",
+        "legende": "Lui aussi attend ta commande. Sauf que lui, il est patient. Tes clients, non.\n\nIci, toutes tes commandes arrivent au même endroit : la salle, le téléphone, le site, la livraison. Une seule file, dans l'ordre d'arrivée. Plus personne n'attend parce qu'on a oublié un ticket.\n\nConcrètement : moins de tickets perdus entre la salle et le pass.\n\n— — —\n\n🔗 https://site.foodeatup.com/\n\n📞 Une démo ? 06 14 18 92 25\n🌐 foodeatup.com\n\nSérie « Le Coup de Feu » — saison 1, épisode 1.\nModule Service · Chapitre : 1 - Commandes multi-canaux\n\nFoodEatUp est le logiciel qui réunit la caisse, le stock, les plannings, l'HACCP et le marketing d'un restaurant au même endroit.\n",
         "hashtags": [
           "Shorts",
           "restaurant",
@@ -126,7 +126,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "commandes multi-canaux",
           "service restaurant"
         ],
-        "cta": "Le tutoriel pas-à-pas",
+        "cta": "Découvrir FoodEatUp",
         "titre": "Commandes multi-canaux — Service | FoodEatUp"
       }
     },
@@ -148,7 +148,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
   "EP002": {
     "publications": {
       "facebook": {
-        "legende": "Ton service du samedi soir. Ça finit toujours par terre.\n\nTu prends la commande à table, elle part en cuisine dans la seconde. Pas de carnet, pas d'aller-retour, pas de ticket perdu entre la salle et le pass.\n\n👉 Le tutoriel complet : https://drive.google.com/file/d/1PucAO7TE28El_TCLBrAOjct2VJS4mZu2/view\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "legende": "Ton service du samedi soir. Ça finit toujours par terre.\n\nTu prends la commande à table, elle part en cuisine dans la seconde. Pas de carnet, pas d'aller-retour, pas de ticket perdu entre la salle et le pass.\n\n👉 Tout FoodEatUp : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
         "hashtags": [
           "restaurant",
           "restaurateur",
@@ -165,10 +165,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "envoi direct cuisine",
           "service restaurant"
         ],
-        "cta": "Voir le tutoriel complet"
+        "cta": "Découvrir FoodEatUp"
       },
       "instagram": {
-        "legende": "Ton service du samedi soir.\nÇa finit toujours par terre.\n\nTu prends la commande à table, elle part en cuisine dans la seconde. Pas de carnet, pas d'aller-retour, pas de ticket perdu entre la salle et le pass.\n\nLe pas-à-pas complet est dans notre Academy — lien en bio.\nUne démo ? 06 14 18 92 25",
+        "legende": "Ton service du samedi soir.\nÇa finit toujours par terre.\n\nTu prends la commande à table, elle part en cuisine dans la seconde. Pas de carnet, pas d'aller-retour, pas de ticket perdu entre la salle et le pass.\n\nTout est expliqué sur notre site — lien en bio.\nUne démo ? 06 14 18 92 25",
         "hashtags": [
           "restaurant",
           "restaurateur",
@@ -190,7 +190,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "envoi direct cuisine",
           "service restaurant"
         ],
-        "cta": "Le pas-à-pas est en bio"
+        "cta": "Tout est en bio"
       },
       "tiktok": {
         "legende": "Ton service du samedi soir. 😅\nÇa finit toujours par terre.\n\nTu prends la commande à table, elle part en cuisine dans la seconde.",
@@ -208,10 +208,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "envoi direct cuisine",
           "service restaurant"
         ],
-        "cta": "Tuto complet en bio"
+        "cta": "Lien en bio"
       },
       "linkedin": {
-        "legende": "Ton service du samedi soir.\n\nTu prends la commande à table, elle part en cuisine dans la seconde. Pas de carnet, pas d'aller-retour, pas de ticket perdu entre la salle et le pass.\n\nConcrètement : moins de tickets perdus entre la salle et le pass.\n\nLe tutoriel pas-à-pas : https://drive.google.com/file/d/1PucAO7TE28El_TCLBrAOjct2VJS4mZu2/view\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "legende": "Ton service du samedi soir.\n\nTu prends la commande à table, elle part en cuisine dans la seconde. Pas de carnet, pas d'aller-retour, pas de ticket perdu entre la salle et le pass.\n\nConcrètement : moins de tickets perdus entre la salle et le pass.\n\nEn savoir plus : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
         "hashtags": [
           "restauration",
           "foodeatup",
@@ -225,10 +225,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "envoi direct cuisine",
           "service restaurant"
         ],
-        "cta": "Voir le tutoriel pas-à-pas"
+        "cta": "Découvrir FoodEatUp"
       },
       "youtube": {
-        "legende": "Ton service du samedi soir. Ça finit toujours par terre.\n\nTu prends la commande à table, elle part en cuisine dans la seconde. Pas de carnet, pas d'aller-retour, pas de ticket perdu entre la salle et le pass.\n\nConcrètement : moins de tickets perdus entre la salle et le pass.\n\n— — —\n\n📺 Le tutoriel pas-à-pas : https://drive.google.com/file/d/1PucAO7TE28El_TCLBrAOjct2VJS4mZu2/view\n\n📞 Une démo ? 06 14 18 92 25\n🌐 foodeatup.com\n\nSérie « Le Coup de Feu » — saison 1, épisode 2.\nModule Service · Chapitre : 3 - Envoi direct cuisine\n\nFoodEatUp est le logiciel qui réunit la caisse, le stock, les plannings, l'HACCP et le marketing d'un restaurant au même endroit.\n",
+        "legende": "Ton service du samedi soir. Ça finit toujours par terre.\n\nTu prends la commande à table, elle part en cuisine dans la seconde. Pas de carnet, pas d'aller-retour, pas de ticket perdu entre la salle et le pass.\n\nConcrètement : moins de tickets perdus entre la salle et le pass.\n\n— — —\n\n🔗 https://site.foodeatup.com/\n\n📞 Une démo ? 06 14 18 92 25\n🌐 foodeatup.com\n\nSérie « Le Coup de Feu » — saison 1, épisode 2.\nModule Service · Chapitre : 3 - Envoi direct cuisine\n\nFoodEatUp est le logiciel qui réunit la caisse, le stock, les plannings, l'HACCP et le marketing d'un restaurant au même endroit.\n",
         "hashtags": [
           "Shorts",
           "restaurant",
@@ -248,7 +248,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "envoi direct cuisine",
           "service restaurant"
         ],
-        "cta": "Le tutoriel pas-à-pas",
+        "cta": "Découvrir FoodEatUp",
         "titre": "Envoi direct cuisine — Service | FoodEatUp"
       }
     },
@@ -269,7 +269,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
   "EP003": {
     "publications": {
       "facebook": {
-        "legende": "Ta marge, en ce moment. Elle coule. On va la repêcher.\n\nChaque plat de ta carte a son coût matière calculé depuis tes ingrédients. Tu vois ta marge réelle, plat par plat, avant même de fixer ton prix.\n\n👉 Le tutoriel complet : https://drive.google.com/file/d/1yqhyPMj9uBq1awmqTwUhisuBJBpY5kt-/view\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "legende": "Ta marge, en ce moment. Elle coule. On va la repêcher.\n\nChaque plat de ta carte a son coût matière calculé depuis tes ingrédients. Tu vois ta marge réelle, plat par plat, avant même de fixer ton prix.\n\n👉 Tout FoodEatUp : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
         "hashtags": [
           "restaurant",
           "restaurateur",
@@ -286,10 +286,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "ma carte",
           "stockvision restaurant"
         ],
-        "cta": "Voir le tutoriel complet"
+        "cta": "Découvrir FoodEatUp"
       },
       "instagram": {
-        "legende": "Ta marge, en ce moment.\nElle coule. On va la repêcher.\n\nChaque plat de ta carte a son coût matière calculé depuis tes ingrédients. Tu vois ta marge réelle, plat par plat, avant même de fixer ton prix.\n\nLe pas-à-pas complet est dans notre Academy — lien en bio.\nUne démo ? 06 14 18 92 25",
+        "legende": "Ta marge, en ce moment.\nElle coule. On va la repêcher.\n\nChaque plat de ta carte a son coût matière calculé depuis tes ingrédients. Tu vois ta marge réelle, plat par plat, avant même de fixer ton prix.\n\nTout est expliqué sur notre site — lien en bio.\nUne démo ? 06 14 18 92 25",
         "hashtags": [
           "restaurant",
           "restaurateur",
@@ -312,7 +312,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "ma carte",
           "stockvision restaurant"
         ],
-        "cta": "Le pas-à-pas est en bio"
+        "cta": "Tout est en bio"
       },
       "tiktok": {
         "legende": "Ta marge, en ce moment. 😅\nElle coule. On va la repêcher.\n\nChaque plat de ta carte a son coût matière calculé depuis tes ingrédients.",
@@ -330,10 +330,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "ma carte",
           "stockvision restaurant"
         ],
-        "cta": "Tuto complet en bio"
+        "cta": "Lien en bio"
       },
       "linkedin": {
-        "legende": "Ta marge, en ce moment.\n\nChaque plat de ta carte a son coût matière calculé depuis tes ingrédients. Tu vois ta marge réelle, plat par plat, avant même de fixer ton prix.\n\nConcrètement : un stock juste et une marge qu'on voit avant de fixer le prix.\n\nLe tutoriel pas-à-pas : https://drive.google.com/file/d/1yqhyPMj9uBq1awmqTwUhisuBJBpY5kt-/view\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "legende": "Ta marge, en ce moment.\n\nChaque plat de ta carte a son coût matière calculé depuis tes ingrédients. Tu vois ta marge réelle, plat par plat, avant même de fixer ton prix.\n\nConcrètement : un stock juste et une marge qu'on voit avant de fixer le prix.\n\nEn savoir plus : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
         "hashtags": [
           "restauration",
           "foodeatup",
@@ -347,10 +347,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "ma carte",
           "stockvision restaurant"
         ],
-        "cta": "Voir le tutoriel pas-à-pas"
+        "cta": "Découvrir FoodEatUp"
       },
       "youtube": {
-        "legende": "Ta marge, en ce moment. Elle coule. On va la repêcher.\n\nChaque plat de ta carte a son coût matière calculé depuis tes ingrédients. Tu vois ta marge réelle, plat par plat, avant même de fixer ton prix.\n\nConcrètement : un stock juste et une marge qu'on voit avant de fixer le prix.\n\n— — —\n\n📺 Le tutoriel pas-à-pas : https://drive.google.com/file/d/1yqhyPMj9uBq1awmqTwUhisuBJBpY5kt-/view\n\n📞 Une démo ? 06 14 18 92 25\n🌐 foodeatup.com\n\nSérie « Le Coup de Feu » — saison 1, épisode 3.\nModule StockVision · Chapitre : 1 - Ma carte\n\nFoodEatUp est le logiciel qui réunit la caisse, le stock, les plannings, l'HACCP et le marketing d'un restaurant au même endroit.\n",
+        "legende": "Ta marge, en ce moment. Elle coule. On va la repêcher.\n\nChaque plat de ta carte a son coût matière calculé depuis tes ingrédients. Tu vois ta marge réelle, plat par plat, avant même de fixer ton prix.\n\nConcrètement : un stock juste et une marge qu'on voit avant de fixer le prix.\n\n— — —\n\n🔗 https://site.foodeatup.com/\n\n📞 Une démo ? 06 14 18 92 25\n🌐 foodeatup.com\n\nSérie « Le Coup de Feu » — saison 1, épisode 3.\nModule StockVision · Chapitre : 1 - Ma carte\n\nFoodEatUp est le logiciel qui réunit la caisse, le stock, les plannings, l'HACCP et le marketing d'un restaurant au même endroit.\n",
         "hashtags": [
           "Shorts",
           "restaurant",
@@ -371,7 +371,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "ma carte",
           "stockvision restaurant"
         ],
-        "cta": "Le tutoriel pas-à-pas",
+        "cta": "Découvrir FoodEatUp",
         "titre": "Ma carte — StockVision | FoodEatUp"
       }
     },
@@ -382,7 +382,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
   "EP004": {
     "publications": {
       "facebook": {
-        "legende": "Ton nouveau responsable de caisse. Il gère mieux que ton logiciel actuel.\n\nTa caisse se configure en quelques minutes : TPE, ticket, moyens de paiement. Elle est reliée à ta carte et à ta cuisine, pas posée à côté.\n\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "legende": "Ton nouveau responsable de caisse. Il gère mieux que ton logiciel actuel.\n\nTa caisse se configure en quelques minutes : TPE, ticket, moyens de paiement. Elle est reliée à ta carte et à ta cuisine, pas posée à côté.\n\n👉 Tout FoodEatUp : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
         "hashtags": [
           "restaurant",
           "restaurateur",
@@ -399,10 +399,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "configurer sa caisse",
           "caisse pos restaurant"
         ],
-        "cta": "Demander une démo"
+        "cta": "Découvrir FoodEatUp"
       },
       "instagram": {
-        "legende": "Ton nouveau responsable de caisse.\nIl gère mieux que ton logiciel actuel.\n\nTa caisse se configure en quelques minutes : TPE, ticket, moyens de paiement. Elle est reliée à ta carte et à ta cuisine, pas posée à côté.\n\nLe pas-à-pas complet est dans notre Academy — lien en bio.\nUne démo ? 06 14 18 92 25",
+        "legende": "Ton nouveau responsable de caisse.\nIl gère mieux que ton logiciel actuel.\n\nTa caisse se configure en quelques minutes : TPE, ticket, moyens de paiement. Elle est reliée à ta carte et à ta cuisine, pas posée à côté.\n\nTout est expliqué sur notre site — lien en bio.\nUne démo ? 06 14 18 92 25",
         "hashtags": [
           "restaurant",
           "restaurateur",
@@ -424,7 +424,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "configurer sa caisse",
           "caisse pos restaurant"
         ],
-        "cta": "Demander une démo"
+        "cta": "Tout est en bio"
       },
       "tiktok": {
         "legende": "Ton nouveau responsable de caisse. 😅\nIl gère mieux que ton logiciel actuel.\n\nTa caisse se configure en quelques minutes : TPE, ticket, moyens de paiement.",
@@ -442,10 +442,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "configurer sa caisse",
           "caisse pos restaurant"
         ],
-        "cta": "Demander une démo"
+        "cta": "Lien en bio"
       },
       "linkedin": {
-        "legende": "Ton nouveau responsable de caisse.\n\nTa caisse se configure en quelques minutes : TPE, ticket, moyens de paiement. Elle est reliée à ta carte et à ta cuisine, pas posée à côté.\n\nConcrètement : une caisse qui ferme juste, tous les soirs.\n\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "legende": "Ton nouveau responsable de caisse.\n\nTa caisse se configure en quelques minutes : TPE, ticket, moyens de paiement. Elle est reliée à ta carte et à ta cuisine, pas posée à côté.\n\nConcrètement : une caisse qui ferme juste, tous les soirs.\n\nEn savoir plus : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
         "hashtags": [
           "restauration",
           "foodeatup",
@@ -459,10 +459,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "configurer sa caisse",
           "caisse pos restaurant"
         ],
-        "cta": "Demander une démo"
+        "cta": "Découvrir FoodEatUp"
       },
       "youtube": {
-        "legende": "Ton nouveau responsable de caisse. Il gère mieux que ton logiciel actuel.\n\nTa caisse se configure en quelques minutes : TPE, ticket, moyens de paiement. Elle est reliée à ta carte et à ta cuisine, pas posée à côté.\n\nConcrètement : une caisse qui ferme juste, tous les soirs.\n\n— — —\n\n📞 Une démo ? 06 14 18 92 25\n🌐 foodeatup.com\n\nSérie « Le Coup de Feu » — saison 1, épisode 4.\nModule Caisse POS · Chapitre : 1 - Configurer sa caisse\n\nFoodEatUp est le logiciel qui réunit la caisse, le stock, les plannings, l'HACCP et le marketing d'un restaurant au même endroit.\n",
+        "legende": "Ton nouveau responsable de caisse. Il gère mieux que ton logiciel actuel.\n\nTa caisse se configure en quelques minutes : TPE, ticket, moyens de paiement. Elle est reliée à ta carte et à ta cuisine, pas posée à côté.\n\nConcrètement : une caisse qui ferme juste, tous les soirs.\n\n— — —\n\n🔗 https://site.foodeatup.com/\n\n📞 Une démo ? 06 14 18 92 25\n🌐 foodeatup.com\n\nSérie « Le Coup de Feu » — saison 1, épisode 4.\nModule Caisse POS · Chapitre : 1 - Configurer sa caisse\n\nFoodEatUp est le logiciel qui réunit la caisse, le stock, les plannings, l'HACCP et le marketing d'un restaurant au même endroit.\n",
         "hashtags": [
           "Shorts",
           "restaurant",
@@ -482,7 +482,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "configurer sa caisse",
           "caisse pos restaurant"
         ],
-        "cta": "Demander une démo",
+        "cta": "Découvrir FoodEatUp",
         "titre": "Configurer sa caisse — Caisse POS | FoodEatUp"
       }
     },
@@ -493,7 +493,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
   "EP005": {
     "publications": {
       "facebook": {
-        "legende": "Trois logiciels. Deux mains. Un seul outil, ça change tout.\n\nUn seul paramétrage : ta carte, tes zones, tes tables, ta TVA. Tout le reste s'appuie dessus. Tu ne ressaisis jamais deux fois la même information.\n\n👉 Le tutoriel complet : https://drive.google.com/file/d/1hp7mZd-tQliPUemhyIKHWMl9xUgKHwoq/view\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "legende": "Trois logiciels. Deux mains. Un seul outil, ça change tout.\n\nUn seul paramétrage : ta carte, tes zones, tes tables, ta TVA. Tout le reste s'appuie dessus. Tu ne ressaisis jamais deux fois la même information.\n\n👉 Tout FoodEatUp : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
         "hashtags": [
           "restaurant",
           "restaurateur",
@@ -509,10 +509,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "vue d'ensemble",
           "configuration restaurant"
         ],
-        "cta": "Voir le tutoriel complet"
+        "cta": "Découvrir FoodEatUp"
       },
       "instagram": {
-        "legende": "Trois logiciels. Deux mains.\nUn seul outil, ça change tout.\n\nUn seul paramétrage : ta carte, tes zones, tes tables, ta TVA. Tout le reste s'appuie dessus. Tu ne ressaisis jamais deux fois la même information.\n\nLe pas-à-pas complet est dans notre Academy — lien en bio.\nUne démo ? 06 14 18 92 25",
+        "legende": "Trois logiciels. Deux mains.\nUn seul outil, ça change tout.\n\nUn seul paramétrage : ta carte, tes zones, tes tables, ta TVA. Tout le reste s'appuie dessus. Tu ne ressaisis jamais deux fois la même information.\n\nTout est expliqué sur notre site — lien en bio.\nUne démo ? 06 14 18 92 25",
         "hashtags": [
           "restaurant",
           "restaurateur",
@@ -532,7 +532,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "vue d'ensemble",
           "configuration restaurant"
         ],
-        "cta": "Le pas-à-pas est en bio"
+        "cta": "Tout est en bio"
       },
       "tiktok": {
         "legende": "Trois logiciels. Deux mains. 😅\nUn seul outil, ça change tout.\n\nUn seul paramétrage : ta carte, tes zones, tes tables, ta TVA.",
@@ -549,10 +549,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "vue d'ensemble",
           "configuration restaurant"
         ],
-        "cta": "Tuto complet en bio"
+        "cta": "Lien en bio"
       },
       "linkedin": {
-        "legende": "Trois logiciels. Deux mains.\n\nUn seul paramétrage : ta carte, tes zones, tes tables, ta TVA. Tout le reste s'appuie dessus. Tu ne ressaisis jamais deux fois la même information.\n\nConcrètement : une seule saisie qui alimente tout le reste.\n\nLe tutoriel pas-à-pas : https://drive.google.com/file/d/1hp7mZd-tQliPUemhyIKHWMl9xUgKHwoq/view\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "legende": "Trois logiciels. Deux mains.\n\nUn seul paramétrage : ta carte, tes zones, tes tables, ta TVA. Tout le reste s'appuie dessus. Tu ne ressaisis jamais deux fois la même information.\n\nConcrètement : une seule saisie qui alimente tout le reste.\n\nEn savoir plus : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
         "hashtags": [
           "restauration",
           "foodeatup",
@@ -565,10 +565,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "vue d'ensemble",
           "configuration restaurant"
         ],
-        "cta": "Voir le tutoriel pas-à-pas"
+        "cta": "Découvrir FoodEatUp"
       },
       "youtube": {
-        "legende": "Trois logiciels. Deux mains. Un seul outil, ça change tout.\n\nUn seul paramétrage : ta carte, tes zones, tes tables, ta TVA. Tout le reste s'appuie dessus. Tu ne ressaisis jamais deux fois la même information.\n\nConcrètement : une seule saisie qui alimente tout le reste.\n\n— — —\n\n📺 Le tutoriel pas-à-pas : https://drive.google.com/file/d/1hp7mZd-tQliPUemhyIKHWMl9xUgKHwoq/view\n\n📞 Une démo ? 06 14 18 92 25\n🌐 foodeatup.com\n\nSérie « Le Coup de Feu » — saison 1, épisode 5.\nModule Configuration · Chapitre : vue d'ensemble\n\nFoodEatUp est le logiciel qui réunit la caisse, le stock, les plannings, l'HACCP et le marketing d'un restaurant au même endroit.\n",
+        "legende": "Trois logiciels. Deux mains. Un seul outil, ça change tout.\n\nUn seul paramétrage : ta carte, tes zones, tes tables, ta TVA. Tout le reste s'appuie dessus. Tu ne ressaisis jamais deux fois la même information.\n\nConcrètement : une seule saisie qui alimente tout le reste.\n\n— — —\n\n🔗 https://site.foodeatup.com/\n\n📞 Une démo ? 06 14 18 92 25\n🌐 foodeatup.com\n\nSérie « Le Coup de Feu » — saison 1, épisode 5.\nModule Configuration · Chapitre : vue d'ensemble\n\nFoodEatUp est le logiciel qui réunit la caisse, le stock, les plannings, l'HACCP et le marketing d'un restaurant au même endroit.\n",
         "hashtags": [
           "Shorts",
           "restaurant",
@@ -586,7 +586,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "vue d'ensemble",
           "configuration restaurant"
         ],
-        "cta": "Le tutoriel pas-à-pas",
+        "cta": "Découvrir FoodEatUp",
         "titre": "Vue d'ensemble — Configuration | FoodEatUp"
       }
     },
@@ -597,7 +597,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
   "EP006": {
     "publications": {
       "facebook": {
-        "legende": "Ta pizza part plus vite que ton stock. Enfin… c'était avant.\n\nTu envoies un plat, le stock bouge tout seul. Chaque sortie est tracée, avec la quantité et l'heure. Tu sais ce qu'il te reste sans compter les cartons.\n\n👉 Le tutoriel complet : https://drive.google.com/file/d/1xxxr8zsy8ZvK7NCizf1F9q8W3u48Npgt/view\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "legende": "Ta pizza part plus vite que ton stock. Enfin… c'était avant.\n\nTu envoies un plat, le stock bouge tout seul. Chaque sortie est tracée, avec la quantité et l'heure. Tu sais ce qu'il te reste sans compter les cartons.\n\n👉 Tout FoodEatUp : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
         "hashtags": [
           "restaurant",
           "restaurateur",
@@ -614,10 +614,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "ajouter et modifier un mouvement",
           "stockvision restaurant"
         ],
-        "cta": "Voir le tutoriel complet"
+        "cta": "Découvrir FoodEatUp"
       },
       "instagram": {
-        "legende": "Ta pizza part plus vite que ton stock.\nEnfin… c'était avant.\n\nTu envoies un plat, le stock bouge tout seul. Chaque sortie est tracée, avec la quantité et l'heure. Tu sais ce qu'il te reste sans compter les cartons.\n\nLe pas-à-pas complet est dans notre Academy — lien en bio.\nUne démo ? 06 14 18 92 25",
+        "legende": "Ta pizza part plus vite que ton stock.\nEnfin… c'était avant.\n\nTu envoies un plat, le stock bouge tout seul. Chaque sortie est tracée, avec la quantité et l'heure. Tu sais ce qu'il te reste sans compter les cartons.\n\nTout est expliqué sur notre site — lien en bio.\nUne démo ? 06 14 18 92 25",
         "hashtags": [
           "restaurant",
           "restaurateur",
@@ -640,7 +640,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "ajouter et modifier un mouvement",
           "stockvision restaurant"
         ],
-        "cta": "Le pas-à-pas est en bio"
+        "cta": "Tout est en bio"
       },
       "tiktok": {
         "legende": "Ta pizza part plus vite que ton stock. 😅\nEnfin… c'était avant.\n\nTu envoies un plat, le stock bouge tout seul.",
@@ -658,10 +658,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "ajouter et modifier un mouvement",
           "stockvision restaurant"
         ],
-        "cta": "Tuto complet en bio"
+        "cta": "Lien en bio"
       },
       "linkedin": {
-        "legende": "Ta pizza part plus vite que ton stock.\n\nTu envoies un plat, le stock bouge tout seul. Chaque sortie est tracée, avec la quantité et l'heure. Tu sais ce qu'il te reste sans compter les cartons.\n\nConcrètement : un stock juste et une marge qu'on voit avant de fixer le prix.\n\nLe tutoriel pas-à-pas : https://drive.google.com/file/d/1xxxr8zsy8ZvK7NCizf1F9q8W3u48Npgt/view\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "legende": "Ta pizza part plus vite que ton stock.\n\nTu envoies un plat, le stock bouge tout seul. Chaque sortie est tracée, avec la quantité et l'heure. Tu sais ce qu'il te reste sans compter les cartons.\n\nConcrètement : un stock juste et une marge qu'on voit avant de fixer le prix.\n\nEn savoir plus : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
         "hashtags": [
           "restauration",
           "foodeatup",
@@ -675,10 +675,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "ajouter et modifier un mouvement",
           "stockvision restaurant"
         ],
-        "cta": "Voir le tutoriel pas-à-pas"
+        "cta": "Découvrir FoodEatUp"
       },
       "youtube": {
-        "legende": "Ta pizza part plus vite que ton stock. Enfin… c'était avant.\n\nTu envoies un plat, le stock bouge tout seul. Chaque sortie est tracée, avec la quantité et l'heure. Tu sais ce qu'il te reste sans compter les cartons.\n\nConcrètement : un stock juste et une marge qu'on voit avant de fixer le prix.\n\n— — —\n\n📺 Le tutoriel pas-à-pas : https://drive.google.com/file/d/1xxxr8zsy8ZvK7NCizf1F9q8W3u48Npgt/view\n\n📞 Une démo ? 06 14 18 92 25\n🌐 foodeatup.com\n\nSérie « Le Coup de Feu » — saison 1, épisode 6.\nModule StockVision · Chapitre : 17 - Ajouter et modifier un mouvement\n\nFoodEatUp est le logiciel qui réunit la caisse, le stock, les plannings, l'HACCP et le marketing d'un restaurant au même endroit.\n",
+        "legende": "Ta pizza part plus vite que ton stock. Enfin… c'était avant.\n\nTu envoies un plat, le stock bouge tout seul. Chaque sortie est tracée, avec la quantité et l'heure. Tu sais ce qu'il te reste sans compter les cartons.\n\nConcrètement : un stock juste et une marge qu'on voit avant de fixer le prix.\n\n— — —\n\n🔗 https://site.foodeatup.com/\n\n📞 Une démo ? 06 14 18 92 25\n🌐 foodeatup.com\n\nSérie « Le Coup de Feu » — saison 1, épisode 6.\nModule StockVision · Chapitre : 17 - Ajouter et modifier un mouvement\n\nFoodEatUp est le logiciel qui réunit la caisse, le stock, les plannings, l'HACCP et le marketing d'un restaurant au même endroit.\n",
         "hashtags": [
           "Shorts",
           "restaurant",
@@ -699,7 +699,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "ajouter et modifier un mouvement",
           "stockvision restaurant"
         ],
-        "cta": "Le tutoriel pas-à-pas",
+        "cta": "Découvrir FoodEatUp",
         "titre": "Ajouter et modifier un mouvement — StockVision | FoodEatUp"
       }
     },
@@ -722,7 +722,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
   "EP007": {
     "publications": {
       "facebook": {
-        "legende": "Le seul avis client qui compte. Les quatre cents autres, on s'en occupe.\n\nTes avis Google remontent ici. Tu réponds depuis FoodEatUp, l'IA te propose une réponse dans ton ton, tu valides. Le client voit que tu l'as lu.\n\n👉 Le tutoriel complet : https://drive.google.com/file/d/1CMKvqIypwbr8KHTj0dCs_w06sjkaQKV4/view\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "legende": "Le seul avis client qui compte. Les quatre cents autres, on s'en occupe.\n\nTes avis Google remontent ici. Tu réponds depuis FoodEatUp, l'IA te propose une réponse dans ton ton, tu valides. Le client voit que tu l'as lu.\n\n👉 Tout FoodEatUp : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
         "hashtags": [
           "restaurant",
           "restaurateur",
@@ -738,10 +738,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "fidélisation restaurant",
           "répondre aux avis"
         ],
-        "cta": "Voir le tutoriel complet"
+        "cta": "Découvrir FoodEatUp"
       },
       "instagram": {
-        "legende": "Le seul avis client qui compte.\nLes quatre cents autres, on s'en occupe.\n\nTes avis Google remontent ici. Tu réponds depuis FoodEatUp, l'IA te propose une réponse dans ton ton, tu valides. Le client voit que tu l'as lu.\n\nLe pas-à-pas complet est dans notre Academy — lien en bio.\nUne démo ? 06 14 18 92 25",
+        "legende": "Le seul avis client qui compte.\nLes quatre cents autres, on s'en occupe.\n\nTes avis Google remontent ici. Tu réponds depuis FoodEatUp, l'IA te propose une réponse dans ton ton, tu valides. Le client voit que tu l'as lu.\n\nTout est expliqué sur notre site — lien en bio.\nUne démo ? 06 14 18 92 25",
         "hashtags": [
           "restaurant",
           "restaurateur",
@@ -762,7 +762,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "fidélisation restaurant",
           "répondre aux avis"
         ],
-        "cta": "Le pas-à-pas est en bio"
+        "cta": "Tout est en bio"
       },
       "tiktok": {
         "legende": "Le seul avis client qui compte. 😅\nLes quatre cents autres, on s'en occupe.\n\nTes avis Google remontent ici.",
@@ -779,10 +779,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "fidélisation restaurant",
           "répondre aux avis"
         ],
-        "cta": "Tuto complet en bio"
+        "cta": "Lien en bio"
       },
       "linkedin": {
-        "legende": "Le seul avis client qui compte.\n\nTes avis Google remontent ici. Tu réponds depuis FoodEatUp, l'IA te propose une réponse dans ton ton, tu valides. Le client voit que tu l'as lu.\n\nConcrètement : une salle qui se remplit avant l'ouverture.\n\nLe tutoriel pas-à-pas : https://drive.google.com/file/d/1CMKvqIypwbr8KHTj0dCs_w06sjkaQKV4/view\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "legende": "Le seul avis client qui compte.\n\nTes avis Google remontent ici. Tu réponds depuis FoodEatUp, l'IA te propose une réponse dans ton ton, tu valides. Le client voit que tu l'as lu.\n\nConcrètement : une salle qui se remplit avant l'ouverture.\n\nEn savoir plus : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
         "hashtags": [
           "restauration",
           "foodeatup",
@@ -795,10 +795,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "fidélisation restaurant",
           "répondre aux avis"
         ],
-        "cta": "Voir le tutoriel pas-à-pas"
+        "cta": "Découvrir FoodEatUp"
       },
       "youtube": {
-        "legende": "Le seul avis client qui compte. Les quatre cents autres, on s'en occupe.\n\nTes avis Google remontent ici. Tu réponds depuis FoodEatUp, l'IA te propose une réponse dans ton ton, tu valides. Le client voit que tu l'as lu.\n\nConcrètement : une salle qui se remplit avant l'ouverture.\n\n— — —\n\n📺 Le tutoriel pas-à-pas : https://drive.google.com/file/d/1CMKvqIypwbr8KHTj0dCs_w06sjkaQKV4/view\n\n📞 Une démo ? 06 14 18 92 25\n🌐 foodeatup.com\n\nSérie « Le Coup de Feu » — saison 1, épisode 7.\nModule Marketing · Chapitre : 3 - Répondre aux avis\n\nFoodEatUp est le logiciel qui réunit la caisse, le stock, les plannings, l'HACCP et le marketing d'un restaurant au même endroit.\n",
+        "legende": "Le seul avis client qui compte. Les quatre cents autres, on s'en occupe.\n\nTes avis Google remontent ici. Tu réponds depuis FoodEatUp, l'IA te propose une réponse dans ton ton, tu valides. Le client voit que tu l'as lu.\n\nConcrètement : une salle qui se remplit avant l'ouverture.\n\n— — —\n\n🔗 https://site.foodeatup.com/\n\n📞 Une démo ? 06 14 18 92 25\n🌐 foodeatup.com\n\nSérie « Le Coup de Feu » — saison 1, épisode 7.\nModule Marketing · Chapitre : 3 - Répondre aux avis\n\nFoodEatUp est le logiciel qui réunit la caisse, le stock, les plannings, l'HACCP et le marketing d'un restaurant au même endroit.\n",
         "hashtags": [
           "Shorts",
           "restaurant",
@@ -817,7 +817,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "fidélisation restaurant",
           "répondre aux avis"
         ],
-        "cta": "Le tutoriel pas-à-pas",
+        "cta": "Découvrir FoodEatUp",
         "titre": "Répondre aux avis — Marketing | FoodEatUp"
       }
     },
@@ -837,7 +837,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
   "EP008": {
     "publications": {
       "facebook": {
-        "legende": "Fin de mois. Encore. Et si la compta se faisait toute seule ?\n\nChaque commande génère sa facture. Tu retrouves le facturé, l'encaissé et les impayés dans le même écran. La fin de mois devient une lecture, pas une reconstitution.\n\n👉 Le tutoriel complet : https://drive.google.com/file/d/1bN_o6_HYz9Za1kGyIst6INWrJJz9MagE/view\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "legende": "Fin de mois. Encore. Et si la compta se faisait toute seule ?\n\nChaque commande génère sa facture. Tu retrouves le facturé, l'encaissé et les impayés dans le même écran. La fin de mois devient une lecture, pas une reconstitution.\n\n👉 Tout FoodEatUp : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
         "hashtags": [
           "restaurant",
           "restaurateur",
@@ -853,10 +853,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "rentabilité",
           "facturation"
         ],
-        "cta": "Voir le tutoriel complet"
+        "cta": "Découvrir FoodEatUp"
       },
       "instagram": {
-        "legende": "Fin de mois. Encore.\nEt si la compta se faisait toute seule ?\n\nChaque commande génère sa facture. Tu retrouves le facturé, l'encaissé et les impayés dans le même écran. La fin de mois devient une lecture, pas une reconstitution.\n\nLe pas-à-pas complet est dans notre Academy — lien en bio.\nUne démo ? 06 14 18 92 25",
+        "legende": "Fin de mois. Encore.\nEt si la compta se faisait toute seule ?\n\nChaque commande génère sa facture. Tu retrouves le facturé, l'encaissé et les impayés dans le même écran. La fin de mois devient une lecture, pas une reconstitution.\n\nTout est expliqué sur notre site — lien en bio.\nUne démo ? 06 14 18 92 25",
         "hashtags": [
           "restaurant",
           "restaurateur",
@@ -877,7 +877,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "rentabilité",
           "facturation"
         ],
-        "cta": "Le pas-à-pas est en bio"
+        "cta": "Tout est en bio"
       },
       "tiktok": {
         "legende": "Fin de mois. Encore. 😅\nEt si la compta se faisait toute seule ?\n\nChaque commande génère sa facture.",
@@ -894,10 +894,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "rentabilité",
           "facturation"
         ],
-        "cta": "Tuto complet en bio"
+        "cta": "Lien en bio"
       },
       "linkedin": {
-        "legende": "Fin de mois. Encore.\n\nChaque commande génère sa facture. Tu retrouves le facturé, l'encaissé et les impayés dans le même écran. La fin de mois devient une lecture, pas une reconstitution.\n\nConcrètement : des chiffres à jour sans ressaisir une ligne.\n\nLe tutoriel pas-à-pas : https://drive.google.com/file/d/1bN_o6_HYz9Za1kGyIst6INWrJJz9MagE/view\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "legende": "Fin de mois. Encore.\n\nChaque commande génère sa facture. Tu retrouves le facturé, l'encaissé et les impayés dans le même écran. La fin de mois devient une lecture, pas une reconstitution.\n\nConcrètement : des chiffres à jour sans ressaisir une ligne.\n\nEn savoir plus : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
         "hashtags": [
           "restauration",
           "foodeatup",
@@ -910,10 +910,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "rentabilité",
           "facturation"
         ],
-        "cta": "Voir le tutoriel pas-à-pas"
+        "cta": "Découvrir FoodEatUp"
       },
       "youtube": {
-        "legende": "Fin de mois. Encore. Et si la compta se faisait toute seule ?\n\nChaque commande génère sa facture. Tu retrouves le facturé, l'encaissé et les impayés dans le même écran. La fin de mois devient une lecture, pas une reconstitution.\n\nConcrètement : des chiffres à jour sans ressaisir une ligne.\n\n— — —\n\n📺 Le tutoriel pas-à-pas : https://drive.google.com/file/d/1bN_o6_HYz9Za1kGyIst6INWrJJz9MagE/view\n\n📞 Une démo ? 06 14 18 92 25\n🌐 foodeatup.com\n\nSérie « Le Coup de Feu » — saison 1, épisode 8.\nModule Comptabilité · Chapitre : facturation\n\nFoodEatUp est le logiciel qui réunit la caisse, le stock, les plannings, l'HACCP et le marketing d'un restaurant au même endroit.\n",
+        "legende": "Fin de mois. Encore. Et si la compta se faisait toute seule ?\n\nChaque commande génère sa facture. Tu retrouves le facturé, l'encaissé et les impayés dans le même écran. La fin de mois devient une lecture, pas une reconstitution.\n\nConcrètement : des chiffres à jour sans ressaisir une ligne.\n\n— — —\n\n🔗 https://site.foodeatup.com/\n\n📞 Une démo ? 06 14 18 92 25\n🌐 foodeatup.com\n\nSérie « Le Coup de Feu » — saison 1, épisode 8.\nModule Comptabilité · Chapitre : facturation\n\nFoodEatUp est le logiciel qui réunit la caisse, le stock, les plannings, l'HACCP et le marketing d'un restaurant au même endroit.\n",
         "hashtags": [
           "Shorts",
           "restaurant",
@@ -932,7 +932,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "rentabilité",
           "facturation"
         ],
-        "cta": "Le tutoriel pas-à-pas",
+        "cta": "Découvrir FoodEatUp",
         "titre": "Facturation — Comptabilité | FoodEatUp"
       }
     },
@@ -955,7 +955,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
   "EP009": {
     "publications": {
       "facebook": {
-        "legende": "Il y a toujours quelqu'un qui prend ta marge. Ton abonnement logiciel, par exemple.\n\nÀ chaque clôture, l'écart entre le théorique et le compté s'affiche. Tu vois quel service dérape et de combien. Ce qui se mesure s'arrête.\n\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "legende": "Il y a toujours quelqu'un qui prend ta marge. Ton abonnement logiciel, par exemple.\n\nÀ chaque clôture, l'écart entre le théorique et le compté s'affiche. Tu vois quel service dérape et de combien. Ce qui se mesure s'arrête.\n\n👉 Tout FoodEatUp : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
         "hashtags": [
           "restaurant",
           "restaurateur",
@@ -972,10 +972,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "suivre les écarts de caisse",
           "caisse pos restaurant"
         ],
-        "cta": "Demander une démo"
+        "cta": "Découvrir FoodEatUp"
       },
       "instagram": {
-        "legende": "Il y a toujours quelqu'un qui prend ta marge.\nTon abonnement logiciel, par exemple.\n\nÀ chaque clôture, l'écart entre le théorique et le compté s'affiche. Tu vois quel service dérape et de combien. Ce qui se mesure s'arrête.\n\nLe pas-à-pas complet est dans notre Academy — lien en bio.\nUne démo ? 06 14 18 92 25",
+        "legende": "Il y a toujours quelqu'un qui prend ta marge.\nTon abonnement logiciel, par exemple.\n\nÀ chaque clôture, l'écart entre le théorique et le compté s'affiche. Tu vois quel service dérape et de combien. Ce qui se mesure s'arrête.\n\nTout est expliqué sur notre site — lien en bio.\nUne démo ? 06 14 18 92 25",
         "hashtags": [
           "restaurant",
           "restaurateur",
@@ -997,7 +997,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "suivre les écarts de caisse",
           "caisse pos restaurant"
         ],
-        "cta": "Demander une démo"
+        "cta": "Tout est en bio"
       },
       "tiktok": {
         "legende": "Il y a toujours quelqu'un qui prend ta marge. 😅\nTon abonnement logiciel, par exemple.\n\nÀ chaque clôture, l'écart entre le théorique et le compté s'affiche.",
@@ -1015,10 +1015,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "suivre les écarts de caisse",
           "caisse pos restaurant"
         ],
-        "cta": "Demander une démo"
+        "cta": "Lien en bio"
       },
       "linkedin": {
-        "legende": "Il y a toujours quelqu'un qui prend ta marge.\n\nÀ chaque clôture, l'écart entre le théorique et le compté s'affiche. Tu vois quel service dérape et de combien. Ce qui se mesure s'arrête.\n\nConcrètement : une caisse qui ferme juste, tous les soirs.\n\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "legende": "Il y a toujours quelqu'un qui prend ta marge.\n\nÀ chaque clôture, l'écart entre le théorique et le compté s'affiche. Tu vois quel service dérape et de combien. Ce qui se mesure s'arrête.\n\nConcrètement : une caisse qui ferme juste, tous les soirs.\n\nEn savoir plus : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
         "hashtags": [
           "restauration",
           "foodeatup",
@@ -1032,10 +1032,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "suivre les écarts de caisse",
           "caisse pos restaurant"
         ],
-        "cta": "Demander une démo"
+        "cta": "Découvrir FoodEatUp"
       },
       "youtube": {
-        "legende": "Il y a toujours quelqu'un qui prend ta marge. Ton abonnement logiciel, par exemple.\n\nÀ chaque clôture, l'écart entre le théorique et le compté s'affiche. Tu vois quel service dérape et de combien. Ce qui se mesure s'arrête.\n\nConcrètement : une caisse qui ferme juste, tous les soirs.\n\n— — —\n\n📞 Une démo ? 06 14 18 92 25\n🌐 foodeatup.com\n\nSérie « Le Coup de Feu » — saison 1, épisode 9.\nModule Caisse POS · Chapitre : 7 - Suivre les écarts de caisse\n\nFoodEatUp est le logiciel qui réunit la caisse, le stock, les plannings, l'HACCP et le marketing d'un restaurant au même endroit.\n",
+        "legende": "Il y a toujours quelqu'un qui prend ta marge. Ton abonnement logiciel, par exemple.\n\nÀ chaque clôture, l'écart entre le théorique et le compté s'affiche. Tu vois quel service dérape et de combien. Ce qui se mesure s'arrête.\n\nConcrètement : une caisse qui ferme juste, tous les soirs.\n\n— — —\n\n🔗 https://site.foodeatup.com/\n\n📞 Une démo ? 06 14 18 92 25\n🌐 foodeatup.com\n\nSérie « Le Coup de Feu » — saison 1, épisode 9.\nModule Caisse POS · Chapitre : 7 - Suivre les écarts de caisse\n\nFoodEatUp est le logiciel qui réunit la caisse, le stock, les plannings, l'HACCP et le marketing d'un restaurant au même endroit.\n",
         "hashtags": [
           "Shorts",
           "restaurant",
@@ -1055,7 +1055,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "suivre les écarts de caisse",
           "caisse pos restaurant"
         ],
-        "cta": "Demander une démo",
+        "cta": "Découvrir FoodEatUp",
         "titre": "Suivre les écarts de caisse — Caisse POS | FoodEatUp"
       }
     },
@@ -1066,7 +1066,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
   "EP010": {
     "publications": {
       "facebook": {
-        "legende": "Toi, devant ta facture logicielle. Mille euros par mois. Pour dix outils qui ne se parlent pas.\n\nUn écran, le matin : ton chiffre d'affaires prévu, ta fréquentation, tes points de tension. C'est ton point du jour, sans ouvrir dix onglets.\n\n👉 Le tutoriel complet : https://drive.google.com/file/d/1MWkfZ-OZ_qv2z6QD9VPwabO5XnGd5UaB/view\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "legende": "Toi, devant ta facture logicielle. Mille euros par mois. Pour dix outils qui ne se parlent pas.\n\nUn écran, le matin : ton chiffre d'affaires prévu, ta fréquentation, tes points de tension. C'est ton point du jour, sans ouvrir dix onglets.\n\n👉 Tout FoodEatUp : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
         "hashtags": [
           "restaurant",
           "restaurateur",
@@ -1083,10 +1083,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "lire ses prévisions",
           "predibot restaurant"
         ],
-        "cta": "Voir le tutoriel complet"
+        "cta": "Découvrir FoodEatUp"
       },
       "instagram": {
-        "legende": "Toi, devant ta facture logicielle.\nMille euros par mois. Pour dix outils qui ne se parlent pas.\n\nUn écran, le matin : ton chiffre d'affaires prévu, ta fréquentation, tes points de tension. C'est ton point du jour, sans ouvrir dix onglets.\n\nLe pas-à-pas complet est dans notre Academy — lien en bio.\nUne démo ? 06 14 18 92 25",
+        "legende": "Toi, devant ta facture logicielle.\nMille euros par mois. Pour dix outils qui ne se parlent pas.\n\nUn écran, le matin : ton chiffre d'affaires prévu, ta fréquentation, tes points de tension. C'est ton point du jour, sans ouvrir dix onglets.\n\nTout est expliqué sur notre site — lien en bio.\nUne démo ? 06 14 18 92 25",
         "hashtags": [
           "restaurant",
           "restaurateur",
@@ -1108,7 +1108,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "lire ses prévisions",
           "predibot restaurant"
         ],
-        "cta": "Le pas-à-pas est en bio"
+        "cta": "Tout est en bio"
       },
       "tiktok": {
         "legende": "Toi, devant ta facture logicielle. 😅\nMille euros par mois. Pour dix outils qui ne se parlent pas.\n\nUn écran, le matin : ton chiffre d'affaires prévu, ta fréquentation, tes points de tension.",
@@ -1126,10 +1126,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "lire ses prévisions",
           "predibot restaurant"
         ],
-        "cta": "Tuto complet en bio"
+        "cta": "Lien en bio"
       },
       "linkedin": {
-        "legende": "Toi, devant ta facture logicielle.\n\nUn écran, le matin : ton chiffre d'affaires prévu, ta fréquentation, tes points de tension. C'est ton point du jour, sans ouvrir dix onglets.\n\nConcrètement : voir venir la journée au lieu de la subir.\n\nLe tutoriel pas-à-pas : https://drive.google.com/file/d/1MWkfZ-OZ_qv2z6QD9VPwabO5XnGd5UaB/view\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "legende": "Toi, devant ta facture logicielle.\n\nUn écran, le matin : ton chiffre d'affaires prévu, ta fréquentation, tes points de tension. C'est ton point du jour, sans ouvrir dix onglets.\n\nConcrètement : voir venir la journée au lieu de la subir.\n\nEn savoir plus : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
         "hashtags": [
           "restauration",
           "foodeatup",
@@ -1143,10 +1143,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "lire ses prévisions",
           "predibot restaurant"
         ],
-        "cta": "Voir le tutoriel pas-à-pas"
+        "cta": "Découvrir FoodEatUp"
       },
       "youtube": {
-        "legende": "Toi, devant ta facture logicielle. Mille euros par mois. Pour dix outils qui ne se parlent pas.\n\nUn écran, le matin : ton chiffre d'affaires prévu, ta fréquentation, tes points de tension. C'est ton point du jour, sans ouvrir dix onglets.\n\nConcrètement : voir venir la journée au lieu de la subir.\n\n— — —\n\n📺 Le tutoriel pas-à-pas : https://drive.google.com/file/d/1MWkfZ-OZ_qv2z6QD9VPwabO5XnGd5UaB/view\n\n📞 Une démo ? 06 14 18 92 25\n🌐 foodeatup.com\n\nSérie « Le Coup de Feu » — saison 1, épisode 10.\nModule PrediBot · Chapitre : 1 - Lire ses prévisions\n\nFoodEatUp est le logiciel qui réunit la caisse, le stock, les plannings, l'HACCP et le marketing d'un restaurant au même endroit.\n",
+        "legende": "Toi, devant ta facture logicielle. Mille euros par mois. Pour dix outils qui ne se parlent pas.\n\nUn écran, le matin : ton chiffre d'affaires prévu, ta fréquentation, tes points de tension. C'est ton point du jour, sans ouvrir dix onglets.\n\nConcrètement : voir venir la journée au lieu de la subir.\n\n— — —\n\n🔗 https://site.foodeatup.com/\n\n📞 Une démo ? 06 14 18 92 25\n🌐 foodeatup.com\n\nSérie « Le Coup de Feu » — saison 1, épisode 10.\nModule PrediBot · Chapitre : 1 - Lire ses prévisions\n\nFoodEatUp est le logiciel qui réunit la caisse, le stock, les plannings, l'HACCP et le marketing d'un restaurant au même endroit.\n",
         "hashtags": [
           "Shorts",
           "restaurant",
@@ -1166,7 +1166,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "lire ses prévisions",
           "predibot restaurant"
         ],
-        "cta": "Le tutoriel pas-à-pas",
+        "cta": "Découvrir FoodEatUp",
         "titre": "Lire ses prévisions — PrediBot | FoodEatUp"
       }
     },
@@ -1186,7 +1186,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
   "EP011": {
     "publications": {
       "facebook": {
-        "legende": "Ta livraison sans intégration. Avec, tout arrive à bon port.\n\nTu connectes HubRise une fois. Tes plateformes de livraison envoient leurs commandes directement dans FoodEatUp. Plus de tablette à surveiller dans un coin.\n\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "legende": "Ta livraison sans intégration. Avec, tout arrive à bon port.\n\nTu connectes HubRise une fois. Tes plateformes de livraison envoient leurs commandes directement dans FoodEatUp. Plus de tablette à surveiller dans un coin.\n\n👉 Tout FoodEatUp : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
         "hashtags": [
           "restaurant",
           "restaurateur",
@@ -1203,10 +1203,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "connecter son hubrise",
           "hubrise restaurant"
         ],
-        "cta": "Demander une démo"
+        "cta": "Découvrir FoodEatUp"
       },
       "instagram": {
-        "legende": "Ta livraison sans intégration.\nAvec, tout arrive à bon port.\n\nTu connectes HubRise une fois. Tes plateformes de livraison envoient leurs commandes directement dans FoodEatUp. Plus de tablette à surveiller dans un coin.\n\nLe pas-à-pas complet est dans notre Academy — lien en bio.\nUne démo ? 06 14 18 92 25",
+        "legende": "Ta livraison sans intégration.\nAvec, tout arrive à bon port.\n\nTu connectes HubRise une fois. Tes plateformes de livraison envoient leurs commandes directement dans FoodEatUp. Plus de tablette à surveiller dans un coin.\n\nTout est expliqué sur notre site — lien en bio.\nUne démo ? 06 14 18 92 25",
         "hashtags": [
           "restaurant",
           "restaurateur",
@@ -1228,7 +1228,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "connecter son hubrise",
           "hubrise restaurant"
         ],
-        "cta": "Demander une démo"
+        "cta": "Tout est en bio"
       },
       "tiktok": {
         "legende": "Ta livraison sans intégration. 😅\nAvec, tout arrive à bon port.\n\nTu connectes HubRise une fois.",
@@ -1246,10 +1246,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "connecter son hubrise",
           "hubrise restaurant"
         ],
-        "cta": "Demander une démo"
+        "cta": "Lien en bio"
       },
       "linkedin": {
-        "legende": "Ta livraison sans intégration.\n\nTu connectes HubRise une fois. Tes plateformes de livraison envoient leurs commandes directement dans FoodEatUp. Plus de tablette à surveiller dans un coin.\n\nConcrètement : plus de tablette à surveiller dans un coin.\n\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "legende": "Ta livraison sans intégration.\n\nTu connectes HubRise une fois. Tes plateformes de livraison envoient leurs commandes directement dans FoodEatUp. Plus de tablette à surveiller dans un coin.\n\nConcrètement : plus de tablette à surveiller dans un coin.\n\nEn savoir plus : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
         "hashtags": [
           "restauration",
           "foodeatup",
@@ -1263,10 +1263,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "connecter son hubrise",
           "hubrise restaurant"
         ],
-        "cta": "Demander une démo"
+        "cta": "Découvrir FoodEatUp"
       },
       "youtube": {
-        "legende": "Ta livraison sans intégration. Avec, tout arrive à bon port.\n\nTu connectes HubRise une fois. Tes plateformes de livraison envoient leurs commandes directement dans FoodEatUp. Plus de tablette à surveiller dans un coin.\n\nConcrètement : plus de tablette à surveiller dans un coin.\n\n— — —\n\n📞 Une démo ? 06 14 18 92 25\n🌐 foodeatup.com\n\nSérie « Le Coup de Feu » — saison 1, épisode 11.\nModule HubRise · Chapitre : 1 - Connecter son HubRise\n\nFoodEatUp est le logiciel qui réunit la caisse, le stock, les plannings, l'HACCP et le marketing d'un restaurant au même endroit.\n",
+        "legende": "Ta livraison sans intégration. Avec, tout arrive à bon port.\n\nTu connectes HubRise une fois. Tes plateformes de livraison envoient leurs commandes directement dans FoodEatUp. Plus de tablette à surveiller dans un coin.\n\nConcrètement : plus de tablette à surveiller dans un coin.\n\n— — —\n\n🔗 https://site.foodeatup.com/\n\n📞 Une démo ? 06 14 18 92 25\n🌐 foodeatup.com\n\nSérie « Le Coup de Feu » — saison 1, épisode 11.\nModule HubRise · Chapitre : 1 - Connecter son HubRise\n\nFoodEatUp est le logiciel qui réunit la caisse, le stock, les plannings, l'HACCP et le marketing d'un restaurant au même endroit.\n",
         "hashtags": [
           "Shorts",
           "restaurant",
@@ -1286,7 +1286,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "connecter son hubrise",
           "hubrise restaurant"
         ],
-        "cta": "Demander une démo",
+        "cta": "Découvrir FoodEatUp",
         "titre": "Connecter son HubRise — HubRise | FoodEatUp"
       }
     },
@@ -1304,7 +1304,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
   "EP012": {
     "publications": {
       "facebook": {
-        "legende": "Temps d'attente : « on regarde ». Avec un KDS, il regarde son plat arriver.\n\nLe KDS affiche chaque plat, son poste et son temps d'attente. Le client ne regarde plus la cuisine : il regarde son plat arriver.\n\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "legende": "Temps d'attente : « on regarde ». Avec un KDS, il regarde son plat arriver.\n\nLe KDS affiche chaque plat, son poste et son temps d'attente. Le client ne regarde plus la cuisine : il regarde son plat arriver.\n\n👉 Tout FoodEatUp : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
         "hashtags": [
           "restaurant",
           "restaurateur",
@@ -1321,10 +1321,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "gérer le kds en direct",
           "kds restaurant"
         ],
-        "cta": "Demander une démo"
+        "cta": "Découvrir FoodEatUp"
       },
       "instagram": {
-        "legende": "Temps d'attente : « on regarde ».\nAvec un KDS, il regarde son plat arriver.\n\nLe KDS affiche chaque plat, son poste et son temps d'attente. Le client ne regarde plus la cuisine : il regarde son plat arriver.\n\nLe pas-à-pas complet est dans notre Academy — lien en bio.\nUne démo ? 06 14 18 92 25",
+        "legende": "Temps d'attente : « on regarde ».\nAvec un KDS, il regarde son plat arriver.\n\nLe KDS affiche chaque plat, son poste et son temps d'attente. Le client ne regarde plus la cuisine : il regarde son plat arriver.\n\nTout est expliqué sur notre site — lien en bio.\nUne démo ? 06 14 18 92 25",
         "hashtags": [
           "restaurant",
           "restaurateur",
@@ -1345,7 +1345,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "gérer le kds en direct",
           "kds restaurant"
         ],
-        "cta": "Demander une démo"
+        "cta": "Tout est en bio"
       },
       "tiktok": {
         "legende": "Temps d'attente : « on regarde ». 😅\nAvec un KDS, il regarde son plat arriver.\n\nLe KDS affiche chaque plat, son poste et son temps d'attente.",
@@ -1363,10 +1363,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "gérer le kds en direct",
           "kds restaurant"
         ],
-        "cta": "Demander une démo"
+        "cta": "Lien en bio"
       },
       "linkedin": {
-        "legende": "Temps d'attente : « on regarde ».\n\nLe KDS affiche chaque plat, son poste et son temps d'attente. Le client ne regarde plus la cuisine : il regarde son plat arriver.\n\nConcrètement : une cuisine qui sait quoi sortir, et quand.\n\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "legende": "Temps d'attente : « on regarde ».\n\nLe KDS affiche chaque plat, son poste et son temps d'attente. Le client ne regarde plus la cuisine : il regarde son plat arriver.\n\nConcrètement : une cuisine qui sait quoi sortir, et quand.\n\nEn savoir plus : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
         "hashtags": [
           "restauration",
           "foodeatup",
@@ -1380,10 +1380,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "gérer le kds en direct",
           "kds restaurant"
         ],
-        "cta": "Demander une démo"
+        "cta": "Découvrir FoodEatUp"
       },
       "youtube": {
-        "legende": "Temps d'attente : « on regarde ». Avec un KDS, il regarde son plat arriver.\n\nLe KDS affiche chaque plat, son poste et son temps d'attente. Le client ne regarde plus la cuisine : il regarde son plat arriver.\n\nConcrètement : une cuisine qui sait quoi sortir, et quand.\n\n— — —\n\n📞 Une démo ? 06 14 18 92 25\n🌐 foodeatup.com\n\nSérie « Le Coup de Feu » — saison 1, épisode 12.\nModule KDS · Chapitre : 3 - Gérer le KDS en direct\n\nFoodEatUp est le logiciel qui réunit la caisse, le stock, les plannings, l'HACCP et le marketing d'un restaurant au même endroit.\n",
+        "legende": "Temps d'attente : « on regarde ». Avec un KDS, il regarde son plat arriver.\n\nLe KDS affiche chaque plat, son poste et son temps d'attente. Le client ne regarde plus la cuisine : il regarde son plat arriver.\n\nConcrètement : une cuisine qui sait quoi sortir, et quand.\n\n— — —\n\n🔗 https://site.foodeatup.com/\n\n📞 Une démo ? 06 14 18 92 25\n🌐 foodeatup.com\n\nSérie « Le Coup de Feu » — saison 1, épisode 12.\nModule KDS · Chapitre : 3 - Gérer le KDS en direct\n\nFoodEatUp est le logiciel qui réunit la caisse, le stock, les plannings, l'HACCP et le marketing d'un restaurant au même endroit.\n",
         "hashtags": [
           "Shorts",
           "restaurant",
@@ -1403,7 +1403,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "gérer le kds en direct",
           "kds restaurant"
         ],
-        "cta": "Demander une démo",
+        "cta": "Découvrir FoodEatUp",
         "titre": "Gérer le KDS en direct — KDS | FoodEatUp"
       }
     },
@@ -1421,7 +1421,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
   "EP013": {
     "publications": {
       "facebook": {
-        "legende": "Dix logiciels. Dix notifications. Un seul, ça suffisait.\n\nTu poses ta question en français : combien j'ai fait hier, qu'est-ce qui manque demain. PrediBot lit tes vraies données et te répond. Une seule interface, pas dix.\n\n👉 Le tutoriel complet : https://drive.google.com/file/d/1nuFxXTOCXeHKtSbJBScCH0O3khJxTiB4/view\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "legende": "Dix logiciels. Dix notifications. Un seul, ça suffisait.\n\nTu poses ta question en français : combien j'ai fait hier, qu'est-ce qui manque demain. PrediBot lit tes vraies données et te répond. Une seule interface, pas dix.\n\n👉 Tout FoodEatUp : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
         "hashtags": [
           "restaurant",
           "restaurateur",
@@ -1438,10 +1438,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "parler à predibot",
           "predibot restaurant"
         ],
-        "cta": "Voir le tutoriel complet"
+        "cta": "Découvrir FoodEatUp"
       },
       "instagram": {
-        "legende": "Dix logiciels. Dix notifications.\nUn seul, ça suffisait.\n\nTu poses ta question en français : combien j'ai fait hier, qu'est-ce qui manque demain. PrediBot lit tes vraies données et te répond. Une seule interface, pas dix.\n\nLe pas-à-pas complet est dans notre Academy — lien en bio.\nUne démo ? 06 14 18 92 25",
+        "legende": "Dix logiciels. Dix notifications.\nUn seul, ça suffisait.\n\nTu poses ta question en français : combien j'ai fait hier, qu'est-ce qui manque demain. PrediBot lit tes vraies données et te répond. Une seule interface, pas dix.\n\nTout est expliqué sur notre site — lien en bio.\nUne démo ? 06 14 18 92 25",
         "hashtags": [
           "restaurant",
           "restaurateur",
@@ -1463,7 +1463,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "parler à predibot",
           "predibot restaurant"
         ],
-        "cta": "Le pas-à-pas est en bio"
+        "cta": "Tout est en bio"
       },
       "tiktok": {
         "legende": "Dix logiciels. Dix notifications. 😅\nUn seul, ça suffisait.\n\nTu poses ta question en français : combien j'ai fait hier, qu'est-ce qui manque demain.",
@@ -1481,10 +1481,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "parler à predibot",
           "predibot restaurant"
         ],
-        "cta": "Tuto complet en bio"
+        "cta": "Lien en bio"
       },
       "linkedin": {
-        "legende": "Dix logiciels. Dix notifications.\n\nTu poses ta question en français : combien j'ai fait hier, qu'est-ce qui manque demain. PrediBot lit tes vraies données et te répond. Une seule interface, pas dix.\n\nConcrètement : voir venir la journée au lieu de la subir.\n\nLe tutoriel pas-à-pas : https://drive.google.com/file/d/1nuFxXTOCXeHKtSbJBScCH0O3khJxTiB4/view\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "legende": "Dix logiciels. Dix notifications.\n\nTu poses ta question en français : combien j'ai fait hier, qu'est-ce qui manque demain. PrediBot lit tes vraies données et te répond. Une seule interface, pas dix.\n\nConcrètement : voir venir la journée au lieu de la subir.\n\nEn savoir plus : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
         "hashtags": [
           "restauration",
           "foodeatup",
@@ -1498,10 +1498,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "parler à predibot",
           "predibot restaurant"
         ],
-        "cta": "Voir le tutoriel pas-à-pas"
+        "cta": "Découvrir FoodEatUp"
       },
       "youtube": {
-        "legende": "Dix logiciels. Dix notifications. Un seul, ça suffisait.\n\nTu poses ta question en français : combien j'ai fait hier, qu'est-ce qui manque demain. PrediBot lit tes vraies données et te répond. Une seule interface, pas dix.\n\nConcrètement : voir venir la journée au lieu de la subir.\n\n— — —\n\n📺 Le tutoriel pas-à-pas : https://drive.google.com/file/d/1nuFxXTOCXeHKtSbJBScCH0O3khJxTiB4/view\n\n📞 Une démo ? 06 14 18 92 25\n🌐 foodeatup.com\n\nSérie « Le Coup de Feu » — saison 1, épisode 13.\nModule PrediBot · Chapitre : 3 - Parler à PrediBot\n\nFoodEatUp est le logiciel qui réunit la caisse, le stock, les plannings, l'HACCP et le marketing d'un restaurant au même endroit.\n",
+        "legende": "Dix logiciels. Dix notifications. Un seul, ça suffisait.\n\nTu poses ta question en français : combien j'ai fait hier, qu'est-ce qui manque demain. PrediBot lit tes vraies données et te répond. Une seule interface, pas dix.\n\nConcrètement : voir venir la journée au lieu de la subir.\n\n— — —\n\n🔗 https://site.foodeatup.com/\n\n📞 Une démo ? 06 14 18 92 25\n🌐 foodeatup.com\n\nSérie « Le Coup de Feu » — saison 1, épisode 13.\nModule PrediBot · Chapitre : 3 - Parler à PrediBot\n\nFoodEatUp est le logiciel qui réunit la caisse, le stock, les plannings, l'HACCP et le marketing d'un restaurant au même endroit.\n",
         "hashtags": [
           "Shorts",
           "restaurant",
@@ -1521,7 +1521,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "parler à predibot",
           "predibot restaurant"
         ],
-        "cta": "Le tutoriel pas-à-pas",
+        "cta": "Découvrir FoodEatUp",
         "titre": "Parler à PrediBot — PrediBot | FoodEatUp"
       }
     },
@@ -1541,7 +1541,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
   "EP014": {
     "publications": {
       "facebook": {
-        "legende": "Ton gaspillage alimentaire. Lui au moins, il sait ce qu'il y a en stock.\n\nChaque entrée, chaque sortie, chaque perte est enregistrée. Tu vois ce qui part sans être vendu. Le gaspillage devient une ligne, donc un problème réglable.\n\n👉 Le tutoriel complet : https://drive.google.com/file/d/124mIM7NudoQy5wun_rlSZ6MCrJ2wNykL/view\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "legende": "Ton gaspillage alimentaire. Lui au moins, il sait ce qu'il y a en stock.\n\nChaque entrée, chaque sortie, chaque perte est enregistrée. Tu vois ce qui part sans être vendu. Le gaspillage devient une ligne, donc un problème réglable.\n\n👉 Tout FoodEatUp : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
         "hashtags": [
           "restaurant",
           "restaurateur",
@@ -1558,10 +1558,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "mouvements de stock",
           "stockvision restaurant"
         ],
-        "cta": "Voir le tutoriel complet"
+        "cta": "Découvrir FoodEatUp"
       },
       "instagram": {
-        "legende": "Ton gaspillage alimentaire.\nLui au moins, il sait ce qu'il y a en stock.\n\nChaque entrée, chaque sortie, chaque perte est enregistrée. Tu vois ce qui part sans être vendu. Le gaspillage devient une ligne, donc un problème réglable.\n\nLe pas-à-pas complet est dans notre Academy — lien en bio.\nUne démo ? 06 14 18 92 25",
+        "legende": "Ton gaspillage alimentaire.\nLui au moins, il sait ce qu'il y a en stock.\n\nChaque entrée, chaque sortie, chaque perte est enregistrée. Tu vois ce qui part sans être vendu. Le gaspillage devient une ligne, donc un problème réglable.\n\nTout est expliqué sur notre site — lien en bio.\nUne démo ? 06 14 18 92 25",
         "hashtags": [
           "restaurant",
           "restaurateur",
@@ -1584,7 +1584,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "mouvements de stock",
           "stockvision restaurant"
         ],
-        "cta": "Le pas-à-pas est en bio"
+        "cta": "Tout est en bio"
       },
       "tiktok": {
         "legende": "Ton gaspillage alimentaire. 😅\nLui au moins, il sait ce qu'il y a en stock.\n\nChaque entrée, chaque sortie, chaque perte est enregistrée.",
@@ -1602,10 +1602,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "mouvements de stock",
           "stockvision restaurant"
         ],
-        "cta": "Tuto complet en bio"
+        "cta": "Lien en bio"
       },
       "linkedin": {
-        "legende": "Ton gaspillage alimentaire.\n\nChaque entrée, chaque sortie, chaque perte est enregistrée. Tu vois ce qui part sans être vendu. Le gaspillage devient une ligne, donc un problème réglable.\n\nConcrètement : un stock juste et une marge qu'on voit avant de fixer le prix.\n\nLe tutoriel pas-à-pas : https://drive.google.com/file/d/124mIM7NudoQy5wun_rlSZ6MCrJ2wNykL/view\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "legende": "Ton gaspillage alimentaire.\n\nChaque entrée, chaque sortie, chaque perte est enregistrée. Tu vois ce qui part sans être vendu. Le gaspillage devient une ligne, donc un problème réglable.\n\nConcrètement : un stock juste et une marge qu'on voit avant de fixer le prix.\n\nEn savoir plus : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
         "hashtags": [
           "restauration",
           "foodeatup",
@@ -1619,10 +1619,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "mouvements de stock",
           "stockvision restaurant"
         ],
-        "cta": "Voir le tutoriel pas-à-pas"
+        "cta": "Découvrir FoodEatUp"
       },
       "youtube": {
-        "legende": "Ton gaspillage alimentaire. Lui au moins, il sait ce qu'il y a en stock.\n\nChaque entrée, chaque sortie, chaque perte est enregistrée. Tu vois ce qui part sans être vendu. Le gaspillage devient une ligne, donc un problème réglable.\n\nConcrètement : un stock juste et une marge qu'on voit avant de fixer le prix.\n\n— — —\n\n📺 Le tutoriel pas-à-pas : https://drive.google.com/file/d/124mIM7NudoQy5wun_rlSZ6MCrJ2wNykL/view\n\n📞 Une démo ? 06 14 18 92 25\n🌐 foodeatup.com\n\nSérie « Le Coup de Feu » — saison 1, épisode 14.\nModule StockVision · Chapitre : 16 - Mouvements de stock\n\nFoodEatUp est le logiciel qui réunit la caisse, le stock, les plannings, l'HACCP et le marketing d'un restaurant au même endroit.\n",
+        "legende": "Ton gaspillage alimentaire. Lui au moins, il sait ce qu'il y a en stock.\n\nChaque entrée, chaque sortie, chaque perte est enregistrée. Tu vois ce qui part sans être vendu. Le gaspillage devient une ligne, donc un problème réglable.\n\nConcrètement : un stock juste et une marge qu'on voit avant de fixer le prix.\n\n— — —\n\n🔗 https://site.foodeatup.com/\n\n📞 Une démo ? 06 14 18 92 25\n🌐 foodeatup.com\n\nSérie « Le Coup de Feu » — saison 1, épisode 14.\nModule StockVision · Chapitre : 16 - Mouvements de stock\n\nFoodEatUp est le logiciel qui réunit la caisse, le stock, les plannings, l'HACCP et le marketing d'un restaurant au même endroit.\n",
         "hashtags": [
           "Shorts",
           "restaurant",
@@ -1643,7 +1643,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "mouvements de stock",
           "stockvision restaurant"
         ],
-        "cta": "Le tutoriel pas-à-pas",
+        "cta": "Découvrir FoodEatUp",
         "titre": "Mouvements de stock — StockVision | FoodEatUp"
       }
     },
@@ -1665,7 +1665,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
   "EP015": {
     "publications": {
       "facebook": {
-        "legende": "Ta gestion actuelle. Une pièce bouge, tout s'écroule.\n\nTes catégories, ta TVA, tes zones, tes équipements : tout est posé une fois, proprement. Quand une pièce bouge, le reste ne s'écroule pas.\n\n👉 Le tutoriel complet : https://drive.google.com/file/d/17ZDwHrTaTvQmiCmTYBwZnnJo_OLrXzyo/view\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "legende": "Ta gestion actuelle. Une pièce bouge, tout s'écroule.\n\nTes catégories, ta TVA, tes zones, tes équipements : tout est posé une fois, proprement. Quand une pièce bouge, le reste ne s'écroule pas.\n\n👉 Tout FoodEatUp : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
         "hashtags": [
           "restaurant",
           "restaurateur",
@@ -1681,10 +1681,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "référentiels",
           "configuration restaurant"
         ],
-        "cta": "Voir le tutoriel complet"
+        "cta": "Découvrir FoodEatUp"
       },
       "instagram": {
-        "legende": "Ta gestion actuelle.\nUne pièce bouge, tout s'écroule.\n\nTes catégories, ta TVA, tes zones, tes équipements : tout est posé une fois, proprement. Quand une pièce bouge, le reste ne s'écroule pas.\n\nLe pas-à-pas complet est dans notre Academy — lien en bio.\nUne démo ? 06 14 18 92 25",
+        "legende": "Ta gestion actuelle.\nUne pièce bouge, tout s'écroule.\n\nTes catégories, ta TVA, tes zones, tes équipements : tout est posé une fois, proprement. Quand une pièce bouge, le reste ne s'écroule pas.\n\nTout est expliqué sur notre site — lien en bio.\nUne démo ? 06 14 18 92 25",
         "hashtags": [
           "restaurant",
           "restaurateur",
@@ -1704,7 +1704,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "référentiels",
           "configuration restaurant"
         ],
-        "cta": "Le pas-à-pas est en bio"
+        "cta": "Tout est en bio"
       },
       "tiktok": {
         "legende": "Ta gestion actuelle. 😅\nUne pièce bouge, tout s'écroule.\n\nTes catégories, ta TVA, tes zones, tes équipements : tout est posé une fois, proprement.",
@@ -1721,10 +1721,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "référentiels",
           "configuration restaurant"
         ],
-        "cta": "Tuto complet en bio"
+        "cta": "Lien en bio"
       },
       "linkedin": {
-        "legende": "Ta gestion actuelle.\n\nTes catégories, ta TVA, tes zones, tes équipements : tout est posé une fois, proprement. Quand une pièce bouge, le reste ne s'écroule pas.\n\nConcrètement : une seule saisie qui alimente tout le reste.\n\nLe tutoriel pas-à-pas : https://drive.google.com/file/d/17ZDwHrTaTvQmiCmTYBwZnnJo_OLrXzyo/view\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "legende": "Ta gestion actuelle.\n\nTes catégories, ta TVA, tes zones, tes équipements : tout est posé une fois, proprement. Quand une pièce bouge, le reste ne s'écroule pas.\n\nConcrètement : une seule saisie qui alimente tout le reste.\n\nEn savoir plus : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
         "hashtags": [
           "restauration",
           "foodeatup",
@@ -1737,10 +1737,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "référentiels",
           "configuration restaurant"
         ],
-        "cta": "Voir le tutoriel pas-à-pas"
+        "cta": "Découvrir FoodEatUp"
       },
       "youtube": {
-        "legende": "Ta gestion actuelle. Une pièce bouge, tout s'écroule.\n\nTes catégories, ta TVA, tes zones, tes équipements : tout est posé une fois, proprement. Quand une pièce bouge, le reste ne s'écroule pas.\n\nConcrètement : une seule saisie qui alimente tout le reste.\n\n— — —\n\n📺 Le tutoriel pas-à-pas : https://drive.google.com/file/d/17ZDwHrTaTvQmiCmTYBwZnnJo_OLrXzyo/view\n\n📞 Une démo ? 06 14 18 92 25\n🌐 foodeatup.com\n\nSérie « Le Coup de Feu » — saison 1, épisode 15.\nModule Configuration · Chapitre : référentiels\n\nFoodEatUp est le logiciel qui réunit la caisse, le stock, les plannings, l'HACCP et le marketing d'un restaurant au même endroit.\n",
+        "legende": "Ta gestion actuelle. Une pièce bouge, tout s'écroule.\n\nTes catégories, ta TVA, tes zones, tes équipements : tout est posé une fois, proprement. Quand une pièce bouge, le reste ne s'écroule pas.\n\nConcrètement : une seule saisie qui alimente tout le reste.\n\n— — —\n\n🔗 https://site.foodeatup.com/\n\n📞 Une démo ? 06 14 18 92 25\n🌐 foodeatup.com\n\nSérie « Le Coup de Feu » — saison 1, épisode 15.\nModule Configuration · Chapitre : référentiels\n\nFoodEatUp est le logiciel qui réunit la caisse, le stock, les plannings, l'HACCP et le marketing d'un restaurant au même endroit.\n",
         "hashtags": [
           "Shorts",
           "restaurant",
@@ -1758,7 +1758,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "référentiels",
           "configuration restaurant"
         ],
-        "cta": "Le tutoriel pas-à-pas",
+        "cta": "Découvrir FoodEatUp",
         "titre": "Référentiels — Configuration | FoodEatUp"
       }
     },
@@ -1778,7 +1778,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
   "EP016": {
     "publications": {
       "facebook": {
-        "legende": "Tes coûts, ce trimestre. On va refermer le robinet.\n\nTu enregistres tes achats fournisseurs avec le détail des lignes. Tes dépenses du mois s'additionnent toutes seules, en face de ton chiffre d'affaires.\n\n👉 Le tutoriel complet : https://drive.google.com/file/d/13gsBIjozDhLKJBi0uOwqIE3ShA_V7d3R/view\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "legende": "Tes coûts, ce trimestre. On va refermer le robinet.\n\nTu enregistres tes achats fournisseurs avec le détail des lignes. Tes dépenses du mois s'additionnent toutes seules, en face de ton chiffre d'affaires.\n\n👉 Tout FoodEatUp : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
         "hashtags": [
           "restaurant",
           "restaurateur",
@@ -1794,10 +1794,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "rentabilité",
           "dépenses"
         ],
-        "cta": "Voir le tutoriel complet"
+        "cta": "Découvrir FoodEatUp"
       },
       "instagram": {
-        "legende": "Tes coûts, ce trimestre.\nOn va refermer le robinet.\n\nTu enregistres tes achats fournisseurs avec le détail des lignes. Tes dépenses du mois s'additionnent toutes seules, en face de ton chiffre d'affaires.\n\nLe pas-à-pas complet est dans notre Academy — lien en bio.\nUne démo ? 06 14 18 92 25",
+        "legende": "Tes coûts, ce trimestre.\nOn va refermer le robinet.\n\nTu enregistres tes achats fournisseurs avec le détail des lignes. Tes dépenses du mois s'additionnent toutes seules, en face de ton chiffre d'affaires.\n\nTout est expliqué sur notre site — lien en bio.\nUne démo ? 06 14 18 92 25",
         "hashtags": [
           "restaurant",
           "restaurateur",
@@ -1818,7 +1818,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "rentabilité",
           "dépenses"
         ],
-        "cta": "Le pas-à-pas est en bio"
+        "cta": "Tout est en bio"
       },
       "tiktok": {
         "legende": "Tes coûts, ce trimestre. 😅\nOn va refermer le robinet.\n\nTu enregistres tes achats fournisseurs avec le détail des lignes.",
@@ -1835,10 +1835,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "rentabilité",
           "dépenses"
         ],
-        "cta": "Tuto complet en bio"
+        "cta": "Lien en bio"
       },
       "linkedin": {
-        "legende": "Tes coûts, ce trimestre.\n\nTu enregistres tes achats fournisseurs avec le détail des lignes. Tes dépenses du mois s'additionnent toutes seules, en face de ton chiffre d'affaires.\n\nConcrètement : des chiffres à jour sans ressaisir une ligne.\n\nLe tutoriel pas-à-pas : https://drive.google.com/file/d/13gsBIjozDhLKJBi0uOwqIE3ShA_V7d3R/view\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "legende": "Tes coûts, ce trimestre.\n\nTu enregistres tes achats fournisseurs avec le détail des lignes. Tes dépenses du mois s'additionnent toutes seules, en face de ton chiffre d'affaires.\n\nConcrètement : des chiffres à jour sans ressaisir une ligne.\n\nEn savoir plus : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
         "hashtags": [
           "restauration",
           "foodeatup",
@@ -1851,10 +1851,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "rentabilité",
           "dépenses"
         ],
-        "cta": "Voir le tutoriel pas-à-pas"
+        "cta": "Découvrir FoodEatUp"
       },
       "youtube": {
-        "legende": "Tes coûts, ce trimestre. On va refermer le robinet.\n\nTu enregistres tes achats fournisseurs avec le détail des lignes. Tes dépenses du mois s'additionnent toutes seules, en face de ton chiffre d'affaires.\n\nConcrètement : des chiffres à jour sans ressaisir une ligne.\n\n— — —\n\n📺 Le tutoriel pas-à-pas : https://drive.google.com/file/d/13gsBIjozDhLKJBi0uOwqIE3ShA_V7d3R/view\n\n📞 Une démo ? 06 14 18 92 25\n🌐 foodeatup.com\n\nSérie « Le Coup de Feu » — saison 1, épisode 16.\nModule Comptabilité · Chapitre : dépenses\n\nFoodEatUp est le logiciel qui réunit la caisse, le stock, les plannings, l'HACCP et le marketing d'un restaurant au même endroit.\n",
+        "legende": "Tes coûts, ce trimestre. On va refermer le robinet.\n\nTu enregistres tes achats fournisseurs avec le détail des lignes. Tes dépenses du mois s'additionnent toutes seules, en face de ton chiffre d'affaires.\n\nConcrètement : des chiffres à jour sans ressaisir une ligne.\n\n— — —\n\n🔗 https://site.foodeatup.com/\n\n📞 Une démo ? 06 14 18 92 25\n🌐 foodeatup.com\n\nSérie « Le Coup de Feu » — saison 1, épisode 16.\nModule Comptabilité · Chapitre : dépenses\n\nFoodEatUp est le logiciel qui réunit la caisse, le stock, les plannings, l'HACCP et le marketing d'un restaurant au même endroit.\n",
         "hashtags": [
           "Shorts",
           "restaurant",
@@ -1873,7 +1873,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "rentabilité",
           "dépenses"
         ],
-        "cta": "Le tutoriel pas-à-pas",
+        "cta": "Découvrir FoodEatUp",
         "titre": "Dépenses — Comptabilité | FoodEatUp"
       }
     },
@@ -1896,7 +1896,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
   "EP017": {
     "publications": {
       "facebook": {
-        "legende": "Personne ne touche à ta dernière frite. Ni à ta marge.\n\nTu génères ton rapport par module en un clic : ventes, stock, production. L'historique est gardé. Tu compares ce mois-ci avec le mois dernier, pas avec ton souvenir.\n\n👉 Le tutoriel complet : https://drive.google.com/file/d/1yOgpFr18I9GyIkFegEj1MJNU_ksMtRLy/view\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "legende": "Personne ne touche à ta dernière frite. Ni à ta marge.\n\nTu génères ton rapport par module en un clic : ventes, stock, production. L'historique est gardé. Tu compares ce mois-ci avec le mois dernier, pas avec ton souvenir.\n\n👉 Tout FoodEatUp : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
         "hashtags": [
           "restaurant",
           "restaurateur",
@@ -1913,10 +1913,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "création d'un rapport",
           "stockvision restaurant"
         ],
-        "cta": "Voir le tutoriel complet"
+        "cta": "Découvrir FoodEatUp"
       },
       "instagram": {
-        "legende": "Personne ne touche à ta dernière frite.\nNi à ta marge.\n\nTu génères ton rapport par module en un clic : ventes, stock, production. L'historique est gardé. Tu compares ce mois-ci avec le mois dernier, pas avec ton souvenir.\n\nLe pas-à-pas complet est dans notre Academy — lien en bio.\nUne démo ? 06 14 18 92 25",
+        "legende": "Personne ne touche à ta dernière frite.\nNi à ta marge.\n\nTu génères ton rapport par module en un clic : ventes, stock, production. L'historique est gardé. Tu compares ce mois-ci avec le mois dernier, pas avec ton souvenir.\n\nTout est expliqué sur notre site — lien en bio.\nUne démo ? 06 14 18 92 25",
         "hashtags": [
           "restaurant",
           "restaurateur",
@@ -1939,7 +1939,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "création d'un rapport",
           "stockvision restaurant"
         ],
-        "cta": "Le pas-à-pas est en bio"
+        "cta": "Tout est en bio"
       },
       "tiktok": {
         "legende": "Personne ne touche à ta dernière frite. 😅\nNi à ta marge.\n\nTu génères ton rapport par module en un clic : ventes, stock, production.",
@@ -1957,10 +1957,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "création d'un rapport",
           "stockvision restaurant"
         ],
-        "cta": "Tuto complet en bio"
+        "cta": "Lien en bio"
       },
       "linkedin": {
-        "legende": "Personne ne touche à ta dernière frite.\n\nTu génères ton rapport par module en un clic : ventes, stock, production. L'historique est gardé. Tu compares ce mois-ci avec le mois dernier, pas avec ton souvenir.\n\nConcrètement : un stock juste et une marge qu'on voit avant de fixer le prix.\n\nLe tutoriel pas-à-pas : https://drive.google.com/file/d/1yOgpFr18I9GyIkFegEj1MJNU_ksMtRLy/view\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "legende": "Personne ne touche à ta dernière frite.\n\nTu génères ton rapport par module en un clic : ventes, stock, production. L'historique est gardé. Tu compares ce mois-ci avec le mois dernier, pas avec ton souvenir.\n\nConcrètement : un stock juste et une marge qu'on voit avant de fixer le prix.\n\nEn savoir plus : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
         "hashtags": [
           "restauration",
           "foodeatup",
@@ -1974,10 +1974,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "création d'un rapport",
           "stockvision restaurant"
         ],
-        "cta": "Voir le tutoriel pas-à-pas"
+        "cta": "Découvrir FoodEatUp"
       },
       "youtube": {
-        "legende": "Personne ne touche à ta dernière frite. Ni à ta marge.\n\nTu génères ton rapport par module en un clic : ventes, stock, production. L'historique est gardé. Tu compares ce mois-ci avec le mois dernier, pas avec ton souvenir.\n\nConcrètement : un stock juste et une marge qu'on voit avant de fixer le prix.\n\n— — —\n\n📺 Le tutoriel pas-à-pas : https://drive.google.com/file/d/1yOgpFr18I9GyIkFegEj1MJNU_ksMtRLy/view\n\n📞 Une démo ? 06 14 18 92 25\n🌐 foodeatup.com\n\nSérie « Le Coup de Feu » — saison 1, épisode 17.\nModule StockVision · Chapitre : 19 - Création d'un rapport\n\nFoodEatUp est le logiciel qui réunit la caisse, le stock, les plannings, l'HACCP et le marketing d'un restaurant au même endroit.\n",
+        "legende": "Personne ne touche à ta dernière frite. Ni à ta marge.\n\nTu génères ton rapport par module en un clic : ventes, stock, production. L'historique est gardé. Tu compares ce mois-ci avec le mois dernier, pas avec ton souvenir.\n\nConcrètement : un stock juste et une marge qu'on voit avant de fixer le prix.\n\n— — —\n\n🔗 https://site.foodeatup.com/\n\n📞 Une démo ? 06 14 18 92 25\n🌐 foodeatup.com\n\nSérie « Le Coup de Feu » — saison 1, épisode 17.\nModule StockVision · Chapitre : 19 - Création d'un rapport\n\nFoodEatUp est le logiciel qui réunit la caisse, le stock, les plannings, l'HACCP et le marketing d'un restaurant au même endroit.\n",
         "hashtags": [
           "Shorts",
           "restaurant",
@@ -1998,7 +1998,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "création d'un rapport",
           "stockvision restaurant"
         ],
-        "cta": "Le tutoriel pas-à-pas",
+        "cta": "Découvrir FoodEatUp",
         "titre": "Création d'un rapport — StockVision | FoodEatUp"
       }
     },
@@ -2019,7 +2019,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
   "EP018": {
     "publications": {
       "facebook": {
-        "legende": "Le rush de vingt heures. Sauve ton service, pas ton dos.\n\nPendant le rush, tes clients commandent seuls : par QR à table, par le site, par l'agent vocal. Ton équipe sert, elle ne court plus.\n\n👉 Le tutoriel complet : https://drive.google.com/file/d/1jSK_Zv7MtSgTqwGaV7WeffGjiZ0g4MWk/view\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "legende": "Le rush de vingt heures. Sauve ton service, pas ton dos.\n\nPendant le rush, tes clients commandent seuls : par QR à table, par le site, par l'agent vocal. Ton équipe sert, elle ne court plus.\n\n👉 Tout FoodEatUp : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
         "hashtags": [
           "restaurant",
           "restaurateur",
@@ -2036,10 +2036,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "site, vocal et qr code",
           "service restaurant"
         ],
-        "cta": "Voir le tutoriel complet"
+        "cta": "Découvrir FoodEatUp"
       },
       "instagram": {
-        "legende": "Le rush de vingt heures.\nSauve ton service, pas ton dos.\n\nPendant le rush, tes clients commandent seuls : par QR à table, par le site, par l'agent vocal. Ton équipe sert, elle ne court plus.\n\nLe pas-à-pas complet est dans notre Academy — lien en bio.\nUne démo ? 06 14 18 92 25",
+        "legende": "Le rush de vingt heures.\nSauve ton service, pas ton dos.\n\nPendant le rush, tes clients commandent seuls : par QR à table, par le site, par l'agent vocal. Ton équipe sert, elle ne court plus.\n\nTout est expliqué sur notre site — lien en bio.\nUne démo ? 06 14 18 92 25",
         "hashtags": [
           "restaurant",
           "restaurateur",
@@ -2061,7 +2061,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "site, vocal et qr code",
           "service restaurant"
         ],
-        "cta": "Le pas-à-pas est en bio"
+        "cta": "Tout est en bio"
       },
       "tiktok": {
         "legende": "Le rush de vingt heures. 😅\nSauve ton service, pas ton dos.\n\nPendant le rush, tes clients commandent seuls : par QR à table, par le site, par l'agent vocal.",
@@ -2079,10 +2079,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "site, vocal et qr code",
           "service restaurant"
         ],
-        "cta": "Tuto complet en bio"
+        "cta": "Lien en bio"
       },
       "linkedin": {
-        "legende": "Le rush de vingt heures.\n\nPendant le rush, tes clients commandent seuls : par QR à table, par le site, par l'agent vocal. Ton équipe sert, elle ne court plus.\n\nConcrètement : moins de tickets perdus entre la salle et le pass.\n\nLe tutoriel pas-à-pas : https://drive.google.com/file/d/1jSK_Zv7MtSgTqwGaV7WeffGjiZ0g4MWk/view\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "legende": "Le rush de vingt heures.\n\nPendant le rush, tes clients commandent seuls : par QR à table, par le site, par l'agent vocal. Ton équipe sert, elle ne court plus.\n\nConcrètement : moins de tickets perdus entre la salle et le pass.\n\nEn savoir plus : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
         "hashtags": [
           "restauration",
           "foodeatup",
@@ -2096,10 +2096,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "site, vocal et qr code",
           "service restaurant"
         ],
-        "cta": "Voir le tutoriel pas-à-pas"
+        "cta": "Découvrir FoodEatUp"
       },
       "youtube": {
-        "legende": "Le rush de vingt heures. Sauve ton service, pas ton dos.\n\nPendant le rush, tes clients commandent seuls : par QR à table, par le site, par l'agent vocal. Ton équipe sert, elle ne court plus.\n\nConcrètement : moins de tickets perdus entre la salle et le pass.\n\n— — —\n\n📺 Le tutoriel pas-à-pas : https://drive.google.com/file/d/1jSK_Zv7MtSgTqwGaV7WeffGjiZ0g4MWk/view\n\n📞 Une démo ? 06 14 18 92 25\n🌐 foodeatup.com\n\nSérie « Le Coup de Feu » — saison 1, épisode 18.\nModule Service · Chapitre : 2 - Site, vocal et QR code\n\nFoodEatUp est le logiciel qui réunit la caisse, le stock, les plannings, l'HACCP et le marketing d'un restaurant au même endroit.\n",
+        "legende": "Le rush de vingt heures. Sauve ton service, pas ton dos.\n\nPendant le rush, tes clients commandent seuls : par QR à table, par le site, par l'agent vocal. Ton équipe sert, elle ne court plus.\n\nConcrètement : moins de tickets perdus entre la salle et le pass.\n\n— — —\n\n🔗 https://site.foodeatup.com/\n\n📞 Une démo ? 06 14 18 92 25\n🌐 foodeatup.com\n\nSérie « Le Coup de Feu » — saison 1, épisode 18.\nModule Service · Chapitre : 2 - Site, vocal et QR code\n\nFoodEatUp est le logiciel qui réunit la caisse, le stock, les plannings, l'HACCP et le marketing d'un restaurant au même endroit.\n",
         "hashtags": [
           "Shorts",
           "restaurant",
@@ -2119,7 +2119,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "site, vocal et qr code",
           "service restaurant"
         ],
-        "cta": "Le tutoriel pas-à-pas",
+        "cta": "Découvrir FoodEatUp",
         "titre": "Site, vocal et QR code — Service | FoodEatUp"
       }
     },
@@ -2142,7 +2142,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
   "EP019": {
     "publications": {
       "facebook": {
-        "legende": "Ton chiffre d'affaires, sans outil. Ça rebondit rarement tout seul.\n\nFoodEatUp regarde tes ventes passées et te dit quoi produire demain. Ton chiffre d'affaires ne dépend plus de ton intuition du lundi matin.\n\n👉 Le tutoriel complet : https://drive.google.com/file/d/14GntP3F4hhloVyYBDJrPCj55Ny1gvDx9/view\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "legende": "Ton chiffre d'affaires, sans outil. Ça rebondit rarement tout seul.\n\nFoodEatUp regarde tes ventes passées et te dit quoi produire demain. Ton chiffre d'affaires ne dépend plus de ton intuition du lundi matin.\n\n👉 Tout FoodEatUp : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
         "hashtags": [
           "restaurant",
           "restaurateur",
@@ -2159,10 +2159,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "prédictions des commandes",
           "stockvision restaurant"
         ],
-        "cta": "Voir le tutoriel complet"
+        "cta": "Découvrir FoodEatUp"
       },
       "instagram": {
-        "legende": "Ton chiffre d'affaires, sans outil.\nÇa rebondit rarement tout seul.\n\nFoodEatUp regarde tes ventes passées et te dit quoi produire demain. Ton chiffre d'affaires ne dépend plus de ton intuition du lundi matin.\n\nLe pas-à-pas complet est dans notre Academy — lien en bio.\nUne démo ? 06 14 18 92 25",
+        "legende": "Ton chiffre d'affaires, sans outil.\nÇa rebondit rarement tout seul.\n\nFoodEatUp regarde tes ventes passées et te dit quoi produire demain. Ton chiffre d'affaires ne dépend plus de ton intuition du lundi matin.\n\nTout est expliqué sur notre site — lien en bio.\nUne démo ? 06 14 18 92 25",
         "hashtags": [
           "restaurant",
           "restaurateur",
@@ -2185,7 +2185,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "prédictions des commandes",
           "stockvision restaurant"
         ],
-        "cta": "Le pas-à-pas est en bio"
+        "cta": "Tout est en bio"
       },
       "tiktok": {
         "legende": "Ton chiffre d'affaires, sans outil. 😅\nÇa rebondit rarement tout seul.\n\nFoodEatUp regarde tes ventes passées et te dit quoi produire demain.",
@@ -2203,10 +2203,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "prédictions des commandes",
           "stockvision restaurant"
         ],
-        "cta": "Tuto complet en bio"
+        "cta": "Lien en bio"
       },
       "linkedin": {
-        "legende": "Ton chiffre d'affaires, sans outil.\n\nFoodEatUp regarde tes ventes passées et te dit quoi produire demain. Ton chiffre d'affaires ne dépend plus de ton intuition du lundi matin.\n\nConcrètement : un stock juste et une marge qu'on voit avant de fixer le prix.\n\nLe tutoriel pas-à-pas : https://drive.google.com/file/d/14GntP3F4hhloVyYBDJrPCj55Ny1gvDx9/view\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "legende": "Ton chiffre d'affaires, sans outil.\n\nFoodEatUp regarde tes ventes passées et te dit quoi produire demain. Ton chiffre d'affaires ne dépend plus de ton intuition du lundi matin.\n\nConcrètement : un stock juste et une marge qu'on voit avant de fixer le prix.\n\nEn savoir plus : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
         "hashtags": [
           "restauration",
           "foodeatup",
@@ -2220,10 +2220,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "prédictions des commandes",
           "stockvision restaurant"
         ],
-        "cta": "Voir le tutoriel pas-à-pas"
+        "cta": "Découvrir FoodEatUp"
       },
       "youtube": {
-        "legende": "Ton chiffre d'affaires, sans outil. Ça rebondit rarement tout seul.\n\nFoodEatUp regarde tes ventes passées et te dit quoi produire demain. Ton chiffre d'affaires ne dépend plus de ton intuition du lundi matin.\n\nConcrètement : un stock juste et une marge qu'on voit avant de fixer le prix.\n\n— — —\n\n📺 Le tutoriel pas-à-pas : https://drive.google.com/file/d/14GntP3F4hhloVyYBDJrPCj55Ny1gvDx9/view\n\n📞 Une démo ? 06 14 18 92 25\n🌐 foodeatup.com\n\nSérie « Le Coup de Feu » — saison 1, épisode 19.\nModule StockVision · Chapitre : 3 - Prédictions des commandes\n\nFoodEatUp est le logiciel qui réunit la caisse, le stock, les plannings, l'HACCP et le marketing d'un restaurant au même endroit.\n",
+        "legende": "Ton chiffre d'affaires, sans outil. Ça rebondit rarement tout seul.\n\nFoodEatUp regarde tes ventes passées et te dit quoi produire demain. Ton chiffre d'affaires ne dépend plus de ton intuition du lundi matin.\n\nConcrètement : un stock juste et une marge qu'on voit avant de fixer le prix.\n\n— — —\n\n🔗 https://site.foodeatup.com/\n\n📞 Une démo ? 06 14 18 92 25\n🌐 foodeatup.com\n\nSérie « Le Coup de Feu » — saison 1, épisode 19.\nModule StockVision · Chapitre : 3 - Prédictions des commandes\n\nFoodEatUp est le logiciel qui réunit la caisse, le stock, les plannings, l'HACCP et le marketing d'un restaurant au même endroit.\n",
         "hashtags": [
           "Shorts",
           "restaurant",
@@ -2244,7 +2244,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "prédictions des commandes",
           "stockvision restaurant"
         ],
-        "cta": "Le tutoriel pas-à-pas",
+        "cta": "Découvrir FoodEatUp",
         "titre": "Prédictions des commandes — StockVision | FoodEatUp"
       }
     },
@@ -2264,7 +2264,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
   "EP020": {
     "publications": {
       "facebook": {
-        "legende": "Lui, il a réservé. Tes vrais clients aussi devraient pouvoir.\n\nTu ajoutes une réservation en dix secondes, la table libre est proposée automatiquement. Et tes clients peuvent le faire eux-mêmes, depuis ton site.\n\n👉 Le tutoriel complet : https://drive.google.com/file/d/1ITy-Ia2Q3FSeKSRRd4bWEFw4eDlzFZ6q/view\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "legende": "Lui, il a réservé. Tes vrais clients aussi devraient pouvoir.\n\nTu ajoutes une réservation en dix secondes, la table libre est proposée automatiquement. Et tes clients peuvent le faire eux-mêmes, depuis ton site.\n\n👉 Tout FoodEatUp : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
         "hashtags": [
           "restaurant",
           "restaurateur",
@@ -2281,10 +2281,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "ajouter une réservation",
           "réservation restaurant"
         ],
-        "cta": "Voir le tutoriel complet"
+        "cta": "Découvrir FoodEatUp"
       },
       "instagram": {
-        "legende": "Lui, il a réservé.\nTes vrais clients aussi devraient pouvoir.\n\nTu ajoutes une réservation en dix secondes, la table libre est proposée automatiquement. Et tes clients peuvent le faire eux-mêmes, depuis ton site.\n\nLe pas-à-pas complet est dans notre Academy — lien en bio.\nUne démo ? 06 14 18 92 25",
+        "legende": "Lui, il a réservé.\nTes vrais clients aussi devraient pouvoir.\n\nTu ajoutes une réservation en dix secondes, la table libre est proposée automatiquement. Et tes clients peuvent le faire eux-mêmes, depuis ton site.\n\nTout est expliqué sur notre site — lien en bio.\nUne démo ? 06 14 18 92 25",
         "hashtags": [
           "restaurant",
           "restaurateur",
@@ -2305,7 +2305,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "ajouter une réservation",
           "réservation restaurant"
         ],
-        "cta": "Le pas-à-pas est en bio"
+        "cta": "Tout est en bio"
       },
       "tiktok": {
         "legende": "Lui, il a réservé. 😅\nTes vrais clients aussi devraient pouvoir.\n\nTu ajoutes une réservation en dix secondes, la table libre est proposée automatiquement.",
@@ -2323,10 +2323,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "ajouter une réservation",
           "réservation restaurant"
         ],
-        "cta": "Tuto complet en bio"
+        "cta": "Lien en bio"
       },
       "linkedin": {
-        "legende": "Lui, il a réservé.\n\nTu ajoutes une réservation en dix secondes, la table libre est proposée automatiquement. Et tes clients peuvent le faire eux-mêmes, depuis ton site.\n\nConcrètement : un plan de salle qui reflète la réalité, minute par minute.\n\nLe tutoriel pas-à-pas : https://drive.google.com/file/d/1ITy-Ia2Q3FSeKSRRd4bWEFw4eDlzFZ6q/view\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "legende": "Lui, il a réservé.\n\nTu ajoutes une réservation en dix secondes, la table libre est proposée automatiquement. Et tes clients peuvent le faire eux-mêmes, depuis ton site.\n\nConcrètement : un plan de salle qui reflète la réalité, minute par minute.\n\nEn savoir plus : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
         "hashtags": [
           "restauration",
           "foodeatup",
@@ -2340,10 +2340,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "ajouter une réservation",
           "réservation restaurant"
         ],
-        "cta": "Voir le tutoriel pas-à-pas"
+        "cta": "Découvrir FoodEatUp"
       },
       "youtube": {
-        "legende": "Lui, il a réservé. Tes vrais clients aussi devraient pouvoir.\n\nTu ajoutes une réservation en dix secondes, la table libre est proposée automatiquement. Et tes clients peuvent le faire eux-mêmes, depuis ton site.\n\nConcrètement : un plan de salle qui reflète la réalité, minute par minute.\n\n— — —\n\n📺 Le tutoriel pas-à-pas : https://drive.google.com/file/d/1ITy-Ia2Q3FSeKSRRd4bWEFw4eDlzFZ6q/view\n\n📞 Une démo ? 06 14 18 92 25\n🌐 foodeatup.com\n\nSérie « Le Coup de Feu » — saison 1, épisode 20.\nModule Réservation · Chapitre : 2 - Ajouter une réservation\n\nFoodEatUp est le logiciel qui réunit la caisse, le stock, les plannings, l'HACCP et le marketing d'un restaurant au même endroit.\n",
+        "legende": "Lui, il a réservé. Tes vrais clients aussi devraient pouvoir.\n\nTu ajoutes une réservation en dix secondes, la table libre est proposée automatiquement. Et tes clients peuvent le faire eux-mêmes, depuis ton site.\n\nConcrètement : un plan de salle qui reflète la réalité, minute par minute.\n\n— — —\n\n🔗 https://site.foodeatup.com/\n\n📞 Une démo ? 06 14 18 92 25\n🌐 foodeatup.com\n\nSérie « Le Coup de Feu » — saison 1, épisode 20.\nModule Réservation · Chapitre : 2 - Ajouter une réservation\n\nFoodEatUp est le logiciel qui réunit la caisse, le stock, les plannings, l'HACCP et le marketing d'un restaurant au même endroit.\n",
         "hashtags": [
           "Shorts",
           "restaurant",
@@ -2362,7 +2362,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "ajouter une réservation",
           "réservation restaurant"
         ],
-        "cta": "Le tutoriel pas-à-pas",
+        "cta": "Découvrir FoodEatUp",
         "titre": "Ajouter une réservation — Réservation | FoodEatUp"
       }
     },
@@ -2384,7 +2384,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
   "EP021": {
     "publications": {
       "facebook": {
-        "legende": "Le vrai ennemi du service. Un KDS, et le combat s'arrête.\n\nTu crées tes postes : chaud, froid, dessert. Chaque plat part au bon écran. Plus d'imprimante à secouer au milieu du service.\n\n👉 Le tutoriel complet : https://drive.google.com/file/d/1Q25eSBcjIuq1XkHnJkFN_QJyK23o1GVg/view\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "legende": "Le vrai ennemi du service. Un KDS, et le combat s'arrête.\n\nTu crées tes postes : chaud, froid, dessert. Chaque plat part au bon écran. Plus d'imprimante à secouer au milieu du service.\n\n👉 Tout FoodEatUp : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
         "hashtags": [
           "restaurant",
           "restaurateur",
@@ -2401,10 +2401,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "créer tes postes kds",
           "kds restaurant"
         ],
-        "cta": "Voir le tutoriel complet"
+        "cta": "Découvrir FoodEatUp"
       },
       "instagram": {
-        "legende": "Le vrai ennemi du service.\nUn KDS, et le combat s'arrête.\n\nTu crées tes postes : chaud, froid, dessert. Chaque plat part au bon écran. Plus d'imprimante à secouer au milieu du service.\n\nLe pas-à-pas complet est dans notre Academy — lien en bio.\nUne démo ? 06 14 18 92 25",
+        "legende": "Le vrai ennemi du service.\nUn KDS, et le combat s'arrête.\n\nTu crées tes postes : chaud, froid, dessert. Chaque plat part au bon écran. Plus d'imprimante à secouer au milieu du service.\n\nTout est expliqué sur notre site — lien en bio.\nUne démo ? 06 14 18 92 25",
         "hashtags": [
           "restaurant",
           "restaurateur",
@@ -2425,7 +2425,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "créer tes postes kds",
           "kds restaurant"
         ],
-        "cta": "Le pas-à-pas est en bio"
+        "cta": "Tout est en bio"
       },
       "tiktok": {
         "legende": "Le vrai ennemi du service. 😅\nUn KDS, et le combat s'arrête.\n\nTu crées tes postes : chaud, froid, dessert.",
@@ -2443,10 +2443,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "créer tes postes kds",
           "kds restaurant"
         ],
-        "cta": "Tuto complet en bio"
+        "cta": "Lien en bio"
       },
       "linkedin": {
-        "legende": "Le vrai ennemi du service.\n\nTu crées tes postes : chaud, froid, dessert. Chaque plat part au bon écran. Plus d'imprimante à secouer au milieu du service.\n\nConcrètement : une cuisine qui sait quoi sortir, et quand.\n\nLe tutoriel pas-à-pas : https://drive.google.com/file/d/1Q25eSBcjIuq1XkHnJkFN_QJyK23o1GVg/view\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "legende": "Le vrai ennemi du service.\n\nTu crées tes postes : chaud, froid, dessert. Chaque plat part au bon écran. Plus d'imprimante à secouer au milieu du service.\n\nConcrètement : une cuisine qui sait quoi sortir, et quand.\n\nEn savoir plus : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
         "hashtags": [
           "restauration",
           "foodeatup",
@@ -2460,10 +2460,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "créer tes postes kds",
           "kds restaurant"
         ],
-        "cta": "Voir le tutoriel pas-à-pas"
+        "cta": "Découvrir FoodEatUp"
       },
       "youtube": {
-        "legende": "Le vrai ennemi du service. Un KDS, et le combat s'arrête.\n\nTu crées tes postes : chaud, froid, dessert. Chaque plat part au bon écran. Plus d'imprimante à secouer au milieu du service.\n\nConcrètement : une cuisine qui sait quoi sortir, et quand.\n\n— — —\n\n📺 Le tutoriel pas-à-pas : https://drive.google.com/file/d/1Q25eSBcjIuq1XkHnJkFN_QJyK23o1GVg/view\n\n📞 Une démo ? 06 14 18 92 25\n🌐 foodeatup.com\n\nSérie « Le Coup de Feu » — saison 1, épisode 21.\nModule KDS · Chapitre : 1 - Créer tes postes KDS\n\nFoodEatUp est le logiciel qui réunit la caisse, le stock, les plannings, l'HACCP et le marketing d'un restaurant au même endroit.\n",
+        "legende": "Le vrai ennemi du service. Un KDS, et le combat s'arrête.\n\nTu crées tes postes : chaud, froid, dessert. Chaque plat part au bon écran. Plus d'imprimante à secouer au milieu du service.\n\nConcrètement : une cuisine qui sait quoi sortir, et quand.\n\n— — —\n\n🔗 https://site.foodeatup.com/\n\n📞 Une démo ? 06 14 18 92 25\n🌐 foodeatup.com\n\nSérie « Le Coup de Feu » — saison 1, épisode 21.\nModule KDS · Chapitre : 1 - Créer tes postes KDS\n\nFoodEatUp est le logiciel qui réunit la caisse, le stock, les plannings, l'HACCP et le marketing d'un restaurant au même endroit.\n",
         "hashtags": [
           "Shorts",
           "restaurant",
@@ -2483,7 +2483,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "créer tes postes kds",
           "kds restaurant"
         ],
-        "cta": "Le tutoriel pas-à-pas",
+        "cta": "Découvrir FoodEatUp",
         "titre": "Créer tes postes KDS — KDS | FoodEatUp"
       }
     },
@@ -2506,7 +2506,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
   "EP022": {
     "publications": {
       "facebook": {
-        "legende": "Mille euros par mois. Pour dix logiciels qui ne se parlent même pas.\n\nTout est déjà là : caisse, stock, planning, marketing, HACCP. Un seul abonnement, une seule base de données. Tes outils arrêtent de s'ignorer.\n\n👉 Le tutoriel complet : https://drive.google.com/file/d/16kN9JwGuVugkCtjQ93OObZ2tAlmsbgZl/view\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "legende": "Mille euros par mois. Pour dix logiciels qui ne se parlent même pas.\n\nTout est déjà là : caisse, stock, planning, marketing, HACCP. Un seul abonnement, une seule base de données. Tes outils arrêtent de s'ignorer.\n\n👉 Tout FoodEatUp : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
         "hashtags": [
           "restaurant",
           "restaurateur",
@@ -2523,10 +2523,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "marketplace de prompts",
           "predibot restaurant"
         ],
-        "cta": "Voir le tutoriel complet"
+        "cta": "Découvrir FoodEatUp"
       },
       "instagram": {
-        "legende": "Mille euros par mois.\nPour dix logiciels qui ne se parlent même pas.\n\nTout est déjà là : caisse, stock, planning, marketing, HACCP. Un seul abonnement, une seule base de données. Tes outils arrêtent de s'ignorer.\n\nLe pas-à-pas complet est dans notre Academy — lien en bio.\nUne démo ? 06 14 18 92 25",
+        "legende": "Mille euros par mois.\nPour dix logiciels qui ne se parlent même pas.\n\nTout est déjà là : caisse, stock, planning, marketing, HACCP. Un seul abonnement, une seule base de données. Tes outils arrêtent de s'ignorer.\n\nTout est expliqué sur notre site — lien en bio.\nUne démo ? 06 14 18 92 25",
         "hashtags": [
           "restaurant",
           "restaurateur",
@@ -2548,7 +2548,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "marketplace de prompts",
           "predibot restaurant"
         ],
-        "cta": "Le pas-à-pas est en bio"
+        "cta": "Tout est en bio"
       },
       "tiktok": {
         "legende": "Mille euros par mois. 😅\nPour dix logiciels qui ne se parlent même pas.\n\nTout est déjà là : caisse, stock, planning, marketing, HACCP.",
@@ -2566,10 +2566,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "marketplace de prompts",
           "predibot restaurant"
         ],
-        "cta": "Tuto complet en bio"
+        "cta": "Lien en bio"
       },
       "linkedin": {
-        "legende": "Mille euros par mois.\n\nTout est déjà là : caisse, stock, planning, marketing, HACCP. Un seul abonnement, une seule base de données. Tes outils arrêtent de s'ignorer.\n\nConcrètement : voir venir la journée au lieu de la subir.\n\nLe tutoriel pas-à-pas : https://drive.google.com/file/d/16kN9JwGuVugkCtjQ93OObZ2tAlmsbgZl/view\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "legende": "Mille euros par mois.\n\nTout est déjà là : caisse, stock, planning, marketing, HACCP. Un seul abonnement, une seule base de données. Tes outils arrêtent de s'ignorer.\n\nConcrètement : voir venir la journée au lieu de la subir.\n\nEn savoir plus : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
         "hashtags": [
           "restauration",
           "foodeatup",
@@ -2583,10 +2583,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "marketplace de prompts",
           "predibot restaurant"
         ],
-        "cta": "Voir le tutoriel pas-à-pas"
+        "cta": "Découvrir FoodEatUp"
       },
       "youtube": {
-        "legende": "Mille euros par mois. Pour dix logiciels qui ne se parlent même pas.\n\nTout est déjà là : caisse, stock, planning, marketing, HACCP. Un seul abonnement, une seule base de données. Tes outils arrêtent de s'ignorer.\n\nConcrètement : voir venir la journée au lieu de la subir.\n\n— — —\n\n📺 Le tutoriel pas-à-pas : https://drive.google.com/file/d/16kN9JwGuVugkCtjQ93OObZ2tAlmsbgZl/view\n\n📞 Une démo ? 06 14 18 92 25\n🌐 foodeatup.com\n\nSérie « Le Coup de Feu » — saison 1, épisode 22.\nModule PrediBot · Chapitre : 2 - Marketplace de prompts\n\nFoodEatUp est le logiciel qui réunit la caisse, le stock, les plannings, l'HACCP et le marketing d'un restaurant au même endroit.\n",
+        "legende": "Mille euros par mois. Pour dix logiciels qui ne se parlent même pas.\n\nTout est déjà là : caisse, stock, planning, marketing, HACCP. Un seul abonnement, une seule base de données. Tes outils arrêtent de s'ignorer.\n\nConcrètement : voir venir la journée au lieu de la subir.\n\n— — —\n\n🔗 https://site.foodeatup.com/\n\n📞 Une démo ? 06 14 18 92 25\n🌐 foodeatup.com\n\nSérie « Le Coup de Feu » — saison 1, épisode 22.\nModule PrediBot · Chapitre : 2 - Marketplace de prompts\n\nFoodEatUp est le logiciel qui réunit la caisse, le stock, les plannings, l'HACCP et le marketing d'un restaurant au même endroit.\n",
         "hashtags": [
           "Shorts",
           "restaurant",
@@ -2606,7 +2606,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "marketplace de prompts",
           "predibot restaurant"
         ],
-        "cta": "Le tutoriel pas-à-pas",
+        "cta": "Découvrir FoodEatUp",
         "titre": "Marketplace de prompts — PrediBot | FoodEatUp"
       }
     },
@@ -2628,7 +2628,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
   "EP023": {
     "publications": {
       "facebook": {
-        "legende": "Ton automatisation actuelle. Automatiser, oui. Mais bien.\n\nIris regarde ton exploitation et te propose quoi publier, et pourquoi. Tu valides ou tu refuses. L'automatisation te sert, elle ne t'échappe pas.\n\n👉 Le tutoriel complet : https://drive.google.com/file/d/1NaTIjzXl8NU1dwX3Xrxl0DrhKIbVy34F/view\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "legende": "Ton automatisation actuelle. Automatiser, oui. Mais bien.\n\nIris regarde ton exploitation et te propose quoi publier, et pourquoi. Tu valides ou tu refuses. L'automatisation te sert, elle ne t'échappe pas.\n\n👉 Tout FoodEatUp : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
         "hashtags": [
           "restaurant",
           "restaurateur",
@@ -2644,10 +2644,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "fidélisation restaurant",
           "calendrier ia avec iris"
         ],
-        "cta": "Voir le tutoriel complet"
+        "cta": "Découvrir FoodEatUp"
       },
       "instagram": {
-        "legende": "Ton automatisation actuelle.\nAutomatiser, oui. Mais bien.\n\nIris regarde ton exploitation et te propose quoi publier, et pourquoi. Tu valides ou tu refuses. L'automatisation te sert, elle ne t'échappe pas.\n\nLe pas-à-pas complet est dans notre Academy — lien en bio.\nUne démo ? 06 14 18 92 25",
+        "legende": "Ton automatisation actuelle.\nAutomatiser, oui. Mais bien.\n\nIris regarde ton exploitation et te propose quoi publier, et pourquoi. Tu valides ou tu refuses. L'automatisation te sert, elle ne t'échappe pas.\n\nTout est expliqué sur notre site — lien en bio.\nUne démo ? 06 14 18 92 25",
         "hashtags": [
           "restaurant",
           "restaurateur",
@@ -2668,7 +2668,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "fidélisation restaurant",
           "calendrier ia avec iris"
         ],
-        "cta": "Le pas-à-pas est en bio"
+        "cta": "Tout est en bio"
       },
       "tiktok": {
         "legende": "Ton automatisation actuelle. 😅\nAutomatiser, oui. Mais bien.\n\nIris regarde ton exploitation et te propose quoi publier, et pourquoi.",
@@ -2685,10 +2685,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "fidélisation restaurant",
           "calendrier ia avec iris"
         ],
-        "cta": "Tuto complet en bio"
+        "cta": "Lien en bio"
       },
       "linkedin": {
-        "legende": "Ton automatisation actuelle.\n\nIris regarde ton exploitation et te propose quoi publier, et pourquoi. Tu valides ou tu refuses. L'automatisation te sert, elle ne t'échappe pas.\n\nConcrètement : une salle qui se remplit avant l'ouverture.\n\nLe tutoriel pas-à-pas : https://drive.google.com/file/d/1NaTIjzXl8NU1dwX3Xrxl0DrhKIbVy34F/view\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "legende": "Ton automatisation actuelle.\n\nIris regarde ton exploitation et te propose quoi publier, et pourquoi. Tu valides ou tu refuses. L'automatisation te sert, elle ne t'échappe pas.\n\nConcrètement : une salle qui se remplit avant l'ouverture.\n\nEn savoir plus : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
         "hashtags": [
           "restauration",
           "foodeatup",
@@ -2701,10 +2701,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "fidélisation restaurant",
           "calendrier ia avec iris"
         ],
-        "cta": "Voir le tutoriel pas-à-pas"
+        "cta": "Découvrir FoodEatUp"
       },
       "youtube": {
-        "legende": "Ton automatisation actuelle. Automatiser, oui. Mais bien.\n\nIris regarde ton exploitation et te propose quoi publier, et pourquoi. Tu valides ou tu refuses. L'automatisation te sert, elle ne t'échappe pas.\n\nConcrètement : une salle qui se remplit avant l'ouverture.\n\n— — —\n\n📺 Le tutoriel pas-à-pas : https://drive.google.com/file/d/1NaTIjzXl8NU1dwX3Xrxl0DrhKIbVy34F/view\n\n📞 Une démo ? 06 14 18 92 25\n🌐 foodeatup.com\n\nSérie « Le Coup de Feu » — saison 1, épisode 23.\nModule Marketing · Chapitre : 24 - Calendrier IA avec Iris\n\nFoodEatUp est le logiciel qui réunit la caisse, le stock, les plannings, l'HACCP et le marketing d'un restaurant au même endroit.\n",
+        "legende": "Ton automatisation actuelle. Automatiser, oui. Mais bien.\n\nIris regarde ton exploitation et te propose quoi publier, et pourquoi. Tu valides ou tu refuses. L'automatisation te sert, elle ne t'échappe pas.\n\nConcrètement : une salle qui se remplit avant l'ouverture.\n\n— — —\n\n🔗 https://site.foodeatup.com/\n\n📞 Une démo ? 06 14 18 92 25\n🌐 foodeatup.com\n\nSérie « Le Coup de Feu » — saison 1, épisode 23.\nModule Marketing · Chapitre : 24 - Calendrier IA avec Iris\n\nFoodEatUp est le logiciel qui réunit la caisse, le stock, les plannings, l'HACCP et le marketing d'un restaurant au même endroit.\n",
         "hashtags": [
           "Shorts",
           "restaurant",
@@ -2723,7 +2723,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "fidélisation restaurant",
           "calendrier ia avec iris"
         ],
-        "cta": "Le tutoriel pas-à-pas",
+        "cta": "Découvrir FoodEatUp",
         "titre": "Calendrier IA avec Iris — Marketing | FoodEatUp"
       }
     },
@@ -2744,7 +2744,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
   "EP024": {
     "publications": {
       "facebook": {
-        "legende": "Encore une commission en moins. Récupère tes commandes en direct.\n\nTon site de commande est créé par l'IA depuis ta carte. Tes clients commandent en direct, chez toi. Zéro commission sur ces commandes-là.\n\n👉 Le tutoriel complet : https://drive.google.com/file/d/1MEMdJJMq2MhQ6H-dU5Nb5ls8ifoqM3U4/view\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "legende": "Encore une commission en moins. Récupère tes commandes en direct.\n\nTon site de commande est créé par l'IA depuis ta carte. Tes clients commandent en direct, chez toi. Zéro commission sur ces commandes-là.\n\n👉 Tout FoodEatUp : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
         "hashtags": [
           "restaurant",
           "restaurateur",
@@ -2761,10 +2761,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "créer un site par ia",
           "mon site restaurant"
         ],
-        "cta": "Voir le tutoriel complet"
+        "cta": "Découvrir FoodEatUp"
       },
       "instagram": {
-        "legende": "Encore une commission en moins.\nRécupère tes commandes en direct.\n\nTon site de commande est créé par l'IA depuis ta carte. Tes clients commandent en direct, chez toi. Zéro commission sur ces commandes-là.\n\nLe pas-à-pas complet est dans notre Academy — lien en bio.\nUne démo ? 06 14 18 92 25",
+        "legende": "Encore une commission en moins.\nRécupère tes commandes en direct.\n\nTon site de commande est créé par l'IA depuis ta carte. Tes clients commandent en direct, chez toi. Zéro commission sur ces commandes-là.\n\nTout est expliqué sur notre site — lien en bio.\nUne démo ? 06 14 18 92 25",
         "hashtags": [
           "restaurant",
           "restaurateur",
@@ -2785,7 +2785,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "créer un site par ia",
           "mon site restaurant"
         ],
-        "cta": "Le pas-à-pas est en bio"
+        "cta": "Tout est en bio"
       },
       "tiktok": {
         "legende": "Encore une commission en moins. 😅\nRécupère tes commandes en direct.\n\nTon site de commande est créé par l'IA depuis ta carte.",
@@ -2803,10 +2803,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "créer un site par ia",
           "mon site restaurant"
         ],
-        "cta": "Tuto complet en bio"
+        "cta": "Lien en bio"
       },
       "linkedin": {
-        "legende": "Encore une commission en moins.\n\nTon site de commande est créé par l'IA depuis ta carte. Tes clients commandent en direct, chez toi. Zéro commission sur ces commandes-là.\n\nConcrètement : un site qui prend des commandes, pas une carte de visite.\n\nLe tutoriel pas-à-pas : https://drive.google.com/file/d/1MEMdJJMq2MhQ6H-dU5Nb5ls8ifoqM3U4/view\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "legende": "Encore une commission en moins.\n\nTon site de commande est créé par l'IA depuis ta carte. Tes clients commandent en direct, chez toi. Zéro commission sur ces commandes-là.\n\nConcrètement : un site qui prend des commandes, pas une carte de visite.\n\nEn savoir plus : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
         "hashtags": [
           "restauration",
           "foodeatup",
@@ -2820,10 +2820,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "créer un site par ia",
           "mon site restaurant"
         ],
-        "cta": "Voir le tutoriel pas-à-pas"
+        "cta": "Découvrir FoodEatUp"
       },
       "youtube": {
-        "legende": "Encore une commission en moins. Récupère tes commandes en direct.\n\nTon site de commande est créé par l'IA depuis ta carte. Tes clients commandent en direct, chez toi. Zéro commission sur ces commandes-là.\n\nConcrètement : un site qui prend des commandes, pas une carte de visite.\n\n— — —\n\n📺 Le tutoriel pas-à-pas : https://drive.google.com/file/d/1MEMdJJMq2MhQ6H-dU5Nb5ls8ifoqM3U4/view\n\n📞 Une démo ? 06 14 18 92 25\n🌐 foodeatup.com\n\nSérie « Le Coup de Feu » — saison 1, épisode 24.\nModule Mon Site · Chapitre : 5 - Créer un site par IA\n\nFoodEatUp est le logiciel qui réunit la caisse, le stock, les plannings, l'HACCP et le marketing d'un restaurant au même endroit.\n",
+        "legende": "Encore une commission en moins. Récupère tes commandes en direct.\n\nTon site de commande est créé par l'IA depuis ta carte. Tes clients commandent en direct, chez toi. Zéro commission sur ces commandes-là.\n\nConcrètement : un site qui prend des commandes, pas une carte de visite.\n\n— — —\n\n🔗 https://site.foodeatup.com/\n\n📞 Une démo ? 06 14 18 92 25\n🌐 foodeatup.com\n\nSérie « Le Coup de Feu » — saison 1, épisode 24.\nModule Mon Site · Chapitre : 5 - Créer un site par IA\n\nFoodEatUp est le logiciel qui réunit la caisse, le stock, les plannings, l'HACCP et le marketing d'un restaurant au même endroit.\n",
         "hashtags": [
           "Shorts",
           "restaurant",
@@ -2842,7 +2842,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "créer un site par ia",
           "mon site restaurant"
         ],
-        "cta": "Le tutoriel pas-à-pas",
+        "cta": "Découvrir FoodEatUp",
         "titre": "Créer un site par IA — Mon Site | FoodEatUp"
       }
     },
@@ -2862,7 +2862,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
   "EP025": {
     "publications": {
       "facebook": {
-        "legende": "Quand tu lances une promo sans données. Ça éclabousse. Et rarement toi.\n\nTu ne lances plus une promo au hasard. FoodEatUp te propose la campagne depuis tes vraies données clients : qui cibler, avec quelle offre, quel jour.\n\n👉 Le tutoriel complet : https://drive.google.com/file/d/1awOr8pckNt0S-V2iyhlnBSS171wM0fkF/view\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "legende": "Quand tu lances une promo sans données. Ça éclabousse. Et rarement toi.\n\nTu ne lances plus une promo au hasard. FoodEatUp te propose la campagne depuis tes vraies données clients : qui cibler, avec quelle offre, quel jour.\n\n👉 Tout FoodEatUp : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
         "hashtags": [
           "restaurant",
           "restaurateur",
@@ -2878,10 +2878,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "fidélisation restaurant",
           "campagne 100 % ia"
         ],
-        "cta": "Voir le tutoriel complet"
+        "cta": "Découvrir FoodEatUp"
       },
       "instagram": {
-        "legende": "Quand tu lances une promo sans données.\nÇa éclabousse. Et rarement toi.\n\nTu ne lances plus une promo au hasard. FoodEatUp te propose la campagne depuis tes vraies données clients : qui cibler, avec quelle offre, quel jour.\n\nLe pas-à-pas complet est dans notre Academy — lien en bio.\nUne démo ? 06 14 18 92 25",
+        "legende": "Quand tu lances une promo sans données.\nÇa éclabousse. Et rarement toi.\n\nTu ne lances plus une promo au hasard. FoodEatUp te propose la campagne depuis tes vraies données clients : qui cibler, avec quelle offre, quel jour.\n\nTout est expliqué sur notre site — lien en bio.\nUne démo ? 06 14 18 92 25",
         "hashtags": [
           "restaurant",
           "restaurateur",
@@ -2902,7 +2902,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "fidélisation restaurant",
           "campagne 100 % ia"
         ],
-        "cta": "Le pas-à-pas est en bio"
+        "cta": "Tout est en bio"
       },
       "tiktok": {
         "legende": "Quand tu lances une promo sans données. 😅\nÇa éclabousse. Et rarement toi.\n\nTu ne lances plus une promo au hasard.",
@@ -2919,10 +2919,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "fidélisation restaurant",
           "campagne 100 % ia"
         ],
-        "cta": "Tuto complet en bio"
+        "cta": "Lien en bio"
       },
       "linkedin": {
-        "legende": "Quand tu lances une promo sans données.\n\nTu ne lances plus une promo au hasard. FoodEatUp te propose la campagne depuis tes vraies données clients : qui cibler, avec quelle offre, quel jour.\n\nConcrètement : une salle qui se remplit avant l'ouverture.\n\nLe tutoriel pas-à-pas : https://drive.google.com/file/d/1awOr8pckNt0S-V2iyhlnBSS171wM0fkF/view\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "legende": "Quand tu lances une promo sans données.\n\nTu ne lances plus une promo au hasard. FoodEatUp te propose la campagne depuis tes vraies données clients : qui cibler, avec quelle offre, quel jour.\n\nConcrètement : une salle qui se remplit avant l'ouverture.\n\nEn savoir plus : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
         "hashtags": [
           "restauration",
           "foodeatup",
@@ -2935,10 +2935,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "fidélisation restaurant",
           "campagne 100 % ia"
         ],
-        "cta": "Voir le tutoriel pas-à-pas"
+        "cta": "Découvrir FoodEatUp"
       },
       "youtube": {
-        "legende": "Quand tu lances une promo sans données. Ça éclabousse. Et rarement toi.\n\nTu ne lances plus une promo au hasard. FoodEatUp te propose la campagne depuis tes vraies données clients : qui cibler, avec quelle offre, quel jour.\n\nConcrètement : une salle qui se remplit avant l'ouverture.\n\n— — —\n\n📺 Le tutoriel pas-à-pas : https://drive.google.com/file/d/1awOr8pckNt0S-V2iyhlnBSS171wM0fkF/view\n\n📞 Une démo ? 06 14 18 92 25\n🌐 foodeatup.com\n\nSérie « Le Coup de Feu » — saison 1, épisode 25.\nModule Marketing · Chapitre : 6 - Campagne 100 % IA\n\nFoodEatUp est le logiciel qui réunit la caisse, le stock, les plannings, l'HACCP et le marketing d'un restaurant au même endroit.\n",
+        "legende": "Quand tu lances une promo sans données. Ça éclabousse. Et rarement toi.\n\nTu ne lances plus une promo au hasard. FoodEatUp te propose la campagne depuis tes vraies données clients : qui cibler, avec quelle offre, quel jour.\n\nConcrètement : une salle qui se remplit avant l'ouverture.\n\n— — —\n\n🔗 https://site.foodeatup.com/\n\n📞 Une démo ? 06 14 18 92 25\n🌐 foodeatup.com\n\nSérie « Le Coup de Feu » — saison 1, épisode 25.\nModule Marketing · Chapitre : 6 - Campagne 100 % IA\n\nFoodEatUp est le logiciel qui réunit la caisse, le stock, les plannings, l'HACCP et le marketing d'un restaurant au même endroit.\n",
         "hashtags": [
           "Shorts",
           "restaurant",
@@ -2957,7 +2957,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "fidélisation restaurant",
           "campagne 100 % ia"
         ],
-        "cta": "Le tutoriel pas-à-pas",
+        "cta": "Découvrir FoodEatUp",
         "titre": "Campagne 100 % IA — Marketing | FoodEatUp"
       }
     },
@@ -2979,7 +2979,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
   "EP026": {
     "publications": {
       "facebook": {
-        "legende": "Ton stock avant le week-end. Prévois, au lieu de subir.\n\nTa liste de courses se construit depuis ta production prévue. Tu l'envoies au fournisseur depuis l'écran. Le week-end se prépare le mercredi.\n\n👉 Le tutoriel complet : https://drive.google.com/file/d/1biVi8MCCRbLYAEZHfNd-Gw-kAcW8jhiL/view\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "legende": "Ton stock avant le week-end. Prévois, au lieu de subir.\n\nTa liste de courses se construit depuis ta production prévue. Tu l'envoies au fournisseur depuis l'écran. Le week-end se prépare le mercredi.\n\n👉 Tout FoodEatUp : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
         "hashtags": [
           "restaurant",
           "restaurateur",
@@ -2996,10 +2996,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "envoyer sa liste de courses au fournisseur",
           "stockvision restaurant"
         ],
-        "cta": "Voir le tutoriel complet"
+        "cta": "Découvrir FoodEatUp"
       },
       "instagram": {
-        "legende": "Ton stock avant le week-end.\nPrévois, au lieu de subir.\n\nTa liste de courses se construit depuis ta production prévue. Tu l'envoies au fournisseur depuis l'écran. Le week-end se prépare le mercredi.\n\nLe pas-à-pas complet est dans notre Academy — lien en bio.\nUne démo ? 06 14 18 92 25",
+        "legende": "Ton stock avant le week-end.\nPrévois, au lieu de subir.\n\nTa liste de courses se construit depuis ta production prévue. Tu l'envoies au fournisseur depuis l'écran. Le week-end se prépare le mercredi.\n\nTout est expliqué sur notre site — lien en bio.\nUne démo ? 06 14 18 92 25",
         "hashtags": [
           "restaurant",
           "restaurateur",
@@ -3022,7 +3022,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "envoyer sa liste de courses au fournisseur",
           "stockvision restaurant"
         ],
-        "cta": "Le pas-à-pas est en bio"
+        "cta": "Tout est en bio"
       },
       "tiktok": {
         "legende": "Ton stock avant le week-end. 😅\nPrévois, au lieu de subir.\n\nTa liste de courses se construit depuis ta production prévue.",
@@ -3040,10 +3040,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "envoyer sa liste de courses au fournisseur",
           "stockvision restaurant"
         ],
-        "cta": "Tuto complet en bio"
+        "cta": "Lien en bio"
       },
       "linkedin": {
-        "legende": "Ton stock avant le week-end.\n\nTa liste de courses se construit depuis ta production prévue. Tu l'envoies au fournisseur depuis l'écran. Le week-end se prépare le mercredi.\n\nConcrètement : un stock juste et une marge qu'on voit avant de fixer le prix.\n\nLe tutoriel pas-à-pas : https://drive.google.com/file/d/1biVi8MCCRbLYAEZHfNd-Gw-kAcW8jhiL/view\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "legende": "Ton stock avant le week-end.\n\nTa liste de courses se construit depuis ta production prévue. Tu l'envoies au fournisseur depuis l'écran. Le week-end se prépare le mercredi.\n\nConcrètement : un stock juste et une marge qu'on voit avant de fixer le prix.\n\nEn savoir plus : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
         "hashtags": [
           "restauration",
           "foodeatup",
@@ -3057,10 +3057,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "envoyer sa liste de courses au fournisseur",
           "stockvision restaurant"
         ],
-        "cta": "Voir le tutoriel pas-à-pas"
+        "cta": "Découvrir FoodEatUp"
       },
       "youtube": {
-        "legende": "Ton stock avant le week-end. Prévois, au lieu de subir.\n\nTa liste de courses se construit depuis ta production prévue. Tu l'envoies au fournisseur depuis l'écran. Le week-end se prépare le mercredi.\n\nConcrètement : un stock juste et une marge qu'on voit avant de fixer le prix.\n\n— — —\n\n📺 Le tutoriel pas-à-pas : https://drive.google.com/file/d/1biVi8MCCRbLYAEZHfNd-Gw-kAcW8jhiL/view\n\n📞 Une démo ? 06 14 18 92 25\n🌐 foodeatup.com\n\nSérie « Le Coup de Feu » — saison 1, épisode 26.\nModule StockVision · Chapitre : 5 - Envoyer sa liste de courses au fournisseur\n\nFoodEatUp est le logiciel qui réunit la caisse, le stock, les plannings, l'HACCP et le marketing d'un restaurant au même endroit.\n",
+        "legende": "Ton stock avant le week-end. Prévois, au lieu de subir.\n\nTa liste de courses se construit depuis ta production prévue. Tu l'envoies au fournisseur depuis l'écran. Le week-end se prépare le mercredi.\n\nConcrètement : un stock juste et une marge qu'on voit avant de fixer le prix.\n\n— — —\n\n🔗 https://site.foodeatup.com/\n\n📞 Une démo ? 06 14 18 92 25\n🌐 foodeatup.com\n\nSérie « Le Coup de Feu » — saison 1, épisode 26.\nModule StockVision · Chapitre : 5 - Envoyer sa liste de courses au fournisseur\n\nFoodEatUp est le logiciel qui réunit la caisse, le stock, les plannings, l'HACCP et le marketing d'un restaurant au même endroit.\n",
         "hashtags": [
           "Shorts",
           "restaurant",
@@ -3081,7 +3081,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "envoyer sa liste de courses au fournisseur",
           "stockvision restaurant"
         ],
-        "cta": "Le tutoriel pas-à-pas",
+        "cta": "Découvrir FoodEatUp",
         "titre": "Envoyer sa liste de courses au fournisseur — StockVision | FoodEatUp"
       }
     },
@@ -3103,7 +3103,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
   "EP027": {
     "publications": {
       "facebook": {
-        "legende": "Ta trésorerie, chaque lundi. Il suffit d'un truc mal placé.\n\nTon Z de caisse en un bouton : le compté, le théorique, l'écart, les moyens de paiement. Tu sais où tu en es tous les lundis matin.\n\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "legende": "Ta trésorerie, chaque lundi. Il suffit d'un truc mal placé.\n\nTon Z de caisse en un bouton : le compté, le théorique, l'écart, les moyens de paiement. Tu sais où tu en es tous les lundis matin.\n\n👉 Tout FoodEatUp : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
         "hashtags": [
           "restaurant",
           "restaurateur",
@@ -3120,10 +3120,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "clôturer sa caisse, le z",
           "caisse pos restaurant"
         ],
-        "cta": "Demander une démo"
+        "cta": "Découvrir FoodEatUp"
       },
       "instagram": {
-        "legende": "Ta trésorerie, chaque lundi.\nIl suffit d'un truc mal placé.\n\nTon Z de caisse en un bouton : le compté, le théorique, l'écart, les moyens de paiement. Tu sais où tu en es tous les lundis matin.\n\nLe pas-à-pas complet est dans notre Academy — lien en bio.\nUne démo ? 06 14 18 92 25",
+        "legende": "Ta trésorerie, chaque lundi.\nIl suffit d'un truc mal placé.\n\nTon Z de caisse en un bouton : le compté, le théorique, l'écart, les moyens de paiement. Tu sais où tu en es tous les lundis matin.\n\nTout est expliqué sur notre site — lien en bio.\nUne démo ? 06 14 18 92 25",
         "hashtags": [
           "restaurant",
           "restaurateur",
@@ -3145,7 +3145,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "clôturer sa caisse, le z",
           "caisse pos restaurant"
         ],
-        "cta": "Demander une démo"
+        "cta": "Tout est en bio"
       },
       "tiktok": {
         "legende": "Ta trésorerie, chaque lundi. 😅\nIl suffit d'un truc mal placé.\n\nTon Z de caisse en un bouton : le compté, le théorique, l'écart, les moyens de paiement.",
@@ -3163,10 +3163,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "clôturer sa caisse, le z",
           "caisse pos restaurant"
         ],
-        "cta": "Demander une démo"
+        "cta": "Lien en bio"
       },
       "linkedin": {
-        "legende": "Ta trésorerie, chaque lundi.\n\nTon Z de caisse en un bouton : le compté, le théorique, l'écart, les moyens de paiement. Tu sais où tu en es tous les lundis matin.\n\nConcrètement : une caisse qui ferme juste, tous les soirs.\n\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "legende": "Ta trésorerie, chaque lundi.\n\nTon Z de caisse en un bouton : le compté, le théorique, l'écart, les moyens de paiement. Tu sais où tu en es tous les lundis matin.\n\nConcrètement : une caisse qui ferme juste, tous les soirs.\n\nEn savoir plus : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
         "hashtags": [
           "restauration",
           "foodeatup",
@@ -3180,10 +3180,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "clôturer sa caisse, le z",
           "caisse pos restaurant"
         ],
-        "cta": "Demander une démo"
+        "cta": "Découvrir FoodEatUp"
       },
       "youtube": {
-        "legende": "Ta trésorerie, chaque lundi. Il suffit d'un truc mal placé.\n\nTon Z de caisse en un bouton : le compté, le théorique, l'écart, les moyens de paiement. Tu sais où tu en es tous les lundis matin.\n\nConcrètement : une caisse qui ferme juste, tous les soirs.\n\n— — —\n\n📞 Une démo ? 06 14 18 92 25\n🌐 foodeatup.com\n\nSérie « Le Coup de Feu » — saison 1, épisode 27.\nModule Caisse POS · Chapitre : 6 - Clôturer sa caisse, le Z\n\nFoodEatUp est le logiciel qui réunit la caisse, le stock, les plannings, l'HACCP et le marketing d'un restaurant au même endroit.\n",
+        "legende": "Ta trésorerie, chaque lundi. Il suffit d'un truc mal placé.\n\nTon Z de caisse en un bouton : le compté, le théorique, l'écart, les moyens de paiement. Tu sais où tu en es tous les lundis matin.\n\nConcrètement : une caisse qui ferme juste, tous les soirs.\n\n— — —\n\n🔗 https://site.foodeatup.com/\n\n📞 Une démo ? 06 14 18 92 25\n🌐 foodeatup.com\n\nSérie « Le Coup de Feu » — saison 1, épisode 27.\nModule Caisse POS · Chapitre : 6 - Clôturer sa caisse, le Z\n\nFoodEatUp est le logiciel qui réunit la caisse, le stock, les plannings, l'HACCP et le marketing d'un restaurant au même endroit.\n",
         "hashtags": [
           "Shorts",
           "restaurant",
@@ -3203,7 +3203,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "clôturer sa caisse, le z",
           "caisse pos restaurant"
         ],
-        "cta": "Demander une démo",
+        "cta": "Découvrir FoodEatUp",
         "titre": "Clôturer sa caisse, le Z — Caisse POS | FoodEatUp"
       }
     },
@@ -3214,7 +3214,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
   "EP028": {
     "publications": {
       "facebook": {
-        "legende": "Tes commandes en ligne, un vendredi. Tout arrive. Nulle part.\n\nUber Eats, Deliveroo, ton site, le comptoir : tout tombe dans la même file. Un vendredi soir, tu regardes un écran, pas quatre.\n\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "legende": "Tes commandes en ligne, un vendredi. Tout arrive. Nulle part.\n\nUber Eats, Deliveroo, ton site, le comptoir : tout tombe dans la même file. Un vendredi soir, tu regardes un écran, pas quatre.\n\n👉 Tout FoodEatUp : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
         "hashtags": [
           "restaurant",
           "restaurateur",
@@ -3231,10 +3231,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "centraliser les commandes",
           "hubrise restaurant"
         ],
-        "cta": "Demander une démo"
+        "cta": "Découvrir FoodEatUp"
       },
       "instagram": {
-        "legende": "Tes commandes en ligne, un vendredi.\nTout arrive. Nulle part.\n\nUber Eats, Deliveroo, ton site, le comptoir : tout tombe dans la même file. Un vendredi soir, tu regardes un écran, pas quatre.\n\nLe pas-à-pas complet est dans notre Academy — lien en bio.\nUne démo ? 06 14 18 92 25",
+        "legende": "Tes commandes en ligne, un vendredi.\nTout arrive. Nulle part.\n\nUber Eats, Deliveroo, ton site, le comptoir : tout tombe dans la même file. Un vendredi soir, tu regardes un écran, pas quatre.\n\nTout est expliqué sur notre site — lien en bio.\nUne démo ? 06 14 18 92 25",
         "hashtags": [
           "restaurant",
           "restaurateur",
@@ -3256,7 +3256,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "centraliser les commandes",
           "hubrise restaurant"
         ],
-        "cta": "Demander une démo"
+        "cta": "Tout est en bio"
       },
       "tiktok": {
         "legende": "Tes commandes en ligne, un vendredi. 😅\nTout arrive. Nulle part.\n\nUber Eats, Deliveroo, ton site, le comptoir : tout tombe dans la même file.",
@@ -3274,10 +3274,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "centraliser les commandes",
           "hubrise restaurant"
         ],
-        "cta": "Demander une démo"
+        "cta": "Lien en bio"
       },
       "linkedin": {
-        "legende": "Tes commandes en ligne, un vendredi.\n\nUber Eats, Deliveroo, ton site, le comptoir : tout tombe dans la même file. Un vendredi soir, tu regardes un écran, pas quatre.\n\nConcrètement : plus de tablette à surveiller dans un coin.\n\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "legende": "Tes commandes en ligne, un vendredi.\n\nUber Eats, Deliveroo, ton site, le comptoir : tout tombe dans la même file. Un vendredi soir, tu regardes un écran, pas quatre.\n\nConcrètement : plus de tablette à surveiller dans un coin.\n\nEn savoir plus : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
         "hashtags": [
           "restauration",
           "foodeatup",
@@ -3291,10 +3291,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "centraliser les commandes",
           "hubrise restaurant"
         ],
-        "cta": "Demander une démo"
+        "cta": "Découvrir FoodEatUp"
       },
       "youtube": {
-        "legende": "Tes commandes en ligne, un vendredi. Tout arrive. Nulle part.\n\nUber Eats, Deliveroo, ton site, le comptoir : tout tombe dans la même file. Un vendredi soir, tu regardes un écran, pas quatre.\n\nConcrètement : plus de tablette à surveiller dans un coin.\n\n— — —\n\n📞 Une démo ? 06 14 18 92 25\n🌐 foodeatup.com\n\nSérie « Le Coup de Feu » — saison 1, épisode 28.\nModule HubRise · Chapitre : 4 - Centraliser les commandes\n\nFoodEatUp est le logiciel qui réunit la caisse, le stock, les plannings, l'HACCP et le marketing d'un restaurant au même endroit.\n",
+        "legende": "Tes commandes en ligne, un vendredi. Tout arrive. Nulle part.\n\nUber Eats, Deliveroo, ton site, le comptoir : tout tombe dans la même file. Un vendredi soir, tu regardes un écran, pas quatre.\n\nConcrètement : plus de tablette à surveiller dans un coin.\n\n— — —\n\n🔗 https://site.foodeatup.com/\n\n📞 Une démo ? 06 14 18 92 25\n🌐 foodeatup.com\n\nSérie « Le Coup de Feu » — saison 1, épisode 28.\nModule HubRise · Chapitre : 4 - Centraliser les commandes\n\nFoodEatUp est le logiciel qui réunit la caisse, le stock, les plannings, l'HACCP et le marketing d'un restaurant au même endroit.\n",
         "hashtags": [
           "Shorts",
           "restaurant",
@@ -3314,7 +3314,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "centraliser les commandes",
           "hubrise restaurant"
         ],
-        "cta": "Demander une démo",
+        "cta": "Découvrir FoodEatUp",
         "titre": "Centraliser les commandes — HubRise | FoodEatUp"
       }
     },
@@ -3332,7 +3332,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
   "EP029": {
     "publications": {
       "facebook": {
-        "legende": "Toi, gérant, en 2026. Personne ne devrait travailler comme ça.\n\nLe brief du jour te dit ce qui compte avant que ça te tombe dessus : les réservations, les productions, les alertes. Tu diriges au lieu de courir.\n\n👉 Le tutoriel complet : https://drive.google.com/file/d/1MWkfZ-OZ_qv2z6QD9VPwabO5XnGd5UaB/view\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "legende": "Toi, gérant, en 2026. Personne ne devrait travailler comme ça.\n\nLe brief du jour te dit ce qui compte avant que ça te tombe dessus : les réservations, les productions, les alertes. Tu diriges au lieu de courir.\n\n👉 Tout FoodEatUp : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
         "hashtags": [
           "restaurant",
           "restaurateur",
@@ -3349,10 +3349,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "lire ses prévisions",
           "predibot restaurant"
         ],
-        "cta": "Voir le tutoriel complet"
+        "cta": "Découvrir FoodEatUp"
       },
       "instagram": {
-        "legende": "Toi, gérant, en 2026.\nPersonne ne devrait travailler comme ça.\n\nLe brief du jour te dit ce qui compte avant que ça te tombe dessus : les réservations, les productions, les alertes. Tu diriges au lieu de courir.\n\nLe pas-à-pas complet est dans notre Academy — lien en bio.\nUne démo ? 06 14 18 92 25",
+        "legende": "Toi, gérant, en 2026.\nPersonne ne devrait travailler comme ça.\n\nLe brief du jour te dit ce qui compte avant que ça te tombe dessus : les réservations, les productions, les alertes. Tu diriges au lieu de courir.\n\nTout est expliqué sur notre site — lien en bio.\nUne démo ? 06 14 18 92 25",
         "hashtags": [
           "restaurant",
           "restaurateur",
@@ -3374,7 +3374,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "lire ses prévisions",
           "predibot restaurant"
         ],
-        "cta": "Le pas-à-pas est en bio"
+        "cta": "Tout est en bio"
       },
       "tiktok": {
         "legende": "Toi, gérant, en 2026. 😅\nPersonne ne devrait travailler comme ça.\n\nLe brief du jour te dit ce qui compte avant que ça te tombe dessus : les réservations, les productions, les alertes.",
@@ -3392,10 +3392,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "lire ses prévisions",
           "predibot restaurant"
         ],
-        "cta": "Tuto complet en bio"
+        "cta": "Lien en bio"
       },
       "linkedin": {
-        "legende": "Toi, gérant, en 2026.\n\nLe brief du jour te dit ce qui compte avant que ça te tombe dessus : les réservations, les productions, les alertes. Tu diriges au lieu de courir.\n\nConcrètement : voir venir la journée au lieu de la subir.\n\nLe tutoriel pas-à-pas : https://drive.google.com/file/d/1MWkfZ-OZ_qv2z6QD9VPwabO5XnGd5UaB/view\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "legende": "Toi, gérant, en 2026.\n\nLe brief du jour te dit ce qui compte avant que ça te tombe dessus : les réservations, les productions, les alertes. Tu diriges au lieu de courir.\n\nConcrètement : voir venir la journée au lieu de la subir.\n\nEn savoir plus : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
         "hashtags": [
           "restauration",
           "foodeatup",
@@ -3409,10 +3409,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "lire ses prévisions",
           "predibot restaurant"
         ],
-        "cta": "Voir le tutoriel pas-à-pas"
+        "cta": "Découvrir FoodEatUp"
       },
       "youtube": {
-        "legende": "Toi, gérant, en 2026. Personne ne devrait travailler comme ça.\n\nLe brief du jour te dit ce qui compte avant que ça te tombe dessus : les réservations, les productions, les alertes. Tu diriges au lieu de courir.\n\nConcrètement : voir venir la journée au lieu de la subir.\n\n— — —\n\n📺 Le tutoriel pas-à-pas : https://drive.google.com/file/d/1MWkfZ-OZ_qv2z6QD9VPwabO5XnGd5UaB/view\n\n📞 Une démo ? 06 14 18 92 25\n🌐 foodeatup.com\n\nSérie « Le Coup de Feu » — saison 1, épisode 29.\nModule PrediBot · Chapitre : 1 - Lire ses prévisions\n\nFoodEatUp est le logiciel qui réunit la caisse, le stock, les plannings, l'HACCP et le marketing d'un restaurant au même endroit.\n",
+        "legende": "Toi, gérant, en 2026. Personne ne devrait travailler comme ça.\n\nLe brief du jour te dit ce qui compte avant que ça te tombe dessus : les réservations, les productions, les alertes. Tu diriges au lieu de courir.\n\nConcrètement : voir venir la journée au lieu de la subir.\n\n— — —\n\n🔗 https://site.foodeatup.com/\n\n📞 Une démo ? 06 14 18 92 25\n🌐 foodeatup.com\n\nSérie « Le Coup de Feu » — saison 1, épisode 29.\nModule PrediBot · Chapitre : 1 - Lire ses prévisions\n\nFoodEatUp est le logiciel qui réunit la caisse, le stock, les plannings, l'HACCP et le marketing d'un restaurant au même endroit.\n",
         "hashtags": [
           "Shorts",
           "restaurant",
@@ -3432,7 +3432,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "lire ses prévisions",
           "predibot restaurant"
         ],
-        "cta": "Le tutoriel pas-à-pas",
+        "cta": "Découvrir FoodEatUp",
         "titre": "Lire ses prévisions — PrediBot | FoodEatUp"
       }
     },
@@ -3452,7 +3452,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
   "EP030": {
     "publications": {
       "facebook": {
-        "legende": "Le nouveau, jour 1. Forme-le en un clic avec l'Académy.\n\nLe nouveau se forme tout seul : chaque module a ses vidéos, dans l'ordre. Tu ne réexpliques plus la caisse à chaque embauche.\n\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "legende": "Le nouveau, jour 1. Forme-le en un clic avec l'Académy.\n\nLe nouveau se forme tout seul : chaque module a ses vidéos, dans l'ordre. Tu ne réexpliques plus la caisse à chaque embauche.\n\n👉 Tout FoodEatUp : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
         "hashtags": [
           "restaurant",
           "restaurateur",
@@ -3468,10 +3468,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "academy",
           "configuration restaurant"
         ],
-        "cta": "Demander une démo"
+        "cta": "Découvrir FoodEatUp"
       },
       "instagram": {
-        "legende": "Le nouveau, jour 1.\nForme-le en un clic avec l'Académy.\n\nLe nouveau se forme tout seul : chaque module a ses vidéos, dans l'ordre. Tu ne réexpliques plus la caisse à chaque embauche.\n\nLe pas-à-pas complet est dans notre Academy — lien en bio.\nUne démo ? 06 14 18 92 25",
+        "legende": "Le nouveau, jour 1.\nForme-le en un clic avec l'Académy.\n\nLe nouveau se forme tout seul : chaque module a ses vidéos, dans l'ordre. Tu ne réexpliques plus la caisse à chaque embauche.\n\nTout est expliqué sur notre site — lien en bio.\nUne démo ? 06 14 18 92 25",
         "hashtags": [
           "restaurant",
           "restaurateur",
@@ -3491,7 +3491,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "academy",
           "configuration restaurant"
         ],
-        "cta": "Demander une démo"
+        "cta": "Tout est en bio"
       },
       "tiktok": {
         "legende": "Le nouveau, jour 1. 😅\nForme-le en un clic avec l'Académy.\n\nLe nouveau se forme tout seul : chaque module a ses vidéos, dans l'ordre.",
@@ -3508,10 +3508,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "academy",
           "configuration restaurant"
         ],
-        "cta": "Demander une démo"
+        "cta": "Lien en bio"
       },
       "linkedin": {
-        "legende": "Le nouveau, jour 1.\n\nLe nouveau se forme tout seul : chaque module a ses vidéos, dans l'ordre. Tu ne réexpliques plus la caisse à chaque embauche.\n\nConcrètement : une seule saisie qui alimente tout le reste.\n\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "legende": "Le nouveau, jour 1.\n\nLe nouveau se forme tout seul : chaque module a ses vidéos, dans l'ordre. Tu ne réexpliques plus la caisse à chaque embauche.\n\nConcrètement : une seule saisie qui alimente tout le reste.\n\nEn savoir plus : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
         "hashtags": [
           "restauration",
           "foodeatup",
@@ -3524,10 +3524,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "academy",
           "configuration restaurant"
         ],
-        "cta": "Demander une démo"
+        "cta": "Découvrir FoodEatUp"
       },
       "youtube": {
-        "legende": "Le nouveau, jour 1. Forme-le en un clic avec l'Académy.\n\nLe nouveau se forme tout seul : chaque module a ses vidéos, dans l'ordre. Tu ne réexpliques plus la caisse à chaque embauche.\n\nConcrètement : une seule saisie qui alimente tout le reste.\n\n— — —\n\n📞 Une démo ? 06 14 18 92 25\n🌐 foodeatup.com\n\nSérie « Le Coup de Feu » — saison 1, épisode 30.\nModule Configuration · Chapitre : Academy\n\nFoodEatUp est le logiciel qui réunit la caisse, le stock, les plannings, l'HACCP et le marketing d'un restaurant au même endroit.\n",
+        "legende": "Le nouveau, jour 1. Forme-le en un clic avec l'Académy.\n\nLe nouveau se forme tout seul : chaque module a ses vidéos, dans l'ordre. Tu ne réexpliques plus la caisse à chaque embauche.\n\nConcrètement : une seule saisie qui alimente tout le reste.\n\n— — —\n\n🔗 https://site.foodeatup.com/\n\n📞 Une démo ? 06 14 18 92 25\n🌐 foodeatup.com\n\nSérie « Le Coup de Feu » — saison 1, épisode 30.\nModule Configuration · Chapitre : Academy\n\nFoodEatUp est le logiciel qui réunit la caisse, le stock, les plannings, l'HACCP et le marketing d'un restaurant au même endroit.\n",
         "hashtags": [
           "Shorts",
           "restaurant",
@@ -3545,7 +3545,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "academy",
           "configuration restaurant"
         ],
-        "cta": "Demander une démo",
+        "cta": "Découvrir FoodEatUp",
         "titre": "Academy — Configuration | FoodEatUp"
       }
     },
@@ -3556,7 +3556,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
   "EP031": {
     "publications": {
       "facebook": {
-        "legende": "C'est quoi, ça ? Sans DLC tracées, personne ne sait.\n\nTu crées ton étiquette DLC en trois secondes, avec le produit, la date et l'agent. Plus personne n'ouvre un bac en se demandant ce que c'est.\n\n👉 Le tutoriel complet : https://drive.google.com/file/d/1Cb7c55HN3pKh7zD7LlozCdVIzl85ux6M/view\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "legende": "C'est quoi, ça ? Sans DLC tracées, personne ne sait.\n\nTu crées ton étiquette DLC en trois secondes, avec le produit, la date et l'agent. Plus personne n'ouvre un bac en se demandant ce que c'est.\n\n👉 Tout FoodEatUp : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
         "hashtags": [
           "restaurant",
           "restaurateur",
@@ -3573,10 +3573,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "étiquettes dlc",
           "haccp restaurant"
         ],
-        "cta": "Voir le tutoriel complet"
+        "cta": "Découvrir FoodEatUp"
       },
       "instagram": {
-        "legende": "C'est quoi, ça ?\nSans DLC tracées, personne ne sait.\n\nTu crées ton étiquette DLC en trois secondes, avec le produit, la date et l'agent. Plus personne n'ouvre un bac en se demandant ce que c'est.\n\nLe pas-à-pas complet est dans notre Academy — lien en bio.\nUne démo ? 06 14 18 92 25",
+        "legende": "C'est quoi, ça ?\nSans DLC tracées, personne ne sait.\n\nTu crées ton étiquette DLC en trois secondes, avec le produit, la date et l'agent. Plus personne n'ouvre un bac en se demandant ce que c'est.\n\nTout est expliqué sur notre site — lien en bio.\nUne démo ? 06 14 18 92 25",
         "hashtags": [
           "restaurant",
           "restaurateur",
@@ -3598,7 +3598,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "étiquettes dlc",
           "haccp restaurant"
         ],
-        "cta": "Le pas-à-pas est en bio"
+        "cta": "Tout est en bio"
       },
       "tiktok": {
         "legende": "C'est quoi, ça ? 😅\nSans DLC tracées, personne ne sait.\n\nTu crées ton étiquette DLC en trois secondes, avec le produit, la date et l'agent.",
@@ -3616,10 +3616,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "étiquettes dlc",
           "haccp restaurant"
         ],
-        "cta": "Tuto complet en bio"
+        "cta": "Lien en bio"
       },
       "linkedin": {
-        "legende": "C'est quoi, ça ?\n\nTu crées ton étiquette DLC en trois secondes, avec le produit, la date et l'agent. Plus personne n'ouvre un bac en se demandant ce que c'est.\n\nConcrètement : un contrôle qui se passe bien, parce que tout est déjà tracé.\n\nLe tutoriel pas-à-pas : https://drive.google.com/file/d/1Cb7c55HN3pKh7zD7LlozCdVIzl85ux6M/view\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "legende": "C'est quoi, ça ?\n\nTu crées ton étiquette DLC en trois secondes, avec le produit, la date et l'agent. Plus personne n'ouvre un bac en se demandant ce que c'est.\n\nConcrètement : un contrôle qui se passe bien, parce que tout est déjà tracé.\n\nEn savoir plus : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
         "hashtags": [
           "restauration",
           "foodeatup",
@@ -3633,10 +3633,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "étiquettes dlc",
           "haccp restaurant"
         ],
-        "cta": "Voir le tutoriel pas-à-pas"
+        "cta": "Découvrir FoodEatUp"
       },
       "youtube": {
-        "legende": "C'est quoi, ça ? Sans DLC tracées, personne ne sait.\n\nTu crées ton étiquette DLC en trois secondes, avec le produit, la date et l'agent. Plus personne n'ouvre un bac en se demandant ce que c'est.\n\nConcrètement : un contrôle qui se passe bien, parce que tout est déjà tracé.\n\n— — —\n\n📺 Le tutoriel pas-à-pas : https://drive.google.com/file/d/1Cb7c55HN3pKh7zD7LlozCdVIzl85ux6M/view\n\n📞 Une démo ? 06 14 18 92 25\n🌐 foodeatup.com\n\nSérie « Le Coup de Feu » — saison 2, épisode 31.\nModule HACCP · Chapitre : étiquettes DLC\n\nFoodEatUp est le logiciel qui réunit la caisse, le stock, les plannings, l'HACCP et le marketing d'un restaurant au même endroit.\n",
+        "legende": "C'est quoi, ça ? Sans DLC tracées, personne ne sait.\n\nTu crées ton étiquette DLC en trois secondes, avec le produit, la date et l'agent. Plus personne n'ouvre un bac en se demandant ce que c'est.\n\nConcrètement : un contrôle qui se passe bien, parce que tout est déjà tracé.\n\n— — —\n\n🔗 https://site.foodeatup.com/\n\n📞 Une démo ? 06 14 18 92 25\n🌐 foodeatup.com\n\nSérie « Le Coup de Feu » — saison 2, épisode 31.\nModule HACCP · Chapitre : étiquettes DLC\n\nFoodEatUp est le logiciel qui réunit la caisse, le stock, les plannings, l'HACCP et le marketing d'un restaurant au même endroit.\n",
         "hashtags": [
           "Shorts",
           "restaurant",
@@ -3656,7 +3656,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "étiquettes dlc",
           "haccp restaurant"
         ],
-        "cta": "Le tutoriel pas-à-pas",
+        "cta": "Découvrir FoodEatUp",
         "titre": "Étiquettes DLC — HACCP | FoodEatUp"
       }
     },
@@ -3679,7 +3679,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
   "EP032": {
     "publications": {
       "facebook": {
-        "legende": "Ta recette « au feeling ». Une fiche technique, et c'est pareil tous les jours.\n\nTa recette est enregistrée : ingrédients, quantités, étapes. Le plat sort pareil que ce soit toi ou ton commis. Et son coût est calculé.\n\n👉 Le tutoriel complet : https://drive.google.com/file/d/1yqhyPMj9uBq1awmqTwUhisuBJBpY5kt-/view\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "legende": "Ta recette « au feeling ». Une fiche technique, et c'est pareil tous les jours.\n\nTa recette est enregistrée : ingrédients, quantités, étapes. Le plat sort pareil que ce soit toi ou ton commis. Et son coût est calculé.\n\n👉 Tout FoodEatUp : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
         "hashtags": [
           "restaurant",
           "restaurateur",
@@ -3696,10 +3696,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "ma carte, fiche recette",
           "stockvision restaurant"
         ],
-        "cta": "Voir le tutoriel complet"
+        "cta": "Découvrir FoodEatUp"
       },
       "instagram": {
-        "legende": "Ta recette « au feeling ».\nUne fiche technique, et c'est pareil tous les jours.\n\nTa recette est enregistrée : ingrédients, quantités, étapes. Le plat sort pareil que ce soit toi ou ton commis. Et son coût est calculé.\n\nLe pas-à-pas complet est dans notre Academy — lien en bio.\nUne démo ? 06 14 18 92 25",
+        "legende": "Ta recette « au feeling ».\nUne fiche technique, et c'est pareil tous les jours.\n\nTa recette est enregistrée : ingrédients, quantités, étapes. Le plat sort pareil que ce soit toi ou ton commis. Et son coût est calculé.\n\nTout est expliqué sur notre site — lien en bio.\nUne démo ? 06 14 18 92 25",
         "hashtags": [
           "restaurant",
           "restaurateur",
@@ -3722,7 +3722,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "ma carte, fiche recette",
           "stockvision restaurant"
         ],
-        "cta": "Le pas-à-pas est en bio"
+        "cta": "Tout est en bio"
       },
       "tiktok": {
         "legende": "Ta recette « au feeling ». 😅\nUne fiche technique, et c'est pareil tous les jours.\n\nTa recette est enregistrée : ingrédients, quantités, étapes.",
@@ -3740,10 +3740,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "ma carte, fiche recette",
           "stockvision restaurant"
         ],
-        "cta": "Tuto complet en bio"
+        "cta": "Lien en bio"
       },
       "linkedin": {
-        "legende": "Ta recette « au feeling ».\n\nTa recette est enregistrée : ingrédients, quantités, étapes. Le plat sort pareil que ce soit toi ou ton commis. Et son coût est calculé.\n\nConcrètement : un stock juste et une marge qu'on voit avant de fixer le prix.\n\nLe tutoriel pas-à-pas : https://drive.google.com/file/d/1yqhyPMj9uBq1awmqTwUhisuBJBpY5kt-/view\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "legende": "Ta recette « au feeling ».\n\nTa recette est enregistrée : ingrédients, quantités, étapes. Le plat sort pareil que ce soit toi ou ton commis. Et son coût est calculé.\n\nConcrètement : un stock juste et une marge qu'on voit avant de fixer le prix.\n\nEn savoir plus : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
         "hashtags": [
           "restauration",
           "foodeatup",
@@ -3757,10 +3757,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "ma carte, fiche recette",
           "stockvision restaurant"
         ],
-        "cta": "Voir le tutoriel pas-à-pas"
+        "cta": "Découvrir FoodEatUp"
       },
       "youtube": {
-        "legende": "Ta recette « au feeling ». Une fiche technique, et c'est pareil tous les jours.\n\nTa recette est enregistrée : ingrédients, quantités, étapes. Le plat sort pareil que ce soit toi ou ton commis. Et son coût est calculé.\n\nConcrètement : un stock juste et une marge qu'on voit avant de fixer le prix.\n\n— — —\n\n📺 Le tutoriel pas-à-pas : https://drive.google.com/file/d/1yqhyPMj9uBq1awmqTwUhisuBJBpY5kt-/view\n\n📞 Une démo ? 06 14 18 92 25\n🌐 foodeatup.com\n\nSérie « Le Coup de Feu » — saison 2, épisode 32.\nModule StockVision · Chapitre : 1 - Ma carte, fiche recette\n\nFoodEatUp est le logiciel qui réunit la caisse, le stock, les plannings, l'HACCP et le marketing d'un restaurant au même endroit.\n",
+        "legende": "Ta recette « au feeling ». Une fiche technique, et c'est pareil tous les jours.\n\nTa recette est enregistrée : ingrédients, quantités, étapes. Le plat sort pareil que ce soit toi ou ton commis. Et son coût est calculé.\n\nConcrètement : un stock juste et une marge qu'on voit avant de fixer le prix.\n\n— — —\n\n🔗 https://site.foodeatup.com/\n\n📞 Une démo ? 06 14 18 92 25\n🌐 foodeatup.com\n\nSérie « Le Coup de Feu » — saison 2, épisode 32.\nModule StockVision · Chapitre : 1 - Ma carte, fiche recette\n\nFoodEatUp est le logiciel qui réunit la caisse, le stock, les plannings, l'HACCP et le marketing d'un restaurant au même endroit.\n",
         "hashtags": [
           "Shorts",
           "restaurant",
@@ -3781,7 +3781,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "ma carte, fiche recette",
           "stockvision restaurant"
         ],
-        "cta": "Le tutoriel pas-à-pas",
+        "cta": "Découvrir FoodEatUp",
         "titre": "Ma carte, fiche recette — StockVision | FoodEatUp"
       }
     },
@@ -3803,7 +3803,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
   "EP033": {
     "publications": {
       "facebook": {
-        "legende": "Tu as tout préparé. Presque. Ce qui n'est pas suivi finit par disparaître.\n\nCe qui n'est pas suivi disparaît. Ici chaque produit a son niveau, son seuil et son historique. Tu vois le trou avant le service, pas après.\n\n👉 Le tutoriel complet : https://drive.google.com/file/d/124mIM7NudoQy5wun_rlSZ6MCrJ2wNykL/view\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "legende": "Tu as tout préparé. Presque. Ce qui n'est pas suivi finit par disparaître.\n\nCe qui n'est pas suivi disparaît. Ici chaque produit a son niveau, son seuil et son historique. Tu vois le trou avant le service, pas après.\n\n👉 Tout FoodEatUp : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
         "hashtags": [
           "restaurant",
           "restaurateur",
@@ -3820,10 +3820,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "mouvements de stock",
           "stockvision restaurant"
         ],
-        "cta": "Voir le tutoriel complet"
+        "cta": "Découvrir FoodEatUp"
       },
       "instagram": {
-        "legende": "Tu as tout préparé. Presque.\nCe qui n'est pas suivi finit par disparaître.\n\nCe qui n'est pas suivi disparaît. Ici chaque produit a son niveau, son seuil et son historique. Tu vois le trou avant le service, pas après.\n\nLe pas-à-pas complet est dans notre Academy — lien en bio.\nUne démo ? 06 14 18 92 25",
+        "legende": "Tu as tout préparé. Presque.\nCe qui n'est pas suivi finit par disparaître.\n\nCe qui n'est pas suivi disparaît. Ici chaque produit a son niveau, son seuil et son historique. Tu vois le trou avant le service, pas après.\n\nTout est expliqué sur notre site — lien en bio.\nUne démo ? 06 14 18 92 25",
         "hashtags": [
           "restaurant",
           "restaurateur",
@@ -3846,7 +3846,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "mouvements de stock",
           "stockvision restaurant"
         ],
-        "cta": "Le pas-à-pas est en bio"
+        "cta": "Tout est en bio"
       },
       "tiktok": {
         "legende": "Tu as tout préparé. Presque. 😅\nCe qui n'est pas suivi finit par disparaître.\n\nCe qui n'est pas suivi disparaît.",
@@ -3864,10 +3864,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "mouvements de stock",
           "stockvision restaurant"
         ],
-        "cta": "Tuto complet en bio"
+        "cta": "Lien en bio"
       },
       "linkedin": {
-        "legende": "Tu as tout préparé. Presque.\n\nCe qui n'est pas suivi disparaît. Ici chaque produit a son niveau, son seuil et son historique. Tu vois le trou avant le service, pas après.\n\nConcrètement : un stock juste et une marge qu'on voit avant de fixer le prix.\n\nLe tutoriel pas-à-pas : https://drive.google.com/file/d/124mIM7NudoQy5wun_rlSZ6MCrJ2wNykL/view\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "legende": "Tu as tout préparé. Presque.\n\nCe qui n'est pas suivi disparaît. Ici chaque produit a son niveau, son seuil et son historique. Tu vois le trou avant le service, pas après.\n\nConcrètement : un stock juste et une marge qu'on voit avant de fixer le prix.\n\nEn savoir plus : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
         "hashtags": [
           "restauration",
           "foodeatup",
@@ -3881,10 +3881,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "mouvements de stock",
           "stockvision restaurant"
         ],
-        "cta": "Voir le tutoriel pas-à-pas"
+        "cta": "Découvrir FoodEatUp"
       },
       "youtube": {
-        "legende": "Tu as tout préparé. Presque. Ce qui n'est pas suivi finit par disparaître.\n\nCe qui n'est pas suivi disparaît. Ici chaque produit a son niveau, son seuil et son historique. Tu vois le trou avant le service, pas après.\n\nConcrètement : un stock juste et une marge qu'on voit avant de fixer le prix.\n\n— — —\n\n📺 Le tutoriel pas-à-pas : https://drive.google.com/file/d/124mIM7NudoQy5wun_rlSZ6MCrJ2wNykL/view\n\n📞 Une démo ? 06 14 18 92 25\n🌐 foodeatup.com\n\nSérie « Le Coup de Feu » — saison 2, épisode 33.\nModule StockVision · Chapitre : 16 - Mouvements de stock\n\nFoodEatUp est le logiciel qui réunit la caisse, le stock, les plannings, l'HACCP et le marketing d'un restaurant au même endroit.\n",
+        "legende": "Tu as tout préparé. Presque. Ce qui n'est pas suivi finit par disparaître.\n\nCe qui n'est pas suivi disparaît. Ici chaque produit a son niveau, son seuil et son historique. Tu vois le trou avant le service, pas après.\n\nConcrètement : un stock juste et une marge qu'on voit avant de fixer le prix.\n\n— — —\n\n🔗 https://site.foodeatup.com/\n\n📞 Une démo ? 06 14 18 92 25\n🌐 foodeatup.com\n\nSérie « Le Coup de Feu » — saison 2, épisode 33.\nModule StockVision · Chapitre : 16 - Mouvements de stock\n\nFoodEatUp est le logiciel qui réunit la caisse, le stock, les plannings, l'HACCP et le marketing d'un restaurant au même endroit.\n",
         "hashtags": [
           "Shorts",
           "restaurant",
@@ -3905,7 +3905,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "mouvements de stock",
           "stockvision restaurant"
         ],
-        "cta": "Le tutoriel pas-à-pas",
+        "cta": "Découvrir FoodEatUp",
         "titre": "Mouvements de stock — StockVision | FoodEatUp"
       }
     },
@@ -3927,7 +3927,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
   "EP034": {
     "publications": {
       "facebook": {
-        "legende": "Chaque service, une improvisation. Ça marche. Jusqu'au jour où ça ne marche plus.\n\nTes procédures sont dans l'outil, pas dans ta tête. Le service ne dépend plus de qui est là ce soir.\n\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "legende": "Chaque service, une improvisation. Ça marche. Jusqu'au jour où ça ne marche plus.\n\nTes procédures sont dans l'outil, pas dans ta tête. Le service ne dépend plus de qui est là ce soir.\n\n👉 Tout FoodEatUp : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
         "hashtags": [
           "restaurant",
           "restaurateur",
@@ -3943,10 +3943,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "process",
           "configuration restaurant"
         ],
-        "cta": "Demander une démo"
+        "cta": "Découvrir FoodEatUp"
       },
       "instagram": {
-        "legende": "Chaque service, une improvisation.\nÇa marche. Jusqu'au jour où ça ne marche plus.\n\nTes procédures sont dans l'outil, pas dans ta tête. Le service ne dépend plus de qui est là ce soir.\n\nLe pas-à-pas complet est dans notre Academy — lien en bio.\nUne démo ? 06 14 18 92 25",
+        "legende": "Chaque service, une improvisation.\nÇa marche. Jusqu'au jour où ça ne marche plus.\n\nTes procédures sont dans l'outil, pas dans ta tête. Le service ne dépend plus de qui est là ce soir.\n\nTout est expliqué sur notre site — lien en bio.\nUne démo ? 06 14 18 92 25",
         "hashtags": [
           "restaurant",
           "restaurateur",
@@ -3966,7 +3966,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "process",
           "configuration restaurant"
         ],
-        "cta": "Demander une démo"
+        "cta": "Tout est en bio"
       },
       "tiktok": {
         "legende": "Chaque service, une improvisation. 😅\nÇa marche. Jusqu'au jour où ça ne marche plus.\n\nTes procédures sont dans l'outil, pas dans ta tête.",
@@ -3983,10 +3983,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "process",
           "configuration restaurant"
         ],
-        "cta": "Demander une démo"
+        "cta": "Lien en bio"
       },
       "linkedin": {
-        "legende": "Chaque service, une improvisation.\n\nTes procédures sont dans l'outil, pas dans ta tête. Le service ne dépend plus de qui est là ce soir.\n\nConcrètement : une seule saisie qui alimente tout le reste.\n\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "legende": "Chaque service, une improvisation.\n\nTes procédures sont dans l'outil, pas dans ta tête. Le service ne dépend plus de qui est là ce soir.\n\nConcrètement : une seule saisie qui alimente tout le reste.\n\nEn savoir plus : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
         "hashtags": [
           "restauration",
           "foodeatup",
@@ -3999,10 +3999,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "process",
           "configuration restaurant"
         ],
-        "cta": "Demander une démo"
+        "cta": "Découvrir FoodEatUp"
       },
       "youtube": {
-        "legende": "Chaque service, une improvisation. Ça marche. Jusqu'au jour où ça ne marche plus.\n\nTes procédures sont dans l'outil, pas dans ta tête. Le service ne dépend plus de qui est là ce soir.\n\nConcrètement : une seule saisie qui alimente tout le reste.\n\n— — —\n\n📞 Une démo ? 06 14 18 92 25\n🌐 foodeatup.com\n\nSérie « Le Coup de Feu » — saison 2, épisode 34.\nModule Configuration · Chapitre : process\n\nFoodEatUp est le logiciel qui réunit la caisse, le stock, les plannings, l'HACCP et le marketing d'un restaurant au même endroit.\n",
+        "legende": "Chaque service, une improvisation. Ça marche. Jusqu'au jour où ça ne marche plus.\n\nTes procédures sont dans l'outil, pas dans ta tête. Le service ne dépend plus de qui est là ce soir.\n\nConcrètement : une seule saisie qui alimente tout le reste.\n\n— — —\n\n🔗 https://site.foodeatup.com/\n\n📞 Une démo ? 06 14 18 92 25\n🌐 foodeatup.com\n\nSérie « Le Coup de Feu » — saison 2, épisode 34.\nModule Configuration · Chapitre : process\n\nFoodEatUp est le logiciel qui réunit la caisse, le stock, les plannings, l'HACCP et le marketing d'un restaurant au même endroit.\n",
         "hashtags": [
           "Shorts",
           "restaurant",
@@ -4020,7 +4020,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "process",
           "configuration restaurant"
         ],
-        "cta": "Demander une démo",
+        "cta": "Découvrir FoodEatUp",
         "titre": "Process — Configuration | FoodEatUp"
       }
     },
@@ -4031,7 +4031,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
   "EP035": {
     "publications": {
       "facebook": {
-        "legende": "Ta terrasse, un jour de vent. Certaines choses se prévoient.\n\nPrévisions de fréquentation, météo, événements du quartier : PrediBot te dit à quoi ressemble ton service avant qu'il commence.\n\n👉 Le tutoriel complet : https://drive.google.com/file/d/1MWkfZ-OZ_qv2z6QD9VPwabO5XnGd5UaB/view\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "legende": "Ta terrasse, un jour de vent. Certaines choses se prévoient.\n\nPrévisions de fréquentation, météo, événements du quartier : PrediBot te dit à quoi ressemble ton service avant qu'il commence.\n\n👉 Tout FoodEatUp : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
         "hashtags": [
           "restaurant",
           "restaurateur",
@@ -4048,10 +4048,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "lire ses prévisions",
           "predibot restaurant"
         ],
-        "cta": "Voir le tutoriel complet"
+        "cta": "Découvrir FoodEatUp"
       },
       "instagram": {
-        "legende": "Ta terrasse, un jour de vent.\nCertaines choses se prévoient.\n\nPrévisions de fréquentation, météo, événements du quartier : PrediBot te dit à quoi ressemble ton service avant qu'il commence.\n\nLe pas-à-pas complet est dans notre Academy — lien en bio.\nUne démo ? 06 14 18 92 25",
+        "legende": "Ta terrasse, un jour de vent.\nCertaines choses se prévoient.\n\nPrévisions de fréquentation, météo, événements du quartier : PrediBot te dit à quoi ressemble ton service avant qu'il commence.\n\nTout est expliqué sur notre site — lien en bio.\nUne démo ? 06 14 18 92 25",
         "hashtags": [
           "restaurant",
           "restaurateur",
@@ -4073,7 +4073,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "lire ses prévisions",
           "predibot restaurant"
         ],
-        "cta": "Le pas-à-pas est en bio"
+        "cta": "Tout est en bio"
       },
       "tiktok": {
         "legende": "Ta terrasse, un jour de vent. 😅\nCertaines choses se prévoient.\n\nPrévisions de fréquentation, météo, événements du quartier : PrediBot te dit à quoi ressemble ton service avant qu'il commence.",
@@ -4091,10 +4091,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "lire ses prévisions",
           "predibot restaurant"
         ],
-        "cta": "Tuto complet en bio"
+        "cta": "Lien en bio"
       },
       "linkedin": {
-        "legende": "Ta terrasse, un jour de vent.\n\nPrévisions de fréquentation, météo, événements du quartier : PrediBot te dit à quoi ressemble ton service avant qu'il commence.\n\nConcrètement : voir venir la journée au lieu de la subir.\n\nLe tutoriel pas-à-pas : https://drive.google.com/file/d/1MWkfZ-OZ_qv2z6QD9VPwabO5XnGd5UaB/view\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "legende": "Ta terrasse, un jour de vent.\n\nPrévisions de fréquentation, météo, événements du quartier : PrediBot te dit à quoi ressemble ton service avant qu'il commence.\n\nConcrètement : voir venir la journée au lieu de la subir.\n\nEn savoir plus : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
         "hashtags": [
           "restauration",
           "foodeatup",
@@ -4108,10 +4108,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "lire ses prévisions",
           "predibot restaurant"
         ],
-        "cta": "Voir le tutoriel pas-à-pas"
+        "cta": "Découvrir FoodEatUp"
       },
       "youtube": {
-        "legende": "Ta terrasse, un jour de vent. Certaines choses se prévoient.\n\nPrévisions de fréquentation, météo, événements du quartier : PrediBot te dit à quoi ressemble ton service avant qu'il commence.\n\nConcrètement : voir venir la journée au lieu de la subir.\n\n— — —\n\n📺 Le tutoriel pas-à-pas : https://drive.google.com/file/d/1MWkfZ-OZ_qv2z6QD9VPwabO5XnGd5UaB/view\n\n📞 Une démo ? 06 14 18 92 25\n🌐 foodeatup.com\n\nSérie « Le Coup de Feu » — saison 2, épisode 35.\nModule PrediBot · Chapitre : 1 - Lire ses prévisions\n\nFoodEatUp est le logiciel qui réunit la caisse, le stock, les plannings, l'HACCP et le marketing d'un restaurant au même endroit.\n",
+        "legende": "Ta terrasse, un jour de vent. Certaines choses se prévoient.\n\nPrévisions de fréquentation, météo, événements du quartier : PrediBot te dit à quoi ressemble ton service avant qu'il commence.\n\nConcrètement : voir venir la journée au lieu de la subir.\n\n— — —\n\n🔗 https://site.foodeatup.com/\n\n📞 Une démo ? 06 14 18 92 25\n🌐 foodeatup.com\n\nSérie « Le Coup de Feu » — saison 2, épisode 35.\nModule PrediBot · Chapitre : 1 - Lire ses prévisions\n\nFoodEatUp est le logiciel qui réunit la caisse, le stock, les plannings, l'HACCP et le marketing d'un restaurant au même endroit.\n",
         "hashtags": [
           "Shorts",
           "restaurant",
@@ -4131,7 +4131,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "lire ses prévisions",
           "predibot restaurant"
         ],
-        "cta": "Le tutoriel pas-à-pas",
+        "cta": "Découvrir FoodEatUp",
         "titre": "Lire ses prévisions — PrediBot | FoodEatUp"
       }
     },
@@ -4151,7 +4151,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
   "EP036": {
     "publications": {
       "facebook": {
-        "legende": "Toi, devant tes abonnements. Additionne-les. Vraiment.\n\nAdditionne tes abonnements actuels. Ici, la caisse, le stock, le planning, la compta et le marketing sont dans le même outil, sur la même base.\n\n👉 Le tutoriel complet : https://drive.google.com/file/d/16kN9JwGuVugkCtjQ93OObZ2tAlmsbgZl/view\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "legende": "Toi, devant tes abonnements. Additionne-les. Vraiment.\n\nAdditionne tes abonnements actuels. Ici, la caisse, le stock, le planning, la compta et le marketing sont dans le même outil, sur la même base.\n\n👉 Tout FoodEatUp : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
         "hashtags": [
           "restaurant",
           "restaurateur",
@@ -4168,10 +4168,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "un seul abonnement",
           "predibot restaurant"
         ],
-        "cta": "Voir le tutoriel complet"
+        "cta": "Découvrir FoodEatUp"
       },
       "instagram": {
-        "legende": "Toi, devant tes abonnements.\nAdditionne-les. Vraiment.\n\nAdditionne tes abonnements actuels. Ici, la caisse, le stock, le planning, la compta et le marketing sont dans le même outil, sur la même base.\n\nLe pas-à-pas complet est dans notre Academy — lien en bio.\nUne démo ? 06 14 18 92 25",
+        "legende": "Toi, devant tes abonnements.\nAdditionne-les. Vraiment.\n\nAdditionne tes abonnements actuels. Ici, la caisse, le stock, le planning, la compta et le marketing sont dans le même outil, sur la même base.\n\nTout est expliqué sur notre site — lien en bio.\nUne démo ? 06 14 18 92 25",
         "hashtags": [
           "restaurant",
           "restaurateur",
@@ -4193,7 +4193,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "un seul abonnement",
           "predibot restaurant"
         ],
-        "cta": "Le pas-à-pas est en bio"
+        "cta": "Tout est en bio"
       },
       "tiktok": {
         "legende": "Toi, devant tes abonnements. 😅\nAdditionne-les. Vraiment.\n\nAdditionne tes abonnements actuels.",
@@ -4211,10 +4211,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "un seul abonnement",
           "predibot restaurant"
         ],
-        "cta": "Tuto complet en bio"
+        "cta": "Lien en bio"
       },
       "linkedin": {
-        "legende": "Toi, devant tes abonnements.\n\nAdditionne tes abonnements actuels. Ici, la caisse, le stock, le planning, la compta et le marketing sont dans le même outil, sur la même base.\n\nConcrètement : voir venir la journée au lieu de la subir.\n\nLe tutoriel pas-à-pas : https://drive.google.com/file/d/16kN9JwGuVugkCtjQ93OObZ2tAlmsbgZl/view\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "legende": "Toi, devant tes abonnements.\n\nAdditionne tes abonnements actuels. Ici, la caisse, le stock, le planning, la compta et le marketing sont dans le même outil, sur la même base.\n\nConcrètement : voir venir la journée au lieu de la subir.\n\nEn savoir plus : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
         "hashtags": [
           "restauration",
           "foodeatup",
@@ -4228,10 +4228,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "un seul abonnement",
           "predibot restaurant"
         ],
-        "cta": "Voir le tutoriel pas-à-pas"
+        "cta": "Découvrir FoodEatUp"
       },
       "youtube": {
-        "legende": "Toi, devant tes abonnements. Additionne-les. Vraiment.\n\nAdditionne tes abonnements actuels. Ici, la caisse, le stock, le planning, la compta et le marketing sont dans le même outil, sur la même base.\n\nConcrètement : voir venir la journée au lieu de la subir.\n\n— — —\n\n📺 Le tutoriel pas-à-pas : https://drive.google.com/file/d/16kN9JwGuVugkCtjQ93OObZ2tAlmsbgZl/view\n\n📞 Une démo ? 06 14 18 92 25\n🌐 foodeatup.com\n\nSérie « Le Coup de Feu » — saison 2, épisode 36.\nModule PrediBot · Chapitre : 2 - Un seul abonnement\n\nFoodEatUp est le logiciel qui réunit la caisse, le stock, les plannings, l'HACCP et le marketing d'un restaurant au même endroit.\n",
+        "legende": "Toi, devant tes abonnements. Additionne-les. Vraiment.\n\nAdditionne tes abonnements actuels. Ici, la caisse, le stock, le planning, la compta et le marketing sont dans le même outil, sur la même base.\n\nConcrètement : voir venir la journée au lieu de la subir.\n\n— — —\n\n🔗 https://site.foodeatup.com/\n\n📞 Une démo ? 06 14 18 92 25\n🌐 foodeatup.com\n\nSérie « Le Coup de Feu » — saison 2, épisode 36.\nModule PrediBot · Chapitre : 2 - Un seul abonnement\n\nFoodEatUp est le logiciel qui réunit la caisse, le stock, les plannings, l'HACCP et le marketing d'un restaurant au même endroit.\n",
         "hashtags": [
           "Shorts",
           "restaurant",
@@ -4251,7 +4251,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "un seul abonnement",
           "predibot restaurant"
         ],
-        "cta": "Le tutoriel pas-à-pas",
+        "cta": "Découvrir FoodEatUp",
         "titre": "Un seul abonnement — PrediBot | FoodEatUp"
       }
     },
@@ -4262,7 +4262,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
   "EP037": {
     "publications": {
       "facebook": {
-        "legende": "Fermeture. Troisième soir d'affilée. Un planning bien fait, ça se voit sur les visages.\n\nTu construis le planning de la semaine par glisser-déposer, avec le coût qui s'affiche en direct. Tes équipes savent, et toi aussi.\n\n👉 Le tutoriel complet : https://drive.google.com/file/d/174AfDA9zywpeMof070Mc33_doWgDcsp5/view\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "legende": "Fermeture. Troisième soir d'affilée. Un planning bien fait, ça se voit sur les visages.\n\nTu construis le planning de la semaine par glisser-déposer, avec le coût qui s'affiche en direct. Tes équipes savent, et toi aussi.\n\n👉 Tout FoodEatUp : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
         "hashtags": [
           "restaurant",
           "restaurateur",
@@ -4279,10 +4279,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "créer un shift",
           "équipe & planning restaurant"
         ],
-        "cta": "Voir le tutoriel complet"
+        "cta": "Découvrir FoodEatUp"
       },
       "instagram": {
-        "legende": "Fermeture. Troisième soir d'affilée.\nUn planning bien fait, ça se voit sur les visages.\n\nTu construis le planning de la semaine par glisser-déposer, avec le coût qui s'affiche en direct. Tes équipes savent, et toi aussi.\n\nLe pas-à-pas complet est dans notre Academy — lien en bio.\nUne démo ? 06 14 18 92 25",
+        "legende": "Fermeture. Troisième soir d'affilée.\nUn planning bien fait, ça se voit sur les visages.\n\nTu construis le planning de la semaine par glisser-déposer, avec le coût qui s'affiche en direct. Tes équipes savent, et toi aussi.\n\nTout est expliqué sur notre site — lien en bio.\nUne démo ? 06 14 18 92 25",
         "hashtags": [
           "restaurant",
           "restaurateur",
@@ -4304,7 +4304,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "créer un shift",
           "équipe & planning restaurant"
         ],
-        "cta": "Le pas-à-pas est en bio"
+        "cta": "Tout est en bio"
       },
       "tiktok": {
         "legende": "Fermeture. Troisième soir d'affilée. 😅\nUn planning bien fait, ça se voit sur les visages.\n\nTu construis le planning de la semaine par glisser-déposer, avec le coût qui s'affiche en direct.",
@@ -4322,10 +4322,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "créer un shift",
           "équipe & planning restaurant"
         ],
-        "cta": "Tuto complet en bio"
+        "cta": "Lien en bio"
       },
       "linkedin": {
-        "legende": "Fermeture. Troisième soir d'affilée.\n\nTu construis le planning de la semaine par glisser-déposer, avec le coût qui s'affiche en direct. Tes équipes savent, et toi aussi.\n\nConcrètement : des plannings faits en vingt minutes, pas en deux soirées.\n\nLe tutoriel pas-à-pas : https://drive.google.com/file/d/174AfDA9zywpeMof070Mc33_doWgDcsp5/view\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "legende": "Fermeture. Troisième soir d'affilée.\n\nTu construis le planning de la semaine par glisser-déposer, avec le coût qui s'affiche en direct. Tes équipes savent, et toi aussi.\n\nConcrètement : des plannings faits en vingt minutes, pas en deux soirées.\n\nEn savoir plus : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
         "hashtags": [
           "restauration",
           "foodeatup",
@@ -4339,10 +4339,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "créer un shift",
           "équipe & planning restaurant"
         ],
-        "cta": "Voir le tutoriel pas-à-pas"
+        "cta": "Découvrir FoodEatUp"
       },
       "youtube": {
-        "legende": "Fermeture. Troisième soir d'affilée. Un planning bien fait, ça se voit sur les visages.\n\nTu construis le planning de la semaine par glisser-déposer, avec le coût qui s'affiche en direct. Tes équipes savent, et toi aussi.\n\nConcrètement : des plannings faits en vingt minutes, pas en deux soirées.\n\n— — —\n\n📺 Le tutoriel pas-à-pas : https://drive.google.com/file/d/174AfDA9zywpeMof070Mc33_doWgDcsp5/view\n\n📞 Une démo ? 06 14 18 92 25\n🌐 foodeatup.com\n\nSérie « Le Coup de Feu » — saison 2, épisode 37.\nModule Équipe & Planning · Chapitre : créer un shift\n\nFoodEatUp est le logiciel qui réunit la caisse, le stock, les plannings, l'HACCP et le marketing d'un restaurant au même endroit.\n",
+        "legende": "Fermeture. Troisième soir d'affilée. Un planning bien fait, ça se voit sur les visages.\n\nTu construis le planning de la semaine par glisser-déposer, avec le coût qui s'affiche en direct. Tes équipes savent, et toi aussi.\n\nConcrètement : des plannings faits en vingt minutes, pas en deux soirées.\n\n— — —\n\n🔗 https://site.foodeatup.com/\n\n📞 Une démo ? 06 14 18 92 25\n🌐 foodeatup.com\n\nSérie « Le Coup de Feu » — saison 2, épisode 37.\nModule Équipe & Planning · Chapitre : créer un shift\n\nFoodEatUp est le logiciel qui réunit la caisse, le stock, les plannings, l'HACCP et le marketing d'un restaurant au même endroit.\n",
         "hashtags": [
           "Shorts",
           "restaurant",
@@ -4362,7 +4362,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "créer un shift",
           "équipe & planning restaurant"
         ],
-        "cta": "Le tutoriel pas-à-pas",
+        "cta": "Découvrir FoodEatUp",
         "titre": "Créer un shift — Équipe & Planning | FoodEatUp"
       }
     },
@@ -4383,7 +4383,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
   "EP038": {
     "publications": {
       "facebook": {
-        "legende": "Le réappro du lundi. Commander à l'instinct, ça finit toujours en course.\n\nTa commande fournisseur se construit depuis tes stocks bas et ta production prévue. Tu ne commandes plus à l'instinct dans les rayons.\n\n👉 Le tutoriel complet : https://drive.google.com/file/d/17wdt0v2xgwuoollWJSO7QcDMexXMCK9H/view\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "legende": "Le réappro du lundi. Commander à l'instinct, ça finit toujours en course.\n\nTa commande fournisseur se construit depuis tes stocks bas et ta production prévue. Tu ne commandes plus à l'instinct dans les rayons.\n\n👉 Tout FoodEatUp : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
         "hashtags": [
           "restaurant",
           "restaurateur",
@@ -4400,10 +4400,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "ma liste de courses",
           "stockvision restaurant"
         ],
-        "cta": "Voir le tutoriel complet"
+        "cta": "Découvrir FoodEatUp"
       },
       "instagram": {
-        "legende": "Le réappro du lundi.\nCommander à l'instinct, ça finit toujours en course.\n\nTa commande fournisseur se construit depuis tes stocks bas et ta production prévue. Tu ne commandes plus à l'instinct dans les rayons.\n\nLe pas-à-pas complet est dans notre Academy — lien en bio.\nUne démo ? 06 14 18 92 25",
+        "legende": "Le réappro du lundi.\nCommander à l'instinct, ça finit toujours en course.\n\nTa commande fournisseur se construit depuis tes stocks bas et ta production prévue. Tu ne commandes plus à l'instinct dans les rayons.\n\nTout est expliqué sur notre site — lien en bio.\nUne démo ? 06 14 18 92 25",
         "hashtags": [
           "restaurant",
           "restaurateur",
@@ -4426,7 +4426,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "ma liste de courses",
           "stockvision restaurant"
         ],
-        "cta": "Le pas-à-pas est en bio"
+        "cta": "Tout est en bio"
       },
       "tiktok": {
         "legende": "Le réappro du lundi. 😅\nCommander à l'instinct, ça finit toujours en course.\n\nTa commande fournisseur se construit depuis tes stocks bas et ta production prévue.",
@@ -4444,10 +4444,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "ma liste de courses",
           "stockvision restaurant"
         ],
-        "cta": "Tuto complet en bio"
+        "cta": "Lien en bio"
       },
       "linkedin": {
-        "legende": "Le réappro du lundi.\n\nTa commande fournisseur se construit depuis tes stocks bas et ta production prévue. Tu ne commandes plus à l'instinct dans les rayons.\n\nConcrètement : un stock juste et une marge qu'on voit avant de fixer le prix.\n\nLe tutoriel pas-à-pas : https://drive.google.com/file/d/17wdt0v2xgwuoollWJSO7QcDMexXMCK9H/view\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "legende": "Le réappro du lundi.\n\nTa commande fournisseur se construit depuis tes stocks bas et ta production prévue. Tu ne commandes plus à l'instinct dans les rayons.\n\nConcrètement : un stock juste et une marge qu'on voit avant de fixer le prix.\n\nEn savoir plus : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
         "hashtags": [
           "restauration",
           "foodeatup",
@@ -4461,10 +4461,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "ma liste de courses",
           "stockvision restaurant"
         ],
-        "cta": "Voir le tutoriel pas-à-pas"
+        "cta": "Découvrir FoodEatUp"
       },
       "youtube": {
-        "legende": "Le réappro du lundi. Commander à l'instinct, ça finit toujours en course.\n\nTa commande fournisseur se construit depuis tes stocks bas et ta production prévue. Tu ne commandes plus à l'instinct dans les rayons.\n\nConcrètement : un stock juste et une marge qu'on voit avant de fixer le prix.\n\n— — —\n\n📺 Le tutoriel pas-à-pas : https://drive.google.com/file/d/17wdt0v2xgwuoollWJSO7QcDMexXMCK9H/view\n\n📞 Une démo ? 06 14 18 92 25\n🌐 foodeatup.com\n\nSérie « Le Coup de Feu » — saison 2, épisode 38.\nModule StockVision · Chapitre : 4 - Ma liste de courses\n\nFoodEatUp est le logiciel qui réunit la caisse, le stock, les plannings, l'HACCP et le marketing d'un restaurant au même endroit.\n",
+        "legende": "Le réappro du lundi. Commander à l'instinct, ça finit toujours en course.\n\nTa commande fournisseur se construit depuis tes stocks bas et ta production prévue. Tu ne commandes plus à l'instinct dans les rayons.\n\nConcrètement : un stock juste et une marge qu'on voit avant de fixer le prix.\n\n— — —\n\n🔗 https://site.foodeatup.com/\n\n📞 Une démo ? 06 14 18 92 25\n🌐 foodeatup.com\n\nSérie « Le Coup de Feu » — saison 2, épisode 38.\nModule StockVision · Chapitre : 4 - Ma liste de courses\n\nFoodEatUp est le logiciel qui réunit la caisse, le stock, les plannings, l'HACCP et le marketing d'un restaurant au même endroit.\n",
         "hashtags": [
           "Shorts",
           "restaurant",
@@ -4485,7 +4485,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "ma liste de courses",
           "stockvision restaurant"
         ],
-        "cta": "Le tutoriel pas-à-pas",
+        "cta": "Découvrir FoodEatUp",
         "titre": "Ma liste de courses — StockVision | FoodEatUp"
       }
     },
@@ -4507,7 +4507,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
   "EP039": {
     "publications": {
       "facebook": {
-        "legende": "L'imprévu du service. Il y en aura d'autres. Autant être prêt.\n\nL'imprévu, tu ne l'évites pas. Mais tu vois en direct l'état de ta salle, tes retards et tes annulations, et tu réattribues en un geste.\n\n👉 Le tutoriel complet : https://drive.google.com/file/d/1DZKefLYV1_F9_uL-sJ79fb5srfGnROBp/view\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "legende": "L'imprévu du service. Il y en aura d'autres. Autant être prêt.\n\nL'imprévu, tu ne l'évites pas. Mais tu vois en direct l'état de ta salle, tes retards et tes annulations, et tu réattribues en un geste.\n\n👉 Tout FoodEatUp : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
         "hashtags": [
           "restaurant",
           "restaurateur",
@@ -4524,10 +4524,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "gérer et no-shows",
           "réservation restaurant"
         ],
-        "cta": "Voir le tutoriel complet"
+        "cta": "Découvrir FoodEatUp"
       },
       "instagram": {
-        "legende": "L'imprévu du service.\nIl y en aura d'autres. Autant être prêt.\n\nL'imprévu, tu ne l'évites pas. Mais tu vois en direct l'état de ta salle, tes retards et tes annulations, et tu réattribues en un geste.\n\nLe pas-à-pas complet est dans notre Academy — lien en bio.\nUne démo ? 06 14 18 92 25",
+        "legende": "L'imprévu du service.\nIl y en aura d'autres. Autant être prêt.\n\nL'imprévu, tu ne l'évites pas. Mais tu vois en direct l'état de ta salle, tes retards et tes annulations, et tu réattribues en un geste.\n\nTout est expliqué sur notre site — lien en bio.\nUne démo ? 06 14 18 92 25",
         "hashtags": [
           "restaurant",
           "restaurateur",
@@ -4548,7 +4548,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "gérer et no-shows",
           "réservation restaurant"
         ],
-        "cta": "Le pas-à-pas est en bio"
+        "cta": "Tout est en bio"
       },
       "tiktok": {
         "legende": "L'imprévu du service. 😅\nIl y en aura d'autres. Autant être prêt.\n\nL'imprévu, tu ne l'évites pas.",
@@ -4566,10 +4566,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "gérer et no-shows",
           "réservation restaurant"
         ],
-        "cta": "Tuto complet en bio"
+        "cta": "Lien en bio"
       },
       "linkedin": {
-        "legende": "L'imprévu du service.\n\nL'imprévu, tu ne l'évites pas. Mais tu vois en direct l'état de ta salle, tes retards et tes annulations, et tu réattribues en un geste.\n\nConcrètement : un plan de salle qui reflète la réalité, minute par minute.\n\nLe tutoriel pas-à-pas : https://drive.google.com/file/d/1DZKefLYV1_F9_uL-sJ79fb5srfGnROBp/view\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "legende": "L'imprévu du service.\n\nL'imprévu, tu ne l'évites pas. Mais tu vois en direct l'état de ta salle, tes retards et tes annulations, et tu réattribues en un geste.\n\nConcrètement : un plan de salle qui reflète la réalité, minute par minute.\n\nEn savoir plus : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
         "hashtags": [
           "restauration",
           "foodeatup",
@@ -4583,10 +4583,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "gérer et no-shows",
           "réservation restaurant"
         ],
-        "cta": "Voir le tutoriel pas-à-pas"
+        "cta": "Découvrir FoodEatUp"
       },
       "youtube": {
-        "legende": "L'imprévu du service. Il y en aura d'autres. Autant être prêt.\n\nL'imprévu, tu ne l'évites pas. Mais tu vois en direct l'état de ta salle, tes retards et tes annulations, et tu réattribues en un geste.\n\nConcrètement : un plan de salle qui reflète la réalité, minute par minute.\n\n— — —\n\n📺 Le tutoriel pas-à-pas : https://drive.google.com/file/d/1DZKefLYV1_F9_uL-sJ79fb5srfGnROBp/view\n\n📞 Une démo ? 06 14 18 92 25\n🌐 foodeatup.com\n\nSérie « Le Coup de Feu » — saison 2, épisode 39.\nModule Réservation · Chapitre : 3 - Gérer et no-shows\n\nFoodEatUp est le logiciel qui réunit la caisse, le stock, les plannings, l'HACCP et le marketing d'un restaurant au même endroit.\n",
+        "legende": "L'imprévu du service. Il y en aura d'autres. Autant être prêt.\n\nL'imprévu, tu ne l'évites pas. Mais tu vois en direct l'état de ta salle, tes retards et tes annulations, et tu réattribues en un geste.\n\nConcrètement : un plan de salle qui reflète la réalité, minute par minute.\n\n— — —\n\n🔗 https://site.foodeatup.com/\n\n📞 Une démo ? 06 14 18 92 25\n🌐 foodeatup.com\n\nSérie « Le Coup de Feu » — saison 2, épisode 39.\nModule Réservation · Chapitre : 3 - Gérer et no-shows\n\nFoodEatUp est le logiciel qui réunit la caisse, le stock, les plannings, l'HACCP et le marketing d'un restaurant au même endroit.\n",
         "hashtags": [
           "Shorts",
           "restaurant",
@@ -4605,7 +4605,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "gérer et no-shows",
           "réservation restaurant"
         ],
-        "cta": "Le tutoriel pas-à-pas",
+        "cta": "Découvrir FoodEatUp",
         "titre": "Gérer et no-shows — Réservation | FoodEatUp"
       }
     },
@@ -4625,7 +4625,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
   "EP040": {
     "publications": {
       "facebook": {
-        "legende": "Ton stock de basilic. Ce qui n'est pas compté disparaît toujours.\n\nTu comptes une fois, l'outil compte ensuite. Chaque sortie d'ingrédient est déduite de ton stock, plat par plat.\n\n👉 Le tutoriel complet : https://drive.google.com/file/d/1xxxr8zsy8ZvK7NCizf1F9q8W3u48Npgt/view\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "legende": "Ton stock de basilic. Ce qui n'est pas compté disparaît toujours.\n\nTu comptes une fois, l'outil compte ensuite. Chaque sortie d'ingrédient est déduite de ton stock, plat par plat.\n\n👉 Tout FoodEatUp : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
         "hashtags": [
           "restaurant",
           "restaurateur",
@@ -4642,10 +4642,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "ajouter un mouvement",
           "stockvision restaurant"
         ],
-        "cta": "Voir le tutoriel complet"
+        "cta": "Découvrir FoodEatUp"
       },
       "instagram": {
-        "legende": "Ton stock de basilic.\nCe qui n'est pas compté disparaît toujours.\n\nTu comptes une fois, l'outil compte ensuite. Chaque sortie d'ingrédient est déduite de ton stock, plat par plat.\n\nLe pas-à-pas complet est dans notre Academy — lien en bio.\nUne démo ? 06 14 18 92 25",
+        "legende": "Ton stock de basilic.\nCe qui n'est pas compté disparaît toujours.\n\nTu comptes une fois, l'outil compte ensuite. Chaque sortie d'ingrédient est déduite de ton stock, plat par plat.\n\nTout est expliqué sur notre site — lien en bio.\nUne démo ? 06 14 18 92 25",
         "hashtags": [
           "restaurant",
           "restaurateur",
@@ -4668,7 +4668,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "ajouter un mouvement",
           "stockvision restaurant"
         ],
-        "cta": "Le pas-à-pas est en bio"
+        "cta": "Tout est en bio"
       },
       "tiktok": {
         "legende": "Ton stock de basilic. 😅\nCe qui n'est pas compté disparaît toujours.\n\nTu comptes une fois, l'outil compte ensuite.",
@@ -4686,10 +4686,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "ajouter un mouvement",
           "stockvision restaurant"
         ],
-        "cta": "Tuto complet en bio"
+        "cta": "Lien en bio"
       },
       "linkedin": {
-        "legende": "Ton stock de basilic.\n\nTu comptes une fois, l'outil compte ensuite. Chaque sortie d'ingrédient est déduite de ton stock, plat par plat.\n\nConcrètement : un stock juste et une marge qu'on voit avant de fixer le prix.\n\nLe tutoriel pas-à-pas : https://drive.google.com/file/d/1xxxr8zsy8ZvK7NCizf1F9q8W3u48Npgt/view\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "legende": "Ton stock de basilic.\n\nTu comptes une fois, l'outil compte ensuite. Chaque sortie d'ingrédient est déduite de ton stock, plat par plat.\n\nConcrètement : un stock juste et une marge qu'on voit avant de fixer le prix.\n\nEn savoir plus : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
         "hashtags": [
           "restauration",
           "foodeatup",
@@ -4703,10 +4703,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "ajouter un mouvement",
           "stockvision restaurant"
         ],
-        "cta": "Voir le tutoriel pas-à-pas"
+        "cta": "Découvrir FoodEatUp"
       },
       "youtube": {
-        "legende": "Ton stock de basilic. Ce qui n'est pas compté disparaît toujours.\n\nTu comptes une fois, l'outil compte ensuite. Chaque sortie d'ingrédient est déduite de ton stock, plat par plat.\n\nConcrètement : un stock juste et une marge qu'on voit avant de fixer le prix.\n\n— — —\n\n📺 Le tutoriel pas-à-pas : https://drive.google.com/file/d/1xxxr8zsy8ZvK7NCizf1F9q8W3u48Npgt/view\n\n📞 Une démo ? 06 14 18 92 25\n🌐 foodeatup.com\n\nSérie « Le Coup de Feu » — saison 2, épisode 40.\nModule StockVision · Chapitre : 17 - Ajouter un mouvement\n\nFoodEatUp est le logiciel qui réunit la caisse, le stock, les plannings, l'HACCP et le marketing d'un restaurant au même endroit.\n",
+        "legende": "Ton stock de basilic. Ce qui n'est pas compté disparaît toujours.\n\nTu comptes une fois, l'outil compte ensuite. Chaque sortie d'ingrédient est déduite de ton stock, plat par plat.\n\nConcrètement : un stock juste et une marge qu'on voit avant de fixer le prix.\n\n— — —\n\n🔗 https://site.foodeatup.com/\n\n📞 Une démo ? 06 14 18 92 25\n🌐 foodeatup.com\n\nSérie « Le Coup de Feu » — saison 2, épisode 40.\nModule StockVision · Chapitre : 17 - Ajouter un mouvement\n\nFoodEatUp est le logiciel qui réunit la caisse, le stock, les plannings, l'HACCP et le marketing d'un restaurant au même endroit.\n",
         "hashtags": [
           "Shorts",
           "restaurant",
@@ -4727,7 +4727,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "ajouter un mouvement",
           "stockvision restaurant"
         ],
-        "cta": "Le tutoriel pas-à-pas",
+        "cta": "Découvrir FoodEatUp",
         "titre": "Ajouter un mouvement — StockVision | FoodEatUp"
       }
     },
@@ -4750,7 +4750,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
   "EP041": {
     "publications": {
       "facebook": {
-        "legende": "Ton contrôle des portions. Ce qui part au sol, tu le paies quand même.\n\nLa production sort exactement les quantités prévues de ton stock. Ce qui tombe au sol, tu le vois dans l'écart. Et ce qui se voit se corrige.\n\n👉 Le tutoriel complet : https://drive.google.com/file/d/15a_HkRxFA6AobiCgyHhXpl9sCM4mQdiC/view\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "legende": "Ton contrôle des portions. Ce qui part au sol, tu le paies quand même.\n\nLa production sort exactement les quantités prévues de ton stock. Ce qui tombe au sol, tu le vois dans l'écart. Et ce qui se voit se corrige.\n\n👉 Tout FoodEatUp : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
         "hashtags": [
           "restaurant",
           "restaurateur",
@@ -4767,10 +4767,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "sortie des ingrédients de la production",
           "stockvision restaurant"
         ],
-        "cta": "Voir le tutoriel complet"
+        "cta": "Découvrir FoodEatUp"
       },
       "instagram": {
-        "legende": "Ton contrôle des portions.\nCe qui part au sol, tu le paies quand même.\n\nLa production sort exactement les quantités prévues de ton stock. Ce qui tombe au sol, tu le vois dans l'écart. Et ce qui se voit se corrige.\n\nLe pas-à-pas complet est dans notre Academy — lien en bio.\nUne démo ? 06 14 18 92 25",
+        "legende": "Ton contrôle des portions.\nCe qui part au sol, tu le paies quand même.\n\nLa production sort exactement les quantités prévues de ton stock. Ce qui tombe au sol, tu le vois dans l'écart. Et ce qui se voit se corrige.\n\nTout est expliqué sur notre site — lien en bio.\nUne démo ? 06 14 18 92 25",
         "hashtags": [
           "restaurant",
           "restaurateur",
@@ -4793,7 +4793,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "sortie des ingrédients de la production",
           "stockvision restaurant"
         ],
-        "cta": "Le pas-à-pas est en bio"
+        "cta": "Tout est en bio"
       },
       "tiktok": {
         "legende": "Ton contrôle des portions. 😅\nCe qui part au sol, tu le paies quand même.\n\nLa production sort exactement les quantités prévues de ton stock.",
@@ -4811,10 +4811,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "sortie des ingrédients de la production",
           "stockvision restaurant"
         ],
-        "cta": "Tuto complet en bio"
+        "cta": "Lien en bio"
       },
       "linkedin": {
-        "legende": "Ton contrôle des portions.\n\nLa production sort exactement les quantités prévues de ton stock. Ce qui tombe au sol, tu le vois dans l'écart. Et ce qui se voit se corrige.\n\nConcrètement : un stock juste et une marge qu'on voit avant de fixer le prix.\n\nLe tutoriel pas-à-pas : https://drive.google.com/file/d/15a_HkRxFA6AobiCgyHhXpl9sCM4mQdiC/view\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "legende": "Ton contrôle des portions.\n\nLa production sort exactement les quantités prévues de ton stock. Ce qui tombe au sol, tu le vois dans l'écart. Et ce qui se voit se corrige.\n\nConcrètement : un stock juste et une marge qu'on voit avant de fixer le prix.\n\nEn savoir plus : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
         "hashtags": [
           "restauration",
           "foodeatup",
@@ -4828,10 +4828,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "sortie des ingrédients de la production",
           "stockvision restaurant"
         ],
-        "cta": "Voir le tutoriel pas-à-pas"
+        "cta": "Découvrir FoodEatUp"
       },
       "youtube": {
-        "legende": "Ton contrôle des portions. Ce qui part au sol, tu le paies quand même.\n\nLa production sort exactement les quantités prévues de ton stock. Ce qui tombe au sol, tu le vois dans l'écart. Et ce qui se voit se corrige.\n\nConcrètement : un stock juste et une marge qu'on voit avant de fixer le prix.\n\n— — —\n\n📺 Le tutoriel pas-à-pas : https://drive.google.com/file/d/15a_HkRxFA6AobiCgyHhXpl9sCM4mQdiC/view\n\n📞 Une démo ? 06 14 18 92 25\n🌐 foodeatup.com\n\nSérie « Le Coup de Feu » — saison 2, épisode 41.\nModule StockVision · Chapitre : 15 - Sortie des ingrédients de la production\n\nFoodEatUp est le logiciel qui réunit la caisse, le stock, les plannings, l'HACCP et le marketing d'un restaurant au même endroit.\n",
+        "legende": "Ton contrôle des portions. Ce qui part au sol, tu le paies quand même.\n\nLa production sort exactement les quantités prévues de ton stock. Ce qui tombe au sol, tu le vois dans l'écart. Et ce qui se voit se corrige.\n\nConcrètement : un stock juste et une marge qu'on voit avant de fixer le prix.\n\n— — —\n\n🔗 https://site.foodeatup.com/\n\n📞 Une démo ? 06 14 18 92 25\n🌐 foodeatup.com\n\nSérie « Le Coup de Feu » — saison 2, épisode 41.\nModule StockVision · Chapitre : 15 - Sortie des ingrédients de la production\n\nFoodEatUp est le logiciel qui réunit la caisse, le stock, les plannings, l'HACCP et le marketing d'un restaurant au même endroit.\n",
         "hashtags": [
           "Shorts",
           "restaurant",
@@ -4852,7 +4852,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "sortie des ingrédients de la production",
           "stockvision restaurant"
         ],
-        "cta": "Le tutoriel pas-à-pas",
+        "cta": "Découvrir FoodEatUp",
         "titre": "Sortie des ingrédients de la production — StockVision | FoodEatUp"
       }
     },
@@ -4875,7 +4875,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
   "EP042": {
     "publications": {
       "facebook": {
-        "legende": "Tout faire seul. À un moment, il faut être aidé.\n\nTu n'as pas à tout faire seul. Iris prépare tes contenus, PrediBot surveille tes chiffres, tu gardes la validation.\n\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "legende": "Tout faire seul. À un moment, il faut être aidé.\n\nTu n'as pas à tout faire seul. Iris prépare tes contenus, PrediBot surveille tes chiffres, tu gardes la validation.\n\n👉 Tout FoodEatUp : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
         "hashtags": [
           "restaurant",
           "restaurateur",
@@ -4891,10 +4891,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "fidélisation restaurant",
           "mcp rapidocms et iris"
         ],
-        "cta": "Demander une démo"
+        "cta": "Découvrir FoodEatUp"
       },
       "instagram": {
-        "legende": "Tout faire seul.\nÀ un moment, il faut être aidé.\n\nTu n'as pas à tout faire seul. Iris prépare tes contenus, PrediBot surveille tes chiffres, tu gardes la validation.\n\nLe pas-à-pas complet est dans notre Academy — lien en bio.\nUne démo ? 06 14 18 92 25",
+        "legende": "Tout faire seul.\nÀ un moment, il faut être aidé.\n\nTu n'as pas à tout faire seul. Iris prépare tes contenus, PrediBot surveille tes chiffres, tu gardes la validation.\n\nTout est expliqué sur notre site — lien en bio.\nUne démo ? 06 14 18 92 25",
         "hashtags": [
           "restaurant",
           "restaurateur",
@@ -4915,7 +4915,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "fidélisation restaurant",
           "mcp rapidocms et iris"
         ],
-        "cta": "Demander une démo"
+        "cta": "Tout est en bio"
       },
       "tiktok": {
         "legende": "Tout faire seul. 😅\nÀ un moment, il faut être aidé.\n\nTu n'as pas à tout faire seul.",
@@ -4932,10 +4932,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "fidélisation restaurant",
           "mcp rapidocms et iris"
         ],
-        "cta": "Demander une démo"
+        "cta": "Lien en bio"
       },
       "linkedin": {
-        "legende": "Tout faire seul.\n\nTu n'as pas à tout faire seul. Iris prépare tes contenus, PrediBot surveille tes chiffres, tu gardes la validation.\n\nConcrètement : une salle qui se remplit avant l'ouverture.\n\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "legende": "Tout faire seul.\n\nTu n'as pas à tout faire seul. Iris prépare tes contenus, PrediBot surveille tes chiffres, tu gardes la validation.\n\nConcrètement : une salle qui se remplit avant l'ouverture.\n\nEn savoir plus : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
         "hashtags": [
           "restauration",
           "foodeatup",
@@ -4948,10 +4948,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "fidélisation restaurant",
           "mcp rapidocms et iris"
         ],
-        "cta": "Demander une démo"
+        "cta": "Découvrir FoodEatUp"
       },
       "youtube": {
-        "legende": "Tout faire seul. À un moment, il faut être aidé.\n\nTu n'as pas à tout faire seul. Iris prépare tes contenus, PrediBot surveille tes chiffres, tu gardes la validation.\n\nConcrètement : une salle qui se remplit avant l'ouverture.\n\n— — —\n\n📞 Une démo ? 06 14 18 92 25\n🌐 foodeatup.com\n\nSérie « Le Coup de Feu » — saison 2, épisode 42.\nModule Marketing · Chapitre : 21 - MCP RapidoCMS et Iris\n\nFoodEatUp est le logiciel qui réunit la caisse, le stock, les plannings, l'HACCP et le marketing d'un restaurant au même endroit.\n",
+        "legende": "Tout faire seul. À un moment, il faut être aidé.\n\nTu n'as pas à tout faire seul. Iris prépare tes contenus, PrediBot surveille tes chiffres, tu gardes la validation.\n\nConcrètement : une salle qui se remplit avant l'ouverture.\n\n— — —\n\n🔗 https://site.foodeatup.com/\n\n📞 Une démo ? 06 14 18 92 25\n🌐 foodeatup.com\n\nSérie « Le Coup de Feu » — saison 2, épisode 42.\nModule Marketing · Chapitre : 21 - MCP RapidoCMS et Iris\n\nFoodEatUp est le logiciel qui réunit la caisse, le stock, les plannings, l'HACCP et le marketing d'un restaurant au même endroit.\n",
         "hashtags": [
           "Shorts",
           "restaurant",
@@ -4970,7 +4970,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "fidélisation restaurant",
           "mcp rapidocms et iris"
         ],
-        "cta": "Demander une démo",
+        "cta": "Découvrir FoodEatUp",
         "titre": "MCP RapidoCMS et Iris — Marketing | FoodEatUp"
       }
     },
@@ -4988,7 +4988,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
   "EP043": {
     "publications": {
       "facebook": {
-        "legende": "Petit vol. Tous les jours. Mis bout à bout, ça fait ta marge.\n\nChaque remise et chaque avoir est tracé, avec qui l'a fait et pourquoi. Les petits gestes ne mangent plus ta marge en silence.\n\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "legende": "Petit vol. Tous les jours. Mis bout à bout, ça fait ta marge.\n\nChaque remise et chaque avoir est tracé, avec qui l'a fait et pourquoi. Les petits gestes ne mangent plus ta marge en silence.\n\n👉 Tout FoodEatUp : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
         "hashtags": [
           "restaurant",
           "restaurateur",
@@ -5005,10 +5005,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "remises et avoirs",
           "caisse pos restaurant"
         ],
-        "cta": "Demander une démo"
+        "cta": "Découvrir FoodEatUp"
       },
       "instagram": {
-        "legende": "Petit vol. Tous les jours.\nMis bout à bout, ça fait ta marge.\n\nChaque remise et chaque avoir est tracé, avec qui l'a fait et pourquoi. Les petits gestes ne mangent plus ta marge en silence.\n\nLe pas-à-pas complet est dans notre Academy — lien en bio.\nUne démo ? 06 14 18 92 25",
+        "legende": "Petit vol. Tous les jours.\nMis bout à bout, ça fait ta marge.\n\nChaque remise et chaque avoir est tracé, avec qui l'a fait et pourquoi. Les petits gestes ne mangent plus ta marge en silence.\n\nTout est expliqué sur notre site — lien en bio.\nUne démo ? 06 14 18 92 25",
         "hashtags": [
           "restaurant",
           "restaurateur",
@@ -5030,7 +5030,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "remises et avoirs",
           "caisse pos restaurant"
         ],
-        "cta": "Demander une démo"
+        "cta": "Tout est en bio"
       },
       "tiktok": {
         "legende": "Petit vol. Tous les jours. 😅\nMis bout à bout, ça fait ta marge.\n\nChaque remise et chaque avoir est tracé, avec qui l'a fait et pourquoi.",
@@ -5048,10 +5048,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "remises et avoirs",
           "caisse pos restaurant"
         ],
-        "cta": "Demander une démo"
+        "cta": "Lien en bio"
       },
       "linkedin": {
-        "legende": "Petit vol. Tous les jours.\n\nChaque remise et chaque avoir est tracé, avec qui l'a fait et pourquoi. Les petits gestes ne mangent plus ta marge en silence.\n\nConcrètement : une caisse qui ferme juste, tous les soirs.\n\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "legende": "Petit vol. Tous les jours.\n\nChaque remise et chaque avoir est tracé, avec qui l'a fait et pourquoi. Les petits gestes ne mangent plus ta marge en silence.\n\nConcrètement : une caisse qui ferme juste, tous les soirs.\n\nEn savoir plus : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
         "hashtags": [
           "restauration",
           "foodeatup",
@@ -5065,10 +5065,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "remises et avoirs",
           "caisse pos restaurant"
         ],
-        "cta": "Demander une démo"
+        "cta": "Découvrir FoodEatUp"
       },
       "youtube": {
-        "legende": "Petit vol. Tous les jours. Mis bout à bout, ça fait ta marge.\n\nChaque remise et chaque avoir est tracé, avec qui l'a fait et pourquoi. Les petits gestes ne mangent plus ta marge en silence.\n\nConcrètement : une caisse qui ferme juste, tous les soirs.\n\n— — —\n\n📞 Une démo ? 06 14 18 92 25\n🌐 foodeatup.com\n\nSérie « Le Coup de Feu » — saison 2, épisode 43.\nModule Caisse POS · Chapitre : 4 - Remises et avoirs\n\nFoodEatUp est le logiciel qui réunit la caisse, le stock, les plannings, l'HACCP et le marketing d'un restaurant au même endroit.\n",
+        "legende": "Petit vol. Tous les jours. Mis bout à bout, ça fait ta marge.\n\nChaque remise et chaque avoir est tracé, avec qui l'a fait et pourquoi. Les petits gestes ne mangent plus ta marge en silence.\n\nConcrètement : une caisse qui ferme juste, tous les soirs.\n\n— — —\n\n🔗 https://site.foodeatup.com/\n\n📞 Une démo ? 06 14 18 92 25\n🌐 foodeatup.com\n\nSérie « Le Coup de Feu » — saison 2, épisode 43.\nModule Caisse POS · Chapitre : 4 - Remises et avoirs\n\nFoodEatUp est le logiciel qui réunit la caisse, le stock, les plannings, l'HACCP et le marketing d'un restaurant au même endroit.\n",
         "hashtags": [
           "Shorts",
           "restaurant",
@@ -5088,7 +5088,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "remises et avoirs",
           "caisse pos restaurant"
         ],
-        "cta": "Demander une démo",
+        "cta": "Découvrir FoodEatUp",
         "titre": "Remises et avoirs — Caisse POS | FoodEatUp"
       }
     },
@@ -5099,7 +5099,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
   "EP044": {
     "publications": {
       "facebook": {
-        "legende": "Prendre la commande en 2026. La commande devrait partir en cuisine toute seule.\n\nLe client scanne, commande, la cuisine reçoit. Ton serveur passe son temps en salle, pas à recopier des lignes sur un carnet.\n\n👉 Le tutoriel complet : https://drive.google.com/file/d/1rTMXZj_uLAVaGPjxBT-ncZ4hcTU8UetZ/view\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "legende": "Prendre la commande en 2026. La commande devrait partir en cuisine toute seule.\n\nLe client scanne, commande, la cuisine reçoit. Ton serveur passe son temps en salle, pas à recopier des lignes sur un carnet.\n\n👉 Tout FoodEatUp : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
         "hashtags": [
           "restaurant",
           "restaurateur",
@@ -5116,10 +5116,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "commander par qr code",
           "réservation restaurant"
         ],
-        "cta": "Voir le tutoriel complet"
+        "cta": "Découvrir FoodEatUp"
       },
       "instagram": {
-        "legende": "Prendre la commande en 2026.\nLa commande devrait partir en cuisine toute seule.\n\nLe client scanne, commande, la cuisine reçoit. Ton serveur passe son temps en salle, pas à recopier des lignes sur un carnet.\n\nLe pas-à-pas complet est dans notre Academy — lien en bio.\nUne démo ? 06 14 18 92 25",
+        "legende": "Prendre la commande en 2026.\nLa commande devrait partir en cuisine toute seule.\n\nLe client scanne, commande, la cuisine reçoit. Ton serveur passe son temps en salle, pas à recopier des lignes sur un carnet.\n\nTout est expliqué sur notre site — lien en bio.\nUne démo ? 06 14 18 92 25",
         "hashtags": [
           "restaurant",
           "restaurateur",
@@ -5140,7 +5140,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "commander par qr code",
           "réservation restaurant"
         ],
-        "cta": "Le pas-à-pas est en bio"
+        "cta": "Tout est en bio"
       },
       "tiktok": {
         "legende": "Prendre la commande en 2026. 😅\nLa commande devrait partir en cuisine toute seule.\n\nLe client scanne, commande, la cuisine reçoit.",
@@ -5158,10 +5158,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "commander par qr code",
           "réservation restaurant"
         ],
-        "cta": "Tuto complet en bio"
+        "cta": "Lien en bio"
       },
       "linkedin": {
-        "legende": "Prendre la commande en 2026.\n\nLe client scanne, commande, la cuisine reçoit. Ton serveur passe son temps en salle, pas à recopier des lignes sur un carnet.\n\nConcrètement : un plan de salle qui reflète la réalité, minute par minute.\n\nLe tutoriel pas-à-pas : https://drive.google.com/file/d/1rTMXZj_uLAVaGPjxBT-ncZ4hcTU8UetZ/view\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "legende": "Prendre la commande en 2026.\n\nLe client scanne, commande, la cuisine reçoit. Ton serveur passe son temps en salle, pas à recopier des lignes sur un carnet.\n\nConcrètement : un plan de salle qui reflète la réalité, minute par minute.\n\nEn savoir plus : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
         "hashtags": [
           "restauration",
           "foodeatup",
@@ -5175,10 +5175,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "commander par qr code",
           "réservation restaurant"
         ],
-        "cta": "Voir le tutoriel pas-à-pas"
+        "cta": "Découvrir FoodEatUp"
       },
       "youtube": {
-        "legende": "Prendre la commande en 2026. La commande devrait partir en cuisine toute seule.\n\nLe client scanne, commande, la cuisine reçoit. Ton serveur passe son temps en salle, pas à recopier des lignes sur un carnet.\n\nConcrètement : un plan de salle qui reflète la réalité, minute par minute.\n\n— — —\n\n📺 Le tutoriel pas-à-pas : https://drive.google.com/file/d/1rTMXZj_uLAVaGPjxBT-ncZ4hcTU8UetZ/view\n\n📞 Une démo ? 06 14 18 92 25\n🌐 foodeatup.com\n\nSérie « Le Coup de Feu » — saison 2, épisode 44.\nModule Réservation · Chapitre : 5 - Commander par QR code\n\nFoodEatUp est le logiciel qui réunit la caisse, le stock, les plannings, l'HACCP et le marketing d'un restaurant au même endroit.\n",
+        "legende": "Prendre la commande en 2026. La commande devrait partir en cuisine toute seule.\n\nLe client scanne, commande, la cuisine reçoit. Ton serveur passe son temps en salle, pas à recopier des lignes sur un carnet.\n\nConcrètement : un plan de salle qui reflète la réalité, minute par minute.\n\n— — —\n\n🔗 https://site.foodeatup.com/\n\n📞 Une démo ? 06 14 18 92 25\n🌐 foodeatup.com\n\nSérie « Le Coup de Feu » — saison 2, épisode 44.\nModule Réservation · Chapitre : 5 - Commander par QR code\n\nFoodEatUp est le logiciel qui réunit la caisse, le stock, les plannings, l'HACCP et le marketing d'un restaurant au même endroit.\n",
         "hashtags": [
           "Shorts",
           "restaurant",
@@ -5197,7 +5197,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "commander par qr code",
           "réservation restaurant"
         ],
-        "cta": "Le tutoriel pas-à-pas",
+        "cta": "Découvrir FoodEatUp",
         "titre": "Commander par QR code — Réservation | FoodEatUp"
       }
     },
@@ -5219,7 +5219,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
   "EP045": {
     "publications": {
       "facebook": {
-        "legende": "Personne ne sait où tu es. Ton restaurant non plus ne devrait pas être une boîte noire.\n\nTon restaurant arrête d'être une boîte noire : ventes, marges, fréquentation, stock, module par module, sur la période que tu choisis.\n\n👉 Le tutoriel complet : https://drive.google.com/file/d/13BlvDmhkU0IsKHXo77VHM7TwMSHKHmpv/view\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "legende": "Personne ne sait où tu es. Ton restaurant non plus ne devrait pas être une boîte noire.\n\nTon restaurant arrête d'être une boîte noire : ventes, marges, fréquentation, stock, module par module, sur la période que tu choisis.\n\n👉 Tout FoodEatUp : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
         "hashtags": [
           "restaurant",
           "restaurateur",
@@ -5236,10 +5236,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "statistiques par module",
           "stockvision restaurant"
         ],
-        "cta": "Voir le tutoriel complet"
+        "cta": "Découvrir FoodEatUp"
       },
       "instagram": {
-        "legende": "Personne ne sait où tu es.\nTon restaurant non plus ne devrait pas être une boîte noire.\n\nTon restaurant arrête d'être une boîte noire : ventes, marges, fréquentation, stock, module par module, sur la période que tu choisis.\n\nLe pas-à-pas complet est dans notre Academy — lien en bio.\nUne démo ? 06 14 18 92 25",
+        "legende": "Personne ne sait où tu es.\nTon restaurant non plus ne devrait pas être une boîte noire.\n\nTon restaurant arrête d'être une boîte noire : ventes, marges, fréquentation, stock, module par module, sur la période que tu choisis.\n\nTout est expliqué sur notre site — lien en bio.\nUne démo ? 06 14 18 92 25",
         "hashtags": [
           "restaurant",
           "restaurateur",
@@ -5262,7 +5262,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "statistiques par module",
           "stockvision restaurant"
         ],
-        "cta": "Le pas-à-pas est en bio"
+        "cta": "Tout est en bio"
       },
       "tiktok": {
         "legende": "Personne ne sait où tu es. 😅\nTon restaurant non plus ne devrait pas être une boîte noire.\n\nTon restaurant arrête d'être une boîte noire : ventes, marges, fréquentation, stock, module par module, sur la période que tu choisis.",
@@ -5280,10 +5280,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "statistiques par module",
           "stockvision restaurant"
         ],
-        "cta": "Tuto complet en bio"
+        "cta": "Lien en bio"
       },
       "linkedin": {
-        "legende": "Personne ne sait où tu es.\n\nTon restaurant arrête d'être une boîte noire : ventes, marges, fréquentation, stock, module par module, sur la période que tu choisis.\n\nConcrètement : un stock juste et une marge qu'on voit avant de fixer le prix.\n\nLe tutoriel pas-à-pas : https://drive.google.com/file/d/13BlvDmhkU0IsKHXo77VHM7TwMSHKHmpv/view\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "legende": "Personne ne sait où tu es.\n\nTon restaurant arrête d'être une boîte noire : ventes, marges, fréquentation, stock, module par module, sur la période que tu choisis.\n\nConcrètement : un stock juste et une marge qu'on voit avant de fixer le prix.\n\nEn savoir plus : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
         "hashtags": [
           "restauration",
           "foodeatup",
@@ -5297,10 +5297,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "statistiques par module",
           "stockvision restaurant"
         ],
-        "cta": "Voir le tutoriel pas-à-pas"
+        "cta": "Découvrir FoodEatUp"
       },
       "youtube": {
-        "legende": "Personne ne sait où tu es. Ton restaurant non plus ne devrait pas être une boîte noire.\n\nTon restaurant arrête d'être une boîte noire : ventes, marges, fréquentation, stock, module par module, sur la période que tu choisis.\n\nConcrètement : un stock juste et une marge qu'on voit avant de fixer le prix.\n\n— — —\n\n📺 Le tutoriel pas-à-pas : https://drive.google.com/file/d/13BlvDmhkU0IsKHXo77VHM7TwMSHKHmpv/view\n\n📞 Une démo ? 06 14 18 92 25\n🌐 foodeatup.com\n\nSérie « Le Coup de Feu » — saison 2, épisode 45.\nModule StockVision · Chapitre : 18 - Statistiques par module\n\nFoodEatUp est le logiciel qui réunit la caisse, le stock, les plannings, l'HACCP et le marketing d'un restaurant au même endroit.\n",
+        "legende": "Personne ne sait où tu es. Ton restaurant non plus ne devrait pas être une boîte noire.\n\nTon restaurant arrête d'être une boîte noire : ventes, marges, fréquentation, stock, module par module, sur la période que tu choisis.\n\nConcrètement : un stock juste et une marge qu'on voit avant de fixer le prix.\n\n— — —\n\n🔗 https://site.foodeatup.com/\n\n📞 Une démo ? 06 14 18 92 25\n🌐 foodeatup.com\n\nSérie « Le Coup de Feu » — saison 2, épisode 45.\nModule StockVision · Chapitre : 18 - Statistiques par module\n\nFoodEatUp est le logiciel qui réunit la caisse, le stock, les plannings, l'HACCP et le marketing d'un restaurant au même endroit.\n",
         "hashtags": [
           "Shorts",
           "restaurant",
@@ -5321,7 +5321,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "statistiques par module",
           "stockvision restaurant"
         ],
-        "cta": "Le tutoriel pas-à-pas",
+        "cta": "Découvrir FoodEatUp",
         "titre": "Statistiques par module — StockVision | FoodEatUp"
       }
     },
@@ -5341,7 +5341,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
   "EP046": {
     "publications": {
       "facebook": {
-        "legende": "Un détail. Un service perdu. Les petites erreurs coûtent cher quand personne ne les voit.\n\nL'IA remonte ce que tu n'as pas le temps de voir : un coût qui monte, un plat qui décroche, un stock qui dort. Le petit détail devient visible.\n\n👉 Le tutoriel complet : https://drive.google.com/file/d/1pmXqNyUyZnwszglIDsXeFXtGiA0HDZm9/view\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "legende": "Un détail. Un service perdu. Les petites erreurs coûtent cher quand personne ne les voit.\n\nL'IA remonte ce que tu n'as pas le temps de voir : un coût qui monte, un plat qui décroche, un stock qui dort. Le petit détail devient visible.\n\n👉 Tout FoodEatUp : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
         "hashtags": [
           "restaurant",
           "restaurateur",
@@ -5358,10 +5358,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "agent ia et suggestions",
           "stockvision restaurant"
         ],
-        "cta": "Voir le tutoriel complet"
+        "cta": "Découvrir FoodEatUp"
       },
       "instagram": {
-        "legende": "Un détail. Un service perdu.\nLes petites erreurs coûtent cher quand personne ne les voit.\n\nL'IA remonte ce que tu n'as pas le temps de voir : un coût qui monte, un plat qui décroche, un stock qui dort. Le petit détail devient visible.\n\nLe pas-à-pas complet est dans notre Academy — lien en bio.\nUne démo ? 06 14 18 92 25",
+        "legende": "Un détail. Un service perdu.\nLes petites erreurs coûtent cher quand personne ne les voit.\n\nL'IA remonte ce que tu n'as pas le temps de voir : un coût qui monte, un plat qui décroche, un stock qui dort. Le petit détail devient visible.\n\nTout est expliqué sur notre site — lien en bio.\nUne démo ? 06 14 18 92 25",
         "hashtags": [
           "restaurant",
           "restaurateur",
@@ -5384,7 +5384,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "agent ia et suggestions",
           "stockvision restaurant"
         ],
-        "cta": "Le pas-à-pas est en bio"
+        "cta": "Tout est en bio"
       },
       "tiktok": {
         "legende": "Un détail. Un service perdu. 😅\nLes petites erreurs coûtent cher quand personne ne les voit.\n\nL'IA remonte ce que tu n'as pas le temps de voir : un coût qui monte, un plat qui décroche, un stock qui dort.",
@@ -5402,10 +5402,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "agent ia et suggestions",
           "stockvision restaurant"
         ],
-        "cta": "Tuto complet en bio"
+        "cta": "Lien en bio"
       },
       "linkedin": {
-        "legende": "Un détail. Un service perdu.\n\nL'IA remonte ce que tu n'as pas le temps de voir : un coût qui monte, un plat qui décroche, un stock qui dort. Le petit détail devient visible.\n\nConcrètement : un stock juste et une marge qu'on voit avant de fixer le prix.\n\nLe tutoriel pas-à-pas : https://drive.google.com/file/d/1pmXqNyUyZnwszglIDsXeFXtGiA0HDZm9/view\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "legende": "Un détail. Un service perdu.\n\nL'IA remonte ce que tu n'as pas le temps de voir : un coût qui monte, un plat qui décroche, un stock qui dort. Le petit détail devient visible.\n\nConcrètement : un stock juste et une marge qu'on voit avant de fixer le prix.\n\nEn savoir plus : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
         "hashtags": [
           "restauration",
           "foodeatup",
@@ -5419,10 +5419,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "agent ia et suggestions",
           "stockvision restaurant"
         ],
-        "cta": "Voir le tutoriel pas-à-pas"
+        "cta": "Découvrir FoodEatUp"
       },
       "youtube": {
-        "legende": "Un détail. Un service perdu. Les petites erreurs coûtent cher quand personne ne les voit.\n\nL'IA remonte ce que tu n'as pas le temps de voir : un coût qui monte, un plat qui décroche, un stock qui dort. Le petit détail devient visible.\n\nConcrètement : un stock juste et une marge qu'on voit avant de fixer le prix.\n\n— — —\n\n📺 Le tutoriel pas-à-pas : https://drive.google.com/file/d/1pmXqNyUyZnwszglIDsXeFXtGiA0HDZm9/view\n\n📞 Une démo ? 06 14 18 92 25\n🌐 foodeatup.com\n\nSérie « Le Coup de Feu » — saison 2, épisode 46.\nModule StockVision · Chapitre : 20 - Agent IA et suggestions\n\nFoodEatUp est le logiciel qui réunit la caisse, le stock, les plannings, l'HACCP et le marketing d'un restaurant au même endroit.\n",
+        "legende": "Un détail. Un service perdu. Les petites erreurs coûtent cher quand personne ne les voit.\n\nL'IA remonte ce que tu n'as pas le temps de voir : un coût qui monte, un plat qui décroche, un stock qui dort. Le petit détail devient visible.\n\nConcrètement : un stock juste et une marge qu'on voit avant de fixer le prix.\n\n— — —\n\n🔗 https://site.foodeatup.com/\n\n📞 Une démo ? 06 14 18 92 25\n🌐 foodeatup.com\n\nSérie « Le Coup de Feu » — saison 2, épisode 46.\nModule StockVision · Chapitre : 20 - Agent IA et suggestions\n\nFoodEatUp est le logiciel qui réunit la caisse, le stock, les plannings, l'HACCP et le marketing d'un restaurant au même endroit.\n",
         "hashtags": [
           "Shorts",
           "restaurant",
@@ -5443,7 +5443,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "agent ia et suggestions",
           "stockvision restaurant"
         ],
-        "cta": "Le tutoriel pas-à-pas",
+        "cta": "Découvrir FoodEatUp",
         "titre": "Agent IA et suggestions — StockVision | FoodEatUp"
       }
     },
@@ -5464,7 +5464,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
   "EP047": {
     "publications": {
       "facebook": {
-        "legende": "La livraison de 7 h. Réceptionner, contrôler, tracer. Sans y penser.\n\nÀ la livraison, tu contrôles la température, tu prends la photo, c'est tracé. Sept heures du matin, et ta conformité est déjà faite.\n\n👉 Le tutoriel complet : https://drive.google.com/file/d/1JkMe74c9n4TFjeRRJ7pSpSQoB6bP2jEf/view\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "legende": "La livraison de 7 h. Réceptionner, contrôler, tracer. Sans y penser.\n\nÀ la livraison, tu contrôles la température, tu prends la photo, c'est tracé. Sept heures du matin, et ta conformité est déjà faite.\n\n👉 Tout FoodEatUp : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
         "hashtags": [
           "restaurant",
           "restaurateur",
@@ -5481,10 +5481,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "contrôle à réception",
           "haccp restaurant"
         ],
-        "cta": "Voir le tutoriel complet"
+        "cta": "Découvrir FoodEatUp"
       },
       "instagram": {
-        "legende": "La livraison de 7 h.\nRéceptionner, contrôler, tracer. Sans y penser.\n\nÀ la livraison, tu contrôles la température, tu prends la photo, c'est tracé. Sept heures du matin, et ta conformité est déjà faite.\n\nLe pas-à-pas complet est dans notre Academy — lien en bio.\nUne démo ? 06 14 18 92 25",
+        "legende": "La livraison de 7 h.\nRéceptionner, contrôler, tracer. Sans y penser.\n\nÀ la livraison, tu contrôles la température, tu prends la photo, c'est tracé. Sept heures du matin, et ta conformité est déjà faite.\n\nTout est expliqué sur notre site — lien en bio.\nUne démo ? 06 14 18 92 25",
         "hashtags": [
           "restaurant",
           "restaurateur",
@@ -5506,7 +5506,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "contrôle à réception",
           "haccp restaurant"
         ],
-        "cta": "Le pas-à-pas est en bio"
+        "cta": "Tout est en bio"
       },
       "tiktok": {
         "legende": "La livraison de 7 h. 😅\nRéceptionner, contrôler, tracer. Sans y penser.\n\nÀ la livraison, tu contrôles la température, tu prends la photo, c'est tracé.",
@@ -5524,10 +5524,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "contrôle à réception",
           "haccp restaurant"
         ],
-        "cta": "Tuto complet en bio"
+        "cta": "Lien en bio"
       },
       "linkedin": {
-        "legende": "La livraison de 7 h.\n\nÀ la livraison, tu contrôles la température, tu prends la photo, c'est tracé. Sept heures du matin, et ta conformité est déjà faite.\n\nConcrètement : un contrôle qui se passe bien, parce que tout est déjà tracé.\n\nLe tutoriel pas-à-pas : https://drive.google.com/file/d/1JkMe74c9n4TFjeRRJ7pSpSQoB6bP2jEf/view\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "legende": "La livraison de 7 h.\n\nÀ la livraison, tu contrôles la température, tu prends la photo, c'est tracé. Sept heures du matin, et ta conformité est déjà faite.\n\nConcrètement : un contrôle qui se passe bien, parce que tout est déjà tracé.\n\nEn savoir plus : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
         "hashtags": [
           "restauration",
           "foodeatup",
@@ -5541,10 +5541,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "contrôle à réception",
           "haccp restaurant"
         ],
-        "cta": "Voir le tutoriel pas-à-pas"
+        "cta": "Découvrir FoodEatUp"
       },
       "youtube": {
-        "legende": "La livraison de 7 h. Réceptionner, contrôler, tracer. Sans y penser.\n\nÀ la livraison, tu contrôles la température, tu prends la photo, c'est tracé. Sept heures du matin, et ta conformité est déjà faite.\n\nConcrètement : un contrôle qui se passe bien, parce que tout est déjà tracé.\n\n— — —\n\n📺 Le tutoriel pas-à-pas : https://drive.google.com/file/d/1JkMe74c9n4TFjeRRJ7pSpSQoB6bP2jEf/view\n\n📞 Une démo ? 06 14 18 92 25\n🌐 foodeatup.com\n\nSérie « Le Coup de Feu » — saison 2, épisode 47.\nModule HACCP · Chapitre : contrôle à réception\n\nFoodEatUp est le logiciel qui réunit la caisse, le stock, les plannings, l'HACCP et le marketing d'un restaurant au même endroit.\n",
+        "legende": "La livraison de 7 h. Réceptionner, contrôler, tracer. Sans y penser.\n\nÀ la livraison, tu contrôles la température, tu prends la photo, c'est tracé. Sept heures du matin, et ta conformité est déjà faite.\n\nConcrètement : un contrôle qui se passe bien, parce que tout est déjà tracé.\n\n— — —\n\n🔗 https://site.foodeatup.com/\n\n📞 Une démo ? 06 14 18 92 25\n🌐 foodeatup.com\n\nSérie « Le Coup de Feu » — saison 2, épisode 47.\nModule HACCP · Chapitre : contrôle à réception\n\nFoodEatUp est le logiciel qui réunit la caisse, le stock, les plannings, l'HACCP et le marketing d'un restaurant au même endroit.\n",
         "hashtags": [
           "Shorts",
           "restaurant",
@@ -5564,7 +5564,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "contrôle à réception",
           "haccp restaurant"
         ],
-        "cta": "Le tutoriel pas-à-pas",
+        "cta": "Découvrir FoodEatUp",
         "titre": "Contrôle à réception — HACCP | FoodEatUp"
       }
     },
@@ -5585,7 +5585,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
   "EP048": {
     "publications": {
       "facebook": {
-        "legende": "Ce que tu construis chaque jour. Un système fragile finit toujours par tomber.\n\nTu poses ta base une fois : établissement, TVA, zones, équipements. Tout le reste de FoodEatUp s'appuie dessus sans que tu y reviennes.\n\n👉 Le tutoriel complet : https://drive.google.com/file/d/1hp7mZd-tQliPUemhyIKHWMl9xUgKHwoq/view\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "legende": "Ce que tu construis chaque jour. Un système fragile finit toujours par tomber.\n\nTu poses ta base une fois : établissement, TVA, zones, équipements. Tout le reste de FoodEatUp s'appuie dessus sans que tu y reviennes.\n\n👉 Tout FoodEatUp : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
         "hashtags": [
           "restaurant",
           "restaurateur",
@@ -5601,10 +5601,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "paramétrage initial",
           "configuration restaurant"
         ],
-        "cta": "Voir le tutoriel complet"
+        "cta": "Découvrir FoodEatUp"
       },
       "instagram": {
-        "legende": "Ce que tu construis chaque jour.\nUn système fragile finit toujours par tomber.\n\nTu poses ta base une fois : établissement, TVA, zones, équipements. Tout le reste de FoodEatUp s'appuie dessus sans que tu y reviennes.\n\nLe pas-à-pas complet est dans notre Academy — lien en bio.\nUne démo ? 06 14 18 92 25",
+        "legende": "Ce que tu construis chaque jour.\nUn système fragile finit toujours par tomber.\n\nTu poses ta base une fois : établissement, TVA, zones, équipements. Tout le reste de FoodEatUp s'appuie dessus sans que tu y reviennes.\n\nTout est expliqué sur notre site — lien en bio.\nUne démo ? 06 14 18 92 25",
         "hashtags": [
           "restaurant",
           "restaurateur",
@@ -5624,7 +5624,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "paramétrage initial",
           "configuration restaurant"
         ],
-        "cta": "Le pas-à-pas est en bio"
+        "cta": "Tout est en bio"
       },
       "tiktok": {
         "legende": "Ce que tu construis chaque jour. 😅\nUn système fragile finit toujours par tomber.\n\nTu poses ta base une fois : établissement, TVA, zones, équipements.",
@@ -5641,10 +5641,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "paramétrage initial",
           "configuration restaurant"
         ],
-        "cta": "Tuto complet en bio"
+        "cta": "Lien en bio"
       },
       "linkedin": {
-        "legende": "Ce que tu construis chaque jour.\n\nTu poses ta base une fois : établissement, TVA, zones, équipements. Tout le reste de FoodEatUp s'appuie dessus sans que tu y reviennes.\n\nConcrètement : une seule saisie qui alimente tout le reste.\n\nLe tutoriel pas-à-pas : https://drive.google.com/file/d/1hp7mZd-tQliPUemhyIKHWMl9xUgKHwoq/view\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "legende": "Ce que tu construis chaque jour.\n\nTu poses ta base une fois : établissement, TVA, zones, équipements. Tout le reste de FoodEatUp s'appuie dessus sans que tu y reviennes.\n\nConcrètement : une seule saisie qui alimente tout le reste.\n\nEn savoir plus : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
         "hashtags": [
           "restauration",
           "foodeatup",
@@ -5657,10 +5657,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "paramétrage initial",
           "configuration restaurant"
         ],
-        "cta": "Voir le tutoriel pas-à-pas"
+        "cta": "Découvrir FoodEatUp"
       },
       "youtube": {
-        "legende": "Ce que tu construis chaque jour. Un système fragile finit toujours par tomber.\n\nTu poses ta base une fois : établissement, TVA, zones, équipements. Tout le reste de FoodEatUp s'appuie dessus sans que tu y reviennes.\n\nConcrètement : une seule saisie qui alimente tout le reste.\n\n— — —\n\n📺 Le tutoriel pas-à-pas : https://drive.google.com/file/d/1hp7mZd-tQliPUemhyIKHWMl9xUgKHwoq/view\n\n📞 Une démo ? 06 14 18 92 25\n🌐 foodeatup.com\n\nSérie « Le Coup de Feu » — saison 2, épisode 48.\nModule Configuration · Chapitre : paramétrage initial\n\nFoodEatUp est le logiciel qui réunit la caisse, le stock, les plannings, l'HACCP et le marketing d'un restaurant au même endroit.\n",
+        "legende": "Ce que tu construis chaque jour. Un système fragile finit toujours par tomber.\n\nTu poses ta base une fois : établissement, TVA, zones, équipements. Tout le reste de FoodEatUp s'appuie dessus sans que tu y reviennes.\n\nConcrètement : une seule saisie qui alimente tout le reste.\n\n— — —\n\n🔗 https://site.foodeatup.com/\n\n📞 Une démo ? 06 14 18 92 25\n🌐 foodeatup.com\n\nSérie « Le Coup de Feu » — saison 2, épisode 48.\nModule Configuration · Chapitre : paramétrage initial\n\nFoodEatUp est le logiciel qui réunit la caisse, le stock, les plannings, l'HACCP et le marketing d'un restaurant au même endroit.\n",
         "hashtags": [
           "Shorts",
           "restaurant",
@@ -5678,7 +5678,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "paramétrage initial",
           "configuration restaurant"
         ],
-        "cta": "Le tutoriel pas-à-pas",
+        "cta": "Découvrir FoodEatUp",
         "titre": "Paramétrage initial — Configuration | FoodEatUp"
       }
     },
@@ -5699,7 +5699,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
   "EP049": {
     "publications": {
       "facebook": {
-        "legende": "Il envoie plus vite que ton pass. Un KDS, et la cuisine avance toute seule.\n\nTu relèves tes frigos depuis ton téléphone. La mesure est datée, signée, archivée. Un contrôle, et tu sors trois mois d'historique en un clic.\n\n👉 Le tutoriel complet : https://drive.google.com/file/d/14OmsNUd3EMgWNxGVvmOwLgR3ZloWKNKW/view\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "legende": "Il envoie plus vite que ton pass. Un KDS, et la cuisine avance toute seule.\n\nTu relèves tes frigos depuis ton téléphone. La mesure est datée, signée, archivée. Un contrôle, et tu sors trois mois d'historique en un clic.\n\n👉 Tout FoodEatUp : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
         "hashtags": [
           "restaurant",
           "restaurateur",
@@ -5716,10 +5716,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "relevé de température",
           "haccp restaurant"
         ],
-        "cta": "Voir le tutoriel complet"
+        "cta": "Découvrir FoodEatUp"
       },
       "instagram": {
-        "legende": "Il envoie plus vite que ton pass.\nUn KDS, et la cuisine avance toute seule.\n\nTu relèves tes frigos depuis ton téléphone. La mesure est datée, signée, archivée. Un contrôle, et tu sors trois mois d'historique en un clic.\n\nLe pas-à-pas complet est dans notre Academy — lien en bio.\nUne démo ? 06 14 18 92 25",
+        "legende": "Il envoie plus vite que ton pass.\nUn KDS, et la cuisine avance toute seule.\n\nTu relèves tes frigos depuis ton téléphone. La mesure est datée, signée, archivée. Un contrôle, et tu sors trois mois d'historique en un clic.\n\nTout est expliqué sur notre site — lien en bio.\nUne démo ? 06 14 18 92 25",
         "hashtags": [
           "restaurant",
           "restaurateur",
@@ -5741,7 +5741,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "relevé de température",
           "haccp restaurant"
         ],
-        "cta": "Le pas-à-pas est en bio"
+        "cta": "Tout est en bio"
       },
       "tiktok": {
         "legende": "Il envoie plus vite que ton pass. 😅\nUn KDS, et la cuisine avance toute seule.\n\nTu relèves tes frigos depuis ton téléphone.",
@@ -5759,10 +5759,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "relevé de température",
           "haccp restaurant"
         ],
-        "cta": "Tuto complet en bio"
+        "cta": "Lien en bio"
       },
       "linkedin": {
-        "legende": "Il envoie plus vite que ton pass.\n\nTu relèves tes frigos depuis ton téléphone. La mesure est datée, signée, archivée. Un contrôle, et tu sors trois mois d'historique en un clic.\n\nConcrètement : un contrôle qui se passe bien, parce que tout est déjà tracé.\n\nLe tutoriel pas-à-pas : https://drive.google.com/file/d/14OmsNUd3EMgWNxGVvmOwLgR3ZloWKNKW/view\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "legende": "Il envoie plus vite que ton pass.\n\nTu relèves tes frigos depuis ton téléphone. La mesure est datée, signée, archivée. Un contrôle, et tu sors trois mois d'historique en un clic.\n\nConcrètement : un contrôle qui se passe bien, parce que tout est déjà tracé.\n\nEn savoir plus : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
         "hashtags": [
           "restauration",
           "foodeatup",
@@ -5776,10 +5776,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "relevé de température",
           "haccp restaurant"
         ],
-        "cta": "Voir le tutoriel pas-à-pas"
+        "cta": "Découvrir FoodEatUp"
       },
       "youtube": {
-        "legende": "Il envoie plus vite que ton pass. Un KDS, et la cuisine avance toute seule.\n\nTu relèves tes frigos depuis ton téléphone. La mesure est datée, signée, archivée. Un contrôle, et tu sors trois mois d'historique en un clic.\n\nConcrètement : un contrôle qui se passe bien, parce que tout est déjà tracé.\n\n— — —\n\n📺 Le tutoriel pas-à-pas : https://drive.google.com/file/d/14OmsNUd3EMgWNxGVvmOwLgR3ZloWKNKW/view\n\n📞 Une démo ? 06 14 18 92 25\n🌐 foodeatup.com\n\nSérie « Le Coup de Feu » — saison 2, épisode 49.\nModule HACCP · Chapitre : Relevé de température\n\nFoodEatUp est le logiciel qui réunit la caisse, le stock, les plannings, l'HACCP et le marketing d'un restaurant au même endroit.\n",
+        "legende": "Il envoie plus vite que ton pass. Un KDS, et la cuisine avance toute seule.\n\nTu relèves tes frigos depuis ton téléphone. La mesure est datée, signée, archivée. Un contrôle, et tu sors trois mois d'historique en un clic.\n\nConcrètement : un contrôle qui se passe bien, parce que tout est déjà tracé.\n\n— — —\n\n🔗 https://site.foodeatup.com/\n\n📞 Une démo ? 06 14 18 92 25\n🌐 foodeatup.com\n\nSérie « Le Coup de Feu » — saison 2, épisode 49.\nModule HACCP · Chapitre : Relevé de température\n\nFoodEatUp est le logiciel qui réunit la caisse, le stock, les plannings, l'HACCP et le marketing d'un restaurant au même endroit.\n",
         "hashtags": [
           "Shorts",
           "restaurant",
@@ -5799,7 +5799,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "relevé de température",
           "haccp restaurant"
         ],
-        "cta": "Le tutoriel pas-à-pas",
+        "cta": "Découvrir FoodEatUp",
         "titre": "Relevé de température — HACCP | FoodEatUp"
       }
     },
@@ -5823,7 +5823,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
   "EP050": {
     "publications": {
       "facebook": {
-        "legende": "Apprendre sur le tas. Il y a plus rapide pour former quelqu'un.\n\nChaque frigo, chaque chambre froide est déclaré avec ses seuils. Hors zone, tu es alerté. Tu sauves la marchandise avant de la jeter.\n\n👉 Le tutoriel complet : https://drive.google.com/file/d/1FoFUKA32NsE78xp_YxFfvwKL_d3Qzi1x/view\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "legende": "Apprendre sur le tas. Il y a plus rapide pour former quelqu'un.\n\nChaque frigo, chaque chambre froide est déclaré avec ses seuils. Hors zone, tu es alerté. Tu sauves la marchandise avant de la jeter.\n\n👉 Tout FoodEatUp : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
         "hashtags": [
           "restaurant",
           "restaurateur",
@@ -5840,10 +5840,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "équipements",
           "haccp restaurant"
         ],
-        "cta": "Voir le tutoriel complet"
+        "cta": "Découvrir FoodEatUp"
       },
       "instagram": {
-        "legende": "Apprendre sur le tas.\nIl y a plus rapide pour former quelqu'un.\n\nChaque frigo, chaque chambre froide est déclaré avec ses seuils. Hors zone, tu es alerté. Tu sauves la marchandise avant de la jeter.\n\nLe pas-à-pas complet est dans notre Academy — lien en bio.\nUne démo ? 06 14 18 92 25",
+        "legende": "Apprendre sur le tas.\nIl y a plus rapide pour former quelqu'un.\n\nChaque frigo, chaque chambre froide est déclaré avec ses seuils. Hors zone, tu es alerté. Tu sauves la marchandise avant de la jeter.\n\nTout est expliqué sur notre site — lien en bio.\nUne démo ? 06 14 18 92 25",
         "hashtags": [
           "restaurant",
           "restaurateur",
@@ -5865,7 +5865,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "équipements",
           "haccp restaurant"
         ],
-        "cta": "Le pas-à-pas est en bio"
+        "cta": "Tout est en bio"
       },
       "tiktok": {
         "legende": "Apprendre sur le tas. 😅\nIl y a plus rapide pour former quelqu'un.\n\nChaque frigo, chaque chambre froide est déclaré avec ses seuils.",
@@ -5883,10 +5883,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "équipements",
           "haccp restaurant"
         ],
-        "cta": "Tuto complet en bio"
+        "cta": "Lien en bio"
       },
       "linkedin": {
-        "legende": "Apprendre sur le tas.\n\nChaque frigo, chaque chambre froide est déclaré avec ses seuils. Hors zone, tu es alerté. Tu sauves la marchandise avant de la jeter.\n\nConcrètement : un contrôle qui se passe bien, parce que tout est déjà tracé.\n\nLe tutoriel pas-à-pas : https://drive.google.com/file/d/1FoFUKA32NsE78xp_YxFfvwKL_d3Qzi1x/view\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "legende": "Apprendre sur le tas.\n\nChaque frigo, chaque chambre froide est déclaré avec ses seuils. Hors zone, tu es alerté. Tu sauves la marchandise avant de la jeter.\n\nConcrètement : un contrôle qui se passe bien, parce que tout est déjà tracé.\n\nEn savoir plus : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
         "hashtags": [
           "restauration",
           "foodeatup",
@@ -5900,10 +5900,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "équipements",
           "haccp restaurant"
         ],
-        "cta": "Voir le tutoriel pas-à-pas"
+        "cta": "Découvrir FoodEatUp"
       },
       "youtube": {
-        "legende": "Apprendre sur le tas. Il y a plus rapide pour former quelqu'un.\n\nChaque frigo, chaque chambre froide est déclaré avec ses seuils. Hors zone, tu es alerté. Tu sauves la marchandise avant de la jeter.\n\nConcrètement : un contrôle qui se passe bien, parce que tout est déjà tracé.\n\n— — —\n\n📺 Le tutoriel pas-à-pas : https://drive.google.com/file/d/1FoFUKA32NsE78xp_YxFfvwKL_d3Qzi1x/view\n\n📞 Une démo ? 06 14 18 92 25\n🌐 foodeatup.com\n\nSérie « Le Coup de Feu » — saison 2, épisode 50.\nModule HACCP · Chapitre : Équipements\n\nFoodEatUp est le logiciel qui réunit la caisse, le stock, les plannings, l'HACCP et le marketing d'un restaurant au même endroit.\n",
+        "legende": "Apprendre sur le tas. Il y a plus rapide pour former quelqu'un.\n\nChaque frigo, chaque chambre froide est déclaré avec ses seuils. Hors zone, tu es alerté. Tu sauves la marchandise avant de la jeter.\n\nConcrètement : un contrôle qui se passe bien, parce que tout est déjà tracé.\n\n— — —\n\n🔗 https://site.foodeatup.com/\n\n📞 Une démo ? 06 14 18 92 25\n🌐 foodeatup.com\n\nSérie « Le Coup de Feu » — saison 2, épisode 50.\nModule HACCP · Chapitre : Équipements\n\nFoodEatUp est le logiciel qui réunit la caisse, le stock, les plannings, l'HACCP et le marketing d'un restaurant au même endroit.\n",
         "hashtags": [
           "Shorts",
           "restaurant",
@@ -5923,7 +5923,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "équipements",
           "haccp restaurant"
         ],
-        "cta": "Le tutoriel pas-à-pas",
+        "cta": "Découvrir FoodEatUp",
         "titre": "Équipements — HACCP | FoodEatUp"
       }
     },
@@ -5945,7 +5945,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
   "EP051": {
     "publications": {
       "facebook": {
-        "legende": "Un mauvais réglage. Une seule fois. Les process, ça évite ça.\n\nÉtiquette produite, date de fabrication, DLC calculée. Ton bac étiqueté n'est plus un pari.\n\n👉 Le tutoriel complet : https://drive.google.com/file/d/1Cb7c55HN3pKh7zD7LlozCdVIzl85ux6M/view\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "legende": "Un mauvais réglage. Une seule fois. Les process, ça évite ça.\n\nÉtiquette produite, date de fabrication, DLC calculée. Ton bac étiqueté n'est plus un pari.\n\n👉 Tout FoodEatUp : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
         "hashtags": [
           "restaurant",
           "restaurateur",
@@ -5962,10 +5962,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "étiquettes dlc",
           "haccp restaurant"
         ],
-        "cta": "Voir le tutoriel complet"
+        "cta": "Découvrir FoodEatUp"
       },
       "instagram": {
-        "legende": "Un mauvais réglage. Une seule fois.\nLes process, ça évite ça.\n\nÉtiquette produite, date de fabrication, DLC calculée. Ton bac étiqueté n'est plus un pari.\n\nLe pas-à-pas complet est dans notre Academy — lien en bio.\nUne démo ? 06 14 18 92 25",
+        "legende": "Un mauvais réglage. Une seule fois.\nLes process, ça évite ça.\n\nÉtiquette produite, date de fabrication, DLC calculée. Ton bac étiqueté n'est plus un pari.\n\nTout est expliqué sur notre site — lien en bio.\nUne démo ? 06 14 18 92 25",
         "hashtags": [
           "restaurant",
           "restaurateur",
@@ -5987,7 +5987,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "étiquettes dlc",
           "haccp restaurant"
         ],
-        "cta": "Le pas-à-pas est en bio"
+        "cta": "Tout est en bio"
       },
       "tiktok": {
         "legende": "Un mauvais réglage. Une seule fois. 😅\nLes process, ça évite ça.\n\nÉtiquette produite, date de fabrication, DLC calculée.",
@@ -6005,10 +6005,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "étiquettes dlc",
           "haccp restaurant"
         ],
-        "cta": "Tuto complet en bio"
+        "cta": "Lien en bio"
       },
       "linkedin": {
-        "legende": "Un mauvais réglage. Une seule fois.\n\nÉtiquette produite, date de fabrication, DLC calculée. Ton bac étiqueté n'est plus un pari.\n\nConcrètement : un contrôle qui se passe bien, parce que tout est déjà tracé.\n\nLe tutoriel pas-à-pas : https://drive.google.com/file/d/1Cb7c55HN3pKh7zD7LlozCdVIzl85ux6M/view\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "legende": "Un mauvais réglage. Une seule fois.\n\nÉtiquette produite, date de fabrication, DLC calculée. Ton bac étiqueté n'est plus un pari.\n\nConcrètement : un contrôle qui se passe bien, parce que tout est déjà tracé.\n\nEn savoir plus : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
         "hashtags": [
           "restauration",
           "foodeatup",
@@ -6022,10 +6022,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "étiquettes dlc",
           "haccp restaurant"
         ],
-        "cta": "Voir le tutoriel pas-à-pas"
+        "cta": "Découvrir FoodEatUp"
       },
       "youtube": {
-        "legende": "Un mauvais réglage. Une seule fois. Les process, ça évite ça.\n\nÉtiquette produite, date de fabrication, DLC calculée. Ton bac étiqueté n'est plus un pari.\n\nConcrètement : un contrôle qui se passe bien, parce que tout est déjà tracé.\n\n— — —\n\n📺 Le tutoriel pas-à-pas : https://drive.google.com/file/d/1Cb7c55HN3pKh7zD7LlozCdVIzl85ux6M/view\n\n📞 Une démo ? 06 14 18 92 25\n🌐 foodeatup.com\n\nSérie « Le Coup de Feu » — saison 2, épisode 51.\nModule HACCP · Chapitre : Étiquettes DLC\n\nFoodEatUp est le logiciel qui réunit la caisse, le stock, les plannings, l'HACCP et le marketing d'un restaurant au même endroit.\n",
+        "legende": "Un mauvais réglage. Une seule fois. Les process, ça évite ça.\n\nÉtiquette produite, date de fabrication, DLC calculée. Ton bac étiqueté n'est plus un pari.\n\nConcrètement : un contrôle qui se passe bien, parce que tout est déjà tracé.\n\n— — —\n\n🔗 https://site.foodeatup.com/\n\n📞 Une démo ? 06 14 18 92 25\n🌐 foodeatup.com\n\nSérie « Le Coup de Feu » — saison 2, épisode 51.\nModule HACCP · Chapitre : Étiquettes DLC\n\nFoodEatUp est le logiciel qui réunit la caisse, le stock, les plannings, l'HACCP et le marketing d'un restaurant au même endroit.\n",
         "hashtags": [
           "Shorts",
           "restaurant",
@@ -6045,7 +6045,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "étiquettes dlc",
           "haccp restaurant"
         ],
-        "cta": "Le tutoriel pas-à-pas",
+        "cta": "Découvrir FoodEatUp",
         "titre": "Étiquettes DLC — HACCP | FoodEatUp"
       }
     },
@@ -6068,7 +6068,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
   "EP052": {
     "publications": {
       "facebook": {
-        "legende": "Encore un truc qui te retient. Enlève-les tous, un par un.\n\nChaque lot reçu est rattaché à ce que tu produis. En cas de rappel, tu remontes la chaîne en quelques secondes.\n\n👉 Le tutoriel complet : https://drive.google.com/file/d/1qwwJNILNZv3EpqCowlCFUhxeC_2qyZgm/view\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "legende": "Encore un truc qui te retient. Enlève-les tous, un par un.\n\nChaque lot reçu est rattaché à ce que tu produis. En cas de rappel, tu remontes la chaîne en quelques secondes.\n\n👉 Tout FoodEatUp : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
         "hashtags": [
           "restaurant",
           "restaurateur",
@@ -6084,10 +6084,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "contrôle hygiène",
           "haccp restaurant"
         ],
-        "cta": "Voir le tutoriel complet"
+        "cta": "Découvrir FoodEatUp"
       },
       "instagram": {
-        "legende": "Encore un truc qui te retient.\nEnlève-les tous, un par un.\n\nChaque lot reçu est rattaché à ce que tu produis. En cas de rappel, tu remontes la chaîne en quelques secondes.\n\nLe pas-à-pas complet est dans notre Academy — lien en bio.\nUne démo ? 06 14 18 92 25",
+        "legende": "Encore un truc qui te retient.\nEnlève-les tous, un par un.\n\nChaque lot reçu est rattaché à ce que tu produis. En cas de rappel, tu remontes la chaîne en quelques secondes.\n\nTout est expliqué sur notre site — lien en bio.\nUne démo ? 06 14 18 92 25",
         "hashtags": [
           "restaurant",
           "restaurateur",
@@ -6108,7 +6108,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "contrôle hygiène",
           "haccp restaurant"
         ],
-        "cta": "Le pas-à-pas est en bio"
+        "cta": "Tout est en bio"
       },
       "tiktok": {
         "legende": "Encore un truc qui te retient. 😅\nEnlève-les tous, un par un.\n\nChaque lot reçu est rattaché à ce que tu produis.",
@@ -6125,10 +6125,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "contrôle hygiène",
           "haccp restaurant"
         ],
-        "cta": "Tuto complet en bio"
+        "cta": "Lien en bio"
       },
       "linkedin": {
-        "legende": "Encore un truc qui te retient.\n\nChaque lot reçu est rattaché à ce que tu produis. En cas de rappel, tu remontes la chaîne en quelques secondes.\n\nConcrètement : un contrôle qui se passe bien, parce que tout est déjà tracé.\n\nLe tutoriel pas-à-pas : https://drive.google.com/file/d/1qwwJNILNZv3EpqCowlCFUhxeC_2qyZgm/view\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "legende": "Encore un truc qui te retient.\n\nChaque lot reçu est rattaché à ce que tu produis. En cas de rappel, tu remontes la chaîne en quelques secondes.\n\nConcrètement : un contrôle qui se passe bien, parce que tout est déjà tracé.\n\nEn savoir plus : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
         "hashtags": [
           "restauration",
           "foodeatup",
@@ -6141,10 +6141,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "contrôle hygiène",
           "haccp restaurant"
         ],
-        "cta": "Voir le tutoriel pas-à-pas"
+        "cta": "Découvrir FoodEatUp"
       },
       "youtube": {
-        "legende": "Encore un truc qui te retient. Enlève-les tous, un par un.\n\nChaque lot reçu est rattaché à ce que tu produis. En cas de rappel, tu remontes la chaîne en quelques secondes.\n\nConcrètement : un contrôle qui se passe bien, parce que tout est déjà tracé.\n\n— — —\n\n📺 Le tutoriel pas-à-pas : https://drive.google.com/file/d/1qwwJNILNZv3EpqCowlCFUhxeC_2qyZgm/view\n\n📞 Une démo ? 06 14 18 92 25\n🌐 foodeatup.com\n\nSérie « Le Coup de Feu » — saison 2, épisode 52.\nModule HACCP · Chapitre : Traçabilité\n\nFoodEatUp est le logiciel qui réunit la caisse, le stock, les plannings, l'HACCP et le marketing d'un restaurant au même endroit.\n",
+        "legende": "Encore un truc qui te retient. Enlève-les tous, un par un.\n\nChaque lot reçu est rattaché à ce que tu produis. En cas de rappel, tu remontes la chaîne en quelques secondes.\n\nConcrètement : un contrôle qui se passe bien, parce que tout est déjà tracé.\n\n— — —\n\n🔗 https://site.foodeatup.com/\n\n📞 Une démo ? 06 14 18 92 25\n🌐 foodeatup.com\n\nSérie « Le Coup de Feu » — saison 2, épisode 52.\nModule HACCP · Chapitre : Traçabilité\n\nFoodEatUp est le logiciel qui réunit la caisse, le stock, les plannings, l'HACCP et le marketing d'un restaurant au même endroit.\n",
         "hashtags": [
           "Shorts",
           "restaurant",
@@ -6163,7 +6163,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "contrôle hygiène",
           "haccp restaurant"
         ],
-        "cta": "Le tutoriel pas-à-pas",
+        "cta": "Découvrir FoodEatUp",
         "titre": "Traçabilité — HACCP | FoodEatUp"
       }
     },
@@ -6185,7 +6185,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
   "EP053": {
     "publications": {
       "facebook": {
-        "legende": "Complet dehors. Vide dedans. Ta salle et ta file devraient se parler.\n\nContrôle à réception : température, aspect, quantité, non-conformités. Tout part dans le dossier HACCP tout seul.\n\n👉 Le tutoriel complet : https://drive.google.com/file/d/1JkMe74c9n4TFjeRRJ7pSpSQoB6bP2jEf/view\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "legende": "Complet dehors. Vide dedans. Ta salle et ta file devraient se parler.\n\nContrôle à réception : température, aspect, quantité, non-conformités. Tout part dans le dossier HACCP tout seul.\n\n👉 Tout FoodEatUp : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
         "hashtags": [
           "restaurant",
           "restaurateur",
@@ -6202,10 +6202,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "réception fournisseur",
           "haccp restaurant"
         ],
-        "cta": "Voir le tutoriel complet"
+        "cta": "Découvrir FoodEatUp"
       },
       "instagram": {
-        "legende": "Complet dehors. Vide dedans.\nTa salle et ta file devraient se parler.\n\nContrôle à réception : température, aspect, quantité, non-conformités. Tout part dans le dossier HACCP tout seul.\n\nLe pas-à-pas complet est dans notre Academy — lien en bio.\nUne démo ? 06 14 18 92 25",
+        "legende": "Complet dehors. Vide dedans.\nTa salle et ta file devraient se parler.\n\nContrôle à réception : température, aspect, quantité, non-conformités. Tout part dans le dossier HACCP tout seul.\n\nTout est expliqué sur notre site — lien en bio.\nUne démo ? 06 14 18 92 25",
         "hashtags": [
           "restaurant",
           "restaurateur",
@@ -6227,7 +6227,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "réception fournisseur",
           "haccp restaurant"
         ],
-        "cta": "Le pas-à-pas est en bio"
+        "cta": "Tout est en bio"
       },
       "tiktok": {
         "legende": "Complet dehors. Vide dedans. 😅\nTa salle et ta file devraient se parler.\n\nContrôle à réception : température, aspect, quantité, non-conformités.",
@@ -6245,10 +6245,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "réception fournisseur",
           "haccp restaurant"
         ],
-        "cta": "Tuto complet en bio"
+        "cta": "Lien en bio"
       },
       "linkedin": {
-        "legende": "Complet dehors. Vide dedans.\n\nContrôle à réception : température, aspect, quantité, non-conformités. Tout part dans le dossier HACCP tout seul.\n\nConcrètement : un contrôle qui se passe bien, parce que tout est déjà tracé.\n\nLe tutoriel pas-à-pas : https://drive.google.com/file/d/1JkMe74c9n4TFjeRRJ7pSpSQoB6bP2jEf/view\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "legende": "Complet dehors. Vide dedans.\n\nContrôle à réception : température, aspect, quantité, non-conformités. Tout part dans le dossier HACCP tout seul.\n\nConcrètement : un contrôle qui se passe bien, parce que tout est déjà tracé.\n\nEn savoir plus : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
         "hashtags": [
           "restauration",
           "foodeatup",
@@ -6262,10 +6262,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "réception fournisseur",
           "haccp restaurant"
         ],
-        "cta": "Voir le tutoriel pas-à-pas"
+        "cta": "Découvrir FoodEatUp"
       },
       "youtube": {
-        "legende": "Complet dehors. Vide dedans. Ta salle et ta file devraient se parler.\n\nContrôle à réception : température, aspect, quantité, non-conformités. Tout part dans le dossier HACCP tout seul.\n\nConcrètement : un contrôle qui se passe bien, parce que tout est déjà tracé.\n\n— — —\n\n📺 Le tutoriel pas-à-pas : https://drive.google.com/file/d/1JkMe74c9n4TFjeRRJ7pSpSQoB6bP2jEf/view\n\n📞 Une démo ? 06 14 18 92 25\n🌐 foodeatup.com\n\nSérie « Le Coup de Feu » — saison 2, épisode 53.\nModule HACCP · Chapitre : Réception fournisseur\n\nFoodEatUp est le logiciel qui réunit la caisse, le stock, les plannings, l'HACCP et le marketing d'un restaurant au même endroit.\n",
+        "legende": "Complet dehors. Vide dedans. Ta salle et ta file devraient se parler.\n\nContrôle à réception : température, aspect, quantité, non-conformités. Tout part dans le dossier HACCP tout seul.\n\nConcrètement : un contrôle qui se passe bien, parce que tout est déjà tracé.\n\n— — —\n\n🔗 https://site.foodeatup.com/\n\n📞 Une démo ? 06 14 18 92 25\n🌐 foodeatup.com\n\nSérie « Le Coup de Feu » — saison 2, épisode 53.\nModule HACCP · Chapitre : Réception fournisseur\n\nFoodEatUp est le logiciel qui réunit la caisse, le stock, les plannings, l'HACCP et le marketing d'un restaurant au même endroit.\n",
         "hashtags": [
           "Shorts",
           "restaurant",
@@ -6285,7 +6285,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "réception fournisseur",
           "haccp restaurant"
         ],
-        "cta": "Le tutoriel pas-à-pas",
+        "cta": "Découvrir FoodEatUp",
         "titre": "Réception fournisseur — HACCP | FoodEatUp"
       }
     },
@@ -6306,7 +6306,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
   "EP054": {
     "publications": {
       "facebook": {
-        "legende": "Ton prix ne raconte pas ton coût. Marge réelle par plat. Ça change les décisions.\n\nTes zones et tes postes de nettoyage sont listés. Qui a fait quoi, quand, c'est enregistré. Le plan de nettoyage vit vraiment.\n\n👉 Le tutoriel complet : https://drive.google.com/file/d/1GPF2hFYK3Ds91avjyrG1z7dZDMbFggI6/view\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "legende": "Ton prix ne raconte pas ton coût. Marge réelle par plat. Ça change les décisions.\n\nTes zones et tes postes de nettoyage sont listés. Qui a fait quoi, quand, c'est enregistré. Le plan de nettoyage vit vraiment.\n\n👉 Tout FoodEatUp : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
         "hashtags": [
           "restaurant",
           "restaurateur",
@@ -6323,10 +6323,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "plan de nettoyage",
           "haccp restaurant"
         ],
-        "cta": "Voir le tutoriel complet"
+        "cta": "Découvrir FoodEatUp"
       },
       "instagram": {
-        "legende": "Ton prix ne raconte pas ton coût.\nMarge réelle par plat. Ça change les décisions.\n\nTes zones et tes postes de nettoyage sont listés. Qui a fait quoi, quand, c'est enregistré. Le plan de nettoyage vit vraiment.\n\nLe pas-à-pas complet est dans notre Academy — lien en bio.\nUne démo ? 06 14 18 92 25",
+        "legende": "Ton prix ne raconte pas ton coût.\nMarge réelle par plat. Ça change les décisions.\n\nTes zones et tes postes de nettoyage sont listés. Qui a fait quoi, quand, c'est enregistré. Le plan de nettoyage vit vraiment.\n\nTout est expliqué sur notre site — lien en bio.\nUne démo ? 06 14 18 92 25",
         "hashtags": [
           "restaurant",
           "restaurateur",
@@ -6348,7 +6348,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "plan de nettoyage",
           "haccp restaurant"
         ],
-        "cta": "Le pas-à-pas est en bio"
+        "cta": "Tout est en bio"
       },
       "tiktok": {
         "legende": "Ton prix ne raconte pas ton coût. 😅\nMarge réelle par plat. Ça change les décisions.\n\nTes zones et tes postes de nettoyage sont listés.",
@@ -6366,10 +6366,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "plan de nettoyage",
           "haccp restaurant"
         ],
-        "cta": "Tuto complet en bio"
+        "cta": "Lien en bio"
       },
       "linkedin": {
-        "legende": "Ton prix ne raconte pas ton coût.\n\nTes zones et tes postes de nettoyage sont listés. Qui a fait quoi, quand, c'est enregistré. Le plan de nettoyage vit vraiment.\n\nConcrètement : un contrôle qui se passe bien, parce que tout est déjà tracé.\n\nLe tutoriel pas-à-pas : https://drive.google.com/file/d/1GPF2hFYK3Ds91avjyrG1z7dZDMbFggI6/view\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "legende": "Ton prix ne raconte pas ton coût.\n\nTes zones et tes postes de nettoyage sont listés. Qui a fait quoi, quand, c'est enregistré. Le plan de nettoyage vit vraiment.\n\nConcrètement : un contrôle qui se passe bien, parce que tout est déjà tracé.\n\nEn savoir plus : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
         "hashtags": [
           "restauration",
           "foodeatup",
@@ -6383,10 +6383,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "plan de nettoyage",
           "haccp restaurant"
         ],
-        "cta": "Voir le tutoriel pas-à-pas"
+        "cta": "Découvrir FoodEatUp"
       },
       "youtube": {
-        "legende": "Ton prix ne raconte pas ton coût. Marge réelle par plat. Ça change les décisions.\n\nTes zones et tes postes de nettoyage sont listés. Qui a fait quoi, quand, c'est enregistré. Le plan de nettoyage vit vraiment.\n\nConcrètement : un contrôle qui se passe bien, parce que tout est déjà tracé.\n\n— — —\n\n📺 Le tutoriel pas-à-pas : https://drive.google.com/file/d/1GPF2hFYK3Ds91avjyrG1z7dZDMbFggI6/view\n\n📞 Une démo ? 06 14 18 92 25\n🌐 foodeatup.com\n\nSérie « Le Coup de Feu » — saison 2, épisode 54.\nModule HACCP · Chapitre : Plan de nettoyage\n\nFoodEatUp est le logiciel qui réunit la caisse, le stock, les plannings, l'HACCP et le marketing d'un restaurant au même endroit.\n",
+        "legende": "Ton prix ne raconte pas ton coût. Marge réelle par plat. Ça change les décisions.\n\nTes zones et tes postes de nettoyage sont listés. Qui a fait quoi, quand, c'est enregistré. Le plan de nettoyage vit vraiment.\n\nConcrètement : un contrôle qui se passe bien, parce que tout est déjà tracé.\n\n— — —\n\n🔗 https://site.foodeatup.com/\n\n📞 Une démo ? 06 14 18 92 25\n🌐 foodeatup.com\n\nSérie « Le Coup de Feu » — saison 2, épisode 54.\nModule HACCP · Chapitre : Plan de nettoyage\n\nFoodEatUp est le logiciel qui réunit la caisse, le stock, les plannings, l'HACCP et le marketing d'un restaurant au même endroit.\n",
         "hashtags": [
           "Shorts",
           "restaurant",
@@ -6406,7 +6406,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "plan de nettoyage",
           "haccp restaurant"
         ],
-        "cta": "Le tutoriel pas-à-pas",
+        "cta": "Découvrir FoodEatUp",
         "titre": "Plan de nettoyage — HACCP | FoodEatUp"
       }
     },
@@ -6427,7 +6427,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
   "EP055": {
     "publications": {
       "facebook": {
-        "legende": "Ta compta, au format papier. Scanne. Classe. Oublie.\n\nTu crées ta checklist une fois, l'équipe la valide chaque jour. Ce qui est coché est daté et signé.\n\n👉 Le tutoriel complet : https://drive.google.com/file/d/1BiubjVB2WUaP8COM9a9V6_DMWNc1ltvh/view\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "legende": "Ta compta, au format papier. Scanne. Classe. Oublie.\n\nTu crées ta checklist une fois, l'équipe la valide chaque jour. Ce qui est coché est daté et signé.\n\n👉 Tout FoodEatUp : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
         "hashtags": [
           "restaurant",
           "restaurateur",
@@ -6444,10 +6444,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "checklists hygiène",
           "haccp restaurant"
         ],
-        "cta": "Voir le tutoriel complet"
+        "cta": "Découvrir FoodEatUp"
       },
       "instagram": {
-        "legende": "Ta compta, au format papier.\nScanne. Classe. Oublie.\n\nTu crées ta checklist une fois, l'équipe la valide chaque jour. Ce qui est coché est daté et signé.\n\nLe pas-à-pas complet est dans notre Academy — lien en bio.\nUne démo ? 06 14 18 92 25",
+        "legende": "Ta compta, au format papier.\nScanne. Classe. Oublie.\n\nTu crées ta checklist une fois, l'équipe la valide chaque jour. Ce qui est coché est daté et signé.\n\nTout est expliqué sur notre site — lien en bio.\nUne démo ? 06 14 18 92 25",
         "hashtags": [
           "restaurant",
           "restaurateur",
@@ -6469,7 +6469,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "checklists hygiène",
           "haccp restaurant"
         ],
-        "cta": "Le pas-à-pas est en bio"
+        "cta": "Tout est en bio"
       },
       "tiktok": {
         "legende": "Ta compta, au format papier. 😅\nScanne. Classe. Oublie.\n\nTu crées ta checklist une fois, l'équipe la valide chaque jour.",
@@ -6487,10 +6487,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "checklists hygiène",
           "haccp restaurant"
         ],
-        "cta": "Tuto complet en bio"
+        "cta": "Lien en bio"
       },
       "linkedin": {
-        "legende": "Ta compta, au format papier.\n\nTu crées ta checklist une fois, l'équipe la valide chaque jour. Ce qui est coché est daté et signé.\n\nConcrètement : un contrôle qui se passe bien, parce que tout est déjà tracé.\n\nLe tutoriel pas-à-pas : https://drive.google.com/file/d/1BiubjVB2WUaP8COM9a9V6_DMWNc1ltvh/view\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "legende": "Ta compta, au format papier.\n\nTu crées ta checklist une fois, l'équipe la valide chaque jour. Ce qui est coché est daté et signé.\n\nConcrètement : un contrôle qui se passe bien, parce que tout est déjà tracé.\n\nEn savoir plus : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
         "hashtags": [
           "restauration",
           "foodeatup",
@@ -6504,10 +6504,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "checklists hygiène",
           "haccp restaurant"
         ],
-        "cta": "Voir le tutoriel pas-à-pas"
+        "cta": "Découvrir FoodEatUp"
       },
       "youtube": {
-        "legende": "Ta compta, au format papier. Scanne. Classe. Oublie.\n\nTu crées ta checklist une fois, l'équipe la valide chaque jour. Ce qui est coché est daté et signé.\n\nConcrètement : un contrôle qui se passe bien, parce que tout est déjà tracé.\n\n— — —\n\n📺 Le tutoriel pas-à-pas : https://drive.google.com/file/d/1BiubjVB2WUaP8COM9a9V6_DMWNc1ltvh/view\n\n📞 Une démo ? 06 14 18 92 25\n🌐 foodeatup.com\n\nSérie « Le Coup de Feu » — saison 2, épisode 55.\nModule HACCP · Chapitre : Checklists hygiène\n\nFoodEatUp est le logiciel qui réunit la caisse, le stock, les plannings, l'HACCP et le marketing d'un restaurant au même endroit.\n",
+        "legende": "Ta compta, au format papier. Scanne. Classe. Oublie.\n\nTu crées ta checklist une fois, l'équipe la valide chaque jour. Ce qui est coché est daté et signé.\n\nConcrètement : un contrôle qui se passe bien, parce que tout est déjà tracé.\n\n— — —\n\n🔗 https://site.foodeatup.com/\n\n📞 Une démo ? 06 14 18 92 25\n🌐 foodeatup.com\n\nSérie « Le Coup de Feu » — saison 2, épisode 55.\nModule HACCP · Chapitre : Checklists hygiène\n\nFoodEatUp est le logiciel qui réunit la caisse, le stock, les plannings, l'HACCP et le marketing d'un restaurant au même endroit.\n",
         "hashtags": [
           "Shorts",
           "restaurant",
@@ -6527,7 +6527,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "checklists hygiène",
           "haccp restaurant"
         ],
-        "cta": "Le tutoriel pas-à-pas",
+        "cta": "Découvrir FoodEatUp",
         "titre": "Checklists hygiène — HACCP | FoodEatUp"
       }
     },
@@ -6548,7 +6548,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
   "EP056": {
     "publications": {
       "facebook": {
-        "legende": "Il y a toujours un truc en trop. Ou en moins. Et tu le vois trop tard.\n\nTes relevés, tes réceptions et tes validations sont conservés. Le jour du contrôle, tu ne cherches rien.\n\n👉 Le tutoriel complet : https://drive.google.com/file/d/1jXUousFn16eOB60LdGPObwwlic2VD5Ic/view\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "legende": "Il y a toujours un truc en trop. Ou en moins. Et tu le vois trop tard.\n\nTes relevés, tes réceptions et tes validations sont conservés. Le jour du contrôle, tu ne cherches rien.\n\n👉 Tout FoodEatUp : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
         "hashtags": [
           "restaurant",
           "restaurateur",
@@ -6565,10 +6565,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "historique",
           "haccp restaurant"
         ],
-        "cta": "Voir le tutoriel complet"
+        "cta": "Découvrir FoodEatUp"
       },
       "instagram": {
-        "legende": "Il y a toujours un truc en trop.\nOu en moins. Et tu le vois trop tard.\n\nTes relevés, tes réceptions et tes validations sont conservés. Le jour du contrôle, tu ne cherches rien.\n\nLe pas-à-pas complet est dans notre Academy — lien en bio.\nUne démo ? 06 14 18 92 25",
+        "legende": "Il y a toujours un truc en trop.\nOu en moins. Et tu le vois trop tard.\n\nTes relevés, tes réceptions et tes validations sont conservés. Le jour du contrôle, tu ne cherches rien.\n\nTout est expliqué sur notre site — lien en bio.\nUne démo ? 06 14 18 92 25",
         "hashtags": [
           "restaurant",
           "restaurateur",
@@ -6590,7 +6590,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "historique",
           "haccp restaurant"
         ],
-        "cta": "Le pas-à-pas est en bio"
+        "cta": "Tout est en bio"
       },
       "tiktok": {
         "legende": "Il y a toujours un truc en trop. 😅\nOu en moins. Et tu le vois trop tard.\n\nTes relevés, tes réceptions et tes validations sont conservés.",
@@ -6608,10 +6608,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "historique",
           "haccp restaurant"
         ],
-        "cta": "Tuto complet en bio"
+        "cta": "Lien en bio"
       },
       "linkedin": {
-        "legende": "Il y a toujours un truc en trop.\n\nTes relevés, tes réceptions et tes validations sont conservés. Le jour du contrôle, tu ne cherches rien.\n\nConcrètement : un contrôle qui se passe bien, parce que tout est déjà tracé.\n\nLe tutoriel pas-à-pas : https://drive.google.com/file/d/1jXUousFn16eOB60LdGPObwwlic2VD5Ic/view\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "legende": "Il y a toujours un truc en trop.\n\nTes relevés, tes réceptions et tes validations sont conservés. Le jour du contrôle, tu ne cherches rien.\n\nConcrètement : un contrôle qui se passe bien, parce que tout est déjà tracé.\n\nEn savoir plus : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
         "hashtags": [
           "restauration",
           "foodeatup",
@@ -6625,10 +6625,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "historique",
           "haccp restaurant"
         ],
-        "cta": "Voir le tutoriel pas-à-pas"
+        "cta": "Découvrir FoodEatUp"
       },
       "youtube": {
-        "legende": "Il y a toujours un truc en trop. Ou en moins. Et tu le vois trop tard.\n\nTes relevés, tes réceptions et tes validations sont conservés. Le jour du contrôle, tu ne cherches rien.\n\nConcrètement : un contrôle qui se passe bien, parce que tout est déjà tracé.\n\n— — —\n\n📺 Le tutoriel pas-à-pas : https://drive.google.com/file/d/1jXUousFn16eOB60LdGPObwwlic2VD5Ic/view\n\n📞 Une démo ? 06 14 18 92 25\n🌐 foodeatup.com\n\nSérie « Le Coup de Feu » — saison 2, épisode 56.\nModule HACCP · Chapitre : Historique\n\nFoodEatUp est le logiciel qui réunit la caisse, le stock, les plannings, l'HACCP et le marketing d'un restaurant au même endroit.\n",
+        "legende": "Il y a toujours un truc en trop. Ou en moins. Et tu le vois trop tard.\n\nTes relevés, tes réceptions et tes validations sont conservés. Le jour du contrôle, tu ne cherches rien.\n\nConcrètement : un contrôle qui se passe bien, parce que tout est déjà tracé.\n\n— — —\n\n🔗 https://site.foodeatup.com/\n\n📞 Une démo ? 06 14 18 92 25\n🌐 foodeatup.com\n\nSérie « Le Coup de Feu » — saison 2, épisode 56.\nModule HACCP · Chapitre : Historique\n\nFoodEatUp est le logiciel qui réunit la caisse, le stock, les plannings, l'HACCP et le marketing d'un restaurant au même endroit.\n",
         "hashtags": [
           "Shorts",
           "restaurant",
@@ -6648,7 +6648,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "historique",
           "haccp restaurant"
         ],
-        "cta": "Le tutoriel pas-à-pas",
+        "cta": "Découvrir FoodEatUp",
         "titre": "Historique — HACCP | FoodEatUp"
       }
     },
@@ -6670,7 +6670,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
   "EP057": {
     "publications": {
       "facebook": {
-        "legende": "La clôture de caisse. Un Z propre, en une minute.\n\nUne température hors seuil déclenche une alerte immédiate. Tu réagis pendant le service, pas le lendemain.\n\n👉 Le tutoriel complet : https://drive.google.com/file/d/14OmsNUd3EMgWNxGVvmOwLgR3ZloWKNKW/view\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "legende": "La clôture de caisse. Un Z propre, en une minute.\n\nUne température hors seuil déclenche une alerte immédiate. Tu réagis pendant le service, pas le lendemain.\n\n👉 Tout FoodEatUp : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
         "hashtags": [
           "restaurant",
           "restaurateur",
@@ -6687,10 +6687,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "alertes",
           "haccp restaurant"
         ],
-        "cta": "Voir le tutoriel complet"
+        "cta": "Découvrir FoodEatUp"
       },
       "instagram": {
-        "legende": "La clôture de caisse.\nUn Z propre, en une minute.\n\nUne température hors seuil déclenche une alerte immédiate. Tu réagis pendant le service, pas le lendemain.\n\nLe pas-à-pas complet est dans notre Academy — lien en bio.\nUne démo ? 06 14 18 92 25",
+        "legende": "La clôture de caisse.\nUn Z propre, en une minute.\n\nUne température hors seuil déclenche une alerte immédiate. Tu réagis pendant le service, pas le lendemain.\n\nTout est expliqué sur notre site — lien en bio.\nUne démo ? 06 14 18 92 25",
         "hashtags": [
           "restaurant",
           "restaurateur",
@@ -6712,7 +6712,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "alertes",
           "haccp restaurant"
         ],
-        "cta": "Le pas-à-pas est en bio"
+        "cta": "Tout est en bio"
       },
       "tiktok": {
         "legende": "La clôture de caisse. 😅\nUn Z propre, en une minute.\n\nUne température hors seuil déclenche une alerte immédiate.",
@@ -6730,10 +6730,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "alertes",
           "haccp restaurant"
         ],
-        "cta": "Tuto complet en bio"
+        "cta": "Lien en bio"
       },
       "linkedin": {
-        "legende": "La clôture de caisse.\n\nUne température hors seuil déclenche une alerte immédiate. Tu réagis pendant le service, pas le lendemain.\n\nConcrètement : un contrôle qui se passe bien, parce que tout est déjà tracé.\n\nLe tutoriel pas-à-pas : https://drive.google.com/file/d/14OmsNUd3EMgWNxGVvmOwLgR3ZloWKNKW/view\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "legende": "La clôture de caisse.\n\nUne température hors seuil déclenche une alerte immédiate. Tu réagis pendant le service, pas le lendemain.\n\nConcrètement : un contrôle qui se passe bien, parce que tout est déjà tracé.\n\nEn savoir plus : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
         "hashtags": [
           "restauration",
           "foodeatup",
@@ -6747,10 +6747,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "alertes",
           "haccp restaurant"
         ],
-        "cta": "Voir le tutoriel pas-à-pas"
+        "cta": "Découvrir FoodEatUp"
       },
       "youtube": {
-        "legende": "La clôture de caisse. Un Z propre, en une minute.\n\nUne température hors seuil déclenche une alerte immédiate. Tu réagis pendant le service, pas le lendemain.\n\nConcrètement : un contrôle qui se passe bien, parce que tout est déjà tracé.\n\n— — —\n\n📺 Le tutoriel pas-à-pas : https://drive.google.com/file/d/14OmsNUd3EMgWNxGVvmOwLgR3ZloWKNKW/view\n\n📞 Une démo ? 06 14 18 92 25\n🌐 foodeatup.com\n\nSérie « Le Coup de Feu » — saison 2, épisode 57.\nModule HACCP · Chapitre : Alertes\n\nFoodEatUp est le logiciel qui réunit la caisse, le stock, les plannings, l'HACCP et le marketing d'un restaurant au même endroit.\n",
+        "legende": "La clôture de caisse. Un Z propre, en une minute.\n\nUne température hors seuil déclenche une alerte immédiate. Tu réagis pendant le service, pas le lendemain.\n\nConcrètement : un contrôle qui se passe bien, parce que tout est déjà tracé.\n\n— — —\n\n🔗 https://site.foodeatup.com/\n\n📞 Une démo ? 06 14 18 92 25\n🌐 foodeatup.com\n\nSérie « Le Coup de Feu » — saison 2, épisode 57.\nModule HACCP · Chapitre : Alertes\n\nFoodEatUp est le logiciel qui réunit la caisse, le stock, les plannings, l'HACCP et le marketing d'un restaurant au même endroit.\n",
         "hashtags": [
           "Shorts",
           "restaurant",
@@ -6770,7 +6770,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "alertes",
           "haccp restaurant"
         ],
-        "cta": "Le tutoriel pas-à-pas",
+        "cta": "Découvrir FoodEatUp",
         "titre": "Alertes — HACCP | FoodEatUp"
       }
     },
@@ -6781,7 +6781,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
   "EP058": {
     "publications": {
       "facebook": {
-        "legende": "L'anniversaire de la table 12. Anticiper, c'est aussi ça, le service.\n\nChaque agent signe ses propres relevés. La responsabilité est claire, sans paperasse supplémentaire.\n\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "legende": "L'anniversaire de la table 12. Anticiper, c'est aussi ça, le service.\n\nChaque agent signe ses propres relevés. La responsabilité est claire, sans paperasse supplémentaire.\n\n👉 Tout FoodEatUp : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
         "hashtags": [
           "restaurant",
           "restaurateur",
@@ -6798,10 +6798,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "rôles",
           "haccp restaurant"
         ],
-        "cta": "Demander une démo"
+        "cta": "Découvrir FoodEatUp"
       },
       "instagram": {
-        "legende": "L'anniversaire de la table 12.\nAnticiper, c'est aussi ça, le service.\n\nChaque agent signe ses propres relevés. La responsabilité est claire, sans paperasse supplémentaire.\n\nLe pas-à-pas complet est dans notre Academy — lien en bio.\nUne démo ? 06 14 18 92 25",
+        "legende": "L'anniversaire de la table 12.\nAnticiper, c'est aussi ça, le service.\n\nChaque agent signe ses propres relevés. La responsabilité est claire, sans paperasse supplémentaire.\n\nTout est expliqué sur notre site — lien en bio.\nUne démo ? 06 14 18 92 25",
         "hashtags": [
           "restaurant",
           "restaurateur",
@@ -6823,7 +6823,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "rôles",
           "haccp restaurant"
         ],
-        "cta": "Demander une démo"
+        "cta": "Tout est en bio"
       },
       "tiktok": {
         "legende": "L'anniversaire de la table 12. 😅\nAnticiper, c'est aussi ça, le service.\n\nChaque agent signe ses propres relevés.",
@@ -6841,10 +6841,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "rôles",
           "haccp restaurant"
         ],
-        "cta": "Demander une démo"
+        "cta": "Lien en bio"
       },
       "linkedin": {
-        "legende": "L'anniversaire de la table 12.\n\nChaque agent signe ses propres relevés. La responsabilité est claire, sans paperasse supplémentaire.\n\nConcrètement : un contrôle qui se passe bien, parce que tout est déjà tracé.\n\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "legende": "L'anniversaire de la table 12.\n\nChaque agent signe ses propres relevés. La responsabilité est claire, sans paperasse supplémentaire.\n\nConcrètement : un contrôle qui se passe bien, parce que tout est déjà tracé.\n\nEn savoir plus : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
         "hashtags": [
           "restauration",
           "foodeatup",
@@ -6858,10 +6858,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "rôles",
           "haccp restaurant"
         ],
-        "cta": "Demander une démo"
+        "cta": "Découvrir FoodEatUp"
       },
       "youtube": {
-        "legende": "L'anniversaire de la table 12. Anticiper, c'est aussi ça, le service.\n\nChaque agent signe ses propres relevés. La responsabilité est claire, sans paperasse supplémentaire.\n\nConcrètement : un contrôle qui se passe bien, parce que tout est déjà tracé.\n\n— — —\n\n📞 Une démo ? 06 14 18 92 25\n🌐 foodeatup.com\n\nSérie « Le Coup de Feu » — saison 2, épisode 58.\nModule HACCP · Chapitre : Rôles\n\nFoodEatUp est le logiciel qui réunit la caisse, le stock, les plannings, l'HACCP et le marketing d'un restaurant au même endroit.\n",
+        "legende": "L'anniversaire de la table 12. Anticiper, c'est aussi ça, le service.\n\nChaque agent signe ses propres relevés. La responsabilité est claire, sans paperasse supplémentaire.\n\nConcrètement : un contrôle qui se passe bien, parce que tout est déjà tracé.\n\n— — —\n\n🔗 https://site.foodeatup.com/\n\n📞 Une démo ? 06 14 18 92 25\n🌐 foodeatup.com\n\nSérie « Le Coup de Feu » — saison 2, épisode 58.\nModule HACCP · Chapitre : Rôles\n\nFoodEatUp est le logiciel qui réunit la caisse, le stock, les plannings, l'HACCP et le marketing d'un restaurant au même endroit.\n",
         "hashtags": [
           "Shorts",
           "restaurant",
@@ -6881,7 +6881,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "rôles",
           "haccp restaurant"
         ],
-        "cta": "Demander une démo",
+        "cta": "Découvrir FoodEatUp",
         "titre": "Rôles — HACCP | FoodEatUp"
       }
     },
@@ -6892,7 +6892,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
   "EP059": {
     "publications": {
       "facebook": {
-        "legende": "Ta com', chaque matin. Il y a plus solide qu'une ardoise.\n\nTu déclares une non-conformité, tu notes l'action corrective. C'est exactement ce qu'on te demandera de prouver.\n\n👉 Le tutoriel complet : https://drive.google.com/file/d/1Typp5DHDNQO1RErN8flaUywe9yS3HBme/view\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "legende": "Ta com', chaque matin. Il y a plus solide qu'une ardoise.\n\nTu déclares une non-conformité, tu notes l'action corrective. C'est exactement ce qu'on te demandera de prouver.\n\n👉 Tout FoodEatUp : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
         "hashtags": [
           "restaurant",
           "restaurateur",
@@ -6909,10 +6909,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "non-conformité",
           "haccp restaurant"
         ],
-        "cta": "Voir le tutoriel complet"
+        "cta": "Découvrir FoodEatUp"
       },
       "instagram": {
-        "legende": "Ta com', chaque matin.\nIl y a plus solide qu'une ardoise.\n\nTu déclares une non-conformité, tu notes l'action corrective. C'est exactement ce qu'on te demandera de prouver.\n\nLe pas-à-pas complet est dans notre Academy — lien en bio.\nUne démo ? 06 14 18 92 25",
+        "legende": "Ta com', chaque matin.\nIl y a plus solide qu'une ardoise.\n\nTu déclares une non-conformité, tu notes l'action corrective. C'est exactement ce qu'on te demandera de prouver.\n\nTout est expliqué sur notre site — lien en bio.\nUne démo ? 06 14 18 92 25",
         "hashtags": [
           "restaurant",
           "restaurateur",
@@ -6934,7 +6934,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "non-conformité",
           "haccp restaurant"
         ],
-        "cta": "Le pas-à-pas est en bio"
+        "cta": "Tout est en bio"
       },
       "tiktok": {
         "legende": "Ta com', chaque matin. 😅\nIl y a plus solide qu'une ardoise.\n\nTu déclares une non-conformité, tu notes l'action corrective.",
@@ -6952,10 +6952,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "non-conformité",
           "haccp restaurant"
         ],
-        "cta": "Tuto complet en bio"
+        "cta": "Lien en bio"
       },
       "linkedin": {
-        "legende": "Ta com', chaque matin.\n\nTu déclares une non-conformité, tu notes l'action corrective. C'est exactement ce qu'on te demandera de prouver.\n\nConcrètement : un contrôle qui se passe bien, parce que tout est déjà tracé.\n\nLe tutoriel pas-à-pas : https://drive.google.com/file/d/1Typp5DHDNQO1RErN8flaUywe9yS3HBme/view\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "legende": "Ta com', chaque matin.\n\nTu déclares une non-conformité, tu notes l'action corrective. C'est exactement ce qu'on te demandera de prouver.\n\nConcrètement : un contrôle qui se passe bien, parce que tout est déjà tracé.\n\nEn savoir plus : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
         "hashtags": [
           "restauration",
           "foodeatup",
@@ -6969,10 +6969,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "non-conformité",
           "haccp restaurant"
         ],
-        "cta": "Voir le tutoriel pas-à-pas"
+        "cta": "Découvrir FoodEatUp"
       },
       "youtube": {
-        "legende": "Ta com', chaque matin. Il y a plus solide qu'une ardoise.\n\nTu déclares une non-conformité, tu notes l'action corrective. C'est exactement ce qu'on te demandera de prouver.\n\nConcrètement : un contrôle qui se passe bien, parce que tout est déjà tracé.\n\n— — —\n\n📺 Le tutoriel pas-à-pas : https://drive.google.com/file/d/1Typp5DHDNQO1RErN8flaUywe9yS3HBme/view\n\n📞 Une démo ? 06 14 18 92 25\n🌐 foodeatup.com\n\nSérie « Le Coup de Feu » — saison 2, épisode 59.\nModule HACCP · Chapitre : Non-conformité\n\nFoodEatUp est le logiciel qui réunit la caisse, le stock, les plannings, l'HACCP et le marketing d'un restaurant au même endroit.\n",
+        "legende": "Ta com', chaque matin. Il y a plus solide qu'une ardoise.\n\nTu déclares une non-conformité, tu notes l'action corrective. C'est exactement ce qu'on te demandera de prouver.\n\nConcrètement : un contrôle qui se passe bien, parce que tout est déjà tracé.\n\n— — —\n\n🔗 https://site.foodeatup.com/\n\n📞 Une démo ? 06 14 18 92 25\n🌐 foodeatup.com\n\nSérie « Le Coup de Feu » — saison 2, épisode 59.\nModule HACCP · Chapitre : Non-conformité\n\nFoodEatUp est le logiciel qui réunit la caisse, le stock, les plannings, l'HACCP et le marketing d'un restaurant au même endroit.\n",
         "hashtags": [
           "Shorts",
           "restaurant",
@@ -6992,7 +6992,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "non-conformité",
           "haccp restaurant"
         ],
-        "cta": "Le tutoriel pas-à-pas",
+        "cta": "Découvrir FoodEatUp",
         "titre": "Non-conformité — HACCP | FoodEatUp"
       }
     },
@@ -7013,7 +7013,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
   "EP060": {
     "publications": {
       "facebook": {
-        "legende": "Ce qu'on te demande d'être. Ou alors, un seul outil fait le reste.\n\nTu enregistres une mise en congélation avec sa date et sa quantité. Plus de sac sans nom au fond du bac.\n\n👉 Le tutoriel complet : https://drive.google.com/file/d/1JkMe74c9n4TFjeRRJ7pSpSQoB6bP2jEf/view\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "legende": "Ce qu'on te demande d'être. Ou alors, un seul outil fait le reste.\n\nTu enregistres une mise en congélation avec sa date et sa quantité. Plus de sac sans nom au fond du bac.\n\n👉 Tout FoodEatUp : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
         "hashtags": [
           "restaurant",
           "restaurateur",
@@ -7030,10 +7030,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "congélation",
           "haccp restaurant"
         ],
-        "cta": "Voir le tutoriel complet"
+        "cta": "Découvrir FoodEatUp"
       },
       "instagram": {
-        "legende": "Ce qu'on te demande d'être.\nOu alors, un seul outil fait le reste.\n\nTu enregistres une mise en congélation avec sa date et sa quantité. Plus de sac sans nom au fond du bac.\n\nLe pas-à-pas complet est dans notre Academy — lien en bio.\nUne démo ? 06 14 18 92 25",
+        "legende": "Ce qu'on te demande d'être.\nOu alors, un seul outil fait le reste.\n\nTu enregistres une mise en congélation avec sa date et sa quantité. Plus de sac sans nom au fond du bac.\n\nTout est expliqué sur notre site — lien en bio.\nUne démo ? 06 14 18 92 25",
         "hashtags": [
           "restaurant",
           "restaurateur",
@@ -7055,7 +7055,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "congélation",
           "haccp restaurant"
         ],
-        "cta": "Le pas-à-pas est en bio"
+        "cta": "Tout est en bio"
       },
       "tiktok": {
         "legende": "Ce qu'on te demande d'être. 😅\nOu alors, un seul outil fait le reste.\n\nTu enregistres une mise en congélation avec sa date et sa quantité.",
@@ -7073,10 +7073,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "congélation",
           "haccp restaurant"
         ],
-        "cta": "Tuto complet en bio"
+        "cta": "Lien en bio"
       },
       "linkedin": {
-        "legende": "Ce qu'on te demande d'être.\n\nTu enregistres une mise en congélation avec sa date et sa quantité. Plus de sac sans nom au fond du bac.\n\nConcrètement : un contrôle qui se passe bien, parce que tout est déjà tracé.\n\nLe tutoriel pas-à-pas : https://drive.google.com/file/d/1JkMe74c9n4TFjeRRJ7pSpSQoB6bP2jEf/view\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "legende": "Ce qu'on te demande d'être.\n\nTu enregistres une mise en congélation avec sa date et sa quantité. Plus de sac sans nom au fond du bac.\n\nConcrètement : un contrôle qui se passe bien, parce que tout est déjà tracé.\n\nEn savoir plus : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
         "hashtags": [
           "restauration",
           "foodeatup",
@@ -7090,10 +7090,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "congélation",
           "haccp restaurant"
         ],
-        "cta": "Voir le tutoriel pas-à-pas"
+        "cta": "Découvrir FoodEatUp"
       },
       "youtube": {
-        "legende": "Ce qu'on te demande d'être. Ou alors, un seul outil fait le reste.\n\nTu enregistres une mise en congélation avec sa date et sa quantité. Plus de sac sans nom au fond du bac.\n\nConcrètement : un contrôle qui se passe bien, parce que tout est déjà tracé.\n\n— — —\n\n📺 Le tutoriel pas-à-pas : https://drive.google.com/file/d/1JkMe74c9n4TFjeRRJ7pSpSQoB6bP2jEf/view\n\n📞 Une démo ? 06 14 18 92 25\n🌐 foodeatup.com\n\nSérie « Le Coup de Feu » — saison 2, épisode 60.\nModule HACCP · Chapitre : Congélation\n\nFoodEatUp est le logiciel qui réunit la caisse, le stock, les plannings, l'HACCP et le marketing d'un restaurant au même endroit.\n",
+        "legende": "Ce qu'on te demande d'être. Ou alors, un seul outil fait le reste.\n\nTu enregistres une mise en congélation avec sa date et sa quantité. Plus de sac sans nom au fond du bac.\n\nConcrètement : un contrôle qui se passe bien, parce que tout est déjà tracé.\n\n— — —\n\n🔗 https://site.foodeatup.com/\n\n📞 Une démo ? 06 14 18 92 25\n🌐 foodeatup.com\n\nSérie « Le Coup de Feu » — saison 2, épisode 60.\nModule HACCP · Chapitre : Congélation\n\nFoodEatUp est le logiciel qui réunit la caisse, le stock, les plannings, l'HACCP et le marketing d'un restaurant au même endroit.\n",
         "hashtags": [
           "Shorts",
           "restaurant",
@@ -7113,7 +7113,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "congélation",
           "haccp restaurant"
         ],
-        "cta": "Le tutoriel pas-à-pas",
+        "cta": "Découvrir FoodEatUp",
         "titre": "Congélation — HACCP | FoodEatUp"
       }
     },
@@ -7134,7 +7134,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
   "EP061": {
     "publications": {
       "facebook": {
-        "legende": "Ton système de pointage. Un badge, un QR code, un code PIN. Point.\n\nTu édites ton dossier de conformité sur la période de ton choix, prêt à présenter.\n\n👉 Le tutoriel complet : https://drive.google.com/file/d/1Sdqt1w99LFbrJP2RpqbPSRahwZGHcPC2/view\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "legende": "Ton système de pointage. Un badge, un QR code, un code PIN. Point.\n\nTu édites ton dossier de conformité sur la période de ton choix, prêt à présenter.\n\n👉 Tout FoodEatUp : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
         "hashtags": [
           "restaurant",
           "restaurateur",
@@ -7151,10 +7151,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "rapport haccp",
           "haccp restaurant"
         ],
-        "cta": "Voir le tutoriel complet"
+        "cta": "Découvrir FoodEatUp"
       },
       "instagram": {
-        "legende": "Ton système de pointage.\nUn badge, un QR code, un code PIN. Point.\n\nTu édites ton dossier de conformité sur la période de ton choix, prêt à présenter.\n\nLe pas-à-pas complet est dans notre Academy — lien en bio.\nUne démo ? 06 14 18 92 25",
+        "legende": "Ton système de pointage.\nUn badge, un QR code, un code PIN. Point.\n\nTu édites ton dossier de conformité sur la période de ton choix, prêt à présenter.\n\nTout est expliqué sur notre site — lien en bio.\nUne démo ? 06 14 18 92 25",
         "hashtags": [
           "restaurant",
           "restaurateur",
@@ -7176,7 +7176,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "rapport haccp",
           "haccp restaurant"
         ],
-        "cta": "Le pas-à-pas est en bio"
+        "cta": "Tout est en bio"
       },
       "tiktok": {
         "legende": "Ton système de pointage. 😅\nUn badge, un QR code, un code PIN. Point.\n\nTu édites ton dossier de conformité sur la période de ton choix, prêt à présenter.",
@@ -7194,10 +7194,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "rapport haccp",
           "haccp restaurant"
         ],
-        "cta": "Tuto complet en bio"
+        "cta": "Lien en bio"
       },
       "linkedin": {
-        "legende": "Ton système de pointage.\n\nTu édites ton dossier de conformité sur la période de ton choix, prêt à présenter.\n\nConcrètement : un contrôle qui se passe bien, parce que tout est déjà tracé.\n\nLe tutoriel pas-à-pas : https://drive.google.com/file/d/1Sdqt1w99LFbrJP2RpqbPSRahwZGHcPC2/view\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "legende": "Ton système de pointage.\n\nTu édites ton dossier de conformité sur la période de ton choix, prêt à présenter.\n\nConcrètement : un contrôle qui se passe bien, parce que tout est déjà tracé.\n\nEn savoir plus : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
         "hashtags": [
           "restauration",
           "foodeatup",
@@ -7211,10 +7211,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "rapport haccp",
           "haccp restaurant"
         ],
-        "cta": "Voir le tutoriel pas-à-pas"
+        "cta": "Découvrir FoodEatUp"
       },
       "youtube": {
-        "legende": "Ton système de pointage. Un badge, un QR code, un code PIN. Point.\n\nTu édites ton dossier de conformité sur la période de ton choix, prêt à présenter.\n\nConcrètement : un contrôle qui se passe bien, parce que tout est déjà tracé.\n\n— — —\n\n📺 Le tutoriel pas-à-pas : https://drive.google.com/file/d/1Sdqt1w99LFbrJP2RpqbPSRahwZGHcPC2/view\n\n📞 Une démo ? 06 14 18 92 25\n🌐 foodeatup.com\n\nSérie « Le Coup de Feu » — saison 3, épisode 61.\nModule HACCP · Chapitre : Rapport HACCP\n\nFoodEatUp est le logiciel qui réunit la caisse, le stock, les plannings, l'HACCP et le marketing d'un restaurant au même endroit.\n",
+        "legende": "Ton système de pointage. Un badge, un QR code, un code PIN. Point.\n\nTu édites ton dossier de conformité sur la période de ton choix, prêt à présenter.\n\nConcrètement : un contrôle qui se passe bien, parce que tout est déjà tracé.\n\n— — —\n\n🔗 https://site.foodeatup.com/\n\n📞 Une démo ? 06 14 18 92 25\n🌐 foodeatup.com\n\nSérie « Le Coup de Feu » — saison 3, épisode 61.\nModule HACCP · Chapitre : Rapport HACCP\n\nFoodEatUp est le logiciel qui réunit la caisse, le stock, les plannings, l'HACCP et le marketing d'un restaurant au même endroit.\n",
         "hashtags": [
           "Shorts",
           "restaurant",
@@ -7234,7 +7234,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "rapport haccp",
           "haccp restaurant"
         ],
-        "cta": "Le tutoriel pas-à-pas",
+        "cta": "Découvrir FoodEatUp",
         "titre": "Rapport HACCP — HACCP | FoodEatUp"
       }
     },
@@ -7255,7 +7255,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
   "EP062": {
     "publications": {
       "facebook": {
-        "legende": "Je te jure, j'étais là à 8 h. Photo, heure, poste. Le débat est clos.\n\nLa conformité devient une routine de deux minutes par service, au lieu d'un dimanche de rattrapage.\n\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "legende": "Je te jure, j'étais là à 8 h. Photo, heure, poste. Le débat est clos.\n\nLa conformité devient une routine de deux minutes par service, au lieu d'un dimanche de rattrapage.\n\n👉 Tout FoodEatUp : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
         "hashtags": [
           "restaurant",
           "restaurateur",
@@ -7272,10 +7272,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "routine du jour",
           "haccp restaurant"
         ],
-        "cta": "Demander une démo"
+        "cta": "Découvrir FoodEatUp"
       },
       "instagram": {
-        "legende": "Je te jure, j'étais là à 8 h.\nPhoto, heure, poste. Le débat est clos.\n\nLa conformité devient une routine de deux minutes par service, au lieu d'un dimanche de rattrapage.\n\nLe pas-à-pas complet est dans notre Academy — lien en bio.\nUne démo ? 06 14 18 92 25",
+        "legende": "Je te jure, j'étais là à 8 h.\nPhoto, heure, poste. Le débat est clos.\n\nLa conformité devient une routine de deux minutes par service, au lieu d'un dimanche de rattrapage.\n\nTout est expliqué sur notre site — lien en bio.\nUne démo ? 06 14 18 92 25",
         "hashtags": [
           "restaurant",
           "restaurateur",
@@ -7297,7 +7297,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "routine du jour",
           "haccp restaurant"
         ],
-        "cta": "Demander une démo"
+        "cta": "Tout est en bio"
       },
       "tiktok": {
         "legende": "Je te jure, j'étais là à 8 h. 😅\nPhoto, heure, poste. Le débat est clos.\n\nLa conformité devient une routine de deux minutes par service, au lieu d'un dimanche de rattrapage.",
@@ -7315,10 +7315,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "routine du jour",
           "haccp restaurant"
         ],
-        "cta": "Demander une démo"
+        "cta": "Lien en bio"
       },
       "linkedin": {
-        "legende": "Je te jure, j'étais là à 8 h.\n\nLa conformité devient une routine de deux minutes par service, au lieu d'un dimanche de rattrapage.\n\nConcrètement : un contrôle qui se passe bien, parce que tout est déjà tracé.\n\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "legende": "Je te jure, j'étais là à 8 h.\n\nLa conformité devient une routine de deux minutes par service, au lieu d'un dimanche de rattrapage.\n\nConcrètement : un contrôle qui se passe bien, parce que tout est déjà tracé.\n\nEn savoir plus : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
         "hashtags": [
           "restauration",
           "foodeatup",
@@ -7332,10 +7332,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "routine du jour",
           "haccp restaurant"
         ],
-        "cta": "Demander une démo"
+        "cta": "Découvrir FoodEatUp"
       },
       "youtube": {
-        "legende": "Je te jure, j'étais là à 8 h. Photo, heure, poste. Le débat est clos.\n\nLa conformité devient une routine de deux minutes par service, au lieu d'un dimanche de rattrapage.\n\nConcrètement : un contrôle qui se passe bien, parce que tout est déjà tracé.\n\n— — —\n\n📞 Une démo ? 06 14 18 92 25\n🌐 foodeatup.com\n\nSérie « Le Coup de Feu » — saison 3, épisode 62.\nModule HACCP · Chapitre : Routine du jour\n\nFoodEatUp est le logiciel qui réunit la caisse, le stock, les plannings, l'HACCP et le marketing d'un restaurant au même endroit.\n",
+        "legende": "Je te jure, j'étais là à 8 h. Photo, heure, poste. Le débat est clos.\n\nLa conformité devient une routine de deux minutes par service, au lieu d'un dimanche de rattrapage.\n\nConcrètement : un contrôle qui se passe bien, parce que tout est déjà tracé.\n\n— — —\n\n🔗 https://site.foodeatup.com/\n\n📞 Une démo ? 06 14 18 92 25\n🌐 foodeatup.com\n\nSérie « Le Coup de Feu » — saison 3, épisode 62.\nModule HACCP · Chapitre : Routine du jour\n\nFoodEatUp est le logiciel qui réunit la caisse, le stock, les plannings, l'HACCP et le marketing d'un restaurant au même endroit.\n",
         "hashtags": [
           "Shorts",
           "restaurant",
@@ -7355,7 +7355,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "routine du jour",
           "haccp restaurant"
         ],
-        "cta": "Demander une démo",
+        "cta": "Découvrir FoodEatUp",
         "titre": "Routine du jour — HACCP | FoodEatUp"
       }
     },
@@ -7375,7 +7375,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
   "EP063": {
     "publications": {
       "facebook": {
-        "legende": "Ta demande de congé. Demandée, reçue, validée. Sans papier.\n\nTu crées ta fiche employé avec son rôle et ses horaires. Elle alimente le planning, les pointages et la paie.\n\n👉 Le tutoriel complet : https://drive.google.com/file/d/1Bhu8KC2mW5P9Gr1qSEVxiNvYoHbUTLCX/view\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "legende": "Ta demande de congé. Demandée, reçue, validée. Sans papier.\n\nTu crées ta fiche employé avec son rôle et ses horaires. Elle alimente le planning, les pointages et la paie.\n\n👉 Tout FoodEatUp : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
         "hashtags": [
           "restaurant",
           "restaurateur",
@@ -7392,10 +7392,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "créer un employé",
           "équipe & planning restaurant"
         ],
-        "cta": "Voir le tutoriel complet"
+        "cta": "Découvrir FoodEatUp"
       },
       "instagram": {
-        "legende": "Ta demande de congé.\nDemandée, reçue, validée. Sans papier.\n\nTu crées ta fiche employé avec son rôle et ses horaires. Elle alimente le planning, les pointages et la paie.\n\nLe pas-à-pas complet est dans notre Academy — lien en bio.\nUne démo ? 06 14 18 92 25",
+        "legende": "Ta demande de congé.\nDemandée, reçue, validée. Sans papier.\n\nTu crées ta fiche employé avec son rôle et ses horaires. Elle alimente le planning, les pointages et la paie.\n\nTout est expliqué sur notre site — lien en bio.\nUne démo ? 06 14 18 92 25",
         "hashtags": [
           "restaurant",
           "restaurateur",
@@ -7417,7 +7417,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "créer un employé",
           "équipe & planning restaurant"
         ],
-        "cta": "Le pas-à-pas est en bio"
+        "cta": "Tout est en bio"
       },
       "tiktok": {
         "legende": "Ta demande de congé. 😅\nDemandée, reçue, validée. Sans papier.\n\nTu crées ta fiche employé avec son rôle et ses horaires.",
@@ -7435,10 +7435,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "créer un employé",
           "équipe & planning restaurant"
         ],
-        "cta": "Tuto complet en bio"
+        "cta": "Lien en bio"
       },
       "linkedin": {
-        "legende": "Ta demande de congé.\n\nTu crées ta fiche employé avec son rôle et ses horaires. Elle alimente le planning, les pointages et la paie.\n\nConcrètement : des plannings faits en vingt minutes, pas en deux soirées.\n\nLe tutoriel pas-à-pas : https://drive.google.com/file/d/1Bhu8KC2mW5P9Gr1qSEVxiNvYoHbUTLCX/view\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "legende": "Ta demande de congé.\n\nTu crées ta fiche employé avec son rôle et ses horaires. Elle alimente le planning, les pointages et la paie.\n\nConcrètement : des plannings faits en vingt minutes, pas en deux soirées.\n\nEn savoir plus : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
         "hashtags": [
           "restauration",
           "foodeatup",
@@ -7452,10 +7452,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "créer un employé",
           "équipe & planning restaurant"
         ],
-        "cta": "Voir le tutoriel pas-à-pas"
+        "cta": "Découvrir FoodEatUp"
       },
       "youtube": {
-        "legende": "Ta demande de congé. Demandée, reçue, validée. Sans papier.\n\nTu crées ta fiche employé avec son rôle et ses horaires. Elle alimente le planning, les pointages et la paie.\n\nConcrètement : des plannings faits en vingt minutes, pas en deux soirées.\n\n— — —\n\n📺 Le tutoriel pas-à-pas : https://drive.google.com/file/d/1Bhu8KC2mW5P9Gr1qSEVxiNvYoHbUTLCX/view\n\n📞 Une démo ? 06 14 18 92 25\n🌐 foodeatup.com\n\nSérie « Le Coup de Feu » — saison 3, épisode 63.\nModule Équipe & Planning · Chapitre : Créer un employé\n\nFoodEatUp est le logiciel qui réunit la caisse, le stock, les plannings, l'HACCP et le marketing d'un restaurant au même endroit.\n",
+        "legende": "Ta demande de congé. Demandée, reçue, validée. Sans papier.\n\nTu crées ta fiche employé avec son rôle et ses horaires. Elle alimente le planning, les pointages et la paie.\n\nConcrètement : des plannings faits en vingt minutes, pas en deux soirées.\n\n— — —\n\n🔗 https://site.foodeatup.com/\n\n📞 Une démo ? 06 14 18 92 25\n🌐 foodeatup.com\n\nSérie « Le Coup de Feu » — saison 3, épisode 63.\nModule Équipe & Planning · Chapitre : Créer un employé\n\nFoodEatUp est le logiciel qui réunit la caisse, le stock, les plannings, l'HACCP et le marketing d'un restaurant au même endroit.\n",
         "hashtags": [
           "Shorts",
           "restaurant",
@@ -7475,7 +7475,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "créer un employé",
           "équipe & planning restaurant"
         ],
-        "cta": "Le tutoriel pas-à-pas",
+        "cta": "Découvrir FoodEatUp",
         "titre": "Créer un employé — Équipe & Planning | FoodEatUp"
       }
     },
@@ -7497,7 +7497,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
   "EP064": {
     "publications": {
       "facebook": {
-        "legende": "Le planning de la semaine. Par employé ou par poste. Imprimable. À jour.\n\nLe planning se construit en glisser-déposer, avec le coût de la semaine qui s'affiche pendant que tu poses les shifts.\n\n👉 Le tutoriel complet : https://drive.google.com/file/d/1CdAnJgR_iq1ESyAgcCCpFjnCfYzaUhIR/view\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "legende": "Le planning de la semaine. Par employé ou par poste. Imprimable. À jour.\n\nLe planning se construit en glisser-déposer, avec le coût de la semaine qui s'affiche pendant que tu poses les shifts.\n\n👉 Tout FoodEatUp : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
         "hashtags": [
           "restaurant",
           "restaurateur",
@@ -7514,10 +7514,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "planning semaine",
           "équipe & planning restaurant"
         ],
-        "cta": "Voir le tutoriel complet"
+        "cta": "Découvrir FoodEatUp"
       },
       "instagram": {
-        "legende": "Le planning de la semaine.\nPar employé ou par poste. Imprimable. À jour.\n\nLe planning se construit en glisser-déposer, avec le coût de la semaine qui s'affiche pendant que tu poses les shifts.\n\nLe pas-à-pas complet est dans notre Academy — lien en bio.\nUne démo ? 06 14 18 92 25",
+        "legende": "Le planning de la semaine.\nPar employé ou par poste. Imprimable. À jour.\n\nLe planning se construit en glisser-déposer, avec le coût de la semaine qui s'affiche pendant que tu poses les shifts.\n\nTout est expliqué sur notre site — lien en bio.\nUne démo ? 06 14 18 92 25",
         "hashtags": [
           "restaurant",
           "restaurateur",
@@ -7539,7 +7539,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "planning semaine",
           "équipe & planning restaurant"
         ],
-        "cta": "Le pas-à-pas est en bio"
+        "cta": "Tout est en bio"
       },
       "tiktok": {
         "legende": "Le planning de la semaine. 😅\nPar employé ou par poste. Imprimable. À jour.\n\nLe planning se construit en glisser-déposer, avec le coût de la semaine qui s'affiche pendant que tu poses les shifts.",
@@ -7557,10 +7557,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "planning semaine",
           "équipe & planning restaurant"
         ],
-        "cta": "Tuto complet en bio"
+        "cta": "Lien en bio"
       },
       "linkedin": {
-        "legende": "Le planning de la semaine.\n\nLe planning se construit en glisser-déposer, avec le coût de la semaine qui s'affiche pendant que tu poses les shifts.\n\nConcrètement : des plannings faits en vingt minutes, pas en deux soirées.\n\nLe tutoriel pas-à-pas : https://drive.google.com/file/d/1CdAnJgR_iq1ESyAgcCCpFjnCfYzaUhIR/view\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "legende": "Le planning de la semaine.\n\nLe planning se construit en glisser-déposer, avec le coût de la semaine qui s'affiche pendant que tu poses les shifts.\n\nConcrètement : des plannings faits en vingt minutes, pas en deux soirées.\n\nEn savoir plus : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
         "hashtags": [
           "restauration",
           "foodeatup",
@@ -7574,10 +7574,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "planning semaine",
           "équipe & planning restaurant"
         ],
-        "cta": "Voir le tutoriel pas-à-pas"
+        "cta": "Découvrir FoodEatUp"
       },
       "youtube": {
-        "legende": "Le planning de la semaine. Par employé ou par poste. Imprimable. À jour.\n\nLe planning se construit en glisser-déposer, avec le coût de la semaine qui s'affiche pendant que tu poses les shifts.\n\nConcrètement : des plannings faits en vingt minutes, pas en deux soirées.\n\n— — —\n\n📺 Le tutoriel pas-à-pas : https://drive.google.com/file/d/1CdAnJgR_iq1ESyAgcCCpFjnCfYzaUhIR/view\n\n📞 Une démo ? 06 14 18 92 25\n🌐 foodeatup.com\n\nSérie « Le Coup de Feu » — saison 3, épisode 64.\nModule Équipe & Planning · Chapitre : Planning semaine\n\nFoodEatUp est le logiciel qui réunit la caisse, le stock, les plannings, l'HACCP et le marketing d'un restaurant au même endroit.\n",
+        "legende": "Le planning de la semaine. Par employé ou par poste. Imprimable. À jour.\n\nLe planning se construit en glisser-déposer, avec le coût de la semaine qui s'affiche pendant que tu poses les shifts.\n\nConcrètement : des plannings faits en vingt minutes, pas en deux soirées.\n\n— — —\n\n🔗 https://site.foodeatup.com/\n\n📞 Une démo ? 06 14 18 92 25\n🌐 foodeatup.com\n\nSérie « Le Coup de Feu » — saison 3, épisode 64.\nModule Équipe & Planning · Chapitre : Planning semaine\n\nFoodEatUp est le logiciel qui réunit la caisse, le stock, les plannings, l'HACCP et le marketing d'un restaurant au même endroit.\n",
         "hashtags": [
           "Shorts",
           "restaurant",
@@ -7597,7 +7597,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "planning semaine",
           "équipe & planning restaurant"
         ],
-        "cta": "Le tutoriel pas-à-pas",
+        "cta": "Découvrir FoodEatUp",
         "titre": "Planning semaine — Équipe & Planning | FoodEatUp"
       }
     },
@@ -7619,7 +7619,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
   "EP065": {
     "publications": {
       "facebook": {
-        "legende": "Qui a accès à quoi ? Chaque rôle voit exactement ce qu'il doit voir.\n\nLes heures réelles sont pointées. Tu compares le prévu et le réalisé, sans discussion de fin de mois.\n\n👉 Le tutoriel complet : https://drive.google.com/file/d/1J1Q1Tv2kx9RCiiW6m5SiSh6psnrjtLMb/view\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "legende": "Qui a accès à quoi ? Chaque rôle voit exactement ce qu'il doit voir.\n\nLes heures réelles sont pointées. Tu compares le prévu et le réalisé, sans discussion de fin de mois.\n\n👉 Tout FoodEatUp : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
         "hashtags": [
           "restaurant",
           "restaurateur",
@@ -7636,10 +7636,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "pointages",
           "équipe & planning restaurant"
         ],
-        "cta": "Voir le tutoriel complet"
+        "cta": "Découvrir FoodEatUp"
       },
       "instagram": {
-        "legende": "Qui a accès à quoi ?\nChaque rôle voit exactement ce qu'il doit voir.\n\nLes heures réelles sont pointées. Tu compares le prévu et le réalisé, sans discussion de fin de mois.\n\nLe pas-à-pas complet est dans notre Academy — lien en bio.\nUne démo ? 06 14 18 92 25",
+        "legende": "Qui a accès à quoi ?\nChaque rôle voit exactement ce qu'il doit voir.\n\nLes heures réelles sont pointées. Tu compares le prévu et le réalisé, sans discussion de fin de mois.\n\nTout est expliqué sur notre site — lien en bio.\nUne démo ? 06 14 18 92 25",
         "hashtags": [
           "restaurant",
           "restaurateur",
@@ -7661,7 +7661,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "pointages",
           "équipe & planning restaurant"
         ],
-        "cta": "Le pas-à-pas est en bio"
+        "cta": "Tout est en bio"
       },
       "tiktok": {
         "legende": "Qui a accès à quoi ? 😅\nChaque rôle voit exactement ce qu'il doit voir.\n\nLes heures réelles sont pointées.",
@@ -7679,10 +7679,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "pointages",
           "équipe & planning restaurant"
         ],
-        "cta": "Tuto complet en bio"
+        "cta": "Lien en bio"
       },
       "linkedin": {
-        "legende": "Qui a accès à quoi ?\n\nLes heures réelles sont pointées. Tu compares le prévu et le réalisé, sans discussion de fin de mois.\n\nConcrètement : des plannings faits en vingt minutes, pas en deux soirées.\n\nLe tutoriel pas-à-pas : https://drive.google.com/file/d/1J1Q1Tv2kx9RCiiW6m5SiSh6psnrjtLMb/view\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "legende": "Qui a accès à quoi ?\n\nLes heures réelles sont pointées. Tu compares le prévu et le réalisé, sans discussion de fin de mois.\n\nConcrètement : des plannings faits en vingt minutes, pas en deux soirées.\n\nEn savoir plus : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
         "hashtags": [
           "restauration",
           "foodeatup",
@@ -7696,10 +7696,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "pointages",
           "équipe & planning restaurant"
         ],
-        "cta": "Voir le tutoriel pas-à-pas"
+        "cta": "Découvrir FoodEatUp"
       },
       "youtube": {
-        "legende": "Qui a accès à quoi ? Chaque rôle voit exactement ce qu'il doit voir.\n\nLes heures réelles sont pointées. Tu compares le prévu et le réalisé, sans discussion de fin de mois.\n\nConcrètement : des plannings faits en vingt minutes, pas en deux soirées.\n\n— — —\n\n📺 Le tutoriel pas-à-pas : https://drive.google.com/file/d/1J1Q1Tv2kx9RCiiW6m5SiSh6psnrjtLMb/view\n\n📞 Une démo ? 06 14 18 92 25\n🌐 foodeatup.com\n\nSérie « Le Coup de Feu » — saison 3, épisode 65.\nModule Équipe & Planning · Chapitre : Pointages\n\nFoodEatUp est le logiciel qui réunit la caisse, le stock, les plannings, l'HACCP et le marketing d'un restaurant au même endroit.\n",
+        "legende": "Qui a accès à quoi ? Chaque rôle voit exactement ce qu'il doit voir.\n\nLes heures réelles sont pointées. Tu compares le prévu et le réalisé, sans discussion de fin de mois.\n\nConcrètement : des plannings faits en vingt minutes, pas en deux soirées.\n\n— — —\n\n🔗 https://site.foodeatup.com/\n\n📞 Une démo ? 06 14 18 92 25\n🌐 foodeatup.com\n\nSérie « Le Coup de Feu » — saison 3, épisode 65.\nModule Équipe & Planning · Chapitre : Pointages\n\nFoodEatUp est le logiciel qui réunit la caisse, le stock, les plannings, l'HACCP et le marketing d'un restaurant au même endroit.\n",
         "hashtags": [
           "Shorts",
           "restaurant",
@@ -7719,7 +7719,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "pointages",
           "équipe & planning restaurant"
         ],
-        "cta": "Le tutoriel pas-à-pas",
+        "cta": "Découvrir FoodEatUp",
         "titre": "Pointages — Équipe & Planning | FoodEatUp"
       }
     },
@@ -7743,7 +7743,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
   "EP066": {
     "publications": {
       "facebook": {
-        "legende": "Ta cuisine n'a personne à qui parler. Jarvis répond, lui. Et il note.\n\nUne demande de congé arrive, tu valides ou tu refuses depuis l'écran. Le planning se met à jour tout seul.\n\n👉 Le tutoriel complet : https://drive.google.com/file/d/1gY1t4M0AUXTI54sCrB22r7yeiCDe3W35/view\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "legende": "Ta cuisine n'a personne à qui parler. Jarvis répond, lui. Et il note.\n\nUne demande de congé arrive, tu valides ou tu refuses depuis l'écran. Le planning se met à jour tout seul.\n\n👉 Tout FoodEatUp : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
         "hashtags": [
           "restaurant",
           "restaurateur",
@@ -7760,10 +7760,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "congés",
           "équipe & planning restaurant"
         ],
-        "cta": "Voir le tutoriel complet"
+        "cta": "Découvrir FoodEatUp"
       },
       "instagram": {
-        "legende": "Ta cuisine n'a personne à qui parler.\nJarvis répond, lui. Et il note.\n\nUne demande de congé arrive, tu valides ou tu refuses depuis l'écran. Le planning se met à jour tout seul.\n\nLe pas-à-pas complet est dans notre Academy — lien en bio.\nUne démo ? 06 14 18 92 25",
+        "legende": "Ta cuisine n'a personne à qui parler.\nJarvis répond, lui. Et il note.\n\nUne demande de congé arrive, tu valides ou tu refuses depuis l'écran. Le planning se met à jour tout seul.\n\nTout est expliqué sur notre site — lien en bio.\nUne démo ? 06 14 18 92 25",
         "hashtags": [
           "restaurant",
           "restaurateur",
@@ -7785,7 +7785,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "congés",
           "équipe & planning restaurant"
         ],
-        "cta": "Le pas-à-pas est en bio"
+        "cta": "Tout est en bio"
       },
       "tiktok": {
         "legende": "Ta cuisine n'a personne à qui parler. 😅\nJarvis répond, lui. Et il note.\n\nUne demande de congé arrive, tu valides ou tu refuses depuis l'écran.",
@@ -7803,10 +7803,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "congés",
           "équipe & planning restaurant"
         ],
-        "cta": "Tuto complet en bio"
+        "cta": "Lien en bio"
       },
       "linkedin": {
-        "legende": "Ta cuisine n'a personne à qui parler.\n\nUne demande de congé arrive, tu valides ou tu refuses depuis l'écran. Le planning se met à jour tout seul.\n\nConcrètement : des plannings faits en vingt minutes, pas en deux soirées.\n\nLe tutoriel pas-à-pas : https://drive.google.com/file/d/1gY1t4M0AUXTI54sCrB22r7yeiCDe3W35/view\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "legende": "Ta cuisine n'a personne à qui parler.\n\nUne demande de congé arrive, tu valides ou tu refuses depuis l'écran. Le planning se met à jour tout seul.\n\nConcrètement : des plannings faits en vingt minutes, pas en deux soirées.\n\nEn savoir plus : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
         "hashtags": [
           "restauration",
           "foodeatup",
@@ -7820,10 +7820,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "congés",
           "équipe & planning restaurant"
         ],
-        "cta": "Voir le tutoriel pas-à-pas"
+        "cta": "Découvrir FoodEatUp"
       },
       "youtube": {
-        "legende": "Ta cuisine n'a personne à qui parler. Jarvis répond, lui. Et il note.\n\nUne demande de congé arrive, tu valides ou tu refuses depuis l'écran. Le planning se met à jour tout seul.\n\nConcrètement : des plannings faits en vingt minutes, pas en deux soirées.\n\n— — —\n\n📺 Le tutoriel pas-à-pas : https://drive.google.com/file/d/1gY1t4M0AUXTI54sCrB22r7yeiCDe3W35/view\n\n📞 Une démo ? 06 14 18 92 25\n🌐 foodeatup.com\n\nSérie « Le Coup de Feu » — saison 3, épisode 66.\nModule Équipe & Planning · Chapitre : Congés\n\nFoodEatUp est le logiciel qui réunit la caisse, le stock, les plannings, l'HACCP et le marketing d'un restaurant au même endroit.\n",
+        "legende": "Ta cuisine n'a personne à qui parler. Jarvis répond, lui. Et il note.\n\nUne demande de congé arrive, tu valides ou tu refuses depuis l'écran. Le planning se met à jour tout seul.\n\nConcrètement : des plannings faits en vingt minutes, pas en deux soirées.\n\n— — —\n\n🔗 https://site.foodeatup.com/\n\n📞 Une démo ? 06 14 18 92 25\n🌐 foodeatup.com\n\nSérie « Le Coup de Feu » — saison 3, épisode 66.\nModule Équipe & Planning · Chapitre : Congés\n\nFoodEatUp est le logiciel qui réunit la caisse, le stock, les plannings, l'HACCP et le marketing d'un restaurant au même endroit.\n",
         "hashtags": [
           "Shorts",
           "restaurant",
@@ -7843,7 +7843,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "congés",
           "équipe & planning restaurant"
         ],
-        "cta": "Le tutoriel pas-à-pas",
+        "cta": "Découvrir FoodEatUp",
         "titre": "Congés — Équipe & Planning | FoodEatUp"
       }
     },
@@ -7854,7 +7854,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
   "EP067": {
     "publications": {
       "facebook": {
-        "legende": "Ton relevé de température. Un vrai relevé, horodaté, par équipement.\n\nContrats et documents employés sont rangés au même endroit, avec leurs échéances.\n\n👉 Le tutoriel complet : https://drive.google.com/file/d/1nbIsc-SROPwONiTIm1BuLpYuNSSTTHm7/view\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "legende": "Ton relevé de température. Un vrai relevé, horodaté, par équipement.\n\nContrats et documents employés sont rangés au même endroit, avec leurs échéances.\n\n👉 Tout FoodEatUp : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
         "hashtags": [
           "restaurant",
           "restaurateur",
@@ -7871,10 +7871,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "contrats",
           "équipe & planning restaurant"
         ],
-        "cta": "Voir le tutoriel complet"
+        "cta": "Découvrir FoodEatUp"
       },
       "instagram": {
-        "legende": "Ton relevé de température.\nUn vrai relevé, horodaté, par équipement.\n\nContrats et documents employés sont rangés au même endroit, avec leurs échéances.\n\nLe pas-à-pas complet est dans notre Academy — lien en bio.\nUne démo ? 06 14 18 92 25",
+        "legende": "Ton relevé de température.\nUn vrai relevé, horodaté, par équipement.\n\nContrats et documents employés sont rangés au même endroit, avec leurs échéances.\n\nTout est expliqué sur notre site — lien en bio.\nUne démo ? 06 14 18 92 25",
         "hashtags": [
           "restaurant",
           "restaurateur",
@@ -7896,7 +7896,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "contrats",
           "équipe & planning restaurant"
         ],
-        "cta": "Le pas-à-pas est en bio"
+        "cta": "Tout est en bio"
       },
       "tiktok": {
         "legende": "Ton relevé de température. 😅\nUn vrai relevé, horodaté, par équipement.\n\nContrats et documents employés sont rangés au même endroit, avec leurs échéances.",
@@ -7914,10 +7914,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "contrats",
           "équipe & planning restaurant"
         ],
-        "cta": "Tuto complet en bio"
+        "cta": "Lien en bio"
       },
       "linkedin": {
-        "legende": "Ton relevé de température.\n\nContrats et documents employés sont rangés au même endroit, avec leurs échéances.\n\nConcrètement : des plannings faits en vingt minutes, pas en deux soirées.\n\nLe tutoriel pas-à-pas : https://drive.google.com/file/d/1nbIsc-SROPwONiTIm1BuLpYuNSSTTHm7/view\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "legende": "Ton relevé de température.\n\nContrats et documents employés sont rangés au même endroit, avec leurs échéances.\n\nConcrètement : des plannings faits en vingt minutes, pas en deux soirées.\n\nEn savoir plus : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
         "hashtags": [
           "restauration",
           "foodeatup",
@@ -7931,10 +7931,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "contrats",
           "équipe & planning restaurant"
         ],
-        "cta": "Voir le tutoriel pas-à-pas"
+        "cta": "Découvrir FoodEatUp"
       },
       "youtube": {
-        "legende": "Ton relevé de température. Un vrai relevé, horodaté, par équipement.\n\nContrats et documents employés sont rangés au même endroit, avec leurs échéances.\n\nConcrètement : des plannings faits en vingt minutes, pas en deux soirées.\n\n— — —\n\n📺 Le tutoriel pas-à-pas : https://drive.google.com/file/d/1nbIsc-SROPwONiTIm1BuLpYuNSSTTHm7/view\n\n📞 Une démo ? 06 14 18 92 25\n🌐 foodeatup.com\n\nSérie « Le Coup de Feu » — saison 3, épisode 67.\nModule Équipe & Planning · Chapitre : Contrats\n\nFoodEatUp est le logiciel qui réunit la caisse, le stock, les plannings, l'HACCP et le marketing d'un restaurant au même endroit.\n",
+        "legende": "Ton relevé de température. Un vrai relevé, horodaté, par équipement.\n\nContrats et documents employés sont rangés au même endroit, avec leurs échéances.\n\nConcrètement : des plannings faits en vingt minutes, pas en deux soirées.\n\n— — —\n\n🔗 https://site.foodeatup.com/\n\n📞 Une démo ? 06 14 18 92 25\n🌐 foodeatup.com\n\nSérie « Le Coup de Feu » — saison 3, épisode 67.\nModule Équipe & Planning · Chapitre : Contrats\n\nFoodEatUp est le logiciel qui réunit la caisse, le stock, les plannings, l'HACCP et le marketing d'un restaurant au même endroit.\n",
         "hashtags": [
           "Shorts",
           "restaurant",
@@ -7954,7 +7954,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "contrats",
           "équipe & planning restaurant"
         ],
-        "cta": "Le tutoriel pas-à-pas",
+        "cta": "Découvrir FoodEatUp",
         "titre": "Contrats — Équipe & Planning | FoodEatUp"
       }
     },
@@ -7976,7 +7976,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
   "EP068": {
     "publications": {
       "facebook": {
-        "legende": "Le test scientifique du nez. Une étiquette DLC, et plus personne ne renifle.\n\nTon coût de personnel s'affiche en face de ton chiffre d'affaires prévu. Tu ajustes avant, pas après.\n\n👉 Le tutoriel complet : https://drive.google.com/file/d/174AfDA9zywpeMof070Mc33_doWgDcsp5/view\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "legende": "Le test scientifique du nez. Une étiquette DLC, et plus personne ne renifle.\n\nTon coût de personnel s'affiche en face de ton chiffre d'affaires prévu. Tu ajustes avant, pas après.\n\n👉 Tout FoodEatUp : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
         "hashtags": [
           "restaurant",
           "restaurateur",
@@ -7993,10 +7993,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "coût du travail",
           "équipe & planning restaurant"
         ],
-        "cta": "Voir le tutoriel complet"
+        "cta": "Découvrir FoodEatUp"
       },
       "instagram": {
-        "legende": "Le test scientifique du nez.\nUne étiquette DLC, et plus personne ne renifle.\n\nTon coût de personnel s'affiche en face de ton chiffre d'affaires prévu. Tu ajustes avant, pas après.\n\nLe pas-à-pas complet est dans notre Academy — lien en bio.\nUne démo ? 06 14 18 92 25",
+        "legende": "Le test scientifique du nez.\nUne étiquette DLC, et plus personne ne renifle.\n\nTon coût de personnel s'affiche en face de ton chiffre d'affaires prévu. Tu ajustes avant, pas après.\n\nTout est expliqué sur notre site — lien en bio.\nUne démo ? 06 14 18 92 25",
         "hashtags": [
           "restaurant",
           "restaurateur",
@@ -8018,7 +8018,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "coût du travail",
           "équipe & planning restaurant"
         ],
-        "cta": "Le pas-à-pas est en bio"
+        "cta": "Tout est en bio"
       },
       "tiktok": {
         "legende": "Le test scientifique du nez. 😅\nUne étiquette DLC, et plus personne ne renifle.\n\nTon coût de personnel s'affiche en face de ton chiffre d'affaires prévu.",
@@ -8036,10 +8036,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "coût du travail",
           "équipe & planning restaurant"
         ],
-        "cta": "Tuto complet en bio"
+        "cta": "Lien en bio"
       },
       "linkedin": {
-        "legende": "Le test scientifique du nez.\n\nTon coût de personnel s'affiche en face de ton chiffre d'affaires prévu. Tu ajustes avant, pas après.\n\nConcrètement : des plannings faits en vingt minutes, pas en deux soirées.\n\nLe tutoriel pas-à-pas : https://drive.google.com/file/d/174AfDA9zywpeMof070Mc33_doWgDcsp5/view\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "legende": "Le test scientifique du nez.\n\nTon coût de personnel s'affiche en face de ton chiffre d'affaires prévu. Tu ajustes avant, pas après.\n\nConcrètement : des plannings faits en vingt minutes, pas en deux soirées.\n\nEn savoir plus : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
         "hashtags": [
           "restauration",
           "foodeatup",
@@ -8053,10 +8053,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "coût du travail",
           "équipe & planning restaurant"
         ],
-        "cta": "Voir le tutoriel pas-à-pas"
+        "cta": "Découvrir FoodEatUp"
       },
       "youtube": {
-        "legende": "Le test scientifique du nez. Une étiquette DLC, et plus personne ne renifle.\n\nTon coût de personnel s'affiche en face de ton chiffre d'affaires prévu. Tu ajustes avant, pas après.\n\nConcrètement : des plannings faits en vingt minutes, pas en deux soirées.\n\n— — —\n\n📺 Le tutoriel pas-à-pas : https://drive.google.com/file/d/174AfDA9zywpeMof070Mc33_doWgDcsp5/view\n\n📞 Une démo ? 06 14 18 92 25\n🌐 foodeatup.com\n\nSérie « Le Coup de Feu » — saison 3, épisode 68.\nModule Équipe & Planning · Chapitre : Coût du travail\n\nFoodEatUp est le logiciel qui réunit la caisse, le stock, les plannings, l'HACCP et le marketing d'un restaurant au même endroit.\n",
+        "legende": "Le test scientifique du nez. Une étiquette DLC, et plus personne ne renifle.\n\nTon coût de personnel s'affiche en face de ton chiffre d'affaires prévu. Tu ajustes avant, pas après.\n\nConcrètement : des plannings faits en vingt minutes, pas en deux soirées.\n\n— — —\n\n🔗 https://site.foodeatup.com/\n\n📞 Une démo ? 06 14 18 92 25\n🌐 foodeatup.com\n\nSérie « Le Coup de Feu » — saison 3, épisode 68.\nModule Équipe & Planning · Chapitre : Coût du travail\n\nFoodEatUp est le logiciel qui réunit la caisse, le stock, les plannings, l'HACCP et le marketing d'un restaurant au même endroit.\n",
         "hashtags": [
           "Shorts",
           "restaurant",
@@ -8076,7 +8076,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "coût du travail",
           "équipe & planning restaurant"
         ],
-        "cta": "Le tutoriel pas-à-pas",
+        "cta": "Découvrir FoodEatUp",
         "titre": "Coût du travail — Équipe & Planning | FoodEatUp"
       }
     },
@@ -8087,7 +8087,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
   "EP069": {
     "publications": {
       "facebook": {
-        "legende": "Tu as vérifié la livraison ? Température, DLC, code EAN. En scannant.\n\nTu publies ton offre, tu suis les candidatures par statut, tu décides. Le recrutement arrête de traîner sur ton téléphone.\n\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "legende": "Tu as vérifié la livraison ? Température, DLC, code EAN. En scannant.\n\nTu publies ton offre, tu suis les candidatures par statut, tu décides. Le recrutement arrête de traîner sur ton téléphone.\n\n👉 Tout FoodEatUp : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
         "hashtags": [
           "restaurant",
           "restaurateur",
@@ -8104,10 +8104,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "recrutement",
           "équipe & planning restaurant"
         ],
-        "cta": "Demander une démo"
+        "cta": "Découvrir FoodEatUp"
       },
       "instagram": {
-        "legende": "Tu as vérifié la livraison ?\nTempérature, DLC, code EAN. En scannant.\n\nTu publies ton offre, tu suis les candidatures par statut, tu décides. Le recrutement arrête de traîner sur ton téléphone.\n\nLe pas-à-pas complet est dans notre Academy — lien en bio.\nUne démo ? 06 14 18 92 25",
+        "legende": "Tu as vérifié la livraison ?\nTempérature, DLC, code EAN. En scannant.\n\nTu publies ton offre, tu suis les candidatures par statut, tu décides. Le recrutement arrête de traîner sur ton téléphone.\n\nTout est expliqué sur notre site — lien en bio.\nUne démo ? 06 14 18 92 25",
         "hashtags": [
           "restaurant",
           "restaurateur",
@@ -8129,7 +8129,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "recrutement",
           "équipe & planning restaurant"
         ],
-        "cta": "Demander une démo"
+        "cta": "Tout est en bio"
       },
       "tiktok": {
         "legende": "Tu as vérifié la livraison ? 😅\nTempérature, DLC, code EAN. En scannant.\n\nTu publies ton offre, tu suis les candidatures par statut, tu décides.",
@@ -8147,10 +8147,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "recrutement",
           "équipe & planning restaurant"
         ],
-        "cta": "Demander une démo"
+        "cta": "Lien en bio"
       },
       "linkedin": {
-        "legende": "Tu as vérifié la livraison ?\n\nTu publies ton offre, tu suis les candidatures par statut, tu décides. Le recrutement arrête de traîner sur ton téléphone.\n\nConcrètement : des plannings faits en vingt minutes, pas en deux soirées.\n\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "legende": "Tu as vérifié la livraison ?\n\nTu publies ton offre, tu suis les candidatures par statut, tu décides. Le recrutement arrête de traîner sur ton téléphone.\n\nConcrètement : des plannings faits en vingt minutes, pas en deux soirées.\n\nEn savoir plus : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
         "hashtags": [
           "restauration",
           "foodeatup",
@@ -8164,10 +8164,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "recrutement",
           "équipe & planning restaurant"
         ],
-        "cta": "Demander une démo"
+        "cta": "Découvrir FoodEatUp"
       },
       "youtube": {
-        "legende": "Tu as vérifié la livraison ? Température, DLC, code EAN. En scannant.\n\nTu publies ton offre, tu suis les candidatures par statut, tu décides. Le recrutement arrête de traîner sur ton téléphone.\n\nConcrètement : des plannings faits en vingt minutes, pas en deux soirées.\n\n— — —\n\n📞 Une démo ? 06 14 18 92 25\n🌐 foodeatup.com\n\nSérie « Le Coup de Feu » — saison 3, épisode 69.\nModule Équipe & Planning · Chapitre : Recrutement\n\nFoodEatUp est le logiciel qui réunit la caisse, le stock, les plannings, l'HACCP et le marketing d'un restaurant au même endroit.\n",
+        "legende": "Tu as vérifié la livraison ? Température, DLC, code EAN. En scannant.\n\nTu publies ton offre, tu suis les candidatures par statut, tu décides. Le recrutement arrête de traîner sur ton téléphone.\n\nConcrètement : des plannings faits en vingt minutes, pas en deux soirées.\n\n— — —\n\n🔗 https://site.foodeatup.com/\n\n📞 Une démo ? 06 14 18 92 25\n🌐 foodeatup.com\n\nSérie « Le Coup de Feu » — saison 3, épisode 69.\nModule Équipe & Planning · Chapitre : Recrutement\n\nFoodEatUp est le logiciel qui réunit la caisse, le stock, les plannings, l'HACCP et le marketing d'un restaurant au même endroit.\n",
         "hashtags": [
           "Shorts",
           "restaurant",
@@ -8187,7 +8187,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "recrutement",
           "équipe & planning restaurant"
         ],
-        "cta": "Demander une démo",
+        "cta": "Découvrir FoodEatUp",
         "titre": "Recrutement — Équipe & Planning | FoodEatUp"
       }
     },
@@ -8208,7 +8208,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
   "EP070": {
     "publications": {
       "facebook": {
-        "legende": "C'est fait. Photo analysée par l'IA. Rapport objectif.\n\nLe nouveau arrive avec son accès, son planning et ses vidéos de formation. Jour un, il est utile.\n\n👉 Le tutoriel complet : https://drive.google.com/file/d/13w9aRHXfQFkxF3UvqtaLczqKPN5rr7E0/view\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "legende": "C'est fait. Photo analysée par l'IA. Rapport objectif.\n\nLe nouveau arrive avec son accès, son planning et ses vidéos de formation. Jour un, il est utile.\n\n👉 Tout FoodEatUp : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
         "hashtags": [
           "restaurant",
           "restaurateur",
@@ -8225,10 +8225,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "onboarding",
           "équipe & planning restaurant"
         ],
-        "cta": "Voir le tutoriel complet"
+        "cta": "Découvrir FoodEatUp"
       },
       "instagram": {
-        "legende": "C'est fait.\nPhoto analysée par l'IA. Rapport objectif.\n\nLe nouveau arrive avec son accès, son planning et ses vidéos de formation. Jour un, il est utile.\n\nLe pas-à-pas complet est dans notre Academy — lien en bio.\nUne démo ? 06 14 18 92 25",
+        "legende": "C'est fait.\nPhoto analysée par l'IA. Rapport objectif.\n\nLe nouveau arrive avec son accès, son planning et ses vidéos de formation. Jour un, il est utile.\n\nTout est expliqué sur notre site — lien en bio.\nUne démo ? 06 14 18 92 25",
         "hashtags": [
           "restaurant",
           "restaurateur",
@@ -8250,7 +8250,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "onboarding",
           "équipe & planning restaurant"
         ],
-        "cta": "Le pas-à-pas est en bio"
+        "cta": "Tout est en bio"
       },
       "tiktok": {
         "legende": "C'est fait. 😅\nPhoto analysée par l'IA. Rapport objectif.\n\nLe nouveau arrive avec son accès, son planning et ses vidéos de formation.",
@@ -8268,10 +8268,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "onboarding",
           "équipe & planning restaurant"
         ],
-        "cta": "Tuto complet en bio"
+        "cta": "Lien en bio"
       },
       "linkedin": {
-        "legende": "C'est fait.\n\nLe nouveau arrive avec son accès, son planning et ses vidéos de formation. Jour un, il est utile.\n\nConcrètement : des plannings faits en vingt minutes, pas en deux soirées.\n\nLe tutoriel pas-à-pas : https://drive.google.com/file/d/13w9aRHXfQFkxF3UvqtaLczqKPN5rr7E0/view\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "legende": "C'est fait.\n\nLe nouveau arrive avec son accès, son planning et ses vidéos de formation. Jour un, il est utile.\n\nConcrètement : des plannings faits en vingt minutes, pas en deux soirées.\n\nEn savoir plus : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
         "hashtags": [
           "restauration",
           "foodeatup",
@@ -8285,10 +8285,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "onboarding",
           "équipe & planning restaurant"
         ],
-        "cta": "Voir le tutoriel pas-à-pas"
+        "cta": "Découvrir FoodEatUp"
       },
       "youtube": {
-        "legende": "C'est fait. Photo analysée par l'IA. Rapport objectif.\n\nLe nouveau arrive avec son accès, son planning et ses vidéos de formation. Jour un, il est utile.\n\nConcrètement : des plannings faits en vingt minutes, pas en deux soirées.\n\n— — —\n\n📺 Le tutoriel pas-à-pas : https://drive.google.com/file/d/13w9aRHXfQFkxF3UvqtaLczqKPN5rr7E0/view\n\n📞 Une démo ? 06 14 18 92 25\n🌐 foodeatup.com\n\nSérie « Le Coup de Feu » — saison 3, épisode 70.\nModule Équipe & Planning · Chapitre : Onboarding\n\nFoodEatUp est le logiciel qui réunit la caisse, le stock, les plannings, l'HACCP et le marketing d'un restaurant au même endroit.\n",
+        "legende": "C'est fait. Photo analysée par l'IA. Rapport objectif.\n\nLe nouveau arrive avec son accès, son planning et ses vidéos de formation. Jour un, il est utile.\n\nConcrètement : des plannings faits en vingt minutes, pas en deux soirées.\n\n— — —\n\n🔗 https://site.foodeatup.com/\n\n📞 Une démo ? 06 14 18 92 25\n🌐 foodeatup.com\n\nSérie « Le Coup de Feu » — saison 3, épisode 70.\nModule Équipe & Planning · Chapitre : Onboarding\n\nFoodEatUp est le logiciel qui réunit la caisse, le stock, les plannings, l'HACCP et le marketing d'un restaurant au même endroit.\n",
         "hashtags": [
           "Shorts",
           "restaurant",
@@ -8308,7 +8308,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "onboarding",
           "équipe & planning restaurant"
         ],
-        "cta": "Le tutoriel pas-à-pas",
+        "cta": "Découvrir FoodEatUp",
         "titre": "Onboarding — Équipe & Planning | FoodEatUp"
       }
     },
@@ -8329,7 +8329,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
   "EP071": {
     "publications": {
       "facebook": {
-        "legende": "La check-list du soir. Cochée, horodatée, signée par qui l'a faite.\n\nTu affectes tes équipes par poste et par zone. Chacun sait où il est attendu ce soir.\n\n👉 Le tutoriel complet : https://drive.google.com/file/d/174AfDA9zywpeMof070Mc33_doWgDcsp5/view\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "legende": "La check-list du soir. Cochée, horodatée, signée par qui l'a faite.\n\nTu affectes tes équipes par poste et par zone. Chacun sait où il est attendu ce soir.\n\n👉 Tout FoodEatUp : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
         "hashtags": [
           "restaurant",
           "restaurateur",
@@ -8346,10 +8346,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "multi-postes",
           "équipe & planning restaurant"
         ],
-        "cta": "Voir le tutoriel complet"
+        "cta": "Découvrir FoodEatUp"
       },
       "instagram": {
-        "legende": "La check-list du soir.\nCochée, horodatée, signée par qui l'a faite.\n\nTu affectes tes équipes par poste et par zone. Chacun sait où il est attendu ce soir.\n\nLe pas-à-pas complet est dans notre Academy — lien en bio.\nUne démo ? 06 14 18 92 25",
+        "legende": "La check-list du soir.\nCochée, horodatée, signée par qui l'a faite.\n\nTu affectes tes équipes par poste et par zone. Chacun sait où il est attendu ce soir.\n\nTout est expliqué sur notre site — lien en bio.\nUne démo ? 06 14 18 92 25",
         "hashtags": [
           "restaurant",
           "restaurateur",
@@ -8371,7 +8371,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "multi-postes",
           "équipe & planning restaurant"
         ],
-        "cta": "Le pas-à-pas est en bio"
+        "cta": "Tout est en bio"
       },
       "tiktok": {
         "legende": "La check-list du soir. 😅\nCochée, horodatée, signée par qui l'a faite.\n\nTu affectes tes équipes par poste et par zone.",
@@ -8389,10 +8389,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "multi-postes",
           "équipe & planning restaurant"
         ],
-        "cta": "Tuto complet en bio"
+        "cta": "Lien en bio"
       },
       "linkedin": {
-        "legende": "La check-list du soir.\n\nTu affectes tes équipes par poste et par zone. Chacun sait où il est attendu ce soir.\n\nConcrètement : des plannings faits en vingt minutes, pas en deux soirées.\n\nLe tutoriel pas-à-pas : https://drive.google.com/file/d/174AfDA9zywpeMof070Mc33_doWgDcsp5/view\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "legende": "La check-list du soir.\n\nTu affectes tes équipes par poste et par zone. Chacun sait où il est attendu ce soir.\n\nConcrètement : des plannings faits en vingt minutes, pas en deux soirées.\n\nEn savoir plus : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
         "hashtags": [
           "restauration",
           "foodeatup",
@@ -8406,10 +8406,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "multi-postes",
           "équipe & planning restaurant"
         ],
-        "cta": "Voir le tutoriel pas-à-pas"
+        "cta": "Découvrir FoodEatUp"
       },
       "youtube": {
-        "legende": "La check-list du soir. Cochée, horodatée, signée par qui l'a faite.\n\nTu affectes tes équipes par poste et par zone. Chacun sait où il est attendu ce soir.\n\nConcrètement : des plannings faits en vingt minutes, pas en deux soirées.\n\n— — —\n\n📺 Le tutoriel pas-à-pas : https://drive.google.com/file/d/174AfDA9zywpeMof070Mc33_doWgDcsp5/view\n\n📞 Une démo ? 06 14 18 92 25\n🌐 foodeatup.com\n\nSérie « Le Coup de Feu » — saison 3, épisode 71.\nModule Équipe & Planning · Chapitre : Multi-postes\n\nFoodEatUp est le logiciel qui réunit la caisse, le stock, les plannings, l'HACCP et le marketing d'un restaurant au même endroit.\n",
+        "legende": "La check-list du soir. Cochée, horodatée, signée par qui l'a faite.\n\nTu affectes tes équipes par poste et par zone. Chacun sait où il est attendu ce soir.\n\nConcrètement : des plannings faits en vingt minutes, pas en deux soirées.\n\n— — —\n\n🔗 https://site.foodeatup.com/\n\n📞 Une démo ? 06 14 18 92 25\n🌐 foodeatup.com\n\nSérie « Le Coup de Feu » — saison 3, épisode 71.\nModule Équipe & Planning · Chapitre : Multi-postes\n\nFoodEatUp est le logiciel qui réunit la caisse, le stock, les plannings, l'HACCP et le marketing d'un restaurant au même endroit.\n",
         "hashtags": [
           "Shorts",
           "restaurant",
@@ -8429,7 +8429,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "multi-postes",
           "équipe & planning restaurant"
         ],
-        "cta": "Le tutoriel pas-à-pas",
+        "cta": "Découvrir FoodEatUp",
         "titre": "Multi-postes — Équipe & Planning | FoodEatUp"
       }
     },
@@ -8450,7 +8450,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
   "EP072": {
     "publications": {
       "facebook": {
-        "legende": "Contrôle sanitaire. Ce matin. Tout l'historique HACCP, exporté en un clic.\n\nUne absence, et tu vois immédiatement quel service est découvert. Tu remplaces avant l'ouverture.\n\n👉 Le tutoriel complet : https://drive.google.com/file/d/1gY1t4M0AUXTI54sCrB22r7yeiCDe3W35/view\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "legende": "Contrôle sanitaire. Ce matin. Tout l'historique HACCP, exporté en un clic.\n\nUne absence, et tu vois immédiatement quel service est découvert. Tu remplaces avant l'ouverture.\n\n👉 Tout FoodEatUp : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
         "hashtags": [
           "restaurant",
           "restaurateur",
@@ -8467,10 +8467,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "absences",
           "équipe & planning restaurant"
         ],
-        "cta": "Voir le tutoriel complet"
+        "cta": "Découvrir FoodEatUp"
       },
       "instagram": {
-        "legende": "Contrôle sanitaire. Ce matin.\nTout l'historique HACCP, exporté en un clic.\n\nUne absence, et tu vois immédiatement quel service est découvert. Tu remplaces avant l'ouverture.\n\nLe pas-à-pas complet est dans notre Academy — lien en bio.\nUne démo ? 06 14 18 92 25",
+        "legende": "Contrôle sanitaire. Ce matin.\nTout l'historique HACCP, exporté en un clic.\n\nUne absence, et tu vois immédiatement quel service est découvert. Tu remplaces avant l'ouverture.\n\nTout est expliqué sur notre site — lien en bio.\nUne démo ? 06 14 18 92 25",
         "hashtags": [
           "restaurant",
           "restaurateur",
@@ -8492,7 +8492,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "absences",
           "équipe & planning restaurant"
         ],
-        "cta": "Le pas-à-pas est en bio"
+        "cta": "Tout est en bio"
       },
       "tiktok": {
         "legende": "Contrôle sanitaire. Ce matin. 😅\nTout l'historique HACCP, exporté en un clic.\n\nUne absence, et tu vois immédiatement quel service est découvert.",
@@ -8510,10 +8510,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "absences",
           "équipe & planning restaurant"
         ],
-        "cta": "Tuto complet en bio"
+        "cta": "Lien en bio"
       },
       "linkedin": {
-        "legende": "Contrôle sanitaire. Ce matin.\n\nUne absence, et tu vois immédiatement quel service est découvert. Tu remplaces avant l'ouverture.\n\nConcrètement : des plannings faits en vingt minutes, pas en deux soirées.\n\nLe tutoriel pas-à-pas : https://drive.google.com/file/d/1gY1t4M0AUXTI54sCrB22r7yeiCDe3W35/view\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "legende": "Contrôle sanitaire. Ce matin.\n\nUne absence, et tu vois immédiatement quel service est découvert. Tu remplaces avant l'ouverture.\n\nConcrètement : des plannings faits en vingt minutes, pas en deux soirées.\n\nEn savoir plus : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
         "hashtags": [
           "restauration",
           "foodeatup",
@@ -8527,10 +8527,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "absences",
           "équipe & planning restaurant"
         ],
-        "cta": "Voir le tutoriel pas-à-pas"
+        "cta": "Découvrir FoodEatUp"
       },
       "youtube": {
-        "legende": "Contrôle sanitaire. Ce matin. Tout l'historique HACCP, exporté en un clic.\n\nUne absence, et tu vois immédiatement quel service est découvert. Tu remplaces avant l'ouverture.\n\nConcrètement : des plannings faits en vingt minutes, pas en deux soirées.\n\n— — —\n\n📺 Le tutoriel pas-à-pas : https://drive.google.com/file/d/1gY1t4M0AUXTI54sCrB22r7yeiCDe3W35/view\n\n📞 Une démo ? 06 14 18 92 25\n🌐 foodeatup.com\n\nSérie « Le Coup de Feu » — saison 3, épisode 72.\nModule Équipe & Planning · Chapitre : Absences\n\nFoodEatUp est le logiciel qui réunit la caisse, le stock, les plannings, l'HACCP et le marketing d'un restaurant au même endroit.\n",
+        "legende": "Contrôle sanitaire. Ce matin. Tout l'historique HACCP, exporté en un clic.\n\nUne absence, et tu vois immédiatement quel service est découvert. Tu remplaces avant l'ouverture.\n\nConcrètement : des plannings faits en vingt minutes, pas en deux soirées.\n\n— — —\n\n🔗 https://site.foodeatup.com/\n\n📞 Une démo ? 06 14 18 92 25\n🌐 foodeatup.com\n\nSérie « Le Coup de Feu » — saison 3, épisode 72.\nModule Équipe & Planning · Chapitre : Absences\n\nFoodEatUp est le logiciel qui réunit la caisse, le stock, les plannings, l'HACCP et le marketing d'un restaurant au même endroit.\n",
         "hashtags": [
           "Shorts",
           "restaurant",
@@ -8550,7 +8550,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "absences",
           "équipe & planning restaurant"
         ],
-        "cta": "Le tutoriel pas-à-pas",
+        "cta": "Découvrir FoodEatUp",
         "titre": "Absences — Équipe & Planning | FoodEatUp"
       }
     },
@@ -8571,7 +8571,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
   "EP073": {
     "publications": {
       "facebook": {
-        "legende": "Combien tu commandes pour samedi ? Tes ventes le savent. Demande-leur.\n\nTu paramètres ton établissement une fois : horaires, coordonnées, TVA. Tout FoodEatUp s'appuie dessus.\n\n👉 Le tutoriel complet : https://drive.google.com/file/d/1gB8THFEj2zZuPj7UPJ99yXb9yRXsdPwi/view\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "legende": "Combien tu commandes pour samedi ? Tes ventes le savent. Demande-leur.\n\nTu paramètres ton établissement une fois : horaires, coordonnées, TVA. Tout FoodEatUp s'appuie dessus.\n\n👉 Tout FoodEatUp : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
         "hashtags": [
           "restaurant",
           "restaurateur",
@@ -8587,10 +8587,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "établissement",
           "configuration restaurant"
         ],
-        "cta": "Voir le tutoriel complet"
+        "cta": "Découvrir FoodEatUp"
       },
       "instagram": {
-        "legende": "Combien tu commandes pour samedi ?\nTes ventes le savent. Demande-leur.\n\nTu paramètres ton établissement une fois : horaires, coordonnées, TVA. Tout FoodEatUp s'appuie dessus.\n\nLe pas-à-pas complet est dans notre Academy — lien en bio.\nUne démo ? 06 14 18 92 25",
+        "legende": "Combien tu commandes pour samedi ?\nTes ventes le savent. Demande-leur.\n\nTu paramètres ton établissement une fois : horaires, coordonnées, TVA. Tout FoodEatUp s'appuie dessus.\n\nTout est expliqué sur notre site — lien en bio.\nUne démo ? 06 14 18 92 25",
         "hashtags": [
           "restaurant",
           "restaurateur",
@@ -8610,7 +8610,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "établissement",
           "configuration restaurant"
         ],
-        "cta": "Le pas-à-pas est en bio"
+        "cta": "Tout est en bio"
       },
       "tiktok": {
         "legende": "Combien tu commandes pour samedi ? 😅\nTes ventes le savent. Demande-leur.\n\nTu paramètres ton établissement une fois : horaires, coordonnées, TVA.",
@@ -8627,10 +8627,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "établissement",
           "configuration restaurant"
         ],
-        "cta": "Tuto complet en bio"
+        "cta": "Lien en bio"
       },
       "linkedin": {
-        "legende": "Combien tu commandes pour samedi ?\n\nTu paramètres ton établissement une fois : horaires, coordonnées, TVA. Tout FoodEatUp s'appuie dessus.\n\nConcrètement : une seule saisie qui alimente tout le reste.\n\nLe tutoriel pas-à-pas : https://drive.google.com/file/d/1gB8THFEj2zZuPj7UPJ99yXb9yRXsdPwi/view\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "legende": "Combien tu commandes pour samedi ?\n\nTu paramètres ton établissement une fois : horaires, coordonnées, TVA. Tout FoodEatUp s'appuie dessus.\n\nConcrètement : une seule saisie qui alimente tout le reste.\n\nEn savoir plus : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
         "hashtags": [
           "restauration",
           "foodeatup",
@@ -8643,10 +8643,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "établissement",
           "configuration restaurant"
         ],
-        "cta": "Voir le tutoriel pas-à-pas"
+        "cta": "Découvrir FoodEatUp"
       },
       "youtube": {
-        "legende": "Combien tu commandes pour samedi ? Tes ventes le savent. Demande-leur.\n\nTu paramètres ton établissement une fois : horaires, coordonnées, TVA. Tout FoodEatUp s'appuie dessus.\n\nConcrètement : une seule saisie qui alimente tout le reste.\n\n— — —\n\n📺 Le tutoriel pas-à-pas : https://drive.google.com/file/d/1gB8THFEj2zZuPj7UPJ99yXb9yRXsdPwi/view\n\n📞 Une démo ? 06 14 18 92 25\n🌐 foodeatup.com\n\nSérie « Le Coup de Feu » — saison 3, épisode 73.\nModule Configuration · Chapitre : Établissement\n\nFoodEatUp est le logiciel qui réunit la caisse, le stock, les plannings, l'HACCP et le marketing d'un restaurant au même endroit.\n",
+        "legende": "Combien tu commandes pour samedi ? Tes ventes le savent. Demande-leur.\n\nTu paramètres ton établissement une fois : horaires, coordonnées, TVA. Tout FoodEatUp s'appuie dessus.\n\nConcrètement : une seule saisie qui alimente tout le reste.\n\n— — —\n\n🔗 https://site.foodeatup.com/\n\n📞 Une démo ? 06 14 18 92 25\n🌐 foodeatup.com\n\nSérie « Le Coup de Feu » — saison 3, épisode 73.\nModule Configuration · Chapitre : Établissement\n\nFoodEatUp est le logiciel qui réunit la caisse, le stock, les plannings, l'HACCP et le marketing d'un restaurant au même endroit.\n",
         "hashtags": [
           "Shorts",
           "restaurant",
@@ -8664,7 +8664,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "établissement",
           "configuration restaurant"
         ],
-        "cta": "Le tutoriel pas-à-pas",
+        "cta": "Découvrir FoodEatUp",
         "titre": "Établissement — Configuration | FoodEatUp"
       }
     },
@@ -8686,7 +8686,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
   "EP074": {
     "publications": {
       "facebook": {
-        "legende": "Tu as oublié la liste. Elle se construit toute seule. Et elle part au fournisseur.\n\nTes catégories de produits, d'ingrédients et de recettes structurent tout le reste. Cinq minutes qui t'en font gagner cent.\n\n👉 Le tutoriel complet : https://drive.google.com/file/d/17ZDwHrTaTvQmiCmTYBwZnnJo_OLrXzyo/view\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "legende": "Tu as oublié la liste. Elle se construit toute seule. Et elle part au fournisseur.\n\nTes catégories de produits, d'ingrédients et de recettes structurent tout le reste. Cinq minutes qui t'en font gagner cent.\n\n👉 Tout FoodEatUp : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
         "hashtags": [
           "restaurant",
           "restaurateur",
@@ -8702,10 +8702,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "catégories",
           "configuration restaurant"
         ],
-        "cta": "Voir le tutoriel complet"
+        "cta": "Découvrir FoodEatUp"
       },
       "instagram": {
-        "legende": "Tu as oublié la liste.\nElle se construit toute seule. Et elle part au fournisseur.\n\nTes catégories de produits, d'ingrédients et de recettes structurent tout le reste. Cinq minutes qui t'en font gagner cent.\n\nLe pas-à-pas complet est dans notre Academy — lien en bio.\nUne démo ? 06 14 18 92 25",
+        "legende": "Tu as oublié la liste.\nElle se construit toute seule. Et elle part au fournisseur.\n\nTes catégories de produits, d'ingrédients et de recettes structurent tout le reste. Cinq minutes qui t'en font gagner cent.\n\nTout est expliqué sur notre site — lien en bio.\nUne démo ? 06 14 18 92 25",
         "hashtags": [
           "restaurant",
           "restaurateur",
@@ -8725,7 +8725,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "catégories",
           "configuration restaurant"
         ],
-        "cta": "Le pas-à-pas est en bio"
+        "cta": "Tout est en bio"
       },
       "tiktok": {
         "legende": "Tu as oublié la liste. 😅\nElle se construit toute seule. Et elle part au fournisseur.\n\nTes catégories de produits, d'ingrédients et de recettes structurent tout le reste.",
@@ -8742,10 +8742,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "catégories",
           "configuration restaurant"
         ],
-        "cta": "Tuto complet en bio"
+        "cta": "Lien en bio"
       },
       "linkedin": {
-        "legende": "Tu as oublié la liste.\n\nTes catégories de produits, d'ingrédients et de recettes structurent tout le reste. Cinq minutes qui t'en font gagner cent.\n\nConcrètement : une seule saisie qui alimente tout le reste.\n\nLe tutoriel pas-à-pas : https://drive.google.com/file/d/17ZDwHrTaTvQmiCmTYBwZnnJo_OLrXzyo/view\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "legende": "Tu as oublié la liste.\n\nTes catégories de produits, d'ingrédients et de recettes structurent tout le reste. Cinq minutes qui t'en font gagner cent.\n\nConcrètement : une seule saisie qui alimente tout le reste.\n\nEn savoir plus : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
         "hashtags": [
           "restauration",
           "foodeatup",
@@ -8758,10 +8758,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "catégories",
           "configuration restaurant"
         ],
-        "cta": "Voir le tutoriel pas-à-pas"
+        "cta": "Découvrir FoodEatUp"
       },
       "youtube": {
-        "legende": "Tu as oublié la liste. Elle se construit toute seule. Et elle part au fournisseur.\n\nTes catégories de produits, d'ingrédients et de recettes structurent tout le reste. Cinq minutes qui t'en font gagner cent.\n\nConcrètement : une seule saisie qui alimente tout le reste.\n\n— — —\n\n📺 Le tutoriel pas-à-pas : https://drive.google.com/file/d/17ZDwHrTaTvQmiCmTYBwZnnJo_OLrXzyo/view\n\n📞 Une démo ? 06 14 18 92 25\n🌐 foodeatup.com\n\nSérie « Le Coup de Feu » — saison 3, épisode 74.\nModule Configuration · Chapitre : Catégories\n\nFoodEatUp est le logiciel qui réunit la caisse, le stock, les plannings, l'HACCP et le marketing d'un restaurant au même endroit.\n",
+        "legende": "Tu as oublié la liste. Elle se construit toute seule. Et elle part au fournisseur.\n\nTes catégories de produits, d'ingrédients et de recettes structurent tout le reste. Cinq minutes qui t'en font gagner cent.\n\nConcrètement : une seule saisie qui alimente tout le reste.\n\n— — —\n\n🔗 https://site.foodeatup.com/\n\n📞 Une démo ? 06 14 18 92 25\n🌐 foodeatup.com\n\nSérie « Le Coup de Feu » — saison 3, épisode 74.\nModule Configuration · Chapitre : Catégories\n\nFoodEatUp est le logiciel qui réunit la caisse, le stock, les plannings, l'HACCP et le marketing d'un restaurant au même endroit.\n",
         "hashtags": [
           "Shorts",
           "restaurant",
@@ -8779,7 +8779,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "catégories",
           "configuration restaurant"
         ],
-        "cta": "Le tutoriel pas-à-pas",
+        "cta": "Découvrir FoodEatUp",
         "titre": "Catégories — Configuration | FoodEatUp"
       }
     },
@@ -8800,7 +8800,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
   "EP075": {
     "publications": {
       "facebook": {
-        "legende": "Ta facture fournisseur. Photographie-la. Les prix se mettent à jour seuls.\n\nTes taux de TVA sont posés une fois, appliqués partout : caisse, factures, comptabilité.\n\n👉 Le tutoriel complet : https://drive.google.com/file/d/1_cZ3_hXyP6JA3IdvyXCg9AT0bTprgi5P/view\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "legende": "Ta facture fournisseur. Photographie-la. Les prix se mettent à jour seuls.\n\nTes taux de TVA sont posés une fois, appliqués partout : caisse, factures, comptabilité.\n\n👉 Tout FoodEatUp : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
         "hashtags": [
           "restaurant",
           "restaurateur",
@@ -8816,10 +8816,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "tva",
           "configuration restaurant"
         ],
-        "cta": "Voir le tutoriel complet"
+        "cta": "Découvrir FoodEatUp"
       },
       "instagram": {
-        "legende": "Ta facture fournisseur.\nPhotographie-la. Les prix se mettent à jour seuls.\n\nTes taux de TVA sont posés une fois, appliqués partout : caisse, factures, comptabilité.\n\nLe pas-à-pas complet est dans notre Academy — lien en bio.\nUne démo ? 06 14 18 92 25",
+        "legende": "Ta facture fournisseur.\nPhotographie-la. Les prix se mettent à jour seuls.\n\nTes taux de TVA sont posés une fois, appliqués partout : caisse, factures, comptabilité.\n\nTout est expliqué sur notre site — lien en bio.\nUne démo ? 06 14 18 92 25",
         "hashtags": [
           "restaurant",
           "restaurateur",
@@ -8839,7 +8839,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "tva",
           "configuration restaurant"
         ],
-        "cta": "Le pas-à-pas est en bio"
+        "cta": "Tout est en bio"
       },
       "tiktok": {
         "legende": "Ta facture fournisseur. 😅\nPhotographie-la. Les prix se mettent à jour seuls.\n\nTes taux de TVA sont posés une fois, appliqués partout : caisse, factures, comptabilité.",
@@ -8856,10 +8856,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "tva",
           "configuration restaurant"
         ],
-        "cta": "Tuto complet en bio"
+        "cta": "Lien en bio"
       },
       "linkedin": {
-        "legende": "Ta facture fournisseur.\n\nTes taux de TVA sont posés une fois, appliqués partout : caisse, factures, comptabilité.\n\nConcrètement : une seule saisie qui alimente tout le reste.\n\nLe tutoriel pas-à-pas : https://drive.google.com/file/d/1_cZ3_hXyP6JA3IdvyXCg9AT0bTprgi5P/view\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "legende": "Ta facture fournisseur.\n\nTes taux de TVA sont posés une fois, appliqués partout : caisse, factures, comptabilité.\n\nConcrètement : une seule saisie qui alimente tout le reste.\n\nEn savoir plus : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
         "hashtags": [
           "restauration",
           "foodeatup",
@@ -8872,10 +8872,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "tva",
           "configuration restaurant"
         ],
-        "cta": "Voir le tutoriel pas-à-pas"
+        "cta": "Découvrir FoodEatUp"
       },
       "youtube": {
-        "legende": "Ta facture fournisseur. Photographie-la. Les prix se mettent à jour seuls.\n\nTes taux de TVA sont posés une fois, appliqués partout : caisse, factures, comptabilité.\n\nConcrètement : une seule saisie qui alimente tout le reste.\n\n— — —\n\n📺 Le tutoriel pas-à-pas : https://drive.google.com/file/d/1_cZ3_hXyP6JA3IdvyXCg9AT0bTprgi5P/view\n\n📞 Une démo ? 06 14 18 92 25\n🌐 foodeatup.com\n\nSérie « Le Coup de Feu » — saison 3, épisode 75.\nModule Configuration · Chapitre : TVA\n\nFoodEatUp est le logiciel qui réunit la caisse, le stock, les plannings, l'HACCP et le marketing d'un restaurant au même endroit.\n",
+        "legende": "Ta facture fournisseur. Photographie-la. Les prix se mettent à jour seuls.\n\nTes taux de TVA sont posés une fois, appliqués partout : caisse, factures, comptabilité.\n\nConcrètement : une seule saisie qui alimente tout le reste.\n\n— — —\n\n🔗 https://site.foodeatup.com/\n\n📞 Une démo ? 06 14 18 92 25\n🌐 foodeatup.com\n\nSérie « Le Coup de Feu » — saison 3, épisode 75.\nModule Configuration · Chapitre : TVA\n\nFoodEatUp est le logiciel qui réunit la caisse, le stock, les plannings, l'HACCP et le marketing d'un restaurant au même endroit.\n",
         "hashtags": [
           "Shorts",
           "restaurant",
@@ -8893,7 +8893,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "tva",
           "configuration restaurant"
         ],
-        "cta": "Le tutoriel pas-à-pas",
+        "cta": "Découvrir FoodEatUp",
         "titre": "TVA — Configuration | FoodEatUp"
       }
     },
@@ -8914,7 +8914,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
   "EP076": {
     "publications": {
       "facebook": {
-        "legende": "Ton inventaire du mardi. La production sort les ingrédients du stock. Automatiquement.\n\nTu dessines ta salle : zones, tables, capacités. Ton plan de salle devient vivant pendant le service.\n\n👉 Le tutoriel complet : https://drive.google.com/file/d/1tmPsD8uYQ5KAWQ1aVBqta0OAq7FpOMWC/view\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "legende": "Ton inventaire du mardi. La production sort les ingrédients du stock. Automatiquement.\n\nTu dessines ta salle : zones, tables, capacités. Ton plan de salle devient vivant pendant le service.\n\n👉 Tout FoodEatUp : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
         "hashtags": [
           "restaurant",
           "restaurateur",
@@ -8930,10 +8930,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "zones et tables",
           "configuration restaurant"
         ],
-        "cta": "Voir le tutoriel complet"
+        "cta": "Découvrir FoodEatUp"
       },
       "instagram": {
-        "legende": "Ton inventaire du mardi.\nLa production sort les ingrédients du stock. Automatiquement.\n\nTu dessines ta salle : zones, tables, capacités. Ton plan de salle devient vivant pendant le service.\n\nLe pas-à-pas complet est dans notre Academy — lien en bio.\nUne démo ? 06 14 18 92 25",
+        "legende": "Ton inventaire du mardi.\nLa production sort les ingrédients du stock. Automatiquement.\n\nTu dessines ta salle : zones, tables, capacités. Ton plan de salle devient vivant pendant le service.\n\nTout est expliqué sur notre site — lien en bio.\nUne démo ? 06 14 18 92 25",
         "hashtags": [
           "restaurant",
           "restaurateur",
@@ -8953,7 +8953,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "zones et tables",
           "configuration restaurant"
         ],
-        "cta": "Le pas-à-pas est en bio"
+        "cta": "Tout est en bio"
       },
       "tiktok": {
         "legende": "Ton inventaire du mardi. 😅\nLa production sort les ingrédients du stock. Automatiquement.\n\nTu dessines ta salle : zones, tables, capacités.",
@@ -8970,10 +8970,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "zones et tables",
           "configuration restaurant"
         ],
-        "cta": "Tuto complet en bio"
+        "cta": "Lien en bio"
       },
       "linkedin": {
-        "legende": "Ton inventaire du mardi.\n\nTu dessines ta salle : zones, tables, capacités. Ton plan de salle devient vivant pendant le service.\n\nConcrètement : une seule saisie qui alimente tout le reste.\n\nLe tutoriel pas-à-pas : https://drive.google.com/file/d/1tmPsD8uYQ5KAWQ1aVBqta0OAq7FpOMWC/view\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "legende": "Ton inventaire du mardi.\n\nTu dessines ta salle : zones, tables, capacités. Ton plan de salle devient vivant pendant le service.\n\nConcrètement : une seule saisie qui alimente tout le reste.\n\nEn savoir plus : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
         "hashtags": [
           "restauration",
           "foodeatup",
@@ -8986,10 +8986,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "zones et tables",
           "configuration restaurant"
         ],
-        "cta": "Voir le tutoriel pas-à-pas"
+        "cta": "Découvrir FoodEatUp"
       },
       "youtube": {
-        "legende": "Ton inventaire du mardi. La production sort les ingrédients du stock. Automatiquement.\n\nTu dessines ta salle : zones, tables, capacités. Ton plan de salle devient vivant pendant le service.\n\nConcrètement : une seule saisie qui alimente tout le reste.\n\n— — —\n\n📺 Le tutoriel pas-à-pas : https://drive.google.com/file/d/1tmPsD8uYQ5KAWQ1aVBqta0OAq7FpOMWC/view\n\n📞 Une démo ? 06 14 18 92 25\n🌐 foodeatup.com\n\nSérie « Le Coup de Feu » — saison 3, épisode 76.\nModule Configuration · Chapitre : Zones et tables\n\nFoodEatUp est le logiciel qui réunit la caisse, le stock, les plannings, l'HACCP et le marketing d'un restaurant au même endroit.\n",
+        "legende": "Ton inventaire du mardi. La production sort les ingrédients du stock. Automatiquement.\n\nTu dessines ta salle : zones, tables, capacités. Ton plan de salle devient vivant pendant le service.\n\nConcrètement : une seule saisie qui alimente tout le reste.\n\n— — —\n\n🔗 https://site.foodeatup.com/\n\n📞 Une démo ? 06 14 18 92 25\n🌐 foodeatup.com\n\nSérie « Le Coup de Feu » — saison 3, épisode 76.\nModule Configuration · Chapitre : Zones et tables\n\nFoodEatUp est le logiciel qui réunit la caisse, le stock, les plannings, l'HACCP et le marketing d'un restaurant au même endroit.\n",
         "hashtags": [
           "Shorts",
           "restaurant",
@@ -9007,7 +9007,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "zones et tables",
           "configuration restaurant"
         ],
-        "cta": "Le tutoriel pas-à-pas",
+        "cta": "Découvrir FoodEatUp",
         "titre": "Zones et tables — Configuration | FoodEatUp"
       }
     },
@@ -9028,7 +9028,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
   "EP077": {
     "publications": {
       "facebook": {
-        "legende": "Ton devis pour le mariage de samedi. Devis, envoi, acceptation, facture. Une seule chaîne.\n\nTu déclares tes équipements et leurs seuils. Ils remontent ensuite dans ton suivi HACCP.\n\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "legende": "Ton devis pour le mariage de samedi. Devis, envoi, acceptation, facture. Une seule chaîne.\n\nTu déclares tes équipements et leurs seuils. Ils remontent ensuite dans ton suivi HACCP.\n\n👉 Tout FoodEatUp : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
         "hashtags": [
           "restaurant",
           "restaurateur",
@@ -9044,10 +9044,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "équipements",
           "configuration restaurant"
         ],
-        "cta": "Demander une démo"
+        "cta": "Découvrir FoodEatUp"
       },
       "instagram": {
-        "legende": "Ton devis pour le mariage de samedi.\nDevis, envoi, acceptation, facture. Une seule chaîne.\n\nTu déclares tes équipements et leurs seuils. Ils remontent ensuite dans ton suivi HACCP.\n\nLe pas-à-pas complet est dans notre Academy — lien en bio.\nUne démo ? 06 14 18 92 25",
+        "legende": "Ton devis pour le mariage de samedi.\nDevis, envoi, acceptation, facture. Une seule chaîne.\n\nTu déclares tes équipements et leurs seuils. Ils remontent ensuite dans ton suivi HACCP.\n\nTout est expliqué sur notre site — lien en bio.\nUne démo ? 06 14 18 92 25",
         "hashtags": [
           "restaurant",
           "restaurateur",
@@ -9067,7 +9067,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "équipements",
           "configuration restaurant"
         ],
-        "cta": "Demander une démo"
+        "cta": "Tout est en bio"
       },
       "tiktok": {
         "legende": "Ton devis pour le mariage de samedi. 😅\nDevis, envoi, acceptation, facture. Une seule chaîne.\n\nTu déclares tes équipements et leurs seuils.",
@@ -9084,10 +9084,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "équipements",
           "configuration restaurant"
         ],
-        "cta": "Demander une démo"
+        "cta": "Lien en bio"
       },
       "linkedin": {
-        "legende": "Ton devis pour le mariage de samedi.\n\nTu déclares tes équipements et leurs seuils. Ils remontent ensuite dans ton suivi HACCP.\n\nConcrètement : une seule saisie qui alimente tout le reste.\n\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "legende": "Ton devis pour le mariage de samedi.\n\nTu déclares tes équipements et leurs seuils. Ils remontent ensuite dans ton suivi HACCP.\n\nConcrètement : une seule saisie qui alimente tout le reste.\n\nEn savoir plus : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
         "hashtags": [
           "restauration",
           "foodeatup",
@@ -9100,10 +9100,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "équipements",
           "configuration restaurant"
         ],
-        "cta": "Demander une démo"
+        "cta": "Découvrir FoodEatUp"
       },
       "youtube": {
-        "legende": "Ton devis pour le mariage de samedi. Devis, envoi, acceptation, facture. Une seule chaîne.\n\nTu déclares tes équipements et leurs seuils. Ils remontent ensuite dans ton suivi HACCP.\n\nConcrètement : une seule saisie qui alimente tout le reste.\n\n— — —\n\n📞 Une démo ? 06 14 18 92 25\n🌐 foodeatup.com\n\nSérie « Le Coup de Feu » — saison 3, épisode 77.\nModule Configuration · Chapitre : Équipements\n\nFoodEatUp est le logiciel qui réunit la caisse, le stock, les plannings, l'HACCP et le marketing d'un restaurant au même endroit.\n",
+        "legende": "Ton devis pour le mariage de samedi. Devis, envoi, acceptation, facture. Une seule chaîne.\n\nTu déclares tes équipements et leurs seuils. Ils remontent ensuite dans ton suivi HACCP.\n\nConcrètement : une seule saisie qui alimente tout le reste.\n\n— — —\n\n🔗 https://site.foodeatup.com/\n\n📞 Une démo ? 06 14 18 92 25\n🌐 foodeatup.com\n\nSérie « Le Coup de Feu » — saison 3, épisode 77.\nModule Configuration · Chapitre : Équipements\n\nFoodEatUp est le logiciel qui réunit la caisse, le stock, les plannings, l'HACCP et le marketing d'un restaurant au même endroit.\n",
         "hashtags": [
           "Shorts",
           "restaurant",
@@ -9121,7 +9121,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "équipements",
           "configuration restaurant"
         ],
-        "cta": "Demander une démo",
+        "cta": "Découvrir FoodEatUp",
         "titre": "Équipements — Configuration | FoodEatUp"
       }
     },
@@ -9143,7 +9143,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
   "EP078": {
     "publications": {
       "facebook": {
-        "legende": "Ta comptabilité annuelle. Chaque dépense rattachée à sa livraison. Toute l'année.\n\nChaque membre de l'équipe a son accès et ses droits. Tout le monde ne voit pas la compta.\n\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "legende": "Ta comptabilité annuelle. Chaque dépense rattachée à sa livraison. Toute l'année.\n\nChaque membre de l'équipe a son accès et ses droits. Tout le monde ne voit pas la compta.\n\n👉 Tout FoodEatUp : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
         "hashtags": [
           "restaurant",
           "restaurateur",
@@ -9159,10 +9159,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "utilisateurs",
           "configuration restaurant"
         ],
-        "cta": "Demander une démo"
+        "cta": "Découvrir FoodEatUp"
       },
       "instagram": {
-        "legende": "Ta comptabilité annuelle.\nChaque dépense rattachée à sa livraison. Toute l'année.\n\nChaque membre de l'équipe a son accès et ses droits. Tout le monde ne voit pas la compta.\n\nLe pas-à-pas complet est dans notre Academy — lien en bio.\nUne démo ? 06 14 18 92 25",
+        "legende": "Ta comptabilité annuelle.\nChaque dépense rattachée à sa livraison. Toute l'année.\n\nChaque membre de l'équipe a son accès et ses droits. Tout le monde ne voit pas la compta.\n\nTout est expliqué sur notre site — lien en bio.\nUne démo ? 06 14 18 92 25",
         "hashtags": [
           "restaurant",
           "restaurateur",
@@ -9182,7 +9182,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "utilisateurs",
           "configuration restaurant"
         ],
-        "cta": "Demander une démo"
+        "cta": "Tout est en bio"
       },
       "tiktok": {
         "legende": "Ta comptabilité annuelle. 😅\nChaque dépense rattachée à sa livraison. Toute l'année.\n\nChaque membre de l'équipe a son accès et ses droits.",
@@ -9199,10 +9199,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "utilisateurs",
           "configuration restaurant"
         ],
-        "cta": "Demander une démo"
+        "cta": "Lien en bio"
       },
       "linkedin": {
-        "legende": "Ta comptabilité annuelle.\n\nChaque membre de l'équipe a son accès et ses droits. Tout le monde ne voit pas la compta.\n\nConcrètement : une seule saisie qui alimente tout le reste.\n\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "legende": "Ta comptabilité annuelle.\n\nChaque membre de l'équipe a son accès et ses droits. Tout le monde ne voit pas la compta.\n\nConcrètement : une seule saisie qui alimente tout le reste.\n\nEn savoir plus : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
         "hashtags": [
           "restauration",
           "foodeatup",
@@ -9215,10 +9215,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "utilisateurs",
           "configuration restaurant"
         ],
-        "cta": "Demander une démo"
+        "cta": "Découvrir FoodEatUp"
       },
       "youtube": {
-        "legende": "Ta comptabilité annuelle. Chaque dépense rattachée à sa livraison. Toute l'année.\n\nChaque membre de l'équipe a son accès et ses droits. Tout le monde ne voit pas la compta.\n\nConcrètement : une seule saisie qui alimente tout le reste.\n\n— — —\n\n📞 Une démo ? 06 14 18 92 25\n🌐 foodeatup.com\n\nSérie « Le Coup de Feu » — saison 3, épisode 78.\nModule Configuration · Chapitre : Utilisateurs\n\nFoodEatUp est le logiciel qui réunit la caisse, le stock, les plannings, l'HACCP et le marketing d'un restaurant au même endroit.\n",
+        "legende": "Ta comptabilité annuelle. Chaque dépense rattachée à sa livraison. Toute l'année.\n\nChaque membre de l'équipe a son accès et ses droits. Tout le monde ne voit pas la compta.\n\nConcrètement : une seule saisie qui alimente tout le reste.\n\n— — —\n\n🔗 https://site.foodeatup.com/\n\n📞 Une démo ? 06 14 18 92 25\n🌐 foodeatup.com\n\nSérie « Le Coup de Feu » — saison 3, épisode 78.\nModule Configuration · Chapitre : Utilisateurs\n\nFoodEatUp est le logiciel qui réunit la caisse, le stock, les plannings, l'HACCP et le marketing d'un restaurant au même endroit.\n",
         "hashtags": [
           "Shorts",
           "restaurant",
@@ -9236,7 +9236,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "utilisateurs",
           "configuration restaurant"
         ],
-        "cta": "Demander une démo",
+        "cta": "Découvrir FoodEatUp",
         "titre": "Utilisateurs — Configuration | FoodEatUp"
       }
     },
@@ -9257,7 +9257,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
   "EP079": {
     "publications": {
       "facebook": {
-        "legende": "Ton programme de fidélité. Un compte, tous les canaux, zéro carton.\n\nTu importes ta carte entière en un appel : catégories, sous-catégories, plats, prix.\n\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "legende": "Ton programme de fidélité. Un compte, tous les canaux, zéro carton.\n\nTu importes ta carte entière en un appel : catégories, sous-catégories, plats, prix.\n\n👉 Tout FoodEatUp : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
         "hashtags": [
           "restaurant",
           "restaurateur",
@@ -9273,10 +9273,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "import de carte",
           "configuration restaurant"
         ],
-        "cta": "Demander une démo"
+        "cta": "Découvrir FoodEatUp"
       },
       "instagram": {
-        "legende": "Ton programme de fidélité.\nUn compte, tous les canaux, zéro carton.\n\nTu importes ta carte entière en un appel : catégories, sous-catégories, plats, prix.\n\nLe pas-à-pas complet est dans notre Academy — lien en bio.\nUne démo ? 06 14 18 92 25",
+        "legende": "Ton programme de fidélité.\nUn compte, tous les canaux, zéro carton.\n\nTu importes ta carte entière en un appel : catégories, sous-catégories, plats, prix.\n\nTout est expliqué sur notre site — lien en bio.\nUne démo ? 06 14 18 92 25",
         "hashtags": [
           "restaurant",
           "restaurateur",
@@ -9296,7 +9296,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "import de carte",
           "configuration restaurant"
         ],
-        "cta": "Demander une démo"
+        "cta": "Tout est en bio"
       },
       "tiktok": {
         "legende": "Ton programme de fidélité. 😅\nUn compte, tous les canaux, zéro carton.\n\nTu importes ta carte entière en un appel : catégories, sous-catégories, plats, prix.",
@@ -9313,10 +9313,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "import de carte",
           "configuration restaurant"
         ],
-        "cta": "Demander une démo"
+        "cta": "Lien en bio"
       },
       "linkedin": {
-        "legende": "Ton programme de fidélité.\n\nTu importes ta carte entière en un appel : catégories, sous-catégories, plats, prix.\n\nConcrètement : une seule saisie qui alimente tout le reste.\n\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "legende": "Ton programme de fidélité.\n\nTu importes ta carte entière en un appel : catégories, sous-catégories, plats, prix.\n\nConcrètement : une seule saisie qui alimente tout le reste.\n\nEn savoir plus : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
         "hashtags": [
           "restauration",
           "foodeatup",
@@ -9329,10 +9329,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "import de carte",
           "configuration restaurant"
         ],
-        "cta": "Demander une démo"
+        "cta": "Découvrir FoodEatUp"
       },
       "youtube": {
-        "legende": "Ton programme de fidélité. Un compte, tous les canaux, zéro carton.\n\nTu importes ta carte entière en un appel : catégories, sous-catégories, plats, prix.\n\nConcrètement : une seule saisie qui alimente tout le reste.\n\n— — —\n\n📞 Une démo ? 06 14 18 92 25\n🌐 foodeatup.com\n\nSérie « Le Coup de Feu » — saison 3, épisode 79.\nModule Configuration · Chapitre : Import de carte\n\nFoodEatUp est le logiciel qui réunit la caisse, le stock, les plannings, l'HACCP et le marketing d'un restaurant au même endroit.\n",
+        "legende": "Ton programme de fidélité. Un compte, tous les canaux, zéro carton.\n\nTu importes ta carte entière en un appel : catégories, sous-catégories, plats, prix.\n\nConcrètement : une seule saisie qui alimente tout le reste.\n\n— — —\n\n🔗 https://site.foodeatup.com/\n\n📞 Une démo ? 06 14 18 92 25\n🌐 foodeatup.com\n\nSérie « Le Coup de Feu » — saison 3, épisode 79.\nModule Configuration · Chapitre : Import de carte\n\nFoodEatUp est le logiciel qui réunit la caisse, le stock, les plannings, l'HACCP et le marketing d'un restaurant au même endroit.\n",
         "hashtags": [
           "Shorts",
           "restaurant",
@@ -9350,7 +9350,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "import de carte",
           "configuration restaurant"
         ],
-        "cta": "Demander une démo",
+        "cta": "Découvrir FoodEatUp",
         "titre": "Import de carte — Configuration | FoodEatUp"
       }
     },
@@ -9371,7 +9371,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
   "EP080": {
     "publications": {
       "facebook": {
-        "legende": "Ouverture. Fond de caisse : ? Fond déclaré, opérateur identifié, service ouvert.\n\nTu vois ton plan, tes options actives et ce que tu consommes. Aucune ligne surprise en fin de mois.\n\n👉 Le tutoriel complet : https://drive.google.com/file/d/1k2HJJNz5jMR0jbV-Sr-u_p-ZGdWBmspG/view\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "legende": "Ouverture. Fond de caisse : ? Fond déclaré, opérateur identifié, service ouvert.\n\nTu vois ton plan, tes options actives et ce que tu consommes. Aucune ligne surprise en fin de mois.\n\n👉 Tout FoodEatUp : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
         "hashtags": [
           "restaurant",
           "restaurateur",
@@ -9387,10 +9387,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "abonnement",
           "configuration restaurant"
         ],
-        "cta": "Voir le tutoriel complet"
+        "cta": "Découvrir FoodEatUp"
       },
       "instagram": {
-        "legende": "Ouverture. Fond de caisse : ?\nFond déclaré, opérateur identifié, service ouvert.\n\nTu vois ton plan, tes options actives et ce que tu consommes. Aucune ligne surprise en fin de mois.\n\nLe pas-à-pas complet est dans notre Academy — lien en bio.\nUne démo ? 06 14 18 92 25",
+        "legende": "Ouverture. Fond de caisse : ?\nFond déclaré, opérateur identifié, service ouvert.\n\nTu vois ton plan, tes options actives et ce que tu consommes. Aucune ligne surprise en fin de mois.\n\nTout est expliqué sur notre site — lien en bio.\nUne démo ? 06 14 18 92 25",
         "hashtags": [
           "restaurant",
           "restaurateur",
@@ -9410,7 +9410,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "abonnement",
           "configuration restaurant"
         ],
-        "cta": "Le pas-à-pas est en bio"
+        "cta": "Tout est en bio"
       },
       "tiktok": {
         "legende": "Ouverture. Fond de caisse : ? 😅\nFond déclaré, opérateur identifié, service ouvert.\n\nTu vois ton plan, tes options actives et ce que tu consommes.",
@@ -9427,10 +9427,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "abonnement",
           "configuration restaurant"
         ],
-        "cta": "Tuto complet en bio"
+        "cta": "Lien en bio"
       },
       "linkedin": {
-        "legende": "Ouverture. Fond de caisse : ?\n\nTu vois ton plan, tes options actives et ce que tu consommes. Aucune ligne surprise en fin de mois.\n\nConcrètement : une seule saisie qui alimente tout le reste.\n\nLe tutoriel pas-à-pas : https://drive.google.com/file/d/1k2HJJNz5jMR0jbV-Sr-u_p-ZGdWBmspG/view\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "legende": "Ouverture. Fond de caisse : ?\n\nTu vois ton plan, tes options actives et ce que tu consommes. Aucune ligne surprise en fin de mois.\n\nConcrètement : une seule saisie qui alimente tout le reste.\n\nEn savoir plus : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
         "hashtags": [
           "restauration",
           "foodeatup",
@@ -9443,10 +9443,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "abonnement",
           "configuration restaurant"
         ],
-        "cta": "Voir le tutoriel pas-à-pas"
+        "cta": "Découvrir FoodEatUp"
       },
       "youtube": {
-        "legende": "Ouverture. Fond de caisse : ? Fond déclaré, opérateur identifié, service ouvert.\n\nTu vois ton plan, tes options actives et ce que tu consommes. Aucune ligne surprise en fin de mois.\n\nConcrètement : une seule saisie qui alimente tout le reste.\n\n— — —\n\n📺 Le tutoriel pas-à-pas : https://drive.google.com/file/d/1k2HJJNz5jMR0jbV-Sr-u_p-ZGdWBmspG/view\n\n📞 Une démo ? 06 14 18 92 25\n🌐 foodeatup.com\n\nSérie « Le Coup de Feu » — saison 3, épisode 80.\nModule Configuration · Chapitre : Abonnement\n\nFoodEatUp est le logiciel qui réunit la caisse, le stock, les plannings, l'HACCP et le marketing d'un restaurant au même endroit.\n",
+        "legende": "Ouverture. Fond de caisse : ? Fond déclaré, opérateur identifié, service ouvert.\n\nTu vois ton plan, tes options actives et ce que tu consommes. Aucune ligne surprise en fin de mois.\n\nConcrètement : une seule saisie qui alimente tout le reste.\n\n— — —\n\n🔗 https://site.foodeatup.com/\n\n📞 Une démo ? 06 14 18 92 25\n🌐 foodeatup.com\n\nSérie « Le Coup de Feu » — saison 3, épisode 80.\nModule Configuration · Chapitre : Abonnement\n\nFoodEatUp est le logiciel qui réunit la caisse, le stock, les plannings, l'HACCP et le marketing d'un restaurant au même endroit.\n",
         "hashtags": [
           "Shorts",
           "restaurant",
@@ -9464,7 +9464,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "abonnement",
           "configuration restaurant"
         ],
-        "cta": "Le tutoriel pas-à-pas",
+        "cta": "Découvrir FoodEatUp",
         "titre": "Abonnement — Configuration | FoodEatUp"
       }
     },
@@ -9486,7 +9486,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
   "EP081": {
     "publications": {
       "facebook": {
-        "legende": "On peut séparer ? Oui. Par personne, par article, par montant.\n\nChaque commande produit sa facture, numérotée et conforme. Tu ne la ressaisis nulle part.\n\n👉 Le tutoriel complet : https://drive.google.com/file/d/1bN_o6_HYz9Za1kGyIst6INWrJJz9MagE/view\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "legende": "On peut séparer ? Oui. Par personne, par article, par montant.\n\nChaque commande produit sa facture, numérotée et conforme. Tu ne la ressaisis nulle part.\n\n👉 Tout FoodEatUp : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
         "hashtags": [
           "restaurant",
           "restaurateur",
@@ -9502,10 +9502,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "rentabilité",
           "factures"
         ],
-        "cta": "Voir le tutoriel complet"
+        "cta": "Découvrir FoodEatUp"
       },
       "instagram": {
-        "legende": "On peut séparer ?\nOui. Par personne, par article, par montant.\n\nChaque commande produit sa facture, numérotée et conforme. Tu ne la ressaisis nulle part.\n\nLe pas-à-pas complet est dans notre Academy — lien en bio.\nUne démo ? 06 14 18 92 25",
+        "legende": "On peut séparer ?\nOui. Par personne, par article, par montant.\n\nChaque commande produit sa facture, numérotée et conforme. Tu ne la ressaisis nulle part.\n\nTout est expliqué sur notre site — lien en bio.\nUne démo ? 06 14 18 92 25",
         "hashtags": [
           "restaurant",
           "restaurateur",
@@ -9526,7 +9526,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "rentabilité",
           "factures"
         ],
-        "cta": "Le pas-à-pas est en bio"
+        "cta": "Tout est en bio"
       },
       "tiktok": {
         "legende": "On peut séparer ? 😅\nOui. Par personne, par article, par montant.\n\nChaque commande produit sa facture, numérotée et conforme.",
@@ -9543,10 +9543,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "rentabilité",
           "factures"
         ],
-        "cta": "Tuto complet en bio"
+        "cta": "Lien en bio"
       },
       "linkedin": {
-        "legende": "On peut séparer ?\n\nChaque commande produit sa facture, numérotée et conforme. Tu ne la ressaisis nulle part.\n\nConcrètement : des chiffres à jour sans ressaisir une ligne.\n\nLe tutoriel pas-à-pas : https://drive.google.com/file/d/1bN_o6_HYz9Za1kGyIst6INWrJJz9MagE/view\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "legende": "On peut séparer ?\n\nChaque commande produit sa facture, numérotée et conforme. Tu ne la ressaisis nulle part.\n\nConcrètement : des chiffres à jour sans ressaisir une ligne.\n\nEn savoir plus : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
         "hashtags": [
           "restauration",
           "foodeatup",
@@ -9559,10 +9559,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "rentabilité",
           "factures"
         ],
-        "cta": "Voir le tutoriel pas-à-pas"
+        "cta": "Découvrir FoodEatUp"
       },
       "youtube": {
-        "legende": "On peut séparer ? Oui. Par personne, par article, par montant.\n\nChaque commande produit sa facture, numérotée et conforme. Tu ne la ressaisis nulle part.\n\nConcrètement : des chiffres à jour sans ressaisir une ligne.\n\n— — —\n\n📺 Le tutoriel pas-à-pas : https://drive.google.com/file/d/1bN_o6_HYz9Za1kGyIst6INWrJJz9MagE/view\n\n📞 Une démo ? 06 14 18 92 25\n🌐 foodeatup.com\n\nSérie « Le Coup de Feu » — saison 3, épisode 81.\nModule Comptabilité · Chapitre : Factures\n\nFoodEatUp est le logiciel qui réunit la caisse, le stock, les plannings, l'HACCP et le marketing d'un restaurant au même endroit.\n",
+        "legende": "On peut séparer ? Oui. Par personne, par article, par montant.\n\nChaque commande produit sa facture, numérotée et conforme. Tu ne la ressaisis nulle part.\n\nConcrètement : des chiffres à jour sans ressaisir une ligne.\n\n— — —\n\n🔗 https://site.foodeatup.com/\n\n📞 Une démo ? 06 14 18 92 25\n🌐 foodeatup.com\n\nSérie « Le Coup de Feu » — saison 3, épisode 81.\nModule Comptabilité · Chapitre : Factures\n\nFoodEatUp est le logiciel qui réunit la caisse, le stock, les plannings, l'HACCP et le marketing d'un restaurant au même endroit.\n",
         "hashtags": [
           "Shorts",
           "restaurant",
@@ -9581,7 +9581,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "rentabilité",
           "factures"
         ],
-        "cta": "Le tutoriel pas-à-pas",
+        "cta": "Découvrir FoodEatUp",
         "titre": "Factures — Comptabilité | FoodEatUp"
       }
     },
@@ -9604,7 +9604,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
   "EP082": {
     "publications": {
       "facebook": {
-        "legende": "Il manque un centime. Le Z calcule l'écart. Toi, tu rentres chez toi.\n\nUn devis pour un groupe se crée en deux minutes et se transforme en commande quand il est accepté.\n\n👉 Le tutoriel complet : https://drive.google.com/file/d/1LRxi9R1Sbj1sQ0Cg4RZhpE_cxZHygksu/view\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "legende": "Il manque un centime. Le Z calcule l'écart. Toi, tu rentres chez toi.\n\nUn devis pour un groupe se crée en deux minutes et se transforme en commande quand il est accepté.\n\n👉 Tout FoodEatUp : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
         "hashtags": [
           "restaurant",
           "restaurateur",
@@ -9620,10 +9620,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "rentabilité",
           "devis"
         ],
-        "cta": "Voir le tutoriel complet"
+        "cta": "Découvrir FoodEatUp"
       },
       "instagram": {
-        "legende": "Il manque un centime.\nLe Z calcule l'écart. Toi, tu rentres chez toi.\n\nUn devis pour un groupe se crée en deux minutes et se transforme en commande quand il est accepté.\n\nLe pas-à-pas complet est dans notre Academy — lien en bio.\nUne démo ? 06 14 18 92 25",
+        "legende": "Il manque un centime.\nLe Z calcule l'écart. Toi, tu rentres chez toi.\n\nUn devis pour un groupe se crée en deux minutes et se transforme en commande quand il est accepté.\n\nTout est expliqué sur notre site — lien en bio.\nUne démo ? 06 14 18 92 25",
         "hashtags": [
           "restaurant",
           "restaurateur",
@@ -9644,7 +9644,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "rentabilité",
           "devis"
         ],
-        "cta": "Le pas-à-pas est en bio"
+        "cta": "Tout est en bio"
       },
       "tiktok": {
         "legende": "Il manque un centime. 😅\nLe Z calcule l'écart. Toi, tu rentres chez toi.\n\nUn devis pour un groupe se crée en deux minutes et se transforme en commande quand il est accepté.",
@@ -9661,10 +9661,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "rentabilité",
           "devis"
         ],
-        "cta": "Tuto complet en bio"
+        "cta": "Lien en bio"
       },
       "linkedin": {
-        "legende": "Il manque un centime.\n\nUn devis pour un groupe se crée en deux minutes et se transforme en commande quand il est accepté.\n\nConcrètement : des chiffres à jour sans ressaisir une ligne.\n\nLe tutoriel pas-à-pas : https://drive.google.com/file/d/1LRxi9R1Sbj1sQ0Cg4RZhpE_cxZHygksu/view\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "legende": "Il manque un centime.\n\nUn devis pour un groupe se crée en deux minutes et se transforme en commande quand il est accepté.\n\nConcrètement : des chiffres à jour sans ressaisir une ligne.\n\nEn savoir plus : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
         "hashtags": [
           "restauration",
           "foodeatup",
@@ -9677,10 +9677,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "rentabilité",
           "devis"
         ],
-        "cta": "Voir le tutoriel pas-à-pas"
+        "cta": "Découvrir FoodEatUp"
       },
       "youtube": {
-        "legende": "Il manque un centime. Le Z calcule l'écart. Toi, tu rentres chez toi.\n\nUn devis pour un groupe se crée en deux minutes et se transforme en commande quand il est accepté.\n\nConcrètement : des chiffres à jour sans ressaisir une ligne.\n\n— — —\n\n📺 Le tutoriel pas-à-pas : https://drive.google.com/file/d/1LRxi9R1Sbj1sQ0Cg4RZhpE_cxZHygksu/view\n\n📞 Une démo ? 06 14 18 92 25\n🌐 foodeatup.com\n\nSérie « Le Coup de Feu » — saison 3, épisode 82.\nModule Comptabilité · Chapitre : Devis\n\nFoodEatUp est le logiciel qui réunit la caisse, le stock, les plannings, l'HACCP et le marketing d'un restaurant au même endroit.\n",
+        "legende": "Il manque un centime. Le Z calcule l'écart. Toi, tu rentres chez toi.\n\nUn devis pour un groupe se crée en deux minutes et se transforme en commande quand il est accepté.\n\nConcrètement : des chiffres à jour sans ressaisir une ligne.\n\n— — —\n\n🔗 https://site.foodeatup.com/\n\n📞 Une démo ? 06 14 18 92 25\n🌐 foodeatup.com\n\nSérie « Le Coup de Feu » — saison 3, épisode 82.\nModule Comptabilité · Chapitre : Devis\n\nFoodEatUp est le logiciel qui réunit la caisse, le stock, les plannings, l'HACCP et le marketing d'un restaurant au même endroit.\n",
         "hashtags": [
           "Shorts",
           "restaurant",
@@ -9699,7 +9699,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "rentabilité",
           "devis"
         ],
-        "cta": "Le tutoriel pas-à-pas",
+        "cta": "Découvrir FoodEatUp",
         "titre": "Devis — Comptabilité | FoodEatUp"
       }
     },
@@ -9723,7 +9723,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
   "EP083": {
     "publications": {
       "facebook": {
-        "legende": "J'AI DIT DEUX BURGERS ! Chaque poste voit ses plats. Sans crier.\n\nTu vois ce qui est facturé, encaissé, et ce qui traîne. Les relances arrêtent d'être un jeu de mémoire.\n\n👉 Le tutoriel complet : https://drive.google.com/file/d/1sEyZker3x2-dybI2fKHlLjFv1gGig62-/view\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "legende": "J'AI DIT DEUX BURGERS ! Chaque poste voit ses plats. Sans crier.\n\nTu vois ce qui est facturé, encaissé, et ce qui traîne. Les relances arrêtent d'être un jeu de mémoire.\n\n👉 Tout FoodEatUp : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
         "hashtags": [
           "restaurant",
           "restaurateur",
@@ -9739,10 +9739,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "rentabilité",
           "impayés"
         ],
-        "cta": "Voir le tutoriel complet"
+        "cta": "Découvrir FoodEatUp"
       },
       "instagram": {
-        "legende": "J'AI DIT DEUX BURGERS !\nChaque poste voit ses plats. Sans crier.\n\nTu vois ce qui est facturé, encaissé, et ce qui traîne. Les relances arrêtent d'être un jeu de mémoire.\n\nLe pas-à-pas complet est dans notre Academy — lien en bio.\nUne démo ? 06 14 18 92 25",
+        "legende": "J'AI DIT DEUX BURGERS !\nChaque poste voit ses plats. Sans crier.\n\nTu vois ce qui est facturé, encaissé, et ce qui traîne. Les relances arrêtent d'être un jeu de mémoire.\n\nTout est expliqué sur notre site — lien en bio.\nUne démo ? 06 14 18 92 25",
         "hashtags": [
           "restaurant",
           "restaurateur",
@@ -9763,7 +9763,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "rentabilité",
           "impayés"
         ],
-        "cta": "Le pas-à-pas est en bio"
+        "cta": "Tout est en bio"
       },
       "tiktok": {
         "legende": "J'AI DIT DEUX BURGERS ! 😅\nChaque poste voit ses plats. Sans crier.\n\nTu vois ce qui est facturé, encaissé, et ce qui traîne.",
@@ -9780,10 +9780,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "rentabilité",
           "impayés"
         ],
-        "cta": "Tuto complet en bio"
+        "cta": "Lien en bio"
       },
       "linkedin": {
-        "legende": "J'AI DIT DEUX BURGERS !\n\nTu vois ce qui est facturé, encaissé, et ce qui traîne. Les relances arrêtent d'être un jeu de mémoire.\n\nConcrètement : des chiffres à jour sans ressaisir une ligne.\n\nLe tutoriel pas-à-pas : https://drive.google.com/file/d/1sEyZker3x2-dybI2fKHlLjFv1gGig62-/view\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "legende": "J'AI DIT DEUX BURGERS !\n\nTu vois ce qui est facturé, encaissé, et ce qui traîne. Les relances arrêtent d'être un jeu de mémoire.\n\nConcrètement : des chiffres à jour sans ressaisir une ligne.\n\nEn savoir plus : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
         "hashtags": [
           "restauration",
           "foodeatup",
@@ -9796,10 +9796,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "rentabilité",
           "impayés"
         ],
-        "cta": "Voir le tutoriel pas-à-pas"
+        "cta": "Découvrir FoodEatUp"
       },
       "youtube": {
-        "legende": "J'AI DIT DEUX BURGERS ! Chaque poste voit ses plats. Sans crier.\n\nTu vois ce qui est facturé, encaissé, et ce qui traîne. Les relances arrêtent d'être un jeu de mémoire.\n\nConcrètement : des chiffres à jour sans ressaisir une ligne.\n\n— — —\n\n📺 Le tutoriel pas-à-pas : https://drive.google.com/file/d/1sEyZker3x2-dybI2fKHlLjFv1gGig62-/view\n\n📞 Une démo ? 06 14 18 92 25\n🌐 foodeatup.com\n\nSérie « Le Coup de Feu » — saison 3, épisode 83.\nModule Comptabilité · Chapitre : Impayés\n\nFoodEatUp est le logiciel qui réunit la caisse, le stock, les plannings, l'HACCP et le marketing d'un restaurant au même endroit.\n",
+        "legende": "J'AI DIT DEUX BURGERS ! Chaque poste voit ses plats. Sans crier.\n\nTu vois ce qui est facturé, encaissé, et ce qui traîne. Les relances arrêtent d'être un jeu de mémoire.\n\nConcrètement : des chiffres à jour sans ressaisir une ligne.\n\n— — —\n\n🔗 https://site.foodeatup.com/\n\n📞 Une démo ? 06 14 18 92 25\n🌐 foodeatup.com\n\nSérie « Le Coup de Feu » — saison 3, épisode 83.\nModule Comptabilité · Chapitre : Impayés\n\nFoodEatUp est le logiciel qui réunit la caisse, le stock, les plannings, l'HACCP et le marketing d'un restaurant au même endroit.\n",
         "hashtags": [
           "Shorts",
           "restaurant",
@@ -9818,7 +9818,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "rentabilité",
           "impayés"
         ],
-        "cta": "Le tutoriel pas-à-pas",
+        "cta": "Découvrir FoodEatUp",
         "titre": "Impayés — Comptabilité | FoodEatUp"
       }
     },
@@ -9829,7 +9829,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
   "EP084": {
     "publications": {
       "facebook": {
-        "legende": "Commander à table. Un plan de salle, un QR par table. Ça marche.\n\nTu photographies la facture fournisseur, elle rentre dans tes dépenses avec ses lignes et son montant.\n\n👉 Le tutoriel complet : https://drive.google.com/file/d/13gsBIjozDhLKJBi0uOwqIE3ShA_V7d3R/view\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "legende": "Commander à table. Un plan de salle, un QR par table. Ça marche.\n\nTu photographies la facture fournisseur, elle rentre dans tes dépenses avec ses lignes et son montant.\n\n👉 Tout FoodEatUp : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
         "hashtags": [
           "restaurant",
           "restaurateur",
@@ -9845,10 +9845,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "rentabilité",
           "dépenses"
         ],
-        "cta": "Voir le tutoriel complet"
+        "cta": "Découvrir FoodEatUp"
       },
       "instagram": {
-        "legende": "Commander à table.\nUn plan de salle, un QR par table. Ça marche.\n\nTu photographies la facture fournisseur, elle rentre dans tes dépenses avec ses lignes et son montant.\n\nLe pas-à-pas complet est dans notre Academy — lien en bio.\nUne démo ? 06 14 18 92 25",
+        "legende": "Commander à table.\nUn plan de salle, un QR par table. Ça marche.\n\nTu photographies la facture fournisseur, elle rentre dans tes dépenses avec ses lignes et son montant.\n\nTout est expliqué sur notre site — lien en bio.\nUne démo ? 06 14 18 92 25",
         "hashtags": [
           "restaurant",
           "restaurateur",
@@ -9869,7 +9869,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "rentabilité",
           "dépenses"
         ],
-        "cta": "Le pas-à-pas est en bio"
+        "cta": "Tout est en bio"
       },
       "tiktok": {
         "legende": "Commander à table. 😅\nUn plan de salle, un QR par table. Ça marche.\n\nTu photographies la facture fournisseur, elle rentre dans tes dépenses avec ses lignes et son montant.",
@@ -9886,10 +9886,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "rentabilité",
           "dépenses"
         ],
-        "cta": "Tuto complet en bio"
+        "cta": "Lien en bio"
       },
       "linkedin": {
-        "legende": "Commander à table.\n\nTu photographies la facture fournisseur, elle rentre dans tes dépenses avec ses lignes et son montant.\n\nConcrètement : des chiffres à jour sans ressaisir une ligne.\n\nLe tutoriel pas-à-pas : https://drive.google.com/file/d/13gsBIjozDhLKJBi0uOwqIE3ShA_V7d3R/view\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "legende": "Commander à table.\n\nTu photographies la facture fournisseur, elle rentre dans tes dépenses avec ses lignes et son montant.\n\nConcrètement : des chiffres à jour sans ressaisir une ligne.\n\nEn savoir plus : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
         "hashtags": [
           "restauration",
           "foodeatup",
@@ -9902,10 +9902,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "rentabilité",
           "dépenses"
         ],
-        "cta": "Voir le tutoriel pas-à-pas"
+        "cta": "Découvrir FoodEatUp"
       },
       "youtube": {
-        "legende": "Commander à table. Un plan de salle, un QR par table. Ça marche.\n\nTu photographies la facture fournisseur, elle rentre dans tes dépenses avec ses lignes et son montant.\n\nConcrètement : des chiffres à jour sans ressaisir une ligne.\n\n— — —\n\n📺 Le tutoriel pas-à-pas : https://drive.google.com/file/d/13gsBIjozDhLKJBi0uOwqIE3ShA_V7d3R/view\n\n📞 Une démo ? 06 14 18 92 25\n🌐 foodeatup.com\n\nSérie « Le Coup de Feu » — saison 3, épisode 84.\nModule Comptabilité · Chapitre : Dépenses\n\nFoodEatUp est le logiciel qui réunit la caisse, le stock, les plannings, l'HACCP et le marketing d'un restaurant au même endroit.\n",
+        "legende": "Commander à table. Un plan de salle, un QR par table. Ça marche.\n\nTu photographies la facture fournisseur, elle rentre dans tes dépenses avec ses lignes et son montant.\n\nConcrètement : des chiffres à jour sans ressaisir une ligne.\n\n— — —\n\n🔗 https://site.foodeatup.com/\n\n📞 Une démo ? 06 14 18 92 25\n🌐 foodeatup.com\n\nSérie « Le Coup de Feu » — saison 3, épisode 84.\nModule Comptabilité · Chapitre : Dépenses\n\nFoodEatUp est le logiciel qui réunit la caisse, le stock, les plannings, l'HACCP et le marketing d'un restaurant au même endroit.\n",
         "hashtags": [
           "Shorts",
           "restaurant",
@@ -9924,7 +9924,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "rentabilité",
           "dépenses"
         ],
-        "cta": "Le tutoriel pas-à-pas",
+        "cta": "Découvrir FoodEatUp",
         "titre": "Dépenses — Comptabilité | FoodEatUp"
       }
     },
@@ -9947,7 +9947,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
   "EP085": {
     "publications": {
       "facebook": {
-        "legende": "Table de 8. 20 h 30. Personne. No-show marqué, table libérée, soirée sauvée.\n\nChiffre d'affaires, dépenses, impayés, marge : la synthèse du mois tient sur un écran.\n\n👉 Le tutoriel complet : https://drive.google.com/file/d/1v1VoM-qg4mhn3XkvtlLeyYJYy2aDMzEK/view\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "legende": "Table de 8. 20 h 30. Personne. No-show marqué, table libérée, soirée sauvée.\n\nChiffre d'affaires, dépenses, impayés, marge : la synthèse du mois tient sur un écran.\n\n👉 Tout FoodEatUp : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
         "hashtags": [
           "restaurant",
           "restaurateur",
@@ -9963,10 +9963,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "rentabilité",
           "synthèse"
         ],
-        "cta": "Voir le tutoriel complet"
+        "cta": "Découvrir FoodEatUp"
       },
       "instagram": {
-        "legende": "Table de 8. 20 h 30. Personne.\nNo-show marqué, table libérée, soirée sauvée.\n\nChiffre d'affaires, dépenses, impayés, marge : la synthèse du mois tient sur un écran.\n\nLe pas-à-pas complet est dans notre Academy — lien en bio.\nUne démo ? 06 14 18 92 25",
+        "legende": "Table de 8. 20 h 30. Personne.\nNo-show marqué, table libérée, soirée sauvée.\n\nChiffre d'affaires, dépenses, impayés, marge : la synthèse du mois tient sur un écran.\n\nTout est expliqué sur notre site — lien en bio.\nUne démo ? 06 14 18 92 25",
         "hashtags": [
           "restaurant",
           "restaurateur",
@@ -9987,7 +9987,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "rentabilité",
           "synthèse"
         ],
-        "cta": "Le pas-à-pas est en bio"
+        "cta": "Tout est en bio"
       },
       "tiktok": {
         "legende": "Table de 8. 20 h 30. Personne. 😅\nNo-show marqué, table libérée, soirée sauvée.\n\nChiffre d'affaires, dépenses, impayés, marge : la synthèse du mois tient sur un écran.",
@@ -10004,10 +10004,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "rentabilité",
           "synthèse"
         ],
-        "cta": "Tuto complet en bio"
+        "cta": "Lien en bio"
       },
       "linkedin": {
-        "legende": "Table de 8. 20 h 30. Personne.\n\nChiffre d'affaires, dépenses, impayés, marge : la synthèse du mois tient sur un écran.\n\nConcrètement : des chiffres à jour sans ressaisir une ligne.\n\nLe tutoriel pas-à-pas : https://drive.google.com/file/d/1v1VoM-qg4mhn3XkvtlLeyYJYy2aDMzEK/view\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "legende": "Table de 8. 20 h 30. Personne.\n\nChiffre d'affaires, dépenses, impayés, marge : la synthèse du mois tient sur un écran.\n\nConcrètement : des chiffres à jour sans ressaisir une ligne.\n\nEn savoir plus : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
         "hashtags": [
           "restauration",
           "foodeatup",
@@ -10020,10 +10020,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "rentabilité",
           "synthèse"
         ],
-        "cta": "Voir le tutoriel pas-à-pas"
+        "cta": "Découvrir FoodEatUp"
       },
       "youtube": {
-        "legende": "Table de 8. 20 h 30. Personne. No-show marqué, table libérée, soirée sauvée.\n\nChiffre d'affaires, dépenses, impayés, marge : la synthèse du mois tient sur un écran.\n\nConcrètement : des chiffres à jour sans ressaisir une ligne.\n\n— — —\n\n📺 Le tutoriel pas-à-pas : https://drive.google.com/file/d/1v1VoM-qg4mhn3XkvtlLeyYJYy2aDMzEK/view\n\n📞 Une démo ? 06 14 18 92 25\n🌐 foodeatup.com\n\nSérie « Le Coup de Feu » — saison 3, épisode 85.\nModule Comptabilité · Chapitre : Synthèse\n\nFoodEatUp est le logiciel qui réunit la caisse, le stock, les plannings, l'HACCP et le marketing d'un restaurant au même endroit.\n",
+        "legende": "Table de 8. 20 h 30. Personne. No-show marqué, table libérée, soirée sauvée.\n\nChiffre d'affaires, dépenses, impayés, marge : la synthèse du mois tient sur un écran.\n\nConcrètement : des chiffres à jour sans ressaisir une ligne.\n\n— — —\n\n🔗 https://site.foodeatup.com/\n\n📞 Une démo ? 06 14 18 92 25\n🌐 foodeatup.com\n\nSérie « Le Coup de Feu » — saison 3, épisode 85.\nModule Comptabilité · Chapitre : Synthèse\n\nFoodEatUp est le logiciel qui réunit la caisse, le stock, les plannings, l'HACCP et le marketing d'un restaurant au même endroit.\n",
         "hashtags": [
           "Shorts",
           "restaurant",
@@ -10042,7 +10042,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "rentabilité",
           "synthèse"
         ],
-        "cta": "Le tutoriel pas-à-pas",
+        "cta": "Découvrir FoodEatUp",
         "titre": "Synthèse — Comptabilité | FoodEatUp"
       }
     },
@@ -10053,7 +10053,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
   "EP086": {
     "publications": {
       "facebook": {
-        "legende": "Trois appels manqués pendant le coup de feu. Caroline décroche. Et elle prend la réservation.\n\nTu envoies à ton comptable un export propre. Le dimanche soir redevient un dimanche soir.\n\n👉 Le tutoriel complet : https://drive.google.com/file/d/1v1VoM-qg4mhn3XkvtlLeyYJYy2aDMzEK/view\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "legende": "Trois appels manqués pendant le coup de feu. Caroline décroche. Et elle prend la réservation.\n\nTu envoies à ton comptable un export propre. Le dimanche soir redevient un dimanche soir.\n\n👉 Tout FoodEatUp : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
         "hashtags": [
           "restaurant",
           "restaurateur",
@@ -10069,10 +10069,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "rentabilité",
           "export comptable"
         ],
-        "cta": "Voir le tutoriel complet"
+        "cta": "Découvrir FoodEatUp"
       },
       "instagram": {
-        "legende": "Trois appels manqués pendant le coup de feu.\nCaroline décroche. Et elle prend la réservation.\n\nTu envoies à ton comptable un export propre. Le dimanche soir redevient un dimanche soir.\n\nLe pas-à-pas complet est dans notre Academy — lien en bio.\nUne démo ? 06 14 18 92 25",
+        "legende": "Trois appels manqués pendant le coup de feu.\nCaroline décroche. Et elle prend la réservation.\n\nTu envoies à ton comptable un export propre. Le dimanche soir redevient un dimanche soir.\n\nTout est expliqué sur notre site — lien en bio.\nUne démo ? 06 14 18 92 25",
         "hashtags": [
           "restaurant",
           "restaurateur",
@@ -10093,7 +10093,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "rentabilité",
           "export comptable"
         ],
-        "cta": "Le pas-à-pas est en bio"
+        "cta": "Tout est en bio"
       },
       "tiktok": {
         "legende": "Trois appels manqués pendant le coup de feu. 😅\nCaroline décroche. Et elle prend la réservation.\n\nTu envoies à ton comptable un export propre.",
@@ -10110,10 +10110,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "rentabilité",
           "export comptable"
         ],
-        "cta": "Tuto complet en bio"
+        "cta": "Lien en bio"
       },
       "linkedin": {
-        "legende": "Trois appels manqués pendant le coup de feu.\n\nTu envoies à ton comptable un export propre. Le dimanche soir redevient un dimanche soir.\n\nConcrètement : des chiffres à jour sans ressaisir une ligne.\n\nLe tutoriel pas-à-pas : https://drive.google.com/file/d/1v1VoM-qg4mhn3XkvtlLeyYJYy2aDMzEK/view\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "legende": "Trois appels manqués pendant le coup de feu.\n\nTu envoies à ton comptable un export propre. Le dimanche soir redevient un dimanche soir.\n\nConcrètement : des chiffres à jour sans ressaisir une ligne.\n\nEn savoir plus : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
         "hashtags": [
           "restauration",
           "foodeatup",
@@ -10126,10 +10126,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "rentabilité",
           "export comptable"
         ],
-        "cta": "Voir le tutoriel pas-à-pas"
+        "cta": "Découvrir FoodEatUp"
       },
       "youtube": {
-        "legende": "Trois appels manqués pendant le coup de feu. Caroline décroche. Et elle prend la réservation.\n\nTu envoies à ton comptable un export propre. Le dimanche soir redevient un dimanche soir.\n\nConcrètement : des chiffres à jour sans ressaisir une ligne.\n\n— — —\n\n📺 Le tutoriel pas-à-pas : https://drive.google.com/file/d/1v1VoM-qg4mhn3XkvtlLeyYJYy2aDMzEK/view\n\n📞 Une démo ? 06 14 18 92 25\n🌐 foodeatup.com\n\nSérie « Le Coup de Feu » — saison 3, épisode 86.\nModule Comptabilité · Chapitre : Export comptable\n\nFoodEatUp est le logiciel qui réunit la caisse, le stock, les plannings, l'HACCP et le marketing d'un restaurant au même endroit.\n",
+        "legende": "Trois appels manqués pendant le coup de feu. Caroline décroche. Et elle prend la réservation.\n\nTu envoies à ton comptable un export propre. Le dimanche soir redevient un dimanche soir.\n\nConcrètement : des chiffres à jour sans ressaisir une ligne.\n\n— — —\n\n🔗 https://site.foodeatup.com/\n\n📞 Une démo ? 06 14 18 92 25\n🌐 foodeatup.com\n\nSérie « Le Coup de Feu » — saison 3, épisode 86.\nModule Comptabilité · Chapitre : Export comptable\n\nFoodEatUp est le logiciel qui réunit la caisse, le stock, les plannings, l'HACCP et le marketing d'un restaurant au même endroit.\n",
         "hashtags": [
           "Shorts",
           "restaurant",
@@ -10148,7 +10148,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "rentabilité",
           "export comptable"
         ],
-        "cta": "Le tutoriel pas-à-pas",
+        "cta": "Découvrir FoodEatUp",
         "titre": "Export comptable — Comptabilité | FoodEatUp"
       }
     },
@@ -10166,7 +10166,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
   "EP087": {
     "publications": {
       "facebook": {
-        "legende": "Trois plateformes. Trois écrans. Une seule cuisine. Un seul flux.\n\nTu actives l'éditeur, tu choisis ton template, ton site est en ligne le jour même, aux couleurs de ta maison.\n\n👉 Le tutoriel complet : https://drive.google.com/file/d/1qolUPeBCCB5sxVN_479AGHKtOdGCO77z/view\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "legende": "Trois plateformes. Trois écrans. Une seule cuisine. Un seul flux.\n\nTu actives l'éditeur, tu choisis ton template, ton site est en ligne le jour même, aux couleurs de ta maison.\n\n👉 Tout FoodEatUp : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
         "hashtags": [
           "restaurant",
           "restaurateur",
@@ -10183,10 +10183,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "éditeur",
           "mon site restaurant"
         ],
-        "cta": "Voir le tutoriel complet"
+        "cta": "Découvrir FoodEatUp"
       },
       "instagram": {
-        "legende": "Trois plateformes. Trois écrans.\nUne seule cuisine. Un seul flux.\n\nTu actives l'éditeur, tu choisis ton template, ton site est en ligne le jour même, aux couleurs de ta maison.\n\nLe pas-à-pas complet est dans notre Academy — lien en bio.\nUne démo ? 06 14 18 92 25",
+        "legende": "Trois plateformes. Trois écrans.\nUne seule cuisine. Un seul flux.\n\nTu actives l'éditeur, tu choisis ton template, ton site est en ligne le jour même, aux couleurs de ta maison.\n\nTout est expliqué sur notre site — lien en bio.\nUne démo ? 06 14 18 92 25",
         "hashtags": [
           "restaurant",
           "restaurateur",
@@ -10207,7 +10207,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "éditeur",
           "mon site restaurant"
         ],
-        "cta": "Le pas-à-pas est en bio"
+        "cta": "Tout est en bio"
       },
       "tiktok": {
         "legende": "Trois plateformes. Trois écrans. 😅\nUne seule cuisine. Un seul flux.\n\nTu actives l'éditeur, tu choisis ton template, ton site est en ligne le jour même, aux couleurs de ta maison.",
@@ -10225,10 +10225,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "éditeur",
           "mon site restaurant"
         ],
-        "cta": "Tuto complet en bio"
+        "cta": "Lien en bio"
       },
       "linkedin": {
-        "legende": "Trois plateformes. Trois écrans.\n\nTu actives l'éditeur, tu choisis ton template, ton site est en ligne le jour même, aux couleurs de ta maison.\n\nConcrètement : un site qui prend des commandes, pas une carte de visite.\n\nLe tutoriel pas-à-pas : https://drive.google.com/file/d/1qolUPeBCCB5sxVN_479AGHKtOdGCO77z/view\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "legende": "Trois plateformes. Trois écrans.\n\nTu actives l'éditeur, tu choisis ton template, ton site est en ligne le jour même, aux couleurs de ta maison.\n\nConcrètement : un site qui prend des commandes, pas une carte de visite.\n\nEn savoir plus : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
         "hashtags": [
           "restauration",
           "foodeatup",
@@ -10242,10 +10242,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "éditeur",
           "mon site restaurant"
         ],
-        "cta": "Voir le tutoriel pas-à-pas"
+        "cta": "Découvrir FoodEatUp"
       },
       "youtube": {
-        "legende": "Trois plateformes. Trois écrans. Une seule cuisine. Un seul flux.\n\nTu actives l'éditeur, tu choisis ton template, ton site est en ligne le jour même, aux couleurs de ta maison.\n\nConcrètement : un site qui prend des commandes, pas une carte de visite.\n\n— — —\n\n📺 Le tutoriel pas-à-pas : https://drive.google.com/file/d/1qolUPeBCCB5sxVN_479AGHKtOdGCO77z/view\n\n📞 Une démo ? 06 14 18 92 25\n🌐 foodeatup.com\n\nSérie « Le Coup de Feu » — saison 3, épisode 87.\nModule Mon Site · Chapitre : Éditeur\n\nFoodEatUp est le logiciel qui réunit la caisse, le stock, les plannings, l'HACCP et le marketing d'un restaurant au même endroit.\n",
+        "legende": "Trois plateformes. Trois écrans. Une seule cuisine. Un seul flux.\n\nTu actives l'éditeur, tu choisis ton template, ton site est en ligne le jour même, aux couleurs de ta maison.\n\nConcrètement : un site qui prend des commandes, pas une carte de visite.\n\n— — —\n\n🔗 https://site.foodeatup.com/\n\n📞 Une démo ? 06 14 18 92 25\n🌐 foodeatup.com\n\nSérie « Le Coup de Feu » — saison 3, épisode 87.\nModule Mon Site · Chapitre : Éditeur\n\nFoodEatUp est le logiciel qui réunit la caisse, le stock, les plannings, l'HACCP et le marketing d'un restaurant au même endroit.\n",
         "hashtags": [
           "Shorts",
           "restaurant",
@@ -10264,7 +10264,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "éditeur",
           "mon site restaurant"
         ],
-        "cta": "Le tutoriel pas-à-pas",
+        "cta": "Découvrir FoodEatUp",
         "titre": "Éditeur — Mon Site | FoodEatUp"
       }
     },
@@ -10284,7 +10284,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
   "EP088": {
     "publications": {
       "facebook": {
-        "legende": "Un avis. Publié il y a six jours. Vu, répondu, traité. Le jour même.\n\nTu ajoutes tes pages : carte, avis, allergènes, recrutement. Elles se publient quand tu le décides.\n\n👉 Le tutoriel complet : https://drive.google.com/file/d/10KyerYfWEkSisld01WnoRb2NNzeromab/view\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "legende": "Un avis. Publié il y a six jours. Vu, répondu, traité. Le jour même.\n\nTu ajoutes tes pages : carte, avis, allergènes, recrutement. Elles se publient quand tu le décides.\n\n👉 Tout FoodEatUp : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
         "hashtags": [
           "restaurant",
           "restaurateur",
@@ -10301,10 +10301,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "pages",
           "mon site restaurant"
         ],
-        "cta": "Voir le tutoriel complet"
+        "cta": "Découvrir FoodEatUp"
       },
       "instagram": {
-        "legende": "Un avis. Publié il y a six jours.\nVu, répondu, traité. Le jour même.\n\nTu ajoutes tes pages : carte, avis, allergènes, recrutement. Elles se publient quand tu le décides.\n\nLe pas-à-pas complet est dans notre Academy — lien en bio.\nUne démo ? 06 14 18 92 25",
+        "legende": "Un avis. Publié il y a six jours.\nVu, répondu, traité. Le jour même.\n\nTu ajoutes tes pages : carte, avis, allergènes, recrutement. Elles se publient quand tu le décides.\n\nTout est expliqué sur notre site — lien en bio.\nUne démo ? 06 14 18 92 25",
         "hashtags": [
           "restaurant",
           "restaurateur",
@@ -10325,7 +10325,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "pages",
           "mon site restaurant"
         ],
-        "cta": "Le pas-à-pas est en bio"
+        "cta": "Tout est en bio"
       },
       "tiktok": {
         "legende": "Un avis. Publié il y a six jours. 😅\nVu, répondu, traité. Le jour même.\n\nTu ajoutes tes pages : carte, avis, allergènes, recrutement.",
@@ -10343,10 +10343,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "pages",
           "mon site restaurant"
         ],
-        "cta": "Tuto complet en bio"
+        "cta": "Lien en bio"
       },
       "linkedin": {
-        "legende": "Un avis. Publié il y a six jours.\n\nTu ajoutes tes pages : carte, avis, allergènes, recrutement. Elles se publient quand tu le décides.\n\nConcrètement : un site qui prend des commandes, pas une carte de visite.\n\nLe tutoriel pas-à-pas : https://drive.google.com/file/d/10KyerYfWEkSisld01WnoRb2NNzeromab/view\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "legende": "Un avis. Publié il y a six jours.\n\nTu ajoutes tes pages : carte, avis, allergènes, recrutement. Elles se publient quand tu le décides.\n\nConcrètement : un site qui prend des commandes, pas une carte de visite.\n\nEn savoir plus : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
         "hashtags": [
           "restauration",
           "foodeatup",
@@ -10360,10 +10360,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "pages",
           "mon site restaurant"
         ],
-        "cta": "Voir le tutoriel pas-à-pas"
+        "cta": "Découvrir FoodEatUp"
       },
       "youtube": {
-        "legende": "Un avis. Publié il y a six jours. Vu, répondu, traité. Le jour même.\n\nTu ajoutes tes pages : carte, avis, allergènes, recrutement. Elles se publient quand tu le décides.\n\nConcrètement : un site qui prend des commandes, pas une carte de visite.\n\n— — —\n\n📺 Le tutoriel pas-à-pas : https://drive.google.com/file/d/10KyerYfWEkSisld01WnoRb2NNzeromab/view\n\n📞 Une démo ? 06 14 18 92 25\n🌐 foodeatup.com\n\nSérie « Le Coup de Feu » — saison 3, épisode 88.\nModule Mon Site · Chapitre : Pages\n\nFoodEatUp est le logiciel qui réunit la caisse, le stock, les plannings, l'HACCP et le marketing d'un restaurant au même endroit.\n",
+        "legende": "Un avis. Publié il y a six jours. Vu, répondu, traité. Le jour même.\n\nTu ajoutes tes pages : carte, avis, allergènes, recrutement. Elles se publient quand tu le décides.\n\nConcrètement : un site qui prend des commandes, pas une carte de visite.\n\n— — —\n\n🔗 https://site.foodeatup.com/\n\n📞 Une démo ? 06 14 18 92 25\n🌐 foodeatup.com\n\nSérie « Le Coup de Feu » — saison 3, épisode 88.\nModule Mon Site · Chapitre : Pages\n\nFoodEatUp est le logiciel qui réunit la caisse, le stock, les plannings, l'HACCP et le marketing d'un restaurant au même endroit.\n",
         "hashtags": [
           "Shorts",
           "restaurant",
@@ -10382,7 +10382,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "pages",
           "mon site restaurant"
         ],
-        "cta": "Le tutoriel pas-à-pas",
+        "cta": "Découvrir FoodEatUp",
         "titre": "Pages — Mon Site | FoodEatUp"
       }
     },
@@ -10393,7 +10393,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
   "EP089": {
     "publications": {
       "facebook": {
-        "legende": "Ton jeu concours. QR code, roue cadeaux, gagnants tracés.\n\nTu branches ton nom de domaine. Tes clients arrivent chez toi, pas sur une plateforme.\n\n👉 Le tutoriel complet : https://drive.google.com/file/d/14DlIfkcKDPDBLhKCc5WRxTKg6jehslQc/view\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "legende": "Ton jeu concours. QR code, roue cadeaux, gagnants tracés.\n\nTu branches ton nom de domaine. Tes clients arrivent chez toi, pas sur une plateforme.\n\n👉 Tout FoodEatUp : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
         "hashtags": [
           "restaurant",
           "restaurateur",
@@ -10410,10 +10410,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "domaine",
           "mon site restaurant"
         ],
-        "cta": "Voir le tutoriel complet"
+        "cta": "Découvrir FoodEatUp"
       },
       "instagram": {
-        "legende": "Ton jeu concours.\nQR code, roue cadeaux, gagnants tracés.\n\nTu branches ton nom de domaine. Tes clients arrivent chez toi, pas sur une plateforme.\n\nLe pas-à-pas complet est dans notre Academy — lien en bio.\nUne démo ? 06 14 18 92 25",
+        "legende": "Ton jeu concours.\nQR code, roue cadeaux, gagnants tracés.\n\nTu branches ton nom de domaine. Tes clients arrivent chez toi, pas sur une plateforme.\n\nTout est expliqué sur notre site — lien en bio.\nUne démo ? 06 14 18 92 25",
         "hashtags": [
           "restaurant",
           "restaurateur",
@@ -10434,7 +10434,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "domaine",
           "mon site restaurant"
         ],
-        "cta": "Le pas-à-pas est en bio"
+        "cta": "Tout est en bio"
       },
       "tiktok": {
         "legende": "Ton jeu concours. 😅\nQR code, roue cadeaux, gagnants tracés.\n\nTu branches ton nom de domaine.",
@@ -10452,10 +10452,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "domaine",
           "mon site restaurant"
         ],
-        "cta": "Tuto complet en bio"
+        "cta": "Lien en bio"
       },
       "linkedin": {
-        "legende": "Ton jeu concours.\n\nTu branches ton nom de domaine. Tes clients arrivent chez toi, pas sur une plateforme.\n\nConcrètement : un site qui prend des commandes, pas une carte de visite.\n\nLe tutoriel pas-à-pas : https://drive.google.com/file/d/14DlIfkcKDPDBLhKCc5WRxTKg6jehslQc/view\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "legende": "Ton jeu concours.\n\nTu branches ton nom de domaine. Tes clients arrivent chez toi, pas sur une plateforme.\n\nConcrètement : un site qui prend des commandes, pas une carte de visite.\n\nEn savoir plus : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
         "hashtags": [
           "restauration",
           "foodeatup",
@@ -10469,10 +10469,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "domaine",
           "mon site restaurant"
         ],
-        "cta": "Voir le tutoriel pas-à-pas"
+        "cta": "Découvrir FoodEatUp"
       },
       "youtube": {
-        "legende": "Ton jeu concours. QR code, roue cadeaux, gagnants tracés.\n\nTu branches ton nom de domaine. Tes clients arrivent chez toi, pas sur une plateforme.\n\nConcrètement : un site qui prend des commandes, pas une carte de visite.\n\n— — —\n\n📺 Le tutoriel pas-à-pas : https://drive.google.com/file/d/14DlIfkcKDPDBLhKCc5WRxTKg6jehslQc/view\n\n📞 Une démo ? 06 14 18 92 25\n🌐 foodeatup.com\n\nSérie « Le Coup de Feu » — saison 3, épisode 89.\nModule Mon Site · Chapitre : Domaine\n\nFoodEatUp est le logiciel qui réunit la caisse, le stock, les plannings, l'HACCP et le marketing d'un restaurant au même endroit.\n",
+        "legende": "Ton jeu concours. QR code, roue cadeaux, gagnants tracés.\n\nTu branches ton nom de domaine. Tes clients arrivent chez toi, pas sur une plateforme.\n\nConcrètement : un site qui prend des commandes, pas une carte de visite.\n\n— — —\n\n🔗 https://site.foodeatup.com/\n\n📞 Une démo ? 06 14 18 92 25\n🌐 foodeatup.com\n\nSérie « Le Coup de Feu » — saison 3, épisode 89.\nModule Mon Site · Chapitre : Domaine\n\nFoodEatUp est le logiciel qui réunit la caisse, le stock, les plannings, l'HACCP et le marketing d'un restaurant au même endroit.\n",
         "hashtags": [
           "Shorts",
           "restaurant",
@@ -10491,7 +10491,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "domaine",
           "mon site restaurant"
         ],
-        "cta": "Le tutoriel pas-à-pas",
+        "cta": "Découvrir FoodEatUp",
         "titre": "Domaine — Mon Site | FoodEatUp"
       }
     },
@@ -10512,7 +10512,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
   "EP090": {
     "publications": {
       "facebook": {
-        "legende": "Ta prévision pour samedi. PrediBot lit tes données. Pas ton café.\n\nChaque demande de privatisation ou de contact devient un lead dans ton fichier client.\n\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "legende": "Ta prévision pour samedi. PrediBot lit tes données. Pas ton café.\n\nChaque demande de privatisation ou de contact devient un lead dans ton fichier client.\n\n👉 Tout FoodEatUp : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
         "hashtags": [
           "restaurant",
           "restaurateur",
@@ -10529,10 +10529,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "leads du site",
           "mon site restaurant"
         ],
-        "cta": "Demander une démo"
+        "cta": "Découvrir FoodEatUp"
       },
       "instagram": {
-        "legende": "Ta prévision pour samedi.\nPrediBot lit tes données. Pas ton café.\n\nChaque demande de privatisation ou de contact devient un lead dans ton fichier client.\n\nLe pas-à-pas complet est dans notre Academy — lien en bio.\nUne démo ? 06 14 18 92 25",
+        "legende": "Ta prévision pour samedi.\nPrediBot lit tes données. Pas ton café.\n\nChaque demande de privatisation ou de contact devient un lead dans ton fichier client.\n\nTout est expliqué sur notre site — lien en bio.\nUne démo ? 06 14 18 92 25",
         "hashtags": [
           "restaurant",
           "restaurateur",
@@ -10553,7 +10553,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "leads du site",
           "mon site restaurant"
         ],
-        "cta": "Demander une démo"
+        "cta": "Tout est en bio"
       },
       "tiktok": {
         "legende": "Ta prévision pour samedi. 😅\nPrediBot lit tes données. Pas ton café.\n\nChaque demande de privatisation ou de contact devient un lead dans ton fichier client.",
@@ -10571,10 +10571,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "leads du site",
           "mon site restaurant"
         ],
-        "cta": "Demander une démo"
+        "cta": "Lien en bio"
       },
       "linkedin": {
-        "legende": "Ta prévision pour samedi.\n\nChaque demande de privatisation ou de contact devient un lead dans ton fichier client.\n\nConcrètement : un site qui prend des commandes, pas une carte de visite.\n\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "legende": "Ta prévision pour samedi.\n\nChaque demande de privatisation ou de contact devient un lead dans ton fichier client.\n\nConcrètement : un site qui prend des commandes, pas une carte de visite.\n\nEn savoir plus : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
         "hashtags": [
           "restauration",
           "foodeatup",
@@ -10588,10 +10588,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "leads du site",
           "mon site restaurant"
         ],
-        "cta": "Demander une démo"
+        "cta": "Découvrir FoodEatUp"
       },
       "youtube": {
-        "legende": "Ta prévision pour samedi. PrediBot lit tes données. Pas ton café.\n\nChaque demande de privatisation ou de contact devient un lead dans ton fichier client.\n\nConcrètement : un site qui prend des commandes, pas une carte de visite.\n\n— — —\n\n📞 Une démo ? 06 14 18 92 25\n🌐 foodeatup.com\n\nSérie « Le Coup de Feu » — saison 3, épisode 90.\nModule Mon Site · Chapitre : Leads du site\n\nFoodEatUp est le logiciel qui réunit la caisse, le stock, les plannings, l'HACCP et le marketing d'un restaurant au même endroit.\n",
+        "legende": "Ta prévision pour samedi. PrediBot lit tes données. Pas ton café.\n\nChaque demande de privatisation ou de contact devient un lead dans ton fichier client.\n\nConcrètement : un site qui prend des commandes, pas une carte de visite.\n\n— — —\n\n🔗 https://site.foodeatup.com/\n\n📞 Une démo ? 06 14 18 92 25\n🌐 foodeatup.com\n\nSérie « Le Coup de Feu » — saison 3, épisode 90.\nModule Mon Site · Chapitre : Leads du site\n\nFoodEatUp est le logiciel qui réunit la caisse, le stock, les plannings, l'HACCP et le marketing d'un restaurant au même endroit.\n",
         "hashtags": [
           "Shorts",
           "restaurant",
@@ -10610,7 +10610,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "leads du site",
           "mon site restaurant"
         ],
-        "cta": "Demander une démo",
+        "cta": "Découvrir FoodEatUp",
         "titre": "Leads du site — Mon Site | FoodEatUp"
       }
     },
@@ -10631,7 +10631,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
   "EP091": {
     "publications": {
       "facebook": {
-        "legende": "Anniversaire de table 12. Les surprises, c'est bien. Les imprévus, non.\n\nL'anniversaire est noté à la réservation, avec le nombre de couverts et la demande spéciale. La cuisine et la salle le savent avant que le client arrive.\n\n👉 Le tutoriel complet : https://drive.google.com/file/d/1ITy-Ia2Q3FSeKSRRd4bWEFw4eDlzFZ6q/view\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "legende": "Anniversaire de table 12. Les surprises, c'est bien. Les imprévus, non.\n\nL'anniversaire est noté à la réservation, avec le nombre de couverts et la demande spéciale. La cuisine et la salle le savent avant que le client arrive.\n\n👉 Tout FoodEatUp : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
         "hashtags": [
           "restaurant",
           "restaurateur",
@@ -10648,10 +10648,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "ajouter une réservation",
           "réservation restaurant"
         ],
-        "cta": "Voir le tutoriel complet"
+        "cta": "Découvrir FoodEatUp"
       },
       "instagram": {
-        "legende": "Anniversaire de table 12.\nLes surprises, c'est bien. Les imprévus, non.\n\nL'anniversaire est noté à la réservation, avec le nombre de couverts et la demande spéciale. La cuisine et la salle le savent avant que le client arrive.\n\nLe pas-à-pas complet est dans notre Academy — lien en bio.\nUne démo ? 06 14 18 92 25",
+        "legende": "Anniversaire de table 12.\nLes surprises, c'est bien. Les imprévus, non.\n\nL'anniversaire est noté à la réservation, avec le nombre de couverts et la demande spéciale. La cuisine et la salle le savent avant que le client arrive.\n\nTout est expliqué sur notre site — lien en bio.\nUne démo ? 06 14 18 92 25",
         "hashtags": [
           "restaurant",
           "restaurateur",
@@ -10672,7 +10672,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "ajouter une réservation",
           "réservation restaurant"
         ],
-        "cta": "Le pas-à-pas est en bio"
+        "cta": "Tout est en bio"
       },
       "tiktok": {
         "legende": "Anniversaire de table 12. 😅\nLes surprises, c'est bien. Les imprévus, non.\n\nL'anniversaire est noté à la réservation, avec le nombre de couverts et la demande spéciale.",
@@ -10690,10 +10690,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "ajouter une réservation",
           "réservation restaurant"
         ],
-        "cta": "Tuto complet en bio"
+        "cta": "Lien en bio"
       },
       "linkedin": {
-        "legende": "Anniversaire de table 12.\n\nL'anniversaire est noté à la réservation, avec le nombre de couverts et la demande spéciale. La cuisine et la salle le savent avant que le client arrive.\n\nConcrètement : un plan de salle qui reflète la réalité, minute par minute.\n\nLe tutoriel pas-à-pas : https://drive.google.com/file/d/1ITy-Ia2Q3FSeKSRRd4bWEFw4eDlzFZ6q/view\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "legende": "Anniversaire de table 12.\n\nL'anniversaire est noté à la réservation, avec le nombre de couverts et la demande spéciale. La cuisine et la salle le savent avant que le client arrive.\n\nConcrètement : un plan de salle qui reflète la réalité, minute par minute.\n\nEn savoir plus : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
         "hashtags": [
           "restauration",
           "foodeatup",
@@ -10707,10 +10707,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "ajouter une réservation",
           "réservation restaurant"
         ],
-        "cta": "Voir le tutoriel pas-à-pas"
+        "cta": "Découvrir FoodEatUp"
       },
       "youtube": {
-        "legende": "Anniversaire de table 12. Les surprises, c'est bien. Les imprévus, non.\n\nL'anniversaire est noté à la réservation, avec le nombre de couverts et la demande spéciale. La cuisine et la salle le savent avant que le client arrive.\n\nConcrètement : un plan de salle qui reflète la réalité, minute par minute.\n\n— — —\n\n📺 Le tutoriel pas-à-pas : https://drive.google.com/file/d/1ITy-Ia2Q3FSeKSRRd4bWEFw4eDlzFZ6q/view\n\n📞 Une démo ? 06 14 18 92 25\n🌐 foodeatup.com\n\nSérie « Le Coup de Feu » — saison 4, épisode 91.\nModule Réservation · Chapitre : 2 - Ajouter une réservation\n\nFoodEatUp est le logiciel qui réunit la caisse, le stock, les plannings, l'HACCP et le marketing d'un restaurant au même endroit.\n",
+        "legende": "Anniversaire de table 12. Les surprises, c'est bien. Les imprévus, non.\n\nL'anniversaire est noté à la réservation, avec le nombre de couverts et la demande spéciale. La cuisine et la salle le savent avant que le client arrive.\n\nConcrètement : un plan de salle qui reflète la réalité, minute par minute.\n\n— — —\n\n🔗 https://site.foodeatup.com/\n\n📞 Une démo ? 06 14 18 92 25\n🌐 foodeatup.com\n\nSérie « Le Coup de Feu » — saison 4, épisode 91.\nModule Réservation · Chapitre : 2 - Ajouter une réservation\n\nFoodEatUp est le logiciel qui réunit la caisse, le stock, les plannings, l'HACCP et le marketing d'un restaurant au même endroit.\n",
         "hashtags": [
           "Shorts",
           "restaurant",
@@ -10729,7 +10729,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "ajouter une réservation",
           "réservation restaurant"
         ],
-        "cta": "Le tutoriel pas-à-pas",
+        "cta": "Découvrir FoodEatUp",
         "titre": "Ajouter une réservation — Réservation | FoodEatUp"
       }
     },
@@ -10751,7 +10751,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
   "EP092": {
     "publications": {
       "facebook": {
-        "legende": "Lui, il avait réservé. Ses quatre-vingts fans, non.\n\nQuatre-vingts personnes d'un coup, ça se voit venir. Tu ouvres ou tu fermes tes créneaux en direct, et la liste d'attente prend le relais.\n\n👉 Le tutoriel complet : https://drive.google.com/file/d/1DZKefLYV1_F9_uL-sJ79fb5srfGnROBp/view\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "legende": "Lui, il avait réservé. Ses quatre-vingts fans, non.\n\nQuatre-vingts personnes d'un coup, ça se voit venir. Tu ouvres ou tu fermes tes créneaux en direct, et la liste d'attente prend le relais.\n\n👉 Tout FoodEatUp : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
         "hashtags": [
           "restaurant",
           "restaurateur",
@@ -10768,10 +10768,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "gérer et no-shows",
           "réservation restaurant"
         ],
-        "cta": "Voir le tutoriel complet"
+        "cta": "Découvrir FoodEatUp"
       },
       "instagram": {
-        "legende": "Lui, il avait réservé.\nSes quatre-vingts fans, non.\n\nQuatre-vingts personnes d'un coup, ça se voit venir. Tu ouvres ou tu fermes tes créneaux en direct, et la liste d'attente prend le relais.\n\nLe pas-à-pas complet est dans notre Academy — lien en bio.\nUne démo ? 06 14 18 92 25",
+        "legende": "Lui, il avait réservé.\nSes quatre-vingts fans, non.\n\nQuatre-vingts personnes d'un coup, ça se voit venir. Tu ouvres ou tu fermes tes créneaux en direct, et la liste d'attente prend le relais.\n\nTout est expliqué sur notre site — lien en bio.\nUne démo ? 06 14 18 92 25",
         "hashtags": [
           "restaurant",
           "restaurateur",
@@ -10792,7 +10792,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "gérer et no-shows",
           "réservation restaurant"
         ],
-        "cta": "Le pas-à-pas est en bio"
+        "cta": "Tout est en bio"
       },
       "tiktok": {
         "legende": "Lui, il avait réservé. 😅\nSes quatre-vingts fans, non.\n\nQuatre-vingts personnes d'un coup, ça se voit venir.",
@@ -10810,10 +10810,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "gérer et no-shows",
           "réservation restaurant"
         ],
-        "cta": "Tuto complet en bio"
+        "cta": "Lien en bio"
       },
       "linkedin": {
-        "legende": "Lui, il avait réservé.\n\nQuatre-vingts personnes d'un coup, ça se voit venir. Tu ouvres ou tu fermes tes créneaux en direct, et la liste d'attente prend le relais.\n\nConcrètement : un plan de salle qui reflète la réalité, minute par minute.\n\nLe tutoriel pas-à-pas : https://drive.google.com/file/d/1DZKefLYV1_F9_uL-sJ79fb5srfGnROBp/view\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "legende": "Lui, il avait réservé.\n\nQuatre-vingts personnes d'un coup, ça se voit venir. Tu ouvres ou tu fermes tes créneaux en direct, et la liste d'attente prend le relais.\n\nConcrètement : un plan de salle qui reflète la réalité, minute par minute.\n\nEn savoir plus : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
         "hashtags": [
           "restauration",
           "foodeatup",
@@ -10827,10 +10827,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "gérer et no-shows",
           "réservation restaurant"
         ],
-        "cta": "Voir le tutoriel pas-à-pas"
+        "cta": "Découvrir FoodEatUp"
       },
       "youtube": {
-        "legende": "Lui, il avait réservé. Ses quatre-vingts fans, non.\n\nQuatre-vingts personnes d'un coup, ça se voit venir. Tu ouvres ou tu fermes tes créneaux en direct, et la liste d'attente prend le relais.\n\nConcrètement : un plan de salle qui reflète la réalité, minute par minute.\n\n— — —\n\n📺 Le tutoriel pas-à-pas : https://drive.google.com/file/d/1DZKefLYV1_F9_uL-sJ79fb5srfGnROBp/view\n\n📞 Une démo ? 06 14 18 92 25\n🌐 foodeatup.com\n\nSérie « Le Coup de Feu » — saison 4, épisode 92.\nModule Réservation · Chapitre : 3 - Gérer et no-shows\n\nFoodEatUp est le logiciel qui réunit la caisse, le stock, les plannings, l'HACCP et le marketing d'un restaurant au même endroit.\n",
+        "legende": "Lui, il avait réservé. Ses quatre-vingts fans, non.\n\nQuatre-vingts personnes d'un coup, ça se voit venir. Tu ouvres ou tu fermes tes créneaux en direct, et la liste d'attente prend le relais.\n\nConcrètement : un plan de salle qui reflète la réalité, minute par minute.\n\n— — —\n\n🔗 https://site.foodeatup.com/\n\n📞 Une démo ? 06 14 18 92 25\n🌐 foodeatup.com\n\nSérie « Le Coup de Feu » — saison 4, épisode 92.\nModule Réservation · Chapitre : 3 - Gérer et no-shows\n\nFoodEatUp est le logiciel qui réunit la caisse, le stock, les plannings, l'HACCP et le marketing d'un restaurant au même endroit.\n",
         "hashtags": [
           "Shorts",
           "restaurant",
@@ -10849,7 +10849,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "gérer et no-shows",
           "réservation restaurant"
         ],
-        "cta": "Le tutoriel pas-à-pas",
+        "cta": "Découvrir FoodEatUp",
         "titre": "Gérer et no-shows — Réservation | FoodEatUp"
       }
     },
@@ -10869,7 +10869,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
   "EP093": {
     "publications": {
       "facebook": {
-        "legende": "Rupture de stock, 20 h 15. Anticiper, c'est moins sportif.\n\nFoodEatUp prévoit tes ventes de poisson à partir de ton historique. Tu commandes la bonne quantité le mardi, pas la canne à pêche le samedi.\n\n👉 Le tutoriel complet : https://drive.google.com/file/d/14GntP3F4hhloVyYBDJrPCj55Ny1gvDx9/view\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "legende": "Rupture de stock, 20 h 15. Anticiper, c'est moins sportif.\n\nFoodEatUp prévoit tes ventes de poisson à partir de ton historique. Tu commandes la bonne quantité le mardi, pas la canne à pêche le samedi.\n\n👉 Tout FoodEatUp : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
         "hashtags": [
           "restaurant",
           "restaurateur",
@@ -10886,10 +10886,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "prédictions des commandes",
           "stockvision restaurant"
         ],
-        "cta": "Voir le tutoriel complet"
+        "cta": "Découvrir FoodEatUp"
       },
       "instagram": {
-        "legende": "Rupture de stock, 20 h 15.\nAnticiper, c'est moins sportif.\n\nFoodEatUp prévoit tes ventes de poisson à partir de ton historique. Tu commandes la bonne quantité le mardi, pas la canne à pêche le samedi.\n\nLe pas-à-pas complet est dans notre Academy — lien en bio.\nUne démo ? 06 14 18 92 25",
+        "legende": "Rupture de stock, 20 h 15.\nAnticiper, c'est moins sportif.\n\nFoodEatUp prévoit tes ventes de poisson à partir de ton historique. Tu commandes la bonne quantité le mardi, pas la canne à pêche le samedi.\n\nTout est expliqué sur notre site — lien en bio.\nUne démo ? 06 14 18 92 25",
         "hashtags": [
           "restaurant",
           "restaurateur",
@@ -10912,7 +10912,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "prédictions des commandes",
           "stockvision restaurant"
         ],
-        "cta": "Le pas-à-pas est en bio"
+        "cta": "Tout est en bio"
       },
       "tiktok": {
         "legende": "Rupture de stock, 20 h 15. 😅\nAnticiper, c'est moins sportif.\n\nFoodEatUp prévoit tes ventes de poisson à partir de ton historique.",
@@ -10930,10 +10930,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "prédictions des commandes",
           "stockvision restaurant"
         ],
-        "cta": "Tuto complet en bio"
+        "cta": "Lien en bio"
       },
       "linkedin": {
-        "legende": "Rupture de stock, 20 h 15.\n\nFoodEatUp prévoit tes ventes de poisson à partir de ton historique. Tu commandes la bonne quantité le mardi, pas la canne à pêche le samedi.\n\nConcrètement : un stock juste et une marge qu'on voit avant de fixer le prix.\n\nLe tutoriel pas-à-pas : https://drive.google.com/file/d/14GntP3F4hhloVyYBDJrPCj55Ny1gvDx9/view\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "legende": "Rupture de stock, 20 h 15.\n\nFoodEatUp prévoit tes ventes de poisson à partir de ton historique. Tu commandes la bonne quantité le mardi, pas la canne à pêche le samedi.\n\nConcrètement : un stock juste et une marge qu'on voit avant de fixer le prix.\n\nEn savoir plus : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
         "hashtags": [
           "restauration",
           "foodeatup",
@@ -10947,10 +10947,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "prédictions des commandes",
           "stockvision restaurant"
         ],
-        "cta": "Voir le tutoriel pas-à-pas"
+        "cta": "Découvrir FoodEatUp"
       },
       "youtube": {
-        "legende": "Rupture de stock, 20 h 15. Anticiper, c'est moins sportif.\n\nFoodEatUp prévoit tes ventes de poisson à partir de ton historique. Tu commandes la bonne quantité le mardi, pas la canne à pêche le samedi.\n\nConcrètement : un stock juste et une marge qu'on voit avant de fixer le prix.\n\n— — —\n\n📺 Le tutoriel pas-à-pas : https://drive.google.com/file/d/14GntP3F4hhloVyYBDJrPCj55Ny1gvDx9/view\n\n📞 Une démo ? 06 14 18 92 25\n🌐 foodeatup.com\n\nSérie « Le Coup de Feu » — saison 4, épisode 93.\nModule StockVision · Chapitre : 3 - Prédictions des commandes\n\nFoodEatUp est le logiciel qui réunit la caisse, le stock, les plannings, l'HACCP et le marketing d'un restaurant au même endroit.\n",
+        "legende": "Rupture de stock, 20 h 15. Anticiper, c'est moins sportif.\n\nFoodEatUp prévoit tes ventes de poisson à partir de ton historique. Tu commandes la bonne quantité le mardi, pas la canne à pêche le samedi.\n\nConcrètement : un stock juste et une marge qu'on voit avant de fixer le prix.\n\n— — —\n\n🔗 https://site.foodeatup.com/\n\n📞 Une démo ? 06 14 18 92 25\n🌐 foodeatup.com\n\nSérie « Le Coup de Feu » — saison 4, épisode 93.\nModule StockVision · Chapitre : 3 - Prédictions des commandes\n\nFoodEatUp est le logiciel qui réunit la caisse, le stock, les plannings, l'HACCP et le marketing d'un restaurant au même endroit.\n",
         "hashtags": [
           "Shorts",
           "restaurant",
@@ -10971,7 +10971,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "prédictions des commandes",
           "stockvision restaurant"
         ],
-        "cta": "Le tutoriel pas-à-pas",
+        "cta": "Découvrir FoodEatUp",
         "titre": "Prédictions des commandes — StockVision | FoodEatUp"
       }
     },
@@ -10991,7 +10991,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
   "EP094": {
     "publications": {
       "facebook": {
-        "legende": "2026, la livraison change de main. Autant que tes commandes arrivent au bon endroit.\n\nPeu importe qui livre. Tes commandes arrivent dans la même file, avec la bonne adresse et le bon statut, jusqu'à la remise au client.\n\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "legende": "2026, la livraison change de main. Autant que tes commandes arrivent au bon endroit.\n\nPeu importe qui livre. Tes commandes arrivent dans la même file, avec la bonne adresse et le bon statut, jusqu'à la remise au client.\n\n👉 Tout FoodEatUp : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
         "hashtags": [
           "restaurant",
           "restaurateur",
@@ -11008,10 +11008,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "centraliser les commandes",
           "hubrise restaurant"
         ],
-        "cta": "Demander une démo"
+        "cta": "Découvrir FoodEatUp"
       },
       "instagram": {
-        "legende": "2026, la livraison change de main.\nAutant que tes commandes arrivent au bon endroit.\n\nPeu importe qui livre. Tes commandes arrivent dans la même file, avec la bonne adresse et le bon statut, jusqu'à la remise au client.\n\nLe pas-à-pas complet est dans notre Academy — lien en bio.\nUne démo ? 06 14 18 92 25",
+        "legende": "2026, la livraison change de main.\nAutant que tes commandes arrivent au bon endroit.\n\nPeu importe qui livre. Tes commandes arrivent dans la même file, avec la bonne adresse et le bon statut, jusqu'à la remise au client.\n\nTout est expliqué sur notre site — lien en bio.\nUne démo ? 06 14 18 92 25",
         "hashtags": [
           "restaurant",
           "restaurateur",
@@ -11033,7 +11033,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "centraliser les commandes",
           "hubrise restaurant"
         ],
-        "cta": "Demander une démo"
+        "cta": "Tout est en bio"
       },
       "tiktok": {
         "legende": "2026, la livraison change de main. 😅\nAutant que tes commandes arrivent au bon endroit.\n\nPeu importe qui livre.",
@@ -11051,10 +11051,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "centraliser les commandes",
           "hubrise restaurant"
         ],
-        "cta": "Demander une démo"
+        "cta": "Lien en bio"
       },
       "linkedin": {
-        "legende": "2026, la livraison change de main.\n\nPeu importe qui livre. Tes commandes arrivent dans la même file, avec la bonne adresse et le bon statut, jusqu'à la remise au client.\n\nConcrètement : plus de tablette à surveiller dans un coin.\n\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "legende": "2026, la livraison change de main.\n\nPeu importe qui livre. Tes commandes arrivent dans la même file, avec la bonne adresse et le bon statut, jusqu'à la remise au client.\n\nConcrètement : plus de tablette à surveiller dans un coin.\n\nEn savoir plus : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
         "hashtags": [
           "restauration",
           "foodeatup",
@@ -11068,10 +11068,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "centraliser les commandes",
           "hubrise restaurant"
         ],
-        "cta": "Demander une démo"
+        "cta": "Découvrir FoodEatUp"
       },
       "youtube": {
-        "legende": "2026, la livraison change de main. Autant que tes commandes arrivent au bon endroit.\n\nPeu importe qui livre. Tes commandes arrivent dans la même file, avec la bonne adresse et le bon statut, jusqu'à la remise au client.\n\nConcrètement : plus de tablette à surveiller dans un coin.\n\n— — —\n\n📞 Une démo ? 06 14 18 92 25\n🌐 foodeatup.com\n\nSérie « Le Coup de Feu » — saison 4, épisode 94.\nModule HubRise · Chapitre : 4 - Centraliser les commandes\n\nFoodEatUp est le logiciel qui réunit la caisse, le stock, les plannings, l'HACCP et le marketing d'un restaurant au même endroit.\n",
+        "legende": "2026, la livraison change de main. Autant que tes commandes arrivent au bon endroit.\n\nPeu importe qui livre. Tes commandes arrivent dans la même file, avec la bonne adresse et le bon statut, jusqu'à la remise au client.\n\nConcrètement : plus de tablette à surveiller dans un coin.\n\n— — —\n\n🔗 https://site.foodeatup.com/\n\n📞 Une démo ? 06 14 18 92 25\n🌐 foodeatup.com\n\nSérie « Le Coup de Feu » — saison 4, épisode 94.\nModule HubRise · Chapitre : 4 - Centraliser les commandes\n\nFoodEatUp est le logiciel qui réunit la caisse, le stock, les plannings, l'HACCP et le marketing d'un restaurant au même endroit.\n",
         "hashtags": [
           "Shorts",
           "restaurant",
@@ -11091,7 +11091,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "centraliser les commandes",
           "hubrise restaurant"
         ],
-        "cta": "Demander une démo",
+        "cta": "Découvrir FoodEatUp",
         "titre": "Centraliser les commandes — HubRise | FoodEatUp"
       }
     },
@@ -11109,7 +11109,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
   "EP095": {
     "publications": {
       "facebook": {
-        "legende": "Le service s'est arrêté deux minutes. Le reste du temps, il ne devrait jamais s'arrêter.\n\nSur le KDS, chaque plat a son chrono. Tu vois ce qui traîne au moment où ça traîne, et tu relances le bon poste.\n\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "legende": "Le service s'est arrêté deux minutes. Le reste du temps, il ne devrait jamais s'arrêter.\n\nSur le KDS, chaque plat a son chrono. Tu vois ce qui traîne au moment où ça traîne, et tu relances le bon poste.\n\n👉 Tout FoodEatUp : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
         "hashtags": [
           "restaurant",
           "restaurateur",
@@ -11126,10 +11126,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "gérer le kds en direct",
           "kds restaurant"
         ],
-        "cta": "Demander une démo"
+        "cta": "Découvrir FoodEatUp"
       },
       "instagram": {
-        "legende": "Le service s'est arrêté deux minutes.\nLe reste du temps, il ne devrait jamais s'arrêter.\n\nSur le KDS, chaque plat a son chrono. Tu vois ce qui traîne au moment où ça traîne, et tu relances le bon poste.\n\nLe pas-à-pas complet est dans notre Academy — lien en bio.\nUne démo ? 06 14 18 92 25",
+        "legende": "Le service s'est arrêté deux minutes.\nLe reste du temps, il ne devrait jamais s'arrêter.\n\nSur le KDS, chaque plat a son chrono. Tu vois ce qui traîne au moment où ça traîne, et tu relances le bon poste.\n\nTout est expliqué sur notre site — lien en bio.\nUne démo ? 06 14 18 92 25",
         "hashtags": [
           "restaurant",
           "restaurateur",
@@ -11150,7 +11150,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "gérer le kds en direct",
           "kds restaurant"
         ],
-        "cta": "Demander une démo"
+        "cta": "Tout est en bio"
       },
       "tiktok": {
         "legende": "Le service s'est arrêté deux minutes. 😅\nLe reste du temps, il ne devrait jamais s'arrêter.\n\nSur le KDS, chaque plat a son chrono.",
@@ -11168,10 +11168,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "gérer le kds en direct",
           "kds restaurant"
         ],
-        "cta": "Demander une démo"
+        "cta": "Lien en bio"
       },
       "linkedin": {
-        "legende": "Le service s'est arrêté deux minutes.\n\nSur le KDS, chaque plat a son chrono. Tu vois ce qui traîne au moment où ça traîne, et tu relances le bon poste.\n\nConcrètement : une cuisine qui sait quoi sortir, et quand.\n\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "legende": "Le service s'est arrêté deux minutes.\n\nSur le KDS, chaque plat a son chrono. Tu vois ce qui traîne au moment où ça traîne, et tu relances le bon poste.\n\nConcrètement : une cuisine qui sait quoi sortir, et quand.\n\nEn savoir plus : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
         "hashtags": [
           "restauration",
           "foodeatup",
@@ -11185,10 +11185,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "gérer le kds en direct",
           "kds restaurant"
         ],
-        "cta": "Demander une démo"
+        "cta": "Découvrir FoodEatUp"
       },
       "youtube": {
-        "legende": "Le service s'est arrêté deux minutes. Le reste du temps, il ne devrait jamais s'arrêter.\n\nSur le KDS, chaque plat a son chrono. Tu vois ce qui traîne au moment où ça traîne, et tu relances le bon poste.\n\nConcrètement : une cuisine qui sait quoi sortir, et quand.\n\n— — —\n\n📞 Une démo ? 06 14 18 92 25\n🌐 foodeatup.com\n\nSérie « Le Coup de Feu » — saison 4, épisode 95.\nModule KDS · Chapitre : 3 - Gérer le KDS en direct\n\nFoodEatUp est le logiciel qui réunit la caisse, le stock, les plannings, l'HACCP et le marketing d'un restaurant au même endroit.\n",
+        "legende": "Le service s'est arrêté deux minutes. Le reste du temps, il ne devrait jamais s'arrêter.\n\nSur le KDS, chaque plat a son chrono. Tu vois ce qui traîne au moment où ça traîne, et tu relances le bon poste.\n\nConcrètement : une cuisine qui sait quoi sortir, et quand.\n\n— — —\n\n🔗 https://site.foodeatup.com/\n\n📞 Une démo ? 06 14 18 92 25\n🌐 foodeatup.com\n\nSérie « Le Coup de Feu » — saison 4, épisode 95.\nModule KDS · Chapitre : 3 - Gérer le KDS en direct\n\nFoodEatUp est le logiciel qui réunit la caisse, le stock, les plannings, l'HACCP et le marketing d'un restaurant au même endroit.\n",
         "hashtags": [
           "Shorts",
           "restaurant",
@@ -11208,7 +11208,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "gérer le kds en direct",
           "kds restaurant"
         ],
-        "cta": "Demander une démo",
+        "cta": "Découvrir FoodEatUp",
         "titre": "Gérer le KDS en direct — KDS | FoodEatUp"
       }
     },
@@ -11226,7 +11226,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
   "EP096": {
     "publications": {
       "facebook": {
-        "legende": "39° en cuisine. Une alerte température, et tu sauves la marchandise.\n\nTrente-neuf degrés en cuisine, ton frigo souffre. Le relevé hors seuil te prévient tout de suite. Tu sauves la marchandise.\n\n👉 Le tutoriel complet : https://drive.google.com/file/d/14OmsNUd3EMgWNxGVvmOwLgR3ZloWKNKW/view\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "legende": "39° en cuisine. Une alerte température, et tu sauves la marchandise.\n\nTrente-neuf degrés en cuisine, ton frigo souffre. Le relevé hors seuil te prévient tout de suite. Tu sauves la marchandise.\n\n👉 Tout FoodEatUp : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
         "hashtags": [
           "restaurant",
           "restaurateur",
@@ -11243,10 +11243,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "relevé de température",
           "haccp restaurant"
         ],
-        "cta": "Voir le tutoriel complet"
+        "cta": "Découvrir FoodEatUp"
       },
       "instagram": {
-        "legende": "39° en cuisine.\nUne alerte température, et tu sauves la marchandise.\n\nTrente-neuf degrés en cuisine, ton frigo souffre. Le relevé hors seuil te prévient tout de suite. Tu sauves la marchandise.\n\nLe pas-à-pas complet est dans notre Academy — lien en bio.\nUne démo ? 06 14 18 92 25",
+        "legende": "39° en cuisine.\nUne alerte température, et tu sauves la marchandise.\n\nTrente-neuf degrés en cuisine, ton frigo souffre. Le relevé hors seuil te prévient tout de suite. Tu sauves la marchandise.\n\nTout est expliqué sur notre site — lien en bio.\nUne démo ? 06 14 18 92 25",
         "hashtags": [
           "restaurant",
           "restaurateur",
@@ -11268,7 +11268,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "relevé de température",
           "haccp restaurant"
         ],
-        "cta": "Le pas-à-pas est en bio"
+        "cta": "Tout est en bio"
       },
       "tiktok": {
         "legende": "39° en cuisine. 😅\nUne alerte température, et tu sauves la marchandise.\n\nTrente-neuf degrés en cuisine, ton frigo souffre.",
@@ -11286,10 +11286,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "relevé de température",
           "haccp restaurant"
         ],
-        "cta": "Tuto complet en bio"
+        "cta": "Lien en bio"
       },
       "linkedin": {
-        "legende": "39° en cuisine.\n\nTrente-neuf degrés en cuisine, ton frigo souffre. Le relevé hors seuil te prévient tout de suite. Tu sauves la marchandise.\n\nConcrètement : un contrôle qui se passe bien, parce que tout est déjà tracé.\n\nLe tutoriel pas-à-pas : https://drive.google.com/file/d/14OmsNUd3EMgWNxGVvmOwLgR3ZloWKNKW/view\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "legende": "39° en cuisine.\n\nTrente-neuf degrés en cuisine, ton frigo souffre. Le relevé hors seuil te prévient tout de suite. Tu sauves la marchandise.\n\nConcrètement : un contrôle qui se passe bien, parce que tout est déjà tracé.\n\nEn savoir plus : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
         "hashtags": [
           "restauration",
           "foodeatup",
@@ -11303,10 +11303,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "relevé de température",
           "haccp restaurant"
         ],
-        "cta": "Voir le tutoriel pas-à-pas"
+        "cta": "Découvrir FoodEatUp"
       },
       "youtube": {
-        "legende": "39° en cuisine. Une alerte température, et tu sauves la marchandise.\n\nTrente-neuf degrés en cuisine, ton frigo souffre. Le relevé hors seuil te prévient tout de suite. Tu sauves la marchandise.\n\nConcrètement : un contrôle qui se passe bien, parce que tout est déjà tracé.\n\n— — —\n\n📺 Le tutoriel pas-à-pas : https://drive.google.com/file/d/14OmsNUd3EMgWNxGVvmOwLgR3ZloWKNKW/view\n\n📞 Une démo ? 06 14 18 92 25\n🌐 foodeatup.com\n\nSérie « Le Coup de Feu » — saison 4, épisode 96.\nModule HACCP · Chapitre : relevé de température\n\nFoodEatUp est le logiciel qui réunit la caisse, le stock, les plannings, l'HACCP et le marketing d'un restaurant au même endroit.\n",
+        "legende": "39° en cuisine. Une alerte température, et tu sauves la marchandise.\n\nTrente-neuf degrés en cuisine, ton frigo souffre. Le relevé hors seuil te prévient tout de suite. Tu sauves la marchandise.\n\nConcrètement : un contrôle qui se passe bien, parce que tout est déjà tracé.\n\n— — —\n\n🔗 https://site.foodeatup.com/\n\n📞 Une démo ? 06 14 18 92 25\n🌐 foodeatup.com\n\nSérie « Le Coup de Feu » — saison 4, épisode 96.\nModule HACCP · Chapitre : relevé de température\n\nFoodEatUp est le logiciel qui réunit la caisse, le stock, les plannings, l'HACCP et le marketing d'un restaurant au même endroit.\n",
         "hashtags": [
           "Shorts",
           "restaurant",
@@ -11326,7 +11326,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "relevé de température",
           "haccp restaurant"
         ],
-        "cta": "Le tutoriel pas-à-pas",
+        "cta": "Découvrir FoodEatUp",
         "titre": "Relevé de température — HACCP | FoodEatUp"
       }
     },
@@ -11350,7 +11350,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
   "EP097": {
     "publications": {
       "facebook": {
-        "legende": "Six plateformes. Six alertes. Une seule commande, un seul écran.\n\nTes plateformes envoient tout dans FoodEatUp. Six alertes deviennent une file de commandes. La tablette murale, tu peux la ranger.\n\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "legende": "Six plateformes. Six alertes. Une seule commande, un seul écran.\n\nTes plateformes envoient tout dans FoodEatUp. Six alertes deviennent une file de commandes. La tablette murale, tu peux la ranger.\n\n👉 Tout FoodEatUp : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
         "hashtags": [
           "restaurant",
           "restaurateur",
@@ -11367,10 +11367,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "relier uber eats et deliveroo",
           "hubrise restaurant"
         ],
-        "cta": "Demander une démo"
+        "cta": "Découvrir FoodEatUp"
       },
       "instagram": {
-        "legende": "Six plateformes. Six alertes.\nUne seule commande, un seul écran.\n\nTes plateformes envoient tout dans FoodEatUp. Six alertes deviennent une file de commandes. La tablette murale, tu peux la ranger.\n\nLe pas-à-pas complet est dans notre Academy — lien en bio.\nUne démo ? 06 14 18 92 25",
+        "legende": "Six plateformes. Six alertes.\nUne seule commande, un seul écran.\n\nTes plateformes envoient tout dans FoodEatUp. Six alertes deviennent une file de commandes. La tablette murale, tu peux la ranger.\n\nTout est expliqué sur notre site — lien en bio.\nUne démo ? 06 14 18 92 25",
         "hashtags": [
           "restaurant",
           "restaurateur",
@@ -11392,7 +11392,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "relier uber eats et deliveroo",
           "hubrise restaurant"
         ],
-        "cta": "Demander une démo"
+        "cta": "Tout est en bio"
       },
       "tiktok": {
         "legende": "Six plateformes. Six alertes. 😅\nUne seule commande, un seul écran.\n\nTes plateformes envoient tout dans FoodEatUp.",
@@ -11410,10 +11410,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "relier uber eats et deliveroo",
           "hubrise restaurant"
         ],
-        "cta": "Demander une démo"
+        "cta": "Lien en bio"
       },
       "linkedin": {
-        "legende": "Six plateformes. Six alertes.\n\nTes plateformes envoient tout dans FoodEatUp. Six alertes deviennent une file de commandes. La tablette murale, tu peux la ranger.\n\nConcrètement : plus de tablette à surveiller dans un coin.\n\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "legende": "Six plateformes. Six alertes.\n\nTes plateformes envoient tout dans FoodEatUp. Six alertes deviennent une file de commandes. La tablette murale, tu peux la ranger.\n\nConcrètement : plus de tablette à surveiller dans un coin.\n\nEn savoir plus : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
         "hashtags": [
           "restauration",
           "foodeatup",
@@ -11427,10 +11427,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "relier uber eats et deliveroo",
           "hubrise restaurant"
         ],
-        "cta": "Demander une démo"
+        "cta": "Découvrir FoodEatUp"
       },
       "youtube": {
-        "legende": "Six plateformes. Six alertes. Une seule commande, un seul écran.\n\nTes plateformes envoient tout dans FoodEatUp. Six alertes deviennent une file de commandes. La tablette murale, tu peux la ranger.\n\nConcrètement : plus de tablette à surveiller dans un coin.\n\n— — —\n\n📞 Une démo ? 06 14 18 92 25\n🌐 foodeatup.com\n\nSérie « Le Coup de Feu » — saison 4, épisode 97.\nModule HubRise · Chapitre : 2 - Relier Uber Eats et Deliveroo\n\nFoodEatUp est le logiciel qui réunit la caisse, le stock, les plannings, l'HACCP et le marketing d'un restaurant au même endroit.\n",
+        "legende": "Six plateformes. Six alertes. Une seule commande, un seul écran.\n\nTes plateformes envoient tout dans FoodEatUp. Six alertes deviennent une file de commandes. La tablette murale, tu peux la ranger.\n\nConcrètement : plus de tablette à surveiller dans un coin.\n\n— — —\n\n🔗 https://site.foodeatup.com/\n\n📞 Une démo ? 06 14 18 92 25\n🌐 foodeatup.com\n\nSérie « Le Coup de Feu » — saison 4, épisode 97.\nModule HubRise · Chapitre : 2 - Relier Uber Eats et Deliveroo\n\nFoodEatUp est le logiciel qui réunit la caisse, le stock, les plannings, l'HACCP et le marketing d'un restaurant au même endroit.\n",
         "hashtags": [
           "Shorts",
           "restaurant",
@@ -11450,7 +11450,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "relier uber eats et deliveroo",
           "hubrise restaurant"
         ],
-        "cta": "Demander une démo",
+        "cta": "Découvrir FoodEatUp",
         "titre": "Relier Uber Eats et Deliveroo — HubRise | FoodEatUp"
       }
     },
@@ -11468,7 +11468,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
   "EP098": {
     "publications": {
       "facebook": {
-        "legende": "Ton nouveau serveur, en période d'essai. L'IA, c'est utile quand elle sert à quelque chose.\n\nL'intelligence utile, c'est celle qui range tes commandes, pas celle qui danse. Ici, chaque canal alimente le même service.\n\n👉 Le tutoriel complet : https://drive.google.com/file/d/10GjJltEF3utZtfmwHR0qLZ8CTQr5_ioC/view\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "legende": "Ton nouveau serveur, en période d'essai. L'IA, c'est utile quand elle sert à quelque chose.\n\nL'intelligence utile, c'est celle qui range tes commandes, pas celle qui danse. Ici, chaque canal alimente le même service.\n\n👉 Tout FoodEatUp : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
         "hashtags": [
           "restaurant",
           "restaurateur",
@@ -11485,10 +11485,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "commandes multi-canaux",
           "service restaurant"
         ],
-        "cta": "Voir le tutoriel complet"
+        "cta": "Découvrir FoodEatUp"
       },
       "instagram": {
-        "legende": "Ton nouveau serveur, en période d'essai.\nL'IA, c'est utile quand elle sert à quelque chose.\n\nL'intelligence utile, c'est celle qui range tes commandes, pas celle qui danse. Ici, chaque canal alimente le même service.\n\nLe pas-à-pas complet est dans notre Academy — lien en bio.\nUne démo ? 06 14 18 92 25",
+        "legende": "Ton nouveau serveur, en période d'essai.\nL'IA, c'est utile quand elle sert à quelque chose.\n\nL'intelligence utile, c'est celle qui range tes commandes, pas celle qui danse. Ici, chaque canal alimente le même service.\n\nTout est expliqué sur notre site — lien en bio.\nUne démo ? 06 14 18 92 25",
         "hashtags": [
           "restaurant",
           "restaurateur",
@@ -11510,7 +11510,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "commandes multi-canaux",
           "service restaurant"
         ],
-        "cta": "Le pas-à-pas est en bio"
+        "cta": "Tout est en bio"
       },
       "tiktok": {
         "legende": "Ton nouveau serveur, en période d'essai. 😅\nL'IA, c'est utile quand elle sert à quelque chose.\n\nL'intelligence utile, c'est celle qui range tes commandes, pas celle qui danse.",
@@ -11528,10 +11528,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "commandes multi-canaux",
           "service restaurant"
         ],
-        "cta": "Tuto complet en bio"
+        "cta": "Lien en bio"
       },
       "linkedin": {
-        "legende": "Ton nouveau serveur, en période d'essai.\n\nL'intelligence utile, c'est celle qui range tes commandes, pas celle qui danse. Ici, chaque canal alimente le même service.\n\nConcrètement : moins de tickets perdus entre la salle et le pass.\n\nLe tutoriel pas-à-pas : https://drive.google.com/file/d/10GjJltEF3utZtfmwHR0qLZ8CTQr5_ioC/view\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "legende": "Ton nouveau serveur, en période d'essai.\n\nL'intelligence utile, c'est celle qui range tes commandes, pas celle qui danse. Ici, chaque canal alimente le même service.\n\nConcrètement : moins de tickets perdus entre la salle et le pass.\n\nEn savoir plus : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
         "hashtags": [
           "restauration",
           "foodeatup",
@@ -11545,10 +11545,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "commandes multi-canaux",
           "service restaurant"
         ],
-        "cta": "Voir le tutoriel pas-à-pas"
+        "cta": "Découvrir FoodEatUp"
       },
       "youtube": {
-        "legende": "Ton nouveau serveur, en période d'essai. L'IA, c'est utile quand elle sert à quelque chose.\n\nL'intelligence utile, c'est celle qui range tes commandes, pas celle qui danse. Ici, chaque canal alimente le même service.\n\nConcrètement : moins de tickets perdus entre la salle et le pass.\n\n— — —\n\n📺 Le tutoriel pas-à-pas : https://drive.google.com/file/d/10GjJltEF3utZtfmwHR0qLZ8CTQr5_ioC/view\n\n📞 Une démo ? 06 14 18 92 25\n🌐 foodeatup.com\n\nSérie « Le Coup de Feu » — saison 4, épisode 98.\nModule Service · Chapitre : 1 - Commandes multi-canaux\n\nFoodEatUp est le logiciel qui réunit la caisse, le stock, les plannings, l'HACCP et le marketing d'un restaurant au même endroit.\n",
+        "legende": "Ton nouveau serveur, en période d'essai. L'IA, c'est utile quand elle sert à quelque chose.\n\nL'intelligence utile, c'est celle qui range tes commandes, pas celle qui danse. Ici, chaque canal alimente le même service.\n\nConcrètement : moins de tickets perdus entre la salle et le pass.\n\n— — —\n\n🔗 https://site.foodeatup.com/\n\n📞 Une démo ? 06 14 18 92 25\n🌐 foodeatup.com\n\nSérie « Le Coup de Feu » — saison 4, épisode 98.\nModule Service · Chapitre : 1 - Commandes multi-canaux\n\nFoodEatUp est le logiciel qui réunit la caisse, le stock, les plannings, l'HACCP et le marketing d'un restaurant au même endroit.\n",
         "hashtags": [
           "Shorts",
           "restaurant",
@@ -11568,7 +11568,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "commandes multi-canaux",
           "service restaurant"
         ],
-        "cta": "Le tutoriel pas-à-pas",
+        "cta": "Découvrir FoodEatUp",
         "titre": "Commandes multi-canaux — Service | FoodEatUp"
       }
     },
@@ -11590,7 +11590,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
   "EP099": {
     "publications": {
       "facebook": {
-        "legende": "Quarante appels pendant le rush. Quelqu'un devrait répondre. Ce ne sera pas toi.\n\nCaroline répond au téléphone pendant ton rush. Elle prend la réservation, la note, et te la remonte. Aucun appel ne tombe dans le vide.\n\n👉 Le tutoriel complet : https://drive.google.com/file/d/1bMK0HmSH2_JZ1kLF-eaO5a08o50V-WOE/view\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "legende": "Quarante appels pendant le rush. Quelqu'un devrait répondre. Ce ne sera pas toi.\n\nCaroline répond au téléphone pendant ton rush. Elle prend la réservation, la note, et te la remonte. Aucun appel ne tombe dans le vide.\n\n👉 Tout FoodEatUp : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
         "hashtags": [
           "restaurant",
           "restaurateur",
@@ -11606,10 +11606,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "configurer voix et prompts",
           "caroline restaurant"
         ],
-        "cta": "Voir le tutoriel complet"
+        "cta": "Découvrir FoodEatUp"
       },
       "instagram": {
-        "legende": "Quarante appels pendant le rush.\nQuelqu'un devrait répondre. Ce ne sera pas toi.\n\nCaroline répond au téléphone pendant ton rush. Elle prend la réservation, la note, et te la remonte. Aucun appel ne tombe dans le vide.\n\nLe pas-à-pas complet est dans notre Academy — lien en bio.\nUne démo ? 06 14 18 92 25",
+        "legende": "Quarante appels pendant le rush.\nQuelqu'un devrait répondre. Ce ne sera pas toi.\n\nCaroline répond au téléphone pendant ton rush. Elle prend la réservation, la note, et te la remonte. Aucun appel ne tombe dans le vide.\n\nTout est expliqué sur notre site — lien en bio.\nUne démo ? 06 14 18 92 25",
         "hashtags": [
           "restaurant",
           "restaurateur",
@@ -11629,7 +11629,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "configurer voix et prompts",
           "caroline restaurant"
         ],
-        "cta": "Le pas-à-pas est en bio"
+        "cta": "Tout est en bio"
       },
       "tiktok": {
         "legende": "Quarante appels pendant le rush. 😅\nQuelqu'un devrait répondre. Ce ne sera pas toi.\n\nCaroline répond au téléphone pendant ton rush.",
@@ -11646,10 +11646,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "configurer voix et prompts",
           "caroline restaurant"
         ],
-        "cta": "Tuto complet en bio"
+        "cta": "Lien en bio"
       },
       "linkedin": {
-        "legende": "Quarante appels pendant le rush.\n\nCaroline répond au téléphone pendant ton rush. Elle prend la réservation, la note, et te la remonte. Aucun appel ne tombe dans le vide.\n\nConcrètement : le téléphone qui répond même en plein coup de feu.\n\nLe tutoriel pas-à-pas : https://drive.google.com/file/d/1bMK0HmSH2_JZ1kLF-eaO5a08o50V-WOE/view\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "legende": "Quarante appels pendant le rush.\n\nCaroline répond au téléphone pendant ton rush. Elle prend la réservation, la note, et te la remonte. Aucun appel ne tombe dans le vide.\n\nConcrètement : le téléphone qui répond même en plein coup de feu.\n\nEn savoir plus : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
         "hashtags": [
           "restauration",
           "foodeatup",
@@ -11662,10 +11662,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "configurer voix et prompts",
           "caroline restaurant"
         ],
-        "cta": "Voir le tutoriel pas-à-pas"
+        "cta": "Découvrir FoodEatUp"
       },
       "youtube": {
-        "legende": "Quarante appels pendant le rush. Quelqu'un devrait répondre. Ce ne sera pas toi.\n\nCaroline répond au téléphone pendant ton rush. Elle prend la réservation, la note, et te la remonte. Aucun appel ne tombe dans le vide.\n\nConcrètement : le téléphone qui répond même en plein coup de feu.\n\n— — —\n\n📺 Le tutoriel pas-à-pas : https://drive.google.com/file/d/1bMK0HmSH2_JZ1kLF-eaO5a08o50V-WOE/view\n\n📞 Une démo ? 06 14 18 92 25\n🌐 foodeatup.com\n\nSérie « Le Coup de Feu » — saison 4, épisode 99.\nModule Caroline · Chapitre : 1 - Configurer voix et prompts\n\nFoodEatUp est le logiciel qui réunit la caisse, le stock, les plannings, l'HACCP et le marketing d'un restaurant au même endroit.\n",
+        "legende": "Quarante appels pendant le rush. Quelqu'un devrait répondre. Ce ne sera pas toi.\n\nCaroline répond au téléphone pendant ton rush. Elle prend la réservation, la note, et te la remonte. Aucun appel ne tombe dans le vide.\n\nConcrètement : le téléphone qui répond même en plein coup de feu.\n\n— — —\n\n🔗 https://site.foodeatup.com/\n\n📞 Une démo ? 06 14 18 92 25\n🌐 foodeatup.com\n\nSérie « Le Coup de Feu » — saison 4, épisode 99.\nModule Caroline · Chapitre : 1 - Configurer voix et prompts\n\nFoodEatUp est le logiciel qui réunit la caisse, le stock, les plannings, l'HACCP et le marketing d'un restaurant au même endroit.\n",
         "hashtags": [
           "Shorts",
           "restaurant",
@@ -11683,7 +11683,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "configurer voix et prompts",
           "caroline restaurant"
         ],
-        "cta": "Le tutoriel pas-à-pas",
+        "cta": "Découvrir FoodEatUp",
         "titre": "Configurer voix et prompts — Caroline | FoodEatUp"
       }
     },
@@ -11706,7 +11706,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
   "EP100": {
     "publications": {
       "facebook": {
-        "legende": "Il a mis vingt minutes à filmer. Et deux minutes à te mettre deux étoiles.\n\nTes avis remontent au même endroit, site et Google. Tu réponds à celui qui t'a mis deux étoiles avant qu'il devienne ta vitrine.\n\n👉 Le tutoriel complet : https://drive.google.com/file/d/1Ojw6yesSa0nYEvoCxyNO98EarXVrfaqD/view\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "legende": "Il a mis vingt minutes à filmer. Et deux minutes à te mettre deux étoiles.\n\nTes avis remontent au même endroit, site et Google. Tu réponds à celui qui t'a mis deux étoiles avant qu'il devienne ta vitrine.\n\n👉 Tout FoodEatUp : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
         "hashtags": [
           "restaurant",
           "restaurateur",
@@ -11722,10 +11722,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "fidélisation restaurant",
           "débloquer les avis"
         ],
-        "cta": "Voir le tutoriel complet"
+        "cta": "Découvrir FoodEatUp"
       },
       "instagram": {
-        "legende": "Il a mis vingt minutes à filmer.\nEt deux minutes à te mettre deux étoiles.\n\nTes avis remontent au même endroit, site et Google. Tu réponds à celui qui t'a mis deux étoiles avant qu'il devienne ta vitrine.\n\nLe pas-à-pas complet est dans notre Academy — lien en bio.\nUne démo ? 06 14 18 92 25",
+        "legende": "Il a mis vingt minutes à filmer.\nEt deux minutes à te mettre deux étoiles.\n\nTes avis remontent au même endroit, site et Google. Tu réponds à celui qui t'a mis deux étoiles avant qu'il devienne ta vitrine.\n\nTout est expliqué sur notre site — lien en bio.\nUne démo ? 06 14 18 92 25",
         "hashtags": [
           "restaurant",
           "restaurateur",
@@ -11746,7 +11746,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "fidélisation restaurant",
           "débloquer les avis"
         ],
-        "cta": "Le pas-à-pas est en bio"
+        "cta": "Tout est en bio"
       },
       "tiktok": {
         "legende": "Il a mis vingt minutes à filmer. 😅\nEt deux minutes à te mettre deux étoiles.\n\nTes avis remontent au même endroit, site et Google.",
@@ -11763,10 +11763,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "fidélisation restaurant",
           "débloquer les avis"
         ],
-        "cta": "Tuto complet en bio"
+        "cta": "Lien en bio"
       },
       "linkedin": {
-        "legende": "Il a mis vingt minutes à filmer.\n\nTes avis remontent au même endroit, site et Google. Tu réponds à celui qui t'a mis deux étoiles avant qu'il devienne ta vitrine.\n\nConcrètement : une salle qui se remplit avant l'ouverture.\n\nLe tutoriel pas-à-pas : https://drive.google.com/file/d/1Ojw6yesSa0nYEvoCxyNO98EarXVrfaqD/view\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "legende": "Il a mis vingt minutes à filmer.\n\nTes avis remontent au même endroit, site et Google. Tu réponds à celui qui t'a mis deux étoiles avant qu'il devienne ta vitrine.\n\nConcrètement : une salle qui se remplit avant l'ouverture.\n\nEn savoir plus : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
         "hashtags": [
           "restauration",
           "foodeatup",
@@ -11779,10 +11779,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "fidélisation restaurant",
           "débloquer les avis"
         ],
-        "cta": "Voir le tutoriel pas-à-pas"
+        "cta": "Découvrir FoodEatUp"
       },
       "youtube": {
-        "legende": "Il a mis vingt minutes à filmer. Et deux minutes à te mettre deux étoiles.\n\nTes avis remontent au même endroit, site et Google. Tu réponds à celui qui t'a mis deux étoiles avant qu'il devienne ta vitrine.\n\nConcrètement : une salle qui se remplit avant l'ouverture.\n\n— — —\n\n📺 Le tutoriel pas-à-pas : https://drive.google.com/file/d/1Ojw6yesSa0nYEvoCxyNO98EarXVrfaqD/view\n\n📞 Une démo ? 06 14 18 92 25\n🌐 foodeatup.com\n\nSérie « Le Coup de Feu » — saison 4, épisode 100.\nModule Marketing · Chapitre : 1 - Débloquer les avis\n\nFoodEatUp est le logiciel qui réunit la caisse, le stock, les plannings, l'HACCP et le marketing d'un restaurant au même endroit.\n",
+        "legende": "Il a mis vingt minutes à filmer. Et deux minutes à te mettre deux étoiles.\n\nTes avis remontent au même endroit, site et Google. Tu réponds à celui qui t'a mis deux étoiles avant qu'il devienne ta vitrine.\n\nConcrètement : une salle qui se remplit avant l'ouverture.\n\n— — —\n\n🔗 https://site.foodeatup.com/\n\n📞 Une démo ? 06 14 18 92 25\n🌐 foodeatup.com\n\nSérie « Le Coup de Feu » — saison 4, épisode 100.\nModule Marketing · Chapitre : 1 - Débloquer les avis\n\nFoodEatUp est le logiciel qui réunit la caisse, le stock, les plannings, l'HACCP et le marketing d'un restaurant au même endroit.\n",
         "hashtags": [
           "Shorts",
           "restaurant",
@@ -11801,7 +11801,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "fidélisation restaurant",
           "débloquer les avis"
         ],
-        "cta": "Le tutoriel pas-à-pas",
+        "cta": "Découvrir FoodEatUp",
         "titre": "Débloquer les avis — Marketing | FoodEatUp"
       }
     },
@@ -11822,7 +11822,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
   "EP101": {
     "publications": {
       "facebook": {
-        "legende": "Rapprochement des caisses. Vendredi soir. Ça devrait être une ligne, pas une enquête.\n\nLa clôture, c'est un bouton. Le détail par moyen de paiement, la TVA, l'écart : tout est là, sans calculatrice ni suspense.\n\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "legende": "Rapprochement des caisses. Vendredi soir. Ça devrait être une ligne, pas une enquête.\n\nLa clôture, c'est un bouton. Le détail par moyen de paiement, la TVA, l'écart : tout est là, sans calculatrice ni suspense.\n\n👉 Tout FoodEatUp : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
         "hashtags": [
           "restaurant",
           "restaurateur",
@@ -11839,10 +11839,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "clôturer sa caisse",
           "caisse pos restaurant"
         ],
-        "cta": "Demander une démo"
+        "cta": "Découvrir FoodEatUp"
       },
       "instagram": {
-        "legende": "Rapprochement des caisses. Vendredi soir.\nÇa devrait être une ligne, pas une enquête.\n\nLa clôture, c'est un bouton. Le détail par moyen de paiement, la TVA, l'écart : tout est là, sans calculatrice ni suspense.\n\nLe pas-à-pas complet est dans notre Academy — lien en bio.\nUne démo ? 06 14 18 92 25",
+        "legende": "Rapprochement des caisses. Vendredi soir.\nÇa devrait être une ligne, pas une enquête.\n\nLa clôture, c'est un bouton. Le détail par moyen de paiement, la TVA, l'écart : tout est là, sans calculatrice ni suspense.\n\nTout est expliqué sur notre site — lien en bio.\nUne démo ? 06 14 18 92 25",
         "hashtags": [
           "restaurant",
           "restaurateur",
@@ -11864,7 +11864,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "clôturer sa caisse",
           "caisse pos restaurant"
         ],
-        "cta": "Demander une démo"
+        "cta": "Tout est en bio"
       },
       "tiktok": {
         "legende": "Rapprochement des caisses. Vendredi soir. 😅\nÇa devrait être une ligne, pas une enquête.\n\nLa clôture, c'est un bouton.",
@@ -11882,10 +11882,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "clôturer sa caisse",
           "caisse pos restaurant"
         ],
-        "cta": "Demander une démo"
+        "cta": "Lien en bio"
       },
       "linkedin": {
-        "legende": "Rapprochement des caisses. Vendredi soir.\n\nLa clôture, c'est un bouton. Le détail par moyen de paiement, la TVA, l'écart : tout est là, sans calculatrice ni suspense.\n\nConcrètement : une caisse qui ferme juste, tous les soirs.\n\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "legende": "Rapprochement des caisses. Vendredi soir.\n\nLa clôture, c'est un bouton. Le détail par moyen de paiement, la TVA, l'écart : tout est là, sans calculatrice ni suspense.\n\nConcrètement : une caisse qui ferme juste, tous les soirs.\n\nEn savoir plus : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
         "hashtags": [
           "restauration",
           "foodeatup",
@@ -11899,10 +11899,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "clôturer sa caisse",
           "caisse pos restaurant"
         ],
-        "cta": "Demander une démo"
+        "cta": "Découvrir FoodEatUp"
       },
       "youtube": {
-        "legende": "Rapprochement des caisses. Vendredi soir. Ça devrait être une ligne, pas une enquête.\n\nLa clôture, c'est un bouton. Le détail par moyen de paiement, la TVA, l'écart : tout est là, sans calculatrice ni suspense.\n\nConcrètement : une caisse qui ferme juste, tous les soirs.\n\n— — —\n\n📞 Une démo ? 06 14 18 92 25\n🌐 foodeatup.com\n\nSérie « Le Coup de Feu » — saison 4, épisode 101.\nModule Caisse POS · Chapitre : 6 - Clôturer sa caisse\n\nFoodEatUp est le logiciel qui réunit la caisse, le stock, les plannings, l'HACCP et le marketing d'un restaurant au même endroit.\n",
+        "legende": "Rapprochement des caisses. Vendredi soir. Ça devrait être une ligne, pas une enquête.\n\nLa clôture, c'est un bouton. Le détail par moyen de paiement, la TVA, l'écart : tout est là, sans calculatrice ni suspense.\n\nConcrètement : une caisse qui ferme juste, tous les soirs.\n\n— — —\n\n🔗 https://site.foodeatup.com/\n\n📞 Une démo ? 06 14 18 92 25\n🌐 foodeatup.com\n\nSérie « Le Coup de Feu » — saison 4, épisode 101.\nModule Caisse POS · Chapitre : 6 - Clôturer sa caisse\n\nFoodEatUp est le logiciel qui réunit la caisse, le stock, les plannings, l'HACCP et le marketing d'un restaurant au même endroit.\n",
         "hashtags": [
           "Shorts",
           "restaurant",
@@ -11922,7 +11922,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "clôturer sa caisse",
           "caisse pos restaurant"
         ],
-        "cta": "Demander une démo",
+        "cta": "Découvrir FoodEatUp",
         "titre": "Clôturer sa caisse — Caisse POS | FoodEatUp"
       }
     },
@@ -11933,7 +11933,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
   "EP102": {
     "publications": {
       "facebook": {
-        "legende": "Contrôle surprise. Ou pas. Le jour où c'est le vrai, tu ne bouges pas.\n\nTa checklist est validée chaque jour par ton équipe. Le jour du vrai contrôle, tu ouvres l'historique et tu ne bouges pas.\n\n👉 Le tutoriel complet : https://drive.google.com/file/d/1BiubjVB2WUaP8COM9a9V6_DMWNc1ltvh/view\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "legende": "Contrôle surprise. Ou pas. Le jour où c'est le vrai, tu ne bouges pas.\n\nTa checklist est validée chaque jour par ton équipe. Le jour du vrai contrôle, tu ouvres l'historique et tu ne bouges pas.\n\n👉 Tout FoodEatUp : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
         "hashtags": [
           "restaurant",
           "restaurateur",
@@ -11950,10 +11950,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "checklists hygiène",
           "haccp restaurant"
         ],
-        "cta": "Voir le tutoriel complet"
+        "cta": "Découvrir FoodEatUp"
       },
       "instagram": {
-        "legende": "Contrôle surprise. Ou pas.\nLe jour où c'est le vrai, tu ne bouges pas.\n\nTa checklist est validée chaque jour par ton équipe. Le jour du vrai contrôle, tu ouvres l'historique et tu ne bouges pas.\n\nLe pas-à-pas complet est dans notre Academy — lien en bio.\nUne démo ? 06 14 18 92 25",
+        "legende": "Contrôle surprise. Ou pas.\nLe jour où c'est le vrai, tu ne bouges pas.\n\nTa checklist est validée chaque jour par ton équipe. Le jour du vrai contrôle, tu ouvres l'historique et tu ne bouges pas.\n\nTout est expliqué sur notre site — lien en bio.\nUne démo ? 06 14 18 92 25",
         "hashtags": [
           "restaurant",
           "restaurateur",
@@ -11975,7 +11975,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "checklists hygiène",
           "haccp restaurant"
         ],
-        "cta": "Le pas-à-pas est en bio"
+        "cta": "Tout est en bio"
       },
       "tiktok": {
         "legende": "Contrôle surprise. Ou pas. 😅\nLe jour où c'est le vrai, tu ne bouges pas.\n\nTa checklist est validée chaque jour par ton équipe.",
@@ -11993,10 +11993,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "checklists hygiène",
           "haccp restaurant"
         ],
-        "cta": "Tuto complet en bio"
+        "cta": "Lien en bio"
       },
       "linkedin": {
-        "legende": "Contrôle surprise. Ou pas.\n\nTa checklist est validée chaque jour par ton équipe. Le jour du vrai contrôle, tu ouvres l'historique et tu ne bouges pas.\n\nConcrètement : un contrôle qui se passe bien, parce que tout est déjà tracé.\n\nLe tutoriel pas-à-pas : https://drive.google.com/file/d/1BiubjVB2WUaP8COM9a9V6_DMWNc1ltvh/view\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "legende": "Contrôle surprise. Ou pas.\n\nTa checklist est validée chaque jour par ton équipe. Le jour du vrai contrôle, tu ouvres l'historique et tu ne bouges pas.\n\nConcrètement : un contrôle qui se passe bien, parce que tout est déjà tracé.\n\nEn savoir plus : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
         "hashtags": [
           "restauration",
           "foodeatup",
@@ -12010,10 +12010,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "checklists hygiène",
           "haccp restaurant"
         ],
-        "cta": "Voir le tutoriel pas-à-pas"
+        "cta": "Découvrir FoodEatUp"
       },
       "youtube": {
-        "legende": "Contrôle surprise. Ou pas. Le jour où c'est le vrai, tu ne bouges pas.\n\nTa checklist est validée chaque jour par ton équipe. Le jour du vrai contrôle, tu ouvres l'historique et tu ne bouges pas.\n\nConcrètement : un contrôle qui se passe bien, parce que tout est déjà tracé.\n\n— — —\n\n📺 Le tutoriel pas-à-pas : https://drive.google.com/file/d/1BiubjVB2WUaP8COM9a9V6_DMWNc1ltvh/view\n\n📞 Une démo ? 06 14 18 92 25\n🌐 foodeatup.com\n\nSérie « Le Coup de Feu » — saison 4, épisode 102.\nModule HACCP · Chapitre : checklists hygiène\n\nFoodEatUp est le logiciel qui réunit la caisse, le stock, les plannings, l'HACCP et le marketing d'un restaurant au même endroit.\n",
+        "legende": "Contrôle surprise. Ou pas. Le jour où c'est le vrai, tu ne bouges pas.\n\nTa checklist est validée chaque jour par ton équipe. Le jour du vrai contrôle, tu ouvres l'historique et tu ne bouges pas.\n\nConcrètement : un contrôle qui se passe bien, parce que tout est déjà tracé.\n\n— — —\n\n🔗 https://site.foodeatup.com/\n\n📞 Une démo ? 06 14 18 92 25\n🌐 foodeatup.com\n\nSérie « Le Coup de Feu » — saison 4, épisode 102.\nModule HACCP · Chapitre : checklists hygiène\n\nFoodEatUp est le logiciel qui réunit la caisse, le stock, les plannings, l'HACCP et le marketing d'un restaurant au même endroit.\n",
         "hashtags": [
           "Shorts",
           "restaurant",
@@ -12033,7 +12033,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "checklists hygiène",
           "haccp restaurant"
         ],
-        "cta": "Le tutoriel pas-à-pas",
+        "cta": "Découvrir FoodEatUp",
         "titre": "Checklists hygiène — HACCP | FoodEatUp"
       }
     },
@@ -12054,7 +12054,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
   "EP103": {
     "publications": {
       "facebook": {
-        "legende": "Quarante couverts. Sans prévenir. Prévenu, tu aurais dit oui.\n\nUn groupe qui arrive, tu vérifies la disponibilité réelle en trois secondes : tables libres, horaires, capacité. Tu dis oui en connaissance de cause.\n\n👉 Le tutoriel complet : https://drive.google.com/file/d/1ZcJIts_SFzUvjChwJSxcCGtnlT3NHOCP/view\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "legende": "Quarante couverts. Sans prévenir. Prévenu, tu aurais dit oui.\n\nUn groupe qui arrive, tu vérifies la disponibilité réelle en trois secondes : tables libres, horaires, capacité. Tu dis oui en connaissance de cause.\n\n👉 Tout FoodEatUp : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
         "hashtags": [
           "restaurant",
           "restaurateur",
@@ -12071,10 +12071,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "réservations du jour",
           "réservation restaurant"
         ],
-        "cta": "Voir le tutoriel complet"
+        "cta": "Découvrir FoodEatUp"
       },
       "instagram": {
-        "legende": "Quarante couverts. Sans prévenir.\nPrévenu, tu aurais dit oui.\n\nUn groupe qui arrive, tu vérifies la disponibilité réelle en trois secondes : tables libres, horaires, capacité. Tu dis oui en connaissance de cause.\n\nLe pas-à-pas complet est dans notre Academy — lien en bio.\nUne démo ? 06 14 18 92 25",
+        "legende": "Quarante couverts. Sans prévenir.\nPrévenu, tu aurais dit oui.\n\nUn groupe qui arrive, tu vérifies la disponibilité réelle en trois secondes : tables libres, horaires, capacité. Tu dis oui en connaissance de cause.\n\nTout est expliqué sur notre site — lien en bio.\nUne démo ? 06 14 18 92 25",
         "hashtags": [
           "restaurant",
           "restaurateur",
@@ -12095,7 +12095,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "réservations du jour",
           "réservation restaurant"
         ],
-        "cta": "Le pas-à-pas est en bio"
+        "cta": "Tout est en bio"
       },
       "tiktok": {
         "legende": "Quarante couverts. Sans prévenir. 😅\nPrévenu, tu aurais dit oui.\n\nUn groupe qui arrive, tu vérifies la disponibilité réelle en trois secondes : tables libres, horaires, capacité.",
@@ -12113,10 +12113,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "réservations du jour",
           "réservation restaurant"
         ],
-        "cta": "Tuto complet en bio"
+        "cta": "Lien en bio"
       },
       "linkedin": {
-        "legende": "Quarante couverts. Sans prévenir.\n\nUn groupe qui arrive, tu vérifies la disponibilité réelle en trois secondes : tables libres, horaires, capacité. Tu dis oui en connaissance de cause.\n\nConcrètement : un plan de salle qui reflète la réalité, minute par minute.\n\nLe tutoriel pas-à-pas : https://drive.google.com/file/d/1ZcJIts_SFzUvjChwJSxcCGtnlT3NHOCP/view\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "legende": "Quarante couverts. Sans prévenir.\n\nUn groupe qui arrive, tu vérifies la disponibilité réelle en trois secondes : tables libres, horaires, capacité. Tu dis oui en connaissance de cause.\n\nConcrètement : un plan de salle qui reflète la réalité, minute par minute.\n\nEn savoir plus : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
         "hashtags": [
           "restauration",
           "foodeatup",
@@ -12130,10 +12130,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "réservations du jour",
           "réservation restaurant"
         ],
-        "cta": "Voir le tutoriel pas-à-pas"
+        "cta": "Découvrir FoodEatUp"
       },
       "youtube": {
-        "legende": "Quarante couverts. Sans prévenir. Prévenu, tu aurais dit oui.\n\nUn groupe qui arrive, tu vérifies la disponibilité réelle en trois secondes : tables libres, horaires, capacité. Tu dis oui en connaissance de cause.\n\nConcrètement : un plan de salle qui reflète la réalité, minute par minute.\n\n— — —\n\n📺 Le tutoriel pas-à-pas : https://drive.google.com/file/d/1ZcJIts_SFzUvjChwJSxcCGtnlT3NHOCP/view\n\n📞 Une démo ? 06 14 18 92 25\n🌐 foodeatup.com\n\nSérie « Le Coup de Feu » — saison 4, épisode 103.\nModule Réservation · Chapitre : 1 - Réservations du jour\n\nFoodEatUp est le logiciel qui réunit la caisse, le stock, les plannings, l'HACCP et le marketing d'un restaurant au même endroit.\n",
+        "legende": "Quarante couverts. Sans prévenir. Prévenu, tu aurais dit oui.\n\nUn groupe qui arrive, tu vérifies la disponibilité réelle en trois secondes : tables libres, horaires, capacité. Tu dis oui en connaissance de cause.\n\nConcrètement : un plan de salle qui reflète la réalité, minute par minute.\n\n— — —\n\n🔗 https://site.foodeatup.com/\n\n📞 Une démo ? 06 14 18 92 25\n🌐 foodeatup.com\n\nSérie « Le Coup de Feu » — saison 4, épisode 103.\nModule Réservation · Chapitre : 1 - Réservations du jour\n\nFoodEatUp est le logiciel qui réunit la caisse, le stock, les plannings, l'HACCP et le marketing d'un restaurant au même endroit.\n",
         "hashtags": [
           "Shorts",
           "restaurant",
@@ -12152,7 +12152,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "réservations du jour",
           "réservation restaurant"
         ],
-        "cta": "Le tutoriel pas-à-pas",
+        "cta": "Découvrir FoodEatUp",
         "titre": "Réservations du jour — Réservation | FoodEatUp"
       }
     },
@@ -12173,7 +12173,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
   "EP104": {
     "publications": {
       "facebook": {
-        "legende": "Table de huit. 20 h 30. Un no-show, ça se prévient.\n\nTu marques le no-show, la table se libère immédiatement et repart à la vente. Le client, lui, garde son historique.\n\n👉 Le tutoriel complet : https://drive.google.com/file/d/1DZKefLYV1_F9_uL-sJ79fb5srfGnROBp/view\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "legende": "Table de huit. 20 h 30. Un no-show, ça se prévient.\n\nTu marques le no-show, la table se libère immédiatement et repart à la vente. Le client, lui, garde son historique.\n\n👉 Tout FoodEatUp : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
         "hashtags": [
           "restaurant",
           "restaurateur",
@@ -12190,10 +12190,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "gérer et no-shows",
           "réservation restaurant"
         ],
-        "cta": "Voir le tutoriel complet"
+        "cta": "Découvrir FoodEatUp"
       },
       "instagram": {
-        "legende": "Table de huit. 20 h 30.\nUn no-show, ça se prévient.\n\nTu marques le no-show, la table se libère immédiatement et repart à la vente. Le client, lui, garde son historique.\n\nLe pas-à-pas complet est dans notre Academy — lien en bio.\nUne démo ? 06 14 18 92 25",
+        "legende": "Table de huit. 20 h 30.\nUn no-show, ça se prévient.\n\nTu marques le no-show, la table se libère immédiatement et repart à la vente. Le client, lui, garde son historique.\n\nTout est expliqué sur notre site — lien en bio.\nUne démo ? 06 14 18 92 25",
         "hashtags": [
           "restaurant",
           "restaurateur",
@@ -12214,7 +12214,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "gérer et no-shows",
           "réservation restaurant"
         ],
-        "cta": "Le pas-à-pas est en bio"
+        "cta": "Tout est en bio"
       },
       "tiktok": {
         "legende": "Table de huit. 20 h 30. 😅\nUn no-show, ça se prévient.\n\nTu marques le no-show, la table se libère immédiatement et repart à la vente.",
@@ -12232,10 +12232,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "gérer et no-shows",
           "réservation restaurant"
         ],
-        "cta": "Tuto complet en bio"
+        "cta": "Lien en bio"
       },
       "linkedin": {
-        "legende": "Table de huit. 20 h 30.\n\nTu marques le no-show, la table se libère immédiatement et repart à la vente. Le client, lui, garde son historique.\n\nConcrètement : un plan de salle qui reflète la réalité, minute par minute.\n\nLe tutoriel pas-à-pas : https://drive.google.com/file/d/1DZKefLYV1_F9_uL-sJ79fb5srfGnROBp/view\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "legende": "Table de huit. 20 h 30.\n\nTu marques le no-show, la table se libère immédiatement et repart à la vente. Le client, lui, garde son historique.\n\nConcrètement : un plan de salle qui reflète la réalité, minute par minute.\n\nEn savoir plus : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
         "hashtags": [
           "restauration",
           "foodeatup",
@@ -12249,10 +12249,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "gérer et no-shows",
           "réservation restaurant"
         ],
-        "cta": "Voir le tutoriel pas-à-pas"
+        "cta": "Découvrir FoodEatUp"
       },
       "youtube": {
-        "legende": "Table de huit. 20 h 30. Un no-show, ça se prévient.\n\nTu marques le no-show, la table se libère immédiatement et repart à la vente. Le client, lui, garde son historique.\n\nConcrètement : un plan de salle qui reflète la réalité, minute par minute.\n\n— — —\n\n📺 Le tutoriel pas-à-pas : https://drive.google.com/file/d/1DZKefLYV1_F9_uL-sJ79fb5srfGnROBp/view\n\n📞 Une démo ? 06 14 18 92 25\n🌐 foodeatup.com\n\nSérie « Le Coup de Feu » — saison 4, épisode 104.\nModule Réservation · Chapitre : 3 - Gérer et no-shows\n\nFoodEatUp est le logiciel qui réunit la caisse, le stock, les plannings, l'HACCP et le marketing d'un restaurant au même endroit.\n",
+        "legende": "Table de huit. 20 h 30. Un no-show, ça se prévient.\n\nTu marques le no-show, la table se libère immédiatement et repart à la vente. Le client, lui, garde son historique.\n\nConcrètement : un plan de salle qui reflète la réalité, minute par minute.\n\n— — —\n\n🔗 https://site.foodeatup.com/\n\n📞 Une démo ? 06 14 18 92 25\n🌐 foodeatup.com\n\nSérie « Le Coup de Feu » — saison 4, épisode 104.\nModule Réservation · Chapitre : 3 - Gérer et no-shows\n\nFoodEatUp est le logiciel qui réunit la caisse, le stock, les plannings, l'HACCP et le marketing d'un restaurant au même endroit.\n",
         "hashtags": [
           "Shorts",
           "restaurant",
@@ -12271,7 +12271,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "gérer et no-shows",
           "réservation restaurant"
         ],
-        "cta": "Le tutoriel pas-à-pas",
+        "cta": "Découvrir FoodEatUp",
         "titre": "Gérer et no-shows — Réservation | FoodEatUp"
       }
     },
@@ -12291,7 +12291,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
   "EP105": {
     "publications": {
       "facebook": {
-        "legende": "Dernière table du samedi. Le plus rapide gagne. Rends-la réservable en ligne.\n\nTes créneaux sont réservables en ligne, en direct, avec tes vraies disponibilités. Le premier qui réserve a la table.\n\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "legende": "Dernière table du samedi. Le plus rapide gagne. Rends-la réservable en ligne.\n\nTes créneaux sont réservables en ligne, en direct, avec tes vraies disponibilités. Le premier qui réserve a la table.\n\n👉 Tout FoodEatUp : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
         "hashtags": [
           "restaurant",
           "restaurateur",
@@ -12308,10 +12308,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "réservations et horaires",
           "mon site restaurant"
         ],
-        "cta": "Demander une démo"
+        "cta": "Découvrir FoodEatUp"
       },
       "instagram": {
-        "legende": "Dernière table du samedi.\nLe plus rapide gagne. Rends-la réservable en ligne.\n\nTes créneaux sont réservables en ligne, en direct, avec tes vraies disponibilités. Le premier qui réserve a la table.\n\nLe pas-à-pas complet est dans notre Academy — lien en bio.\nUne démo ? 06 14 18 92 25",
+        "legende": "Dernière table du samedi.\nLe plus rapide gagne. Rends-la réservable en ligne.\n\nTes créneaux sont réservables en ligne, en direct, avec tes vraies disponibilités. Le premier qui réserve a la table.\n\nTout est expliqué sur notre site — lien en bio.\nUne démo ? 06 14 18 92 25",
         "hashtags": [
           "restaurant",
           "restaurateur",
@@ -12332,7 +12332,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "réservations et horaires",
           "mon site restaurant"
         ],
-        "cta": "Demander une démo"
+        "cta": "Tout est en bio"
       },
       "tiktok": {
         "legende": "Dernière table du samedi. 😅\nLe plus rapide gagne. Rends-la réservable en ligne.\n\nTes créneaux sont réservables en ligne, en direct, avec tes vraies disponibilités.",
@@ -12350,10 +12350,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "réservations et horaires",
           "mon site restaurant"
         ],
-        "cta": "Demander une démo"
+        "cta": "Lien en bio"
       },
       "linkedin": {
-        "legende": "Dernière table du samedi.\n\nTes créneaux sont réservables en ligne, en direct, avec tes vraies disponibilités. Le premier qui réserve a la table.\n\nConcrètement : un site qui prend des commandes, pas une carte de visite.\n\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "legende": "Dernière table du samedi.\n\nTes créneaux sont réservables en ligne, en direct, avec tes vraies disponibilités. Le premier qui réserve a la table.\n\nConcrètement : un site qui prend des commandes, pas une carte de visite.\n\nEn savoir plus : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
         "hashtags": [
           "restauration",
           "foodeatup",
@@ -12367,10 +12367,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "réservations et horaires",
           "mon site restaurant"
         ],
-        "cta": "Demander une démo"
+        "cta": "Découvrir FoodEatUp"
       },
       "youtube": {
-        "legende": "Dernière table du samedi. Le plus rapide gagne. Rends-la réservable en ligne.\n\nTes créneaux sont réservables en ligne, en direct, avec tes vraies disponibilités. Le premier qui réserve a la table.\n\nConcrètement : un site qui prend des commandes, pas une carte de visite.\n\n— — —\n\n📞 Une démo ? 06 14 18 92 25\n🌐 foodeatup.com\n\nSérie « Le Coup de Feu » — saison 4, épisode 105.\nModule Mon Site · Chapitre : 6 - Réservations et horaires\n\nFoodEatUp est le logiciel qui réunit la caisse, le stock, les plannings, l'HACCP et le marketing d'un restaurant au même endroit.\n",
+        "legende": "Dernière table du samedi. Le plus rapide gagne. Rends-la réservable en ligne.\n\nTes créneaux sont réservables en ligne, en direct, avec tes vraies disponibilités. Le premier qui réserve a la table.\n\nConcrètement : un site qui prend des commandes, pas une carte de visite.\n\n— — —\n\n🔗 https://site.foodeatup.com/\n\n📞 Une démo ? 06 14 18 92 25\n🌐 foodeatup.com\n\nSérie « Le Coup de Feu » — saison 4, épisode 105.\nModule Mon Site · Chapitre : 6 - Réservations et horaires\n\nFoodEatUp est le logiciel qui réunit la caisse, le stock, les plannings, l'HACCP et le marketing d'un restaurant au même endroit.\n",
         "hashtags": [
           "Shorts",
           "restaurant",
@@ -12389,7 +12389,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "réservations et horaires",
           "mon site restaurant"
         ],
-        "cta": "Demander une démo",
+        "cta": "Découvrir FoodEatUp",
         "titre": "Réservations et horaires — Mon Site | FoodEatUp"
       }
     },
@@ -12407,7 +12407,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
   "EP106": {
     "publications": {
       "facebook": {
-        "legende": "On peut payer chacun ? Oui. En trois secondes, pas en trente minutes.\n\nQuatorze parts, quatorze cartes : tu découpes l'addition depuis l'écran, chacun paie ce qu'il doit, le reste dû s'affiche en direct.\n\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "legende": "On peut payer chacun ? Oui. En trois secondes, pas en trente minutes.\n\nQuatorze parts, quatorze cartes : tu découpes l'addition depuis l'écran, chacun paie ce qu'il doit, le reste dû s'affiche en direct.\n\n👉 Tout FoodEatUp : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
         "hashtags": [
           "restaurant",
           "restaurateur",
@@ -12424,10 +12424,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "séparer une addition",
           "caisse pos restaurant"
         ],
-        "cta": "Demander une démo"
+        "cta": "Découvrir FoodEatUp"
       },
       "instagram": {
-        "legende": "On peut payer chacun ?\nOui. En trois secondes, pas en trente minutes.\n\nQuatorze parts, quatorze cartes : tu découpes l'addition depuis l'écran, chacun paie ce qu'il doit, le reste dû s'affiche en direct.\n\nLe pas-à-pas complet est dans notre Academy — lien en bio.\nUne démo ? 06 14 18 92 25",
+        "legende": "On peut payer chacun ?\nOui. En trois secondes, pas en trente minutes.\n\nQuatorze parts, quatorze cartes : tu découpes l'addition depuis l'écran, chacun paie ce qu'il doit, le reste dû s'affiche en direct.\n\nTout est expliqué sur notre site — lien en bio.\nUne démo ? 06 14 18 92 25",
         "hashtags": [
           "restaurant",
           "restaurateur",
@@ -12449,7 +12449,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "séparer une addition",
           "caisse pos restaurant"
         ],
-        "cta": "Demander une démo"
+        "cta": "Tout est en bio"
       },
       "tiktok": {
         "legende": "On peut payer chacun ? 😅\nOui. En trois secondes, pas en trente minutes.\n\nQuatorze parts, quatorze cartes : tu découpes l'addition depuis l'écran, chacun paie ce qu'il doit, le reste dû s'affiche en direct.",
@@ -12467,10 +12467,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "séparer une addition",
           "caisse pos restaurant"
         ],
-        "cta": "Demander une démo"
+        "cta": "Lien en bio"
       },
       "linkedin": {
-        "legende": "On peut payer chacun ?\n\nQuatorze parts, quatorze cartes : tu découpes l'addition depuis l'écran, chacun paie ce qu'il doit, le reste dû s'affiche en direct.\n\nConcrètement : une caisse qui ferme juste, tous les soirs.\n\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "legende": "On peut payer chacun ?\n\nQuatorze parts, quatorze cartes : tu découpes l'addition depuis l'écran, chacun paie ce qu'il doit, le reste dû s'affiche en direct.\n\nConcrètement : une caisse qui ferme juste, tous les soirs.\n\nEn savoir plus : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
         "hashtags": [
           "restauration",
           "foodeatup",
@@ -12484,10 +12484,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "séparer une addition",
           "caisse pos restaurant"
         ],
-        "cta": "Demander une démo"
+        "cta": "Découvrir FoodEatUp"
       },
       "youtube": {
-        "legende": "On peut payer chacun ? Oui. En trois secondes, pas en trente minutes.\n\nQuatorze parts, quatorze cartes : tu découpes l'addition depuis l'écran, chacun paie ce qu'il doit, le reste dû s'affiche en direct.\n\nConcrètement : une caisse qui ferme juste, tous les soirs.\n\n— — —\n\n📞 Une démo ? 06 14 18 92 25\n🌐 foodeatup.com\n\nSérie « Le Coup de Feu » — saison 4, épisode 106.\nModule Caisse POS · Chapitre : 5 - Séparer une addition\n\nFoodEatUp est le logiciel qui réunit la caisse, le stock, les plannings, l'HACCP et le marketing d'un restaurant au même endroit.\n",
+        "legende": "On peut payer chacun ? Oui. En trois secondes, pas en trente minutes.\n\nQuatorze parts, quatorze cartes : tu découpes l'addition depuis l'écran, chacun paie ce qu'il doit, le reste dû s'affiche en direct.\n\nConcrètement : une caisse qui ferme juste, tous les soirs.\n\n— — —\n\n🔗 https://site.foodeatup.com/\n\n📞 Une démo ? 06 14 18 92 25\n🌐 foodeatup.com\n\nSérie « Le Coup de Feu » — saison 4, épisode 106.\nModule Caisse POS · Chapitre : 5 - Séparer une addition\n\nFoodEatUp est le logiciel qui réunit la caisse, le stock, les plannings, l'HACCP et le marketing d'un restaurant au même endroit.\n",
         "hashtags": [
           "Shorts",
           "restaurant",
@@ -12507,7 +12507,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "séparer une addition",
           "caisse pos restaurant"
         ],
-        "cta": "Demander une démo",
+        "cta": "Découvrir FoodEatUp",
         "titre": "Séparer une addition — Caisse POS | FoodEatUp"
       }
     },
@@ -12518,7 +12518,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
   "EP107": {
     "publications": {
       "facebook": {
-        "legende": "Tout le monde a un tour. Ta caisse, elle, ne perd jamais une addition.\n\nL'addition est rattachée à la table dès la commande. Elle ne se perd pas, elle ne s'oublie pas, elle ne disparaît pas.\n\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "legende": "Tout le monde a un tour. Ta caisse, elle, ne perd jamais une addition.\n\nL'addition est rattachée à la table dès la commande. Elle ne se perd pas, elle ne s'oublie pas, elle ne disparaît pas.\n\n👉 Tout FoodEatUp : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
         "hashtags": [
           "restaurant",
           "restaurateur",
@@ -12535,10 +12535,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "encaisser une commande",
           "caisse pos restaurant"
         ],
-        "cta": "Demander une démo"
+        "cta": "Découvrir FoodEatUp"
       },
       "instagram": {
-        "legende": "Tout le monde a un tour.\nTa caisse, elle, ne perd jamais une addition.\n\nL'addition est rattachée à la table dès la commande. Elle ne se perd pas, elle ne s'oublie pas, elle ne disparaît pas.\n\nLe pas-à-pas complet est dans notre Academy — lien en bio.\nUne démo ? 06 14 18 92 25",
+        "legende": "Tout le monde a un tour.\nTa caisse, elle, ne perd jamais une addition.\n\nL'addition est rattachée à la table dès la commande. Elle ne se perd pas, elle ne s'oublie pas, elle ne disparaît pas.\n\nTout est expliqué sur notre site — lien en bio.\nUne démo ? 06 14 18 92 25",
         "hashtags": [
           "restaurant",
           "restaurateur",
@@ -12560,7 +12560,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "encaisser une commande",
           "caisse pos restaurant"
         ],
-        "cta": "Demander une démo"
+        "cta": "Tout est en bio"
       },
       "tiktok": {
         "legende": "Tout le monde a un tour. 😅\nTa caisse, elle, ne perd jamais une addition.\n\nL'addition est rattachée à la table dès la commande.",
@@ -12578,10 +12578,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "encaisser une commande",
           "caisse pos restaurant"
         ],
-        "cta": "Demander une démo"
+        "cta": "Lien en bio"
       },
       "linkedin": {
-        "legende": "Tout le monde a un tour.\n\nL'addition est rattachée à la table dès la commande. Elle ne se perd pas, elle ne s'oublie pas, elle ne disparaît pas.\n\nConcrètement : une caisse qui ferme juste, tous les soirs.\n\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "legende": "Tout le monde a un tour.\n\nL'addition est rattachée à la table dès la commande. Elle ne se perd pas, elle ne s'oublie pas, elle ne disparaît pas.\n\nConcrètement : une caisse qui ferme juste, tous les soirs.\n\nEn savoir plus : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
         "hashtags": [
           "restauration",
           "foodeatup",
@@ -12595,10 +12595,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "encaisser une commande",
           "caisse pos restaurant"
         ],
-        "cta": "Demander une démo"
+        "cta": "Découvrir FoodEatUp"
       },
       "youtube": {
-        "legende": "Tout le monde a un tour. Ta caisse, elle, ne perd jamais une addition.\n\nL'addition est rattachée à la table dès la commande. Elle ne se perd pas, elle ne s'oublie pas, elle ne disparaît pas.\n\nConcrètement : une caisse qui ferme juste, tous les soirs.\n\n— — —\n\n📞 Une démo ? 06 14 18 92 25\n🌐 foodeatup.com\n\nSérie « Le Coup de Feu » — saison 4, épisode 107.\nModule Caisse POS · Chapitre : 3 - Encaisser une commande\n\nFoodEatUp est le logiciel qui réunit la caisse, le stock, les plannings, l'HACCP et le marketing d'un restaurant au même endroit.\n",
+        "legende": "Tout le monde a un tour. Ta caisse, elle, ne perd jamais une addition.\n\nL'addition est rattachée à la table dès la commande. Elle ne se perd pas, elle ne s'oublie pas, elle ne disparaît pas.\n\nConcrètement : une caisse qui ferme juste, tous les soirs.\n\n— — —\n\n🔗 https://site.foodeatup.com/\n\n📞 Une démo ? 06 14 18 92 25\n🌐 foodeatup.com\n\nSérie « Le Coup de Feu » — saison 4, épisode 107.\nModule Caisse POS · Chapitre : 3 - Encaisser une commande\n\nFoodEatUp est le logiciel qui réunit la caisse, le stock, les plannings, l'HACCP et le marketing d'un restaurant au même endroit.\n",
         "hashtags": [
           "Shorts",
           "restaurant",
@@ -12618,7 +12618,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "encaisser une commande",
           "caisse pos restaurant"
         ],
-        "cta": "Demander une démo",
+        "cta": "Découvrir FoodEatUp",
         "titre": "Encaisser une commande — Caisse POS | FoodEatUp"
       }
     },
@@ -12629,7 +12629,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
   "EP108": {
     "publications": {
       "facebook": {
-        "legende": "Il te faudrait six bras. Ou un seul outil qui fait le reste.\n\nChaque poste voit ce qui le concerne, et seulement ça. Tu n'as pas besoin de six bras, tu as besoin de six écrans qui parlent entre eux.\n\n👉 Le tutoriel complet : https://drive.google.com/file/d/1PmYYGKH00qGUcMc1zehHng3C9fQiH84O/view\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "legende": "Il te faudrait six bras. Ou un seul outil qui fait le reste.\n\nChaque poste voit ce qui le concerne, et seulement ça. Tu n'as pas besoin de six bras, tu as besoin de six écrans qui parlent entre eux.\n\n👉 Tout FoodEatUp : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
         "hashtags": [
           "restaurant",
           "restaurateur",
@@ -12646,10 +12646,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "vue kds par poste",
           "kds restaurant"
         ],
-        "cta": "Voir le tutoriel complet"
+        "cta": "Découvrir FoodEatUp"
       },
       "instagram": {
-        "legende": "Il te faudrait six bras.\nOu un seul outil qui fait le reste.\n\nChaque poste voit ce qui le concerne, et seulement ça. Tu n'as pas besoin de six bras, tu as besoin de six écrans qui parlent entre eux.\n\nLe pas-à-pas complet est dans notre Academy — lien en bio.\nUne démo ? 06 14 18 92 25",
+        "legende": "Il te faudrait six bras.\nOu un seul outil qui fait le reste.\n\nChaque poste voit ce qui le concerne, et seulement ça. Tu n'as pas besoin de six bras, tu as besoin de six écrans qui parlent entre eux.\n\nTout est expliqué sur notre site — lien en bio.\nUne démo ? 06 14 18 92 25",
         "hashtags": [
           "restaurant",
           "restaurateur",
@@ -12670,7 +12670,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "vue kds par poste",
           "kds restaurant"
         ],
-        "cta": "Le pas-à-pas est en bio"
+        "cta": "Tout est en bio"
       },
       "tiktok": {
         "legende": "Il te faudrait six bras. 😅\nOu un seul outil qui fait le reste.\n\nChaque poste voit ce qui le concerne, et seulement ça.",
@@ -12688,10 +12688,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "vue kds par poste",
           "kds restaurant"
         ],
-        "cta": "Tuto complet en bio"
+        "cta": "Lien en bio"
       },
       "linkedin": {
-        "legende": "Il te faudrait six bras.\n\nChaque poste voit ce qui le concerne, et seulement ça. Tu n'as pas besoin de six bras, tu as besoin de six écrans qui parlent entre eux.\n\nConcrètement : une cuisine qui sait quoi sortir, et quand.\n\nLe tutoriel pas-à-pas : https://drive.google.com/file/d/1PmYYGKH00qGUcMc1zehHng3C9fQiH84O/view\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "legende": "Il te faudrait six bras.\n\nChaque poste voit ce qui le concerne, et seulement ça. Tu n'as pas besoin de six bras, tu as besoin de six écrans qui parlent entre eux.\n\nConcrètement : une cuisine qui sait quoi sortir, et quand.\n\nEn savoir plus : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
         "hashtags": [
           "restauration",
           "foodeatup",
@@ -12705,10 +12705,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "vue kds par poste",
           "kds restaurant"
         ],
-        "cta": "Voir le tutoriel pas-à-pas"
+        "cta": "Découvrir FoodEatUp"
       },
       "youtube": {
-        "legende": "Il te faudrait six bras. Ou un seul outil qui fait le reste.\n\nChaque poste voit ce qui le concerne, et seulement ça. Tu n'as pas besoin de six bras, tu as besoin de six écrans qui parlent entre eux.\n\nConcrètement : une cuisine qui sait quoi sortir, et quand.\n\n— — —\n\n📺 Le tutoriel pas-à-pas : https://drive.google.com/file/d/1PmYYGKH00qGUcMc1zehHng3C9fQiH84O/view\n\n📞 Une démo ? 06 14 18 92 25\n🌐 foodeatup.com\n\nSérie « Le Coup de Feu » — saison 4, épisode 108.\nModule KDS · Chapitre : 2 - Vue KDS par poste\n\nFoodEatUp est le logiciel qui réunit la caisse, le stock, les plannings, l'HACCP et le marketing d'un restaurant au même endroit.\n",
+        "legende": "Il te faudrait six bras. Ou un seul outil qui fait le reste.\n\nChaque poste voit ce qui le concerne, et seulement ça. Tu n'as pas besoin de six bras, tu as besoin de six écrans qui parlent entre eux.\n\nConcrètement : une cuisine qui sait quoi sortir, et quand.\n\n— — —\n\n🔗 https://site.foodeatup.com/\n\n📞 Une démo ? 06 14 18 92 25\n🌐 foodeatup.com\n\nSérie « Le Coup de Feu » — saison 4, épisode 108.\nModule KDS · Chapitre : 2 - Vue KDS par poste\n\nFoodEatUp est le logiciel qui réunit la caisse, le stock, les plannings, l'HACCP et le marketing d'un restaurant au même endroit.\n",
         "hashtags": [
           "Shorts",
           "restaurant",
@@ -12728,7 +12728,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "vue kds par poste",
           "kds restaurant"
         ],
-        "cta": "Le tutoriel pas-à-pas",
+        "cta": "Découvrir FoodEatUp",
         "titre": "Vue KDS par poste — KDS | FoodEatUp"
       }
     },
@@ -12750,7 +12750,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
   "EP109": {
     "publications": {
       "facebook": {
-        "legende": "Ta cave à ferments. Suivie et datée, elle ne t'explose pas à la figure.\n\nChaque production est datée, tracée, rattachée à son lot. Ce qui fermente en cave n'est plus une surprise.\n\n👉 Le tutoriel complet : https://drive.google.com/file/d/1qwwJNILNZv3EpqCowlCFUhxeC_2qyZgm/view\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "legende": "Ta cave à ferments. Suivie et datée, elle ne t'explose pas à la figure.\n\nChaque production est datée, tracée, rattachée à son lot. Ce qui fermente en cave n'est plus une surprise.\n\n👉 Tout FoodEatUp : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
         "hashtags": [
           "restaurant",
           "restaurateur",
@@ -12766,10 +12766,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "contrôle hygiène",
           "haccp restaurant"
         ],
-        "cta": "Voir le tutoriel complet"
+        "cta": "Découvrir FoodEatUp"
       },
       "instagram": {
-        "legende": "Ta cave à ferments.\nSuivie et datée, elle ne t'explose pas à la figure.\n\nChaque production est datée, tracée, rattachée à son lot. Ce qui fermente en cave n'est plus une surprise.\n\nLe pas-à-pas complet est dans notre Academy — lien en bio.\nUne démo ? 06 14 18 92 25",
+        "legende": "Ta cave à ferments.\nSuivie et datée, elle ne t'explose pas à la figure.\n\nChaque production est datée, tracée, rattachée à son lot. Ce qui fermente en cave n'est plus une surprise.\n\nTout est expliqué sur notre site — lien en bio.\nUne démo ? 06 14 18 92 25",
         "hashtags": [
           "restaurant",
           "restaurateur",
@@ -12790,7 +12790,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "contrôle hygiène",
           "haccp restaurant"
         ],
-        "cta": "Le pas-à-pas est en bio"
+        "cta": "Tout est en bio"
       },
       "tiktok": {
         "legende": "Ta cave à ferments. 😅\nSuivie et datée, elle ne t'explose pas à la figure.\n\nChaque production est datée, tracée, rattachée à son lot.",
@@ -12807,10 +12807,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "contrôle hygiène",
           "haccp restaurant"
         ],
-        "cta": "Tuto complet en bio"
+        "cta": "Lien en bio"
       },
       "linkedin": {
-        "legende": "Ta cave à ferments.\n\nChaque production est datée, tracée, rattachée à son lot. Ce qui fermente en cave n'est plus une surprise.\n\nConcrètement : un contrôle qui se passe bien, parce que tout est déjà tracé.\n\nLe tutoriel pas-à-pas : https://drive.google.com/file/d/1qwwJNILNZv3EpqCowlCFUhxeC_2qyZgm/view\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "legende": "Ta cave à ferments.\n\nChaque production est datée, tracée, rattachée à son lot. Ce qui fermente en cave n'est plus une surprise.\n\nConcrètement : un contrôle qui se passe bien, parce que tout est déjà tracé.\n\nEn savoir plus : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
         "hashtags": [
           "restauration",
           "foodeatup",
@@ -12823,10 +12823,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "contrôle hygiène",
           "haccp restaurant"
         ],
-        "cta": "Voir le tutoriel pas-à-pas"
+        "cta": "Découvrir FoodEatUp"
       },
       "youtube": {
-        "legende": "Ta cave à ferments. Suivie et datée, elle ne t'explose pas à la figure.\n\nChaque production est datée, tracée, rattachée à son lot. Ce qui fermente en cave n'est plus une surprise.\n\nConcrètement : un contrôle qui se passe bien, parce que tout est déjà tracé.\n\n— — —\n\n📺 Le tutoriel pas-à-pas : https://drive.google.com/file/d/1qwwJNILNZv3EpqCowlCFUhxeC_2qyZgm/view\n\n📞 Une démo ? 06 14 18 92 25\n🌐 foodeatup.com\n\nSérie « Le Coup de Feu » — saison 4, épisode 109.\nModule HACCP · Chapitre : traçabilité\n\nFoodEatUp est le logiciel qui réunit la caisse, le stock, les plannings, l'HACCP et le marketing d'un restaurant au même endroit.\n",
+        "legende": "Ta cave à ferments. Suivie et datée, elle ne t'explose pas à la figure.\n\nChaque production est datée, tracée, rattachée à son lot. Ce qui fermente en cave n'est plus une surprise.\n\nConcrètement : un contrôle qui se passe bien, parce que tout est déjà tracé.\n\n— — —\n\n🔗 https://site.foodeatup.com/\n\n📞 Une démo ? 06 14 18 92 25\n🌐 foodeatup.com\n\nSérie « Le Coup de Feu » — saison 4, épisode 109.\nModule HACCP · Chapitre : traçabilité\n\nFoodEatUp est le logiciel qui réunit la caisse, le stock, les plannings, l'HACCP et le marketing d'un restaurant au même endroit.\n",
         "hashtags": [
           "Shorts",
           "restaurant",
@@ -12845,7 +12845,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "contrôle hygiène",
           "haccp restaurant"
         ],
-        "cta": "Le tutoriel pas-à-pas",
+        "cta": "Découvrir FoodEatUp",
         "titre": "Traçabilité — HACCP | FoodEatUp"
       }
     },
@@ -12867,7 +12867,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
   "EP110": {
     "publications": {
       "facebook": {
-        "legende": "Tu suis toutes les tendances. Regarde surtout lesquelles se vendent.\n\nLa tendance, tu la testes. Tu regardes ce que ce plat rapporte vraiment, et tu décides de le garder ou pas sur des chiffres.\n\n👉 Le tutoriel complet : https://drive.google.com/file/d/13BlvDmhkU0IsKHXo77VHM7TwMSHKHmpv/view\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "legende": "Tu suis toutes les tendances. Regarde surtout lesquelles se vendent.\n\nLa tendance, tu la testes. Tu regardes ce que ce plat rapporte vraiment, et tu décides de le garder ou pas sur des chiffres.\n\n👉 Tout FoodEatUp : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
         "hashtags": [
           "restaurant",
           "restaurateur",
@@ -12884,10 +12884,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "statistiques par module",
           "stockvision restaurant"
         ],
-        "cta": "Voir le tutoriel complet"
+        "cta": "Découvrir FoodEatUp"
       },
       "instagram": {
-        "legende": "Tu suis toutes les tendances.\nRegarde surtout lesquelles se vendent.\n\nLa tendance, tu la testes. Tu regardes ce que ce plat rapporte vraiment, et tu décides de le garder ou pas sur des chiffres.\n\nLe pas-à-pas complet est dans notre Academy — lien en bio.\nUne démo ? 06 14 18 92 25",
+        "legende": "Tu suis toutes les tendances.\nRegarde surtout lesquelles se vendent.\n\nLa tendance, tu la testes. Tu regardes ce que ce plat rapporte vraiment, et tu décides de le garder ou pas sur des chiffres.\n\nTout est expliqué sur notre site — lien en bio.\nUne démo ? 06 14 18 92 25",
         "hashtags": [
           "restaurant",
           "restaurateur",
@@ -12910,7 +12910,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "statistiques par module",
           "stockvision restaurant"
         ],
-        "cta": "Le pas-à-pas est en bio"
+        "cta": "Tout est en bio"
       },
       "tiktok": {
         "legende": "Tu suis toutes les tendances. 😅\nRegarde surtout lesquelles se vendent.\n\nLa tendance, tu la testes.",
@@ -12928,10 +12928,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "statistiques par module",
           "stockvision restaurant"
         ],
-        "cta": "Tuto complet en bio"
+        "cta": "Lien en bio"
       },
       "linkedin": {
-        "legende": "Tu suis toutes les tendances.\n\nLa tendance, tu la testes. Tu regardes ce que ce plat rapporte vraiment, et tu décides de le garder ou pas sur des chiffres.\n\nConcrètement : un stock juste et une marge qu'on voit avant de fixer le prix.\n\nLe tutoriel pas-à-pas : https://drive.google.com/file/d/13BlvDmhkU0IsKHXo77VHM7TwMSHKHmpv/view\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "legende": "Tu suis toutes les tendances.\n\nLa tendance, tu la testes. Tu regardes ce que ce plat rapporte vraiment, et tu décides de le garder ou pas sur des chiffres.\n\nConcrètement : un stock juste et une marge qu'on voit avant de fixer le prix.\n\nEn savoir plus : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
         "hashtags": [
           "restauration",
           "foodeatup",
@@ -12945,10 +12945,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "statistiques par module",
           "stockvision restaurant"
         ],
-        "cta": "Voir le tutoriel pas-à-pas"
+        "cta": "Découvrir FoodEatUp"
       },
       "youtube": {
-        "legende": "Tu suis toutes les tendances. Regarde surtout lesquelles se vendent.\n\nLa tendance, tu la testes. Tu regardes ce que ce plat rapporte vraiment, et tu décides de le garder ou pas sur des chiffres.\n\nConcrètement : un stock juste et une marge qu'on voit avant de fixer le prix.\n\n— — —\n\n📺 Le tutoriel pas-à-pas : https://drive.google.com/file/d/13BlvDmhkU0IsKHXo77VHM7TwMSHKHmpv/view\n\n📞 Une démo ? 06 14 18 92 25\n🌐 foodeatup.com\n\nSérie « Le Coup de Feu » — saison 4, épisode 110.\nModule StockVision · Chapitre : 18 - Statistiques par module\n\nFoodEatUp est le logiciel qui réunit la caisse, le stock, les plannings, l'HACCP et le marketing d'un restaurant au même endroit.\n",
+        "legende": "Tu suis toutes les tendances. Regarde surtout lesquelles se vendent.\n\nLa tendance, tu la testes. Tu regardes ce que ce plat rapporte vraiment, et tu décides de le garder ou pas sur des chiffres.\n\nConcrètement : un stock juste et une marge qu'on voit avant de fixer le prix.\n\n— — —\n\n🔗 https://site.foodeatup.com/\n\n📞 Une démo ? 06 14 18 92 25\n🌐 foodeatup.com\n\nSérie « Le Coup de Feu » — saison 4, épisode 110.\nModule StockVision · Chapitre : 18 - Statistiques par module\n\nFoodEatUp est le logiciel qui réunit la caisse, le stock, les plannings, l'HACCP et le marketing d'un restaurant au même endroit.\n",
         "hashtags": [
           "Shorts",
           "restaurant",
@@ -12969,7 +12969,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "statistiques par module",
           "stockvision restaurant"
         ],
-        "cta": "Le tutoriel pas-à-pas",
+        "cta": "Découvrir FoodEatUp",
         "titre": "Statistiques par module — StockVision | FoodEatUp"
       }
     },
@@ -12989,7 +12989,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
   "EP111": {
     "publications": {
       "facebook": {
-        "legende": "La cuisine du futur. Le futur utile, c'est celui qui te fait gagner du temps.\n\nLa production planifiée sort ses ingrédients du stock, sa quantité est validée, sa traçabilité écrite. Le gain de temps est là, pas dans le gadget.\n\n👉 Le tutoriel complet : https://drive.google.com/file/d/1dGFzc7owIIEXOJoqqbfZ9aw_J0d1OLLw/view\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "legende": "La cuisine du futur. Le futur utile, c'est celui qui te fait gagner du temps.\n\nLa production planifiée sort ses ingrédients du stock, sa quantité est validée, sa traçabilité écrite. Le gain de temps est là, pas dans le gadget.\n\n👉 Tout FoodEatUp : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
         "hashtags": [
           "restaurant",
           "restaurateur",
@@ -13006,10 +13006,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "valider une production",
           "stockvision restaurant"
         ],
-        "cta": "Voir le tutoriel complet"
+        "cta": "Découvrir FoodEatUp"
       },
       "instagram": {
-        "legende": "La cuisine du futur.\nLe futur utile, c'est celui qui te fait gagner du temps.\n\nLa production planifiée sort ses ingrédients du stock, sa quantité est validée, sa traçabilité écrite. Le gain de temps est là, pas dans le gadget.\n\nLe pas-à-pas complet est dans notre Academy — lien en bio.\nUne démo ? 06 14 18 92 25",
+        "legende": "La cuisine du futur.\nLe futur utile, c'est celui qui te fait gagner du temps.\n\nLa production planifiée sort ses ingrédients du stock, sa quantité est validée, sa traçabilité écrite. Le gain de temps est là, pas dans le gadget.\n\nTout est expliqué sur notre site — lien en bio.\nUne démo ? 06 14 18 92 25",
         "hashtags": [
           "restaurant",
           "restaurateur",
@@ -13032,7 +13032,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "valider une production",
           "stockvision restaurant"
         ],
-        "cta": "Le pas-à-pas est en bio"
+        "cta": "Tout est en bio"
       },
       "tiktok": {
         "legende": "La cuisine du futur. 😅\nLe futur utile, c'est celui qui te fait gagner du temps.\n\nLa production planifiée sort ses ingrédients du stock, sa quantité est validée, sa traçabilité écrite.",
@@ -13050,10 +13050,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "valider une production",
           "stockvision restaurant"
         ],
-        "cta": "Tuto complet en bio"
+        "cta": "Lien en bio"
       },
       "linkedin": {
-        "legende": "La cuisine du futur.\n\nLa production planifiée sort ses ingrédients du stock, sa quantité est validée, sa traçabilité écrite. Le gain de temps est là, pas dans le gadget.\n\nConcrètement : un stock juste et une marge qu'on voit avant de fixer le prix.\n\nLe tutoriel pas-à-pas : https://drive.google.com/file/d/1dGFzc7owIIEXOJoqqbfZ9aw_J0d1OLLw/view\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "legende": "La cuisine du futur.\n\nLa production planifiée sort ses ingrédients du stock, sa quantité est validée, sa traçabilité écrite. Le gain de temps est là, pas dans le gadget.\n\nConcrètement : un stock juste et une marge qu'on voit avant de fixer le prix.\n\nEn savoir plus : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
         "hashtags": [
           "restauration",
           "foodeatup",
@@ -13067,10 +13067,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "valider une production",
           "stockvision restaurant"
         ],
-        "cta": "Voir le tutoriel pas-à-pas"
+        "cta": "Découvrir FoodEatUp"
       },
       "youtube": {
-        "legende": "La cuisine du futur. Le futur utile, c'est celui qui te fait gagner du temps.\n\nLa production planifiée sort ses ingrédients du stock, sa quantité est validée, sa traçabilité écrite. Le gain de temps est là, pas dans le gadget.\n\nConcrètement : un stock juste et une marge qu'on voit avant de fixer le prix.\n\n— — —\n\n📺 Le tutoriel pas-à-pas : https://drive.google.com/file/d/1dGFzc7owIIEXOJoqqbfZ9aw_J0d1OLLw/view\n\n📞 Une démo ? 06 14 18 92 25\n🌐 foodeatup.com\n\nSérie « Le Coup de Feu » — saison 4, épisode 111.\nModule StockVision · Chapitre : 12 - Valider une production\n\nFoodEatUp est le logiciel qui réunit la caisse, le stock, les plannings, l'HACCP et le marketing d'un restaurant au même endroit.\n",
+        "legende": "La cuisine du futur. Le futur utile, c'est celui qui te fait gagner du temps.\n\nLa production planifiée sort ses ingrédients du stock, sa quantité est validée, sa traçabilité écrite. Le gain de temps est là, pas dans le gadget.\n\nConcrètement : un stock juste et une marge qu'on voit avant de fixer le prix.\n\n— — —\n\n🔗 https://site.foodeatup.com/\n\n📞 Une démo ? 06 14 18 92 25\n🌐 foodeatup.com\n\nSérie « Le Coup de Feu » — saison 4, épisode 111.\nModule StockVision · Chapitre : 12 - Valider une production\n\nFoodEatUp est le logiciel qui réunit la caisse, le stock, les plannings, l'HACCP et le marketing d'un restaurant au même endroit.\n",
         "hashtags": [
           "Shorts",
           "restaurant",
@@ -13091,7 +13091,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "valider une production",
           "stockvision restaurant"
         ],
-        "cta": "Le tutoriel pas-à-pas",
+        "cta": "Découvrir FoodEatUp",
         "titre": "Valider une production — StockVision | FoodEatUp"
       }
     },
@@ -13113,7 +13113,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
   "EP112": {
     "publications": {
       "facebook": {
-        "legende": "La carte du futur. Ou juste une carte en ligne qui marche.\n\nTa carte en ligne, propre, à jour, consultable par QR à table. Pas de casque, pas d'appli à installer.\n\n👉 Le tutoriel complet : https://drive.google.com/file/d/1vf3VeotBty8YMbxSwe8ZnH0v5jjfq4VS/view\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "legende": "La carte du futur. Ou juste une carte en ligne qui marche.\n\nTa carte en ligne, propre, à jour, consultable par QR à table. Pas de casque, pas d'appli à installer.\n\n👉 Tout FoodEatUp : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
         "hashtags": [
           "restaurant",
           "restaurateur",
@@ -13130,10 +13130,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "choisir ton template",
           "mon site restaurant"
         ],
-        "cta": "Voir le tutoriel complet"
+        "cta": "Découvrir FoodEatUp"
       },
       "instagram": {
-        "legende": "La carte du futur.\nOu juste une carte en ligne qui marche.\n\nTa carte en ligne, propre, à jour, consultable par QR à table. Pas de casque, pas d'appli à installer.\n\nLe pas-à-pas complet est dans notre Academy — lien en bio.\nUne démo ? 06 14 18 92 25",
+        "legende": "La carte du futur.\nOu juste une carte en ligne qui marche.\n\nTa carte en ligne, propre, à jour, consultable par QR à table. Pas de casque, pas d'appli à installer.\n\nTout est expliqué sur notre site — lien en bio.\nUne démo ? 06 14 18 92 25",
         "hashtags": [
           "restaurant",
           "restaurateur",
@@ -13154,7 +13154,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "choisir ton template",
           "mon site restaurant"
         ],
-        "cta": "Le pas-à-pas est en bio"
+        "cta": "Tout est en bio"
       },
       "tiktok": {
         "legende": "La carte du futur. 😅\nOu juste une carte en ligne qui marche.\n\nTa carte en ligne, propre, à jour, consultable par QR à table.",
@@ -13172,10 +13172,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "choisir ton template",
           "mon site restaurant"
         ],
-        "cta": "Tuto complet en bio"
+        "cta": "Lien en bio"
       },
       "linkedin": {
-        "legende": "La carte du futur.\n\nTa carte en ligne, propre, à jour, consultable par QR à table. Pas de casque, pas d'appli à installer.\n\nConcrètement : un site qui prend des commandes, pas une carte de visite.\n\nLe tutoriel pas-à-pas : https://drive.google.com/file/d/1vf3VeotBty8YMbxSwe8ZnH0v5jjfq4VS/view\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "legende": "La carte du futur.\n\nTa carte en ligne, propre, à jour, consultable par QR à table. Pas de casque, pas d'appli à installer.\n\nConcrètement : un site qui prend des commandes, pas une carte de visite.\n\nEn savoir plus : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
         "hashtags": [
           "restauration",
           "foodeatup",
@@ -13189,10 +13189,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "choisir ton template",
           "mon site restaurant"
         ],
-        "cta": "Voir le tutoriel pas-à-pas"
+        "cta": "Découvrir FoodEatUp"
       },
       "youtube": {
-        "legende": "La carte du futur. Ou juste une carte en ligne qui marche.\n\nTa carte en ligne, propre, à jour, consultable par QR à table. Pas de casque, pas d'appli à installer.\n\nConcrètement : un site qui prend des commandes, pas une carte de visite.\n\n— — —\n\n📺 Le tutoriel pas-à-pas : https://drive.google.com/file/d/1vf3VeotBty8YMbxSwe8ZnH0v5jjfq4VS/view\n\n📞 Une démo ? 06 14 18 92 25\n🌐 foodeatup.com\n\nSérie « Le Coup de Feu » — saison 4, épisode 112.\nModule Mon Site · Chapitre : 2 - Choisir ton template\n\nFoodEatUp est le logiciel qui réunit la caisse, le stock, les plannings, l'HACCP et le marketing d'un restaurant au même endroit.\n",
+        "legende": "La carte du futur. Ou juste une carte en ligne qui marche.\n\nTa carte en ligne, propre, à jour, consultable par QR à table. Pas de casque, pas d'appli à installer.\n\nConcrètement : un site qui prend des commandes, pas une carte de visite.\n\n— — —\n\n🔗 https://site.foodeatup.com/\n\n📞 Une démo ? 06 14 18 92 25\n🌐 foodeatup.com\n\nSérie « Le Coup de Feu » — saison 4, épisode 112.\nModule Mon Site · Chapitre : 2 - Choisir ton template\n\nFoodEatUp est le logiciel qui réunit la caisse, le stock, les plannings, l'HACCP et le marketing d'un restaurant au même endroit.\n",
         "hashtags": [
           "Shorts",
           "restaurant",
@@ -13211,7 +13211,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "choisir ton template",
           "mon site restaurant"
         ],
-        "cta": "Le tutoriel pas-à-pas",
+        "cta": "Découvrir FoodEatUp",
         "titre": "Choisir ton template — Mon Site | FoodEatUp"
       }
     },
@@ -13232,7 +13232,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
   "EP113": {
     "publications": {
       "facebook": {
-        "legende": "Livraison réussie. Presque. Un suivi de commande, et personne ne mange ta pizza.\n\nLe suivi de commande affiche l'état en direct, de la prise à la remise. Tu sais toujours où est la commande et chez qui.\n\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "legende": "Livraison réussie. Presque. Un suivi de commande, et personne ne mange ta pizza.\n\nLe suivi de commande affiche l'état en direct, de la prise à la remise. Tu sais toujours où est la commande et chez qui.\n\n👉 Tout FoodEatUp : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
         "hashtags": [
           "restaurant",
           "restaurateur",
@@ -13249,10 +13249,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "centraliser les commandes",
           "hubrise restaurant"
         ],
-        "cta": "Demander une démo"
+        "cta": "Découvrir FoodEatUp"
       },
       "instagram": {
-        "legende": "Livraison réussie. Presque.\nUn suivi de commande, et personne ne mange ta pizza.\n\nLe suivi de commande affiche l'état en direct, de la prise à la remise. Tu sais toujours où est la commande et chez qui.\n\nLe pas-à-pas complet est dans notre Academy — lien en bio.\nUne démo ? 06 14 18 92 25",
+        "legende": "Livraison réussie. Presque.\nUn suivi de commande, et personne ne mange ta pizza.\n\nLe suivi de commande affiche l'état en direct, de la prise à la remise. Tu sais toujours où est la commande et chez qui.\n\nTout est expliqué sur notre site — lien en bio.\nUne démo ? 06 14 18 92 25",
         "hashtags": [
           "restaurant",
           "restaurateur",
@@ -13274,7 +13274,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "centraliser les commandes",
           "hubrise restaurant"
         ],
-        "cta": "Demander une démo"
+        "cta": "Tout est en bio"
       },
       "tiktok": {
         "legende": "Livraison réussie. Presque. 😅\nUn suivi de commande, et personne ne mange ta pizza.\n\nLe suivi de commande affiche l'état en direct, de la prise à la remise.",
@@ -13292,10 +13292,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "centraliser les commandes",
           "hubrise restaurant"
         ],
-        "cta": "Demander une démo"
+        "cta": "Lien en bio"
       },
       "linkedin": {
-        "legende": "Livraison réussie. Presque.\n\nLe suivi de commande affiche l'état en direct, de la prise à la remise. Tu sais toujours où est la commande et chez qui.\n\nConcrètement : plus de tablette à surveiller dans un coin.\n\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "legende": "Livraison réussie. Presque.\n\nLe suivi de commande affiche l'état en direct, de la prise à la remise. Tu sais toujours où est la commande et chez qui.\n\nConcrètement : plus de tablette à surveiller dans un coin.\n\nEn savoir plus : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
         "hashtags": [
           "restauration",
           "foodeatup",
@@ -13309,10 +13309,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "centraliser les commandes",
           "hubrise restaurant"
         ],
-        "cta": "Demander une démo"
+        "cta": "Découvrir FoodEatUp"
       },
       "youtube": {
-        "legende": "Livraison réussie. Presque. Un suivi de commande, et personne ne mange ta pizza.\n\nLe suivi de commande affiche l'état en direct, de la prise à la remise. Tu sais toujours où est la commande et chez qui.\n\nConcrètement : plus de tablette à surveiller dans un coin.\n\n— — —\n\n📞 Une démo ? 06 14 18 92 25\n🌐 foodeatup.com\n\nSérie « Le Coup de Feu » — saison 4, épisode 113.\nModule HubRise · Chapitre : 4 - Centraliser les commandes\n\nFoodEatUp est le logiciel qui réunit la caisse, le stock, les plannings, l'HACCP et le marketing d'un restaurant au même endroit.\n",
+        "legende": "Livraison réussie. Presque. Un suivi de commande, et personne ne mange ta pizza.\n\nLe suivi de commande affiche l'état en direct, de la prise à la remise. Tu sais toujours où est la commande et chez qui.\n\nConcrètement : plus de tablette à surveiller dans un coin.\n\n— — —\n\n🔗 https://site.foodeatup.com/\n\n📞 Une démo ? 06 14 18 92 25\n🌐 foodeatup.com\n\nSérie « Le Coup de Feu » — saison 4, épisode 113.\nModule HubRise · Chapitre : 4 - Centraliser les commandes\n\nFoodEatUp est le logiciel qui réunit la caisse, le stock, les plannings, l'HACCP et le marketing d'un restaurant au même endroit.\n",
         "hashtags": [
           "Shorts",
           "restaurant",
@@ -13332,7 +13332,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "centraliser les commandes",
           "hubrise restaurant"
         ],
-        "cta": "Demander une démo",
+        "cta": "Découvrir FoodEatUp",
         "titre": "Centraliser les commandes — HubRise | FoodEatUp"
       }
     },
@@ -13350,7 +13350,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
   "EP114": {
     "publications": {
       "facebook": {
-        "legende": "Ton community manager, c'est ta brigade. Poste. Mais garde un œil sur le service.\n\nCe que ton équipe filme, tu peux l'exploiter : campagne, segment, envoi, résultats. Publier, oui — mesurer, encore mieux.\n\n👉 Le tutoriel complet : https://drive.google.com/file/d/1L1RnS8OdOEMKsVjDho2rKnj4gzihgfW9/view\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "legende": "Ton community manager, c'est ta brigade. Poste. Mais garde un œil sur le service.\n\nCe que ton équipe filme, tu peux l'exploiter : campagne, segment, envoi, résultats. Publier, oui — mesurer, encore mieux.\n\n👉 Tout FoodEatUp : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
         "hashtags": [
           "restaurant",
           "restaurateur",
@@ -13366,10 +13366,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "fidélisation restaurant",
           "lancer une campagne"
         ],
-        "cta": "Voir le tutoriel complet"
+        "cta": "Découvrir FoodEatUp"
       },
       "instagram": {
-        "legende": "Ton community manager, c'est ta brigade.\nPoste. Mais garde un œil sur le service.\n\nCe que ton équipe filme, tu peux l'exploiter : campagne, segment, envoi, résultats. Publier, oui — mesurer, encore mieux.\n\nLe pas-à-pas complet est dans notre Academy — lien en bio.\nUne démo ? 06 14 18 92 25",
+        "legende": "Ton community manager, c'est ta brigade.\nPoste. Mais garde un œil sur le service.\n\nCe que ton équipe filme, tu peux l'exploiter : campagne, segment, envoi, résultats. Publier, oui — mesurer, encore mieux.\n\nTout est expliqué sur notre site — lien en bio.\nUne démo ? 06 14 18 92 25",
         "hashtags": [
           "restaurant",
           "restaurateur",
@@ -13390,7 +13390,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "fidélisation restaurant",
           "lancer une campagne"
         ],
-        "cta": "Le pas-à-pas est en bio"
+        "cta": "Tout est en bio"
       },
       "tiktok": {
         "legende": "Ton community manager, c'est ta brigade. 😅\nPoste. Mais garde un œil sur le service.\n\nCe que ton équipe filme, tu peux l'exploiter : campagne, segment, envoi, résultats.",
@@ -13407,10 +13407,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "fidélisation restaurant",
           "lancer une campagne"
         ],
-        "cta": "Tuto complet en bio"
+        "cta": "Lien en bio"
       },
       "linkedin": {
-        "legende": "Ton community manager, c'est ta brigade.\n\nCe que ton équipe filme, tu peux l'exploiter : campagne, segment, envoi, résultats. Publier, oui — mesurer, encore mieux.\n\nConcrètement : une salle qui se remplit avant l'ouverture.\n\nLe tutoriel pas-à-pas : https://drive.google.com/file/d/1L1RnS8OdOEMKsVjDho2rKnj4gzihgfW9/view\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "legende": "Ton community manager, c'est ta brigade.\n\nCe que ton équipe filme, tu peux l'exploiter : campagne, segment, envoi, résultats. Publier, oui — mesurer, encore mieux.\n\nConcrètement : une salle qui se remplit avant l'ouverture.\n\nEn savoir plus : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
         "hashtags": [
           "restauration",
           "foodeatup",
@@ -13423,10 +13423,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "fidélisation restaurant",
           "lancer une campagne"
         ],
-        "cta": "Voir le tutoriel pas-à-pas"
+        "cta": "Découvrir FoodEatUp"
       },
       "youtube": {
-        "legende": "Ton community manager, c'est ta brigade. Poste. Mais garde un œil sur le service.\n\nCe que ton équipe filme, tu peux l'exploiter : campagne, segment, envoi, résultats. Publier, oui — mesurer, encore mieux.\n\nConcrètement : une salle qui se remplit avant l'ouverture.\n\n— — —\n\n📺 Le tutoriel pas-à-pas : https://drive.google.com/file/d/1L1RnS8OdOEMKsVjDho2rKnj4gzihgfW9/view\n\n📞 Une démo ? 06 14 18 92 25\n🌐 foodeatup.com\n\nSérie « Le Coup de Feu » — saison 4, épisode 114.\nModule Marketing · Chapitre : 5 - Lancer une campagne\n\nFoodEatUp est le logiciel qui réunit la caisse, le stock, les plannings, l'HACCP et le marketing d'un restaurant au même endroit.\n",
+        "legende": "Ton community manager, c'est ta brigade. Poste. Mais garde un œil sur le service.\n\nCe que ton équipe filme, tu peux l'exploiter : campagne, segment, envoi, résultats. Publier, oui — mesurer, encore mieux.\n\nConcrètement : une salle qui se remplit avant l'ouverture.\n\n— — —\n\n🔗 https://site.foodeatup.com/\n\n📞 Une démo ? 06 14 18 92 25\n🌐 foodeatup.com\n\nSérie « Le Coup de Feu » — saison 4, épisode 114.\nModule Marketing · Chapitre : 5 - Lancer une campagne\n\nFoodEatUp est le logiciel qui réunit la caisse, le stock, les plannings, l'HACCP et le marketing d'un restaurant au même endroit.\n",
         "hashtags": [
           "Shorts",
           "restaurant",
@@ -13445,7 +13445,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "fidélisation restaurant",
           "lancer une campagne"
         ],
-        "cta": "Le tutoriel pas-à-pas",
+        "cta": "Découvrir FoodEatUp",
         "titre": "Lancer une campagne — Marketing | FoodEatUp"
       }
     },
@@ -13467,7 +13467,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
   "EP115": {
     "publications": {
       "facebook": {
-        "legende": "Circuit court, très court. Compte ce qui rentre. Et ce qui sort.\n\nCe qui rentre, ce qui sort, ce qui se perd. Circuit court ou pas, la quantité doit être comptée.\n\n👉 Le tutoriel complet : https://drive.google.com/file/d/124mIM7NudoQy5wun_rlSZ6MCrJ2wNykL/view\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "legende": "Circuit court, très court. Compte ce qui rentre. Et ce qui sort.\n\nCe qui rentre, ce qui sort, ce qui se perd. Circuit court ou pas, la quantité doit être comptée.\n\n👉 Tout FoodEatUp : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
         "hashtags": [
           "restaurant",
           "restaurateur",
@@ -13484,10 +13484,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "mouvements de stock",
           "stockvision restaurant"
         ],
-        "cta": "Voir le tutoriel complet"
+        "cta": "Découvrir FoodEatUp"
       },
       "instagram": {
-        "legende": "Circuit court, très court.\nCompte ce qui rentre. Et ce qui sort.\n\nCe qui rentre, ce qui sort, ce qui se perd. Circuit court ou pas, la quantité doit être comptée.\n\nLe pas-à-pas complet est dans notre Academy — lien en bio.\nUne démo ? 06 14 18 92 25",
+        "legende": "Circuit court, très court.\nCompte ce qui rentre. Et ce qui sort.\n\nCe qui rentre, ce qui sort, ce qui se perd. Circuit court ou pas, la quantité doit être comptée.\n\nTout est expliqué sur notre site — lien en bio.\nUne démo ? 06 14 18 92 25",
         "hashtags": [
           "restaurant",
           "restaurateur",
@@ -13510,7 +13510,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "mouvements de stock",
           "stockvision restaurant"
         ],
-        "cta": "Le pas-à-pas est en bio"
+        "cta": "Tout est en bio"
       },
       "tiktok": {
         "legende": "Circuit court, très court. 😅\nCompte ce qui rentre. Et ce qui sort.\n\nCe qui rentre, ce qui sort, ce qui se perd.",
@@ -13528,10 +13528,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "mouvements de stock",
           "stockvision restaurant"
         ],
-        "cta": "Tuto complet en bio"
+        "cta": "Lien en bio"
       },
       "linkedin": {
-        "legende": "Circuit court, très court.\n\nCe qui rentre, ce qui sort, ce qui se perd. Circuit court ou pas, la quantité doit être comptée.\n\nConcrètement : un stock juste et une marge qu'on voit avant de fixer le prix.\n\nLe tutoriel pas-à-pas : https://drive.google.com/file/d/124mIM7NudoQy5wun_rlSZ6MCrJ2wNykL/view\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "legende": "Circuit court, très court.\n\nCe qui rentre, ce qui sort, ce qui se perd. Circuit court ou pas, la quantité doit être comptée.\n\nConcrètement : un stock juste et une marge qu'on voit avant de fixer le prix.\n\nEn savoir plus : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
         "hashtags": [
           "restauration",
           "foodeatup",
@@ -13545,10 +13545,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "mouvements de stock",
           "stockvision restaurant"
         ],
-        "cta": "Voir le tutoriel pas-à-pas"
+        "cta": "Découvrir FoodEatUp"
       },
       "youtube": {
-        "legende": "Circuit court, très court. Compte ce qui rentre. Et ce qui sort.\n\nCe qui rentre, ce qui sort, ce qui se perd. Circuit court ou pas, la quantité doit être comptée.\n\nConcrètement : un stock juste et une marge qu'on voit avant de fixer le prix.\n\n— — —\n\n📺 Le tutoriel pas-à-pas : https://drive.google.com/file/d/124mIM7NudoQy5wun_rlSZ6MCrJ2wNykL/view\n\n📞 Une démo ? 06 14 18 92 25\n🌐 foodeatup.com\n\nSérie « Le Coup de Feu » — saison 4, épisode 115.\nModule StockVision · Chapitre : 16 - Mouvements de stock\n\nFoodEatUp est le logiciel qui réunit la caisse, le stock, les plannings, l'HACCP et le marketing d'un restaurant au même endroit.\n",
+        "legende": "Circuit court, très court. Compte ce qui rentre. Et ce qui sort.\n\nCe qui rentre, ce qui sort, ce qui se perd. Circuit court ou pas, la quantité doit être comptée.\n\nConcrètement : un stock juste et une marge qu'on voit avant de fixer le prix.\n\n— — —\n\n🔗 https://site.foodeatup.com/\n\n📞 Une démo ? 06 14 18 92 25\n🌐 foodeatup.com\n\nSérie « Le Coup de Feu » — saison 4, épisode 115.\nModule StockVision · Chapitre : 16 - Mouvements de stock\n\nFoodEatUp est le logiciel qui réunit la caisse, le stock, les plannings, l'HACCP et le marketing d'un restaurant au même endroit.\n",
         "hashtags": [
           "Shorts",
           "restaurant",
@@ -13569,7 +13569,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "mouvements de stock",
           "stockvision restaurant"
         ],
-        "cta": "Le tutoriel pas-à-pas",
+        "cta": "Découvrir FoodEatUp",
         "titre": "Mouvements de stock — StockVision | FoodEatUp"
       }
     },
@@ -13591,7 +13591,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
   "EP116": {
     "publications": {
       "facebook": {
-        "legende": "Ton système de commandes. Il tient sur un mur. Il tiendrait sur un écran.\n\nTes commandes tiennent sur un écran, pas sur un mur. Chaque poste voit les siennes, dans l'ordre, avec son temps.\n\n👉 Le tutoriel complet : https://drive.google.com/file/d/1Q25eSBcjIuq1XkHnJkFN_QJyK23o1GVg/view\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "legende": "Ton système de commandes. Il tient sur un mur. Il tiendrait sur un écran.\n\nTes commandes tiennent sur un écran, pas sur un mur. Chaque poste voit les siennes, dans l'ordre, avec son temps.\n\n👉 Tout FoodEatUp : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
         "hashtags": [
           "restaurant",
           "restaurateur",
@@ -13608,10 +13608,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "créer tes postes kds",
           "kds restaurant"
         ],
-        "cta": "Voir le tutoriel complet"
+        "cta": "Découvrir FoodEatUp"
       },
       "instagram": {
-        "legende": "Ton système de commandes.\nIl tient sur un mur. Il tiendrait sur un écran.\n\nTes commandes tiennent sur un écran, pas sur un mur. Chaque poste voit les siennes, dans l'ordre, avec son temps.\n\nLe pas-à-pas complet est dans notre Academy — lien en bio.\nUne démo ? 06 14 18 92 25",
+        "legende": "Ton système de commandes.\nIl tient sur un mur. Il tiendrait sur un écran.\n\nTes commandes tiennent sur un écran, pas sur un mur. Chaque poste voit les siennes, dans l'ordre, avec son temps.\n\nTout est expliqué sur notre site — lien en bio.\nUne démo ? 06 14 18 92 25",
         "hashtags": [
           "restaurant",
           "restaurateur",
@@ -13632,7 +13632,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "créer tes postes kds",
           "kds restaurant"
         ],
-        "cta": "Le pas-à-pas est en bio"
+        "cta": "Tout est en bio"
       },
       "tiktok": {
         "legende": "Ton système de commandes. 😅\nIl tient sur un mur. Il tiendrait sur un écran.\n\nTes commandes tiennent sur un écran, pas sur un mur.",
@@ -13650,10 +13650,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "créer tes postes kds",
           "kds restaurant"
         ],
-        "cta": "Tuto complet en bio"
+        "cta": "Lien en bio"
       },
       "linkedin": {
-        "legende": "Ton système de commandes.\n\nTes commandes tiennent sur un écran, pas sur un mur. Chaque poste voit les siennes, dans l'ordre, avec son temps.\n\nConcrètement : une cuisine qui sait quoi sortir, et quand.\n\nLe tutoriel pas-à-pas : https://drive.google.com/file/d/1Q25eSBcjIuq1XkHnJkFN_QJyK23o1GVg/view\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "legende": "Ton système de commandes.\n\nTes commandes tiennent sur un écran, pas sur un mur. Chaque poste voit les siennes, dans l'ordre, avec son temps.\n\nConcrètement : une cuisine qui sait quoi sortir, et quand.\n\nEn savoir plus : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
         "hashtags": [
           "restauration",
           "foodeatup",
@@ -13667,10 +13667,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "créer tes postes kds",
           "kds restaurant"
         ],
-        "cta": "Voir le tutoriel pas-à-pas"
+        "cta": "Découvrir FoodEatUp"
       },
       "youtube": {
-        "legende": "Ton système de commandes. Il tient sur un mur. Il tiendrait sur un écran.\n\nTes commandes tiennent sur un écran, pas sur un mur. Chaque poste voit les siennes, dans l'ordre, avec son temps.\n\nConcrètement : une cuisine qui sait quoi sortir, et quand.\n\n— — —\n\n📺 Le tutoriel pas-à-pas : https://drive.google.com/file/d/1Q25eSBcjIuq1XkHnJkFN_QJyK23o1GVg/view\n\n📞 Une démo ? 06 14 18 92 25\n🌐 foodeatup.com\n\nSérie « Le Coup de Feu » — saison 4, épisode 116.\nModule KDS · Chapitre : 1 - Créer tes postes KDS\n\nFoodEatUp est le logiciel qui réunit la caisse, le stock, les plannings, l'HACCP et le marketing d'un restaurant au même endroit.\n",
+        "legende": "Ton système de commandes. Il tient sur un mur. Il tiendrait sur un écran.\n\nTes commandes tiennent sur un écran, pas sur un mur. Chaque poste voit les siennes, dans l'ordre, avec son temps.\n\nConcrètement : une cuisine qui sait quoi sortir, et quand.\n\n— — —\n\n🔗 https://site.foodeatup.com/\n\n📞 Une démo ? 06 14 18 92 25\n🌐 foodeatup.com\n\nSérie « Le Coup de Feu » — saison 4, épisode 116.\nModule KDS · Chapitre : 1 - Créer tes postes KDS\n\nFoodEatUp est le logiciel qui réunit la caisse, le stock, les plannings, l'HACCP et le marketing d'un restaurant au même endroit.\n",
         "hashtags": [
           "Shorts",
           "restaurant",
@@ -13690,7 +13690,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "créer tes postes kds",
           "kds restaurant"
         ],
-        "cta": "Le tutoriel pas-à-pas",
+        "cta": "Découvrir FoodEatUp",
         "titre": "Créer tes postes KDS — KDS | FoodEatUp"
       }
     },
@@ -13713,7 +13713,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
   "EP117": {
     "publications": {
       "facebook": {
-        "legende": "Le défi à dix minutes. Une fiche technique, et c'est dix minutes tous les jours.\n\nLa fiche technique fixe les quantités, les étapes et le coût. Le plat sort en dix minutes, tous les jours, par n'importe qui de ta brigade.\n\n👉 Le tutoriel complet : https://drive.google.com/file/d/1yqhyPMj9uBq1awmqTwUhisuBJBpY5kt-/view\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "legende": "Le défi à dix minutes. Une fiche technique, et c'est dix minutes tous les jours.\n\nLa fiche technique fixe les quantités, les étapes et le coût. Le plat sort en dix minutes, tous les jours, par n'importe qui de ta brigade.\n\n👉 Tout FoodEatUp : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
         "hashtags": [
           "restaurant",
           "restaurateur",
@@ -13730,10 +13730,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "ma carte, fiche recette",
           "stockvision restaurant"
         ],
-        "cta": "Voir le tutoriel complet"
+        "cta": "Découvrir FoodEatUp"
       },
       "instagram": {
-        "legende": "Le défi à dix minutes.\nUne fiche technique, et c'est dix minutes tous les jours.\n\nLa fiche technique fixe les quantités, les étapes et le coût. Le plat sort en dix minutes, tous les jours, par n'importe qui de ta brigade.\n\nLe pas-à-pas complet est dans notre Academy — lien en bio.\nUne démo ? 06 14 18 92 25",
+        "legende": "Le défi à dix minutes.\nUne fiche technique, et c'est dix minutes tous les jours.\n\nLa fiche technique fixe les quantités, les étapes et le coût. Le plat sort en dix minutes, tous les jours, par n'importe qui de ta brigade.\n\nTout est expliqué sur notre site — lien en bio.\nUne démo ? 06 14 18 92 25",
         "hashtags": [
           "restaurant",
           "restaurateur",
@@ -13756,7 +13756,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "ma carte, fiche recette",
           "stockvision restaurant"
         ],
-        "cta": "Le pas-à-pas est en bio"
+        "cta": "Tout est en bio"
       },
       "tiktok": {
         "legende": "Le défi à dix minutes. 😅\nUne fiche technique, et c'est dix minutes tous les jours.\n\nLa fiche technique fixe les quantités, les étapes et le coût.",
@@ -13774,10 +13774,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "ma carte, fiche recette",
           "stockvision restaurant"
         ],
-        "cta": "Tuto complet en bio"
+        "cta": "Lien en bio"
       },
       "linkedin": {
-        "legende": "Le défi à dix minutes.\n\nLa fiche technique fixe les quantités, les étapes et le coût. Le plat sort en dix minutes, tous les jours, par n'importe qui de ta brigade.\n\nConcrètement : un stock juste et une marge qu'on voit avant de fixer le prix.\n\nLe tutoriel pas-à-pas : https://drive.google.com/file/d/1yqhyPMj9uBq1awmqTwUhisuBJBpY5kt-/view\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "legende": "Le défi à dix minutes.\n\nLa fiche technique fixe les quantités, les étapes et le coût. Le plat sort en dix minutes, tous les jours, par n'importe qui de ta brigade.\n\nConcrètement : un stock juste et une marge qu'on voit avant de fixer le prix.\n\nEn savoir plus : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
         "hashtags": [
           "restauration",
           "foodeatup",
@@ -13791,10 +13791,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "ma carte, fiche recette",
           "stockvision restaurant"
         ],
-        "cta": "Voir le tutoriel pas-à-pas"
+        "cta": "Découvrir FoodEatUp"
       },
       "youtube": {
-        "legende": "Le défi à dix minutes. Une fiche technique, et c'est dix minutes tous les jours.\n\nLa fiche technique fixe les quantités, les étapes et le coût. Le plat sort en dix minutes, tous les jours, par n'importe qui de ta brigade.\n\nConcrètement : un stock juste et une marge qu'on voit avant de fixer le prix.\n\n— — —\n\n📺 Le tutoriel pas-à-pas : https://drive.google.com/file/d/1yqhyPMj9uBq1awmqTwUhisuBJBpY5kt-/view\n\n📞 Une démo ? 06 14 18 92 25\n🌐 foodeatup.com\n\nSérie « Le Coup de Feu » — saison 4, épisode 117.\nModule StockVision · Chapitre : 1 - Ma carte, fiche recette\n\nFoodEatUp est le logiciel qui réunit la caisse, le stock, les plannings, l'HACCP et le marketing d'un restaurant au même endroit.\n",
+        "legende": "Le défi à dix minutes. Une fiche technique, et c'est dix minutes tous les jours.\n\nLa fiche technique fixe les quantités, les étapes et le coût. Le plat sort en dix minutes, tous les jours, par n'importe qui de ta brigade.\n\nConcrètement : un stock juste et une marge qu'on voit avant de fixer le prix.\n\n— — —\n\n🔗 https://site.foodeatup.com/\n\n📞 Une démo ? 06 14 18 92 25\n🌐 foodeatup.com\n\nSérie « Le Coup de Feu » — saison 4, épisode 117.\nModule StockVision · Chapitre : 1 - Ma carte, fiche recette\n\nFoodEatUp est le logiciel qui réunit la caisse, le stock, les plannings, l'HACCP et le marketing d'un restaurant au même endroit.\n",
         "hashtags": [
           "Shorts",
           "restaurant",
@@ -13815,7 +13815,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "ma carte, fiche recette",
           "stockvision restaurant"
         ],
-        "cta": "Le tutoriel pas-à-pas",
+        "cta": "Découvrir FoodEatUp",
         "titre": "Ma carte, fiche recette — StockVision | FoodEatUp"
       }
     },
@@ -13837,7 +13837,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
   "EP118": {
     "publications": {
       "facebook": {
-        "legende": "Le brunch du dimanche. Ils feraient la queue chez toi aussi. Encore faut-il pouvoir réserver.\n\nTon site de réservation et de commande est prêt en un clic, depuis ta carte. La file d'attente devient un carnet plein.\n\n👉 Le tutoriel complet : https://drive.google.com/file/d/1MEMdJJMq2MhQ6H-dU5Nb5ls8ifoqM3U4/view\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "legende": "Le brunch du dimanche. Ils feraient la queue chez toi aussi. Encore faut-il pouvoir réserver.\n\nTon site de réservation et de commande est prêt en un clic, depuis ta carte. La file d'attente devient un carnet plein.\n\n👉 Tout FoodEatUp : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
         "hashtags": [
           "restaurant",
           "restaurateur",
@@ -13854,10 +13854,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "créer un site par ia",
           "mon site restaurant"
         ],
-        "cta": "Voir le tutoriel complet"
+        "cta": "Découvrir FoodEatUp"
       },
       "instagram": {
-        "legende": "Le brunch du dimanche.\nIls feraient la queue chez toi aussi. Encore faut-il pouvoir réserver.\n\nTon site de réservation et de commande est prêt en un clic, depuis ta carte. La file d'attente devient un carnet plein.\n\nLe pas-à-pas complet est dans notre Academy — lien en bio.\nUne démo ? 06 14 18 92 25",
+        "legende": "Le brunch du dimanche.\nIls feraient la queue chez toi aussi. Encore faut-il pouvoir réserver.\n\nTon site de réservation et de commande est prêt en un clic, depuis ta carte. La file d'attente devient un carnet plein.\n\nTout est expliqué sur notre site — lien en bio.\nUne démo ? 06 14 18 92 25",
         "hashtags": [
           "restaurant",
           "restaurateur",
@@ -13878,7 +13878,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "créer un site par ia",
           "mon site restaurant"
         ],
-        "cta": "Le pas-à-pas est en bio"
+        "cta": "Tout est en bio"
       },
       "tiktok": {
         "legende": "Le brunch du dimanche. 😅\nIls feraient la queue chez toi aussi. Encore faut-il pouvoir réserver.\n\nTon site de réservation et de commande est prêt en un clic, depuis ta carte.",
@@ -13896,10 +13896,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "créer un site par ia",
           "mon site restaurant"
         ],
-        "cta": "Tuto complet en bio"
+        "cta": "Lien en bio"
       },
       "linkedin": {
-        "legende": "Le brunch du dimanche.\n\nTon site de réservation et de commande est prêt en un clic, depuis ta carte. La file d'attente devient un carnet plein.\n\nConcrètement : un site qui prend des commandes, pas une carte de visite.\n\nLe tutoriel pas-à-pas : https://drive.google.com/file/d/1MEMdJJMq2MhQ6H-dU5Nb5ls8ifoqM3U4/view\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "legende": "Le brunch du dimanche.\n\nTon site de réservation et de commande est prêt en un clic, depuis ta carte. La file d'attente devient un carnet plein.\n\nConcrètement : un site qui prend des commandes, pas une carte de visite.\n\nEn savoir plus : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
         "hashtags": [
           "restauration",
           "foodeatup",
@@ -13913,10 +13913,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "créer un site par ia",
           "mon site restaurant"
         ],
-        "cta": "Voir le tutoriel pas-à-pas"
+        "cta": "Découvrir FoodEatUp"
       },
       "youtube": {
-        "legende": "Le brunch du dimanche. Ils feraient la queue chez toi aussi. Encore faut-il pouvoir réserver.\n\nTon site de réservation et de commande est prêt en un clic, depuis ta carte. La file d'attente devient un carnet plein.\n\nConcrètement : un site qui prend des commandes, pas une carte de visite.\n\n— — —\n\n📺 Le tutoriel pas-à-pas : https://drive.google.com/file/d/1MEMdJJMq2MhQ6H-dU5Nb5ls8ifoqM3U4/view\n\n📞 Une démo ? 06 14 18 92 25\n🌐 foodeatup.com\n\nSérie « Le Coup de Feu » — saison 4, épisode 118.\nModule Mon Site · Chapitre : 5 - Créer un site par IA\n\nFoodEatUp est le logiciel qui réunit la caisse, le stock, les plannings, l'HACCP et le marketing d'un restaurant au même endroit.\n",
+        "legende": "Le brunch du dimanche. Ils feraient la queue chez toi aussi. Encore faut-il pouvoir réserver.\n\nTon site de réservation et de commande est prêt en un clic, depuis ta carte. La file d'attente devient un carnet plein.\n\nConcrètement : un site qui prend des commandes, pas une carte de visite.\n\n— — —\n\n🔗 https://site.foodeatup.com/\n\n📞 Une démo ? 06 14 18 92 25\n🌐 foodeatup.com\n\nSérie « Le Coup de Feu » — saison 4, épisode 118.\nModule Mon Site · Chapitre : 5 - Créer un site par IA\n\nFoodEatUp est le logiciel qui réunit la caisse, le stock, les plannings, l'HACCP et le marketing d'un restaurant au même endroit.\n",
         "hashtags": [
           "Shorts",
           "restaurant",
@@ -13935,7 +13935,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "créer un site par ia",
           "mon site restaurant"
         ],
-        "cta": "Le tutoriel pas-à-pas",
+        "cta": "Découvrir FoodEatUp",
         "titre": "Créer un site par IA — Mon Site | FoodEatUp"
       }
     },
@@ -13955,7 +13955,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
   "EP119": {
     "publications": {
       "facebook": {
-        "legende": "Ta stratégie d'acquisition. Cinq cents tracts, zéro donnée.\n\nCinq cents tracts, zéro donnée. Ici, chaque client capté entre dans ton fichier, avec son consentement, et devient une campagne.\n\n👉 Le tutoriel complet : https://drive.google.com/file/d/16Ecg7UgVAVDat_ImQG5q-QKYLtAQjX_m/view\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "legende": "Ta stratégie d'acquisition. Cinq cents tracts, zéro donnée.\n\nCinq cents tracts, zéro donnée. Ici, chaque client capté entre dans ton fichier, avec son consentement, et devient une campagne.\n\n👉 Tout FoodEatUp : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
         "hashtags": [
           "restaurant",
           "restaurateur",
@@ -13971,10 +13971,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "fidélisation restaurant",
           "ciblage et consentement"
         ],
-        "cta": "Voir le tutoriel complet"
+        "cta": "Découvrir FoodEatUp"
       },
       "instagram": {
-        "legende": "Ta stratégie d'acquisition.\nCinq cents tracts, zéro donnée.\n\nCinq cents tracts, zéro donnée. Ici, chaque client capté entre dans ton fichier, avec son consentement, et devient une campagne.\n\nLe pas-à-pas complet est dans notre Academy — lien en bio.\nUne démo ? 06 14 18 92 25",
+        "legende": "Ta stratégie d'acquisition.\nCinq cents tracts, zéro donnée.\n\nCinq cents tracts, zéro donnée. Ici, chaque client capté entre dans ton fichier, avec son consentement, et devient une campagne.\n\nTout est expliqué sur notre site — lien en bio.\nUne démo ? 06 14 18 92 25",
         "hashtags": [
           "restaurant",
           "restaurateur",
@@ -13995,7 +13995,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "fidélisation restaurant",
           "ciblage et consentement"
         ],
-        "cta": "Le pas-à-pas est en bio"
+        "cta": "Tout est en bio"
       },
       "tiktok": {
         "legende": "Ta stratégie d'acquisition. 😅\nCinq cents tracts, zéro donnée.\n\nCinq cents tracts, zéro donnée.",
@@ -14012,10 +14012,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "fidélisation restaurant",
           "ciblage et consentement"
         ],
-        "cta": "Tuto complet en bio"
+        "cta": "Lien en bio"
       },
       "linkedin": {
-        "legende": "Ta stratégie d'acquisition.\n\nCinq cents tracts, zéro donnée. Ici, chaque client capté entre dans ton fichier, avec son consentement, et devient une campagne.\n\nConcrètement : une salle qui se remplit avant l'ouverture.\n\nLe tutoriel pas-à-pas : https://drive.google.com/file/d/16Ecg7UgVAVDat_ImQG5q-QKYLtAQjX_m/view\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "legende": "Ta stratégie d'acquisition.\n\nCinq cents tracts, zéro donnée. Ici, chaque client capté entre dans ton fichier, avec son consentement, et devient une campagne.\n\nConcrètement : une salle qui se remplit avant l'ouverture.\n\nEn savoir plus : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
         "hashtags": [
           "restauration",
           "foodeatup",
@@ -14028,10 +14028,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "fidélisation restaurant",
           "ciblage et consentement"
         ],
-        "cta": "Voir le tutoriel pas-à-pas"
+        "cta": "Découvrir FoodEatUp"
       },
       "youtube": {
-        "legende": "Ta stratégie d'acquisition. Cinq cents tracts, zéro donnée.\n\nCinq cents tracts, zéro donnée. Ici, chaque client capté entre dans ton fichier, avec son consentement, et devient une campagne.\n\nConcrètement : une salle qui se remplit avant l'ouverture.\n\n— — —\n\n📺 Le tutoriel pas-à-pas : https://drive.google.com/file/d/16Ecg7UgVAVDat_ImQG5q-QKYLtAQjX_m/view\n\n📞 Une démo ? 06 14 18 92 25\n🌐 foodeatup.com\n\nSérie « Le Coup de Feu » — saison 4, épisode 119.\nModule Marketing · Chapitre : 9 - Ciblage et consentement\n\nFoodEatUp est le logiciel qui réunit la caisse, le stock, les plannings, l'HACCP et le marketing d'un restaurant au même endroit.\n",
+        "legende": "Ta stratégie d'acquisition. Cinq cents tracts, zéro donnée.\n\nCinq cents tracts, zéro donnée. Ici, chaque client capté entre dans ton fichier, avec son consentement, et devient une campagne.\n\nConcrètement : une salle qui se remplit avant l'ouverture.\n\n— — —\n\n🔗 https://site.foodeatup.com/\n\n📞 Une démo ? 06 14 18 92 25\n🌐 foodeatup.com\n\nSérie « Le Coup de Feu » — saison 4, épisode 119.\nModule Marketing · Chapitre : 9 - Ciblage et consentement\n\nFoodEatUp est le logiciel qui réunit la caisse, le stock, les plannings, l'HACCP et le marketing d'un restaurant au même endroit.\n",
         "hashtags": [
           "Shorts",
           "restaurant",
@@ -14050,7 +14050,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "fidélisation restaurant",
           "ciblage et consentement"
         ],
-        "cta": "Le tutoriel pas-à-pas",
+        "cta": "Découvrir FoodEatUp",
         "titre": "Ciblage et consentement — Marketing | FoodEatUp"
       }
     },
@@ -14072,7 +14072,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
   "EP120": {
     "publications": {
       "facebook": {
-        "legende": "Réunion de tes dix logiciels. Ils ne se parlent toujours pas. FoodEatUp, si.\n\nUne base, un écran, une équipe. Ta caisse, ta cuisine, ton stock et ton marketing lisent les mêmes données. Ils finissent enfin par se parler.\n\n👉 Le tutoriel complet : https://drive.google.com/file/d/1MWkfZ-OZ_qv2z6QD9VPwabO5XnGd5UaB/view\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "legende": "Réunion de tes dix logiciels. Ils ne se parlent toujours pas. FoodEatUp, si.\n\nUne base, un écran, une équipe. Ta caisse, ta cuisine, ton stock et ton marketing lisent les mêmes données. Ils finissent enfin par se parler.\n\n👉 Tout FoodEatUp : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
         "hashtags": [
           "restaurant",
           "restaurateur",
@@ -14089,10 +14089,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "lire ses prévisions",
           "predibot restaurant"
         ],
-        "cta": "Voir le tutoriel complet"
+        "cta": "Découvrir FoodEatUp"
       },
       "instagram": {
-        "legende": "Réunion de tes dix logiciels.\nIls ne se parlent toujours pas. FoodEatUp, si.\n\nUne base, un écran, une équipe. Ta caisse, ta cuisine, ton stock et ton marketing lisent les mêmes données. Ils finissent enfin par se parler.\n\nLe pas-à-pas complet est dans notre Academy — lien en bio.\nUne démo ? 06 14 18 92 25",
+        "legende": "Réunion de tes dix logiciels.\nIls ne se parlent toujours pas. FoodEatUp, si.\n\nUne base, un écran, une équipe. Ta caisse, ta cuisine, ton stock et ton marketing lisent les mêmes données. Ils finissent enfin par se parler.\n\nTout est expliqué sur notre site — lien en bio.\nUne démo ? 06 14 18 92 25",
         "hashtags": [
           "restaurant",
           "restaurateur",
@@ -14114,7 +14114,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "lire ses prévisions",
           "predibot restaurant"
         ],
-        "cta": "Le pas-à-pas est en bio"
+        "cta": "Tout est en bio"
       },
       "tiktok": {
         "legende": "Réunion de tes dix logiciels. 😅\nIls ne se parlent toujours pas. FoodEatUp, si.\n\nUne base, un écran, une équipe.",
@@ -14132,10 +14132,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "lire ses prévisions",
           "predibot restaurant"
         ],
-        "cta": "Tuto complet en bio"
+        "cta": "Lien en bio"
       },
       "linkedin": {
-        "legende": "Réunion de tes dix logiciels.\n\nUne base, un écran, une équipe. Ta caisse, ta cuisine, ton stock et ton marketing lisent les mêmes données. Ils finissent enfin par se parler.\n\nConcrètement : voir venir la journée au lieu de la subir.\n\nLe tutoriel pas-à-pas : https://drive.google.com/file/d/1MWkfZ-OZ_qv2z6QD9VPwabO5XnGd5UaB/view\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "legende": "Réunion de tes dix logiciels.\n\nUne base, un écran, une équipe. Ta caisse, ta cuisine, ton stock et ton marketing lisent les mêmes données. Ils finissent enfin par se parler.\n\nConcrètement : voir venir la journée au lieu de la subir.\n\nEn savoir plus : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
         "hashtags": [
           "restauration",
           "foodeatup",
@@ -14149,10 +14149,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "lire ses prévisions",
           "predibot restaurant"
         ],
-        "cta": "Voir le tutoriel pas-à-pas"
+        "cta": "Découvrir FoodEatUp"
       },
       "youtube": {
-        "legende": "Réunion de tes dix logiciels. Ils ne se parlent toujours pas. FoodEatUp, si.\n\nUne base, un écran, une équipe. Ta caisse, ta cuisine, ton stock et ton marketing lisent les mêmes données. Ils finissent enfin par se parler.\n\nConcrètement : voir venir la journée au lieu de la subir.\n\n— — —\n\n📺 Le tutoriel pas-à-pas : https://drive.google.com/file/d/1MWkfZ-OZ_qv2z6QD9VPwabO5XnGd5UaB/view\n\n📞 Une démo ? 06 14 18 92 25\n🌐 foodeatup.com\n\nSérie « Le Coup de Feu » — saison 4, épisode 120.\nModule PrediBot · Chapitre : 1 - Lire ses prévisions\n\nFoodEatUp est le logiciel qui réunit la caisse, le stock, les plannings, l'HACCP et le marketing d'un restaurant au même endroit.\n",
+        "legende": "Réunion de tes dix logiciels. Ils ne se parlent toujours pas. FoodEatUp, si.\n\nUne base, un écran, une équipe. Ta caisse, ta cuisine, ton stock et ton marketing lisent les mêmes données. Ils finissent enfin par se parler.\n\nConcrètement : voir venir la journée au lieu de la subir.\n\n— — —\n\n🔗 https://site.foodeatup.com/\n\n📞 Une démo ? 06 14 18 92 25\n🌐 foodeatup.com\n\nSérie « Le Coup de Feu » — saison 4, épisode 120.\nModule PrediBot · Chapitre : 1 - Lire ses prévisions\n\nFoodEatUp est le logiciel qui réunit la caisse, le stock, les plannings, l'HACCP et le marketing d'un restaurant au même endroit.\n",
         "hashtags": [
           "Shorts",
           "restaurant",
@@ -14172,7 +14172,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "lire ses prévisions",
           "predibot restaurant"
         ],
-        "cta": "Le tutoriel pas-à-pas",
+        "cta": "Découvrir FoodEatUp",
         "titre": "Lire ses prévisions — PrediBot | FoodEatUp"
       }
     },
@@ -14192,7 +14192,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
   "EP121": {
     "publications": {
       "facebook": {
-        "legende": "Alors, sans oignon, mais… Une commande complexe, ça se saisit. Pas ça se subit.\n\nLes modifications se saisissent sur la commande : sans oignon, cuisson, allergie. Elles partent en cuisine avec le plat, écrites noir sur blanc.\n\n👉 Le tutoriel complet : https://drive.google.com/file/d/1PucAO7TE28El_TCLBrAOjct2VJS4mZu2/view\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "legende": "Alors, sans oignon, mais… Une commande complexe, ça se saisit. Pas ça se subit.\n\nLes modifications se saisissent sur la commande : sans oignon, cuisson, allergie. Elles partent en cuisine avec le plat, écrites noir sur blanc.\n\n👉 Tout FoodEatUp : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
         "hashtags": [
           "restaurant",
           "restaurateur",
@@ -14209,10 +14209,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "envoi direct cuisine",
           "service restaurant"
         ],
-        "cta": "Voir le tutoriel complet"
+        "cta": "Découvrir FoodEatUp"
       },
       "instagram": {
-        "legende": "Alors, sans oignon, mais…\nUne commande complexe, ça se saisit. Pas ça se subit.\n\nLes modifications se saisissent sur la commande : sans oignon, cuisson, allergie. Elles partent en cuisine avec le plat, écrites noir sur blanc.\n\nLe pas-à-pas complet est dans notre Academy — lien en bio.\nUne démo ? 06 14 18 92 25",
+        "legende": "Alors, sans oignon, mais…\nUne commande complexe, ça se saisit. Pas ça se subit.\n\nLes modifications se saisissent sur la commande : sans oignon, cuisson, allergie. Elles partent en cuisine avec le plat, écrites noir sur blanc.\n\nTout est expliqué sur notre site — lien en bio.\nUne démo ? 06 14 18 92 25",
         "hashtags": [
           "restaurant",
           "restaurateur",
@@ -14234,7 +14234,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "envoi direct cuisine",
           "service restaurant"
         ],
-        "cta": "Le pas-à-pas est en bio"
+        "cta": "Tout est en bio"
       },
       "tiktok": {
         "legende": "Alors, sans oignon, mais… 😅\nUne commande complexe, ça se saisit. Pas ça se subit.\n\nLes modifications se saisissent sur la commande : sans oignon, cuisson, allergie.",
@@ -14252,10 +14252,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "envoi direct cuisine",
           "service restaurant"
         ],
-        "cta": "Tuto complet en bio"
+        "cta": "Lien en bio"
       },
       "linkedin": {
-        "legende": "Alors, sans oignon, mais…\n\nLes modifications se saisissent sur la commande : sans oignon, cuisson, allergie. Elles partent en cuisine avec le plat, écrites noir sur blanc.\n\nConcrètement : moins de tickets perdus entre la salle et le pass.\n\nLe tutoriel pas-à-pas : https://drive.google.com/file/d/1PucAO7TE28El_TCLBrAOjct2VJS4mZu2/view\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "legende": "Alors, sans oignon, mais…\n\nLes modifications se saisissent sur la commande : sans oignon, cuisson, allergie. Elles partent en cuisine avec le plat, écrites noir sur blanc.\n\nConcrètement : moins de tickets perdus entre la salle et le pass.\n\nEn savoir plus : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
         "hashtags": [
           "restauration",
           "foodeatup",
@@ -14269,10 +14269,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "envoi direct cuisine",
           "service restaurant"
         ],
-        "cta": "Voir le tutoriel pas-à-pas"
+        "cta": "Découvrir FoodEatUp"
       },
       "youtube": {
-        "legende": "Alors, sans oignon, mais… Une commande complexe, ça se saisit. Pas ça se subit.\n\nLes modifications se saisissent sur la commande : sans oignon, cuisson, allergie. Elles partent en cuisine avec le plat, écrites noir sur blanc.\n\nConcrètement : moins de tickets perdus entre la salle et le pass.\n\n— — —\n\n📺 Le tutoriel pas-à-pas : https://drive.google.com/file/d/1PucAO7TE28El_TCLBrAOjct2VJS4mZu2/view\n\n📞 Une démo ? 06 14 18 92 25\n🌐 foodeatup.com\n\nSérie « Le Coup de Feu » — saison 5, épisode 121.\nModule Service · Chapitre : 3 - Envoi direct cuisine\n\nFoodEatUp est le logiciel qui réunit la caisse, le stock, les plannings, l'HACCP et le marketing d'un restaurant au même endroit.\n",
+        "legende": "Alors, sans oignon, mais… Une commande complexe, ça se saisit. Pas ça se subit.\n\nLes modifications se saisissent sur la commande : sans oignon, cuisson, allergie. Elles partent en cuisine avec le plat, écrites noir sur blanc.\n\nConcrètement : moins de tickets perdus entre la salle et le pass.\n\n— — —\n\n🔗 https://site.foodeatup.com/\n\n📞 Une démo ? 06 14 18 92 25\n🌐 foodeatup.com\n\nSérie « Le Coup de Feu » — saison 5, épisode 121.\nModule Service · Chapitre : 3 - Envoi direct cuisine\n\nFoodEatUp est le logiciel qui réunit la caisse, le stock, les plannings, l'HACCP et le marketing d'un restaurant au même endroit.\n",
         "hashtags": [
           "Shorts",
           "restaurant",
@@ -14292,7 +14292,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "envoi direct cuisine",
           "service restaurant"
         ],
-        "cta": "Le tutoriel pas-à-pas",
+        "cta": "Découvrir FoodEatUp",
         "titre": "Envoi direct cuisine — Service | FoodEatUp"
       }
     },
@@ -14313,7 +14313,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
   "EP122": {
     "publications": {
       "facebook": {
-        "legende": "Il dit « comme d'habitude ». Ton fichier client saurait, lui.\n\nLa fiche client te dit qui il est, ce qu'il commande et quand il est venu la dernière fois. « Comme d'habitude » devient une information, pas un bluff.\n\n👉 Le tutoriel complet : https://drive.google.com/file/d/1nUloQCmx2rMx7VpeoN4RjFb9Coj-EfuD/view\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "legende": "Il dit « comme d'habitude ». Ton fichier client saurait, lui.\n\nLa fiche client te dit qui il est, ce qu'il commande et quand il est venu la dernière fois. « Comme d'habitude » devient une information, pas un bluff.\n\n👉 Tout FoodEatUp : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
         "hashtags": [
           "restaurant",
           "restaurateur",
@@ -14329,10 +14329,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "fidélisation restaurant",
           "vue client fidélité"
         ],
-        "cta": "Voir le tutoriel complet"
+        "cta": "Découvrir FoodEatUp"
       },
       "instagram": {
-        "legende": "Il dit « comme d'habitude ».\nTon fichier client saurait, lui.\n\nLa fiche client te dit qui il est, ce qu'il commande et quand il est venu la dernière fois. « Comme d'habitude » devient une information, pas un bluff.\n\nLe pas-à-pas complet est dans notre Academy — lien en bio.\nUne démo ? 06 14 18 92 25",
+        "legende": "Il dit « comme d'habitude ».\nTon fichier client saurait, lui.\n\nLa fiche client te dit qui il est, ce qu'il commande et quand il est venu la dernière fois. « Comme d'habitude » devient une information, pas un bluff.\n\nTout est expliqué sur notre site — lien en bio.\nUne démo ? 06 14 18 92 25",
         "hashtags": [
           "restaurant",
           "restaurateur",
@@ -14353,7 +14353,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "fidélisation restaurant",
           "vue client fidélité"
         ],
-        "cta": "Le pas-à-pas est en bio"
+        "cta": "Tout est en bio"
       },
       "tiktok": {
         "legende": "Il dit « comme d'habitude ». 😅\nTon fichier client saurait, lui.\n\nLa fiche client te dit qui il est, ce qu'il commande et quand il est venu la dernière fois.",
@@ -14370,10 +14370,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "fidélisation restaurant",
           "vue client fidélité"
         ],
-        "cta": "Tuto complet en bio"
+        "cta": "Lien en bio"
       },
       "linkedin": {
-        "legende": "Il dit « comme d'habitude ».\n\nLa fiche client te dit qui il est, ce qu'il commande et quand il est venu la dernière fois. « Comme d'habitude » devient une information, pas un bluff.\n\nConcrètement : une salle qui se remplit avant l'ouverture.\n\nLe tutoriel pas-à-pas : https://drive.google.com/file/d/1nUloQCmx2rMx7VpeoN4RjFb9Coj-EfuD/view\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "legende": "Il dit « comme d'habitude ».\n\nLa fiche client te dit qui il est, ce qu'il commande et quand il est venu la dernière fois. « Comme d'habitude » devient une information, pas un bluff.\n\nConcrètement : une salle qui se remplit avant l'ouverture.\n\nEn savoir plus : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
         "hashtags": [
           "restauration",
           "foodeatup",
@@ -14386,10 +14386,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "fidélisation restaurant",
           "vue client fidélité"
         ],
-        "cta": "Voir le tutoriel pas-à-pas"
+        "cta": "Découvrir FoodEatUp"
       },
       "youtube": {
-        "legende": "Il dit « comme d'habitude ». Ton fichier client saurait, lui.\n\nLa fiche client te dit qui il est, ce qu'il commande et quand il est venu la dernière fois. « Comme d'habitude » devient une information, pas un bluff.\n\nConcrètement : une salle qui se remplit avant l'ouverture.\n\n— — —\n\n📺 Le tutoriel pas-à-pas : https://drive.google.com/file/d/1nUloQCmx2rMx7VpeoN4RjFb9Coj-EfuD/view\n\n📞 Une démo ? 06 14 18 92 25\n🌐 foodeatup.com\n\nSérie « Le Coup de Feu » — saison 5, épisode 122.\nModule Marketing · Chapitre : 20 - Vue client fidélité\n\nFoodEatUp est le logiciel qui réunit la caisse, le stock, les plannings, l'HACCP et le marketing d'un restaurant au même endroit.\n",
+        "legende": "Il dit « comme d'habitude ». Ton fichier client saurait, lui.\n\nLa fiche client te dit qui il est, ce qu'il commande et quand il est venu la dernière fois. « Comme d'habitude » devient une information, pas un bluff.\n\nConcrètement : une salle qui se remplit avant l'ouverture.\n\n— — —\n\n🔗 https://site.foodeatup.com/\n\n📞 Une démo ? 06 14 18 92 25\n🌐 foodeatup.com\n\nSérie « Le Coup de Feu » — saison 5, épisode 122.\nModule Marketing · Chapitre : 20 - Vue client fidélité\n\nFoodEatUp est le logiciel qui réunit la caisse, le stock, les plannings, l'HACCP et le marketing d'un restaurant au même endroit.\n",
         "hashtags": [
           "Shorts",
           "restaurant",
@@ -14408,7 +14408,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "fidélisation restaurant",
           "vue client fidélité"
         ],
-        "cta": "Le tutoriel pas-à-pas",
+        "cta": "Découvrir FoodEatUp",
         "titre": "Vue client fidélité — Marketing | FoodEatUp"
       }
     },
@@ -14428,7 +14428,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
   "EP123": {
     "publications": {
       "facebook": {
-        "legende": "Il annonce ça au dessert. Les régimes et les allergènes, ça se note à la réservation.\n\nLes allergènes et les régimes sont portés par ta carte et par la réservation. L'info arrive en cuisine avant l'entrée, pas au dessert.\n\n👉 Le tutoriel complet : https://drive.google.com/file/d/1yqhyPMj9uBq1awmqTwUhisuBJBpY5kt-/view\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "legende": "Il annonce ça au dessert. Les régimes et les allergènes, ça se note à la réservation.\n\nLes allergènes et les régimes sont portés par ta carte et par la réservation. L'info arrive en cuisine avant l'entrée, pas au dessert.\n\n👉 Tout FoodEatUp : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
         "hashtags": [
           "restaurant",
           "restaurateur",
@@ -14445,10 +14445,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "ma carte, allergènes",
           "stockvision restaurant"
         ],
-        "cta": "Voir le tutoriel complet"
+        "cta": "Découvrir FoodEatUp"
       },
       "instagram": {
-        "legende": "Il annonce ça au dessert.\nLes régimes et les allergènes, ça se note à la réservation.\n\nLes allergènes et les régimes sont portés par ta carte et par la réservation. L'info arrive en cuisine avant l'entrée, pas au dessert.\n\nLe pas-à-pas complet est dans notre Academy — lien en bio.\nUne démo ? 06 14 18 92 25",
+        "legende": "Il annonce ça au dessert.\nLes régimes et les allergènes, ça se note à la réservation.\n\nLes allergènes et les régimes sont portés par ta carte et par la réservation. L'info arrive en cuisine avant l'entrée, pas au dessert.\n\nTout est expliqué sur notre site — lien en bio.\nUne démo ? 06 14 18 92 25",
         "hashtags": [
           "restaurant",
           "restaurateur",
@@ -14471,7 +14471,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "ma carte, allergènes",
           "stockvision restaurant"
         ],
-        "cta": "Le pas-à-pas est en bio"
+        "cta": "Tout est en bio"
       },
       "tiktok": {
         "legende": "Il annonce ça au dessert. 😅\nLes régimes et les allergènes, ça se note à la réservation.\n\nLes allergènes et les régimes sont portés par ta carte et par la réservation.",
@@ -14489,10 +14489,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "ma carte, allergènes",
           "stockvision restaurant"
         ],
-        "cta": "Tuto complet en bio"
+        "cta": "Lien en bio"
       },
       "linkedin": {
-        "legende": "Il annonce ça au dessert.\n\nLes allergènes et les régimes sont portés par ta carte et par la réservation. L'info arrive en cuisine avant l'entrée, pas au dessert.\n\nConcrètement : un stock juste et une marge qu'on voit avant de fixer le prix.\n\nLe tutoriel pas-à-pas : https://drive.google.com/file/d/1yqhyPMj9uBq1awmqTwUhisuBJBpY5kt-/view\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "legende": "Il annonce ça au dessert.\n\nLes allergènes et les régimes sont portés par ta carte et par la réservation. L'info arrive en cuisine avant l'entrée, pas au dessert.\n\nConcrètement : un stock juste et une marge qu'on voit avant de fixer le prix.\n\nEn savoir plus : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
         "hashtags": [
           "restauration",
           "foodeatup",
@@ -14506,10 +14506,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "ma carte, allergènes",
           "stockvision restaurant"
         ],
-        "cta": "Voir le tutoriel pas-à-pas"
+        "cta": "Découvrir FoodEatUp"
       },
       "youtube": {
-        "legende": "Il annonce ça au dessert. Les régimes et les allergènes, ça se note à la réservation.\n\nLes allergènes et les régimes sont portés par ta carte et par la réservation. L'info arrive en cuisine avant l'entrée, pas au dessert.\n\nConcrètement : un stock juste et une marge qu'on voit avant de fixer le prix.\n\n— — —\n\n📺 Le tutoriel pas-à-pas : https://drive.google.com/file/d/1yqhyPMj9uBq1awmqTwUhisuBJBpY5kt-/view\n\n📞 Une démo ? 06 14 18 92 25\n🌐 foodeatup.com\n\nSérie « Le Coup de Feu » — saison 5, épisode 123.\nModule StockVision · Chapitre : 1 - Ma carte, allergènes\n\nFoodEatUp est le logiciel qui réunit la caisse, le stock, les plannings, l'HACCP et le marketing d'un restaurant au même endroit.\n",
+        "legende": "Il annonce ça au dessert. Les régimes et les allergènes, ça se note à la réservation.\n\nLes allergènes et les régimes sont portés par ta carte et par la réservation. L'info arrive en cuisine avant l'entrée, pas au dessert.\n\nConcrètement : un stock juste et une marge qu'on voit avant de fixer le prix.\n\n— — —\n\n🔗 https://site.foodeatup.com/\n\n📞 Une démo ? 06 14 18 92 25\n🌐 foodeatup.com\n\nSérie « Le Coup de Feu » — saison 5, épisode 123.\nModule StockVision · Chapitre : 1 - Ma carte, allergènes\n\nFoodEatUp est le logiciel qui réunit la caisse, le stock, les plannings, l'HACCP et le marketing d'un restaurant au même endroit.\n",
         "hashtags": [
           "Shorts",
           "restaurant",
@@ -14530,7 +14530,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "ma carte, allergènes",
           "stockvision restaurant"
         ],
-        "cta": "Le tutoriel pas-à-pas",
+        "cta": "Découvrir FoodEatUp",
         "titre": "Ma carte, allergènes — StockVision | FoodEatUp"
       }
     },
@@ -14552,7 +14552,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
   "EP124": {
     "publications": {
       "facebook": {
-        "legende": "Il est minuit dix. Le service a une fin. Ton logiciel devrait le savoir.\n\nLe service a une fin : tu clôtures, tu comptes, tu archives. L'écran te dit quand la journée est vraiment finie.\n\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "legende": "Il est minuit dix. Le service a une fin. Ton logiciel devrait le savoir.\n\nLe service a une fin : tu clôtures, tu comptes, tu archives. L'écran te dit quand la journée est vraiment finie.\n\n👉 Tout FoodEatUp : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
         "hashtags": [
           "restaurant",
           "restaurateur",
@@ -14569,10 +14569,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "clôturer sa caisse",
           "caisse pos restaurant"
         ],
-        "cta": "Demander une démo"
+        "cta": "Découvrir FoodEatUp"
       },
       "instagram": {
-        "legende": "Il est minuit dix.\nLe service a une fin. Ton logiciel devrait le savoir.\n\nLe service a une fin : tu clôtures, tu comptes, tu archives. L'écran te dit quand la journée est vraiment finie.\n\nLe pas-à-pas complet est dans notre Academy — lien en bio.\nUne démo ? 06 14 18 92 25",
+        "legende": "Il est minuit dix.\nLe service a une fin. Ton logiciel devrait le savoir.\n\nLe service a une fin : tu clôtures, tu comptes, tu archives. L'écran te dit quand la journée est vraiment finie.\n\nTout est expliqué sur notre site — lien en bio.\nUne démo ? 06 14 18 92 25",
         "hashtags": [
           "restaurant",
           "restaurateur",
@@ -14594,7 +14594,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "clôturer sa caisse",
           "caisse pos restaurant"
         ],
-        "cta": "Demander une démo"
+        "cta": "Tout est en bio"
       },
       "tiktok": {
         "legende": "Il est minuit dix. 😅\nLe service a une fin. Ton logiciel devrait le savoir.\n\nLe service a une fin : tu clôtures, tu comptes, tu archives.",
@@ -14612,10 +14612,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "clôturer sa caisse",
           "caisse pos restaurant"
         ],
-        "cta": "Demander une démo"
+        "cta": "Lien en bio"
       },
       "linkedin": {
-        "legende": "Il est minuit dix.\n\nLe service a une fin : tu clôtures, tu comptes, tu archives. L'écran te dit quand la journée est vraiment finie.\n\nConcrètement : une caisse qui ferme juste, tous les soirs.\n\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "legende": "Il est minuit dix.\n\nLe service a une fin : tu clôtures, tu comptes, tu archives. L'écran te dit quand la journée est vraiment finie.\n\nConcrètement : une caisse qui ferme juste, tous les soirs.\n\nEn savoir plus : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
         "hashtags": [
           "restauration",
           "foodeatup",
@@ -14629,10 +14629,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "clôturer sa caisse",
           "caisse pos restaurant"
         ],
-        "cta": "Demander une démo"
+        "cta": "Découvrir FoodEatUp"
       },
       "youtube": {
-        "legende": "Il est minuit dix. Le service a une fin. Ton logiciel devrait le savoir.\n\nLe service a une fin : tu clôtures, tu comptes, tu archives. L'écran te dit quand la journée est vraiment finie.\n\nConcrètement : une caisse qui ferme juste, tous les soirs.\n\n— — —\n\n📞 Une démo ? 06 14 18 92 25\n🌐 foodeatup.com\n\nSérie « Le Coup de Feu » — saison 5, épisode 124.\nModule Caisse POS · Chapitre : 6 - Clôturer sa caisse\n\nFoodEatUp est le logiciel qui réunit la caisse, le stock, les plannings, l'HACCP et le marketing d'un restaurant au même endroit.\n",
+        "legende": "Il est minuit dix. Le service a une fin. Ton logiciel devrait le savoir.\n\nLe service a une fin : tu clôtures, tu comptes, tu archives. L'écran te dit quand la journée est vraiment finie.\n\nConcrètement : une caisse qui ferme juste, tous les soirs.\n\n— — —\n\n🔗 https://site.foodeatup.com/\n\n📞 Une démo ? 06 14 18 92 25\n🌐 foodeatup.com\n\nSérie « Le Coup de Feu » — saison 5, épisode 124.\nModule Caisse POS · Chapitre : 6 - Clôturer sa caisse\n\nFoodEatUp est le logiciel qui réunit la caisse, le stock, les plannings, l'HACCP et le marketing d'un restaurant au même endroit.\n",
         "hashtags": [
           "Shorts",
           "restaurant",
@@ -14652,7 +14652,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "clôturer sa caisse",
           "caisse pos restaurant"
         ],
-        "cta": "Demander une démo",
+        "cta": "Découvrir FoodEatUp",
         "titre": "Clôturer sa caisse — Caisse POS | FoodEatUp"
       }
     },
@@ -14663,7 +14663,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
   "EP125": {
     "publications": {
       "facebook": {
-        "legende": "Je serais mieux là, non ? Ton plan de salle, c'est toi qui le décides.\n\nTon plan de salle est le tien : zones, tables, capacités, blocages. Tu places, tu bloques, tu libères en un geste.\n\n👉 Le tutoriel complet : https://drive.google.com/file/d/1TOGCHAw6Yc43gQxScRWt62B5ZkuJO8jg/view\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "legende": "Je serais mieux là, non ? Ton plan de salle, c'est toi qui le décides.\n\nTon plan de salle est le tien : zones, tables, capacités, blocages. Tu places, tu bloques, tu libères en un geste.\n\n👉 Tout FoodEatUp : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
         "hashtags": [
           "restaurant",
           "restaurateur",
@@ -14679,10 +14679,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "dessiner son plan de salle",
           "caroline restaurant"
         ],
-        "cta": "Voir le tutoriel complet"
+        "cta": "Découvrir FoodEatUp"
       },
       "instagram": {
-        "legende": "Je serais mieux là, non ?\nTon plan de salle, c'est toi qui le décides.\n\nTon plan de salle est le tien : zones, tables, capacités, blocages. Tu places, tu bloques, tu libères en un geste.\n\nLe pas-à-pas complet est dans notre Academy — lien en bio.\nUne démo ? 06 14 18 92 25",
+        "legende": "Je serais mieux là, non ?\nTon plan de salle, c'est toi qui le décides.\n\nTon plan de salle est le tien : zones, tables, capacités, blocages. Tu places, tu bloques, tu libères en un geste.\n\nTout est expliqué sur notre site — lien en bio.\nUne démo ? 06 14 18 92 25",
         "hashtags": [
           "restaurant",
           "restaurateur",
@@ -14702,7 +14702,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "dessiner son plan de salle",
           "caroline restaurant"
         ],
-        "cta": "Le pas-à-pas est en bio"
+        "cta": "Tout est en bio"
       },
       "tiktok": {
         "legende": "Je serais mieux là, non ? 😅\nTon plan de salle, c'est toi qui le décides.\n\nTon plan de salle est le tien : zones, tables, capacités, blocages.",
@@ -14719,10 +14719,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "dessiner son plan de salle",
           "caroline restaurant"
         ],
-        "cta": "Tuto complet en bio"
+        "cta": "Lien en bio"
       },
       "linkedin": {
-        "legende": "Je serais mieux là, non ?\n\nTon plan de salle est le tien : zones, tables, capacités, blocages. Tu places, tu bloques, tu libères en un geste.\n\nConcrètement : le téléphone qui répond même en plein coup de feu.\n\nLe tutoriel pas-à-pas : https://drive.google.com/file/d/1TOGCHAw6Yc43gQxScRWt62B5ZkuJO8jg/view\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "legende": "Je serais mieux là, non ?\n\nTon plan de salle est le tien : zones, tables, capacités, blocages. Tu places, tu bloques, tu libères en un geste.\n\nConcrètement : le téléphone qui répond même en plein coup de feu.\n\nEn savoir plus : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
         "hashtags": [
           "restauration",
           "foodeatup",
@@ -14735,10 +14735,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "dessiner son plan de salle",
           "caroline restaurant"
         ],
-        "cta": "Voir le tutoriel pas-à-pas"
+        "cta": "Découvrir FoodEatUp"
       },
       "youtube": {
-        "legende": "Je serais mieux là, non ? Ton plan de salle, c'est toi qui le décides.\n\nTon plan de salle est le tien : zones, tables, capacités, blocages. Tu places, tu bloques, tu libères en un geste.\n\nConcrètement : le téléphone qui répond même en plein coup de feu.\n\n— — —\n\n📺 Le tutoriel pas-à-pas : https://drive.google.com/file/d/1TOGCHAw6Yc43gQxScRWt62B5ZkuJO8jg/view\n\n📞 Une démo ? 06 14 18 92 25\n🌐 foodeatup.com\n\nSérie « Le Coup de Feu » — saison 5, épisode 125.\nModule Caroline · Chapitre : 3 - Dessiner son plan de salle\n\nFoodEatUp est le logiciel qui réunit la caisse, le stock, les plannings, l'HACCP et le marketing d'un restaurant au même endroit.\n",
+        "legende": "Je serais mieux là, non ? Ton plan de salle, c'est toi qui le décides.\n\nTon plan de salle est le tien : zones, tables, capacités, blocages. Tu places, tu bloques, tu libères en un geste.\n\nConcrètement : le téléphone qui répond même en plein coup de feu.\n\n— — —\n\n🔗 https://site.foodeatup.com/\n\n📞 Une démo ? 06 14 18 92 25\n🌐 foodeatup.com\n\nSérie « Le Coup de Feu » — saison 5, épisode 125.\nModule Caroline · Chapitre : 3 - Dessiner son plan de salle\n\nFoodEatUp est le logiciel qui réunit la caisse, le stock, les plannings, l'HACCP et le marketing d'un restaurant au même endroit.\n",
         "hashtags": [
           "Shorts",
           "restaurant",
@@ -14756,7 +14756,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "dessiner son plan de salle",
           "caroline restaurant"
         ],
-        "cta": "Le tutoriel pas-à-pas",
+        "cta": "Découvrir FoodEatUp",
         "titre": "Dessiner son plan de salle — Caroline | FoodEatUp"
       }
     },
@@ -14778,7 +14778,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
   "EP126": {
     "publications": {
       "facebook": {
-        "legende": "On partage, c'est plus convivial. Partage l'assiette. Pas l'addition, elle se divise toute seule.\n\nTu partages l'addition par article ou par personne. Ce qui reste dû s'affiche en direct. Personne ne recompte à la main.\n\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "legende": "On partage, c'est plus convivial. Partage l'assiette. Pas l'addition, elle se divise toute seule.\n\nTu partages l'addition par article ou par personne. Ce qui reste dû s'affiche en direct. Personne ne recompte à la main.\n\n👉 Tout FoodEatUp : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
         "hashtags": [
           "restaurant",
           "restaurateur",
@@ -14795,10 +14795,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "séparer une addition",
           "caisse pos restaurant"
         ],
-        "cta": "Demander une démo"
+        "cta": "Découvrir FoodEatUp"
       },
       "instagram": {
-        "legende": "On partage, c'est plus convivial.\nPartage l'assiette. Pas l'addition, elle se divise toute seule.\n\nTu partages l'addition par article ou par personne. Ce qui reste dû s'affiche en direct. Personne ne recompte à la main.\n\nLe pas-à-pas complet est dans notre Academy — lien en bio.\nUne démo ? 06 14 18 92 25",
+        "legende": "On partage, c'est plus convivial.\nPartage l'assiette. Pas l'addition, elle se divise toute seule.\n\nTu partages l'addition par article ou par personne. Ce qui reste dû s'affiche en direct. Personne ne recompte à la main.\n\nTout est expliqué sur notre site — lien en bio.\nUne démo ? 06 14 18 92 25",
         "hashtags": [
           "restaurant",
           "restaurateur",
@@ -14820,7 +14820,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "séparer une addition",
           "caisse pos restaurant"
         ],
-        "cta": "Demander une démo"
+        "cta": "Tout est en bio"
       },
       "tiktok": {
         "legende": "On partage, c'est plus convivial. 😅\nPartage l'assiette. Pas l'addition, elle se divise toute seule.\n\nTu partages l'addition par article ou par personne.",
@@ -14838,10 +14838,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "séparer une addition",
           "caisse pos restaurant"
         ],
-        "cta": "Demander une démo"
+        "cta": "Lien en bio"
       },
       "linkedin": {
-        "legende": "On partage, c'est plus convivial.\n\nTu partages l'addition par article ou par personne. Ce qui reste dû s'affiche en direct. Personne ne recompte à la main.\n\nConcrètement : une caisse qui ferme juste, tous les soirs.\n\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "legende": "On partage, c'est plus convivial.\n\nTu partages l'addition par article ou par personne. Ce qui reste dû s'affiche en direct. Personne ne recompte à la main.\n\nConcrètement : une caisse qui ferme juste, tous les soirs.\n\nEn savoir plus : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
         "hashtags": [
           "restauration",
           "foodeatup",
@@ -14855,10 +14855,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "séparer une addition",
           "caisse pos restaurant"
         ],
-        "cta": "Demander une démo"
+        "cta": "Découvrir FoodEatUp"
       },
       "youtube": {
-        "legende": "On partage, c'est plus convivial. Partage l'assiette. Pas l'addition, elle se divise toute seule.\n\nTu partages l'addition par article ou par personne. Ce qui reste dû s'affiche en direct. Personne ne recompte à la main.\n\nConcrètement : une caisse qui ferme juste, tous les soirs.\n\n— — —\n\n📞 Une démo ? 06 14 18 92 25\n🌐 foodeatup.com\n\nSérie « Le Coup de Feu » — saison 5, épisode 126.\nModule Caisse POS · Chapitre : 5 - Séparer une addition\n\nFoodEatUp est le logiciel qui réunit la caisse, le stock, les plannings, l'HACCP et le marketing d'un restaurant au même endroit.\n",
+        "legende": "On partage, c'est plus convivial. Partage l'assiette. Pas l'addition, elle se divise toute seule.\n\nTu partages l'addition par article ou par personne. Ce qui reste dû s'affiche en direct. Personne ne recompte à la main.\n\nConcrètement : une caisse qui ferme juste, tous les soirs.\n\n— — —\n\n🔗 https://site.foodeatup.com/\n\n📞 Une démo ? 06 14 18 92 25\n🌐 foodeatup.com\n\nSérie « Le Coup de Feu » — saison 5, épisode 126.\nModule Caisse POS · Chapitre : 5 - Séparer une addition\n\nFoodEatUp est le logiciel qui réunit la caisse, le stock, les plannings, l'HACCP et le marketing d'un restaurant au même endroit.\n",
         "hashtags": [
           "Shorts",
           "restaurant",
@@ -14878,7 +14878,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "séparer une addition",
           "caisse pos restaurant"
         ],
-        "cta": "Demander une démo",
+        "cta": "Découvrir FoodEatUp",
         "titre": "Séparer une addition — Caisse POS | FoodEatUp"
       }
     },
@@ -14889,7 +14889,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
   "EP127": {
     "publications": {
       "facebook": {
-        "legende": "Bonne année à tout le monde. Sauf à celui qui gère les deux cents couverts.\n\nDeux cents couverts un 31 décembre, ça se pilote : arrivées échelonnées, tables assignées, cuisine prévenue. La soirée reste une fête.\n\n👉 Le tutoriel complet : https://drive.google.com/file/d/1ZcJIts_SFzUvjChwJSxcCGtnlT3NHOCP/view\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "legende": "Bonne année à tout le monde. Sauf à celui qui gère les deux cents couverts.\n\nDeux cents couverts un 31 décembre, ça se pilote : arrivées échelonnées, tables assignées, cuisine prévenue. La soirée reste une fête.\n\n👉 Tout FoodEatUp : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
         "hashtags": [
           "restaurant",
           "restaurateur",
@@ -14906,10 +14906,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "réservations du jour",
           "réservation restaurant"
         ],
-        "cta": "Voir le tutoriel complet"
+        "cta": "Découvrir FoodEatUp"
       },
       "instagram": {
-        "legende": "Bonne année à tout le monde.\nSauf à celui qui gère les deux cents couverts.\n\nDeux cents couverts un 31 décembre, ça se pilote : arrivées échelonnées, tables assignées, cuisine prévenue. La soirée reste une fête.\n\nLe pas-à-pas complet est dans notre Academy — lien en bio.\nUne démo ? 06 14 18 92 25",
+        "legende": "Bonne année à tout le monde.\nSauf à celui qui gère les deux cents couverts.\n\nDeux cents couverts un 31 décembre, ça se pilote : arrivées échelonnées, tables assignées, cuisine prévenue. La soirée reste une fête.\n\nTout est expliqué sur notre site — lien en bio.\nUne démo ? 06 14 18 92 25",
         "hashtags": [
           "restaurant",
           "restaurateur",
@@ -14930,7 +14930,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "réservations du jour",
           "réservation restaurant"
         ],
-        "cta": "Le pas-à-pas est en bio"
+        "cta": "Tout est en bio"
       },
       "tiktok": {
         "legende": "Bonne année à tout le monde. 😅\nSauf à celui qui gère les deux cents couverts.\n\nDeux cents couverts un 31 décembre, ça se pilote : arrivées échelonnées, tables assignées, cuisine prévenue.",
@@ -14948,10 +14948,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "réservations du jour",
           "réservation restaurant"
         ],
-        "cta": "Tuto complet en bio"
+        "cta": "Lien en bio"
       },
       "linkedin": {
-        "legende": "Bonne année à tout le monde.\n\nDeux cents couverts un 31 décembre, ça se pilote : arrivées échelonnées, tables assignées, cuisine prévenue. La soirée reste une fête.\n\nConcrètement : un plan de salle qui reflète la réalité, minute par minute.\n\nLe tutoriel pas-à-pas : https://drive.google.com/file/d/1ZcJIts_SFzUvjChwJSxcCGtnlT3NHOCP/view\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "legende": "Bonne année à tout le monde.\n\nDeux cents couverts un 31 décembre, ça se pilote : arrivées échelonnées, tables assignées, cuisine prévenue. La soirée reste une fête.\n\nConcrètement : un plan de salle qui reflète la réalité, minute par minute.\n\nEn savoir plus : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
         "hashtags": [
           "restauration",
           "foodeatup",
@@ -14965,10 +14965,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "réservations du jour",
           "réservation restaurant"
         ],
-        "cta": "Voir le tutoriel pas-à-pas"
+        "cta": "Découvrir FoodEatUp"
       },
       "youtube": {
-        "legende": "Bonne année à tout le monde. Sauf à celui qui gère les deux cents couverts.\n\nDeux cents couverts un 31 décembre, ça se pilote : arrivées échelonnées, tables assignées, cuisine prévenue. La soirée reste une fête.\n\nConcrètement : un plan de salle qui reflète la réalité, minute par minute.\n\n— — —\n\n📺 Le tutoriel pas-à-pas : https://drive.google.com/file/d/1ZcJIts_SFzUvjChwJSxcCGtnlT3NHOCP/view\n\n📞 Une démo ? 06 14 18 92 25\n🌐 foodeatup.com\n\nSérie « Le Coup de Feu » — saison 5, épisode 127.\nModule Réservation · Chapitre : 1 - Réservations du jour\n\nFoodEatUp est le logiciel qui réunit la caisse, le stock, les plannings, l'HACCP et le marketing d'un restaurant au même endroit.\n",
+        "legende": "Bonne année à tout le monde. Sauf à celui qui gère les deux cents couverts.\n\nDeux cents couverts un 31 décembre, ça se pilote : arrivées échelonnées, tables assignées, cuisine prévenue. La soirée reste une fête.\n\nConcrètement : un plan de salle qui reflète la réalité, minute par minute.\n\n— — —\n\n🔗 https://site.foodeatup.com/\n\n📞 Une démo ? 06 14 18 92 25\n🌐 foodeatup.com\n\nSérie « Le Coup de Feu » — saison 5, épisode 127.\nModule Réservation · Chapitre : 1 - Réservations du jour\n\nFoodEatUp est le logiciel qui réunit la caisse, le stock, les plannings, l'HACCP et le marketing d'un restaurant au même endroit.\n",
         "hashtags": [
           "Shorts",
           "restaurant",
@@ -14987,7 +14987,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "réservations du jour",
           "réservation restaurant"
         ],
-        "cta": "Le tutoriel pas-à-pas",
+        "cta": "Découvrir FoodEatUp",
         "titre": "Réservations du jour — Réservation | FoodEatUp"
       }
     },
@@ -15008,7 +15008,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
   "EP128": {
     "publications": {
       "facebook": {
-        "legende": "Trente couverts en plus, ça rentre. Ça rentre. La question, c'est si ça revient.\n\nTu places tes clients selon la vraie capacité de ta salle. Serrer, ça se décide — ça ne se subit pas un soir de Saint-Valentin.\n\n👉 Le tutoriel complet : https://drive.google.com/file/d/12589ZMOfTgifLClS2v-afJ2P6naWZmdB/view\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "legende": "Trente couverts en plus, ça rentre. Ça rentre. La question, c'est si ça revient.\n\nTu places tes clients selon la vraie capacité de ta salle. Serrer, ça se décide — ça ne se subit pas un soir de Saint-Valentin.\n\n👉 Tout FoodEatUp : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
         "hashtags": [
           "restaurant",
           "restaurateur",
@@ -15025,10 +15025,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "placer un client à table",
           "réservation restaurant"
         ],
-        "cta": "Voir le tutoriel complet"
+        "cta": "Découvrir FoodEatUp"
       },
       "instagram": {
-        "legende": "Trente couverts en plus, ça rentre.\nÇa rentre. La question, c'est si ça revient.\n\nTu places tes clients selon la vraie capacité de ta salle. Serrer, ça se décide — ça ne se subit pas un soir de Saint-Valentin.\n\nLe pas-à-pas complet est dans notre Academy — lien en bio.\nUne démo ? 06 14 18 92 25",
+        "legende": "Trente couverts en plus, ça rentre.\nÇa rentre. La question, c'est si ça revient.\n\nTu places tes clients selon la vraie capacité de ta salle. Serrer, ça se décide — ça ne se subit pas un soir de Saint-Valentin.\n\nTout est expliqué sur notre site — lien en bio.\nUne démo ? 06 14 18 92 25",
         "hashtags": [
           "restaurant",
           "restaurateur",
@@ -15049,7 +15049,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "placer un client à table",
           "réservation restaurant"
         ],
-        "cta": "Le pas-à-pas est en bio"
+        "cta": "Tout est en bio"
       },
       "tiktok": {
         "legende": "Trente couverts en plus, ça rentre. 😅\nÇa rentre. La question, c'est si ça revient.\n\nTu places tes clients selon la vraie capacité de ta salle.",
@@ -15067,10 +15067,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "placer un client à table",
           "réservation restaurant"
         ],
-        "cta": "Tuto complet en bio"
+        "cta": "Lien en bio"
       },
       "linkedin": {
-        "legende": "Trente couverts en plus, ça rentre.\n\nTu places tes clients selon la vraie capacité de ta salle. Serrer, ça se décide — ça ne se subit pas un soir de Saint-Valentin.\n\nConcrètement : un plan de salle qui reflète la réalité, minute par minute.\n\nLe tutoriel pas-à-pas : https://drive.google.com/file/d/12589ZMOfTgifLClS2v-afJ2P6naWZmdB/view\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "legende": "Trente couverts en plus, ça rentre.\n\nTu places tes clients selon la vraie capacité de ta salle. Serrer, ça se décide — ça ne se subit pas un soir de Saint-Valentin.\n\nConcrètement : un plan de salle qui reflète la réalité, minute par minute.\n\nEn savoir plus : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
         "hashtags": [
           "restauration",
           "foodeatup",
@@ -15084,10 +15084,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "placer un client à table",
           "réservation restaurant"
         ],
-        "cta": "Voir le tutoriel pas-à-pas"
+        "cta": "Découvrir FoodEatUp"
       },
       "youtube": {
-        "legende": "Trente couverts en plus, ça rentre. Ça rentre. La question, c'est si ça revient.\n\nTu places tes clients selon la vraie capacité de ta salle. Serrer, ça se décide — ça ne se subit pas un soir de Saint-Valentin.\n\nConcrètement : un plan de salle qui reflète la réalité, minute par minute.\n\n— — —\n\n📺 Le tutoriel pas-à-pas : https://drive.google.com/file/d/12589ZMOfTgifLClS2v-afJ2P6naWZmdB/view\n\n📞 Une démo ? 06 14 18 92 25\n🌐 foodeatup.com\n\nSérie « Le Coup de Feu » — saison 5, épisode 128.\nModule Réservation · Chapitre : 4 - Placer un client à table\n\nFoodEatUp est le logiciel qui réunit la caisse, le stock, les plannings, l'HACCP et le marketing d'un restaurant au même endroit.\n",
+        "legende": "Trente couverts en plus, ça rentre. Ça rentre. La question, c'est si ça revient.\n\nTu places tes clients selon la vraie capacité de ta salle. Serrer, ça se décide — ça ne se subit pas un soir de Saint-Valentin.\n\nConcrètement : un plan de salle qui reflète la réalité, minute par minute.\n\n— — —\n\n🔗 https://site.foodeatup.com/\n\n📞 Une démo ? 06 14 18 92 25\n🌐 foodeatup.com\n\nSérie « Le Coup de Feu » — saison 5, épisode 128.\nModule Réservation · Chapitre : 4 - Placer un client à table\n\nFoodEatUp est le logiciel qui réunit la caisse, le stock, les plannings, l'HACCP et le marketing d'un restaurant au même endroit.\n",
         "hashtags": [
           "Shorts",
           "restaurant",
@@ -15106,7 +15106,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "placer un client à table",
           "réservation restaurant"
         ],
-        "cta": "Le tutoriel pas-à-pas",
+        "cta": "Découvrir FoodEatUp",
         "titre": "Placer un client à table — Réservation | FoodEatUp"
       }
     },
@@ -15128,7 +15128,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
   "EP129": {
     "publications": {
       "facebook": {
-        "legende": "Premier rayon de soleil de l'année. Ta terrasse ouvre. Ton service doit suivre.\n\nTu ouvres ta terrasse dans le logiciel : tables ajoutées, capacité mise à jour, réservations ouvertes dessus. Le premier rayon de soleil est rentable.\n\n👉 Le tutoriel complet : https://drive.google.com/file/d/18dIJKyCb9DuZGIcN8Cr_EQkjzwlRUCnz/view\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "legende": "Premier rayon de soleil de l'année. Ta terrasse ouvre. Ton service doit suivre.\n\nTu ouvres ta terrasse dans le logiciel : tables ajoutées, capacité mise à jour, réservations ouvertes dessus. Le premier rayon de soleil est rentable.\n\n👉 Tout FoodEatUp : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
         "hashtags": [
           "restaurant",
           "restaurateur",
@@ -15144,10 +15144,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "gérer ses tables",
           "caroline restaurant"
         ],
-        "cta": "Voir le tutoriel complet"
+        "cta": "Découvrir FoodEatUp"
       },
       "instagram": {
-        "legende": "Premier rayon de soleil de l'année.\nTa terrasse ouvre. Ton service doit suivre.\n\nTu ouvres ta terrasse dans le logiciel : tables ajoutées, capacité mise à jour, réservations ouvertes dessus. Le premier rayon de soleil est rentable.\n\nLe pas-à-pas complet est dans notre Academy — lien en bio.\nUne démo ? 06 14 18 92 25",
+        "legende": "Premier rayon de soleil de l'année.\nTa terrasse ouvre. Ton service doit suivre.\n\nTu ouvres ta terrasse dans le logiciel : tables ajoutées, capacité mise à jour, réservations ouvertes dessus. Le premier rayon de soleil est rentable.\n\nTout est expliqué sur notre site — lien en bio.\nUne démo ? 06 14 18 92 25",
         "hashtags": [
           "restaurant",
           "restaurateur",
@@ -15167,7 +15167,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "gérer ses tables",
           "caroline restaurant"
         ],
-        "cta": "Le pas-à-pas est en bio"
+        "cta": "Tout est en bio"
       },
       "tiktok": {
         "legende": "Premier rayon de soleil de l'année. 😅\nTa terrasse ouvre. Ton service doit suivre.\n\nTu ouvres ta terrasse dans le logiciel : tables ajoutées, capacité mise à jour, réservations ouvertes dessus.",
@@ -15184,10 +15184,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "gérer ses tables",
           "caroline restaurant"
         ],
-        "cta": "Tuto complet en bio"
+        "cta": "Lien en bio"
       },
       "linkedin": {
-        "legende": "Premier rayon de soleil de l'année.\n\nTu ouvres ta terrasse dans le logiciel : tables ajoutées, capacité mise à jour, réservations ouvertes dessus. Le premier rayon de soleil est rentable.\n\nConcrètement : le téléphone qui répond même en plein coup de feu.\n\nLe tutoriel pas-à-pas : https://drive.google.com/file/d/18dIJKyCb9DuZGIcN8Cr_EQkjzwlRUCnz/view\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "legende": "Premier rayon de soleil de l'année.\n\nTu ouvres ta terrasse dans le logiciel : tables ajoutées, capacité mise à jour, réservations ouvertes dessus. Le premier rayon de soleil est rentable.\n\nConcrètement : le téléphone qui répond même en plein coup de feu.\n\nEn savoir plus : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
         "hashtags": [
           "restauration",
           "foodeatup",
@@ -15200,10 +15200,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "gérer ses tables",
           "caroline restaurant"
         ],
-        "cta": "Voir le tutoriel pas-à-pas"
+        "cta": "Découvrir FoodEatUp"
       },
       "youtube": {
-        "legende": "Premier rayon de soleil de l'année. Ta terrasse ouvre. Ton service doit suivre.\n\nTu ouvres ta terrasse dans le logiciel : tables ajoutées, capacité mise à jour, réservations ouvertes dessus. Le premier rayon de soleil est rentable.\n\nConcrètement : le téléphone qui répond même en plein coup de feu.\n\n— — —\n\n📺 Le tutoriel pas-à-pas : https://drive.google.com/file/d/18dIJKyCb9DuZGIcN8Cr_EQkjzwlRUCnz/view\n\n📞 Une démo ? 06 14 18 92 25\n🌐 foodeatup.com\n\nSérie « Le Coup de Feu » — saison 5, épisode 129.\nModule Caroline · Chapitre : 4 - Gérer ses tables\n\nFoodEatUp est le logiciel qui réunit la caisse, le stock, les plannings, l'HACCP et le marketing d'un restaurant au même endroit.\n",
+        "legende": "Premier rayon de soleil de l'année. Ta terrasse ouvre. Ton service doit suivre.\n\nTu ouvres ta terrasse dans le logiciel : tables ajoutées, capacité mise à jour, réservations ouvertes dessus. Le premier rayon de soleil est rentable.\n\nConcrètement : le téléphone qui répond même en plein coup de feu.\n\n— — —\n\n🔗 https://site.foodeatup.com/\n\n📞 Une démo ? 06 14 18 92 25\n🌐 foodeatup.com\n\nSérie « Le Coup de Feu » — saison 5, épisode 129.\nModule Caroline · Chapitre : 4 - Gérer ses tables\n\nFoodEatUp est le logiciel qui réunit la caisse, le stock, les plannings, l'HACCP et le marketing d'un restaurant au même endroit.\n",
         "hashtags": [
           "Shorts",
           "restaurant",
@@ -15221,7 +15221,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "gérer ses tables",
           "caroline restaurant"
         ],
-        "cta": "Le tutoriel pas-à-pas",
+        "cta": "Découvrir FoodEatUp",
         "titre": "Gérer ses tables — Caroline | FoodEatUp"
       }
     },
@@ -15242,7 +15242,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
   "EP130": {
     "publications": {
       "facebook": {
-        "legende": "21 juin. Devant ta porte. Autant que les gens sachent que tu es ouvert.\n\nTon agenda marketing connaît les temps forts de ton quartier. Tu prépares l'événement avant qu'il soit devant ta porte.\n\n👉 Le tutoriel complet : https://drive.google.com/file/d/17j87qbBA5aySV44RakgltrNLsJpnRNBz/view\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "legende": "21 juin. Devant ta porte. Autant que les gens sachent que tu es ouvert.\n\nTon agenda marketing connaît les temps forts de ton quartier. Tu prépares l'événement avant qu'il soit devant ta porte.\n\n👉 Tout FoodEatUp : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
         "hashtags": [
           "restaurant",
           "restaurateur",
@@ -15258,10 +15258,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "fidélisation restaurant",
           "ton agenda marketing"
         ],
-        "cta": "Voir le tutoriel complet"
+        "cta": "Découvrir FoodEatUp"
       },
       "instagram": {
-        "legende": "21 juin. Devant ta porte.\nAutant que les gens sachent que tu es ouvert.\n\nTon agenda marketing connaît les temps forts de ton quartier. Tu prépares l'événement avant qu'il soit devant ta porte.\n\nLe pas-à-pas complet est dans notre Academy — lien en bio.\nUne démo ? 06 14 18 92 25",
+        "legende": "21 juin. Devant ta porte.\nAutant que les gens sachent que tu es ouvert.\n\nTon agenda marketing connaît les temps forts de ton quartier. Tu prépares l'événement avant qu'il soit devant ta porte.\n\nTout est expliqué sur notre site — lien en bio.\nUne démo ? 06 14 18 92 25",
         "hashtags": [
           "restaurant",
           "restaurateur",
@@ -15282,7 +15282,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "fidélisation restaurant",
           "ton agenda marketing"
         ],
-        "cta": "Le pas-à-pas est en bio"
+        "cta": "Tout est en bio"
       },
       "tiktok": {
         "legende": "21 juin. Devant ta porte. 😅\nAutant que les gens sachent que tu es ouvert.\n\nTon agenda marketing connaît les temps forts de ton quartier.",
@@ -15299,10 +15299,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "fidélisation restaurant",
           "ton agenda marketing"
         ],
-        "cta": "Tuto complet en bio"
+        "cta": "Lien en bio"
       },
       "linkedin": {
-        "legende": "21 juin. Devant ta porte.\n\nTon agenda marketing connaît les temps forts de ton quartier. Tu prépares l'événement avant qu'il soit devant ta porte.\n\nConcrètement : une salle qui se remplit avant l'ouverture.\n\nLe tutoriel pas-à-pas : https://drive.google.com/file/d/17j87qbBA5aySV44RakgltrNLsJpnRNBz/view\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "legende": "21 juin. Devant ta porte.\n\nTon agenda marketing connaît les temps forts de ton quartier. Tu prépares l'événement avant qu'il soit devant ta porte.\n\nConcrètement : une salle qui se remplit avant l'ouverture.\n\nEn savoir plus : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
         "hashtags": [
           "restauration",
           "foodeatup",
@@ -15315,10 +15315,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "fidélisation restaurant",
           "ton agenda marketing"
         ],
-        "cta": "Voir le tutoriel pas-à-pas"
+        "cta": "Découvrir FoodEatUp"
       },
       "youtube": {
-        "legende": "21 juin. Devant ta porte. Autant que les gens sachent que tu es ouvert.\n\nTon agenda marketing connaît les temps forts de ton quartier. Tu prépares l'événement avant qu'il soit devant ta porte.\n\nConcrètement : une salle qui se remplit avant l'ouverture.\n\n— — —\n\n📺 Le tutoriel pas-à-pas : https://drive.google.com/file/d/17j87qbBA5aySV44RakgltrNLsJpnRNBz/view\n\n📞 Une démo ? 06 14 18 92 25\n🌐 foodeatup.com\n\nSérie « Le Coup de Feu » — saison 5, épisode 130.\nModule Marketing · Chapitre : 7 - Ton agenda marketing\n\nFoodEatUp est le logiciel qui réunit la caisse, le stock, les plannings, l'HACCP et le marketing d'un restaurant au même endroit.\n",
+        "legende": "21 juin. Devant ta porte. Autant que les gens sachent que tu es ouvert.\n\nTon agenda marketing connaît les temps forts de ton quartier. Tu prépares l'événement avant qu'il soit devant ta porte.\n\nConcrètement : une salle qui se remplit avant l'ouverture.\n\n— — —\n\n🔗 https://site.foodeatup.com/\n\n📞 Une démo ? 06 14 18 92 25\n🌐 foodeatup.com\n\nSérie « Le Coup de Feu » — saison 5, épisode 130.\nModule Marketing · Chapitre : 7 - Ton agenda marketing\n\nFoodEatUp est le logiciel qui réunit la caisse, le stock, les plannings, l'HACCP et le marketing d'un restaurant au même endroit.\n",
         "hashtags": [
           "Shorts",
           "restaurant",
@@ -15337,7 +15337,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "fidélisation restaurant",
           "ton agenda marketing"
         ],
-        "cta": "Le tutoriel pas-à-pas",
+        "cta": "Découvrir FoodEatUp",
         "titre": "Ton agenda marketing — Marketing | FoodEatUp"
       }
     },
@@ -15358,7 +15358,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
   "EP131": {
     "publications": {
       "facebook": {
-        "legende": "1er septembre. Deux absents. Un planning, ça se prépare avant la rentrée.\n\nTu construis la semaine de rentrée en amont : shifts posés, congés validés, coût affiché. Le premier septembre, tu n'es pas seul en cuisine.\n\n👉 Le tutoriel complet : https://drive.google.com/file/d/1CdAnJgR_iq1ESyAgcCCpFjnCfYzaUhIR/view\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "legende": "1er septembre. Deux absents. Un planning, ça se prépare avant la rentrée.\n\nTu construis la semaine de rentrée en amont : shifts posés, congés validés, coût affiché. Le premier septembre, tu n'es pas seul en cuisine.\n\n👉 Tout FoodEatUp : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
         "hashtags": [
           "restaurant",
           "restaurateur",
@@ -15375,10 +15375,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "planning de la semaine",
           "équipe & planning restaurant"
         ],
-        "cta": "Voir le tutoriel complet"
+        "cta": "Découvrir FoodEatUp"
       },
       "instagram": {
-        "legende": "1er septembre. Deux absents.\nUn planning, ça se prépare avant la rentrée.\n\nTu construis la semaine de rentrée en amont : shifts posés, congés validés, coût affiché. Le premier septembre, tu n'es pas seul en cuisine.\n\nLe pas-à-pas complet est dans notre Academy — lien en bio.\nUne démo ? 06 14 18 92 25",
+        "legende": "1er septembre. Deux absents.\nUn planning, ça se prépare avant la rentrée.\n\nTu construis la semaine de rentrée en amont : shifts posés, congés validés, coût affiché. Le premier septembre, tu n'es pas seul en cuisine.\n\nTout est expliqué sur notre site — lien en bio.\nUne démo ? 06 14 18 92 25",
         "hashtags": [
           "restaurant",
           "restaurateur",
@@ -15400,7 +15400,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "planning de la semaine",
           "équipe & planning restaurant"
         ],
-        "cta": "Le pas-à-pas est en bio"
+        "cta": "Tout est en bio"
       },
       "tiktok": {
         "legende": "1er septembre. Deux absents. 😅\nUn planning, ça se prépare avant la rentrée.\n\nTu construis la semaine de rentrée en amont : shifts posés, congés validés, coût affiché.",
@@ -15418,10 +15418,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "planning de la semaine",
           "équipe & planning restaurant"
         ],
-        "cta": "Tuto complet en bio"
+        "cta": "Lien en bio"
       },
       "linkedin": {
-        "legende": "1er septembre. Deux absents.\n\nTu construis la semaine de rentrée en amont : shifts posés, congés validés, coût affiché. Le premier septembre, tu n'es pas seul en cuisine.\n\nConcrètement : des plannings faits en vingt minutes, pas en deux soirées.\n\nLe tutoriel pas-à-pas : https://drive.google.com/file/d/1CdAnJgR_iq1ESyAgcCCpFjnCfYzaUhIR/view\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "legende": "1er septembre. Deux absents.\n\nTu construis la semaine de rentrée en amont : shifts posés, congés validés, coût affiché. Le premier septembre, tu n'es pas seul en cuisine.\n\nConcrètement : des plannings faits en vingt minutes, pas en deux soirées.\n\nEn savoir plus : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
         "hashtags": [
           "restauration",
           "foodeatup",
@@ -15435,10 +15435,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "planning de la semaine",
           "équipe & planning restaurant"
         ],
-        "cta": "Voir le tutoriel pas-à-pas"
+        "cta": "Découvrir FoodEatUp"
       },
       "youtube": {
-        "legende": "1er septembre. Deux absents. Un planning, ça se prépare avant la rentrée.\n\nTu construis la semaine de rentrée en amont : shifts posés, congés validés, coût affiché. Le premier septembre, tu n'es pas seul en cuisine.\n\nConcrètement : des plannings faits en vingt minutes, pas en deux soirées.\n\n— — —\n\n📺 Le tutoriel pas-à-pas : https://drive.google.com/file/d/1CdAnJgR_iq1ESyAgcCCpFjnCfYzaUhIR/view\n\n📞 Une démo ? 06 14 18 92 25\n🌐 foodeatup.com\n\nSérie « Le Coup de Feu » — saison 5, épisode 131.\nModule Équipe & Planning · Chapitre : planning de la semaine\n\nFoodEatUp est le logiciel qui réunit la caisse, le stock, les plannings, l'HACCP et le marketing d'un restaurant au même endroit.\n",
+        "legende": "1er septembre. Deux absents. Un planning, ça se prépare avant la rentrée.\n\nTu construis la semaine de rentrée en amont : shifts posés, congés validés, coût affiché. Le premier septembre, tu n'es pas seul en cuisine.\n\nConcrètement : des plannings faits en vingt minutes, pas en deux soirées.\n\n— — —\n\n🔗 https://site.foodeatup.com/\n\n📞 Une démo ? 06 14 18 92 25\n🌐 foodeatup.com\n\nSérie « Le Coup de Feu » — saison 5, épisode 131.\nModule Équipe & Planning · Chapitre : planning de la semaine\n\nFoodEatUp est le logiciel qui réunit la caisse, le stock, les plannings, l'HACCP et le marketing d'un restaurant au même endroit.\n",
         "hashtags": [
           "Shorts",
           "restaurant",
@@ -15458,7 +15458,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "planning de la semaine",
           "équipe & planning restaurant"
         ],
-        "cta": "Le tutoriel pas-à-pas",
+        "cta": "Découvrir FoodEatUp",
         "titre": "Planning de la semaine — Équipe & Planning | FoodEatUp"
       }
     },
@@ -15480,7 +15480,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
   "EP132": {
     "publications": {
       "facebook": {
-        "legende": "Tout le quartier est fermé. Sauf toi. Encore faut-il qu'on te trouve en ligne.\n\nTes horaires d'ouverture sont à jour partout : site, réservation, Google. Quand tout le quartier ferme, on te trouve.\n\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "legende": "Tout le quartier est fermé. Sauf toi. Encore faut-il qu'on te trouve en ligne.\n\nTes horaires d'ouverture sont à jour partout : site, réservation, Google. Quand tout le quartier ferme, on te trouve.\n\n👉 Tout FoodEatUp : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
         "hashtags": [
           "restaurant",
           "restaurateur",
@@ -15497,10 +15497,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "réservations et horaires",
           "mon site restaurant"
         ],
-        "cta": "Demander une démo"
+        "cta": "Découvrir FoodEatUp"
       },
       "instagram": {
-        "legende": "Tout le quartier est fermé.\nSauf toi. Encore faut-il qu'on te trouve en ligne.\n\nTes horaires d'ouverture sont à jour partout : site, réservation, Google. Quand tout le quartier ferme, on te trouve.\n\nLe pas-à-pas complet est dans notre Academy — lien en bio.\nUne démo ? 06 14 18 92 25",
+        "legende": "Tout le quartier est fermé.\nSauf toi. Encore faut-il qu'on te trouve en ligne.\n\nTes horaires d'ouverture sont à jour partout : site, réservation, Google. Quand tout le quartier ferme, on te trouve.\n\nTout est expliqué sur notre site — lien en bio.\nUne démo ? 06 14 18 92 25",
         "hashtags": [
           "restaurant",
           "restaurateur",
@@ -15521,7 +15521,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "réservations et horaires",
           "mon site restaurant"
         ],
-        "cta": "Demander une démo"
+        "cta": "Tout est en bio"
       },
       "tiktok": {
         "legende": "Tout le quartier est fermé. 😅\nSauf toi. Encore faut-il qu'on te trouve en ligne.\n\nTes horaires d'ouverture sont à jour partout : site, réservation, Google.",
@@ -15539,10 +15539,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "réservations et horaires",
           "mon site restaurant"
         ],
-        "cta": "Demander une démo"
+        "cta": "Lien en bio"
       },
       "linkedin": {
-        "legende": "Tout le quartier est fermé.\n\nTes horaires d'ouverture sont à jour partout : site, réservation, Google. Quand tout le quartier ferme, on te trouve.\n\nConcrètement : un site qui prend des commandes, pas une carte de visite.\n\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "legende": "Tout le quartier est fermé.\n\nTes horaires d'ouverture sont à jour partout : site, réservation, Google. Quand tout le quartier ferme, on te trouve.\n\nConcrètement : un site qui prend des commandes, pas une carte de visite.\n\nEn savoir plus : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
         "hashtags": [
           "restauration",
           "foodeatup",
@@ -15556,10 +15556,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "réservations et horaires",
           "mon site restaurant"
         ],
-        "cta": "Demander une démo"
+        "cta": "Découvrir FoodEatUp"
       },
       "youtube": {
-        "legende": "Tout le quartier est fermé. Sauf toi. Encore faut-il qu'on te trouve en ligne.\n\nTes horaires d'ouverture sont à jour partout : site, réservation, Google. Quand tout le quartier ferme, on te trouve.\n\nConcrètement : un site qui prend des commandes, pas une carte de visite.\n\n— — —\n\n📞 Une démo ? 06 14 18 92 25\n🌐 foodeatup.com\n\nSérie « Le Coup de Feu » — saison 5, épisode 132.\nModule Mon Site · Chapitre : 6 - Réservations et horaires\n\nFoodEatUp est le logiciel qui réunit la caisse, le stock, les plannings, l'HACCP et le marketing d'un restaurant au même endroit.\n",
+        "legende": "Tout le quartier est fermé. Sauf toi. Encore faut-il qu'on te trouve en ligne.\n\nTes horaires d'ouverture sont à jour partout : site, réservation, Google. Quand tout le quartier ferme, on te trouve.\n\nConcrètement : un site qui prend des commandes, pas une carte de visite.\n\n— — —\n\n🔗 https://site.foodeatup.com/\n\n📞 Une démo ? 06 14 18 92 25\n🌐 foodeatup.com\n\nSérie « Le Coup de Feu » — saison 5, épisode 132.\nModule Mon Site · Chapitre : 6 - Réservations et horaires\n\nFoodEatUp est le logiciel qui réunit la caisse, le stock, les plannings, l'HACCP et le marketing d'un restaurant au même endroit.\n",
         "hashtags": [
           "Shorts",
           "restaurant",
@@ -15578,7 +15578,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "réservations et horaires",
           "mon site restaurant"
         ],
-        "cta": "Demander une démo",
+        "cta": "Découvrir FoodEatUp",
         "titre": "Réservations et horaires — Mon Site | FoodEatUp"
       }
     },
@@ -15596,7 +15596,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
   "EP133": {
     "publications": {
       "facebook": {
-        "legende": "Une minute pour encaisser trois tournées. Ta caisse doit tenir le rythme.\n\nTrois tournées en une minute : tu encaisses au comptoir ou à table, TPE relié, ticket envoyé. Ta caisse tient le rythme du match.\n\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "legende": "Une minute pour encaisser trois tournées. Ta caisse doit tenir le rythme.\n\nTrois tournées en une minute : tu encaisses au comptoir ou à table, TPE relié, ticket envoyé. Ta caisse tient le rythme du match.\n\n👉 Tout FoodEatUp : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
         "hashtags": [
           "restaurant",
           "restaurateur",
@@ -15613,10 +15613,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "encaisser une commande",
           "caisse pos restaurant"
         ],
-        "cta": "Demander une démo"
+        "cta": "Découvrir FoodEatUp"
       },
       "instagram": {
-        "legende": "Une minute pour encaisser trois tournées.\nTa caisse doit tenir le rythme.\n\nTrois tournées en une minute : tu encaisses au comptoir ou à table, TPE relié, ticket envoyé. Ta caisse tient le rythme du match.\n\nLe pas-à-pas complet est dans notre Academy — lien en bio.\nUne démo ? 06 14 18 92 25",
+        "legende": "Une minute pour encaisser trois tournées.\nTa caisse doit tenir le rythme.\n\nTrois tournées en une minute : tu encaisses au comptoir ou à table, TPE relié, ticket envoyé. Ta caisse tient le rythme du match.\n\nTout est expliqué sur notre site — lien en bio.\nUne démo ? 06 14 18 92 25",
         "hashtags": [
           "restaurant",
           "restaurateur",
@@ -15638,7 +15638,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "encaisser une commande",
           "caisse pos restaurant"
         ],
-        "cta": "Demander une démo"
+        "cta": "Tout est en bio"
       },
       "tiktok": {
         "legende": "Une minute pour encaisser trois tournées. 😅\nTa caisse doit tenir le rythme.\n\nTrois tournées en une minute : tu encaisses au comptoir ou à table, TPE relié, ticket envoyé.",
@@ -15656,10 +15656,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "encaisser une commande",
           "caisse pos restaurant"
         ],
-        "cta": "Demander une démo"
+        "cta": "Lien en bio"
       },
       "linkedin": {
-        "legende": "Une minute pour encaisser trois tournées.\n\nTrois tournées en une minute : tu encaisses au comptoir ou à table, TPE relié, ticket envoyé. Ta caisse tient le rythme du match.\n\nConcrètement : une caisse qui ferme juste, tous les soirs.\n\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "legende": "Une minute pour encaisser trois tournées.\n\nTrois tournées en une minute : tu encaisses au comptoir ou à table, TPE relié, ticket envoyé. Ta caisse tient le rythme du match.\n\nConcrètement : une caisse qui ferme juste, tous les soirs.\n\nEn savoir plus : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
         "hashtags": [
           "restauration",
           "foodeatup",
@@ -15673,10 +15673,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "encaisser une commande",
           "caisse pos restaurant"
         ],
-        "cta": "Demander une démo"
+        "cta": "Découvrir FoodEatUp"
       },
       "youtube": {
-        "legende": "Une minute pour encaisser trois tournées. Ta caisse doit tenir le rythme.\n\nTrois tournées en une minute : tu encaisses au comptoir ou à table, TPE relié, ticket envoyé. Ta caisse tient le rythme du match.\n\nConcrètement : une caisse qui ferme juste, tous les soirs.\n\n— — —\n\n📞 Une démo ? 06 14 18 92 25\n🌐 foodeatup.com\n\nSérie « Le Coup de Feu » — saison 5, épisode 133.\nModule Caisse POS · Chapitre : 3 - Encaisser une commande\n\nFoodEatUp est le logiciel qui réunit la caisse, le stock, les plannings, l'HACCP et le marketing d'un restaurant au même endroit.\n",
+        "legende": "Une minute pour encaisser trois tournées. Ta caisse doit tenir le rythme.\n\nTrois tournées en une minute : tu encaisses au comptoir ou à table, TPE relié, ticket envoyé. Ta caisse tient le rythme du match.\n\nConcrètement : une caisse qui ferme juste, tous les soirs.\n\n— — —\n\n🔗 https://site.foodeatup.com/\n\n📞 Une démo ? 06 14 18 92 25\n🌐 foodeatup.com\n\nSérie « Le Coup de Feu » — saison 5, épisode 133.\nModule Caisse POS · Chapitre : 3 - Encaisser une commande\n\nFoodEatUp est le logiciel qui réunit la caisse, le stock, les plannings, l'HACCP et le marketing d'un restaurant au même endroit.\n",
         "hashtags": [
           "Shorts",
           "restaurant",
@@ -15696,7 +15696,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "encaisser une commande",
           "caisse pos restaurant"
         ],
-        "cta": "Demander une démo",
+        "cta": "Découvrir FoodEatUp",
         "titre": "Encaisser une commande — Caisse POS | FoodEatUp"
       }
     },
@@ -15707,7 +15707,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
   "EP134": {
     "publications": {
       "facebook": {
-        "legende": "Sept heures de service. Vue d'en bas. Elle aussi a une température à respecter.\n\nL'huile et les frigos ont leurs seuils. Le relevé se fait en dix secondes, il est daté et gardé. Ta friteuse aussi a une conformité.\n\n👉 Le tutoriel complet : https://drive.google.com/file/d/14OmsNUd3EMgWNxGVvmOwLgR3ZloWKNKW/view\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "legende": "Sept heures de service. Vue d'en bas. Elle aussi a une température à respecter.\n\nL'huile et les frigos ont leurs seuils. Le relevé se fait en dix secondes, il est daté et gardé. Ta friteuse aussi a une conformité.\n\n👉 Tout FoodEatUp : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
         "hashtags": [
           "restaurant",
           "restaurateur",
@@ -15724,10 +15724,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "relevé de température",
           "haccp restaurant"
         ],
-        "cta": "Voir le tutoriel complet"
+        "cta": "Découvrir FoodEatUp"
       },
       "instagram": {
-        "legende": "Sept heures de service. Vue d'en bas.\nElle aussi a une température à respecter.\n\nL'huile et les frigos ont leurs seuils. Le relevé se fait en dix secondes, il est daté et gardé. Ta friteuse aussi a une conformité.\n\nLe pas-à-pas complet est dans notre Academy — lien en bio.\nUne démo ? 06 14 18 92 25",
+        "legende": "Sept heures de service. Vue d'en bas.\nElle aussi a une température à respecter.\n\nL'huile et les frigos ont leurs seuils. Le relevé se fait en dix secondes, il est daté et gardé. Ta friteuse aussi a une conformité.\n\nTout est expliqué sur notre site — lien en bio.\nUne démo ? 06 14 18 92 25",
         "hashtags": [
           "restaurant",
           "restaurateur",
@@ -15749,7 +15749,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "relevé de température",
           "haccp restaurant"
         ],
-        "cta": "Le pas-à-pas est en bio"
+        "cta": "Tout est en bio"
       },
       "tiktok": {
         "legende": "Sept heures de service. Vue d'en bas. 😅\nElle aussi a une température à respecter.\n\nL'huile et les frigos ont leurs seuils.",
@@ -15767,10 +15767,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "relevé de température",
           "haccp restaurant"
         ],
-        "cta": "Tuto complet en bio"
+        "cta": "Lien en bio"
       },
       "linkedin": {
-        "legende": "Sept heures de service. Vue d'en bas.\n\nL'huile et les frigos ont leurs seuils. Le relevé se fait en dix secondes, il est daté et gardé. Ta friteuse aussi a une conformité.\n\nConcrètement : un contrôle qui se passe bien, parce que tout est déjà tracé.\n\nLe tutoriel pas-à-pas : https://drive.google.com/file/d/14OmsNUd3EMgWNxGVvmOwLgR3ZloWKNKW/view\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "legende": "Sept heures de service. Vue d'en bas.\n\nL'huile et les frigos ont leurs seuils. Le relevé se fait en dix secondes, il est daté et gardé. Ta friteuse aussi a une conformité.\n\nConcrètement : un contrôle qui se passe bien, parce que tout est déjà tracé.\n\nEn savoir plus : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
         "hashtags": [
           "restauration",
           "foodeatup",
@@ -15784,10 +15784,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "relevé de température",
           "haccp restaurant"
         ],
-        "cta": "Voir le tutoriel pas-à-pas"
+        "cta": "Découvrir FoodEatUp"
       },
       "youtube": {
-        "legende": "Sept heures de service. Vue d'en bas. Elle aussi a une température à respecter.\n\nL'huile et les frigos ont leurs seuils. Le relevé se fait en dix secondes, il est daté et gardé. Ta friteuse aussi a une conformité.\n\nConcrètement : un contrôle qui se passe bien, parce que tout est déjà tracé.\n\n— — —\n\n📺 Le tutoriel pas-à-pas : https://drive.google.com/file/d/14OmsNUd3EMgWNxGVvmOwLgR3ZloWKNKW/view\n\n📞 Une démo ? 06 14 18 92 25\n🌐 foodeatup.com\n\nSérie « Le Coup de Feu » — saison 5, épisode 134.\nModule HACCP · Chapitre : relevé de température\n\nFoodEatUp est le logiciel qui réunit la caisse, le stock, les plannings, l'HACCP et le marketing d'un restaurant au même endroit.\n",
+        "legende": "Sept heures de service. Vue d'en bas. Elle aussi a une température à respecter.\n\nL'huile et les frigos ont leurs seuils. Le relevé se fait en dix secondes, il est daté et gardé. Ta friteuse aussi a une conformité.\n\nConcrètement : un contrôle qui se passe bien, parce que tout est déjà tracé.\n\n— — —\n\n🔗 https://site.foodeatup.com/\n\n📞 Une démo ? 06 14 18 92 25\n🌐 foodeatup.com\n\nSérie « Le Coup de Feu » — saison 5, épisode 134.\nModule HACCP · Chapitre : relevé de température\n\nFoodEatUp est le logiciel qui réunit la caisse, le stock, les plannings, l'HACCP et le marketing d'un restaurant au même endroit.\n",
         "hashtags": [
           "Shorts",
           "restaurant",
@@ -15807,7 +15807,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "relevé de température",
           "haccp restaurant"
         ],
-        "cta": "Le tutoriel pas-à-pas",
+        "cta": "Découvrir FoodEatUp",
         "titre": "Relevé de température — HACCP | FoodEatUp"
       }
     },
@@ -15831,7 +15831,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
   "EP135": {
     "publications": {
       "facebook": {
-        "legende": "Toutes tes réservations du soir. Sur du papier. Vraiment ?\n\nTes réservations du soir sont ici, pas sur un carnet taché de café : contact, couverts, table, historique. Rien ne s'efface.\n\n👉 Le tutoriel complet : https://drive.google.com/file/d/1ZcJIts_SFzUvjChwJSxcCGtnlT3NHOCP/view\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "legende": "Toutes tes réservations du soir. Sur du papier. Vraiment ?\n\nTes réservations du soir sont ici, pas sur un carnet taché de café : contact, couverts, table, historique. Rien ne s'efface.\n\n👉 Tout FoodEatUp : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
         "hashtags": [
           "restaurant",
           "restaurateur",
@@ -15848,10 +15848,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "réservations du jour",
           "réservation restaurant"
         ],
-        "cta": "Voir le tutoriel complet"
+        "cta": "Découvrir FoodEatUp"
       },
       "instagram": {
-        "legende": "Toutes tes réservations du soir.\nSur du papier. Vraiment ?\n\nTes réservations du soir sont ici, pas sur un carnet taché de café : contact, couverts, table, historique. Rien ne s'efface.\n\nLe pas-à-pas complet est dans notre Academy — lien en bio.\nUne démo ? 06 14 18 92 25",
+        "legende": "Toutes tes réservations du soir.\nSur du papier. Vraiment ?\n\nTes réservations du soir sont ici, pas sur un carnet taché de café : contact, couverts, table, historique. Rien ne s'efface.\n\nTout est expliqué sur notre site — lien en bio.\nUne démo ? 06 14 18 92 25",
         "hashtags": [
           "restaurant",
           "restaurateur",
@@ -15872,7 +15872,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "réservations du jour",
           "réservation restaurant"
         ],
-        "cta": "Le pas-à-pas est en bio"
+        "cta": "Tout est en bio"
       },
       "tiktok": {
         "legende": "Toutes tes réservations du soir. 😅\nSur du papier. Vraiment ?\n\nTes réservations du soir sont ici, pas sur un carnet taché de café : contact, couverts, table, historique.",
@@ -15890,10 +15890,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "réservations du jour",
           "réservation restaurant"
         ],
-        "cta": "Tuto complet en bio"
+        "cta": "Lien en bio"
       },
       "linkedin": {
-        "legende": "Toutes tes réservations du soir.\n\nTes réservations du soir sont ici, pas sur un carnet taché de café : contact, couverts, table, historique. Rien ne s'efface.\n\nConcrètement : un plan de salle qui reflète la réalité, minute par minute.\n\nLe tutoriel pas-à-pas : https://drive.google.com/file/d/1ZcJIts_SFzUvjChwJSxcCGtnlT3NHOCP/view\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "legende": "Toutes tes réservations du soir.\n\nTes réservations du soir sont ici, pas sur un carnet taché de café : contact, couverts, table, historique. Rien ne s'efface.\n\nConcrètement : un plan de salle qui reflète la réalité, minute par minute.\n\nEn savoir plus : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
         "hashtags": [
           "restauration",
           "foodeatup",
@@ -15907,10 +15907,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "réservations du jour",
           "réservation restaurant"
         ],
-        "cta": "Voir le tutoriel pas-à-pas"
+        "cta": "Découvrir FoodEatUp"
       },
       "youtube": {
-        "legende": "Toutes tes réservations du soir. Sur du papier. Vraiment ?\n\nTes réservations du soir sont ici, pas sur un carnet taché de café : contact, couverts, table, historique. Rien ne s'efface.\n\nConcrètement : un plan de salle qui reflète la réalité, minute par minute.\n\n— — —\n\n📺 Le tutoriel pas-à-pas : https://drive.google.com/file/d/1ZcJIts_SFzUvjChwJSxcCGtnlT3NHOCP/view\n\n📞 Une démo ? 06 14 18 92 25\n🌐 foodeatup.com\n\nSérie « Le Coup de Feu » — saison 5, épisode 135.\nModule Réservation · Chapitre : 1 - Réservations du jour\n\nFoodEatUp est le logiciel qui réunit la caisse, le stock, les plannings, l'HACCP et le marketing d'un restaurant au même endroit.\n",
+        "legende": "Toutes tes réservations du soir. Sur du papier. Vraiment ?\n\nTes réservations du soir sont ici, pas sur un carnet taché de café : contact, couverts, table, historique. Rien ne s'efface.\n\nConcrètement : un plan de salle qui reflète la réalité, minute par minute.\n\n— — —\n\n🔗 https://site.foodeatup.com/\n\n📞 Une démo ? 06 14 18 92 25\n🌐 foodeatup.com\n\nSérie « Le Coup de Feu » — saison 5, épisode 135.\nModule Réservation · Chapitre : 1 - Réservations du jour\n\nFoodEatUp est le logiciel qui réunit la caisse, le stock, les plannings, l'HACCP et le marketing d'un restaurant au même endroit.\n",
         "hashtags": [
           "Shorts",
           "restaurant",
@@ -15929,7 +15929,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "réservations du jour",
           "réservation restaurant"
         ],
-        "cta": "Le tutoriel pas-à-pas",
+        "cta": "Découvrir FoodEatUp",
         "titre": "Réservations du jour — Réservation | FoodEatUp"
       }
     },
@@ -15950,7 +15950,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
   "EP136": {
     "publications": {
       "facebook": {
-        "legende": "Deux minutes par cycle. Quatre-vingts cycles. Le service, c'est ça aussi.\n\nLe service, c'est cent gestes invisibles. FoodEatUp en enregistre la trace pour que tu saches où part vraiment ton temps.\n\n👉 Le tutoriel complet : https://drive.google.com/file/d/10GjJltEF3utZtfmwHR0qLZ8CTQr5_ioC/view\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "legende": "Deux minutes par cycle. Quatre-vingts cycles. Le service, c'est ça aussi.\n\nLe service, c'est cent gestes invisibles. FoodEatUp en enregistre la trace pour que tu saches où part vraiment ton temps.\n\n👉 Tout FoodEatUp : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
         "hashtags": [
           "restaurant",
           "restaurateur",
@@ -15967,10 +15967,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "commandes multi-canaux",
           "service restaurant"
         ],
-        "cta": "Voir le tutoriel complet"
+        "cta": "Découvrir FoodEatUp"
       },
       "instagram": {
-        "legende": "Deux minutes par cycle. Quatre-vingts cycles.\nLe service, c'est ça aussi.\n\nLe service, c'est cent gestes invisibles. FoodEatUp en enregistre la trace pour que tu saches où part vraiment ton temps.\n\nLe pas-à-pas complet est dans notre Academy — lien en bio.\nUne démo ? 06 14 18 92 25",
+        "legende": "Deux minutes par cycle. Quatre-vingts cycles.\nLe service, c'est ça aussi.\n\nLe service, c'est cent gestes invisibles. FoodEatUp en enregistre la trace pour que tu saches où part vraiment ton temps.\n\nTout est expliqué sur notre site — lien en bio.\nUne démo ? 06 14 18 92 25",
         "hashtags": [
           "restaurant",
           "restaurateur",
@@ -15992,7 +15992,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "commandes multi-canaux",
           "service restaurant"
         ],
-        "cta": "Le pas-à-pas est en bio"
+        "cta": "Tout est en bio"
       },
       "tiktok": {
         "legende": "Deux minutes par cycle. Quatre-vingts cycles. 😅\nLe service, c'est ça aussi.\n\nLe service, c'est cent gestes invisibles.",
@@ -16010,10 +16010,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "commandes multi-canaux",
           "service restaurant"
         ],
-        "cta": "Tuto complet en bio"
+        "cta": "Lien en bio"
       },
       "linkedin": {
-        "legende": "Deux minutes par cycle. Quatre-vingts cycles.\n\nLe service, c'est cent gestes invisibles. FoodEatUp en enregistre la trace pour que tu saches où part vraiment ton temps.\n\nConcrètement : moins de tickets perdus entre la salle et le pass.\n\nLe tutoriel pas-à-pas : https://drive.google.com/file/d/10GjJltEF3utZtfmwHR0qLZ8CTQr5_ioC/view\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "legende": "Deux minutes par cycle. Quatre-vingts cycles.\n\nLe service, c'est cent gestes invisibles. FoodEatUp en enregistre la trace pour que tu saches où part vraiment ton temps.\n\nConcrètement : moins de tickets perdus entre la salle et le pass.\n\nEn savoir plus : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
         "hashtags": [
           "restauration",
           "foodeatup",
@@ -16027,10 +16027,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "commandes multi-canaux",
           "service restaurant"
         ],
-        "cta": "Voir le tutoriel pas-à-pas"
+        "cta": "Découvrir FoodEatUp"
       },
       "youtube": {
-        "legende": "Deux minutes par cycle. Quatre-vingts cycles. Le service, c'est ça aussi.\n\nLe service, c'est cent gestes invisibles. FoodEatUp en enregistre la trace pour que tu saches où part vraiment ton temps.\n\nConcrètement : moins de tickets perdus entre la salle et le pass.\n\n— — —\n\n📺 Le tutoriel pas-à-pas : https://drive.google.com/file/d/10GjJltEF3utZtfmwHR0qLZ8CTQr5_ioC/view\n\n📞 Une démo ? 06 14 18 92 25\n🌐 foodeatup.com\n\nSérie « Le Coup de Feu » — saison 5, épisode 136.\nModule Service · Chapitre : 1 - Commandes multi-canaux\n\nFoodEatUp est le logiciel qui réunit la caisse, le stock, les plannings, l'HACCP et le marketing d'un restaurant au même endroit.\n",
+        "legende": "Deux minutes par cycle. Quatre-vingts cycles. Le service, c'est ça aussi.\n\nLe service, c'est cent gestes invisibles. FoodEatUp en enregistre la trace pour que tu saches où part vraiment ton temps.\n\nConcrètement : moins de tickets perdus entre la salle et le pass.\n\n— — —\n\n🔗 https://site.foodeatup.com/\n\n📞 Une démo ? 06 14 18 92 25\n🌐 foodeatup.com\n\nSérie « Le Coup de Feu » — saison 5, épisode 136.\nModule Service · Chapitre : 1 - Commandes multi-canaux\n\nFoodEatUp est le logiciel qui réunit la caisse, le stock, les plannings, l'HACCP et le marketing d'un restaurant au même endroit.\n",
         "hashtags": [
           "Shorts",
           "restaurant",
@@ -16050,7 +16050,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "commandes multi-canaux",
           "service restaurant"
         ],
-        "cta": "Le tutoriel pas-à-pas",
+        "cta": "Découvrir FoodEatUp",
         "titre": "Commandes multi-canaux — Service | FoodEatUp"
       }
     },
@@ -16072,7 +16072,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
   "EP137": {
     "publications": {
       "facebook": {
-        "legende": "Deux cent quarante cafés. Aujourd'hui. Combien encaissés ? Tu es sûr ?\n\nDeux cent quarante cafés, deux cent quarante lignes encaissées. Tu compares le vendu et l'encaissé, à l'unité près.\n\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "legende": "Deux cent quarante cafés. Aujourd'hui. Combien encaissés ? Tu es sûr ?\n\nDeux cent quarante cafés, deux cent quarante lignes encaissées. Tu compares le vendu et l'encaissé, à l'unité près.\n\n👉 Tout FoodEatUp : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
         "hashtags": [
           "restaurant",
           "restaurateur",
@@ -16089,10 +16089,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "encaisser une commande",
           "caisse pos restaurant"
         ],
-        "cta": "Demander une démo"
+        "cta": "Découvrir FoodEatUp"
       },
       "instagram": {
-        "legende": "Deux cent quarante cafés. Aujourd'hui.\nCombien encaissés ? Tu es sûr ?\n\nDeux cent quarante cafés, deux cent quarante lignes encaissées. Tu compares le vendu et l'encaissé, à l'unité près.\n\nLe pas-à-pas complet est dans notre Academy — lien en bio.\nUne démo ? 06 14 18 92 25",
+        "legende": "Deux cent quarante cafés. Aujourd'hui.\nCombien encaissés ? Tu es sûr ?\n\nDeux cent quarante cafés, deux cent quarante lignes encaissées. Tu compares le vendu et l'encaissé, à l'unité près.\n\nTout est expliqué sur notre site — lien en bio.\nUne démo ? 06 14 18 92 25",
         "hashtags": [
           "restaurant",
           "restaurateur",
@@ -16114,7 +16114,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "encaisser une commande",
           "caisse pos restaurant"
         ],
-        "cta": "Demander une démo"
+        "cta": "Tout est en bio"
       },
       "tiktok": {
         "legende": "Deux cent quarante cafés. Aujourd'hui. 😅\nCombien encaissés ? Tu es sûr ?\n\nDeux cent quarante cafés, deux cent quarante lignes encaissées.",
@@ -16132,10 +16132,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "encaisser une commande",
           "caisse pos restaurant"
         ],
-        "cta": "Demander une démo"
+        "cta": "Lien en bio"
       },
       "linkedin": {
-        "legende": "Deux cent quarante cafés. Aujourd'hui.\n\nDeux cent quarante cafés, deux cent quarante lignes encaissées. Tu compares le vendu et l'encaissé, à l'unité près.\n\nConcrètement : une caisse qui ferme juste, tous les soirs.\n\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "legende": "Deux cent quarante cafés. Aujourd'hui.\n\nDeux cent quarante cafés, deux cent quarante lignes encaissées. Tu compares le vendu et l'encaissé, à l'unité près.\n\nConcrètement : une caisse qui ferme juste, tous les soirs.\n\nEn savoir plus : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
         "hashtags": [
           "restauration",
           "foodeatup",
@@ -16149,10 +16149,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "encaisser une commande",
           "caisse pos restaurant"
         ],
-        "cta": "Demander une démo"
+        "cta": "Découvrir FoodEatUp"
       },
       "youtube": {
-        "legende": "Deux cent quarante cafés. Aujourd'hui. Combien encaissés ? Tu es sûr ?\n\nDeux cent quarante cafés, deux cent quarante lignes encaissées. Tu compares le vendu et l'encaissé, à l'unité près.\n\nConcrètement : une caisse qui ferme juste, tous les soirs.\n\n— — —\n\n📞 Une démo ? 06 14 18 92 25\n🌐 foodeatup.com\n\nSérie « Le Coup de Feu » — saison 5, épisode 137.\nModule Caisse POS · Chapitre : 3 - Encaisser une commande\n\nFoodEatUp est le logiciel qui réunit la caisse, le stock, les plannings, l'HACCP et le marketing d'un restaurant au même endroit.\n",
+        "legende": "Deux cent quarante cafés. Aujourd'hui. Combien encaissés ? Tu es sûr ?\n\nDeux cent quarante cafés, deux cent quarante lignes encaissées. Tu compares le vendu et l'encaissé, à l'unité près.\n\nConcrètement : une caisse qui ferme juste, tous les soirs.\n\n— — —\n\n🔗 https://site.foodeatup.com/\n\n📞 Une démo ? 06 14 18 92 25\n🌐 foodeatup.com\n\nSérie « Le Coup de Feu » — saison 5, épisode 137.\nModule Caisse POS · Chapitre : 3 - Encaisser une commande\n\nFoodEatUp est le logiciel qui réunit la caisse, le stock, les plannings, l'HACCP et le marketing d'un restaurant au même endroit.\n",
         "hashtags": [
           "Shorts",
           "restaurant",
@@ -16172,7 +16172,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "encaisser une commande",
           "caisse pos restaurant"
         ],
-        "cta": "Demander une démo",
+        "cta": "Découvrir FoodEatUp",
         "titre": "Encaisser une commande — Caisse POS | FoodEatUp"
       }
     },
@@ -16183,7 +16183,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
   "EP138": {
     "publications": {
       "facebook": {
-        "legende": "Quarante-cinq secondes de vie. Chaque assiette compte. Compte-les.\n\nDe l'envoi au pass, chaque plat a son statut et son chrono. Tu comptes tes assiettes, tu ne les devines pas.\n\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "legende": "Quarante-cinq secondes de vie. Chaque assiette compte. Compte-les.\n\nDe l'envoi au pass, chaque plat a son statut et son chrono. Tu comptes tes assiettes, tu ne les devines pas.\n\n👉 Tout FoodEatUp : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
         "hashtags": [
           "restaurant",
           "restaurateur",
@@ -16200,10 +16200,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "gérer le kds en direct",
           "kds restaurant"
         ],
-        "cta": "Demander une démo"
+        "cta": "Découvrir FoodEatUp"
       },
       "instagram": {
-        "legende": "Quarante-cinq secondes de vie.\nChaque assiette compte. Compte-les.\n\nDe l'envoi au pass, chaque plat a son statut et son chrono. Tu comptes tes assiettes, tu ne les devines pas.\n\nLe pas-à-pas complet est dans notre Academy — lien en bio.\nUne démo ? 06 14 18 92 25",
+        "legende": "Quarante-cinq secondes de vie.\nChaque assiette compte. Compte-les.\n\nDe l'envoi au pass, chaque plat a son statut et son chrono. Tu comptes tes assiettes, tu ne les devines pas.\n\nTout est expliqué sur notre site — lien en bio.\nUne démo ? 06 14 18 92 25",
         "hashtags": [
           "restaurant",
           "restaurateur",
@@ -16224,7 +16224,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "gérer le kds en direct",
           "kds restaurant"
         ],
-        "cta": "Demander une démo"
+        "cta": "Tout est en bio"
       },
       "tiktok": {
         "legende": "Quarante-cinq secondes de vie. 😅\nChaque assiette compte. Compte-les.\n\nDe l'envoi au pass, chaque plat a son statut et son chrono.",
@@ -16242,10 +16242,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "gérer le kds en direct",
           "kds restaurant"
         ],
-        "cta": "Demander une démo"
+        "cta": "Lien en bio"
       },
       "linkedin": {
-        "legende": "Quarante-cinq secondes de vie.\n\nDe l'envoi au pass, chaque plat a son statut et son chrono. Tu comptes tes assiettes, tu ne les devines pas.\n\nConcrètement : une cuisine qui sait quoi sortir, et quand.\n\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "legende": "Quarante-cinq secondes de vie.\n\nDe l'envoi au pass, chaque plat a son statut et son chrono. Tu comptes tes assiettes, tu ne les devines pas.\n\nConcrètement : une cuisine qui sait quoi sortir, et quand.\n\nEn savoir plus : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
         "hashtags": [
           "restauration",
           "foodeatup",
@@ -16259,10 +16259,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "gérer le kds en direct",
           "kds restaurant"
         ],
-        "cta": "Demander une démo"
+        "cta": "Découvrir FoodEatUp"
       },
       "youtube": {
-        "legende": "Quarante-cinq secondes de vie. Chaque assiette compte. Compte-les.\n\nDe l'envoi au pass, chaque plat a son statut et son chrono. Tu comptes tes assiettes, tu ne les devines pas.\n\nConcrètement : une cuisine qui sait quoi sortir, et quand.\n\n— — —\n\n📞 Une démo ? 06 14 18 92 25\n🌐 foodeatup.com\n\nSérie « Le Coup de Feu » — saison 5, épisode 138.\nModule KDS · Chapitre : 3 - Gérer le KDS en direct\n\nFoodEatUp est le logiciel qui réunit la caisse, le stock, les plannings, l'HACCP et le marketing d'un restaurant au même endroit.\n",
+        "legende": "Quarante-cinq secondes de vie. Chaque assiette compte. Compte-les.\n\nDe l'envoi au pass, chaque plat a son statut et son chrono. Tu comptes tes assiettes, tu ne les devines pas.\n\nConcrètement : une cuisine qui sait quoi sortir, et quand.\n\n— — —\n\n🔗 https://site.foodeatup.com/\n\n📞 Une démo ? 06 14 18 92 25\n🌐 foodeatup.com\n\nSérie « Le Coup de Feu » — saison 5, épisode 138.\nModule KDS · Chapitre : 3 - Gérer le KDS en direct\n\nFoodEatUp est le logiciel qui réunit la caisse, le stock, les plannings, l'HACCP et le marketing d'un restaurant au même endroit.\n",
         "hashtags": [
           "Shorts",
           "restaurant",
@@ -16282,7 +16282,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "gérer le kds en direct",
           "kds restaurant"
         ],
-        "cta": "Demander une démo",
+        "cta": "Découvrir FoodEatUp",
         "titre": "Gérer le KDS en direct — KDS | FoodEatUp"
       }
     },
@@ -16300,7 +16300,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
   "EP139": {
     "publications": {
       "facebook": {
-        "legende": "20 h 30. Le coup de feu. Sois équipé, pas héroïque.\n\nPendant le coup de feu, tu vois la charge de chaque poste. Tu envoies où il y a de la place. Être équipé, c'est ça.\n\n👉 Le tutoriel complet : https://drive.google.com/file/d/1PmYYGKH00qGUcMc1zehHng3C9fQiH84O/view\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "legende": "20 h 30. Le coup de feu. Sois équipé, pas héroïque.\n\nPendant le coup de feu, tu vois la charge de chaque poste. Tu envoies où il y a de la place. Être équipé, c'est ça.\n\n👉 Tout FoodEatUp : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
         "hashtags": [
           "restaurant",
           "restaurateur",
@@ -16317,10 +16317,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "vue kds par poste",
           "kds restaurant"
         ],
-        "cta": "Voir le tutoriel complet"
+        "cta": "Découvrir FoodEatUp"
       },
       "instagram": {
-        "legende": "20 h 30. Le coup de feu.\nSois équipé, pas héroïque.\n\nPendant le coup de feu, tu vois la charge de chaque poste. Tu envoies où il y a de la place. Être équipé, c'est ça.\n\nLe pas-à-pas complet est dans notre Academy — lien en bio.\nUne démo ? 06 14 18 92 25",
+        "legende": "20 h 30. Le coup de feu.\nSois équipé, pas héroïque.\n\nPendant le coup de feu, tu vois la charge de chaque poste. Tu envoies où il y a de la place. Être équipé, c'est ça.\n\nTout est expliqué sur notre site — lien en bio.\nUne démo ? 06 14 18 92 25",
         "hashtags": [
           "restaurant",
           "restaurateur",
@@ -16341,7 +16341,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "vue kds par poste",
           "kds restaurant"
         ],
-        "cta": "Le pas-à-pas est en bio"
+        "cta": "Tout est en bio"
       },
       "tiktok": {
         "legende": "20 h 30. Le coup de feu. 😅\nSois équipé, pas héroïque.\n\nPendant le coup de feu, tu vois la charge de chaque poste.",
@@ -16359,10 +16359,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "vue kds par poste",
           "kds restaurant"
         ],
-        "cta": "Tuto complet en bio"
+        "cta": "Lien en bio"
       },
       "linkedin": {
-        "legende": "20 h 30. Le coup de feu.\n\nPendant le coup de feu, tu vois la charge de chaque poste. Tu envoies où il y a de la place. Être équipé, c'est ça.\n\nConcrètement : une cuisine qui sait quoi sortir, et quand.\n\nLe tutoriel pas-à-pas : https://drive.google.com/file/d/1PmYYGKH00qGUcMc1zehHng3C9fQiH84O/view\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "legende": "20 h 30. Le coup de feu.\n\nPendant le coup de feu, tu vois la charge de chaque poste. Tu envoies où il y a de la place. Être équipé, c'est ça.\n\nConcrètement : une cuisine qui sait quoi sortir, et quand.\n\nEn savoir plus : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
         "hashtags": [
           "restauration",
           "foodeatup",
@@ -16376,10 +16376,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "vue kds par poste",
           "kds restaurant"
         ],
-        "cta": "Voir le tutoriel pas-à-pas"
+        "cta": "Découvrir FoodEatUp"
       },
       "youtube": {
-        "legende": "20 h 30. Le coup de feu. Sois équipé, pas héroïque.\n\nPendant le coup de feu, tu vois la charge de chaque poste. Tu envoies où il y a de la place. Être équipé, c'est ça.\n\nConcrètement : une cuisine qui sait quoi sortir, et quand.\n\n— — —\n\n📺 Le tutoriel pas-à-pas : https://drive.google.com/file/d/1PmYYGKH00qGUcMc1zehHng3C9fQiH84O/view\n\n📞 Une démo ? 06 14 18 92 25\n🌐 foodeatup.com\n\nSérie « Le Coup de Feu » — saison 5, épisode 139.\nModule KDS · Chapitre : 2 - Vue KDS par poste\n\nFoodEatUp est le logiciel qui réunit la caisse, le stock, les plannings, l'HACCP et le marketing d'un restaurant au même endroit.\n",
+        "legende": "20 h 30. Le coup de feu. Sois équipé, pas héroïque.\n\nPendant le coup de feu, tu vois la charge de chaque poste. Tu envoies où il y a de la place. Être équipé, c'est ça.\n\nConcrètement : une cuisine qui sait quoi sortir, et quand.\n\n— — —\n\n🔗 https://site.foodeatup.com/\n\n📞 Une démo ? 06 14 18 92 25\n🌐 foodeatup.com\n\nSérie « Le Coup de Feu » — saison 5, épisode 139.\nModule KDS · Chapitre : 2 - Vue KDS par poste\n\nFoodEatUp est le logiciel qui réunit la caisse, le stock, les plannings, l'HACCP et le marketing d'un restaurant au même endroit.\n",
         "hashtags": [
           "Shorts",
           "restaurant",
@@ -16399,7 +16399,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "vue kds par poste",
           "kds restaurant"
         ],
-        "cta": "Le tutoriel pas-à-pas",
+        "cta": "Découvrir FoodEatUp",
         "titre": "Vue KDS par poste — KDS | FoodEatUp"
       }
     },
@@ -16421,7 +16421,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
   "EP140": {
     "publications": {
       "facebook": {
-        "legende": "Ton inventaire, la nuit. Ce qui disparaît finit toujours par se voir.\n\nL'inventaire est daté, signé, comparé au théorique. Ce qui disparaît la nuit finit toujours par apparaître dans l'écart.\n\n👉 Le tutoriel complet : https://drive.google.com/file/d/124mIM7NudoQy5wun_rlSZ6MCrJ2wNykL/view\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "legende": "Ton inventaire, la nuit. Ce qui disparaît finit toujours par se voir.\n\nL'inventaire est daté, signé, comparé au théorique. Ce qui disparaît la nuit finit toujours par apparaître dans l'écart.\n\n👉 Tout FoodEatUp : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
         "hashtags": [
           "restaurant",
           "restaurateur",
@@ -16438,10 +16438,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "mouvements de stock",
           "stockvision restaurant"
         ],
-        "cta": "Voir le tutoriel complet"
+        "cta": "Découvrir FoodEatUp"
       },
       "instagram": {
-        "legende": "Ton inventaire, la nuit.\nCe qui disparaît finit toujours par se voir.\n\nL'inventaire est daté, signé, comparé au théorique. Ce qui disparaît la nuit finit toujours par apparaître dans l'écart.\n\nLe pas-à-pas complet est dans notre Academy — lien en bio.\nUne démo ? 06 14 18 92 25",
+        "legende": "Ton inventaire, la nuit.\nCe qui disparaît finit toujours par se voir.\n\nL'inventaire est daté, signé, comparé au théorique. Ce qui disparaît la nuit finit toujours par apparaître dans l'écart.\n\nTout est expliqué sur notre site — lien en bio.\nUne démo ? 06 14 18 92 25",
         "hashtags": [
           "restaurant",
           "restaurateur",
@@ -16464,7 +16464,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "mouvements de stock",
           "stockvision restaurant"
         ],
-        "cta": "Le pas-à-pas est en bio"
+        "cta": "Tout est en bio"
       },
       "tiktok": {
         "legende": "Ton inventaire, la nuit. 😅\nCe qui disparaît finit toujours par se voir.\n\nL'inventaire est daté, signé, comparé au théorique.",
@@ -16482,10 +16482,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "mouvements de stock",
           "stockvision restaurant"
         ],
-        "cta": "Tuto complet en bio"
+        "cta": "Lien en bio"
       },
       "linkedin": {
-        "legende": "Ton inventaire, la nuit.\n\nL'inventaire est daté, signé, comparé au théorique. Ce qui disparaît la nuit finit toujours par apparaître dans l'écart.\n\nConcrètement : un stock juste et une marge qu'on voit avant de fixer le prix.\n\nLe tutoriel pas-à-pas : https://drive.google.com/file/d/124mIM7NudoQy5wun_rlSZ6MCrJ2wNykL/view\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "legende": "Ton inventaire, la nuit.\n\nL'inventaire est daté, signé, comparé au théorique. Ce qui disparaît la nuit finit toujours par apparaître dans l'écart.\n\nConcrètement : un stock juste et une marge qu'on voit avant de fixer le prix.\n\nEn savoir plus : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
         "hashtags": [
           "restauration",
           "foodeatup",
@@ -16499,10 +16499,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "mouvements de stock",
           "stockvision restaurant"
         ],
-        "cta": "Voir le tutoriel pas-à-pas"
+        "cta": "Découvrir FoodEatUp"
       },
       "youtube": {
-        "legende": "Ton inventaire, la nuit. Ce qui disparaît finit toujours par se voir.\n\nL'inventaire est daté, signé, comparé au théorique. Ce qui disparaît la nuit finit toujours par apparaître dans l'écart.\n\nConcrètement : un stock juste et une marge qu'on voit avant de fixer le prix.\n\n— — —\n\n📺 Le tutoriel pas-à-pas : https://drive.google.com/file/d/124mIM7NudoQy5wun_rlSZ6MCrJ2wNykL/view\n\n📞 Une démo ? 06 14 18 92 25\n🌐 foodeatup.com\n\nSérie « Le Coup de Feu » — saison 5, épisode 140.\nModule StockVision · Chapitre : 16 - Mouvements de stock\n\nFoodEatUp est le logiciel qui réunit la caisse, le stock, les plannings, l'HACCP et le marketing d'un restaurant au même endroit.\n",
+        "legende": "Ton inventaire, la nuit. Ce qui disparaît finit toujours par se voir.\n\nL'inventaire est daté, signé, comparé au théorique. Ce qui disparaît la nuit finit toujours par apparaître dans l'écart.\n\nConcrètement : un stock juste et une marge qu'on voit avant de fixer le prix.\n\n— — —\n\n🔗 https://site.foodeatup.com/\n\n📞 Une démo ? 06 14 18 92 25\n🌐 foodeatup.com\n\nSérie « Le Coup de Feu » — saison 5, épisode 140.\nModule StockVision · Chapitre : 16 - Mouvements de stock\n\nFoodEatUp est le logiciel qui réunit la caisse, le stock, les plannings, l'HACCP et le marketing d'un restaurant au même endroit.\n",
         "hashtags": [
           "Shorts",
           "restaurant",
@@ -16523,7 +16523,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "mouvements de stock",
           "stockvision restaurant"
         ],
-        "cta": "Le tutoriel pas-à-pas",
+        "cta": "Découvrir FoodEatUp",
         "titre": "Mouvements de stock — StockVision | FoodEatUp"
       }
     },
@@ -16545,7 +16545,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
   "EP141": {
     "publications": {
       "facebook": {
-        "legende": "Table 6 depuis 22 minutes. Un pilote automatique, ça existe aussi en cuisine.\n\nTu demandes, PrediBot répond avec tes vraies données : la table en attente, la production à lancer, l'alerte à traiter. Le pilote automatique existe.\n\n👉 Le tutoriel complet : https://drive.google.com/file/d/1nuFxXTOCXeHKtSbJBScCH0O3khJxTiB4/view\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "legende": "Table 6 depuis 22 minutes. Un pilote automatique, ça existe aussi en cuisine.\n\nTu demandes, PrediBot répond avec tes vraies données : la table en attente, la production à lancer, l'alerte à traiter. Le pilote automatique existe.\n\n👉 Tout FoodEatUp : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
         "hashtags": [
           "restaurant",
           "restaurateur",
@@ -16562,10 +16562,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "parler à predibot",
           "predibot restaurant"
         ],
-        "cta": "Voir le tutoriel complet"
+        "cta": "Découvrir FoodEatUp"
       },
       "instagram": {
-        "legende": "Table 6 depuis 22 minutes.\nUn pilote automatique, ça existe aussi en cuisine.\n\nTu demandes, PrediBot répond avec tes vraies données : la table en attente, la production à lancer, l'alerte à traiter. Le pilote automatique existe.\n\nLe pas-à-pas complet est dans notre Academy — lien en bio.\nUne démo ? 06 14 18 92 25",
+        "legende": "Table 6 depuis 22 minutes.\nUn pilote automatique, ça existe aussi en cuisine.\n\nTu demandes, PrediBot répond avec tes vraies données : la table en attente, la production à lancer, l'alerte à traiter. Le pilote automatique existe.\n\nTout est expliqué sur notre site — lien en bio.\nUne démo ? 06 14 18 92 25",
         "hashtags": [
           "restaurant",
           "restaurateur",
@@ -16587,7 +16587,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "parler à predibot",
           "predibot restaurant"
         ],
-        "cta": "Le pas-à-pas est en bio"
+        "cta": "Tout est en bio"
       },
       "tiktok": {
         "legende": "Table 6 depuis 22 minutes. 😅\nUn pilote automatique, ça existe aussi en cuisine.\n\nTu demandes, PrediBot répond avec tes vraies données : la table en attente, la production à lancer, l'alerte à traiter.",
@@ -16605,10 +16605,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "parler à predibot",
           "predibot restaurant"
         ],
-        "cta": "Tuto complet en bio"
+        "cta": "Lien en bio"
       },
       "linkedin": {
-        "legende": "Table 6 depuis 22 minutes.\n\nTu demandes, PrediBot répond avec tes vraies données : la table en attente, la production à lancer, l'alerte à traiter. Le pilote automatique existe.\n\nConcrètement : voir venir la journée au lieu de la subir.\n\nLe tutoriel pas-à-pas : https://drive.google.com/file/d/1nuFxXTOCXeHKtSbJBScCH0O3khJxTiB4/view\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "legende": "Table 6 depuis 22 minutes.\n\nTu demandes, PrediBot répond avec tes vraies données : la table en attente, la production à lancer, l'alerte à traiter. Le pilote automatique existe.\n\nConcrètement : voir venir la journée au lieu de la subir.\n\nEn savoir plus : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
         "hashtags": [
           "restauration",
           "foodeatup",
@@ -16622,10 +16622,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "parler à predibot",
           "predibot restaurant"
         ],
-        "cta": "Voir le tutoriel pas-à-pas"
+        "cta": "Découvrir FoodEatUp"
       },
       "youtube": {
-        "legende": "Table 6 depuis 22 minutes. Un pilote automatique, ça existe aussi en cuisine.\n\nTu demandes, PrediBot répond avec tes vraies données : la table en attente, la production à lancer, l'alerte à traiter. Le pilote automatique existe.\n\nConcrètement : voir venir la journée au lieu de la subir.\n\n— — —\n\n📺 Le tutoriel pas-à-pas : https://drive.google.com/file/d/1nuFxXTOCXeHKtSbJBScCH0O3khJxTiB4/view\n\n📞 Une démo ? 06 14 18 92 25\n🌐 foodeatup.com\n\nSérie « Le Coup de Feu » — saison 5, épisode 141.\nModule PrediBot · Chapitre : 3 - Parler à PrediBot\n\nFoodEatUp est le logiciel qui réunit la caisse, le stock, les plannings, l'HACCP et le marketing d'un restaurant au même endroit.\n",
+        "legende": "Table 6 depuis 22 minutes. Un pilote automatique, ça existe aussi en cuisine.\n\nTu demandes, PrediBot répond avec tes vraies données : la table en attente, la production à lancer, l'alerte à traiter. Le pilote automatique existe.\n\nConcrètement : voir venir la journée au lieu de la subir.\n\n— — —\n\n🔗 https://site.foodeatup.com/\n\n📞 Une démo ? 06 14 18 92 25\n🌐 foodeatup.com\n\nSérie « Le Coup de Feu » — saison 5, épisode 141.\nModule PrediBot · Chapitre : 3 - Parler à PrediBot\n\nFoodEatUp est le logiciel qui réunit la caisse, le stock, les plannings, l'HACCP et le marketing d'un restaurant au même endroit.\n",
         "hashtags": [
           "Shorts",
           "restaurant",
@@ -16645,7 +16645,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "parler à predibot",
           "predibot restaurant"
         ],
-        "cta": "Le tutoriel pas-à-pas",
+        "cta": "Découvrir FoodEatUp",
         "titre": "Parler à PrediBot — PrediBot | FoodEatUp"
       }
     },
@@ -16665,7 +16665,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
   "EP142": {
     "publications": {
       "facebook": {
-        "legende": "Qui envoie le plat du jour. Répartis les postes avant le service, pas pendant.\n\nLes postes sont répartis avant le service, pas pendant. Chacun sait ce qu'il envoie, personne ne dégaine sa spatule pour le savoir.\n\n👉 Le tutoriel complet : https://drive.google.com/file/d/13w9aRHXfQFkxF3UvqtaLczqKPN5rr7E0/view\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "legende": "Qui envoie le plat du jour. Répartis les postes avant le service, pas pendant.\n\nLes postes sont répartis avant le service, pas pendant. Chacun sait ce qu'il envoie, personne ne dégaine sa spatule pour le savoir.\n\n👉 Tout FoodEatUp : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
         "hashtags": [
           "restaurant",
           "restaurateur",
@@ -16682,10 +16682,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "affectation des postes",
           "équipe & planning restaurant"
         ],
-        "cta": "Voir le tutoriel complet"
+        "cta": "Découvrir FoodEatUp"
       },
       "instagram": {
-        "legende": "Qui envoie le plat du jour.\nRépartis les postes avant le service, pas pendant.\n\nLes postes sont répartis avant le service, pas pendant. Chacun sait ce qu'il envoie, personne ne dégaine sa spatule pour le savoir.\n\nLe pas-à-pas complet est dans notre Academy — lien en bio.\nUne démo ? 06 14 18 92 25",
+        "legende": "Qui envoie le plat du jour.\nRépartis les postes avant le service, pas pendant.\n\nLes postes sont répartis avant le service, pas pendant. Chacun sait ce qu'il envoie, personne ne dégaine sa spatule pour le savoir.\n\nTout est expliqué sur notre site — lien en bio.\nUne démo ? 06 14 18 92 25",
         "hashtags": [
           "restaurant",
           "restaurateur",
@@ -16707,7 +16707,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "affectation des postes",
           "équipe & planning restaurant"
         ],
-        "cta": "Le pas-à-pas est en bio"
+        "cta": "Tout est en bio"
       },
       "tiktok": {
         "legende": "Qui envoie le plat du jour. 😅\nRépartis les postes avant le service, pas pendant.\n\nLes postes sont répartis avant le service, pas pendant.",
@@ -16725,10 +16725,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "affectation des postes",
           "équipe & planning restaurant"
         ],
-        "cta": "Tuto complet en bio"
+        "cta": "Lien en bio"
       },
       "linkedin": {
-        "legende": "Qui envoie le plat du jour.\n\nLes postes sont répartis avant le service, pas pendant. Chacun sait ce qu'il envoie, personne ne dégaine sa spatule pour le savoir.\n\nConcrètement : des plannings faits en vingt minutes, pas en deux soirées.\n\nLe tutoriel pas-à-pas : https://drive.google.com/file/d/13w9aRHXfQFkxF3UvqtaLczqKPN5rr7E0/view\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "legende": "Qui envoie le plat du jour.\n\nLes postes sont répartis avant le service, pas pendant. Chacun sait ce qu'il envoie, personne ne dégaine sa spatule pour le savoir.\n\nConcrètement : des plannings faits en vingt minutes, pas en deux soirées.\n\nEn savoir plus : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
         "hashtags": [
           "restauration",
           "foodeatup",
@@ -16742,10 +16742,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "affectation des postes",
           "équipe & planning restaurant"
         ],
-        "cta": "Voir le tutoriel pas-à-pas"
+        "cta": "Découvrir FoodEatUp"
       },
       "youtube": {
-        "legende": "Qui envoie le plat du jour. Répartis les postes avant le service, pas pendant.\n\nLes postes sont répartis avant le service, pas pendant. Chacun sait ce qu'il envoie, personne ne dégaine sa spatule pour le savoir.\n\nConcrètement : des plannings faits en vingt minutes, pas en deux soirées.\n\n— — —\n\n📺 Le tutoriel pas-à-pas : https://drive.google.com/file/d/13w9aRHXfQFkxF3UvqtaLczqKPN5rr7E0/view\n\n📞 Une démo ? 06 14 18 92 25\n🌐 foodeatup.com\n\nSérie « Le Coup de Feu » — saison 5, épisode 142.\nModule Équipe & Planning · Chapitre : affectation des postes\n\nFoodEatUp est le logiciel qui réunit la caisse, le stock, les plannings, l'HACCP et le marketing d'un restaurant au même endroit.\n",
+        "legende": "Qui envoie le plat du jour. Répartis les postes avant le service, pas pendant.\n\nLes postes sont répartis avant le service, pas pendant. Chacun sait ce qu'il envoie, personne ne dégaine sa spatule pour le savoir.\n\nConcrètement : des plannings faits en vingt minutes, pas en deux soirées.\n\n— — —\n\n🔗 https://site.foodeatup.com/\n\n📞 Une démo ? 06 14 18 92 25\n🌐 foodeatup.com\n\nSérie « Le Coup de Feu » — saison 5, épisode 142.\nModule Équipe & Planning · Chapitre : affectation des postes\n\nFoodEatUp est le logiciel qui réunit la caisse, le stock, les plannings, l'HACCP et le marketing d'un restaurant au même endroit.\n",
         "hashtags": [
           "Shorts",
           "restaurant",
@@ -16765,7 +16765,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "affectation des postes",
           "équipe & planning restaurant"
         ],
-        "cta": "Le tutoriel pas-à-pas",
+        "cta": "Découvrir FoodEatUp",
         "titre": "Affectation des postes — Équipe & Planning | FoodEatUp"
       }
     },
@@ -16786,7 +16786,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
   "EP143": {
     "publications": {
       "facebook": {
-        "legende": "Une seule commande. Deux cents parts. Anticipe-les.\n\nDeux cents parts, ça commence par un devis : quantités, prix, marge. Il se transforme en commande, puis en facture, sans ressaisie.\n\n👉 Le tutoriel complet : https://drive.google.com/file/d/1LRxi9R1Sbj1sQ0Cg4RZhpE_cxZHygksu/view\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "legende": "Une seule commande. Deux cents parts. Anticipe-les.\n\nDeux cents parts, ça commence par un devis : quantités, prix, marge. Il se transforme en commande, puis en facture, sans ressaisie.\n\n👉 Tout FoodEatUp : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
         "hashtags": [
           "restaurant",
           "restaurateur",
@@ -16802,10 +16802,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "rentabilité",
           "devis"
         ],
-        "cta": "Voir le tutoriel complet"
+        "cta": "Découvrir FoodEatUp"
       },
       "instagram": {
-        "legende": "Une seule commande.\nDeux cents parts. Anticipe-les.\n\nDeux cents parts, ça commence par un devis : quantités, prix, marge. Il se transforme en commande, puis en facture, sans ressaisie.\n\nLe pas-à-pas complet est dans notre Academy — lien en bio.\nUne démo ? 06 14 18 92 25",
+        "legende": "Une seule commande.\nDeux cents parts. Anticipe-les.\n\nDeux cents parts, ça commence par un devis : quantités, prix, marge. Il se transforme en commande, puis en facture, sans ressaisie.\n\nTout est expliqué sur notre site — lien en bio.\nUne démo ? 06 14 18 92 25",
         "hashtags": [
           "restaurant",
           "restaurateur",
@@ -16826,7 +16826,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "rentabilité",
           "devis"
         ],
-        "cta": "Le pas-à-pas est en bio"
+        "cta": "Tout est en bio"
       },
       "tiktok": {
         "legende": "Une seule commande. 😅\nDeux cents parts. Anticipe-les.\n\nDeux cents parts, ça commence par un devis : quantités, prix, marge.",
@@ -16843,10 +16843,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "rentabilité",
           "devis"
         ],
-        "cta": "Tuto complet en bio"
+        "cta": "Lien en bio"
       },
       "linkedin": {
-        "legende": "Une seule commande.\n\nDeux cents parts, ça commence par un devis : quantités, prix, marge. Il se transforme en commande, puis en facture, sans ressaisie.\n\nConcrètement : des chiffres à jour sans ressaisir une ligne.\n\nLe tutoriel pas-à-pas : https://drive.google.com/file/d/1LRxi9R1Sbj1sQ0Cg4RZhpE_cxZHygksu/view\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "legende": "Une seule commande.\n\nDeux cents parts, ça commence par un devis : quantités, prix, marge. Il se transforme en commande, puis en facture, sans ressaisie.\n\nConcrètement : des chiffres à jour sans ressaisir une ligne.\n\nEn savoir plus : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
         "hashtags": [
           "restauration",
           "foodeatup",
@@ -16859,10 +16859,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "rentabilité",
           "devis"
         ],
-        "cta": "Voir le tutoriel pas-à-pas"
+        "cta": "Découvrir FoodEatUp"
       },
       "youtube": {
-        "legende": "Une seule commande. Deux cents parts. Anticipe-les.\n\nDeux cents parts, ça commence par un devis : quantités, prix, marge. Il se transforme en commande, puis en facture, sans ressaisie.\n\nConcrètement : des chiffres à jour sans ressaisir une ligne.\n\n— — —\n\n📺 Le tutoriel pas-à-pas : https://drive.google.com/file/d/1LRxi9R1Sbj1sQ0Cg4RZhpE_cxZHygksu/view\n\n📞 Une démo ? 06 14 18 92 25\n🌐 foodeatup.com\n\nSérie « Le Coup de Feu » — saison 5, épisode 143.\nModule Comptabilité · Chapitre : devis\n\nFoodEatUp est le logiciel qui réunit la caisse, le stock, les plannings, l'HACCP et le marketing d'un restaurant au même endroit.\n",
+        "legende": "Une seule commande. Deux cents parts. Anticipe-les.\n\nDeux cents parts, ça commence par un devis : quantités, prix, marge. Il se transforme en commande, puis en facture, sans ressaisie.\n\nConcrètement : des chiffres à jour sans ressaisir une ligne.\n\n— — —\n\n🔗 https://site.foodeatup.com/\n\n📞 Une démo ? 06 14 18 92 25\n🌐 foodeatup.com\n\nSérie « Le Coup de Feu » — saison 5, épisode 143.\nModule Comptabilité · Chapitre : devis\n\nFoodEatUp est le logiciel qui réunit la caisse, le stock, les plannings, l'HACCP et le marketing d'un restaurant au même endroit.\n",
         "hashtags": [
           "Shorts",
           "restaurant",
@@ -16881,7 +16881,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "rentabilité",
           "devis"
         ],
-        "cta": "Le tutoriel pas-à-pas",
+        "cta": "Découvrir FoodEatUp",
         "titre": "Devis — Comptabilité | FoodEatUp"
       }
     },
@@ -16905,7 +16905,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
   "EP144": {
     "publications": {
       "facebook": {
-        "legende": "Un avis une étoile. Réponds-y avant qu'il fasse jurisprudence.\n\nUn avis une étoile, tu le vois tout de suite et tu réponds depuis l'outil. Une réponse rapide vaut mieux qu'un long procès.\n\n👉 Le tutoriel complet : https://drive.google.com/file/d/1CMKvqIypwbr8KHTj0dCs_w06sjkaQKV4/view\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "legende": "Un avis une étoile. Réponds-y avant qu'il fasse jurisprudence.\n\nUn avis une étoile, tu le vois tout de suite et tu réponds depuis l'outil. Une réponse rapide vaut mieux qu'un long procès.\n\n👉 Tout FoodEatUp : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
         "hashtags": [
           "restaurant",
           "restaurateur",
@@ -16921,10 +16921,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "fidélisation restaurant",
           "répondre aux avis"
         ],
-        "cta": "Voir le tutoriel complet"
+        "cta": "Découvrir FoodEatUp"
       },
       "instagram": {
-        "legende": "Un avis une étoile.\nRéponds-y avant qu'il fasse jurisprudence.\n\nUn avis une étoile, tu le vois tout de suite et tu réponds depuis l'outil. Une réponse rapide vaut mieux qu'un long procès.\n\nLe pas-à-pas complet est dans notre Academy — lien en bio.\nUne démo ? 06 14 18 92 25",
+        "legende": "Un avis une étoile.\nRéponds-y avant qu'il fasse jurisprudence.\n\nUn avis une étoile, tu le vois tout de suite et tu réponds depuis l'outil. Une réponse rapide vaut mieux qu'un long procès.\n\nTout est expliqué sur notre site — lien en bio.\nUne démo ? 06 14 18 92 25",
         "hashtags": [
           "restaurant",
           "restaurateur",
@@ -16945,7 +16945,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "fidélisation restaurant",
           "répondre aux avis"
         ],
-        "cta": "Le pas-à-pas est en bio"
+        "cta": "Tout est en bio"
       },
       "tiktok": {
         "legende": "Un avis une étoile. 😅\nRéponds-y avant qu'il fasse jurisprudence.\n\nUn avis une étoile, tu le vois tout de suite et tu réponds depuis l'outil.",
@@ -16962,10 +16962,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "fidélisation restaurant",
           "répondre aux avis"
         ],
-        "cta": "Tuto complet en bio"
+        "cta": "Lien en bio"
       },
       "linkedin": {
-        "legende": "Un avis une étoile.\n\nUn avis une étoile, tu le vois tout de suite et tu réponds depuis l'outil. Une réponse rapide vaut mieux qu'un long procès.\n\nConcrètement : une salle qui se remplit avant l'ouverture.\n\nLe tutoriel pas-à-pas : https://drive.google.com/file/d/1CMKvqIypwbr8KHTj0dCs_w06sjkaQKV4/view\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "legende": "Un avis une étoile.\n\nUn avis une étoile, tu le vois tout de suite et tu réponds depuis l'outil. Une réponse rapide vaut mieux qu'un long procès.\n\nConcrètement : une salle qui se remplit avant l'ouverture.\n\nEn savoir plus : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
         "hashtags": [
           "restauration",
           "foodeatup",
@@ -16978,10 +16978,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "fidélisation restaurant",
           "répondre aux avis"
         ],
-        "cta": "Voir le tutoriel pas-à-pas"
+        "cta": "Découvrir FoodEatUp"
       },
       "youtube": {
-        "legende": "Un avis une étoile. Réponds-y avant qu'il fasse jurisprudence.\n\nUn avis une étoile, tu le vois tout de suite et tu réponds depuis l'outil. Une réponse rapide vaut mieux qu'un long procès.\n\nConcrètement : une salle qui se remplit avant l'ouverture.\n\n— — —\n\n📺 Le tutoriel pas-à-pas : https://drive.google.com/file/d/1CMKvqIypwbr8KHTj0dCs_w06sjkaQKV4/view\n\n📞 Une démo ? 06 14 18 92 25\n🌐 foodeatup.com\n\nSérie « Le Coup de Feu » — saison 5, épisode 144.\nModule Marketing · Chapitre : 3 - Répondre aux avis\n\nFoodEatUp est le logiciel qui réunit la caisse, le stock, les plannings, l'HACCP et le marketing d'un restaurant au même endroit.\n",
+        "legende": "Un avis une étoile. Réponds-y avant qu'il fasse jurisprudence.\n\nUn avis une étoile, tu le vois tout de suite et tu réponds depuis l'outil. Une réponse rapide vaut mieux qu'un long procès.\n\nConcrètement : une salle qui se remplit avant l'ouverture.\n\n— — —\n\n🔗 https://site.foodeatup.com/\n\n📞 Une démo ? 06 14 18 92 25\n🌐 foodeatup.com\n\nSérie « Le Coup de Feu » — saison 5, épisode 144.\nModule Marketing · Chapitre : 3 - Répondre aux avis\n\nFoodEatUp est le logiciel qui réunit la caisse, le stock, les plannings, l'HACCP et le marketing d'un restaurant au même endroit.\n",
         "hashtags": [
           "Shorts",
           "restaurant",
@@ -17000,7 +17000,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "fidélisation restaurant",
           "répondre aux avis"
         ],
-        "cta": "Le tutoriel pas-à-pas",
+        "cta": "Découvrir FoodEatUp",
         "titre": "Répondre aux avis — Marketing | FoodEatUp"
       }
     },
@@ -17020,7 +17020,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
   "EP145": {
     "publications": {
       "facebook": {
-        "legende": "Le gérant, dans son habitat naturel. Espèce en voie d'épuisement.\n\nTon point du jour en un écran : ce qui arrive, ce qui manque, ce qui coince. L'espèce « gérant épuisé » n'est pas obligée de survivre comme ça.\n\n👉 Le tutoriel complet : https://drive.google.com/file/d/1MWkfZ-OZ_qv2z6QD9VPwabO5XnGd5UaB/view\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "legende": "Le gérant, dans son habitat naturel. Espèce en voie d'épuisement.\n\nTon point du jour en un écran : ce qui arrive, ce qui manque, ce qui coince. L'espèce « gérant épuisé » n'est pas obligée de survivre comme ça.\n\n👉 Tout FoodEatUp : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
         "hashtags": [
           "restaurant",
           "restaurateur",
@@ -17037,10 +17037,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "lire ses prévisions",
           "predibot restaurant"
         ],
-        "cta": "Voir le tutoriel complet"
+        "cta": "Découvrir FoodEatUp"
       },
       "instagram": {
-        "legende": "Le gérant, dans son habitat naturel.\nEspèce en voie d'épuisement.\n\nTon point du jour en un écran : ce qui arrive, ce qui manque, ce qui coince. L'espèce « gérant épuisé » n'est pas obligée de survivre comme ça.\n\nLe pas-à-pas complet est dans notre Academy — lien en bio.\nUne démo ? 06 14 18 92 25",
+        "legende": "Le gérant, dans son habitat naturel.\nEspèce en voie d'épuisement.\n\nTon point du jour en un écran : ce qui arrive, ce qui manque, ce qui coince. L'espèce « gérant épuisé » n'est pas obligée de survivre comme ça.\n\nTout est expliqué sur notre site — lien en bio.\nUne démo ? 06 14 18 92 25",
         "hashtags": [
           "restaurant",
           "restaurateur",
@@ -17062,7 +17062,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "lire ses prévisions",
           "predibot restaurant"
         ],
-        "cta": "Le pas-à-pas est en bio"
+        "cta": "Tout est en bio"
       },
       "tiktok": {
         "legende": "Le gérant, dans son habitat naturel. 😅\nEspèce en voie d'épuisement.\n\nTon point du jour en un écran : ce qui arrive, ce qui manque, ce qui coince.",
@@ -17080,10 +17080,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "lire ses prévisions",
           "predibot restaurant"
         ],
-        "cta": "Tuto complet en bio"
+        "cta": "Lien en bio"
       },
       "linkedin": {
-        "legende": "Le gérant, dans son habitat naturel.\n\nTon point du jour en un écran : ce qui arrive, ce qui manque, ce qui coince. L'espèce « gérant épuisé » n'est pas obligée de survivre comme ça.\n\nConcrètement : voir venir la journée au lieu de la subir.\n\nLe tutoriel pas-à-pas : https://drive.google.com/file/d/1MWkfZ-OZ_qv2z6QD9VPwabO5XnGd5UaB/view\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "legende": "Le gérant, dans son habitat naturel.\n\nTon point du jour en un écran : ce qui arrive, ce qui manque, ce qui coince. L'espèce « gérant épuisé » n'est pas obligée de survivre comme ça.\n\nConcrètement : voir venir la journée au lieu de la subir.\n\nEn savoir plus : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
         "hashtags": [
           "restauration",
           "foodeatup",
@@ -17097,10 +17097,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "lire ses prévisions",
           "predibot restaurant"
         ],
-        "cta": "Voir le tutoriel pas-à-pas"
+        "cta": "Découvrir FoodEatUp"
       },
       "youtube": {
-        "legende": "Le gérant, dans son habitat naturel. Espèce en voie d'épuisement.\n\nTon point du jour en un écran : ce qui arrive, ce qui manque, ce qui coince. L'espèce « gérant épuisé » n'est pas obligée de survivre comme ça.\n\nConcrètement : voir venir la journée au lieu de la subir.\n\n— — —\n\n📺 Le tutoriel pas-à-pas : https://drive.google.com/file/d/1MWkfZ-OZ_qv2z6QD9VPwabO5XnGd5UaB/view\n\n📞 Une démo ? 06 14 18 92 25\n🌐 foodeatup.com\n\nSérie « Le Coup de Feu » — saison 5, épisode 145.\nModule PrediBot · Chapitre : 1 - Lire ses prévisions\n\nFoodEatUp est le logiciel qui réunit la caisse, le stock, les plannings, l'HACCP et le marketing d'un restaurant au même endroit.\n",
+        "legende": "Le gérant, dans son habitat naturel. Espèce en voie d'épuisement.\n\nTon point du jour en un écran : ce qui arrive, ce qui manque, ce qui coince. L'espèce « gérant épuisé » n'est pas obligée de survivre comme ça.\n\nConcrètement : voir venir la journée au lieu de la subir.\n\n— — —\n\n🔗 https://site.foodeatup.com/\n\n📞 Une démo ? 06 14 18 92 25\n🌐 foodeatup.com\n\nSérie « Le Coup de Feu » — saison 5, épisode 145.\nModule PrediBot · Chapitre : 1 - Lire ses prévisions\n\nFoodEatUp est le logiciel qui réunit la caisse, le stock, les plannings, l'HACCP et le marketing d'un restaurant au même endroit.\n",
         "hashtags": [
           "Shorts",
           "restaurant",
@@ -17120,7 +17120,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "lire ses prévisions",
           "predibot restaurant"
         ],
-        "cta": "Le tutoriel pas-à-pas",
+        "cta": "Découvrir FoodEatUp",
         "titre": "Lire ses prévisions — PrediBot | FoodEatUp"
       }
     },
@@ -17140,7 +17140,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
   "EP146": {
     "publications": {
       "facebook": {
-        "legende": "Quarante bougies. Une seule mauvaise idée. Les gros événements, ça se prépare en amont.\n\nUn événement, c'est une demande, un devis, une réservation et une facture. Enchaînés. Rien ne se prépare la veille au soir.\n\n👉 Le tutoriel complet : https://drive.google.com/file/d/1LRxi9R1Sbj1sQ0Cg4RZhpE_cxZHygksu/view\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "legende": "Quarante bougies. Une seule mauvaise idée. Les gros événements, ça se prépare en amont.\n\nUn événement, c'est une demande, un devis, une réservation et une facture. Enchaînés. Rien ne se prépare la veille au soir.\n\n👉 Tout FoodEatUp : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
         "hashtags": [
           "restaurant",
           "restaurateur",
@@ -17156,10 +17156,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "rentabilité",
           "événements privés"
         ],
-        "cta": "Voir le tutoriel complet"
+        "cta": "Découvrir FoodEatUp"
       },
       "instagram": {
-        "legende": "Quarante bougies. Une seule mauvaise idée.\nLes gros événements, ça se prépare en amont.\n\nUn événement, c'est une demande, un devis, une réservation et une facture. Enchaînés. Rien ne se prépare la veille au soir.\n\nLe pas-à-pas complet est dans notre Academy — lien en bio.\nUne démo ? 06 14 18 92 25",
+        "legende": "Quarante bougies. Une seule mauvaise idée.\nLes gros événements, ça se prépare en amont.\n\nUn événement, c'est une demande, un devis, une réservation et une facture. Enchaînés. Rien ne se prépare la veille au soir.\n\nTout est expliqué sur notre site — lien en bio.\nUne démo ? 06 14 18 92 25",
         "hashtags": [
           "restaurant",
           "restaurateur",
@@ -17180,7 +17180,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "rentabilité",
           "événements privés"
         ],
-        "cta": "Le pas-à-pas est en bio"
+        "cta": "Tout est en bio"
       },
       "tiktok": {
         "legende": "Quarante bougies. Une seule mauvaise idée. 😅\nLes gros événements, ça se prépare en amont.\n\nUn événement, c'est une demande, un devis, une réservation et une facture.",
@@ -17197,10 +17197,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "rentabilité",
           "événements privés"
         ],
-        "cta": "Tuto complet en bio"
+        "cta": "Lien en bio"
       },
       "linkedin": {
-        "legende": "Quarante bougies. Une seule mauvaise idée.\n\nUn événement, c'est une demande, un devis, une réservation et une facture. Enchaînés. Rien ne se prépare la veille au soir.\n\nConcrètement : des chiffres à jour sans ressaisir une ligne.\n\nLe tutoriel pas-à-pas : https://drive.google.com/file/d/1LRxi9R1Sbj1sQ0Cg4RZhpE_cxZHygksu/view\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "legende": "Quarante bougies. Une seule mauvaise idée.\n\nUn événement, c'est une demande, un devis, une réservation et une facture. Enchaînés. Rien ne se prépare la veille au soir.\n\nConcrètement : des chiffres à jour sans ressaisir une ligne.\n\nEn savoir plus : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
         "hashtags": [
           "restauration",
           "foodeatup",
@@ -17213,10 +17213,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "rentabilité",
           "événements privés"
         ],
-        "cta": "Voir le tutoriel pas-à-pas"
+        "cta": "Découvrir FoodEatUp"
       },
       "youtube": {
-        "legende": "Quarante bougies. Une seule mauvaise idée. Les gros événements, ça se prépare en amont.\n\nUn événement, c'est une demande, un devis, une réservation et une facture. Enchaînés. Rien ne se prépare la veille au soir.\n\nConcrètement : des chiffres à jour sans ressaisir une ligne.\n\n— — —\n\n📺 Le tutoriel pas-à-pas : https://drive.google.com/file/d/1LRxi9R1Sbj1sQ0Cg4RZhpE_cxZHygksu/view\n\n📞 Une démo ? 06 14 18 92 25\n🌐 foodeatup.com\n\nSérie « Le Coup de Feu » — saison 5, épisode 146.\nModule Comptabilité · Chapitre : événements privés\n\nFoodEatUp est le logiciel qui réunit la caisse, le stock, les plannings, l'HACCP et le marketing d'un restaurant au même endroit.\n",
+        "legende": "Quarante bougies. Une seule mauvaise idée. Les gros événements, ça se prépare en amont.\n\nUn événement, c'est une demande, un devis, une réservation et une facture. Enchaînés. Rien ne se prépare la veille au soir.\n\nConcrètement : des chiffres à jour sans ressaisir une ligne.\n\n— — —\n\n🔗 https://site.foodeatup.com/\n\n📞 Une démo ? 06 14 18 92 25\n🌐 foodeatup.com\n\nSérie « Le Coup de Feu » — saison 5, épisode 146.\nModule Comptabilité · Chapitre : événements privés\n\nFoodEatUp est le logiciel qui réunit la caisse, le stock, les plannings, l'HACCP et le marketing d'un restaurant au même endroit.\n",
         "hashtags": [
           "Shorts",
           "restaurant",
@@ -17235,7 +17235,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "rentabilité",
           "événements privés"
         ],
-        "cta": "Le tutoriel pas-à-pas",
+        "cta": "Découvrir FoodEatUp",
         "titre": "Événements privés — Comptabilité | FoodEatUp"
       }
     },
@@ -17258,7 +17258,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
   "EP147": {
     "publications": {
       "facebook": {
-        "legende": "Douze mille euros de prestation. Sur un devis, pas sur un post-it.\n\nDouze mille euros de prestation ne tiennent pas sur un post-it. Devis signé, acompte suivi, facture éditée : tout est dans le dossier.\n\n👉 Le tutoriel complet : https://drive.google.com/file/d/1LRxi9R1Sbj1sQ0Cg4RZhpE_cxZHygksu/view\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "legende": "Douze mille euros de prestation. Sur un devis, pas sur un post-it.\n\nDouze mille euros de prestation ne tiennent pas sur un post-it. Devis signé, acompte suivi, facture éditée : tout est dans le dossier.\n\n👉 Tout FoodEatUp : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
         "hashtags": [
           "restaurant",
           "restaurateur",
@@ -17274,10 +17274,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "rentabilité",
           "facture et devis"
         ],
-        "cta": "Voir le tutoriel complet"
+        "cta": "Découvrir FoodEatUp"
       },
       "instagram": {
-        "legende": "Douze mille euros de prestation.\nSur un devis, pas sur un post-it.\n\nDouze mille euros de prestation ne tiennent pas sur un post-it. Devis signé, acompte suivi, facture éditée : tout est dans le dossier.\n\nLe pas-à-pas complet est dans notre Academy — lien en bio.\nUne démo ? 06 14 18 92 25",
+        "legende": "Douze mille euros de prestation.\nSur un devis, pas sur un post-it.\n\nDouze mille euros de prestation ne tiennent pas sur un post-it. Devis signé, acompte suivi, facture éditée : tout est dans le dossier.\n\nTout est expliqué sur notre site — lien en bio.\nUne démo ? 06 14 18 92 25",
         "hashtags": [
           "restaurant",
           "restaurateur",
@@ -17298,7 +17298,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "rentabilité",
           "facture et devis"
         ],
-        "cta": "Le pas-à-pas est en bio"
+        "cta": "Tout est en bio"
       },
       "tiktok": {
         "legende": "Douze mille euros de prestation. 😅\nSur un devis, pas sur un post-it.\n\nDouze mille euros de prestation ne tiennent pas sur un post-it.",
@@ -17315,10 +17315,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "rentabilité",
           "facture et devis"
         ],
-        "cta": "Tuto complet en bio"
+        "cta": "Lien en bio"
       },
       "linkedin": {
-        "legende": "Douze mille euros de prestation.\n\nDouze mille euros de prestation ne tiennent pas sur un post-it. Devis signé, acompte suivi, facture éditée : tout est dans le dossier.\n\nConcrètement : des chiffres à jour sans ressaisir une ligne.\n\nLe tutoriel pas-à-pas : https://drive.google.com/file/d/1LRxi9R1Sbj1sQ0Cg4RZhpE_cxZHygksu/view\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "legende": "Douze mille euros de prestation.\n\nDouze mille euros de prestation ne tiennent pas sur un post-it. Devis signé, acompte suivi, facture éditée : tout est dans le dossier.\n\nConcrètement : des chiffres à jour sans ressaisir une ligne.\n\nEn savoir plus : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
         "hashtags": [
           "restauration",
           "foodeatup",
@@ -17331,10 +17331,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "rentabilité",
           "facture et devis"
         ],
-        "cta": "Voir le tutoriel pas-à-pas"
+        "cta": "Découvrir FoodEatUp"
       },
       "youtube": {
-        "legende": "Douze mille euros de prestation. Sur un devis, pas sur un post-it.\n\nDouze mille euros de prestation ne tiennent pas sur un post-it. Devis signé, acompte suivi, facture éditée : tout est dans le dossier.\n\nConcrètement : des chiffres à jour sans ressaisir une ligne.\n\n— — —\n\n📺 Le tutoriel pas-à-pas : https://drive.google.com/file/d/1LRxi9R1Sbj1sQ0Cg4RZhpE_cxZHygksu/view\n\n📞 Une démo ? 06 14 18 92 25\n🌐 foodeatup.com\n\nSérie « Le Coup de Feu » — saison 5, épisode 147.\nModule Comptabilité · Chapitre : facture et devis\n\nFoodEatUp est le logiciel qui réunit la caisse, le stock, les plannings, l'HACCP et le marketing d'un restaurant au même endroit.\n",
+        "legende": "Douze mille euros de prestation. Sur un devis, pas sur un post-it.\n\nDouze mille euros de prestation ne tiennent pas sur un post-it. Devis signé, acompte suivi, facture éditée : tout est dans le dossier.\n\nConcrètement : des chiffres à jour sans ressaisir une ligne.\n\n— — —\n\n🔗 https://site.foodeatup.com/\n\n📞 Une démo ? 06 14 18 92 25\n🌐 foodeatup.com\n\nSérie « Le Coup de Feu » — saison 5, épisode 147.\nModule Comptabilité · Chapitre : facture et devis\n\nFoodEatUp est le logiciel qui réunit la caisse, le stock, les plannings, l'HACCP et le marketing d'un restaurant au même endroit.\n",
         "hashtags": [
           "Shorts",
           "restaurant",
@@ -17353,7 +17353,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "rentabilité",
           "facture et devis"
         ],
-        "cta": "Le tutoriel pas-à-pas",
+        "cta": "Découvrir FoodEatUp",
         "titre": "Facture et devis — Comptabilité | FoodEatUp"
       }
     },
@@ -17377,7 +17377,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
   "EP148": {
     "publications": {
       "facebook": {
-        "legende": "Trois plateformes. Une place. Centralise les commandes, pas les embouteillages.\n\nTrois plateformes, une seule file. Les commandes arrivent centralisées, avec leur horaire de retrait. Tes livreurs ne se croisent plus au même moment.\n\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "legende": "Trois plateformes. Une place. Centralise les commandes, pas les embouteillages.\n\nTrois plateformes, une seule file. Les commandes arrivent centralisées, avec leur horaire de retrait. Tes livreurs ne se croisent plus au même moment.\n\n👉 Tout FoodEatUp : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
         "hashtags": [
           "restaurant",
           "restaurateur",
@@ -17394,10 +17394,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "synchro caisse tierce",
           "hubrise restaurant"
         ],
-        "cta": "Demander une démo"
+        "cta": "Découvrir FoodEatUp"
       },
       "instagram": {
-        "legende": "Trois plateformes. Une place.\nCentralise les commandes, pas les embouteillages.\n\nTrois plateformes, une seule file. Les commandes arrivent centralisées, avec leur horaire de retrait. Tes livreurs ne se croisent plus au même moment.\n\nLe pas-à-pas complet est dans notre Academy — lien en bio.\nUne démo ? 06 14 18 92 25",
+        "legende": "Trois plateformes. Une place.\nCentralise les commandes, pas les embouteillages.\n\nTrois plateformes, une seule file. Les commandes arrivent centralisées, avec leur horaire de retrait. Tes livreurs ne se croisent plus au même moment.\n\nTout est expliqué sur notre site — lien en bio.\nUne démo ? 06 14 18 92 25",
         "hashtags": [
           "restaurant",
           "restaurateur",
@@ -17419,7 +17419,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "synchro caisse tierce",
           "hubrise restaurant"
         ],
-        "cta": "Demander une démo"
+        "cta": "Tout est en bio"
       },
       "tiktok": {
         "legende": "Trois plateformes. Une place. 😅\nCentralise les commandes, pas les embouteillages.\n\nTrois plateformes, une seule file.",
@@ -17437,10 +17437,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "synchro caisse tierce",
           "hubrise restaurant"
         ],
-        "cta": "Demander une démo"
+        "cta": "Lien en bio"
       },
       "linkedin": {
-        "legende": "Trois plateformes. Une place.\n\nTrois plateformes, une seule file. Les commandes arrivent centralisées, avec leur horaire de retrait. Tes livreurs ne se croisent plus au même moment.\n\nConcrètement : plus de tablette à surveiller dans un coin.\n\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "legende": "Trois plateformes. Une place.\n\nTrois plateformes, une seule file. Les commandes arrivent centralisées, avec leur horaire de retrait. Tes livreurs ne se croisent plus au même moment.\n\nConcrètement : plus de tablette à surveiller dans un coin.\n\nEn savoir plus : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
         "hashtags": [
           "restauration",
           "foodeatup",
@@ -17454,10 +17454,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "synchro caisse tierce",
           "hubrise restaurant"
         ],
-        "cta": "Demander une démo"
+        "cta": "Découvrir FoodEatUp"
       },
       "youtube": {
-        "legende": "Trois plateformes. Une place. Centralise les commandes, pas les embouteillages.\n\nTrois plateformes, une seule file. Les commandes arrivent centralisées, avec leur horaire de retrait. Tes livreurs ne se croisent plus au même moment.\n\nConcrètement : plus de tablette à surveiller dans un coin.\n\n— — —\n\n📞 Une démo ? 06 14 18 92 25\n🌐 foodeatup.com\n\nSérie « Le Coup de Feu » — saison 5, épisode 148.\nModule HubRise · Chapitre : 3 - Synchro caisse tierce\n\nFoodEatUp est le logiciel qui réunit la caisse, le stock, les plannings, l'HACCP et le marketing d'un restaurant au même endroit.\n",
+        "legende": "Trois plateformes. Une place. Centralise les commandes, pas les embouteillages.\n\nTrois plateformes, une seule file. Les commandes arrivent centralisées, avec leur horaire de retrait. Tes livreurs ne se croisent plus au même moment.\n\nConcrètement : plus de tablette à surveiller dans un coin.\n\n— — —\n\n🔗 https://site.foodeatup.com/\n\n📞 Une démo ? 06 14 18 92 25\n🌐 foodeatup.com\n\nSérie « Le Coup de Feu » — saison 5, épisode 148.\nModule HubRise · Chapitre : 3 - Synchro caisse tierce\n\nFoodEatUp est le logiciel qui réunit la caisse, le stock, les plannings, l'HACCP et le marketing d'un restaurant au même endroit.\n",
         "hashtags": [
           "Shorts",
           "restaurant",
@@ -17477,7 +17477,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "synchro caisse tierce",
           "hubrise restaurant"
         ],
-        "cta": "Demander une démo",
+        "cta": "Découvrir FoodEatUp",
         "titre": "Synchro caisse tierce — HubRise | FoodEatUp"
       }
     },
@@ -17495,7 +17495,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
   "EP149": {
     "publications": {
       "facebook": {
-        "legende": "Ta salle a un truc que personne d'autre n'a. Fais-le savoir.\n\nTa salle a quelque chose d'unique : fais-le savoir. Campagne créée, segment choisi, résultats mesurés, CA attribué.\n\n👉 Le tutoriel complet : https://drive.google.com/file/d/1L1RnS8OdOEMKsVjDho2rKnj4gzihgfW9/view\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "legende": "Ta salle a un truc que personne d'autre n'a. Fais-le savoir.\n\nTa salle a quelque chose d'unique : fais-le savoir. Campagne créée, segment choisi, résultats mesurés, CA attribué.\n\n👉 Tout FoodEatUp : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
         "hashtags": [
           "restaurant",
           "restaurateur",
@@ -17511,10 +17511,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "fidélisation restaurant",
           "lancer une campagne"
         ],
-        "cta": "Voir le tutoriel complet"
+        "cta": "Découvrir FoodEatUp"
       },
       "instagram": {
-        "legende": "Ta salle a un truc que personne d'autre n'a.\nFais-le savoir.\n\nTa salle a quelque chose d'unique : fais-le savoir. Campagne créée, segment choisi, résultats mesurés, CA attribué.\n\nLe pas-à-pas complet est dans notre Academy — lien en bio.\nUne démo ? 06 14 18 92 25",
+        "legende": "Ta salle a un truc que personne d'autre n'a.\nFais-le savoir.\n\nTa salle a quelque chose d'unique : fais-le savoir. Campagne créée, segment choisi, résultats mesurés, CA attribué.\n\nTout est expliqué sur notre site — lien en bio.\nUne démo ? 06 14 18 92 25",
         "hashtags": [
           "restaurant",
           "restaurateur",
@@ -17535,7 +17535,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "fidélisation restaurant",
           "lancer une campagne"
         ],
-        "cta": "Le pas-à-pas est en bio"
+        "cta": "Tout est en bio"
       },
       "tiktok": {
         "legende": "Ta salle a un truc que personne d'autre n'a. 😅\nFais-le savoir.\n\nTa salle a quelque chose d'unique : fais-le savoir.",
@@ -17552,10 +17552,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "fidélisation restaurant",
           "lancer une campagne"
         ],
-        "cta": "Tuto complet en bio"
+        "cta": "Lien en bio"
       },
       "linkedin": {
-        "legende": "Ta salle a un truc que personne d'autre n'a.\n\nTa salle a quelque chose d'unique : fais-le savoir. Campagne créée, segment choisi, résultats mesurés, CA attribué.\n\nConcrètement : une salle qui se remplit avant l'ouverture.\n\nLe tutoriel pas-à-pas : https://drive.google.com/file/d/1L1RnS8OdOEMKsVjDho2rKnj4gzihgfW9/view\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "legende": "Ta salle a un truc que personne d'autre n'a.\n\nTa salle a quelque chose d'unique : fais-le savoir. Campagne créée, segment choisi, résultats mesurés, CA attribué.\n\nConcrètement : une salle qui se remplit avant l'ouverture.\n\nEn savoir plus : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
         "hashtags": [
           "restauration",
           "foodeatup",
@@ -17568,10 +17568,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "fidélisation restaurant",
           "lancer une campagne"
         ],
-        "cta": "Voir le tutoriel pas-à-pas"
+        "cta": "Découvrir FoodEatUp"
       },
       "youtube": {
-        "legende": "Ta salle a un truc que personne d'autre n'a. Fais-le savoir.\n\nTa salle a quelque chose d'unique : fais-le savoir. Campagne créée, segment choisi, résultats mesurés, CA attribué.\n\nConcrètement : une salle qui se remplit avant l'ouverture.\n\n— — —\n\n📺 Le tutoriel pas-à-pas : https://drive.google.com/file/d/1L1RnS8OdOEMKsVjDho2rKnj4gzihgfW9/view\n\n📞 Une démo ? 06 14 18 92 25\n🌐 foodeatup.com\n\nSérie « Le Coup de Feu » — saison 5, épisode 149.\nModule Marketing · Chapitre : 5 - Lancer une campagne\n\nFoodEatUp est le logiciel qui réunit la caisse, le stock, les plannings, l'HACCP et le marketing d'un restaurant au même endroit.\n",
+        "legende": "Ta salle a un truc que personne d'autre n'a. Fais-le savoir.\n\nTa salle a quelque chose d'unique : fais-le savoir. Campagne créée, segment choisi, résultats mesurés, CA attribué.\n\nConcrètement : une salle qui se remplit avant l'ouverture.\n\n— — —\n\n🔗 https://site.foodeatup.com/\n\n📞 Une démo ? 06 14 18 92 25\n🌐 foodeatup.com\n\nSérie « Le Coup de Feu » — saison 5, épisode 149.\nModule Marketing · Chapitre : 5 - Lancer une campagne\n\nFoodEatUp est le logiciel qui réunit la caisse, le stock, les plannings, l'HACCP et le marketing d'un restaurant au même endroit.\n",
         "hashtags": [
           "Shorts",
           "restaurant",
@@ -17590,7 +17590,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "fidélisation restaurant",
           "lancer une campagne"
         ],
-        "cta": "Le tutoriel pas-à-pas",
+        "cta": "Découvrir FoodEatUp",
         "titre": "Lancer une campagne — Marketing | FoodEatUp"
       }
     },
@@ -17612,7 +17612,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
   "EP150": {
     "publications": {
       "facebook": {
-        "legende": "Cent cinquante épisodes. Une seule promesse : ton restaurant, avant, pendant et après le service.\n\nCent cinquante épisodes pour dire une chose : ton restaurant tient dans un seul outil, avant, pendant et après ton service. Le reste, c'est du bruit.\n\n👉 Le tutoriel complet : https://drive.google.com/file/d/1MWkfZ-OZ_qv2z6QD9VPwabO5XnGd5UaB/view\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "legende": "Cent cinquante épisodes. Une seule promesse : ton restaurant, avant, pendant et après le service.\n\nCent cinquante épisodes pour dire une chose : ton restaurant tient dans un seul outil, avant, pendant et après ton service. Le reste, c'est du bruit.\n\n👉 Tout FoodEatUp : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
         "hashtags": [
           "restaurant",
           "restaurateur",
@@ -17629,10 +17629,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "lire ses prévisions",
           "predibot restaurant"
         ],
-        "cta": "Voir le tutoriel complet"
+        "cta": "Découvrir FoodEatUp"
       },
       "instagram": {
-        "legende": "Cent cinquante épisodes.\nUne seule promesse : ton restaurant, avant, pendant et après le service.\n\nCent cinquante épisodes pour dire une chose : ton restaurant tient dans un seul outil, avant, pendant et après ton service. Le reste, c'est du bruit.\n\nLe pas-à-pas complet est dans notre Academy — lien en bio.\nUne démo ? 06 14 18 92 25",
+        "legende": "Cent cinquante épisodes.\nUne seule promesse : ton restaurant, avant, pendant et après le service.\n\nCent cinquante épisodes pour dire une chose : ton restaurant tient dans un seul outil, avant, pendant et après ton service. Le reste, c'est du bruit.\n\nTout est expliqué sur notre site — lien en bio.\nUne démo ? 06 14 18 92 25",
         "hashtags": [
           "restaurant",
           "restaurateur",
@@ -17654,7 +17654,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "lire ses prévisions",
           "predibot restaurant"
         ],
-        "cta": "Le pas-à-pas est en bio"
+        "cta": "Tout est en bio"
       },
       "tiktok": {
         "legende": "Cent cinquante épisodes. 😅\nUne seule promesse : ton restaurant, avant, pendant et après le service.\n\nCent cinquante épisodes pour dire une chose : ton restaurant tient dans un seul outil, avant, pendant et après ton service.",
@@ -17672,10 +17672,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "lire ses prévisions",
           "predibot restaurant"
         ],
-        "cta": "Tuto complet en bio"
+        "cta": "Lien en bio"
       },
       "linkedin": {
-        "legende": "Cent cinquante épisodes.\n\nCent cinquante épisodes pour dire une chose : ton restaurant tient dans un seul outil, avant, pendant et après ton service. Le reste, c'est du bruit.\n\nConcrètement : voir venir la journée au lieu de la subir.\n\nLe tutoriel pas-à-pas : https://drive.google.com/file/d/1MWkfZ-OZ_qv2z6QD9VPwabO5XnGd5UaB/view\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "legende": "Cent cinquante épisodes.\n\nCent cinquante épisodes pour dire une chose : ton restaurant tient dans un seul outil, avant, pendant et après ton service. Le reste, c'est du bruit.\n\nConcrètement : voir venir la journée au lieu de la subir.\n\nEn savoir plus : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
         "hashtags": [
           "restauration",
           "foodeatup",
@@ -17689,10 +17689,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "lire ses prévisions",
           "predibot restaurant"
         ],
-        "cta": "Voir le tutoriel pas-à-pas"
+        "cta": "Découvrir FoodEatUp"
       },
       "youtube": {
-        "legende": "Cent cinquante épisodes. Une seule promesse : ton restaurant, avant, pendant et après le service.\n\nCent cinquante épisodes pour dire une chose : ton restaurant tient dans un seul outil, avant, pendant et après ton service. Le reste, c'est du bruit.\n\nConcrètement : voir venir la journée au lieu de la subir.\n\n— — —\n\n📺 Le tutoriel pas-à-pas : https://drive.google.com/file/d/1MWkfZ-OZ_qv2z6QD9VPwabO5XnGd5UaB/view\n\n📞 Une démo ? 06 14 18 92 25\n🌐 foodeatup.com\n\nSérie « Le Coup de Feu » — saison 5, épisode 150.\nModule PrediBot · Chapitre : 1 - Lire ses prévisions\n\nFoodEatUp est le logiciel qui réunit la caisse, le stock, les plannings, l'HACCP et le marketing d'un restaurant au même endroit.\n",
+        "legende": "Cent cinquante épisodes. Une seule promesse : ton restaurant, avant, pendant et après le service.\n\nCent cinquante épisodes pour dire une chose : ton restaurant tient dans un seul outil, avant, pendant et après ton service. Le reste, c'est du bruit.\n\nConcrètement : voir venir la journée au lieu de la subir.\n\n— — —\n\n🔗 https://site.foodeatup.com/\n\n📞 Une démo ? 06 14 18 92 25\n🌐 foodeatup.com\n\nSérie « Le Coup de Feu » — saison 5, épisode 150.\nModule PrediBot · Chapitre : 1 - Lire ses prévisions\n\nFoodEatUp est le logiciel qui réunit la caisse, le stock, les plannings, l'HACCP et le marketing d'un restaurant au même endroit.\n",
         "hashtags": [
           "Shorts",
           "restaurant",
@@ -17712,7 +17712,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
           "lire ses prévisions",
           "predibot restaurant"
         ],
-        "cta": "Le tutoriel pas-à-pas",
+        "cta": "Découvrir FoodEatUp",
         "titre": "Lire ses prévisions — PrediBot | FoodEatUp"
       }
     },
