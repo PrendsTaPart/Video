@@ -12571,10 +12571,10 @@
               "tutorielModuleUrl": "https://tutoriel.foodeatup.com/module/equipe-planning",
               "higgsfield": {
                 "prompt": "Vertical 9:16, 10 seconds, photorealistic, high angle then low angle, kitchen floor, 4K. NO text overlay, NO subtitles, NO watermark, NO logo. An employee mops a single floor tile with extraordinary dedication, back and forth, until it gleams. The camera pulls back slowly to reveal the entire rest of the kitchen floor untouched and grimy. At 6 seconds he steps back to admire his one perfect tile, hands on hips. Final 2 seconds: he takes a photo of that single tile with his phone. Audio: kitchen ambience, wet mop strokes on tile, a bucket handle clank, a phone camera shutter, one proud sigh. No music.",
-                "videoSourceUrl": null,
+                "videoSourceUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/Higgsfield-source-EP070-La-dalle-propre",
                 "duree": "10 s",
                 "format": "vertical 9:16",
-                "source": null
+                "source": "rapidocms"
               },
               "masterRapidoUrl": null
             },
@@ -12753,10 +12753,10 @@
               "tutorielModuleUrl": "https://tutoriel.foodeatup.com/module/equipe-planning",
               "higgsfield": {
                 "prompt": "Vertical 9:16, 10 seconds, photorealistic, kitchen corridor, 4K. NO text overlay, NO subtitles, NO watermark, NO logo. A cook ticks boxes on a paper checklist at high speed without ever looking at the sheet, walking down a corridor. Tick, tick, tick, tick. At 5 seconds he reaches the end, signs it with a flourish, and pins it to the wall. Final 2 seconds: the camera holds on the sheet, which is pinned completely upside down. Audio: brisk footsteps, rapid pen ticking on paper, a satisfied hum, a pin pushing into a corkboard, then corridor quiet. No music.",
-                "videoSourceUrl": null,
+                "videoSourceUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/Higgsfield-source-EP071-La-liste-a-l-envers",
                 "duree": "10 s",
                 "format": "vertical 9:16",
-                "source": null
+                "source": "rapidocms"
               },
               "masterRapidoUrl": null
             },
@@ -12935,10 +12935,10 @@
               "tutorielModuleUrl": "https://tutoriel.foodeatup.com/module/equipe-planning",
               "higgsfield": {
                 "prompt": "Vertical 9:16, 10 seconds, photorealistic, restaurant office, 4K. NO text overlay, NO subtitles, NO watermark, NO logo. A health inspector in a jacket stands waiting with a clipboard. The manager hauls an enormous overstuffed ring binder onto the desk between them. He opens it. At 5 seconds the rings give way and several hundred loose pages fan out across the desk and floor in slow motion. Final 2 seconds: the two men look at each other over a desk covered in paper; the inspector clicks his pen once. Audio: office ambience, a heavy binder thud, metal rings snapping open, a long paper cascade, one pen click, total silence. No music.",
-                "videoSourceUrl": null,
+                "videoSourceUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/Higgsfield-source-EP072-Le-classeur",
                 "duree": "10 s",
                 "format": "vertical 9:16",
-                "source": null
+                "source": "rapidocms"
               },
               "masterRapidoUrl": null
             },
@@ -13286,10 +13286,10 @@
               "tutorielModuleUrl": "https://tutoriel.foodeatup.com/module/configuration",
               "higgsfield": {
                 "prompt": "Vertical 9:16, 10 seconds, photorealistic, wholesale market aisle, 4K. NO text overlay, NO subtitles, NO watermark, NO logo. A restaurateur stands still in the middle of a busy wholesale market aisle, patting every pocket of his jacket, then his trousers, then his jacket again. He looks at his empty hands. At 5 seconds he turns a full slow circle on the spot, trolley beside him, surrounded by produce, remembering nothing. Final 2 seconds: he picks up one random cabbage and looks at it as if it might help. Audio: busy market ambience, forklift beeps, fabric patting, a trolley wheel squeak, one hopeless \"Bon…\", crowd murmur. No music.",
-                "videoSourceUrl": null,
+                "videoSourceUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/Higgsfield-source-EP074-La-liste-oubliee",
                 "duree": "10 s",
                 "format": "vertical 9:16",
-                "source": null
+                "source": "rapidocms"
               },
               "masterRapidoUrl": null
             },
@@ -13461,10 +13461,10 @@
               "tutorielModuleUrl": "https://tutoriel.foodeatup.com/module/configuration",
               "higgsfield": {
                 "prompt": "Vertical 9:16, 10 seconds, photorealistic, macro on a stainless counter, 4K. NO text overlay, NO subtitles, NO watermark, NO logo. A hand pulls a heavily crumpled paper invoice out of an apron pocket and unfolds it on a counter, smoothing it flat with the side of the hand. The paper is stained with oil and sauce, and one corner is torn away. At 5 seconds the hand rotates it ninety degrees, trying to find a readable angle. Final 2 seconds: the paper slowly re-folds itself back into its crumpled shape on its own. Audio: paper crackling and unfolding, a hand smoothing paper on steel, kitchen ambience, one defeated exhale, a soft paper rustle as it curls back. No music.",
-                "videoSourceUrl": null,
+                "videoSourceUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/Higgsfield-source-EP075-La-facture-dans-la-poche",
                 "duree": "10 s",
                 "format": "vertical 9:16",
-                "source": null
+                "source": "rapidocms"
               },
               "masterRapidoUrl": null
             },
@@ -13813,10 +13813,10 @@
               "tutorielModuleUrl": "https://tutoriel.foodeatup.com/module/configuration",
               "higgsfield": {
                 "prompt": "Vertical 9:16, 10 seconds, photorealistic, restaurant table, warm light, 4K. NO text overlay, NO subtitles, NO watermark, NO logo. A restaurant owner sits across from a couple planning a wedding. Having no notepad, he writes numbers on a paper placemat, then continues onto a second placemat, then onto a napkin. At 5 seconds he slides all three across the table toward them as a formal proposal. Final 2 seconds: the bride picks up the napkin, turns it over, and finds a coffee ring on the total. Audio: restaurant ambience, pen scratching on textured paper, paper sliding on wood, a polite \"Voilà !\", one uncertain \"Ah.\", cutlery in the background. No music.",
-                "videoSourceUrl": null,
+                "videoSourceUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/Higgsfield-source-EP077-Le-devis-sur-le-set-de-table",
                 "duree": "10 s",
                 "format": "vertical 9:16",
-                "source": null
+                "source": "rapidocms"
               },
               "masterRapidoUrl": null
             },
@@ -13989,10 +13989,10 @@
               "tutorielModuleUrl": "https://tutoriel.foodeatup.com/module/configuration",
               "higgsfield": {
                 "prompt": "Vertical 9:16, 10 seconds, photorealistic, accountant's office, 4K. NO text overlay, NO subtitles, NO watermark, NO logo. A restaurateur places a shoebox on an accountant's desk and lifts the lid. It is packed to the brim with crumpled receipts and invoices, some folded, some torn. The accountant looks into the box for a long moment without moving. At 5 seconds a single receipt escapes and drifts to the floor. Final 2 seconds: the accountant slowly puts the lid back on and slides the box six centimetres to one side. Audio: quiet office ambience, cardboard lid lifting, dense paper settling, a clock ticking, a single sheet fluttering to the floor, a cardboard slide on wood. No music.",
-                "videoSourceUrl": null,
+                "videoSourceUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/Higgsfield-source-EP078-La-boite-a-chaussures",
                 "duree": "10 s",
                 "format": "vertical 9:16",
-                "source": null
+                "source": "rapidocms"
               },
               "masterRapidoUrl": null
             },
@@ -14165,10 +14165,10 @@
               "tutorielModuleUrl": "https://tutoriel.foodeatup.com/module/configuration",
               "higgsfield": {
                 "prompt": "Vertical 9:16, 10 seconds, photorealistic, café counter close-up, 4K. NO text overlay, NO subtitles, NO watermark, NO logo. A customer at a counter pulls a thick stack of paper loyalty cards from his wallet and fans them out like a poker hand. He searches through them one by one, checking the stamps. Every card is partially stamped; none is complete. At 6 seconds he finds one with nine stamps out of ten, holds it up hopefully, then reads the expiry date and lowers it. Final 2 seconds: he puts them all back and pays normally. Audio: café ambience, espresso machine, cards shuffling and flicking, a hopeful \"Ah !\", a disappointed \"Ah.\", a card slipping back into a wallet. No music.",
-                "videoSourceUrl": null,
+                "videoSourceUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/Higgsfield-source-EP079-Les-quatorze-cartes",
                 "duree": "10 s",
                 "format": "vertical 9:16",
-                "source": null
+                "source": "rapidocms"
               },
               "masterRapidoUrl": null
             },
@@ -14341,10 +14341,10 @@
               "tutorielModuleUrl": "https://tutoriel.foodeatup.com/module/configuration",
               "higgsfield": {
                 "prompt": "Vertical 9:16, 10 seconds, photorealistic, bar counter before opening, 4K. NO text overlay, NO subtitles, NO watermark, NO logo. A manager pulls open a cash drawer at the start of service. It is completely empty. He closes it, opens it again as if that might help, then blows into it the way one blows into an old game cartridge. At 5 seconds he checks under the counter, behind the till, and inside an empty mug. Final 2 seconds: he stands holding the empty drawer, looking off toward the front door where a first customer is arriving. Audio: cash drawer mechanism sliding twice, a hollow blow into plastic, hands patting under a counter, a ceramic mug lifted and set down, a shop door bell. No music.",
-                "videoSourceUrl": null,
+                "videoSourceUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/Higgsfield-source-EP080-Le-tiroir-vide",
                 "duree": "10 s",
                 "format": "vertical 9:16",
-                "source": null
+                "source": "rapidocms"
               },
               "masterRapidoUrl": null
             },
@@ -14520,10 +14520,10 @@
               "tutorielModuleUrl": "https://tutoriel.foodeatup.com/module/comptabilite",
               "higgsfield": {
                 "prompt": "Vertical 9:16, 10 seconds, photorealistic, restaurant table, evening, 4K. NO text overlay, NO subtitles, NO watermark, NO logo. Eight friends around a finished dinner table, each holding a phone calculator, all talking at once and pointing at different items on a single shared bill. One person has a pen and is drawing a diagram on the receipt. At 6 seconds someone puts a twenty-euro note down and everyone stops to look at it. Final 2 seconds: the waiter stands beside the table, terminal in hand, waiting with infinite patience. Audio: overlapping animated French chatter, phone keypad taps, a pen on paper, a banknote laid on wood, then a sudden collective silence. No music.",
-                "videoSourceUrl": null,
+                "videoSourceUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/Higgsfield-source-EP081-Huit-calculatrices",
                 "duree": "10 s",
                 "format": "vertical 9:16",
-                "source": null
+                "source": "rapidocms"
               },
               "masterRapidoUrl": null
             },
@@ -14700,10 +14700,10 @@
               "tutorielModuleUrl": "https://tutoriel.foodeatup.com/module/comptabilite",
               "higgsfield": {
                 "prompt": "Vertical 9:16, 10 seconds, photorealistic, night, closed restaurant, single overhead lamp, 4K. NO text overlay, NO subtitles, NO watermark, NO logo. Two in the morning. A manager recounts a small pile of coins for what is clearly the fifth time, lips moving. He checks the till, lifts the drawer insert, looks underneath, shakes it. At 6 seconds he finds nothing and writes a figure on a pad. Final 2 seconds: he stares at the pad, then holds up a single one-cent coin between two fingers, defeated by it. Audio: empty restaurant reverb, coins being counted, a drawer insert lifted and dropped, a chair creak, one long breath, a single coin set on wood. No music.",
-                "videoSourceUrl": null,
+                "videoSourceUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/Higgsfield-source-EP082-Le-centime",
                 "duree": "10 s",
                 "format": "vertical 9:16",
-                "source": null
+                "source": "rapidocms"
               },
               "masterRapidoUrl": null
             },
@@ -14861,10 +14861,10 @@
               "tutorielManquant": "Ce chapitre n'a pas encore sa fiche dans l'Academy.",
               "higgsfield": {
                 "prompt": "Vertical 9:16, 10 seconds, photorealistic, busy professional kitchen, 4K. NO text overlay, NO subtitles, NO watermark, NO logo. A head chef at the pass shouts an order across the kitchen. Nobody reacts — the extraction hood is roaring, a mixer is running, two cooks have their backs turned. He shouts again, louder, cupping his hands. Still nothing. At 6 seconds he simply walks the plate over himself. Final 2 seconds: the moment he leaves the pass, three cooks all turn around at once and look at the empty spot where he was. Audio: overwhelming kitchen noise, extractor roar, a mixer, two muffled shouted orders swallowed by the noise, footsteps, then the noise continuing. No music.",
-                "videoSourceUrl": null,
+                "videoSourceUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/Higgsfield-source-EP083-Le-cri-dans-le-vide",
                 "duree": "10 s",
                 "format": "vertical 9:16",
-                "source": null
+                "source": "rapidocms"
               },
               "masterRapidoUrl": null
             },

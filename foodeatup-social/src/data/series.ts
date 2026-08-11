@@ -5567,10 +5567,10 @@ export const series: Serie[] = [
             },
             "tutorielModuleUrl": "https://tutoriel.foodeatup.com/module/equipe-planning",
             "higgsfield": {
-              "videoSourceUrl": null,
+              "videoSourceUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/Higgsfield-source-EP070-La-dalle-propre",
               "duree": "10 s",
               "format": "vertical 9:16",
-              "source": null
+              "source": "rapidocms"
             },
             "masterRapidoUrl": null
           },
@@ -5644,10 +5644,10 @@ export const series: Serie[] = [
             },
             "tutorielModuleUrl": "https://tutoriel.foodeatup.com/module/equipe-planning",
             "higgsfield": {
-              "videoSourceUrl": null,
+              "videoSourceUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/Higgsfield-source-EP071-La-liste-a-l-envers",
               "duree": "10 s",
               "format": "vertical 9:16",
-              "source": null
+              "source": "rapidocms"
             },
             "masterRapidoUrl": null
           },
@@ -5721,10 +5721,10 @@ export const series: Serie[] = [
             },
             "tutorielModuleUrl": "https://tutoriel.foodeatup.com/module/equipe-planning",
             "higgsfield": {
-              "videoSourceUrl": null,
+              "videoSourceUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/Higgsfield-source-EP072-Le-classeur",
               "duree": "10 s",
               "format": "vertical 9:16",
-              "source": null
+              "source": "rapidocms"
             },
             "masterRapidoUrl": null
           },
@@ -5875,10 +5875,10 @@ export const series: Serie[] = [
             },
             "tutorielModuleUrl": "https://tutoriel.foodeatup.com/module/configuration",
             "higgsfield": {
-              "videoSourceUrl": null,
+              "videoSourceUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/Higgsfield-source-EP074-La-liste-oubliee",
               "duree": "10 s",
               "format": "vertical 9:16",
-              "source": null
+              "source": "rapidocms"
             },
             "masterRapidoUrl": null
           },
@@ -5952,10 +5952,10 @@ export const series: Serie[] = [
             },
             "tutorielModuleUrl": "https://tutoriel.foodeatup.com/module/configuration",
             "higgsfield": {
-              "videoSourceUrl": null,
+              "videoSourceUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/Higgsfield-source-EP075-La-facture-dans-la-poche",
               "duree": "10 s",
               "format": "vertical 9:16",
-              "source": null
+              "source": "rapidocms"
             },
             "masterRapidoUrl": null
           },
@@ -6107,10 +6107,10 @@ export const series: Serie[] = [
             },
             "tutorielModuleUrl": "https://tutoriel.foodeatup.com/module/configuration",
             "higgsfield": {
-              "videoSourceUrl": null,
+              "videoSourceUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/Higgsfield-source-EP077-Le-devis-sur-le-set-de-table",
               "duree": "10 s",
               "format": "vertical 9:16",
-              "source": null
+              "source": "rapidocms"
             },
             "masterRapidoUrl": null
           },
@@ -6185,10 +6185,10 @@ export const series: Serie[] = [
             },
             "tutorielModuleUrl": "https://tutoriel.foodeatup.com/module/configuration",
             "higgsfield": {
-              "videoSourceUrl": null,
+              "videoSourceUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/Higgsfield-source-EP078-La-boite-a-chaussures",
               "duree": "10 s",
               "format": "vertical 9:16",
-              "source": null
+              "source": "rapidocms"
             },
             "masterRapidoUrl": null
           },
@@ -6263,10 +6263,10 @@ export const series: Serie[] = [
             },
             "tutorielModuleUrl": "https://tutoriel.foodeatup.com/module/configuration",
             "higgsfield": {
-              "videoSourceUrl": null,
+              "videoSourceUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/Higgsfield-source-EP079-Les-quatorze-cartes",
               "duree": "10 s",
               "format": "vertical 9:16",
-              "source": null
+              "source": "rapidocms"
             },
             "masterRapidoUrl": null
           },
@@ -6340,10 +6340,10 @@ export const series: Serie[] = [
             },
             "tutorielModuleUrl": "https://tutoriel.foodeatup.com/module/configuration",
             "higgsfield": {
-              "videoSourceUrl": null,
+              "videoSourceUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/Higgsfield-source-EP080-Le-tiroir-vide",
               "duree": "10 s",
               "format": "vertical 9:16",
-              "source": null
+              "source": "rapidocms"
             },
             "masterRapidoUrl": null
           },
@@ -6417,10 +6417,10 @@ export const series: Serie[] = [
             },
             "tutorielModuleUrl": "https://tutoriel.foodeatup.com/module/comptabilite",
             "higgsfield": {
-              "videoSourceUrl": null,
+              "videoSourceUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/Higgsfield-source-EP081-Huit-calculatrices",
               "duree": "10 s",
               "format": "vertical 9:16",
-              "source": null
+              "source": "rapidocms"
             },
             "masterRapidoUrl": null
           },
@@ -6494,10 +6494,10 @@ export const series: Serie[] = [
             },
             "tutorielModuleUrl": "https://tutoriel.foodeatup.com/module/comptabilite",
             "higgsfield": {
-              "videoSourceUrl": null,
+              "videoSourceUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/Higgsfield-source-EP082-Le-centime",
               "duree": "10 s",
               "format": "vertical 9:16",
-              "source": null
+              "source": "rapidocms"
             },
             "masterRapidoUrl": null
           },
@@ -6564,10 +6564,10 @@ export const series: Serie[] = [
             "tutorielModuleUrl": "https://tutoriel.foodeatup.com/module/comptabilite",
             "tutorielManquant": "Ce chapitre n'a pas encore sa fiche dans l'Academy.",
             "higgsfield": {
-              "videoSourceUrl": null,
+              "videoSourceUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/Higgsfield-source-EP083-Le-cri-dans-le-vide",
               "duree": "10 s",
               "format": "vertical 9:16",
-              "source": null
+              "source": "rapidocms"
             },
             "masterRapidoUrl": null
           },
