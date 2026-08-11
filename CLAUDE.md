@@ -41,3 +41,28 @@ du français cassé (« TON CONFIGURER CAISSE ») ; deux mots justes valent mieu
 Ces champs sont générés par `foodeatup-video-factory/scripts/gen-publications.py`,
 qui écrit aussi les cinq publications de chaque épisode (Facebook, Instagram,
 TikTok, LinkedIn, YouTube). Il ne s'édite pas à la main.
+
+## Lovable : jamais un tour par épisode, un tour par lot de 10
+
+Un tour Lovable coûte la même chose qu'il traite un épisode ou dix. Envoyer les
+vignettes une par une, c'est payer 150 tours pour un travail qui en demande 15.
+
+**On n'envoie donc rien à Lovable tant que dix nouveaux épisodes ne sont pas
+montés.** Quand le lot est plein, un seul message : les dix prompts de vignette,
+la photo du chef en pièce jointe, et les dix `posterUrl` à mettre à jour.
+
+```bash
+./scripts/gen-lot-lovable.py     # état des lots, écrit ceux qui sont complets
+```
+
+Le script range les épisodes **montés** par ordre de production, pas par numéro :
+un épisode bloqué n'immobilise pas un lot, il entrera dans un lot ultérieur. Les
+lots complets sont écrits dans `foodeatup-social/lots/lot-NN.md`.
+
+Entre deux lots, on accumule. Si l'humain demande une vignette isolée, on lui
+rappelle le coût et on propose d'attendre le lot — sauf s'il insiste, auquel cas
+on l'envoie.
+
+Cette règle vaut pour les vignettes. Les évolutions du site lui-même (nouvel
+écran, correction) restent des tours à part : les compter dans les 15 serait se
+mentir sur le budget.
