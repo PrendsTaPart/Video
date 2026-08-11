@@ -11,11 +11,11 @@
   "heygen_script": "Tu enregistres tes achats fournisseurs avec le détail des lignes. Tes dépenses du mois s'additionnent toutes seules, en face de ton chiffre d'affaires.",
   "etat": {
     "hook": "ok",
-    "avatar": "manquant",
-    "software": "manquant",
-    "vo": "manquant",
-    "build": "manquant",
+    "avatar": "ok",
+    "software": "ok",
+    "vo": "ok",
+    "build": "ok",
     "publie": "manquant"
   },
-  "notes": ""
+  "notes": "Master 37,5 s. Screencast dépenses recadré 6→16 s."
 }
