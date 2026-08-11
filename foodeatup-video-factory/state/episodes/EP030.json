@@ -11,11 +11,11 @@
   "heygen_script": "Le nouveau se forme tout seul : chaque module a ses vidéos, dans l'ordre. Tu ne réexpliques plus la caisse à chaque embauche.",
   "etat": {
     "hook": "ok",
-    "avatar": "manquant",
-    "software": "manquant",
-    "vo": "manquant",
-    "build": "manquant",
+    "avatar": "ok",
+    "software": "ok",
+    "vo": "ok",
+    "build": "ok",
     "publie": "manquant"
   },
-  "notes": ""
+  "notes": "Master 37,5 s. Le screencast est un enregistrement TÉLÉPHONE (1080×2316) : posé tel quel dans le cadre large il donnait une bande de 190 px illisible, il est donc présenté en deux colonnes — haut de l'écran à gauche, bas à droite."
 }

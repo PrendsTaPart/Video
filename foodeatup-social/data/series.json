@@ -2894,9 +2894,9 @@
               "accroche": "Personne ne touche à ta dernière frite.",
               "punchline": "Ni à ta marge.",
               "resume": "Tu génères ton rapport par module en un clic : ventes, stock, production. L'historique est gardé. Tu compares ce mois-ci avec le mois dernier, pas avec ton souvenir.",
-              "statut": "a_produire",
-              "dureeSecondes": null,
-              "videoUrl": null,
+              "statut": "monte",
+              "dureeSecondes": 37.5,
+              "videoUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/tiktok/EP017.mp4",
               "reseaux": {
                 "facebook": {
                   "statut": "a_venir",
@@ -3035,7 +3035,7 @@
                   "titre": "Création d'un rapport — StockVision | FoodEatUp"
                 }
               },
-              "posterUrl": null,
+              "posterUrl": "/posters/EP017.jpg",
               "datePrevue": "2026-08-23",
               "troisMots": "CRÉATION D'UN RAPPORT",
               "promptVignette": "Photo réaliste, cadrage vertical 9:16. Le chef de l'image de référence — MÊME visage, même barbe, même toque blanche, même veste de cuisine blanche, même tablier blanc au logo FoodEatUp bleu. Ne change ni ses traits ni sa morphologie. Son expression : un sourire en coin, parfaitement serein au milieu du désastre. Scène : le ninja de la frite. Personne ne touche à ta dernière frite. Décor : une salle de restaurant en plein service, tables dressées, clients flous en arrière-plan. lumière chaude de fin de journée, reflets dorés. Le chef occupe les deux tiers droits du cadre, en plan poitrine, l'élément comique est visible à gauche. Bande crème #FCF9E6 en haut du cadre sur un cinquième de la hauteur, portant UNIQUEMENT le texte « CRÉATION D'UN RAPPORT » en typographie arrondie très grasse, bleu marine #0F1A23, centré. Aucun autre texte, aucun logo ajouté, pas de filigrane, pas de bordure décorative.",
@@ -3078,9 +3078,9 @@
               "accroche": "Le rush de vingt heures.",
               "punchline": "Sauve ton service, pas ton dos.",
               "resume": "Pendant le rush, tes clients commandent seuls : par QR à table, par le site, par l'agent vocal. Ton équipe sert, elle ne court plus.",
-              "statut": "a_produire",
-              "dureeSecondes": null,
-              "videoUrl": null,
+              "statut": "monte",
+              "dureeSecondes": 37.5,
+              "videoUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/tiktok/EP018.mp4",
               "reseaux": {
                 "facebook": {
                   "statut": "a_venir",
@@ -3217,7 +3217,7 @@
                   "titre": "Site, vocal et QR code — Service | FoodEatUp"
                 }
               },
-              "posterUrl": null,
+              "posterUrl": "/posters/EP018.jpg",
               "datePrevue": "2026-08-24",
               "troisMots": "SITE",
               "promptVignette": "Photo réaliste, cadrage vertical 9:16. Le chef de l'image de référence — MÊME visage, même barbe, même toque blanche, même veste de cuisine blanche, même tablier blanc au logo FoodEatUp bleu. Ne change ni ses traits ni sa morphologie. Son expression : faussement dépité, la main sur le front, mais l'œil qui rit. Scène : le serveur baywatch. Le rush de vingt heures. Décor : une salle de restaurant en plein service, tables dressées, clients flous en arrière-plan. lumière chaude de fin de journée, reflets dorés. Le chef occupe les deux tiers droits du cadre, en plan poitrine, l'élément comique est visible à gauche. Bande crème #FCF9E6 en haut du cadre sur un cinquième de la hauteur, portant UNIQUEMENT le texte « SITE » en typographie arrondie très grasse, bleu marine #0F1A23, centré. Aucun autre texte, aucun logo ajouté, pas de filigrane, pas de bordure décorative.",
@@ -3262,9 +3262,9 @@
               "accroche": "Ton chiffre d'affaires, sans outil.",
               "punchline": "Ça rebondit rarement tout seul.",
               "resume": "FoodEatUp regarde tes ventes passées et te dit quoi produire demain. Ton chiffre d'affaires ne dépend plus de ton intuition du lundi matin.",
-              "statut": "a_produire",
-              "dureeSecondes": null,
-              "videoUrl": null,
+              "statut": "monte",
+              "dureeSecondes": 37.5,
+              "videoUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/tiktok/EP019.mp4",
               "reseaux": {
                 "facebook": {
                   "statut": "a_venir",
@@ -3403,7 +3403,7 @@
                   "titre": "Prédictions des commandes — StockVision | FoodEatUp"
                 }
               },
-              "posterUrl": null,
+              "posterUrl": "/posters/EP019.jpg",
               "datePrevue": "2026-08-25",
               "troisMots": "PRÉDICTIONS DES COMMANDES",
               "promptVignette": "Photo réaliste, cadrage vertical 9:16. Le chef de l'image de référence — MÊME visage, même barbe, même toque blanche, même veste de cuisine blanche, même tablier blanc au logo FoodEatUp bleu. Ne change ni ses traits ni sa morphologie. Son expression : l'air satisfait de celui qui sait que le problème est déjà réglé. Scène : le burger qui rebondit. Ton chiffre d'affaires, sans outil. Décor : une salle de restaurant en plein service, tables dressées, clients flous en arrière-plan. lumière chaude de fin de journée, reflets dorés. Le chef occupe les deux tiers droits du cadre, en plan poitrine, l'élément comique est visible à gauche. Bande crème #FCF9E6 en haut du cadre sur un cinquième de la hauteur, portant UNIQUEMENT le texte « PRÉDICTIONS DES COMMANDES » en typographie arrondie très grasse, bleu marine #0F1A23, centré. Aucun autre texte, aucun logo ajouté, pas de filigrane, pas de bordure décorative.",
@@ -3445,9 +3445,9 @@
               "accroche": "Lui, il a réservé.",
               "punchline": "Tes vrais clients aussi devraient pouvoir.",
               "resume": "Tu ajoutes une réservation en dix secondes, la table libre est proposée automatiquement. Et tes clients peuvent le faire eux-mêmes, depuis ton site.",
-              "statut": "a_produire",
-              "dureeSecondes": null,
-              "videoUrl": null,
+              "statut": "monte",
+              "dureeSecondes": 37.5,
+              "videoUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/tiktok/EP020.mp4",
               "reseaux": {
                 "facebook": {
                   "statut": "a_venir",
@@ -3582,7 +3582,7 @@
                   "titre": "Ajouter une réservation — Réservation | FoodEatUp"
                 }
               },
-              "posterUrl": null,
+              "posterUrl": "/posters/EP020.jpg",
               "datePrevue": "2026-08-26",
               "troisMots": "AJOUTER UNE RÉSERVATION",
               "promptVignette": "Photo réaliste, cadrage vertical 9:16. Le chef de l'image de référence — MÊME visage, même barbe, même toque blanche, même veste de cuisine blanche, même tablier blanc au logo FoodEatUp bleu. Ne change ni ses traits ni sa morphologie. Son expression : l'air satisfait de celui qui sait que le problème est déjà réglé. Scène : le chien qui a réservé. Lui, il a réservé. Décor : une salle de restaurant en plein service, tables dressées, clients flous en arrière-plan. lumière chaude de fin de journée, reflets dorés. Le chef occupe les deux tiers droits du cadre, en plan poitrine, l'élément comique est visible à gauche. Bande crème #FCF9E6 en haut du cadre sur un cinquième de la hauteur, portant UNIQUEMENT le texte « AJOUTER UNE RÉSERVATION » en typographie arrondie très grasse, bleu marine #0F1A23, centré. Aucun autre texte, aucun logo ajouté, pas de filigrane, pas de bordure décorative.",
@@ -3626,9 +3626,9 @@
               "accroche": "Le vrai ennemi du service.",
               "punchline": "Un KDS, et le combat s'arrête.",
               "resume": "Tu crées tes postes : chaud, froid, dessert. Chaque plat part au bon écran. Plus d'imprimante à secouer au milieu du service.",
-              "statut": "a_produire",
-              "dureeSecondes": null,
-              "videoUrl": null,
+              "statut": "monte",
+              "dureeSecondes": 37.5,
+              "videoUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/tiktok/EP021.mp4",
               "reseaux": {
                 "facebook": {
                   "statut": "a_venir",
@@ -3764,7 +3764,7 @@
                   "titre": "Créer tes postes KDS — KDS | FoodEatUp"
                 }
               },
-              "posterUrl": null,
+              "posterUrl": "/posters/EP021.jpg",
               "datePrevue": "2026-08-27",
               "troisMots": "CRÉER TES POSTES",
               "promptVignette": "Photo réaliste, cadrage vertical 9:16. Le chef de l'image de référence — MÊME visage, même barbe, même toque blanche, même veste de cuisine blanche, même tablier blanc au logo FoodEatUp bleu. Ne change ni ses traits ni sa morphologie. Son expression : l'air de quelqu'un qui a déjà vu ça cent fois, un sourcil levé. Scène : chef contre imprimante. Le vrai ennemi du service. Décor : une salle de restaurant en plein service, tables dressées, clients flous en arrière-plan. lumière chaude de fin de journée, reflets dorés. Le chef occupe les deux tiers droits du cadre, en plan poitrine, l'élément comique est visible à gauche. Bande crème #FCF9E6 en haut du cadre sur un cinquième de la hauteur, portant UNIQUEMENT le texte « CRÉER TES POSTES » en typographie arrondie très grasse, bleu marine #0F1A23, centré. Aucun autre texte, aucun logo ajouté, pas de filigrane, pas de bordure décorative.",
@@ -3809,9 +3809,9 @@
               "accroche": "Mille euros par mois.",
               "punchline": "Pour dix logiciels qui ne se parlent même pas.",
               "resume": "Tout est déjà là : caisse, stock, planning, marketing, HACCP. Un seul abonnement, une seule base de données. Tes outils arrêtent de s'ignorer.",
-              "statut": "a_produire",
-              "dureeSecondes": null,
-              "videoUrl": null,
+              "statut": "monte",
+              "dureeSecondes": 37.5,
+              "videoUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/tiktok/EP022.mp4",
               "reseaux": {
                 "facebook": {
                   "statut": "a_venir",
@@ -3948,7 +3948,7 @@
                   "titre": "Marketplace de prompts — PrediBot | FoodEatUp"
                 }
               },
-              "posterUrl": null,
+              "posterUrl": "/posters/EP022.jpg",
               "datePrevue": "2026-08-28",
               "troisMots": "MARKETPLACE DE PROMPTS",
               "promptVignette": "Photo réaliste, cadrage vertical 9:16. Le chef de l'image de référence — MÊME visage, même barbe, même toque blanche, même veste de cuisine blanche, même tablier blanc au logo FoodEatUp bleu. Ne change ni ses traits ni sa morphologie. Son expression : un sourire en coin, parfaitement serein au milieu du désastre. Scène : la facture qui fait pleurer. Mille euros par mois. Décor : une salle de restaurant en plein service, tables dressées, clients flous en arrière-plan. lumière chaude de fin de journée, reflets dorés. Le chef occupe les deux tiers droits du cadre, en plan poitrine, l'élément comique est visible à gauche. Bande crème #FCF9E6 en haut du cadre sur un cinquième de la hauteur, portant UNIQUEMENT le texte « MARKETPLACE DE PROMPTS » en typographie arrondie très grasse, bleu marine #0F1A23, centré. Aucun autre texte, aucun logo ajouté, pas de filigrane, pas de bordure décorative.",
@@ -3992,9 +3992,9 @@
               "accroche": "Ton automatisation actuelle.",
               "punchline": "Automatiser, oui. Mais bien.",
               "resume": "Iris regarde ton exploitation et te propose quoi publier, et pourquoi. Tu valides ou tu refuses. L'automatisation te sert, elle ne t'échappe pas.",
-              "statut": "a_produire",
-              "dureeSecondes": null,
-              "videoUrl": null,
+              "statut": "monte",
+              "dureeSecondes": 37.5,
+              "videoUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/tiktok/EP023.mp4",
               "reseaux": {
                 "facebook": {
                   "statut": "a_venir",
@@ -4126,7 +4126,7 @@
                   "titre": "Calendrier IA avec Iris — Marketing | FoodEatUp"
                 }
               },
-              "posterUrl": null,
+              "posterUrl": "/posters/EP023.jpg",
               "datePrevue": "2026-08-29",
               "troisMots": "CALENDRIER IA AVEC",
               "promptVignette": "Photo réaliste, cadrage vertical 9:16. Le chef de l'image de référence — MÊME visage, même barbe, même toque blanche, même veste de cuisine blanche, même tablier blanc au logo FoodEatUp bleu. Ne change ni ses traits ni sa morphologie. Son expression : faussement dépité, la main sur le front, mais l'œil qui rit. Scène : l'aspirateur robot. Ton automatisation actuelle. Décor : une salle de restaurant en plein service, tables dressées, clients flous en arrière-plan. lumière chaude de fin de journée, reflets dorés. Le chef occupe les deux tiers droits du cadre, en plan poitrine, l'élément comique est visible à gauche. Bande crème #FCF9E6 en haut du cadre sur un cinquième de la hauteur, portant UNIQUEMENT le texte « CALENDRIER IA AVEC » en typographie arrondie très grasse, bleu marine #0F1A23, centré. Aucun autre texte, aucun logo ajouté, pas de filigrane, pas de bordure décorative.",
@@ -4169,9 +4169,9 @@
               "accroche": "Encore une commission en moins.",
               "punchline": "Récupère tes commandes en direct.",
               "resume": "Ton site de commande est créé par l'IA depuis ta carte. Tes clients commandent en direct, chez toi. Zéro commission sur ces commandes-là.",
-              "statut": "a_produire",
-              "dureeSecondes": null,
-              "videoUrl": null,
+              "statut": "monte",
+              "dureeSecondes": 37.5,
+              "videoUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/tiktok/EP024.mp4",
               "reseaux": {
                 "facebook": {
                   "statut": "a_venir",
@@ -4306,7 +4306,7 @@
                   "titre": "Créer un site par IA — Mon Site | FoodEatUp"
                 }
               },
-              "posterUrl": null,
+              "posterUrl": "/posters/EP024.jpg",
               "datePrevue": "2026-08-30",
               "troisMots": "CRÉER SITE PAR",
               "promptVignette": "Photo réaliste, cadrage vertical 9:16. Le chef de l'image de référence — MÊME visage, même barbe, même toque blanche, même veste de cuisine blanche, même tablier blanc au logo FoodEatUp bleu. Ne change ni ses traits ni sa morphologie. Son expression : l'air satisfait de celui qui sait que le problème est déjà réglé. Scène : la mouette braqueuse. Encore une commission en moins. Décor : une salle de restaurant en plein service, tables dressées, clients flous en arrière-plan. lumière chaude de fin de journée, reflets dorés. Le chef occupe les deux tiers droits du cadre, en plan poitrine, l'élément comique est visible à gauche. Bande crème #FCF9E6 en haut du cadre sur un cinquième de la hauteur, portant UNIQUEMENT le texte « CRÉER SITE PAR » en typographie arrondie très grasse, bleu marine #0F1A23, centré. Aucun autre texte, aucun logo ajouté, pas de filigrane, pas de bordure décorative.",
@@ -4348,9 +4348,9 @@
               "accroche": "Quand tu lances une promo sans données.",
               "punchline": "Ça éclabousse. Et rarement toi.",
               "resume": "Tu ne lances plus une promo au hasard. FoodEatUp te propose la campagne depuis tes vraies données clients : qui cibler, avec quelle offre, quel jour.",
-              "statut": "a_produire",
-              "dureeSecondes": null,
-              "videoUrl": null,
+              "statut": "monte",
+              "dureeSecondes": 37.5,
+              "videoUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/tiktok/EP025.mp4",
               "reseaux": {
                 "facebook": {
                   "statut": "a_venir",
@@ -4482,7 +4482,7 @@
                   "titre": "Campagne 100 % IA — Marketing | FoodEatUp"
                 }
               },
-              "posterUrl": null,
+              "posterUrl": "/posters/EP025.jpg",
               "datePrevue": "2026-08-31",
               "troisMots": "CAMPAGNE 100 %",
               "promptVignette": "Photo réaliste, cadrage vertical 9:16. Le chef de l'image de référence — MÊME visage, même barbe, même toque blanche, même veste de cuisine blanche, même tablier blanc au logo FoodEatUp bleu. Ne change ni ses traits ni sa morphologie. Son expression : l'air de quelqu'un qui a déjà vu ça cent fois, un sourcil levé. Scène : le mixeur sans couvercle. Quand tu lances une promo sans données. Décor : une salle de restaurant en plein service, tables dressées, clients flous en arrière-plan. lumière chaude de fin de journée, reflets dorés. Le chef occupe les deux tiers droits du cadre, en plan poitrine, l'élément comique est visible à gauche. Bande crème #FCF9E6 en haut du cadre sur un cinquième de la hauteur, portant UNIQUEMENT le texte « CAMPAGNE 100 % » en typographie arrondie très grasse, bleu marine #0F1A23, centré. Aucun autre texte, aucun logo ajouté, pas de filigrane, pas de bordure décorative.",
@@ -4526,9 +4526,9 @@
               "accroche": "Ton stock avant le week-end.",
               "punchline": "Prévois, au lieu de subir.",
               "resume": "Ta liste de courses se construit depuis ta production prévue. Tu l'envoies au fournisseur depuis l'écran. Le week-end se prépare le mercredi.",
-              "statut": "a_produire",
-              "dureeSecondes": null,
-              "videoUrl": null,
+              "statut": "monte",
+              "dureeSecondes": 37.5,
+              "videoUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/tiktok/EP026.mp4",
               "reseaux": {
                 "facebook": {
                   "statut": "a_venir",
@@ -4667,7 +4667,7 @@
                   "titre": "Envoyer sa liste de courses au fournisseur — StockVision | FoodEatUp"
                 }
               },
-              "posterUrl": null,
+              "posterUrl": "/posters/EP026.jpg",
               "datePrevue": "2026-09-01",
               "troisMots": "ENVOYER LISTE COURSES",
               "promptVignette": "Photo réaliste, cadrage vertical 9:16. Le chef de l'image de référence — MÊME visage, même barbe, même toque blanche, même veste de cuisine blanche, même tablier blanc au logo FoodEatUp bleu. Ne change ni ses traits ni sa morphologie. Son expression : un sourire en coin, parfaitement serein au milieu du désastre. Scène : le ballon qui explose. Ton stock avant le week-end. Décor : une salle de restaurant en plein service, tables dressées, clients flous en arrière-plan. lumière chaude de fin de journée, reflets dorés. Le chef occupe les deux tiers droits du cadre, en plan poitrine, l'élément comique est visible à gauche. Bande crème #FCF9E6 en haut du cadre sur un cinquième de la hauteur, portant UNIQUEMENT le texte « ENVOYER LISTE COURSES » en typographie arrondie très grasse, bleu marine #0F1A23, centré. Aucun autre texte, aucun logo ajouté, pas de filigrane, pas de bordure décorative.",
@@ -5058,9 +5058,9 @@
               "accroche": "Toi, gérant, en 2026.",
               "punchline": "Personne ne devrait travailler comme ça.",
               "resume": "Le brief du jour te dit ce qui compte avant que ça te tombe dessus : les réservations, les productions, les alertes. Tu diriges au lieu de courir.",
-              "statut": "a_produire",
-              "dureeSecondes": null,
-              "videoUrl": null,
+              "statut": "monte",
+              "dureeSecondes": 37.5,
+              "videoUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/tiktok/EP029.mp4",
               "reseaux": {
                 "facebook": {
                   "statut": "a_venir",
@@ -5197,7 +5197,7 @@
                   "titre": "Lire ses prévisions — PrediBot | FoodEatUp"
                 }
               },
-              "posterUrl": null,
+              "posterUrl": "/posters/EP029.jpg",
               "datePrevue": "2026-09-02",
               "troisMots": "LIRE SES PRÉVISIONS",
               "promptVignette": "Photo réaliste, cadrage vertical 9:16. Le chef de l'image de référence — MÊME visage, même barbe, même toque blanche, même veste de cuisine blanche, même tablier blanc au logo FoodEatUp bleu. Ne change ni ses traits ni sa morphologie. Son expression : l'air de quelqu'un qui a déjà vu ça cent fois, un sourcil levé. Scène : les douze assiettes. Toi, gérant, en 2026. Décor : une salle de restaurant en plein service, tables dressées, clients flous en arrière-plan. lumière chaude de fin de journée, reflets dorés. Le chef occupe les deux tiers droits du cadre, en plan poitrine, l'élément comique est visible à gauche. Bande crème #FCF9E6 en haut du cadre sur un cinquième de la hauteur, portant UNIQUEMENT le texte « LIRE SES PRÉVISIONS » en typographie arrondie très grasse, bleu marine #0F1A23, centré. Aucun autre texte, aucun logo ajouté, pas de filigrane, pas de bordure décorative.",
@@ -5239,9 +5239,9 @@
               "accroche": "Le nouveau, jour 1.",
               "punchline": "Forme-le en un clic avec l'Académy.",
               "resume": "Le nouveau se forme tout seul : chaque module a ses vidéos, dans l'ordre. Tu ne réexpliques plus la caisse à chaque embauche.",
-              "statut": "bloque",
-              "dureeSecondes": null,
-              "videoUrl": null,
+              "statut": "monte",
+              "dureeSecondes": 37.5,
+              "videoUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/tiktok/EP030.mp4",
               "reseaux": {
                 "facebook": {
                   "statut": "a_venir",
@@ -5371,8 +5371,7 @@
                   "titre": "Academy — Configuration | FoodEatUp"
                 }
               },
-              "blocage": "Le chapitre correspondant n'a pas encore de vidéo dans le Drive interne.",
-              "posterUrl": null,
+              "posterUrl": "/posters/EP030.jpg",
               "datePrevue": null,
               "troisMots": "ACADEMY",
               "promptVignette": "Photo réaliste, cadrage vertical 9:16. Le chef de l'image de référence — MÊME visage, même barbe, même toque blanche, même veste de cuisine blanche, même tablier blanc au logo FoodEatUp bleu. Ne change ni ses traits ni sa morphologie. Son expression : l'air de quelqu'un qui a déjà vu ça cent fois, un sourcil levé. Scène : le pingouin en cuisine. Le nouveau, jour 1. Décor : une salle de restaurant en plein service, tables dressées, clients flous en arrière-plan. lumière chaude de fin de journée, reflets dorés. Le chef occupe les deux tiers droits du cadre, en plan poitrine, l'élément comique est visible à gauche. Bande crème #FCF9E6 en haut du cadre sur un cinquième de la hauteur, portant UNIQUEMENT le texte « ACADEMY » en typographie arrondie très grasse, bleu marine #0F1A23, centré. Aucun autre texte, aucun logo ajouté, pas de filigrane, pas de bordure décorative.",

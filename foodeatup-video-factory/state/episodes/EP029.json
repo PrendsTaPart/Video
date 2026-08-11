@@ -11,11 +11,11 @@
   "heygen_script": "Le brief du jour te dit ce qui compte avant que ça te tombe dessus : les réservations, les productions, les alertes. Tu diriges au lieu de courir.",
   "etat": {
     "hook": "ok",
-    "avatar": "manquant",
-    "software": "manquant",
-    "vo": "manquant",
-    "build": "manquant",
+    "avatar": "ok",
+    "software": "ok",
+    "vo": "ok",
+    "build": "ok",
     "publie": "manquant"
   },
-  "notes": ""
+  "notes": "Master 37,5 s. Même chapitre qu'EP010 : fenêtre de screencast différente (20→30 s) pour que les deux épisodes ne montrent pas le même écran."
 }

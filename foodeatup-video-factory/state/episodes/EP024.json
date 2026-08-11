@@ -11,11 +11,11 @@
   "heygen_script": "Ton site de commande est créé par l'IA depuis ta carte. Tes clients commandent en direct, chez toi. Zéro commission sur ces commandes-là.",
   "etat": {
     "hook": "ok",
-    "avatar": "manquant",
-    "software": "manquant",
-    "vo": "manquant",
-    "build": "manquant",
+    "avatar": "ok",
+    "software": "ok",
+    "vo": "ok",
+    "build": "ok",
     "publie": "manquant"
   },
-  "notes": ""
+  "notes": "Master 37,5 s."
 }

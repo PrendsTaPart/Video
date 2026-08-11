@@ -1468,9 +1468,9 @@ export const series: Serie[] = [
             "accroche": "Personne ne touche à ta dernière frite.",
             "punchline": "Ni à ta marge.",
             "resume": "Tu génères ton rapport par module en un clic : ventes, stock, production. L'historique est gardé. Tu compares ce mois-ci avec le mois dernier, pas avec ton souvenir.",
-            "statut": "a_produire",
-            "dureeSecondes": null,
-            "videoUrl": null,
+            "statut": "monte",
+            "dureeSecondes": 37.5,
+            "videoUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/tiktok/EP017.mp4",
             "reseaux": {
               "facebook": {
                 "statut": "a_venir",
@@ -1513,7 +1513,7 @@ export const series: Serie[] = [
                 "lienCta": "https://site.foodeatup.com/"
               }
             },
-            "posterUrl": null,
+            "posterUrl": "/posters/EP017.jpg",
             "datePrevue": "2026-08-23",
             "troisMots": "CRÉATION D'UN RAPPORT",
             "tutoriel": {
@@ -1545,9 +1545,9 @@ export const series: Serie[] = [
             "accroche": "Le rush de vingt heures.",
             "punchline": "Sauve ton service, pas ton dos.",
             "resume": "Pendant le rush, tes clients commandent seuls : par QR à table, par le site, par l'agent vocal. Ton équipe sert, elle ne court plus.",
-            "statut": "a_produire",
-            "dureeSecondes": null,
-            "videoUrl": null,
+            "statut": "monte",
+            "dureeSecondes": 37.5,
+            "videoUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/tiktok/EP018.mp4",
             "reseaux": {
               "facebook": {
                 "statut": "a_venir",
@@ -1590,7 +1590,7 @@ export const series: Serie[] = [
                 "lienCta": "https://site.foodeatup.com/"
               }
             },
-            "posterUrl": null,
+            "posterUrl": "/posters/EP018.jpg",
             "datePrevue": "2026-08-24",
             "troisMots": "SITE",
             "tutoriel": {
@@ -1622,9 +1622,9 @@ export const series: Serie[] = [
             "accroche": "Ton chiffre d'affaires, sans outil.",
             "punchline": "Ça rebondit rarement tout seul.",
             "resume": "FoodEatUp regarde tes ventes passées et te dit quoi produire demain. Ton chiffre d'affaires ne dépend plus de ton intuition du lundi matin.",
-            "statut": "a_produire",
-            "dureeSecondes": null,
-            "videoUrl": null,
+            "statut": "monte",
+            "dureeSecondes": 37.5,
+            "videoUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/tiktok/EP019.mp4",
             "reseaux": {
               "facebook": {
                 "statut": "a_venir",
@@ -1667,7 +1667,7 @@ export const series: Serie[] = [
                 "lienCta": "https://site.foodeatup.com/"
               }
             },
-            "posterUrl": null,
+            "posterUrl": "/posters/EP019.jpg",
             "datePrevue": "2026-08-25",
             "troisMots": "PRÉDICTIONS DES COMMANDES",
             "tutoriel": {
@@ -1699,9 +1699,9 @@ export const series: Serie[] = [
             "accroche": "Lui, il a réservé.",
             "punchline": "Tes vrais clients aussi devraient pouvoir.",
             "resume": "Tu ajoutes une réservation en dix secondes, la table libre est proposée automatiquement. Et tes clients peuvent le faire eux-mêmes, depuis ton site.",
-            "statut": "a_produire",
-            "dureeSecondes": null,
-            "videoUrl": null,
+            "statut": "monte",
+            "dureeSecondes": 37.5,
+            "videoUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/tiktok/EP020.mp4",
             "reseaux": {
               "facebook": {
                 "statut": "a_venir",
@@ -1744,7 +1744,7 @@ export const series: Serie[] = [
                 "lienCta": "https://site.foodeatup.com/"
               }
             },
-            "posterUrl": null,
+            "posterUrl": "/posters/EP020.jpg",
             "datePrevue": "2026-08-26",
             "troisMots": "AJOUTER UNE RÉSERVATION",
             "tutoriel": {
@@ -1776,9 +1776,9 @@ export const series: Serie[] = [
             "accroche": "Le vrai ennemi du service.",
             "punchline": "Un KDS, et le combat s'arrête.",
             "resume": "Tu crées tes postes : chaud, froid, dessert. Chaque plat part au bon écran. Plus d'imprimante à secouer au milieu du service.",
-            "statut": "a_produire",
-            "dureeSecondes": null,
-            "videoUrl": null,
+            "statut": "monte",
+            "dureeSecondes": 37.5,
+            "videoUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/tiktok/EP021.mp4",
             "reseaux": {
               "facebook": {
                 "statut": "a_venir",
@@ -1821,7 +1821,7 @@ export const series: Serie[] = [
                 "lienCta": "https://site.foodeatup.com/"
               }
             },
-            "posterUrl": null,
+            "posterUrl": "/posters/EP021.jpg",
             "datePrevue": "2026-08-27",
             "troisMots": "CRÉER TES POSTES",
             "tutoriel": {
@@ -1853,9 +1853,9 @@ export const series: Serie[] = [
             "accroche": "Mille euros par mois.",
             "punchline": "Pour dix logiciels qui ne se parlent même pas.",
             "resume": "Tout est déjà là : caisse, stock, planning, marketing, HACCP. Un seul abonnement, une seule base de données. Tes outils arrêtent de s'ignorer.",
-            "statut": "a_produire",
-            "dureeSecondes": null,
-            "videoUrl": null,
+            "statut": "monte",
+            "dureeSecondes": 37.5,
+            "videoUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/tiktok/EP022.mp4",
             "reseaux": {
               "facebook": {
                 "statut": "a_venir",
@@ -1898,7 +1898,7 @@ export const series: Serie[] = [
                 "lienCta": "https://site.foodeatup.com/"
               }
             },
-            "posterUrl": null,
+            "posterUrl": "/posters/EP022.jpg",
             "datePrevue": "2026-08-28",
             "troisMots": "MARKETPLACE DE PROMPTS",
             "tutoriel": {
@@ -1930,9 +1930,9 @@ export const series: Serie[] = [
             "accroche": "Ton automatisation actuelle.",
             "punchline": "Automatiser, oui. Mais bien.",
             "resume": "Iris regarde ton exploitation et te propose quoi publier, et pourquoi. Tu valides ou tu refuses. L'automatisation te sert, elle ne t'échappe pas.",
-            "statut": "a_produire",
-            "dureeSecondes": null,
-            "videoUrl": null,
+            "statut": "monte",
+            "dureeSecondes": 37.5,
+            "videoUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/tiktok/EP023.mp4",
             "reseaux": {
               "facebook": {
                 "statut": "a_venir",
@@ -1975,7 +1975,7 @@ export const series: Serie[] = [
                 "lienCta": "https://site.foodeatup.com/"
               }
             },
-            "posterUrl": null,
+            "posterUrl": "/posters/EP023.jpg",
             "datePrevue": "2026-08-29",
             "troisMots": "CALENDRIER IA AVEC",
             "tutoriel": {
@@ -2007,9 +2007,9 @@ export const series: Serie[] = [
             "accroche": "Encore une commission en moins.",
             "punchline": "Récupère tes commandes en direct.",
             "resume": "Ton site de commande est créé par l'IA depuis ta carte. Tes clients commandent en direct, chez toi. Zéro commission sur ces commandes-là.",
-            "statut": "a_produire",
-            "dureeSecondes": null,
-            "videoUrl": null,
+            "statut": "monte",
+            "dureeSecondes": 37.5,
+            "videoUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/tiktok/EP024.mp4",
             "reseaux": {
               "facebook": {
                 "statut": "a_venir",
@@ -2052,7 +2052,7 @@ export const series: Serie[] = [
                 "lienCta": "https://site.foodeatup.com/"
               }
             },
-            "posterUrl": null,
+            "posterUrl": "/posters/EP024.jpg",
             "datePrevue": "2026-08-30",
             "troisMots": "CRÉER SITE PAR",
             "tutoriel": {
@@ -2084,9 +2084,9 @@ export const series: Serie[] = [
             "accroche": "Quand tu lances une promo sans données.",
             "punchline": "Ça éclabousse. Et rarement toi.",
             "resume": "Tu ne lances plus une promo au hasard. FoodEatUp te propose la campagne depuis tes vraies données clients : qui cibler, avec quelle offre, quel jour.",
-            "statut": "a_produire",
-            "dureeSecondes": null,
-            "videoUrl": null,
+            "statut": "monte",
+            "dureeSecondes": 37.5,
+            "videoUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/tiktok/EP025.mp4",
             "reseaux": {
               "facebook": {
                 "statut": "a_venir",
@@ -2129,7 +2129,7 @@ export const series: Serie[] = [
                 "lienCta": "https://site.foodeatup.com/"
               }
             },
-            "posterUrl": null,
+            "posterUrl": "/posters/EP025.jpg",
             "datePrevue": "2026-08-31",
             "troisMots": "CAMPAGNE 100 %",
             "tutoriel": {
@@ -2161,9 +2161,9 @@ export const series: Serie[] = [
             "accroche": "Ton stock avant le week-end.",
             "punchline": "Prévois, au lieu de subir.",
             "resume": "Ta liste de courses se construit depuis ta production prévue. Tu l'envoies au fournisseur depuis l'écran. Le week-end se prépare le mercredi.",
-            "statut": "a_produire",
-            "dureeSecondes": null,
-            "videoUrl": null,
+            "statut": "monte",
+            "dureeSecondes": 37.5,
+            "videoUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/tiktok/EP026.mp4",
             "reseaux": {
               "facebook": {
                 "statut": "a_venir",
@@ -2206,7 +2206,7 @@ export const series: Serie[] = [
                 "lienCta": "https://site.foodeatup.com/"
               }
             },
-            "posterUrl": null,
+            "posterUrl": "/posters/EP026.jpg",
             "datePrevue": "2026-09-01",
             "troisMots": "ENVOYER LISTE COURSES",
             "tutoriel": {
@@ -2387,9 +2387,9 @@ export const series: Serie[] = [
             "accroche": "Toi, gérant, en 2026.",
             "punchline": "Personne ne devrait travailler comme ça.",
             "resume": "Le brief du jour te dit ce qui compte avant que ça te tombe dessus : les réservations, les productions, les alertes. Tu diriges au lieu de courir.",
-            "statut": "a_produire",
-            "dureeSecondes": null,
-            "videoUrl": null,
+            "statut": "monte",
+            "dureeSecondes": 37.5,
+            "videoUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/tiktok/EP029.mp4",
             "reseaux": {
               "facebook": {
                 "statut": "a_venir",
@@ -2432,7 +2432,7 @@ export const series: Serie[] = [
                 "lienCta": "https://site.foodeatup.com/"
               }
             },
-            "posterUrl": null,
+            "posterUrl": "/posters/EP029.jpg",
             "datePrevue": "2026-09-02",
             "troisMots": "LIRE SES PRÉVISIONS",
             "tutoriel": {
@@ -2464,9 +2464,9 @@ export const series: Serie[] = [
             "accroche": "Le nouveau, jour 1.",
             "punchline": "Forme-le en un clic avec l'Académy.",
             "resume": "Le nouveau se forme tout seul : chaque module a ses vidéos, dans l'ordre. Tu ne réexpliques plus la caisse à chaque embauche.",
-            "statut": "bloque",
-            "dureeSecondes": null,
-            "videoUrl": null,
+            "statut": "monte",
+            "dureeSecondes": 37.5,
+            "videoUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/tiktok/EP030.mp4",
             "reseaux": {
               "facebook": {
                 "statut": "a_venir",
@@ -2509,8 +2509,7 @@ export const series: Serie[] = [
                 "lienCta": "https://site.foodeatup.com/"
               }
             },
-            "blocage": "Le chapitre correspondant n'a pas encore de vidéo dans le Drive interne.",
-            "posterUrl": null,
+            "posterUrl": "/posters/EP030.jpg",
             "datePrevue": null,
             "troisMots": "ACADEMY",
             "tutoriel": null,

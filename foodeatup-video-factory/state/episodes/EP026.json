@@ -11,11 +11,11 @@
   "heygen_script": "Ta liste de courses se construit depuis ta production prévue. Tu l'envoies au fournisseur depuis l'écran. Le week-end se prépare le mercredi.",
   "etat": {
     "hook": "ok",
-    "avatar": "manquant",
-    "software": "manquant",
-    "vo": "manquant",
-    "build": "manquant",
+    "avatar": "ok",
+    "software": "ok",
+    "vo": "ok",
+    "build": "ok",
     "publie": "manquant"
   },
-  "notes": ""
+  "notes": "Master 37,5 s."
 }
