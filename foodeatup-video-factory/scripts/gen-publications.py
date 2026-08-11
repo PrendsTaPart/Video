@@ -30,6 +30,11 @@ RESEAUX = {
                   "lien_cliquable": False, "nb_tags": 5},
     "linkedin":  {"heure": "08:00", "format": "Vidéo native 9:16",
                   "lien_cliquable": True,  "nb_tags": 4},
+    # YouTube est le seul réseau où la vidéo se cherche. Les quatre autres la
+    # poussent dans un fil ; ici quelqu'un tape une question. D'où un titre
+    # porteur de la requête, une description longue, et des balises.
+    "youtube":   {"heure": "10:00", "format": "Short 9:16",
+                  "lien_cliquable": True,  "nb_tags": 12},
 }
 
 # Mots-dièse toujours présents, par réseau. Sur TikTok on reste large : l'algo
@@ -40,6 +45,8 @@ SOCLE = {
                   "logicielrestaurant", "vieDeResto", "cuisine", "hotellerierestauration"],
     "tiktok":    ["restaurant", "resto", "foodeatup"],
     "linkedin":  ["restauration", "foodeatup"],
+    "youtube":   ["Shorts", "restaurant", "restaurateur", "foodeatup",
+                  "logicielrestaurant", "gestionrestaurant"],
 }
 
 MODULES = {
@@ -92,6 +99,72 @@ DEFAUT = {"tags": ["logicielrestaurant"], "cles": ["logiciel restaurant"],
 TEL = "06 14 18 92 25"
 SITE = "foodeatup.com"
 
+# --- Le titre en trois mots de la vignette ------------------------------------
+# Trois mots, pas quatre : au-delà, sur une vignette lue au pouce sur un
+# téléphone, plus personne ne lit la troisième ligne.
+VIDES = {"de", "des", "du", "la", "le", "les", "un", "une", "en", "et", "à",
+         "au", "aux", "sur", "son", "sa", "ses", "ce", "cette", "d", "l", "pour"}
+COURT = {"Équipe & Planning": "PLANNING", "Caisse POS": "CAISSE",
+         "StockVision": "STOCK", "Mon Site": "SITE", "Comptabilité": "COMPTA",
+         "Configuration": "RÉGLAGES", "Réservation": "RÉSA"}
+
+
+def trois_mots(ep):
+    """Le titre de la vignette, tiré du chapitre — c'est ce que la vidéo montre.
+
+    Trois mots au plus, deux si le chapitre n'en dit pas davantage. Une première
+    version complétait à trois en collant le nom du module, ce qui produisait des
+    titres faux en français (« TON CONFIGURER CAISSE ») : deux mots justes valent
+    mieux que trois mots cassés.
+
+    Les chapitres énumèrent souvent trois actions (« Ajouter, Supprimer, Modifier
+    un équipement »). On garde alors le segment qui tient en trois mots plutôt que
+    les trois premiers mots de la phrase, qui donneraient « AJOUTER SUPPRIMER
+    MODIFIER » — trois verbes et aucun objet.
+    """
+    chap = re.sub(r"^\d+\s*-\s*", "", ep["chapitre"]).strip()
+    segments = [s.strip() for s in re.split(r"[,;&/]", chap) if s.strip()]
+    # le segment le plus informatif qui tient en trois mots
+    tenant = [s for s in segments if len(s.split()) <= 3]
+    choix = max(tenant, key=lambda s: len(s.split())) if tenant else segments[0]
+    mots = choix.split()
+    if len(mots) > 3:
+        mots = [m for m in mots if m.lower() not in VIDES][:3]
+    return " ".join(m.upper() for m in mots)
+
+
+# --- La direction artistique, saison par saison -------------------------------
+# Chaque saison a son décor et sa lumière. Sans ça, 150 vignettes du même chef
+# sur le même fond deviennent une bouillie : on ne distingue plus une saison
+# d'une autre dans une grille.
+SAISONS_DA = {
+    1: {"decor": "une salle de restaurant en plein service, tables dressées, "
+                 "clients flous en arrière-plan",
+        "lumiere": "lumière chaude de fin de journée, reflets dorés"},
+    2: {"decor": "un bureau d'arrière-salle, classeurs, tickets de caisse, "
+                 "calculatrice, cartons de livraison",
+        "lumiere": "lumière rasante de néon adouci, ambiance fin de mois"},
+    3: {"decor": "une cuisine professionnelle en pleine brigade, inox, "
+                 "passe-plat, plannings punaisés au mur",
+        "lumiere": "lumière blanche et nette de cuisine, vapeur légère"},
+    4: {"decor": "la devanture et la terrasse du restaurant, ardoise, "
+                 "téléphone à la main, avis clients affichés",
+        "lumiere": "plein jour, lumière naturelle franche"},
+    5: {"decor": "le restaurant vide au petit matin, chaises encore sur les "
+                 "tables, tablette posée sur le comptoir",
+        "lumiere": "lumière bleutée de l'aube qui entre par la vitrine"},
+}
+
+# L'arc de chaque épisode est le même : le chaos, puis le calme. Le chef n'est
+# jamais paniqué — il a déjà vu ça cent fois. Quatre nuances suffisent, prises
+# de façon déterministe pour qu'un même épisode garde toujours la sienne.
+EXPRESSIONS = [
+    "l'air de quelqu'un qui a déjà vu ça cent fois, un sourcil levé",
+    "un sourire en coin, parfaitement serein au milieu du désastre",
+    "faussement dépité, la main sur le front, mais l'œil qui rit",
+    "l'air satisfait de celui qui sait que le problème est déjà réglé",
+]
+
 
 def mots_cles(ep):
     m = MODULES.get(ep["module"], DEFAUT)
@@ -134,6 +207,9 @@ def legende(ep, reseau):
         # Deux lignes et une promesse. Au-delà, personne ne déplie.
         return "\n".join([f"{a} 😅", p, "", premiere_phrase(r)])
 
+    if reseau == "youtube":
+        return description_youtube(ep)
+
     # LinkedIn : on parle à un exploitant, pas à un abonné. Le bénéfice
     # d'abord, l'anecdote ensuite.
     bloc = [f"{a}", "", r, "",
@@ -144,26 +220,85 @@ def legende(ep, reseau):
     return "\n".join(bloc)
 
 
+def titre_youtube(ep):
+    """Une requête, pas un slogan. YouTube est un moteur de recherche."""
+    chap = re.sub(r"^\d+\s*-\s*", "", ep["chapitre"]).strip()
+    chap = chap[0].upper() + chap[1:] if chap else chap
+    t = f"{chap} — {ep['module']} | FoodEatUp"
+    if len(t) > 95:                      # au-delà, YouTube coupe dans le titre
+        t = f"{chap} | FoodEatUp"[:95]
+    return t
+
+
+def description_youtube(ep):
+    lien = ep.get("tutorielUrl")
+    benef = MODULES.get(ep["module"], DEFAUT)["benefice"]
+    bloc = [f"{ep['accroche']} {ep['punchline']}", "",
+            ep["resume"], "",
+            f"Concrètement : {benef}.", "",
+            "— — —", ""]
+    if lien:
+        bloc += [f"📺 Le tutoriel pas-à-pas : {lien}", ""]
+    bloc += [f"📞 Une démo ? {TEL}",
+             f"🌐 {SITE}", "",
+             f"Série « Le Coup de Feu » — saison {ep['saison']}, épisode {ep['numero']}.",
+             f"Module {ep['module']} · Chapitre : {ep['chapitre']}", "",
+             "FoodEatUp est le logiciel qui réunit la caisse, le stock, les "
+             "plannings, l'HACCP et le marketing d'un restaurant au même endroit.",
+             ""]
+    return "\n".join(bloc)
+
+
+def prompt_vignette(ep):
+    """Le prompt d'image, prêt à coller. Un par épisode, jamais générique."""
+    da = SAISONS_DA[ep["saison"]]
+    expr = EXPRESSIONS[sum(ord(c) for c in ep["id"]) % len(EXPRESSIONS)]
+    return (
+        "Photo réaliste, cadrage vertical 9:16. "
+        "Le chef de l'image de référence — MÊME visage, même barbe, même toque "
+        "blanche, même veste de cuisine blanche, même tablier blanc au logo "
+        "FoodEatUp bleu. Ne change ni ses traits ni sa morphologie. "
+        f"Son expression : {expr}. "
+        f"Scène : {ep['titre'].lower()}. {ep['accroche']} "
+        f"Décor : {da['decor']}. {da['lumiere']}. "
+        "Le chef occupe les deux tiers droits du cadre, en plan poitrine, "
+        "l'élément comique est visible à gauche. "
+        "Bande crème #FCF9E6 en haut du cadre sur un cinquième de la hauteur, "
+        f"portant UNIQUEMENT le texte « {trois_mots(ep)} » en typographie "
+        "arrondie très grasse, bleu marine #0F1A23, centré. "
+        "Aucun autre texte, aucun logo ajouté, pas de filigrane, "
+        "pas de bordure décorative."
+    )
+
+
 def cta(ep, reseau):
     if not ep.get("tutorielUrl"):
         return "Demander une démo"
     return {"facebook": "Voir le tutoriel complet",
             "instagram": "Le pas-à-pas est en bio",
             "tiktok": "Tuto complet en bio",
-            "linkedin": "Voir le tutoriel pas-à-pas"}[reseau]
+            "linkedin": "Voir le tutoriel pas-à-pas",
+            "youtube": "Le tutoriel pas-à-pas"}[reseau]
 
 
 def main():
     src = os.path.join(SOCIAL, "data", "series.json")
     d = json.load(open(src))
     comptes = {r["slug"]: r["compte"] for r in d["reseaux"]}
+    if "youtube" not in comptes:
+        d["reseaux"].append({"slug": "youtube", "nom": "YouTube",
+                             "compte": "@FoodEatUp",
+                             "url": "https://www.youtube.com/@FoodEatUp",
+                             "couleur": "#FF0000"})
+        comptes["youtube"] = "@FoodEatUp"
     n = 0
     for s in d["series"]:
         for sa in s["saisons"]:
             for ep in sa["episodes"]:
                 pub = {}
                 for res, cfg in RESEAUX.items():
-                    anc = ep["reseaux"][res]
+                    anc = ep["reseaux"].get(
+                        res, {"statut": "a_venir", "date": ep.get("datePrevue")})
                     pub[res] = {
                         "statut": anc["statut"],
                         "date": anc["date"],
@@ -176,10 +311,14 @@ def main():
                         "lienCta": ep.get("tutorielUrl") if cfg["lien_cliquable"] else None,
                         "motsCles": mots_cles(ep),
                     }
+                    if res == "youtube":
+                        pub[res]["titre"] = titre_youtube(ep)
                     if anc.get("url"):
                         pub[res]["url"] = anc["url"]
                     n += 1
                 ep["reseaux"] = pub
+                ep["troisMots"] = trois_mots(ep)
+                ep["promptVignette"] = prompt_vignette(ep)
                 ep["posterUrl"] = (
                     f"/posters/{ep['id']}.jpg"
                     if os.path.exists(os.path.join(SOCIAL, "public", "posters", ep["id"] + ".jpg"))
