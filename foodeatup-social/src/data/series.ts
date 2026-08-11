@@ -1160,9 +1160,9 @@ export const series: Serie[] = [
             "accroche": "Dix logiciels. Dix notifications.",
             "punchline": "Un seul, ça suffisait.",
             "resume": "Tu poses ta question en français : combien j'ai fait hier, qu'est-ce qui manque demain. PrediBot lit tes vraies données et te répond. Une seule interface, pas dix.",
-            "statut": "a_produire",
-            "dureeSecondes": null,
-            "videoUrl": null,
+            "statut": "monte",
+            "dureeSecondes": 37.5,
+            "videoUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/tiktok/EP013.mp4",
             "reseaux": {
               "facebook": {
                 "statut": "a_venir",
@@ -1205,7 +1205,7 @@ export const series: Serie[] = [
                 "lienCta": "https://site.foodeatup.com/"
               }
             },
-            "posterUrl": null,
+            "posterUrl": "/posters/EP013.jpg",
             "datePrevue": "2026-08-19",
             "troisMots": "PARLER À PREDIBOT",
             "tutoriel": {
@@ -1219,12 +1219,12 @@ export const series: Serie[] = [
             },
             "tutorielModuleUrl": "https://tutoriel.foodeatup.com/module/predibot",
             "higgsfield": {
-              "videoSourceUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/hooks/EP013.mp4",
+              "videoSourceUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/Higgsfield-source-EP013-L-avalanche-de-notifications",
               "duree": "10 s",
               "format": "vertical 9:16",
-              "source": "depot"
+              "source": "rapidocms"
             },
-            "masterRapidoUrl": null
+            "masterRapidoUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/FoodEatUp-EP013-Parler-a-PrediBot"
           },
           {
             "id": "EP014",
