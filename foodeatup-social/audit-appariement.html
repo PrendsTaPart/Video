@@ -1,0 +1,500 @@
+<title>Appariement des épisodes</title>
+<style>
+  /* ---------------------------------------------------------------------
+     Console d'audit FoodEatUp.
+     Palette reprise de la charte du projet — crème, encre marine, bleu de
+     marque — plutôt qu'une palette inventée : c'est un outil interne de la
+     série, il doit en porter les couleurs.
+     Le partage sans/mono est l'idée typographique : le chrome est en
+     grotesque système, TOUTE donnée d'épisode est en chasse fixe. Sur une
+     console de contrôle, la donnée est une pièce à conviction.
+     --------------------------------------------------------------------- */
+  :root {
+    --creme:      #FCF9E6;
+    --surface:    #FFFDF4;
+    --surface-2:  #F4F0DC;
+    --encre:      #0F1A23;
+    --encre-doux: #5C6771;
+    --trait:      #E0DAC0;
+    --bleu:       #0062CC;
+    --bleu-doux:  #E4EFFB;
+    --alerte:     #A33608;
+    --alerte-fond:#FBEBE2;
+    --ok:         #2A6B4F;
+    --ok-fond:    #E6F1EA;
+    --ombre:      0 1px 2px rgba(15,26,35,.06), 0 8px 24px -18px rgba(15,26,35,.5);
+    --sans: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    --mono: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --creme:      #12181D;
+      --surface:    #192127;
+      --surface-2:  #212B33;
+      --encre:      #ECE7D4;
+      --encre-doux: #98A2AC;
+      --trait:      #2E3942;
+      --bleu:       #6FB2FF;
+      --bleu-doux:  #1B2B3D;
+      --alerte:     #FF9E70;
+      --alerte-fond:#33211A;
+      --ok:         #7FD1A8;
+      --ok-fond:    #16291F;
+      --ombre:      0 1px 2px rgba(0,0,0,.4), 0 8px 24px -18px rgba(0,0,0,.9);
+    }
+  }
+  :root[data-theme="dark"] {
+    --creme:#12181D; --surface:#192127; --surface-2:#212B33; --encre:#ECE7D4;
+    --encre-doux:#98A2AC; --trait:#2E3942; --bleu:#6FB2FF; --bleu-doux:#1B2B3D;
+    --alerte:#FF9E70; --alerte-fond:#33211A; --ok:#7FD1A8; --ok-fond:#16291F;
+    --ombre: 0 1px 2px rgba(0,0,0,.4), 0 8px 24px -18px rgba(0,0,0,.9);
+  }
+
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--creme);
+    color: var(--encre);
+    font-family: var(--sans);
+    font-size: 15px;
+    line-height: 1.55;
+    -webkit-font-smoothing: antialiased;
+  }
+  h1, h2, h3 { text-wrap: balance; margin: 0; }
+  a { color: var(--bleu); }
+  :focus-visible { outline: 2px solid var(--bleu); outline-offset: 2px; border-radius: 3px; }
+
+  /* ---- en-tête ---- */
+  .bandeau {
+    border-bottom: 1px solid var(--trait);
+    background: var(--surface);
+  }
+  .bandeau-i {
+    max-width: 1400px; margin: 0 auto; padding: 28px 24px 24px;
+    display: flex; flex-wrap: wrap; gap: 24px; align-items: flex-end;
+    justify-content: space-between;
+  }
+  .oeil {
+    font-family: var(--mono); font-size: 11px; letter-spacing: .16em;
+    text-transform: uppercase; color: var(--encre-doux); margin-bottom: 6px;
+  }
+  h1 { font-size: clamp(1.5rem, 3.4vw, 2.1rem); font-weight: 700; letter-spacing: -.02em; }
+  .sous { color: var(--encre-doux); max-width: 62ch; margin-top: 8px; }
+  .compteurs { display: flex; gap: 28px; font-variant-numeric: tabular-nums; }
+  .compteur b { display: block; font-size: 1.9rem; font-weight: 700; line-height: 1; }
+  .compteur span { font-size: 12px; color: var(--encre-doux); }
+
+  /* ---- corps ---- */
+  .page {
+    max-width: 1400px; margin: 0 auto; padding: 24px;
+    display: grid; grid-template-columns: minmax(0,1fr) 380px; gap: 24px; align-items: start;
+  }
+  @media (max-width: 1040px) { .page { grid-template-columns: minmax(0,1fr); } }
+
+  .filtres {
+    display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 18px; align-items: center;
+  }
+  .puce {
+    font: inherit; font-size: 13px; padding: 6px 13px; border-radius: 999px;
+    border: 1px solid var(--trait); background: var(--surface); color: var(--encre-doux);
+    cursor: pointer;
+  }
+  .puce[aria-pressed="true"] { background: var(--encre); color: var(--creme); border-color: var(--encre); }
+  .filtres .sep { flex: 1 }
+
+  /* ---- une fiche épisode ---- */
+  .liste { display: flex; flex-direction: column; gap: 14px; }
+  .fiche {
+    background: var(--surface); border: 1px solid var(--trait); border-radius: 12px;
+    box-shadow: var(--ombre); overflow: hidden;
+  }
+  .fiche[data-coche="1"] { border-color: var(--bleu); }
+  .fiche-tete {
+    display: flex; flex-wrap: wrap; gap: 10px; align-items: baseline;
+    padding: 12px 16px; border-bottom: 1px solid var(--trait);
+  }
+  .ident { font-family: var(--mono); font-weight: 700; font-size: 14px; }
+  .titre { font-weight: 600; }
+  .meta { font-size: 12px; color: var(--encre-doux); }
+  .etat {
+    margin-left: auto; font-size: 11px; font-weight: 700; letter-spacing: .07em;
+    text-transform: uppercase; padding: 3px 9px; border-radius: 999px;
+  }
+  .etat.ok     { background: var(--ok-fond);     color: var(--ok); }
+  .etat.decale { background: var(--alerte-fond); color: var(--alerte); }
+
+  /* la confrontation : le gag face au tutoriel, c'est le bug lui-même */
+  .duel { display: grid; grid-template-columns: 1fr 1fr; }
+  @media (max-width: 720px) { .duel { grid-template-columns: 1fr; } }
+  .volet { padding: 14px 16px; min-width: 0; }
+  .volet + .volet { border-left: 1px solid var(--trait); }
+  @media (max-width: 720px) { .volet + .volet { border-left: 0; border-top: 1px solid var(--trait); } }
+  .volet h3 {
+    font-family: var(--mono); font-size: 10px; letter-spacing: .16em; text-transform: uppercase;
+    color: var(--encre-doux); margin-bottom: 8px;
+  }
+  .champ { margin-bottom: 8px; }
+  .champ dt {
+    font-size: 10px; letter-spacing: .1em; text-transform: uppercase; color: var(--encre-doux);
+  }
+  .champ dd { margin: 1px 0 0; font-family: var(--mono); font-size: 13px; line-height: 1.5; }
+  .domaine {
+    display: inline-block; font-family: var(--mono); font-size: 11px;
+    padding: 1px 7px; border-radius: 4px; background: var(--surface-2); color: var(--encre-doux);
+  }
+
+  /* ---- les actions ---- */
+  .actions { padding: 12px 16px; border-top: 1px solid var(--trait); background: var(--surface-2); }
+  .actions > p {
+    margin: 0 0 8px; font-family: var(--mono); font-size: 10px; letter-spacing: .16em;
+    text-transform: uppercase; color: var(--encre-doux);
+  }
+  .cases { display: flex; flex-wrap: wrap; gap: 6px; }
+  .case { position: relative; }
+  .case input { position: absolute; opacity: 0; width: 0; height: 0; }
+  .case span {
+    display: inline-block; font-size: 12.5px; padding: 5px 11px; border-radius: 7px;
+    border: 1px solid var(--trait); background: var(--surface); cursor: pointer; user-select: none;
+  }
+  .case input:checked + span { background: var(--bleu-doux); border-color: var(--bleu); color: var(--bleu); font-weight: 600; }
+  .case input:focus-visible + span { outline: 2px solid var(--bleu); outline-offset: 2px; }
+  .rangee-outils { display: flex; flex-wrap: wrap; gap: 10px; align-items: center; margin-top: 10px; }
+  select, .note {
+    font: inherit; font-size: 13px; padding: 5px 9px; border-radius: 7px;
+    border: 1px solid var(--trait); background: var(--surface); color: var(--encre);
+  }
+  select { font-family: var(--mono); font-size: 12px; max-width: 100%; }
+  .note { flex: 1; min-width: 200px; }
+  .liens { display: flex; flex-wrap: wrap; gap: 14px; margin-top: 10px; font-size: 12.5px; }
+  .liens a { text-decoration: none; border-bottom: 1px solid currentColor; }
+
+  /* ---- le rail de droite ---- */
+  .rail { position: sticky; top: 24px; display: flex; flex-direction: column; gap: 12px; }
+  @media (max-width: 1040px) { .rail { position: static; } }
+  .bloc {
+    background: var(--surface); border: 1px solid var(--trait); border-radius: 12px;
+    box-shadow: var(--ombre); padding: 14px 16px;
+  }
+  .bloc h2 { font-size: 14px; font-weight: 700; margin-bottom: 4px; }
+  .bloc p.aide { font-size: 12.5px; color: var(--encre-doux); margin: 0 0 10px; }
+  textarea#prompt {
+    width: 100%; min-height: 340px; resize: vertical; font-family: var(--mono);
+    font-size: 12px; line-height: 1.5; padding: 11px; border-radius: 8px;
+    border: 1px solid var(--trait); background: var(--creme); color: var(--encre);
+  }
+  .btns { display: flex; gap: 8px; margin-top: 10px; flex-wrap: wrap; }
+  button.action {
+    font: inherit; font-size: 13px; font-weight: 600; padding: 8px 15px; border-radius: 8px;
+    border: 1px solid var(--bleu); background: var(--bleu); color: #fff; cursor: pointer;
+  }
+  button.action.creux { background: transparent; color: var(--bleu); }
+  button.action:disabled { opacity: .45; cursor: default; }
+
+  .vide { color: var(--encre-doux); font-size: 13px; padding: 30px 0; text-align: center; }
+  .pied {
+    max-width: 1400px; margin: 0 auto; padding: 8px 24px 48px;
+    font-size: 12.5px; color: var(--encre-doux);
+  }
+  @media (prefers-reduced-motion: reduce) { * { transition: none !important; animation: none !important; } }
+</style>
+<header class="bandeau">
+  <div class="bandeau-i">
+    <div>
+      <p class="oeil">FoodEatUp · contrôle de série</p>
+      <h1>Appariement des épisodes</h1>
+      <p class="sous">
+        Chaque épisode colle un plan comique sur un tutoriel logiciel. Sur une partie
+        de la série, les deux listes n'ont jamais été jointes : l'accroche promet une
+        chose, l'écran en montre une autre. Coche ce qu'il faut reprendre — le prompt
+        de correction s'écrit à droite.
+      </p>
+    </div>
+    <div class="compteurs">
+      <div class="compteur"><b id="c-total">0</b><span>épisodes montés</span></div>
+      <div class="compteur"><b id="c-decale">0</b><span>à vérifier</span></div>
+      <div class="compteur"><b id="c-select">0</b><span>retenus</span></div>
+    </div>
+  </div>
+</header>
+
+<div class="page">
+  <main>
+    <div class="filtres">
+      <button class="puce" data-f="tous" aria-pressed="true">Tous</button>
+      <button class="puce" data-f="decale" aria-pressed="false">À vérifier</button>
+      <button class="puce" data-f="ok" aria-pressed="false">Cohérents</button>
+      <button class="puce" data-f="coches" aria-pressed="false">Retenus</button>
+      <span class="sep"></span>
+      <button class="puce" data-s="0" aria-pressed="true">Toutes saisons</button>
+      <button class="puce" data-s="1" aria-pressed="false">S1</button>
+      <button class="puce" data-s="2" aria-pressed="false">S2</button>
+      <button class="puce" data-s="3" aria-pressed="false">S3</button>
+    </div>
+    <div class="liste" id="liste"></div>
+  </main>
+
+  <aside class="rail">
+    <div class="bloc">
+      <h2>Le prompt de correction</h2>
+      <p class="aide">Il se réécrit à chaque case cochée. Colle-le dans une session Claude Code sur le dépôt.</p>
+      <textarea id="prompt" readonly aria-label="Prompt de correction"></textarea>
+      <div class="btns">
+        <button class="action" id="copier" disabled>Copier le prompt</button>
+        <button class="action creux" id="vider" disabled>Tout décocher</button>
+      </div>
+    </div>
+    <div class="bloc">
+      <h2>Comment lire une fiche</h2>
+      <p class="aide">
+        À gauche, le plan comique : titre du gag, accroche incrustée à l'écran,
+        punchline dite en voix off, et les deux ou trois mots de la vignette.
+        À droite, ce que l'avatar raconte et le chapitre du tutoriel filmé.
+        Les deux doivent parler du même sujet.
+      </p>
+      <p class="aide" style="margin:0">
+        « À vérifier » est un soupçon calculé sur les mots-clés, pas un verdict :
+        un gag est absurde par nature, la machine s'y trompe. C'est l'œil qui tranche.
+      </p>
+    </div>
+  </aside>
+</div>
+
+<p class="pied" id="pied"></p>
+
+<script id="donnees" type="application/json">[{"id":"EP001","saison":1,"titre":"Le chien qui te regarde","module":"Service","chapitre":"1 - Commandes multi-canaux","accroche":"Lui aussi attend ta commande.","punchline":"Sauf que lui, il est patient. Tes clients, non.","troisMots":"COMMANDES MULTI-CANAUX","script":"Ici, toutes tes commandes arrivent au même endroit : la salle, le téléphone, le site, la livraison. Une seule file, dans l'ordre d'arrivée. Plus personne n'attend parce qu'on a oublié un ticket.","domGag":"Service","domLog":"Service","verdict":"ok","master":"https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/FoodEatUp-EP001-Prendre-une-commande","clip":"https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/Higgsfield-source-EP001-Le-chien-qui-te-regarde","driveChapitre":"1 - COMMANDES MULTI-CANAUX","driveLien":"https://drive.google.com/file/d/10GjJltEF3utZtfmwHR0qLZ8CTQr5_ioC/view","candidats":[{"id":"EP005","titre":"Le serveur qui glisse","accroche":"Trois logiciels. Deux mains."},{"id":"EP007","titre":"La mamie qui goûte","accroche":"Le seul avis client qui compte."},{"id":"EP012","titre":"Le client qui attend","accroche":"Temps d'attente : « on regarde »."},{"id":"EP018","titre":"Le serveur Baywatch","accroche":"Le rush de vingt heures."},{"id":"EP020","titre":"Le chien qui a réservé","accroche":"Lui, il a réservé."},{"id":"EP021","titre":"Chef contre imprimante","accroche":"Le vrai ennemi du service."}]},{"id":"EP002","saison":1,"titre":"La chute en skateboard","module":"Service","chapitre":"3 - Envoi direct cuisine","accroche":"Ton service du samedi soir.","punchline":"Ça finit toujours par terre.","troisMots":"ENVOI DIRECT CUISINE","script":"Tu prends la commande à table, elle part en cuisine dans la seconde. Pas de carnet, pas d'aller-retour, pas de ticket perdu entre la salle et le pass.","domGag":"Service","domLog":"Service","verdict":"ok","master":"https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/FoodEatUp-EP002-Envoi-direct-cuisine","clip":"https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/Higgsfield-source-EP002-La-chute-en-skateboard","driveChapitre":"3 - ENVOI DIRECT CUISINE","driveLien":"https://drive.google.com/file/d/1PucAO7TE28El_TCLBrAOjct2VJS4mZu2/view","candidats":[{"id":"EP001","titre":"Le chien qui te regarde","accroche":"Lui aussi attend ta commande."},{"id":"EP005","titre":"Le serveur qui glisse","accroche":"Trois logiciels. Deux mains."},{"id":"EP007","titre":"La mamie qui goûte","accroche":"Le seul avis client qui compte."},{"id":"EP012","titre":"Le client qui attend","accroche":"Temps d'attente : « on regarde »."},{"id":"EP018","titre":"Le serveur Baywatch","accroche":"Le rush de vingt heures."},{"id":"EP020","titre":"Le chien qui a réservé","accroche":"Lui, il a réservé."}]},{"id":"EP003","saison":1,"titre":"Le plat dans la piscine","module":"StockVision","chapitre":"1 - Ma carte","accroche":"Ta marge, en ce moment.","punchline":"Elle coule. On va la repêcher.","troisMots":"MA CARTE","script":"Chaque plat de ta carte a son coût matière calculé depuis tes ingrédients. Tu vois ta marge réelle, plat par plat, avant même de fixer ton prix.","domGag":"Stock","domLog":"Stock","verdict":"ok","master":"https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/FoodEatUp-EP003-Ma-carte","clip":"https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/Higgsfield-source-EP003-Le-plat-dans-la-piscine","driveChapitre":"1- Ma carte - Création et modifications de la carte du restaurant","driveLien":"https://drive.google.com/file/d/1yqhyPMj9uBq1awmqTwUhisuBJBpY5kt-/view","candidats":[{"id":"EP006","titre":"La pizza frisbee","accroche":"Ta pizza part plus vite que ton stock."},{"id":"EP009","titre":"Le pigeon voleur","accroche":"Il y a toujours quelqu'un qui prend ta marge."},{"id":"EP014","titre":"Le raton laveur","accroche":"Ton gaspillage alimentaire."},{"id":"EP017","titre":"Le ninja de la frite","accroche":"Personne ne touche à ta dernière frite."},{"id":"EP026","titre":"Le ballon qui explose","accroche":"Ton stock avant le week-end."},{"id":"EP032","titre":"La sauce trop forte","accroche":"Ta recette « au feeling »."}]},{"id":"EP005","saison":1,"titre":"Le serveur qui glisse","module":"Configuration","chapitre":"vue d'ensemble","accroche":"Trois logiciels. Deux mains.","punchline":"Un seul outil, ça change tout.","troisMots":"VUE D'ENSEMBLE","script":"Un seul paramétrage : ta carte, tes zones, tes tables, ta TVA. Tout le reste s'appuie dessus. Tu ne ressaisis jamais deux fois la même information.","domGag":"Service","domLog":"Configuration","verdict":"decale","master":"https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/FoodEatUp-EP005-Vue-d-ensemble","clip":"https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/Higgsfield-source-EP005-Le-serveur-qui-glisse","driveChapitre":"1 - Monter votre boutique","driveLien":"https://drive.google.com/file/d/1hp7mZd-tQliPUemhyIKHWMl9xUgKHwoq/view","candidats":[]},{"id":"EP006","saison":1,"titre":"La pizza frisbee","module":"StockVision","chapitre":"17 - Ajouter et modifier un mouvement","accroche":"Ta pizza part plus vite que ton stock.","punchline":"Enfin… c'était avant.","troisMots":"AJOUTER MODIFIER MOUVEMENT","script":"Tu envoies un plat, le stock bouge tout seul. Chaque sortie est tracée, avec la quantité et l'heure. Tu sais ce qu'il te reste sans compter les cartons.","domGag":"Stock","domLog":"Stock","verdict":"ok","master":"https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/FoodEatUp-EP006-Ajouter-modifier-un-mouvement","clip":"https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/Higgsfield-source-EP006-La-pizza-frisbee","driveChapitre":"17- Stock - Ajouter et modifier un mouvement","driveLien":"https://drive.google.com/file/d/1xxxr8zsy8ZvK7NCizf1F9q8W3u48Npgt/view","candidats":[{"id":"EP003","titre":"Le plat dans la piscine","accroche":"Ta marge, en ce moment."},{"id":"EP009","titre":"Le pigeon voleur","accroche":"Il y a toujours quelqu'un qui prend ta marge."},{"id":"EP014","titre":"Le raton laveur","accroche":"Ton gaspillage alimentaire."},{"id":"EP017","titre":"Le ninja de la frite","accroche":"Personne ne touche à ta dernière frite."},{"id":"EP026","titre":"Le ballon qui explose","accroche":"Ton stock avant le week-end."},{"id":"EP032","titre":"La sauce trop forte","accroche":"Ta recette « au feeling »."}]},{"id":"EP007","saison":1,"titre":"La mamie qui goûte","module":"Marketing","chapitre":"3 - Répondre aux avis","accroche":"Le seul avis client qui compte.","punchline":"Les quatre cents autres, on s'en occupe.","troisMots":"RÉPONDRE AUX AVIS","script":"Tes avis Google remontent ici. Tu réponds depuis FoodEatUp, l'IA te propose une réponse dans ton ton, tu valides. Le client voit que tu l'as lu.","domGag":"Service","domLog":"Marketing","verdict":"decale","master":"https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/FoodEatUp-EP007-Repondre-aux-avis","clip":"https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/Higgsfield-source-EP007-La-mamie-qui-goute","driveChapitre":"3 - RÉPONDRE AUX AVIS","driveLien":"https://drive.google.com/file/d/1CMKvqIypwbr8KHTj0dCs_w06sjkaQKV4/view","candidats":[{"id":"EP025","titre":"Le mixeur sans couvercle","accroche":"Quand tu lances une promo sans données."},{"id":"EP088","titre":"Une étoile","accroche":"Un avis. Publié il y a six jours."}]},{"id":"EP010","saison":1,"titre":"Le flambage raté","module":"PrediBot","chapitre":"1 - Lire ses prévisions","accroche":"Toi, devant ta facture logicielle.","punchline":"Mille euros par mois. Pour dix outils qui ne se parlent pas.","troisMots":"LIRE SES PRÉVISIONS","script":"Un écran, le matin : ton chiffre d'affaires prévu, ta fréquentation, tes points de tension. C'est ton point du jour, sans ouvrir dix onglets.","domGag":"Compta","domLog":"Compta","verdict":"ok","master":"https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/FoodEatUp-EP010-Lire-ses-previsions","clip":"https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/Higgsfield-source-EP010-Le-flambage-rate","driveChapitre":"1 - LIRE SES PRÉVISIONS","driveLien":"https://drive.google.com/file/d/1MWkfZ-OZ_qv2z6QD9VPwabO5XnGd5UaB/view","candidats":[{"id":"EP016","titre":"Le geyser à café","accroche":"Tes coûts, ce trimestre."},{"id":"EP019","titre":"Le burger qui rebondit","accroche":"Ton chiffre d'affaires, sans outil."},{"id":"EP022","titre":"La facture qui fait pleurer","accroche":"Mille euros par mois."},{"id":"EP070","titre":"La dalle propre","accroche":"C'est fait."},{"id":"EP077","titre":"Le devis sur le set de table","accroche":"Ton devis pour le mariage de samedi."},{"id":"EP078","titre":"La boîte à chaussures","accroche":"Ta comptabilité annuelle."}]},{"id":"EP013","saison":1,"titre":"L'avalanche de notifications","module":"PrediBot","chapitre":"3 - Parler à PrediBot","accroche":"Dix logiciels. Dix notifications.","punchline":"Un seul, ça suffisait.","troisMots":"PARLER À PREDIBOT","script":"Tu poses ta question en français : combien j'ai fait hier, qu'est-ce qui manque demain. PrediBot lit tes vraies données et te répond. Une seule interface, pas dix.","domGag":"IA","domLog":"IA","verdict":"ok","master":"https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/FoodEatUp-EP013-Parler-a-PrediBot","clip":"https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/Higgsfield-source-EP013-L-avalanche-de-notifications","driveChapitre":"3 - PARLER À PREDIBOT","driveLien":"https://drive.google.com/file/d/1nuFxXTOCXeHKtSbJBScCH0O3khJxTiB4/view","candidats":[]},{"id":"EP014","saison":1,"titre":"Le raton laveur","module":"StockVision","chapitre":"16 - Mouvements de stock","accroche":"Ton gaspillage alimentaire.","punchline":"Lui au moins, il sait ce qu'il y a en stock.","troisMots":"MOUVEMENTS DE STOCK","script":"Chaque entrée, chaque sortie, chaque perte est enregistrée. Tu vois ce qui part sans être vendu. Le gaspillage devient une ligne, donc un problème réglable.","domGag":"Stock","domLog":"Stock","verdict":"ok","master":"https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/FoodEatUp-EP014-Mouvements-de-stock","clip":"https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/Higgsfield-source-EP014-Le-raton-laveur","driveChapitre":"16- Stock - Mouvements de stock","driveLien":"https://drive.google.com/file/d/124mIM7NudoQy5wun_rlSZ6MCrJ2wNykL/view","candidats":[{"id":"EP003","titre":"Le plat dans la piscine","accroche":"Ta marge, en ce moment."},{"id":"EP006","titre":"La pizza frisbee","accroche":"Ta pizza part plus vite que ton stock."},{"id":"EP009","titre":"Le pigeon voleur","accroche":"Il y a toujours quelqu'un qui prend ta marge."},{"id":"EP017","titre":"Le ninja de la frite","accroche":"Personne ne touche à ta dernière frite."},{"id":"EP026","titre":"Le ballon qui explose","accroche":"Ton stock avant le week-end."},{"id":"EP032","titre":"La sauce trop forte","accroche":"Ta recette « au feeling »."}]},{"id":"EP015","saison":1,"titre":"La tour d'assiettes","module":"Configuration","chapitre":"référentiels","accroche":"Ta gestion actuelle.","punchline":"Une pièce bouge, tout s'écroule.","troisMots":"RÉFÉRENTIELS","script":"Tes catégories, ta TVA, tes zones, tes équipements : tout est posé une fois, proprement. Quand une pièce bouge, le reste ne s'écroule pas.","domGag":"Configuration","domLog":"Configuration","verdict":"ok","master":"https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/FoodEatUp-EP015-Referentiels","clip":"https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/Higgsfield-source-EP015-La-tour-d-assiettes","driveChapitre":"7 - Vos catégories","driveLien":"https://drive.google.com/file/d/17ZDwHrTaTvQmiCmTYBwZnnJo_OLrXzyo/view","candidats":[]},{"id":"EP016","saison":1,"titre":"Le geyser à café","module":"Comptabilité","chapitre":"dépenses","accroche":"Tes coûts, ce trimestre.","punchline":"On va refermer le robinet.","troisMots":"DÉPENSES","script":"Tu enregistres tes achats fournisseurs avec le détail des lignes. Tes dépenses du mois s'additionnent toutes seules, en face de ton chiffre d'affaires.","domGag":"Compta","domLog":"Compta","verdict":"ok","master":"https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/FoodEatUp-EP016-Depenses-et-livraisons","clip":"https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/Higgsfield-source-EP016-Le-geyser-a-cafe","driveChapitre":"8- Archivage des dépenses","driveLien":"https://drive.google.com/file/d/13gsBIjozDhLKJBi0uOwqIE3ShA_V7d3R/view","candidats":[{"id":"EP010","titre":"Le flambage raté","accroche":"Toi, devant ta facture logicielle."},{"id":"EP019","titre":"Le burger qui rebondit","accroche":"Ton chiffre d'affaires, sans outil."},{"id":"EP022","titre":"La facture qui fait pleurer","accroche":"Mille euros par mois."},{"id":"EP070","titre":"La dalle propre","accroche":"C'est fait."},{"id":"EP077","titre":"Le devis sur le set de table","accroche":"Ton devis pour le mariage de samedi."},{"id":"EP078","titre":"La boîte à chaussures","accroche":"Ta comptabilité annuelle."}]},{"id":"EP017","saison":1,"titre":"Le ninja de la frite","module":"StockVision","chapitre":"19 - Création d'un rapport","accroche":"Personne ne touche à ta dernière frite.","punchline":"Ni à ta marge.","troisMots":"CRÉATION D'UN RAPPORT","script":"Tu génères ton rapport par module en un clic : ventes, stock, production. L'historique est gardé. Tu compares ce mois-ci avec le mois dernier, pas avec ton souvenir.","domGag":"Stock","domLog":"Stock","verdict":"ok","master":"https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/FoodEatUp-EP017-Creation-d-un-rapport","clip":"https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/Higgsfield-source-EP017-Le-ninja-de-la-frite","driveChapitre":"19- Statistiques - Création d'un rapport","driveLien":"https://drive.google.com/file/d/1yOgpFr18I9GyIkFegEj1MJNU_ksMtRLy/view","candidats":[{"id":"EP003","titre":"Le plat dans la piscine","accroche":"Ta marge, en ce moment."},{"id":"EP006","titre":"La pizza frisbee","accroche":"Ta pizza part plus vite que ton stock."},{"id":"EP009","titre":"Le pigeon voleur","accroche":"Il y a toujours quelqu'un qui prend ta marge."},{"id":"EP014","titre":"Le raton laveur","accroche":"Ton gaspillage alimentaire."},{"id":"EP026","titre":"Le ballon qui explose","accroche":"Ton stock avant le week-end."},{"id":"EP032","titre":"La sauce trop forte","accroche":"Ta recette « au feeling »."}]},{"id":"EP018","saison":1,"titre":"Le serveur Baywatch","module":"Service","chapitre":"2 - Site, vocal et QR code","accroche":"Le rush de vingt heures.","punchline":"Sauve ton service, pas ton dos.","troisMots":"SITE","script":"Pendant le rush, tes clients commandent seuls : par QR à table, par le site, par l'agent vocal. Ton équipe sert, elle ne court plus.","domGag":"Service","domLog":"Service","verdict":"ok","master":"https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/FoodEatUp-EP018-Site-vocal-et-QR-code","clip":"https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/Higgsfield-source-EP018-Le-serveur-Baywatch","driveChapitre":"2 - SITE, VOCAL & QR CODE","driveLien":"https://drive.google.com/file/d/1jSK_Zv7MtSgTqwGaV7WeffGjiZ0g4MWk/view","candidats":[{"id":"EP001","titre":"Le chien qui te regarde","accroche":"Lui aussi attend ta commande."},{"id":"EP005","titre":"Le serveur qui glisse","accroche":"Trois logiciels. Deux mains."},{"id":"EP007","titre":"La mamie qui goûte","accroche":"Le seul avis client qui compte."},{"id":"EP012","titre":"Le client qui attend","accroche":"Temps d'attente : « on regarde »."},{"id":"EP020","titre":"Le chien qui a réservé","accroche":"Lui, il a réservé."},{"id":"EP021","titre":"Chef contre imprimante","accroche":"Le vrai ennemi du service."}]},{"id":"EP019","saison":1,"titre":"Le burger qui rebondit","module":"StockVision","chapitre":"3 - Prédictions des commandes","accroche":"Ton chiffre d'affaires, sans outil.","punchline":"Ça rebondit rarement tout seul.","troisMots":"PRÉDICTIONS DES COMMANDES","script":"FoodEatUp regarde tes ventes passées et te dit quoi produire demain. Ton chiffre d'affaires ne dépend plus de ton intuition du lundi matin.","domGag":"Service","domLog":"Service","verdict":"ok","master":"https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/FoodEatUp-EP019-Predictions-des-commandes","clip":"https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/Higgsfield-source-EP019-Le-burger-qui-rebondit","driveChapitre":"3- Ma carte - Prédictions des commandes","driveLien":"https://drive.google.com/file/d/14GntP3F4hhloVyYBDJrPCj55Ny1gvDx9/view","candidats":[{"id":"EP001","titre":"Le chien qui te regarde","accroche":"Lui aussi attend ta commande."},{"id":"EP005","titre":"Le serveur qui glisse","accroche":"Trois logiciels. Deux mains."},{"id":"EP007","titre":"La mamie qui goûte","accroche":"Le seul avis client qui compte."},{"id":"EP012","titre":"Le client qui attend","accroche":"Temps d'attente : « on regarde »."},{"id":"EP018","titre":"Le serveur Baywatch","accroche":"Le rush de vingt heures."},{"id":"EP020","titre":"Le chien qui a réservé","accroche":"Lui, il a réservé."}]},{"id":"EP020","saison":1,"titre":"Le chien qui a réservé","module":"Réservation","chapitre":"2 - Ajouter une réservation","accroche":"Lui, il a réservé.","punchline":"Tes vrais clients aussi devraient pouvoir.","troisMots":"AJOUTER UNE RÉSERVATION","script":"Tu ajoutes une réservation en dix secondes, la table libre est proposée automatiquement. Et tes clients peuvent le faire eux-mêmes, depuis ton site.","domGag":"Service","domLog":"Service","verdict":"ok","master":"https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/FoodEatUp-EP020-Ajouter-une-reservation","clip":"https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/Higgsfield-source-EP020-Le-chien-qui-a-reserve","driveChapitre":"2 - AJOUTER UNE RÉSERVATION","driveLien":"https://drive.google.com/file/d/1ITy-Ia2Q3FSeKSRRd4bWEFw4eDlzFZ6q/view","candidats":[{"id":"EP001","titre":"Le chien qui te regarde","accroche":"Lui aussi attend ta commande."},{"id":"EP005","titre":"Le serveur qui glisse","accroche":"Trois logiciels. Deux mains."},{"id":"EP007","titre":"La mamie qui goûte","accroche":"Le seul avis client qui compte."},{"id":"EP012","titre":"Le client qui attend","accroche":"Temps d'attente : « on regarde »."},{"id":"EP018","titre":"Le serveur Baywatch","accroche":"Le rush de vingt heures."},{"id":"EP021","titre":"Chef contre imprimante","accroche":"Le vrai ennemi du service."}]},{"id":"EP021","saison":1,"titre":"Chef contre imprimante","module":"KDS","chapitre":"1 - Créer tes postes KDS","accroche":"Le vrai ennemi du service.","punchline":"Un KDS, et le combat s'arrête.","troisMots":"CRÉER TES POSTES","script":"Tu crées tes postes : chaud, froid, dessert. Chaque plat part au bon écran. Plus d'imprimante à secouer au milieu du service.","domGag":"Équipe","domLog":"Équipe","verdict":"ok","master":"https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/FoodEatUp-EP021-Poste-de-travail-KDS","clip":"https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/Higgsfield-source-EP021-Chef-contre-imprimante","driveChapitre":"1 - CRÉER TES POSTES KDS","driveLien":"https://drive.google.com/file/d/1Q25eSBcjIuq1XkHnJkFN_QJyK23o1GVg/view","candidats":[{"id":"EP037","titre":"Le dormeur debout","accroche":"Fermeture. Troisième soir d'affilée."},{"id":"EP041","titre":"Le poulet fugueur","accroche":"Ton contrôle des portions."},{"id":"EP061","titre":"Le badge introuvable","accroche":"Ton système de pointage."},{"id":"EP062","titre":"La photo de pointage","accroche":"Je te jure, j'étais là à 8 h."},{"id":"EP063","titre":"Le post-it perdu","accroche":"Ta demande de congé."},{"id":"EP064","titre":"Le planning au marqueur","accroche":"Le planning de la semaine."}]},{"id":"EP022","saison":1,"titre":"La facture qui fait pleurer","module":"PrediBot","chapitre":"2 - Marketplace de prompts","accroche":"Mille euros par mois.","punchline":"Pour dix logiciels qui ne se parlent même pas.","troisMots":"MARKETPLACE DE PROMPTS","script":"Tout est déjà là : caisse, stock, planning, marketing, HACCP. Un seul abonnement, une seule base de données. Tes outils arrêtent de s'ignorer.","domGag":"IA","domLog":"IA","verdict":"ok","master":"https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/FoodEatUp-EP022-Marketplace-de-prompts","clip":"https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/Higgsfield-source-EP022-La-facture-qui-fait-pleurer","driveChapitre":"2 - MARKETPLACE DE PROMPTS","driveLien":"https://drive.google.com/file/d/16kN9JwGuVugkCtjQ93OObZ2tAlmsbgZl/view","candidats":[]},{"id":"EP023","saison":1,"titre":"L'aspirateur robot","module":"Marketing","chapitre":"24 - Calendrier IA avec Iris","accroche":"Ton automatisation actuelle.","punchline":"Automatiser, oui. Mais bien.","troisMots":"CALENDRIER IA AVEC","script":"Iris regarde ton exploitation et te propose quoi publier, et pourquoi. Tu valides ou tu refuses. L'automatisation te sert, elle ne t'échappe pas.","domGag":null,"domLog":"Marketing","verdict":"decale","master":"https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/FoodEatUp-EP023-Calendrier-IA-avec-Iris","clip":"https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/Higgsfield-source-EP023-L-aspirateur-robot","driveChapitre":"24 - CALENDRIER IA AVEC IRIS","driveLien":"https://drive.google.com/file/d/1NaTIjzXl8NU1dwX3Xrxl0DrhKIbVy34F/view","candidats":[{"id":"EP025","titre":"Le mixeur sans couvercle","accroche":"Quand tu lances une promo sans données."},{"id":"EP088","titre":"Une étoile","accroche":"Un avis. Publié il y a six jours."}]},{"id":"EP024","saison":1,"titre":"La mouette braqueuse","module":"Mon Site","chapitre":"5 - Créer un site par IA","accroche":"Encore une commission en moins.","punchline":"Récupère tes commandes en direct.","troisMots":"CRÉER SITE PAR","script":"Ton site de commande est créé par l'IA depuis ta carte. Tes clients commandent en direct, chez toi. Zéro commission sur ces commandes-là.","domGag":"Service","domLog":"Service","verdict":"ok","master":"https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/FoodEatUp-EP024-Creer-son-site-par-IA","clip":"https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/Higgsfield-source-EP024-La-mouette-braqueuse","driveChapitre":"5 - CRÉER UN SITE PAR IA","driveLien":"https://drive.google.com/file/d/1MEMdJJMq2MhQ6H-dU5Nb5ls8ifoqM3U4/view","candidats":[{"id":"EP001","titre":"Le chien qui te regarde","accroche":"Lui aussi attend ta commande."},{"id":"EP005","titre":"Le serveur qui glisse","accroche":"Trois logiciels. Deux mains."},{"id":"EP007","titre":"La mamie qui goûte","accroche":"Le seul avis client qui compte."},{"id":"EP012","titre":"Le client qui attend","accroche":"Temps d'attente : « on regarde »."},{"id":"EP018","titre":"Le serveur Baywatch","accroche":"Le rush de vingt heures."},{"id":"EP020","titre":"Le chien qui a réservé","accroche":"Lui, il a réservé."}]},{"id":"EP025","saison":1,"titre":"Le mixeur sans couvercle","module":"Marketing","chapitre":"6 - Campagne 100 % IA","accroche":"Quand tu lances une promo sans données.","punchline":"Ça éclabousse. Et rarement toi.","troisMots":"CAMPAGNE 100 %","script":"Tu ne lances plus une promo au hasard. FoodEatUp te propose la campagne depuis tes vraies données clients : qui cibler, avec quelle offre, quel jour.","domGag":"Marketing","domLog":"Marketing","verdict":"ok","master":"https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/FoodEatUp-EP025-Campagne-100-pourcent-IA","clip":"https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/Higgsfield-source-EP025-Le-mixeur-sans-couvercle","driveChapitre":"6 - CAMPAGNE 100% IA","driveLien":"https://drive.google.com/file/d/1awOr8pckNt0S-V2iyhlnBSS171wM0fkF/view","candidats":[{"id":"EP088","titre":"Une étoile","accroche":"Un avis. Publié il y a six jours."}]},{"id":"EP026","saison":1,"titre":"Le ballon qui explose","module":"StockVision","chapitre":"5 - Envoyer sa liste de courses au fournisseur","accroche":"Ton stock avant le week-end.","punchline":"Prévois, au lieu de subir.","troisMots":"ENVOYER LISTE COURSES","script":"Ta liste de courses se construit depuis ta production prévue. Tu l'envoies au fournisseur depuis l'écran. Le week-end se prépare le mercredi.","domGag":"Stock","domLog":"Stock","verdict":"ok","master":"https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/FoodEatUp-EP026-Liste-de-courses-fournisseur","clip":"https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/Higgsfield-source-EP026-Le-ballon-qui-explose","driveChapitre":"5- Liste des courses - Commander au fournisseur","driveLien":"https://drive.google.com/file/d/1biVi8MCCRbLYAEZHfNd-Gw-kAcW8jhiL/view","candidats":[{"id":"EP003","titre":"Le plat dans la piscine","accroche":"Ta marge, en ce moment."},{"id":"EP006","titre":"La pizza frisbee","accroche":"Ta pizza part plus vite que ton stock."},{"id":"EP009","titre":"Le pigeon voleur","accroche":"Il y a toujours quelqu'un qui prend ta marge."},{"id":"EP014","titre":"Le raton laveur","accroche":"Ton gaspillage alimentaire."},{"id":"EP017","titre":"Le ninja de la frite","accroche":"Personne ne touche à ta dernière frite."},{"id":"EP032","titre":"La sauce trop forte","accroche":"Ta recette « au feeling »."}]},{"id":"EP029","saison":1,"titre":"Les douze assiettes","module":"PrediBot","chapitre":"1 - Lire ses prévisions","accroche":"Toi, gérant, en 2026.","punchline":"Personne ne devrait travailler comme ça.","troisMots":"LIRE SES PRÉVISIONS","script":"Le brief du jour te dit ce qui compte avant que ça te tombe dessus : les réservations, les productions, les alertes. Tu diriges au lieu de courir.","domGag":"Compta","domLog":"Stock","verdict":"decale","master":"https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/FoodEatUp-EP029-Lire-ses-previsions","clip":"https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/Higgsfield-source-EP029-Les-douze-assiettes","driveChapitre":"1 - LIRE SES PRÉVISIONS","driveLien":"https://drive.google.com/file/d/1MWkfZ-OZ_qv2z6QD9VPwabO5XnGd5UaB/view","candidats":[{"id":"EP003","titre":"Le plat dans la piscine","accroche":"Ta marge, en ce moment."},{"id":"EP006","titre":"La pizza frisbee","accroche":"Ta pizza part plus vite que ton stock."},{"id":"EP009","titre":"Le pigeon voleur","accroche":"Il y a toujours quelqu'un qui prend ta marge."},{"id":"EP014","titre":"Le raton laveur","accroche":"Ton gaspillage alimentaire."},{"id":"EP017","titre":"Le ninja de la frite","accroche":"Personne ne touche à ta dernière frite."},{"id":"EP026","titre":"Le ballon qui explose","accroche":"Ton stock avant le week-end."}]},{"id":"EP030","saison":1,"titre":"Le pingouin en cuisine","module":"Configuration","chapitre":"Academy","accroche":"Le nouveau, jour 1.","punchline":"Forme-le en un clic avec l'Académy.","troisMots":"ACADEMY","script":"Le nouveau se forme tout seul : chaque module a ses vidéos, dans l'ordre. Tu ne réexpliques plus la caisse à chaque embauche.","domGag":"Service","domLog":"Configuration","verdict":"decale","master":"https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/FoodEatUp-EP030-Academy","clip":"https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/Higgsfield-source-EP030-Le-pingouin-en-cuisine","driveChapitre":null,"driveLien":null,"candidats":[]},{"id":"EP031","saison":2,"titre":"L'avalanche de tupperware","module":"HACCP","chapitre":"étiquettes DLC","accroche":"C'est quoi, ça ?","punchline":"Sans DLC tracées, personne ne sait.","troisMots":"ÉTIQUETTES DLC","script":"Tu crées ton étiquette DLC en trois secondes, avec le produit, la date et l'agent. Plus personne n'ouvre un bac en se demandant ce que c'est.","domGag":"HACCP","domLog":"HACCP","verdict":"ok","master":"https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/FoodEatUp-EP031-Etiquettes-de-production","clip":"https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/Higgsfield-source-EP031-L-avalanche-de-tupperware","driveChapitre":"15-Créer les étiquettes de production","driveLien":"https://drive.google.com/file/d/1Cb7c55HN3pKh7zD7LlozCdVIzl85ux6M/view","candidats":[{"id":"EP045","titre":"La chambre froide","accroche":"Personne ne sait où tu es."},{"id":"EP067","titre":"Le thermomètre humain","accroche":"Ton relevé de température."},{"id":"EP068","titre":"Le second avis","accroche":"Le test scientifique du nez."},{"id":"EP069","titre":"Le livreur fantôme","accroche":"Tu as vérifié la livraison ?"},{"id":"EP072","titre":"Le classeur","accroche":"Contrôle sanitaire. Ce matin."}]},{"id":"EP032","saison":2,"titre":"La sauce trop forte","module":"StockVision","chapitre":"1 - Ma carte, fiche recette","accroche":"Ta recette « au feeling ».","punchline":"Une fiche technique, et c'est pareil tous les jours.","troisMots":"MA CARTE","script":"Ta recette est enregistrée : ingrédients, quantités, étapes. Le plat sort pareil que ce soit toi ou ton commis. Et son coût est calculé.","domGag":"Stock","domLog":"Stock","verdict":"ok","master":"https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/FoodEatUp-EP032-Ma-carte-fiche-recette","clip":"https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/Higgsfield-source-EP032-La-sauce-trop-forte","driveChapitre":"1- Ma carte - Création et modifications de la carte du restaurant","driveLien":"https://drive.google.com/file/d/1yqhyPMj9uBq1awmqTwUhisuBJBpY5kt-/view","candidats":[{"id":"EP003","titre":"Le plat dans la piscine","accroche":"Ta marge, en ce moment."},{"id":"EP006","titre":"La pizza frisbee","accroche":"Ta pizza part plus vite que ton stock."},{"id":"EP009","titre":"Le pigeon voleur","accroche":"Il y a toujours quelqu'un qui prend ta marge."},{"id":"EP014","titre":"Le raton laveur","accroche":"Ton gaspillage alimentaire."},{"id":"EP017","titre":"Le ninja de la frite","accroche":"Personne ne touche à ta dernière frite."},{"id":"EP026","titre":"Le ballon qui explose","accroche":"Ton stock avant le week-end."}]},{"id":"EP033","saison":2,"titre":"Le rôti disparu","module":"StockVision","chapitre":"16 - Mouvements de stock","accroche":"Tu as tout préparé. Presque.","punchline":"Ce qui n'est pas suivi finit par disparaître.","troisMots":"MOUVEMENTS DE STOCK","script":"Ce qui n'est pas suivi disparaît. Ici chaque produit a son niveau, son seuil et son historique. Tu vois le trou avant le service, pas après.","domGag":"Stock","domLog":"Stock","verdict":"ok","master":"https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/FoodEatUp-EP033-Mouvements-de-stock","clip":"https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/Higgsfield-source-EP033-Le-roti-disparu","driveChapitre":"16- Stock - Mouvements de stock","driveLien":"https://drive.google.com/file/d/124mIM7NudoQy5wun_rlSZ6MCrJ2wNykL/view","candidats":[{"id":"EP003","titre":"Le plat dans la piscine","accroche":"Ta marge, en ce moment."},{"id":"EP006","titre":"La pizza frisbee","accroche":"Ta pizza part plus vite que ton stock."},{"id":"EP009","titre":"Le pigeon voleur","accroche":"Il y a toujours quelqu'un qui prend ta marge."},{"id":"EP014","titre":"Le raton laveur","accroche":"Ton gaspillage alimentaire."},{"id":"EP017","titre":"Le ninja de la frite","accroche":"Personne ne touche à ta dernière frite."},{"id":"EP026","titre":"Le ballon qui explose","accroche":"Ton stock avant le week-end."}]},{"id":"EP034","saison":2,"titre":"Le bouchon rebelle","module":"Configuration","chapitre":"process","accroche":"Chaque service, une improvisation.","punchline":"Ça marche. Jusqu'au jour où ça ne marche plus.","troisMots":"PROCESS","script":"Tes procédures sont dans l'outil, pas dans ta tête. Le service ne dépend plus de qui est là ce soir.","domGag":"Configuration","domLog":"Configuration","verdict":"ok","master":"https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/FoodEatUp-EP034-Procedures-de-service","clip":"https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/Higgsfield-source-EP034-Le-bouchon-rebelle","driveChapitre":null,"driveLien":null,"candidats":[]},{"id":"EP035","saison":2,"titre":"Le parasol fugitif","module":"PrediBot","chapitre":"1 - Lire ses prévisions","accroche":"Ta terrasse, un jour de vent.","punchline":"Certaines choses se prévoient.","troisMots":"LIRE SES PRÉVISIONS","script":"Prévisions de fréquentation, météo, événements du quartier : PrediBot te dit à quoi ressemble ton service avant qu'il commence.","domGag":"Compta","domLog":"Compta","verdict":"ok","master":"https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/FoodEatUp-EP035-Lire-ses-previsions","clip":"https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/Higgsfield-source-EP035-Le-parasol-fugitif","driveChapitre":"1 - LIRE SES PRÉVISIONS","driveLien":"https://drive.google.com/file/d/1MWkfZ-OZ_qv2z6QD9VPwabO5XnGd5UaB/view","candidats":[{"id":"EP010","titre":"Le flambage raté","accroche":"Toi, devant ta facture logicielle."},{"id":"EP016","titre":"Le geyser à café","accroche":"Tes coûts, ce trimestre."},{"id":"EP019","titre":"Le burger qui rebondit","accroche":"Ton chiffre d'affaires, sans outil."},{"id":"EP022","titre":"La facture qui fait pleurer","accroche":"Mille euros par mois."},{"id":"EP070","titre":"La dalle propre","accroche":"C'est fait."},{"id":"EP077","titre":"Le devis sur le set de table","accroche":"Ton devis pour le mariage de samedi."}]},{"id":"EP036","saison":2,"titre":"L'addition","module":"PrediBot","chapitre":"2 - Un seul abonnement","accroche":"Toi, devant tes abonnements.","punchline":"Additionne-les. Vraiment.","troisMots":"UN SEUL ABONNEMENT","script":"Additionne tes abonnements actuels. Ici, la caisse, le stock, le planning, la compta et le marketing sont dans le même outil, sur la même base.","domGag":"Service","domLog":"Équipe","verdict":"decale","master":"https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/FoodEatUp-EP036-Un-seul-abonnement","clip":"https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/Higgsfield-source-EP036-L-addition","driveChapitre":"2 - MARKETPLACE DE PROMPTS","driveLien":"https://drive.google.com/file/d/16kN9JwGuVugkCtjQ93OObZ2tAlmsbgZl/view","candidats":[{"id":"EP037","titre":"Le dormeur debout","accroche":"Fermeture. Troisième soir d'affilée."},{"id":"EP041","titre":"Le poulet fugueur","accroche":"Ton contrôle des portions."},{"id":"EP061","titre":"Le badge introuvable","accroche":"Ton système de pointage."},{"id":"EP062","titre":"La photo de pointage","accroche":"Je te jure, j'étais là à 8 h."},{"id":"EP063","titre":"Le post-it perdu","accroche":"Ta demande de congé."},{"id":"EP064","titre":"Le planning au marqueur","accroche":"Le planning de la semaine."}]},{"id":"EP037","saison":2,"titre":"Le dormeur debout","module":"Équipe & Planning","chapitre":"créer un shift","accroche":"Fermeture. Troisième soir d'affilée.","punchline":"Un planning bien fait, ça se voit sur les visages.","troisMots":"CRÉER UN SHIFT","script":"Tu construis le planning de la semaine par glisser-déposer, avec le coût qui s'affiche en direct. Tes équipes savent, et toi aussi.","domGag":"Équipe","domLog":"Équipe","verdict":"ok","master":"https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/FoodEatUp-EP037-Planning-par-employe-ou-par-poste","clip":"https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/Higgsfield-source-EP037-Le-dormeur-debout","driveChapitre":"6-Planning par employé ou par poste","driveLien":"https://drive.google.com/file/d/174AfDA9zywpeMof070Mc33_doWgDcsp5/view","candidats":[{"id":"EP041","titre":"Le poulet fugueur","accroche":"Ton contrôle des portions."},{"id":"EP061","titre":"Le badge introuvable","accroche":"Ton système de pointage."},{"id":"EP062","titre":"La photo de pointage","accroche":"Je te jure, j'étais là à 8 h."},{"id":"EP063","titre":"Le post-it perdu","accroche":"Ta demande de congé."},{"id":"EP064","titre":"Le planning au marqueur","accroche":"Le planning de la semaine."},{"id":"EP065","titre":"Le stagiaire au bureau","accroche":"Qui a accès à quoi ?"}]},{"id":"EP038","saison":2,"titre":"Le chariot fou","module":"StockVision","chapitre":"4 - Ma liste de courses","accroche":"Le réappro du lundi.","punchline":"Commander à l'instinct, ça finit toujours en course.","troisMots":"MA LISTE COURSES","script":"Ta commande fournisseur se construit depuis tes stocks bas et ta production prévue. Tu ne commandes plus à l'instinct dans les rayons.","domGag":"Stock","domLog":"Stock","verdict":"ok","master":"https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/FoodEatUp-EP038-Ma-liste-de-courses","clip":"https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/Higgsfield-source-EP038-Le-chariot-fou","driveChapitre":"4- Liste des courses - Ajouter, modifier","driveLien":"https://drive.google.com/file/d/17wdt0v2xgwuoollWJSO7QcDMexXMCK9H/view","candidats":[{"id":"EP003","titre":"Le plat dans la piscine","accroche":"Ta marge, en ce moment."},{"id":"EP006","titre":"La pizza frisbee","accroche":"Ta pizza part plus vite que ton stock."},{"id":"EP009","titre":"Le pigeon voleur","accroche":"Il y a toujours quelqu'un qui prend ta marge."},{"id":"EP014","titre":"Le raton laveur","accroche":"Ton gaspillage alimentaire."},{"id":"EP017","titre":"Le ninja de la frite","accroche":"Personne ne touche à ta dernière frite."},{"id":"EP026","titre":"Le ballon qui explose","accroche":"Ton stock avant le week-end."}]},{"id":"EP039","saison":2,"titre":"Le ballon dans la soupe","module":"Réservation","chapitre":"3 - Gérer et no-shows","accroche":"L'imprévu du service.","punchline":"Il y en aura d'autres. Autant être prêt.","troisMots":"GÉRER ET NO-SHOWS","script":"L'imprévu, tu ne l'évites pas. Mais tu vois en direct l'état de ta salle, tes retards et tes annulations, et tu réattribues en un geste.","domGag":"Service","domLog":"Service","verdict":"ok","master":"https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/FoodEatUp-EP039-Gerer-et-no-shows","clip":"https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/Higgsfield-source-EP039-Le-ballon-dans-la-soupe","driveChapitre":"3 - GÉRER & NO-SHOWS","driveLien":"https://drive.google.com/file/d/1DZKefLYV1_F9_uL-sJ79fb5srfGnROBp/view","candidats":[{"id":"EP001","titre":"Le chien qui te regarde","accroche":"Lui aussi attend ta commande."},{"id":"EP005","titre":"Le serveur qui glisse","accroche":"Trois logiciels. Deux mains."},{"id":"EP007","titre":"La mamie qui goûte","accroche":"Le seul avis client qui compte."},{"id":"EP012","titre":"Le client qui attend","accroche":"Temps d'attente : « on regarde »."},{"id":"EP018","titre":"Le serveur Baywatch","accroche":"Le rush de vingt heures."},{"id":"EP020","titre":"Le chien qui a réservé","accroche":"Lui, il a réservé."}]},{"id":"EP040","saison":2,"titre":"La chèvre au potager","module":"StockVision","chapitre":"17 - Ajouter un mouvement","accroche":"Ton stock de basilic.","punchline":"Ce qui n'est pas compté disparaît toujours.","troisMots":"AJOUTER UN MOUVEMENT","script":"Tu comptes une fois, l'outil compte ensuite. Chaque sortie d'ingrédient est déduite de ton stock, plat par plat.","domGag":"Stock","domLog":"Stock","verdict":"ok","master":"https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/FoodEatUp-EP040-Ajouter-un-mouvement","clip":"https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/Higgsfield-source-EP040-La-chevre-au-potager","driveChapitre":"17- Stock - Ajouter et modifier un mouvement","driveLien":"https://drive.google.com/file/d/1xxxr8zsy8ZvK7NCizf1F9q8W3u48Npgt/view","candidats":[{"id":"EP003","titre":"Le plat dans la piscine","accroche":"Ta marge, en ce moment."},{"id":"EP006","titre":"La pizza frisbee","accroche":"Ta pizza part plus vite que ton stock."},{"id":"EP009","titre":"Le pigeon voleur","accroche":"Il y a toujours quelqu'un qui prend ta marge."},{"id":"EP014","titre":"Le raton laveur","accroche":"Ton gaspillage alimentaire."},{"id":"EP017","titre":"Le ninja de la frite","accroche":"Personne ne touche à ta dernière frite."},{"id":"EP026","titre":"Le ballon qui explose","accroche":"Ton stock avant le week-end."}]},{"id":"EP041","saison":2,"titre":"Le poulet fugueur","module":"StockVision","chapitre":"15 - Sortie des ingrédients de la production","accroche":"Ton contrôle des portions.","punchline":"Ce qui part au sol, tu le paies quand même.","troisMots":"SORTIE INGRÉDIENTS PRODUCTION","script":"La production sort exactement les quantités prévues de ton stock. Ce qui tombe au sol, tu le vois dans l'écart. Et ce qui se voit se corrige.","domGag":"Stock","domLog":"Stock","verdict":"ok","master":"https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/FoodEatUp-EP041-Sortie-des-ingredients-de-la-production","clip":"https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/Higgsfield-source-EP041-Le-poulet-fugueur","driveChapitre":"15- Production - Sortie des ingrédients","driveLien":"https://drive.google.com/file/d/15a_HkRxFA6AobiCgyHhXpl9sCM4mQdiC/view","candidats":[{"id":"EP003","titre":"Le plat dans la piscine","accroche":"Ta marge, en ce moment."},{"id":"EP006","titre":"La pizza frisbee","accroche":"Ta pizza part plus vite que ton stock."},{"id":"EP009","titre":"Le pigeon voleur","accroche":"Il y a toujours quelqu'un qui prend ta marge."},{"id":"EP014","titre":"Le raton laveur","accroche":"Ton gaspillage alimentaire."},{"id":"EP017","titre":"Le ninja de la frite","accroche":"Personne ne touche à ta dernière frite."},{"id":"EP026","titre":"Le ballon qui explose","accroche":"Ton stock avant le week-end."}]},{"id":"EP042","saison":2,"titre":"La nappe et le vent","module":"Marketing","chapitre":"21 - MCP RapidoCMS et Iris","accroche":"Tout faire seul.","punchline":"À un moment, il faut être aidé.","troisMots":"MCP RAPIDOCMS IRIS","script":"Tu n'as pas à tout faire seul. Iris prépare tes contenus, PrediBot surveille tes chiffres, tu gardes la validation.","domGag":"Marketing","domLog":"Marketing","verdict":"ok","master":"https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/FoodEatUp-EP042-Calendrier-de-communication-Iris","clip":"https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/Higgsfield-source-EP042-La-nappe-et-le-vent","driveChapitre":"21 - MCP RAPIDOCMS + IRIS","driveLien":null,"candidats":[{"id":"EP025","titre":"Le mixeur sans couvercle","accroche":"Quand tu lances une promo sans données."},{"id":"EP088","titre":"Une étoile","accroche":"Un avis. Publié il y a six jours."}]},{"id":"EP044","saison":2,"titre":"Les six stylos","module":"Réservation","chapitre":"5 - Commander par QR code","accroche":"Prendre la commande en 2026.","punchline":"La commande devrait partir en cuisine toute seule.","troisMots":"COMMANDER PAR QR","script":"Le client scanne, commande, la cuisine reçoit. Ton serveur passe son temps en salle, pas à recopier des lignes sur un carnet.","domGag":"Service","domLog":"Service","verdict":"ok","master":"https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/FoodEatUp-EP044-Commander-par-QR-code","clip":"https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/Higgsfield-source-EP044-Les-six-stylos","driveChapitre":"5 - COMMANDER PAR QR CODE","driveLien":"https://drive.google.com/file/d/1rTMXZj_uLAVaGPjxBT-ncZ4hcTU8UetZ/view","candidats":[{"id":"EP001","titre":"Le chien qui te regarde","accroche":"Lui aussi attend ta commande."},{"id":"EP005","titre":"Le serveur qui glisse","accroche":"Trois logiciels. Deux mains."},{"id":"EP007","titre":"La mamie qui goûte","accroche":"Le seul avis client qui compte."},{"id":"EP012","titre":"Le client qui attend","accroche":"Temps d'attente : « on regarde »."},{"id":"EP018","titre":"Le serveur Baywatch","accroche":"Le rush de vingt heures."},{"id":"EP020","titre":"Le chien qui a réservé","accroche":"Lui, il a réservé."}]},{"id":"EP045","saison":2,"titre":"La chambre froide","module":"StockVision","chapitre":"18 - Statistiques par module","accroche":"Personne ne sait où tu es.","punchline":"Ton restaurant non plus ne devrait pas être une boîte noire.","troisMots":"STATISTIQUES PAR MODULE","script":"Ton restaurant arrête d'être une boîte noire : ventes, marges, fréquentation, stock, module par module, sur la période que tu choisis.","domGag":"HACCP","domLog":"Stock","verdict":"decale","master":"https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/FoodEatUp-EP045-Statistiques-par-module","clip":"https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/Higgsfield-source-EP045-La-chambre-froide","driveChapitre":"18- Statistiques par module","driveLien":"https://drive.google.com/file/d/13BlvDmhkU0IsKHXo77VHM7TwMSHKHmpv/view","candidats":[{"id":"EP003","titre":"Le plat dans la piscine","accroche":"Ta marge, en ce moment."},{"id":"EP006","titre":"La pizza frisbee","accroche":"Ta pizza part plus vite que ton stock."},{"id":"EP009","titre":"Le pigeon voleur","accroche":"Il y a toujours quelqu'un qui prend ta marge."},{"id":"EP014","titre":"Le raton laveur","accroche":"Ton gaspillage alimentaire."},{"id":"EP017","titre":"Le ninja de la frite","accroche":"Personne ne touche à ta dernière frite."},{"id":"EP026","titre":"Le ballon qui explose","accroche":"Ton stock avant le week-end."}]},{"id":"EP061","saison":3,"titre":"Le badge introuvable","module":"HACCP","chapitre":"Rapport HACCP","accroche":"Ton système de pointage.","punchline":"Un badge, un QR code, un code PIN. Point.","troisMots":"RAPPORT HACCP","script":"Tu édites ton dossier de conformité sur la période de ton choix, prêt à présenter.","domGag":"Équipe","domLog":"HACCP","verdict":"decale","master":"https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/FoodEatUp-EP061-Exporter-l-historique-HACCP","clip":"https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/Higgsfield-source-EP061-Le-badge-introuvable","driveChapitre":"30-Exporter l'historique HACCP","driveLien":"https://drive.google.com/file/d/1Sdqt1w99LFbrJP2RpqbPSRahwZGHcPC2/view","candidats":[{"id":"EP031","titre":"L'avalanche de tupperware","accroche":"C'est quoi, ça ?"},{"id":"EP045","titre":"La chambre froide","accroche":"Personne ne sait où tu es."},{"id":"EP067","titre":"Le thermomètre humain","accroche":"Ton relevé de température."},{"id":"EP068","titre":"Le second avis","accroche":"Le test scientifique du nez."},{"id":"EP069","titre":"Le livreur fantôme","accroche":"Tu as vérifié la livraison ?"},{"id":"EP072","titre":"Le classeur","accroche":"Contrôle sanitaire. Ce matin."}]},{"id":"EP062","saison":3,"titre":"La photo de pointage","module":"HACCP","chapitre":"Routine du jour","accroche":"Je te jure, j'étais là à 8 h.","punchline":"Photo, heure, poste. Le débat est clos.","troisMots":"ROUTINE DU JOUR","script":"La conformité devient une routine de deux minutes par service, au lieu d'un dimanche de rattrapage.","domGag":"Équipe","domLog":"HACCP","verdict":"decale","master":"https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/FoodEatUp-EP062-Borne-de-pointage-des-employes","clip":"https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/Higgsfield-source-EP062-La-photo-de-pointage","driveChapitre":null,"driveLien":null,"candidats":[{"id":"EP031","titre":"L'avalanche de tupperware","accroche":"C'est quoi, ça ?"},{"id":"EP045","titre":"La chambre froide","accroche":"Personne ne sait où tu es."},{"id":"EP067","titre":"Le thermomètre humain","accroche":"Ton relevé de température."},{"id":"EP068","titre":"Le second avis","accroche":"Le test scientifique du nez."},{"id":"EP069","titre":"Le livreur fantôme","accroche":"Tu as vérifié la livraison ?"},{"id":"EP072","titre":"Le classeur","accroche":"Contrôle sanitaire. Ce matin."}]},{"id":"EP063","saison":3,"titre":"Le post-it perdu","module":"Équipe & Planning","chapitre":"Créer un employé","accroche":"Ta demande de congé.","punchline":"Demandée, reçue, validée. Sans papier.","troisMots":"CRÉER UN EMPLOYÉ","script":"Tu crées ta fiche employé avec son rôle et ses horaires. Elle alimente le planning, les pointages et la paie.","domGag":"Équipe","domLog":"Équipe","verdict":"ok","master":"https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/FoodEatUp-EP063-Horaires-d-un-employe","clip":"https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/Higgsfield-source-EP063-Le-post-it-perdu","driveChapitre":"4-Horaires d'un employé","driveLien":"https://drive.google.com/file/d/1Bhu8KC2mW5P9Gr1qSEVxiNvYoHbUTLCX/view","candidats":[{"id":"EP037","titre":"Le dormeur debout","accroche":"Fermeture. Troisième soir d'affilée."},{"id":"EP041","titre":"Le poulet fugueur","accroche":"Ton contrôle des portions."},{"id":"EP061","titre":"Le badge introuvable","accroche":"Ton système de pointage."},{"id":"EP062","titre":"La photo de pointage","accroche":"Je te jure, j'étais là à 8 h."},{"id":"EP064","titre":"Le planning au marqueur","accroche":"Le planning de la semaine."},{"id":"EP065","titre":"Le stagiaire au bureau","accroche":"Qui a accès à quoi ?"}]},{"id":"EP064","saison":3,"titre":"Le planning au marqueur","module":"Équipe & Planning","chapitre":"Planning semaine","accroche":"Le planning de la semaine.","punchline":"Par employé ou par poste. Imprimable. À jour.","troisMots":"PLANNING SEMAINE","script":"Le planning se construit en glisser-déposer, avec le coût de la semaine qui s'affiche pendant que tu poses les shifts.","domGag":"Équipe","domLog":"Équipe","verdict":"ok","master":"https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/FoodEatUp-EP064-Planning-et-taches-de-l-employe","clip":"https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/Higgsfield-source-EP064-Le-planning-au-marqueur","driveChapitre":"16-Planning et tâches de l'employé","driveLien":"https://drive.google.com/file/d/1CdAnJgR_iq1ESyAgcCCpFjnCfYzaUhIR/view","candidats":[{"id":"EP037","titre":"Le dormeur debout","accroche":"Fermeture. Troisième soir d'affilée."},{"id":"EP041","titre":"Le poulet fugueur","accroche":"Ton contrôle des portions."},{"id":"EP061","titre":"Le badge introuvable","accroche":"Ton système de pointage."},{"id":"EP062","titre":"La photo de pointage","accroche":"Je te jure, j'étais là à 8 h."},{"id":"EP063","titre":"Le post-it perdu","accroche":"Ta demande de congé."},{"id":"EP065","titre":"Le stagiaire au bureau","accroche":"Qui a accès à quoi ?"}]},{"id":"EP065","saison":3,"titre":"Le stagiaire au bureau","module":"Équipe & Planning","chapitre":"Pointages","accroche":"Qui a accès à quoi ?","punchline":"Chaque rôle voit exactement ce qu'il doit voir.","troisMots":"POINTAGES","script":"Les heures réelles sont pointées. Tu compares le prévu et le réalisé, sans discussion de fin de mois.","domGag":"Équipe","domLog":"Équipe","verdict":"ok","master":"https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/FoodEatUp-EP065-Historique-des-pointages","clip":"https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/Higgsfield-source-EP065-Le-stagiaire-au-bureau","driveChapitre":"12-Historique des pointages","driveLien":"https://drive.google.com/file/d/1J1Q1Tv2kx9RCiiW6m5SiSh6psnrjtLMb/view","candidats":[{"id":"EP037","titre":"Le dormeur debout","accroche":"Fermeture. Troisième soir d'affilée."},{"id":"EP041","titre":"Le poulet fugueur","accroche":"Ton contrôle des portions."},{"id":"EP061","titre":"Le badge introuvable","accroche":"Ton système de pointage."},{"id":"EP062","titre":"La photo de pointage","accroche":"Je te jure, j'étais là à 8 h."},{"id":"EP063","titre":"Le post-it perdu","accroche":"Ta demande de congé."},{"id":"EP064","titre":"Le planning au marqueur","accroche":"Le planning de la semaine."}]},{"id":"EP066","saison":3,"titre":"Le grille-pain qui ne répond pas","module":"Équipe & Planning","chapitre":"Congés","accroche":"Ta cuisine n'a personne à qui parler.","punchline":"Jarvis répond, lui. Et il note.","troisMots":"CONGÉS","script":"Une demande de congé arrive, tu valides ou tu refuses depuis l'écran. Le planning se met à jour tout seul.","domGag":"Équipe","domLog":"Équipe","verdict":"ok","master":"https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/FoodEatUp-EP066-Demande-d-absence-ou-de-conge","clip":"https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/Higgsfield-source-EP066-Le-grille-pain-qui-ne-repond-pas","driveChapitre":"17-Demande d'absence ou de congé","driveLien":"https://drive.google.com/file/d/1gY1t4M0AUXTI54sCrB22r7yeiCDe3W35/view","candidats":[{"id":"EP037","titre":"Le dormeur debout","accroche":"Fermeture. Troisième soir d'affilée."},{"id":"EP041","titre":"Le poulet fugueur","accroche":"Ton contrôle des portions."},{"id":"EP061","titre":"Le badge introuvable","accroche":"Ton système de pointage."},{"id":"EP062","titre":"La photo de pointage","accroche":"Je te jure, j'étais là à 8 h."},{"id":"EP063","titre":"Le post-it perdu","accroche":"Ta demande de congé."},{"id":"EP064","titre":"Le planning au marqueur","accroche":"Le planning de la semaine."}]},{"id":"EP067","saison":3,"titre":"Le thermomètre humain","module":"Équipe & Planning","chapitre":"Contrats","accroche":"Ton relevé de température.","punchline":"Un vrai relevé, horodaté, par équipement.","troisMots":"CONTRATS","script":"Contrats et documents employés sont rangés au même endroit, avec leurs échéances.","domGag":"HACCP","domLog":"Équipe","verdict":"decale","master":"https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/FoodEatUp-EP067-Salaire-et-contrat","clip":"https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/Higgsfield-source-EP067-Le-thermometre-humain","driveChapitre":"3-Salaire et contrat","driveLien":"https://drive.google.com/file/d/1nbIsc-SROPwONiTIm1BuLpYuNSSTTHm7/view","candidats":[{"id":"EP037","titre":"Le dormeur debout","accroche":"Fermeture. Troisième soir d'affilée."},{"id":"EP041","titre":"Le poulet fugueur","accroche":"Ton contrôle des portions."},{"id":"EP061","titre":"Le badge introuvable","accroche":"Ton système de pointage."},{"id":"EP062","titre":"La photo de pointage","accroche":"Je te jure, j'étais là à 8 h."},{"id":"EP063","titre":"Le post-it perdu","accroche":"Ta demande de congé."},{"id":"EP064","titre":"Le planning au marqueur","accroche":"Le planning de la semaine."}]},{"id":"EP069","saison":3,"titre":"Le livreur fantôme","module":"Équipe & Planning","chapitre":"Recrutement","accroche":"Tu as vérifié la livraison ?","punchline":"Température, DLC, code EAN. En scannant.","troisMots":"RECRUTEMENT","script":"Tu publies ton offre, tu suis les candidatures par statut, tu décides. Le recrutement arrête de traîner sur ton téléphone.","domGag":"HACCP","domLog":"Équipe","verdict":"decale","master":"https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/FoodEatUp-EP069-Ajouter-du-contenu-a-son-site","clip":"https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/Higgsfield-source-EP069-Le-livreur-fantome","driveChapitre":null,"driveLien":null,"candidats":[{"id":"EP037","titre":"Le dormeur debout","accroche":"Fermeture. Troisième soir d'affilée."},{"id":"EP041","titre":"Le poulet fugueur","accroche":"Ton contrôle des portions."},{"id":"EP061","titre":"Le badge introuvable","accroche":"Ton système de pointage."},{"id":"EP062","titre":"La photo de pointage","accroche":"Je te jure, j'étais là à 8 h."},{"id":"EP063","titre":"Le post-it perdu","accroche":"Ta demande de congé."},{"id":"EP064","titre":"Le planning au marqueur","accroche":"Le planning de la semaine."}]},{"id":"EP070","saison":3,"titre":"La dalle propre","module":"Équipe & Planning","chapitre":"Onboarding","accroche":"C'est fait.","punchline":"Photo analysée par l'IA. Rapport objectif.","troisMots":"ONBOARDING","script":"Le nouveau arrive avec son accès, son planning et ses vidéos de formation. Jour un, il est utile.","domGag":"Équipe","domLog":"Équipe","verdict":"ok","master":"https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/FoodEatUp-EP070-Configuration-des-employes","clip":"https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/Higgsfield-source-EP070-La-dalle-propre","driveChapitre":"2-Configuration des employés","driveLien":"https://drive.google.com/file/d/13w9aRHXfQFkxF3UvqtaLczqKPN5rr7E0/view","candidats":[{"id":"EP037","titre":"Le dormeur debout","accroche":"Fermeture. Troisième soir d'affilée."},{"id":"EP041","titre":"Le poulet fugueur","accroche":"Ton contrôle des portions."},{"id":"EP061","titre":"Le badge introuvable","accroche":"Ton système de pointage."},{"id":"EP062","titre":"La photo de pointage","accroche":"Je te jure, j'étais là à 8 h."},{"id":"EP063","titre":"Le post-it perdu","accroche":"Ta demande de congé."},{"id":"EP064","titre":"Le planning au marqueur","accroche":"Le planning de la semaine."}]},{"id":"EP071","saison":3,"titre":"La liste à l'envers","module":"Équipe & Planning","chapitre":"Multi-postes","accroche":"La check-list du soir.","punchline":"Cochée, horodatée, signée par qui l'a faite.","troisMots":"MULTI-POSTES","script":"Tu affectes tes équipes par poste et par zone. Chacun sait où il est attendu ce soir.","domGag":"Équipe","domLog":"Équipe","verdict":"ok","master":"https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/FoodEatUp-EP071-Affectation-par-poste-et-par-zone","clip":"https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/Higgsfield-source-EP071-La-liste-a-l-envers","driveChapitre":"6-Planning par employé ou par poste","driveLien":"https://drive.google.com/file/d/174AfDA9zywpeMof070Mc33_doWgDcsp5/view","candidats":[{"id":"EP037","titre":"Le dormeur debout","accroche":"Fermeture. Troisième soir d'affilée."},{"id":"EP041","titre":"Le poulet fugueur","accroche":"Ton contrôle des portions."},{"id":"EP061","titre":"Le badge introuvable","accroche":"Ton système de pointage."},{"id":"EP062","titre":"La photo de pointage","accroche":"Je te jure, j'étais là à 8 h."},{"id":"EP063","titre":"Le post-it perdu","accroche":"Ta demande de congé."},{"id":"EP064","titre":"Le planning au marqueur","accroche":"Le planning de la semaine."}]},{"id":"EP072","saison":3,"titre":"Le classeur","module":"Équipe & Planning","chapitre":"Absences","accroche":"Contrôle sanitaire. Ce matin.","punchline":"Tout l'historique HACCP, exporté en un clic.","troisMots":"ABSENCES","script":"Une absence, et tu vois immédiatement quel service est découvert. Tu remplaces avant l'ouverture.","domGag":"HACCP","domLog":"Équipe","verdict":"decale","master":"https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/FoodEatUp-EP072-Absence-et-service-decouvert","clip":"https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/Higgsfield-source-EP072-Le-classeur","driveChapitre":"17-Demande d'absence ou de congé","driveLien":"https://drive.google.com/file/d/1gY1t4M0AUXTI54sCrB22r7yeiCDe3W35/view","candidats":[{"id":"EP037","titre":"Le dormeur debout","accroche":"Fermeture. Troisième soir d'affilée."},{"id":"EP041","titre":"Le poulet fugueur","accroche":"Ton contrôle des portions."},{"id":"EP061","titre":"Le badge introuvable","accroche":"Ton système de pointage."},{"id":"EP062","titre":"La photo de pointage","accroche":"Je te jure, j'étais là à 8 h."},{"id":"EP063","titre":"Le post-it perdu","accroche":"Ta demande de congé."},{"id":"EP064","titre":"Le planning au marqueur","accroche":"Le planning de la semaine."}]},{"id":"EP073","saison":3,"titre":"Pile ou face","module":"Configuration","chapitre":"Établissement","accroche":"Combien tu commandes pour samedi ?","punchline":"Tes ventes le savent. Demande-leur.","troisMots":"ÉTABLISSEMENT","script":"Tu paramètres ton établissement une fois : horaires, coordonnées, TVA. Tout FoodEatUp s'appuie dessus.","domGag":"Service","domLog":"Configuration","verdict":"decale","master":"https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/FoodEatUp-EP073-Profil-entreprise","clip":"https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/Higgsfield-source-EP073-Pile-ou-face","driveChapitre":"3 - Profil entreprise","driveLien":"https://drive.google.com/file/d/1gB8THFEj2zZuPj7UPJ99yXb9yRXsdPwi/view","candidats":[]},{"id":"EP074","saison":3,"titre":"La liste oubliée","module":"Configuration","chapitre":"Catégories","accroche":"Tu as oublié la liste.","punchline":"Elle se construit toute seule. Et elle part au fournisseur.","troisMots":"CATÉGORIES","script":"Tes catégories de produits, d'ingrédients et de recettes structurent tout le reste. Cinq minutes qui t'en font gagner cent.","domGag":"Stock","domLog":"Stock","verdict":"ok","master":"https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/FoodEatUp-EP074-Vos-categories","clip":"https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/Higgsfield-source-EP074-La-liste-oubliee","driveChapitre":"7 - Vos catégories","driveLien":"https://drive.google.com/file/d/17ZDwHrTaTvQmiCmTYBwZnnJo_OLrXzyo/view","candidats":[{"id":"EP003","titre":"Le plat dans la piscine","accroche":"Ta marge, en ce moment."},{"id":"EP006","titre":"La pizza frisbee","accroche":"Ta pizza part plus vite que ton stock."},{"id":"EP009","titre":"Le pigeon voleur","accroche":"Il y a toujours quelqu'un qui prend ta marge."},{"id":"EP014","titre":"Le raton laveur","accroche":"Ton gaspillage alimentaire."},{"id":"EP017","titre":"Le ninja de la frite","accroche":"Personne ne touche à ta dernière frite."},{"id":"EP026","titre":"Le ballon qui explose","accroche":"Ton stock avant le week-end."}]},{"id":"EP075","saison":3,"titre":"La facture dans la poche","module":"Configuration","chapitre":"TVA","accroche":"Ta facture fournisseur.","punchline":"Photographie-la. Les prix se mettent à jour seuls.","troisMots":"TVA","script":"Tes taux de TVA sont posés une fois, appliqués partout : caisse, factures, comptabilité.","domGag":"Stock","domLog":"Configuration","verdict":"decale","master":"https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/FoodEatUp-EP075-Creation-des-TVA","clip":"https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/Higgsfield-source-EP075-La-facture-dans-la-poche","driveChapitre":"4 - Vos taux de TVA","driveLien":"https://drive.google.com/file/d/1_cZ3_hXyP6JA3IdvyXCg9AT0bTprgi5P/view","candidats":[]}]</script>
+<script>window.__EPISODES__=JSON.parse(document.getElementById("donnees").textContent);</script>
+<script>
+(function () {
+  "use strict";
+  const EPS = window.__EPISODES__;
+
+  /* Les corrections possibles. `p` est la phrase versée dans le prompt : le
+     prompt doit se lire comme une consigne, pas comme une liste de cases. */
+  const ACTIONS = [
+    { k: "accroche",  l: "Accroche",      p: "réécrire l'accroche incrustée pour qu'elle annonce ce que montre l'écran" },
+    { k: "punchline", l: "Punchline",     p: "réécrire la punchline off et régénérer la voix ElevenLabs" },
+    { k: "troisMots", l: "Trois mots",    p: "corriger les deux ou trois mots de la vignette" },
+    { k: "script",    l: "Script avatar", p: "réécrire le script HeyGen et redemander le rendu de l'avatar" },
+    { k: "screencast",l: "Screencast",    p: "remplacer le screencast par le bon chapitre du Drive" },
+    { k: "clip",      l: "Clip comique",  p: "échanger le plan Higgsfield contre un plan déjà généré" },
+    { k: "pubs",      l: "5 publications",p: "régénérer les cinq publications réseaux" },
+    { k: "vignette",  l: "Vignette",      p: "régénérer la vignette" },
+  ];
+
+  const etat = new Map();   // id -> { set:Set, clip:string, note:string }
+  const ent = (s) => String(s == null ? "" : s).replace(/[&<>"']/g, (c) =>
+    ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
+
+  const de = (id) => {
+    if (!etat.has(id)) etat.set(id, { set: new Set(), clip: "", note: "" });
+    return etat.get(id);
+  };
+  const actif = (id) => {
+    const e = etat.get(id);
+    return !!e && (e.set.size > 0 || e.note.trim() !== "");
+  };
+
+  /* ---- une fiche ------------------------------------------------------ */
+  function fiche(ep) {
+    const cases = ACTIONS.map((a) => `
+      <label class="case">
+        <input type="checkbox" data-ep="${ep.id}" data-k="${a.k}">
+        <span>${a.l}</span>
+      </label>`).join("");
+
+    const options = ep.candidats.length
+      ? `<select data-clip="${ep.id}" aria-label="Plan de remplacement pour ${ep.id}">
+           <option value="">Plan de remplacement — au choix</option>
+           ${ep.candidats.map((c) =>
+             `<option value="${ent(c.id)}">${ent(c.id)} · ${ent(c.titre)} — « ${ent(c.accroche)} »</option>`).join("")}
+         </select>`
+      : `<span class="meta">Aucun plan déjà généré ne colle à ce chapitre.</span>`;
+
+    return `
+    <article class="fiche" id="f-${ep.id}" data-verdict="${ep.verdict}" data-saison="${ep.saison}" data-coche="0">
+      <div class="fiche-tete">
+        <span class="ident">${ent(ep.id)}</span>
+        <span class="titre">${ent(ep.titre)}</span>
+        <span class="meta">S${ep.saison} · ${ent(ep.module)}</span>
+        <span class="etat ${ep.verdict}">${ep.verdict === "ok" ? "Cohérent" : "À vérifier"}</span>
+      </div>
+
+      <div class="duel">
+        <section class="volet">
+          <h3>Le plan comique <span class="domaine">${ent(ep.domGag || "?")}</span></h3>
+          <dl>
+            <div class="champ"><dt>Gag</dt><dd>${ent(ep.titre)}</dd></div>
+            <div class="champ"><dt>Accroche à l'écran</dt><dd>${ent(ep.accroche)}</dd></div>
+            <div class="champ"><dt>Punchline off</dt><dd>${ent(ep.punchline)}</dd></div>
+            <div class="champ"><dt>Vignette</dt><dd>${ent(ep.troisMots)}</dd></div>
+          </dl>
+        </section>
+        <section class="volet">
+          <h3>Le tutoriel <span class="domaine">${ent(ep.domLog || "?")}</span></h3>
+          <dl>
+            <div class="champ"><dt>Chapitre</dt><dd>${ent(ep.chapitre)}</dd></div>
+            <div class="champ"><dt>Fichier filmé</dt><dd>${ent(ep.driveChapitre || "—")}</dd></div>
+            <div class="champ"><dt>Ce que dit l'avatar</dt><dd>${ent(ep.script)}</dd></div>
+          </dl>
+        </section>
+      </div>
+
+      <div class="actions">
+        <p>Ce qu'il faut reprendre</p>
+        <div class="cases">${cases}</div>
+        <div class="rangee-outils">
+          ${options}
+          <input class="note" type="text" data-note="${ep.id}" placeholder="Précision libre (facultatif)">
+        </div>
+        <div class="liens">
+          ${ep.master ? `<a href="${ent(ep.master)}" target="_blank" rel="noreferrer">Voir le montage</a>` : ""}
+          ${ep.clip ? `<a href="${ent(ep.clip)}" target="_blank" rel="noreferrer">Plan comique d'origine</a>` : ""}
+          ${ep.driveLien ? `<a href="${ent(ep.driveLien)}" target="_blank" rel="noreferrer">Chapitre dans le Drive</a>` : ""}
+        </div>
+      </div>
+    </article>`;
+  }
+
+  /* ---- le prompt ------------------------------------------------------ */
+  function ecrirePrompt() {
+    const retenus = EPS.filter((e) => actif(e.id));
+    document.getElementById("c-select").textContent = retenus.length;
+    document.getElementById("copier").disabled = retenus.length === 0;
+    document.getElementById("vider").disabled = retenus.length === 0;
+
+    const zone = document.getElementById("prompt");
+    if (!retenus.length) {
+      zone.value = "";
+      zone.placeholder = "Coche au moins une correction sur un épisode.";
+      return;
+    }
+
+    const l = [];
+    l.push("# Corriger l'appariement de " + retenus.length +
+           (retenus.length > 1 ? " épisodes" : " épisode"));
+    l.push("");
+    l.push("Sur les épisodes ci-dessous, le plan comique et le tutoriel ne parlent");
+    l.push("pas du même sujet. Corrige chacun sur les points listés, puis remonte le");
+    l.push("master, reverse-le dans la bibliothèque RapidoCMS et republie le site.");
+    l.push("");
+    l.push("Rappels : aucun nouveau plan Higgsfield ne se génère — on repermute les");
+    l.push("plans déjà payés. Une voix ElevenLabs ne se régénère que si elle change.");
+    l.push("");
+
+    for (const e of retenus) {
+      const s = etat.get(e.id);
+      l.push("## " + e.id + " — " + e.titre);
+      l.push("");
+      l.push("- Chapitre filmé : " + e.chapitre + (e.driveChapitre ? "  (" + e.driveChapitre + ")" : ""));
+      l.push("- Accroche actuelle : « " + e.accroche + " »");
+      l.push("- Punchline actuelle : « " + e.punchline + " »");
+      l.push("- Script avatar actuel : " + e.script);
+      if (e.master) l.push("- Montage : " + e.master);
+      if (e.clip) l.push("- Plan comique actuel : " + e.clip);
+      if (e.driveLien) l.push("- Chapitre dans le Drive : " + e.driveLien);
+      l.push("");
+      l.push("À reprendre :");
+      for (const a of ACTIONS) {
+        if (!s.set.has(a.k)) continue;
+        let ligne = "- " + a.p;
+        if (a.k === "clip" && s.clip) {
+          const c = e.candidats.find((x) => x.id === s.clip);
+          ligne += " — prendre celui de " + s.clip + (c ? " (« " + c.accroche + " »)" : "");
+        }
+        l.push(ligne);
+      }
+      if (s.note.trim()) l.push("- " + s.note.trim());
+      l.push("");
+    }
+
+    l.push("---");
+    l.push("");
+    l.push("Après chaque épisode corrigé : `./scripts/build-episode.sh EPxxx` doit");
+    l.push("repasser les treize contrôles avant de verser quoi que ce soit.");
+    zone.value = l.join("\n");
+  }
+
+  /* ---- filtres -------------------------------------------------------- */
+  let fVerdict = "tous", fSaison = "0";
+  function filtrer() {
+    let visibles = 0;
+    for (const e of EPS) {
+      const n = document.getElementById("f-" + e.id);
+      if (!n) continue;
+      const okV = fVerdict === "tous" ||
+                  (fVerdict === "coches" ? actif(e.id) : e.verdict === fVerdict);
+      const okS = fSaison === "0" || String(e.saison) === fSaison;
+      const vu = okV && okS;
+      n.hidden = !vu;
+      if (vu) visibles++;
+    }
+    document.getElementById("pied").textContent =
+      visibles + " épisode" + (visibles > 1 ? "s" : "") + " affiché" + (visibles > 1 ? "s" : "") +
+      " sur " + EPS.length + " montés.";
+  }
+
+  /* ---- montage -------------------------------------------------------- */
+  document.getElementById("liste").innerHTML = EPS.map(fiche).join("");
+  document.getElementById("c-total").textContent = EPS.length;
+  document.getElementById("c-decale").textContent = EPS.filter((e) => e.verdict === "decale").length;
+
+  document.addEventListener("change", (ev) => {
+    const t = ev.target;
+    if (t.matches("input[type=checkbox][data-ep]")) {
+      const s = de(t.dataset.ep);
+      t.checked ? s.set.add(t.dataset.k) : s.set.delete(t.dataset.k);
+    } else if (t.matches("select[data-clip]")) {
+      de(t.dataset.clip).clip = t.value;
+    } else return;
+    majFiche(t.closest(".fiche"));
+    ecrirePrompt();
+    if (fVerdict === "coches") filtrer();
+  });
+
+  document.addEventListener("input", (ev) => {
+    const t = ev.target;
+    if (!t.matches("input.note[data-note]")) return;
+    de(t.dataset.note).note = t.value;
+    majFiche(t.closest(".fiche"));
+    ecrirePrompt();
+  });
+
+  function majFiche(n) {
+    if (!n) return;
+    const id = n.id.slice(2);
+    n.dataset.coche = actif(id) ? "1" : "0";
+  }
+
+  for (const b of document.querySelectorAll(".puce")) {
+    b.addEventListener("click", () => {
+      const groupe = b.dataset.f ? "f" : "s";
+      for (const o of document.querySelectorAll(".puce")) {
+        if ((o.dataset.f ? "f" : "s") === groupe) o.setAttribute("aria-pressed", String(o === b));
+      }
+      if (groupe === "f") fVerdict = b.dataset.f; else fSaison = b.dataset.s;
+      filtrer();
+    });
+  }
+
+  document.getElementById("copier").addEventListener("click", async (ev) => {
+    const zone = document.getElementById("prompt");
+    try { await navigator.clipboard.writeText(zone.value); }
+    catch { zone.select(); document.execCommand("copy"); }
+    const b = ev.currentTarget, mot = b.textContent;
+    b.textContent = "Copié";
+    setTimeout(() => { b.textContent = mot; }, 1600);
+  });
+
+  document.getElementById("vider").addEventListener("click", () => {
+    etat.clear();
+    for (const i of document.querySelectorAll("input[type=checkbox][data-ep]")) i.checked = false;
+    for (const s of document.querySelectorAll("select[data-clip]")) s.value = "";
+    for (const n of document.querySelectorAll("input.note[data-note]")) n.value = "";
+    for (const f of document.querySelectorAll(".fiche")) f.dataset.coche = "0";
+    ecrirePrompt(); filtrer();
+  });
+
+  ecrirePrompt();
+  filtrer();
+})();
+</script>
