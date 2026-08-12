@@ -5585,9 +5585,9 @@ export const series: Serie[] = [
             "accroche": "La check-list du soir.",
             "punchline": "Cochée, horodatée, signée par qui l'a faite.",
             "resume": "Tu affectes tes équipes par poste et par zone. Chacun sait où il est attendu ce soir.",
-            "statut": "a_produire",
-            "dureeSecondes": null,
-            "videoUrl": null,
+            "statut": "monte",
+            "dureeSecondes": 37.5,
+            "videoUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/tiktok/EP071.mp4",
             "reseaux": {
               "facebook": {
                 "statut": "a_venir",
@@ -5649,7 +5649,7 @@ export const series: Serie[] = [
               "format": "vertical 9:16",
               "source": "rapidocms"
             },
-            "masterRapidoUrl": null
+            "masterRapidoUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/FoodEatUp-EP071-Affectation-par-poste-et-par-zone"
           },
           {
             "id": "EP072",
