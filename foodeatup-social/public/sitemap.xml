@@ -291,6 +291,11 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://foodeatup-social.lovable.app/episode/ep069-le-livreur-fantome</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://foodeatup-social.lovable.app/series/le-coup-de-feu/saison/4</loc>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>

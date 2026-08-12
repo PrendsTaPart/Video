@@ -5430,9 +5430,9 @@ export const series: Serie[] = [
             "accroche": "Tu as vérifié la livraison ?",
             "punchline": "Température, DLC, code EAN. En scannant.",
             "resume": "Tu publies ton offre, tu suis les candidatures par statut, tu décides. Le recrutement arrête de traîner sur ton téléphone.",
-            "statut": "bloque",
-            "dureeSecondes": null,
-            "videoUrl": null,
+            "statut": "monte",
+            "dureeSecondes": 37.5,
+            "videoUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/tiktok/EP069.mp4",
             "reseaux": {
               "facebook": {
                 "statut": "a_venir",
@@ -5495,7 +5495,7 @@ export const series: Serie[] = [
               "format": "vertical 9:16",
               "source": "rapidocms"
             },
-            "masterRapidoUrl": null
+            "masterRapidoUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/FoodEatUp-EP069-Ajouter-du-contenu-a-son-site"
           },
           {
             "id": "EP070",
