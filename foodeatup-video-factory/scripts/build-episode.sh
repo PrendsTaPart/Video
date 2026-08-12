@@ -87,6 +87,10 @@ if t>1.12:
 # --- Segment D : avatar 45 % (864 px) au-dessus du logiciel 55 % (1056 px) -----
 # Le screencast n'est JAMAIS rogné : il est padé sur le fond sable.
 # L'avatar est plus court que 10 s -> dernière frame clonée, audio complété en silence.
+# Le screencast aussi : EP072 est arrivé en 5,4 s et, sans ce clonage, la tablette
+# se vidait à mi-segment — quatre secondes et demie d'écran sable au milieu du
+# tutoriel. Une image figée n'est pas idéale, mais elle se voit moins qu'un trou,
+# et le rapport le signale pour qu'on redemande une capture plus longue.
 # La voix change ici (ElevenLabs -> HeyGen) : fondu sable de 0,35 s + whoosh sur la coupe.
 # Le lit musical couvre les 10 s, sinon le segment sonne mort face aux voisins.
 # Il se referme à 9,45 s — soit 27,95 s dans le master — pour que la respiration
@@ -105,7 +109,8 @@ ffmpeg -v error \
 crop=1080:$AV_H:0:$AV_CROP_Y,tpad=stop_mode=clone:stop_duration=3,\
 trim=0:10,setpts=PTS-STARTPTS[top];\
  color=c=$SABLE:s=1080x$SOFT_H:r=30,trim=0:10,setpts=PTS-STARTPTS[fond];\
- [1:v]fps=30,scale=$ECR_W:$ECR_H[ecran];\
+ [1:v]fps=30,scale=$ECR_W:$ECR_H,tpad=stop_mode=clone:stop_duration=10,\
+trim=0:10,setpts=PTS-STARTPTS[ecran];\
  [fond][ecran]overlay=$ECR_X:$ECR_Y[avec];\
  [5:v]fps=30,format=rgba[coque];\
  [avec][coque]overlay=$COQ_X:$COQ_Y[mid];\
