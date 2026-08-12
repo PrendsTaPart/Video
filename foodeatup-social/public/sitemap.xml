@@ -181,8 +181,88 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://foodeatup-social.lovable.app/episode/ep031-l-avalanche-de-tupperware</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://foodeatup-social.lovable.app/episode/ep032-la-sauce-trop-forte</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://foodeatup-social.lovable.app/episode/ep033-le-roti-disparu</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://foodeatup-social.lovable.app/episode/ep034-le-bouchon-rebelle</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://foodeatup-social.lovable.app/episode/ep035-le-parasol-fugitif</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://foodeatup-social.lovable.app/episode/ep036-l-addition</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://foodeatup-social.lovable.app/episode/ep037-le-dormeur-debout</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://foodeatup-social.lovable.app/episode/ep038-le-chariot-fou</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://foodeatup-social.lovable.app/episode/ep039-le-ballon-dans-la-soupe</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://foodeatup-social.lovable.app/episode/ep040-la-chevre-au-potager</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://foodeatup-social.lovable.app/episode/ep041-le-poulet-fugueur</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://foodeatup-social.lovable.app/episode/ep042-la-nappe-et-le-vent</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://foodeatup-social.lovable.app/episode/ep044-les-six-stylos</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://foodeatup-social.lovable.app/episode/ep045-la-chambre-froide</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://foodeatup-social.lovable.app/series/le-coup-de-feu/saison/3</loc>
     <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://foodeatup-social.lovable.app/episode/ep061-le-badge-introuvable</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://foodeatup-social.lovable.app/episode/ep062-la-photo-de-pointage</loc>
+    <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>

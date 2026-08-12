@@ -260,7 +260,7 @@ export const series: Serie[] = [
             "accroche": "Lui aussi attend ta commande.",
             "punchline": "Sauf que lui, il est patient. Tes clients, non.",
             "resume": "Ici, toutes tes commandes arrivent au même endroit : la salle, le téléphone, le site, la livraison. Une seule file, dans l'ordre d'arrivée. Plus personne n'attend parce qu'on a oublié un ticket.",
-            "statut": "publie",
+            "statut": "monte",
             "dureeSecondes": 37.5,
             "videoUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/tiktok/EP001.mp4",
             "reseaux": {
@@ -337,7 +337,7 @@ export const series: Serie[] = [
             "accroche": "Ton service du samedi soir.",
             "punchline": "Ça finit toujours par terre.",
             "resume": "Tu prends la commande à table, elle part en cuisine dans la seconde. Pas de carnet, pas d'aller-retour, pas de ticket perdu entre la salle et le pass.",
-            "statut": "publie",
+            "statut": "monte",
             "dureeSecondes": 37.5,
             "videoUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/tiktok/EP002.mp4",
             "reseaux": {
@@ -414,7 +414,7 @@ export const series: Serie[] = [
             "accroche": "Ta marge, en ce moment.",
             "punchline": "Elle coule. On va la repêcher.",
             "resume": "Chaque plat de ta carte a son coût matière calculé depuis tes ingrédients. Tu vois ta marge réelle, plat par plat, avant même de fixer ton prix.",
-            "statut": "publie",
+            "statut": "monte",
             "dureeSecondes": 37.5,
             "videoUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/tiktok/EP003.mp4",
             "reseaux": {
@@ -555,7 +555,7 @@ export const series: Serie[] = [
             "accroche": "Trois logiciels. Deux mains.",
             "punchline": "Un seul outil, ça change tout.",
             "resume": "Un seul paramétrage : ta carte, tes zones, tes tables, ta TVA. Tout le reste s'appuie dessus. Tu ne ressaisis jamais deux fois la même information.",
-            "statut": "publie",
+            "statut": "monte",
             "dureeSecondes": 37.5,
             "videoUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/tiktok/EP005.mp4",
             "reseaux": {
@@ -625,7 +625,7 @@ export const series: Serie[] = [
             "accroche": "Ta pizza part plus vite que ton stock.",
             "punchline": "Enfin… c'était avant.",
             "resume": "Tu envoies un plat, le stock bouge tout seul. Chaque sortie est tracée, avec la quantité et l'heure. Tu sais ce qu'il te reste sans compter les cartons.",
-            "statut": "publie",
+            "statut": "monte",
             "dureeSecondes": 37.5,
             "videoUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/tiktok/EP006.mp4",
             "reseaux": {
@@ -702,7 +702,7 @@ export const series: Serie[] = [
             "accroche": "Le seul avis client qui compte.",
             "punchline": "Les quatre cents autres, on s'en occupe.",
             "resume": "Tes avis Google remontent ici. Tu réponds depuis FoodEatUp, l'IA te propose une réponse dans ton ton, tu valides. Le client voit que tu l'as lu.",
-            "statut": "publie",
+            "statut": "monte",
             "dureeSecondes": 37.5,
             "videoUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/tiktok/EP007.mp4",
             "reseaux": {
@@ -927,7 +927,7 @@ export const series: Serie[] = [
             "accroche": "Toi, devant ta facture logicielle.",
             "punchline": "Mille euros par mois. Pour dix outils qui ne se parlent pas.",
             "resume": "Un écran, le matin : ton chiffre d'affaires prévu, ta fréquentation, tes points de tension. C'est ton point du jour, sans ouvrir dix onglets.",
-            "statut": "publie",
+            "statut": "monte",
             "dureeSecondes": 37.5,
             "videoUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/tiktok/EP010.mp4",
             "reseaux": {
@@ -1532,7 +1532,7 @@ export const series: Serie[] = [
               "format": "vertical 9:16",
               "source": "rapidocms"
             },
-            "masterRapidoUrl": null
+            "masterRapidoUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/FoodEatUp-EP017-Creation-d-un-rapport"
           },
           {
             "id": "EP018",
@@ -1609,7 +1609,7 @@ export const series: Serie[] = [
               "format": "vertical 9:16",
               "source": "rapidocms"
             },
-            "masterRapidoUrl": null
+            "masterRapidoUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/FoodEatUp-EP018-Site-vocal-et-QR-code"
           },
           {
             "id": "EP019",
@@ -1686,7 +1686,7 @@ export const series: Serie[] = [
               "format": "vertical 9:16",
               "source": "rapidocms"
             },
-            "masterRapidoUrl": null
+            "masterRapidoUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/FoodEatUp-EP019-Predictions-des-commandes"
           },
           {
             "id": "EP020",
@@ -1763,7 +1763,7 @@ export const series: Serie[] = [
               "format": "vertical 9:16",
               "source": "rapidocms"
             },
-            "masterRapidoUrl": null
+            "masterRapidoUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/FoodEatUp-EP020-Ajouter-une-reservation"
           },
           {
             "id": "EP021",
@@ -1840,7 +1840,7 @@ export const series: Serie[] = [
               "format": "vertical 9:16",
               "source": "rapidocms"
             },
-            "masterRapidoUrl": null
+            "masterRapidoUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/FoodEatUp-EP021-Poste-de-travail-KDS"
           },
           {
             "id": "EP022",
@@ -1917,7 +1917,7 @@ export const series: Serie[] = [
               "format": "vertical 9:16",
               "source": "rapidocms"
             },
-            "masterRapidoUrl": null
+            "masterRapidoUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/FoodEatUp-EP022-Marketplace-de-prompts"
           },
           {
             "id": "EP023",
@@ -1994,7 +1994,7 @@ export const series: Serie[] = [
               "format": "vertical 9:16",
               "source": "rapidocms"
             },
-            "masterRapidoUrl": null
+            "masterRapidoUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/FoodEatUp-EP023-Calendrier-IA-avec-Iris"
           },
           {
             "id": "EP024",
@@ -2071,7 +2071,7 @@ export const series: Serie[] = [
               "format": "vertical 9:16",
               "source": "rapidocms"
             },
-            "masterRapidoUrl": null
+            "masterRapidoUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/FoodEatUp-EP024-Creer-son-site-par-IA"
           },
           {
             "id": "EP025",
@@ -2148,7 +2148,7 @@ export const series: Serie[] = [
               "format": "vertical 9:16",
               "source": "rapidocms"
             },
-            "masterRapidoUrl": null
+            "masterRapidoUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/FoodEatUp-EP025-Campagne-100-pourcent-IA"
           },
           {
             "id": "EP026",
@@ -2225,7 +2225,7 @@ export const series: Serie[] = [
               "format": "vertical 9:16",
               "source": "rapidocms"
             },
-            "masterRapidoUrl": null
+            "masterRapidoUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/FoodEatUp-EP026-Liste-de-courses-fournisseur"
           },
           {
             "id": "EP027",
@@ -2451,7 +2451,7 @@ export const series: Serie[] = [
               "format": "vertical 9:16",
               "source": "rapidocms"
             },
-            "masterRapidoUrl": null
+            "masterRapidoUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/FoodEatUp-EP029-Lire-ses-previsions"
           },
           {
             "id": "EP030",
@@ -2521,7 +2521,7 @@ export const series: Serie[] = [
               "format": "vertical 9:16",
               "source": "rapidocms"
             },
-            "masterRapidoUrl": null
+            "masterRapidoUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/FoodEatUp-EP030-Academy"
           }
         ]
       },
@@ -2541,9 +2541,9 @@ export const series: Serie[] = [
             "accroche": "C'est quoi, ça ?",
             "punchline": "Sans DLC tracées, personne ne sait.",
             "resume": "Tu crées ton étiquette DLC en trois secondes, avec le produit, la date et l'agent. Plus personne n'ouvre un bac en se demandant ce que c'est.",
-            "statut": "a_produire",
-            "dureeSecondes": null,
-            "videoUrl": null,
+            "statut": "monte",
+            "dureeSecondes": 37.5,
+            "videoUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/tiktok/EP031.mp4",
             "reseaux": {
               "facebook": {
                 "statut": "a_venir",
@@ -2605,7 +2605,7 @@ export const series: Serie[] = [
               "format": "vertical 9:16",
               "source": "rapidocms"
             },
-            "masterRapidoUrl": null
+            "masterRapidoUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/FoodEatUp-EP031-Etiquettes-de-production"
           },
           {
             "id": "EP032",
@@ -2618,9 +2618,9 @@ export const series: Serie[] = [
             "accroche": "Ta recette « au feeling ».",
             "punchline": "Une fiche technique, et c'est pareil tous les jours.",
             "resume": "Ta recette est enregistrée : ingrédients, quantités, étapes. Le plat sort pareil que ce soit toi ou ton commis. Et son coût est calculé.",
-            "statut": "a_produire",
-            "dureeSecondes": null,
-            "videoUrl": null,
+            "statut": "monte",
+            "dureeSecondes": 37.5,
+            "videoUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/tiktok/EP032.mp4",
             "reseaux": {
               "facebook": {
                 "statut": "a_venir",
@@ -2682,7 +2682,7 @@ export const series: Serie[] = [
               "format": "vertical 9:16",
               "source": "rapidocms"
             },
-            "masterRapidoUrl": null
+            "masterRapidoUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/FoodEatUp-EP032-Ma-carte-fiche-recette"
           },
           {
             "id": "EP033",
@@ -2695,9 +2695,9 @@ export const series: Serie[] = [
             "accroche": "Tu as tout préparé. Presque.",
             "punchline": "Ce qui n'est pas suivi finit par disparaître.",
             "resume": "Ce qui n'est pas suivi disparaît. Ici chaque produit a son niveau, son seuil et son historique. Tu vois le trou avant le service, pas après.",
-            "statut": "a_produire",
-            "dureeSecondes": null,
-            "videoUrl": null,
+            "statut": "monte",
+            "dureeSecondes": 37.5,
+            "videoUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/tiktok/EP033.mp4",
             "reseaux": {
               "facebook": {
                 "statut": "a_venir",
@@ -2759,7 +2759,7 @@ export const series: Serie[] = [
               "format": "vertical 9:16",
               "source": "rapidocms"
             },
-            "masterRapidoUrl": null
+            "masterRapidoUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/FoodEatUp-EP033-Mouvements-de-stock"
           },
           {
             "id": "EP034",
@@ -2772,9 +2772,9 @@ export const series: Serie[] = [
             "accroche": "Chaque service, une improvisation.",
             "punchline": "Ça marche. Jusqu'au jour où ça ne marche plus.",
             "resume": "Tes procédures sont dans l'outil, pas dans ta tête. Le service ne dépend plus de qui est là ce soir.",
-            "statut": "bloque",
-            "dureeSecondes": null,
-            "videoUrl": null,
+            "statut": "monte",
+            "dureeSecondes": 37.5,
+            "videoUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/tiktok/EP034.mp4",
             "reseaux": {
               "facebook": {
                 "statut": "a_venir",
@@ -2830,7 +2830,7 @@ export const series: Serie[] = [
               "format": "vertical 9:16",
               "source": "rapidocms"
             },
-            "masterRapidoUrl": null
+            "masterRapidoUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/FoodEatUp-EP034-Procedures-de-service"
           },
           {
             "id": "EP035",
@@ -2843,9 +2843,9 @@ export const series: Serie[] = [
             "accroche": "Ta terrasse, un jour de vent.",
             "punchline": "Certaines choses se prévoient.",
             "resume": "Prévisions de fréquentation, météo, événements du quartier : PrediBot te dit à quoi ressemble ton service avant qu'il commence.",
-            "statut": "a_produire",
-            "dureeSecondes": null,
-            "videoUrl": null,
+            "statut": "monte",
+            "dureeSecondes": 37.5,
+            "videoUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/tiktok/EP035.mp4",
             "reseaux": {
               "facebook": {
                 "statut": "a_venir",
@@ -2907,7 +2907,7 @@ export const series: Serie[] = [
               "format": "vertical 9:16",
               "source": "rapidocms"
             },
-            "masterRapidoUrl": null
+            "masterRapidoUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/FoodEatUp-EP035-Lire-ses-previsions"
           },
           {
             "id": "EP036",
@@ -2920,9 +2920,9 @@ export const series: Serie[] = [
             "accroche": "Toi, devant tes abonnements.",
             "punchline": "Additionne-les. Vraiment.",
             "resume": "Additionne tes abonnements actuels. Ici, la caisse, le stock, le planning, la compta et le marketing sont dans le même outil, sur la même base.",
-            "statut": "a_produire",
-            "dureeSecondes": null,
-            "videoUrl": null,
+            "statut": "monte",
+            "dureeSecondes": 37.5,
+            "videoUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/tiktok/EP036.mp4",
             "reseaux": {
               "facebook": {
                 "statut": "a_venir",
@@ -2977,7 +2977,7 @@ export const series: Serie[] = [
               "format": "vertical 9:16",
               "source": "rapidocms"
             },
-            "masterRapidoUrl": null
+            "masterRapidoUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/FoodEatUp-EP036-Un-seul-abonnement"
           },
           {
             "id": "EP037",
@@ -2990,9 +2990,9 @@ export const series: Serie[] = [
             "accroche": "Fermeture. Troisième soir d'affilée.",
             "punchline": "Un planning bien fait, ça se voit sur les visages.",
             "resume": "Tu construis le planning de la semaine par glisser-déposer, avec le coût qui s'affiche en direct. Tes équipes savent, et toi aussi.",
-            "statut": "a_produire",
-            "dureeSecondes": null,
-            "videoUrl": null,
+            "statut": "monte",
+            "dureeSecondes": 37.5,
+            "videoUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/tiktok/EP037.mp4",
             "reseaux": {
               "facebook": {
                 "statut": "a_venir",
@@ -3054,7 +3054,7 @@ export const series: Serie[] = [
               "format": "vertical 9:16",
               "source": "rapidocms"
             },
-            "masterRapidoUrl": null
+            "masterRapidoUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/FoodEatUp-EP037-Planning-par-employe-ou-par-poste"
           },
           {
             "id": "EP038",
@@ -3067,9 +3067,9 @@ export const series: Serie[] = [
             "accroche": "Le réappro du lundi.",
             "punchline": "Commander à l'instinct, ça finit toujours en course.",
             "resume": "Ta commande fournisseur se construit depuis tes stocks bas et ta production prévue. Tu ne commandes plus à l'instinct dans les rayons.",
-            "statut": "a_produire",
-            "dureeSecondes": null,
-            "videoUrl": null,
+            "statut": "monte",
+            "dureeSecondes": 37.5,
+            "videoUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/tiktok/EP038.mp4",
             "reseaux": {
               "facebook": {
                 "statut": "a_venir",
@@ -3131,7 +3131,7 @@ export const series: Serie[] = [
               "format": "vertical 9:16",
               "source": "rapidocms"
             },
-            "masterRapidoUrl": null
+            "masterRapidoUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/FoodEatUp-EP038-Ma-liste-de-courses"
           },
           {
             "id": "EP039",
@@ -3144,9 +3144,9 @@ export const series: Serie[] = [
             "accroche": "L'imprévu du service.",
             "punchline": "Il y en aura d'autres. Autant être prêt.",
             "resume": "L'imprévu, tu ne l'évites pas. Mais tu vois en direct l'état de ta salle, tes retards et tes annulations, et tu réattribues en un geste.",
-            "statut": "a_produire",
-            "dureeSecondes": null,
-            "videoUrl": null,
+            "statut": "monte",
+            "dureeSecondes": 37.5,
+            "videoUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/tiktok/EP039.mp4",
             "reseaux": {
               "facebook": {
                 "statut": "a_venir",
@@ -3208,7 +3208,7 @@ export const series: Serie[] = [
               "format": "vertical 9:16",
               "source": "rapidocms"
             },
-            "masterRapidoUrl": null
+            "masterRapidoUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/FoodEatUp-EP039-Gerer-et-no-shows"
           },
           {
             "id": "EP040",
@@ -3221,9 +3221,9 @@ export const series: Serie[] = [
             "accroche": "Ton stock de basilic.",
             "punchline": "Ce qui n'est pas compté disparaît toujours.",
             "resume": "Tu comptes une fois, l'outil compte ensuite. Chaque sortie d'ingrédient est déduite de ton stock, plat par plat.",
-            "statut": "a_produire",
-            "dureeSecondes": null,
-            "videoUrl": null,
+            "statut": "monte",
+            "dureeSecondes": 37.5,
+            "videoUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/tiktok/EP040.mp4",
             "reseaux": {
               "facebook": {
                 "statut": "a_venir",
@@ -3285,7 +3285,7 @@ export const series: Serie[] = [
               "format": "vertical 9:16",
               "source": "rapidocms"
             },
-            "masterRapidoUrl": null
+            "masterRapidoUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/FoodEatUp-EP040-Ajouter-un-mouvement"
           },
           {
             "id": "EP041",
@@ -3298,9 +3298,9 @@ export const series: Serie[] = [
             "accroche": "Ton contrôle des portions.",
             "punchline": "Ce qui part au sol, tu le paies quand même.",
             "resume": "La production sort exactement les quantités prévues de ton stock. Ce qui tombe au sol, tu le vois dans l'écart. Et ce qui se voit se corrige.",
-            "statut": "a_produire",
-            "dureeSecondes": null,
-            "videoUrl": null,
+            "statut": "monte",
+            "dureeSecondes": 37.5,
+            "videoUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/tiktok/EP041.mp4",
             "reseaux": {
               "facebook": {
                 "statut": "a_venir",
@@ -3362,7 +3362,7 @@ export const series: Serie[] = [
               "format": "vertical 9:16",
               "source": "rapidocms"
             },
-            "masterRapidoUrl": null
+            "masterRapidoUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/FoodEatUp-EP041-Sortie-des-ingredients-de-la-production"
           },
           {
             "id": "EP042",
@@ -3375,9 +3375,9 @@ export const series: Serie[] = [
             "accroche": "Tout faire seul.",
             "punchline": "À un moment, il faut être aidé.",
             "resume": "Tu n'as pas à tout faire seul. Iris prépare tes contenus, PrediBot surveille tes chiffres, tu gardes la validation.",
-            "statut": "bloque",
-            "dureeSecondes": null,
-            "videoUrl": null,
+            "statut": "monte",
+            "dureeSecondes": 37.5,
+            "videoUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/tiktok/EP042.mp4",
             "reseaux": {
               "facebook": {
                 "statut": "a_venir",
@@ -3440,7 +3440,7 @@ export const series: Serie[] = [
               "format": "vertical 9:16",
               "source": "rapidocms"
             },
-            "masterRapidoUrl": null
+            "masterRapidoUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/FoodEatUp-EP042-Calendrier-de-communication-Iris"
           },
           {
             "id": "EP043",
@@ -3524,9 +3524,9 @@ export const series: Serie[] = [
             "accroche": "Prendre la commande en 2026.",
             "punchline": "La commande devrait partir en cuisine toute seule.",
             "resume": "Le client scanne, commande, la cuisine reçoit. Ton serveur passe son temps en salle, pas à recopier des lignes sur un carnet.",
-            "statut": "a_produire",
-            "dureeSecondes": null,
-            "videoUrl": null,
+            "statut": "monte",
+            "dureeSecondes": 37.5,
+            "videoUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/tiktok/EP044.mp4",
             "reseaux": {
               "facebook": {
                 "statut": "a_venir",
@@ -3588,7 +3588,7 @@ export const series: Serie[] = [
               "format": "vertical 9:16",
               "source": "rapidocms"
             },
-            "masterRapidoUrl": null
+            "masterRapidoUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/FoodEatUp-EP044-Commander-par-QR-code"
           },
           {
             "id": "EP045",
@@ -3601,9 +3601,9 @@ export const series: Serie[] = [
             "accroche": "Personne ne sait où tu es.",
             "punchline": "Ton restaurant non plus ne devrait pas être une boîte noire.",
             "resume": "Ton restaurant arrête d'être une boîte noire : ventes, marges, fréquentation, stock, module par module, sur la période que tu choisis.",
-            "statut": "a_produire",
-            "dureeSecondes": null,
-            "videoUrl": null,
+            "statut": "monte",
+            "dureeSecondes": 37.5,
+            "videoUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/tiktok/EP045.mp4",
             "reseaux": {
               "facebook": {
                 "statut": "a_venir",
@@ -3665,7 +3665,7 @@ export const series: Serie[] = [
               "format": "vertical 9:16",
               "source": "rapidocms"
             },
-            "masterRapidoUrl": null
+            "masterRapidoUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/FoodEatUp-EP045-Statistiques-par-module"
           },
           {
             "id": "EP046",
@@ -4827,9 +4827,9 @@ export const series: Serie[] = [
             "accroche": "Ton système de pointage.",
             "punchline": "Un badge, un QR code, un code PIN. Point.",
             "resume": "Tu édites ton dossier de conformité sur la période de ton choix, prêt à présenter.",
-            "statut": "a_produire",
-            "dureeSecondes": null,
-            "videoUrl": null,
+            "statut": "monte",
+            "dureeSecondes": 37.5,
+            "videoUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/tiktok/EP061.mp4",
             "reseaux": {
               "facebook": {
                 "statut": "a_venir",
@@ -4891,7 +4891,7 @@ export const series: Serie[] = [
               "format": "vertical 9:16",
               "source": "rapidocms"
             },
-            "masterRapidoUrl": null
+            "masterRapidoUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/FoodEatUp-EP061-Exporter-l-historique-HACCP"
           },
           {
             "id": "EP062",
@@ -4904,9 +4904,9 @@ export const series: Serie[] = [
             "accroche": "Je te jure, j'étais là à 8 h.",
             "punchline": "Photo, heure, poste. Le débat est clos.",
             "resume": "La conformité devient une routine de deux minutes par service, au lieu d'un dimanche de rattrapage.",
-            "statut": "bloque",
-            "dureeSecondes": null,
-            "videoUrl": null,
+            "statut": "monte",
+            "dureeSecondes": 37.5,
+            "videoUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/tiktok/EP062.mp4",
             "reseaux": {
               "facebook": {
                 "statut": "a_venir",
@@ -4969,7 +4969,7 @@ export const series: Serie[] = [
               "format": "vertical 9:16",
               "source": "rapidocms"
             },
-            "masterRapidoUrl": null
+            "masterRapidoUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/FoodEatUp-EP062-Borne-de-pointage-des-employes"
           },
           {
             "id": "EP063",

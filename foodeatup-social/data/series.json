@@ -68,7 +68,7 @@
               "accroche": "Lui aussi attend ta commande.",
               "punchline": "Sauf que lui, il est patient. Tes clients, non.",
               "resume": "Ici, toutes tes commandes arrivent au même endroit : la salle, le téléphone, le site, la livraison. Une seule file, dans l'ordre d'arrivée. Plus personne n'attend parce qu'on a oublié un ticket.",
-              "statut": "publie",
+              "statut": "monte",
               "dureeSecondes": 37.5,
               "videoUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/tiktok/EP001.mp4",
               "reseaux": {
@@ -251,7 +251,7 @@
               "accroche": "Ton service du samedi soir.",
               "punchline": "Ça finit toujours par terre.",
               "resume": "Tu prends la commande à table, elle part en cuisine dans la seconde. Pas de carnet, pas d'aller-retour, pas de ticket perdu entre la salle et le pass.",
-              "statut": "publie",
+              "statut": "monte",
               "dureeSecondes": 37.5,
               "videoUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/tiktok/EP002.mp4",
               "reseaux": {
@@ -433,7 +433,7 @@
               "accroche": "Ta marge, en ce moment.",
               "punchline": "Elle coule. On va la repêcher.",
               "resume": "Chaque plat de ta carte a son coût matière calculé depuis tes ingrédients. Tu vois ta marge réelle, plat par plat, avant même de fixer ton prix.",
-              "statut": "publie",
+              "statut": "monte",
               "dureeSecondes": 37.5,
               "videoUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/tiktok/EP003.mp4",
               "reseaux": {
@@ -768,7 +768,7 @@
               "accroche": "Trois logiciels. Deux mains.",
               "punchline": "Un seul outil, ça change tout.",
               "resume": "Un seul paramétrage : ta carte, tes zones, tes tables, ta TVA. Tout le reste s'appuie dessus. Tu ne ressaisis jamais deux fois la même information.",
-              "statut": "publie",
+              "statut": "monte",
               "dureeSecondes": 37.5,
               "videoUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/tiktok/EP005.mp4",
               "reseaux": {
@@ -927,7 +927,7 @@
               "accroche": "Ta pizza part plus vite que ton stock.",
               "punchline": "Enfin… c'était avant.",
               "resume": "Tu envoies un plat, le stock bouge tout seul. Chaque sortie est tracée, avec la quantité et l'heure. Tu sais ce qu'il te reste sans compter les cartons.",
-              "statut": "publie",
+              "statut": "monte",
               "dureeSecondes": 37.5,
               "videoUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/tiktok/EP006.mp4",
               "reseaux": {
@@ -1113,7 +1113,7 @@
               "accroche": "Le seul avis client qui compte.",
               "punchline": "Les quatre cents autres, on s'en occupe.",
               "resume": "Tes avis Google remontent ici. Tu réponds depuis FoodEatUp, l'IA te propose une réponse dans ton ton, tu valides. Le client voit que tu l'as lu.",
-              "statut": "publie",
+              "statut": "monte",
               "dureeSecondes": 37.5,
               "videoUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/tiktok/EP007.mp4",
               "reseaux": {
@@ -1635,7 +1635,7 @@
               "accroche": "Toi, devant ta facture logicielle.",
               "punchline": "Mille euros par mois. Pour dix outils qui ne se parlent pas.",
               "resume": "Un écran, le matin : ton chiffre d'affaires prévu, ta fréquentation, tes points de tension. C'est ton point du jour, sans ouvrir dix onglets.",
-              "statut": "publie",
+              "statut": "monte",
               "dureeSecondes": 37.5,
               "videoUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/tiktok/EP010.mp4",
               "reseaux": {
@@ -5959,7 +5959,7 @@
               "accroche": "Chaque service, une improvisation.",
               "punchline": "Ça marche. Jusqu'au jour où ça ne marche plus.",
               "resume": "Tes procédures sont dans l'outil, pas dans ta tête. Le service ne dépend plus de qui est là ce soir.",
-              "statut": "bloque",
+              "statut": "monte",
               "dureeSecondes": 37.5,
               "videoUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/tiktok/EP034.mp4",
               "reseaux": {
@@ -7384,7 +7384,7 @@
               "accroche": "Tout faire seul.",
               "punchline": "À un moment, il faut être aidé.",
               "resume": "Tu n'as pas à tout faire seul. Iris prépare tes contenus, PrediBot surveille tes chiffres, tu gardes la validation.",
-              "statut": "bloque",
+              "statut": "monte",
               "dureeSecondes": 37.5,
               "videoUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/tiktok/EP042.mp4",
               "reseaux": {
@@ -10963,7 +10963,7 @@
                 "format": "vertical 9:16",
                 "source": "rapidocms"
               },
-              "masterRapidoUrl": null
+              "masterRapidoUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/FoodEatUp-EP061-Exporter-l-historique-HACCP"
             },
             {
               "id": "EP062",
@@ -10976,9 +10976,9 @@
               "accroche": "Je te jure, j'étais là à 8 h.",
               "punchline": "Photo, heure, poste. Le débat est clos.",
               "resume": "La conformité devient une routine de deux minutes par service, au lieu d'un dimanche de rattrapage.",
-              "statut": "bloque",
-              "dureeSecondes": null,
-              "videoUrl": null,
+              "statut": "monte",
+              "dureeSecondes": 37.5,
+              "videoUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/tiktok/EP062.mp4",
               "reseaux": {
                 "facebook": {
                   "statut": "a_venir",
@@ -11145,7 +11145,7 @@
                 "format": "vertical 9:16",
                 "source": "rapidocms"
               },
-              "masterRapidoUrl": null
+              "masterRapidoUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/FoodEatUp-EP062-Borne-de-pointage-des-employes"
             },
             {
               "id": "EP063",
