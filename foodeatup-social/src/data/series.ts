@@ -5059,9 +5059,9 @@ export const series: Serie[] = [
             "accroche": "Le planning de la semaine.",
             "punchline": "Par employé ou par poste. Imprimable. À jour.",
             "resume": "Le planning se construit en glisser-déposer, avec le coût de la semaine qui s'affiche pendant que tu poses les shifts.",
-            "statut": "a_produire",
-            "dureeSecondes": null,
-            "videoUrl": null,
+            "statut": "monte",
+            "dureeSecondes": 37.5,
+            "videoUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/tiktok/EP064.mp4",
             "reseaux": {
               "facebook": {
                 "statut": "a_venir",
@@ -5123,7 +5123,7 @@ export const series: Serie[] = [
               "format": "vertical 9:16",
               "source": "rapidocms"
             },
-            "masterRapidoUrl": null
+            "masterRapidoUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/FoodEatUp-EP064-Planning-et-taches-de-l-employe"
           },
           {
             "id": "EP065",
@@ -5136,9 +5136,9 @@ export const series: Serie[] = [
             "accroche": "Qui a accès à quoi ?",
             "punchline": "Chaque rôle voit exactement ce qu'il doit voir.",
             "resume": "Les heures réelles sont pointées. Tu compares le prévu et le réalisé, sans discussion de fin de mois.",
-            "statut": "a_produire",
-            "dureeSecondes": null,
-            "videoUrl": null,
+            "statut": "monte",
+            "dureeSecondes": 37.5,
+            "videoUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/tiktok/EP065.mp4",
             "reseaux": {
               "facebook": {
                 "statut": "a_venir",
@@ -5200,7 +5200,7 @@ export const series: Serie[] = [
               "format": "vertical 9:16",
               "source": "rapidocms"
             },
-            "masterRapidoUrl": null
+            "masterRapidoUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/FoodEatUp-EP065-Historique-des-pointages"
           },
           {
             "id": "EP066",
@@ -5213,9 +5213,9 @@ export const series: Serie[] = [
             "accroche": "Ta cuisine n'a personne à qui parler.",
             "punchline": "Jarvis répond, lui. Et il note.",
             "resume": "Une demande de congé arrive, tu valides ou tu refuses depuis l'écran. Le planning se met à jour tout seul.",
-            "statut": "a_produire",
-            "dureeSecondes": null,
-            "videoUrl": null,
+            "statut": "monte",
+            "dureeSecondes": 37.5,
+            "videoUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/tiktok/EP066.mp4",
             "reseaux": {
               "facebook": {
                 "statut": "a_venir",
@@ -5270,7 +5270,7 @@ export const series: Serie[] = [
               "format": "vertical 9:16",
               "source": "rapidocms"
             },
-            "masterRapidoUrl": null
+            "masterRapidoUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/FoodEatUp-EP066-Demande-d-absence-ou-de-conge"
           },
           {
             "id": "EP067",
@@ -5283,9 +5283,9 @@ export const series: Serie[] = [
             "accroche": "Ton relevé de température.",
             "punchline": "Un vrai relevé, horodaté, par équipement.",
             "resume": "Contrats et documents employés sont rangés au même endroit, avec leurs échéances.",
-            "statut": "a_produire",
-            "dureeSecondes": null,
-            "videoUrl": null,
+            "statut": "monte",
+            "dureeSecondes": 37.5,
+            "videoUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/tiktok/EP067.mp4",
             "reseaux": {
               "facebook": {
                 "statut": "a_venir",
@@ -5347,7 +5347,7 @@ export const series: Serie[] = [
               "format": "vertical 9:16",
               "source": "rapidocms"
             },
-            "masterRapidoUrl": null
+            "masterRapidoUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/FoodEatUp-EP067-Salaire-et-contrat"
           },
           {
             "id": "EP068",
@@ -5412,7 +5412,7 @@ export const series: Serie[] = [
             "tutorielModuleUrl": "https://tutoriel.foodeatup.com/module/equipe-planning",
             "tutorielManquant": "Ce chapitre n'a pas encore sa fiche dans l'Academy.",
             "higgsfield": {
-              "videoSourceUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/Higgsfield-source-EP068-Le-second-avis",
+              "videoSourceUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/Higgsfield-source-EP068-Le-second-avis-v2",
               "duree": "10 s",
               "format": "vertical 9:16",
               "source": "rapidocms"
