@@ -4982,9 +4982,9 @@ export const series: Serie[] = [
             "accroche": "Ta demande de congé.",
             "punchline": "Demandée, reçue, validée. Sans papier.",
             "resume": "Tu crées ta fiche employé avec son rôle et ses horaires. Elle alimente le planning, les pointages et la paie.",
-            "statut": "a_produire",
-            "dureeSecondes": null,
-            "videoUrl": null,
+            "statut": "monte",
+            "dureeSecondes": 37.5,
+            "videoUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/tiktok/EP063.mp4",
             "reseaux": {
               "facebook": {
                 "statut": "a_venir",
@@ -5046,7 +5046,7 @@ export const series: Serie[] = [
               "format": "vertical 9:16",
               "source": "rapidocms"
             },
-            "masterRapidoUrl": null
+            "masterRapidoUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/FoodEatUp-EP063-Horaires-d-un-employe"
           },
           {
             "id": "EP064",
