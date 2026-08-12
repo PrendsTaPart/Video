@@ -5662,9 +5662,9 @@ export const series: Serie[] = [
             "accroche": "Contrôle sanitaire. Ce matin.",
             "punchline": "Tout l'historique HACCP, exporté en un clic.",
             "resume": "Une absence, et tu vois immédiatement quel service est découvert. Tu remplaces avant l'ouverture.",
-            "statut": "a_produire",
-            "dureeSecondes": null,
-            "videoUrl": null,
+            "statut": "monte",
+            "dureeSecondes": 37.5,
+            "videoUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/tiktok/EP072.mp4",
             "reseaux": {
               "facebook": {
                 "statut": "a_venir",
@@ -5726,7 +5726,7 @@ export const series: Serie[] = [
               "format": "vertical 9:16",
               "source": "rapidocms"
             },
-            "masterRapidoUrl": null
+            "masterRapidoUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/FoodEatUp-EP072-Absence-et-service-decouvert"
           },
           {
             "id": "EP073",
