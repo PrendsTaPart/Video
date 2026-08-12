@@ -403,6 +403,20 @@
       "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3GXYlNxkbz83gXaGDVVrTni1dX2/hf_20260811_160803_4a44cc47-1a75-4339-857c-4cb2ef1d9fe3.mp4"
     }
   ],
+  "EP063": [
+    {
+      "at": 1786494236.102832,
+      "job": "68d72257-828f-4167-94ac-7c54dd6c3863",
+      "score": 1.0,
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3GXYlNxkbz83gXaGDVVrTni1dX2/hf_20260812_002356_68d72257-828f-4167-94ac-7c54dd6c3863.mp4"
+    },
+    {
+      "at": 1786491670.295841,
+      "job": "e177aa0f-25f6-48e8-81b1-ef8f0124b1b6",
+      "score": 1.0,
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3GXYlNxkbz83gXaGDVVrTni1dX2/hf_20260811_234110_e177aa0f-25f6-48e8-81b1-ef8f0124b1b6.mp4"
+    }
+  ],
   "EP064": [
     {
       "at": 1786466761.604385,
@@ -427,12 +441,28 @@
       "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3GXYlNxkbz83gXaGDVVrTni1dX2/hf_20260811_170542_32444aba-008c-40aa-80d6-d3a92b175256.mp4"
     }
   ],
+  "EP067": [
+    {
+      "at": 1786496980.412231,
+      "job": "4427cf75-d4e8-4874-8d0f-5ed07b3f981a",
+      "score": 1.0,
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3GXYlNxkbz83gXaGDVVrTni1dX2/hf_20260812_010940_4427cf75-d4e8-4874-8d0f-5ed07b3f981a.mp4"
+    }
+  ],
   "EP068": [
     {
       "at": 1786469422.571953,
       "job": "4cefe415-9d3a-41cc-b6a0-70e20abb4a4e",
       "score": 1.0,
       "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3GXYlNxkbz83gXaGDVVrTni1dX2/hf_20260811_173022_4cefe415-9d3a-41cc-b6a0-70e20abb4a4e.mp4"
+    }
+  ],
+  "EP069": [
+    {
+      "at": 1786501394.072148,
+      "job": "8fda992a-05a4-48aa-a15d-a37b07e89f65",
+      "score": 1.0,
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3GXYlNxkbz83gXaGDVVrTni1dX2/hf_20260812_022314_8fda992a-05a4-48aa-a15d-a37b07e89f65.mp4"
     }
   ],
   "EP070": [
@@ -481,6 +511,14 @@
       "job": "2b2204c1-35b4-46f0-ae0f-c08687069fd8",
       "score": 1.0,
       "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3GXYlNxkbz83gXaGDVVrTni1dX2/hf_20260811_202445_2b2204c1-35b4-46f0-ae0f-c08687069fd8.mp4"
+    }
+  ],
+  "EP076": [
+    {
+      "at": 1786495894.542973,
+      "job": "5b5d6841-6e88-49a2-8c4a-651f1e54b62b",
+      "score": 1.0,
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3GXYlNxkbz83gXaGDVVrTni1dX2/hf_20260812_005134_5b5d6841-6e88-49a2-8c4a-651f1e54b62b.mp4"
     }
   ],
   "EP077": [
@@ -537,6 +575,50 @@
       "job": "1ee3888b-1e36-4ee6-8a33-293053a6ff38",
       "score": 1.0,
       "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3GXYlNxkbz83gXaGDVVrTni1dX2/hf_20260811_224457_1ee3888b-1e36-4ee6-8a33-293053a6ff38.mp4"
+    }
+  ],
+  "EP084": [
+    {
+      "at": 1786492932.766618,
+      "job": "ccbb25b8-7ddc-4baf-8a6a-2ab21e254e59",
+      "score": 1.0,
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3GXYlNxkbz83gXaGDVVrTni1dX2/hf_20260812_000212_ccbb25b8-7ddc-4baf-8a6a-2ab21e254e59.mp4"
+    },
+    {
+      "at": 1786490033.72447,
+      "job": "0d06d50d-656b-43de-8acd-15f7bbd66370",
+      "score": 1.0,
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3GXYlNxkbz83gXaGDVVrTni1dX2/hf_20260811_231353_0d06d50d-656b-43de-8acd-15f7bbd66370.mp4"
+    }
+  ],
+  "EP088": [
+    {
+      "at": 1786503170.12809,
+      "job": "ad162f09-30c0-4a9b-a7ab-25d74189ef2f",
+      "score": 1.0,
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3GXYlNxkbz83gXaGDVVrTni1dX2/hf_20260812_025250_ad162f09-30c0-4a9b-a7ab-25d74189ef2f.mp4"
+    },
+    {
+      "at": 1786500221.137119,
+      "job": "cb66c766-ae18-4b5d-87e7-9300231df727",
+      "score": 1.0,
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3GXYlNxkbz83gXaGDVVrTni1dX2/hf_20260812_020341_cb66c766-ae18-4b5d-87e7-9300231df727.mp4"
+    }
+  ],
+  "EP089": [
+    {
+      "at": 1786498903.752157,
+      "job": "62af224b-58f7-440d-af38-b980425195bf",
+      "score": 1.0,
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3GXYlNxkbz83gXaGDVVrTni1dX2/hf_20260812_014143_62af224b-58f7-440d-af38-b980425195bf.mp4"
+    }
+  ],
+  "EP090": [
+    {
+      "at": 1786505046.502154,
+      "job": "3e1b9f57-365b-4f7f-984d-1ebd96224d28",
+      "score": 1.0,
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3GXYlNxkbz83gXaGDVVrTni1dX2/hf_20260812_032406_3e1b9f57-365b-4f7f-984d-1ebd96224d28.mp4"
     }
   ]
 }
