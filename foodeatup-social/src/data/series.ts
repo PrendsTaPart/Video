@@ -5739,9 +5739,9 @@ export const series: Serie[] = [
             "accroche": "Combien tu commandes pour samedi ?",
             "punchline": "Tes ventes le savent. Demande-leur.",
             "resume": "Tu paramètres ton établissement une fois : horaires, coordonnées, TVA. Tout FoodEatUp s'appuie dessus.",
-            "statut": "a_produire",
-            "dureeSecondes": null,
-            "videoUrl": null,
+            "statut": "monte",
+            "dureeSecondes": 37.5,
+            "videoUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/tiktok/EP073.mp4",
             "reseaux": {
               "facebook": {
                 "statut": "a_venir",
@@ -5803,7 +5803,7 @@ export const series: Serie[] = [
               "format": "vertical 9:16",
               "source": "rapidocms"
             },
-            "masterRapidoUrl": null
+            "masterRapidoUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/FoodEatUp-EP073-Profil-entreprise"
           },
           {
             "id": "EP074",
@@ -5816,9 +5816,9 @@ export const series: Serie[] = [
             "accroche": "Tu as oublié la liste.",
             "punchline": "Elle se construit toute seule. Et elle part au fournisseur.",
             "resume": "Tes catégories de produits, d'ingrédients et de recettes structurent tout le reste. Cinq minutes qui t'en font gagner cent.",
-            "statut": "a_produire",
-            "dureeSecondes": null,
-            "videoUrl": null,
+            "statut": "monte",
+            "dureeSecondes": 37.5,
+            "videoUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/tiktok/EP074.mp4",
             "reseaux": {
               "facebook": {
                 "statut": "a_venir",
@@ -5880,7 +5880,7 @@ export const series: Serie[] = [
               "format": "vertical 9:16",
               "source": "rapidocms"
             },
-            "masterRapidoUrl": null
+            "masterRapidoUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/FoodEatUp-EP074-Vos-categories"
           },
           {
             "id": "EP075",
@@ -5893,9 +5893,9 @@ export const series: Serie[] = [
             "accroche": "Ta facture fournisseur.",
             "punchline": "Photographie-la. Les prix se mettent à jour seuls.",
             "resume": "Tes taux de TVA sont posés une fois, appliqués partout : caisse, factures, comptabilité.",
-            "statut": "a_produire",
-            "dureeSecondes": null,
-            "videoUrl": null,
+            "statut": "monte",
+            "dureeSecondes": 37.5,
+            "videoUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/tiktok/EP075.mp4",
             "reseaux": {
               "facebook": {
                 "statut": "a_venir",
@@ -5957,7 +5957,7 @@ export const series: Serie[] = [
               "format": "vertical 9:16",
               "source": "rapidocms"
             },
-            "masterRapidoUrl": null
+            "masterRapidoUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/FoodEatUp-EP075-Creation-des-TVA"
           },
           {
             "id": "EP076",
