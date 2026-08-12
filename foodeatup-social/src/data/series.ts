@@ -5508,9 +5508,9 @@ export const series: Serie[] = [
             "accroche": "C'est fait.",
             "punchline": "Photo analysée par l'IA. Rapport objectif.",
             "resume": "Le nouveau arrive avec son accès, son planning et ses vidéos de formation. Jour un, il est utile.",
-            "statut": "a_produire",
-            "dureeSecondes": null,
-            "videoUrl": null,
+            "statut": "monte",
+            "dureeSecondes": 37.5,
+            "videoUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/tiktok/EP070.mp4",
             "reseaux": {
               "facebook": {
                 "statut": "a_venir",
@@ -5572,7 +5572,7 @@ export const series: Serie[] = [
               "format": "vertical 9:16",
               "source": "rapidocms"
             },
-            "masterRapidoUrl": null
+            "masterRapidoUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/FoodEatUp-EP070-Configuration-des-employes"
           },
           {
             "id": "EP071",
