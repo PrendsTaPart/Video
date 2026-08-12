@@ -11323,10 +11323,10 @@
               "tutorielModuleUrl": "https://tutoriel.foodeatup.com/module/equipe-planning",
               "higgsfield": {
                 "prompt": "Vertical 9:16, 10 seconds, photorealistic, office corridor, 4K. NO text overlay, NO subtitles, NO watermark, NO logo. An employee writes carefully on a yellow sticky note, presses it firmly onto the manager's office door, and walks away satisfied. The camera stays on the door. At 5 seconds the note peels off in slow motion, drifts sideways and slides down the gap behind a radiator. Final 2 seconds: the empty door, one corner of yellow just visible behind the radiator grille. Audio: corridor ambience, pen on paper, a sticky note pressed to wood, footsteps leaving, a faint paper slide, a metallic radiator tick. No music.",
-                "videoSourceUrl": null,
+                "videoSourceUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/Higgsfield-source-EP063-Le-post-it-perdu",
                 "duree": "10 s",
                 "format": "vertical 9:16",
-                "source": null
+                "source": "rapidocms"
               },
               "masterRapidoUrl": null
             },
@@ -12040,10 +12040,10 @@
               "tutorielModuleUrl": "https://tutoriel.foodeatup.com/module/equipe-planning",
               "higgsfield": {
                 "prompt": "Vertical 9:16, 10 seconds, photorealistic, kitchen fridge close-up, 4K. NO text overlay, NO subtitles, NO watermark, NO logo. A chef opens a fridge door, holds his bare hand inside for exactly two seconds, withdraws it, and gives a confident single nod as if a precise measurement has been taken. He writes nothing down. At 5 seconds he repeats the procedure on the freezer, this time with two fingers, and nods even more confidently. Final 2 seconds: he closes the door and walks away, hands in pockets, entirely satisfied with his data collection. Audio: fridge seal opening and closing, compressor hum, kitchen ambience, one decisive \"Hm.\" repeated twice. No music.",
-                "videoSourceUrl": null,
+                "videoSourceUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/Higgsfield-source-EP067-Le-thermometre-humain",
                 "duree": "10 s",
                 "format": "vertical 9:16",
-                "source": null
+                "source": "rapidocms"
               },
               "masterRapidoUrl": null
             },
@@ -12389,10 +12389,10 @@
               "tutorielModuleUrl": "https://tutoriel.foodeatup.com/module/equipe-planning",
               "higgsfield": {
                 "prompt": "Vertical 9:16, 10 seconds, photorealistic, restaurant back door, morning, 4K. NO text overlay, NO subtitles, NO watermark, NO logo. A delivery driver stacks fifteen boxes and crates against the back door with impressive speed, drops a crumpled delivery note on top, and is already jogging back to his van before anyone appears. At 5 seconds the kitchen door opens and a cook steps out holding a pen, looking at an empty street. Final 2 seconds: the van pulls away in the background; the cook looks down at the tower of unchecked boxes. Audio: crates thudding on concrete, fast footsteps, a van door sliding shut, an engine pulling away, a kitchen door creak, then street quiet. No music.",
-                "videoSourceUrl": null,
+                "videoSourceUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/Higgsfield-source-EP069-Le-livreur-fantome",
                 "duree": "10 s",
                 "format": "vertical 9:16",
-                "source": null
+                "source": "rapidocms"
               },
               "masterRapidoUrl": null
             },
@@ -13636,10 +13636,10 @@
               "tutorielModuleUrl": "https://tutoriel.foodeatup.com/module/configuration",
               "higgsfield": {
                 "prompt": "Vertical 9:16, 10 seconds, photorealistic, walk-in fridge, cold light, 4K. NO text overlay, NO subtitles, NO watermark, NO logo. A chef counts vacuum-packed steaks on a shelf out loud, pointing at each one. He reaches the end, frowns, and starts again from the beginning. Second count gives a different number. He starts a third time, now moving each pack physically to the other side of the shelf as he counts. At 6 seconds a colleague walks past and takes one. Final 2 seconds: the chef finishes his count, satisfied, unaware. Audio: cold room compressor drone, vacuum plastic crinkling, murmured counting in French, footsteps passing, plastic rustle, then counting continuing. No music.",
-                "videoSourceUrl": null,
+                "videoSourceUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/Higgsfield-source-EP076-Le-recomptage",
                 "duree": "10 s",
                 "format": "vertical 9:16",
-                "source": null
+                "source": "rapidocms"
               },
               "masterRapidoUrl": null
             },
@@ -15040,10 +15040,10 @@
               "tutorielModuleUrl": "https://tutoriel.foodeatup.com/module/comptabilite",
               "higgsfield": {
                 "prompt": "Vertical 9:16, 10 seconds, photorealistic, restaurant table close-up, 4K. NO text overlay, NO subtitles, NO watermark, NO logo. A customer holds a phone over a QR code taped to a restaurant table. The code is torn across one corner and covered in three overlapping layers of yellowed sticky tape. He moves the phone closer, then further, then tilts it, then tilts the whole table slightly. At 6 seconds he gives up and looks around for a waiter. Final 2 seconds: the phone camera finally focuses — on a reflection of the ceiling light. Audio: restaurant ambience, a phone scan failure buzz repeated three times, tape crinkling, a table leg scraping, an impatient tap on the screen. No music.",
-                "videoSourceUrl": null,
+                "videoSourceUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/Higgsfield-source-EP084-Le-QR-code-scotche",
                 "duree": "10 s",
                 "format": "vertical 9:16",
-                "source": null
+                "source": "rapidocms"
               },
               "masterRapidoUrl": null
             },
@@ -15718,10 +15718,10 @@
               "tutorielManquant": "Ce chapitre n'a pas encore sa fiche dans l'Academy.",
               "higgsfield": {
                 "prompt": "Vertical 9:16, 10 seconds, photorealistic, tight portrait, restaurant back office, 4K. NO text overlay, NO subtitles, NO watermark, NO logo. Close-up on a restaurant owner's face lit by his phone screen, smiling as he scrolls. The smile holds, then falters, then collapses entirely into a flat stare. He scrolls back up and reads the same thing again. At 6 seconds he lowers the phone slowly to the desk, screen down. Final 2 seconds: he picks it up and reads it a third time. Audio: quiet office, a finger swiping glass, a small amused hum that stops abruptly, a long silence, a phone set face-down on wood, then picked up again. No music.",
-                "videoSourceUrl": null,
+                "videoSourceUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/Higgsfield-source-EP088-Une-etoile",
                 "duree": "10 s",
                 "format": "vertical 9:16",
-                "source": null
+                "source": "rapidocms"
               },
               "masterRapidoUrl": null
             },
@@ -15898,10 +15898,10 @@
               "tutorielModuleUrl": "https://tutoriel.foodeatup.com/module/site-web-vitrine",
               "higgsfield": {
                 "prompt": "Vertical 9:16, 10 seconds, photorealistic, restaurant entrance counter, 4K. NO text overlay, NO subtitles, NO watermark, NO logo. A large glass jar sits on a counter beside a handwritten sign, intended for a prize draw. Inside there is exactly one folded slip of paper. The camera pushes in slowly on the single slip. At 6 seconds a hand reaches in, takes the slip out, unfolds it, and reads it. Final 2 seconds: the same hand refolds it and puts it back in the empty jar. Audio: entrance ambience, a door opening in the background, glass resonance as a hand reaches in, paper unfolding, a beat of silence, paper dropped back into glass. No music.",
-                "videoSourceUrl": null,
+                "videoSourceUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/Higgsfield-source-EP089-Le-bocal-presque-vide",
                 "duree": "10 s",
                 "format": "vertical 9:16",
-                "source": null
+                "source": "rapidocms"
               },
               "masterRapidoUrl": null
             },
@@ -16079,10 +16079,10 @@
               "tutorielModuleUrl": "https://tutoriel.foodeatup.com/module/site-web-vitrine",
               "higgsfield": {
                 "prompt": "Vertical 9:16, 10 seconds, photorealistic, dim restaurant office, single warm lamp, 4K. NO text overlay, NO subtitles, NO watermark, NO logo. A restaurant manager sits alone at a desk, tilting an empty espresso cup and studying the coffee grounds inside with intense concentration, as if reading a forecast. He rotates the cup slowly, tilts his head, then nods once at something only he can see. At 6 seconds he writes a single number on a sheet of paper and underlines it twice. Final 2 seconds: he looks up at the camera with total conviction. Audio: quiet office, a clock ticking, ceramic rotating on a wooden desk, a pen underlining twice, one confident \"Voilà.\" No music.",
-                "videoSourceUrl": null,
+                "videoSourceUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/Higgsfield-source-EP090-Le-marc-de-cafe",
                 "duree": "10 s",
                 "format": "vertical 9:16",
-                "source": null
+                "source": "rapidocms"
               },
               "masterRapidoUrl": null
             }

@@ -5041,10 +5041,10 @@ export const series: Serie[] = [
             },
             "tutorielModuleUrl": "https://tutoriel.foodeatup.com/module/equipe-planning",
             "higgsfield": {
-              "videoSourceUrl": null,
+              "videoSourceUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/Higgsfield-source-EP063-Le-post-it-perdu",
               "duree": "10 s",
               "format": "vertical 9:16",
-              "source": null
+              "source": "rapidocms"
             },
             "masterRapidoUrl": null
           },
@@ -5342,10 +5342,10 @@ export const series: Serie[] = [
             },
             "tutorielModuleUrl": "https://tutoriel.foodeatup.com/module/equipe-planning",
             "higgsfield": {
-              "videoSourceUrl": null,
+              "videoSourceUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/Higgsfield-source-EP067-Le-thermometre-humain",
               "duree": "10 s",
               "format": "vertical 9:16",
-              "source": null
+              "source": "rapidocms"
             },
             "masterRapidoUrl": null
           },
@@ -5490,10 +5490,10 @@ export const series: Serie[] = [
             },
             "tutorielModuleUrl": "https://tutoriel.foodeatup.com/module/equipe-planning",
             "higgsfield": {
-              "videoSourceUrl": null,
+              "videoSourceUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/Higgsfield-source-EP069-Le-livreur-fantome",
               "duree": "10 s",
               "format": "vertical 9:16",
-              "source": null
+              "source": "rapidocms"
             },
             "masterRapidoUrl": null
           },
@@ -6029,10 +6029,10 @@ export const series: Serie[] = [
             },
             "tutorielModuleUrl": "https://tutoriel.foodeatup.com/module/configuration",
             "higgsfield": {
-              "videoSourceUrl": null,
+              "videoSourceUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/Higgsfield-source-EP076-Le-recomptage",
               "duree": "10 s",
               "format": "vertical 9:16",
-              "source": null
+              "source": "rapidocms"
             },
             "masterRapidoUrl": null
           },
@@ -6641,10 +6641,10 @@ export const series: Serie[] = [
             },
             "tutorielModuleUrl": "https://tutoriel.foodeatup.com/module/comptabilite",
             "higgsfield": {
-              "videoSourceUrl": null,
+              "videoSourceUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/Higgsfield-source-EP084-Le-QR-code-scotche",
               "duree": "10 s",
               "format": "vertical 9:16",
-              "source": null
+              "source": "rapidocms"
             },
             "masterRapidoUrl": null
           },
@@ -6935,10 +6935,10 @@ export const series: Serie[] = [
             "tutorielModuleUrl": "https://tutoriel.foodeatup.com/module/site-web-vitrine",
             "tutorielManquant": "Ce chapitre n'a pas encore sa fiche dans l'Academy.",
             "higgsfield": {
-              "videoSourceUrl": null,
+              "videoSourceUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/Higgsfield-source-EP088-Une-etoile",
               "duree": "10 s",
               "format": "vertical 9:16",
-              "source": null
+              "source": "rapidocms"
             },
             "masterRapidoUrl": null
           },
@@ -7012,10 +7012,10 @@ export const series: Serie[] = [
             },
             "tutorielModuleUrl": "https://tutoriel.foodeatup.com/module/site-web-vitrine",
             "higgsfield": {
-              "videoSourceUrl": null,
+              "videoSourceUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/Higgsfield-source-EP089-Le-bocal-presque-vide",
               "duree": "10 s",
               "format": "vertical 9:16",
-              "source": null
+              "source": "rapidocms"
             },
             "masterRapidoUrl": null
           },
@@ -7090,10 +7090,10 @@ export const series: Serie[] = [
             },
             "tutorielModuleUrl": "https://tutoriel.foodeatup.com/module/site-web-vitrine",
             "higgsfield": {
-              "videoSourceUrl": null,
+              "videoSourceUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/Higgsfield-source-EP090-Le-marc-de-cafe",
               "duree": "10 s",
               "format": "vertical 9:16",
-              "source": null
+              "source": "rapidocms"
             },
             "masterRapidoUrl": null
           }

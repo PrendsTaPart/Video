@@ -1,11 +1,18 @@
 # Plans Higgsfield à générer — saisons 2 et 3
 
-Audit de l'historique Higgsfield du 11 août 2026 (`show_generations`, lecture
-seule). 63 des 150 plans existent. Les 26 ci-dessous manquent aux saisons 2 et 3.
+Audit de l'historique Higgsfield du 12 août 2026 (`show_generations`, lecture
+seule). **71 des 150 plans existent.** Les 18 ci-dessous manquent aux saisons 2
+et 3 — quinze en saison 2, trois en saison 3.
+
+La saison 3 est presque bouclée : il ne reste que EP085, EP086 et EP087. La
+saison 2 est coupée nette à EP045 : les quinze derniers épisodes forment un seul
+trou, presque tous sur le module HACCP.
 
 **Ces prompts ne se lancent pas depuis une session Claude** — la règle du dépôt
 l'interdit. Ils sont à coller dans l'interface Higgsfield. Format attendu :
 vertical 9:16, 10 s, le beat comique à 5,0 s, sans texte incrusté ni filigrane.
+
+Tout est prêt côté Drive sauf EP058, dont le chapitre n'a pas encore de vidéo.
 
 ## EP046 — Le sel
 
@@ -127,46 +134,6 @@ Saison 2 · HACCP · Congélation
 Vertical 9:16, 10 seconds, photorealistic, surreal but grounded, professional kitchen, 4K. NO text overlay, NO subtitles, NO watermark, NO logo. A large octopus sits in a stainless-steel sink in a working kitchen, calmly operating eight things at once with its arms: stirring a pot, flipping a pan, wiping a counter, ringing the service bell, holding a knife, plating, adjusting a burner and answering a wall phone. Human cooks work around it without reacting. Final 2 seconds: it pauses every arm simultaneously and turns one eye toward the camera. Audio: full busy kitchen soundscape layered dense — sizzling, bell, phone ringing, chopping, extractor — then all of it stopping at once for the final beat. No music.
 ```
 
-## EP063 — Le post-it perdu
-
-Saison 3 · Équipe & Planning · Créer un employé
-
-```
-Vertical 9:16, 10 seconds, photorealistic, office corridor, 4K. NO text overlay, NO subtitles, NO watermark, NO logo. An employee writes carefully on a yellow sticky note, presses it firmly onto the manager's office door, and walks away satisfied. The camera stays on the door. At 5 seconds the note peels off in slow motion, drifts sideways and slides down the gap behind a radiator. Final 2 seconds: the empty door, one corner of yellow just visible behind the radiator grille. Audio: corridor ambience, pen on paper, a sticky note pressed to wood, footsteps leaving, a faint paper slide, a metallic radiator tick. No music.
-```
-
-## EP067 — Le thermomètre humain
-
-Saison 3 · Équipe & Planning · Contrats
-
-```
-Vertical 9:16, 10 seconds, photorealistic, kitchen fridge close-up, 4K. NO text overlay, NO subtitles, NO watermark, NO logo. A chef opens a fridge door, holds his bare hand inside for exactly two seconds, withdraws it, and gives a confident single nod as if a precise measurement has been taken. He writes nothing down. At 5 seconds he repeats the procedure on the freezer, this time with two fingers, and nods even more confidently. Final 2 seconds: he closes the door and walks away, hands in pockets, entirely satisfied with his data collection. Audio: fridge seal opening and closing, compressor hum, kitchen ambience, one decisive "Hm." repeated twice. No music.
-```
-
-## EP069 — Le livreur fantôme
-
-Saison 3 · Équipe & Planning · Recrutement
-
-```
-Vertical 9:16, 10 seconds, photorealistic, restaurant back door, morning, 4K. NO text overlay, NO subtitles, NO watermark, NO logo. A delivery driver stacks fifteen boxes and crates against the back door with impressive speed, drops a crumpled delivery note on top, and is already jogging back to his van before anyone appears. At 5 seconds the kitchen door opens and a cook steps out holding a pen, looking at an empty street. Final 2 seconds: the van pulls away in the background; the cook looks down at the tower of unchecked boxes. Audio: crates thudding on concrete, fast footsteps, a van door sliding shut, an engine pulling away, a kitchen door creak, then street quiet. No music.
-```
-
-## EP076 — Le recomptage
-
-Saison 3 · Configuration · Zones et tables
-
-```
-Vertical 9:16, 10 seconds, photorealistic, walk-in fridge, cold light, 4K. NO text overlay, NO subtitles, NO watermark, NO logo. A chef counts vacuum-packed steaks on a shelf out loud, pointing at each one. He reaches the end, frowns, and starts again from the beginning. Second count gives a different number. He starts a third time, now moving each pack physically to the other side of the shelf as he counts. At 6 seconds a colleague walks past and takes one. Final 2 seconds: the chef finishes his count, satisfied, unaware. Audio: cold room compressor drone, vacuum plastic crinkling, murmured counting in French, footsteps passing, plastic rustle, then counting continuing. No music.
-```
-
-## EP084 — Le QR code scotché
-
-Saison 3 · Comptabilité · Dépenses
-
-```
-Vertical 9:16, 10 seconds, photorealistic, restaurant table close-up, 4K. NO text overlay, NO subtitles, NO watermark, NO logo. A customer holds a phone over a QR code taped to a restaurant table. The code is torn across one corner and covered in three overlapping layers of yellowed sticky tape. He moves the phone closer, then further, then tilts it, then tilts the whole table slightly. At 6 seconds he gives up and looks around for a waiter. Final 2 seconds: the phone camera finally focuses — on a reflection of the ceiling light. Audio: restaurant ambience, a phone scan failure buzz repeated three times, tape crinkling, a table leg scraping, an impatient tap on the screen. No music.
-```
-
 ## EP085 — Le ballon qui se dégonfle
 
 Saison 3 · Comptabilité · Synthèse
@@ -189,28 +156,4 @@ Saison 3 · Mon Site · Éditeur
 
 ```
 Vertical 9:16, 10 seconds, photorealistic, takeaway counter, 4K. NO text overlay, NO subtitles, NO watermark, NO logo. Three different delivery-platform tablets sit propped side by side on a counter. They all start chiming at once, each with a different tone, each screen flashing a different colour. A single employee reaches for all three at the same time with two hands. At 6 seconds a fourth device — a phone — starts ringing beside them. Final 2 seconds: he stands with one tablet in each hand and the third one held against his chest with his chin. Audio: three distinct order-notification chimes overlapping and repeating, a phone ringtone joining, plastic tablets clacking, one desperate inhale. No music.
-```
-
-## EP088 — Une étoile
-
-Saison 3 · Mon Site · Pages
-
-```
-Vertical 9:16, 10 seconds, photorealistic, tight portrait, restaurant back office, 4K. NO text overlay, NO subtitles, NO watermark, NO logo. Close-up on a restaurant owner's face lit by his phone screen, smiling as he scrolls. The smile holds, then falters, then collapses entirely into a flat stare. He scrolls back up and reads the same thing again. At 6 seconds he lowers the phone slowly to the desk, screen down. Final 2 seconds: he picks it up and reads it a third time. Audio: quiet office, a finger swiping glass, a small amused hum that stops abruptly, a long silence, a phone set face-down on wood, then picked up again. No music.
-```
-
-## EP089 — Le bocal presque vide
-
-Saison 3 · Mon Site · Domaine
-
-```
-Vertical 9:16, 10 seconds, photorealistic, restaurant entrance counter, 4K. NO text overlay, NO subtitles, NO watermark, NO logo. A large glass jar sits on a counter beside a handwritten sign, intended for a prize draw. Inside there is exactly one folded slip of paper. The camera pushes in slowly on the single slip. At 6 seconds a hand reaches in, takes the slip out, unfolds it, and reads it. Final 2 seconds: the same hand refolds it and puts it back in the empty jar. Audio: entrance ambience, a door opening in the background, glass resonance as a hand reaches in, paper unfolding, a beat of silence, paper dropped back into glass. No music.
-```
-
-## EP090 — Le marc de café
-
-Saison 3 · Mon Site · Leads du site
-
-```
-Vertical 9:16, 10 seconds, photorealistic, dim restaurant office, single warm lamp, 4K. NO text overlay, NO subtitles, NO watermark, NO logo. A restaurant manager sits alone at a desk, tilting an empty espresso cup and studying the coffee grounds inside with intense concentration, as if reading a forecast. He rotates the cup slowly, tilts his head, then nods once at something only he can see. At 6 seconds he writes a single number on a sheet of paper and underlines it twice. Final 2 seconds: he looks up at the camera with total conviction. Audio: quiet office, a clock ticking, ceramic rotating on a wooden desk, a pen underlining twice, one confident "Voilà." No music.
 ```
