@@ -170,86 +170,153 @@ def titre_youtube(e):
 # — un restaurateur et son agent, dans la même pièce.
 
 def prompt_higgsfield(e):
+    """Le plan d'ouverture. Marque RapidoCMS, végé-fruité en vedette.
+
+    L'anatomie de la saison 6 n'est pas celle des cinq autres. Là-bas, le hook
+    est un gag Higgsfield sous marque FoodEatUp et l'avatar explique un module.
+    Ici, c'est RapidoCMS qui présente sa méthode : le hook, la signature de fin
+    et les logos sont donc à sa charte, et c'est un végé-fruité qui porte le
+    plan. Le chef reste présent — c'est son restaurant — mais il n'est plus le
+    sujet : il est celui à qui on montre.
+    """
     nom, mcp, fait = BRIGADE[e["agent"]]
     decor, lumiere = DECORS[e["arc"]]
     return (
         "Vertical 9:16, 10 secondes, 4K. PAS de texte incrusté, PAS de "
-        "sous-titres, PAS de filigrane, PAS de logo.\n\n"
-        "DEUX personnages dans le même plan, et c'est voulu :\n"
-        "— le chef, PHOTORÉALISTE, joue le rôle : " + e["role"].lower() + ". "
-        "Veste blanche, tablier, il est chez lui dans son restaurant ;\n"
-        "— " + nom + ", personnage 3D stylisé de la Brigade Végé-Fruitée, "
-        "incrusté dans le même décor à côté de lui, à hauteur de comptoir. "
-        "Il ne parle pas : il fait le geste de son métier — " + fait + ".\n\n"
+        "sous-titres, PAS de filigrane, PAS de logo dans l'image.\n\n"
+        "IDENTITÉ VISUELLE : RapidoCMS. Bleu #03A9F5 présent dans le décor — "
+        "un écran, une lumière, un objet — sans jamais former de logo. Tons "
+        "clairs, blancs, gris #383838. Pas de crème, pas d'orange.\n\n"
+        "DEUX personnages dans le même plan :\n"
+        "— " + nom + ", personnage 3D stylisé de la Brigade Végé-Fruitée, EN "
+        "VEDETTE, au premier plan, deux tiers du cadre. C'est lui qui agit : "
+        "" + fait + " ;\n"
+        "— le chef, PHOTORÉALISTE, veste blanche et tablier, en retrait dans "
+        "son restaurant. Il regarde faire, il ne fait pas.\n\n"
         "Le mélange photo + 3D est assumé, comme un dessin animé posé dans une "
-        "prise de vue réelle. Les ombres et la lumière du personnage 3D suivent "
-        "celles du décor.\n\n"
+        "prise de vue réelle. Les ombres du personnage 3D suivent celles du "
+        "décor.\n\n"
         "Décor : " + decor + ". " + lumiere + ".\n"
-        "Action : " + e["publie"].split(".")[0].strip() + ". "
-        "À 5 secondes, le geste bascule et le personnage 3D réagit.\n"
-        "Deux dernières secondes : les deux regardent l'objectif, immobiles.\n\n"
-        "Audio : ambiance réelle du restaurant, aucun dialogue, pas de musique."
+        "Action : " + e["publie"].split(".")[0].strip() + ".\n"
+        "À 5 secondes, le geste aboutit et le chef réagit — surpris, puis "
+        "convaincu.\n"
+        "Deux dernières secondes : les deux regardent l'objectif côte à côte, "
+        "immobiles.\n\n"
+        "Audio : ambiance réelle du restaurant, un bip d'interface discret à "
+        "5 secondes, aucun dialogue, pas de musique."
     )
 
 
 def script_heygen(e):
-    """La phrase que dit le chef à l'écran. 25 à 30 mots, jamais plus."""
-    return e["publie"].split(".")[0].strip() + ". " + e["punchline"]
+    """Ce que dit le personnage HeyGen — et ce n'est plus le chef.
+
+    Dans les cinq premières saisons, l'avatar est le chef et il explique une
+    fonction du logiciel. Ici, l'avatar est LE VÉGÉ-FRUITÉ, monté en personnage
+    HeyGen, et il explique comment fabriquer cet épisode-là. Le restaurateur
+    n'apprend pas ce que fait un bouton : il apprend à produire sa vidéo.
+
+    Vingt-cinq à trente mots. Au-delà, le montage accélère la parole et ça
+    s'entend — mesuré dès la première saison.
+    """
+    nom, mcp, fait = BRIGADE[e["agent"]]
+    return (
+        f"Moi c'est {nom}. Pour cet épisode, {fait} — vous me le demandez en "
+        f"une phrase. Vos photos, notre gabarit : la vidéo part sur vos cinq "
+        f"réseaux le soir même."
+    )
 
 
 def kit(e):
-    """Les trois prompts à copier, avec leurs crochets."""
+    """Les quatre prompts à copier, avec leurs crochets.
+
+    L'ordre est celui de la chaîne, et la répartition dit la saison : les deux
+    premières étapes se passent CHEZ LE RESTAURATEUR — il filme, il fournit ses
+    photos — les deux dernières sont RapidoCMS qui monte et publie.
+    """
     nom, mcp, fait = BRIGADE[e["agent"]]
-    hf = prompt_higgsfield(e)
-    hf = (hf.replace("son restaurant", "[TON RESTAURANT]")
-            .replace("Action : ", "Action : chez [TON RESTAURANT], "))
+    hf = (prompt_higgsfield(e)
+          .replace("son restaurant", "[TON RESTAURANT]")
+          .replace("Action : ", "Action : chez [TON RESTAURANT], "))
     return [
         {
             "etape": 1,
-            "titre": "Le plan comique",
-            "outil": "Higgsfield",
+            "titre": "Vos images",
+            "outil": "Chez vous",
+            "cote": "restaurant",
             "guide": e["agent"],
-            "consigne": "Remplace ce qui est entre crochets par ce qui est chez toi, "
-                        "colle le tout dans Higgsfield, et lance. Dix secondes plus "
-                        "tard tu as ton plan.",
-            "lien": "https://higgsfield.ai/",
-            "prompt": hf + "\n\nÉléments à remplacer : [TON RESTAURANT], "
-                           "[TON PLAT], [TON PRÉNOM].",
-        },
-        {
-            "etape": 2,
-            "titre": "Le montage",
-            "outil": "Claude Code",
-            "guide": "tomate",
-            "consigne": "Dépose ton plan et ton avatar dans le dépôt, puis écris "
-                        "cette phrase à Claude Code. Tu n'ouvres aucun logiciel de "
-                        "montage.",
-            "lien": "https://claude.com/claude-code",
+            "consigne": "Commencez par ce que vous avez déjà : dix secondes de "
+                        "votre plat, de votre salle, de votre équipe. Filmé au "
+                        "téléphone, à la verticale. Si vous n'avez rien, l'étape "
+                        "suivante fabrique l'image à votre place.",
+            "lien": "https://site.foodeatup.com/",
             "prompt": (
-                "Monte l'épisode [TON NUMÉRO] de ma série.\n\n"
-                "— Plan comique : assets/hooks/[TON NUMÉRO].mp4\n"
-                "— Avatar : assets/avatar/[TON NUMÉRO].mp4\n"
-                "— Écran du logiciel : assets/software/[TON NUMÉRO].mp4\n"
-                "— Accroche à incruster : « " + e["accroche"] + " »\n"
-                "— Punchline en voix off à 5,0 s : « " + e["punchline"] + " »\n\n"
-                "Anatomie : A 0→9,5 · sting 9,5→18,5 · avatar seul 18,5→28,5 · "
-                "signature 28,5→32,5 · sting de marque 32,5→37,5.\n"
-                "Contrôle le master avant de me le rendre : 37,5 s, 1080×1920, "
-                "-14 LUFS, crête sous -1 dBTP."
+                "Ce que je fournis pour l'épisode [TON NUMÉRO] :\n\n"
+                "— une vidéo verticale de 10 s de [TON PLAT], filmée au "
+                "téléphone\n"
+                "— une photo de [TON RESTAURANT] : la salle, la devanture ou le "
+                "pass\n"
+                "— mon logo, si j'en ai un\n\n"
+                "Ce que je n'ai pas et que vous complétez avec vos gabarits : "
+                "[CE QUI ME MANQUE]."
             ),
         },
         {
+            "etape": 2,
+            "titre": "Le plan d'ouverture",
+            "outil": "Higgsfield",
+            "cote": "restaurant",
+            "guide": e["agent"],
+            "consigne": "Si vous n'avez pas d'images, ce prompt les fabrique. "
+                        "Remplacez ce qui est entre crochets, collez dans "
+                        "Higgsfield, lancez. Dix secondes plus tard, vous avez "
+                        "votre plan.",
+            "lien": "https://higgsfield.ai/",
+            "prompt": hf + "\n\nÀ remplacer : [TON RESTAURANT], [TON PLAT], "
+                           "[TON PRÉNOM].",
+        },
+        {
             "etape": 3,
+            "titre": "Le montage",
+            "outil": "Claude Code",
+            "cote": "rapidocms",
+            "guide": "tomate",
+            "consigne": "Le hook, la signature de fin et les logos sont ceux de "
+                        "RapidoCMS — vous ne les fournissez pas, ils sont dans "
+                        "le gabarit. Vos images occupent le centre. Vous "
+                        "n'ouvrez aucun logiciel de montage.",
+            "lien": "https://claude.com/claude-code",
+            "prompt": (
+                "Monte l'épisode [TON NUMÉRO] de ma série, gabarit RapidoCMS.\n\n"
+                "— Plan d'ouverture : assets/hooks/[TON NUMÉRO].mp4\n"
+                "— Personnage qui explique : assets/avatar/[TON NUMÉRO].mp4 "
+                "(" + nom + ", avatar HeyGen)\n"
+                "— Mes images de restaurant : assets/software/[TON NUMÉRO].mp4\n"
+                "— Accroche à incruster : « " + e["accroche"] + " »\n"
+                "— Punchline en voix off à 5,0 s : « " + e["punchline"] + " »\n\n"
+                "Habillage : hook, signature de fin et logos en charte "
+                "RapidoCMS — bleu #03A9F5, gris #383838, fond blanc. Pas de "
+                "crème, pas d'orange.\n"
+                "Anatomie : A 0→9,5 · sting RapidoCMS 9,5→18,5 · le personnage "
+                "seul 18,5→28,5 · signature RapidoCMS 28,5→32,5 · sting de "
+                "marque 32,5→37,5.\n"
+                "Contrôle avant de me le rendre : 37,5 s, 1080×1920, -14 LUFS, "
+                "crête sous -1 dBTP."
+            ),
+        },
+        {
+            "etape": 4,
             "titre": "La publication",
             "outil": "RapidoCMS",
+            "cote": "rapidocms",
             "guide": "betterave",
-            "consigne": "Une phrase, et les cinq réseaux sont programmés. Tu ne "
-                        "téléverses rien nulle part.",
+            "consigne": "Une phrase, et les cinq réseaux sont programmés. Le "
+                        "master part d'abord dans votre bibliothèque, puis en "
+                        "ligne. Vous ne téléversez rien nulle part.",
             "lien": "https://cms.rapidosoftware.com/register",
             "prompt": (
                 "Verse le master dans ma bibliothèque RapidoCMS, puis programme "
                 "les cinq réseaux de [TON RESTAURANT] :\n\n"
-                "— LinkedIn à 8 h, Facebook à 12 h, YouTube à 10 h, "
+                "— LinkedIn à 8 h, YouTube à 10 h, Facebook à 12 h, "
                 "Instagram à 18 h 30, TikTok à 19 h\n"
                 "— Légende : « " + e["accroche"] + " " + e["punchline"] + " » "
                 "puis le corps, puis « [TON APPEL À L'ACTION] : [TON SITE] »\n"

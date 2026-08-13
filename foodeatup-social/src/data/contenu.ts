@@ -20,6 +20,8 @@ export type EtapeKit = {
   etape: number;
   titre: string;
   outil: string;
+  /** « restaurant » : ça se passe chez le client. « rapidocms » : chez nous. */
+  cote: "restaurant" | "rapidocms";
   /** Le végé-fruité qui explique cette étape. */
   guide: string;
   consigne: string;
@@ -32,9 +34,9 @@ export type ContenuEpisode = {
   publications: Record<Reseau, PublicationTexte>;
   promptVignette: string;
   higgsfieldPrompt: string | null;
-  /** Saison 6 : ce que dit le chef à l'écran. */
+  /** Saison 6 : ce que dit le végé-fruité à l'écran, en personnage HeyGen. */
   scriptHeygen?: string | null;
-  /** Saison 6 : les trois prompts à copier, dans l'ordre de la chaîne. */
+  /** Saison 6 : les quatre prompts à copier, dans l'ordre de la chaîne. */
   kit?: EtapeKit[] | null;
   tutoriel: { description: string | null; etapes: string[]; astuce: string | null } | null;
 };
@@ -18161,35 +18163,48 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       }
     },
     "promptVignette": "Illustration 3D, cadrage vertical 9:16, même style que l'image de référence jointe. Le personnage de l'image de référence — La Fraise — gardé À L'IDENTIQUE : mêmes proportions, mêmes couleurs, même tenue, même accessoire. Ne le redessine pas, ne change pas son visage. Il est LA VEDETTE de l'image et occupe les deux tiers du cadre, en premier plan, tourné vers l'objectif. Ce qu'il fait ici : elle écrit le plan et le fait rendre en dix secondes. Scène : le plat, filmé comme une pub. Regarde-le une seconde. Décor derrière lui : le plat en très gros plan sur le pass, vapeur et reflets. lumière rasante de studio culinaire. Le décor reste flou et discret — c'est un fond, pas un sujet. Aucun humain photoréaliste dans l'image, aucun écran de logiciel lisible. Bande bleu RapidoCMS #03A9F5 en haut du cadre sur un cinquième de la hauteur, portant UNIQUEMENT le texte « PLAT FILMÉ COMME » en typographie arrondie très grasse, blanc, centré. Aucun autre texte, aucun logo ajouté, pas de filigrane, pas de bordure décorative.",
-    "higgsfieldPrompt": "Vertical 9:16, 10 secondes, 4K. PAS de texte incrusté, PAS de sous-titres, PAS de filigrane, PAS de logo.\n\nDEUX personnages dans le même plan, et c'est voulu :\n— le chef, PHOTORÉALISTE, joue le rôle : chef. Veste blanche, tablier, il est chez lui dans son restaurant ;\n— La Fraise, personnage 3D stylisé de la Brigade Végé-Fruitée, incrusté dans le même décor à côté de lui, à hauteur de comptoir. Il ne parle pas : il fait le geste de son métier — elle écrit le plan et le fait rendre en dix secondes.\n\nLe mélange photo + 3D est assumé, comme un dessin animé posé dans une prise de vue réelle. Les ombres et la lumière du personnage 3D suivent celles du décor.\n\nDécor : le plat en très gros plan sur le pass, vapeur et reflets. lumière rasante de studio culinaire.\nAction : Dix secondes sur le plat signature : la sauce qui nappe, la vapeur, la découpe. À 5 secondes, le geste bascule et le personnage 3D réagit.\nDeux dernières secondes : les deux regardent l'objectif, immobiles.\n\nAudio : ambiance réelle du restaurant, aucun dialogue, pas de musique.",
-    "scriptHeygen": "Dix secondes sur le plat signature : la sauce qui nappe, la vapeur, la découpe. Voilà pourquoi on se lève à six heures.",
+    "higgsfieldPrompt": "Vertical 9:16, 10 secondes, 4K. PAS de texte incrusté, PAS de sous-titres, PAS de filigrane, PAS de logo dans l'image.\n\nIDENTITÉ VISUELLE : RapidoCMS. Bleu #03A9F5 présent dans le décor — un écran, une lumière, un objet — sans jamais former de logo. Tons clairs, blancs, gris #383838. Pas de crème, pas d'orange.\n\nDEUX personnages dans le même plan :\n— La Fraise, personnage 3D stylisé de la Brigade Végé-Fruitée, EN VEDETTE, au premier plan, deux tiers du cadre. C'est lui qui agit : elle écrit le plan et le fait rendre en dix secondes ;\n— le chef, PHOTORÉALISTE, veste blanche et tablier, en retrait dans son restaurant. Il regarde faire, il ne fait pas.\n\nLe mélange photo + 3D est assumé, comme un dessin animé posé dans une prise de vue réelle. Les ombres du personnage 3D suivent celles du décor.\n\nDécor : le plat en très gros plan sur le pass, vapeur et reflets. lumière rasante de studio culinaire.\nAction : Dix secondes sur le plat signature : la sauce qui nappe, la vapeur, la découpe.\nÀ 5 secondes, le geste aboutit et le chef réagit — surpris, puis convaincu.\nDeux dernières secondes : les deux regardent l'objectif côte à côte, immobiles.\n\nAudio : ambiance réelle du restaurant, un bip d'interface discret à 5 secondes, aucun dialogue, pas de musique.",
+    "scriptHeygen": "Moi c'est La Fraise. Pour cet épisode, elle écrit le plan et le fait rendre en dix secondes — vous me le demandez en une phrase. Vos photos, notre gabarit : la vidéo part sur vos cinq réseaux le soir même.",
     "kit": [
       {
         "etape": 1,
-        "titre": "Le plan comique",
-        "outil": "Higgsfield",
+        "titre": "Vos images",
+        "outil": "Chez vous",
+        "cote": "restaurant",
         "guide": "fraise",
-        "consigne": "Remplace ce qui est entre crochets par ce qui est chez toi, colle le tout dans Higgsfield, et lance. Dix secondes plus tard tu as ton plan.",
-        "lien": "https://higgsfield.ai/",
-        "prompt": "Vertical 9:16, 10 secondes, 4K. PAS de texte incrusté, PAS de sous-titres, PAS de filigrane, PAS de logo.\n\nDEUX personnages dans le même plan, et c'est voulu :\n— le chef, PHOTORÉALISTE, joue le rôle : chef. Veste blanche, tablier, il est chez lui dans [TON RESTAURANT] ;\n— La Fraise, personnage 3D stylisé de la Brigade Végé-Fruitée, incrusté dans le même décor à côté de lui, à hauteur de comptoir. Il ne parle pas : il fait le geste de son métier — elle écrit le plan et le fait rendre en dix secondes.\n\nLe mélange photo + 3D est assumé, comme un dessin animé posé dans une prise de vue réelle. Les ombres et la lumière du personnage 3D suivent celles du décor.\n\nDécor : le plat en très gros plan sur le pass, vapeur et reflets. lumière rasante de studio culinaire.\nAction : chez [TON RESTAURANT], Dix secondes sur le plat signature : la sauce qui nappe, la vapeur, la découpe. À 5 secondes, le geste bascule et le personnage 3D réagit.\nDeux dernières secondes : les deux regardent l'objectif, immobiles.\n\nAudio : ambiance réelle du restaurant, aucun dialogue, pas de musique.\n\nÉléments à remplacer : [TON RESTAURANT], [TON PLAT], [TON PRÉNOM]."
+        "consigne": "Commencez par ce que vous avez déjà : dix secondes de votre plat, de votre salle, de votre équipe. Filmé au téléphone, à la verticale. Si vous n'avez rien, l'étape suivante fabrique l'image à votre place.",
+        "lien": "https://site.foodeatup.com/",
+        "prompt": "Ce que je fournis pour l'épisode [TON NUMÉRO] :\n\n— une vidéo verticale de 10 s de [TON PLAT], filmée au téléphone\n— une photo de [TON RESTAURANT] : la salle, la devanture ou le pass\n— mon logo, si j'en ai un\n\nCe que je n'ai pas et que vous complétez avec vos gabarits : [CE QUI ME MANQUE]."
       },
       {
         "etape": 2,
-        "titre": "Le montage",
-        "outil": "Claude Code",
-        "guide": "tomate",
-        "consigne": "Dépose ton plan et ton avatar dans le dépôt, puis écris cette phrase à Claude Code. Tu n'ouvres aucun logiciel de montage.",
-        "lien": "https://claude.com/claude-code",
-        "prompt": "Monte l'épisode [TON NUMÉRO] de ma série.\n\n— Plan comique : assets/hooks/[TON NUMÉRO].mp4\n— Avatar : assets/avatar/[TON NUMÉRO].mp4\n— Écran du logiciel : assets/software/[TON NUMÉRO].mp4\n— Accroche à incruster : « Regarde-le une seconde. »\n— Punchline en voix off à 5,0 s : « Voilà pourquoi on se lève à six heures. »\n\nAnatomie : A 0→9,5 · sting 9,5→18,5 · avatar seul 18,5→28,5 · signature 28,5→32,5 · sting de marque 32,5→37,5.\nContrôle le master avant de me le rendre : 37,5 s, 1080×1920, -14 LUFS, crête sous -1 dBTP."
+        "titre": "Le plan d'ouverture",
+        "outil": "Higgsfield",
+        "cote": "restaurant",
+        "guide": "fraise",
+        "consigne": "Si vous n'avez pas d'images, ce prompt les fabrique. Remplacez ce qui est entre crochets, collez dans Higgsfield, lancez. Dix secondes plus tard, vous avez votre plan.",
+        "lien": "https://higgsfield.ai/",
+        "prompt": "Vertical 9:16, 10 secondes, 4K. PAS de texte incrusté, PAS de sous-titres, PAS de filigrane, PAS de logo dans l'image.\n\nIDENTITÉ VISUELLE : RapidoCMS. Bleu #03A9F5 présent dans le décor — un écran, une lumière, un objet — sans jamais former de logo. Tons clairs, blancs, gris #383838. Pas de crème, pas d'orange.\n\nDEUX personnages dans le même plan :\n— La Fraise, personnage 3D stylisé de la Brigade Végé-Fruitée, EN VEDETTE, au premier plan, deux tiers du cadre. C'est lui qui agit : elle écrit le plan et le fait rendre en dix secondes ;\n— le chef, PHOTORÉALISTE, veste blanche et tablier, en retrait dans [TON RESTAURANT]. Il regarde faire, il ne fait pas.\n\nLe mélange photo + 3D est assumé, comme un dessin animé posé dans une prise de vue réelle. Les ombres du personnage 3D suivent celles du décor.\n\nDécor : le plat en très gros plan sur le pass, vapeur et reflets. lumière rasante de studio culinaire.\nAction : chez [TON RESTAURANT], Dix secondes sur le plat signature : la sauce qui nappe, la vapeur, la découpe.\nÀ 5 secondes, le geste aboutit et le chef réagit — surpris, puis convaincu.\nDeux dernières secondes : les deux regardent l'objectif côte à côte, immobiles.\n\nAudio : ambiance réelle du restaurant, un bip d'interface discret à 5 secondes, aucun dialogue, pas de musique.\n\nÀ remplacer : [TON RESTAURANT], [TON PLAT], [TON PRÉNOM]."
       },
       {
         "etape": 3,
+        "titre": "Le montage",
+        "outil": "Claude Code",
+        "cote": "rapidocms",
+        "guide": "tomate",
+        "consigne": "Le hook, la signature de fin et les logos sont ceux de RapidoCMS — vous ne les fournissez pas, ils sont dans le gabarit. Vos images occupent le centre. Vous n'ouvrez aucun logiciel de montage.",
+        "lien": "https://claude.com/claude-code",
+        "prompt": "Monte l'épisode [TON NUMÉRO] de ma série, gabarit RapidoCMS.\n\n— Plan d'ouverture : assets/hooks/[TON NUMÉRO].mp4\n— Personnage qui explique : assets/avatar/[TON NUMÉRO].mp4 (La Fraise, avatar HeyGen)\n— Mes images de restaurant : assets/software/[TON NUMÉRO].mp4\n— Accroche à incruster : « Regarde-le une seconde. »\n— Punchline en voix off à 5,0 s : « Voilà pourquoi on se lève à six heures. »\n\nHabillage : hook, signature de fin et logos en charte RapidoCMS — bleu #03A9F5, gris #383838, fond blanc. Pas de crème, pas d'orange.\nAnatomie : A 0→9,5 · sting RapidoCMS 9,5→18,5 · le personnage seul 18,5→28,5 · signature RapidoCMS 28,5→32,5 · sting de marque 32,5→37,5.\nContrôle avant de me le rendre : 37,5 s, 1080×1920, -14 LUFS, crête sous -1 dBTP."
+      },
+      {
+        "etape": 4,
         "titre": "La publication",
         "outil": "RapidoCMS",
+        "cote": "rapidocms",
         "guide": "betterave",
-        "consigne": "Une phrase, et les cinq réseaux sont programmés. Tu ne téléverses rien nulle part.",
+        "consigne": "Une phrase, et les cinq réseaux sont programmés. Le master part d'abord dans votre bibliothèque, puis en ligne. Vous ne téléversez rien nulle part.",
         "lien": "https://cms.rapidosoftware.com/register",
-        "prompt": "Verse le master dans ma bibliothèque RapidoCMS, puis programme les cinq réseaux de [TON RESTAURANT] :\n\n— LinkedIn à 8 h, Facebook à 12 h, YouTube à 10 h, Instagram à 18 h 30, TikTok à 19 h\n— Légende : « Regarde-le une seconde. Voilà pourquoi on se lève à six heures. » puis le corps, puis « [TON APPEL À L'ACTION] : [TON SITE] »\n— Mots-dièse : #restaurant #[TA VILLE] #[TA SPÉCIALITÉ]\n\nRends-moi le lien de chaque publication."
+        "prompt": "Verse le master dans ma bibliothèque RapidoCMS, puis programme les cinq réseaux de [TON RESTAURANT] :\n\n— LinkedIn à 8 h, YouTube à 10 h, Facebook à 12 h, Instagram à 18 h 30, TikTok à 19 h\n— Légende : « Regarde-le une seconde. Voilà pourquoi on se lève à six heures. » puis le corps, puis « [TON APPEL À L'ACTION] : [TON SITE] »\n— Mots-dièse : #restaurant #[TA VILLE] #[TA SPÉCIALITÉ]\n\nRends-moi le lien de chaque publication."
       }
     ],
     "tutoriel": null
@@ -18309,35 +18324,48 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       }
     },
     "promptVignette": "Illustration 3D, cadrage vertical 9:16, même style que l'image de référence jointe. Le personnage de l'image de référence — Tomate Man — gardé À L'IDENTIQUE : mêmes proportions, mêmes couleurs, même tenue, même accessoire. Ne le redessine pas, ne change pas son visage. Il est LA VEDETTE de l'image et occupe les deux tiers du cadre, en premier plan, tourné vers l'objectif. Ce qu'il fait ici : il assemble les cinq segments et contrôle avant de livrer. Scène : la recette du plat signature. On ne cache rien. Décor derrière lui : le plat en très gros plan sur le pass, vapeur et reflets. lumière rasante de studio culinaire. Le décor reste flou et discret — c'est un fond, pas un sujet. Aucun humain photoréaliste dans l'image, aucun écran de logiciel lisible. Bande bleu RapidoCMS #03A9F5 en haut du cadre sur un cinquième de la hauteur, portant UNIQUEMENT le texte « RECETTE PLAT SIGNATURE » en typographie arrondie très grasse, blanc, centré. Aucun autre texte, aucun logo ajouté, pas de filigrane, pas de bordure décorative.",
-    "higgsfieldPrompt": "Vertical 9:16, 10 secondes, 4K. PAS de texte incrusté, PAS de sous-titres, PAS de filigrane, PAS de logo.\n\nDEUX personnages dans le même plan, et c'est voulu :\n— le chef, PHOTORÉALISTE, joue le rôle : chef. Veste blanche, tablier, il est chez lui dans son restaurant ;\n— Tomate Man, personnage 3D stylisé de la Brigade Végé-Fruitée, incrusté dans le même décor à côté de lui, à hauteur de comptoir. Il ne parle pas : il fait le geste de son métier — il assemble les cinq segments et contrôle avant de livrer.\n\nLe mélange photo + 3D est assumé, comme un dessin animé posé dans une prise de vue réelle. Les ombres et la lumière du personnage 3D suivent celles du décor.\n\nDécor : le plat en très gros plan sur le pass, vapeur et reflets. lumière rasante de studio culinaire.\nAction : Le chef fait le plat en trente secondes, gestes réels, quantités dites à voix haute. À 5 secondes, le geste bascule et le personnage 3D réagit.\nDeux dernières secondes : les deux regardent l'objectif, immobiles.\n\nAudio : ambiance réelle du restaurant, aucun dialogue, pas de musique.",
-    "scriptHeygen": "Le chef fait le plat en trente secondes, gestes réels, quantités dites à voix haute. Refais-la chez toi. On t'attend quand même.",
+    "higgsfieldPrompt": "Vertical 9:16, 10 secondes, 4K. PAS de texte incrusté, PAS de sous-titres, PAS de filigrane, PAS de logo dans l'image.\n\nIDENTITÉ VISUELLE : RapidoCMS. Bleu #03A9F5 présent dans le décor — un écran, une lumière, un objet — sans jamais former de logo. Tons clairs, blancs, gris #383838. Pas de crème, pas d'orange.\n\nDEUX personnages dans le même plan :\n— Tomate Man, personnage 3D stylisé de la Brigade Végé-Fruitée, EN VEDETTE, au premier plan, deux tiers du cadre. C'est lui qui agit : il assemble les cinq segments et contrôle avant de livrer ;\n— le chef, PHOTORÉALISTE, veste blanche et tablier, en retrait dans son restaurant. Il regarde faire, il ne fait pas.\n\nLe mélange photo + 3D est assumé, comme un dessin animé posé dans une prise de vue réelle. Les ombres du personnage 3D suivent celles du décor.\n\nDécor : le plat en très gros plan sur le pass, vapeur et reflets. lumière rasante de studio culinaire.\nAction : Le chef fait le plat en trente secondes, gestes réels, quantités dites à voix haute.\nÀ 5 secondes, le geste aboutit et le chef réagit — surpris, puis convaincu.\nDeux dernières secondes : les deux regardent l'objectif côte à côte, immobiles.\n\nAudio : ambiance réelle du restaurant, un bip d'interface discret à 5 secondes, aucun dialogue, pas de musique.",
+    "scriptHeygen": "Moi c'est Tomate Man. Pour cet épisode, il assemble les cinq segments et contrôle avant de livrer — vous me le demandez en une phrase. Vos photos, notre gabarit : la vidéo part sur vos cinq réseaux le soir même.",
     "kit": [
       {
         "etape": 1,
-        "titre": "Le plan comique",
-        "outil": "Higgsfield",
+        "titre": "Vos images",
+        "outil": "Chez vous",
+        "cote": "restaurant",
         "guide": "tomate",
-        "consigne": "Remplace ce qui est entre crochets par ce qui est chez toi, colle le tout dans Higgsfield, et lance. Dix secondes plus tard tu as ton plan.",
-        "lien": "https://higgsfield.ai/",
-        "prompt": "Vertical 9:16, 10 secondes, 4K. PAS de texte incrusté, PAS de sous-titres, PAS de filigrane, PAS de logo.\n\nDEUX personnages dans le même plan, et c'est voulu :\n— le chef, PHOTORÉALISTE, joue le rôle : chef. Veste blanche, tablier, il est chez lui dans [TON RESTAURANT] ;\n— Tomate Man, personnage 3D stylisé de la Brigade Végé-Fruitée, incrusté dans le même décor à côté de lui, à hauteur de comptoir. Il ne parle pas : il fait le geste de son métier — il assemble les cinq segments et contrôle avant de livrer.\n\nLe mélange photo + 3D est assumé, comme un dessin animé posé dans une prise de vue réelle. Les ombres et la lumière du personnage 3D suivent celles du décor.\n\nDécor : le plat en très gros plan sur le pass, vapeur et reflets. lumière rasante de studio culinaire.\nAction : chez [TON RESTAURANT], Le chef fait le plat en trente secondes, gestes réels, quantités dites à voix haute. À 5 secondes, le geste bascule et le personnage 3D réagit.\nDeux dernières secondes : les deux regardent l'objectif, immobiles.\n\nAudio : ambiance réelle du restaurant, aucun dialogue, pas de musique.\n\nÉléments à remplacer : [TON RESTAURANT], [TON PLAT], [TON PRÉNOM]."
+        "consigne": "Commencez par ce que vous avez déjà : dix secondes de votre plat, de votre salle, de votre équipe. Filmé au téléphone, à la verticale. Si vous n'avez rien, l'étape suivante fabrique l'image à votre place.",
+        "lien": "https://site.foodeatup.com/",
+        "prompt": "Ce que je fournis pour l'épisode [TON NUMÉRO] :\n\n— une vidéo verticale de 10 s de [TON PLAT], filmée au téléphone\n— une photo de [TON RESTAURANT] : la salle, la devanture ou le pass\n— mon logo, si j'en ai un\n\nCe que je n'ai pas et que vous complétez avec vos gabarits : [CE QUI ME MANQUE]."
       },
       {
         "etape": 2,
-        "titre": "Le montage",
-        "outil": "Claude Code",
+        "titre": "Le plan d'ouverture",
+        "outil": "Higgsfield",
+        "cote": "restaurant",
         "guide": "tomate",
-        "consigne": "Dépose ton plan et ton avatar dans le dépôt, puis écris cette phrase à Claude Code. Tu n'ouvres aucun logiciel de montage.",
-        "lien": "https://claude.com/claude-code",
-        "prompt": "Monte l'épisode [TON NUMÉRO] de ma série.\n\n— Plan comique : assets/hooks/[TON NUMÉRO].mp4\n— Avatar : assets/avatar/[TON NUMÉRO].mp4\n— Écran du logiciel : assets/software/[TON NUMÉRO].mp4\n— Accroche à incruster : « On ne cache rien. »\n— Punchline en voix off à 5,0 s : « Refais-la chez toi. On t'attend quand même. »\n\nAnatomie : A 0→9,5 · sting 9,5→18,5 · avatar seul 18,5→28,5 · signature 28,5→32,5 · sting de marque 32,5→37,5.\nContrôle le master avant de me le rendre : 37,5 s, 1080×1920, -14 LUFS, crête sous -1 dBTP."
+        "consigne": "Si vous n'avez pas d'images, ce prompt les fabrique. Remplacez ce qui est entre crochets, collez dans Higgsfield, lancez. Dix secondes plus tard, vous avez votre plan.",
+        "lien": "https://higgsfield.ai/",
+        "prompt": "Vertical 9:16, 10 secondes, 4K. PAS de texte incrusté, PAS de sous-titres, PAS de filigrane, PAS de logo dans l'image.\n\nIDENTITÉ VISUELLE : RapidoCMS. Bleu #03A9F5 présent dans le décor — un écran, une lumière, un objet — sans jamais former de logo. Tons clairs, blancs, gris #383838. Pas de crème, pas d'orange.\n\nDEUX personnages dans le même plan :\n— Tomate Man, personnage 3D stylisé de la Brigade Végé-Fruitée, EN VEDETTE, au premier plan, deux tiers du cadre. C'est lui qui agit : il assemble les cinq segments et contrôle avant de livrer ;\n— le chef, PHOTORÉALISTE, veste blanche et tablier, en retrait dans [TON RESTAURANT]. Il regarde faire, il ne fait pas.\n\nLe mélange photo + 3D est assumé, comme un dessin animé posé dans une prise de vue réelle. Les ombres du personnage 3D suivent celles du décor.\n\nDécor : le plat en très gros plan sur le pass, vapeur et reflets. lumière rasante de studio culinaire.\nAction : chez [TON RESTAURANT], Le chef fait le plat en trente secondes, gestes réels, quantités dites à voix haute.\nÀ 5 secondes, le geste aboutit et le chef réagit — surpris, puis convaincu.\nDeux dernières secondes : les deux regardent l'objectif côte à côte, immobiles.\n\nAudio : ambiance réelle du restaurant, un bip d'interface discret à 5 secondes, aucun dialogue, pas de musique.\n\nÀ remplacer : [TON RESTAURANT], [TON PLAT], [TON PRÉNOM]."
       },
       {
         "etape": 3,
+        "titre": "Le montage",
+        "outil": "Claude Code",
+        "cote": "rapidocms",
+        "guide": "tomate",
+        "consigne": "Le hook, la signature de fin et les logos sont ceux de RapidoCMS — vous ne les fournissez pas, ils sont dans le gabarit. Vos images occupent le centre. Vous n'ouvrez aucun logiciel de montage.",
+        "lien": "https://claude.com/claude-code",
+        "prompt": "Monte l'épisode [TON NUMÉRO] de ma série, gabarit RapidoCMS.\n\n— Plan d'ouverture : assets/hooks/[TON NUMÉRO].mp4\n— Personnage qui explique : assets/avatar/[TON NUMÉRO].mp4 (Tomate Man, avatar HeyGen)\n— Mes images de restaurant : assets/software/[TON NUMÉRO].mp4\n— Accroche à incruster : « On ne cache rien. »\n— Punchline en voix off à 5,0 s : « Refais-la chez toi. On t'attend quand même. »\n\nHabillage : hook, signature de fin et logos en charte RapidoCMS — bleu #03A9F5, gris #383838, fond blanc. Pas de crème, pas d'orange.\nAnatomie : A 0→9,5 · sting RapidoCMS 9,5→18,5 · le personnage seul 18,5→28,5 · signature RapidoCMS 28,5→32,5 · sting de marque 32,5→37,5.\nContrôle avant de me le rendre : 37,5 s, 1080×1920, -14 LUFS, crête sous -1 dBTP."
+      },
+      {
+        "etape": 4,
         "titre": "La publication",
         "outil": "RapidoCMS",
+        "cote": "rapidocms",
         "guide": "betterave",
-        "consigne": "Une phrase, et les cinq réseaux sont programmés. Tu ne téléverses rien nulle part.",
+        "consigne": "Une phrase, et les cinq réseaux sont programmés. Le master part d'abord dans votre bibliothèque, puis en ligne. Vous ne téléversez rien nulle part.",
         "lien": "https://cms.rapidosoftware.com/register",
-        "prompt": "Verse le master dans ma bibliothèque RapidoCMS, puis programme les cinq réseaux de [TON RESTAURANT] :\n\n— LinkedIn à 8 h, Facebook à 12 h, YouTube à 10 h, Instagram à 18 h 30, TikTok à 19 h\n— Légende : « On ne cache rien. Refais-la chez toi. On t'attend quand même. » puis le corps, puis « [TON APPEL À L'ACTION] : [TON SITE] »\n— Mots-dièse : #restaurant #[TA VILLE] #[TA SPÉCIALITÉ]\n\nRends-moi le lien de chaque publication."
+        "prompt": "Verse le master dans ma bibliothèque RapidoCMS, puis programme les cinq réseaux de [TON RESTAURANT] :\n\n— LinkedIn à 8 h, YouTube à 10 h, Facebook à 12 h, Instagram à 18 h 30, TikTok à 19 h\n— Légende : « On ne cache rien. Refais-la chez toi. On t'attend quand même. » puis le corps, puis « [TON APPEL À L'ACTION] : [TON SITE] »\n— Mots-dièse : #restaurant #[TA VILLE] #[TA SPÉCIALITÉ]\n\nRends-moi le lien de chaque publication."
       }
     ],
     "tutoriel": null
@@ -18457,35 +18485,48 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       }
     },
     "promptVignette": "Illustration 3D, cadrage vertical 9:16, même style que l'image de référence jointe. Le personnage de l'image de référence — L'Ail — gardé À L'IDENTIQUE : mêmes proportions, mêmes couleurs, même tenue, même accessoire. Ne le redessine pas, ne change pas son visage. Il est LA VEDETTE de l'image et occupe les deux tiers du cadre, en premier plan, tourné vers l'objectif. Ce qu'il fait ici : il tient la carte à jour partout à la fois. Scène : le plat de la semaine. Cette semaine seulement. Décor derrière lui : le plat en très gros plan sur le pass, vapeur et reflets. lumière rasante de studio culinaire. Le décor reste flou et discret — c'est un fond, pas un sujet. Aucun humain photoréaliste dans l'image, aucun écran de logiciel lisible. Bande bleu RapidoCMS #03A9F5 en haut du cadre sur un cinquième de la hauteur, portant UNIQUEMENT le texte « PLAT SEMAINE » en typographie arrondie très grasse, blanc, centré. Aucun autre texte, aucun logo ajouté, pas de filigrane, pas de bordure décorative.",
-    "higgsfieldPrompt": "Vertical 9:16, 10 secondes, 4K. PAS de texte incrusté, PAS de sous-titres, PAS de filigrane, PAS de logo.\n\nDEUX personnages dans le même plan, et c'est voulu :\n— le chef, PHOTORÉALISTE, joue le rôle : chef. Veste blanche, tablier, il est chez lui dans son restaurant ;\n— L'Ail, personnage 3D stylisé de la Brigade Végé-Fruitée, incrusté dans le même décor à côté de lui, à hauteur de comptoir. Il ne parle pas : il fait le geste de son métier — il tient la carte à jour partout à la fois.\n\nLe mélange photo + 3D est assumé, comme un dessin animé posé dans une prise de vue réelle. Les ombres et la lumière du personnage 3D suivent celles du décor.\n\nDécor : le plat en très gros plan sur le pass, vapeur et reflets. lumière rasante de studio culinaire.\nAction : Le nouveau plat arrive, on dit pourquoi : le produit est là, la saison y est, il ne restera pas. À 5 secondes, le geste bascule et le personnage 3D réagit.\nDeux dernières secondes : les deux regardent l'objectif, immobiles.\n\nAudio : ambiance réelle du restaurant, aucun dialogue, pas de musique.",
-    "scriptHeygen": "Le nouveau plat arrive, on dit pourquoi : le produit est là, la saison y est, il ne restera pas. Après, la saison change d'avis.",
+    "higgsfieldPrompt": "Vertical 9:16, 10 secondes, 4K. PAS de texte incrusté, PAS de sous-titres, PAS de filigrane, PAS de logo dans l'image.\n\nIDENTITÉ VISUELLE : RapidoCMS. Bleu #03A9F5 présent dans le décor — un écran, une lumière, un objet — sans jamais former de logo. Tons clairs, blancs, gris #383838. Pas de crème, pas d'orange.\n\nDEUX personnages dans le même plan :\n— L'Ail, personnage 3D stylisé de la Brigade Végé-Fruitée, EN VEDETTE, au premier plan, deux tiers du cadre. C'est lui qui agit : il tient la carte à jour partout à la fois ;\n— le chef, PHOTORÉALISTE, veste blanche et tablier, en retrait dans son restaurant. Il regarde faire, il ne fait pas.\n\nLe mélange photo + 3D est assumé, comme un dessin animé posé dans une prise de vue réelle. Les ombres du personnage 3D suivent celles du décor.\n\nDécor : le plat en très gros plan sur le pass, vapeur et reflets. lumière rasante de studio culinaire.\nAction : Le nouveau plat arrive, on dit pourquoi : le produit est là, la saison y est, il ne restera pas.\nÀ 5 secondes, le geste aboutit et le chef réagit — surpris, puis convaincu.\nDeux dernières secondes : les deux regardent l'objectif côte à côte, immobiles.\n\nAudio : ambiance réelle du restaurant, un bip d'interface discret à 5 secondes, aucun dialogue, pas de musique.",
+    "scriptHeygen": "Moi c'est L'Ail. Pour cet épisode, il tient la carte à jour partout à la fois — vous me le demandez en une phrase. Vos photos, notre gabarit : la vidéo part sur vos cinq réseaux le soir même.",
     "kit": [
       {
         "etape": 1,
-        "titre": "Le plan comique",
-        "outil": "Higgsfield",
+        "titre": "Vos images",
+        "outil": "Chez vous",
+        "cote": "restaurant",
         "guide": "ail",
-        "consigne": "Remplace ce qui est entre crochets par ce qui est chez toi, colle le tout dans Higgsfield, et lance. Dix secondes plus tard tu as ton plan.",
-        "lien": "https://higgsfield.ai/",
-        "prompt": "Vertical 9:16, 10 secondes, 4K. PAS de texte incrusté, PAS de sous-titres, PAS de filigrane, PAS de logo.\n\nDEUX personnages dans le même plan, et c'est voulu :\n— le chef, PHOTORÉALISTE, joue le rôle : chef. Veste blanche, tablier, il est chez lui dans [TON RESTAURANT] ;\n— L'Ail, personnage 3D stylisé de la Brigade Végé-Fruitée, incrusté dans le même décor à côté de lui, à hauteur de comptoir. Il ne parle pas : il fait le geste de son métier — il tient la carte à jour partout à la fois.\n\nLe mélange photo + 3D est assumé, comme un dessin animé posé dans une prise de vue réelle. Les ombres et la lumière du personnage 3D suivent celles du décor.\n\nDécor : le plat en très gros plan sur le pass, vapeur et reflets. lumière rasante de studio culinaire.\nAction : chez [TON RESTAURANT], Le nouveau plat arrive, on dit pourquoi : le produit est là, la saison y est, il ne restera pas. À 5 secondes, le geste bascule et le personnage 3D réagit.\nDeux dernières secondes : les deux regardent l'objectif, immobiles.\n\nAudio : ambiance réelle du restaurant, aucun dialogue, pas de musique.\n\nÉléments à remplacer : [TON RESTAURANT], [TON PLAT], [TON PRÉNOM]."
+        "consigne": "Commencez par ce que vous avez déjà : dix secondes de votre plat, de votre salle, de votre équipe. Filmé au téléphone, à la verticale. Si vous n'avez rien, l'étape suivante fabrique l'image à votre place.",
+        "lien": "https://site.foodeatup.com/",
+        "prompt": "Ce que je fournis pour l'épisode [TON NUMÉRO] :\n\n— une vidéo verticale de 10 s de [TON PLAT], filmée au téléphone\n— une photo de [TON RESTAURANT] : la salle, la devanture ou le pass\n— mon logo, si j'en ai un\n\nCe que je n'ai pas et que vous complétez avec vos gabarits : [CE QUI ME MANQUE]."
       },
       {
         "etape": 2,
-        "titre": "Le montage",
-        "outil": "Claude Code",
-        "guide": "tomate",
-        "consigne": "Dépose ton plan et ton avatar dans le dépôt, puis écris cette phrase à Claude Code. Tu n'ouvres aucun logiciel de montage.",
-        "lien": "https://claude.com/claude-code",
-        "prompt": "Monte l'épisode [TON NUMÉRO] de ma série.\n\n— Plan comique : assets/hooks/[TON NUMÉRO].mp4\n— Avatar : assets/avatar/[TON NUMÉRO].mp4\n— Écran du logiciel : assets/software/[TON NUMÉRO].mp4\n— Accroche à incruster : « Cette semaine seulement. »\n— Punchline en voix off à 5,0 s : « Après, la saison change d'avis. »\n\nAnatomie : A 0→9,5 · sting 9,5→18,5 · avatar seul 18,5→28,5 · signature 28,5→32,5 · sting de marque 32,5→37,5.\nContrôle le master avant de me le rendre : 37,5 s, 1080×1920, -14 LUFS, crête sous -1 dBTP."
+        "titre": "Le plan d'ouverture",
+        "outil": "Higgsfield",
+        "cote": "restaurant",
+        "guide": "ail",
+        "consigne": "Si vous n'avez pas d'images, ce prompt les fabrique. Remplacez ce qui est entre crochets, collez dans Higgsfield, lancez. Dix secondes plus tard, vous avez votre plan.",
+        "lien": "https://higgsfield.ai/",
+        "prompt": "Vertical 9:16, 10 secondes, 4K. PAS de texte incrusté, PAS de sous-titres, PAS de filigrane, PAS de logo dans l'image.\n\nIDENTITÉ VISUELLE : RapidoCMS. Bleu #03A9F5 présent dans le décor — un écran, une lumière, un objet — sans jamais former de logo. Tons clairs, blancs, gris #383838. Pas de crème, pas d'orange.\n\nDEUX personnages dans le même plan :\n— L'Ail, personnage 3D stylisé de la Brigade Végé-Fruitée, EN VEDETTE, au premier plan, deux tiers du cadre. C'est lui qui agit : il tient la carte à jour partout à la fois ;\n— le chef, PHOTORÉALISTE, veste blanche et tablier, en retrait dans [TON RESTAURANT]. Il regarde faire, il ne fait pas.\n\nLe mélange photo + 3D est assumé, comme un dessin animé posé dans une prise de vue réelle. Les ombres du personnage 3D suivent celles du décor.\n\nDécor : le plat en très gros plan sur le pass, vapeur et reflets. lumière rasante de studio culinaire.\nAction : chez [TON RESTAURANT], Le nouveau plat arrive, on dit pourquoi : le produit est là, la saison y est, il ne restera pas.\nÀ 5 secondes, le geste aboutit et le chef réagit — surpris, puis convaincu.\nDeux dernières secondes : les deux regardent l'objectif côte à côte, immobiles.\n\nAudio : ambiance réelle du restaurant, un bip d'interface discret à 5 secondes, aucun dialogue, pas de musique.\n\nÀ remplacer : [TON RESTAURANT], [TON PLAT], [TON PRÉNOM]."
       },
       {
         "etape": 3,
+        "titre": "Le montage",
+        "outil": "Claude Code",
+        "cote": "rapidocms",
+        "guide": "tomate",
+        "consigne": "Le hook, la signature de fin et les logos sont ceux de RapidoCMS — vous ne les fournissez pas, ils sont dans le gabarit. Vos images occupent le centre. Vous n'ouvrez aucun logiciel de montage.",
+        "lien": "https://claude.com/claude-code",
+        "prompt": "Monte l'épisode [TON NUMÉRO] de ma série, gabarit RapidoCMS.\n\n— Plan d'ouverture : assets/hooks/[TON NUMÉRO].mp4\n— Personnage qui explique : assets/avatar/[TON NUMÉRO].mp4 (L'Ail, avatar HeyGen)\n— Mes images de restaurant : assets/software/[TON NUMÉRO].mp4\n— Accroche à incruster : « Cette semaine seulement. »\n— Punchline en voix off à 5,0 s : « Après, la saison change d'avis. »\n\nHabillage : hook, signature de fin et logos en charte RapidoCMS — bleu #03A9F5, gris #383838, fond blanc. Pas de crème, pas d'orange.\nAnatomie : A 0→9,5 · sting RapidoCMS 9,5→18,5 · le personnage seul 18,5→28,5 · signature RapidoCMS 28,5→32,5 · sting de marque 32,5→37,5.\nContrôle avant de me le rendre : 37,5 s, 1080×1920, -14 LUFS, crête sous -1 dBTP."
+      },
+      {
+        "etape": 4,
         "titre": "La publication",
         "outil": "RapidoCMS",
+        "cote": "rapidocms",
         "guide": "betterave",
-        "consigne": "Une phrase, et les cinq réseaux sont programmés. Tu ne téléverses rien nulle part.",
+        "consigne": "Une phrase, et les cinq réseaux sont programmés. Le master part d'abord dans votre bibliothèque, puis en ligne. Vous ne téléversez rien nulle part.",
         "lien": "https://cms.rapidosoftware.com/register",
-        "prompt": "Verse le master dans ma bibliothèque RapidoCMS, puis programme les cinq réseaux de [TON RESTAURANT] :\n\n— LinkedIn à 8 h, Facebook à 12 h, YouTube à 10 h, Instagram à 18 h 30, TikTok à 19 h\n— Légende : « Cette semaine seulement. Après, la saison change d'avis. » puis le corps, puis « [TON APPEL À L'ACTION] : [TON SITE] »\n— Mots-dièse : #restaurant #[TA VILLE] #[TA SPÉCIALITÉ]\n\nRends-moi le lien de chaque publication."
+        "prompt": "Verse le master dans ma bibliothèque RapidoCMS, puis programme les cinq réseaux de [TON RESTAURANT] :\n\n— LinkedIn à 8 h, YouTube à 10 h, Facebook à 12 h, Instagram à 18 h 30, TikTok à 19 h\n— Légende : « Cette semaine seulement. Après, la saison change d'avis. » puis le corps, puis « [TON APPEL À L'ACTION] : [TON SITE] »\n— Mots-dièse : #restaurant #[TA VILLE] #[TA SPÉCIALITÉ]\n\nRends-moi le lien de chaque publication."
       }
     ],
     "tutoriel": null
@@ -18605,35 +18646,48 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       }
     },
     "promptVignette": "Illustration 3D, cadrage vertical 9:16, même style que l'image de référence jointe. Le personnage de l'image de référence — La Fraise — gardé À L'IDENTIQUE : mêmes proportions, mêmes couleurs, même tenue, même accessoire. Ne le redessine pas, ne change pas son visage. Il est LA VEDETTE de l'image et occupe les deux tiers du cadre, en premier plan, tourné vers l'objectif. Ce qu'il fait ici : elle écrit le plan et le fait rendre en dix secondes. Scène : le menu du midi en quinze secondes. Midi. Quinze secondes. Décor derrière lui : le plat en très gros plan sur le pass, vapeur et reflets. lumière rasante de studio culinaire. Le décor reste flou et discret — c'est un fond, pas un sujet. Aucun humain photoréaliste dans l'image, aucun écran de logiciel lisible. Bande bleu RapidoCMS #03A9F5 en haut du cadre sur un cinquième de la hauteur, portant UNIQUEMENT le texte « MENU MIDI QUINZE » en typographie arrondie très grasse, blanc, centré. Aucun autre texte, aucun logo ajouté, pas de filigrane, pas de bordure décorative.",
-    "higgsfieldPrompt": "Vertical 9:16, 10 secondes, 4K. PAS de texte incrusté, PAS de sous-titres, PAS de filigrane, PAS de logo.\n\nDEUX personnages dans le même plan, et c'est voulu :\n— le chef, PHOTORÉALISTE, joue le rôle : serveur. Veste blanche, tablier, il est chez lui dans son restaurant ;\n— La Fraise, personnage 3D stylisé de la Brigade Végé-Fruitée, incrusté dans le même décor à côté de lui, à hauteur de comptoir. Il ne parle pas : il fait le geste de son métier — elle écrit le plan et le fait rendre en dix secondes.\n\nLe mélange photo + 3D est assumé, comme un dessin animé posé dans une prise de vue réelle. Les ombres et la lumière du personnage 3D suivent celles du décor.\n\nDécor : le plat en très gros plan sur le pass, vapeur et reflets. lumière rasante de studio culinaire.\nAction : Entrée, plat, dessert du jour, filmés à la suite au pass, sans coupe. À 5 secondes, le geste bascule et le personnage 3D réagit.\nDeux dernières secondes : les deux regardent l'objectif, immobiles.\n\nAudio : ambiance réelle du restaurant, aucun dialogue, pas de musique.",
-    "scriptHeygen": "Entrée, plat, dessert du jour, filmés à la suite au pass, sans coupe. Décide avant d'arriver.",
+    "higgsfieldPrompt": "Vertical 9:16, 10 secondes, 4K. PAS de texte incrusté, PAS de sous-titres, PAS de filigrane, PAS de logo dans l'image.\n\nIDENTITÉ VISUELLE : RapidoCMS. Bleu #03A9F5 présent dans le décor — un écran, une lumière, un objet — sans jamais former de logo. Tons clairs, blancs, gris #383838. Pas de crème, pas d'orange.\n\nDEUX personnages dans le même plan :\n— La Fraise, personnage 3D stylisé de la Brigade Végé-Fruitée, EN VEDETTE, au premier plan, deux tiers du cadre. C'est lui qui agit : elle écrit le plan et le fait rendre en dix secondes ;\n— le chef, PHOTORÉALISTE, veste blanche et tablier, en retrait dans son restaurant. Il regarde faire, il ne fait pas.\n\nLe mélange photo + 3D est assumé, comme un dessin animé posé dans une prise de vue réelle. Les ombres du personnage 3D suivent celles du décor.\n\nDécor : le plat en très gros plan sur le pass, vapeur et reflets. lumière rasante de studio culinaire.\nAction : Entrée, plat, dessert du jour, filmés à la suite au pass, sans coupe.\nÀ 5 secondes, le geste aboutit et le chef réagit — surpris, puis convaincu.\nDeux dernières secondes : les deux regardent l'objectif côte à côte, immobiles.\n\nAudio : ambiance réelle du restaurant, un bip d'interface discret à 5 secondes, aucun dialogue, pas de musique.",
+    "scriptHeygen": "Moi c'est La Fraise. Pour cet épisode, elle écrit le plan et le fait rendre en dix secondes — vous me le demandez en une phrase. Vos photos, notre gabarit : la vidéo part sur vos cinq réseaux le soir même.",
     "kit": [
       {
         "etape": 1,
-        "titre": "Le plan comique",
-        "outil": "Higgsfield",
+        "titre": "Vos images",
+        "outil": "Chez vous",
+        "cote": "restaurant",
         "guide": "fraise",
-        "consigne": "Remplace ce qui est entre crochets par ce qui est chez toi, colle le tout dans Higgsfield, et lance. Dix secondes plus tard tu as ton plan.",
-        "lien": "https://higgsfield.ai/",
-        "prompt": "Vertical 9:16, 10 secondes, 4K. PAS de texte incrusté, PAS de sous-titres, PAS de filigrane, PAS de logo.\n\nDEUX personnages dans le même plan, et c'est voulu :\n— le chef, PHOTORÉALISTE, joue le rôle : serveur. Veste blanche, tablier, il est chez lui dans [TON RESTAURANT] ;\n— La Fraise, personnage 3D stylisé de la Brigade Végé-Fruitée, incrusté dans le même décor à côté de lui, à hauteur de comptoir. Il ne parle pas : il fait le geste de son métier — elle écrit le plan et le fait rendre en dix secondes.\n\nLe mélange photo + 3D est assumé, comme un dessin animé posé dans une prise de vue réelle. Les ombres et la lumière du personnage 3D suivent celles du décor.\n\nDécor : le plat en très gros plan sur le pass, vapeur et reflets. lumière rasante de studio culinaire.\nAction : chez [TON RESTAURANT], Entrée, plat, dessert du jour, filmés à la suite au pass, sans coupe. À 5 secondes, le geste bascule et le personnage 3D réagit.\nDeux dernières secondes : les deux regardent l'objectif, immobiles.\n\nAudio : ambiance réelle du restaurant, aucun dialogue, pas de musique.\n\nÉléments à remplacer : [TON RESTAURANT], [TON PLAT], [TON PRÉNOM]."
+        "consigne": "Commencez par ce que vous avez déjà : dix secondes de votre plat, de votre salle, de votre équipe. Filmé au téléphone, à la verticale. Si vous n'avez rien, l'étape suivante fabrique l'image à votre place.",
+        "lien": "https://site.foodeatup.com/",
+        "prompt": "Ce que je fournis pour l'épisode [TON NUMÉRO] :\n\n— une vidéo verticale de 10 s de [TON PLAT], filmée au téléphone\n— une photo de [TON RESTAURANT] : la salle, la devanture ou le pass\n— mon logo, si j'en ai un\n\nCe que je n'ai pas et que vous complétez avec vos gabarits : [CE QUI ME MANQUE]."
       },
       {
         "etape": 2,
-        "titre": "Le montage",
-        "outil": "Claude Code",
-        "guide": "tomate",
-        "consigne": "Dépose ton plan et ton avatar dans le dépôt, puis écris cette phrase à Claude Code. Tu n'ouvres aucun logiciel de montage.",
-        "lien": "https://claude.com/claude-code",
-        "prompt": "Monte l'épisode [TON NUMÉRO] de ma série.\n\n— Plan comique : assets/hooks/[TON NUMÉRO].mp4\n— Avatar : assets/avatar/[TON NUMÉRO].mp4\n— Écran du logiciel : assets/software/[TON NUMÉRO].mp4\n— Accroche à incruster : « Midi. Quinze secondes. »\n— Punchline en voix off à 5,0 s : « Décide avant d'arriver. »\n\nAnatomie : A 0→9,5 · sting 9,5→18,5 · avatar seul 18,5→28,5 · signature 28,5→32,5 · sting de marque 32,5→37,5.\nContrôle le master avant de me le rendre : 37,5 s, 1080×1920, -14 LUFS, crête sous -1 dBTP."
+        "titre": "Le plan d'ouverture",
+        "outil": "Higgsfield",
+        "cote": "restaurant",
+        "guide": "fraise",
+        "consigne": "Si vous n'avez pas d'images, ce prompt les fabrique. Remplacez ce qui est entre crochets, collez dans Higgsfield, lancez. Dix secondes plus tard, vous avez votre plan.",
+        "lien": "https://higgsfield.ai/",
+        "prompt": "Vertical 9:16, 10 secondes, 4K. PAS de texte incrusté, PAS de sous-titres, PAS de filigrane, PAS de logo dans l'image.\n\nIDENTITÉ VISUELLE : RapidoCMS. Bleu #03A9F5 présent dans le décor — un écran, une lumière, un objet — sans jamais former de logo. Tons clairs, blancs, gris #383838. Pas de crème, pas d'orange.\n\nDEUX personnages dans le même plan :\n— La Fraise, personnage 3D stylisé de la Brigade Végé-Fruitée, EN VEDETTE, au premier plan, deux tiers du cadre. C'est lui qui agit : elle écrit le plan et le fait rendre en dix secondes ;\n— le chef, PHOTORÉALISTE, veste blanche et tablier, en retrait dans [TON RESTAURANT]. Il regarde faire, il ne fait pas.\n\nLe mélange photo + 3D est assumé, comme un dessin animé posé dans une prise de vue réelle. Les ombres du personnage 3D suivent celles du décor.\n\nDécor : le plat en très gros plan sur le pass, vapeur et reflets. lumière rasante de studio culinaire.\nAction : chez [TON RESTAURANT], Entrée, plat, dessert du jour, filmés à la suite au pass, sans coupe.\nÀ 5 secondes, le geste aboutit et le chef réagit — surpris, puis convaincu.\nDeux dernières secondes : les deux regardent l'objectif côte à côte, immobiles.\n\nAudio : ambiance réelle du restaurant, un bip d'interface discret à 5 secondes, aucun dialogue, pas de musique.\n\nÀ remplacer : [TON RESTAURANT], [TON PLAT], [TON PRÉNOM]."
       },
       {
         "etape": 3,
+        "titre": "Le montage",
+        "outil": "Claude Code",
+        "cote": "rapidocms",
+        "guide": "tomate",
+        "consigne": "Le hook, la signature de fin et les logos sont ceux de RapidoCMS — vous ne les fournissez pas, ils sont dans le gabarit. Vos images occupent le centre. Vous n'ouvrez aucun logiciel de montage.",
+        "lien": "https://claude.com/claude-code",
+        "prompt": "Monte l'épisode [TON NUMÉRO] de ma série, gabarit RapidoCMS.\n\n— Plan d'ouverture : assets/hooks/[TON NUMÉRO].mp4\n— Personnage qui explique : assets/avatar/[TON NUMÉRO].mp4 (La Fraise, avatar HeyGen)\n— Mes images de restaurant : assets/software/[TON NUMÉRO].mp4\n— Accroche à incruster : « Midi. Quinze secondes. »\n— Punchline en voix off à 5,0 s : « Décide avant d'arriver. »\n\nHabillage : hook, signature de fin et logos en charte RapidoCMS — bleu #03A9F5, gris #383838, fond blanc. Pas de crème, pas d'orange.\nAnatomie : A 0→9,5 · sting RapidoCMS 9,5→18,5 · le personnage seul 18,5→28,5 · signature RapidoCMS 28,5→32,5 · sting de marque 32,5→37,5.\nContrôle avant de me le rendre : 37,5 s, 1080×1920, -14 LUFS, crête sous -1 dBTP."
+      },
+      {
+        "etape": 4,
         "titre": "La publication",
         "outil": "RapidoCMS",
+        "cote": "rapidocms",
         "guide": "betterave",
-        "consigne": "Une phrase, et les cinq réseaux sont programmés. Tu ne téléverses rien nulle part.",
+        "consigne": "Une phrase, et les cinq réseaux sont programmés. Le master part d'abord dans votre bibliothèque, puis en ligne. Vous ne téléversez rien nulle part.",
         "lien": "https://cms.rapidosoftware.com/register",
-        "prompt": "Verse le master dans ma bibliothèque RapidoCMS, puis programme les cinq réseaux de [TON RESTAURANT] :\n\n— LinkedIn à 8 h, Facebook à 12 h, YouTube à 10 h, Instagram à 18 h 30, TikTok à 19 h\n— Légende : « Midi. Quinze secondes. Décide avant d'arriver. » puis le corps, puis « [TON APPEL À L'ACTION] : [TON SITE] »\n— Mots-dièse : #restaurant #[TA VILLE] #[TA SPÉCIALITÉ]\n\nRends-moi le lien de chaque publication."
+        "prompt": "Verse le master dans ma bibliothèque RapidoCMS, puis programme les cinq réseaux de [TON RESTAURANT] :\n\n— LinkedIn à 8 h, YouTube à 10 h, Facebook à 12 h, Instagram à 18 h 30, TikTok à 19 h\n— Légende : « Midi. Quinze secondes. Décide avant d'arriver. » puis le corps, puis « [TON APPEL À L'ACTION] : [TON SITE] »\n— Mots-dièse : #restaurant #[TA VILLE] #[TA SPÉCIALITÉ]\n\nRends-moi le lien de chaque publication."
       }
     ],
     "tutoriel": null
@@ -18753,35 +18807,48 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       }
     },
     "promptVignette": "Illustration 3D, cadrage vertical 9:16, même style que l'image de référence jointe. Le personnage de l'image de référence — Don Citrone — gardé À L'IDENTIQUE : mêmes proportions, mêmes couleurs, même tenue, même accessoire. Ne le redessine pas, ne change pas son visage. Il est LA VEDETTE de l'image et occupe les deux tiers du cadre, en premier plan, tourné vers l'objectif. Ce qu'il fait ici : il relie ce qui est publié à ce qui arrive en salle. Scène : le plat qui revient. Vous l'avez réclamé. Décor derrière lui : le plat en très gros plan sur le pass, vapeur et reflets. lumière rasante de studio culinaire. Le décor reste flou et discret — c'est un fond, pas un sujet. Aucun humain photoréaliste dans l'image, aucun écran de logiciel lisible. Bande bleu RapidoCMS #03A9F5 en haut du cadre sur un cinquième de la hauteur, portant UNIQUEMENT le texte « PLAT REVIENT » en typographie arrondie très grasse, blanc, centré. Aucun autre texte, aucun logo ajouté, pas de filigrane, pas de bordure décorative.",
-    "higgsfieldPrompt": "Vertical 9:16, 10 secondes, 4K. PAS de texte incrusté, PAS de sous-titres, PAS de filigrane, PAS de logo.\n\nDEUX personnages dans le même plan, et c'est voulu :\n— le chef, PHOTORÉALISTE, joue le rôle : chef. Veste blanche, tablier, il est chez lui dans son restaurant ;\n— Don Citrone, personnage 3D stylisé de la Brigade Végé-Fruitée, incrusté dans le même décor à côté de lui, à hauteur de comptoir. Il ne parle pas : il fait le geste de son métier — il relie ce qui est publié à ce qui arrive en salle.\n\nLe mélange photo + 3D est assumé, comme un dessin animé posé dans une prise de vue réelle. Les ombres et la lumière du personnage 3D suivent celles du décor.\n\nDécor : le plat en très gros plan sur le pass, vapeur et reflets. lumière rasante de studio culinaire.\nAction : Un ancien plat retiré de la carte revient parce que les clients l'ont réclamé. À 5 secondes, le geste bascule et le personnage 3D réagit.\nDeux dernières secondes : les deux regardent l'objectif, immobiles.\n\nAudio : ambiance réelle du restaurant, aucun dialogue, pas de musique.",
-    "scriptHeygen": "Un ancien plat retiré de la carte revient parce que les clients l'ont réclamé. Il est revenu.",
+    "higgsfieldPrompt": "Vertical 9:16, 10 secondes, 4K. PAS de texte incrusté, PAS de sous-titres, PAS de filigrane, PAS de logo dans l'image.\n\nIDENTITÉ VISUELLE : RapidoCMS. Bleu #03A9F5 présent dans le décor — un écran, une lumière, un objet — sans jamais former de logo. Tons clairs, blancs, gris #383838. Pas de crème, pas d'orange.\n\nDEUX personnages dans le même plan :\n— Don Citrone, personnage 3D stylisé de la Brigade Végé-Fruitée, EN VEDETTE, au premier plan, deux tiers du cadre. C'est lui qui agit : il relie ce qui est publié à ce qui arrive en salle ;\n— le chef, PHOTORÉALISTE, veste blanche et tablier, en retrait dans son restaurant. Il regarde faire, il ne fait pas.\n\nLe mélange photo + 3D est assumé, comme un dessin animé posé dans une prise de vue réelle. Les ombres du personnage 3D suivent celles du décor.\n\nDécor : le plat en très gros plan sur le pass, vapeur et reflets. lumière rasante de studio culinaire.\nAction : Un ancien plat retiré de la carte revient parce que les clients l'ont réclamé.\nÀ 5 secondes, le geste aboutit et le chef réagit — surpris, puis convaincu.\nDeux dernières secondes : les deux regardent l'objectif côte à côte, immobiles.\n\nAudio : ambiance réelle du restaurant, un bip d'interface discret à 5 secondes, aucun dialogue, pas de musique.",
+    "scriptHeygen": "Moi c'est Don Citrone. Pour cet épisode, il relie ce qui est publié à ce qui arrive en salle — vous me le demandez en une phrase. Vos photos, notre gabarit : la vidéo part sur vos cinq réseaux le soir même.",
     "kit": [
       {
         "etape": 1,
-        "titre": "Le plan comique",
-        "outil": "Higgsfield",
+        "titre": "Vos images",
+        "outil": "Chez vous",
+        "cote": "restaurant",
         "guide": "citron",
-        "consigne": "Remplace ce qui est entre crochets par ce qui est chez toi, colle le tout dans Higgsfield, et lance. Dix secondes plus tard tu as ton plan.",
-        "lien": "https://higgsfield.ai/",
-        "prompt": "Vertical 9:16, 10 secondes, 4K. PAS de texte incrusté, PAS de sous-titres, PAS de filigrane, PAS de logo.\n\nDEUX personnages dans le même plan, et c'est voulu :\n— le chef, PHOTORÉALISTE, joue le rôle : chef. Veste blanche, tablier, il est chez lui dans [TON RESTAURANT] ;\n— Don Citrone, personnage 3D stylisé de la Brigade Végé-Fruitée, incrusté dans le même décor à côté de lui, à hauteur de comptoir. Il ne parle pas : il fait le geste de son métier — il relie ce qui est publié à ce qui arrive en salle.\n\nLe mélange photo + 3D est assumé, comme un dessin animé posé dans une prise de vue réelle. Les ombres et la lumière du personnage 3D suivent celles du décor.\n\nDécor : le plat en très gros plan sur le pass, vapeur et reflets. lumière rasante de studio culinaire.\nAction : chez [TON RESTAURANT], Un ancien plat retiré de la carte revient parce que les clients l'ont réclamé. À 5 secondes, le geste bascule et le personnage 3D réagit.\nDeux dernières secondes : les deux regardent l'objectif, immobiles.\n\nAudio : ambiance réelle du restaurant, aucun dialogue, pas de musique.\n\nÉléments à remplacer : [TON RESTAURANT], [TON PLAT], [TON PRÉNOM]."
+        "consigne": "Commencez par ce que vous avez déjà : dix secondes de votre plat, de votre salle, de votre équipe. Filmé au téléphone, à la verticale. Si vous n'avez rien, l'étape suivante fabrique l'image à votre place.",
+        "lien": "https://site.foodeatup.com/",
+        "prompt": "Ce que je fournis pour l'épisode [TON NUMÉRO] :\n\n— une vidéo verticale de 10 s de [TON PLAT], filmée au téléphone\n— une photo de [TON RESTAURANT] : la salle, la devanture ou le pass\n— mon logo, si j'en ai un\n\nCe que je n'ai pas et que vous complétez avec vos gabarits : [CE QUI ME MANQUE]."
       },
       {
         "etape": 2,
-        "titre": "Le montage",
-        "outil": "Claude Code",
-        "guide": "tomate",
-        "consigne": "Dépose ton plan et ton avatar dans le dépôt, puis écris cette phrase à Claude Code. Tu n'ouvres aucun logiciel de montage.",
-        "lien": "https://claude.com/claude-code",
-        "prompt": "Monte l'épisode [TON NUMÉRO] de ma série.\n\n— Plan comique : assets/hooks/[TON NUMÉRO].mp4\n— Avatar : assets/avatar/[TON NUMÉRO].mp4\n— Écran du logiciel : assets/software/[TON NUMÉRO].mp4\n— Accroche à incruster : « Vous l'avez réclamé. »\n— Punchline en voix off à 5,0 s : « Il est revenu. »\n\nAnatomie : A 0→9,5 · sting 9,5→18,5 · avatar seul 18,5→28,5 · signature 28,5→32,5 · sting de marque 32,5→37,5.\nContrôle le master avant de me le rendre : 37,5 s, 1080×1920, -14 LUFS, crête sous -1 dBTP."
+        "titre": "Le plan d'ouverture",
+        "outil": "Higgsfield",
+        "cote": "restaurant",
+        "guide": "citron",
+        "consigne": "Si vous n'avez pas d'images, ce prompt les fabrique. Remplacez ce qui est entre crochets, collez dans Higgsfield, lancez. Dix secondes plus tard, vous avez votre plan.",
+        "lien": "https://higgsfield.ai/",
+        "prompt": "Vertical 9:16, 10 secondes, 4K. PAS de texte incrusté, PAS de sous-titres, PAS de filigrane, PAS de logo dans l'image.\n\nIDENTITÉ VISUELLE : RapidoCMS. Bleu #03A9F5 présent dans le décor — un écran, une lumière, un objet — sans jamais former de logo. Tons clairs, blancs, gris #383838. Pas de crème, pas d'orange.\n\nDEUX personnages dans le même plan :\n— Don Citrone, personnage 3D stylisé de la Brigade Végé-Fruitée, EN VEDETTE, au premier plan, deux tiers du cadre. C'est lui qui agit : il relie ce qui est publié à ce qui arrive en salle ;\n— le chef, PHOTORÉALISTE, veste blanche et tablier, en retrait dans [TON RESTAURANT]. Il regarde faire, il ne fait pas.\n\nLe mélange photo + 3D est assumé, comme un dessin animé posé dans une prise de vue réelle. Les ombres du personnage 3D suivent celles du décor.\n\nDécor : le plat en très gros plan sur le pass, vapeur et reflets. lumière rasante de studio culinaire.\nAction : chez [TON RESTAURANT], Un ancien plat retiré de la carte revient parce que les clients l'ont réclamé.\nÀ 5 secondes, le geste aboutit et le chef réagit — surpris, puis convaincu.\nDeux dernières secondes : les deux regardent l'objectif côte à côte, immobiles.\n\nAudio : ambiance réelle du restaurant, un bip d'interface discret à 5 secondes, aucun dialogue, pas de musique.\n\nÀ remplacer : [TON RESTAURANT], [TON PLAT], [TON PRÉNOM]."
       },
       {
         "etape": 3,
+        "titre": "Le montage",
+        "outil": "Claude Code",
+        "cote": "rapidocms",
+        "guide": "tomate",
+        "consigne": "Le hook, la signature de fin et les logos sont ceux de RapidoCMS — vous ne les fournissez pas, ils sont dans le gabarit. Vos images occupent le centre. Vous n'ouvrez aucun logiciel de montage.",
+        "lien": "https://claude.com/claude-code",
+        "prompt": "Monte l'épisode [TON NUMÉRO] de ma série, gabarit RapidoCMS.\n\n— Plan d'ouverture : assets/hooks/[TON NUMÉRO].mp4\n— Personnage qui explique : assets/avatar/[TON NUMÉRO].mp4 (Don Citrone, avatar HeyGen)\n— Mes images de restaurant : assets/software/[TON NUMÉRO].mp4\n— Accroche à incruster : « Vous l'avez réclamé. »\n— Punchline en voix off à 5,0 s : « Il est revenu. »\n\nHabillage : hook, signature de fin et logos en charte RapidoCMS — bleu #03A9F5, gris #383838, fond blanc. Pas de crème, pas d'orange.\nAnatomie : A 0→9,5 · sting RapidoCMS 9,5→18,5 · le personnage seul 18,5→28,5 · signature RapidoCMS 28,5→32,5 · sting de marque 32,5→37,5.\nContrôle avant de me le rendre : 37,5 s, 1080×1920, -14 LUFS, crête sous -1 dBTP."
+      },
+      {
+        "etape": 4,
         "titre": "La publication",
         "outil": "RapidoCMS",
+        "cote": "rapidocms",
         "guide": "betterave",
-        "consigne": "Une phrase, et les cinq réseaux sont programmés. Tu ne téléverses rien nulle part.",
+        "consigne": "Une phrase, et les cinq réseaux sont programmés. Le master part d'abord dans votre bibliothèque, puis en ligne. Vous ne téléversez rien nulle part.",
         "lien": "https://cms.rapidosoftware.com/register",
-        "prompt": "Verse le master dans ma bibliothèque RapidoCMS, puis programme les cinq réseaux de [TON RESTAURANT] :\n\n— LinkedIn à 8 h, Facebook à 12 h, YouTube à 10 h, Instagram à 18 h 30, TikTok à 19 h\n— Légende : « Vous l'avez réclamé. Il est revenu. » puis le corps, puis « [TON APPEL À L'ACTION] : [TON SITE] »\n— Mots-dièse : #restaurant #[TA VILLE] #[TA SPÉCIALITÉ]\n\nRends-moi le lien de chaque publication."
+        "prompt": "Verse le master dans ma bibliothèque RapidoCMS, puis programme les cinq réseaux de [TON RESTAURANT] :\n\n— LinkedIn à 8 h, YouTube à 10 h, Facebook à 12 h, Instagram à 18 h 30, TikTok à 19 h\n— Légende : « Vous l'avez réclamé. Il est revenu. » puis le corps, puis « [TON APPEL À L'ACTION] : [TON SITE] »\n— Mots-dièse : #restaurant #[TA VILLE] #[TA SPÉCIALITÉ]\n\nRends-moi le lien de chaque publication."
       }
     ],
     "tutoriel": null
@@ -18901,35 +18968,48 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       }
     },
     "promptVignette": "Illustration 3D, cadrage vertical 9:16, même style que l'image de référence jointe. Le personnage de l'image de référence — Tomate Man — gardé À L'IDENTIQUE : mêmes proportions, mêmes couleurs, même tenue, même accessoire. Ne le redessine pas, ne change pas son visage. Il est LA VEDETTE de l'image et occupe les deux tiers du cadre, en premier plan, tourné vers l'objectif. Ce qu'il fait ici : il assemble les cinq segments et contrôle avant de livrer. Scène : le dessert qu'on ne montre jamais. Ce que tu ne vois jamais. Décor derrière lui : le plat en très gros plan sur le pass, vapeur et reflets. lumière rasante de studio culinaire. Le décor reste flou et discret — c'est un fond, pas un sujet. Aucun humain photoréaliste dans l'image, aucun écran de logiciel lisible. Bande bleu RapidoCMS #03A9F5 en haut du cadre sur un cinquième de la hauteur, portant UNIQUEMENT le texte « DESSERT QU'ON NE » en typographie arrondie très grasse, blanc, centré. Aucun autre texte, aucun logo ajouté, pas de filigrane, pas de bordure décorative.",
-    "higgsfieldPrompt": "Vertical 9:16, 10 secondes, 4K. PAS de texte incrusté, PAS de sous-titres, PAS de filigrane, PAS de logo.\n\nDEUX personnages dans le même plan, et c'est voulu :\n— le chef, PHOTORÉALISTE, joue le rôle : chef. Veste blanche, tablier, il est chez lui dans son restaurant ;\n— Tomate Man, personnage 3D stylisé de la Brigade Végé-Fruitée, incrusté dans le même décor à côté de lui, à hauteur de comptoir. Il ne parle pas : il fait le geste de son métier — il assemble les cinq segments et contrôle avant de livrer.\n\nLe mélange photo + 3D est assumé, comme un dessin animé posé dans une prise de vue réelle. Les ombres et la lumière du personnage 3D suivent celles du décor.\n\nDécor : le plat en très gros plan sur le pass, vapeur et reflets. lumière rasante de studio culinaire.\nAction : Le dessert monté en direct, à la seconde où il quitte le froid. À 5 secondes, le geste bascule et le personnage 3D réagit.\nDeux dernières secondes : les deux regardent l'objectif, immobiles.\n\nAudio : ambiance réelle du restaurant, aucun dialogue, pas de musique.",
-    "scriptHeygen": "Le dessert monté en direct, à la seconde où il quitte le froid. Trente secondes avant ton assiette.",
+    "higgsfieldPrompt": "Vertical 9:16, 10 secondes, 4K. PAS de texte incrusté, PAS de sous-titres, PAS de filigrane, PAS de logo dans l'image.\n\nIDENTITÉ VISUELLE : RapidoCMS. Bleu #03A9F5 présent dans le décor — un écran, une lumière, un objet — sans jamais former de logo. Tons clairs, blancs, gris #383838. Pas de crème, pas d'orange.\n\nDEUX personnages dans le même plan :\n— Tomate Man, personnage 3D stylisé de la Brigade Végé-Fruitée, EN VEDETTE, au premier plan, deux tiers du cadre. C'est lui qui agit : il assemble les cinq segments et contrôle avant de livrer ;\n— le chef, PHOTORÉALISTE, veste blanche et tablier, en retrait dans son restaurant. Il regarde faire, il ne fait pas.\n\nLe mélange photo + 3D est assumé, comme un dessin animé posé dans une prise de vue réelle. Les ombres du personnage 3D suivent celles du décor.\n\nDécor : le plat en très gros plan sur le pass, vapeur et reflets. lumière rasante de studio culinaire.\nAction : Le dessert monté en direct, à la seconde où il quitte le froid.\nÀ 5 secondes, le geste aboutit et le chef réagit — surpris, puis convaincu.\nDeux dernières secondes : les deux regardent l'objectif côte à côte, immobiles.\n\nAudio : ambiance réelle du restaurant, un bip d'interface discret à 5 secondes, aucun dialogue, pas de musique.",
+    "scriptHeygen": "Moi c'est Tomate Man. Pour cet épisode, il assemble les cinq segments et contrôle avant de livrer — vous me le demandez en une phrase. Vos photos, notre gabarit : la vidéo part sur vos cinq réseaux le soir même.",
     "kit": [
       {
         "etape": 1,
-        "titre": "Le plan comique",
-        "outil": "Higgsfield",
+        "titre": "Vos images",
+        "outil": "Chez vous",
+        "cote": "restaurant",
         "guide": "tomate",
-        "consigne": "Remplace ce qui est entre crochets par ce qui est chez toi, colle le tout dans Higgsfield, et lance. Dix secondes plus tard tu as ton plan.",
-        "lien": "https://higgsfield.ai/",
-        "prompt": "Vertical 9:16, 10 secondes, 4K. PAS de texte incrusté, PAS de sous-titres, PAS de filigrane, PAS de logo.\n\nDEUX personnages dans le même plan, et c'est voulu :\n— le chef, PHOTORÉALISTE, joue le rôle : chef. Veste blanche, tablier, il est chez lui dans [TON RESTAURANT] ;\n— Tomate Man, personnage 3D stylisé de la Brigade Végé-Fruitée, incrusté dans le même décor à côté de lui, à hauteur de comptoir. Il ne parle pas : il fait le geste de son métier — il assemble les cinq segments et contrôle avant de livrer.\n\nLe mélange photo + 3D est assumé, comme un dessin animé posé dans une prise de vue réelle. Les ombres et la lumière du personnage 3D suivent celles du décor.\n\nDécor : le plat en très gros plan sur le pass, vapeur et reflets. lumière rasante de studio culinaire.\nAction : chez [TON RESTAURANT], Le dessert monté en direct, à la seconde où il quitte le froid. À 5 secondes, le geste bascule et le personnage 3D réagit.\nDeux dernières secondes : les deux regardent l'objectif, immobiles.\n\nAudio : ambiance réelle du restaurant, aucun dialogue, pas de musique.\n\nÉléments à remplacer : [TON RESTAURANT], [TON PLAT], [TON PRÉNOM]."
+        "consigne": "Commencez par ce que vous avez déjà : dix secondes de votre plat, de votre salle, de votre équipe. Filmé au téléphone, à la verticale. Si vous n'avez rien, l'étape suivante fabrique l'image à votre place.",
+        "lien": "https://site.foodeatup.com/",
+        "prompt": "Ce que je fournis pour l'épisode [TON NUMÉRO] :\n\n— une vidéo verticale de 10 s de [TON PLAT], filmée au téléphone\n— une photo de [TON RESTAURANT] : la salle, la devanture ou le pass\n— mon logo, si j'en ai un\n\nCe que je n'ai pas et que vous complétez avec vos gabarits : [CE QUI ME MANQUE]."
       },
       {
         "etape": 2,
-        "titre": "Le montage",
-        "outil": "Claude Code",
+        "titre": "Le plan d'ouverture",
+        "outil": "Higgsfield",
+        "cote": "restaurant",
         "guide": "tomate",
-        "consigne": "Dépose ton plan et ton avatar dans le dépôt, puis écris cette phrase à Claude Code. Tu n'ouvres aucun logiciel de montage.",
-        "lien": "https://claude.com/claude-code",
-        "prompt": "Monte l'épisode [TON NUMÉRO] de ma série.\n\n— Plan comique : assets/hooks/[TON NUMÉRO].mp4\n— Avatar : assets/avatar/[TON NUMÉRO].mp4\n— Écran du logiciel : assets/software/[TON NUMÉRO].mp4\n— Accroche à incruster : « Ce que tu ne vois jamais. »\n— Punchline en voix off à 5,0 s : « Trente secondes avant ton assiette. »\n\nAnatomie : A 0→9,5 · sting 9,5→18,5 · avatar seul 18,5→28,5 · signature 28,5→32,5 · sting de marque 32,5→37,5.\nContrôle le master avant de me le rendre : 37,5 s, 1080×1920, -14 LUFS, crête sous -1 dBTP."
+        "consigne": "Si vous n'avez pas d'images, ce prompt les fabrique. Remplacez ce qui est entre crochets, collez dans Higgsfield, lancez. Dix secondes plus tard, vous avez votre plan.",
+        "lien": "https://higgsfield.ai/",
+        "prompt": "Vertical 9:16, 10 secondes, 4K. PAS de texte incrusté, PAS de sous-titres, PAS de filigrane, PAS de logo dans l'image.\n\nIDENTITÉ VISUELLE : RapidoCMS. Bleu #03A9F5 présent dans le décor — un écran, une lumière, un objet — sans jamais former de logo. Tons clairs, blancs, gris #383838. Pas de crème, pas d'orange.\n\nDEUX personnages dans le même plan :\n— Tomate Man, personnage 3D stylisé de la Brigade Végé-Fruitée, EN VEDETTE, au premier plan, deux tiers du cadre. C'est lui qui agit : il assemble les cinq segments et contrôle avant de livrer ;\n— le chef, PHOTORÉALISTE, veste blanche et tablier, en retrait dans [TON RESTAURANT]. Il regarde faire, il ne fait pas.\n\nLe mélange photo + 3D est assumé, comme un dessin animé posé dans une prise de vue réelle. Les ombres du personnage 3D suivent celles du décor.\n\nDécor : le plat en très gros plan sur le pass, vapeur et reflets. lumière rasante de studio culinaire.\nAction : chez [TON RESTAURANT], Le dessert monté en direct, à la seconde où il quitte le froid.\nÀ 5 secondes, le geste aboutit et le chef réagit — surpris, puis convaincu.\nDeux dernières secondes : les deux regardent l'objectif côte à côte, immobiles.\n\nAudio : ambiance réelle du restaurant, un bip d'interface discret à 5 secondes, aucun dialogue, pas de musique.\n\nÀ remplacer : [TON RESTAURANT], [TON PLAT], [TON PRÉNOM]."
       },
       {
         "etape": 3,
+        "titre": "Le montage",
+        "outil": "Claude Code",
+        "cote": "rapidocms",
+        "guide": "tomate",
+        "consigne": "Le hook, la signature de fin et les logos sont ceux de RapidoCMS — vous ne les fournissez pas, ils sont dans le gabarit. Vos images occupent le centre. Vous n'ouvrez aucun logiciel de montage.",
+        "lien": "https://claude.com/claude-code",
+        "prompt": "Monte l'épisode [TON NUMÉRO] de ma série, gabarit RapidoCMS.\n\n— Plan d'ouverture : assets/hooks/[TON NUMÉRO].mp4\n— Personnage qui explique : assets/avatar/[TON NUMÉRO].mp4 (Tomate Man, avatar HeyGen)\n— Mes images de restaurant : assets/software/[TON NUMÉRO].mp4\n— Accroche à incruster : « Ce que tu ne vois jamais. »\n— Punchline en voix off à 5,0 s : « Trente secondes avant ton assiette. »\n\nHabillage : hook, signature de fin et logos en charte RapidoCMS — bleu #03A9F5, gris #383838, fond blanc. Pas de crème, pas d'orange.\nAnatomie : A 0→9,5 · sting RapidoCMS 9,5→18,5 · le personnage seul 18,5→28,5 · signature RapidoCMS 28,5→32,5 · sting de marque 32,5→37,5.\nContrôle avant de me le rendre : 37,5 s, 1080×1920, -14 LUFS, crête sous -1 dBTP."
+      },
+      {
+        "etape": 4,
         "titre": "La publication",
         "outil": "RapidoCMS",
+        "cote": "rapidocms",
         "guide": "betterave",
-        "consigne": "Une phrase, et les cinq réseaux sont programmés. Tu ne téléverses rien nulle part.",
+        "consigne": "Une phrase, et les cinq réseaux sont programmés. Le master part d'abord dans votre bibliothèque, puis en ligne. Vous ne téléversez rien nulle part.",
         "lien": "https://cms.rapidosoftware.com/register",
-        "prompt": "Verse le master dans ma bibliothèque RapidoCMS, puis programme les cinq réseaux de [TON RESTAURANT] :\n\n— LinkedIn à 8 h, Facebook à 12 h, YouTube à 10 h, Instagram à 18 h 30, TikTok à 19 h\n— Légende : « Ce que tu ne vois jamais. Trente secondes avant ton assiette. » puis le corps, puis « [TON APPEL À L'ACTION] : [TON SITE] »\n— Mots-dièse : #restaurant #[TA VILLE] #[TA SPÉCIALITÉ]\n\nRends-moi le lien de chaque publication."
+        "prompt": "Verse le master dans ma bibliothèque RapidoCMS, puis programme les cinq réseaux de [TON RESTAURANT] :\n\n— LinkedIn à 8 h, YouTube à 10 h, Facebook à 12 h, Instagram à 18 h 30, TikTok à 19 h\n— Légende : « Ce que tu ne vois jamais. Trente secondes avant ton assiette. » puis le corps, puis « [TON APPEL À L'ACTION] : [TON SITE] »\n— Mots-dièse : #restaurant #[TA VILLE] #[TA SPÉCIALITÉ]\n\nRends-moi le lien de chaque publication."
       }
     ],
     "tutoriel": null
@@ -19049,35 +19129,48 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       }
     },
     "promptVignette": "Illustration 3D, cadrage vertical 9:16, même style que l'image de référence jointe. Le personnage de l'image de référence — La Betterave — gardé À L'IDENTIQUE : mêmes proportions, mêmes couleurs, même tenue, même accessoire. Ne le redessine pas, ne change pas son visage. Il est LA VEDETTE de l'image et occupe les deux tiers du cadre, en premier plan, tourné vers l'objectif. Ce qu'il fait ici : elle programme les cinq réseaux aux bons créneaux. Scène : un événement au resto. Vendredi 12, ici. Décor derrière lui : la salle préparée pour le soir, tables dressées, lumières basses. lumière chaude de début de service. Le décor reste flou et discret — c'est un fond, pas un sujet. Aucun humain photoréaliste dans l'image, aucun écran de logiciel lisible. Bande bleu RapidoCMS #03A9F5 en haut du cadre sur un cinquième de la hauteur, portant UNIQUEMENT le texte « ÉVÉNEMENT RESTO » en typographie arrondie très grasse, blanc, centré. Aucun autre texte, aucun logo ajouté, pas de filigrane, pas de bordure décorative.",
-    "higgsfieldPrompt": "Vertical 9:16, 10 secondes, 4K. PAS de texte incrusté, PAS de sous-titres, PAS de filigrane, PAS de logo.\n\nDEUX personnages dans le même plan, et c'est voulu :\n— le chef, PHOTORÉALISTE, joue le rôle : directeur. Veste blanche, tablier, il est chez lui dans son restaurant ;\n— La Betterave, personnage 3D stylisé de la Brigade Végé-Fruitée, incrusté dans le même décor à côté de lui, à hauteur de comptoir. Il ne parle pas : il fait le geste de son métier — elle programme les cinq réseaux aux bons créneaux.\n\nLe mélange photo + 3D est assumé, comme un dessin animé posé dans une prise de vue réelle. Les ombres et la lumière du personnage 3D suivent celles du décor.\n\nDécor : la salle préparée pour le soir, tables dressées, lumières basses. lumière chaude de début de service.\nAction : Date, heure, ce qu'on y fait, ce qu'on y mange. À 5 secondes, le geste bascule et le personnage 3D réagit.\nDeux dernières secondes : les deux regardent l'objectif, immobiles.\n\nAudio : ambiance réelle du restaurant, aucun dialogue, pas de musique.",
-    "scriptHeygen": "Date, heure, ce qu'on y fait, ce qu'on y mange. Il y a un nombre de places. Pas plus.",
+    "higgsfieldPrompt": "Vertical 9:16, 10 secondes, 4K. PAS de texte incrusté, PAS de sous-titres, PAS de filigrane, PAS de logo dans l'image.\n\nIDENTITÉ VISUELLE : RapidoCMS. Bleu #03A9F5 présent dans le décor — un écran, une lumière, un objet — sans jamais former de logo. Tons clairs, blancs, gris #383838. Pas de crème, pas d'orange.\n\nDEUX personnages dans le même plan :\n— La Betterave, personnage 3D stylisé de la Brigade Végé-Fruitée, EN VEDETTE, au premier plan, deux tiers du cadre. C'est lui qui agit : elle programme les cinq réseaux aux bons créneaux ;\n— le chef, PHOTORÉALISTE, veste blanche et tablier, en retrait dans son restaurant. Il regarde faire, il ne fait pas.\n\nLe mélange photo + 3D est assumé, comme un dessin animé posé dans une prise de vue réelle. Les ombres du personnage 3D suivent celles du décor.\n\nDécor : la salle préparée pour le soir, tables dressées, lumières basses. lumière chaude de début de service.\nAction : Date, heure, ce qu'on y fait, ce qu'on y mange.\nÀ 5 secondes, le geste aboutit et le chef réagit — surpris, puis convaincu.\nDeux dernières secondes : les deux regardent l'objectif côte à côte, immobiles.\n\nAudio : ambiance réelle du restaurant, un bip d'interface discret à 5 secondes, aucun dialogue, pas de musique.",
+    "scriptHeygen": "Moi c'est La Betterave. Pour cet épisode, elle programme les cinq réseaux aux bons créneaux — vous me le demandez en une phrase. Vos photos, notre gabarit : la vidéo part sur vos cinq réseaux le soir même.",
     "kit": [
       {
         "etape": 1,
-        "titre": "Le plan comique",
-        "outil": "Higgsfield",
+        "titre": "Vos images",
+        "outil": "Chez vous",
+        "cote": "restaurant",
         "guide": "betterave",
-        "consigne": "Remplace ce qui est entre crochets par ce qui est chez toi, colle le tout dans Higgsfield, et lance. Dix secondes plus tard tu as ton plan.",
-        "lien": "https://higgsfield.ai/",
-        "prompt": "Vertical 9:16, 10 secondes, 4K. PAS de texte incrusté, PAS de sous-titres, PAS de filigrane, PAS de logo.\n\nDEUX personnages dans le même plan, et c'est voulu :\n— le chef, PHOTORÉALISTE, joue le rôle : directeur. Veste blanche, tablier, il est chez lui dans [TON RESTAURANT] ;\n— La Betterave, personnage 3D stylisé de la Brigade Végé-Fruitée, incrusté dans le même décor à côté de lui, à hauteur de comptoir. Il ne parle pas : il fait le geste de son métier — elle programme les cinq réseaux aux bons créneaux.\n\nLe mélange photo + 3D est assumé, comme un dessin animé posé dans une prise de vue réelle. Les ombres et la lumière du personnage 3D suivent celles du décor.\n\nDécor : la salle préparée pour le soir, tables dressées, lumières basses. lumière chaude de début de service.\nAction : chez [TON RESTAURANT], Date, heure, ce qu'on y fait, ce qu'on y mange. À 5 secondes, le geste bascule et le personnage 3D réagit.\nDeux dernières secondes : les deux regardent l'objectif, immobiles.\n\nAudio : ambiance réelle du restaurant, aucun dialogue, pas de musique.\n\nÉléments à remplacer : [TON RESTAURANT], [TON PLAT], [TON PRÉNOM]."
+        "consigne": "Commencez par ce que vous avez déjà : dix secondes de votre plat, de votre salle, de votre équipe. Filmé au téléphone, à la verticale. Si vous n'avez rien, l'étape suivante fabrique l'image à votre place.",
+        "lien": "https://site.foodeatup.com/",
+        "prompt": "Ce que je fournis pour l'épisode [TON NUMÉRO] :\n\n— une vidéo verticale de 10 s de [TON PLAT], filmée au téléphone\n— une photo de [TON RESTAURANT] : la salle, la devanture ou le pass\n— mon logo, si j'en ai un\n\nCe que je n'ai pas et que vous complétez avec vos gabarits : [CE QUI ME MANQUE]."
       },
       {
         "etape": 2,
-        "titre": "Le montage",
-        "outil": "Claude Code",
-        "guide": "tomate",
-        "consigne": "Dépose ton plan et ton avatar dans le dépôt, puis écris cette phrase à Claude Code. Tu n'ouvres aucun logiciel de montage.",
-        "lien": "https://claude.com/claude-code",
-        "prompt": "Monte l'épisode [TON NUMÉRO] de ma série.\n\n— Plan comique : assets/hooks/[TON NUMÉRO].mp4\n— Avatar : assets/avatar/[TON NUMÉRO].mp4\n— Écran du logiciel : assets/software/[TON NUMÉRO].mp4\n— Accroche à incruster : « Vendredi 12, ici. »\n— Punchline en voix off à 5,0 s : « Il y a un nombre de places. Pas plus. »\n\nAnatomie : A 0→9,5 · sting 9,5→18,5 · avatar seul 18,5→28,5 · signature 28,5→32,5 · sting de marque 32,5→37,5.\nContrôle le master avant de me le rendre : 37,5 s, 1080×1920, -14 LUFS, crête sous -1 dBTP."
+        "titre": "Le plan d'ouverture",
+        "outil": "Higgsfield",
+        "cote": "restaurant",
+        "guide": "betterave",
+        "consigne": "Si vous n'avez pas d'images, ce prompt les fabrique. Remplacez ce qui est entre crochets, collez dans Higgsfield, lancez. Dix secondes plus tard, vous avez votre plan.",
+        "lien": "https://higgsfield.ai/",
+        "prompt": "Vertical 9:16, 10 secondes, 4K. PAS de texte incrusté, PAS de sous-titres, PAS de filigrane, PAS de logo dans l'image.\n\nIDENTITÉ VISUELLE : RapidoCMS. Bleu #03A9F5 présent dans le décor — un écran, une lumière, un objet — sans jamais former de logo. Tons clairs, blancs, gris #383838. Pas de crème, pas d'orange.\n\nDEUX personnages dans le même plan :\n— La Betterave, personnage 3D stylisé de la Brigade Végé-Fruitée, EN VEDETTE, au premier plan, deux tiers du cadre. C'est lui qui agit : elle programme les cinq réseaux aux bons créneaux ;\n— le chef, PHOTORÉALISTE, veste blanche et tablier, en retrait dans [TON RESTAURANT]. Il regarde faire, il ne fait pas.\n\nLe mélange photo + 3D est assumé, comme un dessin animé posé dans une prise de vue réelle. Les ombres du personnage 3D suivent celles du décor.\n\nDécor : la salle préparée pour le soir, tables dressées, lumières basses. lumière chaude de début de service.\nAction : chez [TON RESTAURANT], Date, heure, ce qu'on y fait, ce qu'on y mange.\nÀ 5 secondes, le geste aboutit et le chef réagit — surpris, puis convaincu.\nDeux dernières secondes : les deux regardent l'objectif côte à côte, immobiles.\n\nAudio : ambiance réelle du restaurant, un bip d'interface discret à 5 secondes, aucun dialogue, pas de musique.\n\nÀ remplacer : [TON RESTAURANT], [TON PLAT], [TON PRÉNOM]."
       },
       {
         "etape": 3,
+        "titre": "Le montage",
+        "outil": "Claude Code",
+        "cote": "rapidocms",
+        "guide": "tomate",
+        "consigne": "Le hook, la signature de fin et les logos sont ceux de RapidoCMS — vous ne les fournissez pas, ils sont dans le gabarit. Vos images occupent le centre. Vous n'ouvrez aucun logiciel de montage.",
+        "lien": "https://claude.com/claude-code",
+        "prompt": "Monte l'épisode [TON NUMÉRO] de ma série, gabarit RapidoCMS.\n\n— Plan d'ouverture : assets/hooks/[TON NUMÉRO].mp4\n— Personnage qui explique : assets/avatar/[TON NUMÉRO].mp4 (La Betterave, avatar HeyGen)\n— Mes images de restaurant : assets/software/[TON NUMÉRO].mp4\n— Accroche à incruster : « Vendredi 12, ici. »\n— Punchline en voix off à 5,0 s : « Il y a un nombre de places. Pas plus. »\n\nHabillage : hook, signature de fin et logos en charte RapidoCMS — bleu #03A9F5, gris #383838, fond blanc. Pas de crème, pas d'orange.\nAnatomie : A 0→9,5 · sting RapidoCMS 9,5→18,5 · le personnage seul 18,5→28,5 · signature RapidoCMS 28,5→32,5 · sting de marque 32,5→37,5.\nContrôle avant de me le rendre : 37,5 s, 1080×1920, -14 LUFS, crête sous -1 dBTP."
+      },
+      {
+        "etape": 4,
         "titre": "La publication",
         "outil": "RapidoCMS",
+        "cote": "rapidocms",
         "guide": "betterave",
-        "consigne": "Une phrase, et les cinq réseaux sont programmés. Tu ne téléverses rien nulle part.",
+        "consigne": "Une phrase, et les cinq réseaux sont programmés. Le master part d'abord dans votre bibliothèque, puis en ligne. Vous ne téléversez rien nulle part.",
         "lien": "https://cms.rapidosoftware.com/register",
-        "prompt": "Verse le master dans ma bibliothèque RapidoCMS, puis programme les cinq réseaux de [TON RESTAURANT] :\n\n— LinkedIn à 8 h, Facebook à 12 h, YouTube à 10 h, Instagram à 18 h 30, TikTok à 19 h\n— Légende : « Vendredi 12, ici. Il y a un nombre de places. Pas plus. » puis le corps, puis « [TON APPEL À L'ACTION] : [TON SITE] »\n— Mots-dièse : #restaurant #[TA VILLE] #[TA SPÉCIALITÉ]\n\nRends-moi le lien de chaque publication."
+        "prompt": "Verse le master dans ma bibliothèque RapidoCMS, puis programme les cinq réseaux de [TON RESTAURANT] :\n\n— LinkedIn à 8 h, YouTube à 10 h, Facebook à 12 h, Instagram à 18 h 30, TikTok à 19 h\n— Légende : « Vendredi 12, ici. Il y a un nombre de places. Pas plus. » puis le corps, puis « [TON APPEL À L'ACTION] : [TON SITE] »\n— Mots-dièse : #restaurant #[TA VILLE] #[TA SPÉCIALITÉ]\n\nRends-moi le lien de chaque publication."
       }
     ],
     "tutoriel": null
@@ -19197,35 +19290,48 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       }
     },
     "promptVignette": "Illustration 3D, cadrage vertical 9:16, même style que l'image de référence jointe. Le personnage de l'image de référence — Le Brocoli — gardé À L'IDENTIQUE : mêmes proportions, mêmes couleurs, même tenue, même accessoire. Ne le redessine pas, ne change pas son visage. Il est LA VEDETTE de l'image et occupe les deux tiers du cadre, en premier plan, tourné vers l'objectif. Ce qu'il fait ici : il tient le calendrier et propose quoi publier, quand. Scène : on diffuse le match. On diffuse le match. Décor derrière lui : la salle préparée pour le soir, tables dressées, lumières basses. lumière chaude de début de service. Le décor reste flou et discret — c'est un fond, pas un sujet. Aucun humain photoréaliste dans l'image, aucun écran de logiciel lisible. Bande bleu RapidoCMS #03A9F5 en haut du cadre sur un cinquième de la hauteur, portant UNIQUEMENT le texte « DIFFUSE MATCH » en typographie arrondie très grasse, blanc, centré. Aucun autre texte, aucun logo ajouté, pas de filigrane, pas de bordure décorative.",
-    "higgsfieldPrompt": "Vertical 9:16, 10 secondes, 4K. PAS de texte incrusté, PAS de sous-titres, PAS de filigrane, PAS de logo.\n\nDEUX personnages dans le même plan, et c'est voulu :\n— le chef, PHOTORÉALISTE, joue le rôle : serveur. Veste blanche, tablier, il est chez lui dans son restaurant ;\n— Le Brocoli, personnage 3D stylisé de la Brigade Végé-Fruitée, incrusté dans le même décor à côté de lui, à hauteur de comptoir. Il ne parle pas : il fait le geste de son métier — il tient le calendrier et propose quoi publier, quand.\n\nLe mélange photo + 3D est assumé, comme un dessin animé posé dans une prise de vue réelle. Les ombres et la lumière du personnage 3D suivent celles du décor.\n\nDécor : la salle préparée pour le soir, tables dressées, lumières basses. lumière chaude de début de service.\nAction : L'écran, la salle qui se remplit, l'ardoise du menu match. À 5 secondes, le geste bascule et le personnage 3D réagit.\nDeux dernières secondes : les deux regardent l'objectif, immobiles.\n\nAudio : ambiance réelle du restaurant, aucun dialogue, pas de musique.",
-    "scriptHeygen": "L'écran, la salle qui se remplit, l'ardoise du menu match. L'écran est grand. La table se réserve.",
+    "higgsfieldPrompt": "Vertical 9:16, 10 secondes, 4K. PAS de texte incrusté, PAS de sous-titres, PAS de filigrane, PAS de logo dans l'image.\n\nIDENTITÉ VISUELLE : RapidoCMS. Bleu #03A9F5 présent dans le décor — un écran, une lumière, un objet — sans jamais former de logo. Tons clairs, blancs, gris #383838. Pas de crème, pas d'orange.\n\nDEUX personnages dans le même plan :\n— Le Brocoli, personnage 3D stylisé de la Brigade Végé-Fruitée, EN VEDETTE, au premier plan, deux tiers du cadre. C'est lui qui agit : il tient le calendrier et propose quoi publier, quand ;\n— le chef, PHOTORÉALISTE, veste blanche et tablier, en retrait dans son restaurant. Il regarde faire, il ne fait pas.\n\nLe mélange photo + 3D est assumé, comme un dessin animé posé dans une prise de vue réelle. Les ombres du personnage 3D suivent celles du décor.\n\nDécor : la salle préparée pour le soir, tables dressées, lumières basses. lumière chaude de début de service.\nAction : L'écran, la salle qui se remplit, l'ardoise du menu match.\nÀ 5 secondes, le geste aboutit et le chef réagit — surpris, puis convaincu.\nDeux dernières secondes : les deux regardent l'objectif côte à côte, immobiles.\n\nAudio : ambiance réelle du restaurant, un bip d'interface discret à 5 secondes, aucun dialogue, pas de musique.",
+    "scriptHeygen": "Moi c'est Le Brocoli. Pour cet épisode, il tient le calendrier et propose quoi publier, quand — vous me le demandez en une phrase. Vos photos, notre gabarit : la vidéo part sur vos cinq réseaux le soir même.",
     "kit": [
       {
         "etape": 1,
-        "titre": "Le plan comique",
-        "outil": "Higgsfield",
+        "titre": "Vos images",
+        "outil": "Chez vous",
+        "cote": "restaurant",
         "guide": "brocoli",
-        "consigne": "Remplace ce qui est entre crochets par ce qui est chez toi, colle le tout dans Higgsfield, et lance. Dix secondes plus tard tu as ton plan.",
-        "lien": "https://higgsfield.ai/",
-        "prompt": "Vertical 9:16, 10 secondes, 4K. PAS de texte incrusté, PAS de sous-titres, PAS de filigrane, PAS de logo.\n\nDEUX personnages dans le même plan, et c'est voulu :\n— le chef, PHOTORÉALISTE, joue le rôle : serveur. Veste blanche, tablier, il est chez lui dans [TON RESTAURANT] ;\n— Le Brocoli, personnage 3D stylisé de la Brigade Végé-Fruitée, incrusté dans le même décor à côté de lui, à hauteur de comptoir. Il ne parle pas : il fait le geste de son métier — il tient le calendrier et propose quoi publier, quand.\n\nLe mélange photo + 3D est assumé, comme un dessin animé posé dans une prise de vue réelle. Les ombres et la lumière du personnage 3D suivent celles du décor.\n\nDécor : la salle préparée pour le soir, tables dressées, lumières basses. lumière chaude de début de service.\nAction : chez [TON RESTAURANT], L'écran, la salle qui se remplit, l'ardoise du menu match. À 5 secondes, le geste bascule et le personnage 3D réagit.\nDeux dernières secondes : les deux regardent l'objectif, immobiles.\n\nAudio : ambiance réelle du restaurant, aucun dialogue, pas de musique.\n\nÉléments à remplacer : [TON RESTAURANT], [TON PLAT], [TON PRÉNOM]."
+        "consigne": "Commencez par ce que vous avez déjà : dix secondes de votre plat, de votre salle, de votre équipe. Filmé au téléphone, à la verticale. Si vous n'avez rien, l'étape suivante fabrique l'image à votre place.",
+        "lien": "https://site.foodeatup.com/",
+        "prompt": "Ce que je fournis pour l'épisode [TON NUMÉRO] :\n\n— une vidéo verticale de 10 s de [TON PLAT], filmée au téléphone\n— une photo de [TON RESTAURANT] : la salle, la devanture ou le pass\n— mon logo, si j'en ai un\n\nCe que je n'ai pas et que vous complétez avec vos gabarits : [CE QUI ME MANQUE]."
       },
       {
         "etape": 2,
-        "titre": "Le montage",
-        "outil": "Claude Code",
-        "guide": "tomate",
-        "consigne": "Dépose ton plan et ton avatar dans le dépôt, puis écris cette phrase à Claude Code. Tu n'ouvres aucun logiciel de montage.",
-        "lien": "https://claude.com/claude-code",
-        "prompt": "Monte l'épisode [TON NUMÉRO] de ma série.\n\n— Plan comique : assets/hooks/[TON NUMÉRO].mp4\n— Avatar : assets/avatar/[TON NUMÉRO].mp4\n— Écran du logiciel : assets/software/[TON NUMÉRO].mp4\n— Accroche à incruster : « On diffuse le match. »\n— Punchline en voix off à 5,0 s : « L'écran est grand. La table se réserve. »\n\nAnatomie : A 0→9,5 · sting 9,5→18,5 · avatar seul 18,5→28,5 · signature 28,5→32,5 · sting de marque 32,5→37,5.\nContrôle le master avant de me le rendre : 37,5 s, 1080×1920, -14 LUFS, crête sous -1 dBTP."
+        "titre": "Le plan d'ouverture",
+        "outil": "Higgsfield",
+        "cote": "restaurant",
+        "guide": "brocoli",
+        "consigne": "Si vous n'avez pas d'images, ce prompt les fabrique. Remplacez ce qui est entre crochets, collez dans Higgsfield, lancez. Dix secondes plus tard, vous avez votre plan.",
+        "lien": "https://higgsfield.ai/",
+        "prompt": "Vertical 9:16, 10 secondes, 4K. PAS de texte incrusté, PAS de sous-titres, PAS de filigrane, PAS de logo dans l'image.\n\nIDENTITÉ VISUELLE : RapidoCMS. Bleu #03A9F5 présent dans le décor — un écran, une lumière, un objet — sans jamais former de logo. Tons clairs, blancs, gris #383838. Pas de crème, pas d'orange.\n\nDEUX personnages dans le même plan :\n— Le Brocoli, personnage 3D stylisé de la Brigade Végé-Fruitée, EN VEDETTE, au premier plan, deux tiers du cadre. C'est lui qui agit : il tient le calendrier et propose quoi publier, quand ;\n— le chef, PHOTORÉALISTE, veste blanche et tablier, en retrait dans [TON RESTAURANT]. Il regarde faire, il ne fait pas.\n\nLe mélange photo + 3D est assumé, comme un dessin animé posé dans une prise de vue réelle. Les ombres du personnage 3D suivent celles du décor.\n\nDécor : la salle préparée pour le soir, tables dressées, lumières basses. lumière chaude de début de service.\nAction : chez [TON RESTAURANT], L'écran, la salle qui se remplit, l'ardoise du menu match.\nÀ 5 secondes, le geste aboutit et le chef réagit — surpris, puis convaincu.\nDeux dernières secondes : les deux regardent l'objectif côte à côte, immobiles.\n\nAudio : ambiance réelle du restaurant, un bip d'interface discret à 5 secondes, aucun dialogue, pas de musique.\n\nÀ remplacer : [TON RESTAURANT], [TON PLAT], [TON PRÉNOM]."
       },
       {
         "etape": 3,
+        "titre": "Le montage",
+        "outil": "Claude Code",
+        "cote": "rapidocms",
+        "guide": "tomate",
+        "consigne": "Le hook, la signature de fin et les logos sont ceux de RapidoCMS — vous ne les fournissez pas, ils sont dans le gabarit. Vos images occupent le centre. Vous n'ouvrez aucun logiciel de montage.",
+        "lien": "https://claude.com/claude-code",
+        "prompt": "Monte l'épisode [TON NUMÉRO] de ma série, gabarit RapidoCMS.\n\n— Plan d'ouverture : assets/hooks/[TON NUMÉRO].mp4\n— Personnage qui explique : assets/avatar/[TON NUMÉRO].mp4 (Le Brocoli, avatar HeyGen)\n— Mes images de restaurant : assets/software/[TON NUMÉRO].mp4\n— Accroche à incruster : « On diffuse le match. »\n— Punchline en voix off à 5,0 s : « L'écran est grand. La table se réserve. »\n\nHabillage : hook, signature de fin et logos en charte RapidoCMS — bleu #03A9F5, gris #383838, fond blanc. Pas de crème, pas d'orange.\nAnatomie : A 0→9,5 · sting RapidoCMS 9,5→18,5 · le personnage seul 18,5→28,5 · signature RapidoCMS 28,5→32,5 · sting de marque 32,5→37,5.\nContrôle avant de me le rendre : 37,5 s, 1080×1920, -14 LUFS, crête sous -1 dBTP."
+      },
+      {
+        "etape": 4,
         "titre": "La publication",
         "outil": "RapidoCMS",
+        "cote": "rapidocms",
         "guide": "betterave",
-        "consigne": "Une phrase, et les cinq réseaux sont programmés. Tu ne téléverses rien nulle part.",
+        "consigne": "Une phrase, et les cinq réseaux sont programmés. Le master part d'abord dans votre bibliothèque, puis en ligne. Vous ne téléversez rien nulle part.",
         "lien": "https://cms.rapidosoftware.com/register",
-        "prompt": "Verse le master dans ma bibliothèque RapidoCMS, puis programme les cinq réseaux de [TON RESTAURANT] :\n\n— LinkedIn à 8 h, Facebook à 12 h, YouTube à 10 h, Instagram à 18 h 30, TikTok à 19 h\n— Légende : « On diffuse le match. L'écran est grand. La table se réserve. » puis le corps, puis « [TON APPEL À L'ACTION] : [TON SITE] »\n— Mots-dièse : #restaurant #[TA VILLE] #[TA SPÉCIALITÉ]\n\nRends-moi le lien de chaque publication."
+        "prompt": "Verse le master dans ma bibliothèque RapidoCMS, puis programme les cinq réseaux de [TON RESTAURANT] :\n\n— LinkedIn à 8 h, YouTube à 10 h, Facebook à 12 h, Instagram à 18 h 30, TikTok à 19 h\n— Légende : « On diffuse le match. L'écran est grand. La table se réserve. » puis le corps, puis « [TON APPEL À L'ACTION] : [TON SITE] »\n— Mots-dièse : #restaurant #[TA VILLE] #[TA SPÉCIALITÉ]\n\nRends-moi le lien de chaque publication."
       }
     ],
     "tutoriel": null
@@ -19345,35 +19451,48 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       }
     },
     "promptVignette": "Illustration 3D, cadrage vertical 9:16, même style que l'image de référence jointe. Le personnage de l'image de référence — Don Citrone — gardé À L'IDENTIQUE : mêmes proportions, mêmes couleurs, même tenue, même accessoire. Ne le redessine pas, ne change pas son visage. Il est LA VEDETTE de l'image et occupe les deux tiers du cadre, en premier plan, tourné vers l'objectif. Ce qu'il fait ici : il relie ce qui est publié à ce qui arrive en salle. Scène : fêtez votre anniversaire ici. C'est ton anniversaire. Décor derrière lui : la salle préparée pour le soir, tables dressées, lumières basses. lumière chaude de début de service. Le décor reste flou et discret — c'est un fond, pas un sujet. Aucun humain photoréaliste dans l'image, aucun écran de logiciel lisible. Bande bleu RapidoCMS #03A9F5 en haut du cadre sur un cinquième de la hauteur, portant UNIQUEMENT le texte « FÊTEZ VOTRE ANNIVERSAIRE » en typographie arrondie très grasse, blanc, centré. Aucun autre texte, aucun logo ajouté, pas de filigrane, pas de bordure décorative.",
-    "higgsfieldPrompt": "Vertical 9:16, 10 secondes, 4K. PAS de texte incrusté, PAS de sous-titres, PAS de filigrane, PAS de logo.\n\nDEUX personnages dans le même plan, et c'est voulu :\n— le chef, PHOTORÉALISTE, joue le rôle : serveur. Veste blanche, tablier, il est chez lui dans son restaurant ;\n— Don Citrone, personnage 3D stylisé de la Brigade Végé-Fruitée, incrusté dans le même décor à côté de lui, à hauteur de comptoir. Il ne parle pas : il fait le geste de son métier — il relie ce qui est publié à ce qui arrive en salle.\n\nLe mélange photo + 3D est assumé, comme un dessin animé posé dans une prise de vue réelle. Les ombres et la lumière du personnage 3D suivent celles du décor.\n\nDécor : la salle préparée pour le soir, tables dressées, lumières basses. lumière chaude de début de service.\nAction : Le dessert avec la bougie, la table décorée, la petite mise en scène qu'on fait pour chaque anniversaire. À 5 secondes, le geste bascule et le personnage 3D réagit.\nDeux dernières secondes : les deux regardent l'objectif, immobiles.\n\nAudio : ambiance réelle du restaurant, aucun dialogue, pas de musique.",
-    "scriptHeygen": "Le dessert avec la bougie, la table décorée, la petite mise en scène qu'on fait pour chaque anniversaire. On s'occupe du reste.",
+    "higgsfieldPrompt": "Vertical 9:16, 10 secondes, 4K. PAS de texte incrusté, PAS de sous-titres, PAS de filigrane, PAS de logo dans l'image.\n\nIDENTITÉ VISUELLE : RapidoCMS. Bleu #03A9F5 présent dans le décor — un écran, une lumière, un objet — sans jamais former de logo. Tons clairs, blancs, gris #383838. Pas de crème, pas d'orange.\n\nDEUX personnages dans le même plan :\n— Don Citrone, personnage 3D stylisé de la Brigade Végé-Fruitée, EN VEDETTE, au premier plan, deux tiers du cadre. C'est lui qui agit : il relie ce qui est publié à ce qui arrive en salle ;\n— le chef, PHOTORÉALISTE, veste blanche et tablier, en retrait dans son restaurant. Il regarde faire, il ne fait pas.\n\nLe mélange photo + 3D est assumé, comme un dessin animé posé dans une prise de vue réelle. Les ombres du personnage 3D suivent celles du décor.\n\nDécor : la salle préparée pour le soir, tables dressées, lumières basses. lumière chaude de début de service.\nAction : Le dessert avec la bougie, la table décorée, la petite mise en scène qu'on fait pour chaque anniversaire.\nÀ 5 secondes, le geste aboutit et le chef réagit — surpris, puis convaincu.\nDeux dernières secondes : les deux regardent l'objectif côte à côte, immobiles.\n\nAudio : ambiance réelle du restaurant, un bip d'interface discret à 5 secondes, aucun dialogue, pas de musique.",
+    "scriptHeygen": "Moi c'est Don Citrone. Pour cet épisode, il relie ce qui est publié à ce qui arrive en salle — vous me le demandez en une phrase. Vos photos, notre gabarit : la vidéo part sur vos cinq réseaux le soir même.",
     "kit": [
       {
         "etape": 1,
-        "titre": "Le plan comique",
-        "outil": "Higgsfield",
+        "titre": "Vos images",
+        "outil": "Chez vous",
+        "cote": "restaurant",
         "guide": "citron",
-        "consigne": "Remplace ce qui est entre crochets par ce qui est chez toi, colle le tout dans Higgsfield, et lance. Dix secondes plus tard tu as ton plan.",
-        "lien": "https://higgsfield.ai/",
-        "prompt": "Vertical 9:16, 10 secondes, 4K. PAS de texte incrusté, PAS de sous-titres, PAS de filigrane, PAS de logo.\n\nDEUX personnages dans le même plan, et c'est voulu :\n— le chef, PHOTORÉALISTE, joue le rôle : serveur. Veste blanche, tablier, il est chez lui dans [TON RESTAURANT] ;\n— Don Citrone, personnage 3D stylisé de la Brigade Végé-Fruitée, incrusté dans le même décor à côté de lui, à hauteur de comptoir. Il ne parle pas : il fait le geste de son métier — il relie ce qui est publié à ce qui arrive en salle.\n\nLe mélange photo + 3D est assumé, comme un dessin animé posé dans une prise de vue réelle. Les ombres et la lumière du personnage 3D suivent celles du décor.\n\nDécor : la salle préparée pour le soir, tables dressées, lumières basses. lumière chaude de début de service.\nAction : chez [TON RESTAURANT], Le dessert avec la bougie, la table décorée, la petite mise en scène qu'on fait pour chaque anniversaire. À 5 secondes, le geste bascule et le personnage 3D réagit.\nDeux dernières secondes : les deux regardent l'objectif, immobiles.\n\nAudio : ambiance réelle du restaurant, aucun dialogue, pas de musique.\n\nÉléments à remplacer : [TON RESTAURANT], [TON PLAT], [TON PRÉNOM]."
+        "consigne": "Commencez par ce que vous avez déjà : dix secondes de votre plat, de votre salle, de votre équipe. Filmé au téléphone, à la verticale. Si vous n'avez rien, l'étape suivante fabrique l'image à votre place.",
+        "lien": "https://site.foodeatup.com/",
+        "prompt": "Ce que je fournis pour l'épisode [TON NUMÉRO] :\n\n— une vidéo verticale de 10 s de [TON PLAT], filmée au téléphone\n— une photo de [TON RESTAURANT] : la salle, la devanture ou le pass\n— mon logo, si j'en ai un\n\nCe que je n'ai pas et que vous complétez avec vos gabarits : [CE QUI ME MANQUE]."
       },
       {
         "etape": 2,
-        "titre": "Le montage",
-        "outil": "Claude Code",
-        "guide": "tomate",
-        "consigne": "Dépose ton plan et ton avatar dans le dépôt, puis écris cette phrase à Claude Code. Tu n'ouvres aucun logiciel de montage.",
-        "lien": "https://claude.com/claude-code",
-        "prompt": "Monte l'épisode [TON NUMÉRO] de ma série.\n\n— Plan comique : assets/hooks/[TON NUMÉRO].mp4\n— Avatar : assets/avatar/[TON NUMÉRO].mp4\n— Écran du logiciel : assets/software/[TON NUMÉRO].mp4\n— Accroche à incruster : « C'est ton anniversaire. »\n— Punchline en voix off à 5,0 s : « On s'occupe du reste. »\n\nAnatomie : A 0→9,5 · sting 9,5→18,5 · avatar seul 18,5→28,5 · signature 28,5→32,5 · sting de marque 32,5→37,5.\nContrôle le master avant de me le rendre : 37,5 s, 1080×1920, -14 LUFS, crête sous -1 dBTP."
+        "titre": "Le plan d'ouverture",
+        "outil": "Higgsfield",
+        "cote": "restaurant",
+        "guide": "citron",
+        "consigne": "Si vous n'avez pas d'images, ce prompt les fabrique. Remplacez ce qui est entre crochets, collez dans Higgsfield, lancez. Dix secondes plus tard, vous avez votre plan.",
+        "lien": "https://higgsfield.ai/",
+        "prompt": "Vertical 9:16, 10 secondes, 4K. PAS de texte incrusté, PAS de sous-titres, PAS de filigrane, PAS de logo dans l'image.\n\nIDENTITÉ VISUELLE : RapidoCMS. Bleu #03A9F5 présent dans le décor — un écran, une lumière, un objet — sans jamais former de logo. Tons clairs, blancs, gris #383838. Pas de crème, pas d'orange.\n\nDEUX personnages dans le même plan :\n— Don Citrone, personnage 3D stylisé de la Brigade Végé-Fruitée, EN VEDETTE, au premier plan, deux tiers du cadre. C'est lui qui agit : il relie ce qui est publié à ce qui arrive en salle ;\n— le chef, PHOTORÉALISTE, veste blanche et tablier, en retrait dans [TON RESTAURANT]. Il regarde faire, il ne fait pas.\n\nLe mélange photo + 3D est assumé, comme un dessin animé posé dans une prise de vue réelle. Les ombres du personnage 3D suivent celles du décor.\n\nDécor : la salle préparée pour le soir, tables dressées, lumières basses. lumière chaude de début de service.\nAction : chez [TON RESTAURANT], Le dessert avec la bougie, la table décorée, la petite mise en scène qu'on fait pour chaque anniversaire.\nÀ 5 secondes, le geste aboutit et le chef réagit — surpris, puis convaincu.\nDeux dernières secondes : les deux regardent l'objectif côte à côte, immobiles.\n\nAudio : ambiance réelle du restaurant, un bip d'interface discret à 5 secondes, aucun dialogue, pas de musique.\n\nÀ remplacer : [TON RESTAURANT], [TON PLAT], [TON PRÉNOM]."
       },
       {
         "etape": 3,
+        "titre": "Le montage",
+        "outil": "Claude Code",
+        "cote": "rapidocms",
+        "guide": "tomate",
+        "consigne": "Le hook, la signature de fin et les logos sont ceux de RapidoCMS — vous ne les fournissez pas, ils sont dans le gabarit. Vos images occupent le centre. Vous n'ouvrez aucun logiciel de montage.",
+        "lien": "https://claude.com/claude-code",
+        "prompt": "Monte l'épisode [TON NUMÉRO] de ma série, gabarit RapidoCMS.\n\n— Plan d'ouverture : assets/hooks/[TON NUMÉRO].mp4\n— Personnage qui explique : assets/avatar/[TON NUMÉRO].mp4 (Don Citrone, avatar HeyGen)\n— Mes images de restaurant : assets/software/[TON NUMÉRO].mp4\n— Accroche à incruster : « C'est ton anniversaire. »\n— Punchline en voix off à 5,0 s : « On s'occupe du reste. »\n\nHabillage : hook, signature de fin et logos en charte RapidoCMS — bleu #03A9F5, gris #383838, fond blanc. Pas de crème, pas d'orange.\nAnatomie : A 0→9,5 · sting RapidoCMS 9,5→18,5 · le personnage seul 18,5→28,5 · signature RapidoCMS 28,5→32,5 · sting de marque 32,5→37,5.\nContrôle avant de me le rendre : 37,5 s, 1080×1920, -14 LUFS, crête sous -1 dBTP."
+      },
+      {
+        "etape": 4,
         "titre": "La publication",
         "outil": "RapidoCMS",
+        "cote": "rapidocms",
         "guide": "betterave",
-        "consigne": "Une phrase, et les cinq réseaux sont programmés. Tu ne téléverses rien nulle part.",
+        "consigne": "Une phrase, et les cinq réseaux sont programmés. Le master part d'abord dans votre bibliothèque, puis en ligne. Vous ne téléversez rien nulle part.",
         "lien": "https://cms.rapidosoftware.com/register",
-        "prompt": "Verse le master dans ma bibliothèque RapidoCMS, puis programme les cinq réseaux de [TON RESTAURANT] :\n\n— LinkedIn à 8 h, Facebook à 12 h, YouTube à 10 h, Instagram à 18 h 30, TikTok à 19 h\n— Légende : « C'est ton anniversaire. On s'occupe du reste. » puis le corps, puis « [TON APPEL À L'ACTION] : [TON SITE] »\n— Mots-dièse : #restaurant #[TA VILLE] #[TA SPÉCIALITÉ]\n\nRends-moi le lien de chaque publication."
+        "prompt": "Verse le master dans ma bibliothèque RapidoCMS, puis programme les cinq réseaux de [TON RESTAURANT] :\n\n— LinkedIn à 8 h, YouTube à 10 h, Facebook à 12 h, Instagram à 18 h 30, TikTok à 19 h\n— Légende : « C'est ton anniversaire. On s'occupe du reste. » puis le corps, puis « [TON APPEL À L'ACTION] : [TON SITE] »\n— Mots-dièse : #restaurant #[TA VILLE] #[TA SPÉCIALITÉ]\n\nRends-moi le lien de chaque publication."
       }
     ],
     "tutoriel": null
@@ -19493,35 +19612,48 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       }
     },
     "promptVignette": "Illustration 3D, cadrage vertical 9:16, même style que l'image de référence jointe. Le personnage de l'image de référence — La Betterave — gardé À L'IDENTIQUE : mêmes proportions, mêmes couleurs, même tenue, même accessoire. Ne le redessine pas, ne change pas son visage. Il est LA VEDETTE de l'image et occupe les deux tiers du cadre, en premier plan, tourné vers l'objectif. Ce qu'il fait ici : elle programme les cinq réseaux aux bons créneaux. Scène : la soirée à thème. Un soir, une cuisine. Décor derrière lui : la salle préparée pour le soir, tables dressées, lumières basses. lumière chaude de début de service. Le décor reste flou et discret — c'est un fond, pas un sujet. Aucun humain photoréaliste dans l'image, aucun écran de logiciel lisible. Bande bleu RapidoCMS #03A9F5 en haut du cadre sur un cinquième de la hauteur, portant UNIQUEMENT le texte « SOIRÉE THÈME » en typographie arrondie très grasse, blanc, centré. Aucun autre texte, aucun logo ajouté, pas de filigrane, pas de bordure décorative.",
-    "higgsfieldPrompt": "Vertical 9:16, 10 secondes, 4K. PAS de texte incrusté, PAS de sous-titres, PAS de filigrane, PAS de logo.\n\nDEUX personnages dans le même plan, et c'est voulu :\n— le chef, PHOTORÉALISTE, joue le rôle : chef. Veste blanche, tablier, il est chez lui dans son restaurant ;\n— La Betterave, personnage 3D stylisé de la Brigade Végé-Fruitée, incrusté dans le même décor à côté de lui, à hauteur de comptoir. Il ne parle pas : il fait le geste de son métier — elle programme les cinq réseaux aux bons créneaux.\n\nLe mélange photo + 3D est assumé, comme un dessin animé posé dans une prise de vue réelle. Les ombres et la lumière du personnage 3D suivent celles du décor.\n\nDécor : la salle préparée pour le soir, tables dressées, lumières basses. lumière chaude de début de service.\nAction : Un soir, une cuisine, un décor. À 5 secondes, le geste bascule et le personnage 3D réagit.\nDeux dernières secondes : les deux regardent l'objectif, immobiles.\n\nAudio : ambiance réelle du restaurant, aucun dialogue, pas de musique.",
-    "scriptHeygen": "Un soir, une cuisine, un décor. Demain, ce plat n'existe plus.",
+    "higgsfieldPrompt": "Vertical 9:16, 10 secondes, 4K. PAS de texte incrusté, PAS de sous-titres, PAS de filigrane, PAS de logo dans l'image.\n\nIDENTITÉ VISUELLE : RapidoCMS. Bleu #03A9F5 présent dans le décor — un écran, une lumière, un objet — sans jamais former de logo. Tons clairs, blancs, gris #383838. Pas de crème, pas d'orange.\n\nDEUX personnages dans le même plan :\n— La Betterave, personnage 3D stylisé de la Brigade Végé-Fruitée, EN VEDETTE, au premier plan, deux tiers du cadre. C'est lui qui agit : elle programme les cinq réseaux aux bons créneaux ;\n— le chef, PHOTORÉALISTE, veste blanche et tablier, en retrait dans son restaurant. Il regarde faire, il ne fait pas.\n\nLe mélange photo + 3D est assumé, comme un dessin animé posé dans une prise de vue réelle. Les ombres du personnage 3D suivent celles du décor.\n\nDécor : la salle préparée pour le soir, tables dressées, lumières basses. lumière chaude de début de service.\nAction : Un soir, une cuisine, un décor.\nÀ 5 secondes, le geste aboutit et le chef réagit — surpris, puis convaincu.\nDeux dernières secondes : les deux regardent l'objectif côte à côte, immobiles.\n\nAudio : ambiance réelle du restaurant, un bip d'interface discret à 5 secondes, aucun dialogue, pas de musique.",
+    "scriptHeygen": "Moi c'est La Betterave. Pour cet épisode, elle programme les cinq réseaux aux bons créneaux — vous me le demandez en une phrase. Vos photos, notre gabarit : la vidéo part sur vos cinq réseaux le soir même.",
     "kit": [
       {
         "etape": 1,
-        "titre": "Le plan comique",
-        "outil": "Higgsfield",
+        "titre": "Vos images",
+        "outil": "Chez vous",
+        "cote": "restaurant",
         "guide": "betterave",
-        "consigne": "Remplace ce qui est entre crochets par ce qui est chez toi, colle le tout dans Higgsfield, et lance. Dix secondes plus tard tu as ton plan.",
-        "lien": "https://higgsfield.ai/",
-        "prompt": "Vertical 9:16, 10 secondes, 4K. PAS de texte incrusté, PAS de sous-titres, PAS de filigrane, PAS de logo.\n\nDEUX personnages dans le même plan, et c'est voulu :\n— le chef, PHOTORÉALISTE, joue le rôle : chef. Veste blanche, tablier, il est chez lui dans [TON RESTAURANT] ;\n— La Betterave, personnage 3D stylisé de la Brigade Végé-Fruitée, incrusté dans le même décor à côté de lui, à hauteur de comptoir. Il ne parle pas : il fait le geste de son métier — elle programme les cinq réseaux aux bons créneaux.\n\nLe mélange photo + 3D est assumé, comme un dessin animé posé dans une prise de vue réelle. Les ombres et la lumière du personnage 3D suivent celles du décor.\n\nDécor : la salle préparée pour le soir, tables dressées, lumières basses. lumière chaude de début de service.\nAction : chez [TON RESTAURANT], Un soir, une cuisine, un décor. À 5 secondes, le geste bascule et le personnage 3D réagit.\nDeux dernières secondes : les deux regardent l'objectif, immobiles.\n\nAudio : ambiance réelle du restaurant, aucun dialogue, pas de musique.\n\nÉléments à remplacer : [TON RESTAURANT], [TON PLAT], [TON PRÉNOM]."
+        "consigne": "Commencez par ce que vous avez déjà : dix secondes de votre plat, de votre salle, de votre équipe. Filmé au téléphone, à la verticale. Si vous n'avez rien, l'étape suivante fabrique l'image à votre place.",
+        "lien": "https://site.foodeatup.com/",
+        "prompt": "Ce que je fournis pour l'épisode [TON NUMÉRO] :\n\n— une vidéo verticale de 10 s de [TON PLAT], filmée au téléphone\n— une photo de [TON RESTAURANT] : la salle, la devanture ou le pass\n— mon logo, si j'en ai un\n\nCe que je n'ai pas et que vous complétez avec vos gabarits : [CE QUI ME MANQUE]."
       },
       {
         "etape": 2,
-        "titre": "Le montage",
-        "outil": "Claude Code",
-        "guide": "tomate",
-        "consigne": "Dépose ton plan et ton avatar dans le dépôt, puis écris cette phrase à Claude Code. Tu n'ouvres aucun logiciel de montage.",
-        "lien": "https://claude.com/claude-code",
-        "prompt": "Monte l'épisode [TON NUMÉRO] de ma série.\n\n— Plan comique : assets/hooks/[TON NUMÉRO].mp4\n— Avatar : assets/avatar/[TON NUMÉRO].mp4\n— Écran du logiciel : assets/software/[TON NUMÉRO].mp4\n— Accroche à incruster : « Un soir, une cuisine. »\n— Punchline en voix off à 5,0 s : « Demain, ce plat n'existe plus. »\n\nAnatomie : A 0→9,5 · sting 9,5→18,5 · avatar seul 18,5→28,5 · signature 28,5→32,5 · sting de marque 32,5→37,5.\nContrôle le master avant de me le rendre : 37,5 s, 1080×1920, -14 LUFS, crête sous -1 dBTP."
+        "titre": "Le plan d'ouverture",
+        "outil": "Higgsfield",
+        "cote": "restaurant",
+        "guide": "betterave",
+        "consigne": "Si vous n'avez pas d'images, ce prompt les fabrique. Remplacez ce qui est entre crochets, collez dans Higgsfield, lancez. Dix secondes plus tard, vous avez votre plan.",
+        "lien": "https://higgsfield.ai/",
+        "prompt": "Vertical 9:16, 10 secondes, 4K. PAS de texte incrusté, PAS de sous-titres, PAS de filigrane, PAS de logo dans l'image.\n\nIDENTITÉ VISUELLE : RapidoCMS. Bleu #03A9F5 présent dans le décor — un écran, une lumière, un objet — sans jamais former de logo. Tons clairs, blancs, gris #383838. Pas de crème, pas d'orange.\n\nDEUX personnages dans le même plan :\n— La Betterave, personnage 3D stylisé de la Brigade Végé-Fruitée, EN VEDETTE, au premier plan, deux tiers du cadre. C'est lui qui agit : elle programme les cinq réseaux aux bons créneaux ;\n— le chef, PHOTORÉALISTE, veste blanche et tablier, en retrait dans [TON RESTAURANT]. Il regarde faire, il ne fait pas.\n\nLe mélange photo + 3D est assumé, comme un dessin animé posé dans une prise de vue réelle. Les ombres du personnage 3D suivent celles du décor.\n\nDécor : la salle préparée pour le soir, tables dressées, lumières basses. lumière chaude de début de service.\nAction : chez [TON RESTAURANT], Un soir, une cuisine, un décor.\nÀ 5 secondes, le geste aboutit et le chef réagit — surpris, puis convaincu.\nDeux dernières secondes : les deux regardent l'objectif côte à côte, immobiles.\n\nAudio : ambiance réelle du restaurant, un bip d'interface discret à 5 secondes, aucun dialogue, pas de musique.\n\nÀ remplacer : [TON RESTAURANT], [TON PLAT], [TON PRÉNOM]."
       },
       {
         "etape": 3,
+        "titre": "Le montage",
+        "outil": "Claude Code",
+        "cote": "rapidocms",
+        "guide": "tomate",
+        "consigne": "Le hook, la signature de fin et les logos sont ceux de RapidoCMS — vous ne les fournissez pas, ils sont dans le gabarit. Vos images occupent le centre. Vous n'ouvrez aucun logiciel de montage.",
+        "lien": "https://claude.com/claude-code",
+        "prompt": "Monte l'épisode [TON NUMÉRO] de ma série, gabarit RapidoCMS.\n\n— Plan d'ouverture : assets/hooks/[TON NUMÉRO].mp4\n— Personnage qui explique : assets/avatar/[TON NUMÉRO].mp4 (La Betterave, avatar HeyGen)\n— Mes images de restaurant : assets/software/[TON NUMÉRO].mp4\n— Accroche à incruster : « Un soir, une cuisine. »\n— Punchline en voix off à 5,0 s : « Demain, ce plat n'existe plus. »\n\nHabillage : hook, signature de fin et logos en charte RapidoCMS — bleu #03A9F5, gris #383838, fond blanc. Pas de crème, pas d'orange.\nAnatomie : A 0→9,5 · sting RapidoCMS 9,5→18,5 · le personnage seul 18,5→28,5 · signature RapidoCMS 28,5→32,5 · sting de marque 32,5→37,5.\nContrôle avant de me le rendre : 37,5 s, 1080×1920, -14 LUFS, crête sous -1 dBTP."
+      },
+      {
+        "etape": 4,
         "titre": "La publication",
         "outil": "RapidoCMS",
+        "cote": "rapidocms",
         "guide": "betterave",
-        "consigne": "Une phrase, et les cinq réseaux sont programmés. Tu ne téléverses rien nulle part.",
+        "consigne": "Une phrase, et les cinq réseaux sont programmés. Le master part d'abord dans votre bibliothèque, puis en ligne. Vous ne téléversez rien nulle part.",
         "lien": "https://cms.rapidosoftware.com/register",
-        "prompt": "Verse le master dans ma bibliothèque RapidoCMS, puis programme les cinq réseaux de [TON RESTAURANT] :\n\n— LinkedIn à 8 h, Facebook à 12 h, YouTube à 10 h, Instagram à 18 h 30, TikTok à 19 h\n— Légende : « Un soir, une cuisine. Demain, ce plat n'existe plus. » puis le corps, puis « [TON APPEL À L'ACTION] : [TON SITE] »\n— Mots-dièse : #restaurant #[TA VILLE] #[TA SPÉCIALITÉ]\n\nRends-moi le lien de chaque publication."
+        "prompt": "Verse le master dans ma bibliothèque RapidoCMS, puis programme les cinq réseaux de [TON RESTAURANT] :\n\n— LinkedIn à 8 h, YouTube à 10 h, Facebook à 12 h, Instagram à 18 h 30, TikTok à 19 h\n— Légende : « Un soir, une cuisine. Demain, ce plat n'existe plus. » puis le corps, puis « [TON APPEL À L'ACTION] : [TON SITE] »\n— Mots-dièse : #restaurant #[TA VILLE] #[TA SPÉCIALITÉ]\n\nRends-moi le lien de chaque publication."
       }
     ],
     "tutoriel": null
@@ -19641,35 +19773,48 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       }
     },
     "promptVignette": "Illustration 3D, cadrage vertical 9:16, même style que l'image de référence jointe. Le personnage de l'image de référence — La Pomme de Terre — gardé À L'IDENTIQUE : mêmes proportions, mêmes couleurs, même tenue, même accessoire. Ne le redessine pas, ne change pas son visage. Il est LA VEDETTE de l'image et occupe les deux tiers du cadre, en premier plan, tourné vers l'objectif. Ce qu'il fait ici : elle donne la voix off de la série. Scène : le brunch du dimanche. Dimanche, on ouvre à dix heures. Décor derrière lui : la salle préparée pour le soir, tables dressées, lumières basses. lumière chaude de début de service. Le décor reste flou et discret — c'est un fond, pas un sujet. Aucun humain photoréaliste dans l'image, aucun écran de logiciel lisible. Bande bleu RapidoCMS #03A9F5 en haut du cadre sur un cinquième de la hauteur, portant UNIQUEMENT le texte « BRUNCH DIMANCHE » en typographie arrondie très grasse, blanc, centré. Aucun autre texte, aucun logo ajouté, pas de filigrane, pas de bordure décorative.",
-    "higgsfieldPrompt": "Vertical 9:16, 10 secondes, 4K. PAS de texte incrusté, PAS de sous-titres, PAS de filigrane, PAS de logo.\n\nDEUX personnages dans le même plan, et c'est voulu :\n— le chef, PHOTORÉALISTE, joue le rôle : chef. Veste blanche, tablier, il est chez lui dans son restaurant ;\n— La Pomme de Terre, personnage 3D stylisé de la Brigade Végé-Fruitée, incrusté dans le même décor à côté de lui, à hauteur de comptoir. Il ne parle pas : il fait le geste de son métier — elle donne la voix off de la série.\n\nLe mélange photo + 3D est assumé, comme un dessin animé posé dans une prise de vue réelle. Les ombres et la lumière du personnage 3D suivent celles du décor.\n\nDécor : la salle préparée pour le soir, tables dressées, lumières basses. lumière chaude de début de service.\nAction : Le buffet dressé au petit matin, la lumière du dimanche, les gens qui arrivent en famille. À 5 secondes, le geste bascule et le personnage 3D réagit.\nDeux dernières secondes : les deux regardent l'objectif, immobiles.\n\nAudio : ambiance réelle du restaurant, aucun dialogue, pas de musique.",
-    "scriptHeygen": "Le buffet dressé au petit matin, la lumière du dimanche, les gens qui arrivent en famille. Prends ton temps.",
+    "higgsfieldPrompt": "Vertical 9:16, 10 secondes, 4K. PAS de texte incrusté, PAS de sous-titres, PAS de filigrane, PAS de logo dans l'image.\n\nIDENTITÉ VISUELLE : RapidoCMS. Bleu #03A9F5 présent dans le décor — un écran, une lumière, un objet — sans jamais former de logo. Tons clairs, blancs, gris #383838. Pas de crème, pas d'orange.\n\nDEUX personnages dans le même plan :\n— La Pomme de Terre, personnage 3D stylisé de la Brigade Végé-Fruitée, EN VEDETTE, au premier plan, deux tiers du cadre. C'est lui qui agit : elle donne la voix off de la série ;\n— le chef, PHOTORÉALISTE, veste blanche et tablier, en retrait dans son restaurant. Il regarde faire, il ne fait pas.\n\nLe mélange photo + 3D est assumé, comme un dessin animé posé dans une prise de vue réelle. Les ombres du personnage 3D suivent celles du décor.\n\nDécor : la salle préparée pour le soir, tables dressées, lumières basses. lumière chaude de début de service.\nAction : Le buffet dressé au petit matin, la lumière du dimanche, les gens qui arrivent en famille.\nÀ 5 secondes, le geste aboutit et le chef réagit — surpris, puis convaincu.\nDeux dernières secondes : les deux regardent l'objectif côte à côte, immobiles.\n\nAudio : ambiance réelle du restaurant, un bip d'interface discret à 5 secondes, aucun dialogue, pas de musique.",
+    "scriptHeygen": "Moi c'est La Pomme de Terre. Pour cet épisode, elle donne la voix off de la série — vous me le demandez en une phrase. Vos photos, notre gabarit : la vidéo part sur vos cinq réseaux le soir même.",
     "kit": [
       {
         "etape": 1,
-        "titre": "Le plan comique",
-        "outil": "Higgsfield",
+        "titre": "Vos images",
+        "outil": "Chez vous",
+        "cote": "restaurant",
         "guide": "pomme-de-terre",
-        "consigne": "Remplace ce qui est entre crochets par ce qui est chez toi, colle le tout dans Higgsfield, et lance. Dix secondes plus tard tu as ton plan.",
-        "lien": "https://higgsfield.ai/",
-        "prompt": "Vertical 9:16, 10 secondes, 4K. PAS de texte incrusté, PAS de sous-titres, PAS de filigrane, PAS de logo.\n\nDEUX personnages dans le même plan, et c'est voulu :\n— le chef, PHOTORÉALISTE, joue le rôle : chef. Veste blanche, tablier, il est chez lui dans [TON RESTAURANT] ;\n— La Pomme de Terre, personnage 3D stylisé de la Brigade Végé-Fruitée, incrusté dans le même décor à côté de lui, à hauteur de comptoir. Il ne parle pas : il fait le geste de son métier — elle donne la voix off de la série.\n\nLe mélange photo + 3D est assumé, comme un dessin animé posé dans une prise de vue réelle. Les ombres et la lumière du personnage 3D suivent celles du décor.\n\nDécor : la salle préparée pour le soir, tables dressées, lumières basses. lumière chaude de début de service.\nAction : chez [TON RESTAURANT], Le buffet dressé au petit matin, la lumière du dimanche, les gens qui arrivent en famille. À 5 secondes, le geste bascule et le personnage 3D réagit.\nDeux dernières secondes : les deux regardent l'objectif, immobiles.\n\nAudio : ambiance réelle du restaurant, aucun dialogue, pas de musique.\n\nÉléments à remplacer : [TON RESTAURANT], [TON PLAT], [TON PRÉNOM]."
+        "consigne": "Commencez par ce que vous avez déjà : dix secondes de votre plat, de votre salle, de votre équipe. Filmé au téléphone, à la verticale. Si vous n'avez rien, l'étape suivante fabrique l'image à votre place.",
+        "lien": "https://site.foodeatup.com/",
+        "prompt": "Ce que je fournis pour l'épisode [TON NUMÉRO] :\n\n— une vidéo verticale de 10 s de [TON PLAT], filmée au téléphone\n— une photo de [TON RESTAURANT] : la salle, la devanture ou le pass\n— mon logo, si j'en ai un\n\nCe que je n'ai pas et que vous complétez avec vos gabarits : [CE QUI ME MANQUE]."
       },
       {
         "etape": 2,
-        "titre": "Le montage",
-        "outil": "Claude Code",
-        "guide": "tomate",
-        "consigne": "Dépose ton plan et ton avatar dans le dépôt, puis écris cette phrase à Claude Code. Tu n'ouvres aucun logiciel de montage.",
-        "lien": "https://claude.com/claude-code",
-        "prompt": "Monte l'épisode [TON NUMÉRO] de ma série.\n\n— Plan comique : assets/hooks/[TON NUMÉRO].mp4\n— Avatar : assets/avatar/[TON NUMÉRO].mp4\n— Écran du logiciel : assets/software/[TON NUMÉRO].mp4\n— Accroche à incruster : « Dimanche, on ouvre à dix heures. »\n— Punchline en voix off à 5,0 s : « Prends ton temps. »\n\nAnatomie : A 0→9,5 · sting 9,5→18,5 · avatar seul 18,5→28,5 · signature 28,5→32,5 · sting de marque 32,5→37,5.\nContrôle le master avant de me le rendre : 37,5 s, 1080×1920, -14 LUFS, crête sous -1 dBTP."
+        "titre": "Le plan d'ouverture",
+        "outil": "Higgsfield",
+        "cote": "restaurant",
+        "guide": "pomme-de-terre",
+        "consigne": "Si vous n'avez pas d'images, ce prompt les fabrique. Remplacez ce qui est entre crochets, collez dans Higgsfield, lancez. Dix secondes plus tard, vous avez votre plan.",
+        "lien": "https://higgsfield.ai/",
+        "prompt": "Vertical 9:16, 10 secondes, 4K. PAS de texte incrusté, PAS de sous-titres, PAS de filigrane, PAS de logo dans l'image.\n\nIDENTITÉ VISUELLE : RapidoCMS. Bleu #03A9F5 présent dans le décor — un écran, une lumière, un objet — sans jamais former de logo. Tons clairs, blancs, gris #383838. Pas de crème, pas d'orange.\n\nDEUX personnages dans le même plan :\n— La Pomme de Terre, personnage 3D stylisé de la Brigade Végé-Fruitée, EN VEDETTE, au premier plan, deux tiers du cadre. C'est lui qui agit : elle donne la voix off de la série ;\n— le chef, PHOTORÉALISTE, veste blanche et tablier, en retrait dans [TON RESTAURANT]. Il regarde faire, il ne fait pas.\n\nLe mélange photo + 3D est assumé, comme un dessin animé posé dans une prise de vue réelle. Les ombres du personnage 3D suivent celles du décor.\n\nDécor : la salle préparée pour le soir, tables dressées, lumières basses. lumière chaude de début de service.\nAction : chez [TON RESTAURANT], Le buffet dressé au petit matin, la lumière du dimanche, les gens qui arrivent en famille.\nÀ 5 secondes, le geste aboutit et le chef réagit — surpris, puis convaincu.\nDeux dernières secondes : les deux regardent l'objectif côte à côte, immobiles.\n\nAudio : ambiance réelle du restaurant, un bip d'interface discret à 5 secondes, aucun dialogue, pas de musique.\n\nÀ remplacer : [TON RESTAURANT], [TON PLAT], [TON PRÉNOM]."
       },
       {
         "etape": 3,
+        "titre": "Le montage",
+        "outil": "Claude Code",
+        "cote": "rapidocms",
+        "guide": "tomate",
+        "consigne": "Le hook, la signature de fin et les logos sont ceux de RapidoCMS — vous ne les fournissez pas, ils sont dans le gabarit. Vos images occupent le centre. Vous n'ouvrez aucun logiciel de montage.",
+        "lien": "https://claude.com/claude-code",
+        "prompt": "Monte l'épisode [TON NUMÉRO] de ma série, gabarit RapidoCMS.\n\n— Plan d'ouverture : assets/hooks/[TON NUMÉRO].mp4\n— Personnage qui explique : assets/avatar/[TON NUMÉRO].mp4 (La Pomme de Terre, avatar HeyGen)\n— Mes images de restaurant : assets/software/[TON NUMÉRO].mp4\n— Accroche à incruster : « Dimanche, on ouvre à dix heures. »\n— Punchline en voix off à 5,0 s : « Prends ton temps. »\n\nHabillage : hook, signature de fin et logos en charte RapidoCMS — bleu #03A9F5, gris #383838, fond blanc. Pas de crème, pas d'orange.\nAnatomie : A 0→9,5 · sting RapidoCMS 9,5→18,5 · le personnage seul 18,5→28,5 · signature RapidoCMS 28,5→32,5 · sting de marque 32,5→37,5.\nContrôle avant de me le rendre : 37,5 s, 1080×1920, -14 LUFS, crête sous -1 dBTP."
+      },
+      {
+        "etape": 4,
         "titre": "La publication",
         "outil": "RapidoCMS",
+        "cote": "rapidocms",
         "guide": "betterave",
-        "consigne": "Une phrase, et les cinq réseaux sont programmés. Tu ne téléverses rien nulle part.",
+        "consigne": "Une phrase, et les cinq réseaux sont programmés. Le master part d'abord dans votre bibliothèque, puis en ligne. Vous ne téléversez rien nulle part.",
         "lien": "https://cms.rapidosoftware.com/register",
-        "prompt": "Verse le master dans ma bibliothèque RapidoCMS, puis programme les cinq réseaux de [TON RESTAURANT] :\n\n— LinkedIn à 8 h, Facebook à 12 h, YouTube à 10 h, Instagram à 18 h 30, TikTok à 19 h\n— Légende : « Dimanche, on ouvre à dix heures. Prends ton temps. » puis le corps, puis « [TON APPEL À L'ACTION] : [TON SITE] »\n— Mots-dièse : #restaurant #[TA VILLE] #[TA SPÉCIALITÉ]\n\nRends-moi le lien de chaque publication."
+        "prompt": "Verse le master dans ma bibliothèque RapidoCMS, puis programme les cinq réseaux de [TON RESTAURANT] :\n\n— LinkedIn à 8 h, YouTube à 10 h, Facebook à 12 h, Instagram à 18 h 30, TikTok à 19 h\n— Légende : « Dimanche, on ouvre à dix heures. Prends ton temps. » puis le corps, puis « [TON APPEL À L'ACTION] : [TON SITE] »\n— Mots-dièse : #restaurant #[TA VILLE] #[TA SPÉCIALITÉ]\n\nRends-moi le lien de chaque publication."
       }
     ],
     "tutoriel": null
@@ -19789,35 +19934,48 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       }
     },
     "promptVignette": "Illustration 3D, cadrage vertical 9:16, même style que l'image de référence jointe. Le personnage de l'image de référence — Le Brocoli — gardé À L'IDENTIQUE : mêmes proportions, mêmes couleurs, même tenue, même accessoire. Ne le redessine pas, ne change pas son visage. Il est LA VEDETTE de l'image et occupe les deux tiers du cadre, en premier plan, tourné vers l'objectif. Ce qu'il fait ici : il tient le calendrier et propose quoi publier, quand. Scène : privatiser la salle. Toute la salle, rien que vous. Décor derrière lui : la salle préparée pour le soir, tables dressées, lumières basses. lumière chaude de début de service. Le décor reste flou et discret — c'est un fond, pas un sujet. Aucun humain photoréaliste dans l'image, aucun écran de logiciel lisible. Bande bleu RapidoCMS #03A9F5 en haut du cadre sur un cinquième de la hauteur, portant UNIQUEMENT le texte « PRIVATISER SALLE » en typographie arrondie très grasse, blanc, centré. Aucun autre texte, aucun logo ajouté, pas de filigrane, pas de bordure décorative.",
-    "higgsfieldPrompt": "Vertical 9:16, 10 secondes, 4K. PAS de texte incrusté, PAS de sous-titres, PAS de filigrane, PAS de logo.\n\nDEUX personnages dans le même plan, et c'est voulu :\n— le chef, PHOTORÉALISTE, joue le rôle : directeur. Veste blanche, tablier, il est chez lui dans son restaurant ;\n— Le Brocoli, personnage 3D stylisé de la Brigade Végé-Fruitée, incrusté dans le même décor à côté de lui, à hauteur de comptoir. Il ne parle pas : il fait le geste de son métier — il tient le calendrier et propose quoi publier, quand.\n\nLe mélange photo + 3D est assumé, comme un dessin animé posé dans une prise de vue réelle. Les ombres et la lumière du personnage 3D suivent celles du décor.\n\nDécor : la salle préparée pour le soir, tables dressées, lumières basses. lumière chaude de début de service.\nAction : La salle vide, montée pour un groupe. À 5 secondes, le geste bascule et le personnage 3D réagit.\nDeux dernières secondes : les deux regardent l'objectif, immobiles.\n\nAudio : ambiance réelle du restaurant, aucun dialogue, pas de musique.",
-    "scriptHeygen": "La salle vide, montée pour un groupe. Ça se demande, et c'est possible.",
+    "higgsfieldPrompt": "Vertical 9:16, 10 secondes, 4K. PAS de texte incrusté, PAS de sous-titres, PAS de filigrane, PAS de logo dans l'image.\n\nIDENTITÉ VISUELLE : RapidoCMS. Bleu #03A9F5 présent dans le décor — un écran, une lumière, un objet — sans jamais former de logo. Tons clairs, blancs, gris #383838. Pas de crème, pas d'orange.\n\nDEUX personnages dans le même plan :\n— Le Brocoli, personnage 3D stylisé de la Brigade Végé-Fruitée, EN VEDETTE, au premier plan, deux tiers du cadre. C'est lui qui agit : il tient le calendrier et propose quoi publier, quand ;\n— le chef, PHOTORÉALISTE, veste blanche et tablier, en retrait dans son restaurant. Il regarde faire, il ne fait pas.\n\nLe mélange photo + 3D est assumé, comme un dessin animé posé dans une prise de vue réelle. Les ombres du personnage 3D suivent celles du décor.\n\nDécor : la salle préparée pour le soir, tables dressées, lumières basses. lumière chaude de début de service.\nAction : La salle vide, montée pour un groupe.\nÀ 5 secondes, le geste aboutit et le chef réagit — surpris, puis convaincu.\nDeux dernières secondes : les deux regardent l'objectif côte à côte, immobiles.\n\nAudio : ambiance réelle du restaurant, un bip d'interface discret à 5 secondes, aucun dialogue, pas de musique.",
+    "scriptHeygen": "Moi c'est Le Brocoli. Pour cet épisode, il tient le calendrier et propose quoi publier, quand — vous me le demandez en une phrase. Vos photos, notre gabarit : la vidéo part sur vos cinq réseaux le soir même.",
     "kit": [
       {
         "etape": 1,
-        "titre": "Le plan comique",
-        "outil": "Higgsfield",
+        "titre": "Vos images",
+        "outil": "Chez vous",
+        "cote": "restaurant",
         "guide": "brocoli",
-        "consigne": "Remplace ce qui est entre crochets par ce qui est chez toi, colle le tout dans Higgsfield, et lance. Dix secondes plus tard tu as ton plan.",
-        "lien": "https://higgsfield.ai/",
-        "prompt": "Vertical 9:16, 10 secondes, 4K. PAS de texte incrusté, PAS de sous-titres, PAS de filigrane, PAS de logo.\n\nDEUX personnages dans le même plan, et c'est voulu :\n— le chef, PHOTORÉALISTE, joue le rôle : directeur. Veste blanche, tablier, il est chez lui dans [TON RESTAURANT] ;\n— Le Brocoli, personnage 3D stylisé de la Brigade Végé-Fruitée, incrusté dans le même décor à côté de lui, à hauteur de comptoir. Il ne parle pas : il fait le geste de son métier — il tient le calendrier et propose quoi publier, quand.\n\nLe mélange photo + 3D est assumé, comme un dessin animé posé dans une prise de vue réelle. Les ombres et la lumière du personnage 3D suivent celles du décor.\n\nDécor : la salle préparée pour le soir, tables dressées, lumières basses. lumière chaude de début de service.\nAction : chez [TON RESTAURANT], La salle vide, montée pour un groupe. À 5 secondes, le geste bascule et le personnage 3D réagit.\nDeux dernières secondes : les deux regardent l'objectif, immobiles.\n\nAudio : ambiance réelle du restaurant, aucun dialogue, pas de musique.\n\nÉléments à remplacer : [TON RESTAURANT], [TON PLAT], [TON PRÉNOM]."
+        "consigne": "Commencez par ce que vous avez déjà : dix secondes de votre plat, de votre salle, de votre équipe. Filmé au téléphone, à la verticale. Si vous n'avez rien, l'étape suivante fabrique l'image à votre place.",
+        "lien": "https://site.foodeatup.com/",
+        "prompt": "Ce que je fournis pour l'épisode [TON NUMÉRO] :\n\n— une vidéo verticale de 10 s de [TON PLAT], filmée au téléphone\n— une photo de [TON RESTAURANT] : la salle, la devanture ou le pass\n— mon logo, si j'en ai un\n\nCe que je n'ai pas et que vous complétez avec vos gabarits : [CE QUI ME MANQUE]."
       },
       {
         "etape": 2,
-        "titre": "Le montage",
-        "outil": "Claude Code",
-        "guide": "tomate",
-        "consigne": "Dépose ton plan et ton avatar dans le dépôt, puis écris cette phrase à Claude Code. Tu n'ouvres aucun logiciel de montage.",
-        "lien": "https://claude.com/claude-code",
-        "prompt": "Monte l'épisode [TON NUMÉRO] de ma série.\n\n— Plan comique : assets/hooks/[TON NUMÉRO].mp4\n— Avatar : assets/avatar/[TON NUMÉRO].mp4\n— Écran du logiciel : assets/software/[TON NUMÉRO].mp4\n— Accroche à incruster : « Toute la salle, rien que vous. »\n— Punchline en voix off à 5,0 s : « Ça se demande, et c'est possible. »\n\nAnatomie : A 0→9,5 · sting 9,5→18,5 · avatar seul 18,5→28,5 · signature 28,5→32,5 · sting de marque 32,5→37,5.\nContrôle le master avant de me le rendre : 37,5 s, 1080×1920, -14 LUFS, crête sous -1 dBTP."
+        "titre": "Le plan d'ouverture",
+        "outil": "Higgsfield",
+        "cote": "restaurant",
+        "guide": "brocoli",
+        "consigne": "Si vous n'avez pas d'images, ce prompt les fabrique. Remplacez ce qui est entre crochets, collez dans Higgsfield, lancez. Dix secondes plus tard, vous avez votre plan.",
+        "lien": "https://higgsfield.ai/",
+        "prompt": "Vertical 9:16, 10 secondes, 4K. PAS de texte incrusté, PAS de sous-titres, PAS de filigrane, PAS de logo dans l'image.\n\nIDENTITÉ VISUELLE : RapidoCMS. Bleu #03A9F5 présent dans le décor — un écran, une lumière, un objet — sans jamais former de logo. Tons clairs, blancs, gris #383838. Pas de crème, pas d'orange.\n\nDEUX personnages dans le même plan :\n— Le Brocoli, personnage 3D stylisé de la Brigade Végé-Fruitée, EN VEDETTE, au premier plan, deux tiers du cadre. C'est lui qui agit : il tient le calendrier et propose quoi publier, quand ;\n— le chef, PHOTORÉALISTE, veste blanche et tablier, en retrait dans [TON RESTAURANT]. Il regarde faire, il ne fait pas.\n\nLe mélange photo + 3D est assumé, comme un dessin animé posé dans une prise de vue réelle. Les ombres du personnage 3D suivent celles du décor.\n\nDécor : la salle préparée pour le soir, tables dressées, lumières basses. lumière chaude de début de service.\nAction : chez [TON RESTAURANT], La salle vide, montée pour un groupe.\nÀ 5 secondes, le geste aboutit et le chef réagit — surpris, puis convaincu.\nDeux dernières secondes : les deux regardent l'objectif côte à côte, immobiles.\n\nAudio : ambiance réelle du restaurant, un bip d'interface discret à 5 secondes, aucun dialogue, pas de musique.\n\nÀ remplacer : [TON RESTAURANT], [TON PLAT], [TON PRÉNOM]."
       },
       {
         "etape": 3,
+        "titre": "Le montage",
+        "outil": "Claude Code",
+        "cote": "rapidocms",
+        "guide": "tomate",
+        "consigne": "Le hook, la signature de fin et les logos sont ceux de RapidoCMS — vous ne les fournissez pas, ils sont dans le gabarit. Vos images occupent le centre. Vous n'ouvrez aucun logiciel de montage.",
+        "lien": "https://claude.com/claude-code",
+        "prompt": "Monte l'épisode [TON NUMÉRO] de ma série, gabarit RapidoCMS.\n\n— Plan d'ouverture : assets/hooks/[TON NUMÉRO].mp4\n— Personnage qui explique : assets/avatar/[TON NUMÉRO].mp4 (Le Brocoli, avatar HeyGen)\n— Mes images de restaurant : assets/software/[TON NUMÉRO].mp4\n— Accroche à incruster : « Toute la salle, rien que vous. »\n— Punchline en voix off à 5,0 s : « Ça se demande, et c'est possible. »\n\nHabillage : hook, signature de fin et logos en charte RapidoCMS — bleu #03A9F5, gris #383838, fond blanc. Pas de crème, pas d'orange.\nAnatomie : A 0→9,5 · sting RapidoCMS 9,5→18,5 · le personnage seul 18,5→28,5 · signature RapidoCMS 28,5→32,5 · sting de marque 32,5→37,5.\nContrôle avant de me le rendre : 37,5 s, 1080×1920, -14 LUFS, crête sous -1 dBTP."
+      },
+      {
+        "etape": 4,
         "titre": "La publication",
         "outil": "RapidoCMS",
+        "cote": "rapidocms",
         "guide": "betterave",
-        "consigne": "Une phrase, et les cinq réseaux sont programmés. Tu ne téléverses rien nulle part.",
+        "consigne": "Une phrase, et les cinq réseaux sont programmés. Le master part d'abord dans votre bibliothèque, puis en ligne. Vous ne téléversez rien nulle part.",
         "lien": "https://cms.rapidosoftware.com/register",
-        "prompt": "Verse le master dans ma bibliothèque RapidoCMS, puis programme les cinq réseaux de [TON RESTAURANT] :\n\n— LinkedIn à 8 h, Facebook à 12 h, YouTube à 10 h, Instagram à 18 h 30, TikTok à 19 h\n— Légende : « Toute la salle, rien que vous. Ça se demande, et c'est possible. » puis le corps, puis « [TON APPEL À L'ACTION] : [TON SITE] »\n— Mots-dièse : #restaurant #[TA VILLE] #[TA SPÉCIALITÉ]\n\nRends-moi le lien de chaque publication."
+        "prompt": "Verse le master dans ma bibliothèque RapidoCMS, puis programme les cinq réseaux de [TON RESTAURANT] :\n\n— LinkedIn à 8 h, YouTube à 10 h, Facebook à 12 h, Instagram à 18 h 30, TikTok à 19 h\n— Légende : « Toute la salle, rien que vous. Ça se demande, et c'est possible. » puis le corps, puis « [TON APPEL À L'ACTION] : [TON SITE] »\n— Mots-dièse : #restaurant #[TA VILLE] #[TA SPÉCIALITÉ]\n\nRends-moi le lien de chaque publication."
       }
     ],
     "tutoriel": null
@@ -19937,35 +20095,48 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       }
     },
     "promptVignette": "Illustration 3D, cadrage vertical 9:16, même style que l'image de référence jointe. Le personnage de l'image de référence — L'Oignon — gardé À L'IDENTIQUE : mêmes proportions, mêmes couleurs, même tenue, même accessoire. Ne le redessine pas, ne change pas son visage. Il est LA VEDETTE de l'image et occupe les deux tiers du cadre, en premier plan, tourné vers l'objectif. Ce qu'il fait ici : il ouvre les livres : ventes, stock, réservations. Scène : six heures du matin. Six heures du matin. Décor derrière lui : la cuisine et les réserves avant l'ouverture, inox nu, cagettes. lumière crue du matin. Le décor reste flou et discret — c'est un fond, pas un sujet. Aucun humain photoréaliste dans l'image, aucun écran de logiciel lisible. Bande bleu RapidoCMS #03A9F5 en haut du cadre sur un cinquième de la hauteur, portant UNIQUEMENT le texte « SIX HEURES MATIN » en typographie arrondie très grasse, blanc, centré. Aucun autre texte, aucun logo ajouté, pas de filigrane, pas de bordure décorative.",
-    "higgsfieldPrompt": "Vertical 9:16, 10 secondes, 4K. PAS de texte incrusté, PAS de sous-titres, PAS de filigrane, PAS de logo.\n\nDEUX personnages dans le même plan, et c'est voulu :\n— le chef, PHOTORÉALISTE, joue le rôle : chef. Veste blanche, tablier, il est chez lui dans son restaurant ;\n— L'Oignon, personnage 3D stylisé de la Brigade Végé-Fruitée, incrusté dans le même décor à côté de lui, à hauteur de comptoir. Il ne parle pas : il fait le geste de son métier — il ouvre les livres : ventes, stock, réservations.\n\nLe mélange photo + 3D est assumé, comme un dessin animé posé dans une prise de vue réelle. Les ombres et la lumière du personnage 3D suivent celles du décor.\n\nDécor : la cuisine et les réserves avant l'ouverture, inox nu, cagettes. lumière crue du matin.\nAction : Le restaurant avant tout le monde : les chaises sur les tables, le premier café, la première livraison. À 5 secondes, le geste bascule et le personnage 3D réagit.\nDeux dernières secondes : les deux regardent l'objectif, immobiles.\n\nAudio : ambiance réelle du restaurant, aucun dialogue, pas de musique.",
-    "scriptHeygen": "Le restaurant avant tout le monde : les chaises sur les tables, le premier café, la première livraison. Ton dîner a commencé il y a quatorze heures.",
+    "higgsfieldPrompt": "Vertical 9:16, 10 secondes, 4K. PAS de texte incrusté, PAS de sous-titres, PAS de filigrane, PAS de logo dans l'image.\n\nIDENTITÉ VISUELLE : RapidoCMS. Bleu #03A9F5 présent dans le décor — un écran, une lumière, un objet — sans jamais former de logo. Tons clairs, blancs, gris #383838. Pas de crème, pas d'orange.\n\nDEUX personnages dans le même plan :\n— L'Oignon, personnage 3D stylisé de la Brigade Végé-Fruitée, EN VEDETTE, au premier plan, deux tiers du cadre. C'est lui qui agit : il ouvre les livres : ventes, stock, réservations ;\n— le chef, PHOTORÉALISTE, veste blanche et tablier, en retrait dans son restaurant. Il regarde faire, il ne fait pas.\n\nLe mélange photo + 3D est assumé, comme un dessin animé posé dans une prise de vue réelle. Les ombres du personnage 3D suivent celles du décor.\n\nDécor : la cuisine et les réserves avant l'ouverture, inox nu, cagettes. lumière crue du matin.\nAction : Le restaurant avant tout le monde : les chaises sur les tables, le premier café, la première livraison.\nÀ 5 secondes, le geste aboutit et le chef réagit — surpris, puis convaincu.\nDeux dernières secondes : les deux regardent l'objectif côte à côte, immobiles.\n\nAudio : ambiance réelle du restaurant, un bip d'interface discret à 5 secondes, aucun dialogue, pas de musique.",
+    "scriptHeygen": "Moi c'est L'Oignon. Pour cet épisode, il ouvre les livres : ventes, stock, réservations — vous me le demandez en une phrase. Vos photos, notre gabarit : la vidéo part sur vos cinq réseaux le soir même.",
     "kit": [
       {
         "etape": 1,
-        "titre": "Le plan comique",
-        "outil": "Higgsfield",
+        "titre": "Vos images",
+        "outil": "Chez vous",
+        "cote": "restaurant",
         "guide": "oignon",
-        "consigne": "Remplace ce qui est entre crochets par ce qui est chez toi, colle le tout dans Higgsfield, et lance. Dix secondes plus tard tu as ton plan.",
-        "lien": "https://higgsfield.ai/",
-        "prompt": "Vertical 9:16, 10 secondes, 4K. PAS de texte incrusté, PAS de sous-titres, PAS de filigrane, PAS de logo.\n\nDEUX personnages dans le même plan, et c'est voulu :\n— le chef, PHOTORÉALISTE, joue le rôle : chef. Veste blanche, tablier, il est chez lui dans [TON RESTAURANT] ;\n— L'Oignon, personnage 3D stylisé de la Brigade Végé-Fruitée, incrusté dans le même décor à côté de lui, à hauteur de comptoir. Il ne parle pas : il fait le geste de son métier — il ouvre les livres : ventes, stock, réservations.\n\nLe mélange photo + 3D est assumé, comme un dessin animé posé dans une prise de vue réelle. Les ombres et la lumière du personnage 3D suivent celles du décor.\n\nDécor : la cuisine et les réserves avant l'ouverture, inox nu, cagettes. lumière crue du matin.\nAction : chez [TON RESTAURANT], Le restaurant avant tout le monde : les chaises sur les tables, le premier café, la première livraison. À 5 secondes, le geste bascule et le personnage 3D réagit.\nDeux dernières secondes : les deux regardent l'objectif, immobiles.\n\nAudio : ambiance réelle du restaurant, aucun dialogue, pas de musique.\n\nÉléments à remplacer : [TON RESTAURANT], [TON PLAT], [TON PRÉNOM]."
+        "consigne": "Commencez par ce que vous avez déjà : dix secondes de votre plat, de votre salle, de votre équipe. Filmé au téléphone, à la verticale. Si vous n'avez rien, l'étape suivante fabrique l'image à votre place.",
+        "lien": "https://site.foodeatup.com/",
+        "prompt": "Ce que je fournis pour l'épisode [TON NUMÉRO] :\n\n— une vidéo verticale de 10 s de [TON PLAT], filmée au téléphone\n— une photo de [TON RESTAURANT] : la salle, la devanture ou le pass\n— mon logo, si j'en ai un\n\nCe que je n'ai pas et que vous complétez avec vos gabarits : [CE QUI ME MANQUE]."
       },
       {
         "etape": 2,
-        "titre": "Le montage",
-        "outil": "Claude Code",
-        "guide": "tomate",
-        "consigne": "Dépose ton plan et ton avatar dans le dépôt, puis écris cette phrase à Claude Code. Tu n'ouvres aucun logiciel de montage.",
-        "lien": "https://claude.com/claude-code",
-        "prompt": "Monte l'épisode [TON NUMÉRO] de ma série.\n\n— Plan comique : assets/hooks/[TON NUMÉRO].mp4\n— Avatar : assets/avatar/[TON NUMÉRO].mp4\n— Écran du logiciel : assets/software/[TON NUMÉRO].mp4\n— Accroche à incruster : « Six heures du matin. »\n— Punchline en voix off à 5,0 s : « Ton dîner a commencé il y a quatorze heures. »\n\nAnatomie : A 0→9,5 · sting 9,5→18,5 · avatar seul 18,5→28,5 · signature 28,5→32,5 · sting de marque 32,5→37,5.\nContrôle le master avant de me le rendre : 37,5 s, 1080×1920, -14 LUFS, crête sous -1 dBTP."
+        "titre": "Le plan d'ouverture",
+        "outil": "Higgsfield",
+        "cote": "restaurant",
+        "guide": "oignon",
+        "consigne": "Si vous n'avez pas d'images, ce prompt les fabrique. Remplacez ce qui est entre crochets, collez dans Higgsfield, lancez. Dix secondes plus tard, vous avez votre plan.",
+        "lien": "https://higgsfield.ai/",
+        "prompt": "Vertical 9:16, 10 secondes, 4K. PAS de texte incrusté, PAS de sous-titres, PAS de filigrane, PAS de logo dans l'image.\n\nIDENTITÉ VISUELLE : RapidoCMS. Bleu #03A9F5 présent dans le décor — un écran, une lumière, un objet — sans jamais former de logo. Tons clairs, blancs, gris #383838. Pas de crème, pas d'orange.\n\nDEUX personnages dans le même plan :\n— L'Oignon, personnage 3D stylisé de la Brigade Végé-Fruitée, EN VEDETTE, au premier plan, deux tiers du cadre. C'est lui qui agit : il ouvre les livres : ventes, stock, réservations ;\n— le chef, PHOTORÉALISTE, veste blanche et tablier, en retrait dans [TON RESTAURANT]. Il regarde faire, il ne fait pas.\n\nLe mélange photo + 3D est assumé, comme un dessin animé posé dans une prise de vue réelle. Les ombres du personnage 3D suivent celles du décor.\n\nDécor : la cuisine et les réserves avant l'ouverture, inox nu, cagettes. lumière crue du matin.\nAction : chez [TON RESTAURANT], Le restaurant avant tout le monde : les chaises sur les tables, le premier café, la première livraison.\nÀ 5 secondes, le geste aboutit et le chef réagit — surpris, puis convaincu.\nDeux dernières secondes : les deux regardent l'objectif côte à côte, immobiles.\n\nAudio : ambiance réelle du restaurant, un bip d'interface discret à 5 secondes, aucun dialogue, pas de musique.\n\nÀ remplacer : [TON RESTAURANT], [TON PLAT], [TON PRÉNOM]."
       },
       {
         "etape": 3,
+        "titre": "Le montage",
+        "outil": "Claude Code",
+        "cote": "rapidocms",
+        "guide": "tomate",
+        "consigne": "Le hook, la signature de fin et les logos sont ceux de RapidoCMS — vous ne les fournissez pas, ils sont dans le gabarit. Vos images occupent le centre. Vous n'ouvrez aucun logiciel de montage.",
+        "lien": "https://claude.com/claude-code",
+        "prompt": "Monte l'épisode [TON NUMÉRO] de ma série, gabarit RapidoCMS.\n\n— Plan d'ouverture : assets/hooks/[TON NUMÉRO].mp4\n— Personnage qui explique : assets/avatar/[TON NUMÉRO].mp4 (L'Oignon, avatar HeyGen)\n— Mes images de restaurant : assets/software/[TON NUMÉRO].mp4\n— Accroche à incruster : « Six heures du matin. »\n— Punchline en voix off à 5,0 s : « Ton dîner a commencé il y a quatorze heures. »\n\nHabillage : hook, signature de fin et logos en charte RapidoCMS — bleu #03A9F5, gris #383838, fond blanc. Pas de crème, pas d'orange.\nAnatomie : A 0→9,5 · sting RapidoCMS 9,5→18,5 · le personnage seul 18,5→28,5 · signature RapidoCMS 28,5→32,5 · sting de marque 32,5→37,5.\nContrôle avant de me le rendre : 37,5 s, 1080×1920, -14 LUFS, crête sous -1 dBTP."
+      },
+      {
+        "etape": 4,
         "titre": "La publication",
         "outil": "RapidoCMS",
+        "cote": "rapidocms",
         "guide": "betterave",
-        "consigne": "Une phrase, et les cinq réseaux sont programmés. Tu ne téléverses rien nulle part.",
+        "consigne": "Une phrase, et les cinq réseaux sont programmés. Le master part d'abord dans votre bibliothèque, puis en ligne. Vous ne téléversez rien nulle part.",
         "lien": "https://cms.rapidosoftware.com/register",
-        "prompt": "Verse le master dans ma bibliothèque RapidoCMS, puis programme les cinq réseaux de [TON RESTAURANT] :\n\n— LinkedIn à 8 h, Facebook à 12 h, YouTube à 10 h, Instagram à 18 h 30, TikTok à 19 h\n— Légende : « Six heures du matin. Ton dîner a commencé il y a quatorze heures. » puis le corps, puis « [TON APPEL À L'ACTION] : [TON SITE] »\n— Mots-dièse : #restaurant #[TA VILLE] #[TA SPÉCIALITÉ]\n\nRends-moi le lien de chaque publication."
+        "prompt": "Verse le master dans ma bibliothèque RapidoCMS, puis programme les cinq réseaux de [TON RESTAURANT] :\n\n— LinkedIn à 8 h, YouTube à 10 h, Facebook à 12 h, Instagram à 18 h 30, TikTok à 19 h\n— Légende : « Six heures du matin. Ton dîner a commencé il y a quatorze heures. » puis le corps, puis « [TON APPEL À L'ACTION] : [TON SITE] »\n— Mots-dièse : #restaurant #[TA VILLE] #[TA SPÉCIALITÉ]\n\nRends-moi le lien de chaque publication."
       }
     ],
     "tutoriel": null
@@ -20085,35 +20256,48 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       }
     },
     "promptVignette": "Illustration 3D, cadrage vertical 9:16, même style que l'image de référence jointe. Le personnage de l'image de référence — L'Oignon — gardé À L'IDENTIQUE : mêmes proportions, mêmes couleurs, même tenue, même accessoire. Ne le redessine pas, ne change pas son visage. Il est LA VEDETTE de l'image et occupe les deux tiers du cadre, en premier plan, tourné vers l'objectif. Ce qu'il fait ici : il ouvre les livres : ventes, stock, réservations. Scène : le producteur. À cinquante kilomètres d'ici. Décor derrière lui : la cuisine et les réserves avant l'ouverture, inox nu, cagettes. lumière crue du matin. Le décor reste flou et discret — c'est un fond, pas un sujet. Aucun humain photoréaliste dans l'image, aucun écran de logiciel lisible. Bande bleu RapidoCMS #03A9F5 en haut du cadre sur un cinquième de la hauteur, portant UNIQUEMENT le texte « PRODUCTEUR » en typographie arrondie très grasse, blanc, centré. Aucun autre texte, aucun logo ajouté, pas de filigrane, pas de bordure décorative.",
-    "higgsfieldPrompt": "Vertical 9:16, 10 secondes, 4K. PAS de texte incrusté, PAS de sous-titres, PAS de filigrane, PAS de logo.\n\nDEUX personnages dans le même plan, et c'est voulu :\n— le chef, PHOTORÉALISTE, joue le rôle : chef. Veste blanche, tablier, il est chez lui dans son restaurant ;\n— L'Oignon, personnage 3D stylisé de la Brigade Végé-Fruitée, incrusté dans le même décor à côté de lui, à hauteur de comptoir. Il ne parle pas : il fait le geste de son métier — il ouvre les livres : ventes, stock, réservations.\n\nLe mélange photo + 3D est assumé, comme un dessin animé posé dans une prise de vue réelle. Les ombres et la lumière du personnage 3D suivent celles du décor.\n\nDécor : la cuisine et les réserves avant l'ouverture, inox nu, cagettes. lumière crue du matin.\nAction : Chez le maraîcher ou l'éleveur, à cinquante kilomètres. À 5 secondes, le geste bascule et le personnage 3D réagit.\nDeux dernières secondes : les deux regardent l'objectif, immobiles.\n\nAudio : ambiance réelle du restaurant, aucun dialogue, pas de musique.",
-    "scriptHeygen": "Chez le maraîcher ou l'éleveur, à cinquante kilomètres. C'est lui qui fait la moitié du travail.",
+    "higgsfieldPrompt": "Vertical 9:16, 10 secondes, 4K. PAS de texte incrusté, PAS de sous-titres, PAS de filigrane, PAS de logo dans l'image.\n\nIDENTITÉ VISUELLE : RapidoCMS. Bleu #03A9F5 présent dans le décor — un écran, une lumière, un objet — sans jamais former de logo. Tons clairs, blancs, gris #383838. Pas de crème, pas d'orange.\n\nDEUX personnages dans le même plan :\n— L'Oignon, personnage 3D stylisé de la Brigade Végé-Fruitée, EN VEDETTE, au premier plan, deux tiers du cadre. C'est lui qui agit : il ouvre les livres : ventes, stock, réservations ;\n— le chef, PHOTORÉALISTE, veste blanche et tablier, en retrait dans son restaurant. Il regarde faire, il ne fait pas.\n\nLe mélange photo + 3D est assumé, comme un dessin animé posé dans une prise de vue réelle. Les ombres du personnage 3D suivent celles du décor.\n\nDécor : la cuisine et les réserves avant l'ouverture, inox nu, cagettes. lumière crue du matin.\nAction : Chez le maraîcher ou l'éleveur, à cinquante kilomètres.\nÀ 5 secondes, le geste aboutit et le chef réagit — surpris, puis convaincu.\nDeux dernières secondes : les deux regardent l'objectif côte à côte, immobiles.\n\nAudio : ambiance réelle du restaurant, un bip d'interface discret à 5 secondes, aucun dialogue, pas de musique.",
+    "scriptHeygen": "Moi c'est L'Oignon. Pour cet épisode, il ouvre les livres : ventes, stock, réservations — vous me le demandez en une phrase. Vos photos, notre gabarit : la vidéo part sur vos cinq réseaux le soir même.",
     "kit": [
       {
         "etape": 1,
-        "titre": "Le plan comique",
-        "outil": "Higgsfield",
+        "titre": "Vos images",
+        "outil": "Chez vous",
+        "cote": "restaurant",
         "guide": "oignon",
-        "consigne": "Remplace ce qui est entre crochets par ce qui est chez toi, colle le tout dans Higgsfield, et lance. Dix secondes plus tard tu as ton plan.",
-        "lien": "https://higgsfield.ai/",
-        "prompt": "Vertical 9:16, 10 secondes, 4K. PAS de texte incrusté, PAS de sous-titres, PAS de filigrane, PAS de logo.\n\nDEUX personnages dans le même plan, et c'est voulu :\n— le chef, PHOTORÉALISTE, joue le rôle : chef. Veste blanche, tablier, il est chez lui dans [TON RESTAURANT] ;\n— L'Oignon, personnage 3D stylisé de la Brigade Végé-Fruitée, incrusté dans le même décor à côté de lui, à hauteur de comptoir. Il ne parle pas : il fait le geste de son métier — il ouvre les livres : ventes, stock, réservations.\n\nLe mélange photo + 3D est assumé, comme un dessin animé posé dans une prise de vue réelle. Les ombres et la lumière du personnage 3D suivent celles du décor.\n\nDécor : la cuisine et les réserves avant l'ouverture, inox nu, cagettes. lumière crue du matin.\nAction : chez [TON RESTAURANT], Chez le maraîcher ou l'éleveur, à cinquante kilomètres. À 5 secondes, le geste bascule et le personnage 3D réagit.\nDeux dernières secondes : les deux regardent l'objectif, immobiles.\n\nAudio : ambiance réelle du restaurant, aucun dialogue, pas de musique.\n\nÉléments à remplacer : [TON RESTAURANT], [TON PLAT], [TON PRÉNOM]."
+        "consigne": "Commencez par ce que vous avez déjà : dix secondes de votre plat, de votre salle, de votre équipe. Filmé au téléphone, à la verticale. Si vous n'avez rien, l'étape suivante fabrique l'image à votre place.",
+        "lien": "https://site.foodeatup.com/",
+        "prompt": "Ce que je fournis pour l'épisode [TON NUMÉRO] :\n\n— une vidéo verticale de 10 s de [TON PLAT], filmée au téléphone\n— une photo de [TON RESTAURANT] : la salle, la devanture ou le pass\n— mon logo, si j'en ai un\n\nCe que je n'ai pas et que vous complétez avec vos gabarits : [CE QUI ME MANQUE]."
       },
       {
         "etape": 2,
-        "titre": "Le montage",
-        "outil": "Claude Code",
-        "guide": "tomate",
-        "consigne": "Dépose ton plan et ton avatar dans le dépôt, puis écris cette phrase à Claude Code. Tu n'ouvres aucun logiciel de montage.",
-        "lien": "https://claude.com/claude-code",
-        "prompt": "Monte l'épisode [TON NUMÉRO] de ma série.\n\n— Plan comique : assets/hooks/[TON NUMÉRO].mp4\n— Avatar : assets/avatar/[TON NUMÉRO].mp4\n— Écran du logiciel : assets/software/[TON NUMÉRO].mp4\n— Accroche à incruster : « À cinquante kilomètres d'ici. »\n— Punchline en voix off à 5,0 s : « C'est lui qui fait la moitié du travail. »\n\nAnatomie : A 0→9,5 · sting 9,5→18,5 · avatar seul 18,5→28,5 · signature 28,5→32,5 · sting de marque 32,5→37,5.\nContrôle le master avant de me le rendre : 37,5 s, 1080×1920, -14 LUFS, crête sous -1 dBTP."
+        "titre": "Le plan d'ouverture",
+        "outil": "Higgsfield",
+        "cote": "restaurant",
+        "guide": "oignon",
+        "consigne": "Si vous n'avez pas d'images, ce prompt les fabrique. Remplacez ce qui est entre crochets, collez dans Higgsfield, lancez. Dix secondes plus tard, vous avez votre plan.",
+        "lien": "https://higgsfield.ai/",
+        "prompt": "Vertical 9:16, 10 secondes, 4K. PAS de texte incrusté, PAS de sous-titres, PAS de filigrane, PAS de logo dans l'image.\n\nIDENTITÉ VISUELLE : RapidoCMS. Bleu #03A9F5 présent dans le décor — un écran, une lumière, un objet — sans jamais former de logo. Tons clairs, blancs, gris #383838. Pas de crème, pas d'orange.\n\nDEUX personnages dans le même plan :\n— L'Oignon, personnage 3D stylisé de la Brigade Végé-Fruitée, EN VEDETTE, au premier plan, deux tiers du cadre. C'est lui qui agit : il ouvre les livres : ventes, stock, réservations ;\n— le chef, PHOTORÉALISTE, veste blanche et tablier, en retrait dans [TON RESTAURANT]. Il regarde faire, il ne fait pas.\n\nLe mélange photo + 3D est assumé, comme un dessin animé posé dans une prise de vue réelle. Les ombres du personnage 3D suivent celles du décor.\n\nDécor : la cuisine et les réserves avant l'ouverture, inox nu, cagettes. lumière crue du matin.\nAction : chez [TON RESTAURANT], Chez le maraîcher ou l'éleveur, à cinquante kilomètres.\nÀ 5 secondes, le geste aboutit et le chef réagit — surpris, puis convaincu.\nDeux dernières secondes : les deux regardent l'objectif côte à côte, immobiles.\n\nAudio : ambiance réelle du restaurant, un bip d'interface discret à 5 secondes, aucun dialogue, pas de musique.\n\nÀ remplacer : [TON RESTAURANT], [TON PLAT], [TON PRÉNOM]."
       },
       {
         "etape": 3,
+        "titre": "Le montage",
+        "outil": "Claude Code",
+        "cote": "rapidocms",
+        "guide": "tomate",
+        "consigne": "Le hook, la signature de fin et les logos sont ceux de RapidoCMS — vous ne les fournissez pas, ils sont dans le gabarit. Vos images occupent le centre. Vous n'ouvrez aucun logiciel de montage.",
+        "lien": "https://claude.com/claude-code",
+        "prompt": "Monte l'épisode [TON NUMÉRO] de ma série, gabarit RapidoCMS.\n\n— Plan d'ouverture : assets/hooks/[TON NUMÉRO].mp4\n— Personnage qui explique : assets/avatar/[TON NUMÉRO].mp4 (L'Oignon, avatar HeyGen)\n— Mes images de restaurant : assets/software/[TON NUMÉRO].mp4\n— Accroche à incruster : « À cinquante kilomètres d'ici. »\n— Punchline en voix off à 5,0 s : « C'est lui qui fait la moitié du travail. »\n\nHabillage : hook, signature de fin et logos en charte RapidoCMS — bleu #03A9F5, gris #383838, fond blanc. Pas de crème, pas d'orange.\nAnatomie : A 0→9,5 · sting RapidoCMS 9,5→18,5 · le personnage seul 18,5→28,5 · signature RapidoCMS 28,5→32,5 · sting de marque 32,5→37,5.\nContrôle avant de me le rendre : 37,5 s, 1080×1920, -14 LUFS, crête sous -1 dBTP."
+      },
+      {
+        "etape": 4,
         "titre": "La publication",
         "outil": "RapidoCMS",
+        "cote": "rapidocms",
         "guide": "betterave",
-        "consigne": "Une phrase, et les cinq réseaux sont programmés. Tu ne téléverses rien nulle part.",
+        "consigne": "Une phrase, et les cinq réseaux sont programmés. Le master part d'abord dans votre bibliothèque, puis en ligne. Vous ne téléversez rien nulle part.",
         "lien": "https://cms.rapidosoftware.com/register",
-        "prompt": "Verse le master dans ma bibliothèque RapidoCMS, puis programme les cinq réseaux de [TON RESTAURANT] :\n\n— LinkedIn à 8 h, Facebook à 12 h, YouTube à 10 h, Instagram à 18 h 30, TikTok à 19 h\n— Légende : « À cinquante kilomètres d'ici. C'est lui qui fait la moitié du travail. » puis le corps, puis « [TON APPEL À L'ACTION] : [TON SITE] »\n— Mots-dièse : #restaurant #[TA VILLE] #[TA SPÉCIALITÉ]\n\nRends-moi le lien de chaque publication."
+        "prompt": "Verse le master dans ma bibliothèque RapidoCMS, puis programme les cinq réseaux de [TON RESTAURANT] :\n\n— LinkedIn à 8 h, YouTube à 10 h, Facebook à 12 h, Instagram à 18 h 30, TikTok à 19 h\n— Légende : « À cinquante kilomètres d'ici. C'est lui qui fait la moitié du travail. » puis le corps, puis « [TON APPEL À L'ACTION] : [TON SITE] »\n— Mots-dièse : #restaurant #[TA VILLE] #[TA SPÉCIALITÉ]\n\nRends-moi le lien de chaque publication."
       }
     ],
     "tutoriel": null
@@ -20233,35 +20417,48 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       }
     },
     "promptVignette": "Illustration 3D, cadrage vertical 9:16, même style que l'image de référence jointe. Le personnage de l'image de référence — Le Navet — gardé À L'IDENTIQUE : mêmes proportions, mêmes couleurs, même tenue, même accessoire. Ne le redessine pas, ne change pas son visage. Il est LA VEDETTE de l'image et occupe les deux tiers du cadre, en premier plan, tourné vers l'objectif. Ce qu'il fait ici : il fait le compte de ce qui a marché. Scène : portrait d'un serveur. Elle t'accueille depuis quatre ans. Décor derrière lui : la cuisine et les réserves avant l'ouverture, inox nu, cagettes. lumière crue du matin. Le décor reste flou et discret — c'est un fond, pas un sujet. Aucun humain photoréaliste dans l'image, aucun écran de logiciel lisible. Bande bleu RapidoCMS #03A9F5 en haut du cadre sur un cinquième de la hauteur, portant UNIQUEMENT le texte « PORTRAIT D'UN SERVEUR » en typographie arrondie très grasse, blanc, centré. Aucun autre texte, aucun logo ajouté, pas de filigrane, pas de bordure décorative.",
-    "higgsfieldPrompt": "Vertical 9:16, 10 secondes, 4K. PAS de texte incrusté, PAS de sous-titres, PAS de filigrane, PAS de logo.\n\nDEUX personnages dans le même plan, et c'est voulu :\n— le chef, PHOTORÉALISTE, joue le rôle : serveur. Veste blanche, tablier, il est chez lui dans son restaurant ;\n— Le Navet, personnage 3D stylisé de la Brigade Végé-Fruitée, incrusté dans le même décor à côté de lui, à hauteur de comptoir. Il ne parle pas : il fait le geste de son métier — il fait le compte de ce qui a marché.\n\nLe mélange photo + 3D est assumé, comme un dessin animé posé dans une prise de vue réelle. Les ombres et la lumière du personnage 3D suivent celles du décor.\n\nDécor : la cuisine et les réserves avant l'ouverture, inox nu, cagettes. lumière crue du matin.\nAction : Une minute avec la personne qui accueille : depuis quand, ce qu'elle préfère servir, sa table préférée. À 5 secondes, le geste bascule et le personnage 3D réagit.\nDeux dernières secondes : les deux regardent l'objectif, immobiles.\n\nAudio : ambiance réelle du restaurant, aucun dialogue, pas de musique.",
-    "scriptHeygen": "Une minute avec la personne qui accueille : depuis quand, ce qu'elle préfère servir, sa table préférée. Tu reviens pour elle, pas pour la déco.",
+    "higgsfieldPrompt": "Vertical 9:16, 10 secondes, 4K. PAS de texte incrusté, PAS de sous-titres, PAS de filigrane, PAS de logo dans l'image.\n\nIDENTITÉ VISUELLE : RapidoCMS. Bleu #03A9F5 présent dans le décor — un écran, une lumière, un objet — sans jamais former de logo. Tons clairs, blancs, gris #383838. Pas de crème, pas d'orange.\n\nDEUX personnages dans le même plan :\n— Le Navet, personnage 3D stylisé de la Brigade Végé-Fruitée, EN VEDETTE, au premier plan, deux tiers du cadre. C'est lui qui agit : il fait le compte de ce qui a marché ;\n— le chef, PHOTORÉALISTE, veste blanche et tablier, en retrait dans son restaurant. Il regarde faire, il ne fait pas.\n\nLe mélange photo + 3D est assumé, comme un dessin animé posé dans une prise de vue réelle. Les ombres du personnage 3D suivent celles du décor.\n\nDécor : la cuisine et les réserves avant l'ouverture, inox nu, cagettes. lumière crue du matin.\nAction : Une minute avec la personne qui accueille : depuis quand, ce qu'elle préfère servir, sa table préférée.\nÀ 5 secondes, le geste aboutit et le chef réagit — surpris, puis convaincu.\nDeux dernières secondes : les deux regardent l'objectif côte à côte, immobiles.\n\nAudio : ambiance réelle du restaurant, un bip d'interface discret à 5 secondes, aucun dialogue, pas de musique.",
+    "scriptHeygen": "Moi c'est Le Navet. Pour cet épisode, il fait le compte de ce qui a marché — vous me le demandez en une phrase. Vos photos, notre gabarit : la vidéo part sur vos cinq réseaux le soir même.",
     "kit": [
       {
         "etape": 1,
-        "titre": "Le plan comique",
-        "outil": "Higgsfield",
+        "titre": "Vos images",
+        "outil": "Chez vous",
+        "cote": "restaurant",
         "guide": "navet",
-        "consigne": "Remplace ce qui est entre crochets par ce qui est chez toi, colle le tout dans Higgsfield, et lance. Dix secondes plus tard tu as ton plan.",
-        "lien": "https://higgsfield.ai/",
-        "prompt": "Vertical 9:16, 10 secondes, 4K. PAS de texte incrusté, PAS de sous-titres, PAS de filigrane, PAS de logo.\n\nDEUX personnages dans le même plan, et c'est voulu :\n— le chef, PHOTORÉALISTE, joue le rôle : serveur. Veste blanche, tablier, il est chez lui dans [TON RESTAURANT] ;\n— Le Navet, personnage 3D stylisé de la Brigade Végé-Fruitée, incrusté dans le même décor à côté de lui, à hauteur de comptoir. Il ne parle pas : il fait le geste de son métier — il fait le compte de ce qui a marché.\n\nLe mélange photo + 3D est assumé, comme un dessin animé posé dans une prise de vue réelle. Les ombres et la lumière du personnage 3D suivent celles du décor.\n\nDécor : la cuisine et les réserves avant l'ouverture, inox nu, cagettes. lumière crue du matin.\nAction : chez [TON RESTAURANT], Une minute avec la personne qui accueille : depuis quand, ce qu'elle préfère servir, sa table préférée. À 5 secondes, le geste bascule et le personnage 3D réagit.\nDeux dernières secondes : les deux regardent l'objectif, immobiles.\n\nAudio : ambiance réelle du restaurant, aucun dialogue, pas de musique.\n\nÉléments à remplacer : [TON RESTAURANT], [TON PLAT], [TON PRÉNOM]."
+        "consigne": "Commencez par ce que vous avez déjà : dix secondes de votre plat, de votre salle, de votre équipe. Filmé au téléphone, à la verticale. Si vous n'avez rien, l'étape suivante fabrique l'image à votre place.",
+        "lien": "https://site.foodeatup.com/",
+        "prompt": "Ce que je fournis pour l'épisode [TON NUMÉRO] :\n\n— une vidéo verticale de 10 s de [TON PLAT], filmée au téléphone\n— une photo de [TON RESTAURANT] : la salle, la devanture ou le pass\n— mon logo, si j'en ai un\n\nCe que je n'ai pas et que vous complétez avec vos gabarits : [CE QUI ME MANQUE]."
       },
       {
         "etape": 2,
-        "titre": "Le montage",
-        "outil": "Claude Code",
-        "guide": "tomate",
-        "consigne": "Dépose ton plan et ton avatar dans le dépôt, puis écris cette phrase à Claude Code. Tu n'ouvres aucun logiciel de montage.",
-        "lien": "https://claude.com/claude-code",
-        "prompt": "Monte l'épisode [TON NUMÉRO] de ma série.\n\n— Plan comique : assets/hooks/[TON NUMÉRO].mp4\n— Avatar : assets/avatar/[TON NUMÉRO].mp4\n— Écran du logiciel : assets/software/[TON NUMÉRO].mp4\n— Accroche à incruster : « Elle t'accueille depuis quatre ans. »\n— Punchline en voix off à 5,0 s : « Tu reviens pour elle, pas pour la déco. »\n\nAnatomie : A 0→9,5 · sting 9,5→18,5 · avatar seul 18,5→28,5 · signature 28,5→32,5 · sting de marque 32,5→37,5.\nContrôle le master avant de me le rendre : 37,5 s, 1080×1920, -14 LUFS, crête sous -1 dBTP."
+        "titre": "Le plan d'ouverture",
+        "outil": "Higgsfield",
+        "cote": "restaurant",
+        "guide": "navet",
+        "consigne": "Si vous n'avez pas d'images, ce prompt les fabrique. Remplacez ce qui est entre crochets, collez dans Higgsfield, lancez. Dix secondes plus tard, vous avez votre plan.",
+        "lien": "https://higgsfield.ai/",
+        "prompt": "Vertical 9:16, 10 secondes, 4K. PAS de texte incrusté, PAS de sous-titres, PAS de filigrane, PAS de logo dans l'image.\n\nIDENTITÉ VISUELLE : RapidoCMS. Bleu #03A9F5 présent dans le décor — un écran, une lumière, un objet — sans jamais former de logo. Tons clairs, blancs, gris #383838. Pas de crème, pas d'orange.\n\nDEUX personnages dans le même plan :\n— Le Navet, personnage 3D stylisé de la Brigade Végé-Fruitée, EN VEDETTE, au premier plan, deux tiers du cadre. C'est lui qui agit : il fait le compte de ce qui a marché ;\n— le chef, PHOTORÉALISTE, veste blanche et tablier, en retrait dans [TON RESTAURANT]. Il regarde faire, il ne fait pas.\n\nLe mélange photo + 3D est assumé, comme un dessin animé posé dans une prise de vue réelle. Les ombres du personnage 3D suivent celles du décor.\n\nDécor : la cuisine et les réserves avant l'ouverture, inox nu, cagettes. lumière crue du matin.\nAction : chez [TON RESTAURANT], Une minute avec la personne qui accueille : depuis quand, ce qu'elle préfère servir, sa table préférée.\nÀ 5 secondes, le geste aboutit et le chef réagit — surpris, puis convaincu.\nDeux dernières secondes : les deux regardent l'objectif côte à côte, immobiles.\n\nAudio : ambiance réelle du restaurant, un bip d'interface discret à 5 secondes, aucun dialogue, pas de musique.\n\nÀ remplacer : [TON RESTAURANT], [TON PLAT], [TON PRÉNOM]."
       },
       {
         "etape": 3,
+        "titre": "Le montage",
+        "outil": "Claude Code",
+        "cote": "rapidocms",
+        "guide": "tomate",
+        "consigne": "Le hook, la signature de fin et les logos sont ceux de RapidoCMS — vous ne les fournissez pas, ils sont dans le gabarit. Vos images occupent le centre. Vous n'ouvrez aucun logiciel de montage.",
+        "lien": "https://claude.com/claude-code",
+        "prompt": "Monte l'épisode [TON NUMÉRO] de ma série, gabarit RapidoCMS.\n\n— Plan d'ouverture : assets/hooks/[TON NUMÉRO].mp4\n— Personnage qui explique : assets/avatar/[TON NUMÉRO].mp4 (Le Navet, avatar HeyGen)\n— Mes images de restaurant : assets/software/[TON NUMÉRO].mp4\n— Accroche à incruster : « Elle t'accueille depuis quatre ans. »\n— Punchline en voix off à 5,0 s : « Tu reviens pour elle, pas pour la déco. »\n\nHabillage : hook, signature de fin et logos en charte RapidoCMS — bleu #03A9F5, gris #383838, fond blanc. Pas de crème, pas d'orange.\nAnatomie : A 0→9,5 · sting RapidoCMS 9,5→18,5 · le personnage seul 18,5→28,5 · signature RapidoCMS 28,5→32,5 · sting de marque 32,5→37,5.\nContrôle avant de me le rendre : 37,5 s, 1080×1920, -14 LUFS, crête sous -1 dBTP."
+      },
+      {
+        "etape": 4,
         "titre": "La publication",
         "outil": "RapidoCMS",
+        "cote": "rapidocms",
         "guide": "betterave",
-        "consigne": "Une phrase, et les cinq réseaux sont programmés. Tu ne téléverses rien nulle part.",
+        "consigne": "Une phrase, et les cinq réseaux sont programmés. Le master part d'abord dans votre bibliothèque, puis en ligne. Vous ne téléversez rien nulle part.",
         "lien": "https://cms.rapidosoftware.com/register",
-        "prompt": "Verse le master dans ma bibliothèque RapidoCMS, puis programme les cinq réseaux de [TON RESTAURANT] :\n\n— LinkedIn à 8 h, Facebook à 12 h, YouTube à 10 h, Instagram à 18 h 30, TikTok à 19 h\n— Légende : « Elle t'accueille depuis quatre ans. Tu reviens pour elle, pas pour la déco. » puis le corps, puis « [TON APPEL À L'ACTION] : [TON SITE] »\n— Mots-dièse : #restaurant #[TA VILLE] #[TA SPÉCIALITÉ]\n\nRends-moi le lien de chaque publication."
+        "prompt": "Verse le master dans ma bibliothèque RapidoCMS, puis programme les cinq réseaux de [TON RESTAURANT] :\n\n— LinkedIn à 8 h, YouTube à 10 h, Facebook à 12 h, Instagram à 18 h 30, TikTok à 19 h\n— Légende : « Elle t'accueille depuis quatre ans. Tu reviens pour elle, pas pour la déco. » puis le corps, puis « [TON APPEL À L'ACTION] : [TON SITE] »\n— Mots-dièse : #restaurant #[TA VILLE] #[TA SPÉCIALITÉ]\n\nRends-moi le lien de chaque publication."
       }
     ],
     "tutoriel": null
@@ -20381,35 +20578,48 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       }
     },
     "promptVignette": "Illustration 3D, cadrage vertical 9:16, même style que l'image de référence jointe. Le personnage de l'image de référence — Tomate Man — gardé À L'IDENTIQUE : mêmes proportions, mêmes couleurs, même tenue, même accessoire. Ne le redessine pas, ne change pas son visage. Il est LA VEDETTE de l'image et occupe les deux tiers du cadre, en premier plan, tourné vers l'objectif. Ce qu'il fait ici : il assemble les cinq segments et contrôle avant de livrer. Scène : le coup de feu, vu de la cuisine. Vingt heures quinze. Décor derrière lui : la cuisine et les réserves avant l'ouverture, inox nu, cagettes. lumière crue du matin. Le décor reste flou et discret — c'est un fond, pas un sujet. Aucun humain photoréaliste dans l'image, aucun écran de logiciel lisible. Bande bleu RapidoCMS #03A9F5 en haut du cadre sur un cinquième de la hauteur, portant UNIQUEMENT le texte « COUP FEU VU » en typographie arrondie très grasse, blanc, centré. Aucun autre texte, aucun logo ajouté, pas de filigrane, pas de bordure décorative.",
-    "higgsfieldPrompt": "Vertical 9:16, 10 secondes, 4K. PAS de texte incrusté, PAS de sous-titres, PAS de filigrane, PAS de logo.\n\nDEUX personnages dans le même plan, et c'est voulu :\n— le chef, PHOTORÉALISTE, joue le rôle : chef. Veste blanche, tablier, il est chez lui dans son restaurant ;\n— Tomate Man, personnage 3D stylisé de la Brigade Végé-Fruitée, incrusté dans le même décor à côté de lui, à hauteur de comptoir. Il ne parle pas : il fait le geste de son métier — il assemble les cinq segments et contrôle avant de livrer.\n\nLe mélange photo + 3D est assumé, comme un dessin animé posé dans une prise de vue réelle. Les ombres et la lumière du personnage 3D suivent celles du décor.\n\nDécor : la cuisine et les réserves avant l'ouverture, inox nu, cagettes. lumière crue du matin.\nAction : Vingt heures quinze. À 5 secondes, le geste bascule et le personnage 3D réagit.\nDeux dernières secondes : les deux regardent l'objectif, immobiles.\n\nAudio : ambiance réelle du restaurant, aucun dialogue, pas de musique.",
-    "scriptHeygen": "Vingt heures quinze. Aucune musique. C'est le vrai son.",
+    "higgsfieldPrompt": "Vertical 9:16, 10 secondes, 4K. PAS de texte incrusté, PAS de sous-titres, PAS de filigrane, PAS de logo dans l'image.\n\nIDENTITÉ VISUELLE : RapidoCMS. Bleu #03A9F5 présent dans le décor — un écran, une lumière, un objet — sans jamais former de logo. Tons clairs, blancs, gris #383838. Pas de crème, pas d'orange.\n\nDEUX personnages dans le même plan :\n— Tomate Man, personnage 3D stylisé de la Brigade Végé-Fruitée, EN VEDETTE, au premier plan, deux tiers du cadre. C'est lui qui agit : il assemble les cinq segments et contrôle avant de livrer ;\n— le chef, PHOTORÉALISTE, veste blanche et tablier, en retrait dans son restaurant. Il regarde faire, il ne fait pas.\n\nLe mélange photo + 3D est assumé, comme un dessin animé posé dans une prise de vue réelle. Les ombres du personnage 3D suivent celles du décor.\n\nDécor : la cuisine et les réserves avant l'ouverture, inox nu, cagettes. lumière crue du matin.\nAction : Vingt heures quinze.\nÀ 5 secondes, le geste aboutit et le chef réagit — surpris, puis convaincu.\nDeux dernières secondes : les deux regardent l'objectif côte à côte, immobiles.\n\nAudio : ambiance réelle du restaurant, un bip d'interface discret à 5 secondes, aucun dialogue, pas de musique.",
+    "scriptHeygen": "Moi c'est Tomate Man. Pour cet épisode, il assemble les cinq segments et contrôle avant de livrer — vous me le demandez en une phrase. Vos photos, notre gabarit : la vidéo part sur vos cinq réseaux le soir même.",
     "kit": [
       {
         "etape": 1,
-        "titre": "Le plan comique",
-        "outil": "Higgsfield",
+        "titre": "Vos images",
+        "outil": "Chez vous",
+        "cote": "restaurant",
         "guide": "tomate",
-        "consigne": "Remplace ce qui est entre crochets par ce qui est chez toi, colle le tout dans Higgsfield, et lance. Dix secondes plus tard tu as ton plan.",
-        "lien": "https://higgsfield.ai/",
-        "prompt": "Vertical 9:16, 10 secondes, 4K. PAS de texte incrusté, PAS de sous-titres, PAS de filigrane, PAS de logo.\n\nDEUX personnages dans le même plan, et c'est voulu :\n— le chef, PHOTORÉALISTE, joue le rôle : chef. Veste blanche, tablier, il est chez lui dans [TON RESTAURANT] ;\n— Tomate Man, personnage 3D stylisé de la Brigade Végé-Fruitée, incrusté dans le même décor à côté de lui, à hauteur de comptoir. Il ne parle pas : il fait le geste de son métier — il assemble les cinq segments et contrôle avant de livrer.\n\nLe mélange photo + 3D est assumé, comme un dessin animé posé dans une prise de vue réelle. Les ombres et la lumière du personnage 3D suivent celles du décor.\n\nDécor : la cuisine et les réserves avant l'ouverture, inox nu, cagettes. lumière crue du matin.\nAction : chez [TON RESTAURANT], Vingt heures quinze. À 5 secondes, le geste bascule et le personnage 3D réagit.\nDeux dernières secondes : les deux regardent l'objectif, immobiles.\n\nAudio : ambiance réelle du restaurant, aucun dialogue, pas de musique.\n\nÉléments à remplacer : [TON RESTAURANT], [TON PLAT], [TON PRÉNOM]."
+        "consigne": "Commencez par ce que vous avez déjà : dix secondes de votre plat, de votre salle, de votre équipe. Filmé au téléphone, à la verticale. Si vous n'avez rien, l'étape suivante fabrique l'image à votre place.",
+        "lien": "https://site.foodeatup.com/",
+        "prompt": "Ce que je fournis pour l'épisode [TON NUMÉRO] :\n\n— une vidéo verticale de 10 s de [TON PLAT], filmée au téléphone\n— une photo de [TON RESTAURANT] : la salle, la devanture ou le pass\n— mon logo, si j'en ai un\n\nCe que je n'ai pas et que vous complétez avec vos gabarits : [CE QUI ME MANQUE]."
       },
       {
         "etape": 2,
-        "titre": "Le montage",
-        "outil": "Claude Code",
+        "titre": "Le plan d'ouverture",
+        "outil": "Higgsfield",
+        "cote": "restaurant",
         "guide": "tomate",
-        "consigne": "Dépose ton plan et ton avatar dans le dépôt, puis écris cette phrase à Claude Code. Tu n'ouvres aucun logiciel de montage.",
-        "lien": "https://claude.com/claude-code",
-        "prompt": "Monte l'épisode [TON NUMÉRO] de ma série.\n\n— Plan comique : assets/hooks/[TON NUMÉRO].mp4\n— Avatar : assets/avatar/[TON NUMÉRO].mp4\n— Écran du logiciel : assets/software/[TON NUMÉRO].mp4\n— Accroche à incruster : « Vingt heures quinze. »\n— Punchline en voix off à 5,0 s : « Aucune musique. C'est le vrai son. »\n\nAnatomie : A 0→9,5 · sting 9,5→18,5 · avatar seul 18,5→28,5 · signature 28,5→32,5 · sting de marque 32,5→37,5.\nContrôle le master avant de me le rendre : 37,5 s, 1080×1920, -14 LUFS, crête sous -1 dBTP."
+        "consigne": "Si vous n'avez pas d'images, ce prompt les fabrique. Remplacez ce qui est entre crochets, collez dans Higgsfield, lancez. Dix secondes plus tard, vous avez votre plan.",
+        "lien": "https://higgsfield.ai/",
+        "prompt": "Vertical 9:16, 10 secondes, 4K. PAS de texte incrusté, PAS de sous-titres, PAS de filigrane, PAS de logo dans l'image.\n\nIDENTITÉ VISUELLE : RapidoCMS. Bleu #03A9F5 présent dans le décor — un écran, une lumière, un objet — sans jamais former de logo. Tons clairs, blancs, gris #383838. Pas de crème, pas d'orange.\n\nDEUX personnages dans le même plan :\n— Tomate Man, personnage 3D stylisé de la Brigade Végé-Fruitée, EN VEDETTE, au premier plan, deux tiers du cadre. C'est lui qui agit : il assemble les cinq segments et contrôle avant de livrer ;\n— le chef, PHOTORÉALISTE, veste blanche et tablier, en retrait dans [TON RESTAURANT]. Il regarde faire, il ne fait pas.\n\nLe mélange photo + 3D est assumé, comme un dessin animé posé dans une prise de vue réelle. Les ombres du personnage 3D suivent celles du décor.\n\nDécor : la cuisine et les réserves avant l'ouverture, inox nu, cagettes. lumière crue du matin.\nAction : chez [TON RESTAURANT], Vingt heures quinze.\nÀ 5 secondes, le geste aboutit et le chef réagit — surpris, puis convaincu.\nDeux dernières secondes : les deux regardent l'objectif côte à côte, immobiles.\n\nAudio : ambiance réelle du restaurant, un bip d'interface discret à 5 secondes, aucun dialogue, pas de musique.\n\nÀ remplacer : [TON RESTAURANT], [TON PLAT], [TON PRÉNOM]."
       },
       {
         "etape": 3,
+        "titre": "Le montage",
+        "outil": "Claude Code",
+        "cote": "rapidocms",
+        "guide": "tomate",
+        "consigne": "Le hook, la signature de fin et les logos sont ceux de RapidoCMS — vous ne les fournissez pas, ils sont dans le gabarit. Vos images occupent le centre. Vous n'ouvrez aucun logiciel de montage.",
+        "lien": "https://claude.com/claude-code",
+        "prompt": "Monte l'épisode [TON NUMÉRO] de ma série, gabarit RapidoCMS.\n\n— Plan d'ouverture : assets/hooks/[TON NUMÉRO].mp4\n— Personnage qui explique : assets/avatar/[TON NUMÉRO].mp4 (Tomate Man, avatar HeyGen)\n— Mes images de restaurant : assets/software/[TON NUMÉRO].mp4\n— Accroche à incruster : « Vingt heures quinze. »\n— Punchline en voix off à 5,0 s : « Aucune musique. C'est le vrai son. »\n\nHabillage : hook, signature de fin et logos en charte RapidoCMS — bleu #03A9F5, gris #383838, fond blanc. Pas de crème, pas d'orange.\nAnatomie : A 0→9,5 · sting RapidoCMS 9,5→18,5 · le personnage seul 18,5→28,5 · signature RapidoCMS 28,5→32,5 · sting de marque 32,5→37,5.\nContrôle avant de me le rendre : 37,5 s, 1080×1920, -14 LUFS, crête sous -1 dBTP."
+      },
+      {
+        "etape": 4,
         "titre": "La publication",
         "outil": "RapidoCMS",
+        "cote": "rapidocms",
         "guide": "betterave",
-        "consigne": "Une phrase, et les cinq réseaux sont programmés. Tu ne téléverses rien nulle part.",
+        "consigne": "Une phrase, et les cinq réseaux sont programmés. Le master part d'abord dans votre bibliothèque, puis en ligne. Vous ne téléversez rien nulle part.",
         "lien": "https://cms.rapidosoftware.com/register",
-        "prompt": "Verse le master dans ma bibliothèque RapidoCMS, puis programme les cinq réseaux de [TON RESTAURANT] :\n\n— LinkedIn à 8 h, Facebook à 12 h, YouTube à 10 h, Instagram à 18 h 30, TikTok à 19 h\n— Légende : « Vingt heures quinze. Aucune musique. C'est le vrai son. » puis le corps, puis « [TON APPEL À L'ACTION] : [TON SITE] »\n— Mots-dièse : #restaurant #[TA VILLE] #[TA SPÉCIALITÉ]\n\nRends-moi le lien de chaque publication."
+        "prompt": "Verse le master dans ma bibliothèque RapidoCMS, puis programme les cinq réseaux de [TON RESTAURANT] :\n\n— LinkedIn à 8 h, YouTube à 10 h, Facebook à 12 h, Instagram à 18 h 30, TikTok à 19 h\n— Légende : « Vingt heures quinze. Aucune musique. C'est le vrai son. » puis le corps, puis « [TON APPEL À L'ACTION] : [TON SITE] »\n— Mots-dièse : #restaurant #[TA VILLE] #[TA SPÉCIALITÉ]\n\nRends-moi le lien de chaque publication."
       }
     ],
     "tutoriel": null
@@ -20529,35 +20739,48 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       }
     },
     "promptVignette": "Illustration 3D, cadrage vertical 9:16, même style que l'image de référence jointe. Le personnage de l'image de référence — Le Navet — gardé À L'IDENTIQUE : mêmes proportions, mêmes couleurs, même tenue, même accessoire. Ne le redessine pas, ne change pas son visage. Il est LA VEDETTE de l'image et occupe les deux tiers du cadre, en premier plan, tourné vers l'objectif. Ce qu'il fait ici : il fait le compte de ce qui a marché. Scène : le poste qu'on ne montre jamais. Le poste qu'on ne montre jamais. Décor derrière lui : la cuisine et les réserves avant l'ouverture, inox nu, cagettes. lumière crue du matin. Le décor reste flou et discret — c'est un fond, pas un sujet. Aucun humain photoréaliste dans l'image, aucun écran de logiciel lisible. Bande bleu RapidoCMS #03A9F5 en haut du cadre sur un cinquième de la hauteur, portant UNIQUEMENT le texte « POSTE QU'ON NE » en typographie arrondie très grasse, blanc, centré. Aucun autre texte, aucun logo ajouté, pas de filigrane, pas de bordure décorative.",
-    "higgsfieldPrompt": "Vertical 9:16, 10 secondes, 4K. PAS de texte incrusté, PAS de sous-titres, PAS de filigrane, PAS de logo.\n\nDEUX personnages dans le même plan, et c'est voulu :\n— le chef, PHOTORÉALISTE, joue le rôle : plongeur. Veste blanche, tablier, il est chez lui dans son restaurant ;\n— Le Navet, personnage 3D stylisé de la Brigade Végé-Fruitée, incrusté dans le même décor à côté de lui, à hauteur de comptoir. Il ne parle pas : il fait le geste de son métier — il fait le compte de ce qui a marché.\n\nLe mélange photo + 3D est assumé, comme un dessin animé posé dans une prise de vue réelle. Les ombres et la lumière du personnage 3D suivent celles du décor.\n\nDécor : la cuisine et les réserves avant l'ouverture, inox nu, cagettes. lumière crue du matin.\nAction : La plonge, à fond, sans filtre. À 5 secondes, le geste bascule et le personnage 3D réagit.\nDeux dernières secondes : les deux regardent l'objectif, immobiles.\n\nAudio : ambiance réelle du restaurant, aucun dialogue, pas de musique.",
-    "scriptHeygen": "La plonge, à fond, sans filtre. Sans lui, rien ne sort.",
+    "higgsfieldPrompt": "Vertical 9:16, 10 secondes, 4K. PAS de texte incrusté, PAS de sous-titres, PAS de filigrane, PAS de logo dans l'image.\n\nIDENTITÉ VISUELLE : RapidoCMS. Bleu #03A9F5 présent dans le décor — un écran, une lumière, un objet — sans jamais former de logo. Tons clairs, blancs, gris #383838. Pas de crème, pas d'orange.\n\nDEUX personnages dans le même plan :\n— Le Navet, personnage 3D stylisé de la Brigade Végé-Fruitée, EN VEDETTE, au premier plan, deux tiers du cadre. C'est lui qui agit : il fait le compte de ce qui a marché ;\n— le chef, PHOTORÉALISTE, veste blanche et tablier, en retrait dans son restaurant. Il regarde faire, il ne fait pas.\n\nLe mélange photo + 3D est assumé, comme un dessin animé posé dans une prise de vue réelle. Les ombres du personnage 3D suivent celles du décor.\n\nDécor : la cuisine et les réserves avant l'ouverture, inox nu, cagettes. lumière crue du matin.\nAction : La plonge, à fond, sans filtre.\nÀ 5 secondes, le geste aboutit et le chef réagit — surpris, puis convaincu.\nDeux dernières secondes : les deux regardent l'objectif côte à côte, immobiles.\n\nAudio : ambiance réelle du restaurant, un bip d'interface discret à 5 secondes, aucun dialogue, pas de musique.",
+    "scriptHeygen": "Moi c'est Le Navet. Pour cet épisode, il fait le compte de ce qui a marché — vous me le demandez en une phrase. Vos photos, notre gabarit : la vidéo part sur vos cinq réseaux le soir même.",
     "kit": [
       {
         "etape": 1,
-        "titre": "Le plan comique",
-        "outil": "Higgsfield",
+        "titre": "Vos images",
+        "outil": "Chez vous",
+        "cote": "restaurant",
         "guide": "navet",
-        "consigne": "Remplace ce qui est entre crochets par ce qui est chez toi, colle le tout dans Higgsfield, et lance. Dix secondes plus tard tu as ton plan.",
-        "lien": "https://higgsfield.ai/",
-        "prompt": "Vertical 9:16, 10 secondes, 4K. PAS de texte incrusté, PAS de sous-titres, PAS de filigrane, PAS de logo.\n\nDEUX personnages dans le même plan, et c'est voulu :\n— le chef, PHOTORÉALISTE, joue le rôle : plongeur. Veste blanche, tablier, il est chez lui dans [TON RESTAURANT] ;\n— Le Navet, personnage 3D stylisé de la Brigade Végé-Fruitée, incrusté dans le même décor à côté de lui, à hauteur de comptoir. Il ne parle pas : il fait le geste de son métier — il fait le compte de ce qui a marché.\n\nLe mélange photo + 3D est assumé, comme un dessin animé posé dans une prise de vue réelle. Les ombres et la lumière du personnage 3D suivent celles du décor.\n\nDécor : la cuisine et les réserves avant l'ouverture, inox nu, cagettes. lumière crue du matin.\nAction : chez [TON RESTAURANT], La plonge, à fond, sans filtre. À 5 secondes, le geste bascule et le personnage 3D réagit.\nDeux dernières secondes : les deux regardent l'objectif, immobiles.\n\nAudio : ambiance réelle du restaurant, aucun dialogue, pas de musique.\n\nÉléments à remplacer : [TON RESTAURANT], [TON PLAT], [TON PRÉNOM]."
+        "consigne": "Commencez par ce que vous avez déjà : dix secondes de votre plat, de votre salle, de votre équipe. Filmé au téléphone, à la verticale. Si vous n'avez rien, l'étape suivante fabrique l'image à votre place.",
+        "lien": "https://site.foodeatup.com/",
+        "prompt": "Ce que je fournis pour l'épisode [TON NUMÉRO] :\n\n— une vidéo verticale de 10 s de [TON PLAT], filmée au téléphone\n— une photo de [TON RESTAURANT] : la salle, la devanture ou le pass\n— mon logo, si j'en ai un\n\nCe que je n'ai pas et que vous complétez avec vos gabarits : [CE QUI ME MANQUE]."
       },
       {
         "etape": 2,
-        "titre": "Le montage",
-        "outil": "Claude Code",
-        "guide": "tomate",
-        "consigne": "Dépose ton plan et ton avatar dans le dépôt, puis écris cette phrase à Claude Code. Tu n'ouvres aucun logiciel de montage.",
-        "lien": "https://claude.com/claude-code",
-        "prompt": "Monte l'épisode [TON NUMÉRO] de ma série.\n\n— Plan comique : assets/hooks/[TON NUMÉRO].mp4\n— Avatar : assets/avatar/[TON NUMÉRO].mp4\n— Écran du logiciel : assets/software/[TON NUMÉRO].mp4\n— Accroche à incruster : « Le poste qu'on ne montre jamais. »\n— Punchline en voix off à 5,0 s : « Sans lui, rien ne sort. »\n\nAnatomie : A 0→9,5 · sting 9,5→18,5 · avatar seul 18,5→28,5 · signature 28,5→32,5 · sting de marque 32,5→37,5.\nContrôle le master avant de me le rendre : 37,5 s, 1080×1920, -14 LUFS, crête sous -1 dBTP."
+        "titre": "Le plan d'ouverture",
+        "outil": "Higgsfield",
+        "cote": "restaurant",
+        "guide": "navet",
+        "consigne": "Si vous n'avez pas d'images, ce prompt les fabrique. Remplacez ce qui est entre crochets, collez dans Higgsfield, lancez. Dix secondes plus tard, vous avez votre plan.",
+        "lien": "https://higgsfield.ai/",
+        "prompt": "Vertical 9:16, 10 secondes, 4K. PAS de texte incrusté, PAS de sous-titres, PAS de filigrane, PAS de logo dans l'image.\n\nIDENTITÉ VISUELLE : RapidoCMS. Bleu #03A9F5 présent dans le décor — un écran, une lumière, un objet — sans jamais former de logo. Tons clairs, blancs, gris #383838. Pas de crème, pas d'orange.\n\nDEUX personnages dans le même plan :\n— Le Navet, personnage 3D stylisé de la Brigade Végé-Fruitée, EN VEDETTE, au premier plan, deux tiers du cadre. C'est lui qui agit : il fait le compte de ce qui a marché ;\n— le chef, PHOTORÉALISTE, veste blanche et tablier, en retrait dans [TON RESTAURANT]. Il regarde faire, il ne fait pas.\n\nLe mélange photo + 3D est assumé, comme un dessin animé posé dans une prise de vue réelle. Les ombres du personnage 3D suivent celles du décor.\n\nDécor : la cuisine et les réserves avant l'ouverture, inox nu, cagettes. lumière crue du matin.\nAction : chez [TON RESTAURANT], La plonge, à fond, sans filtre.\nÀ 5 secondes, le geste aboutit et le chef réagit — surpris, puis convaincu.\nDeux dernières secondes : les deux regardent l'objectif côte à côte, immobiles.\n\nAudio : ambiance réelle du restaurant, un bip d'interface discret à 5 secondes, aucun dialogue, pas de musique.\n\nÀ remplacer : [TON RESTAURANT], [TON PLAT], [TON PRÉNOM]."
       },
       {
         "etape": 3,
+        "titre": "Le montage",
+        "outil": "Claude Code",
+        "cote": "rapidocms",
+        "guide": "tomate",
+        "consigne": "Le hook, la signature de fin et les logos sont ceux de RapidoCMS — vous ne les fournissez pas, ils sont dans le gabarit. Vos images occupent le centre. Vous n'ouvrez aucun logiciel de montage.",
+        "lien": "https://claude.com/claude-code",
+        "prompt": "Monte l'épisode [TON NUMÉRO] de ma série, gabarit RapidoCMS.\n\n— Plan d'ouverture : assets/hooks/[TON NUMÉRO].mp4\n— Personnage qui explique : assets/avatar/[TON NUMÉRO].mp4 (Le Navet, avatar HeyGen)\n— Mes images de restaurant : assets/software/[TON NUMÉRO].mp4\n— Accroche à incruster : « Le poste qu'on ne montre jamais. »\n— Punchline en voix off à 5,0 s : « Sans lui, rien ne sort. »\n\nHabillage : hook, signature de fin et logos en charte RapidoCMS — bleu #03A9F5, gris #383838, fond blanc. Pas de crème, pas d'orange.\nAnatomie : A 0→9,5 · sting RapidoCMS 9,5→18,5 · le personnage seul 18,5→28,5 · signature RapidoCMS 28,5→32,5 · sting de marque 32,5→37,5.\nContrôle avant de me le rendre : 37,5 s, 1080×1920, -14 LUFS, crête sous -1 dBTP."
+      },
+      {
+        "etape": 4,
         "titre": "La publication",
         "outil": "RapidoCMS",
+        "cote": "rapidocms",
         "guide": "betterave",
-        "consigne": "Une phrase, et les cinq réseaux sont programmés. Tu ne téléverses rien nulle part.",
+        "consigne": "Une phrase, et les cinq réseaux sont programmés. Le master part d'abord dans votre bibliothèque, puis en ligne. Vous ne téléversez rien nulle part.",
         "lien": "https://cms.rapidosoftware.com/register",
-        "prompt": "Verse le master dans ma bibliothèque RapidoCMS, puis programme les cinq réseaux de [TON RESTAURANT] :\n\n— LinkedIn à 8 h, Facebook à 12 h, YouTube à 10 h, Instagram à 18 h 30, TikTok à 19 h\n— Légende : « Le poste qu'on ne montre jamais. Sans lui, rien ne sort. » puis le corps, puis « [TON APPEL À L'ACTION] : [TON SITE] »\n— Mots-dièse : #restaurant #[TA VILLE] #[TA SPÉCIALITÉ]\n\nRends-moi le lien de chaque publication."
+        "prompt": "Verse le master dans ma bibliothèque RapidoCMS, puis programme les cinq réseaux de [TON RESTAURANT] :\n\n— LinkedIn à 8 h, YouTube à 10 h, Facebook à 12 h, Instagram à 18 h 30, TikTok à 19 h\n— Légende : « Le poste qu'on ne montre jamais. Sans lui, rien ne sort. » puis le corps, puis « [TON APPEL À L'ACTION] : [TON SITE] »\n— Mots-dièse : #restaurant #[TA VILLE] #[TA SPÉCIALITÉ]\n\nRends-moi le lien de chaque publication."
       }
     ],
     "tutoriel": null
@@ -20677,35 +20900,48 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       }
     },
     "promptVignette": "Illustration 3D, cadrage vertical 9:16, même style que l'image de référence jointe. Le personnage de l'image de référence — L'Oignon — gardé À L'IDENTIQUE : mêmes proportions, mêmes couleurs, même tenue, même accessoire. Ne le redessine pas, ne change pas son visage. Il est LA VEDETTE de l'image et occupe les deux tiers du cadre, en premier plan, tourné vers l'objectif. Ce qu'il fait ici : il ouvre les livres : ventes, stock, réservations. Scène : les courses du chef. Six heures, au marché. Décor derrière lui : la cuisine et les réserves avant l'ouverture, inox nu, cagettes. lumière crue du matin. Le décor reste flou et discret — c'est un fond, pas un sujet. Aucun humain photoréaliste dans l'image, aucun écran de logiciel lisible. Bande bleu RapidoCMS #03A9F5 en haut du cadre sur un cinquième de la hauteur, portant UNIQUEMENT le texte « COURSES CHEF » en typographie arrondie très grasse, blanc, centré. Aucun autre texte, aucun logo ajouté, pas de filigrane, pas de bordure décorative.",
-    "higgsfieldPrompt": "Vertical 9:16, 10 secondes, 4K. PAS de texte incrusté, PAS de sous-titres, PAS de filigrane, PAS de logo.\n\nDEUX personnages dans le même plan, et c'est voulu :\n— le chef, PHOTORÉALISTE, joue le rôle : chef. Veste blanche, tablier, il est chez lui dans son restaurant ;\n— L'Oignon, personnage 3D stylisé de la Brigade Végé-Fruitée, incrusté dans le même décor à côté de lui, à hauteur de comptoir. Il ne parle pas : il fait le geste de son métier — il ouvre les livres : ventes, stock, réservations.\n\nLe mélange photo + 3D est assumé, comme un dessin animé posé dans une prise de vue réelle. Les ombres et la lumière du personnage 3D suivent celles du décor.\n\nDécor : la cuisine et les réserves avant l'ouverture, inox nu, cagettes. lumière crue du matin.\nAction : Le marché à six heures, ce qu'on prend, ce qu'on refuse et pourquoi. À 5 secondes, le geste bascule et le personnage 3D réagit.\nDeux dernières secondes : les deux regardent l'objectif, immobiles.\n\nAudio : ambiance réelle du restaurant, aucun dialogue, pas de musique.",
-    "scriptHeygen": "Le marché à six heures, ce qu'on prend, ce qu'on refuse et pourquoi. Ce qu'on refuse compte autant.",
+    "higgsfieldPrompt": "Vertical 9:16, 10 secondes, 4K. PAS de texte incrusté, PAS de sous-titres, PAS de filigrane, PAS de logo dans l'image.\n\nIDENTITÉ VISUELLE : RapidoCMS. Bleu #03A9F5 présent dans le décor — un écran, une lumière, un objet — sans jamais former de logo. Tons clairs, blancs, gris #383838. Pas de crème, pas d'orange.\n\nDEUX personnages dans le même plan :\n— L'Oignon, personnage 3D stylisé de la Brigade Végé-Fruitée, EN VEDETTE, au premier plan, deux tiers du cadre. C'est lui qui agit : il ouvre les livres : ventes, stock, réservations ;\n— le chef, PHOTORÉALISTE, veste blanche et tablier, en retrait dans son restaurant. Il regarde faire, il ne fait pas.\n\nLe mélange photo + 3D est assumé, comme un dessin animé posé dans une prise de vue réelle. Les ombres du personnage 3D suivent celles du décor.\n\nDécor : la cuisine et les réserves avant l'ouverture, inox nu, cagettes. lumière crue du matin.\nAction : Le marché à six heures, ce qu'on prend, ce qu'on refuse et pourquoi.\nÀ 5 secondes, le geste aboutit et le chef réagit — surpris, puis convaincu.\nDeux dernières secondes : les deux regardent l'objectif côte à côte, immobiles.\n\nAudio : ambiance réelle du restaurant, un bip d'interface discret à 5 secondes, aucun dialogue, pas de musique.",
+    "scriptHeygen": "Moi c'est L'Oignon. Pour cet épisode, il ouvre les livres : ventes, stock, réservations — vous me le demandez en une phrase. Vos photos, notre gabarit : la vidéo part sur vos cinq réseaux le soir même.",
     "kit": [
       {
         "etape": 1,
-        "titre": "Le plan comique",
-        "outil": "Higgsfield",
+        "titre": "Vos images",
+        "outil": "Chez vous",
+        "cote": "restaurant",
         "guide": "oignon",
-        "consigne": "Remplace ce qui est entre crochets par ce qui est chez toi, colle le tout dans Higgsfield, et lance. Dix secondes plus tard tu as ton plan.",
-        "lien": "https://higgsfield.ai/",
-        "prompt": "Vertical 9:16, 10 secondes, 4K. PAS de texte incrusté, PAS de sous-titres, PAS de filigrane, PAS de logo.\n\nDEUX personnages dans le même plan, et c'est voulu :\n— le chef, PHOTORÉALISTE, joue le rôle : chef. Veste blanche, tablier, il est chez lui dans [TON RESTAURANT] ;\n— L'Oignon, personnage 3D stylisé de la Brigade Végé-Fruitée, incrusté dans le même décor à côté de lui, à hauteur de comptoir. Il ne parle pas : il fait le geste de son métier — il ouvre les livres : ventes, stock, réservations.\n\nLe mélange photo + 3D est assumé, comme un dessin animé posé dans une prise de vue réelle. Les ombres et la lumière du personnage 3D suivent celles du décor.\n\nDécor : la cuisine et les réserves avant l'ouverture, inox nu, cagettes. lumière crue du matin.\nAction : chez [TON RESTAURANT], Le marché à six heures, ce qu'on prend, ce qu'on refuse et pourquoi. À 5 secondes, le geste bascule et le personnage 3D réagit.\nDeux dernières secondes : les deux regardent l'objectif, immobiles.\n\nAudio : ambiance réelle du restaurant, aucun dialogue, pas de musique.\n\nÉléments à remplacer : [TON RESTAURANT], [TON PLAT], [TON PRÉNOM]."
+        "consigne": "Commencez par ce que vous avez déjà : dix secondes de votre plat, de votre salle, de votre équipe. Filmé au téléphone, à la verticale. Si vous n'avez rien, l'étape suivante fabrique l'image à votre place.",
+        "lien": "https://site.foodeatup.com/",
+        "prompt": "Ce que je fournis pour l'épisode [TON NUMÉRO] :\n\n— une vidéo verticale de 10 s de [TON PLAT], filmée au téléphone\n— une photo de [TON RESTAURANT] : la salle, la devanture ou le pass\n— mon logo, si j'en ai un\n\nCe que je n'ai pas et que vous complétez avec vos gabarits : [CE QUI ME MANQUE]."
       },
       {
         "etape": 2,
-        "titre": "Le montage",
-        "outil": "Claude Code",
-        "guide": "tomate",
-        "consigne": "Dépose ton plan et ton avatar dans le dépôt, puis écris cette phrase à Claude Code. Tu n'ouvres aucun logiciel de montage.",
-        "lien": "https://claude.com/claude-code",
-        "prompt": "Monte l'épisode [TON NUMÉRO] de ma série.\n\n— Plan comique : assets/hooks/[TON NUMÉRO].mp4\n— Avatar : assets/avatar/[TON NUMÉRO].mp4\n— Écran du logiciel : assets/software/[TON NUMÉRO].mp4\n— Accroche à incruster : « Six heures, au marché. »\n— Punchline en voix off à 5,0 s : « Ce qu'on refuse compte autant. »\n\nAnatomie : A 0→9,5 · sting 9,5→18,5 · avatar seul 18,5→28,5 · signature 28,5→32,5 · sting de marque 32,5→37,5.\nContrôle le master avant de me le rendre : 37,5 s, 1080×1920, -14 LUFS, crête sous -1 dBTP."
+        "titre": "Le plan d'ouverture",
+        "outil": "Higgsfield",
+        "cote": "restaurant",
+        "guide": "oignon",
+        "consigne": "Si vous n'avez pas d'images, ce prompt les fabrique. Remplacez ce qui est entre crochets, collez dans Higgsfield, lancez. Dix secondes plus tard, vous avez votre plan.",
+        "lien": "https://higgsfield.ai/",
+        "prompt": "Vertical 9:16, 10 secondes, 4K. PAS de texte incrusté, PAS de sous-titres, PAS de filigrane, PAS de logo dans l'image.\n\nIDENTITÉ VISUELLE : RapidoCMS. Bleu #03A9F5 présent dans le décor — un écran, une lumière, un objet — sans jamais former de logo. Tons clairs, blancs, gris #383838. Pas de crème, pas d'orange.\n\nDEUX personnages dans le même plan :\n— L'Oignon, personnage 3D stylisé de la Brigade Végé-Fruitée, EN VEDETTE, au premier plan, deux tiers du cadre. C'est lui qui agit : il ouvre les livres : ventes, stock, réservations ;\n— le chef, PHOTORÉALISTE, veste blanche et tablier, en retrait dans [TON RESTAURANT]. Il regarde faire, il ne fait pas.\n\nLe mélange photo + 3D est assumé, comme un dessin animé posé dans une prise de vue réelle. Les ombres du personnage 3D suivent celles du décor.\n\nDécor : la cuisine et les réserves avant l'ouverture, inox nu, cagettes. lumière crue du matin.\nAction : chez [TON RESTAURANT], Le marché à six heures, ce qu'on prend, ce qu'on refuse et pourquoi.\nÀ 5 secondes, le geste aboutit et le chef réagit — surpris, puis convaincu.\nDeux dernières secondes : les deux regardent l'objectif côte à côte, immobiles.\n\nAudio : ambiance réelle du restaurant, un bip d'interface discret à 5 secondes, aucun dialogue, pas de musique.\n\nÀ remplacer : [TON RESTAURANT], [TON PLAT], [TON PRÉNOM]."
       },
       {
         "etape": 3,
+        "titre": "Le montage",
+        "outil": "Claude Code",
+        "cote": "rapidocms",
+        "guide": "tomate",
+        "consigne": "Le hook, la signature de fin et les logos sont ceux de RapidoCMS — vous ne les fournissez pas, ils sont dans le gabarit. Vos images occupent le centre. Vous n'ouvrez aucun logiciel de montage.",
+        "lien": "https://claude.com/claude-code",
+        "prompt": "Monte l'épisode [TON NUMÉRO] de ma série, gabarit RapidoCMS.\n\n— Plan d'ouverture : assets/hooks/[TON NUMÉRO].mp4\n— Personnage qui explique : assets/avatar/[TON NUMÉRO].mp4 (L'Oignon, avatar HeyGen)\n— Mes images de restaurant : assets/software/[TON NUMÉRO].mp4\n— Accroche à incruster : « Six heures, au marché. »\n— Punchline en voix off à 5,0 s : « Ce qu'on refuse compte autant. »\n\nHabillage : hook, signature de fin et logos en charte RapidoCMS — bleu #03A9F5, gris #383838, fond blanc. Pas de crème, pas d'orange.\nAnatomie : A 0→9,5 · sting RapidoCMS 9,5→18,5 · le personnage seul 18,5→28,5 · signature RapidoCMS 28,5→32,5 · sting de marque 32,5→37,5.\nContrôle avant de me le rendre : 37,5 s, 1080×1920, -14 LUFS, crête sous -1 dBTP."
+      },
+      {
+        "etape": 4,
         "titre": "La publication",
         "outil": "RapidoCMS",
+        "cote": "rapidocms",
         "guide": "betterave",
-        "consigne": "Une phrase, et les cinq réseaux sont programmés. Tu ne téléverses rien nulle part.",
+        "consigne": "Une phrase, et les cinq réseaux sont programmés. Le master part d'abord dans votre bibliothèque, puis en ligne. Vous ne téléversez rien nulle part.",
         "lien": "https://cms.rapidosoftware.com/register",
-        "prompt": "Verse le master dans ma bibliothèque RapidoCMS, puis programme les cinq réseaux de [TON RESTAURANT] :\n\n— LinkedIn à 8 h, Facebook à 12 h, YouTube à 10 h, Instagram à 18 h 30, TikTok à 19 h\n— Légende : « Six heures, au marché. Ce qu'on refuse compte autant. » puis le corps, puis « [TON APPEL À L'ACTION] : [TON SITE] »\n— Mots-dièse : #restaurant #[TA VILLE] #[TA SPÉCIALITÉ]\n\nRends-moi le lien de chaque publication."
+        "prompt": "Verse le master dans ma bibliothèque RapidoCMS, puis programme les cinq réseaux de [TON RESTAURANT] :\n\n— LinkedIn à 8 h, YouTube à 10 h, Facebook à 12 h, Instagram à 18 h 30, TikTok à 19 h\n— Légende : « Six heures, au marché. Ce qu'on refuse compte autant. » puis le corps, puis « [TON APPEL À L'ACTION] : [TON SITE] »\n— Mots-dièse : #restaurant #[TA VILLE] #[TA SPÉCIALITÉ]\n\nRends-moi le lien de chaque publication."
       }
     ],
     "tutoriel": null
@@ -20825,35 +21061,48 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       }
     },
     "promptVignette": "Illustration 3D, cadrage vertical 9:16, même style que l'image de référence jointe. Le personnage de l'image de référence — La Fraise — gardé À L'IDENTIQUE : mêmes proportions, mêmes couleurs, même tenue, même accessoire. Ne le redessine pas, ne change pas son visage. Il est LA VEDETTE de l'image et occupe les deux tiers du cadre, en premier plan, tourné vers l'objectif. Ce qu'il fait ici : elle écrit le plan et le fait rendre en dix secondes. Scène : l'avis qu'on affiche. On lit tout. Même celui-là. Décor derrière lui : une table en salle vue à hauteur de convive, verres et nappe. lumière douce de fin de repas. Le décor reste flou et discret — c'est un fond, pas un sujet. Aucun humain photoréaliste dans l'image, aucun écran de logiciel lisible. Bande bleu RapidoCMS #03A9F5 en haut du cadre sur un cinquième de la hauteur, portant UNIQUEMENT le texte « L'AVIS QU'ON AFFICHE » en typographie arrondie très grasse, blanc, centré. Aucun autre texte, aucun logo ajouté, pas de filigrane, pas de bordure décorative.",
-    "higgsfieldPrompt": "Vertical 9:16, 10 secondes, 4K. PAS de texte incrusté, PAS de sous-titres, PAS de filigrane, PAS de logo.\n\nDEUX personnages dans le même plan, et c'est voulu :\n— le chef, PHOTORÉALISTE, joue le rôle : directeur. Veste blanche, tablier, il est chez lui dans son restaurant ;\n— La Fraise, personnage 3D stylisé de la Brigade Végé-Fruitée, incrusté dans le même décor à côté de lui, à hauteur de comptoir. Il ne parle pas : il fait le geste de son métier — elle écrit le plan et le fait rendre en dix secondes.\n\nLe mélange photo + 3D est assumé, comme un dessin animé posé dans une prise de vue réelle. Les ombres et la lumière du personnage 3D suivent celles du décor.\n\nDécor : une table en salle vue à hauteur de convive, verres et nappe. lumière douce de fin de repas.\nAction : Un vrai avis client lu à voix haute, y compris le reproche. À 5 secondes, le geste bascule et le personnage 3D réagit.\nDeux dernières secondes : les deux regardent l'objectif, immobiles.\n\nAudio : ambiance réelle du restaurant, aucun dialogue, pas de musique.",
-    "scriptHeygen": "Un vrai avis client lu à voix haute, y compris le reproche. Et voilà ce qu'on a changé.",
+    "higgsfieldPrompt": "Vertical 9:16, 10 secondes, 4K. PAS de texte incrusté, PAS de sous-titres, PAS de filigrane, PAS de logo dans l'image.\n\nIDENTITÉ VISUELLE : RapidoCMS. Bleu #03A9F5 présent dans le décor — un écran, une lumière, un objet — sans jamais former de logo. Tons clairs, blancs, gris #383838. Pas de crème, pas d'orange.\n\nDEUX personnages dans le même plan :\n— La Fraise, personnage 3D stylisé de la Brigade Végé-Fruitée, EN VEDETTE, au premier plan, deux tiers du cadre. C'est lui qui agit : elle écrit le plan et le fait rendre en dix secondes ;\n— le chef, PHOTORÉALISTE, veste blanche et tablier, en retrait dans son restaurant. Il regarde faire, il ne fait pas.\n\nLe mélange photo + 3D est assumé, comme un dessin animé posé dans une prise de vue réelle. Les ombres du personnage 3D suivent celles du décor.\n\nDécor : une table en salle vue à hauteur de convive, verres et nappe. lumière douce de fin de repas.\nAction : Un vrai avis client lu à voix haute, y compris le reproche.\nÀ 5 secondes, le geste aboutit et le chef réagit — surpris, puis convaincu.\nDeux dernières secondes : les deux regardent l'objectif côte à côte, immobiles.\n\nAudio : ambiance réelle du restaurant, un bip d'interface discret à 5 secondes, aucun dialogue, pas de musique.",
+    "scriptHeygen": "Moi c'est La Fraise. Pour cet épisode, elle écrit le plan et le fait rendre en dix secondes — vous me le demandez en une phrase. Vos photos, notre gabarit : la vidéo part sur vos cinq réseaux le soir même.",
     "kit": [
       {
         "etape": 1,
-        "titre": "Le plan comique",
-        "outil": "Higgsfield",
+        "titre": "Vos images",
+        "outil": "Chez vous",
+        "cote": "restaurant",
         "guide": "fraise",
-        "consigne": "Remplace ce qui est entre crochets par ce qui est chez toi, colle le tout dans Higgsfield, et lance. Dix secondes plus tard tu as ton plan.",
-        "lien": "https://higgsfield.ai/",
-        "prompt": "Vertical 9:16, 10 secondes, 4K. PAS de texte incrusté, PAS de sous-titres, PAS de filigrane, PAS de logo.\n\nDEUX personnages dans le même plan, et c'est voulu :\n— le chef, PHOTORÉALISTE, joue le rôle : directeur. Veste blanche, tablier, il est chez lui dans [TON RESTAURANT] ;\n— La Fraise, personnage 3D stylisé de la Brigade Végé-Fruitée, incrusté dans le même décor à côté de lui, à hauteur de comptoir. Il ne parle pas : il fait le geste de son métier — elle écrit le plan et le fait rendre en dix secondes.\n\nLe mélange photo + 3D est assumé, comme un dessin animé posé dans une prise de vue réelle. Les ombres et la lumière du personnage 3D suivent celles du décor.\n\nDécor : une table en salle vue à hauteur de convive, verres et nappe. lumière douce de fin de repas.\nAction : chez [TON RESTAURANT], Un vrai avis client lu à voix haute, y compris le reproche. À 5 secondes, le geste bascule et le personnage 3D réagit.\nDeux dernières secondes : les deux regardent l'objectif, immobiles.\n\nAudio : ambiance réelle du restaurant, aucun dialogue, pas de musique.\n\nÉléments à remplacer : [TON RESTAURANT], [TON PLAT], [TON PRÉNOM]."
+        "consigne": "Commencez par ce que vous avez déjà : dix secondes de votre plat, de votre salle, de votre équipe. Filmé au téléphone, à la verticale. Si vous n'avez rien, l'étape suivante fabrique l'image à votre place.",
+        "lien": "https://site.foodeatup.com/",
+        "prompt": "Ce que je fournis pour l'épisode [TON NUMÉRO] :\n\n— une vidéo verticale de 10 s de [TON PLAT], filmée au téléphone\n— une photo de [TON RESTAURANT] : la salle, la devanture ou le pass\n— mon logo, si j'en ai un\n\nCe que je n'ai pas et que vous complétez avec vos gabarits : [CE QUI ME MANQUE]."
       },
       {
         "etape": 2,
-        "titre": "Le montage",
-        "outil": "Claude Code",
-        "guide": "tomate",
-        "consigne": "Dépose ton plan et ton avatar dans le dépôt, puis écris cette phrase à Claude Code. Tu n'ouvres aucun logiciel de montage.",
-        "lien": "https://claude.com/claude-code",
-        "prompt": "Monte l'épisode [TON NUMÉRO] de ma série.\n\n— Plan comique : assets/hooks/[TON NUMÉRO].mp4\n— Avatar : assets/avatar/[TON NUMÉRO].mp4\n— Écran du logiciel : assets/software/[TON NUMÉRO].mp4\n— Accroche à incruster : « On lit tout. Même celui-là. »\n— Punchline en voix off à 5,0 s : « Et voilà ce qu'on a changé. »\n\nAnatomie : A 0→9,5 · sting 9,5→18,5 · avatar seul 18,5→28,5 · signature 28,5→32,5 · sting de marque 32,5→37,5.\nContrôle le master avant de me le rendre : 37,5 s, 1080×1920, -14 LUFS, crête sous -1 dBTP."
+        "titre": "Le plan d'ouverture",
+        "outil": "Higgsfield",
+        "cote": "restaurant",
+        "guide": "fraise",
+        "consigne": "Si vous n'avez pas d'images, ce prompt les fabrique. Remplacez ce qui est entre crochets, collez dans Higgsfield, lancez. Dix secondes plus tard, vous avez votre plan.",
+        "lien": "https://higgsfield.ai/",
+        "prompt": "Vertical 9:16, 10 secondes, 4K. PAS de texte incrusté, PAS de sous-titres, PAS de filigrane, PAS de logo dans l'image.\n\nIDENTITÉ VISUELLE : RapidoCMS. Bleu #03A9F5 présent dans le décor — un écran, une lumière, un objet — sans jamais former de logo. Tons clairs, blancs, gris #383838. Pas de crème, pas d'orange.\n\nDEUX personnages dans le même plan :\n— La Fraise, personnage 3D stylisé de la Brigade Végé-Fruitée, EN VEDETTE, au premier plan, deux tiers du cadre. C'est lui qui agit : elle écrit le plan et le fait rendre en dix secondes ;\n— le chef, PHOTORÉALISTE, veste blanche et tablier, en retrait dans [TON RESTAURANT]. Il regarde faire, il ne fait pas.\n\nLe mélange photo + 3D est assumé, comme un dessin animé posé dans une prise de vue réelle. Les ombres du personnage 3D suivent celles du décor.\n\nDécor : une table en salle vue à hauteur de convive, verres et nappe. lumière douce de fin de repas.\nAction : chez [TON RESTAURANT], Un vrai avis client lu à voix haute, y compris le reproche.\nÀ 5 secondes, le geste aboutit et le chef réagit — surpris, puis convaincu.\nDeux dernières secondes : les deux regardent l'objectif côte à côte, immobiles.\n\nAudio : ambiance réelle du restaurant, un bip d'interface discret à 5 secondes, aucun dialogue, pas de musique.\n\nÀ remplacer : [TON RESTAURANT], [TON PLAT], [TON PRÉNOM]."
       },
       {
         "etape": 3,
+        "titre": "Le montage",
+        "outil": "Claude Code",
+        "cote": "rapidocms",
+        "guide": "tomate",
+        "consigne": "Le hook, la signature de fin et les logos sont ceux de RapidoCMS — vous ne les fournissez pas, ils sont dans le gabarit. Vos images occupent le centre. Vous n'ouvrez aucun logiciel de montage.",
+        "lien": "https://claude.com/claude-code",
+        "prompt": "Monte l'épisode [TON NUMÉRO] de ma série, gabarit RapidoCMS.\n\n— Plan d'ouverture : assets/hooks/[TON NUMÉRO].mp4\n— Personnage qui explique : assets/avatar/[TON NUMÉRO].mp4 (La Fraise, avatar HeyGen)\n— Mes images de restaurant : assets/software/[TON NUMÉRO].mp4\n— Accroche à incruster : « On lit tout. Même celui-là. »\n— Punchline en voix off à 5,0 s : « Et voilà ce qu'on a changé. »\n\nHabillage : hook, signature de fin et logos en charte RapidoCMS — bleu #03A9F5, gris #383838, fond blanc. Pas de crème, pas d'orange.\nAnatomie : A 0→9,5 · sting RapidoCMS 9,5→18,5 · le personnage seul 18,5→28,5 · signature RapidoCMS 28,5→32,5 · sting de marque 32,5→37,5.\nContrôle avant de me le rendre : 37,5 s, 1080×1920, -14 LUFS, crête sous -1 dBTP."
+      },
+      {
+        "etape": 4,
         "titre": "La publication",
         "outil": "RapidoCMS",
+        "cote": "rapidocms",
         "guide": "betterave",
-        "consigne": "Une phrase, et les cinq réseaux sont programmés. Tu ne téléverses rien nulle part.",
+        "consigne": "Une phrase, et les cinq réseaux sont programmés. Le master part d'abord dans votre bibliothèque, puis en ligne. Vous ne téléversez rien nulle part.",
         "lien": "https://cms.rapidosoftware.com/register",
-        "prompt": "Verse le master dans ma bibliothèque RapidoCMS, puis programme les cinq réseaux de [TON RESTAURANT] :\n\n— LinkedIn à 8 h, Facebook à 12 h, YouTube à 10 h, Instagram à 18 h 30, TikTok à 19 h\n— Légende : « On lit tout. Même celui-là. Et voilà ce qu'on a changé. » puis le corps, puis « [TON APPEL À L'ACTION] : [TON SITE] »\n— Mots-dièse : #restaurant #[TA VILLE] #[TA SPÉCIALITÉ]\n\nRends-moi le lien de chaque publication."
+        "prompt": "Verse le master dans ma bibliothèque RapidoCMS, puis programme les cinq réseaux de [TON RESTAURANT] :\n\n— LinkedIn à 8 h, YouTube à 10 h, Facebook à 12 h, Instagram à 18 h 30, TikTok à 19 h\n— Légende : « On lit tout. Même celui-là. Et voilà ce qu'on a changé. » puis le corps, puis « [TON APPEL À L'ACTION] : [TON SITE] »\n— Mots-dièse : #restaurant #[TA VILLE] #[TA SPÉCIALITÉ]\n\nRends-moi le lien de chaque publication."
       }
     ],
     "tutoriel": null
@@ -20973,35 +21222,48 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       }
     },
     "promptVignette": "Illustration 3D, cadrage vertical 9:16, même style que l'image de référence jointe. Le personnage de l'image de référence — Don Citrone — gardé À L'IDENTIQUE : mêmes proportions, mêmes couleurs, même tenue, même accessoire. Ne le redessine pas, ne change pas son visage. Il est LA VEDETTE de l'image et occupe les deux tiers du cadre, en premier plan, tourné vers l'objectif. Ce qu'il fait ici : il relie ce qui est publié à ce qui arrive en salle. Scène : le client du mardi. Même table depuis six ans. Décor derrière lui : une table en salle vue à hauteur de convive, verres et nappe. lumière douce de fin de repas. Le décor reste flou et discret — c'est un fond, pas un sujet. Aucun humain photoréaliste dans l'image, aucun écran de logiciel lisible. Bande bleu RapidoCMS #03A9F5 en haut du cadre sur un cinquième de la hauteur, portant UNIQUEMENT le texte « CLIENT MARDI » en typographie arrondie très grasse, blanc, centré. Aucun autre texte, aucun logo ajouté, pas de filigrane, pas de bordure décorative.",
-    "higgsfieldPrompt": "Vertical 9:16, 10 secondes, 4K. PAS de texte incrusté, PAS de sous-titres, PAS de filigrane, PAS de logo.\n\nDEUX personnages dans le même plan, et c'est voulu :\n— le chef, PHOTORÉALISTE, joue le rôle : serveur. Veste blanche, tablier, il est chez lui dans son restaurant ;\n— Don Citrone, personnage 3D stylisé de la Brigade Végé-Fruitée, incrusté dans le même décor à côté de lui, à hauteur de comptoir. Il ne parle pas : il fait le geste de son métier — il relie ce qui est publié à ce qui arrive en salle.\n\nLe mélange photo + 3D est assumé, comme un dessin animé posé dans une prise de vue réelle. Les ombres et la lumière du personnage 3D suivent celles du décor.\n\nDécor : une table en salle vue à hauteur de convive, verres et nappe. lumière douce de fin de repas.\nAction : Celui qui vient depuis six ans, toujours la même table. À 5 secondes, le geste bascule et le personnage 3D réagit.\nDeux dernières secondes : les deux regardent l'objectif, immobiles.\n\nAudio : ambiance réelle du restaurant, aucun dialogue, pas de musique.",
-    "scriptHeygen": "Celui qui vient depuis six ans, toujours la même table. On sait déjà ce qu'il va prendre.",
+    "higgsfieldPrompt": "Vertical 9:16, 10 secondes, 4K. PAS de texte incrusté, PAS de sous-titres, PAS de filigrane, PAS de logo dans l'image.\n\nIDENTITÉ VISUELLE : RapidoCMS. Bleu #03A9F5 présent dans le décor — un écran, une lumière, un objet — sans jamais former de logo. Tons clairs, blancs, gris #383838. Pas de crème, pas d'orange.\n\nDEUX personnages dans le même plan :\n— Don Citrone, personnage 3D stylisé de la Brigade Végé-Fruitée, EN VEDETTE, au premier plan, deux tiers du cadre. C'est lui qui agit : il relie ce qui est publié à ce qui arrive en salle ;\n— le chef, PHOTORÉALISTE, veste blanche et tablier, en retrait dans son restaurant. Il regarde faire, il ne fait pas.\n\nLe mélange photo + 3D est assumé, comme un dessin animé posé dans une prise de vue réelle. Les ombres du personnage 3D suivent celles du décor.\n\nDécor : une table en salle vue à hauteur de convive, verres et nappe. lumière douce de fin de repas.\nAction : Celui qui vient depuis six ans, toujours la même table.\nÀ 5 secondes, le geste aboutit et le chef réagit — surpris, puis convaincu.\nDeux dernières secondes : les deux regardent l'objectif côte à côte, immobiles.\n\nAudio : ambiance réelle du restaurant, un bip d'interface discret à 5 secondes, aucun dialogue, pas de musique.",
+    "scriptHeygen": "Moi c'est Don Citrone. Pour cet épisode, il relie ce qui est publié à ce qui arrive en salle — vous me le demandez en une phrase. Vos photos, notre gabarit : la vidéo part sur vos cinq réseaux le soir même.",
     "kit": [
       {
         "etape": 1,
-        "titre": "Le plan comique",
-        "outil": "Higgsfield",
+        "titre": "Vos images",
+        "outil": "Chez vous",
+        "cote": "restaurant",
         "guide": "citron",
-        "consigne": "Remplace ce qui est entre crochets par ce qui est chez toi, colle le tout dans Higgsfield, et lance. Dix secondes plus tard tu as ton plan.",
-        "lien": "https://higgsfield.ai/",
-        "prompt": "Vertical 9:16, 10 secondes, 4K. PAS de texte incrusté, PAS de sous-titres, PAS de filigrane, PAS de logo.\n\nDEUX personnages dans le même plan, et c'est voulu :\n— le chef, PHOTORÉALISTE, joue le rôle : serveur. Veste blanche, tablier, il est chez lui dans [TON RESTAURANT] ;\n— Don Citrone, personnage 3D stylisé de la Brigade Végé-Fruitée, incrusté dans le même décor à côté de lui, à hauteur de comptoir. Il ne parle pas : il fait le geste de son métier — il relie ce qui est publié à ce qui arrive en salle.\n\nLe mélange photo + 3D est assumé, comme un dessin animé posé dans une prise de vue réelle. Les ombres et la lumière du personnage 3D suivent celles du décor.\n\nDécor : une table en salle vue à hauteur de convive, verres et nappe. lumière douce de fin de repas.\nAction : chez [TON RESTAURANT], Celui qui vient depuis six ans, toujours la même table. À 5 secondes, le geste bascule et le personnage 3D réagit.\nDeux dernières secondes : les deux regardent l'objectif, immobiles.\n\nAudio : ambiance réelle du restaurant, aucun dialogue, pas de musique.\n\nÉléments à remplacer : [TON RESTAURANT], [TON PLAT], [TON PRÉNOM]."
+        "consigne": "Commencez par ce que vous avez déjà : dix secondes de votre plat, de votre salle, de votre équipe. Filmé au téléphone, à la verticale. Si vous n'avez rien, l'étape suivante fabrique l'image à votre place.",
+        "lien": "https://site.foodeatup.com/",
+        "prompt": "Ce que je fournis pour l'épisode [TON NUMÉRO] :\n\n— une vidéo verticale de 10 s de [TON PLAT], filmée au téléphone\n— une photo de [TON RESTAURANT] : la salle, la devanture ou le pass\n— mon logo, si j'en ai un\n\nCe que je n'ai pas et que vous complétez avec vos gabarits : [CE QUI ME MANQUE]."
       },
       {
         "etape": 2,
-        "titre": "Le montage",
-        "outil": "Claude Code",
-        "guide": "tomate",
-        "consigne": "Dépose ton plan et ton avatar dans le dépôt, puis écris cette phrase à Claude Code. Tu n'ouvres aucun logiciel de montage.",
-        "lien": "https://claude.com/claude-code",
-        "prompt": "Monte l'épisode [TON NUMÉRO] de ma série.\n\n— Plan comique : assets/hooks/[TON NUMÉRO].mp4\n— Avatar : assets/avatar/[TON NUMÉRO].mp4\n— Écran du logiciel : assets/software/[TON NUMÉRO].mp4\n— Accroche à incruster : « Même table depuis six ans. »\n— Punchline en voix off à 5,0 s : « On sait déjà ce qu'il va prendre. »\n\nAnatomie : A 0→9,5 · sting 9,5→18,5 · avatar seul 18,5→28,5 · signature 28,5→32,5 · sting de marque 32,5→37,5.\nContrôle le master avant de me le rendre : 37,5 s, 1080×1920, -14 LUFS, crête sous -1 dBTP."
+        "titre": "Le plan d'ouverture",
+        "outil": "Higgsfield",
+        "cote": "restaurant",
+        "guide": "citron",
+        "consigne": "Si vous n'avez pas d'images, ce prompt les fabrique. Remplacez ce qui est entre crochets, collez dans Higgsfield, lancez. Dix secondes plus tard, vous avez votre plan.",
+        "lien": "https://higgsfield.ai/",
+        "prompt": "Vertical 9:16, 10 secondes, 4K. PAS de texte incrusté, PAS de sous-titres, PAS de filigrane, PAS de logo dans l'image.\n\nIDENTITÉ VISUELLE : RapidoCMS. Bleu #03A9F5 présent dans le décor — un écran, une lumière, un objet — sans jamais former de logo. Tons clairs, blancs, gris #383838. Pas de crème, pas d'orange.\n\nDEUX personnages dans le même plan :\n— Don Citrone, personnage 3D stylisé de la Brigade Végé-Fruitée, EN VEDETTE, au premier plan, deux tiers du cadre. C'est lui qui agit : il relie ce qui est publié à ce qui arrive en salle ;\n— le chef, PHOTORÉALISTE, veste blanche et tablier, en retrait dans [TON RESTAURANT]. Il regarde faire, il ne fait pas.\n\nLe mélange photo + 3D est assumé, comme un dessin animé posé dans une prise de vue réelle. Les ombres du personnage 3D suivent celles du décor.\n\nDécor : une table en salle vue à hauteur de convive, verres et nappe. lumière douce de fin de repas.\nAction : chez [TON RESTAURANT], Celui qui vient depuis six ans, toujours la même table.\nÀ 5 secondes, le geste aboutit et le chef réagit — surpris, puis convaincu.\nDeux dernières secondes : les deux regardent l'objectif côte à côte, immobiles.\n\nAudio : ambiance réelle du restaurant, un bip d'interface discret à 5 secondes, aucun dialogue, pas de musique.\n\nÀ remplacer : [TON RESTAURANT], [TON PLAT], [TON PRÉNOM]."
       },
       {
         "etape": 3,
+        "titre": "Le montage",
+        "outil": "Claude Code",
+        "cote": "rapidocms",
+        "guide": "tomate",
+        "consigne": "Le hook, la signature de fin et les logos sont ceux de RapidoCMS — vous ne les fournissez pas, ils sont dans le gabarit. Vos images occupent le centre. Vous n'ouvrez aucun logiciel de montage.",
+        "lien": "https://claude.com/claude-code",
+        "prompt": "Monte l'épisode [TON NUMÉRO] de ma série, gabarit RapidoCMS.\n\n— Plan d'ouverture : assets/hooks/[TON NUMÉRO].mp4\n— Personnage qui explique : assets/avatar/[TON NUMÉRO].mp4 (Don Citrone, avatar HeyGen)\n— Mes images de restaurant : assets/software/[TON NUMÉRO].mp4\n— Accroche à incruster : « Même table depuis six ans. »\n— Punchline en voix off à 5,0 s : « On sait déjà ce qu'il va prendre. »\n\nHabillage : hook, signature de fin et logos en charte RapidoCMS — bleu #03A9F5, gris #383838, fond blanc. Pas de crème, pas d'orange.\nAnatomie : A 0→9,5 · sting RapidoCMS 9,5→18,5 · le personnage seul 18,5→28,5 · signature RapidoCMS 28,5→32,5 · sting de marque 32,5→37,5.\nContrôle avant de me le rendre : 37,5 s, 1080×1920, -14 LUFS, crête sous -1 dBTP."
+      },
+      {
+        "etape": 4,
         "titre": "La publication",
         "outil": "RapidoCMS",
+        "cote": "rapidocms",
         "guide": "betterave",
-        "consigne": "Une phrase, et les cinq réseaux sont programmés. Tu ne téléverses rien nulle part.",
+        "consigne": "Une phrase, et les cinq réseaux sont programmés. Le master part d'abord dans votre bibliothèque, puis en ligne. Vous ne téléversez rien nulle part.",
         "lien": "https://cms.rapidosoftware.com/register",
-        "prompt": "Verse le master dans ma bibliothèque RapidoCMS, puis programme les cinq réseaux de [TON RESTAURANT] :\n\n— LinkedIn à 8 h, Facebook à 12 h, YouTube à 10 h, Instagram à 18 h 30, TikTok à 19 h\n— Légende : « Même table depuis six ans. On sait déjà ce qu'il va prendre. » puis le corps, puis « [TON APPEL À L'ACTION] : [TON SITE] »\n— Mots-dièse : #restaurant #[TA VILLE] #[TA SPÉCIALITÉ]\n\nRends-moi le lien de chaque publication."
+        "prompt": "Verse le master dans ma bibliothèque RapidoCMS, puis programme les cinq réseaux de [TON RESTAURANT] :\n\n— LinkedIn à 8 h, YouTube à 10 h, Facebook à 12 h, Instagram à 18 h 30, TikTok à 19 h\n— Légende : « Même table depuis six ans. On sait déjà ce qu'il va prendre. » puis le corps, puis « [TON APPEL À L'ACTION] : [TON SITE] »\n— Mots-dièse : #restaurant #[TA VILLE] #[TA SPÉCIALITÉ]\n\nRends-moi le lien de chaque publication."
       }
     ],
     "tutoriel": null
@@ -21121,35 +21383,48 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       }
     },
     "promptVignette": "Illustration 3D, cadrage vertical 9:16, même style que l'image de référence jointe. Le personnage de l'image de référence — La Pomme de Terre — gardé À L'IDENTIQUE : mêmes proportions, mêmes couleurs, même tenue, même accessoire. Ne le redessine pas, ne change pas son visage. Il est LA VEDETTE de l'image et occupe les deux tiers du cadre, en premier plan, tourné vers l'objectif. Ce qu'il fait ici : elle donne la voix off de la série. Scène : la table de douze. Douze personnes, une addition. Décor derrière lui : une table en salle vue à hauteur de convive, verres et nappe. lumière douce de fin de repas. Le décor reste flou et discret — c'est un fond, pas un sujet. Aucun humain photoréaliste dans l'image, aucun écran de logiciel lisible. Bande bleu RapidoCMS #03A9F5 en haut du cadre sur un cinquième de la hauteur, portant UNIQUEMENT le texte « TABLE DOUZE » en typographie arrondie très grasse, blanc, centré. Aucun autre texte, aucun logo ajouté, pas de filigrane, pas de bordure décorative.",
-    "higgsfieldPrompt": "Vertical 9:16, 10 secondes, 4K. PAS de texte incrusté, PAS de sous-titres, PAS de filigrane, PAS de logo.\n\nDEUX personnages dans le même plan, et c'est voulu :\n— le chef, PHOTORÉALISTE, joue le rôle : serveur. Veste blanche, tablier, il est chez lui dans son restaurant ;\n— La Pomme de Terre, personnage 3D stylisé de la Brigade Végé-Fruitée, incrusté dans le même décor à côté de lui, à hauteur de comptoir. Il ne parle pas : il fait le geste de son métier — elle donne la voix off de la série.\n\nLe mélange photo + 3D est assumé, comme un dessin animé posé dans une prise de vue réelle. Les ombres et la lumière du personnage 3D suivent celles du décor.\n\nDécor : une table en salle vue à hauteur de convive, verres et nappe. lumière douce de fin de repas.\nAction : Une grande tablée servie sans accroc : la mise en place, le service synchronisé, l'addition partagée en douze sans drame. À 5 secondes, le geste bascule et le personnage 3D réagit.\nDeux dernières secondes : les deux regardent l'objectif, immobiles.\n\nAudio : ambiance réelle du restaurant, aucun dialogue, pas de musique.",
-    "scriptHeygen": "Une grande tablée servie sans accroc : la mise en place, le service synchronisé, l'addition partagée en douze sans drame. Ça peut très bien se passer.",
+    "higgsfieldPrompt": "Vertical 9:16, 10 secondes, 4K. PAS de texte incrusté, PAS de sous-titres, PAS de filigrane, PAS de logo dans l'image.\n\nIDENTITÉ VISUELLE : RapidoCMS. Bleu #03A9F5 présent dans le décor — un écran, une lumière, un objet — sans jamais former de logo. Tons clairs, blancs, gris #383838. Pas de crème, pas d'orange.\n\nDEUX personnages dans le même plan :\n— La Pomme de Terre, personnage 3D stylisé de la Brigade Végé-Fruitée, EN VEDETTE, au premier plan, deux tiers du cadre. C'est lui qui agit : elle donne la voix off de la série ;\n— le chef, PHOTORÉALISTE, veste blanche et tablier, en retrait dans son restaurant. Il regarde faire, il ne fait pas.\n\nLe mélange photo + 3D est assumé, comme un dessin animé posé dans une prise de vue réelle. Les ombres du personnage 3D suivent celles du décor.\n\nDécor : une table en salle vue à hauteur de convive, verres et nappe. lumière douce de fin de repas.\nAction : Une grande tablée servie sans accroc : la mise en place, le service synchronisé, l'addition partagée en douze sans drame.\nÀ 5 secondes, le geste aboutit et le chef réagit — surpris, puis convaincu.\nDeux dernières secondes : les deux regardent l'objectif côte à côte, immobiles.\n\nAudio : ambiance réelle du restaurant, un bip d'interface discret à 5 secondes, aucun dialogue, pas de musique.",
+    "scriptHeygen": "Moi c'est La Pomme de Terre. Pour cet épisode, elle donne la voix off de la série — vous me le demandez en une phrase. Vos photos, notre gabarit : la vidéo part sur vos cinq réseaux le soir même.",
     "kit": [
       {
         "etape": 1,
-        "titre": "Le plan comique",
-        "outil": "Higgsfield",
+        "titre": "Vos images",
+        "outil": "Chez vous",
+        "cote": "restaurant",
         "guide": "pomme-de-terre",
-        "consigne": "Remplace ce qui est entre crochets par ce qui est chez toi, colle le tout dans Higgsfield, et lance. Dix secondes plus tard tu as ton plan.",
-        "lien": "https://higgsfield.ai/",
-        "prompt": "Vertical 9:16, 10 secondes, 4K. PAS de texte incrusté, PAS de sous-titres, PAS de filigrane, PAS de logo.\n\nDEUX personnages dans le même plan, et c'est voulu :\n— le chef, PHOTORÉALISTE, joue le rôle : serveur. Veste blanche, tablier, il est chez lui dans [TON RESTAURANT] ;\n— La Pomme de Terre, personnage 3D stylisé de la Brigade Végé-Fruitée, incrusté dans le même décor à côté de lui, à hauteur de comptoir. Il ne parle pas : il fait le geste de son métier — elle donne la voix off de la série.\n\nLe mélange photo + 3D est assumé, comme un dessin animé posé dans une prise de vue réelle. Les ombres et la lumière du personnage 3D suivent celles du décor.\n\nDécor : une table en salle vue à hauteur de convive, verres et nappe. lumière douce de fin de repas.\nAction : chez [TON RESTAURANT], Une grande tablée servie sans accroc : la mise en place, le service synchronisé, l'addition partagée en douze sans drame. À 5 secondes, le geste bascule et le personnage 3D réagit.\nDeux dernières secondes : les deux regardent l'objectif, immobiles.\n\nAudio : ambiance réelle du restaurant, aucun dialogue, pas de musique.\n\nÉléments à remplacer : [TON RESTAURANT], [TON PLAT], [TON PRÉNOM]."
+        "consigne": "Commencez par ce que vous avez déjà : dix secondes de votre plat, de votre salle, de votre équipe. Filmé au téléphone, à la verticale. Si vous n'avez rien, l'étape suivante fabrique l'image à votre place.",
+        "lien": "https://site.foodeatup.com/",
+        "prompt": "Ce que je fournis pour l'épisode [TON NUMÉRO] :\n\n— une vidéo verticale de 10 s de [TON PLAT], filmée au téléphone\n— une photo de [TON RESTAURANT] : la salle, la devanture ou le pass\n— mon logo, si j'en ai un\n\nCe que je n'ai pas et que vous complétez avec vos gabarits : [CE QUI ME MANQUE]."
       },
       {
         "etape": 2,
-        "titre": "Le montage",
-        "outil": "Claude Code",
-        "guide": "tomate",
-        "consigne": "Dépose ton plan et ton avatar dans le dépôt, puis écris cette phrase à Claude Code. Tu n'ouvres aucun logiciel de montage.",
-        "lien": "https://claude.com/claude-code",
-        "prompt": "Monte l'épisode [TON NUMÉRO] de ma série.\n\n— Plan comique : assets/hooks/[TON NUMÉRO].mp4\n— Avatar : assets/avatar/[TON NUMÉRO].mp4\n— Écran du logiciel : assets/software/[TON NUMÉRO].mp4\n— Accroche à incruster : « Douze personnes, une addition. »\n— Punchline en voix off à 5,0 s : « Ça peut très bien se passer. »\n\nAnatomie : A 0→9,5 · sting 9,5→18,5 · avatar seul 18,5→28,5 · signature 28,5→32,5 · sting de marque 32,5→37,5.\nContrôle le master avant de me le rendre : 37,5 s, 1080×1920, -14 LUFS, crête sous -1 dBTP."
+        "titre": "Le plan d'ouverture",
+        "outil": "Higgsfield",
+        "cote": "restaurant",
+        "guide": "pomme-de-terre",
+        "consigne": "Si vous n'avez pas d'images, ce prompt les fabrique. Remplacez ce qui est entre crochets, collez dans Higgsfield, lancez. Dix secondes plus tard, vous avez votre plan.",
+        "lien": "https://higgsfield.ai/",
+        "prompt": "Vertical 9:16, 10 secondes, 4K. PAS de texte incrusté, PAS de sous-titres, PAS de filigrane, PAS de logo dans l'image.\n\nIDENTITÉ VISUELLE : RapidoCMS. Bleu #03A9F5 présent dans le décor — un écran, une lumière, un objet — sans jamais former de logo. Tons clairs, blancs, gris #383838. Pas de crème, pas d'orange.\n\nDEUX personnages dans le même plan :\n— La Pomme de Terre, personnage 3D stylisé de la Brigade Végé-Fruitée, EN VEDETTE, au premier plan, deux tiers du cadre. C'est lui qui agit : elle donne la voix off de la série ;\n— le chef, PHOTORÉALISTE, veste blanche et tablier, en retrait dans [TON RESTAURANT]. Il regarde faire, il ne fait pas.\n\nLe mélange photo + 3D est assumé, comme un dessin animé posé dans une prise de vue réelle. Les ombres du personnage 3D suivent celles du décor.\n\nDécor : une table en salle vue à hauteur de convive, verres et nappe. lumière douce de fin de repas.\nAction : chez [TON RESTAURANT], Une grande tablée servie sans accroc : la mise en place, le service synchronisé, l'addition partagée en douze sans drame.\nÀ 5 secondes, le geste aboutit et le chef réagit — surpris, puis convaincu.\nDeux dernières secondes : les deux regardent l'objectif côte à côte, immobiles.\n\nAudio : ambiance réelle du restaurant, un bip d'interface discret à 5 secondes, aucun dialogue, pas de musique.\n\nÀ remplacer : [TON RESTAURANT], [TON PLAT], [TON PRÉNOM]."
       },
       {
         "etape": 3,
+        "titre": "Le montage",
+        "outil": "Claude Code",
+        "cote": "rapidocms",
+        "guide": "tomate",
+        "consigne": "Le hook, la signature de fin et les logos sont ceux de RapidoCMS — vous ne les fournissez pas, ils sont dans le gabarit. Vos images occupent le centre. Vous n'ouvrez aucun logiciel de montage.",
+        "lien": "https://claude.com/claude-code",
+        "prompt": "Monte l'épisode [TON NUMÉRO] de ma série, gabarit RapidoCMS.\n\n— Plan d'ouverture : assets/hooks/[TON NUMÉRO].mp4\n— Personnage qui explique : assets/avatar/[TON NUMÉRO].mp4 (La Pomme de Terre, avatar HeyGen)\n— Mes images de restaurant : assets/software/[TON NUMÉRO].mp4\n— Accroche à incruster : « Douze personnes, une addition. »\n— Punchline en voix off à 5,0 s : « Ça peut très bien se passer. »\n\nHabillage : hook, signature de fin et logos en charte RapidoCMS — bleu #03A9F5, gris #383838, fond blanc. Pas de crème, pas d'orange.\nAnatomie : A 0→9,5 · sting RapidoCMS 9,5→18,5 · le personnage seul 18,5→28,5 · signature RapidoCMS 28,5→32,5 · sting de marque 32,5→37,5.\nContrôle avant de me le rendre : 37,5 s, 1080×1920, -14 LUFS, crête sous -1 dBTP."
+      },
+      {
+        "etape": 4,
         "titre": "La publication",
         "outil": "RapidoCMS",
+        "cote": "rapidocms",
         "guide": "betterave",
-        "consigne": "Une phrase, et les cinq réseaux sont programmés. Tu ne téléverses rien nulle part.",
+        "consigne": "Une phrase, et les cinq réseaux sont programmés. Le master part d'abord dans votre bibliothèque, puis en ligne. Vous ne téléversez rien nulle part.",
         "lien": "https://cms.rapidosoftware.com/register",
-        "prompt": "Verse le master dans ma bibliothèque RapidoCMS, puis programme les cinq réseaux de [TON RESTAURANT] :\n\n— LinkedIn à 8 h, Facebook à 12 h, YouTube à 10 h, Instagram à 18 h 30, TikTok à 19 h\n— Légende : « Douze personnes, une addition. Ça peut très bien se passer. » puis le corps, puis « [TON APPEL À L'ACTION] : [TON SITE] »\n— Mots-dièse : #restaurant #[TA VILLE] #[TA SPÉCIALITÉ]\n\nRends-moi le lien de chaque publication."
+        "prompt": "Verse le master dans ma bibliothèque RapidoCMS, puis programme les cinq réseaux de [TON RESTAURANT] :\n\n— LinkedIn à 8 h, YouTube à 10 h, Facebook à 12 h, Instagram à 18 h 30, TikTok à 19 h\n— Légende : « Douze personnes, une addition. Ça peut très bien se passer. » puis le corps, puis « [TON APPEL À L'ACTION] : [TON SITE] »\n— Mots-dièse : #restaurant #[TA VILLE] #[TA SPÉCIALITÉ]\n\nRends-moi le lien de chaque publication."
       }
     ],
     "tutoriel": null
@@ -21269,35 +21544,48 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       }
     },
     "promptVignette": "Illustration 3D, cadrage vertical 9:16, même style que l'image de référence jointe. Le personnage de l'image de référence — Le Brocoli — gardé À L'IDENTIQUE : mêmes proportions, mêmes couleurs, même tenue, même accessoire. Ne le redessine pas, ne change pas son visage. Il est LA VEDETTE de l'image et occupe les deux tiers du cadre, en premier plan, tourné vers l'objectif. Ce qu'il fait ici : il tient le calendrier et propose quoi publier, quand. Scène : je commande depuis mon canapé. Je commande depuis mon canapé. Décor derrière lui : une table en salle vue à hauteur de convive, verres et nappe. lumière douce de fin de repas. Le décor reste flou et discret — c'est un fond, pas un sujet. Aucun humain photoréaliste dans l'image, aucun écran de logiciel lisible. Bande bleu RapidoCMS #03A9F5 en haut du cadre sur un cinquième de la hauteur, portant UNIQUEMENT le texte « JE COMMANDE DEPUIS » en typographie arrondie très grasse, blanc, centré. Aucun autre texte, aucun logo ajouté, pas de filigrane, pas de bordure décorative.",
-    "higgsfieldPrompt": "Vertical 9:16, 10 secondes, 4K. PAS de texte incrusté, PAS de sous-titres, PAS de filigrane, PAS de logo.\n\nDEUX personnages dans le même plan, et c'est voulu :\n— le chef, PHOTORÉALISTE, joue le rôle : client. Veste blanche, tablier, il est chez lui dans son restaurant ;\n— Le Brocoli, personnage 3D stylisé de la Brigade Végé-Fruitée, incrusté dans le même décor à côté de lui, à hauteur de comptoir. Il ne parle pas : il fait le geste de son métier — il tient le calendrier et propose quoi publier, quand.\n\nLe mélange photo + 3D est assumé, comme un dessin animé posé dans une prise de vue réelle. Les ombres et la lumière du personnage 3D suivent celles du décor.\n\nDécor : une table en salle vue à hauteur de convive, verres et nappe. lumière douce de fin de repas.\nAction : Le chef passe client : il commande sur le site du restaurant, suit sa commande, et on la voit arriver en cuisine. À 5 secondes, le geste bascule et le personnage 3D réagit.\nDeux dernières secondes : les deux regardent l'objectif, immobiles.\n\nAudio : ambiance réelle du restaurant, aucun dialogue, pas de musique.",
-    "scriptHeygen": "Le chef passe client : il commande sur le site du restaurant, suit sa commande, et on la voit arriver en cuisine. Et je la regarde arriver en cuisine.",
+    "higgsfieldPrompt": "Vertical 9:16, 10 secondes, 4K. PAS de texte incrusté, PAS de sous-titres, PAS de filigrane, PAS de logo dans l'image.\n\nIDENTITÉ VISUELLE : RapidoCMS. Bleu #03A9F5 présent dans le décor — un écran, une lumière, un objet — sans jamais former de logo. Tons clairs, blancs, gris #383838. Pas de crème, pas d'orange.\n\nDEUX personnages dans le même plan :\n— Le Brocoli, personnage 3D stylisé de la Brigade Végé-Fruitée, EN VEDETTE, au premier plan, deux tiers du cadre. C'est lui qui agit : il tient le calendrier et propose quoi publier, quand ;\n— le chef, PHOTORÉALISTE, veste blanche et tablier, en retrait dans son restaurant. Il regarde faire, il ne fait pas.\n\nLe mélange photo + 3D est assumé, comme un dessin animé posé dans une prise de vue réelle. Les ombres du personnage 3D suivent celles du décor.\n\nDécor : une table en salle vue à hauteur de convive, verres et nappe. lumière douce de fin de repas.\nAction : Le chef passe client : il commande sur le site du restaurant, suit sa commande, et on la voit arriver en cuisine.\nÀ 5 secondes, le geste aboutit et le chef réagit — surpris, puis convaincu.\nDeux dernières secondes : les deux regardent l'objectif côte à côte, immobiles.\n\nAudio : ambiance réelle du restaurant, un bip d'interface discret à 5 secondes, aucun dialogue, pas de musique.",
+    "scriptHeygen": "Moi c'est Le Brocoli. Pour cet épisode, il tient le calendrier et propose quoi publier, quand — vous me le demandez en une phrase. Vos photos, notre gabarit : la vidéo part sur vos cinq réseaux le soir même.",
     "kit": [
       {
         "etape": 1,
-        "titre": "Le plan comique",
-        "outil": "Higgsfield",
+        "titre": "Vos images",
+        "outil": "Chez vous",
+        "cote": "restaurant",
         "guide": "brocoli",
-        "consigne": "Remplace ce qui est entre crochets par ce qui est chez toi, colle le tout dans Higgsfield, et lance. Dix secondes plus tard tu as ton plan.",
-        "lien": "https://higgsfield.ai/",
-        "prompt": "Vertical 9:16, 10 secondes, 4K. PAS de texte incrusté, PAS de sous-titres, PAS de filigrane, PAS de logo.\n\nDEUX personnages dans le même plan, et c'est voulu :\n— le chef, PHOTORÉALISTE, joue le rôle : client. Veste blanche, tablier, il est chez lui dans [TON RESTAURANT] ;\n— Le Brocoli, personnage 3D stylisé de la Brigade Végé-Fruitée, incrusté dans le même décor à côté de lui, à hauteur de comptoir. Il ne parle pas : il fait le geste de son métier — il tient le calendrier et propose quoi publier, quand.\n\nLe mélange photo + 3D est assumé, comme un dessin animé posé dans une prise de vue réelle. Les ombres et la lumière du personnage 3D suivent celles du décor.\n\nDécor : une table en salle vue à hauteur de convive, verres et nappe. lumière douce de fin de repas.\nAction : chez [TON RESTAURANT], Le chef passe client : il commande sur le site du restaurant, suit sa commande, et on la voit arriver en cuisine. À 5 secondes, le geste bascule et le personnage 3D réagit.\nDeux dernières secondes : les deux regardent l'objectif, immobiles.\n\nAudio : ambiance réelle du restaurant, aucun dialogue, pas de musique.\n\nÉléments à remplacer : [TON RESTAURANT], [TON PLAT], [TON PRÉNOM]."
+        "consigne": "Commencez par ce que vous avez déjà : dix secondes de votre plat, de votre salle, de votre équipe. Filmé au téléphone, à la verticale. Si vous n'avez rien, l'étape suivante fabrique l'image à votre place.",
+        "lien": "https://site.foodeatup.com/",
+        "prompt": "Ce que je fournis pour l'épisode [TON NUMÉRO] :\n\n— une vidéo verticale de 10 s de [TON PLAT], filmée au téléphone\n— une photo de [TON RESTAURANT] : la salle, la devanture ou le pass\n— mon logo, si j'en ai un\n\nCe que je n'ai pas et que vous complétez avec vos gabarits : [CE QUI ME MANQUE]."
       },
       {
         "etape": 2,
-        "titre": "Le montage",
-        "outil": "Claude Code",
-        "guide": "tomate",
-        "consigne": "Dépose ton plan et ton avatar dans le dépôt, puis écris cette phrase à Claude Code. Tu n'ouvres aucun logiciel de montage.",
-        "lien": "https://claude.com/claude-code",
-        "prompt": "Monte l'épisode [TON NUMÉRO] de ma série.\n\n— Plan comique : assets/hooks/[TON NUMÉRO].mp4\n— Avatar : assets/avatar/[TON NUMÉRO].mp4\n— Écran du logiciel : assets/software/[TON NUMÉRO].mp4\n— Accroche à incruster : « Je commande depuis mon canapé. »\n— Punchline en voix off à 5,0 s : « Et je la regarde arriver en cuisine. »\n\nAnatomie : A 0→9,5 · sting 9,5→18,5 · avatar seul 18,5→28,5 · signature 28,5→32,5 · sting de marque 32,5→37,5.\nContrôle le master avant de me le rendre : 37,5 s, 1080×1920, -14 LUFS, crête sous -1 dBTP."
+        "titre": "Le plan d'ouverture",
+        "outil": "Higgsfield",
+        "cote": "restaurant",
+        "guide": "brocoli",
+        "consigne": "Si vous n'avez pas d'images, ce prompt les fabrique. Remplacez ce qui est entre crochets, collez dans Higgsfield, lancez. Dix secondes plus tard, vous avez votre plan.",
+        "lien": "https://higgsfield.ai/",
+        "prompt": "Vertical 9:16, 10 secondes, 4K. PAS de texte incrusté, PAS de sous-titres, PAS de filigrane, PAS de logo dans l'image.\n\nIDENTITÉ VISUELLE : RapidoCMS. Bleu #03A9F5 présent dans le décor — un écran, une lumière, un objet — sans jamais former de logo. Tons clairs, blancs, gris #383838. Pas de crème, pas d'orange.\n\nDEUX personnages dans le même plan :\n— Le Brocoli, personnage 3D stylisé de la Brigade Végé-Fruitée, EN VEDETTE, au premier plan, deux tiers du cadre. C'est lui qui agit : il tient le calendrier et propose quoi publier, quand ;\n— le chef, PHOTORÉALISTE, veste blanche et tablier, en retrait dans [TON RESTAURANT]. Il regarde faire, il ne fait pas.\n\nLe mélange photo + 3D est assumé, comme un dessin animé posé dans une prise de vue réelle. Les ombres du personnage 3D suivent celles du décor.\n\nDécor : une table en salle vue à hauteur de convive, verres et nappe. lumière douce de fin de repas.\nAction : chez [TON RESTAURANT], Le chef passe client : il commande sur le site du restaurant, suit sa commande, et on la voit arriver en cuisine.\nÀ 5 secondes, le geste aboutit et le chef réagit — surpris, puis convaincu.\nDeux dernières secondes : les deux regardent l'objectif côte à côte, immobiles.\n\nAudio : ambiance réelle du restaurant, un bip d'interface discret à 5 secondes, aucun dialogue, pas de musique.\n\nÀ remplacer : [TON RESTAURANT], [TON PLAT], [TON PRÉNOM]."
       },
       {
         "etape": 3,
+        "titre": "Le montage",
+        "outil": "Claude Code",
+        "cote": "rapidocms",
+        "guide": "tomate",
+        "consigne": "Le hook, la signature de fin et les logos sont ceux de RapidoCMS — vous ne les fournissez pas, ils sont dans le gabarit. Vos images occupent le centre. Vous n'ouvrez aucun logiciel de montage.",
+        "lien": "https://claude.com/claude-code",
+        "prompt": "Monte l'épisode [TON NUMÉRO] de ma série, gabarit RapidoCMS.\n\n— Plan d'ouverture : assets/hooks/[TON NUMÉRO].mp4\n— Personnage qui explique : assets/avatar/[TON NUMÉRO].mp4 (Le Brocoli, avatar HeyGen)\n— Mes images de restaurant : assets/software/[TON NUMÉRO].mp4\n— Accroche à incruster : « Je commande depuis mon canapé. »\n— Punchline en voix off à 5,0 s : « Et je la regarde arriver en cuisine. »\n\nHabillage : hook, signature de fin et logos en charte RapidoCMS — bleu #03A9F5, gris #383838, fond blanc. Pas de crème, pas d'orange.\nAnatomie : A 0→9,5 · sting RapidoCMS 9,5→18,5 · le personnage seul 18,5→28,5 · signature RapidoCMS 28,5→32,5 · sting de marque 32,5→37,5.\nContrôle avant de me le rendre : 37,5 s, 1080×1920, -14 LUFS, crête sous -1 dBTP."
+      },
+      {
+        "etape": 4,
         "titre": "La publication",
         "outil": "RapidoCMS",
+        "cote": "rapidocms",
         "guide": "betterave",
-        "consigne": "Une phrase, et les cinq réseaux sont programmés. Tu ne téléverses rien nulle part.",
+        "consigne": "Une phrase, et les cinq réseaux sont programmés. Le master part d'abord dans votre bibliothèque, puis en ligne. Vous ne téléversez rien nulle part.",
         "lien": "https://cms.rapidosoftware.com/register",
-        "prompt": "Verse le master dans ma bibliothèque RapidoCMS, puis programme les cinq réseaux de [TON RESTAURANT] :\n\n— LinkedIn à 8 h, Facebook à 12 h, YouTube à 10 h, Instagram à 18 h 30, TikTok à 19 h\n— Légende : « Je commande depuis mon canapé. Et je la regarde arriver en cuisine. » puis le corps, puis « [TON APPEL À L'ACTION] : [TON SITE] »\n— Mots-dièse : #restaurant #[TA VILLE] #[TA SPÉCIALITÉ]\n\nRends-moi le lien de chaque publication."
+        "prompt": "Verse le master dans ma bibliothèque RapidoCMS, puis programme les cinq réseaux de [TON RESTAURANT] :\n\n— LinkedIn à 8 h, YouTube à 10 h, Facebook à 12 h, Instagram à 18 h 30, TikTok à 19 h\n— Légende : « Je commande depuis mon canapé. Et je la regarde arriver en cuisine. » puis le corps, puis « [TON APPEL À L'ACTION] : [TON SITE] »\n— Mots-dièse : #restaurant #[TA VILLE] #[TA SPÉCIALITÉ]\n\nRends-moi le lien de chaque publication."
       }
     ],
     "tutoriel": null
@@ -21417,35 +21705,48 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       }
     },
     "promptVignette": "Illustration 3D, cadrage vertical 9:16, même style que l'image de référence jointe. Le personnage de l'image de référence — La Carotte — gardé À L'IDENTIQUE : mêmes proportions, mêmes couleurs, même tenue, même accessoire. Ne le redessine pas, ne change pas son visage. Il est LA VEDETTE de l'image et occupe les deux tiers du cadre, en premier plan, tourné vers l'objectif. Ce qu'il fait ici : elle relit tout avant que ça sorte. Scène : sans gluten, sans stress. Sans gluten. Vraiment. Décor derrière lui : une table en salle vue à hauteur de convive, verres et nappe. lumière douce de fin de repas. Le décor reste flou et discret — c'est un fond, pas un sujet. Aucun humain photoréaliste dans l'image, aucun écran de logiciel lisible. Bande bleu RapidoCMS #03A9F5 en haut du cadre sur un cinquième de la hauteur, portant UNIQUEMENT le texte « GLUTEN STRESS » en typographie arrondie très grasse, blanc, centré. Aucun autre texte, aucun logo ajouté, pas de filigrane, pas de bordure décorative.",
-    "higgsfieldPrompt": "Vertical 9:16, 10 secondes, 4K. PAS de texte incrusté, PAS de sous-titres, PAS de filigrane, PAS de logo.\n\nDEUX personnages dans le même plan, et c'est voulu :\n— le chef, PHOTORÉALISTE, joue le rôle : chef. Veste blanche, tablier, il est chez lui dans son restaurant ;\n— La Carotte, personnage 3D stylisé de la Brigade Végé-Fruitée, incrusté dans le même décor à côté de lui, à hauteur de comptoir. Il ne parle pas : il fait le geste de son métier — elle relit tout avant que ça sorte.\n\nLe mélange photo + 3D est assumé, comme un dessin animé posé dans une prise de vue réelle. Les ombres et la lumière du personnage 3D suivent celles du décor.\n\nDécor : une table en salle vue à hauteur de convive, verres et nappe. lumière douce de fin de repas.\nAction : Une demande particulière prise au sérieux : ce qu'on change, ce qu'on vérifie, ce qu'on garantit. À 5 secondes, le geste bascule et le personnage 3D réagit.\nDeux dernières secondes : les deux regardent l'objectif, immobiles.\n\nAudio : ambiance réelle du restaurant, aucun dialogue, pas de musique.",
-    "scriptHeygen": "Une demande particulière prise au sérieux : ce qu'on change, ce qu'on vérifie, ce qu'on garantit. On vérifie, on ne suppose pas.",
+    "higgsfieldPrompt": "Vertical 9:16, 10 secondes, 4K. PAS de texte incrusté, PAS de sous-titres, PAS de filigrane, PAS de logo dans l'image.\n\nIDENTITÉ VISUELLE : RapidoCMS. Bleu #03A9F5 présent dans le décor — un écran, une lumière, un objet — sans jamais former de logo. Tons clairs, blancs, gris #383838. Pas de crème, pas d'orange.\n\nDEUX personnages dans le même plan :\n— La Carotte, personnage 3D stylisé de la Brigade Végé-Fruitée, EN VEDETTE, au premier plan, deux tiers du cadre. C'est lui qui agit : elle relit tout avant que ça sorte ;\n— le chef, PHOTORÉALISTE, veste blanche et tablier, en retrait dans son restaurant. Il regarde faire, il ne fait pas.\n\nLe mélange photo + 3D est assumé, comme un dessin animé posé dans une prise de vue réelle. Les ombres du personnage 3D suivent celles du décor.\n\nDécor : une table en salle vue à hauteur de convive, verres et nappe. lumière douce de fin de repas.\nAction : Une demande particulière prise au sérieux : ce qu'on change, ce qu'on vérifie, ce qu'on garantit.\nÀ 5 secondes, le geste aboutit et le chef réagit — surpris, puis convaincu.\nDeux dernières secondes : les deux regardent l'objectif côte à côte, immobiles.\n\nAudio : ambiance réelle du restaurant, un bip d'interface discret à 5 secondes, aucun dialogue, pas de musique.",
+    "scriptHeygen": "Moi c'est La Carotte. Pour cet épisode, elle relit tout avant que ça sorte — vous me le demandez en une phrase. Vos photos, notre gabarit : la vidéo part sur vos cinq réseaux le soir même.",
     "kit": [
       {
         "etape": 1,
-        "titre": "Le plan comique",
-        "outil": "Higgsfield",
+        "titre": "Vos images",
+        "outil": "Chez vous",
+        "cote": "restaurant",
         "guide": "carotte",
-        "consigne": "Remplace ce qui est entre crochets par ce qui est chez toi, colle le tout dans Higgsfield, et lance. Dix secondes plus tard tu as ton plan.",
-        "lien": "https://higgsfield.ai/",
-        "prompt": "Vertical 9:16, 10 secondes, 4K. PAS de texte incrusté, PAS de sous-titres, PAS de filigrane, PAS de logo.\n\nDEUX personnages dans le même plan, et c'est voulu :\n— le chef, PHOTORÉALISTE, joue le rôle : chef. Veste blanche, tablier, il est chez lui dans [TON RESTAURANT] ;\n— La Carotte, personnage 3D stylisé de la Brigade Végé-Fruitée, incrusté dans le même décor à côté de lui, à hauteur de comptoir. Il ne parle pas : il fait le geste de son métier — elle relit tout avant que ça sorte.\n\nLe mélange photo + 3D est assumé, comme un dessin animé posé dans une prise de vue réelle. Les ombres et la lumière du personnage 3D suivent celles du décor.\n\nDécor : une table en salle vue à hauteur de convive, verres et nappe. lumière douce de fin de repas.\nAction : chez [TON RESTAURANT], Une demande particulière prise au sérieux : ce qu'on change, ce qu'on vérifie, ce qu'on garantit. À 5 secondes, le geste bascule et le personnage 3D réagit.\nDeux dernières secondes : les deux regardent l'objectif, immobiles.\n\nAudio : ambiance réelle du restaurant, aucun dialogue, pas de musique.\n\nÉléments à remplacer : [TON RESTAURANT], [TON PLAT], [TON PRÉNOM]."
+        "consigne": "Commencez par ce que vous avez déjà : dix secondes de votre plat, de votre salle, de votre équipe. Filmé au téléphone, à la verticale. Si vous n'avez rien, l'étape suivante fabrique l'image à votre place.",
+        "lien": "https://site.foodeatup.com/",
+        "prompt": "Ce que je fournis pour l'épisode [TON NUMÉRO] :\n\n— une vidéo verticale de 10 s de [TON PLAT], filmée au téléphone\n— une photo de [TON RESTAURANT] : la salle, la devanture ou le pass\n— mon logo, si j'en ai un\n\nCe que je n'ai pas et que vous complétez avec vos gabarits : [CE QUI ME MANQUE]."
       },
       {
         "etape": 2,
-        "titre": "Le montage",
-        "outil": "Claude Code",
-        "guide": "tomate",
-        "consigne": "Dépose ton plan et ton avatar dans le dépôt, puis écris cette phrase à Claude Code. Tu n'ouvres aucun logiciel de montage.",
-        "lien": "https://claude.com/claude-code",
-        "prompt": "Monte l'épisode [TON NUMÉRO] de ma série.\n\n— Plan comique : assets/hooks/[TON NUMÉRO].mp4\n— Avatar : assets/avatar/[TON NUMÉRO].mp4\n— Écran du logiciel : assets/software/[TON NUMÉRO].mp4\n— Accroche à incruster : « Sans gluten. Vraiment. »\n— Punchline en voix off à 5,0 s : « On vérifie, on ne suppose pas. »\n\nAnatomie : A 0→9,5 · sting 9,5→18,5 · avatar seul 18,5→28,5 · signature 28,5→32,5 · sting de marque 32,5→37,5.\nContrôle le master avant de me le rendre : 37,5 s, 1080×1920, -14 LUFS, crête sous -1 dBTP."
+        "titre": "Le plan d'ouverture",
+        "outil": "Higgsfield",
+        "cote": "restaurant",
+        "guide": "carotte",
+        "consigne": "Si vous n'avez pas d'images, ce prompt les fabrique. Remplacez ce qui est entre crochets, collez dans Higgsfield, lancez. Dix secondes plus tard, vous avez votre plan.",
+        "lien": "https://higgsfield.ai/",
+        "prompt": "Vertical 9:16, 10 secondes, 4K. PAS de texte incrusté, PAS de sous-titres, PAS de filigrane, PAS de logo dans l'image.\n\nIDENTITÉ VISUELLE : RapidoCMS. Bleu #03A9F5 présent dans le décor — un écran, une lumière, un objet — sans jamais former de logo. Tons clairs, blancs, gris #383838. Pas de crème, pas d'orange.\n\nDEUX personnages dans le même plan :\n— La Carotte, personnage 3D stylisé de la Brigade Végé-Fruitée, EN VEDETTE, au premier plan, deux tiers du cadre. C'est lui qui agit : elle relit tout avant que ça sorte ;\n— le chef, PHOTORÉALISTE, veste blanche et tablier, en retrait dans [TON RESTAURANT]. Il regarde faire, il ne fait pas.\n\nLe mélange photo + 3D est assumé, comme un dessin animé posé dans une prise de vue réelle. Les ombres du personnage 3D suivent celles du décor.\n\nDécor : une table en salle vue à hauteur de convive, verres et nappe. lumière douce de fin de repas.\nAction : chez [TON RESTAURANT], Une demande particulière prise au sérieux : ce qu'on change, ce qu'on vérifie, ce qu'on garantit.\nÀ 5 secondes, le geste aboutit et le chef réagit — surpris, puis convaincu.\nDeux dernières secondes : les deux regardent l'objectif côte à côte, immobiles.\n\nAudio : ambiance réelle du restaurant, un bip d'interface discret à 5 secondes, aucun dialogue, pas de musique.\n\nÀ remplacer : [TON RESTAURANT], [TON PLAT], [TON PRÉNOM]."
       },
       {
         "etape": 3,
+        "titre": "Le montage",
+        "outil": "Claude Code",
+        "cote": "rapidocms",
+        "guide": "tomate",
+        "consigne": "Le hook, la signature de fin et les logos sont ceux de RapidoCMS — vous ne les fournissez pas, ils sont dans le gabarit. Vos images occupent le centre. Vous n'ouvrez aucun logiciel de montage.",
+        "lien": "https://claude.com/claude-code",
+        "prompt": "Monte l'épisode [TON NUMÉRO] de ma série, gabarit RapidoCMS.\n\n— Plan d'ouverture : assets/hooks/[TON NUMÉRO].mp4\n— Personnage qui explique : assets/avatar/[TON NUMÉRO].mp4 (La Carotte, avatar HeyGen)\n— Mes images de restaurant : assets/software/[TON NUMÉRO].mp4\n— Accroche à incruster : « Sans gluten. Vraiment. »\n— Punchline en voix off à 5,0 s : « On vérifie, on ne suppose pas. »\n\nHabillage : hook, signature de fin et logos en charte RapidoCMS — bleu #03A9F5, gris #383838, fond blanc. Pas de crème, pas d'orange.\nAnatomie : A 0→9,5 · sting RapidoCMS 9,5→18,5 · le personnage seul 18,5→28,5 · signature RapidoCMS 28,5→32,5 · sting de marque 32,5→37,5.\nContrôle avant de me le rendre : 37,5 s, 1080×1920, -14 LUFS, crête sous -1 dBTP."
+      },
+      {
+        "etape": 4,
         "titre": "La publication",
         "outil": "RapidoCMS",
+        "cote": "rapidocms",
         "guide": "betterave",
-        "consigne": "Une phrase, et les cinq réseaux sont programmés. Tu ne téléverses rien nulle part.",
+        "consigne": "Une phrase, et les cinq réseaux sont programmés. Le master part d'abord dans votre bibliothèque, puis en ligne. Vous ne téléversez rien nulle part.",
         "lien": "https://cms.rapidosoftware.com/register",
-        "prompt": "Verse le master dans ma bibliothèque RapidoCMS, puis programme les cinq réseaux de [TON RESTAURANT] :\n\n— LinkedIn à 8 h, Facebook à 12 h, YouTube à 10 h, Instagram à 18 h 30, TikTok à 19 h\n— Légende : « Sans gluten. Vraiment. On vérifie, on ne suppose pas. » puis le corps, puis « [TON APPEL À L'ACTION] : [TON SITE] »\n— Mots-dièse : #restaurant #[TA VILLE] #[TA SPÉCIALITÉ]\n\nRends-moi le lien de chaque publication."
+        "prompt": "Verse le master dans ma bibliothèque RapidoCMS, puis programme les cinq réseaux de [TON RESTAURANT] :\n\n— LinkedIn à 8 h, YouTube à 10 h, Facebook à 12 h, Instagram à 18 h 30, TikTok à 19 h\n— Légende : « Sans gluten. Vraiment. On vérifie, on ne suppose pas. » puis le corps, puis « [TON APPEL À L'ACTION] : [TON SITE] »\n— Mots-dièse : #restaurant #[TA VILLE] #[TA SPÉCIALITÉ]\n\nRends-moi le lien de chaque publication."
       }
     ],
     "tutoriel": null
@@ -21565,35 +21866,48 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       }
     },
     "promptVignette": "Illustration 3D, cadrage vertical 9:16, même style que l'image de référence jointe. Le personnage de l'image de référence — La Pomme de Terre — gardé À L'IDENTIQUE : mêmes proportions, mêmes couleurs, même tenue, même accessoire. Ne le redessine pas, ne change pas son visage. Il est LA VEDETTE de l'image et occupe les deux tiers du cadre, en premier plan, tourné vers l'objectif. Ce qu'il fait ici : elle donne la voix off de la série. Scène : le premier rendez-vous. Premier rendez-vous. Décor derrière lui : une table en salle vue à hauteur de convive, verres et nappe. lumière douce de fin de repas. Le décor reste flou et discret — c'est un fond, pas un sujet. Aucun humain photoréaliste dans l'image, aucun écran de logiciel lisible. Bande bleu RapidoCMS #03A9F5 en haut du cadre sur un cinquième de la hauteur, portant UNIQUEMENT le texte « PREMIER RENDEZ VOUS » en typographie arrondie très grasse, blanc, centré. Aucun autre texte, aucun logo ajouté, pas de filigrane, pas de bordure décorative.",
-    "higgsfieldPrompt": "Vertical 9:16, 10 secondes, 4K. PAS de texte incrusté, PAS de sous-titres, PAS de filigrane, PAS de logo.\n\nDEUX personnages dans le même plan, et c'est voulu :\n— le chef, PHOTORÉALISTE, joue le rôle : serveur. Veste blanche, tablier, il est chez lui dans son restaurant ;\n— La Pomme de Terre, personnage 3D stylisé de la Brigade Végé-Fruitée, incrusté dans le même décor à côté de lui, à hauteur de comptoir. Il ne parle pas : il fait le geste de son métier — elle donne la voix off de la série.\n\nLe mélange photo + 3D est assumé, comme un dessin animé posé dans une prise de vue réelle. Les ombres et la lumière du personnage 3D suivent celles du décor.\n\nDécor : une table en salle vue à hauteur de convive, verres et nappe. lumière douce de fin de repas.\nAction : La table près de la fenêtre, la lumière baissée, le service discret. À 5 secondes, le geste bascule et le personnage 3D réagit.\nDeux dernières secondes : les deux regardent l'objectif, immobiles.\n\nAudio : ambiance réelle du restaurant, aucun dialogue, pas de musique.",
-    "scriptHeygen": "La table près de la fenêtre, la lumière baissée, le service discret. On ne vous dérangera pas.",
+    "higgsfieldPrompt": "Vertical 9:16, 10 secondes, 4K. PAS de texte incrusté, PAS de sous-titres, PAS de filigrane, PAS de logo dans l'image.\n\nIDENTITÉ VISUELLE : RapidoCMS. Bleu #03A9F5 présent dans le décor — un écran, une lumière, un objet — sans jamais former de logo. Tons clairs, blancs, gris #383838. Pas de crème, pas d'orange.\n\nDEUX personnages dans le même plan :\n— La Pomme de Terre, personnage 3D stylisé de la Brigade Végé-Fruitée, EN VEDETTE, au premier plan, deux tiers du cadre. C'est lui qui agit : elle donne la voix off de la série ;\n— le chef, PHOTORÉALISTE, veste blanche et tablier, en retrait dans son restaurant. Il regarde faire, il ne fait pas.\n\nLe mélange photo + 3D est assumé, comme un dessin animé posé dans une prise de vue réelle. Les ombres du personnage 3D suivent celles du décor.\n\nDécor : une table en salle vue à hauteur de convive, verres et nappe. lumière douce de fin de repas.\nAction : La table près de la fenêtre, la lumière baissée, le service discret.\nÀ 5 secondes, le geste aboutit et le chef réagit — surpris, puis convaincu.\nDeux dernières secondes : les deux regardent l'objectif côte à côte, immobiles.\n\nAudio : ambiance réelle du restaurant, un bip d'interface discret à 5 secondes, aucun dialogue, pas de musique.",
+    "scriptHeygen": "Moi c'est La Pomme de Terre. Pour cet épisode, elle donne la voix off de la série — vous me le demandez en une phrase. Vos photos, notre gabarit : la vidéo part sur vos cinq réseaux le soir même.",
     "kit": [
       {
         "etape": 1,
-        "titre": "Le plan comique",
-        "outil": "Higgsfield",
+        "titre": "Vos images",
+        "outil": "Chez vous",
+        "cote": "restaurant",
         "guide": "pomme-de-terre",
-        "consigne": "Remplace ce qui est entre crochets par ce qui est chez toi, colle le tout dans Higgsfield, et lance. Dix secondes plus tard tu as ton plan.",
-        "lien": "https://higgsfield.ai/",
-        "prompt": "Vertical 9:16, 10 secondes, 4K. PAS de texte incrusté, PAS de sous-titres, PAS de filigrane, PAS de logo.\n\nDEUX personnages dans le même plan, et c'est voulu :\n— le chef, PHOTORÉALISTE, joue le rôle : serveur. Veste blanche, tablier, il est chez lui dans [TON RESTAURANT] ;\n— La Pomme de Terre, personnage 3D stylisé de la Brigade Végé-Fruitée, incrusté dans le même décor à côté de lui, à hauteur de comptoir. Il ne parle pas : il fait le geste de son métier — elle donne la voix off de la série.\n\nLe mélange photo + 3D est assumé, comme un dessin animé posé dans une prise de vue réelle. Les ombres et la lumière du personnage 3D suivent celles du décor.\n\nDécor : une table en salle vue à hauteur de convive, verres et nappe. lumière douce de fin de repas.\nAction : chez [TON RESTAURANT], La table près de la fenêtre, la lumière baissée, le service discret. À 5 secondes, le geste bascule et le personnage 3D réagit.\nDeux dernières secondes : les deux regardent l'objectif, immobiles.\n\nAudio : ambiance réelle du restaurant, aucun dialogue, pas de musique.\n\nÉléments à remplacer : [TON RESTAURANT], [TON PLAT], [TON PRÉNOM]."
+        "consigne": "Commencez par ce que vous avez déjà : dix secondes de votre plat, de votre salle, de votre équipe. Filmé au téléphone, à la verticale. Si vous n'avez rien, l'étape suivante fabrique l'image à votre place.",
+        "lien": "https://site.foodeatup.com/",
+        "prompt": "Ce que je fournis pour l'épisode [TON NUMÉRO] :\n\n— une vidéo verticale de 10 s de [TON PLAT], filmée au téléphone\n— une photo de [TON RESTAURANT] : la salle, la devanture ou le pass\n— mon logo, si j'en ai un\n\nCe que je n'ai pas et que vous complétez avec vos gabarits : [CE QUI ME MANQUE]."
       },
       {
         "etape": 2,
-        "titre": "Le montage",
-        "outil": "Claude Code",
-        "guide": "tomate",
-        "consigne": "Dépose ton plan et ton avatar dans le dépôt, puis écris cette phrase à Claude Code. Tu n'ouvres aucun logiciel de montage.",
-        "lien": "https://claude.com/claude-code",
-        "prompt": "Monte l'épisode [TON NUMÉRO] de ma série.\n\n— Plan comique : assets/hooks/[TON NUMÉRO].mp4\n— Avatar : assets/avatar/[TON NUMÉRO].mp4\n— Écran du logiciel : assets/software/[TON NUMÉRO].mp4\n— Accroche à incruster : « Premier rendez-vous. »\n— Punchline en voix off à 5,0 s : « On ne vous dérangera pas. »\n\nAnatomie : A 0→9,5 · sting 9,5→18,5 · avatar seul 18,5→28,5 · signature 28,5→32,5 · sting de marque 32,5→37,5.\nContrôle le master avant de me le rendre : 37,5 s, 1080×1920, -14 LUFS, crête sous -1 dBTP."
+        "titre": "Le plan d'ouverture",
+        "outil": "Higgsfield",
+        "cote": "restaurant",
+        "guide": "pomme-de-terre",
+        "consigne": "Si vous n'avez pas d'images, ce prompt les fabrique. Remplacez ce qui est entre crochets, collez dans Higgsfield, lancez. Dix secondes plus tard, vous avez votre plan.",
+        "lien": "https://higgsfield.ai/",
+        "prompt": "Vertical 9:16, 10 secondes, 4K. PAS de texte incrusté, PAS de sous-titres, PAS de filigrane, PAS de logo dans l'image.\n\nIDENTITÉ VISUELLE : RapidoCMS. Bleu #03A9F5 présent dans le décor — un écran, une lumière, un objet — sans jamais former de logo. Tons clairs, blancs, gris #383838. Pas de crème, pas d'orange.\n\nDEUX personnages dans le même plan :\n— La Pomme de Terre, personnage 3D stylisé de la Brigade Végé-Fruitée, EN VEDETTE, au premier plan, deux tiers du cadre. C'est lui qui agit : elle donne la voix off de la série ;\n— le chef, PHOTORÉALISTE, veste blanche et tablier, en retrait dans [TON RESTAURANT]. Il regarde faire, il ne fait pas.\n\nLe mélange photo + 3D est assumé, comme un dessin animé posé dans une prise de vue réelle. Les ombres du personnage 3D suivent celles du décor.\n\nDécor : une table en salle vue à hauteur de convive, verres et nappe. lumière douce de fin de repas.\nAction : chez [TON RESTAURANT], La table près de la fenêtre, la lumière baissée, le service discret.\nÀ 5 secondes, le geste aboutit et le chef réagit — surpris, puis convaincu.\nDeux dernières secondes : les deux regardent l'objectif côte à côte, immobiles.\n\nAudio : ambiance réelle du restaurant, un bip d'interface discret à 5 secondes, aucun dialogue, pas de musique.\n\nÀ remplacer : [TON RESTAURANT], [TON PLAT], [TON PRÉNOM]."
       },
       {
         "etape": 3,
+        "titre": "Le montage",
+        "outil": "Claude Code",
+        "cote": "rapidocms",
+        "guide": "tomate",
+        "consigne": "Le hook, la signature de fin et les logos sont ceux de RapidoCMS — vous ne les fournissez pas, ils sont dans le gabarit. Vos images occupent le centre. Vous n'ouvrez aucun logiciel de montage.",
+        "lien": "https://claude.com/claude-code",
+        "prompt": "Monte l'épisode [TON NUMÉRO] de ma série, gabarit RapidoCMS.\n\n— Plan d'ouverture : assets/hooks/[TON NUMÉRO].mp4\n— Personnage qui explique : assets/avatar/[TON NUMÉRO].mp4 (La Pomme de Terre, avatar HeyGen)\n— Mes images de restaurant : assets/software/[TON NUMÉRO].mp4\n— Accroche à incruster : « Premier rendez-vous. »\n— Punchline en voix off à 5,0 s : « On ne vous dérangera pas. »\n\nHabillage : hook, signature de fin et logos en charte RapidoCMS — bleu #03A9F5, gris #383838, fond blanc. Pas de crème, pas d'orange.\nAnatomie : A 0→9,5 · sting RapidoCMS 9,5→18,5 · le personnage seul 18,5→28,5 · signature RapidoCMS 28,5→32,5 · sting de marque 32,5→37,5.\nContrôle avant de me le rendre : 37,5 s, 1080×1920, -14 LUFS, crête sous -1 dBTP."
+      },
+      {
+        "etape": 4,
         "titre": "La publication",
         "outil": "RapidoCMS",
+        "cote": "rapidocms",
         "guide": "betterave",
-        "consigne": "Une phrase, et les cinq réseaux sont programmés. Tu ne téléverses rien nulle part.",
+        "consigne": "Une phrase, et les cinq réseaux sont programmés. Le master part d'abord dans votre bibliothèque, puis en ligne. Vous ne téléversez rien nulle part.",
         "lien": "https://cms.rapidosoftware.com/register",
-        "prompt": "Verse le master dans ma bibliothèque RapidoCMS, puis programme les cinq réseaux de [TON RESTAURANT] :\n\n— LinkedIn à 8 h, Facebook à 12 h, YouTube à 10 h, Instagram à 18 h 30, TikTok à 19 h\n— Légende : « Premier rendez-vous. On ne vous dérangera pas. » puis le corps, puis « [TON APPEL À L'ACTION] : [TON SITE] »\n— Mots-dièse : #restaurant #[TA VILLE] #[TA SPÉCIALITÉ]\n\nRends-moi le lien de chaque publication."
+        "prompt": "Verse le master dans ma bibliothèque RapidoCMS, puis programme les cinq réseaux de [TON RESTAURANT] :\n\n— LinkedIn à 8 h, YouTube à 10 h, Facebook à 12 h, Instagram à 18 h 30, TikTok à 19 h\n— Légende : « Premier rendez-vous. On ne vous dérangera pas. » puis le corps, puis « [TON APPEL À L'ACTION] : [TON SITE] »\n— Mots-dièse : #restaurant #[TA VILLE] #[TA SPÉCIALITÉ]\n\nRends-moi le lien de chaque publication."
       }
     ],
     "tutoriel": null
@@ -21713,35 +22027,48 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       }
     },
     "promptVignette": "Illustration 3D, cadrage vertical 9:16, même style que l'image de référence jointe. Le personnage de l'image de référence — L'Ail — gardé À L'IDENTIQUE : mêmes proportions, mêmes couleurs, même tenue, même accessoire. Ne le redessine pas, ne change pas son visage. Il est LA VEDETTE de l'image et occupe les deux tiers du cadre, en premier plan, tourné vers l'objectif. Ce qu'il fait ici : il tient la carte à jour partout à la fois. Scène : le qr code à table. Scanne, commande, c'est tout. Décor derrière lui : la devanture et le comptoir, ardoise et carte affichée. plein jour, lumière franche. Le décor reste flou et discret — c'est un fond, pas un sujet. Aucun humain photoréaliste dans l'image, aucun écran de logiciel lisible. Bande bleu RapidoCMS #03A9F5 en haut du cadre sur un cinquième de la hauteur, portant UNIQUEMENT le texte « QR CODE TABLE » en typographie arrondie très grasse, blanc, centré. Aucun autre texte, aucun logo ajouté, pas de filigrane, pas de bordure décorative.",
-    "higgsfieldPrompt": "Vertical 9:16, 10 secondes, 4K. PAS de texte incrusté, PAS de sous-titres, PAS de filigrane, PAS de logo.\n\nDEUX personnages dans le même plan, et c'est voulu :\n— le chef, PHOTORÉALISTE, joue le rôle : serveur. Veste blanche, tablier, il est chez lui dans son restaurant ;\n— L'Ail, personnage 3D stylisé de la Brigade Végé-Fruitée, incrusté dans le même décor à côté de lui, à hauteur de comptoir. Il ne parle pas : il fait le geste de son métier — il tient la carte à jour partout à la fois.\n\nLe mélange photo + 3D est assumé, comme un dessin animé posé dans une prise de vue réelle. Les ombres et la lumière du personnage 3D suivent celles du décor.\n\nDécor : la devanture et le comptoir, ardoise et carte affichée. plein jour, lumière franche.\nAction : Le client scanne, lit la carte, commande. À 5 secondes, le geste bascule et le personnage 3D réagit.\nDeux dernières secondes : les deux regardent l'objectif, immobiles.\n\nAudio : ambiance réelle du restaurant, aucun dialogue, pas de musique.",
-    "scriptHeygen": "Le client scanne, lit la carte, commande. Trente secondes, filmé en vrai.",
+    "higgsfieldPrompt": "Vertical 9:16, 10 secondes, 4K. PAS de texte incrusté, PAS de sous-titres, PAS de filigrane, PAS de logo dans l'image.\n\nIDENTITÉ VISUELLE : RapidoCMS. Bleu #03A9F5 présent dans le décor — un écran, une lumière, un objet — sans jamais former de logo. Tons clairs, blancs, gris #383838. Pas de crème, pas d'orange.\n\nDEUX personnages dans le même plan :\n— L'Ail, personnage 3D stylisé de la Brigade Végé-Fruitée, EN VEDETTE, au premier plan, deux tiers du cadre. C'est lui qui agit : il tient la carte à jour partout à la fois ;\n— le chef, PHOTORÉALISTE, veste blanche et tablier, en retrait dans son restaurant. Il regarde faire, il ne fait pas.\n\nLe mélange photo + 3D est assumé, comme un dessin animé posé dans une prise de vue réelle. Les ombres du personnage 3D suivent celles du décor.\n\nDécor : la devanture et le comptoir, ardoise et carte affichée. plein jour, lumière franche.\nAction : Le client scanne, lit la carte, commande.\nÀ 5 secondes, le geste aboutit et le chef réagit — surpris, puis convaincu.\nDeux dernières secondes : les deux regardent l'objectif côte à côte, immobiles.\n\nAudio : ambiance réelle du restaurant, un bip d'interface discret à 5 secondes, aucun dialogue, pas de musique.",
+    "scriptHeygen": "Moi c'est L'Ail. Pour cet épisode, il tient la carte à jour partout à la fois — vous me le demandez en une phrase. Vos photos, notre gabarit : la vidéo part sur vos cinq réseaux le soir même.",
     "kit": [
       {
         "etape": 1,
-        "titre": "Le plan comique",
-        "outil": "Higgsfield",
+        "titre": "Vos images",
+        "outil": "Chez vous",
+        "cote": "restaurant",
         "guide": "ail",
-        "consigne": "Remplace ce qui est entre crochets par ce qui est chez toi, colle le tout dans Higgsfield, et lance. Dix secondes plus tard tu as ton plan.",
-        "lien": "https://higgsfield.ai/",
-        "prompt": "Vertical 9:16, 10 secondes, 4K. PAS de texte incrusté, PAS de sous-titres, PAS de filigrane, PAS de logo.\n\nDEUX personnages dans le même plan, et c'est voulu :\n— le chef, PHOTORÉALISTE, joue le rôle : serveur. Veste blanche, tablier, il est chez lui dans [TON RESTAURANT] ;\n— L'Ail, personnage 3D stylisé de la Brigade Végé-Fruitée, incrusté dans le même décor à côté de lui, à hauteur de comptoir. Il ne parle pas : il fait le geste de son métier — il tient la carte à jour partout à la fois.\n\nLe mélange photo + 3D est assumé, comme un dessin animé posé dans une prise de vue réelle. Les ombres et la lumière du personnage 3D suivent celles du décor.\n\nDécor : la devanture et le comptoir, ardoise et carte affichée. plein jour, lumière franche.\nAction : chez [TON RESTAURANT], Le client scanne, lit la carte, commande. À 5 secondes, le geste bascule et le personnage 3D réagit.\nDeux dernières secondes : les deux regardent l'objectif, immobiles.\n\nAudio : ambiance réelle du restaurant, aucun dialogue, pas de musique.\n\nÉléments à remplacer : [TON RESTAURANT], [TON PLAT], [TON PRÉNOM]."
+        "consigne": "Commencez par ce que vous avez déjà : dix secondes de votre plat, de votre salle, de votre équipe. Filmé au téléphone, à la verticale. Si vous n'avez rien, l'étape suivante fabrique l'image à votre place.",
+        "lien": "https://site.foodeatup.com/",
+        "prompt": "Ce que je fournis pour l'épisode [TON NUMÉRO] :\n\n— une vidéo verticale de 10 s de [TON PLAT], filmée au téléphone\n— une photo de [TON RESTAURANT] : la salle, la devanture ou le pass\n— mon logo, si j'en ai un\n\nCe que je n'ai pas et que vous complétez avec vos gabarits : [CE QUI ME MANQUE]."
       },
       {
         "etape": 2,
-        "titre": "Le montage",
-        "outil": "Claude Code",
-        "guide": "tomate",
-        "consigne": "Dépose ton plan et ton avatar dans le dépôt, puis écris cette phrase à Claude Code. Tu n'ouvres aucun logiciel de montage.",
-        "lien": "https://claude.com/claude-code",
-        "prompt": "Monte l'épisode [TON NUMÉRO] de ma série.\n\n— Plan comique : assets/hooks/[TON NUMÉRO].mp4\n— Avatar : assets/avatar/[TON NUMÉRO].mp4\n— Écran du logiciel : assets/software/[TON NUMÉRO].mp4\n— Accroche à incruster : « Scanne, commande, c'est tout. »\n— Punchline en voix off à 5,0 s : « Trente secondes, filmé en vrai. »\n\nAnatomie : A 0→9,5 · sting 9,5→18,5 · avatar seul 18,5→28,5 · signature 28,5→32,5 · sting de marque 32,5→37,5.\nContrôle le master avant de me le rendre : 37,5 s, 1080×1920, -14 LUFS, crête sous -1 dBTP."
+        "titre": "Le plan d'ouverture",
+        "outil": "Higgsfield",
+        "cote": "restaurant",
+        "guide": "ail",
+        "consigne": "Si vous n'avez pas d'images, ce prompt les fabrique. Remplacez ce qui est entre crochets, collez dans Higgsfield, lancez. Dix secondes plus tard, vous avez votre plan.",
+        "lien": "https://higgsfield.ai/",
+        "prompt": "Vertical 9:16, 10 secondes, 4K. PAS de texte incrusté, PAS de sous-titres, PAS de filigrane, PAS de logo dans l'image.\n\nIDENTITÉ VISUELLE : RapidoCMS. Bleu #03A9F5 présent dans le décor — un écran, une lumière, un objet — sans jamais former de logo. Tons clairs, blancs, gris #383838. Pas de crème, pas d'orange.\n\nDEUX personnages dans le même plan :\n— L'Ail, personnage 3D stylisé de la Brigade Végé-Fruitée, EN VEDETTE, au premier plan, deux tiers du cadre. C'est lui qui agit : il tient la carte à jour partout à la fois ;\n— le chef, PHOTORÉALISTE, veste blanche et tablier, en retrait dans [TON RESTAURANT]. Il regarde faire, il ne fait pas.\n\nLe mélange photo + 3D est assumé, comme un dessin animé posé dans une prise de vue réelle. Les ombres du personnage 3D suivent celles du décor.\n\nDécor : la devanture et le comptoir, ardoise et carte affichée. plein jour, lumière franche.\nAction : chez [TON RESTAURANT], Le client scanne, lit la carte, commande.\nÀ 5 secondes, le geste aboutit et le chef réagit — surpris, puis convaincu.\nDeux dernières secondes : les deux regardent l'objectif côte à côte, immobiles.\n\nAudio : ambiance réelle du restaurant, un bip d'interface discret à 5 secondes, aucun dialogue, pas de musique.\n\nÀ remplacer : [TON RESTAURANT], [TON PLAT], [TON PRÉNOM]."
       },
       {
         "etape": 3,
+        "titre": "Le montage",
+        "outil": "Claude Code",
+        "cote": "rapidocms",
+        "guide": "tomate",
+        "consigne": "Le hook, la signature de fin et les logos sont ceux de RapidoCMS — vous ne les fournissez pas, ils sont dans le gabarit. Vos images occupent le centre. Vous n'ouvrez aucun logiciel de montage.",
+        "lien": "https://claude.com/claude-code",
+        "prompt": "Monte l'épisode [TON NUMÉRO] de ma série, gabarit RapidoCMS.\n\n— Plan d'ouverture : assets/hooks/[TON NUMÉRO].mp4\n— Personnage qui explique : assets/avatar/[TON NUMÉRO].mp4 (L'Ail, avatar HeyGen)\n— Mes images de restaurant : assets/software/[TON NUMÉRO].mp4\n— Accroche à incruster : « Scanne, commande, c'est tout. »\n— Punchline en voix off à 5,0 s : « Trente secondes, filmé en vrai. »\n\nHabillage : hook, signature de fin et logos en charte RapidoCMS — bleu #03A9F5, gris #383838, fond blanc. Pas de crème, pas d'orange.\nAnatomie : A 0→9,5 · sting RapidoCMS 9,5→18,5 · le personnage seul 18,5→28,5 · signature RapidoCMS 28,5→32,5 · sting de marque 32,5→37,5.\nContrôle avant de me le rendre : 37,5 s, 1080×1920, -14 LUFS, crête sous -1 dBTP."
+      },
+      {
+        "etape": 4,
         "titre": "La publication",
         "outil": "RapidoCMS",
+        "cote": "rapidocms",
         "guide": "betterave",
-        "consigne": "Une phrase, et les cinq réseaux sont programmés. Tu ne téléverses rien nulle part.",
+        "consigne": "Une phrase, et les cinq réseaux sont programmés. Le master part d'abord dans votre bibliothèque, puis en ligne. Vous ne téléversez rien nulle part.",
         "lien": "https://cms.rapidosoftware.com/register",
-        "prompt": "Verse le master dans ma bibliothèque RapidoCMS, puis programme les cinq réseaux de [TON RESTAURANT] :\n\n— LinkedIn à 8 h, Facebook à 12 h, YouTube à 10 h, Instagram à 18 h 30, TikTok à 19 h\n— Légende : « Scanne, commande, c'est tout. Trente secondes, filmé en vrai. » puis le corps, puis « [TON APPEL À L'ACTION] : [TON SITE] »\n— Mots-dièse : #restaurant #[TA VILLE] #[TA SPÉCIALITÉ]\n\nRends-moi le lien de chaque publication."
+        "prompt": "Verse le master dans ma bibliothèque RapidoCMS, puis programme les cinq réseaux de [TON RESTAURANT] :\n\n— LinkedIn à 8 h, YouTube à 10 h, Facebook à 12 h, Instagram à 18 h 30, TikTok à 19 h\n— Légende : « Scanne, commande, c'est tout. Trente secondes, filmé en vrai. » puis le corps, puis « [TON APPEL À L'ACTION] : [TON SITE] »\n— Mots-dièse : #restaurant #[TA VILLE] #[TA SPÉCIALITÉ]\n\nRends-moi le lien de chaque publication."
       }
     ],
     "tutoriel": null
@@ -21861,35 +22188,48 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       }
     },
     "promptVignette": "Illustration 3D, cadrage vertical 9:16, même style que l'image de référence jointe. Le personnage de l'image de référence — L'Ail — gardé À L'IDENTIQUE : mêmes proportions, mêmes couleurs, même tenue, même accessoire. Ne le redessine pas, ne change pas son visage. Il est LA VEDETTE de l'image et occupe les deux tiers du cadre, en premier plan, tourné vers l'objectif. Ce qu'il fait ici : il tient la carte à jour partout à la fois. Scène : la carte change de saison. La carte change lundi. Décor derrière lui : la devanture et le comptoir, ardoise et carte affichée. plein jour, lumière franche. Le décor reste flou et discret — c'est un fond, pas un sujet. Aucun humain photoréaliste dans l'image, aucun écran de logiciel lisible. Bande bleu RapidoCMS #03A9F5 en haut du cadre sur un cinquième de la hauteur, portant UNIQUEMENT le texte « CARTE CHANGE SAISON » en typographie arrondie très grasse, blanc, centré. Aucun autre texte, aucun logo ajouté, pas de filigrane, pas de bordure décorative.",
-    "higgsfieldPrompt": "Vertical 9:16, 10 secondes, 4K. PAS de texte incrusté, PAS de sous-titres, PAS de filigrane, PAS de logo.\n\nDEUX personnages dans le même plan, et c'est voulu :\n— le chef, PHOTORÉALISTE, joue le rôle : chef. Veste blanche, tablier, il est chez lui dans son restaurant ;\n— L'Ail, personnage 3D stylisé de la Brigade Végé-Fruitée, incrusté dans le même décor à côté de lui, à hauteur de comptoir. Il ne parle pas : il fait le geste de son métier — il tient la carte à jour partout à la fois.\n\nLe mélange photo + 3D est assumé, comme un dessin animé posé dans une prise de vue réelle. Les ombres et la lumière du personnage 3D suivent celles du décor.\n\nDécor : la devanture et le comptoir, ardoise et carte affichée. plein jour, lumière franche.\nAction : Les plats qui sortent, ceux qui entrent. À 5 secondes, le geste bascule et le personnage 3D réagit.\nDeux dernières secondes : les deux regardent l'objectif, immobiles.\n\nAudio : ambiance réelle du restaurant, aucun dialogue, pas de musique.",
-    "scriptHeygen": "Les plats qui sortent, ceux qui entrent. Oui, on retire un plat que vous aimiez.",
+    "higgsfieldPrompt": "Vertical 9:16, 10 secondes, 4K. PAS de texte incrusté, PAS de sous-titres, PAS de filigrane, PAS de logo dans l'image.\n\nIDENTITÉ VISUELLE : RapidoCMS. Bleu #03A9F5 présent dans le décor — un écran, une lumière, un objet — sans jamais former de logo. Tons clairs, blancs, gris #383838. Pas de crème, pas d'orange.\n\nDEUX personnages dans le même plan :\n— L'Ail, personnage 3D stylisé de la Brigade Végé-Fruitée, EN VEDETTE, au premier plan, deux tiers du cadre. C'est lui qui agit : il tient la carte à jour partout à la fois ;\n— le chef, PHOTORÉALISTE, veste blanche et tablier, en retrait dans son restaurant. Il regarde faire, il ne fait pas.\n\nLe mélange photo + 3D est assumé, comme un dessin animé posé dans une prise de vue réelle. Les ombres du personnage 3D suivent celles du décor.\n\nDécor : la devanture et le comptoir, ardoise et carte affichée. plein jour, lumière franche.\nAction : Les plats qui sortent, ceux qui entrent.\nÀ 5 secondes, le geste aboutit et le chef réagit — surpris, puis convaincu.\nDeux dernières secondes : les deux regardent l'objectif côte à côte, immobiles.\n\nAudio : ambiance réelle du restaurant, un bip d'interface discret à 5 secondes, aucun dialogue, pas de musique.",
+    "scriptHeygen": "Moi c'est L'Ail. Pour cet épisode, il tient la carte à jour partout à la fois — vous me le demandez en une phrase. Vos photos, notre gabarit : la vidéo part sur vos cinq réseaux le soir même.",
     "kit": [
       {
         "etape": 1,
-        "titre": "Le plan comique",
-        "outil": "Higgsfield",
+        "titre": "Vos images",
+        "outil": "Chez vous",
+        "cote": "restaurant",
         "guide": "ail",
-        "consigne": "Remplace ce qui est entre crochets par ce qui est chez toi, colle le tout dans Higgsfield, et lance. Dix secondes plus tard tu as ton plan.",
-        "lien": "https://higgsfield.ai/",
-        "prompt": "Vertical 9:16, 10 secondes, 4K. PAS de texte incrusté, PAS de sous-titres, PAS de filigrane, PAS de logo.\n\nDEUX personnages dans le même plan, et c'est voulu :\n— le chef, PHOTORÉALISTE, joue le rôle : chef. Veste blanche, tablier, il est chez lui dans [TON RESTAURANT] ;\n— L'Ail, personnage 3D stylisé de la Brigade Végé-Fruitée, incrusté dans le même décor à côté de lui, à hauteur de comptoir. Il ne parle pas : il fait le geste de son métier — il tient la carte à jour partout à la fois.\n\nLe mélange photo + 3D est assumé, comme un dessin animé posé dans une prise de vue réelle. Les ombres et la lumière du personnage 3D suivent celles du décor.\n\nDécor : la devanture et le comptoir, ardoise et carte affichée. plein jour, lumière franche.\nAction : chez [TON RESTAURANT], Les plats qui sortent, ceux qui entrent. À 5 secondes, le geste bascule et le personnage 3D réagit.\nDeux dernières secondes : les deux regardent l'objectif, immobiles.\n\nAudio : ambiance réelle du restaurant, aucun dialogue, pas de musique.\n\nÉléments à remplacer : [TON RESTAURANT], [TON PLAT], [TON PRÉNOM]."
+        "consigne": "Commencez par ce que vous avez déjà : dix secondes de votre plat, de votre salle, de votre équipe. Filmé au téléphone, à la verticale. Si vous n'avez rien, l'étape suivante fabrique l'image à votre place.",
+        "lien": "https://site.foodeatup.com/",
+        "prompt": "Ce que je fournis pour l'épisode [TON NUMÉRO] :\n\n— une vidéo verticale de 10 s de [TON PLAT], filmée au téléphone\n— une photo de [TON RESTAURANT] : la salle, la devanture ou le pass\n— mon logo, si j'en ai un\n\nCe que je n'ai pas et que vous complétez avec vos gabarits : [CE QUI ME MANQUE]."
       },
       {
         "etape": 2,
-        "titre": "Le montage",
-        "outil": "Claude Code",
-        "guide": "tomate",
-        "consigne": "Dépose ton plan et ton avatar dans le dépôt, puis écris cette phrase à Claude Code. Tu n'ouvres aucun logiciel de montage.",
-        "lien": "https://claude.com/claude-code",
-        "prompt": "Monte l'épisode [TON NUMÉRO] de ma série.\n\n— Plan comique : assets/hooks/[TON NUMÉRO].mp4\n— Avatar : assets/avatar/[TON NUMÉRO].mp4\n— Écran du logiciel : assets/software/[TON NUMÉRO].mp4\n— Accroche à incruster : « La carte change lundi. »\n— Punchline en voix off à 5,0 s : « Oui, on retire un plat que vous aimiez. »\n\nAnatomie : A 0→9,5 · sting 9,5→18,5 · avatar seul 18,5→28,5 · signature 28,5→32,5 · sting de marque 32,5→37,5.\nContrôle le master avant de me le rendre : 37,5 s, 1080×1920, -14 LUFS, crête sous -1 dBTP."
+        "titre": "Le plan d'ouverture",
+        "outil": "Higgsfield",
+        "cote": "restaurant",
+        "guide": "ail",
+        "consigne": "Si vous n'avez pas d'images, ce prompt les fabrique. Remplacez ce qui est entre crochets, collez dans Higgsfield, lancez. Dix secondes plus tard, vous avez votre plan.",
+        "lien": "https://higgsfield.ai/",
+        "prompt": "Vertical 9:16, 10 secondes, 4K. PAS de texte incrusté, PAS de sous-titres, PAS de filigrane, PAS de logo dans l'image.\n\nIDENTITÉ VISUELLE : RapidoCMS. Bleu #03A9F5 présent dans le décor — un écran, une lumière, un objet — sans jamais former de logo. Tons clairs, blancs, gris #383838. Pas de crème, pas d'orange.\n\nDEUX personnages dans le même plan :\n— L'Ail, personnage 3D stylisé de la Brigade Végé-Fruitée, EN VEDETTE, au premier plan, deux tiers du cadre. C'est lui qui agit : il tient la carte à jour partout à la fois ;\n— le chef, PHOTORÉALISTE, veste blanche et tablier, en retrait dans [TON RESTAURANT]. Il regarde faire, il ne fait pas.\n\nLe mélange photo + 3D est assumé, comme un dessin animé posé dans une prise de vue réelle. Les ombres du personnage 3D suivent celles du décor.\n\nDécor : la devanture et le comptoir, ardoise et carte affichée. plein jour, lumière franche.\nAction : chez [TON RESTAURANT], Les plats qui sortent, ceux qui entrent.\nÀ 5 secondes, le geste aboutit et le chef réagit — surpris, puis convaincu.\nDeux dernières secondes : les deux regardent l'objectif côte à côte, immobiles.\n\nAudio : ambiance réelle du restaurant, un bip d'interface discret à 5 secondes, aucun dialogue, pas de musique.\n\nÀ remplacer : [TON RESTAURANT], [TON PLAT], [TON PRÉNOM]."
       },
       {
         "etape": 3,
+        "titre": "Le montage",
+        "outil": "Claude Code",
+        "cote": "rapidocms",
+        "guide": "tomate",
+        "consigne": "Le hook, la signature de fin et les logos sont ceux de RapidoCMS — vous ne les fournissez pas, ils sont dans le gabarit. Vos images occupent le centre. Vous n'ouvrez aucun logiciel de montage.",
+        "lien": "https://claude.com/claude-code",
+        "prompt": "Monte l'épisode [TON NUMÉRO] de ma série, gabarit RapidoCMS.\n\n— Plan d'ouverture : assets/hooks/[TON NUMÉRO].mp4\n— Personnage qui explique : assets/avatar/[TON NUMÉRO].mp4 (L'Ail, avatar HeyGen)\n— Mes images de restaurant : assets/software/[TON NUMÉRO].mp4\n— Accroche à incruster : « La carte change lundi. »\n— Punchline en voix off à 5,0 s : « Oui, on retire un plat que vous aimiez. »\n\nHabillage : hook, signature de fin et logos en charte RapidoCMS — bleu #03A9F5, gris #383838, fond blanc. Pas de crème, pas d'orange.\nAnatomie : A 0→9,5 · sting RapidoCMS 9,5→18,5 · le personnage seul 18,5→28,5 · signature RapidoCMS 28,5→32,5 · sting de marque 32,5→37,5.\nContrôle avant de me le rendre : 37,5 s, 1080×1920, -14 LUFS, crête sous -1 dBTP."
+      },
+      {
+        "etape": 4,
         "titre": "La publication",
         "outil": "RapidoCMS",
+        "cote": "rapidocms",
         "guide": "betterave",
-        "consigne": "Une phrase, et les cinq réseaux sont programmés. Tu ne téléverses rien nulle part.",
+        "consigne": "Une phrase, et les cinq réseaux sont programmés. Le master part d'abord dans votre bibliothèque, puis en ligne. Vous ne téléversez rien nulle part.",
         "lien": "https://cms.rapidosoftware.com/register",
-        "prompt": "Verse le master dans ma bibliothèque RapidoCMS, puis programme les cinq réseaux de [TON RESTAURANT] :\n\n— LinkedIn à 8 h, Facebook à 12 h, YouTube à 10 h, Instagram à 18 h 30, TikTok à 19 h\n— Légende : « La carte change lundi. Oui, on retire un plat que vous aimiez. » puis le corps, puis « [TON APPEL À L'ACTION] : [TON SITE] »\n— Mots-dièse : #restaurant #[TA VILLE] #[TA SPÉCIALITÉ]\n\nRends-moi le lien de chaque publication."
+        "prompt": "Verse le master dans ma bibliothèque RapidoCMS, puis programme les cinq réseaux de [TON RESTAURANT] :\n\n— LinkedIn à 8 h, YouTube à 10 h, Facebook à 12 h, Instagram à 18 h 30, TikTok à 19 h\n— Légende : « La carte change lundi. Oui, on retire un plat que vous aimiez. » puis le corps, puis « [TON APPEL À L'ACTION] : [TON SITE] »\n— Mots-dièse : #restaurant #[TA VILLE] #[TA SPÉCIALITÉ]\n\nRends-moi le lien de chaque publication."
       }
     ],
     "tutoriel": null
@@ -22009,35 +22349,48 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       }
     },
     "promptVignette": "Illustration 3D, cadrage vertical 9:16, même style que l'image de référence jointe. Le personnage de l'image de référence — Le Navet — gardé À L'IDENTIQUE : mêmes proportions, mêmes couleurs, même tenue, même accessoire. Ne le redessine pas, ne change pas son visage. Il est LA VEDETTE de l'image et occupe les deux tiers du cadre, en premier plan, tourné vers l'objectif. Ce qu'il fait ici : il fait le compte de ce qui a marché. Scène : on recrute. On recrute. Voilà la vérité. Décor derrière lui : la devanture et le comptoir, ardoise et carte affichée. plein jour, lumière franche. Le décor reste flou et discret — c'est un fond, pas un sujet. Aucun humain photoréaliste dans l'image, aucun écran de logiciel lisible. Bande bleu RapidoCMS #03A9F5 en haut du cadre sur un cinquième de la hauteur, portant UNIQUEMENT le texte « RECRUTE » en typographie arrondie très grasse, blanc, centré. Aucun autre texte, aucun logo ajouté, pas de filigrane, pas de bordure décorative.",
-    "higgsfieldPrompt": "Vertical 9:16, 10 secondes, 4K. PAS de texte incrusté, PAS de sous-titres, PAS de filigrane, PAS de logo.\n\nDEUX personnages dans le même plan, et c'est voulu :\n— le chef, PHOTORÉALISTE, joue le rôle : directeur. Veste blanche, tablier, il est chez lui dans son restaurant ;\n— Le Navet, personnage 3D stylisé de la Brigade Végé-Fruitée, incrusté dans le même décor à côté de lui, à hauteur de comptoir. Il ne parle pas : il fait le geste de son métier — il fait le compte de ce qui a marché.\n\nLe mélange photo + 3D est assumé, comme un dessin animé posé dans une prise de vue réelle. Les ombres et la lumière du personnage 3D suivent celles du décor.\n\nDécor : la devanture et le comptoir, ardoise et carte affichée. plein jour, lumière franche.\nAction : Le poste, l'équipe, les horaires réels. À 5 secondes, le geste bascule et le personnage 3D réagit.\nDeux dernières secondes : les deux regardent l'objectif, immobiles.\n\nAudio : ambiance réelle du restaurant, aucun dialogue, pas de musique.",
-    "scriptHeygen": "Le poste, l'équipe, les horaires réels. Les horaires, on les dit.",
+    "higgsfieldPrompt": "Vertical 9:16, 10 secondes, 4K. PAS de texte incrusté, PAS de sous-titres, PAS de filigrane, PAS de logo dans l'image.\n\nIDENTITÉ VISUELLE : RapidoCMS. Bleu #03A9F5 présent dans le décor — un écran, une lumière, un objet — sans jamais former de logo. Tons clairs, blancs, gris #383838. Pas de crème, pas d'orange.\n\nDEUX personnages dans le même plan :\n— Le Navet, personnage 3D stylisé de la Brigade Végé-Fruitée, EN VEDETTE, au premier plan, deux tiers du cadre. C'est lui qui agit : il fait le compte de ce qui a marché ;\n— le chef, PHOTORÉALISTE, veste blanche et tablier, en retrait dans son restaurant. Il regarde faire, il ne fait pas.\n\nLe mélange photo + 3D est assumé, comme un dessin animé posé dans une prise de vue réelle. Les ombres du personnage 3D suivent celles du décor.\n\nDécor : la devanture et le comptoir, ardoise et carte affichée. plein jour, lumière franche.\nAction : Le poste, l'équipe, les horaires réels.\nÀ 5 secondes, le geste aboutit et le chef réagit — surpris, puis convaincu.\nDeux dernières secondes : les deux regardent l'objectif côte à côte, immobiles.\n\nAudio : ambiance réelle du restaurant, un bip d'interface discret à 5 secondes, aucun dialogue, pas de musique.",
+    "scriptHeygen": "Moi c'est Le Navet. Pour cet épisode, il fait le compte de ce qui a marché — vous me le demandez en une phrase. Vos photos, notre gabarit : la vidéo part sur vos cinq réseaux le soir même.",
     "kit": [
       {
         "etape": 1,
-        "titre": "Le plan comique",
-        "outil": "Higgsfield",
+        "titre": "Vos images",
+        "outil": "Chez vous",
+        "cote": "restaurant",
         "guide": "navet",
-        "consigne": "Remplace ce qui est entre crochets par ce qui est chez toi, colle le tout dans Higgsfield, et lance. Dix secondes plus tard tu as ton plan.",
-        "lien": "https://higgsfield.ai/",
-        "prompt": "Vertical 9:16, 10 secondes, 4K. PAS de texte incrusté, PAS de sous-titres, PAS de filigrane, PAS de logo.\n\nDEUX personnages dans le même plan, et c'est voulu :\n— le chef, PHOTORÉALISTE, joue le rôle : directeur. Veste blanche, tablier, il est chez lui dans [TON RESTAURANT] ;\n— Le Navet, personnage 3D stylisé de la Brigade Végé-Fruitée, incrusté dans le même décor à côté de lui, à hauteur de comptoir. Il ne parle pas : il fait le geste de son métier — il fait le compte de ce qui a marché.\n\nLe mélange photo + 3D est assumé, comme un dessin animé posé dans une prise de vue réelle. Les ombres et la lumière du personnage 3D suivent celles du décor.\n\nDécor : la devanture et le comptoir, ardoise et carte affichée. plein jour, lumière franche.\nAction : chez [TON RESTAURANT], Le poste, l'équipe, les horaires réels. À 5 secondes, le geste bascule et le personnage 3D réagit.\nDeux dernières secondes : les deux regardent l'objectif, immobiles.\n\nAudio : ambiance réelle du restaurant, aucun dialogue, pas de musique.\n\nÉléments à remplacer : [TON RESTAURANT], [TON PLAT], [TON PRÉNOM]."
+        "consigne": "Commencez par ce que vous avez déjà : dix secondes de votre plat, de votre salle, de votre équipe. Filmé au téléphone, à la verticale. Si vous n'avez rien, l'étape suivante fabrique l'image à votre place.",
+        "lien": "https://site.foodeatup.com/",
+        "prompt": "Ce que je fournis pour l'épisode [TON NUMÉRO] :\n\n— une vidéo verticale de 10 s de [TON PLAT], filmée au téléphone\n— une photo de [TON RESTAURANT] : la salle, la devanture ou le pass\n— mon logo, si j'en ai un\n\nCe que je n'ai pas et que vous complétez avec vos gabarits : [CE QUI ME MANQUE]."
       },
       {
         "etape": 2,
-        "titre": "Le montage",
-        "outil": "Claude Code",
-        "guide": "tomate",
-        "consigne": "Dépose ton plan et ton avatar dans le dépôt, puis écris cette phrase à Claude Code. Tu n'ouvres aucun logiciel de montage.",
-        "lien": "https://claude.com/claude-code",
-        "prompt": "Monte l'épisode [TON NUMÉRO] de ma série.\n\n— Plan comique : assets/hooks/[TON NUMÉRO].mp4\n— Avatar : assets/avatar/[TON NUMÉRO].mp4\n— Écran du logiciel : assets/software/[TON NUMÉRO].mp4\n— Accroche à incruster : « On recrute. Voilà la vérité. »\n— Punchline en voix off à 5,0 s : « Les horaires, on les dit. »\n\nAnatomie : A 0→9,5 · sting 9,5→18,5 · avatar seul 18,5→28,5 · signature 28,5→32,5 · sting de marque 32,5→37,5.\nContrôle le master avant de me le rendre : 37,5 s, 1080×1920, -14 LUFS, crête sous -1 dBTP."
+        "titre": "Le plan d'ouverture",
+        "outil": "Higgsfield",
+        "cote": "restaurant",
+        "guide": "navet",
+        "consigne": "Si vous n'avez pas d'images, ce prompt les fabrique. Remplacez ce qui est entre crochets, collez dans Higgsfield, lancez. Dix secondes plus tard, vous avez votre plan.",
+        "lien": "https://higgsfield.ai/",
+        "prompt": "Vertical 9:16, 10 secondes, 4K. PAS de texte incrusté, PAS de sous-titres, PAS de filigrane, PAS de logo dans l'image.\n\nIDENTITÉ VISUELLE : RapidoCMS. Bleu #03A9F5 présent dans le décor — un écran, une lumière, un objet — sans jamais former de logo. Tons clairs, blancs, gris #383838. Pas de crème, pas d'orange.\n\nDEUX personnages dans le même plan :\n— Le Navet, personnage 3D stylisé de la Brigade Végé-Fruitée, EN VEDETTE, au premier plan, deux tiers du cadre. C'est lui qui agit : il fait le compte de ce qui a marché ;\n— le chef, PHOTORÉALISTE, veste blanche et tablier, en retrait dans [TON RESTAURANT]. Il regarde faire, il ne fait pas.\n\nLe mélange photo + 3D est assumé, comme un dessin animé posé dans une prise de vue réelle. Les ombres du personnage 3D suivent celles du décor.\n\nDécor : la devanture et le comptoir, ardoise et carte affichée. plein jour, lumière franche.\nAction : chez [TON RESTAURANT], Le poste, l'équipe, les horaires réels.\nÀ 5 secondes, le geste aboutit et le chef réagit — surpris, puis convaincu.\nDeux dernières secondes : les deux regardent l'objectif côte à côte, immobiles.\n\nAudio : ambiance réelle du restaurant, un bip d'interface discret à 5 secondes, aucun dialogue, pas de musique.\n\nÀ remplacer : [TON RESTAURANT], [TON PLAT], [TON PRÉNOM]."
       },
       {
         "etape": 3,
+        "titre": "Le montage",
+        "outil": "Claude Code",
+        "cote": "rapidocms",
+        "guide": "tomate",
+        "consigne": "Le hook, la signature de fin et les logos sont ceux de RapidoCMS — vous ne les fournissez pas, ils sont dans le gabarit. Vos images occupent le centre. Vous n'ouvrez aucun logiciel de montage.",
+        "lien": "https://claude.com/claude-code",
+        "prompt": "Monte l'épisode [TON NUMÉRO] de ma série, gabarit RapidoCMS.\n\n— Plan d'ouverture : assets/hooks/[TON NUMÉRO].mp4\n— Personnage qui explique : assets/avatar/[TON NUMÉRO].mp4 (Le Navet, avatar HeyGen)\n— Mes images de restaurant : assets/software/[TON NUMÉRO].mp4\n— Accroche à incruster : « On recrute. Voilà la vérité. »\n— Punchline en voix off à 5,0 s : « Les horaires, on les dit. »\n\nHabillage : hook, signature de fin et logos en charte RapidoCMS — bleu #03A9F5, gris #383838, fond blanc. Pas de crème, pas d'orange.\nAnatomie : A 0→9,5 · sting RapidoCMS 9,5→18,5 · le personnage seul 18,5→28,5 · signature RapidoCMS 28,5→32,5 · sting de marque 32,5→37,5.\nContrôle avant de me le rendre : 37,5 s, 1080×1920, -14 LUFS, crête sous -1 dBTP."
+      },
+      {
+        "etape": 4,
         "titre": "La publication",
         "outil": "RapidoCMS",
+        "cote": "rapidocms",
         "guide": "betterave",
-        "consigne": "Une phrase, et les cinq réseaux sont programmés. Tu ne téléverses rien nulle part.",
+        "consigne": "Une phrase, et les cinq réseaux sont programmés. Le master part d'abord dans votre bibliothèque, puis en ligne. Vous ne téléversez rien nulle part.",
         "lien": "https://cms.rapidosoftware.com/register",
-        "prompt": "Verse le master dans ma bibliothèque RapidoCMS, puis programme les cinq réseaux de [TON RESTAURANT] :\n\n— LinkedIn à 8 h, Facebook à 12 h, YouTube à 10 h, Instagram à 18 h 30, TikTok à 19 h\n— Légende : « On recrute. Voilà la vérité. Les horaires, on les dit. » puis le corps, puis « [TON APPEL À L'ACTION] : [TON SITE] »\n— Mots-dièse : #restaurant #[TA VILLE] #[TA SPÉCIALITÉ]\n\nRends-moi le lien de chaque publication."
+        "prompt": "Verse le master dans ma bibliothèque RapidoCMS, puis programme les cinq réseaux de [TON RESTAURANT] :\n\n— LinkedIn à 8 h, YouTube à 10 h, Facebook à 12 h, Instagram à 18 h 30, TikTok à 19 h\n— Légende : « On recrute. Voilà la vérité. Les horaires, on les dit. » puis le corps, puis « [TON APPEL À L'ACTION] : [TON SITE] »\n— Mots-dièse : #restaurant #[TA VILLE] #[TA SPÉCIALITÉ]\n\nRends-moi le lien de chaque publication."
       }
     ],
     "tutoriel": null
@@ -22157,35 +22510,48 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       }
     },
     "promptVignette": "Illustration 3D, cadrage vertical 9:16, même style que l'image de référence jointe. Le personnage de l'image de référence — La Betterave — gardé À L'IDENTIQUE : mêmes proportions, mêmes couleurs, même tenue, même accessoire. Ne le redessine pas, ne change pas son visage. Il est LA VEDETTE de l'image et occupe les deux tiers du cadre, en premier plan, tourné vers l'objectif. Ce qu'il fait ici : elle programme les cinq réseaux aux bons créneaux. Scène : à emporter, sans que ça refroidisse. Chaud à l'arrivée. Décor derrière lui : la devanture et le comptoir, ardoise et carte affichée. plein jour, lumière franche. Le décor reste flou et discret — c'est un fond, pas un sujet. Aucun humain photoréaliste dans l'image, aucun écran de logiciel lisible. Bande bleu RapidoCMS #03A9F5 en haut du cadre sur un cinquième de la hauteur, portant UNIQUEMENT le texte « EMPORTER ÇA REFROIDISSE » en typographie arrondie très grasse, blanc, centré. Aucun autre texte, aucun logo ajouté, pas de filigrane, pas de bordure décorative.",
-    "higgsfieldPrompt": "Vertical 9:16, 10 secondes, 4K. PAS de texte incrusté, PAS de sous-titres, PAS de filigrane, PAS de logo.\n\nDEUX personnages dans le même plan, et c'est voulu :\n— le chef, PHOTORÉALISTE, joue le rôle : chef. Veste blanche, tablier, il est chez lui dans son restaurant ;\n— La Betterave, personnage 3D stylisé de la Brigade Végé-Fruitée, incrusté dans le même décor à côté de lui, à hauteur de comptoir. Il ne parle pas : il fait le geste de son métier — elle programme les cinq réseaux aux bons créneaux.\n\nLe mélange photo + 3D est assumé, comme un dessin animé posé dans une prise de vue réelle. Les ombres et la lumière du personnage 3D suivent celles du décor.\n\nDécor : la devanture et le comptoir, ardoise et carte affichée. plein jour, lumière franche.\nAction : La commande à emporter préparée au bon moment, pas trop tôt. À 5 secondes, le geste bascule et le personnage 3D réagit.\nDeux dernières secondes : les deux regardent l'objectif, immobiles.\n\nAudio : ambiance réelle du restaurant, aucun dialogue, pas de musique.",
-    "scriptHeygen": "La commande à emporter préparée au bon moment, pas trop tôt. Jamais préparé trop tôt.",
+    "higgsfieldPrompt": "Vertical 9:16, 10 secondes, 4K. PAS de texte incrusté, PAS de sous-titres, PAS de filigrane, PAS de logo dans l'image.\n\nIDENTITÉ VISUELLE : RapidoCMS. Bleu #03A9F5 présent dans le décor — un écran, une lumière, un objet — sans jamais former de logo. Tons clairs, blancs, gris #383838. Pas de crème, pas d'orange.\n\nDEUX personnages dans le même plan :\n— La Betterave, personnage 3D stylisé de la Brigade Végé-Fruitée, EN VEDETTE, au premier plan, deux tiers du cadre. C'est lui qui agit : elle programme les cinq réseaux aux bons créneaux ;\n— le chef, PHOTORÉALISTE, veste blanche et tablier, en retrait dans son restaurant. Il regarde faire, il ne fait pas.\n\nLe mélange photo + 3D est assumé, comme un dessin animé posé dans une prise de vue réelle. Les ombres du personnage 3D suivent celles du décor.\n\nDécor : la devanture et le comptoir, ardoise et carte affichée. plein jour, lumière franche.\nAction : La commande à emporter préparée au bon moment, pas trop tôt.\nÀ 5 secondes, le geste aboutit et le chef réagit — surpris, puis convaincu.\nDeux dernières secondes : les deux regardent l'objectif côte à côte, immobiles.\n\nAudio : ambiance réelle du restaurant, un bip d'interface discret à 5 secondes, aucun dialogue, pas de musique.",
+    "scriptHeygen": "Moi c'est La Betterave. Pour cet épisode, elle programme les cinq réseaux aux bons créneaux — vous me le demandez en une phrase. Vos photos, notre gabarit : la vidéo part sur vos cinq réseaux le soir même.",
     "kit": [
       {
         "etape": 1,
-        "titre": "Le plan comique",
-        "outil": "Higgsfield",
+        "titre": "Vos images",
+        "outil": "Chez vous",
+        "cote": "restaurant",
         "guide": "betterave",
-        "consigne": "Remplace ce qui est entre crochets par ce qui est chez toi, colle le tout dans Higgsfield, et lance. Dix secondes plus tard tu as ton plan.",
-        "lien": "https://higgsfield.ai/",
-        "prompt": "Vertical 9:16, 10 secondes, 4K. PAS de texte incrusté, PAS de sous-titres, PAS de filigrane, PAS de logo.\n\nDEUX personnages dans le même plan, et c'est voulu :\n— le chef, PHOTORÉALISTE, joue le rôle : chef. Veste blanche, tablier, il est chez lui dans [TON RESTAURANT] ;\n— La Betterave, personnage 3D stylisé de la Brigade Végé-Fruitée, incrusté dans le même décor à côté de lui, à hauteur de comptoir. Il ne parle pas : il fait le geste de son métier — elle programme les cinq réseaux aux bons créneaux.\n\nLe mélange photo + 3D est assumé, comme un dessin animé posé dans une prise de vue réelle. Les ombres et la lumière du personnage 3D suivent celles du décor.\n\nDécor : la devanture et le comptoir, ardoise et carte affichée. plein jour, lumière franche.\nAction : chez [TON RESTAURANT], La commande à emporter préparée au bon moment, pas trop tôt. À 5 secondes, le geste bascule et le personnage 3D réagit.\nDeux dernières secondes : les deux regardent l'objectif, immobiles.\n\nAudio : ambiance réelle du restaurant, aucun dialogue, pas de musique.\n\nÉléments à remplacer : [TON RESTAURANT], [TON PLAT], [TON PRÉNOM]."
+        "consigne": "Commencez par ce que vous avez déjà : dix secondes de votre plat, de votre salle, de votre équipe. Filmé au téléphone, à la verticale. Si vous n'avez rien, l'étape suivante fabrique l'image à votre place.",
+        "lien": "https://site.foodeatup.com/",
+        "prompt": "Ce que je fournis pour l'épisode [TON NUMÉRO] :\n\n— une vidéo verticale de 10 s de [TON PLAT], filmée au téléphone\n— une photo de [TON RESTAURANT] : la salle, la devanture ou le pass\n— mon logo, si j'en ai un\n\nCe que je n'ai pas et que vous complétez avec vos gabarits : [CE QUI ME MANQUE]."
       },
       {
         "etape": 2,
-        "titre": "Le montage",
-        "outil": "Claude Code",
-        "guide": "tomate",
-        "consigne": "Dépose ton plan et ton avatar dans le dépôt, puis écris cette phrase à Claude Code. Tu n'ouvres aucun logiciel de montage.",
-        "lien": "https://claude.com/claude-code",
-        "prompt": "Monte l'épisode [TON NUMÉRO] de ma série.\n\n— Plan comique : assets/hooks/[TON NUMÉRO].mp4\n— Avatar : assets/avatar/[TON NUMÉRO].mp4\n— Écran du logiciel : assets/software/[TON NUMÉRO].mp4\n— Accroche à incruster : « Chaud à l'arrivée. »\n— Punchline en voix off à 5,0 s : « Jamais préparé trop tôt. »\n\nAnatomie : A 0→9,5 · sting 9,5→18,5 · avatar seul 18,5→28,5 · signature 28,5→32,5 · sting de marque 32,5→37,5.\nContrôle le master avant de me le rendre : 37,5 s, 1080×1920, -14 LUFS, crête sous -1 dBTP."
+        "titre": "Le plan d'ouverture",
+        "outil": "Higgsfield",
+        "cote": "restaurant",
+        "guide": "betterave",
+        "consigne": "Si vous n'avez pas d'images, ce prompt les fabrique. Remplacez ce qui est entre crochets, collez dans Higgsfield, lancez. Dix secondes plus tard, vous avez votre plan.",
+        "lien": "https://higgsfield.ai/",
+        "prompt": "Vertical 9:16, 10 secondes, 4K. PAS de texte incrusté, PAS de sous-titres, PAS de filigrane, PAS de logo dans l'image.\n\nIDENTITÉ VISUELLE : RapidoCMS. Bleu #03A9F5 présent dans le décor — un écran, une lumière, un objet — sans jamais former de logo. Tons clairs, blancs, gris #383838. Pas de crème, pas d'orange.\n\nDEUX personnages dans le même plan :\n— La Betterave, personnage 3D stylisé de la Brigade Végé-Fruitée, EN VEDETTE, au premier plan, deux tiers du cadre. C'est lui qui agit : elle programme les cinq réseaux aux bons créneaux ;\n— le chef, PHOTORÉALISTE, veste blanche et tablier, en retrait dans [TON RESTAURANT]. Il regarde faire, il ne fait pas.\n\nLe mélange photo + 3D est assumé, comme un dessin animé posé dans une prise de vue réelle. Les ombres du personnage 3D suivent celles du décor.\n\nDécor : la devanture et le comptoir, ardoise et carte affichée. plein jour, lumière franche.\nAction : chez [TON RESTAURANT], La commande à emporter préparée au bon moment, pas trop tôt.\nÀ 5 secondes, le geste aboutit et le chef réagit — surpris, puis convaincu.\nDeux dernières secondes : les deux regardent l'objectif côte à côte, immobiles.\n\nAudio : ambiance réelle du restaurant, un bip d'interface discret à 5 secondes, aucun dialogue, pas de musique.\n\nÀ remplacer : [TON RESTAURANT], [TON PLAT], [TON PRÉNOM]."
       },
       {
         "etape": 3,
+        "titre": "Le montage",
+        "outil": "Claude Code",
+        "cote": "rapidocms",
+        "guide": "tomate",
+        "consigne": "Le hook, la signature de fin et les logos sont ceux de RapidoCMS — vous ne les fournissez pas, ils sont dans le gabarit. Vos images occupent le centre. Vous n'ouvrez aucun logiciel de montage.",
+        "lien": "https://claude.com/claude-code",
+        "prompt": "Monte l'épisode [TON NUMÉRO] de ma série, gabarit RapidoCMS.\n\n— Plan d'ouverture : assets/hooks/[TON NUMÉRO].mp4\n— Personnage qui explique : assets/avatar/[TON NUMÉRO].mp4 (La Betterave, avatar HeyGen)\n— Mes images de restaurant : assets/software/[TON NUMÉRO].mp4\n— Accroche à incruster : « Chaud à l'arrivée. »\n— Punchline en voix off à 5,0 s : « Jamais préparé trop tôt. »\n\nHabillage : hook, signature de fin et logos en charte RapidoCMS — bleu #03A9F5, gris #383838, fond blanc. Pas de crème, pas d'orange.\nAnatomie : A 0→9,5 · sting RapidoCMS 9,5→18,5 · le personnage seul 18,5→28,5 · signature RapidoCMS 28,5→32,5 · sting de marque 32,5→37,5.\nContrôle avant de me le rendre : 37,5 s, 1080×1920, -14 LUFS, crête sous -1 dBTP."
+      },
+      {
+        "etape": 4,
         "titre": "La publication",
         "outil": "RapidoCMS",
+        "cote": "rapidocms",
         "guide": "betterave",
-        "consigne": "Une phrase, et les cinq réseaux sont programmés. Tu ne téléverses rien nulle part.",
+        "consigne": "Une phrase, et les cinq réseaux sont programmés. Le master part d'abord dans votre bibliothèque, puis en ligne. Vous ne téléversez rien nulle part.",
         "lien": "https://cms.rapidosoftware.com/register",
-        "prompt": "Verse le master dans ma bibliothèque RapidoCMS, puis programme les cinq réseaux de [TON RESTAURANT] :\n\n— LinkedIn à 8 h, Facebook à 12 h, YouTube à 10 h, Instagram à 18 h 30, TikTok à 19 h\n— Légende : « Chaud à l'arrivée. Jamais préparé trop tôt. » puis le corps, puis « [TON APPEL À L'ACTION] : [TON SITE] »\n— Mots-dièse : #restaurant #[TA VILLE] #[TA SPÉCIALITÉ]\n\nRends-moi le lien de chaque publication."
+        "prompt": "Verse le master dans ma bibliothèque RapidoCMS, puis programme les cinq réseaux de [TON RESTAURANT] :\n\n— LinkedIn à 8 h, YouTube à 10 h, Facebook à 12 h, Instagram à 18 h 30, TikTok à 19 h\n— Légende : « Chaud à l'arrivée. Jamais préparé trop tôt. » puis le corps, puis « [TON APPEL À L'ACTION] : [TON SITE] »\n— Mots-dièse : #restaurant #[TA VILLE] #[TA SPÉCIALITÉ]\n\nRends-moi le lien de chaque publication."
       }
     ],
     "tutoriel": null
@@ -22305,35 +22671,48 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       }
     },
     "promptVignette": "Illustration 3D, cadrage vertical 9:16, même style que l'image de référence jointe. Le personnage de l'image de référence — La Carotte — gardé À L'IDENTIQUE : mêmes proportions, mêmes couleurs, même tenue, même accessoire. Ne le redessine pas, ne change pas son visage. Il est LA VEDETTE de l'image et occupe les deux tiers du cadre, en premier plan, tourné vers l'objectif. Ce qu'il fait ici : elle relit tout avant que ça sorte. Scène : le jour de fermeture. Fermé le lundi. Décor derrière lui : la devanture et le comptoir, ardoise et carte affichée. plein jour, lumière franche. Le décor reste flou et discret — c'est un fond, pas un sujet. Aucun humain photoréaliste dans l'image, aucun écran de logiciel lisible. Bande bleu RapidoCMS #03A9F5 en haut du cadre sur un cinquième de la hauteur, portant UNIQUEMENT le texte « JOUR FERMETURE » en typographie arrondie très grasse, blanc, centré. Aucun autre texte, aucun logo ajouté, pas de filigrane, pas de bordure décorative.",
-    "higgsfieldPrompt": "Vertical 9:16, 10 secondes, 4K. PAS de texte incrusté, PAS de sous-titres, PAS de filigrane, PAS de logo.\n\nDEUX personnages dans le même plan, et c'est voulu :\n— le chef, PHOTORÉALISTE, joue le rôle : directeur. Veste blanche, tablier, il est chez lui dans son restaurant ;\n— La Carotte, personnage 3D stylisé de la Brigade Végé-Fruitée, incrusté dans le même décor à côté de lui, à hauteur de comptoir. Il ne parle pas : il fait le geste de son métier — elle relit tout avant que ça sorte.\n\nLe mélange photo + 3D est assumé, comme un dessin animé posé dans une prise de vue réelle. Les ombres et la lumière du personnage 3D suivent celles du décor.\n\nDécor : la devanture et le comptoir, ardoise et carte affichée. plein jour, lumière franche.\nAction : Ce qu'on fait le lundi : les commandes, les plannings, la compta, la carte de la semaine. À 5 secondes, le geste bascule et le personnage 3D réagit.\nDeux dernières secondes : les deux regardent l'objectif, immobiles.\n\nAudio : ambiance réelle du restaurant, aucun dialogue, pas de musique.",
-    "scriptHeygen": "Ce qu'on fait le lundi : les commandes, les plannings, la compta, la carte de la semaine. Ce n'est pas un jour de repos.",
+    "higgsfieldPrompt": "Vertical 9:16, 10 secondes, 4K. PAS de texte incrusté, PAS de sous-titres, PAS de filigrane, PAS de logo dans l'image.\n\nIDENTITÉ VISUELLE : RapidoCMS. Bleu #03A9F5 présent dans le décor — un écran, une lumière, un objet — sans jamais former de logo. Tons clairs, blancs, gris #383838. Pas de crème, pas d'orange.\n\nDEUX personnages dans le même plan :\n— La Carotte, personnage 3D stylisé de la Brigade Végé-Fruitée, EN VEDETTE, au premier plan, deux tiers du cadre. C'est lui qui agit : elle relit tout avant que ça sorte ;\n— le chef, PHOTORÉALISTE, veste blanche et tablier, en retrait dans son restaurant. Il regarde faire, il ne fait pas.\n\nLe mélange photo + 3D est assumé, comme un dessin animé posé dans une prise de vue réelle. Les ombres du personnage 3D suivent celles du décor.\n\nDécor : la devanture et le comptoir, ardoise et carte affichée. plein jour, lumière franche.\nAction : Ce qu'on fait le lundi : les commandes, les plannings, la compta, la carte de la semaine.\nÀ 5 secondes, le geste aboutit et le chef réagit — surpris, puis convaincu.\nDeux dernières secondes : les deux regardent l'objectif côte à côte, immobiles.\n\nAudio : ambiance réelle du restaurant, un bip d'interface discret à 5 secondes, aucun dialogue, pas de musique.",
+    "scriptHeygen": "Moi c'est La Carotte. Pour cet épisode, elle relit tout avant que ça sorte — vous me le demandez en une phrase. Vos photos, notre gabarit : la vidéo part sur vos cinq réseaux le soir même.",
     "kit": [
       {
         "etape": 1,
-        "titre": "Le plan comique",
-        "outil": "Higgsfield",
+        "titre": "Vos images",
+        "outil": "Chez vous",
+        "cote": "restaurant",
         "guide": "carotte",
-        "consigne": "Remplace ce qui est entre crochets par ce qui est chez toi, colle le tout dans Higgsfield, et lance. Dix secondes plus tard tu as ton plan.",
-        "lien": "https://higgsfield.ai/",
-        "prompt": "Vertical 9:16, 10 secondes, 4K. PAS de texte incrusté, PAS de sous-titres, PAS de filigrane, PAS de logo.\n\nDEUX personnages dans le même plan, et c'est voulu :\n— le chef, PHOTORÉALISTE, joue le rôle : directeur. Veste blanche, tablier, il est chez lui dans [TON RESTAURANT] ;\n— La Carotte, personnage 3D stylisé de la Brigade Végé-Fruitée, incrusté dans le même décor à côté de lui, à hauteur de comptoir. Il ne parle pas : il fait le geste de son métier — elle relit tout avant que ça sorte.\n\nLe mélange photo + 3D est assumé, comme un dessin animé posé dans une prise de vue réelle. Les ombres et la lumière du personnage 3D suivent celles du décor.\n\nDécor : la devanture et le comptoir, ardoise et carte affichée. plein jour, lumière franche.\nAction : chez [TON RESTAURANT], Ce qu'on fait le lundi : les commandes, les plannings, la compta, la carte de la semaine. À 5 secondes, le geste bascule et le personnage 3D réagit.\nDeux dernières secondes : les deux regardent l'objectif, immobiles.\n\nAudio : ambiance réelle du restaurant, aucun dialogue, pas de musique.\n\nÉléments à remplacer : [TON RESTAURANT], [TON PLAT], [TON PRÉNOM]."
+        "consigne": "Commencez par ce que vous avez déjà : dix secondes de votre plat, de votre salle, de votre équipe. Filmé au téléphone, à la verticale. Si vous n'avez rien, l'étape suivante fabrique l'image à votre place.",
+        "lien": "https://site.foodeatup.com/",
+        "prompt": "Ce que je fournis pour l'épisode [TON NUMÉRO] :\n\n— une vidéo verticale de 10 s de [TON PLAT], filmée au téléphone\n— une photo de [TON RESTAURANT] : la salle, la devanture ou le pass\n— mon logo, si j'en ai un\n\nCe que je n'ai pas et que vous complétez avec vos gabarits : [CE QUI ME MANQUE]."
       },
       {
         "etape": 2,
-        "titre": "Le montage",
-        "outil": "Claude Code",
-        "guide": "tomate",
-        "consigne": "Dépose ton plan et ton avatar dans le dépôt, puis écris cette phrase à Claude Code. Tu n'ouvres aucun logiciel de montage.",
-        "lien": "https://claude.com/claude-code",
-        "prompt": "Monte l'épisode [TON NUMÉRO] de ma série.\n\n— Plan comique : assets/hooks/[TON NUMÉRO].mp4\n— Avatar : assets/avatar/[TON NUMÉRO].mp4\n— Écran du logiciel : assets/software/[TON NUMÉRO].mp4\n— Accroche à incruster : « Fermé le lundi. »\n— Punchline en voix off à 5,0 s : « Ce n'est pas un jour de repos. »\n\nAnatomie : A 0→9,5 · sting 9,5→18,5 · avatar seul 18,5→28,5 · signature 28,5→32,5 · sting de marque 32,5→37,5.\nContrôle le master avant de me le rendre : 37,5 s, 1080×1920, -14 LUFS, crête sous -1 dBTP."
+        "titre": "Le plan d'ouverture",
+        "outil": "Higgsfield",
+        "cote": "restaurant",
+        "guide": "carotte",
+        "consigne": "Si vous n'avez pas d'images, ce prompt les fabrique. Remplacez ce qui est entre crochets, collez dans Higgsfield, lancez. Dix secondes plus tard, vous avez votre plan.",
+        "lien": "https://higgsfield.ai/",
+        "prompt": "Vertical 9:16, 10 secondes, 4K. PAS de texte incrusté, PAS de sous-titres, PAS de filigrane, PAS de logo dans l'image.\n\nIDENTITÉ VISUELLE : RapidoCMS. Bleu #03A9F5 présent dans le décor — un écran, une lumière, un objet — sans jamais former de logo. Tons clairs, blancs, gris #383838. Pas de crème, pas d'orange.\n\nDEUX personnages dans le même plan :\n— La Carotte, personnage 3D stylisé de la Brigade Végé-Fruitée, EN VEDETTE, au premier plan, deux tiers du cadre. C'est lui qui agit : elle relit tout avant que ça sorte ;\n— le chef, PHOTORÉALISTE, veste blanche et tablier, en retrait dans [TON RESTAURANT]. Il regarde faire, il ne fait pas.\n\nLe mélange photo + 3D est assumé, comme un dessin animé posé dans une prise de vue réelle. Les ombres du personnage 3D suivent celles du décor.\n\nDécor : la devanture et le comptoir, ardoise et carte affichée. plein jour, lumière franche.\nAction : chez [TON RESTAURANT], Ce qu'on fait le lundi : les commandes, les plannings, la compta, la carte de la semaine.\nÀ 5 secondes, le geste aboutit et le chef réagit — surpris, puis convaincu.\nDeux dernières secondes : les deux regardent l'objectif côte à côte, immobiles.\n\nAudio : ambiance réelle du restaurant, un bip d'interface discret à 5 secondes, aucun dialogue, pas de musique.\n\nÀ remplacer : [TON RESTAURANT], [TON PLAT], [TON PRÉNOM]."
       },
       {
         "etape": 3,
+        "titre": "Le montage",
+        "outil": "Claude Code",
+        "cote": "rapidocms",
+        "guide": "tomate",
+        "consigne": "Le hook, la signature de fin et les logos sont ceux de RapidoCMS — vous ne les fournissez pas, ils sont dans le gabarit. Vos images occupent le centre. Vous n'ouvrez aucun logiciel de montage.",
+        "lien": "https://claude.com/claude-code",
+        "prompt": "Monte l'épisode [TON NUMÉRO] de ma série, gabarit RapidoCMS.\n\n— Plan d'ouverture : assets/hooks/[TON NUMÉRO].mp4\n— Personnage qui explique : assets/avatar/[TON NUMÉRO].mp4 (La Carotte, avatar HeyGen)\n— Mes images de restaurant : assets/software/[TON NUMÉRO].mp4\n— Accroche à incruster : « Fermé le lundi. »\n— Punchline en voix off à 5,0 s : « Ce n'est pas un jour de repos. »\n\nHabillage : hook, signature de fin et logos en charte RapidoCMS — bleu #03A9F5, gris #383838, fond blanc. Pas de crème, pas d'orange.\nAnatomie : A 0→9,5 · sting RapidoCMS 9,5→18,5 · le personnage seul 18,5→28,5 · signature RapidoCMS 28,5→32,5 · sting de marque 32,5→37,5.\nContrôle avant de me le rendre : 37,5 s, 1080×1920, -14 LUFS, crête sous -1 dBTP."
+      },
+      {
+        "etape": 4,
         "titre": "La publication",
         "outil": "RapidoCMS",
+        "cote": "rapidocms",
         "guide": "betterave",
-        "consigne": "Une phrase, et les cinq réseaux sont programmés. Tu ne téléverses rien nulle part.",
+        "consigne": "Une phrase, et les cinq réseaux sont programmés. Le master part d'abord dans votre bibliothèque, puis en ligne. Vous ne téléversez rien nulle part.",
         "lien": "https://cms.rapidosoftware.com/register",
-        "prompt": "Verse le master dans ma bibliothèque RapidoCMS, puis programme les cinq réseaux de [TON RESTAURANT] :\n\n— LinkedIn à 8 h, Facebook à 12 h, YouTube à 10 h, Instagram à 18 h 30, TikTok à 19 h\n— Légende : « Fermé le lundi. Ce n'est pas un jour de repos. » puis le corps, puis « [TON APPEL À L'ACTION] : [TON SITE] »\n— Mots-dièse : #restaurant #[TA VILLE] #[TA SPÉCIALITÉ]\n\nRends-moi le lien de chaque publication."
+        "prompt": "Verse le master dans ma bibliothèque RapidoCMS, puis programme les cinq réseaux de [TON RESTAURANT] :\n\n— LinkedIn à 8 h, YouTube à 10 h, Facebook à 12 h, Instagram à 18 h 30, TikTok à 19 h\n— Légende : « Fermé le lundi. Ce n'est pas un jour de repos. » puis le corps, puis « [TON APPEL À L'ACTION] : [TON SITE] »\n— Mots-dièse : #restaurant #[TA VILLE] #[TA SPÉCIALITÉ]\n\nRends-moi le lien de chaque publication."
       }
     ],
     "tutoriel": null
@@ -22453,35 +22832,48 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       }
     },
     "promptVignette": "Illustration 3D, cadrage vertical 9:16, même style que l'image de référence jointe. Le personnage de l'image de référence — La Carotte — gardé À L'IDENTIQUE : mêmes proportions, mêmes couleurs, même tenue, même accessoire. Ne le redessine pas, ne change pas son visage. Il est LA VEDETTE de l'image et occupe les deux tiers du cadre, en premier plan, tourné vers l'objectif. Ce qu'il fait ici : elle relit tout avant que ça sorte. Scène : un an de restaurant. Un an. Les vrais chiffres. Décor derrière lui : la devanture et le comptoir, ardoise et carte affichée. plein jour, lumière franche. Le décor reste flou et discret — c'est un fond, pas un sujet. Aucun humain photoréaliste dans l'image, aucun écran de logiciel lisible. Bande bleu RapidoCMS #03A9F5 en haut du cadre sur un cinquième de la hauteur, portant UNIQUEMENT le texte « AN RESTAURANT » en typographie arrondie très grasse, blanc, centré. Aucun autre texte, aucun logo ajouté, pas de filigrane, pas de bordure décorative.",
-    "higgsfieldPrompt": "Vertical 9:16, 10 secondes, 4K. PAS de texte incrusté, PAS de sous-titres, PAS de filigrane, PAS de logo.\n\nDEUX personnages dans le même plan, et c'est voulu :\n— le chef, PHOTORÉALISTE, joue le rôle : directeur. Veste blanche, tablier, il est chez lui dans son restaurant ;\n— La Carotte, personnage 3D stylisé de la Brigade Végé-Fruitée, incrusté dans le même décor à côté de lui, à hauteur de comptoir. Il ne parle pas : il fait le geste de son métier — elle relit tout avant que ça sorte.\n\nLe mélange photo + 3D est assumé, comme un dessin animé posé dans une prise de vue réelle. Les ombres et la lumière du personnage 3D suivent celles du décor.\n\nDécor : la devanture et le comptoir, ardoise et carte affichée. plein jour, lumière franche.\nAction : Les chiffres de l'année, dits sans fard : couverts, plat le plus vendu, avis reçus, gens embauchés. À 5 secondes, le geste bascule et le personnage 3D réagit.\nDeux dernières secondes : les deux regardent l'objectif, immobiles.\n\nAudio : ambiance réelle du restaurant, aucun dialogue, pas de musique.",
-    "scriptHeygen": "Les chiffres de l'année, dits sans fard : couverts, plat le plus vendu, avis reçus, gens embauchés. Merci.",
+    "higgsfieldPrompt": "Vertical 9:16, 10 secondes, 4K. PAS de texte incrusté, PAS de sous-titres, PAS de filigrane, PAS de logo dans l'image.\n\nIDENTITÉ VISUELLE : RapidoCMS. Bleu #03A9F5 présent dans le décor — un écran, une lumière, un objet — sans jamais former de logo. Tons clairs, blancs, gris #383838. Pas de crème, pas d'orange.\n\nDEUX personnages dans le même plan :\n— La Carotte, personnage 3D stylisé de la Brigade Végé-Fruitée, EN VEDETTE, au premier plan, deux tiers du cadre. C'est lui qui agit : elle relit tout avant que ça sorte ;\n— le chef, PHOTORÉALISTE, veste blanche et tablier, en retrait dans son restaurant. Il regarde faire, il ne fait pas.\n\nLe mélange photo + 3D est assumé, comme un dessin animé posé dans une prise de vue réelle. Les ombres du personnage 3D suivent celles du décor.\n\nDécor : la devanture et le comptoir, ardoise et carte affichée. plein jour, lumière franche.\nAction : Les chiffres de l'année, dits sans fard : couverts, plat le plus vendu, avis reçus, gens embauchés.\nÀ 5 secondes, le geste aboutit et le chef réagit — surpris, puis convaincu.\nDeux dernières secondes : les deux regardent l'objectif côte à côte, immobiles.\n\nAudio : ambiance réelle du restaurant, un bip d'interface discret à 5 secondes, aucun dialogue, pas de musique.",
+    "scriptHeygen": "Moi c'est La Carotte. Pour cet épisode, elle relit tout avant que ça sorte — vous me le demandez en une phrase. Vos photos, notre gabarit : la vidéo part sur vos cinq réseaux le soir même.",
     "kit": [
       {
         "etape": 1,
-        "titre": "Le plan comique",
-        "outil": "Higgsfield",
+        "titre": "Vos images",
+        "outil": "Chez vous",
+        "cote": "restaurant",
         "guide": "carotte",
-        "consigne": "Remplace ce qui est entre crochets par ce qui est chez toi, colle le tout dans Higgsfield, et lance. Dix secondes plus tard tu as ton plan.",
-        "lien": "https://higgsfield.ai/",
-        "prompt": "Vertical 9:16, 10 secondes, 4K. PAS de texte incrusté, PAS de sous-titres, PAS de filigrane, PAS de logo.\n\nDEUX personnages dans le même plan, et c'est voulu :\n— le chef, PHOTORÉALISTE, joue le rôle : directeur. Veste blanche, tablier, il est chez lui dans [TON RESTAURANT] ;\n— La Carotte, personnage 3D stylisé de la Brigade Végé-Fruitée, incrusté dans le même décor à côté de lui, à hauteur de comptoir. Il ne parle pas : il fait le geste de son métier — elle relit tout avant que ça sorte.\n\nLe mélange photo + 3D est assumé, comme un dessin animé posé dans une prise de vue réelle. Les ombres et la lumière du personnage 3D suivent celles du décor.\n\nDécor : la devanture et le comptoir, ardoise et carte affichée. plein jour, lumière franche.\nAction : chez [TON RESTAURANT], Les chiffres de l'année, dits sans fard : couverts, plat le plus vendu, avis reçus, gens embauchés. À 5 secondes, le geste bascule et le personnage 3D réagit.\nDeux dernières secondes : les deux regardent l'objectif, immobiles.\n\nAudio : ambiance réelle du restaurant, aucun dialogue, pas de musique.\n\nÉléments à remplacer : [TON RESTAURANT], [TON PLAT], [TON PRÉNOM]."
+        "consigne": "Commencez par ce que vous avez déjà : dix secondes de votre plat, de votre salle, de votre équipe. Filmé au téléphone, à la verticale. Si vous n'avez rien, l'étape suivante fabrique l'image à votre place.",
+        "lien": "https://site.foodeatup.com/",
+        "prompt": "Ce que je fournis pour l'épisode [TON NUMÉRO] :\n\n— une vidéo verticale de 10 s de [TON PLAT], filmée au téléphone\n— une photo de [TON RESTAURANT] : la salle, la devanture ou le pass\n— mon logo, si j'en ai un\n\nCe que je n'ai pas et que vous complétez avec vos gabarits : [CE QUI ME MANQUE]."
       },
       {
         "etape": 2,
-        "titre": "Le montage",
-        "outil": "Claude Code",
-        "guide": "tomate",
-        "consigne": "Dépose ton plan et ton avatar dans le dépôt, puis écris cette phrase à Claude Code. Tu n'ouvres aucun logiciel de montage.",
-        "lien": "https://claude.com/claude-code",
-        "prompt": "Monte l'épisode [TON NUMÉRO] de ma série.\n\n— Plan comique : assets/hooks/[TON NUMÉRO].mp4\n— Avatar : assets/avatar/[TON NUMÉRO].mp4\n— Écran du logiciel : assets/software/[TON NUMÉRO].mp4\n— Accroche à incruster : « Un an. Les vrais chiffres. »\n— Punchline en voix off à 5,0 s : « Merci. »\n\nAnatomie : A 0→9,5 · sting 9,5→18,5 · avatar seul 18,5→28,5 · signature 28,5→32,5 · sting de marque 32,5→37,5.\nContrôle le master avant de me le rendre : 37,5 s, 1080×1920, -14 LUFS, crête sous -1 dBTP."
+        "titre": "Le plan d'ouverture",
+        "outil": "Higgsfield",
+        "cote": "restaurant",
+        "guide": "carotte",
+        "consigne": "Si vous n'avez pas d'images, ce prompt les fabrique. Remplacez ce qui est entre crochets, collez dans Higgsfield, lancez. Dix secondes plus tard, vous avez votre plan.",
+        "lien": "https://higgsfield.ai/",
+        "prompt": "Vertical 9:16, 10 secondes, 4K. PAS de texte incrusté, PAS de sous-titres, PAS de filigrane, PAS de logo dans l'image.\n\nIDENTITÉ VISUELLE : RapidoCMS. Bleu #03A9F5 présent dans le décor — un écran, une lumière, un objet — sans jamais former de logo. Tons clairs, blancs, gris #383838. Pas de crème, pas d'orange.\n\nDEUX personnages dans le même plan :\n— La Carotte, personnage 3D stylisé de la Brigade Végé-Fruitée, EN VEDETTE, au premier plan, deux tiers du cadre. C'est lui qui agit : elle relit tout avant que ça sorte ;\n— le chef, PHOTORÉALISTE, veste blanche et tablier, en retrait dans [TON RESTAURANT]. Il regarde faire, il ne fait pas.\n\nLe mélange photo + 3D est assumé, comme un dessin animé posé dans une prise de vue réelle. Les ombres du personnage 3D suivent celles du décor.\n\nDécor : la devanture et le comptoir, ardoise et carte affichée. plein jour, lumière franche.\nAction : chez [TON RESTAURANT], Les chiffres de l'année, dits sans fard : couverts, plat le plus vendu, avis reçus, gens embauchés.\nÀ 5 secondes, le geste aboutit et le chef réagit — surpris, puis convaincu.\nDeux dernières secondes : les deux regardent l'objectif côte à côte, immobiles.\n\nAudio : ambiance réelle du restaurant, un bip d'interface discret à 5 secondes, aucun dialogue, pas de musique.\n\nÀ remplacer : [TON RESTAURANT], [TON PLAT], [TON PRÉNOM]."
       },
       {
         "etape": 3,
+        "titre": "Le montage",
+        "outil": "Claude Code",
+        "cote": "rapidocms",
+        "guide": "tomate",
+        "consigne": "Le hook, la signature de fin et les logos sont ceux de RapidoCMS — vous ne les fournissez pas, ils sont dans le gabarit. Vos images occupent le centre. Vous n'ouvrez aucun logiciel de montage.",
+        "lien": "https://claude.com/claude-code",
+        "prompt": "Monte l'épisode [TON NUMÉRO] de ma série, gabarit RapidoCMS.\n\n— Plan d'ouverture : assets/hooks/[TON NUMÉRO].mp4\n— Personnage qui explique : assets/avatar/[TON NUMÉRO].mp4 (La Carotte, avatar HeyGen)\n— Mes images de restaurant : assets/software/[TON NUMÉRO].mp4\n— Accroche à incruster : « Un an. Les vrais chiffres. »\n— Punchline en voix off à 5,0 s : « Merci. »\n\nHabillage : hook, signature de fin et logos en charte RapidoCMS — bleu #03A9F5, gris #383838, fond blanc. Pas de crème, pas d'orange.\nAnatomie : A 0→9,5 · sting RapidoCMS 9,5→18,5 · le personnage seul 18,5→28,5 · signature RapidoCMS 28,5→32,5 · sting de marque 32,5→37,5.\nContrôle avant de me le rendre : 37,5 s, 1080×1920, -14 LUFS, crête sous -1 dBTP."
+      },
+      {
+        "etape": 4,
         "titre": "La publication",
         "outil": "RapidoCMS",
+        "cote": "rapidocms",
         "guide": "betterave",
-        "consigne": "Une phrase, et les cinq réseaux sont programmés. Tu ne téléverses rien nulle part.",
+        "consigne": "Une phrase, et les cinq réseaux sont programmés. Le master part d'abord dans votre bibliothèque, puis en ligne. Vous ne téléversez rien nulle part.",
         "lien": "https://cms.rapidosoftware.com/register",
-        "prompt": "Verse le master dans ma bibliothèque RapidoCMS, puis programme les cinq réseaux de [TON RESTAURANT] :\n\n— LinkedIn à 8 h, Facebook à 12 h, YouTube à 10 h, Instagram à 18 h 30, TikTok à 19 h\n— Légende : « Un an. Les vrais chiffres. Merci. » puis le corps, puis « [TON APPEL À L'ACTION] : [TON SITE] »\n— Mots-dièse : #restaurant #[TA VILLE] #[TA SPÉCIALITÉ]\n\nRends-moi le lien de chaque publication."
+        "prompt": "Verse le master dans ma bibliothèque RapidoCMS, puis programme les cinq réseaux de [TON RESTAURANT] :\n\n— LinkedIn à 8 h, YouTube à 10 h, Facebook à 12 h, Instagram à 18 h 30, TikTok à 19 h\n— Légende : « Un an. Les vrais chiffres. Merci. » puis le corps, puis « [TON APPEL À L'ACTION] : [TON SITE] »\n— Mots-dièse : #restaurant #[TA VILLE] #[TA SPÉCIALITÉ]\n\nRends-moi le lien de chaque publication."
       }
     ],
     "tutoriel": null

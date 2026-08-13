@@ -56,6 +56,8 @@ export type EtapeKit = {{
   etape: number;
   titre: string;
   outil: string;
+  /** « restaurant » : ça se passe chez le client. « rapidocms » : chez nous. */
+  cote: "restaurant" | "rapidocms";
   /** Le végé-fruité qui explique cette étape. */
   guide: string;
   consigne: string;
@@ -68,9 +70,9 @@ export type ContenuEpisode = {{
   publications: Record<Reseau, PublicationTexte>;
   promptVignette: string;
   higgsfieldPrompt: string | null;
-  /** Saison 6 : ce que dit le chef à l'écran. */
+  /** Saison 6 : ce que dit le végé-fruité à l'écran, en personnage HeyGen. */
   scriptHeygen?: string | null;
-  /** Saison 6 : les trois prompts à copier, dans l'ordre de la chaîne. */
+  /** Saison 6 : les quatre prompts à copier, dans l'ordre de la chaîne. */
   kit?: EtapeKit[] | null;
   tutoriel: {{ description: string | null; etapes: string[]; astuce: string | null }} | null;
 }};
@@ -101,7 +103,7 @@ def main():
                     "publications": pubs,
                     "promptVignette": e.pop("promptVignette", ""),
                     "higgsfieldPrompt": e["higgsfield"].pop("prompt", None),
-                    # Saison 6 seulement : le script de l'avatar et les trois
+                    # Saison 6 seulement : le script de l'avatar et les quatre
                     # prompts à copier. Longs, et affichés sur la seule page de
                     # l'épisode — ils n'ont rien à faire dans le morceau commun.
                     "scriptHeygen": e.pop("scriptHeygen", None),
