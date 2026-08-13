@@ -305,6 +305,12 @@ def main():
     n = 0
     for s in d["series"]:
         for sa in s["saisons"]:
+            # La saison 6 a sa propre voix : elle publie ce qu'un restaurant
+            # publierait, pas ce qu'un éditeur de logiciel publierait. Ses
+            # légendes, ses CTA et ses vignettes sont écrits par
+            # scripts/gen-saison-6.py. Passer ici l'écraserait.
+            if sa["numero"] == 6:
+                continue
             for ep in sa["episodes"]:
                 pub = {}
                 for res, cfg in RESEAUX.items():

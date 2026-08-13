@@ -17728,6 +17728,2796 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       ],
       "astuce": "Le pourcentage de précision IA et le niveau de confiance du modèle indiquent la fiabilité de chaque prévision : plus votre historique de ventes est riche, plus PrediBot affine ses recommandations semaine après semaine."
     }
+  },
+  "EP151": {
+    "publications": {
+      "facebook": {
+        "legende": "Regarde-le une seconde. Voilà pourquoi on se lève à six heures.\n\nDix secondes sur le plat signature : la sauce qui nappe, la vapeur, la découpe. Aucun texte, aucune promo — juste l'objet du désir.\n\n👉 Réserver une table : https://site.foodeatup.com/\nUne table ? 06 14 18 92 25",
+        "hashtags": [
+          "foodeatup",
+          "restaurateur",
+          "restaurant",
+          "faitmaison",
+          "cuisine",
+          "carte"
+        ],
+        "motsCles": [
+          "la carte à l'écran",
+          "film de plat",
+          "restaurant le plat filme comme une pub"
+        ],
+        "cta": "Réserver une table"
+      },
+      "instagram": {
+        "legende": "Regarde-le une seconde.\nVoilà pourquoi on se lève à six heures.\n\nDix secondes sur le plat signature : la sauce qui nappe, la vapeur, la découpe. Aucun texte, aucune promo — juste l'objet du désir.\n\nRéserver une table — lien en bio.\nUne table ? 06 14 18 92 25",
+        "hashtags": [
+          "foodeatup",
+          "restaurateur",
+          "restaurant",
+          "faitmaison",
+          "cuisine",
+          "carte"
+        ],
+        "motsCles": [
+          "la carte à l'écran",
+          "film de plat",
+          "restaurant le plat filme comme une pub"
+        ],
+        "cta": "Réserver une table"
+      },
+      "tiktok": {
+        "legende": "Regarde-le une seconde.\nVoilà pourquoi on se lève à six heures.\n\nDix secondes sur le plat signature : la sauce qui nappe, la vapeur, la découpe.",
+        "hashtags": [
+          "foodeatup",
+          "restaurateur",
+          "restaurant",
+          "faitmaison",
+          "cuisine",
+          "carte"
+        ],
+        "motsCles": [
+          "la carte à l'écran",
+          "film de plat",
+          "restaurant le plat filme comme une pub"
+        ],
+        "cta": "Réserver une table"
+      },
+      "linkedin": {
+        "legende": "Regarde-le une seconde.\n\nDix secondes sur le plat signature : la sauce qui nappe, la vapeur, la découpe. Aucun texte, aucune promo — juste l'objet du désir.\n\nComment on le fait : La photo et le descriptif viennent de la fiche plat ; la vidéo part sur les cinq réseaux depuis RapidoCMS.\n\nRéserver une table : https://site.foodeatup.com/\nUne table ? 06 14 18 92 25",
+        "hashtags": [
+          "foodeatup",
+          "restaurateur",
+          "restaurant",
+          "faitmaison",
+          "cuisine",
+          "carte"
+        ],
+        "motsCles": [
+          "la carte à l'écran",
+          "film de plat",
+          "restaurant le plat filme comme une pub"
+        ],
+        "cta": "Réserver une table"
+      },
+      "youtube": {
+        "legende": "Regarde-le une seconde. Voilà pourquoi on se lève à six heures.\n\nDix secondes sur le plat signature : la sauce qui nappe, la vapeur, la découpe. Aucun texte, aucune promo — juste l'objet du désir.\n\n— — —\n\n🔗 https://site.foodeatup.com/\n📞 06 14 18 92 25\n\nSaison 6 « L'orchestration du restaurant » — épisode 1 sur 30. Arc : La carte à l'écran.\nRôle à l'écran : Chef.\n\nComment c'est fait : La photo et le descriptif viennent de la fiche plat ; la vidéo part sur les cinq réseaux depuis RapidoCMS. Toute la série est publiée avec RapidoCMS, depuis une conversation.\n",
+        "hashtags": [
+          "foodeatup",
+          "restaurateur",
+          "restaurant",
+          "faitmaison",
+          "cuisine",
+          "carte"
+        ],
+        "motsCles": [
+          "la carte à l'écran",
+          "film de plat",
+          "restaurant le plat filme comme une pub"
+        ],
+        "cta": "Réserver une table",
+        "titre": "Le plat, filmé comme une pub — La carte à l'écran | FoodEatUp"
+      }
+    },
+    "promptVignette": "Photo réaliste, cadrage vertical 9:16. Le chef de l'image de référence — MÊME visage, même barbe, même toque blanche, même veste de cuisine blanche, même tablier blanc au logo FoodEatUp bleu. Ne change ni ses traits ni sa morphologie. Il joue ici le rôle : chef. Scène : le plat, filmé comme une pub. Regarde-le une seconde. Décor : le plat en très gros plan sur le pass, vapeur et reflets. lumière rasante de studio culinaire. C'est le RESTAURANT qui est le sujet : le plat, la salle ou l'équipe occupent les deux tiers du cadre, le chef est présent mais pas au centre. Aucun écran de logiciel visible. Bande bleu RapidoCMS #03A9F5 en haut du cadre sur un cinquième de la hauteur, portant UNIQUEMENT le texte « PLAT FILMÉ COMME » en typographie arrondie très grasse, blanc, centré. Aucun autre texte, aucun logo ajouté, pas de filigrane, pas de bordure décorative.",
+    "higgsfieldPrompt": null,
+    "tutoriel": null
+  },
+  "EP152": {
+    "publications": {
+      "facebook": {
+        "legende": "On ne cache rien. Refais-la chez toi. On t'attend quand même.\n\nLe chef fait le plat en trente secondes, gestes réels, quantités dites à voix haute. Il ne cache rien.\n\n👉 Voir la carte : https://site.foodeatup.com/\nUne table ? 06 14 18 92 25",
+        "hashtags": [
+          "foodeatup",
+          "restaurateur",
+          "restaurant",
+          "faitmaison",
+          "cuisine",
+          "carte"
+        ],
+        "motsCles": [
+          "la carte à l'écran",
+          "recette",
+          "restaurant la recette du plat signature"
+        ],
+        "cta": "Voir la carte"
+      },
+      "instagram": {
+        "legende": "On ne cache rien.\nRefais-la chez toi. On t'attend quand même.\n\nLe chef fait le plat en trente secondes, gestes réels, quantités dites à voix haute. Il ne cache rien.\n\nVoir la carte — lien en bio.\nUne table ? 06 14 18 92 25",
+        "hashtags": [
+          "foodeatup",
+          "restaurateur",
+          "restaurant",
+          "faitmaison",
+          "cuisine",
+          "carte"
+        ],
+        "motsCles": [
+          "la carte à l'écran",
+          "recette",
+          "restaurant la recette du plat signature"
+        ],
+        "cta": "Voir la carte"
+      },
+      "tiktok": {
+        "legende": "On ne cache rien.\nRefais-la chez toi. On t'attend quand même.\n\nLe chef fait le plat en trente secondes, gestes réels, quantités dites à voix haute.",
+        "hashtags": [
+          "foodeatup",
+          "restaurateur",
+          "restaurant",
+          "faitmaison",
+          "cuisine",
+          "carte"
+        ],
+        "motsCles": [
+          "la carte à l'écran",
+          "recette",
+          "restaurant la recette du plat signature"
+        ],
+        "cta": "Voir la carte"
+      },
+      "linkedin": {
+        "legende": "On ne cache rien.\n\nLe chef fait le plat en trente secondes, gestes réels, quantités dites à voix haute. Il ne cache rien.\n\nComment on le fait : La fiche recette donne les quantités exactes et le coût matière — le chef lit ce qu'il a déjà saisi.\n\nVoir la carte : https://site.foodeatup.com/\nUne table ? 06 14 18 92 25",
+        "hashtags": [
+          "foodeatup",
+          "restaurateur",
+          "restaurant",
+          "faitmaison",
+          "cuisine",
+          "carte"
+        ],
+        "motsCles": [
+          "la carte à l'écran",
+          "recette",
+          "restaurant la recette du plat signature"
+        ],
+        "cta": "Voir la carte"
+      },
+      "youtube": {
+        "legende": "On ne cache rien. Refais-la chez toi. On t'attend quand même.\n\nLe chef fait le plat en trente secondes, gestes réels, quantités dites à voix haute. Il ne cache rien.\n\n— — —\n\n🔗 https://site.foodeatup.com/\n📞 06 14 18 92 25\n\nSaison 6 « L'orchestration du restaurant » — épisode 2 sur 30. Arc : La carte à l'écran.\nRôle à l'écran : Chef.\n\nComment c'est fait : La fiche recette donne les quantités exactes et le coût matière — le chef lit ce qu'il a déjà saisi. Toute la série est publiée avec RapidoCMS, depuis une conversation.\n",
+        "hashtags": [
+          "foodeatup",
+          "restaurateur",
+          "restaurant",
+          "faitmaison",
+          "cuisine",
+          "carte"
+        ],
+        "motsCles": [
+          "la carte à l'écran",
+          "recette",
+          "restaurant la recette du plat signature"
+        ],
+        "cta": "Voir la carte",
+        "titre": "La recette du plat signature — La carte à l'écran | FoodEatUp"
+      }
+    },
+    "promptVignette": "Photo réaliste, cadrage vertical 9:16. Le chef de l'image de référence — MÊME visage, même barbe, même toque blanche, même veste de cuisine blanche, même tablier blanc au logo FoodEatUp bleu. Ne change ni ses traits ni sa morphologie. Il joue ici le rôle : chef. Scène : la recette du plat signature. On ne cache rien. Décor : le plat en très gros plan sur le pass, vapeur et reflets. lumière rasante de studio culinaire. C'est le RESTAURANT qui est le sujet : le plat, la salle ou l'équipe occupent les deux tiers du cadre, le chef est présent mais pas au centre. Aucun écran de logiciel visible. Bande bleu RapidoCMS #03A9F5 en haut du cadre sur un cinquième de la hauteur, portant UNIQUEMENT le texte « RECETTE PLAT SIGNATURE » en typographie arrondie très grasse, blanc, centré. Aucun autre texte, aucun logo ajouté, pas de filigrane, pas de bordure décorative.",
+    "higgsfieldPrompt": null,
+    "tutoriel": null
+  },
+  "EP153": {
+    "publications": {
+      "facebook": {
+        "legende": "Cette semaine seulement. Après, la saison change d'avis.\n\nLe nouveau plat arrive, on dit pourquoi : le produit est là, la saison y est, il ne restera pas.\n\n👉 Commander en ligne : https://site.foodeatup.com/\nUne table ? 06 14 18 92 25",
+        "hashtags": [
+          "foodeatup",
+          "restaurateur",
+          "restaurant",
+          "faitmaison",
+          "cuisine",
+          "carte"
+        ],
+        "motsCles": [
+          "la carte à l'écran",
+          "annonce",
+          "restaurant le plat de la semaine"
+        ],
+        "cta": "Commander en ligne"
+      },
+      "instagram": {
+        "legende": "Cette semaine seulement.\nAprès, la saison change d'avis.\n\nLe nouveau plat arrive, on dit pourquoi : le produit est là, la saison y est, il ne restera pas.\n\nCommander en ligne — lien en bio.\nUne table ? 06 14 18 92 25",
+        "hashtags": [
+          "foodeatup",
+          "restaurateur",
+          "restaurant",
+          "faitmaison",
+          "cuisine",
+          "carte"
+        ],
+        "motsCles": [
+          "la carte à l'écran",
+          "annonce",
+          "restaurant le plat de la semaine"
+        ],
+        "cta": "Commander en ligne"
+      },
+      "tiktok": {
+        "legende": "Cette semaine seulement.\nAprès, la saison change d'avis.\n\nLe nouveau plat arrive, on dit pourquoi : le produit est là, la saison y est, il ne restera pas.",
+        "hashtags": [
+          "foodeatup",
+          "restaurateur",
+          "restaurant",
+          "faitmaison",
+          "cuisine",
+          "carte"
+        ],
+        "motsCles": [
+          "la carte à l'écran",
+          "annonce",
+          "restaurant le plat de la semaine"
+        ],
+        "cta": "Commander en ligne"
+      },
+      "linkedin": {
+        "legende": "Cette semaine seulement.\n\nLe nouveau plat arrive, on dit pourquoi : le produit est là, la saison y est, il ne restera pas.\n\nComment on le fait : Le plat est ajouté à la carte, la publication est programmée le lundi matin par Iris.\n\nCommander en ligne : https://site.foodeatup.com/\nUne table ? 06 14 18 92 25",
+        "hashtags": [
+          "foodeatup",
+          "restaurateur",
+          "restaurant",
+          "faitmaison",
+          "cuisine",
+          "carte"
+        ],
+        "motsCles": [
+          "la carte à l'écran",
+          "annonce",
+          "restaurant le plat de la semaine"
+        ],
+        "cta": "Commander en ligne"
+      },
+      "youtube": {
+        "legende": "Cette semaine seulement. Après, la saison change d'avis.\n\nLe nouveau plat arrive, on dit pourquoi : le produit est là, la saison y est, il ne restera pas.\n\n— — —\n\n🔗 https://site.foodeatup.com/\n📞 06 14 18 92 25\n\nSaison 6 « L'orchestration du restaurant » — épisode 3 sur 30. Arc : La carte à l'écran.\nRôle à l'écran : Chef.\n\nComment c'est fait : Le plat est ajouté à la carte, la publication est programmée le lundi matin par Iris. Toute la série est publiée avec RapidoCMS, depuis une conversation.\n",
+        "hashtags": [
+          "foodeatup",
+          "restaurateur",
+          "restaurant",
+          "faitmaison",
+          "cuisine",
+          "carte"
+        ],
+        "motsCles": [
+          "la carte à l'écran",
+          "annonce",
+          "restaurant le plat de la semaine"
+        ],
+        "cta": "Commander en ligne",
+        "titre": "Le plat de la semaine — La carte à l'écran | FoodEatUp"
+      }
+    },
+    "promptVignette": "Photo réaliste, cadrage vertical 9:16. Le chef de l'image de référence — MÊME visage, même barbe, même toque blanche, même veste de cuisine blanche, même tablier blanc au logo FoodEatUp bleu. Ne change ni ses traits ni sa morphologie. Il joue ici le rôle : chef. Scène : le plat de la semaine. Cette semaine seulement. Décor : le plat en très gros plan sur le pass, vapeur et reflets. lumière rasante de studio culinaire. C'est le RESTAURANT qui est le sujet : le plat, la salle ou l'équipe occupent les deux tiers du cadre, le chef est présent mais pas au centre. Aucun écran de logiciel visible. Bande bleu RapidoCMS #03A9F5 en haut du cadre sur un cinquième de la hauteur, portant UNIQUEMENT le texte « PLAT SEMAINE » en typographie arrondie très grasse, blanc, centré. Aucun autre texte, aucun logo ajouté, pas de filigrane, pas de bordure décorative.",
+    "higgsfieldPrompt": null,
+    "tutoriel": null
+  },
+  "EP154": {
+    "publications": {
+      "facebook": {
+        "legende": "Midi. Quinze secondes. Décide avant d'arriver.\n\nEntrée, plat, dessert du jour, filmés à la suite au pass, sans coupe. Le prix à la fin.\n\n👉 Voir le menu du jour : https://site.foodeatup.com/\nUne table ? 06 14 18 92 25",
+        "hashtags": [
+          "foodeatup",
+          "restaurateur",
+          "restaurant",
+          "faitmaison",
+          "cuisine",
+          "carte"
+        ],
+        "motsCles": [
+          "la carte à l'écran",
+          "film de plat",
+          "restaurant le menu du midi en quinze secondes"
+        ],
+        "cta": "Voir le menu du jour"
+      },
+      "instagram": {
+        "legende": "Midi. Quinze secondes.\nDécide avant d'arriver.\n\nEntrée, plat, dessert du jour, filmés à la suite au pass, sans coupe. Le prix à la fin.\n\nVoir le menu du jour — lien en bio.\nUne table ? 06 14 18 92 25",
+        "hashtags": [
+          "foodeatup",
+          "restaurateur",
+          "restaurant",
+          "faitmaison",
+          "cuisine",
+          "carte"
+        ],
+        "motsCles": [
+          "la carte à l'écran",
+          "film de plat",
+          "restaurant le menu du midi en quinze secondes"
+        ],
+        "cta": "Voir le menu du jour"
+      },
+      "tiktok": {
+        "legende": "Midi. Quinze secondes.\nDécide avant d'arriver.\n\nEntrée, plat, dessert du jour, filmés à la suite au pass, sans coupe.",
+        "hashtags": [
+          "foodeatup",
+          "restaurateur",
+          "restaurant",
+          "faitmaison",
+          "cuisine",
+          "carte"
+        ],
+        "motsCles": [
+          "la carte à l'écran",
+          "film de plat",
+          "restaurant le menu du midi en quinze secondes"
+        ],
+        "cta": "Voir le menu du jour"
+      },
+      "linkedin": {
+        "legende": "Midi. Quinze secondes.\n\nEntrée, plat, dessert du jour, filmés à la suite au pass, sans coupe. Le prix à la fin.\n\nComment on le fait : Le menu du jour sort du logiciel, la publication part à 11 h.\n\nVoir le menu du jour : https://site.foodeatup.com/\nUne table ? 06 14 18 92 25",
+        "hashtags": [
+          "foodeatup",
+          "restaurateur",
+          "restaurant",
+          "faitmaison",
+          "cuisine",
+          "carte"
+        ],
+        "motsCles": [
+          "la carte à l'écran",
+          "film de plat",
+          "restaurant le menu du midi en quinze secondes"
+        ],
+        "cta": "Voir le menu du jour"
+      },
+      "youtube": {
+        "legende": "Midi. Quinze secondes. Décide avant d'arriver.\n\nEntrée, plat, dessert du jour, filmés à la suite au pass, sans coupe. Le prix à la fin.\n\n— — —\n\n🔗 https://site.foodeatup.com/\n📞 06 14 18 92 25\n\nSaison 6 « L'orchestration du restaurant » — épisode 4 sur 30. Arc : La carte à l'écran.\nRôle à l'écran : Serveur.\n\nComment c'est fait : Le menu du jour sort du logiciel, la publication part à 11 h. Toute la série est publiée avec RapidoCMS, depuis une conversation.\n",
+        "hashtags": [
+          "foodeatup",
+          "restaurateur",
+          "restaurant",
+          "faitmaison",
+          "cuisine",
+          "carte"
+        ],
+        "motsCles": [
+          "la carte à l'écran",
+          "film de plat",
+          "restaurant le menu du midi en quinze secondes"
+        ],
+        "cta": "Voir le menu du jour",
+        "titre": "Le menu du midi en quinze secondes — La carte à l'écran | FoodEatUp"
+      }
+    },
+    "promptVignette": "Photo réaliste, cadrage vertical 9:16. Le chef de l'image de référence — MÊME visage, même barbe, même toque blanche, même veste de cuisine blanche, même tablier blanc au logo FoodEatUp bleu. Ne change ni ses traits ni sa morphologie. Il joue ici le rôle : serveur. Scène : le menu du midi en quinze secondes. Midi. Quinze secondes. Décor : le plat en très gros plan sur le pass, vapeur et reflets. lumière rasante de studio culinaire. C'est le RESTAURANT qui est le sujet : le plat, la salle ou l'équipe occupent les deux tiers du cadre, le chef est présent mais pas au centre. Aucun écran de logiciel visible. Bande bleu RapidoCMS #03A9F5 en haut du cadre sur un cinquième de la hauteur, portant UNIQUEMENT le texte « MENU MIDI QUINZE » en typographie arrondie très grasse, blanc, centré. Aucun autre texte, aucun logo ajouté, pas de filigrane, pas de bordure décorative.",
+    "higgsfieldPrompt": null,
+    "tutoriel": null
+  },
+  "EP155": {
+    "publications": {
+      "facebook": {
+        "legende": "Vous l'avez réclamé. Il est revenu.\n\nUn ancien plat retiré de la carte revient parce que les clients l'ont réclamé. On le dit, on remercie.\n\n👉 Réserver une table : https://site.foodeatup.com/\nUne table ? 06 14 18 92 25",
+        "hashtags": [
+          "foodeatup",
+          "restaurateur",
+          "restaurant",
+          "faitmaison",
+          "cuisine",
+          "carte"
+        ],
+        "motsCles": [
+          "la carte à l'écran",
+          "annonce",
+          "restaurant le plat qui revient"
+        ],
+        "cta": "Réserver une table"
+      },
+      "instagram": {
+        "legende": "Vous l'avez réclamé.\nIl est revenu.\n\nUn ancien plat retiré de la carte revient parce que les clients l'ont réclamé. On le dit, on remercie.\n\nRéserver une table — lien en bio.\nUne table ? 06 14 18 92 25",
+        "hashtags": [
+          "foodeatup",
+          "restaurateur",
+          "restaurant",
+          "faitmaison",
+          "cuisine",
+          "carte"
+        ],
+        "motsCles": [
+          "la carte à l'écran",
+          "annonce",
+          "restaurant le plat qui revient"
+        ],
+        "cta": "Réserver une table"
+      },
+      "tiktok": {
+        "legende": "Vous l'avez réclamé.\nIl est revenu.\n\nUn ancien plat retiré de la carte revient parce que les clients l'ont réclamé.",
+        "hashtags": [
+          "foodeatup",
+          "restaurateur",
+          "restaurant",
+          "faitmaison",
+          "cuisine",
+          "carte"
+        ],
+        "motsCles": [
+          "la carte à l'écran",
+          "annonce",
+          "restaurant le plat qui revient"
+        ],
+        "cta": "Réserver une table"
+      },
+      "linkedin": {
+        "legende": "Vous l'avez réclamé.\n\nUn ancien plat retiré de la carte revient parce que les clients l'ont réclamé. On le dit, on remercie.\n\nComment on le fait : Les avis et les demandes remontent au même endroit ; on sait quel plat manque vraiment.\n\nRéserver une table : https://site.foodeatup.com/\nUne table ? 06 14 18 92 25",
+        "hashtags": [
+          "foodeatup",
+          "restaurateur",
+          "restaurant",
+          "faitmaison",
+          "cuisine",
+          "carte"
+        ],
+        "motsCles": [
+          "la carte à l'écran",
+          "annonce",
+          "restaurant le plat qui revient"
+        ],
+        "cta": "Réserver une table"
+      },
+      "youtube": {
+        "legende": "Vous l'avez réclamé. Il est revenu.\n\nUn ancien plat retiré de la carte revient parce que les clients l'ont réclamé. On le dit, on remercie.\n\n— — —\n\n🔗 https://site.foodeatup.com/\n📞 06 14 18 92 25\n\nSaison 6 « L'orchestration du restaurant » — épisode 5 sur 30. Arc : La carte à l'écran.\nRôle à l'écran : Chef.\n\nComment c'est fait : Les avis et les demandes remontent au même endroit ; on sait quel plat manque vraiment. Toute la série est publiée avec RapidoCMS, depuis une conversation.\n",
+        "hashtags": [
+          "foodeatup",
+          "restaurateur",
+          "restaurant",
+          "faitmaison",
+          "cuisine",
+          "carte"
+        ],
+        "motsCles": [
+          "la carte à l'écran",
+          "annonce",
+          "restaurant le plat qui revient"
+        ],
+        "cta": "Réserver une table",
+        "titre": "Le plat qui revient — La carte à l'écran | FoodEatUp"
+      }
+    },
+    "promptVignette": "Photo réaliste, cadrage vertical 9:16. Le chef de l'image de référence — MÊME visage, même barbe, même toque blanche, même veste de cuisine blanche, même tablier blanc au logo FoodEatUp bleu. Ne change ni ses traits ni sa morphologie. Il joue ici le rôle : chef. Scène : le plat qui revient. Vous l'avez réclamé. Décor : le plat en très gros plan sur le pass, vapeur et reflets. lumière rasante de studio culinaire. C'est le RESTAURANT qui est le sujet : le plat, la salle ou l'équipe occupent les deux tiers du cadre, le chef est présent mais pas au centre. Aucun écran de logiciel visible. Bande bleu RapidoCMS #03A9F5 en haut du cadre sur un cinquième de la hauteur, portant UNIQUEMENT le texte « PLAT REVIENT » en typographie arrondie très grasse, blanc, centré. Aucun autre texte, aucun logo ajouté, pas de filigrane, pas de bordure décorative.",
+    "higgsfieldPrompt": null,
+    "tutoriel": null
+  },
+  "EP156": {
+    "publications": {
+      "facebook": {
+        "legende": "Ce que tu ne vois jamais. Trente secondes avant ton assiette.\n\nLe dessert monté en direct, à la seconde où il quitte le froid. Le moment que le client ne voit jamais.\n\n👉 Voir la carte : https://site.foodeatup.com/\nUne table ? 06 14 18 92 25",
+        "hashtags": [
+          "foodeatup",
+          "restaurateur",
+          "restaurant",
+          "faitmaison",
+          "cuisine",
+          "carte"
+        ],
+        "motsCles": [
+          "la carte à l'écran",
+          "coulisse",
+          "restaurant le dessert qu on ne montre jamais"
+        ],
+        "cta": "Voir la carte"
+      },
+      "instagram": {
+        "legende": "Ce que tu ne vois jamais.\nTrente secondes avant ton assiette.\n\nLe dessert monté en direct, à la seconde où il quitte le froid. Le moment que le client ne voit jamais.\n\nVoir la carte — lien en bio.\nUne table ? 06 14 18 92 25",
+        "hashtags": [
+          "foodeatup",
+          "restaurateur",
+          "restaurant",
+          "faitmaison",
+          "cuisine",
+          "carte"
+        ],
+        "motsCles": [
+          "la carte à l'écran",
+          "coulisse",
+          "restaurant le dessert qu on ne montre jamais"
+        ],
+        "cta": "Voir la carte"
+      },
+      "tiktok": {
+        "legende": "Ce que tu ne vois jamais.\nTrente secondes avant ton assiette.\n\nLe dessert monté en direct, à la seconde où il quitte le froid.",
+        "hashtags": [
+          "foodeatup",
+          "restaurateur",
+          "restaurant",
+          "faitmaison",
+          "cuisine",
+          "carte"
+        ],
+        "motsCles": [
+          "la carte à l'écran",
+          "coulisse",
+          "restaurant le dessert qu on ne montre jamais"
+        ],
+        "cta": "Voir la carte"
+      },
+      "linkedin": {
+        "legende": "Ce que tu ne vois jamais.\n\nLe dessert monté en direct, à la seconde où il quitte le froid. Le moment que le client ne voit jamais.\n\nComment on le fait : Le coût matière du dessert est connu : on sait qu'on peut le pousser.\n\nVoir la carte : https://site.foodeatup.com/\nUne table ? 06 14 18 92 25",
+        "hashtags": [
+          "foodeatup",
+          "restaurateur",
+          "restaurant",
+          "faitmaison",
+          "cuisine",
+          "carte"
+        ],
+        "motsCles": [
+          "la carte à l'écran",
+          "coulisse",
+          "restaurant le dessert qu on ne montre jamais"
+        ],
+        "cta": "Voir la carte"
+      },
+      "youtube": {
+        "legende": "Ce que tu ne vois jamais. Trente secondes avant ton assiette.\n\nLe dessert monté en direct, à la seconde où il quitte le froid. Le moment que le client ne voit jamais.\n\n— — —\n\n🔗 https://site.foodeatup.com/\n📞 06 14 18 92 25\n\nSaison 6 « L'orchestration du restaurant » — épisode 6 sur 30. Arc : La carte à l'écran.\nRôle à l'écran : Chef.\n\nComment c'est fait : Le coût matière du dessert est connu : on sait qu'on peut le pousser. Toute la série est publiée avec RapidoCMS, depuis une conversation.\n",
+        "hashtags": [
+          "foodeatup",
+          "restaurateur",
+          "restaurant",
+          "faitmaison",
+          "cuisine",
+          "carte"
+        ],
+        "motsCles": [
+          "la carte à l'écran",
+          "coulisse",
+          "restaurant le dessert qu on ne montre jamais"
+        ],
+        "cta": "Voir la carte",
+        "titre": "Le dessert qu'on ne montre jamais — La carte à l'écran | FoodEatUp"
+      }
+    },
+    "promptVignette": "Photo réaliste, cadrage vertical 9:16. Le chef de l'image de référence — MÊME visage, même barbe, même toque blanche, même veste de cuisine blanche, même tablier blanc au logo FoodEatUp bleu. Ne change ni ses traits ni sa morphologie. Il joue ici le rôle : chef. Scène : le dessert qu'on ne montre jamais. Ce que tu ne vois jamais. Décor : le plat en très gros plan sur le pass, vapeur et reflets. lumière rasante de studio culinaire. C'est le RESTAURANT qui est le sujet : le plat, la salle ou l'équipe occupent les deux tiers du cadre, le chef est présent mais pas au centre. Aucun écran de logiciel visible. Bande bleu RapidoCMS #03A9F5 en haut du cadre sur un cinquième de la hauteur, portant UNIQUEMENT le texte « DESSERT QU'ON NE » en typographie arrondie très grasse, blanc, centré. Aucun autre texte, aucun logo ajouté, pas de filigrane, pas de bordure décorative.",
+    "higgsfieldPrompt": null,
+    "tutoriel": null
+  },
+  "EP157": {
+    "publications": {
+      "facebook": {
+        "legende": "Vendredi 12, ici. Il y a un nombre de places. Pas plus.\n\nDate, heure, ce qu'on y fait, ce qu'on y mange. Filmé dans la salle préparée pour l'occasion.\n\n👉 Réserver sa place : https://site.foodeatup.com/\nUne table ? 06 14 18 92 25",
+        "hashtags": [
+          "foodeatup",
+          "restaurateur",
+          "restaurant",
+          "soiree",
+          "sortie",
+          "reservation"
+        ],
+        "motsCles": [
+          "les événements",
+          "annonce",
+          "restaurant un evenement au resto"
+        ],
+        "cta": "Réserver sa place"
+      },
+      "instagram": {
+        "legende": "Vendredi 12, ici.\nIl y a un nombre de places. Pas plus.\n\nDate, heure, ce qu'on y fait, ce qu'on y mange. Filmé dans la salle préparée pour l'occasion.\n\nRéserver sa place — lien en bio.\nUne table ? 06 14 18 92 25",
+        "hashtags": [
+          "foodeatup",
+          "restaurateur",
+          "restaurant",
+          "soiree",
+          "sortie",
+          "reservation"
+        ],
+        "motsCles": [
+          "les événements",
+          "annonce",
+          "restaurant un evenement au resto"
+        ],
+        "cta": "Réserver sa place"
+      },
+      "tiktok": {
+        "legende": "Vendredi 12, ici.\nIl y a un nombre de places. Pas plus.\n\nDate, heure, ce qu'on y fait, ce qu'on y mange.",
+        "hashtags": [
+          "foodeatup",
+          "restaurateur",
+          "restaurant",
+          "soiree",
+          "sortie",
+          "reservation"
+        ],
+        "motsCles": [
+          "les événements",
+          "annonce",
+          "restaurant un evenement au resto"
+        ],
+        "cta": "Réserver sa place"
+      },
+      "linkedin": {
+        "legende": "Vendredi 12, ici.\n\nDate, heure, ce qu'on y fait, ce qu'on y mange. Filmé dans la salle préparée pour l'occasion.\n\nComment on le fait : L'événement crée son créneau de réservation ; les places restantes s'affichent en direct.\n\nRéserver sa place : https://site.foodeatup.com/\nUne table ? 06 14 18 92 25",
+        "hashtags": [
+          "foodeatup",
+          "restaurateur",
+          "restaurant",
+          "soiree",
+          "sortie",
+          "reservation"
+        ],
+        "motsCles": [
+          "les événements",
+          "annonce",
+          "restaurant un evenement au resto"
+        ],
+        "cta": "Réserver sa place"
+      },
+      "youtube": {
+        "legende": "Vendredi 12, ici. Il y a un nombre de places. Pas plus.\n\nDate, heure, ce qu'on y fait, ce qu'on y mange. Filmé dans la salle préparée pour l'occasion.\n\n— — —\n\n🔗 https://site.foodeatup.com/\n📞 06 14 18 92 25\n\nSaison 6 « L'orchestration du restaurant » — épisode 7 sur 30. Arc : Les événements.\nRôle à l'écran : Directeur.\n\nComment c'est fait : L'événement crée son créneau de réservation ; les places restantes s'affichent en direct. Toute la série est publiée avec RapidoCMS, depuis une conversation.\n",
+        "hashtags": [
+          "foodeatup",
+          "restaurateur",
+          "restaurant",
+          "soiree",
+          "sortie",
+          "reservation"
+        ],
+        "motsCles": [
+          "les événements",
+          "annonce",
+          "restaurant un evenement au resto"
+        ],
+        "cta": "Réserver sa place",
+        "titre": "Un événement au resto — Les événements | FoodEatUp"
+      }
+    },
+    "promptVignette": "Photo réaliste, cadrage vertical 9:16. Le chef de l'image de référence — MÊME visage, même barbe, même toque blanche, même veste de cuisine blanche, même tablier blanc au logo FoodEatUp bleu. Ne change ni ses traits ni sa morphologie. Il joue ici le rôle : directeur. Scène : un événement au resto. Vendredi 12, ici. Décor : la salle préparée pour le soir, tables dressées, lumières basses. lumière chaude de début de service. C'est le RESTAURANT qui est le sujet : le plat, la salle ou l'équipe occupent les deux tiers du cadre, le chef est présent mais pas au centre. Aucun écran de logiciel visible. Bande bleu RapidoCMS #03A9F5 en haut du cadre sur un cinquième de la hauteur, portant UNIQUEMENT le texte « ÉVÉNEMENT RESTO » en typographie arrondie très grasse, blanc, centré. Aucun autre texte, aucun logo ajouté, pas de filigrane, pas de bordure décorative.",
+    "higgsfieldPrompt": null,
+    "tutoriel": null
+  },
+  "EP158": {
+    "publications": {
+      "facebook": {
+        "legende": "On diffuse le match. L'écran est grand. La table se réserve.\n\nL'écran, la salle qui se remplit, l'ardoise du menu match. On annonce l'heure du coup d'envoi et le plat qui va avec.\n\n👉 Réserver pour le match : https://site.foodeatup.com/\nUne table ? 06 14 18 92 25",
+        "hashtags": [
+          "foodeatup",
+          "restaurateur",
+          "restaurant",
+          "soiree",
+          "sortie",
+          "reservation"
+        ],
+        "motsCles": [
+          "les événements",
+          "annonce",
+          "restaurant on diffuse le match"
+        ],
+        "cta": "Réserver pour le match"
+      },
+      "instagram": {
+        "legende": "On diffuse le match.\nL'écran est grand. La table se réserve.\n\nL'écran, la salle qui se remplit, l'ardoise du menu match. On annonce l'heure du coup d'envoi et le plat qui va avec.\n\nRéserver pour le match — lien en bio.\nUne table ? 06 14 18 92 25",
+        "hashtags": [
+          "foodeatup",
+          "restaurateur",
+          "restaurant",
+          "soiree",
+          "sortie",
+          "reservation"
+        ],
+        "motsCles": [
+          "les événements",
+          "annonce",
+          "restaurant on diffuse le match"
+        ],
+        "cta": "Réserver pour le match"
+      },
+      "tiktok": {
+        "legende": "On diffuse le match.\nL'écran est grand. La table se réserve.\n\nL'écran, la salle qui se remplit, l'ardoise du menu match.",
+        "hashtags": [
+          "foodeatup",
+          "restaurateur",
+          "restaurant",
+          "soiree",
+          "sortie",
+          "reservation"
+        ],
+        "motsCles": [
+          "les événements",
+          "annonce",
+          "restaurant on diffuse le match"
+        ],
+        "cta": "Réserver pour le match"
+      },
+      "linkedin": {
+        "legende": "On diffuse le match.\n\nL'écran, la salle qui se remplit, l'ardoise du menu match. On annonce l'heure du coup d'envoi et le plat qui va avec.\n\nComment on le fait : Le créneau du match est ouvert à la réservation, la campagne part automatiquement l'avant-veille.\n\nRéserver pour le match : https://site.foodeatup.com/\nUne table ? 06 14 18 92 25",
+        "hashtags": [
+          "foodeatup",
+          "restaurateur",
+          "restaurant",
+          "soiree",
+          "sortie",
+          "reservation"
+        ],
+        "motsCles": [
+          "les événements",
+          "annonce",
+          "restaurant on diffuse le match"
+        ],
+        "cta": "Réserver pour le match"
+      },
+      "youtube": {
+        "legende": "On diffuse le match. L'écran est grand. La table se réserve.\n\nL'écran, la salle qui se remplit, l'ardoise du menu match. On annonce l'heure du coup d'envoi et le plat qui va avec.\n\n— — —\n\n🔗 https://site.foodeatup.com/\n📞 06 14 18 92 25\n\nSaison 6 « L'orchestration du restaurant » — épisode 8 sur 30. Arc : Les événements.\nRôle à l'écran : Serveur.\n\nComment c'est fait : Le créneau du match est ouvert à la réservation, la campagne part automatiquement l'avant-veille. Toute la série est publiée avec RapidoCMS, depuis une conversation.\n",
+        "hashtags": [
+          "foodeatup",
+          "restaurateur",
+          "restaurant",
+          "soiree",
+          "sortie",
+          "reservation"
+        ],
+        "motsCles": [
+          "les événements",
+          "annonce",
+          "restaurant on diffuse le match"
+        ],
+        "cta": "Réserver pour le match",
+        "titre": "On diffuse le match — Les événements | FoodEatUp"
+      }
+    },
+    "promptVignette": "Photo réaliste, cadrage vertical 9:16. Le chef de l'image de référence — MÊME visage, même barbe, même toque blanche, même veste de cuisine blanche, même tablier blanc au logo FoodEatUp bleu. Ne change ni ses traits ni sa morphologie. Il joue ici le rôle : serveur. Scène : on diffuse le match. On diffuse le match. Décor : la salle préparée pour le soir, tables dressées, lumières basses. lumière chaude de début de service. C'est le RESTAURANT qui est le sujet : le plat, la salle ou l'équipe occupent les deux tiers du cadre, le chef est présent mais pas au centre. Aucun écran de logiciel visible. Bande bleu RapidoCMS #03A9F5 en haut du cadre sur un cinquième de la hauteur, portant UNIQUEMENT le texte « DIFFUSE MATCH » en typographie arrondie très grasse, blanc, centré. Aucun autre texte, aucun logo ajouté, pas de filigrane, pas de bordure décorative.",
+    "higgsfieldPrompt": null,
+    "tutoriel": null
+  },
+  "EP159": {
+    "publications": {
+      "facebook": {
+        "legende": "C'est ton anniversaire. On s'occupe du reste.\n\nLe dessert avec la bougie, la table décorée, la petite mise en scène qu'on fait pour chaque anniversaire.\n\n👉 Réserver un anniversaire : https://site.foodeatup.com/\nUne table ? 06 14 18 92 25",
+        "hashtags": [
+          "foodeatup",
+          "restaurateur",
+          "restaurant",
+          "soiree",
+          "sortie",
+          "reservation"
+        ],
+        "motsCles": [
+          "les événements",
+          "offre",
+          "restaurant fetez votre anniversaire ici"
+        ],
+        "cta": "Réserver un anniversaire"
+      },
+      "instagram": {
+        "legende": "C'est ton anniversaire.\nOn s'occupe du reste.\n\nLe dessert avec la bougie, la table décorée, la petite mise en scène qu'on fait pour chaque anniversaire.\n\nRéserver un anniversaire — lien en bio.\nUne table ? 06 14 18 92 25",
+        "hashtags": [
+          "foodeatup",
+          "restaurateur",
+          "restaurant",
+          "soiree",
+          "sortie",
+          "reservation"
+        ],
+        "motsCles": [
+          "les événements",
+          "offre",
+          "restaurant fetez votre anniversaire ici"
+        ],
+        "cta": "Réserver un anniversaire"
+      },
+      "tiktok": {
+        "legende": "C'est ton anniversaire.\nOn s'occupe du reste.\n\nLe dessert avec la bougie, la table décorée, la petite mise en scène qu'on fait pour chaque anniversaire.",
+        "hashtags": [
+          "foodeatup",
+          "restaurateur",
+          "restaurant",
+          "soiree",
+          "sortie",
+          "reservation"
+        ],
+        "motsCles": [
+          "les événements",
+          "offre",
+          "restaurant fetez votre anniversaire ici"
+        ],
+        "cta": "Réserver un anniversaire"
+      },
+      "linkedin": {
+        "legende": "C'est ton anniversaire.\n\nLe dessert avec la bougie, la table décorée, la petite mise en scène qu'on fait pour chaque anniversaire.\n\nComment on le fait : La date de naissance est dans la fiche client : la relance part quinze jours avant, toute seule.\n\nRéserver un anniversaire : https://site.foodeatup.com/\nUne table ? 06 14 18 92 25",
+        "hashtags": [
+          "foodeatup",
+          "restaurateur",
+          "restaurant",
+          "soiree",
+          "sortie",
+          "reservation"
+        ],
+        "motsCles": [
+          "les événements",
+          "offre",
+          "restaurant fetez votre anniversaire ici"
+        ],
+        "cta": "Réserver un anniversaire"
+      },
+      "youtube": {
+        "legende": "C'est ton anniversaire. On s'occupe du reste.\n\nLe dessert avec la bougie, la table décorée, la petite mise en scène qu'on fait pour chaque anniversaire.\n\n— — —\n\n🔗 https://site.foodeatup.com/\n📞 06 14 18 92 25\n\nSaison 6 « L'orchestration du restaurant » — épisode 9 sur 30. Arc : Les événements.\nRôle à l'écran : Serveur.\n\nComment c'est fait : La date de naissance est dans la fiche client : la relance part quinze jours avant, toute seule. Toute la série est publiée avec RapidoCMS, depuis une conversation.\n",
+        "hashtags": [
+          "foodeatup",
+          "restaurateur",
+          "restaurant",
+          "soiree",
+          "sortie",
+          "reservation"
+        ],
+        "motsCles": [
+          "les événements",
+          "offre",
+          "restaurant fetez votre anniversaire ici"
+        ],
+        "cta": "Réserver un anniversaire",
+        "titre": "Fêtez votre anniversaire ici — Les événements | FoodEatUp"
+      }
+    },
+    "promptVignette": "Photo réaliste, cadrage vertical 9:16. Le chef de l'image de référence — MÊME visage, même barbe, même toque blanche, même veste de cuisine blanche, même tablier blanc au logo FoodEatUp bleu. Ne change ni ses traits ni sa morphologie. Il joue ici le rôle : serveur. Scène : fêtez votre anniversaire ici. C'est ton anniversaire. Décor : la salle préparée pour le soir, tables dressées, lumières basses. lumière chaude de début de service. C'est le RESTAURANT qui est le sujet : le plat, la salle ou l'équipe occupent les deux tiers du cadre, le chef est présent mais pas au centre. Aucun écran de logiciel visible. Bande bleu RapidoCMS #03A9F5 en haut du cadre sur un cinquième de la hauteur, portant UNIQUEMENT le texte « FÊTEZ VOTRE ANNIVERSAIRE » en typographie arrondie très grasse, blanc, centré. Aucun autre texte, aucun logo ajouté, pas de filigrane, pas de bordure décorative.",
+    "higgsfieldPrompt": null,
+    "tutoriel": null
+  },
+  "EP160": {
+    "publications": {
+      "facebook": {
+        "legende": "Un soir, une cuisine. Demain, ce plat n'existe plus.\n\nUn soir, une cuisine, un décor. On montre le plat qui ne sera à la carte que ce soir-là.\n\n👉 Réserver sa place : https://site.foodeatup.com/\nUne table ? 06 14 18 92 25",
+        "hashtags": [
+          "foodeatup",
+          "restaurateur",
+          "restaurant",
+          "soiree",
+          "sortie",
+          "reservation"
+        ],
+        "motsCles": [
+          "les événements",
+          "annonce",
+          "restaurant la soiree a theme"
+        ],
+        "cta": "Réserver sa place"
+      },
+      "instagram": {
+        "legende": "Un soir, une cuisine.\nDemain, ce plat n'existe plus.\n\nUn soir, une cuisine, un décor. On montre le plat qui ne sera à la carte que ce soir-là.\n\nRéserver sa place — lien en bio.\nUne table ? 06 14 18 92 25",
+        "hashtags": [
+          "foodeatup",
+          "restaurateur",
+          "restaurant",
+          "soiree",
+          "sortie",
+          "reservation"
+        ],
+        "motsCles": [
+          "les événements",
+          "annonce",
+          "restaurant la soiree a theme"
+        ],
+        "cta": "Réserver sa place"
+      },
+      "tiktok": {
+        "legende": "Un soir, une cuisine.\nDemain, ce plat n'existe plus.\n\nUn soir, une cuisine, un décor.",
+        "hashtags": [
+          "foodeatup",
+          "restaurateur",
+          "restaurant",
+          "soiree",
+          "sortie",
+          "reservation"
+        ],
+        "motsCles": [
+          "les événements",
+          "annonce",
+          "restaurant la soiree a theme"
+        ],
+        "cta": "Réserver sa place"
+      },
+      "linkedin": {
+        "legende": "Un soir, une cuisine.\n\nUn soir, une cuisine, un décor. On montre le plat qui ne sera à la carte que ce soir-là.\n\nComment on le fait : Le menu spécial est monté à part, sans toucher à la carte, et retiré tout seul le lendemain.\n\nRéserver sa place : https://site.foodeatup.com/\nUne table ? 06 14 18 92 25",
+        "hashtags": [
+          "foodeatup",
+          "restaurateur",
+          "restaurant",
+          "soiree",
+          "sortie",
+          "reservation"
+        ],
+        "motsCles": [
+          "les événements",
+          "annonce",
+          "restaurant la soiree a theme"
+        ],
+        "cta": "Réserver sa place"
+      },
+      "youtube": {
+        "legende": "Un soir, une cuisine. Demain, ce plat n'existe plus.\n\nUn soir, une cuisine, un décor. On montre le plat qui ne sera à la carte que ce soir-là.\n\n— — —\n\n🔗 https://site.foodeatup.com/\n📞 06 14 18 92 25\n\nSaison 6 « L'orchestration du restaurant » — épisode 10 sur 30. Arc : Les événements.\nRôle à l'écran : Chef.\n\nComment c'est fait : Le menu spécial est monté à part, sans toucher à la carte, et retiré tout seul le lendemain. Toute la série est publiée avec RapidoCMS, depuis une conversation.\n",
+        "hashtags": [
+          "foodeatup",
+          "restaurateur",
+          "restaurant",
+          "soiree",
+          "sortie",
+          "reservation"
+        ],
+        "motsCles": [
+          "les événements",
+          "annonce",
+          "restaurant la soiree a theme"
+        ],
+        "cta": "Réserver sa place",
+        "titre": "La soirée à thème — Les événements | FoodEatUp"
+      }
+    },
+    "promptVignette": "Photo réaliste, cadrage vertical 9:16. Le chef de l'image de référence — MÊME visage, même barbe, même toque blanche, même veste de cuisine blanche, même tablier blanc au logo FoodEatUp bleu. Ne change ni ses traits ni sa morphologie. Il joue ici le rôle : chef. Scène : la soirée à thème. Un soir, une cuisine. Décor : la salle préparée pour le soir, tables dressées, lumières basses. lumière chaude de début de service. C'est le RESTAURANT qui est le sujet : le plat, la salle ou l'équipe occupent les deux tiers du cadre, le chef est présent mais pas au centre. Aucun écran de logiciel visible. Bande bleu RapidoCMS #03A9F5 en haut du cadre sur un cinquième de la hauteur, portant UNIQUEMENT le texte « SOIRÉE THÈME » en typographie arrondie très grasse, blanc, centré. Aucun autre texte, aucun logo ajouté, pas de filigrane, pas de bordure décorative.",
+    "higgsfieldPrompt": null,
+    "tutoriel": null
+  },
+  "EP161": {
+    "publications": {
+      "facebook": {
+        "legende": "Dimanche, on ouvre à dix heures. Prends ton temps.\n\nLe buffet dressé au petit matin, la lumière du dimanche, les gens qui arrivent en famille.\n\n👉 Réserver le brunch : https://site.foodeatup.com/\nUne table ? 06 14 18 92 25",
+        "hashtags": [
+          "foodeatup",
+          "restaurateur",
+          "restaurant",
+          "soiree",
+          "sortie",
+          "reservation"
+        ],
+        "motsCles": [
+          "les événements",
+          "annonce",
+          "restaurant le brunch du dimanche"
+        ],
+        "cta": "Réserver le brunch"
+      },
+      "instagram": {
+        "legende": "Dimanche, on ouvre à dix heures.\nPrends ton temps.\n\nLe buffet dressé au petit matin, la lumière du dimanche, les gens qui arrivent en famille.\n\nRéserver le brunch — lien en bio.\nUne table ? 06 14 18 92 25",
+        "hashtags": [
+          "foodeatup",
+          "restaurateur",
+          "restaurant",
+          "soiree",
+          "sortie",
+          "reservation"
+        ],
+        "motsCles": [
+          "les événements",
+          "annonce",
+          "restaurant le brunch du dimanche"
+        ],
+        "cta": "Réserver le brunch"
+      },
+      "tiktok": {
+        "legende": "Dimanche, on ouvre à dix heures.\nPrends ton temps.\n\nLe buffet dressé au petit matin, la lumière du dimanche, les gens qui arrivent en famille.",
+        "hashtags": [
+          "foodeatup",
+          "restaurateur",
+          "restaurant",
+          "soiree",
+          "sortie",
+          "reservation"
+        ],
+        "motsCles": [
+          "les événements",
+          "annonce",
+          "restaurant le brunch du dimanche"
+        ],
+        "cta": "Réserver le brunch"
+      },
+      "linkedin": {
+        "legende": "Dimanche, on ouvre à dix heures.\n\nLe buffet dressé au petit matin, la lumière du dimanche, les gens qui arrivent en famille.\n\nComment on le fait : Le brunch a son propre créneau et sa jauge : on ne survend pas.\n\nRéserver le brunch : https://site.foodeatup.com/\nUne table ? 06 14 18 92 25",
+        "hashtags": [
+          "foodeatup",
+          "restaurateur",
+          "restaurant",
+          "soiree",
+          "sortie",
+          "reservation"
+        ],
+        "motsCles": [
+          "les événements",
+          "annonce",
+          "restaurant le brunch du dimanche"
+        ],
+        "cta": "Réserver le brunch"
+      },
+      "youtube": {
+        "legende": "Dimanche, on ouvre à dix heures. Prends ton temps.\n\nLe buffet dressé au petit matin, la lumière du dimanche, les gens qui arrivent en famille.\n\n— — —\n\n🔗 https://site.foodeatup.com/\n📞 06 14 18 92 25\n\nSaison 6 « L'orchestration du restaurant » — épisode 11 sur 30. Arc : Les événements.\nRôle à l'écran : Chef.\n\nComment c'est fait : Le brunch a son propre créneau et sa jauge : on ne survend pas. Toute la série est publiée avec RapidoCMS, depuis une conversation.\n",
+        "hashtags": [
+          "foodeatup",
+          "restaurateur",
+          "restaurant",
+          "soiree",
+          "sortie",
+          "reservation"
+        ],
+        "motsCles": [
+          "les événements",
+          "annonce",
+          "restaurant le brunch du dimanche"
+        ],
+        "cta": "Réserver le brunch",
+        "titre": "Le brunch du dimanche — Les événements | FoodEatUp"
+      }
+    },
+    "promptVignette": "Photo réaliste, cadrage vertical 9:16. Le chef de l'image de référence — MÊME visage, même barbe, même toque blanche, même veste de cuisine blanche, même tablier blanc au logo FoodEatUp bleu. Ne change ni ses traits ni sa morphologie. Il joue ici le rôle : chef. Scène : le brunch du dimanche. Dimanche, on ouvre à dix heures. Décor : la salle préparée pour le soir, tables dressées, lumières basses. lumière chaude de début de service. C'est le RESTAURANT qui est le sujet : le plat, la salle ou l'équipe occupent les deux tiers du cadre, le chef est présent mais pas au centre. Aucun écran de logiciel visible. Bande bleu RapidoCMS #03A9F5 en haut du cadre sur un cinquième de la hauteur, portant UNIQUEMENT le texte « BRUNCH DIMANCHE » en typographie arrondie très grasse, blanc, centré. Aucun autre texte, aucun logo ajouté, pas de filigrane, pas de bordure décorative.",
+    "higgsfieldPrompt": null,
+    "tutoriel": null
+  },
+  "EP162": {
+    "publications": {
+      "facebook": {
+        "legende": "Toute la salle, rien que vous. Ça se demande, et c'est possible.\n\nLa salle vide, montée pour un groupe. Ce qu'on peut y faire, pour combien de personnes.\n\n👉 Demander un devis : https://site.foodeatup.com/\nUne table ? 06 14 18 92 25",
+        "hashtags": [
+          "foodeatup",
+          "restaurateur",
+          "restaurant",
+          "soiree",
+          "sortie",
+          "reservation"
+        ],
+        "motsCles": [
+          "les événements",
+          "offre",
+          "restaurant privatiser la salle"
+        ],
+        "cta": "Demander un devis"
+      },
+      "instagram": {
+        "legende": "Toute la salle, rien que vous.\nÇa se demande, et c'est possible.\n\nLa salle vide, montée pour un groupe. Ce qu'on peut y faire, pour combien de personnes.\n\nDemander un devis — lien en bio.\nUne table ? 06 14 18 92 25",
+        "hashtags": [
+          "foodeatup",
+          "restaurateur",
+          "restaurant",
+          "soiree",
+          "sortie",
+          "reservation"
+        ],
+        "motsCles": [
+          "les événements",
+          "offre",
+          "restaurant privatiser la salle"
+        ],
+        "cta": "Demander un devis"
+      },
+      "tiktok": {
+        "legende": "Toute la salle, rien que vous.\nÇa se demande, et c'est possible.\n\nLa salle vide, montée pour un groupe.",
+        "hashtags": [
+          "foodeatup",
+          "restaurateur",
+          "restaurant",
+          "soiree",
+          "sortie",
+          "reservation"
+        ],
+        "motsCles": [
+          "les événements",
+          "offre",
+          "restaurant privatiser la salle"
+        ],
+        "cta": "Demander un devis"
+      },
+      "linkedin": {
+        "legende": "Toute la salle, rien que vous.\n\nLa salle vide, montée pour un groupe. Ce qu'on peut y faire, pour combien de personnes.\n\nComment on le fait : La demande de devis arrive dans le logiciel avec la date et le nombre de couverts.\n\nDemander un devis : https://site.foodeatup.com/\nUne table ? 06 14 18 92 25",
+        "hashtags": [
+          "foodeatup",
+          "restaurateur",
+          "restaurant",
+          "soiree",
+          "sortie",
+          "reservation"
+        ],
+        "motsCles": [
+          "les événements",
+          "offre",
+          "restaurant privatiser la salle"
+        ],
+        "cta": "Demander un devis"
+      },
+      "youtube": {
+        "legende": "Toute la salle, rien que vous. Ça se demande, et c'est possible.\n\nLa salle vide, montée pour un groupe. Ce qu'on peut y faire, pour combien de personnes.\n\n— — —\n\n🔗 https://site.foodeatup.com/\n📞 06 14 18 92 25\n\nSaison 6 « L'orchestration du restaurant » — épisode 12 sur 30. Arc : Les événements.\nRôle à l'écran : Directeur.\n\nComment c'est fait : La demande de devis arrive dans le logiciel avec la date et le nombre de couverts. Toute la série est publiée avec RapidoCMS, depuis une conversation.\n",
+        "hashtags": [
+          "foodeatup",
+          "restaurateur",
+          "restaurant",
+          "soiree",
+          "sortie",
+          "reservation"
+        ],
+        "motsCles": [
+          "les événements",
+          "offre",
+          "restaurant privatiser la salle"
+        ],
+        "cta": "Demander un devis",
+        "titre": "Privatiser la salle — Les événements | FoodEatUp"
+      }
+    },
+    "promptVignette": "Photo réaliste, cadrage vertical 9:16. Le chef de l'image de référence — MÊME visage, même barbe, même toque blanche, même veste de cuisine blanche, même tablier blanc au logo FoodEatUp bleu. Ne change ni ses traits ni sa morphologie. Il joue ici le rôle : directeur. Scène : privatiser la salle. Toute la salle, rien que vous. Décor : la salle préparée pour le soir, tables dressées, lumières basses. lumière chaude de début de service. C'est le RESTAURANT qui est le sujet : le plat, la salle ou l'équipe occupent les deux tiers du cadre, le chef est présent mais pas au centre. Aucun écran de logiciel visible. Bande bleu RapidoCMS #03A9F5 en haut du cadre sur un cinquième de la hauteur, portant UNIQUEMENT le texte « PRIVATISER SALLE » en typographie arrondie très grasse, blanc, centré. Aucun autre texte, aucun logo ajouté, pas de filigrane, pas de bordure décorative.",
+    "higgsfieldPrompt": null,
+    "tutoriel": null
+  },
+  "EP163": {
+    "publications": {
+      "facebook": {
+        "legende": "Six heures du matin. Ton dîner a commencé il y a quatorze heures.\n\nLe restaurant avant tout le monde : les chaises sur les tables, le premier café, la première livraison.\n\n👉 Découvrir la maison : https://site.foodeatup.com/\nUne table ? 06 14 18 92 25",
+        "hashtags": [
+          "foodeatup",
+          "restaurateur",
+          "restaurant",
+          "coulisses",
+          "metier",
+          "equipe"
+        ],
+        "motsCles": [
+          "les coulisses",
+          "coulisse",
+          "restaurant six heures du matin"
+        ],
+        "cta": "Découvrir la maison"
+      },
+      "instagram": {
+        "legende": "Six heures du matin.\nTon dîner a commencé il y a quatorze heures.\n\nLe restaurant avant tout le monde : les chaises sur les tables, le premier café, la première livraison.\n\nDécouvrir la maison — lien en bio.\nUne table ? 06 14 18 92 25",
+        "hashtags": [
+          "foodeatup",
+          "restaurateur",
+          "restaurant",
+          "coulisses",
+          "metier",
+          "equipe"
+        ],
+        "motsCles": [
+          "les coulisses",
+          "coulisse",
+          "restaurant six heures du matin"
+        ],
+        "cta": "Découvrir la maison"
+      },
+      "tiktok": {
+        "legende": "Six heures du matin.\nTon dîner a commencé il y a quatorze heures.\n\nLe restaurant avant tout le monde : les chaises sur les tables, le premier café, la première livraison.",
+        "hashtags": [
+          "foodeatup",
+          "restaurateur",
+          "restaurant",
+          "coulisses",
+          "metier",
+          "equipe"
+        ],
+        "motsCles": [
+          "les coulisses",
+          "coulisse",
+          "restaurant six heures du matin"
+        ],
+        "cta": "Découvrir la maison"
+      },
+      "linkedin": {
+        "legende": "Six heures du matin.\n\nLe restaurant avant tout le monde : les chaises sur les tables, le premier café, la première livraison.\n\nComment on le fait : Le brief du jour est déjà affiché : couverts prévus, productions à lancer, alertes de stock.\n\nDécouvrir la maison : https://site.foodeatup.com/\nUne table ? 06 14 18 92 25",
+        "hashtags": [
+          "foodeatup",
+          "restaurateur",
+          "restaurant",
+          "coulisses",
+          "metier",
+          "equipe"
+        ],
+        "motsCles": [
+          "les coulisses",
+          "coulisse",
+          "restaurant six heures du matin"
+        ],
+        "cta": "Découvrir la maison"
+      },
+      "youtube": {
+        "legende": "Six heures du matin. Ton dîner a commencé il y a quatorze heures.\n\nLe restaurant avant tout le monde : les chaises sur les tables, le premier café, la première livraison.\n\n— — —\n\n🔗 https://site.foodeatup.com/\n📞 06 14 18 92 25\n\nSaison 6 « L'orchestration du restaurant » — épisode 13 sur 30. Arc : Les coulisses.\nRôle à l'écran : Chef.\n\nComment c'est fait : Le brief du jour est déjà affiché : couverts prévus, productions à lancer, alertes de stock. Toute la série est publiée avec RapidoCMS, depuis une conversation.\n",
+        "hashtags": [
+          "foodeatup",
+          "restaurateur",
+          "restaurant",
+          "coulisses",
+          "metier",
+          "equipe"
+        ],
+        "motsCles": [
+          "les coulisses",
+          "coulisse",
+          "restaurant six heures du matin"
+        ],
+        "cta": "Découvrir la maison",
+        "titre": "Six heures du matin — Les coulisses | FoodEatUp"
+      }
+    },
+    "promptVignette": "Photo réaliste, cadrage vertical 9:16. Le chef de l'image de référence — MÊME visage, même barbe, même toque blanche, même veste de cuisine blanche, même tablier blanc au logo FoodEatUp bleu. Ne change ni ses traits ni sa morphologie. Il joue ici le rôle : chef. Scène : six heures du matin. Six heures du matin. Décor : la cuisine et les réserves avant l'ouverture, inox nu, cagettes. lumière crue du matin. C'est le RESTAURANT qui est le sujet : le plat, la salle ou l'équipe occupent les deux tiers du cadre, le chef est présent mais pas au centre. Aucun écran de logiciel visible. Bande bleu RapidoCMS #03A9F5 en haut du cadre sur un cinquième de la hauteur, portant UNIQUEMENT le texte « SIX HEURES MATIN » en typographie arrondie très grasse, blanc, centré. Aucun autre texte, aucun logo ajouté, pas de filigrane, pas de bordure décorative.",
+    "higgsfieldPrompt": null,
+    "tutoriel": null
+  },
+  "EP164": {
+    "publications": {
+      "facebook": {
+        "legende": "À cinquante kilomètres d'ici. C'est lui qui fait la moitié du travail.\n\nChez le maraîcher ou l'éleveur, à cinquante kilomètres. On montre la personne, pas le logo.\n\n👉 Voir la carte : https://site.foodeatup.com/\nUne table ? 06 14 18 92 25",
+        "hashtags": [
+          "foodeatup",
+          "restaurateur",
+          "restaurant",
+          "coulisses",
+          "metier",
+          "equipe"
+        ],
+        "motsCles": [
+          "les coulisses",
+          "portrait",
+          "restaurant le producteur"
+        ],
+        "cta": "Voir la carte"
+      },
+      "instagram": {
+        "legende": "À cinquante kilomètres d'ici.\nC'est lui qui fait la moitié du travail.\n\nChez le maraîcher ou l'éleveur, à cinquante kilomètres. On montre la personne, pas le logo.\n\nVoir la carte — lien en bio.\nUne table ? 06 14 18 92 25",
+        "hashtags": [
+          "foodeatup",
+          "restaurateur",
+          "restaurant",
+          "coulisses",
+          "metier",
+          "equipe"
+        ],
+        "motsCles": [
+          "les coulisses",
+          "portrait",
+          "restaurant le producteur"
+        ],
+        "cta": "Voir la carte"
+      },
+      "tiktok": {
+        "legende": "À cinquante kilomètres d'ici.\nC'est lui qui fait la moitié du travail.\n\nChez le maraîcher ou l'éleveur, à cinquante kilomètres.",
+        "hashtags": [
+          "foodeatup",
+          "restaurateur",
+          "restaurant",
+          "coulisses",
+          "metier",
+          "equipe"
+        ],
+        "motsCles": [
+          "les coulisses",
+          "portrait",
+          "restaurant le producteur"
+        ],
+        "cta": "Voir la carte"
+      },
+      "linkedin": {
+        "legende": "À cinquante kilomètres d'ici.\n\nChez le maraîcher ou l'éleveur, à cinquante kilomètres. On montre la personne, pas le logo.\n\nComment on le fait : Le fournisseur est dans la base : les commandes et les prix passent par là toute l'année.\n\nVoir la carte : https://site.foodeatup.com/\nUne table ? 06 14 18 92 25",
+        "hashtags": [
+          "foodeatup",
+          "restaurateur",
+          "restaurant",
+          "coulisses",
+          "metier",
+          "equipe"
+        ],
+        "motsCles": [
+          "les coulisses",
+          "portrait",
+          "restaurant le producteur"
+        ],
+        "cta": "Voir la carte"
+      },
+      "youtube": {
+        "legende": "À cinquante kilomètres d'ici. C'est lui qui fait la moitié du travail.\n\nChez le maraîcher ou l'éleveur, à cinquante kilomètres. On montre la personne, pas le logo.\n\n— — —\n\n🔗 https://site.foodeatup.com/\n📞 06 14 18 92 25\n\nSaison 6 « L'orchestration du restaurant » — épisode 14 sur 30. Arc : Les coulisses.\nRôle à l'écran : Chef.\n\nComment c'est fait : Le fournisseur est dans la base : les commandes et les prix passent par là toute l'année. Toute la série est publiée avec RapidoCMS, depuis une conversation.\n",
+        "hashtags": [
+          "foodeatup",
+          "restaurateur",
+          "restaurant",
+          "coulisses",
+          "metier",
+          "equipe"
+        ],
+        "motsCles": [
+          "les coulisses",
+          "portrait",
+          "restaurant le producteur"
+        ],
+        "cta": "Voir la carte",
+        "titre": "Le producteur — Les coulisses | FoodEatUp"
+      }
+    },
+    "promptVignette": "Photo réaliste, cadrage vertical 9:16. Le chef de l'image de référence — MÊME visage, même barbe, même toque blanche, même veste de cuisine blanche, même tablier blanc au logo FoodEatUp bleu. Ne change ni ses traits ni sa morphologie. Il joue ici le rôle : chef. Scène : le producteur. À cinquante kilomètres d'ici. Décor : la cuisine et les réserves avant l'ouverture, inox nu, cagettes. lumière crue du matin. C'est le RESTAURANT qui est le sujet : le plat, la salle ou l'équipe occupent les deux tiers du cadre, le chef est présent mais pas au centre. Aucun écran de logiciel visible. Bande bleu RapidoCMS #03A9F5 en haut du cadre sur un cinquième de la hauteur, portant UNIQUEMENT le texte « PRODUCTEUR » en typographie arrondie très grasse, blanc, centré. Aucun autre texte, aucun logo ajouté, pas de filigrane, pas de bordure décorative.",
+    "higgsfieldPrompt": null,
+    "tutoriel": null
+  },
+  "EP165": {
+    "publications": {
+      "facebook": {
+        "legende": "Elle t'accueille depuis quatre ans. Tu reviens pour elle, pas pour la déco.\n\nUne minute avec la personne qui accueille : depuis quand, ce qu'elle préfère servir, sa table préférée.\n\n👉 Réserver une table : https://site.foodeatup.com/\nUne table ? 06 14 18 92 25",
+        "hashtags": [
+          "foodeatup",
+          "restaurateur",
+          "restaurant",
+          "coulisses",
+          "metier",
+          "equipe"
+        ],
+        "motsCles": [
+          "les coulisses",
+          "portrait",
+          "restaurant portrait d un serveur"
+        ],
+        "cta": "Réserver une table"
+      },
+      "instagram": {
+        "legende": "Elle t'accueille depuis quatre ans.\nTu reviens pour elle, pas pour la déco.\n\nUne minute avec la personne qui accueille : depuis quand, ce qu'elle préfère servir, sa table préférée.\n\nRéserver une table — lien en bio.\nUne table ? 06 14 18 92 25",
+        "hashtags": [
+          "foodeatup",
+          "restaurateur",
+          "restaurant",
+          "coulisses",
+          "metier",
+          "equipe"
+        ],
+        "motsCles": [
+          "les coulisses",
+          "portrait",
+          "restaurant portrait d un serveur"
+        ],
+        "cta": "Réserver une table"
+      },
+      "tiktok": {
+        "legende": "Elle t'accueille depuis quatre ans.\nTu reviens pour elle, pas pour la déco.\n\nUne minute avec la personne qui accueille : depuis quand, ce qu'elle préfère servir, sa table préférée.",
+        "hashtags": [
+          "foodeatup",
+          "restaurateur",
+          "restaurant",
+          "coulisses",
+          "metier",
+          "equipe"
+        ],
+        "motsCles": [
+          "les coulisses",
+          "portrait",
+          "restaurant portrait d un serveur"
+        ],
+        "cta": "Réserver une table"
+      },
+      "linkedin": {
+        "legende": "Elle t'accueille depuis quatre ans.\n\nUne minute avec la personne qui accueille : depuis quand, ce qu'elle préfère servir, sa table préférée.\n\nComment on le fait : Son planning et ses heures sont posés ; elle sait sa semaine à l'avance, ça se voit à l'écran.\n\nRéserver une table : https://site.foodeatup.com/\nUne table ? 06 14 18 92 25",
+        "hashtags": [
+          "foodeatup",
+          "restaurateur",
+          "restaurant",
+          "coulisses",
+          "metier",
+          "equipe"
+        ],
+        "motsCles": [
+          "les coulisses",
+          "portrait",
+          "restaurant portrait d un serveur"
+        ],
+        "cta": "Réserver une table"
+      },
+      "youtube": {
+        "legende": "Elle t'accueille depuis quatre ans. Tu reviens pour elle, pas pour la déco.\n\nUne minute avec la personne qui accueille : depuis quand, ce qu'elle préfère servir, sa table préférée.\n\n— — —\n\n🔗 https://site.foodeatup.com/\n📞 06 14 18 92 25\n\nSaison 6 « L'orchestration du restaurant » — épisode 15 sur 30. Arc : Les coulisses.\nRôle à l'écran : Serveur.\n\nComment c'est fait : Son planning et ses heures sont posés ; elle sait sa semaine à l'avance, ça se voit à l'écran. Toute la série est publiée avec RapidoCMS, depuis une conversation.\n",
+        "hashtags": [
+          "foodeatup",
+          "restaurateur",
+          "restaurant",
+          "coulisses",
+          "metier",
+          "equipe"
+        ],
+        "motsCles": [
+          "les coulisses",
+          "portrait",
+          "restaurant portrait d un serveur"
+        ],
+        "cta": "Réserver une table",
+        "titre": "Portrait d'un serveur — Les coulisses | FoodEatUp"
+      }
+    },
+    "promptVignette": "Photo réaliste, cadrage vertical 9:16. Le chef de l'image de référence — MÊME visage, même barbe, même toque blanche, même veste de cuisine blanche, même tablier blanc au logo FoodEatUp bleu. Ne change ni ses traits ni sa morphologie. Il joue ici le rôle : serveur. Scène : portrait d'un serveur. Elle t'accueille depuis quatre ans. Décor : la cuisine et les réserves avant l'ouverture, inox nu, cagettes. lumière crue du matin. C'est le RESTAURANT qui est le sujet : le plat, la salle ou l'équipe occupent les deux tiers du cadre, le chef est présent mais pas au centre. Aucun écran de logiciel visible. Bande bleu RapidoCMS #03A9F5 en haut du cadre sur un cinquième de la hauteur, portant UNIQUEMENT le texte « PORTRAIT D'UN SERVEUR » en typographie arrondie très grasse, blanc, centré. Aucun autre texte, aucun logo ajouté, pas de filigrane, pas de bordure décorative.",
+    "higgsfieldPrompt": null,
+    "tutoriel": null
+  },
+  "EP166": {
+    "publications": {
+      "facebook": {
+        "legende": "Vingt heures quinze. Aucune musique. C'est le vrai son.\n\nVingt heures quinze. Les tickets, les voix, les assiettes qui partent. Aucune musique, le son réel.\n\n👉 Réserver une table : https://site.foodeatup.com/\nUne table ? 06 14 18 92 25",
+        "hashtags": [
+          "foodeatup",
+          "restaurateur",
+          "restaurant",
+          "coulisses",
+          "metier",
+          "equipe"
+        ],
+        "motsCles": [
+          "les coulisses",
+          "coulisse",
+          "restaurant le coup de feu vu de la cuisine"
+        ],
+        "cta": "Réserver une table"
+      },
+      "instagram": {
+        "legende": "Vingt heures quinze.\nAucune musique. C'est le vrai son.\n\nVingt heures quinze. Les tickets, les voix, les assiettes qui partent. Aucune musique, le son réel.\n\nRéserver une table — lien en bio.\nUne table ? 06 14 18 92 25",
+        "hashtags": [
+          "foodeatup",
+          "restaurateur",
+          "restaurant",
+          "coulisses",
+          "metier",
+          "equipe"
+        ],
+        "motsCles": [
+          "les coulisses",
+          "coulisse",
+          "restaurant le coup de feu vu de la cuisine"
+        ],
+        "cta": "Réserver une table"
+      },
+      "tiktok": {
+        "legende": "Vingt heures quinze.\nAucune musique. C'est le vrai son.\n\nVingt heures quinze.",
+        "hashtags": [
+          "foodeatup",
+          "restaurateur",
+          "restaurant",
+          "coulisses",
+          "metier",
+          "equipe"
+        ],
+        "motsCles": [
+          "les coulisses",
+          "coulisse",
+          "restaurant le coup de feu vu de la cuisine"
+        ],
+        "cta": "Réserver une table"
+      },
+      "linkedin": {
+        "legende": "Vingt heures quinze.\n\nVingt heures quinze. Les tickets, les voix, les assiettes qui partent. Aucune musique, le son réel.\n\nComment on le fait : Les commandes arrivent à l'écran de cuisine dans l'ordre, par poste. C'est ce qui rend la scène regardable.\n\nRéserver une table : https://site.foodeatup.com/\nUne table ? 06 14 18 92 25",
+        "hashtags": [
+          "foodeatup",
+          "restaurateur",
+          "restaurant",
+          "coulisses",
+          "metier",
+          "equipe"
+        ],
+        "motsCles": [
+          "les coulisses",
+          "coulisse",
+          "restaurant le coup de feu vu de la cuisine"
+        ],
+        "cta": "Réserver une table"
+      },
+      "youtube": {
+        "legende": "Vingt heures quinze. Aucune musique. C'est le vrai son.\n\nVingt heures quinze. Les tickets, les voix, les assiettes qui partent. Aucune musique, le son réel.\n\n— — —\n\n🔗 https://site.foodeatup.com/\n📞 06 14 18 92 25\n\nSaison 6 « L'orchestration du restaurant » — épisode 16 sur 30. Arc : Les coulisses.\nRôle à l'écran : Chef.\n\nComment c'est fait : Les commandes arrivent à l'écran de cuisine dans l'ordre, par poste. C'est ce qui rend la scène regardable. Toute la série est publiée avec RapidoCMS, depuis une conversation.\n",
+        "hashtags": [
+          "foodeatup",
+          "restaurateur",
+          "restaurant",
+          "coulisses",
+          "metier",
+          "equipe"
+        ],
+        "motsCles": [
+          "les coulisses",
+          "coulisse",
+          "restaurant le coup de feu vu de la cuisine"
+        ],
+        "cta": "Réserver une table",
+        "titre": "Le coup de feu, vu de la cuisine — Les coulisses | FoodEatUp"
+      }
+    },
+    "promptVignette": "Photo réaliste, cadrage vertical 9:16. Le chef de l'image de référence — MÊME visage, même barbe, même toque blanche, même veste de cuisine blanche, même tablier blanc au logo FoodEatUp bleu. Ne change ni ses traits ni sa morphologie. Il joue ici le rôle : chef. Scène : le coup de feu, vu de la cuisine. Vingt heures quinze. Décor : la cuisine et les réserves avant l'ouverture, inox nu, cagettes. lumière crue du matin. C'est le RESTAURANT qui est le sujet : le plat, la salle ou l'équipe occupent les deux tiers du cadre, le chef est présent mais pas au centre. Aucun écran de logiciel visible. Bande bleu RapidoCMS #03A9F5 en haut du cadre sur un cinquième de la hauteur, portant UNIQUEMENT le texte « COUP FEU VU » en typographie arrondie très grasse, blanc, centré. Aucun autre texte, aucun logo ajouté, pas de filigrane, pas de bordure décorative.",
+    "higgsfieldPrompt": null,
+    "tutoriel": null
+  },
+  "EP167": {
+    "publications": {
+      "facebook": {
+        "legende": "Le poste qu'on ne montre jamais. Sans lui, rien ne sort.\n\nLa plonge, à fond, sans filtre. Puis la cuisine impeccable à minuit.\n\n👉 Rejoindre l'équipe : https://site.foodeatup.com/\nUne table ? 06 14 18 92 25",
+        "hashtags": [
+          "foodeatup",
+          "restaurateur",
+          "restaurant",
+          "coulisses",
+          "metier",
+          "equipe"
+        ],
+        "motsCles": [
+          "les coulisses",
+          "portrait",
+          "restaurant le poste qu on ne montre jamais"
+        ],
+        "cta": "Rejoindre l'équipe"
+      },
+      "instagram": {
+        "legende": "Le poste qu'on ne montre jamais.\nSans lui, rien ne sort.\n\nLa plonge, à fond, sans filtre. Puis la cuisine impeccable à minuit.\n\nRejoindre l'équipe — lien en bio.\nUne table ? 06 14 18 92 25",
+        "hashtags": [
+          "foodeatup",
+          "restaurateur",
+          "restaurant",
+          "coulisses",
+          "metier",
+          "equipe"
+        ],
+        "motsCles": [
+          "les coulisses",
+          "portrait",
+          "restaurant le poste qu on ne montre jamais"
+        ],
+        "cta": "Rejoindre l'équipe"
+      },
+      "tiktok": {
+        "legende": "Le poste qu'on ne montre jamais.\nSans lui, rien ne sort.\n\nLa plonge, à fond, sans filtre.",
+        "hashtags": [
+          "foodeatup",
+          "restaurateur",
+          "restaurant",
+          "coulisses",
+          "metier",
+          "equipe"
+        ],
+        "motsCles": [
+          "les coulisses",
+          "portrait",
+          "restaurant le poste qu on ne montre jamais"
+        ],
+        "cta": "Rejoindre l'équipe"
+      },
+      "linkedin": {
+        "legende": "Le poste qu'on ne montre jamais.\n\nLa plonge, à fond, sans filtre. Puis la cuisine impeccable à minuit.\n\nComment on le fait : Le plan de nettoyage est coché poste par poste ; la conformité n'est pas une promesse.\n\nRejoindre l'équipe : https://site.foodeatup.com/\nUne table ? 06 14 18 92 25",
+        "hashtags": [
+          "foodeatup",
+          "restaurateur",
+          "restaurant",
+          "coulisses",
+          "metier",
+          "equipe"
+        ],
+        "motsCles": [
+          "les coulisses",
+          "portrait",
+          "restaurant le poste qu on ne montre jamais"
+        ],
+        "cta": "Rejoindre l'équipe"
+      },
+      "youtube": {
+        "legende": "Le poste qu'on ne montre jamais. Sans lui, rien ne sort.\n\nLa plonge, à fond, sans filtre. Puis la cuisine impeccable à minuit.\n\n— — —\n\n🔗 https://site.foodeatup.com/\n📞 06 14 18 92 25\n\nSaison 6 « L'orchestration du restaurant » — épisode 17 sur 30. Arc : Les coulisses.\nRôle à l'écran : Plongeur.\n\nComment c'est fait : Le plan de nettoyage est coché poste par poste ; la conformité n'est pas une promesse. Toute la série est publiée avec RapidoCMS, depuis une conversation.\n",
+        "hashtags": [
+          "foodeatup",
+          "restaurateur",
+          "restaurant",
+          "coulisses",
+          "metier",
+          "equipe"
+        ],
+        "motsCles": [
+          "les coulisses",
+          "portrait",
+          "restaurant le poste qu on ne montre jamais"
+        ],
+        "cta": "Rejoindre l'équipe",
+        "titre": "Le poste qu'on ne montre jamais — Les coulisses | FoodEatUp"
+      }
+    },
+    "promptVignette": "Photo réaliste, cadrage vertical 9:16. Le chef de l'image de référence — MÊME visage, même barbe, même toque blanche, même veste de cuisine blanche, même tablier blanc au logo FoodEatUp bleu. Ne change ni ses traits ni sa morphologie. Il joue ici le rôle : plongeur. Scène : le poste qu'on ne montre jamais. Le poste qu'on ne montre jamais. Décor : la cuisine et les réserves avant l'ouverture, inox nu, cagettes. lumière crue du matin. C'est le RESTAURANT qui est le sujet : le plat, la salle ou l'équipe occupent les deux tiers du cadre, le chef est présent mais pas au centre. Aucun écran de logiciel visible. Bande bleu RapidoCMS #03A9F5 en haut du cadre sur un cinquième de la hauteur, portant UNIQUEMENT le texte « POSTE QU'ON NE » en typographie arrondie très grasse, blanc, centré. Aucun autre texte, aucun logo ajouté, pas de filigrane, pas de bordure décorative.",
+    "higgsfieldPrompt": null,
+    "tutoriel": null
+  },
+  "EP168": {
+    "publications": {
+      "facebook": {
+        "legende": "Six heures, au marché. Ce qu'on refuse compte autant.\n\nLe marché à six heures, ce qu'on prend, ce qu'on refuse et pourquoi.\n\n👉 Voir la carte : https://site.foodeatup.com/\nUne table ? 06 14 18 92 25",
+        "hashtags": [
+          "foodeatup",
+          "restaurateur",
+          "restaurant",
+          "coulisses",
+          "metier",
+          "equipe"
+        ],
+        "motsCles": [
+          "les coulisses",
+          "coulisse",
+          "restaurant les courses du chef"
+        ],
+        "cta": "Voir la carte"
+      },
+      "instagram": {
+        "legende": "Six heures, au marché.\nCe qu'on refuse compte autant.\n\nLe marché à six heures, ce qu'on prend, ce qu'on refuse et pourquoi.\n\nVoir la carte — lien en bio.\nUne table ? 06 14 18 92 25",
+        "hashtags": [
+          "foodeatup",
+          "restaurateur",
+          "restaurant",
+          "coulisses",
+          "metier",
+          "equipe"
+        ],
+        "motsCles": [
+          "les coulisses",
+          "coulisse",
+          "restaurant les courses du chef"
+        ],
+        "cta": "Voir la carte"
+      },
+      "tiktok": {
+        "legende": "Six heures, au marché.\nCe qu'on refuse compte autant.\n\nLe marché à six heures, ce qu'on prend, ce qu'on refuse et pourquoi.",
+        "hashtags": [
+          "foodeatup",
+          "restaurateur",
+          "restaurant",
+          "coulisses",
+          "metier",
+          "equipe"
+        ],
+        "motsCles": [
+          "les coulisses",
+          "coulisse",
+          "restaurant les courses du chef"
+        ],
+        "cta": "Voir la carte"
+      },
+      "linkedin": {
+        "legende": "Six heures, au marché.\n\nLe marché à six heures, ce qu'on prend, ce qu'on refuse et pourquoi.\n\nComment on le fait : La liste de courses vient de la production prévue — on n'achète pas au hasard.\n\nVoir la carte : https://site.foodeatup.com/\nUne table ? 06 14 18 92 25",
+        "hashtags": [
+          "foodeatup",
+          "restaurateur",
+          "restaurant",
+          "coulisses",
+          "metier",
+          "equipe"
+        ],
+        "motsCles": [
+          "les coulisses",
+          "coulisse",
+          "restaurant les courses du chef"
+        ],
+        "cta": "Voir la carte"
+      },
+      "youtube": {
+        "legende": "Six heures, au marché. Ce qu'on refuse compte autant.\n\nLe marché à six heures, ce qu'on prend, ce qu'on refuse et pourquoi.\n\n— — —\n\n🔗 https://site.foodeatup.com/\n📞 06 14 18 92 25\n\nSaison 6 « L'orchestration du restaurant » — épisode 18 sur 30. Arc : Les coulisses.\nRôle à l'écran : Chef.\n\nComment c'est fait : La liste de courses vient de la production prévue — on n'achète pas au hasard. Toute la série est publiée avec RapidoCMS, depuis une conversation.\n",
+        "hashtags": [
+          "foodeatup",
+          "restaurateur",
+          "restaurant",
+          "coulisses",
+          "metier",
+          "equipe"
+        ],
+        "motsCles": [
+          "les coulisses",
+          "coulisse",
+          "restaurant les courses du chef"
+        ],
+        "cta": "Voir la carte",
+        "titre": "Les courses du chef — Les coulisses | FoodEatUp"
+      }
+    },
+    "promptVignette": "Photo réaliste, cadrage vertical 9:16. Le chef de l'image de référence — MÊME visage, même barbe, même toque blanche, même veste de cuisine blanche, même tablier blanc au logo FoodEatUp bleu. Ne change ni ses traits ni sa morphologie. Il joue ici le rôle : chef. Scène : les courses du chef. Six heures, au marché. Décor : la cuisine et les réserves avant l'ouverture, inox nu, cagettes. lumière crue du matin. C'est le RESTAURANT qui est le sujet : le plat, la salle ou l'équipe occupent les deux tiers du cadre, le chef est présent mais pas au centre. Aucun écran de logiciel visible. Bande bleu RapidoCMS #03A9F5 en haut du cadre sur un cinquième de la hauteur, portant UNIQUEMENT le texte « COURSES CHEF » en typographie arrondie très grasse, blanc, centré. Aucun autre texte, aucun logo ajouté, pas de filigrane, pas de bordure décorative.",
+    "higgsfieldPrompt": null,
+    "tutoriel": null
+  },
+  "EP169": {
+    "publications": {
+      "facebook": {
+        "legende": "On lit tout. Même celui-là. Et voilà ce qu'on a changé.\n\nUn vrai avis client lu à voix haute, y compris le reproche. Et ce qu'on a changé depuis.\n\n👉 Laisser un avis : https://site.foodeatup.com/\nUne table ? 06 14 18 92 25",
+        "hashtags": [
+          "foodeatup",
+          "restaurateur",
+          "restaurant",
+          "client",
+          "accueil",
+          "service"
+        ],
+        "motsCles": [
+          "le client",
+          "avis",
+          "restaurant l avis qu on affiche"
+        ],
+        "cta": "Laisser un avis"
+      },
+      "instagram": {
+        "legende": "On lit tout. Même celui-là.\nEt voilà ce qu'on a changé.\n\nUn vrai avis client lu à voix haute, y compris le reproche. Et ce qu'on a changé depuis.\n\nLaisser un avis — lien en bio.\nUne table ? 06 14 18 92 25",
+        "hashtags": [
+          "foodeatup",
+          "restaurateur",
+          "restaurant",
+          "client",
+          "accueil",
+          "service"
+        ],
+        "motsCles": [
+          "le client",
+          "avis",
+          "restaurant l avis qu on affiche"
+        ],
+        "cta": "Laisser un avis"
+      },
+      "tiktok": {
+        "legende": "On lit tout. Même celui-là.\nEt voilà ce qu'on a changé.\n\nUn vrai avis client lu à voix haute, y compris le reproche.",
+        "hashtags": [
+          "foodeatup",
+          "restaurateur",
+          "restaurant",
+          "client",
+          "accueil",
+          "service"
+        ],
+        "motsCles": [
+          "le client",
+          "avis",
+          "restaurant l avis qu on affiche"
+        ],
+        "cta": "Laisser un avis"
+      },
+      "linkedin": {
+        "legende": "On lit tout. Même celui-là.\n\nUn vrai avis client lu à voix haute, y compris le reproche. Et ce qu'on a changé depuis.\n\nComment on le fait : Les avis remontent au même endroit ; la réponse part de là, dans le ton de la maison.\n\nLaisser un avis : https://site.foodeatup.com/\nUne table ? 06 14 18 92 25",
+        "hashtags": [
+          "foodeatup",
+          "restaurateur",
+          "restaurant",
+          "client",
+          "accueil",
+          "service"
+        ],
+        "motsCles": [
+          "le client",
+          "avis",
+          "restaurant l avis qu on affiche"
+        ],
+        "cta": "Laisser un avis"
+      },
+      "youtube": {
+        "legende": "On lit tout. Même celui-là. Et voilà ce qu'on a changé.\n\nUn vrai avis client lu à voix haute, y compris le reproche. Et ce qu'on a changé depuis.\n\n— — —\n\n🔗 https://site.foodeatup.com/\n📞 06 14 18 92 25\n\nSaison 6 « L'orchestration du restaurant » — épisode 19 sur 30. Arc : Le client.\nRôle à l'écran : Directeur.\n\nComment c'est fait : Les avis remontent au même endroit ; la réponse part de là, dans le ton de la maison. Toute la série est publiée avec RapidoCMS, depuis une conversation.\n",
+        "hashtags": [
+          "foodeatup",
+          "restaurateur",
+          "restaurant",
+          "client",
+          "accueil",
+          "service"
+        ],
+        "motsCles": [
+          "le client",
+          "avis",
+          "restaurant l avis qu on affiche"
+        ],
+        "cta": "Laisser un avis",
+        "titre": "L'avis qu'on affiche — Le client | FoodEatUp"
+      }
+    },
+    "promptVignette": "Photo réaliste, cadrage vertical 9:16. Le chef de l'image de référence — MÊME visage, même barbe, même toque blanche, même veste de cuisine blanche, même tablier blanc au logo FoodEatUp bleu. Ne change ni ses traits ni sa morphologie. Il joue ici le rôle : directeur. Scène : l'avis qu'on affiche. On lit tout. Même celui-là. Décor : une table en salle vue à hauteur de convive, verres et nappe. lumière douce de fin de repas. C'est le RESTAURANT qui est le sujet : le plat, la salle ou l'équipe occupent les deux tiers du cadre, le chef est présent mais pas au centre. Aucun écran de logiciel visible. Bande bleu RapidoCMS #03A9F5 en haut du cadre sur un cinquième de la hauteur, portant UNIQUEMENT le texte « L'AVIS QU'ON AFFICHE » en typographie arrondie très grasse, blanc, centré. Aucun autre texte, aucun logo ajouté, pas de filigrane, pas de bordure décorative.",
+    "higgsfieldPrompt": null,
+    "tutoriel": null
+  },
+  "EP170": {
+    "publications": {
+      "facebook": {
+        "legende": "Même table depuis six ans. On sait déjà ce qu'il va prendre.\n\nCelui qui vient depuis six ans, toujours la même table. On lui donne la parole.\n\n👉 Réserver une table : https://site.foodeatup.com/\nUne table ? 06 14 18 92 25",
+        "hashtags": [
+          "foodeatup",
+          "restaurateur",
+          "restaurant",
+          "client",
+          "accueil",
+          "service"
+        ],
+        "motsCles": [
+          "le client",
+          "portrait",
+          "restaurant le client du mardi"
+        ],
+        "cta": "Réserver une table"
+      },
+      "instagram": {
+        "legende": "Même table depuis six ans.\nOn sait déjà ce qu'il va prendre.\n\nCelui qui vient depuis six ans, toujours la même table. On lui donne la parole.\n\nRéserver une table — lien en bio.\nUne table ? 06 14 18 92 25",
+        "hashtags": [
+          "foodeatup",
+          "restaurateur",
+          "restaurant",
+          "client",
+          "accueil",
+          "service"
+        ],
+        "motsCles": [
+          "le client",
+          "portrait",
+          "restaurant le client du mardi"
+        ],
+        "cta": "Réserver une table"
+      },
+      "tiktok": {
+        "legende": "Même table depuis six ans.\nOn sait déjà ce qu'il va prendre.\n\nCelui qui vient depuis six ans, toujours la même table.",
+        "hashtags": [
+          "foodeatup",
+          "restaurateur",
+          "restaurant",
+          "client",
+          "accueil",
+          "service"
+        ],
+        "motsCles": [
+          "le client",
+          "portrait",
+          "restaurant le client du mardi"
+        ],
+        "cta": "Réserver une table"
+      },
+      "linkedin": {
+        "legende": "Même table depuis six ans.\n\nCelui qui vient depuis six ans, toujours la même table. On lui donne la parole.\n\nComment on le fait : Sa fiche client garde ses habitudes : la table, le plat, l'allergie.\n\nRéserver une table : https://site.foodeatup.com/\nUne table ? 06 14 18 92 25",
+        "hashtags": [
+          "foodeatup",
+          "restaurateur",
+          "restaurant",
+          "client",
+          "accueil",
+          "service"
+        ],
+        "motsCles": [
+          "le client",
+          "portrait",
+          "restaurant le client du mardi"
+        ],
+        "cta": "Réserver une table"
+      },
+      "youtube": {
+        "legende": "Même table depuis six ans. On sait déjà ce qu'il va prendre.\n\nCelui qui vient depuis six ans, toujours la même table. On lui donne la parole.\n\n— — —\n\n🔗 https://site.foodeatup.com/\n📞 06 14 18 92 25\n\nSaison 6 « L'orchestration du restaurant » — épisode 20 sur 30. Arc : Le client.\nRôle à l'écran : Serveur.\n\nComment c'est fait : Sa fiche client garde ses habitudes : la table, le plat, l'allergie. Toute la série est publiée avec RapidoCMS, depuis une conversation.\n",
+        "hashtags": [
+          "foodeatup",
+          "restaurateur",
+          "restaurant",
+          "client",
+          "accueil",
+          "service"
+        ],
+        "motsCles": [
+          "le client",
+          "portrait",
+          "restaurant le client du mardi"
+        ],
+        "cta": "Réserver une table",
+        "titre": "Le client du mardi — Le client | FoodEatUp"
+      }
+    },
+    "promptVignette": "Photo réaliste, cadrage vertical 9:16. Le chef de l'image de référence — MÊME visage, même barbe, même toque blanche, même veste de cuisine blanche, même tablier blanc au logo FoodEatUp bleu. Ne change ni ses traits ni sa morphologie. Il joue ici le rôle : serveur. Scène : le client du mardi. Même table depuis six ans. Décor : une table en salle vue à hauteur de convive, verres et nappe. lumière douce de fin de repas. C'est le RESTAURANT qui est le sujet : le plat, la salle ou l'équipe occupent les deux tiers du cadre, le chef est présent mais pas au centre. Aucun écran de logiciel visible. Bande bleu RapidoCMS #03A9F5 en haut du cadre sur un cinquième de la hauteur, portant UNIQUEMENT le texte « CLIENT MARDI » en typographie arrondie très grasse, blanc, centré. Aucun autre texte, aucun logo ajouté, pas de filigrane, pas de bordure décorative.",
+    "higgsfieldPrompt": null,
+    "tutoriel": null
+  },
+  "EP171": {
+    "publications": {
+      "facebook": {
+        "legende": "Douze personnes, une addition. Ça peut très bien se passer.\n\nUne grande tablée servie sans accroc : la mise en place, le service synchronisé, l'addition partagée en douze sans drame.\n\n👉 Réserver pour un groupe : https://site.foodeatup.com/\nUne table ? 06 14 18 92 25",
+        "hashtags": [
+          "foodeatup",
+          "restaurateur",
+          "restaurant",
+          "client",
+          "accueil",
+          "service"
+        ],
+        "motsCles": [
+          "le client",
+          "coulisse",
+          "restaurant la table de douze"
+        ],
+        "cta": "Réserver pour un groupe"
+      },
+      "instagram": {
+        "legende": "Douze personnes, une addition.\nÇa peut très bien se passer.\n\nUne grande tablée servie sans accroc : la mise en place, le service synchronisé, l'addition partagée en douze sans drame.\n\nRéserver pour un groupe — lien en bio.\nUne table ? 06 14 18 92 25",
+        "hashtags": [
+          "foodeatup",
+          "restaurateur",
+          "restaurant",
+          "client",
+          "accueil",
+          "service"
+        ],
+        "motsCles": [
+          "le client",
+          "coulisse",
+          "restaurant la table de douze"
+        ],
+        "cta": "Réserver pour un groupe"
+      },
+      "tiktok": {
+        "legende": "Douze personnes, une addition.\nÇa peut très bien se passer.\n\nUne grande tablée servie sans accroc : la mise en place, le service synchronisé, l'addition partagée en douze sans drame.",
+        "hashtags": [
+          "foodeatup",
+          "restaurateur",
+          "restaurant",
+          "client",
+          "accueil",
+          "service"
+        ],
+        "motsCles": [
+          "le client",
+          "coulisse",
+          "restaurant la table de douze"
+        ],
+        "cta": "Réserver pour un groupe"
+      },
+      "linkedin": {
+        "legende": "Douze personnes, une addition.\n\nUne grande tablée servie sans accroc : la mise en place, le service synchronisé, l'addition partagée en douze sans drame.\n\nComment on le fait : Le plan de salle, les postes et le partage d'addition sont prévus avant que le groupe s'assoie.\n\nRéserver pour un groupe : https://site.foodeatup.com/\nUne table ? 06 14 18 92 25",
+        "hashtags": [
+          "foodeatup",
+          "restaurateur",
+          "restaurant",
+          "client",
+          "accueil",
+          "service"
+        ],
+        "motsCles": [
+          "le client",
+          "coulisse",
+          "restaurant la table de douze"
+        ],
+        "cta": "Réserver pour un groupe"
+      },
+      "youtube": {
+        "legende": "Douze personnes, une addition. Ça peut très bien se passer.\n\nUne grande tablée servie sans accroc : la mise en place, le service synchronisé, l'addition partagée en douze sans drame.\n\n— — —\n\n🔗 https://site.foodeatup.com/\n📞 06 14 18 92 25\n\nSaison 6 « L'orchestration du restaurant » — épisode 21 sur 30. Arc : Le client.\nRôle à l'écran : Serveur.\n\nComment c'est fait : Le plan de salle, les postes et le partage d'addition sont prévus avant que le groupe s'assoie. Toute la série est publiée avec RapidoCMS, depuis une conversation.\n",
+        "hashtags": [
+          "foodeatup",
+          "restaurateur",
+          "restaurant",
+          "client",
+          "accueil",
+          "service"
+        ],
+        "motsCles": [
+          "le client",
+          "coulisse",
+          "restaurant la table de douze"
+        ],
+        "cta": "Réserver pour un groupe",
+        "titre": "La table de douze — Le client | FoodEatUp"
+      }
+    },
+    "promptVignette": "Photo réaliste, cadrage vertical 9:16. Le chef de l'image de référence — MÊME visage, même barbe, même toque blanche, même veste de cuisine blanche, même tablier blanc au logo FoodEatUp bleu. Ne change ni ses traits ni sa morphologie. Il joue ici le rôle : serveur. Scène : la table de douze. Douze personnes, une addition. Décor : une table en salle vue à hauteur de convive, verres et nappe. lumière douce de fin de repas. C'est le RESTAURANT qui est le sujet : le plat, la salle ou l'équipe occupent les deux tiers du cadre, le chef est présent mais pas au centre. Aucun écran de logiciel visible. Bande bleu RapidoCMS #03A9F5 en haut du cadre sur un cinquième de la hauteur, portant UNIQUEMENT le texte « TABLE DOUZE » en typographie arrondie très grasse, blanc, centré. Aucun autre texte, aucun logo ajouté, pas de filigrane, pas de bordure décorative.",
+    "higgsfieldPrompt": null,
+    "tutoriel": null
+  },
+  "EP172": {
+    "publications": {
+      "facebook": {
+        "legende": "Je commande depuis mon canapé. Et je la regarde arriver en cuisine.\n\nLe chef passe client : il commande sur le site du restaurant, suit sa commande, et on la voit arriver en cuisine.\n\n👉 Commander en ligne : https://site.foodeatup.com/\nUne table ? 06 14 18 92 25",
+        "hashtags": [
+          "foodeatup",
+          "restaurateur",
+          "restaurant",
+          "client",
+          "accueil",
+          "service"
+        ],
+        "motsCles": [
+          "le client",
+          "démonstration",
+          "restaurant je commande depuis mon canape"
+        ],
+        "cta": "Commander en ligne"
+      },
+      "instagram": {
+        "legende": "Je commande depuis mon canapé.\nEt je la regarde arriver en cuisine.\n\nLe chef passe client : il commande sur le site du restaurant, suit sa commande, et on la voit arriver en cuisine.\n\nCommander en ligne — lien en bio.\nUne table ? 06 14 18 92 25",
+        "hashtags": [
+          "foodeatup",
+          "restaurateur",
+          "restaurant",
+          "client",
+          "accueil",
+          "service"
+        ],
+        "motsCles": [
+          "le client",
+          "démonstration",
+          "restaurant je commande depuis mon canape"
+        ],
+        "cta": "Commander en ligne"
+      },
+      "tiktok": {
+        "legende": "Je commande depuis mon canapé.\nEt je la regarde arriver en cuisine.\n\nLe chef passe client : il commande sur le site du restaurant, suit sa commande, et on la voit arriver en cuisine.",
+        "hashtags": [
+          "foodeatup",
+          "restaurateur",
+          "restaurant",
+          "client",
+          "accueil",
+          "service"
+        ],
+        "motsCles": [
+          "le client",
+          "démonstration",
+          "restaurant je commande depuis mon canape"
+        ],
+        "cta": "Commander en ligne"
+      },
+      "linkedin": {
+        "legende": "Je commande depuis mon canapé.\n\nLe chef passe client : il commande sur le site du restaurant, suit sa commande, et on la voit arriver en cuisine.\n\nComment on le fait : La commande du site tombe dans la même file que la salle. Zéro commission, zéro ressaisie.\n\nCommander en ligne : https://site.foodeatup.com/\nUne table ? 06 14 18 92 25",
+        "hashtags": [
+          "foodeatup",
+          "restaurateur",
+          "restaurant",
+          "client",
+          "accueil",
+          "service"
+        ],
+        "motsCles": [
+          "le client",
+          "démonstration",
+          "restaurant je commande depuis mon canape"
+        ],
+        "cta": "Commander en ligne"
+      },
+      "youtube": {
+        "legende": "Je commande depuis mon canapé. Et je la regarde arriver en cuisine.\n\nLe chef passe client : il commande sur le site du restaurant, suit sa commande, et on la voit arriver en cuisine.\n\n— — —\n\n🔗 https://site.foodeatup.com/\n📞 06 14 18 92 25\n\nSaison 6 « L'orchestration du restaurant » — épisode 22 sur 30. Arc : Le client.\nRôle à l'écran : Client.\n\nComment c'est fait : La commande du site tombe dans la même file que la salle. Zéro commission, zéro ressaisie. Toute la série est publiée avec RapidoCMS, depuis une conversation.\n",
+        "hashtags": [
+          "foodeatup",
+          "restaurateur",
+          "restaurant",
+          "client",
+          "accueil",
+          "service"
+        ],
+        "motsCles": [
+          "le client",
+          "démonstration",
+          "restaurant je commande depuis mon canape"
+        ],
+        "cta": "Commander en ligne",
+        "titre": "Je commande depuis mon canapé — Le client | FoodEatUp"
+      }
+    },
+    "promptVignette": "Photo réaliste, cadrage vertical 9:16. Le chef de l'image de référence — MÊME visage, même barbe, même toque blanche, même veste de cuisine blanche, même tablier blanc au logo FoodEatUp bleu. Ne change ni ses traits ni sa morphologie. Il joue ici le rôle : client. Scène : je commande depuis mon canapé. Je commande depuis mon canapé. Décor : une table en salle vue à hauteur de convive, verres et nappe. lumière douce de fin de repas. C'est le RESTAURANT qui est le sujet : le plat, la salle ou l'équipe occupent les deux tiers du cadre, le chef est présent mais pas au centre. Aucun écran de logiciel visible. Bande bleu RapidoCMS #03A9F5 en haut du cadre sur un cinquième de la hauteur, portant UNIQUEMENT le texte « JE COMMANDE DEPUIS » en typographie arrondie très grasse, blanc, centré. Aucun autre texte, aucun logo ajouté, pas de filigrane, pas de bordure décorative.",
+    "higgsfieldPrompt": null,
+    "tutoriel": null
+  },
+  "EP173": {
+    "publications": {
+      "facebook": {
+        "legende": "Sans gluten. Vraiment. On vérifie, on ne suppose pas.\n\nUne demande particulière prise au sérieux : ce qu'on change, ce qu'on vérifie, ce qu'on garantit.\n\n👉 Réserver une table : https://site.foodeatup.com/\nUne table ? 06 14 18 92 25",
+        "hashtags": [
+          "foodeatup",
+          "restaurateur",
+          "restaurant",
+          "client",
+          "accueil",
+          "service"
+        ],
+        "motsCles": [
+          "le client",
+          "démonstration",
+          "restaurant sans gluten sans stress"
+        ],
+        "cta": "Réserver une table"
+      },
+      "instagram": {
+        "legende": "Sans gluten. Vraiment.\nOn vérifie, on ne suppose pas.\n\nUne demande particulière prise au sérieux : ce qu'on change, ce qu'on vérifie, ce qu'on garantit.\n\nRéserver une table — lien en bio.\nUne table ? 06 14 18 92 25",
+        "hashtags": [
+          "foodeatup",
+          "restaurateur",
+          "restaurant",
+          "client",
+          "accueil",
+          "service"
+        ],
+        "motsCles": [
+          "le client",
+          "démonstration",
+          "restaurant sans gluten sans stress"
+        ],
+        "cta": "Réserver une table"
+      },
+      "tiktok": {
+        "legende": "Sans gluten. Vraiment.\nOn vérifie, on ne suppose pas.\n\nUne demande particulière prise au sérieux : ce qu'on change, ce qu'on vérifie, ce qu'on garantit.",
+        "hashtags": [
+          "foodeatup",
+          "restaurateur",
+          "restaurant",
+          "client",
+          "accueil",
+          "service"
+        ],
+        "motsCles": [
+          "le client",
+          "démonstration",
+          "restaurant sans gluten sans stress"
+        ],
+        "cta": "Réserver une table"
+      },
+      "linkedin": {
+        "legende": "Sans gluten. Vraiment.\n\nUne demande particulière prise au sérieux : ce qu'on change, ce qu'on vérifie, ce qu'on garantit.\n\nComment on le fait : Les allergènes sont sur la fiche plat, la contrainte est notée sur la réservation.\n\nRéserver une table : https://site.foodeatup.com/\nUne table ? 06 14 18 92 25",
+        "hashtags": [
+          "foodeatup",
+          "restaurateur",
+          "restaurant",
+          "client",
+          "accueil",
+          "service"
+        ],
+        "motsCles": [
+          "le client",
+          "démonstration",
+          "restaurant sans gluten sans stress"
+        ],
+        "cta": "Réserver une table"
+      },
+      "youtube": {
+        "legende": "Sans gluten. Vraiment. On vérifie, on ne suppose pas.\n\nUne demande particulière prise au sérieux : ce qu'on change, ce qu'on vérifie, ce qu'on garantit.\n\n— — —\n\n🔗 https://site.foodeatup.com/\n📞 06 14 18 92 25\n\nSaison 6 « L'orchestration du restaurant » — épisode 23 sur 30. Arc : Le client.\nRôle à l'écran : Chef.\n\nComment c'est fait : Les allergènes sont sur la fiche plat, la contrainte est notée sur la réservation. Toute la série est publiée avec RapidoCMS, depuis une conversation.\n",
+        "hashtags": [
+          "foodeatup",
+          "restaurateur",
+          "restaurant",
+          "client",
+          "accueil",
+          "service"
+        ],
+        "motsCles": [
+          "le client",
+          "démonstration",
+          "restaurant sans gluten sans stress"
+        ],
+        "cta": "Réserver une table",
+        "titre": "Sans gluten, sans stress — Le client | FoodEatUp"
+      }
+    },
+    "promptVignette": "Photo réaliste, cadrage vertical 9:16. Le chef de l'image de référence — MÊME visage, même barbe, même toque blanche, même veste de cuisine blanche, même tablier blanc au logo FoodEatUp bleu. Ne change ni ses traits ni sa morphologie. Il joue ici le rôle : chef. Scène : sans gluten, sans stress. Sans gluten. Vraiment. Décor : une table en salle vue à hauteur de convive, verres et nappe. lumière douce de fin de repas. C'est le RESTAURANT qui est le sujet : le plat, la salle ou l'équipe occupent les deux tiers du cadre, le chef est présent mais pas au centre. Aucun écran de logiciel visible. Bande bleu RapidoCMS #03A9F5 en haut du cadre sur un cinquième de la hauteur, portant UNIQUEMENT le texte « GLUTEN STRESS » en typographie arrondie très grasse, blanc, centré. Aucun autre texte, aucun logo ajouté, pas de filigrane, pas de bordure décorative.",
+    "higgsfieldPrompt": null,
+    "tutoriel": null
+  },
+  "EP174": {
+    "publications": {
+      "facebook": {
+        "legende": "Premier rendez-vous. On ne vous dérangera pas.\n\nLa table près de la fenêtre, la lumière baissée, le service discret. Ce qu'on fait sans qu'on nous le demande.\n\n👉 Réserver une table : https://site.foodeatup.com/\nUne table ? 06 14 18 92 25",
+        "hashtags": [
+          "foodeatup",
+          "restaurateur",
+          "restaurant",
+          "client",
+          "accueil",
+          "service"
+        ],
+        "motsCles": [
+          "le client",
+          "coulisse",
+          "restaurant le premier rendez vous"
+        ],
+        "cta": "Réserver une table"
+      },
+      "instagram": {
+        "legende": "Premier rendez-vous.\nOn ne vous dérangera pas.\n\nLa table près de la fenêtre, la lumière baissée, le service discret. Ce qu'on fait sans qu'on nous le demande.\n\nRéserver une table — lien en bio.\nUne table ? 06 14 18 92 25",
+        "hashtags": [
+          "foodeatup",
+          "restaurateur",
+          "restaurant",
+          "client",
+          "accueil",
+          "service"
+        ],
+        "motsCles": [
+          "le client",
+          "coulisse",
+          "restaurant le premier rendez vous"
+        ],
+        "cta": "Réserver une table"
+      },
+      "tiktok": {
+        "legende": "Premier rendez-vous.\nOn ne vous dérangera pas.\n\nLa table près de la fenêtre, la lumière baissée, le service discret.",
+        "hashtags": [
+          "foodeatup",
+          "restaurateur",
+          "restaurant",
+          "client",
+          "accueil",
+          "service"
+        ],
+        "motsCles": [
+          "le client",
+          "coulisse",
+          "restaurant le premier rendez vous"
+        ],
+        "cta": "Réserver une table"
+      },
+      "linkedin": {
+        "legende": "Premier rendez-vous.\n\nLa table près de la fenêtre, la lumière baissée, le service discret. Ce qu'on fait sans qu'on nous le demande.\n\nComment on le fait : La note « table calme » est sur la réservation ; le placement se fait avant l'arrivée.\n\nRéserver une table : https://site.foodeatup.com/\nUne table ? 06 14 18 92 25",
+        "hashtags": [
+          "foodeatup",
+          "restaurateur",
+          "restaurant",
+          "client",
+          "accueil",
+          "service"
+        ],
+        "motsCles": [
+          "le client",
+          "coulisse",
+          "restaurant le premier rendez vous"
+        ],
+        "cta": "Réserver une table"
+      },
+      "youtube": {
+        "legende": "Premier rendez-vous. On ne vous dérangera pas.\n\nLa table près de la fenêtre, la lumière baissée, le service discret. Ce qu'on fait sans qu'on nous le demande.\n\n— — —\n\n🔗 https://site.foodeatup.com/\n📞 06 14 18 92 25\n\nSaison 6 « L'orchestration du restaurant » — épisode 24 sur 30. Arc : Le client.\nRôle à l'écran : Serveur.\n\nComment c'est fait : La note « table calme » est sur la réservation ; le placement se fait avant l'arrivée. Toute la série est publiée avec RapidoCMS, depuis une conversation.\n",
+        "hashtags": [
+          "foodeatup",
+          "restaurateur",
+          "restaurant",
+          "client",
+          "accueil",
+          "service"
+        ],
+        "motsCles": [
+          "le client",
+          "coulisse",
+          "restaurant le premier rendez vous"
+        ],
+        "cta": "Réserver une table",
+        "titre": "Le premier rendez-vous — Le client | FoodEatUp"
+      }
+    },
+    "promptVignette": "Photo réaliste, cadrage vertical 9:16. Le chef de l'image de référence — MÊME visage, même barbe, même toque blanche, même veste de cuisine blanche, même tablier blanc au logo FoodEatUp bleu. Ne change ni ses traits ni sa morphologie. Il joue ici le rôle : serveur. Scène : le premier rendez-vous. Premier rendez-vous. Décor : une table en salle vue à hauteur de convive, verres et nappe. lumière douce de fin de repas. C'est le RESTAURANT qui est le sujet : le plat, la salle ou l'équipe occupent les deux tiers du cadre, le chef est présent mais pas au centre. Aucun écran de logiciel visible. Bande bleu RapidoCMS #03A9F5 en haut du cadre sur un cinquième de la hauteur, portant UNIQUEMENT le texte « PREMIER RENDEZ VOUS » en typographie arrondie très grasse, blanc, centré. Aucun autre texte, aucun logo ajouté, pas de filigrane, pas de bordure décorative.",
+    "higgsfieldPrompt": null,
+    "tutoriel": null
+  },
+  "EP175": {
+    "publications": {
+      "facebook": {
+        "legende": "Scanne, commande, c'est tout. Trente secondes, filmé en vrai.\n\nLe client scanne, lit la carte, commande. Trente secondes, filmé en vrai, sans montage.\n\n👉 Voir la carte : https://site.foodeatup.com/\nUne table ? 06 14 18 92 25",
+        "hashtags": [
+          "foodeatup",
+          "restaurateur",
+          "restaurant",
+          "commerce",
+          "quartier",
+          "maison"
+        ],
+        "motsCles": [
+          "la maison",
+          "démonstration",
+          "restaurant le qr code a table"
+        ],
+        "cta": "Voir la carte"
+      },
+      "instagram": {
+        "legende": "Scanne, commande, c'est tout.\nTrente secondes, filmé en vrai.\n\nLe client scanne, lit la carte, commande. Trente secondes, filmé en vrai, sans montage.\n\nVoir la carte — lien en bio.\nUne table ? 06 14 18 92 25",
+        "hashtags": [
+          "foodeatup",
+          "restaurateur",
+          "restaurant",
+          "commerce",
+          "quartier",
+          "maison"
+        ],
+        "motsCles": [
+          "la maison",
+          "démonstration",
+          "restaurant le qr code a table"
+        ],
+        "cta": "Voir la carte"
+      },
+      "tiktok": {
+        "legende": "Scanne, commande, c'est tout.\nTrente secondes, filmé en vrai.\n\nLe client scanne, lit la carte, commande.",
+        "hashtags": [
+          "foodeatup",
+          "restaurateur",
+          "restaurant",
+          "commerce",
+          "quartier",
+          "maison"
+        ],
+        "motsCles": [
+          "la maison",
+          "démonstration",
+          "restaurant le qr code a table"
+        ],
+        "cta": "Voir la carte"
+      },
+      "linkedin": {
+        "legende": "Scanne, commande, c'est tout.\n\nLe client scanne, lit la carte, commande. Trente secondes, filmé en vrai, sans montage.\n\nComment on le fait : La carte du QR code est celle du logiciel : un prix changé le matin est à jour à midi.\n\nVoir la carte : https://site.foodeatup.com/\nUne table ? 06 14 18 92 25",
+        "hashtags": [
+          "foodeatup",
+          "restaurateur",
+          "restaurant",
+          "commerce",
+          "quartier",
+          "maison"
+        ],
+        "motsCles": [
+          "la maison",
+          "démonstration",
+          "restaurant le qr code a table"
+        ],
+        "cta": "Voir la carte"
+      },
+      "youtube": {
+        "legende": "Scanne, commande, c'est tout. Trente secondes, filmé en vrai.\n\nLe client scanne, lit la carte, commande. Trente secondes, filmé en vrai, sans montage.\n\n— — —\n\n🔗 https://site.foodeatup.com/\n📞 06 14 18 92 25\n\nSaison 6 « L'orchestration du restaurant » — épisode 25 sur 30. Arc : La maison.\nRôle à l'écran : Serveur.\n\nComment c'est fait : La carte du QR code est celle du logiciel : un prix changé le matin est à jour à midi. Toute la série est publiée avec RapidoCMS, depuis une conversation.\n",
+        "hashtags": [
+          "foodeatup",
+          "restaurateur",
+          "restaurant",
+          "commerce",
+          "quartier",
+          "maison"
+        ],
+        "motsCles": [
+          "la maison",
+          "démonstration",
+          "restaurant le qr code a table"
+        ],
+        "cta": "Voir la carte",
+        "titre": "Le QR code à table — La maison | FoodEatUp"
+      }
+    },
+    "promptVignette": "Photo réaliste, cadrage vertical 9:16. Le chef de l'image de référence — MÊME visage, même barbe, même toque blanche, même veste de cuisine blanche, même tablier blanc au logo FoodEatUp bleu. Ne change ni ses traits ni sa morphologie. Il joue ici le rôle : serveur. Scène : le qr code à table. Scanne, commande, c'est tout. Décor : la devanture et le comptoir, ardoise et carte affichée. plein jour, lumière franche. C'est le RESTAURANT qui est le sujet : le plat, la salle ou l'équipe occupent les deux tiers du cadre, le chef est présent mais pas au centre. Aucun écran de logiciel visible. Bande bleu RapidoCMS #03A9F5 en haut du cadre sur un cinquième de la hauteur, portant UNIQUEMENT le texte « QR CODE TABLE » en typographie arrondie très grasse, blanc, centré. Aucun autre texte, aucun logo ajouté, pas de filigrane, pas de bordure décorative.",
+    "higgsfieldPrompt": null,
+    "tutoriel": null
+  },
+  "EP176": {
+    "publications": {
+      "facebook": {
+        "legende": "La carte change lundi. Oui, on retire un plat que vous aimiez.\n\nLes plats qui sortent, ceux qui entrent. On assume de retirer un plat que des gens aimaient.\n\n👉 Découvrir la nouvelle carte : https://site.foodeatup.com/\nUne table ? 06 14 18 92 25",
+        "hashtags": [
+          "foodeatup",
+          "restaurateur",
+          "restaurant",
+          "commerce",
+          "quartier",
+          "maison"
+        ],
+        "motsCles": [
+          "la maison",
+          "annonce",
+          "restaurant la carte change de saison"
+        ],
+        "cta": "Découvrir la nouvelle carte"
+      },
+      "instagram": {
+        "legende": "La carte change lundi.\nOui, on retire un plat que vous aimiez.\n\nLes plats qui sortent, ceux qui entrent. On assume de retirer un plat que des gens aimaient.\n\nDécouvrir la nouvelle carte — lien en bio.\nUne table ? 06 14 18 92 25",
+        "hashtags": [
+          "foodeatup",
+          "restaurateur",
+          "restaurant",
+          "commerce",
+          "quartier",
+          "maison"
+        ],
+        "motsCles": [
+          "la maison",
+          "annonce",
+          "restaurant la carte change de saison"
+        ],
+        "cta": "Découvrir la nouvelle carte"
+      },
+      "tiktok": {
+        "legende": "La carte change lundi.\nOui, on retire un plat que vous aimiez.\n\nLes plats qui sortent, ceux qui entrent.",
+        "hashtags": [
+          "foodeatup",
+          "restaurateur",
+          "restaurant",
+          "commerce",
+          "quartier",
+          "maison"
+        ],
+        "motsCles": [
+          "la maison",
+          "annonce",
+          "restaurant la carte change de saison"
+        ],
+        "cta": "Découvrir la nouvelle carte"
+      },
+      "linkedin": {
+        "legende": "La carte change lundi.\n\nLes plats qui sortent, ceux qui entrent. On assume de retirer un plat que des gens aimaient.\n\nComment on le fait : La nouvelle carte part d'un coup sur le site, le QR code et les réseaux.\n\nDécouvrir la nouvelle carte : https://site.foodeatup.com/\nUne table ? 06 14 18 92 25",
+        "hashtags": [
+          "foodeatup",
+          "restaurateur",
+          "restaurant",
+          "commerce",
+          "quartier",
+          "maison"
+        ],
+        "motsCles": [
+          "la maison",
+          "annonce",
+          "restaurant la carte change de saison"
+        ],
+        "cta": "Découvrir la nouvelle carte"
+      },
+      "youtube": {
+        "legende": "La carte change lundi. Oui, on retire un plat que vous aimiez.\n\nLes plats qui sortent, ceux qui entrent. On assume de retirer un plat que des gens aimaient.\n\n— — —\n\n🔗 https://site.foodeatup.com/\n📞 06 14 18 92 25\n\nSaison 6 « L'orchestration du restaurant » — épisode 26 sur 30. Arc : La maison.\nRôle à l'écran : Chef.\n\nComment c'est fait : La nouvelle carte part d'un coup sur le site, le QR code et les réseaux. Toute la série est publiée avec RapidoCMS, depuis une conversation.\n",
+        "hashtags": [
+          "foodeatup",
+          "restaurateur",
+          "restaurant",
+          "commerce",
+          "quartier",
+          "maison"
+        ],
+        "motsCles": [
+          "la maison",
+          "annonce",
+          "restaurant la carte change de saison"
+        ],
+        "cta": "Découvrir la nouvelle carte",
+        "titre": "La carte change de saison — La maison | FoodEatUp"
+      }
+    },
+    "promptVignette": "Photo réaliste, cadrage vertical 9:16. Le chef de l'image de référence — MÊME visage, même barbe, même toque blanche, même veste de cuisine blanche, même tablier blanc au logo FoodEatUp bleu. Ne change ni ses traits ni sa morphologie. Il joue ici le rôle : chef. Scène : la carte change de saison. La carte change lundi. Décor : la devanture et le comptoir, ardoise et carte affichée. plein jour, lumière franche. C'est le RESTAURANT qui est le sujet : le plat, la salle ou l'équipe occupent les deux tiers du cadre, le chef est présent mais pas au centre. Aucun écran de logiciel visible. Bande bleu RapidoCMS #03A9F5 en haut du cadre sur un cinquième de la hauteur, portant UNIQUEMENT le texte « CARTE CHANGE SAISON » en typographie arrondie très grasse, blanc, centré. Aucun autre texte, aucun logo ajouté, pas de filigrane, pas de bordure décorative.",
+    "higgsfieldPrompt": null,
+    "tutoriel": null
+  },
+  "EP177": {
+    "publications": {
+      "facebook": {
+        "legende": "On recrute. Voilà la vérité. Les horaires, on les dit.\n\nLe poste, l'équipe, les horaires réels. On dit ce que c'est, pas ce qu'on voudrait que ce soit.\n\n👉 Postuler : https://site.foodeatup.com/\nUne table ? 06 14 18 92 25",
+        "hashtags": [
+          "foodeatup",
+          "restaurateur",
+          "restaurant",
+          "commerce",
+          "quartier",
+          "maison"
+        ],
+        "motsCles": [
+          "la maison",
+          "annonce",
+          "restaurant on recrute"
+        ],
+        "cta": "Postuler"
+      },
+      "instagram": {
+        "legende": "On recrute. Voilà la vérité.\nLes horaires, on les dit.\n\nLe poste, l'équipe, les horaires réels. On dit ce que c'est, pas ce qu'on voudrait que ce soit.\n\nPostuler — lien en bio.\nUne table ? 06 14 18 92 25",
+        "hashtags": [
+          "foodeatup",
+          "restaurateur",
+          "restaurant",
+          "commerce",
+          "quartier",
+          "maison"
+        ],
+        "motsCles": [
+          "la maison",
+          "annonce",
+          "restaurant on recrute"
+        ],
+        "cta": "Postuler"
+      },
+      "tiktok": {
+        "legende": "On recrute. Voilà la vérité.\nLes horaires, on les dit.\n\nLe poste, l'équipe, les horaires réels.",
+        "hashtags": [
+          "foodeatup",
+          "restaurateur",
+          "restaurant",
+          "commerce",
+          "quartier",
+          "maison"
+        ],
+        "motsCles": [
+          "la maison",
+          "annonce",
+          "restaurant on recrute"
+        ],
+        "cta": "Postuler"
+      },
+      "linkedin": {
+        "legende": "On recrute. Voilà la vérité.\n\nLe poste, l'équipe, les horaires réels. On dit ce que c'est, pas ce qu'on voudrait que ce soit.\n\nComment on le fait : Les candidatures arrivent au même endroit, avec leur statut ; on ne perd plus personne dans une boîte mail.\n\nPostuler : https://site.foodeatup.com/\nUne table ? 06 14 18 92 25",
+        "hashtags": [
+          "foodeatup",
+          "restaurateur",
+          "restaurant",
+          "commerce",
+          "quartier",
+          "maison"
+        ],
+        "motsCles": [
+          "la maison",
+          "annonce",
+          "restaurant on recrute"
+        ],
+        "cta": "Postuler"
+      },
+      "youtube": {
+        "legende": "On recrute. Voilà la vérité. Les horaires, on les dit.\n\nLe poste, l'équipe, les horaires réels. On dit ce que c'est, pas ce qu'on voudrait que ce soit.\n\n— — —\n\n🔗 https://site.foodeatup.com/\n📞 06 14 18 92 25\n\nSaison 6 « L'orchestration du restaurant » — épisode 27 sur 30. Arc : La maison.\nRôle à l'écran : Directeur.\n\nComment c'est fait : Les candidatures arrivent au même endroit, avec leur statut ; on ne perd plus personne dans une boîte mail. Toute la série est publiée avec RapidoCMS, depuis une conversation.\n",
+        "hashtags": [
+          "foodeatup",
+          "restaurateur",
+          "restaurant",
+          "commerce",
+          "quartier",
+          "maison"
+        ],
+        "motsCles": [
+          "la maison",
+          "annonce",
+          "restaurant on recrute"
+        ],
+        "cta": "Postuler",
+        "titre": "On recrute — La maison | FoodEatUp"
+      }
+    },
+    "promptVignette": "Photo réaliste, cadrage vertical 9:16. Le chef de l'image de référence — MÊME visage, même barbe, même toque blanche, même veste de cuisine blanche, même tablier blanc au logo FoodEatUp bleu. Ne change ni ses traits ni sa morphologie. Il joue ici le rôle : directeur. Scène : on recrute. On recrute. Voilà la vérité. Décor : la devanture et le comptoir, ardoise et carte affichée. plein jour, lumière franche. C'est le RESTAURANT qui est le sujet : le plat, la salle ou l'équipe occupent les deux tiers du cadre, le chef est présent mais pas au centre. Aucun écran de logiciel visible. Bande bleu RapidoCMS #03A9F5 en haut du cadre sur un cinquième de la hauteur, portant UNIQUEMENT le texte « RECRUTE » en typographie arrondie très grasse, blanc, centré. Aucun autre texte, aucun logo ajouté, pas de filigrane, pas de bordure décorative.",
+    "higgsfieldPrompt": null,
+    "tutoriel": null
+  },
+  "EP178": {
+    "publications": {
+      "facebook": {
+        "legende": "Chaud à l'arrivée. Jamais préparé trop tôt.\n\nLa commande à emporter préparée au bon moment, pas trop tôt. Le client arrive, c'est prêt et c'est chaud.\n\n👉 Commander à emporter : https://site.foodeatup.com/\nUne table ? 06 14 18 92 25",
+        "hashtags": [
+          "foodeatup",
+          "restaurateur",
+          "restaurant",
+          "commerce",
+          "quartier",
+          "maison"
+        ],
+        "motsCles": [
+          "la maison",
+          "démonstration",
+          "restaurant a emporter sans que ca refroidisse"
+        ],
+        "cta": "Commander à emporter"
+      },
+      "instagram": {
+        "legende": "Chaud à l'arrivée.\nJamais préparé trop tôt.\n\nLa commande à emporter préparée au bon moment, pas trop tôt. Le client arrive, c'est prêt et c'est chaud.\n\nCommander à emporter — lien en bio.\nUne table ? 06 14 18 92 25",
+        "hashtags": [
+          "foodeatup",
+          "restaurateur",
+          "restaurant",
+          "commerce",
+          "quartier",
+          "maison"
+        ],
+        "motsCles": [
+          "la maison",
+          "démonstration",
+          "restaurant a emporter sans que ca refroidisse"
+        ],
+        "cta": "Commander à emporter"
+      },
+      "tiktok": {
+        "legende": "Chaud à l'arrivée.\nJamais préparé trop tôt.\n\nLa commande à emporter préparée au bon moment, pas trop tôt.",
+        "hashtags": [
+          "foodeatup",
+          "restaurateur",
+          "restaurant",
+          "commerce",
+          "quartier",
+          "maison"
+        ],
+        "motsCles": [
+          "la maison",
+          "démonstration",
+          "restaurant a emporter sans que ca refroidisse"
+        ],
+        "cta": "Commander à emporter"
+      },
+      "linkedin": {
+        "legende": "Chaud à l'arrivée.\n\nLa commande à emporter préparée au bon moment, pas trop tôt. Le client arrive, c'est prêt et c'est chaud.\n\nComment on le fait : L'heure de retrait pilote le lancement en cuisine.\n\nCommander à emporter : https://site.foodeatup.com/\nUne table ? 06 14 18 92 25",
+        "hashtags": [
+          "foodeatup",
+          "restaurateur",
+          "restaurant",
+          "commerce",
+          "quartier",
+          "maison"
+        ],
+        "motsCles": [
+          "la maison",
+          "démonstration",
+          "restaurant a emporter sans que ca refroidisse"
+        ],
+        "cta": "Commander à emporter"
+      },
+      "youtube": {
+        "legende": "Chaud à l'arrivée. Jamais préparé trop tôt.\n\nLa commande à emporter préparée au bon moment, pas trop tôt. Le client arrive, c'est prêt et c'est chaud.\n\n— — —\n\n🔗 https://site.foodeatup.com/\n📞 06 14 18 92 25\n\nSaison 6 « L'orchestration du restaurant » — épisode 28 sur 30. Arc : La maison.\nRôle à l'écran : Chef.\n\nComment c'est fait : L'heure de retrait pilote le lancement en cuisine. Toute la série est publiée avec RapidoCMS, depuis une conversation.\n",
+        "hashtags": [
+          "foodeatup",
+          "restaurateur",
+          "restaurant",
+          "commerce",
+          "quartier",
+          "maison"
+        ],
+        "motsCles": [
+          "la maison",
+          "démonstration",
+          "restaurant a emporter sans que ca refroidisse"
+        ],
+        "cta": "Commander à emporter",
+        "titre": "À emporter, sans que ça refroidisse — La maison | FoodEatUp"
+      }
+    },
+    "promptVignette": "Photo réaliste, cadrage vertical 9:16. Le chef de l'image de référence — MÊME visage, même barbe, même toque blanche, même veste de cuisine blanche, même tablier blanc au logo FoodEatUp bleu. Ne change ni ses traits ni sa morphologie. Il joue ici le rôle : chef. Scène : à emporter, sans que ça refroidisse. Chaud à l'arrivée. Décor : la devanture et le comptoir, ardoise et carte affichée. plein jour, lumière franche. C'est le RESTAURANT qui est le sujet : le plat, la salle ou l'équipe occupent les deux tiers du cadre, le chef est présent mais pas au centre. Aucun écran de logiciel visible. Bande bleu RapidoCMS #03A9F5 en haut du cadre sur un cinquième de la hauteur, portant UNIQUEMENT le texte « EMPORTER ÇA REFROIDISSE » en typographie arrondie très grasse, blanc, centré. Aucun autre texte, aucun logo ajouté, pas de filigrane, pas de bordure décorative.",
+    "higgsfieldPrompt": null,
+    "tutoriel": null
+  },
+  "EP179": {
+    "publications": {
+      "facebook": {
+        "legende": "Fermé le lundi. Ce n'est pas un jour de repos.\n\nCe qu'on fait le lundi : les commandes, les plannings, la compta, la carte de la semaine. Le travail invisible.\n\n👉 Découvrir la maison : https://site.foodeatup.com/\nUne table ? 06 14 18 92 25",
+        "hashtags": [
+          "foodeatup",
+          "restaurateur",
+          "restaurant",
+          "commerce",
+          "quartier",
+          "maison"
+        ],
+        "motsCles": [
+          "la maison",
+          "coulisse",
+          "restaurant le jour de fermeture"
+        ],
+        "cta": "Découvrir la maison"
+      },
+      "instagram": {
+        "legende": "Fermé le lundi.\nCe n'est pas un jour de repos.\n\nCe qu'on fait le lundi : les commandes, les plannings, la compta, la carte de la semaine. Le travail invisible.\n\nDécouvrir la maison — lien en bio.\nUne table ? 06 14 18 92 25",
+        "hashtags": [
+          "foodeatup",
+          "restaurateur",
+          "restaurant",
+          "commerce",
+          "quartier",
+          "maison"
+        ],
+        "motsCles": [
+          "la maison",
+          "coulisse",
+          "restaurant le jour de fermeture"
+        ],
+        "cta": "Découvrir la maison"
+      },
+      "tiktok": {
+        "legende": "Fermé le lundi.\nCe n'est pas un jour de repos.\n\nCe qu'on fait le lundi : les commandes, les plannings, la compta, la carte de la semaine.",
+        "hashtags": [
+          "foodeatup",
+          "restaurateur",
+          "restaurant",
+          "commerce",
+          "quartier",
+          "maison"
+        ],
+        "motsCles": [
+          "la maison",
+          "coulisse",
+          "restaurant le jour de fermeture"
+        ],
+        "cta": "Découvrir la maison"
+      },
+      "linkedin": {
+        "legende": "Fermé le lundi.\n\nCe qu'on fait le lundi : les commandes, les plannings, la compta, la carte de la semaine. Le travail invisible.\n\nComment on le fait : Une matinée suffit parce que tout est au même endroit — c'est le seul moment où le logiciel se voit vraiment.\n\nDécouvrir la maison : https://site.foodeatup.com/\nUne table ? 06 14 18 92 25",
+        "hashtags": [
+          "foodeatup",
+          "restaurateur",
+          "restaurant",
+          "commerce",
+          "quartier",
+          "maison"
+        ],
+        "motsCles": [
+          "la maison",
+          "coulisse",
+          "restaurant le jour de fermeture"
+        ],
+        "cta": "Découvrir la maison"
+      },
+      "youtube": {
+        "legende": "Fermé le lundi. Ce n'est pas un jour de repos.\n\nCe qu'on fait le lundi : les commandes, les plannings, la compta, la carte de la semaine. Le travail invisible.\n\n— — —\n\n🔗 https://site.foodeatup.com/\n📞 06 14 18 92 25\n\nSaison 6 « L'orchestration du restaurant » — épisode 29 sur 30. Arc : La maison.\nRôle à l'écran : Directeur.\n\nComment c'est fait : Une matinée suffit parce que tout est au même endroit — c'est le seul moment où le logiciel se voit vraiment. Toute la série est publiée avec RapidoCMS, depuis une conversation.\n",
+        "hashtags": [
+          "foodeatup",
+          "restaurateur",
+          "restaurant",
+          "commerce",
+          "quartier",
+          "maison"
+        ],
+        "motsCles": [
+          "la maison",
+          "coulisse",
+          "restaurant le jour de fermeture"
+        ],
+        "cta": "Découvrir la maison",
+        "titre": "Le jour de fermeture — La maison | FoodEatUp"
+      }
+    },
+    "promptVignette": "Photo réaliste, cadrage vertical 9:16. Le chef de l'image de référence — MÊME visage, même barbe, même toque blanche, même veste de cuisine blanche, même tablier blanc au logo FoodEatUp bleu. Ne change ni ses traits ni sa morphologie. Il joue ici le rôle : directeur. Scène : le jour de fermeture. Fermé le lundi. Décor : la devanture et le comptoir, ardoise et carte affichée. plein jour, lumière franche. C'est le RESTAURANT qui est le sujet : le plat, la salle ou l'équipe occupent les deux tiers du cadre, le chef est présent mais pas au centre. Aucun écran de logiciel visible. Bande bleu RapidoCMS #03A9F5 en haut du cadre sur un cinquième de la hauteur, portant UNIQUEMENT le texte « JOUR FERMETURE » en typographie arrondie très grasse, blanc, centré. Aucun autre texte, aucun logo ajouté, pas de filigrane, pas de bordure décorative.",
+    "higgsfieldPrompt": null,
+    "tutoriel": null
+  },
+  "EP180": {
+    "publications": {
+      "facebook": {
+        "legende": "Un an. Les vrais chiffres. Merci.\n\nLes chiffres de l'année, dits sans fard : couverts, plat le plus vendu, avis reçus, gens embauchés. Et merci.\n\n👉 Réserver une table : https://site.foodeatup.com/\nUne table ? 06 14 18 92 25",
+        "hashtags": [
+          "foodeatup",
+          "restaurateur",
+          "restaurant",
+          "commerce",
+          "quartier",
+          "maison"
+        ],
+        "motsCles": [
+          "la maison",
+          "bilan",
+          "restaurant un an de restaurant"
+        ],
+        "cta": "Réserver une table"
+      },
+      "instagram": {
+        "legende": "Un an. Les vrais chiffres.\nMerci.\n\nLes chiffres de l'année, dits sans fard : couverts, plat le plus vendu, avis reçus, gens embauchés. Et merci.\n\nRéserver une table — lien en bio.\nUne table ? 06 14 18 92 25",
+        "hashtags": [
+          "foodeatup",
+          "restaurateur",
+          "restaurant",
+          "commerce",
+          "quartier",
+          "maison"
+        ],
+        "motsCles": [
+          "la maison",
+          "bilan",
+          "restaurant un an de restaurant"
+        ],
+        "cta": "Réserver une table"
+      },
+      "tiktok": {
+        "legende": "Un an. Les vrais chiffres.\nMerci.\n\nLes chiffres de l'année, dits sans fard : couverts, plat le plus vendu, avis reçus, gens embauchés.",
+        "hashtags": [
+          "foodeatup",
+          "restaurateur",
+          "restaurant",
+          "commerce",
+          "quartier",
+          "maison"
+        ],
+        "motsCles": [
+          "la maison",
+          "bilan",
+          "restaurant un an de restaurant"
+        ],
+        "cta": "Réserver une table"
+      },
+      "linkedin": {
+        "legende": "Un an. Les vrais chiffres.\n\nLes chiffres de l'année, dits sans fard : couverts, plat le plus vendu, avis reçus, gens embauchés. Et merci.\n\nComment on le fait : Tous ces chiffres sortent des rapports — aucun n'est estimé.\n\nRéserver une table : https://site.foodeatup.com/\nUne table ? 06 14 18 92 25",
+        "hashtags": [
+          "foodeatup",
+          "restaurateur",
+          "restaurant",
+          "commerce",
+          "quartier",
+          "maison"
+        ],
+        "motsCles": [
+          "la maison",
+          "bilan",
+          "restaurant un an de restaurant"
+        ],
+        "cta": "Réserver une table"
+      },
+      "youtube": {
+        "legende": "Un an. Les vrais chiffres. Merci.\n\nLes chiffres de l'année, dits sans fard : couverts, plat le plus vendu, avis reçus, gens embauchés. Et merci.\n\n— — —\n\n🔗 https://site.foodeatup.com/\n📞 06 14 18 92 25\n\nSaison 6 « L'orchestration du restaurant » — épisode 30 sur 30. Arc : La maison.\nRôle à l'écran : Directeur.\n\nComment c'est fait : Tous ces chiffres sortent des rapports — aucun n'est estimé. Toute la série est publiée avec RapidoCMS, depuis une conversation.\n",
+        "hashtags": [
+          "foodeatup",
+          "restaurateur",
+          "restaurant",
+          "commerce",
+          "quartier",
+          "maison"
+        ],
+        "motsCles": [
+          "la maison",
+          "bilan",
+          "restaurant un an de restaurant"
+        ],
+        "cta": "Réserver une table",
+        "titre": "Un an de restaurant — La maison | FoodEatUp"
+      }
+    },
+    "promptVignette": "Photo réaliste, cadrage vertical 9:16. Le chef de l'image de référence — MÊME visage, même barbe, même toque blanche, même veste de cuisine blanche, même tablier blanc au logo FoodEatUp bleu. Ne change ni ses traits ni sa morphologie. Il joue ici le rôle : directeur. Scène : un an de restaurant. Un an. Les vrais chiffres. Décor : la devanture et le comptoir, ardoise et carte affichée. plein jour, lumière franche. C'est le RESTAURANT qui est le sujet : le plat, la salle ou l'équipe occupent les deux tiers du cadre, le chef est présent mais pas au centre. Aucun écran de logiciel visible. Bande bleu RapidoCMS #03A9F5 en haut du cadre sur un cinquième de la hauteur, portant UNIQUEMENT le texte « AN RESTAURANT » en typographie arrondie très grasse, blanc, centré. Aucun autre texte, aucun logo ajouté, pas de filigrane, pas de bordure décorative.",
+    "higgsfieldPrompt": null,
+    "tutoriel": null
   }
 };
 
