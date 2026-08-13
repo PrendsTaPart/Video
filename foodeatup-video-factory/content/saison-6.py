@@ -17,6 +17,7 @@ comique : un seul acteur, cinq casquettes, la série se tourne en un jour.
 EPISODES = [
  # --- Arc 1 · LA CARTE À L'ÉCRAN -----------------------------------------
  dict(n=151, arc="La carte à l'écran", role="Chef", format="Film de plat",
+      agent="fraise",
       accroche="Regarde-le une seconde.", punchline="Voilà pourquoi on se lève à six heures.",
       titre="Le plat, filmé comme une pub",
       publie="Dix secondes sur le plat signature : la sauce qui nappe, la vapeur, "
@@ -27,6 +28,7 @@ EPISODES = [
                 "sur les cinq réseaux depuis RapidoCMS.",
       cta="Réserver une table"),
  dict(n=152, arc="La carte à l'écran", role="Chef", format="Recette",
+      agent="tomate",
       accroche="On ne cache rien.", punchline="Refais-la chez toi. On t'attend quand même.",
       titre="La recette du plat signature",
       publie="Le chef fait le plat en trente secondes, gestes réels, quantités dites "
@@ -37,6 +39,7 @@ EPISODES = [
                 "chef lit ce qu'il a déjà saisi.",
       cta="Voir la carte"),
  dict(n=153, arc="La carte à l'écran", role="Chef", format="Annonce",
+      agent="ail",
       accroche="Cette semaine seulement.", punchline="Après, la saison change d'avis.",
       titre="Le plat de la semaine",
       publie="Le nouveau plat arrive, on dit pourquoi : le produit est là, la saison "
@@ -46,6 +49,7 @@ EPISODES = [
                 "matin par Iris.",
       cta="Commander en ligne"),
  dict(n=154, arc="La carte à l'écran", role="Serveur", format="Film de plat",
+      agent="fraise",
       accroche="Midi. Quinze secondes.", punchline="Décide avant d'arriver.",
       titre="Le menu du midi en quinze secondes",
       publie="Entrée, plat, dessert du jour, filmés à la suite au pass, sans coupe. "
@@ -55,6 +59,7 @@ EPISODES = [
       logiciel="Le menu du jour sort du logiciel, la publication part à 11 h.",
       cta="Voir le menu du jour"),
  dict(n=155, arc="La carte à l'écran", role="Chef", format="Annonce",
+      agent="citron",
       accroche="Vous l'avez réclamé.", punchline="Il est revenu.",
       titre="Le plat qui revient",
       publie="Un ancien plat retiré de la carte revient parce que les clients l'ont "
@@ -64,6 +69,7 @@ EPISODES = [
                 "plat manque vraiment.",
       cta="Réserver une table"),
  dict(n=156, arc="La carte à l'écran", role="Chef", format="Coulisse",
+      agent="tomate",
       accroche="Ce que tu ne vois jamais.", punchline="Trente secondes avant ton assiette.",
       titre="Le dessert qu'on ne montre jamais",
       publie="Le dessert monté en direct, à la seconde où il quitte le froid. Le "
@@ -74,6 +80,7 @@ EPISODES = [
 
  # --- Arc 2 · LES ÉVÉNEMENTS ---------------------------------------------
  dict(n=157, arc="Les événements", role="Directeur", format="Annonce",
+      agent="betterave",
       accroche="Vendredi 12, ici.", punchline="Il y a un nombre de places. Pas plus.",
       titre="Un événement au resto",
       publie="Date, heure, ce qu'on y fait, ce qu'on y mange. Filmé dans la salle "
@@ -84,6 +91,7 @@ EPISODES = [
                 "s'affichent en direct.",
       cta="Réserver sa place"),
  dict(n=158, arc="Les événements", role="Serveur", format="Annonce",
+      agent="brocoli",
       accroche="On diffuse le match.", punchline="L'écran est grand. La table se réserve.",
       titre="On diffuse le match",
       publie="L'écran, la salle qui se remplit, l'ardoise du menu match. On annonce "
@@ -94,6 +102,7 @@ EPISODES = [
                 "automatiquement l'avant-veille.",
       cta="Réserver pour le match"),
  dict(n=159, arc="Les événements", role="Serveur", format="Offre",
+      agent="citron",
       accroche="C'est ton anniversaire.", punchline="On s'occupe du reste.",
       titre="Fêtez votre anniversaire ici",
       publie="Le dessert avec la bougie, la table décorée, la petite mise en scène "
@@ -104,6 +113,7 @@ EPISODES = [
                 "quinze jours avant, toute seule.",
       cta="Réserver un anniversaire"),
  dict(n=160, arc="Les événements", role="Chef", format="Annonce",
+      agent="betterave",
       accroche="Un soir, une cuisine.", punchline="Demain, ce plat n'existe plus.",
       titre="La soirée à thème",
       publie="Un soir, une cuisine, un décor. On montre le plat qui ne sera à la "
@@ -113,6 +123,7 @@ EPISODES = [
                 "retiré tout seul le lendemain.",
       cta="Réserver sa place"),
  dict(n=161, arc="Les événements", role="Chef", format="Annonce",
+      agent="pomme-de-terre",
       accroche="Dimanche, on ouvre à dix heures.", punchline="Prends ton temps.",
       titre="Le brunch du dimanche",
       publie="Le buffet dressé au petit matin, la lumière du dimanche, les gens qui "
@@ -122,6 +133,7 @@ EPISODES = [
       logiciel="Le brunch a son propre créneau et sa jauge : on ne survend pas.",
       cta="Réserver le brunch"),
  dict(n=162, arc="Les événements", role="Directeur", format="Offre",
+      agent="brocoli",
       accroche="Toute la salle, rien que vous.", punchline="Ça se demande, et c'est possible.",
       titre="Privatiser la salle",
       publie="La salle vide, montée pour un groupe. Ce qu'on peut y faire, pour "
@@ -133,6 +145,7 @@ EPISODES = [
 
  # --- Arc 3 · LES COULISSES ----------------------------------------------
  dict(n=163, arc="Les coulisses", role="Chef", format="Coulisse",
+      agent="oignon",
       accroche="Six heures du matin.", punchline="Ton dîner a commencé il y a quatorze heures.",
       titre="Six heures du matin",
       publie="Le restaurant avant tout le monde : les chaises sur les tables, le "
@@ -142,6 +155,7 @@ EPISODES = [
                 "lancer, alertes de stock.",
       cta="Découvrir la maison"),
  dict(n=164, arc="Les coulisses", role="Chef", format="Portrait",
+      agent="oignon",
       accroche="À cinquante kilomètres d'ici.", punchline="C'est lui qui fait la moitié du travail.",
       titre="Le producteur",
       publie="Chez le maraîcher ou l'éleveur, à cinquante kilomètres. On montre la "
@@ -152,6 +166,7 @@ EPISODES = [
                 "par là toute l'année.",
       cta="Voir la carte"),
  dict(n=165, arc="Les coulisses", role="Serveur", format="Portrait",
+      agent="navet",
       accroche="Elle t'accueille depuis quatre ans.", punchline="Tu reviens pour elle, pas pour la déco.",
       titre="Portrait d'un serveur",
       publie="Une minute avec la personne qui accueille : depuis quand, ce qu'elle "
@@ -161,6 +176,7 @@ EPISODES = [
                 "l'avance, ça se voit à l'écran.",
       cta="Réserver une table"),
  dict(n=166, arc="Les coulisses", role="Chef", format="Coulisse",
+      agent="tomate",
       accroche="Vingt heures quinze.", punchline="Aucune musique. C'est le vrai son.",
       titre="Le coup de feu, vu de la cuisine",
       publie="Vingt heures quinze. Les tickets, les voix, les assiettes qui partent. "
@@ -171,6 +187,7 @@ EPISODES = [
                 "C'est ce qui rend la scène regardable.",
       cta="Réserver une table"),
  dict(n=167, arc="Les coulisses", role="Plongeur", format="Portrait",
+      agent="navet",
       accroche="Le poste qu'on ne montre jamais.", punchline="Sans lui, rien ne sort.",
       titre="Le poste qu'on ne montre jamais",
       publie="La plonge, à fond, sans filtre. Puis la cuisine impeccable à minuit.",
@@ -180,6 +197,7 @@ EPISODES = [
                 "n'est pas une promesse.",
       cta="Rejoindre l'équipe"),
  dict(n=168, arc="Les coulisses", role="Chef", format="Coulisse",
+      agent="oignon",
       accroche="Six heures, au marché.", punchline="Ce qu'on refuse compte autant.",
       titre="Les courses du chef",
       publie="Le marché à six heures, ce qu'on prend, ce qu'on refuse et pourquoi.",
@@ -190,6 +208,7 @@ EPISODES = [
 
  # --- Arc 4 · LE CLIENT ---------------------------------------------------
  dict(n=169, arc="Le client", role="Directeur", format="Avis",
+      agent="fraise",
       accroche="On lit tout. Même celui-là.", punchline="Et voilà ce qu'on a changé.",
       titre="L'avis qu'on affiche",
       publie="Un vrai avis client lu à voix haute, y compris le reproche. Et ce "
@@ -200,6 +219,7 @@ EPISODES = [
                 "le ton de la maison.",
       cta="Laisser un avis"),
  dict(n=170, arc="Le client", role="Serveur", format="Portrait",
+      agent="citron",
       accroche="Même table depuis six ans.", punchline="On sait déjà ce qu'il va prendre.",
       titre="Le client du mardi",
       publie="Celui qui vient depuis six ans, toujours la même table. On lui donne "
@@ -208,6 +228,7 @@ EPISODES = [
       logiciel="Sa fiche client garde ses habitudes : la table, le plat, l'allergie.",
       cta="Réserver une table"),
  dict(n=171, arc="Le client", role="Serveur", format="Coulisse",
+      agent="pomme-de-terre",
       accroche="Douze personnes, une addition.", punchline="Ça peut très bien se passer.",
       titre="La table de douze",
       publie="Une grande tablée servie sans accroc : la mise en place, le service "
@@ -218,6 +239,7 @@ EPISODES = [
                 "avant que le groupe s'assoie.",
       cta="Réserver pour un groupe"),
  dict(n=172, arc="Le client", role="Client", format="Démonstration",
+      agent="brocoli",
       accroche="Je commande depuis mon canapé.", punchline="Et je la regarde arriver en cuisine.",
       titre="Je commande depuis mon canapé",
       publie="Le chef passe client : il commande sur le site du restaurant, suit sa "
@@ -228,6 +250,7 @@ EPISODES = [
                 "commission, zéro ressaisie.",
       cta="Commander en ligne"),
  dict(n=173, arc="Le client", role="Chef", format="Démonstration",
+      agent="carotte",
       accroche="Sans gluten. Vraiment.", punchline="On vérifie, on ne suppose pas.",
       titre="Sans gluten, sans stress",
       publie="Une demande particulière prise au sérieux : ce qu'on change, ce qu'on "
@@ -238,6 +261,7 @@ EPISODES = [
                 "la réservation.",
       cta="Réserver une table"),
  dict(n=174, arc="Le client", role="Serveur", format="Coulisse",
+      agent="pomme-de-terre",
       accroche="Premier rendez-vous.", punchline="On ne vous dérangera pas.",
       titre="Le premier rendez-vous",
       publie="La table près de la fenêtre, la lumière baissée, le service discret. "
@@ -250,6 +274,7 @@ EPISODES = [
 
  # --- Arc 5 · LA MAISON ---------------------------------------------------
  dict(n=175, arc="La maison", role="Serveur", format="Démonstration",
+      agent="ail",
       accroche="Scanne, commande, c'est tout.", punchline="Trente secondes, filmé en vrai.",
       titre="Le QR code à table",
       publie="Le client scanne, lit la carte, commande. Trente secondes, filmé en "
@@ -260,6 +285,7 @@ EPISODES = [
                 "est à jour à midi.",
       cta="Voir la carte"),
  dict(n=176, arc="La maison", role="Chef", format="Annonce",
+      agent="ail",
       accroche="La carte change lundi.", punchline="Oui, on retire un plat que vous aimiez.",
       titre="La carte change de saison",
       publie="Les plats qui sortent, ceux qui entrent. On assume de retirer un plat "
@@ -270,6 +296,7 @@ EPISODES = [
                 "réseaux.",
       cta="Découvrir la nouvelle carte"),
  dict(n=177, arc="La maison", role="Directeur", format="Annonce",
+      agent="navet",
       accroche="On recrute. Voilà la vérité.", punchline="Les horaires, on les dit.",
       titre="On recrute",
       publie="Le poste, l'équipe, les horaires réels. On dit ce que c'est, pas ce "
@@ -280,6 +307,7 @@ EPISODES = [
                 "perd plus personne dans une boîte mail.",
       cta="Postuler"),
  dict(n=178, arc="La maison", role="Chef", format="Démonstration",
+      agent="betterave",
       accroche="Chaud à l'arrivée.", punchline="Jamais préparé trop tôt.",
       titre="À emporter, sans que ça refroidisse",
       publie="La commande à emporter préparée au bon moment, pas trop tôt. Le client "
@@ -289,6 +317,7 @@ EPISODES = [
       logiciel="L'heure de retrait pilote le lancement en cuisine.",
       cta="Commander à emporter"),
  dict(n=179, arc="La maison", role="Directeur", format="Coulisse",
+      agent="carotte",
       accroche="Fermé le lundi.", punchline="Ce n'est pas un jour de repos.",
       titre="Le jour de fermeture",
       publie="Ce qu'on fait le lundi : les commandes, les plannings, la compta, la "
@@ -299,6 +328,7 @@ EPISODES = [
                 "seul moment où le logiciel se voit vraiment.",
       cta="Découvrir la maison"),
  dict(n=180, arc="La maison", role="Directeur", format="Bilan",
+      agent="carotte",
       accroche="Un an. Les vrais chiffres.", punchline="Merci.",
       titre="Un an de restaurant",
       publie="Les chiffres de l'année, dits sans fard : couverts, plat le plus "

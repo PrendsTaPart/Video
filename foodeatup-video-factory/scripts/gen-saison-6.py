@@ -85,17 +85,17 @@ def trois_mots(e):
 #
 # Ces cinq lignes doivent rester d'accord avec src/data/agents.ts du site. Deux
 # tables, un seul sujet : si l'une bouge, l'autre suit.
-AGENT_PAR_ARC = {
-    "La carte à l'écran": ("La Fraise", "MCP Higgsfield",
-                           "elle écrit le plan et le fait rendre en dix secondes"),
-    "Les événements":     ("La Betterave", "MCP RapidoCMS",
-                           "elle programme les cinq réseaux aux bons créneaux"),
-    "Les coulisses":      ("L'Oignon", "MCP FoodEatUp",
-                           "il ouvre les livres : ventes, stock, réservations"),
-    "Le client":          ("Don Citrone", "MCP FoodEatUp",
-                           "il relie ce qui est publié à ce qui arrive en salle"),
-    "La maison":          ("Le Brocoli", "MCP RapidoCMS",
-                           "il tient le calendrier et propose quoi publier, quand"),
+BRIGADE = {
+    "fraise":         ("La Fraise", "MCP Higgsfield", "elle écrit le plan et le fait rendre en dix secondes"),
+    "tomate":         ("Tomate Man", "Claude Code", "il assemble les cinq segments et contrôle avant de livrer"),
+    "ail":            ("L'Ail", "MCP FoodEatUp", "il tient la carte à jour partout à la fois"),
+    "pomme-de-terre": ("La Pomme de Terre", "MCP ElevenLabs", "elle donne la voix off de la série"),
+    "citron":         ("Don Citrone", "MCP FoodEatUp", "il relie ce qui est publié à ce qui arrive en salle"),
+    "oignon":         ("L'Oignon", "MCP FoodEatUp", "il ouvre les livres : ventes, stock, réservations"),
+    "betterave":      ("La Betterave", "MCP RapidoCMS", "elle programme les cinq réseaux aux bons créneaux"),
+    "brocoli":        ("Le Brocoli", "MCP RapidoCMS", "il tient le calendrier et propose quoi publier, quand"),
+    "carotte":        ("La Carotte", "Claude Code", "elle relit tout avant que ça sorte"),
+    "navet":          ("Le Navet", "MCP RapidoCMS", "il fait le compte de ce qui a marché"),
 }
 
 # La chaîne complète, dite en une phrase. Elle ne change pas d'un épisode à
@@ -108,7 +108,7 @@ CHAINE = ("Claude, branché sur quatre outils — FoodEatUp pour les données du
 def legende(e, reseau):
     """Le restaurant parle. La méthode n'a droit qu'à la fin — sauf sur LinkedIn."""
     a, p, corps = e["accroche"], e["punchline"], e["publie"]
-    nom, mcp, fait = AGENT_PAR_ARC[e["arc"]]
+    nom, mcp, fait = BRIGADE[e["agent"]]
 
     if reseau == "facebook":
         b = [f"{a} {p}", "", corps, "",
@@ -154,18 +154,28 @@ def titre_youtube(e):
 
 
 def prompt_vignette(e):
+    """La vignette de la saison 6 : c'est le végé-fruité la vedette.
+
+    Les saisons 1 à 5 mettent le chef en avant — c'est lui qui explique le
+    logiciel. La saison 6 raconte une brigade d'agents qui fabrique la
+    communication d'un restaurant : la vedette de l'image, c'est donc le
+    personnage qui a fait le travail sur cet épisode-là, pas le chef.
+    """
     decor, lumiere = DECORS[e["arc"]]
+    nom, mcp, fait = BRIGADE[e["agent"]]
     return (
-        "Photo réaliste, cadrage vertical 9:16. "
-        "Le chef de l'image de référence — MÊME visage, même barbe, même toque "
-        "blanche, même veste de cuisine blanche, même tablier blanc au logo "
-        "FoodEatUp bleu. Ne change ni ses traits ni sa morphologie. "
-        f"Il joue ici le rôle : {e['role'].lower()}. "
+        "Illustration 3D, cadrage vertical 9:16, même style que l'image de "
+        f"référence jointe. Le personnage de l'image de référence — {nom} — "
+        "gardé À L'IDENTIQUE : mêmes proportions, mêmes couleurs, même tenue, "
+        "même accessoire. Ne le redessine pas, ne change pas son visage. "
+        "Il est LA VEDETTE de l'image et occupe les deux tiers du cadre, en "
+        "premier plan, tourné vers l'objectif. "
+        f"Ce qu'il fait ici : {fait}. "
         f"Scène : {e['titre'].lower()}. {e['accroche']} "
-        f"Décor : {decor}. {lumiere}. "
-        "C'est le RESTAURANT qui est le sujet : le plat, la salle ou l'équipe "
-        "occupent les deux tiers du cadre, le chef est présent mais pas au "
-        "centre. Aucun écran de logiciel visible. "
+        f"Décor derrière lui : {decor}. {lumiere}. "
+        "Le décor reste flou et discret — c'est un fond, pas un sujet. "
+        "Aucun humain photoréaliste dans l'image, aucun écran de logiciel "
+        "lisible. "
         "Bande bleu RapidoCMS #03A9F5 en haut du cadre sur un cinquième de la "
         f"hauteur, portant UNIQUEMENT le texte « {trois_mots(e)} » en "
         "typographie arrondie très grasse, blanc, centré. "
