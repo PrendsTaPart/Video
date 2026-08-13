@@ -17732,10 +17732,12 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
   "EP151": {
     "publications": {
       "facebook": {
-        "legende": "Regarde-le une seconde. Voilà pourquoi on se lève à six heures.\n\nDix secondes sur le plat signature : la sauce qui nappe, la vapeur, la découpe. Aucun texte, aucune promo — juste l'objet du désir.\n\n👉 Réserver une table : https://site.foodeatup.com/\nUne table ? 06 14 18 92 25",
+        "legende": "Regarde-le une seconde. Voilà pourquoi on se lève à six heures.\n\nDix secondes sur le plat signature : la sauce qui nappe, la vapeur, la découpe. Aucun texte, aucune promo — juste l'objet du désir.\n\nCette vidéo, personne ne l'a montée à la main : La Fraise s'en est chargée — elle écrit le plan et le fait rendre en dix secondes — puis toute la brigade a suivi.\n\n👉 Réserver une table : https://site.foodeatup.com/\nUne table ? 06 14 18 92 25",
         "hashtags": [
           "foodeatup",
           "restaurateur",
+          "rapidocms",
+          "iarestaurant",
           "restaurant",
           "faitmaison",
           "cuisine",
@@ -17744,15 +17746,20 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
         "motsCles": [
           "la carte à l'écran",
           "film de plat",
-          "restaurant le plat filme comme une pub"
+          "communication restaurant",
+          "agent ia restaurant",
+          "rapidocms",
+          "mcp claude restaurant"
         ],
         "cta": "Réserver une table"
       },
       "instagram": {
-        "legende": "Regarde-le une seconde.\nVoilà pourquoi on se lève à six heures.\n\nDix secondes sur le plat signature : la sauce qui nappe, la vapeur, la découpe. Aucun texte, aucune promo — juste l'objet du désir.\n\nRéserver une table — lien en bio.\nUne table ? 06 14 18 92 25",
+        "legende": "Regarde-le une seconde.\nVoilà pourquoi on se lève à six heures.\n\nDix secondes sur le plat signature : la sauce qui nappe, la vapeur, la découpe. Aucun texte, aucune promo — juste l'objet du désir.\n\nFabriquée par La Fraise et les neuf autres. Aucun logiciel de montage.\nRéserver une table — lien en bio.\nUne table ? 06 14 18 92 25",
         "hashtags": [
           "foodeatup",
           "restaurateur",
+          "rapidocms",
+          "iarestaurant",
           "restaurant",
           "faitmaison",
           "cuisine",
@@ -17761,15 +17768,20 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
         "motsCles": [
           "la carte à l'écran",
           "film de plat",
-          "restaurant le plat filme comme une pub"
+          "communication restaurant",
+          "agent ia restaurant",
+          "rapidocms",
+          "mcp claude restaurant"
         ],
         "cta": "Réserver une table"
       },
       "tiktok": {
-        "legende": "Regarde-le une seconde.\nVoilà pourquoi on se lève à six heures.\n\nDix secondes sur le plat signature : la sauce qui nappe, la vapeur, la découpe.",
+        "legende": "Regarde-le une seconde.\nVoilà pourquoi on se lève à six heures.\n\nDix secondes sur le plat signature : la sauce qui nappe, la vapeur, la découpe.\n\nMontée par une IA. Sérieusement. (La Fraise, MCP Higgsfield)",
         "hashtags": [
           "foodeatup",
           "restaurateur",
+          "rapidocms",
+          "iarestaurant",
           "restaurant",
           "faitmaison",
           "cuisine",
@@ -17778,15 +17790,20 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
         "motsCles": [
           "la carte à l'écran",
           "film de plat",
-          "restaurant le plat filme comme une pub"
+          "communication restaurant",
+          "agent ia restaurant",
+          "rapidocms",
+          "mcp claude restaurant"
         ],
         "cta": "Réserver une table"
       },
       "linkedin": {
-        "legende": "Regarde-le une seconde.\n\nDix secondes sur le plat signature : la sauce qui nappe, la vapeur, la découpe. Aucun texte, aucune promo — juste l'objet du désir.\n\nComment on le fait : La photo et le descriptif viennent de la fiche plat ; la vidéo part sur les cinq réseaux depuis RapidoCMS.\n\nRéserver une table : https://site.foodeatup.com/\nUne table ? 06 14 18 92 25",
+        "legende": "Regarde-le une seconde.\n\nDix secondes sur le plat signature : la sauce qui nappe, la vapeur, la découpe. Aucun texte, aucune promo — juste l'objet du désir.\n\nComment c'est fabriqué, sans agence et sans community manager :\n\n• La Fraise (MCP Higgsfield) — elle écrit le plan et le fait rendre en dix secondes.\n• Puis la brigade : la voix, le montage, la relecture, la mise en ligne.\n• Le tout dirigé en écrivant, depuis Claude, branché sur quatre outils — FoodEatUp pour les données du restaurant, Higgsfield pour l'image, ElevenLabs pour la voix, RapidoCMS pour la publication.\n\nPour cet épisode : La photo et le descriptif viennent de la fiche plat ; la vidéo part sur les cinq réseaux depuis RapidoCMS.\n\nRéserver une table : https://site.foodeatup.com/\nUne table ? 06 14 18 92 25",
         "hashtags": [
           "foodeatup",
           "restaurateur",
+          "rapidocms",
+          "iarestaurant",
           "restaurant",
           "faitmaison",
           "cuisine",
@@ -17795,15 +17812,20 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
         "motsCles": [
           "la carte à l'écran",
           "film de plat",
-          "restaurant le plat filme comme une pub"
+          "communication restaurant",
+          "agent ia restaurant",
+          "rapidocms",
+          "mcp claude restaurant"
         ],
         "cta": "Réserver une table"
       },
       "youtube": {
-        "legende": "Regarde-le une seconde. Voilà pourquoi on se lève à six heures.\n\nDix secondes sur le plat signature : la sauce qui nappe, la vapeur, la découpe. Aucun texte, aucune promo — juste l'objet du désir.\n\n— — —\n\n🔗 https://site.foodeatup.com/\n📞 06 14 18 92 25\n\nSaison 6 « L'orchestration du restaurant » — épisode 1 sur 30. Arc : La carte à l'écran.\nRôle à l'écran : Chef.\n\nComment c'est fait : La photo et le descriptif viennent de la fiche plat ; la vidéo part sur les cinq réseaux depuis RapidoCMS. Toute la série est publiée avec RapidoCMS, depuis une conversation.\n",
+        "legende": "Regarde-le une seconde. Voilà pourquoi on se lève à six heures.\n\nDix secondes sur le plat signature : la sauce qui nappe, la vapeur, la découpe. Aucun texte, aucune promo — juste l'objet du désir.\n\n— — —\n\nCOMMENT CETTE VIDÉO A ÉTÉ FAITE\n\nUne équipe d'agents IA — la Brigade Végé-Fruitée — dirigée en écrivant. Sur cet épisode, c'est La Fraise qui ouvre le bal (MCP Higgsfield) : elle écrit le plan et le fait rendre en dix secondes. Les autres suivent : la voix, le montage, la relecture avant publication, la mise en ligne, le bilan.\n\nLa chaîne : Claude, branché sur quatre outils — FoodEatUp pour les données du restaurant, Higgsfield pour l'image, ElevenLabs pour la voix, RapidoCMS pour la publication.\n\nPour cet épisode : La photo et le descriptif viennent de la fiche plat ; la vidéo part sur les cinq réseaux depuis RapidoCMS.\n\n— — —\n\n🔗 https://site.foodeatup.com/\n📞 06 14 18 92 25\n\nSaison 6 « L'orchestration du restaurant » — épisode 1 sur 30. Arc : La carte à l'écran. Rôle à l'écran : Chef.\n",
         "hashtags": [
           "foodeatup",
           "restaurateur",
+          "rapidocms",
+          "iarestaurant",
           "restaurant",
           "faitmaison",
           "cuisine",
@@ -17812,7 +17834,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
         "motsCles": [
           "la carte à l'écran",
           "film de plat",
-          "restaurant le plat filme comme une pub"
+          "communication restaurant",
+          "agent ia restaurant",
+          "rapidocms",
+          "mcp claude restaurant"
         ],
         "cta": "Réserver une table",
         "titre": "Le plat, filmé comme une pub — La carte à l'écran | FoodEatUp"
@@ -17825,10 +17850,12 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
   "EP152": {
     "publications": {
       "facebook": {
-        "legende": "On ne cache rien. Refais-la chez toi. On t'attend quand même.\n\nLe chef fait le plat en trente secondes, gestes réels, quantités dites à voix haute. Il ne cache rien.\n\n👉 Voir la carte : https://site.foodeatup.com/\nUne table ? 06 14 18 92 25",
+        "legende": "On ne cache rien. Refais-la chez toi. On t'attend quand même.\n\nLe chef fait le plat en trente secondes, gestes réels, quantités dites à voix haute. Il ne cache rien.\n\nCette vidéo, personne ne l'a montée à la main : La Fraise s'en est chargée — elle écrit le plan et le fait rendre en dix secondes — puis toute la brigade a suivi.\n\n👉 Voir la carte : https://site.foodeatup.com/\nUne table ? 06 14 18 92 25",
         "hashtags": [
           "foodeatup",
           "restaurateur",
+          "rapidocms",
+          "iarestaurant",
           "restaurant",
           "faitmaison",
           "cuisine",
@@ -17837,15 +17864,20 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
         "motsCles": [
           "la carte à l'écran",
           "recette",
-          "restaurant la recette du plat signature"
+          "communication restaurant",
+          "agent ia restaurant",
+          "rapidocms",
+          "mcp claude restaurant"
         ],
         "cta": "Voir la carte"
       },
       "instagram": {
-        "legende": "On ne cache rien.\nRefais-la chez toi. On t'attend quand même.\n\nLe chef fait le plat en trente secondes, gestes réels, quantités dites à voix haute. Il ne cache rien.\n\nVoir la carte — lien en bio.\nUne table ? 06 14 18 92 25",
+        "legende": "On ne cache rien.\nRefais-la chez toi. On t'attend quand même.\n\nLe chef fait le plat en trente secondes, gestes réels, quantités dites à voix haute. Il ne cache rien.\n\nFabriquée par La Fraise et les neuf autres. Aucun logiciel de montage.\nVoir la carte — lien en bio.\nUne table ? 06 14 18 92 25",
         "hashtags": [
           "foodeatup",
           "restaurateur",
+          "rapidocms",
+          "iarestaurant",
           "restaurant",
           "faitmaison",
           "cuisine",
@@ -17854,15 +17886,20 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
         "motsCles": [
           "la carte à l'écran",
           "recette",
-          "restaurant la recette du plat signature"
+          "communication restaurant",
+          "agent ia restaurant",
+          "rapidocms",
+          "mcp claude restaurant"
         ],
         "cta": "Voir la carte"
       },
       "tiktok": {
-        "legende": "On ne cache rien.\nRefais-la chez toi. On t'attend quand même.\n\nLe chef fait le plat en trente secondes, gestes réels, quantités dites à voix haute.",
+        "legende": "On ne cache rien.\nRefais-la chez toi. On t'attend quand même.\n\nLe chef fait le plat en trente secondes, gestes réels, quantités dites à voix haute.\n\nMontée par une IA. Sérieusement. (La Fraise, MCP Higgsfield)",
         "hashtags": [
           "foodeatup",
           "restaurateur",
+          "rapidocms",
+          "iarestaurant",
           "restaurant",
           "faitmaison",
           "cuisine",
@@ -17871,15 +17908,20 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
         "motsCles": [
           "la carte à l'écran",
           "recette",
-          "restaurant la recette du plat signature"
+          "communication restaurant",
+          "agent ia restaurant",
+          "rapidocms",
+          "mcp claude restaurant"
         ],
         "cta": "Voir la carte"
       },
       "linkedin": {
-        "legende": "On ne cache rien.\n\nLe chef fait le plat en trente secondes, gestes réels, quantités dites à voix haute. Il ne cache rien.\n\nComment on le fait : La fiche recette donne les quantités exactes et le coût matière — le chef lit ce qu'il a déjà saisi.\n\nVoir la carte : https://site.foodeatup.com/\nUne table ? 06 14 18 92 25",
+        "legende": "On ne cache rien.\n\nLe chef fait le plat en trente secondes, gestes réels, quantités dites à voix haute. Il ne cache rien.\n\nComment c'est fabriqué, sans agence et sans community manager :\n\n• La Fraise (MCP Higgsfield) — elle écrit le plan et le fait rendre en dix secondes.\n• Puis la brigade : la voix, le montage, la relecture, la mise en ligne.\n• Le tout dirigé en écrivant, depuis Claude, branché sur quatre outils — FoodEatUp pour les données du restaurant, Higgsfield pour l'image, ElevenLabs pour la voix, RapidoCMS pour la publication.\n\nPour cet épisode : La fiche recette donne les quantités exactes et le coût matière — le chef lit ce qu'il a déjà saisi.\n\nVoir la carte : https://site.foodeatup.com/\nUne table ? 06 14 18 92 25",
         "hashtags": [
           "foodeatup",
           "restaurateur",
+          "rapidocms",
+          "iarestaurant",
           "restaurant",
           "faitmaison",
           "cuisine",
@@ -17888,15 +17930,20 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
         "motsCles": [
           "la carte à l'écran",
           "recette",
-          "restaurant la recette du plat signature"
+          "communication restaurant",
+          "agent ia restaurant",
+          "rapidocms",
+          "mcp claude restaurant"
         ],
         "cta": "Voir la carte"
       },
       "youtube": {
-        "legende": "On ne cache rien. Refais-la chez toi. On t'attend quand même.\n\nLe chef fait le plat en trente secondes, gestes réels, quantités dites à voix haute. Il ne cache rien.\n\n— — —\n\n🔗 https://site.foodeatup.com/\n📞 06 14 18 92 25\n\nSaison 6 « L'orchestration du restaurant » — épisode 2 sur 30. Arc : La carte à l'écran.\nRôle à l'écran : Chef.\n\nComment c'est fait : La fiche recette donne les quantités exactes et le coût matière — le chef lit ce qu'il a déjà saisi. Toute la série est publiée avec RapidoCMS, depuis une conversation.\n",
+        "legende": "On ne cache rien. Refais-la chez toi. On t'attend quand même.\n\nLe chef fait le plat en trente secondes, gestes réels, quantités dites à voix haute. Il ne cache rien.\n\n— — —\n\nCOMMENT CETTE VIDÉO A ÉTÉ FAITE\n\nUne équipe d'agents IA — la Brigade Végé-Fruitée — dirigée en écrivant. Sur cet épisode, c'est La Fraise qui ouvre le bal (MCP Higgsfield) : elle écrit le plan et le fait rendre en dix secondes. Les autres suivent : la voix, le montage, la relecture avant publication, la mise en ligne, le bilan.\n\nLa chaîne : Claude, branché sur quatre outils — FoodEatUp pour les données du restaurant, Higgsfield pour l'image, ElevenLabs pour la voix, RapidoCMS pour la publication.\n\nPour cet épisode : La fiche recette donne les quantités exactes et le coût matière — le chef lit ce qu'il a déjà saisi.\n\n— — —\n\n🔗 https://site.foodeatup.com/\n📞 06 14 18 92 25\n\nSaison 6 « L'orchestration du restaurant » — épisode 2 sur 30. Arc : La carte à l'écran. Rôle à l'écran : Chef.\n",
         "hashtags": [
           "foodeatup",
           "restaurateur",
+          "rapidocms",
+          "iarestaurant",
           "restaurant",
           "faitmaison",
           "cuisine",
@@ -17905,7 +17952,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
         "motsCles": [
           "la carte à l'écran",
           "recette",
-          "restaurant la recette du plat signature"
+          "communication restaurant",
+          "agent ia restaurant",
+          "rapidocms",
+          "mcp claude restaurant"
         ],
         "cta": "Voir la carte",
         "titre": "La recette du plat signature — La carte à l'écran | FoodEatUp"
@@ -17918,10 +17968,12 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
   "EP153": {
     "publications": {
       "facebook": {
-        "legende": "Cette semaine seulement. Après, la saison change d'avis.\n\nLe nouveau plat arrive, on dit pourquoi : le produit est là, la saison y est, il ne restera pas.\n\n👉 Commander en ligne : https://site.foodeatup.com/\nUne table ? 06 14 18 92 25",
+        "legende": "Cette semaine seulement. Après, la saison change d'avis.\n\nLe nouveau plat arrive, on dit pourquoi : le produit est là, la saison y est, il ne restera pas.\n\nCette vidéo, personne ne l'a montée à la main : La Fraise s'en est chargée — elle écrit le plan et le fait rendre en dix secondes — puis toute la brigade a suivi.\n\n👉 Commander en ligne : https://site.foodeatup.com/\nUne table ? 06 14 18 92 25",
         "hashtags": [
           "foodeatup",
           "restaurateur",
+          "rapidocms",
+          "iarestaurant",
           "restaurant",
           "faitmaison",
           "cuisine",
@@ -17930,15 +17982,20 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
         "motsCles": [
           "la carte à l'écran",
           "annonce",
-          "restaurant le plat de la semaine"
+          "communication restaurant",
+          "agent ia restaurant",
+          "rapidocms",
+          "mcp claude restaurant"
         ],
         "cta": "Commander en ligne"
       },
       "instagram": {
-        "legende": "Cette semaine seulement.\nAprès, la saison change d'avis.\n\nLe nouveau plat arrive, on dit pourquoi : le produit est là, la saison y est, il ne restera pas.\n\nCommander en ligne — lien en bio.\nUne table ? 06 14 18 92 25",
+        "legende": "Cette semaine seulement.\nAprès, la saison change d'avis.\n\nLe nouveau plat arrive, on dit pourquoi : le produit est là, la saison y est, il ne restera pas.\n\nFabriquée par La Fraise et les neuf autres. Aucun logiciel de montage.\nCommander en ligne — lien en bio.\nUne table ? 06 14 18 92 25",
         "hashtags": [
           "foodeatup",
           "restaurateur",
+          "rapidocms",
+          "iarestaurant",
           "restaurant",
           "faitmaison",
           "cuisine",
@@ -17947,15 +18004,20 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
         "motsCles": [
           "la carte à l'écran",
           "annonce",
-          "restaurant le plat de la semaine"
+          "communication restaurant",
+          "agent ia restaurant",
+          "rapidocms",
+          "mcp claude restaurant"
         ],
         "cta": "Commander en ligne"
       },
       "tiktok": {
-        "legende": "Cette semaine seulement.\nAprès, la saison change d'avis.\n\nLe nouveau plat arrive, on dit pourquoi : le produit est là, la saison y est, il ne restera pas.",
+        "legende": "Cette semaine seulement.\nAprès, la saison change d'avis.\n\nLe nouveau plat arrive, on dit pourquoi : le produit est là, la saison y est, il ne restera pas.\n\nMontée par une IA. Sérieusement. (La Fraise, MCP Higgsfield)",
         "hashtags": [
           "foodeatup",
           "restaurateur",
+          "rapidocms",
+          "iarestaurant",
           "restaurant",
           "faitmaison",
           "cuisine",
@@ -17964,15 +18026,20 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
         "motsCles": [
           "la carte à l'écran",
           "annonce",
-          "restaurant le plat de la semaine"
+          "communication restaurant",
+          "agent ia restaurant",
+          "rapidocms",
+          "mcp claude restaurant"
         ],
         "cta": "Commander en ligne"
       },
       "linkedin": {
-        "legende": "Cette semaine seulement.\n\nLe nouveau plat arrive, on dit pourquoi : le produit est là, la saison y est, il ne restera pas.\n\nComment on le fait : Le plat est ajouté à la carte, la publication est programmée le lundi matin par Iris.\n\nCommander en ligne : https://site.foodeatup.com/\nUne table ? 06 14 18 92 25",
+        "legende": "Cette semaine seulement.\n\nLe nouveau plat arrive, on dit pourquoi : le produit est là, la saison y est, il ne restera pas.\n\nComment c'est fabriqué, sans agence et sans community manager :\n\n• La Fraise (MCP Higgsfield) — elle écrit le plan et le fait rendre en dix secondes.\n• Puis la brigade : la voix, le montage, la relecture, la mise en ligne.\n• Le tout dirigé en écrivant, depuis Claude, branché sur quatre outils — FoodEatUp pour les données du restaurant, Higgsfield pour l'image, ElevenLabs pour la voix, RapidoCMS pour la publication.\n\nPour cet épisode : Le plat est ajouté à la carte, la publication est programmée le lundi matin par Iris.\n\nCommander en ligne : https://site.foodeatup.com/\nUne table ? 06 14 18 92 25",
         "hashtags": [
           "foodeatup",
           "restaurateur",
+          "rapidocms",
+          "iarestaurant",
           "restaurant",
           "faitmaison",
           "cuisine",
@@ -17981,15 +18048,20 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
         "motsCles": [
           "la carte à l'écran",
           "annonce",
-          "restaurant le plat de la semaine"
+          "communication restaurant",
+          "agent ia restaurant",
+          "rapidocms",
+          "mcp claude restaurant"
         ],
         "cta": "Commander en ligne"
       },
       "youtube": {
-        "legende": "Cette semaine seulement. Après, la saison change d'avis.\n\nLe nouveau plat arrive, on dit pourquoi : le produit est là, la saison y est, il ne restera pas.\n\n— — —\n\n🔗 https://site.foodeatup.com/\n📞 06 14 18 92 25\n\nSaison 6 « L'orchestration du restaurant » — épisode 3 sur 30. Arc : La carte à l'écran.\nRôle à l'écran : Chef.\n\nComment c'est fait : Le plat est ajouté à la carte, la publication est programmée le lundi matin par Iris. Toute la série est publiée avec RapidoCMS, depuis une conversation.\n",
+        "legende": "Cette semaine seulement. Après, la saison change d'avis.\n\nLe nouveau plat arrive, on dit pourquoi : le produit est là, la saison y est, il ne restera pas.\n\n— — —\n\nCOMMENT CETTE VIDÉO A ÉTÉ FAITE\n\nUne équipe d'agents IA — la Brigade Végé-Fruitée — dirigée en écrivant. Sur cet épisode, c'est La Fraise qui ouvre le bal (MCP Higgsfield) : elle écrit le plan et le fait rendre en dix secondes. Les autres suivent : la voix, le montage, la relecture avant publication, la mise en ligne, le bilan.\n\nLa chaîne : Claude, branché sur quatre outils — FoodEatUp pour les données du restaurant, Higgsfield pour l'image, ElevenLabs pour la voix, RapidoCMS pour la publication.\n\nPour cet épisode : Le plat est ajouté à la carte, la publication est programmée le lundi matin par Iris.\n\n— — —\n\n🔗 https://site.foodeatup.com/\n📞 06 14 18 92 25\n\nSaison 6 « L'orchestration du restaurant » — épisode 3 sur 30. Arc : La carte à l'écran. Rôle à l'écran : Chef.\n",
         "hashtags": [
           "foodeatup",
           "restaurateur",
+          "rapidocms",
+          "iarestaurant",
           "restaurant",
           "faitmaison",
           "cuisine",
@@ -17998,7 +18070,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
         "motsCles": [
           "la carte à l'écran",
           "annonce",
-          "restaurant le plat de la semaine"
+          "communication restaurant",
+          "agent ia restaurant",
+          "rapidocms",
+          "mcp claude restaurant"
         ],
         "cta": "Commander en ligne",
         "titre": "Le plat de la semaine — La carte à l'écran | FoodEatUp"
@@ -18011,10 +18086,12 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
   "EP154": {
     "publications": {
       "facebook": {
-        "legende": "Midi. Quinze secondes. Décide avant d'arriver.\n\nEntrée, plat, dessert du jour, filmés à la suite au pass, sans coupe. Le prix à la fin.\n\n👉 Voir le menu du jour : https://site.foodeatup.com/\nUne table ? 06 14 18 92 25",
+        "legende": "Midi. Quinze secondes. Décide avant d'arriver.\n\nEntrée, plat, dessert du jour, filmés à la suite au pass, sans coupe. Le prix à la fin.\n\nCette vidéo, personne ne l'a montée à la main : La Fraise s'en est chargée — elle écrit le plan et le fait rendre en dix secondes — puis toute la brigade a suivi.\n\n👉 Voir le menu du jour : https://site.foodeatup.com/\nUne table ? 06 14 18 92 25",
         "hashtags": [
           "foodeatup",
           "restaurateur",
+          "rapidocms",
+          "iarestaurant",
           "restaurant",
           "faitmaison",
           "cuisine",
@@ -18023,15 +18100,20 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
         "motsCles": [
           "la carte à l'écran",
           "film de plat",
-          "restaurant le menu du midi en quinze secondes"
+          "communication restaurant",
+          "agent ia restaurant",
+          "rapidocms",
+          "mcp claude restaurant"
         ],
         "cta": "Voir le menu du jour"
       },
       "instagram": {
-        "legende": "Midi. Quinze secondes.\nDécide avant d'arriver.\n\nEntrée, plat, dessert du jour, filmés à la suite au pass, sans coupe. Le prix à la fin.\n\nVoir le menu du jour — lien en bio.\nUne table ? 06 14 18 92 25",
+        "legende": "Midi. Quinze secondes.\nDécide avant d'arriver.\n\nEntrée, plat, dessert du jour, filmés à la suite au pass, sans coupe. Le prix à la fin.\n\nFabriquée par La Fraise et les neuf autres. Aucun logiciel de montage.\nVoir le menu du jour — lien en bio.\nUne table ? 06 14 18 92 25",
         "hashtags": [
           "foodeatup",
           "restaurateur",
+          "rapidocms",
+          "iarestaurant",
           "restaurant",
           "faitmaison",
           "cuisine",
@@ -18040,15 +18122,20 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
         "motsCles": [
           "la carte à l'écran",
           "film de plat",
-          "restaurant le menu du midi en quinze secondes"
+          "communication restaurant",
+          "agent ia restaurant",
+          "rapidocms",
+          "mcp claude restaurant"
         ],
         "cta": "Voir le menu du jour"
       },
       "tiktok": {
-        "legende": "Midi. Quinze secondes.\nDécide avant d'arriver.\n\nEntrée, plat, dessert du jour, filmés à la suite au pass, sans coupe.",
+        "legende": "Midi. Quinze secondes.\nDécide avant d'arriver.\n\nEntrée, plat, dessert du jour, filmés à la suite au pass, sans coupe.\n\nMontée par une IA. Sérieusement. (La Fraise, MCP Higgsfield)",
         "hashtags": [
           "foodeatup",
           "restaurateur",
+          "rapidocms",
+          "iarestaurant",
           "restaurant",
           "faitmaison",
           "cuisine",
@@ -18057,15 +18144,20 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
         "motsCles": [
           "la carte à l'écran",
           "film de plat",
-          "restaurant le menu du midi en quinze secondes"
+          "communication restaurant",
+          "agent ia restaurant",
+          "rapidocms",
+          "mcp claude restaurant"
         ],
         "cta": "Voir le menu du jour"
       },
       "linkedin": {
-        "legende": "Midi. Quinze secondes.\n\nEntrée, plat, dessert du jour, filmés à la suite au pass, sans coupe. Le prix à la fin.\n\nComment on le fait : Le menu du jour sort du logiciel, la publication part à 11 h.\n\nVoir le menu du jour : https://site.foodeatup.com/\nUne table ? 06 14 18 92 25",
+        "legende": "Midi. Quinze secondes.\n\nEntrée, plat, dessert du jour, filmés à la suite au pass, sans coupe. Le prix à la fin.\n\nComment c'est fabriqué, sans agence et sans community manager :\n\n• La Fraise (MCP Higgsfield) — elle écrit le plan et le fait rendre en dix secondes.\n• Puis la brigade : la voix, le montage, la relecture, la mise en ligne.\n• Le tout dirigé en écrivant, depuis Claude, branché sur quatre outils — FoodEatUp pour les données du restaurant, Higgsfield pour l'image, ElevenLabs pour la voix, RapidoCMS pour la publication.\n\nPour cet épisode : Le menu du jour sort du logiciel, la publication part à 11 h.\n\nVoir le menu du jour : https://site.foodeatup.com/\nUne table ? 06 14 18 92 25",
         "hashtags": [
           "foodeatup",
           "restaurateur",
+          "rapidocms",
+          "iarestaurant",
           "restaurant",
           "faitmaison",
           "cuisine",
@@ -18074,15 +18166,20 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
         "motsCles": [
           "la carte à l'écran",
           "film de plat",
-          "restaurant le menu du midi en quinze secondes"
+          "communication restaurant",
+          "agent ia restaurant",
+          "rapidocms",
+          "mcp claude restaurant"
         ],
         "cta": "Voir le menu du jour"
       },
       "youtube": {
-        "legende": "Midi. Quinze secondes. Décide avant d'arriver.\n\nEntrée, plat, dessert du jour, filmés à la suite au pass, sans coupe. Le prix à la fin.\n\n— — —\n\n🔗 https://site.foodeatup.com/\n📞 06 14 18 92 25\n\nSaison 6 « L'orchestration du restaurant » — épisode 4 sur 30. Arc : La carte à l'écran.\nRôle à l'écran : Serveur.\n\nComment c'est fait : Le menu du jour sort du logiciel, la publication part à 11 h. Toute la série est publiée avec RapidoCMS, depuis une conversation.\n",
+        "legende": "Midi. Quinze secondes. Décide avant d'arriver.\n\nEntrée, plat, dessert du jour, filmés à la suite au pass, sans coupe. Le prix à la fin.\n\n— — —\n\nCOMMENT CETTE VIDÉO A ÉTÉ FAITE\n\nUne équipe d'agents IA — la Brigade Végé-Fruitée — dirigée en écrivant. Sur cet épisode, c'est La Fraise qui ouvre le bal (MCP Higgsfield) : elle écrit le plan et le fait rendre en dix secondes. Les autres suivent : la voix, le montage, la relecture avant publication, la mise en ligne, le bilan.\n\nLa chaîne : Claude, branché sur quatre outils — FoodEatUp pour les données du restaurant, Higgsfield pour l'image, ElevenLabs pour la voix, RapidoCMS pour la publication.\n\nPour cet épisode : Le menu du jour sort du logiciel, la publication part à 11 h.\n\n— — —\n\n🔗 https://site.foodeatup.com/\n📞 06 14 18 92 25\n\nSaison 6 « L'orchestration du restaurant » — épisode 4 sur 30. Arc : La carte à l'écran. Rôle à l'écran : Serveur.\n",
         "hashtags": [
           "foodeatup",
           "restaurateur",
+          "rapidocms",
+          "iarestaurant",
           "restaurant",
           "faitmaison",
           "cuisine",
@@ -18091,7 +18188,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
         "motsCles": [
           "la carte à l'écran",
           "film de plat",
-          "restaurant le menu du midi en quinze secondes"
+          "communication restaurant",
+          "agent ia restaurant",
+          "rapidocms",
+          "mcp claude restaurant"
         ],
         "cta": "Voir le menu du jour",
         "titre": "Le menu du midi en quinze secondes — La carte à l'écran | FoodEatUp"
@@ -18104,10 +18204,12 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
   "EP155": {
     "publications": {
       "facebook": {
-        "legende": "Vous l'avez réclamé. Il est revenu.\n\nUn ancien plat retiré de la carte revient parce que les clients l'ont réclamé. On le dit, on remercie.\n\n👉 Réserver une table : https://site.foodeatup.com/\nUne table ? 06 14 18 92 25",
+        "legende": "Vous l'avez réclamé. Il est revenu.\n\nUn ancien plat retiré de la carte revient parce que les clients l'ont réclamé. On le dit, on remercie.\n\nCette vidéo, personne ne l'a montée à la main : La Fraise s'en est chargée — elle écrit le plan et le fait rendre en dix secondes — puis toute la brigade a suivi.\n\n👉 Réserver une table : https://site.foodeatup.com/\nUne table ? 06 14 18 92 25",
         "hashtags": [
           "foodeatup",
           "restaurateur",
+          "rapidocms",
+          "iarestaurant",
           "restaurant",
           "faitmaison",
           "cuisine",
@@ -18116,15 +18218,20 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
         "motsCles": [
           "la carte à l'écran",
           "annonce",
-          "restaurant le plat qui revient"
+          "communication restaurant",
+          "agent ia restaurant",
+          "rapidocms",
+          "mcp claude restaurant"
         ],
         "cta": "Réserver une table"
       },
       "instagram": {
-        "legende": "Vous l'avez réclamé.\nIl est revenu.\n\nUn ancien plat retiré de la carte revient parce que les clients l'ont réclamé. On le dit, on remercie.\n\nRéserver une table — lien en bio.\nUne table ? 06 14 18 92 25",
+        "legende": "Vous l'avez réclamé.\nIl est revenu.\n\nUn ancien plat retiré de la carte revient parce que les clients l'ont réclamé. On le dit, on remercie.\n\nFabriquée par La Fraise et les neuf autres. Aucun logiciel de montage.\nRéserver une table — lien en bio.\nUne table ? 06 14 18 92 25",
         "hashtags": [
           "foodeatup",
           "restaurateur",
+          "rapidocms",
+          "iarestaurant",
           "restaurant",
           "faitmaison",
           "cuisine",
@@ -18133,15 +18240,20 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
         "motsCles": [
           "la carte à l'écran",
           "annonce",
-          "restaurant le plat qui revient"
+          "communication restaurant",
+          "agent ia restaurant",
+          "rapidocms",
+          "mcp claude restaurant"
         ],
         "cta": "Réserver une table"
       },
       "tiktok": {
-        "legende": "Vous l'avez réclamé.\nIl est revenu.\n\nUn ancien plat retiré de la carte revient parce que les clients l'ont réclamé.",
+        "legende": "Vous l'avez réclamé.\nIl est revenu.\n\nUn ancien plat retiré de la carte revient parce que les clients l'ont réclamé.\n\nMontée par une IA. Sérieusement. (La Fraise, MCP Higgsfield)",
         "hashtags": [
           "foodeatup",
           "restaurateur",
+          "rapidocms",
+          "iarestaurant",
           "restaurant",
           "faitmaison",
           "cuisine",
@@ -18150,15 +18262,20 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
         "motsCles": [
           "la carte à l'écran",
           "annonce",
-          "restaurant le plat qui revient"
+          "communication restaurant",
+          "agent ia restaurant",
+          "rapidocms",
+          "mcp claude restaurant"
         ],
         "cta": "Réserver une table"
       },
       "linkedin": {
-        "legende": "Vous l'avez réclamé.\n\nUn ancien plat retiré de la carte revient parce que les clients l'ont réclamé. On le dit, on remercie.\n\nComment on le fait : Les avis et les demandes remontent au même endroit ; on sait quel plat manque vraiment.\n\nRéserver une table : https://site.foodeatup.com/\nUne table ? 06 14 18 92 25",
+        "legende": "Vous l'avez réclamé.\n\nUn ancien plat retiré de la carte revient parce que les clients l'ont réclamé. On le dit, on remercie.\n\nComment c'est fabriqué, sans agence et sans community manager :\n\n• La Fraise (MCP Higgsfield) — elle écrit le plan et le fait rendre en dix secondes.\n• Puis la brigade : la voix, le montage, la relecture, la mise en ligne.\n• Le tout dirigé en écrivant, depuis Claude, branché sur quatre outils — FoodEatUp pour les données du restaurant, Higgsfield pour l'image, ElevenLabs pour la voix, RapidoCMS pour la publication.\n\nPour cet épisode : Les avis et les demandes remontent au même endroit ; on sait quel plat manque vraiment.\n\nRéserver une table : https://site.foodeatup.com/\nUne table ? 06 14 18 92 25",
         "hashtags": [
           "foodeatup",
           "restaurateur",
+          "rapidocms",
+          "iarestaurant",
           "restaurant",
           "faitmaison",
           "cuisine",
@@ -18167,15 +18284,20 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
         "motsCles": [
           "la carte à l'écran",
           "annonce",
-          "restaurant le plat qui revient"
+          "communication restaurant",
+          "agent ia restaurant",
+          "rapidocms",
+          "mcp claude restaurant"
         ],
         "cta": "Réserver une table"
       },
       "youtube": {
-        "legende": "Vous l'avez réclamé. Il est revenu.\n\nUn ancien plat retiré de la carte revient parce que les clients l'ont réclamé. On le dit, on remercie.\n\n— — —\n\n🔗 https://site.foodeatup.com/\n📞 06 14 18 92 25\n\nSaison 6 « L'orchestration du restaurant » — épisode 5 sur 30. Arc : La carte à l'écran.\nRôle à l'écran : Chef.\n\nComment c'est fait : Les avis et les demandes remontent au même endroit ; on sait quel plat manque vraiment. Toute la série est publiée avec RapidoCMS, depuis une conversation.\n",
+        "legende": "Vous l'avez réclamé. Il est revenu.\n\nUn ancien plat retiré de la carte revient parce que les clients l'ont réclamé. On le dit, on remercie.\n\n— — —\n\nCOMMENT CETTE VIDÉO A ÉTÉ FAITE\n\nUne équipe d'agents IA — la Brigade Végé-Fruitée — dirigée en écrivant. Sur cet épisode, c'est La Fraise qui ouvre le bal (MCP Higgsfield) : elle écrit le plan et le fait rendre en dix secondes. Les autres suivent : la voix, le montage, la relecture avant publication, la mise en ligne, le bilan.\n\nLa chaîne : Claude, branché sur quatre outils — FoodEatUp pour les données du restaurant, Higgsfield pour l'image, ElevenLabs pour la voix, RapidoCMS pour la publication.\n\nPour cet épisode : Les avis et les demandes remontent au même endroit ; on sait quel plat manque vraiment.\n\n— — —\n\n🔗 https://site.foodeatup.com/\n📞 06 14 18 92 25\n\nSaison 6 « L'orchestration du restaurant » — épisode 5 sur 30. Arc : La carte à l'écran. Rôle à l'écran : Chef.\n",
         "hashtags": [
           "foodeatup",
           "restaurateur",
+          "rapidocms",
+          "iarestaurant",
           "restaurant",
           "faitmaison",
           "cuisine",
@@ -18184,7 +18306,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
         "motsCles": [
           "la carte à l'écran",
           "annonce",
-          "restaurant le plat qui revient"
+          "communication restaurant",
+          "agent ia restaurant",
+          "rapidocms",
+          "mcp claude restaurant"
         ],
         "cta": "Réserver une table",
         "titre": "Le plat qui revient — La carte à l'écran | FoodEatUp"
@@ -18197,10 +18322,12 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
   "EP156": {
     "publications": {
       "facebook": {
-        "legende": "Ce que tu ne vois jamais. Trente secondes avant ton assiette.\n\nLe dessert monté en direct, à la seconde où il quitte le froid. Le moment que le client ne voit jamais.\n\n👉 Voir la carte : https://site.foodeatup.com/\nUne table ? 06 14 18 92 25",
+        "legende": "Ce que tu ne vois jamais. Trente secondes avant ton assiette.\n\nLe dessert monté en direct, à la seconde où il quitte le froid. Le moment que le client ne voit jamais.\n\nCette vidéo, personne ne l'a montée à la main : La Fraise s'en est chargée — elle écrit le plan et le fait rendre en dix secondes — puis toute la brigade a suivi.\n\n👉 Voir la carte : https://site.foodeatup.com/\nUne table ? 06 14 18 92 25",
         "hashtags": [
           "foodeatup",
           "restaurateur",
+          "rapidocms",
+          "iarestaurant",
           "restaurant",
           "faitmaison",
           "cuisine",
@@ -18209,15 +18336,20 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
         "motsCles": [
           "la carte à l'écran",
           "coulisse",
-          "restaurant le dessert qu on ne montre jamais"
+          "communication restaurant",
+          "agent ia restaurant",
+          "rapidocms",
+          "mcp claude restaurant"
         ],
         "cta": "Voir la carte"
       },
       "instagram": {
-        "legende": "Ce que tu ne vois jamais.\nTrente secondes avant ton assiette.\n\nLe dessert monté en direct, à la seconde où il quitte le froid. Le moment que le client ne voit jamais.\n\nVoir la carte — lien en bio.\nUne table ? 06 14 18 92 25",
+        "legende": "Ce que tu ne vois jamais.\nTrente secondes avant ton assiette.\n\nLe dessert monté en direct, à la seconde où il quitte le froid. Le moment que le client ne voit jamais.\n\nFabriquée par La Fraise et les neuf autres. Aucun logiciel de montage.\nVoir la carte — lien en bio.\nUne table ? 06 14 18 92 25",
         "hashtags": [
           "foodeatup",
           "restaurateur",
+          "rapidocms",
+          "iarestaurant",
           "restaurant",
           "faitmaison",
           "cuisine",
@@ -18226,15 +18358,20 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
         "motsCles": [
           "la carte à l'écran",
           "coulisse",
-          "restaurant le dessert qu on ne montre jamais"
+          "communication restaurant",
+          "agent ia restaurant",
+          "rapidocms",
+          "mcp claude restaurant"
         ],
         "cta": "Voir la carte"
       },
       "tiktok": {
-        "legende": "Ce que tu ne vois jamais.\nTrente secondes avant ton assiette.\n\nLe dessert monté en direct, à la seconde où il quitte le froid.",
+        "legende": "Ce que tu ne vois jamais.\nTrente secondes avant ton assiette.\n\nLe dessert monté en direct, à la seconde où il quitte le froid.\n\nMontée par une IA. Sérieusement. (La Fraise, MCP Higgsfield)",
         "hashtags": [
           "foodeatup",
           "restaurateur",
+          "rapidocms",
+          "iarestaurant",
           "restaurant",
           "faitmaison",
           "cuisine",
@@ -18243,15 +18380,20 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
         "motsCles": [
           "la carte à l'écran",
           "coulisse",
-          "restaurant le dessert qu on ne montre jamais"
+          "communication restaurant",
+          "agent ia restaurant",
+          "rapidocms",
+          "mcp claude restaurant"
         ],
         "cta": "Voir la carte"
       },
       "linkedin": {
-        "legende": "Ce que tu ne vois jamais.\n\nLe dessert monté en direct, à la seconde où il quitte le froid. Le moment que le client ne voit jamais.\n\nComment on le fait : Le coût matière du dessert est connu : on sait qu'on peut le pousser.\n\nVoir la carte : https://site.foodeatup.com/\nUne table ? 06 14 18 92 25",
+        "legende": "Ce que tu ne vois jamais.\n\nLe dessert monté en direct, à la seconde où il quitte le froid. Le moment que le client ne voit jamais.\n\nComment c'est fabriqué, sans agence et sans community manager :\n\n• La Fraise (MCP Higgsfield) — elle écrit le plan et le fait rendre en dix secondes.\n• Puis la brigade : la voix, le montage, la relecture, la mise en ligne.\n• Le tout dirigé en écrivant, depuis Claude, branché sur quatre outils — FoodEatUp pour les données du restaurant, Higgsfield pour l'image, ElevenLabs pour la voix, RapidoCMS pour la publication.\n\nPour cet épisode : Le coût matière du dessert est connu : on sait qu'on peut le pousser.\n\nVoir la carte : https://site.foodeatup.com/\nUne table ? 06 14 18 92 25",
         "hashtags": [
           "foodeatup",
           "restaurateur",
+          "rapidocms",
+          "iarestaurant",
           "restaurant",
           "faitmaison",
           "cuisine",
@@ -18260,15 +18402,20 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
         "motsCles": [
           "la carte à l'écran",
           "coulisse",
-          "restaurant le dessert qu on ne montre jamais"
+          "communication restaurant",
+          "agent ia restaurant",
+          "rapidocms",
+          "mcp claude restaurant"
         ],
         "cta": "Voir la carte"
       },
       "youtube": {
-        "legende": "Ce que tu ne vois jamais. Trente secondes avant ton assiette.\n\nLe dessert monté en direct, à la seconde où il quitte le froid. Le moment que le client ne voit jamais.\n\n— — —\n\n🔗 https://site.foodeatup.com/\n📞 06 14 18 92 25\n\nSaison 6 « L'orchestration du restaurant » — épisode 6 sur 30. Arc : La carte à l'écran.\nRôle à l'écran : Chef.\n\nComment c'est fait : Le coût matière du dessert est connu : on sait qu'on peut le pousser. Toute la série est publiée avec RapidoCMS, depuis une conversation.\n",
+        "legende": "Ce que tu ne vois jamais. Trente secondes avant ton assiette.\n\nLe dessert monté en direct, à la seconde où il quitte le froid. Le moment que le client ne voit jamais.\n\n— — —\n\nCOMMENT CETTE VIDÉO A ÉTÉ FAITE\n\nUne équipe d'agents IA — la Brigade Végé-Fruitée — dirigée en écrivant. Sur cet épisode, c'est La Fraise qui ouvre le bal (MCP Higgsfield) : elle écrit le plan et le fait rendre en dix secondes. Les autres suivent : la voix, le montage, la relecture avant publication, la mise en ligne, le bilan.\n\nLa chaîne : Claude, branché sur quatre outils — FoodEatUp pour les données du restaurant, Higgsfield pour l'image, ElevenLabs pour la voix, RapidoCMS pour la publication.\n\nPour cet épisode : Le coût matière du dessert est connu : on sait qu'on peut le pousser.\n\n— — —\n\n🔗 https://site.foodeatup.com/\n📞 06 14 18 92 25\n\nSaison 6 « L'orchestration du restaurant » — épisode 6 sur 30. Arc : La carte à l'écran. Rôle à l'écran : Chef.\n",
         "hashtags": [
           "foodeatup",
           "restaurateur",
+          "rapidocms",
+          "iarestaurant",
           "restaurant",
           "faitmaison",
           "cuisine",
@@ -18277,7 +18424,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
         "motsCles": [
           "la carte à l'écran",
           "coulisse",
-          "restaurant le dessert qu on ne montre jamais"
+          "communication restaurant",
+          "agent ia restaurant",
+          "rapidocms",
+          "mcp claude restaurant"
         ],
         "cta": "Voir la carte",
         "titre": "Le dessert qu'on ne montre jamais — La carte à l'écran | FoodEatUp"
@@ -18290,10 +18440,12 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
   "EP157": {
     "publications": {
       "facebook": {
-        "legende": "Vendredi 12, ici. Il y a un nombre de places. Pas plus.\n\nDate, heure, ce qu'on y fait, ce qu'on y mange. Filmé dans la salle préparée pour l'occasion.\n\n👉 Réserver sa place : https://site.foodeatup.com/\nUne table ? 06 14 18 92 25",
+        "legende": "Vendredi 12, ici. Il y a un nombre de places. Pas plus.\n\nDate, heure, ce qu'on y fait, ce qu'on y mange. Filmé dans la salle préparée pour l'occasion.\n\nCette vidéo, personne ne l'a montée à la main : La Betterave s'en est chargée — elle programme les cinq réseaux aux bons créneaux — puis toute la brigade a suivi.\n\n👉 Réserver sa place : https://site.foodeatup.com/\nUne table ? 06 14 18 92 25",
         "hashtags": [
           "foodeatup",
           "restaurateur",
+          "rapidocms",
+          "iarestaurant",
           "restaurant",
           "soiree",
           "sortie",
@@ -18302,15 +18454,20 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
         "motsCles": [
           "les événements",
           "annonce",
-          "restaurant un evenement au resto"
+          "communication restaurant",
+          "agent ia restaurant",
+          "rapidocms",
+          "mcp claude restaurant"
         ],
         "cta": "Réserver sa place"
       },
       "instagram": {
-        "legende": "Vendredi 12, ici.\nIl y a un nombre de places. Pas plus.\n\nDate, heure, ce qu'on y fait, ce qu'on y mange. Filmé dans la salle préparée pour l'occasion.\n\nRéserver sa place — lien en bio.\nUne table ? 06 14 18 92 25",
+        "legende": "Vendredi 12, ici.\nIl y a un nombre de places. Pas plus.\n\nDate, heure, ce qu'on y fait, ce qu'on y mange. Filmé dans la salle préparée pour l'occasion.\n\nFabriquée par La Betterave et les neuf autres. Aucun logiciel de montage.\nRéserver sa place — lien en bio.\nUne table ? 06 14 18 92 25",
         "hashtags": [
           "foodeatup",
           "restaurateur",
+          "rapidocms",
+          "iarestaurant",
           "restaurant",
           "soiree",
           "sortie",
@@ -18319,15 +18476,20 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
         "motsCles": [
           "les événements",
           "annonce",
-          "restaurant un evenement au resto"
+          "communication restaurant",
+          "agent ia restaurant",
+          "rapidocms",
+          "mcp claude restaurant"
         ],
         "cta": "Réserver sa place"
       },
       "tiktok": {
-        "legende": "Vendredi 12, ici.\nIl y a un nombre de places. Pas plus.\n\nDate, heure, ce qu'on y fait, ce qu'on y mange.",
+        "legende": "Vendredi 12, ici.\nIl y a un nombre de places. Pas plus.\n\nDate, heure, ce qu'on y fait, ce qu'on y mange.\n\nMontée par une IA. Sérieusement. (La Betterave, MCP RapidoCMS)",
         "hashtags": [
           "foodeatup",
           "restaurateur",
+          "rapidocms",
+          "iarestaurant",
           "restaurant",
           "soiree",
           "sortie",
@@ -18336,15 +18498,20 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
         "motsCles": [
           "les événements",
           "annonce",
-          "restaurant un evenement au resto"
+          "communication restaurant",
+          "agent ia restaurant",
+          "rapidocms",
+          "mcp claude restaurant"
         ],
         "cta": "Réserver sa place"
       },
       "linkedin": {
-        "legende": "Vendredi 12, ici.\n\nDate, heure, ce qu'on y fait, ce qu'on y mange. Filmé dans la salle préparée pour l'occasion.\n\nComment on le fait : L'événement crée son créneau de réservation ; les places restantes s'affichent en direct.\n\nRéserver sa place : https://site.foodeatup.com/\nUne table ? 06 14 18 92 25",
+        "legende": "Vendredi 12, ici.\n\nDate, heure, ce qu'on y fait, ce qu'on y mange. Filmé dans la salle préparée pour l'occasion.\n\nComment c'est fabriqué, sans agence et sans community manager :\n\n• La Betterave (MCP RapidoCMS) — elle programme les cinq réseaux aux bons créneaux.\n• Puis la brigade : la voix, le montage, la relecture, la mise en ligne.\n• Le tout dirigé en écrivant, depuis Claude, branché sur quatre outils — FoodEatUp pour les données du restaurant, Higgsfield pour l'image, ElevenLabs pour la voix, RapidoCMS pour la publication.\n\nPour cet épisode : L'événement crée son créneau de réservation ; les places restantes s'affichent en direct.\n\nRéserver sa place : https://site.foodeatup.com/\nUne table ? 06 14 18 92 25",
         "hashtags": [
           "foodeatup",
           "restaurateur",
+          "rapidocms",
+          "iarestaurant",
           "restaurant",
           "soiree",
           "sortie",
@@ -18353,15 +18520,20 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
         "motsCles": [
           "les événements",
           "annonce",
-          "restaurant un evenement au resto"
+          "communication restaurant",
+          "agent ia restaurant",
+          "rapidocms",
+          "mcp claude restaurant"
         ],
         "cta": "Réserver sa place"
       },
       "youtube": {
-        "legende": "Vendredi 12, ici. Il y a un nombre de places. Pas plus.\n\nDate, heure, ce qu'on y fait, ce qu'on y mange. Filmé dans la salle préparée pour l'occasion.\n\n— — —\n\n🔗 https://site.foodeatup.com/\n📞 06 14 18 92 25\n\nSaison 6 « L'orchestration du restaurant » — épisode 7 sur 30. Arc : Les événements.\nRôle à l'écran : Directeur.\n\nComment c'est fait : L'événement crée son créneau de réservation ; les places restantes s'affichent en direct. Toute la série est publiée avec RapidoCMS, depuis une conversation.\n",
+        "legende": "Vendredi 12, ici. Il y a un nombre de places. Pas plus.\n\nDate, heure, ce qu'on y fait, ce qu'on y mange. Filmé dans la salle préparée pour l'occasion.\n\n— — —\n\nCOMMENT CETTE VIDÉO A ÉTÉ FAITE\n\nUne équipe d'agents IA — la Brigade Végé-Fruitée — dirigée en écrivant. Sur cet épisode, c'est La Betterave qui ouvre le bal (MCP RapidoCMS) : elle programme les cinq réseaux aux bons créneaux. Les autres suivent : la voix, le montage, la relecture avant publication, la mise en ligne, le bilan.\n\nLa chaîne : Claude, branché sur quatre outils — FoodEatUp pour les données du restaurant, Higgsfield pour l'image, ElevenLabs pour la voix, RapidoCMS pour la publication.\n\nPour cet épisode : L'événement crée son créneau de réservation ; les places restantes s'affichent en direct.\n\n— — —\n\n🔗 https://site.foodeatup.com/\n📞 06 14 18 92 25\n\nSaison 6 « L'orchestration du restaurant » — épisode 7 sur 30. Arc : Les événements. Rôle à l'écran : Directeur.\n",
         "hashtags": [
           "foodeatup",
           "restaurateur",
+          "rapidocms",
+          "iarestaurant",
           "restaurant",
           "soiree",
           "sortie",
@@ -18370,7 +18542,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
         "motsCles": [
           "les événements",
           "annonce",
-          "restaurant un evenement au resto"
+          "communication restaurant",
+          "agent ia restaurant",
+          "rapidocms",
+          "mcp claude restaurant"
         ],
         "cta": "Réserver sa place",
         "titre": "Un événement au resto — Les événements | FoodEatUp"
@@ -18383,10 +18558,12 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
   "EP158": {
     "publications": {
       "facebook": {
-        "legende": "On diffuse le match. L'écran est grand. La table se réserve.\n\nL'écran, la salle qui se remplit, l'ardoise du menu match. On annonce l'heure du coup d'envoi et le plat qui va avec.\n\n👉 Réserver pour le match : https://site.foodeatup.com/\nUne table ? 06 14 18 92 25",
+        "legende": "On diffuse le match. L'écran est grand. La table se réserve.\n\nL'écran, la salle qui se remplit, l'ardoise du menu match. On annonce l'heure du coup d'envoi et le plat qui va avec.\n\nCette vidéo, personne ne l'a montée à la main : La Betterave s'en est chargée — elle programme les cinq réseaux aux bons créneaux — puis toute la brigade a suivi.\n\n👉 Réserver pour le match : https://site.foodeatup.com/\nUne table ? 06 14 18 92 25",
         "hashtags": [
           "foodeatup",
           "restaurateur",
+          "rapidocms",
+          "iarestaurant",
           "restaurant",
           "soiree",
           "sortie",
@@ -18395,15 +18572,20 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
         "motsCles": [
           "les événements",
           "annonce",
-          "restaurant on diffuse le match"
+          "communication restaurant",
+          "agent ia restaurant",
+          "rapidocms",
+          "mcp claude restaurant"
         ],
         "cta": "Réserver pour le match"
       },
       "instagram": {
-        "legende": "On diffuse le match.\nL'écran est grand. La table se réserve.\n\nL'écran, la salle qui se remplit, l'ardoise du menu match. On annonce l'heure du coup d'envoi et le plat qui va avec.\n\nRéserver pour le match — lien en bio.\nUne table ? 06 14 18 92 25",
+        "legende": "On diffuse le match.\nL'écran est grand. La table se réserve.\n\nL'écran, la salle qui se remplit, l'ardoise du menu match. On annonce l'heure du coup d'envoi et le plat qui va avec.\n\nFabriquée par La Betterave et les neuf autres. Aucun logiciel de montage.\nRéserver pour le match — lien en bio.\nUne table ? 06 14 18 92 25",
         "hashtags": [
           "foodeatup",
           "restaurateur",
+          "rapidocms",
+          "iarestaurant",
           "restaurant",
           "soiree",
           "sortie",
@@ -18412,15 +18594,20 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
         "motsCles": [
           "les événements",
           "annonce",
-          "restaurant on diffuse le match"
+          "communication restaurant",
+          "agent ia restaurant",
+          "rapidocms",
+          "mcp claude restaurant"
         ],
         "cta": "Réserver pour le match"
       },
       "tiktok": {
-        "legende": "On diffuse le match.\nL'écran est grand. La table se réserve.\n\nL'écran, la salle qui se remplit, l'ardoise du menu match.",
+        "legende": "On diffuse le match.\nL'écran est grand. La table se réserve.\n\nL'écran, la salle qui se remplit, l'ardoise du menu match.\n\nMontée par une IA. Sérieusement. (La Betterave, MCP RapidoCMS)",
         "hashtags": [
           "foodeatup",
           "restaurateur",
+          "rapidocms",
+          "iarestaurant",
           "restaurant",
           "soiree",
           "sortie",
@@ -18429,15 +18616,20 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
         "motsCles": [
           "les événements",
           "annonce",
-          "restaurant on diffuse le match"
+          "communication restaurant",
+          "agent ia restaurant",
+          "rapidocms",
+          "mcp claude restaurant"
         ],
         "cta": "Réserver pour le match"
       },
       "linkedin": {
-        "legende": "On diffuse le match.\n\nL'écran, la salle qui se remplit, l'ardoise du menu match. On annonce l'heure du coup d'envoi et le plat qui va avec.\n\nComment on le fait : Le créneau du match est ouvert à la réservation, la campagne part automatiquement l'avant-veille.\n\nRéserver pour le match : https://site.foodeatup.com/\nUne table ? 06 14 18 92 25",
+        "legende": "On diffuse le match.\n\nL'écran, la salle qui se remplit, l'ardoise du menu match. On annonce l'heure du coup d'envoi et le plat qui va avec.\n\nComment c'est fabriqué, sans agence et sans community manager :\n\n• La Betterave (MCP RapidoCMS) — elle programme les cinq réseaux aux bons créneaux.\n• Puis la brigade : la voix, le montage, la relecture, la mise en ligne.\n• Le tout dirigé en écrivant, depuis Claude, branché sur quatre outils — FoodEatUp pour les données du restaurant, Higgsfield pour l'image, ElevenLabs pour la voix, RapidoCMS pour la publication.\n\nPour cet épisode : Le créneau du match est ouvert à la réservation, la campagne part automatiquement l'avant-veille.\n\nRéserver pour le match : https://site.foodeatup.com/\nUne table ? 06 14 18 92 25",
         "hashtags": [
           "foodeatup",
           "restaurateur",
+          "rapidocms",
+          "iarestaurant",
           "restaurant",
           "soiree",
           "sortie",
@@ -18446,15 +18638,20 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
         "motsCles": [
           "les événements",
           "annonce",
-          "restaurant on diffuse le match"
+          "communication restaurant",
+          "agent ia restaurant",
+          "rapidocms",
+          "mcp claude restaurant"
         ],
         "cta": "Réserver pour le match"
       },
       "youtube": {
-        "legende": "On diffuse le match. L'écran est grand. La table se réserve.\n\nL'écran, la salle qui se remplit, l'ardoise du menu match. On annonce l'heure du coup d'envoi et le plat qui va avec.\n\n— — —\n\n🔗 https://site.foodeatup.com/\n📞 06 14 18 92 25\n\nSaison 6 « L'orchestration du restaurant » — épisode 8 sur 30. Arc : Les événements.\nRôle à l'écran : Serveur.\n\nComment c'est fait : Le créneau du match est ouvert à la réservation, la campagne part automatiquement l'avant-veille. Toute la série est publiée avec RapidoCMS, depuis une conversation.\n",
+        "legende": "On diffuse le match. L'écran est grand. La table se réserve.\n\nL'écran, la salle qui se remplit, l'ardoise du menu match. On annonce l'heure du coup d'envoi et le plat qui va avec.\n\n— — —\n\nCOMMENT CETTE VIDÉO A ÉTÉ FAITE\n\nUne équipe d'agents IA — la Brigade Végé-Fruitée — dirigée en écrivant. Sur cet épisode, c'est La Betterave qui ouvre le bal (MCP RapidoCMS) : elle programme les cinq réseaux aux bons créneaux. Les autres suivent : la voix, le montage, la relecture avant publication, la mise en ligne, le bilan.\n\nLa chaîne : Claude, branché sur quatre outils — FoodEatUp pour les données du restaurant, Higgsfield pour l'image, ElevenLabs pour la voix, RapidoCMS pour la publication.\n\nPour cet épisode : Le créneau du match est ouvert à la réservation, la campagne part automatiquement l'avant-veille.\n\n— — —\n\n🔗 https://site.foodeatup.com/\n📞 06 14 18 92 25\n\nSaison 6 « L'orchestration du restaurant » — épisode 8 sur 30. Arc : Les événements. Rôle à l'écran : Serveur.\n",
         "hashtags": [
           "foodeatup",
           "restaurateur",
+          "rapidocms",
+          "iarestaurant",
           "restaurant",
           "soiree",
           "sortie",
@@ -18463,7 +18660,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
         "motsCles": [
           "les événements",
           "annonce",
-          "restaurant on diffuse le match"
+          "communication restaurant",
+          "agent ia restaurant",
+          "rapidocms",
+          "mcp claude restaurant"
         ],
         "cta": "Réserver pour le match",
         "titre": "On diffuse le match — Les événements | FoodEatUp"
@@ -18476,10 +18676,12 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
   "EP159": {
     "publications": {
       "facebook": {
-        "legende": "C'est ton anniversaire. On s'occupe du reste.\n\nLe dessert avec la bougie, la table décorée, la petite mise en scène qu'on fait pour chaque anniversaire.\n\n👉 Réserver un anniversaire : https://site.foodeatup.com/\nUne table ? 06 14 18 92 25",
+        "legende": "C'est ton anniversaire. On s'occupe du reste.\n\nLe dessert avec la bougie, la table décorée, la petite mise en scène qu'on fait pour chaque anniversaire.\n\nCette vidéo, personne ne l'a montée à la main : La Betterave s'en est chargée — elle programme les cinq réseaux aux bons créneaux — puis toute la brigade a suivi.\n\n👉 Réserver un anniversaire : https://site.foodeatup.com/\nUne table ? 06 14 18 92 25",
         "hashtags": [
           "foodeatup",
           "restaurateur",
+          "rapidocms",
+          "iarestaurant",
           "restaurant",
           "soiree",
           "sortie",
@@ -18488,15 +18690,20 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
         "motsCles": [
           "les événements",
           "offre",
-          "restaurant fetez votre anniversaire ici"
+          "communication restaurant",
+          "agent ia restaurant",
+          "rapidocms",
+          "mcp claude restaurant"
         ],
         "cta": "Réserver un anniversaire"
       },
       "instagram": {
-        "legende": "C'est ton anniversaire.\nOn s'occupe du reste.\n\nLe dessert avec la bougie, la table décorée, la petite mise en scène qu'on fait pour chaque anniversaire.\n\nRéserver un anniversaire — lien en bio.\nUne table ? 06 14 18 92 25",
+        "legende": "C'est ton anniversaire.\nOn s'occupe du reste.\n\nLe dessert avec la bougie, la table décorée, la petite mise en scène qu'on fait pour chaque anniversaire.\n\nFabriquée par La Betterave et les neuf autres. Aucun logiciel de montage.\nRéserver un anniversaire — lien en bio.\nUne table ? 06 14 18 92 25",
         "hashtags": [
           "foodeatup",
           "restaurateur",
+          "rapidocms",
+          "iarestaurant",
           "restaurant",
           "soiree",
           "sortie",
@@ -18505,15 +18712,20 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
         "motsCles": [
           "les événements",
           "offre",
-          "restaurant fetez votre anniversaire ici"
+          "communication restaurant",
+          "agent ia restaurant",
+          "rapidocms",
+          "mcp claude restaurant"
         ],
         "cta": "Réserver un anniversaire"
       },
       "tiktok": {
-        "legende": "C'est ton anniversaire.\nOn s'occupe du reste.\n\nLe dessert avec la bougie, la table décorée, la petite mise en scène qu'on fait pour chaque anniversaire.",
+        "legende": "C'est ton anniversaire.\nOn s'occupe du reste.\n\nLe dessert avec la bougie, la table décorée, la petite mise en scène qu'on fait pour chaque anniversaire.\n\nMontée par une IA. Sérieusement. (La Betterave, MCP RapidoCMS)",
         "hashtags": [
           "foodeatup",
           "restaurateur",
+          "rapidocms",
+          "iarestaurant",
           "restaurant",
           "soiree",
           "sortie",
@@ -18522,15 +18734,20 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
         "motsCles": [
           "les événements",
           "offre",
-          "restaurant fetez votre anniversaire ici"
+          "communication restaurant",
+          "agent ia restaurant",
+          "rapidocms",
+          "mcp claude restaurant"
         ],
         "cta": "Réserver un anniversaire"
       },
       "linkedin": {
-        "legende": "C'est ton anniversaire.\n\nLe dessert avec la bougie, la table décorée, la petite mise en scène qu'on fait pour chaque anniversaire.\n\nComment on le fait : La date de naissance est dans la fiche client : la relance part quinze jours avant, toute seule.\n\nRéserver un anniversaire : https://site.foodeatup.com/\nUne table ? 06 14 18 92 25",
+        "legende": "C'est ton anniversaire.\n\nLe dessert avec la bougie, la table décorée, la petite mise en scène qu'on fait pour chaque anniversaire.\n\nComment c'est fabriqué, sans agence et sans community manager :\n\n• La Betterave (MCP RapidoCMS) — elle programme les cinq réseaux aux bons créneaux.\n• Puis la brigade : la voix, le montage, la relecture, la mise en ligne.\n• Le tout dirigé en écrivant, depuis Claude, branché sur quatre outils — FoodEatUp pour les données du restaurant, Higgsfield pour l'image, ElevenLabs pour la voix, RapidoCMS pour la publication.\n\nPour cet épisode : La date de naissance est dans la fiche client : la relance part quinze jours avant, toute seule.\n\nRéserver un anniversaire : https://site.foodeatup.com/\nUne table ? 06 14 18 92 25",
         "hashtags": [
           "foodeatup",
           "restaurateur",
+          "rapidocms",
+          "iarestaurant",
           "restaurant",
           "soiree",
           "sortie",
@@ -18539,15 +18756,20 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
         "motsCles": [
           "les événements",
           "offre",
-          "restaurant fetez votre anniversaire ici"
+          "communication restaurant",
+          "agent ia restaurant",
+          "rapidocms",
+          "mcp claude restaurant"
         ],
         "cta": "Réserver un anniversaire"
       },
       "youtube": {
-        "legende": "C'est ton anniversaire. On s'occupe du reste.\n\nLe dessert avec la bougie, la table décorée, la petite mise en scène qu'on fait pour chaque anniversaire.\n\n— — —\n\n🔗 https://site.foodeatup.com/\n📞 06 14 18 92 25\n\nSaison 6 « L'orchestration du restaurant » — épisode 9 sur 30. Arc : Les événements.\nRôle à l'écran : Serveur.\n\nComment c'est fait : La date de naissance est dans la fiche client : la relance part quinze jours avant, toute seule. Toute la série est publiée avec RapidoCMS, depuis une conversation.\n",
+        "legende": "C'est ton anniversaire. On s'occupe du reste.\n\nLe dessert avec la bougie, la table décorée, la petite mise en scène qu'on fait pour chaque anniversaire.\n\n— — —\n\nCOMMENT CETTE VIDÉO A ÉTÉ FAITE\n\nUne équipe d'agents IA — la Brigade Végé-Fruitée — dirigée en écrivant. Sur cet épisode, c'est La Betterave qui ouvre le bal (MCP RapidoCMS) : elle programme les cinq réseaux aux bons créneaux. Les autres suivent : la voix, le montage, la relecture avant publication, la mise en ligne, le bilan.\n\nLa chaîne : Claude, branché sur quatre outils — FoodEatUp pour les données du restaurant, Higgsfield pour l'image, ElevenLabs pour la voix, RapidoCMS pour la publication.\n\nPour cet épisode : La date de naissance est dans la fiche client : la relance part quinze jours avant, toute seule.\n\n— — —\n\n🔗 https://site.foodeatup.com/\n📞 06 14 18 92 25\n\nSaison 6 « L'orchestration du restaurant » — épisode 9 sur 30. Arc : Les événements. Rôle à l'écran : Serveur.\n",
         "hashtags": [
           "foodeatup",
           "restaurateur",
+          "rapidocms",
+          "iarestaurant",
           "restaurant",
           "soiree",
           "sortie",
@@ -18556,7 +18778,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
         "motsCles": [
           "les événements",
           "offre",
-          "restaurant fetez votre anniversaire ici"
+          "communication restaurant",
+          "agent ia restaurant",
+          "rapidocms",
+          "mcp claude restaurant"
         ],
         "cta": "Réserver un anniversaire",
         "titre": "Fêtez votre anniversaire ici — Les événements | FoodEatUp"
@@ -18569,10 +18794,12 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
   "EP160": {
     "publications": {
       "facebook": {
-        "legende": "Un soir, une cuisine. Demain, ce plat n'existe plus.\n\nUn soir, une cuisine, un décor. On montre le plat qui ne sera à la carte que ce soir-là.\n\n👉 Réserver sa place : https://site.foodeatup.com/\nUne table ? 06 14 18 92 25",
+        "legende": "Un soir, une cuisine. Demain, ce plat n'existe plus.\n\nUn soir, une cuisine, un décor. On montre le plat qui ne sera à la carte que ce soir-là.\n\nCette vidéo, personne ne l'a montée à la main : La Betterave s'en est chargée — elle programme les cinq réseaux aux bons créneaux — puis toute la brigade a suivi.\n\n👉 Réserver sa place : https://site.foodeatup.com/\nUne table ? 06 14 18 92 25",
         "hashtags": [
           "foodeatup",
           "restaurateur",
+          "rapidocms",
+          "iarestaurant",
           "restaurant",
           "soiree",
           "sortie",
@@ -18581,15 +18808,20 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
         "motsCles": [
           "les événements",
           "annonce",
-          "restaurant la soiree a theme"
+          "communication restaurant",
+          "agent ia restaurant",
+          "rapidocms",
+          "mcp claude restaurant"
         ],
         "cta": "Réserver sa place"
       },
       "instagram": {
-        "legende": "Un soir, une cuisine.\nDemain, ce plat n'existe plus.\n\nUn soir, une cuisine, un décor. On montre le plat qui ne sera à la carte que ce soir-là.\n\nRéserver sa place — lien en bio.\nUne table ? 06 14 18 92 25",
+        "legende": "Un soir, une cuisine.\nDemain, ce plat n'existe plus.\n\nUn soir, une cuisine, un décor. On montre le plat qui ne sera à la carte que ce soir-là.\n\nFabriquée par La Betterave et les neuf autres. Aucun logiciel de montage.\nRéserver sa place — lien en bio.\nUne table ? 06 14 18 92 25",
         "hashtags": [
           "foodeatup",
           "restaurateur",
+          "rapidocms",
+          "iarestaurant",
           "restaurant",
           "soiree",
           "sortie",
@@ -18598,15 +18830,20 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
         "motsCles": [
           "les événements",
           "annonce",
-          "restaurant la soiree a theme"
+          "communication restaurant",
+          "agent ia restaurant",
+          "rapidocms",
+          "mcp claude restaurant"
         ],
         "cta": "Réserver sa place"
       },
       "tiktok": {
-        "legende": "Un soir, une cuisine.\nDemain, ce plat n'existe plus.\n\nUn soir, une cuisine, un décor.",
+        "legende": "Un soir, une cuisine.\nDemain, ce plat n'existe plus.\n\nUn soir, une cuisine, un décor.\n\nMontée par une IA. Sérieusement. (La Betterave, MCP RapidoCMS)",
         "hashtags": [
           "foodeatup",
           "restaurateur",
+          "rapidocms",
+          "iarestaurant",
           "restaurant",
           "soiree",
           "sortie",
@@ -18615,15 +18852,20 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
         "motsCles": [
           "les événements",
           "annonce",
-          "restaurant la soiree a theme"
+          "communication restaurant",
+          "agent ia restaurant",
+          "rapidocms",
+          "mcp claude restaurant"
         ],
         "cta": "Réserver sa place"
       },
       "linkedin": {
-        "legende": "Un soir, une cuisine.\n\nUn soir, une cuisine, un décor. On montre le plat qui ne sera à la carte que ce soir-là.\n\nComment on le fait : Le menu spécial est monté à part, sans toucher à la carte, et retiré tout seul le lendemain.\n\nRéserver sa place : https://site.foodeatup.com/\nUne table ? 06 14 18 92 25",
+        "legende": "Un soir, une cuisine.\n\nUn soir, une cuisine, un décor. On montre le plat qui ne sera à la carte que ce soir-là.\n\nComment c'est fabriqué, sans agence et sans community manager :\n\n• La Betterave (MCP RapidoCMS) — elle programme les cinq réseaux aux bons créneaux.\n• Puis la brigade : la voix, le montage, la relecture, la mise en ligne.\n• Le tout dirigé en écrivant, depuis Claude, branché sur quatre outils — FoodEatUp pour les données du restaurant, Higgsfield pour l'image, ElevenLabs pour la voix, RapidoCMS pour la publication.\n\nPour cet épisode : Le menu spécial est monté à part, sans toucher à la carte, et retiré tout seul le lendemain.\n\nRéserver sa place : https://site.foodeatup.com/\nUne table ? 06 14 18 92 25",
         "hashtags": [
           "foodeatup",
           "restaurateur",
+          "rapidocms",
+          "iarestaurant",
           "restaurant",
           "soiree",
           "sortie",
@@ -18632,15 +18874,20 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
         "motsCles": [
           "les événements",
           "annonce",
-          "restaurant la soiree a theme"
+          "communication restaurant",
+          "agent ia restaurant",
+          "rapidocms",
+          "mcp claude restaurant"
         ],
         "cta": "Réserver sa place"
       },
       "youtube": {
-        "legende": "Un soir, une cuisine. Demain, ce plat n'existe plus.\n\nUn soir, une cuisine, un décor. On montre le plat qui ne sera à la carte que ce soir-là.\n\n— — —\n\n🔗 https://site.foodeatup.com/\n📞 06 14 18 92 25\n\nSaison 6 « L'orchestration du restaurant » — épisode 10 sur 30. Arc : Les événements.\nRôle à l'écran : Chef.\n\nComment c'est fait : Le menu spécial est monté à part, sans toucher à la carte, et retiré tout seul le lendemain. Toute la série est publiée avec RapidoCMS, depuis une conversation.\n",
+        "legende": "Un soir, une cuisine. Demain, ce plat n'existe plus.\n\nUn soir, une cuisine, un décor. On montre le plat qui ne sera à la carte que ce soir-là.\n\n— — —\n\nCOMMENT CETTE VIDÉO A ÉTÉ FAITE\n\nUne équipe d'agents IA — la Brigade Végé-Fruitée — dirigée en écrivant. Sur cet épisode, c'est La Betterave qui ouvre le bal (MCP RapidoCMS) : elle programme les cinq réseaux aux bons créneaux. Les autres suivent : la voix, le montage, la relecture avant publication, la mise en ligne, le bilan.\n\nLa chaîne : Claude, branché sur quatre outils — FoodEatUp pour les données du restaurant, Higgsfield pour l'image, ElevenLabs pour la voix, RapidoCMS pour la publication.\n\nPour cet épisode : Le menu spécial est monté à part, sans toucher à la carte, et retiré tout seul le lendemain.\n\n— — —\n\n🔗 https://site.foodeatup.com/\n📞 06 14 18 92 25\n\nSaison 6 « L'orchestration du restaurant » — épisode 10 sur 30. Arc : Les événements. Rôle à l'écran : Chef.\n",
         "hashtags": [
           "foodeatup",
           "restaurateur",
+          "rapidocms",
+          "iarestaurant",
           "restaurant",
           "soiree",
           "sortie",
@@ -18649,7 +18896,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
         "motsCles": [
           "les événements",
           "annonce",
-          "restaurant la soiree a theme"
+          "communication restaurant",
+          "agent ia restaurant",
+          "rapidocms",
+          "mcp claude restaurant"
         ],
         "cta": "Réserver sa place",
         "titre": "La soirée à thème — Les événements | FoodEatUp"
@@ -18662,10 +18912,12 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
   "EP161": {
     "publications": {
       "facebook": {
-        "legende": "Dimanche, on ouvre à dix heures. Prends ton temps.\n\nLe buffet dressé au petit matin, la lumière du dimanche, les gens qui arrivent en famille.\n\n👉 Réserver le brunch : https://site.foodeatup.com/\nUne table ? 06 14 18 92 25",
+        "legende": "Dimanche, on ouvre à dix heures. Prends ton temps.\n\nLe buffet dressé au petit matin, la lumière du dimanche, les gens qui arrivent en famille.\n\nCette vidéo, personne ne l'a montée à la main : La Betterave s'en est chargée — elle programme les cinq réseaux aux bons créneaux — puis toute la brigade a suivi.\n\n👉 Réserver le brunch : https://site.foodeatup.com/\nUne table ? 06 14 18 92 25",
         "hashtags": [
           "foodeatup",
           "restaurateur",
+          "rapidocms",
+          "iarestaurant",
           "restaurant",
           "soiree",
           "sortie",
@@ -18674,15 +18926,20 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
         "motsCles": [
           "les événements",
           "annonce",
-          "restaurant le brunch du dimanche"
+          "communication restaurant",
+          "agent ia restaurant",
+          "rapidocms",
+          "mcp claude restaurant"
         ],
         "cta": "Réserver le brunch"
       },
       "instagram": {
-        "legende": "Dimanche, on ouvre à dix heures.\nPrends ton temps.\n\nLe buffet dressé au petit matin, la lumière du dimanche, les gens qui arrivent en famille.\n\nRéserver le brunch — lien en bio.\nUne table ? 06 14 18 92 25",
+        "legende": "Dimanche, on ouvre à dix heures.\nPrends ton temps.\n\nLe buffet dressé au petit matin, la lumière du dimanche, les gens qui arrivent en famille.\n\nFabriquée par La Betterave et les neuf autres. Aucun logiciel de montage.\nRéserver le brunch — lien en bio.\nUne table ? 06 14 18 92 25",
         "hashtags": [
           "foodeatup",
           "restaurateur",
+          "rapidocms",
+          "iarestaurant",
           "restaurant",
           "soiree",
           "sortie",
@@ -18691,15 +18948,20 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
         "motsCles": [
           "les événements",
           "annonce",
-          "restaurant le brunch du dimanche"
+          "communication restaurant",
+          "agent ia restaurant",
+          "rapidocms",
+          "mcp claude restaurant"
         ],
         "cta": "Réserver le brunch"
       },
       "tiktok": {
-        "legende": "Dimanche, on ouvre à dix heures.\nPrends ton temps.\n\nLe buffet dressé au petit matin, la lumière du dimanche, les gens qui arrivent en famille.",
+        "legende": "Dimanche, on ouvre à dix heures.\nPrends ton temps.\n\nLe buffet dressé au petit matin, la lumière du dimanche, les gens qui arrivent en famille.\n\nMontée par une IA. Sérieusement. (La Betterave, MCP RapidoCMS)",
         "hashtags": [
           "foodeatup",
           "restaurateur",
+          "rapidocms",
+          "iarestaurant",
           "restaurant",
           "soiree",
           "sortie",
@@ -18708,15 +18970,20 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
         "motsCles": [
           "les événements",
           "annonce",
-          "restaurant le brunch du dimanche"
+          "communication restaurant",
+          "agent ia restaurant",
+          "rapidocms",
+          "mcp claude restaurant"
         ],
         "cta": "Réserver le brunch"
       },
       "linkedin": {
-        "legende": "Dimanche, on ouvre à dix heures.\n\nLe buffet dressé au petit matin, la lumière du dimanche, les gens qui arrivent en famille.\n\nComment on le fait : Le brunch a son propre créneau et sa jauge : on ne survend pas.\n\nRéserver le brunch : https://site.foodeatup.com/\nUne table ? 06 14 18 92 25",
+        "legende": "Dimanche, on ouvre à dix heures.\n\nLe buffet dressé au petit matin, la lumière du dimanche, les gens qui arrivent en famille.\n\nComment c'est fabriqué, sans agence et sans community manager :\n\n• La Betterave (MCP RapidoCMS) — elle programme les cinq réseaux aux bons créneaux.\n• Puis la brigade : la voix, le montage, la relecture, la mise en ligne.\n• Le tout dirigé en écrivant, depuis Claude, branché sur quatre outils — FoodEatUp pour les données du restaurant, Higgsfield pour l'image, ElevenLabs pour la voix, RapidoCMS pour la publication.\n\nPour cet épisode : Le brunch a son propre créneau et sa jauge : on ne survend pas.\n\nRéserver le brunch : https://site.foodeatup.com/\nUne table ? 06 14 18 92 25",
         "hashtags": [
           "foodeatup",
           "restaurateur",
+          "rapidocms",
+          "iarestaurant",
           "restaurant",
           "soiree",
           "sortie",
@@ -18725,15 +18992,20 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
         "motsCles": [
           "les événements",
           "annonce",
-          "restaurant le brunch du dimanche"
+          "communication restaurant",
+          "agent ia restaurant",
+          "rapidocms",
+          "mcp claude restaurant"
         ],
         "cta": "Réserver le brunch"
       },
       "youtube": {
-        "legende": "Dimanche, on ouvre à dix heures. Prends ton temps.\n\nLe buffet dressé au petit matin, la lumière du dimanche, les gens qui arrivent en famille.\n\n— — —\n\n🔗 https://site.foodeatup.com/\n📞 06 14 18 92 25\n\nSaison 6 « L'orchestration du restaurant » — épisode 11 sur 30. Arc : Les événements.\nRôle à l'écran : Chef.\n\nComment c'est fait : Le brunch a son propre créneau et sa jauge : on ne survend pas. Toute la série est publiée avec RapidoCMS, depuis une conversation.\n",
+        "legende": "Dimanche, on ouvre à dix heures. Prends ton temps.\n\nLe buffet dressé au petit matin, la lumière du dimanche, les gens qui arrivent en famille.\n\n— — —\n\nCOMMENT CETTE VIDÉO A ÉTÉ FAITE\n\nUne équipe d'agents IA — la Brigade Végé-Fruitée — dirigée en écrivant. Sur cet épisode, c'est La Betterave qui ouvre le bal (MCP RapidoCMS) : elle programme les cinq réseaux aux bons créneaux. Les autres suivent : la voix, le montage, la relecture avant publication, la mise en ligne, le bilan.\n\nLa chaîne : Claude, branché sur quatre outils — FoodEatUp pour les données du restaurant, Higgsfield pour l'image, ElevenLabs pour la voix, RapidoCMS pour la publication.\n\nPour cet épisode : Le brunch a son propre créneau et sa jauge : on ne survend pas.\n\n— — —\n\n🔗 https://site.foodeatup.com/\n📞 06 14 18 92 25\n\nSaison 6 « L'orchestration du restaurant » — épisode 11 sur 30. Arc : Les événements. Rôle à l'écran : Chef.\n",
         "hashtags": [
           "foodeatup",
           "restaurateur",
+          "rapidocms",
+          "iarestaurant",
           "restaurant",
           "soiree",
           "sortie",
@@ -18742,7 +19014,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
         "motsCles": [
           "les événements",
           "annonce",
-          "restaurant le brunch du dimanche"
+          "communication restaurant",
+          "agent ia restaurant",
+          "rapidocms",
+          "mcp claude restaurant"
         ],
         "cta": "Réserver le brunch",
         "titre": "Le brunch du dimanche — Les événements | FoodEatUp"
@@ -18755,10 +19030,12 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
   "EP162": {
     "publications": {
       "facebook": {
-        "legende": "Toute la salle, rien que vous. Ça se demande, et c'est possible.\n\nLa salle vide, montée pour un groupe. Ce qu'on peut y faire, pour combien de personnes.\n\n👉 Demander un devis : https://site.foodeatup.com/\nUne table ? 06 14 18 92 25",
+        "legende": "Toute la salle, rien que vous. Ça se demande, et c'est possible.\n\nLa salle vide, montée pour un groupe. Ce qu'on peut y faire, pour combien de personnes.\n\nCette vidéo, personne ne l'a montée à la main : La Betterave s'en est chargée — elle programme les cinq réseaux aux bons créneaux — puis toute la brigade a suivi.\n\n👉 Demander un devis : https://site.foodeatup.com/\nUne table ? 06 14 18 92 25",
         "hashtags": [
           "foodeatup",
           "restaurateur",
+          "rapidocms",
+          "iarestaurant",
           "restaurant",
           "soiree",
           "sortie",
@@ -18767,15 +19044,20 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
         "motsCles": [
           "les événements",
           "offre",
-          "restaurant privatiser la salle"
+          "communication restaurant",
+          "agent ia restaurant",
+          "rapidocms",
+          "mcp claude restaurant"
         ],
         "cta": "Demander un devis"
       },
       "instagram": {
-        "legende": "Toute la salle, rien que vous.\nÇa se demande, et c'est possible.\n\nLa salle vide, montée pour un groupe. Ce qu'on peut y faire, pour combien de personnes.\n\nDemander un devis — lien en bio.\nUne table ? 06 14 18 92 25",
+        "legende": "Toute la salle, rien que vous.\nÇa se demande, et c'est possible.\n\nLa salle vide, montée pour un groupe. Ce qu'on peut y faire, pour combien de personnes.\n\nFabriquée par La Betterave et les neuf autres. Aucun logiciel de montage.\nDemander un devis — lien en bio.\nUne table ? 06 14 18 92 25",
         "hashtags": [
           "foodeatup",
           "restaurateur",
+          "rapidocms",
+          "iarestaurant",
           "restaurant",
           "soiree",
           "sortie",
@@ -18784,15 +19066,20 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
         "motsCles": [
           "les événements",
           "offre",
-          "restaurant privatiser la salle"
+          "communication restaurant",
+          "agent ia restaurant",
+          "rapidocms",
+          "mcp claude restaurant"
         ],
         "cta": "Demander un devis"
       },
       "tiktok": {
-        "legende": "Toute la salle, rien que vous.\nÇa se demande, et c'est possible.\n\nLa salle vide, montée pour un groupe.",
+        "legende": "Toute la salle, rien que vous.\nÇa se demande, et c'est possible.\n\nLa salle vide, montée pour un groupe.\n\nMontée par une IA. Sérieusement. (La Betterave, MCP RapidoCMS)",
         "hashtags": [
           "foodeatup",
           "restaurateur",
+          "rapidocms",
+          "iarestaurant",
           "restaurant",
           "soiree",
           "sortie",
@@ -18801,15 +19088,20 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
         "motsCles": [
           "les événements",
           "offre",
-          "restaurant privatiser la salle"
+          "communication restaurant",
+          "agent ia restaurant",
+          "rapidocms",
+          "mcp claude restaurant"
         ],
         "cta": "Demander un devis"
       },
       "linkedin": {
-        "legende": "Toute la salle, rien que vous.\n\nLa salle vide, montée pour un groupe. Ce qu'on peut y faire, pour combien de personnes.\n\nComment on le fait : La demande de devis arrive dans le logiciel avec la date et le nombre de couverts.\n\nDemander un devis : https://site.foodeatup.com/\nUne table ? 06 14 18 92 25",
+        "legende": "Toute la salle, rien que vous.\n\nLa salle vide, montée pour un groupe. Ce qu'on peut y faire, pour combien de personnes.\n\nComment c'est fabriqué, sans agence et sans community manager :\n\n• La Betterave (MCP RapidoCMS) — elle programme les cinq réseaux aux bons créneaux.\n• Puis la brigade : la voix, le montage, la relecture, la mise en ligne.\n• Le tout dirigé en écrivant, depuis Claude, branché sur quatre outils — FoodEatUp pour les données du restaurant, Higgsfield pour l'image, ElevenLabs pour la voix, RapidoCMS pour la publication.\n\nPour cet épisode : La demande de devis arrive dans le logiciel avec la date et le nombre de couverts.\n\nDemander un devis : https://site.foodeatup.com/\nUne table ? 06 14 18 92 25",
         "hashtags": [
           "foodeatup",
           "restaurateur",
+          "rapidocms",
+          "iarestaurant",
           "restaurant",
           "soiree",
           "sortie",
@@ -18818,15 +19110,20 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
         "motsCles": [
           "les événements",
           "offre",
-          "restaurant privatiser la salle"
+          "communication restaurant",
+          "agent ia restaurant",
+          "rapidocms",
+          "mcp claude restaurant"
         ],
         "cta": "Demander un devis"
       },
       "youtube": {
-        "legende": "Toute la salle, rien que vous. Ça se demande, et c'est possible.\n\nLa salle vide, montée pour un groupe. Ce qu'on peut y faire, pour combien de personnes.\n\n— — —\n\n🔗 https://site.foodeatup.com/\n📞 06 14 18 92 25\n\nSaison 6 « L'orchestration du restaurant » — épisode 12 sur 30. Arc : Les événements.\nRôle à l'écran : Directeur.\n\nComment c'est fait : La demande de devis arrive dans le logiciel avec la date et le nombre de couverts. Toute la série est publiée avec RapidoCMS, depuis une conversation.\n",
+        "legende": "Toute la salle, rien que vous. Ça se demande, et c'est possible.\n\nLa salle vide, montée pour un groupe. Ce qu'on peut y faire, pour combien de personnes.\n\n— — —\n\nCOMMENT CETTE VIDÉO A ÉTÉ FAITE\n\nUne équipe d'agents IA — la Brigade Végé-Fruitée — dirigée en écrivant. Sur cet épisode, c'est La Betterave qui ouvre le bal (MCP RapidoCMS) : elle programme les cinq réseaux aux bons créneaux. Les autres suivent : la voix, le montage, la relecture avant publication, la mise en ligne, le bilan.\n\nLa chaîne : Claude, branché sur quatre outils — FoodEatUp pour les données du restaurant, Higgsfield pour l'image, ElevenLabs pour la voix, RapidoCMS pour la publication.\n\nPour cet épisode : La demande de devis arrive dans le logiciel avec la date et le nombre de couverts.\n\n— — —\n\n🔗 https://site.foodeatup.com/\n📞 06 14 18 92 25\n\nSaison 6 « L'orchestration du restaurant » — épisode 12 sur 30. Arc : Les événements. Rôle à l'écran : Directeur.\n",
         "hashtags": [
           "foodeatup",
           "restaurateur",
+          "rapidocms",
+          "iarestaurant",
           "restaurant",
           "soiree",
           "sortie",
@@ -18835,7 +19132,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
         "motsCles": [
           "les événements",
           "offre",
-          "restaurant privatiser la salle"
+          "communication restaurant",
+          "agent ia restaurant",
+          "rapidocms",
+          "mcp claude restaurant"
         ],
         "cta": "Demander un devis",
         "titre": "Privatiser la salle — Les événements | FoodEatUp"
@@ -18848,10 +19148,12 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
   "EP163": {
     "publications": {
       "facebook": {
-        "legende": "Six heures du matin. Ton dîner a commencé il y a quatorze heures.\n\nLe restaurant avant tout le monde : les chaises sur les tables, le premier café, la première livraison.\n\n👉 Découvrir la maison : https://site.foodeatup.com/\nUne table ? 06 14 18 92 25",
+        "legende": "Six heures du matin. Ton dîner a commencé il y a quatorze heures.\n\nLe restaurant avant tout le monde : les chaises sur les tables, le premier café, la première livraison.\n\nCette vidéo, personne ne l'a montée à la main : L'Oignon s'en est chargée — il ouvre les livres : ventes, stock, réservations — puis toute la brigade a suivi.\n\n👉 Découvrir la maison : https://site.foodeatup.com/\nUne table ? 06 14 18 92 25",
         "hashtags": [
           "foodeatup",
           "restaurateur",
+          "rapidocms",
+          "iarestaurant",
           "restaurant",
           "coulisses",
           "metier",
@@ -18860,15 +19162,20 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
         "motsCles": [
           "les coulisses",
           "coulisse",
-          "restaurant six heures du matin"
+          "communication restaurant",
+          "agent ia restaurant",
+          "rapidocms",
+          "mcp claude restaurant"
         ],
         "cta": "Découvrir la maison"
       },
       "instagram": {
-        "legende": "Six heures du matin.\nTon dîner a commencé il y a quatorze heures.\n\nLe restaurant avant tout le monde : les chaises sur les tables, le premier café, la première livraison.\n\nDécouvrir la maison — lien en bio.\nUne table ? 06 14 18 92 25",
+        "legende": "Six heures du matin.\nTon dîner a commencé il y a quatorze heures.\n\nLe restaurant avant tout le monde : les chaises sur les tables, le premier café, la première livraison.\n\nFabriquée par L'Oignon et les neuf autres. Aucun logiciel de montage.\nDécouvrir la maison — lien en bio.\nUne table ? 06 14 18 92 25",
         "hashtags": [
           "foodeatup",
           "restaurateur",
+          "rapidocms",
+          "iarestaurant",
           "restaurant",
           "coulisses",
           "metier",
@@ -18877,15 +19184,20 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
         "motsCles": [
           "les coulisses",
           "coulisse",
-          "restaurant six heures du matin"
+          "communication restaurant",
+          "agent ia restaurant",
+          "rapidocms",
+          "mcp claude restaurant"
         ],
         "cta": "Découvrir la maison"
       },
       "tiktok": {
-        "legende": "Six heures du matin.\nTon dîner a commencé il y a quatorze heures.\n\nLe restaurant avant tout le monde : les chaises sur les tables, le premier café, la première livraison.",
+        "legende": "Six heures du matin.\nTon dîner a commencé il y a quatorze heures.\n\nLe restaurant avant tout le monde : les chaises sur les tables, le premier café, la première livraison.\n\nMontée par une IA. Sérieusement. (L'Oignon, MCP FoodEatUp)",
         "hashtags": [
           "foodeatup",
           "restaurateur",
+          "rapidocms",
+          "iarestaurant",
           "restaurant",
           "coulisses",
           "metier",
@@ -18894,15 +19206,20 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
         "motsCles": [
           "les coulisses",
           "coulisse",
-          "restaurant six heures du matin"
+          "communication restaurant",
+          "agent ia restaurant",
+          "rapidocms",
+          "mcp claude restaurant"
         ],
         "cta": "Découvrir la maison"
       },
       "linkedin": {
-        "legende": "Six heures du matin.\n\nLe restaurant avant tout le monde : les chaises sur les tables, le premier café, la première livraison.\n\nComment on le fait : Le brief du jour est déjà affiché : couverts prévus, productions à lancer, alertes de stock.\n\nDécouvrir la maison : https://site.foodeatup.com/\nUne table ? 06 14 18 92 25",
+        "legende": "Six heures du matin.\n\nLe restaurant avant tout le monde : les chaises sur les tables, le premier café, la première livraison.\n\nComment c'est fabriqué, sans agence et sans community manager :\n\n• L'Oignon (MCP FoodEatUp) — il ouvre les livres : ventes, stock, réservations.\n• Puis la brigade : la voix, le montage, la relecture, la mise en ligne.\n• Le tout dirigé en écrivant, depuis Claude, branché sur quatre outils — FoodEatUp pour les données du restaurant, Higgsfield pour l'image, ElevenLabs pour la voix, RapidoCMS pour la publication.\n\nPour cet épisode : Le brief du jour est déjà affiché : couverts prévus, productions à lancer, alertes de stock.\n\nDécouvrir la maison : https://site.foodeatup.com/\nUne table ? 06 14 18 92 25",
         "hashtags": [
           "foodeatup",
           "restaurateur",
+          "rapidocms",
+          "iarestaurant",
           "restaurant",
           "coulisses",
           "metier",
@@ -18911,15 +19228,20 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
         "motsCles": [
           "les coulisses",
           "coulisse",
-          "restaurant six heures du matin"
+          "communication restaurant",
+          "agent ia restaurant",
+          "rapidocms",
+          "mcp claude restaurant"
         ],
         "cta": "Découvrir la maison"
       },
       "youtube": {
-        "legende": "Six heures du matin. Ton dîner a commencé il y a quatorze heures.\n\nLe restaurant avant tout le monde : les chaises sur les tables, le premier café, la première livraison.\n\n— — —\n\n🔗 https://site.foodeatup.com/\n📞 06 14 18 92 25\n\nSaison 6 « L'orchestration du restaurant » — épisode 13 sur 30. Arc : Les coulisses.\nRôle à l'écran : Chef.\n\nComment c'est fait : Le brief du jour est déjà affiché : couverts prévus, productions à lancer, alertes de stock. Toute la série est publiée avec RapidoCMS, depuis une conversation.\n",
+        "legende": "Six heures du matin. Ton dîner a commencé il y a quatorze heures.\n\nLe restaurant avant tout le monde : les chaises sur les tables, le premier café, la première livraison.\n\n— — —\n\nCOMMENT CETTE VIDÉO A ÉTÉ FAITE\n\nUne équipe d'agents IA — la Brigade Végé-Fruitée — dirigée en écrivant. Sur cet épisode, c'est L'Oignon qui ouvre le bal (MCP FoodEatUp) : il ouvre les livres : ventes, stock, réservations. Les autres suivent : la voix, le montage, la relecture avant publication, la mise en ligne, le bilan.\n\nLa chaîne : Claude, branché sur quatre outils — FoodEatUp pour les données du restaurant, Higgsfield pour l'image, ElevenLabs pour la voix, RapidoCMS pour la publication.\n\nPour cet épisode : Le brief du jour est déjà affiché : couverts prévus, productions à lancer, alertes de stock.\n\n— — —\n\n🔗 https://site.foodeatup.com/\n📞 06 14 18 92 25\n\nSaison 6 « L'orchestration du restaurant » — épisode 13 sur 30. Arc : Les coulisses. Rôle à l'écran : Chef.\n",
         "hashtags": [
           "foodeatup",
           "restaurateur",
+          "rapidocms",
+          "iarestaurant",
           "restaurant",
           "coulisses",
           "metier",
@@ -18928,7 +19250,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
         "motsCles": [
           "les coulisses",
           "coulisse",
-          "restaurant six heures du matin"
+          "communication restaurant",
+          "agent ia restaurant",
+          "rapidocms",
+          "mcp claude restaurant"
         ],
         "cta": "Découvrir la maison",
         "titre": "Six heures du matin — Les coulisses | FoodEatUp"
@@ -18941,10 +19266,12 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
   "EP164": {
     "publications": {
       "facebook": {
-        "legende": "À cinquante kilomètres d'ici. C'est lui qui fait la moitié du travail.\n\nChez le maraîcher ou l'éleveur, à cinquante kilomètres. On montre la personne, pas le logo.\n\n👉 Voir la carte : https://site.foodeatup.com/\nUne table ? 06 14 18 92 25",
+        "legende": "À cinquante kilomètres d'ici. C'est lui qui fait la moitié du travail.\n\nChez le maraîcher ou l'éleveur, à cinquante kilomètres. On montre la personne, pas le logo.\n\nCette vidéo, personne ne l'a montée à la main : L'Oignon s'en est chargée — il ouvre les livres : ventes, stock, réservations — puis toute la brigade a suivi.\n\n👉 Voir la carte : https://site.foodeatup.com/\nUne table ? 06 14 18 92 25",
         "hashtags": [
           "foodeatup",
           "restaurateur",
+          "rapidocms",
+          "iarestaurant",
           "restaurant",
           "coulisses",
           "metier",
@@ -18953,15 +19280,20 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
         "motsCles": [
           "les coulisses",
           "portrait",
-          "restaurant le producteur"
+          "communication restaurant",
+          "agent ia restaurant",
+          "rapidocms",
+          "mcp claude restaurant"
         ],
         "cta": "Voir la carte"
       },
       "instagram": {
-        "legende": "À cinquante kilomètres d'ici.\nC'est lui qui fait la moitié du travail.\n\nChez le maraîcher ou l'éleveur, à cinquante kilomètres. On montre la personne, pas le logo.\n\nVoir la carte — lien en bio.\nUne table ? 06 14 18 92 25",
+        "legende": "À cinquante kilomètres d'ici.\nC'est lui qui fait la moitié du travail.\n\nChez le maraîcher ou l'éleveur, à cinquante kilomètres. On montre la personne, pas le logo.\n\nFabriquée par L'Oignon et les neuf autres. Aucun logiciel de montage.\nVoir la carte — lien en bio.\nUne table ? 06 14 18 92 25",
         "hashtags": [
           "foodeatup",
           "restaurateur",
+          "rapidocms",
+          "iarestaurant",
           "restaurant",
           "coulisses",
           "metier",
@@ -18970,15 +19302,20 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
         "motsCles": [
           "les coulisses",
           "portrait",
-          "restaurant le producteur"
+          "communication restaurant",
+          "agent ia restaurant",
+          "rapidocms",
+          "mcp claude restaurant"
         ],
         "cta": "Voir la carte"
       },
       "tiktok": {
-        "legende": "À cinquante kilomètres d'ici.\nC'est lui qui fait la moitié du travail.\n\nChez le maraîcher ou l'éleveur, à cinquante kilomètres.",
+        "legende": "À cinquante kilomètres d'ici.\nC'est lui qui fait la moitié du travail.\n\nChez le maraîcher ou l'éleveur, à cinquante kilomètres.\n\nMontée par une IA. Sérieusement. (L'Oignon, MCP FoodEatUp)",
         "hashtags": [
           "foodeatup",
           "restaurateur",
+          "rapidocms",
+          "iarestaurant",
           "restaurant",
           "coulisses",
           "metier",
@@ -18987,15 +19324,20 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
         "motsCles": [
           "les coulisses",
           "portrait",
-          "restaurant le producteur"
+          "communication restaurant",
+          "agent ia restaurant",
+          "rapidocms",
+          "mcp claude restaurant"
         ],
         "cta": "Voir la carte"
       },
       "linkedin": {
-        "legende": "À cinquante kilomètres d'ici.\n\nChez le maraîcher ou l'éleveur, à cinquante kilomètres. On montre la personne, pas le logo.\n\nComment on le fait : Le fournisseur est dans la base : les commandes et les prix passent par là toute l'année.\n\nVoir la carte : https://site.foodeatup.com/\nUne table ? 06 14 18 92 25",
+        "legende": "À cinquante kilomètres d'ici.\n\nChez le maraîcher ou l'éleveur, à cinquante kilomètres. On montre la personne, pas le logo.\n\nComment c'est fabriqué, sans agence et sans community manager :\n\n• L'Oignon (MCP FoodEatUp) — il ouvre les livres : ventes, stock, réservations.\n• Puis la brigade : la voix, le montage, la relecture, la mise en ligne.\n• Le tout dirigé en écrivant, depuis Claude, branché sur quatre outils — FoodEatUp pour les données du restaurant, Higgsfield pour l'image, ElevenLabs pour la voix, RapidoCMS pour la publication.\n\nPour cet épisode : Le fournisseur est dans la base : les commandes et les prix passent par là toute l'année.\n\nVoir la carte : https://site.foodeatup.com/\nUne table ? 06 14 18 92 25",
         "hashtags": [
           "foodeatup",
           "restaurateur",
+          "rapidocms",
+          "iarestaurant",
           "restaurant",
           "coulisses",
           "metier",
@@ -19004,15 +19346,20 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
         "motsCles": [
           "les coulisses",
           "portrait",
-          "restaurant le producteur"
+          "communication restaurant",
+          "agent ia restaurant",
+          "rapidocms",
+          "mcp claude restaurant"
         ],
         "cta": "Voir la carte"
       },
       "youtube": {
-        "legende": "À cinquante kilomètres d'ici. C'est lui qui fait la moitié du travail.\n\nChez le maraîcher ou l'éleveur, à cinquante kilomètres. On montre la personne, pas le logo.\n\n— — —\n\n🔗 https://site.foodeatup.com/\n📞 06 14 18 92 25\n\nSaison 6 « L'orchestration du restaurant » — épisode 14 sur 30. Arc : Les coulisses.\nRôle à l'écran : Chef.\n\nComment c'est fait : Le fournisseur est dans la base : les commandes et les prix passent par là toute l'année. Toute la série est publiée avec RapidoCMS, depuis une conversation.\n",
+        "legende": "À cinquante kilomètres d'ici. C'est lui qui fait la moitié du travail.\n\nChez le maraîcher ou l'éleveur, à cinquante kilomètres. On montre la personne, pas le logo.\n\n— — —\n\nCOMMENT CETTE VIDÉO A ÉTÉ FAITE\n\nUne équipe d'agents IA — la Brigade Végé-Fruitée — dirigée en écrivant. Sur cet épisode, c'est L'Oignon qui ouvre le bal (MCP FoodEatUp) : il ouvre les livres : ventes, stock, réservations. Les autres suivent : la voix, le montage, la relecture avant publication, la mise en ligne, le bilan.\n\nLa chaîne : Claude, branché sur quatre outils — FoodEatUp pour les données du restaurant, Higgsfield pour l'image, ElevenLabs pour la voix, RapidoCMS pour la publication.\n\nPour cet épisode : Le fournisseur est dans la base : les commandes et les prix passent par là toute l'année.\n\n— — —\n\n🔗 https://site.foodeatup.com/\n📞 06 14 18 92 25\n\nSaison 6 « L'orchestration du restaurant » — épisode 14 sur 30. Arc : Les coulisses. Rôle à l'écran : Chef.\n",
         "hashtags": [
           "foodeatup",
           "restaurateur",
+          "rapidocms",
+          "iarestaurant",
           "restaurant",
           "coulisses",
           "metier",
@@ -19021,7 +19368,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
         "motsCles": [
           "les coulisses",
           "portrait",
-          "restaurant le producteur"
+          "communication restaurant",
+          "agent ia restaurant",
+          "rapidocms",
+          "mcp claude restaurant"
         ],
         "cta": "Voir la carte",
         "titre": "Le producteur — Les coulisses | FoodEatUp"
@@ -19034,10 +19384,12 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
   "EP165": {
     "publications": {
       "facebook": {
-        "legende": "Elle t'accueille depuis quatre ans. Tu reviens pour elle, pas pour la déco.\n\nUne minute avec la personne qui accueille : depuis quand, ce qu'elle préfère servir, sa table préférée.\n\n👉 Réserver une table : https://site.foodeatup.com/\nUne table ? 06 14 18 92 25",
+        "legende": "Elle t'accueille depuis quatre ans. Tu reviens pour elle, pas pour la déco.\n\nUne minute avec la personne qui accueille : depuis quand, ce qu'elle préfère servir, sa table préférée.\n\nCette vidéo, personne ne l'a montée à la main : L'Oignon s'en est chargée — il ouvre les livres : ventes, stock, réservations — puis toute la brigade a suivi.\n\n👉 Réserver une table : https://site.foodeatup.com/\nUne table ? 06 14 18 92 25",
         "hashtags": [
           "foodeatup",
           "restaurateur",
+          "rapidocms",
+          "iarestaurant",
           "restaurant",
           "coulisses",
           "metier",
@@ -19046,15 +19398,20 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
         "motsCles": [
           "les coulisses",
           "portrait",
-          "restaurant portrait d un serveur"
+          "communication restaurant",
+          "agent ia restaurant",
+          "rapidocms",
+          "mcp claude restaurant"
         ],
         "cta": "Réserver une table"
       },
       "instagram": {
-        "legende": "Elle t'accueille depuis quatre ans.\nTu reviens pour elle, pas pour la déco.\n\nUne minute avec la personne qui accueille : depuis quand, ce qu'elle préfère servir, sa table préférée.\n\nRéserver une table — lien en bio.\nUne table ? 06 14 18 92 25",
+        "legende": "Elle t'accueille depuis quatre ans.\nTu reviens pour elle, pas pour la déco.\n\nUne minute avec la personne qui accueille : depuis quand, ce qu'elle préfère servir, sa table préférée.\n\nFabriquée par L'Oignon et les neuf autres. Aucun logiciel de montage.\nRéserver une table — lien en bio.\nUne table ? 06 14 18 92 25",
         "hashtags": [
           "foodeatup",
           "restaurateur",
+          "rapidocms",
+          "iarestaurant",
           "restaurant",
           "coulisses",
           "metier",
@@ -19063,15 +19420,20 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
         "motsCles": [
           "les coulisses",
           "portrait",
-          "restaurant portrait d un serveur"
+          "communication restaurant",
+          "agent ia restaurant",
+          "rapidocms",
+          "mcp claude restaurant"
         ],
         "cta": "Réserver une table"
       },
       "tiktok": {
-        "legende": "Elle t'accueille depuis quatre ans.\nTu reviens pour elle, pas pour la déco.\n\nUne minute avec la personne qui accueille : depuis quand, ce qu'elle préfère servir, sa table préférée.",
+        "legende": "Elle t'accueille depuis quatre ans.\nTu reviens pour elle, pas pour la déco.\n\nUne minute avec la personne qui accueille : depuis quand, ce qu'elle préfère servir, sa table préférée.\n\nMontée par une IA. Sérieusement. (L'Oignon, MCP FoodEatUp)",
         "hashtags": [
           "foodeatup",
           "restaurateur",
+          "rapidocms",
+          "iarestaurant",
           "restaurant",
           "coulisses",
           "metier",
@@ -19080,15 +19442,20 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
         "motsCles": [
           "les coulisses",
           "portrait",
-          "restaurant portrait d un serveur"
+          "communication restaurant",
+          "agent ia restaurant",
+          "rapidocms",
+          "mcp claude restaurant"
         ],
         "cta": "Réserver une table"
       },
       "linkedin": {
-        "legende": "Elle t'accueille depuis quatre ans.\n\nUne minute avec la personne qui accueille : depuis quand, ce qu'elle préfère servir, sa table préférée.\n\nComment on le fait : Son planning et ses heures sont posés ; elle sait sa semaine à l'avance, ça se voit à l'écran.\n\nRéserver une table : https://site.foodeatup.com/\nUne table ? 06 14 18 92 25",
+        "legende": "Elle t'accueille depuis quatre ans.\n\nUne minute avec la personne qui accueille : depuis quand, ce qu'elle préfère servir, sa table préférée.\n\nComment c'est fabriqué, sans agence et sans community manager :\n\n• L'Oignon (MCP FoodEatUp) — il ouvre les livres : ventes, stock, réservations.\n• Puis la brigade : la voix, le montage, la relecture, la mise en ligne.\n• Le tout dirigé en écrivant, depuis Claude, branché sur quatre outils — FoodEatUp pour les données du restaurant, Higgsfield pour l'image, ElevenLabs pour la voix, RapidoCMS pour la publication.\n\nPour cet épisode : Son planning et ses heures sont posés ; elle sait sa semaine à l'avance, ça se voit à l'écran.\n\nRéserver une table : https://site.foodeatup.com/\nUne table ? 06 14 18 92 25",
         "hashtags": [
           "foodeatup",
           "restaurateur",
+          "rapidocms",
+          "iarestaurant",
           "restaurant",
           "coulisses",
           "metier",
@@ -19097,15 +19464,20 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
         "motsCles": [
           "les coulisses",
           "portrait",
-          "restaurant portrait d un serveur"
+          "communication restaurant",
+          "agent ia restaurant",
+          "rapidocms",
+          "mcp claude restaurant"
         ],
         "cta": "Réserver une table"
       },
       "youtube": {
-        "legende": "Elle t'accueille depuis quatre ans. Tu reviens pour elle, pas pour la déco.\n\nUne minute avec la personne qui accueille : depuis quand, ce qu'elle préfère servir, sa table préférée.\n\n— — —\n\n🔗 https://site.foodeatup.com/\n📞 06 14 18 92 25\n\nSaison 6 « L'orchestration du restaurant » — épisode 15 sur 30. Arc : Les coulisses.\nRôle à l'écran : Serveur.\n\nComment c'est fait : Son planning et ses heures sont posés ; elle sait sa semaine à l'avance, ça se voit à l'écran. Toute la série est publiée avec RapidoCMS, depuis une conversation.\n",
+        "legende": "Elle t'accueille depuis quatre ans. Tu reviens pour elle, pas pour la déco.\n\nUne minute avec la personne qui accueille : depuis quand, ce qu'elle préfère servir, sa table préférée.\n\n— — —\n\nCOMMENT CETTE VIDÉO A ÉTÉ FAITE\n\nUne équipe d'agents IA — la Brigade Végé-Fruitée — dirigée en écrivant. Sur cet épisode, c'est L'Oignon qui ouvre le bal (MCP FoodEatUp) : il ouvre les livres : ventes, stock, réservations. Les autres suivent : la voix, le montage, la relecture avant publication, la mise en ligne, le bilan.\n\nLa chaîne : Claude, branché sur quatre outils — FoodEatUp pour les données du restaurant, Higgsfield pour l'image, ElevenLabs pour la voix, RapidoCMS pour la publication.\n\nPour cet épisode : Son planning et ses heures sont posés ; elle sait sa semaine à l'avance, ça se voit à l'écran.\n\n— — —\n\n🔗 https://site.foodeatup.com/\n📞 06 14 18 92 25\n\nSaison 6 « L'orchestration du restaurant » — épisode 15 sur 30. Arc : Les coulisses. Rôle à l'écran : Serveur.\n",
         "hashtags": [
           "foodeatup",
           "restaurateur",
+          "rapidocms",
+          "iarestaurant",
           "restaurant",
           "coulisses",
           "metier",
@@ -19114,7 +19486,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
         "motsCles": [
           "les coulisses",
           "portrait",
-          "restaurant portrait d un serveur"
+          "communication restaurant",
+          "agent ia restaurant",
+          "rapidocms",
+          "mcp claude restaurant"
         ],
         "cta": "Réserver une table",
         "titre": "Portrait d'un serveur — Les coulisses | FoodEatUp"
@@ -19127,10 +19502,12 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
   "EP166": {
     "publications": {
       "facebook": {
-        "legende": "Vingt heures quinze. Aucune musique. C'est le vrai son.\n\nVingt heures quinze. Les tickets, les voix, les assiettes qui partent. Aucune musique, le son réel.\n\n👉 Réserver une table : https://site.foodeatup.com/\nUne table ? 06 14 18 92 25",
+        "legende": "Vingt heures quinze. Aucune musique. C'est le vrai son.\n\nVingt heures quinze. Les tickets, les voix, les assiettes qui partent. Aucune musique, le son réel.\n\nCette vidéo, personne ne l'a montée à la main : L'Oignon s'en est chargée — il ouvre les livres : ventes, stock, réservations — puis toute la brigade a suivi.\n\n👉 Réserver une table : https://site.foodeatup.com/\nUne table ? 06 14 18 92 25",
         "hashtags": [
           "foodeatup",
           "restaurateur",
+          "rapidocms",
+          "iarestaurant",
           "restaurant",
           "coulisses",
           "metier",
@@ -19139,15 +19516,20 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
         "motsCles": [
           "les coulisses",
           "coulisse",
-          "restaurant le coup de feu vu de la cuisine"
+          "communication restaurant",
+          "agent ia restaurant",
+          "rapidocms",
+          "mcp claude restaurant"
         ],
         "cta": "Réserver une table"
       },
       "instagram": {
-        "legende": "Vingt heures quinze.\nAucune musique. C'est le vrai son.\n\nVingt heures quinze. Les tickets, les voix, les assiettes qui partent. Aucune musique, le son réel.\n\nRéserver une table — lien en bio.\nUne table ? 06 14 18 92 25",
+        "legende": "Vingt heures quinze.\nAucune musique. C'est le vrai son.\n\nVingt heures quinze. Les tickets, les voix, les assiettes qui partent. Aucune musique, le son réel.\n\nFabriquée par L'Oignon et les neuf autres. Aucun logiciel de montage.\nRéserver une table — lien en bio.\nUne table ? 06 14 18 92 25",
         "hashtags": [
           "foodeatup",
           "restaurateur",
+          "rapidocms",
+          "iarestaurant",
           "restaurant",
           "coulisses",
           "metier",
@@ -19156,15 +19538,20 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
         "motsCles": [
           "les coulisses",
           "coulisse",
-          "restaurant le coup de feu vu de la cuisine"
+          "communication restaurant",
+          "agent ia restaurant",
+          "rapidocms",
+          "mcp claude restaurant"
         ],
         "cta": "Réserver une table"
       },
       "tiktok": {
-        "legende": "Vingt heures quinze.\nAucune musique. C'est le vrai son.\n\nVingt heures quinze.",
+        "legende": "Vingt heures quinze.\nAucune musique. C'est le vrai son.\n\nVingt heures quinze.\n\nMontée par une IA. Sérieusement. (L'Oignon, MCP FoodEatUp)",
         "hashtags": [
           "foodeatup",
           "restaurateur",
+          "rapidocms",
+          "iarestaurant",
           "restaurant",
           "coulisses",
           "metier",
@@ -19173,15 +19560,20 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
         "motsCles": [
           "les coulisses",
           "coulisse",
-          "restaurant le coup de feu vu de la cuisine"
+          "communication restaurant",
+          "agent ia restaurant",
+          "rapidocms",
+          "mcp claude restaurant"
         ],
         "cta": "Réserver une table"
       },
       "linkedin": {
-        "legende": "Vingt heures quinze.\n\nVingt heures quinze. Les tickets, les voix, les assiettes qui partent. Aucune musique, le son réel.\n\nComment on le fait : Les commandes arrivent à l'écran de cuisine dans l'ordre, par poste. C'est ce qui rend la scène regardable.\n\nRéserver une table : https://site.foodeatup.com/\nUne table ? 06 14 18 92 25",
+        "legende": "Vingt heures quinze.\n\nVingt heures quinze. Les tickets, les voix, les assiettes qui partent. Aucune musique, le son réel.\n\nComment c'est fabriqué, sans agence et sans community manager :\n\n• L'Oignon (MCP FoodEatUp) — il ouvre les livres : ventes, stock, réservations.\n• Puis la brigade : la voix, le montage, la relecture, la mise en ligne.\n• Le tout dirigé en écrivant, depuis Claude, branché sur quatre outils — FoodEatUp pour les données du restaurant, Higgsfield pour l'image, ElevenLabs pour la voix, RapidoCMS pour la publication.\n\nPour cet épisode : Les commandes arrivent à l'écran de cuisine dans l'ordre, par poste. C'est ce qui rend la scène regardable.\n\nRéserver une table : https://site.foodeatup.com/\nUne table ? 06 14 18 92 25",
         "hashtags": [
           "foodeatup",
           "restaurateur",
+          "rapidocms",
+          "iarestaurant",
           "restaurant",
           "coulisses",
           "metier",
@@ -19190,15 +19582,20 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
         "motsCles": [
           "les coulisses",
           "coulisse",
-          "restaurant le coup de feu vu de la cuisine"
+          "communication restaurant",
+          "agent ia restaurant",
+          "rapidocms",
+          "mcp claude restaurant"
         ],
         "cta": "Réserver une table"
       },
       "youtube": {
-        "legende": "Vingt heures quinze. Aucune musique. C'est le vrai son.\n\nVingt heures quinze. Les tickets, les voix, les assiettes qui partent. Aucune musique, le son réel.\n\n— — —\n\n🔗 https://site.foodeatup.com/\n📞 06 14 18 92 25\n\nSaison 6 « L'orchestration du restaurant » — épisode 16 sur 30. Arc : Les coulisses.\nRôle à l'écran : Chef.\n\nComment c'est fait : Les commandes arrivent à l'écran de cuisine dans l'ordre, par poste. C'est ce qui rend la scène regardable. Toute la série est publiée avec RapidoCMS, depuis une conversation.\n",
+        "legende": "Vingt heures quinze. Aucune musique. C'est le vrai son.\n\nVingt heures quinze. Les tickets, les voix, les assiettes qui partent. Aucune musique, le son réel.\n\n— — —\n\nCOMMENT CETTE VIDÉO A ÉTÉ FAITE\n\nUne équipe d'agents IA — la Brigade Végé-Fruitée — dirigée en écrivant. Sur cet épisode, c'est L'Oignon qui ouvre le bal (MCP FoodEatUp) : il ouvre les livres : ventes, stock, réservations. Les autres suivent : la voix, le montage, la relecture avant publication, la mise en ligne, le bilan.\n\nLa chaîne : Claude, branché sur quatre outils — FoodEatUp pour les données du restaurant, Higgsfield pour l'image, ElevenLabs pour la voix, RapidoCMS pour la publication.\n\nPour cet épisode : Les commandes arrivent à l'écran de cuisine dans l'ordre, par poste. C'est ce qui rend la scène regardable.\n\n— — —\n\n🔗 https://site.foodeatup.com/\n📞 06 14 18 92 25\n\nSaison 6 « L'orchestration du restaurant » — épisode 16 sur 30. Arc : Les coulisses. Rôle à l'écran : Chef.\n",
         "hashtags": [
           "foodeatup",
           "restaurateur",
+          "rapidocms",
+          "iarestaurant",
           "restaurant",
           "coulisses",
           "metier",
@@ -19207,7 +19604,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
         "motsCles": [
           "les coulisses",
           "coulisse",
-          "restaurant le coup de feu vu de la cuisine"
+          "communication restaurant",
+          "agent ia restaurant",
+          "rapidocms",
+          "mcp claude restaurant"
         ],
         "cta": "Réserver une table",
         "titre": "Le coup de feu, vu de la cuisine — Les coulisses | FoodEatUp"
@@ -19220,10 +19620,12 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
   "EP167": {
     "publications": {
       "facebook": {
-        "legende": "Le poste qu'on ne montre jamais. Sans lui, rien ne sort.\n\nLa plonge, à fond, sans filtre. Puis la cuisine impeccable à minuit.\n\n👉 Rejoindre l'équipe : https://site.foodeatup.com/\nUne table ? 06 14 18 92 25",
+        "legende": "Le poste qu'on ne montre jamais. Sans lui, rien ne sort.\n\nLa plonge, à fond, sans filtre. Puis la cuisine impeccable à minuit.\n\nCette vidéo, personne ne l'a montée à la main : L'Oignon s'en est chargée — il ouvre les livres : ventes, stock, réservations — puis toute la brigade a suivi.\n\n👉 Rejoindre l'équipe : https://site.foodeatup.com/\nUne table ? 06 14 18 92 25",
         "hashtags": [
           "foodeatup",
           "restaurateur",
+          "rapidocms",
+          "iarestaurant",
           "restaurant",
           "coulisses",
           "metier",
@@ -19232,15 +19634,20 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
         "motsCles": [
           "les coulisses",
           "portrait",
-          "restaurant le poste qu on ne montre jamais"
+          "communication restaurant",
+          "agent ia restaurant",
+          "rapidocms",
+          "mcp claude restaurant"
         ],
         "cta": "Rejoindre l'équipe"
       },
       "instagram": {
-        "legende": "Le poste qu'on ne montre jamais.\nSans lui, rien ne sort.\n\nLa plonge, à fond, sans filtre. Puis la cuisine impeccable à minuit.\n\nRejoindre l'équipe — lien en bio.\nUne table ? 06 14 18 92 25",
+        "legende": "Le poste qu'on ne montre jamais.\nSans lui, rien ne sort.\n\nLa plonge, à fond, sans filtre. Puis la cuisine impeccable à minuit.\n\nFabriquée par L'Oignon et les neuf autres. Aucun logiciel de montage.\nRejoindre l'équipe — lien en bio.\nUne table ? 06 14 18 92 25",
         "hashtags": [
           "foodeatup",
           "restaurateur",
+          "rapidocms",
+          "iarestaurant",
           "restaurant",
           "coulisses",
           "metier",
@@ -19249,15 +19656,20 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
         "motsCles": [
           "les coulisses",
           "portrait",
-          "restaurant le poste qu on ne montre jamais"
+          "communication restaurant",
+          "agent ia restaurant",
+          "rapidocms",
+          "mcp claude restaurant"
         ],
         "cta": "Rejoindre l'équipe"
       },
       "tiktok": {
-        "legende": "Le poste qu'on ne montre jamais.\nSans lui, rien ne sort.\n\nLa plonge, à fond, sans filtre.",
+        "legende": "Le poste qu'on ne montre jamais.\nSans lui, rien ne sort.\n\nLa plonge, à fond, sans filtre.\n\nMontée par une IA. Sérieusement. (L'Oignon, MCP FoodEatUp)",
         "hashtags": [
           "foodeatup",
           "restaurateur",
+          "rapidocms",
+          "iarestaurant",
           "restaurant",
           "coulisses",
           "metier",
@@ -19266,15 +19678,20 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
         "motsCles": [
           "les coulisses",
           "portrait",
-          "restaurant le poste qu on ne montre jamais"
+          "communication restaurant",
+          "agent ia restaurant",
+          "rapidocms",
+          "mcp claude restaurant"
         ],
         "cta": "Rejoindre l'équipe"
       },
       "linkedin": {
-        "legende": "Le poste qu'on ne montre jamais.\n\nLa plonge, à fond, sans filtre. Puis la cuisine impeccable à minuit.\n\nComment on le fait : Le plan de nettoyage est coché poste par poste ; la conformité n'est pas une promesse.\n\nRejoindre l'équipe : https://site.foodeatup.com/\nUne table ? 06 14 18 92 25",
+        "legende": "Le poste qu'on ne montre jamais.\n\nLa plonge, à fond, sans filtre. Puis la cuisine impeccable à minuit.\n\nComment c'est fabriqué, sans agence et sans community manager :\n\n• L'Oignon (MCP FoodEatUp) — il ouvre les livres : ventes, stock, réservations.\n• Puis la brigade : la voix, le montage, la relecture, la mise en ligne.\n• Le tout dirigé en écrivant, depuis Claude, branché sur quatre outils — FoodEatUp pour les données du restaurant, Higgsfield pour l'image, ElevenLabs pour la voix, RapidoCMS pour la publication.\n\nPour cet épisode : Le plan de nettoyage est coché poste par poste ; la conformité n'est pas une promesse.\n\nRejoindre l'équipe : https://site.foodeatup.com/\nUne table ? 06 14 18 92 25",
         "hashtags": [
           "foodeatup",
           "restaurateur",
+          "rapidocms",
+          "iarestaurant",
           "restaurant",
           "coulisses",
           "metier",
@@ -19283,15 +19700,20 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
         "motsCles": [
           "les coulisses",
           "portrait",
-          "restaurant le poste qu on ne montre jamais"
+          "communication restaurant",
+          "agent ia restaurant",
+          "rapidocms",
+          "mcp claude restaurant"
         ],
         "cta": "Rejoindre l'équipe"
       },
       "youtube": {
-        "legende": "Le poste qu'on ne montre jamais. Sans lui, rien ne sort.\n\nLa plonge, à fond, sans filtre. Puis la cuisine impeccable à minuit.\n\n— — —\n\n🔗 https://site.foodeatup.com/\n📞 06 14 18 92 25\n\nSaison 6 « L'orchestration du restaurant » — épisode 17 sur 30. Arc : Les coulisses.\nRôle à l'écran : Plongeur.\n\nComment c'est fait : Le plan de nettoyage est coché poste par poste ; la conformité n'est pas une promesse. Toute la série est publiée avec RapidoCMS, depuis une conversation.\n",
+        "legende": "Le poste qu'on ne montre jamais. Sans lui, rien ne sort.\n\nLa plonge, à fond, sans filtre. Puis la cuisine impeccable à minuit.\n\n— — —\n\nCOMMENT CETTE VIDÉO A ÉTÉ FAITE\n\nUne équipe d'agents IA — la Brigade Végé-Fruitée — dirigée en écrivant. Sur cet épisode, c'est L'Oignon qui ouvre le bal (MCP FoodEatUp) : il ouvre les livres : ventes, stock, réservations. Les autres suivent : la voix, le montage, la relecture avant publication, la mise en ligne, le bilan.\n\nLa chaîne : Claude, branché sur quatre outils — FoodEatUp pour les données du restaurant, Higgsfield pour l'image, ElevenLabs pour la voix, RapidoCMS pour la publication.\n\nPour cet épisode : Le plan de nettoyage est coché poste par poste ; la conformité n'est pas une promesse.\n\n— — —\n\n🔗 https://site.foodeatup.com/\n📞 06 14 18 92 25\n\nSaison 6 « L'orchestration du restaurant » — épisode 17 sur 30. Arc : Les coulisses. Rôle à l'écran : Plongeur.\n",
         "hashtags": [
           "foodeatup",
           "restaurateur",
+          "rapidocms",
+          "iarestaurant",
           "restaurant",
           "coulisses",
           "metier",
@@ -19300,7 +19722,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
         "motsCles": [
           "les coulisses",
           "portrait",
-          "restaurant le poste qu on ne montre jamais"
+          "communication restaurant",
+          "agent ia restaurant",
+          "rapidocms",
+          "mcp claude restaurant"
         ],
         "cta": "Rejoindre l'équipe",
         "titre": "Le poste qu'on ne montre jamais — Les coulisses | FoodEatUp"
@@ -19313,10 +19738,12 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
   "EP168": {
     "publications": {
       "facebook": {
-        "legende": "Six heures, au marché. Ce qu'on refuse compte autant.\n\nLe marché à six heures, ce qu'on prend, ce qu'on refuse et pourquoi.\n\n👉 Voir la carte : https://site.foodeatup.com/\nUne table ? 06 14 18 92 25",
+        "legende": "Six heures, au marché. Ce qu'on refuse compte autant.\n\nLe marché à six heures, ce qu'on prend, ce qu'on refuse et pourquoi.\n\nCette vidéo, personne ne l'a montée à la main : L'Oignon s'en est chargée — il ouvre les livres : ventes, stock, réservations — puis toute la brigade a suivi.\n\n👉 Voir la carte : https://site.foodeatup.com/\nUne table ? 06 14 18 92 25",
         "hashtags": [
           "foodeatup",
           "restaurateur",
+          "rapidocms",
+          "iarestaurant",
           "restaurant",
           "coulisses",
           "metier",
@@ -19325,15 +19752,20 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
         "motsCles": [
           "les coulisses",
           "coulisse",
-          "restaurant les courses du chef"
+          "communication restaurant",
+          "agent ia restaurant",
+          "rapidocms",
+          "mcp claude restaurant"
         ],
         "cta": "Voir la carte"
       },
       "instagram": {
-        "legende": "Six heures, au marché.\nCe qu'on refuse compte autant.\n\nLe marché à six heures, ce qu'on prend, ce qu'on refuse et pourquoi.\n\nVoir la carte — lien en bio.\nUne table ? 06 14 18 92 25",
+        "legende": "Six heures, au marché.\nCe qu'on refuse compte autant.\n\nLe marché à six heures, ce qu'on prend, ce qu'on refuse et pourquoi.\n\nFabriquée par L'Oignon et les neuf autres. Aucun logiciel de montage.\nVoir la carte — lien en bio.\nUne table ? 06 14 18 92 25",
         "hashtags": [
           "foodeatup",
           "restaurateur",
+          "rapidocms",
+          "iarestaurant",
           "restaurant",
           "coulisses",
           "metier",
@@ -19342,15 +19774,20 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
         "motsCles": [
           "les coulisses",
           "coulisse",
-          "restaurant les courses du chef"
+          "communication restaurant",
+          "agent ia restaurant",
+          "rapidocms",
+          "mcp claude restaurant"
         ],
         "cta": "Voir la carte"
       },
       "tiktok": {
-        "legende": "Six heures, au marché.\nCe qu'on refuse compte autant.\n\nLe marché à six heures, ce qu'on prend, ce qu'on refuse et pourquoi.",
+        "legende": "Six heures, au marché.\nCe qu'on refuse compte autant.\n\nLe marché à six heures, ce qu'on prend, ce qu'on refuse et pourquoi.\n\nMontée par une IA. Sérieusement. (L'Oignon, MCP FoodEatUp)",
         "hashtags": [
           "foodeatup",
           "restaurateur",
+          "rapidocms",
+          "iarestaurant",
           "restaurant",
           "coulisses",
           "metier",
@@ -19359,15 +19796,20 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
         "motsCles": [
           "les coulisses",
           "coulisse",
-          "restaurant les courses du chef"
+          "communication restaurant",
+          "agent ia restaurant",
+          "rapidocms",
+          "mcp claude restaurant"
         ],
         "cta": "Voir la carte"
       },
       "linkedin": {
-        "legende": "Six heures, au marché.\n\nLe marché à six heures, ce qu'on prend, ce qu'on refuse et pourquoi.\n\nComment on le fait : La liste de courses vient de la production prévue — on n'achète pas au hasard.\n\nVoir la carte : https://site.foodeatup.com/\nUne table ? 06 14 18 92 25",
+        "legende": "Six heures, au marché.\n\nLe marché à six heures, ce qu'on prend, ce qu'on refuse et pourquoi.\n\nComment c'est fabriqué, sans agence et sans community manager :\n\n• L'Oignon (MCP FoodEatUp) — il ouvre les livres : ventes, stock, réservations.\n• Puis la brigade : la voix, le montage, la relecture, la mise en ligne.\n• Le tout dirigé en écrivant, depuis Claude, branché sur quatre outils — FoodEatUp pour les données du restaurant, Higgsfield pour l'image, ElevenLabs pour la voix, RapidoCMS pour la publication.\n\nPour cet épisode : La liste de courses vient de la production prévue — on n'achète pas au hasard.\n\nVoir la carte : https://site.foodeatup.com/\nUne table ? 06 14 18 92 25",
         "hashtags": [
           "foodeatup",
           "restaurateur",
+          "rapidocms",
+          "iarestaurant",
           "restaurant",
           "coulisses",
           "metier",
@@ -19376,15 +19818,20 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
         "motsCles": [
           "les coulisses",
           "coulisse",
-          "restaurant les courses du chef"
+          "communication restaurant",
+          "agent ia restaurant",
+          "rapidocms",
+          "mcp claude restaurant"
         ],
         "cta": "Voir la carte"
       },
       "youtube": {
-        "legende": "Six heures, au marché. Ce qu'on refuse compte autant.\n\nLe marché à six heures, ce qu'on prend, ce qu'on refuse et pourquoi.\n\n— — —\n\n🔗 https://site.foodeatup.com/\n📞 06 14 18 92 25\n\nSaison 6 « L'orchestration du restaurant » — épisode 18 sur 30. Arc : Les coulisses.\nRôle à l'écran : Chef.\n\nComment c'est fait : La liste de courses vient de la production prévue — on n'achète pas au hasard. Toute la série est publiée avec RapidoCMS, depuis une conversation.\n",
+        "legende": "Six heures, au marché. Ce qu'on refuse compte autant.\n\nLe marché à six heures, ce qu'on prend, ce qu'on refuse et pourquoi.\n\n— — —\n\nCOMMENT CETTE VIDÉO A ÉTÉ FAITE\n\nUne équipe d'agents IA — la Brigade Végé-Fruitée — dirigée en écrivant. Sur cet épisode, c'est L'Oignon qui ouvre le bal (MCP FoodEatUp) : il ouvre les livres : ventes, stock, réservations. Les autres suivent : la voix, le montage, la relecture avant publication, la mise en ligne, le bilan.\n\nLa chaîne : Claude, branché sur quatre outils — FoodEatUp pour les données du restaurant, Higgsfield pour l'image, ElevenLabs pour la voix, RapidoCMS pour la publication.\n\nPour cet épisode : La liste de courses vient de la production prévue — on n'achète pas au hasard.\n\n— — —\n\n🔗 https://site.foodeatup.com/\n📞 06 14 18 92 25\n\nSaison 6 « L'orchestration du restaurant » — épisode 18 sur 30. Arc : Les coulisses. Rôle à l'écran : Chef.\n",
         "hashtags": [
           "foodeatup",
           "restaurateur",
+          "rapidocms",
+          "iarestaurant",
           "restaurant",
           "coulisses",
           "metier",
@@ -19393,7 +19840,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
         "motsCles": [
           "les coulisses",
           "coulisse",
-          "restaurant les courses du chef"
+          "communication restaurant",
+          "agent ia restaurant",
+          "rapidocms",
+          "mcp claude restaurant"
         ],
         "cta": "Voir la carte",
         "titre": "Les courses du chef — Les coulisses | FoodEatUp"
@@ -19406,10 +19856,12 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
   "EP169": {
     "publications": {
       "facebook": {
-        "legende": "On lit tout. Même celui-là. Et voilà ce qu'on a changé.\n\nUn vrai avis client lu à voix haute, y compris le reproche. Et ce qu'on a changé depuis.\n\n👉 Laisser un avis : https://site.foodeatup.com/\nUne table ? 06 14 18 92 25",
+        "legende": "On lit tout. Même celui-là. Et voilà ce qu'on a changé.\n\nUn vrai avis client lu à voix haute, y compris le reproche. Et ce qu'on a changé depuis.\n\nCette vidéo, personne ne l'a montée à la main : Don Citrone s'en est chargée — il relie ce qui est publié à ce qui arrive en salle — puis toute la brigade a suivi.\n\n👉 Laisser un avis : https://site.foodeatup.com/\nUne table ? 06 14 18 92 25",
         "hashtags": [
           "foodeatup",
           "restaurateur",
+          "rapidocms",
+          "iarestaurant",
           "restaurant",
           "client",
           "accueil",
@@ -19418,15 +19870,20 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
         "motsCles": [
           "le client",
           "avis",
-          "restaurant l avis qu on affiche"
+          "communication restaurant",
+          "agent ia restaurant",
+          "rapidocms",
+          "mcp claude restaurant"
         ],
         "cta": "Laisser un avis"
       },
       "instagram": {
-        "legende": "On lit tout. Même celui-là.\nEt voilà ce qu'on a changé.\n\nUn vrai avis client lu à voix haute, y compris le reproche. Et ce qu'on a changé depuis.\n\nLaisser un avis — lien en bio.\nUne table ? 06 14 18 92 25",
+        "legende": "On lit tout. Même celui-là.\nEt voilà ce qu'on a changé.\n\nUn vrai avis client lu à voix haute, y compris le reproche. Et ce qu'on a changé depuis.\n\nFabriquée par Don Citrone et les neuf autres. Aucun logiciel de montage.\nLaisser un avis — lien en bio.\nUne table ? 06 14 18 92 25",
         "hashtags": [
           "foodeatup",
           "restaurateur",
+          "rapidocms",
+          "iarestaurant",
           "restaurant",
           "client",
           "accueil",
@@ -19435,15 +19892,20 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
         "motsCles": [
           "le client",
           "avis",
-          "restaurant l avis qu on affiche"
+          "communication restaurant",
+          "agent ia restaurant",
+          "rapidocms",
+          "mcp claude restaurant"
         ],
         "cta": "Laisser un avis"
       },
       "tiktok": {
-        "legende": "On lit tout. Même celui-là.\nEt voilà ce qu'on a changé.\n\nUn vrai avis client lu à voix haute, y compris le reproche.",
+        "legende": "On lit tout. Même celui-là.\nEt voilà ce qu'on a changé.\n\nUn vrai avis client lu à voix haute, y compris le reproche.\n\nMontée par une IA. Sérieusement. (Don Citrone, MCP FoodEatUp)",
         "hashtags": [
           "foodeatup",
           "restaurateur",
+          "rapidocms",
+          "iarestaurant",
           "restaurant",
           "client",
           "accueil",
@@ -19452,15 +19914,20 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
         "motsCles": [
           "le client",
           "avis",
-          "restaurant l avis qu on affiche"
+          "communication restaurant",
+          "agent ia restaurant",
+          "rapidocms",
+          "mcp claude restaurant"
         ],
         "cta": "Laisser un avis"
       },
       "linkedin": {
-        "legende": "On lit tout. Même celui-là.\n\nUn vrai avis client lu à voix haute, y compris le reproche. Et ce qu'on a changé depuis.\n\nComment on le fait : Les avis remontent au même endroit ; la réponse part de là, dans le ton de la maison.\n\nLaisser un avis : https://site.foodeatup.com/\nUne table ? 06 14 18 92 25",
+        "legende": "On lit tout. Même celui-là.\n\nUn vrai avis client lu à voix haute, y compris le reproche. Et ce qu'on a changé depuis.\n\nComment c'est fabriqué, sans agence et sans community manager :\n\n• Don Citrone (MCP FoodEatUp) — il relie ce qui est publié à ce qui arrive en salle.\n• Puis la brigade : la voix, le montage, la relecture, la mise en ligne.\n• Le tout dirigé en écrivant, depuis Claude, branché sur quatre outils — FoodEatUp pour les données du restaurant, Higgsfield pour l'image, ElevenLabs pour la voix, RapidoCMS pour la publication.\n\nPour cet épisode : Les avis remontent au même endroit ; la réponse part de là, dans le ton de la maison.\n\nLaisser un avis : https://site.foodeatup.com/\nUne table ? 06 14 18 92 25",
         "hashtags": [
           "foodeatup",
           "restaurateur",
+          "rapidocms",
+          "iarestaurant",
           "restaurant",
           "client",
           "accueil",
@@ -19469,15 +19936,20 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
         "motsCles": [
           "le client",
           "avis",
-          "restaurant l avis qu on affiche"
+          "communication restaurant",
+          "agent ia restaurant",
+          "rapidocms",
+          "mcp claude restaurant"
         ],
         "cta": "Laisser un avis"
       },
       "youtube": {
-        "legende": "On lit tout. Même celui-là. Et voilà ce qu'on a changé.\n\nUn vrai avis client lu à voix haute, y compris le reproche. Et ce qu'on a changé depuis.\n\n— — —\n\n🔗 https://site.foodeatup.com/\n📞 06 14 18 92 25\n\nSaison 6 « L'orchestration du restaurant » — épisode 19 sur 30. Arc : Le client.\nRôle à l'écran : Directeur.\n\nComment c'est fait : Les avis remontent au même endroit ; la réponse part de là, dans le ton de la maison. Toute la série est publiée avec RapidoCMS, depuis une conversation.\n",
+        "legende": "On lit tout. Même celui-là. Et voilà ce qu'on a changé.\n\nUn vrai avis client lu à voix haute, y compris le reproche. Et ce qu'on a changé depuis.\n\n— — —\n\nCOMMENT CETTE VIDÉO A ÉTÉ FAITE\n\nUne équipe d'agents IA — la Brigade Végé-Fruitée — dirigée en écrivant. Sur cet épisode, c'est Don Citrone qui ouvre le bal (MCP FoodEatUp) : il relie ce qui est publié à ce qui arrive en salle. Les autres suivent : la voix, le montage, la relecture avant publication, la mise en ligne, le bilan.\n\nLa chaîne : Claude, branché sur quatre outils — FoodEatUp pour les données du restaurant, Higgsfield pour l'image, ElevenLabs pour la voix, RapidoCMS pour la publication.\n\nPour cet épisode : Les avis remontent au même endroit ; la réponse part de là, dans le ton de la maison.\n\n— — —\n\n🔗 https://site.foodeatup.com/\n📞 06 14 18 92 25\n\nSaison 6 « L'orchestration du restaurant » — épisode 19 sur 30. Arc : Le client. Rôle à l'écran : Directeur.\n",
         "hashtags": [
           "foodeatup",
           "restaurateur",
+          "rapidocms",
+          "iarestaurant",
           "restaurant",
           "client",
           "accueil",
@@ -19486,7 +19958,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
         "motsCles": [
           "le client",
           "avis",
-          "restaurant l avis qu on affiche"
+          "communication restaurant",
+          "agent ia restaurant",
+          "rapidocms",
+          "mcp claude restaurant"
         ],
         "cta": "Laisser un avis",
         "titre": "L'avis qu'on affiche — Le client | FoodEatUp"
@@ -19499,10 +19974,12 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
   "EP170": {
     "publications": {
       "facebook": {
-        "legende": "Même table depuis six ans. On sait déjà ce qu'il va prendre.\n\nCelui qui vient depuis six ans, toujours la même table. On lui donne la parole.\n\n👉 Réserver une table : https://site.foodeatup.com/\nUne table ? 06 14 18 92 25",
+        "legende": "Même table depuis six ans. On sait déjà ce qu'il va prendre.\n\nCelui qui vient depuis six ans, toujours la même table. On lui donne la parole.\n\nCette vidéo, personne ne l'a montée à la main : Don Citrone s'en est chargée — il relie ce qui est publié à ce qui arrive en salle — puis toute la brigade a suivi.\n\n👉 Réserver une table : https://site.foodeatup.com/\nUne table ? 06 14 18 92 25",
         "hashtags": [
           "foodeatup",
           "restaurateur",
+          "rapidocms",
+          "iarestaurant",
           "restaurant",
           "client",
           "accueil",
@@ -19511,15 +19988,20 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
         "motsCles": [
           "le client",
           "portrait",
-          "restaurant le client du mardi"
+          "communication restaurant",
+          "agent ia restaurant",
+          "rapidocms",
+          "mcp claude restaurant"
         ],
         "cta": "Réserver une table"
       },
       "instagram": {
-        "legende": "Même table depuis six ans.\nOn sait déjà ce qu'il va prendre.\n\nCelui qui vient depuis six ans, toujours la même table. On lui donne la parole.\n\nRéserver une table — lien en bio.\nUne table ? 06 14 18 92 25",
+        "legende": "Même table depuis six ans.\nOn sait déjà ce qu'il va prendre.\n\nCelui qui vient depuis six ans, toujours la même table. On lui donne la parole.\n\nFabriquée par Don Citrone et les neuf autres. Aucun logiciel de montage.\nRéserver une table — lien en bio.\nUne table ? 06 14 18 92 25",
         "hashtags": [
           "foodeatup",
           "restaurateur",
+          "rapidocms",
+          "iarestaurant",
           "restaurant",
           "client",
           "accueil",
@@ -19528,15 +20010,20 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
         "motsCles": [
           "le client",
           "portrait",
-          "restaurant le client du mardi"
+          "communication restaurant",
+          "agent ia restaurant",
+          "rapidocms",
+          "mcp claude restaurant"
         ],
         "cta": "Réserver une table"
       },
       "tiktok": {
-        "legende": "Même table depuis six ans.\nOn sait déjà ce qu'il va prendre.\n\nCelui qui vient depuis six ans, toujours la même table.",
+        "legende": "Même table depuis six ans.\nOn sait déjà ce qu'il va prendre.\n\nCelui qui vient depuis six ans, toujours la même table.\n\nMontée par une IA. Sérieusement. (Don Citrone, MCP FoodEatUp)",
         "hashtags": [
           "foodeatup",
           "restaurateur",
+          "rapidocms",
+          "iarestaurant",
           "restaurant",
           "client",
           "accueil",
@@ -19545,15 +20032,20 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
         "motsCles": [
           "le client",
           "portrait",
-          "restaurant le client du mardi"
+          "communication restaurant",
+          "agent ia restaurant",
+          "rapidocms",
+          "mcp claude restaurant"
         ],
         "cta": "Réserver une table"
       },
       "linkedin": {
-        "legende": "Même table depuis six ans.\n\nCelui qui vient depuis six ans, toujours la même table. On lui donne la parole.\n\nComment on le fait : Sa fiche client garde ses habitudes : la table, le plat, l'allergie.\n\nRéserver une table : https://site.foodeatup.com/\nUne table ? 06 14 18 92 25",
+        "legende": "Même table depuis six ans.\n\nCelui qui vient depuis six ans, toujours la même table. On lui donne la parole.\n\nComment c'est fabriqué, sans agence et sans community manager :\n\n• Don Citrone (MCP FoodEatUp) — il relie ce qui est publié à ce qui arrive en salle.\n• Puis la brigade : la voix, le montage, la relecture, la mise en ligne.\n• Le tout dirigé en écrivant, depuis Claude, branché sur quatre outils — FoodEatUp pour les données du restaurant, Higgsfield pour l'image, ElevenLabs pour la voix, RapidoCMS pour la publication.\n\nPour cet épisode : Sa fiche client garde ses habitudes : la table, le plat, l'allergie.\n\nRéserver une table : https://site.foodeatup.com/\nUne table ? 06 14 18 92 25",
         "hashtags": [
           "foodeatup",
           "restaurateur",
+          "rapidocms",
+          "iarestaurant",
           "restaurant",
           "client",
           "accueil",
@@ -19562,15 +20054,20 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
         "motsCles": [
           "le client",
           "portrait",
-          "restaurant le client du mardi"
+          "communication restaurant",
+          "agent ia restaurant",
+          "rapidocms",
+          "mcp claude restaurant"
         ],
         "cta": "Réserver une table"
       },
       "youtube": {
-        "legende": "Même table depuis six ans. On sait déjà ce qu'il va prendre.\n\nCelui qui vient depuis six ans, toujours la même table. On lui donne la parole.\n\n— — —\n\n🔗 https://site.foodeatup.com/\n📞 06 14 18 92 25\n\nSaison 6 « L'orchestration du restaurant » — épisode 20 sur 30. Arc : Le client.\nRôle à l'écran : Serveur.\n\nComment c'est fait : Sa fiche client garde ses habitudes : la table, le plat, l'allergie. Toute la série est publiée avec RapidoCMS, depuis une conversation.\n",
+        "legende": "Même table depuis six ans. On sait déjà ce qu'il va prendre.\n\nCelui qui vient depuis six ans, toujours la même table. On lui donne la parole.\n\n— — —\n\nCOMMENT CETTE VIDÉO A ÉTÉ FAITE\n\nUne équipe d'agents IA — la Brigade Végé-Fruitée — dirigée en écrivant. Sur cet épisode, c'est Don Citrone qui ouvre le bal (MCP FoodEatUp) : il relie ce qui est publié à ce qui arrive en salle. Les autres suivent : la voix, le montage, la relecture avant publication, la mise en ligne, le bilan.\n\nLa chaîne : Claude, branché sur quatre outils — FoodEatUp pour les données du restaurant, Higgsfield pour l'image, ElevenLabs pour la voix, RapidoCMS pour la publication.\n\nPour cet épisode : Sa fiche client garde ses habitudes : la table, le plat, l'allergie.\n\n— — —\n\n🔗 https://site.foodeatup.com/\n📞 06 14 18 92 25\n\nSaison 6 « L'orchestration du restaurant » — épisode 20 sur 30. Arc : Le client. Rôle à l'écran : Serveur.\n",
         "hashtags": [
           "foodeatup",
           "restaurateur",
+          "rapidocms",
+          "iarestaurant",
           "restaurant",
           "client",
           "accueil",
@@ -19579,7 +20076,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
         "motsCles": [
           "le client",
           "portrait",
-          "restaurant le client du mardi"
+          "communication restaurant",
+          "agent ia restaurant",
+          "rapidocms",
+          "mcp claude restaurant"
         ],
         "cta": "Réserver une table",
         "titre": "Le client du mardi — Le client | FoodEatUp"
@@ -19592,10 +20092,12 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
   "EP171": {
     "publications": {
       "facebook": {
-        "legende": "Douze personnes, une addition. Ça peut très bien se passer.\n\nUne grande tablée servie sans accroc : la mise en place, le service synchronisé, l'addition partagée en douze sans drame.\n\n👉 Réserver pour un groupe : https://site.foodeatup.com/\nUne table ? 06 14 18 92 25",
+        "legende": "Douze personnes, une addition. Ça peut très bien se passer.\n\nUne grande tablée servie sans accroc : la mise en place, le service synchronisé, l'addition partagée en douze sans drame.\n\nCette vidéo, personne ne l'a montée à la main : Don Citrone s'en est chargée — il relie ce qui est publié à ce qui arrive en salle — puis toute la brigade a suivi.\n\n👉 Réserver pour un groupe : https://site.foodeatup.com/\nUne table ? 06 14 18 92 25",
         "hashtags": [
           "foodeatup",
           "restaurateur",
+          "rapidocms",
+          "iarestaurant",
           "restaurant",
           "client",
           "accueil",
@@ -19604,15 +20106,20 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
         "motsCles": [
           "le client",
           "coulisse",
-          "restaurant la table de douze"
+          "communication restaurant",
+          "agent ia restaurant",
+          "rapidocms",
+          "mcp claude restaurant"
         ],
         "cta": "Réserver pour un groupe"
       },
       "instagram": {
-        "legende": "Douze personnes, une addition.\nÇa peut très bien se passer.\n\nUne grande tablée servie sans accroc : la mise en place, le service synchronisé, l'addition partagée en douze sans drame.\n\nRéserver pour un groupe — lien en bio.\nUne table ? 06 14 18 92 25",
+        "legende": "Douze personnes, une addition.\nÇa peut très bien se passer.\n\nUne grande tablée servie sans accroc : la mise en place, le service synchronisé, l'addition partagée en douze sans drame.\n\nFabriquée par Don Citrone et les neuf autres. Aucun logiciel de montage.\nRéserver pour un groupe — lien en bio.\nUne table ? 06 14 18 92 25",
         "hashtags": [
           "foodeatup",
           "restaurateur",
+          "rapidocms",
+          "iarestaurant",
           "restaurant",
           "client",
           "accueil",
@@ -19621,15 +20128,20 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
         "motsCles": [
           "le client",
           "coulisse",
-          "restaurant la table de douze"
+          "communication restaurant",
+          "agent ia restaurant",
+          "rapidocms",
+          "mcp claude restaurant"
         ],
         "cta": "Réserver pour un groupe"
       },
       "tiktok": {
-        "legende": "Douze personnes, une addition.\nÇa peut très bien se passer.\n\nUne grande tablée servie sans accroc : la mise en place, le service synchronisé, l'addition partagée en douze sans drame.",
+        "legende": "Douze personnes, une addition.\nÇa peut très bien se passer.\n\nUne grande tablée servie sans accroc : la mise en place, le service synchronisé, l'addition partagée en douze sans drame.\n\nMontée par une IA. Sérieusement. (Don Citrone, MCP FoodEatUp)",
         "hashtags": [
           "foodeatup",
           "restaurateur",
+          "rapidocms",
+          "iarestaurant",
           "restaurant",
           "client",
           "accueil",
@@ -19638,15 +20150,20 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
         "motsCles": [
           "le client",
           "coulisse",
-          "restaurant la table de douze"
+          "communication restaurant",
+          "agent ia restaurant",
+          "rapidocms",
+          "mcp claude restaurant"
         ],
         "cta": "Réserver pour un groupe"
       },
       "linkedin": {
-        "legende": "Douze personnes, une addition.\n\nUne grande tablée servie sans accroc : la mise en place, le service synchronisé, l'addition partagée en douze sans drame.\n\nComment on le fait : Le plan de salle, les postes et le partage d'addition sont prévus avant que le groupe s'assoie.\n\nRéserver pour un groupe : https://site.foodeatup.com/\nUne table ? 06 14 18 92 25",
+        "legende": "Douze personnes, une addition.\n\nUne grande tablée servie sans accroc : la mise en place, le service synchronisé, l'addition partagée en douze sans drame.\n\nComment c'est fabriqué, sans agence et sans community manager :\n\n• Don Citrone (MCP FoodEatUp) — il relie ce qui est publié à ce qui arrive en salle.\n• Puis la brigade : la voix, le montage, la relecture, la mise en ligne.\n• Le tout dirigé en écrivant, depuis Claude, branché sur quatre outils — FoodEatUp pour les données du restaurant, Higgsfield pour l'image, ElevenLabs pour la voix, RapidoCMS pour la publication.\n\nPour cet épisode : Le plan de salle, les postes et le partage d'addition sont prévus avant que le groupe s'assoie.\n\nRéserver pour un groupe : https://site.foodeatup.com/\nUne table ? 06 14 18 92 25",
         "hashtags": [
           "foodeatup",
           "restaurateur",
+          "rapidocms",
+          "iarestaurant",
           "restaurant",
           "client",
           "accueil",
@@ -19655,15 +20172,20 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
         "motsCles": [
           "le client",
           "coulisse",
-          "restaurant la table de douze"
+          "communication restaurant",
+          "agent ia restaurant",
+          "rapidocms",
+          "mcp claude restaurant"
         ],
         "cta": "Réserver pour un groupe"
       },
       "youtube": {
-        "legende": "Douze personnes, une addition. Ça peut très bien se passer.\n\nUne grande tablée servie sans accroc : la mise en place, le service synchronisé, l'addition partagée en douze sans drame.\n\n— — —\n\n🔗 https://site.foodeatup.com/\n📞 06 14 18 92 25\n\nSaison 6 « L'orchestration du restaurant » — épisode 21 sur 30. Arc : Le client.\nRôle à l'écran : Serveur.\n\nComment c'est fait : Le plan de salle, les postes et le partage d'addition sont prévus avant que le groupe s'assoie. Toute la série est publiée avec RapidoCMS, depuis une conversation.\n",
+        "legende": "Douze personnes, une addition. Ça peut très bien se passer.\n\nUne grande tablée servie sans accroc : la mise en place, le service synchronisé, l'addition partagée en douze sans drame.\n\n— — —\n\nCOMMENT CETTE VIDÉO A ÉTÉ FAITE\n\nUne équipe d'agents IA — la Brigade Végé-Fruitée — dirigée en écrivant. Sur cet épisode, c'est Don Citrone qui ouvre le bal (MCP FoodEatUp) : il relie ce qui est publié à ce qui arrive en salle. Les autres suivent : la voix, le montage, la relecture avant publication, la mise en ligne, le bilan.\n\nLa chaîne : Claude, branché sur quatre outils — FoodEatUp pour les données du restaurant, Higgsfield pour l'image, ElevenLabs pour la voix, RapidoCMS pour la publication.\n\nPour cet épisode : Le plan de salle, les postes et le partage d'addition sont prévus avant que le groupe s'assoie.\n\n— — —\n\n🔗 https://site.foodeatup.com/\n📞 06 14 18 92 25\n\nSaison 6 « L'orchestration du restaurant » — épisode 21 sur 30. Arc : Le client. Rôle à l'écran : Serveur.\n",
         "hashtags": [
           "foodeatup",
           "restaurateur",
+          "rapidocms",
+          "iarestaurant",
           "restaurant",
           "client",
           "accueil",
@@ -19672,7 +20194,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
         "motsCles": [
           "le client",
           "coulisse",
-          "restaurant la table de douze"
+          "communication restaurant",
+          "agent ia restaurant",
+          "rapidocms",
+          "mcp claude restaurant"
         ],
         "cta": "Réserver pour un groupe",
         "titre": "La table de douze — Le client | FoodEatUp"
@@ -19685,10 +20210,12 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
   "EP172": {
     "publications": {
       "facebook": {
-        "legende": "Je commande depuis mon canapé. Et je la regarde arriver en cuisine.\n\nLe chef passe client : il commande sur le site du restaurant, suit sa commande, et on la voit arriver en cuisine.\n\n👉 Commander en ligne : https://site.foodeatup.com/\nUne table ? 06 14 18 92 25",
+        "legende": "Je commande depuis mon canapé. Et je la regarde arriver en cuisine.\n\nLe chef passe client : il commande sur le site du restaurant, suit sa commande, et on la voit arriver en cuisine.\n\nCette vidéo, personne ne l'a montée à la main : Don Citrone s'en est chargée — il relie ce qui est publié à ce qui arrive en salle — puis toute la brigade a suivi.\n\n👉 Commander en ligne : https://site.foodeatup.com/\nUne table ? 06 14 18 92 25",
         "hashtags": [
           "foodeatup",
           "restaurateur",
+          "rapidocms",
+          "iarestaurant",
           "restaurant",
           "client",
           "accueil",
@@ -19697,15 +20224,20 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
         "motsCles": [
           "le client",
           "démonstration",
-          "restaurant je commande depuis mon canape"
+          "communication restaurant",
+          "agent ia restaurant",
+          "rapidocms",
+          "mcp claude restaurant"
         ],
         "cta": "Commander en ligne"
       },
       "instagram": {
-        "legende": "Je commande depuis mon canapé.\nEt je la regarde arriver en cuisine.\n\nLe chef passe client : il commande sur le site du restaurant, suit sa commande, et on la voit arriver en cuisine.\n\nCommander en ligne — lien en bio.\nUne table ? 06 14 18 92 25",
+        "legende": "Je commande depuis mon canapé.\nEt je la regarde arriver en cuisine.\n\nLe chef passe client : il commande sur le site du restaurant, suit sa commande, et on la voit arriver en cuisine.\n\nFabriquée par Don Citrone et les neuf autres. Aucun logiciel de montage.\nCommander en ligne — lien en bio.\nUne table ? 06 14 18 92 25",
         "hashtags": [
           "foodeatup",
           "restaurateur",
+          "rapidocms",
+          "iarestaurant",
           "restaurant",
           "client",
           "accueil",
@@ -19714,15 +20246,20 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
         "motsCles": [
           "le client",
           "démonstration",
-          "restaurant je commande depuis mon canape"
+          "communication restaurant",
+          "agent ia restaurant",
+          "rapidocms",
+          "mcp claude restaurant"
         ],
         "cta": "Commander en ligne"
       },
       "tiktok": {
-        "legende": "Je commande depuis mon canapé.\nEt je la regarde arriver en cuisine.\n\nLe chef passe client : il commande sur le site du restaurant, suit sa commande, et on la voit arriver en cuisine.",
+        "legende": "Je commande depuis mon canapé.\nEt je la regarde arriver en cuisine.\n\nLe chef passe client : il commande sur le site du restaurant, suit sa commande, et on la voit arriver en cuisine.\n\nMontée par une IA. Sérieusement. (Don Citrone, MCP FoodEatUp)",
         "hashtags": [
           "foodeatup",
           "restaurateur",
+          "rapidocms",
+          "iarestaurant",
           "restaurant",
           "client",
           "accueil",
@@ -19731,15 +20268,20 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
         "motsCles": [
           "le client",
           "démonstration",
-          "restaurant je commande depuis mon canape"
+          "communication restaurant",
+          "agent ia restaurant",
+          "rapidocms",
+          "mcp claude restaurant"
         ],
         "cta": "Commander en ligne"
       },
       "linkedin": {
-        "legende": "Je commande depuis mon canapé.\n\nLe chef passe client : il commande sur le site du restaurant, suit sa commande, et on la voit arriver en cuisine.\n\nComment on le fait : La commande du site tombe dans la même file que la salle. Zéro commission, zéro ressaisie.\n\nCommander en ligne : https://site.foodeatup.com/\nUne table ? 06 14 18 92 25",
+        "legende": "Je commande depuis mon canapé.\n\nLe chef passe client : il commande sur le site du restaurant, suit sa commande, et on la voit arriver en cuisine.\n\nComment c'est fabriqué, sans agence et sans community manager :\n\n• Don Citrone (MCP FoodEatUp) — il relie ce qui est publié à ce qui arrive en salle.\n• Puis la brigade : la voix, le montage, la relecture, la mise en ligne.\n• Le tout dirigé en écrivant, depuis Claude, branché sur quatre outils — FoodEatUp pour les données du restaurant, Higgsfield pour l'image, ElevenLabs pour la voix, RapidoCMS pour la publication.\n\nPour cet épisode : La commande du site tombe dans la même file que la salle. Zéro commission, zéro ressaisie.\n\nCommander en ligne : https://site.foodeatup.com/\nUne table ? 06 14 18 92 25",
         "hashtags": [
           "foodeatup",
           "restaurateur",
+          "rapidocms",
+          "iarestaurant",
           "restaurant",
           "client",
           "accueil",
@@ -19748,15 +20290,20 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
         "motsCles": [
           "le client",
           "démonstration",
-          "restaurant je commande depuis mon canape"
+          "communication restaurant",
+          "agent ia restaurant",
+          "rapidocms",
+          "mcp claude restaurant"
         ],
         "cta": "Commander en ligne"
       },
       "youtube": {
-        "legende": "Je commande depuis mon canapé. Et je la regarde arriver en cuisine.\n\nLe chef passe client : il commande sur le site du restaurant, suit sa commande, et on la voit arriver en cuisine.\n\n— — —\n\n🔗 https://site.foodeatup.com/\n📞 06 14 18 92 25\n\nSaison 6 « L'orchestration du restaurant » — épisode 22 sur 30. Arc : Le client.\nRôle à l'écran : Client.\n\nComment c'est fait : La commande du site tombe dans la même file que la salle. Zéro commission, zéro ressaisie. Toute la série est publiée avec RapidoCMS, depuis une conversation.\n",
+        "legende": "Je commande depuis mon canapé. Et je la regarde arriver en cuisine.\n\nLe chef passe client : il commande sur le site du restaurant, suit sa commande, et on la voit arriver en cuisine.\n\n— — —\n\nCOMMENT CETTE VIDÉO A ÉTÉ FAITE\n\nUne équipe d'agents IA — la Brigade Végé-Fruitée — dirigée en écrivant. Sur cet épisode, c'est Don Citrone qui ouvre le bal (MCP FoodEatUp) : il relie ce qui est publié à ce qui arrive en salle. Les autres suivent : la voix, le montage, la relecture avant publication, la mise en ligne, le bilan.\n\nLa chaîne : Claude, branché sur quatre outils — FoodEatUp pour les données du restaurant, Higgsfield pour l'image, ElevenLabs pour la voix, RapidoCMS pour la publication.\n\nPour cet épisode : La commande du site tombe dans la même file que la salle. Zéro commission, zéro ressaisie.\n\n— — —\n\n🔗 https://site.foodeatup.com/\n📞 06 14 18 92 25\n\nSaison 6 « L'orchestration du restaurant » — épisode 22 sur 30. Arc : Le client. Rôle à l'écran : Client.\n",
         "hashtags": [
           "foodeatup",
           "restaurateur",
+          "rapidocms",
+          "iarestaurant",
           "restaurant",
           "client",
           "accueil",
@@ -19765,7 +20312,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
         "motsCles": [
           "le client",
           "démonstration",
-          "restaurant je commande depuis mon canape"
+          "communication restaurant",
+          "agent ia restaurant",
+          "rapidocms",
+          "mcp claude restaurant"
         ],
         "cta": "Commander en ligne",
         "titre": "Je commande depuis mon canapé — Le client | FoodEatUp"
@@ -19778,10 +20328,12 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
   "EP173": {
     "publications": {
       "facebook": {
-        "legende": "Sans gluten. Vraiment. On vérifie, on ne suppose pas.\n\nUne demande particulière prise au sérieux : ce qu'on change, ce qu'on vérifie, ce qu'on garantit.\n\n👉 Réserver une table : https://site.foodeatup.com/\nUne table ? 06 14 18 92 25",
+        "legende": "Sans gluten. Vraiment. On vérifie, on ne suppose pas.\n\nUne demande particulière prise au sérieux : ce qu'on change, ce qu'on vérifie, ce qu'on garantit.\n\nCette vidéo, personne ne l'a montée à la main : Don Citrone s'en est chargée — il relie ce qui est publié à ce qui arrive en salle — puis toute la brigade a suivi.\n\n👉 Réserver une table : https://site.foodeatup.com/\nUne table ? 06 14 18 92 25",
         "hashtags": [
           "foodeatup",
           "restaurateur",
+          "rapidocms",
+          "iarestaurant",
           "restaurant",
           "client",
           "accueil",
@@ -19790,15 +20342,20 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
         "motsCles": [
           "le client",
           "démonstration",
-          "restaurant sans gluten sans stress"
+          "communication restaurant",
+          "agent ia restaurant",
+          "rapidocms",
+          "mcp claude restaurant"
         ],
         "cta": "Réserver une table"
       },
       "instagram": {
-        "legende": "Sans gluten. Vraiment.\nOn vérifie, on ne suppose pas.\n\nUne demande particulière prise au sérieux : ce qu'on change, ce qu'on vérifie, ce qu'on garantit.\n\nRéserver une table — lien en bio.\nUne table ? 06 14 18 92 25",
+        "legende": "Sans gluten. Vraiment.\nOn vérifie, on ne suppose pas.\n\nUne demande particulière prise au sérieux : ce qu'on change, ce qu'on vérifie, ce qu'on garantit.\n\nFabriquée par Don Citrone et les neuf autres. Aucun logiciel de montage.\nRéserver une table — lien en bio.\nUne table ? 06 14 18 92 25",
         "hashtags": [
           "foodeatup",
           "restaurateur",
+          "rapidocms",
+          "iarestaurant",
           "restaurant",
           "client",
           "accueil",
@@ -19807,15 +20364,20 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
         "motsCles": [
           "le client",
           "démonstration",
-          "restaurant sans gluten sans stress"
+          "communication restaurant",
+          "agent ia restaurant",
+          "rapidocms",
+          "mcp claude restaurant"
         ],
         "cta": "Réserver une table"
       },
       "tiktok": {
-        "legende": "Sans gluten. Vraiment.\nOn vérifie, on ne suppose pas.\n\nUne demande particulière prise au sérieux : ce qu'on change, ce qu'on vérifie, ce qu'on garantit.",
+        "legende": "Sans gluten. Vraiment.\nOn vérifie, on ne suppose pas.\n\nUne demande particulière prise au sérieux : ce qu'on change, ce qu'on vérifie, ce qu'on garantit.\n\nMontée par une IA. Sérieusement. (Don Citrone, MCP FoodEatUp)",
         "hashtags": [
           "foodeatup",
           "restaurateur",
+          "rapidocms",
+          "iarestaurant",
           "restaurant",
           "client",
           "accueil",
@@ -19824,15 +20386,20 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
         "motsCles": [
           "le client",
           "démonstration",
-          "restaurant sans gluten sans stress"
+          "communication restaurant",
+          "agent ia restaurant",
+          "rapidocms",
+          "mcp claude restaurant"
         ],
         "cta": "Réserver une table"
       },
       "linkedin": {
-        "legende": "Sans gluten. Vraiment.\n\nUne demande particulière prise au sérieux : ce qu'on change, ce qu'on vérifie, ce qu'on garantit.\n\nComment on le fait : Les allergènes sont sur la fiche plat, la contrainte est notée sur la réservation.\n\nRéserver une table : https://site.foodeatup.com/\nUne table ? 06 14 18 92 25",
+        "legende": "Sans gluten. Vraiment.\n\nUne demande particulière prise au sérieux : ce qu'on change, ce qu'on vérifie, ce qu'on garantit.\n\nComment c'est fabriqué, sans agence et sans community manager :\n\n• Don Citrone (MCP FoodEatUp) — il relie ce qui est publié à ce qui arrive en salle.\n• Puis la brigade : la voix, le montage, la relecture, la mise en ligne.\n• Le tout dirigé en écrivant, depuis Claude, branché sur quatre outils — FoodEatUp pour les données du restaurant, Higgsfield pour l'image, ElevenLabs pour la voix, RapidoCMS pour la publication.\n\nPour cet épisode : Les allergènes sont sur la fiche plat, la contrainte est notée sur la réservation.\n\nRéserver une table : https://site.foodeatup.com/\nUne table ? 06 14 18 92 25",
         "hashtags": [
           "foodeatup",
           "restaurateur",
+          "rapidocms",
+          "iarestaurant",
           "restaurant",
           "client",
           "accueil",
@@ -19841,15 +20408,20 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
         "motsCles": [
           "le client",
           "démonstration",
-          "restaurant sans gluten sans stress"
+          "communication restaurant",
+          "agent ia restaurant",
+          "rapidocms",
+          "mcp claude restaurant"
         ],
         "cta": "Réserver une table"
       },
       "youtube": {
-        "legende": "Sans gluten. Vraiment. On vérifie, on ne suppose pas.\n\nUne demande particulière prise au sérieux : ce qu'on change, ce qu'on vérifie, ce qu'on garantit.\n\n— — —\n\n🔗 https://site.foodeatup.com/\n📞 06 14 18 92 25\n\nSaison 6 « L'orchestration du restaurant » — épisode 23 sur 30. Arc : Le client.\nRôle à l'écran : Chef.\n\nComment c'est fait : Les allergènes sont sur la fiche plat, la contrainte est notée sur la réservation. Toute la série est publiée avec RapidoCMS, depuis une conversation.\n",
+        "legende": "Sans gluten. Vraiment. On vérifie, on ne suppose pas.\n\nUne demande particulière prise au sérieux : ce qu'on change, ce qu'on vérifie, ce qu'on garantit.\n\n— — —\n\nCOMMENT CETTE VIDÉO A ÉTÉ FAITE\n\nUne équipe d'agents IA — la Brigade Végé-Fruitée — dirigée en écrivant. Sur cet épisode, c'est Don Citrone qui ouvre le bal (MCP FoodEatUp) : il relie ce qui est publié à ce qui arrive en salle. Les autres suivent : la voix, le montage, la relecture avant publication, la mise en ligne, le bilan.\n\nLa chaîne : Claude, branché sur quatre outils — FoodEatUp pour les données du restaurant, Higgsfield pour l'image, ElevenLabs pour la voix, RapidoCMS pour la publication.\n\nPour cet épisode : Les allergènes sont sur la fiche plat, la contrainte est notée sur la réservation.\n\n— — —\n\n🔗 https://site.foodeatup.com/\n📞 06 14 18 92 25\n\nSaison 6 « L'orchestration du restaurant » — épisode 23 sur 30. Arc : Le client. Rôle à l'écran : Chef.\n",
         "hashtags": [
           "foodeatup",
           "restaurateur",
+          "rapidocms",
+          "iarestaurant",
           "restaurant",
           "client",
           "accueil",
@@ -19858,7 +20430,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
         "motsCles": [
           "le client",
           "démonstration",
-          "restaurant sans gluten sans stress"
+          "communication restaurant",
+          "agent ia restaurant",
+          "rapidocms",
+          "mcp claude restaurant"
         ],
         "cta": "Réserver une table",
         "titre": "Sans gluten, sans stress — Le client | FoodEatUp"
@@ -19871,10 +20446,12 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
   "EP174": {
     "publications": {
       "facebook": {
-        "legende": "Premier rendez-vous. On ne vous dérangera pas.\n\nLa table près de la fenêtre, la lumière baissée, le service discret. Ce qu'on fait sans qu'on nous le demande.\n\n👉 Réserver une table : https://site.foodeatup.com/\nUne table ? 06 14 18 92 25",
+        "legende": "Premier rendez-vous. On ne vous dérangera pas.\n\nLa table près de la fenêtre, la lumière baissée, le service discret. Ce qu'on fait sans qu'on nous le demande.\n\nCette vidéo, personne ne l'a montée à la main : Don Citrone s'en est chargée — il relie ce qui est publié à ce qui arrive en salle — puis toute la brigade a suivi.\n\n👉 Réserver une table : https://site.foodeatup.com/\nUne table ? 06 14 18 92 25",
         "hashtags": [
           "foodeatup",
           "restaurateur",
+          "rapidocms",
+          "iarestaurant",
           "restaurant",
           "client",
           "accueil",
@@ -19883,15 +20460,20 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
         "motsCles": [
           "le client",
           "coulisse",
-          "restaurant le premier rendez vous"
+          "communication restaurant",
+          "agent ia restaurant",
+          "rapidocms",
+          "mcp claude restaurant"
         ],
         "cta": "Réserver une table"
       },
       "instagram": {
-        "legende": "Premier rendez-vous.\nOn ne vous dérangera pas.\n\nLa table près de la fenêtre, la lumière baissée, le service discret. Ce qu'on fait sans qu'on nous le demande.\n\nRéserver une table — lien en bio.\nUne table ? 06 14 18 92 25",
+        "legende": "Premier rendez-vous.\nOn ne vous dérangera pas.\n\nLa table près de la fenêtre, la lumière baissée, le service discret. Ce qu'on fait sans qu'on nous le demande.\n\nFabriquée par Don Citrone et les neuf autres. Aucun logiciel de montage.\nRéserver une table — lien en bio.\nUne table ? 06 14 18 92 25",
         "hashtags": [
           "foodeatup",
           "restaurateur",
+          "rapidocms",
+          "iarestaurant",
           "restaurant",
           "client",
           "accueil",
@@ -19900,15 +20482,20 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
         "motsCles": [
           "le client",
           "coulisse",
-          "restaurant le premier rendez vous"
+          "communication restaurant",
+          "agent ia restaurant",
+          "rapidocms",
+          "mcp claude restaurant"
         ],
         "cta": "Réserver une table"
       },
       "tiktok": {
-        "legende": "Premier rendez-vous.\nOn ne vous dérangera pas.\n\nLa table près de la fenêtre, la lumière baissée, le service discret.",
+        "legende": "Premier rendez-vous.\nOn ne vous dérangera pas.\n\nLa table près de la fenêtre, la lumière baissée, le service discret.\n\nMontée par une IA. Sérieusement. (Don Citrone, MCP FoodEatUp)",
         "hashtags": [
           "foodeatup",
           "restaurateur",
+          "rapidocms",
+          "iarestaurant",
           "restaurant",
           "client",
           "accueil",
@@ -19917,15 +20504,20 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
         "motsCles": [
           "le client",
           "coulisse",
-          "restaurant le premier rendez vous"
+          "communication restaurant",
+          "agent ia restaurant",
+          "rapidocms",
+          "mcp claude restaurant"
         ],
         "cta": "Réserver une table"
       },
       "linkedin": {
-        "legende": "Premier rendez-vous.\n\nLa table près de la fenêtre, la lumière baissée, le service discret. Ce qu'on fait sans qu'on nous le demande.\n\nComment on le fait : La note « table calme » est sur la réservation ; le placement se fait avant l'arrivée.\n\nRéserver une table : https://site.foodeatup.com/\nUne table ? 06 14 18 92 25",
+        "legende": "Premier rendez-vous.\n\nLa table près de la fenêtre, la lumière baissée, le service discret. Ce qu'on fait sans qu'on nous le demande.\n\nComment c'est fabriqué, sans agence et sans community manager :\n\n• Don Citrone (MCP FoodEatUp) — il relie ce qui est publié à ce qui arrive en salle.\n• Puis la brigade : la voix, le montage, la relecture, la mise en ligne.\n• Le tout dirigé en écrivant, depuis Claude, branché sur quatre outils — FoodEatUp pour les données du restaurant, Higgsfield pour l'image, ElevenLabs pour la voix, RapidoCMS pour la publication.\n\nPour cet épisode : La note « table calme » est sur la réservation ; le placement se fait avant l'arrivée.\n\nRéserver une table : https://site.foodeatup.com/\nUne table ? 06 14 18 92 25",
         "hashtags": [
           "foodeatup",
           "restaurateur",
+          "rapidocms",
+          "iarestaurant",
           "restaurant",
           "client",
           "accueil",
@@ -19934,15 +20526,20 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
         "motsCles": [
           "le client",
           "coulisse",
-          "restaurant le premier rendez vous"
+          "communication restaurant",
+          "agent ia restaurant",
+          "rapidocms",
+          "mcp claude restaurant"
         ],
         "cta": "Réserver une table"
       },
       "youtube": {
-        "legende": "Premier rendez-vous. On ne vous dérangera pas.\n\nLa table près de la fenêtre, la lumière baissée, le service discret. Ce qu'on fait sans qu'on nous le demande.\n\n— — —\n\n🔗 https://site.foodeatup.com/\n📞 06 14 18 92 25\n\nSaison 6 « L'orchestration du restaurant » — épisode 24 sur 30. Arc : Le client.\nRôle à l'écran : Serveur.\n\nComment c'est fait : La note « table calme » est sur la réservation ; le placement se fait avant l'arrivée. Toute la série est publiée avec RapidoCMS, depuis une conversation.\n",
+        "legende": "Premier rendez-vous. On ne vous dérangera pas.\n\nLa table près de la fenêtre, la lumière baissée, le service discret. Ce qu'on fait sans qu'on nous le demande.\n\n— — —\n\nCOMMENT CETTE VIDÉO A ÉTÉ FAITE\n\nUne équipe d'agents IA — la Brigade Végé-Fruitée — dirigée en écrivant. Sur cet épisode, c'est Don Citrone qui ouvre le bal (MCP FoodEatUp) : il relie ce qui est publié à ce qui arrive en salle. Les autres suivent : la voix, le montage, la relecture avant publication, la mise en ligne, le bilan.\n\nLa chaîne : Claude, branché sur quatre outils — FoodEatUp pour les données du restaurant, Higgsfield pour l'image, ElevenLabs pour la voix, RapidoCMS pour la publication.\n\nPour cet épisode : La note « table calme » est sur la réservation ; le placement se fait avant l'arrivée.\n\n— — —\n\n🔗 https://site.foodeatup.com/\n📞 06 14 18 92 25\n\nSaison 6 « L'orchestration du restaurant » — épisode 24 sur 30. Arc : Le client. Rôle à l'écran : Serveur.\n",
         "hashtags": [
           "foodeatup",
           "restaurateur",
+          "rapidocms",
+          "iarestaurant",
           "restaurant",
           "client",
           "accueil",
@@ -19951,7 +20548,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
         "motsCles": [
           "le client",
           "coulisse",
-          "restaurant le premier rendez vous"
+          "communication restaurant",
+          "agent ia restaurant",
+          "rapidocms",
+          "mcp claude restaurant"
         ],
         "cta": "Réserver une table",
         "titre": "Le premier rendez-vous — Le client | FoodEatUp"
@@ -19964,10 +20564,12 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
   "EP175": {
     "publications": {
       "facebook": {
-        "legende": "Scanne, commande, c'est tout. Trente secondes, filmé en vrai.\n\nLe client scanne, lit la carte, commande. Trente secondes, filmé en vrai, sans montage.\n\n👉 Voir la carte : https://site.foodeatup.com/\nUne table ? 06 14 18 92 25",
+        "legende": "Scanne, commande, c'est tout. Trente secondes, filmé en vrai.\n\nLe client scanne, lit la carte, commande. Trente secondes, filmé en vrai, sans montage.\n\nCette vidéo, personne ne l'a montée à la main : Le Brocoli s'en est chargée — il tient le calendrier et propose quoi publier, quand — puis toute la brigade a suivi.\n\n👉 Voir la carte : https://site.foodeatup.com/\nUne table ? 06 14 18 92 25",
         "hashtags": [
           "foodeatup",
           "restaurateur",
+          "rapidocms",
+          "iarestaurant",
           "restaurant",
           "commerce",
           "quartier",
@@ -19976,15 +20578,20 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
         "motsCles": [
           "la maison",
           "démonstration",
-          "restaurant le qr code a table"
+          "communication restaurant",
+          "agent ia restaurant",
+          "rapidocms",
+          "mcp claude restaurant"
         ],
         "cta": "Voir la carte"
       },
       "instagram": {
-        "legende": "Scanne, commande, c'est tout.\nTrente secondes, filmé en vrai.\n\nLe client scanne, lit la carte, commande. Trente secondes, filmé en vrai, sans montage.\n\nVoir la carte — lien en bio.\nUne table ? 06 14 18 92 25",
+        "legende": "Scanne, commande, c'est tout.\nTrente secondes, filmé en vrai.\n\nLe client scanne, lit la carte, commande. Trente secondes, filmé en vrai, sans montage.\n\nFabriquée par Le Brocoli et les neuf autres. Aucun logiciel de montage.\nVoir la carte — lien en bio.\nUne table ? 06 14 18 92 25",
         "hashtags": [
           "foodeatup",
           "restaurateur",
+          "rapidocms",
+          "iarestaurant",
           "restaurant",
           "commerce",
           "quartier",
@@ -19993,15 +20600,20 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
         "motsCles": [
           "la maison",
           "démonstration",
-          "restaurant le qr code a table"
+          "communication restaurant",
+          "agent ia restaurant",
+          "rapidocms",
+          "mcp claude restaurant"
         ],
         "cta": "Voir la carte"
       },
       "tiktok": {
-        "legende": "Scanne, commande, c'est tout.\nTrente secondes, filmé en vrai.\n\nLe client scanne, lit la carte, commande.",
+        "legende": "Scanne, commande, c'est tout.\nTrente secondes, filmé en vrai.\n\nLe client scanne, lit la carte, commande.\n\nMontée par une IA. Sérieusement. (Le Brocoli, MCP RapidoCMS)",
         "hashtags": [
           "foodeatup",
           "restaurateur",
+          "rapidocms",
+          "iarestaurant",
           "restaurant",
           "commerce",
           "quartier",
@@ -20010,15 +20622,20 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
         "motsCles": [
           "la maison",
           "démonstration",
-          "restaurant le qr code a table"
+          "communication restaurant",
+          "agent ia restaurant",
+          "rapidocms",
+          "mcp claude restaurant"
         ],
         "cta": "Voir la carte"
       },
       "linkedin": {
-        "legende": "Scanne, commande, c'est tout.\n\nLe client scanne, lit la carte, commande. Trente secondes, filmé en vrai, sans montage.\n\nComment on le fait : La carte du QR code est celle du logiciel : un prix changé le matin est à jour à midi.\n\nVoir la carte : https://site.foodeatup.com/\nUne table ? 06 14 18 92 25",
+        "legende": "Scanne, commande, c'est tout.\n\nLe client scanne, lit la carte, commande. Trente secondes, filmé en vrai, sans montage.\n\nComment c'est fabriqué, sans agence et sans community manager :\n\n• Le Brocoli (MCP RapidoCMS) — il tient le calendrier et propose quoi publier, quand.\n• Puis la brigade : la voix, le montage, la relecture, la mise en ligne.\n• Le tout dirigé en écrivant, depuis Claude, branché sur quatre outils — FoodEatUp pour les données du restaurant, Higgsfield pour l'image, ElevenLabs pour la voix, RapidoCMS pour la publication.\n\nPour cet épisode : La carte du QR code est celle du logiciel : un prix changé le matin est à jour à midi.\n\nVoir la carte : https://site.foodeatup.com/\nUne table ? 06 14 18 92 25",
         "hashtags": [
           "foodeatup",
           "restaurateur",
+          "rapidocms",
+          "iarestaurant",
           "restaurant",
           "commerce",
           "quartier",
@@ -20027,15 +20644,20 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
         "motsCles": [
           "la maison",
           "démonstration",
-          "restaurant le qr code a table"
+          "communication restaurant",
+          "agent ia restaurant",
+          "rapidocms",
+          "mcp claude restaurant"
         ],
         "cta": "Voir la carte"
       },
       "youtube": {
-        "legende": "Scanne, commande, c'est tout. Trente secondes, filmé en vrai.\n\nLe client scanne, lit la carte, commande. Trente secondes, filmé en vrai, sans montage.\n\n— — —\n\n🔗 https://site.foodeatup.com/\n📞 06 14 18 92 25\n\nSaison 6 « L'orchestration du restaurant » — épisode 25 sur 30. Arc : La maison.\nRôle à l'écran : Serveur.\n\nComment c'est fait : La carte du QR code est celle du logiciel : un prix changé le matin est à jour à midi. Toute la série est publiée avec RapidoCMS, depuis une conversation.\n",
+        "legende": "Scanne, commande, c'est tout. Trente secondes, filmé en vrai.\n\nLe client scanne, lit la carte, commande. Trente secondes, filmé en vrai, sans montage.\n\n— — —\n\nCOMMENT CETTE VIDÉO A ÉTÉ FAITE\n\nUne équipe d'agents IA — la Brigade Végé-Fruitée — dirigée en écrivant. Sur cet épisode, c'est Le Brocoli qui ouvre le bal (MCP RapidoCMS) : il tient le calendrier et propose quoi publier, quand. Les autres suivent : la voix, le montage, la relecture avant publication, la mise en ligne, le bilan.\n\nLa chaîne : Claude, branché sur quatre outils — FoodEatUp pour les données du restaurant, Higgsfield pour l'image, ElevenLabs pour la voix, RapidoCMS pour la publication.\n\nPour cet épisode : La carte du QR code est celle du logiciel : un prix changé le matin est à jour à midi.\n\n— — —\n\n🔗 https://site.foodeatup.com/\n📞 06 14 18 92 25\n\nSaison 6 « L'orchestration du restaurant » — épisode 25 sur 30. Arc : La maison. Rôle à l'écran : Serveur.\n",
         "hashtags": [
           "foodeatup",
           "restaurateur",
+          "rapidocms",
+          "iarestaurant",
           "restaurant",
           "commerce",
           "quartier",
@@ -20044,7 +20666,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
         "motsCles": [
           "la maison",
           "démonstration",
-          "restaurant le qr code a table"
+          "communication restaurant",
+          "agent ia restaurant",
+          "rapidocms",
+          "mcp claude restaurant"
         ],
         "cta": "Voir la carte",
         "titre": "Le QR code à table — La maison | FoodEatUp"
@@ -20057,10 +20682,12 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
   "EP176": {
     "publications": {
       "facebook": {
-        "legende": "La carte change lundi. Oui, on retire un plat que vous aimiez.\n\nLes plats qui sortent, ceux qui entrent. On assume de retirer un plat que des gens aimaient.\n\n👉 Découvrir la nouvelle carte : https://site.foodeatup.com/\nUne table ? 06 14 18 92 25",
+        "legende": "La carte change lundi. Oui, on retire un plat que vous aimiez.\n\nLes plats qui sortent, ceux qui entrent. On assume de retirer un plat que des gens aimaient.\n\nCette vidéo, personne ne l'a montée à la main : Le Brocoli s'en est chargée — il tient le calendrier et propose quoi publier, quand — puis toute la brigade a suivi.\n\n👉 Découvrir la nouvelle carte : https://site.foodeatup.com/\nUne table ? 06 14 18 92 25",
         "hashtags": [
           "foodeatup",
           "restaurateur",
+          "rapidocms",
+          "iarestaurant",
           "restaurant",
           "commerce",
           "quartier",
@@ -20069,15 +20696,20 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
         "motsCles": [
           "la maison",
           "annonce",
-          "restaurant la carte change de saison"
+          "communication restaurant",
+          "agent ia restaurant",
+          "rapidocms",
+          "mcp claude restaurant"
         ],
         "cta": "Découvrir la nouvelle carte"
       },
       "instagram": {
-        "legende": "La carte change lundi.\nOui, on retire un plat que vous aimiez.\n\nLes plats qui sortent, ceux qui entrent. On assume de retirer un plat que des gens aimaient.\n\nDécouvrir la nouvelle carte — lien en bio.\nUne table ? 06 14 18 92 25",
+        "legende": "La carte change lundi.\nOui, on retire un plat que vous aimiez.\n\nLes plats qui sortent, ceux qui entrent. On assume de retirer un plat que des gens aimaient.\n\nFabriquée par Le Brocoli et les neuf autres. Aucun logiciel de montage.\nDécouvrir la nouvelle carte — lien en bio.\nUne table ? 06 14 18 92 25",
         "hashtags": [
           "foodeatup",
           "restaurateur",
+          "rapidocms",
+          "iarestaurant",
           "restaurant",
           "commerce",
           "quartier",
@@ -20086,15 +20718,20 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
         "motsCles": [
           "la maison",
           "annonce",
-          "restaurant la carte change de saison"
+          "communication restaurant",
+          "agent ia restaurant",
+          "rapidocms",
+          "mcp claude restaurant"
         ],
         "cta": "Découvrir la nouvelle carte"
       },
       "tiktok": {
-        "legende": "La carte change lundi.\nOui, on retire un plat que vous aimiez.\n\nLes plats qui sortent, ceux qui entrent.",
+        "legende": "La carte change lundi.\nOui, on retire un plat que vous aimiez.\n\nLes plats qui sortent, ceux qui entrent.\n\nMontée par une IA. Sérieusement. (Le Brocoli, MCP RapidoCMS)",
         "hashtags": [
           "foodeatup",
           "restaurateur",
+          "rapidocms",
+          "iarestaurant",
           "restaurant",
           "commerce",
           "quartier",
@@ -20103,15 +20740,20 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
         "motsCles": [
           "la maison",
           "annonce",
-          "restaurant la carte change de saison"
+          "communication restaurant",
+          "agent ia restaurant",
+          "rapidocms",
+          "mcp claude restaurant"
         ],
         "cta": "Découvrir la nouvelle carte"
       },
       "linkedin": {
-        "legende": "La carte change lundi.\n\nLes plats qui sortent, ceux qui entrent. On assume de retirer un plat que des gens aimaient.\n\nComment on le fait : La nouvelle carte part d'un coup sur le site, le QR code et les réseaux.\n\nDécouvrir la nouvelle carte : https://site.foodeatup.com/\nUne table ? 06 14 18 92 25",
+        "legende": "La carte change lundi.\n\nLes plats qui sortent, ceux qui entrent. On assume de retirer un plat que des gens aimaient.\n\nComment c'est fabriqué, sans agence et sans community manager :\n\n• Le Brocoli (MCP RapidoCMS) — il tient le calendrier et propose quoi publier, quand.\n• Puis la brigade : la voix, le montage, la relecture, la mise en ligne.\n• Le tout dirigé en écrivant, depuis Claude, branché sur quatre outils — FoodEatUp pour les données du restaurant, Higgsfield pour l'image, ElevenLabs pour la voix, RapidoCMS pour la publication.\n\nPour cet épisode : La nouvelle carte part d'un coup sur le site, le QR code et les réseaux.\n\nDécouvrir la nouvelle carte : https://site.foodeatup.com/\nUne table ? 06 14 18 92 25",
         "hashtags": [
           "foodeatup",
           "restaurateur",
+          "rapidocms",
+          "iarestaurant",
           "restaurant",
           "commerce",
           "quartier",
@@ -20120,15 +20762,20 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
         "motsCles": [
           "la maison",
           "annonce",
-          "restaurant la carte change de saison"
+          "communication restaurant",
+          "agent ia restaurant",
+          "rapidocms",
+          "mcp claude restaurant"
         ],
         "cta": "Découvrir la nouvelle carte"
       },
       "youtube": {
-        "legende": "La carte change lundi. Oui, on retire un plat que vous aimiez.\n\nLes plats qui sortent, ceux qui entrent. On assume de retirer un plat que des gens aimaient.\n\n— — —\n\n🔗 https://site.foodeatup.com/\n📞 06 14 18 92 25\n\nSaison 6 « L'orchestration du restaurant » — épisode 26 sur 30. Arc : La maison.\nRôle à l'écran : Chef.\n\nComment c'est fait : La nouvelle carte part d'un coup sur le site, le QR code et les réseaux. Toute la série est publiée avec RapidoCMS, depuis une conversation.\n",
+        "legende": "La carte change lundi. Oui, on retire un plat que vous aimiez.\n\nLes plats qui sortent, ceux qui entrent. On assume de retirer un plat que des gens aimaient.\n\n— — —\n\nCOMMENT CETTE VIDÉO A ÉTÉ FAITE\n\nUne équipe d'agents IA — la Brigade Végé-Fruitée — dirigée en écrivant. Sur cet épisode, c'est Le Brocoli qui ouvre le bal (MCP RapidoCMS) : il tient le calendrier et propose quoi publier, quand. Les autres suivent : la voix, le montage, la relecture avant publication, la mise en ligne, le bilan.\n\nLa chaîne : Claude, branché sur quatre outils — FoodEatUp pour les données du restaurant, Higgsfield pour l'image, ElevenLabs pour la voix, RapidoCMS pour la publication.\n\nPour cet épisode : La nouvelle carte part d'un coup sur le site, le QR code et les réseaux.\n\n— — —\n\n🔗 https://site.foodeatup.com/\n📞 06 14 18 92 25\n\nSaison 6 « L'orchestration du restaurant » — épisode 26 sur 30. Arc : La maison. Rôle à l'écran : Chef.\n",
         "hashtags": [
           "foodeatup",
           "restaurateur",
+          "rapidocms",
+          "iarestaurant",
           "restaurant",
           "commerce",
           "quartier",
@@ -20137,7 +20784,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
         "motsCles": [
           "la maison",
           "annonce",
-          "restaurant la carte change de saison"
+          "communication restaurant",
+          "agent ia restaurant",
+          "rapidocms",
+          "mcp claude restaurant"
         ],
         "cta": "Découvrir la nouvelle carte",
         "titre": "La carte change de saison — La maison | FoodEatUp"
@@ -20150,10 +20800,12 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
   "EP177": {
     "publications": {
       "facebook": {
-        "legende": "On recrute. Voilà la vérité. Les horaires, on les dit.\n\nLe poste, l'équipe, les horaires réels. On dit ce que c'est, pas ce qu'on voudrait que ce soit.\n\n👉 Postuler : https://site.foodeatup.com/\nUne table ? 06 14 18 92 25",
+        "legende": "On recrute. Voilà la vérité. Les horaires, on les dit.\n\nLe poste, l'équipe, les horaires réels. On dit ce que c'est, pas ce qu'on voudrait que ce soit.\n\nCette vidéo, personne ne l'a montée à la main : Le Brocoli s'en est chargée — il tient le calendrier et propose quoi publier, quand — puis toute la brigade a suivi.\n\n👉 Postuler : https://site.foodeatup.com/\nUne table ? 06 14 18 92 25",
         "hashtags": [
           "foodeatup",
           "restaurateur",
+          "rapidocms",
+          "iarestaurant",
           "restaurant",
           "commerce",
           "quartier",
@@ -20162,15 +20814,20 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
         "motsCles": [
           "la maison",
           "annonce",
-          "restaurant on recrute"
+          "communication restaurant",
+          "agent ia restaurant",
+          "rapidocms",
+          "mcp claude restaurant"
         ],
         "cta": "Postuler"
       },
       "instagram": {
-        "legende": "On recrute. Voilà la vérité.\nLes horaires, on les dit.\n\nLe poste, l'équipe, les horaires réels. On dit ce que c'est, pas ce qu'on voudrait que ce soit.\n\nPostuler — lien en bio.\nUne table ? 06 14 18 92 25",
+        "legende": "On recrute. Voilà la vérité.\nLes horaires, on les dit.\n\nLe poste, l'équipe, les horaires réels. On dit ce que c'est, pas ce qu'on voudrait que ce soit.\n\nFabriquée par Le Brocoli et les neuf autres. Aucun logiciel de montage.\nPostuler — lien en bio.\nUne table ? 06 14 18 92 25",
         "hashtags": [
           "foodeatup",
           "restaurateur",
+          "rapidocms",
+          "iarestaurant",
           "restaurant",
           "commerce",
           "quartier",
@@ -20179,15 +20836,20 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
         "motsCles": [
           "la maison",
           "annonce",
-          "restaurant on recrute"
+          "communication restaurant",
+          "agent ia restaurant",
+          "rapidocms",
+          "mcp claude restaurant"
         ],
         "cta": "Postuler"
       },
       "tiktok": {
-        "legende": "On recrute. Voilà la vérité.\nLes horaires, on les dit.\n\nLe poste, l'équipe, les horaires réels.",
+        "legende": "On recrute. Voilà la vérité.\nLes horaires, on les dit.\n\nLe poste, l'équipe, les horaires réels.\n\nMontée par une IA. Sérieusement. (Le Brocoli, MCP RapidoCMS)",
         "hashtags": [
           "foodeatup",
           "restaurateur",
+          "rapidocms",
+          "iarestaurant",
           "restaurant",
           "commerce",
           "quartier",
@@ -20196,15 +20858,20 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
         "motsCles": [
           "la maison",
           "annonce",
-          "restaurant on recrute"
+          "communication restaurant",
+          "agent ia restaurant",
+          "rapidocms",
+          "mcp claude restaurant"
         ],
         "cta": "Postuler"
       },
       "linkedin": {
-        "legende": "On recrute. Voilà la vérité.\n\nLe poste, l'équipe, les horaires réels. On dit ce que c'est, pas ce qu'on voudrait que ce soit.\n\nComment on le fait : Les candidatures arrivent au même endroit, avec leur statut ; on ne perd plus personne dans une boîte mail.\n\nPostuler : https://site.foodeatup.com/\nUne table ? 06 14 18 92 25",
+        "legende": "On recrute. Voilà la vérité.\n\nLe poste, l'équipe, les horaires réels. On dit ce que c'est, pas ce qu'on voudrait que ce soit.\n\nComment c'est fabriqué, sans agence et sans community manager :\n\n• Le Brocoli (MCP RapidoCMS) — il tient le calendrier et propose quoi publier, quand.\n• Puis la brigade : la voix, le montage, la relecture, la mise en ligne.\n• Le tout dirigé en écrivant, depuis Claude, branché sur quatre outils — FoodEatUp pour les données du restaurant, Higgsfield pour l'image, ElevenLabs pour la voix, RapidoCMS pour la publication.\n\nPour cet épisode : Les candidatures arrivent au même endroit, avec leur statut ; on ne perd plus personne dans une boîte mail.\n\nPostuler : https://site.foodeatup.com/\nUne table ? 06 14 18 92 25",
         "hashtags": [
           "foodeatup",
           "restaurateur",
+          "rapidocms",
+          "iarestaurant",
           "restaurant",
           "commerce",
           "quartier",
@@ -20213,15 +20880,20 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
         "motsCles": [
           "la maison",
           "annonce",
-          "restaurant on recrute"
+          "communication restaurant",
+          "agent ia restaurant",
+          "rapidocms",
+          "mcp claude restaurant"
         ],
         "cta": "Postuler"
       },
       "youtube": {
-        "legende": "On recrute. Voilà la vérité. Les horaires, on les dit.\n\nLe poste, l'équipe, les horaires réels. On dit ce que c'est, pas ce qu'on voudrait que ce soit.\n\n— — —\n\n🔗 https://site.foodeatup.com/\n📞 06 14 18 92 25\n\nSaison 6 « L'orchestration du restaurant » — épisode 27 sur 30. Arc : La maison.\nRôle à l'écran : Directeur.\n\nComment c'est fait : Les candidatures arrivent au même endroit, avec leur statut ; on ne perd plus personne dans une boîte mail. Toute la série est publiée avec RapidoCMS, depuis une conversation.\n",
+        "legende": "On recrute. Voilà la vérité. Les horaires, on les dit.\n\nLe poste, l'équipe, les horaires réels. On dit ce que c'est, pas ce qu'on voudrait que ce soit.\n\n— — —\n\nCOMMENT CETTE VIDÉO A ÉTÉ FAITE\n\nUne équipe d'agents IA — la Brigade Végé-Fruitée — dirigée en écrivant. Sur cet épisode, c'est Le Brocoli qui ouvre le bal (MCP RapidoCMS) : il tient le calendrier et propose quoi publier, quand. Les autres suivent : la voix, le montage, la relecture avant publication, la mise en ligne, le bilan.\n\nLa chaîne : Claude, branché sur quatre outils — FoodEatUp pour les données du restaurant, Higgsfield pour l'image, ElevenLabs pour la voix, RapidoCMS pour la publication.\n\nPour cet épisode : Les candidatures arrivent au même endroit, avec leur statut ; on ne perd plus personne dans une boîte mail.\n\n— — —\n\n🔗 https://site.foodeatup.com/\n📞 06 14 18 92 25\n\nSaison 6 « L'orchestration du restaurant » — épisode 27 sur 30. Arc : La maison. Rôle à l'écran : Directeur.\n",
         "hashtags": [
           "foodeatup",
           "restaurateur",
+          "rapidocms",
+          "iarestaurant",
           "restaurant",
           "commerce",
           "quartier",
@@ -20230,7 +20902,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
         "motsCles": [
           "la maison",
           "annonce",
-          "restaurant on recrute"
+          "communication restaurant",
+          "agent ia restaurant",
+          "rapidocms",
+          "mcp claude restaurant"
         ],
         "cta": "Postuler",
         "titre": "On recrute — La maison | FoodEatUp"
@@ -20243,10 +20918,12 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
   "EP178": {
     "publications": {
       "facebook": {
-        "legende": "Chaud à l'arrivée. Jamais préparé trop tôt.\n\nLa commande à emporter préparée au bon moment, pas trop tôt. Le client arrive, c'est prêt et c'est chaud.\n\n👉 Commander à emporter : https://site.foodeatup.com/\nUne table ? 06 14 18 92 25",
+        "legende": "Chaud à l'arrivée. Jamais préparé trop tôt.\n\nLa commande à emporter préparée au bon moment, pas trop tôt. Le client arrive, c'est prêt et c'est chaud.\n\nCette vidéo, personne ne l'a montée à la main : Le Brocoli s'en est chargée — il tient le calendrier et propose quoi publier, quand — puis toute la brigade a suivi.\n\n👉 Commander à emporter : https://site.foodeatup.com/\nUne table ? 06 14 18 92 25",
         "hashtags": [
           "foodeatup",
           "restaurateur",
+          "rapidocms",
+          "iarestaurant",
           "restaurant",
           "commerce",
           "quartier",
@@ -20255,15 +20932,20 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
         "motsCles": [
           "la maison",
           "démonstration",
-          "restaurant a emporter sans que ca refroidisse"
+          "communication restaurant",
+          "agent ia restaurant",
+          "rapidocms",
+          "mcp claude restaurant"
         ],
         "cta": "Commander à emporter"
       },
       "instagram": {
-        "legende": "Chaud à l'arrivée.\nJamais préparé trop tôt.\n\nLa commande à emporter préparée au bon moment, pas trop tôt. Le client arrive, c'est prêt et c'est chaud.\n\nCommander à emporter — lien en bio.\nUne table ? 06 14 18 92 25",
+        "legende": "Chaud à l'arrivée.\nJamais préparé trop tôt.\n\nLa commande à emporter préparée au bon moment, pas trop tôt. Le client arrive, c'est prêt et c'est chaud.\n\nFabriquée par Le Brocoli et les neuf autres. Aucun logiciel de montage.\nCommander à emporter — lien en bio.\nUne table ? 06 14 18 92 25",
         "hashtags": [
           "foodeatup",
           "restaurateur",
+          "rapidocms",
+          "iarestaurant",
           "restaurant",
           "commerce",
           "quartier",
@@ -20272,15 +20954,20 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
         "motsCles": [
           "la maison",
           "démonstration",
-          "restaurant a emporter sans que ca refroidisse"
+          "communication restaurant",
+          "agent ia restaurant",
+          "rapidocms",
+          "mcp claude restaurant"
         ],
         "cta": "Commander à emporter"
       },
       "tiktok": {
-        "legende": "Chaud à l'arrivée.\nJamais préparé trop tôt.\n\nLa commande à emporter préparée au bon moment, pas trop tôt.",
+        "legende": "Chaud à l'arrivée.\nJamais préparé trop tôt.\n\nLa commande à emporter préparée au bon moment, pas trop tôt.\n\nMontée par une IA. Sérieusement. (Le Brocoli, MCP RapidoCMS)",
         "hashtags": [
           "foodeatup",
           "restaurateur",
+          "rapidocms",
+          "iarestaurant",
           "restaurant",
           "commerce",
           "quartier",
@@ -20289,15 +20976,20 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
         "motsCles": [
           "la maison",
           "démonstration",
-          "restaurant a emporter sans que ca refroidisse"
+          "communication restaurant",
+          "agent ia restaurant",
+          "rapidocms",
+          "mcp claude restaurant"
         ],
         "cta": "Commander à emporter"
       },
       "linkedin": {
-        "legende": "Chaud à l'arrivée.\n\nLa commande à emporter préparée au bon moment, pas trop tôt. Le client arrive, c'est prêt et c'est chaud.\n\nComment on le fait : L'heure de retrait pilote le lancement en cuisine.\n\nCommander à emporter : https://site.foodeatup.com/\nUne table ? 06 14 18 92 25",
+        "legende": "Chaud à l'arrivée.\n\nLa commande à emporter préparée au bon moment, pas trop tôt. Le client arrive, c'est prêt et c'est chaud.\n\nComment c'est fabriqué, sans agence et sans community manager :\n\n• Le Brocoli (MCP RapidoCMS) — il tient le calendrier et propose quoi publier, quand.\n• Puis la brigade : la voix, le montage, la relecture, la mise en ligne.\n• Le tout dirigé en écrivant, depuis Claude, branché sur quatre outils — FoodEatUp pour les données du restaurant, Higgsfield pour l'image, ElevenLabs pour la voix, RapidoCMS pour la publication.\n\nPour cet épisode : L'heure de retrait pilote le lancement en cuisine.\n\nCommander à emporter : https://site.foodeatup.com/\nUne table ? 06 14 18 92 25",
         "hashtags": [
           "foodeatup",
           "restaurateur",
+          "rapidocms",
+          "iarestaurant",
           "restaurant",
           "commerce",
           "quartier",
@@ -20306,15 +20998,20 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
         "motsCles": [
           "la maison",
           "démonstration",
-          "restaurant a emporter sans que ca refroidisse"
+          "communication restaurant",
+          "agent ia restaurant",
+          "rapidocms",
+          "mcp claude restaurant"
         ],
         "cta": "Commander à emporter"
       },
       "youtube": {
-        "legende": "Chaud à l'arrivée. Jamais préparé trop tôt.\n\nLa commande à emporter préparée au bon moment, pas trop tôt. Le client arrive, c'est prêt et c'est chaud.\n\n— — —\n\n🔗 https://site.foodeatup.com/\n📞 06 14 18 92 25\n\nSaison 6 « L'orchestration du restaurant » — épisode 28 sur 30. Arc : La maison.\nRôle à l'écran : Chef.\n\nComment c'est fait : L'heure de retrait pilote le lancement en cuisine. Toute la série est publiée avec RapidoCMS, depuis une conversation.\n",
+        "legende": "Chaud à l'arrivée. Jamais préparé trop tôt.\n\nLa commande à emporter préparée au bon moment, pas trop tôt. Le client arrive, c'est prêt et c'est chaud.\n\n— — —\n\nCOMMENT CETTE VIDÉO A ÉTÉ FAITE\n\nUne équipe d'agents IA — la Brigade Végé-Fruitée — dirigée en écrivant. Sur cet épisode, c'est Le Brocoli qui ouvre le bal (MCP RapidoCMS) : il tient le calendrier et propose quoi publier, quand. Les autres suivent : la voix, le montage, la relecture avant publication, la mise en ligne, le bilan.\n\nLa chaîne : Claude, branché sur quatre outils — FoodEatUp pour les données du restaurant, Higgsfield pour l'image, ElevenLabs pour la voix, RapidoCMS pour la publication.\n\nPour cet épisode : L'heure de retrait pilote le lancement en cuisine.\n\n— — —\n\n🔗 https://site.foodeatup.com/\n📞 06 14 18 92 25\n\nSaison 6 « L'orchestration du restaurant » — épisode 28 sur 30. Arc : La maison. Rôle à l'écran : Chef.\n",
         "hashtags": [
           "foodeatup",
           "restaurateur",
+          "rapidocms",
+          "iarestaurant",
           "restaurant",
           "commerce",
           "quartier",
@@ -20323,7 +21020,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
         "motsCles": [
           "la maison",
           "démonstration",
-          "restaurant a emporter sans que ca refroidisse"
+          "communication restaurant",
+          "agent ia restaurant",
+          "rapidocms",
+          "mcp claude restaurant"
         ],
         "cta": "Commander à emporter",
         "titre": "À emporter, sans que ça refroidisse — La maison | FoodEatUp"
@@ -20336,10 +21036,12 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
   "EP179": {
     "publications": {
       "facebook": {
-        "legende": "Fermé le lundi. Ce n'est pas un jour de repos.\n\nCe qu'on fait le lundi : les commandes, les plannings, la compta, la carte de la semaine. Le travail invisible.\n\n👉 Découvrir la maison : https://site.foodeatup.com/\nUne table ? 06 14 18 92 25",
+        "legende": "Fermé le lundi. Ce n'est pas un jour de repos.\n\nCe qu'on fait le lundi : les commandes, les plannings, la compta, la carte de la semaine. Le travail invisible.\n\nCette vidéo, personne ne l'a montée à la main : Le Brocoli s'en est chargée — il tient le calendrier et propose quoi publier, quand — puis toute la brigade a suivi.\n\n👉 Découvrir la maison : https://site.foodeatup.com/\nUne table ? 06 14 18 92 25",
         "hashtags": [
           "foodeatup",
           "restaurateur",
+          "rapidocms",
+          "iarestaurant",
           "restaurant",
           "commerce",
           "quartier",
@@ -20348,15 +21050,20 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
         "motsCles": [
           "la maison",
           "coulisse",
-          "restaurant le jour de fermeture"
+          "communication restaurant",
+          "agent ia restaurant",
+          "rapidocms",
+          "mcp claude restaurant"
         ],
         "cta": "Découvrir la maison"
       },
       "instagram": {
-        "legende": "Fermé le lundi.\nCe n'est pas un jour de repos.\n\nCe qu'on fait le lundi : les commandes, les plannings, la compta, la carte de la semaine. Le travail invisible.\n\nDécouvrir la maison — lien en bio.\nUne table ? 06 14 18 92 25",
+        "legende": "Fermé le lundi.\nCe n'est pas un jour de repos.\n\nCe qu'on fait le lundi : les commandes, les plannings, la compta, la carte de la semaine. Le travail invisible.\n\nFabriquée par Le Brocoli et les neuf autres. Aucun logiciel de montage.\nDécouvrir la maison — lien en bio.\nUne table ? 06 14 18 92 25",
         "hashtags": [
           "foodeatup",
           "restaurateur",
+          "rapidocms",
+          "iarestaurant",
           "restaurant",
           "commerce",
           "quartier",
@@ -20365,15 +21072,20 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
         "motsCles": [
           "la maison",
           "coulisse",
-          "restaurant le jour de fermeture"
+          "communication restaurant",
+          "agent ia restaurant",
+          "rapidocms",
+          "mcp claude restaurant"
         ],
         "cta": "Découvrir la maison"
       },
       "tiktok": {
-        "legende": "Fermé le lundi.\nCe n'est pas un jour de repos.\n\nCe qu'on fait le lundi : les commandes, les plannings, la compta, la carte de la semaine.",
+        "legende": "Fermé le lundi.\nCe n'est pas un jour de repos.\n\nCe qu'on fait le lundi : les commandes, les plannings, la compta, la carte de la semaine.\n\nMontée par une IA. Sérieusement. (Le Brocoli, MCP RapidoCMS)",
         "hashtags": [
           "foodeatup",
           "restaurateur",
+          "rapidocms",
+          "iarestaurant",
           "restaurant",
           "commerce",
           "quartier",
@@ -20382,15 +21094,20 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
         "motsCles": [
           "la maison",
           "coulisse",
-          "restaurant le jour de fermeture"
+          "communication restaurant",
+          "agent ia restaurant",
+          "rapidocms",
+          "mcp claude restaurant"
         ],
         "cta": "Découvrir la maison"
       },
       "linkedin": {
-        "legende": "Fermé le lundi.\n\nCe qu'on fait le lundi : les commandes, les plannings, la compta, la carte de la semaine. Le travail invisible.\n\nComment on le fait : Une matinée suffit parce que tout est au même endroit — c'est le seul moment où le logiciel se voit vraiment.\n\nDécouvrir la maison : https://site.foodeatup.com/\nUne table ? 06 14 18 92 25",
+        "legende": "Fermé le lundi.\n\nCe qu'on fait le lundi : les commandes, les plannings, la compta, la carte de la semaine. Le travail invisible.\n\nComment c'est fabriqué, sans agence et sans community manager :\n\n• Le Brocoli (MCP RapidoCMS) — il tient le calendrier et propose quoi publier, quand.\n• Puis la brigade : la voix, le montage, la relecture, la mise en ligne.\n• Le tout dirigé en écrivant, depuis Claude, branché sur quatre outils — FoodEatUp pour les données du restaurant, Higgsfield pour l'image, ElevenLabs pour la voix, RapidoCMS pour la publication.\n\nPour cet épisode : Une matinée suffit parce que tout est au même endroit — c'est le seul moment où le logiciel se voit vraiment.\n\nDécouvrir la maison : https://site.foodeatup.com/\nUne table ? 06 14 18 92 25",
         "hashtags": [
           "foodeatup",
           "restaurateur",
+          "rapidocms",
+          "iarestaurant",
           "restaurant",
           "commerce",
           "quartier",
@@ -20399,15 +21116,20 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
         "motsCles": [
           "la maison",
           "coulisse",
-          "restaurant le jour de fermeture"
+          "communication restaurant",
+          "agent ia restaurant",
+          "rapidocms",
+          "mcp claude restaurant"
         ],
         "cta": "Découvrir la maison"
       },
       "youtube": {
-        "legende": "Fermé le lundi. Ce n'est pas un jour de repos.\n\nCe qu'on fait le lundi : les commandes, les plannings, la compta, la carte de la semaine. Le travail invisible.\n\n— — —\n\n🔗 https://site.foodeatup.com/\n📞 06 14 18 92 25\n\nSaison 6 « L'orchestration du restaurant » — épisode 29 sur 30. Arc : La maison.\nRôle à l'écran : Directeur.\n\nComment c'est fait : Une matinée suffit parce que tout est au même endroit — c'est le seul moment où le logiciel se voit vraiment. Toute la série est publiée avec RapidoCMS, depuis une conversation.\n",
+        "legende": "Fermé le lundi. Ce n'est pas un jour de repos.\n\nCe qu'on fait le lundi : les commandes, les plannings, la compta, la carte de la semaine. Le travail invisible.\n\n— — —\n\nCOMMENT CETTE VIDÉO A ÉTÉ FAITE\n\nUne équipe d'agents IA — la Brigade Végé-Fruitée — dirigée en écrivant. Sur cet épisode, c'est Le Brocoli qui ouvre le bal (MCP RapidoCMS) : il tient le calendrier et propose quoi publier, quand. Les autres suivent : la voix, le montage, la relecture avant publication, la mise en ligne, le bilan.\n\nLa chaîne : Claude, branché sur quatre outils — FoodEatUp pour les données du restaurant, Higgsfield pour l'image, ElevenLabs pour la voix, RapidoCMS pour la publication.\n\nPour cet épisode : Une matinée suffit parce que tout est au même endroit — c'est le seul moment où le logiciel se voit vraiment.\n\n— — —\n\n🔗 https://site.foodeatup.com/\n📞 06 14 18 92 25\n\nSaison 6 « L'orchestration du restaurant » — épisode 29 sur 30. Arc : La maison. Rôle à l'écran : Directeur.\n",
         "hashtags": [
           "foodeatup",
           "restaurateur",
+          "rapidocms",
+          "iarestaurant",
           "restaurant",
           "commerce",
           "quartier",
@@ -20416,7 +21138,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
         "motsCles": [
           "la maison",
           "coulisse",
-          "restaurant le jour de fermeture"
+          "communication restaurant",
+          "agent ia restaurant",
+          "rapidocms",
+          "mcp claude restaurant"
         ],
         "cta": "Découvrir la maison",
         "titre": "Le jour de fermeture — La maison | FoodEatUp"
@@ -20429,10 +21154,12 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
   "EP180": {
     "publications": {
       "facebook": {
-        "legende": "Un an. Les vrais chiffres. Merci.\n\nLes chiffres de l'année, dits sans fard : couverts, plat le plus vendu, avis reçus, gens embauchés. Et merci.\n\n👉 Réserver une table : https://site.foodeatup.com/\nUne table ? 06 14 18 92 25",
+        "legende": "Un an. Les vrais chiffres. Merci.\n\nLes chiffres de l'année, dits sans fard : couverts, plat le plus vendu, avis reçus, gens embauchés. Et merci.\n\nCette vidéo, personne ne l'a montée à la main : Le Brocoli s'en est chargée — il tient le calendrier et propose quoi publier, quand — puis toute la brigade a suivi.\n\n👉 Réserver une table : https://site.foodeatup.com/\nUne table ? 06 14 18 92 25",
         "hashtags": [
           "foodeatup",
           "restaurateur",
+          "rapidocms",
+          "iarestaurant",
           "restaurant",
           "commerce",
           "quartier",
@@ -20441,15 +21168,20 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
         "motsCles": [
           "la maison",
           "bilan",
-          "restaurant un an de restaurant"
+          "communication restaurant",
+          "agent ia restaurant",
+          "rapidocms",
+          "mcp claude restaurant"
         ],
         "cta": "Réserver une table"
       },
       "instagram": {
-        "legende": "Un an. Les vrais chiffres.\nMerci.\n\nLes chiffres de l'année, dits sans fard : couverts, plat le plus vendu, avis reçus, gens embauchés. Et merci.\n\nRéserver une table — lien en bio.\nUne table ? 06 14 18 92 25",
+        "legende": "Un an. Les vrais chiffres.\nMerci.\n\nLes chiffres de l'année, dits sans fard : couverts, plat le plus vendu, avis reçus, gens embauchés. Et merci.\n\nFabriquée par Le Brocoli et les neuf autres. Aucun logiciel de montage.\nRéserver une table — lien en bio.\nUne table ? 06 14 18 92 25",
         "hashtags": [
           "foodeatup",
           "restaurateur",
+          "rapidocms",
+          "iarestaurant",
           "restaurant",
           "commerce",
           "quartier",
@@ -20458,15 +21190,20 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
         "motsCles": [
           "la maison",
           "bilan",
-          "restaurant un an de restaurant"
+          "communication restaurant",
+          "agent ia restaurant",
+          "rapidocms",
+          "mcp claude restaurant"
         ],
         "cta": "Réserver une table"
       },
       "tiktok": {
-        "legende": "Un an. Les vrais chiffres.\nMerci.\n\nLes chiffres de l'année, dits sans fard : couverts, plat le plus vendu, avis reçus, gens embauchés.",
+        "legende": "Un an. Les vrais chiffres.\nMerci.\n\nLes chiffres de l'année, dits sans fard : couverts, plat le plus vendu, avis reçus, gens embauchés.\n\nMontée par une IA. Sérieusement. (Le Brocoli, MCP RapidoCMS)",
         "hashtags": [
           "foodeatup",
           "restaurateur",
+          "rapidocms",
+          "iarestaurant",
           "restaurant",
           "commerce",
           "quartier",
@@ -20475,15 +21212,20 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
         "motsCles": [
           "la maison",
           "bilan",
-          "restaurant un an de restaurant"
+          "communication restaurant",
+          "agent ia restaurant",
+          "rapidocms",
+          "mcp claude restaurant"
         ],
         "cta": "Réserver une table"
       },
       "linkedin": {
-        "legende": "Un an. Les vrais chiffres.\n\nLes chiffres de l'année, dits sans fard : couverts, plat le plus vendu, avis reçus, gens embauchés. Et merci.\n\nComment on le fait : Tous ces chiffres sortent des rapports — aucun n'est estimé.\n\nRéserver une table : https://site.foodeatup.com/\nUne table ? 06 14 18 92 25",
+        "legende": "Un an. Les vrais chiffres.\n\nLes chiffres de l'année, dits sans fard : couverts, plat le plus vendu, avis reçus, gens embauchés. Et merci.\n\nComment c'est fabriqué, sans agence et sans community manager :\n\n• Le Brocoli (MCP RapidoCMS) — il tient le calendrier et propose quoi publier, quand.\n• Puis la brigade : la voix, le montage, la relecture, la mise en ligne.\n• Le tout dirigé en écrivant, depuis Claude, branché sur quatre outils — FoodEatUp pour les données du restaurant, Higgsfield pour l'image, ElevenLabs pour la voix, RapidoCMS pour la publication.\n\nPour cet épisode : Tous ces chiffres sortent des rapports — aucun n'est estimé.\n\nRéserver une table : https://site.foodeatup.com/\nUne table ? 06 14 18 92 25",
         "hashtags": [
           "foodeatup",
           "restaurateur",
+          "rapidocms",
+          "iarestaurant",
           "restaurant",
           "commerce",
           "quartier",
@@ -20492,15 +21234,20 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
         "motsCles": [
           "la maison",
           "bilan",
-          "restaurant un an de restaurant"
+          "communication restaurant",
+          "agent ia restaurant",
+          "rapidocms",
+          "mcp claude restaurant"
         ],
         "cta": "Réserver une table"
       },
       "youtube": {
-        "legende": "Un an. Les vrais chiffres. Merci.\n\nLes chiffres de l'année, dits sans fard : couverts, plat le plus vendu, avis reçus, gens embauchés. Et merci.\n\n— — —\n\n🔗 https://site.foodeatup.com/\n📞 06 14 18 92 25\n\nSaison 6 « L'orchestration du restaurant » — épisode 30 sur 30. Arc : La maison.\nRôle à l'écran : Directeur.\n\nComment c'est fait : Tous ces chiffres sortent des rapports — aucun n'est estimé. Toute la série est publiée avec RapidoCMS, depuis une conversation.\n",
+        "legende": "Un an. Les vrais chiffres. Merci.\n\nLes chiffres de l'année, dits sans fard : couverts, plat le plus vendu, avis reçus, gens embauchés. Et merci.\n\n— — —\n\nCOMMENT CETTE VIDÉO A ÉTÉ FAITE\n\nUne équipe d'agents IA — la Brigade Végé-Fruitée — dirigée en écrivant. Sur cet épisode, c'est Le Brocoli qui ouvre le bal (MCP RapidoCMS) : il tient le calendrier et propose quoi publier, quand. Les autres suivent : la voix, le montage, la relecture avant publication, la mise en ligne, le bilan.\n\nLa chaîne : Claude, branché sur quatre outils — FoodEatUp pour les données du restaurant, Higgsfield pour l'image, ElevenLabs pour la voix, RapidoCMS pour la publication.\n\nPour cet épisode : Tous ces chiffres sortent des rapports — aucun n'est estimé.\n\n— — —\n\n🔗 https://site.foodeatup.com/\n📞 06 14 18 92 25\n\nSaison 6 « L'orchestration du restaurant » — épisode 30 sur 30. Arc : La maison. Rôle à l'écran : Directeur.\n",
         "hashtags": [
           "foodeatup",
           "restaurateur",
+          "rapidocms",
+          "iarestaurant",
           "restaurant",
           "commerce",
           "quartier",
@@ -20509,7 +21256,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
         "motsCles": [
           "la maison",
           "bilan",
-          "restaurant un an de restaurant"
+          "communication restaurant",
+          "agent ia restaurant",
+          "rapidocms",
+          "mcp claude restaurant"
         ],
         "cta": "Réserver une table",
         "titre": "Un an de restaurant — La maison | FoodEatUp"

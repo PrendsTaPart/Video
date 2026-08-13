@@ -44,7 +44,7 @@ TAGS_ARC = {
     "Le client":          ["restaurant", "client", "accueil", "service"],
     "La maison":          ["restaurant", "commerce", "quartier", "maison"],
 }
-TAGS_SOCLE = ["foodeatup", "restaurateur"]
+TAGS_SOCLE = ["foodeatup", "restaurateur", "rapidocms", "iarestaurant"]
 
 # La saison 6 ne se filme pas dans le même monde que les cinq autres : le décor
 # suit l'arc, pas la saison, parce que c'est le restaurant qu'on montre.
@@ -77,30 +77,74 @@ def trois_mots(e):
     return " ".join(mots[:3]).upper()
 
 
+# --- La brigade d'agents ------------------------------------------------------
+# Chaque épisode est porté par un des dix végé-fruités, qui tient un poste du
+# restaurant ET pilote un outil réel via son MCP. Le rapprochement suit l'arc :
+# un épisode de coulisses est porté par celui qui ouvre les livres, un épisode
+# d'événement par celle qui publie.
+#
+# Ces cinq lignes doivent rester d'accord avec src/data/agents.ts du site. Deux
+# tables, un seul sujet : si l'une bouge, l'autre suit.
+AGENT_PAR_ARC = {
+    "La carte à l'écran": ("La Fraise", "MCP Higgsfield",
+                           "elle écrit le plan et le fait rendre en dix secondes"),
+    "Les événements":     ("La Betterave", "MCP RapidoCMS",
+                           "elle programme les cinq réseaux aux bons créneaux"),
+    "Les coulisses":      ("L'Oignon", "MCP FoodEatUp",
+                           "il ouvre les livres : ventes, stock, réservations"),
+    "Le client":          ("Don Citrone", "MCP FoodEatUp",
+                           "il relie ce qui est publié à ce qui arrive en salle"),
+    "La maison":          ("Le Brocoli", "MCP RapidoCMS",
+                           "il tient le calendrier et propose quoi publier, quand"),
+}
+
+# La chaîne complète, dite en une phrase. Elle ne change pas d'un épisode à
+# l'autre : c'est le refrain de la saison.
+CHAINE = ("Claude, branché sur quatre outils — FoodEatUp pour les données du "
+          "restaurant, Higgsfield pour l'image, ElevenLabs pour la voix, "
+          "RapidoCMS pour la publication.")
+
+
 def legende(e, reseau):
-    """Le restaurant parle. Le logiciel n'a droit qu'à la dernière ligne."""
+    """Le restaurant parle. La méthode n'a droit qu'à la fin — sauf sur LinkedIn."""
     a, p, corps = e["accroche"], e["punchline"], e["publie"]
+    nom, mcp, fait = AGENT_PAR_ARC[e["arc"]]
 
     if reseau == "facebook":
-        b = [f"{a} {p}", "", corps, "", f"👉 {e['cta']} : {SITE_RESTO}",
-             f"Une table ? {TEL}"]
+        b = [f"{a} {p}", "", corps, "",
+             f"Cette vidéo, personne ne l'a montée à la main : {nom} s'en est "
+             f"chargée — {fait} — puis toute la brigade a suivi.", "",
+             f"👉 {e['cta']} : {SITE_RESTO}", f"Une table ? {TEL}"]
     elif reseau == "instagram":
-        b = [a, p, "", corps, "", f"{e['cta']} — lien en bio.", f"Une table ? {TEL}"]
+        b = [a, p, "", corps, "",
+             f"Fabriquée par {nom} et les neuf autres. Aucun logiciel de montage.",
+             f"{e['cta']} — lien en bio.", f"Une table ? {TEL}"]
     elif reseau == "tiktok":
-        b = [a, p, "", corps.split(".")[0].strip() + "."]
+        b = [a, p, "", corps.split(".")[0].strip() + ".", "",
+             f"Montée par une IA. Sérieusement. ({nom}, {mcp})"]
     elif reseau == "linkedin":
-        # Sur LinkedIn on s'adresse à un confrère : c'est le seul réseau où la
-        # méthode intéresse autant que le plat.
-        b = [a, "", corps, "", f"Comment on le fait : {e['logiciel']}", "",
+        # Sur LinkedIn on s'adresse à un confrère restaurateur : c'est le seul
+        # réseau où la méthode intéresse autant que le plat. On la déplie.
+        b = [a, "", corps, "",
+             "Comment c'est fabriqué, sans agence et sans community manager :", "",
+             f"• {nom} ({mcp}) — {fait}.",
+             f"• Puis la brigade : la voix, le montage, la relecture, la mise en ligne.",
+             f"• Le tout dirigé en écrivant, depuis {CHAINE}", "",
+             f"Pour cet épisode : {e['logiciel']}", "",
              f"{e['cta']} : {SITE_RESTO}", f"Une table ? {TEL}"]
     else:
         b = [f"{a} {p}", "", corps, "", "— — —", "",
+             "COMMENT CETTE VIDÉO A ÉTÉ FAITE", "",
+             f"Une équipe d'agents IA — la Brigade Végé-Fruitée — dirigée en "
+             f"écrivant. Sur cet épisode, c'est {nom} qui ouvre le bal ({mcp}) : "
+             f"{fait}. Les autres suivent : la voix, le montage, la relecture "
+             "avant publication, la mise en ligne, le bilan.", "",
+             f"La chaîne : {CHAINE}", "",
+             f"Pour cet épisode : {e['logiciel']}", "",
+             "— — —", "",
              f"🔗 {SITE_RESTO}", f"📞 {TEL}", "",
              f"Saison 6 « L'orchestration du restaurant » — épisode {e['n'] - 150} "
-             f"sur 30. Arc : {e['arc']}.",
-             f"Rôle à l'écran : {e['role']}.", "",
-             f"Comment c'est fait : {e['logiciel']} Toute la série est publiée "
-             "avec RapidoCMS, depuis une conversation.", ""]
+             f"sur 30. Arc : {e['arc']}. Rôle à l'écran : {e['role']}.", ""]
     return "\n".join(b)
 
 
@@ -165,7 +209,8 @@ def main():
                 "cta": e["cta"],
                 "lienCta": SITE_RESTO if CLIQUABLE[res] else None,
                 "motsCles": [e["arc"].lower(), e["format"].lower(),
-                             "restaurant " + slug(e["titre"]).replace("-", " ")],
+                             "communication restaurant", "agent ia restaurant",
+                             "rapidocms", "mcp claude restaurant"],
             }
             if res == "youtube":
                 reseaux[res]["titre"] = titre_youtube(e)
