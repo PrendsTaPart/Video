@@ -98,6 +98,37 @@ BRIGADE = {
     "navet":          ("Le Navet", "MCP RapidoCMS", "il fait le compte de ce qui a marché"),
 }
 
+def au_fil(nom):
+    """Le nom du végé-fruité au milieu d'une phrase.
+
+    La table donne les noms tels qu'on les écrit seuls — « La Fraise »,
+    « L'Oignon ». Au fil d'une phrase parlée, cette majuscule sur l'article se
+    voit et se lit comme une faute. On l'abaisse ; les noms sans article
+    (« Tomate Man », « Don Citrone ») restent intacts.
+    """
+    for a in ("La ", "Le ", "L'"):
+        if nom.startswith(a):
+            return a.lower() + nom[len(a):]
+    return nom
+
+
+# Ce que chacun dit quand c'est LUI qui parle. La table BRIGADE décrit les
+# agents à la troisième personne — c'est la bonne voix pour un plan Higgsfield
+# ou une fiche. Dans un script HeyGen, le personnage se présente lui-même :
+# « Moi c'est la Fraise, j'écris le plan » et non « elle écrit le plan ».
+JE = {
+    "fraise":         "j'écris le plan et je le fais rendre en dix secondes",
+    "tomate":         "j'assemble les cinq segments et je contrôle avant de livrer",
+    "ail":            "je tiens la carte à jour partout à la fois",
+    "pomme-de-terre": "je donne la voix off de la série",
+    "citron":         "je relie ce qui est publié à ce qui arrive en salle",
+    "oignon":         "j'ouvre les livres : ventes, stock, réservations",
+    "betterave":      "je programme les cinq réseaux aux bons créneaux",
+    "brocoli":        "je tiens le calendrier et je propose quoi publier, quand",
+    "carotte":        "je relis tout avant que ça sorte",
+    "navet":          "je fais le compte de ce qui a marché",
+}
+
 # La chaîne complète, dite en une phrase. Elle ne change pas d'un épisode à
 # l'autre : c'est le refrain de la saison.
 CHAINE = ("Claude, branché sur quatre outils — FoodEatUp pour les données du "
@@ -189,7 +220,8 @@ def prompt_higgsfield(e):
         "clairs, blancs, gris #383838. Pas de crème, pas d'orange.\n\n"
         "DEUX personnages dans le même plan :\n"
         "— " + nom + ", personnage 3D stylisé de la Brigade Végé-Fruitée, EN "
-        "VEDETTE, au premier plan, deux tiers du cadre. C'est lui qui agit : "
+        "VEDETTE, au premier plan, deux tiers du cadre. C'est le personnage "
+        "qui agit : "
         "" + fait + " ;\n"
         "— le chef, PHOTORÉALISTE, veste blanche et tablier, en retrait dans "
         "son restaurant. Il regarde faire, il ne fait pas.\n\n"
@@ -220,9 +252,8 @@ def script_heygen(e):
     """
     nom, mcp, fait = BRIGADE[e["agent"]]
     return (
-        f"Moi c'est {nom}. Pour cet épisode, {fait} — vous me le demandez en "
-        f"une phrase. Vos photos, notre gabarit : la vidéo part sur vos cinq "
-        f"réseaux le soir même."
+        f"Moi c'est {au_fil(nom)}. Sur cet épisode, {JE[e['agent']]}. Vous "
+        f"me le demandez, ça part sur vos cinq réseaux ce soir."
     )
 
 
