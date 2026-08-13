@@ -153,6 +153,113 @@ def titre_youtube(e):
     return t if len(t) <= 95 else f"{e['titre']} | FoodEatUp"[:95]
 
 
+
+# --- Ce qu'un restaurateur copie pour refaire l'épisode chez lui ---------------
+#
+# La saison 6 ne se contente pas de montrer le résultat : elle donne la recette.
+# Chaque épisode porte donc trois prompts prêts à coller, dans l'ordre de la
+# chaîne — Higgsfield, Claude Code, RapidoCMS.
+#
+# Les crochets sont le cœur du dispositif. `[TON PLAT]`, `[TON RESTAURANT]` :
+# le restaurateur remplace, il n'écrit pas. Un prompt entièrement rédigé serait
+# copié tel quel et publierait notre plat sur son compte ; un prompt vide le
+# renverrait à la page blanche. Les crochets sont le seul entre-deux qui marche.
+#
+# Le plan Higgsfield de cette saison met DEUX personnages : le chef, photo
+# réaliste, et son végé-fruité, en 3D, à côté de lui. C'est l'image de la saison
+# — un restaurateur et son agent, dans la même pièce.
+
+def prompt_higgsfield(e):
+    nom, mcp, fait = BRIGADE[e["agent"]]
+    decor, lumiere = DECORS[e["arc"]]
+    return (
+        "Vertical 9:16, 10 secondes, 4K. PAS de texte incrusté, PAS de "
+        "sous-titres, PAS de filigrane, PAS de logo.\n\n"
+        "DEUX personnages dans le même plan, et c'est voulu :\n"
+        "— le chef, PHOTORÉALISTE, joue le rôle : " + e["role"].lower() + ". "
+        "Veste blanche, tablier, il est chez lui dans son restaurant ;\n"
+        "— " + nom + ", personnage 3D stylisé de la Brigade Végé-Fruitée, "
+        "incrusté dans le même décor à côté de lui, à hauteur de comptoir. "
+        "Il ne parle pas : il fait le geste de son métier — " + fait + ".\n\n"
+        "Le mélange photo + 3D est assumé, comme un dessin animé posé dans une "
+        "prise de vue réelle. Les ombres et la lumière du personnage 3D suivent "
+        "celles du décor.\n\n"
+        "Décor : " + decor + ". " + lumiere + ".\n"
+        "Action : " + e["publie"].split(".")[0].strip() + ". "
+        "À 5 secondes, le geste bascule et le personnage 3D réagit.\n"
+        "Deux dernières secondes : les deux regardent l'objectif, immobiles.\n\n"
+        "Audio : ambiance réelle du restaurant, aucun dialogue, pas de musique."
+    )
+
+
+def script_heygen(e):
+    """La phrase que dit le chef à l'écran. 25 à 30 mots, jamais plus."""
+    return e["publie"].split(".")[0].strip() + ". " + e["punchline"]
+
+
+def kit(e):
+    """Les trois prompts à copier, avec leurs crochets."""
+    nom, mcp, fait = BRIGADE[e["agent"]]
+    hf = prompt_higgsfield(e)
+    hf = (hf.replace("son restaurant", "[TON RESTAURANT]")
+            .replace("Action : ", "Action : chez [TON RESTAURANT], "))
+    return [
+        {
+            "etape": 1,
+            "titre": "Le plan comique",
+            "outil": "Higgsfield",
+            "guide": e["agent"],
+            "consigne": "Remplace ce qui est entre crochets par ce qui est chez toi, "
+                        "colle le tout dans Higgsfield, et lance. Dix secondes plus "
+                        "tard tu as ton plan.",
+            "lien": "https://higgsfield.ai/",
+            "prompt": hf + "\n\nÉléments à remplacer : [TON RESTAURANT], "
+                           "[TON PLAT], [TON PRÉNOM].",
+        },
+        {
+            "etape": 2,
+            "titre": "Le montage",
+            "outil": "Claude Code",
+            "guide": "tomate",
+            "consigne": "Dépose ton plan et ton avatar dans le dépôt, puis écris "
+                        "cette phrase à Claude Code. Tu n'ouvres aucun logiciel de "
+                        "montage.",
+            "lien": "https://claude.com/claude-code",
+            "prompt": (
+                "Monte l'épisode [TON NUMÉRO] de ma série.\n\n"
+                "— Plan comique : assets/hooks/[TON NUMÉRO].mp4\n"
+                "— Avatar : assets/avatar/[TON NUMÉRO].mp4\n"
+                "— Écran du logiciel : assets/software/[TON NUMÉRO].mp4\n"
+                "— Accroche à incruster : « " + e["accroche"] + " »\n"
+                "— Punchline en voix off à 5,0 s : « " + e["punchline"] + " »\n\n"
+                "Anatomie : A 0→9,5 · sting 9,5→18,5 · avatar seul 18,5→28,5 · "
+                "signature 28,5→32,5 · sting de marque 32,5→37,5.\n"
+                "Contrôle le master avant de me le rendre : 37,5 s, 1080×1920, "
+                "-14 LUFS, crête sous -1 dBTP."
+            ),
+        },
+        {
+            "etape": 3,
+            "titre": "La publication",
+            "outil": "RapidoCMS",
+            "guide": "betterave",
+            "consigne": "Une phrase, et les cinq réseaux sont programmés. Tu ne "
+                        "téléverses rien nulle part.",
+            "lien": "https://cms.rapidosoftware.com/register",
+            "prompt": (
+                "Verse le master dans ma bibliothèque RapidoCMS, puis programme "
+                "les cinq réseaux de [TON RESTAURANT] :\n\n"
+                "— LinkedIn à 8 h, Facebook à 12 h, YouTube à 10 h, "
+                "Instagram à 18 h 30, TikTok à 19 h\n"
+                "— Légende : « " + e["accroche"] + " " + e["punchline"] + " » "
+                "puis le corps, puis « [TON APPEL À L'ACTION] : [TON SITE] »\n"
+                "— Mots-dièse : #restaurant #[TA VILLE] #[TA SPÉCIALITÉ]\n\n"
+                "Rends-moi le lien de chaque publication."
+            ),
+        },
+    ]
+
+
 def prompt_vignette(e):
     """La vignette de la saison 6 : c'est le végé-fruité la vedette.
 
@@ -235,9 +342,12 @@ def main():
             "dureeSecondes": anc.get("dureeSecondes"),
             "videoUrl": anc.get("videoUrl"),
             "tutoriel": None, "tutorielModuleUrl": None,
-            "higgsfield": anc.get("higgsfield",
-                                  {"videoSourceUrl": None, "source": None,
-                                   "duree": "10 s", "format": "vertical 9:16"}),
+            "higgsfield": {**anc.get("higgsfield",
+                                     {"videoSourceUrl": None, "source": None,
+                                      "duree": "10 s", "format": "vertical 9:16"}),
+                           "prompt": prompt_higgsfield(e)},
+            "scriptHeygen": script_heygen(e),
+            "kit": kit(e),
             "masterRapidoUrl": anc.get("masterRapidoUrl"),
             "posterUrl": anc.get("posterUrl"),
             "troisMots": trois_mots(e),

@@ -51,10 +51,27 @@ export type PublicationTexte = {{
   titre?: string;
 }};
 
+/** Une étape du kit « refaites-le chez vous » — saison 6. */
+export type EtapeKit = {{
+  etape: number;
+  titre: string;
+  outil: string;
+  /** Le végé-fruité qui explique cette étape. */
+  guide: string;
+  consigne: string;
+  lien: string;
+  /** Le prompt à copier. Les crochets sont à remplacer par le restaurateur. */
+  prompt: string;
+}};
+
 export type ContenuEpisode = {{
   publications: Record<Reseau, PublicationTexte>;
   promptVignette: string;
   higgsfieldPrompt: string | null;
+  /** Saison 6 : ce que dit le chef à l'écran. */
+  scriptHeygen?: string | null;
+  /** Saison 6 : les trois prompts à copier, dans l'ordre de la chaîne. */
+  kit?: EtapeKit[] | null;
   tutoriel: {{ description: string | null; etapes: string[]; astuce: string | null }} | null;
 }};
 
@@ -84,6 +101,11 @@ def main():
                     "publications": pubs,
                     "promptVignette": e.pop("promptVignette", ""),
                     "higgsfieldPrompt": e["higgsfield"].pop("prompt", None),
+                    # Saison 6 seulement : le script de l'avatar et les trois
+                    # prompts à copier. Longs, et affichés sur la seule page de
+                    # l'épisode — ils n'ont rien à faire dans le morceau commun.
+                    "scriptHeygen": e.pop("scriptHeygen", None),
+                    "kit": e.pop("kit", None),
                     "tutoriel": {k: t.pop(k, None) for k in TEXTE_TUTO} if t else None,
                 }
 
