@@ -8560,10 +8560,10 @@ export const series: Serie[] = [
             },
             "tutorielModuleUrl": "https://tutoriel.foodeatup.com/module/haccp",
             "higgsfield": {
-              "videoSourceUrl": null,
+              "videoSourceUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/Higgsfield-source-EP109-Le-kombucha-qui-explose",
               "duree": "10 s",
               "format": "vertical 9:16",
-              "source": null
+              "source": "rapidocms"
             },
             "masterRapidoUrl": null
           },
@@ -8791,10 +8791,10 @@ export const series: Serie[] = [
             },
             "tutorielModuleUrl": "https://tutoriel.foodeatup.com/module/site-web-vitrine",
             "higgsfield": {
-              "videoSourceUrl": null,
+              "videoSourceUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/Higgsfield-source-EP112-Le-casque-de-realite-augmentee",
               "duree": "10 s",
               "format": "vertical 9:16",
-              "source": null
+              "source": "rapidocms"
             },
             "masterRapidoUrl": null
           },
@@ -8869,10 +8869,10 @@ export const series: Serie[] = [
             },
             "tutorielModuleUrl": "https://tutoriel.foodeatup.com/module/hubrise-livraisons",
             "higgsfield": {
-              "videoSourceUrl": null,
+              "videoSourceUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/Higgsfield-source-EP113-Le-drone-qui-se-trompe-de-balcon",
               "duree": "10 s",
               "format": "vertical 9:16",
-              "source": null
+              "source": "rapidocms"
             },
             "masterRapidoUrl": null
           },
@@ -8946,10 +8946,10 @@ export const series: Serie[] = [
             },
             "tutorielModuleUrl": "https://tutoriel.foodeatup.com/module/marketing-fidelite",
             "higgsfield": {
-              "videoSourceUrl": null,
+              "videoSourceUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/Higgsfield-source-EP114-La-chore-pendant-que-ca-brule",
               "duree": "10 s",
               "format": "vertical 9:16",
-              "source": null
+              "source": "rapidocms"
             },
             "masterRapidoUrl": null
           },
@@ -9023,10 +9023,10 @@ export const series: Serie[] = [
             },
             "tutorielModuleUrl": "https://tutoriel.foodeatup.com/module/stockvision-ai",
             "higgsfield": {
-              "videoSourceUrl": null,
+              "videoSourceUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/Higgsfield-source-EP115-Les-poules-du-potager-du-toit",
               "duree": "10 s",
               "format": "vertical 9:16",
-              "source": null
+              "source": "rapidocms"
             },
             "masterRapidoUrl": null
           },
@@ -9100,10 +9100,10 @@ export const series: Serie[] = [
             },
             "tutorielModuleUrl": "https://tutoriel.foodeatup.com/module/kds-cuisine",
             "higgsfield": {
-              "videoSourceUrl": null,
+              "videoSourceUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/Higgsfield-source-EP116-Le-stagiaire-et-le-mur-de-craie",
               "duree": "10 s",
               "format": "vertical 9:16",
-              "source": null
+              "source": "rapidocms"
             },
             "masterRapidoUrl": null
           },
@@ -9177,10 +9177,10 @@ export const series: Serie[] = [
             },
             "tutorielModuleUrl": "https://tutoriel.foodeatup.com/module/stockvision-ai",
             "higgsfield": {
-              "videoSourceUrl": null,
+              "videoSourceUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/Higgsfield-source-EP117-Le-plat-etoile-en-dix-minutes",
               "duree": "10 s",
               "format": "vertical 9:16",
-              "source": null
+              "source": "rapidocms"
             },
             "masterRapidoUrl": null
           },
@@ -9254,10 +9254,10 @@ export const series: Serie[] = [
             },
             "tutorielModuleUrl": "https://tutoriel.foodeatup.com/module/site-web-vitrine",
             "higgsfield": {
-              "videoSourceUrl": null,
+              "videoSourceUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/Higgsfield-source-EP118-La-file-du-brunch",
               "duree": "10 s",
               "format": "vertical 9:16",
-              "source": null
+              "source": "rapidocms"
             },
             "masterRapidoUrl": null
           },
@@ -9331,10 +9331,10 @@ export const series: Serie[] = [
             },
             "tutorielModuleUrl": "https://tutoriel.foodeatup.com/module/marketing-fidelite",
             "higgsfield": {
-              "videoSourceUrl": null,
+              "videoSourceUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/Higgsfield-source-EP119-La-mascotte-poulet-et-le-vent",
               "duree": "10 s",
               "format": "vertical 9:16",
-              "source": null
+              "source": "rapidocms"
             },
             "masterRapidoUrl": null
           },
@@ -9408,10 +9408,10 @@ export const series: Serie[] = [
             },
             "tutorielModuleUrl": "https://tutoriel.foodeatup.com/module/predibot",
             "higgsfield": {
-              "videoSourceUrl": null,
+              "videoSourceUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/Higgsfield-source-EP120-La-reunion-des-dix-logiciels",
               "duree": "10 s",
               "format": "vertical 9:16",
-              "source": null
+              "source": "rapidocms"
             },
             "masterRapidoUrl": null
           }
