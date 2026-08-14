@@ -340,4 +340,39 @@
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
+  <url>
+    <loc>https://foodeatup-social.lovable.app/series/une-journee</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://foodeatup-social.lovable.app/series/une-journee/saison/1</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://foodeatup-social.lovable.app/series/une-journee/saison/2</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://foodeatup-social.lovable.app/series/lia-dans-foodeatup</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://foodeatup-social.lovable.app/series/lia-dans-foodeatup/saison/1</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://foodeatup-social.lovable.app/series/lia-dans-foodeatup/saison/2</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://foodeatup-social.lovable.app/series/lia-dans-foodeatup/saison/3</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
 </urlset>

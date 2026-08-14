@@ -77,6 +77,10 @@ INTERDITS = (
 )
 
 
+CHEF_SERIE = CHEF
+CHARTE_SERIE = CHARTE
+
+
 def phrase(t):
     """Une phrase propre : première lettre capitale, point final."""
     t = (t or "").strip().rstrip(".!?…")
@@ -203,10 +207,10 @@ def prompt_planche(e, p):
     return (
         f"Photo réaliste, cadrage vertical 4:5, 1080 × 1350 pixels. "
         f"Planche {p['n']} sur 4 — « {p['role']} ».\n\n"
-        f"{CHEF}\n\n"
+        f"{CHEF_SERIE}\n\n"
         f"SCÈNE — {p['decor']}. Expression : {p['expression']}.\n\n"
         f"{bande}{bas}\n\n"
-        f"{CHARTE}\n\n{INTERDITS}"
+        f"{CHARTE_SERIE}\n\n{INTERDITS}"
     )
 
 
@@ -216,7 +220,7 @@ def prompt_facebook(e):
         "Photo réaliste, cadrage vertical 4:5, 1080 × 1350 pixels. Publication "
         "Facebook — l'image EST la publication, elle se comprend seule, sans "
         "légende et sans son.\n\n"
-        f"{CHEF}\n\n"
+        f"{CHEF_SERIE}\n\n"
         f"SCÈNE — {e['titre'].lower()} : le chef dans la situation comique de "
         f"l'épisode, plan poitrine, décor de restaurant en service, lumière "
         f"chaude de fin de journée. Expression : faussement dépité, la main "
@@ -232,14 +236,48 @@ def prompt_facebook(e):
     )
 
 
+# Le personnage change d'une série à l'autre, et c'est le seul endroit du
+# prompt qui ne se recopie pas. « Une journée » filme dix métiers différents,
+# jamais le chef FoodEatUp : la photo de référence y sert de référence de
+# STYLE — lumière, grain, réalisme — et non de visage. Confondre les deux
+# donnerait trente et une images du même homme déguisé en plongeur.
+PERSONNAGES = {
+    "une-journee": (
+        "PERSONNAGE — le métier filmé, pas le chef FoodEatUp. La photo jointe "
+        "est une référence de STYLE (lumière, grain, réalisme, cadrage), pas "
+        "de visage. Le personnage doit être identique sur les trois épisodes "
+        "de son métier, et distinct des neuf autres métiers.\n\n"
+        "AUCUN écran allumé, AUCUNE tablette, AUCUNE interface visible : "
+        "cette série montre le geste, pas l'outil."),
+    "lia-dans-foodeatup": (
+        CHEF + "\n\nAUCUN schéma, AUCUN diagramme, AUCUNE infographie. On "
+        "filme ce que la phrase déclenche dans le restaurant, jamais la boîte "
+        "et les flèches qui l'expliquent."),
+}
+
+CHARTES = {
+    "lia-dans-foodeatup": (
+        "CHARTE — RapidoCMS. Bleu #03A9F5, gris #383838, blanc, tons clairs. "
+        "PAS de crème, PAS d'orange : ce sont les couleurs de l'autre série. "
+        "Le bleu est dans le décor — un écran éteint, une lumière, un objet — "
+        "et ne forme jamais un logo."),
+}
+
+
 def main():
     d = json.load(open(SERIES, encoding="utf-8"))
     n = 0
     for s in d["series"]:
+        # Le personnage et la charte dépendent de la série. Posés en variables
+        # de module le temps de la boucle plutôt que passés à chaque fonction :
+        # cinq signatures à changer pour une valeur qui ne varie pas dans un
+        # épisode.
+        globals()["CHEF_SERIE"] = PERSONNAGES.get(s["slug"], CHEF)
+        globals()["CHARTE_SERIE"] = CHARTES.get(s["slug"], CHARTE)
         for sa in s["saisons"]:
-            # La saison 6 met les végé-fruités en vedette, pas le chef seul :
+            # La saison 6 du Coup de Feu met les végé-fruités en vedette :
             # ses formats image se génèrent ailleurs, avec la brigade.
-            if sa["numero"] >= 6:
+            if s["slug"] == "le-coup-de-feu" and sa["numero"] >= 6:
                 continue
             for e in sa["episodes"]:
                 ps = planches(e)

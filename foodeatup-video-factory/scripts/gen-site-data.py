@@ -94,6 +94,19 @@ export type ContenuEpisode = FormatsSociaux & {{
   higgsfieldPrompt: string | null;
   /** Saison 6 : ce que dit le végé-fruité à l'écran, en personnage HeyGen. */
   scriptHeygen?: string | null;
+  /** Séries 2 et 3 : le métier filmé, la phase, la boucle du modèle touchée. */
+  metier?: string | null;
+  phase?: string | null;
+  amplitude?: string | null;
+  boucle?: string | null;
+  boucleSlug?: string | null;
+  grandeBoucle?: string | null;
+  /** L'incident partagé : deux épisodes qui le portent se répondent. */
+  incident?: string | null;
+  incidentHeure?: string | null;
+  incidentQuoi?: string | null;
+  /** Série 3 : l'étape du cas des douze kilos, quand l'épisode la traverse. */
+  saumon?: string | null;
   /** Saison 6 : les quatre prompts à copier, dans l'ordre de la chaîne. */
   kit?: EtapeKit[] | null;
   tutoriel: {{ description: string | null; etapes: string[]; astuce: string | null }} | null;
@@ -134,6 +147,19 @@ def main():
                     # carrousel plus cent cinquante visuels Facebook : c'est
                     # long, ça ne s'affiche que sur la page de l'épisode, donc
                     # ça vit ici et pas dans le morceau commun.
+                    # Séries « Une journée » et « L'IA dans FoodEatUp » : le
+                    # métier, la boucle touchée, l'incident partagé. Ils ne
+                    # servent qu'à la page de l'épisode.
+                    "metier": e.pop("metier", None),
+                    "phase": e.pop("phase", None),
+                    "amplitude": e.pop("amplitude", None),
+                    "boucle": e.pop("boucle", None),
+                    "boucleSlug": e.pop("boucleSlug", None),
+                    "grandeBoucle": e.pop("grandeBoucle", None),
+                    "incident": e.pop("incident", None),
+                    "incidentHeure": e.pop("incidentHeure", None),
+                    "incidentQuoi": e.pop("incidentQuoi", None),
+                    "saumon": e.pop("saumon", None),
                     "story": e.pop("story", None),
                     "carrousel": e.pop("carrousel", None),
                     "imageFacebook": e.pop("imageFacebook", None),
