@@ -51,6 +51,20 @@ export type PublicationTexte = {{
   titre?: string;
 }};
 
+/**
+ * Ce que Claude Code rend, une fois le plan et l'avatar en main.
+ *
+ * Les cinq segments ne varient jamais d'ordre ni de durée : c'est ce qui rend
+ * la série reconnaissable en deux secondes. Ce qui varie, c'est leur contenu.
+ */
+export type Montage = {{
+  /** La consigne à donner à Claude Code, telle quelle. */
+  consigne: string;
+  segments: {{ titre: string; debut: number; fin: number; contenu: string }}[];
+  /** Ce qui sort : format, durée, niveau sonore, destination. */
+  livrable: string;
+}};
+
 /** Une planche de carrousel LinkedIn. */
 export type PlancheCarrousel = {{
   n: number;
@@ -109,6 +123,10 @@ export type ContenuEpisode = FormatsSociaux & {{
   saumon?: string | null;
   /** Saison 6 : les quatre prompts à copier, dans l'ordre de la chaîne. */
   kit?: EtapeKit[] | null;
+  /** Saisons 7 et 8 : le prompt HeyGen de l'avatar 3D du chef. */
+  heygenPrompt?: string | null;
+  /** Saisons 7 et 8 : le montage rendu par Claude Code. */
+  montage?: Montage | null;
   tutoriel: {{ description: string | null; etapes: string[]; astuce: string | null }} | null;
 }};
 
@@ -134,6 +152,10 @@ def main():
                     for k in TEXTE_PUB:
                         p.pop(k, None)
                 t = e.get("tutoriel")
+                # `story.url` est la seule vérité. On la projette sur l'épisode
+                # parce que le site lit `episode.storyUrl` — une projection,
+                # pas une copie : il n'y a qu'un endroit à corriger.
+                e["storyUrl"] = (e.get("story") or {}).get("url")
                 contenu[e["id"]] = {
                     "publications": pubs,
                     "promptVignette": e.pop("promptVignette", ""),
@@ -143,6 +165,11 @@ def main():
                     # l'épisode — ils n'ont rien à faire dans le morceau commun.
                     "scriptHeygen": e.pop("scriptHeygen", None),
                     "kit": e.pop("kit", None),
+                    # Saisons 7 et 8 : le script de l'avatar du chef et le
+                    # montage segment par segment. Mêmes raisons que ci-dessus —
+                    # longs, et affichés sur la seule page de l'épisode.
+                    "heygenPrompt": e.pop("heygenPrompt", None),
+                    "montage": e.pop("montage", None),
                     # Les trois formats sociaux. Six cents planches de
                     # carrousel plus cent cinquante visuels Facebook : c'est
                     # long, ça ne s'affiche que sur la page de l'épisode, donc

@@ -15,6 +15,20 @@ export type PublicationTexte = {
   titre?: string;
 };
 
+/**
+ * Ce que Claude Code rend, une fois le plan et l'avatar en main.
+ *
+ * Les cinq segments ne varient jamais d'ordre ni de durée : c'est ce qui rend
+ * la série reconnaissable en deux secondes. Ce qui varie, c'est leur contenu.
+ */
+export type Montage = {
+  /** La consigne à donner à Claude Code, telle quelle. */
+  consigne: string;
+  segments: { titre: string; debut: number; fin: number; contenu: string }[];
+  /** Ce qui sort : format, durée, niveau sonore, destination. */
+  livrable: string;
+};
+
 /** Une planche de carrousel LinkedIn. */
 export type PlancheCarrousel = {
   n: number;
@@ -73,6 +87,10 @@ export type ContenuEpisode = FormatsSociaux & {
   saumon?: string | null;
   /** Saison 6 : les quatre prompts à copier, dans l'ordre de la chaîne. */
   kit?: EtapeKit[] | null;
+  /** Saisons 7 et 8 : le prompt HeyGen de l'avatar 3D du chef. */
+  heygenPrompt?: string | null;
+  /** Saisons 7 et 8 : le montage rendu par Claude Code. */
+  montage?: Montage | null;
   tutoriel: { description: string | null; etapes: string[]; astuce: string | null } | null;
 };
 
@@ -188,6 +206,8 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "higgsfieldPrompt": "Vertical 9:16, 10 seconds, photorealistic, cinematic handheld camera, shallow depth of field, natural light, 4K. NO text overlay, NO subtitles, NO watermark, NO logo. A golden retriever sits under a bistro table on a sunlit restaurant terrace, staring up with huge pleading eyes at a plate of fries, head tilting slowly. At 5 seconds a hand reaches for the plate and the dog instantly snatches one fry and freezes mid-chew, guilty, looking straight into the camera. Hold the frozen guilty stare for the final 2 seconds. Audio: quiet terrace ambience, cutlery clinking, distant chatter, a soft whine from the dog, a sharp comedic record-scratch at the moment of the snatch, then silence on the freeze. No music.",
     "scriptHeygen": null,
     "kit": null,
+    "heygenPrompt": null,
+    "montage": null,
     "metier": null,
     "phase": null,
     "amplitude": null,
@@ -202,7 +222,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "format": "9:16 · 1080 × 1920 · 10 s",
       "hook": "Lui aussi attend ta commande",
       "punchline": "Sauf que lui, il est patient. Tes clients, non",
-      "url": null
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP001.mp4"
     },
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
@@ -365,6 +385,8 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "higgsfieldPrompt": "Vertical 9:16, 10 seconds, photorealistic, cinematic handheld camera, 4K. NO text overlay, NO subtitles, NO watermark, NO logo. A young man in an apron rides a skateboard down a city street holding a stack of takeaway boxes. He looks confident, smiles at the camera. At 5 seconds the front wheel hits a small crack, he loses balance in slow motion and the boxes fly upward in a slow arc. Final 2 seconds: he lies flat on the pavement, one box lands perfectly upright next to his head. Audio: skateboard wheels rumbling on asphalt, city ambience, a comedic slow-motion whoosh during the fall, a cardboard thud, then a single dry cricket chirp. No music.",
     "scriptHeygen": null,
     "kit": null,
+    "heygenPrompt": null,
+    "montage": null,
     "metier": null,
     "phase": null,
     "amplitude": null,
@@ -379,7 +401,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "format": "9:16 · 1080 × 1920 · 10 s",
       "hook": "Ton service du samedi soir",
       "punchline": "Ça finit toujours par terre",
-      "url": null
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP002.mp4"
     },
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
@@ -543,6 +565,8 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "higgsfieldPrompt": "Vertical 9:16, 10 seconds, photorealistic, macro-to-wide cinematic, 4K. NO text overlay, NO subtitles, NO watermark, NO logo. Extreme slow motion: a beautifully plated gourmet dish on a white ceramic plate falls into a bright turquoise swimming pool. Sauce and garnish disperse in blooming underwater clouds, the plate sinks slowly toward the tiled bottom. Camera follows the plate down through the water. Final 2 seconds: the plate rests on the pool floor, sunlight rippling over it. Audio: a heavy underwater plunge, muffled bubbling, distant poolside ambience above the surface, a low descending comedic slide-whistle during the sink. No music.",
     "scriptHeygen": null,
     "kit": null,
+    "heygenPrompt": null,
+    "montage": null,
     "metier": null,
     "phase": null,
     "amplitude": null,
@@ -557,7 +581,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "format": "9:16 · 1080 × 1920 · 10 s",
       "hook": "Ta marge, en ce moment",
       "punchline": "Elle coule. On va la repêcher",
-      "url": null
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP003.mp4"
     },
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
@@ -709,6 +733,8 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "higgsfieldPrompt": "Vertical 9:16, 10 seconds, photorealistic, locked-off camera then slow push-in, 4K. NO text overlay, NO subtitles, NO watermark, NO logo. A grey tabby cat sits squarely on top of a restaurant POS touchscreen terminal, tail flicking, completely unbothered. A hand enters frame trying to gently move it; the cat presses one paw down on the screen and holds eye contact with the camera. Final 2 seconds: the cat lies down fully across the terminal, closing its eyes. Audio: kitchen ambience, a receipt printer chattering, three rapid electronic beeps as the paw presses the screen, a smug cat chirp. No music.",
     "scriptHeygen": null,
     "kit": null,
+    "heygenPrompt": null,
+    "montage": null,
     "metier": null,
     "phase": null,
     "amplitude": null,
@@ -723,7 +749,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "format": "9:16 · 1080 × 1920 · 10 s",
       "hook": "Ton nouveau responsable de caisse",
       "punchline": "Il gère mieux que ton logiciel actuel",
-      "url": null
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP004.mp4"
     },
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
@@ -868,6 +894,8 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "higgsfieldPrompt": "Vertical 9:16, 10 seconds, photorealistic, cinematic tracking shot, 4K. NO text overlay, NO subtitles, NO watermark, NO logo. A waiter walks fast through a busy dining room balancing three plates on one arm and a phone wedged against his shoulder. At 5 seconds he steps on a wet patch, one leg slides forward, he does a full split while somehow keeping every plate perfectly level above his head. Final 2 seconds: frozen in the split, plates immaculate, a proud exhausted grin. Audio: busy restaurant ambience, a rubber-sole squeak, a comedic cartoon slip sound, scattered applause from unseen diners. No music.",
     "scriptHeygen": null,
     "kit": null,
+    "heygenPrompt": null,
+    "montage": null,
     "metier": null,
     "phase": null,
     "amplitude": null,
@@ -882,7 +910,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "format": "9:16 · 1080 × 1920 · 10 s",
       "hook": "Trois logiciels. Deux mains",
       "punchline": "Un seul outil, ça change tout",
-      "url": null
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP005.mp4"
     },
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
@@ -1036,6 +1064,8 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "higgsfieldPrompt": "Vertical 9:16, 10 seconds, photorealistic, dynamic camera whip-pan, 4K. NO text overlay, NO subtitles, NO watermark, NO logo. A pizzaiolo pulls a steaming margherita from a wood-fired oven with a peel. The flick is too strong: the pizza launches off the peel and sails across the kitchen like a frisbee, spinning in slow motion, cheese stretching. Final 2 seconds: it lands perfectly flat inside an open takeaway box on the counter. The pizzaiolo stares, then slowly nods once. Audio: roaring oven fire, a whooshing spin as the pizza flies, a soft cardboard landing thump, one impressed whistle. No music.",
     "scriptHeygen": null,
     "kit": null,
+    "heygenPrompt": null,
+    "montage": null,
     "metier": null,
     "phase": null,
     "amplitude": null,
@@ -1050,7 +1080,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "format": "9:16 · 1080 × 1920 · 10 s",
       "hook": "Ta pizza part plus vite que ton stock",
       "punchline": "Enfin… c'était avant",
-      "url": null
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP006.mp4"
     },
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
@@ -1209,6 +1239,8 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "higgsfieldPrompt": "Vertical 9:16, 10 seconds, photorealistic, warm close-up, 4K. NO text overlay, NO subtitles, NO watermark, NO logo. Close-up of an elderly French woman at a bistro table, spoon halfway to her mouth. She tastes, pauses, eyes widening dramatically. At 5 seconds she slams the table gently, points at the plate and gives an enormous exaggerated thumbs up straight to camera, nodding hard. Final 2 seconds: she goes back to eating, ignoring the camera completely. Audio: cosy bistro ambience, a soft spoon clink, her voice saying warmly in French \"Ah ça, c'est bon !\", a light table thump. No music.",
     "scriptHeygen": null,
     "kit": null,
+    "heygenPrompt": null,
+    "montage": null,
     "metier": null,
     "phase": null,
     "amplitude": null,
@@ -1223,7 +1255,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "format": "9:16 · 1080 × 1920 · 10 s",
       "hook": "Le seul avis client qui compte",
       "punchline": "Les quatre cents autres, on s'en occupe",
-      "url": null
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP007.mp4"
     },
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
@@ -1379,6 +1411,8 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "higgsfieldPrompt": "Vertical 9:16, 10 seconds, photorealistic, slow push-in, 4K. NO text overlay, NO subtitles, NO watermark, NO logo. A restaurant manager sits at a cluttered back-office desk. A thermal receipt printer beside him keeps printing without stopping; the paper roll has already coiled into a huge pile on the floor. He watches it, resigned, then slowly lowers his forehead onto the desk. Final 2 seconds: the printer is still going, the paper now reaching his chair. Audio: relentless thermal printer chattering that never stops, a fluorescent light hum, a long defeated human sigh. No music.",
     "scriptHeygen": null,
     "kit": null,
+    "heygenPrompt": null,
+    "montage": null,
     "metier": null,
     "phase": null,
     "amplitude": null,
@@ -1393,7 +1427,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "format": "9:16 · 1080 × 1920 · 10 s",
       "hook": "Fin de mois. Encore",
       "punchline": "Et si la compta se faisait toute seule ",
-      "url": null
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP008.mp4"
     },
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
@@ -1557,6 +1591,8 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "higgsfieldPrompt": "Vertical 9:16, 10 seconds, photorealistic, handheld street-level, 4K. NO text overlay, NO subtitles, NO watermark, NO logo. A paper cone of fries sits on a café terrace table in the sun. A pigeon lands on the edge of the table and edges sideways toward it with absurd confidence. At 5 seconds it grabs a single fry and takes off. Final 2 seconds: the empty spot on the table, one feather drifting down in slow motion. Audio: terrace ambience, pigeon wing flaps, an exaggerated theft-movie sting as it grabs the fry, then a soft feather-drop silence. No music.",
     "scriptHeygen": null,
     "kit": null,
+    "heygenPrompt": null,
+    "montage": null,
     "metier": null,
     "phase": null,
     "amplitude": null,
@@ -1571,7 +1607,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "format": "9:16 · 1080 × 1920 · 10 s",
       "hook": "Il y a toujours quelqu'un qui prend ta marge",
       "punchline": "Ton abonnement logiciel, par exemple",
-      "url": null
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP009.mp4"
     },
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
@@ -1723,6 +1759,8 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "higgsfieldPrompt": "Vertical 9:16, 10 seconds, photorealistic, cinematic kitchen lighting, 4K. NO text overlay, NO subtitles, NO watermark, NO logo. A chef flambés a pan of prawns; the flame erupts far higher than expected, filling the top of the frame. He recoils. Final 2 seconds: he turns to camera with slightly singed eyebrows and a completely blank expression, a wisp of smoke rising from his hat. Audio: gas burner, a loud whoosh of igniting alcohol, a startled French \"Oh !\", then only the quiet crackle of the pan. No music.",
     "scriptHeygen": null,
     "kit": null,
+    "heygenPrompt": null,
+    "montage": null,
     "metier": null,
     "phase": null,
     "amplitude": null,
@@ -1737,7 +1775,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "format": "9:16 · 1080 × 1920 · 10 s",
       "hook": "Toi, devant ta facture logicielle",
       "punchline": "Mille euros par mois. Pour dix outils qui ne se parlent pas",
-      "url": null
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP010.mp4"
     },
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
@@ -1898,6 +1936,8 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "higgsfieldPrompt": "Vertical 9:16, 10 seconds, photorealistic, low-angle tracking, 4K. NO text overlay, NO subtitles, NO watermark, NO logo. A delivery rider on a scooter with a large insulated backpack rides down a suburban street. At 5 seconds he hits a speed bump he clearly did not see; the backpack lid flips open and three wrapped burgers launch into the air in slow motion. Final 2 seconds: the rider has stopped, one foot down, watching a burger land softly in a hedge. Audio: scooter engine, a metallic bump and rattle, a slow-motion whoosh, a leafy rustle on landing, then engine idling. No music.",
     "scriptHeygen": null,
     "kit": null,
+    "heygenPrompt": null,
+    "montage": null,
     "metier": null,
     "phase": null,
     "amplitude": null,
@@ -1912,7 +1952,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "format": "9:16 · 1080 × 1920 · 10 s",
       "hook": "Ta livraison sans intégration",
       "punchline": "Avec, tout arrive à bon port",
-      "url": null
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP011.mp4"
     },
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
@@ -2070,6 +2110,8 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "higgsfieldPrompt": "Vertical 9:16, 10 seconds, photorealistic, locked-off camera, timelapse effect, 4K. NO text overlay, NO subtitles, NO watermark, NO logo. A man sits alone at a restaurant table with an empty plate in front of him, looking politely toward the kitchen. Time accelerates around him: light shifts from day to evening, other tables fill and empty, and his stubble visibly grows into a full beard. Final 2 seconds: he is fully bearded, still smiling politely, still waiting. Audio: restaurant ambience speeding up and slowing down, a ticking clock rising in the mix, a single small stomach growl at the end. No music.",
     "scriptHeygen": null,
     "kit": null,
+    "heygenPrompt": null,
+    "montage": null,
     "metier": null,
     "phase": null,
     "amplitude": null,
@@ -2084,7 +2126,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "format": "9:16 · 1080 × 1920 · 10 s",
       "hook": "Temps d'attente : « on regarde »",
       "punchline": "Avec un KDS, il regarde son plat arriver",
-      "url": null
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP012.mp4"
     },
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
@@ -2243,6 +2285,8 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "higgsfieldPrompt": "Vertical 9:16, 10 seconds, photorealistic, macro then wide, 4K. NO text overlay, NO subtitles, NO watermark, NO logo. Macro shot of a smartphone lying on a stainless-steel kitchen pass. It buzzes once, then faster and faster until it vibrates itself across the metal surface. At 5 seconds it buzzes so hard it walks off the edge. Final 2 seconds: it lies face-down on the floor, still buzzing, a cook's shoe stepping carefully around it. Audio: escalating phone vibration on metal, layered notification chimes stacking into chaos, a clatter as it falls, then muffled buzzing from the floor. No music.",
     "scriptHeygen": null,
     "kit": null,
+    "heygenPrompt": null,
+    "montage": null,
     "metier": null,
     "phase": null,
     "amplitude": null,
@@ -2257,7 +2301,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "format": "9:16 · 1080 × 1920 · 10 s",
       "hook": "Dix logiciels. Dix notifications",
       "punchline": "Un seul, ça suffisait",
-      "url": null
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP013.mp4"
     },
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
@@ -2420,6 +2464,8 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "higgsfieldPrompt": "Vertical 9:16, 10 seconds, photorealistic, night, security-camera framing then cinematic, 4K. NO text overlay, NO subtitles, NO watermark, NO logo. Night, behind a restaurant. A raccoon carefully lifts the lid of a large bin, climbs half inside, and emerges holding an entire untouched baguette. It freezes when a light clicks on. Final 2 seconds: it stares directly into the camera, baguette in both paws, absolutely unashamed. Audio: night ambience, crickets, a metallic bin lid clang, plastic rustling, a small raccoon chitter, a light switch click. No music.",
     "scriptHeygen": null,
     "kit": null,
+    "heygenPrompt": null,
+    "montage": null,
     "metier": null,
     "phase": null,
     "amplitude": null,
@@ -2434,7 +2480,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "format": "9:16 · 1080 × 1920 · 10 s",
       "hook": "Ton gaspillage alimentaire",
       "punchline": "Lui au moins, il sait ce qu'il y a en stock",
-      "url": null
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP014.mp4"
     },
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
@@ -2590,6 +2636,8 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "higgsfieldPrompt": "Vertical 9:16, 10 seconds, photorealistic, static wide then slow zoom, 4K. NO text overlay, NO subtitles, NO watermark, NO logo. A dishwasher in a commercial kitchen stacks clean plates into a tower far too tall, adding one more with great care. The tower sways. At 5 seconds he removes a single plate from near the bottom and the entire stack collapses in slow motion. Final 2 seconds: he stands amid the wreckage holding the one plate he took, intact. Audio: kitchen ambience, ceramic clinking, a rising creak as the tower sways, a massive ceramic crash, then total silence except a dripping tap. No music.",
     "scriptHeygen": null,
     "kit": null,
+    "heygenPrompt": null,
+    "montage": null,
     "metier": null,
     "phase": null,
     "amplitude": null,
@@ -2604,7 +2652,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "format": "9:16 · 1080 × 1920 · 10 s",
       "hook": "Ta gestion actuelle",
       "punchline": "Une pièce bouge, tout s'écroule",
-      "url": null
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP015.mp4"
     },
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
@@ -2760,6 +2808,8 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "higgsfieldPrompt": "Vertical 9:16, 10 seconds, photorealistic, close-up then wide, 4K. NO text overlay, NO subtitles, NO watermark, NO logo. A professional espresso machine begins to hiss abnormally. The barista taps it once. At 5 seconds a jet of steam and coffee erupts vertically from the group head, hitting the ceiling. Final 2 seconds: the barista stands completely still, drenched, holding an empty cup at arm's length under the spray. Audio: espresso machine hiss building into a pressurised roar, splattering liquid, dripping ceiling, then a single calm cup-on-saucer clink. No music.",
     "scriptHeygen": null,
     "kit": null,
+    "heygenPrompt": null,
+    "montage": null,
     "metier": null,
     "phase": null,
     "amplitude": null,
@@ -2774,7 +2824,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "format": "9:16 · 1080 × 1920 · 10 s",
       "hook": "Tes coûts, ce trimestre",
       "punchline": "On va refermer le robinet",
-      "url": null
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP016.mp4"
     },
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
@@ -2940,6 +2990,8 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "higgsfieldPrompt": "Vertical 9:16, 10 seconds, photorealistic, cinematic slow motion, 4K. NO text overlay, NO subtitles, NO watermark, NO logo. Two people share a basket of fries at a diner table; one fry remains. An adult hand moves toward it in slow motion. From the bottom of the frame a small child's hand shoots in and takes it with impossible speed. Final 2 seconds: the adult's hand closes on empty air; a child chews contentedly at the edge of frame. Audio: diner ambience, a dramatic slow-motion low drone, a sharp martial-arts whoosh at the snatch, a crunchy bite, one satisfied hum. No music.",
     "scriptHeygen": null,
     "kit": null,
+    "heygenPrompt": null,
+    "montage": null,
     "metier": null,
     "phase": null,
     "amplitude": null,
@@ -2954,7 +3006,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "format": "9:16 · 1080 × 1920 · 10 s",
       "hook": "Personne ne touche à ta dernière frite",
       "punchline": "Ni à ta marge",
-      "url": null
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP017.mp4"
     },
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
@@ -3116,6 +3168,8 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "higgsfieldPrompt": "Vertical 9:16, 10 seconds, photorealistic, slow motion, golden hour, 4K. NO text overlay, NO subtitles, NO watermark, NO logo. Extreme slow motion of a waiter running across a packed restaurant terrace holding a tray of drinks perfectly steady, apron and hair flowing dramatically, sunset backlight, deeply serious expression. He weaves between tables like a lifeguard on a beach. Final 2 seconds: he arrives, places the tray down, and is instantly out of breath in real time. Audio: heroic slow-motion breathing and heartbeat, glassware chiming softly, ambience, then a sudden snap back to normal speed with heavy panting. No music.",
     "scriptHeygen": null,
     "kit": null,
+    "heygenPrompt": null,
+    "montage": null,
     "metier": null,
     "phase": null,
     "amplitude": null,
@@ -3130,7 +3184,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "format": "9:16 · 1080 × 1920 · 10 s",
       "hook": "Le rush de vingt heures",
       "punchline": "Sauve ton service, pas ton dos",
-      "url": null
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP018.mp4"
     },
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
@@ -3296,6 +3350,8 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "higgsfieldPrompt": "Vertical 9:16, 10 seconds, photorealistic, extreme slow motion macro, 4K. NO text overlay, NO subtitles, NO watermark, NO logo. A double cheeseburger falls in extreme slow motion toward a kitchen floor. Sesame seeds detach and float. It hits, compresses, and improbably bounces once, layers separating mid-air. Final 2 seconds: it lands fully deconstructed, each ingredient in a neat row, as if plated on purpose. Audio: a low slow-motion whoosh, a soft wet impact, a comedic boing on the bounce, then a delicate settling sound. No music.",
     "scriptHeygen": null,
     "kit": null,
+    "heygenPrompt": null,
+    "montage": null,
     "metier": null,
     "phase": null,
     "amplitude": null,
@@ -3310,7 +3366,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "format": "9:16 · 1080 × 1920 · 10 s",
       "hook": "Ton chiffre d'affaires, sans outil",
       "punchline": "Ça rebondit rarement tout seul",
-      "url": null
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP019.mp4"
     },
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
@@ -3469,6 +3525,8 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "higgsfieldPrompt": "Vertical 9:16, 10 seconds, photorealistic, warm restaurant lighting, 4K. NO text overlay, NO subtitles, NO watermark, NO logo. A large dog sits upright on a chair at a set restaurant table, a napkin tucked into its collar, front paws resting on the tablecloth, waiting with immense dignity. A waiter approaches with a menu and offers it. Final 2 seconds: the dog looks at the menu, then straight at the camera, and lets out one small impatient huff. Audio: cosy restaurant ambience, gentle chatter, cutlery, a paper menu rustle, one deep dog huff. No music.",
     "scriptHeygen": null,
     "kit": null,
+    "heygenPrompt": null,
+    "montage": null,
     "metier": null,
     "phase": null,
     "amplitude": null,
@@ -3483,7 +3541,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "format": "9:16 · 1080 × 1920 · 10 s",
       "hook": "Lui, il a réservé",
       "punchline": "Tes vrais clients aussi devraient pouvoir",
-      "url": null
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP020.mp4"
     },
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
@@ -3645,6 +3703,8 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "higgsfieldPrompt": "Vertical 9:16, 10 seconds, photorealistic, handheld kitchen, 4K. NO text overlay, NO subtitles, NO watermark, NO logo. A chef at the pass fights with a jammed ticket printer, pulling a crumpled strip of paper that keeps tearing. He shakes it, opens the lid, closes it, hits it once with the flat of his hand. At 5 seconds it prints an enormous unbroken ribbon of tickets straight onto the floor. Final 2 seconds: he stands holding the ribbon with both hands, expressionless. Audio: busy kitchen, printer grinding and jamming, plastic lid snapping, a frustrated French \"Allez !\", then continuous printing. No music.",
     "scriptHeygen": null,
     "kit": null,
+    "heygenPrompt": null,
+    "montage": null,
     "metier": null,
     "phase": null,
     "amplitude": null,
@@ -3659,7 +3719,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "format": "9:16 · 1080 × 1920 · 10 s",
       "hook": "Le vrai ennemi du service",
       "punchline": "Un KDS, et le combat s'arrête",
-      "url": null
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP021.mp4"
     },
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
@@ -3823,6 +3883,8 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "higgsfieldPrompt": "Vertical 9:16, 10 seconds, photorealistic, moody desk lamp lighting, 4K. NO text overlay, NO subtitles, NO watermark, NO logo. A restaurant owner sits alone at night in the empty dining room with a laptop and a thick stack of invoices. He flips through them faster and faster, expression collapsing. At 5 seconds he stops, stares at one page, and slowly slides down until only his eyes are above the table edge. Final 2 seconds: just his eyes, the invoice held up beside them. Audio: empty room reverb, paper flipping accelerating, a chair creak, a long shaky exhale, a clock ticking. No music.",
     "scriptHeygen": null,
     "kit": null,
+    "heygenPrompt": null,
+    "montage": null,
     "metier": null,
     "phase": null,
     "amplitude": null,
@@ -3837,7 +3899,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "format": "9:16 · 1080 × 1920 · 10 s",
       "hook": "Mille euros par mois",
       "punchline": "Pour dix logiciels qui ne se parlent même pas",
-      "url": null
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP022.mp4"
     },
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
@@ -3995,6 +4057,8 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "higgsfieldPrompt": "Vertical 9:16, 10 seconds, photorealistic, low floor-level camera, 4K. NO text overlay, NO subtitles, NO watermark, NO logo. A robot vacuum glides across a restaurant floor and catches the corner of a long tablecloth. It keeps going with total determination, dragging the cloth and everything on the table behind it in slow motion — glasses, cutlery, a vase. Final 2 seconds: the robot arrives at its dock, tablecloth and all, and its status light turns green. Audio: soft robot motor hum, fabric dragging, escalating glass and cutlery clatter, then a cheerful electronic docking chime. No music.",
     "scriptHeygen": null,
     "kit": null,
+    "heygenPrompt": null,
+    "montage": null,
     "metier": null,
     "phase": null,
     "amplitude": null,
@@ -4009,7 +4073,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "format": "9:16 · 1080 × 1920 · 10 s",
       "hook": "Ton automatisation actuelle",
       "punchline": "Automatiser, oui. Mais bien",
-      "url": null
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP023.mp4"
     },
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
@@ -4169,6 +4233,8 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "higgsfieldPrompt": "Vertical 9:16, 10 seconds, photorealistic, seaside daylight, 4K. NO text overlay, NO subtitles, NO watermark, NO logo. A seaside restaurant terrace. A tray of fried fish and lemon sits on a table by the railing. A seagull swoops in from off-frame in a single confident dive, grabs the whole fish and pulls up. Final 2 seconds: the seagull perched on the railing with the fish, staring at the diners, wind ruffling its feathers. Audio: waves and sea wind, terrace chatter, a loud seagull cry, wing beats, a startled human gasp. No music.",
     "scriptHeygen": null,
     "kit": null,
+    "heygenPrompt": null,
+    "montage": null,
     "metier": null,
     "phase": null,
     "amplitude": null,
@@ -4183,7 +4249,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "format": "9:16 · 1080 × 1920 · 10 s",
       "hook": "Encore une commission en moins",
       "punchline": "Récupère tes commandes en direct",
-      "url": null
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP024.mp4"
     },
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
@@ -4339,6 +4405,8 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "higgsfieldPrompt": "Vertical 9:16, 10 seconds, photorealistic, kitchen close-up, 4K. NO text overlay, NO subtitles, NO watermark, NO logo. A cook pours bright orange soup into a professional blender and, without noticing the missing lid, presses the highest setting. At 5 seconds soup erupts upward and outward, coating the wall, the ceiling and the cook. Final 2 seconds: he switches it off, wipes one eye clear with a finger, and looks at the camera. Audio: blender motor screaming to full speed, wet splattering, dripping, an abrupt switch-off click, then a single drip. No music.",
     "scriptHeygen": null,
     "kit": null,
+    "heygenPrompt": null,
+    "montage": null,
     "metier": null,
     "phase": null,
     "amplitude": null,
@@ -4353,7 +4421,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "format": "9:16 · 1080 × 1920 · 10 s",
       "hook": "Quand tu lances une promo sans données",
       "punchline": "Ça éclabousse. Et rarement toi",
-      "url": null
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP025.mp4"
     },
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
@@ -4518,6 +4586,8 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "higgsfieldPrompt": "Vertical 9:16, 10 seconds, photorealistic macro, studio lighting on a stainless kitchen counter, 4K. NO text overlay, NO subtitles, NO watermark, NO logo. A red balloon is being inflated far past its limit next to a neat pyramid of fresh vegetables. The rubber stretches thin and translucent, trembling. Extreme slow motion at 5 seconds as it bursts, fragments peeling outward. Final 2 seconds: the vegetable pyramid stands untouched, a shred of red rubber draped over the top tomato. Audio: rubber stretching creak rising in pitch, a sharp burst, then quiet room tone. No music.",
     "scriptHeygen": null,
     "kit": null,
+    "heygenPrompt": null,
+    "montage": null,
     "metier": null,
     "phase": null,
     "amplitude": null,
@@ -4532,7 +4602,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "format": "9:16 · 1080 × 1920 · 10 s",
       "hook": "Ton stock avant le week-end",
       "punchline": "Prévois, au lieu de subir",
-      "url": null
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP026.mp4"
     },
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
@@ -4695,6 +4765,8 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "higgsfieldPrompt": "Vertical 9:16, 10 seconds, photorealistic, locked-off close-up, 4K. NO text overlay, NO subtitles, NO watermark, NO logo. A black cat sits on a bar counter beside a full wine glass. It makes prolonged eye contact with the camera, then extends one paw and pushes the glass millimetre by millimetre toward the edge. At 6 seconds the glass tips over the edge. Final 2 seconds: the cat looks down at the floor, then back at the camera, entirely satisfied. Audio: quiet bar ambience, faint glass sliding on wood, a glass shattering off-frame, then one soft meow. No music.",
     "scriptHeygen": null,
     "kit": null,
+    "heygenPrompt": null,
+    "montage": null,
     "metier": null,
     "phase": null,
     "amplitude": null,
@@ -4709,7 +4781,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "format": "9:16 · 1080 × 1920 · 10 s",
       "hook": "Ta trésorerie, chaque lundi",
       "punchline": "Il suffit d'un truc mal placé",
-      "url": null
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP027.mp4"
     },
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
@@ -4861,6 +4933,8 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "higgsfieldPrompt": "Vertical 9:16, 10 seconds, photorealistic, side tracking shot along the belt, 4K. NO text overlay, NO subtitles, NO watermark, NO logo. A conveyor-belt sushi restaurant. The belt slowly accelerates beyond normal speed; plates begin to blur past seated diners who turn their heads to follow. At 6 seconds plates start flying off the end of the belt one after another. Final 2 seconds: a diner calmly catches one out of the air with chopsticks without looking. Audio: mechanical belt hum rising in pitch, ceramic rattling, plates clattering off the end, a single clean chopstick click on the catch. No music.",
     "scriptHeygen": null,
     "kit": null,
+    "heygenPrompt": null,
+    "montage": null,
     "metier": null,
     "phase": null,
     "amplitude": null,
@@ -4875,7 +4949,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "format": "9:16 · 1080 × 1920 · 10 s",
       "hook": "Tes commandes en ligne, un vendredi",
       "punchline": "Tout arrive. Nulle part",
-      "url": null
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP028.mp4"
     },
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
@@ -5034,6 +5108,8 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "higgsfieldPrompt": "Vertical 9:16, 10 seconds, photorealistic, slow orbit around the subject, 4K. NO text overlay, NO subtitles, NO watermark, NO logo. A restaurant manager stands in a dining room with plates balanced everywhere — both forearms, one on his head, one in each hand, one wedged under his chin — while a phone rings in his apron pocket. He looks at the pocket, then at the camera, unable to move at all. Final 2 seconds: the phone keeps ringing; he closes his eyes. Audio: restaurant ambience, faint ceramic wobble, a phone ringing insistently from inside fabric, one long resigned breath. No music.",
     "scriptHeygen": null,
     "kit": null,
+    "heygenPrompt": null,
+    "montage": null,
     "metier": null,
     "phase": null,
     "amplitude": null,
@@ -5048,7 +5124,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "format": "9:16 · 1080 × 1920 · 10 s",
       "hook": "Toi, gérant, en 2026",
       "punchline": "Personne ne devrait travailler comme ça",
-      "url": null
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP029.mp4"
     },
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
@@ -5202,6 +5278,8 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "higgsfieldPrompt": "Vertical 9:16, 10 seconds, photorealistic, wide kitchen shot, 4K. NO text overlay, NO subtitles, NO watermark, NO logo. A penguin waddles into a professional restaurant kitchen wearing a tiny white apron. It steps onto a freshly mopped tile floor, immediately loses traction and slides the entire length of the kitchen on its belly, passing surprised cooks. Final 2 seconds: it stops against the base of a fridge, stands up, and shakes itself off with dignity. Audio: kitchen ambience, a wet tile squeak, a long comedic slide whoosh, a soft thud against the fridge, one penguin squawk. No music.",
     "scriptHeygen": null,
     "kit": null,
+    "heygenPrompt": null,
+    "montage": null,
     "metier": null,
     "phase": null,
     "amplitude": null,
@@ -5216,7 +5294,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "format": "9:16 · 1080 × 1920 · 10 s",
       "hook": "Le nouveau, jour 1",
       "punchline": "Forme-le en un clic avec l'Académy",
-      "url": null
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP030.mp4"
     },
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
@@ -5368,6 +5446,8 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "higgsfieldPrompt": "Vertical 9:16, 10 seconds, photorealistic, cinematic handheld camera, shallow depth of field, 4K. NO text overlay, NO subtitles, NO watermark, NO logo. A cook opens the door of a tall stainless-steel restaurant fridge. For a beat nothing happens. At 5 seconds an avalanche of unlabelled plastic containers pours out onto the floor in slow motion, lids separating mid-air. Final 2 seconds: he stands ankle-deep in containers, holding the fridge door handle, staring at the camera. Audio: fridge seal sucking open, compressor hum, escalating plastic clattering, a lid spinning to a stop on the tiles, then silence. No music.",
     "scriptHeygen": null,
     "kit": null,
+    "heygenPrompt": null,
+    "montage": null,
     "metier": null,
     "phase": null,
     "amplitude": null,
@@ -5382,7 +5462,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "format": "9:16 · 1080 × 1920 · 10 s",
       "hook": "C'est quoi, ça ",
       "punchline": "Sans DLC tracées, personne ne sait",
-      "url": null
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP031.mp4"
     },
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
@@ -5548,6 +5628,8 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "higgsfieldPrompt": "Vertical 9:16, 10 seconds, photorealistic, tight close-up, warm kitchen light, 4K. NO text overlay, NO subtitles, NO watermark, NO logo. A chef tastes his own sauce from a wooden spoon with total confidence. His expression holds for two seconds, then cracks: eyes watering, face reddening, breathing through the mouth. At 5 seconds he grabs a jug of water and drinks straight from it. Final 2 seconds: he lowers the jug, gives a thumbs up to the camera, eyes still streaming. Audio: kitchen ambience, a spoon tap, sharp inhaling through teeth, gulping, a strangled French \"Ça va, ça va\", then a small cough. No music.",
     "scriptHeygen": null,
     "kit": null,
+    "heygenPrompt": null,
+    "montage": null,
     "metier": null,
     "phase": null,
     "amplitude": null,
@@ -5562,7 +5644,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "format": "9:16 · 1080 × 1920 · 10 s",
       "hook": "Ta recette « au feeling »",
       "punchline": "Une fiche technique, et c'est pareil tous les jours",
-      "url": null
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP032.mp4"
     },
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
@@ -5727,6 +5809,8 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "higgsfieldPrompt": "Vertical 9:16, 10 seconds, photorealistic, warm dining room, 4K. NO text overlay, NO subtitles, NO watermark, NO logo. A long banquet table, beautifully set, a whole roast on a platter at the centre. Everyone has turned away to look off-frame. A large dog rises silently from under the table, takes the entire roast off the platter and disappears back down. At 5 seconds the guests turn back to an empty platter. Final 2 seconds: a slow tilt down to the dog under the table, roast between its paws, mid-bite. Audio: banquet chatter and cutlery, a soft platter scrape, chatter stopping abruptly, then contented chewing from below. No music.",
     "scriptHeygen": null,
     "kit": null,
+    "heygenPrompt": null,
+    "montage": null,
     "metier": null,
     "phase": null,
     "amplitude": null,
@@ -5741,7 +5825,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "format": "9:16 · 1080 × 1920 · 10 s",
       "hook": "Tu as tout préparé. Presque",
       "punchline": "Ce qui n'est pas suivi finit par disparaître",
-      "url": null
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP033.mp4"
     },
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
@@ -5897,6 +5981,8 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "higgsfieldPrompt": "Vertical 9:16, 10 seconds, photorealistic, cinematic medium shot, 4K. NO text overlay, NO subtitles, NO watermark, NO logo. A waiter presents a bottle of wine tableside and works the corkscrew with growing effort, bracing the bottle against his hip. At 5 seconds the cork releases explosively and rockets upward out of frame; he keeps the polite smile. Final 2 seconds: a distant clink off-screen, the cork drops back down and lands in a guest's empty glass. The waiter nods once as if it was intentional. Audio: restaurant ambience, corkscrew creaking, a loud pop, a whoosh upward, a small ceiling tap, a glass clink, one guest laugh. No music.",
     "scriptHeygen": null,
     "kit": null,
+    "heygenPrompt": null,
+    "montage": null,
     "metier": null,
     "phase": null,
     "amplitude": null,
@@ -5911,7 +5997,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "format": "9:16 · 1080 × 1920 · 10 s",
       "hook": "Chaque service, une improvisation",
       "punchline": "Ça marche. Jusqu'au jour où ça ne marche plus",
-      "url": null
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP034.mp4"
     },
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
@@ -6063,6 +6149,8 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "higgsfieldPrompt": "Vertical 9:16, 10 seconds, photorealistic, windy daylight, handheld chase, 4K. NO text overlay, NO subtitles, NO watermark, NO logo. A gust of wind lifts a large terrace parasol out of its base. A restaurant owner in an apron sprints after it down the pavement as it rolls and bounces ahead of him, always just out of reach. At 5 seconds he dives for it and misses. Final 2 seconds: he lies on the pavement, watching the parasol wedge itself politely into a bike rack twenty metres away. Audio: strong wind, fabric snapping, running footsteps, a scrape of metal on concrete, heavy breathing, a metallic clang on landing. No music.",
     "scriptHeygen": null,
     "kit": null,
+    "heygenPrompt": null,
+    "montage": null,
     "metier": null,
     "phase": null,
     "amplitude": null,
@@ -6077,7 +6165,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "format": "9:16 · 1080 × 1920 · 10 s",
       "hook": "Ta terrasse, un jour de vent",
       "punchline": "Certaines choses se prévoient",
-      "url": null
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP035.mp4"
     },
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
@@ -6238,6 +6326,8 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "higgsfieldPrompt": "Vertical 9:16, 10 seconds, photorealistic, moody restaurant lighting, slow push-in, 4K. NO text overlay, NO subtitles, NO watermark, NO logo. A man opens a leather bill folder at a restaurant table. He reads. He blinks. He removes his glasses, cleans them slowly on his napkin, puts them back on and reads again. Final 2 seconds: he closes the folder very gently, as if it were fragile, and stares into the middle distance. Audio: quiet restaurant ambience, leather creaking, a napkin rustle, one long slow exhale, distant glassware. No music.",
     "scriptHeygen": null,
     "kit": null,
+    "heygenPrompt": null,
+    "montage": null,
     "metier": null,
     "phase": null,
     "amplitude": null,
@@ -6252,7 +6342,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "format": "9:16 · 1080 × 1920 · 10 s",
       "hook": "Toi, devant tes abonnements",
       "punchline": "Additionne-les. Vraiment",
-      "url": null
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP036.mp4"
     },
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
@@ -6404,6 +6494,8 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "higgsfieldPrompt": "Vertical 9:16, 10 seconds, photorealistic, static wide, late-night restaurant, 4K. NO text overlay, NO subtitles, NO watermark, NO logo. Closing time in an empty dining room, chairs on tables. A young employee stands leaning on a broom handle, completely asleep upright, swaying very slightly. At 5 seconds the broom slips a few centimetres; he jolts awake, sweeps three energetic strokes, then goes still again. Final 2 seconds: asleep on the broom once more. Audio: empty room reverb, a fridge hum, faint street noise, a broom bristle scrape, a startled inhale, then quiet breathing. No music.",
     "scriptHeygen": null,
     "kit": null,
+    "heygenPrompt": null,
+    "montage": null,
     "metier": null,
     "phase": null,
     "amplitude": null,
@@ -6418,7 +6510,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "format": "9:16 · 1080 × 1920 · 10 s",
       "hook": "Fermeture. Troisième soir d'affilée",
       "punchline": "Un planning bien fait, ça se voit sur les visages",
-      "url": null
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP037.mp4"
     },
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
@@ -6582,6 +6674,8 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "higgsfieldPrompt": "Vertical 9:16, 10 seconds, photorealistic, tracking shot in a cash-and-carry warehouse, 4K. NO text overlay, NO subtitles, NO watermark, NO logo. A restaurateur pushes an overloaded flatbed trolley down a wholesale aisle. It gains speed on a slight slope, one wheel shuddering. He jogs, then runs, then lets go. At 5 seconds the trolley glides on alone in slow motion between the racks. Final 2 seconds: it stops itself perfectly against a pallet of tomatoes, nothing falls, and he raises both arms in silent victory. Audio: warehouse ambience, a rattling wheel rising in pitch, running footsteps, a soft cardboard bump, a distant forklift beeping. No music.",
     "scriptHeygen": null,
     "kit": null,
+    "heygenPrompt": null,
+    "montage": null,
     "metier": null,
     "phase": null,
     "amplitude": null,
@@ -6596,7 +6690,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "format": "9:16 · 1080 × 1920 · 10 s",
       "hook": "Le réappro du lundi",
       "punchline": "Commander à l'instinct, ça finit toujours en course",
-      "url": null
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP038.mp4"
     },
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
@@ -6757,6 +6851,8 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "higgsfieldPrompt": "Vertical 9:16, 10 seconds, photorealistic, sunny terrace, 4K. NO text overlay, NO subtitles, NO watermark, NO logo. Diners eat calmly on a street terrace. From off-frame a football arcs into shot in slow motion and lands squarely in a bowl of soup, sending an orange splash upward across the table. Final 2 seconds: total stillness, soup dripping off the edge of the table, everyone frozen mid-gesture, one child's face appearing at the terrace railing. Audio: terrace ambience, a distant kick, a whooshing arc, a wet heavy splash, dripping, then complete silence. No music.",
     "scriptHeygen": null,
     "kit": null,
+    "heygenPrompt": null,
+    "montage": null,
     "metier": null,
     "phase": null,
     "amplitude": null,
@@ -6771,7 +6867,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "format": "9:16 · 1080 × 1920 · 10 s",
       "hook": "L'imprévu du service",
       "punchline": "Il y en aura d'autres. Autant être prêt",
-      "url": null
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP039.mp4"
     },
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
@@ -6934,6 +7030,8 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "higgsfieldPrompt": "Vertical 9:16, 10 seconds, photorealistic, golden hour, garden setting, 4K. NO text overlay, NO subtitles, NO watermark, NO logo. A small restaurant herb garden in neat labelled rows. A goat wanders calmly into frame and begins eating an entire row of basil with great efficiency. At 5 seconds a chef appears at the back door and freezes. Final 2 seconds: the goat looks up, a wooden plant label sticking out of its mouth, chewing without breaking eye contact. Audio: birdsong, gentle chewing, a wooden door creak, a sharp human intake of breath, one goat bleat. No music.",
     "scriptHeygen": null,
     "kit": null,
+    "heygenPrompt": null,
+    "montage": null,
     "metier": null,
     "phase": null,
     "amplitude": null,
@@ -6948,7 +7046,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "format": "9:16 · 1080 × 1920 · 10 s",
       "hook": "Ton stock de basilic",
       "punchline": "Ce qui n'est pas compté disparaît toujours",
-      "url": null
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP040.mp4"
     },
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
@@ -7114,6 +7212,8 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "higgsfieldPrompt": "Vertical 9:16, 10 seconds, photorealistic, kitchen close-up on a carving board, 4K. NO text overlay, NO subtitles, NO watermark, NO logo. A chef carves a glistening roast chicken with a long knife. On the third stroke the whole bird slides off the board in slow motion, skates across the stainless counter and drops off the far edge. Final 2 seconds: the chef is still holding the knife exactly where the chicken used to be, not yet looking down. Audio: knife on bone, a greasy slide across metal, a soft floor thud, kitchen extractor hum, one beat of silence. No music.",
     "scriptHeygen": null,
     "kit": null,
+    "heygenPrompt": null,
+    "montage": null,
     "metier": null,
     "phase": null,
     "amplitude": null,
@@ -7128,7 +7228,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "format": "9:16 · 1080 × 1920 · 10 s",
       "hook": "Ton contrôle des portions",
       "punchline": "Ce qui part au sol, tu le paies quand même",
-      "url": null
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP041.mp4"
     },
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
@@ -7287,6 +7387,8 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "higgsfieldPrompt": "Vertical 9:16, 10 seconds, photorealistic, windy outdoor terrace, 4K. NO text overlay, NO subtitles, NO watermark, NO logo. A waiter tries to fold a huge white tablecloth alone in the wind. Each time he brings two corners together, a gust inflates the cloth like a sail and wraps it around him. At 5 seconds he disappears completely inside the fabric. Final 2 seconds: a person-shaped white ghost stands motionless on the terrace, one hand emerging to give a thumbs up. Audio: wind gusts, fabric snapping loudly, muffled human grunting from inside the cloth, a chair scraping. No music.",
     "scriptHeygen": null,
     "kit": null,
+    "heygenPrompt": null,
+    "montage": null,
     "metier": null,
     "phase": null,
     "amplitude": null,
@@ -7301,7 +7403,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "format": "9:16 · 1080 × 1920 · 10 s",
       "hook": "Tout faire seul",
       "punchline": "À un moment, il faut être aidé",
-      "url": null
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP042.mp4"
     },
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
@@ -7460,6 +7562,8 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "higgsfieldPrompt": "Vertical 9:16, 10 seconds, photorealistic, morning park-side café, 4K. NO text overlay, NO subtitles, NO watermark, NO logo. A croissant sits on a small saucer beside a coffee on an outdoor café table. A squirrel climbs the table leg, assesses the croissant, and takes it with both paws — it is almost as big as the squirrel. At 5 seconds it drags the croissant off the table and struggles up a nearby tree trunk with it. Final 2 seconds: the squirrel on a branch, croissant held triumphantly, flakes raining down. Audio: morning birdsong, a ceramic saucer tick, tiny claws on wood and bark, a bakery-flake rustle, a distant espresso machine. No music.",
     "scriptHeygen": null,
     "kit": null,
+    "heygenPrompt": null,
+    "montage": null,
     "metier": null,
     "phase": null,
     "amplitude": null,
@@ -7474,7 +7578,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "format": "9:16 · 1080 × 1920 · 10 s",
       "hook": "Petit vol. Tous les jours",
       "punchline": "Mis bout à bout, ça fait ta marge",
-      "url": null
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP043.mp4"
     },
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
@@ -7624,6 +7728,8 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "higgsfieldPrompt": "Vertical 9:16, 10 seconds, photorealistic, over-the-shoulder at a dining table, 4K. NO text overlay, NO subtitles, NO watermark, NO logo. A waiter stands at a table with a notepad, ready to take an order. His pen does not write. He shakes it, scribbles, tries another from his apron, then another, then another, scribbling harder each time on the corner of the pad. At 5 seconds he has five dead pens lined up on the table. Final 2 seconds: he pulls out a sixth, it works, and the guests have already put their menus down and are looking at him. Audio: restaurant ambience, pen scribbling on paper, plastic pens clicking and tapping the table, one polite guest cough. No music.",
     "scriptHeygen": null,
     "kit": null,
+    "heygenPrompt": null,
+    "montage": null,
     "metier": null,
     "phase": null,
     "amplitude": null,
@@ -7638,7 +7744,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "format": "9:16 · 1080 × 1920 · 10 s",
       "hook": "Prendre la commande en 2026",
       "punchline": "La commande devrait partir en cuisine toute seule",
-      "url": null
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP044.mp4"
     },
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
@@ -7803,6 +7909,8 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "higgsfieldPrompt": "Vertical 9:16, 10 seconds, photorealistic, cold blue interior light, 4K. NO text overlay, NO subtitles, NO watermark, NO logo. Interior of a walk-in cold room. A cook is checking shelves when the heavy insulated door swings slowly shut behind him. He turns, pushes the handle, nothing. At 5 seconds he knocks politely, then harder, breath visible in the cold air. Final 2 seconds: he sits down on an upturned crate, resigned, and starts eating a cherry tomato from the shelf. Audio: refrigeration unit droning, a heavy door thud and latch click, knuckles on metal, breathing in cold air, a small crunch. No music.",
     "scriptHeygen": null,
     "kit": null,
+    "heygenPrompt": null,
+    "montage": null,
     "metier": null,
     "phase": null,
     "amplitude": null,
@@ -7817,7 +7925,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "format": "9:16 · 1080 × 1920 · 10 s",
       "hook": "Personne ne sait où tu es",
       "punchline": "Ton restaurant non plus ne devrait pas être une boîte noire",
-      "url": null
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP045.mp4"
     },
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
@@ -7980,6 +8088,8 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "higgsfieldPrompt": "Vertical 9:16, 10 seconds, photorealistic, extreme slow-motion macro, dramatic side light, 4K. NO text overlay, NO subtitles, NO watermark, NO logo. Macro slow motion of a hand seasoning a pan with a pinch of salt, grains falling in a beautiful arc. The shot widens slightly: the lid of the salt cellar has come off entirely and the whole contents are pouring into the pan in the same slow, elegant arc. Final 2 seconds: the empty cellar, a white mound in the pan, and a hand frozen mid-gesture. Audio: gentle sizzling, a delicate granular patter that becomes a heavy pour, a hollow plastic clatter as the lid lands, then sizzling alone. No music.",
     "scriptHeygen": null,
     "kit": null,
+    "heygenPrompt": null,
+    "montage": null,
     "metier": null,
     "phase": null,
     "amplitude": null,
@@ -7994,7 +8104,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "format": "9:16 · 1080 × 1920 · 10 s",
       "hook": "Un détail. Un service perdu",
       "punchline": "Les petites erreurs coûtent cher quand personne ne les voit",
-      "url": null
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP046.mp4"
     },
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
@@ -8156,6 +8266,8 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "higgsfieldPrompt": "Vertical 9:16, 10 seconds, photorealistic, high-angle then street level, narrow European alley, 4K. NO text overlay, NO subtitles, NO watermark, NO logo. A delivery truck reverses into an alley barely wider than itself, mirrors folding against the walls. A cook stands behind it waving both arms with increasing energy and decreasing accuracy. At 5 seconds the truck stops with the bumper one centimetre from a stack of crates. Final 2 seconds: the cook gives an enthusiastic double thumbs up; the driver's arm emerges from the window with a single flat thumbs up. Audio: diesel engine, reversing beeper, tyre scrub on cobbles, a shouted French \"Encore ! Encore ! Stop !\", a hiss of air brakes. No music.",
     "scriptHeygen": null,
     "kit": null,
+    "heygenPrompt": null,
+    "montage": null,
     "metier": null,
     "phase": null,
     "amplitude": null,
@@ -8170,7 +8282,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "format": "9:16 · 1080 × 1920 · 10 s",
       "hook": "La livraison de 7 h",
       "punchline": "Réceptionner, contrôler, tracer. Sans y penser",
-      "url": null
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP047.mp4"
     },
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
@@ -8325,6 +8437,8 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "higgsfieldPrompt": "Vertical 9:16, 10 seconds, photorealistic, café table close-up, 4K. NO text overlay, NO subtitles, NO watermark, NO logo. A child builds a tall precarious pyramid out of sugar sachets on a café table while the adults talk off-frame. The camera pushes in slowly as the structure grows to an improbable height. At 6 seconds an adult's elbow enters frame and clips it; the pyramid collapses in slow motion. Final 2 seconds: the child looks at the camera with genuine devastation, one sachet still balanced on a finger. Audio: café ambience, tiny paper sachets sliding, a soft cardboard collapse, one small disappointed sigh, a spoon in a cup. No music.",
     "scriptHeygen": null,
     "kit": null,
+    "heygenPrompt": null,
+    "montage": null,
     "metier": null,
     "phase": null,
     "amplitude": null,
@@ -8339,7 +8453,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "format": "9:16 · 1080 × 1920 · 10 s",
       "hook": "Ce que tu construis chaque jour",
       "punchline": "Un système fragile finit toujours par tomber",
-      "url": null
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP048.mp4"
     },
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
@@ -8501,6 +8615,8 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "higgsfieldPrompt": "Vertical 9:16, 10 seconds, photorealistic, kitchen pass, warm service light, 4K. NO text overlay, NO subtitles, NO watermark, NO logo. A dog sits at the kitchen pass, exactly where a chef would stand, front paws on the counter. It looks at a plate, then raises one paw and rings the service bell decisively. A waiter appears, takes the plate, and leaves. At 5 seconds the dog rings the bell twice more, faster. Final 2 seconds: it stares down the empty pass, waiting for the next plate, entirely professional. Audio: kitchen ambience, a crisp service bell ding, hurried footsteps, plates, two more bell dings, one impatient dog huff. No music.",
     "scriptHeygen": null,
     "kit": null,
+    "heygenPrompt": null,
+    "montage": null,
     "metier": null,
     "phase": null,
     "amplitude": null,
@@ -8515,7 +8631,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "format": "9:16 · 1080 × 1920 · 10 s",
       "hook": "Il envoie plus vite que ton pass",
       "punchline": "Un KDS, et la cuisine avance toute seule",
-      "url": null
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP049.mp4"
     },
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
@@ -8680,6 +8796,8 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "higgsfieldPrompt": "Vertical 9:16, 10 seconds, photorealistic, handheld kitchen, 4K. NO text overlay, NO subtitles, NO watermark, NO logo. A cook grabs a pan handle bare-handed, instantly regrets it, and juggles the pan between his hands in a rapid improvised dance while trying not to spill the contents. At 5 seconds he manages to drop it onto the counter, upright, without losing a single thing inside. Final 2 seconds: he stands very still, both hands pressed against his own earlobes, staring at the pan. Audio: sizzling, a sharp metallic clang, fast shuffling feet, a sucked-in French \"Ah ah ah !\", a heavy pan settling on steel. No music.",
     "scriptHeygen": null,
     "kit": null,
+    "heygenPrompt": null,
+    "montage": null,
     "metier": null,
     "phase": null,
     "amplitude": null,
@@ -8694,7 +8812,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "format": "9:16 · 1080 × 1920 · 10 s",
       "hook": "Apprendre sur le tas",
       "punchline": "Il y a plus rapide pour former quelqu'un",
-      "url": null
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP050.mp4"
     },
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
@@ -8857,6 +8975,8 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "higgsfieldPrompt": "Vertical 9:16, 10 seconds, photorealistic, dishwashing area, cool light, 4K. NO text overlay, NO subtitles, NO watermark, NO logo. A commercial dishwasher hums. A slow column of white foam begins to rise from its seams, then from underneath, spreading across the floor. A kitchen porter watches it approach his shoes without moving. At 6 seconds the foam reaches his knees. Final 2 seconds: only his head and shoulders are visible above a sea of foam; he blows a small tuft off his nose. Audio: dishwasher hum, wet bubbling and hissing foam, squeaking rubber boots, a single blown puff of air. No music.",
     "scriptHeygen": null,
     "kit": null,
+    "heygenPrompt": null,
+    "montage": null,
     "metier": null,
     "phase": null,
     "amplitude": null,
@@ -8871,7 +8991,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "format": "9:16 · 1080 × 1920 · 10 s",
       "hook": "Un mauvais réglage. Une seule fois",
       "punchline": "Les process, ça évite ça",
-      "url": null
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP051.mp4"
     },
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
@@ -9030,6 +9150,8 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "higgsfieldPrompt": "Vertical 9:16, 10 seconds, photorealistic, kitchen corridor, 4K. NO text overlay, NO subtitles, NO watermark, NO logo. A chef strides purposefully out of the kitchen carrying two plates. His apron string catches in the swinging door behind him. He is yanked to a dead stop mid-stride, plates still perfectly level. At 5 seconds he calmly reverses two steps, unhooks the string without putting the plates down, and continues. Final 2 seconds: he walks off, dignity fully intact, as the door swings behind him. Audio: kitchen ambience, brisk footsteps, a fabric snap and door creak, one abrupt stop, then footsteps resuming at the exact same rhythm. No music.",
     "scriptHeygen": null,
     "kit": null,
+    "heygenPrompt": null,
+    "montage": null,
     "metier": null,
     "phase": null,
     "amplitude": null,
@@ -9044,7 +9166,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "format": "9:16 · 1080 × 1920 · 10 s",
       "hook": "Encore un truc qui te retient",
       "punchline": "Enlève-les tous, un par un",
-      "url": null
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP052.mp4"
     },
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
@@ -9207,6 +9329,8 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "higgsfieldPrompt": "Vertical 9:16, 10 seconds, photorealistic, street level then interior, 4K. NO text overlay, NO subtitles, NO watermark, NO logo. A long queue of people waits patiently outside a restaurant door on the pavement. The camera moves past them, through the doorway, and reveals a completely empty dining room with every table free and one waiter standing alone. At 6 seconds the waiter notices the camera and shrugs. Final 2 seconds: back outside, the queue has grown by three people. Audio: street ambience, murmuring queue, a door chime on entry, sudden interior quiet with a faint fridge hum, one shrugging exhale. No music.",
     "scriptHeygen": null,
     "kit": null,
+    "heygenPrompt": null,
+    "montage": null,
     "metier": null,
     "phase": null,
     "amplitude": null,
@@ -9221,7 +9345,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "format": "9:16 · 1080 × 1920 · 10 s",
       "hook": "Complet dehors. Vide dedans",
       "punchline": "Ta salle et ta file devraient se parler",
-      "url": null
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP053.mp4"
     },
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
@@ -9383,6 +9507,8 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "higgsfieldPrompt": "Vertical 9:16, 10 seconds, photorealistic, fine-dining table, dramatic spotlight, 4K. NO text overlay, NO subtitles, NO watermark, NO logo. A waiter places a large silver cloche in front of a hungry-looking guest and lifts it with a theatrical flourish. Steam curls upward. In the centre of an enormous white plate sits one single pea, immaculately placed. At 6 seconds the guest looks up at the waiter, who nods proudly. Final 2 seconds: the guest looks back at the pea, then at the camera. Audio: refined dining ambience, a soft cloche lift and metallic ring, a delicate steam hiss, a long silence, one quiet stomach rumble. No music.",
     "scriptHeygen": null,
     "kit": null,
+    "heygenPrompt": null,
+    "montage": null,
     "metier": null,
     "phase": null,
     "amplitude": null,
@@ -9397,7 +9523,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "format": "9:16 · 1080 × 1920 · 10 s",
       "hook": "Ton prix ne raconte pas ton coût",
       "punchline": "Marge réelle par plat. Ça change les décisions",
-      "url": null
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP054.mp4"
     },
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
@@ -9559,6 +9685,8 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "higgsfieldPrompt": "Vertical 9:16, 10 seconds, photorealistic, back office, 4K. NO text overlay, NO subtitles, NO watermark, NO logo. A manager sits at a paper-covered desk in a hot back office and switches on a floor fan for relief. He closes his eyes with pleasure for two seconds. At 5 seconds every invoice, ticket and delivery note on the desk lifts into the air at once and swirls around the room in slow motion. Final 2 seconds: the room is full of drifting paper; he has not opened his eyes, still enjoying the breeze. Audio: fan motor spinning up, a hot room's stillness, an escalating paper flutter, sheets slapping walls, one contented sigh. No music.",
     "scriptHeygen": null,
     "kit": null,
+    "heygenPrompt": null,
+    "montage": null,
     "metier": null,
     "phase": null,
     "amplitude": null,
@@ -9573,7 +9701,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "format": "9:16 · 1080 × 1920 · 10 s",
       "hook": "Ta compta, au format papier",
       "punchline": "Scanne. Classe. Oublie",
-      "url": null
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP055.mp4"
     },
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
@@ -9735,6 +9863,8 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "higgsfieldPrompt": "Vertical 9:16, 10 seconds, photorealistic, street level, delivery scene, 4K. NO text overlay, NO subtitles, NO watermark, NO logo. A delivery rider unzips a large insulated backpack on the pavement to check an order. A cat's head pops out from between the food bags, blinking in the daylight. The rider stares. At 5 seconds the cat settles back down comfortably among the bags. Final 2 seconds: the rider slowly zips the bag half-closed, leaving the cat's head out, and rides off. Audio: street ambience, a zip opening, a single questioning meow, a long human pause, purring, a scooter starting up. No music.",
     "scriptHeygen": null,
     "kit": null,
+    "heygenPrompt": null,
+    "montage": null,
     "metier": null,
     "phase": null,
     "amplitude": null,
@@ -9749,7 +9879,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "format": "9:16 · 1080 × 1920 · 10 s",
       "hook": "Il y a toujours un truc en trop",
       "punchline": "Ou en moins. Et tu le vois trop tard",
-      "url": null
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP056.mp4"
     },
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
@@ -9912,6 +10042,8 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "higgsfieldPrompt": "Vertical 9:16, 10 seconds, photorealistic, close-up at a bar counter at night, 4K. NO text overlay, NO subtitles, NO watermark, NO logo. A manager counts coins into stacks on a bar counter, tongue between teeth, deeply focused. He reaches for the last stack and knocks the whole arrangement over. Coins spread across the counter and cascade off the edge in slow motion, rolling in every direction across the floor. Final 2 seconds: one coin rolls a long way alone, wobbles, and settles flat. Audio: quiet closed bar, coins clinking into stacks, a sudden metallic cascade, coins rolling and spinning on tiles, a final wobble and flat clack. No music.",
     "scriptHeygen": null,
     "kit": null,
+    "heygenPrompt": null,
+    "montage": null,
     "metier": null,
     "phase": null,
     "amplitude": null,
@@ -10078,6 +10210,8 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "higgsfieldPrompt": "Vertical 9:16, 10 seconds, photorealistic, dim restaurant, 4K. NO text overlay, NO subtitles, NO watermark, NO logo. A waiter carries a birthday cake crowned with far too many sparkling candles through a darkened dining room, guests turning to look. At 5 seconds a ceiling smoke detector begins flashing directly above him. Final 2 seconds: the sprinkler has not gone off, but every guest is looking up at the ceiling instead of the cake, and the waiter closes his eyes. Audio: murmured happy-birthday singing, crackling sparklers, a shrill smoke alarm cutting through everything, chairs scraping, then the alarm alone. No music.",
     "scriptHeygen": null,
     "kit": null,
+    "heygenPrompt": null,
+    "montage": null,
     "metier": null,
     "phase": null,
     "amplitude": null,
@@ -10244,6 +10378,8 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "higgsfieldPrompt": "Vertical 9:16, 10 seconds, photorealistic, windy pavement outside a bistro, 4K. NO text overlay, NO subtitles, NO watermark, NO logo. A restaurant owner sets a wooden A-frame chalkboard sign on the pavement. The wind knocks it flat immediately. He stands it up again, angles it differently — it falls again. At 5 seconds he props it with a stone, steps back to admire it, and it falls a third time. Final 2 seconds: he sits down on the kerb next to the fallen sign and simply holds it upright with one hand. Audio: gusty wind, wood clattering on pavement, chalk scraping, a resigned French \"Bon.\", street traffic. No music.",
     "scriptHeygen": null,
     "kit": null,
+    "heygenPrompt": null,
+    "montage": null,
     "metier": null,
     "phase": null,
     "amplitude": null,
@@ -10258,7 +10394,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "format": "9:16 · 1080 × 1920 · 10 s",
       "hook": "Ta com', chaque matin",
       "punchline": "Il y a plus solide qu'une ardoise",
-      "url": null
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP059.mp4"
     },
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
@@ -10420,6 +10556,8 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "higgsfieldPrompt": "Vertical 9:16, 10 seconds, photorealistic, surreal but grounded, professional kitchen, 4K. NO text overlay, NO subtitles, NO watermark, NO logo. A large octopus sits in a stainless-steel sink in a working kitchen, calmly operating eight things at once with its arms: stirring a pot, flipping a pan, wiping a counter, ringing the service bell, holding a knife, plating, adjusting a burner and answering a wall phone. Human cooks work around it without reacting. Final 2 seconds: it pauses every arm simultaneously and turns one eye toward the camera. Audio: full busy kitchen soundscape layered dense — sizzling, bell, phone ringing, chopping, extractor — then all of it stopping at once for the final beat. No music.",
     "scriptHeygen": null,
     "kit": null,
+    "heygenPrompt": null,
+    "montage": null,
     "metier": null,
     "phase": null,
     "amplitude": null,
@@ -10434,7 +10572,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "format": "9:16 · 1080 × 1920 · 10 s",
       "hook": "Ce qu'on te demande d'être",
       "punchline": "Ou alors, un seul outil fait le reste",
-      "url": null
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP060.mp4"
     },
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
@@ -10596,6 +10734,8 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "higgsfieldPrompt": "Vertical 9:16, 10 seconds, photorealistic, cinematic handheld camera, shallow depth of field, natural light, 4K. NO text overlay, NO subtitles, NO watermark, NO logo. Early morning at a restaurant staff entrance. A young employee taps a supermarket loyalty card against the door reader. Nothing. He tries a metro pass. Nothing. He tries his wrapped sandwich. At 5 seconds the door opens on its own because a colleague pushes it from inside, and he walks in holding the sandwich against the reader. Final 2 seconds: the reader blinks red, alone, as the door closes. Audio: quiet street ambience, three flat error beeps, plastic tapping on a reader, a door hinge, a colleague's mumbled \"Bonjour\", then one last error beep. No music.",
     "scriptHeygen": null,
     "kit": null,
+    "heygenPrompt": null,
+    "montage": null,
     "metier": null,
     "phase": null,
     "amplitude": null,
@@ -10610,7 +10750,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "format": "9:16 · 1080 × 1920 · 10 s",
       "hook": "Ton système de pointage",
       "punchline": "Un badge, un QR code, un code PIN. Point",
-      "url": null
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP061.mp4"
     },
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
@@ -10772,6 +10912,8 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "higgsfieldPrompt": "Vertical 9:16, 10 seconds, photorealistic, front-on framing as if from a tablet camera, 4K. NO text overlay, NO subtitles, NO watermark, NO logo. An employee stands in front of a wall-mounted tablet at the staff entrance, taking his clock-in photo. He tries a neutral face, then a serious face, then a slight smile, then a full grin, adjusting his hair between each. At 5 seconds he settles on an intensely dramatic, chin-lifted expression. Final 2 seconds: he holds it perfectly still, absolutely committed. Audio: staff room ambience, a soft camera shutter repeated five times, fabric rustling, one satisfied exhale. No music.",
     "scriptHeygen": null,
     "kit": null,
+    "heygenPrompt": null,
+    "montage": null,
     "metier": null,
     "phase": null,
     "amplitude": null,
@@ -10786,7 +10928,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "format": "9:16 · 1080 × 1920 · 10 s",
       "hook": "Je te jure, j'étais là à 8 h",
       "punchline": "Photo, heure, poste. Le débat est clos",
-      "url": null
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP062.mp4"
     },
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
@@ -10947,6 +11089,8 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "higgsfieldPrompt": "Vertical 9:16, 10 seconds, photorealistic, office corridor, 4K. NO text overlay, NO subtitles, NO watermark, NO logo. An employee writes carefully on a yellow sticky note, presses it firmly onto the manager's office door, and walks away satisfied. The camera stays on the door. At 5 seconds the note peels off in slow motion, drifts sideways and slides down the gap behind a radiator. Final 2 seconds: the empty door, one corner of yellow just visible behind the radiator grille. Audio: corridor ambience, pen on paper, a sticky note pressed to wood, footsteps leaving, a faint paper slide, a metallic radiator tick. No music.",
     "scriptHeygen": null,
     "kit": null,
+    "heygenPrompt": null,
+    "montage": null,
     "metier": null,
     "phase": null,
     "amplitude": null,
@@ -10961,7 +11105,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "format": "9:16 · 1080 × 1920 · 10 s",
       "hook": "Ta demande de congé",
       "punchline": "Demandée, reçue, validée. Sans papier",
-      "url": null
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP063.mp4"
     },
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
@@ -11124,6 +11268,8 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "higgsfieldPrompt": "Vertical 9:16, 10 seconds, photorealistic, staff room, 4K. NO text overlay, NO subtitles, NO watermark, NO logo. A whiteboard weekly rota covered in layers of crossings-out, arrows, magnets and three different marker colours. A manager studies it, then adds a strip of masking tape over one section and writes a new name on the tape. At 5 seconds a magnet gives way and half the paper slips sideways. Final 2 seconds: he presses it back with one finger and holds it there, looking at the camera. Audio: staff room ambience, squeaky marker on whiteboard, tape tearing, a magnet clattering to the floor, one long exhale. No music.",
     "scriptHeygen": null,
     "kit": null,
+    "heygenPrompt": null,
+    "montage": null,
     "metier": null,
     "phase": null,
     "amplitude": null,
@@ -11138,7 +11284,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "format": "9:16 · 1080 × 1920 · 10 s",
       "hook": "Le planning de la semaine",
       "punchline": "Par employé ou par poste. Imprimable. À jour",
-      "url": null
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP064.mp4"
     },
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
@@ -11301,6 +11447,8 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "higgsfieldPrompt": "Vertical 9:16, 10 seconds, photorealistic, back office, 4K. NO text overlay, NO subtitles, NO watermark, NO logo. A very young intern sits in the manager's oversized leather chair, feet up on the desk, slowly spinning, holding the manager's coffee mug. He opens a drawer, looks inside, nods approvingly. At 5 seconds the office door opens off-frame; he freezes mid-spin, feet still on the desk. Final 2 seconds: he is standing perfectly straight beside the chair, mug behind his back. Audio: office ambience, a chair spinning and creaking, a drawer sliding, a door handle turning, an abrupt scramble, then silence. No music.",
     "scriptHeygen": null,
     "kit": null,
+    "heygenPrompt": null,
+    "montage": null,
     "metier": null,
     "phase": null,
     "amplitude": null,
@@ -11315,7 +11463,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "format": "9:16 · 1080 × 1920 · 10 s",
       "hook": "Qui a accès à quoi ",
       "punchline": "Chaque rôle voit exactement ce qu'il doit voir",
-      "url": null
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP065.mp4"
     },
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
@@ -11480,6 +11628,8 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "higgsfieldPrompt": "Vertical 9:16, 10 seconds, photorealistic, professional kitchen, 4K. NO text overlay, NO subtitles, NO watermark, NO logo. A cook, hands covered in flour, leans toward a stainless-steel toaster on the counter and speaks to it clearly, waiting for an answer. Nothing. He speaks again, louder, more articulately. At 5 seconds the toaster ejects two slices of toast violently. He takes this as a response and nods. Final 2 seconds: he goes back to work, satisfied, having received his answer. Audio: kitchen ambience, a muffled human question, a pause, a second louder question, a metallic toaster spring-pop, one accepting \"Ah, d'accord.\" No music.",
     "scriptHeygen": null,
     "kit": null,
+    "heygenPrompt": null,
+    "montage": null,
     "metier": null,
     "phase": null,
     "amplitude": null,
@@ -11494,7 +11644,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "format": "9:16 · 1080 × 1920 · 10 s",
       "hook": "Ta cuisine n'a personne à qui parler",
       "punchline": "Jarvis répond, lui. Et il note",
-      "url": null
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP066.mp4"
     },
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
@@ -11646,6 +11796,8 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "higgsfieldPrompt": "Vertical 9:16, 10 seconds, photorealistic, kitchen fridge close-up, 4K. NO text overlay, NO subtitles, NO watermark, NO logo. A chef opens a fridge door, holds his bare hand inside for exactly two seconds, withdraws it, and gives a confident single nod as if a precise measurement has been taken. He writes nothing down. At 5 seconds he repeats the procedure on the freezer, this time with two fingers, and nods even more confidently. Final 2 seconds: he closes the door and walks away, hands in pockets, entirely satisfied with his data collection. Audio: fridge seal opening and closing, compressor hum, kitchen ambience, one decisive \"Hm.\" repeated twice. No music.",
     "scriptHeygen": null,
     "kit": null,
+    "heygenPrompt": null,
+    "montage": null,
     "metier": null,
     "phase": null,
     "amplitude": null,
@@ -11660,7 +11812,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "format": "9:16 · 1080 × 1920 · 10 s",
       "hook": "Ton relevé de température",
       "punchline": "Un vrai relevé, horodaté, par équipement",
-      "url": null
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP067.mp4"
     },
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
@@ -11823,6 +11975,8 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "higgsfieldPrompt": "Vertical 9:16, 10 seconds, photorealistic, kitchen close-up, 4K. NO text overlay, NO subtitles, NO watermark, NO logo. A cook opens a large tub of cream and sniffs it long and deeply, eyes narrowed in genuine scientific concentration. He sniffs again. Uncertain, he holds it out toward a colleague. The colleague sniffs, makes exactly the same face, and hands it back without a word. At 5 seconds a third cook enters frame, sniffs, and shrugs. Final 2 seconds: all three stand in a small circle staring at the tub, nobody deciding. Audio: kitchen ambience, deep deliberate sniffing, plastic lid flexing, a noncommittal grunt, a shrug of fabric, silence. No music.",
     "scriptHeygen": null,
     "kit": null,
+    "heygenPrompt": null,
+    "montage": null,
     "metier": null,
     "phase": null,
     "amplitude": null,
@@ -11837,7 +11991,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "format": "9:16 · 1080 × 1920 · 10 s",
       "hook": "Le test scientifique du nez",
       "punchline": "Une étiquette DLC, et plus personne ne renifle",
-      "url": null
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP068.mp4"
     },
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
@@ -11989,6 +12143,8 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "higgsfieldPrompt": "Vertical 9:16, 10 seconds, photorealistic, restaurant back door, morning, 4K. NO text overlay, NO subtitles, NO watermark, NO logo. A delivery driver stacks fifteen boxes and crates against the back door with impressive speed, drops a crumpled delivery note on top, and is already jogging back to his van before anyone appears. At 5 seconds the kitchen door opens and a cook steps out holding a pen, looking at an empty street. Final 2 seconds: the van pulls away in the background; the cook looks down at the tower of unchecked boxes. Audio: crates thudding on concrete, fast footsteps, a van door sliding shut, an engine pulling away, a kitchen door creak, then street quiet. No music.",
     "scriptHeygen": null,
     "kit": null,
+    "heygenPrompt": null,
+    "montage": null,
     "metier": null,
     "phase": null,
     "amplitude": null,
@@ -12003,7 +12159,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "format": "9:16 · 1080 × 1920 · 10 s",
       "hook": "Tu as vérifié la livraison ",
       "punchline": "Température, DLC, code EAN. En scannant",
-      "url": null
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP069.mp4"
     },
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
@@ -12165,6 +12321,8 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "higgsfieldPrompt": "Vertical 9:16, 10 seconds, photorealistic, high angle then low angle, kitchen floor, 4K. NO text overlay, NO subtitles, NO watermark, NO logo. An employee mops a single floor tile with extraordinary dedication, back and forth, until it gleams. The camera pulls back slowly to reveal the entire rest of the kitchen floor untouched and grimy. At 6 seconds he steps back to admire his one perfect tile, hands on hips. Final 2 seconds: he takes a photo of that single tile with his phone. Audio: kitchen ambience, wet mop strokes on tile, a bucket handle clank, a phone camera shutter, one proud sigh. No music.",
     "scriptHeygen": null,
     "kit": null,
+    "heygenPrompt": null,
+    "montage": null,
     "metier": null,
     "phase": null,
     "amplitude": null,
@@ -12179,7 +12337,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "format": "9:16 · 1080 × 1920 · 10 s",
       "hook": "C'est fait",
       "punchline": "Photo analysée par l'IA. Rapport objectif",
-      "url": null
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP070.mp4"
     },
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
@@ -12341,6 +12499,8 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "higgsfieldPrompt": "Vertical 9:16, 10 seconds, photorealistic, kitchen corridor, 4K. NO text overlay, NO subtitles, NO watermark, NO logo. A cook ticks boxes on a paper checklist at high speed without ever looking at the sheet, walking down a corridor. Tick, tick, tick, tick. At 5 seconds he reaches the end, signs it with a flourish, and pins it to the wall. Final 2 seconds: the camera holds on the sheet, which is pinned completely upside down. Audio: brisk footsteps, rapid pen ticking on paper, a satisfied hum, a pin pushing into a corkboard, then corridor quiet. No music.",
     "scriptHeygen": null,
     "kit": null,
+    "heygenPrompt": null,
+    "montage": null,
     "metier": null,
     "phase": null,
     "amplitude": null,
@@ -12355,7 +12515,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "format": "9:16 · 1080 × 1920 · 10 s",
       "hook": "La check-list du soir",
       "punchline": "Cochée, horodatée, signée par qui l'a faite",
-      "url": null
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP071.mp4"
     },
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
@@ -12517,6 +12677,8 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "higgsfieldPrompt": "Vertical 9:16, 10 seconds, photorealistic, restaurant office, 4K. NO text overlay, NO subtitles, NO watermark, NO logo. A health inspector in a jacket stands waiting with a clipboard. The manager hauls an enormous overstuffed ring binder onto the desk between them. He opens it. At 5 seconds the rings give way and several hundred loose pages fan out across the desk and floor in slow motion. Final 2 seconds: the two men look at each other over a desk covered in paper; the inspector clicks his pen once. Audio: office ambience, a heavy binder thud, metal rings snapping open, a long paper cascade, one pen click, total silence. No music.",
     "scriptHeygen": null,
     "kit": null,
+    "heygenPrompt": null,
+    "montage": null,
     "metier": null,
     "phase": null,
     "amplitude": null,
@@ -12531,7 +12693,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "format": "9:16 · 1080 × 1920 · 10 s",
       "hook": "Contrôle sanitaire. Ce matin",
       "punchline": "Tout l'historique HACCP, exporté en un clic",
-      "url": null
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP072.mp4"
     },
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
@@ -12686,6 +12848,8 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "higgsfieldPrompt": "Vertical 9:16, 10 seconds, photorealistic, bakery kitchen at dawn, 4K. NO text overlay, NO subtitles, NO watermark, NO logo. A chef stands in front of empty bread racks holding a coin. He flips it, catches it on the back of his hand, looks at it, and writes a number on an order pad. Unsatisfied, he flips again. At 5 seconds he flips a third time, misses the catch, and the coin rolls under a rack. Final 2 seconds: he writes a number anyway, without the coin. Audio: quiet early-morning kitchen, a coin ringing off a thumb, a slap on skin, pen on paper, a coin rolling on tiles, then silence. No music.",
     "scriptHeygen": null,
     "kit": null,
+    "heygenPrompt": null,
+    "montage": null,
     "metier": null,
     "phase": null,
     "amplitude": null,
@@ -12700,7 +12864,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "format": "9:16 · 1080 × 1920 · 10 s",
       "hook": "Combien tu commandes pour samedi ",
       "punchline": "Tes ventes le savent. Demande-leur",
-      "url": null
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP073.mp4"
     },
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
@@ -12856,6 +13020,8 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "higgsfieldPrompt": "Vertical 9:16, 10 seconds, photorealistic, wholesale market aisle, 4K. NO text overlay, NO subtitles, NO watermark, NO logo. A restaurateur stands still in the middle of a busy wholesale market aisle, patting every pocket of his jacket, then his trousers, then his jacket again. He looks at his empty hands. At 5 seconds he turns a full slow circle on the spot, trolley beside him, surrounded by produce, remembering nothing. Final 2 seconds: he picks up one random cabbage and looks at it as if it might help. Audio: busy market ambience, forklift beeps, fabric patting, a trolley wheel squeak, one hopeless \"Bon…\", crowd murmur. No music.",
     "scriptHeygen": null,
     "kit": null,
+    "heygenPrompt": null,
+    "montage": null,
     "metier": null,
     "phase": null,
     "amplitude": null,
@@ -12870,7 +13036,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "format": "9:16 · 1080 × 1920 · 10 s",
       "hook": "Tu as oublié la liste",
       "punchline": "Elle se construit toute seule. Et elle part au fournisseur",
-      "url": null
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP074.mp4"
     },
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
@@ -13025,6 +13191,8 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "higgsfieldPrompt": "Vertical 9:16, 10 seconds, photorealistic, macro on a stainless counter, 4K. NO text overlay, NO subtitles, NO watermark, NO logo. A hand pulls a heavily crumpled paper invoice out of an apron pocket and unfolds it on a counter, smoothing it flat with the side of the hand. The paper is stained with oil and sauce, and one corner is torn away. At 5 seconds the hand rotates it ninety degrees, trying to find a readable angle. Final 2 seconds: the paper slowly re-folds itself back into its crumpled shape on its own. Audio: paper crackling and unfolding, a hand smoothing paper on steel, kitchen ambience, one defeated exhale, a soft paper rustle as it curls back. No music.",
     "scriptHeygen": null,
     "kit": null,
+    "heygenPrompt": null,
+    "montage": null,
     "metier": null,
     "phase": null,
     "amplitude": null,
@@ -13039,7 +13207,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "format": "9:16 · 1080 × 1920 · 10 s",
       "hook": "Ta facture fournisseur",
       "punchline": "Photographie-la. Les prix se mettent à jour seuls",
-      "url": null
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP075.mp4"
     },
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
@@ -13194,6 +13362,8 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "higgsfieldPrompt": "Vertical 9:16, 10 seconds, photorealistic, walk-in fridge, cold light, 4K. NO text overlay, NO subtitles, NO watermark, NO logo. A chef counts vacuum-packed steaks on a shelf out loud, pointing at each one. He reaches the end, frowns, and starts again from the beginning. Second count gives a different number. He starts a third time, now moving each pack physically to the other side of the shelf as he counts. At 6 seconds a colleague walks past and takes one. Final 2 seconds: the chef finishes his count, satisfied, unaware. Audio: cold room compressor drone, vacuum plastic crinkling, murmured counting in French, footsteps passing, plastic rustle, then counting continuing. No music.",
     "scriptHeygen": null,
     "kit": null,
+    "heygenPrompt": null,
+    "montage": null,
     "metier": null,
     "phase": null,
     "amplitude": null,
@@ -13208,7 +13378,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "format": "9:16 · 1080 × 1920 · 10 s",
       "hook": "Ton inventaire du mardi",
       "punchline": "La production sort les ingrédients du stock. Automatiquement",
-      "url": null
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP076.mp4"
     },
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
@@ -13363,6 +13533,8 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "higgsfieldPrompt": "Vertical 9:16, 10 seconds, photorealistic, restaurant table, warm light, 4K. NO text overlay, NO subtitles, NO watermark, NO logo. A restaurant owner sits across from a couple planning a wedding. Having no notepad, he writes numbers on a paper placemat, then continues onto a second placemat, then onto a napkin. At 5 seconds he slides all three across the table toward them as a formal proposal. Final 2 seconds: the bride picks up the napkin, turns it over, and finds a coffee ring on the total. Audio: restaurant ambience, pen scratching on textured paper, paper sliding on wood, a polite \"Voilà !\", one uncertain \"Ah.\", cutlery in the background. No music.",
     "scriptHeygen": null,
     "kit": null,
+    "heygenPrompt": null,
+    "montage": null,
     "metier": null,
     "phase": null,
     "amplitude": null,
@@ -13377,7 +13549,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "format": "9:16 · 1080 × 1920 · 10 s",
       "hook": "Ton devis pour le mariage de samedi",
       "punchline": "Devis, envoi, acceptation, facture. Une seule chaîne",
-      "url": null
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP077.mp4"
     },
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
@@ -13533,6 +13705,8 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "higgsfieldPrompt": "Vertical 9:16, 10 seconds, photorealistic, accountant's office, 4K. NO text overlay, NO subtitles, NO watermark, NO logo. A restaurateur places a shoebox on an accountant's desk and lifts the lid. It is packed to the brim with crumpled receipts and invoices, some folded, some torn. The accountant looks into the box for a long moment without moving. At 5 seconds a single receipt escapes and drifts to the floor. Final 2 seconds: the accountant slowly puts the lid back on and slides the box six centimetres to one side. Audio: quiet office ambience, cardboard lid lifting, dense paper settling, a clock ticking, a single sheet fluttering to the floor, a cardboard slide on wood. No music.",
     "scriptHeygen": null,
     "kit": null,
+    "heygenPrompt": null,
+    "montage": null,
     "metier": null,
     "phase": null,
     "amplitude": null,
@@ -13547,7 +13721,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "format": "9:16 · 1080 × 1920 · 10 s",
       "hook": "Ta comptabilité annuelle",
       "punchline": "Chaque dépense rattachée à sa livraison. Toute l'année",
-      "url": null
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP078.mp4"
     },
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
@@ -13702,6 +13876,8 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "higgsfieldPrompt": "Vertical 9:16, 10 seconds, photorealistic, café counter close-up, 4K. NO text overlay, NO subtitles, NO watermark, NO logo. A customer at a counter pulls a thick stack of paper loyalty cards from his wallet and fans them out like a poker hand. He searches through them one by one, checking the stamps. Every card is partially stamped; none is complete. At 6 seconds he finds one with nine stamps out of ten, holds it up hopefully, then reads the expiry date and lowers it. Final 2 seconds: he puts them all back and pays normally. Audio: café ambience, espresso machine, cards shuffling and flicking, a hopeful \"Ah !\", a disappointed \"Ah.\", a card slipping back into a wallet. No music.",
     "scriptHeygen": null,
     "kit": null,
+    "heygenPrompt": null,
+    "montage": null,
     "metier": null,
     "phase": null,
     "amplitude": null,
@@ -13716,7 +13892,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "format": "9:16 · 1080 × 1920 · 10 s",
       "hook": "Ton programme de fidélité",
       "punchline": "Un compte, tous les canaux, zéro carton",
-      "url": null
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP079.mp4"
     },
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
@@ -13871,6 +14047,8 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "higgsfieldPrompt": "Vertical 9:16, 10 seconds, photorealistic, bar counter before opening, 4K. NO text overlay, NO subtitles, NO watermark, NO logo. A manager pulls open a cash drawer at the start of service. It is completely empty. He closes it, opens it again as if that might help, then blows into it the way one blows into an old game cartridge. At 5 seconds he checks under the counter, behind the till, and inside an empty mug. Final 2 seconds: he stands holding the empty drawer, looking off toward the front door where a first customer is arriving. Audio: cash drawer mechanism sliding twice, a hollow blow into plastic, hands patting under a counter, a ceramic mug lifted and set down, a shop door bell. No music.",
     "scriptHeygen": null,
     "kit": null,
+    "heygenPrompt": null,
+    "montage": null,
     "metier": null,
     "phase": null,
     "amplitude": null,
@@ -13885,7 +14063,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "format": "9:16 · 1080 × 1920 · 10 s",
       "hook": "Ouverture. Fond de caisse : ",
       "punchline": "Fond déclaré, opérateur identifié, service ouvert",
-      "url": null
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP080.mp4"
     },
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
@@ -14043,6 +14221,8 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "higgsfieldPrompt": "Vertical 9:16, 10 seconds, photorealistic, restaurant table, evening, 4K. NO text overlay, NO subtitles, NO watermark, NO logo. Eight friends around a finished dinner table, each holding a phone calculator, all talking at once and pointing at different items on a single shared bill. One person has a pen and is drawing a diagram on the receipt. At 6 seconds someone puts a twenty-euro note down and everyone stops to look at it. Final 2 seconds: the waiter stands beside the table, terminal in hand, waiting with infinite patience. Audio: overlapping animated French chatter, phone keypad taps, a pen on paper, a banknote laid on wood, then a sudden collective silence. No music.",
     "scriptHeygen": null,
     "kit": null,
+    "heygenPrompt": null,
+    "montage": null,
     "metier": null,
     "phase": null,
     "amplitude": null,
@@ -14057,7 +14237,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "format": "9:16 · 1080 × 1920 · 10 s",
       "hook": "On peut séparer ",
       "punchline": "Oui. Par personne, par article, par montant",
-      "url": null
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP081.mp4"
     },
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
@@ -14216,6 +14396,8 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "higgsfieldPrompt": "Vertical 9:16, 10 seconds, photorealistic, night, closed restaurant, single overhead lamp, 4K. NO text overlay, NO subtitles, NO watermark, NO logo. Two in the morning. A manager recounts a small pile of coins for what is clearly the fifth time, lips moving. He checks the till, lifts the drawer insert, looks underneath, shakes it. At 6 seconds he finds nothing and writes a figure on a pad. Final 2 seconds: he stares at the pad, then holds up a single one-cent coin between two fingers, defeated by it. Audio: empty restaurant reverb, coins being counted, a drawer insert lifted and dropped, a chair creak, one long breath, a single coin set on wood. No music.",
     "scriptHeygen": null,
     "kit": null,
+    "heygenPrompt": null,
+    "montage": null,
     "metier": null,
     "phase": null,
     "amplitude": null,
@@ -14230,7 +14412,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "format": "9:16 · 1080 × 1920 · 10 s",
       "hook": "Il manque un centime",
       "punchline": "Le Z calcule l'écart. Toi, tu rentres chez toi",
-      "url": null
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP082.mp4"
     },
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
@@ -14390,6 +14572,8 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "higgsfieldPrompt": "Vertical 9:16, 10 seconds, photorealistic, busy professional kitchen, 4K. NO text overlay, NO subtitles, NO watermark, NO logo. A head chef at the pass shouts an order across the kitchen. Nobody reacts — the extraction hood is roaring, a mixer is running, two cooks have their backs turned. He shouts again, louder, cupping his hands. Still nothing. At 6 seconds he simply walks the plate over himself. Final 2 seconds: the moment he leaves the pass, three cooks all turn around at once and look at the empty spot where he was. Audio: overwhelming kitchen noise, extractor roar, a mixer, two muffled shouted orders swallowed by the noise, footsteps, then the noise continuing. No music.",
     "scriptHeygen": null,
     "kit": null,
+    "heygenPrompt": null,
+    "montage": null,
     "metier": null,
     "phase": null,
     "amplitude": null,
@@ -14404,7 +14588,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "format": "9:16 · 1080 × 1920 · 10 s",
       "hook": "J'AI DIT DEUX BURGERS ",
       "punchline": "Chaque poste voit ses plats. Sans crier",
-      "url": null
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP083.mp4"
     },
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
@@ -14551,6 +14735,8 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "higgsfieldPrompt": "Vertical 9:16, 10 seconds, photorealistic, restaurant table close-up, 4K. NO text overlay, NO subtitles, NO watermark, NO logo. A customer holds a phone over a QR code taped to a restaurant table. The code is torn across one corner and covered in three overlapping layers of yellowed sticky tape. He moves the phone closer, then further, then tilts it, then tilts the whole table slightly. At 6 seconds he gives up and looks around for a waiter. Final 2 seconds: the phone camera finally focuses — on a reflection of the ceiling light. Audio: restaurant ambience, a phone scan failure buzz repeated three times, tape crinkling, a table leg scraping, an impatient tap on the screen. No music.",
     "scriptHeygen": null,
     "kit": null,
+    "heygenPrompt": null,
+    "montage": null,
     "metier": null,
     "phase": null,
     "amplitude": null,
@@ -14565,7 +14751,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "format": "9:16 · 1080 × 1920 · 10 s",
       "hook": "Commander à table",
       "punchline": "Un plan de salle, un QR par table. Ça marche",
-      "url": null
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP084.mp4"
     },
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
@@ -14724,6 +14910,8 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "higgsfieldPrompt": "Vertical 9:16, 10 seconds, photorealistic, restaurant interior, warm evening light, 4K. NO text overlay, NO subtitles, NO watermark, NO logo. A table set for eight, immaculate, with a small \"Réservé\" card and a helium balloon tied to a chair. Nobody is there. The camera holds, then pushes in very slowly. At 6 seconds the balloon, losing helium, sinks gently until it rests on the tablecloth. Final 2 seconds: a waiter enters frame at the far side of the room, looks at the table, and turns off one of the lights above it. Audio: quiet restaurant ambience, distant chatter from other tables, a faint balloon string rubbing on fabric, a light switch click, then quiet. No music.",
     "scriptHeygen": null,
     "kit": null,
+    "heygenPrompt": null,
+    "montage": null,
     "metier": null,
     "phase": null,
     "amplitude": null,
@@ -14738,7 +14926,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "format": "9:16 · 1080 × 1920 · 10 s",
       "hook": "Table de 8. 20 h 30. Personne",
       "punchline": "No-show marqué, table libérée, soirée sauvée",
-      "url": null
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP085.mp4"
     },
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
@@ -14885,6 +15073,8 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "higgsfieldPrompt": "Vertical 9:16, 10 seconds, photorealistic, kitchen and pass during full service, 4K. NO text overlay, NO subtitles, NO watermark, NO logo. A wall phone rings in a restaurant at peak service. One by one, every person in frame looks at it and then looks away: a cook with both hands in a pan, a waiter with a full tray, a dishwasher with wet arms up to the elbows. At 6 seconds the ringing stops on its own. Final 2 seconds: everyone relaxes visibly — and it starts ringing again. Audio: busy service noise, an insistent landline ring cutting through it, sizzling, plates, the ring stopping, one collective exhale, then the ring restarting. No music.",
     "scriptHeygen": null,
     "kit": null,
+    "heygenPrompt": null,
+    "montage": null,
     "metier": null,
     "phase": null,
     "amplitude": null,
@@ -14899,7 +15089,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "format": "9:16 · 1080 × 1920 · 10 s",
       "hook": "Trois appels manqués pendant le coup de feu",
       "punchline": "Caroline décroche. Et elle prend la réservation",
-      "url": null
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP086.mp4"
     },
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
@@ -15056,6 +15246,8 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "higgsfieldPrompt": "Vertical 9:16, 10 seconds, photorealistic, takeaway counter, 4K. NO text overlay, NO subtitles, NO watermark, NO logo. Three different delivery-platform tablets sit propped side by side on a counter. They all start chiming at once, each with a different tone, each screen flashing a different colour. A single employee reaches for all three at the same time with two hands. At 6 seconds a fourth device — a phone — starts ringing beside them. Final 2 seconds: he stands with one tablet in each hand and the third one held against his chest with his chin. Audio: three distinct order-notification chimes overlapping and repeating, a phone ringtone joining, plastic tablets clacking, one desperate inhale. No music.",
     "scriptHeygen": null,
     "kit": null,
+    "heygenPrompt": null,
+    "montage": null,
     "metier": null,
     "phase": null,
     "amplitude": null,
@@ -15070,7 +15262,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "format": "9:16 · 1080 × 1920 · 10 s",
       "hook": "Trois plateformes. Trois écrans",
       "punchline": "Une seule cuisine. Un seul flux",
-      "url": null
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP087.mp4"
     },
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
@@ -15229,6 +15421,8 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "higgsfieldPrompt": "Vertical 9:16, 10 seconds, photorealistic, tight portrait, restaurant back office, 4K. NO text overlay, NO subtitles, NO watermark, NO logo. Close-up on a restaurant owner's face lit by his phone screen, smiling as he scrolls. The smile holds, then falters, then collapses entirely into a flat stare. He scrolls back up and reads the same thing again. At 6 seconds he lowers the phone slowly to the desk, screen down. Final 2 seconds: he picks it up and reads it a third time. Audio: quiet office, a finger swiping glass, a small amused hum that stops abruptly, a long silence, a phone set face-down on wood, then picked up again. No music.",
     "scriptHeygen": null,
     "kit": null,
+    "heygenPrompt": null,
+    "montage": null,
     "metier": null,
     "phase": null,
     "amplitude": null,
@@ -15243,7 +15437,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "format": "9:16 · 1080 × 1920 · 10 s",
       "hook": "Un avis. Publié il y a six jours",
       "punchline": "Vu, répondu, traité. Le jour même",
-      "url": null
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP088.mp4"
     },
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
@@ -15393,6 +15587,8 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "higgsfieldPrompt": "Vertical 9:16, 10 seconds, photorealistic, restaurant entrance counter, 4K. NO text overlay, NO subtitles, NO watermark, NO logo. A large glass jar sits on a counter beside a handwritten sign, intended for a prize draw. Inside there is exactly one folded slip of paper. The camera pushes in slowly on the single slip. At 6 seconds a hand reaches in, takes the slip out, unfolds it, and reads it. Final 2 seconds: the same hand refolds it and puts it back in the empty jar. Audio: entrance ambience, a door opening in the background, glass resonance as a hand reaches in, paper unfolding, a beat of silence, paper dropped back into glass. No music.",
     "scriptHeygen": null,
     "kit": null,
+    "heygenPrompt": null,
+    "montage": null,
     "metier": null,
     "phase": null,
     "amplitude": null,
@@ -15407,7 +15603,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "format": "9:16 · 1080 × 1920 · 10 s",
       "hook": "Ton jeu concours",
       "punchline": "QR code, roue cadeaux, gagnants tracés",
-      "url": null
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP089.mp4"
     },
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
@@ -15567,6 +15763,8 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "higgsfieldPrompt": "Vertical 9:16, 10 seconds, photorealistic, dim restaurant office, single warm lamp, 4K. NO text overlay, NO subtitles, NO watermark, NO logo. A restaurant manager sits alone at a desk, tilting an empty espresso cup and studying the coffee grounds inside with intense concentration, as if reading a forecast. He rotates the cup slowly, tilts his head, then nods once at something only he can see. At 6 seconds he writes a single number on a sheet of paper and underlines it twice. Final 2 seconds: he looks up at the camera with total conviction. Audio: quiet office, a clock ticking, ceramic rotating on a wooden desk, a pen underlining twice, one confident \"Voilà.\" No music.",
     "scriptHeygen": null,
     "kit": null,
+    "heygenPrompt": null,
+    "montage": null,
     "metier": null,
     "phase": null,
     "amplitude": null,
@@ -15581,7 +15779,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "format": "9:16 · 1080 × 1920 · 10 s",
       "hook": "Ta prévision pour samedi",
       "punchline": "PrediBot lit tes données. Pas ton café",
-      "url": null
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP090.mp4"
     },
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
@@ -15741,6 +15939,8 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "higgsfieldPrompt": "Vertical 9:16, 10 seconds, photorealistic, cinematic handheld camera, shallow depth of field, warm restaurant lighting, 4K. NO text overlay, NO subtitles, NO watermark, NO logo. A waiter carries a birthday tiramisu with a single sparkler candle across a dining room toward a table of guests already clapping. At 5 seconds the sparkler erupts into a full firework fountain, throwing bright sparks up to the ceiling; the guests recoil backwards in unison, one man's paper party hat tilts over his eyes. Final 2 seconds: the waiter stands perfectly still, dessert held level, face completely neutral, sparks still falling around him. Audio: restaurant ambience, scattered applause and a few voices humming happy birthday, a sudden loud fizzing roar of the firework, chairs scraping back, a surprised collective \"Oh !\", then only fizzing. No music.",
     "scriptHeygen": null,
     "kit": null,
+    "heygenPrompt": null,
+    "montage": null,
     "metier": null,
     "phase": null,
     "amplitude": null,
@@ -15755,7 +15955,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "format": "9:16 · 1080 × 1920 · 10 s",
       "hook": "Anniversaire de table 12",
       "punchline": "Les surprises, c'est bien. Les imprévus, non",
-      "url": null
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP091.mp4"
     },
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
@@ -15916,6 +16116,8 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "higgsfieldPrompt": "Vertical 9:16, 10 seconds, photorealistic, cinematic handheld camera, sunny terrace, 4K. NO text overlay, NO subtitles, NO watermark, NO logo. IMPORTANT: an entirely generic, invented masked superhero — plain matte green and silver bodysuit, simple blank eye-mask, no emblem, no cape logo, no resemblance to any existing character. He arrives politely at the host stand of a busy restaurant terrace and points at a reservation notebook. At 5 seconds a crowd of thirty excited fans floods in behind him from off-frame, phones raised, filling the entire terrace within two seconds; a single young waiter is swallowed by the crowd, one arm holding a tray above his head like a periscope. Final 2 seconds: the superhero sits alone at a small table in the middle of the chaos, hands folded, waiting patiently. Audio: terrace ambience, a sudden roar of running footsteps and excited shouting, camera shutters, a tray wobbling, a lone waiter's voice saying \"Attendez—\", then the crowd noise settling into a hum. No music.",
     "scriptHeygen": null,
     "kit": null,
+    "heygenPrompt": null,
+    "montage": null,
     "metier": null,
     "phase": null,
     "amplitude": null,
@@ -16093,6 +16295,8 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "higgsfieldPrompt": "Vertical 9:16, 10 seconds, photorealistic, cinematic, professional kitchen then window, 4K. NO text overlay, NO subtitles, NO watermark, NO logo. A chef opens the fish fridge: it is completely empty except for one sad lemon. He looks at a ticket in his hand, then at the empty fridge, then at the open kitchen window. At 5 seconds he is leaning out of that window in full chef whites and toque, casting a fishing rod into an ornamental carp pond in the courtyard, elbow resting on the sill. Final 2 seconds: the line goes taut, he braces, expression suddenly hopeful and completely serious. Audio: fridge fan hum, a paper ticket rustle, a long resigned exhale, a window latch, the whir of a fishing reel casting, a plop in water, then birdsong and a single reel click. No music.",
     "scriptHeygen": null,
     "kit": null,
+    "heygenPrompt": null,
+    "montage": null,
     "metier": null,
     "phase": null,
     "amplitude": null,
@@ -16107,7 +16311,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "format": "9:16 · 1080 × 1920 · 10 s",
       "hook": "Rupture de stock, 20 h 15",
       "punchline": "Anticiper, c'est moins sportif",
-      "url": null
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP093.mp4"
     },
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
@@ -16268,6 +16472,8 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "higgsfieldPrompt": "Vertical 9:16, 10 seconds, photorealistic, low-angle street tracking shot, late afternoon light, 4K. NO text overlay, NO subtitles, NO watermark, NO logo. A delivery rider on a scooter with an insulated backpack is stuck in slow traffic on a French city street, foot down, visor up, sighing. At 5 seconds a small autonomous six-wheeled delivery robot the size of a suitcase glides smoothly past him in the bike lane, indicator light blinking politely. Final 2 seconds: the rider watches it disappear ahead; the robot stops at a pedestrian crossing and waits, perfectly law-abiding, while he is still stuck. Audio: idling engines, car horns, a resigned human sigh through a helmet, a quiet electric motor whirr and a soft robotic indicator beep, then traffic ambience. No music.",
     "scriptHeygen": null,
     "kit": null,
+    "heygenPrompt": null,
+    "montage": null,
     "metier": null,
     "phase": null,
     "amplitude": null,
@@ -16282,7 +16488,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "format": "9:16 · 1080 × 1920 · 10 s",
       "hook": "2026, la livraison change de main",
       "punchline": "Autant que tes commandes arrivent au bon endroit",
-      "url": null
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP094.mp4"
     },
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
@@ -16440,6 +16646,8 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "higgsfieldPrompt": "Vertical 9:16, 10 seconds, photorealistic, wide then slow push-in, bright midday exterior with unusual dimming light, 4K. NO text overlay, NO subtitles, NO watermark, NO logo. A packed restaurant terrace at lunch. Every single guest at every table suddenly stops eating, puts on cardboard eclipse glasses and tilts their head straight up in unison, forks frozen mid-air. The light dims to an eerie silver. At 5 seconds a waiter arrives with three hot plates and stands in the middle of the terrace, holding them, looking at forty upturned faces, then up at the sky himself. Final 2 seconds: he lowers the plates onto an empty table, sits down on a spare chair and looks up too. Audio: terrace chatter falling to complete silence, cutlery set down, cardboard glasses rustling, birds going quiet, one child's \"waouh\", plates clinking softly on a table. No music.",
     "scriptHeygen": null,
     "kit": null,
+    "heygenPrompt": null,
+    "montage": null,
     "metier": null,
     "phase": null,
     "amplitude": null,
@@ -16454,7 +16662,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "format": "9:16 · 1080 × 1920 · 10 s",
       "hook": "Le service s'est arrêté deux minutes",
       "punchline": "Le reste du temps, il ne devrait jamais s'arrêter",
-      "url": null
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP095.mp4"
     },
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
@@ -16613,6 +16821,8 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "higgsfieldPrompt": "Vertical 9:16, 10 seconds, photorealistic macro then medium, harsh summer light through a kitchen window, 4K. NO text overlay, NO subtitles, NO watermark, NO logo. Close macro on a large block of butter sitting on a stainless pass, a small fan oscillating uselessly beside it. The butter is visibly slumping, then sliding, leaving a glossy trail across the metal. At 5 seconds it slides right off the edge and lands with a wet slap on the tiles; the camera widens to reveal a cook standing in the heat with a wet cloth on his neck, watching it happen without moving. Final 2 seconds: he looks at the fan, then at the camera, sweat on his forehead, completely defeated. Audio: fan motor droning, distant cicadas, a fridge compressor struggling, a slow greasy slide on metal, a wet slap, one long exhale. No music.",
     "scriptHeygen": null,
     "kit": null,
+    "heygenPrompt": null,
+    "montage": null,
     "metier": null,
     "phase": null,
     "amplitude": null,
@@ -16627,7 +16837,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "format": "9:16 · 1080 × 1920 · 10 s",
       "hook": "39° en cuisine",
       "punchline": "Une alerte température, et tu sauves la marchandise",
-      "url": null
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP096.mp4"
     },
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
@@ -16792,6 +17002,8 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "higgsfieldPrompt": "Vertical 9:16, 10 seconds, photorealistic, static wide then slow push-in, busy kitchen pass, 4K. NO text overlay, NO subtitles, NO watermark, NO logo. Six different tablets and order terminals are mounted side by side on a shelf above a restaurant pass, each with a different generic interface colour, no readable text, no brand. They start chiming one after another, then all together, faster and faster. A manager stands in front of them holding a spatula, and at 5 seconds begins conducting them like an orchestra, sweeping the spatula in time with the chimes, deadly serious. Final 2 seconds: he stops conducting; every screen falls silent at once; he lowers the spatula slowly. Audio: kitchen ambience, six distinct notification chimes overlapping into a chaotic rhythm, escalating, then an abrupt collective silence and a single drip from a tap. No music.",
     "scriptHeygen": null,
     "kit": null,
+    "heygenPrompt": null,
+    "montage": null,
     "metier": null,
     "phase": null,
     "amplitude": null,
@@ -16806,7 +17018,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "format": "9:16 · 1080 × 1920 · 10 s",
       "hook": "Six plateformes. Six alertes",
       "punchline": "Une seule commande, un seul écran",
-      "url": null
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP097.mp4"
     },
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
@@ -16965,6 +17177,8 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "higgsfieldPrompt": "Vertical 9:16, 10 seconds, photorealistic, medium tracking shot in a modern dining room, 4K. NO text overlay, NO subtitles, NO watermark, NO logo. A wheeled humanoid service robot with a tray of drinks rolls smoothly between tables, guests watching, impressed. At 5 seconds it hits a small rug edge, freezes, its head twitches, and it begins performing a jerky, off-beat dance routine with the tray still perfectly level, glasses untouched. Final 2 seconds: it stops mid-pose, one arm up, and its status light turns from blue to red while a waiter walks calmly into frame and takes the tray off it. Audio: restaurant ambience, a smooth servo whirr, a sharp electronic glitch stutter, rhythmic servo clicking like a broken beat, guests laughing, a soft error chime, glass clinking as the tray is lifted. No music.",
     "scriptHeygen": null,
     "kit": null,
+    "heygenPrompt": null,
+    "montage": null,
     "metier": null,
     "phase": null,
     "amplitude": null,
@@ -16979,7 +17193,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "format": "9:16 · 1080 × 1920 · 10 s",
       "hook": "Ton nouveau serveur, en période d'essai",
       "punchline": "L'IA, c'est utile quand elle sert à quelque chose",
-      "url": null
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP098.mp4"
     },
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
@@ -17135,6 +17349,8 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "higgsfieldPrompt": "Vertical 9:16, 10 seconds, photorealistic, tight macro on a cluttered back-office desk, warm lamp light, 4K. NO text overlay, NO subtitles, NO watermark, NO logo. A 1990s cassette answering machine sits on a restaurant back-office desk next to a corded phone, its red light blinking furiously. The phone rings; the machine clicks and starts recording. At 5 seconds the little cassette door bursts open and a huge tangle of magnetic tape spills out and keeps unspooling across the desk and onto the floor, while the phone keeps ringing. Final 2 seconds: a hand enters frame, gently closes the office door on the whole mess, leaving the tape still unspooling. Audio: an old phone ringing, a plastic click and cassette whirr, muffled voices leaving messages layered on top of each other, tape unspooling with a papery hiss, a door closing softly, ringing continuing behind it. No music.",
     "scriptHeygen": null,
     "kit": null,
+    "heygenPrompt": null,
+    "montage": null,
     "metier": null,
     "phase": null,
     "amplitude": null,
@@ -17149,7 +17365,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "format": "9:16 · 1080 × 1920 · 10 s",
       "hook": "Quarante appels pendant le rush",
       "punchline": "Quelqu'un devrait répondre. Ce ne sera pas toi",
-      "url": null
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP099.mp4"
     },
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
@@ -17308,6 +17524,8 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "higgsfieldPrompt": "Vertical 9:16, 10 seconds, photorealistic, over-the-shoulder then reverse, restaurant table, 4K. NO text overlay, NO subtitles, NO watermark, NO logo. A young man has set up a ring light, a tripod and a small reflector around a single plate of pasta on a restaurant table, and is filming it from twelve different angles, moving the plate, adjusting a basil leaf with tweezers. Steam stops rising from the dish. At 5 seconds he finally takes one bite — and grimaces, because it is stone cold. Final 2 seconds: he pushes the plate away and starts typing on his phone with one finger, expression sour, ring light still glowing on his face. Audio: restaurant ambience, tripod clicks, a phone shutter repeating, a chair adjusting, a small disappointed \"mmh\", then rapid soft phone typing. No music.",
     "scriptHeygen": null,
     "kit": null,
+    "heygenPrompt": null,
+    "montage": null,
     "metier": null,
     "phase": null,
     "amplitude": null,
@@ -17322,7 +17540,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "format": "9:16 · 1080 × 1920 · 10 s",
       "hook": "Il a mis vingt minutes à filmer",
       "punchline": "Et deux minutes à te mettre deux étoiles",
-      "url": null
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP100.mp4"
     },
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
@@ -17484,6 +17702,8 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "higgsfieldPrompt": "Vertical 9:16, 10 seconds, photorealistic, extreme close-ups with dramatic thriller lighting and slow dolly moves, night back office, 4K. NO text overlay, NO subtitles, NO watermark, NO logo. Shot like a psychological thriller: an extreme close-up of a trembling hand pushing a stack of paper invoices; a macro of a calculator key being pressed with enormous tension; a slow tilt up a restaurant owner's face lit from below by a laptop screen, jaw clenched, a bead of sweat. At 5 seconds he presses the equals key, stares at the result, and his shoulders drop three centimetres. Final 2 seconds: he closes the laptop very slowly and sits in the dark, perfectly still. Audio: deep ominous room tone, a clock ticking, paper sliding, one loud calculator click, a heartbeat rising then stopping dead, a laptop lid closing, silence. No music beyond the tension drone.",
     "scriptHeygen": null,
     "kit": null,
+    "heygenPrompt": null,
+    "montage": null,
     "metier": null,
     "phase": null,
     "amplitude": null,
@@ -17498,7 +17718,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "format": "9:16 · 1080 × 1920 · 10 s",
       "hook": "Rapprochement des caisses. Vendredi soir",
       "punchline": "Ça devrait être une ligne, pas une enquête",
-      "url": null
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP101.mp4"
     },
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
@@ -17650,6 +17870,8 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "higgsfieldPrompt": "Vertical 9:16, 10 seconds, photorealistic, fast handheld, professional kitchen, 4K. NO text overlay, NO subtitles, NO watermark, NO logo. A person in a plain grey jacket carrying a clipboard walks slowly toward a kitchen's swinging door from the dining room. Cut inside: the entire brigade explodes into hyper-speed motion — containers stacked, a floor mopped, a thermometer plunged into a fridge, a hairnet yanked on, all in three seconds of frantic activity, then everyone freezes in perfect professional poses. At 5 seconds the door opens: it is only a delivery driver asking for a signature. Final 2 seconds: the entire brigade stays frozen in their poses, mop in the air, staring at him. Audio: calm dining room ambience, then an explosion of clattering, running footsteps, fridge doors, a mop slapping tiles, an abrupt total silence, a door creak, a casual \"Bonjour, signature ?\". No music.",
     "scriptHeygen": null,
     "kit": null,
+    "heygenPrompt": null,
+    "montage": null,
     "metier": null,
     "phase": null,
     "amplitude": null,
@@ -17664,7 +17886,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "format": "9:16 · 1080 × 1920 · 10 s",
       "hook": "Contrôle surprise. Ou pas",
       "punchline": "Le jour où c'est le vrai, tu ne bouges pas",
-      "url": null
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP102.mp4"
     },
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
@@ -17824,6 +18046,8 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "higgsfieldPrompt": "Vertical 9:16, 10 seconds, photorealistic, wide exterior then interior reverse, small village restaurant, 4K. NO text overlay, NO subtitles, NO watermark, NO logo. A quiet restaurant with two occupied tables. Through the window, a large coach pulls up and stops with a hiss. At 5 seconds its doors open and forty tourists in matching caps stream out and walk in single file toward the entrance, one of them waving cheerfully. Final 2 seconds: interior shot of a lone waiter behind the bar, holding a single menu, watching the line come through the door, not moving a muscle. Audio: quiet restaurant ambience, a coach air-brake hiss, doors opening, a rising tide of cheerful chatter and footsteps, a bell above the door ringing repeatedly, then one very small \"bonjour\". No music.",
     "scriptHeygen": null,
     "kit": null,
+    "heygenPrompt": null,
+    "montage": null,
     "metier": null,
     "phase": null,
     "amplitude": null,
@@ -17838,7 +18062,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "format": "9:16 · 1080 × 1920 · 10 s",
       "hook": "Quarante couverts. Sans prévenir",
       "punchline": "Prévenu, tu aurais dit oui",
-      "url": null
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP103.mp4"
     },
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
@@ -17998,6 +18222,8 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "higgsfieldPrompt": "Vertical 9:16, 10 seconds, photorealistic, wide static shot, elegant empty dining room, evening light, 4K. NO text overlay, NO subtitles, NO watermark, NO logo. A long table beautifully set for eight — folded napkins, polished glasses, a flower arrangement — completely empty in a silent restaurant. The camera holds. At 5 seconds a dry tumbleweed rolls slowly across the floor in front of the table, from one side of the frame to the other, as if in a western. Final 2 seconds: it comes to rest against a chair leg; a single candle flickers. Audio: deep empty-room reverb, a clock ticking, a faint whistling wind that should not exist indoors, dry rustling as the tumbleweed rolls, then a candle-flame flicker. No music.",
     "scriptHeygen": null,
     "kit": null,
+    "heygenPrompt": null,
+    "montage": null,
     "metier": null,
     "phase": null,
     "amplitude": null,
@@ -18012,7 +18238,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "format": "9:16 · 1080 × 1920 · 10 s",
       "hook": "Table de huit. 20 h 30",
       "punchline": "Un no-show, ça se prévient",
-      "url": null
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP104.mp4"
     },
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
@@ -18171,6 +18397,8 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "higgsfieldPrompt": "Vertical 9:16, 10 seconds, photorealistic, western-style low-angle close-ups, sunlit terrace, 4K. NO text overlay, NO subtitles, NO watermark, NO logo. Shot like a spaghetti-western standoff: two couples face each other across a restaurant terrace, one single free table between them. Extreme close-ups of narrowed eyes, a hand hovering near a jacket pocket, a bead of sweat, a napkin fluttering like a tumbleweed. At 5 seconds both men draw — their phones — and stab at a booking screen with one thumb, faster and faster. Final 2 seconds: one of them raises his phone in triumph; the other lowers his head; the winner's partner is already sitting down. Audio: terrace ambience, wind, a single suspended note of tension, exaggerated boot-scrape and leather creak, two rapid phone taps, a soft confirmation chime, a chair scraping. No music beyond the tension note.",
     "scriptHeygen": null,
     "kit": null,
+    "heygenPrompt": null,
+    "montage": null,
     "metier": null,
     "phase": null,
     "amplitude": null,
@@ -18185,7 +18413,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "format": "9:16 · 1080 × 1920 · 10 s",
       "hook": "Dernière table du samedi",
       "punchline": "Le plus rapide gagne. Rends-la réservable en ligne",
-      "url": null
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP105.mp4"
     },
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
@@ -18344,6 +18572,8 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "higgsfieldPrompt": "Vertical 9:16, 10 seconds, photorealistic, over-the-shoulder then reverse, long dinner table, 4K. NO text overlay, NO subtitles, NO watermark, NO logo. A waiter arrives at a long table of fourteen friends with the bill folder. Instantly fourteen hands shoot up holding fourteen bank cards, plus one person waving a handful of coins and another holding out a restaurant voucher. At 5 seconds the waiter is holding the card machine in one hand and a fan of fourteen cards in the other, like a poker hand, blinking. Final 2 seconds: he stares at the camera over the fan of cards, absolutely still, while a fifteenth hand enters frame with another card. Audio: cheerful table chatter, chairs, plastic cards tapping, coins jingling, a terminal beep, a rising confused murmur, then a single beep. No music.",
     "scriptHeygen": null,
     "kit": null,
+    "heygenPrompt": null,
+    "montage": null,
     "metier": null,
     "phase": null,
     "amplitude": null,
@@ -18358,7 +18588,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "format": "9:16 · 1080 × 1920 · 10 s",
       "hook": "On peut payer chacun ",
       "punchline": "Oui. En trois secondes, pas en trente minutes",
-      "url": null
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP106.mp4"
     },
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
@@ -18510,6 +18740,8 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "higgsfieldPrompt": "Vertical 9:16, 10 seconds, photorealistic, medium shot, warm bistro lighting, 4K. NO text overlay, NO subtitles, NO watermark, NO logo. A guest in a slightly theatrical velvet jacket receives the bill folder, smiles, and makes an elaborate flourish over it with both hands, a napkin draped across the top like a magician. At 5 seconds he whips the napkin away — the folder is completely empty, and a white dove flaps up out of it toward the ceiling. Final 2 seconds: the waiter, unimpressed, calmly places a second identical bill folder on the table and walks away. Audio: bistro ambience, a theatrical fabric whoosh, wing flapping, one impressed gasp from a neighbouring table, then a flat cardboard tap as the second folder lands. No music.",
     "scriptHeygen": null,
     "kit": null,
+    "heygenPrompt": null,
+    "montage": null,
     "metier": null,
     "phase": null,
     "amplitude": null,
@@ -18524,7 +18756,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "format": "9:16 · 1080 × 1920 · 10 s",
       "hook": "Tout le monde a un tour",
       "punchline": "Ta caisse, elle, ne perd jamais une addition",
-      "url": null
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP107.mp4"
     },
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
@@ -18675,6 +18907,8 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "higgsfieldPrompt": "Vertical 9:16, 10 seconds, photorealistic, medium shot at a stainless pass, moody kitchen lighting, 4K. NO text overlay, NO subtitles, NO watermark, NO logo. A large live octopus sits calmly on the stainless steel pass of a professional kitchen wearing a tiny white chef's toque. Each of its arms holds a different tool — tongs, a squeeze bottle, a whisk, a ticket, a plate, a spoon — and all of them are moving competently at once. At 5 seconds a human chef steps into frame beside it holding two tools, looks at the octopus, then at his own two hands. Final 2 seconds: he sets his tools down and leans on the pass, watching it work, defeated but admiring. Audio: kitchen extractor hum, sizzling, rapid metallic tool clicking layered on itself, a wet suction sound, a spoon set down slowly, one human sigh. No music.",
     "scriptHeygen": null,
     "kit": null,
+    "heygenPrompt": null,
+    "montage": null,
     "metier": null,
     "phase": null,
     "amplitude": null,
@@ -18689,7 +18923,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "format": "9:16 · 1080 × 1920 · 10 s",
       "hook": "Il te faudrait six bras",
       "punchline": "Ou un seul outil qui fait le reste",
-      "url": null
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP108.mp4"
     },
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
@@ -18847,6 +19081,8 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "higgsfieldPrompt": "Vertical 9:16, 10 seconds, photorealistic, macro then medium, shelf of fermentation jars in a cellar, 4K. NO text overlay, NO subtitles, NO watermark, NO logo. A shelf of large glass fermentation jars filled with cloudy kombucha and pickles, lids straining. Macro on one lid trembling and bulging. A cook leans in slowly to inspect it, nose close to the glass. At 5 seconds that jar erupts, blasting foam straight up onto the ceiling and across his face and apron. Final 2 seconds: he stands dripping, eyes closed, while on the shelf behind him a second lid starts trembling. Audio: cellar room tone, a gas hiss building inside glass, a wet explosive pop, splattering and dripping, a startled inhale, then a second faint hiss beginning. No music.",
     "scriptHeygen": null,
     "kit": null,
+    "heygenPrompt": null,
+    "montage": null,
     "metier": null,
     "phase": null,
     "amplitude": null,
@@ -18861,7 +19097,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "format": "9:16 · 1080 × 1920 · 10 s",
       "hook": "Ta cave à ferments",
       "punchline": "Suivie et datée, elle ne t'explose pas à la figure",
-      "url": null
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP109.mp4"
     },
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
@@ -19026,6 +19262,8 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "higgsfieldPrompt": "Vertical 9:16, 10 seconds, photorealistic, top-down then eye-level, bright modern café, 4K. NO text overlay, NO subtitles, NO watermark, NO logo. A waiter places a plate in front of a guest: everything on it is vivid green — green latte, green bread, green sauce, a green steak, a green boiled egg. The guest looks at it, looks up at the waiter, looks back down. At 5 seconds he lifts a forkful, sniffs it, and eats it anyway. Final 2 seconds: he gives a small, genuinely surprised nod of approval, and the waiter immediately places a second identical green plate beside the first. Audio: café ambience, an espresso machine, ceramic on wood, a fork clink, a thoughtful chewing pause, a small \"hm !\", then another plate landing. No music.",
     "scriptHeygen": null,
     "kit": null,
+    "heygenPrompt": null,
+    "montage": null,
     "metier": null,
     "phase": null,
     "amplitude": null,
@@ -19203,6 +19441,8 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "higgsfieldPrompt": "Vertical 9:16, 10 seconds, photorealistic macro, clean modern kitchen laboratory, cool light, 4K. NO text overlay, NO subtitles, NO watermark, NO logo. A food 3D printer extrudes a neat layer of purée onto a plate with clinical precision, watched by a chef with folded arms. At 5 seconds the nozzle begins moving erratically, extruding an ever-growing chaotic spaghetti tangle that rises off the plate and spills onto the counter, still perfectly smooth and glossy. Final 2 seconds: the chef reaches out and, with total calm, presses a single button; the machine stops, leaving a large edible sculpture of nothing at all. Audio: quiet lab hum, a precise servo whirr, a soft wet extrusion sound, the servo tempo becoming erratic, a rising mechanical whine, a button click, silence. No music.",
     "scriptHeygen": null,
     "kit": null,
+    "heygenPrompt": null,
+    "montage": null,
     "metier": null,
     "phase": null,
     "amplitude": null,
@@ -19378,6 +19618,8 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "higgsfieldPrompt": "Vertical 9:16, 10 seconds, photorealistic, medium shot, elegant restaurant, 4K. NO text overlay, NO subtitles, NO watermark, NO logo. A guest wearing a sleek generic augmented-reality headset (no brand, no logo) sits at a beautifully set table, reaching out with a fork toward something only he can see. His fork repeatedly stabs the tablecloth thirty centimetres to the left of his actual plate. At 5 seconds he brings the empty fork to his mouth with great satisfaction and chews on nothing. Final 2 seconds: a waiter quietly slides the real plate under his hovering fork; the guest's next stab hits food and he freezes, delighted. Audio: refined restaurant ambience, cutlery clicking on cloth and wood, a faint headset electronic hum, contented chewing, a plate sliding on linen, a soft \"ah !\". No music.",
     "scriptHeygen": null,
     "kit": null,
+    "heygenPrompt": null,
+    "montage": null,
     "metier": null,
     "phase": null,
     "amplitude": null,
@@ -19392,7 +19634,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "format": "9:16 · 1080 × 1920 · 10 s",
       "hook": "La carte du futur",
       "punchline": "Ou juste une carte en ligne qui marche",
-      "url": null
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP112.mp4"
     },
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
@@ -19554,6 +19796,8 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "higgsfieldPrompt": "Vertical 9:16, 10 seconds, photorealistic, exterior apartment building facade, late afternoon, 4K. NO text overlay, NO subtitles, NO watermark, NO logo. A delivery drone carrying a pizza box in a harness descends along an apartment building facade. On the third floor a customer waits on his balcony with both arms raised, ready. At 5 seconds the drone drifts two metres sideways and gently lowers the box onto the neighbour's balcony instead, where an elderly woman is watering her plants. Final 2 seconds: she picks up the box, opens it, looks at the pizza, then across at the customer, and nods once — she is keeping it. Audio: city ambience, rotor buzz rising and falling, a harness servo, a cardboard box settling, a watering can being set down, a very short delighted \"oh !\", the customer's distant \"hé !\". No music.",
     "scriptHeygen": null,
     "kit": null,
+    "heygenPrompt": null,
+    "montage": null,
     "metier": null,
     "phase": null,
     "amplitude": null,
@@ -19568,7 +19812,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "format": "9:16 · 1080 × 1920 · 10 s",
       "hook": "Livraison réussie. Presque",
       "punchline": "Un suivi de commande, et personne ne mange ta pizza",
-      "url": null
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP113.mp4"
     },
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
@@ -19722,6 +19966,8 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "higgsfieldPrompt": "Vertical 9:16, 10 seconds, photorealistic, static phone-style frontal shot, professional kitchen, 4K. NO text overlay, NO subtitles, NO watermark, NO logo. Four young kitchen staff line up shoulder to shoulder in front of a phone on a tripod and perform a tight, synchronised dance routine, grinning, fully committed. Behind them, out of focus, a pan on the stove starts smoking, then flames rise gently. At 5 seconds one of them notices in the reflection of a stainless surface but keeps dancing, eyes wide. Final 2 seconds: the routine ends on a pose; all four turn around at once and stare at the burning pan, still in formation. Audio: kitchen ambience, four pairs of shoes on tiles in rhythm, laughing and counting \"cinq, six, sept, huit\", a growing crackle and a smoke alarm starting to chirp, then silence on the freeze. No music track — rhythm carried by claps and footsteps.",
     "scriptHeygen": null,
     "kit": null,
+    "heygenPrompt": null,
+    "montage": null,
     "metier": null,
     "phase": null,
     "amplitude": null,
@@ -19736,7 +19982,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "format": "9:16 · 1080 × 1920 · 10 s",
       "hook": "Ton community manager, c'est ta brigade",
       "punchline": "Poste. Mais garde un œil sur le service",
-      "url": null
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP114.mp4"
     },
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
@@ -19901,6 +20147,8 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "higgsfieldPrompt": "Vertical 9:16, 10 seconds, photorealistic, rooftop garden with city skyline, golden hour, 4K. NO text overlay, NO subtitles, NO watermark, NO logo. A neat rooftop restaurant vegetable garden with labelled wooden crates of herbs and salad. A chef crouches, harvesting basil into a basket, proud. At 5 seconds a dozen chickens burst out from behind the crates and swarm the beds, scattering leaves and soil, one of them landing directly in his basket. Final 2 seconds: he stands up holding the basket with the chicken sitting comfortably inside it, looking at the camera; the beds behind him are bare. Audio: rooftop wind and distant city traffic, gentle clipping of herbs, a sudden explosion of clucking and flapping, soil scattering, then steady contented clucking. No music.",
     "scriptHeygen": null,
     "kit": null,
+    "heygenPrompt": null,
+    "montage": null,
     "metier": null,
     "phase": null,
     "amplitude": null,
@@ -19915,7 +20163,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "format": "9:16 · 1080 × 1920 · 10 s",
       "hook": "Circuit court, très court",
       "punchline": "Compte ce qui rentre. Et ce qui sort",
-      "url": null
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP115.mp4"
     },
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
@@ -20077,6 +20325,8 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "higgsfieldPrompt": "Vertical 9:16, 10 seconds, photorealistic, wide shot of a kitchen wall, 4K. NO text overlay, NO subtitles, NO watermark, NO logo. A young intern writes orders in chalk directly onto a huge black kitchen wall — abstract marks, tally strokes and arrows only, absolutely no readable words or letters. The wall is already almost entirely covered. He climbs onto a milk crate to reach higher, then onto a chair on top of the crate. At 5 seconds he reaches the ceiling, still writing, chalk dust falling on his shoulders. Final 2 seconds: he looks down at the chef below him, who silently holds up a tablet-sized rectangle of blank white board. Audio: kitchen ambience, chalk squeaking on a wall, a crate scraping, wood creaking under weight, chalk dust settling, one calm cough from below. No music.",
     "scriptHeygen": null,
     "kit": null,
+    "heygenPrompt": null,
+    "montage": null,
     "metier": null,
     "phase": null,
     "amplitude": null,
@@ -20091,7 +20341,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "format": "9:16 · 1080 × 1920 · 10 s",
       "hook": "Ton système de commandes",
       "punchline": "Il tient sur un mur. Il tiendrait sur un écran",
-      "url": null
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP116.mp4"
     },
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
@@ -20257,6 +20507,8 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "higgsfieldPrompt": "Vertical 9:16, 10 seconds, photorealistic, fast handheld with quick whip-pans, professional kitchen, 4K. NO text overlay, NO subtitles, NO watermark, NO logo. A large kitchen timer is slammed onto the counter and a chef explodes into action: pans flying, sauce whisked, tweezers placing garnish, a blowtorch flaring, all in rapid succession, sweat flying. At 5 seconds the timer rings; he slides a stunning, immaculate gourmet plate into frame with both hands. Final 2 seconds: the camera pulls back to reveal the entire kitchen behind him utterly destroyed — every pan used, flour everywhere, a cupboard door hanging open — while he holds the perfect plate. Audio: a mechanical timer ticking loudly, frantic metallic clattering, a blowtorch hiss, plates scraping, an alarm bell ringing, then heavy breathing and one distant pan falling. No music.",
     "scriptHeygen": null,
     "kit": null,
+    "heygenPrompt": null,
+    "montage": null,
     "metier": null,
     "phase": null,
     "amplitude": null,
@@ -20271,7 +20523,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "format": "9:16 · 1080 × 1920 · 10 s",
       "hook": "Le défi à dix minutes",
       "punchline": "Une fiche technique, et c'est dix minutes tous les jours",
-      "url": null
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP117.mp4"
     },
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
@@ -20432,6 +20684,8 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "higgsfieldPrompt": "Vertical 9:16, 10 seconds, photorealistic, street-level tracking shot along a queue, early morning light, 4K. NO text overlay, NO subtitles, NO watermark, NO logo. The camera tracks slowly along a long pavement queue outside a closed restaurant at dawn. The people are absurdly over-equipped: folding chairs, thermos flasks, a blanket, one small camping tent, a man doing stretches, a woman reading a novel already half finished. At 5 seconds the camera reaches the front of the queue: a man in a sleeping bag is sitting directly against the locked door. Final 2 seconds: a hand inside flips a small sign on the glass; the entire queue stands up at once in a single wave. Audio: quiet dawn street, birds, a thermos unscrewing, a tent zip, pages turning, a sleeping bag rustling, a metallic door bolt, then a collective shuffle of forty people standing up. No music.",
     "scriptHeygen": null,
     "kit": null,
+    "heygenPrompt": null,
+    "montage": null,
     "metier": null,
     "phase": null,
     "amplitude": null,
@@ -20446,7 +20700,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "format": "9:16 · 1080 × 1920 · 10 s",
       "hook": "Le brunch du dimanche",
       "punchline": "Ils feraient la queue chez toi aussi. Encore faut-il pouvoir réserver",
-      "url": null
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP118.mp4"
     },
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
@@ -20602,6 +20856,8 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "higgsfieldPrompt": "Vertical 9:16, 10 seconds, photorealistic, handheld street shot, windy grey daylight, 4K. NO text overlay, NO subtitles, NO watermark, NO logo. A person in an oversized generic chicken mascot costume (plain yellow, no brand, no logo) hands out flyers on a pavement outside a restaurant, dancing awkwardly. A strong gust hits: the flyers explode out of their wing in a white cloud and the costume's huge tail acts like a sail, dragging the mascot backwards down the pavement in small hops, arms flailing. At 5 seconds it collides softly with a lamppost and wraps around it. Final 2 seconds: the mascot clings to the lamppost, motionless, as the last flyers drift past its beak. Audio: strong wind gusts, paper flapping and scattering, foam costume squeaking, small running steps, a soft padded thud on metal, one muffled human groan from inside the head. No music.",
     "scriptHeygen": null,
     "kit": null,
+    "heygenPrompt": null,
+    "montage": null,
     "metier": null,
     "phase": null,
     "amplitude": null,
@@ -20616,7 +20872,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "format": "9:16 · 1080 × 1920 · 10 s",
       "hook": "Ta stratégie d'acquisition",
       "punchline": "Cinq cents tracts, zéro donnée",
-      "url": null
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP119.mp4"
     },
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
@@ -20779,6 +21035,8 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "higgsfieldPrompt": "Vertical 9:16, 10 seconds, photorealistic, slow dolly along a long table, empty dining room, dramatic evening light, 4K. NO text overlay, NO subtitles, NO watermark, NO logo. A restaurant owner sits at the head of a long dining table set for a formal meeting. In each of the ten guest chairs sits an open laptop or tablet instead of a person, each screen showing a different abstract coloured interface with no readable text. He looks around at them expectantly and opens his hands as if to say \"so?\". At 5 seconds every screen simultaneously plays a different notification chime and then goes to a blank screensaver, one after another, ignoring him completely. Final 2 seconds: he lowers his hands, alone at the head of a table of dark screens, and pours himself a glass of water. Audio: empty room reverb, a chair creak, ten mismatched notification chimes overlapping, fans spinning down one by one, water pouring into a glass, then silence. No music.",
     "scriptHeygen": null,
     "kit": null,
+    "heygenPrompt": null,
+    "montage": null,
     "metier": null,
     "phase": null,
     "amplitude": null,
@@ -20793,7 +21051,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "format": "9:16 · 1080 × 1920 · 10 s",
       "hook": "Réunion de tes dix logiciels",
       "punchline": "Ils ne se parlent toujours pas. FoodEatUp, si",
-      "url": null
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP120.mp4"
     },
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
@@ -20954,6 +21212,8 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "higgsfieldPrompt": "Vertical 9:16, 10 seconds, photorealistic, cinematic handheld camera, warm restaurant lighting, 4K. NO text overlay, NO subtitles, NO watermark, NO logo. A guest sits at a table talking continuously, one finger raised, listing endless modifications with total calm. Opposite him a waiter writes in a small notepad; he fills a page, flips it, fills another, flips again, then pulls a second notepad from his apron, then a third. At 5 seconds the guest pauses, holds up his index finger again and clearly starts a new sentence. Final 2 seconds: the waiter stops writing, looks straight into the camera with three open notepads fanned in his hand, expressionless. Audio: restaurant ambience, a calm continuous French voice listing things without pause, rapid pen scratching, pages flipping faster and faster, an apron rustle, then only the voice continuing. No music.",
     "scriptHeygen": null,
     "kit": null,
+    "heygenPrompt": null,
+    "montage": null,
     "metier": null,
     "phase": null,
     "amplitude": null,
@@ -21125,6 +21385,8 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "higgsfieldPrompt": "Vertical 9:16, 10 seconds, photorealistic, medium two-shot at a bar counter, 4K. NO text overlay, NO subtitles, NO watermark, NO logo. A confident regular-looking man leans on the counter, taps it twice and gestures broadly as if to say \"the usual\". The owner behind the bar smiles warmly, nods — and behind the smile his eyes flick left, then right, in visible panic, because he has never seen this man in his life. At 5 seconds he seizes a random plate from the pass and sets it down with enormous confidence. Final 2 seconds: the customer looks at the plate, then up at him, deeply moved, and puts a hand on his heart. Audio: bar ambience, two knuckle taps on wood, a glass clinking, a slightly too-loud \"Mais bien sûr !\", a plate landing firmly, then a small emotional sniff. No music.",
     "scriptHeygen": null,
     "kit": null,
+    "heygenPrompt": null,
+    "montage": null,
     "metier": null,
     "phase": null,
     "amplitude": null,
@@ -21139,7 +21401,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "format": "9:16 · 1080 × 1920 · 10 s",
       "hook": "Il dit « comme d'habitude »",
       "punchline": "Ton fichier client saurait, lui",
-      "url": null
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP122.mp4"
     },
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
@@ -21302,6 +21564,8 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "higgsfieldPrompt": "Vertical 9:16, 10 seconds, photorealistic, medium shot at a bistro table, 4K. NO text overlay, NO subtitles, NO watermark, NO logo. A guest finishes an enormous rare steak, scraping the plate clean, visibly delighted. The waiter arrives to clear it and offers the dessert menu. At 5 seconds the guest raises a polite hand and points to something on the menu while gesturing \"no\" over his own empty steak plate, explaining seriously that he is vegetarian. Final 2 seconds: the waiter looks down at the bare steak bone on the plate, then back at the guest, then at the camera. Audio: bistro ambience, cutlery on porcelain, a satisfied exhale, a plate being lifted, a calm explanatory French voice, then a single fork clink and silence. No music.",
     "scriptHeygen": null,
     "kit": null,
+    "heygenPrompt": null,
+    "montage": null,
     "metier": null,
     "phase": null,
     "amplitude": null,
@@ -21479,6 +21743,8 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "higgsfieldPrompt": "Vertical 9:16, 10 seconds, photorealistic, wide static shot of a dining room at closing time, dim light, 4K. NO text overlay, NO subtitles, NO watermark, NO logo. Every chair in the restaurant is upside down on its table, the floor is being mopped, one waiter counts the till, another stacks the last crates — except for one single table in the middle where two friends sit chatting animatedly, entirely unaware. At 5 seconds a vacuum cleaner is switched on and passes directly around their feet; they lift their legs without interrupting the conversation. Final 2 seconds: one of them turns and raises two fingers, ordering two more coffees. Audio: empty room reverb, chairs scraping onto tables, a mop, a till drawer, a vacuum roaring to life, two voices talking straight through it all, then a cheerful \"deux cafés !\". No music.",
     "scriptHeygen": null,
     "kit": null,
+    "heygenPrompt": null,
+    "montage": null,
     "metier": null,
     "phase": null,
     "amplitude": null,
@@ -21493,7 +21759,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "format": "9:16 · 1080 × 1920 · 10 s",
       "hook": "Il est minuit dix",
       "punchline": "Le service a une fin. Ton logiciel devrait le savoir",
-      "url": null
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP124.mp4"
     },
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
@@ -21638,6 +21904,8 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "higgsfieldPrompt": "Vertical 9:16, 10 seconds, photorealistic, wide shot of a sunny terrace, 4K. NO text overlay, NO subtitles, NO watermark, NO logo. A guest arrives, tests a chair, shakes his head, and begins moving his table — a metre to the left, then out from under the awning, then further, dragging it steadily while a waiter follows behind him holding two menus and saying nothing. At 5 seconds the guest is dragging the table off the terrace and onto the pavement, past the planters. Final 2 seconds: the table now stands in the middle of the street; he sits down, perfectly content, and the waiter calmly places the menu in front of him as a bus indicator blinks behind. Audio: terrace ambience, metal table legs scraping on stone then asphalt, a chair being tested, the waiter's footsteps, distant traffic, a bus air-brake hiss, then a menu landing on metal. No music.",
     "scriptHeygen": null,
     "kit": null,
+    "heygenPrompt": null,
+    "montage": null,
     "metier": null,
     "phase": null,
     "amplitude": null,
@@ -21652,7 +21920,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "format": "9:16 · 1080 × 1920 · 10 s",
       "hook": "Je serais mieux là, non ",
       "punchline": "Ton plan de salle, c'est toi qui le décides",
-      "url": null
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP125.mp4"
     },
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
@@ -21815,6 +22083,8 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "higgsfieldPrompt": "Vertical 9:16, 10 seconds, photorealistic, top-down then eye-level, restaurant table, 4K. NO text overlay, NO subtitles, NO watermark, NO logo. Top-down shot of one single modest salad placed in the centre of a table set for six. A beat of stillness. At 5 seconds six forks strike the bowl simultaneously from six directions, colliding, retreating, striking again in a fencing flurry. Final 2 seconds: the bowl is empty and spotless; six hands rest politely on the table as if nothing happened. Audio: restaurant ambience, a plate set down, one second of total silence, then a rapid storm of metal-on-ceramic clattering like a swordfight, a last scrape, then calm chatter resuming. No music.",
     "scriptHeygen": null,
     "kit": null,
+    "heygenPrompt": null,
+    "montage": null,
     "metier": null,
     "phase": null,
     "amplitude": null,
@@ -21979,6 +22249,8 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "higgsfieldPrompt": "Vertical 9:16, 10 seconds, photorealistic, wide shot of a packed festive dining room, warm golden light, 4K. NO text overlay, NO subtitles, NO watermark, NO logo. A full New Year's Eve dining room, paper hats, streamers, everyone standing and counting down with raised glasses toward a clock. Behind them, a single waiter moves through the crowd carrying a tray with fourteen glasses, weaving with impossible precision. At 5 seconds confetti cannons fire; the entire room erupts, arms up, kisses, chaos — and the waiter is buried in falling confetti, tray still perfectly level above his head. Final 2 seconds: the room celebrates around him; he stands motionless in the middle, covered in confetti, tray untouched, eyes closed. Audio: a crowd counting down in French, a huge cheer, confetti cannon pops, party horns, glasses clinking, then the cheering settling behind one long exhale. No music.",
     "scriptHeygen": null,
     "kit": null,
+    "heygenPrompt": null,
+    "montage": null,
     "metier": null,
     "phase": null,
     "amplitude": null,
@@ -21993,7 +22265,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "format": "9:16 · 1080 × 1920 · 10 s",
       "hook": "Bonne année à tout le monde",
       "punchline": "Sauf à celui qui gère les deux cents couverts",
-      "url": null
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP127.mp4"
     },
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
@@ -22153,6 +22425,8 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "higgsfieldPrompt": "Vertical 9:16, 10 seconds, photorealistic, medium shot, romantic candlelit restaurant, 4K. NO text overlay, NO subtitles, NO watermark, NO logo. Tables for two crammed so close together that they touch. A couple gaze into each other's eyes over a candle — and fifteen centimetres away, another couple does exactly the same, sharing the same candle. At 5 seconds a man reaches for his partner's hand and takes the hand of the woman at the next table instead; both couples freeze. Final 2 seconds: he releases it, all four look straight ahead, and the two women simultaneously sip their wine without a word. Audio: intimate restaurant ambience, murmured conversations layered too close together, cutlery, a small startled inhale, four seconds of dense awkward silence, two glasses being set down. No music.",
     "scriptHeygen": null,
     "kit": null,
+    "heygenPrompt": null,
+    "montage": null,
     "metier": null,
     "phase": null,
     "amplitude": null,
@@ -22167,7 +22441,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "format": "9:16 · 1080 × 1920 · 10 s",
       "hook": "Trente couverts en plus, ça rentre",
       "punchline": "Ça rentre. La question, c'est si ça revient",
-      "url": null
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP128.mp4"
     },
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
@@ -22323,6 +22597,8 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "higgsfieldPrompt": "Vertical 9:16, 10 seconds, photorealistic, wide exterior, pale early-spring sunlight, visible breath in the air, 4K. NO text overlay, NO subtitles, NO watermark, NO logo. A restaurant terrace on the first sunny day of March. Every single outdoor table is full — of people in thick winter coats, scarves, woolly hats and gloves, holding cutlery with gloved hands, faces tilted toward the weak sun with beatific expressions. Inside, through the window, the empty warm dining room is visible. At 5 seconds a waiter comes out and offers a blanket to a guest, who waves it away without opening his eyes. Final 2 seconds: the waiter drapes it on him anyway and goes back in; the guest smiles, still sunbathing at four degrees. Audio: street ambience, wind, the clink of cutlery muffled by gloves, chattering teeth, a blanket unfolding, a contented sigh. No music.",
     "scriptHeygen": null,
     "kit": null,
+    "heygenPrompt": null,
+    "montage": null,
     "metier": null,
     "phase": null,
     "amplitude": null,
@@ -22337,7 +22613,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "format": "9:16 · 1080 × 1920 · 10 s",
       "hook": "Premier rayon de soleil de l'année",
       "punchline": "Ta terrasse ouvre. Ton service doit suivre",
-      "url": null
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP129.mp4"
     },
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
@@ -22494,6 +22770,8 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "higgsfieldPrompt": "Vertical 9:16, 10 seconds, photorealistic, handheld exterior evening, 4K. NO text overlay, NO subtitles, NO watermark, NO logo. A drummer has set up a full drum kit directly in front of a restaurant's entrance door, blocking it completely, and plays with enormous enthusiasm. Diners inside press their faces to the window. At 5 seconds a waiter tries to get out with two plates, waits for a gap, and finally climbs carefully over the bass drum, plates held high. Final 2 seconds: he lands on the other side, serves an outdoor table with total dignity, and the drummer gives him an approving nod without stopping. Audio: enthusiastic live drumming, street crowd noise, a door pushing against a cymbal stand, a plate wobble, a cymbal crash as he climbs over, then the drumming continuing. No music beyond the drums.",
     "scriptHeygen": null,
     "kit": null,
+    "heygenPrompt": null,
+    "montage": null,
     "metier": null,
     "phase": null,
     "amplitude": null,
@@ -22670,6 +22948,8 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "higgsfieldPrompt": "Vertical 9:16, 10 seconds, photorealistic, wide shot of a large professional kitchen, harsh morning light, 4K. NO text overlay, NO subtitles, NO watermark, NO logo. A huge kitchen built for a brigade of eight, completely empty except for one chef standing alone at the pass. He looks left at four empty stations, right at three more. At 5 seconds a printer spits out a long ribbon of tickets; he looks at it, rolls up both sleeves, and moves to the first station. Final 2 seconds: a fast series of micro-cuts of him at four different stations in four different postures, ending back at the pass, plating. Audio: extractor hood hum, footsteps echoing in an empty kitchen, a printer chattering, sleeves rolling, then a rapid rhythmic burst of pans, tap, knife and plate sounds. No music.",
     "scriptHeygen": null,
     "kit": null,
+    "heygenPrompt": null,
+    "montage": null,
     "metier": null,
     "phase": null,
     "amplitude": null,
@@ -22845,6 +23125,8 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "higgsfieldPrompt": "Vertical 9:16, 10 seconds, photorealistic, wide street shot, hot empty city, midday sun, 4K. NO text overlay, NO subtitles, NO watermark, NO logo. A deserted French city street in August: every shop shutter closed, heat haze rising from the asphalt, not a single person. The camera pans slowly. At 5 seconds it reaches one single open restaurant — and a queue of eighty people snaking down the pavement and around the corner, fans, hats, patience. Final 2 seconds: the owner steps into the doorway, looks at the queue, and slowly rolls up his sleeves. Audio: cicadas, distant traffic, absolute street emptiness, then a rising wall of crowd murmur as the camera reaches the queue, a door chime, fabric of sleeves rolling. No music.",
     "scriptHeygen": null,
     "kit": null,
+    "heygenPrompt": null,
+    "montage": null,
     "metier": null,
     "phase": null,
     "amplitude": null,
@@ -23018,6 +23300,8 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "higgsfieldPrompt": "Vertical 9:16, 10 seconds, photorealistic, medium wide shot of a packed sports bar, screen glow, 4K. NO text overlay, NO subtitles, NO watermark, NO logo. A crowded bar watching a football match on a large screen (screen shows only abstract green blur, no readable broadcast). A waiter crosses the room with a tray of eight full beers. At 5 seconds the entire room explodes upward in a goal celebration, arms flying; the waiter is lifted off his feet by the surge, the tray launched vertically, beers suspended in slow motion. Final 2 seconds: he lands back on his feet, catches the empty tray, and every glass has landed upright on a nearby table in a perfect row. Audio: tense crowd murmur, a sudden roaring cheer, chairs falling, a slow-motion whoosh, glass bases landing on wood one after another, then a single collective gasp. No music.",
     "scriptHeygen": null,
     "kit": null,
+    "heygenPrompt": null,
+    "montage": null,
     "metier": null,
     "phase": null,
     "amplitude": null,
@@ -23184,6 +23468,8 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "higgsfieldPrompt": "Vertical 9:16, 10 seconds, photorealistic, extreme low-angle POV from inside a deep fryer basket looking up, heat shimmer, 4K. NO text overlay, NO subtitles, NO watermark, NO logo. The camera is inside a fryer looking up at the ceiling of a kitchen. A hand lowers a basket of fries directly toward the lens; bubbles erupt and fill the frame; the basket rises, drains, disappears. This repeats faster and faster — three times, four, five — hands and baskets flashing past. At 5 seconds a wristwatch on one of the arms shows the movement blurring. Final 2 seconds: the surface goes perfectly still, oil calm, a single bubble rising, the kitchen light steady above. Audio: a deep sustained roar of boiling oil, violent bubbling on each immersion, metal basket clanging on the rim, muffled kitchen shouting above, then a slow calming simmer and one last bubble. No music.",
     "scriptHeygen": null,
     "kit": null,
+    "heygenPrompt": null,
+    "montage": null,
     "metier": null,
     "phase": null,
     "amplitude": null,
@@ -23361,6 +23647,8 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "higgsfieldPrompt": "Vertical 9:16, 10 seconds, photorealistic, top-down macro POV of an open paper reservation book on a host stand, 4K. NO text overlay, NO subtitles, NO watermark, NO logo. The camera looks straight down at an open paper booking book covered in handwriting rendered as illegible ink marks, crossings-out and arrows only — absolutely no readable words. Hands enter and leave: writing, crossing out, writing again, a coffee cup lands and leaves a brown ring, a page is torn slightly, a pen leaks. At 5 seconds a hand knocks the coffee over completely and a wave of liquid floods the page. Final 2 seconds: a hand blots it with a napkin; the ink is gone, only a brown smear remains where the evening's bookings were. Audio: host stand ambience, pen scratching, pages turning, a phone ringing repeatedly in the background, a ceramic cup landing, liquid spilling, paper absorbing, one very quiet \"non\". No music.",
     "scriptHeygen": null,
     "kit": null,
+    "heygenPrompt": null,
+    "montage": null,
     "metier": null,
     "phase": null,
     "amplitude": null,
@@ -23537,6 +23825,8 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "higgsfieldPrompt": "Vertical 9:16, 10 seconds, photorealistic POV from inside a commercial glasswasher looking out through the racks, 4K. NO text overlay, NO subtitles, NO watermark, NO logo. The camera sits among upturned glasses inside a professional glasswasher. A hand slides in one more rack, then the door drops and everything goes dark blue. At 5 seconds the cycle starts: jets of water hit the lens from every direction, steam floods the frame, the whole world becomes a hurricane. Final 2 seconds: sudden stop, total calm, steam clearing, the door lifts and a hand reaches straight in and takes one glass. Audio: glass racks rattling, a heavy door dropping, a pump priming, violent spraying water and steam roar filling everything, an abrupt mechanical stop, dripping, a door mechanism, one glass squeaking. No music.",
     "scriptHeygen": null,
     "kit": null,
+    "heygenPrompt": null,
+    "montage": null,
     "metier": null,
     "phase": null,
     "amplitude": null,
@@ -23714,6 +24004,8 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "higgsfieldPrompt": "Vertical 9:16, 10 seconds, photorealistic macro POV from behind the group head of an espresso machine, looking out at the bar, 4K. NO text overlay, NO subtitles, NO watermark, NO logo. The camera looks out from inside the machine as a portafilter is locked in with a twist, a cup slides underneath, dark espresso streams past the lens. The cup leaves, another arrives, a hand wipes the lens area with a cloth. This accelerates: cup, cup, cup, faster and faster, hands blurring. At 5 seconds a hand slams the portafilter in slightly too hard and the whole frame shakes. Final 2 seconds: everything stops; one lone cup sits under the spout, and a hand appears and slowly turns the machine's switch off. Audio: a portafilter twist-lock, pump whirr, espresso pouring, cups clinking on saucers, steam wand shrieking, the tempo rising into chaos, a metallic slam, then a click and a long fading hiss. No music.",
     "scriptHeygen": null,
     "kit": null,
+    "heygenPrompt": null,
+    "montage": null,
     "metier": null,
     "phase": null,
     "amplitude": null,
@@ -23879,6 +24171,8 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "higgsfieldPrompt": "Vertical 9:16, 10 seconds, photorealistic first-person POV of a plate being carried through a restaurant, smooth gimbal motion, 4K. NO text overlay, NO subtitles, NO watermark, NO logo. The camera IS the plate: it is lifted from the pass under a heat lamp, tilts, and travels fast through a kitchen — past a chef shouting, past flames, through swinging doors, through a crowded dining room, ducking under one arm, past a child's face that lights up. At 5 seconds the journey nearly ends in a collision with another waiter; both spin and continue. Final 2 seconds: the plate lands gently on a table and a guest leans into frame from above, delighted, fork already in hand. Audio: kitchen roar and shouting, a heat lamp buzz, swinging doors, ambient chatter swelling as it enters the dining room, a near-miss gasp, cloth brushing, then a plate settling on wood and one \"ah, merci !\". No music.",
     "scriptHeygen": null,
     "kit": null,
+    "heygenPrompt": null,
+    "montage": null,
     "metier": null,
     "phase": null,
     "amplitude": null,
@@ -24051,6 +24345,8 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "higgsfieldPrompt": "Vertical 9:16, 10 seconds, photorealistic, shot like an epic war film: slow motion, heavy smoke, dramatic backlight, low heroic angles, 4K. NO text overlay, NO subtitles, NO watermark, NO logo. A professional kitchen at full rush filmed as a battlefield: steam rolling like battle smoke, sparks from a flambé, cooks moving in slow motion with grim determined faces, one carrying a stack of plates like ammunition, another wiping his brow with a forearm. The head chef stands at the pass surveying it all like a general, jaw set. At 5 seconds he raises one hand and everything freezes — every cook mid-motion. Final 2 seconds: he lowers his hand and points at the pass; the freeze breaks and all of them move at once. Audio: a low cinematic rumble, slowed-down clattering and shouting, a heartbeat, a whoosh of flame, total silence on the freeze, then a single sharp \"Service !\" and the noise returning at full volume. No music beyond the rumble.",
     "scriptHeygen": null,
     "kit": null,
+    "heygenPrompt": null,
+    "montage": null,
     "metier": null,
     "phase": null,
     "amplitude": null,
@@ -24230,6 +24526,8 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "higgsfieldPrompt": "Vertical 9:16, 10 seconds, photorealistic, shot like a heist movie: darkness, tight close-ups, tense framing, 4K. NO text overlay, NO subtitles, NO watermark, NO logo. Night in a closed restaurant kitchen. Three cooks in black, faces lit from below, execute a heist: one picks the walk-in fridge lock, one watches the door with a mirror, one crawls under an imaginary laser grid rendered as thin red light beams from a security sensor. At 5 seconds the crawler reaches the prize and lifts it with two hands, reverent and slow: a single small pot of crème dessert. Final 2 seconds: all three stare at it in silence; one of them slowly starts clapping. Audio: deep tense silence, a lock picking click, breathing held, a fridge seal cracking open, a soft electronic sensor beep, a plastic pot lifting, then three slow claps. No music beyond a low tension pulse.",
     "scriptHeygen": null,
     "kit": null,
+    "heygenPrompt": null,
+    "montage": null,
     "metier": null,
     "phase": null,
     "amplitude": null,
@@ -24407,6 +24705,8 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "higgsfieldPrompt": "Vertical 9:16, 10 seconds, photorealistic, shot like a sci-fi spacecraft cockpit: red emergency lighting, tight framing, steam venting, 4K. NO text overlay, NO subtitles, NO watermark, NO logo. A professional kitchen lit entirely by pulsing red emergency light, steam venting from a pan like a hull breach. Two cooks work at their stations like astronauts under alarm, one gripping an overhead rail, the other counting down on his fingers with fierce concentration. At 5 seconds he slams his palm onto the pass — and a perfectly plated dish slides forward into the light, mission accomplished. Final 2 seconds: the red light snaps back to normal warm kitchen light; both exhale; one gives a small thumbs up. Audio: a pulsing alarm klaxon, hissing steam vents, tense breathing, a countdown in French \"trois, deux, un\", a palm slam, a plate sliding on steel, then the alarm cutting out and normal kitchen ambience returning. No music.",
     "scriptHeygen": null,
     "kit": null,
+    "heygenPrompt": null,
+    "montage": null,
     "metier": null,
     "phase": null,
     "amplitude": null,
@@ -24582,6 +24882,8 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "higgsfieldPrompt": "Vertical 9:16, 10 seconds, photorealistic, western duel framing, golden hour light streaming through a kitchen door, long shadows, 4K. NO text overlay, NO subtitles, NO watermark, NO logo. Two cooks face each other down the length of a kitchen aisle, backlit by the setting sun through an open door, aprons flapping slightly like dusters. Extreme close-ups: narrowed eyes, a hand hovering over an apron pocket, a bead of sweat, a bay leaf tumbling across the floor like a tumbleweed. At 5 seconds both draw — spatulas — and freeze, pointed at each other. Final 2 seconds: they hold the standoff for one long beat, then both turn in unison and use the spatulas to plate two dishes side by side, perfectly synchronised. Audio: a single sustained tension note, wind, boots on tiles, a dry leaf skittering, two sharp fabric draws, a beat of silence, then two spatulas scraping pans in perfect time. No music beyond the tension note.",
     "scriptHeygen": null,
     "kit": null,
+    "heygenPrompt": null,
+    "montage": null,
     "metier": null,
     "phase": null,
     "amplitude": null,
@@ -24753,6 +25055,8 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "higgsfieldPrompt": "Vertical 9:16, 10 seconds, photorealistic, disaster-movie framing: slow push-in, dust in the light, 4K. NO text overlay, NO subtitles, NO watermark, NO logo. A calm kitchen. A ticket printer begins to print. It does not stop. The ribbon of paper grows past the pass, along the counter, across the floor, out through the swinging doors, and keeps going. Two cooks follow the paper with their eyes, then start walking beside it as it travels. At 5 seconds one of them picks up the end of the ribbon and holds it up: it stretches the entire length of the kitchen behind him. Final 2 seconds: the printer is still going; a third cook silently removes his apron and hangs it on a hook. Audio: quiet kitchen, a printer starting, chattering relentlessly and growing louder, footsteps following it, paper dragging on tiles, a printer that will not stop, then an apron string untying. No music.",
     "scriptHeygen": null,
     "kit": null,
+    "heygenPrompt": null,
+    "montage": null,
     "metier": null,
     "phase": null,
     "amplitude": null,
@@ -24767,7 +25071,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "format": "9:16 · 1080 × 1920 · 10 s",
       "hook": "Une seule commande",
       "punchline": "Deux cents parts. Anticipe-les",
-      "url": null
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP143.mp4"
     },
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
@@ -24927,6 +25231,8 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "higgsfieldPrompt": "Vertical 9:16, 10 seconds, photorealistic, shot like a courtroom drama: solemn wooden interior, dramatic overhead light, 4K. NO text overlay, NO subtitles, NO watermark, NO logo. A solemn courtroom. In the witness stand, elevated and alone under a single spotlight, sits a plate with one very overcooked steak on it. A serious man in a robe points at it accusingly; the jury of twelve leans forward as one. At 5 seconds a chef in whites stands in the defendant's box and lowers his head. Final 2 seconds: an overhead shot of the plate alone in the spotlight, absolute silence in the room. Audio: courtroom reverb, a low murmur, footsteps on wood, an accusing French voice saying one word \"Cuit.\", a collective gasp from the jury, a gavel strike, then silence. No music.",
     "scriptHeygen": null,
     "kit": null,
+    "heygenPrompt": null,
+    "montage": null,
     "metier": null,
     "phase": null,
     "amplitude": null,
@@ -25102,6 +25408,8 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "higgsfieldPrompt": "Vertical 9:16, 10 seconds, photorealistic, shot like a nature documentary: long lens, foliage framing the edges of the shot, patient observational camera, 4K. NO text overlay, NO subtitles, NO watermark, NO logo. Filmed from behind a potted plant in a restaurant, as if observing a rare animal in the wild: a restaurant manager in his natural habitat, moving between the bar, a laptop and the pass, marking his territory by straightening a chair, drinking coffee standing up in one gulp. At 5 seconds he freezes mid-motion, sensing he is being watched, and turns his head slowly toward the camera. Final 2 seconds: he stares directly into the lens through the leaves, motionless, then goes back to work. Audio: soft foliage rustle, distant restaurant ambience recorded at a distance as if through a long lens, a coffee cup, a chair scraping, a beat of held silence when he turns, then ambience resuming. No music.",
     "scriptHeygen": null,
     "kit": null,
+    "heygenPrompt": null,
+    "montage": null,
     "metier": null,
     "phase": null,
     "amplitude": null,
@@ -25272,6 +25580,8 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "higgsfieldPrompt": "Vertical 9:16, 10 seconds, photorealistic, wide shot of a private dining room, warm party lighting, 4K. NO text overlay, NO subtitles, NO watermark, NO logo. A large birthday cake carrying an absurd number of lit candles is carried into a private room full of clapping guests; the flame is genuinely large. At 5 seconds a ceiling smoke detector chirps and the room's sprinklers activate, releasing a fine indoor rain over everyone. Final 2 seconds: the guests are soaked and laughing, arms raised, the birthday guest blows out the last surviving candle in the downpour, and the waiter stands at the edge of the frame holding a tray over his own head like an umbrella. Audio: applause and singing, a strong candle-flame roar, a smoke alarm chirping then blaring, water bursting from sprinklers, screams turning into laughter, a single candle being blown out, water drumming on a metal tray. No music.",
     "scriptHeygen": null,
     "kit": null,
+    "heygenPrompt": null,
+    "montage": null,
     "metier": null,
     "phase": null,
     "amplitude": null,
@@ -25445,6 +25755,8 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "higgsfieldPrompt": "Vertical 9:16, 10 seconds, photorealistic, extreme slow motion, elegant wedding venue, soft light, 4K. NO text overlay, NO subtitles, NO watermark, NO logo. Two waiters carry an enormous five-tier wedding cake between them across a crowded room in extreme slow motion. Their arms tremble, sweat on a temple, the top tier wobbling gently. Guests turn to watch, hands over mouths. At 5 seconds one waiter's shoe slips two centimetres on the polished floor; the whole cake leans, the top tier tips — and he catches it flat with his forehead, holding it there. Final 2 seconds: they continue walking, cake intact, one man still balancing the top tier on his forehead, expression of absolute serenity. Audio: refined venue ambience, a collective inhale from the guests, slow-motion low rumble, a shoe squeak, a soft frosting contact sound, a suspended silence, then scattered relieved applause. No music.",
     "scriptHeygen": null,
     "kit": null,
+    "heygenPrompt": null,
+    "montage": null,
     "metier": null,
     "phase": null,
     "amplitude": null,
@@ -25624,6 +25936,8 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "higgsfieldPrompt": "Vertical 9:16, 10 seconds, photorealistic, low-angle street shot, morning delivery time, 4K. NO text overlay, NO subtitles, NO watermark, NO logo. Two delivery drivers in insulated backpacks arrive at the same narrow loading spot in front of a restaurant at the same second. They dismount, face each other, and adopt exaggerated sumo stances, stamping one foot each on the pavement, backpacks bulging. At 5 seconds they charge and collide chest to chest, backpacks compressing, neither moving an inch. Final 2 seconds: a third driver calmly parks his scooter in the free spot behind them and walks past into the restaurant with his bag. Audio: street ambience, two scooter engines cutting out, boots stamping, a comedic drum-like thud on impact, insulated fabric compressing, grunting, then a third small engine, a kickstand click and a door chime. No music.",
     "scriptHeygen": null,
     "kit": null,
+    "heygenPrompt": null,
+    "montage": null,
     "metier": null,
     "phase": null,
     "amplitude": null,
@@ -25792,6 +26106,8 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "higgsfieldPrompt": "Vertical 9:16, 10 seconds, photorealistic, wide shot of a full dining room, warm evening light, 4K. NO text overlay, NO subtitles, NO watermark, NO logo. A completely normal, busy restaurant dinner service. One guest stands up and begins a small rhythmic movement. Two others join. At 5 seconds every single person in the room — guests, waiters, a cook who appears in the kitchen doorway — is performing a tight synchronised routine, napkins waving, chairs pushed back, in perfect unison. Final 2 seconds: they all sit down at exactly the same moment and resume eating as if nothing happened; one lone waiter stands frozen in the middle holding a tray, the only one who did not know. Audio: normal restaurant ambience, one chair pushing back, then dozens of feet finding a rhythm on the floor, clapping and cutlery used as percussion building to a peak, an abrupt collective stop, chairs sliding in, then normal chatter resuming. No music track — rhythm built from claps, feet and cutlery.",
     "scriptHeygen": null,
     "kit": null,
+    "heygenPrompt": null,
+    "montage": null,
     "metier": null,
     "phase": null,
     "amplitude": null,
@@ -25969,6 +26285,8 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "higgsfieldPrompt": "Vertical 9:16, 10 seconds, photorealistic, cinematic slow dolly back, warm golden restaurant lighting, theatrical curtain-call framing, 4K. NO text overlay, NO subtitles, NO watermark, NO logo. A restaurant dining room arranged like a theatre stage after a show. In one long line facing the camera stand, side by side: a chef in whites, two waiters, a dishwasher, a delivery rider holding his helmet — and among them, perfectly calm, a golden retriever sitting upright, a penguin in a tiny apron, a goat, a person in an oversized plain yellow chicken mascot costume, and a wheeled service robot. At 5 seconds the whole line bows in unison, humans and animals alike, the robot tilting forward on its base. Final 2 seconds: they straighten up together and hold, looking straight into the camera, the restaurant glowing behind them. Audio: a full room of applause and whistling, chairs, one dog bark, one penguin squawk, one goat bleat, a servo whirr as the robot bows, then the applause continuing over a held silence from the line. No music.",
     "scriptHeygen": null,
     "kit": null,
+    "heygenPrompt": null,
+    "montage": null,
     "metier": null,
     "phase": null,
     "amplitude": null,
@@ -26192,6 +26510,8 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
         "prompt": "Verse le master dans ma bibliothèque RapidoCMS, puis programme les cinq réseaux de [TON RESTAURANT] :\n\n— LinkedIn à 8 h, YouTube à 10 h, Facebook à 12 h, Instagram à 18 h 30, TikTok à 19 h\n— Légende : « Regarde-le une seconde. Voilà pourquoi on se lève à six heures. » puis le corps, puis « [TON APPEL À L'ACTION] : [TON SITE] »\n— Mots-dièse : #restaurant #[TA VILLE] #[TA SPÉCIALITÉ]\n\nRends-moi le lien de chaque publication."
       }
     ],
+    "heygenPrompt": null,
+    "montage": null,
     "metier": null,
     "phase": null,
     "amplitude": null,
@@ -26366,6 +26686,8 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
         "prompt": "Verse le master dans ma bibliothèque RapidoCMS, puis programme les cinq réseaux de [TON RESTAURANT] :\n\n— LinkedIn à 8 h, YouTube à 10 h, Facebook à 12 h, Instagram à 18 h 30, TikTok à 19 h\n— Légende : « On ne cache rien. Refais-la chez toi. On t'attend quand même. » puis le corps, puis « [TON APPEL À L'ACTION] : [TON SITE] »\n— Mots-dièse : #restaurant #[TA VILLE] #[TA SPÉCIALITÉ]\n\nRends-moi le lien de chaque publication."
       }
     ],
+    "heygenPrompt": null,
+    "montage": null,
     "metier": null,
     "phase": null,
     "amplitude": null,
@@ -26540,6 +26862,8 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
         "prompt": "Verse le master dans ma bibliothèque RapidoCMS, puis programme les cinq réseaux de [TON RESTAURANT] :\n\n— LinkedIn à 8 h, YouTube à 10 h, Facebook à 12 h, Instagram à 18 h 30, TikTok à 19 h\n— Légende : « Cette semaine seulement. Après, la saison change d'avis. » puis le corps, puis « [TON APPEL À L'ACTION] : [TON SITE] »\n— Mots-dièse : #restaurant #[TA VILLE] #[TA SPÉCIALITÉ]\n\nRends-moi le lien de chaque publication."
       }
     ],
+    "heygenPrompt": null,
+    "montage": null,
     "metier": null,
     "phase": null,
     "amplitude": null,
@@ -26714,6 +27038,8 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
         "prompt": "Verse le master dans ma bibliothèque RapidoCMS, puis programme les cinq réseaux de [TON RESTAURANT] :\n\n— LinkedIn à 8 h, YouTube à 10 h, Facebook à 12 h, Instagram à 18 h 30, TikTok à 19 h\n— Légende : « Midi. Quinze secondes. Décide avant d'arriver. » puis le corps, puis « [TON APPEL À L'ACTION] : [TON SITE] »\n— Mots-dièse : #restaurant #[TA VILLE] #[TA SPÉCIALITÉ]\n\nRends-moi le lien de chaque publication."
       }
     ],
+    "heygenPrompt": null,
+    "montage": null,
     "metier": null,
     "phase": null,
     "amplitude": null,
@@ -26888,6 +27214,8 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
         "prompt": "Verse le master dans ma bibliothèque RapidoCMS, puis programme les cinq réseaux de [TON RESTAURANT] :\n\n— LinkedIn à 8 h, YouTube à 10 h, Facebook à 12 h, Instagram à 18 h 30, TikTok à 19 h\n— Légende : « Vous l'avez réclamé. Il est revenu. » puis le corps, puis « [TON APPEL À L'ACTION] : [TON SITE] »\n— Mots-dièse : #restaurant #[TA VILLE] #[TA SPÉCIALITÉ]\n\nRends-moi le lien de chaque publication."
       }
     ],
+    "heygenPrompt": null,
+    "montage": null,
     "metier": null,
     "phase": null,
     "amplitude": null,
@@ -27062,6 +27390,8 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
         "prompt": "Verse le master dans ma bibliothèque RapidoCMS, puis programme les cinq réseaux de [TON RESTAURANT] :\n\n— LinkedIn à 8 h, YouTube à 10 h, Facebook à 12 h, Instagram à 18 h 30, TikTok à 19 h\n— Légende : « Ce que tu ne vois jamais. Trente secondes avant ton assiette. » puis le corps, puis « [TON APPEL À L'ACTION] : [TON SITE] »\n— Mots-dièse : #restaurant #[TA VILLE] #[TA SPÉCIALITÉ]\n\nRends-moi le lien de chaque publication."
       }
     ],
+    "heygenPrompt": null,
+    "montage": null,
     "metier": null,
     "phase": null,
     "amplitude": null,
@@ -27236,6 +27566,8 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
         "prompt": "Verse le master dans ma bibliothèque RapidoCMS, puis programme les cinq réseaux de [TON RESTAURANT] :\n\n— LinkedIn à 8 h, YouTube à 10 h, Facebook à 12 h, Instagram à 18 h 30, TikTok à 19 h\n— Légende : « Vendredi 12, ici. Il y a un nombre de places. Pas plus. » puis le corps, puis « [TON APPEL À L'ACTION] : [TON SITE] »\n— Mots-dièse : #restaurant #[TA VILLE] #[TA SPÉCIALITÉ]\n\nRends-moi le lien de chaque publication."
       }
     ],
+    "heygenPrompt": null,
+    "montage": null,
     "metier": null,
     "phase": null,
     "amplitude": null,
@@ -27410,6 +27742,8 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
         "prompt": "Verse le master dans ma bibliothèque RapidoCMS, puis programme les cinq réseaux de [TON RESTAURANT] :\n\n— LinkedIn à 8 h, YouTube à 10 h, Facebook à 12 h, Instagram à 18 h 30, TikTok à 19 h\n— Légende : « On diffuse le match. L'écran est grand. La table se réserve. » puis le corps, puis « [TON APPEL À L'ACTION] : [TON SITE] »\n— Mots-dièse : #restaurant #[TA VILLE] #[TA SPÉCIALITÉ]\n\nRends-moi le lien de chaque publication."
       }
     ],
+    "heygenPrompt": null,
+    "montage": null,
     "metier": null,
     "phase": null,
     "amplitude": null,
@@ -27584,6 +27918,8 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
         "prompt": "Verse le master dans ma bibliothèque RapidoCMS, puis programme les cinq réseaux de [TON RESTAURANT] :\n\n— LinkedIn à 8 h, YouTube à 10 h, Facebook à 12 h, Instagram à 18 h 30, TikTok à 19 h\n— Légende : « C'est ton anniversaire. On s'occupe du reste. » puis le corps, puis « [TON APPEL À L'ACTION] : [TON SITE] »\n— Mots-dièse : #restaurant #[TA VILLE] #[TA SPÉCIALITÉ]\n\nRends-moi le lien de chaque publication."
       }
     ],
+    "heygenPrompt": null,
+    "montage": null,
     "metier": null,
     "phase": null,
     "amplitude": null,
@@ -27758,6 +28094,8 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
         "prompt": "Verse le master dans ma bibliothèque RapidoCMS, puis programme les cinq réseaux de [TON RESTAURANT] :\n\n— LinkedIn à 8 h, YouTube à 10 h, Facebook à 12 h, Instagram à 18 h 30, TikTok à 19 h\n— Légende : « Un soir, une cuisine. Demain, ce plat n'existe plus. » puis le corps, puis « [TON APPEL À L'ACTION] : [TON SITE] »\n— Mots-dièse : #restaurant #[TA VILLE] #[TA SPÉCIALITÉ]\n\nRends-moi le lien de chaque publication."
       }
     ],
+    "heygenPrompt": null,
+    "montage": null,
     "metier": null,
     "phase": null,
     "amplitude": null,
@@ -27932,6 +28270,8 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
         "prompt": "Verse le master dans ma bibliothèque RapidoCMS, puis programme les cinq réseaux de [TON RESTAURANT] :\n\n— LinkedIn à 8 h, YouTube à 10 h, Facebook à 12 h, Instagram à 18 h 30, TikTok à 19 h\n— Légende : « Dimanche, on ouvre à dix heures. Prends ton temps. » puis le corps, puis « [TON APPEL À L'ACTION] : [TON SITE] »\n— Mots-dièse : #restaurant #[TA VILLE] #[TA SPÉCIALITÉ]\n\nRends-moi le lien de chaque publication."
       }
     ],
+    "heygenPrompt": null,
+    "montage": null,
     "metier": null,
     "phase": null,
     "amplitude": null,
@@ -28106,6 +28446,8 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
         "prompt": "Verse le master dans ma bibliothèque RapidoCMS, puis programme les cinq réseaux de [TON RESTAURANT] :\n\n— LinkedIn à 8 h, YouTube à 10 h, Facebook à 12 h, Instagram à 18 h 30, TikTok à 19 h\n— Légende : « Toute la salle, rien que vous. Ça se demande, et c'est possible. » puis le corps, puis « [TON APPEL À L'ACTION] : [TON SITE] »\n— Mots-dièse : #restaurant #[TA VILLE] #[TA SPÉCIALITÉ]\n\nRends-moi le lien de chaque publication."
       }
     ],
+    "heygenPrompt": null,
+    "montage": null,
     "metier": null,
     "phase": null,
     "amplitude": null,
@@ -28280,6 +28622,8 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
         "prompt": "Verse le master dans ma bibliothèque RapidoCMS, puis programme les cinq réseaux de [TON RESTAURANT] :\n\n— LinkedIn à 8 h, YouTube à 10 h, Facebook à 12 h, Instagram à 18 h 30, TikTok à 19 h\n— Légende : « Six heures du matin. Ton dîner a commencé il y a quatorze heures. » puis le corps, puis « [TON APPEL À L'ACTION] : [TON SITE] »\n— Mots-dièse : #restaurant #[TA VILLE] #[TA SPÉCIALITÉ]\n\nRends-moi le lien de chaque publication."
       }
     ],
+    "heygenPrompt": null,
+    "montage": null,
     "metier": null,
     "phase": null,
     "amplitude": null,
@@ -28454,6 +28798,8 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
         "prompt": "Verse le master dans ma bibliothèque RapidoCMS, puis programme les cinq réseaux de [TON RESTAURANT] :\n\n— LinkedIn à 8 h, YouTube à 10 h, Facebook à 12 h, Instagram à 18 h 30, TikTok à 19 h\n— Légende : « À cinquante kilomètres d'ici. C'est lui qui fait la moitié du travail. » puis le corps, puis « [TON APPEL À L'ACTION] : [TON SITE] »\n— Mots-dièse : #restaurant #[TA VILLE] #[TA SPÉCIALITÉ]\n\nRends-moi le lien de chaque publication."
       }
     ],
+    "heygenPrompt": null,
+    "montage": null,
     "metier": null,
     "phase": null,
     "amplitude": null,
@@ -28628,6 +28974,8 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
         "prompt": "Verse le master dans ma bibliothèque RapidoCMS, puis programme les cinq réseaux de [TON RESTAURANT] :\n\n— LinkedIn à 8 h, YouTube à 10 h, Facebook à 12 h, Instagram à 18 h 30, TikTok à 19 h\n— Légende : « Elle t'accueille depuis quatre ans. Tu reviens pour elle, pas pour la déco. » puis le corps, puis « [TON APPEL À L'ACTION] : [TON SITE] »\n— Mots-dièse : #restaurant #[TA VILLE] #[TA SPÉCIALITÉ]\n\nRends-moi le lien de chaque publication."
       }
     ],
+    "heygenPrompt": null,
+    "montage": null,
     "metier": null,
     "phase": null,
     "amplitude": null,
@@ -28802,6 +29150,8 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
         "prompt": "Verse le master dans ma bibliothèque RapidoCMS, puis programme les cinq réseaux de [TON RESTAURANT] :\n\n— LinkedIn à 8 h, YouTube à 10 h, Facebook à 12 h, Instagram à 18 h 30, TikTok à 19 h\n— Légende : « Vingt heures quinze. Aucune musique. C'est le vrai son. » puis le corps, puis « [TON APPEL À L'ACTION] : [TON SITE] »\n— Mots-dièse : #restaurant #[TA VILLE] #[TA SPÉCIALITÉ]\n\nRends-moi le lien de chaque publication."
       }
     ],
+    "heygenPrompt": null,
+    "montage": null,
     "metier": null,
     "phase": null,
     "amplitude": null,
@@ -28976,6 +29326,8 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
         "prompt": "Verse le master dans ma bibliothèque RapidoCMS, puis programme les cinq réseaux de [TON RESTAURANT] :\n\n— LinkedIn à 8 h, YouTube à 10 h, Facebook à 12 h, Instagram à 18 h 30, TikTok à 19 h\n— Légende : « Le poste qu'on ne montre jamais. Sans lui, rien ne sort. » puis le corps, puis « [TON APPEL À L'ACTION] : [TON SITE] »\n— Mots-dièse : #restaurant #[TA VILLE] #[TA SPÉCIALITÉ]\n\nRends-moi le lien de chaque publication."
       }
     ],
+    "heygenPrompt": null,
+    "montage": null,
     "metier": null,
     "phase": null,
     "amplitude": null,
@@ -29150,6 +29502,8 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
         "prompt": "Verse le master dans ma bibliothèque RapidoCMS, puis programme les cinq réseaux de [TON RESTAURANT] :\n\n— LinkedIn à 8 h, YouTube à 10 h, Facebook à 12 h, Instagram à 18 h 30, TikTok à 19 h\n— Légende : « Six heures, au marché. Ce qu'on refuse compte autant. » puis le corps, puis « [TON APPEL À L'ACTION] : [TON SITE] »\n— Mots-dièse : #restaurant #[TA VILLE] #[TA SPÉCIALITÉ]\n\nRends-moi le lien de chaque publication."
       }
     ],
+    "heygenPrompt": null,
+    "montage": null,
     "metier": null,
     "phase": null,
     "amplitude": null,
@@ -29324,6 +29678,8 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
         "prompt": "Verse le master dans ma bibliothèque RapidoCMS, puis programme les cinq réseaux de [TON RESTAURANT] :\n\n— LinkedIn à 8 h, YouTube à 10 h, Facebook à 12 h, Instagram à 18 h 30, TikTok à 19 h\n— Légende : « On lit tout. Même celui-là. Et voilà ce qu'on a changé. » puis le corps, puis « [TON APPEL À L'ACTION] : [TON SITE] »\n— Mots-dièse : #restaurant #[TA VILLE] #[TA SPÉCIALITÉ]\n\nRends-moi le lien de chaque publication."
       }
     ],
+    "heygenPrompt": null,
+    "montage": null,
     "metier": null,
     "phase": null,
     "amplitude": null,
@@ -29498,6 +29854,8 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
         "prompt": "Verse le master dans ma bibliothèque RapidoCMS, puis programme les cinq réseaux de [TON RESTAURANT] :\n\n— LinkedIn à 8 h, YouTube à 10 h, Facebook à 12 h, Instagram à 18 h 30, TikTok à 19 h\n— Légende : « Même table depuis six ans. On sait déjà ce qu'il va prendre. » puis le corps, puis « [TON APPEL À L'ACTION] : [TON SITE] »\n— Mots-dièse : #restaurant #[TA VILLE] #[TA SPÉCIALITÉ]\n\nRends-moi le lien de chaque publication."
       }
     ],
+    "heygenPrompt": null,
+    "montage": null,
     "metier": null,
     "phase": null,
     "amplitude": null,
@@ -29672,6 +30030,8 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
         "prompt": "Verse le master dans ma bibliothèque RapidoCMS, puis programme les cinq réseaux de [TON RESTAURANT] :\n\n— LinkedIn à 8 h, YouTube à 10 h, Facebook à 12 h, Instagram à 18 h 30, TikTok à 19 h\n— Légende : « Douze personnes, une addition. Ça peut très bien se passer. » puis le corps, puis « [TON APPEL À L'ACTION] : [TON SITE] »\n— Mots-dièse : #restaurant #[TA VILLE] #[TA SPÉCIALITÉ]\n\nRends-moi le lien de chaque publication."
       }
     ],
+    "heygenPrompt": null,
+    "montage": null,
     "metier": null,
     "phase": null,
     "amplitude": null,
@@ -29846,6 +30206,8 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
         "prompt": "Verse le master dans ma bibliothèque RapidoCMS, puis programme les cinq réseaux de [TON RESTAURANT] :\n\n— LinkedIn à 8 h, YouTube à 10 h, Facebook à 12 h, Instagram à 18 h 30, TikTok à 19 h\n— Légende : « Je commande depuis mon canapé. Et je la regarde arriver en cuisine. » puis le corps, puis « [TON APPEL À L'ACTION] : [TON SITE] »\n— Mots-dièse : #restaurant #[TA VILLE] #[TA SPÉCIALITÉ]\n\nRends-moi le lien de chaque publication."
       }
     ],
+    "heygenPrompt": null,
+    "montage": null,
     "metier": null,
     "phase": null,
     "amplitude": null,
@@ -30020,6 +30382,8 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
         "prompt": "Verse le master dans ma bibliothèque RapidoCMS, puis programme les cinq réseaux de [TON RESTAURANT] :\n\n— LinkedIn à 8 h, YouTube à 10 h, Facebook à 12 h, Instagram à 18 h 30, TikTok à 19 h\n— Légende : « Sans gluten. Vraiment. On vérifie, on ne suppose pas. » puis le corps, puis « [TON APPEL À L'ACTION] : [TON SITE] »\n— Mots-dièse : #restaurant #[TA VILLE] #[TA SPÉCIALITÉ]\n\nRends-moi le lien de chaque publication."
       }
     ],
+    "heygenPrompt": null,
+    "montage": null,
     "metier": null,
     "phase": null,
     "amplitude": null,
@@ -30194,6 +30558,8 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
         "prompt": "Verse le master dans ma bibliothèque RapidoCMS, puis programme les cinq réseaux de [TON RESTAURANT] :\n\n— LinkedIn à 8 h, YouTube à 10 h, Facebook à 12 h, Instagram à 18 h 30, TikTok à 19 h\n— Légende : « Premier rendez-vous. On ne vous dérangera pas. » puis le corps, puis « [TON APPEL À L'ACTION] : [TON SITE] »\n— Mots-dièse : #restaurant #[TA VILLE] #[TA SPÉCIALITÉ]\n\nRends-moi le lien de chaque publication."
       }
     ],
+    "heygenPrompt": null,
+    "montage": null,
     "metier": null,
     "phase": null,
     "amplitude": null,
@@ -30368,6 +30734,8 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
         "prompt": "Verse le master dans ma bibliothèque RapidoCMS, puis programme les cinq réseaux de [TON RESTAURANT] :\n\n— LinkedIn à 8 h, YouTube à 10 h, Facebook à 12 h, Instagram à 18 h 30, TikTok à 19 h\n— Légende : « Scanne, commande, c'est tout. Trente secondes, filmé en vrai. » puis le corps, puis « [TON APPEL À L'ACTION] : [TON SITE] »\n— Mots-dièse : #restaurant #[TA VILLE] #[TA SPÉCIALITÉ]\n\nRends-moi le lien de chaque publication."
       }
     ],
+    "heygenPrompt": null,
+    "montage": null,
     "metier": null,
     "phase": null,
     "amplitude": null,
@@ -30542,6 +30910,8 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
         "prompt": "Verse le master dans ma bibliothèque RapidoCMS, puis programme les cinq réseaux de [TON RESTAURANT] :\n\n— LinkedIn à 8 h, YouTube à 10 h, Facebook à 12 h, Instagram à 18 h 30, TikTok à 19 h\n— Légende : « La carte change lundi. Oui, on retire un plat que vous aimiez. » puis le corps, puis « [TON APPEL À L'ACTION] : [TON SITE] »\n— Mots-dièse : #restaurant #[TA VILLE] #[TA SPÉCIALITÉ]\n\nRends-moi le lien de chaque publication."
       }
     ],
+    "heygenPrompt": null,
+    "montage": null,
     "metier": null,
     "phase": null,
     "amplitude": null,
@@ -30716,6 +31086,8 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
         "prompt": "Verse le master dans ma bibliothèque RapidoCMS, puis programme les cinq réseaux de [TON RESTAURANT] :\n\n— LinkedIn à 8 h, YouTube à 10 h, Facebook à 12 h, Instagram à 18 h 30, TikTok à 19 h\n— Légende : « On recrute. Voilà la vérité. Les horaires, on les dit. » puis le corps, puis « [TON APPEL À L'ACTION] : [TON SITE] »\n— Mots-dièse : #restaurant #[TA VILLE] #[TA SPÉCIALITÉ]\n\nRends-moi le lien de chaque publication."
       }
     ],
+    "heygenPrompt": null,
+    "montage": null,
     "metier": null,
     "phase": null,
     "amplitude": null,
@@ -30890,6 +31262,8 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
         "prompt": "Verse le master dans ma bibliothèque RapidoCMS, puis programme les cinq réseaux de [TON RESTAURANT] :\n\n— LinkedIn à 8 h, YouTube à 10 h, Facebook à 12 h, Instagram à 18 h 30, TikTok à 19 h\n— Légende : « Chaud à l'arrivée. Jamais préparé trop tôt. » puis le corps, puis « [TON APPEL À L'ACTION] : [TON SITE] »\n— Mots-dièse : #restaurant #[TA VILLE] #[TA SPÉCIALITÉ]\n\nRends-moi le lien de chaque publication."
       }
     ],
+    "heygenPrompt": null,
+    "montage": null,
     "metier": null,
     "phase": null,
     "amplitude": null,
@@ -31064,6 +31438,8 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
         "prompt": "Verse le master dans ma bibliothèque RapidoCMS, puis programme les cinq réseaux de [TON RESTAURANT] :\n\n— LinkedIn à 8 h, YouTube à 10 h, Facebook à 12 h, Instagram à 18 h 30, TikTok à 19 h\n— Légende : « Fermé le lundi. Ce n'est pas un jour de repos. » puis le corps, puis « [TON APPEL À L'ACTION] : [TON SITE] »\n— Mots-dièse : #restaurant #[TA VILLE] #[TA SPÉCIALITÉ]\n\nRends-moi le lien de chaque publication."
       }
     ],
+    "heygenPrompt": null,
+    "montage": null,
     "metier": null,
     "phase": null,
     "amplitude": null,
@@ -31238,6 +31614,8 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
         "prompt": "Verse le master dans ma bibliothèque RapidoCMS, puis programme les cinq réseaux de [TON RESTAURANT] :\n\n— LinkedIn à 8 h, YouTube à 10 h, Facebook à 12 h, Instagram à 18 h 30, TikTok à 19 h\n— Légende : « Un an. Les vrais chiffres. Merci. » puis le corps, puis « [TON APPEL À L'ACTION] : [TON SITE] »\n— Mots-dièse : #restaurant #[TA VILLE] #[TA SPÉCIALITÉ]\n\nRends-moi le lien de chaque publication."
       }
     ],
+    "heygenPrompt": null,
+    "montage": null,
     "metier": null,
     "phase": null,
     "amplitude": null,
@@ -31249,6 +31627,9546 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "incidentQuoi": null,
     "saumon": null,
     "story": null,
+    "carrousel": null,
+    "imageFacebook": null,
+    "tutoriel": null
+  },
+  "EP181": {
+    "publications": {
+      "facebook": {
+        "legende": "Vingt heures dix. Personne ne décroche. Le téléphone, lui, ne prend jamais sa pause.\n\nIl appelle pour réserver à six, dont deux personnes qui ne mangent pas de fruits à coque. Vingt heures dix : tout le monde est en salle, le téléphone sonne dans le vide.\n\nCaroline, l'agent au téléphone. Elle prend l'appel pendant le service, pose la question, et la réservation arrive avec la contrainte écrite dessus.\n\n👉 Tout FoodEatUp : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "hashtags": [
+          "restaurant",
+          "restaurateur",
+          "reservation",
+          "foodeatup",
+          "agentvocal",
+          "iarestaurant"
+        ],
+        "motsCles": [
+          "agent vocal restaurant",
+          "réservation par téléphone",
+          "prise de réservation",
+          "standard téléphonique restaurant"
+        ],
+        "cta": "Découvrir FoodEatUp"
+      },
+      "instagram": {
+        "legende": "Vingt heures dix. Personne ne décroche.\nLe téléphone, lui, ne prend jamais sa pause.\n\nIl appelle pour réserver à six, dont deux personnes qui ne mangent pas de fruits à coque. Vingt heures dix : tout le monde est en salle, le téléphone sonne dans le vide.\n\nCaroline, l'agent au téléphone. Elle prend l'appel pendant le service, pose la question, et la réservation arrive avec la contrainte écrite dessus.\n\nDon Citrone en film d'espionnage — saison 7, « Les Végé-Fruités font leur cinéma ».\nTout est expliqué sur notre site — lien en bio.\nUne démo ? 06 14 18 92 25",
+        "hashtags": [
+          "restaurant",
+          "restaurateur",
+          "reservation",
+          "foodeatup",
+          "agentvocal",
+          "iarestaurant",
+          "vegefruites",
+          "coupdefeu",
+          "logicielrestaurant",
+          "vieDeResto"
+        ],
+        "motsCles": [
+          "agent vocal restaurant",
+          "réservation par téléphone",
+          "prise de réservation",
+          "standard téléphonique restaurant"
+        ],
+        "cta": "Tout est en bio"
+      },
+      "tiktok": {
+        "legende": "Vingt heures dix. Personne ne décroche.\nLe téléphone, lui, ne prend jamais sa pause.\n\nIl appelle pour réserver à six, dont deux personnes qui ne mangent pas de fruits à coque. Vingt heures dix : tout le monde est en salle, le téléphone sonne dans le vide.\n\nDon Citrone en film d'espionnage. 🎬",
+        "hashtags": [
+          "restaurant",
+          "restaurateur",
+          "reservation",
+          "foodeatup",
+          "agentvocal"
+        ],
+        "motsCles": [
+          "agent vocal restaurant",
+          "réservation par téléphone",
+          "prise de réservation",
+          "standard téléphonique restaurant"
+        ],
+        "cta": "Lien en bio"
+      },
+      "linkedin": {
+        "legende": "Vingt heures dix. Personne ne décroche.\n\nIl appelle pour réserver à six, dont deux personnes qui ne mangent pas de fruits à coque. Vingt heures dix : tout le monde est en salle, le téléphone sonne dans le vide.\n\nCaroline, l'agent au téléphone. Elle prend l'appel pendant le service, pose la question, et la réservation arrive avec la contrainte écrite dessus.\n\nConcrètement : Caroline répond au premier appel, même en plein coup de feu. Elle demande le nombre de couverts, l'heure, la contrainte alimentaire — et la réservation arrive dans le plan de salle avec la note écrite dessus.\n\nEn savoir plus : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "hashtags": [
+          "restauration",
+          "foodeatup",
+          "reservation",
+          "agentvocal",
+          "iarestaurant"
+        ],
+        "motsCles": [
+          "agent vocal restaurant",
+          "réservation par téléphone",
+          "prise de réservation",
+          "standard téléphonique restaurant"
+        ],
+        "cta": "Découvrir FoodEatUp"
+      },
+      "youtube": {
+        "legende": "Vingt heures dix. Personne ne décroche. Le téléphone, lui, ne prend jamais sa pause.\n\nIl appelle pour réserver à six, dont deux personnes qui ne mangent pas de fruits à coque. Vingt heures dix : tout le monde est en salle, le téléphone sonne dans le vide.\n\nCaroline, l'agent au téléphone. Elle prend l'appel pendant le service, pose la question, et la réservation arrive avec la contrainte écrite dessus.\n\n— — —\n\n🔗 https://site.foodeatup.com/\n\n📞 Une démo ? 06 14 18 92 25\n🌐 foodeatup.com\n\nSérie « Le Coup de Feu » — saison 7 « Les Végé-Fruités font leur cinéma », épisode 1 sur 30.\nActe : Avant d'entrer · Genre : Film d'espionnage · À l'écran : Don Citrone\nModule Caroline · Réservation par téléphone\n\nFoodEatUp est le logiciel qui réunit la caisse, le stock, les plannings, l'HACCP et le marketing d'un restaurant au même endroit.\n",
+        "hashtags": [
+          "Shorts",
+          "restaurant",
+          "restaurateur",
+          "reservation",
+          "foodeatup",
+          "agentvocal",
+          "iarestaurant",
+          "coupdefeu"
+        ],
+        "motsCles": [
+          "agent vocal restaurant",
+          "réservation par téléphone",
+          "prise de réservation",
+          "standard téléphonique restaurant"
+        ],
+        "cta": "Découvrir FoodEatUp",
+        "titre": "Le brief — Caroline | FoodEatUp"
+      }
+    },
+    "promptVignette": "Photo réaliste, cadrage vertical 9:16, traitée comme une affiche de cinéma — film d'espionnage. Le chef de l'image de référence — MÊME visage, même barbe, même toque blanche, même veste de cuisine blanche, même tablier blanc au logo FoodEatUp bleu. Ne change ni ses traits ni sa morphologie. Son expression : l'œil en coin, comme s'il surveillait la porte. Scène : le brief. Vingt heures dix. Personne ne décroche. Décor : le comptoir d'une brasserie en plein service, le téléphone qui sonne dans le vide, la salle floue derrière. Lumière rasante et contrastée, ombres de stores sur le mur. Le chef occupe les deux tiers droits du cadre, en plan poitrine ; l'élément du cas reste visible à gauche. Bande crème #FCF9E6 en haut du cadre sur un cinquième de la hauteur, portant UNIQUEMENT le texte « PERSONNE NE DÉCROCHE » en typographie arrondie très grasse, bleu marine #0F1A23, centré. Aucun autre texte, aucun logo ajouté, pas de filigrane, pas de bordure décorative.",
+    "higgsfieldPrompt": "Vertical 9:16, 10 seconds, photorealistic, cinematic handheld camera, shallow depth of field, natural light, 4K. NO text overlay, NO subtitles, NO watermark, NO logo.\n\nReference image attached — the FoodEatUp chef. Keep his exact face, beard, white toque, white chef jacket and white FoodEatUp apron. Do not alter his features or his build.\n\nA restaurant counter phone rings in the dark, red service lights flashing on the wall. A hand reaches for it in slow motion, spy-thriller style, and misses. The phone keeps ringing. Wide shot of a full dining room where nobody turns around.\n\nAt 8 seconds the chef from the reference image steps into frame on the right, narrowing his eyes as if checking the exit, and looks straight into the camera. Hold that look for the final 2 seconds.\n\nAudio: muffled room tone, a phone ringing far away, a low tense drone. No music.",
+    "scriptHeygen": null,
+    "kit": null,
+    "heygenPrompt": "Avatar : « Chef FoodEatUp » — votre avatar 3D, plan poitrine, regard caméra, fond vert (ou transparent).\nFormat : 1080 × 1920, 9:16, 25 images par seconde.\nVoix : française, masculine, débit posé, ton complice — le chef qui explique, pas celui qui vend.\nDurée visée : 9 secondes — c'est le segment 9,5 s → 18,5 s du master.\n\nScript, à coller tel quel :\n« Vingt heures dix, et le téléphone sonne. Personne ne peut le prendre : tout le monde est en salle. Caroline, elle, décroche à la première sonnerie — et elle pense à demander l'allergie. »\n\nRendu : aucun sous-titre, aucune incrustation, aucun logo, aucun décor de fond. Pas de musique. Le montage s'occupe de tout le reste.",
+    "montage": {
+      "consigne": "Monte EP181 : coupe le clip Higgsfield à 9,5 s, pose l'accroche « Vingt heures dix. Personne ne décroche. » à 5,0 s, empile l'avatar HeyGen et la capture d'écran dans la tablette de 18,5 s à 28,5 s, ferme sur la signature et le sting. Sortie 1080×1920, 37,5 s, −14 LUFS.",
+      "segments": [
+        {
+          "titre": "Hook",
+          "debut": 0,
+          "fin": 9.5,
+          "contenu": "Le plan Higgsfield, recadré en 9:16. L'accroche « Vingt heures dix. Personne ne décroche. » apparaît à 5,0 s, en bas du cadre."
+        },
+        {
+          "titre": "Transition de marque",
+          "debut": 9.5,
+          "fin": 18.5,
+          "contenu": "L'avatar HeyGen entre par la droite et prend la parole : « Vingt heures dix, et le téléphone sonne. »"
+        },
+        {
+          "titre": "Démo logiciel",
+          "debut": 18.5,
+          "fin": 28.5,
+          "contenu": "La capture d'écran dans la tablette — la fiche de réservation créée par Caroline, six couverts, avec la note « sans fruits à coque » visible sur la ligne. L'avatar reste en médaillon en bas à gauche."
+        },
+        {
+          "titre": "Signature",
+          "debut": 28.5,
+          "fin": 32.5,
+          "contenu": "Bandeau crème, la punchline « Le téléphone, lui, ne prend jamais sa pause. », le logo FoodEatUp et le repère de saison « Avant d'entrer · Film d'espionnage »."
+        },
+        {
+          "titre": "Sting",
+          "debut": 32.5,
+          "fin": 37.5,
+          "contenu": "Le sting de marque, « PERSONNE NE DÉCROCHE » en incrustation, puis l'appel à l'action : https://site.foodeatup.com/ et le 06 14 18 92 25."
+        }
+      ],
+      "livrable": "1080 × 1920 · 37,5 s · H.264 · −14 LUFS · master versé dans la bibliothèque RapidoCMS, prêt à être programmé sur les cinq réseaux."
+    },
+    "metier": null,
+    "phase": null,
+    "amplitude": null,
+    "boucle": null,
+    "boucleSlug": null,
+    "grandeBoucle": null,
+    "incident": null,
+    "incidentHeure": null,
+    "incidentQuoi": null,
+    "saumon": null,
+    "story": {
+      "format": "9:16 · 1080 × 1920 · 10 s",
+      "hook": "Vingt heures dix. Personne ne décroche",
+      "punchline": "Le téléphone, lui, ne prend jamais sa pause",
+      "url": null
+    },
+    "carrousel": null,
+    "imageFacebook": null,
+    "tutoriel": null
+  },
+  "EP182": {
+    "publications": {
+      "facebook": {
+        "legende": "L'ardoise date de mardi. On est vendredi. La pluie a mangé le plat du jour.\n\nUn couple s'arrête devant la vitrine. L'ardoise est manuscrite, à moitié effacée par la pluie, et date de mardi. Ils repartent.\n\nLe QR collé sur la vitrine ouvre la carte en ligne, à jour et lisible de nuit. Ils entrent en sachant ce qu'ils vont manger.\n\n👉 Tout FoodEatUp : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "hashtags": [
+          "restaurant",
+          "restaurateur",
+          "carteenligne",
+          "foodeatup",
+          "siteweb",
+          "qrcode"
+        ],
+        "motsCles": [
+          "carte en ligne restaurant",
+          "menu digital",
+          "QR code carte",
+          "site web restaurant"
+        ],
+        "cta": "Découvrir FoodEatUp"
+      },
+      "instagram": {
+        "legende": "L'ardoise date de mardi. On est vendredi.\nLa pluie a mangé le plat du jour.\n\nUn couple s'arrête devant la vitrine. L'ardoise est manuscrite, à moitié effacée par la pluie, et date de mardi. Ils repartent.\n\nLe QR collé sur la vitrine ouvre la carte en ligne, à jour et lisible de nuit. Ils entrent en sachant ce qu'ils vont manger.\n\nLe Brocoli en film muet — saison 7, « Les Végé-Fruités font leur cinéma ».\nTout est expliqué sur notre site — lien en bio.\nUne démo ? 06 14 18 92 25",
+        "hashtags": [
+          "restaurant",
+          "restaurateur",
+          "carteenligne",
+          "foodeatup",
+          "siteweb",
+          "qrcode",
+          "vegefruites",
+          "coupdefeu",
+          "logicielrestaurant",
+          "vieDeResto"
+        ],
+        "motsCles": [
+          "carte en ligne restaurant",
+          "menu digital",
+          "QR code carte",
+          "site web restaurant"
+        ],
+        "cta": "Tout est en bio"
+      },
+      "tiktok": {
+        "legende": "L'ardoise date de mardi. On est vendredi.\nLa pluie a mangé le plat du jour.\n\nUn couple s'arrête devant la vitrine. L'ardoise est manuscrite, à moitié effacée par la pluie, et date de mardi. Ils repartent.\n\nLe Brocoli en film muet. 🎬",
+        "hashtags": [
+          "restaurant",
+          "restaurateur",
+          "carteenligne",
+          "foodeatup",
+          "siteweb"
+        ],
+        "motsCles": [
+          "carte en ligne restaurant",
+          "menu digital",
+          "QR code carte",
+          "site web restaurant"
+        ],
+        "cta": "Lien en bio"
+      },
+      "linkedin": {
+        "legende": "L'ardoise date de mardi. On est vendredi.\n\nUn couple s'arrête devant la vitrine. L'ardoise est manuscrite, à moitié effacée par la pluie, et date de mardi. Ils repartent.\n\nLe QR collé sur la vitrine ouvre la carte en ligne, à jour et lisible de nuit. Ils entrent en sachant ce qu'ils vont manger.\n\nConcrètement : La carte en ligne est à jour, lisible de nuit, et tient dans un QR collé sur la vitrine. Le couple entre en sachant déjà ce qu'il va manger.\n\nEn savoir plus : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "hashtags": [
+          "restauration",
+          "foodeatup",
+          "carteenligne",
+          "siteweb",
+          "qrcode"
+        ],
+        "motsCles": [
+          "carte en ligne restaurant",
+          "menu digital",
+          "QR code carte",
+          "site web restaurant"
+        ],
+        "cta": "Découvrir FoodEatUp"
+      },
+      "youtube": {
+        "legende": "L'ardoise date de mardi. On est vendredi. La pluie a mangé le plat du jour.\n\nUn couple s'arrête devant la vitrine. L'ardoise est manuscrite, à moitié effacée par la pluie, et date de mardi. Ils repartent.\n\nLe QR collé sur la vitrine ouvre la carte en ligne, à jour et lisible de nuit. Ils entrent en sachant ce qu'ils vont manger.\n\n— — —\n\n🔗 https://site.foodeatup.com/\n\n📞 Une démo ? 06 14 18 92 25\n🌐 foodeatup.com\n\nSérie « Le Coup de Feu » — saison 7 « Les Végé-Fruités font leur cinéma », épisode 2 sur 30.\nActe : Avant d'entrer · Genre : Film muet · À l'écran : Le Brocoli\nModule Mon Site · La carte en ligne\n\nFoodEatUp est le logiciel qui réunit la caisse, le stock, les plannings, l'HACCP et le marketing d'un restaurant au même endroit.\n",
+        "hashtags": [
+          "Shorts",
+          "restaurant",
+          "restaurateur",
+          "carteenligne",
+          "foodeatup",
+          "siteweb",
+          "qrcode",
+          "coupdefeu"
+        ],
+        "motsCles": [
+          "carte en ligne restaurant",
+          "menu digital",
+          "QR code carte",
+          "site web restaurant"
+        ],
+        "cta": "Découvrir FoodEatUp",
+        "titre": "La carte illisible — Mon Site | FoodEatUp"
+      }
+    },
+    "promptVignette": "Photo réaliste, cadrage vertical 9:16, traitée comme une affiche de cinéma — film muet. Le chef de l'image de référence — MÊME visage, même barbe, même toque blanche, même veste de cuisine blanche, même tablier blanc au logo FoodEatUp bleu. Ne change ni ses traits ni sa morphologie. Son expression : sourcils haussés, la bouche en accent circonflexe. Scène : la carte illisible. L'ardoise date de mardi. On est vendredi. Décor : une vitrine de restaurant sous la pluie, le soir, une ardoise dégoulinante et deux passants qui plissent les yeux. Lumière douce, virage sépia, léger grain de pellicule. Le chef occupe les deux tiers droits du cadre, en plan poitrine ; l'élément du cas reste visible à gauche. Bande crème #FCF9E6 en haut du cadre sur un cinquième de la hauteur, portant UNIQUEMENT le texte « ARDOISE ILLISIBLE » en typographie arrondie très grasse, bleu marine #0F1A23, centré. Aucun autre texte, aucun logo ajouté, pas de filigrane, pas de bordure décorative.",
+    "higgsfieldPrompt": "Vertical 9:16, 10 seconds, photorealistic, cinematic handheld camera, shallow depth of field, natural light, 4K. NO text overlay, NO subtitles, NO watermark, NO logo.\n\nReference image attached — the FoodEatUp chef. Keep his exact face, beard, white toque, white chef jacket and white FoodEatUp apron. Do not alter his features or his build.\n\nSilent-film pastiche, slight sepia grade and 18fps stutter. Rain runs down a restaurant window at night. A couple leans in to read a chalkboard menu whose letters have melted into grey smears. They mime confusion with exaggerated gestures, shrug, and walk out of frame.\n\nAt 8 seconds the chef from the reference image steps into frame on the right, raising both eyebrows in exaggerated silent-film dismay, and looks straight into the camera. Hold that look for the final 2 seconds.\n\nAudio: no dialogue at all — only rain on glass and a distant tram bell. No music.",
+    "scriptHeygen": null,
+    "kit": null,
+    "heygenPrompt": "Avatar : « Chef FoodEatUp » — votre avatar 3D, plan poitrine, regard caméra, fond vert (ou transparent).\nFormat : 1080 × 1920, 9:16, 25 images par seconde.\nVoix : française, masculine, débit posé, ton complice — le chef qui explique, pas celui qui vend.\nDurée visée : 9 secondes — c'est le segment 9,5 s → 18,5 s du master.\n\nScript, à coller tel quel :\n« L'ardoise, c'est charmant. Sous la pluie, beaucoup moins. Le client qui n'arrive pas à lire votre carte ne vous le dira jamais : il s'en va, c'est tout. »\n\nRendu : aucun sous-titre, aucune incrustation, aucun logo, aucun décor de fond. Pas de musique. Le montage s'occupe de tout le reste.",
+    "montage": {
+      "consigne": "Monte EP182 : coupe le clip Higgsfield à 9,5 s, pose l'accroche « L'ardoise date de mardi. On est vendredi. » à 5,0 s, empile l'avatar HeyGen et la capture d'écran dans la tablette de 18,5 s à 28,5 s, ferme sur la signature et le sting. Sortie 1080×1920, 37,5 s, −14 LUFS.",
+      "segments": [
+        {
+          "titre": "Hook",
+          "debut": 0,
+          "fin": 9.5,
+          "contenu": "Le plan Higgsfield, recadré en 9:16. L'accroche « L'ardoise date de mardi. On est vendredi. » apparaît à 5,0 s, en bas du cadre."
+        },
+        {
+          "titre": "Transition de marque",
+          "debut": 9.5,
+          "fin": 18.5,
+          "contenu": "L'avatar HeyGen entre par la droite et prend la parole : « L'ardoise, c'est charmant. »"
+        },
+        {
+          "titre": "Démo logiciel",
+          "debut": 18.5,
+          "fin": 28.5,
+          "contenu": "La capture d'écran dans la tablette — la carte publique du site, ouverte sur un téléphone, avec les plats du jour à jour et les prix. L'avatar reste en médaillon en bas à gauche."
+        },
+        {
+          "titre": "Signature",
+          "debut": 28.5,
+          "fin": 32.5,
+          "contenu": "Bandeau crème, la punchline « La pluie a mangé le plat du jour. », le logo FoodEatUp et le repère de saison « Avant d'entrer · Film muet »."
+        },
+        {
+          "titre": "Sting",
+          "debut": 32.5,
+          "fin": 37.5,
+          "contenu": "Le sting de marque, « ARDOISE ILLISIBLE » en incrustation, puis l'appel à l'action : https://site.foodeatup.com/ et le 06 14 18 92 25."
+        }
+      ],
+      "livrable": "1080 × 1920 · 37,5 s · H.264 · −14 LUFS · master versé dans la bibliothèque RapidoCMS, prêt à être programmé sur les cinq réseaux."
+    },
+    "metier": null,
+    "phase": null,
+    "amplitude": null,
+    "boucle": null,
+    "boucleSlug": null,
+    "grandeBoucle": null,
+    "incident": null,
+    "incidentHeure": null,
+    "incidentQuoi": null,
+    "saumon": null,
+    "story": {
+      "format": "9:16 · 1080 × 1920 · 10 s",
+      "hook": "L'ardoise date de mardi. On est vendredi",
+      "punchline": "La pluie a mangé le plat du jour",
+      "url": null
+    },
+    "carrousel": null,
+    "imageFacebook": null,
+    "tutoriel": null
+  },
+  "EP183": {
+    "publications": {
+      "facebook": {
+        "legende": "« Il y a un plat végétarien ? » Silence dans le groupe. Dix personnes bloquées par une seule question.\n\nElle propose le restaurant à sa table de dix. Une seule question la bloque : « il y a un plat végétarien ? » Personne dans le groupe ne sait répondre par message.\n\nLa carte en ligne se partage en un lien. La composition de chaque plat est écrite — elle décide sans appeler personne.\n\n👉 Tout FoodEatUp : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "hashtags": [
+          "restaurant",
+          "restaurateur",
+          "carteenligne",
+          "foodeatup",
+          "siteweb",
+          "groupe"
+        ],
+        "motsCles": [
+          "partager la carte",
+          "carte en ligne restaurant",
+          "réserver à plusieurs",
+          "menu partageable"
+        ],
+        "cta": "Découvrir FoodEatUp"
+      },
+      "instagram": {
+        "legende": "« Il y a un plat végétarien ? » Silence dans le groupe.\nDix personnes bloquées par une seule question.\n\nElle propose le restaurant à sa table de dix. Une seule question la bloque : « il y a un plat végétarien ? » Personne dans le groupe ne sait répondre par message.\n\nLa carte en ligne se partage en un lien. La composition de chaque plat est écrite — elle décide sans appeler personne.\n\nLa Fraise en documentaire animalier — saison 7, « Les Végé-Fruités font leur cinéma ».\nTout est expliqué sur notre site — lien en bio.\nUne démo ? 06 14 18 92 25",
+        "hashtags": [
+          "restaurant",
+          "restaurateur",
+          "carteenligne",
+          "foodeatup",
+          "siteweb",
+          "groupe",
+          "vegefruites",
+          "coupdefeu",
+          "logicielrestaurant",
+          "vieDeResto"
+        ],
+        "motsCles": [
+          "partager la carte",
+          "carte en ligne restaurant",
+          "réserver à plusieurs",
+          "menu partageable"
+        ],
+        "cta": "Tout est en bio"
+      },
+      "tiktok": {
+        "legende": "« Il y a un plat végétarien ? » Silence dans le groupe.\nDix personnes bloquées par une seule question.\n\nElle propose le restaurant à sa table de dix. Une seule question la bloque : « il y a un plat végétarien ? » Personne dans le groupe ne sait répondre par message.\n\nLa Fraise en documentaire animalier. 🎬",
+        "hashtags": [
+          "restaurant",
+          "restaurateur",
+          "carteenligne",
+          "foodeatup",
+          "siteweb"
+        ],
+        "motsCles": [
+          "partager la carte",
+          "carte en ligne restaurant",
+          "réserver à plusieurs",
+          "menu partageable"
+        ],
+        "cta": "Lien en bio"
+      },
+      "linkedin": {
+        "legende": "« Il y a un plat végétarien ? » Silence dans le groupe.\n\nElle propose le restaurant à sa table de dix. Une seule question la bloque : « il y a un plat végétarien ? » Personne dans le groupe ne sait répondre par message.\n\nLa carte en ligne se partage en un lien. La composition de chaque plat est écrite — elle décide sans appeler personne.\n\nConcrètement : La carte en ligne se partage en un lien, et la composition de chaque plat y est écrite. Celle qui organise décide pour dix sans avoir à appeler.\n\nEn savoir plus : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "hashtags": [
+          "restauration",
+          "foodeatup",
+          "carteenligne",
+          "siteweb",
+          "groupe"
+        ],
+        "motsCles": [
+          "partager la carte",
+          "carte en ligne restaurant",
+          "réserver à plusieurs",
+          "menu partageable"
+        ],
+        "cta": "Découvrir FoodEatUp"
+      },
+      "youtube": {
+        "legende": "« Il y a un plat végétarien ? » Silence dans le groupe. Dix personnes bloquées par une seule question.\n\nElle propose le restaurant à sa table de dix. Une seule question la bloque : « il y a un plat végétarien ? » Personne dans le groupe ne sait répondre par message.\n\nLa carte en ligne se partage en un lien. La composition de chaque plat est écrite — elle décide sans appeler personne.\n\n— — —\n\n🔗 https://site.foodeatup.com/\n\n📞 Une démo ? 06 14 18 92 25\n🌐 foodeatup.com\n\nSérie « Le Coup de Feu » — saison 7 « Les Végé-Fruités font leur cinéma », épisode 3 sur 30.\nActe : Avant d'entrer · Genre : Documentaire animalier · À l'écran : La Fraise\nModule Mon Site · Partager la carte\n\nFoodEatUp est le logiciel qui réunit la caisse, le stock, les plannings, l'HACCP et le marketing d'un restaurant au même endroit.\n",
+        "hashtags": [
+          "Shorts",
+          "restaurant",
+          "restaurateur",
+          "carteenligne",
+          "foodeatup",
+          "siteweb",
+          "groupe",
+          "coupdefeu"
+        ],
+        "motsCles": [
+          "partager la carte",
+          "carte en ligne restaurant",
+          "réserver à plusieurs",
+          "menu partageable"
+        ],
+        "cta": "Découvrir FoodEatUp",
+        "titre": "Le repérage — Mon Site | FoodEatUp"
+      }
+    },
+    "promptVignette": "Photo réaliste, cadrage vertical 9:16, traitée comme une affiche de cinéma — documentaire animalier. Le chef de l'image de référence — MÊME visage, même barbe, même toque blanche, même veste de cuisine blanche, même tablier blanc au logo FoodEatUp bleu. Ne change ni ses traits ni sa morphologie. Son expression : l'index sur les lèvres, comme s'il ne fallait pas les effrayer. Scène : le repérage. « Il y a un plat végétarien ? » Silence dans le groupe. Décor : un salon, cinq personnes penchées sur leurs téléphones, une conversation de groupe qui s'affole. Lumière naturelle filtrée par un feuillage. Le chef occupe les deux tiers droits du cadre, en plan poitrine ; l'élément du cas reste visible à gauche. Bande crème #FCF9E6 en haut du cadre sur un cinquième de la hauteur, portant UNIQUEMENT le texte « LE REPÉRAGE » en typographie arrondie très grasse, bleu marine #0F1A23, centré. Aucun autre texte, aucun logo ajouté, pas de filigrane, pas de bordure décorative.",
+    "higgsfieldPrompt": "Vertical 9:16, 10 seconds, photorealistic, cinematic handheld camera, shallow depth of field, natural light, 4K. NO text overlay, NO subtitles, NO watermark, NO logo.\n\nReference image attached — the FoodEatUp chef. Keep his exact face, beard, white toque, white chef jacket and white FoodEatUp apron. Do not alter his features or his build.\n\nNature-documentary pastiche shot through foliage, as if observing wildlife. Five friends huddle on a sofa around glowing phones, whispering. Slow push-in on one phone screen showing a group chat scrolling fast. They freeze together, all looking up at once, still undecided.\n\nAt 8 seconds the chef from the reference image steps into frame on the right, pressing a finger to his lips, whispering to camera, and looks straight into the camera. Hold that look for the final 2 seconds.\n\nAudio: quiet room tone, whispering, one page turning. No music.",
+    "scriptHeygen": null,
+    "kit": null,
+    "heygenPrompt": "Avatar : « Chef FoodEatUp » — votre avatar 3D, plan poitrine, regard caméra, fond vert (ou transparent).\nFormat : 1080 × 1920, 9:16, 25 images par seconde.\nVoix : française, masculine, débit posé, ton complice — le chef qui explique, pas celui qui vend.\nDurée visée : 9 secondes — c'est le segment 9,5 s → 18,5 s du master.\n\nScript, à coller tel quel :\n« Une table de dix, ça ne se décide pas au téléphone. Ça se décide dans une conversation de groupe, en trois minutes. Si votre carte n'est pas dans cette conversation, vous n'y êtes pas non plus. »\n\nRendu : aucun sous-titre, aucune incrustation, aucun logo, aucun décor de fond. Pas de musique. Le montage s'occupe de tout le reste.",
+    "montage": {
+      "consigne": "Monte EP183 : coupe le clip Higgsfield à 9,5 s, pose l'accroche « « Il y a un plat végétarien ? » Silence dans le groupe. » à 5,0 s, empile l'avatar HeyGen et la capture d'écran dans la tablette de 18,5 s à 28,5 s, ferme sur la signature et le sting. Sortie 1080×1920, 37,5 s, −14 LUFS.",
+      "segments": [
+        {
+          "titre": "Hook",
+          "debut": 0,
+          "fin": 9.5,
+          "contenu": "Le plan Higgsfield, recadré en 9:16. L'accroche « « Il y a un plat végétarien ? » Silence dans le groupe. » apparaît à 5,0 s, en bas du cadre."
+        },
+        {
+          "titre": "Transition de marque",
+          "debut": 9.5,
+          "fin": 18.5,
+          "contenu": "L'avatar HeyGen entre par la droite et prend la parole : « Une table de dix, ça ne se décide pas au téléphone. »"
+        },
+        {
+          "titre": "Démo logiciel",
+          "debut": 18.5,
+          "fin": 28.5,
+          "contenu": "La capture d'écran dans la tablette — le lien de la carte partagé dans une conversation, puis la fiche d'un plat avec sa composition. L'avatar reste en médaillon en bas à gauche."
+        },
+        {
+          "titre": "Signature",
+          "debut": 28.5,
+          "fin": 32.5,
+          "contenu": "Bandeau crème, la punchline « Dix personnes bloquées par une seule question. », le logo FoodEatUp et le repère de saison « Avant d'entrer · Documentaire animalier »."
+        },
+        {
+          "titre": "Sting",
+          "debut": 32.5,
+          "fin": 37.5,
+          "contenu": "Le sting de marque, « LE REPÉRAGE » en incrustation, puis l'appel à l'action : https://site.foodeatup.com/ et le 06 14 18 92 25."
+        }
+      ],
+      "livrable": "1080 × 1920 · 37,5 s · H.264 · −14 LUFS · master versé dans la bibliothèque RapidoCMS, prêt à être programmé sur les cinq réseaux."
+    },
+    "metier": null,
+    "phase": null,
+    "amplitude": null,
+    "boucle": null,
+    "boucleSlug": null,
+    "grandeBoucle": null,
+    "incident": null,
+    "incidentHeure": null,
+    "incidentQuoi": null,
+    "saumon": null,
+    "story": {
+      "format": "9:16 · 1080 × 1920 · 10 s",
+      "hook": "« Il y a un plat végétarien ? » Silence dans le groupe",
+      "punchline": "Dix personnes bloquées par une seule question",
+      "url": null
+    },
+    "carrousel": null,
+    "imageFacebook": null,
+    "tutoriel": null
+  },
+  "EP184": {
+    "publications": {
+      "facebook": {
+        "legende": "Douze personnes dehors. Trois tables libres au fond. Personne, des deux côtés de la vitre, ne le sait.\n\nDouze personnes attendent sur le trottoir. Trois tables viennent de se libérer au fond. Personne, dehors comme dedans, ne le sait.\n\nLa liste d'attente : on prend le nom, la table qui se libère rappelle le suivant. Le trottoir se vide dans la salle.\n\n👉 Tout FoodEatUp : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "hashtags": [
+          "restaurant",
+          "restaurateur",
+          "reservation",
+          "foodeatup",
+          "listedattente",
+          "salle"
+        ],
+        "motsCles": [
+          "liste d'attente restaurant",
+          "gestion de salle",
+          "plan de salle",
+          "file d'attente"
+        ],
+        "cta": "Découvrir FoodEatUp"
+      },
+      "instagram": {
+        "legende": "Douze personnes dehors. Trois tables libres au fond.\nPersonne, des deux côtés de la vitre, ne le sait.\n\nDouze personnes attendent sur le trottoir. Trois tables viennent de se libérer au fond. Personne, dehors comme dedans, ne le sait.\n\nLa liste d'attente : on prend le nom, la table qui se libère rappelle le suivant. Le trottoir se vide dans la salle.\n\nLe Navet en thriller — saison 7, « Les Végé-Fruités font leur cinéma ».\nTout est expliqué sur notre site — lien en bio.\nUne démo ? 06 14 18 92 25",
+        "hashtags": [
+          "restaurant",
+          "restaurateur",
+          "reservation",
+          "foodeatup",
+          "listedattente",
+          "salle",
+          "vegefruites",
+          "coupdefeu",
+          "logicielrestaurant",
+          "vieDeResto"
+        ],
+        "motsCles": [
+          "liste d'attente restaurant",
+          "gestion de salle",
+          "plan de salle",
+          "file d'attente"
+        ],
+        "cta": "Tout est en bio"
+      },
+      "tiktok": {
+        "legende": "Douze personnes dehors. Trois tables libres au fond.\nPersonne, des deux côtés de la vitre, ne le sait.\n\nDouze personnes attendent sur le trottoir. Trois tables viennent de se libérer au fond. Personne, dehors comme dedans, ne le sait.\n\nLe Navet en thriller. 🎬",
+        "hashtags": [
+          "restaurant",
+          "restaurateur",
+          "reservation",
+          "foodeatup",
+          "listedattente"
+        ],
+        "motsCles": [
+          "liste d'attente restaurant",
+          "gestion de salle",
+          "plan de salle",
+          "file d'attente"
+        ],
+        "cta": "Lien en bio"
+      },
+      "linkedin": {
+        "legende": "Douze personnes dehors. Trois tables libres au fond.\n\nDouze personnes attendent sur le trottoir. Trois tables viennent de se libérer au fond. Personne, dehors comme dedans, ne le sait.\n\nLa liste d'attente : on prend le nom, la table qui se libère rappelle le suivant. Le trottoir se vide dans la salle.\n\nConcrètement : La liste d'attente prend le nom et le nombre de couverts. Quand une table se libère, le suivant est rappelé — le trottoir se vide dans la salle au lieu de partir chez le voisin.\n\nEn savoir plus : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "hashtags": [
+          "restauration",
+          "foodeatup",
+          "reservation",
+          "listedattente",
+          "salle"
+        ],
+        "motsCles": [
+          "liste d'attente restaurant",
+          "gestion de salle",
+          "plan de salle",
+          "file d'attente"
+        ],
+        "cta": "Découvrir FoodEatUp"
+      },
+      "youtube": {
+        "legende": "Douze personnes dehors. Trois tables libres au fond. Personne, des deux côtés de la vitre, ne le sait.\n\nDouze personnes attendent sur le trottoir. Trois tables viennent de se libérer au fond. Personne, dehors comme dedans, ne le sait.\n\nLa liste d'attente : on prend le nom, la table qui se libère rappelle le suivant. Le trottoir se vide dans la salle.\n\n— — —\n\n🔗 https://site.foodeatup.com/\n\n📞 Une démo ? 06 14 18 92 25\n🌐 foodeatup.com\n\nSérie « Le Coup de Feu » — saison 7 « Les Végé-Fruités font leur cinéma », épisode 4 sur 30.\nActe : Avant d'entrer · Genre : Thriller · À l'écran : Le Navet\nModule Réservation · La liste d'attente\n\nFoodEatUp est le logiciel qui réunit la caisse, le stock, les plannings, l'HACCP et le marketing d'un restaurant au même endroit.\n",
+        "hashtags": [
+          "Shorts",
+          "restaurant",
+          "restaurateur",
+          "reservation",
+          "foodeatup",
+          "listedattente",
+          "salle",
+          "coupdefeu"
+        ],
+        "motsCles": [
+          "liste d'attente restaurant",
+          "gestion de salle",
+          "plan de salle",
+          "file d'attente"
+        ],
+        "cta": "Découvrir FoodEatUp",
+        "titre": "Complet dehors, vide dedans — Réservation | FoodEatUp"
+      }
+    },
+    "promptVignette": "Photo réaliste, cadrage vertical 9:16, traitée comme une affiche de cinéma — thriller. Le chef de l'image de référence — MÊME visage, même barbe, même toque blanche, même veste de cuisine blanche, même tablier blanc au logo FoodEatUp bleu. Ne change ni ses traits ni sa morphologie. Son expression : mâchoire serrée, le regard vers la vitre. Scène : complet dehors, vide dedans. Douze personnes dehors. Trois tables libres au fond. Décor : l'entrée d'un restaurant un samedi soir, une file sur le trottoir, la salle éclairée derrière la vitre. Lumière froide de nuit, néons bleutés sur le trottoir mouillé. Le chef occupe les deux tiers droits du cadre, en plan poitrine ; l'élément du cas reste visible à gauche. Bande crème #FCF9E6 en haut du cadre sur un cinquième de la hauteur, portant UNIQUEMENT le texte « COMPLET DEHORS » en typographie arrondie très grasse, bleu marine #0F1A23, centré. Aucun autre texte, aucun logo ajouté, pas de filigrane, pas de bordure décorative.",
+    "higgsfieldPrompt": "Vertical 9:16, 10 seconds, photorealistic, cinematic handheld camera, shallow depth of field, natural light, 4K. NO text overlay, NO subtitles, NO watermark, NO logo.\n\nReference image attached — the FoodEatUp chef. Keep his exact face, beard, white toque, white chef jacket and white FoodEatUp apron. Do not alter his features or his build.\n\nThriller pastiche, cold blue night grade, slow dolly. A queue of twelve people waits outside a restaurant, breath visible. Cut to the interior: three empty tables at the back, candles lit, nobody sitting. Cut back and forth, faster each time, ending on a hostess looking at a paper list she cannot read.\n\nAt 8 seconds the chef from the reference image steps into frame on the right, jaw tight, looking through the window, and looks straight into the camera. Hold that look for the final 2 seconds.\n\nAudio: cold street ambience, muffled chatter behind glass, a slow heartbeat pulse. No music.",
+    "scriptHeygen": null,
+    "kit": null,
+    "heygenPrompt": "Avatar : « Chef FoodEatUp » — votre avatar 3D, plan poitrine, regard caméra, fond vert (ou transparent).\nFormat : 1080 × 1920, 9:16, 25 images par seconde.\nVoix : française, masculine, débit posé, ton complice — le chef qui explique, pas celui qui vend.\nDurée visée : 9 secondes — c'est le segment 9,5 s → 18,5 s du master.\n\nScript, à coller tel quel :\n« Douze personnes dehors, trois tables vides dedans. Ça n'arrive pas parce que le restaurant est mal tenu. Ça arrive parce que l'information ne traverse pas la vitre. »\n\nRendu : aucun sous-titre, aucune incrustation, aucun logo, aucun décor de fond. Pas de musique. Le montage s'occupe de tout le reste.",
+    "montage": {
+      "consigne": "Monte EP184 : coupe le clip Higgsfield à 9,5 s, pose l'accroche « Douze personnes dehors. Trois tables libres au fond. » à 5,0 s, empile l'avatar HeyGen et la capture d'écran dans la tablette de 18,5 s à 28,5 s, ferme sur la signature et le sting. Sortie 1080×1920, 37,5 s, −14 LUFS.",
+      "segments": [
+        {
+          "titre": "Hook",
+          "debut": 0,
+          "fin": 9.5,
+          "contenu": "Le plan Higgsfield, recadré en 9:16. L'accroche « Douze personnes dehors. Trois tables libres au fond. » apparaît à 5,0 s, en bas du cadre."
+        },
+        {
+          "titre": "Transition de marque",
+          "debut": 9.5,
+          "fin": 18.5,
+          "contenu": "L'avatar HeyGen entre par la droite et prend la parole : « Douze personnes dehors, trois tables vides dedans. »"
+        },
+        {
+          "titre": "Démo logiciel",
+          "debut": 18.5,
+          "fin": 28.5,
+          "contenu": "La capture d'écran dans la tablette — la liste d'attente, un nom ajouté en deux gestes, puis la notification envoyée au client quand la table se libère. L'avatar reste en médaillon en bas à gauche."
+        },
+        {
+          "titre": "Signature",
+          "debut": 28.5,
+          "fin": 32.5,
+          "contenu": "Bandeau crème, la punchline « Personne, des deux côtés de la vitre, ne le sait. », le logo FoodEatUp et le repère de saison « Avant d'entrer · Thriller »."
+        },
+        {
+          "titre": "Sting",
+          "debut": 32.5,
+          "fin": 37.5,
+          "contenu": "Le sting de marque, « COMPLET DEHORS » en incrustation, puis l'appel à l'action : https://site.foodeatup.com/ et le 06 14 18 92 25."
+        }
+      ],
+      "livrable": "1080 × 1920 · 37,5 s · H.264 · −14 LUFS · master versé dans la bibliothèque RapidoCMS, prêt à être programmé sur les cinq réseaux."
+    },
+    "metier": null,
+    "phase": null,
+    "amplitude": null,
+    "boucle": null,
+    "boucleSlug": null,
+    "grandeBoucle": null,
+    "incident": null,
+    "incidentHeure": null,
+    "incidentQuoi": null,
+    "saumon": null,
+    "story": {
+      "format": "9:16 · 1080 × 1920 · 10 s",
+      "hook": "Douze personnes dehors. Trois tables libres au fond",
+      "punchline": "Personne, des deux côtés de la vitre, ne le sait",
+      "url": null
+    },
+    "carrousel": null,
+    "imageFacebook": null,
+    "tutoriel": null
+  },
+  "EP185": {
+    "publications": {
+      "facebook": {
+        "legende": "Il l'avait dit à la réservation. Deux fois. Au dessert, la cuisine découvre l'anniversaire.\n\nIl a prévenu à la réservation : c'est l'anniversaire de sa femme. Au dessert, personne en cuisine n'est au courant.\n\nLa note de réservation voyage avec la table jusqu'au passe. La bougie arrive sans qu'il ait à la redemander.\n\n👉 Tout FoodEatUp : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "hashtags": [
+          "restaurant",
+          "restaurateur",
+          "reservation",
+          "foodeatup",
+          "anniversaire",
+          "service"
+        ],
+        "motsCles": [
+          "note de réservation",
+          "réservation restaurant",
+          "personnaliser l'accueil",
+          "plan de salle"
+        ],
+        "cta": "Découvrir FoodEatUp"
+      },
+      "instagram": {
+        "legende": "Il l'avait dit à la réservation. Deux fois.\nAu dessert, la cuisine découvre l'anniversaire.\n\nIl a prévenu à la réservation : c'est l'anniversaire de sa femme. Au dessert, personne en cuisine n'est au courant.\n\nLa note de réservation voyage avec la table jusqu'au passe. La bougie arrive sans qu'il ait à la redemander.\n\nLa Pomme de Terre en comédie romantique — saison 7, « Les Végé-Fruités font leur cinéma ».\nTout est expliqué sur notre site — lien en bio.\nUne démo ? 06 14 18 92 25",
+        "hashtags": [
+          "restaurant",
+          "restaurateur",
+          "reservation",
+          "foodeatup",
+          "anniversaire",
+          "service",
+          "vegefruites",
+          "coupdefeu",
+          "logicielrestaurant",
+          "vieDeResto"
+        ],
+        "motsCles": [
+          "note de réservation",
+          "réservation restaurant",
+          "personnaliser l'accueil",
+          "plan de salle"
+        ],
+        "cta": "Tout est en bio"
+      },
+      "tiktok": {
+        "legende": "Il l'avait dit à la réservation. Deux fois.\nAu dessert, la cuisine découvre l'anniversaire.\n\nIl a prévenu à la réservation : c'est l'anniversaire de sa femme. Au dessert, personne en cuisine n'est au courant.\n\nLa Pomme de Terre en comédie romantique. 🎬",
+        "hashtags": [
+          "restaurant",
+          "restaurateur",
+          "reservation",
+          "foodeatup",
+          "anniversaire"
+        ],
+        "motsCles": [
+          "note de réservation",
+          "réservation restaurant",
+          "personnaliser l'accueil",
+          "plan de salle"
+        ],
+        "cta": "Lien en bio"
+      },
+      "linkedin": {
+        "legende": "Il l'avait dit à la réservation. Deux fois.\n\nIl a prévenu à la réservation : c'est l'anniversaire de sa femme. Au dessert, personne en cuisine n'est au courant.\n\nLa note de réservation voyage avec la table jusqu'au passe. La bougie arrive sans qu'il ait à la redemander.\n\nConcrètement : La note laissée à la réservation voyage avec la table jusqu'au passe. La bougie arrive au dessert sans que le client ait eu à la redemander.\n\nEn savoir plus : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "hashtags": [
+          "restauration",
+          "foodeatup",
+          "reservation",
+          "anniversaire",
+          "service"
+        ],
+        "motsCles": [
+          "note de réservation",
+          "réservation restaurant",
+          "personnaliser l'accueil",
+          "plan de salle"
+        ],
+        "cta": "Découvrir FoodEatUp"
+      },
+      "youtube": {
+        "legende": "Il l'avait dit à la réservation. Deux fois. Au dessert, la cuisine découvre l'anniversaire.\n\nIl a prévenu à la réservation : c'est l'anniversaire de sa femme. Au dessert, personne en cuisine n'est au courant.\n\nLa note de réservation voyage avec la table jusqu'au passe. La bougie arrive sans qu'il ait à la redemander.\n\n— — —\n\n🔗 https://site.foodeatup.com/\n\n📞 Une démo ? 06 14 18 92 25\n🌐 foodeatup.com\n\nSérie « Le Coup de Feu » — saison 7 « Les Végé-Fruités font leur cinéma », épisode 5 sur 30.\nActe : Avant d'entrer · Genre : Comédie romantique · À l'écran : La Pomme de Terre\nModule Réservation · La note de réservation\n\nFoodEatUp est le logiciel qui réunit la caisse, le stock, les plannings, l'HACCP et le marketing d'un restaurant au même endroit.\n",
+        "hashtags": [
+          "Shorts",
+          "restaurant",
+          "restaurateur",
+          "reservation",
+          "foodeatup",
+          "anniversaire",
+          "service",
+          "coupdefeu"
+        ],
+        "motsCles": [
+          "note de réservation",
+          "réservation restaurant",
+          "personnaliser l'accueil",
+          "plan de salle"
+        ],
+        "cta": "Découvrir FoodEatUp",
+        "titre": "La surprise qui n'en est pas une — Réservation | FoodEatUp"
+      }
+    },
+    "promptVignette": "Photo réaliste, cadrage vertical 9:16, traitée comme une affiche de cinéma — comédie romantique. Le chef de l'image de référence — MÊME visage, même barbe, même toque blanche, même veste de cuisine blanche, même tablier blanc au logo FoodEatUp bleu. Ne change ni ses traits ni sa morphologie. Son expression : attendri, avec un sourire qui retombe d'un cran. Scène : la surprise qui n'en est pas une. Il l'avait dit à la réservation. Deux fois. Décor : une table pour deux, bougie éteinte, le dessert qui arrive sans rien de particulier. Lumière chaude de bougie, arrière-plan très flou. Le chef occupe les deux tiers droits du cadre, en plan poitrine ; l'élément du cas reste visible à gauche. Bande crème #FCF9E6 en haut du cadre sur un cinquième de la hauteur, portant UNIQUEMENT le texte « LA SURPRISE RATÉE » en typographie arrondie très grasse, bleu marine #0F1A23, centré. Aucun autre texte, aucun logo ajouté, pas de filigrane, pas de bordure décorative.",
+    "higgsfieldPrompt": "Vertical 9:16, 10 seconds, photorealistic, cinematic handheld camera, shallow depth of field, natural light, 4K. NO text overlay, NO subtitles, NO watermark, NO logo.\n\nReference image attached — the FoodEatUp chef. Keep his exact face, beard, white toque, white chef jacket and white FoodEatUp apron. Do not alter his features or his build.\n\nRomantic-comedy pastiche, warm golden light, soft focus edges. A couple at a candlelit table. He glances hopefully toward the kitchen door. A dessert arrives — plain, no candle, no sparkler. His smile falters for exactly one second before he covers it. She notices.\n\nAt 8 seconds the chef from the reference image steps into frame on the right, his warm smile dropping one notch, and looks straight into the camera. Hold that look for the final 2 seconds.\n\nAudio: warm restaurant ambience, soft cutlery, one small sigh. No music.",
+    "scriptHeygen": null,
+    "kit": null,
+    "heygenPrompt": "Avatar : « Chef FoodEatUp » — votre avatar 3D, plan poitrine, regard caméra, fond vert (ou transparent).\nFormat : 1080 × 1920, 9:16, 25 images par seconde.\nVoix : française, masculine, débit posé, ton complice — le chef qui explique, pas celui qui vend.\nDurée visée : 9 secondes — c'est le segment 9,5 s → 18,5 s du master.\n\nScript, à coller tel quel :\n« Il l'a dit au téléphone. Il l'a redit à l'accueil. Au dessert, la cuisine ne le sait toujours pas. Ce n'est pas de la négligence : c'est une note qui n'a voyagé nulle part. »\n\nRendu : aucun sous-titre, aucune incrustation, aucun logo, aucun décor de fond. Pas de musique. Le montage s'occupe de tout le reste.",
+    "montage": {
+      "consigne": "Monte EP185 : coupe le clip Higgsfield à 9,5 s, pose l'accroche « Il l'avait dit à la réservation. Deux fois. » à 5,0 s, empile l'avatar HeyGen et la capture d'écran dans la tablette de 18,5 s à 28,5 s, ferme sur la signature et le sting. Sortie 1080×1920, 37,5 s, −14 LUFS.",
+      "segments": [
+        {
+          "titre": "Hook",
+          "debut": 0,
+          "fin": 9.5,
+          "contenu": "Le plan Higgsfield, recadré en 9:16. L'accroche « Il l'avait dit à la réservation. Deux fois. » apparaît à 5,0 s, en bas du cadre."
+        },
+        {
+          "titre": "Transition de marque",
+          "debut": 9.5,
+          "fin": 18.5,
+          "contenu": "L'avatar HeyGen entre par la droite et prend la parole : « Il l'a dit au téléphone. »"
+        },
+        {
+          "titre": "Démo logiciel",
+          "debut": 18.5,
+          "fin": 28.5,
+          "contenu": "La capture d'écran dans la tablette — la réservation avec sa note « anniversaire », puis la même note qui apparaît sur la ligne de la table au passe. L'avatar reste en médaillon en bas à gauche."
+        },
+        {
+          "titre": "Signature",
+          "debut": 28.5,
+          "fin": 32.5,
+          "contenu": "Bandeau crème, la punchline « Au dessert, la cuisine découvre l'anniversaire. », le logo FoodEatUp et le repère de saison « Avant d'entrer · Comédie romantique »."
+        },
+        {
+          "titre": "Sting",
+          "debut": 32.5,
+          "fin": 37.5,
+          "contenu": "Le sting de marque, « LA SURPRISE RATÉE » en incrustation, puis l'appel à l'action : https://site.foodeatup.com/ et le 06 14 18 92 25."
+        }
+      ],
+      "livrable": "1080 × 1920 · 37,5 s · H.264 · −14 LUFS · master versé dans la bibliothèque RapidoCMS, prêt à être programmé sur les cinq réseaux."
+    },
+    "metier": null,
+    "phase": null,
+    "amplitude": null,
+    "boucle": null,
+    "boucleSlug": null,
+    "grandeBoucle": null,
+    "incident": null,
+    "incidentHeure": null,
+    "incidentQuoi": null,
+    "saumon": null,
+    "story": {
+      "format": "9:16 · 1080 × 1920 · 10 s",
+      "hook": "Il l'avait dit à la réservation. Deux fois",
+      "punchline": "Au dessert, la cuisine découvre l'anniversaire",
+      "url": null
+    },
+    "carrousel": null,
+    "imageFacebook": null,
+    "tutoriel": null
+  },
+  "EP186": {
+    "publications": {
+      "facebook": {
+        "legende": "Quarante couverts, un chiffre au stylo sur un set de table. Le set de table part à la poubelle avec le devis.\n\nUn comité d'entreprise veut privatiser pour quarante. Le chiffre est écrit au stylo sur un set de table, entre deux taches.\n\nDevis & factures : le devis part par mail dans la demi-heure, postes détaillés. Il est accepté avant qu'on ait débarrassé.\n\n👉 Tout FoodEatUp : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "hashtags": [
+          "restaurant",
+          "restaurateur",
+          "devis",
+          "foodeatup",
+          "privatisation",
+          "comptabilite"
+        ],
+        "motsCles": [
+          "devis restaurant",
+          "privatisation salle",
+          "facture restaurant",
+          "événement entreprise"
+        ],
+        "cta": "Découvrir FoodEatUp"
+      },
+      "instagram": {
+        "legende": "Quarante couverts, un chiffre au stylo sur un set de table.\nLe set de table part à la poubelle avec le devis.\n\nUn comité d'entreprise veut privatiser pour quarante. Le chiffre est écrit au stylo sur un set de table, entre deux taches.\n\nDevis & factures : le devis part par mail dans la demi-heure, postes détaillés. Il est accepté avant qu'on ait débarrassé.\n\nL'Ail en film de casse — saison 7, « Les Végé-Fruités font leur cinéma ».\nTout est expliqué sur notre site — lien en bio.\nUne démo ? 06 14 18 92 25",
+        "hashtags": [
+          "restaurant",
+          "restaurateur",
+          "devis",
+          "foodeatup",
+          "privatisation",
+          "comptabilite",
+          "vegefruites",
+          "coupdefeu",
+          "logicielrestaurant",
+          "vieDeResto"
+        ],
+        "motsCles": [
+          "devis restaurant",
+          "privatisation salle",
+          "facture restaurant",
+          "événement entreprise"
+        ],
+        "cta": "Tout est en bio"
+      },
+      "tiktok": {
+        "legende": "Quarante couverts, un chiffre au stylo sur un set de table.\nLe set de table part à la poubelle avec le devis.\n\nUn comité d'entreprise veut privatiser pour quarante. Le chiffre est écrit au stylo sur un set de table, entre deux taches.\n\nL'Ail en film de casse. 🎬",
+        "hashtags": [
+          "restaurant",
+          "restaurateur",
+          "devis",
+          "foodeatup",
+          "privatisation"
+        ],
+        "motsCles": [
+          "devis restaurant",
+          "privatisation salle",
+          "facture restaurant",
+          "événement entreprise"
+        ],
+        "cta": "Lien en bio"
+      },
+      "linkedin": {
+        "legende": "Quarante couverts, un chiffre au stylo sur un set de table.\n\nUn comité d'entreprise veut privatiser pour quarante. Le chiffre est écrit au stylo sur un set de table, entre deux taches.\n\nDevis & factures : le devis part par mail dans la demi-heure, postes détaillés. Il est accepté avant qu'on ait débarrassé.\n\nConcrètement : Le devis part par mail dans la demi-heure, avec les postes détaillés et le total. Il est accepté avant même qu'on ait débarrassé.\n\nEn savoir plus : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "hashtags": [
+          "restauration",
+          "foodeatup",
+          "devis",
+          "privatisation",
+          "comptabilite"
+        ],
+        "motsCles": [
+          "devis restaurant",
+          "privatisation salle",
+          "facture restaurant",
+          "événement entreprise"
+        ],
+        "cta": "Découvrir FoodEatUp"
+      },
+      "youtube": {
+        "legende": "Quarante couverts, un chiffre au stylo sur un set de table. Le set de table part à la poubelle avec le devis.\n\nUn comité d'entreprise veut privatiser pour quarante. Le chiffre est écrit au stylo sur un set de table, entre deux taches.\n\nDevis & factures : le devis part par mail dans la demi-heure, postes détaillés. Il est accepté avant qu'on ait débarrassé.\n\n— — —\n\n🔗 https://site.foodeatup.com/\n\n📞 Une démo ? 06 14 18 92 25\n🌐 foodeatup.com\n\nSérie « Le Coup de Feu » — saison 7 « Les Végé-Fruités font leur cinéma », épisode 6 sur 30.\nActe : Avant d'entrer · Genre : Film de casse · À l'écran : L'Ail\nModule Comptabilité · Devis & factures\n\nFoodEatUp est le logiciel qui réunit la caisse, le stock, les plannings, l'HACCP et le marketing d'un restaurant au même endroit.\n",
+        "hashtags": [
+          "Shorts",
+          "restaurant",
+          "restaurateur",
+          "devis",
+          "foodeatup",
+          "privatisation",
+          "comptabilite",
+          "coupdefeu"
+        ],
+        "motsCles": [
+          "devis restaurant",
+          "privatisation salle",
+          "facture restaurant",
+          "événement entreprise"
+        ],
+        "cta": "Découvrir FoodEatUp",
+        "titre": "Le devis sur la nappe — Comptabilité | FoodEatUp"
+      }
+    },
+    "promptVignette": "Photo réaliste, cadrage vertical 9:16, traitée comme une affiche de cinéma — film de casse. Le chef de l'image de référence — MÊME visage, même barbe, même toque blanche, même veste de cuisine blanche, même tablier blanc au logo FoodEatUp bleu. Ne change ni ses traits ni sa morphologie. Son expression : concentré, les yeux sur le chronomètre. Scène : le devis sur la nappe. Quarante couverts, un chiffre au stylo sur un set de table. Décor : une table débarrassée, un set de table griffonné de chiffres, une main qui le froisse. Lumière crue, contrastes durs, plan serré. Le chef occupe les deux tiers droits du cadre, en plan poitrine ; l'élément du cas reste visible à gauche. Bande crème #FCF9E6 en haut du cadre sur un cinquième de la hauteur, portant UNIQUEMENT le texte « DEVIS SUR NAPPE » en typographie arrondie très grasse, bleu marine #0F1A23, centré. Aucun autre texte, aucun logo ajouté, pas de filigrane, pas de bordure décorative.",
+    "higgsfieldPrompt": "Vertical 9:16, 10 seconds, photorealistic, cinematic handheld camera, shallow depth of field, natural light, 4K. NO text overlay, NO subtitles, NO watermark, NO logo.\n\nReference image attached — the FoodEatUp chef. Keep his exact face, beard, white toque, white chef jacket and white FoodEatUp apron. Do not alter his features or his build.\n\nHeist-movie pastiche, split-screen and ticking-clock energy. Close-up of a paper placemat covered in scrawled numbers and coffee rings. A hand crumples it. Cut to a bin. Cut to a business group leaving through the door, one of them still waiting for a quote that will never come.\n\nAt 8 seconds the chef from the reference image steps into frame on the right, checking a watch, entirely focused, and looks straight into the camera. Hold that look for the final 2 seconds.\n\nAudio: a ticking clock, muted city hum, paper being crumpled. No music.",
+    "scriptHeygen": null,
+    "kit": null,
+    "heygenPrompt": "Avatar : « Chef FoodEatUp » — votre avatar 3D, plan poitrine, regard caméra, fond vert (ou transparent).\nFormat : 1080 × 1920, 9:16, 25 images par seconde.\nVoix : française, masculine, débit posé, ton complice — le chef qui explique, pas celui qui vend.\nDurée visée : 9 secondes — c'est le segment 9,5 s → 18,5 s du master.\n\nScript, à coller tel quel :\n« Quarante couverts, c'est le plus gros ticket du mois. Et il est écrit au stylo sur un set de table. Vous savez déjà comment ça finit. »\n\nRendu : aucun sous-titre, aucune incrustation, aucun logo, aucun décor de fond. Pas de musique. Le montage s'occupe de tout le reste.",
+    "montage": {
+      "consigne": "Monte EP186 : coupe le clip Higgsfield à 9,5 s, pose l'accroche « Quarante couverts, un chiffre au stylo sur un set de table. » à 5,0 s, empile l'avatar HeyGen et la capture d'écran dans la tablette de 18,5 s à 28,5 s, ferme sur la signature et le sting. Sortie 1080×1920, 37,5 s, −14 LUFS.",
+      "segments": [
+        {
+          "titre": "Hook",
+          "debut": 0,
+          "fin": 9.5,
+          "contenu": "Le plan Higgsfield, recadré en 9:16. L'accroche « Quarante couverts, un chiffre au stylo sur un set de table. » apparaît à 5,0 s, en bas du cadre."
+        },
+        {
+          "titre": "Transition de marque",
+          "debut": 9.5,
+          "fin": 18.5,
+          "contenu": "L'avatar HeyGen entre par la droite et prend la parole : « Quarante couverts, c'est le plus gros ticket du mois. »"
+        },
+        {
+          "titre": "Démo logiciel",
+          "debut": 18.5,
+          "fin": 28.5,
+          "contenu": "La capture d'écran dans la tablette — le devis créé en deux minutes, les postes détaillés, l'envoi par mail et le statut « accepté ». L'avatar reste en médaillon en bas à gauche."
+        },
+        {
+          "titre": "Signature",
+          "debut": 28.5,
+          "fin": 32.5,
+          "contenu": "Bandeau crème, la punchline « Le set de table part à la poubelle avec le devis. », le logo FoodEatUp et le repère de saison « Avant d'entrer · Film de casse »."
+        },
+        {
+          "titre": "Sting",
+          "debut": 32.5,
+          "fin": 37.5,
+          "contenu": "Le sting de marque, « DEVIS SUR NAPPE » en incrustation, puis l'appel à l'action : https://site.foodeatup.com/ et le 06 14 18 92 25."
+        }
+      ],
+      "livrable": "1080 × 1920 · 37,5 s · H.264 · −14 LUFS · master versé dans la bibliothèque RapidoCMS, prêt à être programmé sur les cinq réseaux."
+    },
+    "metier": null,
+    "phase": null,
+    "amplitude": null,
+    "boucle": null,
+    "boucleSlug": null,
+    "grandeBoucle": null,
+    "incident": null,
+    "incidentHeure": null,
+    "incidentQuoi": null,
+    "saumon": null,
+    "story": {
+      "format": "9:16 · 1080 × 1920 · 10 s",
+      "hook": "Quarante couverts, un chiffre au stylo sur un set de table",
+      "punchline": "Le set de table part à la poubelle avec le devis",
+      "url": null
+    },
+    "carrousel": null,
+    "imageFacebook": null,
+    "tutoriel": null
+  },
+  "EP187": {
+    "publications": {
+      "facebook": {
+        "legende": "Il commande en anglais. Le serveur sourit et note. Ni l'un ni l'autre ne sait ce qui va arriver.\n\nLe client commande en anglais. Le serveur sourit, note quelque chose, et repart. Ni l'un ni l'autre ne sait ce qui va arriver dans l'assiette.\n\nLe QR de table : le client commande lui-même, dans la langue de son téléphone. La commande arrive en cuisine écrite, pas interprétée.\n\n👉 Tout FoodEatUp : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "hashtags": [
+          "restaurant",
+          "restaurateur",
+          "qrcode",
+          "foodeatup",
+          "commande",
+          "touristes"
+        ],
+        "motsCles": [
+          "QR code de table",
+          "commande à table",
+          "carte multilingue",
+          "commande client"
+        ],
+        "cta": "Découvrir FoodEatUp"
+      },
+      "instagram": {
+        "legende": "Il commande en anglais. Le serveur sourit et note.\nNi l'un ni l'autre ne sait ce qui va arriver.\n\nLe client commande en anglais. Le serveur sourit, note quelque chose, et repart. Ni l'un ni l'autre ne sait ce qui va arriver dans l'assiette.\n\nLe QR de table : le client commande lui-même, dans la langue de son téléphone. La commande arrive en cuisine écrite, pas interprétée.\n\nLe Brocoli en film de sous-titres — saison 7, « Les Végé-Fruités font leur cinéma ».\nTout est expliqué sur notre site — lien en bio.\nUne démo ? 06 14 18 92 25",
+        "hashtags": [
+          "restaurant",
+          "restaurateur",
+          "qrcode",
+          "foodeatup",
+          "commande",
+          "touristes",
+          "vegefruites",
+          "coupdefeu",
+          "logicielrestaurant",
+          "vieDeResto"
+        ],
+        "motsCles": [
+          "QR code de table",
+          "commande à table",
+          "carte multilingue",
+          "commande client"
+        ],
+        "cta": "Tout est en bio"
+      },
+      "tiktok": {
+        "legende": "Il commande en anglais. Le serveur sourit et note.\nNi l'un ni l'autre ne sait ce qui va arriver.\n\nLe client commande en anglais. Le serveur sourit, note quelque chose, et repart. Ni l'un ni l'autre ne sait ce qui va arriver dans l'assiette.\n\nLe Brocoli en film de sous-titres. 🎬",
+        "hashtags": [
+          "restaurant",
+          "restaurateur",
+          "qrcode",
+          "foodeatup",
+          "commande"
+        ],
+        "motsCles": [
+          "QR code de table",
+          "commande à table",
+          "carte multilingue",
+          "commande client"
+        ],
+        "cta": "Lien en bio"
+      },
+      "linkedin": {
+        "legende": "Il commande en anglais. Le serveur sourit et note.\n\nLe client commande en anglais. Le serveur sourit, note quelque chose, et repart. Ni l'un ni l'autre ne sait ce qui va arriver dans l'assiette.\n\nLe QR de table : le client commande lui-même, dans la langue de son téléphone. La commande arrive en cuisine écrite, pas interprétée.\n\nConcrètement : Avec le QR de table, le client commande lui-même, dans la langue de son téléphone. La commande arrive en cuisine écrite, pas interprétée.\n\nEn savoir plus : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "hashtags": [
+          "restauration",
+          "foodeatup",
+          "qrcode",
+          "commande",
+          "touristes"
+        ],
+        "motsCles": [
+          "QR code de table",
+          "commande à table",
+          "carte multilingue",
+          "commande client"
+        ],
+        "cta": "Découvrir FoodEatUp"
+      },
+      "youtube": {
+        "legende": "Il commande en anglais. Le serveur sourit et note. Ni l'un ni l'autre ne sait ce qui va arriver.\n\nLe client commande en anglais. Le serveur sourit, note quelque chose, et repart. Ni l'un ni l'autre ne sait ce qui va arriver dans l'assiette.\n\nLe QR de table : le client commande lui-même, dans la langue de son téléphone. La commande arrive en cuisine écrite, pas interprétée.\n\n— — —\n\n🔗 https://site.foodeatup.com/\n\n📞 Une démo ? 06 14 18 92 25\n🌐 foodeatup.com\n\nSérie « Le Coup de Feu » — saison 7 « Les Végé-Fruités font leur cinéma », épisode 7 sur 30.\nActe : La commande · Genre : Film de sous-titres · À l'écran : Le Brocoli\nModule Service · Le QR de table\n\nFoodEatUp est le logiciel qui réunit la caisse, le stock, les plannings, l'HACCP et le marketing d'un restaurant au même endroit.\n",
+        "hashtags": [
+          "Shorts",
+          "restaurant",
+          "restaurateur",
+          "qrcode",
+          "foodeatup",
+          "commande",
+          "touristes",
+          "coupdefeu"
+        ],
+        "motsCles": [
+          "QR code de table",
+          "commande à table",
+          "carte multilingue",
+          "commande client"
+        ],
+        "cta": "Découvrir FoodEatUp",
+        "titre": "Lost in translation — Service | FoodEatUp"
+      }
+    },
+    "promptVignette": "Photo réaliste, cadrage vertical 9:16, traitée comme une affiche de cinéma — film de sous-titres. Le chef de l'image de référence — MÊME visage, même barbe, même toque blanche, même veste de cuisine blanche, même tablier blanc au logo FoodEatUp bleu. Ne change ni ses traits ni sa morphologie. Son expression : poli et perdu, la tête légèrement penchée. Scène : lost in translation. Il commande en anglais. Le serveur sourit et note. Décor : une table de restaurant, un touriste qui parle avec les mains, un serveur qui hoche la tête sans comprendre. Lumière chaude de salle, arrière-plan flou. Le chef occupe les deux tiers droits du cadre, en plan poitrine ; l'élément du cas reste visible à gauche. Bande crème #FCF9E6 en haut du cadre sur un cinquième de la hauteur, portant UNIQUEMENT le texte « LOST IN TRANSLATION » en typographie arrondie très grasse, bleu marine #0F1A23, centré. Aucun autre texte, aucun logo ajouté, pas de filigrane, pas de bordure décorative.",
+    "higgsfieldPrompt": "Vertical 9:16, 10 seconds, photorealistic, cinematic handheld camera, shallow depth of field, natural light, 4K. NO text overlay, NO subtitles, NO watermark, NO logo.\n\nReference image attached — the FoodEatUp chef. Keep his exact face, beard, white toque, white chef jacket and white FoodEatUp apron. Do not alter his features or his build.\n\nSubtitled-film pastiche. A tourist speaks animatedly at a restaurant table, gesturing. The waiter nods with a fixed polite smile, pen hovering, writing nothing. Fake subtitles appear at the bottom as garbled unreadable glyphs. The waiter walks away confidently. The tourist's smile fades.\n\nAt 8 seconds the chef from the reference image steps into frame on the right, tilting his head, politely lost, and looks straight into the camera. Hold that look for the final 2 seconds.\n\nAudio: restaurant ambience with overlapping languages, no intelligible dialogue. No music.",
+    "scriptHeygen": null,
+    "kit": null,
+    "heygenPrompt": "Avatar : « Chef FoodEatUp » — votre avatar 3D, plan poitrine, regard caméra, fond vert (ou transparent).\nFormat : 1080 × 1920, 9:16, 25 images par seconde.\nVoix : française, masculine, débit posé, ton complice — le chef qui explique, pas celui qui vend.\nDurée visée : 9 secondes — c'est le segment 9,5 s → 18,5 s du master.\n\nScript, à coller tel quel :\n« Il a commandé. Le serveur a souri. Les deux pensent que c'est réglé. Aucun des deux n'a raison — et on le saura dans douze minutes, quand l'assiette arrivera. »\n\nRendu : aucun sous-titre, aucune incrustation, aucun logo, aucun décor de fond. Pas de musique. Le montage s'occupe de tout le reste.",
+    "montage": {
+      "consigne": "Monte EP187 : coupe le clip Higgsfield à 9,5 s, pose l'accroche « Il commande en anglais. Le serveur sourit et note. » à 5,0 s, empile l'avatar HeyGen et la capture d'écran dans la tablette de 18,5 s à 28,5 s, ferme sur la signature et le sting. Sortie 1080×1920, 37,5 s, −14 LUFS.",
+      "segments": [
+        {
+          "titre": "Hook",
+          "debut": 0,
+          "fin": 9.5,
+          "contenu": "Le plan Higgsfield, recadré en 9:16. L'accroche « Il commande en anglais. Le serveur sourit et note. » apparaît à 5,0 s, en bas du cadre."
+        },
+        {
+          "titre": "Transition de marque",
+          "debut": 9.5,
+          "fin": 18.5,
+          "contenu": "L'avatar HeyGen entre par la droite et prend la parole : « Il a commandé. »"
+        },
+        {
+          "titre": "Démo logiciel",
+          "debut": 18.5,
+          "fin": 28.5,
+          "contenu": "La capture d'écran dans la tablette — le QR de table scanné, la carte qui bascule en anglais, la commande envoyée en cuisine en français. L'avatar reste en médaillon en bas à gauche."
+        },
+        {
+          "titre": "Signature",
+          "debut": 28.5,
+          "fin": 32.5,
+          "contenu": "Bandeau crème, la punchline « Ni l'un ni l'autre ne sait ce qui va arriver. », le logo FoodEatUp et le repère de saison « La commande · Film de sous-titres »."
+        },
+        {
+          "titre": "Sting",
+          "debut": 32.5,
+          "fin": 37.5,
+          "contenu": "Le sting de marque, « LOST IN TRANSLATION » en incrustation, puis l'appel à l'action : https://site.foodeatup.com/ et le 06 14 18 92 25."
+        }
+      ],
+      "livrable": "1080 × 1920 · 37,5 s · H.264 · −14 LUFS · master versé dans la bibliothèque RapidoCMS, prêt à être programmé sur les cinq réseaux."
+    },
+    "metier": null,
+    "phase": null,
+    "amplitude": null,
+    "boucle": null,
+    "boucleSlug": null,
+    "grandeBoucle": null,
+    "incident": null,
+    "incidentHeure": null,
+    "incidentQuoi": null,
+    "saumon": null,
+    "story": {
+      "format": "9:16 · 1080 × 1920 · 10 s",
+      "hook": "Il commande en anglais. Le serveur sourit et note",
+      "punchline": "Ni l'un ni l'autre ne sait ce qui va arriver",
+      "url": null
+    },
+    "carrousel": null,
+    "imageFacebook": null,
+    "tutoriel": null
+  },
+  "EP188": {
+    "publications": {
+      "facebook": {
+        "legende": "« Il y a des fruits à coque dans le pesto ? » « Je crois que non » n'a jamais rassuré personne.\n\n« Il y a des fruits à coque dans le pesto ? » Le serveur hésite, va voir en cuisine, revient avec « je crois que non ». Personne n'est rassuré.\n\nLa fiche technique du plat liste ses ingrédients. On lit la composition au lieu de la deviner. — Réserve produit : il n'existe pas aujourd'hui de champ « allergène » dédié.\n\n👉 Tout FoodEatUp : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "hashtags": [
+          "restaurant",
+          "restaurateur",
+          "allergenes",
+          "foodeatup",
+          "fichetechnique",
+          "haccp"
+        ],
+        "motsCles": [
+          "composition des plats",
+          "fiche technique restaurant",
+          "ingrédients plat",
+          "information client"
+        ],
+        "cta": "Découvrir FoodEatUp"
+      },
+      "instagram": {
+        "legende": "« Il y a des fruits à coque dans le pesto ? »\n« Je crois que non » n'a jamais rassuré personne.\n\n« Il y a des fruits à coque dans le pesto ? » Le serveur hésite, va voir en cuisine, revient avec « je crois que non ». Personne n'est rassuré.\n\nLa fiche technique du plat liste ses ingrédients. On lit la composition au lieu de la deviner. — Réserve produit : il n'existe pas aujourd'hui de champ « allergène » dédié.\n\nLa Carotte en film à suspense — saison 7, « Les Végé-Fruités font leur cinéma ».\nTout est expliqué sur notre site — lien en bio.\nUne démo ? 06 14 18 92 25",
+        "hashtags": [
+          "restaurant",
+          "restaurateur",
+          "allergenes",
+          "foodeatup",
+          "fichetechnique",
+          "haccp",
+          "vegefruites",
+          "coupdefeu",
+          "logicielrestaurant",
+          "vieDeResto"
+        ],
+        "motsCles": [
+          "composition des plats",
+          "fiche technique restaurant",
+          "ingrédients plat",
+          "information client"
+        ],
+        "cta": "Tout est en bio"
+      },
+      "tiktok": {
+        "legende": "« Il y a des fruits à coque dans le pesto ? »\n« Je crois que non » n'a jamais rassuré personne.\n\n« Il y a des fruits à coque dans le pesto ? » Le serveur hésite, va voir en cuisine, revient avec « je crois que non ». Personne n'est rassuré.\n\nLa Carotte en film à suspense. 🎬",
+        "hashtags": [
+          "restaurant",
+          "restaurateur",
+          "allergenes",
+          "foodeatup",
+          "fichetechnique"
+        ],
+        "motsCles": [
+          "composition des plats",
+          "fiche technique restaurant",
+          "ingrédients plat",
+          "information client"
+        ],
+        "cta": "Lien en bio"
+      },
+      "linkedin": {
+        "legende": "« Il y a des fruits à coque dans le pesto ? »\n\n« Il y a des fruits à coque dans le pesto ? » Le serveur hésite, va voir en cuisine, revient avec « je crois que non ». Personne n'est rassuré.\n\nLa fiche technique du plat liste ses ingrédients. On lit la composition au lieu de la deviner. — Réserve produit : il n'existe pas aujourd'hui de champ « allergène » dédié.\n\nConcrètement : La fiche technique du plat liste ses ingrédients. On lit la composition au lieu de la deviner — et la réponse prend cinq secondes.\n\nEn savoir plus : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "hashtags": [
+          "restauration",
+          "foodeatup",
+          "allergenes",
+          "fichetechnique",
+          "haccp"
+        ],
+        "motsCles": [
+          "composition des plats",
+          "fiche technique restaurant",
+          "ingrédients plat",
+          "information client"
+        ],
+        "cta": "Découvrir FoodEatUp"
+      },
+      "youtube": {
+        "legende": "« Il y a des fruits à coque dans le pesto ? » « Je crois que non » n'a jamais rassuré personne.\n\n« Il y a des fruits à coque dans le pesto ? » Le serveur hésite, va voir en cuisine, revient avec « je crois que non ». Personne n'est rassuré.\n\nLa fiche technique du plat liste ses ingrédients. On lit la composition au lieu de la deviner. — Réserve produit : il n'existe pas aujourd'hui de champ « allergène » dédié.\n\n— — —\n\n🔗 https://site.foodeatup.com/\n\n📞 Une démo ? 06 14 18 92 25\n🌐 foodeatup.com\n\nSérie « Le Coup de Feu » — saison 7 « Les Végé-Fruités font leur cinéma », épisode 8 sur 30.\nActe : La commande · Genre : Film à suspense · À l'écran : La Carotte\nModule HACCP · La composition du plat\n\nFoodEatUp est le logiciel qui réunit la caisse, le stock, les plannings, l'HACCP et le marketing d'un restaurant au même endroit.\n",
+        "hashtags": [
+          "Shorts",
+          "restaurant",
+          "restaurateur",
+          "allergenes",
+          "foodeatup",
+          "fichetechnique",
+          "haccp",
+          "coupdefeu"
+        ],
+        "motsCles": [
+          "composition des plats",
+          "fiche technique restaurant",
+          "ingrédients plat",
+          "information client"
+        ],
+        "cta": "Découvrir FoodEatUp",
+        "titre": "« Je crois que non » — HACCP | FoodEatUp"
+      }
+    },
+    "promptVignette": "Photo réaliste, cadrage vertical 9:16, traitée comme une affiche de cinéma — film à suspense. Le chef de l'image de référence — MÊME visage, même barbe, même toque blanche, même veste de cuisine blanche, même tablier blanc au logo FoodEatUp bleu. Ne change ni ses traits ni sa morphologie. Son expression : inquiet, le regard qui va de l'assiette à la cuisine. Scène : « je crois que non ». « Il y a des fruits à coque dans le pesto ? » Décor : une table, une assiette de pâtes au pesto, un serveur qui se gratte la tête et une cliente qui attend. Lumière basse, une ombre portée nette sur le mur. Le chef occupe les deux tiers droits du cadre, en plan poitrine ; l'élément du cas reste visible à gauche. Bande crème #FCF9E6 en haut du cadre sur un cinquième de la hauteur, portant UNIQUEMENT le texte « JE CROIS QUE NON » en typographie arrondie très grasse, bleu marine #0F1A23, centré. Aucun autre texte, aucun logo ajouté, pas de filigrane, pas de bordure décorative.",
+    "higgsfieldPrompt": "Vertical 9:16, 10 seconds, photorealistic, cinematic handheld camera, shallow depth of field, natural light, 4K. NO text overlay, NO subtitles, NO watermark, NO logo.\n\nReference image attached — the FoodEatUp chef. Keep his exact face, beard, white toque, white chef jacket and white FoodEatUp apron. Do not alter his features or his build.\n\nSuspense pastiche, Hitchcock zoom and rising strings. A plate of green pesto pasta sits center frame. A customer looks at it, then up. A waiter shrugs, mouths something, disappears toward the kitchen. Slow push-in on the untouched plate. Nobody eats.\n\nAt 8 seconds the chef from the reference image steps into frame on the right, glancing from the plate to the kitchen door and back, and looks straight into the camera. Hold that look for the final 2 seconds.\n\nAudio: a rising string tremolo, cutlery, one held breath. No music.",
+    "scriptHeygen": null,
+    "kit": null,
+    "heygenPrompt": "Avatar : « Chef FoodEatUp » — votre avatar 3D, plan poitrine, regard caméra, fond vert (ou transparent).\nFormat : 1080 × 1920, 9:16, 25 images par seconde.\nVoix : française, masculine, débit posé, ton complice — le chef qui explique, pas celui qui vend.\nDurée visée : 9 secondes — c'est le segment 9,5 s → 18,5 s du master.\n\nScript, à coller tel quel :\n« « Je crois que non. » Trois mots qui n'engagent personne et qui rassurent encore moins. La bonne réponse, ce n'est pas une intuition : c'est une composition écrite. »\n\nRendu : aucun sous-titre, aucune incrustation, aucun logo, aucun décor de fond. Pas de musique. Le montage s'occupe de tout le reste.",
+    "montage": {
+      "consigne": "Monte EP188 : coupe le clip Higgsfield à 9,5 s, pose l'accroche « « Il y a des fruits à coque dans le pesto ? » » à 5,0 s, empile l'avatar HeyGen et la capture d'écran dans la tablette de 18,5 s à 28,5 s, ferme sur la signature et le sting. Sortie 1080×1920, 37,5 s, −14 LUFS.",
+      "segments": [
+        {
+          "titre": "Hook",
+          "debut": 0,
+          "fin": 9.5,
+          "contenu": "Le plan Higgsfield, recadré en 9:16. L'accroche « « Il y a des fruits à coque dans le pesto ? » » apparaît à 5,0 s, en bas du cadre."
+        },
+        {
+          "titre": "Transition de marque",
+          "debut": 9.5,
+          "fin": 18.5,
+          "contenu": "L'avatar HeyGen entre par la droite et prend la parole : « « Je crois que non. »"
+        },
+        {
+          "titre": "Démo logiciel",
+          "debut": 18.5,
+          "fin": 28.5,
+          "contenu": "La capture d'écran dans la tablette — la fiche technique du plat, sa liste d'ingrédients ligne à ligne, ouverte en salle sur une tablette. L'avatar reste en médaillon en bas à gauche."
+        },
+        {
+          "titre": "Signature",
+          "debut": 28.5,
+          "fin": 32.5,
+          "contenu": "Bandeau crème, la punchline « « Je crois que non » n'a jamais rassuré personne. », le logo FoodEatUp et le repère de saison « La commande · Film à suspense »."
+        },
+        {
+          "titre": "Sting",
+          "debut": 32.5,
+          "fin": 37.5,
+          "contenu": "Le sting de marque, « JE CROIS QUE NON » en incrustation, puis l'appel à l'action : https://site.foodeatup.com/ et le 06 14 18 92 25."
+        }
+      ],
+      "livrable": "1080 × 1920 · 37,5 s · H.264 · −14 LUFS · master versé dans la bibliothèque RapidoCMS, prêt à être programmé sur les cinq réseaux."
+    },
+    "metier": null,
+    "phase": null,
+    "amplitude": null,
+    "boucle": null,
+    "boucleSlug": null,
+    "grandeBoucle": null,
+    "incident": null,
+    "incidentHeure": null,
+    "incidentQuoi": null,
+    "saumon": null,
+    "story": {
+      "format": "9:16 · 1080 × 1920 · 10 s",
+      "hook": "« Il y a des fruits à coque dans le pesto ? »",
+      "punchline": "« Je crois que non » n'a jamais rassuré personne",
+      "url": null
+    },
+    "carrousel": null,
+    "imageFacebook": null,
+    "tutoriel": null
+  },
+  "EP189": {
+    "publications": {
+      "facebook": {
+        "legende": "« Avec du bacon en plus. » Noté sur le carnet. La cuisine ne le verra jamais. L'addition, si.\n\n« Avec du bacon en plus. » Le serveur l'écrit sur son carnet. La cuisine ne le voit jamais. L'addition, elle, le facture.\n\nLe supplément est porté par la ligne de commande, pas par un carnet : il arrive au KDS et sur le ticket en même temps.\n\n👉 Tout FoodEatUp : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "hashtags": [
+          "restaurant",
+          "restaurateur",
+          "kds",
+          "foodeatup",
+          "commande",
+          "supplement"
+        ],
+        "motsCles": [
+          "supplément commande",
+          "modificateur plat",
+          "KDS cuisine",
+          "prise de commande"
+        ],
+        "cta": "Découvrir FoodEatUp"
+      },
+      "instagram": {
+        "legende": "« Avec du bacon en plus. » Noté sur le carnet.\nLa cuisine ne le verra jamais. L'addition, si.\n\n« Avec du bacon en plus. » Le serveur l'écrit sur son carnet. La cuisine ne le voit jamais. L'addition, elle, le facture.\n\nLe supplément est porté par la ligne de commande, pas par un carnet : il arrive au KDS et sur le ticket en même temps.\n\nTomate Man en film de fantômes — saison 7, « Les Végé-Fruités font leur cinéma ».\nTout est expliqué sur notre site — lien en bio.\nUne démo ? 06 14 18 92 25",
+        "hashtags": [
+          "restaurant",
+          "restaurateur",
+          "kds",
+          "foodeatup",
+          "commande",
+          "supplement",
+          "vegefruites",
+          "coupdefeu",
+          "logicielrestaurant",
+          "vieDeResto"
+        ],
+        "motsCles": [
+          "supplément commande",
+          "modificateur plat",
+          "KDS cuisine",
+          "prise de commande"
+        ],
+        "cta": "Tout est en bio"
+      },
+      "tiktok": {
+        "legende": "« Avec du bacon en plus. » Noté sur le carnet.\nLa cuisine ne le verra jamais. L'addition, si.\n\n« Avec du bacon en plus. » Le serveur l'écrit sur son carnet. La cuisine ne le voit jamais. L'addition, elle, le facture.\n\nTomate Man en film de fantômes. 🎬",
+        "hashtags": [
+          "restaurant",
+          "restaurateur",
+          "kds",
+          "foodeatup",
+          "commande"
+        ],
+        "motsCles": [
+          "supplément commande",
+          "modificateur plat",
+          "KDS cuisine",
+          "prise de commande"
+        ],
+        "cta": "Lien en bio"
+      },
+      "linkedin": {
+        "legende": "« Avec du bacon en plus. » Noté sur le carnet.\n\n« Avec du bacon en plus. » Le serveur l'écrit sur son carnet. La cuisine ne le voit jamais. L'addition, elle, le facture.\n\nLe supplément est porté par la ligne de commande, pas par un carnet : il arrive au KDS et sur le ticket en même temps.\n\nConcrètement : Le supplément est porté par la ligne de commande, pas par un carnet. Il arrive au KDS et sur le ticket en même temps.\n\nEn savoir plus : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "hashtags": [
+          "restauration",
+          "foodeatup",
+          "kds",
+          "commande",
+          "supplement"
+        ],
+        "motsCles": [
+          "supplément commande",
+          "modificateur plat",
+          "KDS cuisine",
+          "prise de commande"
+        ],
+        "cta": "Découvrir FoodEatUp"
+      },
+      "youtube": {
+        "legende": "« Avec du bacon en plus. » Noté sur le carnet. La cuisine ne le verra jamais. L'addition, si.\n\n« Avec du bacon en plus. » Le serveur l'écrit sur son carnet. La cuisine ne le voit jamais. L'addition, elle, le facture.\n\nLe supplément est porté par la ligne de commande, pas par un carnet : il arrive au KDS et sur le ticket en même temps.\n\n— — —\n\n🔗 https://site.foodeatup.com/\n\n📞 Une démo ? 06 14 18 92 25\n🌐 foodeatup.com\n\nSérie « Le Coup de Feu » — saison 7 « Les Végé-Fruités font leur cinéma », épisode 9 sur 30.\nActe : La commande · Genre : Film de fantômes · À l'écran : Tomate Man\nModule Service · Les suppléments\n\nFoodEatUp est le logiciel qui réunit la caisse, le stock, les plannings, l'HACCP et le marketing d'un restaurant au même endroit.\n",
+        "hashtags": [
+          "Shorts",
+          "restaurant",
+          "restaurateur",
+          "kds",
+          "foodeatup",
+          "commande",
+          "supplement",
+          "coupdefeu"
+        ],
+        "motsCles": [
+          "supplément commande",
+          "modificateur plat",
+          "KDS cuisine",
+          "prise de commande"
+        ],
+        "cta": "Découvrir FoodEatUp",
+        "titre": "Le supplément fantôme — Service | FoodEatUp"
+      }
+    },
+    "promptVignette": "Photo réaliste, cadrage vertical 9:16, traitée comme une affiche de cinéma — film de fantômes. Le chef de l'image de référence — MÊME visage, même barbe, même toque blanche, même veste de cuisine blanche, même tablier blanc au logo FoodEatUp bleu. Ne change ni ses traits ni sa morphologie. Son expression : sceptique, un sourcil levé. Scène : le supplément fantôme. « Avec du bacon en plus. » Noté sur le carnet. Décor : un passe de cuisine, un ticket, et une assiette à laquelle il manque quelque chose. Lumière froide et vacillante, halo bleuté. Le chef occupe les deux tiers droits du cadre, en plan poitrine ; l'élément du cas reste visible à gauche. Bande crème #FCF9E6 en haut du cadre sur un cinquième de la hauteur, portant UNIQUEMENT le texte « SUPPLÉMENT FANTÔME » en typographie arrondie très grasse, bleu marine #0F1A23, centré. Aucun autre texte, aucun logo ajouté, pas de filigrane, pas de bordure décorative.",
+    "higgsfieldPrompt": "Vertical 9:16, 10 seconds, photorealistic, cinematic handheld camera, shallow depth of field, natural light, 4K. NO text overlay, NO subtitles, NO watermark, NO logo.\n\nReference image attached — the FoodEatUp chef. Keep his exact face, beard, white toque, white chef jacket and white FoodEatUp apron. Do not alter his features or his build.\n\nGhost-movie pastiche, cold desaturated light and a faint flicker. A waiter writes on a paper pad; the ink fades away letter by letter as we watch. The page goes blank. Cut to a kitchen pass where a plate is assembled without the extra. A receipt prints, charging for it.\n\nAt 8 seconds the chef from the reference image steps into frame on the right, raising one sceptical eyebrow, and looks straight into the camera. Hold that look for the final 2 seconds.\n\nAudio: a low hum, a flickering light buzz, a distant ticket printer. No music.",
+    "scriptHeygen": null,
+    "kit": null,
+    "heygenPrompt": "Avatar : « Chef FoodEatUp » — votre avatar 3D, plan poitrine, regard caméra, fond vert (ou transparent).\nFormat : 1080 × 1920, 9:16, 25 images par seconde.\nVoix : française, masculine, débit posé, ton complice — le chef qui explique, pas celui qui vend.\nDurée visée : 9 secondes — c'est le segment 9,5 s → 18,5 s du master.\n\nScript, à coller tel quel :\n« Le supplément existe à trois endroits : sur le carnet, dans la tête du serveur, et sur l'addition. Le seul endroit où il n'existe pas, c'est en cuisine. »\n\nRendu : aucun sous-titre, aucune incrustation, aucun logo, aucun décor de fond. Pas de musique. Le montage s'occupe de tout le reste.",
+    "montage": {
+      "consigne": "Monte EP189 : coupe le clip Higgsfield à 9,5 s, pose l'accroche « « Avec du bacon en plus. » Noté sur le carnet. » à 5,0 s, empile l'avatar HeyGen et la capture d'écran dans la tablette de 18,5 s à 28,5 s, ferme sur la signature et le sting. Sortie 1080×1920, 37,5 s, −14 LUFS.",
+      "segments": [
+        {
+          "titre": "Hook",
+          "debut": 0,
+          "fin": 9.5,
+          "contenu": "Le plan Higgsfield, recadré en 9:16. L'accroche « « Avec du bacon en plus. » Noté sur le carnet. » apparaît à 5,0 s, en bas du cadre."
+        },
+        {
+          "titre": "Transition de marque",
+          "debut": 9.5,
+          "fin": 18.5,
+          "contenu": "L'avatar HeyGen entre par la droite et prend la parole : « Le supplément existe à trois endroits : sur le carnet, dans la tête du serveur, et sur l'addition. »"
+        },
+        {
+          "titre": "Démo logiciel",
+          "debut": 18.5,
+          "fin": 28.5,
+          "contenu": "La capture d'écran dans la tablette — la ligne de commande avec son supplément coché, la même ligne au KDS, et le ticket avec le montant. L'avatar reste en médaillon en bas à gauche."
+        },
+        {
+          "titre": "Signature",
+          "debut": 28.5,
+          "fin": 32.5,
+          "contenu": "Bandeau crème, la punchline « La cuisine ne le verra jamais. L'addition, si. », le logo FoodEatUp et le repère de saison « La commande · Film de fantômes »."
+        },
+        {
+          "titre": "Sting",
+          "debut": 32.5,
+          "fin": 37.5,
+          "contenu": "Le sting de marque, « SUPPLÉMENT FANTÔME » en incrustation, puis l'appel à l'action : https://site.foodeatup.com/ et le 06 14 18 92 25."
+        }
+      ],
+      "livrable": "1080 × 1920 · 37,5 s · H.264 · −14 LUFS · master versé dans la bibliothèque RapidoCMS, prêt à être programmé sur les cinq réseaux."
+    },
+    "metier": null,
+    "phase": null,
+    "amplitude": null,
+    "boucle": null,
+    "boucleSlug": null,
+    "grandeBoucle": null,
+    "incident": null,
+    "incidentHeure": null,
+    "incidentQuoi": null,
+    "saumon": null,
+    "story": {
+      "format": "9:16 · 1080 × 1920 · 10 s",
+      "hook": "« Avec du bacon en plus. » Noté sur le carnet",
+      "punchline": "La cuisine ne le verra jamais. L'addition, si",
+      "url": null
+    },
+    "carrousel": null,
+    "imageFacebook": null,
+    "tutoriel": null
+  },
+  "EP190": {
+    "publications": {
+      "facebook": {
+        "legende": "Cinq demandes en une phrase. Le serveur en retient trois. Ce n'est pas sa mémoire. C'est son carnet.\n\n« Sans oignon, sauce à part, cuisson bleue, pain sans graines, et vous pouvez enlever la coriandre ? » Le serveur note trois choses sur cinq.\n\nChaque demande est un modificateur coché, pas une phrase à retenir. Les cinq arrivent au passe, dans l'ordre.\n\n👉 Tout FoodEatUp : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "hashtags": [
+          "restaurant",
+          "restaurateur",
+          "commande",
+          "foodeatup",
+          "kds",
+          "service"
+        ],
+        "motsCles": [
+          "modificateurs commande",
+          "personnalisation plat",
+          "prise de commande",
+          "KDS cuisine"
+        ],
+        "cta": "Découvrir FoodEatUp"
+      },
+      "instagram": {
+        "legende": "Cinq demandes en une phrase. Le serveur en retient trois.\nCe n'est pas sa mémoire. C'est son carnet.\n\n« Sans oignon, sauce à part, cuisson bleue, pain sans graines, et vous pouvez enlever la coriandre ? » Le serveur note trois choses sur cinq.\n\nChaque demande est un modificateur coché, pas une phrase à retenir. Les cinq arrivent au passe, dans l'ordre.\n\nDon Citrone en film à sketches — saison 7, « Les Végé-Fruités font leur cinéma ».\nTout est expliqué sur notre site — lien en bio.\nUne démo ? 06 14 18 92 25",
+        "hashtags": [
+          "restaurant",
+          "restaurateur",
+          "commande",
+          "foodeatup",
+          "kds",
+          "service",
+          "vegefruites",
+          "coupdefeu",
+          "logicielrestaurant",
+          "vieDeResto"
+        ],
+        "motsCles": [
+          "modificateurs commande",
+          "personnalisation plat",
+          "prise de commande",
+          "KDS cuisine"
+        ],
+        "cta": "Tout est en bio"
+      },
+      "tiktok": {
+        "legende": "Cinq demandes en une phrase. Le serveur en retient trois.\nCe n'est pas sa mémoire. C'est son carnet.\n\n« Sans oignon, sauce à part, cuisson bleue, pain sans graines, et vous pouvez enlever la coriandre ? » Le serveur note trois choses sur cinq.\n\nDon Citrone en film à sketches. 🎬",
+        "hashtags": [
+          "restaurant",
+          "restaurateur",
+          "commande",
+          "foodeatup",
+          "kds"
+        ],
+        "motsCles": [
+          "modificateurs commande",
+          "personnalisation plat",
+          "prise de commande",
+          "KDS cuisine"
+        ],
+        "cta": "Lien en bio"
+      },
+      "linkedin": {
+        "legende": "Cinq demandes en une phrase. Le serveur en retient trois.\n\n« Sans oignon, sauce à part, cuisson bleue, pain sans graines, et vous pouvez enlever la coriandre ? » Le serveur note trois choses sur cinq.\n\nChaque demande est un modificateur coché, pas une phrase à retenir. Les cinq arrivent au passe, dans l'ordre.\n\nConcrètement : Chaque demande est un modificateur coché, pas une phrase à retenir. Les cinq arrivent au passe, dans l'ordre, sur la même ligne.\n\nEn savoir plus : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "hashtags": [
+          "restauration",
+          "foodeatup",
+          "commande",
+          "kds",
+          "service"
+        ],
+        "motsCles": [
+          "modificateurs commande",
+          "personnalisation plat",
+          "prise de commande",
+          "KDS cuisine"
+        ],
+        "cta": "Découvrir FoodEatUp"
+      },
+      "youtube": {
+        "legende": "Cinq demandes en une phrase. Le serveur en retient trois. Ce n'est pas sa mémoire. C'est son carnet.\n\n« Sans oignon, sauce à part, cuisson bleue, pain sans graines, et vous pouvez enlever la coriandre ? » Le serveur note trois choses sur cinq.\n\nChaque demande est un modificateur coché, pas une phrase à retenir. Les cinq arrivent au passe, dans l'ordre.\n\n— — —\n\n🔗 https://site.foodeatup.com/\n\n📞 Une démo ? 06 14 18 92 25\n🌐 foodeatup.com\n\nSérie « Le Coup de Feu » — saison 7 « Les Végé-Fruités font leur cinéma », épisode 10 sur 30.\nActe : La commande · Genre : Film à sketches · À l'écran : Don Citrone\nModule Service · Les modificateurs\n\nFoodEatUp est le logiciel qui réunit la caisse, le stock, les plannings, l'HACCP et le marketing d'un restaurant au même endroit.\n",
+        "hashtags": [
+          "Shorts",
+          "restaurant",
+          "restaurateur",
+          "commande",
+          "foodeatup",
+          "kds",
+          "service",
+          "coupdefeu"
+        ],
+        "motsCles": [
+          "modificateurs commande",
+          "personnalisation plat",
+          "prise de commande",
+          "KDS cuisine"
+        ],
+        "cta": "Découvrir FoodEatUp",
+        "titre": "Le modificateur infini — Service | FoodEatUp"
+      }
+    },
+    "promptVignette": "Photo réaliste, cadrage vertical 9:16, traitée comme une affiche de cinéma — film à sketches. Le chef de l'image de référence — MÊME visage, même barbe, même toque blanche, même veste de cuisine blanche, même tablier blanc au logo FoodEatUp bleu. Ne change ni ses traits ni sa morphologie. Son expression : dépassé, le stylo en l'air. Scène : le modificateur infini. Cinq demandes en une phrase. Le serveur en retient trois. Décor : une table, un client volubile, un serveur dont le stylo n'avance plus assez vite. Lumière vive et frontale, couleurs franches. Le chef occupe les deux tiers droits du cadre, en plan poitrine ; l'élément du cas reste visible à gauche. Bande crème #FCF9E6 en haut du cadre sur un cinquième de la hauteur, portant UNIQUEMENT le texte « MODIFICATEUR INFINI » en typographie arrondie très grasse, bleu marine #0F1A23, centré. Aucun autre texte, aucun logo ajouté, pas de filigrane, pas de bordure décorative.",
+    "higgsfieldPrompt": "Vertical 9:16, 10 seconds, photorealistic, cinematic handheld camera, shallow depth of field, natural light, 4K. NO text overlay, NO subtitles, NO watermark, NO logo.\n\nReference image attached — the FoodEatUp chef. Keep his exact face, beard, white toque, white chef jacket and white FoodEatUp apron. Do not alter his features or his build.\n\nSketch-comedy pastiche, snappy cuts on each demand. A customer lists modifications, holding up fingers one by one, faster and faster. The waiter's pen scratches, stops, scratches again. On the fifth demand the pen runs out of ink. The waiter smiles and nods anyway.\n\nAt 8 seconds the chef from the reference image steps into frame on the right, holding a pen mid-air, overwhelmed, and looks straight into the camera. Hold that look for the final 2 seconds.\n\nAudio: brisk restaurant ambience, a pen scratching, one comedic beat of silence. No music.",
+    "scriptHeygen": null,
+    "kit": null,
+    "heygenPrompt": "Avatar : « Chef FoodEatUp » — votre avatar 3D, plan poitrine, regard caméra, fond vert (ou transparent).\nFormat : 1080 × 1920, 9:16, 25 images par seconde.\nVoix : française, masculine, débit posé, ton complice — le chef qui explique, pas celui qui vend.\nDurée visée : 9 secondes — c'est le segment 9,5 s → 18,5 s du master.\n\nScript, à coller tel quel :\n« Cinq demandes en une phrase, c'est normal. Un serveur qui en retient trois, c'est normal aussi. Le problème n'est pas humain : c'est qu'on lui demande de tenir cinq informations dans sa tête. »\n\nRendu : aucun sous-titre, aucune incrustation, aucun logo, aucun décor de fond. Pas de musique. Le montage s'occupe de tout le reste.",
+    "montage": {
+      "consigne": "Monte EP190 : coupe le clip Higgsfield à 9,5 s, pose l'accroche « Cinq demandes en une phrase. Le serveur en retient trois. » à 5,0 s, empile l'avatar HeyGen et la capture d'écran dans la tablette de 18,5 s à 28,5 s, ferme sur la signature et le sting. Sortie 1080×1920, 37,5 s, −14 LUFS.",
+      "segments": [
+        {
+          "titre": "Hook",
+          "debut": 0,
+          "fin": 9.5,
+          "contenu": "Le plan Higgsfield, recadré en 9:16. L'accroche « Cinq demandes en une phrase. Le serveur en retient trois. » apparaît à 5,0 s, en bas du cadre."
+        },
+        {
+          "titre": "Transition de marque",
+          "debut": 9.5,
+          "fin": 18.5,
+          "contenu": "L'avatar HeyGen entre par la droite et prend la parole : « Cinq demandes en une phrase, c'est normal. »"
+        },
+        {
+          "titre": "Démo logiciel",
+          "debut": 18.5,
+          "fin": 28.5,
+          "contenu": "La capture d'écran dans la tablette — la prise de commande avec ses cinq modificateurs cochés, puis la ligne complète affichée au passe. L'avatar reste en médaillon en bas à gauche."
+        },
+        {
+          "titre": "Signature",
+          "debut": 28.5,
+          "fin": 32.5,
+          "contenu": "Bandeau crème, la punchline « Ce n'est pas sa mémoire. C'est son carnet. », le logo FoodEatUp et le repère de saison « La commande · Film à sketches »."
+        },
+        {
+          "titre": "Sting",
+          "debut": 32.5,
+          "fin": 37.5,
+          "contenu": "Le sting de marque, « MODIFICATEUR INFINI » en incrustation, puis l'appel à l'action : https://site.foodeatup.com/ et le 06 14 18 92 25."
+        }
+      ],
+      "livrable": "1080 × 1920 · 37,5 s · H.264 · −14 LUFS · master versé dans la bibliothèque RapidoCMS, prêt à être programmé sur les cinq réseaux."
+    },
+    "metier": null,
+    "phase": null,
+    "amplitude": null,
+    "boucle": null,
+    "boucleSlug": null,
+    "grandeBoucle": null,
+    "incident": null,
+    "incidentHeure": null,
+    "incidentQuoi": null,
+    "saumon": null,
+    "story": {
+      "format": "9:16 · 1080 × 1920 · 10 s",
+      "hook": "Cinq demandes en une phrase. Le serveur en retient trois",
+      "punchline": "Ce n'est pas sa mémoire. C'est son carnet",
+      "url": null
+    },
+    "carrousel": null,
+    "imageFacebook": null,
+    "tutoriel": null
+  },
+  "EP191": {
+    "publications": {
+      "facebook": {
+        "legende": "« Qu'est-ce qu'il y a exactement dans ce plat ? » Le haussement d'épaules n'est pas une réponse.\n\nUn client suit un programme et demande ce que contient le plat. La réponse honnête, aujourd'hui, c'est un haussement d'épaules.\n\nLa fiche technique donne la composition et les quantités. — Réserve produit : aucun calcul nutritionnel n'existe aujourd'hui, l'épisode s'arrête donc à la composition.\n\n👉 Tout FoodEatUp : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "hashtags": [
+          "restaurant",
+          "restaurateur",
+          "fichetechnique",
+          "foodeatup",
+          "recette",
+          "coutmatiere"
+        ],
+        "motsCles": [
+          "fiche technique plat",
+          "composition recette",
+          "coût matière",
+          "gramme par portion"
+        ],
+        "cta": "Découvrir FoodEatUp"
+      },
+      "instagram": {
+        "legende": "« Qu'est-ce qu'il y a exactement dans ce plat ? »\nLe haussement d'épaules n'est pas une réponse.\n\nUn client suit un programme et demande ce que contient le plat. La réponse honnête, aujourd'hui, c'est un haussement d'épaules.\n\nLa fiche technique donne la composition et les quantités. — Réserve produit : aucun calcul nutritionnel n'existe aujourd'hui, l'épisode s'arrête donc à la composition.\n\nLa Carotte en film de procès — saison 7, « Les Végé-Fruités font leur cinéma ».\nTout est expliqué sur notre site — lien en bio.\nUne démo ? 06 14 18 92 25",
+        "hashtags": [
+          "restaurant",
+          "restaurateur",
+          "fichetechnique",
+          "foodeatup",
+          "recette",
+          "coutmatiere",
+          "vegefruites",
+          "coupdefeu",
+          "logicielrestaurant",
+          "vieDeResto"
+        ],
+        "motsCles": [
+          "fiche technique plat",
+          "composition recette",
+          "coût matière",
+          "gramme par portion"
+        ],
+        "cta": "Tout est en bio"
+      },
+      "tiktok": {
+        "legende": "« Qu'est-ce qu'il y a exactement dans ce plat ? »\nLe haussement d'épaules n'est pas une réponse.\n\nUn client suit un programme et demande ce que contient le plat. La réponse honnête, aujourd'hui, c'est un haussement d'épaules.\n\nLa Carotte en film de procès. 🎬",
+        "hashtags": [
+          "restaurant",
+          "restaurateur",
+          "fichetechnique",
+          "foodeatup",
+          "recette"
+        ],
+        "motsCles": [
+          "fiche technique plat",
+          "composition recette",
+          "coût matière",
+          "gramme par portion"
+        ],
+        "cta": "Lien en bio"
+      },
+      "linkedin": {
+        "legende": "« Qu'est-ce qu'il y a exactement dans ce plat ? »\n\nUn client suit un programme et demande ce que contient le plat. La réponse honnête, aujourd'hui, c'est un haussement d'épaules.\n\nLa fiche technique donne la composition et les quantités. — Réserve produit : aucun calcul nutritionnel n'existe aujourd'hui, l'épisode s'arrête donc à la composition.\n\nConcrètement : La fiche technique donne la composition et les quantités exactes du plat — ce qu'il contient, et ce qu'il coûte. Le calcul calorique, lui, reste à confirmer côté produit.\n\nEn savoir plus : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "hashtags": [
+          "restauration",
+          "foodeatup",
+          "fichetechnique",
+          "recette",
+          "coutmatiere"
+        ],
+        "motsCles": [
+          "fiche technique plat",
+          "composition recette",
+          "coût matière",
+          "gramme par portion"
+        ],
+        "cta": "Découvrir FoodEatUp"
+      },
+      "youtube": {
+        "legende": "« Qu'est-ce qu'il y a exactement dans ce plat ? » Le haussement d'épaules n'est pas une réponse.\n\nUn client suit un programme et demande ce que contient le plat. La réponse honnête, aujourd'hui, c'est un haussement d'épaules.\n\nLa fiche technique donne la composition et les quantités. — Réserve produit : aucun calcul nutritionnel n'existe aujourd'hui, l'épisode s'arrête donc à la composition.\n\n— — —\n\n🔗 https://site.foodeatup.com/\n\n📞 Une démo ? 06 14 18 92 25\n🌐 foodeatup.com\n\nSérie « Le Coup de Feu » — saison 7 « Les Végé-Fruités font leur cinéma », épisode 11 sur 30.\nActe : La commande · Genre : Film de procès · À l'écran : La Carotte\nModule StockVision · La fiche technique\n\nFoodEatUp est le logiciel qui réunit la caisse, le stock, les plannings, l'HACCP et le marketing d'un restaurant au même endroit.\n",
+        "hashtags": [
+          "Shorts",
+          "restaurant",
+          "restaurateur",
+          "fichetechnique",
+          "foodeatup",
+          "recette",
+          "coutmatiere",
+          "coupdefeu"
+        ],
+        "motsCles": [
+          "fiche technique plat",
+          "composition recette",
+          "coût matière",
+          "gramme par portion"
+        ],
+        "cta": "Découvrir FoodEatUp",
+        "titre": "Ce qu'il y a dedans — StockVision | FoodEatUp"
+      }
+    },
+    "promptVignette": "Photo réaliste, cadrage vertical 9:16, traitée comme une affiche de cinéma — film de procès. Le chef de l'image de référence — MÊME visage, même barbe, même toque blanche, même veste de cuisine blanche, même tablier blanc au logo FoodEatUp bleu. Ne change ni ses traits ni sa morphologie. Son expression : grave, les mains à plat sur la table. Scène : ce qu'il y a dedans. « Qu'est-ce qu'il y a exactement dans ce plat ? » Décor : une table, un client qui montre son téléphone, un serveur qui ne sait pas quoi répondre. Lumière dure venue du plafond, fond sombre. Le chef occupe les deux tiers droits du cadre, en plan poitrine ; l'élément du cas reste visible à gauche. Bande crème #FCF9E6 en haut du cadre sur un cinquième de la hauteur, portant UNIQUEMENT le texte « CE QU'IL Y A DEDANS » en typographie arrondie très grasse, bleu marine #0F1A23, centré. Aucun autre texte, aucun logo ajouté, pas de filigrane, pas de bordure décorative.",
+    "higgsfieldPrompt": "Vertical 9:16, 10 seconds, photorealistic, cinematic handheld camera, shallow depth of field, natural light, 4K. NO text overlay, NO subtitles, NO watermark, NO logo.\n\nReference image attached — the FoodEatUp chef. Keep his exact face, beard, white toque, white chef jacket and white FoodEatUp apron. Do not alter his features or his build.\n\nCourtroom-drama pastiche, hard key light and slow dramatic zoom. A customer points at a dish like presenting evidence. Reverse shot: the waiter, lit from below, opens his mouth and says nothing. A gavel sound. The dish sits alone in the frame, on trial.\n\nAt 8 seconds the chef from the reference image steps into frame on the right, placing both hands flat, deadly serious, and looks straight into the camera. Hold that look for the final 2 seconds.\n\nAudio: courtroom-style room tone, a single gavel knock, then silence. No music.",
+    "scriptHeygen": null,
+    "kit": null,
+    "heygenPrompt": "Avatar : « Chef FoodEatUp » — votre avatar 3D, plan poitrine, regard caméra, fond vert (ou transparent).\nFormat : 1080 × 1920, 9:16, 25 images par seconde.\nVoix : française, masculine, débit posé, ton complice — le chef qui explique, pas celui qui vend.\nDurée visée : 9 secondes — c'est le segment 9,5 s → 18,5 s du master.\n\nScript, à coller tel quel :\n« On vous demande ce qu'il y a dans l'assiette. Vous le savez : vous l'avez écrit quand vous avez fait la fiche. Le problème, c'est que la fiche est en cuisine et le client est en salle. »\n\nRendu : aucun sous-titre, aucune incrustation, aucun logo, aucun décor de fond. Pas de musique. Le montage s'occupe de tout le reste.",
+    "montage": {
+      "consigne": "Monte EP191 : coupe le clip Higgsfield à 9,5 s, pose l'accroche « « Qu'est-ce qu'il y a exactement dans ce plat ? » » à 5,0 s, empile l'avatar HeyGen et la capture d'écran dans la tablette de 18,5 s à 28,5 s, ferme sur la signature et le sting. Sortie 1080×1920, 37,5 s, −14 LUFS.",
+      "segments": [
+        {
+          "titre": "Hook",
+          "debut": 0,
+          "fin": 9.5,
+          "contenu": "Le plan Higgsfield, recadré en 9:16. L'accroche « « Qu'est-ce qu'il y a exactement dans ce plat ? » » apparaît à 5,0 s, en bas du cadre."
+        },
+        {
+          "titre": "Transition de marque",
+          "debut": 9.5,
+          "fin": 18.5,
+          "contenu": "L'avatar HeyGen entre par la droite et prend la parole : « On vous demande ce qu'il y a dans l'assiette. »"
+        },
+        {
+          "titre": "Démo logiciel",
+          "debut": 18.5,
+          "fin": 28.5,
+          "contenu": "La capture d'écran dans la tablette — la fiche technique du plat, ses ingrédients et leurs quantités, avec le coût matière calculé. L'avatar reste en médaillon en bas à gauche."
+        },
+        {
+          "titre": "Signature",
+          "debut": 28.5,
+          "fin": 32.5,
+          "contenu": "Bandeau crème, la punchline « Le haussement d'épaules n'est pas une réponse. », le logo FoodEatUp et le repère de saison « La commande · Film de procès »."
+        },
+        {
+          "titre": "Sting",
+          "debut": 32.5,
+          "fin": 37.5,
+          "contenu": "Le sting de marque, « CE QU'IL Y A DEDANS » en incrustation, puis l'appel à l'action : https://site.foodeatup.com/ et le 06 14 18 92 25."
+        }
+      ],
+      "livrable": "1080 × 1920 · 37,5 s · H.264 · −14 LUFS · master versé dans la bibliothèque RapidoCMS, prêt à être programmé sur les cinq réseaux."
+    },
+    "metier": null,
+    "phase": null,
+    "amplitude": null,
+    "boucle": null,
+    "boucleSlug": null,
+    "grandeBoucle": null,
+    "incident": null,
+    "incidentHeure": null,
+    "incidentQuoi": null,
+    "saumon": null,
+    "story": {
+      "format": "9:16 · 1080 × 1920 · 10 s",
+      "hook": "« Qu'est-ce qu'il y a exactement dans ce plat ? »",
+      "punchline": "Le haussement d'épaules n'est pas une réponse",
+      "url": null
+    },
+    "carrousel": null,
+    "imageFacebook": null,
+    "tutoriel": null
+  },
+  "EP192": {
+    "publications": {
+      "facebook": {
+        "legende": "Six ans qu'il vient le mardi. Même table. Le nouveau serveur lui demande s'il connaît la maison.\n\nSix ans qu'il vient le mardi, même table, même plat. Le nouveau serveur lui demande s'il connaît la maison.\n\nLe compte fidélité porte son historique. On le reconnaît même quand ce n'est pas la même personne qui le sert.\n\n👉 Tout FoodEatUp : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "hashtags": [
+          "restaurant",
+          "restaurateur",
+          "fidelite",
+          "foodeatup",
+          "client",
+          "habitue"
+        ],
+        "motsCles": [
+          "fidélité restaurant",
+          "fiche client",
+          "historique client",
+          "reconnaître un habitué"
+        ],
+        "cta": "Découvrir FoodEatUp"
+      },
+      "instagram": {
+        "legende": "Six ans qu'il vient le mardi. Même table.\nLe nouveau serveur lui demande s'il connaît la maison.\n\nSix ans qu'il vient le mardi, même table, même plat. Le nouveau serveur lui demande s'il connaît la maison.\n\nLe compte fidélité porte son historique. On le reconnaît même quand ce n'est pas la même personne qui le sert.\n\nLa Pomme de Terre en film de reconnaissance — saison 7, « Les Végé-Fruités font leur cinéma ».\nTout est expliqué sur notre site — lien en bio.\nUne démo ? 06 14 18 92 25",
+        "hashtags": [
+          "restaurant",
+          "restaurateur",
+          "fidelite",
+          "foodeatup",
+          "client",
+          "habitue",
+          "vegefruites",
+          "coupdefeu",
+          "logicielrestaurant",
+          "vieDeResto"
+        ],
+        "motsCles": [
+          "fidélité restaurant",
+          "fiche client",
+          "historique client",
+          "reconnaître un habitué"
+        ],
+        "cta": "Tout est en bio"
+      },
+      "tiktok": {
+        "legende": "Six ans qu'il vient le mardi. Même table.\nLe nouveau serveur lui demande s'il connaît la maison.\n\nSix ans qu'il vient le mardi, même table, même plat. Le nouveau serveur lui demande s'il connaît la maison.\n\nLa Pomme de Terre en film de reconnaissance. 🎬",
+        "hashtags": [
+          "restaurant",
+          "restaurateur",
+          "fidelite",
+          "foodeatup",
+          "client"
+        ],
+        "motsCles": [
+          "fidélité restaurant",
+          "fiche client",
+          "historique client",
+          "reconnaître un habitué"
+        ],
+        "cta": "Lien en bio"
+      },
+      "linkedin": {
+        "legende": "Six ans qu'il vient le mardi. Même table.\n\nSix ans qu'il vient le mardi, même table, même plat. Le nouveau serveur lui demande s'il connaît la maison.\n\nLe compte fidélité porte son historique. On le reconnaît même quand ce n'est pas la même personne qui le sert.\n\nConcrètement : Le compte fidélité porte son historique. On le reconnaît même quand ce n'est pas la même personne qui le sert.\n\nEn savoir plus : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "hashtags": [
+          "restauration",
+          "foodeatup",
+          "fidelite",
+          "client",
+          "habitue"
+        ],
+        "motsCles": [
+          "fidélité restaurant",
+          "fiche client",
+          "historique client",
+          "reconnaître un habitué"
+        ],
+        "cta": "Découvrir FoodEatUp"
+      },
+      "youtube": {
+        "legende": "Six ans qu'il vient le mardi. Même table. Le nouveau serveur lui demande s'il connaît la maison.\n\nSix ans qu'il vient le mardi, même table, même plat. Le nouveau serveur lui demande s'il connaît la maison.\n\nLe compte fidélité porte son historique. On le reconnaît même quand ce n'est pas la même personne qui le sert.\n\n— — —\n\n🔗 https://site.foodeatup.com/\n\n📞 Une démo ? 06 14 18 92 25\n🌐 foodeatup.com\n\nSérie « Le Coup de Feu » — saison 7 « Les Végé-Fruités font leur cinéma », épisode 12 sur 30.\nActe : La commande · Genre : Film de reconnaissance · À l'écran : La Pomme de Terre\nModule Marketing · Le compte fidélité\n\nFoodEatUp est le logiciel qui réunit la caisse, le stock, les plannings, l'HACCP et le marketing d'un restaurant au même endroit.\n",
+        "hashtags": [
+          "Shorts",
+          "restaurant",
+          "restaurateur",
+          "fidelite",
+          "foodeatup",
+          "client",
+          "habitue",
+          "coupdefeu"
+        ],
+        "motsCles": [
+          "fidélité restaurant",
+          "fiche client",
+          "historique client",
+          "reconnaître un habitué"
+        ],
+        "cta": "Découvrir FoodEatUp",
+        "titre": "Le client du mardi — Marketing | FoodEatUp"
+      }
+    },
+    "promptVignette": "Photo réaliste, cadrage vertical 9:16, traitée comme une affiche de cinéma — film de reconnaissance. Le chef de l'image de référence — MÊME visage, même barbe, même toque blanche, même veste de cuisine blanche, même tablier blanc au logo FoodEatUp bleu. Ne change ni ses traits ni sa morphologie. Son expression : ému malgré lui. Scène : le client du mardi. Six ans qu'il vient le mardi. Même table. Décor : une salle presque vide un mardi midi, un habitué à sa table, un serveur nouveau qui ouvre la carte. Lumière chaude et nostalgique de midi. Le chef occupe les deux tiers droits du cadre, en plan poitrine ; l'élément du cas reste visible à gauche. Bande crème #FCF9E6 en haut du cadre sur un cinquième de la hauteur, portant UNIQUEMENT le texte « LE CLIENT DU MARDI » en typographie arrondie très grasse, bleu marine #0F1A23, centré. Aucun autre texte, aucun logo ajouté, pas de filigrane, pas de bordure décorative.",
+    "higgsfieldPrompt": "Vertical 9:16, 10 seconds, photorealistic, cinematic handheld camera, shallow depth of field, natural light, 4K. NO text overlay, NO subtitles, NO watermark, NO logo.\n\nReference image attached — the FoodEatUp chef. Keep his exact face, beard, white toque, white chef jacket and white FoodEatUp apron. Do not alter his features or his build.\n\nRecognition-drama pastiche, warm nostalgic grade with a slow track along the wall. A regular sits at the same corner table, coat on the same hook. A new waiter approaches and hands him a menu he has known for six years. The regular takes it politely. Freeze on his face.\n\nAt 8 seconds the chef from the reference image steps into frame on the right, moved despite himself, and looks straight into the camera. Hold that look for the final 2 seconds.\n\nAudio: quiet lunchtime ambience, a chair scraping, a wall clock. No music.",
+    "scriptHeygen": null,
+    "kit": null,
+    "heygenPrompt": "Avatar : « Chef FoodEatUp » — votre avatar 3D, plan poitrine, regard caméra, fond vert (ou transparent).\nFormat : 1080 × 1920, 9:16, 25 images par seconde.\nVoix : française, masculine, débit posé, ton complice — le chef qui explique, pas celui qui vend.\nDurée visée : 9 secondes — c'est le segment 9,5 s → 18,5 s du master.\n\nScript, à coller tel quel :\n« Six ans, même jour, même table. Et on lui tend la carte comme à un inconnu. La reconnaissance, ce n'est pas de la mémoire : c'est une fiche que le nouveau peut lire. »\n\nRendu : aucun sous-titre, aucune incrustation, aucun logo, aucun décor de fond. Pas de musique. Le montage s'occupe de tout le reste.",
+    "montage": {
+      "consigne": "Monte EP192 : coupe le clip Higgsfield à 9,5 s, pose l'accroche « Six ans qu'il vient le mardi. Même table. » à 5,0 s, empile l'avatar HeyGen et la capture d'écran dans la tablette de 18,5 s à 28,5 s, ferme sur la signature et le sting. Sortie 1080×1920, 37,5 s, −14 LUFS.",
+      "segments": [
+        {
+          "titre": "Hook",
+          "debut": 0,
+          "fin": 9.5,
+          "contenu": "Le plan Higgsfield, recadré en 9:16. L'accroche « Six ans qu'il vient le mardi. Même table. » apparaît à 5,0 s, en bas du cadre."
+        },
+        {
+          "titre": "Transition de marque",
+          "debut": 9.5,
+          "fin": 18.5,
+          "contenu": "L'avatar HeyGen entre par la droite et prend la parole : « Six ans, même jour, même table. »"
+        },
+        {
+          "titre": "Démo logiciel",
+          "debut": 18.5,
+          "fin": 28.5,
+          "contenu": "La capture d'écran dans la tablette — la fiche client, son historique de visites, son plat habituel et son solde de points. L'avatar reste en médaillon en bas à gauche."
+        },
+        {
+          "titre": "Signature",
+          "debut": 28.5,
+          "fin": 32.5,
+          "contenu": "Bandeau crème, la punchline « Le nouveau serveur lui demande s'il connaît la maison. », le logo FoodEatUp et le repère de saison « La commande · Film de reconnaissance »."
+        },
+        {
+          "titre": "Sting",
+          "debut": 32.5,
+          "fin": 37.5,
+          "contenu": "Le sting de marque, « LE CLIENT DU MARDI » en incrustation, puis l'appel à l'action : https://site.foodeatup.com/ et le 06 14 18 92 25."
+        }
+      ],
+      "livrable": "1080 × 1920 · 37,5 s · H.264 · −14 LUFS · master versé dans la bibliothèque RapidoCMS, prêt à être programmé sur les cinq réseaux."
+    },
+    "metier": null,
+    "phase": null,
+    "amplitude": null,
+    "boucle": null,
+    "boucleSlug": null,
+    "grandeBoucle": null,
+    "incident": null,
+    "incidentHeure": null,
+    "incidentQuoi": null,
+    "saumon": null,
+    "story": {
+      "format": "9:16 · 1080 × 1920 · 10 s",
+      "hook": "Six ans qu'il vient le mardi. Même table",
+      "punchline": "Le nouveau serveur lui demande s'il connaît la maison",
+      "url": null
+    },
+    "carrousel": null,
+    "imageFacebook": null,
+    "tutoriel": null
+  },
+  "EP193": {
+    "publications": {
+      "facebook": {
+        "legende": "L'assiette arrive. Ce n'est pas le bon plat. Carnet, voix, mémoire : on ne saura jamais où ça s'est perdu.\n\nL'assiette arrive. Ce n'est pas le bon plat. Personne ne peut dire où la commande s'est perdue — carnet, voix, mémoire, on ne saura pas.\n\nLe KDS affiche la commande telle qu'elle a été saisie. Ce qui part de la table est ce qui arrive au passe : plus de zone grise à enquêter.\n\n👉 Tout FoodEatUp : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "hashtags": [
+          "restaurant",
+          "restaurateur",
+          "kds",
+          "foodeatup",
+          "cuisine",
+          "commande"
+        ],
+        "motsCles": [
+          "KDS cuisine",
+          "erreur de commande",
+          "écran cuisine",
+          "commande en cuisine"
+        ],
+        "cta": "Découvrir FoodEatUp"
+      },
+      "instagram": {
+        "legende": "L'assiette arrive. Ce n'est pas le bon plat.\nCarnet, voix, mémoire : on ne saura jamais où ça s'est perdu.\n\nL'assiette arrive. Ce n'est pas le bon plat. Personne ne peut dire où la commande s'est perdue — carnet, voix, mémoire, on ne saura pas.\n\nLe KDS affiche la commande telle qu'elle a été saisie. Ce qui part de la table est ce qui arrive au passe : plus de zone grise à enquêter.\n\nTomate Man en film policier — saison 7, « Les Végé-Fruités font leur cinéma ».\nTout est expliqué sur notre site — lien en bio.\nUne démo ? 06 14 18 92 25",
+        "hashtags": [
+          "restaurant",
+          "restaurateur",
+          "kds",
+          "foodeatup",
+          "cuisine",
+          "commande",
+          "vegefruites",
+          "coupdefeu",
+          "logicielrestaurant",
+          "vieDeResto"
+        ],
+        "motsCles": [
+          "KDS cuisine",
+          "erreur de commande",
+          "écran cuisine",
+          "commande en cuisine"
+        ],
+        "cta": "Tout est en bio"
+      },
+      "tiktok": {
+        "legende": "L'assiette arrive. Ce n'est pas le bon plat.\nCarnet, voix, mémoire : on ne saura jamais où ça s'est perdu.\n\nL'assiette arrive. Ce n'est pas le bon plat. Personne ne peut dire où la commande s'est perdue — carnet, voix, mémoire, on ne saura pas.\n\nTomate Man en film policier. 🎬",
+        "hashtags": [
+          "restaurant",
+          "restaurateur",
+          "kds",
+          "foodeatup",
+          "cuisine"
+        ],
+        "motsCles": [
+          "KDS cuisine",
+          "erreur de commande",
+          "écran cuisine",
+          "commande en cuisine"
+        ],
+        "cta": "Lien en bio"
+      },
+      "linkedin": {
+        "legende": "L'assiette arrive. Ce n'est pas le bon plat.\n\nL'assiette arrive. Ce n'est pas le bon plat. Personne ne peut dire où la commande s'est perdue — carnet, voix, mémoire, on ne saura pas.\n\nLe KDS affiche la commande telle qu'elle a été saisie. Ce qui part de la table est ce qui arrive au passe : plus de zone grise à enquêter.\n\nConcrètement : Le KDS affiche la commande telle qu'elle a été saisie. Ce qui part de la table est ce qui arrive au passe — il n'y a plus de zone grise à enquêter.\n\nEn savoir plus : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "hashtags": [
+          "restauration",
+          "foodeatup",
+          "kds",
+          "cuisine",
+          "commande"
+        ],
+        "motsCles": [
+          "KDS cuisine",
+          "erreur de commande",
+          "écran cuisine",
+          "commande en cuisine"
+        ],
+        "cta": "Découvrir FoodEatUp"
+      },
+      "youtube": {
+        "legende": "L'assiette arrive. Ce n'est pas le bon plat. Carnet, voix, mémoire : on ne saura jamais où ça s'est perdu.\n\nL'assiette arrive. Ce n'est pas le bon plat. Personne ne peut dire où la commande s'est perdue — carnet, voix, mémoire, on ne saura pas.\n\nLe KDS affiche la commande telle qu'elle a été saisie. Ce qui part de la table est ce qui arrive au passe : plus de zone grise à enquêter.\n\n— — —\n\n🔗 https://site.foodeatup.com/\n\n📞 Une démo ? 06 14 18 92 25\n🌐 foodeatup.com\n\nSérie « Le Coup de Feu » — saison 7 « Les Végé-Fruités font leur cinéma », épisode 13 sur 30.\nActe : Le passe · Genre : Film policier · À l'écran : Tomate Man\nModule KDS · La commande telle qu'elle a été saisie\n\nFoodEatUp est le logiciel qui réunit la caisse, le stock, les plannings, l'HACCP et le marketing d'un restaurant au même endroit.\n",
+        "hashtags": [
+          "Shorts",
+          "restaurant",
+          "restaurateur",
+          "kds",
+          "foodeatup",
+          "cuisine",
+          "commande",
+          "coupdefeu"
+        ],
+        "motsCles": [
+          "KDS cuisine",
+          "erreur de commande",
+          "écran cuisine",
+          "commande en cuisine"
+        ],
+        "cta": "Découvrir FoodEatUp",
+        "titre": "Ce n'est pas ce que j'ai commandé — KDS | FoodEatUp"
+      }
+    },
+    "promptVignette": "Photo réaliste, cadrage vertical 9:16, traitée comme une affiche de cinéma — film policier. Le chef de l'image de référence — MÊME visage, même barbe, même toque blanche, même veste de cuisine blanche, même tablier blanc au logo FoodEatUp bleu. Ne change ni ses traits ni sa morphologie. Son expression : l'air de celui qui mène l'enquête. Scène : ce n'est pas ce que j'ai commandé. L'assiette arrive. Ce n'est pas le bon plat. Décor : une table, une assiette qu'on repousse doucement, un serveur qui repart avec. Ombres de stores, lumière latérale dure. Le chef occupe les deux tiers droits du cadre, en plan poitrine ; l'élément du cas reste visible à gauche. Bande crème #FCF9E6 en haut du cadre sur un cinquième de la hauteur, portant UNIQUEMENT le texte « PAS MA COMMANDE » en typographie arrondie très grasse, bleu marine #0F1A23, centré. Aucun autre texte, aucun logo ajouté, pas de filigrane, pas de bordure décorative.",
+    "higgsfieldPrompt": "Vertical 9:16, 10 seconds, photorealistic, cinematic handheld camera, shallow depth of field, natural light, 4K. NO text overlay, NO subtitles, NO watermark, NO logo.\n\nReference image attached — the FoodEatUp chef. Keep his exact face, beard, white toque, white chef jacket and white FoodEatUp apron. Do not alter his features or his build.\n\nDetective-film pastiche, hard shadows through blinds and a slow investigative pan. A plate lands on a table. The customer looks at it, then at the waiter, and shakes their head once. The waiter picks the plate back up. Cut to a corkboard where three red strings lead nowhere.\n\nAt 8 seconds the chef from the reference image steps into frame on the right, looking straight down the lens like an inspector, and looks straight into the camera. Hold that look for the final 2 seconds.\n\nAudio: noir room tone, a plate set down, a slow drum. No music.",
+    "scriptHeygen": null,
+    "kit": null,
+    "heygenPrompt": "Avatar : « Chef FoodEatUp » — votre avatar 3D, plan poitrine, regard caméra, fond vert (ou transparent).\nFormat : 1080 × 1920, 9:16, 25 images par seconde.\nVoix : française, masculine, débit posé, ton complice — le chef qui explique, pas celui qui vend.\nDurée visée : 9 secondes — c'est le segment 9,5 s → 18,5 s du master.\n\nScript, à coller tel quel :\n« Le mauvais plat, ce n'est jamais la faute de quelqu'un en particulier. C'est la faute de la chaîne : entre la table et le passe, la commande a changé de forme trois fois. »\n\nRendu : aucun sous-titre, aucune incrustation, aucun logo, aucun décor de fond. Pas de musique. Le montage s'occupe de tout le reste.",
+    "montage": {
+      "consigne": "Monte EP193 : coupe le clip Higgsfield à 9,5 s, pose l'accroche « L'assiette arrive. Ce n'est pas le bon plat. » à 5,0 s, empile l'avatar HeyGen et la capture d'écran dans la tablette de 18,5 s à 28,5 s, ferme sur la signature et le sting. Sortie 1080×1920, 37,5 s, −14 LUFS.",
+      "segments": [
+        {
+          "titre": "Hook",
+          "debut": 0,
+          "fin": 9.5,
+          "contenu": "Le plan Higgsfield, recadré en 9:16. L'accroche « L'assiette arrive. Ce n'est pas le bon plat. » apparaît à 5,0 s, en bas du cadre."
+        },
+        {
+          "titre": "Transition de marque",
+          "debut": 9.5,
+          "fin": 18.5,
+          "contenu": "L'avatar HeyGen entre par la droite et prend la parole : « Le mauvais plat, ce n'est jamais la faute de quelqu'un en particulier. »"
+        },
+        {
+          "titre": "Démo logiciel",
+          "debut": 18.5,
+          "fin": 28.5,
+          "contenu": "La capture d'écran dans la tablette — le ticket au KDS, ligne à ligne, identique à ce qui a été saisi en salle. L'avatar reste en médaillon en bas à gauche."
+        },
+        {
+          "titre": "Signature",
+          "debut": 28.5,
+          "fin": 32.5,
+          "contenu": "Bandeau crème, la punchline « Carnet, voix, mémoire : on ne saura jamais où ça s'est perdu. », le logo FoodEatUp et le repère de saison « Le passe · Film policier »."
+        },
+        {
+          "titre": "Sting",
+          "debut": 32.5,
+          "fin": 37.5,
+          "contenu": "Le sting de marque, « PAS MA COMMANDE » en incrustation, puis l'appel à l'action : https://site.foodeatup.com/ et le 06 14 18 92 25."
+        }
+      ],
+      "livrable": "1080 × 1920 · 37,5 s · H.264 · −14 LUFS · master versé dans la bibliothèque RapidoCMS, prêt à être programmé sur les cinq réseaux."
+    },
+    "metier": null,
+    "phase": null,
+    "amplitude": null,
+    "boucle": null,
+    "boucleSlug": null,
+    "grandeBoucle": null,
+    "incident": null,
+    "incidentHeure": null,
+    "incidentQuoi": null,
+    "saumon": null,
+    "story": {
+      "format": "9:16 · 1080 × 1920 · 10 s",
+      "hook": "L'assiette arrive. Ce n'est pas le bon plat",
+      "punchline": "Carnet, voix, mémoire : on ne saura jamais où ça s'est perdu",
+      "url": null
+    },
+    "carrousel": null,
+    "imageFacebook": null,
+    "tutoriel": null
+  },
+  "EP194": {
+    "publications": {
+      "facebook": {
+        "legende": "Le ticket a bourré. La commande n'existe plus. La table attend, et personne ne sait qu'elle attend.\n\nLe ticket a bourré. La commande n'existe plus nulle part. La table attend, et personne ne sait qu'elle attend.\n\nLe KDS remplace le papier. Une commande qu'on n'a pas encore envoyée reste à l'écran, en rouge.\n\n👉 Tout FoodEatUp : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "hashtags": [
+          "restaurant",
+          "restaurateur",
+          "kds",
+          "foodeatup",
+          "cuisine",
+          "ticket"
+        ],
+        "motsCles": [
+          "KDS cuisine",
+          "ticket cuisine",
+          "imprimante restaurant",
+          "écran de production"
+        ],
+        "cta": "Découvrir FoodEatUp"
+      },
+      "instagram": {
+        "legende": "Le ticket a bourré. La commande n'existe plus.\nLa table attend, et personne ne sait qu'elle attend.\n\nLe ticket a bourré. La commande n'existe plus nulle part. La table attend, et personne ne sait qu'elle attend.\n\nLe KDS remplace le papier. Une commande qu'on n'a pas encore envoyée reste à l'écran, en rouge.\n\nTomate Man en film catastrophe — saison 7, « Les Végé-Fruités font leur cinéma ».\nTout est expliqué sur notre site — lien en bio.\nUne démo ? 06 14 18 92 25",
+        "hashtags": [
+          "restaurant",
+          "restaurateur",
+          "kds",
+          "foodeatup",
+          "cuisine",
+          "ticket",
+          "vegefruites",
+          "coupdefeu",
+          "logicielrestaurant",
+          "vieDeResto"
+        ],
+        "motsCles": [
+          "KDS cuisine",
+          "ticket cuisine",
+          "imprimante restaurant",
+          "écran de production"
+        ],
+        "cta": "Tout est en bio"
+      },
+      "tiktok": {
+        "legende": "Le ticket a bourré. La commande n'existe plus.\nLa table attend, et personne ne sait qu'elle attend.\n\nLe ticket a bourré. La commande n'existe plus nulle part. La table attend, et personne ne sait qu'elle attend.\n\nTomate Man en film catastrophe. 🎬",
+        "hashtags": [
+          "restaurant",
+          "restaurateur",
+          "kds",
+          "foodeatup",
+          "cuisine"
+        ],
+        "motsCles": [
+          "KDS cuisine",
+          "ticket cuisine",
+          "imprimante restaurant",
+          "écran de production"
+        ],
+        "cta": "Lien en bio"
+      },
+      "linkedin": {
+        "legende": "Le ticket a bourré. La commande n'existe plus.\n\nLe ticket a bourré. La commande n'existe plus nulle part. La table attend, et personne ne sait qu'elle attend.\n\nLe KDS remplace le papier. Une commande qu'on n'a pas encore envoyée reste à l'écran, en rouge.\n\nConcrètement : Le KDS remplace le papier. Une commande qu'on n'a pas encore envoyée reste à l'écran, en rouge, jusqu'à ce que quelqu'un la prenne.\n\nEn savoir plus : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "hashtags": [
+          "restauration",
+          "foodeatup",
+          "kds",
+          "cuisine",
+          "ticket"
+        ],
+        "motsCles": [
+          "KDS cuisine",
+          "ticket cuisine",
+          "imprimante restaurant",
+          "écran de production"
+        ],
+        "cta": "Découvrir FoodEatUp"
+      },
+      "youtube": {
+        "legende": "Le ticket a bourré. La commande n'existe plus. La table attend, et personne ne sait qu'elle attend.\n\nLe ticket a bourré. La commande n'existe plus nulle part. La table attend, et personne ne sait qu'elle attend.\n\nLe KDS remplace le papier. Une commande qu'on n'a pas encore envoyée reste à l'écran, en rouge.\n\n— — —\n\n🔗 https://site.foodeatup.com/\n\n📞 Une démo ? 06 14 18 92 25\n🌐 foodeatup.com\n\nSérie « Le Coup de Feu » — saison 7 « Les Végé-Fruités font leur cinéma », épisode 14 sur 30.\nActe : Le passe · Genre : Film catastrophe · À l'écran : Tomate Man\nModule KDS · La fin du ticket papier\n\nFoodEatUp est le logiciel qui réunit la caisse, le stock, les plannings, l'HACCP et le marketing d'un restaurant au même endroit.\n",
+        "hashtags": [
+          "Shorts",
+          "restaurant",
+          "restaurateur",
+          "kds",
+          "foodeatup",
+          "cuisine",
+          "ticket",
+          "coupdefeu"
+        ],
+        "motsCles": [
+          "KDS cuisine",
+          "ticket cuisine",
+          "imprimante restaurant",
+          "écran de production"
+        ],
+        "cta": "Découvrir FoodEatUp",
+        "titre": "L'imprimante a gagné — KDS | FoodEatUp"
+      }
+    },
+    "promptVignette": "Photo réaliste, cadrage vertical 9:16, traitée comme une affiche de cinéma — film catastrophe. Le chef de l'image de référence — MÊME visage, même barbe, même toque blanche, même veste de cuisine blanche, même tablier blanc au logo FoodEatUp bleu. Ne change ni ses traits ni sa morphologie. Son expression : les yeux écarquillés devant le désastre. Scène : l'imprimante a gagné. Le ticket a bourré. La commande n'existe plus. Décor : un passe de cuisine, une imprimante à tickets bloquée, du papier froissé qui déborde. Lumière rouge d'alarme, fumée légère. Le chef occupe les deux tiers droits du cadre, en plan poitrine ; l'élément du cas reste visible à gauche. Bande crème #FCF9E6 en haut du cadre sur un cinquième de la hauteur, portant UNIQUEMENT le texte « L'IMPRIMANTE A GAGNÉ » en typographie arrondie très grasse, bleu marine #0F1A23, centré. Aucun autre texte, aucun logo ajouté, pas de filigrane, pas de bordure décorative.",
+    "higgsfieldPrompt": "Vertical 9:16, 10 seconds, photorealistic, cinematic handheld camera, shallow depth of field, natural light, 4K. NO text overlay, NO subtitles, NO watermark, NO logo.\n\nReference image attached — the FoodEatUp chef. Keep his exact face, beard, white toque, white chef jacket and white FoodEatUp apron. Do not alter his features or his build.\n\nDisaster-movie pastiche, alarm-red lighting and shaky camera. A kitchen ticket printer jams, spitting crumpled paper that piles onto the floor. Steam rises behind it. A cook stares at the growing pile. Wide shot: a full dining room, entirely calm, waiting.\n\nAt 8 seconds the chef from the reference image steps into frame on the right, eyes wide at the disaster, and looks straight into the camera. Hold that look for the final 2 seconds.\n\nAudio: alarm beeping, a printer grinding, kitchen chaos. No music.",
+    "scriptHeygen": null,
+    "kit": null,
+    "heygenPrompt": "Avatar : « Chef FoodEatUp » — votre avatar 3D, plan poitrine, regard caméra, fond vert (ou transparent).\nFormat : 1080 × 1920, 9:16, 25 images par seconde.\nVoix : française, masculine, débit posé, ton complice — le chef qui explique, pas celui qui vend.\nDurée visée : 9 secondes — c'est le segment 9,5 s → 18,5 s du master.\n\nScript, à coller tel quel :\n« L'imprimante gagne à peu près une fois par service. Et quand elle gagne, la commande disparaît — pas retardée, disparue. Personne ne peut chercher ce qui n'existe nulle part. »\n\nRendu : aucun sous-titre, aucune incrustation, aucun logo, aucun décor de fond. Pas de musique. Le montage s'occupe de tout le reste.",
+    "montage": {
+      "consigne": "Monte EP194 : coupe le clip Higgsfield à 9,5 s, pose l'accroche « Le ticket a bourré. La commande n'existe plus. » à 5,0 s, empile l'avatar HeyGen et la capture d'écran dans la tablette de 18,5 s à 28,5 s, ferme sur la signature et le sting. Sortie 1080×1920, 37,5 s, −14 LUFS.",
+      "segments": [
+        {
+          "titre": "Hook",
+          "debut": 0,
+          "fin": 9.5,
+          "contenu": "Le plan Higgsfield, recadré en 9:16. L'accroche « Le ticket a bourré. La commande n'existe plus. » apparaît à 5,0 s, en bas du cadre."
+        },
+        {
+          "titre": "Transition de marque",
+          "debut": 9.5,
+          "fin": 18.5,
+          "contenu": "L'avatar HeyGen entre par la droite et prend la parole : « L'imprimante gagne à peu près une fois par service. »"
+        },
+        {
+          "titre": "Démo logiciel",
+          "debut": 18.5,
+          "fin": 28.5,
+          "contenu": "La capture d'écran dans la tablette — le KDS avec ses tickets à l'écran, un ticket non envoyé qui passe en rouge. L'avatar reste en médaillon en bas à gauche."
+        },
+        {
+          "titre": "Signature",
+          "debut": 28.5,
+          "fin": 32.5,
+          "contenu": "Bandeau crème, la punchline « La table attend, et personne ne sait qu'elle attend. », le logo FoodEatUp et le repère de saison « Le passe · Film catastrophe »."
+        },
+        {
+          "titre": "Sting",
+          "debut": 32.5,
+          "fin": 37.5,
+          "contenu": "Le sting de marque, « L'IMPRIMANTE A GAGNÉ » en incrustation, puis l'appel à l'action : https://site.foodeatup.com/ et le 06 14 18 92 25."
+        }
+      ],
+      "livrable": "1080 × 1920 · 37,5 s · H.264 · −14 LUFS · master versé dans la bibliothèque RapidoCMS, prêt à être programmé sur les cinq réseaux."
+    },
+    "metier": null,
+    "phase": null,
+    "amplitude": null,
+    "boucle": null,
+    "boucleSlug": null,
+    "grandeBoucle": null,
+    "incident": null,
+    "incidentHeure": null,
+    "incidentQuoi": null,
+    "saumon": null,
+    "story": {
+      "format": "9:16 · 1080 × 1920 · 10 s",
+      "hook": "Le ticket a bourré. La commande n'existe plus",
+      "punchline": "La table attend, et personne ne sait qu'elle attend",
+      "url": null
+    },
+    "carrousel": null,
+    "imageFacebook": null,
+    "tutoriel": null
+  },
+  "EP195": {
+    "publications": {
+      "facebook": {
+        "legende": "La table 6 attend depuis vingt-deux minutes. La salle croit que ça part. La cuisine croit que c'est servi.\n\nLa table 6 attend depuis vingt-deux minutes. Le serveur croit que ça part, la cuisine croit que c'est servi.\n\nLe KDS compte le temps de chaque ticket, et la charge par poste dit lequel bouchonne. Le retard se voit avant la réclamation.\n\n👉 Tout FoodEatUp : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "hashtags": [
+          "restaurant",
+          "restaurateur",
+          "kds",
+          "foodeatup",
+          "service",
+          "temps"
+        ],
+        "motsCles": [
+          "temps de service",
+          "KDS cuisine",
+          "charge par poste",
+          "retard en cuisine"
+        ],
+        "cta": "Découvrir FoodEatUp"
+      },
+      "instagram": {
+        "legende": "La table 6 attend depuis vingt-deux minutes.\nLa salle croit que ça part. La cuisine croit que c'est servi.\n\nLa table 6 attend depuis vingt-deux minutes. Le serveur croit que ça part, la cuisine croit que c'est servi.\n\nLe KDS compte le temps de chaque ticket, et la charge par poste dit lequel bouchonne. Le retard se voit avant la réclamation.\n\nLe Navet en film sportif — saison 7, « Les Végé-Fruités font leur cinéma ».\nTout est expliqué sur notre site — lien en bio.\nUne démo ? 06 14 18 92 25",
+        "hashtags": [
+          "restaurant",
+          "restaurateur",
+          "kds",
+          "foodeatup",
+          "service",
+          "temps",
+          "vegefruites",
+          "coupdefeu",
+          "logicielrestaurant",
+          "vieDeResto"
+        ],
+        "motsCles": [
+          "temps de service",
+          "KDS cuisine",
+          "charge par poste",
+          "retard en cuisine"
+        ],
+        "cta": "Tout est en bio"
+      },
+      "tiktok": {
+        "legende": "La table 6 attend depuis vingt-deux minutes.\nLa salle croit que ça part. La cuisine croit que c'est servi.\n\nLa table 6 attend depuis vingt-deux minutes. Le serveur croit que ça part, la cuisine croit que c'est servi.\n\nLe Navet en film sportif. 🎬",
+        "hashtags": [
+          "restaurant",
+          "restaurateur",
+          "kds",
+          "foodeatup",
+          "service"
+        ],
+        "motsCles": [
+          "temps de service",
+          "KDS cuisine",
+          "charge par poste",
+          "retard en cuisine"
+        ],
+        "cta": "Lien en bio"
+      },
+      "linkedin": {
+        "legende": "La table 6 attend depuis vingt-deux minutes.\n\nLa table 6 attend depuis vingt-deux minutes. Le serveur croit que ça part, la cuisine croit que c'est servi.\n\nLe KDS compte le temps de chaque ticket, et la charge par poste dit lequel bouchonne. Le retard se voit avant la réclamation.\n\nConcrètement : Le KDS compte le temps de chaque ticket, et la charge par poste dit lequel bouchonne. Le retard se voit avant la réclamation.\n\nEn savoir plus : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "hashtags": [
+          "restauration",
+          "foodeatup",
+          "kds",
+          "service",
+          "temps"
+        ],
+        "motsCles": [
+          "temps de service",
+          "KDS cuisine",
+          "charge par poste",
+          "retard en cuisine"
+        ],
+        "cta": "Découvrir FoodEatUp"
+      },
+      "youtube": {
+        "legende": "La table 6 attend depuis vingt-deux minutes. La salle croit que ça part. La cuisine croit que c'est servi.\n\nLa table 6 attend depuis vingt-deux minutes. Le serveur croit que ça part, la cuisine croit que c'est servi.\n\nLe KDS compte le temps de chaque ticket, et la charge par poste dit lequel bouchonne. Le retard se voit avant la réclamation.\n\n— — —\n\n🔗 https://site.foodeatup.com/\n\n📞 Une démo ? 06 14 18 92 25\n🌐 foodeatup.com\n\nSérie « Le Coup de Feu » — saison 7 « Les Végé-Fruités font leur cinéma », épisode 15 sur 30.\nActe : Le passe · Genre : Film sportif · À l'écran : Le Navet\nModule KDS · Le temps par ticket\n\nFoodEatUp est le logiciel qui réunit la caisse, le stock, les plannings, l'HACCP et le marketing d'un restaurant au même endroit.\n",
+        "hashtags": [
+          "Shorts",
+          "restaurant",
+          "restaurateur",
+          "kds",
+          "foodeatup",
+          "service",
+          "temps",
+          "coupdefeu"
+        ],
+        "motsCles": [
+          "temps de service",
+          "KDS cuisine",
+          "charge par poste",
+          "retard en cuisine"
+        ],
+        "cta": "Découvrir FoodEatUp",
+        "titre": "Vingt-deux minutes — KDS | FoodEatUp"
+      }
+    },
+    "promptVignette": "Photo réaliste, cadrage vertical 9:16, traitée comme une affiche de cinéma — film sportif. Le chef de l'image de référence — MÊME visage, même barbe, même toque blanche, même veste de cuisine blanche, même tablier blanc au logo FoodEatUp bleu. Ne change ni ses traits ni sa morphologie. Son expression : concentré, comme au bord d'un terrain. Scène : vingt-deux minutes. La table 6 attend depuis vingt-deux minutes. Décor : une salle en service, une table où deux clients regardent leur montre, une cuisine qui court. Lumière blanche et franche, contours nets. Le chef occupe les deux tiers droits du cadre, en plan poitrine ; l'élément du cas reste visible à gauche. Bande crème #FCF9E6 en haut du cadre sur un cinquième de la hauteur, portant UNIQUEMENT le texte « VINGT-DEUX MINUTES » en typographie arrondie très grasse, bleu marine #0F1A23, centré. Aucun autre texte, aucun logo ajouté, pas de filigrane, pas de bordure décorative.",
+    "higgsfieldPrompt": "Vertical 9:16, 10 seconds, photorealistic, cinematic handheld camera, shallow depth of field, natural light, 4K. NO text overlay, NO subtitles, NO watermark, NO logo.\n\nReference image attached — the FoodEatUp chef. Keep his exact face, beard, white toque, white chef jacket and white FoodEatUp apron. Do not alter his features or his build.\n\nSports-film pastiche with a stopwatch overlay ticking up in the corner. Cross-cut between a table of two checking their watches and a kitchen line moving fast. The stopwatch climbs past twenty minutes. Both sides look confident. Neither is right. Hold on the running clock.\n\nAt 8 seconds the chef from the reference image steps into frame on the right, coach-like, checking a stopwatch, and looks straight into the camera. Hold that look for the final 2 seconds.\n\nAudio: a stopwatch ticking, kitchen rush, one whistle. No music.",
+    "scriptHeygen": null,
+    "kit": null,
+    "heygenPrompt": "Avatar : « Chef FoodEatUp » — votre avatar 3D, plan poitrine, regard caméra, fond vert (ou transparent).\nFormat : 1080 × 1920, 9:16, 25 images par seconde.\nVoix : française, masculine, débit posé, ton complice — le chef qui explique, pas celui qui vend.\nDurée visée : 9 secondes — c'est le segment 9,5 s → 18,5 s du master.\n\nScript, à coller tel quel :\n« Vingt-deux minutes. La salle pense que ça part, la cuisine pense que c'est servi. Les deux ont tort, et le seul qui le sait, c'est le client. »\n\nRendu : aucun sous-titre, aucune incrustation, aucun logo, aucun décor de fond. Pas de musique. Le montage s'occupe de tout le reste.",
+    "montage": {
+      "consigne": "Monte EP195 : coupe le clip Higgsfield à 9,5 s, pose l'accroche « La table 6 attend depuis vingt-deux minutes. » à 5,0 s, empile l'avatar HeyGen et la capture d'écran dans la tablette de 18,5 s à 28,5 s, ferme sur la signature et le sting. Sortie 1080×1920, 37,5 s, −14 LUFS.",
+      "segments": [
+        {
+          "titre": "Hook",
+          "debut": 0,
+          "fin": 9.5,
+          "contenu": "Le plan Higgsfield, recadré en 9:16. L'accroche « La table 6 attend depuis vingt-deux minutes. » apparaît à 5,0 s, en bas du cadre."
+        },
+        {
+          "titre": "Transition de marque",
+          "debut": 9.5,
+          "fin": 18.5,
+          "contenu": "L'avatar HeyGen entre par la droite et prend la parole : « Vingt-deux minutes. »"
+        },
+        {
+          "titre": "Démo logiciel",
+          "debut": 18.5,
+          "fin": 28.5,
+          "contenu": "La capture d'écran dans la tablette — le KDS avec le chrono de chaque ticket, puis la charge par poste qui montre le goulot. L'avatar reste en médaillon en bas à gauche."
+        },
+        {
+          "titre": "Signature",
+          "debut": 28.5,
+          "fin": 32.5,
+          "contenu": "Bandeau crème, la punchline « La salle croit que ça part. La cuisine croit que c'est servi. », le logo FoodEatUp et le repère de saison « Le passe · Film sportif »."
+        },
+        {
+          "titre": "Sting",
+          "debut": 32.5,
+          "fin": 37.5,
+          "contenu": "Le sting de marque, « VINGT-DEUX MINUTES » en incrustation, puis l'appel à l'action : https://site.foodeatup.com/ et le 06 14 18 92 25."
+        }
+      ],
+      "livrable": "1080 × 1920 · 37,5 s · H.264 · −14 LUFS · master versé dans la bibliothèque RapidoCMS, prêt à être programmé sur les cinq réseaux."
+    },
+    "metier": null,
+    "phase": null,
+    "amplitude": null,
+    "boucle": null,
+    "boucleSlug": null,
+    "grandeBoucle": null,
+    "incident": null,
+    "incidentHeure": null,
+    "incidentQuoi": null,
+    "saumon": null,
+    "story": {
+      "format": "9:16 · 1080 × 1920 · 10 s",
+      "hook": "La table 6 attend depuis vingt-deux minutes",
+      "punchline": "La salle croit que ça part. La cuisine croit que c'est servi",
+      "url": null
+    },
+    "carrousel": null,
+    "imageFacebook": null,
+    "tutoriel": null
+  },
+  "EP196": {
+    "publications": {
+      "facebook": {
+        "legende": "Vingt heures quinze : plus de poulet. La carte en ligne, elle, en propose encore pendant une heure et demie.\n\nVingt heures quinze, plus de poulet. La carte en ligne continue d'en proposer pendant une heure et demie.\n\nLes stocks parlent à la carte. Le plat s'éteint partout à la fois — en salle, en ligne, en livraison.\n\n👉 Tout FoodEatUp : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "hashtags": [
+          "restaurant",
+          "restaurateur",
+          "stocks",
+          "foodeatup",
+          "rupture",
+          "carteenligne"
+        ],
+        "motsCles": [
+          "rupture de stock",
+          "stock restaurant",
+          "carte en ligne",
+          "gestion des stocks"
+        ],
+        "cta": "Découvrir FoodEatUp"
+      },
+      "instagram": {
+        "legende": "Vingt heures quinze : plus de poulet.\nLa carte en ligne, elle, en propose encore pendant une heure et demie.\n\nVingt heures quinze, plus de poulet. La carte en ligne continue d'en proposer pendant une heure et demie.\n\nLes stocks parlent à la carte. Le plat s'éteint partout à la fois — en salle, en ligne, en livraison.\n\nL'Oignon en western — saison 7, « Les Végé-Fruités font leur cinéma ».\nTout est expliqué sur notre site — lien en bio.\nUne démo ? 06 14 18 92 25",
+        "hashtags": [
+          "restaurant",
+          "restaurateur",
+          "stocks",
+          "foodeatup",
+          "rupture",
+          "carteenligne",
+          "vegefruites",
+          "coupdefeu",
+          "logicielrestaurant",
+          "vieDeResto"
+        ],
+        "motsCles": [
+          "rupture de stock",
+          "stock restaurant",
+          "carte en ligne",
+          "gestion des stocks"
+        ],
+        "cta": "Tout est en bio"
+      },
+      "tiktok": {
+        "legende": "Vingt heures quinze : plus de poulet.\nLa carte en ligne, elle, en propose encore pendant une heure et demie.\n\nVingt heures quinze, plus de poulet. La carte en ligne continue d'en proposer pendant une heure et demie.\n\nL'Oignon en western. 🎬",
+        "hashtags": [
+          "restaurant",
+          "restaurateur",
+          "stocks",
+          "foodeatup",
+          "rupture"
+        ],
+        "motsCles": [
+          "rupture de stock",
+          "stock restaurant",
+          "carte en ligne",
+          "gestion des stocks"
+        ],
+        "cta": "Lien en bio"
+      },
+      "linkedin": {
+        "legende": "Vingt heures quinze : plus de poulet.\n\nVingt heures quinze, plus de poulet. La carte en ligne continue d'en proposer pendant une heure et demie.\n\nLes stocks parlent à la carte. Le plat s'éteint partout à la fois — en salle, en ligne, en livraison.\n\nConcrètement : Les stocks parlent à la carte. Le plat s'éteint partout à la fois — en salle, en ligne, en livraison.\n\nEn savoir plus : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "hashtags": [
+          "restauration",
+          "foodeatup",
+          "stocks",
+          "rupture",
+          "carteenligne"
+        ],
+        "motsCles": [
+          "rupture de stock",
+          "stock restaurant",
+          "carte en ligne",
+          "gestion des stocks"
+        ],
+        "cta": "Découvrir FoodEatUp"
+      },
+      "youtube": {
+        "legende": "Vingt heures quinze : plus de poulet. La carte en ligne, elle, en propose encore pendant une heure et demie.\n\nVingt heures quinze, plus de poulet. La carte en ligne continue d'en proposer pendant une heure et demie.\n\nLes stocks parlent à la carte. Le plat s'éteint partout à la fois — en salle, en ligne, en livraison.\n\n— — —\n\n🔗 https://site.foodeatup.com/\n\n📞 Une démo ? 06 14 18 92 25\n🌐 foodeatup.com\n\nSérie « Le Coup de Feu » — saison 7 « Les Végé-Fruités font leur cinéma », épisode 16 sur 30.\nActe : Le passe · Genre : Western · À l'écran : L'Oignon\nModule StockVision · La rupture en service\n\nFoodEatUp est le logiciel qui réunit la caisse, le stock, les plannings, l'HACCP et le marketing d'un restaurant au même endroit.\n",
+        "hashtags": [
+          "Shorts",
+          "restaurant",
+          "restaurateur",
+          "stocks",
+          "foodeatup",
+          "rupture",
+          "carteenligne",
+          "coupdefeu"
+        ],
+        "motsCles": [
+          "rupture de stock",
+          "stock restaurant",
+          "carte en ligne",
+          "gestion des stocks"
+        ],
+        "cta": "Découvrir FoodEatUp",
+        "titre": "Il n'y en a plus — StockVision | FoodEatUp"
+      }
+    },
+    "promptVignette": "Photo réaliste, cadrage vertical 9:16, traitée comme une affiche de cinéma — western. Le chef de l'image de référence — MÊME visage, même barbe, même toque blanche, même veste de cuisine blanche, même tablier blanc au logo FoodEatUp bleu. Ne change ni ses traits ni sa morphologie. Son expression : impassible, prêt au duel. Scène : il n'y en a plus. Vingt heures quinze : plus de poulet. Décor : une chambre froide, une étagère vide, et un écran de commandes qui continue d'en recevoir. Lumière dorée et poussiéreuse de fin de journée. Le chef occupe les deux tiers droits du cadre, en plan poitrine ; l'élément du cas reste visible à gauche. Bande crème #FCF9E6 en haut du cadre sur un cinquième de la hauteur, portant UNIQUEMENT le texte « IL N'Y EN A PLUS » en typographie arrondie très grasse, bleu marine #0F1A23, centré. Aucun autre texte, aucun logo ajouté, pas de filigrane, pas de bordure décorative.",
+    "higgsfieldPrompt": "Vertical 9:16, 10 seconds, photorealistic, cinematic handheld camera, shallow depth of field, natural light, 4K. NO text overlay, NO subtitles, NO watermark, NO logo.\n\nReference image attached — the FoodEatUp chef. Keep his exact face, beard, white toque, white chef jacket and white FoodEatUp apron. Do not alter his features or his build.\n\nWestern pastiche, dusty warm light and a slow standoff zoom. An empty walk-in fridge shelf, one lonely price tag swinging. Cut to an order screen where the same dish keeps arriving, ping after ping. A cook stares down the screen like an opponent. Nobody draws.\n\nAt 8 seconds the chef from the reference image steps into frame on the right, impassive, ready for the standoff, and looks straight into the camera. Hold that look for the final 2 seconds.\n\nAudio: wind, a creaking door, one lone guitar note. No music.",
+    "scriptHeygen": null,
+    "kit": null,
+    "heygenPrompt": "Avatar : « Chef FoodEatUp » — votre avatar 3D, plan poitrine, regard caméra, fond vert (ou transparent).\nFormat : 1080 × 1920, 9:16, 25 images par seconde.\nVoix : française, masculine, débit posé, ton complice — le chef qui explique, pas celui qui vend.\nDurée visée : 9 secondes — c'est le segment 9,5 s → 18,5 s du master.\n\nScript, à coller tel quel :\n« Plus de poulet à vingt heures quinze, ça arrive. Continuer à en vendre en ligne jusqu'à vingt-deux heures, ça n'a pas à arriver. »\n\nRendu : aucun sous-titre, aucune incrustation, aucun logo, aucun décor de fond. Pas de musique. Le montage s'occupe de tout le reste.",
+    "montage": {
+      "consigne": "Monte EP196 : coupe le clip Higgsfield à 9,5 s, pose l'accroche « Vingt heures quinze : plus de poulet. » à 5,0 s, empile l'avatar HeyGen et la capture d'écran dans la tablette de 18,5 s à 28,5 s, ferme sur la signature et le sting. Sortie 1080×1920, 37,5 s, −14 LUFS.",
+      "segments": [
+        {
+          "titre": "Hook",
+          "debut": 0,
+          "fin": 9.5,
+          "contenu": "Le plan Higgsfield, recadré en 9:16. L'accroche « Vingt heures quinze : plus de poulet. » apparaît à 5,0 s, en bas du cadre."
+        },
+        {
+          "titre": "Transition de marque",
+          "debut": 9.5,
+          "fin": 18.5,
+          "contenu": "L'avatar HeyGen entre par la droite et prend la parole : « Plus de poulet à vingt heures quinze, ça arrive. »"
+        },
+        {
+          "titre": "Démo logiciel",
+          "debut": 18.5,
+          "fin": 28.5,
+          "contenu": "La capture d'écran dans la tablette — le stock du produit qui tombe à zéro, et le plat qui s'éteint automatiquement sur la carte en ligne. L'avatar reste en médaillon en bas à gauche."
+        },
+        {
+          "titre": "Signature",
+          "debut": 28.5,
+          "fin": 32.5,
+          "contenu": "Bandeau crème, la punchline « La carte en ligne, elle, en propose encore pendant une heure et demie. », le logo FoodEatUp et le repère de saison « Le passe · Western »."
+        },
+        {
+          "titre": "Sting",
+          "debut": 32.5,
+          "fin": 37.5,
+          "contenu": "Le sting de marque, « IL N'Y EN A PLUS » en incrustation, puis l'appel à l'action : https://site.foodeatup.com/ et le 06 14 18 92 25."
+        }
+      ],
+      "livrable": "1080 × 1920 · 37,5 s · H.264 · −14 LUFS · master versé dans la bibliothèque RapidoCMS, prêt à être programmé sur les cinq réseaux."
+    },
+    "metier": null,
+    "phase": null,
+    "amplitude": null,
+    "boucle": null,
+    "boucleSlug": null,
+    "grandeBoucle": null,
+    "incident": null,
+    "incidentHeure": null,
+    "incidentQuoi": null,
+    "saumon": null,
+    "story": {
+      "format": "9:16 · 1080 × 1920 · 10 s",
+      "hook": "Vingt heures quinze : plus de poulet",
+      "punchline": "La carte en ligne, elle, en propose encore pendant une heure et demie",
+      "url": null
+    },
+    "carrousel": null,
+    "imageFacebook": null,
+    "tutoriel": null
+  },
+  "EP197": {
+    "publications": {
+      "facebook": {
+        "legende": "Dite au téléphone. Redite à l'accueil. Notée sur le carnet. En cuisine, l'assiette part sans que personne ne l'ait lue.\n\nLa contrainte a été dite au téléphone, redite à l'accueil, notée sur le carnet. En cuisine, l'assiette part sans que personne ne l'ait lue.\n\nLa note suit la commande de la réservation jusqu'au KDS. Elle est sur le ticket, pas dans la mémoire de trois personnes. — Réserve produit : il s'agit d'une note libre, pas d'un champ « allergène » dédié.\n\n👉 Tout FoodEatUp : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "hashtags": [
+          "restaurant",
+          "restaurateur",
+          "allergenes",
+          "foodeatup",
+          "kds",
+          "haccp"
+        ],
+        "motsCles": [
+          "note allergie",
+          "réservation restaurant",
+          "KDS cuisine",
+          "transmission cuisine"
+        ],
+        "cta": "Découvrir FoodEatUp"
+      },
+      "instagram": {
+        "legende": "Dite au téléphone. Redite à l'accueil. Notée sur le carnet.\nEn cuisine, l'assiette part sans que personne ne l'ait lue.\n\nLa contrainte a été dite au téléphone, redite à l'accueil, notée sur le carnet. En cuisine, l'assiette part sans que personne ne l'ait lue.\n\nLa note suit la commande de la réservation jusqu'au KDS. Elle est sur le ticket, pas dans la mémoire de trois personnes. — Réserve produit : il s'agit d'une note libre, pas d'un champ « allergène » dédié.\n\nLa Carotte en film de guerre — saison 7, « Les Végé-Fruités font leur cinéma ».\nTout est expliqué sur notre site — lien en bio.\nUne démo ? 06 14 18 92 25",
+        "hashtags": [
+          "restaurant",
+          "restaurateur",
+          "allergenes",
+          "foodeatup",
+          "kds",
+          "haccp",
+          "vegefruites",
+          "coupdefeu",
+          "logicielrestaurant",
+          "vieDeResto"
+        ],
+        "motsCles": [
+          "note allergie",
+          "réservation restaurant",
+          "KDS cuisine",
+          "transmission cuisine"
+        ],
+        "cta": "Tout est en bio"
+      },
+      "tiktok": {
+        "legende": "Dite au téléphone. Redite à l'accueil. Notée sur le carnet.\nEn cuisine, l'assiette part sans que personne ne l'ait lue.\n\nLa contrainte a été dite au téléphone, redite à l'accueil, notée sur le carnet. En cuisine, l'assiette part sans que personne ne l'ait lue.\n\nLa Carotte en film de guerre. 🎬",
+        "hashtags": [
+          "restaurant",
+          "restaurateur",
+          "allergenes",
+          "foodeatup",
+          "kds"
+        ],
+        "motsCles": [
+          "note allergie",
+          "réservation restaurant",
+          "KDS cuisine",
+          "transmission cuisine"
+        ],
+        "cta": "Lien en bio"
+      },
+      "linkedin": {
+        "legende": "Dite au téléphone. Redite à l'accueil. Notée sur le carnet.\n\nLa contrainte a été dite au téléphone, redite à l'accueil, notée sur le carnet. En cuisine, l'assiette part sans que personne ne l'ait lue.\n\nLa note suit la commande de la réservation jusqu'au KDS. Elle est sur le ticket, pas dans la mémoire de trois personnes. — Réserve produit : il s'agit d'une note libre, pas d'un champ « allergène » dédié.\n\nConcrètement : La note suit la commande de la réservation jusqu'au KDS. Elle est sur le ticket, pas dans la mémoire de trois personnes.\n\nEn savoir plus : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "hashtags": [
+          "restauration",
+          "foodeatup",
+          "allergenes",
+          "kds",
+          "haccp"
+        ],
+        "motsCles": [
+          "note allergie",
+          "réservation restaurant",
+          "KDS cuisine",
+          "transmission cuisine"
+        ],
+        "cta": "Découvrir FoodEatUp"
+      },
+      "youtube": {
+        "legende": "Dite au téléphone. Redite à l'accueil. Notée sur le carnet. En cuisine, l'assiette part sans que personne ne l'ait lue.\n\nLa contrainte a été dite au téléphone, redite à l'accueil, notée sur le carnet. En cuisine, l'assiette part sans que personne ne l'ait lue.\n\nLa note suit la commande de la réservation jusqu'au KDS. Elle est sur le ticket, pas dans la mémoire de trois personnes. — Réserve produit : il s'agit d'une note libre, pas d'un champ « allergène » dédié.\n\n— — —\n\n🔗 https://site.foodeatup.com/\n\n📞 Une démo ? 06 14 18 92 25\n🌐 foodeatup.com\n\nSérie « Le Coup de Feu » — saison 7 « Les Végé-Fruités font leur cinéma », épisode 17 sur 30.\nActe : Le passe · Genre : Film de guerre · À l'écran : La Carotte\nModule HACCP · La note jusqu'au passe\n\nFoodEatUp est le logiciel qui réunit la caisse, le stock, les plannings, l'HACCP et le marketing d'un restaurant au même endroit.\n",
+        "hashtags": [
+          "Shorts",
+          "restaurant",
+          "restaurateur",
+          "allergenes",
+          "foodeatup",
+          "kds",
+          "haccp",
+          "coupdefeu"
+        ],
+        "motsCles": [
+          "note allergie",
+          "réservation restaurant",
+          "KDS cuisine",
+          "transmission cuisine"
+        ],
+        "cta": "Découvrir FoodEatUp",
+        "titre": "L'allergie qui n'arrive pas — HACCP | FoodEatUp"
+      }
+    },
+    "promptVignette": "Photo réaliste, cadrage vertical 9:16, traitée comme une affiche de cinéma — film de guerre. Le chef de l'image de référence — MÊME visage, même barbe, même toque blanche, même veste de cuisine blanche, même tablier blanc au logo FoodEatUp bleu. Ne change ni ses traits ni sa morphologie. Son expression : le visage fermé, la mâchoire serrée. Scène : l'allergie qui n'arrive pas. Dite au téléphone. Redite à l'accueil. Notée sur le carnet. Décor : trois relais : le téléphone, l'accueil, le passe — et l'assiette qui part quand même. Lumière désaturée, fort contre-jour. Le chef occupe les deux tiers droits du cadre, en plan poitrine ; l'élément du cas reste visible à gauche. Bande crème #FCF9E6 en haut du cadre sur un cinquième de la hauteur, portant UNIQUEMENT le texte « L'ALLERGIE PERDUE » en typographie arrondie très grasse, bleu marine #0F1A23, centré. Aucun autre texte, aucun logo ajouté, pas de filigrane, pas de bordure décorative.",
+    "higgsfieldPrompt": "Vertical 9:16, 10 seconds, photorealistic, cinematic handheld camera, shallow depth of field, natural light, 4K. NO text overlay, NO subtitles, NO watermark, NO logo.\n\nReference image attached — the FoodEatUp chef. Keep his exact face, beard, white toque, white chef jacket and white FoodEatUp apron. Do not alter his features or his build.\n\nWar-film pastiche, handheld camera and desaturated grade. A message is relayed: a hand on a phone, a hand writing at a host stand, a hand pinning a note. Each handover the paper gets smaller. At the pass, the last hand finds nothing. A plate goes out anyway. Silence.\n\nAt 8 seconds the chef from the reference image steps into frame on the right, face closed, jaw set, and looks straight into the camera. Hold that look for the final 2 seconds.\n\nAudio: a muffled kitchen roar, radio static, then sudden silence. No music.",
+    "scriptHeygen": null,
+    "kit": null,
+    "heygenPrompt": "Avatar : « Chef FoodEatUp » — votre avatar 3D, plan poitrine, regard caméra, fond vert (ou transparent).\nFormat : 1080 × 1920, 9:16, 25 images par seconde.\nVoix : française, masculine, débit posé, ton complice — le chef qui explique, pas celui qui vend.\nDurée visée : 9 secondes — c'est le segment 9,5 s → 18,5 s du master.\n\nScript, à coller tel quel :\n« Elle l'a dit trois fois. À trois personnes différentes. Et l'assiette part quand même. Une information répétée trois fois oralement, c'est une information qui n'est écrite nulle part. »\n\nRendu : aucun sous-titre, aucune incrustation, aucun logo, aucun décor de fond. Pas de musique. Le montage s'occupe de tout le reste.",
+    "montage": {
+      "consigne": "Monte EP197 : coupe le clip Higgsfield à 9,5 s, pose l'accroche « Dite au téléphone. Redite à l'accueil. Notée sur le carnet. » à 5,0 s, empile l'avatar HeyGen et la capture d'écran dans la tablette de 18,5 s à 28,5 s, ferme sur la signature et le sting. Sortie 1080×1920, 37,5 s, −14 LUFS.",
+      "segments": [
+        {
+          "titre": "Hook",
+          "debut": 0,
+          "fin": 9.5,
+          "contenu": "Le plan Higgsfield, recadré en 9:16. L'accroche « Dite au téléphone. Redite à l'accueil. Notée sur le carnet. » apparaît à 5,0 s, en bas du cadre."
+        },
+        {
+          "titre": "Transition de marque",
+          "debut": 9.5,
+          "fin": 18.5,
+          "contenu": "L'avatar HeyGen entre par la droite et prend la parole : « Elle l'a dit trois fois. »"
+        },
+        {
+          "titre": "Démo logiciel",
+          "debut": 18.5,
+          "fin": 28.5,
+          "contenu": "La capture d'écran dans la tablette — la note de la réservation qu'on suit jusqu'au ticket du KDS, visible sur la ligne du plat. L'avatar reste en médaillon en bas à gauche."
+        },
+        {
+          "titre": "Signature",
+          "debut": 28.5,
+          "fin": 32.5,
+          "contenu": "Bandeau crème, la punchline « En cuisine, l'assiette part sans que personne ne l'ait lue. », le logo FoodEatUp et le repère de saison « Le passe · Film de guerre »."
+        },
+        {
+          "titre": "Sting",
+          "debut": 32.5,
+          "fin": 37.5,
+          "contenu": "Le sting de marque, « L'ALLERGIE PERDUE » en incrustation, puis l'appel à l'action : https://site.foodeatup.com/ et le 06 14 18 92 25."
+        }
+      ],
+      "livrable": "1080 × 1920 · 37,5 s · H.264 · −14 LUFS · master versé dans la bibliothèque RapidoCMS, prêt à être programmé sur les cinq réseaux."
+    },
+    "metier": null,
+    "phase": null,
+    "amplitude": null,
+    "boucle": null,
+    "boucleSlug": null,
+    "grandeBoucle": null,
+    "incident": null,
+    "incidentHeure": null,
+    "incidentQuoi": null,
+    "saumon": null,
+    "story": {
+      "format": "9:16 · 1080 × 1920 · 10 s",
+      "hook": "Dite au téléphone. Redite à l'accueil. Notée sur le carnet",
+      "punchline": "En cuisine, l'assiette part sans que personne ne l'ait lue",
+      "url": null
+    },
+    "carrousel": null,
+    "imageFacebook": null,
+    "tutoriel": null
+  },
+  "EP198": {
+    "publications": {
+      "facebook": {
+        "legende": "Onze tickets. Trois modificateurs chacun. Et un serveur qui crie une table de plus.\n\nVingt heures trente. Onze tickets en même temps, trois modificateurs par ticket, un serveur qui crie une table de plus.\n\nLe KDS range et priorise. Personne ne crie ; le passe se lit.\n\n👉 Tout FoodEatUp : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "hashtags": [
+          "restaurant",
+          "restaurateur",
+          "kds",
+          "foodeatup",
+          "coupdefeu",
+          "cuisine"
+        ],
+        "motsCles": [
+          "KDS cuisine",
+          "coup de feu",
+          "organisation cuisine",
+          "priorisation des tickets"
+        ],
+        "cta": "Découvrir FoodEatUp"
+      },
+      "instagram": {
+        "legende": "Onze tickets. Trois modificateurs chacun.\nEt un serveur qui crie une table de plus.\n\nVingt heures trente. Onze tickets en même temps, trois modificateurs par ticket, un serveur qui crie une table de plus.\n\nLe KDS range et priorise. Personne ne crie ; le passe se lit.\n\nTomate Man en plan-séquence — saison 7, « Les Végé-Fruités font leur cinéma ».\nTout est expliqué sur notre site — lien en bio.\nUne démo ? 06 14 18 92 25",
+        "hashtags": [
+          "restaurant",
+          "restaurateur",
+          "kds",
+          "foodeatup",
+          "coupdefeu",
+          "cuisine",
+          "vegefruites",
+          "coupdefeu",
+          "logicielrestaurant",
+          "vieDeResto"
+        ],
+        "motsCles": [
+          "KDS cuisine",
+          "coup de feu",
+          "organisation cuisine",
+          "priorisation des tickets"
+        ],
+        "cta": "Tout est en bio"
+      },
+      "tiktok": {
+        "legende": "Onze tickets. Trois modificateurs chacun.\nEt un serveur qui crie une table de plus.\n\nVingt heures trente. Onze tickets en même temps, trois modificateurs par ticket, un serveur qui crie une table de plus.\n\nTomate Man en plan-séquence. 🎬",
+        "hashtags": [
+          "restaurant",
+          "restaurateur",
+          "kds",
+          "foodeatup",
+          "coupdefeu"
+        ],
+        "motsCles": [
+          "KDS cuisine",
+          "coup de feu",
+          "organisation cuisine",
+          "priorisation des tickets"
+        ],
+        "cta": "Lien en bio"
+      },
+      "linkedin": {
+        "legende": "Onze tickets. Trois modificateurs chacun.\n\nVingt heures trente. Onze tickets en même temps, trois modificateurs par ticket, un serveur qui crie une table de plus.\n\nLe KDS range et priorise. Personne ne crie ; le passe se lit.\n\nConcrètement : Le KDS range et priorise. Personne ne crie : le passe se lit.\n\nEn savoir plus : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "hashtags": [
+          "restauration",
+          "foodeatup",
+          "kds",
+          "coupdefeu",
+          "cuisine"
+        ],
+        "motsCles": [
+          "KDS cuisine",
+          "coup de feu",
+          "organisation cuisine",
+          "priorisation des tickets"
+        ],
+        "cta": "Découvrir FoodEatUp"
+      },
+      "youtube": {
+        "legende": "Onze tickets. Trois modificateurs chacun. Et un serveur qui crie une table de plus.\n\nVingt heures trente. Onze tickets en même temps, trois modificateurs par ticket, un serveur qui crie une table de plus.\n\nLe KDS range et priorise. Personne ne crie ; le passe se lit.\n\n— — —\n\n🔗 https://site.foodeatup.com/\n\n📞 Une démo ? 06 14 18 92 25\n🌐 foodeatup.com\n\nSérie « Le Coup de Feu » — saison 7 « Les Végé-Fruités font leur cinéma », épisode 18 sur 30.\nActe : Le passe · Genre : Plan-séquence · À l'écran : Tomate Man\nModule KDS · Onze tickets à la fois\n\nFoodEatUp est le logiciel qui réunit la caisse, le stock, les plannings, l'HACCP et le marketing d'un restaurant au même endroit.\n",
+        "hashtags": [
+          "Shorts",
+          "restaurant",
+          "restaurateur",
+          "kds",
+          "foodeatup",
+          "coupdefeu",
+          "cuisine",
+          "coupdefeu"
+        ],
+        "motsCles": [
+          "KDS cuisine",
+          "coup de feu",
+          "organisation cuisine",
+          "priorisation des tickets"
+        ],
+        "cta": "Découvrir FoodEatUp",
+        "titre": "Le coup de feu, vu du passe — KDS | FoodEatUp"
+      }
+    },
+    "promptVignette": "Photo réaliste, cadrage vertical 9:16, traitée comme une affiche de cinéma — plan-séquence. Le chef de l'image de référence — MÊME visage, même barbe, même toque blanche, même veste de cuisine blanche, même tablier blanc au logo FoodEatUp bleu. Ne change ni ses traits ni sa morphologie. Son expression : au milieu du passage, imperturbable. Scène : le coup de feu, vu du passe. Onze tickets. Trois modificateurs chacun. Décor : le passe, vu de face, onze tickets accrochés, la cuisine qui s'agite derrière. Lumière de cuisine, vapeur dans le contre-jour. Le chef occupe les deux tiers droits du cadre, en plan poitrine ; l'élément du cas reste visible à gauche. Bande crème #FCF9E6 en haut du cadre sur un cinquième de la hauteur, portant UNIQUEMENT le texte « VU DU PASSE » en typographie arrondie très grasse, bleu marine #0F1A23, centré. Aucun autre texte, aucun logo ajouté, pas de filigrane, pas de bordure décorative.",
+    "higgsfieldPrompt": "Vertical 9:16, 10 seconds, photorealistic, cinematic handheld camera, shallow depth of field, natural light, 4K. NO text overlay, NO subtitles, NO watermark, NO logo.\n\nReference image attached — the FoodEatUp chef. Keep his exact face, beard, white toque, white chef jacket and white FoodEatUp apron. Do not alter his features or his build.\n\nOne-take pastiche: a single continuous handheld shot moving through a kitchen at peak service. It travels past the pass where eleven paper tickets flutter on a rail, past shouting, past steam, and ends on the last ticket that nobody has read. No cuts.\n\nAt 8 seconds the chef from the reference image steps into frame on the right, unmoved in the middle of the rush, and looks straight into the camera. Hold that look for the final 2 seconds.\n\nAudio: continuous kitchen ambience with no edit in the sound either. No music.",
+    "scriptHeygen": null,
+    "kit": null,
+    "heygenPrompt": "Avatar : « Chef FoodEatUp » — votre avatar 3D, plan poitrine, regard caméra, fond vert (ou transparent).\nFormat : 1080 × 1920, 9:16, 25 images par seconde.\nVoix : française, masculine, débit posé, ton complice — le chef qui explique, pas celui qui vend.\nDurée visée : 9 secondes — c'est le segment 9,5 s → 18,5 s du master.\n\nScript, à coller tel quel :\n« Vingt heures trente, onze tickets, et une salle qui continue de commander. Ce n'est pas le volume le problème. C'est qu'il n'existe aucun ordre — juste des voix. »\n\nRendu : aucun sous-titre, aucune incrustation, aucun logo, aucun décor de fond. Pas de musique. Le montage s'occupe de tout le reste.",
+    "montage": {
+      "consigne": "Monte EP198 : coupe le clip Higgsfield à 9,5 s, pose l'accroche « Onze tickets. Trois modificateurs chacun. » à 5,0 s, empile l'avatar HeyGen et la capture d'écran dans la tablette de 18,5 s à 28,5 s, ferme sur la signature et le sting. Sortie 1080×1920, 37,5 s, −14 LUFS.",
+      "segments": [
+        {
+          "titre": "Hook",
+          "debut": 0,
+          "fin": 9.5,
+          "contenu": "Le plan Higgsfield, recadré en 9:16. L'accroche « Onze tickets. Trois modificateurs chacun. » apparaît à 5,0 s, en bas du cadre."
+        },
+        {
+          "titre": "Transition de marque",
+          "debut": 9.5,
+          "fin": 18.5,
+          "contenu": "L'avatar HeyGen entre par la droite et prend la parole : « Vingt heures trente, onze tickets, et une salle qui continue de commander. »"
+        },
+        {
+          "titre": "Démo logiciel",
+          "debut": 18.5,
+          "fin": 28.5,
+          "contenu": "La capture d'écran dans la tablette — le KDS pendant le rush, les tickets rangés par ordre d'arrivée, les plus urgents en tête. L'avatar reste en médaillon en bas à gauche."
+        },
+        {
+          "titre": "Signature",
+          "debut": 28.5,
+          "fin": 32.5,
+          "contenu": "Bandeau crème, la punchline « Et un serveur qui crie une table de plus. », le logo FoodEatUp et le repère de saison « Le passe · Plan-séquence »."
+        },
+        {
+          "titre": "Sting",
+          "debut": 32.5,
+          "fin": 37.5,
+          "contenu": "Le sting de marque, « VU DU PASSE » en incrustation, puis l'appel à l'action : https://site.foodeatup.com/ et le 06 14 18 92 25."
+        }
+      ],
+      "livrable": "1080 × 1920 · 37,5 s · H.264 · −14 LUFS · master versé dans la bibliothèque RapidoCMS, prêt à être programmé sur les cinq réseaux."
+    },
+    "metier": null,
+    "phase": null,
+    "amplitude": null,
+    "boucle": null,
+    "boucleSlug": null,
+    "grandeBoucle": null,
+    "incident": null,
+    "incidentHeure": null,
+    "incidentQuoi": null,
+    "saumon": null,
+    "story": {
+      "format": "9:16 · 1080 × 1920 · 10 s",
+      "hook": "Onze tickets. Trois modificateurs chacun",
+      "punchline": "Et un serveur qui crie une table de plus",
+      "url": null
+    },
+    "carrousel": null,
+    "imageFacebook": null,
+    "tutoriel": null
+  },
+  "EP199": {
+    "publications": {
+      "facebook": {
+        "legende": "« On peut payer chacun ? » Quatorze fois. Quatorze passages, et une erreur quelque part.\n\n« On peut payer chacun ? » Quatorze fois. Le serveur repasse quatorze fois, et se trompe une fois.\n\nLa caisse partage l'addition — par personne, par article, par part. Un passage, pas quatorze.\n\n👉 Tout FoodEatUp : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "hashtags": [
+          "restaurant",
+          "restaurateur",
+          "caisse",
+          "foodeatup",
+          "addition",
+          "paiement"
+        ],
+        "motsCles": [
+          "partage d'addition",
+          "caisse restaurant",
+          "encaissement",
+          "note séparée"
+        ],
+        "cta": "Découvrir FoodEatUp"
+      },
+      "instagram": {
+        "legende": "« On peut payer chacun ? » Quatorze fois.\nQuatorze passages, et une erreur quelque part.\n\n« On peut payer chacun ? » Quatorze fois. Le serveur repasse quatorze fois, et se trompe une fois.\n\nLa caisse partage l'addition — par personne, par article, par part. Un passage, pas quatorze.\n\nL'Ail en film de casse — saison 7, « Les Végé-Fruités font leur cinéma ».\nTout est expliqué sur notre site — lien en bio.\nUne démo ? 06 14 18 92 25",
+        "hashtags": [
+          "restaurant",
+          "restaurateur",
+          "caisse",
+          "foodeatup",
+          "addition",
+          "paiement",
+          "vegefruites",
+          "coupdefeu",
+          "logicielrestaurant",
+          "vieDeResto"
+        ],
+        "motsCles": [
+          "partage d'addition",
+          "caisse restaurant",
+          "encaissement",
+          "note séparée"
+        ],
+        "cta": "Tout est en bio"
+      },
+      "tiktok": {
+        "legende": "« On peut payer chacun ? » Quatorze fois.\nQuatorze passages, et une erreur quelque part.\n\n« On peut payer chacun ? » Quatorze fois. Le serveur repasse quatorze fois, et se trompe une fois.\n\nL'Ail en film de casse. 🎬",
+        "hashtags": [
+          "restaurant",
+          "restaurateur",
+          "caisse",
+          "foodeatup",
+          "addition"
+        ],
+        "motsCles": [
+          "partage d'addition",
+          "caisse restaurant",
+          "encaissement",
+          "note séparée"
+        ],
+        "cta": "Lien en bio"
+      },
+      "linkedin": {
+        "legende": "« On peut payer chacun ? » Quatorze fois.\n\n« On peut payer chacun ? » Quatorze fois. Le serveur repasse quatorze fois, et se trompe une fois.\n\nLa caisse partage l'addition — par personne, par article, par part. Un passage, pas quatorze.\n\nConcrètement : La caisse partage l'addition — par personne, par article, par part. Un passage, pas quatorze.\n\nEn savoir plus : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "hashtags": [
+          "restauration",
+          "foodeatup",
+          "caisse",
+          "addition",
+          "paiement"
+        ],
+        "motsCles": [
+          "partage d'addition",
+          "caisse restaurant",
+          "encaissement",
+          "note séparée"
+        ],
+        "cta": "Découvrir FoodEatUp"
+      },
+      "youtube": {
+        "legende": "« On peut payer chacun ? » Quatorze fois. Quatorze passages, et une erreur quelque part.\n\n« On peut payer chacun ? » Quatorze fois. Le serveur repasse quatorze fois, et se trompe une fois.\n\nLa caisse partage l'addition — par personne, par article, par part. Un passage, pas quatorze.\n\n— — —\n\n🔗 https://site.foodeatup.com/\n\n📞 Une démo ? 06 14 18 92 25\n🌐 foodeatup.com\n\nSérie « Le Coup de Feu » — saison 7 « Les Végé-Fruités font leur cinéma », épisode 19 sur 30.\nActe : L'addition · Genre : Film de casse · À l'écran : L'Ail\nModule Caisse POS · Le partage d'addition\n\nFoodEatUp est le logiciel qui réunit la caisse, le stock, les plannings, l'HACCP et le marketing d'un restaurant au même endroit.\n",
+        "hashtags": [
+          "Shorts",
+          "restaurant",
+          "restaurateur",
+          "caisse",
+          "foodeatup",
+          "addition",
+          "paiement",
+          "coupdefeu"
+        ],
+        "motsCles": [
+          "partage d'addition",
+          "caisse restaurant",
+          "encaissement",
+          "note séparée"
+        ],
+        "cta": "Découvrir FoodEatUp",
+        "titre": "Quatorze parts — Caisse POS | FoodEatUp"
+      }
+    },
+    "promptVignette": "Photo réaliste, cadrage vertical 9:16, traitée comme une affiche de cinéma — film de casse. Le chef de l'image de référence — MÊME visage, même barbe, même toque blanche, même veste de cuisine blanche, même tablier blanc au logo FoodEatUp bleu. Ne change ni ses traits ni sa morphologie. Son expression : concentré, les yeux sur le chronomètre. Scène : quatorze parts. « On peut payer chacun ? » Quatorze fois. Décor : une grande tablée en fin de repas, quatorze cartes bancaires sur la nappe. Lumière crue, contrastes durs, plan serré. Le chef occupe les deux tiers droits du cadre, en plan poitrine ; l'élément du cas reste visible à gauche. Bande crème #FCF9E6 en haut du cadre sur un cinquième de la hauteur, portant UNIQUEMENT le texte « QUATORZE PARTS » en typographie arrondie très grasse, bleu marine #0F1A23, centré. Aucun autre texte, aucun logo ajouté, pas de filigrane, pas de bordure décorative.",
+    "higgsfieldPrompt": "Vertical 9:16, 10 seconds, photorealistic, cinematic handheld camera, shallow depth of field, natural light, 4K. NO text overlay, NO subtitles, NO watermark, NO logo.\n\nReference image attached — the FoodEatUp chef. Keep his exact face, beard, white toque, white chef jacket and white FoodEatUp apron. Do not alter his features or his build.\n\nHeist-movie pastiche, overhead shot and a countdown rhythm. Fourteen bank cards land one by one on a long table, each with a small metallic click. A waiter's hand hovers over them, then over a card reader, then over a paper bill covered in crossings-out. The pile of cards is still growing.\n\nAt 8 seconds the chef from the reference image steps into frame on the right, checking a watch, entirely focused, and looks straight into the camera. Hold that look for the final 2 seconds.\n\nAudio: a ticking clock, muted city hum, paper being crumpled. No music.",
+    "scriptHeygen": null,
+    "kit": null,
+    "heygenPrompt": "Avatar : « Chef FoodEatUp » — votre avatar 3D, plan poitrine, regard caméra, fond vert (ou transparent).\nFormat : 1080 × 1920, 9:16, 25 images par seconde.\nVoix : française, masculine, débit posé, ton complice — le chef qui explique, pas celui qui vend.\nDurée visée : 9 secondes — c'est le segment 9,5 s → 18,5 s du master.\n\nScript, à coller tel quel :\n« Quatorze personnes, quatorze cartes, quatorze passages. Statistiquement, il y en a un qui va sauter. Et ce n'est jamais celui qu'on croit. »\n\nRendu : aucun sous-titre, aucune incrustation, aucun logo, aucun décor de fond. Pas de musique. Le montage s'occupe de tout le reste.",
+    "montage": {
+      "consigne": "Monte EP199 : coupe le clip Higgsfield à 9,5 s, pose l'accroche « « On peut payer chacun ? » Quatorze fois. » à 5,0 s, empile l'avatar HeyGen et la capture d'écran dans la tablette de 18,5 s à 28,5 s, ferme sur la signature et le sting. Sortie 1080×1920, 37,5 s, −14 LUFS.",
+      "segments": [
+        {
+          "titre": "Hook",
+          "debut": 0,
+          "fin": 9.5,
+          "contenu": "Le plan Higgsfield, recadré en 9:16. L'accroche « « On peut payer chacun ? » Quatorze fois. » apparaît à 5,0 s, en bas du cadre."
+        },
+        {
+          "titre": "Transition de marque",
+          "debut": 9.5,
+          "fin": 18.5,
+          "contenu": "L'avatar HeyGen entre par la droite et prend la parole : « Quatorze personnes, quatorze cartes, quatorze passages. »"
+        },
+        {
+          "titre": "Démo logiciel",
+          "debut": 18.5,
+          "fin": 28.5,
+          "contenu": "La capture d'écran dans la tablette — l'addition partagée dans la caisse — par personne puis par article — et les paiements encaissés d'affilée. L'avatar reste en médaillon en bas à gauche."
+        },
+        {
+          "titre": "Signature",
+          "debut": 28.5,
+          "fin": 32.5,
+          "contenu": "Bandeau crème, la punchline « Quatorze passages, et une erreur quelque part. », le logo FoodEatUp et le repère de saison « L'addition · Film de casse »."
+        },
+        {
+          "titre": "Sting",
+          "debut": 32.5,
+          "fin": 37.5,
+          "contenu": "Le sting de marque, « QUATORZE PARTS » en incrustation, puis l'appel à l'action : https://site.foodeatup.com/ et le 06 14 18 92 25."
+        }
+      ],
+      "livrable": "1080 × 1920 · 37,5 s · H.264 · −14 LUFS · master versé dans la bibliothèque RapidoCMS, prêt à être programmé sur les cinq réseaux."
+    },
+    "metier": null,
+    "phase": null,
+    "amplitude": null,
+    "boucle": null,
+    "boucleSlug": null,
+    "grandeBoucle": null,
+    "incident": null,
+    "incidentHeure": null,
+    "incidentQuoi": null,
+    "saumon": null,
+    "story": {
+      "format": "9:16 · 1080 × 1920 · 10 s",
+      "hook": "« On peut payer chacun ? » Quatorze fois",
+      "punchline": "Quatorze passages, et une erreur quelque part",
+      "url": null
+    },
+    "carrousel": null,
+    "imageFacebook": null,
+    "tutoriel": null
+  },
+  "EP200": {
+    "publications": {
+      "facebook": {
+        "legende": "Minuit vingt. La caisse ne tombe pas juste. Vingt minutes de recomptage pour un centime.\n\nMinuit vingt. La caisse ne tombe pas juste. Vingt minutes de recomptage pour un centime.\n\nLa clôture de caisse rapproche les encaissements ligne à ligne. L'écart a un nom et une heure.\n\n👉 Tout FoodEatUp : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "hashtags": [
+          "restaurant",
+          "restaurateur",
+          "caisse",
+          "foodeatup",
+          "cloture",
+          "comptabilite"
+        ],
+        "motsCles": [
+          "clôture de caisse",
+          "rapprochement caisse",
+          "session de caisse",
+          "écart de caisse"
+        ],
+        "cta": "Découvrir FoodEatUp"
+      },
+      "instagram": {
+        "legende": "Minuit vingt. La caisse ne tombe pas juste.\nVingt minutes de recomptage pour un centime.\n\nMinuit vingt. La caisse ne tombe pas juste. Vingt minutes de recomptage pour un centime.\n\nLa clôture de caisse rapproche les encaissements ligne à ligne. L'écart a un nom et une heure.\n\nL'Ail en film noir — saison 7, « Les Végé-Fruités font leur cinéma ».\nTout est expliqué sur notre site — lien en bio.\nUne démo ? 06 14 18 92 25",
+        "hashtags": [
+          "restaurant",
+          "restaurateur",
+          "caisse",
+          "foodeatup",
+          "cloture",
+          "comptabilite",
+          "vegefruites",
+          "coupdefeu",
+          "logicielrestaurant",
+          "vieDeResto"
+        ],
+        "motsCles": [
+          "clôture de caisse",
+          "rapprochement caisse",
+          "session de caisse",
+          "écart de caisse"
+        ],
+        "cta": "Tout est en bio"
+      },
+      "tiktok": {
+        "legende": "Minuit vingt. La caisse ne tombe pas juste.\nVingt minutes de recomptage pour un centime.\n\nMinuit vingt. La caisse ne tombe pas juste. Vingt minutes de recomptage pour un centime.\n\nL'Ail en film noir. 🎬",
+        "hashtags": [
+          "restaurant",
+          "restaurateur",
+          "caisse",
+          "foodeatup",
+          "cloture"
+        ],
+        "motsCles": [
+          "clôture de caisse",
+          "rapprochement caisse",
+          "session de caisse",
+          "écart de caisse"
+        ],
+        "cta": "Lien en bio"
+      },
+      "linkedin": {
+        "legende": "Minuit vingt. La caisse ne tombe pas juste.\n\nMinuit vingt. La caisse ne tombe pas juste. Vingt minutes de recomptage pour un centime.\n\nLa clôture de caisse rapproche les encaissements ligne à ligne. L'écart a un nom et une heure.\n\nConcrètement : La clôture de caisse rapproche les encaissements ligne à ligne. L'écart a un nom et une heure.\n\nEn savoir plus : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "hashtags": [
+          "restauration",
+          "foodeatup",
+          "caisse",
+          "cloture",
+          "comptabilite"
+        ],
+        "motsCles": [
+          "clôture de caisse",
+          "rapprochement caisse",
+          "session de caisse",
+          "écart de caisse"
+        ],
+        "cta": "Découvrir FoodEatUp"
+      },
+      "youtube": {
+        "legende": "Minuit vingt. La caisse ne tombe pas juste. Vingt minutes de recomptage pour un centime.\n\nMinuit vingt. La caisse ne tombe pas juste. Vingt minutes de recomptage pour un centime.\n\nLa clôture de caisse rapproche les encaissements ligne à ligne. L'écart a un nom et une heure.\n\n— — —\n\n🔗 https://site.foodeatup.com/\n\n📞 Une démo ? 06 14 18 92 25\n🌐 foodeatup.com\n\nSérie « Le Coup de Feu » — saison 7 « Les Végé-Fruités font leur cinéma », épisode 20 sur 30.\nActe : L'addition · Genre : Film noir · À l'écran : L'Ail\nModule Caisse POS · La clôture de caisse\n\nFoodEatUp est le logiciel qui réunit la caisse, le stock, les plannings, l'HACCP et le marketing d'un restaurant au même endroit.\n",
+        "hashtags": [
+          "Shorts",
+          "restaurant",
+          "restaurateur",
+          "caisse",
+          "foodeatup",
+          "cloture",
+          "comptabilite",
+          "coupdefeu"
+        ],
+        "motsCles": [
+          "clôture de caisse",
+          "rapprochement caisse",
+          "session de caisse",
+          "écart de caisse"
+        ],
+        "cta": "Découvrir FoodEatUp",
+        "titre": "Il manque un centime — Caisse POS | FoodEatUp"
+      }
+    },
+    "promptVignette": "Photo réaliste, cadrage vertical 9:16, traitée comme une affiche de cinéma — film noir. Le chef de l'image de référence — MÊME visage, même barbe, même toque blanche, même veste de cuisine blanche, même tablier blanc au logo FoodEatUp bleu. Ne change ni ses traits ni sa morphologie. Son expression : fatigué, la lampe juste au-dessus de la tête. Scène : il manque un centime. Minuit vingt. La caisse ne tombe pas juste. Décor : une salle vide, chaises sur les tables, une lampe unique au-dessus du tiroir-caisse. Une seule lampe au-dessus, tout le reste dans le noir. Le chef occupe les deux tiers droits du cadre, en plan poitrine ; l'élément du cas reste visible à gauche. Bande crème #FCF9E6 en haut du cadre sur un cinquième de la hauteur, portant UNIQUEMENT le texte « IL MANQUE UN CENTIME » en typographie arrondie très grasse, bleu marine #0F1A23, centré. Aucun autre texte, aucun logo ajouté, pas de filigrane, pas de bordure décorative.",
+    "higgsfieldPrompt": "Vertical 9:16, 10 seconds, photorealistic, cinematic handheld camera, shallow depth of field, natural light, 4K. NO text overlay, NO subtitles, NO watermark, NO logo.\n\nReference image attached — the FoodEatUp chef. Keep his exact face, beard, white toque, white chef jacket and white FoodEatUp apron. Do not alter his features or his build.\n\nFilm-noir pastiche, single hard overhead lamp, deep black shadows, cigarette-smoke haze. An empty restaurant at night. Hands count coins into stacks on a bar top, then knock one stack over and start again. Clock on the wall reads past midnight. The count never balances.\n\nAt 8 seconds the chef from the reference image steps into frame on the right, tired, lit only from above, and looks straight into the camera. Hold that look for the final 2 seconds.\n\nAudio: night room tone, coins on a counter, a distant car. No music.",
+    "scriptHeygen": null,
+    "kit": null,
+    "heygenPrompt": "Avatar : « Chef FoodEatUp » — votre avatar 3D, plan poitrine, regard caméra, fond vert (ou transparent).\nFormat : 1080 × 1920, 9:16, 25 images par seconde.\nVoix : française, masculine, débit posé, ton complice — le chef qui explique, pas celui qui vend.\nDurée visée : 9 secondes — c'est le segment 9,5 s → 18,5 s du master.\n\nScript, à coller tel quel :\n« Minuit vingt, et il manque un centime. Vous allez recompter vingt minutes pour un centime — pas parce qu'il vaut un centime, mais parce que vous ne savez pas d'où il vient. »\n\nRendu : aucun sous-titre, aucune incrustation, aucun logo, aucun décor de fond. Pas de musique. Le montage s'occupe de tout le reste.",
+    "montage": {
+      "consigne": "Monte EP200 : coupe le clip Higgsfield à 9,5 s, pose l'accroche « Minuit vingt. La caisse ne tombe pas juste. » à 5,0 s, empile l'avatar HeyGen et la capture d'écran dans la tablette de 18,5 s à 28,5 s, ferme sur la signature et le sting. Sortie 1080×1920, 37,5 s, −14 LUFS.",
+      "segments": [
+        {
+          "titre": "Hook",
+          "debut": 0,
+          "fin": 9.5,
+          "contenu": "Le plan Higgsfield, recadré en 9:16. L'accroche « Minuit vingt. La caisse ne tombe pas juste. » apparaît à 5,0 s, en bas du cadre."
+        },
+        {
+          "titre": "Transition de marque",
+          "debut": 9.5,
+          "fin": 18.5,
+          "contenu": "L'avatar HeyGen entre par la droite et prend la parole : « Minuit vingt, et il manque un centime. »"
+        },
+        {
+          "titre": "Démo logiciel",
+          "debut": 18.5,
+          "fin": 28.5,
+          "contenu": "La capture d'écran dans la tablette — la clôture de session, le rapprochement ligne à ligne, l'écart identifié avec son heure. L'avatar reste en médaillon en bas à gauche."
+        },
+        {
+          "titre": "Signature",
+          "debut": 28.5,
+          "fin": 32.5,
+          "contenu": "Bandeau crème, la punchline « Vingt minutes de recomptage pour un centime. », le logo FoodEatUp et le repère de saison « L'addition · Film noir »."
+        },
+        {
+          "titre": "Sting",
+          "debut": 32.5,
+          "fin": 37.5,
+          "contenu": "Le sting de marque, « IL MANQUE UN CENTIME » en incrustation, puis l'appel à l'action : https://site.foodeatup.com/ et le 06 14 18 92 25."
+        }
+      ],
+      "livrable": "1080 × 1920 · 37,5 s · H.264 · −14 LUFS · master versé dans la bibliothèque RapidoCMS, prêt à être programmé sur les cinq réseaux."
+    },
+    "metier": null,
+    "phase": null,
+    "amplitude": null,
+    "boucle": null,
+    "boucleSlug": null,
+    "grandeBoucle": null,
+    "incident": null,
+    "incidentHeure": null,
+    "incidentQuoi": null,
+    "saumon": null,
+    "story": {
+      "format": "9:16 · 1080 × 1920 · 10 s",
+      "hook": "Minuit vingt. La caisse ne tombe pas juste",
+      "punchline": "Vingt minutes de recomptage pour un centime",
+      "url": null
+    },
+    "carrousel": null,
+    "imageFacebook": null,
+    "tutoriel": null
+  },
+  "EP201": {
+    "publications": {
+      "facebook": {
+        "legende": "Elle a la carte du restaurant. Quelque part. Le tampon de sa dixième visite est perdu avec.\n\nElle a la carte du restaurant quelque part. Pas dans ce portefeuille-ci. Le tampon de sa dixième visite est perdu avec.\n\nLa fidélité est rattachée au client, pas à un carton. Elle ne peut plus l'oublier chez elle.\n\n👉 Tout FoodEatUp : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "hashtags": [
+          "restaurant",
+          "restaurateur",
+          "fidelite",
+          "foodeatup",
+          "client",
+          "recompense"
+        ],
+        "motsCles": [
+          "programme de fidélité",
+          "carte de fidélité",
+          "points fidélité",
+          "récompense client"
+        ],
+        "cta": "Découvrir FoodEatUp"
+      },
+      "instagram": {
+        "legende": "Elle a la carte du restaurant. Quelque part.\nLe tampon de sa dixième visite est perdu avec.\n\nElle a la carte du restaurant quelque part. Pas dans ce portefeuille-ci. Le tampon de sa dixième visite est perdu avec.\n\nLa fidélité est rattachée au client, pas à un carton. Elle ne peut plus l'oublier chez elle.\n\nLa Fraise en film de collection — saison 7, « Les Végé-Fruités font leur cinéma ».\nTout est expliqué sur notre site — lien en bio.\nUne démo ? 06 14 18 92 25",
+        "hashtags": [
+          "restaurant",
+          "restaurateur",
+          "fidelite",
+          "foodeatup",
+          "client",
+          "recompense",
+          "vegefruites",
+          "coupdefeu",
+          "logicielrestaurant",
+          "vieDeResto"
+        ],
+        "motsCles": [
+          "programme de fidélité",
+          "carte de fidélité",
+          "points fidélité",
+          "récompense client"
+        ],
+        "cta": "Tout est en bio"
+      },
+      "tiktok": {
+        "legende": "Elle a la carte du restaurant. Quelque part.\nLe tampon de sa dixième visite est perdu avec.\n\nElle a la carte du restaurant quelque part. Pas dans ce portefeuille-ci. Le tampon de sa dixième visite est perdu avec.\n\nLa Fraise en film de collection. 🎬",
+        "hashtags": [
+          "restaurant",
+          "restaurateur",
+          "fidelite",
+          "foodeatup",
+          "client"
+        ],
+        "motsCles": [
+          "programme de fidélité",
+          "carte de fidélité",
+          "points fidélité",
+          "récompense client"
+        ],
+        "cta": "Lien en bio"
+      },
+      "linkedin": {
+        "legende": "Elle a la carte du restaurant. Quelque part.\n\nElle a la carte du restaurant quelque part. Pas dans ce portefeuille-ci. Le tampon de sa dixième visite est perdu avec.\n\nLa fidélité est rattachée au client, pas à un carton. Elle ne peut plus l'oublier chez elle.\n\nConcrètement : La fidélité est rattachée au client, pas à un carton. Elle ne peut plus l'oublier chez elle.\n\nEn savoir plus : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "hashtags": [
+          "restauration",
+          "foodeatup",
+          "fidelite",
+          "client",
+          "recompense"
+        ],
+        "motsCles": [
+          "programme de fidélité",
+          "carte de fidélité",
+          "points fidélité",
+          "récompense client"
+        ],
+        "cta": "Découvrir FoodEatUp"
+      },
+      "youtube": {
+        "legende": "Elle a la carte du restaurant. Quelque part. Le tampon de sa dixième visite est perdu avec.\n\nElle a la carte du restaurant quelque part. Pas dans ce portefeuille-ci. Le tampon de sa dixième visite est perdu avec.\n\nLa fidélité est rattachée au client, pas à un carton. Elle ne peut plus l'oublier chez elle.\n\n— — —\n\n🔗 https://site.foodeatup.com/\n\n📞 Une démo ? 06 14 18 92 25\n🌐 foodeatup.com\n\nSérie « Le Coup de Feu » — saison 7 « Les Végé-Fruités font leur cinéma », épisode 21 sur 30.\nActe : L'addition · Genre : Film de collection · À l'écran : La Fraise\nModule Marketing · La fidélité sans carton\n\nFoodEatUp est le logiciel qui réunit la caisse, le stock, les plannings, l'HACCP et le marketing d'un restaurant au même endroit.\n",
+        "hashtags": [
+          "Shorts",
+          "restaurant",
+          "restaurateur",
+          "fidelite",
+          "foodeatup",
+          "client",
+          "recompense",
+          "coupdefeu"
+        ],
+        "motsCles": [
+          "programme de fidélité",
+          "carte de fidélité",
+          "points fidélité",
+          "récompense client"
+        ],
+        "cta": "Découvrir FoodEatUp",
+        "titre": "Quatorze cartes tamponnées — Marketing | FoodEatUp"
+      }
+    },
+    "promptVignette": "Photo réaliste, cadrage vertical 9:16, traitée comme une affiche de cinéma — film de collection. Le chef de l'image de référence — MÊME visage, même barbe, même toque blanche, même veste de cuisine blanche, même tablier blanc au logo FoodEatUp bleu. Ne change ni ses traits ni sa morphologie. Son expression : amusé, une carte à la main. Scène : quatorze cartes tamponnées. Elle a la carte du restaurant. Quelque part. Décor : un portefeuille ouvert sur le comptoir, une dizaine de cartes de fidélité en éventail. Lumière de vitrine, éclairage muséal. Le chef occupe les deux tiers droits du cadre, en plan poitrine ; l'élément du cas reste visible à gauche. Bande crème #FCF9E6 en haut du cadre sur un cinquième de la hauteur, portant UNIQUEMENT le texte « CARTES TAMPONNÉES » en typographie arrondie très grasse, bleu marine #0F1A23, centré. Aucun autre texte, aucun logo ajouté, pas de filigrane, pas de bordure décorative.",
+    "higgsfieldPrompt": "Vertical 9:16, 10 seconds, photorealistic, cinematic handheld camera, shallow depth of field, natural light, 4K. NO text overlay, NO subtitles, NO watermark, NO logo.\n\nReference image attached — the FoodEatUp chef. Keep his exact face, beard, white toque, white chef jacket and white FoodEatUp apron. Do not alter his features or his build.\n\nCollector-film pastiche, macro lens and museum lighting. A wallet opens on a counter. Loyalty cards fan out one by one, each with a different number of ink stamps, all faded. A hand searches through them, faster, then stops. None of them is the right one.\n\nAt 8 seconds the chef from the reference image steps into frame on the right, amused, holding one card up, and looks straight into the camera. Hold that look for the final 2 seconds.\n\nAudio: quiet counter ambience, cards flicking, one small sigh. No music.",
+    "scriptHeygen": null,
+    "kit": null,
+    "heygenPrompt": "Avatar : « Chef FoodEatUp » — votre avatar 3D, plan poitrine, regard caméra, fond vert (ou transparent).\nFormat : 1080 × 1920, 9:16, 25 images par seconde.\nVoix : française, masculine, débit posé, ton complice — le chef qui explique, pas celui qui vend.\nDurée visée : 9 secondes — c'est le segment 9,5 s → 18,5 s du master.\n\nScript, à coller tel quel :\n« Elle vient depuis deux ans. Elle a la carte. Elle ne l'a juste jamais sur elle au bon moment. Ce n'est pas de la fidélité perdue : c'est du carton perdu. »\n\nRendu : aucun sous-titre, aucune incrustation, aucun logo, aucun décor de fond. Pas de musique. Le montage s'occupe de tout le reste.",
+    "montage": {
+      "consigne": "Monte EP201 : coupe le clip Higgsfield à 9,5 s, pose l'accroche « Elle a la carte du restaurant. Quelque part. » à 5,0 s, empile l'avatar HeyGen et la capture d'écran dans la tablette de 18,5 s à 28,5 s, ferme sur la signature et le sting. Sortie 1080×1920, 37,5 s, −14 LUFS.",
+      "segments": [
+        {
+          "titre": "Hook",
+          "debut": 0,
+          "fin": 9.5,
+          "contenu": "Le plan Higgsfield, recadré en 9:16. L'accroche « Elle a la carte du restaurant. Quelque part. » apparaît à 5,0 s, en bas du cadre."
+        },
+        {
+          "titre": "Transition de marque",
+          "debut": 9.5,
+          "fin": 18.5,
+          "contenu": "L'avatar HeyGen entre par la droite et prend la parole : « Elle vient depuis deux ans. »"
+        },
+        {
+          "titre": "Démo logiciel",
+          "debut": 18.5,
+          "fin": 28.5,
+          "contenu": "La capture d'écran dans la tablette — le compte fidélité du client retrouvé par son numéro, avec ses points et sa prochaine récompense. L'avatar reste en médaillon en bas à gauche."
+        },
+        {
+          "titre": "Signature",
+          "debut": 28.5,
+          "fin": 32.5,
+          "contenu": "Bandeau crème, la punchline « Le tampon de sa dixième visite est perdu avec. », le logo FoodEatUp et le repère de saison « L'addition · Film de collection »."
+        },
+        {
+          "titre": "Sting",
+          "debut": 32.5,
+          "fin": 37.5,
+          "contenu": "Le sting de marque, « CARTES TAMPONNÉES » en incrustation, puis l'appel à l'action : https://site.foodeatup.com/ et le 06 14 18 92 25."
+        }
+      ],
+      "livrable": "1080 × 1920 · 37,5 s · H.264 · −14 LUFS · master versé dans la bibliothèque RapidoCMS, prêt à être programmé sur les cinq réseaux."
+    },
+    "metier": null,
+    "phase": null,
+    "amplitude": null,
+    "boucle": null,
+    "boucleSlug": null,
+    "grandeBoucle": null,
+    "incident": null,
+    "incidentHeure": null,
+    "incidentQuoi": null,
+    "saumon": null,
+    "story": {
+      "format": "9:16 · 1080 × 1920 · 10 s",
+      "hook": "Elle a la carte du restaurant. Quelque part",
+      "punchline": "Le tampon de sa dixième visite est perdu avec",
+      "url": null
+    },
+    "carrousel": null,
+    "imageFacebook": null,
+    "tutoriel": null
+  },
+  "EP202": {
+    "publications": {
+      "facebook": {
+        "legende": "« On m'a offert un bon ici. » Utilisé ? Pas utilisé ? De quel montant ? Personne ne sait.\n\n« On m'a offert un bon ici. » Personne ne sait s'il a déjà été utilisé, ni pour quel montant.\n\nLa carte cadeau se vérifie en trois secondes : montant restant, date, historique.\n\n👉 Tout FoodEatUp : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "hashtags": [
+          "restaurant",
+          "restaurateur",
+          "cartecadeau",
+          "foodeatup",
+          "fidelite",
+          "noel"
+        ],
+        "motsCles": [
+          "carte cadeau restaurant",
+          "bon cadeau",
+          "solde carte cadeau",
+          "fidélité restaurant"
+        ],
+        "cta": "Découvrir FoodEatUp"
+      },
+      "instagram": {
+        "legende": "« On m'a offert un bon ici. »\nUtilisé ? Pas utilisé ? De quel montant ? Personne ne sait.\n\n« On m'a offert un bon ici. » Personne ne sait s'il a déjà été utilisé, ni pour quel montant.\n\nLa carte cadeau se vérifie en trois secondes : montant restant, date, historique.\n\nLa Pomme de Terre en film de noël — saison 7, « Les Végé-Fruités font leur cinéma ».\nTout est expliqué sur notre site — lien en bio.\nUne démo ? 06 14 18 92 25",
+        "hashtags": [
+          "restaurant",
+          "restaurateur",
+          "cartecadeau",
+          "foodeatup",
+          "fidelite",
+          "noel",
+          "vegefruites",
+          "coupdefeu",
+          "logicielrestaurant",
+          "vieDeResto"
+        ],
+        "motsCles": [
+          "carte cadeau restaurant",
+          "bon cadeau",
+          "solde carte cadeau",
+          "fidélité restaurant"
+        ],
+        "cta": "Tout est en bio"
+      },
+      "tiktok": {
+        "legende": "« On m'a offert un bon ici. »\nUtilisé ? Pas utilisé ? De quel montant ? Personne ne sait.\n\n« On m'a offert un bon ici. » Personne ne sait s'il a déjà été utilisé, ni pour quel montant.\n\nLa Pomme de Terre en film de noël. 🎬",
+        "hashtags": [
+          "restaurant",
+          "restaurateur",
+          "cartecadeau",
+          "foodeatup",
+          "fidelite"
+        ],
+        "motsCles": [
+          "carte cadeau restaurant",
+          "bon cadeau",
+          "solde carte cadeau",
+          "fidélité restaurant"
+        ],
+        "cta": "Lien en bio"
+      },
+      "linkedin": {
+        "legende": "« On m'a offert un bon ici. »\n\n« On m'a offert un bon ici. » Personne ne sait s'il a déjà été utilisé, ni pour quel montant.\n\nLa carte cadeau se vérifie en trois secondes : montant restant, date, historique.\n\nConcrètement : La carte cadeau se vérifie en trois secondes : montant restant, date, historique.\n\nEn savoir plus : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "hashtags": [
+          "restauration",
+          "foodeatup",
+          "cartecadeau",
+          "fidelite",
+          "noel"
+        ],
+        "motsCles": [
+          "carte cadeau restaurant",
+          "bon cadeau",
+          "solde carte cadeau",
+          "fidélité restaurant"
+        ],
+        "cta": "Découvrir FoodEatUp"
+      },
+      "youtube": {
+        "legende": "« On m'a offert un bon ici. » Utilisé ? Pas utilisé ? De quel montant ? Personne ne sait.\n\n« On m'a offert un bon ici. » Personne ne sait s'il a déjà été utilisé, ni pour quel montant.\n\nLa carte cadeau se vérifie en trois secondes : montant restant, date, historique.\n\n— — —\n\n🔗 https://site.foodeatup.com/\n\n📞 Une démo ? 06 14 18 92 25\n🌐 foodeatup.com\n\nSérie « Le Coup de Feu » — saison 7 « Les Végé-Fruités font leur cinéma », épisode 22 sur 30.\nActe : L'addition · Genre : Film de Noël · À l'écran : La Pomme de Terre\nModule Marketing · Les cartes cadeaux\n\nFoodEatUp est le logiciel qui réunit la caisse, le stock, les plannings, l'HACCP et le marketing d'un restaurant au même endroit.\n",
+        "hashtags": [
+          "Shorts",
+          "restaurant",
+          "restaurateur",
+          "cartecadeau",
+          "foodeatup",
+          "fidelite",
+          "noel",
+          "coupdefeu"
+        ],
+        "motsCles": [
+          "carte cadeau restaurant",
+          "bon cadeau",
+          "solde carte cadeau",
+          "fidélité restaurant"
+        ],
+        "cta": "Découvrir FoodEatUp",
+        "titre": "Le bon cadeau introuvable — Marketing | FoodEatUp"
+      }
+    },
+    "promptVignette": "Photo réaliste, cadrage vertical 9:16, traitée comme une affiche de cinéma — film de noël. Le chef de l'image de référence — MÊME visage, même barbe, même toque blanche, même veste de cuisine blanche, même tablier blanc au logo FoodEatUp bleu. Ne change ni ses traits ni sa morphologie. Son expression : bienveillant, les guirlandes derrière lui. Scène : le bon cadeau introuvable. « On m'a offert un bon ici. » Décor : un comptoir en décembre, un bon cadeau imprimé posé dessus, deux personnes qui l'examinent. Guirlandes en bokeh, lumière chaude. Le chef occupe les deux tiers droits du cadre, en plan poitrine ; l'élément du cas reste visible à gauche. Bande crème #FCF9E6 en haut du cadre sur un cinquième de la hauteur, portant UNIQUEMENT le texte « LE BON INTROUVABLE » en typographie arrondie très grasse, bleu marine #0F1A23, centré. Aucun autre texte, aucun logo ajouté, pas de filigrane, pas de bordure décorative.",
+    "higgsfieldPrompt": "Vertical 9:16, 10 seconds, photorealistic, cinematic handheld camera, shallow depth of field, natural light, 4K. NO text overlay, NO subtitles, NO watermark, NO logo.\n\nReference image attached — the FoodEatUp chef. Keep his exact face, beard, white toque, white chef jacket and white FoodEatUp apron. Do not alter his features or his build.\n\nChristmas-movie pastiche, warm fairy lights bokeh and gentle snowfall outside the window. A crumpled gift voucher is placed on a counter. Two people turn it over, looking for a number. There is none. They both look up at the same time, smiling politely, stuck.\n\nAt 8 seconds the chef from the reference image steps into frame on the right, kindly, fairy lights behind him, and looks straight into the camera. Hold that look for the final 2 seconds.\n\nAudio: gentle bells, quiet chatter, snow outside. No music.",
+    "scriptHeygen": null,
+    "kit": null,
+    "heygenPrompt": "Avatar : « Chef FoodEatUp » — votre avatar 3D, plan poitrine, regard caméra, fond vert (ou transparent).\nFormat : 1080 × 1920, 9:16, 25 images par seconde.\nVoix : française, masculine, débit posé, ton complice — le chef qui explique, pas celui qui vend.\nDurée visée : 9 secondes — c'est le segment 9,5 s → 18,5 s du master.\n\nScript, à coller tel quel :\n« Un bon cadeau, c'est un client qui revient avec de l'argent déjà payé. Ne pas savoir le lire, c'est la seule façon de rater cette vente-là. »\n\nRendu : aucun sous-titre, aucune incrustation, aucun logo, aucun décor de fond. Pas de musique. Le montage s'occupe de tout le reste.",
+    "montage": {
+      "consigne": "Monte EP202 : coupe le clip Higgsfield à 9,5 s, pose l'accroche « « On m'a offert un bon ici. » » à 5,0 s, empile l'avatar HeyGen et la capture d'écran dans la tablette de 18,5 s à 28,5 s, ferme sur la signature et le sting. Sortie 1080×1920, 37,5 s, −14 LUFS.",
+      "segments": [
+        {
+          "titre": "Hook",
+          "debut": 0,
+          "fin": 9.5,
+          "contenu": "Le plan Higgsfield, recadré en 9:16. L'accroche « « On m'a offert un bon ici. » » apparaît à 5,0 s, en bas du cadre."
+        },
+        {
+          "titre": "Transition de marque",
+          "debut": 9.5,
+          "fin": 18.5,
+          "contenu": "L'avatar HeyGen entre par la droite et prend la parole : « Un bon cadeau, c'est un client qui revient avec de l'argent déjà payé. »"
+        },
+        {
+          "titre": "Démo logiciel",
+          "debut": 18.5,
+          "fin": 28.5,
+          "contenu": "La capture d'écran dans la tablette — la vérification de la carte cadeau : montant restant, date d'émission, historique d'utilisation. L'avatar reste en médaillon en bas à gauche."
+        },
+        {
+          "titre": "Signature",
+          "debut": 28.5,
+          "fin": 32.5,
+          "contenu": "Bandeau crème, la punchline « Utilisé ? Pas utilisé ? De quel montant ? Personne ne sait. », le logo FoodEatUp et le repère de saison « L'addition · Film de Noël »."
+        },
+        {
+          "titre": "Sting",
+          "debut": 32.5,
+          "fin": 37.5,
+          "contenu": "Le sting de marque, « LE BON INTROUVABLE » en incrustation, puis l'appel à l'action : https://site.foodeatup.com/ et le 06 14 18 92 25."
+        }
+      ],
+      "livrable": "1080 × 1920 · 37,5 s · H.264 · −14 LUFS · master versé dans la bibliothèque RapidoCMS, prêt à être programmé sur les cinq réseaux."
+    },
+    "metier": null,
+    "phase": null,
+    "amplitude": null,
+    "boucle": null,
+    "boucleSlug": null,
+    "grandeBoucle": null,
+    "incident": null,
+    "incidentHeure": null,
+    "incidentQuoi": null,
+    "saumon": null,
+    "story": {
+      "format": "9:16 · 1080 × 1920 · 10 s",
+      "hook": "« On m'a offert un bon ici. »",
+      "punchline": "Utilisé ? Pas utilisé ? De quel montant ? Personne ne sait",
+      "url": null
+    },
+    "carrousel": null,
+    "imageFacebook": null,
+    "tutoriel": null
+  },
+  "EP203": {
+    "publications": {
+      "facebook": {
+        "legende": "Le terminal ne parle pas à la caisse. On tape le montant à la main. On se trompe d'un chiffre.\n\nLe terminal ne parle pas à la caisse. On tape le montant à la main, on se trompe d'un chiffre, on recommence.\n\nSmile&Pay reçoit le montant depuis la caisse. Plus de saisie, donc plus de faute de frappe.\n\n👉 Tout FoodEatUp : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "hashtags": [
+          "restaurant",
+          "restaurateur",
+          "caisse",
+          "foodeatup",
+          "paiement",
+          "smileandpay"
+        ],
+        "motsCles": [
+          "terminal de paiement",
+          "caisse restaurant",
+          "Smile&Pay",
+          "encaissement carte"
+        ],
+        "cta": "Découvrir FoodEatUp"
+      },
+      "instagram": {
+        "legende": "Le terminal ne parle pas à la caisse.\nOn tape le montant à la main. On se trompe d'un chiffre.\n\nLe terminal ne parle pas à la caisse. On tape le montant à la main, on se trompe d'un chiffre, on recommence.\n\nSmile&Pay reçoit le montant depuis la caisse. Plus de saisie, donc plus de faute de frappe.\n\nL'Ail en film muet — saison 7, « Les Végé-Fruités font leur cinéma ».\nTout est expliqué sur notre site — lien en bio.\nUne démo ? 06 14 18 92 25",
+        "hashtags": [
+          "restaurant",
+          "restaurateur",
+          "caisse",
+          "foodeatup",
+          "paiement",
+          "smileandpay",
+          "vegefruites",
+          "coupdefeu",
+          "logicielrestaurant",
+          "vieDeResto"
+        ],
+        "motsCles": [
+          "terminal de paiement",
+          "caisse restaurant",
+          "Smile&Pay",
+          "encaissement carte"
+        ],
+        "cta": "Tout est en bio"
+      },
+      "tiktok": {
+        "legende": "Le terminal ne parle pas à la caisse.\nOn tape le montant à la main. On se trompe d'un chiffre.\n\nLe terminal ne parle pas à la caisse. On tape le montant à la main, on se trompe d'un chiffre, on recommence.\n\nL'Ail en film muet. 🎬",
+        "hashtags": [
+          "restaurant",
+          "restaurateur",
+          "caisse",
+          "foodeatup",
+          "paiement"
+        ],
+        "motsCles": [
+          "terminal de paiement",
+          "caisse restaurant",
+          "Smile&Pay",
+          "encaissement carte"
+        ],
+        "cta": "Lien en bio"
+      },
+      "linkedin": {
+        "legende": "Le terminal ne parle pas à la caisse.\n\nLe terminal ne parle pas à la caisse. On tape le montant à la main, on se trompe d'un chiffre, on recommence.\n\nSmile&Pay reçoit le montant depuis la caisse. Plus de saisie, donc plus de faute de frappe.\n\nConcrètement : Smile&Pay reçoit le montant depuis la caisse. Plus de saisie, donc plus de faute de frappe.\n\nEn savoir plus : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "hashtags": [
+          "restauration",
+          "foodeatup",
+          "caisse",
+          "paiement",
+          "smileandpay"
+        ],
+        "motsCles": [
+          "terminal de paiement",
+          "caisse restaurant",
+          "Smile&Pay",
+          "encaissement carte"
+        ],
+        "cta": "Découvrir FoodEatUp"
+      },
+      "youtube": {
+        "legende": "Le terminal ne parle pas à la caisse. On tape le montant à la main. On se trompe d'un chiffre.\n\nLe terminal ne parle pas à la caisse. On tape le montant à la main, on se trompe d'un chiffre, on recommence.\n\nSmile&Pay reçoit le montant depuis la caisse. Plus de saisie, donc plus de faute de frappe.\n\n— — —\n\n🔗 https://site.foodeatup.com/\n\n📞 Une démo ? 06 14 18 92 25\n🌐 foodeatup.com\n\nSérie « Le Coup de Feu » — saison 7 « Les Végé-Fruités font leur cinéma », épisode 23 sur 30.\nActe : L'addition · Genre : Film muet · À l'écran : L'Ail\nModule Caisse POS · Le terminal relié\n\nFoodEatUp est le logiciel qui réunit la caisse, le stock, les plannings, l'HACCP et le marketing d'un restaurant au même endroit.\n",
+        "hashtags": [
+          "Shorts",
+          "restaurant",
+          "restaurateur",
+          "caisse",
+          "foodeatup",
+          "paiement",
+          "smileandpay",
+          "coupdefeu"
+        ],
+        "motsCles": [
+          "terminal de paiement",
+          "caisse restaurant",
+          "Smile&Pay",
+          "encaissement carte"
+        ],
+        "cta": "Découvrir FoodEatUp",
+        "titre": "Le terminal capricieux — Caisse POS | FoodEatUp"
+      }
+    },
+    "promptVignette": "Photo réaliste, cadrage vertical 9:16, traitée comme une affiche de cinéma — film muet. Le chef de l'image de référence — MÊME visage, même barbe, même toque blanche, même veste de cuisine blanche, même tablier blanc au logo FoodEatUp bleu. Ne change ni ses traits ni sa morphologie. Son expression : sourcils haussés, la bouche en accent circonflexe. Scène : le terminal capricieux. Le terminal ne parle pas à la caisse. Décor : un comptoir, un terminal de paiement, des doigts qui tapent un montant chiffre par chiffre. Lumière douce, virage sépia, léger grain de pellicule. Le chef occupe les deux tiers droits du cadre, en plan poitrine ; l'élément du cas reste visible à gauche. Bande crème #FCF9E6 en haut du cadre sur un cinquième de la hauteur, portant UNIQUEMENT le texte « TERMINAL CAPRICIEUX » en typographie arrondie très grasse, bleu marine #0F1A23, centré. Aucun autre texte, aucun logo ajouté, pas de filigrane, pas de bordure décorative.",
+    "higgsfieldPrompt": "Vertical 9:16, 10 seconds, photorealistic, cinematic handheld camera, shallow depth of field, natural light, 4K. NO text overlay, NO subtitles, NO watermark, NO logo.\n\nReference image attached — the FoodEatUp chef. Keep his exact face, beard, white toque, white chef jacket and white FoodEatUp apron. Do not alter his features or his build.\n\nSilent-film pastiche, sepia grade, sped-up 18fps motion and an iris-out ending. Fingers punch numbers into a card terminal, stop, punch again, cancel, start over. An intertitle-style black card would go here but there is no text. The customer waits, hat in hand, patient, forever.\n\nAt 8 seconds the chef from the reference image steps into frame on the right, raising both eyebrows in exaggerated silent-film dismay, and looks straight into the camera. Hold that look for the final 2 seconds.\n\nAudio: no dialogue at all — only rain on glass and a distant tram bell. No music.",
+    "scriptHeygen": null,
+    "kit": null,
+    "heygenPrompt": "Avatar : « Chef FoodEatUp » — votre avatar 3D, plan poitrine, regard caméra, fond vert (ou transparent).\nFormat : 1080 × 1920, 9:16, 25 images par seconde.\nVoix : française, masculine, débit posé, ton complice — le chef qui explique, pas celui qui vend.\nDurée visée : 9 secondes — c'est le segment 9,5 s → 18,5 s du master.\n\nScript, à coller tel quel :\n« Le terminal ne parle pas à la caisse, alors on tape. Et quand on tape trois cents fois par semaine, on se trompe. Ce n'est pas une erreur d'attention : c'est une erreur de câblage. »\n\nRendu : aucun sous-titre, aucune incrustation, aucun logo, aucun décor de fond. Pas de musique. Le montage s'occupe de tout le reste.",
+    "montage": {
+      "consigne": "Monte EP203 : coupe le clip Higgsfield à 9,5 s, pose l'accroche « Le terminal ne parle pas à la caisse. » à 5,0 s, empile l'avatar HeyGen et la capture d'écran dans la tablette de 18,5 s à 28,5 s, ferme sur la signature et le sting. Sortie 1080×1920, 37,5 s, −14 LUFS.",
+      "segments": [
+        {
+          "titre": "Hook",
+          "debut": 0,
+          "fin": 9.5,
+          "contenu": "Le plan Higgsfield, recadré en 9:16. L'accroche « Le terminal ne parle pas à la caisse. » apparaît à 5,0 s, en bas du cadre."
+        },
+        {
+          "titre": "Transition de marque",
+          "debut": 9.5,
+          "fin": 18.5,
+          "contenu": "L'avatar HeyGen entre par la droite et prend la parole : « Le terminal ne parle pas à la caisse, alors on tape. »"
+        },
+        {
+          "titre": "Démo logiciel",
+          "debut": 18.5,
+          "fin": 28.5,
+          "contenu": "La capture d'écran dans la tablette — l'encaissement envoyé de la caisse au terminal, le montant qui s'affiche tout seul. L'avatar reste en médaillon en bas à gauche."
+        },
+        {
+          "titre": "Signature",
+          "debut": 28.5,
+          "fin": 32.5,
+          "contenu": "Bandeau crème, la punchline « On tape le montant à la main. On se trompe d'un chiffre. », le logo FoodEatUp et le repère de saison « L'addition · Film muet »."
+        },
+        {
+          "titre": "Sting",
+          "debut": 32.5,
+          "fin": 37.5,
+          "contenu": "Le sting de marque, « TERMINAL CAPRICIEUX » en incrustation, puis l'appel à l'action : https://site.foodeatup.com/ et le 06 14 18 92 25."
+        }
+      ],
+      "livrable": "1080 × 1920 · 37,5 s · H.264 · −14 LUFS · master versé dans la bibliothèque RapidoCMS, prêt à être programmé sur les cinq réseaux."
+    },
+    "metier": null,
+    "phase": null,
+    "amplitude": null,
+    "boucle": null,
+    "boucleSlug": null,
+    "grandeBoucle": null,
+    "incident": null,
+    "incidentHeure": null,
+    "incidentQuoi": null,
+    "saumon": null,
+    "story": {
+      "format": "9:16 · 1080 × 1920 · 10 s",
+      "hook": "Le terminal ne parle pas à la caisse",
+      "punchline": "On tape le montant à la main. On se trompe d'un chiffre",
+      "url": null
+    },
+    "carrousel": null,
+    "imageFacebook": null,
+    "tutoriel": null
+  },
+  "EP204": {
+    "publications": {
+      "facebook": {
+        "legende": "Il commande sur une plateforme qui prend trente pour cent. Pour un restaurant à quatre cents mètres de chez lui.\n\nIl commande sur une plateforme qui prend trente pour cent, pour un restaurant à quatre cents mètres de chez lui.\n\nLa commande en ligne du restaurant, avec sa zone de livraison. Le même trajet, sans la commission.\n\n👉 Tout FoodEatUp : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "hashtags": [
+          "restaurant",
+          "restaurateur",
+          "commandeenligne",
+          "foodeatup",
+          "livraison",
+          "hubrise"
+        ],
+        "motsCles": [
+          "commande en ligne restaurant",
+          "livraison sans commission",
+          "zone de livraison",
+          "click and collect"
+        ],
+        "cta": "Découvrir FoodEatUp"
+      },
+      "instagram": {
+        "legende": "Il commande sur une plateforme qui prend trente pour cent.\nPour un restaurant à quatre cents mètres de chez lui.\n\nIl commande sur une plateforme qui prend trente pour cent, pour un restaurant à quatre cents mètres de chez lui.\n\nLa commande en ligne du restaurant, avec sa zone de livraison. Le même trajet, sans la commission.\n\nLa Betterave en film à domicile — saison 7, « Les Végé-Fruités font leur cinéma ».\nTout est expliqué sur notre site — lien en bio.\nUne démo ? 06 14 18 92 25",
+        "hashtags": [
+          "restaurant",
+          "restaurateur",
+          "commandeenligne",
+          "foodeatup",
+          "livraison",
+          "hubrise",
+          "vegefruites",
+          "coupdefeu",
+          "logicielrestaurant",
+          "vieDeResto"
+        ],
+        "motsCles": [
+          "commande en ligne restaurant",
+          "livraison sans commission",
+          "zone de livraison",
+          "click and collect"
+        ],
+        "cta": "Tout est en bio"
+      },
+      "tiktok": {
+        "legende": "Il commande sur une plateforme qui prend trente pour cent.\nPour un restaurant à quatre cents mètres de chez lui.\n\nIl commande sur une plateforme qui prend trente pour cent, pour un restaurant à quatre cents mètres de chez lui.\n\nLa Betterave en film à domicile. 🎬",
+        "hashtags": [
+          "restaurant",
+          "restaurateur",
+          "commandeenligne",
+          "foodeatup",
+          "livraison"
+        ],
+        "motsCles": [
+          "commande en ligne restaurant",
+          "livraison sans commission",
+          "zone de livraison",
+          "click and collect"
+        ],
+        "cta": "Lien en bio"
+      },
+      "linkedin": {
+        "legende": "Il commande sur une plateforme qui prend trente pour cent.\n\nIl commande sur une plateforme qui prend trente pour cent, pour un restaurant à quatre cents mètres de chez lui.\n\nLa commande en ligne du restaurant, avec sa zone de livraison. Le même trajet, sans la commission.\n\nConcrètement : La commande en ligne du restaurant, avec sa zone de livraison. Le même trajet, sans la commission.\n\nEn savoir plus : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "hashtags": [
+          "restauration",
+          "foodeatup",
+          "commandeenligne",
+          "livraison",
+          "hubrise"
+        ],
+        "motsCles": [
+          "commande en ligne restaurant",
+          "livraison sans commission",
+          "zone de livraison",
+          "click and collect"
+        ],
+        "cta": "Découvrir FoodEatUp"
+      },
+      "youtube": {
+        "legende": "Il commande sur une plateforme qui prend trente pour cent. Pour un restaurant à quatre cents mètres de chez lui.\n\nIl commande sur une plateforme qui prend trente pour cent, pour un restaurant à quatre cents mètres de chez lui.\n\nLa commande en ligne du restaurant, avec sa zone de livraison. Le même trajet, sans la commission.\n\n— — —\n\n🔗 https://site.foodeatup.com/\n\n📞 Une démo ? 06 14 18 92 25\n🌐 foodeatup.com\n\nSérie « Le Coup de Feu » — saison 7 « Les Végé-Fruités font leur cinéma », épisode 24 sur 30.\nActe : L'addition · Genre : Film à domicile · À l'écran : La Betterave\nModule HubRise · La commande en ligne\n\nFoodEatUp est le logiciel qui réunit la caisse, le stock, les plannings, l'HACCP et le marketing d'un restaurant au même endroit.\n",
+        "hashtags": [
+          "Shorts",
+          "restaurant",
+          "restaurateur",
+          "commandeenligne",
+          "foodeatup",
+          "livraison",
+          "hubrise",
+          "coupdefeu"
+        ],
+        "motsCles": [
+          "commande en ligne restaurant",
+          "livraison sans commission",
+          "zone de livraison",
+          "click and collect"
+        ],
+        "cta": "Découvrir FoodEatUp",
+        "titre": "Depuis mon canapé — HubRise | FoodEatUp"
+      }
+    },
+    "promptVignette": "Photo réaliste, cadrage vertical 9:16, traitée comme une affiche de cinéma — film à domicile. Le chef de l'image de référence — MÊME visage, même barbe, même toque blanche, même veste de cuisine blanche, même tablier blanc au logo FoodEatUp bleu. Ne change ni ses traits ni sa morphologie. Son expression : détendu, comme chez lui. Scène : depuis mon canapé. Il commande sur une plateforme qui prend trente pour cent. Décor : un salon le soir, un téléphone allumé, et par la fenêtre l'enseigne du restaurant d'en face. Lumière de lampe de salon, teintes ambrées. Le chef occupe les deux tiers droits du cadre, en plan poitrine ; l'élément du cas reste visible à gauche. Bande crème #FCF9E6 en haut du cadre sur un cinquième de la hauteur, portant UNIQUEMENT le texte « DEPUIS MON CANAPÉ » en typographie arrondie très grasse, bleu marine #0F1A23, centré. Aucun autre texte, aucun logo ajouté, pas de filigrane, pas de bordure décorative.",
+    "higgsfieldPrompt": "Vertical 9:16, 10 seconds, photorealistic, cinematic handheld camera, shallow depth of field, natural light, 4K. NO text overlay, NO subtitles, NO watermark, NO logo.\n\nReference image attached — the FoodEatUp chef. Keep his exact face, beard, white toque, white chef jacket and white FoodEatUp apron. Do not alter his features or his build.\n\nHome-video pastiche, slightly soft lens and lived-in lamplight. Someone orders on a phone from a sofa. Push past them to the window: the restaurant's lit sign is visible across the street, barely four hundred metres away. Pull back to the phone, where a delivery fee line appears.\n\nAt 8 seconds the chef from the reference image steps into frame on the right, relaxed, as if at home, and looks straight into the camera. Hold that look for the final 2 seconds.\n\nAudio: living-room ambience, a phone tap, muffled street. No music.",
+    "scriptHeygen": null,
+    "kit": null,
+    "heygenPrompt": "Avatar : « Chef FoodEatUp » — votre avatar 3D, plan poitrine, regard caméra, fond vert (ou transparent).\nFormat : 1080 × 1920, 9:16, 25 images par seconde.\nVoix : française, masculine, débit posé, ton complice — le chef qui explique, pas celui qui vend.\nDurée visée : 9 secondes — c'est le segment 9,5 s → 18,5 s du master.\n\nScript, à coller tel quel :\n« Il habite à quatre cents mètres. Il commande via une plateforme qui prend trente pour cent. Le trajet est le même : c'est la commission qui change. »\n\nRendu : aucun sous-titre, aucune incrustation, aucun logo, aucun décor de fond. Pas de musique. Le montage s'occupe de tout le reste.",
+    "montage": {
+      "consigne": "Monte EP204 : coupe le clip Higgsfield à 9,5 s, pose l'accroche « Il commande sur une plateforme qui prend trente pour cent. » à 5,0 s, empile l'avatar HeyGen et la capture d'écran dans la tablette de 18,5 s à 28,5 s, ferme sur la signature et le sting. Sortie 1080×1920, 37,5 s, −14 LUFS.",
+      "segments": [
+        {
+          "titre": "Hook",
+          "debut": 0,
+          "fin": 9.5,
+          "contenu": "Le plan Higgsfield, recadré en 9:16. L'accroche « Il commande sur une plateforme qui prend trente pour cent. » apparaît à 5,0 s, en bas du cadre."
+        },
+        {
+          "titre": "Transition de marque",
+          "debut": 9.5,
+          "fin": 18.5,
+          "contenu": "L'avatar HeyGen entre par la droite et prend la parole : « Il habite à quatre cents mètres. »"
+        },
+        {
+          "titre": "Démo logiciel",
+          "debut": 18.5,
+          "fin": 28.5,
+          "contenu": "La capture d'écran dans la tablette — la commande en ligne du restaurant, sa zone de livraison sur la carte, et la commande reçue en cuisine. L'avatar reste en médaillon en bas à gauche."
+        },
+        {
+          "titre": "Signature",
+          "debut": 28.5,
+          "fin": 32.5,
+          "contenu": "Bandeau crème, la punchline « Pour un restaurant à quatre cents mètres de chez lui. », le logo FoodEatUp et le repère de saison « L'addition · Film à domicile »."
+        },
+        {
+          "titre": "Sting",
+          "debut": 32.5,
+          "fin": 37.5,
+          "contenu": "Le sting de marque, « DEPUIS MON CANAPÉ » en incrustation, puis l'appel à l'action : https://site.foodeatup.com/ et le 06 14 18 92 25."
+        }
+      ],
+      "livrable": "1080 × 1920 · 37,5 s · H.264 · −14 LUFS · master versé dans la bibliothèque RapidoCMS, prêt à être programmé sur les cinq réseaux."
+    },
+    "metier": null,
+    "phase": null,
+    "amplitude": null,
+    "boucle": null,
+    "boucleSlug": null,
+    "grandeBoucle": null,
+    "incident": null,
+    "incidentHeure": null,
+    "incidentQuoi": null,
+    "saumon": null,
+    "story": {
+      "format": "9:16 · 1080 × 1920 · 10 s",
+      "hook": "Il commande sur une plateforme qui prend trente pour cent",
+      "punchline": "Pour un restaurant à quatre cents mètres de chez lui",
+      "url": null
+    },
+    "carrousel": null,
+    "imageFacebook": null,
+    "tutoriel": null
+  },
+  "EP205": {
+    "publications": {
+      "facebook": {
+        "legende": "Un avis une étoile, en haut de la fiche, depuis six jours. Trente personnes l'ont lu. Personne n'a répondu.\n\nUn avis une étoile, en haut de la fiche, depuis six jours. Trente personnes l'ont lu. Personne n'a répondu.\n\nLes avis remontent au même endroit que le reste, et la réponse part de là. Ce qui coûte, ce n'est pas l'avis : c'est le silence à côté.\n\n👉 Tout FoodEatUp : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "hashtags": [
+          "restaurant",
+          "restaurateur",
+          "avis",
+          "foodeatup",
+          "ereputation",
+          "marketing"
+        ],
+        "motsCles": [
+          "répondre aux avis",
+          "avis clients restaurant",
+          "e-réputation",
+          "gestion des avis"
+        ],
+        "cta": "Découvrir FoodEatUp"
+      },
+      "instagram": {
+        "legende": "Un avis une étoile, en haut de la fiche, depuis six jours.\nTrente personnes l'ont lu. Personne n'a répondu.\n\nUn avis une étoile, en haut de la fiche, depuis six jours. Trente personnes l'ont lu. Personne n'a répondu.\n\nLes avis remontent au même endroit que le reste, et la réponse part de là. Ce qui coûte, ce n'est pas l'avis : c'est le silence à côté.\n\nLa Fraise en film de procès — saison 7, « Les Végé-Fruités font leur cinéma ».\nTout est expliqué sur notre site — lien en bio.\nUne démo ? 06 14 18 92 25",
+        "hashtags": [
+          "restaurant",
+          "restaurateur",
+          "avis",
+          "foodeatup",
+          "ereputation",
+          "marketing",
+          "vegefruites",
+          "coupdefeu",
+          "logicielrestaurant",
+          "vieDeResto"
+        ],
+        "motsCles": [
+          "répondre aux avis",
+          "avis clients restaurant",
+          "e-réputation",
+          "gestion des avis"
+        ],
+        "cta": "Tout est en bio"
+      },
+      "tiktok": {
+        "legende": "Un avis une étoile, en haut de la fiche, depuis six jours.\nTrente personnes l'ont lu. Personne n'a répondu.\n\nUn avis une étoile, en haut de la fiche, depuis six jours. Trente personnes l'ont lu. Personne n'a répondu.\n\nLa Fraise en film de procès. 🎬",
+        "hashtags": [
+          "restaurant",
+          "restaurateur",
+          "avis",
+          "foodeatup",
+          "ereputation"
+        ],
+        "motsCles": [
+          "répondre aux avis",
+          "avis clients restaurant",
+          "e-réputation",
+          "gestion des avis"
+        ],
+        "cta": "Lien en bio"
+      },
+      "linkedin": {
+        "legende": "Un avis une étoile, en haut de la fiche, depuis six jours.\n\nUn avis une étoile, en haut de la fiche, depuis six jours. Trente personnes l'ont lu. Personne n'a répondu.\n\nLes avis remontent au même endroit que le reste, et la réponse part de là. Ce qui coûte, ce n'est pas l'avis : c'est le silence à côté.\n\nConcrètement : Les avis remontent au même endroit que le reste, et la réponse part de là. Ce qui coûte, ce n'est pas l'avis : c'est le silence à côté.\n\nEn savoir plus : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "hashtags": [
+          "restauration",
+          "foodeatup",
+          "avis",
+          "ereputation",
+          "marketing"
+        ],
+        "motsCles": [
+          "répondre aux avis",
+          "avis clients restaurant",
+          "e-réputation",
+          "gestion des avis"
+        ],
+        "cta": "Découvrir FoodEatUp"
+      },
+      "youtube": {
+        "legende": "Un avis une étoile, en haut de la fiche, depuis six jours. Trente personnes l'ont lu. Personne n'a répondu.\n\nUn avis une étoile, en haut de la fiche, depuis six jours. Trente personnes l'ont lu. Personne n'a répondu.\n\nLes avis remontent au même endroit que le reste, et la réponse part de là. Ce qui coûte, ce n'est pas l'avis : c'est le silence à côté.\n\n— — —\n\n🔗 https://site.foodeatup.com/\n\n📞 Une démo ? 06 14 18 92 25\n🌐 foodeatup.com\n\nSérie « Le Coup de Feu » — saison 7 « Les Végé-Fruités font leur cinéma », épisode 25 sur 30.\nActe : Le lendemain · Genre : Film de procès · À l'écran : La Fraise\nModule Marketing · Répondre aux avis\n\nFoodEatUp est le logiciel qui réunit la caisse, le stock, les plannings, l'HACCP et le marketing d'un restaurant au même endroit.\n",
+        "hashtags": [
+          "Shorts",
+          "restaurant",
+          "restaurateur",
+          "avis",
+          "foodeatup",
+          "ereputation",
+          "marketing",
+          "coupdefeu"
+        ],
+        "motsCles": [
+          "répondre aux avis",
+          "avis clients restaurant",
+          "e-réputation",
+          "gestion des avis"
+        ],
+        "cta": "Découvrir FoodEatUp",
+        "titre": "Une étoile, six jours — Marketing | FoodEatUp"
+      }
+    },
+    "promptVignette": "Photo réaliste, cadrage vertical 9:16, traitée comme une affiche de cinéma — film de procès. Le chef de l'image de référence — MÊME visage, même barbe, même toque blanche, même veste de cuisine blanche, même tablier blanc au logo FoodEatUp bleu. Ne change ni ses traits ni sa morphologie. Son expression : grave, les mains à plat sur la table. Scène : une étoile, six jours. Un avis une étoile, en haut de la fiche, depuis six jours. Décor : un écran de téléphone, une fiche d'établissement, un avis une étoile épinglé en haut. Lumière dure venue du plafond, fond sombre. Le chef occupe les deux tiers droits du cadre, en plan poitrine ; l'élément du cas reste visible à gauche. Bande crème #FCF9E6 en haut du cadre sur un cinquième de la hauteur, portant UNIQUEMENT le texte « UNE ÉTOILE » en typographie arrondie très grasse, bleu marine #0F1A23, centré. Aucun autre texte, aucun logo ajouté, pas de filigrane, pas de bordure décorative.",
+    "higgsfieldPrompt": "Vertical 9:16, 10 seconds, photorealistic, cinematic handheld camera, shallow depth of field, natural light, 4K. NO text overlay, NO subtitles, NO watermark, NO logo.\n\nReference image attached — the FoodEatUp chef. Keep his exact face, beard, white toque, white chef jacket and white FoodEatUp apron. Do not alter his features or his build.\n\nCourtroom pastiche, cold overhead light and a slow drift toward the bench. A phone screen shows a one-star review pinned at the top of a listing. Beneath it, an empty reply field blinks. Cut to an empty chair where the defence should be. Nothing is said.\n\nAt 8 seconds the chef from the reference image steps into frame on the right, placing both hands flat, deadly serious, and looks straight into the camera. Hold that look for the final 2 seconds.\n\nAudio: courtroom-style room tone, a single gavel knock, then silence. No music.",
+    "scriptHeygen": null,
+    "kit": null,
+    "heygenPrompt": "Avatar : « Chef FoodEatUp » — votre avatar 3D, plan poitrine, regard caméra, fond vert (ou transparent).\nFormat : 1080 × 1920, 9:16, 25 images par seconde.\nVoix : française, masculine, débit posé, ton complice — le chef qui explique, pas celui qui vend.\nDurée visée : 9 secondes — c'est le segment 9,5 s → 18,5 s du master.\n\nScript, à coller tel quel :\n« Un avis une étoile ne coûte pas grand-chose. Un avis une étoile sans réponse, en haut de la fiche, pendant six jours — ça, ça coûte. »\n\nRendu : aucun sous-titre, aucune incrustation, aucun logo, aucun décor de fond. Pas de musique. Le montage s'occupe de tout le reste.",
+    "montage": {
+      "consigne": "Monte EP205 : coupe le clip Higgsfield à 9,5 s, pose l'accroche « Un avis une étoile, en haut de la fiche, depuis six jours. » à 5,0 s, empile l'avatar HeyGen et la capture d'écran dans la tablette de 18,5 s à 28,5 s, ferme sur la signature et le sting. Sortie 1080×1920, 37,5 s, −14 LUFS.",
+      "segments": [
+        {
+          "titre": "Hook",
+          "debut": 0,
+          "fin": 9.5,
+          "contenu": "Le plan Higgsfield, recadré en 9:16. L'accroche « Un avis une étoile, en haut de la fiche, depuis six jours. » apparaît à 5,0 s, en bas du cadre."
+        },
+        {
+          "titre": "Transition de marque",
+          "debut": 9.5,
+          "fin": 18.5,
+          "contenu": "L'avatar HeyGen entre par la droite et prend la parole : « Un avis une étoile ne coûte pas grand-chose. »"
+        },
+        {
+          "titre": "Démo logiciel",
+          "debut": 18.5,
+          "fin": 28.5,
+          "contenu": "La capture d'écran dans la tablette — l'avis remonté dans le tableau de bord, et la réponse publiée depuis le même écran. L'avatar reste en médaillon en bas à gauche."
+        },
+        {
+          "titre": "Signature",
+          "debut": 28.5,
+          "fin": 32.5,
+          "contenu": "Bandeau crème, la punchline « Trente personnes l'ont lu. Personne n'a répondu. », le logo FoodEatUp et le repère de saison « Le lendemain · Film de procès »."
+        },
+        {
+          "titre": "Sting",
+          "debut": 32.5,
+          "fin": 37.5,
+          "contenu": "Le sting de marque, « UNE ÉTOILE » en incrustation, puis l'appel à l'action : https://site.foodeatup.com/ et le 06 14 18 92 25."
+        }
+      ],
+      "livrable": "1080 × 1920 · 37,5 s · H.264 · −14 LUFS · master versé dans la bibliothèque RapidoCMS, prêt à être programmé sur les cinq réseaux."
+    },
+    "metier": null,
+    "phase": null,
+    "amplitude": null,
+    "boucle": null,
+    "boucleSlug": null,
+    "grandeBoucle": null,
+    "incident": null,
+    "incidentHeure": null,
+    "incidentQuoi": null,
+    "saumon": null,
+    "story": {
+      "format": "9:16 · 1080 × 1920 · 10 s",
+      "hook": "Un avis une étoile, en haut de la fiche, depuis six jours",
+      "punchline": "Trente personnes l'ont lu. Personne n'a répondu",
+      "url": null
+    },
+    "carrousel": null,
+    "imageFacebook": null,
+    "tutoriel": null
+  },
+  "EP206": {
+    "publications": {
+      "facebook": {
+        "legende": "« Tout s'est bien passé ? » — « Très bien, merci. » Ils ne reviendront pas, et on ne saura jamais pourquoi.\n\n« Tout s'est bien passé ? » — « Très bien, merci. » Ils ne reviennent pas. On ne saura jamais pourquoi.\n\nLe sondage part après le repas, pas pendant. On répond franchement à un écran, rarement à quelqu'un qui débarrasse.\n\n👉 Tout FoodEatUp : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "hashtags": [
+          "restaurant",
+          "restaurateur",
+          "sondage",
+          "foodeatup",
+          "satisfaction",
+          "client"
+        ],
+        "motsCles": [
+          "sondage client restaurant",
+          "satisfaction client",
+          "retour client",
+          "enquête après visite"
+        ],
+        "cta": "Découvrir FoodEatUp"
+      },
+      "instagram": {
+        "legende": "« Tout s'est bien passé ? » — « Très bien, merci. »\nIls ne reviendront pas, et on ne saura jamais pourquoi.\n\n« Tout s'est bien passé ? » — « Très bien, merci. » Ils ne reviennent pas. On ne saura jamais pourquoi.\n\nLe sondage part après le repas, pas pendant. On répond franchement à un écran, rarement à quelqu'un qui débarrasse.\n\nLe Navet en film d'enquête — saison 7, « Les Végé-Fruités font leur cinéma ».\nTout est expliqué sur notre site — lien en bio.\nUne démo ? 06 14 18 92 25",
+        "hashtags": [
+          "restaurant",
+          "restaurateur",
+          "sondage",
+          "foodeatup",
+          "satisfaction",
+          "client",
+          "vegefruites",
+          "coupdefeu",
+          "logicielrestaurant",
+          "vieDeResto"
+        ],
+        "motsCles": [
+          "sondage client restaurant",
+          "satisfaction client",
+          "retour client",
+          "enquête après visite"
+        ],
+        "cta": "Tout est en bio"
+      },
+      "tiktok": {
+        "legende": "« Tout s'est bien passé ? » — « Très bien, merci. »\nIls ne reviendront pas, et on ne saura jamais pourquoi.\n\n« Tout s'est bien passé ? » — « Très bien, merci. » Ils ne reviennent pas. On ne saura jamais pourquoi.\n\nLe Navet en film d'enquête. 🎬",
+        "hashtags": [
+          "restaurant",
+          "restaurateur",
+          "sondage",
+          "foodeatup",
+          "satisfaction"
+        ],
+        "motsCles": [
+          "sondage client restaurant",
+          "satisfaction client",
+          "retour client",
+          "enquête après visite"
+        ],
+        "cta": "Lien en bio"
+      },
+      "linkedin": {
+        "legende": "« Tout s'est bien passé ? » — « Très bien, merci. »\n\n« Tout s'est bien passé ? » — « Très bien, merci. » Ils ne reviennent pas. On ne saura jamais pourquoi.\n\nLe sondage part après le repas, pas pendant. On répond franchement à un écran, rarement à quelqu'un qui débarrasse.\n\nConcrètement : Le sondage part après le repas, pas pendant. On répond franchement à un écran, rarement à quelqu'un qui débarrasse.\n\nEn savoir plus : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "hashtags": [
+          "restauration",
+          "foodeatup",
+          "sondage",
+          "satisfaction",
+          "client"
+        ],
+        "motsCles": [
+          "sondage client restaurant",
+          "satisfaction client",
+          "retour client",
+          "enquête après visite"
+        ],
+        "cta": "Découvrir FoodEatUp"
+      },
+      "youtube": {
+        "legende": "« Tout s'est bien passé ? » — « Très bien, merci. » Ils ne reviendront pas, et on ne saura jamais pourquoi.\n\n« Tout s'est bien passé ? » — « Très bien, merci. » Ils ne reviennent pas. On ne saura jamais pourquoi.\n\nLe sondage part après le repas, pas pendant. On répond franchement à un écran, rarement à quelqu'un qui débarrasse.\n\n— — —\n\n🔗 https://site.foodeatup.com/\n\n📞 Une démo ? 06 14 18 92 25\n🌐 foodeatup.com\n\nSérie « Le Coup de Feu » — saison 7 « Les Végé-Fruités font leur cinéma », épisode 26 sur 30.\nActe : Le lendemain · Genre : Film d'enquête · À l'écran : Le Navet\nModule Marketing · Le sondage après le repas\n\nFoodEatUp est le logiciel qui réunit la caisse, le stock, les plannings, l'HACCP et le marketing d'un restaurant au même endroit.\n",
+        "hashtags": [
+          "Shorts",
+          "restaurant",
+          "restaurateur",
+          "sondage",
+          "foodeatup",
+          "satisfaction",
+          "client",
+          "coupdefeu"
+        ],
+        "motsCles": [
+          "sondage client restaurant",
+          "satisfaction client",
+          "retour client",
+          "enquête après visite"
+        ],
+        "cta": "Découvrir FoodEatUp",
+        "titre": "Ce qu'ils n'ont pas dit — Marketing | FoodEatUp"
+      }
+    },
+    "promptVignette": "Photo réaliste, cadrage vertical 9:16, traitée comme une affiche de cinéma — film d'enquête. Le chef de l'image de référence — MÊME visage, même barbe, même toque blanche, même veste de cuisine blanche, même tablier blanc au logo FoodEatUp bleu. Ne change ni ses traits ni sa morphologie. Son expression : attentif, il note quelque chose. Scène : ce qu'ils n'ont pas dit. « Tout s'est bien passé ? » — « Très bien, merci. » Décor : une table qu'on débarrasse, deux clients qui sourient poliment en enfilant leur manteau. Lumière neutre, caméra fixe, cadre large. Le chef occupe les deux tiers droits du cadre, en plan poitrine ; l'élément du cas reste visible à gauche. Bande crème #FCF9E6 en haut du cadre sur un cinquième de la hauteur, portant UNIQUEMENT le texte « CE QU'ILS N'ONT PAS DIT » en typographie arrondie très grasse, bleu marine #0F1A23, centré. Aucun autre texte, aucun logo ajouté, pas de filigrane, pas de bordure décorative.",
+    "higgsfieldPrompt": "Vertical 9:16, 10 seconds, photorealistic, cinematic handheld camera, shallow depth of field, natural light, 4K. NO text overlay, NO subtitles, NO watermark, NO logo.\n\nReference image attached — the FoodEatUp chef. Keep his exact face, beard, white toque, white chef jacket and white FoodEatUp apron. Do not alter his features or his build.\n\nInvestigative-documentary pastiche, static locked-off camera and observational distance. Two diners put on their coats, smile, nod politely, and leave. Hold on the empty table for four full seconds after they are gone. Nothing happens. That is the shot.\n\nAt 8 seconds the chef from the reference image steps into frame on the right, attentive, writing something down, and looks straight into the camera. Hold that look for the final 2 seconds.\n\nAudio: observational room tone, a door closing, held silence. No music.",
+    "scriptHeygen": null,
+    "kit": null,
+    "heygenPrompt": "Avatar : « Chef FoodEatUp » — votre avatar 3D, plan poitrine, regard caméra, fond vert (ou transparent).\nFormat : 1080 × 1920, 9:16, 25 images par seconde.\nVoix : française, masculine, débit posé, ton complice — le chef qui explique, pas celui qui vend.\nDurée visée : 9 secondes — c'est le segment 9,5 s → 18,5 s du master.\n\nScript, à coller tel quel :\n« « Très bien, merci. » C'est la phrase la plus polie et la moins utile du métier. Personne ne dit la vérité à quelqu'un qui tient une pile d'assiettes. »\n\nRendu : aucun sous-titre, aucune incrustation, aucun logo, aucun décor de fond. Pas de musique. Le montage s'occupe de tout le reste.",
+    "montage": {
+      "consigne": "Monte EP206 : coupe le clip Higgsfield à 9,5 s, pose l'accroche « « Tout s'est bien passé ? » — « Très bien, merci. » » à 5,0 s, empile l'avatar HeyGen et la capture d'écran dans la tablette de 18,5 s à 28,5 s, ferme sur la signature et le sting. Sortie 1080×1920, 37,5 s, −14 LUFS.",
+      "segments": [
+        {
+          "titre": "Hook",
+          "debut": 0,
+          "fin": 9.5,
+          "contenu": "Le plan Higgsfield, recadré en 9:16. L'accroche « « Tout s'est bien passé ? » — « Très bien, merci. » » apparaît à 5,0 s, en bas du cadre."
+        },
+        {
+          "titre": "Transition de marque",
+          "debut": 9.5,
+          "fin": 18.5,
+          "contenu": "L'avatar HeyGen entre par la droite et prend la parole : « « Très bien, merci. »"
+        },
+        {
+          "titre": "Démo logiciel",
+          "debut": 18.5,
+          "fin": 28.5,
+          "contenu": "La capture d'écran dans la tablette — le sondage envoyé après le repas, et les réponses qui remontent regroupées. L'avatar reste en médaillon en bas à gauche."
+        },
+        {
+          "titre": "Signature",
+          "debut": 28.5,
+          "fin": 32.5,
+          "contenu": "Bandeau crème, la punchline « Ils ne reviendront pas, et on ne saura jamais pourquoi. », le logo FoodEatUp et le repère de saison « Le lendemain · Film d'enquête »."
+        },
+        {
+          "titre": "Sting",
+          "debut": 32.5,
+          "fin": 37.5,
+          "contenu": "Le sting de marque, « CE QU'ILS N'ONT PAS DIT » en incrustation, puis l'appel à l'action : https://site.foodeatup.com/ et le 06 14 18 92 25."
+        }
+      ],
+      "livrable": "1080 × 1920 · 37,5 s · H.264 · −14 LUFS · master versé dans la bibliothèque RapidoCMS, prêt à être programmé sur les cinq réseaux."
+    },
+    "metier": null,
+    "phase": null,
+    "amplitude": null,
+    "boucle": null,
+    "boucleSlug": null,
+    "grandeBoucle": null,
+    "incident": null,
+    "incidentHeure": null,
+    "incidentQuoi": null,
+    "saumon": null,
+    "story": {
+      "format": "9:16 · 1080 × 1920 · 10 s",
+      "hook": "« Tout s'est bien passé ? » — « Très bien, merci. »",
+      "punchline": "Ils ne reviendront pas, et on ne saura jamais pourquoi",
+      "url": null
+    },
+    "carrousel": null,
+    "imageFacebook": null,
+    "tutoriel": null
+  },
+  "EP207": {
+    "publications": {
+      "facebook": {
+        "legende": "Un habitué a cessé de venir. Il n'est pas fâché. Il a juste changé d'habitude.\n\nUn habitué a cessé de venir. Il n'est pas fâché, il a juste changé d'habitude. Personne ne l'a remarqué.\n\nLa fidélité voit qui a décroché, les messages automatiques le rappellent. Une phrase, au bon moment.\n\n👉 Tout FoodEatUp : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "hashtags": [
+          "restaurant",
+          "restaurateur",
+          "fidelite",
+          "foodeatup",
+          "relance",
+          "marketing"
+        ],
+        "motsCles": [
+          "client inactif",
+          "relance client",
+          "segment RFM",
+          "messages automatiques"
+        ],
+        "cta": "Découvrir FoodEatUp"
+      },
+      "instagram": {
+        "legende": "Un habitué a cessé de venir.\nIl n'est pas fâché. Il a juste changé d'habitude.\n\nUn habitué a cessé de venir. Il n'est pas fâché, il a juste changé d'habitude. Personne ne l'a remarqué.\n\nLa fidélité voit qui a décroché, les messages automatiques le rappellent. Une phrase, au bon moment.\n\nLa Fraise en film d'espionnage — saison 7, « Les Végé-Fruités font leur cinéma ».\nTout est expliqué sur notre site — lien en bio.\nUne démo ? 06 14 18 92 25",
+        "hashtags": [
+          "restaurant",
+          "restaurateur",
+          "fidelite",
+          "foodeatup",
+          "relance",
+          "marketing",
+          "vegefruites",
+          "coupdefeu",
+          "logicielrestaurant",
+          "vieDeResto"
+        ],
+        "motsCles": [
+          "client inactif",
+          "relance client",
+          "segment RFM",
+          "messages automatiques"
+        ],
+        "cta": "Tout est en bio"
+      },
+      "tiktok": {
+        "legende": "Un habitué a cessé de venir.\nIl n'est pas fâché. Il a juste changé d'habitude.\n\nUn habitué a cessé de venir. Il n'est pas fâché, il a juste changé d'habitude. Personne ne l'a remarqué.\n\nLa Fraise en film d'espionnage. 🎬",
+        "hashtags": [
+          "restaurant",
+          "restaurateur",
+          "fidelite",
+          "foodeatup",
+          "relance"
+        ],
+        "motsCles": [
+          "client inactif",
+          "relance client",
+          "segment RFM",
+          "messages automatiques"
+        ],
+        "cta": "Lien en bio"
+      },
+      "linkedin": {
+        "legende": "Un habitué a cessé de venir.\n\nUn habitué a cessé de venir. Il n'est pas fâché, il a juste changé d'habitude. Personne ne l'a remarqué.\n\nLa fidélité voit qui a décroché, les messages automatiques le rappellent. Une phrase, au bon moment.\n\nConcrètement : La fidélité voit qui a décroché, les messages automatiques le rappellent. Une phrase, au bon moment.\n\nEn savoir plus : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "hashtags": [
+          "restauration",
+          "foodeatup",
+          "fidelite",
+          "relance",
+          "marketing"
+        ],
+        "motsCles": [
+          "client inactif",
+          "relance client",
+          "segment RFM",
+          "messages automatiques"
+        ],
+        "cta": "Découvrir FoodEatUp"
+      },
+      "youtube": {
+        "legende": "Un habitué a cessé de venir. Il n'est pas fâché. Il a juste changé d'habitude.\n\nUn habitué a cessé de venir. Il n'est pas fâché, il a juste changé d'habitude. Personne ne l'a remarqué.\n\nLa fidélité voit qui a décroché, les messages automatiques le rappellent. Une phrase, au bon moment.\n\n— — —\n\n🔗 https://site.foodeatup.com/\n\n📞 Une démo ? 06 14 18 92 25\n🌐 foodeatup.com\n\nSérie « Le Coup de Feu » — saison 7 « Les Végé-Fruités font leur cinéma », épisode 27 sur 30.\nActe : Le lendemain · Genre : Film d'espionnage · À l'écran : La Fraise\nModule Marketing · Le client qui décroche\n\nFoodEatUp est le logiciel qui réunit la caisse, le stock, les plannings, l'HACCP et le marketing d'un restaurant au même endroit.\n",
+        "hashtags": [
+          "Shorts",
+          "restaurant",
+          "restaurateur",
+          "fidelite",
+          "foodeatup",
+          "relance",
+          "marketing",
+          "coupdefeu"
+        ],
+        "motsCles": [
+          "client inactif",
+          "relance client",
+          "segment RFM",
+          "messages automatiques"
+        ],
+        "cta": "Découvrir FoodEatUp",
+        "titre": "Trois mois sans nouvelles — Marketing | FoodEatUp"
+      }
+    },
+    "promptVignette": "Photo réaliste, cadrage vertical 9:16, traitée comme une affiche de cinéma — film d'espionnage. Le chef de l'image de référence — MÊME visage, même barbe, même toque blanche, même veste de cuisine blanche, même tablier blanc au logo FoodEatUp bleu. Ne change ni ses traits ni sa morphologie. Son expression : l'œil en coin, comme s'il surveillait la porte. Scène : trois mois sans nouvelles. Un habitué a cessé de venir. Décor : une table de deux restée vide plusieurs services d'affilée, le couvert dressé et personne dessus. Lumière rasante et contrastée, ombres de stores sur le mur. Le chef occupe les deux tiers droits du cadre, en plan poitrine ; l'élément du cas reste visible à gauche. Bande crème #FCF9E6 en haut du cadre sur un cinquième de la hauteur, portant UNIQUEMENT le texte « TROIS MOIS » en typographie arrondie très grasse, bleu marine #0F1A23, centré. Aucun autre texte, aucun logo ajouté, pas de filigrane, pas de bordure décorative.",
+    "higgsfieldPrompt": "Vertical 9:16, 10 seconds, photorealistic, cinematic handheld camera, shallow depth of field, natural light, 4K. NO text overlay, NO subtitles, NO watermark, NO logo.\n\nReference image attached — the FoodEatUp chef. Keep his exact face, beard, white toque, white chef jacket and white FoodEatUp apron. Do not alter his features or his build.\n\nSpy-film pastiche, surveillance framing through a doorway and a slow zoom. The same two-top table, set and empty, in three successive shots with changing daylight — as if watched over weeks. No one ever sits down. A calendar page on the wall turns twice.\n\nAt 8 seconds the chef from the reference image steps into frame on the right, narrowing his eyes as if checking the exit, and looks straight into the camera. Hold that look for the final 2 seconds.\n\nAudio: muffled room tone, a phone ringing far away, a low tense drone. No music.",
+    "scriptHeygen": null,
+    "kit": null,
+    "heygenPrompt": "Avatar : « Chef FoodEatUp » — votre avatar 3D, plan poitrine, regard caméra, fond vert (ou transparent).\nFormat : 1080 × 1920, 9:16, 25 images par seconde.\nVoix : française, masculine, débit posé, ton complice — le chef qui explique, pas celui qui vend.\nDurée visée : 9 secondes — c'est le segment 9,5 s → 18,5 s du master.\n\nScript, à coller tel quel :\n« Il n'a pas râlé, il n'a pas laissé d'avis. Il a juste arrêté de venir. C'est le client le plus coûteux du métier : celui qui part sans rien dire. »\n\nRendu : aucun sous-titre, aucune incrustation, aucun logo, aucun décor de fond. Pas de musique. Le montage s'occupe de tout le reste.",
+    "montage": {
+      "consigne": "Monte EP207 : coupe le clip Higgsfield à 9,5 s, pose l'accroche « Un habitué a cessé de venir. » à 5,0 s, empile l'avatar HeyGen et la capture d'écran dans la tablette de 18,5 s à 28,5 s, ferme sur la signature et le sting. Sortie 1080×1920, 37,5 s, −14 LUFS.",
+      "segments": [
+        {
+          "titre": "Hook",
+          "debut": 0,
+          "fin": 9.5,
+          "contenu": "Le plan Higgsfield, recadré en 9:16. L'accroche « Un habitué a cessé de venir. » apparaît à 5,0 s, en bas du cadre."
+        },
+        {
+          "titre": "Transition de marque",
+          "debut": 9.5,
+          "fin": 18.5,
+          "contenu": "L'avatar HeyGen entre par la droite et prend la parole : « Il n'a pas râlé, il n'a pas laissé d'avis. »"
+        },
+        {
+          "titre": "Démo logiciel",
+          "debut": 18.5,
+          "fin": 28.5,
+          "contenu": "La capture d'écran dans la tablette — le segment des clients qui ont décroché, et le message de relance programmé pour eux. L'avatar reste en médaillon en bas à gauche."
+        },
+        {
+          "titre": "Signature",
+          "debut": 28.5,
+          "fin": 32.5,
+          "contenu": "Bandeau crème, la punchline « Il n'est pas fâché. Il a juste changé d'habitude. », le logo FoodEatUp et le repère de saison « Le lendemain · Film d'espionnage »."
+        },
+        {
+          "titre": "Sting",
+          "debut": 32.5,
+          "fin": 37.5,
+          "contenu": "Le sting de marque, « TROIS MOIS » en incrustation, puis l'appel à l'action : https://site.foodeatup.com/ et le 06 14 18 92 25."
+        }
+      ],
+      "livrable": "1080 × 1920 · 37,5 s · H.264 · −14 LUFS · master versé dans la bibliothèque RapidoCMS, prêt à être programmé sur les cinq réseaux."
+    },
+    "metier": null,
+    "phase": null,
+    "amplitude": null,
+    "boucle": null,
+    "boucleSlug": null,
+    "grandeBoucle": null,
+    "incident": null,
+    "incidentHeure": null,
+    "incidentQuoi": null,
+    "saumon": null,
+    "story": {
+      "format": "9:16 · 1080 × 1920 · 10 s",
+      "hook": "Un habitué a cessé de venir",
+      "punchline": "Il n'est pas fâché. Il a juste changé d'habitude",
+      "url": null
+    },
+    "carrousel": null,
+    "imageFacebook": null,
+    "tutoriel": null
+  },
+  "EP208": {
+    "publications": {
+      "facebook": {
+        "legende": "Trois cartes de visite dans un bocal. Une illisible. On appelle ça un fichier client.\n\nLe bocal à cartes de visite sur le comptoir. Trois papiers dedans, dont un illisible. On appelle ça un fichier client.\n\nLe jeu de la roue échange un lot contre un contact, avec le consentement qui va avec. Le bocal devient une liste.\n\n👉 Tout FoodEatUp : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "hashtags": [
+          "restaurant",
+          "restaurateur",
+          "fichierclient",
+          "foodeatup",
+          "jeuconcours",
+          "marketing"
+        ],
+        "motsCles": [
+          "fichier client restaurant",
+          "jeu concours",
+          "collecte de contacts",
+          "base client"
+        ],
+        "cta": "Découvrir FoodEatUp"
+      },
+      "instagram": {
+        "legende": "Trois cartes de visite dans un bocal. Une illisible.\nOn appelle ça un fichier client.\n\nLe bocal à cartes de visite sur le comptoir. Trois papiers dedans, dont un illisible. On appelle ça un fichier client.\n\nLe jeu de la roue échange un lot contre un contact, avec le consentement qui va avec. Le bocal devient une liste.\n\nLe Brocoli en jeu télévisé — saison 7, « Les Végé-Fruités font leur cinéma ».\nTout est expliqué sur notre site — lien en bio.\nUne démo ? 06 14 18 92 25",
+        "hashtags": [
+          "restaurant",
+          "restaurateur",
+          "fichierclient",
+          "foodeatup",
+          "jeuconcours",
+          "marketing",
+          "vegefruites",
+          "coupdefeu",
+          "logicielrestaurant",
+          "vieDeResto"
+        ],
+        "motsCles": [
+          "fichier client restaurant",
+          "jeu concours",
+          "collecte de contacts",
+          "base client"
+        ],
+        "cta": "Tout est en bio"
+      },
+      "tiktok": {
+        "legende": "Trois cartes de visite dans un bocal. Une illisible.\nOn appelle ça un fichier client.\n\nLe bocal à cartes de visite sur le comptoir. Trois papiers dedans, dont un illisible. On appelle ça un fichier client.\n\nLe Brocoli en jeu télévisé. 🎬",
+        "hashtags": [
+          "restaurant",
+          "restaurateur",
+          "fichierclient",
+          "foodeatup",
+          "jeuconcours"
+        ],
+        "motsCles": [
+          "fichier client restaurant",
+          "jeu concours",
+          "collecte de contacts",
+          "base client"
+        ],
+        "cta": "Lien en bio"
+      },
+      "linkedin": {
+        "legende": "Trois cartes de visite dans un bocal. Une illisible.\n\nLe bocal à cartes de visite sur le comptoir. Trois papiers dedans, dont un illisible. On appelle ça un fichier client.\n\nLe jeu de la roue échange un lot contre un contact, avec le consentement qui va avec. Le bocal devient une liste.\n\nConcrètement : Le jeu de la roue échange un lot contre un contact, avec le consentement qui va avec. Le bocal devient une liste.\n\nEn savoir plus : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "hashtags": [
+          "restauration",
+          "foodeatup",
+          "fichierclient",
+          "jeuconcours",
+          "marketing"
+        ],
+        "motsCles": [
+          "fichier client restaurant",
+          "jeu concours",
+          "collecte de contacts",
+          "base client"
+        ],
+        "cta": "Découvrir FoodEatUp"
+      },
+      "youtube": {
+        "legende": "Trois cartes de visite dans un bocal. Une illisible. On appelle ça un fichier client.\n\nLe bocal à cartes de visite sur le comptoir. Trois papiers dedans, dont un illisible. On appelle ça un fichier client.\n\nLe jeu de la roue échange un lot contre un contact, avec le consentement qui va avec. Le bocal devient une liste.\n\n— — —\n\n🔗 https://site.foodeatup.com/\n\n📞 Une démo ? 06 14 18 92 25\n🌐 foodeatup.com\n\nSérie « Le Coup de Feu » — saison 7 « Les Végé-Fruités font leur cinéma », épisode 28 sur 30.\nActe : Le lendemain · Genre : Jeu télévisé · À l'écran : Le Brocoli\nModule Marketing · Le fichier client\n\nFoodEatUp est le logiciel qui réunit la caisse, le stock, les plannings, l'HACCP et le marketing d'un restaurant au même endroit.\n",
+        "hashtags": [
+          "Shorts",
+          "restaurant",
+          "restaurateur",
+          "fichierclient",
+          "foodeatup",
+          "jeuconcours",
+          "marketing",
+          "coupdefeu"
+        ],
+        "motsCles": [
+          "fichier client restaurant",
+          "jeu concours",
+          "collecte de contacts",
+          "base client"
+        ],
+        "cta": "Découvrir FoodEatUp",
+        "titre": "La roue — Marketing | FoodEatUp"
+      }
+    },
+    "promptVignette": "Photo réaliste, cadrage vertical 9:16, traitée comme une affiche de cinéma — jeu télévisé. Le chef de l'image de référence — MÊME visage, même barbe, même toque blanche, même veste de cuisine blanche, même tablier blanc au logo FoodEatUp bleu. Ne change ni ses traits ni sa morphologie. Son expression : grand sourire de présentateur. Scène : la roue. Trois cartes de visite dans un bocal. Une illisible. Décor : un comptoir, un bocal en verre avec trois papiers au fond, une pancarte « tentez votre chance ». Lumière de plateau, couleurs saturées. Le chef occupe les deux tiers droits du cadre, en plan poitrine ; l'élément du cas reste visible à gauche. Bande crème #FCF9E6 en haut du cadre sur un cinquième de la hauteur, portant UNIQUEMENT le texte « LA ROUE » en typographie arrondie très grasse, bleu marine #0F1A23, centré. Aucun autre texte, aucun logo ajouté, pas de filigrane, pas de bordure décorative.",
+    "higgsfieldPrompt": "Vertical 9:16, 10 seconds, photorealistic, cinematic handheld camera, shallow depth of field, natural light, 4K. NO text overlay, NO subtitles, NO watermark, NO logo.\n\nReference image attached — the FoodEatUp chef. Keep his exact face, beard, white toque, white chef jacket and white FoodEatUp apron. Do not alter his features or his build.\n\nGame-show pastiche, saturated primary colours and chase lights around the frame. A glass jar sits on a counter with three sad scraps of paper inside. Studio applause swells for no reason. A spotlight hits the jar. Nothing spins. The applause fades out awkwardly.\n\nAt 8 seconds the chef from the reference image steps into frame on the right, grinning like a game-show host, and looks straight into the camera. Hold that look for the final 2 seconds.\n\nAudio: game-show applause swelling, then fading awkwardly. No music.",
+    "scriptHeygen": null,
+    "kit": null,
+    "heygenPrompt": "Avatar : « Chef FoodEatUp » — votre avatar 3D, plan poitrine, regard caméra, fond vert (ou transparent).\nFormat : 1080 × 1920, 9:16, 25 images par seconde.\nVoix : française, masculine, débit posé, ton complice — le chef qui explique, pas celui qui vend.\nDurée visée : 9 secondes — c'est le segment 9,5 s → 18,5 s du master.\n\nScript, à coller tel quel :\n« Trois papiers dans un bocal, dont un illisible. C'est le fichier client de la moitié des restaurants de France. Le jeu, lui, échange un lot contre un contact — et le consentement va avec. »\n\nRendu : aucun sous-titre, aucune incrustation, aucun logo, aucun décor de fond. Pas de musique. Le montage s'occupe de tout le reste.",
+    "montage": {
+      "consigne": "Monte EP208 : coupe le clip Higgsfield à 9,5 s, pose l'accroche « Trois cartes de visite dans un bocal. Une illisible. » à 5,0 s, empile l'avatar HeyGen et la capture d'écran dans la tablette de 18,5 s à 28,5 s, ferme sur la signature et le sting. Sortie 1080×1920, 37,5 s, −14 LUFS.",
+      "segments": [
+        {
+          "titre": "Hook",
+          "debut": 0,
+          "fin": 9.5,
+          "contenu": "Le plan Higgsfield, recadré en 9:16. L'accroche « Trois cartes de visite dans un bocal. Une illisible. » apparaît à 5,0 s, en bas du cadre."
+        },
+        {
+          "titre": "Transition de marque",
+          "debut": 9.5,
+          "fin": 18.5,
+          "contenu": "L'avatar HeyGen entre par la droite et prend la parole : « Trois papiers dans un bocal, dont un illisible. »"
+        },
+        {
+          "titre": "Démo logiciel",
+          "debut": 18.5,
+          "fin": 28.5,
+          "contenu": "La capture d'écran dans la tablette — le jeu de la roue configuré, ses lots, et les contacts collectés avec leur consentement. L'avatar reste en médaillon en bas à gauche."
+        },
+        {
+          "titre": "Signature",
+          "debut": 28.5,
+          "fin": 32.5,
+          "contenu": "Bandeau crème, la punchline « On appelle ça un fichier client. », le logo FoodEatUp et le repère de saison « Le lendemain · Jeu télévisé »."
+        },
+        {
+          "titre": "Sting",
+          "debut": 32.5,
+          "fin": 37.5,
+          "contenu": "Le sting de marque, « LA ROUE » en incrustation, puis l'appel à l'action : https://site.foodeatup.com/ et le 06 14 18 92 25."
+        }
+      ],
+      "livrable": "1080 × 1920 · 37,5 s · H.264 · −14 LUFS · master versé dans la bibliothèque RapidoCMS, prêt à être programmé sur les cinq réseaux."
+    },
+    "metier": null,
+    "phase": null,
+    "amplitude": null,
+    "boucle": null,
+    "boucleSlug": null,
+    "grandeBoucle": null,
+    "incident": null,
+    "incidentHeure": null,
+    "incidentQuoi": null,
+    "saumon": null,
+    "story": {
+      "format": "9:16 · 1080 × 1920 · 10 s",
+      "hook": "Trois cartes de visite dans un bocal. Une illisible",
+      "punchline": "On appelle ça un fichier client",
+      "url": null
+    },
+    "carrousel": null,
+    "imageFacebook": null,
+    "tutoriel": null
+  },
+  "EP209": {
+    "publications": {
+      "facebook": {
+        "legende": "Il revient six mois après. Il ne dit rien, il s'assoit. On lui apporte ce qu'il prend toujours. Il lève la tête.\n\nIl revient six mois après. Il ne dit rien, il s'assoit. On lui apporte ce qu'il prend toujours, et il lève la tête.\n\nLe compte fidélité et son historique. La reconnaissance n'est plus un don de mémoire, c'est une fiche.\n\n👉 Tout FoodEatUp : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "hashtags": [
+          "restaurant",
+          "restaurateur",
+          "fidelite",
+          "foodeatup",
+          "client",
+          "historique"
+        ],
+        "motsCles": [
+          "historique client",
+          "fiche client restaurant",
+          "fidélité restaurant",
+          "reconnaître un client"
+        ],
+        "cta": "Découvrir FoodEatUp"
+      },
+      "instagram": {
+        "legende": "Il revient six mois après. Il ne dit rien, il s'assoit.\nOn lui apporte ce qu'il prend toujours. Il lève la tête.\n\nIl revient six mois après. Il ne dit rien, il s'assoit. On lui apporte ce qu'il prend toujours, et il lève la tête.\n\nLe compte fidélité et son historique. La reconnaissance n'est plus un don de mémoire, c'est une fiche.\n\nLa Pomme de Terre en film de retrouvailles — saison 7, « Les Végé-Fruités font leur cinéma ».\nTout est expliqué sur notre site — lien en bio.\nUne démo ? 06 14 18 92 25",
+        "hashtags": [
+          "restaurant",
+          "restaurateur",
+          "fidelite",
+          "foodeatup",
+          "client",
+          "historique",
+          "vegefruites",
+          "coupdefeu",
+          "logicielrestaurant",
+          "vieDeResto"
+        ],
+        "motsCles": [
+          "historique client",
+          "fiche client restaurant",
+          "fidélité restaurant",
+          "reconnaître un client"
+        ],
+        "cta": "Tout est en bio"
+      },
+      "tiktok": {
+        "legende": "Il revient six mois après. Il ne dit rien, il s'assoit.\nOn lui apporte ce qu'il prend toujours. Il lève la tête.\n\nIl revient six mois après. Il ne dit rien, il s'assoit. On lui apporte ce qu'il prend toujours, et il lève la tête.\n\nLa Pomme de Terre en film de retrouvailles. 🎬",
+        "hashtags": [
+          "restaurant",
+          "restaurateur",
+          "fidelite",
+          "foodeatup",
+          "client"
+        ],
+        "motsCles": [
+          "historique client",
+          "fiche client restaurant",
+          "fidélité restaurant",
+          "reconnaître un client"
+        ],
+        "cta": "Lien en bio"
+      },
+      "linkedin": {
+        "legende": "Il revient six mois après. Il ne dit rien, il s'assoit.\n\nIl revient six mois après. Il ne dit rien, il s'assoit. On lui apporte ce qu'il prend toujours, et il lève la tête.\n\nLe compte fidélité et son historique. La reconnaissance n'est plus un don de mémoire, c'est une fiche.\n\nConcrètement : Le compte fidélité et son historique. La reconnaissance n'est plus un don de mémoire, c'est une fiche.\n\nEn savoir plus : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "hashtags": [
+          "restauration",
+          "foodeatup",
+          "fidelite",
+          "client",
+          "historique"
+        ],
+        "motsCles": [
+          "historique client",
+          "fiche client restaurant",
+          "fidélité restaurant",
+          "reconnaître un client"
+        ],
+        "cta": "Découvrir FoodEatUp"
+      },
+      "youtube": {
+        "legende": "Il revient six mois après. Il ne dit rien, il s'assoit. On lui apporte ce qu'il prend toujours. Il lève la tête.\n\nIl revient six mois après. Il ne dit rien, il s'assoit. On lui apporte ce qu'il prend toujours, et il lève la tête.\n\nLe compte fidélité et son historique. La reconnaissance n'est plus un don de mémoire, c'est une fiche.\n\n— — —\n\n🔗 https://site.foodeatup.com/\n\n📞 Une démo ? 06 14 18 92 25\n🌐 foodeatup.com\n\nSérie « Le Coup de Feu » — saison 7 « Les Végé-Fruités font leur cinéma », épisode 29 sur 30.\nActe : Le lendemain · Genre : Film de retrouvailles · À l'écran : La Pomme de Terre\nModule Marketing · L'historique du client\n\nFoodEatUp est le logiciel qui réunit la caisse, le stock, les plannings, l'HACCP et le marketing d'un restaurant au même endroit.\n",
+        "hashtags": [
+          "Shorts",
+          "restaurant",
+          "restaurateur",
+          "fidelite",
+          "foodeatup",
+          "client",
+          "historique",
+          "coupdefeu"
+        ],
+        "motsCles": [
+          "historique client",
+          "fiche client restaurant",
+          "fidélité restaurant",
+          "reconnaître un client"
+        ],
+        "cta": "Découvrir FoodEatUp",
+        "titre": "Cette fois, on savait — Marketing | FoodEatUp"
+      }
+    },
+    "promptVignette": "Photo réaliste, cadrage vertical 9:16, traitée comme une affiche de cinéma — film de retrouvailles. Le chef de l'image de référence — MÊME visage, même barbe, même toque blanche, même veste de cuisine blanche, même tablier blanc au logo FoodEatUp bleu. Ne change ni ses traits ni sa morphologie. Son expression : le sourire qui monte doucement. Scène : cette fois, on savait. Il revient six mois après. Il ne dit rien, il s'assoit. Décor : une salle de restaurant en fin d'après-midi, un client qui s'assoit sans rien demander. Lumière de fin d'après-midi par la fenêtre. Le chef occupe les deux tiers droits du cadre, en plan poitrine ; l'élément du cas reste visible à gauche. Bande crème #FCF9E6 en haut du cadre sur un cinquième de la hauteur, portant UNIQUEMENT le texte « CETTE FOIS, ON SAVAIT » en typographie arrondie très grasse, bleu marine #0F1A23, centré. Aucun autre texte, aucun logo ajouté, pas de filigrane, pas de bordure décorative.",
+    "higgsfieldPrompt": "Vertical 9:16, 10 seconds, photorealistic, cinematic handheld camera, shallow depth of field, natural light, 4K. NO text overlay, NO subtitles, NO watermark, NO logo.\n\nReference image attached — the FoodEatUp chef. Keep his exact face, beard, white toque, white chef jacket and white FoodEatUp apron. Do not alter his features or his build.\n\nReunion-drama pastiche, warm late-afternoon light through a window, one slow push-in. A man sits down at a table without a word. A glass of his usual is set in front of him before he orders. He looks up, surprised, and almost smiles. Hold on his face.\n\nAt 8 seconds the chef from the reference image steps into frame on the right, a smile arriving slowly, and looks straight into the camera. Hold that look for the final 2 seconds.\n\nAudio: quiet late-afternoon ambience, a glass set down. No music.",
+    "scriptHeygen": null,
+    "kit": null,
+    "heygenPrompt": "Avatar : « Chef FoodEatUp » — votre avatar 3D, plan poitrine, regard caméra, fond vert (ou transparent).\nFormat : 1080 × 1920, 9:16, 25 images par seconde.\nVoix : française, masculine, débit posé, ton complice — le chef qui explique, pas celui qui vend.\nDurée visée : 9 secondes — c'est le segment 9,5 s → 18,5 s du master.\n\nScript, à coller tel quel :\n« Il revient après six mois. On lui apporte ce qu'il prenait avant. Il lève la tête — c'est le seul moment du service où un client se sent chez lui. »\n\nRendu : aucun sous-titre, aucune incrustation, aucun logo, aucun décor de fond. Pas de musique. Le montage s'occupe de tout le reste.",
+    "montage": {
+      "consigne": "Monte EP209 : coupe le clip Higgsfield à 9,5 s, pose l'accroche « Il revient six mois après. Il ne dit rien, il s'assoit. » à 5,0 s, empile l'avatar HeyGen et la capture d'écran dans la tablette de 18,5 s à 28,5 s, ferme sur la signature et le sting. Sortie 1080×1920, 37,5 s, −14 LUFS.",
+      "segments": [
+        {
+          "titre": "Hook",
+          "debut": 0,
+          "fin": 9.5,
+          "contenu": "Le plan Higgsfield, recadré en 9:16. L'accroche « Il revient six mois après. Il ne dit rien, il s'assoit. » apparaît à 5,0 s, en bas du cadre."
+        },
+        {
+          "titre": "Transition de marque",
+          "debut": 9.5,
+          "fin": 18.5,
+          "contenu": "L'avatar HeyGen entre par la droite et prend la parole : « Il revient après six mois. »"
+        },
+        {
+          "titre": "Démo logiciel",
+          "debut": 18.5,
+          "fin": 28.5,
+          "contenu": "La capture d'écran dans la tablette — la fiche du client avec son historique de commandes, ouverte au moment où il s'assoit. L'avatar reste en médaillon en bas à gauche."
+        },
+        {
+          "titre": "Signature",
+          "debut": 28.5,
+          "fin": 32.5,
+          "contenu": "Bandeau crème, la punchline « On lui apporte ce qu'il prend toujours. Il lève la tête. », le logo FoodEatUp et le repère de saison « Le lendemain · Film de retrouvailles »."
+        },
+        {
+          "titre": "Sting",
+          "debut": 32.5,
+          "fin": 37.5,
+          "contenu": "Le sting de marque, « CETTE FOIS, ON SAVAIT » en incrustation, puis l'appel à l'action : https://site.foodeatup.com/ et le 06 14 18 92 25."
+        }
+      ],
+      "livrable": "1080 × 1920 · 37,5 s · H.264 · −14 LUFS · master versé dans la bibliothèque RapidoCMS, prêt à être programmé sur les cinq réseaux."
+    },
+    "metier": null,
+    "phase": null,
+    "amplitude": null,
+    "boucle": null,
+    "boucleSlug": null,
+    "grandeBoucle": null,
+    "incident": null,
+    "incidentHeure": null,
+    "incidentQuoi": null,
+    "saumon": null,
+    "story": {
+      "format": "9:16 · 1080 × 1920 · 10 s",
+      "hook": "Il revient six mois après. Il ne dit rien, il s'assoit",
+      "punchline": "On lui apporte ce qu'il prend toujours. Il lève la tête",
+      "url": null
+    },
+    "carrousel": null,
+    "imageFacebook": null,
+    "tutoriel": null
+  },
+  "EP210": {
+    "publications": {
+      "facebook": {
+        "legende": "Deux cent dix épisodes. Un client entre, mange, paye et revient. Rien de tout ça ne s'est joué au hasard.\n\nDeux cent dix épisodes. Un client entre, s'assoit, mange, paye et revient — et rien de tout ça ne s'est joué au hasard.\n\nLes dix personnages saluent, chacun à son poste. Le restaurant tourne derrière eux, sans qu'on entende personne crier.\n\n👉 Tout FoodEatUp : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "hashtags": [
+          "restaurant",
+          "restaurateur",
+          "foodeatup",
+          "brigade",
+          "vegefruites",
+          "generique"
+        ],
+        "motsCles": [
+          "logiciel restaurant",
+          "gestion de restaurant",
+          "parcours client",
+          "FoodEatUp"
+        ],
+        "cta": "Découvrir FoodEatUp"
+      },
+      "instagram": {
+        "legende": "Deux cent dix épisodes. Un client entre, mange, paye et revient.\nRien de tout ça ne s'est joué au hasard.\n\nDeux cent dix épisodes. Un client entre, s'assoit, mange, paye et revient — et rien de tout ça ne s'est joué au hasard.\n\nLes dix personnages saluent, chacun à son poste. Le restaurant tourne derrière eux, sans qu'on entende personne crier.\n\nLa Pomme de Terre en salut final — saison 7, « Les Végé-Fruités font leur cinéma ».\nTout est expliqué sur notre site — lien en bio.\nUne démo ? 06 14 18 92 25",
+        "hashtags": [
+          "restaurant",
+          "restaurateur",
+          "foodeatup",
+          "brigade",
+          "vegefruites",
+          "generique",
+          "vegefruites",
+          "coupdefeu",
+          "logicielrestaurant",
+          "vieDeResto"
+        ],
+        "motsCles": [
+          "logiciel restaurant",
+          "gestion de restaurant",
+          "parcours client",
+          "FoodEatUp"
+        ],
+        "cta": "Tout est en bio"
+      },
+      "tiktok": {
+        "legende": "Deux cent dix épisodes. Un client entre, mange, paye et revient.\nRien de tout ça ne s'est joué au hasard.\n\nDeux cent dix épisodes. Un client entre, s'assoit, mange, paye et revient — et rien de tout ça ne s'est joué au hasard.\n\nLa Pomme de Terre en salut final. 🎬",
+        "hashtags": [
+          "restaurant",
+          "restaurateur",
+          "foodeatup",
+          "brigade",
+          "vegefruites"
+        ],
+        "motsCles": [
+          "logiciel restaurant",
+          "gestion de restaurant",
+          "parcours client",
+          "FoodEatUp"
+        ],
+        "cta": "Lien en bio"
+      },
+      "linkedin": {
+        "legende": "Deux cent dix épisodes. Un client entre, mange, paye et revient.\n\nDeux cent dix épisodes. Un client entre, s'assoit, mange, paye et revient — et rien de tout ça ne s'est joué au hasard.\n\nLes dix personnages saluent, chacun à son poste. Le restaurant tourne derrière eux, sans qu'on entende personne crier.\n\nConcrètement : Les dix personnages saluent, chacun à son poste. Le restaurant tourne derrière eux, sans qu'on entende personne crier.\n\nEn savoir plus : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "hashtags": [
+          "restauration",
+          "foodeatup",
+          "brigade",
+          "vegefruites",
+          "generique"
+        ],
+        "motsCles": [
+          "logiciel restaurant",
+          "gestion de restaurant",
+          "parcours client",
+          "FoodEatUp"
+        ],
+        "cta": "Découvrir FoodEatUp"
+      },
+      "youtube": {
+        "legende": "Deux cent dix épisodes. Un client entre, mange, paye et revient. Rien de tout ça ne s'est joué au hasard.\n\nDeux cent dix épisodes. Un client entre, s'assoit, mange, paye et revient — et rien de tout ça ne s'est joué au hasard.\n\nLes dix personnages saluent, chacun à son poste. Le restaurant tourne derrière eux, sans qu'on entende personne crier.\n\n— — —\n\n🔗 https://site.foodeatup.com/\n\n📞 Une démo ? 06 14 18 92 25\n🌐 foodeatup.com\n\nSérie « Le Coup de Feu » — saison 7 « Les Végé-Fruités font leur cinéma », épisode 30 sur 30.\nActe : Le lendemain · Genre : Salut final · À l'écran : La Pomme de Terre\nModule La maison · Le salut final\n\nFoodEatUp est le logiciel qui réunit la caisse, le stock, les plannings, l'HACCP et le marketing d'un restaurant au même endroit.\n",
+        "hashtags": [
+          "Shorts",
+          "restaurant",
+          "restaurateur",
+          "foodeatup",
+          "brigade",
+          "vegefruites",
+          "generique",
+          "coupdefeu"
+        ],
+        "motsCles": [
+          "logiciel restaurant",
+          "gestion de restaurant",
+          "parcours client",
+          "FoodEatUp"
+        ],
+        "cta": "Découvrir FoodEatUp",
+        "titre": "Le générique — La maison | FoodEatUp"
+      }
+    },
+    "promptVignette": "Photo réaliste, cadrage vertical 9:16, traitée comme une affiche de cinéma — salut final. Le chef de l'image de référence — MÊME visage, même barbe, même toque blanche, même veste de cuisine blanche, même tablier blanc au logo FoodEatUp bleu. Ne change ni ses traits ni sa morphologie. Son expression : il salue, toute la brigade derrière lui. Scène : le générique. Deux cent dix épisodes. Un client entre, mange, paye et revient. Décor : la salle complète, l'équipe alignée devant le passe, la lumière de fin de service. Lumière de fin de service, projecteur chaud. Le chef occupe les deux tiers droits du cadre, en plan poitrine ; l'élément du cas reste visible à gauche. Bande crème #FCF9E6 en haut du cadre sur un cinquième de la hauteur, portant UNIQUEMENT le texte « LE GÉNÉRIQUE » en typographie arrondie très grasse, bleu marine #0F1A23, centré. Aucun autre texte, aucun logo ajouté, pas de filigrane, pas de bordure décorative.",
+    "higgsfieldPrompt": "Vertical 9:16, 10 seconds, photorealistic, cinematic handheld camera, shallow depth of field, natural light, 4K. NO text overlay, NO subtitles, NO watermark, NO logo.\n\nReference image attached — the FoodEatUp chef. Keep his exact face, beard, white toque, white chef jacket and white FoodEatUp apron. Do not alter his features or his build.\n\nCurtain-call pastiche, theatrical warm spotlight and a slow crane up. A restaurant team lines up in front of the pass at the end of service, in uniform, and takes a bow together. Behind them the dining room is calm and lit. The camera rises until the whole room is in frame.\n\nAt 8 seconds the chef from the reference image steps into frame on the right, taking a bow with the whole team behind him, and looks straight into the camera. Hold that look for the final 2 seconds.\n\nAudio: warm room tone, one round of applause, then calm. No music.",
+    "scriptHeygen": null,
+    "kit": null,
+    "heygenPrompt": "Avatar : « Chef FoodEatUp » — votre avatar 3D, plan poitrine, regard caméra, fond vert (ou transparent).\nFormat : 1080 × 1920, 9:16, 25 images par seconde.\nVoix : française, masculine, débit posé, ton complice — le chef qui explique, pas celui qui vend.\nDurée visée : 9 secondes — c'est le segment 9,5 s → 18,5 s du master.\n\nScript, à coller tel quel :\n« Deux cent dix épisodes. Un client qui entre, qui mange, qui paye, et qui revient. Rien de tout ça n'est du hasard : chaque étape a eu son épisode. »\n\nRendu : aucun sous-titre, aucune incrustation, aucun logo, aucun décor de fond. Pas de musique. Le montage s'occupe de tout le reste.",
+    "montage": {
+      "consigne": "Monte EP210 : coupe le clip Higgsfield à 9,5 s, pose l'accroche « Deux cent dix épisodes. Un client entre, mange, paye et revient. » à 5,0 s, empile l'avatar HeyGen et la capture d'écran dans la tablette de 18,5 s à 28,5 s, ferme sur la signature et le sting. Sortie 1080×1920, 37,5 s, −14 LUFS.",
+      "segments": [
+        {
+          "titre": "Hook",
+          "debut": 0,
+          "fin": 9.5,
+          "contenu": "Le plan Higgsfield, recadré en 9:16. L'accroche « Deux cent dix épisodes. Un client entre, mange, paye et revient. » apparaît à 5,0 s, en bas du cadre."
+        },
+        {
+          "titre": "Transition de marque",
+          "debut": 9.5,
+          "fin": 18.5,
+          "contenu": "L'avatar HeyGen entre par la droite et prend la parole : « Deux cent dix épisodes. »"
+        },
+        {
+          "titre": "Démo logiciel",
+          "debut": 18.5,
+          "fin": 28.5,
+          "contenu": "La capture d'écran dans la tablette — le tableau de bord du restaurant, une journée complète, du premier couvert à la clôture. L'avatar reste en médaillon en bas à gauche."
+        },
+        {
+          "titre": "Signature",
+          "debut": 28.5,
+          "fin": 32.5,
+          "contenu": "Bandeau crème, la punchline « Rien de tout ça ne s'est joué au hasard. », le logo FoodEatUp et le repère de saison « Le lendemain · Salut final »."
+        },
+        {
+          "titre": "Sting",
+          "debut": 32.5,
+          "fin": 37.5,
+          "contenu": "Le sting de marque, « LE GÉNÉRIQUE » en incrustation, puis l'appel à l'action : https://site.foodeatup.com/ et le 06 14 18 92 25."
+        }
+      ],
+      "livrable": "1080 × 1920 · 37,5 s · H.264 · −14 LUFS · master versé dans la bibliothèque RapidoCMS, prêt à être programmé sur les cinq réseaux."
+    },
+    "metier": null,
+    "phase": null,
+    "amplitude": null,
+    "boucle": null,
+    "boucleSlug": null,
+    "grandeBoucle": null,
+    "incident": null,
+    "incidentHeure": null,
+    "incidentQuoi": null,
+    "saumon": null,
+    "story": {
+      "format": "9:16 · 1080 × 1920 · 10 s",
+      "hook": "Deux cent dix épisodes. Un client entre, mange, paye et revient",
+      "punchline": "Rien de tout ça ne s'est joué au hasard",
+      "url": null
+    },
+    "carrousel": null,
+    "imageFacebook": null,
+    "tutoriel": null
+  },
+  "EP211": {
+    "publications": {
+      "facebook": {
+        "legende": "Sept heures. Le café n'est pas encore prêt. Jarvis, lui, a déjà tout lu.\n\nOn dit : « Jarvis, qu'est-ce qui m'attend aujourd'hui ? »\n\nLes commandes web, la caisse, les réservations du soir, les tickets en cours, les avis à traiter et le stock bas. Tout le restaurant, en une réponse, avant d'avoir ouvert la porte.\n\n👉 Tout FoodEatUp : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "hashtags": [
+          "restaurant",
+          "restaurateur",
+          "foodeatup",
+          "jarvis",
+          "iarestaurant",
+          "gestionrestaurant"
+        ],
+        "motsCles": [
+          "assistant vocal restaurant",
+          "brief du jour",
+          "pilotage restaurant",
+          "Jarvis FoodEatUp"
+        ],
+        "cta": "Découvrir FoodEatUp"
+      },
+      "instagram": {
+        "legende": "Sept heures. Le café n'est pas encore prêt.\nJarvis, lui, a déjà tout lu.\n\n« Jarvis, qu'est-ce qui m'attend aujourd'hui ? »\n\nLes commandes web, la caisse, les réservations du soir, les tickets en cours, les avis à traiter et le stock bas. Tout le restaurant, en une réponse, avant d'avoir ouvert la porte.\n\n07 h · Avant d'ouvrir les yeux — saison 8, « Dis-le, c'est fait ». Une journée, une phrase à la fois.\nTout est expliqué sur notre site — lien en bio.\nUne démo ? 06 14 18 92 25",
+        "hashtags": [
+          "restaurant",
+          "restaurateur",
+          "foodeatup",
+          "jarvis",
+          "iarestaurant",
+          "gestionrestaurant",
+          "vegefruites",
+          "coupdefeu",
+          "logicielrestaurant",
+          "assistantvocal"
+        ],
+        "motsCles": [
+          "assistant vocal restaurant",
+          "brief du jour",
+          "pilotage restaurant",
+          "Jarvis FoodEatUp"
+        ],
+        "cta": "Tout est en bio"
+      },
+      "tiktok": {
+        "legende": "Sept heures. Le café n'est pas encore prêt.\nJarvis, lui, a déjà tout lu.\n\n« Jarvis, qu'est-ce qui m'attend aujourd'hui ? » 🎙️\n\nLes commandes web, la caisse, les réservations du soir, les tickets en cours, les avis à traiter et le stock bas. Tout le restaurant, en une réponse, avant d'avoir ouvert la porte.",
+        "hashtags": [
+          "restaurant",
+          "restaurateur",
+          "foodeatup",
+          "jarvis",
+          "iarestaurant"
+        ],
+        "motsCles": [
+          "assistant vocal restaurant",
+          "brief du jour",
+          "pilotage restaurant",
+          "Jarvis FoodEatUp"
+        ],
+        "cta": "Lien en bio"
+      },
+      "linkedin": {
+        "legende": "Sept heures. Le café n'est pas encore prêt.\n\nCe qu'on dit : « Jarvis, qu'est-ce qui m'attend aujourd'hui ? »\n\nLes commandes web, la caisse, les réservations du soir, les tickets en cours, les avis à traiter et le stock bas. Tout le restaurant, en une réponse, avant d'avoir ouvert la porte.\n\nL'outil appelé : get_daily_brief.\n\nConcrètement : Une question suffit pour savoir où en est le restaurant : ventes, caisse, réservations, cuisine, avis, stock. Il n'y a pas d'écran à ouvrir, pas d'onglet à retrouver.\n\nEn savoir plus : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "hashtags": [
+          "restauration",
+          "foodeatup",
+          "jarvis",
+          "iarestaurant",
+          "gestionrestaurant"
+        ],
+        "motsCles": [
+          "assistant vocal restaurant",
+          "brief du jour",
+          "pilotage restaurant",
+          "Jarvis FoodEatUp"
+        ],
+        "cta": "Découvrir FoodEatUp"
+      },
+      "youtube": {
+        "legende": "Sept heures. Le café n'est pas encore prêt. Jarvis, lui, a déjà tout lu.\n\nOn dit : « Jarvis, qu'est-ce qui m'attend aujourd'hui ? »\n\nLes commandes web, la caisse, les réservations du soir, les tickets en cours, les avis à traiter et le stock bas. Tout le restaurant, en une réponse, avant d'avoir ouvert la porte.\n\nL'outil appelé : get_daily_brief.\n\n— — —\n\n🔗 https://site.foodeatup.com/\n\n📞 Une démo ? 06 14 18 92 25\n🌐 foodeatup.com\n\nSérie « Le Coup de Feu » — saison 8 « Dis-le, c'est fait », épisode 1 sur 30, et dernière saison de la série.\n07 h · Avant d'ouvrir les yeux · À l'écran : Le Brocoli\nModule PrediBot · Le point du jour\n\nJarvis est l'agent vocal de FoodEatUp, le logiciel qui réunit la caisse, le stock, les plannings, l'HACCP et le marketing d'un restaurant au même endroit.\n",
+        "hashtags": [
+          "Shorts",
+          "restaurant",
+          "restaurateur",
+          "foodeatup",
+          "jarvis",
+          "iarestaurant",
+          "gestionrestaurant",
+          "coupdefeu"
+        ],
+        "motsCles": [
+          "assistant vocal restaurant",
+          "brief du jour",
+          "pilotage restaurant",
+          "Jarvis FoodEatUp"
+        ],
+        "cta": "Découvrir FoodEatUp",
+        "titre": "Le brief — 07 h | FoodEatUp"
+      }
+    },
+    "promptVignette": "Photo réaliste, cadrage vertical 9:16. Il est 07 h : lumière froide et rasante du petit matin, la salle encore éteinte. Le chef de l'image de référence — MÊME visage, même barbe, même toque blanche, même veste de cuisine blanche, même tablier blanc au logo FoodEatUp bleu. Ne change ni ses traits, ni sa morphologie, ni sa tenue. Il ne regarde AUCUN écran et ne tient AUCUN téléphone : il parle, simplement, les mains occupées par son travail. Scène : le brief. Sept heures. Le café n'est pas encore prêt. Décor : une cuisine encore éteinte, la lumière du matin par la porte de service, une tasse qui fume. Le chef occupe les deux tiers droits du cadre, en plan poitrine. Bande crème #FCF9E6 en haut du cadre sur un cinquième de la hauteur, portant UNIQUEMENT le texte « LE BRIEF » en typographie arrondie très grasse, bleu marine #0F1A23, centré. En bas à gauche, une pastille arrondie beige #C4B28E, capitales blanches : « EP211 · 07 h ». Aucun autre texte, aucun logo ajouté, pas de filigrane, pas de bordure décorative, aucun écran de logiciel visible.",
+    "higgsfieldPrompt": "Vertical 9:16, 10 seconds, photorealistic, cinematic handheld camera, shallow depth of field, natural light, 4K. NO text overlay, NO subtitles, NO watermark, NO logo. NO visible software interface, NO phone screen.\n\nReference image attached — the FoodEatUp chef. Keep his exact face, beard, white toque, white chef jacket and white FoodEatUp apron. Do not alter his features or his build.\n\nTime of day: 07:00 — cold raking dawn light, the room still unlit.\n\nA dark restaurant kitchen at dawn, one shaft of light through the service door. A hand sets a steaming cup on the pass. Nothing else moves. The room is entirely still, waiting.\n\nAt 8 seconds the chef from the reference image steps into frame on the right, hands still busy with his work, and speaks a single short sentence toward no one in particular — never to a screen, never to a phone. Hold on his face for the final 2 seconds.\n\nAudio: early morning room tone, a fridge compressor, a distant street. No music.",
+    "scriptHeygen": null,
+    "kit": null,
+    "heygenPrompt": "Avatar : « Chef FoodEatUp » — votre avatar 3D, plan poitrine, regard caméra, fond vert (ou transparent).\nFormat : 1080 × 1920, 9:16, 25 images par seconde.\nVoix : française, masculine, débit posé, ton complice — le chef qui explique, pas celui qui vend.\nDurée visée : 9 secondes — c'est le segment 9,5 s → 18,5 s du master.\n\nScript, à coller tel quel :\n« Sept heures du matin. Avant, il fallait ouvrir cinq écrans pour savoir où on en était. Maintenant je pose la question à Jarvis, et il me raconte ma journée avant que j'aie bu mon café. »\n\nPrononciation : « Jarvis » se dit à l'anglaise, DJAR-viss — c'est le nom de l'agent vocal, il revient dans les trente épisodes et il doit sonner pareil à chaque fois.\n\nRendu : aucun sous-titre, aucune incrustation, aucun logo, aucun décor de fond. Pas de musique. Le montage s'occupe de tout le reste.",
+    "montage": {
+      "consigne": "Monte EP211 : coupe le clip Higgsfield à 9,5 s, pose l'accroche « Sept heures. Le café n'est pas encore prêt. » à 5,0 s, empile l'avatar HeyGen et la capture d'écran dans la tablette de 18,5 s à 28,5 s, ferme sur la signature et le sting. Sortie 1080×1920, 37,5 s, −14 LUFS.",
+      "segments": [
+        {
+          "titre": "Hook",
+          "debut": 0,
+          "fin": 9.5,
+          "contenu": "Le plan Higgsfield, recadré en 9:16. L'accroche « Sept heures. Le café n'est pas encore prêt. » apparaît à 5,0 s, en bas du cadre."
+        },
+        {
+          "titre": "Transition de marque",
+          "debut": 9.5,
+          "fin": 18.5,
+          "contenu": "L'avatar HeyGen entre par la droite et prend la parole : « Sept heures du matin. »"
+        },
+        {
+          "titre": "Démo logiciel",
+          "debut": 18.5,
+          "fin": 28.5,
+          "contenu": "La phrase « Jarvis, qu'est-ce qui m'attend aujourd'hui ? » s'écrit à l'écran, puis la réponse — la réponse de Jarvis : commandes, caisse, réservations, tickets, avis, stock bas — une ligne chacun. L'avatar reste en médaillon en bas à gauche."
+        },
+        {
+          "titre": "Signature",
+          "debut": 28.5,
+          "fin": 32.5,
+          "contenu": "Bandeau crème, la punchline « Jarvis, lui, a déjà tout lu. », le logo FoodEatUp et le repère de saison « 07 h · Avant d'ouvrir les yeux »."
+        },
+        {
+          "titre": "Sting",
+          "debut": 32.5,
+          "fin": 37.5,
+          "contenu": "Le sting de marque, « LE BRIEF » en incrustation, puis l'appel à l'action : https://site.foodeatup.com/ et le 06 14 18 92 25."
+        }
+      ],
+      "livrable": "1080 × 1920 · 37,5 s · H.264 · −14 LUFS · master versé dans la bibliothèque RapidoCMS, prêt à être programmé sur les cinq réseaux."
+    },
+    "metier": null,
+    "phase": null,
+    "amplitude": null,
+    "boucle": null,
+    "boucleSlug": null,
+    "grandeBoucle": null,
+    "incident": null,
+    "incidentHeure": null,
+    "incidentQuoi": null,
+    "saumon": null,
+    "story": {
+      "format": "9:16 · 1080 × 1920 · 10 s",
+      "hook": "Sept heures. Le café n'est pas encore prêt",
+      "punchline": "Jarvis, lui, a déjà tout lu",
+      "url": null
+    },
+    "carrousel": null,
+    "imageFacebook": null,
+    "tutoriel": null
+  },
+  "EP212": {
+    "publications": {
+      "facebook": {
+        "legende": "On découvre les ruptures à midi. Toujours. Sauf quand on demande à sept heures.\n\nOn dit : « Jarvis, qu'est-ce qu'il me manque ? »\n\nLa liste des articles passés sous leur seuil, avant l'ouverture — pas à midi, quand le plat est déjà commandé.\n\n👉 Tout FoodEatUp : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "hashtags": [
+          "restaurant",
+          "restaurateur",
+          "foodeatup",
+          "jarvis",
+          "stocks",
+          "rupture"
+        ],
+        "motsCles": [
+          "stock bas restaurant",
+          "rupture de stock",
+          "gestion des stocks",
+          "assistant vocal"
+        ],
+        "cta": "Découvrir FoodEatUp"
+      },
+      "instagram": {
+        "legende": "On découvre les ruptures à midi. Toujours.\nSauf quand on demande à sept heures.\n\n« Jarvis, qu'est-ce qu'il me manque ? »\n\nLa liste des articles passés sous leur seuil, avant l'ouverture — pas à midi, quand le plat est déjà commandé.\n\n07 h · Avant d'ouvrir les yeux — saison 8, « Dis-le, c'est fait ». Une journée, une phrase à la fois.\nTout est expliqué sur notre site — lien en bio.\nUne démo ? 06 14 18 92 25",
+        "hashtags": [
+          "restaurant",
+          "restaurateur",
+          "foodeatup",
+          "jarvis",
+          "stocks",
+          "rupture",
+          "vegefruites",
+          "coupdefeu",
+          "logicielrestaurant",
+          "assistantvocal"
+        ],
+        "motsCles": [
+          "stock bas restaurant",
+          "rupture de stock",
+          "gestion des stocks",
+          "assistant vocal"
+        ],
+        "cta": "Tout est en bio"
+      },
+      "tiktok": {
+        "legende": "On découvre les ruptures à midi. Toujours.\nSauf quand on demande à sept heures.\n\n« Jarvis, qu'est-ce qu'il me manque ? » 🎙️\n\nLa liste des articles passés sous leur seuil, avant l'ouverture — pas à midi, quand le plat est déjà commandé.",
+        "hashtags": [
+          "restaurant",
+          "restaurateur",
+          "foodeatup",
+          "jarvis",
+          "stocks"
+        ],
+        "motsCles": [
+          "stock bas restaurant",
+          "rupture de stock",
+          "gestion des stocks",
+          "assistant vocal"
+        ],
+        "cta": "Lien en bio"
+      },
+      "linkedin": {
+        "legende": "On découvre les ruptures à midi. Toujours.\n\nCe qu'on dit : « Jarvis, qu'est-ce qu'il me manque ? »\n\nLa liste des articles passés sous leur seuil, avant l'ouverture — pas à midi, quand le plat est déjà commandé.\n\nL'outil appelé : list_low_stocks.\n\nConcrètement : Les articles sous leur seuil remontent d'eux-mêmes quand on les demande. Le moment où on l'apprend change tout : à sept heures on commande, à midi on s'excuse.\n\nEn savoir plus : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "hashtags": [
+          "restauration",
+          "foodeatup",
+          "jarvis",
+          "stocks",
+          "rupture"
+        ],
+        "motsCles": [
+          "stock bas restaurant",
+          "rupture de stock",
+          "gestion des stocks",
+          "assistant vocal"
+        ],
+        "cta": "Découvrir FoodEatUp"
+      },
+      "youtube": {
+        "legende": "On découvre les ruptures à midi. Toujours. Sauf quand on demande à sept heures.\n\nOn dit : « Jarvis, qu'est-ce qu'il me manque ? »\n\nLa liste des articles passés sous leur seuil, avant l'ouverture — pas à midi, quand le plat est déjà commandé.\n\nL'outil appelé : list_low_stocks.\n\n— — —\n\n🔗 https://site.foodeatup.com/\n\n📞 Une démo ? 06 14 18 92 25\n🌐 foodeatup.com\n\nSérie « Le Coup de Feu » — saison 8 « Dis-le, c'est fait », épisode 2 sur 30, et dernière saison de la série.\n07 h · Avant d'ouvrir les yeux · À l'écran : L'Oignon\nModule StockVision · Le stock bas\n\nJarvis est l'agent vocal de FoodEatUp, le logiciel qui réunit la caisse, le stock, les plannings, l'HACCP et le marketing d'un restaurant au même endroit.\n",
+        "hashtags": [
+          "Shorts",
+          "restaurant",
+          "restaurateur",
+          "foodeatup",
+          "jarvis",
+          "stocks",
+          "rupture",
+          "coupdefeu"
+        ],
+        "motsCles": [
+          "stock bas restaurant",
+          "rupture de stock",
+          "gestion des stocks",
+          "assistant vocal"
+        ],
+        "cta": "Découvrir FoodEatUp",
+        "titre": "Ce qui manque déjà — 07 h | FoodEatUp"
+      }
+    },
+    "promptVignette": "Photo réaliste, cadrage vertical 9:16. Il est 07 h : lumière froide et rasante du petit matin, la salle encore éteinte. Le chef de l'image de référence — MÊME visage, même barbe, même toque blanche, même veste de cuisine blanche, même tablier blanc au logo FoodEatUp bleu. Ne change ni ses traits, ni sa morphologie, ni sa tenue. Il ne regarde AUCUN écran et ne tient AUCUN téléphone : il parle, simplement, les mains occupées par son travail. Scène : ce qui manque déjà. On découvre les ruptures à midi. Toujours. Décor : une réserve, des étagères à moitié vides, un bac vide posé au sol. Le chef occupe les deux tiers droits du cadre, en plan poitrine. Bande crème #FCF9E6 en haut du cadre sur un cinquième de la hauteur, portant UNIQUEMENT le texte « CE QUI MANQUE » en typographie arrondie très grasse, bleu marine #0F1A23, centré. En bas à gauche, une pastille arrondie beige #C4B28E, capitales blanches : « EP212 · 07 h ». Aucun autre texte, aucun logo ajouté, pas de filigrane, pas de bordure décorative, aucun écran de logiciel visible.",
+    "higgsfieldPrompt": "Vertical 9:16, 10 seconds, photorealistic, cinematic handheld camera, shallow depth of field, natural light, 4K. NO text overlay, NO subtitles, NO watermark, NO logo. NO visible software interface, NO phone screen.\n\nReference image attached — the FoodEatUp chef. Keep his exact face, beard, white toque, white chef jacket and white FoodEatUp apron. Do not alter his features or his build.\n\nTime of day: 07:00 — cold raking dawn light, the room still unlit.\n\nA restaurant dry store at dawn. Shelves half empty, one plastic tub upended on the floor. Slow pan along the gaps between the boxes. No one is there.\n\nAt 8 seconds the chef from the reference image steps into frame on the right, hands still busy with his work, and speaks a single short sentence toward no one in particular — never to a screen, never to a phone. Hold on his face for the final 2 seconds.\n\nAudio: early morning room tone, a fridge compressor, a distant street. No music.",
+    "scriptHeygen": null,
+    "kit": null,
+    "heygenPrompt": "Avatar : « Chef FoodEatUp » — votre avatar 3D, plan poitrine, regard caméra, fond vert (ou transparent).\nFormat : 1080 × 1920, 9:16, 25 images par seconde.\nVoix : française, masculine, débit posé, ton complice — le chef qui explique, pas celui qui vend.\nDurée visée : 9 secondes — c'est le segment 9,5 s → 18,5 s du master.\n\nScript, à coller tel quel :\n« Une rupture, on la découvre toujours au pire moment : quand le plat est déjà commandé. Je demande à Jarvis ce qui manque avant d'ouvrir, et j'ai la matinée pour le régler. »\n\nPrononciation : « Jarvis » se dit à l'anglaise, DJAR-viss — c'est le nom de l'agent vocal, il revient dans les trente épisodes et il doit sonner pareil à chaque fois.\n\nRendu : aucun sous-titre, aucune incrustation, aucun logo, aucun décor de fond. Pas de musique. Le montage s'occupe de tout le reste.",
+    "montage": {
+      "consigne": "Monte EP212 : coupe le clip Higgsfield à 9,5 s, pose l'accroche « On découvre les ruptures à midi. Toujours. » à 5,0 s, empile l'avatar HeyGen et la capture d'écran dans la tablette de 18,5 s à 28,5 s, ferme sur la signature et le sting. Sortie 1080×1920, 37,5 s, −14 LUFS.",
+      "segments": [
+        {
+          "titre": "Hook",
+          "debut": 0,
+          "fin": 9.5,
+          "contenu": "Le plan Higgsfield, recadré en 9:16. L'accroche « On découvre les ruptures à midi. Toujours. » apparaît à 5,0 s, en bas du cadre."
+        },
+        {
+          "titre": "Transition de marque",
+          "debut": 9.5,
+          "fin": 18.5,
+          "contenu": "L'avatar HeyGen entre par la droite et prend la parole : « Une rupture, on la découvre toujours au pire moment : quand le plat est déjà commandé. »"
+        },
+        {
+          "titre": "Démo logiciel",
+          "debut": 18.5,
+          "fin": 28.5,
+          "contenu": "La phrase « Jarvis, qu'est-ce qu'il me manque ? » s'écrit à l'écran, puis la réponse — la liste des articles sous seuil, avec leur niveau réel. L'avatar reste en médaillon en bas à gauche."
+        },
+        {
+          "titre": "Signature",
+          "debut": 28.5,
+          "fin": 32.5,
+          "contenu": "Bandeau crème, la punchline « Sauf quand on demande à sept heures. », le logo FoodEatUp et le repère de saison « 07 h · Avant d'ouvrir les yeux »."
+        },
+        {
+          "titre": "Sting",
+          "debut": 32.5,
+          "fin": 37.5,
+          "contenu": "Le sting de marque, « CE QUI MANQUE » en incrustation, puis l'appel à l'action : https://site.foodeatup.com/ et le 06 14 18 92 25."
+        }
+      ],
+      "livrable": "1080 × 1920 · 37,5 s · H.264 · −14 LUFS · master versé dans la bibliothèque RapidoCMS, prêt à être programmé sur les cinq réseaux."
+    },
+    "metier": null,
+    "phase": null,
+    "amplitude": null,
+    "boucle": null,
+    "boucleSlug": null,
+    "grandeBoucle": null,
+    "incident": null,
+    "incidentHeure": null,
+    "incidentQuoi": null,
+    "saumon": null,
+    "story": {
+      "format": "9:16 · 1080 × 1920 · 10 s",
+      "hook": "On découvre les ruptures à midi. Toujours",
+      "punchline": "Sauf quand on demande à sept heures",
+      "url": null
+    },
+    "carrousel": null,
+    "imageFacebook": null,
+    "tutoriel": null
+  },
+  "EP213": {
+    "publications": {
+      "facebook": {
+        "legende": "La production de jeudi est prête. Sur le papier. Il manque deux ingrédients. On le saura jeudi.\n\nOn dit : « Jarvis, il manque quoi pour la production de jeudi ? »\n\nLes ingrédients absents des productions déjà planifiées, sur les jours qui viennent. Le problème de jeudi se règle lundi.\n\n👉 Tout FoodEatUp : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "hashtags": [
+          "restaurant",
+          "restaurateur",
+          "foodeatup",
+          "jarvis",
+          "production",
+          "stocks"
+        ],
+        "motsCles": [
+          "plan de production",
+          "alerte production",
+          "mise en place cuisine",
+          "stocks restaurant"
+        ],
+        "cta": "Découvrir FoodEatUp"
+      },
+      "instagram": {
+        "legende": "La production de jeudi est prête. Sur le papier.\nIl manque deux ingrédients. On le saura jeudi.\n\n« Jarvis, il manque quoi pour la production de jeudi ? »\n\nLes ingrédients absents des productions déjà planifiées, sur les jours qui viennent. Le problème de jeudi se règle lundi.\n\n07 h · Avant d'ouvrir les yeux — saison 8, « Dis-le, c'est fait ». Une journée, une phrase à la fois.\nTout est expliqué sur notre site — lien en bio.\nUne démo ? 06 14 18 92 25",
+        "hashtags": [
+          "restaurant",
+          "restaurateur",
+          "foodeatup",
+          "jarvis",
+          "production",
+          "stocks",
+          "vegefruites",
+          "coupdefeu",
+          "logicielrestaurant",
+          "assistantvocal"
+        ],
+        "motsCles": [
+          "plan de production",
+          "alerte production",
+          "mise en place cuisine",
+          "stocks restaurant"
+        ],
+        "cta": "Tout est en bio"
+      },
+      "tiktok": {
+        "legende": "La production de jeudi est prête. Sur le papier.\nIl manque deux ingrédients. On le saura jeudi.\n\n« Jarvis, il manque quoi pour la production de jeudi ? » 🎙️\n\nLes ingrédients absents des productions déjà planifiées, sur les jours qui viennent. Le problème de jeudi se règle lundi.",
+        "hashtags": [
+          "restaurant",
+          "restaurateur",
+          "foodeatup",
+          "jarvis",
+          "production"
+        ],
+        "motsCles": [
+          "plan de production",
+          "alerte production",
+          "mise en place cuisine",
+          "stocks restaurant"
+        ],
+        "cta": "Lien en bio"
+      },
+      "linkedin": {
+        "legende": "La production de jeudi est prête. Sur le papier.\n\nCe qu'on dit : « Jarvis, il manque quoi pour la production de jeudi ? »\n\nLes ingrédients absents des productions déjà planifiées, sur les jours qui viennent. Le problème de jeudi se règle lundi.\n\nL'outil appelé : list_production_alerts.\n\nConcrètement : Les productions planifiées sont comparées au stock réel : ce qui manque remonte avant le jour J, avec les jours d'avance pour commander.\n\nEn savoir plus : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "hashtags": [
+          "restauration",
+          "foodeatup",
+          "jarvis",
+          "production",
+          "stocks"
+        ],
+        "motsCles": [
+          "plan de production",
+          "alerte production",
+          "mise en place cuisine",
+          "stocks restaurant"
+        ],
+        "cta": "Découvrir FoodEatUp"
+      },
+      "youtube": {
+        "legende": "La production de jeudi est prête. Sur le papier. Il manque deux ingrédients. On le saura jeudi.\n\nOn dit : « Jarvis, il manque quoi pour la production de jeudi ? »\n\nLes ingrédients absents des productions déjà planifiées, sur les jours qui viennent. Le problème de jeudi se règle lundi.\n\nL'outil appelé : list_production_alerts.\n\n— — —\n\n🔗 https://site.foodeatup.com/\n\n📞 Une démo ? 06 14 18 92 25\n🌐 foodeatup.com\n\nSérie « Le Coup de Feu » — saison 8 « Dis-le, c'est fait », épisode 3 sur 30, et dernière saison de la série.\n07 h · Avant d'ouvrir les yeux · À l'écran : L'Oignon\nModule StockVision · Les alertes de production\n\nJarvis est l'agent vocal de FoodEatUp, le logiciel qui réunit la caisse, le stock, les plannings, l'HACCP et le marketing d'un restaurant au même endroit.\n",
+        "hashtags": [
+          "Shorts",
+          "restaurant",
+          "restaurateur",
+          "foodeatup",
+          "jarvis",
+          "production",
+          "stocks",
+          "coupdefeu"
+        ],
+        "motsCles": [
+          "plan de production",
+          "alerte production",
+          "mise en place cuisine",
+          "stocks restaurant"
+        ],
+        "cta": "Découvrir FoodEatUp",
+        "titre": "Jeudi va coincer — 07 h | FoodEatUp"
+      }
+    },
+    "promptVignette": "Photo réaliste, cadrage vertical 9:16. Il est 07 h : lumière froide et rasante du petit matin, la salle encore éteinte. Le chef de l'image de référence — MÊME visage, même barbe, même toque blanche, même veste de cuisine blanche, même tablier blanc au logo FoodEatUp bleu. Ne change ni ses traits, ni sa morphologie, ni sa tenue. Il ne regarde AUCUN écran et ne tient AUCUN téléphone : il parle, simplement, les mains occupées par son travail. Scène : jeudi va coincer. La production de jeudi est prête. Sur le papier. Décor : un plan de travail avec une fiche de production posée dessus, et deux bacs vides à côté. Le chef occupe les deux tiers droits du cadre, en plan poitrine. Bande crème #FCF9E6 en haut du cadre sur un cinquième de la hauteur, portant UNIQUEMENT le texte « JEUDI VA COINCER » en typographie arrondie très grasse, bleu marine #0F1A23, centré. En bas à gauche, une pastille arrondie beige #C4B28E, capitales blanches : « EP213 · 07 h ». Aucun autre texte, aucun logo ajouté, pas de filigrane, pas de bordure décorative, aucun écran de logiciel visible.",
+    "higgsfieldPrompt": "Vertical 9:16, 10 seconds, photorealistic, cinematic handheld camera, shallow depth of field, natural light, 4K. NO text overlay, NO subtitles, NO watermark, NO logo. NO visible software interface, NO phone screen.\n\nReference image attached — the FoodEatUp chef. Keep his exact face, beard, white toque, white chef jacket and white FoodEatUp apron. Do not alter his features or his build.\n\nTime of day: 07:00 — cold raking dawn light, the room still unlit.\n\nA stainless prep bench with a printed production sheet lying on it. Two empty containers sit beside it. The camera pushes in slowly on the sheet. A hand never arrives.\n\nAt 8 seconds the chef from the reference image steps into frame on the right, hands still busy with his work, and speaks a single short sentence toward no one in particular — never to a screen, never to a phone. Hold on his face for the final 2 seconds.\n\nAudio: early morning room tone, a fridge compressor, a distant street. No music.",
+    "scriptHeygen": null,
+    "kit": null,
+    "heygenPrompt": "Avatar : « Chef FoodEatUp » — votre avatar 3D, plan poitrine, regard caméra, fond vert (ou transparent).\nFormat : 1080 × 1920, 9:16, 25 images par seconde.\nVoix : française, masculine, débit posé, ton complice — le chef qui explique, pas celui qui vend.\nDurée visée : 9 secondes — c'est le segment 9,5 s → 18,5 s du master.\n\nScript, à coller tel quel :\n« Une production planifiée, c'est bien. Une production planifiée sans les ingrédients, c'est un jeudi raté. Jarvis compare les deux et me le dit trois jours avant. »\n\nPrononciation : « Jarvis » se dit à l'anglaise, DJAR-viss — c'est le nom de l'agent vocal, il revient dans les trente épisodes et il doit sonner pareil à chaque fois.\n\nRendu : aucun sous-titre, aucune incrustation, aucun logo, aucun décor de fond. Pas de musique. Le montage s'occupe de tout le reste.",
+    "montage": {
+      "consigne": "Monte EP213 : coupe le clip Higgsfield à 9,5 s, pose l'accroche « La production de jeudi est prête. Sur le papier. » à 5,0 s, empile l'avatar HeyGen et la capture d'écran dans la tablette de 18,5 s à 28,5 s, ferme sur la signature et le sting. Sortie 1080×1920, 37,5 s, −14 LUFS.",
+      "segments": [
+        {
+          "titre": "Hook",
+          "debut": 0,
+          "fin": 9.5,
+          "contenu": "Le plan Higgsfield, recadré en 9:16. L'accroche « La production de jeudi est prête. Sur le papier. » apparaît à 5,0 s, en bas du cadre."
+        },
+        {
+          "titre": "Transition de marque",
+          "debut": 9.5,
+          "fin": 18.5,
+          "contenu": "L'avatar HeyGen entre par la droite et prend la parole : « Une production planifiée, c'est bien. »"
+        },
+        {
+          "titre": "Démo logiciel",
+          "debut": 18.5,
+          "fin": 28.5,
+          "contenu": "La phrase « Jarvis, il manque quoi pour la production de jeudi ? » s'écrit à l'écran, puis la réponse — les alertes de production : l'ingrédient manquant, la production concernée, la date. L'avatar reste en médaillon en bas à gauche."
+        },
+        {
+          "titre": "Signature",
+          "debut": 28.5,
+          "fin": 32.5,
+          "contenu": "Bandeau crème, la punchline « Il manque deux ingrédients. On le saura jeudi. », le logo FoodEatUp et le repère de saison « 07 h · Avant d'ouvrir les yeux »."
+        },
+        {
+          "titre": "Sting",
+          "debut": 32.5,
+          "fin": 37.5,
+          "contenu": "Le sting de marque, « JEUDI VA COINCER » en incrustation, puis l'appel à l'action : https://site.foodeatup.com/ et le 06 14 18 92 25."
+        }
+      ],
+      "livrable": "1080 × 1920 · 37,5 s · H.264 · −14 LUFS · master versé dans la bibliothèque RapidoCMS, prêt à être programmé sur les cinq réseaux."
+    },
+    "metier": null,
+    "phase": null,
+    "amplitude": null,
+    "boucle": null,
+    "boucleSlug": null,
+    "grandeBoucle": null,
+    "incident": null,
+    "incidentHeure": null,
+    "incidentQuoi": null,
+    "saumon": null,
+    "story": {
+      "format": "9:16 · 1080 × 1920 · 10 s",
+      "hook": "La production de jeudi est prête. Sur le papier",
+      "punchline": "Il manque deux ingrédients. On le saura jeudi",
+      "url": null
+    },
+    "carrousel": null,
+    "imageFacebook": null,
+    "tutoriel": null
+  },
+  "EP214": {
+    "publications": {
+      "facebook": {
+        "legende": "Le fournisseur ferme les commandes à neuf heures. Il est sept heures dix. On a le temps.\n\nOn dit : « Jarvis, commande-moi ça chez le poissonnier. »\n\nLa commande fournisseur est créée et part avant que le premier client ait poussé la porte.\n\n👉 Tout FoodEatUp : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "hashtags": [
+          "restaurant",
+          "restaurateur",
+          "foodeatup",
+          "jarvis",
+          "fournisseur",
+          "commande"
+        ],
+        "motsCles": [
+          "commande fournisseur",
+          "bon de commande restaurant",
+          "approvisionnement",
+          "achats restaurant"
+        ],
+        "cta": "Découvrir FoodEatUp"
+      },
+      "instagram": {
+        "legende": "Le fournisseur ferme les commandes à neuf heures.\nIl est sept heures dix. On a le temps.\n\n« Jarvis, commande-moi ça chez le poissonnier. »\n\nLa commande fournisseur est créée et part avant que le premier client ait poussé la porte.\n\n07 h · Avant d'ouvrir les yeux — saison 8, « Dis-le, c'est fait ». Une journée, une phrase à la fois.\nTout est expliqué sur notre site — lien en bio.\nUne démo ? 06 14 18 92 25",
+        "hashtags": [
+          "restaurant",
+          "restaurateur",
+          "foodeatup",
+          "jarvis",
+          "fournisseur",
+          "commande",
+          "vegefruites",
+          "coupdefeu",
+          "logicielrestaurant",
+          "assistantvocal"
+        ],
+        "motsCles": [
+          "commande fournisseur",
+          "bon de commande restaurant",
+          "approvisionnement",
+          "achats restaurant"
+        ],
+        "cta": "Tout est en bio"
+      },
+      "tiktok": {
+        "legende": "Le fournisseur ferme les commandes à neuf heures.\nIl est sept heures dix. On a le temps.\n\n« Jarvis, commande-moi ça chez le poissonnier. » 🎙️\n\nLa commande fournisseur est créée et part avant que le premier client ait poussé la porte.",
+        "hashtags": [
+          "restaurant",
+          "restaurateur",
+          "foodeatup",
+          "jarvis",
+          "fournisseur"
+        ],
+        "motsCles": [
+          "commande fournisseur",
+          "bon de commande restaurant",
+          "approvisionnement",
+          "achats restaurant"
+        ],
+        "cta": "Lien en bio"
+      },
+      "linkedin": {
+        "legende": "Le fournisseur ferme les commandes à neuf heures.\n\nCe qu'on dit : « Jarvis, commande-moi ça chez le poissonnier. »\n\nLa commande fournisseur est créée et part avant que le premier client ait poussé la porte.\n\nL'outil appelé : create_supplier_order.\n\nConcrètement : La commande se dicte au lieu de se saisir : le bon est créé, envoyé, et le stock l'attend. Aucun formulaire n'a été ouvert.\n\nEn savoir plus : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "hashtags": [
+          "restauration",
+          "foodeatup",
+          "jarvis",
+          "fournisseur",
+          "commande"
+        ],
+        "motsCles": [
+          "commande fournisseur",
+          "bon de commande restaurant",
+          "approvisionnement",
+          "achats restaurant"
+        ],
+        "cta": "Découvrir FoodEatUp"
+      },
+      "youtube": {
+        "legende": "Le fournisseur ferme les commandes à neuf heures. Il est sept heures dix. On a le temps.\n\nOn dit : « Jarvis, commande-moi ça chez le poissonnier. »\n\nLa commande fournisseur est créée et part avant que le premier client ait poussé la porte.\n\nL'outil appelé : create_supplier_order.\n\n— — —\n\n🔗 https://site.foodeatup.com/\n\n📞 Une démo ? 06 14 18 92 25\n🌐 foodeatup.com\n\nSérie « Le Coup de Feu » — saison 8 « Dis-le, c'est fait », épisode 4 sur 30, et dernière saison de la série.\n07 h · Avant d'ouvrir les yeux · À l'écran : L'Oignon\nModule StockVision · La commande fournisseur\n\nJarvis est l'agent vocal de FoodEatUp, le logiciel qui réunit la caisse, le stock, les plannings, l'HACCP et le marketing d'un restaurant au même endroit.\n",
+        "hashtags": [
+          "Shorts",
+          "restaurant",
+          "restaurateur",
+          "foodeatup",
+          "jarvis",
+          "fournisseur",
+          "commande",
+          "coupdefeu"
+        ],
+        "motsCles": [
+          "commande fournisseur",
+          "bon de commande restaurant",
+          "approvisionnement",
+          "achats restaurant"
+        ],
+        "cta": "Découvrir FoodEatUp",
+        "titre": "Le bon avant l'ouverture — 07 h | FoodEatUp"
+      }
+    },
+    "promptVignette": "Photo réaliste, cadrage vertical 9:16. Il est 07 h : lumière froide et rasante du petit matin, la salle encore éteinte. Le chef de l'image de référence — MÊME visage, même barbe, même toque blanche, même veste de cuisine blanche, même tablier blanc au logo FoodEatUp bleu. Ne change ni ses traits, ni sa morphologie, ni sa tenue. Il ne regarde AUCUN écran et ne tient AUCUN téléphone : il parle, simplement, les mains occupées par son travail. Scène : le bon avant l'ouverture. Le fournisseur ferme les commandes à neuf heures. Décor : un comptoir de réserve, un téléphone posé, un carnet de commandes fermé. Le chef occupe les deux tiers droits du cadre, en plan poitrine. Bande crème #FCF9E6 en haut du cadre sur un cinquième de la hauteur, portant UNIQUEMENT le texte « LE BON DU MATIN » en typographie arrondie très grasse, bleu marine #0F1A23, centré. En bas à gauche, une pastille arrondie beige #C4B28E, capitales blanches : « EP214 · 07 h ». Aucun autre texte, aucun logo ajouté, pas de filigrane, pas de bordure décorative, aucun écran de logiciel visible.",
+    "higgsfieldPrompt": "Vertical 9:16, 10 seconds, photorealistic, cinematic handheld camera, shallow depth of field, natural light, 4K. NO text overlay, NO subtitles, NO watermark, NO logo. NO visible software interface, NO phone screen.\n\nReference image attached — the FoodEatUp chef. Keep his exact face, beard, white toque, white chef jacket and white FoodEatUp apron. Do not alter his features or his build.\n\nTime of day: 07:00 — cold raking dawn light, the room still unlit.\n\nA back-of-house counter before opening. A closed order pad and a phone lie side by side, untouched. Morning light crosses the counter. Nothing happens for four seconds.\n\nAt 8 seconds the chef from the reference image steps into frame on the right, hands still busy with his work, and speaks a single short sentence toward no one in particular — never to a screen, never to a phone. Hold on his face for the final 2 seconds.\n\nAudio: early morning room tone, a fridge compressor, a distant street. No music.",
+    "scriptHeygen": null,
+    "kit": null,
+    "heygenPrompt": "Avatar : « Chef FoodEatUp » — votre avatar 3D, plan poitrine, regard caméra, fond vert (ou transparent).\nFormat : 1080 × 1920, 9:16, 25 images par seconde.\nVoix : française, masculine, débit posé, ton complice — le chef qui explique, pas celui qui vend.\nDurée visée : 9 secondes — c'est le segment 9,5 s → 18,5 s du master.\n\nScript, à coller tel quel :\n« Avant, la commande fournisseur, c'était un carnet, un appel, et un oubli une fois sur trois. Maintenant je la dicte à Jarvis pendant que je monte la chambre froide. »\n\nPrononciation : « Jarvis » se dit à l'anglaise, DJAR-viss — c'est le nom de l'agent vocal, il revient dans les trente épisodes et il doit sonner pareil à chaque fois.\n\nRendu : aucun sous-titre, aucune incrustation, aucun logo, aucun décor de fond. Pas de musique. Le montage s'occupe de tout le reste.",
+    "montage": {
+      "consigne": "Monte EP214 : coupe le clip Higgsfield à 9,5 s, pose l'accroche « Le fournisseur ferme les commandes à neuf heures. » à 5,0 s, empile l'avatar HeyGen et la capture d'écran dans la tablette de 18,5 s à 28,5 s, ferme sur la signature et le sting. Sortie 1080×1920, 37,5 s, −14 LUFS.",
+      "segments": [
+        {
+          "titre": "Hook",
+          "debut": 0,
+          "fin": 9.5,
+          "contenu": "Le plan Higgsfield, recadré en 9:16. L'accroche « Le fournisseur ferme les commandes à neuf heures. » apparaît à 5,0 s, en bas du cadre."
+        },
+        {
+          "titre": "Transition de marque",
+          "debut": 9.5,
+          "fin": 18.5,
+          "contenu": "L'avatar HeyGen entre par la droite et prend la parole : « Avant, la commande fournisseur, c'était un carnet, un appel, et un oubli une fois sur trois. »"
+        },
+        {
+          "titre": "Démo logiciel",
+          "debut": 18.5,
+          "fin": 28.5,
+          "contenu": "La phrase « Jarvis, commande-moi ça chez le poissonnier. » s'écrit à l'écran, puis la réponse — le bon de commande fournisseur créé, ses lignes et son statut. L'avatar reste en médaillon en bas à gauche."
+        },
+        {
+          "titre": "Signature",
+          "debut": 28.5,
+          "fin": 32.5,
+          "contenu": "Bandeau crème, la punchline « Il est sept heures dix. On a le temps. », le logo FoodEatUp et le repère de saison « 07 h · Avant d'ouvrir les yeux »."
+        },
+        {
+          "titre": "Sting",
+          "debut": 32.5,
+          "fin": 37.5,
+          "contenu": "Le sting de marque, « LE BON DU MATIN » en incrustation, puis l'appel à l'action : https://site.foodeatup.com/ et le 06 14 18 92 25."
+        }
+      ],
+      "livrable": "1080 × 1920 · 37,5 s · H.264 · −14 LUFS · master versé dans la bibliothèque RapidoCMS, prêt à être programmé sur les cinq réseaux."
+    },
+    "metier": null,
+    "phase": null,
+    "amplitude": null,
+    "boucle": null,
+    "boucleSlug": null,
+    "grandeBoucle": null,
+    "incident": null,
+    "incidentHeure": null,
+    "incidentQuoi": null,
+    "saumon": null,
+    "story": {
+      "format": "9:16 · 1080 × 1920 · 10 s",
+      "hook": "Le fournisseur ferme les commandes à neuf heures",
+      "punchline": "Il est sept heures dix. On a le temps",
+      "url": null
+    },
+    "carrousel": null,
+    "imageFacebook": null,
+    "tutoriel": null
+  },
+  "EP215": {
+    "publications": {
+      "facebook": {
+        "legende": "Combien de couverts ce soir ? « On verra bien. » Mauvaise réponse. Elle est écrite quelque part.\n\nOn dit : « Jarvis, on a combien de couverts ce soir ? »\n\nLes créneaux, les tables encore libres et le nombre de couverts déjà engagés. De quoi décider des achats du matin.\n\n👉 Tout FoodEatUp : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "hashtags": [
+          "restaurant",
+          "restaurateur",
+          "foodeatup",
+          "jarvis",
+          "reservation",
+          "salle"
+        ],
+        "motsCles": [
+          "disponibilité réservation",
+          "couverts du soir",
+          "plan de salle",
+          "réservation restaurant"
+        ],
+        "cta": "Découvrir FoodEatUp"
+      },
+      "instagram": {
+        "legende": "Combien de couverts ce soir ? « On verra bien. »\nMauvaise réponse. Elle est écrite quelque part.\n\n« Jarvis, on a combien de couverts ce soir ? »\n\nLes créneaux, les tables encore libres et le nombre de couverts déjà engagés. De quoi décider des achats du matin.\n\n07 h · Avant d'ouvrir les yeux — saison 8, « Dis-le, c'est fait ». Une journée, une phrase à la fois.\nTout est expliqué sur notre site — lien en bio.\nUne démo ? 06 14 18 92 25",
+        "hashtags": [
+          "restaurant",
+          "restaurateur",
+          "foodeatup",
+          "jarvis",
+          "reservation",
+          "salle",
+          "vegefruites",
+          "coupdefeu",
+          "logicielrestaurant",
+          "assistantvocal"
+        ],
+        "motsCles": [
+          "disponibilité réservation",
+          "couverts du soir",
+          "plan de salle",
+          "réservation restaurant"
+        ],
+        "cta": "Tout est en bio"
+      },
+      "tiktok": {
+        "legende": "Combien de couverts ce soir ? « On verra bien. »\nMauvaise réponse. Elle est écrite quelque part.\n\n« Jarvis, on a combien de couverts ce soir ? » 🎙️\n\nLes créneaux, les tables encore libres et le nombre de couverts déjà engagés. De quoi décider des achats du matin.",
+        "hashtags": [
+          "restaurant",
+          "restaurateur",
+          "foodeatup",
+          "jarvis",
+          "reservation"
+        ],
+        "motsCles": [
+          "disponibilité réservation",
+          "couverts du soir",
+          "plan de salle",
+          "réservation restaurant"
+        ],
+        "cta": "Lien en bio"
+      },
+      "linkedin": {
+        "legende": "Combien de couverts ce soir ? « On verra bien. »\n\nCe qu'on dit : « Jarvis, on a combien de couverts ce soir ? »\n\nLes créneaux, les tables encore libres et le nombre de couverts déjà engagés. De quoi décider des achats du matin.\n\nL'outil appelé : reservation_availability.\n\nConcrètement : Le service du soir est connu le matin : couverts engagés, créneaux, tables libres. C'est ce chiffre qui décide de la commande et de la mise en place.\n\nEn savoir plus : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "hashtags": [
+          "restauration",
+          "foodeatup",
+          "jarvis",
+          "reservation",
+          "salle"
+        ],
+        "motsCles": [
+          "disponibilité réservation",
+          "couverts du soir",
+          "plan de salle",
+          "réservation restaurant"
+        ],
+        "cta": "Découvrir FoodEatUp"
+      },
+      "youtube": {
+        "legende": "Combien de couverts ce soir ? « On verra bien. » Mauvaise réponse. Elle est écrite quelque part.\n\nOn dit : « Jarvis, on a combien de couverts ce soir ? »\n\nLes créneaux, les tables encore libres et le nombre de couverts déjà engagés. De quoi décider des achats du matin.\n\nL'outil appelé : reservation_availability.\n\n— — —\n\n🔗 https://site.foodeatup.com/\n\n📞 Une démo ? 06 14 18 92 25\n🌐 foodeatup.com\n\nSérie « Le Coup de Feu » — saison 8 « Dis-le, c'est fait », épisode 5 sur 30, et dernière saison de la série.\n07 h · Avant d'ouvrir les yeux · À l'écran : Don Citrone\nModule Réservation · La disponibilité\n\nJarvis est l'agent vocal de FoodEatUp, le logiciel qui réunit la caisse, le stock, les plannings, l'HACCP et le marketing d'un restaurant au même endroit.\n",
+        "hashtags": [
+          "Shorts",
+          "restaurant",
+          "restaurateur",
+          "foodeatup",
+          "jarvis",
+          "reservation",
+          "salle",
+          "coupdefeu"
+        ],
+        "motsCles": [
+          "disponibilité réservation",
+          "couverts du soir",
+          "plan de salle",
+          "réservation restaurant"
+        ],
+        "cta": "Découvrir FoodEatUp",
+        "titre": "Combien on est ce soir — 07 h | FoodEatUp"
+      }
+    },
+    "promptVignette": "Photo réaliste, cadrage vertical 9:16. Il est 07 h : lumière froide et rasante du petit matin, la salle encore éteinte. Le chef de l'image de référence — MÊME visage, même barbe, même toque blanche, même veste de cuisine blanche, même tablier blanc au logo FoodEatUp bleu. Ne change ni ses traits, ni sa morphologie, ni sa tenue. Il ne regarde AUCUN écran et ne tient AUCUN téléphone : il parle, simplement, les mains occupées par son travail. Scène : combien on est ce soir. Combien de couverts ce soir ? « On verra bien. » Décor : une salle vide au petit matin, chaises encore sur les tables, une seule table dressée. Le chef occupe les deux tiers droits du cadre, en plan poitrine. Bande crème #FCF9E6 en haut du cadre sur un cinquième de la hauteur, portant UNIQUEMENT le texte « COMBIEN CE SOIR » en typographie arrondie très grasse, bleu marine #0F1A23, centré. En bas à gauche, une pastille arrondie beige #C4B28E, capitales blanches : « EP215 · 07 h ». Aucun autre texte, aucun logo ajouté, pas de filigrane, pas de bordure décorative, aucun écran de logiciel visible.",
+    "higgsfieldPrompt": "Vertical 9:16, 10 seconds, photorealistic, cinematic handheld camera, shallow depth of field, natural light, 4K. NO text overlay, NO subtitles, NO watermark, NO logo. NO visible software interface, NO phone screen.\n\nReference image attached — the FoodEatUp chef. Keep his exact face, beard, white toque, white chef jacket and white FoodEatUp apron. Do not alter his features or his build.\n\nTime of day: 07:00 — cold raking dawn light, the room still unlit.\n\nAn empty dining room at dawn, chairs still stacked on tables except one, already set for two. Slow dolly down the row. Dust floats in the window light.\n\nAt 8 seconds the chef from the reference image steps into frame on the right, hands still busy with his work, and speaks a single short sentence toward no one in particular — never to a screen, never to a phone. Hold on his face for the final 2 seconds.\n\nAudio: early morning room tone, a fridge compressor, a distant street. No music.",
+    "scriptHeygen": null,
+    "kit": null,
+    "heygenPrompt": "Avatar : « Chef FoodEatUp » — votre avatar 3D, plan poitrine, regard caméra, fond vert (ou transparent).\nFormat : 1080 × 1920, 9:16, 25 images par seconde.\nVoix : française, masculine, débit posé, ton complice — le chef qui explique, pas celui qui vend.\nDurée visée : 9 secondes — c'est le segment 9,5 s → 18,5 s du master.\n\nScript, à coller tel quel :\n« Combien de couverts ce soir ? C'est la question qui décide de tout : les achats, la mise en place, l'équipe. Je la pose à Jarvis, il me répond avant que j'aie descendu les chaises. »\n\nPrononciation : « Jarvis » se dit à l'anglaise, DJAR-viss — c'est le nom de l'agent vocal, il revient dans les trente épisodes et il doit sonner pareil à chaque fois.\n\nRendu : aucun sous-titre, aucune incrustation, aucun logo, aucun décor de fond. Pas de musique. Le montage s'occupe de tout le reste.",
+    "montage": {
+      "consigne": "Monte EP215 : coupe le clip Higgsfield à 9,5 s, pose l'accroche « Combien de couverts ce soir ? « On verra bien. » » à 5,0 s, empile l'avatar HeyGen et la capture d'écran dans la tablette de 18,5 s à 28,5 s, ferme sur la signature et le sting. Sortie 1080×1920, 37,5 s, −14 LUFS.",
+      "segments": [
+        {
+          "titre": "Hook",
+          "debut": 0,
+          "fin": 9.5,
+          "contenu": "Le plan Higgsfield, recadré en 9:16. L'accroche « Combien de couverts ce soir ? « On verra bien. » » apparaît à 5,0 s, en bas du cadre."
+        },
+        {
+          "titre": "Transition de marque",
+          "debut": 9.5,
+          "fin": 18.5,
+          "contenu": "L'avatar HeyGen entre par la droite et prend la parole : « Combien de couverts ce soir ? C'est la question qui décide de tout : les achats, la mise en place, l'équipe. »"
+        },
+        {
+          "titre": "Démo logiciel",
+          "debut": 18.5,
+          "fin": 28.5,
+          "contenu": "La phrase « Jarvis, on a combien de couverts ce soir ? » s'écrit à l'écran, puis la réponse — les créneaux du soir, les couverts engagés et les tables encore libres. L'avatar reste en médaillon en bas à gauche."
+        },
+        {
+          "titre": "Signature",
+          "debut": 28.5,
+          "fin": 32.5,
+          "contenu": "Bandeau crème, la punchline « Mauvaise réponse. Elle est écrite quelque part. », le logo FoodEatUp et le repère de saison « 07 h · Avant d'ouvrir les yeux »."
+        },
+        {
+          "titre": "Sting",
+          "debut": 32.5,
+          "fin": 37.5,
+          "contenu": "Le sting de marque, « COMBIEN CE SOIR » en incrustation, puis l'appel à l'action : https://site.foodeatup.com/ et le 06 14 18 92 25."
+        }
+      ],
+      "livrable": "1080 × 1920 · 37,5 s · H.264 · −14 LUFS · master versé dans la bibliothèque RapidoCMS, prêt à être programmé sur les cinq réseaux."
+    },
+    "metier": null,
+    "phase": null,
+    "amplitude": null,
+    "boucle": null,
+    "boucleSlug": null,
+    "grandeBoucle": null,
+    "incident": null,
+    "incidentHeure": null,
+    "incidentQuoi": null,
+    "saumon": null,
+    "story": {
+      "format": "9:16 · 1080 × 1920 · 10 s",
+      "hook": "Combien de couverts ce soir ? « On verra bien. »",
+      "punchline": "Mauvaise réponse. Elle est écrite quelque part",
+      "url": null
+    },
+    "carrousel": null,
+    "imageFacebook": null,
+    "tutoriel": null
+  },
+  "EP216": {
+    "publications": {
+      "facebook": {
+        "legende": "« Frigo 3. » Il y en a deux. Une IA qui devine, c'est une IA qui se trompe.\n\nOn dit : « Jarvis, relève le frigo 3. »\n\nDeux équipements portent ce nom. Plutôt que de choisir au hasard, Jarvis demande lequel — et n'agit qu'une fois la réponse donnée.\n\n👉 Tout FoodEatUp : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "hashtags": [
+          "restaurant",
+          "restaurateur",
+          "foodeatup",
+          "jarvis",
+          "iarestaurant",
+          "haccp"
+        ],
+        "motsCles": [
+          "assistant vocal cuisine",
+          "reconnaissance équipement",
+          "IA restaurant",
+          "commande vocale"
+        ],
+        "cta": "Découvrir FoodEatUp"
+      },
+      "instagram": {
+        "legende": "« Frigo 3. » Il y en a deux.\nUne IA qui devine, c'est une IA qui se trompe.\n\n« Jarvis, relève le frigo 3. »\n\nDeux équipements portent ce nom. Plutôt que de choisir au hasard, Jarvis demande lequel — et n'agit qu'une fois la réponse donnée.\n\n10 h · La mise en place — saison 8, « Dis-le, c'est fait ». Une journée, une phrase à la fois.\nTout est expliqué sur notre site — lien en bio.\nUne démo ? 06 14 18 92 25",
+        "hashtags": [
+          "restaurant",
+          "restaurateur",
+          "foodeatup",
+          "jarvis",
+          "iarestaurant",
+          "haccp",
+          "vegefruites",
+          "coupdefeu",
+          "logicielrestaurant",
+          "assistantvocal"
+        ],
+        "motsCles": [
+          "assistant vocal cuisine",
+          "reconnaissance équipement",
+          "IA restaurant",
+          "commande vocale"
+        ],
+        "cta": "Tout est en bio"
+      },
+      "tiktok": {
+        "legende": "« Frigo 3. » Il y en a deux.\nUne IA qui devine, c'est une IA qui se trompe.\n\n« Jarvis, relève le frigo 3. » 🎙️\n\nDeux équipements portent ce nom. Plutôt que de choisir au hasard, Jarvis demande lequel — et n'agit qu'une fois la réponse donnée.",
+        "hashtags": [
+          "restaurant",
+          "restaurateur",
+          "foodeatup",
+          "jarvis",
+          "iarestaurant"
+        ],
+        "motsCles": [
+          "assistant vocal cuisine",
+          "reconnaissance équipement",
+          "IA restaurant",
+          "commande vocale"
+        ],
+        "cta": "Lien en bio"
+      },
+      "linkedin": {
+        "legende": "« Frigo 3. » Il y en a deux.\n\nCe qu'on dit : « Jarvis, relève le frigo 3. »\n\nDeux équipements portent ce nom. Plutôt que de choisir au hasard, Jarvis demande lequel — et n'agit qu'une fois la réponse donnée.\n\nL'outil appelé : search_entities.\n\nConcrètement : Le nom parlé est résolu vers un équipement réel, accents et pluriels compris. Quand c'est ambigu, la question revient au lieu d'un choix arbitraire.\n\nEn savoir plus : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "hashtags": [
+          "restauration",
+          "foodeatup",
+          "jarvis",
+          "iarestaurant",
+          "haccp"
+        ],
+        "motsCles": [
+          "assistant vocal cuisine",
+          "reconnaissance équipement",
+          "IA restaurant",
+          "commande vocale"
+        ],
+        "cta": "Découvrir FoodEatUp"
+      },
+      "youtube": {
+        "legende": "« Frigo 3. » Il y en a deux. Une IA qui devine, c'est une IA qui se trompe.\n\nOn dit : « Jarvis, relève le frigo 3. »\n\nDeux équipements portent ce nom. Plutôt que de choisir au hasard, Jarvis demande lequel — et n'agit qu'une fois la réponse donnée.\n\nL'outil appelé : search_entities.\n\n— — —\n\n🔗 https://site.foodeatup.com/\n\n📞 Une démo ? 06 14 18 92 25\n🌐 foodeatup.com\n\nSérie « Le Coup de Feu » — saison 8 « Dis-le, c'est fait », épisode 6 sur 30, et dernière saison de la série.\n10 h · La mise en place · À l'écran : L'Ail\nModule Configuration · Quand l'IA demande\n\nJarvis est l'agent vocal de FoodEatUp, le logiciel qui réunit la caisse, le stock, les plannings, l'HACCP et le marketing d'un restaurant au même endroit.\n",
+        "hashtags": [
+          "Shorts",
+          "restaurant",
+          "restaurateur",
+          "foodeatup",
+          "jarvis",
+          "iarestaurant",
+          "haccp",
+          "coupdefeu"
+        ],
+        "motsCles": [
+          "assistant vocal cuisine",
+          "reconnaissance équipement",
+          "IA restaurant",
+          "commande vocale"
+        ],
+        "cta": "Découvrir FoodEatUp",
+        "titre": "« Frigo 3 » — 10 h | FoodEatUp"
+      }
+    },
+    "promptVignette": "Photo réaliste, cadrage vertical 9:16. Il est 10 h : lumière de plein jour, franche, sans ombre marquée. Le chef de l'image de référence — MÊME visage, même barbe, même toque blanche, même veste de cuisine blanche, même tablier blanc au logo FoodEatUp bleu. Ne change ni ses traits, ni sa morphologie, ni sa tenue. Il ne regarde AUCUN écran et ne tient AUCUN téléphone : il parle, simplement, les mains occupées par son travail. Scène : « frigo 3 ». « Frigo 3. » Il y en a deux. Décor : un couloir de cuisine avec deux portes de chambre froide identiques, côte à côte. Le chef occupe les deux tiers droits du cadre, en plan poitrine. Bande crème #FCF9E6 en haut du cadre sur un cinquième de la hauteur, portant UNIQUEMENT le texte « FRIGO 3 » en typographie arrondie très grasse, bleu marine #0F1A23, centré. En bas à gauche, une pastille arrondie beige #C4B28E, capitales blanches : « EP216 · 10 h ». Aucun autre texte, aucun logo ajouté, pas de filigrane, pas de bordure décorative, aucun écran de logiciel visible.",
+    "higgsfieldPrompt": "Vertical 9:16, 10 seconds, photorealistic, cinematic handheld camera, shallow depth of field, natural light, 4K. NO text overlay, NO subtitles, NO watermark, NO logo. NO visible software interface, NO phone screen.\n\nReference image attached — the FoodEatUp chef. Keep his exact face, beard, white toque, white chef jacket and white FoodEatUp apron. Do not alter his features or his build.\n\nTime of day: 10:00 — flat bright mid-morning daylight.\n\nA kitchen corridor with two identical walk-in fridge doors side by side, both unlabelled. The camera holds dead centre between them, refusing to choose. Fluorescent hum.\n\nAt 8 seconds the chef from the reference image steps into frame on the right, hands still busy with his work, and speaks a single short sentence toward no one in particular — never to a screen, never to a phone. Hold on his face for the final 2 seconds.\n\nAudio: kitchen prep ambience, knives on boards, a extractor hum. No music.",
+    "scriptHeygen": null,
+    "kit": null,
+    "heygenPrompt": "Avatar : « Chef FoodEatUp » — votre avatar 3D, plan poitrine, regard caméra, fond vert (ou transparent).\nFormat : 1080 × 1920, 9:16, 25 images par seconde.\nVoix : française, masculine, débit posé, ton complice — le chef qui explique, pas celui qui vend.\nDurée visée : 9 secondes — c'est le segment 9,5 s → 18,5 s du master.\n\nScript, à coller tel quel :\n« Je dis « frigo 3 » et il y en a deux. Jarvis ne devine pas : il me demande lequel. Une IA qui devine sur du froid, c'est une IA qui vous coûte une chambre entière. »\n\nPrononciation : « Jarvis » se dit à l'anglaise, DJAR-viss — c'est le nom de l'agent vocal, il revient dans les trente épisodes et il doit sonner pareil à chaque fois.\n\nRendu : aucun sous-titre, aucune incrustation, aucun logo, aucun décor de fond. Pas de musique. Le montage s'occupe de tout le reste.",
+    "montage": {
+      "consigne": "Monte EP216 : coupe le clip Higgsfield à 9,5 s, pose l'accroche « « Frigo 3. » Il y en a deux. » à 5,0 s, empile l'avatar HeyGen et la capture d'écran dans la tablette de 18,5 s à 28,5 s, ferme sur la signature et le sting. Sortie 1080×1920, 37,5 s, −14 LUFS.",
+      "segments": [
+        {
+          "titre": "Hook",
+          "debut": 0,
+          "fin": 9.5,
+          "contenu": "Le plan Higgsfield, recadré en 9:16. L'accroche « « Frigo 3. » Il y en a deux. » apparaît à 5,0 s, en bas du cadre."
+        },
+        {
+          "titre": "Transition de marque",
+          "debut": 9.5,
+          "fin": 18.5,
+          "contenu": "L'avatar HeyGen entre par la droite et prend la parole : « Je dis « frigo 3 » et il y en a deux. »"
+        },
+        {
+          "titre": "Démo logiciel",
+          "debut": 18.5,
+          "fin": 28.5,
+          "contenu": "La phrase « Jarvis, relève le frigo 3. » s'écrit à l'écran, puis la réponse — la question de désambiguïsation, les deux équipements proposés, puis le bon retenu. L'avatar reste en médaillon en bas à gauche."
+        },
+        {
+          "titre": "Signature",
+          "debut": 28.5,
+          "fin": 32.5,
+          "contenu": "Bandeau crème, la punchline « Une IA qui devine, c'est une IA qui se trompe. », le logo FoodEatUp et le repère de saison « 10 h · La mise en place »."
+        },
+        {
+          "titre": "Sting",
+          "debut": 32.5,
+          "fin": 37.5,
+          "contenu": "Le sting de marque, « FRIGO 3 » en incrustation, puis l'appel à l'action : https://site.foodeatup.com/ et le 06 14 18 92 25."
+        }
+      ],
+      "livrable": "1080 × 1920 · 37,5 s · H.264 · −14 LUFS · master versé dans la bibliothèque RapidoCMS, prêt à être programmé sur les cinq réseaux."
+    },
+    "metier": null,
+    "phase": null,
+    "amplitude": null,
+    "boucle": null,
+    "boucleSlug": null,
+    "grandeBoucle": null,
+    "incident": null,
+    "incidentHeure": null,
+    "incidentQuoi": null,
+    "saumon": null,
+    "story": {
+      "format": "9:16 · 1080 × 1920 · 10 s",
+      "hook": "« Frigo 3. » Il y en a deux",
+      "punchline": "Une IA qui devine, c'est une IA qui se trompe",
+      "url": null
+    },
+    "carrousel": null,
+    "imageFacebook": null,
+    "tutoriel": null
+  },
+  "EP217": {
+    "publications": {
+      "facebook": {
+        "legende": "Le classeur HACCP se remplit le vendredi soir. Pour toute la semaine. On sait tous comment ça finit.\n\nOn dit : « Jarvis, frigo 3, quatre degrés. »\n\nLe relevé est enregistré, daté, rattaché à l'équipement. Le classeur qu'on remplissait le vendredi soir n'existe plus.\n\n👉 Tout FoodEatUp : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "hashtags": [
+          "restaurant",
+          "restaurateur",
+          "foodeatup",
+          "jarvis",
+          "haccp",
+          "hygiene"
+        ],
+        "motsCles": [
+          "relevé de température",
+          "HACCP restaurant",
+          "traçabilité froid",
+          "registre sanitaire"
+        ],
+        "cta": "Découvrir FoodEatUp"
+      },
+      "instagram": {
+        "legende": "Le classeur HACCP se remplit le vendredi soir.\nPour toute la semaine. On sait tous comment ça finit.\n\n« Jarvis, frigo 3, quatre degrés. »\n\nLe relevé est enregistré, daté, rattaché à l'équipement. Le classeur qu'on remplissait le vendredi soir n'existe plus.\n\n10 h · La mise en place — saison 8, « Dis-le, c'est fait ». Une journée, une phrase à la fois.\nTout est expliqué sur notre site — lien en bio.\nUne démo ? 06 14 18 92 25",
+        "hashtags": [
+          "restaurant",
+          "restaurateur",
+          "foodeatup",
+          "jarvis",
+          "haccp",
+          "hygiene",
+          "vegefruites",
+          "coupdefeu",
+          "logicielrestaurant",
+          "assistantvocal"
+        ],
+        "motsCles": [
+          "relevé de température",
+          "HACCP restaurant",
+          "traçabilité froid",
+          "registre sanitaire"
+        ],
+        "cta": "Tout est en bio"
+      },
+      "tiktok": {
+        "legende": "Le classeur HACCP se remplit le vendredi soir.\nPour toute la semaine. On sait tous comment ça finit.\n\n« Jarvis, frigo 3, quatre degrés. » 🎙️\n\nLe relevé est enregistré, daté, rattaché à l'équipement. Le classeur qu'on remplissait le vendredi soir n'existe plus.",
+        "hashtags": [
+          "restaurant",
+          "restaurateur",
+          "foodeatup",
+          "jarvis",
+          "haccp"
+        ],
+        "motsCles": [
+          "relevé de température",
+          "HACCP restaurant",
+          "traçabilité froid",
+          "registre sanitaire"
+        ],
+        "cta": "Lien en bio"
+      },
+      "linkedin": {
+        "legende": "Le classeur HACCP se remplit le vendredi soir.\n\nCe qu'on dit : « Jarvis, frigo 3, quatre degrés. »\n\nLe relevé est enregistré, daté, rattaché à l'équipement. Le classeur qu'on remplissait le vendredi soir n'existe plus.\n\nL'outil appelé : add_temperature.\n\nConcrètement : Le relevé se dit à voix haute, les mains dans la chambre froide, et il est horodaté à la seconde. C'est ce qui fait la différence entre un registre et un roman.\n\nEn savoir plus : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "hashtags": [
+          "restauration",
+          "foodeatup",
+          "jarvis",
+          "haccp",
+          "hygiene"
+        ],
+        "motsCles": [
+          "relevé de température",
+          "HACCP restaurant",
+          "traçabilité froid",
+          "registre sanitaire"
+        ],
+        "cta": "Découvrir FoodEatUp"
+      },
+      "youtube": {
+        "legende": "Le classeur HACCP se remplit le vendredi soir. Pour toute la semaine. On sait tous comment ça finit.\n\nOn dit : « Jarvis, frigo 3, quatre degrés. »\n\nLe relevé est enregistré, daté, rattaché à l'équipement. Le classeur qu'on remplissait le vendredi soir n'existe plus.\n\nL'outil appelé : add_temperature.\n\n— — —\n\n🔗 https://site.foodeatup.com/\n\n📞 Une démo ? 06 14 18 92 25\n🌐 foodeatup.com\n\nSérie « Le Coup de Feu » — saison 8 « Dis-le, c'est fait », épisode 7 sur 30, et dernière saison de la série.\n10 h · La mise en place · À l'écran : La Carotte\nModule HACCP · Le relevé de température\n\nJarvis est l'agent vocal de FoodEatUp, le logiciel qui réunit la caisse, le stock, les plannings, l'HACCP et le marketing d'un restaurant au même endroit.\n",
+        "hashtags": [
+          "Shorts",
+          "restaurant",
+          "restaurateur",
+          "foodeatup",
+          "jarvis",
+          "haccp",
+          "hygiene",
+          "coupdefeu"
+        ],
+        "motsCles": [
+          "relevé de température",
+          "HACCP restaurant",
+          "traçabilité froid",
+          "registre sanitaire"
+        ],
+        "cta": "Découvrir FoodEatUp",
+        "titre": "L'HACCP sans le classeur — 10 h | FoodEatUp"
+      }
+    },
+    "promptVignette": "Photo réaliste, cadrage vertical 9:16. Il est 10 h : lumière de plein jour, franche, sans ombre marquée. Le chef de l'image de référence — MÊME visage, même barbe, même toque blanche, même veste de cuisine blanche, même tablier blanc au logo FoodEatUp bleu. Ne change ni ses traits, ni sa morphologie, ni sa tenue. Il ne regarde AUCUN écran et ne tient AUCUN téléphone : il parle, simplement, les mains occupées par son travail. Scène : l'haccp sans le classeur. Le classeur HACCP se remplit le vendredi soir. Décor : l'intérieur d'une chambre froide, buée, un thermomètre mural. Le chef occupe les deux tiers droits du cadre, en plan poitrine. Bande crème #FCF9E6 en haut du cadre sur un cinquième de la hauteur, portant UNIQUEMENT le texte « QUATRE DEGRÉS » en typographie arrondie très grasse, bleu marine #0F1A23, centré. En bas à gauche, une pastille arrondie beige #C4B28E, capitales blanches : « EP217 · 10 h ». Aucun autre texte, aucun logo ajouté, pas de filigrane, pas de bordure décorative, aucun écran de logiciel visible.",
+    "higgsfieldPrompt": "Vertical 9:16, 10 seconds, photorealistic, cinematic handheld camera, shallow depth of field, natural light, 4K. NO text overlay, NO subtitles, NO watermark, NO logo. NO visible software interface, NO phone screen.\n\nReference image attached — the FoodEatUp chef. Keep his exact face, beard, white toque, white chef jacket and white FoodEatUp apron. Do not alter his features or his build.\n\nTime of day: 10:00 — flat bright mid-morning daylight.\n\nInside a walk-in fridge, breath fogging the air. A wall thermometer in tight close-up, needle steady. Frost on the shelf edge behind it. Cold blue light, absolutely still.\n\nAt 8 seconds the chef from the reference image steps into frame on the right, hands still busy with his work, and speaks a single short sentence toward no one in particular — never to a screen, never to a phone. Hold on his face for the final 2 seconds.\n\nAudio: kitchen prep ambience, knives on boards, a extractor hum. No music.",
+    "scriptHeygen": null,
+    "kit": null,
+    "heygenPrompt": "Avatar : « Chef FoodEatUp » — votre avatar 3D, plan poitrine, regard caméra, fond vert (ou transparent).\nFormat : 1080 × 1920, 9:16, 25 images par seconde.\nVoix : française, masculine, débit posé, ton complice — le chef qui explique, pas celui qui vend.\nDurée visée : 9 secondes — c'est le segment 9,5 s → 18,5 s du master.\n\nScript, à coller tel quel :\n« Le classeur HACCP, on le remplit le vendredi soir pour toute la semaine. Tout le monde le sait. Je dis la température à Jarvis les mains dans le frigo, et elle est horodatée à la seconde. »\n\nPrononciation : « Jarvis » se dit à l'anglaise, DJAR-viss — c'est le nom de l'agent vocal, il revient dans les trente épisodes et il doit sonner pareil à chaque fois.\n\nRendu : aucun sous-titre, aucune incrustation, aucun logo, aucun décor de fond. Pas de musique. Le montage s'occupe de tout le reste.",
+    "montage": {
+      "consigne": "Monte EP217 : coupe le clip Higgsfield à 9,5 s, pose l'accroche « Le classeur HACCP se remplit le vendredi soir. » à 5,0 s, empile l'avatar HeyGen et la capture d'écran dans la tablette de 18,5 s à 28,5 s, ferme sur la signature et le sting. Sortie 1080×1920, 37,5 s, −14 LUFS.",
+      "segments": [
+        {
+          "titre": "Hook",
+          "debut": 0,
+          "fin": 9.5,
+          "contenu": "Le plan Higgsfield, recadré en 9:16. L'accroche « Le classeur HACCP se remplit le vendredi soir. » apparaît à 5,0 s, en bas du cadre."
+        },
+        {
+          "titre": "Transition de marque",
+          "debut": 9.5,
+          "fin": 18.5,
+          "contenu": "L'avatar HeyGen entre par la droite et prend la parole : « Le classeur HACCP, on le remplit le vendredi soir pour toute la semaine. »"
+        },
+        {
+          "titre": "Démo logiciel",
+          "debut": 18.5,
+          "fin": 28.5,
+          "contenu": "La phrase « Jarvis, frigo 3, quatre degrés. » s'écrit à l'écran, puis la réponse — le relevé enregistré : l'équipement, la température, l'heure exacte. L'avatar reste en médaillon en bas à gauche."
+        },
+        {
+          "titre": "Signature",
+          "debut": 28.5,
+          "fin": 32.5,
+          "contenu": "Bandeau crème, la punchline « Pour toute la semaine. On sait tous comment ça finit. », le logo FoodEatUp et le repère de saison « 10 h · La mise en place »."
+        },
+        {
+          "titre": "Sting",
+          "debut": 32.5,
+          "fin": 37.5,
+          "contenu": "Le sting de marque, « QUATRE DEGRÉS » en incrustation, puis l'appel à l'action : https://site.foodeatup.com/ et le 06 14 18 92 25."
+        }
+      ],
+      "livrable": "1080 × 1920 · 37,5 s · H.264 · −14 LUFS · master versé dans la bibliothèque RapidoCMS, prêt à être programmé sur les cinq réseaux."
+    },
+    "metier": null,
+    "phase": null,
+    "amplitude": null,
+    "boucle": null,
+    "boucleSlug": null,
+    "grandeBoucle": null,
+    "incident": null,
+    "incidentHeure": null,
+    "incidentQuoi": null,
+    "saumon": null,
+    "story": {
+      "format": "9:16 · 1080 × 1920 · 10 s",
+      "hook": "Le classeur HACCP se remplit le vendredi soir",
+      "punchline": "Pour toute la semaine. On sait tous comment ça finit",
+      "url": null
+    },
+    "carrousel": null,
+    "imageFacebook": null,
+    "tutoriel": null
+  },
+  "EP218": {
+    "publications": {
+      "facebook": {
+        "legende": "Une date au feutre sur du scotch. Illisible en deux jours. Comme prévu.\n\nOn dit : « Jarvis, étiquette DLC sur la sauce. »\n\nL'étiquette est générée avec sa date, son produit et sa durée de vie. Plus de feutre sur du ruban adhésif.\n\n👉 Tout FoodEatUp : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "hashtags": [
+          "restaurant",
+          "restaurateur",
+          "foodeatup",
+          "jarvis",
+          "haccp",
+          "dlc"
+        ],
+        "motsCles": [
+          "étiquette DLC",
+          "traçabilité restaurant",
+          "HACCP cuisine",
+          "date limite consommation"
+        ],
+        "cta": "Découvrir FoodEatUp"
+      },
+      "instagram": {
+        "legende": "Une date au feutre sur du scotch.\nIllisible en deux jours. Comme prévu.\n\n« Jarvis, étiquette DLC sur la sauce. »\n\nL'étiquette est générée avec sa date, son produit et sa durée de vie. Plus de feutre sur du ruban adhésif.\n\n10 h · La mise en place — saison 8, « Dis-le, c'est fait ». Une journée, une phrase à la fois.\nTout est expliqué sur notre site — lien en bio.\nUne démo ? 06 14 18 92 25",
+        "hashtags": [
+          "restaurant",
+          "restaurateur",
+          "foodeatup",
+          "jarvis",
+          "haccp",
+          "dlc",
+          "vegefruites",
+          "coupdefeu",
+          "logicielrestaurant",
+          "assistantvocal"
+        ],
+        "motsCles": [
+          "étiquette DLC",
+          "traçabilité restaurant",
+          "HACCP cuisine",
+          "date limite consommation"
+        ],
+        "cta": "Tout est en bio"
+      },
+      "tiktok": {
+        "legende": "Une date au feutre sur du scotch.\nIllisible en deux jours. Comme prévu.\n\n« Jarvis, étiquette DLC sur la sauce. » 🎙️\n\nL'étiquette est générée avec sa date, son produit et sa durée de vie. Plus de feutre sur du ruban adhésif.",
+        "hashtags": [
+          "restaurant",
+          "restaurateur",
+          "foodeatup",
+          "jarvis",
+          "haccp"
+        ],
+        "motsCles": [
+          "étiquette DLC",
+          "traçabilité restaurant",
+          "HACCP cuisine",
+          "date limite consommation"
+        ],
+        "cta": "Lien en bio"
+      },
+      "linkedin": {
+        "legende": "Une date au feutre sur du scotch.\n\nCe qu'on dit : « Jarvis, étiquette DLC sur la sauce. »\n\nL'étiquette est générée avec sa date, son produit et sa durée de vie. Plus de feutre sur du ruban adhésif.\n\nL'outil appelé : create_haccp_label.\n\nConcrètement : L'étiquette de DLC est produite depuis la fiche du produit : le bon nom, la bonne durée, la bonne date. Personne ne l'écrit à la main.\n\nEn savoir plus : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "hashtags": [
+          "restauration",
+          "foodeatup",
+          "jarvis",
+          "haccp",
+          "dlc"
+        ],
+        "motsCles": [
+          "étiquette DLC",
+          "traçabilité restaurant",
+          "HACCP cuisine",
+          "date limite consommation"
+        ],
+        "cta": "Découvrir FoodEatUp"
+      },
+      "youtube": {
+        "legende": "Une date au feutre sur du scotch. Illisible en deux jours. Comme prévu.\n\nOn dit : « Jarvis, étiquette DLC sur la sauce. »\n\nL'étiquette est générée avec sa date, son produit et sa durée de vie. Plus de feutre sur du ruban adhésif.\n\nL'outil appelé : create_haccp_label.\n\n— — —\n\n🔗 https://site.foodeatup.com/\n\n📞 Une démo ? 06 14 18 92 25\n🌐 foodeatup.com\n\nSérie « Le Coup de Feu » — saison 8 « Dis-le, c'est fait », épisode 8 sur 30, et dernière saison de la série.\n10 h · La mise en place · À l'écran : La Carotte\nModule HACCP · Les étiquettes DLC\n\nJarvis est l'agent vocal de FoodEatUp, le logiciel qui réunit la caisse, le stock, les plannings, l'HACCP et le marketing d'un restaurant au même endroit.\n",
+        "hashtags": [
+          "Shorts",
+          "restaurant",
+          "restaurateur",
+          "foodeatup",
+          "jarvis",
+          "haccp",
+          "dlc",
+          "coupdefeu"
+        ],
+        "motsCles": [
+          "étiquette DLC",
+          "traçabilité restaurant",
+          "HACCP cuisine",
+          "date limite consommation"
+        ],
+        "cta": "Découvrir FoodEatUp",
+        "titre": "L'étiquette qui se dit — 10 h | FoodEatUp"
+      }
+    },
+    "promptVignette": "Photo réaliste, cadrage vertical 9:16. Il est 10 h : lumière de plein jour, franche, sans ombre marquée. Le chef de l'image de référence — MÊME visage, même barbe, même toque blanche, même veste de cuisine blanche, même tablier blanc au logo FoodEatUp bleu. Ne change ni ses traits, ni sa morphologie, ni sa tenue. Il ne regarde AUCUN écran et ne tient AUCUN téléphone : il parle, simplement, les mains occupées par son travail. Scène : l'étiquette qui se dit. Une date au feutre sur du scotch. Décor : un bac gastro avec une bande de scotch griffonnée au feutre, à moitié effacée. Le chef occupe les deux tiers droits du cadre, en plan poitrine. Bande crème #FCF9E6 en haut du cadre sur un cinquième de la hauteur, portant UNIQUEMENT le texte « L'ÉTIQUETTE » en typographie arrondie très grasse, bleu marine #0F1A23, centré. En bas à gauche, une pastille arrondie beige #C4B28E, capitales blanches : « EP218 · 10 h ». Aucun autre texte, aucun logo ajouté, pas de filigrane, pas de bordure décorative, aucun écran de logiciel visible.",
+    "higgsfieldPrompt": "Vertical 9:16, 10 seconds, photorealistic, cinematic handheld camera, shallow depth of field, natural light, 4K. NO text overlay, NO subtitles, NO watermark, NO logo. NO visible software interface, NO phone screen.\n\nReference image attached — the FoodEatUp chef. Keep his exact face, beard, white toque, white chef jacket and white FoodEatUp apron. Do not alter his features or his build.\n\nTime of day: 10:00 — flat bright mid-morning daylight.\n\nA gastronorm container with a strip of masking tape across it, a smudged marker date half rubbed off. Macro shot. A thumb rubs the tape and the ink smears further.\n\nAt 8 seconds the chef from the reference image steps into frame on the right, hands still busy with his work, and speaks a single short sentence toward no one in particular — never to a screen, never to a phone. Hold on his face for the final 2 seconds.\n\nAudio: kitchen prep ambience, knives on boards, a extractor hum. No music.",
+    "scriptHeygen": null,
+    "kit": null,
+    "heygenPrompt": "Avatar : « Chef FoodEatUp » — votre avatar 3D, plan poitrine, regard caméra, fond vert (ou transparent).\nFormat : 1080 × 1920, 9:16, 25 images par seconde.\nVoix : française, masculine, débit posé, ton complice — le chef qui explique, pas celui qui vend.\nDurée visée : 9 secondes — c'est le segment 9,5 s → 18,5 s du master.\n\nScript, à coller tel quel :\n« La date au feutre sur du scotch, elle est illisible en deux jours. Je demande l'étiquette à Jarvis, elle sort avec le bon produit, la bonne durée et la bonne date. »\n\nPrononciation : « Jarvis » se dit à l'anglaise, DJAR-viss — c'est le nom de l'agent vocal, il revient dans les trente épisodes et il doit sonner pareil à chaque fois.\n\nRendu : aucun sous-titre, aucune incrustation, aucun logo, aucun décor de fond. Pas de musique. Le montage s'occupe de tout le reste.",
+    "montage": {
+      "consigne": "Monte EP218 : coupe le clip Higgsfield à 9,5 s, pose l'accroche « Une date au feutre sur du scotch. » à 5,0 s, empile l'avatar HeyGen et la capture d'écran dans la tablette de 18,5 s à 28,5 s, ferme sur la signature et le sting. Sortie 1080×1920, 37,5 s, −14 LUFS.",
+      "segments": [
+        {
+          "titre": "Hook",
+          "debut": 0,
+          "fin": 9.5,
+          "contenu": "Le plan Higgsfield, recadré en 9:16. L'accroche « Une date au feutre sur du scotch. » apparaît à 5,0 s, en bas du cadre."
+        },
+        {
+          "titre": "Transition de marque",
+          "debut": 9.5,
+          "fin": 18.5,
+          "contenu": "L'avatar HeyGen entre par la droite et prend la parole : « La date au feutre sur du scotch, elle est illisible en deux jours. »"
+        },
+        {
+          "titre": "Démo logiciel",
+          "debut": 18.5,
+          "fin": 28.5,
+          "contenu": "La phrase « Jarvis, étiquette DLC sur la sauce. » s'écrit à l'écran, puis la réponse — l'étiquette générée : produit, date de fabrication, DLC. L'avatar reste en médaillon en bas à gauche."
+        },
+        {
+          "titre": "Signature",
+          "debut": 28.5,
+          "fin": 32.5,
+          "contenu": "Bandeau crème, la punchline « Illisible en deux jours. Comme prévu. », le logo FoodEatUp et le repère de saison « 10 h · La mise en place »."
+        },
+        {
+          "titre": "Sting",
+          "debut": 32.5,
+          "fin": 37.5,
+          "contenu": "Le sting de marque, « L'ÉTIQUETTE » en incrustation, puis l'appel à l'action : https://site.foodeatup.com/ et le 06 14 18 92 25."
+        }
+      ],
+      "livrable": "1080 × 1920 · 37,5 s · H.264 · −14 LUFS · master versé dans la bibliothèque RapidoCMS, prêt à être programmé sur les cinq réseaux."
+    },
+    "metier": null,
+    "phase": null,
+    "amplitude": null,
+    "boucle": null,
+    "boucleSlug": null,
+    "grandeBoucle": null,
+    "incident": null,
+    "incidentHeure": null,
+    "incidentQuoi": null,
+    "saumon": null,
+    "story": {
+      "format": "9:16 · 1080 × 1920 · 10 s",
+      "hook": "Une date au feutre sur du scotch",
+      "punchline": "Illisible en deux jours. Comme prévu",
+      "url": null
+    },
+    "carrousel": null,
+    "imageFacebook": null,
+    "tutoriel": null
+  },
+  "EP219": {
+    "publications": {
+      "facebook": {
+        "legende": "« Vous contrôlez vos livraisons ? » — « Bien sûr. » « Vous pouvez me le montrer ? » — silence.\n\nOn dit : « Jarvis, la commande est arrivée, tout est conforme. »\n\nLe contrôle à réception est consigné : le fournisseur, la date, la conformité. La preuve existe le jour du contrôle, pas seulement dans les souvenirs.\n\n👉 Tout FoodEatUp : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "hashtags": [
+          "restaurant",
+          "restaurateur",
+          "foodeatup",
+          "jarvis",
+          "haccp",
+          "livraison"
+        ],
+        "motsCles": [
+          "contrôle à réception",
+          "HACCP livraison",
+          "traçabilité fournisseur",
+          "conformité sanitaire"
+        ],
+        "cta": "Découvrir FoodEatUp"
+      },
+      "instagram": {
+        "legende": "« Vous contrôlez vos livraisons ? » — « Bien sûr. »\n« Vous pouvez me le montrer ? » — silence.\n\n« Jarvis, la commande est arrivée, tout est conforme. »\n\nLe contrôle à réception est consigné : le fournisseur, la date, la conformité. La preuve existe le jour du contrôle, pas seulement dans les souvenirs.\n\n10 h · La mise en place — saison 8, « Dis-le, c'est fait ». Une journée, une phrase à la fois.\nTout est expliqué sur notre site — lien en bio.\nUne démo ? 06 14 18 92 25",
+        "hashtags": [
+          "restaurant",
+          "restaurateur",
+          "foodeatup",
+          "jarvis",
+          "haccp",
+          "livraison",
+          "vegefruites",
+          "coupdefeu",
+          "logicielrestaurant",
+          "assistantvocal"
+        ],
+        "motsCles": [
+          "contrôle à réception",
+          "HACCP livraison",
+          "traçabilité fournisseur",
+          "conformité sanitaire"
+        ],
+        "cta": "Tout est en bio"
+      },
+      "tiktok": {
+        "legende": "« Vous contrôlez vos livraisons ? » — « Bien sûr. »\n« Vous pouvez me le montrer ? » — silence.\n\n« Jarvis, la commande est arrivée, tout est conforme. » 🎙️\n\nLe contrôle à réception est consigné : le fournisseur, la date, la conformité. La preuve existe le jour du contrôle, pas seulement dans les souvenirs.",
+        "hashtags": [
+          "restaurant",
+          "restaurateur",
+          "foodeatup",
+          "jarvis",
+          "haccp"
+        ],
+        "motsCles": [
+          "contrôle à réception",
+          "HACCP livraison",
+          "traçabilité fournisseur",
+          "conformité sanitaire"
+        ],
+        "cta": "Lien en bio"
+      },
+      "linkedin": {
+        "legende": "« Vous contrôlez vos livraisons ? » — « Bien sûr. »\n\nCe qu'on dit : « Jarvis, la commande est arrivée, tout est conforme. »\n\nLe contrôle à réception est consigné : le fournisseur, la date, la conformité. La preuve existe le jour du contrôle, pas seulement dans les souvenirs.\n\nL'outil appelé : create_haccp_reception.\n\nConcrètement : Le contrôle à réception se déclare en une phrase, au moment où le camion repart. Ce qui est consigné à ce moment-là est ce qu'on pourra montrer.\n\nEn savoir plus : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "hashtags": [
+          "restauration",
+          "foodeatup",
+          "jarvis",
+          "haccp",
+          "livraison"
+        ],
+        "motsCles": [
+          "contrôle à réception",
+          "HACCP livraison",
+          "traçabilité fournisseur",
+          "conformité sanitaire"
+        ],
+        "cta": "Découvrir FoodEatUp"
+      },
+      "youtube": {
+        "legende": "« Vous contrôlez vos livraisons ? » — « Bien sûr. » « Vous pouvez me le montrer ? » — silence.\n\nOn dit : « Jarvis, la commande est arrivée, tout est conforme. »\n\nLe contrôle à réception est consigné : le fournisseur, la date, la conformité. La preuve existe le jour du contrôle, pas seulement dans les souvenirs.\n\nL'outil appelé : create_haccp_reception.\n\n— — —\n\n🔗 https://site.foodeatup.com/\n\n📞 Une démo ? 06 14 18 92 25\n🌐 foodeatup.com\n\nSérie « Le Coup de Feu » — saison 8 « Dis-le, c'est fait », épisode 9 sur 30, et dernière saison de la série.\n10 h · La mise en place · À l'écran : La Carotte\nModule HACCP · Le contrôle à réception\n\nJarvis est l'agent vocal de FoodEatUp, le logiciel qui réunit la caisse, le stock, les plannings, l'HACCP et le marketing d'un restaurant au même endroit.\n",
+        "hashtags": [
+          "Shorts",
+          "restaurant",
+          "restaurateur",
+          "foodeatup",
+          "jarvis",
+          "haccp",
+          "livraison",
+          "coupdefeu"
+        ],
+        "motsCles": [
+          "contrôle à réception",
+          "HACCP livraison",
+          "traçabilité fournisseur",
+          "conformité sanitaire"
+        ],
+        "cta": "Découvrir FoodEatUp",
+        "titre": "La livraison contrôlée — 10 h | FoodEatUp"
+      }
+    },
+    "promptVignette": "Photo réaliste, cadrage vertical 9:16. Il est 10 h : lumière de plein jour, franche, sans ombre marquée. Le chef de l'image de référence — MÊME visage, même barbe, même toque blanche, même veste de cuisine blanche, même tablier blanc au logo FoodEatUp bleu. Ne change ni ses traits, ni sa morphologie, ni sa tenue. Il ne regarde AUCUN écran et ne tient AUCUN téléphone : il parle, simplement, les mains occupées par son travail. Scène : la livraison contrôlée. « Vous contrôlez vos livraisons ? » — « Bien sûr. » Décor : une porte de service ouverte, des cartons empilés sur le trottoir, un camion qui repart. Le chef occupe les deux tiers droits du cadre, en plan poitrine. Bande crème #FCF9E6 en haut du cadre sur un cinquième de la hauteur, portant UNIQUEMENT le texte « RÉCEPTION CONFORME » en typographie arrondie très grasse, bleu marine #0F1A23, centré. En bas à gauche, une pastille arrondie beige #C4B28E, capitales blanches : « EP219 · 10 h ». Aucun autre texte, aucun logo ajouté, pas de filigrane, pas de bordure décorative, aucun écran de logiciel visible.",
+    "higgsfieldPrompt": "Vertical 9:16, 10 seconds, photorealistic, cinematic handheld camera, shallow depth of field, natural light, 4K. NO text overlay, NO subtitles, NO watermark, NO logo. NO visible software interface, NO phone screen.\n\nReference image attached — the FoodEatUp chef. Keep his exact face, beard, white toque, white chef jacket and white FoodEatUp apron. Do not alter his features or his build.\n\nTime of day: 10:00 — flat bright mid-morning daylight.\n\nAn open service door with stacked delivery boxes on the pavement. A van pulls away out of frame. The boxes sit there, unopened, nobody logging anything.\n\nAt 8 seconds the chef from the reference image steps into frame on the right, hands still busy with his work, and speaks a single short sentence toward no one in particular — never to a screen, never to a phone. Hold on his face for the final 2 seconds.\n\nAudio: kitchen prep ambience, knives on boards, a extractor hum. No music.",
+    "scriptHeygen": null,
+    "kit": null,
+    "heygenPrompt": "Avatar : « Chef FoodEatUp » — votre avatar 3D, plan poitrine, regard caméra, fond vert (ou transparent).\nFormat : 1080 × 1920, 9:16, 25 images par seconde.\nVoix : française, masculine, débit posé, ton complice — le chef qui explique, pas celui qui vend.\nDurée visée : 9 secondes — c'est le segment 9,5 s → 18,5 s du master.\n\nScript, à coller tel quel :\n« « Vous contrôlez vos livraisons ? » Tout le monde dit oui. « Montrez-moi. » Là, c'est autre chose. Je le dis à Jarvis pendant que le camion repart, et c'est consigné. »\n\nPrononciation : « Jarvis » se dit à l'anglaise, DJAR-viss — c'est le nom de l'agent vocal, il revient dans les trente épisodes et il doit sonner pareil à chaque fois.\n\nRendu : aucun sous-titre, aucune incrustation, aucun logo, aucun décor de fond. Pas de musique. Le montage s'occupe de tout le reste.",
+    "montage": {
+      "consigne": "Monte EP219 : coupe le clip Higgsfield à 9,5 s, pose l'accroche « « Vous contrôlez vos livraisons ? » — « Bien sûr. » » à 5,0 s, empile l'avatar HeyGen et la capture d'écran dans la tablette de 18,5 s à 28,5 s, ferme sur la signature et le sting. Sortie 1080×1920, 37,5 s, −14 LUFS.",
+      "segments": [
+        {
+          "titre": "Hook",
+          "debut": 0,
+          "fin": 9.5,
+          "contenu": "Le plan Higgsfield, recadré en 9:16. L'accroche « « Vous contrôlez vos livraisons ? » — « Bien sûr. » » apparaît à 5,0 s, en bas du cadre."
+        },
+        {
+          "titre": "Transition de marque",
+          "debut": 9.5,
+          "fin": 18.5,
+          "contenu": "L'avatar HeyGen entre par la droite et prend la parole : « « Vous contrôlez vos livraisons ? » Tout le monde dit oui. »"
+        },
+        {
+          "titre": "Démo logiciel",
+          "debut": 18.5,
+          "fin": 28.5,
+          "contenu": "La phrase « Jarvis, la commande est arrivée, tout est conforme. » s'écrit à l'écran, puis la réponse — le contrôle à réception enregistré : fournisseur, date, conformité. L'avatar reste en médaillon en bas à gauche."
+        },
+        {
+          "titre": "Signature",
+          "debut": 28.5,
+          "fin": 32.5,
+          "contenu": "Bandeau crème, la punchline « « Vous pouvez me le montrer ? » — silence. », le logo FoodEatUp et le repère de saison « 10 h · La mise en place »."
+        },
+        {
+          "titre": "Sting",
+          "debut": 32.5,
+          "fin": 37.5,
+          "contenu": "Le sting de marque, « RÉCEPTION CONFORME » en incrustation, puis l'appel à l'action : https://site.foodeatup.com/ et le 06 14 18 92 25."
+        }
+      ],
+      "livrable": "1080 × 1920 · 37,5 s · H.264 · −14 LUFS · master versé dans la bibliothèque RapidoCMS, prêt à être programmé sur les cinq réseaux."
+    },
+    "metier": null,
+    "phase": null,
+    "amplitude": null,
+    "boucle": null,
+    "boucleSlug": null,
+    "grandeBoucle": null,
+    "incident": null,
+    "incidentHeure": null,
+    "incidentQuoi": null,
+    "saumon": null,
+    "story": {
+      "format": "9:16 · 1080 × 1920 · 10 s",
+      "hook": "« Vous contrôlez vos livraisons ? » — « Bien sûr. »",
+      "punchline": "« Vous pouvez me le montrer ? » — silence",
+      "url": null
+    },
+    "carrousel": null,
+    "imageFacebook": null,
+    "tutoriel": null
+  },
+  "EP220": {
+    "publications": {
+      "facebook": {
+        "legende": "La mise en place, c'est ce qu'on se crie à travers la cuisine. Ou ce qu'on lit, une fois pour toutes.\n\nOn dit : « Jarvis, lance la mise en place du jour. »\n\nLe plan de production est créé, avec ses quantités et ses ingrédients réservés. La brigade sait quoi faire sans qu'on ait crié.\n\n👉 Tout FoodEatUp : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "hashtags": [
+          "restaurant",
+          "restaurateur",
+          "foodeatup",
+          "jarvis",
+          "production",
+          "cuisine"
+        ],
+        "motsCles": [
+          "plan de production",
+          "mise en place cuisine",
+          "production restaurant",
+          "organisation cuisine"
+        ],
+        "cta": "Découvrir FoodEatUp"
+      },
+      "instagram": {
+        "legende": "La mise en place, c'est ce qu'on se crie à travers la cuisine.\nOu ce qu'on lit, une fois pour toutes.\n\n« Jarvis, lance la mise en place du jour. »\n\nLe plan de production est créé, avec ses quantités et ses ingrédients réservés. La brigade sait quoi faire sans qu'on ait crié.\n\n10 h · La mise en place — saison 8, « Dis-le, c'est fait ». Une journée, une phrase à la fois.\nTout est expliqué sur notre site — lien en bio.\nUne démo ? 06 14 18 92 25",
+        "hashtags": [
+          "restaurant",
+          "restaurateur",
+          "foodeatup",
+          "jarvis",
+          "production",
+          "cuisine",
+          "vegefruites",
+          "coupdefeu",
+          "logicielrestaurant",
+          "assistantvocal"
+        ],
+        "motsCles": [
+          "plan de production",
+          "mise en place cuisine",
+          "production restaurant",
+          "organisation cuisine"
+        ],
+        "cta": "Tout est en bio"
+      },
+      "tiktok": {
+        "legende": "La mise en place, c'est ce qu'on se crie à travers la cuisine.\nOu ce qu'on lit, une fois pour toutes.\n\n« Jarvis, lance la mise en place du jour. » 🎙️\n\nLe plan de production est créé, avec ses quantités et ses ingrédients réservés. La brigade sait quoi faire sans qu'on ait crié.",
+        "hashtags": [
+          "restaurant",
+          "restaurateur",
+          "foodeatup",
+          "jarvis",
+          "production"
+        ],
+        "motsCles": [
+          "plan de production",
+          "mise en place cuisine",
+          "production restaurant",
+          "organisation cuisine"
+        ],
+        "cta": "Lien en bio"
+      },
+      "linkedin": {
+        "legende": "La mise en place, c'est ce qu'on se crie à travers la cuisine.\n\nCe qu'on dit : « Jarvis, lance la mise en place du jour. »\n\nLe plan de production est créé, avec ses quantités et ses ingrédients réservés. La brigade sait quoi faire sans qu'on ait crié.\n\nL'outil appelé : create_production_plan.\n\nConcrètement : Le plan de production sort avec ses quantités : chacun sait ce qu'il prépare, en quelle quantité, dans quel ordre. La cuisine cesse de fonctionner à la voix.\n\nEn savoir plus : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "hashtags": [
+          "restauration",
+          "foodeatup",
+          "jarvis",
+          "production",
+          "cuisine"
+        ],
+        "motsCles": [
+          "plan de production",
+          "mise en place cuisine",
+          "production restaurant",
+          "organisation cuisine"
+        ],
+        "cta": "Découvrir FoodEatUp"
+      },
+      "youtube": {
+        "legende": "La mise en place, c'est ce qu'on se crie à travers la cuisine. Ou ce qu'on lit, une fois pour toutes.\n\nOn dit : « Jarvis, lance la mise en place du jour. »\n\nLe plan de production est créé, avec ses quantités et ses ingrédients réservés. La brigade sait quoi faire sans qu'on ait crié.\n\nL'outil appelé : create_production_plan.\n\n— — —\n\n🔗 https://site.foodeatup.com/\n\n📞 Une démo ? 06 14 18 92 25\n🌐 foodeatup.com\n\nSérie « Le Coup de Feu » — saison 8 « Dis-le, c'est fait », épisode 10 sur 30, et dernière saison de la série.\n10 h · La mise en place · À l'écran : Tomate Man\nModule StockVision · Le plan de production\n\nJarvis est l'agent vocal de FoodEatUp, le logiciel qui réunit la caisse, le stock, les plannings, l'HACCP et le marketing d'un restaurant au même endroit.\n",
+        "hashtags": [
+          "Shorts",
+          "restaurant",
+          "restaurateur",
+          "foodeatup",
+          "jarvis",
+          "production",
+          "cuisine",
+          "coupdefeu"
+        ],
+        "motsCles": [
+          "plan de production",
+          "mise en place cuisine",
+          "production restaurant",
+          "organisation cuisine"
+        ],
+        "cta": "Découvrir FoodEatUp",
+        "titre": "La mise en place lancée — 10 h | FoodEatUp"
+      }
+    },
+    "promptVignette": "Photo réaliste, cadrage vertical 9:16. Il est 10 h : lumière de plein jour, franche, sans ombre marquée. Le chef de l'image de référence — MÊME visage, même barbe, même toque blanche, même veste de cuisine blanche, même tablier blanc au logo FoodEatUp bleu. Ne change ni ses traits, ni sa morphologie, ni sa tenue. Il ne regarde AUCUN écran et ne tient AUCUN téléphone : il parle, simplement, les mains occupées par son travail. Scène : la mise en place lancée. La mise en place, c'est ce qu'on se crie à travers la cuisine. Décor : une cuisine avant le service, plans de travail vides, la brigade qui arrive. Le chef occupe les deux tiers droits du cadre, en plan poitrine. Bande crème #FCF9E6 en haut du cadre sur un cinquième de la hauteur, portant UNIQUEMENT le texte « LA MISE EN PLACE » en typographie arrondie très grasse, bleu marine #0F1A23, centré. En bas à gauche, une pastille arrondie beige #C4B28E, capitales blanches : « EP220 · 10 h ». Aucun autre texte, aucun logo ajouté, pas de filigrane, pas de bordure décorative, aucun écran de logiciel visible.",
+    "higgsfieldPrompt": "Vertical 9:16, 10 seconds, photorealistic, cinematic handheld camera, shallow depth of field, natural light, 4K. NO text overlay, NO subtitles, NO watermark, NO logo. NO visible software interface, NO phone screen.\n\nReference image attached — the FoodEatUp chef. Keep his exact face, beard, white toque, white chef jacket and white FoodEatUp apron. Do not alter his features or his build.\n\nTime of day: 10:00 — flat bright mid-morning daylight.\n\nA kitchen before service, empty stainless benches gleaming. Cooks walk in one by one and stop, waiting, nobody starting. Held wide shot. Someone shouts off-camera, unintelligible.\n\nAt 8 seconds the chef from the reference image steps into frame on the right, hands still busy with his work, and speaks a single short sentence toward no one in particular — never to a screen, never to a phone. Hold on his face for the final 2 seconds.\n\nAudio: kitchen prep ambience, knives on boards, a extractor hum. No music.",
+    "scriptHeygen": null,
+    "kit": null,
+    "heygenPrompt": "Avatar : « Chef FoodEatUp » — votre avatar 3D, plan poitrine, regard caméra, fond vert (ou transparent).\nFormat : 1080 × 1920, 9:16, 25 images par seconde.\nVoix : française, masculine, débit posé, ton complice — le chef qui explique, pas celui qui vend.\nDurée visée : 9 secondes — c'est le segment 9,5 s → 18,5 s du master.\n\nScript, à coller tel quel :\n« La mise en place, c'est ce qu'on se crie à travers la cuisine pendant vingt minutes. Je demande le plan à Jarvis, chacun lit ce qu'il a à faire, et on commence tout de suite. »\n\nPrononciation : « Jarvis » se dit à l'anglaise, DJAR-viss — c'est le nom de l'agent vocal, il revient dans les trente épisodes et il doit sonner pareil à chaque fois.\n\nRendu : aucun sous-titre, aucune incrustation, aucun logo, aucun décor de fond. Pas de musique. Le montage s'occupe de tout le reste.",
+    "montage": {
+      "consigne": "Monte EP220 : coupe le clip Higgsfield à 9,5 s, pose l'accroche « La mise en place, c'est ce qu'on se crie à travers la cuisine. » à 5,0 s, empile l'avatar HeyGen et la capture d'écran dans la tablette de 18,5 s à 28,5 s, ferme sur la signature et le sting. Sortie 1080×1920, 37,5 s, −14 LUFS.",
+      "segments": [
+        {
+          "titre": "Hook",
+          "debut": 0,
+          "fin": 9.5,
+          "contenu": "Le plan Higgsfield, recadré en 9:16. L'accroche « La mise en place, c'est ce qu'on se crie à travers la cuisine. » apparaît à 5,0 s, en bas du cadre."
+        },
+        {
+          "titre": "Transition de marque",
+          "debut": 9.5,
+          "fin": 18.5,
+          "contenu": "L'avatar HeyGen entre par la droite et prend la parole : « La mise en place, c'est ce qu'on se crie à travers la cuisine pendant vingt minutes. »"
+        },
+        {
+          "titre": "Démo logiciel",
+          "debut": 18.5,
+          "fin": 28.5,
+          "contenu": "La phrase « Jarvis, lance la mise en place du jour. » s'écrit à l'écran, puis la réponse — le plan de production du jour : les préparations, les quantités, les ingrédients réservés. L'avatar reste en médaillon en bas à gauche."
+        },
+        {
+          "titre": "Signature",
+          "debut": 28.5,
+          "fin": 32.5,
+          "contenu": "Bandeau crème, la punchline « Ou ce qu'on lit, une fois pour toutes. », le logo FoodEatUp et le repère de saison « 10 h · La mise en place »."
+        },
+        {
+          "titre": "Sting",
+          "debut": 32.5,
+          "fin": 37.5,
+          "contenu": "Le sting de marque, « LA MISE EN PLACE » en incrustation, puis l'appel à l'action : https://site.foodeatup.com/ et le 06 14 18 92 25."
+        }
+      ],
+      "livrable": "1080 × 1920 · 37,5 s · H.264 · −14 LUFS · master versé dans la bibliothèque RapidoCMS, prêt à être programmé sur les cinq réseaux."
+    },
+    "metier": null,
+    "phase": null,
+    "amplitude": null,
+    "boucle": null,
+    "boucleSlug": null,
+    "grandeBoucle": null,
+    "incident": null,
+    "incidentHeure": null,
+    "incidentQuoi": null,
+    "saumon": null,
+    "story": {
+      "format": "9:16 · 1080 × 1920 · 10 s",
+      "hook": "La mise en place, c'est ce qu'on se crie à travers la cuisine",
+      "punchline": "Ou ce qu'on lit, une fois pour toutes",
+      "url": null
+    },
+    "carrousel": null,
+    "imageFacebook": null,
+    "tutoriel": null
+  },
+  "EP221": {
+    "publications": {
+      "facebook": {
+        "legende": "Ça bouchonne. Personne ne sait où. Sauf celui qui pose la question à voix haute.\n\nOn dit : « Jarvis, ça coince où ? »\n\nLes tickets actifs poste par poste. Le goulot a un nom avant que la salle ne vienne le demander.\n\n👉 Tout FoodEatUp : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "hashtags": [
+          "restaurant",
+          "restaurateur",
+          "foodeatup",
+          "jarvis",
+          "kds",
+          "coupdefeu"
+        ],
+        "motsCles": [
+          "charge par poste",
+          "KDS cuisine",
+          "coup de feu",
+          "organisation cuisine"
+        ],
+        "cta": "Découvrir FoodEatUp"
+      },
+      "instagram": {
+        "legende": "Ça bouchonne. Personne ne sait où.\nSauf celui qui pose la question à voix haute.\n\n« Jarvis, ça coince où ? »\n\nLes tickets actifs poste par poste. Le goulot a un nom avant que la salle ne vienne le demander.\n\n12 h · Le coup de feu — saison 8, « Dis-le, c'est fait ». Une journée, une phrase à la fois.\nTout est expliqué sur notre site — lien en bio.\nUne démo ? 06 14 18 92 25",
+        "hashtags": [
+          "restaurant",
+          "restaurateur",
+          "foodeatup",
+          "jarvis",
+          "kds",
+          "coupdefeu",
+          "vegefruites",
+          "coupdefeu",
+          "logicielrestaurant",
+          "assistantvocal"
+        ],
+        "motsCles": [
+          "charge par poste",
+          "KDS cuisine",
+          "coup de feu",
+          "organisation cuisine"
+        ],
+        "cta": "Tout est en bio"
+      },
+      "tiktok": {
+        "legende": "Ça bouchonne. Personne ne sait où.\nSauf celui qui pose la question à voix haute.\n\n« Jarvis, ça coince où ? » 🎙️\n\nLes tickets actifs poste par poste. Le goulot a un nom avant que la salle ne vienne le demander.",
+        "hashtags": [
+          "restaurant",
+          "restaurateur",
+          "foodeatup",
+          "jarvis",
+          "kds"
+        ],
+        "motsCles": [
+          "charge par poste",
+          "KDS cuisine",
+          "coup de feu",
+          "organisation cuisine"
+        ],
+        "cta": "Lien en bio"
+      },
+      "linkedin": {
+        "legende": "Ça bouchonne. Personne ne sait où.\n\nCe qu'on dit : « Jarvis, ça coince où ? »\n\nLes tickets actifs poste par poste. Le goulot a un nom avant que la salle ne vienne le demander.\n\nL'outil appelé : get_station_load.\n\nConcrètement : La charge de chaque poste se lit en une phrase, en plein coup de feu. On déplace quelqu'un sur le bon poste au lieu de crier « ça avance ? ».\n\nEn savoir plus : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "hashtags": [
+          "restauration",
+          "foodeatup",
+          "jarvis",
+          "kds",
+          "coupdefeu"
+        ],
+        "motsCles": [
+          "charge par poste",
+          "KDS cuisine",
+          "coup de feu",
+          "organisation cuisine"
+        ],
+        "cta": "Découvrir FoodEatUp"
+      },
+      "youtube": {
+        "legende": "Ça bouchonne. Personne ne sait où. Sauf celui qui pose la question à voix haute.\n\nOn dit : « Jarvis, ça coince où ? »\n\nLes tickets actifs poste par poste. Le goulot a un nom avant que la salle ne vienne le demander.\n\nL'outil appelé : get_station_load.\n\n— — —\n\n🔗 https://site.foodeatup.com/\n\n📞 Une démo ? 06 14 18 92 25\n🌐 foodeatup.com\n\nSérie « Le Coup de Feu » — saison 8 « Dis-le, c'est fait », épisode 11 sur 30, et dernière saison de la série.\n12 h · Le coup de feu · À l'écran : Tomate Man\nModule KDS · La charge par poste\n\nJarvis est l'agent vocal de FoodEatUp, le logiciel qui réunit la caisse, le stock, les plannings, l'HACCP et le marketing d'un restaurant au même endroit.\n",
+        "hashtags": [
+          "Shorts",
+          "restaurant",
+          "restaurateur",
+          "foodeatup",
+          "jarvis",
+          "kds",
+          "coupdefeu",
+          "coupdefeu"
+        ],
+        "motsCles": [
+          "charge par poste",
+          "KDS cuisine",
+          "coup de feu",
+          "organisation cuisine"
+        ],
+        "cta": "Découvrir FoodEatUp",
+        "titre": "Quel poste bouchonne — 12 h | FoodEatUp"
+      }
+    },
+    "promptVignette": "Photo réaliste, cadrage vertical 9:16. Il est 12 h : lumière de service, chaude et contrastée, vapeur dans le contre-jour. Le chef de l'image de référence — MÊME visage, même barbe, même toque blanche, même veste de cuisine blanche, même tablier blanc au logo FoodEatUp bleu. Ne change ni ses traits, ni sa morphologie, ni sa tenue. Il ne regarde AUCUN écran et ne tient AUCUN téléphone : il parle, simplement, les mains occupées par son travail. Scène : quel poste bouchonne. Ça bouchonne. Personne ne sait où. Décor : un passe en plein service, vapeur, tickets accrochés, des mains qui se croisent. Le chef occupe les deux tiers droits du cadre, en plan poitrine. Bande crème #FCF9E6 en haut du cadre sur un cinquième de la hauteur, portant UNIQUEMENT le texte « ÇA COINCE OÙ » en typographie arrondie très grasse, bleu marine #0F1A23, centré. En bas à gauche, une pastille arrondie beige #C4B28E, capitales blanches : « EP221 · 12 h ». Aucun autre texte, aucun logo ajouté, pas de filigrane, pas de bordure décorative, aucun écran de logiciel visible.",
+    "higgsfieldPrompt": "Vertical 9:16, 10 seconds, photorealistic, cinematic handheld camera, shallow depth of field, natural light, 4K. NO text overlay, NO subtitles, NO watermark, NO logo. NO visible software interface, NO phone screen.\n\nReference image attached — the FoodEatUp chef. Keep his exact face, beard, white toque, white chef jacket and white FoodEatUp apron. Do not alter his features or his build.\n\nTime of day: 12:00 — warm high-contrast service light with steam backlit.\n\nA kitchen pass at peak service, steam rising, hands crossing frame fast. Handheld, tight, chaotic. Tickets flutter on the rail. Nobody looks up.\n\nAt 8 seconds the chef from the reference image steps into frame on the right, hands still busy with his work, and speaks a single short sentence toward no one in particular — never to a screen, never to a phone. Hold on his face for the final 2 seconds.\n\nAudio: peak service noise, plates, tickets, overlapping voices. No music.",
+    "scriptHeygen": null,
+    "kit": null,
+    "heygenPrompt": "Avatar : « Chef FoodEatUp » — votre avatar 3D, plan poitrine, regard caméra, fond vert (ou transparent).\nFormat : 1080 × 1920, 9:16, 25 images par seconde.\nVoix : française, masculine, débit posé, ton complice — le chef qui explique, pas celui qui vend.\nDurée visée : 9 secondes — c'est le segment 9,5 s → 18,5 s du master.\n\nScript, à coller tel quel :\n« En plein coup de feu, tout le monde dit que ça avance. Je demande à Jarvis quel poste est chargé, et j'ai un nom au lieu d'une impression. »\n\nPrononciation : « Jarvis » se dit à l'anglaise, DJAR-viss — c'est le nom de l'agent vocal, il revient dans les trente épisodes et il doit sonner pareil à chaque fois.\n\nRendu : aucun sous-titre, aucune incrustation, aucun logo, aucun décor de fond. Pas de musique. Le montage s'occupe de tout le reste.",
+    "montage": {
+      "consigne": "Monte EP221 : coupe le clip Higgsfield à 9,5 s, pose l'accroche « Ça bouchonne. Personne ne sait où. » à 5,0 s, empile l'avatar HeyGen et la capture d'écran dans la tablette de 18,5 s à 28,5 s, ferme sur la signature et le sting. Sortie 1080×1920, 37,5 s, −14 LUFS.",
+      "segments": [
+        {
+          "titre": "Hook",
+          "debut": 0,
+          "fin": 9.5,
+          "contenu": "Le plan Higgsfield, recadré en 9:16. L'accroche « Ça bouchonne. Personne ne sait où. » apparaît à 5,0 s, en bas du cadre."
+        },
+        {
+          "titre": "Transition de marque",
+          "debut": 9.5,
+          "fin": 18.5,
+          "contenu": "L'avatar HeyGen entre par la droite et prend la parole : « En plein coup de feu, tout le monde dit que ça avance. »"
+        },
+        {
+          "titre": "Démo logiciel",
+          "debut": 18.5,
+          "fin": 28.5,
+          "contenu": "La phrase « Jarvis, ça coince où ? » s'écrit à l'écran, puis la réponse — la charge par poste : les tickets actifs de chacun, du plus chargé au plus calme. L'avatar reste en médaillon en bas à gauche."
+        },
+        {
+          "titre": "Signature",
+          "debut": 28.5,
+          "fin": 32.5,
+          "contenu": "Bandeau crème, la punchline « Sauf celui qui pose la question à voix haute. », le logo FoodEatUp et le repère de saison « 12 h · Le coup de feu »."
+        },
+        {
+          "titre": "Sting",
+          "debut": 32.5,
+          "fin": 37.5,
+          "contenu": "Le sting de marque, « ÇA COINCE OÙ » en incrustation, puis l'appel à l'action : https://site.foodeatup.com/ et le 06 14 18 92 25."
+        }
+      ],
+      "livrable": "1080 × 1920 · 37,5 s · H.264 · −14 LUFS · master versé dans la bibliothèque RapidoCMS, prêt à être programmé sur les cinq réseaux."
+    },
+    "metier": null,
+    "phase": null,
+    "amplitude": null,
+    "boucle": null,
+    "boucleSlug": null,
+    "grandeBoucle": null,
+    "incident": null,
+    "incidentHeure": null,
+    "incidentQuoi": null,
+    "saumon": null,
+    "story": {
+      "format": "9:16 · 1080 × 1920 · 10 s",
+      "hook": "Ça bouchonne. Personne ne sait où",
+      "punchline": "Sauf celui qui pose la question à voix haute",
+      "url": null
+    },
+    "carrousel": null,
+    "imageFacebook": null,
+    "tutoriel": null
+  },
+  "EP222": {
+    "publications": {
+      "facebook": {
+        "legende": "Le serveur traverse la cuisine pour demander. Il repart avec « ça arrive ». Comme toujours.\n\nOn dit : « Jarvis, où en est la 6 ? »\n\nLa commande telle qu'elle a été saisie, son état, ses lignes. Le serveur n'a plus à traverser la cuisine pour poser la question.\n\n👉 Tout FoodEatUp : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "hashtags": [
+          "restaurant",
+          "restaurateur",
+          "foodeatup",
+          "jarvis",
+          "kds",
+          "service"
+        ],
+        "motsCles": [
+          "état de commande",
+          "KDS cuisine",
+          "service en salle",
+          "suivi commande"
+        ],
+        "cta": "Découvrir FoodEatUp"
+      },
+      "instagram": {
+        "legende": "Le serveur traverse la cuisine pour demander.\nIl repart avec « ça arrive ». Comme toujours.\n\n« Jarvis, où en est la 6 ? »\n\nLa commande telle qu'elle a été saisie, son état, ses lignes. Le serveur n'a plus à traverser la cuisine pour poser la question.\n\n12 h · Le coup de feu — saison 8, « Dis-le, c'est fait ». Une journée, une phrase à la fois.\nTout est expliqué sur notre site — lien en bio.\nUne démo ? 06 14 18 92 25",
+        "hashtags": [
+          "restaurant",
+          "restaurateur",
+          "foodeatup",
+          "jarvis",
+          "kds",
+          "service",
+          "vegefruites",
+          "coupdefeu",
+          "logicielrestaurant",
+          "assistantvocal"
+        ],
+        "motsCles": [
+          "état de commande",
+          "KDS cuisine",
+          "service en salle",
+          "suivi commande"
+        ],
+        "cta": "Tout est en bio"
+      },
+      "tiktok": {
+        "legende": "Le serveur traverse la cuisine pour demander.\nIl repart avec « ça arrive ». Comme toujours.\n\n« Jarvis, où en est la 6 ? » 🎙️\n\nLa commande telle qu'elle a été saisie, son état, ses lignes. Le serveur n'a plus à traverser la cuisine pour poser la question.",
+        "hashtags": [
+          "restaurant",
+          "restaurateur",
+          "foodeatup",
+          "jarvis",
+          "kds"
+        ],
+        "motsCles": [
+          "état de commande",
+          "KDS cuisine",
+          "service en salle",
+          "suivi commande"
+        ],
+        "cta": "Lien en bio"
+      },
+      "linkedin": {
+        "legende": "Le serveur traverse la cuisine pour demander.\n\nCe qu'on dit : « Jarvis, où en est la 6 ? »\n\nLa commande telle qu'elle a été saisie, son état, ses lignes. Le serveur n'a plus à traverser la cuisine pour poser la question.\n\nL'outil appelé : get_order.\n\nConcrètement : L'état d'une commande se demande depuis la salle, sans déranger le passe. La réponse est la commande réelle, pas une estimation.\n\nEn savoir plus : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "hashtags": [
+          "restauration",
+          "foodeatup",
+          "jarvis",
+          "kds",
+          "service"
+        ],
+        "motsCles": [
+          "état de commande",
+          "KDS cuisine",
+          "service en salle",
+          "suivi commande"
+        ],
+        "cta": "Découvrir FoodEatUp"
+      },
+      "youtube": {
+        "legende": "Le serveur traverse la cuisine pour demander. Il repart avec « ça arrive ». Comme toujours.\n\nOn dit : « Jarvis, où en est la 6 ? »\n\nLa commande telle qu'elle a été saisie, son état, ses lignes. Le serveur n'a plus à traverser la cuisine pour poser la question.\n\nL'outil appelé : get_order.\n\n— — —\n\n🔗 https://site.foodeatup.com/\n\n📞 Une démo ? 06 14 18 92 25\n🌐 foodeatup.com\n\nSérie « Le Coup de Feu » — saison 8 « Dis-le, c'est fait », épisode 12 sur 30, et dernière saison de la série.\n12 h · Le coup de feu · À l'écran : Tomate Man\nModule KDS · L'état d'une commande\n\nJarvis est l'agent vocal de FoodEatUp, le logiciel qui réunit la caisse, le stock, les plannings, l'HACCP et le marketing d'un restaurant au même endroit.\n",
+        "hashtags": [
+          "Shorts",
+          "restaurant",
+          "restaurateur",
+          "foodeatup",
+          "jarvis",
+          "kds",
+          "service",
+          "coupdefeu"
+        ],
+        "motsCles": [
+          "état de commande",
+          "KDS cuisine",
+          "service en salle",
+          "suivi commande"
+        ],
+        "cta": "Découvrir FoodEatUp",
+        "titre": "Où en est la 6 — 12 h | FoodEatUp"
+      }
+    },
+    "promptVignette": "Photo réaliste, cadrage vertical 9:16. Il est 12 h : lumière de service, chaude et contrastée, vapeur dans le contre-jour. Le chef de l'image de référence — MÊME visage, même barbe, même toque blanche, même veste de cuisine blanche, même tablier blanc au logo FoodEatUp bleu. Ne change ni ses traits, ni sa morphologie, ni sa tenue. Il ne regarde AUCUN écran et ne tient AUCUN téléphone : il parle, simplement, les mains occupées par son travail. Scène : où en est la 6. Le serveur traverse la cuisine pour demander. Décor : une salle en service, un serveur immobile au milieu, la porte de cuisine qui bat. Le chef occupe les deux tiers droits du cadre, en plan poitrine. Bande crème #FCF9E6 en haut du cadre sur un cinquième de la hauteur, portant UNIQUEMENT le texte « OÙ EN EST LA 6 » en typographie arrondie très grasse, bleu marine #0F1A23, centré. En bas à gauche, une pastille arrondie beige #C4B28E, capitales blanches : « EP222 · 12 h ». Aucun autre texte, aucun logo ajouté, pas de filigrane, pas de bordure décorative, aucun écran de logiciel visible.",
+    "higgsfieldPrompt": "Vertical 9:16, 10 seconds, photorealistic, cinematic handheld camera, shallow depth of field, natural light, 4K. NO text overlay, NO subtitles, NO watermark, NO logo. NO visible software interface, NO phone screen.\n\nReference image attached — the FoodEatUp chef. Keep his exact face, beard, white toque, white chef jacket and white FoodEatUp apron. Do not alter his features or his build.\n\nTime of day: 12:00 — warm high-contrast service light with steam backlit.\n\nA busy dining room. A waiter stands still in the middle of it, tray under one arm, staring at the swinging kitchen door. Everything else moves around him.\n\nAt 8 seconds the chef from the reference image steps into frame on the right, hands still busy with his work, and speaks a single short sentence toward no one in particular — never to a screen, never to a phone. Hold on his face for the final 2 seconds.\n\nAudio: peak service noise, plates, tickets, overlapping voices. No music.",
+    "scriptHeygen": null,
+    "kit": null,
+    "heygenPrompt": "Avatar : « Chef FoodEatUp » — votre avatar 3D, plan poitrine, regard caméra, fond vert (ou transparent).\nFormat : 1080 × 1920, 9:16, 25 images par seconde.\nVoix : française, masculine, débit posé, ton complice — le chef qui explique, pas celui qui vend.\nDurée visée : 9 secondes — c'est le segment 9,5 s → 18,5 s du master.\n\nScript, à coller tel quel :\n« Traverser la cuisine pour demander où en est la table 6, et repartir avec « ça arrive » : c'est le sport national du service. Je pose la question à Jarvis, j'ai la vraie réponse. »\n\nPrononciation : « Jarvis » se dit à l'anglaise, DJAR-viss — c'est le nom de l'agent vocal, il revient dans les trente épisodes et il doit sonner pareil à chaque fois.\n\nRendu : aucun sous-titre, aucune incrustation, aucun logo, aucun décor de fond. Pas de musique. Le montage s'occupe de tout le reste.",
+    "montage": {
+      "consigne": "Monte EP222 : coupe le clip Higgsfield à 9,5 s, pose l'accroche « Le serveur traverse la cuisine pour demander. » à 5,0 s, empile l'avatar HeyGen et la capture d'écran dans la tablette de 18,5 s à 28,5 s, ferme sur la signature et le sting. Sortie 1080×1920, 37,5 s, −14 LUFS.",
+      "segments": [
+        {
+          "titre": "Hook",
+          "debut": 0,
+          "fin": 9.5,
+          "contenu": "Le plan Higgsfield, recadré en 9:16. L'accroche « Le serveur traverse la cuisine pour demander. » apparaît à 5,0 s, en bas du cadre."
+        },
+        {
+          "titre": "Transition de marque",
+          "debut": 9.5,
+          "fin": 18.5,
+          "contenu": "L'avatar HeyGen entre par la droite et prend la parole : « Traverser la cuisine pour demander où en est la table 6, et repartir avec « ça arrive » : c'est le sport national du service. »"
+        },
+        {
+          "titre": "Démo logiciel",
+          "debut": 18.5,
+          "fin": 28.5,
+          "contenu": "La phrase « Jarvis, où en est la 6 ? » s'écrit à l'écran, puis la réponse — la commande de la table, ligne à ligne, avec son état d'avancement. L'avatar reste en médaillon en bas à gauche."
+        },
+        {
+          "titre": "Signature",
+          "debut": 28.5,
+          "fin": 32.5,
+          "contenu": "Bandeau crème, la punchline « Il repart avec « ça arrive ». Comme toujours. », le logo FoodEatUp et le repère de saison « 12 h · Le coup de feu »."
+        },
+        {
+          "titre": "Sting",
+          "debut": 32.5,
+          "fin": 37.5,
+          "contenu": "Le sting de marque, « OÙ EN EST LA 6 » en incrustation, puis l'appel à l'action : https://site.foodeatup.com/ et le 06 14 18 92 25."
+        }
+      ],
+      "livrable": "1080 × 1920 · 37,5 s · H.264 · −14 LUFS · master versé dans la bibliothèque RapidoCMS, prêt à être programmé sur les cinq réseaux."
+    },
+    "metier": null,
+    "phase": null,
+    "amplitude": null,
+    "boucle": null,
+    "boucleSlug": null,
+    "grandeBoucle": null,
+    "incident": null,
+    "incidentHeure": null,
+    "incidentQuoi": null,
+    "saumon": null,
+    "story": {
+      "format": "9:16 · 1080 × 1920 · 10 s",
+      "hook": "Le serveur traverse la cuisine pour demander",
+      "punchline": "Il repart avec « ça arrive ». Comme toujours",
+      "url": null
+    },
+    "carrousel": null,
+    "imageFacebook": null,
+    "tutoriel": null
+  },
+  "EP223": {
+    "publications": {
+      "facebook": {
+        "legende": "Rupture à midi vingt. La carte en ligne, elle, en vend encore.\n\nOn dit : « Jarvis, on est en rupture de poulet. »\n\nLe stock est mis à zéro et le plat s'éteint là où il se vend — en salle, en ligne, en livraison. En une phrase, pas en trois écrans.\n\n👉 Tout FoodEatUp : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "hashtags": [
+          "restaurant",
+          "restaurateur",
+          "foodeatup",
+          "jarvis",
+          "stocks",
+          "rupture"
+        ],
+        "motsCles": [
+          "rupture de stock",
+          "désactiver un plat",
+          "carte en ligne",
+          "stock restaurant"
+        ],
+        "cta": "Découvrir FoodEatUp"
+      },
+      "instagram": {
+        "legende": "Rupture à midi vingt.\nLa carte en ligne, elle, en vend encore.\n\n« Jarvis, on est en rupture de poulet. »\n\nLe stock est mis à zéro et le plat s'éteint là où il se vend — en salle, en ligne, en livraison. En une phrase, pas en trois écrans.\n\n12 h · Le coup de feu — saison 8, « Dis-le, c'est fait ». Une journée, une phrase à la fois.\nTout est expliqué sur notre site — lien en bio.\nUne démo ? 06 14 18 92 25",
+        "hashtags": [
+          "restaurant",
+          "restaurateur",
+          "foodeatup",
+          "jarvis",
+          "stocks",
+          "rupture",
+          "vegefruites",
+          "coupdefeu",
+          "logicielrestaurant",
+          "assistantvocal"
+        ],
+        "motsCles": [
+          "rupture de stock",
+          "désactiver un plat",
+          "carte en ligne",
+          "stock restaurant"
+        ],
+        "cta": "Tout est en bio"
+      },
+      "tiktok": {
+        "legende": "Rupture à midi vingt.\nLa carte en ligne, elle, en vend encore.\n\n« Jarvis, on est en rupture de poulet. » 🎙️\n\nLe stock est mis à zéro et le plat s'éteint là où il se vend — en salle, en ligne, en livraison. En une phrase, pas en trois écrans.",
+        "hashtags": [
+          "restaurant",
+          "restaurateur",
+          "foodeatup",
+          "jarvis",
+          "stocks"
+        ],
+        "motsCles": [
+          "rupture de stock",
+          "désactiver un plat",
+          "carte en ligne",
+          "stock restaurant"
+        ],
+        "cta": "Lien en bio"
+      },
+      "linkedin": {
+        "legende": "Rupture à midi vingt.\n\nCe qu'on dit : « Jarvis, on est en rupture de poulet. »\n\nLe stock est mis à zéro et le plat s'éteint là où il se vend — en salle, en ligne, en livraison. En une phrase, pas en trois écrans.\n\nL'outil appelé : adjust_stock.\n\nConcrètement : La rupture se déclare une fois et se propage partout. Le plat cesse d'être vendable au même instant sur tous les canaux.\n\nEn savoir plus : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "hashtags": [
+          "restauration",
+          "foodeatup",
+          "jarvis",
+          "stocks",
+          "rupture"
+        ],
+        "motsCles": [
+          "rupture de stock",
+          "désactiver un plat",
+          "carte en ligne",
+          "stock restaurant"
+        ],
+        "cta": "Découvrir FoodEatUp"
+      },
+      "youtube": {
+        "legende": "Rupture à midi vingt. La carte en ligne, elle, en vend encore.\n\nOn dit : « Jarvis, on est en rupture de poulet. »\n\nLe stock est mis à zéro et le plat s'éteint là où il se vend — en salle, en ligne, en livraison. En une phrase, pas en trois écrans.\n\nL'outil appelé : adjust_stock.\n\n— — —\n\n🔗 https://site.foodeatup.com/\n\n📞 Une démo ? 06 14 18 92 25\n🌐 foodeatup.com\n\nSérie « Le Coup de Feu » — saison 8 « Dis-le, c'est fait », épisode 13 sur 30, et dernière saison de la série.\n12 h · Le coup de feu · À l'écran : L'Oignon\nModule StockVision · La rupture en service\n\nJarvis est l'agent vocal de FoodEatUp, le logiciel qui réunit la caisse, le stock, les plannings, l'HACCP et le marketing d'un restaurant au même endroit.\n",
+        "hashtags": [
+          "Shorts",
+          "restaurant",
+          "restaurateur",
+          "foodeatup",
+          "jarvis",
+          "stocks",
+          "rupture",
+          "coupdefeu"
+        ],
+        "motsCles": [
+          "rupture de stock",
+          "désactiver un plat",
+          "carte en ligne",
+          "stock restaurant"
+        ],
+        "cta": "Découvrir FoodEatUp",
+        "titre": "Plus de poulet — 12 h | FoodEatUp"
+      }
+    },
+    "promptVignette": "Photo réaliste, cadrage vertical 9:16. Il est 12 h : lumière de service, chaude et contrastée, vapeur dans le contre-jour. Le chef de l'image de référence — MÊME visage, même barbe, même toque blanche, même veste de cuisine blanche, même tablier blanc au logo FoodEatUp bleu. Ne change ni ses traits, ni sa morphologie, ni sa tenue. Il ne regarde AUCUN écran et ne tient AUCUN téléphone : il parle, simplement, les mains occupées par son travail. Scène : plus de poulet. Rupture à midi vingt. Décor : un frigo de ligne ouvert, un bac vide, un cuisinier qui lève les yeux. Le chef occupe les deux tiers droits du cadre, en plan poitrine. Bande crème #FCF9E6 en haut du cadre sur un cinquième de la hauteur, portant UNIQUEMENT le texte « PLUS DE POULET » en typographie arrondie très grasse, bleu marine #0F1A23, centré. En bas à gauche, une pastille arrondie beige #C4B28E, capitales blanches : « EP223 · 12 h ». Aucun autre texte, aucun logo ajouté, pas de filigrane, pas de bordure décorative, aucun écran de logiciel visible.",
+    "higgsfieldPrompt": "Vertical 9:16, 10 seconds, photorealistic, cinematic handheld camera, shallow depth of field, natural light, 4K. NO text overlay, NO subtitles, NO watermark, NO logo. NO visible software interface, NO phone screen.\n\nReference image attached — the FoodEatUp chef. Keep his exact face, beard, white toque, white chef jacket and white FoodEatUp apron. Do not alter his features or his build.\n\nTime of day: 12:00 — warm high-contrast service light with steam backlit.\n\nAn open line fridge during service. One empty container where the protein should be. A cook looks up, straight into the lens, and says nothing. Steam behind him.\n\nAt 8 seconds the chef from the reference image steps into frame on the right, hands still busy with his work, and speaks a single short sentence toward no one in particular — never to a screen, never to a phone. Hold on his face for the final 2 seconds.\n\nAudio: peak service noise, plates, tickets, overlapping voices. No music.",
+    "scriptHeygen": null,
+    "kit": null,
+    "heygenPrompt": "Avatar : « Chef FoodEatUp » — votre avatar 3D, plan poitrine, regard caméra, fond vert (ou transparent).\nFormat : 1080 × 1920, 9:16, 25 images par seconde.\nVoix : française, masculine, débit posé, ton complice — le chef qui explique, pas celui qui vend.\nDurée visée : 9 secondes — c'est le segment 9,5 s → 18,5 s du master.\n\nScript, à coller tel quel :\n« Une rupture à midi vingt, ça arrive. Continuer à la vendre en ligne jusqu'à quatorze heures, non. Je le dis une fois à Jarvis, et le plat s'éteint partout à la fois. »\n\nPrononciation : « Jarvis » se dit à l'anglaise, DJAR-viss — c'est le nom de l'agent vocal, il revient dans les trente épisodes et il doit sonner pareil à chaque fois.\n\nRendu : aucun sous-titre, aucune incrustation, aucun logo, aucun décor de fond. Pas de musique. Le montage s'occupe de tout le reste.",
+    "montage": {
+      "consigne": "Monte EP223 : coupe le clip Higgsfield à 9,5 s, pose l'accroche « Rupture à midi vingt. » à 5,0 s, empile l'avatar HeyGen et la capture d'écran dans la tablette de 18,5 s à 28,5 s, ferme sur la signature et le sting. Sortie 1080×1920, 37,5 s, −14 LUFS.",
+      "segments": [
+        {
+          "titre": "Hook",
+          "debut": 0,
+          "fin": 9.5,
+          "contenu": "Le plan Higgsfield, recadré en 9:16. L'accroche « Rupture à midi vingt. » apparaît à 5,0 s, en bas du cadre."
+        },
+        {
+          "titre": "Transition de marque",
+          "debut": 9.5,
+          "fin": 18.5,
+          "contenu": "L'avatar HeyGen entre par la droite et prend la parole : « Une rupture à midi vingt, ça arrive. »"
+        },
+        {
+          "titre": "Démo logiciel",
+          "debut": 18.5,
+          "fin": 28.5,
+          "contenu": "La phrase « Jarvis, on est en rupture de poulet. » s'écrit à l'écran, puis la réponse — le stock passé à zéro, et le plat désactivé sur les canaux de vente. L'avatar reste en médaillon en bas à gauche."
+        },
+        {
+          "titre": "Signature",
+          "debut": 28.5,
+          "fin": 32.5,
+          "contenu": "Bandeau crème, la punchline « La carte en ligne, elle, en vend encore. », le logo FoodEatUp et le repère de saison « 12 h · Le coup de feu »."
+        },
+        {
+          "titre": "Sting",
+          "debut": 32.5,
+          "fin": 37.5,
+          "contenu": "Le sting de marque, « PLUS DE POULET » en incrustation, puis l'appel à l'action : https://site.foodeatup.com/ et le 06 14 18 92 25."
+        }
+      ],
+      "livrable": "1080 × 1920 · 37,5 s · H.264 · −14 LUFS · master versé dans la bibliothèque RapidoCMS, prêt à être programmé sur les cinq réseaux."
+    },
+    "metier": null,
+    "phase": null,
+    "amplitude": null,
+    "boucle": null,
+    "boucleSlug": null,
+    "grandeBoucle": null,
+    "incident": null,
+    "incidentHeure": null,
+    "incidentQuoi": null,
+    "saumon": null,
+    "story": {
+      "format": "9:16 · 1080 × 1920 · 10 s",
+      "hook": "Rupture à midi vingt",
+      "punchline": "La carte en ligne, elle, en vend encore",
+      "url": null
+    },
+    "carrousel": null,
+    "imageFacebook": null,
+    "tutoriel": null
+  },
+  "EP224": {
+    "publications": {
+      "facebook": {
+        "legende": "Ouvrir la caisse : cinq clics, un fond de caisse, un mot de passe. Ou trois mots, les mains pleines.\n\nOn dit : « Jarvis, ouvre la caisse. »\n\nLa session est ouverte, au nom de qui la tient, à l'heure exacte. Le service peut encaisser.\n\n👉 Tout FoodEatUp : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "hashtags": [
+          "restaurant",
+          "restaurateur",
+          "foodeatup",
+          "jarvis",
+          "caisse",
+          "service"
+        ],
+        "motsCles": [
+          "session de caisse",
+          "ouverture caisse",
+          "caisse restaurant",
+          "encaissement"
+        ],
+        "cta": "Découvrir FoodEatUp"
+      },
+      "instagram": {
+        "legende": "Ouvrir la caisse : cinq clics, un fond de caisse, un mot de passe.\nOu trois mots, les mains pleines.\n\n« Jarvis, ouvre la caisse. »\n\nLa session est ouverte, au nom de qui la tient, à l'heure exacte. Le service peut encaisser.\n\n12 h · Le coup de feu — saison 8, « Dis-le, c'est fait ». Une journée, une phrase à la fois.\nTout est expliqué sur notre site — lien en bio.\nUne démo ? 06 14 18 92 25",
+        "hashtags": [
+          "restaurant",
+          "restaurateur",
+          "foodeatup",
+          "jarvis",
+          "caisse",
+          "service",
+          "vegefruites",
+          "coupdefeu",
+          "logicielrestaurant",
+          "assistantvocal"
+        ],
+        "motsCles": [
+          "session de caisse",
+          "ouverture caisse",
+          "caisse restaurant",
+          "encaissement"
+        ],
+        "cta": "Tout est en bio"
+      },
+      "tiktok": {
+        "legende": "Ouvrir la caisse : cinq clics, un fond de caisse, un mot de passe.\nOu trois mots, les mains pleines.\n\n« Jarvis, ouvre la caisse. » 🎙️\n\nLa session est ouverte, au nom de qui la tient, à l'heure exacte. Le service peut encaisser.",
+        "hashtags": [
+          "restaurant",
+          "restaurateur",
+          "foodeatup",
+          "jarvis",
+          "caisse"
+        ],
+        "motsCles": [
+          "session de caisse",
+          "ouverture caisse",
+          "caisse restaurant",
+          "encaissement"
+        ],
+        "cta": "Lien en bio"
+      },
+      "linkedin": {
+        "legende": "Ouvrir la caisse : cinq clics, un fond de caisse, un mot de passe.\n\nCe qu'on dit : « Jarvis, ouvre la caisse. »\n\nLa session est ouverte, au nom de qui la tient, à l'heure exacte. Le service peut encaisser.\n\nL'outil appelé : open_pos_session.\n\nConcrètement : La session de caisse s'ouvre à la voix, avec son responsable et son heure. Ce qui compte le soir venu, c'est que ce soit tracé — pas que ce soit cliqué.\n\nEn savoir plus : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "hashtags": [
+          "restauration",
+          "foodeatup",
+          "jarvis",
+          "caisse",
+          "service"
+        ],
+        "motsCles": [
+          "session de caisse",
+          "ouverture caisse",
+          "caisse restaurant",
+          "encaissement"
+        ],
+        "cta": "Découvrir FoodEatUp"
+      },
+      "youtube": {
+        "legende": "Ouvrir la caisse : cinq clics, un fond de caisse, un mot de passe. Ou trois mots, les mains pleines.\n\nOn dit : « Jarvis, ouvre la caisse. »\n\nLa session est ouverte, au nom de qui la tient, à l'heure exacte. Le service peut encaisser.\n\nL'outil appelé : open_pos_session.\n\n— — —\n\n🔗 https://site.foodeatup.com/\n\n📞 Une démo ? 06 14 18 92 25\n🌐 foodeatup.com\n\nSérie « Le Coup de Feu » — saison 8 « Dis-le, c'est fait », épisode 14 sur 30, et dernière saison de la série.\n12 h · Le coup de feu · À l'écran : L'Ail\nModule Caisse POS · La session de caisse\n\nJarvis est l'agent vocal de FoodEatUp, le logiciel qui réunit la caisse, le stock, les plannings, l'HACCP et le marketing d'un restaurant au même endroit.\n",
+        "hashtags": [
+          "Shorts",
+          "restaurant",
+          "restaurateur",
+          "foodeatup",
+          "jarvis",
+          "caisse",
+          "service",
+          "coupdefeu"
+        ],
+        "motsCles": [
+          "session de caisse",
+          "ouverture caisse",
+          "caisse restaurant",
+          "encaissement"
+        ],
+        "cta": "Découvrir FoodEatUp",
+        "titre": "Ouvre la caisse — 12 h | FoodEatUp"
+      }
+    },
+    "promptVignette": "Photo réaliste, cadrage vertical 9:16. Il est 12 h : lumière de service, chaude et contrastée, vapeur dans le contre-jour. Le chef de l'image de référence — MÊME visage, même barbe, même toque blanche, même veste de cuisine blanche, même tablier blanc au logo FoodEatUp bleu. Ne change ni ses traits, ni sa morphologie, ni sa tenue. Il ne regarde AUCUN écran et ne tient AUCUN téléphone : il parle, simplement, les mains occupées par son travail. Scène : ouvre la caisse. Ouvrir la caisse : cinq clics, un fond de caisse, un mot de passe. Décor : un comptoir de caisse, un tiroir fermé, deux mains occupées par des assiettes. Le chef occupe les deux tiers droits du cadre, en plan poitrine. Bande crème #FCF9E6 en haut du cadre sur un cinquième de la hauteur, portant UNIQUEMENT le texte « OUVRE LA CAISSE » en typographie arrondie très grasse, bleu marine #0F1A23, centré. En bas à gauche, une pastille arrondie beige #C4B28E, capitales blanches : « EP224 · 12 h ». Aucun autre texte, aucun logo ajouté, pas de filigrane, pas de bordure décorative, aucun écran de logiciel visible.",
+    "higgsfieldPrompt": "Vertical 9:16, 10 seconds, photorealistic, cinematic handheld camera, shallow depth of field, natural light, 4K. NO text overlay, NO subtitles, NO watermark, NO logo. NO visible software interface, NO phone screen.\n\nReference image attached — the FoodEatUp chef. Keep his exact face, beard, white toque, white chef jacket and white FoodEatUp apron. Do not alter his features or his build.\n\nTime of day: 12:00 — warm high-contrast service light with steam backlit.\n\nA restaurant till counter, drawer shut, screen dark. Two hands enter frame carrying full plates and cannot reach it. They hover, then leave. The screen stays dark.\n\nAt 8 seconds the chef from the reference image steps into frame on the right, hands still busy with his work, and speaks a single short sentence toward no one in particular — never to a screen, never to a phone. Hold on his face for the final 2 seconds.\n\nAudio: peak service noise, plates, tickets, overlapping voices. No music.",
+    "scriptHeygen": null,
+    "kit": null,
+    "heygenPrompt": "Avatar : « Chef FoodEatUp » — votre avatar 3D, plan poitrine, regard caméra, fond vert (ou transparent).\nFormat : 1080 × 1920, 9:16, 25 images par seconde.\nVoix : française, masculine, débit posé, ton complice — le chef qui explique, pas celui qui vend.\nDurée visée : 9 secondes — c'est le segment 9,5 s → 18,5 s du master.\n\nScript, à coller tel quel :\n« Ouvrir la caisse, c'est cinq clics et un mot de passe, et on a toujours les mains pleines. Trois mots à Jarvis, la session est ouverte, à mon nom et à l'heure exacte. »\n\nPrononciation : « Jarvis » se dit à l'anglaise, DJAR-viss — c'est le nom de l'agent vocal, il revient dans les trente épisodes et il doit sonner pareil à chaque fois.\n\nRendu : aucun sous-titre, aucune incrustation, aucun logo, aucun décor de fond. Pas de musique. Le montage s'occupe de tout le reste.",
+    "montage": {
+      "consigne": "Monte EP224 : coupe le clip Higgsfield à 9,5 s, pose l'accroche « Ouvrir la caisse : cinq clics, un fond de caisse, un mot de passe. » à 5,0 s, empile l'avatar HeyGen et la capture d'écran dans la tablette de 18,5 s à 28,5 s, ferme sur la signature et le sting. Sortie 1080×1920, 37,5 s, −14 LUFS.",
+      "segments": [
+        {
+          "titre": "Hook",
+          "debut": 0,
+          "fin": 9.5,
+          "contenu": "Le plan Higgsfield, recadré en 9:16. L'accroche « Ouvrir la caisse : cinq clics, un fond de caisse, un mot de passe. » apparaît à 5,0 s, en bas du cadre."
+        },
+        {
+          "titre": "Transition de marque",
+          "debut": 9.5,
+          "fin": 18.5,
+          "contenu": "L'avatar HeyGen entre par la droite et prend la parole : « Ouvrir la caisse, c'est cinq clics et un mot de passe, et on a toujours les mains pleines. »"
+        },
+        {
+          "titre": "Démo logiciel",
+          "debut": 18.5,
+          "fin": 28.5,
+          "contenu": "La phrase « Jarvis, ouvre la caisse. » s'écrit à l'écran, puis la réponse — la session de caisse ouverte : responsable, heure, fond de caisse. L'avatar reste en médaillon en bas à gauche."
+        },
+        {
+          "titre": "Signature",
+          "debut": 28.5,
+          "fin": 32.5,
+          "contenu": "Bandeau crème, la punchline « Ou trois mots, les mains pleines. », le logo FoodEatUp et le repère de saison « 12 h · Le coup de feu »."
+        },
+        {
+          "titre": "Sting",
+          "debut": 32.5,
+          "fin": 37.5,
+          "contenu": "Le sting de marque, « OUVRE LA CAISSE » en incrustation, puis l'appel à l'action : https://site.foodeatup.com/ et le 06 14 18 92 25."
+        }
+      ],
+      "livrable": "1080 × 1920 · 37,5 s · H.264 · −14 LUFS · master versé dans la bibliothèque RapidoCMS, prêt à être programmé sur les cinq réseaux."
+    },
+    "metier": null,
+    "phase": null,
+    "amplitude": null,
+    "boucle": null,
+    "boucleSlug": null,
+    "grandeBoucle": null,
+    "incident": null,
+    "incidentHeure": null,
+    "incidentQuoi": null,
+    "saumon": null,
+    "story": {
+      "format": "9:16 · 1080 × 1920 · 10 s",
+      "hook": "Ouvrir la caisse : cinq clics, un fond de caisse, un mot de passe",
+      "punchline": "Ou trois mots, les mains pleines",
+      "url": null
+    },
+    "carrousel": null,
+    "imageFacebook": null,
+    "tutoriel": null
+  },
+  "EP225": {
+    "publications": {
+      "facebook": {
+        "legende": "« Sans gluten » dit au serveur, en pleine salle. Répété deux fois. Écrit nulle part.\n\nOn dit : « Jarvis, note : la 12, quatre couverts, sans gluten. »\n\nLa réservation est créée avec sa contrainte écrite dessus, et cette note voyage avec la table jusqu'au passe.\n\n👉 Tout FoodEatUp : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "hashtags": [
+          "restaurant",
+          "restaurateur",
+          "foodeatup",
+          "jarvis",
+          "reservation",
+          "allergenes"
+        ],
+        "motsCles": [
+          "note de réservation",
+          "contrainte alimentaire",
+          "réservation restaurant",
+          "transmission cuisine"
+        ],
+        "cta": "Découvrir FoodEatUp"
+      },
+      "instagram": {
+        "legende": "« Sans gluten » dit au serveur, en pleine salle.\nRépété deux fois. Écrit nulle part.\n\n« Jarvis, note : la 12, quatre couverts, sans gluten. »\n\nLa réservation est créée avec sa contrainte écrite dessus, et cette note voyage avec la table jusqu'au passe.\n\n12 h · Le coup de feu — saison 8, « Dis-le, c'est fait ». Une journée, une phrase à la fois.\nTout est expliqué sur notre site — lien en bio.\nUne démo ? 06 14 18 92 25",
+        "hashtags": [
+          "restaurant",
+          "restaurateur",
+          "foodeatup",
+          "jarvis",
+          "reservation",
+          "allergenes",
+          "vegefruites",
+          "coupdefeu",
+          "logicielrestaurant",
+          "assistantvocal"
+        ],
+        "motsCles": [
+          "note de réservation",
+          "contrainte alimentaire",
+          "réservation restaurant",
+          "transmission cuisine"
+        ],
+        "cta": "Tout est en bio"
+      },
+      "tiktok": {
+        "legende": "« Sans gluten » dit au serveur, en pleine salle.\nRépété deux fois. Écrit nulle part.\n\n« Jarvis, note : la 12, quatre couverts, sans gluten. » 🎙️\n\nLa réservation est créée avec sa contrainte écrite dessus, et cette note voyage avec la table jusqu'au passe.",
+        "hashtags": [
+          "restaurant",
+          "restaurateur",
+          "foodeatup",
+          "jarvis",
+          "reservation"
+        ],
+        "motsCles": [
+          "note de réservation",
+          "contrainte alimentaire",
+          "réservation restaurant",
+          "transmission cuisine"
+        ],
+        "cta": "Lien en bio"
+      },
+      "linkedin": {
+        "legende": "« Sans gluten » dit au serveur, en pleine salle.\n\nCe qu'on dit : « Jarvis, note : la 12, quatre couverts, sans gluten. »\n\nLa réservation est créée avec sa contrainte écrite dessus, et cette note voyage avec la table jusqu'au passe.\n\nL'outil appelé : create_reservation.\n\nConcrètement : La contrainte se dicte au moment où elle est dite, et elle est attachée à la table. Elle n'a plus à survivre dans la mémoire de trois personnes.\n\nEn savoir plus : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "hashtags": [
+          "restauration",
+          "foodeatup",
+          "jarvis",
+          "reservation",
+          "allergenes"
+        ],
+        "motsCles": [
+          "note de réservation",
+          "contrainte alimentaire",
+          "réservation restaurant",
+          "transmission cuisine"
+        ],
+        "cta": "Découvrir FoodEatUp"
+      },
+      "youtube": {
+        "legende": "« Sans gluten » dit au serveur, en pleine salle. Répété deux fois. Écrit nulle part.\n\nOn dit : « Jarvis, note : la 12, quatre couverts, sans gluten. »\n\nLa réservation est créée avec sa contrainte écrite dessus, et cette note voyage avec la table jusqu'au passe.\n\nL'outil appelé : create_reservation.\n\n— — —\n\n🔗 https://site.foodeatup.com/\n\n📞 Une démo ? 06 14 18 92 25\n🌐 foodeatup.com\n\nSérie « Le Coup de Feu » — saison 8 « Dis-le, c'est fait », épisode 15 sur 30, et dernière saison de la série.\n12 h · Le coup de feu · À l'écran : Don Citrone\nModule Réservation · La note qui suit\n\nJarvis est l'agent vocal de FoodEatUp, le logiciel qui réunit la caisse, le stock, les plannings, l'HACCP et le marketing d'un restaurant au même endroit.\n",
+        "hashtags": [
+          "Shorts",
+          "restaurant",
+          "restaurateur",
+          "foodeatup",
+          "jarvis",
+          "reservation",
+          "allergenes",
+          "coupdefeu"
+        ],
+        "motsCles": [
+          "note de réservation",
+          "contrainte alimentaire",
+          "réservation restaurant",
+          "transmission cuisine"
+        ],
+        "cta": "Découvrir FoodEatUp",
+        "titre": "La 12, sans gluten — 12 h | FoodEatUp"
+      }
+    },
+    "promptVignette": "Photo réaliste, cadrage vertical 9:16. Il est 12 h : lumière de service, chaude et contrastée, vapeur dans le contre-jour. Le chef de l'image de référence — MÊME visage, même barbe, même toque blanche, même veste de cuisine blanche, même tablier blanc au logo FoodEatUp bleu. Ne change ni ses traits, ni sa morphologie, ni sa tenue. Il ne regarde AUCUN écran et ne tient AUCUN téléphone : il parle, simplement, les mains occupées par son travail. Scène : la 12, sans gluten. « Sans gluten » dit au serveur, en pleine salle. Décor : une table de quatre, un serveur penché qui écoute, la salle bruyante autour. Le chef occupe les deux tiers droits du cadre, en plan poitrine. Bande crème #FCF9E6 en haut du cadre sur un cinquième de la hauteur, portant UNIQUEMENT le texte « SANS GLUTEN » en typographie arrondie très grasse, bleu marine #0F1A23, centré. En bas à gauche, une pastille arrondie beige #C4B28E, capitales blanches : « EP225 · 12 h ». Aucun autre texte, aucun logo ajouté, pas de filigrane, pas de bordure décorative, aucun écran de logiciel visible.",
+    "higgsfieldPrompt": "Vertical 9:16, 10 seconds, photorealistic, cinematic handheld camera, shallow depth of field, natural light, 4K. NO text overlay, NO subtitles, NO watermark, NO logo. NO visible software interface, NO phone screen.\n\nReference image attached — the FoodEatUp chef. Keep his exact face, beard, white toque, white chef jacket and white FoodEatUp apron. Do not alter his features or his build.\n\nTime of day: 12:00 — warm high-contrast service light with steam backlit.\n\nA table of four in a loud dining room. A waiter leans in to listen, nodding, hands empty, no pad. The noise swells. He straightens up and walks away, still empty-handed.\n\nAt 8 seconds the chef from the reference image steps into frame on the right, hands still busy with his work, and speaks a single short sentence toward no one in particular — never to a screen, never to a phone. Hold on his face for the final 2 seconds.\n\nAudio: peak service noise, plates, tickets, overlapping voices. No music.",
+    "scriptHeygen": null,
+    "kit": null,
+    "heygenPrompt": "Avatar : « Chef FoodEatUp » — votre avatar 3D, plan poitrine, regard caméra, fond vert (ou transparent).\nFormat : 1080 × 1920, 9:16, 25 images par seconde.\nVoix : française, masculine, débit posé, ton complice — le chef qui explique, pas celui qui vend.\nDurée visée : 9 secondes — c'est le segment 9,5 s → 18,5 s du master.\n\nScript, à coller tel quel :\n« Une contrainte dite en pleine salle, répétée deux fois, écrite nulle part : c'est comme ça qu'une assiette part quand même. Je la dicte à Jarvis, elle suit la table jusqu'au passe. »\n\nPrononciation : « Jarvis » se dit à l'anglaise, DJAR-viss — c'est le nom de l'agent vocal, il revient dans les trente épisodes et il doit sonner pareil à chaque fois.\n\nRendu : aucun sous-titre, aucune incrustation, aucun logo, aucun décor de fond. Pas de musique. Le montage s'occupe de tout le reste.",
+    "montage": {
+      "consigne": "Monte EP225 : coupe le clip Higgsfield à 9,5 s, pose l'accroche « « Sans gluten » dit au serveur, en pleine salle. » à 5,0 s, empile l'avatar HeyGen et la capture d'écran dans la tablette de 18,5 s à 28,5 s, ferme sur la signature et le sting. Sortie 1080×1920, 37,5 s, −14 LUFS.",
+      "segments": [
+        {
+          "titre": "Hook",
+          "debut": 0,
+          "fin": 9.5,
+          "contenu": "Le plan Higgsfield, recadré en 9:16. L'accroche « « Sans gluten » dit au serveur, en pleine salle. » apparaît à 5,0 s, en bas du cadre."
+        },
+        {
+          "titre": "Transition de marque",
+          "debut": 9.5,
+          "fin": 18.5,
+          "contenu": "L'avatar HeyGen entre par la droite et prend la parole : « Une contrainte dite en pleine salle, répétée deux fois, écrite nulle part : c'est comme ça qu'une assiette part quand même. »"
+        },
+        {
+          "titre": "Démo logiciel",
+          "debut": 18.5,
+          "fin": 28.5,
+          "contenu": "La phrase « Jarvis, note : la 12, quatre couverts, sans gluten. » s'écrit à l'écran, puis la réponse — la réservation créée avec sa note, puis la même note visible sur le ticket en cuisine. L'avatar reste en médaillon en bas à gauche."
+        },
+        {
+          "titre": "Signature",
+          "debut": 28.5,
+          "fin": 32.5,
+          "contenu": "Bandeau crème, la punchline « Répété deux fois. Écrit nulle part. », le logo FoodEatUp et le repère de saison « 12 h · Le coup de feu »."
+        },
+        {
+          "titre": "Sting",
+          "debut": 32.5,
+          "fin": 37.5,
+          "contenu": "Le sting de marque, « SANS GLUTEN » en incrustation, puis l'appel à l'action : https://site.foodeatup.com/ et le 06 14 18 92 25."
+        }
+      ],
+      "livrable": "1080 × 1920 · 37,5 s · H.264 · −14 LUFS · master versé dans la bibliothèque RapidoCMS, prêt à être programmé sur les cinq réseaux."
+    },
+    "metier": null,
+    "phase": null,
+    "amplitude": null,
+    "boucle": null,
+    "boucleSlug": null,
+    "grandeBoucle": null,
+    "incident": null,
+    "incidentHeure": null,
+    "incidentQuoi": null,
+    "saumon": null,
+    "story": {
+      "format": "9:16 · 1080 × 1920 · 10 s",
+      "hook": "« Sans gluten » dit au serveur, en pleine salle",
+      "punchline": "Répété deux fois. Écrit nulle part",
+      "url": null
+    },
+    "carrousel": null,
+    "imageFacebook": null,
+    "tutoriel": null
+  },
+  "EP226": {
+    "publications": {
+      "facebook": {
+        "legende": "« Qu'est-ce que je poste cette semaine ? » La question qu'on se pose le mardi. Et le mercredi.\n\nOn dit : « Jarvis, qu'est-ce que je poste cette semaine ? »\n\nDes campagnes prêtes, avec leur cible, leur canal, leur message — et le motif de chacune. Ce ne sont pas des idées : ce sont des propositions tirées des données du restaurant.\n\n👉 Tout FoodEatUp : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "hashtags": [
+          "restaurant",
+          "restaurateur",
+          "foodeatup",
+          "jarvis",
+          "marketing",
+          "campagne"
+        ],
+        "motsCles": [
+          "campagne marketing restaurant",
+          "agent IA marketing",
+          "fidélisation client",
+          "segment RFM"
+        ],
+        "cta": "Découvrir FoodEatUp"
+      },
+      "instagram": {
+        "legende": "« Qu'est-ce que je poste cette semaine ? »\nLa question qu'on se pose le mardi. Et le mercredi.\n\n« Jarvis, qu'est-ce que je poste cette semaine ? »\n\nDes campagnes prêtes, avec leur cible, leur canal, leur message — et le motif de chacune. Ce ne sont pas des idées : ce sont des propositions tirées des données du restaurant.\n\n15 h · Le creux — saison 8, « Dis-le, c'est fait ». Une journée, une phrase à la fois.\nTout est expliqué sur notre site — lien en bio.\nUne démo ? 06 14 18 92 25",
+        "hashtags": [
+          "restaurant",
+          "restaurateur",
+          "foodeatup",
+          "jarvis",
+          "marketing",
+          "campagne",
+          "vegefruites",
+          "coupdefeu",
+          "logicielrestaurant",
+          "assistantvocal"
+        ],
+        "motsCles": [
+          "campagne marketing restaurant",
+          "agent IA marketing",
+          "fidélisation client",
+          "segment RFM"
+        ],
+        "cta": "Tout est en bio"
+      },
+      "tiktok": {
+        "legende": "« Qu'est-ce que je poste cette semaine ? »\nLa question qu'on se pose le mardi. Et le mercredi.\n\n« Jarvis, qu'est-ce que je poste cette semaine ? » 🎙️\n\nDes campagnes prêtes, avec leur cible, leur canal, leur message — et le motif de chacune. Ce ne sont pas des idées : ce sont des propositions tirées des données du restaurant.",
+        "hashtags": [
+          "restaurant",
+          "restaurateur",
+          "foodeatup",
+          "jarvis",
+          "marketing"
+        ],
+        "motsCles": [
+          "campagne marketing restaurant",
+          "agent IA marketing",
+          "fidélisation client",
+          "segment RFM"
+        ],
+        "cta": "Lien en bio"
+      },
+      "linkedin": {
+        "legende": "« Qu'est-ce que je poste cette semaine ? »\n\nCe qu'on dit : « Jarvis, qu'est-ce que je poste cette semaine ? »\n\nDes campagnes prêtes, avec leur cible, leur canal, leur message — et le motif de chacune. Ce ne sont pas des idées : ce sont des propositions tirées des données du restaurant.\n\nL'outil appelé : propose_campaigns.\n\nConcrètement : Les campagnes ne se cherchent plus : elles sont proposées, avec leur segment, leur canal et leur message déjà écrit. Il reste à choisir, pas à inventer.\n\nEn savoir plus : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "hashtags": [
+          "restauration",
+          "foodeatup",
+          "jarvis",
+          "marketing",
+          "campagne"
+        ],
+        "motsCles": [
+          "campagne marketing restaurant",
+          "agent IA marketing",
+          "fidélisation client",
+          "segment RFM"
+        ],
+        "cta": "Découvrir FoodEatUp"
+      },
+      "youtube": {
+        "legende": "« Qu'est-ce que je poste cette semaine ? » La question qu'on se pose le mardi. Et le mercredi.\n\nOn dit : « Jarvis, qu'est-ce que je poste cette semaine ? »\n\nDes campagnes prêtes, avec leur cible, leur canal, leur message — et le motif de chacune. Ce ne sont pas des idées : ce sont des propositions tirées des données du restaurant.\n\nL'outil appelé : propose_campaigns.\n\n— — —\n\n🔗 https://site.foodeatup.com/\n\n📞 Une démo ? 06 14 18 92 25\n🌐 foodeatup.com\n\nSérie « Le Coup de Feu » — saison 8 « Dis-le, c'est fait », épisode 16 sur 30, et dernière saison de la série.\n15 h · Le creux · À l'écran : La Fraise\nModule Marketing · Les campagnes proposées\n\nJarvis est l'agent vocal de FoodEatUp, le logiciel qui réunit la caisse, le stock, les plannings, l'HACCP et le marketing d'un restaurant au même endroit.\n",
+        "hashtags": [
+          "Shorts",
+          "restaurant",
+          "restaurateur",
+          "foodeatup",
+          "jarvis",
+          "marketing",
+          "campagne",
+          "coupdefeu"
+        ],
+        "motsCles": [
+          "campagne marketing restaurant",
+          "agent IA marketing",
+          "fidélisation client",
+          "segment RFM"
+        ],
+        "cta": "Découvrir FoodEatUp",
+        "titre": "L'agent qui propose — 15 h | FoodEatUp"
+      }
+    },
+    "promptVignette": "Photo réaliste, cadrage vertical 9:16. Il est 15 h : lumière d'après-midi, plate et calme, la salle vide. Le chef de l'image de référence — MÊME visage, même barbe, même toque blanche, même veste de cuisine blanche, même tablier blanc au logo FoodEatUp bleu. Ne change ni ses traits, ni sa morphologie, ni sa tenue. Il ne regarde AUCUN écran et ne tient AUCUN téléphone : il parle, simplement, les mains occupées par son travail. Scène : l'agent qui propose. « Qu'est-ce que je poste cette semaine ? » Décor : une salle vide de l'après-midi, un carnet ouvert sur une page blanche. Le chef occupe les deux tiers droits du cadre, en plan poitrine. Bande crème #FCF9E6 en haut du cadre sur un cinquième de la hauteur, portant UNIQUEMENT le texte « QUOI POSTER » en typographie arrondie très grasse, bleu marine #0F1A23, centré. En bas à gauche, une pastille arrondie beige #C4B28E, capitales blanches : « EP226 · 15 h ». Aucun autre texte, aucun logo ajouté, pas de filigrane, pas de bordure décorative, aucun écran de logiciel visible.",
+    "higgsfieldPrompt": "Vertical 9:16, 10 seconds, photorealistic, cinematic handheld camera, shallow depth of field, natural light, 4K. NO text overlay, NO subtitles, NO watermark, NO logo. NO visible software interface, NO phone screen.\n\nReference image attached — the FoodEatUp chef. Keep his exact face, beard, white toque, white chef jacket and white FoodEatUp apron. Do not alter his features or his build.\n\nTime of day: 15:00 — flat quiet afternoon light in an empty room.\n\nAn empty afternoon dining room, chairs neat, light flat. An open notebook on a table, both pages completely blank. Slow push-in on the blank page. Nothing is written.\n\nAt 8 seconds the chef from the reference image steps into frame on the right, hands still busy with his work, and speaks a single short sentence toward no one in particular — never to a screen, never to a phone. Hold on his face for the final 2 seconds.\n\nAudio: an almost silent room, one chair scraping, distant traffic. No music.",
+    "scriptHeygen": null,
+    "kit": null,
+    "heygenPrompt": "Avatar : « Chef FoodEatUp » — votre avatar 3D, plan poitrine, regard caméra, fond vert (ou transparent).\nFormat : 1080 × 1920, 9:16, 25 images par seconde.\nVoix : française, masculine, débit posé, ton complice — le chef qui explique, pas celui qui vend.\nDurée visée : 9 secondes — c'est le segment 9,5 s → 18,5 s du master.\n\nScript, à coller tel quel :\n« « Qu'est-ce que je poste cette semaine ? » C'est la question du mardi, et du mercredi, et du jeudi. Je la pose à Jarvis, et il me rend des campagnes déjà écrites, pas des idées. »\n\nPrononciation : « Jarvis » se dit à l'anglaise, DJAR-viss — c'est le nom de l'agent vocal, il revient dans les trente épisodes et il doit sonner pareil à chaque fois.\n\nRendu : aucun sous-titre, aucune incrustation, aucun logo, aucun décor de fond. Pas de musique. Le montage s'occupe de tout le reste.",
+    "montage": {
+      "consigne": "Monte EP226 : coupe le clip Higgsfield à 9,5 s, pose l'accroche « « Qu'est-ce que je poste cette semaine ? » » à 5,0 s, empile l'avatar HeyGen et la capture d'écran dans la tablette de 18,5 s à 28,5 s, ferme sur la signature et le sting. Sortie 1080×1920, 37,5 s, −14 LUFS.",
+      "segments": [
+        {
+          "titre": "Hook",
+          "debut": 0,
+          "fin": 9.5,
+          "contenu": "Le plan Higgsfield, recadré en 9:16. L'accroche « « Qu'est-ce que je poste cette semaine ? » » apparaît à 5,0 s, en bas du cadre."
+        },
+        {
+          "titre": "Transition de marque",
+          "debut": 9.5,
+          "fin": 18.5,
+          "contenu": "L'avatar HeyGen entre par la droite et prend la parole : « « Qu'est-ce que je poste cette semaine ? » C'est la question du mardi, et du mercredi, et du jeudi. »"
+        },
+        {
+          "titre": "Démo logiciel",
+          "debut": 18.5,
+          "fin": 28.5,
+          "contenu": "La phrase « Jarvis, qu'est-ce que je poste cette semaine ? » s'écrit à l'écran, puis la réponse — les campagnes proposées : le segment visé, le canal, le message, l'offre. L'avatar reste en médaillon en bas à gauche."
+        },
+        {
+          "titre": "Signature",
+          "debut": 28.5,
+          "fin": 32.5,
+          "contenu": "Bandeau crème, la punchline « La question qu'on se pose le mardi. Et le mercredi. », le logo FoodEatUp et le repère de saison « 15 h · Le creux »."
+        },
+        {
+          "titre": "Sting",
+          "debut": 32.5,
+          "fin": 37.5,
+          "contenu": "Le sting de marque, « QUOI POSTER » en incrustation, puis l'appel à l'action : https://site.foodeatup.com/ et le 06 14 18 92 25."
+        }
+      ],
+      "livrable": "1080 × 1920 · 37,5 s · H.264 · −14 LUFS · master versé dans la bibliothèque RapidoCMS, prêt à être programmé sur les cinq réseaux."
+    },
+    "metier": null,
+    "phase": null,
+    "amplitude": null,
+    "boucle": null,
+    "boucleSlug": null,
+    "grandeBoucle": null,
+    "incident": null,
+    "incidentHeure": null,
+    "incidentQuoi": null,
+    "saumon": null,
+    "story": {
+      "format": "9:16 · 1080 × 1920 · 10 s",
+      "hook": "« Qu'est-ce que je poste cette semaine ? »",
+      "punchline": "La question qu'on se pose le mardi. Et le mercredi",
+      "url": null
+    },
+    "carrousel": null,
+    "imageFacebook": null,
+    "tutoriel": null
+  },
+  "EP227": {
+    "publications": {
+      "facebook": {
+        "legende": "Une promo au hasard, ça s'appelle une remise. Une promo qui sait pourquoi, ça s'appelle un plan.\n\nOn dit : « Jarvis, pourquoi celle-là plutôt qu'une autre ? »\n\nLe jour le plus creux de la semaine, les clients qui ont cessé de venir, la fête qui arrive. Chaque proposition dit d'où elle vient.\n\n👉 Tout FoodEatUp : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "hashtags": [
+          "restaurant",
+          "restaurateur",
+          "foodeatup",
+          "jarvis",
+          "marketing",
+          "donnees"
+        ],
+        "motsCles": [
+          "jour creux restaurant",
+          "segment client",
+          "campagne ciblée",
+          "marketing restaurant"
+        ],
+        "cta": "Découvrir FoodEatUp"
+      },
+      "instagram": {
+        "legende": "Une promo au hasard, ça s'appelle une remise.\nUne promo qui sait pourquoi, ça s'appelle un plan.\n\n« Jarvis, pourquoi celle-là plutôt qu'une autre ? »\n\nLe jour le plus creux de la semaine, les clients qui ont cessé de venir, la fête qui arrive. Chaque proposition dit d'où elle vient.\n\n15 h · Le creux — saison 8, « Dis-le, c'est fait ». Une journée, une phrase à la fois.\nTout est expliqué sur notre site — lien en bio.\nUne démo ? 06 14 18 92 25",
+        "hashtags": [
+          "restaurant",
+          "restaurateur",
+          "foodeatup",
+          "jarvis",
+          "marketing",
+          "donnees",
+          "vegefruites",
+          "coupdefeu",
+          "logicielrestaurant",
+          "assistantvocal"
+        ],
+        "motsCles": [
+          "jour creux restaurant",
+          "segment client",
+          "campagne ciblée",
+          "marketing restaurant"
+        ],
+        "cta": "Tout est en bio"
+      },
+      "tiktok": {
+        "legende": "Une promo au hasard, ça s'appelle une remise.\nUne promo qui sait pourquoi, ça s'appelle un plan.\n\n« Jarvis, pourquoi celle-là plutôt qu'une autre ? » 🎙️\n\nLe jour le plus creux de la semaine, les clients qui ont cessé de venir, la fête qui arrive. Chaque proposition dit d'où elle vient.",
+        "hashtags": [
+          "restaurant",
+          "restaurateur",
+          "foodeatup",
+          "jarvis",
+          "marketing"
+        ],
+        "motsCles": [
+          "jour creux restaurant",
+          "segment client",
+          "campagne ciblée",
+          "marketing restaurant"
+        ],
+        "cta": "Lien en bio"
+      },
+      "linkedin": {
+        "legende": "Une promo au hasard, ça s'appelle une remise.\n\nCe qu'on dit : « Jarvis, pourquoi celle-là plutôt qu'une autre ? »\n\nLe jour le plus creux de la semaine, les clients qui ont cessé de venir, la fête qui arrive. Chaque proposition dit d'où elle vient.\n\nL'outil appelé : propose_campaigns.\n\nConcrètement : Chaque campagne proposée porte son motif : le jour creux, le segment qui décroche, la date qui approche. On accepte ou on refuse en connaissance de cause.\n\nEn savoir plus : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "hashtags": [
+          "restauration",
+          "foodeatup",
+          "jarvis",
+          "marketing",
+          "donnees"
+        ],
+        "motsCles": [
+          "jour creux restaurant",
+          "segment client",
+          "campagne ciblée",
+          "marketing restaurant"
+        ],
+        "cta": "Découvrir FoodEatUp"
+      },
+      "youtube": {
+        "legende": "Une promo au hasard, ça s'appelle une remise. Une promo qui sait pourquoi, ça s'appelle un plan.\n\nOn dit : « Jarvis, pourquoi celle-là plutôt qu'une autre ? »\n\nLe jour le plus creux de la semaine, les clients qui ont cessé de venir, la fête qui arrive. Chaque proposition dit d'où elle vient.\n\nL'outil appelé : propose_campaigns.\n\n— — —\n\n🔗 https://site.foodeatup.com/\n\n📞 Une démo ? 06 14 18 92 25\n🌐 foodeatup.com\n\nSérie « Le Coup de Feu » — saison 8 « Dis-le, c'est fait », épisode 17 sur 30, et dernière saison de la série.\n15 h · Le creux · À l'écran : La Fraise\nModule Marketing · Le motif d'une campagne\n\nJarvis est l'agent vocal de FoodEatUp, le logiciel qui réunit la caisse, le stock, les plannings, l'HACCP et le marketing d'un restaurant au même endroit.\n",
+        "hashtags": [
+          "Shorts",
+          "restaurant",
+          "restaurateur",
+          "foodeatup",
+          "jarvis",
+          "marketing",
+          "donnees",
+          "coupdefeu"
+        ],
+        "motsCles": [
+          "jour creux restaurant",
+          "segment client",
+          "campagne ciblée",
+          "marketing restaurant"
+        ],
+        "cta": "Découvrir FoodEatUp",
+        "titre": "Pourquoi celle-là — 15 h | FoodEatUp"
+      }
+    },
+    "promptVignette": "Photo réaliste, cadrage vertical 9:16. Il est 15 h : lumière d'après-midi, plate et calme, la salle vide. Le chef de l'image de référence — MÊME visage, même barbe, même toque blanche, même veste de cuisine blanche, même tablier blanc au logo FoodEatUp bleu. Ne change ni ses traits, ni sa morphologie, ni sa tenue. Il ne regarde AUCUN écran et ne tient AUCUN téléphone : il parle, simplement, les mains occupées par son travail. Scène : pourquoi celle-là. Une promo au hasard, ça s'appelle une remise. Décor : un comptoir, une ardoise de promotion retournée contre le mur. Le chef occupe les deux tiers droits du cadre, en plan poitrine. Bande crème #FCF9E6 en haut du cadre sur un cinquième de la hauteur, portant UNIQUEMENT le texte « POURQUOI CELLE-LÀ » en typographie arrondie très grasse, bleu marine #0F1A23, centré. En bas à gauche, une pastille arrondie beige #C4B28E, capitales blanches : « EP227 · 15 h ». Aucun autre texte, aucun logo ajouté, pas de filigrane, pas de bordure décorative, aucun écran de logiciel visible.",
+    "higgsfieldPrompt": "Vertical 9:16, 10 seconds, photorealistic, cinematic handheld camera, shallow depth of field, natural light, 4K. NO text overlay, NO subtitles, NO watermark, NO logo. NO visible software interface, NO phone screen.\n\nReference image attached — the FoodEatUp chef. Keep his exact face, beard, white toque, white chef jacket and white FoodEatUp apron. Do not alter his features or his build.\n\nTime of day: 15:00 — flat quiet afternoon light in an empty room.\n\nA bar counter with a promotional chalkboard turned face to the wall, its message hidden. The room is empty. Someone's shadow crosses it and does not stop.\n\nAt 8 seconds the chef from the reference image steps into frame on the right, hands still busy with his work, and speaks a single short sentence toward no one in particular — never to a screen, never to a phone. Hold on his face for the final 2 seconds.\n\nAudio: an almost silent room, one chair scraping, distant traffic. No music.",
+    "scriptHeygen": null,
+    "kit": null,
+    "heygenPrompt": "Avatar : « Chef FoodEatUp » — votre avatar 3D, plan poitrine, regard caméra, fond vert (ou transparent).\nFormat : 1080 × 1920, 9:16, 25 images par seconde.\nVoix : française, masculine, débit posé, ton complice — le chef qui explique, pas celui qui vend.\nDurée visée : 9 secondes — c'est le segment 9,5 s → 18,5 s du master.\n\nScript, à coller tel quel :\n« Une promo au hasard, c'est une remise. Une promo qui sait pourquoi elle existe, c'est un plan. Jarvis me dit d'où vient chaque proposition avant que je décide. »\n\nPrononciation : « Jarvis » se dit à l'anglaise, DJAR-viss — c'est le nom de l'agent vocal, il revient dans les trente épisodes et il doit sonner pareil à chaque fois.\n\nRendu : aucun sous-titre, aucune incrustation, aucun logo, aucun décor de fond. Pas de musique. Le montage s'occupe de tout le reste.",
+    "montage": {
+      "consigne": "Monte EP227 : coupe le clip Higgsfield à 9,5 s, pose l'accroche « Une promo au hasard, ça s'appelle une remise. » à 5,0 s, empile l'avatar HeyGen et la capture d'écran dans la tablette de 18,5 s à 28,5 s, ferme sur la signature et le sting. Sortie 1080×1920, 37,5 s, −14 LUFS.",
+      "segments": [
+        {
+          "titre": "Hook",
+          "debut": 0,
+          "fin": 9.5,
+          "contenu": "Le plan Higgsfield, recadré en 9:16. L'accroche « Une promo au hasard, ça s'appelle une remise. » apparaît à 5,0 s, en bas du cadre."
+        },
+        {
+          "titre": "Transition de marque",
+          "debut": 9.5,
+          "fin": 18.5,
+          "contenu": "L'avatar HeyGen entre par la droite et prend la parole : « Une promo au hasard, c'est une remise. »"
+        },
+        {
+          "titre": "Démo logiciel",
+          "debut": 18.5,
+          "fin": 28.5,
+          "contenu": "La phrase « Jarvis, pourquoi celle-là plutôt qu'une autre ? » s'écrit à l'écran, puis la réponse — le motif de la campagne : le jour creux, le segment concerné, la date visée. L'avatar reste en médaillon en bas à gauche."
+        },
+        {
+          "titre": "Signature",
+          "debut": 28.5,
+          "fin": 32.5,
+          "contenu": "Bandeau crème, la punchline « Une promo qui sait pourquoi, ça s'appelle un plan. », le logo FoodEatUp et le repère de saison « 15 h · Le creux »."
+        },
+        {
+          "titre": "Sting",
+          "debut": 32.5,
+          "fin": 37.5,
+          "contenu": "Le sting de marque, « POURQUOI CELLE-LÀ » en incrustation, puis l'appel à l'action : https://site.foodeatup.com/ et le 06 14 18 92 25."
+        }
+      ],
+      "livrable": "1080 × 1920 · 37,5 s · H.264 · −14 LUFS · master versé dans la bibliothèque RapidoCMS, prêt à être programmé sur les cinq réseaux."
+    },
+    "metier": null,
+    "phase": null,
+    "amplitude": null,
+    "boucle": null,
+    "boucleSlug": null,
+    "grandeBoucle": null,
+    "incident": null,
+    "incidentHeure": null,
+    "incidentQuoi": null,
+    "saumon": null,
+    "story": {
+      "format": "9:16 · 1080 × 1920 · 10 s",
+      "hook": "Une promo au hasard, ça s'appelle une remise",
+      "punchline": "Une promo qui sait pourquoi, ça s'appelle un plan",
+      "url": null
+    },
+    "carrousel": null,
+    "imageFacebook": null,
+    "tutoriel": null
+  },
+  "EP228": {
+    "publications": {
+      "facebook": {
+        "legende": "Un avis sans réponse, c'est six jours en haut de la fiche. Et trente personnes qui l'ont lu avant vous.\n\nOn dit : « Jarvis, réponds à cet avis. »\n\nLa réponse part depuis le même endroit que le reste. L'avis cesse d'attendre une connexion qu'on remettait à demain.\n\n👉 Tout FoodEatUp : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "hashtags": [
+          "restaurant",
+          "restaurateur",
+          "foodeatup",
+          "jarvis",
+          "avis",
+          "ereputation"
+        ],
+        "motsCles": [
+          "répondre aux avis",
+          "e-réputation restaurant",
+          "avis clients",
+          "gestion des avis"
+        ],
+        "cta": "Découvrir FoodEatUp"
+      },
+      "instagram": {
+        "legende": "Un avis sans réponse, c'est six jours en haut de la fiche.\nEt trente personnes qui l'ont lu avant vous.\n\n« Jarvis, réponds à cet avis. »\n\nLa réponse part depuis le même endroit que le reste. L'avis cesse d'attendre une connexion qu'on remettait à demain.\n\n15 h · Le creux — saison 8, « Dis-le, c'est fait ». Une journée, une phrase à la fois.\nTout est expliqué sur notre site — lien en bio.\nUne démo ? 06 14 18 92 25",
+        "hashtags": [
+          "restaurant",
+          "restaurateur",
+          "foodeatup",
+          "jarvis",
+          "avis",
+          "ereputation",
+          "vegefruites",
+          "coupdefeu",
+          "logicielrestaurant",
+          "assistantvocal"
+        ],
+        "motsCles": [
+          "répondre aux avis",
+          "e-réputation restaurant",
+          "avis clients",
+          "gestion des avis"
+        ],
+        "cta": "Tout est en bio"
+      },
+      "tiktok": {
+        "legende": "Un avis sans réponse, c'est six jours en haut de la fiche.\nEt trente personnes qui l'ont lu avant vous.\n\n« Jarvis, réponds à cet avis. » 🎙️\n\nLa réponse part depuis le même endroit que le reste. L'avis cesse d'attendre une connexion qu'on remettait à demain.",
+        "hashtags": [
+          "restaurant",
+          "restaurateur",
+          "foodeatup",
+          "jarvis",
+          "avis"
+        ],
+        "motsCles": [
+          "répondre aux avis",
+          "e-réputation restaurant",
+          "avis clients",
+          "gestion des avis"
+        ],
+        "cta": "Lien en bio"
+      },
+      "linkedin": {
+        "legende": "Un avis sans réponse, c'est six jours en haut de la fiche.\n\nCe qu'on dit : « Jarvis, réponds à cet avis. »\n\nLa réponse part depuis le même endroit que le reste. L'avis cesse d'attendre une connexion qu'on remettait à demain.\n\nL'outil appelé : reply_review.\n\nConcrètement : Les avis remontent et la réponse part de là. Ce qui coûte n'a jamais été l'avis lui-même : c'est le silence à côté.\n\nEn savoir plus : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "hashtags": [
+          "restauration",
+          "foodeatup",
+          "jarvis",
+          "avis",
+          "ereputation"
+        ],
+        "motsCles": [
+          "répondre aux avis",
+          "e-réputation restaurant",
+          "avis clients",
+          "gestion des avis"
+        ],
+        "cta": "Découvrir FoodEatUp"
+      },
+      "youtube": {
+        "legende": "Un avis sans réponse, c'est six jours en haut de la fiche. Et trente personnes qui l'ont lu avant vous.\n\nOn dit : « Jarvis, réponds à cet avis. »\n\nLa réponse part depuis le même endroit que le reste. L'avis cesse d'attendre une connexion qu'on remettait à demain.\n\nL'outil appelé : reply_review.\n\n— — —\n\n🔗 https://site.foodeatup.com/\n\n📞 Une démo ? 06 14 18 92 25\n🌐 foodeatup.com\n\nSérie « Le Coup de Feu » — saison 8 « Dis-le, c'est fait », épisode 18 sur 30, et dernière saison de la série.\n15 h · Le creux · À l'écran : La Fraise\nModule Marketing · Les avis\n\nJarvis est l'agent vocal de FoodEatUp, le logiciel qui réunit la caisse, le stock, les plannings, l'HACCP et le marketing d'un restaurant au même endroit.\n",
+        "hashtags": [
+          "Shorts",
+          "restaurant",
+          "restaurateur",
+          "foodeatup",
+          "jarvis",
+          "avis",
+          "ereputation",
+          "coupdefeu"
+        ],
+        "motsCles": [
+          "répondre aux avis",
+          "e-réputation restaurant",
+          "avis clients",
+          "gestion des avis"
+        ],
+        "cta": "Découvrir FoodEatUp",
+        "titre": "Répondre sans ouvrir la fiche — 15 h | FoodEatUp"
+      }
+    },
+    "promptVignette": "Photo réaliste, cadrage vertical 9:16. Il est 15 h : lumière d'après-midi, plate et calme, la salle vide. Le chef de l'image de référence — MÊME visage, même barbe, même toque blanche, même veste de cuisine blanche, même tablier blanc au logo FoodEatUp bleu. Ne change ni ses traits, ni sa morphologie, ni sa tenue. Il ne regarde AUCUN écran et ne tient AUCUN téléphone : il parle, simplement, les mains occupées par son travail. Scène : répondre sans ouvrir la fiche. Un avis sans réponse, c'est six jours en haut de la fiche. Décor : un téléphone posé face contre table, écran allumé qui s'éteint tout seul. Le chef occupe les deux tiers droits du cadre, en plan poitrine. Bande crème #FCF9E6 en haut du cadre sur un cinquième de la hauteur, portant UNIQUEMENT le texte « RÉPONDRE À L'AVIS » en typographie arrondie très grasse, bleu marine #0F1A23, centré. En bas à gauche, une pastille arrondie beige #C4B28E, capitales blanches : « EP228 · 15 h ». Aucun autre texte, aucun logo ajouté, pas de filigrane, pas de bordure décorative, aucun écran de logiciel visible.",
+    "higgsfieldPrompt": "Vertical 9:16, 10 seconds, photorealistic, cinematic handheld camera, shallow depth of field, natural light, 4K. NO text overlay, NO subtitles, NO watermark, NO logo. NO visible software interface, NO phone screen.\n\nReference image attached — the FoodEatUp chef. Keep his exact face, beard, white toque, white chef jacket and white FoodEatUp apron. Do not alter his features or his build.\n\nTime of day: 15:00 — flat quiet afternoon light in an empty room.\n\nA phone lying face down on a restaurant table, its screen glow fading out on its own. Nobody picks it up. The light dies completely. Hold three seconds.\n\nAt 8 seconds the chef from the reference image steps into frame on the right, hands still busy with his work, and speaks a single short sentence toward no one in particular — never to a screen, never to a phone. Hold on his face for the final 2 seconds.\n\nAudio: an almost silent room, one chair scraping, distant traffic. No music.",
+    "scriptHeygen": null,
+    "kit": null,
+    "heygenPrompt": "Avatar : « Chef FoodEatUp » — votre avatar 3D, plan poitrine, regard caméra, fond vert (ou transparent).\nFormat : 1080 × 1920, 9:16, 25 images par seconde.\nVoix : française, masculine, débit posé, ton complice — le chef qui explique, pas celui qui vend.\nDurée visée : 9 secondes — c'est le segment 9,5 s → 18,5 s du master.\n\nScript, à coller tel quel :\n« Un avis sans réponse reste six jours en haut de la fiche, et trente personnes le lisent avant vous. Je dicte la réponse à Jarvis, elle part tout de suite. »\n\nPrononciation : « Jarvis » se dit à l'anglaise, DJAR-viss — c'est le nom de l'agent vocal, il revient dans les trente épisodes et il doit sonner pareil à chaque fois.\n\nRendu : aucun sous-titre, aucune incrustation, aucun logo, aucun décor de fond. Pas de musique. Le montage s'occupe de tout le reste.",
+    "montage": {
+      "consigne": "Monte EP228 : coupe le clip Higgsfield à 9,5 s, pose l'accroche « Un avis sans réponse, c'est six jours en haut de la fiche. » à 5,0 s, empile l'avatar HeyGen et la capture d'écran dans la tablette de 18,5 s à 28,5 s, ferme sur la signature et le sting. Sortie 1080×1920, 37,5 s, −14 LUFS.",
+      "segments": [
+        {
+          "titre": "Hook",
+          "debut": 0,
+          "fin": 9.5,
+          "contenu": "Le plan Higgsfield, recadré en 9:16. L'accroche « Un avis sans réponse, c'est six jours en haut de la fiche. » apparaît à 5,0 s, en bas du cadre."
+        },
+        {
+          "titre": "Transition de marque",
+          "debut": 9.5,
+          "fin": 18.5,
+          "contenu": "L'avatar HeyGen entre par la droite et prend la parole : « Un avis sans réponse reste six jours en haut de la fiche, et trente personnes le lisent avant vous. »"
+        },
+        {
+          "titre": "Démo logiciel",
+          "debut": 18.5,
+          "fin": 28.5,
+          "contenu": "La phrase « Jarvis, réponds à cet avis. » s'écrit à l'écran, puis la réponse — l'avis remonté, puis la réponse publiée depuis le même écran. L'avatar reste en médaillon en bas à gauche."
+        },
+        {
+          "titre": "Signature",
+          "debut": 28.5,
+          "fin": 32.5,
+          "contenu": "Bandeau crème, la punchline « Et trente personnes qui l'ont lu avant vous. », le logo FoodEatUp et le repère de saison « 15 h · Le creux »."
+        },
+        {
+          "titre": "Sting",
+          "debut": 32.5,
+          "fin": 37.5,
+          "contenu": "Le sting de marque, « RÉPONDRE À L'AVIS » en incrustation, puis l'appel à l'action : https://site.foodeatup.com/ et le 06 14 18 92 25."
+        }
+      ],
+      "livrable": "1080 × 1920 · 37,5 s · H.264 · −14 LUFS · master versé dans la bibliothèque RapidoCMS, prêt à être programmé sur les cinq réseaux."
+    },
+    "metier": null,
+    "phase": null,
+    "amplitude": null,
+    "boucle": null,
+    "boucleSlug": null,
+    "grandeBoucle": null,
+    "incident": null,
+    "incidentHeure": null,
+    "incidentQuoi": null,
+    "saumon": null,
+    "story": {
+      "format": "9:16 · 1080 × 1920 · 10 s",
+      "hook": "Un avis sans réponse, c'est six jours en haut de la fiche",
+      "punchline": "Et trente personnes qui l'ont lu avant vous",
+      "url": null
+    },
+    "carrousel": null,
+    "imageFacebook": null,
+    "tutoriel": null
+  },
+  "EP229": {
+    "publications": {
+      "facebook": {
+        "legende": "Tout est programmé. Tout part. Sauf un. Celui dont l'autorisation a expiré il y a trois semaines.\n\nOn dit : « Jarvis, mes comptes sont bien branchés ? »\n\nLes comptes reliés, réseau par réseau, avec leur état. Celui dont l'autorisation a expiré se voit d'un coup d'œil — au lieu de se découvrir au moment de publier.\n\n👉 Tout FoodEatUp : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "hashtags": [
+          "restaurant",
+          "restaurateur",
+          "foodeatup",
+          "jarvis",
+          "rapidocms",
+          "reseaux"
+        ],
+        "motsCles": [
+          "comptes sociaux reliés",
+          "publication réseaux sociaux",
+          "RapidoCMS",
+          "gestion des réseaux"
+        ],
+        "cta": "Découvrir FoodEatUp"
+      },
+      "instagram": {
+        "legende": "Tout est programmé. Tout part. Sauf un.\nCelui dont l'autorisation a expiré il y a trois semaines.\n\n« Jarvis, mes comptes sont bien branchés ? »\n\nLes comptes reliés, réseau par réseau, avec leur état. Celui dont l'autorisation a expiré se voit d'un coup d'œil — au lieu de se découvrir au moment de publier.\n\n15 h · Le creux — saison 8, « Dis-le, c'est fait ». Une journée, une phrase à la fois.\nTout est expliqué sur notre site — lien en bio.\nUne démo ? 06 14 18 92 25",
+        "hashtags": [
+          "restaurant",
+          "restaurateur",
+          "foodeatup",
+          "jarvis",
+          "rapidocms",
+          "reseaux",
+          "vegefruites",
+          "coupdefeu",
+          "logicielrestaurant",
+          "assistantvocal"
+        ],
+        "motsCles": [
+          "comptes sociaux reliés",
+          "publication réseaux sociaux",
+          "RapidoCMS",
+          "gestion des réseaux"
+        ],
+        "cta": "Tout est en bio"
+      },
+      "tiktok": {
+        "legende": "Tout est programmé. Tout part. Sauf un.\nCelui dont l'autorisation a expiré il y a trois semaines.\n\n« Jarvis, mes comptes sont bien branchés ? » 🎙️\n\nLes comptes reliés, réseau par réseau, avec leur état. Celui dont l'autorisation a expiré se voit d'un coup d'œil — au lieu de se découvrir au moment de publier.",
+        "hashtags": [
+          "restaurant",
+          "restaurateur",
+          "foodeatup",
+          "jarvis",
+          "rapidocms"
+        ],
+        "motsCles": [
+          "comptes sociaux reliés",
+          "publication réseaux sociaux",
+          "RapidoCMS",
+          "gestion des réseaux"
+        ],
+        "cta": "Lien en bio"
+      },
+      "linkedin": {
+        "legende": "Tout est programmé. Tout part. Sauf un.\n\nCe qu'on dit : « Jarvis, mes comptes sont bien branchés ? »\n\nLes comptes reliés, réseau par réseau, avec leur état. Celui dont l'autorisation a expiré se voit d'un coup d'œil — au lieu de se découvrir au moment de publier.\n\nL'outil appelé : list_connected_accounts.\n\nConcrètement : L'état de chaque compte relié se demande en une phrase. Une autorisation qui a expiré ne se découvre plus le jour d'une publication ratée.\n\nEn savoir plus : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "hashtags": [
+          "restauration",
+          "foodeatup",
+          "jarvis",
+          "rapidocms",
+          "reseaux"
+        ],
+        "motsCles": [
+          "comptes sociaux reliés",
+          "publication réseaux sociaux",
+          "RapidoCMS",
+          "gestion des réseaux"
+        ],
+        "cta": "Découvrir FoodEatUp"
+      },
+      "youtube": {
+        "legende": "Tout est programmé. Tout part. Sauf un. Celui dont l'autorisation a expiré il y a trois semaines.\n\nOn dit : « Jarvis, mes comptes sont bien branchés ? »\n\nLes comptes reliés, réseau par réseau, avec leur état. Celui dont l'autorisation a expiré se voit d'un coup d'œil — au lieu de se découvrir au moment de publier.\n\nL'outil appelé : list_connected_accounts.\n\n— — —\n\n🔗 https://site.foodeatup.com/\n\n📞 Une démo ? 06 14 18 92 25\n🌐 foodeatup.com\n\nSérie « Le Coup de Feu » — saison 8 « Dis-le, c'est fait », épisode 19 sur 30, et dernière saison de la série.\n15 h · Le creux · À l'écran : Le Brocoli\nModule Marketing · Les comptes reliés\n\nJarvis est l'agent vocal de FoodEatUp, le logiciel qui réunit la caisse, le stock, les plannings, l'HACCP et le marketing d'un restaurant au même endroit.\n",
+        "hashtags": [
+          "Shorts",
+          "restaurant",
+          "restaurateur",
+          "foodeatup",
+          "jarvis",
+          "rapidocms",
+          "reseaux",
+          "coupdefeu"
+        ],
+        "motsCles": [
+          "comptes sociaux reliés",
+          "publication réseaux sociaux",
+          "RapidoCMS",
+          "gestion des réseaux"
+        ],
+        "cta": "Découvrir FoodEatUp",
+        "titre": "Le compte expiré — 15 h | FoodEatUp"
+      }
+    },
+    "promptVignette": "Photo réaliste, cadrage vertical 9:16. Il est 15 h : lumière d'après-midi, plate et calme, la salle vide. Le chef de l'image de référence — MÊME visage, même barbe, même toque blanche, même veste de cuisine blanche, même tablier blanc au logo FoodEatUp bleu. Ne change ni ses traits, ni sa morphologie, ni sa tenue. Il ne regarde AUCUN écran et ne tient AUCUN téléphone : il parle, simplement, les mains occupées par son travail. Scène : le compte expiré. Tout est programmé. Tout part. Sauf un. Décor : quatre icônes de réseaux alignées sur un écran, l'une d'elles grisée. Le chef occupe les deux tiers droits du cadre, en plan poitrine. Bande crème #FCF9E6 en haut du cadre sur un cinquième de la hauteur, portant UNIQUEMENT le texte « COMPTE EXPIRÉ » en typographie arrondie très grasse, bleu marine #0F1A23, centré. En bas à gauche, une pastille arrondie beige #C4B28E, capitales blanches : « EP229 · 15 h ». Aucun autre texte, aucun logo ajouté, pas de filigrane, pas de bordure décorative, aucun écran de logiciel visible.",
+    "higgsfieldPrompt": "Vertical 9:16, 10 seconds, photorealistic, cinematic handheld camera, shallow depth of field, natural light, 4K. NO text overlay, NO subtitles, NO watermark, NO logo. NO visible software interface, NO phone screen.\n\nReference image attached — the FoodEatUp chef. Keep his exact face, beard, white toque, white chef jacket and white FoodEatUp apron. Do not alter his features or his build.\n\nTime of day: 15:00 — flat quiet afternoon light in an empty room.\n\nFour social network icons in a row on a dark screen, one of them greyed out and dimmed. Macro shot, slight screen flicker. The dead one does not light up.\n\nAt 8 seconds the chef from the reference image steps into frame on the right, hands still busy with his work, and speaks a single short sentence toward no one in particular — never to a screen, never to a phone. Hold on his face for the final 2 seconds.\n\nAudio: an almost silent room, one chair scraping, distant traffic. No music.",
+    "scriptHeygen": null,
+    "kit": null,
+    "heygenPrompt": "Avatar : « Chef FoodEatUp » — votre avatar 3D, plan poitrine, regard caméra, fond vert (ou transparent).\nFormat : 1080 × 1920, 9:16, 25 images par seconde.\nVoix : française, masculine, débit posé, ton complice — le chef qui explique, pas celui qui vend.\nDurée visée : 9 secondes — c'est le segment 9,5 s → 18,5 s du master.\n\nScript, à coller tel quel :\n« Tout est programmé, tout part, sauf un compte dont l'autorisation a expiré il y a trois semaines. Je demande à Jarvis l'état de mes comptes, et je le vois avant de publier. »\n\nPrononciation : « Jarvis » se dit à l'anglaise, DJAR-viss — c'est le nom de l'agent vocal, il revient dans les trente épisodes et il doit sonner pareil à chaque fois.\n\nRendu : aucun sous-titre, aucune incrustation, aucun logo, aucun décor de fond. Pas de musique. Le montage s'occupe de tout le reste.",
+    "montage": {
+      "consigne": "Monte EP229 : coupe le clip Higgsfield à 9,5 s, pose l'accroche « Tout est programmé. Tout part. Sauf un. » à 5,0 s, empile l'avatar HeyGen et la capture d'écran dans la tablette de 18,5 s à 28,5 s, ferme sur la signature et le sting. Sortie 1080×1920, 37,5 s, −14 LUFS.",
+      "segments": [
+        {
+          "titre": "Hook",
+          "debut": 0,
+          "fin": 9.5,
+          "contenu": "Le plan Higgsfield, recadré en 9:16. L'accroche « Tout est programmé. Tout part. Sauf un. » apparaît à 5,0 s, en bas du cadre."
+        },
+        {
+          "titre": "Transition de marque",
+          "debut": 9.5,
+          "fin": 18.5,
+          "contenu": "L'avatar HeyGen entre par la droite et prend la parole : « Tout est programmé, tout part, sauf un compte dont l'autorisation a expiré il y a trois semaines. »"
+        },
+        {
+          "titre": "Démo logiciel",
+          "debut": 18.5,
+          "fin": 28.5,
+          "contenu": "La phrase « Jarvis, mes comptes sont bien branchés ? » s'écrit à l'écran, puis la réponse — la liste des comptes reliés par réseau, avec leur statut actif ou expiré. L'avatar reste en médaillon en bas à gauche."
+        },
+        {
+          "titre": "Signature",
+          "debut": 28.5,
+          "fin": 32.5,
+          "contenu": "Bandeau crème, la punchline « Celui dont l'autorisation a expiré il y a trois semaines. », le logo FoodEatUp et le repère de saison « 15 h · Le creux »."
+        },
+        {
+          "titre": "Sting",
+          "debut": 32.5,
+          "fin": 37.5,
+          "contenu": "Le sting de marque, « COMPTE EXPIRÉ » en incrustation, puis l'appel à l'action : https://site.foodeatup.com/ et le 06 14 18 92 25."
+        }
+      ],
+      "livrable": "1080 × 1920 · 37,5 s · H.264 · −14 LUFS · master versé dans la bibliothèque RapidoCMS, prêt à être programmé sur les cinq réseaux."
+    },
+    "metier": null,
+    "phase": null,
+    "amplitude": null,
+    "boucle": null,
+    "boucleSlug": null,
+    "grandeBoucle": null,
+    "incident": null,
+    "incidentHeure": null,
+    "incidentQuoi": null,
+    "saumon": null,
+    "story": {
+      "format": "9:16 · 1080 × 1920 · 10 s",
+      "hook": "Tout est programmé. Tout part. Sauf un",
+      "punchline": "Celui dont l'autorisation a expiré il y a trois semaines",
+      "url": null
+    },
+    "carrousel": null,
+    "imageFacebook": null,
+    "tutoriel": null
+  },
+  "EP230": {
+    "publications": {
+      "facebook": {
+        "legende": "Publier à midi, c'est être libre à midi. Un restaurateur n'est jamais libre à midi.\n\nOn dit : « Jarvis, programme-le jeudi midi. »\n\nLe brouillon rejoint la file avec son heure et son compte. Personne ne se lève à midi pour appuyer sur un bouton.\n\n👉 Tout FoodEatUp : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "hashtags": [
+          "restaurant",
+          "restaurateur",
+          "foodeatup",
+          "jarvis",
+          "rapidocms",
+          "programmation"
+        ],
+        "motsCles": [
+          "programmer un post",
+          "planification réseaux sociaux",
+          "RapidoCMS",
+          "publication automatique"
+        ],
+        "cta": "Découvrir FoodEatUp"
+      },
+      "instagram": {
+        "legende": "Publier à midi, c'est être libre à midi.\nUn restaurateur n'est jamais libre à midi.\n\n« Jarvis, programme-le jeudi midi. »\n\nLe brouillon rejoint la file avec son heure et son compte. Personne ne se lève à midi pour appuyer sur un bouton.\n\n15 h · Le creux — saison 8, « Dis-le, c'est fait ». Une journée, une phrase à la fois.\nTout est expliqué sur notre site — lien en bio.\nUne démo ? 06 14 18 92 25",
+        "hashtags": [
+          "restaurant",
+          "restaurateur",
+          "foodeatup",
+          "jarvis",
+          "rapidocms",
+          "programmation",
+          "vegefruites",
+          "coupdefeu",
+          "logicielrestaurant",
+          "assistantvocal"
+        ],
+        "motsCles": [
+          "programmer un post",
+          "planification réseaux sociaux",
+          "RapidoCMS",
+          "publication automatique"
+        ],
+        "cta": "Tout est en bio"
+      },
+      "tiktok": {
+        "legende": "Publier à midi, c'est être libre à midi.\nUn restaurateur n'est jamais libre à midi.\n\n« Jarvis, programme-le jeudi midi. » 🎙️\n\nLe brouillon rejoint la file avec son heure et son compte. Personne ne se lève à midi pour appuyer sur un bouton.",
+        "hashtags": [
+          "restaurant",
+          "restaurateur",
+          "foodeatup",
+          "jarvis",
+          "rapidocms"
+        ],
+        "motsCles": [
+          "programmer un post",
+          "planification réseaux sociaux",
+          "RapidoCMS",
+          "publication automatique"
+        ],
+        "cta": "Lien en bio"
+      },
+      "linkedin": {
+        "legende": "Publier à midi, c'est être libre à midi.\n\nCe qu'on dit : « Jarvis, programme-le jeudi midi. »\n\nLe brouillon rejoint la file avec son heure et son compte. Personne ne se lève à midi pour appuyer sur un bouton.\n\nL'outil appelé : schedule_draft_tool.\n\nConcrètement : Le post part au bon moment sans qu'on soit devant l'écran. C'est le créneau qui est choisi, pas la disponibilité.\n\nEn savoir plus : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "hashtags": [
+          "restauration",
+          "foodeatup",
+          "jarvis",
+          "rapidocms",
+          "programmation"
+        ],
+        "motsCles": [
+          "programmer un post",
+          "planification réseaux sociaux",
+          "RapidoCMS",
+          "publication automatique"
+        ],
+        "cta": "Découvrir FoodEatUp"
+      },
+      "youtube": {
+        "legende": "Publier à midi, c'est être libre à midi. Un restaurateur n'est jamais libre à midi.\n\nOn dit : « Jarvis, programme-le jeudi midi. »\n\nLe brouillon rejoint la file avec son heure et son compte. Personne ne se lève à midi pour appuyer sur un bouton.\n\nL'outil appelé : schedule_draft_tool.\n\n— — —\n\n🔗 https://site.foodeatup.com/\n\n📞 Une démo ? 06 14 18 92 25\n🌐 foodeatup.com\n\nSérie « Le Coup de Feu » — saison 8 « Dis-le, c'est fait », épisode 20 sur 30, et dernière saison de la série.\n15 h · Le creux · À l'écran : La Betterave\nModule Marketing · La programmation\n\nJarvis est l'agent vocal de FoodEatUp, le logiciel qui réunit la caisse, le stock, les plannings, l'HACCP et le marketing d'un restaurant au même endroit.\n",
+        "hashtags": [
+          "Shorts",
+          "restaurant",
+          "restaurateur",
+          "foodeatup",
+          "jarvis",
+          "rapidocms",
+          "programmation",
+          "coupdefeu"
+        ],
+        "motsCles": [
+          "programmer un post",
+          "planification réseaux sociaux",
+          "RapidoCMS",
+          "publication automatique"
+        ],
+        "cta": "Découvrir FoodEatUp",
+        "titre": "Programmé, pas publié — 15 h | FoodEatUp"
+      }
+    },
+    "promptVignette": "Photo réaliste, cadrage vertical 9:16. Il est 15 h : lumière d'après-midi, plate et calme, la salle vide. Le chef de l'image de référence — MÊME visage, même barbe, même toque blanche, même veste de cuisine blanche, même tablier blanc au logo FoodEatUp bleu. Ne change ni ses traits, ni sa morphologie, ni sa tenue. Il ne regarde AUCUN écran et ne tient AUCUN téléphone : il parle, simplement, les mains occupées par son travail. Scène : programmé, pas publié. Publier à midi, c'est être libre à midi. Décor : une horloge de cuisine à midi pile, une salle pleine derrière, floue. Le chef occupe les deux tiers droits du cadre, en plan poitrine. Bande crème #FCF9E6 en haut du cadre sur un cinquième de la hauteur, portant UNIQUEMENT le texte « PROGRAMME JEUDI » en typographie arrondie très grasse, bleu marine #0F1A23, centré. En bas à gauche, une pastille arrondie beige #C4B28E, capitales blanches : « EP230 · 15 h ». Aucun autre texte, aucun logo ajouté, pas de filigrane, pas de bordure décorative, aucun écran de logiciel visible.",
+    "higgsfieldPrompt": "Vertical 9:16, 10 seconds, photorealistic, cinematic handheld camera, shallow depth of field, natural light, 4K. NO text overlay, NO subtitles, NO watermark, NO logo. NO visible software interface, NO phone screen.\n\nReference image attached — the FoodEatUp chef. Keep his exact face, beard, white toque, white chef jacket and white FoodEatUp apron. Do not alter his features or his build.\n\nTime of day: 15:00 — flat quiet afternoon light in an empty room.\n\nA kitchen wall clock reading exactly noon, a packed dining room blurred far behind it. The second hand sweeps. Nobody is looking at the clock.\n\nAt 8 seconds the chef from the reference image steps into frame on the right, hands still busy with his work, and speaks a single short sentence toward no one in particular — never to a screen, never to a phone. Hold on his face for the final 2 seconds.\n\nAudio: an almost silent room, one chair scraping, distant traffic. No music.",
+    "scriptHeygen": null,
+    "kit": null,
+    "heygenPrompt": "Avatar : « Chef FoodEatUp » — votre avatar 3D, plan poitrine, regard caméra, fond vert (ou transparent).\nFormat : 1080 × 1920, 9:16, 25 images par seconde.\nVoix : française, masculine, débit posé, ton complice — le chef qui explique, pas celui qui vend.\nDurée visée : 9 secondes — c'est le segment 9,5 s → 18,5 s du master.\n\nScript, à coller tel quel :\n« Publier à midi, ça veut dire être libre à midi. Un restaurateur n'est jamais libre à midi. Je dis l'heure à Jarvis, il programme, et le post part sans moi. »\n\nPrononciation : « Jarvis » se dit à l'anglaise, DJAR-viss — c'est le nom de l'agent vocal, il revient dans les trente épisodes et il doit sonner pareil à chaque fois.\n\nRendu : aucun sous-titre, aucune incrustation, aucun logo, aucun décor de fond. Pas de musique. Le montage s'occupe de tout le reste.",
+    "montage": {
+      "consigne": "Monte EP230 : coupe le clip Higgsfield à 9,5 s, pose l'accroche « Publier à midi, c'est être libre à midi. » à 5,0 s, empile l'avatar HeyGen et la capture d'écran dans la tablette de 18,5 s à 28,5 s, ferme sur la signature et le sting. Sortie 1080×1920, 37,5 s, −14 LUFS.",
+      "segments": [
+        {
+          "titre": "Hook",
+          "debut": 0,
+          "fin": 9.5,
+          "contenu": "Le plan Higgsfield, recadré en 9:16. L'accroche « Publier à midi, c'est être libre à midi. » apparaît à 5,0 s, en bas du cadre."
+        },
+        {
+          "titre": "Transition de marque",
+          "debut": 9.5,
+          "fin": 18.5,
+          "contenu": "L'avatar HeyGen entre par la droite et prend la parole : « Publier à midi, ça veut dire être libre à midi. »"
+        },
+        {
+          "titre": "Démo logiciel",
+          "debut": 18.5,
+          "fin": 28.5,
+          "contenu": "La phrase « Jarvis, programme-le jeudi midi. » s'écrit à l'écran, puis la réponse — le brouillon programmé : le compte, la date, l'heure, la file d'attente. L'avatar reste en médaillon en bas à gauche."
+        },
+        {
+          "titre": "Signature",
+          "debut": 28.5,
+          "fin": 32.5,
+          "contenu": "Bandeau crème, la punchline « Un restaurateur n'est jamais libre à midi. », le logo FoodEatUp et le repère de saison « 15 h · Le creux »."
+        },
+        {
+          "titre": "Sting",
+          "debut": 32.5,
+          "fin": 37.5,
+          "contenu": "Le sting de marque, « PROGRAMME JEUDI » en incrustation, puis l'appel à l'action : https://site.foodeatup.com/ et le 06 14 18 92 25."
+        }
+      ],
+      "livrable": "1080 × 1920 · 37,5 s · H.264 · −14 LUFS · master versé dans la bibliothèque RapidoCMS, prêt à être programmé sur les cinq réseaux."
+    },
+    "metier": null,
+    "phase": null,
+    "amplitude": null,
+    "boucle": null,
+    "boucleSlug": null,
+    "grandeBoucle": null,
+    "incident": null,
+    "incidentHeure": null,
+    "incidentQuoi": null,
+    "saumon": null,
+    "story": {
+      "format": "9:16 · 1080 × 1920 · 10 s",
+      "hook": "Publier à midi, c'est être libre à midi",
+      "punchline": "Un restaurateur n'est jamais libre à midi",
+      "url": null
+    },
+    "carrousel": null,
+    "imageFacebook": null,
+    "tutoriel": null
+  },
+  "EP231": {
+    "publications": {
+      "facebook": {
+        "legende": "Le suivant, c'est celui qui attend depuis le plus longtemps. Ou celui qui parle le plus fort. Ça dépend des soirs.\n\nOn dit : « Jarvis, qui attend dehors ? »\n\nLa liste d'attente, dans l'ordre, avec le nombre de couverts de chacun. La table qui se libère va au suivant, pas au plus insistant.\n\n👉 Tout FoodEatUp : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "hashtags": [
+          "restaurant",
+          "restaurateur",
+          "foodeatup",
+          "jarvis",
+          "reservation",
+          "salle"
+        ],
+        "motsCles": [
+          "liste d'attente restaurant",
+          "file d'attente",
+          "gestion de salle",
+          "plan de salle"
+        ],
+        "cta": "Découvrir FoodEatUp"
+      },
+      "instagram": {
+        "legende": "Le suivant, c'est celui qui attend depuis le plus longtemps.\nOu celui qui parle le plus fort. Ça dépend des soirs.\n\n« Jarvis, qui attend dehors ? »\n\nLa liste d'attente, dans l'ordre, avec le nombre de couverts de chacun. La table qui se libère va au suivant, pas au plus insistant.\n\n19 h · Le service du soir — saison 8, « Dis-le, c'est fait ». Une journée, une phrase à la fois.\nTout est expliqué sur notre site — lien en bio.\nUne démo ? 06 14 18 92 25",
+        "hashtags": [
+          "restaurant",
+          "restaurateur",
+          "foodeatup",
+          "jarvis",
+          "reservation",
+          "salle",
+          "vegefruites",
+          "coupdefeu",
+          "logicielrestaurant",
+          "assistantvocal"
+        ],
+        "motsCles": [
+          "liste d'attente restaurant",
+          "file d'attente",
+          "gestion de salle",
+          "plan de salle"
+        ],
+        "cta": "Tout est en bio"
+      },
+      "tiktok": {
+        "legende": "Le suivant, c'est celui qui attend depuis le plus longtemps.\nOu celui qui parle le plus fort. Ça dépend des soirs.\n\n« Jarvis, qui attend dehors ? » 🎙️\n\nLa liste d'attente, dans l'ordre, avec le nombre de couverts de chacun. La table qui se libère va au suivant, pas au plus insistant.",
+        "hashtags": [
+          "restaurant",
+          "restaurateur",
+          "foodeatup",
+          "jarvis",
+          "reservation"
+        ],
+        "motsCles": [
+          "liste d'attente restaurant",
+          "file d'attente",
+          "gestion de salle",
+          "plan de salle"
+        ],
+        "cta": "Lien en bio"
+      },
+      "linkedin": {
+        "legende": "Le suivant, c'est celui qui attend depuis le plus longtemps.\n\nCe qu'on dit : « Jarvis, qui attend dehors ? »\n\nLa liste d'attente, dans l'ordre, avec le nombre de couverts de chacun. La table qui se libère va au suivant, pas au plus insistant.\n\nL'outil appelé : list_waitlist.\n\nConcrètement : La file existe vraiment : un ordre, des noms, des couverts. La table qui se libère revient à qui de droit, sans discussion sur le trottoir.\n\nEn savoir plus : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "hashtags": [
+          "restauration",
+          "foodeatup",
+          "jarvis",
+          "reservation",
+          "salle"
+        ],
+        "motsCles": [
+          "liste d'attente restaurant",
+          "file d'attente",
+          "gestion de salle",
+          "plan de salle"
+        ],
+        "cta": "Découvrir FoodEatUp"
+      },
+      "youtube": {
+        "legende": "Le suivant, c'est celui qui attend depuis le plus longtemps. Ou celui qui parle le plus fort. Ça dépend des soirs.\n\nOn dit : « Jarvis, qui attend dehors ? »\n\nLa liste d'attente, dans l'ordre, avec le nombre de couverts de chacun. La table qui se libère va au suivant, pas au plus insistant.\n\nL'outil appelé : list_waitlist.\n\n— — —\n\n🔗 https://site.foodeatup.com/\n\n📞 Une démo ? 06 14 18 92 25\n🌐 foodeatup.com\n\nSérie « Le Coup de Feu » — saison 8 « Dis-le, c'est fait », épisode 21 sur 30, et dernière saison de la série.\n19 h · Le service du soir · À l'écran : Le Navet\nModule Réservation · La liste d'attente\n\nJarvis est l'agent vocal de FoodEatUp, le logiciel qui réunit la caisse, le stock, les plannings, l'HACCP et le marketing d'un restaurant au même endroit.\n",
+        "hashtags": [
+          "Shorts",
+          "restaurant",
+          "restaurateur",
+          "foodeatup",
+          "jarvis",
+          "reservation",
+          "salle",
+          "coupdefeu"
+        ],
+        "motsCles": [
+          "liste d'attente restaurant",
+          "file d'attente",
+          "gestion de salle",
+          "plan de salle"
+        ],
+        "cta": "Découvrir FoodEatUp",
+        "titre": "Le trottoir qui rentre — 19 h | FoodEatUp"
+      }
+    },
+    "promptVignette": "Photo réaliste, cadrage vertical 9:16. Il est 19 h : lumière du soir, lampes allumées, reflets sur les verres. Le chef de l'image de référence — MÊME visage, même barbe, même toque blanche, même veste de cuisine blanche, même tablier blanc au logo FoodEatUp bleu. Ne change ni ses traits, ni sa morphologie, ni sa tenue. Il ne regarde AUCUN écran et ne tient AUCUN téléphone : il parle, simplement, les mains occupées par son travail. Scène : le trottoir qui rentre. Le suivant, c'est celui qui attend depuis le plus longtemps. Décor : l'entrée d'un restaurant le soir, une file sur le trottoir, la vitre embuée. Le chef occupe les deux tiers droits du cadre, en plan poitrine. Bande crème #FCF9E6 en haut du cadre sur un cinquième de la hauteur, portant UNIQUEMENT le texte « QUI ATTEND DEHORS » en typographie arrondie très grasse, bleu marine #0F1A23, centré. En bas à gauche, une pastille arrondie beige #C4B28E, capitales blanches : « EP231 · 19 h ». Aucun autre texte, aucun logo ajouté, pas de filigrane, pas de bordure décorative, aucun écran de logiciel visible.",
+    "higgsfieldPrompt": "Vertical 9:16, 10 seconds, photorealistic, cinematic handheld camera, shallow depth of field, natural light, 4K. NO text overlay, NO subtitles, NO watermark, NO logo. NO visible software interface, NO phone screen.\n\nReference image attached — the FoodEatUp chef. Keep his exact face, beard, white toque, white chef jacket and white FoodEatUp apron. Do not alter his features or his build.\n\nTime of day: 19:00 — evening light, lamps on, reflections on glassware.\n\nA restaurant entrance at night, a queue on the pavement behind fogged glass. Faces blur through the condensation. Inside, a host stand with nothing on it.\n\nAt 8 seconds the chef from the reference image steps into frame on the right, hands still busy with his work, and speaks a single short sentence toward no one in particular — never to a screen, never to a phone. Hold on his face for the final 2 seconds.\n\nAudio: evening dining-room ambience, cutlery, low conversation. No music.",
+    "scriptHeygen": null,
+    "kit": null,
+    "heygenPrompt": "Avatar : « Chef FoodEatUp » — votre avatar 3D, plan poitrine, regard caméra, fond vert (ou transparent).\nFormat : 1080 × 1920, 9:16, 25 images par seconde.\nVoix : française, masculine, débit posé, ton complice — le chef qui explique, pas celui qui vend.\nDurée visée : 9 secondes — c'est le segment 9,5 s → 18,5 s du master.\n\nScript, à coller tel quel :\n« Le suivant, c'est censé être celui qui attend depuis le plus longtemps. En vrai, c'est souvent celui qui parle le plus fort. Je demande la file à Jarvis, et l'ordre est le vrai. »\n\nPrononciation : « Jarvis » se dit à l'anglaise, DJAR-viss — c'est le nom de l'agent vocal, il revient dans les trente épisodes et il doit sonner pareil à chaque fois.\n\nRendu : aucun sous-titre, aucune incrustation, aucun logo, aucun décor de fond. Pas de musique. Le montage s'occupe de tout le reste.",
+    "montage": {
+      "consigne": "Monte EP231 : coupe le clip Higgsfield à 9,5 s, pose l'accroche « Le suivant, c'est celui qui attend depuis le plus longtemps. » à 5,0 s, empile l'avatar HeyGen et la capture d'écran dans la tablette de 18,5 s à 28,5 s, ferme sur la signature et le sting. Sortie 1080×1920, 37,5 s, −14 LUFS.",
+      "segments": [
+        {
+          "titre": "Hook",
+          "debut": 0,
+          "fin": 9.5,
+          "contenu": "Le plan Higgsfield, recadré en 9:16. L'accroche « Le suivant, c'est celui qui attend depuis le plus longtemps. » apparaît à 5,0 s, en bas du cadre."
+        },
+        {
+          "titre": "Transition de marque",
+          "debut": 9.5,
+          "fin": 18.5,
+          "contenu": "L'avatar HeyGen entre par la droite et prend la parole : « Le suivant, c'est censé être celui qui attend depuis le plus longtemps. »"
+        },
+        {
+          "titre": "Démo logiciel",
+          "debut": 18.5,
+          "fin": 28.5,
+          "contenu": "La phrase « Jarvis, qui attend dehors ? » s'écrit à l'écran, puis la réponse — la liste d'attente dans l'ordre, avec les couverts, puis le suivant appelé. L'avatar reste en médaillon en bas à gauche."
+        },
+        {
+          "titre": "Signature",
+          "debut": 28.5,
+          "fin": 32.5,
+          "contenu": "Bandeau crème, la punchline « Ou celui qui parle le plus fort. Ça dépend des soirs. », le logo FoodEatUp et le repère de saison « 19 h · Le service du soir »."
+        },
+        {
+          "titre": "Sting",
+          "debut": 32.5,
+          "fin": 37.5,
+          "contenu": "Le sting de marque, « QUI ATTEND DEHORS » en incrustation, puis l'appel à l'action : https://site.foodeatup.com/ et le 06 14 18 92 25."
+        }
+      ],
+      "livrable": "1080 × 1920 · 37,5 s · H.264 · −14 LUFS · master versé dans la bibliothèque RapidoCMS, prêt à être programmé sur les cinq réseaux."
+    },
+    "metier": null,
+    "phase": null,
+    "amplitude": null,
+    "boucle": null,
+    "boucleSlug": null,
+    "grandeBoucle": null,
+    "incident": null,
+    "incidentHeure": null,
+    "incidentQuoi": null,
+    "saumon": null,
+    "story": {
+      "format": "9:16 · 1080 × 1920 · 10 s",
+      "hook": "Le suivant, c'est celui qui attend depuis le plus longtemps",
+      "punchline": "Ou celui qui parle le plus fort. Ça dépend des soirs",
+      "url": null
+    },
+    "carrousel": null,
+    "imageFacebook": null,
+    "tutoriel": null
+  },
+  "EP232": {
+    "publications": {
+      "facebook": {
+        "legende": "Il l'a dit à la réservation. Et à l'accueil. Au dessert, la cuisine ne le sait toujours pas.\n\nOn dit : « Jarvis, c'est un anniversaire sur la 8. »\n\nLa note rejoint la table et la suit jusqu'en cuisine. Au dessert, la bougie part sans que personne n'ait eu à y repenser.\n\n👉 Tout FoodEatUp : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "hashtags": [
+          "restaurant",
+          "restaurateur",
+          "foodeatup",
+          "jarvis",
+          "service",
+          "anniversaire"
+        ],
+        "motsCles": [
+          "note de service",
+          "transmission cuisine",
+          "personnaliser l'accueil",
+          "réservation restaurant"
+        ],
+        "cta": "Découvrir FoodEatUp"
+      },
+      "instagram": {
+        "legende": "Il l'a dit à la réservation. Et à l'accueil.\nAu dessert, la cuisine ne le sait toujours pas.\n\n« Jarvis, c'est un anniversaire sur la 8. »\n\nLa note rejoint la table et la suit jusqu'en cuisine. Au dessert, la bougie part sans que personne n'ait eu à y repenser.\n\n19 h · Le service du soir — saison 8, « Dis-le, c'est fait ». Une journée, une phrase à la fois.\nTout est expliqué sur notre site — lien en bio.\nUne démo ? 06 14 18 92 25",
+        "hashtags": [
+          "restaurant",
+          "restaurateur",
+          "foodeatup",
+          "jarvis",
+          "service",
+          "anniversaire",
+          "vegefruites",
+          "coupdefeu",
+          "logicielrestaurant",
+          "assistantvocal"
+        ],
+        "motsCles": [
+          "note de service",
+          "transmission cuisine",
+          "personnaliser l'accueil",
+          "réservation restaurant"
+        ],
+        "cta": "Tout est en bio"
+      },
+      "tiktok": {
+        "legende": "Il l'a dit à la réservation. Et à l'accueil.\nAu dessert, la cuisine ne le sait toujours pas.\n\n« Jarvis, c'est un anniversaire sur la 8. » 🎙️\n\nLa note rejoint la table et la suit jusqu'en cuisine. Au dessert, la bougie part sans que personne n'ait eu à y repenser.",
+        "hashtags": [
+          "restaurant",
+          "restaurateur",
+          "foodeatup",
+          "jarvis",
+          "service"
+        ],
+        "motsCles": [
+          "note de service",
+          "transmission cuisine",
+          "personnaliser l'accueil",
+          "réservation restaurant"
+        ],
+        "cta": "Lien en bio"
+      },
+      "linkedin": {
+        "legende": "Il l'a dit à la réservation. Et à l'accueil.\n\nCe qu'on dit : « Jarvis, c'est un anniversaire sur la 8. »\n\nLa note rejoint la table et la suit jusqu'en cuisine. Au dessert, la bougie part sans que personne n'ait eu à y repenser.\n\nL'outil appelé : get_order.\n\nConcrètement : Une intention dite en salle arrive en cuisine. C'est toute la différence entre un service correct et un service dont on se souvient.\n\nEn savoir plus : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "hashtags": [
+          "restauration",
+          "foodeatup",
+          "jarvis",
+          "service",
+          "anniversaire"
+        ],
+        "motsCles": [
+          "note de service",
+          "transmission cuisine",
+          "personnaliser l'accueil",
+          "réservation restaurant"
+        ],
+        "cta": "Découvrir FoodEatUp"
+      },
+      "youtube": {
+        "legende": "Il l'a dit à la réservation. Et à l'accueil. Au dessert, la cuisine ne le sait toujours pas.\n\nOn dit : « Jarvis, c'est un anniversaire sur la 8. »\n\nLa note rejoint la table et la suit jusqu'en cuisine. Au dessert, la bougie part sans que personne n'ait eu à y repenser.\n\nL'outil appelé : get_order.\n\n— — —\n\n🔗 https://site.foodeatup.com/\n\n📞 Une démo ? 06 14 18 92 25\n🌐 foodeatup.com\n\nSérie « Le Coup de Feu » — saison 8 « Dis-le, c'est fait », épisode 22 sur 30, et dernière saison de la série.\n19 h · Le service du soir · À l'écran : La Pomme de Terre\nModule Réservation · La note jusqu'au passe\n\nJarvis est l'agent vocal de FoodEatUp, le logiciel qui réunit la caisse, le stock, les plannings, l'HACCP et le marketing d'un restaurant au même endroit.\n",
+        "hashtags": [
+          "Shorts",
+          "restaurant",
+          "restaurateur",
+          "foodeatup",
+          "jarvis",
+          "service",
+          "anniversaire",
+          "coupdefeu"
+        ],
+        "motsCles": [
+          "note de service",
+          "transmission cuisine",
+          "personnaliser l'accueil",
+          "réservation restaurant"
+        ],
+        "cta": "Découvrir FoodEatUp",
+        "titre": "La bougie qui arrive seule — 19 h | FoodEatUp"
+      }
+    },
+    "promptVignette": "Photo réaliste, cadrage vertical 9:16. Il est 19 h : lumière du soir, lampes allumées, reflets sur les verres. Le chef de l'image de référence — MÊME visage, même barbe, même toque blanche, même veste de cuisine blanche, même tablier blanc au logo FoodEatUp bleu. Ne change ni ses traits, ni sa morphologie, ni sa tenue. Il ne regarde AUCUN écran et ne tient AUCUN téléphone : il parle, simplement, les mains occupées par son travail. Scène : la bougie qui arrive seule. Il l'a dit à la réservation. Et à l'accueil. Décor : une table de deux, un dessert qui arrive sans bougie, une bougie posée au passe. Le chef occupe les deux tiers droits du cadre, en plan poitrine. Bande crème #FCF9E6 en haut du cadre sur un cinquième de la hauteur, portant UNIQUEMENT le texte « C'EST UN ANNIVERSAIRE » en typographie arrondie très grasse, bleu marine #0F1A23, centré. En bas à gauche, une pastille arrondie beige #C4B28E, capitales blanches : « EP232 · 19 h ». Aucun autre texte, aucun logo ajouté, pas de filigrane, pas de bordure décorative, aucun écran de logiciel visible.",
+    "higgsfieldPrompt": "Vertical 9:16, 10 seconds, photorealistic, cinematic handheld camera, shallow depth of field, natural light, 4K. NO text overlay, NO subtitles, NO watermark, NO logo. NO visible software interface, NO phone screen.\n\nReference image attached — the FoodEatUp chef. Keep his exact face, beard, white toque, white chef jacket and white FoodEatUp apron. Do not alter his features or his build.\n\nTime of day: 19:00 — evening light, lamps on, reflections on glassware.\n\nA dessert plate arrives at a two-top with no candle. Cut to the pass: a single unlit candle sits alone on the stainless surface, forgotten. Nobody reaches for it.\n\nAt 8 seconds the chef from the reference image steps into frame on the right, hands still busy with his work, and speaks a single short sentence toward no one in particular — never to a screen, never to a phone. Hold on his face for the final 2 seconds.\n\nAudio: evening dining-room ambience, cutlery, low conversation. No music.",
+    "scriptHeygen": null,
+    "kit": null,
+    "heygenPrompt": "Avatar : « Chef FoodEatUp » — votre avatar 3D, plan poitrine, regard caméra, fond vert (ou transparent).\nFormat : 1080 × 1920, 9:16, 25 images par seconde.\nVoix : française, masculine, débit posé, ton complice — le chef qui explique, pas celui qui vend.\nDurée visée : 9 secondes — c'est le segment 9,5 s → 18,5 s du master.\n\nScript, à coller tel quel :\n« Il l'a dit à la réservation, il l'a redit à l'accueil, et au dessert la cuisine ne le sait toujours pas. Je le dis à Jarvis, et la note descend jusqu'au passe. »\n\nPrononciation : « Jarvis » se dit à l'anglaise, DJAR-viss — c'est le nom de l'agent vocal, il revient dans les trente épisodes et il doit sonner pareil à chaque fois.\n\nRendu : aucun sous-titre, aucune incrustation, aucun logo, aucun décor de fond. Pas de musique. Le montage s'occupe de tout le reste.",
+    "montage": {
+      "consigne": "Monte EP232 : coupe le clip Higgsfield à 9,5 s, pose l'accroche « Il l'a dit à la réservation. Et à l'accueil. » à 5,0 s, empile l'avatar HeyGen et la capture d'écran dans la tablette de 18,5 s à 28,5 s, ferme sur la signature et le sting. Sortie 1080×1920, 37,5 s, −14 LUFS.",
+      "segments": [
+        {
+          "titre": "Hook",
+          "debut": 0,
+          "fin": 9.5,
+          "contenu": "Le plan Higgsfield, recadré en 9:16. L'accroche « Il l'a dit à la réservation. Et à l'accueil. » apparaît à 5,0 s, en bas du cadre."
+        },
+        {
+          "titre": "Transition de marque",
+          "debut": 9.5,
+          "fin": 18.5,
+          "contenu": "L'avatar HeyGen entre par la droite et prend la parole : « Il l'a dit à la réservation, il l'a redit à l'accueil, et au dessert la cuisine ne le sait toujours pas. »"
+        },
+        {
+          "titre": "Démo logiciel",
+          "debut": 18.5,
+          "fin": 28.5,
+          "contenu": "La phrase « Jarvis, c'est un anniversaire sur la 8. » s'écrit à l'écran, puis la réponse — la note attachée à la table, puis la même note sur le ticket en cuisine. L'avatar reste en médaillon en bas à gauche."
+        },
+        {
+          "titre": "Signature",
+          "debut": 28.5,
+          "fin": 32.5,
+          "contenu": "Bandeau crème, la punchline « Au dessert, la cuisine ne le sait toujours pas. », le logo FoodEatUp et le repère de saison « 19 h · Le service du soir »."
+        },
+        {
+          "titre": "Sting",
+          "debut": 32.5,
+          "fin": 37.5,
+          "contenu": "Le sting de marque, « C'EST UN ANNIVERSAIRE » en incrustation, puis l'appel à l'action : https://site.foodeatup.com/ et le 06 14 18 92 25."
+        }
+      ],
+      "livrable": "1080 × 1920 · 37,5 s · H.264 · −14 LUFS · master versé dans la bibliothèque RapidoCMS, prêt à être programmé sur les cinq réseaux."
+    },
+    "metier": null,
+    "phase": null,
+    "amplitude": null,
+    "boucle": null,
+    "boucleSlug": null,
+    "grandeBoucle": null,
+    "incident": null,
+    "incidentHeure": null,
+    "incidentQuoi": null,
+    "saumon": null,
+    "story": {
+      "format": "9:16 · 1080 × 1920 · 10 s",
+      "hook": "Il l'a dit à la réservation. Et à l'accueil",
+      "punchline": "Au dessert, la cuisine ne le sait toujours pas",
+      "url": null
+    },
+    "carrousel": null,
+    "imageFacebook": null,
+    "tutoriel": null
+  },
+  "EP233": {
+    "publications": {
+      "facebook": {
+        "legende": "Le client rappelle. La commande est « en route ». En route depuis combien de temps, ça, personne ne sait.\n\nOn dit : « Jarvis, la commande de la rue des Lilas, elle est partie ? »\n\nL'état des livraisons en cours, sans ouvrir la plateforme ni rappeler le livreur.\n\n👉 Tout FoodEatUp : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "hashtags": [
+          "restaurant",
+          "restaurateur",
+          "foodeatup",
+          "jarvis",
+          "livraison",
+          "hubrise"
+        ],
+        "motsCles": [
+          "suivi livraison",
+          "commande en ligne",
+          "livraison restaurant",
+          "HubRise"
+        ],
+        "cta": "Découvrir FoodEatUp"
+      },
+      "instagram": {
+        "legende": "Le client rappelle. La commande est « en route ».\nEn route depuis combien de temps, ça, personne ne sait.\n\n« Jarvis, la commande de la rue des Lilas, elle est partie ? »\n\nL'état des livraisons en cours, sans ouvrir la plateforme ni rappeler le livreur.\n\n19 h · Le service du soir — saison 8, « Dis-le, c'est fait ». Une journée, une phrase à la fois.\nTout est expliqué sur notre site — lien en bio.\nUne démo ? 06 14 18 92 25",
+        "hashtags": [
+          "restaurant",
+          "restaurateur",
+          "foodeatup",
+          "jarvis",
+          "livraison",
+          "hubrise",
+          "vegefruites",
+          "coupdefeu",
+          "logicielrestaurant",
+          "assistantvocal"
+        ],
+        "motsCles": [
+          "suivi livraison",
+          "commande en ligne",
+          "livraison restaurant",
+          "HubRise"
+        ],
+        "cta": "Tout est en bio"
+      },
+      "tiktok": {
+        "legende": "Le client rappelle. La commande est « en route ».\nEn route depuis combien de temps, ça, personne ne sait.\n\n« Jarvis, la commande de la rue des Lilas, elle est partie ? » 🎙️\n\nL'état des livraisons en cours, sans ouvrir la plateforme ni rappeler le livreur.",
+        "hashtags": [
+          "restaurant",
+          "restaurateur",
+          "foodeatup",
+          "jarvis",
+          "livraison"
+        ],
+        "motsCles": [
+          "suivi livraison",
+          "commande en ligne",
+          "livraison restaurant",
+          "HubRise"
+        ],
+        "cta": "Lien en bio"
+      },
+      "linkedin": {
+        "legende": "Le client rappelle. La commande est « en route ».\n\nCe qu'on dit : « Jarvis, la commande de la rue des Lilas, elle est partie ? »\n\nL'état des livraisons en cours, sans ouvrir la plateforme ni rappeler le livreur.\n\nL'outil appelé : list_deliveries.\n\nConcrètement : L'état d'une livraison se demande à voix haute, en plein service. On répond au client avec un fait, pas avec une formule.\n\nEn savoir plus : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "hashtags": [
+          "restauration",
+          "foodeatup",
+          "jarvis",
+          "livraison",
+          "hubrise"
+        ],
+        "motsCles": [
+          "suivi livraison",
+          "commande en ligne",
+          "livraison restaurant",
+          "HubRise"
+        ],
+        "cta": "Découvrir FoodEatUp"
+      },
+      "youtube": {
+        "legende": "Le client rappelle. La commande est « en route ». En route depuis combien de temps, ça, personne ne sait.\n\nOn dit : « Jarvis, la commande de la rue des Lilas, elle est partie ? »\n\nL'état des livraisons en cours, sans ouvrir la plateforme ni rappeler le livreur.\n\nL'outil appelé : list_deliveries.\n\n— — —\n\n🔗 https://site.foodeatup.com/\n\n📞 Une démo ? 06 14 18 92 25\n🌐 foodeatup.com\n\nSérie « Le Coup de Feu » — saison 8 « Dis-le, c'est fait », épisode 23 sur 30, et dernière saison de la série.\n19 h · Le service du soir · À l'écran : La Betterave\nModule HubRise · Les livraisons\n\nJarvis est l'agent vocal de FoodEatUp, le logiciel qui réunit la caisse, le stock, les plannings, l'HACCP et le marketing d'un restaurant au même endroit.\n",
+        "hashtags": [
+          "Shorts",
+          "restaurant",
+          "restaurateur",
+          "foodeatup",
+          "jarvis",
+          "livraison",
+          "hubrise",
+          "coupdefeu"
+        ],
+        "motsCles": [
+          "suivi livraison",
+          "commande en ligne",
+          "livraison restaurant",
+          "HubRise"
+        ],
+        "cta": "Découvrir FoodEatUp",
+        "titre": "Elle est partie ? — 19 h | FoodEatUp"
+      }
+    },
+    "promptVignette": "Photo réaliste, cadrage vertical 9:16. Il est 19 h : lumière du soir, lampes allumées, reflets sur les verres. Le chef de l'image de référence — MÊME visage, même barbe, même toque blanche, même veste de cuisine blanche, même tablier blanc au logo FoodEatUp bleu. Ne change ni ses traits, ni sa morphologie, ni sa tenue. Il ne regarde AUCUN écran et ne tient AUCUN téléphone : il parle, simplement, les mains occupées par son travail. Scène : elle est partie ?. Le client rappelle. La commande est « en route ». Décor : un comptoir de retrait, deux sacs prêts, un téléphone qui sonne à côté. Le chef occupe les deux tiers droits du cadre, en plan poitrine. Bande crème #FCF9E6 en haut du cadre sur un cinquième de la hauteur, portant UNIQUEMENT le texte « ELLE EST PARTIE » en typographie arrondie très grasse, bleu marine #0F1A23, centré. En bas à gauche, une pastille arrondie beige #C4B28E, capitales blanches : « EP233 · 19 h ». Aucun autre texte, aucun logo ajouté, pas de filigrane, pas de bordure décorative, aucun écran de logiciel visible.",
+    "higgsfieldPrompt": "Vertical 9:16, 10 seconds, photorealistic, cinematic handheld camera, shallow depth of field, natural light, 4K. NO text overlay, NO subtitles, NO watermark, NO logo. NO visible software interface, NO phone screen.\n\nReference image attached — the FoodEatUp chef. Keep his exact face, beard, white toque, white chef jacket and white FoodEatUp apron. Do not alter his features or his build.\n\nTime of day: 19:00 — evening light, lamps on, reflections on glassware.\n\nA pickup counter with two sealed delivery bags waiting. A phone rings beside them, unanswered, screen lighting the bags. Nobody comes. It keeps ringing.\n\nAt 8 seconds the chef from the reference image steps into frame on the right, hands still busy with his work, and speaks a single short sentence toward no one in particular — never to a screen, never to a phone. Hold on his face for the final 2 seconds.\n\nAudio: evening dining-room ambience, cutlery, low conversation. No music.",
+    "scriptHeygen": null,
+    "kit": null,
+    "heygenPrompt": "Avatar : « Chef FoodEatUp » — votre avatar 3D, plan poitrine, regard caméra, fond vert (ou transparent).\nFormat : 1080 × 1920, 9:16, 25 images par seconde.\nVoix : française, masculine, débit posé, ton complice — le chef qui explique, pas celui qui vend.\nDurée visée : 9 secondes — c'est le segment 9,5 s → 18,5 s du master.\n\nScript, à coller tel quel :\n« Le client rappelle, on lui dit que c'est en route. En route depuis combien de temps, personne ne sait. Je demande à Jarvis, et je réponds avec un fait. »\n\nPrononciation : « Jarvis » se dit à l'anglaise, DJAR-viss — c'est le nom de l'agent vocal, il revient dans les trente épisodes et il doit sonner pareil à chaque fois.\n\nRendu : aucun sous-titre, aucune incrustation, aucun logo, aucun décor de fond. Pas de musique. Le montage s'occupe de tout le reste.",
+    "montage": {
+      "consigne": "Monte EP233 : coupe le clip Higgsfield à 9,5 s, pose l'accroche « Le client rappelle. La commande est « en route ». » à 5,0 s, empile l'avatar HeyGen et la capture d'écran dans la tablette de 18,5 s à 28,5 s, ferme sur la signature et le sting. Sortie 1080×1920, 37,5 s, −14 LUFS.",
+      "segments": [
+        {
+          "titre": "Hook",
+          "debut": 0,
+          "fin": 9.5,
+          "contenu": "Le plan Higgsfield, recadré en 9:16. L'accroche « Le client rappelle. La commande est « en route ». » apparaît à 5,0 s, en bas du cadre."
+        },
+        {
+          "titre": "Transition de marque",
+          "debut": 9.5,
+          "fin": 18.5,
+          "contenu": "L'avatar HeyGen entre par la droite et prend la parole : « Le client rappelle, on lui dit que c'est en route. »"
+        },
+        {
+          "titre": "Démo logiciel",
+          "debut": 18.5,
+          "fin": 28.5,
+          "contenu": "La phrase « Jarvis, la commande de la rue des Lilas, elle est partie ? » s'écrit à l'écran, puis la réponse — les livraisons en cours et leur état. L'avatar reste en médaillon en bas à gauche."
+        },
+        {
+          "titre": "Signature",
+          "debut": 28.5,
+          "fin": 32.5,
+          "contenu": "Bandeau crème, la punchline « En route depuis combien de temps, ça, personne ne sait. », le logo FoodEatUp et le repère de saison « 19 h · Le service du soir »."
+        },
+        {
+          "titre": "Sting",
+          "debut": 32.5,
+          "fin": 37.5,
+          "contenu": "Le sting de marque, « ELLE EST PARTIE » en incrustation, puis l'appel à l'action : https://site.foodeatup.com/ et le 06 14 18 92 25."
+        }
+      ],
+      "livrable": "1080 × 1920 · 37,5 s · H.264 · −14 LUFS · master versé dans la bibliothèque RapidoCMS, prêt à être programmé sur les cinq réseaux."
+    },
+    "metier": null,
+    "phase": null,
+    "amplitude": null,
+    "boucle": null,
+    "boucleSlug": null,
+    "grandeBoucle": null,
+    "incident": null,
+    "incidentHeure": null,
+    "incidentQuoi": null,
+    "saumon": null,
+    "story": {
+      "format": "9:16 · 1080 × 1920 · 10 s",
+      "hook": "Le client rappelle. La commande est « en route »",
+      "punchline": "En route depuis combien de temps, ça, personne ne sait",
+      "url": null
+    },
+    "carrousel": null,
+    "imageFacebook": null,
+    "tutoriel": null
+  },
+  "EP234": {
+    "publications": {
+      "facebook": {
+        "legende": "Le nouveau serveur lui demande s'il connaît la maison. Six ans qu'il vient le mardi.\n\nOn dit : « Jarvis, ce client, il vient souvent ? »\n\nSon historique, ses points, sa dernière visite. On le reconnaît même quand ce n'est pas la même personne qui le sert.\n\n👉 Tout FoodEatUp : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "hashtags": [
+          "restaurant",
+          "restaurateur",
+          "foodeatup",
+          "jarvis",
+          "fidelite",
+          "client"
+        ],
+        "motsCles": [
+          "fiche client",
+          "fidélité restaurant",
+          "historique client",
+          "reconnaître un habitué"
+        ],
+        "cta": "Découvrir FoodEatUp"
+      },
+      "instagram": {
+        "legende": "Le nouveau serveur lui demande s'il connaît la maison.\nSix ans qu'il vient le mardi.\n\n« Jarvis, ce client, il vient souvent ? »\n\nSon historique, ses points, sa dernière visite. On le reconnaît même quand ce n'est pas la même personne qui le sert.\n\n19 h · Le service du soir — saison 8, « Dis-le, c'est fait ». Une journée, une phrase à la fois.\nTout est expliqué sur notre site — lien en bio.\nUne démo ? 06 14 18 92 25",
+        "hashtags": [
+          "restaurant",
+          "restaurateur",
+          "foodeatup",
+          "jarvis",
+          "fidelite",
+          "client",
+          "vegefruites",
+          "coupdefeu",
+          "logicielrestaurant",
+          "assistantvocal"
+        ],
+        "motsCles": [
+          "fiche client",
+          "fidélité restaurant",
+          "historique client",
+          "reconnaître un habitué"
+        ],
+        "cta": "Tout est en bio"
+      },
+      "tiktok": {
+        "legende": "Le nouveau serveur lui demande s'il connaît la maison.\nSix ans qu'il vient le mardi.\n\n« Jarvis, ce client, il vient souvent ? » 🎙️\n\nSon historique, ses points, sa dernière visite. On le reconnaît même quand ce n'est pas la même personne qui le sert.",
+        "hashtags": [
+          "restaurant",
+          "restaurateur",
+          "foodeatup",
+          "jarvis",
+          "fidelite"
+        ],
+        "motsCles": [
+          "fiche client",
+          "fidélité restaurant",
+          "historique client",
+          "reconnaître un habitué"
+        ],
+        "cta": "Lien en bio"
+      },
+      "linkedin": {
+        "legende": "Le nouveau serveur lui demande s'il connaît la maison.\n\nCe qu'on dit : « Jarvis, ce client, il vient souvent ? »\n\nSon historique, ses points, sa dernière visite. On le reconnaît même quand ce n'est pas la même personne qui le sert.\n\nL'outil appelé : get_loyalty_account.\n\nConcrètement : La reconnaissance n'est plus une affaire de mémoire : elle tient dans une fiche que n'importe qui peut lire, en salle, au moment où il faut.\n\nEn savoir plus : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "hashtags": [
+          "restauration",
+          "foodeatup",
+          "jarvis",
+          "fidelite",
+          "client"
+        ],
+        "motsCles": [
+          "fiche client",
+          "fidélité restaurant",
+          "historique client",
+          "reconnaître un habitué"
+        ],
+        "cta": "Découvrir FoodEatUp"
+      },
+      "youtube": {
+        "legende": "Le nouveau serveur lui demande s'il connaît la maison. Six ans qu'il vient le mardi.\n\nOn dit : « Jarvis, ce client, il vient souvent ? »\n\nSon historique, ses points, sa dernière visite. On le reconnaît même quand ce n'est pas la même personne qui le sert.\n\nL'outil appelé : get_loyalty_account.\n\n— — —\n\n🔗 https://site.foodeatup.com/\n\n📞 Une démo ? 06 14 18 92 25\n🌐 foodeatup.com\n\nSérie « Le Coup de Feu » — saison 8 « Dis-le, c'est fait », épisode 24 sur 30, et dernière saison de la série.\n19 h · Le service du soir · À l'écran : La Pomme de Terre\nModule Marketing · Le compte fidélité\n\nJarvis est l'agent vocal de FoodEatUp, le logiciel qui réunit la caisse, le stock, les plannings, l'HACCP et le marketing d'un restaurant au même endroit.\n",
+        "hashtags": [
+          "Shorts",
+          "restaurant",
+          "restaurateur",
+          "foodeatup",
+          "jarvis",
+          "fidelite",
+          "client",
+          "coupdefeu"
+        ],
+        "motsCles": [
+          "fiche client",
+          "fidélité restaurant",
+          "historique client",
+          "reconnaître un habitué"
+        ],
+        "cta": "Découvrir FoodEatUp",
+        "titre": "Il vient souvent ? — 19 h | FoodEatUp"
+      }
+    },
+    "promptVignette": "Photo réaliste, cadrage vertical 9:16. Il est 19 h : lumière du soir, lampes allumées, reflets sur les verres. Le chef de l'image de référence — MÊME visage, même barbe, même toque blanche, même veste de cuisine blanche, même tablier blanc au logo FoodEatUp bleu. Ne change ni ses traits, ni sa morphologie, ni sa tenue. Il ne regarde AUCUN écran et ne tient AUCUN téléphone : il parle, simplement, les mains occupées par son travail. Scène : il vient souvent ?. Le nouveau serveur lui demande s'il connaît la maison. Décor : une salle du soir, un habitué assis seul à sa table, un serveur nouveau qui approche. Le chef occupe les deux tiers droits du cadre, en plan poitrine. Bande crème #FCF9E6 en haut du cadre sur un cinquième de la hauteur, portant UNIQUEMENT le texte « IL VIENT SOUVENT » en typographie arrondie très grasse, bleu marine #0F1A23, centré. En bas à gauche, une pastille arrondie beige #C4B28E, capitales blanches : « EP234 · 19 h ». Aucun autre texte, aucun logo ajouté, pas de filigrane, pas de bordure décorative, aucun écran de logiciel visible.",
+    "higgsfieldPrompt": "Vertical 9:16, 10 seconds, photorealistic, cinematic handheld camera, shallow depth of field, natural light, 4K. NO text overlay, NO subtitles, NO watermark, NO logo. NO visible software interface, NO phone screen.\n\nReference image attached — the FoodEatUp chef. Keep his exact face, beard, white toque, white chef jacket and white FoodEatUp apron. Do not alter his features or his build.\n\nTime of day: 19:00 — evening light, lamps on, reflections on glassware.\n\nAn evening dining room. A regular sits alone at his usual corner table, coat on the hook. A new waiter approaches holding a menu he does not need. Warm light, slow track in.\n\nAt 8 seconds the chef from the reference image steps into frame on the right, hands still busy with his work, and speaks a single short sentence toward no one in particular — never to a screen, never to a phone. Hold on his face for the final 2 seconds.\n\nAudio: evening dining-room ambience, cutlery, low conversation. No music.",
+    "scriptHeygen": null,
+    "kit": null,
+    "heygenPrompt": "Avatar : « Chef FoodEatUp » — votre avatar 3D, plan poitrine, regard caméra, fond vert (ou transparent).\nFormat : 1080 × 1920, 9:16, 25 images par seconde.\nVoix : française, masculine, débit posé, ton complice — le chef qui explique, pas celui qui vend.\nDurée visée : 9 secondes — c'est le segment 9,5 s → 18,5 s du master.\n\nScript, à coller tel quel :\n« Le nouveau serveur lui demande s'il connaît la maison. Six ans qu'il vient le mardi. Je demande à Jarvis qui c'est, et on le reconnaît comme il faut. »\n\nPrononciation : « Jarvis » se dit à l'anglaise, DJAR-viss — c'est le nom de l'agent vocal, il revient dans les trente épisodes et il doit sonner pareil à chaque fois.\n\nRendu : aucun sous-titre, aucune incrustation, aucun logo, aucun décor de fond. Pas de musique. Le montage s'occupe de tout le reste.",
+    "montage": {
+      "consigne": "Monte EP234 : coupe le clip Higgsfield à 9,5 s, pose l'accroche « Le nouveau serveur lui demande s'il connaît la maison. » à 5,0 s, empile l'avatar HeyGen et la capture d'écran dans la tablette de 18,5 s à 28,5 s, ferme sur la signature et le sting. Sortie 1080×1920, 37,5 s, −14 LUFS.",
+      "segments": [
+        {
+          "titre": "Hook",
+          "debut": 0,
+          "fin": 9.5,
+          "contenu": "Le plan Higgsfield, recadré en 9:16. L'accroche « Le nouveau serveur lui demande s'il connaît la maison. » apparaît à 5,0 s, en bas du cadre."
+        },
+        {
+          "titre": "Transition de marque",
+          "debut": 9.5,
+          "fin": 18.5,
+          "contenu": "L'avatar HeyGen entre par la droite et prend la parole : « Le nouveau serveur lui demande s'il connaît la maison. »"
+        },
+        {
+          "titre": "Démo logiciel",
+          "debut": 18.5,
+          "fin": 28.5,
+          "contenu": "La phrase « Jarvis, ce client, il vient souvent ? » s'écrit à l'écran, puis la réponse — la fiche du client : historique, points, dernière visite. L'avatar reste en médaillon en bas à gauche."
+        },
+        {
+          "titre": "Signature",
+          "debut": 28.5,
+          "fin": 32.5,
+          "contenu": "Bandeau crème, la punchline « Six ans qu'il vient le mardi. », le logo FoodEatUp et le repère de saison « 19 h · Le service du soir »."
+        },
+        {
+          "titre": "Sting",
+          "debut": 32.5,
+          "fin": 37.5,
+          "contenu": "Le sting de marque, « IL VIENT SOUVENT » en incrustation, puis l'appel à l'action : https://site.foodeatup.com/ et le 06 14 18 92 25."
+        }
+      ],
+      "livrable": "1080 × 1920 · 37,5 s · H.264 · −14 LUFS · master versé dans la bibliothèque RapidoCMS, prêt à être programmé sur les cinq réseaux."
+    },
+    "metier": null,
+    "phase": null,
+    "amplitude": null,
+    "boucle": null,
+    "boucleSlug": null,
+    "grandeBoucle": null,
+    "incident": null,
+    "incidentHeure": null,
+    "incidentQuoi": null,
+    "saumon": null,
+    "story": {
+      "format": "9:16 · 1080 × 1920 · 10 s",
+      "hook": "Le nouveau serveur lui demande s'il connaît la maison",
+      "punchline": "Six ans qu'il vient le mardi",
+      "url": null
+    },
+    "carrousel": null,
+    "imageFacebook": null,
+    "tutoriel": null
+  },
+  "EP235": {
+    "publications": {
+      "facebook": {
+        "legende": "« Je vous offre le café. » Le geste part du cœur. Et disparaît avec le service.\n\nOn dit : « Jarvis, mets-lui des points, il a attendu. »\n\nLe geste commercial est enregistré sur son compte, avec son motif. Il n'existe plus seulement dans la tête de celui qui l'a fait.\n\n👉 Tout FoodEatUp : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "hashtags": [
+          "restaurant",
+          "restaurateur",
+          "foodeatup",
+          "jarvis",
+          "fidelite",
+          "geste"
+        ],
+        "motsCles": [
+          "points fidélité",
+          "geste commercial",
+          "programme de fidélité",
+          "compte client"
+        ],
+        "cta": "Découvrir FoodEatUp"
+      },
+      "instagram": {
+        "legende": "« Je vous offre le café. » Le geste part du cœur.\nEt disparaît avec le service.\n\n« Jarvis, mets-lui des points, il a attendu. »\n\nLe geste commercial est enregistré sur son compte, avec son motif. Il n'existe plus seulement dans la tête de celui qui l'a fait.\n\n19 h · Le service du soir — saison 8, « Dis-le, c'est fait ». Une journée, une phrase à la fois.\nTout est expliqué sur notre site — lien en bio.\nUne démo ? 06 14 18 92 25",
+        "hashtags": [
+          "restaurant",
+          "restaurateur",
+          "foodeatup",
+          "jarvis",
+          "fidelite",
+          "geste",
+          "vegefruites",
+          "coupdefeu",
+          "logicielrestaurant",
+          "assistantvocal"
+        ],
+        "motsCles": [
+          "points fidélité",
+          "geste commercial",
+          "programme de fidélité",
+          "compte client"
+        ],
+        "cta": "Tout est en bio"
+      },
+      "tiktok": {
+        "legende": "« Je vous offre le café. » Le geste part du cœur.\nEt disparaît avec le service.\n\n« Jarvis, mets-lui des points, il a attendu. » 🎙️\n\nLe geste commercial est enregistré sur son compte, avec son motif. Il n'existe plus seulement dans la tête de celui qui l'a fait.",
+        "hashtags": [
+          "restaurant",
+          "restaurateur",
+          "foodeatup",
+          "jarvis",
+          "fidelite"
+        ],
+        "motsCles": [
+          "points fidélité",
+          "geste commercial",
+          "programme de fidélité",
+          "compte client"
+        ],
+        "cta": "Lien en bio"
+      },
+      "linkedin": {
+        "legende": "« Je vous offre le café. » Le geste part du cœur.\n\nCe qu'on dit : « Jarvis, mets-lui des points, il a attendu. »\n\nLe geste commercial est enregistré sur son compte, avec son motif. Il n'existe plus seulement dans la tête de celui qui l'a fait.\n\nL'outil appelé : adjust_points.\n\nConcrètement : Un geste commercial dit à voix haute est un geste tracé : le client le retrouve à sa prochaine visite, et la maison sait ce qu'elle a offert.\n\nEn savoir plus : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "hashtags": [
+          "restauration",
+          "foodeatup",
+          "jarvis",
+          "fidelite",
+          "geste"
+        ],
+        "motsCles": [
+          "points fidélité",
+          "geste commercial",
+          "programme de fidélité",
+          "compte client"
+        ],
+        "cta": "Découvrir FoodEatUp"
+      },
+      "youtube": {
+        "legende": "« Je vous offre le café. » Le geste part du cœur. Et disparaît avec le service.\n\nOn dit : « Jarvis, mets-lui des points, il a attendu. »\n\nLe geste commercial est enregistré sur son compte, avec son motif. Il n'existe plus seulement dans la tête de celui qui l'a fait.\n\nL'outil appelé : adjust_points.\n\n— — —\n\n🔗 https://site.foodeatup.com/\n\n📞 Une démo ? 06 14 18 92 25\n🌐 foodeatup.com\n\nSérie « Le Coup de Feu » — saison 8 « Dis-le, c'est fait », épisode 25 sur 30, et dernière saison de la série.\n19 h · Le service du soir · À l'écran : La Pomme de Terre\nModule Marketing · Les points de fidélité\n\nJarvis est l'agent vocal de FoodEatUp, le logiciel qui réunit la caisse, le stock, les plannings, l'HACCP et le marketing d'un restaurant au même endroit.\n",
+        "hashtags": [
+          "Shorts",
+          "restaurant",
+          "restaurateur",
+          "foodeatup",
+          "jarvis",
+          "fidelite",
+          "geste",
+          "coupdefeu"
+        ],
+        "motsCles": [
+          "points fidélité",
+          "geste commercial",
+          "programme de fidélité",
+          "compte client"
+        ],
+        "cta": "Découvrir FoodEatUp",
+        "titre": "Le geste dit à voix haute — 19 h | FoodEatUp"
+      }
+    },
+    "promptVignette": "Photo réaliste, cadrage vertical 9:16. Il est 19 h : lumière du soir, lampes allumées, reflets sur les verres. Le chef de l'image de référence — MÊME visage, même barbe, même toque blanche, même veste de cuisine blanche, même tablier blanc au logo FoodEatUp bleu. Ne change ni ses traits, ni sa morphologie, ni sa tenue. Il ne regarde AUCUN écran et ne tient AUCUN téléphone : il parle, simplement, les mains occupées par son travail. Scène : le geste dit à voix haute. « Je vous offre le café. » Le geste part du cœur. Décor : une table, un café offert posé sans un mot, un client qui lève les yeux. Le chef occupe les deux tiers droits du cadre, en plan poitrine. Bande crème #FCF9E6 en haut du cadre sur un cinquième de la hauteur, portant UNIQUEMENT le texte « IL A ATTENDU » en typographie arrondie très grasse, bleu marine #0F1A23, centré. En bas à gauche, une pastille arrondie beige #C4B28E, capitales blanches : « EP235 · 19 h ». Aucun autre texte, aucun logo ajouté, pas de filigrane, pas de bordure décorative, aucun écran de logiciel visible.",
+    "higgsfieldPrompt": "Vertical 9:16, 10 seconds, photorealistic, cinematic handheld camera, shallow depth of field, natural light, 4K. NO text overlay, NO subtitles, NO watermark, NO logo. NO visible software interface, NO phone screen.\n\nReference image attached — the FoodEatUp chef. Keep his exact face, beard, white toque, white chef jacket and white FoodEatUp apron. Do not alter his features or his build.\n\nTime of day: 19:00 — evening light, lamps on, reflections on glassware.\n\nA complimentary coffee is set down on a table without a word. The customer looks up, surprised, and the waiter is already gone. The cup steams alone in frame.\n\nAt 8 seconds the chef from the reference image steps into frame on the right, hands still busy with his work, and speaks a single short sentence toward no one in particular — never to a screen, never to a phone. Hold on his face for the final 2 seconds.\n\nAudio: evening dining-room ambience, cutlery, low conversation. No music.",
+    "scriptHeygen": null,
+    "kit": null,
+    "heygenPrompt": "Avatar : « Chef FoodEatUp » — votre avatar 3D, plan poitrine, regard caméra, fond vert (ou transparent).\nFormat : 1080 × 1920, 9:16, 25 images par seconde.\nVoix : française, masculine, débit posé, ton complice — le chef qui explique, pas celui qui vend.\nDurée visée : 9 secondes — c'est le segment 9,5 s → 18,5 s du master.\n\nScript, à coller tel quel :\n« « Je vous offre le café » : le geste part du cœur et disparaît avec le service. Je le dis à Jarvis, il est sur le compte du client, avec la raison. »\n\nPrononciation : « Jarvis » se dit à l'anglaise, DJAR-viss — c'est le nom de l'agent vocal, il revient dans les trente épisodes et il doit sonner pareil à chaque fois.\n\nRendu : aucun sous-titre, aucune incrustation, aucun logo, aucun décor de fond. Pas de musique. Le montage s'occupe de tout le reste.",
+    "montage": {
+      "consigne": "Monte EP235 : coupe le clip Higgsfield à 9,5 s, pose l'accroche « « Je vous offre le café. » Le geste part du cœur. » à 5,0 s, empile l'avatar HeyGen et la capture d'écran dans la tablette de 18,5 s à 28,5 s, ferme sur la signature et le sting. Sortie 1080×1920, 37,5 s, −14 LUFS.",
+      "segments": [
+        {
+          "titre": "Hook",
+          "debut": 0,
+          "fin": 9.5,
+          "contenu": "Le plan Higgsfield, recadré en 9:16. L'accroche « « Je vous offre le café. » Le geste part du cœur. » apparaît à 5,0 s, en bas du cadre."
+        },
+        {
+          "titre": "Transition de marque",
+          "debut": 9.5,
+          "fin": 18.5,
+          "contenu": "L'avatar HeyGen entre par la droite et prend la parole : « « Je vous offre le café » : le geste part du cœur et disparaît avec le service. »"
+        },
+        {
+          "titre": "Démo logiciel",
+          "debut": 18.5,
+          "fin": 28.5,
+          "contenu": "La phrase « Jarvis, mets-lui des points, il a attendu. » s'écrit à l'écran, puis la réponse — les points ajoutés au compte, avec leur motif. L'avatar reste en médaillon en bas à gauche."
+        },
+        {
+          "titre": "Signature",
+          "debut": 28.5,
+          "fin": 32.5,
+          "contenu": "Bandeau crème, la punchline « Et disparaît avec le service. », le logo FoodEatUp et le repère de saison « 19 h · Le service du soir »."
+        },
+        {
+          "titre": "Sting",
+          "debut": 32.5,
+          "fin": 37.5,
+          "contenu": "Le sting de marque, « IL A ATTENDU » en incrustation, puis l'appel à l'action : https://site.foodeatup.com/ et le 06 14 18 92 25."
+        }
+      ],
+      "livrable": "1080 × 1920 · 37,5 s · H.264 · −14 LUFS · master versé dans la bibliothèque RapidoCMS, prêt à être programmé sur les cinq réseaux."
+    },
+    "metier": null,
+    "phase": null,
+    "amplitude": null,
+    "boucle": null,
+    "boucleSlug": null,
+    "grandeBoucle": null,
+    "incident": null,
+    "incidentHeure": null,
+    "incidentQuoi": null,
+    "saumon": null,
+    "story": {
+      "format": "9:16 · 1080 × 1920 · 10 s",
+      "hook": "« Je vous offre le café. » Le geste part du cœur",
+      "punchline": "Et disparaît avec le service",
+      "url": null
+    },
+    "carrousel": null,
+    "imageFacebook": null,
+    "tutoriel": null
+  },
+  "EP236": {
+    "publications": {
+      "facebook": {
+        "legende": "Le dernier client est parti à vingt-trois heures. Le patron, lui, en a encore pour une heure.\n\nOn dit : « Jarvis, ferme la caisse. »\n\nLa session est close, avec son total et son heure. Le service est fini pour de bon, pas seulement pour les clients.\n\n👉 Tout FoodEatUp : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "hashtags": [
+          "restaurant",
+          "restaurateur",
+          "foodeatup",
+          "jarvis",
+          "caisse",
+          "cloture"
+        ],
+        "motsCles": [
+          "clôture de caisse",
+          "session de caisse",
+          "fin de service",
+          "caisse restaurant"
+        ],
+        "cta": "Découvrir FoodEatUp"
+      },
+      "instagram": {
+        "legende": "Le dernier client est parti à vingt-trois heures.\nLe patron, lui, en a encore pour une heure.\n\n« Jarvis, ferme la caisse. »\n\nLa session est close, avec son total et son heure. Le service est fini pour de bon, pas seulement pour les clients.\n\n23 h · La clôture — saison 8, « Dis-le, c'est fait ». Une journée, une phrase à la fois.\nTout est expliqué sur notre site — lien en bio.\nUne démo ? 06 14 18 92 25",
+        "hashtags": [
+          "restaurant",
+          "restaurateur",
+          "foodeatup",
+          "jarvis",
+          "caisse",
+          "cloture",
+          "vegefruites",
+          "coupdefeu",
+          "logicielrestaurant",
+          "assistantvocal"
+        ],
+        "motsCles": [
+          "clôture de caisse",
+          "session de caisse",
+          "fin de service",
+          "caisse restaurant"
+        ],
+        "cta": "Tout est en bio"
+      },
+      "tiktok": {
+        "legende": "Le dernier client est parti à vingt-trois heures.\nLe patron, lui, en a encore pour une heure.\n\n« Jarvis, ferme la caisse. » 🎙️\n\nLa session est close, avec son total et son heure. Le service est fini pour de bon, pas seulement pour les clients.",
+        "hashtags": [
+          "restaurant",
+          "restaurateur",
+          "foodeatup",
+          "jarvis",
+          "caisse"
+        ],
+        "motsCles": [
+          "clôture de caisse",
+          "session de caisse",
+          "fin de service",
+          "caisse restaurant"
+        ],
+        "cta": "Lien en bio"
+      },
+      "linkedin": {
+        "legende": "Le dernier client est parti à vingt-trois heures.\n\nCe qu'on dit : « Jarvis, ferme la caisse. »\n\nLa session est close, avec son total et son heure. Le service est fini pour de bon, pas seulement pour les clients.\n\nL'outil appelé : close_pos_session.\n\nConcrètement : La clôture se dit au lieu de se cliquer. Ce qui prenait la fin de soirée tient dans une phrase, et le total est celui de la journée.\n\nEn savoir plus : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "hashtags": [
+          "restauration",
+          "foodeatup",
+          "jarvis",
+          "caisse",
+          "cloture"
+        ],
+        "motsCles": [
+          "clôture de caisse",
+          "session de caisse",
+          "fin de service",
+          "caisse restaurant"
+        ],
+        "cta": "Découvrir FoodEatUp"
+      },
+      "youtube": {
+        "legende": "Le dernier client est parti à vingt-trois heures. Le patron, lui, en a encore pour une heure.\n\nOn dit : « Jarvis, ferme la caisse. »\n\nLa session est close, avec son total et son heure. Le service est fini pour de bon, pas seulement pour les clients.\n\nL'outil appelé : close_pos_session.\n\n— — —\n\n🔗 https://site.foodeatup.com/\n\n📞 Une démo ? 06 14 18 92 25\n🌐 foodeatup.com\n\nSérie « Le Coup de Feu » — saison 8 « Dis-le, c'est fait », épisode 26 sur 30, et dernière saison de la série.\n23 h · La clôture · À l'écran : L'Ail\nModule Caisse POS · La clôture de session\n\nJarvis est l'agent vocal de FoodEatUp, le logiciel qui réunit la caisse, le stock, les plannings, l'HACCP et le marketing d'un restaurant au même endroit.\n",
+        "hashtags": [
+          "Shorts",
+          "restaurant",
+          "restaurateur",
+          "foodeatup",
+          "jarvis",
+          "caisse",
+          "cloture",
+          "coupdefeu"
+        ],
+        "motsCles": [
+          "clôture de caisse",
+          "session de caisse",
+          "fin de service",
+          "caisse restaurant"
+        ],
+        "cta": "Découvrir FoodEatUp",
+        "titre": "Ferme la caisse — 23 h | FoodEatUp"
+      }
+    },
+    "promptVignette": "Photo réaliste, cadrage vertical 9:16. Il est 23 h : lumière de nuit, une seule source au-dessus du comptoir. Le chef de l'image de référence — MÊME visage, même barbe, même toque blanche, même veste de cuisine blanche, même tablier blanc au logo FoodEatUp bleu. Ne change ni ses traits, ni sa morphologie, ni sa tenue. Il ne regarde AUCUN écran et ne tient AUCUN téléphone : il parle, simplement, les mains occupées par son travail. Scène : ferme la caisse. Le dernier client est parti à vingt-trois heures. Décor : une salle vide, chaises retournées sur les tables, une seule lumière allumée. Le chef occupe les deux tiers droits du cadre, en plan poitrine. Bande crème #FCF9E6 en haut du cadre sur un cinquième de la hauteur, portant UNIQUEMENT le texte « FERME LA CAISSE » en typographie arrondie très grasse, bleu marine #0F1A23, centré. En bas à gauche, une pastille arrondie beige #C4B28E, capitales blanches : « EP236 · 23 h ». Aucun autre texte, aucun logo ajouté, pas de filigrane, pas de bordure décorative, aucun écran de logiciel visible.",
+    "higgsfieldPrompt": "Vertical 9:16, 10 seconds, photorealistic, cinematic handheld camera, shallow depth of field, natural light, 4K. NO text overlay, NO subtitles, NO watermark, NO logo. NO visible software interface, NO phone screen.\n\nReference image attached — the FoodEatUp chef. Keep his exact face, beard, white toque, white chef jacket and white FoodEatUp apron. Do not alter his features or his build.\n\nTime of day: 23:00 — night light, a single source above the counter.\n\nAn empty restaurant at night, chairs upturned on tables, one lamp still on above the till. A hand switches off the room lights one bank at a time, leaving only that lamp.\n\nAt 8 seconds the chef from the reference image steps into frame on the right, hands still busy with his work, and speaks a single short sentence toward no one in particular — never to a screen, never to a phone. Hold on his face for the final 2 seconds.\n\nAudio: an empty room at night, a till roll, one fridge hum. No music.",
+    "scriptHeygen": null,
+    "kit": null,
+    "heygenPrompt": "Avatar : « Chef FoodEatUp » — votre avatar 3D, plan poitrine, regard caméra, fond vert (ou transparent).\nFormat : 1080 × 1920, 9:16, 25 images par seconde.\nVoix : française, masculine, débit posé, ton complice — le chef qui explique, pas celui qui vend.\nDurée visée : 9 secondes — c'est le segment 9,5 s → 18,5 s du master.\n\nScript, à coller tel quel :\n« Le dernier client part à vingt-trois heures, et le patron en a encore pour une heure. Je dis à Jarvis de fermer la caisse, et il me reste juste à éteindre. »\n\nPrononciation : « Jarvis » se dit à l'anglaise, DJAR-viss — c'est le nom de l'agent vocal, il revient dans les trente épisodes et il doit sonner pareil à chaque fois.\n\nRendu : aucun sous-titre, aucune incrustation, aucun logo, aucun décor de fond. Pas de musique. Le montage s'occupe de tout le reste.",
+    "montage": {
+      "consigne": "Monte EP236 : coupe le clip Higgsfield à 9,5 s, pose l'accroche « Le dernier client est parti à vingt-trois heures. » à 5,0 s, empile l'avatar HeyGen et la capture d'écran dans la tablette de 18,5 s à 28,5 s, ferme sur la signature et le sting. Sortie 1080×1920, 37,5 s, −14 LUFS.",
+      "segments": [
+        {
+          "titre": "Hook",
+          "debut": 0,
+          "fin": 9.5,
+          "contenu": "Le plan Higgsfield, recadré en 9:16. L'accroche « Le dernier client est parti à vingt-trois heures. » apparaît à 5,0 s, en bas du cadre."
+        },
+        {
+          "titre": "Transition de marque",
+          "debut": 9.5,
+          "fin": 18.5,
+          "contenu": "L'avatar HeyGen entre par la droite et prend la parole : « Le dernier client part à vingt-trois heures, et le patron en a encore pour une heure. »"
+        },
+        {
+          "titre": "Démo logiciel",
+          "debut": 18.5,
+          "fin": 28.5,
+          "contenu": "La phrase « Jarvis, ferme la caisse. » s'écrit à l'écran, puis la réponse — la session close : total encaissé, heure de clôture, responsable. L'avatar reste en médaillon en bas à gauche."
+        },
+        {
+          "titre": "Signature",
+          "debut": 28.5,
+          "fin": 32.5,
+          "contenu": "Bandeau crème, la punchline « Le patron, lui, en a encore pour une heure. », le logo FoodEatUp et le repère de saison « 23 h · La clôture »."
+        },
+        {
+          "titre": "Sting",
+          "debut": 32.5,
+          "fin": 37.5,
+          "contenu": "Le sting de marque, « FERME LA CAISSE » en incrustation, puis l'appel à l'action : https://site.foodeatup.com/ et le 06 14 18 92 25."
+        }
+      ],
+      "livrable": "1080 × 1920 · 37,5 s · H.264 · −14 LUFS · master versé dans la bibliothèque RapidoCMS, prêt à être programmé sur les cinq réseaux."
+    },
+    "metier": null,
+    "phase": null,
+    "amplitude": null,
+    "boucle": null,
+    "boucleSlug": null,
+    "grandeBoucle": null,
+    "incident": null,
+    "incidentHeure": null,
+    "incidentQuoi": null,
+    "saumon": null,
+    "story": {
+      "format": "9:16 · 1080 × 1920 · 10 s",
+      "hook": "Le dernier client est parti à vingt-trois heures",
+      "punchline": "Le patron, lui, en a encore pour une heure",
+      "url": null
+    },
+    "carrousel": null,
+    "imageFacebook": null,
+    "tutoriel": null
+  },
+  "EP237": {
+    "publications": {
+      "facebook": {
+        "legende": "Il manque quelque chose. On ne sait pas quoi. On recompte. Trois fois. Debout.\n\nOn dit : « Jarvis, ça colle ? »\n\nLe rapprochement entre ce qui a été encaissé et ce qui a été tapé. L'écart, s'il y en a un, a une ligne et une heure.\n\n👉 Tout FoodEatUp : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "hashtags": [
+          "restaurant",
+          "restaurateur",
+          "foodeatup",
+          "jarvis",
+          "caisse",
+          "comptabilite"
+        ],
+        "motsCles": [
+          "rapprochement caisse",
+          "écart de caisse",
+          "encaissement carte",
+          "clôture comptable"
+        ],
+        "cta": "Découvrir FoodEatUp"
+      },
+      "instagram": {
+        "legende": "Il manque quelque chose. On ne sait pas quoi.\nOn recompte. Trois fois. Debout.\n\n« Jarvis, ça colle ? »\n\nLe rapprochement entre ce qui a été encaissé et ce qui a été tapé. L'écart, s'il y en a un, a une ligne et une heure.\n\n23 h · La clôture — saison 8, « Dis-le, c'est fait ». Une journée, une phrase à la fois.\nTout est expliqué sur notre site — lien en bio.\nUne démo ? 06 14 18 92 25",
+        "hashtags": [
+          "restaurant",
+          "restaurateur",
+          "foodeatup",
+          "jarvis",
+          "caisse",
+          "comptabilite",
+          "vegefruites",
+          "coupdefeu",
+          "logicielrestaurant",
+          "assistantvocal"
+        ],
+        "motsCles": [
+          "rapprochement caisse",
+          "écart de caisse",
+          "encaissement carte",
+          "clôture comptable"
+        ],
+        "cta": "Tout est en bio"
+      },
+      "tiktok": {
+        "legende": "Il manque quelque chose. On ne sait pas quoi.\nOn recompte. Trois fois. Debout.\n\n« Jarvis, ça colle ? » 🎙️\n\nLe rapprochement entre ce qui a été encaissé et ce qui a été tapé. L'écart, s'il y en a un, a une ligne et une heure.",
+        "hashtags": [
+          "restaurant",
+          "restaurateur",
+          "foodeatup",
+          "jarvis",
+          "caisse"
+        ],
+        "motsCles": [
+          "rapprochement caisse",
+          "écart de caisse",
+          "encaissement carte",
+          "clôture comptable"
+        ],
+        "cta": "Lien en bio"
+      },
+      "linkedin": {
+        "legende": "Il manque quelque chose. On ne sait pas quoi.\n\nCe qu'on dit : « Jarvis, ça colle ? »\n\nLe rapprochement entre ce qui a été encaissé et ce qui a été tapé. L'écart, s'il y en a un, a une ligne et une heure.\n\nL'outil appelé : get_smilepay_reconciliation.\n\nConcrètement : Le rapprochement se fait tout seul, ligne à ligne. Un écart devient une ligne datée au lieu d'une soirée de recomptage.\n\nEn savoir plus : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "hashtags": [
+          "restauration",
+          "foodeatup",
+          "jarvis",
+          "caisse",
+          "comptabilite"
+        ],
+        "motsCles": [
+          "rapprochement caisse",
+          "écart de caisse",
+          "encaissement carte",
+          "clôture comptable"
+        ],
+        "cta": "Découvrir FoodEatUp"
+      },
+      "youtube": {
+        "legende": "Il manque quelque chose. On ne sait pas quoi. On recompte. Trois fois. Debout.\n\nOn dit : « Jarvis, ça colle ? »\n\nLe rapprochement entre ce qui a été encaissé et ce qui a été tapé. L'écart, s'il y en a un, a une ligne et une heure.\n\nL'outil appelé : get_smilepay_reconciliation.\n\n— — —\n\n🔗 https://site.foodeatup.com/\n\n📞 Une démo ? 06 14 18 92 25\n🌐 foodeatup.com\n\nSérie « Le Coup de Feu » — saison 8 « Dis-le, c'est fait », épisode 27 sur 30, et dernière saison de la série.\n23 h · La clôture · À l'écran : L'Ail\nModule Caisse POS · Le rapprochement\n\nJarvis est l'agent vocal de FoodEatUp, le logiciel qui réunit la caisse, le stock, les plannings, l'HACCP et le marketing d'un restaurant au même endroit.\n",
+        "hashtags": [
+          "Shorts",
+          "restaurant",
+          "restaurateur",
+          "foodeatup",
+          "jarvis",
+          "caisse",
+          "comptabilite",
+          "coupdefeu"
+        ],
+        "motsCles": [
+          "rapprochement caisse",
+          "écart de caisse",
+          "encaissement carte",
+          "clôture comptable"
+        ],
+        "cta": "Découvrir FoodEatUp",
+        "titre": "Ça colle ? — 23 h | FoodEatUp"
+      }
+    },
+    "promptVignette": "Photo réaliste, cadrage vertical 9:16. Il est 23 h : lumière de nuit, une seule source au-dessus du comptoir. Le chef de l'image de référence — MÊME visage, même barbe, même toque blanche, même veste de cuisine blanche, même tablier blanc au logo FoodEatUp bleu. Ne change ni ses traits, ni sa morphologie, ni sa tenue. Il ne regarde AUCUN écran et ne tient AUCUN téléphone : il parle, simplement, les mains occupées par son travail. Scène : ça colle ?. Il manque quelque chose. On ne sait pas quoi. Décor : un comptoir, des pièces empilées en colonnes, un ticket de caisse déroulé. Le chef occupe les deux tiers droits du cadre, en plan poitrine. Bande crème #FCF9E6 en haut du cadre sur un cinquième de la hauteur, portant UNIQUEMENT le texte « ÇA COLLE » en typographie arrondie très grasse, bleu marine #0F1A23, centré. En bas à gauche, une pastille arrondie beige #C4B28E, capitales blanches : « EP237 · 23 h ». Aucun autre texte, aucun logo ajouté, pas de filigrane, pas de bordure décorative, aucun écran de logiciel visible.",
+    "higgsfieldPrompt": "Vertical 9:16, 10 seconds, photorealistic, cinematic handheld camera, shallow depth of field, natural light, 4K. NO text overlay, NO subtitles, NO watermark, NO logo. NO visible software interface, NO phone screen.\n\nReference image attached — the FoodEatUp chef. Keep his exact face, beard, white toque, white chef jacket and white FoodEatUp apron. Do not alter his features or his build.\n\nTime of day: 23:00 — night light, a single source above the counter.\n\nA counter at night with coins stacked in careful columns and a long till roll unspooled across it. A hand knocks one stack over. The coins scatter and settle.\n\nAt 8 seconds the chef from the reference image steps into frame on the right, hands still busy with his work, and speaks a single short sentence toward no one in particular — never to a screen, never to a phone. Hold on his face for the final 2 seconds.\n\nAudio: an empty room at night, a till roll, one fridge hum. No music.",
+    "scriptHeygen": null,
+    "kit": null,
+    "heygenPrompt": "Avatar : « Chef FoodEatUp » — votre avatar 3D, plan poitrine, regard caméra, fond vert (ou transparent).\nFormat : 1080 × 1920, 9:16, 25 images par seconde.\nVoix : française, masculine, débit posé, ton complice — le chef qui explique, pas celui qui vend.\nDurée visée : 9 secondes — c'est le segment 9,5 s → 18,5 s du master.\n\nScript, à coller tel quel :\n« Il manque quelque chose et on ne sait pas quoi, alors on recompte trois fois, debout. Je demande à Jarvis si ça colle, et l'écart a une ligne et une heure. »\n\nPrononciation : « Jarvis » se dit à l'anglaise, DJAR-viss — c'est le nom de l'agent vocal, il revient dans les trente épisodes et il doit sonner pareil à chaque fois.\n\nRendu : aucun sous-titre, aucune incrustation, aucun logo, aucun décor de fond. Pas de musique. Le montage s'occupe de tout le reste.",
+    "montage": {
+      "consigne": "Monte EP237 : coupe le clip Higgsfield à 9,5 s, pose l'accroche « Il manque quelque chose. On ne sait pas quoi. » à 5,0 s, empile l'avatar HeyGen et la capture d'écran dans la tablette de 18,5 s à 28,5 s, ferme sur la signature et le sting. Sortie 1080×1920, 37,5 s, −14 LUFS.",
+      "segments": [
+        {
+          "titre": "Hook",
+          "debut": 0,
+          "fin": 9.5,
+          "contenu": "Le plan Higgsfield, recadré en 9:16. L'accroche « Il manque quelque chose. On ne sait pas quoi. » apparaît à 5,0 s, en bas du cadre."
+        },
+        {
+          "titre": "Transition de marque",
+          "debut": 9.5,
+          "fin": 18.5,
+          "contenu": "L'avatar HeyGen entre par la droite et prend la parole : « Il manque quelque chose et on ne sait pas quoi, alors on recompte trois fois, debout. »"
+        },
+        {
+          "titre": "Démo logiciel",
+          "debut": 18.5,
+          "fin": 28.5,
+          "contenu": "La phrase « Jarvis, ça colle ? » s'écrit à l'écran, puis la réponse — le rapprochement ligne à ligne, et l'écart identifié s'il y en a un. L'avatar reste en médaillon en bas à gauche."
+        },
+        {
+          "titre": "Signature",
+          "debut": 28.5,
+          "fin": 32.5,
+          "contenu": "Bandeau crème, la punchline « On recompte. Trois fois. Debout. », le logo FoodEatUp et le repère de saison « 23 h · La clôture »."
+        },
+        {
+          "titre": "Sting",
+          "debut": 32.5,
+          "fin": 37.5,
+          "contenu": "Le sting de marque, « ÇA COLLE » en incrustation, puis l'appel à l'action : https://site.foodeatup.com/ et le 06 14 18 92 25."
+        }
+      ],
+      "livrable": "1080 × 1920 · 37,5 s · H.264 · −14 LUFS · master versé dans la bibliothèque RapidoCMS, prêt à être programmé sur les cinq réseaux."
+    },
+    "metier": null,
+    "phase": null,
+    "amplitude": null,
+    "boucle": null,
+    "boucleSlug": null,
+    "grandeBoucle": null,
+    "incident": null,
+    "incidentHeure": null,
+    "incidentQuoi": null,
+    "saumon": null,
+    "story": {
+      "format": "9:16 · 1080 × 1920 · 10 s",
+      "hook": "Il manque quelque chose. On ne sait pas quoi",
+      "punchline": "On recompte. Trois fois. Debout",
+      "url": null
+    },
+    "carrousel": null,
+    "imageFacebook": null,
+    "tutoriel": null
+  },
+  "EP238": {
+    "publications": {
+      "facebook": {
+        "legende": "La pile de factures grandit toute seule. C'est bien la seule chose qui pousse ici sans qu'on l'arrose.\n\nOn dit : « Jarvis, note la facture du poissonnier. »\n\nLa dépense est enregistrée le soir même, avec son fournisseur et son montant. Elle ne finit pas dans la pile qu'on trie en avril.\n\n👉 Tout FoodEatUp : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "hashtags": [
+          "restaurant",
+          "restaurateur",
+          "foodeatup",
+          "jarvis",
+          "comptabilite",
+          "facture"
+        ],
+        "motsCles": [
+          "saisie des dépenses",
+          "facture fournisseur",
+          "comptabilité restaurant",
+          "gestion des achats"
+        ],
+        "cta": "Découvrir FoodEatUp"
+      },
+      "instagram": {
+        "legende": "La pile de factures grandit toute seule.\nC'est bien la seule chose qui pousse ici sans qu'on l'arrose.\n\n« Jarvis, note la facture du poissonnier. »\n\nLa dépense est enregistrée le soir même, avec son fournisseur et son montant. Elle ne finit pas dans la pile qu'on trie en avril.\n\n23 h · La clôture — saison 8, « Dis-le, c'est fait ». Une journée, une phrase à la fois.\nTout est expliqué sur notre site — lien en bio.\nUne démo ? 06 14 18 92 25",
+        "hashtags": [
+          "restaurant",
+          "restaurateur",
+          "foodeatup",
+          "jarvis",
+          "comptabilite",
+          "facture",
+          "vegefruites",
+          "coupdefeu",
+          "logicielrestaurant",
+          "assistantvocal"
+        ],
+        "motsCles": [
+          "saisie des dépenses",
+          "facture fournisseur",
+          "comptabilité restaurant",
+          "gestion des achats"
+        ],
+        "cta": "Tout est en bio"
+      },
+      "tiktok": {
+        "legende": "La pile de factures grandit toute seule.\nC'est bien la seule chose qui pousse ici sans qu'on l'arrose.\n\n« Jarvis, note la facture du poissonnier. » 🎙️\n\nLa dépense est enregistrée le soir même, avec son fournisseur et son montant. Elle ne finit pas dans la pile qu'on trie en avril.",
+        "hashtags": [
+          "restaurant",
+          "restaurateur",
+          "foodeatup",
+          "jarvis",
+          "comptabilite"
+        ],
+        "motsCles": [
+          "saisie des dépenses",
+          "facture fournisseur",
+          "comptabilité restaurant",
+          "gestion des achats"
+        ],
+        "cta": "Lien en bio"
+      },
+      "linkedin": {
+        "legende": "La pile de factures grandit toute seule.\n\nCe qu'on dit : « Jarvis, note la facture du poissonnier. »\n\nLa dépense est enregistrée le soir même, avec son fournisseur et son montant. Elle ne finit pas dans la pile qu'on trie en avril.\n\nL'outil appelé : create_expense.\n\nConcrètement : Une facture saisie le soir même est une facture qui ne se perd pas. La pile du bureau cesse d'être un travail de fin de trimestre.\n\nEn savoir plus : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "hashtags": [
+          "restauration",
+          "foodeatup",
+          "jarvis",
+          "comptabilite",
+          "facture"
+        ],
+        "motsCles": [
+          "saisie des dépenses",
+          "facture fournisseur",
+          "comptabilité restaurant",
+          "gestion des achats"
+        ],
+        "cta": "Découvrir FoodEatUp"
+      },
+      "youtube": {
+        "legende": "La pile de factures grandit toute seule. C'est bien la seule chose qui pousse ici sans qu'on l'arrose.\n\nOn dit : « Jarvis, note la facture du poissonnier. »\n\nLa dépense est enregistrée le soir même, avec son fournisseur et son montant. Elle ne finit pas dans la pile qu'on trie en avril.\n\nL'outil appelé : create_expense.\n\n— — —\n\n🔗 https://site.foodeatup.com/\n\n📞 Une démo ? 06 14 18 92 25\n🌐 foodeatup.com\n\nSérie « Le Coup de Feu » — saison 8 « Dis-le, c'est fait », épisode 28 sur 30, et dernière saison de la série.\n23 h · La clôture · À l'écran : La Pomme de Terre\nModule Comptabilité · Les dépenses\n\nJarvis est l'agent vocal de FoodEatUp, le logiciel qui réunit la caisse, le stock, les plannings, l'HACCP et le marketing d'un restaurant au même endroit.\n",
+        "hashtags": [
+          "Shorts",
+          "restaurant",
+          "restaurateur",
+          "foodeatup",
+          "jarvis",
+          "comptabilite",
+          "facture",
+          "coupdefeu"
+        ],
+        "motsCles": [
+          "saisie des dépenses",
+          "facture fournisseur",
+          "comptabilité restaurant",
+          "gestion des achats"
+        ],
+        "cta": "Découvrir FoodEatUp",
+        "titre": "La facture dictée — 23 h | FoodEatUp"
+      }
+    },
+    "promptVignette": "Photo réaliste, cadrage vertical 9:16. Il est 23 h : lumière de nuit, une seule source au-dessus du comptoir. Le chef de l'image de référence — MÊME visage, même barbe, même toque blanche, même veste de cuisine blanche, même tablier blanc au logo FoodEatUp bleu. Ne change ni ses traits, ni sa morphologie, ni sa tenue. Il ne regarde AUCUN écran et ne tient AUCUN téléphone : il parle, simplement, les mains occupées par son travail. Scène : la facture dictée. La pile de factures grandit toute seule. Décor : un coin de bureau, une pile de factures qui penche, une lampe basse. Le chef occupe les deux tiers droits du cadre, en plan poitrine. Bande crème #FCF9E6 en haut du cadre sur un cinquième de la hauteur, portant UNIQUEMENT le texte « LA FACTURE » en typographie arrondie très grasse, bleu marine #0F1A23, centré. En bas à gauche, une pastille arrondie beige #C4B28E, capitales blanches : « EP238 · 23 h ». Aucun autre texte, aucun logo ajouté, pas de filigrane, pas de bordure décorative, aucun écran de logiciel visible.",
+    "higgsfieldPrompt": "Vertical 9:16, 10 seconds, photorealistic, cinematic handheld camera, shallow depth of field, natural light, 4K. NO text overlay, NO subtitles, NO watermark, NO logo. NO visible software interface, NO phone screen.\n\nReference image attached — the FoodEatUp chef. Keep his exact face, beard, white toque, white chef jacket and white FoodEatUp apron. Do not alter his features or his build.\n\nTime of day: 23:00 — night light, a single source above the counter.\n\nA corner desk under a low lamp, a leaning stack of paper invoices threatening to slide. The camera holds on the stack. It shifts slightly, settles, does not fall.\n\nAt 8 seconds the chef from the reference image steps into frame on the right, hands still busy with his work, and speaks a single short sentence toward no one in particular — never to a screen, never to a phone. Hold on his face for the final 2 seconds.\n\nAudio: an empty room at night, a till roll, one fridge hum. No music.",
+    "scriptHeygen": null,
+    "kit": null,
+    "heygenPrompt": "Avatar : « Chef FoodEatUp » — votre avatar 3D, plan poitrine, regard caméra, fond vert (ou transparent).\nFormat : 1080 × 1920, 9:16, 25 images par seconde.\nVoix : française, masculine, débit posé, ton complice — le chef qui explique, pas celui qui vend.\nDurée visée : 9 secondes — c'est le segment 9,5 s → 18,5 s du master.\n\nScript, à coller tel quel :\n« La pile de factures grandit toute seule, c'est bien la seule chose qui pousse ici sans qu'on l'arrose. Je les dicte à Jarvis le soir même, et la pile n'existe plus. »\n\nPrononciation : « Jarvis » se dit à l'anglaise, DJAR-viss — c'est le nom de l'agent vocal, il revient dans les trente épisodes et il doit sonner pareil à chaque fois.\n\nRendu : aucun sous-titre, aucune incrustation, aucun logo, aucun décor de fond. Pas de musique. Le montage s'occupe de tout le reste.",
+    "montage": {
+      "consigne": "Monte EP238 : coupe le clip Higgsfield à 9,5 s, pose l'accroche « La pile de factures grandit toute seule. » à 5,0 s, empile l'avatar HeyGen et la capture d'écran dans la tablette de 18,5 s à 28,5 s, ferme sur la signature et le sting. Sortie 1080×1920, 37,5 s, −14 LUFS.",
+      "segments": [
+        {
+          "titre": "Hook",
+          "debut": 0,
+          "fin": 9.5,
+          "contenu": "Le plan Higgsfield, recadré en 9:16. L'accroche « La pile de factures grandit toute seule. » apparaît à 5,0 s, en bas du cadre."
+        },
+        {
+          "titre": "Transition de marque",
+          "debut": 9.5,
+          "fin": 18.5,
+          "contenu": "L'avatar HeyGen entre par la droite et prend la parole : « La pile de factures grandit toute seule, c'est bien la seule chose qui pousse ici sans qu'on l'arrose. »"
+        },
+        {
+          "titre": "Démo logiciel",
+          "debut": 18.5,
+          "fin": 28.5,
+          "contenu": "La phrase « Jarvis, note la facture du poissonnier. » s'écrit à l'écran, puis la réponse — la dépense enregistrée : fournisseur, montant, date, catégorie. L'avatar reste en médaillon en bas à gauche."
+        },
+        {
+          "titre": "Signature",
+          "debut": 28.5,
+          "fin": 32.5,
+          "contenu": "Bandeau crème, la punchline « C'est bien la seule chose qui pousse ici sans qu'on l'arrose. », le logo FoodEatUp et le repère de saison « 23 h · La clôture »."
+        },
+        {
+          "titre": "Sting",
+          "debut": 32.5,
+          "fin": 37.5,
+          "contenu": "Le sting de marque, « LA FACTURE » en incrustation, puis l'appel à l'action : https://site.foodeatup.com/ et le 06 14 18 92 25."
+        }
+      ],
+      "livrable": "1080 × 1920 · 37,5 s · H.264 · −14 LUFS · master versé dans la bibliothèque RapidoCMS, prêt à être programmé sur les cinq réseaux."
+    },
+    "metier": null,
+    "phase": null,
+    "amplitude": null,
+    "boucle": null,
+    "boucleSlug": null,
+    "grandeBoucle": null,
+    "incident": null,
+    "incidentHeure": null,
+    "incidentQuoi": null,
+    "saumon": null,
+    "story": {
+      "format": "9:16 · 1080 × 1920 · 10 s",
+      "hook": "La pile de factures grandit toute seule",
+      "punchline": "C'est bien la seule chose qui pousse ici sans qu'on l'arrose",
+      "url": null
+    },
+    "carrousel": null,
+    "imageFacebook": null,
+    "tutoriel": null
+  },
+  "EP239": {
+    "publications": {
+      "facebook": {
+        "legende": "La journée est finie. Il reste à la raconter. À personne, d'habitude.\n\nOn dit : « Jarvis, raconte-moi ma journée. Et prépare le post de demain. »\n\nLe bilan du jour, puis le brouillon de demain écrit à partir de ce bilan. La journée qu'on vient de vivre devient le contenu du lendemain.\n\n👉 Tout FoodEatUp : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "hashtags": [
+          "restaurant",
+          "restaurateur",
+          "foodeatup",
+          "jarvis",
+          "bilan",
+          "rapidocms"
+        ],
+        "motsCles": [
+          "bilan du jour",
+          "synthèse financière",
+          "contenu réseaux sociaux",
+          "pilotage restaurant"
+        ],
+        "cta": "Découvrir FoodEatUp"
+      },
+      "instagram": {
+        "legende": "La journée est finie. Il reste à la raconter.\nÀ personne, d'habitude.\n\n« Jarvis, raconte-moi ma journée. Et prépare le post de demain. »\n\nLe bilan du jour, puis le brouillon de demain écrit à partir de ce bilan. La journée qu'on vient de vivre devient le contenu du lendemain.\n\n23 h · La clôture — saison 8, « Dis-le, c'est fait ». Une journée, une phrase à la fois.\nTout est expliqué sur notre site — lien en bio.\nUne démo ? 06 14 18 92 25",
+        "hashtags": [
+          "restaurant",
+          "restaurateur",
+          "foodeatup",
+          "jarvis",
+          "bilan",
+          "rapidocms",
+          "vegefruites",
+          "coupdefeu",
+          "logicielrestaurant",
+          "assistantvocal"
+        ],
+        "motsCles": [
+          "bilan du jour",
+          "synthèse financière",
+          "contenu réseaux sociaux",
+          "pilotage restaurant"
+        ],
+        "cta": "Tout est en bio"
+      },
+      "tiktok": {
+        "legende": "La journée est finie. Il reste à la raconter.\nÀ personne, d'habitude.\n\n« Jarvis, raconte-moi ma journée. Et prépare le post de demain. » 🎙️\n\nLe bilan du jour, puis le brouillon de demain écrit à partir de ce bilan. La journée qu'on vient de vivre devient le contenu du lendemain.",
+        "hashtags": [
+          "restaurant",
+          "restaurateur",
+          "foodeatup",
+          "jarvis",
+          "bilan"
+        ],
+        "motsCles": [
+          "bilan du jour",
+          "synthèse financière",
+          "contenu réseaux sociaux",
+          "pilotage restaurant"
+        ],
+        "cta": "Lien en bio"
+      },
+      "linkedin": {
+        "legende": "La journée est finie. Il reste à la raconter.\n\nCe qu'on dit : « Jarvis, raconte-moi ma journée. Et prépare le post de demain. »\n\nLe bilan du jour, puis le brouillon de demain écrit à partir de ce bilan. La journée qu'on vient de vivre devient le contenu du lendemain.\n\nL'outil appelé : finance_summary.\n\nConcrètement : Le bilan de la journée sert deux fois : à savoir où on en est, et à écrire ce qu'on publiera demain. Rien n'est saisi deux fois.\n\nEn savoir plus : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "hashtags": [
+          "restauration",
+          "foodeatup",
+          "jarvis",
+          "bilan",
+          "rapidocms"
+        ],
+        "motsCles": [
+          "bilan du jour",
+          "synthèse financière",
+          "contenu réseaux sociaux",
+          "pilotage restaurant"
+        ],
+        "cta": "Découvrir FoodEatUp"
+      },
+      "youtube": {
+        "legende": "La journée est finie. Il reste à la raconter. À personne, d'habitude.\n\nOn dit : « Jarvis, raconte-moi ma journée. Et prépare le post de demain. »\n\nLe bilan du jour, puis le brouillon de demain écrit à partir de ce bilan. La journée qu'on vient de vivre devient le contenu du lendemain.\n\nL'outil appelé : finance_summary.\n\n— — —\n\n🔗 https://site.foodeatup.com/\n\n📞 Une démo ? 06 14 18 92 25\n🌐 foodeatup.com\n\nSérie « Le Coup de Feu » — saison 8 « Dis-le, c'est fait », épisode 29 sur 30, et dernière saison de la série.\n23 h · La clôture · À l'écran : Le Brocoli\nModule Comptabilité · Le bilan du jour\n\nJarvis est l'agent vocal de FoodEatUp, le logiciel qui réunit la caisse, le stock, les plannings, l'HACCP et le marketing d'un restaurant au même endroit.\n",
+        "hashtags": [
+          "Shorts",
+          "restaurant",
+          "restaurateur",
+          "foodeatup",
+          "jarvis",
+          "bilan",
+          "rapidocms",
+          "coupdefeu"
+        ],
+        "motsCles": [
+          "bilan du jour",
+          "synthèse financière",
+          "contenu réseaux sociaux",
+          "pilotage restaurant"
+        ],
+        "cta": "Découvrir FoodEatUp",
+        "titre": "Raconte-moi ma journée — 23 h | FoodEatUp"
+      }
+    },
+    "promptVignette": "Photo réaliste, cadrage vertical 9:16. Il est 23 h : lumière de nuit, une seule source au-dessus du comptoir. Le chef de l'image de référence — MÊME visage, même barbe, même toque blanche, même veste de cuisine blanche, même tablier blanc au logo FoodEatUp bleu. Ne change ni ses traits, ni sa morphologie, ni sa tenue. Il ne regarde AUCUN écran et ne tient AUCUN téléphone : il parle, simplement, les mains occupées par son travail. Scène : raconte-moi ma journée. La journée est finie. Il reste à la raconter. Décor : une salle éteinte, une chaise dépliée au milieu, quelqu'un assis dos à nous. Le chef occupe les deux tiers droits du cadre, en plan poitrine. Bande crème #FCF9E6 en haut du cadre sur un cinquième de la hauteur, portant UNIQUEMENT le texte « MA JOURNÉE » en typographie arrondie très grasse, bleu marine #0F1A23, centré. En bas à gauche, une pastille arrondie beige #C4B28E, capitales blanches : « EP239 · 23 h ». Aucun autre texte, aucun logo ajouté, pas de filigrane, pas de bordure décorative, aucun écran de logiciel visible.",
+    "higgsfieldPrompt": "Vertical 9:16, 10 seconds, photorealistic, cinematic handheld camera, shallow depth of field, natural light, 4K. NO text overlay, NO subtitles, NO watermark, NO logo. NO visible software interface, NO phone screen.\n\nReference image attached — the FoodEatUp chef. Keep his exact face, beard, white toque, white chef jacket and white FoodEatUp apron. Do not alter his features or his build.\n\nTime of day: 23:00 — night light, a single source above the counter.\n\nA darkened dining room with one folding chair set in the middle. Someone sits in it with their back to us, shoulders down, not moving. The kitchen light is off behind them.\n\nAt 8 seconds the chef from the reference image steps into frame on the right, hands still busy with his work, and speaks a single short sentence toward no one in particular — never to a screen, never to a phone. Hold on his face for the final 2 seconds.\n\nAudio: an empty room at night, a till roll, one fridge hum. No music.",
+    "scriptHeygen": null,
+    "kit": null,
+    "heygenPrompt": "Avatar : « Chef FoodEatUp » — votre avatar 3D, plan poitrine, regard caméra, fond vert (ou transparent).\nFormat : 1080 × 1920, 9:16, 25 images par seconde.\nVoix : française, masculine, débit posé, ton complice — le chef qui explique, pas celui qui vend.\nDurée visée : 9 secondes — c'est le segment 9,5 s → 18,5 s du master.\n\nScript, à coller tel quel :\n« La journée est finie, il reste à la raconter — à personne, d'habitude. Je demande le bilan à Jarvis, et il en tire le post de demain. La journée devient le contenu. »\n\nPrononciation : « Jarvis » se dit à l'anglaise, DJAR-viss — c'est le nom de l'agent vocal, il revient dans les trente épisodes et il doit sonner pareil à chaque fois.\n\nRendu : aucun sous-titre, aucune incrustation, aucun logo, aucun décor de fond. Pas de musique. Le montage s'occupe de tout le reste.",
+    "montage": {
+      "consigne": "Monte EP239 : coupe le clip Higgsfield à 9,5 s, pose l'accroche « La journée est finie. Il reste à la raconter. » à 5,0 s, empile l'avatar HeyGen et la capture d'écran dans la tablette de 18,5 s à 28,5 s, ferme sur la signature et le sting. Sortie 1080×1920, 37,5 s, −14 LUFS.",
+      "segments": [
+        {
+          "titre": "Hook",
+          "debut": 0,
+          "fin": 9.5,
+          "contenu": "Le plan Higgsfield, recadré en 9:16. L'accroche « La journée est finie. Il reste à la raconter. » apparaît à 5,0 s, en bas du cadre."
+        },
+        {
+          "titre": "Transition de marque",
+          "debut": 9.5,
+          "fin": 18.5,
+          "contenu": "L'avatar HeyGen entre par la droite et prend la parole : « La journée est finie, il reste à la raconter — à personne, d'habitude. »"
+        },
+        {
+          "titre": "Démo logiciel",
+          "debut": 18.5,
+          "fin": 28.5,
+          "contenu": "La phrase « Jarvis, raconte-moi ma journée. Et prépare le post de demain. » s'écrit à l'écran, puis la réponse — le bilan du jour, puis le brouillon du lendemain écrit à partir de lui. L'avatar reste en médaillon en bas à gauche."
+        },
+        {
+          "titre": "Signature",
+          "debut": 28.5,
+          "fin": 32.5,
+          "contenu": "Bandeau crème, la punchline « À personne, d'habitude. », le logo FoodEatUp et le repère de saison « 23 h · La clôture »."
+        },
+        {
+          "titre": "Sting",
+          "debut": 32.5,
+          "fin": 37.5,
+          "contenu": "Le sting de marque, « MA JOURNÉE » en incrustation, puis l'appel à l'action : https://site.foodeatup.com/ et le 06 14 18 92 25."
+        }
+      ],
+      "livrable": "1080 × 1920 · 37,5 s · H.264 · −14 LUFS · master versé dans la bibliothèque RapidoCMS, prêt à être programmé sur les cinq réseaux."
+    },
+    "metier": null,
+    "phase": null,
+    "amplitude": null,
+    "boucle": null,
+    "boucleSlug": null,
+    "grandeBoucle": null,
+    "incident": null,
+    "incidentHeure": null,
+    "incidentQuoi": null,
+    "saumon": null,
+    "story": {
+      "format": "9:16 · 1080 × 1920 · 10 s",
+      "hook": "La journée est finie. Il reste à la raconter",
+      "punchline": "À personne, d'habitude",
+      "url": null
+    },
+    "carrousel": null,
+    "imageFacebook": null,
+    "tutoriel": null
+  },
+  "EP240": {
+    "publications": {
+      "facebook": {
+        "legende": "Deux cent quarante épisodes. Huit saisons. Et pour finir, une phrase de trois mots.\n\nOn dit : « Jarvis, bonne nuit. »\n\nRien. Il n'y a plus rien à demander : la commande est partie, la caisse est close, le post de demain attend son heure. Demain, la journée se passera pareil.\n\n👉 Tout FoodEatUp : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "hashtags": [
+          "restaurant",
+          "restaurateur",
+          "foodeatup",
+          "jarvis",
+          "vegefruites",
+          "generique"
+        ],
+        "motsCles": [
+          "logiciel restaurant",
+          "assistant vocal restaurant",
+          "Jarvis FoodEatUp",
+          "gestion de restaurant"
+        ],
+        "cta": "Découvrir FoodEatUp"
+      },
+      "instagram": {
+        "legende": "Deux cent quarante épisodes. Huit saisons.\nEt pour finir, une phrase de trois mots.\n\n« Jarvis, bonne nuit. »\n\nRien. Il n'y a plus rien à demander : la commande est partie, la caisse est close, le post de demain attend son heure. Demain, la journée se passera pareil.\n\n23 h · La clôture — saison 8, « Dis-le, c'est fait ». Une journée, une phrase à la fois.\nTout est expliqué sur notre site — lien en bio.\nUne démo ? 06 14 18 92 25",
+        "hashtags": [
+          "restaurant",
+          "restaurateur",
+          "foodeatup",
+          "jarvis",
+          "vegefruites",
+          "generique",
+          "vegefruites",
+          "coupdefeu",
+          "logicielrestaurant",
+          "assistantvocal"
+        ],
+        "motsCles": [
+          "logiciel restaurant",
+          "assistant vocal restaurant",
+          "Jarvis FoodEatUp",
+          "gestion de restaurant"
+        ],
+        "cta": "Tout est en bio"
+      },
+      "tiktok": {
+        "legende": "Deux cent quarante épisodes. Huit saisons.\nEt pour finir, une phrase de trois mots.\n\n« Jarvis, bonne nuit. » 🎙️\n\nRien. Il n'y a plus rien à demander : la commande est partie, la caisse est close, le post de demain attend son heure. Demain, la journée se passera pareil.",
+        "hashtags": [
+          "restaurant",
+          "restaurateur",
+          "foodeatup",
+          "jarvis",
+          "vegefruites"
+        ],
+        "motsCles": [
+          "logiciel restaurant",
+          "assistant vocal restaurant",
+          "Jarvis FoodEatUp",
+          "gestion de restaurant"
+        ],
+        "cta": "Lien en bio"
+      },
+      "linkedin": {
+        "legende": "Deux cent quarante épisodes. Huit saisons.\n\nCe qu'on dit : « Jarvis, bonne nuit. »\n\nRien. Il n'y a plus rien à demander : la commande est partie, la caisse est close, le post de demain attend son heure. Demain, la journée se passera pareil.\n\nConcrètement : La série se termine sur ce qu'elle a passé huit saisons à démontrer : un restaurant qui tourne sans qu'on ait ouvert un logiciel, et un patron qui rentre chez lui à une heure normale.\n\nEn savoir plus : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "hashtags": [
+          "restauration",
+          "foodeatup",
+          "jarvis",
+          "vegefruites",
+          "generique"
+        ],
+        "motsCles": [
+          "logiciel restaurant",
+          "assistant vocal restaurant",
+          "Jarvis FoodEatUp",
+          "gestion de restaurant"
+        ],
+        "cta": "Découvrir FoodEatUp"
+      },
+      "youtube": {
+        "legende": "Deux cent quarante épisodes. Huit saisons. Et pour finir, une phrase de trois mots.\n\nOn dit : « Jarvis, bonne nuit. »\n\nRien. Il n'y a plus rien à demander : la commande est partie, la caisse est close, le post de demain attend son heure. Demain, la journée se passera pareil.\n\n— — —\n\n🔗 https://site.foodeatup.com/\n\n📞 Une démo ? 06 14 18 92 25\n🌐 foodeatup.com\n\nSérie « Le Coup de Feu » — saison 8 « Dis-le, c'est fait », épisode 30 sur 30, et dernière saison de la série.\n23 h · La clôture · À l'écran : La Pomme de Terre\nModule La maison · Le générique\n\nJarvis est l'agent vocal de FoodEatUp, le logiciel qui réunit la caisse, le stock, les plannings, l'HACCP et le marketing d'un restaurant au même endroit.\n",
+        "hashtags": [
+          "Shorts",
+          "restaurant",
+          "restaurateur",
+          "foodeatup",
+          "jarvis",
+          "vegefruites",
+          "generique",
+          "coupdefeu"
+        ],
+        "motsCles": [
+          "logiciel restaurant",
+          "assistant vocal restaurant",
+          "Jarvis FoodEatUp",
+          "gestion de restaurant"
+        ],
+        "cta": "Découvrir FoodEatUp",
+        "titre": "Bonne nuit — 00 h | FoodEatUp"
+      }
+    },
+    "promptVignette": "Photo réaliste, cadrage vertical 9:16. Il est 00 h : lumière de nuit vue depuis la rue, la dernière lampe qui s'éteint. Le chef de l'image de référence — MÊME visage, même barbe, même toque blanche, même veste de cuisine blanche, même tablier blanc au logo FoodEatUp bleu. Ne change ni ses traits, ni sa morphologie, ni sa tenue. Il ne regarde AUCUN écran et ne tient AUCUN téléphone : il parle, simplement, les mains occupées par son travail. Scène : bonne nuit. Deux cent quarante épisodes. Huit saisons. Décor : la devanture du restaurant vue du trottoir, la dernière lumière qui s'éteint. Le chef occupe les deux tiers droits du cadre, en plan poitrine. Bande crème #FCF9E6 en haut du cadre sur un cinquième de la hauteur, portant UNIQUEMENT le texte « BONNE NUIT » en typographie arrondie très grasse, bleu marine #0F1A23, centré. En bas à gauche, une pastille arrondie beige #C4B28E, capitales blanches : « EP240 · 00 h ». Aucun autre texte, aucun logo ajouté, pas de filigrane, pas de bordure décorative, aucun écran de logiciel visible.",
+    "higgsfieldPrompt": "Vertical 9:16, 10 seconds, photorealistic, cinematic handheld camera, shallow depth of field, natural light, 4K. NO text overlay, NO subtitles, NO watermark, NO logo. NO visible software interface, NO phone screen.\n\nReference image attached — the FoodEatUp chef. Keep his exact face, beard, white toque, white chef jacket and white FoodEatUp apron. Do not alter his features or his build.\n\nTime of day: 00:00 — night light seen from the street, the last lamp going out.\n\nThe restaurant seen from the pavement at night. The last interior light goes out. The street is quiet. A curtain of warm light disappears from the window and the frame settles into blue.\n\nAt 8 seconds the chef from the reference image steps into frame on the right, hands still busy with his work, and speaks a single short sentence toward no one in particular — never to a screen, never to a phone. Hold on his face for the final 2 seconds.\n\nAudio: quiet street at night, a shutter, then nothing. No music.",
+    "scriptHeygen": null,
+    "kit": null,
+    "heygenPrompt": "Avatar : « Chef FoodEatUp » — votre avatar 3D, plan poitrine, regard caméra, fond vert (ou transparent).\nFormat : 1080 × 1920, 9:16, 25 images par seconde.\nVoix : française, masculine, débit posé, ton complice — le chef qui explique, pas celui qui vend.\nDurée visée : 9 secondes — c'est le segment 9,5 s → 18,5 s du master.\n\nScript, à coller tel quel :\n« Deux cent quarante épisodes pour en arriver là : une phrase de trois mots. Jarvis, bonne nuit. Demain, tout ça se repassera pareil, et je n'aurai rien eu à ouvrir. »\n\nPrononciation : « Jarvis » se dit à l'anglaise, DJAR-viss — c'est le nom de l'agent vocal, il revient dans les trente épisodes et il doit sonner pareil à chaque fois.\n\nRendu : aucun sous-titre, aucune incrustation, aucun logo, aucun décor de fond. Pas de musique. Le montage s'occupe de tout le reste.",
+    "montage": {
+      "consigne": "Monte EP240 : coupe le clip Higgsfield à 9,5 s, pose l'accroche « Deux cent quarante épisodes. Huit saisons. » à 5,0 s, empile l'avatar HeyGen et la capture d'écran dans la tablette de 18,5 s à 28,5 s, ferme sur la signature et le sting. Sortie 1080×1920, 37,5 s, −14 LUFS.",
+      "segments": [
+        {
+          "titre": "Hook",
+          "debut": 0,
+          "fin": 9.5,
+          "contenu": "Le plan Higgsfield, recadré en 9:16. L'accroche « Deux cent quarante épisodes. Huit saisons. » apparaît à 5,0 s, en bas du cadre."
+        },
+        {
+          "titre": "Transition de marque",
+          "debut": 9.5,
+          "fin": 18.5,
+          "contenu": "L'avatar HeyGen entre par la droite et prend la parole : « Deux cent quarante épisodes pour en arriver là : une phrase de trois mots. »"
+        },
+        {
+          "titre": "Démo logiciel",
+          "debut": 18.5,
+          "fin": 28.5,
+          "contenu": "La phrase « Jarvis, bonne nuit. » s'écrit à l'écran, puis la réponse — l'écran s'éteint : rien à afficher, tout est fait. L'avatar reste en médaillon en bas à gauche."
+        },
+        {
+          "titre": "Signature",
+          "debut": 28.5,
+          "fin": 32.5,
+          "contenu": "Bandeau crème, la punchline « Et pour finir, une phrase de trois mots. », le logo FoodEatUp et le repère de saison « 23 h · La clôture »."
+        },
+        {
+          "titre": "Sting",
+          "debut": 32.5,
+          "fin": 37.5,
+          "contenu": "Le sting de marque, « BONNE NUIT » en incrustation, puis l'appel à l'action : https://site.foodeatup.com/ et le 06 14 18 92 25."
+        }
+      ],
+      "livrable": "1080 × 1920 · 37,5 s · H.264 · −14 LUFS · master versé dans la bibliothèque RapidoCMS, prêt à être programmé sur les cinq réseaux."
+    },
+    "metier": null,
+    "phase": null,
+    "amplitude": null,
+    "boucle": null,
+    "boucleSlug": null,
+    "grandeBoucle": null,
+    "incident": null,
+    "incidentHeure": null,
+    "incidentQuoi": null,
+    "saumon": null,
+    "story": {
+      "format": "9:16 · 1080 × 1920 · 10 s",
+      "hook": "Deux cent quarante épisodes. Huit saisons",
+      "punchline": "Et pour finir, une phrase de trois mots",
+      "url": null
+    },
     "carrousel": null,
     "imageFacebook": null,
     "tutoriel": null
@@ -31341,6 +41259,8 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "higgsfieldPrompt": "Vertical 9:16, 10 secondes, 4K, photoréaliste, caméra à l'épaule, profondeur de champ courte. PAS de texte incrusté, PAS de sous-titres, PAS de filigrane, PAS de logo.\n\nPERSONNAGE — le chef de cuisine, tenue de son poste, visage lisible. Une seule personne au premier plan.\n\nHEURE — 07h00. Lumière froide d'avant l'aube, une seule source allumée.\n\nDÉCOR — une cuisine professionnelle en inox, vu depuis le poste de travail du personnage. AUCUN écran allumé, AUCUNE tablette, AUCUNE interface visible : cette série montre le geste, pas l'outil.\n\nACTION — Sept heures. Il ouvre seul, relève les températures, contrôle la livraison, et décide la carte du jour sur ce qui est arrivé.\nÀ 5 secondes, quelque chose se tend : un regard vers la porte, un geste suspendu, un objet qu'on repose.\nDeux dernières secondes : le personnage immobile, il regarde son poste, pas l'objectif.\n\nAUDIO — ambiance réelle du lieu, aucun dialogue, pas de musique.",
     "scriptHeygen": "J'ouvre à sept heures. Températures, livraison, et je décide la carte du jour sur ce qui est arrivé. Personne ne verra cette heure-là.",
     "kit": null,
+    "heygenPrompt": null,
+    "montage": null,
     "metier": "Le chef de cuisine",
     "phase": "Avant le service",
     "amplitude": "07h00 → 23h00",
@@ -31484,6 +41404,8 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "higgsfieldPrompt": "Vertical 9:16, 10 secondes, 4K, photoréaliste, caméra à l'épaule, profondeur de champ courte. PAS de texte incrusté, PAS de sous-titres, PAS de filigrane, PAS de logo.\n\nPERSONNAGE — le chef de cuisine, tenue de son poste, visage lisible. Une seule personne au premier plan.\n\nHEURE — 20h15. Lumière chaude et saturée, vapeur, mouvement constant.\n\nDÉCOR — une cuisine professionnelle en inox, vu depuis le poste de travail du personnage. AUCUN écran allumé, AUCUNE tablette, AUCUNE interface visible : cette série montre le geste, pas l'outil.\n\nACTION — Le pass, les quatre canaux, la table de douze qui tombe, et le pavé qui revient. Il tranche sans quitter son poste.\nÀ 5 secondes, quelque chose se tend : un regard vers la porte, un geste suspendu, un objet qu'on repose.\nDeux dernières secondes : le personnage immobile, il regarde son poste, pas l'objectif.\n\nAUDIO — ambiance réelle du lieu, aucun dialogue, pas de musique.",
     "scriptHeygen": "Je suis le seul ici à voir la marge et le coup de feu en même temps. Alors je tranche vite, et je me trompe parfois.",
     "kit": null,
+    "heygenPrompt": null,
+    "montage": null,
     "metier": "Le chef de cuisine",
     "phase": "Pendant le service",
     "amplitude": "07h00 → 23h00",
@@ -31627,6 +41549,8 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "higgsfieldPrompt": "Vertical 9:16, 10 secondes, 4K, photoréaliste, caméra à l'épaule, profondeur de champ courte. PAS de texte incrusté, PAS de sous-titres, PAS de filigrane, PAS de logo.\n\nPERSONNAGE — le chef de cuisine, tenue de son poste, visage lisible. Une seule personne au premier plan.\n\nHEURE — 23h30. Lumière crue de fin de service, néons, surfaces vides.\n\nDÉCOR — une cuisine professionnelle en inox, vu depuis le poste de travail du personnage. AUCUN écran allumé, AUCUNE tablette, AUCUNE interface visible : cette série montre le geste, pas l'outil.\n\nACTION — Il ferme midi, il ferme le soir. Une photo pour le nettoyage, les pertes saisies, et la marge du jour qui s'affiche seule.\nÀ 5 secondes, quelque chose se tend : un regard vers la porte, un geste suspendu, un objet qu'on repose.\nDeux dernières secondes : le personnage immobile, il regarde son poste, pas l'objectif.\n\nAUDIO — ambiance réelle du lieu, aucun dialogue, pas de musique.",
     "scriptHeygen": "Je ferme deux fois par jour. Le soir, je veux savoir si on a gagné de l'argent avant d'éteindre — pas à la fin du mois.",
     "kit": null,
+    "heygenPrompt": null,
+    "montage": null,
     "metier": "Le chef de cuisine",
     "phase": "Après le service",
     "amplitude": "07h00 → 23h00",
@@ -31770,6 +41694,8 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "higgsfieldPrompt": "Vertical 9:16, 10 secondes, 4K, photoréaliste, caméra à l'épaule, profondeur de champ courte. PAS de texte incrusté, PAS de sous-titres, PAS de filigrane, PAS de logo.\n\nPERSONNAGE — le second de cuisine, tenue de son poste, visage lisible. Une seule personne au premier plan.\n\nHEURE — 07h00. Lumière froide d'avant l'aube, une seule source allumée.\n\nDÉCOR — une cuisine professionnelle en inox, vu depuis le poste de travail du personnage. AUCUN écran allumé, AUCUNE tablette, AUCUNE interface visible : cette série montre le geste, pas l'outil.\n\nACTION — La mise en place pour deux services, sans savoir encore lesquels des plats vont partir. Il produit large, il étiquette tout.\nÀ 5 secondes, quelque chose se tend : un regard vers la porte, un geste suspendu, un objet qu'on repose.\nDeux dernières secondes : le personnage immobile, il regarde son poste, pas l'objectif.\n\nAUDIO — ambiance réelle du lieu, aucun dialogue, pas de musique.",
     "scriptHeygen": "Je prépare pour deux services sans savoir encore lesquels des plats vont partir. Alors je produis large, et j'étiquette tout.",
     "kit": null,
+    "heygenPrompt": null,
+    "montage": null,
     "metier": "Le second de cuisine",
     "phase": "Avant le service",
     "amplitude": "07h00 → 22h00",
@@ -31913,6 +41839,8 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "higgsfieldPrompt": "Vertical 9:16, 10 secondes, 4K, photoréaliste, caméra à l'épaule, profondeur de champ courte. PAS de texte incrusté, PAS de sous-titres, PAS de filigrane, PAS de logo.\n\nPERSONNAGE — le second de cuisine, tenue de son poste, visage lisible. Une seule personne au premier plan.\n\nHEURE — 20h15. Lumière chaude et saturée, vapeur, mouvement constant.\n\nDÉCOR — une cuisine professionnelle en inox, vu depuis le poste de travail du personnage. AUCUN écran allumé, AUCUNE tablette, AUCUNE interface visible : cette série montre le geste, pas l'outil.\n\nACTION — Dix-neuf heures quarante : deux portions. Il trouve le substitut, prévient la salle, et rien ne s'arrête.\nÀ 5 secondes, quelque chose se tend : un regard vers la porte, un geste suspendu, un objet qu'on repose.\nDeux dernières secondes : le personnage immobile, il regarde son poste, pas l'objectif.\n\nAUDIO — ambiance réelle du lieu, aucun dialogue, pas de musique.",
     "scriptHeygen": "Vingt heures moins vingt, il reste deux portions. Je trouve autre chose, je préviens la salle, et rien ne s'arrête. C'est mon métier.",
     "kit": null,
+    "heygenPrompt": null,
+    "montage": null,
     "metier": "Le second de cuisine",
     "phase": "Pendant le service",
     "amplitude": "07h00 → 22h00",
@@ -32056,6 +41984,8 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "higgsfieldPrompt": "Vertical 9:16, 10 secondes, 4K, photoréaliste, caméra à l'épaule, profondeur de champ courte. PAS de texte incrusté, PAS de sous-titres, PAS de filigrane, PAS de logo.\n\nPERSONNAGE — le second de cuisine, tenue de son poste, visage lisible. Une seule personne au premier plan.\n\nHEURE — 23h30. Lumière crue de fin de service, néons, surfaces vides.\n\nDÉCOR — une cuisine professionnelle en inox, vu depuis le poste de travail du personnage. AUCUN écran allumé, AUCUNE tablette, AUCUNE interface visible : cette série montre le geste, pas l'outil.\n\nACTION — Il range, il compte ce qui reste, il note ce qui a manqué. Sa journée s'arrête là où commence la clôture.\nÀ 5 secondes, quelque chose se tend : un regard vers la porte, un geste suspendu, un objet qu'on repose.\nDeux dernières secondes : le personnage immobile, il regarde son poste, pas l'objectif.\n\nAUDIO — ambiance réelle du lieu, aucun dialogue, pas de musique.",
     "scriptHeygen": "Je rends une cuisine que le chef peut fermer. Ma journée s'arrête là où commence la sienne.",
     "kit": null,
+    "heygenPrompt": null,
+    "montage": null,
     "metier": "Le second de cuisine",
     "phase": "Après le service",
     "amplitude": "07h00 → 22h00",
@@ -32199,6 +42129,8 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "higgsfieldPrompt": "Vertical 9:16, 10 secondes, 4K, photoréaliste, caméra à l'épaule, profondeur de champ courte. PAS de texte incrusté, PAS de sous-titres, PAS de filigrane, PAS de logo.\n\nPERSONNAGE — le chef de partie, tenue de son poste, visage lisible. Une seule personne au premier plan.\n\nHEURE — 07h00. Lumière froide d'avant l'aube, une seule source allumée.\n\nDÉCOR — une cuisine professionnelle en inox, vu depuis le poste de travail du personnage. AUCUN écran allumé, AUCUNE tablette, AUCUNE interface visible : cette série montre le geste, pas l'outil.\n\nACTION — Son poste, sa carte, et une seule question : combien. Trop, c'est de la perte ; pas assez, c'est un plat retiré à vingt heures.\nÀ 5 secondes, quelque chose se tend : un regard vers la porte, un geste suspendu, un objet qu'on repose.\nDeux dernières secondes : le personnage immobile, il regarde son poste, pas l'objectif.\n\nAUDIO — ambiance réelle du lieu, aucun dialogue, pas de musique.",
     "scriptHeygen": "Mon poste, ma carte, une seule question : combien. Trop, c'est de la perte. Pas assez, c'est un plat retiré à vingt heures.",
     "kit": null,
+    "heygenPrompt": null,
+    "montage": null,
     "metier": "Le chef de partie",
     "phase": "Avant le service",
     "amplitude": "09h00 → 22h30",
@@ -32342,6 +42274,8 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "higgsfieldPrompt": "Vertical 9:16, 10 secondes, 4K, photoréaliste, caméra à l'épaule, profondeur de champ courte. PAS de texte incrusté, PAS de sous-titres, PAS de filigrane, PAS de logo.\n\nPERSONNAGE — le chef de partie, tenue de son poste, visage lisible. Une seule personne au premier plan.\n\nHEURE — 20h15. Lumière chaude et saturée, vapeur, mouvement constant.\n\nDÉCOR — une cuisine professionnelle en inox, vu depuis le poste de travail du personnage. AUCUN écran allumé, AUCUNE tablette, AUCUNE interface visible : cette série montre le geste, pas l'outil.\n\nACTION — Il tape le fond du bac à 19 h 40. Il l'avait dit à dix heures.\nÀ 5 secondes, quelque chose se tend : un regard vers la porte, un geste suspendu, un objet qu'on repose.\nDeux dernières secondes : le personnage immobile, il regarde son poste, pas l'objectif.\n\nAUDIO — ambiance réelle du lieu, aucun dialogue, pas de musique.",
     "scriptHeygen": "Je tape le fond du bac à dix-neuf heures quarante. Je l'avais dit ce matin. Personne ne me l'a demandé deux fois.",
     "kit": null,
+    "heygenPrompt": null,
+    "montage": null,
     "metier": "Le chef de partie",
     "phase": "Pendant le service",
     "amplitude": "09h00 → 22h30",
@@ -32485,6 +42419,8 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "higgsfieldPrompt": "Vertical 9:16, 10 secondes, 4K, photoréaliste, caméra à l'épaule, profondeur de champ courte. PAS de texte incrusté, PAS de sous-titres, PAS de filigrane, PAS de logo.\n\nPERSONNAGE — le chef de partie, tenue de son poste, visage lisible. Une seule personne au premier plan.\n\nHEURE — 23h30. Lumière crue de fin de service, néons, surfaces vides.\n\nDÉCOR — une cuisine professionnelle en inox, vu depuis le poste de travail du personnage. AUCUN écran allumé, AUCUNE tablette, AUCUNE interface visible : cette série montre le geste, pas l'outil.\n\nACTION — Il pèse ce qui n'est pas parti. C'est la seule mesure honnête de la journée, et elle arrive trop tard pour servir.\nÀ 5 secondes, quelque chose se tend : un regard vers la porte, un geste suspendu, un objet qu'on repose.\nDeux dernières secondes : le personnage immobile, il regarde son poste, pas l'objectif.\n\nAUDIO — ambiance réelle du lieu, aucun dialogue, pas de musique.",
     "scriptHeygen": "Je pèse ce qui n'est pas parti. C'est la seule mesure honnête de la journée, et elle arrive trop tard.",
     "kit": null,
+    "heygenPrompt": null,
+    "montage": null,
     "metier": "Le chef de partie",
     "phase": "Après le service",
     "amplitude": "09h00 → 22h30",
@@ -32628,6 +42564,8 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "higgsfieldPrompt": "Vertical 9:16, 10 secondes, 4K, photoréaliste, caméra à l'épaule, profondeur de champ courte. PAS de texte incrusté, PAS de sous-titres, PAS de filigrane, PAS de logo.\n\nPERSONNAGE — le cuisinier, tenue de son poste, visage lisible. Une seule personne au premier plan.\n\nHEURE — 07h00. Lumière froide d'avant l'aube, une seule source allumée.\n\nDÉCOR — une cuisine professionnelle en inox, vu depuis le poste de travail du personnage. AUCUN écran allumé, AUCUNE tablette, AUCUNE interface visible : cette série montre le geste, pas l'outil.\n\nACTION — Réception, températures, étiquettes. Trois gestes qu'on lui demande de noter et que personne ne relit.\nÀ 5 secondes, quelque chose se tend : un regard vers la porte, un geste suspendu, un objet qu'on repose.\nDeux dernières secondes : le personnage immobile, il regarde son poste, pas l'objectif.\n\nAUDIO — ambiance réelle du lieu, aucun dialogue, pas de musique.",
     "scriptHeygen": "Réception, températures, étiquettes. On me demande de tout noter. Je ne sais pas qui le relit.",
     "kit": null,
+    "heygenPrompt": null,
+    "montage": null,
     "metier": "Le cuisinier",
     "phase": "Avant le service",
     "amplitude": "09h30 → 22h30",
@@ -32771,6 +42709,8 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "higgsfieldPrompt": "Vertical 9:16, 10 secondes, 4K, photoréaliste, caméra à l'épaule, profondeur de champ courte. PAS de texte incrusté, PAS de sous-titres, PAS de filigrane, PAS de logo.\n\nPERSONNAGE — le cuisinier, tenue de son poste, visage lisible. Une seule personne au premier plan.\n\nHEURE — 20h15. Lumière chaude et saturée, vapeur, mouvement constant.\n\nDÉCOR — une cuisine professionnelle en inox, vu depuis le poste de travail du personnage. AUCUN écran allumé, AUCUNE tablette, AUCUNE interface visible : cette série montre le geste, pas l'outil.\n\nACTION — Il envoie. Il n'a ni la vue d'ensemble ni le temps de la demander.\nÀ 5 secondes, quelque chose se tend : un regard vers la porte, un geste suspendu, un objet qu'on repose.\nDeux dernières secondes : le personnage immobile, il regarde son poste, pas l'objectif.\n\nAUDIO — ambiance réelle du lieu, aucun dialogue, pas de musique.",
     "scriptHeygen": "J'envoie. Deux cents fois le même geste, sans une erreur. Je n'ai ni la vue d'ensemble ni le temps de la demander.",
     "kit": null,
+    "heygenPrompt": null,
+    "montage": null,
     "metier": "Le cuisinier",
     "phase": "Pendant le service",
     "amplitude": "09h30 → 22h30",
@@ -32914,6 +42854,8 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "higgsfieldPrompt": "Vertical 9:16, 10 secondes, 4K, photoréaliste, caméra à l'épaule, profondeur de champ courte. PAS de texte incrusté, PAS de sous-titres, PAS de filigrane, PAS de logo.\n\nPERSONNAGE — le cuisinier, tenue de son poste, visage lisible. Une seule personne au premier plan.\n\nHEURE — 23h30. Lumière crue de fin de service, néons, surfaces vides.\n\nDÉCOR — une cuisine professionnelle en inox, vu depuis le poste de travail du personnage. AUCUN écran allumé, AUCUNE tablette, AUCUNE interface visible : cette série montre le geste, pas l'outil.\n\nACTION — Quinze heures. L'inspecteur demande les relevés du mois. Ils sont sur un cahier, ou ils sont à jour.\nÀ 5 secondes, quelque chose se tend : un regard vers la porte, un geste suspendu, un objet qu'on repose.\nDeux dernières secondes : le personnage immobile, il regarde son poste, pas l'objectif.\n\nAUDIO — ambiance réelle du lieu, aucun dialogue, pas de musique.",
     "scriptHeygen": "Quinze heures, l'inspecteur veut les relevés du mois. Ils sont sur un cahier. On verra bien.",
     "kit": null,
+    "heygenPrompt": null,
+    "montage": null,
     "metier": "Le cuisinier",
     "phase": "Après le service",
     "amplitude": "09h30 → 22h30",
@@ -33057,6 +42999,8 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "higgsfieldPrompt": "Vertical 9:16, 10 secondes, 4K, photoréaliste, caméra à l'épaule, profondeur de champ courte. PAS de texte incrusté, PAS de sous-titres, PAS de filigrane, PAS de logo.\n\nPERSONNAGE — le plongeur, tenue de son poste, visage lisible. Une seule personne au premier plan.\n\nHEURE — 07h00. Lumière froide d'avant l'aube, une seule source allumée.\n\nDÉCOR — une cuisine professionnelle en inox, vu depuis le poste de travail du personnage. AUCUN écran allumé, AUCUNE tablette, AUCUNE interface visible : cette série montre le geste, pas l'outil.\n\nACTION — Onze heures. Rien à préparer, tout à recevoir. Sa journée commence au premier plat sale.\nÀ 5 secondes, quelque chose se tend : un regard vers la porte, un geste suspendu, un objet qu'on repose.\nDeux dernières secondes : le personnage immobile, il regarde son poste, pas l'objectif.\n\nAUDIO — ambiance réelle du lieu, aucun dialogue, pas de musique.",
     "scriptHeygen": "J'arrive quand tout le monde est déjà là. Rien à préparer : ma journée commence au premier plat sale.",
     "kit": null,
+    "heygenPrompt": null,
+    "montage": null,
     "metier": "Le plongeur",
     "phase": "Avant le service",
     "amplitude": "11h00 → 23h30",
@@ -33200,6 +43144,8 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "higgsfieldPrompt": "Vertical 9:16, 10 secondes, 4K, photoréaliste, caméra à l'épaule, profondeur de champ courte. PAS de texte incrusté, PAS de sous-titres, PAS de filigrane, PAS de logo.\n\nPERSONNAGE — le plongeur, tenue de son poste, visage lisible. Une seule personne au premier plan.\n\nHEURE — 20h15. Lumière chaude et saturée, vapeur, mouvement constant.\n\nDÉCOR — une cuisine professionnelle en inox, vu depuis le poste de travail du personnage. AUCUN écran allumé, AUCUNE tablette, AUCUNE interface visible : cette série montre le geste, pas l'outil.\n\nACTION — Il voit revenir les assiettes. Pleines ou vides, c'est le seul avis client qui ne ment pas — et personne ne le lui demande.\nÀ 5 secondes, quelque chose se tend : un regard vers la porte, un geste suspendu, un objet qu'on repose.\nDeux dernières secondes : le personnage immobile, il regarde son poste, pas l'objectif.\n\nAUDIO — ambiance réelle du lieu, aucun dialogue, pas de musique.",
     "scriptHeygen": "Je vois revenir les assiettes. Pleines ou vides, c'est le seul avis client qui ne ment pas. Personne ne me le demande.",
     "kit": null,
+    "heygenPrompt": null,
+    "montage": null,
     "metier": "Le plongeur",
     "phase": "Pendant le service",
     "amplitude": "11h00 → 23h30",
@@ -33343,6 +43289,8 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "higgsfieldPrompt": "Vertical 9:16, 10 secondes, 4K, photoréaliste, caméra à l'épaule, profondeur de champ courte. PAS de texte incrusté, PAS de sous-titres, PAS de filigrane, PAS de logo.\n\nPERSONNAGE — le plongeur, tenue de son poste, visage lisible. Une seule personne au premier plan.\n\nHEURE — 23h30. Lumière crue de fin de service, néons, surfaces vides.\n\nDÉCOR — une cuisine professionnelle en inox, vu depuis le poste de travail du personnage. AUCUN écran allumé, AUCUNE tablette, AUCUNE interface visible : cette série montre le geste, pas l'outil.\n\nACTION — Le plan de nettoyage, les relevés, la traçabilité. Les sept autres boucles coûtent de la marge. Celle-ci coûte la fermeture.\nÀ 5 secondes, quelque chose se tend : un regard vers la porte, un geste suspendu, un objet qu'on repose.\nDeux dernières secondes : le personnage immobile, il regarde son poste, pas l'objectif.\n\nAUDIO — ambiance réelle du lieu, aucun dialogue, pas de musique.",
     "scriptHeygen": "Le nettoyage, la traçabilité, c'est moi. Les autres postes coûtent de la marge quand ils lâchent. Le mien coûte la fermeture.",
     "kit": null,
+    "heygenPrompt": null,
+    "montage": null,
     "metier": "Le plongeur",
     "phase": "Après le service",
     "amplitude": "11h00 → 23h30",
@@ -33486,6 +43434,8 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "higgsfieldPrompt": "Vertical 9:16, 10 secondes, 4K, photoréaliste, caméra à l'épaule, profondeur de champ courte. PAS de texte incrusté, PAS de sous-titres, PAS de filigrane, PAS de logo.\n\nPERSONNAGE — le patron, directeur de salle, tenue de son poste, visage lisible. Une seule personne au premier plan.\n\nHEURE — 07h00. Lumière froide d'avant l'aube, une seule source allumée.\n\nDÉCOR — une salle de restaurant, vu depuis le poste de travail du personnage. AUCUN écran allumé, AUCUNE tablette, AUCUNE interface visible : cette série montre le geste, pas l'outil.\n\nACTION — Huit heures. Le chiffre d'hier, les réservations du soir, le planning, et la table de douze qu'il a acceptée mardi.\nÀ 5 secondes, quelque chose se tend : un regard vers la porte, un geste suspendu, un objet qu'on repose.\nDeux dernières secondes : le personnage immobile, il regarde son poste, pas l'objectif.\n\nAUDIO — ambiance réelle du lieu, aucun dialogue, pas de musique.",
     "scriptHeygen": "J'ouvre les livres avant la porte. Le chiffre d'hier, les réservations, et la table de douze que j'ai acceptée mardi au téléphone.",
     "kit": null,
+    "heygenPrompt": null,
+    "montage": null,
     "metier": "Le patron, directeur de salle",
     "phase": "Avant le service",
     "amplitude": "08h00 → minuit",
@@ -33629,6 +43579,8 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "higgsfieldPrompt": "Vertical 9:16, 10 secondes, 4K, photoréaliste, caméra à l'épaule, profondeur de champ courte. PAS de texte incrusté, PAS de sous-titres, PAS de filigrane, PAS de logo.\n\nPERSONNAGE — le patron, directeur de salle, tenue de son poste, visage lisible. Une seule personne au premier plan.\n\nHEURE — 20h15. Lumière chaude et saturée, vapeur, mouvement constant.\n\nDÉCOR — une salle de restaurant, vu depuis le poste de travail du personnage. AUCUN écran allumé, AUCUNE tablette, AUCUNE interface visible : cette série montre le geste, pas l'outil.\n\nACTION — Il place, il rassure, il encaisse. Et il fait le geste commercial sur le pavé qui est revenu.\nÀ 5 secondes, quelque chose se tend : un regard vers la porte, un geste suspendu, un objet qu'on repose.\nDeux dernières secondes : le personnage immobile, il regarde son poste, pas l'objectif.\n\nAUDIO — ambiance réelle du lieu, aucun dialogue, pas de musique.",
     "scriptHeygen": "Je place, je rassure, j'encaisse. Et je fais le geste commercial sur le plat qui est revenu, sans savoir encore ce qu'il m'a coûté.",
     "kit": null,
+    "heygenPrompt": null,
+    "montage": null,
     "metier": "Le patron, directeur de salle",
     "phase": "Pendant le service",
     "amplitude": "08h00 → minuit",
@@ -33772,6 +43724,8 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "higgsfieldPrompt": "Vertical 9:16, 10 secondes, 4K, photoréaliste, caméra à l'épaule, profondeur de champ courte. PAS de texte incrusté, PAS de sous-titres, PAS de filigrane, PAS de logo.\n\nPERSONNAGE — le patron, directeur de salle, tenue de son poste, visage lisible. Une seule personne au premier plan.\n\nHEURE — 23h30. Lumière crue de fin de service, néons, surfaces vides.\n\nDÉCOR — une salle de restaurant, vu depuis le poste de travail du personnage. AUCUN écran allumé, AUCUNE tablette, AUCUNE interface visible : cette série montre le geste, pas l'outil.\n\nACTION — Le Z, les pertes, le coût du travail du service. Trois chiffres qu'on découvre d'habitude à la fin du mois.\nÀ 5 secondes, quelque chose se tend : un regard vers la porte, un geste suspendu, un objet qu'on repose.\nDeux dernières secondes : le personnage immobile, il regarde son poste, pas l'objectif.\n\nAUDIO — ambiance réelle du lieu, aucun dialogue, pas de musique.",
     "scriptHeygen": "Le Z, les pertes, le coût du service. Trois chiffres qu'on découvre d'habitude à la fin du mois. Moi je les veux ce soir.",
     "kit": null,
+    "heygenPrompt": null,
+    "montage": null,
     "metier": "Le patron, directeur de salle",
     "phase": "Après le service",
     "amplitude": "08h00 → minuit",
@@ -33915,6 +43869,8 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "higgsfieldPrompt": "Vertical 9:16, 10 secondes, 4K, photoréaliste, caméra à l'épaule, profondeur de champ courte. PAS de texte incrusté, PAS de sous-titres, PAS de filigrane, PAS de logo.\n\nPERSONNAGE — le chef de rang, tenue de son poste, visage lisible. Une seule personne au premier plan.\n\nHEURE — 07h00. Lumière froide d'avant l'aube, une seule source allumée.\n\nDÉCOR — une salle de restaurant, vu depuis le poste de travail du personnage. AUCUN écran allumé, AUCUNE tablette, AUCUNE interface visible : cette série montre le geste, pas l'outil.\n\nACTION — Il prend son rang, relit les notes des réservations, et découvre qu'une table de douze arrive à vingt heures.\nÀ 5 secondes, quelque chose se tend : un regard vers la porte, un geste suspendu, un objet qu'on repose.\nDeux dernières secondes : le personnage immobile, il regarde son poste, pas l'objectif.\n\nAUDIO — ambiance réelle du lieu, aucun dialogue, pas de musique.",
     "scriptHeygen": "Je prends mon rang, je relis les notes des réservations. Et je découvre qu'une table de douze arrive à vingt heures.",
     "kit": null,
+    "heygenPrompt": null,
+    "montage": null,
     "metier": "Le chef de rang",
     "phase": "Avant le service",
     "amplitude": "11h00 → 23h30",
@@ -34058,6 +44014,8 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "higgsfieldPrompt": "Vertical 9:16, 10 secondes, 4K, photoréaliste, caméra à l'épaule, profondeur de champ courte. PAS de texte incrusté, PAS de sous-titres, PAS de filigrane, PAS de logo.\n\nPERSONNAGE — le chef de rang, tenue de son poste, visage lisible. Une seule personne au premier plan.\n\nHEURE — 20h15. Lumière chaude et saturée, vapeur, mouvement constant.\n\nDÉCOR — une salle de restaurant, vu depuis le poste de travail du personnage. AUCUN écran allumé, AUCUNE tablette, AUCUNE interface visible : cette série montre le geste, pas l'outil.\n\nACTION — La réclamation sur le pavé, c'est lui. La rupture à annoncer, c'est lui. Entre les deux, il porte.\nÀ 5 secondes, quelque chose se tend : un regard vers la porte, un geste suspendu, un objet qu'on repose.\nDeux dernières secondes : le personnage immobile, il regarde son poste, pas l'objectif.\n\nAUDIO — ambiance réelle du lieu, aucun dialogue, pas de musique.",
     "scriptHeygen": "La réclamation, c'est moi. La rupture à annoncer, c'est moi. Entre les deux, je porte.",
     "kit": null,
+    "heygenPrompt": null,
+    "montage": null,
     "metier": "Le chef de rang",
     "phase": "Pendant le service",
     "amplitude": "11h00 → 23h30",
@@ -34201,6 +44159,8 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "higgsfieldPrompt": "Vertical 9:16, 10 secondes, 4K, photoréaliste, caméra à l'épaule, profondeur de champ courte. PAS de texte incrusté, PAS de sous-titres, PAS de filigrane, PAS de logo.\n\nPERSONNAGE — le chef de rang, tenue de son poste, visage lisible. Une seule personne au premier plan.\n\nHEURE — 23h30. Lumière crue de fin de service, néons, surfaces vides.\n\nDÉCOR — une salle de restaurant, vu depuis le poste de travail du personnage. AUCUN écran allumé, AUCUNE tablette, AUCUNE interface visible : cette série montre le geste, pas l'outil.\n\nACTION — Les allergies, les habitudes, le prénom du fils. Tout est dans sa tête, et sa tête rentre chez elle à minuit.\nÀ 5 secondes, quelque chose se tend : un regard vers la porte, un geste suspendu, un objet qu'on repose.\nDeux dernières secondes : le personnage immobile, il regarde son poste, pas l'objectif.\n\nAUDIO — ambiance réelle du lieu, aucun dialogue, pas de musique.",
     "scriptHeygen": "Les allergies, les habitudes, le prénom du fils. Tout est dans ma tête, et ma tête rentre chez elle à minuit.",
     "kit": null,
+    "heygenPrompt": null,
+    "montage": null,
     "metier": "Le chef de rang",
     "phase": "Après le service",
     "amplitude": "11h00 → 23h30",
@@ -34344,6 +44304,8 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "higgsfieldPrompt": "Vertical 9:16, 10 secondes, 4K, photoréaliste, caméra à l'épaule, profondeur de champ courte. PAS de texte incrusté, PAS de sous-titres, PAS de filigrane, PAS de logo.\n\nPERSONNAGE — le serveur, tenue de son poste, visage lisible. Une seule personne au premier plan.\n\nHEURE — 07h00. Lumière froide d'avant l'aube, une seule source allumée.\n\nDÉCOR — une salle de restaurant, vu depuis le poste de travail du personnage. AUCUN écran allumé, AUCUNE tablette, AUCUNE interface visible : cette série montre le geste, pas l'outil.\n\nACTION — Onze heures trente. Il monte les tables. Le plat du jour, il l'apprendra en même temps que les clients.\nÀ 5 secondes, quelque chose se tend : un regard vers la porte, un geste suspendu, un objet qu'on repose.\nDeux dernières secondes : le personnage immobile, il regarde son poste, pas l'objectif.\n\nAUDIO — ambiance réelle du lieu, aucun dialogue, pas de musique.",
     "scriptHeygen": "Je monte les tables. Le plat du jour, je l'apprendrai en même temps que les clients.",
     "kit": null,
+    "heygenPrompt": null,
+    "montage": null,
     "metier": "Le serveur",
     "phase": "Avant le service",
     "amplitude": "11h30 → 23h00",
@@ -34487,6 +44449,8 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "higgsfieldPrompt": "Vertical 9:16, 10 secondes, 4K, photoréaliste, caméra à l'épaule, profondeur de champ courte. PAS de texte incrusté, PAS de sous-titres, PAS de filigrane, PAS de logo.\n\nPERSONNAGE — le serveur, tenue de son poste, visage lisible. Une seule personne au premier plan.\n\nHEURE — 20h15. Lumière chaude et saturée, vapeur, mouvement constant.\n\nDÉCOR — une salle de restaurant, vu depuis le poste de travail du personnage. AUCUN écran allumé, AUCUNE tablette, AUCUNE interface visible : cette série montre le geste, pas l'outil.\n\nACTION — « Je suis désolé, il n'y en a plus. » Il le découvre à la table, devant quelqu'un qui l'avait déjà choisi.\nÀ 5 secondes, quelque chose se tend : un regard vers la porte, un geste suspendu, un objet qu'on repose.\nDeux dernières secondes : le personnage immobile, il regarde son poste, pas l'objectif.\n\nAUDIO — ambiance réelle du lieu, aucun dialogue, pas de musique.",
     "scriptHeygen": "« Je suis désolé, il n'y en a plus. » Je le découvre à la table, devant quelqu'un qui l'avait déjà choisi.",
     "kit": null,
+    "heygenPrompt": null,
+    "montage": null,
     "metier": "Le serveur",
     "phase": "Pendant le service",
     "amplitude": "11h30 → 23h00",
@@ -34630,6 +44594,8 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "higgsfieldPrompt": "Vertical 9:16, 10 secondes, 4K, photoréaliste, caméra à l'épaule, profondeur de champ courte. PAS de texte incrusté, PAS de sous-titres, PAS de filigrane, PAS de logo.\n\nPERSONNAGE — le serveur, tenue de son poste, visage lisible. Une seule personne au premier plan.\n\nHEURE — 23h30. Lumière crue de fin de service, néons, surfaces vides.\n\nDÉCOR — une salle de restaurant, vu depuis le poste de travail du personnage. AUCUN écran allumé, AUCUNE tablette, AUCUNE interface visible : cette série montre le geste, pas l'outil.\n\nACTION — Le service du soir se prépare pendant qu'on débarrasse celui du midi. Deux fois par jour, tous les jours.\nÀ 5 secondes, quelque chose se tend : un regard vers la porte, un geste suspendu, un objet qu'on repose.\nDeux dernières secondes : le personnage immobile, il regarde son poste, pas l'objectif.\n\nAUDIO — ambiance réelle du lieu, aucun dialogue, pas de musique.",
     "scriptHeygen": "Je range une salle et je remonte la suivante. Deux fois par jour, tous les jours.",
     "kit": null,
+    "heygenPrompt": null,
+    "montage": null,
     "metier": "Le serveur",
     "phase": "Après le service",
     "amplitude": "11h30 → 23h00",
@@ -34773,6 +44739,8 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "higgsfieldPrompt": "Vertical 9:16, 10 secondes, 4K, photoréaliste, caméra à l'épaule, profondeur de champ courte. PAS de texte incrusté, PAS de sous-titres, PAS de filigrane, PAS de logo.\n\nPERSONNAGE — le responsable de la communication, tenue de son poste, visage lisible. Une seule personne au premier plan.\n\nHEURE — 07h00. Lumière froide d'avant l'aube, une seule source allumée.\n\nDÉCOR — un petit bureau à l'étage, au-dessus de la salle, vu depuis le poste de travail du personnage. AUCUN écran allumé, AUCUNE tablette, AUCUNE interface visible : cette série montre le geste, pas l'outil.\n\nACTION — Il n'y a pas de responsable de la communication. Il y a un patron qui poste à vingt-trois heures, mal, quand il y pense.\nÀ 5 secondes, quelque chose se tend : un regard vers la porte, un geste suspendu, un objet qu'on repose.\nDeux dernières secondes : le personnage immobile, il regarde son poste, pas l'objectif.\n\nAUDIO — ambiance réelle du lieu, aucun dialogue, pas de musique.",
     "scriptHeygen": "Ce poste n'existe pas chez nous. C'est le patron qui poste à vingt-trois heures, mal, quand il y pense.",
     "kit": null,
+    "heygenPrompt": null,
+    "montage": null,
     "metier": "Le responsable de la communication",
     "phase": "Avant le service",
     "amplitude": "le poste n'existe pas",
@@ -34916,6 +44884,8 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "higgsfieldPrompt": "Vertical 9:16, 10 secondes, 4K, photoréaliste, caméra à l'épaule, profondeur de champ courte. PAS de texte incrusté, PAS de sous-titres, PAS de filigrane, PAS de logo.\n\nPERSONNAGE — le responsable de la communication, tenue de son poste, visage lisible. Une seule personne au premier plan.\n\nHEURE — 20h15. Lumière chaude et saturée, vapeur, mouvement constant.\n\nDÉCOR — un petit bureau à l'étage, au-dessus de la salle, vu depuis le poste de travail du personnage. AUCUN écran allumé, AUCUNE tablette, AUCUNE interface visible : cette série montre le geste, pas l'outil.\n\nACTION — C'est justement l'heure où il y aurait quelque chose à montrer. Tout le monde est en salle.\nÀ 5 secondes, quelque chose se tend : un regard vers la porte, un geste suspendu, un objet qu'on repose.\nDeux dernières secondes : le personnage immobile, il regarde son poste, pas l'objectif.\n\nAUDIO — ambiance réelle du lieu, aucun dialogue, pas de musique.",
     "scriptHeygen": "Pendant le service, personne ne communique. C'est justement l'heure où il y aurait quelque chose à montrer.",
     "kit": null,
+    "heygenPrompt": null,
+    "montage": null,
     "metier": "Le responsable de la communication",
     "phase": "Pendant le service",
     "amplitude": "le poste n'existe pas",
@@ -35059,6 +45029,8 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "higgsfieldPrompt": "Vertical 9:16, 10 secondes, 4K, photoréaliste, caméra à l'épaule, profondeur de champ courte. PAS de texte incrusté, PAS de sous-titres, PAS de filigrane, PAS de logo.\n\nPERSONNAGE — le responsable de la communication, tenue de son poste, visage lisible. Une seule personne au premier plan.\n\nHEURE — 23h30. Lumière crue de fin de service, néons, surfaces vides.\n\nDÉCOR — un petit bureau à l'étage, au-dessus de la salle, vu depuis le poste de travail du personnage. AUCUN écran allumé, AUCUNE tablette, AUCUNE interface visible : cette série montre le geste, pas l'outil.\n\nACTION — Douze kilos de saumon à écouler avant vendredi. La boucle communication est la seule qui touche les sept autres — et c'est celle qui reste vide.\nÀ 5 secondes, quelque chose se tend : un regard vers la porte, un geste suspendu, un objet qu'on repose.\nDeux dernières secondes : le personnage immobile, il regarde son poste, pas l'objectif.\n\nAUDIO — ambiance réelle du lieu, aucun dialogue, pas de musique.",
     "scriptHeygen": "Douze kilos de saumon à écouler avant vendredi. La seule boucle qui touche les sept autres est celle que personne ne tient.",
     "kit": null,
+    "heygenPrompt": null,
+    "montage": null,
     "metier": "Le responsable de la communication",
     "phase": "Après le service",
     "amplitude": "le poste n'existe pas",
@@ -35202,6 +45174,8 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "higgsfieldPrompt": "Vertical 9:16, 10 secondes, 4K, photoréaliste, caméra à l'épaule, profondeur de champ courte. PAS de texte incrusté, PAS de sous-titres, PAS de filigrane, PAS de logo.\n\nPERSONNAGE — le client, tenue de son poste, visage lisible. Une seule personne au premier plan.\n\nHEURE — 07h00. Lumière froide d'avant l'aube, une seule source allumée.\n\nDÉCOR — une salle de restaurant, vu depuis le poste de travail du personnage. AUCUN écran allumé, AUCUNE tablette, AUCUNE interface visible : cette série montre le geste, pas l'outil.\n\nACTION — Il cherche, il compare, il réserve. Sur le site du restaurant ou sur une plateforme qui prend sa commission — ça se joue là.\nÀ 5 secondes, quelque chose se tend : un regard vers la porte, un geste suspendu, un objet qu'on repose.\nDeux dernières secondes : le personnage immobile, il regarde son poste, pas l'objectif.\n\nAUDIO — ambiance réelle du lieu, aucun dialogue, pas de musique.",
     "scriptHeygen": "Je cherche, je compare, je réserve. Sur le site du restaurant ou sur une plateforme qui prend sa commission — ça se joue là.",
     "kit": null,
+    "heygenPrompt": null,
+    "montage": null,
     "metier": "Le client",
     "phase": "Avant le service",
     "amplitude": "19h30 → 22h30",
@@ -35345,6 +45319,8 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "higgsfieldPrompt": "Vertical 9:16, 10 secondes, 4K, photoréaliste, caméra à l'épaule, profondeur de champ courte. PAS de texte incrusté, PAS de sous-titres, PAS de filigrane, PAS de logo.\n\nPERSONNAGE — le client, tenue de son poste, visage lisible. Une seule personne au premier plan.\n\nHEURE — 20h15. Lumière chaude et saturée, vapeur, mouvement constant.\n\nDÉCOR — une salle de restaurant, vu depuis le poste de travail du personnage. AUCUN écran allumé, AUCUNE tablette, AUCUNE interface visible : cette série montre le geste, pas l'outil.\n\nACTION — Il verra une table prête à son nom, une allergie déjà notée, un plat qui revient trop cuit. Tout ce que le logiciel a fait, ou n'a pas fait.\nÀ 5 secondes, quelque chose se tend : un regard vers la porte, un geste suspendu, un objet qu'on repose.\nDeux dernières secondes : le personnage immobile, il regarde son poste, pas l'objectif.\n\nAUDIO — ambiance réelle du lieu, aucun dialogue, pas de musique.",
     "scriptHeygen": "Je ne verrai jamais leur logiciel. Je verrai une table à mon nom, une allergie déjà notée, ou un plat qui revient trop cuit.",
     "kit": null,
+    "heygenPrompt": null,
+    "montage": null,
     "metier": "Le client",
     "phase": "Pendant le service",
     "amplitude": "19h30 → 22h30",
@@ -35488,6 +45464,8 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "higgsfieldPrompt": "Vertical 9:16, 10 secondes, 4K, photoréaliste, caméra à l'épaule, profondeur de champ courte. PAS de texte incrusté, PAS de sous-titres, PAS de filigrane, PAS de logo.\n\nPERSONNAGE — le client, tenue de son poste, visage lisible. Une seule personne au premier plan.\n\nHEURE — 23h30. Lumière crue de fin de service, néons, surfaces vides.\n\nDÉCOR — une salle de restaurant, vu depuis le poste de travail du personnage. AUCUN écran allumé, AUCUNE tablette, AUCUNE interface visible : cette série montre le geste, pas l'outil.\n\nACTION — Vingt-trois heures, dans le métro, trois étoiles. Personne au restaurant ne saura jamais que c'était le pavé.\nÀ 5 secondes, quelque chose se tend : un regard vers la porte, un geste suspendu, un objet qu'on repose.\nDeux dernières secondes : le personnage immobile, il regarde son poste, pas l'objectif.\n\nAUDIO — ambiance réelle du lieu, aucun dialogue, pas de musique.",
     "scriptHeygen": "Vingt-trois heures, dans le métro, trois étoiles. Personne là-bas ne saura jamais que c'était le pavé.",
     "kit": null,
+    "heygenPrompt": null,
+    "montage": null,
     "metier": "Le client",
     "phase": "Après le service",
     "amplitude": "19h30 → 22h30",
@@ -35631,6 +45609,8 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "higgsfieldPrompt": "Vertical 9:16, 10 secondes, 4K, photoréaliste, caméra à l'épaule, profondeur de champ courte. PAS de texte incrusté, PAS de sous-titres, PAS de filigrane, PAS de logo.\n\nPERSONNAGE — l'expert-comptable et le patron, tenue de son poste, visage lisible. Une seule personne au premier plan.\n\nHEURE — 23h30. Lumière crue de fin de service, néons, surfaces vides.\n\nDÉCOR — un petit bureau à l'étage, au-dessus de la salle, vu depuis le poste de travail du personnage. AUCUN écran allumé, AUCUNE tablette, AUCUNE interface visible : cette série montre le geste, pas l'outil.\n\nACTION — Les trente services de la série arrivent sur un même tableau. Ce n'est plus un métier qu'on regarde, c'est ce que les dix métiers ont produit ensemble.\nÀ 5 secondes, quelque chose se tend : un regard vers la porte, un geste suspendu, un objet qu'on repose.\nDeux dernières secondes : le personnage immobile, il regarde son poste, pas l'objectif.\n\nAUDIO — ambiance réelle du lieu, aucun dialogue, pas de musique.",
     "scriptHeygen": "Trente services arrivent sur le même tableau. Ce n'est plus un métier que je regarde : c'est ce que dix métiers ont produit ensemble.",
     "kit": null,
+    "heygenPrompt": null,
+    "montage": null,
     "metier": "L'expert-comptable et le patron",
     "phase": "Le mois entier",
     "amplitude": "le mois",
@@ -35774,6 +45754,8 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "higgsfieldPrompt": "Vertical 9:16, 10 secondes, 4K, photoréaliste, caméra fixe ou très lent travelling. PAS de texte incrusté, PAS de sous-titres, PAS de filigrane, PAS de logo.\n\nIDENTITÉ VISUELLE — RapidoCMS. Bleu #03A9F5 présent dans le décor — un écran éteint qui reflète, une lumière, un objet — sans jamais former de logo. Tons clairs, gris #383838.\n\nSCÈNE — Le chef présente celui qui va parler pendant trente épisodes — et pourquoi ce n'est pas un cours d'informatique.\n\nCADRE — un objet réel du restaurant au premier plan, net ; le chef en retrait, flou, qui regarde. On filme ce que la phrase déclenche, jamais le schéma qui l'explique.\nÀ 5 secondes, l'objet change d'état — il s'allume, il bouge, il s'ouvre.\nDeux dernières secondes : le plan s'immobilise sur l'objet.\n\nAUDIO — ambiance réelle, un seul son d'interface discret à 5 secondes, aucun dialogue, pas de musique.",
     "scriptHeygen": "Le chef présente celui qui va parler pendant trente épisodes — et pourquoi ce n'est pas un cours d'informatique. À la fin de la série, vous écrivez une phrase et votre restaurant l'exécute.",
     "kit": null,
+    "heygenPrompt": null,
+    "montage": null,
     "metier": null,
     "phase": null,
     "amplitude": null,
@@ -35917,6 +45899,8 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "higgsfieldPrompt": "Vertical 9:16, 10 secondes, 4K, photoréaliste, caméra fixe ou très lent travelling. PAS de texte incrusté, PAS de sous-titres, PAS de filigrane, PAS de logo.\n\nIDENTITÉ VISUELLE — RapidoCMS. Bleu #03A9F5 présent dans le décor — un écran éteint qui reflète, une lumière, un objet — sans jamais former de logo. Tons clairs, gris #383838.\n\nSCÈNE — Jeudi neuf heures, douze kilos de saumon, DLC vendredi soir. On regarde ce qui se passe aujourd'hui, puis ce qui se passe quand les boucles sont branchées.\n\nCADRE — un objet réel du restaurant au premier plan, net ; le chef en retrait, flou, qui regarde. On filme ce que la phrase déclenche, jamais le schéma qui l'explique.\nÀ 5 secondes, l'objet change d'état — il s'allume, il bouge, il s'ouvre.\nDeux dernières secondes : le plan s'immobilise sur l'objet.\n\nAUDIO — ambiance réelle, un seul son d'interface discret à 5 secondes, aucun dialogue, pas de musique.",
     "scriptHeygen": "Jeudi neuf heures, douze kilos de saumon, DLC vendredi soir. Le cas revient à chaque épisode de la série. C'est le fil.",
     "kit": null,
+    "heygenPrompt": null,
+    "montage": null,
     "metier": null,
     "phase": null,
     "amplitude": null,
@@ -36060,6 +46044,8 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "higgsfieldPrompt": "Vertical 9:16, 10 secondes, 4K, photoréaliste, caméra fixe ou très lent travelling. PAS de texte incrusté, PAS de sous-titres, PAS de filigrane, PAS de logo.\n\nIDENTITÉ VISUELLE — RapidoCMS. Bleu #03A9F5 présent dans le décor — un écran éteint qui reflète, une lumière, un objet — sans jamais former de logo. Tons clairs, gris #383838.\n\nSCÈNE — « Ajoute le poulet fermier à 12,80 le kilo chez Metro. » L'ingrédient est créé, le prix enregistré, le fournisseur lié. On n'a rien cliqué.\n\nCADRE — un objet réel du restaurant au premier plan, net ; le chef en retrait, flou, qui regarde. On filme ce que la phrase déclenche, jamais le schéma qui l'explique.\nÀ 5 secondes, l'objet change d'état — il s'allume, il bouge, il s'ouvre.\nDeux dernières secondes : le plan s'immobilise sur l'objet.\n\nAUDIO — ambiance réelle, un seul son d'interface discret à 5 secondes, aucun dialogue, pas de musique.",
     "scriptHeygen": "« Ajoute le poulet fermier à 12,80 le kilo chez Metro. Un prompt n'est pas une question. C'est un ordre de travail.",
     "kit": null,
+    "heygenPrompt": null,
+    "montage": null,
     "metier": null,
     "phase": null,
     "amplitude": null,
@@ -36203,6 +46189,8 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "higgsfieldPrompt": "Vertical 9:16, 10 secondes, 4K, photoréaliste, caméra fixe ou très lent travelling. PAS de texte incrusté, PAS de sous-titres, PAS de filigrane, PAS de logo.\n\nIDENTITÉ VISUELLE — RapidoCMS. Bleu #03A9F5 présent dans le décor — un écran éteint qui reflète, une lumière, un objet — sans jamais former de logo. Tons clairs, gris #383838.\n\nSCÈNE — Un chatbot lit une base de connaissances et ne change rien. Un agent MCP appelle les outils métier, modifie les données, et demande confirmation avant toute action sensible.\n\nCADRE — un objet réel du restaurant au premier plan, net ; le chef en retrait, flou, qui regarde. On filme ce que la phrase déclenche, jamais le schéma qui l'explique.\nÀ 5 secondes, l'objet change d'état — il s'allume, il bouge, il s'ouvre.\nDeux dernières secondes : le plan s'immobilise sur l'objet.\n\nAUDIO — ambiance réelle, un seul son d'interface discret à 5 secondes, aucun dialogue, pas de musique.",
     "scriptHeygen": "Un chatbot lit une base de connaissances et ne change rien. 177 outils exposés au standard, une paire d'identifiants par établissement.",
     "kit": null,
+    "heygenPrompt": null,
+    "montage": null,
     "metier": null,
     "phase": null,
     "amplitude": null,
@@ -36346,6 +46334,8 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "higgsfieldPrompt": "Vertical 9:16, 10 secondes, 4K, photoréaliste, caméra fixe ou très lent travelling. PAS de texte incrusté, PAS de sous-titres, PAS de filigrane, PAS de logo.\n\nIDENTITÉ VISUELLE — RapidoCMS. Bleu #03A9F5 présent dans le décor — un écran éteint qui reflète, une lumière, un objet — sans jamais former de logo. Tons clairs, gris #383838.\n\nSCÈNE — Pas une liste de modules : un restaurant modelé. Chaque outil suit la forme d'une journée de service plutôt que la forme d'une base de données.\n\nCADRE — un objet réel du restaurant au premier plan, net ; le chef en retrait, flou, qui regarde. On filme ce que la phrase déclenche, jamais le schéma qui l'explique.\nÀ 5 secondes, l'objet change d'état — il s'allume, il bouge, il s'ouvre.\nDeux dernières secondes : le plan s'immobilise sur l'objet.\n\nAUDIO — ambiance réelle, un seul son d'interface discret à 5 secondes, aucun dialogue, pas de musique.",
     "scriptHeygen": "Pas une liste de modules : un restaurant modelé. C'est ce qui permet à une phrase de traverser huit domaines sans qu'on l'ait programmée.",
     "kit": null,
+    "heygenPrompt": null,
+    "montage": null,
     "metier": null,
     "phase": null,
     "amplitude": null,
@@ -36489,6 +46479,8 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "higgsfieldPrompt": "Vertical 9:16, 10 secondes, 4K, photoréaliste, caméra fixe ou très lent travelling. PAS de texte incrusté, PAS de sous-titres, PAS de filigrane, PAS de logo.\n\nIDENTITÉ VISUELLE — RapidoCMS. Bleu #03A9F5 présent dans le décor — un écran éteint qui reflète, une lumière, un objet — sans jamais former de logo. Tons clairs, gris #383838.\n\nSCÈNE — Le logo est un huit. C'est aussi le plan du restaurant : la boucle gestion à gauche, la boucle vente à droite, et un seul point où elles se touchent.\n\nCADRE — un objet réel du restaurant au premier plan, net ; le chef en retrait, flou, qui regarde. On filme ce que la phrase déclenche, jamais le schéma qui l'explique.\nÀ 5 secondes, l'objet change d'état — il s'allume, il bouge, il s'ouvre.\nDeux dernières secondes : le plan s'immobilise sur l'objet.\n\nAUDIO — ambiance réelle, un seul son d'interface discret à 5 secondes, aucun dialogue, pas de musique.",
     "scriptHeygen": "Le logo est un huit. Ce point, c'est « pendant le service ». Le centre du schéma et le centre de la journée sont le même endroit.",
     "kit": null,
+    "heygenPrompt": null,
+    "montage": null,
     "metier": null,
     "phase": null,
     "amplitude": null,
@@ -36632,6 +46624,8 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "higgsfieldPrompt": "Vertical 9:16, 10 secondes, 4K, photoréaliste, caméra fixe ou très lent travelling. PAS de texte incrusté, PAS de sous-titres, PAS de filigrane, PAS de logo.\n\nIDENTITÉ VISUELLE — RapidoCMS. Bleu #03A9F5 présent dans le décor — un écran éteint qui reflète, une lumière, un objet — sans jamais former de logo. Tons clairs, gris #383838.\n\nSCÈNE — Une boucle se referme. Une boucle en nourrit une autre. Casser une sous-boucle casse les deux grandes.\n\nCADRE — un objet réel du restaurant au premier plan, net ; le chef en retrait, flou, qui regarde. On filme ce que la phrase déclenche, jamais le schéma qui l'explique.\nÀ 5 secondes, l'objet change d'état — il s'allume, il bouge, il s'ouvre.\nDeux dernières secondes : le plan s'immobilise sur l'objet.\n\nAUDIO — ambiance réelle, un seul son d'interface discret à 5 secondes, aucun dialogue, pas de musique.",
     "scriptHeygen": "Une boucle se referme. Sept logiciels qui tiennent chacun un bout ne font pas sept boucles connectées. Ils font sept tunnels.",
     "kit": null,
+    "heygenPrompt": null,
+    "montage": null,
     "metier": null,
     "phase": null,
     "amplitude": null,
@@ -36775,6 +46769,8 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "higgsfieldPrompt": "Vertical 9:16, 10 secondes, 4K, photoréaliste, caméra fixe ou très lent travelling. PAS de texte incrusté, PAS de sous-titres, PAS de filigrane, PAS de logo.\n\nIDENTITÉ VISUELLE — RapidoCMS. Bleu #03A9F5 présent dans le décor — un écran éteint qui reflète, une lumière, un objet — sans jamais former de logo. Tons clairs, gris #383838.\n\nSCÈNE — La gestion vous rend capable de servir. La vente fait venir le monde. L'une ne se voit pas depuis la salle — mais quand elle grippe, le saumon manque un vendredi soir.\n\nCADRE — un objet réel du restaurant au premier plan, net ; le chef en retrait, flou, qui regarde. On filme ce que la phrase déclenche, jamais le schéma qui l'explique.\nÀ 5 secondes, l'objet change d'état — il s'allume, il bouge, il s'ouvre.\nDeux dernières secondes : le plan s'immobilise sur l'objet.\n\nAUDIO — ambiance réelle, un seul son d'interface discret à 5 secondes, aucun dialogue, pas de musique.",
     "scriptHeygen": "La gestion vous rend capable de servir.",
     "kit": null,
+    "heygenPrompt": null,
+    "montage": null,
     "metier": null,
     "phase": null,
     "amplitude": null,
@@ -36918,6 +46914,8 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "higgsfieldPrompt": "Vertical 9:16, 10 secondes, 4K, photoréaliste, caméra fixe ou très lent travelling. PAS de texte incrusté, PAS de sous-titres, PAS de filigrane, PAS de logo.\n\nIDENTITÉ VISUELLE — RapidoCMS. Bleu #03A9F5 présent dans le décor — un écran éteint qui reflète, une lumière, un objet — sans jamais former de logo. Tons clairs, gris #383838.\n\nSCÈNE — Le document de référence de toute la boucle gestion. La fiche technique dit ce qu'il y a dans le plat, ce qu'il coûte et ce qu'il rapporte.\n\nCADRE — un objet réel du restaurant au premier plan, net ; le chef en retrait, flou, qui regarde. On filme ce que la phrase déclenche, jamais le schéma qui l'explique.\nÀ 5 secondes, l'objet change d'état — il s'allume, il bouge, il s'ouvre.\nDeux dernières secondes : le plan s'immobilise sur l'objet.\n\nAUDIO — ambiance réelle, un seul son d'interface discret à 5 secondes, aucun dialogue, pas de musique.",
     "scriptHeygen": "Le document de référence de toute la boucle gestion. Tout le reste tourne à vide. Une fiche fausse fausse le food cost, le stock, la marge et le prix.",
     "kit": null,
+    "heygenPrompt": null,
+    "montage": null,
     "metier": null,
     "phase": null,
     "amplitude": null,
@@ -37061,6 +47059,8 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "higgsfieldPrompt": "Vertical 9:16, 10 secondes, 4K, photoréaliste, caméra fixe ou très lent travelling. PAS de texte incrusté, PAS de sous-titres, PAS de filigrane, PAS de logo.\n\nIDENTITÉ VISUELLE — RapidoCMS. Bleu #03A9F5 présent dans le décor — un écran éteint qui reflète, une lumière, un objet — sans jamais former de logo. Tons clairs, gris #383838.\n\nSCÈNE — La capacité humaine — combien de couverts peuvent réellement être servis — et le coût salarial, premier poste maîtrisable d'un restaurant.\n\nCADRE — un objet réel du restaurant au premier plan, net ; le chef en retrait, flou, qui regarde. On filme ce que la phrase déclenche, jamais le schéma qui l'explique.\nÀ 5 secondes, l'objet change d'état — il s'allume, il bouge, il s'ouvre.\nDeux dernières secondes : le plan s'immobilise sur l'objet.\n\nAUDIO — ambiance réelle, un seul son d'interface discret à 5 secondes, aucun dialogue, pas de musique.",
     "scriptHeygen": "La capacité humaine — combien de couverts peuvent réellement être servis — et le coût salarial, premier poste maîtrisable d'un restaurant. Sur-effectif le mardi, sous-effectif le samedi. Systématiquement.",
     "kit": null,
+    "heygenPrompt": null,
+    "montage": null,
     "metier": null,
     "phase": null,
     "amplitude": null,
@@ -37204,6 +47204,8 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "higgsfieldPrompt": "Vertical 9:16, 10 secondes, 4K, photoréaliste, caméra fixe ou très lent travelling. PAS de texte incrusté, PAS de sous-titres, PAS de filigrane, PAS de logo.\n\nIDENTITÉ VISUELLE — RapidoCMS. Bleu #03A9F5 présent dans le décor — un écran éteint qui reflète, une lumière, un objet — sans jamais former de logo. Tons clairs, gris #383838.\n\nSCÈNE — La disponibilité réelle, qui conditionne ce qui peut être vendu. Et le coût matière réel, qui conditionne la marge.\n\nCADRE — un objet réel du restaurant au premier plan, net ; le chef en retrait, flou, qui regarde. On filme ce que la phrase déclenche, jamais le schéma qui l'explique.\nÀ 5 secondes, l'objet change d'état — il s'allume, il bouge, il s'ouvre.\nDeux dernières secondes : le plan s'immobilise sur l'objet.\n\nAUDIO — ambiance réelle, un seul son d'interface discret à 5 secondes, aucun dialogue, pas de musique.",
     "scriptHeygen": "La disponibilité réelle, qui conditionne ce qui peut être vendu. Une rupture un samedi soir, ou quatre à dix pour cent des achats à la poubelle le dimanche.",
     "kit": null,
+    "heygenPrompt": null,
+    "montage": null,
     "metier": null,
     "phase": null,
     "amplitude": null,
@@ -37347,6 +47349,8 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "higgsfieldPrompt": "Vertical 9:16, 10 secondes, 4K, photoréaliste, caméra fixe ou très lent travelling. PAS de texte incrusté, PAS de sous-titres, PAS de filigrane, PAS de logo.\n\nIDENTITÉ VISUELLE — RapidoCMS. Bleu #03A9F5 présent dans le décor — un écran éteint qui reflète, une lumière, un objet — sans jamais former de logo. Tons clairs, gris #383838.\n\nSCÈNE — La conformité sanitaire, et les justificatifs opposables en cas de contrôle.\n\nCADRE — un objet réel du restaurant au premier plan, net ; le chef en retrait, flou, qui regarde. On filme ce que la phrase déclenche, jamais le schéma qui l'explique.\nÀ 5 secondes, l'objet change d'état — il s'allume, il bouge, il s'ouvre.\nDeux dernières secondes : le plan s'immobilise sur l'objet.\n\nAUDIO — ambiance réelle, un seul son d'interface discret à 5 secondes, aucun dialogue, pas de musique.",
     "scriptHeygen": "La conformité sanitaire, et les justificatifs opposables en cas de contrôle. C'est la seule boucle dont l'échec n'est pas financier mais existentiel. Les sept autres coûtent de la marge. Celle-ci coûte la fermeture.",
     "kit": null,
+    "heygenPrompt": null,
+    "montage": null,
     "metier": null,
     "phase": null,
     "amplitude": null,
@@ -37490,6 +47494,8 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "higgsfieldPrompt": "Vertical 9:16, 10 secondes, 4K, photoréaliste, caméra fixe ou très lent travelling. PAS de texte incrusté, PAS de sous-titres, PAS de filigrane, PAS de logo.\n\nIDENTITÉ VISUELLE — RapidoCMS. Bleu #03A9F5 présent dans le décor — un écran éteint qui reflète, une lumière, un objet — sans jamais former de logo. Tons clairs, gris #383838.\n\nSCÈNE — Le canal direct. Des clients qui appartiennent au restaurant, et non à une plateforme qui prélève une commission par couvert.\n\nCADRE — un objet réel du restaurant au premier plan, net ; le chef en retrait, flou, qui regarde. On filme ce que la phrase déclenche, jamais le schéma qui l'explique.\nÀ 5 secondes, l'objet change d'état — il s'allume, il bouge, il s'ouvre.\nDeux dernières secondes : le plan s'immobilise sur l'objet.\n\nAUDIO — ambiance réelle, un seul son d'interface discret à 5 secondes, aucun dialogue, pas de musique.",
     "scriptHeygen": "Le canal direct. Le restaurant dépend des plateformes et leur cède une commission sur des clients qu'il ne connaîtra jamais.",
     "kit": null,
+    "heygenPrompt": null,
+    "montage": null,
     "metier": null,
     "phase": null,
     "amplitude": null,
@@ -37633,6 +47639,8 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "higgsfieldPrompt": "Vertical 9:16, 10 secondes, 4K, photoréaliste, caméra fixe ou très lent travelling. PAS de texte incrusté, PAS de sous-titres, PAS de filigrane, PAS de logo.\n\nIDENTITÉ VISUELLE — RapidoCMS. Bleu #03A9F5 présent dans le décor — un écran éteint qui reflète, une lumière, un objet — sans jamais former de logo. Tons clairs, gris #383838.\n\nSCÈNE — La circulation. C'est la seule boucle qui touche les sept autres : un stock bas déclenche une alerte, une réservation déclenche un rappel.\n\nCADRE — un objet réel du restaurant au premier plan, net ; le chef en retrait, flou, qui regarde. On filme ce que la phrase déclenche, jamais le schéma qui l'explique.\nÀ 5 secondes, l'objet change d'état — il s'allume, il bouge, il s'ouvre.\nDeux dernières secondes : le plan s'immobilise sur l'objet.\n\nAUDIO — ambiance réelle, un seul son d'interface discret à 5 secondes, aucun dialogue, pas de musique.",
     "scriptHeygen": "La circulation. Les sept autres tournent correctement, et personne ne le sait. C'est la panne la plus insidieuse : rien ne casse, tout ralentit.",
     "kit": null,
+    "heygenPrompt": null,
+    "montage": null,
     "metier": null,
     "phase": null,
     "amplitude": null,
@@ -37776,6 +47784,8 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "higgsfieldPrompt": "Vertical 9:16, 10 secondes, 4K, photoréaliste, caméra fixe ou très lent travelling. PAS de texte incrusté, PAS de sous-titres, PAS de filigrane, PAS de logo.\n\nIDENTITÉ VISUELLE — RapidoCMS. Bleu #03A9F5 présent dans le décor — un écran éteint qui reflète, une lumière, un objet — sans jamais former de logo. Tons clairs, gris #383838.\n\nSCÈNE — Le fichier client — le seul actif d'acquisition qui appartienne vraiment au restaurant.\n\nCADRE — un objet réel du restaurant au premier plan, net ; le chef en retrait, flou, qui regarde. On filme ce que la phrase déclenche, jamais le schéma qui l'explique.\nÀ 5 secondes, l'objet change d'état — il s'allume, il bouge, il s'ouvre.\nDeux dernières secondes : le plan s'immobilise sur l'objet.\n\nAUDIO — ambiance réelle, un seul son d'interface discret à 5 secondes, aucun dialogue, pas de musique.",
     "scriptHeygen": "Le fichier client — le seul actif d'acquisition qui appartienne vraiment au restaurant. On rachète chaque client à chaque fois. Acquérir coûte cinq à sept fois plus cher que faire revenir.",
     "kit": null,
+    "heygenPrompt": null,
+    "montage": null,
     "metier": null,
     "phase": null,
     "amplitude": null,
@@ -37919,6 +47929,8 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "higgsfieldPrompt": "Vertical 9:16, 10 secondes, 4K, photoréaliste, caméra fixe ou très lent travelling. PAS de texte incrusté, PAS de sous-titres, PAS de filigrane, PAS de logo.\n\nIDENTITÉ VISUELLE — RapidoCMS. Bleu #03A9F5 présent dans le décor — un écran éteint qui reflète, une lumière, un objet — sans jamais former de logo. Tons clairs, gris #383838.\n\nSCÈNE — La trésorerie qui finance les achats. C'est le second fil qui traverse le croisement, après la commande.\n\nCADRE — un objet réel du restaurant au premier plan, net ; le chef en retrait, flou, qui regarde. On filme ce que la phrase déclenche, jamais le schéma qui l'explique.\nÀ 5 secondes, l'objet change d'état — il s'allume, il bouge, il s'ouvre.\nDeux dernières secondes : le plan s'immobilise sur l'objet.\n\nAUDIO — ambiance réelle, un seul son d'interface discret à 5 secondes, aucun dialogue, pas de musique.",
     "scriptHeygen": "La trésorerie qui finance les achats. On ignore si l'on gagne de l'argent, et on le découvre trop tard.",
     "kit": null,
+    "heygenPrompt": null,
+    "montage": null,
     "metier": null,
     "phase": null,
     "amplitude": null,
@@ -38062,6 +48074,8 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "higgsfieldPrompt": "Vertical 9:16, 10 secondes, 4K, photoréaliste, caméra fixe ou très lent travelling. PAS de texte incrusté, PAS de sous-titres, PAS de filigrane, PAS de logo.\n\nIDENTITÉ VISUELLE — RapidoCMS. Bleu #03A9F5 présent dans le décor — un écran éteint qui reflète, une lumière, un objet — sans jamais former de logo. Tons clairs, gris #383838.\n\nSCÈNE — Quatre échanges traversent le point de croisement. La commande et l'encaissement vont de la vente vers la gestion ; la carte et la marge font le chemin inverse. Votre logiciel de caisse connaît l'encaissement mais pas le besoin en cuisine.\n\nCADRE — un objet réel du restaurant au premier plan, net ; le chef en retrait, flou, qui regarde. On filme ce que la phrase déclenche, jamais le schéma qui l'explique.\nÀ 5 secondes, l'objet change d'état — il s'allume, il bouge, il s'ouvre.\nDeux dernières secondes : le plan s'immobilise sur l'objet.\n\nAUDIO — ambiance réelle, un seul son d'interface discret à 5 secondes, aucun dialogue, pas de musique.",
     "scriptHeygen": "Quatre échanges traversent le point de croisement.",
     "kit": null,
+    "heygenPrompt": null,
+    "montage": null,
     "metier": null,
     "phase": null,
     "amplitude": null,
@@ -38205,6 +48219,8 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "higgsfieldPrompt": "Vertical 9:16, 10 secondes, 4K, photoréaliste, caméra fixe ou très lent travelling. PAS de texte incrusté, PAS de sous-titres, PAS de filigrane, PAS de logo.\n\nIDENTITÉ VISUELLE — RapidoCMS. Bleu #03A9F5 présent dans le décor — un écran éteint qui reflète, une lumière, un objet — sans jamais former de logo. Tons clairs, gris #383838.\n\nSCÈNE — Une paire d'identifiants, un endpoint, et le modèle de votre choix parle à votre établissement — et seulement au vôtre. On pose la même demande aux trois : les réponses diffèrent, les actions non.\n\nCADRE — un objet réel du restaurant au premier plan, net ; le chef en retrait, flou, qui regarde. On filme ce que la phrase déclenche, jamais le schéma qui l'explique.\nÀ 5 secondes, l'objet change d'état — il s'allume, il bouge, il s'ouvre.\nDeux dernières secondes : le plan s'immobilise sur l'objet.\n\nAUDIO — ambiance réelle, un seul son d'interface discret à 5 secondes, aucun dialogue, pas de musique.",
     "scriptHeygen": "Une paire d'identifiants, un endpoint, et le modèle de votre choix parle à votre établissement — et seulement au vôtre.",
     "kit": null,
+    "heygenPrompt": null,
+    "montage": null,
     "metier": null,
     "phase": null,
     "amplitude": null,
@@ -38348,6 +48364,8 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "higgsfieldPrompt": "Vertical 9:16, 10 secondes, 4K, photoréaliste, caméra fixe ou très lent travelling. PAS de texte incrusté, PAS de sous-titres, PAS de filigrane, PAS de logo.\n\nIDENTITÉ VISUELLE — RapidoCMS. Bleu #03A9F5 présent dans le décor — un écran éteint qui reflète, une lumière, un objet — sans jamais former de logo. Tons clairs, gris #383838.\n\nSCÈNE — Caroline décroche, Jarvis tient l'atelier, Iris fait circuler, PrédiBot voit les huit. Aucune case vide n'est un oubli.\n\nCADRE — un objet réel du restaurant au premier plan, net ; le chef en retrait, flou, qui regarde. On filme ce que la phrase déclenche, jamais le schéma qui l'explique.\nÀ 5 secondes, l'objet change d'état — il s'allume, il bouge, il s'ouvre.\nDeux dernières secondes : le plan s'immobilise sur l'objet.\n\nAUDIO — ambiance réelle, un seul son d'interface discret à 5 secondes, aucun dialogue, pas de musique.",
     "scriptHeygen": "Caroline décroche, Jarvis tient l'atelier, Iris fait circuler, PrédiBot voit les huit.",
     "kit": null,
+    "heygenPrompt": null,
+    "montage": null,
     "metier": null,
     "phase": null,
     "amplitude": null,
@@ -38491,6 +48509,8 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "higgsfieldPrompt": "Vertical 9:16, 10 secondes, 4K, photoréaliste, caméra fixe ou très lent travelling. PAS de texte incrusté, PAS de sous-titres, PAS de filigrane, PAS de logo.\n\nIDENTITÉ VISUELLE — RapidoCMS. Bleu #03A9F5 présent dans le décor — un écran éteint qui reflète, une lumière, un objet — sans jamais former de logo. Tons clairs, gris #383838.\n\nSCÈNE — Le client appelle pendant le coup de feu. Personne n'est disponible. Elle décroche à la première sonnerie et pense à demander l'allergie.\n\nCADRE — un objet réel du restaurant au premier plan, net ; le chef en retrait, flou, qui regarde. On filme ce que la phrase déclenche, jamais le schéma qui l'explique.\nÀ 5 secondes, l'objet change d'état — il s'allume, il bouge, il s'ouvre.\nDeux dernières secondes : le plan s'immobilise sur l'objet.\n\nAUDIO — ambiance réelle, un seul son d'interface discret à 5 secondes, aucun dialogue, pas de musique.",
     "scriptHeygen": "Le client appelle pendant le coup de feu.",
     "kit": null,
+    "heygenPrompt": null,
+    "montage": null,
     "metier": null,
     "phase": null,
     "amplitude": null,
@@ -38634,6 +48654,8 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "higgsfieldPrompt": "Vertical 9:16, 10 secondes, 4K, photoréaliste, caméra fixe ou très lent travelling. PAS de texte incrusté, PAS de sous-titres, PAS de filigrane, PAS de logo.\n\nIDENTITÉ VISUELLE — RapidoCMS. Bleu #03A9F5 présent dans le décor — un écran éteint qui reflète, une lumière, un objet — sans jamais former de logo. Tons clairs, gris #383838.\n\nSCÈNE — On ne tape pas avec les mains sales. On dit « relève la chambre froide à quatre degrés » et c'est tracé.\n\nCADRE — un objet réel du restaurant au premier plan, net ; le chef en retrait, flou, qui regarde. On filme ce que la phrase déclenche, jamais le schéma qui l'explique.\nÀ 5 secondes, l'objet change d'état — il s'allume, il bouge, il s'ouvre.\nDeux dernières secondes : le plan s'immobilise sur l'objet.\n\nAUDIO — ambiance réelle, un seul son d'interface discret à 5 secondes, aucun dialogue, pas de musique.",
     "scriptHeygen": "On ne tape pas avec les mains sales.",
     "kit": null,
+    "heygenPrompt": null,
+    "montage": null,
     "metier": null,
     "phase": null,
     "amplitude": null,
@@ -38777,6 +48799,8 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "higgsfieldPrompt": "Vertical 9:16, 10 secondes, 4K, photoréaliste, caméra fixe ou très lent travelling. PAS de texte incrusté, PAS de sous-titres, PAS de filigrane, PAS de logo.\n\nIDENTITÉ VISUELLE — RapidoCMS. Bleu #03A9F5 présent dans le décor — un écran éteint qui reflète, une lumière, un objet — sans jamais former de logo. Tons clairs, gris #383838.\n\nSCÈNE — « Combien me coûte mon burger maintenant ? » Coût matière à jour, marge en euros, comparaison avec le mois dernier.\n\nCADRE — un objet réel du restaurant au premier plan, net ; le chef en retrait, flou, qui regarde. On filme ce que la phrase déclenche, jamais le schéma qui l'explique.\nÀ 5 secondes, l'objet change d'état — il s'allume, il bouge, il s'ouvre.\nDeux dernières secondes : le plan s'immobilise sur l'objet.\n\nAUDIO — ambiance réelle, un seul son d'interface discret à 5 secondes, aucun dialogue, pas de musique.",
     "scriptHeygen": "« Combien me coûte mon burger maintenant ? » Coût matière à jour, marge en euros, comparaison avec le mois dernier.",
     "kit": null,
+    "heygenPrompt": null,
+    "montage": null,
     "metier": null,
     "phase": null,
     "amplitude": null,
@@ -38920,6 +48944,8 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "higgsfieldPrompt": "Vertical 9:16, 10 secondes, 4K, photoréaliste, caméra fixe ou très lent travelling. PAS de texte incrusté, PAS de sous-titres, PAS de filigrane, PAS de logo.\n\nIDENTITÉ VISUELLE — RapidoCMS. Bleu #03A9F5 présent dans le décor — un écran éteint qui reflète, une lumière, un objet — sans jamais former de logo. Tons clairs, gris #383838.\n\nSCÈNE — FoodEatUp tient le restaurant. RapidoCMS tient ce qui en sort : les cinq réseaux, les créneaux, la bibliothèque.\n\nCADRE — un objet réel du restaurant au premier plan, net ; le chef en retrait, flou, qui regarde. On filme ce que la phrase déclenche, jamais le schéma qui l'explique.\nÀ 5 secondes, l'objet change d'état — il s'allume, il bouge, il s'ouvre.\nDeux dernières secondes : le plan s'immobilise sur l'objet.\n\nAUDIO — ambiance réelle, un seul son d'interface discret à 5 secondes, aucun dialogue, pas de musique.",
     "scriptHeygen": "FoodEatUp tient le restaurant.",
     "kit": null,
+    "heygenPrompt": null,
+    "montage": null,
     "metier": null,
     "phase": null,
     "amplitude": null,
@@ -39063,6 +49089,8 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "higgsfieldPrompt": "Vertical 9:16, 10 secondes, 4K, photoréaliste, caméra fixe ou très lent travelling. PAS de texte incrusté, PAS de sous-titres, PAS de filigrane, PAS de logo.\n\nIDENTITÉ VISUELLE — RapidoCMS. Bleu #03A9F5 présent dans le décor — un écran éteint qui reflète, une lumière, un objet — sans jamais former de logo. Tons clairs, gris #383838.\n\nSCÈNE — Un stock bas devient un post. Le circuit complet, du bac de saumon au fil Instagram, sans qu'on ouvre un logiciel.\n\nCADRE — un objet réel du restaurant au premier plan, net ; le chef en retrait, flou, qui regarde. On filme ce que la phrase déclenche, jamais le schéma qui l'explique.\nÀ 5 secondes, l'objet change d'état — il s'allume, il bouge, il s'ouvre.\nDeux dernières secondes : le plan s'immobilise sur l'objet.\n\nAUDIO — ambiance réelle, un seul son d'interface discret à 5 secondes, aucun dialogue, pas de musique.",
     "scriptHeygen": "Un stock bas devient un post.",
     "kit": null,
+    "heygenPrompt": null,
+    "montage": null,
     "metier": null,
     "phase": null,
     "amplitude": null,
@@ -39206,6 +49234,8 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "higgsfieldPrompt": "Vertical 9:16, 10 secondes, 4K, photoréaliste, caméra fixe ou très lent travelling. PAS de texte incrusté, PAS de sous-titres, PAS de filigrane, PAS de logo.\n\nIDENTITÉ VISUELLE — RapidoCMS. Bleu #03A9F5 présent dans le décor — un écran éteint qui reflète, une lumière, un objet — sans jamais former de logo. Tons clairs, gris #383838.\n\nSCÈNE — La même phrase, écrite puis dite. On garde une voix unique sur toute une série — c'est ce qui fait qu'on la reconnaît.\n\nCADRE — un objet réel du restaurant au premier plan, net ; le chef en retrait, flou, qui regarde. On filme ce que la phrase déclenche, jamais le schéma qui l'explique.\nÀ 5 secondes, l'objet change d'état — il s'allume, il bouge, il s'ouvre.\nDeux dernières secondes : le plan s'immobilise sur l'objet.\n\nAUDIO — ambiance réelle, un seul son d'interface discret à 5 secondes, aucun dialogue, pas de musique.",
     "scriptHeygen": "La même phrase, écrite puis dite.",
     "kit": null,
+    "heygenPrompt": null,
+    "montage": null,
     "metier": null,
     "phase": null,
     "amplitude": null,
@@ -39349,6 +49379,8 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "higgsfieldPrompt": "Vertical 9:16, 10 secondes, 4K, photoréaliste, caméra fixe ou très lent travelling. PAS de texte incrusté, PAS de sous-titres, PAS de filigrane, PAS de logo.\n\nIDENTITÉ VISUELLE — RapidoCMS. Bleu #03A9F5 présent dans le décor — un écran éteint qui reflète, une lumière, un objet — sans jamais former de logo. Tons clairs, gris #383838.\n\nSCÈNE — Dix secondes de plat filmé comme une publicité, à partir d'une phrase et d'une photo.\n\nCADRE — un objet réel du restaurant au premier plan, net ; le chef en retrait, flou, qui regarde. On filme ce que la phrase déclenche, jamais le schéma qui l'explique.\nÀ 5 secondes, l'objet change d'état — il s'allume, il bouge, il s'ouvre.\nDeux dernières secondes : le plan s'immobilise sur l'objet.\n\nAUDIO — ambiance réelle, un seul son d'interface discret à 5 secondes, aucun dialogue, pas de musique.",
     "scriptHeygen": "Dix secondes de plat filmé comme une publicité, à partir d'une phrase et d'une photo.",
     "kit": null,
+    "heygenPrompt": null,
+    "montage": null,
     "metier": null,
     "phase": null,
     "amplitude": null,
@@ -39492,6 +49524,8 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "higgsfieldPrompt": "Vertical 9:16, 10 secondes, 4K, photoréaliste, caméra fixe ou très lent travelling. PAS de texte incrusté, PAS de sous-titres, PAS de filigrane, PAS de logo.\n\nIDENTITÉ VISUELLE — RapidoCMS. Bleu #03A9F5 présent dans le décor — un écran éteint qui reflète, une lumière, un objet — sans jamais former de logo. Tons clairs, gris #383838.\n\nSCÈNE — Le personnage dit le texte. Trente mots, dix secondes — au-delà, le montage accélère la parole et ça s'entend.\n\nCADRE — un objet réel du restaurant au premier plan, net ; le chef en retrait, flou, qui regarde. On filme ce que la phrase déclenche, jamais le schéma qui l'explique.\nÀ 5 secondes, l'objet change d'état — il s'allume, il bouge, il s'ouvre.\nDeux dernières secondes : le plan s'immobilise sur l'objet.\n\nAUDIO — ambiance réelle, un seul son d'interface discret à 5 secondes, aucun dialogue, pas de musique.",
     "scriptHeygen": "Le personnage dit le texte.",
     "kit": null,
+    "heygenPrompt": null,
+    "montage": null,
     "metier": null,
     "phase": null,
     "amplitude": null,
@@ -39635,6 +49669,8 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "higgsfieldPrompt": "Vertical 9:16, 10 secondes, 4K, photoréaliste, caméra fixe ou très lent travelling. PAS de texte incrusté, PAS de sous-titres, PAS de filigrane, PAS de logo.\n\nIDENTITÉ VISUELLE — RapidoCMS. Bleu #03A9F5 présent dans le décor — un écran éteint qui reflète, une lumière, un objet — sans jamais former de logo. Tons clairs, gris #383838.\n\nSCÈNE — Le même contenu, la même audience, mais payé. On regarde ce que ça change et ce que ça coûte.\n\nCADRE — un objet réel du restaurant au premier plan, net ; le chef en retrait, flou, qui regarde. On filme ce que la phrase déclenche, jamais le schéma qui l'explique.\nÀ 5 secondes, l'objet change d'état — il s'allume, il bouge, il s'ouvre.\nDeux dernières secondes : le plan s'immobilise sur l'objet.\n\nAUDIO — ambiance réelle, un seul son d'interface discret à 5 secondes, aucun dialogue, pas de musique.",
     "scriptHeygen": "Le même contenu, la même audience, mais payé.",
     "kit": null,
+    "heygenPrompt": null,
+    "montage": null,
     "metier": null,
     "phase": null,
     "amplitude": null,
@@ -39778,6 +49814,8 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "higgsfieldPrompt": "Vertical 9:16, 10 secondes, 4K, photoréaliste, caméra fixe ou très lent travelling. PAS de texte incrusté, PAS de sous-titres, PAS de filigrane, PAS de logo.\n\nIDENTITÉ VISUELLE — RapidoCMS. Bleu #03A9F5 présent dans le décor — un écran éteint qui reflète, une lumière, un objet — sans jamais former de logo. Tons clairs, gris #383838.\n\nSCÈNE — Trois mots pour la même idée : apprendre un geste à l'agent une fois, et ne plus jamais le réexpliquer.\n\nCADRE — un objet réel du restaurant au premier plan, net ; le chef en retrait, flou, qui regarde. On filme ce que la phrase déclenche, jamais le schéma qui l'explique.\nÀ 5 secondes, l'objet change d'état — il s'allume, il bouge, il s'ouvre.\nDeux dernières secondes : le plan s'immobilise sur l'objet.\n\nAUDIO — ambiance réelle, un seul son d'interface discret à 5 secondes, aucun dialogue, pas de musique.",
     "scriptHeygen": "Trois mots pour la même idée : apprendre un geste à l'agent une fois, et ne plus jamais le réexpliquer.",
     "kit": null,
+    "heygenPrompt": null,
+    "montage": null,
     "metier": null,
     "phase": null,
     "amplitude": null,
@@ -39921,6 +49959,8 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "higgsfieldPrompt": "Vertical 9:16, 10 secondes, 4K, photoréaliste, caméra fixe ou très lent travelling. PAS de texte incrusté, PAS de sous-titres, PAS de filigrane, PAS de logo.\n\nIDENTITÉ VISUELLE — RapidoCMS. Bleu #03A9F5 présent dans le décor — un écran éteint qui reflète, une lumière, un objet — sans jamais former de logo. Tons clairs, gris #383838.\n\nSCÈNE — Ce qui se déclenche sans qu'on le demande. Une DLC à deux jours, et le post part avant qu'on y pense.\n\nCADRE — un objet réel du restaurant au premier plan, net ; le chef en retrait, flou, qui regarde. On filme ce que la phrase déclenche, jamais le schéma qui l'explique.\nÀ 5 secondes, l'objet change d'état — il s'allume, il bouge, il s'ouvre.\nDeux dernières secondes : le plan s'immobilise sur l'objet.\n\nAUDIO — ambiance réelle, un seul son d'interface discret à 5 secondes, aucun dialogue, pas de musique.",
     "scriptHeygen": "Ce qui se déclenche sans qu'on le demande.",
     "kit": null,
+    "heygenPrompt": null,
+    "montage": null,
     "metier": null,
     "phase": null,
     "amplitude": null,
@@ -40064,6 +50104,8 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "higgsfieldPrompt": "Vertical 9:16, 10 secondes, 4K, photoréaliste, caméra fixe ou très lent travelling. PAS de texte incrusté, PAS de sous-titres, PAS de filigrane, PAS de logo.\n\nIDENTITÉ VISUELLE — RapidoCMS. Bleu #03A9F5 présent dans le décor — un écran éteint qui reflète, une lumière, un objet — sans jamais former de logo. Tons clairs, gris #383838.\n\nSCÈNE — Une intention, huit boucles, zéro perte. Les douze kilos de saumon de l'épisode 2 repartent — et cette fois on voit passer les huit étapes, les quatre agents et les deux grandes boucles se refermer.\n\nCADRE — un objet réel du restaurant au premier plan, net ; le chef en retrait, flou, qui regarde. On filme ce que la phrase déclenche, jamais le schéma qui l'explique.\nÀ 5 secondes, l'objet change d'état — il s'allume, il bouge, il s'ouvre.\nDeux dernières secondes : le plan s'immobilise sur l'objet.\n\nAUDIO — ambiance réelle, un seul son d'interface discret à 5 secondes, aucun dialogue, pas de musique.",
     "scriptHeygen": "Une intention, huit boucles, zéro perte.",
     "kit": null,
+    "heygenPrompt": null,
+    "montage": null,
     "metier": null,
     "phase": null,
     "amplitude": null,

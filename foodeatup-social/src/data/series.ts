@@ -63,6 +63,17 @@ export type Episode = {
   };
   /** Le master hébergé dans la bibliothèque RapidoCMS. */
   masterRapidoUrl: string | null;
+  /**
+   * La story Instagram : dix secondes, le clip et ses deux textes.
+   *
+   * Ce n'est pas le master raccourci. Le master enchaîne cinq segments, dont
+   * dix secondes d'avatar qui présente une fonction — une démonstration meurt
+   * en deux secondes dans une story, le pouce déjà posé sur l'écran. La story
+   * ne garde donc que la scène comique : le clip, l'accroche au début, la
+   * punchline après la chute. Elle donne envie d'aller voir le reste, elle ne
+   * le remplace pas.
+   */
+  storyUrl: string | null;
   posterUrl: string | null;
   troisMots: string;
   datePrevue: string | null;
@@ -80,6 +91,44 @@ export type Episode = {
   ressort?: string;
   /** L'unique phrase de logiciel de l'épisode. Elle vient APRÈS le contenu. */
   logiciel?: string;
+  /*
+   * Saison 7 seulement — « Les Végé-Fruités font leur cinéma ».
+   *
+   * La saison suit un client, du trottoir au lendemain. Chaque épisode part
+   * d'un accroc vécu et le rejoue en pastiche de film ; la réponse est l'outil
+   * FoodEatUp que le restaurant avait déjà. Cinq champs en découlent.
+   */
+  /** Le genre de film que l'épisode pastiche — western, film noir, plan-séquence… */
+  genre?: string;
+  /** L'acte du parcours client : avant d'entrer, la commande, le passe, l'addition, le lendemain. */
+  acte?: string;
+  /** Ce que vit le client, écrit avant toute solution. */
+  cas?: string;
+  /** Ce que FoodEatUp change à ce cas précis, et rien de plus. */
+  reponse?: string;
+  /**
+   * Le végé-fruité qui joue la scène, par son `slug`.
+   *
+   * Ailleurs, le personnage se déduit du module — la carotte pour l'HACCP,
+   * l'oignon pour les stocks. Ici, c'est un rôle d'acteur : Don Citrone joue le
+   * client même quand l'épisode parle de Caroline. D'où ce champ, qui prime sur
+   * le module quand il est présent.
+   */
+  vegefruite?: string;
+  /*
+   * Saison 8 seulement — « Dis-le, c'est fait ».
+   *
+   * La dernière saison tient dans une journée : à chaque heure, une phrase dite
+   * à Jarvis, un outil appelé, un résultat. Elle ne présente aucun module neuf —
+   * elle rejoue les sept saisons sans jamais montrer d'interface. Trois champs
+   * en découlent, et `acte` porte le moment de la journée.
+   */
+  /** L'heure de l'épisode dans la journée : « 07 h », « 12 h », « 23 h ». */
+  heure?: string;
+  /** Ce que le chef dit à Jarvis, mot pour mot. */
+  phrase?: string;
+  /** L'outil réellement appelé. « — » quand l'épisode n'en appelle aucun. */
+  outil?: string;
   reseaux: Record<Reseau, Publication>;
 };
 
@@ -342,7 +391,8 @@ export const series: Serie[] = [
               "format": "vertical 9:16",
               "source": "rapidocms"
             },
-            "masterRapidoUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/FoodEatUp-EP001-Prendre-une-commande"
+            "masterRapidoUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/FoodEatUp-EP001-Prendre-une-commande",
+            "storyUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP001.mp4"
           },
           {
             "id": "EP002",
@@ -419,7 +469,8 @@ export const series: Serie[] = [
               "format": "vertical 9:16",
               "source": "rapidocms"
             },
-            "masterRapidoUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/FoodEatUp-EP002-Envoi-direct-cuisine"
+            "masterRapidoUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/FoodEatUp-EP002-Envoi-direct-cuisine",
+            "storyUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP002.mp4"
           },
           {
             "id": "EP003",
@@ -489,7 +540,8 @@ export const series: Serie[] = [
               "format": "vertical 9:16",
               "source": "rapidocms"
             },
-            "masterRapidoUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/FoodEatUp-EP003-Ma-carte"
+            "masterRapidoUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/FoodEatUp-EP003-Ma-carte",
+            "storyUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP003.mp4"
           },
           {
             "id": "EP004",
@@ -560,7 +612,8 @@ export const series: Serie[] = [
               "format": "vertical 9:16",
               "source": "rapidocms"
             },
-            "masterRapidoUrl": null
+            "masterRapidoUrl": null,
+            "storyUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP004.mp4"
           },
           {
             "id": "EP005",
@@ -630,7 +683,8 @@ export const series: Serie[] = [
               "format": "vertical 9:16",
               "source": "rapidocms"
             },
-            "masterRapidoUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/FoodEatUp-EP005-Vue-d-ensemble"
+            "masterRapidoUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/FoodEatUp-EP005-Vue-d-ensemble",
+            "storyUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP005.mp4"
           },
           {
             "id": "EP006",
@@ -707,7 +761,8 @@ export const series: Serie[] = [
               "format": "vertical 9:16",
               "source": "rapidocms"
             },
-            "masterRapidoUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/FoodEatUp-EP006-Ajouter-modifier-un-mouvement"
+            "masterRapidoUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/FoodEatUp-EP006-Ajouter-modifier-un-mouvement",
+            "storyUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP006.mp4"
           },
           {
             "id": "EP007",
@@ -784,7 +839,8 @@ export const series: Serie[] = [
               "format": "vertical 9:16",
               "source": "rapidocms"
             },
-            "masterRapidoUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/FoodEatUp-EP007-Repondre-aux-avis"
+            "masterRapidoUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/FoodEatUp-EP007-Repondre-aux-avis",
+            "storyUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP007.mp4"
           },
           {
             "id": "EP008",
@@ -861,7 +917,8 @@ export const series: Serie[] = [
               "format": "vertical 9:16",
               "source": "rapidocms"
             },
-            "masterRapidoUrl": null
+            "masterRapidoUrl": null,
+            "storyUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP008.mp4"
           },
           {
             "id": "EP009",
@@ -932,7 +989,8 @@ export const series: Serie[] = [
               "format": "vertical 9:16",
               "source": "rapidocms"
             },
-            "masterRapidoUrl": null
+            "masterRapidoUrl": null,
+            "storyUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP009.mp4"
           },
           {
             "id": "EP010",
@@ -951,7 +1009,7 @@ export const series: Serie[] = [
             "reseaux": {
               "facebook": {
                 "statut": "planifie",
-                "date": "2026-08-17",
+                "date": "2026-08-18",
                 "heure": "12:00",
                 "compte": "FoodEatUp",
                 "format": "Vidéo native 9:16",
@@ -1009,7 +1067,8 @@ export const series: Serie[] = [
               "format": "vertical 9:16",
               "source": "rapidocms"
             },
-            "masterRapidoUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/FoodEatUp-EP010-Lire-ses-previsions"
+            "masterRapidoUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/FoodEatUp-EP010-Lire-ses-previsions",
+            "storyUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP010.mp4"
           },
           {
             "id": "EP011",
@@ -1087,7 +1146,8 @@ export const series: Serie[] = [
               "format": "vertical 9:16",
               "source": "rapidocms"
             },
-            "masterRapidoUrl": null
+            "masterRapidoUrl": null,
+            "storyUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP011.mp4"
           },
           {
             "id": "EP012",
@@ -1165,7 +1225,8 @@ export const series: Serie[] = [
               "format": "vertical 9:16",
               "source": "rapidocms"
             },
-            "masterRapidoUrl": null
+            "masterRapidoUrl": null,
+            "storyUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP012.mp4"
           },
           {
             "id": "EP013",
@@ -1242,7 +1303,8 @@ export const series: Serie[] = [
               "format": "vertical 9:16",
               "source": "rapidocms"
             },
-            "masterRapidoUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/FoodEatUp-EP013-Parler-a-PrediBot"
+            "masterRapidoUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/FoodEatUp-EP013-Parler-a-PrediBot",
+            "storyUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP013.mp4"
           },
           {
             "id": "EP014",
@@ -1319,7 +1381,8 @@ export const series: Serie[] = [
               "format": "vertical 9:16",
               "source": "rapidocms"
             },
-            "masterRapidoUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/FoodEatUp-EP014-Mouvements-de-stock"
+            "masterRapidoUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/FoodEatUp-EP014-Mouvements-de-stock",
+            "storyUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP014.mp4"
           },
           {
             "id": "EP015",
@@ -1396,7 +1459,8 @@ export const series: Serie[] = [
               "format": "vertical 9:16",
               "source": "rapidocms"
             },
-            "masterRapidoUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/FoodEatUp-EP015-Referentiels"
+            "masterRapidoUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/FoodEatUp-EP015-Referentiels",
+            "storyUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP015.mp4"
           },
           {
             "id": "EP016",
@@ -1473,7 +1537,8 @@ export const series: Serie[] = [
               "format": "vertical 9:16",
               "source": "rapidocms"
             },
-            "masterRapidoUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/FoodEatUp-EP016-Depenses-et-livraisons"
+            "masterRapidoUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/FoodEatUp-EP016-Depenses-et-livraisons",
+            "storyUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP016.mp4"
           },
           {
             "id": "EP017",
@@ -1550,7 +1615,8 @@ export const series: Serie[] = [
               "format": "vertical 9:16",
               "source": "rapidocms"
             },
-            "masterRapidoUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/FoodEatUp-EP017-Creation-d-un-rapport"
+            "masterRapidoUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/FoodEatUp-EP017-Creation-d-un-rapport",
+            "storyUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP017.mp4"
           },
           {
             "id": "EP018",
@@ -1627,7 +1693,8 @@ export const series: Serie[] = [
               "format": "vertical 9:16",
               "source": "rapidocms"
             },
-            "masterRapidoUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/FoodEatUp-EP018-Site-vocal-et-QR-code"
+            "masterRapidoUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/FoodEatUp-EP018-Site-vocal-et-QR-code",
+            "storyUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP018.mp4"
           },
           {
             "id": "EP019",
@@ -1704,7 +1771,8 @@ export const series: Serie[] = [
               "format": "vertical 9:16",
               "source": "rapidocms"
             },
-            "masterRapidoUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/FoodEatUp-EP019-Predictions-des-commandes"
+            "masterRapidoUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/FoodEatUp-EP019-Predictions-des-commandes",
+            "storyUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP019.mp4"
           },
           {
             "id": "EP020",
@@ -1781,7 +1849,8 @@ export const series: Serie[] = [
               "format": "vertical 9:16",
               "source": "rapidocms"
             },
-            "masterRapidoUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/FoodEatUp-EP020-Ajouter-une-reservation"
+            "masterRapidoUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/FoodEatUp-EP020-Ajouter-une-reservation",
+            "storyUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP020.mp4"
           },
           {
             "id": "EP021",
@@ -1858,7 +1927,8 @@ export const series: Serie[] = [
               "format": "vertical 9:16",
               "source": "rapidocms"
             },
-            "masterRapidoUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/FoodEatUp-EP021-Poste-de-travail-KDS"
+            "masterRapidoUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/FoodEatUp-EP021-Poste-de-travail-KDS",
+            "storyUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP021.mp4"
           },
           {
             "id": "EP022",
@@ -1935,7 +2005,8 @@ export const series: Serie[] = [
               "format": "vertical 9:16",
               "source": "rapidocms"
             },
-            "masterRapidoUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/FoodEatUp-EP022-Marketplace-de-prompts"
+            "masterRapidoUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/FoodEatUp-EP022-Marketplace-de-prompts",
+            "storyUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP022.mp4"
           },
           {
             "id": "EP023",
@@ -2012,7 +2083,8 @@ export const series: Serie[] = [
               "format": "vertical 9:16",
               "source": "rapidocms"
             },
-            "masterRapidoUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/FoodEatUp-EP023-Calendrier-IA-avec-Iris"
+            "masterRapidoUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/FoodEatUp-EP023-Calendrier-IA-avec-Iris",
+            "storyUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP023.mp4"
           },
           {
             "id": "EP024",
@@ -2089,7 +2161,8 @@ export const series: Serie[] = [
               "format": "vertical 9:16",
               "source": "rapidocms"
             },
-            "masterRapidoUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/FoodEatUp-EP024-Creer-son-site-par-IA"
+            "masterRapidoUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/FoodEatUp-EP024-Creer-son-site-par-IA",
+            "storyUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP024.mp4"
           },
           {
             "id": "EP025",
@@ -2166,7 +2239,8 @@ export const series: Serie[] = [
               "format": "vertical 9:16",
               "source": "rapidocms"
             },
-            "masterRapidoUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/FoodEatUp-EP025-Campagne-100-pourcent-IA"
+            "masterRapidoUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/FoodEatUp-EP025-Campagne-100-pourcent-IA",
+            "storyUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP025.mp4"
           },
           {
             "id": "EP026",
@@ -2243,7 +2317,8 @@ export const series: Serie[] = [
               "format": "vertical 9:16",
               "source": "rapidocms"
             },
-            "masterRapidoUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/FoodEatUp-EP026-Liste-de-courses-fournisseur"
+            "masterRapidoUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/FoodEatUp-EP026-Liste-de-courses-fournisseur",
+            "storyUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP026.mp4"
           },
           {
             "id": "EP027",
@@ -2314,7 +2389,8 @@ export const series: Serie[] = [
               "format": "vertical 9:16",
               "source": "rapidocms"
             },
-            "masterRapidoUrl": null
+            "masterRapidoUrl": null,
+            "storyUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP027.mp4"
           },
           {
             "id": "EP028",
@@ -2392,7 +2468,8 @@ export const series: Serie[] = [
               "format": "vertical 9:16",
               "source": "rapidocms"
             },
-            "masterRapidoUrl": null
+            "masterRapidoUrl": null,
+            "storyUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP028.mp4"
           },
           {
             "id": "EP029",
@@ -2469,7 +2546,8 @@ export const series: Serie[] = [
               "format": "vertical 9:16",
               "source": "rapidocms"
             },
-            "masterRapidoUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/FoodEatUp-EP029-Lire-ses-previsions"
+            "masterRapidoUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/FoodEatUp-EP029-Lire-ses-previsions",
+            "storyUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP029.mp4"
           },
           {
             "id": "EP030",
@@ -2539,7 +2617,8 @@ export const series: Serie[] = [
               "format": "vertical 9:16",
               "source": "rapidocms"
             },
-            "masterRapidoUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/FoodEatUp-EP030-Academy"
+            "masterRapidoUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/FoodEatUp-EP030-Academy",
+            "storyUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP030.mp4"
           }
         ]
       },
@@ -2623,7 +2702,8 @@ export const series: Serie[] = [
               "format": "vertical 9:16",
               "source": "rapidocms"
             },
-            "masterRapidoUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/FoodEatUp-EP031-Etiquettes-de-production"
+            "masterRapidoUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/FoodEatUp-EP031-Etiquettes-de-production",
+            "storyUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP031.mp4"
           },
           {
             "id": "EP032",
@@ -2700,7 +2780,8 @@ export const series: Serie[] = [
               "format": "vertical 9:16",
               "source": "rapidocms"
             },
-            "masterRapidoUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/FoodEatUp-EP032-Ma-carte-fiche-recette"
+            "masterRapidoUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/FoodEatUp-EP032-Ma-carte-fiche-recette",
+            "storyUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP032.mp4"
           },
           {
             "id": "EP033",
@@ -2777,7 +2858,8 @@ export const series: Serie[] = [
               "format": "vertical 9:16",
               "source": "rapidocms"
             },
-            "masterRapidoUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/FoodEatUp-EP033-Mouvements-de-stock"
+            "masterRapidoUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/FoodEatUp-EP033-Mouvements-de-stock",
+            "storyUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP033.mp4"
           },
           {
             "id": "EP034",
@@ -2848,7 +2930,8 @@ export const series: Serie[] = [
               "format": "vertical 9:16",
               "source": "rapidocms"
             },
-            "masterRapidoUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/FoodEatUp-EP034-Procedures-de-service"
+            "masterRapidoUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/FoodEatUp-EP034-Procedures-de-service",
+            "storyUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP034.mp4"
           },
           {
             "id": "EP035",
@@ -2925,7 +3008,8 @@ export const series: Serie[] = [
               "format": "vertical 9:16",
               "source": "rapidocms"
             },
-            "masterRapidoUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/FoodEatUp-EP035-Lire-ses-previsions"
+            "masterRapidoUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/FoodEatUp-EP035-Lire-ses-previsions",
+            "storyUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP035.mp4"
           },
           {
             "id": "EP036",
@@ -2995,7 +3079,8 @@ export const series: Serie[] = [
               "format": "vertical 9:16",
               "source": "rapidocms"
             },
-            "masterRapidoUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/FoodEatUp-EP036-Un-seul-abonnement"
+            "masterRapidoUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/FoodEatUp-EP036-Un-seul-abonnement",
+            "storyUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP036.mp4"
           },
           {
             "id": "EP037",
@@ -3072,7 +3157,8 @@ export const series: Serie[] = [
               "format": "vertical 9:16",
               "source": "rapidocms"
             },
-            "masterRapidoUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/FoodEatUp-EP037-Planning-par-employe-ou-par-poste"
+            "masterRapidoUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/FoodEatUp-EP037-Planning-par-employe-ou-par-poste",
+            "storyUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP037.mp4"
           },
           {
             "id": "EP038",
@@ -3149,7 +3235,8 @@ export const series: Serie[] = [
               "format": "vertical 9:16",
               "source": "rapidocms"
             },
-            "masterRapidoUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/FoodEatUp-EP038-Ma-liste-de-courses"
+            "masterRapidoUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/FoodEatUp-EP038-Ma-liste-de-courses",
+            "storyUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP038.mp4"
           },
           {
             "id": "EP039",
@@ -3226,7 +3313,8 @@ export const series: Serie[] = [
               "format": "vertical 9:16",
               "source": "rapidocms"
             },
-            "masterRapidoUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/FoodEatUp-EP039-Gerer-et-no-shows"
+            "masterRapidoUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/FoodEatUp-EP039-Gerer-et-no-shows",
+            "storyUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP039.mp4"
           },
           {
             "id": "EP040",
@@ -3303,7 +3391,8 @@ export const series: Serie[] = [
               "format": "vertical 9:16",
               "source": "rapidocms"
             },
-            "masterRapidoUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/FoodEatUp-EP040-Ajouter-un-mouvement"
+            "masterRapidoUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/FoodEatUp-EP040-Ajouter-un-mouvement",
+            "storyUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP040.mp4"
           },
           {
             "id": "EP041",
@@ -3380,7 +3469,8 @@ export const series: Serie[] = [
               "format": "vertical 9:16",
               "source": "rapidocms"
             },
-            "masterRapidoUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/FoodEatUp-EP041-Sortie-des-ingredients-de-la-production"
+            "masterRapidoUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/FoodEatUp-EP041-Sortie-des-ingredients-de-la-production",
+            "storyUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP041.mp4"
           },
           {
             "id": "EP042",
@@ -3458,7 +3548,8 @@ export const series: Serie[] = [
               "format": "vertical 9:16",
               "source": "rapidocms"
             },
-            "masterRapidoUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/FoodEatUp-EP042-Calendrier-de-communication-Iris"
+            "masterRapidoUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/FoodEatUp-EP042-Calendrier-de-communication-Iris",
+            "storyUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP042.mp4"
           },
           {
             "id": "EP043",
@@ -3529,7 +3620,8 @@ export const series: Serie[] = [
               "format": "vertical 9:16",
               "source": "rapidocms"
             },
-            "masterRapidoUrl": null
+            "masterRapidoUrl": null,
+            "storyUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP043.mp4"
           },
           {
             "id": "EP044",
@@ -3606,7 +3698,8 @@ export const series: Serie[] = [
               "format": "vertical 9:16",
               "source": "rapidocms"
             },
-            "masterRapidoUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/FoodEatUp-EP044-Commander-par-QR-code"
+            "masterRapidoUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/FoodEatUp-EP044-Commander-par-QR-code",
+            "storyUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP044.mp4"
           },
           {
             "id": "EP045",
@@ -3683,7 +3776,8 @@ export const series: Serie[] = [
               "format": "vertical 9:16",
               "source": "rapidocms"
             },
-            "masterRapidoUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/FoodEatUp-EP045-Statistiques-par-module"
+            "masterRapidoUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/FoodEatUp-EP045-Statistiques-par-module",
+            "storyUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP045.mp4"
           },
           {
             "id": "EP046",
@@ -3760,7 +3854,8 @@ export const series: Serie[] = [
               "format": "vertical 9:16",
               "source": "rapidocms"
             },
-            "masterRapidoUrl": null
+            "masterRapidoUrl": null,
+            "storyUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP046.mp4"
           },
           {
             "id": "EP047",
@@ -3837,7 +3932,8 @@ export const series: Serie[] = [
               "format": "vertical 9:16",
               "source": "rapidocms"
             },
-            "masterRapidoUrl": null
+            "masterRapidoUrl": null,
+            "storyUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP047.mp4"
           },
           {
             "id": "EP048",
@@ -3914,7 +4010,8 @@ export const series: Serie[] = [
               "format": "vertical 9:16",
               "source": "rapidocms"
             },
-            "masterRapidoUrl": null
+            "masterRapidoUrl": null,
+            "storyUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP048.mp4"
           },
           {
             "id": "EP049",
@@ -3991,7 +4088,8 @@ export const series: Serie[] = [
               "format": "vertical 9:16",
               "source": "rapidocms"
             },
-            "masterRapidoUrl": null
+            "masterRapidoUrl": null,
+            "storyUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP049.mp4"
           },
           {
             "id": "EP050",
@@ -4068,7 +4166,8 @@ export const series: Serie[] = [
               "format": "vertical 9:16",
               "source": "rapidocms"
             },
-            "masterRapidoUrl": null
+            "masterRapidoUrl": null,
+            "storyUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP050.mp4"
           },
           {
             "id": "EP051",
@@ -4145,7 +4244,8 @@ export const series: Serie[] = [
               "format": "vertical 9:16",
               "source": "rapidocms"
             },
-            "masterRapidoUrl": null
+            "masterRapidoUrl": null,
+            "storyUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP051.mp4"
           },
           {
             "id": "EP052",
@@ -4222,7 +4322,8 @@ export const series: Serie[] = [
               "format": "vertical 9:16",
               "source": "rapidocms"
             },
-            "masterRapidoUrl": null
+            "masterRapidoUrl": null,
+            "storyUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP052.mp4"
           },
           {
             "id": "EP053",
@@ -4299,7 +4400,8 @@ export const series: Serie[] = [
               "format": "vertical 9:16",
               "source": "rapidocms"
             },
-            "masterRapidoUrl": null
+            "masterRapidoUrl": null,
+            "storyUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP053.mp4"
           },
           {
             "id": "EP054",
@@ -4376,7 +4478,8 @@ export const series: Serie[] = [
               "format": "vertical 9:16",
               "source": "rapidocms"
             },
-            "masterRapidoUrl": null
+            "masterRapidoUrl": null,
+            "storyUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP054.mp4"
           },
           {
             "id": "EP055",
@@ -4453,7 +4556,8 @@ export const series: Serie[] = [
               "format": "vertical 9:16",
               "source": "rapidocms"
             },
-            "masterRapidoUrl": null
+            "masterRapidoUrl": null,
+            "storyUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP055.mp4"
           },
           {
             "id": "EP056",
@@ -4530,7 +4634,8 @@ export const series: Serie[] = [
               "format": "vertical 9:16",
               "source": "rapidocms"
             },
-            "masterRapidoUrl": null
+            "masterRapidoUrl": null,
+            "storyUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP056.mp4"
           },
           {
             "id": "EP057",
@@ -4600,7 +4705,8 @@ export const series: Serie[] = [
               "format": "vertical 9:16",
               "source": null
             },
-            "masterRapidoUrl": null
+            "masterRapidoUrl": null,
+            "storyUrl": null
           },
           {
             "id": "EP058",
@@ -4671,7 +4777,8 @@ export const series: Serie[] = [
               "format": "vertical 9:16",
               "source": null
             },
-            "masterRapidoUrl": null
+            "masterRapidoUrl": null,
+            "storyUrl": null
           },
           {
             "id": "EP059",
@@ -4748,7 +4855,8 @@ export const series: Serie[] = [
               "format": "vertical 9:16",
               "source": "rapidocms"
             },
-            "masterRapidoUrl": null
+            "masterRapidoUrl": null,
+            "storyUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP059.mp4"
           },
           {
             "id": "EP060",
@@ -4825,7 +4933,8 @@ export const series: Serie[] = [
               "format": "vertical 9:16",
               "source": "rapidocms"
             },
-            "masterRapidoUrl": null
+            "masterRapidoUrl": null,
+            "storyUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP060.mp4"
           }
         ]
       },
@@ -4909,7 +5018,8 @@ export const series: Serie[] = [
               "format": "vertical 9:16",
               "source": "rapidocms"
             },
-            "masterRapidoUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/FoodEatUp-EP061-Exporter-l-historique-HACCP"
+            "masterRapidoUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/FoodEatUp-EP061-Exporter-l-historique-HACCP",
+            "storyUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP061.mp4"
           },
           {
             "id": "EP062",
@@ -4987,7 +5097,8 @@ export const series: Serie[] = [
               "format": "vertical 9:16",
               "source": "rapidocms"
             },
-            "masterRapidoUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/FoodEatUp-EP062-Borne-de-pointage-des-employes"
+            "masterRapidoUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/FoodEatUp-EP062-Borne-de-pointage-des-employes",
+            "storyUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP062.mp4"
           },
           {
             "id": "EP063",
@@ -5064,7 +5175,8 @@ export const series: Serie[] = [
               "format": "vertical 9:16",
               "source": "rapidocms"
             },
-            "masterRapidoUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/FoodEatUp-EP063-Horaires-d-un-employe"
+            "masterRapidoUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/FoodEatUp-EP063-Horaires-d-un-employe",
+            "storyUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP063.mp4"
           },
           {
             "id": "EP064",
@@ -5141,7 +5253,8 @@ export const series: Serie[] = [
               "format": "vertical 9:16",
               "source": "rapidocms"
             },
-            "masterRapidoUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/FoodEatUp-EP064-Planning-et-taches-de-l-employe"
+            "masterRapidoUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/FoodEatUp-EP064-Planning-et-taches-de-l-employe",
+            "storyUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP064.mp4"
           },
           {
             "id": "EP065",
@@ -5218,7 +5331,8 @@ export const series: Serie[] = [
               "format": "vertical 9:16",
               "source": "rapidocms"
             },
-            "masterRapidoUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/FoodEatUp-EP065-Historique-des-pointages"
+            "masterRapidoUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/FoodEatUp-EP065-Historique-des-pointages",
+            "storyUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP065.mp4"
           },
           {
             "id": "EP066",
@@ -5288,7 +5402,8 @@ export const series: Serie[] = [
               "format": "vertical 9:16",
               "source": "rapidocms"
             },
-            "masterRapidoUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/FoodEatUp-EP066-Demande-d-absence-ou-de-conge"
+            "masterRapidoUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/FoodEatUp-EP066-Demande-d-absence-ou-de-conge",
+            "storyUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP066.mp4"
           },
           {
             "id": "EP067",
@@ -5365,7 +5480,8 @@ export const series: Serie[] = [
               "format": "vertical 9:16",
               "source": "rapidocms"
             },
-            "masterRapidoUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/FoodEatUp-EP067-Salaire-et-contrat"
+            "masterRapidoUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/FoodEatUp-EP067-Salaire-et-contrat",
+            "storyUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP067.mp4"
           },
           {
             "id": "EP068",
@@ -5435,7 +5551,8 @@ export const series: Serie[] = [
               "format": "vertical 9:16",
               "source": "rapidocms"
             },
-            "masterRapidoUrl": null
+            "masterRapidoUrl": null,
+            "storyUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP068.mp4"
           },
           {
             "id": "EP069",
@@ -5513,7 +5630,8 @@ export const series: Serie[] = [
               "format": "vertical 9:16",
               "source": "rapidocms"
             },
-            "masterRapidoUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/FoodEatUp-EP069-Ajouter-du-contenu-a-son-site"
+            "masterRapidoUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/FoodEatUp-EP069-Ajouter-du-contenu-a-son-site",
+            "storyUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP069.mp4"
           },
           {
             "id": "EP070",
@@ -5590,7 +5708,8 @@ export const series: Serie[] = [
               "format": "vertical 9:16",
               "source": "rapidocms"
             },
-            "masterRapidoUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/FoodEatUp-EP070-Configuration-des-employes"
+            "masterRapidoUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/FoodEatUp-EP070-Configuration-des-employes",
+            "storyUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP070.mp4"
           },
           {
             "id": "EP071",
@@ -5667,7 +5786,8 @@ export const series: Serie[] = [
               "format": "vertical 9:16",
               "source": "rapidocms"
             },
-            "masterRapidoUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/FoodEatUp-EP071-Affectation-par-poste-et-par-zone"
+            "masterRapidoUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/FoodEatUp-EP071-Affectation-par-poste-et-par-zone",
+            "storyUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP071.mp4"
           },
           {
             "id": "EP072",
@@ -5744,7 +5864,8 @@ export const series: Serie[] = [
               "format": "vertical 9:16",
               "source": "rapidocms"
             },
-            "masterRapidoUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/FoodEatUp-EP072-Absence-et-service-decouvert"
+            "masterRapidoUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/FoodEatUp-EP072-Absence-et-service-decouvert",
+            "storyUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP072.mp4"
           },
           {
             "id": "EP073",
@@ -5821,7 +5942,8 @@ export const series: Serie[] = [
               "format": "vertical 9:16",
               "source": "rapidocms"
             },
-            "masterRapidoUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/FoodEatUp-EP073-Profil-entreprise"
+            "masterRapidoUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/FoodEatUp-EP073-Profil-entreprise",
+            "storyUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP073.mp4"
           },
           {
             "id": "EP074",
@@ -5898,7 +6020,8 @@ export const series: Serie[] = [
               "format": "vertical 9:16",
               "source": "rapidocms"
             },
-            "masterRapidoUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/FoodEatUp-EP074-Vos-categories"
+            "masterRapidoUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/FoodEatUp-EP074-Vos-categories",
+            "storyUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP074.mp4"
           },
           {
             "id": "EP075",
@@ -5975,7 +6098,8 @@ export const series: Serie[] = [
               "format": "vertical 9:16",
               "source": "rapidocms"
             },
-            "masterRapidoUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/FoodEatUp-EP075-Creation-des-TVA"
+            "masterRapidoUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/FoodEatUp-EP075-Creation-des-TVA",
+            "storyUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP075.mp4"
           },
           {
             "id": "EP076",
@@ -6052,7 +6176,8 @@ export const series: Serie[] = [
               "format": "vertical 9:16",
               "source": "rapidocms"
             },
-            "masterRapidoUrl": null
+            "masterRapidoUrl": null,
+            "storyUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP076.mp4"
           },
           {
             "id": "EP077",
@@ -6130,7 +6255,8 @@ export const series: Serie[] = [
               "format": "vertical 9:16",
               "source": "rapidocms"
             },
-            "masterRapidoUrl": null
+            "masterRapidoUrl": null,
+            "storyUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP077.mp4"
           },
           {
             "id": "EP078",
@@ -6208,7 +6334,8 @@ export const series: Serie[] = [
               "format": "vertical 9:16",
               "source": "rapidocms"
             },
-            "masterRapidoUrl": null
+            "masterRapidoUrl": null,
+            "storyUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP078.mp4"
           },
           {
             "id": "EP079",
@@ -6286,7 +6413,8 @@ export const series: Serie[] = [
               "format": "vertical 9:16",
               "source": "rapidocms"
             },
-            "masterRapidoUrl": null
+            "masterRapidoUrl": null,
+            "storyUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP079.mp4"
           },
           {
             "id": "EP080",
@@ -6363,7 +6491,8 @@ export const series: Serie[] = [
               "format": "vertical 9:16",
               "source": "rapidocms"
             },
-            "masterRapidoUrl": null
+            "masterRapidoUrl": null,
+            "storyUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP080.mp4"
           },
           {
             "id": "EP081",
@@ -6440,7 +6569,8 @@ export const series: Serie[] = [
               "format": "vertical 9:16",
               "source": "rapidocms"
             },
-            "masterRapidoUrl": null
+            "masterRapidoUrl": null,
+            "storyUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP081.mp4"
           },
           {
             "id": "EP082",
@@ -6517,7 +6647,8 @@ export const series: Serie[] = [
               "format": "vertical 9:16",
               "source": "rapidocms"
             },
-            "masterRapidoUrl": null
+            "masterRapidoUrl": null,
+            "storyUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP082.mp4"
           },
           {
             "id": "EP083",
@@ -6587,7 +6718,8 @@ export const series: Serie[] = [
               "format": "vertical 9:16",
               "source": "rapidocms"
             },
-            "masterRapidoUrl": null
+            "masterRapidoUrl": null,
+            "storyUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP083.mp4"
           },
           {
             "id": "EP084",
@@ -6664,7 +6796,8 @@ export const series: Serie[] = [
               "format": "vertical 9:16",
               "source": "rapidocms"
             },
-            "masterRapidoUrl": null
+            "masterRapidoUrl": null,
+            "storyUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP084.mp4"
           },
           {
             "id": "EP085",
@@ -6734,7 +6867,8 @@ export const series: Serie[] = [
               "format": "vertical 9:16",
               "source": "rapidocms"
             },
-            "masterRapidoUrl": null
+            "masterRapidoUrl": null,
+            "storyUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP085.mp4"
           },
           {
             "id": "EP086",
@@ -6811,7 +6945,8 @@ export const series: Serie[] = [
               "format": "vertical 9:16",
               "source": "rapidocms"
             },
-            "masterRapidoUrl": null
+            "masterRapidoUrl": null,
+            "storyUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP086.mp4"
           },
           {
             "id": "EP087",
@@ -6888,7 +7023,8 @@ export const series: Serie[] = [
               "format": "vertical 9:16",
               "source": "rapidocms"
             },
-            "masterRapidoUrl": null
+            "masterRapidoUrl": null,
+            "storyUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP087.mp4"
           },
           {
             "id": "EP088",
@@ -6958,7 +7094,8 @@ export const series: Serie[] = [
               "format": "vertical 9:16",
               "source": "rapidocms"
             },
-            "masterRapidoUrl": null
+            "masterRapidoUrl": null,
+            "storyUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP088.mp4"
           },
           {
             "id": "EP089",
@@ -7035,7 +7172,8 @@ export const series: Serie[] = [
               "format": "vertical 9:16",
               "source": "rapidocms"
             },
-            "masterRapidoUrl": null
+            "masterRapidoUrl": null,
+            "storyUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP089.mp4"
           },
           {
             "id": "EP090",
@@ -7113,7 +7251,8 @@ export const series: Serie[] = [
               "format": "vertical 9:16",
               "source": "rapidocms"
             },
-            "masterRapidoUrl": null
+            "masterRapidoUrl": null,
+            "storyUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP090.mp4"
           }
         ]
       },
@@ -7197,7 +7336,8 @@ export const series: Serie[] = [
               "format": "vertical 9:16",
               "source": "rapidocms"
             },
-            "masterRapidoUrl": null
+            "masterRapidoUrl": null,
+            "storyUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP091.mp4"
           },
           {
             "id": "EP092",
@@ -7274,7 +7414,8 @@ export const series: Serie[] = [
               "format": "vertical 9:16",
               "source": null
             },
-            "masterRapidoUrl": null
+            "masterRapidoUrl": null,
+            "storyUrl": null
           },
           {
             "id": "EP093",
@@ -7351,7 +7492,8 @@ export const series: Serie[] = [
               "format": "vertical 9:16",
               "source": "rapidocms"
             },
-            "masterRapidoUrl": null
+            "masterRapidoUrl": null,
+            "storyUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP093.mp4"
           },
           {
             "id": "EP094",
@@ -7429,7 +7571,8 @@ export const series: Serie[] = [
               "format": "vertical 9:16",
               "source": "rapidocms"
             },
-            "masterRapidoUrl": null
+            "masterRapidoUrl": null,
+            "storyUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP094.mp4"
           },
           {
             "id": "EP095",
@@ -7507,7 +7650,8 @@ export const series: Serie[] = [
               "format": "vertical 9:16",
               "source": "rapidocms"
             },
-            "masterRapidoUrl": null
+            "masterRapidoUrl": null,
+            "storyUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP095.mp4"
           },
           {
             "id": "EP096",
@@ -7584,7 +7728,8 @@ export const series: Serie[] = [
               "format": "vertical 9:16",
               "source": "rapidocms"
             },
-            "masterRapidoUrl": null
+            "masterRapidoUrl": null,
+            "storyUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP096.mp4"
           },
           {
             "id": "EP097",
@@ -7662,7 +7807,8 @@ export const series: Serie[] = [
               "format": "vertical 9:16",
               "source": "rapidocms"
             },
-            "masterRapidoUrl": null
+            "masterRapidoUrl": null,
+            "storyUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP097.mp4"
           },
           {
             "id": "EP098",
@@ -7739,7 +7885,8 @@ export const series: Serie[] = [
               "format": "vertical 9:16",
               "source": "rapidocms"
             },
-            "masterRapidoUrl": null
+            "masterRapidoUrl": null,
+            "storyUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP098.mp4"
           },
           {
             "id": "EP099",
@@ -7816,7 +7963,8 @@ export const series: Serie[] = [
               "format": "vertical 9:16",
               "source": "rapidocms"
             },
-            "masterRapidoUrl": null
+            "masterRapidoUrl": null,
+            "storyUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP099.mp4"
           },
           {
             "id": "EP100",
@@ -7893,7 +8041,8 @@ export const series: Serie[] = [
               "format": "vertical 9:16",
               "source": "rapidocms"
             },
-            "masterRapidoUrl": null
+            "masterRapidoUrl": null,
+            "storyUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP100.mp4"
           },
           {
             "id": "EP101",
@@ -7964,7 +8113,8 @@ export const series: Serie[] = [
               "format": "vertical 9:16",
               "source": "rapidocms"
             },
-            "masterRapidoUrl": null
+            "masterRapidoUrl": null,
+            "storyUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP101.mp4"
           },
           {
             "id": "EP102",
@@ -8041,7 +8191,8 @@ export const series: Serie[] = [
               "format": "vertical 9:16",
               "source": "rapidocms"
             },
-            "masterRapidoUrl": null
+            "masterRapidoUrl": null,
+            "storyUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP102.mp4"
           },
           {
             "id": "EP103",
@@ -8118,7 +8269,8 @@ export const series: Serie[] = [
               "format": "vertical 9:16",
               "source": "rapidocms"
             },
-            "masterRapidoUrl": null
+            "masterRapidoUrl": null,
+            "storyUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP103.mp4"
           },
           {
             "id": "EP104",
@@ -8195,7 +8347,8 @@ export const series: Serie[] = [
               "format": "vertical 9:16",
               "source": "rapidocms"
             },
-            "masterRapidoUrl": null
+            "masterRapidoUrl": null,
+            "storyUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP104.mp4"
           },
           {
             "id": "EP105",
@@ -8273,7 +8426,8 @@ export const series: Serie[] = [
               "format": "vertical 9:16",
               "source": "rapidocms"
             },
-            "masterRapidoUrl": null
+            "masterRapidoUrl": null,
+            "storyUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP105.mp4"
           },
           {
             "id": "EP106",
@@ -8344,7 +8498,8 @@ export const series: Serie[] = [
               "format": "vertical 9:16",
               "source": "rapidocms"
             },
-            "masterRapidoUrl": null
+            "masterRapidoUrl": null,
+            "storyUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP106.mp4"
           },
           {
             "id": "EP107",
@@ -8415,7 +8570,8 @@ export const series: Serie[] = [
               "format": "vertical 9:16",
               "source": "rapidocms"
             },
-            "masterRapidoUrl": null
+            "masterRapidoUrl": null,
+            "storyUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP107.mp4"
           },
           {
             "id": "EP108",
@@ -8492,7 +8648,8 @@ export const series: Serie[] = [
               "format": "vertical 9:16",
               "source": "rapidocms"
             },
-            "masterRapidoUrl": null
+            "masterRapidoUrl": null,
+            "storyUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP108.mp4"
           },
           {
             "id": "EP109",
@@ -8569,7 +8726,8 @@ export const series: Serie[] = [
               "format": "vertical 9:16",
               "source": "rapidocms"
             },
-            "masterRapidoUrl": null
+            "masterRapidoUrl": null,
+            "storyUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP109.mp4"
           },
           {
             "id": "EP110",
@@ -8646,7 +8804,8 @@ export const series: Serie[] = [
               "format": "vertical 9:16",
               "source": null
             },
-            "masterRapidoUrl": null
+            "masterRapidoUrl": null,
+            "storyUrl": null
           },
           {
             "id": "EP111",
@@ -8723,7 +8882,8 @@ export const series: Serie[] = [
               "format": "vertical 9:16",
               "source": null
             },
-            "masterRapidoUrl": null
+            "masterRapidoUrl": null,
+            "storyUrl": null
           },
           {
             "id": "EP112",
@@ -8800,7 +8960,8 @@ export const series: Serie[] = [
               "format": "vertical 9:16",
               "source": "rapidocms"
             },
-            "masterRapidoUrl": null
+            "masterRapidoUrl": null,
+            "storyUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP112.mp4"
           },
           {
             "id": "EP113",
@@ -8878,7 +9039,8 @@ export const series: Serie[] = [
               "format": "vertical 9:16",
               "source": "rapidocms"
             },
-            "masterRapidoUrl": null
+            "masterRapidoUrl": null,
+            "storyUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP113.mp4"
           },
           {
             "id": "EP114",
@@ -8955,7 +9117,8 @@ export const series: Serie[] = [
               "format": "vertical 9:16",
               "source": "rapidocms"
             },
-            "masterRapidoUrl": null
+            "masterRapidoUrl": null,
+            "storyUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP114.mp4"
           },
           {
             "id": "EP115",
@@ -9032,7 +9195,8 @@ export const series: Serie[] = [
               "format": "vertical 9:16",
               "source": "rapidocms"
             },
-            "masterRapidoUrl": null
+            "masterRapidoUrl": null,
+            "storyUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP115.mp4"
           },
           {
             "id": "EP116",
@@ -9109,7 +9273,8 @@ export const series: Serie[] = [
               "format": "vertical 9:16",
               "source": "rapidocms"
             },
-            "masterRapidoUrl": null
+            "masterRapidoUrl": null,
+            "storyUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP116.mp4"
           },
           {
             "id": "EP117",
@@ -9186,7 +9351,8 @@ export const series: Serie[] = [
               "format": "vertical 9:16",
               "source": "rapidocms"
             },
-            "masterRapidoUrl": null
+            "masterRapidoUrl": null,
+            "storyUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP117.mp4"
           },
           {
             "id": "EP118",
@@ -9263,7 +9429,8 @@ export const series: Serie[] = [
               "format": "vertical 9:16",
               "source": "rapidocms"
             },
-            "masterRapidoUrl": null
+            "masterRapidoUrl": null,
+            "storyUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP118.mp4"
           },
           {
             "id": "EP119",
@@ -9340,7 +9507,8 @@ export const series: Serie[] = [
               "format": "vertical 9:16",
               "source": "rapidocms"
             },
-            "masterRapidoUrl": null
+            "masterRapidoUrl": null,
+            "storyUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP119.mp4"
           },
           {
             "id": "EP120",
@@ -9417,7 +9585,8 @@ export const series: Serie[] = [
               "format": "vertical 9:16",
               "source": "rapidocms"
             },
-            "masterRapidoUrl": null
+            "masterRapidoUrl": null,
+            "storyUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP120.mp4"
           }
         ]
       },
@@ -9501,7 +9670,8 @@ export const series: Serie[] = [
               "format": "vertical 9:16",
               "source": null
             },
-            "masterRapidoUrl": null
+            "masterRapidoUrl": null,
+            "storyUrl": null
           },
           {
             "id": "EP122",
@@ -9578,7 +9748,8 @@ export const series: Serie[] = [
               "format": "vertical 9:16",
               "source": "rapidocms"
             },
-            "masterRapidoUrl": null
+            "masterRapidoUrl": null,
+            "storyUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP122.mp4"
           },
           {
             "id": "EP123",
@@ -9655,7 +9826,8 @@ export const series: Serie[] = [
               "format": "vertical 9:16",
               "source": null
             },
-            "masterRapidoUrl": null
+            "masterRapidoUrl": null,
+            "storyUrl": null
           },
           {
             "id": "EP124",
@@ -9726,7 +9898,8 @@ export const series: Serie[] = [
               "format": "vertical 9:16",
               "source": "rapidocms"
             },
-            "masterRapidoUrl": null
+            "masterRapidoUrl": null,
+            "storyUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP124.mp4"
           },
           {
             "id": "EP125",
@@ -9803,7 +9976,8 @@ export const series: Serie[] = [
               "format": "vertical 9:16",
               "source": "rapidocms"
             },
-            "masterRapidoUrl": null
+            "masterRapidoUrl": null,
+            "storyUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP125.mp4"
           },
           {
             "id": "EP126",
@@ -9874,7 +10048,8 @@ export const series: Serie[] = [
               "format": "vertical 9:16",
               "source": null
             },
-            "masterRapidoUrl": null
+            "masterRapidoUrl": null,
+            "storyUrl": null
           },
           {
             "id": "EP127",
@@ -9951,7 +10126,8 @@ export const series: Serie[] = [
               "format": "vertical 9:16",
               "source": "rapidocms"
             },
-            "masterRapidoUrl": null
+            "masterRapidoUrl": null,
+            "storyUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP127.mp4"
           },
           {
             "id": "EP128",
@@ -10028,7 +10204,8 @@ export const series: Serie[] = [
               "format": "vertical 9:16",
               "source": "rapidocms"
             },
-            "masterRapidoUrl": null
+            "masterRapidoUrl": null,
+            "storyUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP128.mp4"
           },
           {
             "id": "EP129",
@@ -10105,7 +10282,8 @@ export const series: Serie[] = [
               "format": "vertical 9:16",
               "source": "rapidocms"
             },
-            "masterRapidoUrl": null
+            "masterRapidoUrl": null,
+            "storyUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP129.mp4"
           },
           {
             "id": "EP130",
@@ -10182,7 +10360,8 @@ export const series: Serie[] = [
               "format": "vertical 9:16",
               "source": null
             },
-            "masterRapidoUrl": null
+            "masterRapidoUrl": null,
+            "storyUrl": null
           },
           {
             "id": "EP131",
@@ -10259,7 +10438,8 @@ export const series: Serie[] = [
               "format": "vertical 9:16",
               "source": null
             },
-            "masterRapidoUrl": null
+            "masterRapidoUrl": null,
+            "storyUrl": null
           },
           {
             "id": "EP132",
@@ -10337,7 +10517,8 @@ export const series: Serie[] = [
               "format": "vertical 9:16",
               "source": null
             },
-            "masterRapidoUrl": null
+            "masterRapidoUrl": null,
+            "storyUrl": null
           },
           {
             "id": "EP133",
@@ -10408,7 +10589,8 @@ export const series: Serie[] = [
               "format": "vertical 9:16",
               "source": null
             },
-            "masterRapidoUrl": null
+            "masterRapidoUrl": null,
+            "storyUrl": null
           },
           {
             "id": "EP134",
@@ -10485,7 +10667,8 @@ export const series: Serie[] = [
               "format": "vertical 9:16",
               "source": null
             },
-            "masterRapidoUrl": null
+            "masterRapidoUrl": null,
+            "storyUrl": null
           },
           {
             "id": "EP135",
@@ -10562,7 +10745,8 @@ export const series: Serie[] = [
               "format": "vertical 9:16",
               "source": null
             },
-            "masterRapidoUrl": null
+            "masterRapidoUrl": null,
+            "storyUrl": null
           },
           {
             "id": "EP136",
@@ -10639,7 +10823,8 @@ export const series: Serie[] = [
               "format": "vertical 9:16",
               "source": null
             },
-            "masterRapidoUrl": null
+            "masterRapidoUrl": null,
+            "storyUrl": null
           },
           {
             "id": "EP137",
@@ -10710,7 +10895,8 @@ export const series: Serie[] = [
               "format": "vertical 9:16",
               "source": null
             },
-            "masterRapidoUrl": null
+            "masterRapidoUrl": null,
+            "storyUrl": null
           },
           {
             "id": "EP138",
@@ -10788,7 +10974,8 @@ export const series: Serie[] = [
               "format": "vertical 9:16",
               "source": null
             },
-            "masterRapidoUrl": null
+            "masterRapidoUrl": null,
+            "storyUrl": null
           },
           {
             "id": "EP139",
@@ -10865,7 +11052,8 @@ export const series: Serie[] = [
               "format": "vertical 9:16",
               "source": null
             },
-            "masterRapidoUrl": null
+            "masterRapidoUrl": null,
+            "storyUrl": null
           },
           {
             "id": "EP140",
@@ -10942,7 +11130,8 @@ export const series: Serie[] = [
               "format": "vertical 9:16",
               "source": null
             },
-            "masterRapidoUrl": null
+            "masterRapidoUrl": null,
+            "storyUrl": null
           },
           {
             "id": "EP141",
@@ -11019,7 +11208,8 @@ export const series: Serie[] = [
               "format": "vertical 9:16",
               "source": null
             },
-            "masterRapidoUrl": null
+            "masterRapidoUrl": null,
+            "storyUrl": null
           },
           {
             "id": "EP142",
@@ -11096,7 +11286,8 @@ export const series: Serie[] = [
               "format": "vertical 9:16",
               "source": null
             },
-            "masterRapidoUrl": null
+            "masterRapidoUrl": null,
+            "storyUrl": null
           },
           {
             "id": "EP143",
@@ -11173,7 +11364,8 @@ export const series: Serie[] = [
               "format": "vertical 9:16",
               "source": "rapidocms"
             },
-            "masterRapidoUrl": null
+            "masterRapidoUrl": null,
+            "storyUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP143.mp4"
           },
           {
             "id": "EP144",
@@ -11250,7 +11442,8 @@ export const series: Serie[] = [
               "format": "vertical 9:16",
               "source": null
             },
-            "masterRapidoUrl": null
+            "masterRapidoUrl": null,
+            "storyUrl": null
           },
           {
             "id": "EP145",
@@ -11327,7 +11520,8 @@ export const series: Serie[] = [
               "format": "vertical 9:16",
               "source": null
             },
-            "masterRapidoUrl": null
+            "masterRapidoUrl": null,
+            "storyUrl": null
           },
           {
             "id": "EP146",
@@ -11404,7 +11598,8 @@ export const series: Serie[] = [
               "format": "vertical 9:16",
               "source": null
             },
-            "masterRapidoUrl": null
+            "masterRapidoUrl": null,
+            "storyUrl": null
           },
           {
             "id": "EP147",
@@ -11481,7 +11676,8 @@ export const series: Serie[] = [
               "format": "vertical 9:16",
               "source": null
             },
-            "masterRapidoUrl": null
+            "masterRapidoUrl": null,
+            "storyUrl": null
           },
           {
             "id": "EP148",
@@ -11559,7 +11755,8 @@ export const series: Serie[] = [
               "format": "vertical 9:16",
               "source": null
             },
-            "masterRapidoUrl": null
+            "masterRapidoUrl": null,
+            "storyUrl": null
           },
           {
             "id": "EP149",
@@ -11636,7 +11833,8 @@ export const series: Serie[] = [
               "format": "vertical 9:16",
               "source": null
             },
-            "masterRapidoUrl": null
+            "masterRapidoUrl": null,
+            "storyUrl": null
           },
           {
             "id": "EP150",
@@ -11713,7 +11911,8 @@ export const series: Serie[] = [
               "format": "vertical 9:16",
               "source": null
             },
-            "masterRapidoUrl": null
+            "masterRapidoUrl": null,
+            "storyUrl": null
           }
         ]
       },
@@ -11751,11 +11950,11 @@ export const series: Serie[] = [
             "masterRapidoUrl": null,
             "posterUrl": null,
             "troisMots": "PLAT FILMÉ COMME",
-            "datePrevue": null,
+            "datePrevue": "2026-12-07",
             "reseaux": {
               "facebook": {
                 "statut": "a_venir",
-                "date": null,
+                "date": "2026-12-07",
                 "heure": "12:00",
                 "compte": "FoodEatUp",
                 "format": "Vidéo native 9:16",
@@ -11763,7 +11962,7 @@ export const series: Serie[] = [
               },
               "instagram": {
                 "statut": "a_venir",
-                "date": null,
+                "date": "2026-12-07",
                 "heure": "18:30",
                 "compte": "foodeatup.cocuisinage",
                 "format": "Reel 9:16",
@@ -11771,7 +11970,7 @@ export const series: Serie[] = [
               },
               "tiktok": {
                 "statut": "a_venir",
-                "date": null,
+                "date": "2026-12-07",
                 "heure": "19:00",
                 "compte": "foodeatup",
                 "format": "Vidéo 9:16",
@@ -11779,7 +11978,7 @@ export const series: Serie[] = [
               },
               "linkedin": {
                 "statut": "a_venir",
-                "date": null,
+                "date": "2026-12-07",
                 "heure": "08:00",
                 "compte": "FoodEatUp",
                 "format": "Vidéo native 9:16",
@@ -11787,13 +11986,14 @@ export const series: Serie[] = [
               },
               "youtube": {
                 "statut": "a_venir",
-                "date": null,
+                "date": "2026-12-07",
                 "heure": "10:00",
                 "compte": "@FoodEatUp",
                 "format": "Short 9:16",
                 "lienCta": "https://site.foodeatup.com/"
               }
-            }
+            },
+            "storyUrl": null
           },
           {
             "id": "EP152",
@@ -11824,11 +12024,11 @@ export const series: Serie[] = [
             "masterRapidoUrl": null,
             "posterUrl": null,
             "troisMots": "RECETTE PLAT SIGNATURE",
-            "datePrevue": null,
+            "datePrevue": "2026-12-08",
             "reseaux": {
               "facebook": {
                 "statut": "a_venir",
-                "date": null,
+                "date": "2026-12-08",
                 "heure": "12:00",
                 "compte": "FoodEatUp",
                 "format": "Vidéo native 9:16",
@@ -11836,7 +12036,7 @@ export const series: Serie[] = [
               },
               "instagram": {
                 "statut": "a_venir",
-                "date": null,
+                "date": "2026-12-08",
                 "heure": "18:30",
                 "compte": "foodeatup.cocuisinage",
                 "format": "Reel 9:16",
@@ -11844,7 +12044,7 @@ export const series: Serie[] = [
               },
               "tiktok": {
                 "statut": "a_venir",
-                "date": null,
+                "date": "2026-12-08",
                 "heure": "19:00",
                 "compte": "foodeatup",
                 "format": "Vidéo 9:16",
@@ -11852,7 +12052,7 @@ export const series: Serie[] = [
               },
               "linkedin": {
                 "statut": "a_venir",
-                "date": null,
+                "date": "2026-12-08",
                 "heure": "08:00",
                 "compte": "FoodEatUp",
                 "format": "Vidéo native 9:16",
@@ -11860,13 +12060,14 @@ export const series: Serie[] = [
               },
               "youtube": {
                 "statut": "a_venir",
-                "date": null,
+                "date": "2026-12-08",
                 "heure": "10:00",
                 "compte": "@FoodEatUp",
                 "format": "Short 9:16",
                 "lienCta": "https://site.foodeatup.com/"
               }
-            }
+            },
+            "storyUrl": null
           },
           {
             "id": "EP153",
@@ -11897,11 +12098,11 @@ export const series: Serie[] = [
             "masterRapidoUrl": null,
             "posterUrl": null,
             "troisMots": "PLAT SEMAINE",
-            "datePrevue": null,
+            "datePrevue": "2026-12-09",
             "reseaux": {
               "facebook": {
                 "statut": "a_venir",
-                "date": null,
+                "date": "2026-12-09",
                 "heure": "12:00",
                 "compte": "FoodEatUp",
                 "format": "Vidéo native 9:16",
@@ -11909,7 +12110,7 @@ export const series: Serie[] = [
               },
               "instagram": {
                 "statut": "a_venir",
-                "date": null,
+                "date": "2026-12-09",
                 "heure": "18:30",
                 "compte": "foodeatup.cocuisinage",
                 "format": "Reel 9:16",
@@ -11917,7 +12118,7 @@ export const series: Serie[] = [
               },
               "tiktok": {
                 "statut": "a_venir",
-                "date": null,
+                "date": "2026-12-09",
                 "heure": "19:00",
                 "compte": "foodeatup",
                 "format": "Vidéo 9:16",
@@ -11925,7 +12126,7 @@ export const series: Serie[] = [
               },
               "linkedin": {
                 "statut": "a_venir",
-                "date": null,
+                "date": "2026-12-09",
                 "heure": "08:00",
                 "compte": "FoodEatUp",
                 "format": "Vidéo native 9:16",
@@ -11933,13 +12134,14 @@ export const series: Serie[] = [
               },
               "youtube": {
                 "statut": "a_venir",
-                "date": null,
+                "date": "2026-12-09",
                 "heure": "10:00",
                 "compte": "@FoodEatUp",
                 "format": "Short 9:16",
                 "lienCta": "https://site.foodeatup.com/"
               }
-            }
+            },
+            "storyUrl": null
           },
           {
             "id": "EP154",
@@ -11970,11 +12172,11 @@ export const series: Serie[] = [
             "masterRapidoUrl": null,
             "posterUrl": null,
             "troisMots": "MENU MIDI QUINZE",
-            "datePrevue": null,
+            "datePrevue": "2026-12-10",
             "reseaux": {
               "facebook": {
                 "statut": "a_venir",
-                "date": null,
+                "date": "2026-12-10",
                 "heure": "12:00",
                 "compte": "FoodEatUp",
                 "format": "Vidéo native 9:16",
@@ -11982,7 +12184,7 @@ export const series: Serie[] = [
               },
               "instagram": {
                 "statut": "a_venir",
-                "date": null,
+                "date": "2026-12-10",
                 "heure": "18:30",
                 "compte": "foodeatup.cocuisinage",
                 "format": "Reel 9:16",
@@ -11990,7 +12192,7 @@ export const series: Serie[] = [
               },
               "tiktok": {
                 "statut": "a_venir",
-                "date": null,
+                "date": "2026-12-10",
                 "heure": "19:00",
                 "compte": "foodeatup",
                 "format": "Vidéo 9:16",
@@ -11998,7 +12200,7 @@ export const series: Serie[] = [
               },
               "linkedin": {
                 "statut": "a_venir",
-                "date": null,
+                "date": "2026-12-10",
                 "heure": "08:00",
                 "compte": "FoodEatUp",
                 "format": "Vidéo native 9:16",
@@ -12006,13 +12208,14 @@ export const series: Serie[] = [
               },
               "youtube": {
                 "statut": "a_venir",
-                "date": null,
+                "date": "2026-12-10",
                 "heure": "10:00",
                 "compte": "@FoodEatUp",
                 "format": "Short 9:16",
                 "lienCta": "https://site.foodeatup.com/"
               }
-            }
+            },
+            "storyUrl": null
           },
           {
             "id": "EP155",
@@ -12043,11 +12246,11 @@ export const series: Serie[] = [
             "masterRapidoUrl": null,
             "posterUrl": null,
             "troisMots": "PLAT REVIENT",
-            "datePrevue": null,
+            "datePrevue": "2026-12-11",
             "reseaux": {
               "facebook": {
                 "statut": "a_venir",
-                "date": null,
+                "date": "2026-12-11",
                 "heure": "12:00",
                 "compte": "FoodEatUp",
                 "format": "Vidéo native 9:16",
@@ -12055,7 +12258,7 @@ export const series: Serie[] = [
               },
               "instagram": {
                 "statut": "a_venir",
-                "date": null,
+                "date": "2026-12-11",
                 "heure": "18:30",
                 "compte": "foodeatup.cocuisinage",
                 "format": "Reel 9:16",
@@ -12063,7 +12266,7 @@ export const series: Serie[] = [
               },
               "tiktok": {
                 "statut": "a_venir",
-                "date": null,
+                "date": "2026-12-11",
                 "heure": "19:00",
                 "compte": "foodeatup",
                 "format": "Vidéo 9:16",
@@ -12071,7 +12274,7 @@ export const series: Serie[] = [
               },
               "linkedin": {
                 "statut": "a_venir",
-                "date": null,
+                "date": "2026-12-11",
                 "heure": "08:00",
                 "compte": "FoodEatUp",
                 "format": "Vidéo native 9:16",
@@ -12079,13 +12282,14 @@ export const series: Serie[] = [
               },
               "youtube": {
                 "statut": "a_venir",
-                "date": null,
+                "date": "2026-12-11",
                 "heure": "10:00",
                 "compte": "@FoodEatUp",
                 "format": "Short 9:16",
                 "lienCta": "https://site.foodeatup.com/"
               }
-            }
+            },
+            "storyUrl": null
           },
           {
             "id": "EP156",
@@ -12116,11 +12320,11 @@ export const series: Serie[] = [
             "masterRapidoUrl": null,
             "posterUrl": null,
             "troisMots": "DESSERT QU'ON NE",
-            "datePrevue": null,
+            "datePrevue": "2026-12-12",
             "reseaux": {
               "facebook": {
                 "statut": "a_venir",
-                "date": null,
+                "date": "2026-12-12",
                 "heure": "12:00",
                 "compte": "FoodEatUp",
                 "format": "Vidéo native 9:16",
@@ -12128,7 +12332,7 @@ export const series: Serie[] = [
               },
               "instagram": {
                 "statut": "a_venir",
-                "date": null,
+                "date": "2026-12-12",
                 "heure": "18:30",
                 "compte": "foodeatup.cocuisinage",
                 "format": "Reel 9:16",
@@ -12136,7 +12340,7 @@ export const series: Serie[] = [
               },
               "tiktok": {
                 "statut": "a_venir",
-                "date": null,
+                "date": "2026-12-12",
                 "heure": "19:00",
                 "compte": "foodeatup",
                 "format": "Vidéo 9:16",
@@ -12144,7 +12348,7 @@ export const series: Serie[] = [
               },
               "linkedin": {
                 "statut": "a_venir",
-                "date": null,
+                "date": "2026-12-12",
                 "heure": "08:00",
                 "compte": "FoodEatUp",
                 "format": "Vidéo native 9:16",
@@ -12152,13 +12356,14 @@ export const series: Serie[] = [
               },
               "youtube": {
                 "statut": "a_venir",
-                "date": null,
+                "date": "2026-12-12",
                 "heure": "10:00",
                 "compte": "@FoodEatUp",
                 "format": "Short 9:16",
                 "lienCta": "https://site.foodeatup.com/"
               }
-            }
+            },
+            "storyUrl": null
           },
           {
             "id": "EP157",
@@ -12189,11 +12394,11 @@ export const series: Serie[] = [
             "masterRapidoUrl": null,
             "posterUrl": null,
             "troisMots": "ÉVÉNEMENT RESTO",
-            "datePrevue": null,
+            "datePrevue": "2026-12-13",
             "reseaux": {
               "facebook": {
                 "statut": "a_venir",
-                "date": null,
+                "date": "2026-12-13",
                 "heure": "12:00",
                 "compte": "FoodEatUp",
                 "format": "Vidéo native 9:16",
@@ -12201,7 +12406,7 @@ export const series: Serie[] = [
               },
               "instagram": {
                 "statut": "a_venir",
-                "date": null,
+                "date": "2026-12-13",
                 "heure": "18:30",
                 "compte": "foodeatup.cocuisinage",
                 "format": "Reel 9:16",
@@ -12209,7 +12414,7 @@ export const series: Serie[] = [
               },
               "tiktok": {
                 "statut": "a_venir",
-                "date": null,
+                "date": "2026-12-13",
                 "heure": "19:00",
                 "compte": "foodeatup",
                 "format": "Vidéo 9:16",
@@ -12217,7 +12422,7 @@ export const series: Serie[] = [
               },
               "linkedin": {
                 "statut": "a_venir",
-                "date": null,
+                "date": "2026-12-13",
                 "heure": "08:00",
                 "compte": "FoodEatUp",
                 "format": "Vidéo native 9:16",
@@ -12225,13 +12430,14 @@ export const series: Serie[] = [
               },
               "youtube": {
                 "statut": "a_venir",
-                "date": null,
+                "date": "2026-12-13",
                 "heure": "10:00",
                 "compte": "@FoodEatUp",
                 "format": "Short 9:16",
                 "lienCta": "https://site.foodeatup.com/"
               }
-            }
+            },
+            "storyUrl": null
           },
           {
             "id": "EP158",
@@ -12262,11 +12468,11 @@ export const series: Serie[] = [
             "masterRapidoUrl": null,
             "posterUrl": null,
             "troisMots": "DIFFUSE MATCH",
-            "datePrevue": null,
+            "datePrevue": "2026-12-14",
             "reseaux": {
               "facebook": {
                 "statut": "a_venir",
-                "date": null,
+                "date": "2026-12-14",
                 "heure": "12:00",
                 "compte": "FoodEatUp",
                 "format": "Vidéo native 9:16",
@@ -12274,7 +12480,7 @@ export const series: Serie[] = [
               },
               "instagram": {
                 "statut": "a_venir",
-                "date": null,
+                "date": "2026-12-14",
                 "heure": "18:30",
                 "compte": "foodeatup.cocuisinage",
                 "format": "Reel 9:16",
@@ -12282,7 +12488,7 @@ export const series: Serie[] = [
               },
               "tiktok": {
                 "statut": "a_venir",
-                "date": null,
+                "date": "2026-12-14",
                 "heure": "19:00",
                 "compte": "foodeatup",
                 "format": "Vidéo 9:16",
@@ -12290,7 +12496,7 @@ export const series: Serie[] = [
               },
               "linkedin": {
                 "statut": "a_venir",
-                "date": null,
+                "date": "2026-12-14",
                 "heure": "08:00",
                 "compte": "FoodEatUp",
                 "format": "Vidéo native 9:16",
@@ -12298,13 +12504,14 @@ export const series: Serie[] = [
               },
               "youtube": {
                 "statut": "a_venir",
-                "date": null,
+                "date": "2026-12-14",
                 "heure": "10:00",
                 "compte": "@FoodEatUp",
                 "format": "Short 9:16",
                 "lienCta": "https://site.foodeatup.com/"
               }
-            }
+            },
+            "storyUrl": null
           },
           {
             "id": "EP159",
@@ -12335,11 +12542,11 @@ export const series: Serie[] = [
             "masterRapidoUrl": null,
             "posterUrl": null,
             "troisMots": "FÊTEZ VOTRE ANNIVERSAIRE",
-            "datePrevue": null,
+            "datePrevue": "2026-12-15",
             "reseaux": {
               "facebook": {
                 "statut": "a_venir",
-                "date": null,
+                "date": "2026-12-15",
                 "heure": "12:00",
                 "compte": "FoodEatUp",
                 "format": "Vidéo native 9:16",
@@ -12347,7 +12554,7 @@ export const series: Serie[] = [
               },
               "instagram": {
                 "statut": "a_venir",
-                "date": null,
+                "date": "2026-12-15",
                 "heure": "18:30",
                 "compte": "foodeatup.cocuisinage",
                 "format": "Reel 9:16",
@@ -12355,7 +12562,7 @@ export const series: Serie[] = [
               },
               "tiktok": {
                 "statut": "a_venir",
-                "date": null,
+                "date": "2026-12-15",
                 "heure": "19:00",
                 "compte": "foodeatup",
                 "format": "Vidéo 9:16",
@@ -12363,7 +12570,7 @@ export const series: Serie[] = [
               },
               "linkedin": {
                 "statut": "a_venir",
-                "date": null,
+                "date": "2026-12-15",
                 "heure": "08:00",
                 "compte": "FoodEatUp",
                 "format": "Vidéo native 9:16",
@@ -12371,13 +12578,14 @@ export const series: Serie[] = [
               },
               "youtube": {
                 "statut": "a_venir",
-                "date": null,
+                "date": "2026-12-15",
                 "heure": "10:00",
                 "compte": "@FoodEatUp",
                 "format": "Short 9:16",
                 "lienCta": "https://site.foodeatup.com/"
               }
-            }
+            },
+            "storyUrl": null
           },
           {
             "id": "EP160",
@@ -12408,11 +12616,11 @@ export const series: Serie[] = [
             "masterRapidoUrl": null,
             "posterUrl": null,
             "troisMots": "SOIRÉE THÈME",
-            "datePrevue": null,
+            "datePrevue": "2026-12-16",
             "reseaux": {
               "facebook": {
                 "statut": "a_venir",
-                "date": null,
+                "date": "2026-12-16",
                 "heure": "12:00",
                 "compte": "FoodEatUp",
                 "format": "Vidéo native 9:16",
@@ -12420,7 +12628,7 @@ export const series: Serie[] = [
               },
               "instagram": {
                 "statut": "a_venir",
-                "date": null,
+                "date": "2026-12-16",
                 "heure": "18:30",
                 "compte": "foodeatup.cocuisinage",
                 "format": "Reel 9:16",
@@ -12428,7 +12636,7 @@ export const series: Serie[] = [
               },
               "tiktok": {
                 "statut": "a_venir",
-                "date": null,
+                "date": "2026-12-16",
                 "heure": "19:00",
                 "compte": "foodeatup",
                 "format": "Vidéo 9:16",
@@ -12436,7 +12644,7 @@ export const series: Serie[] = [
               },
               "linkedin": {
                 "statut": "a_venir",
-                "date": null,
+                "date": "2026-12-16",
                 "heure": "08:00",
                 "compte": "FoodEatUp",
                 "format": "Vidéo native 9:16",
@@ -12444,13 +12652,14 @@ export const series: Serie[] = [
               },
               "youtube": {
                 "statut": "a_venir",
-                "date": null,
+                "date": "2026-12-16",
                 "heure": "10:00",
                 "compte": "@FoodEatUp",
                 "format": "Short 9:16",
                 "lienCta": "https://site.foodeatup.com/"
               }
-            }
+            },
+            "storyUrl": null
           },
           {
             "id": "EP161",
@@ -12481,11 +12690,11 @@ export const series: Serie[] = [
             "masterRapidoUrl": null,
             "posterUrl": null,
             "troisMots": "BRUNCH DIMANCHE",
-            "datePrevue": null,
+            "datePrevue": "2026-12-17",
             "reseaux": {
               "facebook": {
                 "statut": "a_venir",
-                "date": null,
+                "date": "2026-12-17",
                 "heure": "12:00",
                 "compte": "FoodEatUp",
                 "format": "Vidéo native 9:16",
@@ -12493,7 +12702,7 @@ export const series: Serie[] = [
               },
               "instagram": {
                 "statut": "a_venir",
-                "date": null,
+                "date": "2026-12-17",
                 "heure": "18:30",
                 "compte": "foodeatup.cocuisinage",
                 "format": "Reel 9:16",
@@ -12501,7 +12710,7 @@ export const series: Serie[] = [
               },
               "tiktok": {
                 "statut": "a_venir",
-                "date": null,
+                "date": "2026-12-17",
                 "heure": "19:00",
                 "compte": "foodeatup",
                 "format": "Vidéo 9:16",
@@ -12509,7 +12718,7 @@ export const series: Serie[] = [
               },
               "linkedin": {
                 "statut": "a_venir",
-                "date": null,
+                "date": "2026-12-17",
                 "heure": "08:00",
                 "compte": "FoodEatUp",
                 "format": "Vidéo native 9:16",
@@ -12517,13 +12726,14 @@ export const series: Serie[] = [
               },
               "youtube": {
                 "statut": "a_venir",
-                "date": null,
+                "date": "2026-12-17",
                 "heure": "10:00",
                 "compte": "@FoodEatUp",
                 "format": "Short 9:16",
                 "lienCta": "https://site.foodeatup.com/"
               }
-            }
+            },
+            "storyUrl": null
           },
           {
             "id": "EP162",
@@ -12554,11 +12764,11 @@ export const series: Serie[] = [
             "masterRapidoUrl": null,
             "posterUrl": null,
             "troisMots": "PRIVATISER SALLE",
-            "datePrevue": null,
+            "datePrevue": "2026-12-18",
             "reseaux": {
               "facebook": {
                 "statut": "a_venir",
-                "date": null,
+                "date": "2026-12-18",
                 "heure": "12:00",
                 "compte": "FoodEatUp",
                 "format": "Vidéo native 9:16",
@@ -12566,7 +12776,7 @@ export const series: Serie[] = [
               },
               "instagram": {
                 "statut": "a_venir",
-                "date": null,
+                "date": "2026-12-18",
                 "heure": "18:30",
                 "compte": "foodeatup.cocuisinage",
                 "format": "Reel 9:16",
@@ -12574,7 +12784,7 @@ export const series: Serie[] = [
               },
               "tiktok": {
                 "statut": "a_venir",
-                "date": null,
+                "date": "2026-12-18",
                 "heure": "19:00",
                 "compte": "foodeatup",
                 "format": "Vidéo 9:16",
@@ -12582,7 +12792,7 @@ export const series: Serie[] = [
               },
               "linkedin": {
                 "statut": "a_venir",
-                "date": null,
+                "date": "2026-12-18",
                 "heure": "08:00",
                 "compte": "FoodEatUp",
                 "format": "Vidéo native 9:16",
@@ -12590,13 +12800,14 @@ export const series: Serie[] = [
               },
               "youtube": {
                 "statut": "a_venir",
-                "date": null,
+                "date": "2026-12-18",
                 "heure": "10:00",
                 "compte": "@FoodEatUp",
                 "format": "Short 9:16",
                 "lienCta": "https://site.foodeatup.com/"
               }
-            }
+            },
+            "storyUrl": null
           },
           {
             "id": "EP163",
@@ -12627,11 +12838,11 @@ export const series: Serie[] = [
             "masterRapidoUrl": null,
             "posterUrl": null,
             "troisMots": "SIX HEURES MATIN",
-            "datePrevue": null,
+            "datePrevue": "2026-12-19",
             "reseaux": {
               "facebook": {
                 "statut": "a_venir",
-                "date": null,
+                "date": "2026-12-19",
                 "heure": "12:00",
                 "compte": "FoodEatUp",
                 "format": "Vidéo native 9:16",
@@ -12639,7 +12850,7 @@ export const series: Serie[] = [
               },
               "instagram": {
                 "statut": "a_venir",
-                "date": null,
+                "date": "2026-12-19",
                 "heure": "18:30",
                 "compte": "foodeatup.cocuisinage",
                 "format": "Reel 9:16",
@@ -12647,7 +12858,7 @@ export const series: Serie[] = [
               },
               "tiktok": {
                 "statut": "a_venir",
-                "date": null,
+                "date": "2026-12-19",
                 "heure": "19:00",
                 "compte": "foodeatup",
                 "format": "Vidéo 9:16",
@@ -12655,7 +12866,7 @@ export const series: Serie[] = [
               },
               "linkedin": {
                 "statut": "a_venir",
-                "date": null,
+                "date": "2026-12-19",
                 "heure": "08:00",
                 "compte": "FoodEatUp",
                 "format": "Vidéo native 9:16",
@@ -12663,13 +12874,14 @@ export const series: Serie[] = [
               },
               "youtube": {
                 "statut": "a_venir",
-                "date": null,
+                "date": "2026-12-19",
                 "heure": "10:00",
                 "compte": "@FoodEatUp",
                 "format": "Short 9:16",
                 "lienCta": "https://site.foodeatup.com/"
               }
-            }
+            },
+            "storyUrl": null
           },
           {
             "id": "EP164",
@@ -12700,11 +12912,11 @@ export const series: Serie[] = [
             "masterRapidoUrl": null,
             "posterUrl": null,
             "troisMots": "PRODUCTEUR",
-            "datePrevue": null,
+            "datePrevue": "2026-12-20",
             "reseaux": {
               "facebook": {
                 "statut": "a_venir",
-                "date": null,
+                "date": "2026-12-20",
                 "heure": "12:00",
                 "compte": "FoodEatUp",
                 "format": "Vidéo native 9:16",
@@ -12712,7 +12924,7 @@ export const series: Serie[] = [
               },
               "instagram": {
                 "statut": "a_venir",
-                "date": null,
+                "date": "2026-12-20",
                 "heure": "18:30",
                 "compte": "foodeatup.cocuisinage",
                 "format": "Reel 9:16",
@@ -12720,7 +12932,7 @@ export const series: Serie[] = [
               },
               "tiktok": {
                 "statut": "a_venir",
-                "date": null,
+                "date": "2026-12-20",
                 "heure": "19:00",
                 "compte": "foodeatup",
                 "format": "Vidéo 9:16",
@@ -12728,7 +12940,7 @@ export const series: Serie[] = [
               },
               "linkedin": {
                 "statut": "a_venir",
-                "date": null,
+                "date": "2026-12-20",
                 "heure": "08:00",
                 "compte": "FoodEatUp",
                 "format": "Vidéo native 9:16",
@@ -12736,13 +12948,14 @@ export const series: Serie[] = [
               },
               "youtube": {
                 "statut": "a_venir",
-                "date": null,
+                "date": "2026-12-20",
                 "heure": "10:00",
                 "compte": "@FoodEatUp",
                 "format": "Short 9:16",
                 "lienCta": "https://site.foodeatup.com/"
               }
-            }
+            },
+            "storyUrl": null
           },
           {
             "id": "EP165",
@@ -12773,11 +12986,11 @@ export const series: Serie[] = [
             "masterRapidoUrl": null,
             "posterUrl": null,
             "troisMots": "PORTRAIT D'UN SERVEUR",
-            "datePrevue": null,
+            "datePrevue": "2026-12-21",
             "reseaux": {
               "facebook": {
                 "statut": "a_venir",
-                "date": null,
+                "date": "2026-12-21",
                 "heure": "12:00",
                 "compte": "FoodEatUp",
                 "format": "Vidéo native 9:16",
@@ -12785,7 +12998,7 @@ export const series: Serie[] = [
               },
               "instagram": {
                 "statut": "a_venir",
-                "date": null,
+                "date": "2026-12-21",
                 "heure": "18:30",
                 "compte": "foodeatup.cocuisinage",
                 "format": "Reel 9:16",
@@ -12793,7 +13006,7 @@ export const series: Serie[] = [
               },
               "tiktok": {
                 "statut": "a_venir",
-                "date": null,
+                "date": "2026-12-21",
                 "heure": "19:00",
                 "compte": "foodeatup",
                 "format": "Vidéo 9:16",
@@ -12801,7 +13014,7 @@ export const series: Serie[] = [
               },
               "linkedin": {
                 "statut": "a_venir",
-                "date": null,
+                "date": "2026-12-21",
                 "heure": "08:00",
                 "compte": "FoodEatUp",
                 "format": "Vidéo native 9:16",
@@ -12809,13 +13022,14 @@ export const series: Serie[] = [
               },
               "youtube": {
                 "statut": "a_venir",
-                "date": null,
+                "date": "2026-12-21",
                 "heure": "10:00",
                 "compte": "@FoodEatUp",
                 "format": "Short 9:16",
                 "lienCta": "https://site.foodeatup.com/"
               }
-            }
+            },
+            "storyUrl": null
           },
           {
             "id": "EP166",
@@ -12846,11 +13060,11 @@ export const series: Serie[] = [
             "masterRapidoUrl": null,
             "posterUrl": null,
             "troisMots": "COUP FEU VU",
-            "datePrevue": null,
+            "datePrevue": "2026-12-22",
             "reseaux": {
               "facebook": {
                 "statut": "a_venir",
-                "date": null,
+                "date": "2026-12-22",
                 "heure": "12:00",
                 "compte": "FoodEatUp",
                 "format": "Vidéo native 9:16",
@@ -12858,7 +13072,7 @@ export const series: Serie[] = [
               },
               "instagram": {
                 "statut": "a_venir",
-                "date": null,
+                "date": "2026-12-22",
                 "heure": "18:30",
                 "compte": "foodeatup.cocuisinage",
                 "format": "Reel 9:16",
@@ -12866,7 +13080,7 @@ export const series: Serie[] = [
               },
               "tiktok": {
                 "statut": "a_venir",
-                "date": null,
+                "date": "2026-12-22",
                 "heure": "19:00",
                 "compte": "foodeatup",
                 "format": "Vidéo 9:16",
@@ -12874,7 +13088,7 @@ export const series: Serie[] = [
               },
               "linkedin": {
                 "statut": "a_venir",
-                "date": null,
+                "date": "2026-12-22",
                 "heure": "08:00",
                 "compte": "FoodEatUp",
                 "format": "Vidéo native 9:16",
@@ -12882,13 +13096,14 @@ export const series: Serie[] = [
               },
               "youtube": {
                 "statut": "a_venir",
-                "date": null,
+                "date": "2026-12-22",
                 "heure": "10:00",
                 "compte": "@FoodEatUp",
                 "format": "Short 9:16",
                 "lienCta": "https://site.foodeatup.com/"
               }
-            }
+            },
+            "storyUrl": null
           },
           {
             "id": "EP167",
@@ -12919,11 +13134,11 @@ export const series: Serie[] = [
             "masterRapidoUrl": null,
             "posterUrl": null,
             "troisMots": "POSTE QU'ON NE",
-            "datePrevue": null,
+            "datePrevue": "2026-12-23",
             "reseaux": {
               "facebook": {
                 "statut": "a_venir",
-                "date": null,
+                "date": "2026-12-23",
                 "heure": "12:00",
                 "compte": "FoodEatUp",
                 "format": "Vidéo native 9:16",
@@ -12931,7 +13146,7 @@ export const series: Serie[] = [
               },
               "instagram": {
                 "statut": "a_venir",
-                "date": null,
+                "date": "2026-12-23",
                 "heure": "18:30",
                 "compte": "foodeatup.cocuisinage",
                 "format": "Reel 9:16",
@@ -12939,7 +13154,7 @@ export const series: Serie[] = [
               },
               "tiktok": {
                 "statut": "a_venir",
-                "date": null,
+                "date": "2026-12-23",
                 "heure": "19:00",
                 "compte": "foodeatup",
                 "format": "Vidéo 9:16",
@@ -12947,7 +13162,7 @@ export const series: Serie[] = [
               },
               "linkedin": {
                 "statut": "a_venir",
-                "date": null,
+                "date": "2026-12-23",
                 "heure": "08:00",
                 "compte": "FoodEatUp",
                 "format": "Vidéo native 9:16",
@@ -12955,13 +13170,14 @@ export const series: Serie[] = [
               },
               "youtube": {
                 "statut": "a_venir",
-                "date": null,
+                "date": "2026-12-23",
                 "heure": "10:00",
                 "compte": "@FoodEatUp",
                 "format": "Short 9:16",
                 "lienCta": "https://site.foodeatup.com/"
               }
-            }
+            },
+            "storyUrl": null
           },
           {
             "id": "EP168",
@@ -12992,11 +13208,11 @@ export const series: Serie[] = [
             "masterRapidoUrl": null,
             "posterUrl": null,
             "troisMots": "COURSES CHEF",
-            "datePrevue": null,
+            "datePrevue": "2026-12-24",
             "reseaux": {
               "facebook": {
                 "statut": "a_venir",
-                "date": null,
+                "date": "2026-12-24",
                 "heure": "12:00",
                 "compte": "FoodEatUp",
                 "format": "Vidéo native 9:16",
@@ -13004,7 +13220,7 @@ export const series: Serie[] = [
               },
               "instagram": {
                 "statut": "a_venir",
-                "date": null,
+                "date": "2026-12-24",
                 "heure": "18:30",
                 "compte": "foodeatup.cocuisinage",
                 "format": "Reel 9:16",
@@ -13012,7 +13228,7 @@ export const series: Serie[] = [
               },
               "tiktok": {
                 "statut": "a_venir",
-                "date": null,
+                "date": "2026-12-24",
                 "heure": "19:00",
                 "compte": "foodeatup",
                 "format": "Vidéo 9:16",
@@ -13020,7 +13236,7 @@ export const series: Serie[] = [
               },
               "linkedin": {
                 "statut": "a_venir",
-                "date": null,
+                "date": "2026-12-24",
                 "heure": "08:00",
                 "compte": "FoodEatUp",
                 "format": "Vidéo native 9:16",
@@ -13028,13 +13244,14 @@ export const series: Serie[] = [
               },
               "youtube": {
                 "statut": "a_venir",
-                "date": null,
+                "date": "2026-12-24",
                 "heure": "10:00",
                 "compte": "@FoodEatUp",
                 "format": "Short 9:16",
                 "lienCta": "https://site.foodeatup.com/"
               }
-            }
+            },
+            "storyUrl": null
           },
           {
             "id": "EP169",
@@ -13065,11 +13282,11 @@ export const series: Serie[] = [
             "masterRapidoUrl": null,
             "posterUrl": null,
             "troisMots": "L'AVIS QU'ON AFFICHE",
-            "datePrevue": null,
+            "datePrevue": "2026-12-25",
             "reseaux": {
               "facebook": {
                 "statut": "a_venir",
-                "date": null,
+                "date": "2026-12-25",
                 "heure": "12:00",
                 "compte": "FoodEatUp",
                 "format": "Vidéo native 9:16",
@@ -13077,7 +13294,7 @@ export const series: Serie[] = [
               },
               "instagram": {
                 "statut": "a_venir",
-                "date": null,
+                "date": "2026-12-25",
                 "heure": "18:30",
                 "compte": "foodeatup.cocuisinage",
                 "format": "Reel 9:16",
@@ -13085,7 +13302,7 @@ export const series: Serie[] = [
               },
               "tiktok": {
                 "statut": "a_venir",
-                "date": null,
+                "date": "2026-12-25",
                 "heure": "19:00",
                 "compte": "foodeatup",
                 "format": "Vidéo 9:16",
@@ -13093,7 +13310,7 @@ export const series: Serie[] = [
               },
               "linkedin": {
                 "statut": "a_venir",
-                "date": null,
+                "date": "2026-12-25",
                 "heure": "08:00",
                 "compte": "FoodEatUp",
                 "format": "Vidéo native 9:16",
@@ -13101,13 +13318,14 @@ export const series: Serie[] = [
               },
               "youtube": {
                 "statut": "a_venir",
-                "date": null,
+                "date": "2026-12-25",
                 "heure": "10:00",
                 "compte": "@FoodEatUp",
                 "format": "Short 9:16",
                 "lienCta": "https://site.foodeatup.com/"
               }
-            }
+            },
+            "storyUrl": null
           },
           {
             "id": "EP170",
@@ -13138,11 +13356,11 @@ export const series: Serie[] = [
             "masterRapidoUrl": null,
             "posterUrl": null,
             "troisMots": "CLIENT MARDI",
-            "datePrevue": null,
+            "datePrevue": "2026-12-26",
             "reseaux": {
               "facebook": {
                 "statut": "a_venir",
-                "date": null,
+                "date": "2026-12-26",
                 "heure": "12:00",
                 "compte": "FoodEatUp",
                 "format": "Vidéo native 9:16",
@@ -13150,7 +13368,7 @@ export const series: Serie[] = [
               },
               "instagram": {
                 "statut": "a_venir",
-                "date": null,
+                "date": "2026-12-26",
                 "heure": "18:30",
                 "compte": "foodeatup.cocuisinage",
                 "format": "Reel 9:16",
@@ -13158,7 +13376,7 @@ export const series: Serie[] = [
               },
               "tiktok": {
                 "statut": "a_venir",
-                "date": null,
+                "date": "2026-12-26",
                 "heure": "19:00",
                 "compte": "foodeatup",
                 "format": "Vidéo 9:16",
@@ -13166,7 +13384,7 @@ export const series: Serie[] = [
               },
               "linkedin": {
                 "statut": "a_venir",
-                "date": null,
+                "date": "2026-12-26",
                 "heure": "08:00",
                 "compte": "FoodEatUp",
                 "format": "Vidéo native 9:16",
@@ -13174,13 +13392,14 @@ export const series: Serie[] = [
               },
               "youtube": {
                 "statut": "a_venir",
-                "date": null,
+                "date": "2026-12-26",
                 "heure": "10:00",
                 "compte": "@FoodEatUp",
                 "format": "Short 9:16",
                 "lienCta": "https://site.foodeatup.com/"
               }
-            }
+            },
+            "storyUrl": null
           },
           {
             "id": "EP171",
@@ -13211,11 +13430,11 @@ export const series: Serie[] = [
             "masterRapidoUrl": null,
             "posterUrl": null,
             "troisMots": "TABLE DOUZE",
-            "datePrevue": null,
+            "datePrevue": "2026-12-27",
             "reseaux": {
               "facebook": {
                 "statut": "a_venir",
-                "date": null,
+                "date": "2026-12-27",
                 "heure": "12:00",
                 "compte": "FoodEatUp",
                 "format": "Vidéo native 9:16",
@@ -13223,7 +13442,7 @@ export const series: Serie[] = [
               },
               "instagram": {
                 "statut": "a_venir",
-                "date": null,
+                "date": "2026-12-27",
                 "heure": "18:30",
                 "compte": "foodeatup.cocuisinage",
                 "format": "Reel 9:16",
@@ -13231,7 +13450,7 @@ export const series: Serie[] = [
               },
               "tiktok": {
                 "statut": "a_venir",
-                "date": null,
+                "date": "2026-12-27",
                 "heure": "19:00",
                 "compte": "foodeatup",
                 "format": "Vidéo 9:16",
@@ -13239,7 +13458,7 @@ export const series: Serie[] = [
               },
               "linkedin": {
                 "statut": "a_venir",
-                "date": null,
+                "date": "2026-12-27",
                 "heure": "08:00",
                 "compte": "FoodEatUp",
                 "format": "Vidéo native 9:16",
@@ -13247,13 +13466,14 @@ export const series: Serie[] = [
               },
               "youtube": {
                 "statut": "a_venir",
-                "date": null,
+                "date": "2026-12-27",
                 "heure": "10:00",
                 "compte": "@FoodEatUp",
                 "format": "Short 9:16",
                 "lienCta": "https://site.foodeatup.com/"
               }
-            }
+            },
+            "storyUrl": null
           },
           {
             "id": "EP172",
@@ -13284,11 +13504,11 @@ export const series: Serie[] = [
             "masterRapidoUrl": null,
             "posterUrl": null,
             "troisMots": "JE COMMANDE DEPUIS",
-            "datePrevue": null,
+            "datePrevue": "2026-12-28",
             "reseaux": {
               "facebook": {
                 "statut": "a_venir",
-                "date": null,
+                "date": "2026-12-28",
                 "heure": "12:00",
                 "compte": "FoodEatUp",
                 "format": "Vidéo native 9:16",
@@ -13296,7 +13516,7 @@ export const series: Serie[] = [
               },
               "instagram": {
                 "statut": "a_venir",
-                "date": null,
+                "date": "2026-12-28",
                 "heure": "18:30",
                 "compte": "foodeatup.cocuisinage",
                 "format": "Reel 9:16",
@@ -13304,7 +13524,7 @@ export const series: Serie[] = [
               },
               "tiktok": {
                 "statut": "a_venir",
-                "date": null,
+                "date": "2026-12-28",
                 "heure": "19:00",
                 "compte": "foodeatup",
                 "format": "Vidéo 9:16",
@@ -13312,7 +13532,7 @@ export const series: Serie[] = [
               },
               "linkedin": {
                 "statut": "a_venir",
-                "date": null,
+                "date": "2026-12-28",
                 "heure": "08:00",
                 "compte": "FoodEatUp",
                 "format": "Vidéo native 9:16",
@@ -13320,13 +13540,14 @@ export const series: Serie[] = [
               },
               "youtube": {
                 "statut": "a_venir",
-                "date": null,
+                "date": "2026-12-28",
                 "heure": "10:00",
                 "compte": "@FoodEatUp",
                 "format": "Short 9:16",
                 "lienCta": "https://site.foodeatup.com/"
               }
-            }
+            },
+            "storyUrl": null
           },
           {
             "id": "EP173",
@@ -13357,11 +13578,11 @@ export const series: Serie[] = [
             "masterRapidoUrl": null,
             "posterUrl": null,
             "troisMots": "GLUTEN STRESS",
-            "datePrevue": null,
+            "datePrevue": "2026-12-29",
             "reseaux": {
               "facebook": {
                 "statut": "a_venir",
-                "date": null,
+                "date": "2026-12-29",
                 "heure": "12:00",
                 "compte": "FoodEatUp",
                 "format": "Vidéo native 9:16",
@@ -13369,7 +13590,7 @@ export const series: Serie[] = [
               },
               "instagram": {
                 "statut": "a_venir",
-                "date": null,
+                "date": "2026-12-29",
                 "heure": "18:30",
                 "compte": "foodeatup.cocuisinage",
                 "format": "Reel 9:16",
@@ -13377,7 +13598,7 @@ export const series: Serie[] = [
               },
               "tiktok": {
                 "statut": "a_venir",
-                "date": null,
+                "date": "2026-12-29",
                 "heure": "19:00",
                 "compte": "foodeatup",
                 "format": "Vidéo 9:16",
@@ -13385,7 +13606,7 @@ export const series: Serie[] = [
               },
               "linkedin": {
                 "statut": "a_venir",
-                "date": null,
+                "date": "2026-12-29",
                 "heure": "08:00",
                 "compte": "FoodEatUp",
                 "format": "Vidéo native 9:16",
@@ -13393,13 +13614,14 @@ export const series: Serie[] = [
               },
               "youtube": {
                 "statut": "a_venir",
-                "date": null,
+                "date": "2026-12-29",
                 "heure": "10:00",
                 "compte": "@FoodEatUp",
                 "format": "Short 9:16",
                 "lienCta": "https://site.foodeatup.com/"
               }
-            }
+            },
+            "storyUrl": null
           },
           {
             "id": "EP174",
@@ -13430,11 +13652,11 @@ export const series: Serie[] = [
             "masterRapidoUrl": null,
             "posterUrl": null,
             "troisMots": "PREMIER RENDEZ VOUS",
-            "datePrevue": null,
+            "datePrevue": "2026-12-30",
             "reseaux": {
               "facebook": {
                 "statut": "a_venir",
-                "date": null,
+                "date": "2026-12-30",
                 "heure": "12:00",
                 "compte": "FoodEatUp",
                 "format": "Vidéo native 9:16",
@@ -13442,7 +13664,7 @@ export const series: Serie[] = [
               },
               "instagram": {
                 "statut": "a_venir",
-                "date": null,
+                "date": "2026-12-30",
                 "heure": "18:30",
                 "compte": "foodeatup.cocuisinage",
                 "format": "Reel 9:16",
@@ -13450,7 +13672,7 @@ export const series: Serie[] = [
               },
               "tiktok": {
                 "statut": "a_venir",
-                "date": null,
+                "date": "2026-12-30",
                 "heure": "19:00",
                 "compte": "foodeatup",
                 "format": "Vidéo 9:16",
@@ -13458,7 +13680,7 @@ export const series: Serie[] = [
               },
               "linkedin": {
                 "statut": "a_venir",
-                "date": null,
+                "date": "2026-12-30",
                 "heure": "08:00",
                 "compte": "FoodEatUp",
                 "format": "Vidéo native 9:16",
@@ -13466,13 +13688,14 @@ export const series: Serie[] = [
               },
               "youtube": {
                 "statut": "a_venir",
-                "date": null,
+                "date": "2026-12-30",
                 "heure": "10:00",
                 "compte": "@FoodEatUp",
                 "format": "Short 9:16",
                 "lienCta": "https://site.foodeatup.com/"
               }
-            }
+            },
+            "storyUrl": null
           },
           {
             "id": "EP175",
@@ -13503,11 +13726,11 @@ export const series: Serie[] = [
             "masterRapidoUrl": null,
             "posterUrl": null,
             "troisMots": "QR CODE TABLE",
-            "datePrevue": null,
+            "datePrevue": "2026-12-31",
             "reseaux": {
               "facebook": {
                 "statut": "a_venir",
-                "date": null,
+                "date": "2026-12-31",
                 "heure": "12:00",
                 "compte": "FoodEatUp",
                 "format": "Vidéo native 9:16",
@@ -13515,7 +13738,7 @@ export const series: Serie[] = [
               },
               "instagram": {
                 "statut": "a_venir",
-                "date": null,
+                "date": "2026-12-31",
                 "heure": "18:30",
                 "compte": "foodeatup.cocuisinage",
                 "format": "Reel 9:16",
@@ -13523,7 +13746,7 @@ export const series: Serie[] = [
               },
               "tiktok": {
                 "statut": "a_venir",
-                "date": null,
+                "date": "2026-12-31",
                 "heure": "19:00",
                 "compte": "foodeatup",
                 "format": "Vidéo 9:16",
@@ -13531,7 +13754,7 @@ export const series: Serie[] = [
               },
               "linkedin": {
                 "statut": "a_venir",
-                "date": null,
+                "date": "2026-12-31",
                 "heure": "08:00",
                 "compte": "FoodEatUp",
                 "format": "Vidéo native 9:16",
@@ -13539,13 +13762,14 @@ export const series: Serie[] = [
               },
               "youtube": {
                 "statut": "a_venir",
-                "date": null,
+                "date": "2026-12-31",
                 "heure": "10:00",
                 "compte": "@FoodEatUp",
                 "format": "Short 9:16",
                 "lienCta": "https://site.foodeatup.com/"
               }
-            }
+            },
+            "storyUrl": null
           },
           {
             "id": "EP176",
@@ -13576,11 +13800,11 @@ export const series: Serie[] = [
             "masterRapidoUrl": null,
             "posterUrl": null,
             "troisMots": "CARTE CHANGE SAISON",
-            "datePrevue": null,
+            "datePrevue": "2027-01-01",
             "reseaux": {
               "facebook": {
                 "statut": "a_venir",
-                "date": null,
+                "date": "2027-01-01",
                 "heure": "12:00",
                 "compte": "FoodEatUp",
                 "format": "Vidéo native 9:16",
@@ -13588,7 +13812,7 @@ export const series: Serie[] = [
               },
               "instagram": {
                 "statut": "a_venir",
-                "date": null,
+                "date": "2027-01-01",
                 "heure": "18:30",
                 "compte": "foodeatup.cocuisinage",
                 "format": "Reel 9:16",
@@ -13596,7 +13820,7 @@ export const series: Serie[] = [
               },
               "tiktok": {
                 "statut": "a_venir",
-                "date": null,
+                "date": "2027-01-01",
                 "heure": "19:00",
                 "compte": "foodeatup",
                 "format": "Vidéo 9:16",
@@ -13604,7 +13828,7 @@ export const series: Serie[] = [
               },
               "linkedin": {
                 "statut": "a_venir",
-                "date": null,
+                "date": "2027-01-01",
                 "heure": "08:00",
                 "compte": "FoodEatUp",
                 "format": "Vidéo native 9:16",
@@ -13612,13 +13836,14 @@ export const series: Serie[] = [
               },
               "youtube": {
                 "statut": "a_venir",
-                "date": null,
+                "date": "2027-01-01",
                 "heure": "10:00",
                 "compte": "@FoodEatUp",
                 "format": "Short 9:16",
                 "lienCta": "https://site.foodeatup.com/"
               }
-            }
+            },
+            "storyUrl": null
           },
           {
             "id": "EP177",
@@ -13649,11 +13874,11 @@ export const series: Serie[] = [
             "masterRapidoUrl": null,
             "posterUrl": null,
             "troisMots": "RECRUTE",
-            "datePrevue": null,
+            "datePrevue": "2027-01-02",
             "reseaux": {
               "facebook": {
                 "statut": "a_venir",
-                "date": null,
+                "date": "2027-01-02",
                 "heure": "12:00",
                 "compte": "FoodEatUp",
                 "format": "Vidéo native 9:16",
@@ -13661,7 +13886,7 @@ export const series: Serie[] = [
               },
               "instagram": {
                 "statut": "a_venir",
-                "date": null,
+                "date": "2027-01-02",
                 "heure": "18:30",
                 "compte": "foodeatup.cocuisinage",
                 "format": "Reel 9:16",
@@ -13669,7 +13894,7 @@ export const series: Serie[] = [
               },
               "tiktok": {
                 "statut": "a_venir",
-                "date": null,
+                "date": "2027-01-02",
                 "heure": "19:00",
                 "compte": "foodeatup",
                 "format": "Vidéo 9:16",
@@ -13677,7 +13902,7 @@ export const series: Serie[] = [
               },
               "linkedin": {
                 "statut": "a_venir",
-                "date": null,
+                "date": "2027-01-02",
                 "heure": "08:00",
                 "compte": "FoodEatUp",
                 "format": "Vidéo native 9:16",
@@ -13685,13 +13910,14 @@ export const series: Serie[] = [
               },
               "youtube": {
                 "statut": "a_venir",
-                "date": null,
+                "date": "2027-01-02",
                 "heure": "10:00",
                 "compte": "@FoodEatUp",
                 "format": "Short 9:16",
                 "lienCta": "https://site.foodeatup.com/"
               }
-            }
+            },
+            "storyUrl": null
           },
           {
             "id": "EP178",
@@ -13722,11 +13948,11 @@ export const series: Serie[] = [
             "masterRapidoUrl": null,
             "posterUrl": null,
             "troisMots": "EMPORTER ÇA REFROIDISSE",
-            "datePrevue": null,
+            "datePrevue": "2027-01-03",
             "reseaux": {
               "facebook": {
                 "statut": "a_venir",
-                "date": null,
+                "date": "2027-01-03",
                 "heure": "12:00",
                 "compte": "FoodEatUp",
                 "format": "Vidéo native 9:16",
@@ -13734,7 +13960,7 @@ export const series: Serie[] = [
               },
               "instagram": {
                 "statut": "a_venir",
-                "date": null,
+                "date": "2027-01-03",
                 "heure": "18:30",
                 "compte": "foodeatup.cocuisinage",
                 "format": "Reel 9:16",
@@ -13742,7 +13968,7 @@ export const series: Serie[] = [
               },
               "tiktok": {
                 "statut": "a_venir",
-                "date": null,
+                "date": "2027-01-03",
                 "heure": "19:00",
                 "compte": "foodeatup",
                 "format": "Vidéo 9:16",
@@ -13750,7 +13976,7 @@ export const series: Serie[] = [
               },
               "linkedin": {
                 "statut": "a_venir",
-                "date": null,
+                "date": "2027-01-03",
                 "heure": "08:00",
                 "compte": "FoodEatUp",
                 "format": "Vidéo native 9:16",
@@ -13758,13 +13984,14 @@ export const series: Serie[] = [
               },
               "youtube": {
                 "statut": "a_venir",
-                "date": null,
+                "date": "2027-01-03",
                 "heure": "10:00",
                 "compte": "@FoodEatUp",
                 "format": "Short 9:16",
                 "lienCta": "https://site.foodeatup.com/"
               }
-            }
+            },
+            "storyUrl": null
           },
           {
             "id": "EP179",
@@ -13795,11 +14022,11 @@ export const series: Serie[] = [
             "masterRapidoUrl": null,
             "posterUrl": null,
             "troisMots": "JOUR FERMETURE",
-            "datePrevue": null,
+            "datePrevue": "2027-01-04",
             "reseaux": {
               "facebook": {
                 "statut": "a_venir",
-                "date": null,
+                "date": "2027-01-04",
                 "heure": "12:00",
                 "compte": "FoodEatUp",
                 "format": "Vidéo native 9:16",
@@ -13807,7 +14034,7 @@ export const series: Serie[] = [
               },
               "instagram": {
                 "statut": "a_venir",
-                "date": null,
+                "date": "2027-01-04",
                 "heure": "18:30",
                 "compte": "foodeatup.cocuisinage",
                 "format": "Reel 9:16",
@@ -13815,7 +14042,7 @@ export const series: Serie[] = [
               },
               "tiktok": {
                 "statut": "a_venir",
-                "date": null,
+                "date": "2027-01-04",
                 "heure": "19:00",
                 "compte": "foodeatup",
                 "format": "Vidéo 9:16",
@@ -13823,7 +14050,7 @@ export const series: Serie[] = [
               },
               "linkedin": {
                 "statut": "a_venir",
-                "date": null,
+                "date": "2027-01-04",
                 "heure": "08:00",
                 "compte": "FoodEatUp",
                 "format": "Vidéo native 9:16",
@@ -13831,13 +14058,14 @@ export const series: Serie[] = [
               },
               "youtube": {
                 "statut": "a_venir",
-                "date": null,
+                "date": "2027-01-04",
                 "heure": "10:00",
                 "compte": "@FoodEatUp",
                 "format": "Short 9:16",
                 "lienCta": "https://site.foodeatup.com/"
               }
-            }
+            },
+            "storyUrl": null
           },
           {
             "id": "EP180",
@@ -13868,11 +14096,11 @@ export const series: Serie[] = [
             "masterRapidoUrl": null,
             "posterUrl": null,
             "troisMots": "AN RESTAURANT",
-            "datePrevue": null,
+            "datePrevue": "2027-01-05",
             "reseaux": {
               "facebook": {
                 "statut": "a_venir",
-                "date": null,
+                "date": "2027-01-05",
                 "heure": "12:00",
                 "compte": "FoodEatUp",
                 "format": "Vidéo native 9:16",
@@ -13880,7 +14108,7 @@ export const series: Serie[] = [
               },
               "instagram": {
                 "statut": "a_venir",
-                "date": null,
+                "date": "2027-01-05",
                 "heure": "18:30",
                 "compte": "foodeatup.cocuisinage",
                 "format": "Reel 9:16",
@@ -13888,7 +14116,7 @@ export const series: Serie[] = [
               },
               "tiktok": {
                 "statut": "a_venir",
-                "date": null,
+                "date": "2027-01-05",
                 "heure": "19:00",
                 "compte": "foodeatup",
                 "format": "Vidéo 9:16",
@@ -13896,7 +14124,7 @@ export const series: Serie[] = [
               },
               "linkedin": {
                 "statut": "a_venir",
-                "date": null,
+                "date": "2027-01-05",
                 "heure": "08:00",
                 "compte": "FoodEatUp",
                 "format": "Vidéo native 9:16",
@@ -13904,13 +14132,4558 @@ export const series: Serie[] = [
               },
               "youtube": {
                 "statut": "a_venir",
-                "date": null,
+                "date": "2027-01-05",
                 "heure": "10:00",
                 "compte": "@FoodEatUp",
                 "format": "Short 9:16",
                 "lienCta": "https://site.foodeatup.com/"
               }
-            }
+            },
+            "storyUrl": null
+          }
+        ]
+      },
+      {
+        "numero": 7,
+        "titre": "Les Végé-Fruités font leur cinéma",
+        "pitch": "Un client entre, quelque chose se passe mal, et la brigade rejoue l'accroc en pastiche de film. Trente cas concrets dans l'ordre où un client les rencontre — et l'outil FoodEatUp que le restaurant avait déjà.",
+        "episodes": [
+          {
+            "id": "EP181",
+            "numero": 181,
+            "saison": 7,
+            "slug": "ep181-le-brief",
+            "titre": "Le brief",
+            "module": "Caroline",
+            "chapitre": "Réservation par téléphone",
+            "genre": "Film d'espionnage",
+            "acte": "Avant d'entrer",
+            "vegefruite": "citron",
+            "accroche": "Vingt heures dix. Personne ne décroche.",
+            "punchline": "Le téléphone, lui, ne prend jamais sa pause.",
+            "resume": "Caroline répond au premier appel, même en plein coup de feu. Elle demande le nombre de couverts, l'heure, la contrainte alimentaire — et la réservation arrive dans le plan de salle avec la note écrite dessus.",
+            "cas": "Il appelle pour réserver à six, dont deux personnes qui ne mangent pas de fruits à coque. Vingt heures dix : tout le monde est en salle, le téléphone sonne dans le vide.",
+            "reponse": "Caroline, l'agent au téléphone. Elle prend l'appel pendant le service, pose la question, et la réservation arrive avec la contrainte écrite dessus.",
+            "statut": "a_produire",
+            "dureeSecondes": null,
+            "videoUrl": null,
+            "tutoriel": null,
+            "tutorielModuleUrl": "https://tutoriel.foodeatup.com/module/caroline-ia",
+            "higgsfield": {
+              "videoSourceUrl": null,
+              "source": null,
+              "duree": "10 s",
+              "format": "vertical 9:16"
+            },
+            "masterRapidoUrl": null,
+            "posterUrl": null,
+            "troisMots": "PERSONNE NE DÉCROCHE",
+            "datePrevue": "2027-01-06",
+            "reseaux": {
+              "facebook": {
+                "statut": "a_venir",
+                "date": "2027-01-06",
+                "heure": "12:00",
+                "compte": "FoodEatUp",
+                "format": "Vidéo native 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              },
+              "instagram": {
+                "statut": "a_venir",
+                "date": "2027-01-06",
+                "heure": "18:30",
+                "compte": "foodeatup.cocuisinage",
+                "format": "Reel 9:16",
+                "lienCta": null
+              },
+              "tiktok": {
+                "statut": "a_venir",
+                "date": "2027-01-06",
+                "heure": "19:00",
+                "compte": "foodeatup",
+                "format": "Vidéo 9:16",
+                "lienCta": null
+              },
+              "linkedin": {
+                "statut": "a_venir",
+                "date": "2027-01-06",
+                "heure": "08:00",
+                "compte": "FoodEatUp",
+                "format": "Vidéo native 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              },
+              "youtube": {
+                "statut": "a_venir",
+                "date": "2027-01-06",
+                "heure": "10:00",
+                "compte": "@FoodEatUp",
+                "format": "Short 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              }
+            },
+            "storyUrl": null
+          },
+          {
+            "id": "EP182",
+            "numero": 182,
+            "saison": 7,
+            "slug": "ep182-la-carte-illisible",
+            "titre": "La carte illisible",
+            "module": "Mon Site",
+            "chapitre": "La carte en ligne",
+            "genre": "Film muet",
+            "acte": "Avant d'entrer",
+            "vegefruite": "brocoli",
+            "accroche": "L'ardoise date de mardi. On est vendredi.",
+            "punchline": "La pluie a mangé le plat du jour.",
+            "resume": "La carte en ligne est à jour, lisible de nuit, et tient dans un QR collé sur la vitrine. Le couple entre en sachant déjà ce qu'il va manger.",
+            "cas": "Un couple s'arrête devant la vitrine. L'ardoise est manuscrite, à moitié effacée par la pluie, et date de mardi. Ils repartent.",
+            "reponse": "Le QR collé sur la vitrine ouvre la carte en ligne, à jour et lisible de nuit. Ils entrent en sachant ce qu'ils vont manger.",
+            "statut": "a_produire",
+            "dureeSecondes": null,
+            "videoUrl": null,
+            "tutoriel": null,
+            "tutorielModuleUrl": "https://tutoriel.foodeatup.com/module/site-web-vitrine",
+            "higgsfield": {
+              "videoSourceUrl": null,
+              "source": null,
+              "duree": "10 s",
+              "format": "vertical 9:16"
+            },
+            "masterRapidoUrl": null,
+            "posterUrl": null,
+            "troisMots": "ARDOISE ILLISIBLE",
+            "datePrevue": "2027-01-07",
+            "reseaux": {
+              "facebook": {
+                "statut": "a_venir",
+                "date": "2027-01-07",
+                "heure": "12:00",
+                "compte": "FoodEatUp",
+                "format": "Vidéo native 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              },
+              "instagram": {
+                "statut": "a_venir",
+                "date": "2027-01-07",
+                "heure": "18:30",
+                "compte": "foodeatup.cocuisinage",
+                "format": "Reel 9:16",
+                "lienCta": null
+              },
+              "tiktok": {
+                "statut": "a_venir",
+                "date": "2027-01-07",
+                "heure": "19:00",
+                "compte": "foodeatup",
+                "format": "Vidéo 9:16",
+                "lienCta": null
+              },
+              "linkedin": {
+                "statut": "a_venir",
+                "date": "2027-01-07",
+                "heure": "08:00",
+                "compte": "FoodEatUp",
+                "format": "Vidéo native 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              },
+              "youtube": {
+                "statut": "a_venir",
+                "date": "2027-01-07",
+                "heure": "10:00",
+                "compte": "@FoodEatUp",
+                "format": "Short 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              }
+            },
+            "storyUrl": null
+          },
+          {
+            "id": "EP183",
+            "numero": 183,
+            "saison": 7,
+            "slug": "ep183-le-reperage",
+            "titre": "Le repérage",
+            "module": "Mon Site",
+            "chapitre": "Partager la carte",
+            "genre": "Documentaire animalier",
+            "acte": "Avant d'entrer",
+            "vegefruite": "fraise",
+            "accroche": "« Il y a un plat végétarien ? » Silence dans le groupe.",
+            "punchline": "Dix personnes bloquées par une seule question.",
+            "resume": "La carte en ligne se partage en un lien, et la composition de chaque plat y est écrite. Celle qui organise décide pour dix sans avoir à appeler.",
+            "cas": "Elle propose le restaurant à sa table de dix. Une seule question la bloque : « il y a un plat végétarien ? » Personne dans le groupe ne sait répondre par message.",
+            "reponse": "La carte en ligne se partage en un lien. La composition de chaque plat est écrite — elle décide sans appeler personne.",
+            "statut": "a_produire",
+            "dureeSecondes": null,
+            "videoUrl": null,
+            "tutoriel": null,
+            "tutorielModuleUrl": "https://tutoriel.foodeatup.com/module/site-web-vitrine",
+            "higgsfield": {
+              "videoSourceUrl": null,
+              "source": null,
+              "duree": "10 s",
+              "format": "vertical 9:16"
+            },
+            "masterRapidoUrl": null,
+            "posterUrl": null,
+            "troisMots": "LE REPÉRAGE",
+            "datePrevue": "2027-01-08",
+            "reseaux": {
+              "facebook": {
+                "statut": "a_venir",
+                "date": "2027-01-08",
+                "heure": "12:00",
+                "compte": "FoodEatUp",
+                "format": "Vidéo native 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              },
+              "instagram": {
+                "statut": "a_venir",
+                "date": "2027-01-08",
+                "heure": "18:30",
+                "compte": "foodeatup.cocuisinage",
+                "format": "Reel 9:16",
+                "lienCta": null
+              },
+              "tiktok": {
+                "statut": "a_venir",
+                "date": "2027-01-08",
+                "heure": "19:00",
+                "compte": "foodeatup",
+                "format": "Vidéo 9:16",
+                "lienCta": null
+              },
+              "linkedin": {
+                "statut": "a_venir",
+                "date": "2027-01-08",
+                "heure": "08:00",
+                "compte": "FoodEatUp",
+                "format": "Vidéo native 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              },
+              "youtube": {
+                "statut": "a_venir",
+                "date": "2027-01-08",
+                "heure": "10:00",
+                "compte": "@FoodEatUp",
+                "format": "Short 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              }
+            },
+            "storyUrl": null
+          },
+          {
+            "id": "EP184",
+            "numero": 184,
+            "saison": 7,
+            "slug": "ep184-complet-dehors-vide-dedans",
+            "titre": "Complet dehors, vide dedans",
+            "module": "Réservation",
+            "chapitre": "La liste d'attente",
+            "genre": "Thriller",
+            "acte": "Avant d'entrer",
+            "vegefruite": "navet",
+            "accroche": "Douze personnes dehors. Trois tables libres au fond.",
+            "punchline": "Personne, des deux côtés de la vitre, ne le sait.",
+            "resume": "La liste d'attente prend le nom et le nombre de couverts. Quand une table se libère, le suivant est rappelé — le trottoir se vide dans la salle au lieu de partir chez le voisin.",
+            "cas": "Douze personnes attendent sur le trottoir. Trois tables viennent de se libérer au fond. Personne, dehors comme dedans, ne le sait.",
+            "reponse": "La liste d'attente : on prend le nom, la table qui se libère rappelle le suivant. Le trottoir se vide dans la salle.",
+            "statut": "a_produire",
+            "dureeSecondes": null,
+            "videoUrl": null,
+            "tutoriel": null,
+            "tutorielModuleUrl": "https://tutoriel.foodeatup.com/module/reservation-salle",
+            "higgsfield": {
+              "videoSourceUrl": null,
+              "source": null,
+              "duree": "10 s",
+              "format": "vertical 9:16"
+            },
+            "masterRapidoUrl": null,
+            "posterUrl": null,
+            "troisMots": "COMPLET DEHORS",
+            "datePrevue": "2027-01-09",
+            "reseaux": {
+              "facebook": {
+                "statut": "a_venir",
+                "date": "2027-01-09",
+                "heure": "12:00",
+                "compte": "FoodEatUp",
+                "format": "Vidéo native 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              },
+              "instagram": {
+                "statut": "a_venir",
+                "date": "2027-01-09",
+                "heure": "18:30",
+                "compte": "foodeatup.cocuisinage",
+                "format": "Reel 9:16",
+                "lienCta": null
+              },
+              "tiktok": {
+                "statut": "a_venir",
+                "date": "2027-01-09",
+                "heure": "19:00",
+                "compte": "foodeatup",
+                "format": "Vidéo 9:16",
+                "lienCta": null
+              },
+              "linkedin": {
+                "statut": "a_venir",
+                "date": "2027-01-09",
+                "heure": "08:00",
+                "compte": "FoodEatUp",
+                "format": "Vidéo native 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              },
+              "youtube": {
+                "statut": "a_venir",
+                "date": "2027-01-09",
+                "heure": "10:00",
+                "compte": "@FoodEatUp",
+                "format": "Short 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              }
+            },
+            "storyUrl": null
+          },
+          {
+            "id": "EP185",
+            "numero": 185,
+            "saison": 7,
+            "slug": "ep185-la-surprise-qui-n-en-est-pas-une",
+            "titre": "La surprise qui n'en est pas une",
+            "module": "Réservation",
+            "chapitre": "La note de réservation",
+            "genre": "Comédie romantique",
+            "acte": "Avant d'entrer",
+            "vegefruite": "pomme-de-terre",
+            "accroche": "Il l'avait dit à la réservation. Deux fois.",
+            "punchline": "Au dessert, la cuisine découvre l'anniversaire.",
+            "resume": "La note laissée à la réservation voyage avec la table jusqu'au passe. La bougie arrive au dessert sans que le client ait eu à la redemander.",
+            "cas": "Il a prévenu à la réservation : c'est l'anniversaire de sa femme. Au dessert, personne en cuisine n'est au courant.",
+            "reponse": "La note de réservation voyage avec la table jusqu'au passe. La bougie arrive sans qu'il ait à la redemander.",
+            "statut": "a_produire",
+            "dureeSecondes": null,
+            "videoUrl": null,
+            "tutoriel": null,
+            "tutorielModuleUrl": "https://tutoriel.foodeatup.com/module/reservation-salle",
+            "higgsfield": {
+              "videoSourceUrl": null,
+              "source": null,
+              "duree": "10 s",
+              "format": "vertical 9:16"
+            },
+            "masterRapidoUrl": null,
+            "posterUrl": null,
+            "troisMots": "LA SURPRISE RATÉE",
+            "datePrevue": "2027-01-10",
+            "reseaux": {
+              "facebook": {
+                "statut": "a_venir",
+                "date": "2027-01-10",
+                "heure": "12:00",
+                "compte": "FoodEatUp",
+                "format": "Vidéo native 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              },
+              "instagram": {
+                "statut": "a_venir",
+                "date": "2027-01-10",
+                "heure": "18:30",
+                "compte": "foodeatup.cocuisinage",
+                "format": "Reel 9:16",
+                "lienCta": null
+              },
+              "tiktok": {
+                "statut": "a_venir",
+                "date": "2027-01-10",
+                "heure": "19:00",
+                "compte": "foodeatup",
+                "format": "Vidéo 9:16",
+                "lienCta": null
+              },
+              "linkedin": {
+                "statut": "a_venir",
+                "date": "2027-01-10",
+                "heure": "08:00",
+                "compte": "FoodEatUp",
+                "format": "Vidéo native 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              },
+              "youtube": {
+                "statut": "a_venir",
+                "date": "2027-01-10",
+                "heure": "10:00",
+                "compte": "@FoodEatUp",
+                "format": "Short 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              }
+            },
+            "storyUrl": null
+          },
+          {
+            "id": "EP186",
+            "numero": 186,
+            "saison": 7,
+            "slug": "ep186-le-devis-sur-la-nappe",
+            "titre": "Le devis sur la nappe",
+            "module": "Comptabilité",
+            "chapitre": "Devis & factures",
+            "genre": "Film de casse",
+            "acte": "Avant d'entrer",
+            "vegefruite": "ail",
+            "accroche": "Quarante couverts, un chiffre au stylo sur un set de table.",
+            "punchline": "Le set de table part à la poubelle avec le devis.",
+            "resume": "Le devis part par mail dans la demi-heure, avec les postes détaillés et le total. Il est accepté avant même qu'on ait débarrassé.",
+            "cas": "Un comité d'entreprise veut privatiser pour quarante. Le chiffre est écrit au stylo sur un set de table, entre deux taches.",
+            "reponse": "Devis & factures : le devis part par mail dans la demi-heure, postes détaillés. Il est accepté avant qu'on ait débarrassé.",
+            "statut": "a_produire",
+            "dureeSecondes": null,
+            "videoUrl": null,
+            "tutoriel": null,
+            "tutorielModuleUrl": "https://tutoriel.foodeatup.com/module/comptabilite",
+            "higgsfield": {
+              "videoSourceUrl": null,
+              "source": null,
+              "duree": "10 s",
+              "format": "vertical 9:16"
+            },
+            "masterRapidoUrl": null,
+            "posterUrl": null,
+            "troisMots": "DEVIS SUR NAPPE",
+            "datePrevue": "2027-01-11",
+            "reseaux": {
+              "facebook": {
+                "statut": "a_venir",
+                "date": "2027-01-11",
+                "heure": "12:00",
+                "compte": "FoodEatUp",
+                "format": "Vidéo native 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              },
+              "instagram": {
+                "statut": "a_venir",
+                "date": "2027-01-11",
+                "heure": "18:30",
+                "compte": "foodeatup.cocuisinage",
+                "format": "Reel 9:16",
+                "lienCta": null
+              },
+              "tiktok": {
+                "statut": "a_venir",
+                "date": "2027-01-11",
+                "heure": "19:00",
+                "compte": "foodeatup",
+                "format": "Vidéo 9:16",
+                "lienCta": null
+              },
+              "linkedin": {
+                "statut": "a_venir",
+                "date": "2027-01-11",
+                "heure": "08:00",
+                "compte": "FoodEatUp",
+                "format": "Vidéo native 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              },
+              "youtube": {
+                "statut": "a_venir",
+                "date": "2027-01-11",
+                "heure": "10:00",
+                "compte": "@FoodEatUp",
+                "format": "Short 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              }
+            },
+            "storyUrl": null
+          },
+          {
+            "id": "EP187",
+            "numero": 187,
+            "saison": 7,
+            "slug": "ep187-lost-in-translation",
+            "titre": "Lost in translation",
+            "module": "Service",
+            "chapitre": "Le QR de table",
+            "genre": "Film de sous-titres",
+            "acte": "La commande",
+            "vegefruite": "brocoli",
+            "accroche": "Il commande en anglais. Le serveur sourit et note.",
+            "punchline": "Ni l'un ni l'autre ne sait ce qui va arriver.",
+            "resume": "Avec le QR de table, le client commande lui-même, dans la langue de son téléphone. La commande arrive en cuisine écrite, pas interprétée.",
+            "cas": "Le client commande en anglais. Le serveur sourit, note quelque chose, et repart. Ni l'un ni l'autre ne sait ce qui va arriver dans l'assiette.",
+            "reponse": "Le QR de table : le client commande lui-même, dans la langue de son téléphone. La commande arrive en cuisine écrite, pas interprétée.",
+            "statut": "a_produire",
+            "dureeSecondes": null,
+            "videoUrl": null,
+            "tutoriel": null,
+            "tutorielModuleUrl": "https://tutoriel.foodeatup.com/module/service-commande",
+            "higgsfield": {
+              "videoSourceUrl": null,
+              "source": null,
+              "duree": "10 s",
+              "format": "vertical 9:16"
+            },
+            "masterRapidoUrl": null,
+            "posterUrl": null,
+            "troisMots": "LOST IN TRANSLATION",
+            "datePrevue": "2027-01-12",
+            "reseaux": {
+              "facebook": {
+                "statut": "a_venir",
+                "date": "2027-01-12",
+                "heure": "12:00",
+                "compte": "FoodEatUp",
+                "format": "Vidéo native 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              },
+              "instagram": {
+                "statut": "a_venir",
+                "date": "2027-01-12",
+                "heure": "18:30",
+                "compte": "foodeatup.cocuisinage",
+                "format": "Reel 9:16",
+                "lienCta": null
+              },
+              "tiktok": {
+                "statut": "a_venir",
+                "date": "2027-01-12",
+                "heure": "19:00",
+                "compte": "foodeatup",
+                "format": "Vidéo 9:16",
+                "lienCta": null
+              },
+              "linkedin": {
+                "statut": "a_venir",
+                "date": "2027-01-12",
+                "heure": "08:00",
+                "compte": "FoodEatUp",
+                "format": "Vidéo native 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              },
+              "youtube": {
+                "statut": "a_venir",
+                "date": "2027-01-12",
+                "heure": "10:00",
+                "compte": "@FoodEatUp",
+                "format": "Short 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              }
+            },
+            "storyUrl": null
+          },
+          {
+            "id": "EP188",
+            "numero": 188,
+            "saison": 7,
+            "slug": "ep188-je-crois-que-non",
+            "titre": "« Je crois que non »",
+            "module": "HACCP",
+            "chapitre": "La composition du plat",
+            "genre": "Film à suspense",
+            "acte": "La commande",
+            "vegefruite": "carotte",
+            "accroche": "« Il y a des fruits à coque dans le pesto ? »",
+            "punchline": "« Je crois que non » n'a jamais rassuré personne.",
+            "resume": "La fiche technique du plat liste ses ingrédients. On lit la composition au lieu de la deviner — et la réponse prend cinq secondes.",
+            "cas": "« Il y a des fruits à coque dans le pesto ? » Le serveur hésite, va voir en cuisine, revient avec « je crois que non ». Personne n'est rassuré.",
+            "reponse": "La fiche technique du plat liste ses ingrédients. On lit la composition au lieu de la deviner. — Réserve produit : il n'existe pas aujourd'hui de champ « allergène » dédié.",
+            "statut": "a_produire",
+            "dureeSecondes": null,
+            "videoUrl": null,
+            "tutoriel": null,
+            "tutorielModuleUrl": "https://tutoriel.foodeatup.com/module/haccp",
+            "higgsfield": {
+              "videoSourceUrl": null,
+              "source": null,
+              "duree": "10 s",
+              "format": "vertical 9:16"
+            },
+            "masterRapidoUrl": null,
+            "posterUrl": null,
+            "troisMots": "JE CROIS QUE NON",
+            "datePrevue": "2027-01-13",
+            "reseaux": {
+              "facebook": {
+                "statut": "a_venir",
+                "date": "2027-01-13",
+                "heure": "12:00",
+                "compte": "FoodEatUp",
+                "format": "Vidéo native 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              },
+              "instagram": {
+                "statut": "a_venir",
+                "date": "2027-01-13",
+                "heure": "18:30",
+                "compte": "foodeatup.cocuisinage",
+                "format": "Reel 9:16",
+                "lienCta": null
+              },
+              "tiktok": {
+                "statut": "a_venir",
+                "date": "2027-01-13",
+                "heure": "19:00",
+                "compte": "foodeatup",
+                "format": "Vidéo 9:16",
+                "lienCta": null
+              },
+              "linkedin": {
+                "statut": "a_venir",
+                "date": "2027-01-13",
+                "heure": "08:00",
+                "compte": "FoodEatUp",
+                "format": "Vidéo native 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              },
+              "youtube": {
+                "statut": "a_venir",
+                "date": "2027-01-13",
+                "heure": "10:00",
+                "compte": "@FoodEatUp",
+                "format": "Short 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              }
+            },
+            "storyUrl": null
+          },
+          {
+            "id": "EP189",
+            "numero": 189,
+            "saison": 7,
+            "slug": "ep189-le-supplement-fantome",
+            "titre": "Le supplément fantôme",
+            "module": "Service",
+            "chapitre": "Les suppléments",
+            "genre": "Film de fantômes",
+            "acte": "La commande",
+            "vegefruite": "tomate",
+            "accroche": "« Avec du bacon en plus. » Noté sur le carnet.",
+            "punchline": "La cuisine ne le verra jamais. L'addition, si.",
+            "resume": "Le supplément est porté par la ligne de commande, pas par un carnet. Il arrive au KDS et sur le ticket en même temps.",
+            "cas": "« Avec du bacon en plus. » Le serveur l'écrit sur son carnet. La cuisine ne le voit jamais. L'addition, elle, le facture.",
+            "reponse": "Le supplément est porté par la ligne de commande, pas par un carnet : il arrive au KDS et sur le ticket en même temps.",
+            "statut": "a_produire",
+            "dureeSecondes": null,
+            "videoUrl": null,
+            "tutoriel": null,
+            "tutorielModuleUrl": "https://tutoriel.foodeatup.com/module/service-commande",
+            "higgsfield": {
+              "videoSourceUrl": null,
+              "source": null,
+              "duree": "10 s",
+              "format": "vertical 9:16"
+            },
+            "masterRapidoUrl": null,
+            "posterUrl": null,
+            "troisMots": "SUPPLÉMENT FANTÔME",
+            "datePrevue": "2027-01-14",
+            "reseaux": {
+              "facebook": {
+                "statut": "a_venir",
+                "date": "2027-01-14",
+                "heure": "12:00",
+                "compte": "FoodEatUp",
+                "format": "Vidéo native 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              },
+              "instagram": {
+                "statut": "a_venir",
+                "date": "2027-01-14",
+                "heure": "18:30",
+                "compte": "foodeatup.cocuisinage",
+                "format": "Reel 9:16",
+                "lienCta": null
+              },
+              "tiktok": {
+                "statut": "a_venir",
+                "date": "2027-01-14",
+                "heure": "19:00",
+                "compte": "foodeatup",
+                "format": "Vidéo 9:16",
+                "lienCta": null
+              },
+              "linkedin": {
+                "statut": "a_venir",
+                "date": "2027-01-14",
+                "heure": "08:00",
+                "compte": "FoodEatUp",
+                "format": "Vidéo native 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              },
+              "youtube": {
+                "statut": "a_venir",
+                "date": "2027-01-14",
+                "heure": "10:00",
+                "compte": "@FoodEatUp",
+                "format": "Short 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              }
+            },
+            "storyUrl": null
+          },
+          {
+            "id": "EP190",
+            "numero": 190,
+            "saison": 7,
+            "slug": "ep190-le-modificateur-infini",
+            "titre": "Le modificateur infini",
+            "module": "Service",
+            "chapitre": "Les modificateurs",
+            "genre": "Film à sketches",
+            "acte": "La commande",
+            "vegefruite": "citron",
+            "accroche": "Cinq demandes en une phrase. Le serveur en retient trois.",
+            "punchline": "Ce n'est pas sa mémoire. C'est son carnet.",
+            "resume": "Chaque demande est un modificateur coché, pas une phrase à retenir. Les cinq arrivent au passe, dans l'ordre, sur la même ligne.",
+            "cas": "« Sans oignon, sauce à part, cuisson bleue, pain sans graines, et vous pouvez enlever la coriandre ? » Le serveur note trois choses sur cinq.",
+            "reponse": "Chaque demande est un modificateur coché, pas une phrase à retenir. Les cinq arrivent au passe, dans l'ordre.",
+            "statut": "a_produire",
+            "dureeSecondes": null,
+            "videoUrl": null,
+            "tutoriel": null,
+            "tutorielModuleUrl": "https://tutoriel.foodeatup.com/module/service-commande",
+            "higgsfield": {
+              "videoSourceUrl": null,
+              "source": null,
+              "duree": "10 s",
+              "format": "vertical 9:16"
+            },
+            "masterRapidoUrl": null,
+            "posterUrl": null,
+            "troisMots": "MODIFICATEUR INFINI",
+            "datePrevue": "2027-01-15",
+            "reseaux": {
+              "facebook": {
+                "statut": "a_venir",
+                "date": "2027-01-15",
+                "heure": "12:00",
+                "compte": "FoodEatUp",
+                "format": "Vidéo native 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              },
+              "instagram": {
+                "statut": "a_venir",
+                "date": "2027-01-15",
+                "heure": "18:30",
+                "compte": "foodeatup.cocuisinage",
+                "format": "Reel 9:16",
+                "lienCta": null
+              },
+              "tiktok": {
+                "statut": "a_venir",
+                "date": "2027-01-15",
+                "heure": "19:00",
+                "compte": "foodeatup",
+                "format": "Vidéo 9:16",
+                "lienCta": null
+              },
+              "linkedin": {
+                "statut": "a_venir",
+                "date": "2027-01-15",
+                "heure": "08:00",
+                "compte": "FoodEatUp",
+                "format": "Vidéo native 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              },
+              "youtube": {
+                "statut": "a_venir",
+                "date": "2027-01-15",
+                "heure": "10:00",
+                "compte": "@FoodEatUp",
+                "format": "Short 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              }
+            },
+            "storyUrl": null
+          },
+          {
+            "id": "EP191",
+            "numero": 191,
+            "saison": 7,
+            "slug": "ep191-ce-qu-il-y-a-dedans",
+            "titre": "Ce qu'il y a dedans",
+            "module": "StockVision",
+            "chapitre": "La fiche technique",
+            "genre": "Film de procès",
+            "acte": "La commande",
+            "vegefruite": "carotte",
+            "accroche": "« Qu'est-ce qu'il y a exactement dans ce plat ? »",
+            "punchline": "Le haussement d'épaules n'est pas une réponse.",
+            "resume": "La fiche technique donne la composition et les quantités exactes du plat — ce qu'il contient, et ce qu'il coûte. Le calcul calorique, lui, reste à confirmer côté produit.",
+            "cas": "Un client suit un programme et demande ce que contient le plat. La réponse honnête, aujourd'hui, c'est un haussement d'épaules.",
+            "reponse": "La fiche technique donne la composition et les quantités. — Réserve produit : aucun calcul nutritionnel n'existe aujourd'hui, l'épisode s'arrête donc à la composition.",
+            "statut": "a_produire",
+            "dureeSecondes": null,
+            "videoUrl": null,
+            "tutoriel": null,
+            "tutorielModuleUrl": "https://tutoriel.foodeatup.com/module/stockvision-ai",
+            "higgsfield": {
+              "videoSourceUrl": null,
+              "source": null,
+              "duree": "10 s",
+              "format": "vertical 9:16"
+            },
+            "masterRapidoUrl": null,
+            "posterUrl": null,
+            "troisMots": "CE QU'IL Y A DEDANS",
+            "datePrevue": "2027-01-16",
+            "reseaux": {
+              "facebook": {
+                "statut": "a_venir",
+                "date": "2027-01-16",
+                "heure": "12:00",
+                "compte": "FoodEatUp",
+                "format": "Vidéo native 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              },
+              "instagram": {
+                "statut": "a_venir",
+                "date": "2027-01-16",
+                "heure": "18:30",
+                "compte": "foodeatup.cocuisinage",
+                "format": "Reel 9:16",
+                "lienCta": null
+              },
+              "tiktok": {
+                "statut": "a_venir",
+                "date": "2027-01-16",
+                "heure": "19:00",
+                "compte": "foodeatup",
+                "format": "Vidéo 9:16",
+                "lienCta": null
+              },
+              "linkedin": {
+                "statut": "a_venir",
+                "date": "2027-01-16",
+                "heure": "08:00",
+                "compte": "FoodEatUp",
+                "format": "Vidéo native 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              },
+              "youtube": {
+                "statut": "a_venir",
+                "date": "2027-01-16",
+                "heure": "10:00",
+                "compte": "@FoodEatUp",
+                "format": "Short 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              }
+            },
+            "storyUrl": null
+          },
+          {
+            "id": "EP192",
+            "numero": 192,
+            "saison": 7,
+            "slug": "ep192-le-client-du-mardi",
+            "titre": "Le client du mardi",
+            "module": "Marketing",
+            "chapitre": "Le compte fidélité",
+            "genre": "Film de reconnaissance",
+            "acte": "La commande",
+            "vegefruite": "pomme-de-terre",
+            "accroche": "Six ans qu'il vient le mardi. Même table.",
+            "punchline": "Le nouveau serveur lui demande s'il connaît la maison.",
+            "resume": "Le compte fidélité porte son historique. On le reconnaît même quand ce n'est pas la même personne qui le sert.",
+            "cas": "Six ans qu'il vient le mardi, même table, même plat. Le nouveau serveur lui demande s'il connaît la maison.",
+            "reponse": "Le compte fidélité porte son historique. On le reconnaît même quand ce n'est pas la même personne qui le sert.",
+            "statut": "a_produire",
+            "dureeSecondes": null,
+            "videoUrl": null,
+            "tutoriel": null,
+            "tutorielModuleUrl": "https://tutoriel.foodeatup.com/module/marketing-fidelite",
+            "higgsfield": {
+              "videoSourceUrl": null,
+              "source": null,
+              "duree": "10 s",
+              "format": "vertical 9:16"
+            },
+            "masterRapidoUrl": null,
+            "posterUrl": null,
+            "troisMots": "LE CLIENT DU MARDI",
+            "datePrevue": "2027-01-17",
+            "reseaux": {
+              "facebook": {
+                "statut": "a_venir",
+                "date": "2027-01-17",
+                "heure": "12:00",
+                "compte": "FoodEatUp",
+                "format": "Vidéo native 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              },
+              "instagram": {
+                "statut": "a_venir",
+                "date": "2027-01-17",
+                "heure": "18:30",
+                "compte": "foodeatup.cocuisinage",
+                "format": "Reel 9:16",
+                "lienCta": null
+              },
+              "tiktok": {
+                "statut": "a_venir",
+                "date": "2027-01-17",
+                "heure": "19:00",
+                "compte": "foodeatup",
+                "format": "Vidéo 9:16",
+                "lienCta": null
+              },
+              "linkedin": {
+                "statut": "a_venir",
+                "date": "2027-01-17",
+                "heure": "08:00",
+                "compte": "FoodEatUp",
+                "format": "Vidéo native 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              },
+              "youtube": {
+                "statut": "a_venir",
+                "date": "2027-01-17",
+                "heure": "10:00",
+                "compte": "@FoodEatUp",
+                "format": "Short 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              }
+            },
+            "storyUrl": null
+          },
+          {
+            "id": "EP193",
+            "numero": 193,
+            "saison": 7,
+            "slug": "ep193-ce-n-est-pas-ce-que-j-ai-commande",
+            "titre": "Ce n'est pas ce que j'ai commandé",
+            "module": "KDS",
+            "chapitre": "La commande telle qu'elle a été saisie",
+            "genre": "Film policier",
+            "acte": "Le passe",
+            "vegefruite": "tomate",
+            "accroche": "L'assiette arrive. Ce n'est pas le bon plat.",
+            "punchline": "Carnet, voix, mémoire : on ne saura jamais où ça s'est perdu.",
+            "resume": "Le KDS affiche la commande telle qu'elle a été saisie. Ce qui part de la table est ce qui arrive au passe — il n'y a plus de zone grise à enquêter.",
+            "cas": "L'assiette arrive. Ce n'est pas le bon plat. Personne ne peut dire où la commande s'est perdue — carnet, voix, mémoire, on ne saura pas.",
+            "reponse": "Le KDS affiche la commande telle qu'elle a été saisie. Ce qui part de la table est ce qui arrive au passe : plus de zone grise à enquêter.",
+            "statut": "a_produire",
+            "dureeSecondes": null,
+            "videoUrl": null,
+            "tutoriel": null,
+            "tutorielModuleUrl": "https://tutoriel.foodeatup.com/module/kds-cuisine",
+            "higgsfield": {
+              "videoSourceUrl": null,
+              "source": null,
+              "duree": "10 s",
+              "format": "vertical 9:16"
+            },
+            "masterRapidoUrl": null,
+            "posterUrl": null,
+            "troisMots": "PAS MA COMMANDE",
+            "datePrevue": "2027-01-18",
+            "reseaux": {
+              "facebook": {
+                "statut": "a_venir",
+                "date": "2027-01-18",
+                "heure": "12:00",
+                "compte": "FoodEatUp",
+                "format": "Vidéo native 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              },
+              "instagram": {
+                "statut": "a_venir",
+                "date": "2027-01-18",
+                "heure": "18:30",
+                "compte": "foodeatup.cocuisinage",
+                "format": "Reel 9:16",
+                "lienCta": null
+              },
+              "tiktok": {
+                "statut": "a_venir",
+                "date": "2027-01-18",
+                "heure": "19:00",
+                "compte": "foodeatup",
+                "format": "Vidéo 9:16",
+                "lienCta": null
+              },
+              "linkedin": {
+                "statut": "a_venir",
+                "date": "2027-01-18",
+                "heure": "08:00",
+                "compte": "FoodEatUp",
+                "format": "Vidéo native 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              },
+              "youtube": {
+                "statut": "a_venir",
+                "date": "2027-01-18",
+                "heure": "10:00",
+                "compte": "@FoodEatUp",
+                "format": "Short 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              }
+            },
+            "storyUrl": null
+          },
+          {
+            "id": "EP194",
+            "numero": 194,
+            "saison": 7,
+            "slug": "ep194-l-imprimante-a-gagne",
+            "titre": "L'imprimante a gagné",
+            "module": "KDS",
+            "chapitre": "La fin du ticket papier",
+            "genre": "Film catastrophe",
+            "acte": "Le passe",
+            "vegefruite": "tomate",
+            "accroche": "Le ticket a bourré. La commande n'existe plus.",
+            "punchline": "La table attend, et personne ne sait qu'elle attend.",
+            "resume": "Le KDS remplace le papier. Une commande qu'on n'a pas encore envoyée reste à l'écran, en rouge, jusqu'à ce que quelqu'un la prenne.",
+            "cas": "Le ticket a bourré. La commande n'existe plus nulle part. La table attend, et personne ne sait qu'elle attend.",
+            "reponse": "Le KDS remplace le papier. Une commande qu'on n'a pas encore envoyée reste à l'écran, en rouge.",
+            "statut": "a_produire",
+            "dureeSecondes": null,
+            "videoUrl": null,
+            "tutoriel": null,
+            "tutorielModuleUrl": "https://tutoriel.foodeatup.com/module/kds-cuisine",
+            "higgsfield": {
+              "videoSourceUrl": null,
+              "source": null,
+              "duree": "10 s",
+              "format": "vertical 9:16"
+            },
+            "masterRapidoUrl": null,
+            "posterUrl": null,
+            "troisMots": "L'IMPRIMANTE A GAGNÉ",
+            "datePrevue": "2027-01-19",
+            "reseaux": {
+              "facebook": {
+                "statut": "a_venir",
+                "date": "2027-01-19",
+                "heure": "12:00",
+                "compte": "FoodEatUp",
+                "format": "Vidéo native 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              },
+              "instagram": {
+                "statut": "a_venir",
+                "date": "2027-01-19",
+                "heure": "18:30",
+                "compte": "foodeatup.cocuisinage",
+                "format": "Reel 9:16",
+                "lienCta": null
+              },
+              "tiktok": {
+                "statut": "a_venir",
+                "date": "2027-01-19",
+                "heure": "19:00",
+                "compte": "foodeatup",
+                "format": "Vidéo 9:16",
+                "lienCta": null
+              },
+              "linkedin": {
+                "statut": "a_venir",
+                "date": "2027-01-19",
+                "heure": "08:00",
+                "compte": "FoodEatUp",
+                "format": "Vidéo native 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              },
+              "youtube": {
+                "statut": "a_venir",
+                "date": "2027-01-19",
+                "heure": "10:00",
+                "compte": "@FoodEatUp",
+                "format": "Short 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              }
+            },
+            "storyUrl": null
+          },
+          {
+            "id": "EP195",
+            "numero": 195,
+            "saison": 7,
+            "slug": "ep195-vingt-deux-minutes",
+            "titre": "Vingt-deux minutes",
+            "module": "KDS",
+            "chapitre": "Le temps par ticket",
+            "genre": "Film sportif",
+            "acte": "Le passe",
+            "vegefruite": "navet",
+            "accroche": "La table 6 attend depuis vingt-deux minutes.",
+            "punchline": "La salle croit que ça part. La cuisine croit que c'est servi.",
+            "resume": "Le KDS compte le temps de chaque ticket, et la charge par poste dit lequel bouchonne. Le retard se voit avant la réclamation.",
+            "cas": "La table 6 attend depuis vingt-deux minutes. Le serveur croit que ça part, la cuisine croit que c'est servi.",
+            "reponse": "Le KDS compte le temps de chaque ticket, et la charge par poste dit lequel bouchonne. Le retard se voit avant la réclamation.",
+            "statut": "a_produire",
+            "dureeSecondes": null,
+            "videoUrl": null,
+            "tutoriel": null,
+            "tutorielModuleUrl": "https://tutoriel.foodeatup.com/module/kds-cuisine",
+            "higgsfield": {
+              "videoSourceUrl": null,
+              "source": null,
+              "duree": "10 s",
+              "format": "vertical 9:16"
+            },
+            "masterRapidoUrl": null,
+            "posterUrl": null,
+            "troisMots": "VINGT-DEUX MINUTES",
+            "datePrevue": "2027-01-20",
+            "reseaux": {
+              "facebook": {
+                "statut": "a_venir",
+                "date": "2027-01-20",
+                "heure": "12:00",
+                "compte": "FoodEatUp",
+                "format": "Vidéo native 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              },
+              "instagram": {
+                "statut": "a_venir",
+                "date": "2027-01-20",
+                "heure": "18:30",
+                "compte": "foodeatup.cocuisinage",
+                "format": "Reel 9:16",
+                "lienCta": null
+              },
+              "tiktok": {
+                "statut": "a_venir",
+                "date": "2027-01-20",
+                "heure": "19:00",
+                "compte": "foodeatup",
+                "format": "Vidéo 9:16",
+                "lienCta": null
+              },
+              "linkedin": {
+                "statut": "a_venir",
+                "date": "2027-01-20",
+                "heure": "08:00",
+                "compte": "FoodEatUp",
+                "format": "Vidéo native 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              },
+              "youtube": {
+                "statut": "a_venir",
+                "date": "2027-01-20",
+                "heure": "10:00",
+                "compte": "@FoodEatUp",
+                "format": "Short 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              }
+            },
+            "storyUrl": null
+          },
+          {
+            "id": "EP196",
+            "numero": 196,
+            "saison": 7,
+            "slug": "ep196-il-n-y-en-a-plus",
+            "titre": "Il n'y en a plus",
+            "module": "StockVision",
+            "chapitre": "La rupture en service",
+            "genre": "Western",
+            "acte": "Le passe",
+            "vegefruite": "oignon",
+            "accroche": "Vingt heures quinze : plus de poulet.",
+            "punchline": "La carte en ligne, elle, en propose encore pendant une heure et demie.",
+            "resume": "Les stocks parlent à la carte. Le plat s'éteint partout à la fois — en salle, en ligne, en livraison.",
+            "cas": "Vingt heures quinze, plus de poulet. La carte en ligne continue d'en proposer pendant une heure et demie.",
+            "reponse": "Les stocks parlent à la carte. Le plat s'éteint partout à la fois — en salle, en ligne, en livraison.",
+            "statut": "a_produire",
+            "dureeSecondes": null,
+            "videoUrl": null,
+            "tutoriel": null,
+            "tutorielModuleUrl": "https://tutoriel.foodeatup.com/module/stockvision-ai",
+            "higgsfield": {
+              "videoSourceUrl": null,
+              "source": null,
+              "duree": "10 s",
+              "format": "vertical 9:16"
+            },
+            "masterRapidoUrl": null,
+            "posterUrl": null,
+            "troisMots": "IL N'Y EN A PLUS",
+            "datePrevue": "2027-01-21",
+            "reseaux": {
+              "facebook": {
+                "statut": "a_venir",
+                "date": "2027-01-21",
+                "heure": "12:00",
+                "compte": "FoodEatUp",
+                "format": "Vidéo native 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              },
+              "instagram": {
+                "statut": "a_venir",
+                "date": "2027-01-21",
+                "heure": "18:30",
+                "compte": "foodeatup.cocuisinage",
+                "format": "Reel 9:16",
+                "lienCta": null
+              },
+              "tiktok": {
+                "statut": "a_venir",
+                "date": "2027-01-21",
+                "heure": "19:00",
+                "compte": "foodeatup",
+                "format": "Vidéo 9:16",
+                "lienCta": null
+              },
+              "linkedin": {
+                "statut": "a_venir",
+                "date": "2027-01-21",
+                "heure": "08:00",
+                "compte": "FoodEatUp",
+                "format": "Vidéo native 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              },
+              "youtube": {
+                "statut": "a_venir",
+                "date": "2027-01-21",
+                "heure": "10:00",
+                "compte": "@FoodEatUp",
+                "format": "Short 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              }
+            },
+            "storyUrl": null
+          },
+          {
+            "id": "EP197",
+            "numero": 197,
+            "saison": 7,
+            "slug": "ep197-l-allergie-qui-n-arrive-pas",
+            "titre": "L'allergie qui n'arrive pas",
+            "module": "HACCP",
+            "chapitre": "La note jusqu'au passe",
+            "genre": "Film de guerre",
+            "acte": "Le passe",
+            "vegefruite": "carotte",
+            "accroche": "Dite au téléphone. Redite à l'accueil. Notée sur le carnet.",
+            "punchline": "En cuisine, l'assiette part sans que personne ne l'ait lue.",
+            "resume": "La note suit la commande de la réservation jusqu'au KDS. Elle est sur le ticket, pas dans la mémoire de trois personnes.",
+            "cas": "La contrainte a été dite au téléphone, redite à l'accueil, notée sur le carnet. En cuisine, l'assiette part sans que personne ne l'ait lue.",
+            "reponse": "La note suit la commande de la réservation jusqu'au KDS. Elle est sur le ticket, pas dans la mémoire de trois personnes. — Réserve produit : il s'agit d'une note libre, pas d'un champ « allergène » dédié.",
+            "statut": "a_produire",
+            "dureeSecondes": null,
+            "videoUrl": null,
+            "tutoriel": null,
+            "tutorielModuleUrl": "https://tutoriel.foodeatup.com/module/haccp",
+            "higgsfield": {
+              "videoSourceUrl": null,
+              "source": null,
+              "duree": "10 s",
+              "format": "vertical 9:16"
+            },
+            "masterRapidoUrl": null,
+            "posterUrl": null,
+            "troisMots": "L'ALLERGIE PERDUE",
+            "datePrevue": "2027-01-22",
+            "reseaux": {
+              "facebook": {
+                "statut": "a_venir",
+                "date": "2027-01-22",
+                "heure": "12:00",
+                "compte": "FoodEatUp",
+                "format": "Vidéo native 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              },
+              "instagram": {
+                "statut": "a_venir",
+                "date": "2027-01-22",
+                "heure": "18:30",
+                "compte": "foodeatup.cocuisinage",
+                "format": "Reel 9:16",
+                "lienCta": null
+              },
+              "tiktok": {
+                "statut": "a_venir",
+                "date": "2027-01-22",
+                "heure": "19:00",
+                "compte": "foodeatup",
+                "format": "Vidéo 9:16",
+                "lienCta": null
+              },
+              "linkedin": {
+                "statut": "a_venir",
+                "date": "2027-01-22",
+                "heure": "08:00",
+                "compte": "FoodEatUp",
+                "format": "Vidéo native 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              },
+              "youtube": {
+                "statut": "a_venir",
+                "date": "2027-01-22",
+                "heure": "10:00",
+                "compte": "@FoodEatUp",
+                "format": "Short 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              }
+            },
+            "storyUrl": null
+          },
+          {
+            "id": "EP198",
+            "numero": 198,
+            "saison": 7,
+            "slug": "ep198-le-coup-de-feu-vu-du-passe",
+            "titre": "Le coup de feu, vu du passe",
+            "module": "KDS",
+            "chapitre": "Onze tickets à la fois",
+            "genre": "Plan-séquence",
+            "acte": "Le passe",
+            "vegefruite": "tomate",
+            "accroche": "Onze tickets. Trois modificateurs chacun.",
+            "punchline": "Et un serveur qui crie une table de plus.",
+            "resume": "Le KDS range et priorise. Personne ne crie : le passe se lit.",
+            "cas": "Vingt heures trente. Onze tickets en même temps, trois modificateurs par ticket, un serveur qui crie une table de plus.",
+            "reponse": "Le KDS range et priorise. Personne ne crie ; le passe se lit.",
+            "statut": "a_produire",
+            "dureeSecondes": null,
+            "videoUrl": null,
+            "tutoriel": null,
+            "tutorielModuleUrl": "https://tutoriel.foodeatup.com/module/kds-cuisine",
+            "higgsfield": {
+              "videoSourceUrl": null,
+              "source": null,
+              "duree": "10 s",
+              "format": "vertical 9:16"
+            },
+            "masterRapidoUrl": null,
+            "posterUrl": null,
+            "troisMots": "VU DU PASSE",
+            "datePrevue": "2027-01-23",
+            "reseaux": {
+              "facebook": {
+                "statut": "a_venir",
+                "date": "2027-01-23",
+                "heure": "12:00",
+                "compte": "FoodEatUp",
+                "format": "Vidéo native 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              },
+              "instagram": {
+                "statut": "a_venir",
+                "date": "2027-01-23",
+                "heure": "18:30",
+                "compte": "foodeatup.cocuisinage",
+                "format": "Reel 9:16",
+                "lienCta": null
+              },
+              "tiktok": {
+                "statut": "a_venir",
+                "date": "2027-01-23",
+                "heure": "19:00",
+                "compte": "foodeatup",
+                "format": "Vidéo 9:16",
+                "lienCta": null
+              },
+              "linkedin": {
+                "statut": "a_venir",
+                "date": "2027-01-23",
+                "heure": "08:00",
+                "compte": "FoodEatUp",
+                "format": "Vidéo native 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              },
+              "youtube": {
+                "statut": "a_venir",
+                "date": "2027-01-23",
+                "heure": "10:00",
+                "compte": "@FoodEatUp",
+                "format": "Short 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              }
+            },
+            "storyUrl": null
+          },
+          {
+            "id": "EP199",
+            "numero": 199,
+            "saison": 7,
+            "slug": "ep199-quatorze-parts",
+            "titre": "Quatorze parts",
+            "module": "Caisse POS",
+            "chapitre": "Le partage d'addition",
+            "genre": "Film de casse",
+            "acte": "L'addition",
+            "vegefruite": "ail",
+            "accroche": "« On peut payer chacun ? » Quatorze fois.",
+            "punchline": "Quatorze passages, et une erreur quelque part.",
+            "resume": "La caisse partage l'addition — par personne, par article, par part. Un passage, pas quatorze.",
+            "cas": "« On peut payer chacun ? » Quatorze fois. Le serveur repasse quatorze fois, et se trompe une fois.",
+            "reponse": "La caisse partage l'addition — par personne, par article, par part. Un passage, pas quatorze.",
+            "statut": "a_produire",
+            "dureeSecondes": null,
+            "videoUrl": null,
+            "tutoriel": null,
+            "tutorielModuleUrl": null,
+            "higgsfield": {
+              "videoSourceUrl": null,
+              "source": null,
+              "duree": "10 s",
+              "format": "vertical 9:16"
+            },
+            "masterRapidoUrl": null,
+            "posterUrl": null,
+            "troisMots": "QUATORZE PARTS",
+            "datePrevue": "2027-01-24",
+            "reseaux": {
+              "facebook": {
+                "statut": "a_venir",
+                "date": "2027-01-24",
+                "heure": "12:00",
+                "compte": "FoodEatUp",
+                "format": "Vidéo native 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              },
+              "instagram": {
+                "statut": "a_venir",
+                "date": "2027-01-24",
+                "heure": "18:30",
+                "compte": "foodeatup.cocuisinage",
+                "format": "Reel 9:16",
+                "lienCta": null
+              },
+              "tiktok": {
+                "statut": "a_venir",
+                "date": "2027-01-24",
+                "heure": "19:00",
+                "compte": "foodeatup",
+                "format": "Vidéo 9:16",
+                "lienCta": null
+              },
+              "linkedin": {
+                "statut": "a_venir",
+                "date": "2027-01-24",
+                "heure": "08:00",
+                "compte": "FoodEatUp",
+                "format": "Vidéo native 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              },
+              "youtube": {
+                "statut": "a_venir",
+                "date": "2027-01-24",
+                "heure": "10:00",
+                "compte": "@FoodEatUp",
+                "format": "Short 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              }
+            },
+            "storyUrl": null
+          },
+          {
+            "id": "EP200",
+            "numero": 200,
+            "saison": 7,
+            "slug": "ep200-il-manque-un-centime",
+            "titre": "Il manque un centime",
+            "module": "Caisse POS",
+            "chapitre": "La clôture de caisse",
+            "genre": "Film noir",
+            "acte": "L'addition",
+            "vegefruite": "ail",
+            "accroche": "Minuit vingt. La caisse ne tombe pas juste.",
+            "punchline": "Vingt minutes de recomptage pour un centime.",
+            "resume": "La clôture de caisse rapproche les encaissements ligne à ligne. L'écart a un nom et une heure.",
+            "cas": "Minuit vingt. La caisse ne tombe pas juste. Vingt minutes de recomptage pour un centime.",
+            "reponse": "La clôture de caisse rapproche les encaissements ligne à ligne. L'écart a un nom et une heure.",
+            "statut": "a_produire",
+            "dureeSecondes": null,
+            "videoUrl": null,
+            "tutoriel": null,
+            "tutorielModuleUrl": null,
+            "higgsfield": {
+              "videoSourceUrl": null,
+              "source": null,
+              "duree": "10 s",
+              "format": "vertical 9:16"
+            },
+            "masterRapidoUrl": null,
+            "posterUrl": null,
+            "troisMots": "IL MANQUE UN CENTIME",
+            "datePrevue": "2027-01-25",
+            "reseaux": {
+              "facebook": {
+                "statut": "a_venir",
+                "date": "2027-01-25",
+                "heure": "12:00",
+                "compte": "FoodEatUp",
+                "format": "Vidéo native 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              },
+              "instagram": {
+                "statut": "a_venir",
+                "date": "2027-01-25",
+                "heure": "18:30",
+                "compte": "foodeatup.cocuisinage",
+                "format": "Reel 9:16",
+                "lienCta": null
+              },
+              "tiktok": {
+                "statut": "a_venir",
+                "date": "2027-01-25",
+                "heure": "19:00",
+                "compte": "foodeatup",
+                "format": "Vidéo 9:16",
+                "lienCta": null
+              },
+              "linkedin": {
+                "statut": "a_venir",
+                "date": "2027-01-25",
+                "heure": "08:00",
+                "compte": "FoodEatUp",
+                "format": "Vidéo native 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              },
+              "youtube": {
+                "statut": "a_venir",
+                "date": "2027-01-25",
+                "heure": "10:00",
+                "compte": "@FoodEatUp",
+                "format": "Short 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              }
+            },
+            "storyUrl": null
+          },
+          {
+            "id": "EP201",
+            "numero": 201,
+            "saison": 7,
+            "slug": "ep201-quatorze-cartes-tamponnees",
+            "titre": "Quatorze cartes tamponnées",
+            "module": "Marketing",
+            "chapitre": "La fidélité sans carton",
+            "genre": "Film de collection",
+            "acte": "L'addition",
+            "vegefruite": "fraise",
+            "accroche": "Elle a la carte du restaurant. Quelque part.",
+            "punchline": "Le tampon de sa dixième visite est perdu avec.",
+            "resume": "La fidélité est rattachée au client, pas à un carton. Elle ne peut plus l'oublier chez elle.",
+            "cas": "Elle a la carte du restaurant quelque part. Pas dans ce portefeuille-ci. Le tampon de sa dixième visite est perdu avec.",
+            "reponse": "La fidélité est rattachée au client, pas à un carton. Elle ne peut plus l'oublier chez elle.",
+            "statut": "a_produire",
+            "dureeSecondes": null,
+            "videoUrl": null,
+            "tutoriel": null,
+            "tutorielModuleUrl": "https://tutoriel.foodeatup.com/module/marketing-fidelite",
+            "higgsfield": {
+              "videoSourceUrl": null,
+              "source": null,
+              "duree": "10 s",
+              "format": "vertical 9:16"
+            },
+            "masterRapidoUrl": null,
+            "posterUrl": null,
+            "troisMots": "CARTES TAMPONNÉES",
+            "datePrevue": "2027-01-26",
+            "reseaux": {
+              "facebook": {
+                "statut": "a_venir",
+                "date": "2027-01-26",
+                "heure": "12:00",
+                "compte": "FoodEatUp",
+                "format": "Vidéo native 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              },
+              "instagram": {
+                "statut": "a_venir",
+                "date": "2027-01-26",
+                "heure": "18:30",
+                "compte": "foodeatup.cocuisinage",
+                "format": "Reel 9:16",
+                "lienCta": null
+              },
+              "tiktok": {
+                "statut": "a_venir",
+                "date": "2027-01-26",
+                "heure": "19:00",
+                "compte": "foodeatup",
+                "format": "Vidéo 9:16",
+                "lienCta": null
+              },
+              "linkedin": {
+                "statut": "a_venir",
+                "date": "2027-01-26",
+                "heure": "08:00",
+                "compte": "FoodEatUp",
+                "format": "Vidéo native 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              },
+              "youtube": {
+                "statut": "a_venir",
+                "date": "2027-01-26",
+                "heure": "10:00",
+                "compte": "@FoodEatUp",
+                "format": "Short 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              }
+            },
+            "storyUrl": null
+          },
+          {
+            "id": "EP202",
+            "numero": 202,
+            "saison": 7,
+            "slug": "ep202-le-bon-cadeau-introuvable",
+            "titre": "Le bon cadeau introuvable",
+            "module": "Marketing",
+            "chapitre": "Les cartes cadeaux",
+            "genre": "Film de Noël",
+            "acte": "L'addition",
+            "vegefruite": "pomme-de-terre",
+            "accroche": "« On m'a offert un bon ici. »",
+            "punchline": "Utilisé ? Pas utilisé ? De quel montant ? Personne ne sait.",
+            "resume": "La carte cadeau se vérifie en trois secondes : montant restant, date, historique.",
+            "cas": "« On m'a offert un bon ici. » Personne ne sait s'il a déjà été utilisé, ni pour quel montant.",
+            "reponse": "La carte cadeau se vérifie en trois secondes : montant restant, date, historique.",
+            "statut": "a_produire",
+            "dureeSecondes": null,
+            "videoUrl": null,
+            "tutoriel": null,
+            "tutorielModuleUrl": "https://tutoriel.foodeatup.com/module/marketing-fidelite",
+            "higgsfield": {
+              "videoSourceUrl": null,
+              "source": null,
+              "duree": "10 s",
+              "format": "vertical 9:16"
+            },
+            "masterRapidoUrl": null,
+            "posterUrl": null,
+            "troisMots": "LE BON INTROUVABLE",
+            "datePrevue": "2027-01-27",
+            "reseaux": {
+              "facebook": {
+                "statut": "a_venir",
+                "date": "2027-01-27",
+                "heure": "12:00",
+                "compte": "FoodEatUp",
+                "format": "Vidéo native 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              },
+              "instagram": {
+                "statut": "a_venir",
+                "date": "2027-01-27",
+                "heure": "18:30",
+                "compte": "foodeatup.cocuisinage",
+                "format": "Reel 9:16",
+                "lienCta": null
+              },
+              "tiktok": {
+                "statut": "a_venir",
+                "date": "2027-01-27",
+                "heure": "19:00",
+                "compte": "foodeatup",
+                "format": "Vidéo 9:16",
+                "lienCta": null
+              },
+              "linkedin": {
+                "statut": "a_venir",
+                "date": "2027-01-27",
+                "heure": "08:00",
+                "compte": "FoodEatUp",
+                "format": "Vidéo native 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              },
+              "youtube": {
+                "statut": "a_venir",
+                "date": "2027-01-27",
+                "heure": "10:00",
+                "compte": "@FoodEatUp",
+                "format": "Short 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              }
+            },
+            "storyUrl": null
+          },
+          {
+            "id": "EP203",
+            "numero": 203,
+            "saison": 7,
+            "slug": "ep203-le-terminal-capricieux",
+            "titre": "Le terminal capricieux",
+            "module": "Caisse POS",
+            "chapitre": "Le terminal relié",
+            "genre": "Film muet",
+            "acte": "L'addition",
+            "vegefruite": "ail",
+            "accroche": "Le terminal ne parle pas à la caisse.",
+            "punchline": "On tape le montant à la main. On se trompe d'un chiffre.",
+            "resume": "Smile&Pay reçoit le montant depuis la caisse. Plus de saisie, donc plus de faute de frappe.",
+            "cas": "Le terminal ne parle pas à la caisse. On tape le montant à la main, on se trompe d'un chiffre, on recommence.",
+            "reponse": "Smile&Pay reçoit le montant depuis la caisse. Plus de saisie, donc plus de faute de frappe.",
+            "statut": "a_produire",
+            "dureeSecondes": null,
+            "videoUrl": null,
+            "tutoriel": null,
+            "tutorielModuleUrl": null,
+            "higgsfield": {
+              "videoSourceUrl": null,
+              "source": null,
+              "duree": "10 s",
+              "format": "vertical 9:16"
+            },
+            "masterRapidoUrl": null,
+            "posterUrl": null,
+            "troisMots": "TERMINAL CAPRICIEUX",
+            "datePrevue": "2027-01-28",
+            "reseaux": {
+              "facebook": {
+                "statut": "a_venir",
+                "date": "2027-01-28",
+                "heure": "12:00",
+                "compte": "FoodEatUp",
+                "format": "Vidéo native 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              },
+              "instagram": {
+                "statut": "a_venir",
+                "date": "2027-01-28",
+                "heure": "18:30",
+                "compte": "foodeatup.cocuisinage",
+                "format": "Reel 9:16",
+                "lienCta": null
+              },
+              "tiktok": {
+                "statut": "a_venir",
+                "date": "2027-01-28",
+                "heure": "19:00",
+                "compte": "foodeatup",
+                "format": "Vidéo 9:16",
+                "lienCta": null
+              },
+              "linkedin": {
+                "statut": "a_venir",
+                "date": "2027-01-28",
+                "heure": "08:00",
+                "compte": "FoodEatUp",
+                "format": "Vidéo native 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              },
+              "youtube": {
+                "statut": "a_venir",
+                "date": "2027-01-28",
+                "heure": "10:00",
+                "compte": "@FoodEatUp",
+                "format": "Short 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              }
+            },
+            "storyUrl": null
+          },
+          {
+            "id": "EP204",
+            "numero": 204,
+            "saison": 7,
+            "slug": "ep204-depuis-mon-canape",
+            "titre": "Depuis mon canapé",
+            "module": "HubRise",
+            "chapitre": "La commande en ligne",
+            "genre": "Film à domicile",
+            "acte": "L'addition",
+            "vegefruite": "betterave",
+            "accroche": "Il commande sur une plateforme qui prend trente pour cent.",
+            "punchline": "Pour un restaurant à quatre cents mètres de chez lui.",
+            "resume": "La commande en ligne du restaurant, avec sa zone de livraison. Le même trajet, sans la commission.",
+            "cas": "Il commande sur une plateforme qui prend trente pour cent, pour un restaurant à quatre cents mètres de chez lui.",
+            "reponse": "La commande en ligne du restaurant, avec sa zone de livraison. Le même trajet, sans la commission.",
+            "statut": "a_produire",
+            "dureeSecondes": null,
+            "videoUrl": null,
+            "tutoriel": null,
+            "tutorielModuleUrl": "https://tutoriel.foodeatup.com/module/hubrise-livraisons",
+            "higgsfield": {
+              "videoSourceUrl": null,
+              "source": null,
+              "duree": "10 s",
+              "format": "vertical 9:16"
+            },
+            "masterRapidoUrl": null,
+            "posterUrl": null,
+            "troisMots": "DEPUIS MON CANAPÉ",
+            "datePrevue": "2027-01-29",
+            "reseaux": {
+              "facebook": {
+                "statut": "a_venir",
+                "date": "2027-01-29",
+                "heure": "12:00",
+                "compte": "FoodEatUp",
+                "format": "Vidéo native 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              },
+              "instagram": {
+                "statut": "a_venir",
+                "date": "2027-01-29",
+                "heure": "18:30",
+                "compte": "foodeatup.cocuisinage",
+                "format": "Reel 9:16",
+                "lienCta": null
+              },
+              "tiktok": {
+                "statut": "a_venir",
+                "date": "2027-01-29",
+                "heure": "19:00",
+                "compte": "foodeatup",
+                "format": "Vidéo 9:16",
+                "lienCta": null
+              },
+              "linkedin": {
+                "statut": "a_venir",
+                "date": "2027-01-29",
+                "heure": "08:00",
+                "compte": "FoodEatUp",
+                "format": "Vidéo native 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              },
+              "youtube": {
+                "statut": "a_venir",
+                "date": "2027-01-29",
+                "heure": "10:00",
+                "compte": "@FoodEatUp",
+                "format": "Short 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              }
+            },
+            "storyUrl": null
+          },
+          {
+            "id": "EP205",
+            "numero": 205,
+            "saison": 7,
+            "slug": "ep205-une-etoile-six-jours",
+            "titre": "Une étoile, six jours",
+            "module": "Marketing",
+            "chapitre": "Répondre aux avis",
+            "genre": "Film de procès",
+            "acte": "Le lendemain",
+            "vegefruite": "fraise",
+            "accroche": "Un avis une étoile, en haut de la fiche, depuis six jours.",
+            "punchline": "Trente personnes l'ont lu. Personne n'a répondu.",
+            "resume": "Les avis remontent au même endroit que le reste, et la réponse part de là. Ce qui coûte, ce n'est pas l'avis : c'est le silence à côté.",
+            "cas": "Un avis une étoile, en haut de la fiche, depuis six jours. Trente personnes l'ont lu. Personne n'a répondu.",
+            "reponse": "Les avis remontent au même endroit que le reste, et la réponse part de là. Ce qui coûte, ce n'est pas l'avis : c'est le silence à côté.",
+            "statut": "a_produire",
+            "dureeSecondes": null,
+            "videoUrl": null,
+            "tutoriel": null,
+            "tutorielModuleUrl": "https://tutoriel.foodeatup.com/module/marketing-fidelite",
+            "higgsfield": {
+              "videoSourceUrl": null,
+              "source": null,
+              "duree": "10 s",
+              "format": "vertical 9:16"
+            },
+            "masterRapidoUrl": null,
+            "posterUrl": null,
+            "troisMots": "UNE ÉTOILE",
+            "datePrevue": "2027-01-30",
+            "reseaux": {
+              "facebook": {
+                "statut": "a_venir",
+                "date": "2027-01-30",
+                "heure": "12:00",
+                "compte": "FoodEatUp",
+                "format": "Vidéo native 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              },
+              "instagram": {
+                "statut": "a_venir",
+                "date": "2027-01-30",
+                "heure": "18:30",
+                "compte": "foodeatup.cocuisinage",
+                "format": "Reel 9:16",
+                "lienCta": null
+              },
+              "tiktok": {
+                "statut": "a_venir",
+                "date": "2027-01-30",
+                "heure": "19:00",
+                "compte": "foodeatup",
+                "format": "Vidéo 9:16",
+                "lienCta": null
+              },
+              "linkedin": {
+                "statut": "a_venir",
+                "date": "2027-01-30",
+                "heure": "08:00",
+                "compte": "FoodEatUp",
+                "format": "Vidéo native 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              },
+              "youtube": {
+                "statut": "a_venir",
+                "date": "2027-01-30",
+                "heure": "10:00",
+                "compte": "@FoodEatUp",
+                "format": "Short 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              }
+            },
+            "storyUrl": null
+          },
+          {
+            "id": "EP206",
+            "numero": 206,
+            "saison": 7,
+            "slug": "ep206-ce-qu-ils-n-ont-pas-dit",
+            "titre": "Ce qu'ils n'ont pas dit",
+            "module": "Marketing",
+            "chapitre": "Le sondage après le repas",
+            "genre": "Film d'enquête",
+            "acte": "Le lendemain",
+            "vegefruite": "navet",
+            "accroche": "« Tout s'est bien passé ? » — « Très bien, merci. »",
+            "punchline": "Ils ne reviendront pas, et on ne saura jamais pourquoi.",
+            "resume": "Le sondage part après le repas, pas pendant. On répond franchement à un écran, rarement à quelqu'un qui débarrasse.",
+            "cas": "« Tout s'est bien passé ? » — « Très bien, merci. » Ils ne reviennent pas. On ne saura jamais pourquoi.",
+            "reponse": "Le sondage part après le repas, pas pendant. On répond franchement à un écran, rarement à quelqu'un qui débarrasse.",
+            "statut": "a_produire",
+            "dureeSecondes": null,
+            "videoUrl": null,
+            "tutoriel": null,
+            "tutorielModuleUrl": "https://tutoriel.foodeatup.com/module/marketing-fidelite",
+            "higgsfield": {
+              "videoSourceUrl": null,
+              "source": null,
+              "duree": "10 s",
+              "format": "vertical 9:16"
+            },
+            "masterRapidoUrl": null,
+            "posterUrl": null,
+            "troisMots": "CE QU'ILS N'ONT PAS DIT",
+            "datePrevue": "2027-01-31",
+            "reseaux": {
+              "facebook": {
+                "statut": "a_venir",
+                "date": "2027-01-31",
+                "heure": "12:00",
+                "compte": "FoodEatUp",
+                "format": "Vidéo native 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              },
+              "instagram": {
+                "statut": "a_venir",
+                "date": "2027-01-31",
+                "heure": "18:30",
+                "compte": "foodeatup.cocuisinage",
+                "format": "Reel 9:16",
+                "lienCta": null
+              },
+              "tiktok": {
+                "statut": "a_venir",
+                "date": "2027-01-31",
+                "heure": "19:00",
+                "compte": "foodeatup",
+                "format": "Vidéo 9:16",
+                "lienCta": null
+              },
+              "linkedin": {
+                "statut": "a_venir",
+                "date": "2027-01-31",
+                "heure": "08:00",
+                "compte": "FoodEatUp",
+                "format": "Vidéo native 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              },
+              "youtube": {
+                "statut": "a_venir",
+                "date": "2027-01-31",
+                "heure": "10:00",
+                "compte": "@FoodEatUp",
+                "format": "Short 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              }
+            },
+            "storyUrl": null
+          },
+          {
+            "id": "EP207",
+            "numero": 207,
+            "saison": 7,
+            "slug": "ep207-trois-mois-sans-nouvelles",
+            "titre": "Trois mois sans nouvelles",
+            "module": "Marketing",
+            "chapitre": "Le client qui décroche",
+            "genre": "Film d'espionnage",
+            "acte": "Le lendemain",
+            "vegefruite": "fraise",
+            "accroche": "Un habitué a cessé de venir.",
+            "punchline": "Il n'est pas fâché. Il a juste changé d'habitude.",
+            "resume": "La fidélité voit qui a décroché, les messages automatiques le rappellent. Une phrase, au bon moment.",
+            "cas": "Un habitué a cessé de venir. Il n'est pas fâché, il a juste changé d'habitude. Personne ne l'a remarqué.",
+            "reponse": "La fidélité voit qui a décroché, les messages automatiques le rappellent. Une phrase, au bon moment.",
+            "statut": "a_produire",
+            "dureeSecondes": null,
+            "videoUrl": null,
+            "tutoriel": null,
+            "tutorielModuleUrl": "https://tutoriel.foodeatup.com/module/marketing-fidelite",
+            "higgsfield": {
+              "videoSourceUrl": null,
+              "source": null,
+              "duree": "10 s",
+              "format": "vertical 9:16"
+            },
+            "masterRapidoUrl": null,
+            "posterUrl": null,
+            "troisMots": "TROIS MOIS",
+            "datePrevue": "2027-02-01",
+            "reseaux": {
+              "facebook": {
+                "statut": "a_venir",
+                "date": "2027-02-01",
+                "heure": "12:00",
+                "compte": "FoodEatUp",
+                "format": "Vidéo native 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              },
+              "instagram": {
+                "statut": "a_venir",
+                "date": "2027-02-01",
+                "heure": "18:30",
+                "compte": "foodeatup.cocuisinage",
+                "format": "Reel 9:16",
+                "lienCta": null
+              },
+              "tiktok": {
+                "statut": "a_venir",
+                "date": "2027-02-01",
+                "heure": "19:00",
+                "compte": "foodeatup",
+                "format": "Vidéo 9:16",
+                "lienCta": null
+              },
+              "linkedin": {
+                "statut": "a_venir",
+                "date": "2027-02-01",
+                "heure": "08:00",
+                "compte": "FoodEatUp",
+                "format": "Vidéo native 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              },
+              "youtube": {
+                "statut": "a_venir",
+                "date": "2027-02-01",
+                "heure": "10:00",
+                "compte": "@FoodEatUp",
+                "format": "Short 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              }
+            },
+            "storyUrl": null
+          },
+          {
+            "id": "EP208",
+            "numero": 208,
+            "saison": 7,
+            "slug": "ep208-la-roue",
+            "titre": "La roue",
+            "module": "Marketing",
+            "chapitre": "Le fichier client",
+            "genre": "Jeu télévisé",
+            "acte": "Le lendemain",
+            "vegefruite": "brocoli",
+            "accroche": "Trois cartes de visite dans un bocal. Une illisible.",
+            "punchline": "On appelle ça un fichier client.",
+            "resume": "Le jeu de la roue échange un lot contre un contact, avec le consentement qui va avec. Le bocal devient une liste.",
+            "cas": "Le bocal à cartes de visite sur le comptoir. Trois papiers dedans, dont un illisible. On appelle ça un fichier client.",
+            "reponse": "Le jeu de la roue échange un lot contre un contact, avec le consentement qui va avec. Le bocal devient une liste.",
+            "statut": "a_produire",
+            "dureeSecondes": null,
+            "videoUrl": null,
+            "tutoriel": null,
+            "tutorielModuleUrl": "https://tutoriel.foodeatup.com/module/marketing-fidelite",
+            "higgsfield": {
+              "videoSourceUrl": null,
+              "source": null,
+              "duree": "10 s",
+              "format": "vertical 9:16"
+            },
+            "masterRapidoUrl": null,
+            "posterUrl": null,
+            "troisMots": "LA ROUE",
+            "datePrevue": "2027-02-02",
+            "reseaux": {
+              "facebook": {
+                "statut": "a_venir",
+                "date": "2027-02-02",
+                "heure": "12:00",
+                "compte": "FoodEatUp",
+                "format": "Vidéo native 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              },
+              "instagram": {
+                "statut": "a_venir",
+                "date": "2027-02-02",
+                "heure": "18:30",
+                "compte": "foodeatup.cocuisinage",
+                "format": "Reel 9:16",
+                "lienCta": null
+              },
+              "tiktok": {
+                "statut": "a_venir",
+                "date": "2027-02-02",
+                "heure": "19:00",
+                "compte": "foodeatup",
+                "format": "Vidéo 9:16",
+                "lienCta": null
+              },
+              "linkedin": {
+                "statut": "a_venir",
+                "date": "2027-02-02",
+                "heure": "08:00",
+                "compte": "FoodEatUp",
+                "format": "Vidéo native 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              },
+              "youtube": {
+                "statut": "a_venir",
+                "date": "2027-02-02",
+                "heure": "10:00",
+                "compte": "@FoodEatUp",
+                "format": "Short 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              }
+            },
+            "storyUrl": null
+          },
+          {
+            "id": "EP209",
+            "numero": 209,
+            "saison": 7,
+            "slug": "ep209-cette-fois-on-savait",
+            "titre": "Cette fois, on savait",
+            "module": "Marketing",
+            "chapitre": "L'historique du client",
+            "genre": "Film de retrouvailles",
+            "acte": "Le lendemain",
+            "vegefruite": "pomme-de-terre",
+            "accroche": "Il revient six mois après. Il ne dit rien, il s'assoit.",
+            "punchline": "On lui apporte ce qu'il prend toujours. Il lève la tête.",
+            "resume": "Le compte fidélité et son historique. La reconnaissance n'est plus un don de mémoire, c'est une fiche.",
+            "cas": "Il revient six mois après. Il ne dit rien, il s'assoit. On lui apporte ce qu'il prend toujours, et il lève la tête.",
+            "reponse": "Le compte fidélité et son historique. La reconnaissance n'est plus un don de mémoire, c'est une fiche.",
+            "statut": "a_produire",
+            "dureeSecondes": null,
+            "videoUrl": null,
+            "tutoriel": null,
+            "tutorielModuleUrl": "https://tutoriel.foodeatup.com/module/marketing-fidelite",
+            "higgsfield": {
+              "videoSourceUrl": null,
+              "source": null,
+              "duree": "10 s",
+              "format": "vertical 9:16"
+            },
+            "masterRapidoUrl": null,
+            "posterUrl": null,
+            "troisMots": "CETTE FOIS, ON SAVAIT",
+            "datePrevue": "2027-02-03",
+            "reseaux": {
+              "facebook": {
+                "statut": "a_venir",
+                "date": "2027-02-03",
+                "heure": "12:00",
+                "compte": "FoodEatUp",
+                "format": "Vidéo native 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              },
+              "instagram": {
+                "statut": "a_venir",
+                "date": "2027-02-03",
+                "heure": "18:30",
+                "compte": "foodeatup.cocuisinage",
+                "format": "Reel 9:16",
+                "lienCta": null
+              },
+              "tiktok": {
+                "statut": "a_venir",
+                "date": "2027-02-03",
+                "heure": "19:00",
+                "compte": "foodeatup",
+                "format": "Vidéo 9:16",
+                "lienCta": null
+              },
+              "linkedin": {
+                "statut": "a_venir",
+                "date": "2027-02-03",
+                "heure": "08:00",
+                "compte": "FoodEatUp",
+                "format": "Vidéo native 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              },
+              "youtube": {
+                "statut": "a_venir",
+                "date": "2027-02-03",
+                "heure": "10:00",
+                "compte": "@FoodEatUp",
+                "format": "Short 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              }
+            },
+            "storyUrl": null
+          },
+          {
+            "id": "EP210",
+            "numero": 210,
+            "saison": 7,
+            "slug": "ep210-le-generique",
+            "titre": "Le générique",
+            "module": "La maison",
+            "chapitre": "Le salut final",
+            "genre": "Salut final",
+            "acte": "Le lendemain",
+            "vegefruite": "pomme-de-terre",
+            "accroche": "Deux cent dix épisodes. Un client entre, mange, paye et revient.",
+            "punchline": "Rien de tout ça ne s'est joué au hasard.",
+            "resume": "Les dix personnages saluent, chacun à son poste. Le restaurant tourne derrière eux, sans qu'on entende personne crier.",
+            "cas": "Deux cent dix épisodes. Un client entre, s'assoit, mange, paye et revient — et rien de tout ça ne s'est joué au hasard.",
+            "reponse": "Les dix personnages saluent, chacun à son poste. Le restaurant tourne derrière eux, sans qu'on entende personne crier.",
+            "statut": "a_produire",
+            "dureeSecondes": null,
+            "videoUrl": null,
+            "tutoriel": null,
+            "tutorielModuleUrl": null,
+            "higgsfield": {
+              "videoSourceUrl": null,
+              "source": null,
+              "duree": "10 s",
+              "format": "vertical 9:16"
+            },
+            "masterRapidoUrl": null,
+            "posterUrl": null,
+            "troisMots": "LE GÉNÉRIQUE",
+            "datePrevue": "2027-02-04",
+            "reseaux": {
+              "facebook": {
+                "statut": "a_venir",
+                "date": "2027-02-04",
+                "heure": "12:00",
+                "compte": "FoodEatUp",
+                "format": "Vidéo native 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              },
+              "instagram": {
+                "statut": "a_venir",
+                "date": "2027-02-04",
+                "heure": "18:30",
+                "compte": "foodeatup.cocuisinage",
+                "format": "Reel 9:16",
+                "lienCta": null
+              },
+              "tiktok": {
+                "statut": "a_venir",
+                "date": "2027-02-04",
+                "heure": "19:00",
+                "compte": "foodeatup",
+                "format": "Vidéo 9:16",
+                "lienCta": null
+              },
+              "linkedin": {
+                "statut": "a_venir",
+                "date": "2027-02-04",
+                "heure": "08:00",
+                "compte": "FoodEatUp",
+                "format": "Vidéo native 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              },
+              "youtube": {
+                "statut": "a_venir",
+                "date": "2027-02-04",
+                "heure": "10:00",
+                "compte": "@FoodEatUp",
+                "format": "Short 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              }
+            },
+            "storyUrl": null
+          }
+        ]
+      },
+      {
+        "numero": 8,
+        "titre": "Dis-le, c'est fait",
+        "pitch": "Une journée entière, du brief de sept heures à la clôture de minuit. À chaque heure, une phrase dite à Jarvis, un outil appelé, un résultat. La dernière saison ne présente aucun module neuf : elle rejoue les sept précédentes sans jamais montrer un écran.",
+        "episodes": [
+          {
+            "id": "EP211",
+            "numero": 211,
+            "saison": 8,
+            "slug": "ep211-le-brief",
+            "titre": "Le brief",
+            "module": "PrediBot",
+            "chapitre": "Le point du jour",
+            "acte": "07 h · Avant d'ouvrir les yeux",
+            "heure": "07 h",
+            "phrase": "Jarvis, qu'est-ce qui m'attend aujourd'hui ?",
+            "outil": "get_daily_brief",
+            "vegefruite": "brocoli",
+            "accroche": "Sept heures. Le café n'est pas encore prêt.",
+            "punchline": "Jarvis, lui, a déjà tout lu.",
+            "resume": "Une question suffit pour savoir où en est le restaurant : ventes, caisse, réservations, cuisine, avis, stock. Il n'y a pas d'écran à ouvrir, pas d'onglet à retrouver.",
+            "reponse": "Les commandes web, la caisse, les réservations du soir, les tickets en cours, les avis à traiter et le stock bas. Tout le restaurant, en une réponse, avant d'avoir ouvert la porte.",
+            "statut": "a_produire",
+            "dureeSecondes": null,
+            "videoUrl": null,
+            "tutoriel": null,
+            "tutorielModuleUrl": "https://tutoriel.foodeatup.com/module/predibot",
+            "higgsfield": {
+              "videoSourceUrl": null,
+              "source": null,
+              "duree": "10 s",
+              "format": "vertical 9:16"
+            },
+            "masterRapidoUrl": null,
+            "posterUrl": null,
+            "troisMots": "LE BRIEF",
+            "datePrevue": "2027-02-05",
+            "reseaux": {
+              "facebook": {
+                "statut": "a_venir",
+                "date": "2027-02-05",
+                "heure": "12:00",
+                "compte": "FoodEatUp",
+                "format": "Vidéo native 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              },
+              "instagram": {
+                "statut": "a_venir",
+                "date": "2027-02-05",
+                "heure": "18:30",
+                "compte": "foodeatup.cocuisinage",
+                "format": "Reel 9:16",
+                "lienCta": null
+              },
+              "tiktok": {
+                "statut": "a_venir",
+                "date": "2027-02-05",
+                "heure": "19:00",
+                "compte": "foodeatup",
+                "format": "Vidéo 9:16",
+                "lienCta": null
+              },
+              "linkedin": {
+                "statut": "a_venir",
+                "date": "2027-02-05",
+                "heure": "08:00",
+                "compte": "FoodEatUp",
+                "format": "Vidéo native 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              },
+              "youtube": {
+                "statut": "a_venir",
+                "date": "2027-02-05",
+                "heure": "10:00",
+                "compte": "@FoodEatUp",
+                "format": "Short 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              }
+            },
+            "storyUrl": null
+          },
+          {
+            "id": "EP212",
+            "numero": 212,
+            "saison": 8,
+            "slug": "ep212-ce-qui-manque-deja",
+            "titre": "Ce qui manque déjà",
+            "module": "StockVision",
+            "chapitre": "Le stock bas",
+            "acte": "07 h · Avant d'ouvrir les yeux",
+            "heure": "07 h",
+            "phrase": "Jarvis, qu'est-ce qu'il me manque ?",
+            "outil": "list_low_stocks",
+            "vegefruite": "oignon",
+            "accroche": "On découvre les ruptures à midi. Toujours.",
+            "punchline": "Sauf quand on demande à sept heures.",
+            "resume": "Les articles sous leur seuil remontent d'eux-mêmes quand on les demande. Le moment où on l'apprend change tout : à sept heures on commande, à midi on s'excuse.",
+            "reponse": "La liste des articles passés sous leur seuil, avant l'ouverture — pas à midi, quand le plat est déjà commandé.",
+            "statut": "a_produire",
+            "dureeSecondes": null,
+            "videoUrl": null,
+            "tutoriel": null,
+            "tutorielModuleUrl": "https://tutoriel.foodeatup.com/module/stockvision-ai",
+            "higgsfield": {
+              "videoSourceUrl": null,
+              "source": null,
+              "duree": "10 s",
+              "format": "vertical 9:16"
+            },
+            "masterRapidoUrl": null,
+            "posterUrl": null,
+            "troisMots": "CE QUI MANQUE",
+            "datePrevue": "2027-02-06",
+            "reseaux": {
+              "facebook": {
+                "statut": "a_venir",
+                "date": "2027-02-06",
+                "heure": "12:00",
+                "compte": "FoodEatUp",
+                "format": "Vidéo native 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              },
+              "instagram": {
+                "statut": "a_venir",
+                "date": "2027-02-06",
+                "heure": "18:30",
+                "compte": "foodeatup.cocuisinage",
+                "format": "Reel 9:16",
+                "lienCta": null
+              },
+              "tiktok": {
+                "statut": "a_venir",
+                "date": "2027-02-06",
+                "heure": "19:00",
+                "compte": "foodeatup",
+                "format": "Vidéo 9:16",
+                "lienCta": null
+              },
+              "linkedin": {
+                "statut": "a_venir",
+                "date": "2027-02-06",
+                "heure": "08:00",
+                "compte": "FoodEatUp",
+                "format": "Vidéo native 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              },
+              "youtube": {
+                "statut": "a_venir",
+                "date": "2027-02-06",
+                "heure": "10:00",
+                "compte": "@FoodEatUp",
+                "format": "Short 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              }
+            },
+            "storyUrl": null
+          },
+          {
+            "id": "EP213",
+            "numero": 213,
+            "saison": 8,
+            "slug": "ep213-jeudi-va-coincer",
+            "titre": "Jeudi va coincer",
+            "module": "StockVision",
+            "chapitre": "Les alertes de production",
+            "acte": "07 h · Avant d'ouvrir les yeux",
+            "heure": "07 h",
+            "phrase": "Jarvis, il manque quoi pour la production de jeudi ?",
+            "outil": "list_production_alerts",
+            "vegefruite": "oignon",
+            "accroche": "La production de jeudi est prête. Sur le papier.",
+            "punchline": "Il manque deux ingrédients. On le saura jeudi.",
+            "resume": "Les productions planifiées sont comparées au stock réel : ce qui manque remonte avant le jour J, avec les jours d'avance pour commander.",
+            "reponse": "Les ingrédients absents des productions déjà planifiées, sur les jours qui viennent. Le problème de jeudi se règle lundi.",
+            "statut": "a_produire",
+            "dureeSecondes": null,
+            "videoUrl": null,
+            "tutoriel": null,
+            "tutorielModuleUrl": "https://tutoriel.foodeatup.com/module/stockvision-ai",
+            "higgsfield": {
+              "videoSourceUrl": null,
+              "source": null,
+              "duree": "10 s",
+              "format": "vertical 9:16"
+            },
+            "masterRapidoUrl": null,
+            "posterUrl": null,
+            "troisMots": "JEUDI VA COINCER",
+            "datePrevue": "2027-02-07",
+            "reseaux": {
+              "facebook": {
+                "statut": "a_venir",
+                "date": "2027-02-07",
+                "heure": "12:00",
+                "compte": "FoodEatUp",
+                "format": "Vidéo native 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              },
+              "instagram": {
+                "statut": "a_venir",
+                "date": "2027-02-07",
+                "heure": "18:30",
+                "compte": "foodeatup.cocuisinage",
+                "format": "Reel 9:16",
+                "lienCta": null
+              },
+              "tiktok": {
+                "statut": "a_venir",
+                "date": "2027-02-07",
+                "heure": "19:00",
+                "compte": "foodeatup",
+                "format": "Vidéo 9:16",
+                "lienCta": null
+              },
+              "linkedin": {
+                "statut": "a_venir",
+                "date": "2027-02-07",
+                "heure": "08:00",
+                "compte": "FoodEatUp",
+                "format": "Vidéo native 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              },
+              "youtube": {
+                "statut": "a_venir",
+                "date": "2027-02-07",
+                "heure": "10:00",
+                "compte": "@FoodEatUp",
+                "format": "Short 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              }
+            },
+            "storyUrl": null
+          },
+          {
+            "id": "EP214",
+            "numero": 214,
+            "saison": 8,
+            "slug": "ep214-le-bon-avant-l-ouverture",
+            "titre": "Le bon avant l'ouverture",
+            "module": "StockVision",
+            "chapitre": "La commande fournisseur",
+            "acte": "07 h · Avant d'ouvrir les yeux",
+            "heure": "07 h",
+            "phrase": "Jarvis, commande-moi ça chez le poissonnier.",
+            "outil": "create_supplier_order",
+            "vegefruite": "oignon",
+            "accroche": "Le fournisseur ferme les commandes à neuf heures.",
+            "punchline": "Il est sept heures dix. On a le temps.",
+            "resume": "La commande se dicte au lieu de se saisir : le bon est créé, envoyé, et le stock l'attend. Aucun formulaire n'a été ouvert.",
+            "reponse": "La commande fournisseur est créée et part avant que le premier client ait poussé la porte.",
+            "statut": "a_produire",
+            "dureeSecondes": null,
+            "videoUrl": null,
+            "tutoriel": null,
+            "tutorielModuleUrl": "https://tutoriel.foodeatup.com/module/stockvision-ai",
+            "higgsfield": {
+              "videoSourceUrl": null,
+              "source": null,
+              "duree": "10 s",
+              "format": "vertical 9:16"
+            },
+            "masterRapidoUrl": null,
+            "posterUrl": null,
+            "troisMots": "LE BON DU MATIN",
+            "datePrevue": "2027-02-08",
+            "reseaux": {
+              "facebook": {
+                "statut": "a_venir",
+                "date": "2027-02-08",
+                "heure": "12:00",
+                "compte": "FoodEatUp",
+                "format": "Vidéo native 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              },
+              "instagram": {
+                "statut": "a_venir",
+                "date": "2027-02-08",
+                "heure": "18:30",
+                "compte": "foodeatup.cocuisinage",
+                "format": "Reel 9:16",
+                "lienCta": null
+              },
+              "tiktok": {
+                "statut": "a_venir",
+                "date": "2027-02-08",
+                "heure": "19:00",
+                "compte": "foodeatup",
+                "format": "Vidéo 9:16",
+                "lienCta": null
+              },
+              "linkedin": {
+                "statut": "a_venir",
+                "date": "2027-02-08",
+                "heure": "08:00",
+                "compte": "FoodEatUp",
+                "format": "Vidéo native 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              },
+              "youtube": {
+                "statut": "a_venir",
+                "date": "2027-02-08",
+                "heure": "10:00",
+                "compte": "@FoodEatUp",
+                "format": "Short 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              }
+            },
+            "storyUrl": null
+          },
+          {
+            "id": "EP215",
+            "numero": 215,
+            "saison": 8,
+            "slug": "ep215-combien-on-est-ce-soir",
+            "titre": "Combien on est ce soir",
+            "module": "Réservation",
+            "chapitre": "La disponibilité",
+            "acte": "07 h · Avant d'ouvrir les yeux",
+            "heure": "07 h",
+            "phrase": "Jarvis, on a combien de couverts ce soir ?",
+            "outil": "reservation_availability",
+            "vegefruite": "citron",
+            "accroche": "Combien de couverts ce soir ? « On verra bien. »",
+            "punchline": "Mauvaise réponse. Elle est écrite quelque part.",
+            "resume": "Le service du soir est connu le matin : couverts engagés, créneaux, tables libres. C'est ce chiffre qui décide de la commande et de la mise en place.",
+            "reponse": "Les créneaux, les tables encore libres et le nombre de couverts déjà engagés. De quoi décider des achats du matin.",
+            "statut": "a_produire",
+            "dureeSecondes": null,
+            "videoUrl": null,
+            "tutoriel": null,
+            "tutorielModuleUrl": "https://tutoriel.foodeatup.com/module/reservation-salle",
+            "higgsfield": {
+              "videoSourceUrl": null,
+              "source": null,
+              "duree": "10 s",
+              "format": "vertical 9:16"
+            },
+            "masterRapidoUrl": null,
+            "posterUrl": null,
+            "troisMots": "COMBIEN CE SOIR",
+            "datePrevue": "2027-02-09",
+            "reseaux": {
+              "facebook": {
+                "statut": "a_venir",
+                "date": "2027-02-09",
+                "heure": "12:00",
+                "compte": "FoodEatUp",
+                "format": "Vidéo native 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              },
+              "instagram": {
+                "statut": "a_venir",
+                "date": "2027-02-09",
+                "heure": "18:30",
+                "compte": "foodeatup.cocuisinage",
+                "format": "Reel 9:16",
+                "lienCta": null
+              },
+              "tiktok": {
+                "statut": "a_venir",
+                "date": "2027-02-09",
+                "heure": "19:00",
+                "compte": "foodeatup",
+                "format": "Vidéo 9:16",
+                "lienCta": null
+              },
+              "linkedin": {
+                "statut": "a_venir",
+                "date": "2027-02-09",
+                "heure": "08:00",
+                "compte": "FoodEatUp",
+                "format": "Vidéo native 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              },
+              "youtube": {
+                "statut": "a_venir",
+                "date": "2027-02-09",
+                "heure": "10:00",
+                "compte": "@FoodEatUp",
+                "format": "Short 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              }
+            },
+            "storyUrl": null
+          },
+          {
+            "id": "EP216",
+            "numero": 216,
+            "saison": 8,
+            "slug": "ep216-frigo-3",
+            "titre": "« Frigo 3 »",
+            "module": "Configuration",
+            "chapitre": "Quand l'IA demande",
+            "acte": "10 h · La mise en place",
+            "heure": "10 h",
+            "phrase": "Jarvis, relève le frigo 3.",
+            "outil": "search_entities",
+            "vegefruite": "ail",
+            "accroche": "« Frigo 3. » Il y en a deux.",
+            "punchline": "Une IA qui devine, c'est une IA qui se trompe.",
+            "resume": "Le nom parlé est résolu vers un équipement réel, accents et pluriels compris. Quand c'est ambigu, la question revient au lieu d'un choix arbitraire.",
+            "reponse": "Deux équipements portent ce nom. Plutôt que de choisir au hasard, Jarvis demande lequel — et n'agit qu'une fois la réponse donnée.",
+            "statut": "a_produire",
+            "dureeSecondes": null,
+            "videoUrl": null,
+            "tutoriel": null,
+            "tutorielModuleUrl": "https://tutoriel.foodeatup.com/module/configuration",
+            "higgsfield": {
+              "videoSourceUrl": null,
+              "source": null,
+              "duree": "10 s",
+              "format": "vertical 9:16"
+            },
+            "masterRapidoUrl": null,
+            "posterUrl": null,
+            "troisMots": "FRIGO 3",
+            "datePrevue": "2027-02-10",
+            "reseaux": {
+              "facebook": {
+                "statut": "a_venir",
+                "date": "2027-02-10",
+                "heure": "12:00",
+                "compte": "FoodEatUp",
+                "format": "Vidéo native 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              },
+              "instagram": {
+                "statut": "a_venir",
+                "date": "2027-02-10",
+                "heure": "18:30",
+                "compte": "foodeatup.cocuisinage",
+                "format": "Reel 9:16",
+                "lienCta": null
+              },
+              "tiktok": {
+                "statut": "a_venir",
+                "date": "2027-02-10",
+                "heure": "19:00",
+                "compte": "foodeatup",
+                "format": "Vidéo 9:16",
+                "lienCta": null
+              },
+              "linkedin": {
+                "statut": "a_venir",
+                "date": "2027-02-10",
+                "heure": "08:00",
+                "compte": "FoodEatUp",
+                "format": "Vidéo native 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              },
+              "youtube": {
+                "statut": "a_venir",
+                "date": "2027-02-10",
+                "heure": "10:00",
+                "compte": "@FoodEatUp",
+                "format": "Short 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              }
+            },
+            "storyUrl": null
+          },
+          {
+            "id": "EP217",
+            "numero": 217,
+            "saison": 8,
+            "slug": "ep217-l-haccp-sans-le-classeur",
+            "titre": "L'HACCP sans le classeur",
+            "module": "HACCP",
+            "chapitre": "Le relevé de température",
+            "acte": "10 h · La mise en place",
+            "heure": "10 h",
+            "phrase": "Jarvis, frigo 3, quatre degrés.",
+            "outil": "add_temperature",
+            "vegefruite": "carotte",
+            "accroche": "Le classeur HACCP se remplit le vendredi soir.",
+            "punchline": "Pour toute la semaine. On sait tous comment ça finit.",
+            "resume": "Le relevé se dit à voix haute, les mains dans la chambre froide, et il est horodaté à la seconde. C'est ce qui fait la différence entre un registre et un roman.",
+            "reponse": "Le relevé est enregistré, daté, rattaché à l'équipement. Le classeur qu'on remplissait le vendredi soir n'existe plus.",
+            "statut": "a_produire",
+            "dureeSecondes": null,
+            "videoUrl": null,
+            "tutoriel": null,
+            "tutorielModuleUrl": "https://tutoriel.foodeatup.com/module/haccp",
+            "higgsfield": {
+              "videoSourceUrl": null,
+              "source": null,
+              "duree": "10 s",
+              "format": "vertical 9:16"
+            },
+            "masterRapidoUrl": null,
+            "posterUrl": null,
+            "troisMots": "QUATRE DEGRÉS",
+            "datePrevue": "2027-02-11",
+            "reseaux": {
+              "facebook": {
+                "statut": "a_venir",
+                "date": "2027-02-11",
+                "heure": "12:00",
+                "compte": "FoodEatUp",
+                "format": "Vidéo native 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              },
+              "instagram": {
+                "statut": "a_venir",
+                "date": "2027-02-11",
+                "heure": "18:30",
+                "compte": "foodeatup.cocuisinage",
+                "format": "Reel 9:16",
+                "lienCta": null
+              },
+              "tiktok": {
+                "statut": "a_venir",
+                "date": "2027-02-11",
+                "heure": "19:00",
+                "compte": "foodeatup",
+                "format": "Vidéo 9:16",
+                "lienCta": null
+              },
+              "linkedin": {
+                "statut": "a_venir",
+                "date": "2027-02-11",
+                "heure": "08:00",
+                "compte": "FoodEatUp",
+                "format": "Vidéo native 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              },
+              "youtube": {
+                "statut": "a_venir",
+                "date": "2027-02-11",
+                "heure": "10:00",
+                "compte": "@FoodEatUp",
+                "format": "Short 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              }
+            },
+            "storyUrl": null
+          },
+          {
+            "id": "EP218",
+            "numero": 218,
+            "saison": 8,
+            "slug": "ep218-l-etiquette-qui-se-dit",
+            "titre": "L'étiquette qui se dit",
+            "module": "HACCP",
+            "chapitre": "Les étiquettes DLC",
+            "acte": "10 h · La mise en place",
+            "heure": "10 h",
+            "phrase": "Jarvis, étiquette DLC sur la sauce.",
+            "outil": "create_haccp_label",
+            "vegefruite": "carotte",
+            "accroche": "Une date au feutre sur du scotch.",
+            "punchline": "Illisible en deux jours. Comme prévu.",
+            "resume": "L'étiquette de DLC est produite depuis la fiche du produit : le bon nom, la bonne durée, la bonne date. Personne ne l'écrit à la main.",
+            "reponse": "L'étiquette est générée avec sa date, son produit et sa durée de vie. Plus de feutre sur du ruban adhésif.",
+            "statut": "a_produire",
+            "dureeSecondes": null,
+            "videoUrl": null,
+            "tutoriel": null,
+            "tutorielModuleUrl": "https://tutoriel.foodeatup.com/module/haccp",
+            "higgsfield": {
+              "videoSourceUrl": null,
+              "source": null,
+              "duree": "10 s",
+              "format": "vertical 9:16"
+            },
+            "masterRapidoUrl": null,
+            "posterUrl": null,
+            "troisMots": "L'ÉTIQUETTE",
+            "datePrevue": "2027-02-12",
+            "reseaux": {
+              "facebook": {
+                "statut": "a_venir",
+                "date": "2027-02-12",
+                "heure": "12:00",
+                "compte": "FoodEatUp",
+                "format": "Vidéo native 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              },
+              "instagram": {
+                "statut": "a_venir",
+                "date": "2027-02-12",
+                "heure": "18:30",
+                "compte": "foodeatup.cocuisinage",
+                "format": "Reel 9:16",
+                "lienCta": null
+              },
+              "tiktok": {
+                "statut": "a_venir",
+                "date": "2027-02-12",
+                "heure": "19:00",
+                "compte": "foodeatup",
+                "format": "Vidéo 9:16",
+                "lienCta": null
+              },
+              "linkedin": {
+                "statut": "a_venir",
+                "date": "2027-02-12",
+                "heure": "08:00",
+                "compte": "FoodEatUp",
+                "format": "Vidéo native 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              },
+              "youtube": {
+                "statut": "a_venir",
+                "date": "2027-02-12",
+                "heure": "10:00",
+                "compte": "@FoodEatUp",
+                "format": "Short 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              }
+            },
+            "storyUrl": null
+          },
+          {
+            "id": "EP219",
+            "numero": 219,
+            "saison": 8,
+            "slug": "ep219-la-livraison-controlee",
+            "titre": "La livraison contrôlée",
+            "module": "HACCP",
+            "chapitre": "Le contrôle à réception",
+            "acte": "10 h · La mise en place",
+            "heure": "10 h",
+            "phrase": "Jarvis, la commande est arrivée, tout est conforme.",
+            "outil": "create_haccp_reception",
+            "vegefruite": "carotte",
+            "accroche": "« Vous contrôlez vos livraisons ? » — « Bien sûr. »",
+            "punchline": "« Vous pouvez me le montrer ? » — silence.",
+            "resume": "Le contrôle à réception se déclare en une phrase, au moment où le camion repart. Ce qui est consigné à ce moment-là est ce qu'on pourra montrer.",
+            "reponse": "Le contrôle à réception est consigné : le fournisseur, la date, la conformité. La preuve existe le jour du contrôle, pas seulement dans les souvenirs.",
+            "statut": "a_produire",
+            "dureeSecondes": null,
+            "videoUrl": null,
+            "tutoriel": null,
+            "tutorielModuleUrl": "https://tutoriel.foodeatup.com/module/haccp",
+            "higgsfield": {
+              "videoSourceUrl": null,
+              "source": null,
+              "duree": "10 s",
+              "format": "vertical 9:16"
+            },
+            "masterRapidoUrl": null,
+            "posterUrl": null,
+            "troisMots": "RÉCEPTION CONFORME",
+            "datePrevue": "2027-02-13",
+            "reseaux": {
+              "facebook": {
+                "statut": "a_venir",
+                "date": "2027-02-13",
+                "heure": "12:00",
+                "compte": "FoodEatUp",
+                "format": "Vidéo native 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              },
+              "instagram": {
+                "statut": "a_venir",
+                "date": "2027-02-13",
+                "heure": "18:30",
+                "compte": "foodeatup.cocuisinage",
+                "format": "Reel 9:16",
+                "lienCta": null
+              },
+              "tiktok": {
+                "statut": "a_venir",
+                "date": "2027-02-13",
+                "heure": "19:00",
+                "compte": "foodeatup",
+                "format": "Vidéo 9:16",
+                "lienCta": null
+              },
+              "linkedin": {
+                "statut": "a_venir",
+                "date": "2027-02-13",
+                "heure": "08:00",
+                "compte": "FoodEatUp",
+                "format": "Vidéo native 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              },
+              "youtube": {
+                "statut": "a_venir",
+                "date": "2027-02-13",
+                "heure": "10:00",
+                "compte": "@FoodEatUp",
+                "format": "Short 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              }
+            },
+            "storyUrl": null
+          },
+          {
+            "id": "EP220",
+            "numero": 220,
+            "saison": 8,
+            "slug": "ep220-la-mise-en-place-lancee",
+            "titre": "La mise en place lancée",
+            "module": "StockVision",
+            "chapitre": "Le plan de production",
+            "acte": "10 h · La mise en place",
+            "heure": "10 h",
+            "phrase": "Jarvis, lance la mise en place du jour.",
+            "outil": "create_production_plan",
+            "vegefruite": "tomate",
+            "accroche": "La mise en place, c'est ce qu'on se crie à travers la cuisine.",
+            "punchline": "Ou ce qu'on lit, une fois pour toutes.",
+            "resume": "Le plan de production sort avec ses quantités : chacun sait ce qu'il prépare, en quelle quantité, dans quel ordre. La cuisine cesse de fonctionner à la voix.",
+            "reponse": "Le plan de production est créé, avec ses quantités et ses ingrédients réservés. La brigade sait quoi faire sans qu'on ait crié.",
+            "statut": "a_produire",
+            "dureeSecondes": null,
+            "videoUrl": null,
+            "tutoriel": null,
+            "tutorielModuleUrl": "https://tutoriel.foodeatup.com/module/stockvision-ai",
+            "higgsfield": {
+              "videoSourceUrl": null,
+              "source": null,
+              "duree": "10 s",
+              "format": "vertical 9:16"
+            },
+            "masterRapidoUrl": null,
+            "posterUrl": null,
+            "troisMots": "LA MISE EN PLACE",
+            "datePrevue": "2027-02-14",
+            "reseaux": {
+              "facebook": {
+                "statut": "a_venir",
+                "date": "2027-02-14",
+                "heure": "12:00",
+                "compte": "FoodEatUp",
+                "format": "Vidéo native 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              },
+              "instagram": {
+                "statut": "a_venir",
+                "date": "2027-02-14",
+                "heure": "18:30",
+                "compte": "foodeatup.cocuisinage",
+                "format": "Reel 9:16",
+                "lienCta": null
+              },
+              "tiktok": {
+                "statut": "a_venir",
+                "date": "2027-02-14",
+                "heure": "19:00",
+                "compte": "foodeatup",
+                "format": "Vidéo 9:16",
+                "lienCta": null
+              },
+              "linkedin": {
+                "statut": "a_venir",
+                "date": "2027-02-14",
+                "heure": "08:00",
+                "compte": "FoodEatUp",
+                "format": "Vidéo native 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              },
+              "youtube": {
+                "statut": "a_venir",
+                "date": "2027-02-14",
+                "heure": "10:00",
+                "compte": "@FoodEatUp",
+                "format": "Short 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              }
+            },
+            "storyUrl": null
+          },
+          {
+            "id": "EP221",
+            "numero": 221,
+            "saison": 8,
+            "slug": "ep221-quel-poste-bouchonne",
+            "titre": "Quel poste bouchonne",
+            "module": "KDS",
+            "chapitre": "La charge par poste",
+            "acte": "12 h · Le coup de feu",
+            "heure": "12 h",
+            "phrase": "Jarvis, ça coince où ?",
+            "outil": "get_station_load",
+            "vegefruite": "tomate",
+            "accroche": "Ça bouchonne. Personne ne sait où.",
+            "punchline": "Sauf celui qui pose la question à voix haute.",
+            "resume": "La charge de chaque poste se lit en une phrase, en plein coup de feu. On déplace quelqu'un sur le bon poste au lieu de crier « ça avance ? ».",
+            "reponse": "Les tickets actifs poste par poste. Le goulot a un nom avant que la salle ne vienne le demander.",
+            "statut": "a_produire",
+            "dureeSecondes": null,
+            "videoUrl": null,
+            "tutoriel": null,
+            "tutorielModuleUrl": "https://tutoriel.foodeatup.com/module/kds-cuisine",
+            "higgsfield": {
+              "videoSourceUrl": null,
+              "source": null,
+              "duree": "10 s",
+              "format": "vertical 9:16"
+            },
+            "masterRapidoUrl": null,
+            "posterUrl": null,
+            "troisMots": "ÇA COINCE OÙ",
+            "datePrevue": "2027-02-15",
+            "reseaux": {
+              "facebook": {
+                "statut": "a_venir",
+                "date": "2027-02-15",
+                "heure": "12:00",
+                "compte": "FoodEatUp",
+                "format": "Vidéo native 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              },
+              "instagram": {
+                "statut": "a_venir",
+                "date": "2027-02-15",
+                "heure": "18:30",
+                "compte": "foodeatup.cocuisinage",
+                "format": "Reel 9:16",
+                "lienCta": null
+              },
+              "tiktok": {
+                "statut": "a_venir",
+                "date": "2027-02-15",
+                "heure": "19:00",
+                "compte": "foodeatup",
+                "format": "Vidéo 9:16",
+                "lienCta": null
+              },
+              "linkedin": {
+                "statut": "a_venir",
+                "date": "2027-02-15",
+                "heure": "08:00",
+                "compte": "FoodEatUp",
+                "format": "Vidéo native 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              },
+              "youtube": {
+                "statut": "a_venir",
+                "date": "2027-02-15",
+                "heure": "10:00",
+                "compte": "@FoodEatUp",
+                "format": "Short 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              }
+            },
+            "storyUrl": null
+          },
+          {
+            "id": "EP222",
+            "numero": 222,
+            "saison": 8,
+            "slug": "ep222-ou-en-est-la-6",
+            "titre": "Où en est la 6",
+            "module": "KDS",
+            "chapitre": "L'état d'une commande",
+            "acte": "12 h · Le coup de feu",
+            "heure": "12 h",
+            "phrase": "Jarvis, où en est la 6 ?",
+            "outil": "get_order",
+            "vegefruite": "tomate",
+            "accroche": "Le serveur traverse la cuisine pour demander.",
+            "punchline": "Il repart avec « ça arrive ». Comme toujours.",
+            "resume": "L'état d'une commande se demande depuis la salle, sans déranger le passe. La réponse est la commande réelle, pas une estimation.",
+            "reponse": "La commande telle qu'elle a été saisie, son état, ses lignes. Le serveur n'a plus à traverser la cuisine pour poser la question.",
+            "statut": "a_produire",
+            "dureeSecondes": null,
+            "videoUrl": null,
+            "tutoriel": null,
+            "tutorielModuleUrl": "https://tutoriel.foodeatup.com/module/kds-cuisine",
+            "higgsfield": {
+              "videoSourceUrl": null,
+              "source": null,
+              "duree": "10 s",
+              "format": "vertical 9:16"
+            },
+            "masterRapidoUrl": null,
+            "posterUrl": null,
+            "troisMots": "OÙ EN EST LA 6",
+            "datePrevue": "2027-02-16",
+            "reseaux": {
+              "facebook": {
+                "statut": "a_venir",
+                "date": "2027-02-16",
+                "heure": "12:00",
+                "compte": "FoodEatUp",
+                "format": "Vidéo native 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              },
+              "instagram": {
+                "statut": "a_venir",
+                "date": "2027-02-16",
+                "heure": "18:30",
+                "compte": "foodeatup.cocuisinage",
+                "format": "Reel 9:16",
+                "lienCta": null
+              },
+              "tiktok": {
+                "statut": "a_venir",
+                "date": "2027-02-16",
+                "heure": "19:00",
+                "compte": "foodeatup",
+                "format": "Vidéo 9:16",
+                "lienCta": null
+              },
+              "linkedin": {
+                "statut": "a_venir",
+                "date": "2027-02-16",
+                "heure": "08:00",
+                "compte": "FoodEatUp",
+                "format": "Vidéo native 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              },
+              "youtube": {
+                "statut": "a_venir",
+                "date": "2027-02-16",
+                "heure": "10:00",
+                "compte": "@FoodEatUp",
+                "format": "Short 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              }
+            },
+            "storyUrl": null
+          },
+          {
+            "id": "EP223",
+            "numero": 223,
+            "saison": 8,
+            "slug": "ep223-plus-de-poulet",
+            "titre": "Plus de poulet",
+            "module": "StockVision",
+            "chapitre": "La rupture en service",
+            "acte": "12 h · Le coup de feu",
+            "heure": "12 h",
+            "phrase": "Jarvis, on est en rupture de poulet.",
+            "outil": "adjust_stock",
+            "vegefruite": "oignon",
+            "accroche": "Rupture à midi vingt.",
+            "punchline": "La carte en ligne, elle, en vend encore.",
+            "resume": "La rupture se déclare une fois et se propage partout. Le plat cesse d'être vendable au même instant sur tous les canaux.",
+            "reponse": "Le stock est mis à zéro et le plat s'éteint là où il se vend — en salle, en ligne, en livraison. En une phrase, pas en trois écrans.",
+            "statut": "a_produire",
+            "dureeSecondes": null,
+            "videoUrl": null,
+            "tutoriel": null,
+            "tutorielModuleUrl": "https://tutoriel.foodeatup.com/module/stockvision-ai",
+            "higgsfield": {
+              "videoSourceUrl": null,
+              "source": null,
+              "duree": "10 s",
+              "format": "vertical 9:16"
+            },
+            "masterRapidoUrl": null,
+            "posterUrl": null,
+            "troisMots": "PLUS DE POULET",
+            "datePrevue": "2027-02-17",
+            "reseaux": {
+              "facebook": {
+                "statut": "a_venir",
+                "date": "2027-02-17",
+                "heure": "12:00",
+                "compte": "FoodEatUp",
+                "format": "Vidéo native 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              },
+              "instagram": {
+                "statut": "a_venir",
+                "date": "2027-02-17",
+                "heure": "18:30",
+                "compte": "foodeatup.cocuisinage",
+                "format": "Reel 9:16",
+                "lienCta": null
+              },
+              "tiktok": {
+                "statut": "a_venir",
+                "date": "2027-02-17",
+                "heure": "19:00",
+                "compte": "foodeatup",
+                "format": "Vidéo 9:16",
+                "lienCta": null
+              },
+              "linkedin": {
+                "statut": "a_venir",
+                "date": "2027-02-17",
+                "heure": "08:00",
+                "compte": "FoodEatUp",
+                "format": "Vidéo native 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              },
+              "youtube": {
+                "statut": "a_venir",
+                "date": "2027-02-17",
+                "heure": "10:00",
+                "compte": "@FoodEatUp",
+                "format": "Short 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              }
+            },
+            "storyUrl": null
+          },
+          {
+            "id": "EP224",
+            "numero": 224,
+            "saison": 8,
+            "slug": "ep224-ouvre-la-caisse",
+            "titre": "Ouvre la caisse",
+            "module": "Caisse POS",
+            "chapitre": "La session de caisse",
+            "acte": "12 h · Le coup de feu",
+            "heure": "12 h",
+            "phrase": "Jarvis, ouvre la caisse.",
+            "outil": "open_pos_session",
+            "vegefruite": "ail",
+            "accroche": "Ouvrir la caisse : cinq clics, un fond de caisse, un mot de passe.",
+            "punchline": "Ou trois mots, les mains pleines.",
+            "resume": "La session de caisse s'ouvre à la voix, avec son responsable et son heure. Ce qui compte le soir venu, c'est que ce soit tracé — pas que ce soit cliqué.",
+            "reponse": "La session est ouverte, au nom de qui la tient, à l'heure exacte. Le service peut encaisser.",
+            "statut": "a_produire",
+            "dureeSecondes": null,
+            "videoUrl": null,
+            "tutoriel": null,
+            "tutorielModuleUrl": null,
+            "higgsfield": {
+              "videoSourceUrl": null,
+              "source": null,
+              "duree": "10 s",
+              "format": "vertical 9:16"
+            },
+            "masterRapidoUrl": null,
+            "posterUrl": null,
+            "troisMots": "OUVRE LA CAISSE",
+            "datePrevue": "2027-02-18",
+            "reseaux": {
+              "facebook": {
+                "statut": "a_venir",
+                "date": "2027-02-18",
+                "heure": "12:00",
+                "compte": "FoodEatUp",
+                "format": "Vidéo native 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              },
+              "instagram": {
+                "statut": "a_venir",
+                "date": "2027-02-18",
+                "heure": "18:30",
+                "compte": "foodeatup.cocuisinage",
+                "format": "Reel 9:16",
+                "lienCta": null
+              },
+              "tiktok": {
+                "statut": "a_venir",
+                "date": "2027-02-18",
+                "heure": "19:00",
+                "compte": "foodeatup",
+                "format": "Vidéo 9:16",
+                "lienCta": null
+              },
+              "linkedin": {
+                "statut": "a_venir",
+                "date": "2027-02-18",
+                "heure": "08:00",
+                "compte": "FoodEatUp",
+                "format": "Vidéo native 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              },
+              "youtube": {
+                "statut": "a_venir",
+                "date": "2027-02-18",
+                "heure": "10:00",
+                "compte": "@FoodEatUp",
+                "format": "Short 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              }
+            },
+            "storyUrl": null
+          },
+          {
+            "id": "EP225",
+            "numero": 225,
+            "saison": 8,
+            "slug": "ep225-la-12-sans-gluten",
+            "titre": "La 12, sans gluten",
+            "module": "Réservation",
+            "chapitre": "La note qui suit",
+            "acte": "12 h · Le coup de feu",
+            "heure": "12 h",
+            "phrase": "Jarvis, note : la 12, quatre couverts, sans gluten.",
+            "outil": "create_reservation",
+            "vegefruite": "citron",
+            "accroche": "« Sans gluten » dit au serveur, en pleine salle.",
+            "punchline": "Répété deux fois. Écrit nulle part.",
+            "resume": "La contrainte se dicte au moment où elle est dite, et elle est attachée à la table. Elle n'a plus à survivre dans la mémoire de trois personnes.",
+            "reponse": "La réservation est créée avec sa contrainte écrite dessus, et cette note voyage avec la table jusqu'au passe.",
+            "statut": "a_produire",
+            "dureeSecondes": null,
+            "videoUrl": null,
+            "tutoriel": null,
+            "tutorielModuleUrl": "https://tutoriel.foodeatup.com/module/reservation-salle",
+            "higgsfield": {
+              "videoSourceUrl": null,
+              "source": null,
+              "duree": "10 s",
+              "format": "vertical 9:16"
+            },
+            "masterRapidoUrl": null,
+            "posterUrl": null,
+            "troisMots": "SANS GLUTEN",
+            "datePrevue": "2027-02-19",
+            "reseaux": {
+              "facebook": {
+                "statut": "a_venir",
+                "date": "2027-02-19",
+                "heure": "12:00",
+                "compte": "FoodEatUp",
+                "format": "Vidéo native 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              },
+              "instagram": {
+                "statut": "a_venir",
+                "date": "2027-02-19",
+                "heure": "18:30",
+                "compte": "foodeatup.cocuisinage",
+                "format": "Reel 9:16",
+                "lienCta": null
+              },
+              "tiktok": {
+                "statut": "a_venir",
+                "date": "2027-02-19",
+                "heure": "19:00",
+                "compte": "foodeatup",
+                "format": "Vidéo 9:16",
+                "lienCta": null
+              },
+              "linkedin": {
+                "statut": "a_venir",
+                "date": "2027-02-19",
+                "heure": "08:00",
+                "compte": "FoodEatUp",
+                "format": "Vidéo native 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              },
+              "youtube": {
+                "statut": "a_venir",
+                "date": "2027-02-19",
+                "heure": "10:00",
+                "compte": "@FoodEatUp",
+                "format": "Short 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              }
+            },
+            "storyUrl": null
+          },
+          {
+            "id": "EP226",
+            "numero": 226,
+            "saison": 8,
+            "slug": "ep226-l-agent-qui-propose",
+            "titre": "L'agent qui propose",
+            "module": "Marketing",
+            "chapitre": "Les campagnes proposées",
+            "acte": "15 h · Le creux",
+            "heure": "15 h",
+            "phrase": "Jarvis, qu'est-ce que je poste cette semaine ?",
+            "outil": "propose_campaigns",
+            "vegefruite": "fraise",
+            "accroche": "« Qu'est-ce que je poste cette semaine ? »",
+            "punchline": "La question qu'on se pose le mardi. Et le mercredi.",
+            "resume": "Les campagnes ne se cherchent plus : elles sont proposées, avec leur segment, leur canal et leur message déjà écrit. Il reste à choisir, pas à inventer.",
+            "reponse": "Des campagnes prêtes, avec leur cible, leur canal, leur message — et le motif de chacune. Ce ne sont pas des idées : ce sont des propositions tirées des données du restaurant.",
+            "statut": "a_produire",
+            "dureeSecondes": null,
+            "videoUrl": null,
+            "tutoriel": null,
+            "tutorielModuleUrl": "https://tutoriel.foodeatup.com/module/marketing-fidelite",
+            "higgsfield": {
+              "videoSourceUrl": null,
+              "source": null,
+              "duree": "10 s",
+              "format": "vertical 9:16"
+            },
+            "masterRapidoUrl": null,
+            "posterUrl": null,
+            "troisMots": "QUOI POSTER",
+            "datePrevue": "2027-02-20",
+            "reseaux": {
+              "facebook": {
+                "statut": "a_venir",
+                "date": "2027-02-20",
+                "heure": "12:00",
+                "compte": "FoodEatUp",
+                "format": "Vidéo native 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              },
+              "instagram": {
+                "statut": "a_venir",
+                "date": "2027-02-20",
+                "heure": "18:30",
+                "compte": "foodeatup.cocuisinage",
+                "format": "Reel 9:16",
+                "lienCta": null
+              },
+              "tiktok": {
+                "statut": "a_venir",
+                "date": "2027-02-20",
+                "heure": "19:00",
+                "compte": "foodeatup",
+                "format": "Vidéo 9:16",
+                "lienCta": null
+              },
+              "linkedin": {
+                "statut": "a_venir",
+                "date": "2027-02-20",
+                "heure": "08:00",
+                "compte": "FoodEatUp",
+                "format": "Vidéo native 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              },
+              "youtube": {
+                "statut": "a_venir",
+                "date": "2027-02-20",
+                "heure": "10:00",
+                "compte": "@FoodEatUp",
+                "format": "Short 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              }
+            },
+            "storyUrl": null
+          },
+          {
+            "id": "EP227",
+            "numero": 227,
+            "saison": 8,
+            "slug": "ep227-pourquoi-celle-la",
+            "titre": "Pourquoi celle-là",
+            "module": "Marketing",
+            "chapitre": "Le motif d'une campagne",
+            "acte": "15 h · Le creux",
+            "heure": "15 h",
+            "phrase": "Jarvis, pourquoi celle-là plutôt qu'une autre ?",
+            "outil": "propose_campaigns",
+            "vegefruite": "fraise",
+            "accroche": "Une promo au hasard, ça s'appelle une remise.",
+            "punchline": "Une promo qui sait pourquoi, ça s'appelle un plan.",
+            "resume": "Chaque campagne proposée porte son motif : le jour creux, le segment qui décroche, la date qui approche. On accepte ou on refuse en connaissance de cause.",
+            "reponse": "Le jour le plus creux de la semaine, les clients qui ont cessé de venir, la fête qui arrive. Chaque proposition dit d'où elle vient.",
+            "statut": "a_produire",
+            "dureeSecondes": null,
+            "videoUrl": null,
+            "tutoriel": null,
+            "tutorielModuleUrl": "https://tutoriel.foodeatup.com/module/marketing-fidelite",
+            "higgsfield": {
+              "videoSourceUrl": null,
+              "source": null,
+              "duree": "10 s",
+              "format": "vertical 9:16"
+            },
+            "masterRapidoUrl": null,
+            "posterUrl": null,
+            "troisMots": "POURQUOI CELLE-LÀ",
+            "datePrevue": "2027-02-21",
+            "reseaux": {
+              "facebook": {
+                "statut": "a_venir",
+                "date": "2027-02-21",
+                "heure": "12:00",
+                "compte": "FoodEatUp",
+                "format": "Vidéo native 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              },
+              "instagram": {
+                "statut": "a_venir",
+                "date": "2027-02-21",
+                "heure": "18:30",
+                "compte": "foodeatup.cocuisinage",
+                "format": "Reel 9:16",
+                "lienCta": null
+              },
+              "tiktok": {
+                "statut": "a_venir",
+                "date": "2027-02-21",
+                "heure": "19:00",
+                "compte": "foodeatup",
+                "format": "Vidéo 9:16",
+                "lienCta": null
+              },
+              "linkedin": {
+                "statut": "a_venir",
+                "date": "2027-02-21",
+                "heure": "08:00",
+                "compte": "FoodEatUp",
+                "format": "Vidéo native 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              },
+              "youtube": {
+                "statut": "a_venir",
+                "date": "2027-02-21",
+                "heure": "10:00",
+                "compte": "@FoodEatUp",
+                "format": "Short 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              }
+            },
+            "storyUrl": null
+          },
+          {
+            "id": "EP228",
+            "numero": 228,
+            "saison": 8,
+            "slug": "ep228-repondre-sans-ouvrir-la-fiche",
+            "titre": "Répondre sans ouvrir la fiche",
+            "module": "Marketing",
+            "chapitre": "Les avis",
+            "acte": "15 h · Le creux",
+            "heure": "15 h",
+            "phrase": "Jarvis, réponds à cet avis.",
+            "outil": "reply_review",
+            "vegefruite": "fraise",
+            "accroche": "Un avis sans réponse, c'est six jours en haut de la fiche.",
+            "punchline": "Et trente personnes qui l'ont lu avant vous.",
+            "resume": "Les avis remontent et la réponse part de là. Ce qui coûte n'a jamais été l'avis lui-même : c'est le silence à côté.",
+            "reponse": "La réponse part depuis le même endroit que le reste. L'avis cesse d'attendre une connexion qu'on remettait à demain.",
+            "statut": "a_produire",
+            "dureeSecondes": null,
+            "videoUrl": null,
+            "tutoriel": null,
+            "tutorielModuleUrl": "https://tutoriel.foodeatup.com/module/marketing-fidelite",
+            "higgsfield": {
+              "videoSourceUrl": null,
+              "source": null,
+              "duree": "10 s",
+              "format": "vertical 9:16"
+            },
+            "masterRapidoUrl": null,
+            "posterUrl": null,
+            "troisMots": "RÉPONDRE À L'AVIS",
+            "datePrevue": "2027-02-22",
+            "reseaux": {
+              "facebook": {
+                "statut": "a_venir",
+                "date": "2027-02-22",
+                "heure": "12:00",
+                "compte": "FoodEatUp",
+                "format": "Vidéo native 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              },
+              "instagram": {
+                "statut": "a_venir",
+                "date": "2027-02-22",
+                "heure": "18:30",
+                "compte": "foodeatup.cocuisinage",
+                "format": "Reel 9:16",
+                "lienCta": null
+              },
+              "tiktok": {
+                "statut": "a_venir",
+                "date": "2027-02-22",
+                "heure": "19:00",
+                "compte": "foodeatup",
+                "format": "Vidéo 9:16",
+                "lienCta": null
+              },
+              "linkedin": {
+                "statut": "a_venir",
+                "date": "2027-02-22",
+                "heure": "08:00",
+                "compte": "FoodEatUp",
+                "format": "Vidéo native 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              },
+              "youtube": {
+                "statut": "a_venir",
+                "date": "2027-02-22",
+                "heure": "10:00",
+                "compte": "@FoodEatUp",
+                "format": "Short 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              }
+            },
+            "storyUrl": null
+          },
+          {
+            "id": "EP229",
+            "numero": 229,
+            "saison": 8,
+            "slug": "ep229-le-compte-expire",
+            "titre": "Le compte expiré",
+            "module": "Marketing",
+            "chapitre": "Les comptes reliés",
+            "acte": "15 h · Le creux",
+            "heure": "15 h",
+            "phrase": "Jarvis, mes comptes sont bien branchés ?",
+            "outil": "list_connected_accounts",
+            "vegefruite": "brocoli",
+            "accroche": "Tout est programmé. Tout part. Sauf un.",
+            "punchline": "Celui dont l'autorisation a expiré il y a trois semaines.",
+            "resume": "L'état de chaque compte relié se demande en une phrase. Une autorisation qui a expiré ne se découvre plus le jour d'une publication ratée.",
+            "reponse": "Les comptes reliés, réseau par réseau, avec leur état. Celui dont l'autorisation a expiré se voit d'un coup d'œil — au lieu de se découvrir au moment de publier.",
+            "statut": "a_produire",
+            "dureeSecondes": null,
+            "videoUrl": null,
+            "tutoriel": null,
+            "tutorielModuleUrl": "https://tutoriel.foodeatup.com/module/marketing-fidelite",
+            "higgsfield": {
+              "videoSourceUrl": null,
+              "source": null,
+              "duree": "10 s",
+              "format": "vertical 9:16"
+            },
+            "masterRapidoUrl": null,
+            "posterUrl": null,
+            "troisMots": "COMPTE EXPIRÉ",
+            "datePrevue": "2027-02-23",
+            "reseaux": {
+              "facebook": {
+                "statut": "a_venir",
+                "date": "2027-02-23",
+                "heure": "12:00",
+                "compte": "FoodEatUp",
+                "format": "Vidéo native 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              },
+              "instagram": {
+                "statut": "a_venir",
+                "date": "2027-02-23",
+                "heure": "18:30",
+                "compte": "foodeatup.cocuisinage",
+                "format": "Reel 9:16",
+                "lienCta": null
+              },
+              "tiktok": {
+                "statut": "a_venir",
+                "date": "2027-02-23",
+                "heure": "19:00",
+                "compte": "foodeatup",
+                "format": "Vidéo 9:16",
+                "lienCta": null
+              },
+              "linkedin": {
+                "statut": "a_venir",
+                "date": "2027-02-23",
+                "heure": "08:00",
+                "compte": "FoodEatUp",
+                "format": "Vidéo native 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              },
+              "youtube": {
+                "statut": "a_venir",
+                "date": "2027-02-23",
+                "heure": "10:00",
+                "compte": "@FoodEatUp",
+                "format": "Short 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              }
+            },
+            "storyUrl": null
+          },
+          {
+            "id": "EP230",
+            "numero": 230,
+            "saison": 8,
+            "slug": "ep230-programme-pas-publie",
+            "titre": "Programmé, pas publié",
+            "module": "Marketing",
+            "chapitre": "La programmation",
+            "acte": "15 h · Le creux",
+            "heure": "15 h",
+            "phrase": "Jarvis, programme-le jeudi midi.",
+            "outil": "schedule_draft_tool",
+            "vegefruite": "betterave",
+            "accroche": "Publier à midi, c'est être libre à midi.",
+            "punchline": "Un restaurateur n'est jamais libre à midi.",
+            "resume": "Le post part au bon moment sans qu'on soit devant l'écran. C'est le créneau qui est choisi, pas la disponibilité.",
+            "reponse": "Le brouillon rejoint la file avec son heure et son compte. Personne ne se lève à midi pour appuyer sur un bouton.",
+            "statut": "a_produire",
+            "dureeSecondes": null,
+            "videoUrl": null,
+            "tutoriel": null,
+            "tutorielModuleUrl": "https://tutoriel.foodeatup.com/module/marketing-fidelite",
+            "higgsfield": {
+              "videoSourceUrl": null,
+              "source": null,
+              "duree": "10 s",
+              "format": "vertical 9:16"
+            },
+            "masterRapidoUrl": null,
+            "posterUrl": null,
+            "troisMots": "PROGRAMME JEUDI",
+            "datePrevue": "2027-02-24",
+            "reseaux": {
+              "facebook": {
+                "statut": "a_venir",
+                "date": "2027-02-24",
+                "heure": "12:00",
+                "compte": "FoodEatUp",
+                "format": "Vidéo native 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              },
+              "instagram": {
+                "statut": "a_venir",
+                "date": "2027-02-24",
+                "heure": "18:30",
+                "compte": "foodeatup.cocuisinage",
+                "format": "Reel 9:16",
+                "lienCta": null
+              },
+              "tiktok": {
+                "statut": "a_venir",
+                "date": "2027-02-24",
+                "heure": "19:00",
+                "compte": "foodeatup",
+                "format": "Vidéo 9:16",
+                "lienCta": null
+              },
+              "linkedin": {
+                "statut": "a_venir",
+                "date": "2027-02-24",
+                "heure": "08:00",
+                "compte": "FoodEatUp",
+                "format": "Vidéo native 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              },
+              "youtube": {
+                "statut": "a_venir",
+                "date": "2027-02-24",
+                "heure": "10:00",
+                "compte": "@FoodEatUp",
+                "format": "Short 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              }
+            },
+            "storyUrl": null
+          },
+          {
+            "id": "EP231",
+            "numero": 231,
+            "saison": 8,
+            "slug": "ep231-le-trottoir-qui-rentre",
+            "titre": "Le trottoir qui rentre",
+            "module": "Réservation",
+            "chapitre": "La liste d'attente",
+            "acte": "19 h · Le service du soir",
+            "heure": "19 h",
+            "phrase": "Jarvis, qui attend dehors ?",
+            "outil": "list_waitlist",
+            "vegefruite": "navet",
+            "accroche": "Le suivant, c'est celui qui attend depuis le plus longtemps.",
+            "punchline": "Ou celui qui parle le plus fort. Ça dépend des soirs.",
+            "resume": "La file existe vraiment : un ordre, des noms, des couverts. La table qui se libère revient à qui de droit, sans discussion sur le trottoir.",
+            "reponse": "La liste d'attente, dans l'ordre, avec le nombre de couverts de chacun. La table qui se libère va au suivant, pas au plus insistant.",
+            "statut": "a_produire",
+            "dureeSecondes": null,
+            "videoUrl": null,
+            "tutoriel": null,
+            "tutorielModuleUrl": "https://tutoriel.foodeatup.com/module/reservation-salle",
+            "higgsfield": {
+              "videoSourceUrl": null,
+              "source": null,
+              "duree": "10 s",
+              "format": "vertical 9:16"
+            },
+            "masterRapidoUrl": null,
+            "posterUrl": null,
+            "troisMots": "QUI ATTEND DEHORS",
+            "datePrevue": "2027-02-25",
+            "reseaux": {
+              "facebook": {
+                "statut": "a_venir",
+                "date": "2027-02-25",
+                "heure": "12:00",
+                "compte": "FoodEatUp",
+                "format": "Vidéo native 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              },
+              "instagram": {
+                "statut": "a_venir",
+                "date": "2027-02-25",
+                "heure": "18:30",
+                "compte": "foodeatup.cocuisinage",
+                "format": "Reel 9:16",
+                "lienCta": null
+              },
+              "tiktok": {
+                "statut": "a_venir",
+                "date": "2027-02-25",
+                "heure": "19:00",
+                "compte": "foodeatup",
+                "format": "Vidéo 9:16",
+                "lienCta": null
+              },
+              "linkedin": {
+                "statut": "a_venir",
+                "date": "2027-02-25",
+                "heure": "08:00",
+                "compte": "FoodEatUp",
+                "format": "Vidéo native 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              },
+              "youtube": {
+                "statut": "a_venir",
+                "date": "2027-02-25",
+                "heure": "10:00",
+                "compte": "@FoodEatUp",
+                "format": "Short 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              }
+            },
+            "storyUrl": null
+          },
+          {
+            "id": "EP232",
+            "numero": 232,
+            "saison": 8,
+            "slug": "ep232-la-bougie-qui-arrive-seule",
+            "titre": "La bougie qui arrive seule",
+            "module": "Réservation",
+            "chapitre": "La note jusqu'au passe",
+            "acte": "19 h · Le service du soir",
+            "heure": "19 h",
+            "phrase": "Jarvis, c'est un anniversaire sur la 8.",
+            "outil": "get_order",
+            "vegefruite": "pomme-de-terre",
+            "accroche": "Il l'a dit à la réservation. Et à l'accueil.",
+            "punchline": "Au dessert, la cuisine ne le sait toujours pas.",
+            "resume": "Une intention dite en salle arrive en cuisine. C'est toute la différence entre un service correct et un service dont on se souvient.",
+            "reponse": "La note rejoint la table et la suit jusqu'en cuisine. Au dessert, la bougie part sans que personne n'ait eu à y repenser.",
+            "statut": "a_produire",
+            "dureeSecondes": null,
+            "videoUrl": null,
+            "tutoriel": null,
+            "tutorielModuleUrl": "https://tutoriel.foodeatup.com/module/reservation-salle",
+            "higgsfield": {
+              "videoSourceUrl": null,
+              "source": null,
+              "duree": "10 s",
+              "format": "vertical 9:16"
+            },
+            "masterRapidoUrl": null,
+            "posterUrl": null,
+            "troisMots": "C'EST UN ANNIVERSAIRE",
+            "datePrevue": "2027-02-26",
+            "reseaux": {
+              "facebook": {
+                "statut": "a_venir",
+                "date": "2027-02-26",
+                "heure": "12:00",
+                "compte": "FoodEatUp",
+                "format": "Vidéo native 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              },
+              "instagram": {
+                "statut": "a_venir",
+                "date": "2027-02-26",
+                "heure": "18:30",
+                "compte": "foodeatup.cocuisinage",
+                "format": "Reel 9:16",
+                "lienCta": null
+              },
+              "tiktok": {
+                "statut": "a_venir",
+                "date": "2027-02-26",
+                "heure": "19:00",
+                "compte": "foodeatup",
+                "format": "Vidéo 9:16",
+                "lienCta": null
+              },
+              "linkedin": {
+                "statut": "a_venir",
+                "date": "2027-02-26",
+                "heure": "08:00",
+                "compte": "FoodEatUp",
+                "format": "Vidéo native 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              },
+              "youtube": {
+                "statut": "a_venir",
+                "date": "2027-02-26",
+                "heure": "10:00",
+                "compte": "@FoodEatUp",
+                "format": "Short 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              }
+            },
+            "storyUrl": null
+          },
+          {
+            "id": "EP233",
+            "numero": 233,
+            "saison": 8,
+            "slug": "ep233-elle-est-partie",
+            "titre": "Elle est partie ?",
+            "module": "HubRise",
+            "chapitre": "Les livraisons",
+            "acte": "19 h · Le service du soir",
+            "heure": "19 h",
+            "phrase": "Jarvis, la commande de la rue des Lilas, elle est partie ?",
+            "outil": "list_deliveries",
+            "vegefruite": "betterave",
+            "accroche": "Le client rappelle. La commande est « en route ».",
+            "punchline": "En route depuis combien de temps, ça, personne ne sait.",
+            "resume": "L'état d'une livraison se demande à voix haute, en plein service. On répond au client avec un fait, pas avec une formule.",
+            "reponse": "L'état des livraisons en cours, sans ouvrir la plateforme ni rappeler le livreur.",
+            "statut": "a_produire",
+            "dureeSecondes": null,
+            "videoUrl": null,
+            "tutoriel": null,
+            "tutorielModuleUrl": "https://tutoriel.foodeatup.com/module/hubrise-livraisons",
+            "higgsfield": {
+              "videoSourceUrl": null,
+              "source": null,
+              "duree": "10 s",
+              "format": "vertical 9:16"
+            },
+            "masterRapidoUrl": null,
+            "posterUrl": null,
+            "troisMots": "ELLE EST PARTIE",
+            "datePrevue": "2027-02-27",
+            "reseaux": {
+              "facebook": {
+                "statut": "a_venir",
+                "date": "2027-02-27",
+                "heure": "12:00",
+                "compte": "FoodEatUp",
+                "format": "Vidéo native 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              },
+              "instagram": {
+                "statut": "a_venir",
+                "date": "2027-02-27",
+                "heure": "18:30",
+                "compte": "foodeatup.cocuisinage",
+                "format": "Reel 9:16",
+                "lienCta": null
+              },
+              "tiktok": {
+                "statut": "a_venir",
+                "date": "2027-02-27",
+                "heure": "19:00",
+                "compte": "foodeatup",
+                "format": "Vidéo 9:16",
+                "lienCta": null
+              },
+              "linkedin": {
+                "statut": "a_venir",
+                "date": "2027-02-27",
+                "heure": "08:00",
+                "compte": "FoodEatUp",
+                "format": "Vidéo native 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              },
+              "youtube": {
+                "statut": "a_venir",
+                "date": "2027-02-27",
+                "heure": "10:00",
+                "compte": "@FoodEatUp",
+                "format": "Short 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              }
+            },
+            "storyUrl": null
+          },
+          {
+            "id": "EP234",
+            "numero": 234,
+            "saison": 8,
+            "slug": "ep234-il-vient-souvent",
+            "titre": "Il vient souvent ?",
+            "module": "Marketing",
+            "chapitre": "Le compte fidélité",
+            "acte": "19 h · Le service du soir",
+            "heure": "19 h",
+            "phrase": "Jarvis, ce client, il vient souvent ?",
+            "outil": "get_loyalty_account",
+            "vegefruite": "pomme-de-terre",
+            "accroche": "Le nouveau serveur lui demande s'il connaît la maison.",
+            "punchline": "Six ans qu'il vient le mardi.",
+            "resume": "La reconnaissance n'est plus une affaire de mémoire : elle tient dans une fiche que n'importe qui peut lire, en salle, au moment où il faut.",
+            "reponse": "Son historique, ses points, sa dernière visite. On le reconnaît même quand ce n'est pas la même personne qui le sert.",
+            "statut": "a_produire",
+            "dureeSecondes": null,
+            "videoUrl": null,
+            "tutoriel": null,
+            "tutorielModuleUrl": "https://tutoriel.foodeatup.com/module/marketing-fidelite",
+            "higgsfield": {
+              "videoSourceUrl": null,
+              "source": null,
+              "duree": "10 s",
+              "format": "vertical 9:16"
+            },
+            "masterRapidoUrl": null,
+            "posterUrl": null,
+            "troisMots": "IL VIENT SOUVENT",
+            "datePrevue": "2027-02-28",
+            "reseaux": {
+              "facebook": {
+                "statut": "a_venir",
+                "date": "2027-02-28",
+                "heure": "12:00",
+                "compte": "FoodEatUp",
+                "format": "Vidéo native 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              },
+              "instagram": {
+                "statut": "a_venir",
+                "date": "2027-02-28",
+                "heure": "18:30",
+                "compte": "foodeatup.cocuisinage",
+                "format": "Reel 9:16",
+                "lienCta": null
+              },
+              "tiktok": {
+                "statut": "a_venir",
+                "date": "2027-02-28",
+                "heure": "19:00",
+                "compte": "foodeatup",
+                "format": "Vidéo 9:16",
+                "lienCta": null
+              },
+              "linkedin": {
+                "statut": "a_venir",
+                "date": "2027-02-28",
+                "heure": "08:00",
+                "compte": "FoodEatUp",
+                "format": "Vidéo native 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              },
+              "youtube": {
+                "statut": "a_venir",
+                "date": "2027-02-28",
+                "heure": "10:00",
+                "compte": "@FoodEatUp",
+                "format": "Short 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              }
+            },
+            "storyUrl": null
+          },
+          {
+            "id": "EP235",
+            "numero": 235,
+            "saison": 8,
+            "slug": "ep235-le-geste-dit-a-voix-haute",
+            "titre": "Le geste dit à voix haute",
+            "module": "Marketing",
+            "chapitre": "Les points de fidélité",
+            "acte": "19 h · Le service du soir",
+            "heure": "19 h",
+            "phrase": "Jarvis, mets-lui des points, il a attendu.",
+            "outil": "adjust_points",
+            "vegefruite": "pomme-de-terre",
+            "accroche": "« Je vous offre le café. » Le geste part du cœur.",
+            "punchline": "Et disparaît avec le service.",
+            "resume": "Un geste commercial dit à voix haute est un geste tracé : le client le retrouve à sa prochaine visite, et la maison sait ce qu'elle a offert.",
+            "reponse": "Le geste commercial est enregistré sur son compte, avec son motif. Il n'existe plus seulement dans la tête de celui qui l'a fait.",
+            "statut": "a_produire",
+            "dureeSecondes": null,
+            "videoUrl": null,
+            "tutoriel": null,
+            "tutorielModuleUrl": "https://tutoriel.foodeatup.com/module/marketing-fidelite",
+            "higgsfield": {
+              "videoSourceUrl": null,
+              "source": null,
+              "duree": "10 s",
+              "format": "vertical 9:16"
+            },
+            "masterRapidoUrl": null,
+            "posterUrl": null,
+            "troisMots": "IL A ATTENDU",
+            "datePrevue": "2027-03-01",
+            "reseaux": {
+              "facebook": {
+                "statut": "a_venir",
+                "date": "2027-03-01",
+                "heure": "12:00",
+                "compte": "FoodEatUp",
+                "format": "Vidéo native 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              },
+              "instagram": {
+                "statut": "a_venir",
+                "date": "2027-03-01",
+                "heure": "18:30",
+                "compte": "foodeatup.cocuisinage",
+                "format": "Reel 9:16",
+                "lienCta": null
+              },
+              "tiktok": {
+                "statut": "a_venir",
+                "date": "2027-03-01",
+                "heure": "19:00",
+                "compte": "foodeatup",
+                "format": "Vidéo 9:16",
+                "lienCta": null
+              },
+              "linkedin": {
+                "statut": "a_venir",
+                "date": "2027-03-01",
+                "heure": "08:00",
+                "compte": "FoodEatUp",
+                "format": "Vidéo native 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              },
+              "youtube": {
+                "statut": "a_venir",
+                "date": "2027-03-01",
+                "heure": "10:00",
+                "compte": "@FoodEatUp",
+                "format": "Short 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              }
+            },
+            "storyUrl": null
+          },
+          {
+            "id": "EP236",
+            "numero": 236,
+            "saison": 8,
+            "slug": "ep236-ferme-la-caisse",
+            "titre": "Ferme la caisse",
+            "module": "Caisse POS",
+            "chapitre": "La clôture de session",
+            "acte": "23 h · La clôture",
+            "heure": "23 h",
+            "phrase": "Jarvis, ferme la caisse.",
+            "outil": "close_pos_session",
+            "vegefruite": "ail",
+            "accroche": "Le dernier client est parti à vingt-trois heures.",
+            "punchline": "Le patron, lui, en a encore pour une heure.",
+            "resume": "La clôture se dit au lieu de se cliquer. Ce qui prenait la fin de soirée tient dans une phrase, et le total est celui de la journée.",
+            "reponse": "La session est close, avec son total et son heure. Le service est fini pour de bon, pas seulement pour les clients.",
+            "statut": "a_produire",
+            "dureeSecondes": null,
+            "videoUrl": null,
+            "tutoriel": null,
+            "tutorielModuleUrl": null,
+            "higgsfield": {
+              "videoSourceUrl": null,
+              "source": null,
+              "duree": "10 s",
+              "format": "vertical 9:16"
+            },
+            "masterRapidoUrl": null,
+            "posterUrl": null,
+            "troisMots": "FERME LA CAISSE",
+            "datePrevue": "2027-03-02",
+            "reseaux": {
+              "facebook": {
+                "statut": "a_venir",
+                "date": "2027-03-02",
+                "heure": "12:00",
+                "compte": "FoodEatUp",
+                "format": "Vidéo native 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              },
+              "instagram": {
+                "statut": "a_venir",
+                "date": "2027-03-02",
+                "heure": "18:30",
+                "compte": "foodeatup.cocuisinage",
+                "format": "Reel 9:16",
+                "lienCta": null
+              },
+              "tiktok": {
+                "statut": "a_venir",
+                "date": "2027-03-02",
+                "heure": "19:00",
+                "compte": "foodeatup",
+                "format": "Vidéo 9:16",
+                "lienCta": null
+              },
+              "linkedin": {
+                "statut": "a_venir",
+                "date": "2027-03-02",
+                "heure": "08:00",
+                "compte": "FoodEatUp",
+                "format": "Vidéo native 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              },
+              "youtube": {
+                "statut": "a_venir",
+                "date": "2027-03-02",
+                "heure": "10:00",
+                "compte": "@FoodEatUp",
+                "format": "Short 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              }
+            },
+            "storyUrl": null
+          },
+          {
+            "id": "EP237",
+            "numero": 237,
+            "saison": 8,
+            "slug": "ep237-ca-colle",
+            "titre": "Ça colle ?",
+            "module": "Caisse POS",
+            "chapitre": "Le rapprochement",
+            "acte": "23 h · La clôture",
+            "heure": "23 h",
+            "phrase": "Jarvis, ça colle ?",
+            "outil": "get_smilepay_reconciliation",
+            "vegefruite": "ail",
+            "accroche": "Il manque quelque chose. On ne sait pas quoi.",
+            "punchline": "On recompte. Trois fois. Debout.",
+            "resume": "Le rapprochement se fait tout seul, ligne à ligne. Un écart devient une ligne datée au lieu d'une soirée de recomptage.",
+            "reponse": "Le rapprochement entre ce qui a été encaissé et ce qui a été tapé. L'écart, s'il y en a un, a une ligne et une heure.",
+            "statut": "a_produire",
+            "dureeSecondes": null,
+            "videoUrl": null,
+            "tutoriel": null,
+            "tutorielModuleUrl": null,
+            "higgsfield": {
+              "videoSourceUrl": null,
+              "source": null,
+              "duree": "10 s",
+              "format": "vertical 9:16"
+            },
+            "masterRapidoUrl": null,
+            "posterUrl": null,
+            "troisMots": "ÇA COLLE",
+            "datePrevue": "2027-03-03",
+            "reseaux": {
+              "facebook": {
+                "statut": "a_venir",
+                "date": "2027-03-03",
+                "heure": "12:00",
+                "compte": "FoodEatUp",
+                "format": "Vidéo native 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              },
+              "instagram": {
+                "statut": "a_venir",
+                "date": "2027-03-03",
+                "heure": "18:30",
+                "compte": "foodeatup.cocuisinage",
+                "format": "Reel 9:16",
+                "lienCta": null
+              },
+              "tiktok": {
+                "statut": "a_venir",
+                "date": "2027-03-03",
+                "heure": "19:00",
+                "compte": "foodeatup",
+                "format": "Vidéo 9:16",
+                "lienCta": null
+              },
+              "linkedin": {
+                "statut": "a_venir",
+                "date": "2027-03-03",
+                "heure": "08:00",
+                "compte": "FoodEatUp",
+                "format": "Vidéo native 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              },
+              "youtube": {
+                "statut": "a_venir",
+                "date": "2027-03-03",
+                "heure": "10:00",
+                "compte": "@FoodEatUp",
+                "format": "Short 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              }
+            },
+            "storyUrl": null
+          },
+          {
+            "id": "EP238",
+            "numero": 238,
+            "saison": 8,
+            "slug": "ep238-la-facture-dictee",
+            "titre": "La facture dictée",
+            "module": "Comptabilité",
+            "chapitre": "Les dépenses",
+            "acte": "23 h · La clôture",
+            "heure": "23 h",
+            "phrase": "Jarvis, note la facture du poissonnier.",
+            "outil": "create_expense",
+            "vegefruite": "pomme-de-terre",
+            "accroche": "La pile de factures grandit toute seule.",
+            "punchline": "C'est bien la seule chose qui pousse ici sans qu'on l'arrose.",
+            "resume": "Une facture saisie le soir même est une facture qui ne se perd pas. La pile du bureau cesse d'être un travail de fin de trimestre.",
+            "reponse": "La dépense est enregistrée le soir même, avec son fournisseur et son montant. Elle ne finit pas dans la pile qu'on trie en avril.",
+            "statut": "a_produire",
+            "dureeSecondes": null,
+            "videoUrl": null,
+            "tutoriel": null,
+            "tutorielModuleUrl": "https://tutoriel.foodeatup.com/module/comptabilite",
+            "higgsfield": {
+              "videoSourceUrl": null,
+              "source": null,
+              "duree": "10 s",
+              "format": "vertical 9:16"
+            },
+            "masterRapidoUrl": null,
+            "posterUrl": null,
+            "troisMots": "LA FACTURE",
+            "datePrevue": "2027-03-04",
+            "reseaux": {
+              "facebook": {
+                "statut": "a_venir",
+                "date": "2027-03-04",
+                "heure": "12:00",
+                "compte": "FoodEatUp",
+                "format": "Vidéo native 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              },
+              "instagram": {
+                "statut": "a_venir",
+                "date": "2027-03-04",
+                "heure": "18:30",
+                "compte": "foodeatup.cocuisinage",
+                "format": "Reel 9:16",
+                "lienCta": null
+              },
+              "tiktok": {
+                "statut": "a_venir",
+                "date": "2027-03-04",
+                "heure": "19:00",
+                "compte": "foodeatup",
+                "format": "Vidéo 9:16",
+                "lienCta": null
+              },
+              "linkedin": {
+                "statut": "a_venir",
+                "date": "2027-03-04",
+                "heure": "08:00",
+                "compte": "FoodEatUp",
+                "format": "Vidéo native 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              },
+              "youtube": {
+                "statut": "a_venir",
+                "date": "2027-03-04",
+                "heure": "10:00",
+                "compte": "@FoodEatUp",
+                "format": "Short 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              }
+            },
+            "storyUrl": null
+          },
+          {
+            "id": "EP239",
+            "numero": 239,
+            "saison": 8,
+            "slug": "ep239-raconte-moi-ma-journee",
+            "titre": "Raconte-moi ma journée",
+            "module": "Comptabilité",
+            "chapitre": "Le bilan du jour",
+            "acte": "23 h · La clôture",
+            "heure": "23 h",
+            "phrase": "Jarvis, raconte-moi ma journée. Et prépare le post de demain.",
+            "outil": "finance_summary",
+            "vegefruite": "brocoli",
+            "accroche": "La journée est finie. Il reste à la raconter.",
+            "punchline": "À personne, d'habitude.",
+            "resume": "Le bilan de la journée sert deux fois : à savoir où on en est, et à écrire ce qu'on publiera demain. Rien n'est saisi deux fois.",
+            "reponse": "Le bilan du jour, puis le brouillon de demain écrit à partir de ce bilan. La journée qu'on vient de vivre devient le contenu du lendemain.",
+            "statut": "a_produire",
+            "dureeSecondes": null,
+            "videoUrl": null,
+            "tutoriel": null,
+            "tutorielModuleUrl": "https://tutoriel.foodeatup.com/module/comptabilite",
+            "higgsfield": {
+              "videoSourceUrl": null,
+              "source": null,
+              "duree": "10 s",
+              "format": "vertical 9:16"
+            },
+            "masterRapidoUrl": null,
+            "posterUrl": null,
+            "troisMots": "MA JOURNÉE",
+            "datePrevue": "2027-03-05",
+            "reseaux": {
+              "facebook": {
+                "statut": "a_venir",
+                "date": "2027-03-05",
+                "heure": "12:00",
+                "compte": "FoodEatUp",
+                "format": "Vidéo native 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              },
+              "instagram": {
+                "statut": "a_venir",
+                "date": "2027-03-05",
+                "heure": "18:30",
+                "compte": "foodeatup.cocuisinage",
+                "format": "Reel 9:16",
+                "lienCta": null
+              },
+              "tiktok": {
+                "statut": "a_venir",
+                "date": "2027-03-05",
+                "heure": "19:00",
+                "compte": "foodeatup",
+                "format": "Vidéo 9:16",
+                "lienCta": null
+              },
+              "linkedin": {
+                "statut": "a_venir",
+                "date": "2027-03-05",
+                "heure": "08:00",
+                "compte": "FoodEatUp",
+                "format": "Vidéo native 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              },
+              "youtube": {
+                "statut": "a_venir",
+                "date": "2027-03-05",
+                "heure": "10:00",
+                "compte": "@FoodEatUp",
+                "format": "Short 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              }
+            },
+            "storyUrl": null
+          },
+          {
+            "id": "EP240",
+            "numero": 240,
+            "saison": 8,
+            "slug": "ep240-bonne-nuit",
+            "titre": "Bonne nuit",
+            "module": "La maison",
+            "chapitre": "Le générique",
+            "acte": "23 h · La clôture",
+            "heure": "00 h",
+            "phrase": "Jarvis, bonne nuit.",
+            "outil": "—",
+            "vegefruite": "pomme-de-terre",
+            "accroche": "Deux cent quarante épisodes. Huit saisons.",
+            "punchline": "Et pour finir, une phrase de trois mots.",
+            "resume": "La série se termine sur ce qu'elle a passé huit saisons à démontrer : un restaurant qui tourne sans qu'on ait ouvert un logiciel, et un patron qui rentre chez lui à une heure normale.",
+            "reponse": "Rien. Il n'y a plus rien à demander : la commande est partie, la caisse est close, le post de demain attend son heure. Demain, la journée se passera pareil.",
+            "statut": "a_produire",
+            "dureeSecondes": null,
+            "videoUrl": null,
+            "tutoriel": null,
+            "tutorielModuleUrl": null,
+            "higgsfield": {
+              "videoSourceUrl": null,
+              "source": null,
+              "duree": "10 s",
+              "format": "vertical 9:16"
+            },
+            "masterRapidoUrl": null,
+            "posterUrl": null,
+            "troisMots": "BONNE NUIT",
+            "datePrevue": "2027-03-06",
+            "reseaux": {
+              "facebook": {
+                "statut": "a_venir",
+                "date": "2027-03-06",
+                "heure": "12:00",
+                "compte": "FoodEatUp",
+                "format": "Vidéo native 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              },
+              "instagram": {
+                "statut": "a_venir",
+                "date": "2027-03-06",
+                "heure": "18:30",
+                "compte": "foodeatup.cocuisinage",
+                "format": "Reel 9:16",
+                "lienCta": null
+              },
+              "tiktok": {
+                "statut": "a_venir",
+                "date": "2027-03-06",
+                "heure": "19:00",
+                "compte": "foodeatup",
+                "format": "Vidéo 9:16",
+                "lienCta": null
+              },
+              "linkedin": {
+                "statut": "a_venir",
+                "date": "2027-03-06",
+                "heure": "08:00",
+                "compte": "FoodEatUp",
+                "format": "Vidéo native 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              },
+              "youtube": {
+                "statut": "a_venir",
+                "date": "2027-03-06",
+                "heure": "10:00",
+                "compte": "@FoodEatUp",
+                "format": "Short 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              }
+            },
+            "storyUrl": null
           }
         ]
       }
@@ -13996,7 +18769,8 @@ export const series: Serie[] = [
                 "format": "Short 9:16",
                 "lienCta": "https://site.foodeatup.com/"
               }
-            }
+            },
+            "storyUrl": null
           },
           {
             "id": "EP302",
@@ -14065,7 +18839,8 @@ export const series: Serie[] = [
                 "format": "Short 9:16",
                 "lienCta": "https://site.foodeatup.com/"
               }
-            }
+            },
+            "storyUrl": null
           },
           {
             "id": "EP303",
@@ -14134,7 +18909,8 @@ export const series: Serie[] = [
                 "format": "Short 9:16",
                 "lienCta": "https://site.foodeatup.com/"
               }
-            }
+            },
+            "storyUrl": null
           },
           {
             "id": "EP304",
@@ -14203,7 +18979,8 @@ export const series: Serie[] = [
                 "format": "Short 9:16",
                 "lienCta": "https://site.foodeatup.com/"
               }
-            }
+            },
+            "storyUrl": null
           },
           {
             "id": "EP305",
@@ -14272,7 +19049,8 @@ export const series: Serie[] = [
                 "format": "Short 9:16",
                 "lienCta": "https://site.foodeatup.com/"
               }
-            }
+            },
+            "storyUrl": null
           },
           {
             "id": "EP306",
@@ -14341,7 +19119,8 @@ export const series: Serie[] = [
                 "format": "Short 9:16",
                 "lienCta": "https://site.foodeatup.com/"
               }
-            }
+            },
+            "storyUrl": null
           },
           {
             "id": "EP307",
@@ -14410,7 +19189,8 @@ export const series: Serie[] = [
                 "format": "Short 9:16",
                 "lienCta": "https://site.foodeatup.com/"
               }
-            }
+            },
+            "storyUrl": null
           },
           {
             "id": "EP308",
@@ -14479,7 +19259,8 @@ export const series: Serie[] = [
                 "format": "Short 9:16",
                 "lienCta": "https://site.foodeatup.com/"
               }
-            }
+            },
+            "storyUrl": null
           },
           {
             "id": "EP309",
@@ -14548,7 +19329,8 @@ export const series: Serie[] = [
                 "format": "Short 9:16",
                 "lienCta": "https://site.foodeatup.com/"
               }
-            }
+            },
+            "storyUrl": null
           },
           {
             "id": "EP310",
@@ -14617,7 +19399,8 @@ export const series: Serie[] = [
                 "format": "Short 9:16",
                 "lienCta": "https://site.foodeatup.com/"
               }
-            }
+            },
+            "storyUrl": null
           },
           {
             "id": "EP311",
@@ -14686,7 +19469,8 @@ export const series: Serie[] = [
                 "format": "Short 9:16",
                 "lienCta": "https://site.foodeatup.com/"
               }
-            }
+            },
+            "storyUrl": null
           },
           {
             "id": "EP312",
@@ -14755,7 +19539,8 @@ export const series: Serie[] = [
                 "format": "Short 9:16",
                 "lienCta": "https://site.foodeatup.com/"
               }
-            }
+            },
+            "storyUrl": null
           },
           {
             "id": "EP313",
@@ -14824,7 +19609,8 @@ export const series: Serie[] = [
                 "format": "Short 9:16",
                 "lienCta": "https://site.foodeatup.com/"
               }
-            }
+            },
+            "storyUrl": null
           },
           {
             "id": "EP314",
@@ -14893,7 +19679,8 @@ export const series: Serie[] = [
                 "format": "Short 9:16",
                 "lienCta": "https://site.foodeatup.com/"
               }
-            }
+            },
+            "storyUrl": null
           },
           {
             "id": "EP315",
@@ -14962,7 +19749,8 @@ export const series: Serie[] = [
                 "format": "Short 9:16",
                 "lienCta": "https://site.foodeatup.com/"
               }
-            }
+            },
+            "storyUrl": null
           }
         ]
       },
@@ -15038,7 +19826,8 @@ export const series: Serie[] = [
                 "format": "Short 9:16",
                 "lienCta": "https://site.foodeatup.com/"
               }
-            }
+            },
+            "storyUrl": null
           },
           {
             "id": "EP317",
@@ -15107,7 +19896,8 @@ export const series: Serie[] = [
                 "format": "Short 9:16",
                 "lienCta": "https://site.foodeatup.com/"
               }
-            }
+            },
+            "storyUrl": null
           },
           {
             "id": "EP318",
@@ -15176,7 +19966,8 @@ export const series: Serie[] = [
                 "format": "Short 9:16",
                 "lienCta": "https://site.foodeatup.com/"
               }
-            }
+            },
+            "storyUrl": null
           },
           {
             "id": "EP319",
@@ -15245,7 +20036,8 @@ export const series: Serie[] = [
                 "format": "Short 9:16",
                 "lienCta": "https://site.foodeatup.com/"
               }
-            }
+            },
+            "storyUrl": null
           },
           {
             "id": "EP320",
@@ -15314,7 +20106,8 @@ export const series: Serie[] = [
                 "format": "Short 9:16",
                 "lienCta": "https://site.foodeatup.com/"
               }
-            }
+            },
+            "storyUrl": null
           },
           {
             "id": "EP321",
@@ -15383,7 +20176,8 @@ export const series: Serie[] = [
                 "format": "Short 9:16",
                 "lienCta": "https://site.foodeatup.com/"
               }
-            }
+            },
+            "storyUrl": null
           },
           {
             "id": "EP322",
@@ -15452,7 +20246,8 @@ export const series: Serie[] = [
                 "format": "Short 9:16",
                 "lienCta": "https://site.foodeatup.com/"
               }
-            }
+            },
+            "storyUrl": null
           },
           {
             "id": "EP323",
@@ -15521,7 +20316,8 @@ export const series: Serie[] = [
                 "format": "Short 9:16",
                 "lienCta": "https://site.foodeatup.com/"
               }
-            }
+            },
+            "storyUrl": null
           },
           {
             "id": "EP324",
@@ -15590,7 +20386,8 @@ export const series: Serie[] = [
                 "format": "Short 9:16",
                 "lienCta": "https://site.foodeatup.com/"
               }
-            }
+            },
+            "storyUrl": null
           },
           {
             "id": "EP325",
@@ -15659,7 +20456,8 @@ export const series: Serie[] = [
                 "format": "Short 9:16",
                 "lienCta": "https://site.foodeatup.com/"
               }
-            }
+            },
+            "storyUrl": null
           },
           {
             "id": "EP326",
@@ -15728,7 +20526,8 @@ export const series: Serie[] = [
                 "format": "Short 9:16",
                 "lienCta": "https://site.foodeatup.com/"
               }
-            }
+            },
+            "storyUrl": null
           },
           {
             "id": "EP327",
@@ -15797,7 +20596,8 @@ export const series: Serie[] = [
                 "format": "Short 9:16",
                 "lienCta": "https://site.foodeatup.com/"
               }
-            }
+            },
+            "storyUrl": null
           },
           {
             "id": "EP328",
@@ -15866,7 +20666,8 @@ export const series: Serie[] = [
                 "format": "Short 9:16",
                 "lienCta": "https://site.foodeatup.com/"
               }
-            }
+            },
+            "storyUrl": null
           },
           {
             "id": "EP329",
@@ -15935,7 +20736,8 @@ export const series: Serie[] = [
                 "format": "Short 9:16",
                 "lienCta": "https://site.foodeatup.com/"
               }
-            }
+            },
+            "storyUrl": null
           },
           {
             "id": "EP330",
@@ -16004,7 +20806,8 @@ export const series: Serie[] = [
                 "format": "Short 9:16",
                 "lienCta": "https://site.foodeatup.com/"
               }
-            }
+            },
+            "storyUrl": null
           },
           {
             "id": "EP331",
@@ -16073,7 +20876,8 @@ export const series: Serie[] = [
                 "format": "Short 9:16",
                 "lienCta": "https://site.foodeatup.com/"
               }
-            }
+            },
+            "storyUrl": null
           }
         ]
       }
@@ -16159,7 +20963,8 @@ export const series: Serie[] = [
                 "format": "Short 9:16",
                 "lienCta": "https://site.foodeatup.com/"
               }
-            }
+            },
+            "storyUrl": null
           },
           {
             "id": "EP402",
@@ -16228,7 +21033,8 @@ export const series: Serie[] = [
                 "format": "Short 9:16",
                 "lienCta": "https://site.foodeatup.com/"
               }
-            }
+            },
+            "storyUrl": null
           },
           {
             "id": "EP403",
@@ -16297,7 +21103,8 @@ export const series: Serie[] = [
                 "format": "Short 9:16",
                 "lienCta": "https://site.foodeatup.com/"
               }
-            }
+            },
+            "storyUrl": null
           },
           {
             "id": "EP404",
@@ -16366,7 +21173,8 @@ export const series: Serie[] = [
                 "format": "Short 9:16",
                 "lienCta": "https://site.foodeatup.com/"
               }
-            }
+            },
+            "storyUrl": null
           },
           {
             "id": "EP405",
@@ -16435,7 +21243,8 @@ export const series: Serie[] = [
                 "format": "Short 9:16",
                 "lienCta": "https://site.foodeatup.com/"
               }
-            }
+            },
+            "storyUrl": null
           },
           {
             "id": "EP406",
@@ -16504,7 +21313,8 @@ export const series: Serie[] = [
                 "format": "Short 9:16",
                 "lienCta": "https://site.foodeatup.com/"
               }
-            }
+            },
+            "storyUrl": null
           },
           {
             "id": "EP407",
@@ -16573,7 +21383,8 @@ export const series: Serie[] = [
                 "format": "Short 9:16",
                 "lienCta": "https://site.foodeatup.com/"
               }
-            }
+            },
+            "storyUrl": null
           }
         ]
       },
@@ -16649,7 +21460,8 @@ export const series: Serie[] = [
                 "format": "Short 9:16",
                 "lienCta": "https://site.foodeatup.com/"
               }
-            }
+            },
+            "storyUrl": null
           },
           {
             "id": "EP409",
@@ -16718,7 +21530,8 @@ export const series: Serie[] = [
                 "format": "Short 9:16",
                 "lienCta": "https://site.foodeatup.com/"
               }
-            }
+            },
+            "storyUrl": null
           },
           {
             "id": "EP410",
@@ -16787,7 +21600,8 @@ export const series: Serie[] = [
                 "format": "Short 9:16",
                 "lienCta": "https://site.foodeatup.com/"
               }
-            }
+            },
+            "storyUrl": null
           },
           {
             "id": "EP411",
@@ -16856,7 +21670,8 @@ export const series: Serie[] = [
                 "format": "Short 9:16",
                 "lienCta": "https://site.foodeatup.com/"
               }
-            }
+            },
+            "storyUrl": null
           },
           {
             "id": "EP412",
@@ -16925,7 +21740,8 @@ export const series: Serie[] = [
                 "format": "Short 9:16",
                 "lienCta": "https://site.foodeatup.com/"
               }
-            }
+            },
+            "storyUrl": null
           },
           {
             "id": "EP413",
@@ -16994,7 +21810,8 @@ export const series: Serie[] = [
                 "format": "Short 9:16",
                 "lienCta": "https://site.foodeatup.com/"
               }
-            }
+            },
+            "storyUrl": null
           },
           {
             "id": "EP414",
@@ -17063,7 +21880,8 @@ export const series: Serie[] = [
                 "format": "Short 9:16",
                 "lienCta": "https://site.foodeatup.com/"
               }
-            }
+            },
+            "storyUrl": null
           },
           {
             "id": "EP415",
@@ -17132,7 +21950,8 @@ export const series: Serie[] = [
                 "format": "Short 9:16",
                 "lienCta": "https://site.foodeatup.com/"
               }
-            }
+            },
+            "storyUrl": null
           },
           {
             "id": "EP416",
@@ -17201,7 +22020,8 @@ export const series: Serie[] = [
                 "format": "Short 9:16",
                 "lienCta": "https://site.foodeatup.com/"
               }
-            }
+            },
+            "storyUrl": null
           },
           {
             "id": "EP417",
@@ -17270,7 +22090,8 @@ export const series: Serie[] = [
                 "format": "Short 9:16",
                 "lienCta": "https://site.foodeatup.com/"
               }
-            }
+            },
+            "storyUrl": null
           }
         ]
       },
@@ -17346,7 +22167,8 @@ export const series: Serie[] = [
                 "format": "Short 9:16",
                 "lienCta": "https://site.foodeatup.com/"
               }
-            }
+            },
+            "storyUrl": null
           },
           {
             "id": "EP419",
@@ -17415,7 +22237,8 @@ export const series: Serie[] = [
                 "format": "Short 9:16",
                 "lienCta": "https://site.foodeatup.com/"
               }
-            }
+            },
+            "storyUrl": null
           },
           {
             "id": "EP420",
@@ -17484,7 +22307,8 @@ export const series: Serie[] = [
                 "format": "Short 9:16",
                 "lienCta": "https://site.foodeatup.com/"
               }
-            }
+            },
+            "storyUrl": null
           },
           {
             "id": "EP421",
@@ -17553,7 +22377,8 @@ export const series: Serie[] = [
                 "format": "Short 9:16",
                 "lienCta": "https://site.foodeatup.com/"
               }
-            }
+            },
+            "storyUrl": null
           },
           {
             "id": "EP422",
@@ -17622,7 +22447,8 @@ export const series: Serie[] = [
                 "format": "Short 9:16",
                 "lienCta": "https://site.foodeatup.com/"
               }
-            }
+            },
+            "storyUrl": null
           },
           {
             "id": "EP423",
@@ -17691,7 +22517,8 @@ export const series: Serie[] = [
                 "format": "Short 9:16",
                 "lienCta": "https://site.foodeatup.com/"
               }
-            }
+            },
+            "storyUrl": null
           },
           {
             "id": "EP424",
@@ -17760,7 +22587,8 @@ export const series: Serie[] = [
                 "format": "Short 9:16",
                 "lienCta": "https://site.foodeatup.com/"
               }
-            }
+            },
+            "storyUrl": null
           },
           {
             "id": "EP425",
@@ -17829,7 +22657,8 @@ export const series: Serie[] = [
                 "format": "Short 9:16",
                 "lienCta": "https://site.foodeatup.com/"
               }
-            }
+            },
+            "storyUrl": null
           },
           {
             "id": "EP426",
@@ -17898,7 +22727,8 @@ export const series: Serie[] = [
                 "format": "Short 9:16",
                 "lienCta": "https://site.foodeatup.com/"
               }
-            }
+            },
+            "storyUrl": null
           },
           {
             "id": "EP427",
@@ -17967,7 +22797,8 @@ export const series: Serie[] = [
                 "format": "Short 9:16",
                 "lienCta": "https://site.foodeatup.com/"
               }
-            }
+            },
+            "storyUrl": null
           },
           {
             "id": "EP428",
@@ -18036,7 +22867,8 @@ export const series: Serie[] = [
                 "format": "Short 9:16",
                 "lienCta": "https://site.foodeatup.com/"
               }
-            }
+            },
+            "storyUrl": null
           },
           {
             "id": "EP429",
@@ -18105,7 +22937,8 @@ export const series: Serie[] = [
                 "format": "Short 9:16",
                 "lienCta": "https://site.foodeatup.com/"
               }
-            }
+            },
+            "storyUrl": null
           },
           {
             "id": "EP430",
@@ -18174,7 +23007,8 @@ export const series: Serie[] = [
                 "format": "Short 9:16",
                 "lienCta": "https://site.foodeatup.com/"
               }
-            }
+            },
+            "storyUrl": null
           },
           {
             "id": "EP431",
@@ -18243,7 +23077,8 @@ export const series: Serie[] = [
                 "format": "Short 9:16",
                 "lienCta": "https://site.foodeatup.com/"
               }
-            }
+            },
+            "storyUrl": null
           }
         ]
       }
