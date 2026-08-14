@@ -47,6 +47,12 @@ GABARITS = [
     ("visuel", "Visuel en cours", "4:5 · 1080 × 1350", (1080, 1350), 0.36),
     ("master", "Vidéo en cours", "9:16 · 1080 × 1920 · 37,5 s", (1080, 1920), 0.54),
     ("short", "Short en cours", "9:16 · 1080 × 1920 · 37,5 s", (1080, 1920), 0.72),
+    # Les vignettes d'épisode et de saison, dans les deux formats que le site
+    # utilise : 9:16 partout, 16:9 pour YouTube seul. Sans elles, une vignette
+    # absente affichait l'icône d'image cassée du navigateur — le seul
+    # symptôme du site qui ressemble vraiment à une panne.
+    ("vignette-916", "Vignette en cours", "9:16 · 1080 × 1920", (1080, 1920), 0.90),
+    ("vignette-169", "Vignette en cours", "16:9 · 1920 × 1080", (1920, 1080), 0.28),
 ]
 
 
