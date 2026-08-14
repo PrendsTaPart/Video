@@ -51,6 +51,18 @@ export type PublicationTexte = {{
   titre?: string;
 }};
 
+/** Une planche de carrousel LinkedIn. */
+export type PlancheCarrousel = {{
+  n: number;
+  /** Ce que la planche fait dans la démonstration : la scène, le coût… */
+  role: string;
+  /** Le texte de la bande haute — celui qui doit être DANS l'image. */
+  titre: string;
+  /** Le texte du bandeau bas, quand il y en a un. */
+  texte: string;
+  prompt: string;
+}};
+
 /** Une étape du kit « refaites-le chez vous » — saison 6. */
 export type EtapeKit = {{
   etape: number;
@@ -66,7 +78,17 @@ export type EtapeKit = {{
   prompt: string;
 }};
 
-export type ContenuEpisode = {{
+/** Les trois formats image et vidéo qui ne sont pas le master. */
+export type FormatsSociaux = {{
+  /** Story Instagram : le clip, le hook, la punchline. Rien d'autre. */
+  story?: {{ format: string; hook: string; punchline: string; url: string | null }} | null;
+  /** Carrousel LinkedIn : quatre planches, converties en PDF sur le site. */
+  carrousel?: {{ format: string; planches: PlancheCarrousel[] }} | null;
+  /** Visuel Facebook : une image qui se comprend seule. */
+  imageFacebook?: {{ format: string; prompt: string }} | null;
+}};
+
+export type ContenuEpisode = FormatsSociaux & {{
   publications: Record<Reseau, PublicationTexte>;
   promptVignette: string;
   higgsfieldPrompt: string | null;
@@ -108,6 +130,13 @@ def main():
                     # l'épisode — ils n'ont rien à faire dans le morceau commun.
                     "scriptHeygen": e.pop("scriptHeygen", None),
                     "kit": e.pop("kit", None),
+                    # Les trois formats sociaux. Six cents planches de
+                    # carrousel plus cent cinquante visuels Facebook : c'est
+                    # long, ça ne s'affiche que sur la page de l'épisode, donc
+                    # ça vit ici et pas dans le morceau commun.
+                    "story": e.pop("story", None),
+                    "carrousel": e.pop("carrousel", None),
+                    "imageFacebook": e.pop("imageFacebook", None),
                     "tutoriel": {k: t.pop(k, None) for k in TEXTE_TUTO} if t else None,
                 }
 
