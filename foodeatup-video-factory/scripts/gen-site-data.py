@@ -140,8 +140,27 @@ export const texteAColler = (p: PublicationTexte) =>
 '''
 
 
+# Les séries que le site publie.
+#
+# L'inventaire en porte trois. Les deux autres — « Une journée » et « L'IA dans
+# FoodEatUp » — n'ont aucun épisode monté : les pousser sur le site mettait en
+# ligne soixante-deux pages sans vidéo, sans vignette et sans punchline, et
+# faisait tomber quatre tests du site qui vérifient exactement ça.
+#
+# Elles restent dans l'inventaire, avec leurs textes et leurs prompts : le
+# travail n'est pas perdu, il n'est simplement pas publié. Le jour où elles
+# auront des vidéos, il suffira d'ajouter leur slug ici — et de donner un nom
+# de vignette qui porte la série, car `saison-1-youtube.jpg` désigne
+# aujourd'hui la saison 1 du Coup de Feu et rien d'autre.
+SERIES_PUBLIEES = ("le-coup-de-feu",)
+
+
 def main():
     d = json.load(open(os.path.join(SOCIAL, "data", "series.json")))
+    inedites = [s["slug"] for s in d["series"] if s["slug"] not in SERIES_PUBLIEES]
+    d["series"] = [s for s in d["series"] if s["slug"] in SERIES_PUBLIEES]
+    if inedites:
+        print(f"  non publiées : {', '.join(inedites)}")
     contenu = {}
     for s in d["series"]:
         for sa in s["saisons"]:
