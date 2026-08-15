@@ -240,12 +240,24 @@ def main(cibles):
            for e in sa["episodes"]}
     SORTIE.mkdir(parents=True, exist_ok=True)
 
+    # Les chapitres de UpEatFood ne passent pas par ici. Ils durent dix
+    # secondes comme les autres et ont bien un clip, donc rien ne les
+    # distinguait : la première passe leur a posé le hook, la punchline et le
+    # badge de la série comique par-dessus un plan de cinéma. Leur générique de
+    # fin est un autre montage — build-film-stories.py.
+    film = {i for i, e in eps.items()
+            if e.get("dureeSecondes") == 10.0 and ((e.get("story") or {}).get("motion"))}
+
     if not cibles:
         cibles = [k for k in sorted(eps)
-                  if (R / "assets" / "hooks" / f"{k}.mp4").exists()]
+                  if k not in film and (R / "assets" / "hooks" / f"{k}.mp4").exists()]
 
     faits = rates = sautes = 0
     for ep in cibles:
+        if ep in film:
+            print(f"  {ep}  chapitre du film — python3 scripts/build-film-stories.py {ep}")
+            sautes += 1
+            continue
         e = eps.get(ep)
         clip = R / "assets" / "hooks" / f"{ep}.mp4"
         dest = SORTIE / f"{ep}.mp4"

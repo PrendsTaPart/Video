@@ -157,14 +157,12 @@ def jour(n, eps, verbeux=True):
             print()
 
         if film:
-            print(f"     Chapitres de UpEatFood — {len(film)} :")
-            print("       Le plan de 10 s est le master, tel quel. Rien à assembler.")
-            print("       Il reste le générique de fin de la story : logo, « à suivre »,")
-            print("       et la punchline dite en plus. Sa consigne est sur la page de")
-            print("       l'épisode, et le gabarit dans templates/sting-fin.mp4.\n")
-            for e in film:
-                print(f"       {e['id']}  {e['titre']}")
-            print()
+            print(f"     Chapitres de UpEatFood — {len(film)} · une seule commande :")
+            print("       Le plan de 10 s EST le master. Ce qui se monte, c'est le")
+            print("       générique de fin de la story — le voile, la marque, la")
+            print("       punchline qui s'écrit, « à suivre ».")
+            print(f"       python3 scripts/build-film-stories.py "
+                  f"{' '.join(e['id'] for e in film)}\n")
     else:
         print("\n▸ 2. RIEN À MONTER AUJOURD'HUI")
         print("     Tout ce qui sort bientôt attend un asset. La liste est juste en dessous :")
