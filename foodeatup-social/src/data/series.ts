@@ -4706,13 +4706,13 @@ export const series: Serie[] = [
             "tutorielModuleUrl": "https://tutoriel.foodeatup.com/module/haccp",
             "tutorielManquant": "Ce chapitre n'a pas encore sa fiche dans l'Academy.",
             "higgsfield": {
-              "videoSourceUrl": null,
+              "videoSourceUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/hooks/EP057.mp4",
               "duree": "10 s",
               "format": "vertical 9:16",
               "source": null
             },
             "masterRapidoUrl": null,
-            "storyUrl": null
+            "storyUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP057.mp4"
           },
           {
             "id": "EP058",
@@ -4778,13 +4778,13 @@ export const series: Serie[] = [
             "tutorielModuleUrl": "https://tutoriel.foodeatup.com/module/haccp",
             "tutorielManquant": "Ce chapitre n'a pas encore sa fiche dans l'Academy.",
             "higgsfield": {
-              "videoSourceUrl": null,
+              "videoSourceUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/hooks/EP058.mp4",
               "duree": "10 s",
               "format": "vertical 9:16",
               "source": null
             },
             "masterRapidoUrl": null,
-            "storyUrl": null
+            "storyUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP058.mp4"
           },
           {
             "id": "EP059",
@@ -8805,13 +8805,13 @@ export const series: Serie[] = [
             },
             "tutorielModuleUrl": "https://tutoriel.foodeatup.com/module/stockvision-ai",
             "higgsfield": {
-              "videoSourceUrl": null,
+              "videoSourceUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/hooks/EP110.mp4",
               "duree": "10 s",
               "format": "vertical 9:16",
               "source": null
             },
             "masterRapidoUrl": null,
-            "storyUrl": null
+            "storyUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP110.mp4"
           },
           {
             "id": "EP111",
@@ -8883,13 +8883,13 @@ export const series: Serie[] = [
             },
             "tutorielModuleUrl": "https://tutoriel.foodeatup.com/module/stockvision-ai",
             "higgsfield": {
-              "videoSourceUrl": null,
+              "videoSourceUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/hooks/EP111.mp4",
               "duree": "10 s",
               "format": "vertical 9:16",
               "source": null
             },
             "masterRapidoUrl": null,
-            "storyUrl": null
+            "storyUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP111.mp4"
           },
           {
             "id": "EP112",
@@ -9671,13 +9671,13 @@ export const series: Serie[] = [
             },
             "tutorielModuleUrl": "https://tutoriel.foodeatup.com/module/service-commande",
             "higgsfield": {
-              "videoSourceUrl": null,
+              "videoSourceUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/hooks/EP121.mp4",
               "duree": "10 s",
               "format": "vertical 9:16",
               "source": null
             },
             "masterRapidoUrl": null,
-            "storyUrl": null
+            "storyUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP121.mp4"
           },
           {
             "id": "EP122",
@@ -9827,13 +9827,13 @@ export const series: Serie[] = [
             },
             "tutorielModuleUrl": "https://tutoriel.foodeatup.com/module/stockvision-ai",
             "higgsfield": {
-              "videoSourceUrl": null,
+              "videoSourceUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/hooks/EP123.mp4",
               "duree": "10 s",
               "format": "vertical 9:16",
               "source": null
             },
             "masterRapidoUrl": null,
-            "storyUrl": null
+            "storyUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP123.mp4"
           },
           {
             "id": "EP124",
@@ -10049,13 +10049,13 @@ export const series: Serie[] = [
             "tutorielModuleUrl": null,
             "tutorielManquant": "Le module Caisse POS n'existe pas encore dans l'Academy.",
             "higgsfield": {
-              "videoSourceUrl": null,
+              "videoSourceUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/hooks/EP126.mp4",
               "duree": "10 s",
               "format": "vertical 9:16",
               "source": null
             },
             "masterRapidoUrl": null,
-            "storyUrl": null
+            "storyUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP126.mp4"
           },
           {
             "id": "EP127",
@@ -10361,13 +10361,13 @@ export const series: Serie[] = [
             },
             "tutorielModuleUrl": "https://tutoriel.foodeatup.com/module/marketing-fidelite",
             "higgsfield": {
-              "videoSourceUrl": null,
+              "videoSourceUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/hooks/EP130.mp4",
               "duree": "10 s",
               "format": "vertical 9:16",
               "source": null
             },
             "masterRapidoUrl": null,
-            "storyUrl": null
+            "storyUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP130.mp4"
           },
           {
             "id": "EP131",
@@ -10439,13 +10439,13 @@ export const series: Serie[] = [
             },
             "tutorielModuleUrl": "https://tutoriel.foodeatup.com/module/equipe-planning",
             "higgsfield": {
-              "videoSourceUrl": null,
+              "videoSourceUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/hooks/EP131.mp4",
               "duree": "10 s",
               "format": "vertical 9:16",
               "source": null
             },
             "masterRapidoUrl": null,
-            "storyUrl": null
+            "storyUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP131.mp4"
           },
           {
             "id": "EP132",
@@ -10518,13 +10518,13 @@ export const series: Serie[] = [
             },
             "tutorielModuleUrl": "https://tutoriel.foodeatup.com/module/site-web-vitrine",
             "higgsfield": {
-              "videoSourceUrl": null,
+              "videoSourceUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/hooks/EP132.mp4",
               "duree": "10 s",
               "format": "vertical 9:16",
               "source": null
             },
             "masterRapidoUrl": null,
-            "storyUrl": null
+            "storyUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP132.mp4"
           },
           {
             "id": "EP133",
@@ -10590,13 +10590,13 @@ export const series: Serie[] = [
             "tutorielModuleUrl": null,
             "tutorielManquant": "Le module Caisse POS n'existe pas encore dans l'Academy.",
             "higgsfield": {
-              "videoSourceUrl": null,
+              "videoSourceUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/hooks/EP133.mp4",
               "duree": "10 s",
               "format": "vertical 9:16",
               "source": null
             },
             "masterRapidoUrl": null,
-            "storyUrl": null
+            "storyUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP133.mp4"
           },
           {
             "id": "EP134",
@@ -10668,13 +10668,13 @@ export const series: Serie[] = [
             },
             "tutorielModuleUrl": "https://tutoriel.foodeatup.com/module/haccp",
             "higgsfield": {
-              "videoSourceUrl": null,
+              "videoSourceUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/hooks/EP134.mp4",
               "duree": "10 s",
               "format": "vertical 9:16",
               "source": null
             },
             "masterRapidoUrl": null,
-            "storyUrl": null
+            "storyUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP134.mp4"
           },
           {
             "id": "EP135",
@@ -10746,13 +10746,13 @@ export const series: Serie[] = [
             },
             "tutorielModuleUrl": "https://tutoriel.foodeatup.com/module/reservation-salle",
             "higgsfield": {
-              "videoSourceUrl": null,
+              "videoSourceUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/hooks/EP135.mp4",
               "duree": "10 s",
               "format": "vertical 9:16",
               "source": null
             },
             "masterRapidoUrl": null,
-            "storyUrl": null
+            "storyUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP135.mp4"
           },
           {
             "id": "EP136",
@@ -10824,13 +10824,13 @@ export const series: Serie[] = [
             },
             "tutorielModuleUrl": "https://tutoriel.foodeatup.com/module/service-commande",
             "higgsfield": {
-              "videoSourceUrl": null,
+              "videoSourceUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/hooks/EP136.mp4",
               "duree": "10 s",
               "format": "vertical 9:16",
               "source": null
             },
             "masterRapidoUrl": null,
-            "storyUrl": null
+            "storyUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP136.mp4"
           },
           {
             "id": "EP137",
@@ -10896,13 +10896,13 @@ export const series: Serie[] = [
             "tutorielModuleUrl": null,
             "tutorielManquant": "Le module Caisse POS n'existe pas encore dans l'Academy.",
             "higgsfield": {
-              "videoSourceUrl": null,
+              "videoSourceUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/hooks/EP137.mp4",
               "duree": "10 s",
               "format": "vertical 9:16",
               "source": null
             },
             "masterRapidoUrl": null,
-            "storyUrl": null
+            "storyUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP137.mp4"
           },
           {
             "id": "EP138",
@@ -10975,13 +10975,13 @@ export const series: Serie[] = [
             },
             "tutorielModuleUrl": "https://tutoriel.foodeatup.com/module/kds-cuisine",
             "higgsfield": {
-              "videoSourceUrl": null,
+              "videoSourceUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/hooks/EP138.mp4",
               "duree": "10 s",
               "format": "vertical 9:16",
               "source": null
             },
             "masterRapidoUrl": null,
-            "storyUrl": null
+            "storyUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP138.mp4"
           },
           {
             "id": "EP139",
@@ -11053,13 +11053,13 @@ export const series: Serie[] = [
             },
             "tutorielModuleUrl": "https://tutoriel.foodeatup.com/module/kds-cuisine",
             "higgsfield": {
-              "videoSourceUrl": null,
+              "videoSourceUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/hooks/EP139.mp4",
               "duree": "10 s",
               "format": "vertical 9:16",
               "source": null
             },
             "masterRapidoUrl": null,
-            "storyUrl": null
+            "storyUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP139.mp4"
           },
           {
             "id": "EP140",
@@ -11131,13 +11131,13 @@ export const series: Serie[] = [
             },
             "tutorielModuleUrl": "https://tutoriel.foodeatup.com/module/stockvision-ai",
             "higgsfield": {
-              "videoSourceUrl": null,
+              "videoSourceUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/hooks/EP140.mp4",
               "duree": "10 s",
               "format": "vertical 9:16",
               "source": null
             },
             "masterRapidoUrl": null,
-            "storyUrl": null
+            "storyUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP140.mp4"
           },
           {
             "id": "EP141",
@@ -11209,13 +11209,13 @@ export const series: Serie[] = [
             },
             "tutorielModuleUrl": "https://tutoriel.foodeatup.com/module/predibot",
             "higgsfield": {
-              "videoSourceUrl": null,
+              "videoSourceUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/hooks/EP141.mp4",
               "duree": "10 s",
               "format": "vertical 9:16",
               "source": null
             },
             "masterRapidoUrl": null,
-            "storyUrl": null
+            "storyUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP141.mp4"
           },
           {
             "id": "EP142",
@@ -11287,13 +11287,13 @@ export const series: Serie[] = [
             },
             "tutorielModuleUrl": "https://tutoriel.foodeatup.com/module/equipe-planning",
             "higgsfield": {
-              "videoSourceUrl": null,
+              "videoSourceUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/hooks/EP142.mp4",
               "duree": "10 s",
               "format": "vertical 9:16",
               "source": null
             },
             "masterRapidoUrl": null,
-            "storyUrl": null
+            "storyUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP142.mp4"
           },
           {
             "id": "EP143",
@@ -11443,13 +11443,13 @@ export const series: Serie[] = [
             },
             "tutorielModuleUrl": "https://tutoriel.foodeatup.com/module/marketing-fidelite",
             "higgsfield": {
-              "videoSourceUrl": null,
+              "videoSourceUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/hooks/EP144.mp4",
               "duree": "10 s",
               "format": "vertical 9:16",
               "source": null
             },
             "masterRapidoUrl": null,
-            "storyUrl": null
+            "storyUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP144.mp4"
           },
           {
             "id": "EP145",
@@ -11521,13 +11521,13 @@ export const series: Serie[] = [
             },
             "tutorielModuleUrl": "https://tutoriel.foodeatup.com/module/predibot",
             "higgsfield": {
-              "videoSourceUrl": null,
+              "videoSourceUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/hooks/EP145.mp4",
               "duree": "10 s",
               "format": "vertical 9:16",
               "source": null
             },
             "masterRapidoUrl": null,
-            "storyUrl": null
+            "storyUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP145.mp4"
           },
           {
             "id": "EP146",
@@ -11756,13 +11756,13 @@ export const series: Serie[] = [
             },
             "tutorielModuleUrl": "https://tutoriel.foodeatup.com/module/hubrise-livraisons",
             "higgsfield": {
-              "videoSourceUrl": null,
+              "videoSourceUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/hooks/EP148.mp4",
               "duree": "10 s",
               "format": "vertical 9:16",
               "source": null
             },
             "masterRapidoUrl": null,
-            "storyUrl": null
+            "storyUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP148.mp4"
           },
           {
             "id": "EP149",
@@ -11834,13 +11834,13 @@ export const series: Serie[] = [
             },
             "tutorielModuleUrl": "https://tutoriel.foodeatup.com/module/marketing-fidelite",
             "higgsfield": {
-              "videoSourceUrl": null,
+              "videoSourceUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/hooks/EP149.mp4",
               "duree": "10 s",
               "format": "vertical 9:16",
               "source": null
             },
             "masterRapidoUrl": null,
-            "storyUrl": null
+            "storyUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP149.mp4"
           },
           {
             "id": "EP150",
@@ -11912,13 +11912,13 @@ export const series: Serie[] = [
             },
             "tutorielModuleUrl": "https://tutoriel.foodeatup.com/module/predibot",
             "higgsfield": {
-              "videoSourceUrl": null,
+              "videoSourceUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/hooks/EP150.mp4",
               "duree": "10 s",
               "format": "vertical 9:16",
               "source": null
             },
             "masterRapidoUrl": null,
-            "storyUrl": null
+            "storyUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP150.mp4"
           }
         ]
       },
@@ -11948,7 +11948,7 @@ export const series: Serie[] = [
             "tutoriel": null,
             "tutorielModuleUrl": null,
             "higgsfield": {
-              "videoSourceUrl": null,
+              "videoSourceUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/hooks/EP151.mp4",
               "source": null,
               "duree": "10 s",
               "format": "vertical 9:16"
@@ -11999,7 +11999,7 @@ export const series: Serie[] = [
                 "lienCta": "https://site.foodeatup.com/"
               }
             },
-            "storyUrl": null
+            "storyUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP151.mp4"
           },
           {
             "id": "EP152",
@@ -12022,7 +12022,7 @@ export const series: Serie[] = [
             "tutoriel": null,
             "tutorielModuleUrl": null,
             "higgsfield": {
-              "videoSourceUrl": null,
+              "videoSourceUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/hooks/EP152.mp4",
               "source": null,
               "duree": "10 s",
               "format": "vertical 9:16"
@@ -12073,7 +12073,7 @@ export const series: Serie[] = [
                 "lienCta": "https://site.foodeatup.com/"
               }
             },
-            "storyUrl": null
+            "storyUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP152.mp4"
           },
           {
             "id": "EP153",
@@ -12318,7 +12318,7 @@ export const series: Serie[] = [
             "tutoriel": null,
             "tutorielModuleUrl": null,
             "higgsfield": {
-              "videoSourceUrl": null,
+              "videoSourceUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/hooks/EP156.mp4",
               "source": null,
               "duree": "10 s",
               "format": "vertical 9:16"
@@ -12369,7 +12369,7 @@ export const series: Serie[] = [
                 "lienCta": "https://site.foodeatup.com/"
               }
             },
-            "storyUrl": null
+            "storyUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP156.mp4"
           },
           {
             "id": "EP157",
@@ -12466,7 +12466,7 @@ export const series: Serie[] = [
             "tutoriel": null,
             "tutorielModuleUrl": null,
             "higgsfield": {
-              "videoSourceUrl": null,
+              "videoSourceUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/hooks/EP158.mp4",
               "source": null,
               "duree": "10 s",
               "format": "vertical 9:16"
@@ -12517,7 +12517,7 @@ export const series: Serie[] = [
                 "lienCta": "https://site.foodeatup.com/"
               }
             },
-            "storyUrl": null
+            "storyUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP158.mp4"
           },
           {
             "id": "EP159",
@@ -12540,7 +12540,7 @@ export const series: Serie[] = [
             "tutoriel": null,
             "tutorielModuleUrl": null,
             "higgsfield": {
-              "videoSourceUrl": null,
+              "videoSourceUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/hooks/EP159.mp4",
               "source": null,
               "duree": "10 s",
               "format": "vertical 9:16"
@@ -12591,7 +12591,7 @@ export const series: Serie[] = [
                 "lienCta": "https://site.foodeatup.com/"
               }
             },
-            "storyUrl": null
+            "storyUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP159.mp4"
           },
           {
             "id": "EP160",
@@ -13132,7 +13132,7 @@ export const series: Serie[] = [
             "tutoriel": null,
             "tutorielModuleUrl": null,
             "higgsfield": {
-              "videoSourceUrl": null,
+              "videoSourceUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/hooks/EP167.mp4",
               "source": null,
               "duree": "10 s",
               "format": "vertical 9:16"
@@ -13183,7 +13183,7 @@ export const series: Serie[] = [
                 "lienCta": "https://site.foodeatup.com/"
               }
             },
-            "storyUrl": null
+            "storyUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP167.mp4"
           },
           {
             "id": "EP168",
@@ -13650,7 +13650,7 @@ export const series: Serie[] = [
             "tutoriel": null,
             "tutorielModuleUrl": null,
             "higgsfield": {
-              "videoSourceUrl": null,
+              "videoSourceUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/hooks/EP174.mp4",
               "source": null,
               "duree": "10 s",
               "format": "vertical 9:16"
@@ -13701,7 +13701,7 @@ export const series: Serie[] = [
                 "lienCta": "https://site.foodeatup.com/"
               }
             },
-            "storyUrl": null
+            "storyUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP174.mp4"
           },
           {
             "id": "EP175",
@@ -14020,7 +14020,7 @@ export const series: Serie[] = [
             "tutoriel": null,
             "tutorielModuleUrl": null,
             "higgsfield": {
-              "videoSourceUrl": null,
+              "videoSourceUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/hooks/EP179.mp4",
               "source": null,
               "duree": "10 s",
               "format": "vertical 9:16"
@@ -14071,7 +14071,7 @@ export const series: Serie[] = [
                 "lienCta": "https://site.foodeatup.com/"
               }
             },
-            "storyUrl": null
+            "storyUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP179.mp4"
           },
           {
             "id": "EP180",
@@ -14094,7 +14094,7 @@ export const series: Serie[] = [
             "tutoriel": null,
             "tutorielModuleUrl": null,
             "higgsfield": {
-              "videoSourceUrl": null,
+              "videoSourceUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/hooks/EP180.mp4",
               "source": null,
               "duree": "10 s",
               "format": "vertical 9:16"
@@ -14145,7 +14145,7 @@ export const series: Serie[] = [
                 "lienCta": "https://site.foodeatup.com/"
               }
             },
-            "storyUrl": null
+            "storyUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP180.mp4"
           }
         ]
       },
@@ -14176,7 +14176,7 @@ export const series: Serie[] = [
             "tutoriel": null,
             "tutorielModuleUrl": "https://tutoriel.foodeatup.com/module/caroline-ia",
             "higgsfield": {
-              "videoSourceUrl": null,
+              "videoSourceUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/hooks/EP181.mp4",
               "source": null,
               "duree": "10 s",
               "format": "vertical 9:16"
@@ -14227,7 +14227,7 @@ export const series: Serie[] = [
                 "lienCta": "https://site.foodeatup.com/"
               }
             },
-            "storyUrl": null
+            "storyUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP181.mp4"
           },
           {
             "id": "EP182",
@@ -16434,7 +16434,7 @@ export const series: Serie[] = [
             "tutoriel": null,
             "tutorielModuleUrl": "https://tutoriel.foodeatup.com/module/predibot",
             "higgsfield": {
-              "videoSourceUrl": null,
+              "videoSourceUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/hooks/EP211.mp4",
               "source": null,
               "duree": "10 s",
               "format": "vertical 9:16"
@@ -16485,7 +16485,7 @@ export const series: Serie[] = [
                 "lienCta": "https://site.foodeatup.com/"
               }
             },
-            "storyUrl": null
+            "storyUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP211.mp4"
           },
           {
             "id": "EP212",

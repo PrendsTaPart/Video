@@ -43,7 +43,7 @@ public/carrousels/EP001-4.jpg
 public/carrousels/EP150-4.jpg
 ```
 
-Le nom du fichier est un contrat : `src/components/FormatsSociaux.tsx` va
+Le nom du fichier est un contrat : `src/components/PieceReseau.tsx` va
 chercher `/carrousels/{id}-{n}.jpg` et affiche un emplacement vide tant que le
 fichier n'existe pas. Ne renomme rien, n'ajoute pas de suffixe de taille.
 

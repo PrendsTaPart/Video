@@ -25,7 +25,7 @@ celle qu'on rate d'habitude.
 | Planches de carrousel LinkedIn | 600 — 4 par épisode | `public/carrousels/EP001-1.jpg` … `EP150-4.jpg` |
 | Visuels Facebook | 150 — 1 par épisode | `public/facebook/EP001.jpg` … `EP150.jpg` |
 
-Le nom de fichier est un contrat : `src/components/FormatsSociaux.tsx` va
+Le nom de fichier est un contrat : `src/components/PieceReseau.tsx` va
 chercher exactement ces chemins et affiche un emplacement vide tant que le
 fichier n'existe pas. Ne renomme rien, n'ajoute pas de suffixe de taille, ne
 crée pas de sous-dossier.
@@ -146,7 +146,7 @@ duplique pas.**
 ```
 src/components/ApercuReseau.tsx     819 lignes — les 5 maquettes de réseau
 src/components/PublicationBloc.tsx  les onglets + le bouton de copie
-src/components/FormatsSociaux.tsx   les 3 formats sur la page d'épisode
+src/components/CeQuilFautPublier.tsx la section « Ce qu'il faut publier »
 ```
 
 `ApercuReseau` rend un post dans l'habillage de son réseau : la barre

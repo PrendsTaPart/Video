@@ -121,7 +121,7 @@ compose les bandes en HTML/canvas avant d'enregistrer le JPEG.
 - **Ne régénère pas** `src/data/series.ts` ni `src/data/contenu.ts`. Ils sont
   produits par l'usine à vidéos et portent maintenant 302 épisodes.
 - **Ne réécris pas** `ApercuReseau.tsx`, `PublicationBloc.tsx`,
-  `FormatsSociaux.tsx` ni `BlocBoucle.tsx`. Ils gèrent déjà les trois séries.
+  `CeQuilFautPublier.tsx` ni `BlocBoucle.tsx`. Ils gèrent déjà les trois séries.
 - **Ne relance pas un tour par épisode.** Un tour traite les 372 images.
 
 ## Vérification avant de me rendre la main

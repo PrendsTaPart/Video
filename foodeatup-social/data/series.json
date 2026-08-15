@@ -12646,7 +12646,7 @@
               "tutorielManquant": "Ce chapitre n'a pas encore sa fiche dans l'Academy.",
               "higgsfield": {
                 "prompt": "Vertical 9:16, 10 seconds, 1080p, 24 fps. NO text overlay, NO subtitles, NO watermark, NO logo, NO captions burned into the image. Photorealistic, close-up at a bar counter at night.\n\nA manager counts coins into stacks on a bar counter, tongue between teeth, deeply focused.\n\n0-5s: He reaches for the last stack and knocks the whole arrangement over. French, neutral accent, low and unhurried, off-screen narrator, over the shot: {La clôture de caisse.} End state at 5s: the situation is fully readable in frame and nothing has gone wrong yet.\n5-8s: At 5 seconds, coins spread across the counter and cascade off the edge in slow motion, rolling in every direction across the floor. End state at 8s: the change has fully landed and is unmistakable in frame.\n8-10s: One coin rolls a long way alone, wobbles, and settles flat. The camera stops moving and holds. French, neutral accent, low and unhurried, off-screen narrator, over the last frame: {Un Z propre, en une minute.} End state at 10s: the frame is frozen on that image, camera still, no new element enters.\n\nSound design: <quiet closed bar> <coins clinking into stacks> <a sudden metallic cascade> <coins rolling and spinning on tiles> <a final wobble and flat clack>. Two spoken lines only, exactly where they are timed above. No music.",
-                "videoSourceUrl": null,
+                "videoSourceUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/hooks/EP057.mp4",
                 "duree": "10 s",
                 "format": "vertical 9:16",
                 "source": null
@@ -12693,7 +12693,7 @@
                 "format": "9:16 · 1080 × 1920 · 10 s",
                 "hook": "La clôture de caisse",
                 "punchline": "Un Z propre, en une minute",
-                "url": null
+                "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP057.mp4"
               }
             },
             {
@@ -12856,7 +12856,7 @@
               "tutorielManquant": "Ce chapitre n'a pas encore sa fiche dans l'Academy.",
               "higgsfield": {
                 "prompt": "Vertical 9:16, 10 seconds, 1080p, 24 fps. NO text overlay, NO subtitles, NO watermark, NO logo, NO captions burned into the image. Photorealistic, dim restaurant.\n\nA waiter carries a birthday cake crowned with far too many sparkling candles through a darkened dining room, guests turning to look.\n\n0-5s: The shot opens on that and stays with it, the camera moving slowly; nothing else happens yet. French, neutral accent, low and unhurried, off-screen narrator, over the shot: {L'anniversaire de la table 12.} End state at 5s: the situation is fully readable in frame and nothing has gone wrong yet.\n5-8s: At 5 seconds a ceiling smoke detector begins flashing directly above him. End state at 8s: the change has fully landed and is unmistakable in frame.\n8-10s: The sprinkler has not gone off, but every guest is looking up at the ceiling instead of the cake, and the waiter closes his eyes. The camera stops moving and holds. French, neutral accent, low and unhurried, off-screen narrator, over the last frame: {Anticiper, c'est aussi ça, le service.} End state at 10s: the frame is frozen on that image, camera still, no new element enters.\n\nSound design: <murmured happy-birthday singing> <crackling sparklers> <a shrill smoke alarm cutting through everything> <chairs scraping> <the alarm alone>. Two spoken lines only, exactly where they are timed above. No music.",
-                "videoSourceUrl": null,
+                "videoSourceUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/hooks/EP058.mp4",
                 "duree": "10 s",
                 "format": "vertical 9:16",
                 "source": null
@@ -12903,7 +12903,7 @@
                 "format": "9:16 · 1080 × 1920 · 10 s",
                 "hook": "L'anniversaire de la table 12",
                 "punchline": "Anticiper, c'est aussi ça, le service",
-                "url": null
+                "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP058.mp4"
               }
             },
             {
@@ -24340,7 +24340,7 @@
               "tutorielModuleUrl": "https://tutoriel.foodeatup.com/module/stockvision-ai",
               "higgsfield": {
                 "prompt": "Vertical 9:16, 10 seconds, 1080p, 24 fps. NO text overlay, NO subtitles, NO watermark, NO logo, NO captions burned into the image. Photorealistic, top-down then eye-level, bright modern café.\n\nA waiter places a plate in front of a guest: everything on it is vivid green — green latte, green bread, green sauce, a green steak, a green boiled egg.\n\n0-5s: The guest looks at it, looks up at the waiter, looks back down. French, neutral accent, low and unhurried, off-screen narrator, over the shot: {Tu suis toutes les tendances.} End state at 5s: the situation is fully readable in frame and nothing has gone wrong yet.\n5-8s: At 5 seconds he lifts a forkful, sniffs it, and eats it anyway. End state at 8s: the change has fully landed and is unmistakable in frame.\n8-10s: He gives a small, genuinely surprised nod of approval, and the waiter immediately places a second identical green plate beside the first. The camera stops moving and holds. French, neutral accent, low and unhurried, off-screen narrator, over the last frame: {Regarde surtout lesquelles se vendent.} End state at 10s: the frame is frozen on that image, camera still, no new element enters.\n\nSound design: <café ambience> <an espresso machine> <ceramic on wood> <a fork clink> <a thoughtful chewing pause> <a small \"hm !\"> <another plate landing>. Two spoken lines only, exactly where they are timed above. No music.",
-                "videoSourceUrl": null,
+                "videoSourceUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/hooks/EP110.mp4",
                 "duree": "10 s",
                 "format": "vertical 9:16",
                 "source": null
@@ -24387,7 +24387,7 @@
                 "format": "9:16 · 1080 × 1920 · 10 s",
                 "hook": "Tu suis toutes les tendances",
                 "punchline": "Regarde surtout lesquelles se vendent",
-                "url": null
+                "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP110.mp4"
               }
             },
             {
@@ -24568,7 +24568,7 @@
               "tutorielModuleUrl": "https://tutoriel.foodeatup.com/module/stockvision-ai",
               "higgsfield": {
                 "prompt": "Vertical 9:16, 10 seconds, 1080p, 24 fps. NO text overlay, NO subtitles, NO watermark, NO logo, NO captions burned into the image. Photorealistic, photorealistic macro, clean modern kitchen laboratory, cool light.\n\nA food 3D printer extrudes a neat layer of purée onto a plate with clinical precision, watched by a chef with folded arms.\n\n0-5s: The shot opens on that and stays with it, the camera moving slowly; nothing else happens yet. French, neutral accent, low and unhurried, off-screen narrator, over the shot: {La cuisine du futur.} End state at 5s: the situation is fully readable in frame and nothing has gone wrong yet.\n5-8s: At 5 seconds the nozzle begins moving erratically, extruding an ever-growing chaotic spaghetti tangle that rises off the plate and spills onto the counter, still perfectly smooth and glossy. End state at 8s: the change has fully landed and is unmistakable in frame.\n8-10s: The chef reaches out and, with total calm, presses a single button; the machine stops, leaving a large edible sculpture of nothing at all. The camera stops moving and holds. French, neutral accent, low and unhurried, off-screen narrator, over the last frame: {Le futur utile, c'est celui qui te fait gagner du temps.} End state at 10s: the frame is frozen on that image, camera still, no new element enters.\n\nSound design: <quiet lab hum> <a precise servo whirr> <a soft wet extrusion sound> <the servo tempo becoming erratic> <a rising mechanical whine> <a button click> <silence>. Two spoken lines only, exactly where they are timed above. No music.",
-                "videoSourceUrl": null,
+                "videoSourceUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/hooks/EP111.mp4",
                 "duree": "10 s",
                 "format": "vertical 9:16",
                 "source": null
@@ -24615,7 +24615,7 @@
                 "format": "9:16 · 1080 × 1920 · 10 s",
                 "hook": "La cuisine du futur",
                 "punchline": "Le futur utile, c'est celui qui te fait gagner du temps",
-                "url": null
+                "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP111.mp4"
               }
             },
             {
@@ -26816,7 +26816,7 @@
               "tutorielModuleUrl": "https://tutoriel.foodeatup.com/module/service-commande",
               "higgsfield": {
                 "prompt": "Vertical 9:16, 10 seconds, 1080p, 24 fps. NO text overlay, NO subtitles, NO watermark, NO logo, NO captions burned into the image. Photorealistic, cinematic handheld camera, warm restaurant lighting.\n\nA guest sits at a table talking continuously, one finger raised, listing endless modifications with total calm.\n\n0-5s: Opposite him a waiter writes in a small notepad; he fills a page, flips it, fills another, flips again, then pulls a second notepad from his apron, then a third. French, neutral accent, low and unhurried, off-screen narrator, over the shot: {Alors, sans oignon, mais…} End state at 5s: the situation is fully readable in frame and nothing has gone wrong yet.\n5-8s: At 5 seconds the guest pauses, holds up his index finger again and clearly starts a new sentence. End state at 8s: the change has fully landed and is unmistakable in frame.\n8-10s: The waiter stops writing, looks straight into the camera with three open notepads fanned in his hand, expressionless. The camera stops moving and holds. French, neutral accent, low and unhurried, off-screen narrator, over the last frame: {Une commande complexe, ça se saisit. Pas ça se subit.} End state at 10s: the frame is frozen on that image, camera still, no new element enters.\n\nSound design: <restaurant ambience> <a calm continuous French voice listing things without pause> <rapid pen scratching> <pages flipping faster and faster> <an apron rustle> <only the voice continuing>. Two spoken lines only, exactly where they are timed above. No music.",
-                "videoSourceUrl": null,
+                "videoSourceUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/hooks/EP121.mp4",
                 "duree": "10 s",
                 "format": "vertical 9:16",
                 "source": null
@@ -26863,7 +26863,7 @@
                 "format": "9:16 · 1080 × 1920 · 10 s",
                 "hook": "Alors, sans oignon, mais",
                 "punchline": "Une commande complexe, ça se saisit. Pas ça se subit",
-                "url": null
+                "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP121.mp4"
               }
             },
             {
@@ -27263,7 +27263,7 @@
               "tutorielModuleUrl": "https://tutoriel.foodeatup.com/module/stockvision-ai",
               "higgsfield": {
                 "prompt": "Vertical 9:16, 10 seconds, 1080p, 24 fps. NO text overlay, NO subtitles, NO watermark, NO logo, NO captions burned into the image. Photorealistic, medium shot at a bistro table.\n\nA guest finishes an enormous rare steak, scraping the plate clean, visibly delighted.\n\n0-5s: The waiter arrives to clear it and offers the dessert menu. French, neutral accent, low and unhurried, off-screen narrator, over the shot: {Il annonce ça au dessert.} End state at 5s: the situation is fully readable in frame and nothing has gone wrong yet.\n5-8s: At 5 seconds the guest raises a polite hand and points to something on the menu while gesturing \"no\" over his own empty steak plate, explaining seriously that he is vegetarian. End state at 8s: the change has fully landed and is unmistakable in frame.\n8-10s: The waiter looks down at the bare steak bone on the plate, then back at the guest, then at the camera. The camera stops moving and holds. French, neutral accent, low and unhurried, off-screen narrator, over the last frame: {Les régimes et les allergènes, ça se note à la réservation.} End state at 10s: the frame is frozen on that image, camera still, no new element enters.\n\nSound design: <bistro ambience> <cutlery on porcelain> <a satisfied exhale> <a plate being lifted> <a calm explanatory French voice> <a single fork clink and silence>. Two spoken lines only, exactly where they are timed above. No music.",
-                "videoSourceUrl": null,
+                "videoSourceUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/hooks/EP123.mp4",
                 "duree": "10 s",
                 "format": "vertical 9:16",
                 "source": null
@@ -27310,7 +27310,7 @@
                 "format": "9:16 · 1080 × 1920 · 10 s",
                 "hook": "Il annonce ça au dessert",
                 "punchline": "Les régimes et les allergènes, ça se note à la réservation",
-                "url": null
+                "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP123.mp4"
               }
             },
             {
@@ -27902,7 +27902,7 @@
               "tutorielManquant": "Le module Caisse POS n'existe pas encore dans l'Academy.",
               "higgsfield": {
                 "prompt": "Vertical 9:16, 10 seconds, 1080p, 24 fps. NO text overlay, NO subtitles, NO watermark, NO logo, NO captions burned into the image. Photorealistic, top-down then eye-level, restaurant table.\n\nTop-down shot of one single modest salad placed in the centre of a table set for six.\n\n0-5s: A beat of stillness. French, neutral accent, low and unhurried, off-screen narrator, over the shot: {On partage, c'est plus convivial.} End state at 5s: the situation is fully readable in frame and nothing has gone wrong yet.\n5-8s: At 5 seconds six forks strike the bowl simultaneously from six directions, colliding, retreating, striking again in a fencing flurry. End state at 8s: the change has fully landed and is unmistakable in frame.\n8-10s: The bowl is empty and spotless; six hands rest politely on the table as if nothing happened. The camera stops moving and holds. French, neutral accent, low and unhurried, off-screen narrator, over the last frame: {Partage l'assiette. Pas l'addition, elle se divise toute seule.} End state at 10s: the frame is frozen on that image, camera still, no new element enters.\n\nSound design: <restaurant ambience> <a plate set down> <one second of total silence> <a rapid storm of metal-on-ceramic clattering like a swordfight> <a last scrape> <calm chatter resuming>. Two spoken lines only, exactly where they are timed above. No music.",
-                "videoSourceUrl": null,
+                "videoSourceUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/hooks/EP126.mp4",
                 "duree": "10 s",
                 "format": "vertical 9:16",
                 "source": null
@@ -27949,7 +27949,7 @@
                 "format": "9:16 · 1080 × 1920 · 10 s",
                 "hook": "On partage, c'est plus convivial",
                 "punchline": "Partage l'assiette. Pas l'addition, elle se divise toute seule",
-                "url": null
+                "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP126.mp4"
               }
             },
             {
@@ -28787,7 +28787,7 @@
               "tutorielModuleUrl": "https://tutoriel.foodeatup.com/module/marketing-fidelite",
               "higgsfield": {
                 "prompt": "Vertical 9:16, 10 seconds, 1080p, 24 fps. NO text overlay, NO subtitles, NO watermark, NO logo, NO captions burned into the image. Photorealistic, handheld exterior evening.\n\nA drummer has set up a full drum kit directly in front of a restaurant's entrance door, blocking it completely, and plays with enormous enthusiasm.\n\n0-5s: Diners inside press their faces to the window. French, neutral accent, low and unhurried, off-screen narrator, over the shot: {21 juin. Devant ta porte.} End state at 5s: the situation is fully readable in frame and nothing has gone wrong yet.\n5-8s: At 5 seconds a waiter tries to get out with two plates, waits for a gap, and finally climbs carefully over the bass drum, plates held high. End state at 8s: the change has fully landed and is unmistakable in frame.\n8-10s: He lands on the other side, serves an outdoor table with total dignity, and the drummer gives him an approving nod without stopping. The camera stops moving and holds. French, neutral accent, low and unhurried, off-screen narrator, over the last frame: {Autant que les gens sachent que tu es ouvert.} End state at 10s: the frame is frozen on that image, camera still, no new element enters.\n\nSound design: <enthusiastic live drumming> <street crowd noise> <a door pushing against a cymbal stand> <a plate wobble> <a cymbal crash as he climbs over> <the drumming continuing>. Two spoken lines only, exactly where they are timed above. （the drums, and nothing else）",
-                "videoSourceUrl": null,
+                "videoSourceUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/hooks/EP130.mp4",
                 "duree": "10 s",
                 "format": "vertical 9:16",
                 "source": null
@@ -28834,7 +28834,7 @@
                 "format": "9:16 · 1080 × 1920 · 10 s",
                 "hook": "21 juin. Devant ta porte",
                 "punchline": "Autant que les gens sachent que tu es ouvert",
-                "url": null
+                "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP130.mp4"
               }
             },
             {
@@ -29013,7 +29013,7 @@
               "tutorielModuleUrl": "https://tutoriel.foodeatup.com/module/equipe-planning",
               "higgsfield": {
                 "prompt": "Vertical 9:16, 10 seconds, 1080p, 24 fps. NO text overlay, NO subtitles, NO watermark, NO logo, NO captions burned into the image. Photorealistic, wide shot of a large professional kitchen, harsh morning light.\n\nA huge kitchen built for a brigade of eight, completely empty except for one chef standing alone at the pass.\n\n0-5s: He looks left at four empty stations, right at three more. French, neutral accent, low and unhurried, off-screen narrator, over the shot: {1er septembre. Deux absents.} End state at 5s: the situation is fully readable in frame and nothing has gone wrong yet.\n5-8s: At 5 seconds a printer spits out a long ribbon of tickets; he looks at it, rolls up both sleeves, and moves to the first station. End state at 8s: he looks at it, rolls up both sleeves, and moves to the first station.\n8-10s: A fast series of micro-cuts of him at four different stations in four different postures, ending back at the pass, plating. The camera stops moving and holds. French, neutral accent, low and unhurried, off-screen narrator, over the last frame: {Un planning, ça se prépare avant la rentrée.} End state at 10s: the frame is frozen on that image, camera still, no new element enters.\n\nSound design: <extractor hood hum> <footsteps echoing in an empty kitchen> <a printer chattering> <sleeves rolling> <a rapid rhythmic burst of pans> <tap> <knife and plate sounds>. Two spoken lines only, exactly where they are timed above. No music.",
-                "videoSourceUrl": null,
+                "videoSourceUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/hooks/EP131.mp4",
                 "duree": "10 s",
                 "format": "vertical 9:16",
                 "source": null
@@ -29060,7 +29060,7 @@
                 "format": "9:16 · 1080 × 1920 · 10 s",
                 "hook": "1er septembre. Deux absents",
                 "punchline": "Un planning, ça se prépare avant la rentrée",
-                "url": null
+                "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP131.mp4"
               }
             },
             {
@@ -29234,7 +29234,7 @@
               "tutorielModuleUrl": "https://tutoriel.foodeatup.com/module/site-web-vitrine",
               "higgsfield": {
                 "prompt": "Vertical 9:16, 10 seconds, 1080p, 24 fps. NO text overlay, NO subtitles, NO watermark, NO logo, NO captions burned into the image. Photorealistic, wide street shot, hot empty city, midday sun.\n\nA deserted French city street in August: every shop shutter closed, heat haze rising from the asphalt, not a single person.\n\n0-5s: The camera pans slowly. French, neutral accent, low and unhurried, off-screen narrator, over the shot: {Tout le quartier est fermé.} End state at 5s: the situation is fully readable in frame and nothing has gone wrong yet.\n5-8s: At 5 seconds it reaches one single open restaurant — and a queue of eighty people snaking down the pavement and around the corner, fans, hats, patience. End state at 8s: and a queue of eighty people snaking down the pavement and around the corner, fans, hats, patience.\n8-10s: The owner steps into the doorway, looks at the queue, and slowly rolls up his sleeves. The camera stops moving and holds. French, neutral accent, low and unhurried, off-screen narrator, over the last frame: {Sauf toi. Encore faut-il qu'on te trouve en ligne.} End state at 10s: the frame is frozen on that image, camera still, no new element enters.\n\nSound design: <cicadas> <distant traffic> <absolute street emptiness> <a rising wall of crowd murmur as the camera reaches the queue> <a door chime> <fabric of sleeves rolling>. Two spoken lines only, exactly where they are timed above. No music.",
-                "videoSourceUrl": null,
+                "videoSourceUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/hooks/EP132.mp4",
                 "duree": "10 s",
                 "format": "vertical 9:16",
                 "source": null
@@ -29281,7 +29281,7 @@
                 "format": "9:16 · 1080 × 1920 · 10 s",
                 "hook": "Tout le quartier est fermé",
                 "punchline": "Sauf toi. Encore faut-il qu'on te trouve en ligne",
-                "url": null
+                "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP132.mp4"
               }
             },
             {
@@ -29444,7 +29444,7 @@
               "tutorielManquant": "Le module Caisse POS n'existe pas encore dans l'Academy.",
               "higgsfield": {
                 "prompt": "Vertical 9:16, 10 seconds, 1080p, 24 fps. NO text overlay, NO subtitles, NO watermark, NO logo, NO captions burned into the image. Photorealistic, medium wide shot of a packed sports bar, screen glow.\n\nA crowded bar watching a football match on a large screen (screen shows only abstract green blur, no readable broadcast).\n\n0-5s: A waiter crosses the room with a tray of eight full beers. French, neutral accent, low and unhurried, off-screen narrator, over the shot: {Une minute pour encaisser trois tournées.} End state at 5s: the situation is fully readable in frame and nothing has gone wrong yet.\n5-8s: At 5 seconds the entire room explodes upward in a goal celebration, arms flying; the waiter is lifted off his feet by the surge, the tray launched vertically, beers suspended in slow motion. End state at 8s: the waiter is lifted off his feet by the surge, the tray launched vertically, beers suspended in slow motion.\n8-10s: He lands back on his feet, catches the empty tray, and every glass has landed upright on a nearby table in a perfect row. The camera stops moving and holds. French, neutral accent, low and unhurried, off-screen narrator, over the last frame: {Ta caisse doit tenir le rythme.} End state at 10s: the frame is frozen on that image, camera still, no new element enters.\n\nSound design: <tense crowd murmur> <a sudden roaring cheer> <chairs falling> <a slow-motion whoosh> <glass bases landing on wood one after another> <a single collective gasp>. Two spoken lines only, exactly where they are timed above. No music.",
-                "videoSourceUrl": null,
+                "videoSourceUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/hooks/EP133.mp4",
                 "duree": "10 s",
                 "format": "vertical 9:16",
                 "source": null
@@ -29491,7 +29491,7 @@
                 "format": "9:16 · 1080 × 1920 · 10 s",
                 "hook": "Une minute pour encaisser trois tournées",
                 "punchline": "Ta caisse doit tenir le rythme",
-                "url": null
+                "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP133.mp4"
               }
             },
             {
@@ -29672,7 +29672,7 @@
               "tutorielModuleUrl": "https://tutoriel.foodeatup.com/module/haccp",
               "higgsfield": {
                 "prompt": "Vertical 9:16, 10 seconds, 1080p, 24 fps. NO text overlay, NO subtitles, NO watermark, NO logo, NO captions burned into the image. Photorealistic, extreme low-angle POV from inside a deep fryer basket looking up, heat shimmer.\n\nThe camera is inside a fryer looking up at the ceiling of a kitchen.\n\n0-5s: A hand lowers a basket of fries directly toward the lens; bubbles erupt and fill the frame; the basket rises, drains, disappears. This repeats faster and faster — three times, four, five — hands and baskets flashing past. French, neutral accent, low and unhurried, off-screen narrator, over the shot: {Sept heures de service. Vue d'en bas.} End state at 5s: the situation is fully readable in frame and nothing has gone wrong yet.\n5-8s: At 5 seconds a wristwatch on one of the arms shows the movement blurring. End state at 8s: the change has fully landed and is unmistakable in frame.\n8-10s: The surface goes perfectly still, oil calm, a single bubble rising, the kitchen light steady above. The camera stops moving and holds. French, neutral accent, low and unhurried, off-screen narrator, over the last frame: {Elle aussi a une température à respecter.} End state at 10s: the frame is frozen on that image, camera still, no new element enters.\n\nSound design: <a deep sustained roar of boiling oil> <violent bubbling on each immersion> <metal basket clanging on the rim> <muffled kitchen shouting above> <a slow calming simmer and one last bubble>. Two spoken lines only, exactly where they are timed above. No music.",
-                "videoSourceUrl": null,
+                "videoSourceUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/hooks/EP134.mp4",
                 "duree": "10 s",
                 "format": "vertical 9:16",
                 "source": null
@@ -29719,7 +29719,7 @@
                 "format": "9:16 · 1080 × 1920 · 10 s",
                 "hook": "Sept heures de service. Vue d'en bas",
                 "punchline": "Elle aussi a une température à respecter",
-                "url": null
+                "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP134.mp4"
               }
             },
             {
@@ -29895,7 +29895,7 @@
               "tutorielModuleUrl": "https://tutoriel.foodeatup.com/module/reservation-salle",
               "higgsfield": {
                 "prompt": "Vertical 9:16, 10 seconds, 1080p, 24 fps. NO text overlay, NO subtitles, NO watermark, NO logo, NO captions burned into the image. Photorealistic, top-down macro POV of an open paper reservation book on a host stand.\n\nThe camera looks straight down at an open paper booking book covered in handwriting rendered as illegible ink marks, crossings-out and arrows only — absolutely no readable words.\n\n0-5s: Hands enter and leave: writing, crossing out, writing again, a coffee cup lands and leaves a brown ring, a page is torn slightly, a pen leaks. French, neutral accent, low and unhurried, off-screen narrator, over the shot: {Toutes tes réservations du soir.} End state at 5s: the situation is fully readable in frame and nothing has gone wrong yet.\n5-8s: At 5 seconds a hand knocks the coffee over completely and a wave of liquid floods the page. End state at 8s: the change has fully landed and is unmistakable in frame.\n8-10s: A hand blots it with a napkin; the ink is gone, only a brown smear remains where the evening's bookings were. The camera stops moving and holds. French, neutral accent, low and unhurried, off-screen narrator, over the last frame: {Sur du papier. Vraiment ?} End state at 10s: the frame is frozen on that image, camera still, no new element enters.\n\nSound design: <host stand ambience> <pen scratching> <pages turning> <a phone ringing repeatedly in the background> <a ceramic cup landing> <liquid spilling> <paper absorbing> <one very quiet \"non\">. Two spoken lines only, exactly where they are timed above. No music.",
-                "videoSourceUrl": null,
+                "videoSourceUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/hooks/EP135.mp4",
                 "duree": "10 s",
                 "format": "vertical 9:16",
                 "source": null
@@ -29942,7 +29942,7 @@
                 "format": "9:16 · 1080 × 1920 · 10 s",
                 "hook": "Toutes tes réservations du soir",
                 "punchline": "Sur du papier. Vraiment ",
-                "url": null
+                "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP135.mp4"
               }
             },
             {
@@ -30121,7 +30121,7 @@
               "tutorielModuleUrl": "https://tutoriel.foodeatup.com/module/service-commande",
               "higgsfield": {
                 "prompt": "Vertical 9:16, 10 seconds, 1080p, 24 fps. NO text overlay, NO subtitles, NO watermark, NO logo, NO captions burned into the image. Photorealistic, photorealistic POV from inside a commercial glasswasher looking out through the racks.\n\nThe camera sits among upturned glasses inside a professional glasswasher.\n\n0-5s: A hand slides in one more rack, then the door drops and everything goes dark blue. French, neutral accent, low and unhurried, off-screen narrator, over the shot: {Deux minutes par cycle. Quatre-vingts cycles.} End state at 5s: the situation is fully readable in frame and nothing has gone wrong yet.\n5-8s: At 5 seconds the cycle starts: jets of water hit the lens from every direction, steam floods the frame, the whole world becomes a hurricane. End state at 8s: the change has fully landed and is unmistakable in frame.\n8-10s: Sudden stop, total calm, steam clearing, the door lifts and a hand reaches straight in and takes one glass. The camera stops moving and holds. French, neutral accent, low and unhurried, off-screen narrator, over the last frame: {Le service, c'est ça aussi.} End state at 10s: the frame is frozen on that image, camera still, no new element enters.\n\nSound design: <glass racks rattling> <a heavy door dropping> <a pump priming> <violent spraying water and steam roar filling everything> <an abrupt mechanical stop> <dripping> <a door mechanism> <one glass squeaking>. Two spoken lines only, exactly where they are timed above. No music.",
-                "videoSourceUrl": null,
+                "videoSourceUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/hooks/EP136.mp4",
                 "duree": "10 s",
                 "format": "vertical 9:16",
                 "source": null
@@ -30168,7 +30168,7 @@
                 "format": "9:16 · 1080 × 1920 · 10 s",
                 "hook": "Deux minutes par cycle. Quatre-vingts cycles",
                 "punchline": "Le service, c'est ça aussi",
-                "url": null
+                "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP136.mp4"
               }
             },
             {
@@ -30331,7 +30331,7 @@
               "tutorielManquant": "Le module Caisse POS n'existe pas encore dans l'Academy.",
               "higgsfield": {
                 "prompt": "Vertical 9:16, 10 seconds, 1080p, 24 fps. NO text overlay, NO subtitles, NO watermark, NO logo, NO captions burned into the image. Photorealistic, photorealistic macro POV from behind the group head of an espresso machine, looking out at the bar.\n\nThe camera looks out from inside the machine as a portafilter is locked in with a twist, a cup slides underneath, dark espresso streams past the lens.\n\n0-5s: The cup leaves, another arrives, a hand wipes the lens area with a cloth. This accelerates: cup, cup, cup, faster and faster, hands blurring. French, neutral accent, low and unhurried, off-screen narrator, over the shot: {Deux cent quarante cafés. Aujourd'hui.} End state at 5s: the situation is fully readable in frame and nothing has gone wrong yet.\n5-8s: At 5 seconds a hand slams the portafilter in slightly too hard and the whole frame shakes. End state at 8s: the change has fully landed and is unmistakable in frame.\n8-10s: Everything stops; one lone cup sits under the spout, and a hand appears and slowly turns the machine's switch off. The camera stops moving and holds. French, neutral accent, low and unhurried, off-screen narrator, over the last frame: {Combien encaissés ? Tu es sûr ?} End state at 10s: the frame is frozen on that image, camera still, no new element enters.\n\nSound design: <a portafilter twist-lock> <pump whirr> <espresso pouring> <cups clinking on saucers> <steam wand shrieking> <the tempo rising into chaos> <a metallic slam> <a click and a long fading hiss>. Two spoken lines only, exactly where they are timed above. No music.",
-                "videoSourceUrl": null,
+                "videoSourceUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/hooks/EP137.mp4",
                 "duree": "10 s",
                 "format": "vertical 9:16",
                 "source": null
@@ -30378,7 +30378,7 @@
                 "format": "9:16 · 1080 × 1920 · 10 s",
                 "hook": "Deux cent quarante cafés. Aujourd'hui",
                 "punchline": "Combien encaissés ? Tu es sûr ",
-                "url": null
+                "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP137.mp4"
               }
             },
             {
@@ -30553,7 +30553,7 @@
               "tutorielModuleUrl": "https://tutoriel.foodeatup.com/module/kds-cuisine",
               "higgsfield": {
                 "prompt": "Vertical 9:16, 10 seconds, 1080p, 24 fps. NO text overlay, NO subtitles, NO watermark, NO logo, NO captions burned into the image. Photorealistic, photorealistic first-person POV of a plate being carried through a restaurant, smooth gimbal motion.\n\nThe camera IS the plate: it is lifted from the pass under a heat lamp, tilts, and travels fast through a kitchen — past a chef shouting, past flames, through swinging doors, through a crowded dining room, ducking under one arm, past a child's face that lights up.\n\n0-5s: The shot opens on that and stays with it, the camera moving slowly; nothing else happens yet. French, neutral accent, low and unhurried, off-screen narrator, over the shot: {Quarante-cinq secondes de vie.} End state at 5s: the situation is fully readable in frame and nothing has gone wrong yet.\n5-8s: At 5 seconds the journey nearly ends in a collision with another waiter; both spin and continue. End state at 8s: both spin and continue.\n8-10s: The plate lands gently on a table and a guest leans into frame from above, delighted, fork already in hand. The camera stops moving and holds. French, neutral accent, low and unhurried, off-screen narrator, over the last frame: {Chaque assiette compte. Compte-les.} End state at 10s: the frame is frozen on that image, camera still, no new element enters.\n\nSound design: <kitchen roar and shouting> <a heat lamp buzz> <swinging doors> <ambient chatter swelling as it enters the dining room> <a near-miss gasp> <cloth brushing> <a plate settling on wood and one \"ah> <merci !\">. Two spoken lines only, exactly where they are timed above. No music.",
-                "videoSourceUrl": null,
+                "videoSourceUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/hooks/EP138.mp4",
                 "duree": "10 s",
                 "format": "vertical 9:16",
                 "source": null
@@ -30600,7 +30600,7 @@
                 "format": "9:16 · 1080 × 1920 · 10 s",
                 "hook": "Quarante-cinq secondes de vie",
                 "punchline": "Chaque assiette compte. Compte-les",
-                "url": null
+                "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP138.mp4"
               }
             },
             {
@@ -30778,7 +30778,7 @@
               "tutorielModuleUrl": "https://tutoriel.foodeatup.com/module/kds-cuisine",
               "higgsfield": {
                 "prompt": "Vertical 9:16, 10 seconds, 1080p, 24 fps. NO text overlay, NO subtitles, NO watermark, NO logo, NO captions burned into the image. Photorealistic, shot like an epic war film: slow motion, heavy smoke, dramatic backlight, low heroic angles.\n\nA professional kitchen at full rush filmed as a battlefield: steam rolling like battle smoke, sparks from a flambé, cooks moving in slow motion with grim determined faces, one carrying a stack of plates like ammunition, another wiping his brow with a forearm.\n\n0-5s: The head chef stands at the pass surveying it all like a general, jaw set. French, neutral accent, low and unhurried, off-screen narrator, over the shot: {20 h 30. Le coup de feu.} End state at 5s: the situation is fully readable in frame and nothing has gone wrong yet.\n5-8s: At 5 seconds he raises one hand and everything freezes — every cook mid-motion. End state at 8s: every cook mid-motion.\n8-10s: He lowers his hand and points at the pass; the freeze breaks and all of them move at once. The camera stops moving and holds. French, neutral accent, low and unhurried, off-screen narrator, over the last frame: {Sois équipé, pas héroïque.} End state at 10s: the frame is frozen on that image, camera still, no new element enters.\n\nSound design: <a low cinematic rumble> <slowed-down clattering and shouting> <a heartbeat> <a whoosh of flame> <total silence on the freeze> <a single sharp \"Service !\" and the noise returning at full volume>. Two spoken lines only, exactly where they are timed above. （the rumble, and nothing else）",
-                "videoSourceUrl": null,
+                "videoSourceUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/hooks/EP139.mp4",
                 "duree": "10 s",
                 "format": "vertical 9:16",
                 "source": null
@@ -30825,7 +30825,7 @@
                 "format": "9:16 · 1080 × 1920 · 10 s",
                 "hook": "20 h 30. Le coup de feu",
                 "punchline": "Sois équipé, pas héroïque",
-                "url": null
+                "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP139.mp4"
               }
             },
             {
@@ -31006,7 +31006,7 @@
               "tutorielModuleUrl": "https://tutoriel.foodeatup.com/module/stockvision-ai",
               "higgsfield": {
                 "prompt": "Vertical 9:16, 10 seconds, 1080p, 24 fps. NO text overlay, NO subtitles, NO watermark, NO logo, NO captions burned into the image. Photorealistic, shot like a heist movie: darkness, tight close-ups, tense framing.\n\nNight in a closed restaurant kitchen.\n\n0-5s: Three cooks in black, faces lit from below, execute a heist: one picks the walk-in fridge lock, one watches the door with a mirror, one crawls under an imaginary laser grid rendered as thin red light beams from a security sensor. French, neutral accent, low and unhurried, off-screen narrator, over the shot: {Ton inventaire, la nuit.} End state at 5s: the situation is fully readable in frame and nothing has gone wrong yet.\n5-8s: At 5 seconds the crawler reaches the prize and lifts it with two hands, reverent and slow: a single small pot of crème dessert. End state at 8s: the change has fully landed and is unmistakable in frame.\n8-10s: All three stare at it in silence; one of them slowly starts clapping. The camera stops moving and holds. French, neutral accent, low and unhurried, off-screen narrator, over the last frame: {Ce qui disparaît finit toujours par se voir.} End state at 10s: the frame is frozen on that image, camera still, no new element enters.\n\nSound design: <deep tense silence> <a lock picking click> <breathing held> <a fridge seal cracking open> <a soft electronic sensor beep> <a plastic pot lifting> <three slow claps>. Two spoken lines only, exactly where they are timed above. （a low tension pulse, and nothing else）",
-                "videoSourceUrl": null,
+                "videoSourceUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/hooks/EP140.mp4",
                 "duree": "10 s",
                 "format": "vertical 9:16",
                 "source": null
@@ -31053,7 +31053,7 @@
                 "format": "9:16 · 1080 × 1920 · 10 s",
                 "hook": "Ton inventaire, la nuit",
                 "punchline": "Ce qui disparaît finit toujours par se voir",
-                "url": null
+                "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP140.mp4"
               }
             },
             {
@@ -31230,7 +31230,7 @@
               "tutorielModuleUrl": "https://tutoriel.foodeatup.com/module/predibot",
               "higgsfield": {
                 "prompt": "Vertical 9:16, 10 seconds, 1080p, 24 fps. NO text overlay, NO subtitles, NO watermark, NO logo, NO captions burned into the image. Photorealistic, shot like a sci-fi spacecraft cockpit: red emergency lighting, tight framing, steam venting.\n\nA professional kitchen lit entirely by pulsing red emergency light, steam venting from a pan like a hull breach.\n\n0-5s: Two cooks work at their stations like astronauts under alarm, one gripping an overhead rail, the other counting down on his fingers with fierce concentration. French, neutral accent, low and unhurried, off-screen narrator, over the shot: {Table 6 depuis 22 minutes.} End state at 5s: the situation is fully readable in frame and nothing has gone wrong yet.\n5-8s: At 5 seconds he slams his palm onto the pass — and a perfectly plated dish slides forward into the light, mission accomplished. End state at 8s: and a perfectly plated dish slides forward into the light, mission accomplished.\n8-10s: The red light snaps back to normal warm kitchen light; both exhale; one gives a small thumbs up. The camera stops moving and holds. French, neutral accent, low and unhurried, off-screen narrator, over the last frame: {Un pilote automatique, ça existe aussi en cuisine.} End state at 10s: the frame is frozen on that image, camera still, no new element enters.\n\nSound design: <a pulsing alarm klaxon> <hissing steam vents> <tense breathing> <a countdown in French \"trois> <deux> <un\"> <a palm slam> <a plate sliding on steel> <the alarm cutting out and normal kitchen ambience returning>. Two spoken lines only, exactly where they are timed above. No music.",
-                "videoSourceUrl": null,
+                "videoSourceUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/hooks/EP141.mp4",
                 "duree": "10 s",
                 "format": "vertical 9:16",
                 "source": null
@@ -31277,7 +31277,7 @@
                 "format": "9:16 · 1080 × 1920 · 10 s",
                 "hook": "Table 6 depuis 22 minutes",
                 "punchline": "Un pilote automatique, ça existe aussi en cuisine",
-                "url": null
+                "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP141.mp4"
               }
             },
             {
@@ -31455,7 +31455,7 @@
               "tutorielModuleUrl": "https://tutoriel.foodeatup.com/module/equipe-planning",
               "higgsfield": {
                 "prompt": "Vertical 9:16, 10 seconds, 1080p, 24 fps. NO text overlay, NO subtitles, NO watermark, NO logo, NO captions burned into the image. Photorealistic, western duel framing, golden hour light streaming through a kitchen door, long shadows.\n\nTwo cooks face each other down the length of a kitchen aisle, backlit by the setting sun through an open door, aprons flapping slightly like dusters.\n\n0-5s: Extreme close-ups: narrowed eyes, a hand hovering over an apron pocket, a bead of sweat, a bay leaf tumbling across the floor like a tumbleweed. French, neutral accent, low and unhurried, off-screen narrator, over the shot: {Qui envoie le plat du jour.} End state at 5s: the situation is fully readable in frame and nothing has gone wrong yet.\n5-8s: At 5 seconds both draw — spatulas — and freeze, pointed at each other. End state at 8s: and freeze, pointed at each other.\n8-10s: They hold the standoff for one long beat, then both turn in unison and use the spatulas to plate two dishes side by side, perfectly synchronised. The camera stops moving and holds. French, neutral accent, low and unhurried, off-screen narrator, over the last frame: {Répartis les postes avant le service, pas pendant.} End state at 10s: the frame is frozen on that image, camera still, no new element enters.\n\nSound design: <a single sustained tension note> <wind> <boots on tiles> <a dry leaf skittering> <two sharp fabric draws> <a beat of silence> <two spatulas scraping pans in perfect time>. Two spoken lines only, exactly where they are timed above. （the tension note, and nothing else）",
-                "videoSourceUrl": null,
+                "videoSourceUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/hooks/EP142.mp4",
                 "duree": "10 s",
                 "format": "vertical 9:16",
                 "source": null
@@ -31502,7 +31502,7 @@
                 "format": "9:16 · 1080 × 1920 · 10 s",
                 "hook": "Qui envoie le plat du jour",
                 "punchline": "Répartis les postes avant le service, pas pendant",
-                "url": null
+                "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP142.mp4"
               }
             },
             {
@@ -31897,7 +31897,7 @@
               "tutorielModuleUrl": "https://tutoriel.foodeatup.com/module/marketing-fidelite",
               "higgsfield": {
                 "prompt": "Vertical 9:16, 10 seconds, 1080p, 24 fps. NO text overlay, NO subtitles, NO watermark, NO logo, NO captions burned into the image. Photorealistic, shot like a courtroom drama: solemn wooden interior, dramatic overhead light.\n\nA solemn courtroom.\n\n0-5s: In the witness stand, elevated and alone under a single spotlight, sits a plate with one very overcooked steak on it. A serious man in a robe points at it accusingly; the jury of twelve leans forward as one. French, neutral accent, low and unhurried, off-screen narrator, over the shot: {Un avis une étoile.} End state at 5s: the situation is fully readable in frame and nothing has gone wrong yet.\n5-8s: At 5 seconds a chef in whites stands in the defendant's box and lowers his head. End state at 8s: the change has fully landed and is unmistakable in frame.\n8-10s: An overhead shot of the plate alone in the spotlight, absolute silence in the room. The camera stops moving and holds. French, neutral accent, low and unhurried, off-screen narrator, over the last frame: {Réponds-y avant qu'il fasse jurisprudence.} End state at 10s: the frame is frozen on that image, camera still, no new element enters.\n\nSound design: <courtroom reverb> <a low murmur> <footsteps on wood> <an accusing French voice saying one word \"Cuit.\"> <a collective gasp from the jury> <a gavel strike> <silence>. Two spoken lines only, exactly where they are timed above. No music.",
-                "videoSourceUrl": null,
+                "videoSourceUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/hooks/EP144.mp4",
                 "duree": "10 s",
                 "format": "vertical 9:16",
                 "source": null
@@ -31944,7 +31944,7 @@
                 "format": "9:16 · 1080 × 1920 · 10 s",
                 "hook": "Un avis une étoile",
                 "punchline": "Réponds-y avant qu'il fasse jurisprudence",
-                "url": null
+                "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP144.mp4"
               }
             },
             {
@@ -32121,7 +32121,7 @@
               "tutorielModuleUrl": "https://tutoriel.foodeatup.com/module/predibot",
               "higgsfield": {
                 "prompt": "Vertical 9:16, 10 seconds, 1080p, 24 fps. NO text overlay, NO subtitles, NO watermark, NO logo, NO captions burned into the image. Photorealistic, shot like a nature documentary: long lens, foliage framing the edges of the shot, patient observational camera.\n\nFilmed from behind a potted plant in a restaurant, as if observing a rare animal in the wild: a restaurant manager in his natural habitat, moving between the bar, a laptop and the pass, marking his territory by straightening a chair, drinking coffee standing up in one gulp.\n\n0-5s: The shot opens on that and stays with it, the camera moving slowly; nothing else happens yet. French, neutral accent, low and unhurried, off-screen narrator, over the shot: {Le gérant, dans son habitat naturel.} End state at 5s: the situation is fully readable in frame and nothing has gone wrong yet.\n5-8s: At 5 seconds he freezes mid-motion, sensing he is being watched, and turns his head slowly toward the camera. End state at 8s: the change has fully landed and is unmistakable in frame.\n8-10s: He stares directly into the lens through the leaves, motionless, then goes back to work. The camera stops moving and holds. French, neutral accent, low and unhurried, off-screen narrator, over the last frame: {Espèce en voie d'épuisement.} End state at 10s: the frame is frozen on that image, camera still, no new element enters.\n\nSound design: <soft foliage rustle> <distant restaurant ambience recorded at a distance as if through a long lens> <a coffee cup> <a chair scraping> <a beat of held silence when he turns> <ambience resuming>. Two spoken lines only, exactly where they are timed above. No music.",
-                "videoSourceUrl": null,
+                "videoSourceUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/hooks/EP145.mp4",
                 "duree": "10 s",
                 "format": "vertical 9:16",
                 "source": null
@@ -32168,7 +32168,7 @@
                 "format": "9:16 · 1080 × 1920 · 10 s",
                 "hook": "Le gérant, dans son habitat naturel",
                 "punchline": "Espèce en voie d'épuisement",
-                "url": null
+                "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP145.mp4"
               }
             },
             {
@@ -32789,7 +32789,7 @@
               "tutorielModuleUrl": "https://tutoriel.foodeatup.com/module/hubrise-livraisons",
               "higgsfield": {
                 "prompt": "Vertical 9:16, 10 seconds, 1080p, 24 fps. NO text overlay, NO subtitles, NO watermark, NO logo, NO captions burned into the image. Photorealistic, low-angle street shot, morning delivery time.\n\nTwo delivery drivers in insulated backpacks arrive at the same narrow loading spot in front of a restaurant at the same second.\n\n0-5s: They dismount, face each other, and adopt exaggerated sumo stances, stamping one foot each on the pavement, backpacks bulging. French, neutral accent, low and unhurried, off-screen narrator, over the shot: {Trois plateformes. Une place.} End state at 5s: the situation is fully readable in frame and nothing has gone wrong yet.\n5-8s: At 5 seconds they charge and collide chest to chest, backpacks compressing, neither moving an inch. End state at 8s: the change has fully landed and is unmistakable in frame.\n8-10s: A third driver calmly parks his scooter in the free spot behind them and walks past into the restaurant with his bag. The camera stops moving and holds. French, neutral accent, low and unhurried, off-screen narrator, over the last frame: {Centralise les commandes, pas les embouteillages.} End state at 10s: the frame is frozen on that image, camera still, no new element enters.\n\nSound design: <street ambience> <two scooter engines cutting out> <boots stamping> <a comedic drum-like thud on impact> <insulated fabric compressing> <grunting> <a third small engine> <a kickstand click and a door chime>. Two spoken lines only, exactly where they are timed above. No music.",
-                "videoSourceUrl": null,
+                "videoSourceUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/hooks/EP148.mp4",
                 "duree": "10 s",
                 "format": "vertical 9:16",
                 "source": null
@@ -32836,7 +32836,7 @@
                 "format": "9:16 · 1080 × 1920 · 10 s",
                 "hook": "Trois plateformes. Une place",
                 "punchline": "Centralise les commandes, pas les embouteillages",
-                "url": null
+                "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP148.mp4"
               }
             },
             {
@@ -33010,7 +33010,7 @@
               "tutorielModuleUrl": "https://tutoriel.foodeatup.com/module/marketing-fidelite",
               "higgsfield": {
                 "prompt": "Vertical 9:16, 10 seconds, 1080p, 24 fps. NO text overlay, NO subtitles, NO watermark, NO logo, NO captions burned into the image. Photorealistic, wide shot of a full dining room, warm evening light.\n\nA completely normal, busy restaurant dinner service.\n\n0-5s: One guest stands up and begins a small rhythmic movement. Two others join. French, neutral accent, low and unhurried, off-screen narrator, over the shot: {Ta salle a un truc que personne d'autre n'a.} End state at 5s: the situation is fully readable in frame and nothing has gone wrong yet.\n5-8s: At 5 seconds every single person in the room — guests, waiters, a cook who appears in the kitchen doorway — is performing a tight synchronised routine, napkins waving, chairs pushed back, in perfect unison. End state at 8s: is performing a tight synchronised routine, napkins waving, chairs pushed back, in perfect unison.\n8-10s: They all sit down at exactly the same moment and resume eating as if nothing happened; one lone waiter stands frozen in the middle holding a tray, the only one who did not know. The camera stops moving and holds. French, neutral accent, low and unhurried, off-screen narrator, over the last frame: {Fais-le savoir.} End state at 10s: the frame is frozen on that image, camera still, no new element enters.\n\nSound design: <normal restaurant ambience> <one chair pushing back> <dozens of feet finding a rhythm on the floor> <clapping and cutlery used as percussion building to a peak> <an abrupt collective stop> <chairs sliding in> <normal chatter resuming. No music track — rhythm built from claps> <feet and cutlery>. Two spoken lines only, exactly where they are timed above. No music.",
-                "videoSourceUrl": null,
+                "videoSourceUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/hooks/EP149.mp4",
                 "duree": "10 s",
                 "format": "vertical 9:16",
                 "source": null
@@ -33057,7 +33057,7 @@
                 "format": "9:16 · 1080 × 1920 · 10 s",
                 "hook": "Ta salle a un truc que personne d'autre n'a",
                 "punchline": "Fais-le savoir",
-                "url": null
+                "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP149.mp4"
               }
             },
             {
@@ -33234,7 +33234,7 @@
               "tutorielModuleUrl": "https://tutoriel.foodeatup.com/module/predibot",
               "higgsfield": {
                 "prompt": "Vertical 9:16, 10 seconds, 1080p, 24 fps. NO text overlay, NO subtitles, NO watermark, NO logo, NO captions burned into the image. Photorealistic, cinematic slow dolly back, warm golden restaurant lighting, theatrical curtain-call framing.\n\nA restaurant dining room arranged like a theatre stage after a show.\n\n0-5s: In one long line facing the camera stand, side by side: a chef in whites, two waiters, a dishwasher, a delivery rider holding his helmet — and among them, perfectly calm, a golden retriever sitting upright, a penguin in a tiny apron, a goat, a person in an oversized plain yellow chicken mascot costume, and a wheeled service robot. French, neutral accent, low and unhurried, off-screen narrator, over the shot: {Cent cinquante épisodes.} End state at 5s: the situation is fully readable in frame and nothing has gone wrong yet.\n5-8s: At 5 seconds the whole line bows in unison, humans and animals alike, the robot tilting forward on its base. End state at 8s: the change has fully landed and is unmistakable in frame.\n8-10s: They straighten up together and hold, looking straight into the camera, the restaurant glowing behind them. The camera stops moving and holds. French, neutral accent, low and unhurried, off-screen narrator, over the last frame: {Une seule promesse : ton restaurant, avant, pendant et après le service.} End state at 10s: the frame is frozen on that image, camera still, no new element enters.\n\nSound design: <a full room of applause and whistling> <chairs> <one dog bark> <one penguin squawk> <one goat bleat> <a servo whirr as the robot bows> <the applause continuing over a held silence from the line>. Two spoken lines only, exactly where they are timed above. No music.",
-                "videoSourceUrl": null,
+                "videoSourceUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/hooks/EP150.mp4",
                 "duree": "10 s",
                 "format": "vertical 9:16",
                 "source": null
@@ -33281,7 +33281,7 @@
                 "format": "9:16 · 1080 × 1920 · 10 s",
                 "hook": "Cent cinquante épisodes",
                 "punchline": "Une seule promesse : ton restaurant, avant, pendant et après le service",
-                "url": null
+                "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP150.mp4"
               }
             }
           ]
@@ -33312,7 +33312,7 @@
               "tutoriel": null,
               "tutorielModuleUrl": null,
               "higgsfield": {
-                "videoSourceUrl": null,
+                "videoSourceUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/hooks/EP151.mp4",
                 "source": null,
                 "duree": "10 s",
                 "format": "vertical 9:16",
@@ -33508,6 +33508,12 @@
                   ],
                   "titre": "Le plat, filmé comme une pub — La carte à l'écran | FoodEatUp"
                 }
+              },
+              "story": {
+                "format": "9:16 · 1080 × 1920 · 10 s",
+                "hook": "Regarde-le une seconde",
+                "punchline": "Voilà pourquoi on se lève à six heures",
+                "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP151.mp4"
               }
             },
             {
@@ -33531,7 +33537,7 @@
               "tutoriel": null,
               "tutorielModuleUrl": null,
               "higgsfield": {
-                "videoSourceUrl": null,
+                "videoSourceUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/hooks/EP152.mp4",
                 "source": null,
                 "duree": "10 s",
                 "format": "vertical 9:16",
@@ -33727,6 +33733,12 @@
                   ],
                   "titre": "La recette du plat signature — La carte à l'écran | FoodEatUp"
                 }
+              },
+              "story": {
+                "format": "9:16 · 1080 × 1920 · 10 s",
+                "hook": "On ne cache rien",
+                "punchline": "Refais-la chez toi. On t'attend quand même",
+                "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP152.mp4"
               }
             },
             {
@@ -34407,7 +34419,7 @@
               "tutoriel": null,
               "tutorielModuleUrl": null,
               "higgsfield": {
-                "videoSourceUrl": null,
+                "videoSourceUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/hooks/EP156.mp4",
                 "source": null,
                 "duree": "10 s",
                 "format": "vertical 9:16",
@@ -34603,6 +34615,12 @@
                   ],
                   "titre": "Le dessert qu'on ne montre jamais — La carte à l'écran | FoodEatUp"
                 }
+              },
+              "story": {
+                "format": "9:16 · 1080 × 1920 · 10 s",
+                "hook": "Ce que tu ne vois jamais",
+                "punchline": "Trente secondes avant ton assiette",
+                "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP156.mp4"
               }
             },
             {
@@ -34845,7 +34863,7 @@
               "tutoriel": null,
               "tutorielModuleUrl": null,
               "higgsfield": {
-                "videoSourceUrl": null,
+                "videoSourceUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/hooks/EP158.mp4",
                 "source": null,
                 "duree": "10 s",
                 "format": "vertical 9:16",
@@ -35041,6 +35059,12 @@
                   ],
                   "titre": "On diffuse le match — Les événements | FoodEatUp"
                 }
+              },
+              "story": {
+                "format": "9:16 · 1080 × 1920 · 10 s",
+                "hook": "On diffuse le match",
+                "punchline": "L'écran est grand. La table se réserve",
+                "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP158.mp4"
               }
             },
             {
@@ -35064,7 +35088,7 @@
               "tutoriel": null,
               "tutorielModuleUrl": null,
               "higgsfield": {
-                "videoSourceUrl": null,
+                "videoSourceUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/hooks/EP159.mp4",
                 "source": null,
                 "duree": "10 s",
                 "format": "vertical 9:16",
@@ -35260,6 +35284,12 @@
                   ],
                   "titre": "Fêtez votre anniversaire ici — Les événements | FoodEatUp"
                 }
+              },
+              "story": {
+                "format": "9:16 · 1080 × 1920 · 10 s",
+                "hook": "C'est ton anniversaire",
+                "punchline": "On s'occupe du reste",
+                "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP159.mp4"
               }
             },
             {
@@ -36816,7 +36846,7 @@
               "tutoriel": null,
               "tutorielModuleUrl": null,
               "higgsfield": {
-                "videoSourceUrl": null,
+                "videoSourceUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/hooks/EP167.mp4",
                 "source": null,
                 "duree": "10 s",
                 "format": "vertical 9:16",
@@ -37012,6 +37042,12 @@
                   ],
                   "titre": "Le poste qu'on ne montre jamais — Les coulisses | FoodEatUp"
                 }
+              },
+              "story": {
+                "format": "9:16 · 1080 × 1920 · 10 s",
+                "hook": "Le poste qu'on ne montre jamais",
+                "punchline": "Sans lui, rien ne sort",
+                "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP167.mp4"
               }
             },
             {
@@ -38349,7 +38385,7 @@
               "tutoriel": null,
               "tutorielModuleUrl": null,
               "higgsfield": {
-                "videoSourceUrl": null,
+                "videoSourceUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/hooks/EP174.mp4",
                 "source": null,
                 "duree": "10 s",
                 "format": "vertical 9:16",
@@ -38545,6 +38581,12 @@
                   ],
                   "titre": "Le premier rendez-vous — Le client | FoodEatUp"
                 }
+              },
+              "story": {
+                "format": "9:16 · 1080 × 1920 · 10 s",
+                "hook": "Premier rendez-vous",
+                "punchline": "On ne vous dérangera pas",
+                "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP174.mp4"
               }
             },
             {
@@ -39444,7 +39486,7 @@
               "tutoriel": null,
               "tutorielModuleUrl": null,
               "higgsfield": {
-                "videoSourceUrl": null,
+                "videoSourceUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/hooks/EP179.mp4",
                 "source": null,
                 "duree": "10 s",
                 "format": "vertical 9:16",
@@ -39640,6 +39682,12 @@
                   ],
                   "titre": "Le jour de fermeture — La maison | FoodEatUp"
                 }
+              },
+              "story": {
+                "format": "9:16 · 1080 × 1920 · 10 s",
+                "hook": "Fermé le lundi",
+                "punchline": "Ce n'est pas un jour de repos",
+                "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP179.mp4"
               }
             },
             {
@@ -39663,7 +39711,7 @@
               "tutoriel": null,
               "tutorielModuleUrl": null,
               "higgsfield": {
-                "videoSourceUrl": null,
+                "videoSourceUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/hooks/EP180.mp4",
                 "source": null,
                 "duree": "10 s",
                 "format": "vertical 9:16",
@@ -39859,6 +39907,12 @@
                   ],
                   "titre": "Un an de restaurant — La maison | FoodEatUp"
                 }
+              },
+              "story": {
+                "format": "9:16 · 1080 × 1920 · 10 s",
+                "hook": "Un an. Les vrais chiffres",
+                "punchline": "Merci",
+                "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP180.mp4"
               }
             }
           ]
@@ -39890,7 +39944,7 @@
               "tutoriel": null,
               "tutorielModuleUrl": "https://tutoriel.foodeatup.com/module/caroline-ia",
               "higgsfield": {
-                "videoSourceUrl": null,
+                "videoSourceUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/hooks/EP181.mp4",
                 "source": null,
                 "duree": "10 s",
                 "format": "vertical 9:16",
@@ -40069,7 +40123,7 @@
                 "format": "9:16 · 1080 × 1920 · 10 s",
                 "hook": "Vingt heures dix. Personne ne décroche",
                 "punchline": "Le téléphone, lui, ne prend jamais sa pause",
-                "url": null
+                "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP181.mp4"
               }
             },
             {
@@ -46018,7 +46072,7 @@
               "tutoriel": null,
               "tutorielModuleUrl": "https://tutoriel.foodeatup.com/module/predibot",
               "higgsfield": {
-                "videoSourceUrl": null,
+                "videoSourceUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/hooks/EP211.mp4",
                 "source": null,
                 "duree": "10 s",
                 "format": "vertical 9:16",
@@ -46197,7 +46251,7 @@
                 "format": "9:16 · 1080 × 1920 · 10 s",
                 "hook": "Sept heures. Le café n'est pas encore prêt",
                 "punchline": "Jarvis, lui, a déjà tout lu",
-                "url": null
+                "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP211.mp4"
               }
             },
             {

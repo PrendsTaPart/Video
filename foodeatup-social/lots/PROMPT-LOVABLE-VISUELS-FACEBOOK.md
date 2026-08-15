@@ -45,7 +45,7 @@ public/facebook/EP002.jpg
 public/facebook/EP150.jpg
 ```
 
-`src/components/FormatsSociaux.tsx` va chercher `/facebook/{id}.jpg` et
+`src/components/PieceReseau.tsx` va chercher `/facebook/{id}.jpg` et
 affiche un emplacement vide tant que le fichier manque.
 
 **JPEG, 1080 × 1350 exactement, qualité 85.** Le 4:5 est le format que
