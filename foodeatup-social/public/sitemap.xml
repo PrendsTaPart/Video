@@ -385,4 +385,34 @@
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
+  <url>
+    <loc>https://foodeatup-social.lovable.app/series/il-etait-une-fois-un-restaurant</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://foodeatup-social.lovable.app/series/il-etait-une-fois-un-restaurant/saison/1</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://foodeatup-social.lovable.app/series/il-etait-une-fois-un-restaurant/saison/2</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://foodeatup-social.lovable.app/series/il-etait-une-fois-un-restaurant/saison/3</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://foodeatup-social.lovable.app/series/il-etait-une-fois-un-restaurant/saison/4</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://foodeatup-social.lovable.app/series/il-etait-une-fois-un-restaurant/saison/5</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
 </urlset>

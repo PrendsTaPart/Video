@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Donne une date aux 62 épisodes des séries 2 et 3.
+"""Donne une date aux épisodes des séries qui n'en ont pas.
 
     python3 scripts/dater-series-2-3.py
 
@@ -26,7 +26,7 @@ R = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 INVENTAIRE = os.path.join(os.path.dirname(R), "foodeatup-social", "data", "series.json")
 
 # Les deux séries à dater, dans l'ordre de diffusion voulu.
-A_DATER = ("une-journee", "lia-dans-foodeatup")
+A_DATER = ("une-journee", "lia-dans-foodeatup", "il-etait-une-fois-un-restaurant")
 
 
 def main():

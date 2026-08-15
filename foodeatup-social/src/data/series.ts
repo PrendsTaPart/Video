@@ -87,6 +87,18 @@ export type Episode = {
   role?: string;
   /** L'arc narratif — la carte, les événements, les coulisses, le client, la maison. */
   arc?: string;
+  /*
+   * Série « Il était une fois un restaurant » — le film en trente-cinq plans.
+   *
+   * Ce n'est pas une suite d'épisodes mais un découpage : chaque plan sait où
+   * il tombe dans le film, et de quel côté du restaurant il parle. Sans ces
+   * deux champs, la page d'un plan ressemble à celle d'un épisode isolé et on
+   * ne peut plus se situer dans l'histoire.
+   */
+  /** Le côté du restaurant : en cuisine, en salle, au bureau, à la maison. */
+  lieu?: string;
+  /** Le rang du plan dans le film : « 12 / 35 ». */
+  planDuFilm?: string;
   /** Pourquoi ce contenu fonctionne, du point de vue du restaurateur. */
   ressort?: string;
   /** L'unique phrase de logiciel de l'épisode. Elle vient APRÈS le contenu. */
@@ -23078,6 +23090,2641 @@ export const series: Serie[] = [
               "youtube": {
                 "statut": "a_venir",
                 "date": "2027-05-07",
+                "heure": "10:00",
+                "compte": "@FoodEatUp",
+                "format": "Short 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              }
+            },
+            "storyUrl": null
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "il-etait-une-fois-un-restaurant",
+    "nom": "Il était une fois un restaurant",
+    "pitch": "Un film publicitaire de trois cent cinquante secondes, découpé en trente-cinq plans de dix. Quatre histoires — la cuisine, la salle, le bureau, le client — avant FoodEatUp puis avec, et un dernier acte où elles se croisent le même vendredi soir. Le même acteur joue les quatre rôles ; le film ne le dit qu'à la fin.",
+    "format": "35 × 10 s · un film de 350 s · 9:16",
+    "statut": "a-venir",
+    "premiereDiffusion": "2027-05-08",
+    "saisons": [
+      {
+        "numero": 1,
+        "titre": "En cuisine",
+        "pitch": "Il ouvre à sept heures et ferme à minuit. Entre les deux, il ne sait pas ce que son plat lui coûte.",
+        "episodes": [
+          {
+            "id": "EP501",
+            "numero": 501,
+            "saison": 1,
+            "slug": "ep501-sept-heures-et-personne",
+            "titre": "Sept heures, et personne",
+            "module": "KDS",
+            "chapitre": "Il était une fois",
+            "accroche": "Il était une fois un restaurant, et un homme qui ouvrait seul.",
+            "punchline": "Personne ne verra jamais ces quatre heures-là.",
+            "resume": "Sept heures du matin. Le chef ouvre, allume, relève les températures, reçoit la livraison et décide la carte du jour sur ce qui est arrivé. Quatre heures avant que quiconque pousse la porte.",
+            "statut": "a_produire",
+            "dureeSecondes": 10.0,
+            "videoUrl": null,
+            "posterUrl": null,
+            "datePrevue": "2027-05-08",
+            "troisMots": "IL ÉTAIT UNE FOIS",
+            "lieu": "En cuisine",
+            "role": "Le chef",
+            "arc": "Avant FoodEatUp",
+            "planDuFilm": "1 / 35",
+            "tutorielModuleUrl": null,
+            "tutoriel": null,
+            "masterRapidoUrl": null,
+            "higgsfield": {
+              "duree": "10 s",
+              "format": "vertical 9:16",
+              "videoSourceUrl": null,
+              "source": null
+            },
+            "reseaux": {
+              "facebook": {
+                "statut": "a_venir",
+                "date": "2027-05-08",
+                "heure": "12:00",
+                "compte": "FoodEatUp",
+                "format": "Vidéo native 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              },
+              "instagram": {
+                "statut": "a_venir",
+                "date": "2027-05-08",
+                "heure": "18:30",
+                "compte": "foodeatup.cocuisinage",
+                "format": "Reel 9:16",
+                "lienCta": null
+              },
+              "tiktok": {
+                "statut": "a_venir",
+                "date": "2027-05-08",
+                "heure": "19:00",
+                "compte": "foodeatup",
+                "format": "Vidéo 9:16",
+                "lienCta": null
+              },
+              "linkedin": {
+                "statut": "a_venir",
+                "date": "2027-05-08",
+                "heure": "08:00",
+                "compte": "FoodEatUp",
+                "format": "Vidéo native 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              },
+              "youtube": {
+                "statut": "a_venir",
+                "date": "2027-05-08",
+                "heure": "10:00",
+                "compte": "@FoodEatUp",
+                "format": "Short 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              }
+            },
+            "storyUrl": null
+          },
+          {
+            "id": "EP502",
+            "numero": 502,
+            "saison": 1,
+            "slug": "ep502-le-carnet-le-tableau-la-tete",
+            "titre": "Le carnet, le tableau, la tête",
+            "module": "KDS",
+            "chapitre": "Ce qui coince",
+            "accroche": "Il tenait ses comptes à trois endroits. Aucun ne parlait aux autres.",
+            "punchline": "Trois vérités, et pas une seule bonne.",
+            "resume": "Un carnet pour les livraisons, un tableau blanc pour la production, et le reste dans la tête. Trois systèmes qui ne se parlent pas : la marge du plat, personne ne la connaît vraiment.",
+            "statut": "a_produire",
+            "dureeSecondes": 10.0,
+            "videoUrl": null,
+            "posterUrl": null,
+            "datePrevue": "2027-05-09",
+            "troisMots": "CE QUI COINCE",
+            "lieu": "En cuisine",
+            "role": "Le chef",
+            "arc": "Avant FoodEatUp",
+            "planDuFilm": "2 / 35",
+            "tutorielModuleUrl": null,
+            "tutoriel": null,
+            "masterRapidoUrl": null,
+            "higgsfield": {
+              "duree": "10 s",
+              "format": "vertical 9:16",
+              "videoSourceUrl": null,
+              "source": null
+            },
+            "reseaux": {
+              "facebook": {
+                "statut": "a_venir",
+                "date": "2027-05-09",
+                "heure": "12:00",
+                "compte": "FoodEatUp",
+                "format": "Vidéo native 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              },
+              "instagram": {
+                "statut": "a_venir",
+                "date": "2027-05-09",
+                "heure": "18:30",
+                "compte": "foodeatup.cocuisinage",
+                "format": "Reel 9:16",
+                "lienCta": null
+              },
+              "tiktok": {
+                "statut": "a_venir",
+                "date": "2027-05-09",
+                "heure": "19:00",
+                "compte": "foodeatup",
+                "format": "Vidéo 9:16",
+                "lienCta": null
+              },
+              "linkedin": {
+                "statut": "a_venir",
+                "date": "2027-05-09",
+                "heure": "08:00",
+                "compte": "FoodEatUp",
+                "format": "Vidéo native 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              },
+              "youtube": {
+                "statut": "a_venir",
+                "date": "2027-05-09",
+                "heure": "10:00",
+                "compte": "@FoodEatUp",
+                "format": "Short 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              }
+            },
+            "storyUrl": null
+          },
+          {
+            "id": "EP503",
+            "numero": 503,
+            "saison": 1,
+            "slug": "ep503-vendredi-le-bac-vide",
+            "titre": "Vendredi, le bac vide",
+            "module": "KDS",
+            "chapitre": "Le soir où ça casse",
+            "accroche": "Puis vint le vendredi où le bac était vide.",
+            "punchline": "Il l'avait dit le matin. On l'a écouté à vingt heures.",
+            "resume": "Dix-neuf heures quarante, plein service : le bac du plat signature est vide. Il l'avait annoncé le matin. Personne n'avait de quoi le vérifier.",
+            "statut": "a_produire",
+            "dureeSecondes": 10.0,
+            "videoUrl": null,
+            "posterUrl": null,
+            "datePrevue": "2027-05-10",
+            "troisMots": "LE SOIR OÙ ÇA CASSE",
+            "lieu": "En cuisine",
+            "role": "Le chef",
+            "arc": "Avant FoodEatUp",
+            "planDuFilm": "3 / 35",
+            "tutorielModuleUrl": null,
+            "tutoriel": null,
+            "masterRapidoUrl": null,
+            "higgsfield": {
+              "duree": "10 s",
+              "format": "vertical 9:16",
+              "videoSourceUrl": null,
+              "source": null
+            },
+            "reseaux": {
+              "facebook": {
+                "statut": "a_venir",
+                "date": "2027-05-10",
+                "heure": "12:00",
+                "compte": "FoodEatUp",
+                "format": "Vidéo native 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              },
+              "instagram": {
+                "statut": "a_venir",
+                "date": "2027-05-10",
+                "heure": "18:30",
+                "compte": "foodeatup.cocuisinage",
+                "format": "Reel 9:16",
+                "lienCta": null
+              },
+              "tiktok": {
+                "statut": "a_venir",
+                "date": "2027-05-10",
+                "heure": "19:00",
+                "compte": "foodeatup",
+                "format": "Vidéo 9:16",
+                "lienCta": null
+              },
+              "linkedin": {
+                "statut": "a_venir",
+                "date": "2027-05-10",
+                "heure": "08:00",
+                "compte": "FoodEatUp",
+                "format": "Vidéo native 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              },
+              "youtube": {
+                "statut": "a_venir",
+                "date": "2027-05-10",
+                "heure": "10:00",
+                "compte": "@FoodEatUp",
+                "format": "Short 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              }
+            },
+            "storyUrl": null
+          },
+          {
+            "id": "EP504",
+            "numero": 504,
+            "saison": 1,
+            "slug": "ep504-une-phrase-un-matin",
+            "titre": "Une phrase, un matin",
+            "module": "KDS",
+            "chapitre": "La bascule",
+            "accroche": "Un matin, il n'a pas ouvert le carnet.",
+            "punchline": "Il a simplement demandé.",
+            "resume": "Même cuisine, même heure. Il ne cherche plus dans le carnet : il demande ce qui manque, et la réponse arrive avant qu'il ait fini son café.",
+            "statut": "a_produire",
+            "dureeSecondes": 10.0,
+            "videoUrl": null,
+            "posterUrl": null,
+            "datePrevue": "2027-05-11",
+            "troisMots": "LA BASCULE",
+            "lieu": "En cuisine",
+            "role": "Le chef",
+            "arc": "La bascule",
+            "planDuFilm": "4 / 35",
+            "tutorielModuleUrl": null,
+            "tutoriel": null,
+            "masterRapidoUrl": null,
+            "higgsfield": {
+              "duree": "10 s",
+              "format": "vertical 9:16",
+              "videoSourceUrl": null,
+              "source": null
+            },
+            "reseaux": {
+              "facebook": {
+                "statut": "a_venir",
+                "date": "2027-05-11",
+                "heure": "12:00",
+                "compte": "FoodEatUp",
+                "format": "Vidéo native 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              },
+              "instagram": {
+                "statut": "a_venir",
+                "date": "2027-05-11",
+                "heure": "18:30",
+                "compte": "foodeatup.cocuisinage",
+                "format": "Reel 9:16",
+                "lienCta": null
+              },
+              "tiktok": {
+                "statut": "a_venir",
+                "date": "2027-05-11",
+                "heure": "19:00",
+                "compte": "foodeatup",
+                "format": "Vidéo 9:16",
+                "lienCta": null
+              },
+              "linkedin": {
+                "statut": "a_venir",
+                "date": "2027-05-11",
+                "heure": "08:00",
+                "compte": "FoodEatUp",
+                "format": "Vidéo native 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              },
+              "youtube": {
+                "statut": "a_venir",
+                "date": "2027-05-11",
+                "heure": "10:00",
+                "compte": "@FoodEatUp",
+                "format": "Short 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              }
+            },
+            "storyUrl": null
+          },
+          {
+            "id": "EP505",
+            "numero": 505,
+            "saison": 1,
+            "slug": "ep505-le-plat-et-ce-qu-il-coute",
+            "titre": "Le plat, et ce qu'il coûte",
+            "module": "KDS",
+            "chapitre": "Le même geste, autrement",
+            "accroche": "Le même geste, la même sauce. Mais il sait, maintenant.",
+            "punchline": "Le goût n'a pas changé. Le reste, si.",
+            "resume": "La fiche technique dit ce qu'il y a dans le plat, ce qu'il coûte et ce qu'il rapporte. Le geste est le même qu'avant ; ce qui change, c'est qu'il ne se demande plus s'il gagne de l'argent dessus.",
+            "statut": "a_produire",
+            "dureeSecondes": 10.0,
+            "videoUrl": null,
+            "posterUrl": null,
+            "datePrevue": "2027-05-12",
+            "troisMots": "LE MÊME GESTE, AUTREMENT",
+            "lieu": "En cuisine",
+            "role": "Le chef",
+            "arc": "Avec FoodEatUp",
+            "planDuFilm": "5 / 35",
+            "tutorielModuleUrl": null,
+            "tutoriel": null,
+            "masterRapidoUrl": null,
+            "higgsfield": {
+              "duree": "10 s",
+              "format": "vertical 9:16",
+              "videoSourceUrl": null,
+              "source": null
+            },
+            "reseaux": {
+              "facebook": {
+                "statut": "a_venir",
+                "date": "2027-05-12",
+                "heure": "12:00",
+                "compte": "FoodEatUp",
+                "format": "Vidéo native 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              },
+              "instagram": {
+                "statut": "a_venir",
+                "date": "2027-05-12",
+                "heure": "18:30",
+                "compte": "foodeatup.cocuisinage",
+                "format": "Reel 9:16",
+                "lienCta": null
+              },
+              "tiktok": {
+                "statut": "a_venir",
+                "date": "2027-05-12",
+                "heure": "19:00",
+                "compte": "foodeatup",
+                "format": "Vidéo 9:16",
+                "lienCta": null
+              },
+              "linkedin": {
+                "statut": "a_venir",
+                "date": "2027-05-12",
+                "heure": "08:00",
+                "compte": "FoodEatUp",
+                "format": "Vidéo native 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              },
+              "youtube": {
+                "statut": "a_venir",
+                "date": "2027-05-12",
+                "heure": "10:00",
+                "compte": "@FoodEatUp",
+                "format": "Short 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              }
+            },
+            "storyUrl": null
+          },
+          {
+            "id": "EP506",
+            "numero": 506,
+            "saison": 1,
+            "slug": "ep506-il-ferme-et-il-sait",
+            "titre": "Il ferme, et il sait",
+            "module": "KDS",
+            "chapitre": "Ce qui a changé",
+            "accroche": "Il ferme toujours à minuit. Mais il ne se demande plus rien.",
+            "punchline": "La marge du jour l'attendait avant qu'il éteigne.",
+            "resume": "La cuisine est rangée, les pertes saisies, le nettoyage photographié. La marge du service s'affiche seule. Il ferme en sachant, au lieu de fermer en espérant.",
+            "statut": "a_produire",
+            "dureeSecondes": 10.0,
+            "videoUrl": null,
+            "posterUrl": null,
+            "datePrevue": "2027-05-13",
+            "troisMots": "CE QUI A CHANGÉ",
+            "lieu": "En cuisine",
+            "role": "Le chef",
+            "arc": "Avec FoodEatUp",
+            "planDuFilm": "6 / 35",
+            "tutorielModuleUrl": null,
+            "tutoriel": null,
+            "masterRapidoUrl": null,
+            "higgsfield": {
+              "duree": "10 s",
+              "format": "vertical 9:16",
+              "videoSourceUrl": null,
+              "source": null
+            },
+            "reseaux": {
+              "facebook": {
+                "statut": "a_venir",
+                "date": "2027-05-13",
+                "heure": "12:00",
+                "compte": "FoodEatUp",
+                "format": "Vidéo native 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              },
+              "instagram": {
+                "statut": "a_venir",
+                "date": "2027-05-13",
+                "heure": "18:30",
+                "compte": "foodeatup.cocuisinage",
+                "format": "Reel 9:16",
+                "lienCta": null
+              },
+              "tiktok": {
+                "statut": "a_venir",
+                "date": "2027-05-13",
+                "heure": "19:00",
+                "compte": "foodeatup",
+                "format": "Vidéo 9:16",
+                "lienCta": null
+              },
+              "linkedin": {
+                "statut": "a_venir",
+                "date": "2027-05-13",
+                "heure": "08:00",
+                "compte": "FoodEatUp",
+                "format": "Vidéo native 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              },
+              "youtube": {
+                "statut": "a_venir",
+                "date": "2027-05-13",
+                "heure": "10:00",
+                "compte": "@FoodEatUp",
+                "format": "Short 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              }
+            },
+            "storyUrl": null
+          }
+        ]
+      },
+      {
+        "numero": 2,
+        "titre": "En salle",
+        "pitch": "Six tables, quatre canaux, une seule mémoire : la sienne. Et elle rentre chez elle à minuit.",
+        "episodes": [
+          {
+            "id": "EP507",
+            "numero": 507,
+            "saison": 2,
+            "slug": "ep507-six-tables-une-memoire",
+            "titre": "Six tables, une mémoire",
+            "module": "Réservation",
+            "chapitre": "Il était une fois",
+            "accroche": "Il était une fois un homme qui tenait une salle entière dans sa tête.",
+            "punchline": "Et sa tête rentrait chez elle à minuit.",
+            "resume": "Le maître d'hôtel connaît les allergies, les habitudes, le prénom du fils. Tout est dans sa tête, et rien n'est écrit nulle part.",
+            "statut": "a_produire",
+            "dureeSecondes": 10.0,
+            "videoUrl": null,
+            "posterUrl": null,
+            "datePrevue": "2027-05-14",
+            "troisMots": "IL ÉTAIT UNE FOIS",
+            "lieu": "En salle",
+            "role": "Le maître d'hôtel",
+            "arc": "Avant FoodEatUp",
+            "planDuFilm": "7 / 35",
+            "tutorielModuleUrl": null,
+            "tutoriel": null,
+            "masterRapidoUrl": null,
+            "higgsfield": {
+              "duree": "10 s",
+              "format": "vertical 9:16",
+              "videoSourceUrl": null,
+              "source": null
+            },
+            "reseaux": {
+              "facebook": {
+                "statut": "a_venir",
+                "date": "2027-05-14",
+                "heure": "12:00",
+                "compte": "FoodEatUp",
+                "format": "Vidéo native 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              },
+              "instagram": {
+                "statut": "a_venir",
+                "date": "2027-05-14",
+                "heure": "18:30",
+                "compte": "foodeatup.cocuisinage",
+                "format": "Reel 9:16",
+                "lienCta": null
+              },
+              "tiktok": {
+                "statut": "a_venir",
+                "date": "2027-05-14",
+                "heure": "19:00",
+                "compte": "foodeatup",
+                "format": "Vidéo 9:16",
+                "lienCta": null
+              },
+              "linkedin": {
+                "statut": "a_venir",
+                "date": "2027-05-14",
+                "heure": "08:00",
+                "compte": "FoodEatUp",
+                "format": "Vidéo native 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              },
+              "youtube": {
+                "statut": "a_venir",
+                "date": "2027-05-14",
+                "heure": "10:00",
+                "compte": "@FoodEatUp",
+                "format": "Short 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              }
+            },
+            "storyUrl": null
+          },
+          {
+            "id": "EP508",
+            "numero": 508,
+            "saison": 2,
+            "slug": "ep508-le-telephone-qui-sonne-dans-le-vide",
+            "titre": "Le téléphone qui sonne dans le vide",
+            "module": "Réservation",
+            "chapitre": "Ce qui coince",
+            "accroche": "Quatre canaux, et une seule paire de mains.",
+            "punchline": "Le téléphone, lui, ne prend jamais sa pause.",
+            "resume": "Le téléphone, le site, la plateforme, la porte. Quatre canaux de réservation qui n'ont aucun moyen de savoir ce que les trois autres ont accepté.",
+            "statut": "a_produire",
+            "dureeSecondes": 10.0,
+            "videoUrl": null,
+            "posterUrl": null,
+            "datePrevue": "2027-05-15",
+            "troisMots": "CE QUI COINCE",
+            "lieu": "En salle",
+            "role": "Le maître d'hôtel",
+            "arc": "Avant FoodEatUp",
+            "planDuFilm": "8 / 35",
+            "tutorielModuleUrl": null,
+            "tutoriel": null,
+            "masterRapidoUrl": null,
+            "higgsfield": {
+              "duree": "10 s",
+              "format": "vertical 9:16",
+              "videoSourceUrl": null,
+              "source": null
+            },
+            "reseaux": {
+              "facebook": {
+                "statut": "a_venir",
+                "date": "2027-05-15",
+                "heure": "12:00",
+                "compte": "FoodEatUp",
+                "format": "Vidéo native 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              },
+              "instagram": {
+                "statut": "a_venir",
+                "date": "2027-05-15",
+                "heure": "18:30",
+                "compte": "foodeatup.cocuisinage",
+                "format": "Reel 9:16",
+                "lienCta": null
+              },
+              "tiktok": {
+                "statut": "a_venir",
+                "date": "2027-05-15",
+                "heure": "19:00",
+                "compte": "foodeatup",
+                "format": "Vidéo 9:16",
+                "lienCta": null
+              },
+              "linkedin": {
+                "statut": "a_venir",
+                "date": "2027-05-15",
+                "heure": "08:00",
+                "compte": "FoodEatUp",
+                "format": "Vidéo native 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              },
+              "youtube": {
+                "statut": "a_venir",
+                "date": "2027-05-15",
+                "heure": "10:00",
+                "compte": "@FoodEatUp",
+                "format": "Short 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              }
+            },
+            "storyUrl": null
+          },
+          {
+            "id": "EP509",
+            "numero": 509,
+            "saison": 2,
+            "slug": "ep509-la-table-de-douze-qui-n-existait-pas",
+            "titre": "La table de douze qui n'existait pas",
+            "module": "Réservation",
+            "chapitre": "Le soir où ça casse",
+            "accroche": "Puis vint le soir où deux tables portaient le même numéro.",
+            "punchline": "Douze personnes debout, et une salle complète.",
+            "resume": "Une table de douze acceptée au téléphone trois jours plus tôt, jamais reportée dans le plan de salle. Elle arrive à vingt heures. La salle est pleine.",
+            "statut": "a_produire",
+            "dureeSecondes": 10.0,
+            "videoUrl": null,
+            "posterUrl": null,
+            "datePrevue": "2027-05-16",
+            "troisMots": "LE SOIR OÙ ÇA CASSE",
+            "lieu": "En salle",
+            "role": "Le maître d'hôtel",
+            "arc": "Avant FoodEatUp",
+            "planDuFilm": "9 / 35",
+            "tutorielModuleUrl": null,
+            "tutoriel": null,
+            "masterRapidoUrl": null,
+            "higgsfield": {
+              "duree": "10 s",
+              "format": "vertical 9:16",
+              "videoSourceUrl": null,
+              "source": null
+            },
+            "reseaux": {
+              "facebook": {
+                "statut": "a_venir",
+                "date": "2027-05-16",
+                "heure": "12:00",
+                "compte": "FoodEatUp",
+                "format": "Vidéo native 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              },
+              "instagram": {
+                "statut": "a_venir",
+                "date": "2027-05-16",
+                "heure": "18:30",
+                "compte": "foodeatup.cocuisinage",
+                "format": "Reel 9:16",
+                "lienCta": null
+              },
+              "tiktok": {
+                "statut": "a_venir",
+                "date": "2027-05-16",
+                "heure": "19:00",
+                "compte": "foodeatup",
+                "format": "Vidéo 9:16",
+                "lienCta": null
+              },
+              "linkedin": {
+                "statut": "a_venir",
+                "date": "2027-05-16",
+                "heure": "08:00",
+                "compte": "FoodEatUp",
+                "format": "Vidéo native 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              },
+              "youtube": {
+                "statut": "a_venir",
+                "date": "2027-05-16",
+                "heure": "10:00",
+                "compte": "@FoodEatUp",
+                "format": "Short 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              }
+            },
+            "storyUrl": null
+          },
+          {
+            "id": "EP510",
+            "numero": 510,
+            "saison": 2,
+            "slug": "ep510-le-plan-de-salle-qui-se-remplit-tout-seul",
+            "titre": "Le plan de salle qui se remplit tout seul",
+            "module": "Réservation",
+            "chapitre": "La bascule",
+            "accroche": "Un soir, le carnet est resté fermé.",
+            "punchline": "Les quatre canaux arrivaient au même endroit.",
+            "resume": "Le téléphone, le site, la plateforme et la porte tombent dans le même plan de salle. La contrainte alimentaire arrive écrite sur la réservation.",
+            "statut": "a_produire",
+            "dureeSecondes": 10.0,
+            "videoUrl": null,
+            "posterUrl": null,
+            "datePrevue": "2027-05-17",
+            "troisMots": "LA BASCULE",
+            "lieu": "En salle",
+            "role": "Le maître d'hôtel",
+            "arc": "La bascule",
+            "planDuFilm": "10 / 35",
+            "tutorielModuleUrl": null,
+            "tutoriel": null,
+            "masterRapidoUrl": null,
+            "higgsfield": {
+              "duree": "10 s",
+              "format": "vertical 9:16",
+              "videoSourceUrl": null,
+              "source": null
+            },
+            "reseaux": {
+              "facebook": {
+                "statut": "a_venir",
+                "date": "2027-05-17",
+                "heure": "12:00",
+                "compte": "FoodEatUp",
+                "format": "Vidéo native 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              },
+              "instagram": {
+                "statut": "a_venir",
+                "date": "2027-05-17",
+                "heure": "18:30",
+                "compte": "foodeatup.cocuisinage",
+                "format": "Reel 9:16",
+                "lienCta": null
+              },
+              "tiktok": {
+                "statut": "a_venir",
+                "date": "2027-05-17",
+                "heure": "19:00",
+                "compte": "foodeatup",
+                "format": "Vidéo 9:16",
+                "lienCta": null
+              },
+              "linkedin": {
+                "statut": "a_venir",
+                "date": "2027-05-17",
+                "heure": "08:00",
+                "compte": "FoodEatUp",
+                "format": "Vidéo native 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              },
+              "youtube": {
+                "statut": "a_venir",
+                "date": "2027-05-17",
+                "heure": "10:00",
+                "compte": "@FoodEatUp",
+                "format": "Short 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              }
+            },
+            "storyUrl": null
+          },
+          {
+            "id": "EP511",
+            "numero": 511,
+            "saison": 2,
+            "slug": "ep511-le-prenom-du-fils",
+            "titre": "Le prénom du fils",
+            "module": "Réservation",
+            "chapitre": "Le même geste, autrement",
+            "accroche": "Ce qu'il savait par cœur, quelqu'un d'autre le sait aussi maintenant.",
+            "punchline": "Ce n'est plus sa mémoire. C'est celle de la maison.",
+            "resume": "Les allergies, les habitudes, la dernière visite : la fiche client les porte. Le service ne dépend plus de qui travaille ce soir-là.",
+            "statut": "a_produire",
+            "dureeSecondes": 10.0,
+            "videoUrl": null,
+            "posterUrl": null,
+            "datePrevue": "2027-05-18",
+            "troisMots": "LE MÊME GESTE, AUTREMENT",
+            "lieu": "En salle",
+            "role": "Le maître d'hôtel",
+            "arc": "Avec FoodEatUp",
+            "planDuFilm": "11 / 35",
+            "tutorielModuleUrl": null,
+            "tutoriel": null,
+            "masterRapidoUrl": null,
+            "higgsfield": {
+              "duree": "10 s",
+              "format": "vertical 9:16",
+              "videoSourceUrl": null,
+              "source": null
+            },
+            "reseaux": {
+              "facebook": {
+                "statut": "a_venir",
+                "date": "2027-05-18",
+                "heure": "12:00",
+                "compte": "FoodEatUp",
+                "format": "Vidéo native 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              },
+              "instagram": {
+                "statut": "a_venir",
+                "date": "2027-05-18",
+                "heure": "18:30",
+                "compte": "foodeatup.cocuisinage",
+                "format": "Reel 9:16",
+                "lienCta": null
+              },
+              "tiktok": {
+                "statut": "a_venir",
+                "date": "2027-05-18",
+                "heure": "19:00",
+                "compte": "foodeatup",
+                "format": "Vidéo 9:16",
+                "lienCta": null
+              },
+              "linkedin": {
+                "statut": "a_venir",
+                "date": "2027-05-18",
+                "heure": "08:00",
+                "compte": "FoodEatUp",
+                "format": "Vidéo native 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              },
+              "youtube": {
+                "statut": "a_venir",
+                "date": "2027-05-18",
+                "heure": "10:00",
+                "compte": "@FoodEatUp",
+                "format": "Short 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              }
+            },
+            "storyUrl": null
+          },
+          {
+            "id": "EP512",
+            "numero": 512,
+            "saison": 2,
+            "slug": "ep512-minuit-et-rien-a-retenir",
+            "titre": "Minuit, et rien à retenir",
+            "module": "Réservation",
+            "chapitre": "Ce qui a changé",
+            "accroche": "Il rentre chez lui les mains vides. C'est nouveau.",
+            "punchline": "Ce qu'il sait est resté au restaurant.",
+            "resume": "Fin de service. Ce qui s'est passé ce soir est écrit là où le prochain service le lira. Il n'emporte plus rien.",
+            "statut": "a_produire",
+            "dureeSecondes": 10.0,
+            "videoUrl": null,
+            "posterUrl": null,
+            "datePrevue": "2027-05-19",
+            "troisMots": "CE QUI A CHANGÉ",
+            "lieu": "En salle",
+            "role": "Le maître d'hôtel",
+            "arc": "Avec FoodEatUp",
+            "planDuFilm": "12 / 35",
+            "tutorielModuleUrl": null,
+            "tutoriel": null,
+            "masterRapidoUrl": null,
+            "higgsfield": {
+              "duree": "10 s",
+              "format": "vertical 9:16",
+              "videoSourceUrl": null,
+              "source": null
+            },
+            "reseaux": {
+              "facebook": {
+                "statut": "a_venir",
+                "date": "2027-05-19",
+                "heure": "12:00",
+                "compte": "FoodEatUp",
+                "format": "Vidéo native 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              },
+              "instagram": {
+                "statut": "a_venir",
+                "date": "2027-05-19",
+                "heure": "18:30",
+                "compte": "foodeatup.cocuisinage",
+                "format": "Reel 9:16",
+                "lienCta": null
+              },
+              "tiktok": {
+                "statut": "a_venir",
+                "date": "2027-05-19",
+                "heure": "19:00",
+                "compte": "foodeatup",
+                "format": "Vidéo 9:16",
+                "lienCta": null
+              },
+              "linkedin": {
+                "statut": "a_venir",
+                "date": "2027-05-19",
+                "heure": "08:00",
+                "compte": "FoodEatUp",
+                "format": "Vidéo native 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              },
+              "youtube": {
+                "statut": "a_venir",
+                "date": "2027-05-19",
+                "heure": "10:00",
+                "compte": "@FoodEatUp",
+                "format": "Short 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              }
+            },
+            "storyUrl": null
+          }
+        ]
+      },
+      {
+        "numero": 3,
+        "titre": "Au bureau",
+        "pitch": "Il découvre le 15 du mois suivant si le mois d'avant était bon. C'est un peu tard pour changer quoi que ce soit.",
+        "episodes": [
+          {
+            "id": "EP513",
+            "numero": 513,
+            "saison": 3,
+            "slug": "ep513-le-bureau-au-dessus-de-la-salle",
+            "titre": "Le bureau au-dessus de la salle",
+            "module": "Comptabilité",
+            "chapitre": "Il était une fois",
+            "accroche": "Il était une fois un homme qui comptait au-dessus du bruit.",
+            "punchline": "Sous le plancher, le service. Au-dessus, les chiffres.",
+            "resume": "Un bureau minuscule au premier étage. Sous le plancher, cent couverts. Au-dessus, un homme qui essaie de savoir si la soirée est rentable.",
+            "statut": "a_produire",
+            "dureeSecondes": 10.0,
+            "videoUrl": null,
+            "posterUrl": null,
+            "datePrevue": "2027-05-20",
+            "troisMots": "IL ÉTAIT UNE FOIS",
+            "lieu": "Au bureau",
+            "role": "Le gérant",
+            "arc": "Avant FoodEatUp",
+            "planDuFilm": "13 / 35",
+            "tutorielModuleUrl": null,
+            "tutoriel": null,
+            "masterRapidoUrl": null,
+            "higgsfield": {
+              "duree": "10 s",
+              "format": "vertical 9:16",
+              "videoSourceUrl": null,
+              "source": null
+            },
+            "reseaux": {
+              "facebook": {
+                "statut": "a_venir",
+                "date": "2027-05-20",
+                "heure": "12:00",
+                "compte": "FoodEatUp",
+                "format": "Vidéo native 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              },
+              "instagram": {
+                "statut": "a_venir",
+                "date": "2027-05-20",
+                "heure": "18:30",
+                "compte": "foodeatup.cocuisinage",
+                "format": "Reel 9:16",
+                "lienCta": null
+              },
+              "tiktok": {
+                "statut": "a_venir",
+                "date": "2027-05-20",
+                "heure": "19:00",
+                "compte": "foodeatup",
+                "format": "Vidéo 9:16",
+                "lienCta": null
+              },
+              "linkedin": {
+                "statut": "a_venir",
+                "date": "2027-05-20",
+                "heure": "08:00",
+                "compte": "FoodEatUp",
+                "format": "Vidéo native 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              },
+              "youtube": {
+                "statut": "a_venir",
+                "date": "2027-05-20",
+                "heure": "10:00",
+                "compte": "@FoodEatUp",
+                "format": "Short 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              }
+            },
+            "storyUrl": null
+          },
+          {
+            "id": "EP514",
+            "numero": 514,
+            "saison": 3,
+            "slug": "ep514-la-pile-qui-grandit-toute-seule",
+            "titre": "La pile qui grandit toute seule",
+            "module": "Comptabilité",
+            "chapitre": "Ce qui coince",
+            "accroche": "Les factures arrivaient plus vite qu'il ne les ouvrait.",
+            "punchline": "C'est bien la seule chose ici qui pousse sans qu'on l'arrose.",
+            "resume": "Bons de livraison, factures fournisseurs, tickets de caisse. Tout arrive en papier, tout se ressaisit à la main, et rien ne se recoupe.",
+            "statut": "a_produire",
+            "dureeSecondes": 10.0,
+            "videoUrl": null,
+            "posterUrl": null,
+            "datePrevue": "2027-05-21",
+            "troisMots": "CE QUI COINCE",
+            "lieu": "Au bureau",
+            "role": "Le gérant",
+            "arc": "Avant FoodEatUp",
+            "planDuFilm": "14 / 35",
+            "tutorielModuleUrl": null,
+            "tutoriel": null,
+            "masterRapidoUrl": null,
+            "higgsfield": {
+              "duree": "10 s",
+              "format": "vertical 9:16",
+              "videoSourceUrl": null,
+              "source": null
+            },
+            "reseaux": {
+              "facebook": {
+                "statut": "a_venir",
+                "date": "2027-05-21",
+                "heure": "12:00",
+                "compte": "FoodEatUp",
+                "format": "Vidéo native 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              },
+              "instagram": {
+                "statut": "a_venir",
+                "date": "2027-05-21",
+                "heure": "18:30",
+                "compte": "foodeatup.cocuisinage",
+                "format": "Reel 9:16",
+                "lienCta": null
+              },
+              "tiktok": {
+                "statut": "a_venir",
+                "date": "2027-05-21",
+                "heure": "19:00",
+                "compte": "foodeatup",
+                "format": "Vidéo 9:16",
+                "lienCta": null
+              },
+              "linkedin": {
+                "statut": "a_venir",
+                "date": "2027-05-21",
+                "heure": "08:00",
+                "compte": "FoodEatUp",
+                "format": "Vidéo native 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              },
+              "youtube": {
+                "statut": "a_venir",
+                "date": "2027-05-21",
+                "heure": "10:00",
+                "compte": "@FoodEatUp",
+                "format": "Short 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              }
+            },
+            "storyUrl": null
+          },
+          {
+            "id": "EP515",
+            "numero": 515,
+            "saison": 3,
+            "slug": "ep515-le-quinze-du-mois-suivant",
+            "titre": "Le quinze du mois suivant",
+            "module": "Comptabilité",
+            "chapitre": "Le soir où ça casse",
+            "accroche": "Puis vint le jour où il apprit que le mois d'avant avait été mauvais.",
+            "punchline": "Un mois trop tard pour y changer quoi que ce soit.",
+            "resume": "Le bilan du mois arrive le 15 du mois suivant. Quand il découvre le problème, il a déjà quinze jours du mois d'après derrière lui.",
+            "statut": "a_produire",
+            "dureeSecondes": 10.0,
+            "videoUrl": null,
+            "posterUrl": null,
+            "datePrevue": "2027-05-22",
+            "troisMots": "LE SOIR OÙ ÇA CASSE",
+            "lieu": "Au bureau",
+            "role": "Le gérant",
+            "arc": "Avant FoodEatUp",
+            "planDuFilm": "15 / 35",
+            "tutorielModuleUrl": null,
+            "tutoriel": null,
+            "masterRapidoUrl": null,
+            "higgsfield": {
+              "duree": "10 s",
+              "format": "vertical 9:16",
+              "videoSourceUrl": null,
+              "source": null
+            },
+            "reseaux": {
+              "facebook": {
+                "statut": "a_venir",
+                "date": "2027-05-22",
+                "heure": "12:00",
+                "compte": "FoodEatUp",
+                "format": "Vidéo native 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              },
+              "instagram": {
+                "statut": "a_venir",
+                "date": "2027-05-22",
+                "heure": "18:30",
+                "compte": "foodeatup.cocuisinage",
+                "format": "Reel 9:16",
+                "lienCta": null
+              },
+              "tiktok": {
+                "statut": "a_venir",
+                "date": "2027-05-22",
+                "heure": "19:00",
+                "compte": "foodeatup",
+                "format": "Vidéo 9:16",
+                "lienCta": null
+              },
+              "linkedin": {
+                "statut": "a_venir",
+                "date": "2027-05-22",
+                "heure": "08:00",
+                "compte": "FoodEatUp",
+                "format": "Vidéo native 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              },
+              "youtube": {
+                "statut": "a_venir",
+                "date": "2027-05-22",
+                "heure": "10:00",
+                "compte": "@FoodEatUp",
+                "format": "Short 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              }
+            },
+            "storyUrl": null
+          },
+          {
+            "id": "EP516",
+            "numero": 516,
+            "saison": 3,
+            "slug": "ep516-la-question-posee-a-voix-haute",
+            "titre": "La question posée à voix haute",
+            "module": "Comptabilité",
+            "chapitre": "La bascule",
+            "accroche": "Un soir, il n'a pas ouvert le classeur.",
+            "punchline": "Il a posé la question, et la réponse était déjà là.",
+            "resume": "Le coût matière à jour, la marge en euros, la comparaison avec le mois dernier. Il ne cherche plus l'information : il la demande.",
+            "statut": "a_produire",
+            "dureeSecondes": 10.0,
+            "videoUrl": null,
+            "posterUrl": null,
+            "datePrevue": "2027-05-23",
+            "troisMots": "LA BASCULE",
+            "lieu": "Au bureau",
+            "role": "Le gérant",
+            "arc": "La bascule",
+            "planDuFilm": "16 / 35",
+            "tutorielModuleUrl": null,
+            "tutoriel": null,
+            "masterRapidoUrl": null,
+            "higgsfield": {
+              "duree": "10 s",
+              "format": "vertical 9:16",
+              "videoSourceUrl": null,
+              "source": null
+            },
+            "reseaux": {
+              "facebook": {
+                "statut": "a_venir",
+                "date": "2027-05-23",
+                "heure": "12:00",
+                "compte": "FoodEatUp",
+                "format": "Vidéo native 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              },
+              "instagram": {
+                "statut": "a_venir",
+                "date": "2027-05-23",
+                "heure": "18:30",
+                "compte": "foodeatup.cocuisinage",
+                "format": "Reel 9:16",
+                "lienCta": null
+              },
+              "tiktok": {
+                "statut": "a_venir",
+                "date": "2027-05-23",
+                "heure": "19:00",
+                "compte": "foodeatup",
+                "format": "Vidéo 9:16",
+                "lienCta": null
+              },
+              "linkedin": {
+                "statut": "a_venir",
+                "date": "2027-05-23",
+                "heure": "08:00",
+                "compte": "FoodEatUp",
+                "format": "Vidéo native 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              },
+              "youtube": {
+                "statut": "a_venir",
+                "date": "2027-05-23",
+                "heure": "10:00",
+                "compte": "@FoodEatUp",
+                "format": "Short 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              }
+            },
+            "storyUrl": null
+          },
+          {
+            "id": "EP517",
+            "numero": 517,
+            "saison": 3,
+            "slug": "ep517-le-planning-avant-le-samedi",
+            "titre": "Le planning avant le samedi",
+            "module": "Comptabilité",
+            "chapitre": "Le même geste, autrement",
+            "accroche": "Il a arrêté d'être trop nombreux le mardi.",
+            "punchline": "Et de manquer de bras le samedi.",
+            "resume": "La prévision de couverts croise le planning : on n'est plus sur-effectif le mardi ni sous-effectif le samedi. Le premier poste maîtrisable d'un restaurant cesse de se décider au feeling.",
+            "statut": "a_produire",
+            "dureeSecondes": 10.0,
+            "videoUrl": null,
+            "posterUrl": null,
+            "datePrevue": "2027-05-24",
+            "troisMots": "LE MÊME GESTE, AUTREMENT",
+            "lieu": "Au bureau",
+            "role": "Le gérant",
+            "arc": "Avec FoodEatUp",
+            "planDuFilm": "17 / 35",
+            "tutorielModuleUrl": null,
+            "tutoriel": null,
+            "masterRapidoUrl": null,
+            "higgsfield": {
+              "duree": "10 s",
+              "format": "vertical 9:16",
+              "videoSourceUrl": null,
+              "source": null
+            },
+            "reseaux": {
+              "facebook": {
+                "statut": "a_venir",
+                "date": "2027-05-24",
+                "heure": "12:00",
+                "compte": "FoodEatUp",
+                "format": "Vidéo native 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              },
+              "instagram": {
+                "statut": "a_venir",
+                "date": "2027-05-24",
+                "heure": "18:30",
+                "compte": "foodeatup.cocuisinage",
+                "format": "Reel 9:16",
+                "lienCta": null
+              },
+              "tiktok": {
+                "statut": "a_venir",
+                "date": "2027-05-24",
+                "heure": "19:00",
+                "compte": "foodeatup",
+                "format": "Vidéo 9:16",
+                "lienCta": null
+              },
+              "linkedin": {
+                "statut": "a_venir",
+                "date": "2027-05-24",
+                "heure": "08:00",
+                "compte": "FoodEatUp",
+                "format": "Vidéo native 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              },
+              "youtube": {
+                "statut": "a_venir",
+                "date": "2027-05-24",
+                "heure": "10:00",
+                "compte": "@FoodEatUp",
+                "format": "Short 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              }
+            },
+            "storyUrl": null
+          },
+          {
+            "id": "EP518",
+            "numero": 518,
+            "saison": 3,
+            "slug": "ep518-il-eteint-la-lampe-a-vingt-trois-heures",
+            "titre": "Il éteint la lampe à vingt-trois heures",
+            "module": "Comptabilité",
+            "chapitre": "Ce qui a changé",
+            "accroche": "Le bureau ferme maintenant en même temps que la salle.",
+            "punchline": "Les dimanches lui ont été rendus.",
+            "resume": "Le Z, les pertes, le coût du travail du service : trois chiffres disponibles avant d'éteindre. Il n'y a plus de comptabilité à rattraper le dimanche.",
+            "statut": "a_produire",
+            "dureeSecondes": 10.0,
+            "videoUrl": null,
+            "posterUrl": null,
+            "datePrevue": "2027-05-25",
+            "troisMots": "CE QUI A CHANGÉ",
+            "lieu": "Au bureau",
+            "role": "Le gérant",
+            "arc": "Avec FoodEatUp",
+            "planDuFilm": "18 / 35",
+            "tutorielModuleUrl": null,
+            "tutoriel": null,
+            "masterRapidoUrl": null,
+            "higgsfield": {
+              "duree": "10 s",
+              "format": "vertical 9:16",
+              "videoSourceUrl": null,
+              "source": null
+            },
+            "reseaux": {
+              "facebook": {
+                "statut": "a_venir",
+                "date": "2027-05-25",
+                "heure": "12:00",
+                "compte": "FoodEatUp",
+                "format": "Vidéo native 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              },
+              "instagram": {
+                "statut": "a_venir",
+                "date": "2027-05-25",
+                "heure": "18:30",
+                "compte": "foodeatup.cocuisinage",
+                "format": "Reel 9:16",
+                "lienCta": null
+              },
+              "tiktok": {
+                "statut": "a_venir",
+                "date": "2027-05-25",
+                "heure": "19:00",
+                "compte": "foodeatup",
+                "format": "Vidéo 9:16",
+                "lienCta": null
+              },
+              "linkedin": {
+                "statut": "a_venir",
+                "date": "2027-05-25",
+                "heure": "08:00",
+                "compte": "FoodEatUp",
+                "format": "Vidéo native 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              },
+              "youtube": {
+                "statut": "a_venir",
+                "date": "2027-05-25",
+                "heure": "10:00",
+                "compte": "@FoodEatUp",
+                "format": "Short 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              }
+            },
+            "storyUrl": null
+          }
+        ]
+      },
+      {
+        "numero": 4,
+        "titre": "À la maison",
+        "pitch": "Il ne verra jamais le logiciel. Il verra très bien ce que le logiciel a oublié de faire.",
+        "episodes": [
+          {
+            "id": "EP519",
+            "numero": 519,
+            "saison": 4,
+            "slug": "ep519-il-cherche-ou-aller",
+            "titre": "Il cherche où aller",
+            "module": "Le client",
+            "chapitre": "Il était une fois",
+            "accroche": "Il était une fois quelqu'un qui cherchait simplement où dîner.",
+            "punchline": "Il ne verra jamais votre logiciel. Il verra tout le reste.",
+            "resume": "Vingt heures, chez lui. Il cherche, il compare, il hésite entre trois adresses. Ce qu'il trouve du restaurant décide de sa soirée.",
+            "statut": "a_produire",
+            "dureeSecondes": 10.0,
+            "videoUrl": null,
+            "posterUrl": null,
+            "datePrevue": "2027-05-26",
+            "troisMots": "IL ÉTAIT UNE FOIS",
+            "lieu": "À la maison",
+            "role": "Le client",
+            "arc": "Avant FoodEatUp",
+            "planDuFilm": "19 / 35",
+            "tutorielModuleUrl": null,
+            "tutoriel": null,
+            "masterRapidoUrl": null,
+            "higgsfield": {
+              "duree": "10 s",
+              "format": "vertical 9:16",
+              "videoSourceUrl": null,
+              "source": null
+            },
+            "reseaux": {
+              "facebook": {
+                "statut": "a_venir",
+                "date": "2027-05-26",
+                "heure": "12:00",
+                "compte": "FoodEatUp",
+                "format": "Vidéo native 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              },
+              "instagram": {
+                "statut": "a_venir",
+                "date": "2027-05-26",
+                "heure": "18:30",
+                "compte": "foodeatup.cocuisinage",
+                "format": "Reel 9:16",
+                "lienCta": null
+              },
+              "tiktok": {
+                "statut": "a_venir",
+                "date": "2027-05-26",
+                "heure": "19:00",
+                "compte": "foodeatup",
+                "format": "Vidéo 9:16",
+                "lienCta": null
+              },
+              "linkedin": {
+                "statut": "a_venir",
+                "date": "2027-05-26",
+                "heure": "08:00",
+                "compte": "FoodEatUp",
+                "format": "Vidéo native 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              },
+              "youtube": {
+                "statut": "a_venir",
+                "date": "2027-05-26",
+                "heure": "10:00",
+                "compte": "@FoodEatUp",
+                "format": "Short 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              }
+            },
+            "storyUrl": null
+          },
+          {
+            "id": "EP520",
+            "numero": 520,
+            "saison": 4,
+            "slug": "ep520-la-carte-date-de-mardi",
+            "titre": "La carte date de mardi",
+            "module": "Le client",
+            "chapitre": "Ce qui coince",
+            "accroche": "La carte qu'il a lue n'était plus la bonne.",
+            "punchline": "On est vendredi.",
+            "resume": "La carte en ligne n'a pas bougé depuis mardi. Le plat qui l'a décidé n'existe plus. Il l'apprendra à table, devant quelqu'un qui s'excuse.",
+            "statut": "a_produire",
+            "dureeSecondes": 10.0,
+            "videoUrl": null,
+            "posterUrl": null,
+            "datePrevue": "2027-05-27",
+            "troisMots": "CE QUI COINCE",
+            "lieu": "À la maison",
+            "role": "Le client",
+            "arc": "Avant FoodEatUp",
+            "planDuFilm": "20 / 35",
+            "tutorielModuleUrl": null,
+            "tutoriel": null,
+            "masterRapidoUrl": null,
+            "higgsfield": {
+              "duree": "10 s",
+              "format": "vertical 9:16",
+              "videoSourceUrl": null,
+              "source": null
+            },
+            "reseaux": {
+              "facebook": {
+                "statut": "a_venir",
+                "date": "2027-05-27",
+                "heure": "12:00",
+                "compte": "FoodEatUp",
+                "format": "Vidéo native 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              },
+              "instagram": {
+                "statut": "a_venir",
+                "date": "2027-05-27",
+                "heure": "18:30",
+                "compte": "foodeatup.cocuisinage",
+                "format": "Reel 9:16",
+                "lienCta": null
+              },
+              "tiktok": {
+                "statut": "a_venir",
+                "date": "2027-05-27",
+                "heure": "19:00",
+                "compte": "foodeatup",
+                "format": "Vidéo 9:16",
+                "lienCta": null
+              },
+              "linkedin": {
+                "statut": "a_venir",
+                "date": "2027-05-27",
+                "heure": "08:00",
+                "compte": "FoodEatUp",
+                "format": "Vidéo native 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              },
+              "youtube": {
+                "statut": "a_venir",
+                "date": "2027-05-27",
+                "heure": "10:00",
+                "compte": "@FoodEatUp",
+                "format": "Short 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              }
+            },
+            "storyUrl": null
+          },
+          {
+            "id": "EP521",
+            "numero": 521,
+            "saison": 4,
+            "slug": "ep521-personne-ne-decroche",
+            "titre": "Personne ne décroche",
+            "module": "Le client",
+            "chapitre": "Le soir où ça casse",
+            "accroche": "Puis vint le soir où il a appelé, et où personne n'a répondu.",
+            "punchline": "Il a rappelé le restaurant d'à côté.",
+            "resume": "Vingt heures dix : il appelle pour réserver à six, dont deux personnes qui ne mangent pas de fruits à coque. Tout le monde est en salle. Le téléphone sonne dans le vide.",
+            "statut": "a_produire",
+            "dureeSecondes": 10.0,
+            "videoUrl": null,
+            "posterUrl": null,
+            "datePrevue": "2027-05-28",
+            "troisMots": "LE SOIR OÙ ÇA CASSE",
+            "lieu": "À la maison",
+            "role": "Le client",
+            "arc": "Avant FoodEatUp",
+            "planDuFilm": "21 / 35",
+            "tutorielModuleUrl": null,
+            "tutoriel": null,
+            "masterRapidoUrl": null,
+            "higgsfield": {
+              "duree": "10 s",
+              "format": "vertical 9:16",
+              "videoSourceUrl": null,
+              "source": null
+            },
+            "reseaux": {
+              "facebook": {
+                "statut": "a_venir",
+                "date": "2027-05-28",
+                "heure": "12:00",
+                "compte": "FoodEatUp",
+                "format": "Vidéo native 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              },
+              "instagram": {
+                "statut": "a_venir",
+                "date": "2027-05-28",
+                "heure": "18:30",
+                "compte": "foodeatup.cocuisinage",
+                "format": "Reel 9:16",
+                "lienCta": null
+              },
+              "tiktok": {
+                "statut": "a_venir",
+                "date": "2027-05-28",
+                "heure": "19:00",
+                "compte": "foodeatup",
+                "format": "Vidéo 9:16",
+                "lienCta": null
+              },
+              "linkedin": {
+                "statut": "a_venir",
+                "date": "2027-05-28",
+                "heure": "08:00",
+                "compte": "FoodEatUp",
+                "format": "Vidéo native 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              },
+              "youtube": {
+                "statut": "a_venir",
+                "date": "2027-05-28",
+                "heure": "10:00",
+                "compte": "@FoodEatUp",
+                "format": "Short 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              }
+            },
+            "storyUrl": null
+          },
+          {
+            "id": "EP522",
+            "numero": 522,
+            "saison": 4,
+            "slug": "ep522-quelqu-un-decroche-a-la-premiere-sonnerie",
+            "titre": "Quelqu'un décroche à la première sonnerie",
+            "module": "Le client",
+            "chapitre": "La bascule",
+            "accroche": "Un soir, quelqu'un a décroché. Au premier coup.",
+            "punchline": "Et on lui a demandé s'il y avait une allergie.",
+            "resume": "L'agent au téléphone prend l'appel en plein service, demande le nombre de couverts, l'heure et la contrainte alimentaire. La réservation arrive dans le plan de salle avec la note écrite dessus.",
+            "statut": "a_produire",
+            "dureeSecondes": 10.0,
+            "videoUrl": null,
+            "posterUrl": null,
+            "datePrevue": "2027-05-29",
+            "troisMots": "LA BASCULE",
+            "lieu": "À la maison",
+            "role": "Le client",
+            "arc": "La bascule",
+            "planDuFilm": "22 / 35",
+            "tutorielModuleUrl": null,
+            "tutoriel": null,
+            "masterRapidoUrl": null,
+            "higgsfield": {
+              "duree": "10 s",
+              "format": "vertical 9:16",
+              "videoSourceUrl": null,
+              "source": null
+            },
+            "reseaux": {
+              "facebook": {
+                "statut": "a_venir",
+                "date": "2027-05-29",
+                "heure": "12:00",
+                "compte": "FoodEatUp",
+                "format": "Vidéo native 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              },
+              "instagram": {
+                "statut": "a_venir",
+                "date": "2027-05-29",
+                "heure": "18:30",
+                "compte": "foodeatup.cocuisinage",
+                "format": "Reel 9:16",
+                "lienCta": null
+              },
+              "tiktok": {
+                "statut": "a_venir",
+                "date": "2027-05-29",
+                "heure": "19:00",
+                "compte": "foodeatup",
+                "format": "Vidéo 9:16",
+                "lienCta": null
+              },
+              "linkedin": {
+                "statut": "a_venir",
+                "date": "2027-05-29",
+                "heure": "08:00",
+                "compte": "FoodEatUp",
+                "format": "Vidéo native 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              },
+              "youtube": {
+                "statut": "a_venir",
+                "date": "2027-05-29",
+                "heure": "10:00",
+                "compte": "@FoodEatUp",
+                "format": "Short 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              }
+            },
+            "storyUrl": null
+          },
+          {
+            "id": "EP523",
+            "numero": 523,
+            "saison": 4,
+            "slug": "ep523-la-table-etait-prete-a-son-nom",
+            "titre": "La table était prête à son nom",
+            "module": "Le client",
+            "chapitre": "Le même geste, autrement",
+            "accroche": "Il n'a rien eu à expliquer en arrivant.",
+            "punchline": "C'était déjà écrit.",
+            "resume": "La table est prête, l'allergie est notée, personne ne lui redemande rien. Tout ce que le logiciel a fait, il ne le verra pas — il verra qu'on ne lui a rien redemandé.",
+            "statut": "a_produire",
+            "dureeSecondes": 10.0,
+            "videoUrl": null,
+            "posterUrl": null,
+            "datePrevue": "2027-05-30",
+            "troisMots": "LE MÊME GESTE, AUTREMENT",
+            "lieu": "À la maison",
+            "role": "Le client",
+            "arc": "Avec FoodEatUp",
+            "planDuFilm": "23 / 35",
+            "tutorielModuleUrl": null,
+            "tutoriel": null,
+            "masterRapidoUrl": null,
+            "higgsfield": {
+              "duree": "10 s",
+              "format": "vertical 9:16",
+              "videoSourceUrl": null,
+              "source": null
+            },
+            "reseaux": {
+              "facebook": {
+                "statut": "a_venir",
+                "date": "2027-05-30",
+                "heure": "12:00",
+                "compte": "FoodEatUp",
+                "format": "Vidéo native 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              },
+              "instagram": {
+                "statut": "a_venir",
+                "date": "2027-05-30",
+                "heure": "18:30",
+                "compte": "foodeatup.cocuisinage",
+                "format": "Reel 9:16",
+                "lienCta": null
+              },
+              "tiktok": {
+                "statut": "a_venir",
+                "date": "2027-05-30",
+                "heure": "19:00",
+                "compte": "foodeatup",
+                "format": "Vidéo 9:16",
+                "lienCta": null
+              },
+              "linkedin": {
+                "statut": "a_venir",
+                "date": "2027-05-30",
+                "heure": "08:00",
+                "compte": "FoodEatUp",
+                "format": "Vidéo native 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              },
+              "youtube": {
+                "statut": "a_venir",
+                "date": "2027-05-30",
+                "heure": "10:00",
+                "compte": "@FoodEatUp",
+                "format": "Short 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              }
+            },
+            "storyUrl": null
+          },
+          {
+            "id": "EP524",
+            "numero": 524,
+            "saison": 4,
+            "slug": "ep524-vingt-trois-heures-dans-le-metro",
+            "titre": "Vingt-trois heures, dans le métro",
+            "module": "Le client",
+            "chapitre": "Ce qui a changé",
+            "accroche": "Ce qu'il écrit le soir vaut le service entier.",
+            "punchline": "Cinq étoiles, et il ne saura jamais pourquoi.",
+            "resume": "Vingt-trois heures, dans le métro, il note le restaurant. Personne en salle ne saura jamais que ça s'est joué sur une allergie notée trois jours plus tôt.",
+            "statut": "a_produire",
+            "dureeSecondes": 10.0,
+            "videoUrl": null,
+            "posterUrl": null,
+            "datePrevue": "2027-05-31",
+            "troisMots": "CE QUI A CHANGÉ",
+            "lieu": "À la maison",
+            "role": "Le client",
+            "arc": "Avec FoodEatUp",
+            "planDuFilm": "24 / 35",
+            "tutorielModuleUrl": null,
+            "tutoriel": null,
+            "masterRapidoUrl": null,
+            "higgsfield": {
+              "duree": "10 s",
+              "format": "vertical 9:16",
+              "videoSourceUrl": null,
+              "source": null
+            },
+            "reseaux": {
+              "facebook": {
+                "statut": "a_venir",
+                "date": "2027-05-31",
+                "heure": "12:00",
+                "compte": "FoodEatUp",
+                "format": "Vidéo native 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              },
+              "instagram": {
+                "statut": "a_venir",
+                "date": "2027-05-31",
+                "heure": "18:30",
+                "compte": "foodeatup.cocuisinage",
+                "format": "Reel 9:16",
+                "lienCta": null
+              },
+              "tiktok": {
+                "statut": "a_venir",
+                "date": "2027-05-31",
+                "heure": "19:00",
+                "compte": "foodeatup",
+                "format": "Vidéo 9:16",
+                "lienCta": null
+              },
+              "linkedin": {
+                "statut": "a_venir",
+                "date": "2027-05-31",
+                "heure": "08:00",
+                "compte": "FoodEatUp",
+                "format": "Vidéo native 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              },
+              "youtube": {
+                "statut": "a_venir",
+                "date": "2027-05-31",
+                "heure": "10:00",
+                "compte": "@FoodEatUp",
+                "format": "Short 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              }
+            },
+            "storyUrl": null
+          }
+        ]
+      },
+      {
+        "numero": 5,
+        "titre": "Vendredi, 20 h 15",
+        "pitch": "Quatre histoires, un seul service. Onze plans où elles se croisent, et un dernier où l'on comprend que c'était le même homme.",
+        "episodes": [
+          {
+            "id": "EP525",
+            "numero": 525,
+            "saison": 5,
+            "slug": "ep525-le-meme-soir-quatre-fois",
+            "titre": "Le même soir, quatre fois",
+            "module": "Service",
+            "chapitre": "Le même soir",
+            "accroche": "Ce que vous venez de voir se passait le même soir. Vendredi.",
+            "punchline": "Aucun des quatre ne sait que les trois autres existent.",
+            "resume": "Quatre histoires, quatre lieux, un seul vendredi. Le film reprend à dix-huit heures, et cette fois on les voit tous les quatre en même temps.",
+            "statut": "a_produire",
+            "dureeSecondes": 10.0,
+            "videoUrl": null,
+            "posterUrl": null,
+            "datePrevue": "2027-06-01",
+            "troisMots": "LE MÊME SOIR",
+            "lieu": "Vendredi, 20 h 15",
+            "role": "Les quatre",
+            "arc": "Le croisement",
+            "planDuFilm": "25 / 35",
+            "tutorielModuleUrl": null,
+            "tutoriel": null,
+            "masterRapidoUrl": null,
+            "higgsfield": {
+              "duree": "10 s",
+              "format": "vertical 9:16",
+              "videoSourceUrl": null,
+              "source": null
+            },
+            "reseaux": {
+              "facebook": {
+                "statut": "a_venir",
+                "date": "2027-06-01",
+                "heure": "12:00",
+                "compte": "FoodEatUp",
+                "format": "Vidéo native 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              },
+              "instagram": {
+                "statut": "a_venir",
+                "date": "2027-06-01",
+                "heure": "18:30",
+                "compte": "foodeatup.cocuisinage",
+                "format": "Reel 9:16",
+                "lienCta": null
+              },
+              "tiktok": {
+                "statut": "a_venir",
+                "date": "2027-06-01",
+                "heure": "19:00",
+                "compte": "foodeatup",
+                "format": "Vidéo 9:16",
+                "lienCta": null
+              },
+              "linkedin": {
+                "statut": "a_venir",
+                "date": "2027-06-01",
+                "heure": "08:00",
+                "compte": "FoodEatUp",
+                "format": "Vidéo native 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              },
+              "youtube": {
+                "statut": "a_venir",
+                "date": "2027-06-01",
+                "heure": "10:00",
+                "compte": "@FoodEatUp",
+                "format": "Short 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              }
+            },
+            "storyUrl": null
+          },
+          {
+            "id": "EP526",
+            "numero": 526,
+            "saison": 5,
+            "slug": "ep526-18-h-40-il-reserve",
+            "titre": "18 h 40 — il réserve",
+            "module": "Service",
+            "chapitre": "18 h 40",
+            "accroche": "Tout commence par quelqu'un qui n'est pas encore là.",
+            "punchline": "Six couverts, deux allergies, et le service ne le sait pas encore.",
+            "resume": "Le client réserve depuis son salon. Six couverts, deux personnes qui ne mangent pas de fruits à coque. C'est le premier domino.",
+            "statut": "a_produire",
+            "dureeSecondes": 10.0,
+            "videoUrl": null,
+            "posterUrl": null,
+            "datePrevue": "2027-06-02",
+            "troisMots": "18 H 40",
+            "lieu": "Vendredi, 20 h 15",
+            "role": "Les quatre",
+            "arc": "Le croisement",
+            "planDuFilm": "26 / 35",
+            "tutorielModuleUrl": null,
+            "tutoriel": null,
+            "masterRapidoUrl": null,
+            "higgsfield": {
+              "duree": "10 s",
+              "format": "vertical 9:16",
+              "videoSourceUrl": null,
+              "source": null
+            },
+            "reseaux": {
+              "facebook": {
+                "statut": "a_venir",
+                "date": "2027-06-02",
+                "heure": "12:00",
+                "compte": "FoodEatUp",
+                "format": "Vidéo native 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              },
+              "instagram": {
+                "statut": "a_venir",
+                "date": "2027-06-02",
+                "heure": "18:30",
+                "compte": "foodeatup.cocuisinage",
+                "format": "Reel 9:16",
+                "lienCta": null
+              },
+              "tiktok": {
+                "statut": "a_venir",
+                "date": "2027-06-02",
+                "heure": "19:00",
+                "compte": "foodeatup",
+                "format": "Vidéo 9:16",
+                "lienCta": null
+              },
+              "linkedin": {
+                "statut": "a_venir",
+                "date": "2027-06-02",
+                "heure": "08:00",
+                "compte": "FoodEatUp",
+                "format": "Vidéo native 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              },
+              "youtube": {
+                "statut": "a_venir",
+                "date": "2027-06-02",
+                "heure": "10:00",
+                "compte": "@FoodEatUp",
+                "format": "Short 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              }
+            },
+            "storyUrl": null
+          },
+          {
+            "id": "EP527",
+            "numero": 527,
+            "saison": 5,
+            "slug": "ep527-18-h-41-la-salle-le-voit",
+            "titre": "18 h 41 — la salle le voit",
+            "module": "Service",
+            "chapitre": "18 h 41",
+            "accroche": "Une minute plus tard, à trois kilomètres de là.",
+            "punchline": "La table de six existait avant que personne ne la demande.",
+            "resume": "La réservation arrive dans le plan de salle avec la contrainte écrite dessus. Le maître d'hôtel n'a rien noté : il a lu.",
+            "statut": "a_produire",
+            "dureeSecondes": 10.0,
+            "videoUrl": null,
+            "posterUrl": null,
+            "datePrevue": "2027-06-03",
+            "troisMots": "18 H 41",
+            "lieu": "Vendredi, 20 h 15",
+            "role": "Les quatre",
+            "arc": "Le croisement",
+            "planDuFilm": "27 / 35",
+            "tutorielModuleUrl": null,
+            "tutoriel": null,
+            "masterRapidoUrl": null,
+            "higgsfield": {
+              "duree": "10 s",
+              "format": "vertical 9:16",
+              "videoSourceUrl": null,
+              "source": null
+            },
+            "reseaux": {
+              "facebook": {
+                "statut": "a_venir",
+                "date": "2027-06-03",
+                "heure": "12:00",
+                "compte": "FoodEatUp",
+                "format": "Vidéo native 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              },
+              "instagram": {
+                "statut": "a_venir",
+                "date": "2027-06-03",
+                "heure": "18:30",
+                "compte": "foodeatup.cocuisinage",
+                "format": "Reel 9:16",
+                "lienCta": null
+              },
+              "tiktok": {
+                "statut": "a_venir",
+                "date": "2027-06-03",
+                "heure": "19:00",
+                "compte": "foodeatup",
+                "format": "Vidéo 9:16",
+                "lienCta": null
+              },
+              "linkedin": {
+                "statut": "a_venir",
+                "date": "2027-06-03",
+                "heure": "08:00",
+                "compte": "FoodEatUp",
+                "format": "Vidéo native 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              },
+              "youtube": {
+                "statut": "a_venir",
+                "date": "2027-06-03",
+                "heure": "10:00",
+                "compte": "@FoodEatUp",
+                "format": "Short 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              }
+            },
+            "storyUrl": null
+          },
+          {
+            "id": "EP528",
+            "numero": 528,
+            "saison": 5,
+            "slug": "ep528-18-h-42-la-cuisine-l-apprend",
+            "titre": "18 h 42 — la cuisine l'apprend",
+            "module": "Service",
+            "chapitre": "18 h 42",
+            "accroche": "Une minute encore, et l'information passe la porte battante.",
+            "punchline": "Personne n'a crié le nom d'une allergie à travers la cuisine.",
+            "resume": "La contrainte alimentaire arrive au pass sans que quiconque ait traversé la cuisine en criant. Le chef adapte deux assiettes sur les six.",
+            "statut": "a_produire",
+            "dureeSecondes": 10.0,
+            "videoUrl": null,
+            "posterUrl": null,
+            "datePrevue": "2027-06-04",
+            "troisMots": "18 H 42",
+            "lieu": "Vendredi, 20 h 15",
+            "role": "Les quatre",
+            "arc": "Le croisement",
+            "planDuFilm": "28 / 35",
+            "tutorielModuleUrl": null,
+            "tutoriel": null,
+            "masterRapidoUrl": null,
+            "higgsfield": {
+              "duree": "10 s",
+              "format": "vertical 9:16",
+              "videoSourceUrl": null,
+              "source": null
+            },
+            "reseaux": {
+              "facebook": {
+                "statut": "a_venir",
+                "date": "2027-06-04",
+                "heure": "12:00",
+                "compte": "FoodEatUp",
+                "format": "Vidéo native 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              },
+              "instagram": {
+                "statut": "a_venir",
+                "date": "2027-06-04",
+                "heure": "18:30",
+                "compte": "foodeatup.cocuisinage",
+                "format": "Reel 9:16",
+                "lienCta": null
+              },
+              "tiktok": {
+                "statut": "a_venir",
+                "date": "2027-06-04",
+                "heure": "19:00",
+                "compte": "foodeatup",
+                "format": "Vidéo 9:16",
+                "lienCta": null
+              },
+              "linkedin": {
+                "statut": "a_venir",
+                "date": "2027-06-04",
+                "heure": "08:00",
+                "compte": "FoodEatUp",
+                "format": "Vidéo native 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              },
+              "youtube": {
+                "statut": "a_venir",
+                "date": "2027-06-04",
+                "heure": "10:00",
+                "compte": "@FoodEatUp",
+                "format": "Short 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              }
+            },
+            "storyUrl": null
+          },
+          {
+            "id": "EP529",
+            "numero": 529,
+            "saison": 5,
+            "slug": "ep529-18-h-43-le-bureau-voit-le-couvert",
+            "titre": "18 h 43 — le bureau voit le couvert",
+            "module": "Service",
+            "chapitre": "18 h 43",
+            "accroche": "Et à l'étage, quelqu'un a vu passer six couverts de plus.",
+            "punchline": "Il connaît la marge de la soirée avant qu'elle ait commencé.",
+            "resume": "Le bureau voit la réservation entrer dans la prévision : les achats du lendemain, le nombre de bras, la marge attendue. Tout bouge d'un cran.",
+            "statut": "a_produire",
+            "dureeSecondes": 10.0,
+            "videoUrl": null,
+            "posterUrl": null,
+            "datePrevue": "2027-06-05",
+            "troisMots": "18 H 43",
+            "lieu": "Vendredi, 20 h 15",
+            "role": "Les quatre",
+            "arc": "Le croisement",
+            "planDuFilm": "29 / 35",
+            "tutorielModuleUrl": null,
+            "tutoriel": null,
+            "masterRapidoUrl": null,
+            "higgsfield": {
+              "duree": "10 s",
+              "format": "vertical 9:16",
+              "videoSourceUrl": null,
+              "source": null
+            },
+            "reseaux": {
+              "facebook": {
+                "statut": "a_venir",
+                "date": "2027-06-05",
+                "heure": "12:00",
+                "compte": "FoodEatUp",
+                "format": "Vidéo native 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              },
+              "instagram": {
+                "statut": "a_venir",
+                "date": "2027-06-05",
+                "heure": "18:30",
+                "compte": "foodeatup.cocuisinage",
+                "format": "Reel 9:16",
+                "lienCta": null
+              },
+              "tiktok": {
+                "statut": "a_venir",
+                "date": "2027-06-05",
+                "heure": "19:00",
+                "compte": "foodeatup",
+                "format": "Vidéo 9:16",
+                "lienCta": null
+              },
+              "linkedin": {
+                "statut": "a_venir",
+                "date": "2027-06-05",
+                "heure": "08:00",
+                "compte": "FoodEatUp",
+                "format": "Vidéo native 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              },
+              "youtube": {
+                "statut": "a_venir",
+                "date": "2027-06-05",
+                "heure": "10:00",
+                "compte": "@FoodEatUp",
+                "format": "Short 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              }
+            },
+            "storyUrl": null
+          },
+          {
+            "id": "EP530",
+            "numero": 530,
+            "saison": 5,
+            "slug": "ep530-20-h-15-les-quatre-au-meme-endroit",
+            "titre": "20 h 15 — les quatre au même endroit",
+            "module": "Service",
+            "chapitre": "20 h 15",
+            "accroche": "À vingt heures quinze, les quatre histoires n'en font plus qu'une.",
+            "punchline": "Et c'est le même homme, dans quatre vies.",
+            "resume": "Le client pousse la porte. Le maître d'hôtel l'accueille. Le chef envoie. Le gérant regarde depuis l'escalier. C'est le point de croisement du film.",
+            "statut": "a_produire",
+            "dureeSecondes": 10.0,
+            "videoUrl": null,
+            "posterUrl": null,
+            "datePrevue": "2027-06-06",
+            "troisMots": "20 H 15",
+            "lieu": "Vendredi, 20 h 15",
+            "role": "Les quatre",
+            "arc": "Le croisement",
+            "planDuFilm": "30 / 35",
+            "tutorielModuleUrl": null,
+            "tutoriel": null,
+            "masterRapidoUrl": null,
+            "higgsfield": {
+              "duree": "10 s",
+              "format": "vertical 9:16",
+              "videoSourceUrl": null,
+              "source": null
+            },
+            "reseaux": {
+              "facebook": {
+                "statut": "a_venir",
+                "date": "2027-06-06",
+                "heure": "12:00",
+                "compte": "FoodEatUp",
+                "format": "Vidéo native 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              },
+              "instagram": {
+                "statut": "a_venir",
+                "date": "2027-06-06",
+                "heure": "18:30",
+                "compte": "foodeatup.cocuisinage",
+                "format": "Reel 9:16",
+                "lienCta": null
+              },
+              "tiktok": {
+                "statut": "a_venir",
+                "date": "2027-06-06",
+                "heure": "19:00",
+                "compte": "foodeatup",
+                "format": "Vidéo 9:16",
+                "lienCta": null
+              },
+              "linkedin": {
+                "statut": "a_venir",
+                "date": "2027-06-06",
+                "heure": "08:00",
+                "compte": "FoodEatUp",
+                "format": "Vidéo native 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              },
+              "youtube": {
+                "statut": "a_venir",
+                "date": "2027-06-06",
+                "heure": "10:00",
+                "compte": "@FoodEatUp",
+                "format": "Short 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              }
+            },
+            "storyUrl": null
+          },
+          {
+            "id": "EP531",
+            "numero": 531,
+            "saison": 5,
+            "slug": "ep531-20-h-31-le-plat-part",
+            "titre": "20 h 31 — le plat part",
+            "module": "Service",
+            "chapitre": "20 h 31",
+            "accroche": "Seize minutes plus tard, l'assiette quitte le pass.",
+            "punchline": "Six assiettes, dont deux qui ne ressemblent pas aux autres.",
+            "resume": "Le plat part du pass, traverse la salle, arrive à la table. Deux assiettes sur six sont différentes, et personne n'a eu à le rappeler.",
+            "statut": "a_produire",
+            "dureeSecondes": 10.0,
+            "videoUrl": null,
+            "posterUrl": null,
+            "datePrevue": "2027-06-07",
+            "troisMots": "20 H 31",
+            "lieu": "Vendredi, 20 h 15",
+            "role": "Les quatre",
+            "arc": "Le croisement",
+            "planDuFilm": "31 / 35",
+            "tutorielModuleUrl": null,
+            "tutoriel": null,
+            "masterRapidoUrl": null,
+            "higgsfield": {
+              "duree": "10 s",
+              "format": "vertical 9:16",
+              "videoSourceUrl": null,
+              "source": null
+            },
+            "reseaux": {
+              "facebook": {
+                "statut": "a_venir",
+                "date": "2027-06-07",
+                "heure": "12:00",
+                "compte": "FoodEatUp",
+                "format": "Vidéo native 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              },
+              "instagram": {
+                "statut": "a_venir",
+                "date": "2027-06-07",
+                "heure": "18:30",
+                "compte": "foodeatup.cocuisinage",
+                "format": "Reel 9:16",
+                "lienCta": null
+              },
+              "tiktok": {
+                "statut": "a_venir",
+                "date": "2027-06-07",
+                "heure": "19:00",
+                "compte": "foodeatup",
+                "format": "Vidéo 9:16",
+                "lienCta": null
+              },
+              "linkedin": {
+                "statut": "a_venir",
+                "date": "2027-06-07",
+                "heure": "08:00",
+                "compte": "FoodEatUp",
+                "format": "Vidéo native 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              },
+              "youtube": {
+                "statut": "a_venir",
+                "date": "2027-06-07",
+                "heure": "10:00",
+                "compte": "@FoodEatUp",
+                "format": "Short 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              }
+            },
+            "storyUrl": null
+          },
+          {
+            "id": "EP532",
+            "numero": 532,
+            "saison": 5,
+            "slug": "ep532-20-h-32-il-ne-remarque-rien",
+            "titre": "20 h 32 — il ne remarque rien",
+            "module": "Service",
+            "chapitre": "20 h 32",
+            "accroche": "Il n'a rien remarqué. C'est exactement le but.",
+            "punchline": "Ce qu'on ne remarque pas, c'est ce qui marche.",
+            "resume": "Le client mange. Il ne saura jamais qu'une contrainte est passée par trois postes en quatre-vingt-dix minutes. Il saura seulement que c'était bien.",
+            "statut": "a_produire",
+            "dureeSecondes": 10.0,
+            "videoUrl": null,
+            "posterUrl": null,
+            "datePrevue": "2027-06-08",
+            "troisMots": "20 H 32",
+            "lieu": "Vendredi, 20 h 15",
+            "role": "Les quatre",
+            "arc": "Le croisement",
+            "planDuFilm": "32 / 35",
+            "tutorielModuleUrl": null,
+            "tutoriel": null,
+            "masterRapidoUrl": null,
+            "higgsfield": {
+              "duree": "10 s",
+              "format": "vertical 9:16",
+              "videoSourceUrl": null,
+              "source": null
+            },
+            "reseaux": {
+              "facebook": {
+                "statut": "a_venir",
+                "date": "2027-06-08",
+                "heure": "12:00",
+                "compte": "FoodEatUp",
+                "format": "Vidéo native 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              },
+              "instagram": {
+                "statut": "a_venir",
+                "date": "2027-06-08",
+                "heure": "18:30",
+                "compte": "foodeatup.cocuisinage",
+                "format": "Reel 9:16",
+                "lienCta": null
+              },
+              "tiktok": {
+                "statut": "a_venir",
+                "date": "2027-06-08",
+                "heure": "19:00",
+                "compte": "foodeatup",
+                "format": "Vidéo 9:16",
+                "lienCta": null
+              },
+              "linkedin": {
+                "statut": "a_venir",
+                "date": "2027-06-08",
+                "heure": "08:00",
+                "compte": "FoodEatUp",
+                "format": "Vidéo native 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              },
+              "youtube": {
+                "statut": "a_venir",
+                "date": "2027-06-08",
+                "heure": "10:00",
+                "compte": "@FoodEatUp",
+                "format": "Short 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              }
+            },
+            "storyUrl": null
+          },
+          {
+            "id": "EP533",
+            "numero": 533,
+            "saison": 5,
+            "slug": "ep533-23-h-50-le-z-avant-d-eteindre",
+            "titre": "23 h 50 — le Z avant d'éteindre",
+            "module": "Service",
+            "chapitre": "23 h 50",
+            "accroche": "À minuit moins dix, il n'y avait plus rien à rattraper.",
+            "punchline": "Le dimanche est resté un dimanche.",
+            "resume": "Le Z, les pertes, le coût du travail du service. Trois chiffres avant d'éteindre. Personne ne reviendra dimanche pour les chercher.",
+            "statut": "a_produire",
+            "dureeSecondes": 10.0,
+            "videoUrl": null,
+            "posterUrl": null,
+            "datePrevue": "2027-06-09",
+            "troisMots": "23 H 50",
+            "lieu": "Vendredi, 20 h 15",
+            "role": "Les quatre",
+            "arc": "Le croisement",
+            "planDuFilm": "33 / 35",
+            "tutorielModuleUrl": null,
+            "tutoriel": null,
+            "masterRapidoUrl": null,
+            "higgsfield": {
+              "duree": "10 s",
+              "format": "vertical 9:16",
+              "videoSourceUrl": null,
+              "source": null
+            },
+            "reseaux": {
+              "facebook": {
+                "statut": "a_venir",
+                "date": "2027-06-09",
+                "heure": "12:00",
+                "compte": "FoodEatUp",
+                "format": "Vidéo native 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              },
+              "instagram": {
+                "statut": "a_venir",
+                "date": "2027-06-09",
+                "heure": "18:30",
+                "compte": "foodeatup.cocuisinage",
+                "format": "Reel 9:16",
+                "lienCta": null
+              },
+              "tiktok": {
+                "statut": "a_venir",
+                "date": "2027-06-09",
+                "heure": "19:00",
+                "compte": "foodeatup",
+                "format": "Vidéo 9:16",
+                "lienCta": null
+              },
+              "linkedin": {
+                "statut": "a_venir",
+                "date": "2027-06-09",
+                "heure": "08:00",
+                "compte": "FoodEatUp",
+                "format": "Vidéo native 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              },
+              "youtube": {
+                "statut": "a_venir",
+                "date": "2027-06-09",
+                "heure": "10:00",
+                "compte": "@FoodEatUp",
+                "format": "Short 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              }
+            },
+            "storyUrl": null
+          },
+          {
+            "id": "EP534",
+            "numero": 534,
+            "saison": 5,
+            "slug": "ep534-7-h-00-le-lendemain",
+            "titre": "7 h 00 — le lendemain",
+            "module": "Service",
+            "chapitre": "7 h 00",
+            "accroche": "Le lendemain, il a ouvert. Comme tous les jours.",
+            "punchline": "Mais il n'a plus jamais ouvert le carnet.",
+            "resume": "Sept heures du matin, la même cuisine, la même veilleuse. Rien n'a changé du métier. Tout a changé de ce qu'il faut porter dans sa tête pour l'exercer.",
+            "statut": "a_produire",
+            "dureeSecondes": 10.0,
+            "videoUrl": null,
+            "posterUrl": null,
+            "datePrevue": "2027-06-10",
+            "troisMots": "7 H 00",
+            "lieu": "Vendredi, 20 h 15",
+            "role": "Les quatre",
+            "arc": "Le croisement",
+            "planDuFilm": "34 / 35",
+            "tutorielModuleUrl": null,
+            "tutoriel": null,
+            "masterRapidoUrl": null,
+            "higgsfield": {
+              "duree": "10 s",
+              "format": "vertical 9:16",
+              "videoSourceUrl": null,
+              "source": null
+            },
+            "reseaux": {
+              "facebook": {
+                "statut": "a_venir",
+                "date": "2027-06-10",
+                "heure": "12:00",
+                "compte": "FoodEatUp",
+                "format": "Vidéo native 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              },
+              "instagram": {
+                "statut": "a_venir",
+                "date": "2027-06-10",
+                "heure": "18:30",
+                "compte": "foodeatup.cocuisinage",
+                "format": "Reel 9:16",
+                "lienCta": null
+              },
+              "tiktok": {
+                "statut": "a_venir",
+                "date": "2027-06-10",
+                "heure": "19:00",
+                "compte": "foodeatup",
+                "format": "Vidéo 9:16",
+                "lienCta": null
+              },
+              "linkedin": {
+                "statut": "a_venir",
+                "date": "2027-06-10",
+                "heure": "08:00",
+                "compte": "FoodEatUp",
+                "format": "Vidéo native 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              },
+              "youtube": {
+                "statut": "a_venir",
+                "date": "2027-06-10",
+                "heure": "10:00",
+                "compte": "@FoodEatUp",
+                "format": "Short 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              }
+            },
+            "storyUrl": null
+          },
+          {
+            "id": "EP535",
+            "numero": 535,
+            "saison": 5,
+            "slug": "ep535-il-etait-une-fois-un-restaurant",
+            "titre": "Il était une fois un restaurant",
+            "module": "Service",
+            "chapitre": "La chute",
+            "accroche": "Il était une fois un restaurant. Il y est toujours.",
+            "punchline": "Quatre métiers, un seul logiciel, et personne n'a rien vu passer.",
+            "resume": "Le dernier plan referme le film : les quatre personnages, le même homme, réunis une seconde à l'image. C'est le seul moment où le film le dit.",
+            "statut": "a_produire",
+            "dureeSecondes": 10.0,
+            "videoUrl": null,
+            "posterUrl": null,
+            "datePrevue": "2027-06-11",
+            "troisMots": "LA CHUTE",
+            "lieu": "Vendredi, 20 h 15",
+            "role": "Les quatre",
+            "arc": "Le croisement",
+            "planDuFilm": "35 / 35",
+            "tutorielModuleUrl": null,
+            "tutoriel": null,
+            "masterRapidoUrl": null,
+            "higgsfield": {
+              "duree": "10 s",
+              "format": "vertical 9:16",
+              "videoSourceUrl": null,
+              "source": null
+            },
+            "reseaux": {
+              "facebook": {
+                "statut": "a_venir",
+                "date": "2027-06-11",
+                "heure": "12:00",
+                "compte": "FoodEatUp",
+                "format": "Vidéo native 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              },
+              "instagram": {
+                "statut": "a_venir",
+                "date": "2027-06-11",
+                "heure": "18:30",
+                "compte": "foodeatup.cocuisinage",
+                "format": "Reel 9:16",
+                "lienCta": null
+              },
+              "tiktok": {
+                "statut": "a_venir",
+                "date": "2027-06-11",
+                "heure": "19:00",
+                "compte": "foodeatup",
+                "format": "Vidéo 9:16",
+                "lienCta": null
+              },
+              "linkedin": {
+                "statut": "a_venir",
+                "date": "2027-06-11",
+                "heure": "08:00",
+                "compte": "FoodEatUp",
+                "format": "Vidéo native 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              },
+              "youtube": {
+                "statut": "a_venir",
+                "date": "2027-06-11",
                 "heure": "10:00",
                 "compte": "@FoodEatUp",
                 "format": "Short 9:16",

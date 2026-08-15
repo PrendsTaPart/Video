@@ -95,14 +95,47 @@ export type EtapeKit = {{
 /** Les trois formats image et vidéo qui ne sont pas le master. */
 export type FormatsSociaux = {{
   /** Story Instagram : le clip, le hook, la punchline. Rien d'autre. */
-  story?: {{ format: string; hook: string; punchline: string; url: string | null }} | null;
+  story?: {{
+    format: string;
+    hook: string;
+    punchline: string;
+    url: string | null;
+    /** Série « Il était une fois un restaurant » : le générique de fin en
+        motion design, qui n'existe que sur les stories — le film assemblé ne
+        le porte pas. Sans lui, chaque story se termine sur un plan de cinéma
+        et personne ne sait qu'il y en a une autre demain. */
+    motion?: {{
+      quand: string;
+      consigne: string;
+      punchline: string;
+      aSuivre: string;
+      voix: string;
+    }} | null;
+  }} | null;
   /** Carrousel LinkedIn : quatre planches, converties en PDF sur le site. */
   carrousel?: {{ format: string; planches: PlancheCarrousel[] }} | null;
   /** Visuel Facebook : une image qui se comprend seule. */
   imageFacebook?: {{ format: string; prompt: string }} | null;
 }};
 
+/**
+ * Le script de voix off d'un plan — série « Il était une fois un restaurant ».
+ *
+ * Trois phrases par plan : le conteur ouvre, le personnage ferme, le générique
+ * de story ajoute la punchline FoodEatUp. Bout à bout, les trente-cinq font le
+ * script du film entier — c'est ce qui permet de publier les plans un par un
+ * sans que la continuité se démonte.
+ */
+export type VoixOff = {{
+  conteur: string;
+  personnage: string;
+  generique: string;
+  /** Ce que ce plan enchaîne, pour vérifier la couture. */
+  enchaine: string;
+}};
+
 export type ContenuEpisode = FormatsSociaux & {{
+  voixOff?: VoixOff | null;
   publications: Record<Reseau, PublicationTexte>;
   promptVignette: string;
   higgsfieldPrompt: string | null;
@@ -152,7 +185,12 @@ export const texteAColler = (p: PublicationTexte) =>
 #
 # Ce tuple reste : une série écrite mais pas encore montrable s'en retire d'une
 # ligne, sans qu'on ait à défaire son travail.
-SERIES_PUBLIEES = ("le-coup-de-feu", "une-journee", "lia-dans-foodeatup")
+SERIES_PUBLIEES = (
+    "le-coup-de-feu",
+    "une-journee",
+    "lia-dans-foodeatup",
+    "il-etait-une-fois-un-restaurant",
+)
 
 
 def main():
@@ -206,6 +244,11 @@ def main():
                     "incidentHeure": e.pop("incidentHeure", None),
                     "incidentQuoi": e.pop("incidentQuoi", None),
                     "saumon": e.pop("saumon", None),
+                    # Série « Il était une fois un restaurant » : le script de
+                    # voix off du plan — le conteur, le personnage, le générique
+                    # de fin. Trois phrases par épisode, lues sur la seule page
+                    # de l'épisode.
+                    "voixOff": e.pop("voixOff", None),
                     "story": e.pop("story", None),
                     "carrousel": e.pop("carrousel", None),
                     "imageFacebook": e.pop("imageFacebook", None),

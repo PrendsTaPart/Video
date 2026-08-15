@@ -59,14 +59,47 @@ export type EtapeKit = {
 /** Les trois formats image et vidéo qui ne sont pas le master. */
 export type FormatsSociaux = {
   /** Story Instagram : le clip, le hook, la punchline. Rien d'autre. */
-  story?: { format: string; hook: string; punchline: string; url: string | null } | null;
+  story?: {
+    format: string;
+    hook: string;
+    punchline: string;
+    url: string | null;
+    /** Série « Il était une fois un restaurant » : le générique de fin en
+        motion design, qui n'existe que sur les stories — le film assemblé ne
+        le porte pas. Sans lui, chaque story se termine sur un plan de cinéma
+        et personne ne sait qu'il y en a une autre demain. */
+    motion?: {
+      quand: string;
+      consigne: string;
+      punchline: string;
+      aSuivre: string;
+      voix: string;
+    } | null;
+  } | null;
   /** Carrousel LinkedIn : quatre planches, converties en PDF sur le site. */
   carrousel?: { format: string; planches: PlancheCarrousel[] } | null;
   /** Visuel Facebook : une image qui se comprend seule. */
   imageFacebook?: { format: string; prompt: string } | null;
 };
 
+/**
+ * Le script de voix off d'un plan — série « Il était une fois un restaurant ».
+ *
+ * Trois phrases par plan : le conteur ouvre, le personnage ferme, le générique
+ * de story ajoute la punchline FoodEatUp. Bout à bout, les trente-cinq font le
+ * script du film entier — c'est ce qui permet de publier les plans un par un
+ * sans que la continuité se démonte.
+ */
+export type VoixOff = {
+  conteur: string;
+  personnage: string;
+  generique: string;
+  /** Ce que ce plan enchaîne, pour vérifier la couture. */
+  enchaine: string;
+};
+
 export type ContenuEpisode = FormatsSociaux & {
+  voixOff?: VoixOff | null;
   publications: Record<Reseau, PublicationTexte>;
   promptVignette: string;
   higgsfieldPrompt: string | null;
@@ -218,6 +251,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "incidentHeure": null,
     "incidentQuoi": null,
     "saumon": null,
+    "voixOff": null,
     "story": {
       "format": "9:16 · 1080 × 1920 · 10 s",
       "hook": "Lui aussi attend ta commande",
@@ -397,6 +431,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "incidentHeure": null,
     "incidentQuoi": null,
     "saumon": null,
+    "voixOff": null,
     "story": {
       "format": "9:16 · 1080 × 1920 · 10 s",
       "hook": "Ton service du samedi soir",
@@ -577,6 +612,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "incidentHeure": null,
     "incidentQuoi": null,
     "saumon": null,
+    "voixOff": null,
     "story": {
       "format": "9:16 · 1080 × 1920 · 10 s",
       "hook": "Ta marge, en ce moment",
@@ -745,6 +781,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "incidentHeure": null,
     "incidentQuoi": null,
     "saumon": null,
+    "voixOff": null,
     "story": {
       "format": "9:16 · 1080 × 1920 · 10 s",
       "hook": "Ton nouveau responsable de caisse",
@@ -906,6 +943,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "incidentHeure": null,
     "incidentQuoi": null,
     "saumon": null,
+    "voixOff": null,
     "story": {
       "format": "9:16 · 1080 × 1920 · 10 s",
       "hook": "Trois logiciels. Deux mains",
@@ -1076,6 +1114,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "incidentHeure": null,
     "incidentQuoi": null,
     "saumon": null,
+    "voixOff": null,
     "story": {
       "format": "9:16 · 1080 × 1920 · 10 s",
       "hook": "Ta pizza part plus vite que ton stock",
@@ -1251,6 +1290,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "incidentHeure": null,
     "incidentQuoi": null,
     "saumon": null,
+    "voixOff": null,
     "story": {
       "format": "9:16 · 1080 × 1920 · 10 s",
       "hook": "Le seul avis client qui compte",
@@ -1423,6 +1463,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "incidentHeure": null,
     "incidentQuoi": null,
     "saumon": null,
+    "voixOff": null,
     "story": {
       "format": "9:16 · 1080 × 1920 · 10 s",
       "hook": "Fin de mois. Encore",
@@ -1603,6 +1644,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "incidentHeure": null,
     "incidentQuoi": null,
     "saumon": null,
+    "voixOff": null,
     "story": {
       "format": "9:16 · 1080 × 1920 · 10 s",
       "hook": "Il y a toujours quelqu'un qui prend ta marge",
@@ -1771,6 +1813,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "incidentHeure": null,
     "incidentQuoi": null,
     "saumon": null,
+    "voixOff": null,
     "story": {
       "format": "9:16 · 1080 × 1920 · 10 s",
       "hook": "Toi, devant ta facture logicielle",
@@ -1948,6 +1991,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "incidentHeure": null,
     "incidentQuoi": null,
     "saumon": null,
+    "voixOff": null,
     "story": {
       "format": "9:16 · 1080 × 1920 · 10 s",
       "hook": "Ta livraison sans intégration",
@@ -2122,6 +2166,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "incidentHeure": null,
     "incidentQuoi": null,
     "saumon": null,
+    "voixOff": null,
     "story": {
       "format": "9:16 · 1080 × 1920 · 10 s",
       "hook": "Temps d'attente : « on regarde »",
@@ -2297,6 +2342,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "incidentHeure": null,
     "incidentQuoi": null,
     "saumon": null,
+    "voixOff": null,
     "story": {
       "format": "9:16 · 1080 × 1920 · 10 s",
       "hook": "Dix logiciels. Dix notifications",
@@ -2476,6 +2522,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "incidentHeure": null,
     "incidentQuoi": null,
     "saumon": null,
+    "voixOff": null,
     "story": {
       "format": "9:16 · 1080 × 1920 · 10 s",
       "hook": "Ton gaspillage alimentaire",
@@ -2648,6 +2695,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "incidentHeure": null,
     "incidentQuoi": null,
     "saumon": null,
+    "voixOff": null,
     "story": {
       "format": "9:16 · 1080 × 1920 · 10 s",
       "hook": "Ta gestion actuelle",
@@ -2820,6 +2868,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "incidentHeure": null,
     "incidentQuoi": null,
     "saumon": null,
+    "voixOff": null,
     "story": {
       "format": "9:16 · 1080 × 1920 · 10 s",
       "hook": "Tes coûts, ce trimestre",
@@ -3002,6 +3051,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "incidentHeure": null,
     "incidentQuoi": null,
     "saumon": null,
+    "voixOff": null,
     "story": {
       "format": "9:16 · 1080 × 1920 · 10 s",
       "hook": "Personne ne touche à ta dernière frite",
@@ -3180,6 +3230,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "incidentHeure": null,
     "incidentQuoi": null,
     "saumon": null,
+    "voixOff": null,
     "story": {
       "format": "9:16 · 1080 × 1920 · 10 s",
       "hook": "Le rush de vingt heures",
@@ -3362,6 +3413,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "incidentHeure": null,
     "incidentQuoi": null,
     "saumon": null,
+    "voixOff": null,
     "story": {
       "format": "9:16 · 1080 × 1920 · 10 s",
       "hook": "Ton chiffre d'affaires, sans outil",
@@ -3537,6 +3589,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "incidentHeure": null,
     "incidentQuoi": null,
     "saumon": null,
+    "voixOff": null,
     "story": {
       "format": "9:16 · 1080 × 1920 · 10 s",
       "hook": "Lui, il a réservé",
@@ -3715,6 +3768,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "incidentHeure": null,
     "incidentQuoi": null,
     "saumon": null,
+    "voixOff": null,
     "story": {
       "format": "9:16 · 1080 × 1920 · 10 s",
       "hook": "Le vrai ennemi du service",
@@ -3895,6 +3949,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "incidentHeure": null,
     "incidentQuoi": null,
     "saumon": null,
+    "voixOff": null,
     "story": {
       "format": "9:16 · 1080 × 1920 · 10 s",
       "hook": "Mille euros par mois",
@@ -4069,6 +4124,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "incidentHeure": null,
     "incidentQuoi": null,
     "saumon": null,
+    "voixOff": null,
     "story": {
       "format": "9:16 · 1080 × 1920 · 10 s",
       "hook": "Ton automatisation actuelle",
@@ -4245,6 +4301,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "incidentHeure": null,
     "incidentQuoi": null,
     "saumon": null,
+    "voixOff": null,
     "story": {
       "format": "9:16 · 1080 × 1920 · 10 s",
       "hook": "Encore une commission en moins",
@@ -4417,6 +4474,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "incidentHeure": null,
     "incidentQuoi": null,
     "saumon": null,
+    "voixOff": null,
     "story": {
       "format": "9:16 · 1080 × 1920 · 10 s",
       "hook": "Quand tu lances une promo sans données",
@@ -4598,6 +4656,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "incidentHeure": null,
     "incidentQuoi": null,
     "saumon": null,
+    "voixOff": null,
     "story": {
       "format": "9:16 · 1080 × 1920 · 10 s",
       "hook": "Ton stock avant le week-end",
@@ -4777,6 +4836,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "incidentHeure": null,
     "incidentQuoi": null,
     "saumon": null,
+    "voixOff": null,
     "story": {
       "format": "9:16 · 1080 × 1920 · 10 s",
       "hook": "Ta trésorerie, chaque lundi",
@@ -4945,6 +5005,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "incidentHeure": null,
     "incidentQuoi": null,
     "saumon": null,
+    "voixOff": null,
     "story": {
       "format": "9:16 · 1080 × 1920 · 10 s",
       "hook": "Tes commandes en ligne, un vendredi",
@@ -5120,6 +5181,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "incidentHeure": null,
     "incidentQuoi": null,
     "saumon": null,
+    "voixOff": null,
     "story": {
       "format": "9:16 · 1080 × 1920 · 10 s",
       "hook": "Toi, gérant, en 2026",
@@ -5290,6 +5352,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "incidentHeure": null,
     "incidentQuoi": null,
     "saumon": null,
+    "voixOff": null,
     "story": {
       "format": "9:16 · 1080 × 1920 · 10 s",
       "hook": "Le nouveau, jour 1",
@@ -5458,6 +5521,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "incidentHeure": null,
     "incidentQuoi": null,
     "saumon": null,
+    "voixOff": null,
     "story": {
       "format": "9:16 · 1080 × 1920 · 10 s",
       "hook": "C'est quoi, ça ",
@@ -5640,6 +5704,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "incidentHeure": null,
     "incidentQuoi": null,
     "saumon": null,
+    "voixOff": null,
     "story": {
       "format": "9:16 · 1080 × 1920 · 10 s",
       "hook": "Ta recette « au feeling »",
@@ -5821,6 +5886,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "incidentHeure": null,
     "incidentQuoi": null,
     "saumon": null,
+    "voixOff": null,
     "story": {
       "format": "9:16 · 1080 × 1920 · 10 s",
       "hook": "Tu as tout préparé. Presque",
@@ -5993,6 +6059,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "incidentHeure": null,
     "incidentQuoi": null,
     "saumon": null,
+    "voixOff": null,
     "story": {
       "format": "9:16 · 1080 × 1920 · 10 s",
       "hook": "Chaque service, une improvisation",
@@ -6161,6 +6228,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "incidentHeure": null,
     "incidentQuoi": null,
     "saumon": null,
+    "voixOff": null,
     "story": {
       "format": "9:16 · 1080 × 1920 · 10 s",
       "hook": "Ta terrasse, un jour de vent",
@@ -6338,6 +6406,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "incidentHeure": null,
     "incidentQuoi": null,
     "saumon": null,
+    "voixOff": null,
     "story": {
       "format": "9:16 · 1080 × 1920 · 10 s",
       "hook": "Toi, devant tes abonnements",
@@ -6506,6 +6575,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "incidentHeure": null,
     "incidentQuoi": null,
     "saumon": null,
+    "voixOff": null,
     "story": {
       "format": "9:16 · 1080 × 1920 · 10 s",
       "hook": "Fermeture. Troisième soir d'affilée",
@@ -6686,6 +6756,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "incidentHeure": null,
     "incidentQuoi": null,
     "saumon": null,
+    "voixOff": null,
     "story": {
       "format": "9:16 · 1080 × 1920 · 10 s",
       "hook": "Le réappro du lundi",
@@ -6863,6 +6934,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "incidentHeure": null,
     "incidentQuoi": null,
     "saumon": null,
+    "voixOff": null,
     "story": {
       "format": "9:16 · 1080 × 1920 · 10 s",
       "hook": "L'imprévu du service",
@@ -7042,6 +7114,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "incidentHeure": null,
     "incidentQuoi": null,
     "saumon": null,
+    "voixOff": null,
     "story": {
       "format": "9:16 · 1080 × 1920 · 10 s",
       "hook": "Ton stock de basilic",
@@ -7224,6 +7297,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "incidentHeure": null,
     "incidentQuoi": null,
     "saumon": null,
+    "voixOff": null,
     "story": {
       "format": "9:16 · 1080 × 1920 · 10 s",
       "hook": "Ton contrôle des portions",
@@ -7399,6 +7473,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "incidentHeure": null,
     "incidentQuoi": null,
     "saumon": null,
+    "voixOff": null,
     "story": {
       "format": "9:16 · 1080 × 1920 · 10 s",
       "hook": "Tout faire seul",
@@ -7574,6 +7649,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "incidentHeure": null,
     "incidentQuoi": null,
     "saumon": null,
+    "voixOff": null,
     "story": {
       "format": "9:16 · 1080 × 1920 · 10 s",
       "hook": "Petit vol. Tous les jours",
@@ -7740,6 +7816,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "incidentHeure": null,
     "incidentQuoi": null,
     "saumon": null,
+    "voixOff": null,
     "story": {
       "format": "9:16 · 1080 × 1920 · 10 s",
       "hook": "Prendre la commande en 2026",
@@ -7921,6 +7998,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "incidentHeure": null,
     "incidentQuoi": null,
     "saumon": null,
+    "voixOff": null,
     "story": {
       "format": "9:16 · 1080 × 1920 · 10 s",
       "hook": "Personne ne sait où tu es",
@@ -8100,6 +8178,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "incidentHeure": null,
     "incidentQuoi": null,
     "saumon": null,
+    "voixOff": null,
     "story": {
       "format": "9:16 · 1080 × 1920 · 10 s",
       "hook": "Un détail. Un service perdu",
@@ -8278,6 +8357,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "incidentHeure": null,
     "incidentQuoi": null,
     "saumon": null,
+    "voixOff": null,
     "story": {
       "format": "9:16 · 1080 × 1920 · 10 s",
       "hook": "La livraison de 7 h",
@@ -8449,6 +8529,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "incidentHeure": null,
     "incidentQuoi": null,
     "saumon": null,
+    "voixOff": null,
     "story": {
       "format": "9:16 · 1080 × 1920 · 10 s",
       "hook": "Ce que tu construis chaque jour",
@@ -8627,6 +8708,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "incidentHeure": null,
     "incidentQuoi": null,
     "saumon": null,
+    "voixOff": null,
     "story": {
       "format": "9:16 · 1080 × 1920 · 10 s",
       "hook": "Il envoie plus vite que ton pass",
@@ -8808,6 +8890,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "incidentHeure": null,
     "incidentQuoi": null,
     "saumon": null,
+    "voixOff": null,
     "story": {
       "format": "9:16 · 1080 × 1920 · 10 s",
       "hook": "Apprendre sur le tas",
@@ -8987,6 +9070,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "incidentHeure": null,
     "incidentQuoi": null,
     "saumon": null,
+    "voixOff": null,
     "story": {
       "format": "9:16 · 1080 × 1920 · 10 s",
       "hook": "Un mauvais réglage. Une seule fois",
@@ -9162,6 +9246,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "incidentHeure": null,
     "incidentQuoi": null,
     "saumon": null,
+    "voixOff": null,
     "story": {
       "format": "9:16 · 1080 × 1920 · 10 s",
       "hook": "Encore un truc qui te retient",
@@ -9341,6 +9426,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "incidentHeure": null,
     "incidentQuoi": null,
     "saumon": null,
+    "voixOff": null,
     "story": {
       "format": "9:16 · 1080 × 1920 · 10 s",
       "hook": "Complet dehors. Vide dedans",
@@ -9519,6 +9605,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "incidentHeure": null,
     "incidentQuoi": null,
     "saumon": null,
+    "voixOff": null,
     "story": {
       "format": "9:16 · 1080 × 1920 · 10 s",
       "hook": "Ton prix ne raconte pas ton coût",
@@ -9697,6 +9784,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "incidentHeure": null,
     "incidentQuoi": null,
     "saumon": null,
+    "voixOff": null,
     "story": {
       "format": "9:16 · 1080 × 1920 · 10 s",
       "hook": "Ta compta, au format papier",
@@ -9875,6 +9963,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "incidentHeure": null,
     "incidentQuoi": null,
     "saumon": null,
+    "voixOff": null,
     "story": {
       "format": "9:16 · 1080 × 1920 · 10 s",
       "hook": "Il y a toujours un truc en trop",
@@ -10054,6 +10143,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "incidentHeure": null,
     "incidentQuoi": null,
     "saumon": null,
+    "voixOff": null,
     "story": {
       "format": "9:16 · 1080 × 1920 · 10 s",
       "hook": "La clôture de caisse",
@@ -10222,6 +10312,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "incidentHeure": null,
     "incidentQuoi": null,
     "saumon": null,
+    "voixOff": null,
     "story": {
       "format": "9:16 · 1080 × 1920 · 10 s",
       "hook": "L'anniversaire de la table 12",
@@ -10390,6 +10481,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "incidentHeure": null,
     "incidentQuoi": null,
     "saumon": null,
+    "voixOff": null,
     "story": {
       "format": "9:16 · 1080 × 1920 · 10 s",
       "hook": "Ta com', chaque matin",
@@ -10568,6 +10660,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "incidentHeure": null,
     "incidentQuoi": null,
     "saumon": null,
+    "voixOff": null,
     "story": {
       "format": "9:16 · 1080 × 1920 · 10 s",
       "hook": "Ce qu'on te demande d'être",
@@ -10746,6 +10839,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "incidentHeure": null,
     "incidentQuoi": null,
     "saumon": null,
+    "voixOff": null,
     "story": {
       "format": "9:16 · 1080 × 1920 · 10 s",
       "hook": "Ton système de pointage",
@@ -10924,6 +11018,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "incidentHeure": null,
     "incidentQuoi": null,
     "saumon": null,
+    "voixOff": null,
     "story": {
       "format": "9:16 · 1080 × 1920 · 10 s",
       "hook": "Je te jure, j'étais là à 8 h",
@@ -11101,6 +11196,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "incidentHeure": null,
     "incidentQuoi": null,
     "saumon": null,
+    "voixOff": null,
     "story": {
       "format": "9:16 · 1080 × 1920 · 10 s",
       "hook": "Ta demande de congé",
@@ -11280,6 +11376,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "incidentHeure": null,
     "incidentQuoi": null,
     "saumon": null,
+    "voixOff": null,
     "story": {
       "format": "9:16 · 1080 × 1920 · 10 s",
       "hook": "Le planning de la semaine",
@@ -11459,6 +11556,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "incidentHeure": null,
     "incidentQuoi": null,
     "saumon": null,
+    "voixOff": null,
     "story": {
       "format": "9:16 · 1080 × 1920 · 10 s",
       "hook": "Qui a accès à quoi ",
@@ -11640,6 +11738,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "incidentHeure": null,
     "incidentQuoi": null,
     "saumon": null,
+    "voixOff": null,
     "story": {
       "format": "9:16 · 1080 × 1920 · 10 s",
       "hook": "Ta cuisine n'a personne à qui parler",
@@ -11808,6 +11907,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "incidentHeure": null,
     "incidentQuoi": null,
     "saumon": null,
+    "voixOff": null,
     "story": {
       "format": "9:16 · 1080 × 1920 · 10 s",
       "hook": "Ton relevé de température",
@@ -11987,6 +12087,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "incidentHeure": null,
     "incidentQuoi": null,
     "saumon": null,
+    "voixOff": null,
     "story": {
       "format": "9:16 · 1080 × 1920 · 10 s",
       "hook": "Le test scientifique du nez",
@@ -12155,6 +12256,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "incidentHeure": null,
     "incidentQuoi": null,
     "saumon": null,
+    "voixOff": null,
     "story": {
       "format": "9:16 · 1080 × 1920 · 10 s",
       "hook": "Tu as vérifié la livraison ",
@@ -12333,6 +12435,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "incidentHeure": null,
     "incidentQuoi": null,
     "saumon": null,
+    "voixOff": null,
     "story": {
       "format": "9:16 · 1080 × 1920 · 10 s",
       "hook": "C'est fait",
@@ -12511,6 +12614,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "incidentHeure": null,
     "incidentQuoi": null,
     "saumon": null,
+    "voixOff": null,
     "story": {
       "format": "9:16 · 1080 × 1920 · 10 s",
       "hook": "La check-list du soir",
@@ -12689,6 +12793,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "incidentHeure": null,
     "incidentQuoi": null,
     "saumon": null,
+    "voixOff": null,
     "story": {
       "format": "9:16 · 1080 × 1920 · 10 s",
       "hook": "Contrôle sanitaire. Ce matin",
@@ -12860,6 +12965,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "incidentHeure": null,
     "incidentQuoi": null,
     "saumon": null,
+    "voixOff": null,
     "story": {
       "format": "9:16 · 1080 × 1920 · 10 s",
       "hook": "Combien tu commandes pour samedi ",
@@ -13032,6 +13138,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "incidentHeure": null,
     "incidentQuoi": null,
     "saumon": null,
+    "voixOff": null,
     "story": {
       "format": "9:16 · 1080 × 1920 · 10 s",
       "hook": "Tu as oublié la liste",
@@ -13203,6 +13310,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "incidentHeure": null,
     "incidentQuoi": null,
     "saumon": null,
+    "voixOff": null,
     "story": {
       "format": "9:16 · 1080 × 1920 · 10 s",
       "hook": "Ta facture fournisseur",
@@ -13374,6 +13482,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "incidentHeure": null,
     "incidentQuoi": null,
     "saumon": null,
+    "voixOff": null,
     "story": {
       "format": "9:16 · 1080 × 1920 · 10 s",
       "hook": "Ton inventaire du mardi",
@@ -13545,6 +13654,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "incidentHeure": null,
     "incidentQuoi": null,
     "saumon": null,
+    "voixOff": null,
     "story": {
       "format": "9:16 · 1080 × 1920 · 10 s",
       "hook": "Ton devis pour le mariage de samedi",
@@ -13717,6 +13827,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "incidentHeure": null,
     "incidentQuoi": null,
     "saumon": null,
+    "voixOff": null,
     "story": {
       "format": "9:16 · 1080 × 1920 · 10 s",
       "hook": "Ta comptabilité annuelle",
@@ -13888,6 +13999,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "incidentHeure": null,
     "incidentQuoi": null,
     "saumon": null,
+    "voixOff": null,
     "story": {
       "format": "9:16 · 1080 × 1920 · 10 s",
       "hook": "Ton programme de fidélité",
@@ -14059,6 +14171,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "incidentHeure": null,
     "incidentQuoi": null,
     "saumon": null,
+    "voixOff": null,
     "story": {
       "format": "9:16 · 1080 × 1920 · 10 s",
       "hook": "Ouverture. Fond de caisse : ",
@@ -14233,6 +14346,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "incidentHeure": null,
     "incidentQuoi": null,
     "saumon": null,
+    "voixOff": null,
     "story": {
       "format": "9:16 · 1080 × 1920 · 10 s",
       "hook": "On peut séparer ",
@@ -14408,6 +14522,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "incidentHeure": null,
     "incidentQuoi": null,
     "saumon": null,
+    "voixOff": null,
     "story": {
       "format": "9:16 · 1080 × 1920 · 10 s",
       "hook": "Il manque un centime",
@@ -14584,6 +14699,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "incidentHeure": null,
     "incidentQuoi": null,
     "saumon": null,
+    "voixOff": null,
     "story": {
       "format": "9:16 · 1080 × 1920 · 10 s",
       "hook": "J'AI DIT DEUX BURGERS ",
@@ -14747,6 +14863,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "incidentHeure": null,
     "incidentQuoi": null,
     "saumon": null,
+    "voixOff": null,
     "story": {
       "format": "9:16 · 1080 × 1920 · 10 s",
       "hook": "Commander à table",
@@ -14922,6 +15039,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "incidentHeure": null,
     "incidentQuoi": null,
     "saumon": null,
+    "voixOff": null,
     "story": {
       "format": "9:16 · 1080 × 1920 · 10 s",
       "hook": "Table de 8. 20 h 30. Personne",
@@ -15085,6 +15203,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "incidentHeure": null,
     "incidentQuoi": null,
     "saumon": null,
+    "voixOff": null,
     "story": {
       "format": "9:16 · 1080 × 1920 · 10 s",
       "hook": "Trois appels manqués pendant le coup de feu",
@@ -15258,6 +15377,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "incidentHeure": null,
     "incidentQuoi": null,
     "saumon": null,
+    "voixOff": null,
     "story": {
       "format": "9:16 · 1080 × 1920 · 10 s",
       "hook": "Trois plateformes. Trois écrans",
@@ -15433,6 +15553,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "incidentHeure": null,
     "incidentQuoi": null,
     "saumon": null,
+    "voixOff": null,
     "story": {
       "format": "9:16 · 1080 × 1920 · 10 s",
       "hook": "Un avis. Publié il y a six jours",
@@ -15599,6 +15720,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "incidentHeure": null,
     "incidentQuoi": null,
     "saumon": null,
+    "voixOff": null,
     "story": {
       "format": "9:16 · 1080 × 1920 · 10 s",
       "hook": "Ton jeu concours",
@@ -15775,6 +15897,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "incidentHeure": null,
     "incidentQuoi": null,
     "saumon": null,
+    "voixOff": null,
     "story": {
       "format": "9:16 · 1080 × 1920 · 10 s",
       "hook": "Ta prévision pour samedi",
@@ -15951,6 +16074,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "incidentHeure": null,
     "incidentQuoi": null,
     "saumon": null,
+    "voixOff": null,
     "story": {
       "format": "9:16 · 1080 × 1920 · 10 s",
       "hook": "Anniversaire de table 12",
@@ -16128,6 +16252,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "incidentHeure": null,
     "incidentQuoi": null,
     "saumon": null,
+    "voixOff": null,
     "story": {
       "format": "9:16 · 1080 × 1920 · 10 s",
       "hook": "Lui, il avait réservé",
@@ -16307,6 +16432,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "incidentHeure": null,
     "incidentQuoi": null,
     "saumon": null,
+    "voixOff": null,
     "story": {
       "format": "9:16 · 1080 × 1920 · 10 s",
       "hook": "Rupture de stock, 20 h 15",
@@ -16484,6 +16610,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "incidentHeure": null,
     "incidentQuoi": null,
     "saumon": null,
+    "voixOff": null,
     "story": {
       "format": "9:16 · 1080 × 1920 · 10 s",
       "hook": "2026, la livraison change de main",
@@ -16658,6 +16785,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "incidentHeure": null,
     "incidentQuoi": null,
     "saumon": null,
+    "voixOff": null,
     "story": {
       "format": "9:16 · 1080 × 1920 · 10 s",
       "hook": "Le service s'est arrêté deux minutes",
@@ -16833,6 +16961,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "incidentHeure": null,
     "incidentQuoi": null,
     "saumon": null,
+    "voixOff": null,
     "story": {
       "format": "9:16 · 1080 × 1920 · 10 s",
       "hook": "39° en cuisine",
@@ -17014,6 +17143,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "incidentHeure": null,
     "incidentQuoi": null,
     "saumon": null,
+    "voixOff": null,
     "story": {
       "format": "9:16 · 1080 × 1920 · 10 s",
       "hook": "Six plateformes. Six alertes",
@@ -17189,6 +17319,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "incidentHeure": null,
     "incidentQuoi": null,
     "saumon": null,
+    "voixOff": null,
     "story": {
       "format": "9:16 · 1080 × 1920 · 10 s",
       "hook": "Ton nouveau serveur, en période d'essai",
@@ -17361,6 +17492,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "incidentHeure": null,
     "incidentQuoi": null,
     "saumon": null,
+    "voixOff": null,
     "story": {
       "format": "9:16 · 1080 × 1920 · 10 s",
       "hook": "Quarante appels pendant le rush",
@@ -17536,6 +17668,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "incidentHeure": null,
     "incidentQuoi": null,
     "saumon": null,
+    "voixOff": null,
     "story": {
       "format": "9:16 · 1080 × 1920 · 10 s",
       "hook": "Il a mis vingt minutes à filmer",
@@ -17714,6 +17847,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "incidentHeure": null,
     "incidentQuoi": null,
     "saumon": null,
+    "voixOff": null,
     "story": {
       "format": "9:16 · 1080 × 1920 · 10 s",
       "hook": "Rapprochement des caisses. Vendredi soir",
@@ -17882,6 +18016,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "incidentHeure": null,
     "incidentQuoi": null,
     "saumon": null,
+    "voixOff": null,
     "story": {
       "format": "9:16 · 1080 × 1920 · 10 s",
       "hook": "Contrôle surprise. Ou pas",
@@ -18058,6 +18193,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "incidentHeure": null,
     "incidentQuoi": null,
     "saumon": null,
+    "voixOff": null,
     "story": {
       "format": "9:16 · 1080 × 1920 · 10 s",
       "hook": "Quarante couverts. Sans prévenir",
@@ -18234,6 +18370,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "incidentHeure": null,
     "incidentQuoi": null,
     "saumon": null,
+    "voixOff": null,
     "story": {
       "format": "9:16 · 1080 × 1920 · 10 s",
       "hook": "Table de huit. 20 h 30",
@@ -18409,6 +18546,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "incidentHeure": null,
     "incidentQuoi": null,
     "saumon": null,
+    "voixOff": null,
     "story": {
       "format": "9:16 · 1080 × 1920 · 10 s",
       "hook": "Dernière table du samedi",
@@ -18584,6 +18722,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "incidentHeure": null,
     "incidentQuoi": null,
     "saumon": null,
+    "voixOff": null,
     "story": {
       "format": "9:16 · 1080 × 1920 · 10 s",
       "hook": "On peut payer chacun ",
@@ -18752,6 +18891,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "incidentHeure": null,
     "incidentQuoi": null,
     "saumon": null,
+    "voixOff": null,
     "story": {
       "format": "9:16 · 1080 × 1920 · 10 s",
       "hook": "Tout le monde a un tour",
@@ -18919,6 +19059,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "incidentHeure": null,
     "incidentQuoi": null,
     "saumon": null,
+    "voixOff": null,
     "story": {
       "format": "9:16 · 1080 × 1920 · 10 s",
       "hook": "Il te faudrait six bras",
@@ -19093,6 +19234,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "incidentHeure": null,
     "incidentQuoi": null,
     "saumon": null,
+    "voixOff": null,
     "story": {
       "format": "9:16 · 1080 × 1920 · 10 s",
       "hook": "Ta cave à ferments",
@@ -19274,6 +19416,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "incidentHeure": null,
     "incidentQuoi": null,
     "saumon": null,
+    "voixOff": null,
     "story": {
       "format": "9:16 · 1080 × 1920 · 10 s",
       "hook": "Tu suis toutes les tendances",
@@ -19453,6 +19596,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "incidentHeure": null,
     "incidentQuoi": null,
     "saumon": null,
+    "voixOff": null,
     "story": {
       "format": "9:16 · 1080 × 1920 · 10 s",
       "hook": "La cuisine du futur",
@@ -19630,6 +19774,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "incidentHeure": null,
     "incidentQuoi": null,
     "saumon": null,
+    "voixOff": null,
     "story": {
       "format": "9:16 · 1080 × 1920 · 10 s",
       "hook": "La carte du futur",
@@ -19808,6 +19953,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "incidentHeure": null,
     "incidentQuoi": null,
     "saumon": null,
+    "voixOff": null,
     "story": {
       "format": "9:16 · 1080 × 1920 · 10 s",
       "hook": "Livraison réussie. Presque",
@@ -19978,6 +20124,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "incidentHeure": null,
     "incidentQuoi": null,
     "saumon": null,
+    "voixOff": null,
     "story": {
       "format": "9:16 · 1080 × 1920 · 10 s",
       "hook": "Ton community manager, c'est ta brigade",
@@ -20159,6 +20306,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "incidentHeure": null,
     "incidentQuoi": null,
     "saumon": null,
+    "voixOff": null,
     "story": {
       "format": "9:16 · 1080 × 1920 · 10 s",
       "hook": "Circuit court, très court",
@@ -20337,6 +20485,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "incidentHeure": null,
     "incidentQuoi": null,
     "saumon": null,
+    "voixOff": null,
     "story": {
       "format": "9:16 · 1080 × 1920 · 10 s",
       "hook": "Ton système de commandes",
@@ -20519,6 +20668,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "incidentHeure": null,
     "incidentQuoi": null,
     "saumon": null,
+    "voixOff": null,
     "story": {
       "format": "9:16 · 1080 × 1920 · 10 s",
       "hook": "Le défi à dix minutes",
@@ -20696,6 +20846,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "incidentHeure": null,
     "incidentQuoi": null,
     "saumon": null,
+    "voixOff": null,
     "story": {
       "format": "9:16 · 1080 × 1920 · 10 s",
       "hook": "Le brunch du dimanche",
@@ -20868,6 +21019,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "incidentHeure": null,
     "incidentQuoi": null,
     "saumon": null,
+    "voixOff": null,
     "story": {
       "format": "9:16 · 1080 × 1920 · 10 s",
       "hook": "Ta stratégie d'acquisition",
@@ -21047,6 +21199,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "incidentHeure": null,
     "incidentQuoi": null,
     "saumon": null,
+    "voixOff": null,
     "story": {
       "format": "9:16 · 1080 × 1920 · 10 s",
       "hook": "Réunion de tes dix logiciels",
@@ -21224,6 +21377,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "incidentHeure": null,
     "incidentQuoi": null,
     "saumon": null,
+    "voixOff": null,
     "story": {
       "format": "9:16 · 1080 × 1920 · 10 s",
       "hook": "Alors, sans oignon, mais",
@@ -21397,6 +21551,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "incidentHeure": null,
     "incidentQuoi": null,
     "saumon": null,
+    "voixOff": null,
     "story": {
       "format": "9:16 · 1080 × 1920 · 10 s",
       "hook": "Il dit « comme d'habitude »",
@@ -21576,6 +21731,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "incidentHeure": null,
     "incidentQuoi": null,
     "saumon": null,
+    "voixOff": null,
     "story": {
       "format": "9:16 · 1080 × 1920 · 10 s",
       "hook": "Il annonce ça au dessert",
@@ -21755,6 +21911,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "incidentHeure": null,
     "incidentQuoi": null,
     "saumon": null,
+    "voixOff": null,
     "story": {
       "format": "9:16 · 1080 × 1920 · 10 s",
       "hook": "Il est minuit dix",
@@ -21916,6 +22073,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "incidentHeure": null,
     "incidentQuoi": null,
     "saumon": null,
+    "voixOff": null,
     "story": {
       "format": "9:16 · 1080 × 1920 · 10 s",
       "hook": "Je serais mieux là, non ",
@@ -22095,6 +22253,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "incidentHeure": null,
     "incidentQuoi": null,
     "saumon": null,
+    "voixOff": null,
     "story": {
       "format": "9:16 · 1080 × 1920 · 10 s",
       "hook": "On partage, c'est plus convivial",
@@ -22261,6 +22420,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "incidentHeure": null,
     "incidentQuoi": null,
     "saumon": null,
+    "voixOff": null,
     "story": {
       "format": "9:16 · 1080 × 1920 · 10 s",
       "hook": "Bonne année à tout le monde",
@@ -22437,6 +22597,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "incidentHeure": null,
     "incidentQuoi": null,
     "saumon": null,
+    "voixOff": null,
     "story": {
       "format": "9:16 · 1080 × 1920 · 10 s",
       "hook": "Trente couverts en plus, ça rentre",
@@ -22609,6 +22770,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "incidentHeure": null,
     "incidentQuoi": null,
     "saumon": null,
+    "voixOff": null,
     "story": {
       "format": "9:16 · 1080 × 1920 · 10 s",
       "hook": "Premier rayon de soleil de l'année",
@@ -22782,6 +22944,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "incidentHeure": null,
     "incidentQuoi": null,
     "saumon": null,
+    "voixOff": null,
     "story": {
       "format": "9:16 · 1080 × 1920 · 10 s",
       "hook": "21 juin. Devant ta porte",
@@ -22960,6 +23123,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "incidentHeure": null,
     "incidentQuoi": null,
     "saumon": null,
+    "voixOff": null,
     "story": {
       "format": "9:16 · 1080 × 1920 · 10 s",
       "hook": "1er septembre. Deux absents",
@@ -23137,6 +23301,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "incidentHeure": null,
     "incidentQuoi": null,
     "saumon": null,
+    "voixOff": null,
     "story": {
       "format": "9:16 · 1080 × 1920 · 10 s",
       "hook": "Tout le quartier est fermé",
@@ -23312,6 +23477,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "incidentHeure": null,
     "incidentQuoi": null,
     "saumon": null,
+    "voixOff": null,
     "story": {
       "format": "9:16 · 1080 × 1920 · 10 s",
       "hook": "Une minute pour encaisser trois tournées",
@@ -23480,6 +23646,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "incidentHeure": null,
     "incidentQuoi": null,
     "saumon": null,
+    "voixOff": null,
     "story": {
       "format": "9:16 · 1080 × 1920 · 10 s",
       "hook": "Sept heures de service. Vue d'en bas",
@@ -23659,6 +23826,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "incidentHeure": null,
     "incidentQuoi": null,
     "saumon": null,
+    "voixOff": null,
     "story": {
       "format": "9:16 · 1080 × 1920 · 10 s",
       "hook": "Toutes tes réservations du soir",
@@ -23837,6 +24005,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "incidentHeure": null,
     "incidentQuoi": null,
     "saumon": null,
+    "voixOff": null,
     "story": {
       "format": "9:16 · 1080 × 1920 · 10 s",
       "hook": "Deux minutes par cycle. Quatre-vingts cycles",
@@ -24016,6 +24185,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "incidentHeure": null,
     "incidentQuoi": null,
     "saumon": null,
+    "voixOff": null,
     "story": {
       "format": "9:16 · 1080 × 1920 · 10 s",
       "hook": "Deux cent quarante cafés. Aujourd'hui",
@@ -24183,6 +24353,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "incidentHeure": null,
     "incidentQuoi": null,
     "saumon": null,
+    "voixOff": null,
     "story": {
       "format": "9:16 · 1080 × 1920 · 10 s",
       "hook": "Quarante-cinq secondes de vie",
@@ -24357,6 +24528,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "incidentHeure": null,
     "incidentQuoi": null,
     "saumon": null,
+    "voixOff": null,
     "story": {
       "format": "9:16 · 1080 × 1920 · 10 s",
       "hook": "20 h 30. Le coup de feu",
@@ -24538,6 +24710,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "incidentHeure": null,
     "incidentQuoi": null,
     "saumon": null,
+    "voixOff": null,
     "story": {
       "format": "9:16 · 1080 × 1920 · 10 s",
       "hook": "Ton inventaire, la nuit",
@@ -24717,6 +24890,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "incidentHeure": null,
     "incidentQuoi": null,
     "saumon": null,
+    "voixOff": null,
     "story": {
       "format": "9:16 · 1080 × 1920 · 10 s",
       "hook": "Table 6 depuis 22 minutes",
@@ -24894,6 +25068,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "incidentHeure": null,
     "incidentQuoi": null,
     "saumon": null,
+    "voixOff": null,
     "story": {
       "format": "9:16 · 1080 × 1920 · 10 s",
       "hook": "Qui envoie le plat du jour",
@@ -25067,6 +25242,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "incidentHeure": null,
     "incidentQuoi": null,
     "saumon": null,
+    "voixOff": null,
     "story": {
       "format": "9:16 · 1080 × 1920 · 10 s",
       "hook": "Une seule commande",
@@ -25243,6 +25419,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "incidentHeure": null,
     "incidentQuoi": null,
     "saumon": null,
+    "voixOff": null,
     "story": {
       "format": "9:16 · 1080 × 1920 · 10 s",
       "hook": "Un avis une étoile",
@@ -25420,6 +25597,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "incidentHeure": null,
     "incidentQuoi": null,
     "saumon": null,
+    "voixOff": null,
     "story": {
       "format": "9:16 · 1080 × 1920 · 10 s",
       "hook": "Le gérant, dans son habitat naturel",
@@ -25592,6 +25770,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "incidentHeure": null,
     "incidentQuoi": null,
     "saumon": null,
+    "voixOff": null,
     "story": {
       "format": "9:16 · 1080 × 1920 · 10 s",
       "hook": "Quarante bougies. Une seule mauvaise idée",
@@ -25767,6 +25946,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "incidentHeure": null,
     "incidentQuoi": null,
     "saumon": null,
+    "voixOff": null,
     "story": {
       "format": "9:16 · 1080 × 1920 · 10 s",
       "hook": "Douze mille euros de prestation",
@@ -25948,6 +26128,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "incidentHeure": null,
     "incidentQuoi": null,
     "saumon": null,
+    "voixOff": null,
     "story": {
       "format": "9:16 · 1080 × 1920 · 10 s",
       "hook": "Trois plateformes. Une place",
@@ -26118,6 +26299,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "incidentHeure": null,
     "incidentQuoi": null,
     "saumon": null,
+    "voixOff": null,
     "story": {
       "format": "9:16 · 1080 × 1920 · 10 s",
       "hook": "Ta salle a un truc que personne d'autre n'a",
@@ -26297,6 +26479,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "incidentHeure": null,
     "incidentQuoi": null,
     "saumon": null,
+    "voixOff": null,
     "story": {
       "format": "9:16 · 1080 × 1920 · 10 s",
       "hook": "Cent cinquante épisodes",
@@ -26522,6 +26705,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "incidentHeure": null,
     "incidentQuoi": null,
     "saumon": null,
+    "voixOff": null,
     "story": {
       "format": "9:16 · 1080 × 1920 · 10 s",
       "hook": "Regarde-le une seconde",
@@ -26703,6 +26887,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "incidentHeure": null,
     "incidentQuoi": null,
     "saumon": null,
+    "voixOff": null,
     "story": {
       "format": "9:16 · 1080 × 1920 · 10 s",
       "hook": "On ne cache rien",
@@ -26884,6 +27069,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "incidentHeure": null,
     "incidentQuoi": null,
     "saumon": null,
+    "voixOff": null,
     "story": null,
     "carrousel": null,
     "imageFacebook": null,
@@ -27060,6 +27246,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "incidentHeure": null,
     "incidentQuoi": null,
     "saumon": null,
+    "voixOff": null,
     "story": null,
     "carrousel": null,
     "imageFacebook": null,
@@ -27236,6 +27423,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "incidentHeure": null,
     "incidentQuoi": null,
     "saumon": null,
+    "voixOff": null,
     "story": null,
     "carrousel": null,
     "imageFacebook": null,
@@ -27412,6 +27600,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "incidentHeure": null,
     "incidentQuoi": null,
     "saumon": null,
+    "voixOff": null,
     "story": {
       "format": "9:16 · 1080 × 1920 · 10 s",
       "hook": "Ce que tu ne vois jamais",
@@ -27593,6 +27782,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "incidentHeure": null,
     "incidentQuoi": null,
     "saumon": null,
+    "voixOff": null,
     "story": null,
     "carrousel": null,
     "imageFacebook": null,
@@ -27769,6 +27959,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "incidentHeure": null,
     "incidentQuoi": null,
     "saumon": null,
+    "voixOff": null,
     "story": {
       "format": "9:16 · 1080 × 1920 · 10 s",
       "hook": "On diffuse le match",
@@ -27950,6 +28141,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "incidentHeure": null,
     "incidentQuoi": null,
     "saumon": null,
+    "voixOff": null,
     "story": {
       "format": "9:16 · 1080 × 1920 · 10 s",
       "hook": "C'est ton anniversaire",
@@ -28131,6 +28323,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "incidentHeure": null,
     "incidentQuoi": null,
     "saumon": null,
+    "voixOff": null,
     "story": null,
     "carrousel": null,
     "imageFacebook": null,
@@ -28307,6 +28500,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "incidentHeure": null,
     "incidentQuoi": null,
     "saumon": null,
+    "voixOff": null,
     "story": null,
     "carrousel": null,
     "imageFacebook": null,
@@ -28483,6 +28677,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "incidentHeure": null,
     "incidentQuoi": null,
     "saumon": null,
+    "voixOff": null,
     "story": null,
     "carrousel": null,
     "imageFacebook": null,
@@ -28659,6 +28854,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "incidentHeure": null,
     "incidentQuoi": null,
     "saumon": null,
+    "voixOff": null,
     "story": null,
     "carrousel": null,
     "imageFacebook": null,
@@ -28835,6 +29031,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "incidentHeure": null,
     "incidentQuoi": null,
     "saumon": null,
+    "voixOff": null,
     "story": null,
     "carrousel": null,
     "imageFacebook": null,
@@ -29011,6 +29208,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "incidentHeure": null,
     "incidentQuoi": null,
     "saumon": null,
+    "voixOff": null,
     "story": null,
     "carrousel": null,
     "imageFacebook": null,
@@ -29187,6 +29385,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "incidentHeure": null,
     "incidentQuoi": null,
     "saumon": null,
+    "voixOff": null,
     "story": null,
     "carrousel": null,
     "imageFacebook": null,
@@ -29363,6 +29562,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "incidentHeure": null,
     "incidentQuoi": null,
     "saumon": null,
+    "voixOff": null,
     "story": {
       "format": "9:16 · 1080 × 1920 · 10 s",
       "hook": "Le poste qu'on ne montre jamais",
@@ -29544,6 +29744,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "incidentHeure": null,
     "incidentQuoi": null,
     "saumon": null,
+    "voixOff": null,
     "story": null,
     "carrousel": null,
     "imageFacebook": null,
@@ -29720,6 +29921,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "incidentHeure": null,
     "incidentQuoi": null,
     "saumon": null,
+    "voixOff": null,
     "story": null,
     "carrousel": null,
     "imageFacebook": null,
@@ -29896,6 +30098,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "incidentHeure": null,
     "incidentQuoi": null,
     "saumon": null,
+    "voixOff": null,
     "story": null,
     "carrousel": null,
     "imageFacebook": null,
@@ -30072,6 +30275,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "incidentHeure": null,
     "incidentQuoi": null,
     "saumon": null,
+    "voixOff": null,
     "story": null,
     "carrousel": null,
     "imageFacebook": null,
@@ -30248,6 +30452,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "incidentHeure": null,
     "incidentQuoi": null,
     "saumon": null,
+    "voixOff": null,
     "story": null,
     "carrousel": null,
     "imageFacebook": null,
@@ -30424,6 +30629,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "incidentHeure": null,
     "incidentQuoi": null,
     "saumon": null,
+    "voixOff": null,
     "story": null,
     "carrousel": null,
     "imageFacebook": null,
@@ -30600,6 +30806,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "incidentHeure": null,
     "incidentQuoi": null,
     "saumon": null,
+    "voixOff": null,
     "story": {
       "format": "9:16 · 1080 × 1920 · 10 s",
       "hook": "Premier rendez-vous",
@@ -30781,6 +30988,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "incidentHeure": null,
     "incidentQuoi": null,
     "saumon": null,
+    "voixOff": null,
     "story": null,
     "carrousel": null,
     "imageFacebook": null,
@@ -30957,6 +31165,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "incidentHeure": null,
     "incidentQuoi": null,
     "saumon": null,
+    "voixOff": null,
     "story": null,
     "carrousel": null,
     "imageFacebook": null,
@@ -31133,6 +31342,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "incidentHeure": null,
     "incidentQuoi": null,
     "saumon": null,
+    "voixOff": null,
     "story": null,
     "carrousel": null,
     "imageFacebook": null,
@@ -31309,6 +31519,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "incidentHeure": null,
     "incidentQuoi": null,
     "saumon": null,
+    "voixOff": null,
     "story": null,
     "carrousel": null,
     "imageFacebook": null,
@@ -31485,6 +31696,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "incidentHeure": null,
     "incidentQuoi": null,
     "saumon": null,
+    "voixOff": null,
     "story": {
       "format": "9:16 · 1080 × 1920 · 10 s",
       "hook": "Fermé le lundi",
@@ -31666,6 +31878,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "incidentHeure": null,
     "incidentQuoi": null,
     "saumon": null,
+    "voixOff": null,
     "story": {
       "format": "9:16 · 1080 × 1920 · 10 s",
       "hook": "Un an. Les vrais chiffres",
@@ -31825,6 +32038,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "incidentHeure": null,
     "incidentQuoi": null,
     "saumon": null,
+    "voixOff": null,
     "story": {
       "format": "9:16 · 1080 × 1920 · 10 s",
       "hook": "Vingt heures dix. Personne ne décroche",
@@ -31984,6 +32198,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "incidentHeure": null,
     "incidentQuoi": null,
     "saumon": null,
+    "voixOff": null,
     "story": {
       "format": "9:16 · 1080 × 1920 · 10 s",
       "hook": "L'ardoise date de mardi. On est vendredi",
@@ -32143,6 +32358,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "incidentHeure": null,
     "incidentQuoi": null,
     "saumon": null,
+    "voixOff": null,
     "story": {
       "format": "9:16 · 1080 × 1920 · 10 s",
       "hook": "« Il y a un plat végétarien ? » Silence dans le groupe",
@@ -32302,6 +32518,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "incidentHeure": null,
     "incidentQuoi": null,
     "saumon": null,
+    "voixOff": null,
     "story": {
       "format": "9:16 · 1080 × 1920 · 10 s",
       "hook": "Douze personnes dehors. Trois tables libres au fond",
@@ -32461,6 +32678,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "incidentHeure": null,
     "incidentQuoi": null,
     "saumon": null,
+    "voixOff": null,
     "story": {
       "format": "9:16 · 1080 × 1920 · 10 s",
       "hook": "Il l'avait dit à la réservation. Deux fois",
@@ -32620,6 +32838,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "incidentHeure": null,
     "incidentQuoi": null,
     "saumon": null,
+    "voixOff": null,
     "story": {
       "format": "9:16 · 1080 × 1920 · 10 s",
       "hook": "Quarante couverts, un chiffre au stylo sur un set de table",
@@ -32779,6 +32998,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "incidentHeure": null,
     "incidentQuoi": null,
     "saumon": null,
+    "voixOff": null,
     "story": {
       "format": "9:16 · 1080 × 1920 · 10 s",
       "hook": "Il commande en anglais. Le serveur sourit et note",
@@ -32938,6 +33158,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "incidentHeure": null,
     "incidentQuoi": null,
     "saumon": null,
+    "voixOff": null,
     "story": {
       "format": "9:16 · 1080 × 1920 · 10 s",
       "hook": "« Il y a des fruits à coque dans le pesto ? »",
@@ -33097,6 +33318,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "incidentHeure": null,
     "incidentQuoi": null,
     "saumon": null,
+    "voixOff": null,
     "story": {
       "format": "9:16 · 1080 × 1920 · 10 s",
       "hook": "« Avec du bacon en plus. » Noté sur le carnet",
@@ -33256,6 +33478,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "incidentHeure": null,
     "incidentQuoi": null,
     "saumon": null,
+    "voixOff": null,
     "story": {
       "format": "9:16 · 1080 × 1920 · 10 s",
       "hook": "Cinq demandes en une phrase. Le serveur en retient trois",
@@ -33415,6 +33638,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "incidentHeure": null,
     "incidentQuoi": null,
     "saumon": null,
+    "voixOff": null,
     "story": {
       "format": "9:16 · 1080 × 1920 · 10 s",
       "hook": "« Qu'est-ce qu'il y a exactement dans ce plat ? »",
@@ -33574,6 +33798,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "incidentHeure": null,
     "incidentQuoi": null,
     "saumon": null,
+    "voixOff": null,
     "story": {
       "format": "9:16 · 1080 × 1920 · 10 s",
       "hook": "Six ans qu'il vient le mardi. Même table",
@@ -33733,6 +33958,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "incidentHeure": null,
     "incidentQuoi": null,
     "saumon": null,
+    "voixOff": null,
     "story": {
       "format": "9:16 · 1080 × 1920 · 10 s",
       "hook": "L'assiette arrive. Ce n'est pas le bon plat",
@@ -33892,6 +34118,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "incidentHeure": null,
     "incidentQuoi": null,
     "saumon": null,
+    "voixOff": null,
     "story": {
       "format": "9:16 · 1080 × 1920 · 10 s",
       "hook": "Le ticket a bourré. La commande n'existe plus",
@@ -34051,6 +34278,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "incidentHeure": null,
     "incidentQuoi": null,
     "saumon": null,
+    "voixOff": null,
     "story": {
       "format": "9:16 · 1080 × 1920 · 10 s",
       "hook": "La table 6 attend depuis vingt-deux minutes",
@@ -34210,6 +34438,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "incidentHeure": null,
     "incidentQuoi": null,
     "saumon": null,
+    "voixOff": null,
     "story": {
       "format": "9:16 · 1080 × 1920 · 10 s",
       "hook": "Vingt heures quinze : plus de poulet",
@@ -34369,6 +34598,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "incidentHeure": null,
     "incidentQuoi": null,
     "saumon": null,
+    "voixOff": null,
     "story": {
       "format": "9:16 · 1080 × 1920 · 10 s",
       "hook": "Dite au téléphone. Redite à l'accueil. Notée sur le carnet",
@@ -34528,6 +34758,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "incidentHeure": null,
     "incidentQuoi": null,
     "saumon": null,
+    "voixOff": null,
     "story": {
       "format": "9:16 · 1080 × 1920 · 10 s",
       "hook": "Onze tickets. Trois modificateurs chacun",
@@ -34687,6 +34918,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "incidentHeure": null,
     "incidentQuoi": null,
     "saumon": null,
+    "voixOff": null,
     "story": {
       "format": "9:16 · 1080 × 1920 · 10 s",
       "hook": "« On peut payer chacun ? » Quatorze fois",
@@ -34846,6 +35078,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "incidentHeure": null,
     "incidentQuoi": null,
     "saumon": null,
+    "voixOff": null,
     "story": {
       "format": "9:16 · 1080 × 1920 · 10 s",
       "hook": "Minuit vingt. La caisse ne tombe pas juste",
@@ -35005,6 +35238,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "incidentHeure": null,
     "incidentQuoi": null,
     "saumon": null,
+    "voixOff": null,
     "story": {
       "format": "9:16 · 1080 × 1920 · 10 s",
       "hook": "Elle a la carte du restaurant. Quelque part",
@@ -35164,6 +35398,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "incidentHeure": null,
     "incidentQuoi": null,
     "saumon": null,
+    "voixOff": null,
     "story": {
       "format": "9:16 · 1080 × 1920 · 10 s",
       "hook": "« On m'a offert un bon ici. »",
@@ -35323,6 +35558,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "incidentHeure": null,
     "incidentQuoi": null,
     "saumon": null,
+    "voixOff": null,
     "story": {
       "format": "9:16 · 1080 × 1920 · 10 s",
       "hook": "Le terminal ne parle pas à la caisse",
@@ -35482,6 +35718,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "incidentHeure": null,
     "incidentQuoi": null,
     "saumon": null,
+    "voixOff": null,
     "story": {
       "format": "9:16 · 1080 × 1920 · 10 s",
       "hook": "Il commande sur une plateforme qui prend trente pour cent",
@@ -35641,6 +35878,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "incidentHeure": null,
     "incidentQuoi": null,
     "saumon": null,
+    "voixOff": null,
     "story": {
       "format": "9:16 · 1080 × 1920 · 10 s",
       "hook": "Un avis une étoile, en haut de la fiche, depuis six jours",
@@ -35800,6 +36038,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "incidentHeure": null,
     "incidentQuoi": null,
     "saumon": null,
+    "voixOff": null,
     "story": {
       "format": "9:16 · 1080 × 1920 · 10 s",
       "hook": "« Tout s'est bien passé ? » — « Très bien, merci. »",
@@ -35959,6 +36198,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "incidentHeure": null,
     "incidentQuoi": null,
     "saumon": null,
+    "voixOff": null,
     "story": {
       "format": "9:16 · 1080 × 1920 · 10 s",
       "hook": "Un habitué a cessé de venir",
@@ -36118,6 +36358,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "incidentHeure": null,
     "incidentQuoi": null,
     "saumon": null,
+    "voixOff": null,
     "story": {
       "format": "9:16 · 1080 × 1920 · 10 s",
       "hook": "Trois cartes de visite dans un bocal. Une illisible",
@@ -36277,6 +36518,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "incidentHeure": null,
     "incidentQuoi": null,
     "saumon": null,
+    "voixOff": null,
     "story": {
       "format": "9:16 · 1080 × 1920 · 10 s",
       "hook": "Il revient six mois après. Il ne dit rien, il s'assoit",
@@ -36436,6 +36678,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "incidentHeure": null,
     "incidentQuoi": null,
     "saumon": null,
+    "voixOff": null,
     "story": {
       "format": "9:16 · 1080 × 1920 · 10 s",
       "hook": "Deux cent dix épisodes. Un client entre, mange, paye et revient",
@@ -36595,6 +36838,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "incidentHeure": null,
     "incidentQuoi": null,
     "saumon": null,
+    "voixOff": null,
     "story": {
       "format": "9:16 · 1080 × 1920 · 10 s",
       "hook": "Sept heures. Le café n'est pas encore prêt",
@@ -36754,6 +36998,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "incidentHeure": null,
     "incidentQuoi": null,
     "saumon": null,
+    "voixOff": null,
     "story": {
       "format": "9:16 · 1080 × 1920 · 10 s",
       "hook": "On découvre les ruptures à midi. Toujours",
@@ -36913,6 +37158,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "incidentHeure": null,
     "incidentQuoi": null,
     "saumon": null,
+    "voixOff": null,
     "story": {
       "format": "9:16 · 1080 × 1920 · 10 s",
       "hook": "La production de jeudi est prête. Sur le papier",
@@ -37072,6 +37318,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "incidentHeure": null,
     "incidentQuoi": null,
     "saumon": null,
+    "voixOff": null,
     "story": {
       "format": "9:16 · 1080 × 1920 · 10 s",
       "hook": "Le fournisseur ferme les commandes à neuf heures",
@@ -37231,6 +37478,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "incidentHeure": null,
     "incidentQuoi": null,
     "saumon": null,
+    "voixOff": null,
     "story": {
       "format": "9:16 · 1080 × 1920 · 10 s",
       "hook": "Combien de couverts ce soir ? « On verra bien. »",
@@ -37390,6 +37638,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "incidentHeure": null,
     "incidentQuoi": null,
     "saumon": null,
+    "voixOff": null,
     "story": {
       "format": "9:16 · 1080 × 1920 · 10 s",
       "hook": "« Frigo 3. » Il y en a deux",
@@ -37549,6 +37798,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "incidentHeure": null,
     "incidentQuoi": null,
     "saumon": null,
+    "voixOff": null,
     "story": {
       "format": "9:16 · 1080 × 1920 · 10 s",
       "hook": "Le classeur HACCP se remplit le vendredi soir",
@@ -37708,6 +37958,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "incidentHeure": null,
     "incidentQuoi": null,
     "saumon": null,
+    "voixOff": null,
     "story": {
       "format": "9:16 · 1080 × 1920 · 10 s",
       "hook": "Une date au feutre sur du scotch",
@@ -37867,6 +38118,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "incidentHeure": null,
     "incidentQuoi": null,
     "saumon": null,
+    "voixOff": null,
     "story": {
       "format": "9:16 · 1080 × 1920 · 10 s",
       "hook": "« Vous contrôlez vos livraisons ? » — « Bien sûr. »",
@@ -38026,6 +38278,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "incidentHeure": null,
     "incidentQuoi": null,
     "saumon": null,
+    "voixOff": null,
     "story": {
       "format": "9:16 · 1080 × 1920 · 10 s",
       "hook": "La mise en place, c'est ce qu'on se crie à travers la cuisine",
@@ -38185,6 +38438,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "incidentHeure": null,
     "incidentQuoi": null,
     "saumon": null,
+    "voixOff": null,
     "story": {
       "format": "9:16 · 1080 × 1920 · 10 s",
       "hook": "Ça bouchonne. Personne ne sait où",
@@ -38344,6 +38598,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "incidentHeure": null,
     "incidentQuoi": null,
     "saumon": null,
+    "voixOff": null,
     "story": {
       "format": "9:16 · 1080 × 1920 · 10 s",
       "hook": "Le serveur traverse la cuisine pour demander",
@@ -38503,6 +38758,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "incidentHeure": null,
     "incidentQuoi": null,
     "saumon": null,
+    "voixOff": null,
     "story": {
       "format": "9:16 · 1080 × 1920 · 10 s",
       "hook": "Rupture à midi vingt",
@@ -38662,6 +38918,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "incidentHeure": null,
     "incidentQuoi": null,
     "saumon": null,
+    "voixOff": null,
     "story": {
       "format": "9:16 · 1080 × 1920 · 10 s",
       "hook": "Ouvrir la caisse : cinq clics, un fond de caisse, un mot de passe",
@@ -38821,6 +39078,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "incidentHeure": null,
     "incidentQuoi": null,
     "saumon": null,
+    "voixOff": null,
     "story": {
       "format": "9:16 · 1080 × 1920 · 10 s",
       "hook": "« Sans gluten » dit au serveur, en pleine salle",
@@ -38980,6 +39238,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "incidentHeure": null,
     "incidentQuoi": null,
     "saumon": null,
+    "voixOff": null,
     "story": {
       "format": "9:16 · 1080 × 1920 · 10 s",
       "hook": "« Qu'est-ce que je poste cette semaine ? »",
@@ -39139,6 +39398,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "incidentHeure": null,
     "incidentQuoi": null,
     "saumon": null,
+    "voixOff": null,
     "story": {
       "format": "9:16 · 1080 × 1920 · 10 s",
       "hook": "Une promo au hasard, ça s'appelle une remise",
@@ -39298,6 +39558,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "incidentHeure": null,
     "incidentQuoi": null,
     "saumon": null,
+    "voixOff": null,
     "story": {
       "format": "9:16 · 1080 × 1920 · 10 s",
       "hook": "Un avis sans réponse, c'est six jours en haut de la fiche",
@@ -39457,6 +39718,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "incidentHeure": null,
     "incidentQuoi": null,
     "saumon": null,
+    "voixOff": null,
     "story": {
       "format": "9:16 · 1080 × 1920 · 10 s",
       "hook": "Tout est programmé. Tout part. Sauf un",
@@ -39616,6 +39878,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "incidentHeure": null,
     "incidentQuoi": null,
     "saumon": null,
+    "voixOff": null,
     "story": {
       "format": "9:16 · 1080 × 1920 · 10 s",
       "hook": "Publier à midi, c'est être libre à midi",
@@ -39775,6 +40038,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "incidentHeure": null,
     "incidentQuoi": null,
     "saumon": null,
+    "voixOff": null,
     "story": {
       "format": "9:16 · 1080 × 1920 · 10 s",
       "hook": "Le suivant, c'est celui qui attend depuis le plus longtemps",
@@ -39934,6 +40198,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "incidentHeure": null,
     "incidentQuoi": null,
     "saumon": null,
+    "voixOff": null,
     "story": {
       "format": "9:16 · 1080 × 1920 · 10 s",
       "hook": "Il l'a dit à la réservation. Et à l'accueil",
@@ -40093,6 +40358,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "incidentHeure": null,
     "incidentQuoi": null,
     "saumon": null,
+    "voixOff": null,
     "story": {
       "format": "9:16 · 1080 × 1920 · 10 s",
       "hook": "Le client rappelle. La commande est « en route »",
@@ -40252,6 +40518,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "incidentHeure": null,
     "incidentQuoi": null,
     "saumon": null,
+    "voixOff": null,
     "story": {
       "format": "9:16 · 1080 × 1920 · 10 s",
       "hook": "Le nouveau serveur lui demande s'il connaît la maison",
@@ -40411,6 +40678,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "incidentHeure": null,
     "incidentQuoi": null,
     "saumon": null,
+    "voixOff": null,
     "story": {
       "format": "9:16 · 1080 × 1920 · 10 s",
       "hook": "« Je vous offre le café. » Le geste part du cœur",
@@ -40570,6 +40838,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "incidentHeure": null,
     "incidentQuoi": null,
     "saumon": null,
+    "voixOff": null,
     "story": {
       "format": "9:16 · 1080 × 1920 · 10 s",
       "hook": "Le dernier client est parti à vingt-trois heures",
@@ -40729,6 +40998,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "incidentHeure": null,
     "incidentQuoi": null,
     "saumon": null,
+    "voixOff": null,
     "story": {
       "format": "9:16 · 1080 × 1920 · 10 s",
       "hook": "Il manque quelque chose. On ne sait pas quoi",
@@ -40888,6 +41158,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "incidentHeure": null,
     "incidentQuoi": null,
     "saumon": null,
+    "voixOff": null,
     "story": {
       "format": "9:16 · 1080 × 1920 · 10 s",
       "hook": "La pile de factures grandit toute seule",
@@ -41047,6 +41318,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "incidentHeure": null,
     "incidentQuoi": null,
     "saumon": null,
+    "voixOff": null,
     "story": {
       "format": "9:16 · 1080 × 1920 · 10 s",
       "hook": "La journée est finie. Il reste à la raconter",
@@ -41206,6 +41478,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "incidentHeure": null,
     "incidentQuoi": null,
     "saumon": null,
+    "voixOff": null,
     "story": {
       "format": "9:16 · 1080 × 1920 · 10 s",
       "hook": "Deux cent quarante épisodes. Huit saisons",
@@ -41316,6 +41589,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "incidentHeure": null,
     "incidentQuoi": null,
     "saumon": null,
+    "voixOff": null,
     "story": {
       "format": "9:16 · 1080 × 1920 · 10 s",
       "hook": "Il ouvre, il produit, il ferme. Sa journée entière tient dans une seule application",
@@ -41461,6 +41735,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "incidentHeure": "20h15",
     "incidentQuoi": "Un pavé part, revient dix minutes plus tard. Trop cuit, dit la table.",
     "saumon": null,
+    "voixOff": null,
     "story": {
       "format": "9:16 · 1080 × 1920 · 10 s",
       "hook": "Il ouvre, il produit, il ferme. Sa journée entière tient dans une seule application",
@@ -41606,6 +41881,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "incidentHeure": null,
     "incidentQuoi": null,
     "saumon": null,
+    "voixOff": null,
     "story": {
       "format": "9:16 · 1080 × 1920 · 10 s",
       "hook": "Il ouvre, il produit, il ferme. Sa journée entière tient dans une seule application",
@@ -41751,6 +42027,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "incidentHeure": null,
     "incidentQuoi": null,
     "saumon": null,
+    "voixOff": null,
     "story": {
       "format": "9:16 · 1080 × 1920 · 10 s",
       "hook": "Il tient la mise en place et le coup de feu. Son parcours s'arrête là où commence la clôture du chef",
@@ -41896,6 +42173,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "incidentHeure": "19h40",
     "incidentQuoi": "Il reste deux portions de la pièce du jour, et huit tables n'ont pas commandé.",
     "saumon": null,
+    "voixOff": null,
     "story": {
       "format": "9:16 · 1080 × 1920 · 10 s",
       "hook": "Il tient la mise en place et le coup de feu. Son parcours s'arrête là où commence la clôture du chef",
@@ -42041,6 +42319,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "incidentHeure": null,
     "incidentQuoi": null,
     "saumon": null,
+    "voixOff": null,
     "story": {
       "format": "9:16 · 1080 × 1920 · 10 s",
       "hook": "Il tient la mise en place et le coup de feu. Son parcours s'arrête là où commence la clôture du chef",
@@ -42186,6 +42465,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "incidentHeure": null,
     "incidentQuoi": null,
     "saumon": null,
+    "voixOff": null,
     "story": {
       "format": "9:16 · 1080 × 1920 · 10 s",
       "hook": "Un poste, une carte, et la quantité juste. Trop, c'est de la perte ; pas assez, c'est un plat retiré",
@@ -42331,6 +42611,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "incidentHeure": "19h40",
     "incidentQuoi": "Il reste deux portions de la pièce du jour, et huit tables n'ont pas commandé.",
     "saumon": null,
+    "voixOff": null,
     "story": {
       "format": "9:16 · 1080 × 1920 · 10 s",
       "hook": "Un poste, une carte, et la quantité juste. Trop, c'est de la perte ; pas assez, c'est un plat retiré",
@@ -42476,6 +42757,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "incidentHeure": null,
     "incidentQuoi": null,
     "saumon": null,
+    "voixOff": null,
     "story": {
       "format": "9:16 · 1080 × 1920 · 10 s",
       "hook": "Un poste, une carte, et la quantité juste. Trop, c'est de la perte ; pas assez, c'est un plat retiré",
@@ -42621,6 +42903,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "incidentHeure": null,
     "incidentQuoi": null,
     "saumon": null,
+    "voixOff": null,
     "story": {
       "format": "9:16 · 1080 × 1920 · 10 s",
       "hook": "Il exécute, il trace, il nettoie. Trois gestes, deux cents fois",
@@ -42766,6 +43049,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "incidentHeure": null,
     "incidentQuoi": null,
     "saumon": null,
+    "voixOff": null,
     "story": {
       "format": "9:16 · 1080 × 1920 · 10 s",
       "hook": "Il exécute, il trace, il nettoie. Trois gestes, deux cents fois",
@@ -42911,6 +43195,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "incidentHeure": "15h00",
     "incidentQuoi": "Un inspecteur pousse la porte entre les deux services.",
     "saumon": null,
+    "voixOff": null,
     "story": {
       "format": "9:16 · 1080 × 1920 · 10 s",
       "hook": "Il exécute, il trace, il nettoie. Trois gestes, deux cents fois",
@@ -43056,6 +43341,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "incidentHeure": null,
     "incidentQuoi": null,
     "saumon": null,
+    "voixOff": null,
     "story": {
       "format": "9:16 · 1080 × 1920 · 10 s",
       "hook": "Il voit passer tout ce que la salle renvoie. C'est le premier indicateur du restaurant, et personne ne le lit",
@@ -43201,6 +43487,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "incidentHeure": "20h15",
     "incidentQuoi": "Un pavé part, revient dix minutes plus tard. Trop cuit, dit la table.",
     "saumon": null,
+    "voixOff": null,
     "story": {
       "format": "9:16 · 1080 × 1920 · 10 s",
       "hook": "Il voit passer tout ce que la salle renvoie. C'est le premier indicateur du restaurant, et personne ne le lit",
@@ -43346,6 +43633,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "incidentHeure": "15h00",
     "incidentQuoi": "Un inspecteur pousse la porte entre les deux services.",
     "saumon": null,
+    "voixOff": null,
     "story": {
       "format": "9:16 · 1080 × 1920 · 10 s",
       "hook": "Il voit passer tout ce que la salle renvoie. C'est le premier indicateur du restaurant, et personne ne le lit",
@@ -43491,6 +43779,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "incidentHeure": "20h00",
     "incidentQuoi": "Douze couverts arrivent d'un coup. Le patron avait dit oui au téléphone, mardi.",
     "saumon": null,
+    "voixOff": null,
     "story": {
       "format": "9:16 · 1080 × 1920 · 10 s",
       "hook": "Il tient la salle et les chiffres. Deux métiers, une personne, la même journée",
@@ -43636,6 +43925,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "incidentHeure": "20h15",
     "incidentQuoi": "Un pavé part, revient dix minutes plus tard. Trop cuit, dit la table.",
     "saumon": null,
+    "voixOff": null,
     "story": {
       "format": "9:16 · 1080 × 1920 · 10 s",
       "hook": "Il tient la salle et les chiffres. Deux métiers, une personne, la même journée",
@@ -43781,6 +44071,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "incidentHeure": null,
     "incidentQuoi": null,
     "saumon": null,
+    "voixOff": null,
     "story": {
       "format": "9:16 · 1080 × 1920 · 10 s",
       "hook": "Il tient la salle et les chiffres. Deux métiers, une personne, la même journée",
@@ -43926,6 +44217,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "incidentHeure": "20h00",
     "incidentQuoi": "Douze couverts arrivent d'un coup. Le patron avait dit oui au téléphone, mardi.",
     "saumon": null,
+    "voixOff": null,
     "story": {
       "format": "9:16 · 1080 × 1920 · 10 s",
       "hook": "Six tables, quatre canaux, une seule mémoire. La sienne",
@@ -44071,6 +44363,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "incidentHeure": "20h15",
     "incidentQuoi": "Un pavé part, revient dix minutes plus tard. Trop cuit, dit la table.",
     "saumon": null,
+    "voixOff": null,
     "story": {
       "format": "9:16 · 1080 × 1920 · 10 s",
       "hook": "Six tables, quatre canaux, une seule mémoire. La sienne",
@@ -44216,6 +44509,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "incidentHeure": null,
     "incidentQuoi": null,
     "saumon": null,
+    "voixOff": null,
     "story": {
       "format": "9:16 · 1080 × 1920 · 10 s",
       "hook": "Six tables, quatre canaux, une seule mémoire. La sienne",
@@ -44361,6 +44655,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "incidentHeure": null,
     "incidentQuoi": null,
     "saumon": null,
+    "voixOff": null,
     "story": {
       "format": "9:16 · 1080 × 1920 · 10 s",
       "hook": "Il porte, il annonce, il rassure. Et il apprend les ruptures en même temps que le client",
@@ -44506,6 +44801,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "incidentHeure": "19h40",
     "incidentQuoi": "Il reste deux portions de la pièce du jour, et huit tables n'ont pas commandé.",
     "saumon": null,
+    "voixOff": null,
     "story": {
       "format": "9:16 · 1080 × 1920 · 10 s",
       "hook": "Il porte, il annonce, il rassure. Et il apprend les ruptures en même temps que le client",
@@ -44651,6 +44947,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "incidentHeure": null,
     "incidentQuoi": null,
     "saumon": null,
+    "voixOff": null,
     "story": {
       "format": "9:16 · 1080 × 1920 · 10 s",
       "hook": "Il porte, il annonce, il rassure. Et il apprend les ruptures en même temps que le client",
@@ -44796,6 +45093,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "incidentHeure": null,
     "incidentQuoi": null,
     "saumon": null,
+    "voixOff": null,
     "story": {
       "format": "9:16 · 1080 × 1920 · 10 s",
       "hook": "Ce poste n'existe pas. C'est le patron qui poste à 23 h, mal, quand il y pense",
@@ -44941,6 +45239,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "incidentHeure": null,
     "incidentQuoi": null,
     "saumon": null,
+    "voixOff": null,
     "story": {
       "format": "9:16 · 1080 × 1920 · 10 s",
       "hook": "Ce poste n'existe pas. C'est le patron qui poste à 23 h, mal, quand il y pense",
@@ -45086,6 +45385,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "incidentHeure": null,
     "incidentQuoi": null,
     "saumon": null,
+    "voixOff": null,
     "story": {
       "format": "9:16 · 1080 × 1920 · 10 s",
       "hook": "Ce poste n'existe pas. C'est le patron qui poste à 23 h, mal, quand il y pense",
@@ -45231,6 +45531,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "incidentHeure": null,
     "incidentQuoi": null,
     "saumon": null,
+    "voixOff": null,
     "story": {
       "format": "9:16 · 1080 × 1920 · 10 s",
       "hook": "Il ne verra jamais le logiciel. Il verra tout ce que le logiciel a fait — ou pas fait",
@@ -45376,6 +45677,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "incidentHeure": "20h15",
     "incidentQuoi": "Un pavé part, revient dix minutes plus tard. Trop cuit, dit la table.",
     "saumon": null,
+    "voixOff": null,
     "story": {
       "format": "9:16 · 1080 × 1920 · 10 s",
       "hook": "Il ne verra jamais le logiciel. Il verra tout ce que le logiciel a fait — ou pas fait",
@@ -45521,6 +45823,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "incidentHeure": "20h15",
     "incidentQuoi": "Un pavé part, revient dix minutes plus tard. Trop cuit, dit la table.",
     "saumon": null,
+    "voixOff": null,
     "story": {
       "format": "9:16 · 1080 × 1920 · 10 s",
       "hook": "Il ne verra jamais le logiciel. Il verra tout ce que le logiciel a fait — ou pas fait",
@@ -45666,6 +45969,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "incidentHeure": null,
     "incidentQuoi": null,
     "saumon": null,
+    "voixOff": null,
     "story": {
       "format": "9:16 · 1080 × 1920 · 10 s",
       "hook": "Trente journées ont fini ici",
@@ -45811,6 +46115,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "incidentHeure": null,
     "incidentQuoi": null,
     "saumon": null,
+    "voixOff": null,
     "story": {
       "format": "9:16 · 1080 × 1920 · 10 s",
       "hook": "Qui je suis",
@@ -45956,6 +46261,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "incidentHeure": null,
     "incidentQuoi": null,
     "saumon": null,
+    "voixOff": null,
     "story": {
       "format": "9:16 · 1080 × 1920 · 10 s",
       "hook": "Ce que l'IA change, en un cas",
@@ -46101,6 +46407,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "incidentHeure": null,
     "incidentQuoi": null,
     "saumon": null,
+    "voixOff": null,
     "story": {
       "format": "9:16 · 1080 × 1920 · 10 s",
       "hook": "Le prompt",
@@ -46246,6 +46553,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "incidentHeure": null,
     "incidentQuoi": null,
     "saumon": null,
+    "voixOff": null,
     "story": {
       "format": "9:16 · 1080 × 1920 · 10 s",
       "hook": "Le MCP",
@@ -46391,6 +46699,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "incidentHeure": null,
     "incidentQuoi": null,
     "saumon": null,
+    "voixOff": null,
     "story": {
       "format": "9:16 · 1080 × 1920 · 10 s",
       "hook": "Le produit",
@@ -46536,6 +46845,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "incidentHeure": null,
     "incidentQuoi": null,
     "saumon": null,
+    "voixOff": null,
     "story": {
       "format": "9:16 · 1080 × 1920 · 10 s",
       "hook": "Le huit",
@@ -46681,6 +46991,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "incidentHeure": null,
     "incidentQuoi": null,
     "saumon": null,
+    "voixOff": null,
     "story": {
       "format": "9:16 · 1080 × 1920 · 10 s",
       "hook": "Les trois lois",
@@ -46826,6 +47137,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "incidentHeure": null,
     "incidentQuoi": null,
     "saumon": null,
+    "voixOff": null,
     "story": {
       "format": "9:16 · 1080 × 1920 · 10 s",
       "hook": "Gestion et vente, les deux moitiés",
@@ -46971,6 +47283,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "incidentHeure": null,
     "incidentQuoi": null,
     "saumon": "Vos fiches savent quels plats consomment du saumon : tartare, pavé, poke bowl.",
+    "voixOff": null,
     "story": {
       "format": "9:16 · 1080 × 1920 · 10 s",
       "hook": "Configuration boutique — le socle de la boucle gestion",
@@ -47116,6 +47429,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "incidentHeure": null,
     "incidentQuoi": null,
     "saumon": "PrédiBot ajuste le planning du service : deux personnes de plus en cuisine.",
+    "voixOff": null,
     "story": {
       "format": "9:16 · 1080 × 1920 · 10 s",
       "hook": "Équipe — qui exécute",
@@ -47261,6 +47575,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "incidentHeure": null,
     "incidentQuoi": null,
     "saumon": "Jeudi 9 h. StockVisionAI voit 12 kg de saumon avec une DLC vendredi soir.",
+    "voixOff": null,
     "story": {
       "format": "9:16 · 1080 × 1920 · 10 s",
       "hook": "StockVisionAI — la boucle mère",
@@ -47406,6 +47721,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "incidentHeure": null,
     "incidentQuoi": null,
     "saumon": "Le contrôle à réception d'hier confirme la traçabilité : les lots sont sains.",
+    "voixOff": null,
     "story": {
       "format": "9:16 · 1080 × 1920 · 10 s",
       "hook": "HACCP — le droit d'exercer",
@@ -47551,6 +47867,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "incidentHeure": null,
     "incidentQuoi": null,
     "saumon": "Les habitués réservent ou commandent en click-and-collect. Caroline prend les appels.",
+    "voixOff": null,
     "story": {
       "format": "9:16 · 1080 × 1920 · 10 s",
       "hook": "E-commerce — l'exposition",
@@ -47696,6 +48013,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "incidentHeure": null,
     "incidentQuoi": null,
     "saumon": "Iris propose un post « Saumon frais aujourd'hui ». Vous validez en un swipe.",
+    "voixOff": null,
     "story": {
       "format": "9:16 · 1080 × 1920 · 10 s",
       "hook": "Communication — le système nerveux",
@@ -47841,6 +48159,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "incidentHeure": null,
     "incidentQuoi": null,
     "saumon": "Le segment « amateurs de poisson » — 340 clients — reçoit un message ciblé.",
+    "voixOff": null,
     "story": {
       "format": "9:16 · 1080 × 1920 · 10 s",
       "hook": "Fidélité et marketing — l'usine à revenir",
@@ -47986,6 +48305,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "incidentHeure": null,
     "incidentQuoi": null,
     "saumon": "Vendredi 23 h : les 12 kg sont partis. La marge du jour est déjà dans le tableau.",
+    "voixOff": null,
     "story": {
       "format": "9:16 · 1080 × 1920 · 10 s",
       "hook": "Comptabilité — le second croisement",
@@ -48131,6 +48451,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "incidentHeure": null,
     "incidentQuoi": null,
     "saumon": null,
+    "voixOff": null,
     "story": {
       "format": "9:16 · 1080 × 1920 · 10 s",
       "hook": "Le croisement, pendant le service",
@@ -48276,6 +48597,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "incidentHeure": null,
     "incidentQuoi": null,
     "saumon": null,
+    "voixOff": null,
     "story": {
       "format": "9:16 · 1080 × 1920 · 10 s",
       "hook": "Le moteur : brancher Claude, ChatGPT ou Mistral",
@@ -48421,6 +48743,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "incidentHeure": null,
     "incidentQuoi": null,
     "saumon": null,
+    "voixOff": null,
     "story": {
       "format": "9:16 · 1080 × 1920 · 10 s",
       "hook": "Les quatre agents et leurs boucles",
@@ -48566,6 +48889,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "incidentHeure": null,
     "incidentQuoi": null,
     "saumon": null,
+    "voixOff": null,
     "story": {
       "format": "9:16 · 1080 × 1920 · 10 s",
       "hook": "Caroline prend les appels",
@@ -48711,6 +49035,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "incidentHeure": null,
     "incidentQuoi": null,
     "saumon": null,
+    "voixOff": null,
     "story": {
       "format": "9:16 · 1080 × 1920 · 10 s",
       "hook": "Jarvis, les mains dans la farine",
@@ -48856,6 +49181,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "incidentHeure": null,
     "incidentQuoi": null,
     "saumon": null,
+    "voixOff": null,
     "story": {
       "format": "9:16 · 1080 × 1920 · 10 s",
       "hook": "PrédiBot répond sur les chiffres",
@@ -49001,6 +49327,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "incidentHeure": null,
     "incidentQuoi": null,
     "saumon": null,
+    "voixOff": null,
     "story": {
       "format": "9:16 · 1080 × 1920 · 10 s",
       "hook": "RapidoCMS, et pourquoi il est à part",
@@ -49146,6 +49473,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "incidentHeure": null,
     "incidentQuoi": null,
     "saumon": null,
+    "voixOff": null,
     "story": {
       "format": "9:16 · 1080 × 1920 · 10 s",
       "hook": "Brancher RapidoCMS à FoodEatUp",
@@ -49291,6 +49619,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "incidentHeure": null,
     "incidentQuoi": null,
     "saumon": null,
+    "voixOff": null,
     "story": {
       "format": "9:16 · 1080 × 1920 · 10 s",
       "hook": "Donner une voix : ElevenLabs",
@@ -49436,6 +49765,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "incidentHeure": null,
     "incidentQuoi": null,
     "saumon": null,
+    "voixOff": null,
     "story": {
       "format": "9:16 · 1080 × 1920 · 10 s",
       "hook": "Fabriquer l'image : Higgsfield",
@@ -49581,6 +49911,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "incidentHeure": null,
     "incidentQuoi": null,
     "saumon": null,
+    "voixOff": null,
     "story": {
       "format": "9:16 · 1080 × 1920 · 10 s",
       "hook": "Mettre quelqu'un à l'écran : HeyGen",
@@ -49726,6 +50057,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "incidentHeure": null,
     "incidentQuoi": null,
     "saumon": null,
+    "voixOff": null,
     "story": {
       "format": "9:16 · 1080 × 1920 · 10 s",
       "hook": "Pousser plus loin : Meta",
@@ -49871,6 +50203,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "incidentHeure": null,
     "incidentQuoi": null,
     "saumon": null,
+    "voixOff": null,
     "story": {
       "format": "9:16 · 1080 × 1920 · 10 s",
       "hook": "Plugins, skills, compétences",
@@ -50016,6 +50349,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "incidentHeure": null,
     "incidentQuoi": null,
     "saumon": null,
+    "voixOff": null,
     "story": {
       "format": "9:16 · 1080 × 1920 · 10 s",
       "hook": "La routine et la boucle qui tourne seule",
@@ -50161,6 +50495,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "incidentHeure": null,
     "incidentQuoi": null,
     "saumon": null,
+    "voixOff": null,
     "story": {
       "format": "9:16 · 1080 × 1920 · 10 s",
       "hook": "L'orchestration finale du restaurant",
@@ -50204,6 +50539,5711 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "format": "4:5 · 1080 × 1350",
       "prompt": "Photo réaliste, cadrage vertical 4:5, 1080 × 1350 pixels. Publication Facebook — l'image EST la publication, elle se comprend seule, sans légende et sans son.\n\nPERSONNAGE — photo de référence jointe. Le chef FoodEatUp : MÊME visage, même barbe, même toque blanche, même veste de cuisine blanche, même tablier blanc au logo FoodEatUp bleu. Ne modifie ni ses traits, ni sa morphologie, ni son âge. C'est la même personne sur les cent cinquante épisodes — un autre visage casse la série.\n\nAUCUN schéma, AUCUN diagramme, AUCUNE infographie. On filme ce que la phrase déclenche dans le restaurant, jamais la boîte et les flèches qui l'expliquent.\n\nSCÈNE — l'orchestration finale du restaurant : le chef dans la situation comique de l'épisode, plan poitrine, décor de restaurant en service, lumière chaude de fin de journée. Expression : faussement dépité, la main sur le front, mais l'œil qui rit. Le chef occupe les deux tiers droits du cadre ; l'élément comique est visible à gauche.\n\nBANDE HAUTE — crème #FCF9E6 sur le cinquième supérieur, portant UNIQUEMENT le texte « L'orchestration finale du restaurant » en marine #0F1A23, typographie arrondie très grasse, centré.\n\nBANDEAU BAS — marine #0F1A23 sur le sixième inférieur, portant UNIQUEMENT le texte « Une intention, huit boucles, zéro perte » en crème #FCF9E6, typographie arrondie grasse, centré, corps plus petit.\n\nCHARTE — crème #FCF9E6, marine #0F1A23, bleu #007BFF, orange #FFA500. Typographie arrondie très grasse, sans empattement. Aucun logo dessiné par le générateur, aucun filigrane, aucune bordure décorative, aucune interface de logiciel inventée à l'écran.\n\nINTERDITS — pas de texte autre que celui demandé, pas de faute d'orthographe, pas de lettres déformées, pas de sous-titres, pas de mention de marque tierce."
     },
+    "tutoriel": null
+  },
+  "EP501": {
+    "publications": {
+      "facebook": {
+        "legende": "Il était une fois un restaurant, et un homme qui ouvrait seul.\n\nSept heures du matin. Le chef ouvre, allume, relève les températures, reçoit la livraison et décide la carte du jour sur ce qui est arrivé. Quatre heures avant que quiconque pousse la porte.\n\nPersonne ne verra jamais ces quatre heures-là.\n\n« Il était une fois un restaurant » — épisode 1 sur 35. Les trente-cinq bout à bout font un film de cinq minutes cinquante.\nTout FoodEatUp : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "hashtags": [
+          "restauration",
+          "foodeatup",
+          "restaurant",
+          "courtmetrage",
+          "en-cuisine"
+        ],
+        "motsCles": [
+          "kds",
+          "restauration",
+          "foodeatup",
+          "en cuisine"
+        ],
+        "cta": "Découvrir FoodEatUp"
+      },
+      "instagram": {
+        "legende": "Il était une fois un restaurant, et un homme qui ouvrait seul.\n\nSept heures du matin. Le chef ouvre, allume, relève les températures, reçoit la livraison et décide la carte du jour sur ce qui est arrivé. Quatre heures avant que quiconque pousse la porte.\n\nPersonne ne verra jamais ces quatre heures-là.\n\n« Il était une fois un restaurant » — épisode 1 sur 35. Les trente-cinq bout à bout font un film de cinq minutes cinquante.\nTout FoodEatUp : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "hashtags": [
+          "restauration",
+          "foodeatup",
+          "restaurant",
+          "courtmetrage",
+          "en-cuisine"
+        ],
+        "motsCles": [
+          "kds",
+          "restauration",
+          "foodeatup",
+          "en cuisine"
+        ],
+        "cta": "Découvrir FoodEatUp"
+      },
+      "tiktok": {
+        "legende": "Il était une fois un restaurant, et un homme qui ouvrait seul.\n\nSept heures du matin. Le chef ouvre, allume, relève les températures, reçoit la livraison et décide la carte du jour sur ce qui est arrivé. Quatre heures avant que quiconque pousse la porte.\n\nPersonne ne verra jamais ces quatre heures-là.\n\n« Il était une fois un restaurant » — épisode 1 sur 35. Les trente-cinq bout à bout font un film de cinq minutes cinquante.\nTout FoodEatUp : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "hashtags": [
+          "restauration",
+          "foodeatup",
+          "restaurant",
+          "courtmetrage",
+          "en-cuisine"
+        ],
+        "motsCles": [
+          "kds",
+          "restauration",
+          "foodeatup",
+          "en cuisine"
+        ],
+        "cta": "Découvrir FoodEatUp"
+      },
+      "linkedin": {
+        "legende": "Il était une fois un restaurant, et un homme qui ouvrait seul.\n\nSept heures du matin. Le chef ouvre, allume, relève les températures, reçoit la livraison et décide la carte du jour sur ce qui est arrivé. Quatre heures avant que quiconque pousse la porte.\n\nPersonne ne verra jamais ces quatre heures-là.\n\n« Il était une fois un restaurant » — épisode 1 sur 35. Les trente-cinq bout à bout font un film de cinq minutes cinquante.\nTout FoodEatUp : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "hashtags": [
+          "restauration",
+          "foodeatup",
+          "restaurant",
+          "courtmetrage",
+          "en-cuisine"
+        ],
+        "motsCles": [
+          "kds",
+          "restauration",
+          "foodeatup",
+          "en cuisine"
+        ],
+        "cta": "Découvrir FoodEatUp"
+      },
+      "youtube": {
+        "legende": "Il était une fois un restaurant, et un homme qui ouvrait seul.\n\nSept heures du matin. Le chef ouvre, allume, relève les températures, reçoit la livraison et décide la carte du jour sur ce qui est arrivé. Quatre heures avant que quiconque pousse la porte.\n\nPersonne ne verra jamais ces quatre heures-là.\n\n« Il était une fois un restaurant » — épisode 1 sur 35. Les trente-cinq bout à bout font un film de cinq minutes cinquante.\nTout FoodEatUp : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "hashtags": [
+          "restauration",
+          "foodeatup",
+          "restaurant",
+          "courtmetrage",
+          "en-cuisine"
+        ],
+        "motsCles": [
+          "kds",
+          "restauration",
+          "foodeatup",
+          "en cuisine"
+        ],
+        "cta": "Découvrir FoodEatUp",
+        "titre": "Sept heures, et personne — Il était une fois un restaurant 1/35"
+      }
+    },
+    "promptVignette": "Photo réaliste, cadrage vertical 9:16, image de cinéma : optique 40 mm, faible profondeur de champ, grain argentique léger.\n\nL'acteur de l'image de référence — MÊME visage, même barbe, même carrure. Il joue ici le chef : veste blanche de cuisine et tablier FoodEatUp, manches retroussées. Décor : une cuisine professionnelle en inox, le pass au premier plan. Expression : bon. on y va — il ne sourit pas pour la caméra.\n\nBANDE HAUTE — marine #0F1A23 sur le cinquième supérieur, portant UNIQUEMENT « EN CUISINE » en crème #FCF9E6, typographie arrondie très grasse, centré.\n\nBANDE BASSE — crème #FCF9E6 sur le sixième inférieur, portant UNIQUEMENT « 01 / 35 » en marine #0F1A23, aligné à droite.\n\nAucun logo dessiné, aucun filigrane, aucune interface de logiciel à l'écran, aucune autre inscription.",
+    "higgsfieldPrompt": "Vertical 9:16, 10 secondes, 1080p, 24 im/s. PAS de texte incrusté, PAS de sous-titres, PAS de filigrane, PAS de logo, AUCUNE légende gravée dans l'image. Photoréaliste, image de cinéma : optique 40 mm, faible profondeur de champ, grain argentique léger, contraste tenu. Un seul plan, aucune coupe.\n\n@Image 1 ne définit que le visage de l'acteur — barbe, traits, carrure. Ne pas les modifier. Dans ce plan il joue le chef : veste blanche de cuisine et tablier FoodEatUp, manches retroussées. C'est le même acteur dans les quatre histoires du film, et le film ne le dit jamais : ne rien ajouter qui le souligne.\n\nDécor : une cuisine professionnelle en inox, le pass au premier plan. Étalonnage froid et désaturé, verts tirés, hautes lumières écrêtées — l'avant du film. Les ombres mangent les bords du cadre.\n\n0-5s: Une cuisine professionnelle éteinte, à l'aube. Une seule veilleuse au-dessus du pass. Caméra portée, très lent mouvement avant. Voix off française, un homme, grave et posée, le débit d'un conteur qui connaît déjà la fin, hors champ : {Il était une fois un restaurant, et un homme qui ouvrait seul.} End state at 5s: le personnage est seul et lisible dans le cadre, rien n'a encore changé autour de lui.\n5-8s: À 5 secondes exactement, la lumière des néons s'allume d'un coup, rangée par rangée, et la cuisine sort du noir. Un seul changement, rien d'autre ne bouge. End state at 8s: le changement est complet et pleinement lisible, le personnage y a réagi.\n8-10s: Il pose les mains à plat sur le pass, immobile, et regarde la salle vide devant lui. La caméra s'immobilise. Français, voix naturelle, dite pour soi et non pour la caméra, le chef : {Bon. On y va.} End state at 10s: plan figé sur son visage, caméra immobile, aucune entrée dans le cadre.\n\nSound design: <ambiance réelle du lieu, dense> <un seul bruit de matière au moment du changement>. Deux répliques, exactement aux minutages ci-dessus : le conteur au début, le personnage à la fin. Pas de musique — elle est ajoutée au montage.",
+    "scriptHeygen": null,
+    "kit": null,
+    "heygenPrompt": null,
+    "montage": {
+      "consigne": "Assembler les trente-cinq plans dans l'ordre des identifiants, sans transition entre deux plans d'une même histoire, et avec un fondu au noir de 12 images entre deux histoires. Le générique de fin des stories est RETIRÉ de la version film : il ne sert qu'aux réseaux. Musique unique sur les 350 s, montée de deux décibels à partir de l'épisode 25 et coupée net sur le dernier plan. Voix off du conteur normalisée à −16 LUFS, dialogues des personnages à −14, ambiances à −24. Sortie 1080 × 1920, H.264, 350 s.",
+      "segments": [
+        {
+          "titre": "En cuisine",
+          "debut": 0.0,
+          "fin": 60.0,
+          "contenu": "Six plans. Le chef, de sept heures du matin au bac vide du vendredi, puis la bascule."
+        },
+        {
+          "titre": "En salle",
+          "debut": 60.0,
+          "fin": 120.0,
+          "contenu": "Six plans. Le maître d'hôtel, sa mémoire, la table de douze qui n'existait pas."
+        },
+        {
+          "titre": "Au bureau",
+          "debut": 120.0,
+          "fin": 180.0,
+          "contenu": "Six plans. Le gérant, la pile de papier, le quinze du mois suivant."
+        },
+        {
+          "titre": "À la maison",
+          "debut": 180.0,
+          "fin": 240.0,
+          "contenu": "Six plans. Le client, qui ne verra jamais le logiciel."
+        },
+        {
+          "titre": "Vendredi, 20 h 15",
+          "debut": 240.0,
+          "fin": 350.0,
+          "contenu": "Onze plans. Les quatre histoires se croisent, minute par minute, jusqu'à la chute."
+        }
+      ],
+      "livrable": "Un film de 350 s en 9:16 pour la page de la série, et trente-cinq stories de 10 s — mêmes plans, générique de fin en plus — pour les quatre réseaux."
+    },
+    "metier": null,
+    "phase": null,
+    "amplitude": null,
+    "boucle": null,
+    "boucleSlug": null,
+    "grandeBoucle": null,
+    "incident": null,
+    "incidentHeure": null,
+    "incidentQuoi": null,
+    "saumon": null,
+    "voixOff": {
+      "conteur": "Il était une fois un restaurant, et un homme qui ouvrait seul.",
+      "personnage": "Bon. On y va.",
+      "generique": "Sa journée commence quatre heures avant la vôtre.",
+      "enchaine": "Enchaîne sur « Le carnet, le tableau, la tête »"
+    },
+    "story": {
+      "format": "9:16 · 1080 × 1920 · 10 s",
+      "hook": "Il était une fois un restaurant, et un homme qui ouvrait seul",
+      "punchline": "Personne ne verra jamais ces quatre heures-là",
+      "url": null,
+      "motion": {
+        "quand": "8,5 → 10,0 s, par-dessus la fin du plan",
+        "consigne": "Générique de fin en motion design, posé sur les 1,5 dernière(s) seconde(s) du plan, sans jamais couper l'image :\n— à 8,5 s, un voile marine #0F1A23 monte du bas sur le tiers inférieur, en 0,3 s, courbe d'accélération douce ;\n— à 8,8 s, le logo FoodEatUp arrive du bas, cale au centre du voile, avec un léger dépassement puis retour (overshoot 6 %) ;\n— à 9,1 s, la punchline s'écrit sous le logo, un mot après l'autre, 0,06 s par mot, en crème #FCF9E6 ;\n— à 9,6 s, la mention « à suivre » apparaît en orange #FFA500 à droite, avec une flèche qui avance de 8 px et s'arrête ;\n— rien ne disparaît avant la fin du plan.",
+        "punchline": "Sa journée commence quatre heures avant la vôtre.",
+        "aSuivre": "À suivre — Le carnet, le tableau, la tête",
+        "voix": "Voix off française, la même que le conteur mais une note plus haute et plus proche du micro, sur les 1,5 dernière(s) seconde(s) : « Sa journée commence quatre heures avant la vôtre. »"
+      }
+    },
+    "carrousel": null,
+    "imageFacebook": null,
+    "tutoriel": null
+  },
+  "EP502": {
+    "publications": {
+      "facebook": {
+        "legende": "Il tenait ses comptes à trois endroits. Aucun ne parlait aux autres.\n\nUn carnet pour les livraisons, un tableau blanc pour la production, et le reste dans la tête. Trois systèmes qui ne se parlent pas : la marge du plat, personne ne la connaît vraiment.\n\nTrois vérités, et pas une seule bonne.\n\n« Il était une fois un restaurant » — épisode 2 sur 35. Les trente-cinq bout à bout font un film de cinq minutes cinquante.\nTout FoodEatUp : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "hashtags": [
+          "restauration",
+          "foodeatup",
+          "restaurant",
+          "courtmetrage",
+          "en-cuisine"
+        ],
+        "motsCles": [
+          "kds",
+          "restauration",
+          "foodeatup",
+          "en cuisine"
+        ],
+        "cta": "Découvrir FoodEatUp"
+      },
+      "instagram": {
+        "legende": "Il tenait ses comptes à trois endroits. Aucun ne parlait aux autres.\n\nUn carnet pour les livraisons, un tableau blanc pour la production, et le reste dans la tête. Trois systèmes qui ne se parlent pas : la marge du plat, personne ne la connaît vraiment.\n\nTrois vérités, et pas une seule bonne.\n\n« Il était une fois un restaurant » — épisode 2 sur 35. Les trente-cinq bout à bout font un film de cinq minutes cinquante.\nTout FoodEatUp : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "hashtags": [
+          "restauration",
+          "foodeatup",
+          "restaurant",
+          "courtmetrage",
+          "en-cuisine"
+        ],
+        "motsCles": [
+          "kds",
+          "restauration",
+          "foodeatup",
+          "en cuisine"
+        ],
+        "cta": "Découvrir FoodEatUp"
+      },
+      "tiktok": {
+        "legende": "Il tenait ses comptes à trois endroits. Aucun ne parlait aux autres.\n\nUn carnet pour les livraisons, un tableau blanc pour la production, et le reste dans la tête. Trois systèmes qui ne se parlent pas : la marge du plat, personne ne la connaît vraiment.\n\nTrois vérités, et pas une seule bonne.\n\n« Il était une fois un restaurant » — épisode 2 sur 35. Les trente-cinq bout à bout font un film de cinq minutes cinquante.\nTout FoodEatUp : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "hashtags": [
+          "restauration",
+          "foodeatup",
+          "restaurant",
+          "courtmetrage",
+          "en-cuisine"
+        ],
+        "motsCles": [
+          "kds",
+          "restauration",
+          "foodeatup",
+          "en cuisine"
+        ],
+        "cta": "Découvrir FoodEatUp"
+      },
+      "linkedin": {
+        "legende": "Il tenait ses comptes à trois endroits. Aucun ne parlait aux autres.\n\nUn carnet pour les livraisons, un tableau blanc pour la production, et le reste dans la tête. Trois systèmes qui ne se parlent pas : la marge du plat, personne ne la connaît vraiment.\n\nTrois vérités, et pas une seule bonne.\n\n« Il était une fois un restaurant » — épisode 2 sur 35. Les trente-cinq bout à bout font un film de cinq minutes cinquante.\nTout FoodEatUp : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "hashtags": [
+          "restauration",
+          "foodeatup",
+          "restaurant",
+          "courtmetrage",
+          "en-cuisine"
+        ],
+        "motsCles": [
+          "kds",
+          "restauration",
+          "foodeatup",
+          "en cuisine"
+        ],
+        "cta": "Découvrir FoodEatUp"
+      },
+      "youtube": {
+        "legende": "Il tenait ses comptes à trois endroits. Aucun ne parlait aux autres.\n\nUn carnet pour les livraisons, un tableau blanc pour la production, et le reste dans la tête. Trois systèmes qui ne se parlent pas : la marge du plat, personne ne la connaît vraiment.\n\nTrois vérités, et pas une seule bonne.\n\n« Il était une fois un restaurant » — épisode 2 sur 35. Les trente-cinq bout à bout font un film de cinq minutes cinquante.\nTout FoodEatUp : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "hashtags": [
+          "restauration",
+          "foodeatup",
+          "restaurant",
+          "courtmetrage",
+          "en-cuisine"
+        ],
+        "motsCles": [
+          "kds",
+          "restauration",
+          "foodeatup",
+          "en cuisine"
+        ],
+        "cta": "Découvrir FoodEatUp",
+        "titre": "Le carnet, le tableau, la tête — Il était une fois un restaurant 2/35"
+      }
+    },
+    "promptVignette": "Photo réaliste, cadrage vertical 9:16, image de cinéma : optique 40 mm, faible profondeur de champ, grain argentique léger.\n\nL'acteur de l'image de référence — MÊME visage, même barbe, même carrure. Il joue ici le chef : veste blanche de cuisine et tablier FoodEatUp, manches retroussées. Décor : une cuisine professionnelle en inox, le pass au premier plan. Expression : ça, c'était mardi. ou jeudi — il ne sourit pas pour la caméra.\n\nBANDE HAUTE — marine #0F1A23 sur le cinquième supérieur, portant UNIQUEMENT « EN CUISINE » en crème #FCF9E6, typographie arrondie très grasse, centré.\n\nBANDE BASSE — crème #FCF9E6 sur le sixième inférieur, portant UNIQUEMENT « 02 / 35 » en marine #0F1A23, aligné à droite.\n\nAucun logo dessiné, aucun filigrane, aucune interface de logiciel à l'écran, aucune autre inscription.",
+    "higgsfieldPrompt": "Vertical 9:16, 10 secondes, 1080p, 24 im/s. PAS de texte incrusté, PAS de sous-titres, PAS de filigrane, PAS de logo, AUCUNE légende gravée dans l'image. Photoréaliste, image de cinéma : optique 40 mm, faible profondeur de champ, grain argentique léger, contraste tenu. Un seul plan, aucune coupe.\n\n@Image 1 ne définit que le visage de l'acteur — barbe, traits, carrure. Ne pas les modifier. Dans ce plan il joue le chef : veste blanche de cuisine et tablier FoodEatUp, manches retroussées. C'est le même acteur dans les quatre histoires du film, et le film ne le dit jamais : ne rien ajouter qui le souligne.\n\nDécor : une cuisine professionnelle en inox, le pass au premier plan. Étalonnage froid et désaturé, verts tirés, hautes lumières écrêtées — l'avant du film. Les ombres mangent les bords du cadre.\n\n0-5s: Le chef écrit sur un carnet gras, lève les yeux vers un tableau blanc couvert de chiffres effacés. Caméra portée, très lent mouvement avant. Voix off française, un homme, grave et posée, le débit d'un conteur qui connaît déjà la fin, hors champ : {Il tenait ses comptes à trois endroits. Aucun ne parlait aux autres.} End state at 5s: le personnage est seul et lisible dans le cadre, rien n'a encore changé autour de lui.\n5-8s: À 5 secondes exactement, il s'arrête au milieu d'un chiffre, revient au carnet, ne retrouve pas la ligne. Un seul changement, rien d'autre ne bouge. End state at 8s: le changement est complet et pleinement lisible, le personnage y a réagi.\n8-10s: Il pose le crayon et regarde le tableau comme on regarde une langue étrangère. La caméra s'immobilise. Français, voix naturelle, dite pour soi et non pour la caméra, le chef : {Ça, c'était mardi. Ou jeudi.} End state at 10s: plan figé sur son visage, caméra immobile, aucune entrée dans le cadre.\n\nSound design: <ambiance réelle du lieu, dense> <un seul bruit de matière au moment du changement>. Deux répliques, exactement aux minutages ci-dessus : le conteur au début, le personnage à la fin. Pas de musique — elle est ajoutée au montage.",
+    "scriptHeygen": null,
+    "kit": null,
+    "heygenPrompt": null,
+    "montage": {
+      "consigne": "Assembler les trente-cinq plans dans l'ordre des identifiants, sans transition entre deux plans d'une même histoire, et avec un fondu au noir de 12 images entre deux histoires. Le générique de fin des stories est RETIRÉ de la version film : il ne sert qu'aux réseaux. Musique unique sur les 350 s, montée de deux décibels à partir de l'épisode 25 et coupée net sur le dernier plan. Voix off du conteur normalisée à −16 LUFS, dialogues des personnages à −14, ambiances à −24. Sortie 1080 × 1920, H.264, 350 s.",
+      "segments": [
+        {
+          "titre": "En cuisine",
+          "debut": 0.0,
+          "fin": 60.0,
+          "contenu": "Six plans. Le chef, de sept heures du matin au bac vide du vendredi, puis la bascule."
+        },
+        {
+          "titre": "En salle",
+          "debut": 60.0,
+          "fin": 120.0,
+          "contenu": "Six plans. Le maître d'hôtel, sa mémoire, la table de douze qui n'existait pas."
+        },
+        {
+          "titre": "Au bureau",
+          "debut": 120.0,
+          "fin": 180.0,
+          "contenu": "Six plans. Le gérant, la pile de papier, le quinze du mois suivant."
+        },
+        {
+          "titre": "À la maison",
+          "debut": 180.0,
+          "fin": 240.0,
+          "contenu": "Six plans. Le client, qui ne verra jamais le logiciel."
+        },
+        {
+          "titre": "Vendredi, 20 h 15",
+          "debut": 240.0,
+          "fin": 350.0,
+          "contenu": "Onze plans. Les quatre histoires se croisent, minute par minute, jusqu'à la chute."
+        }
+      ],
+      "livrable": "Un film de 350 s en 9:16 pour la page de la série, et trente-cinq stories de 10 s — mêmes plans, générique de fin en plus — pour les quatre réseaux."
+    },
+    "metier": null,
+    "phase": null,
+    "amplitude": null,
+    "boucle": null,
+    "boucleSlug": null,
+    "grandeBoucle": null,
+    "incident": null,
+    "incidentHeure": null,
+    "incidentQuoi": null,
+    "saumon": null,
+    "voixOff": {
+      "conteur": "Il tenait ses comptes à trois endroits. Aucun ne parlait aux autres.",
+      "personnage": "Ça, c'était mardi. Ou jeudi.",
+      "generique": "Trois carnets ne font pas une comptabilité.",
+      "enchaine": "Enchaîne sur « Vendredi, le bac vide »"
+    },
+    "story": {
+      "format": "9:16 · 1080 × 1920 · 10 s",
+      "hook": "Il tenait ses comptes à trois endroits. Aucun ne parlait aux autres",
+      "punchline": "Trois vérités, et pas une seule bonne",
+      "url": null,
+      "motion": {
+        "quand": "8,5 → 10,0 s, par-dessus la fin du plan",
+        "consigne": "Générique de fin en motion design, posé sur les 1,5 dernière(s) seconde(s) du plan, sans jamais couper l'image :\n— à 8,5 s, un voile marine #0F1A23 monte du bas sur le tiers inférieur, en 0,3 s, courbe d'accélération douce ;\n— à 8,8 s, le logo FoodEatUp arrive du bas, cale au centre du voile, avec un léger dépassement puis retour (overshoot 6 %) ;\n— à 9,1 s, la punchline s'écrit sous le logo, un mot après l'autre, 0,06 s par mot, en crème #FCF9E6 ;\n— à 9,6 s, la mention « à suivre » apparaît en orange #FFA500 à droite, avec une flèche qui avance de 8 px et s'arrête ;\n— rien ne disparaît avant la fin du plan.",
+        "punchline": "Trois carnets ne font pas une comptabilité.",
+        "aSuivre": "À suivre — Vendredi, le bac vide",
+        "voix": "Voix off française, la même que le conteur mais une note plus haute et plus proche du micro, sur les 1,5 dernière(s) seconde(s) : « Trois carnets ne font pas une comptabilité. »"
+      }
+    },
+    "carrousel": null,
+    "imageFacebook": null,
+    "tutoriel": null
+  },
+  "EP503": {
+    "publications": {
+      "facebook": {
+        "legende": "Puis vint le vendredi où le bac était vide.\n\nDix-neuf heures quarante, plein service : le bac du plat signature est vide. Il l'avait annoncé le matin. Personne n'avait de quoi le vérifier.\n\nIl l'avait dit le matin. On l'a écouté à vingt heures.\n\n« Il était une fois un restaurant » — épisode 3 sur 35. Les trente-cinq bout à bout font un film de cinq minutes cinquante.\nTout FoodEatUp : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "hashtags": [
+          "restauration",
+          "foodeatup",
+          "restaurant",
+          "courtmetrage",
+          "en-cuisine"
+        ],
+        "motsCles": [
+          "kds",
+          "restauration",
+          "foodeatup",
+          "en cuisine"
+        ],
+        "cta": "Découvrir FoodEatUp"
+      },
+      "instagram": {
+        "legende": "Puis vint le vendredi où le bac était vide.\n\nDix-neuf heures quarante, plein service : le bac du plat signature est vide. Il l'avait annoncé le matin. Personne n'avait de quoi le vérifier.\n\nIl l'avait dit le matin. On l'a écouté à vingt heures.\n\n« Il était une fois un restaurant » — épisode 3 sur 35. Les trente-cinq bout à bout font un film de cinq minutes cinquante.\nTout FoodEatUp : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "hashtags": [
+          "restauration",
+          "foodeatup",
+          "restaurant",
+          "courtmetrage",
+          "en-cuisine"
+        ],
+        "motsCles": [
+          "kds",
+          "restauration",
+          "foodeatup",
+          "en cuisine"
+        ],
+        "cta": "Découvrir FoodEatUp"
+      },
+      "tiktok": {
+        "legende": "Puis vint le vendredi où le bac était vide.\n\nDix-neuf heures quarante, plein service : le bac du plat signature est vide. Il l'avait annoncé le matin. Personne n'avait de quoi le vérifier.\n\nIl l'avait dit le matin. On l'a écouté à vingt heures.\n\n« Il était une fois un restaurant » — épisode 3 sur 35. Les trente-cinq bout à bout font un film de cinq minutes cinquante.\nTout FoodEatUp : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "hashtags": [
+          "restauration",
+          "foodeatup",
+          "restaurant",
+          "courtmetrage",
+          "en-cuisine"
+        ],
+        "motsCles": [
+          "kds",
+          "restauration",
+          "foodeatup",
+          "en cuisine"
+        ],
+        "cta": "Découvrir FoodEatUp"
+      },
+      "linkedin": {
+        "legende": "Puis vint le vendredi où le bac était vide.\n\nDix-neuf heures quarante, plein service : le bac du plat signature est vide. Il l'avait annoncé le matin. Personne n'avait de quoi le vérifier.\n\nIl l'avait dit le matin. On l'a écouté à vingt heures.\n\n« Il était une fois un restaurant » — épisode 3 sur 35. Les trente-cinq bout à bout font un film de cinq minutes cinquante.\nTout FoodEatUp : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "hashtags": [
+          "restauration",
+          "foodeatup",
+          "restaurant",
+          "courtmetrage",
+          "en-cuisine"
+        ],
+        "motsCles": [
+          "kds",
+          "restauration",
+          "foodeatup",
+          "en cuisine"
+        ],
+        "cta": "Découvrir FoodEatUp"
+      },
+      "youtube": {
+        "legende": "Puis vint le vendredi où le bac était vide.\n\nDix-neuf heures quarante, plein service : le bac du plat signature est vide. Il l'avait annoncé le matin. Personne n'avait de quoi le vérifier.\n\nIl l'avait dit le matin. On l'a écouté à vingt heures.\n\n« Il était une fois un restaurant » — épisode 3 sur 35. Les trente-cinq bout à bout font un film de cinq minutes cinquante.\nTout FoodEatUp : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "hashtags": [
+          "restauration",
+          "foodeatup",
+          "restaurant",
+          "courtmetrage",
+          "en-cuisine"
+        ],
+        "motsCles": [
+          "kds",
+          "restauration",
+          "foodeatup",
+          "en cuisine"
+        ],
+        "cta": "Découvrir FoodEatUp",
+        "titre": "Vendredi, le bac vide — Il était une fois un restaurant 3/35"
+      }
+    },
+    "promptVignette": "Photo réaliste, cadrage vertical 9:16, image de cinéma : optique 40 mm, faible profondeur de champ, grain argentique léger.\n\nL'acteur de l'image de référence — MÊME visage, même barbe, même carrure. Il joue ici le chef : veste blanche de cuisine et tablier FoodEatUp, manches retroussées. Décor : une cuisine professionnelle en inox, le pass au premier plan. Expression : va dire à la douze qu'il n'y en a plus — il ne sourit pas pour la caméra.\n\nBANDE HAUTE — marine #0F1A23 sur le cinquième supérieur, portant UNIQUEMENT « EN CUISINE » en crème #FCF9E6, typographie arrondie très grasse, centré.\n\nBANDE BASSE — crème #FCF9E6 sur le sixième inférieur, portant UNIQUEMENT « 03 / 35 » en marine #0F1A23, aligné à droite.\n\nAucun logo dessiné, aucun filigrane, aucune interface de logiciel à l'écran, aucune autre inscription.",
+    "higgsfieldPrompt": "Vertical 9:16, 10 secondes, 1080p, 24 im/s. PAS de texte incrusté, PAS de sous-titres, PAS de filigrane, PAS de logo, AUCUNE légende gravée dans l'image. Photoréaliste, image de cinéma : optique 40 mm, faible profondeur de champ, grain argentique léger, contraste tenu. Un seul plan, aucune coupe.\n\n@Image 1 ne définit que le visage de l'acteur — barbe, traits, carrure. Ne pas les modifier. Dans ce plan il joue le chef : veste blanche de cuisine et tablier FoodEatUp, manches retroussées. C'est le même acteur dans les quatre histoires du film, et le film ne le dit jamais : ne rien ajouter qui le souligne.\n\nDécor : une cuisine professionnelle en inox, le pass au premier plan. Étalonnage froid et désaturé, verts tirés, hautes lumières écrêtées — l'avant du film. Les ombres mangent les bords du cadre.\n\n0-5s: Plein service, vapeur, tickets qui s'accumulent sur la barre du pass. Caméra portée, très lent mouvement avant. Voix off française, un homme, grave et posée, le débit d'un conteur qui connaît déjà la fin, hors champ : {Puis vint le vendredi où le bac était vide.} End state at 5s: le personnage est seul et lisible dans le cadre, rien n'a encore changé autour de lui.\n5-8s: À 5 secondes exactement, il soulève le couvercle d'un bac, et le bac est vide jusqu'au fond. Un seul changement, rien d'autre ne bouge. End state at 8s: le changement est complet et pleinement lisible, le personnage y a réagi.\n8-10s: Il repose le couvercle sans un mot, et regarde les tickets qui continuent de tomber. La caméra s'immobilise. Français, voix naturelle, dite pour soi et non pour la caméra, le chef : {Va dire à la douze qu'il n'y en a plus.} End state at 10s: plan figé sur son visage, caméra immobile, aucune entrée dans le cadre.\n\nSound design: <ambiance réelle du lieu, dense> <un seul bruit de matière au moment du changement>. Deux répliques, exactement aux minutages ci-dessus : le conteur au début, le personnage à la fin. Pas de musique — elle est ajoutée au montage.",
+    "scriptHeygen": null,
+    "kit": null,
+    "heygenPrompt": null,
+    "montage": {
+      "consigne": "Assembler les trente-cinq plans dans l'ordre des identifiants, sans transition entre deux plans d'une même histoire, et avec un fondu au noir de 12 images entre deux histoires. Le générique de fin des stories est RETIRÉ de la version film : il ne sert qu'aux réseaux. Musique unique sur les 350 s, montée de deux décibels à partir de l'épisode 25 et coupée net sur le dernier plan. Voix off du conteur normalisée à −16 LUFS, dialogues des personnages à −14, ambiances à −24. Sortie 1080 × 1920, H.264, 350 s.",
+      "segments": [
+        {
+          "titre": "En cuisine",
+          "debut": 0.0,
+          "fin": 60.0,
+          "contenu": "Six plans. Le chef, de sept heures du matin au bac vide du vendredi, puis la bascule."
+        },
+        {
+          "titre": "En salle",
+          "debut": 60.0,
+          "fin": 120.0,
+          "contenu": "Six plans. Le maître d'hôtel, sa mémoire, la table de douze qui n'existait pas."
+        },
+        {
+          "titre": "Au bureau",
+          "debut": 120.0,
+          "fin": 180.0,
+          "contenu": "Six plans. Le gérant, la pile de papier, le quinze du mois suivant."
+        },
+        {
+          "titre": "À la maison",
+          "debut": 180.0,
+          "fin": 240.0,
+          "contenu": "Six plans. Le client, qui ne verra jamais le logiciel."
+        },
+        {
+          "titre": "Vendredi, 20 h 15",
+          "debut": 240.0,
+          "fin": 350.0,
+          "contenu": "Onze plans. Les quatre histoires se croisent, minute par minute, jusqu'à la chute."
+        }
+      ],
+      "livrable": "Un film de 350 s en 9:16 pour la page de la série, et trente-cinq stories de 10 s — mêmes plans, générique de fin en plus — pour les quatre réseaux."
+    },
+    "metier": null,
+    "phase": null,
+    "amplitude": null,
+    "boucle": null,
+    "boucleSlug": null,
+    "grandeBoucle": null,
+    "incident": null,
+    "incidentHeure": null,
+    "incidentQuoi": null,
+    "saumon": null,
+    "voixOff": {
+      "conteur": "Puis vint le vendredi où le bac était vide.",
+      "personnage": "Va dire à la douze qu'il n'y en a plus.",
+      "generique": "Une rupture un vendredi soir coûte plus qu'un mois de logiciel.",
+      "enchaine": "Enchaîne sur « Une phrase, un matin »"
+    },
+    "story": {
+      "format": "9:16 · 1080 × 1920 · 10 s",
+      "hook": "Puis vint le vendredi où le bac était vide",
+      "punchline": "Il l'avait dit le matin. On l'a écouté à vingt heures",
+      "url": null,
+      "motion": {
+        "quand": "8,5 → 10,0 s, par-dessus la fin du plan",
+        "consigne": "Générique de fin en motion design, posé sur les 1,5 dernière(s) seconde(s) du plan, sans jamais couper l'image :\n— à 8,5 s, un voile marine #0F1A23 monte du bas sur le tiers inférieur, en 0,3 s, courbe d'accélération douce ;\n— à 8,8 s, le logo FoodEatUp arrive du bas, cale au centre du voile, avec un léger dépassement puis retour (overshoot 6 %) ;\n— à 9,1 s, la punchline s'écrit sous le logo, un mot après l'autre, 0,06 s par mot, en crème #FCF9E6 ;\n— à 9,6 s, la mention « à suivre » apparaît en orange #FFA500 à droite, avec une flèche qui avance de 8 px et s'arrête ;\n— rien ne disparaît avant la fin du plan.",
+        "punchline": "Une rupture un vendredi soir coûte plus qu'un mois de logiciel.",
+        "aSuivre": "À suivre — Une phrase, un matin",
+        "voix": "Voix off française, la même que le conteur mais une note plus haute et plus proche du micro, sur les 1,5 dernière(s) seconde(s) : « Une rupture un vendredi soir coûte plus qu'un mois de logiciel. »"
+      }
+    },
+    "carrousel": null,
+    "imageFacebook": null,
+    "tutoriel": null
+  },
+  "EP504": {
+    "publications": {
+      "facebook": {
+        "legende": "Un matin, il n'a pas ouvert le carnet.\n\nMême cuisine, même heure. Il ne cherche plus dans le carnet : il demande ce qui manque, et la réponse arrive avant qu'il ait fini son café.\n\nIl a simplement demandé.\n\n« Il était une fois un restaurant » — épisode 4 sur 35. Les trente-cinq bout à bout font un film de cinq minutes cinquante.\nTout FoodEatUp : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "hashtags": [
+          "restauration",
+          "foodeatup",
+          "restaurant",
+          "courtmetrage",
+          "en-cuisine"
+        ],
+        "motsCles": [
+          "kds",
+          "restauration",
+          "foodeatup",
+          "en cuisine"
+        ],
+        "cta": "Découvrir FoodEatUp"
+      },
+      "instagram": {
+        "legende": "Un matin, il n'a pas ouvert le carnet.\n\nMême cuisine, même heure. Il ne cherche plus dans le carnet : il demande ce qui manque, et la réponse arrive avant qu'il ait fini son café.\n\nIl a simplement demandé.\n\n« Il était une fois un restaurant » — épisode 4 sur 35. Les trente-cinq bout à bout font un film de cinq minutes cinquante.\nTout FoodEatUp : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "hashtags": [
+          "restauration",
+          "foodeatup",
+          "restaurant",
+          "courtmetrage",
+          "en-cuisine"
+        ],
+        "motsCles": [
+          "kds",
+          "restauration",
+          "foodeatup",
+          "en cuisine"
+        ],
+        "cta": "Découvrir FoodEatUp"
+      },
+      "tiktok": {
+        "legende": "Un matin, il n'a pas ouvert le carnet.\n\nMême cuisine, même heure. Il ne cherche plus dans le carnet : il demande ce qui manque, et la réponse arrive avant qu'il ait fini son café.\n\nIl a simplement demandé.\n\n« Il était une fois un restaurant » — épisode 4 sur 35. Les trente-cinq bout à bout font un film de cinq minutes cinquante.\nTout FoodEatUp : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "hashtags": [
+          "restauration",
+          "foodeatup",
+          "restaurant",
+          "courtmetrage",
+          "en-cuisine"
+        ],
+        "motsCles": [
+          "kds",
+          "restauration",
+          "foodeatup",
+          "en cuisine"
+        ],
+        "cta": "Découvrir FoodEatUp"
+      },
+      "linkedin": {
+        "legende": "Un matin, il n'a pas ouvert le carnet.\n\nMême cuisine, même heure. Il ne cherche plus dans le carnet : il demande ce qui manque, et la réponse arrive avant qu'il ait fini son café.\n\nIl a simplement demandé.\n\n« Il était une fois un restaurant » — épisode 4 sur 35. Les trente-cinq bout à bout font un film de cinq minutes cinquante.\nTout FoodEatUp : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "hashtags": [
+          "restauration",
+          "foodeatup",
+          "restaurant",
+          "courtmetrage",
+          "en-cuisine"
+        ],
+        "motsCles": [
+          "kds",
+          "restauration",
+          "foodeatup",
+          "en cuisine"
+        ],
+        "cta": "Découvrir FoodEatUp"
+      },
+      "youtube": {
+        "legende": "Un matin, il n'a pas ouvert le carnet.\n\nMême cuisine, même heure. Il ne cherche plus dans le carnet : il demande ce qui manque, et la réponse arrive avant qu'il ait fini son café.\n\nIl a simplement demandé.\n\n« Il était une fois un restaurant » — épisode 4 sur 35. Les trente-cinq bout à bout font un film de cinq minutes cinquante.\nTout FoodEatUp : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "hashtags": [
+          "restauration",
+          "foodeatup",
+          "restaurant",
+          "courtmetrage",
+          "en-cuisine"
+        ],
+        "motsCles": [
+          "kds",
+          "restauration",
+          "foodeatup",
+          "en cuisine"
+        ],
+        "cta": "Découvrir FoodEatUp",
+        "titre": "Une phrase, un matin — Il était une fois un restaurant 4/35"
+      }
+    },
+    "promptVignette": "Photo réaliste, cadrage vertical 9:16, image de cinéma : optique 40 mm, faible profondeur de champ, grain argentique léger.\n\nL'acteur de l'image de référence — MÊME visage, même barbe, même carrure. Il joue ici le chef : veste blanche de cuisine et tablier FoodEatUp, manches retroussées. Décor : une cuisine professionnelle en inox, le pass au premier plan. Expression : qu'est-ce qu'il me manque, aujourd'hui ? — il ne sourit pas pour la caméra.\n\nBANDE HAUTE — marine #0F1A23 sur le cinquième supérieur, portant UNIQUEMENT « EN CUISINE » en crème #FCF9E6, typographie arrondie très grasse, centré.\n\nBANDE BASSE — crème #FCF9E6 sur le sixième inférieur, portant UNIQUEMENT « 04 / 35 » en marine #0F1A23, aligné à droite.\n\nAucun logo dessiné, aucun filigrane, aucune interface de logiciel à l'écran, aucune autre inscription.",
+    "higgsfieldPrompt": "Vertical 9:16, 10 secondes, 1080p, 24 im/s. PAS de texte incrusté, PAS de sous-titres, PAS de filigrane, PAS de logo, AUCUNE légende gravée dans l'image. Photoréaliste, image de cinéma : optique 40 mm, faible profondeur de champ, grain argentique léger, contraste tenu. Un seul plan, aucune coupe.\n\n@Image 1 ne définit que le visage de l'acteur — barbe, traits, carrure. Ne pas les modifier. Dans ce plan il joue le chef : veste blanche de cuisine et tablier FoodEatUp, manches retroussées. C'est le même acteur dans les quatre histoires du film, et le film ne le dit jamais : ne rien ajouter qui le souligne.\n\nDécor : une cuisine professionnelle en inox, le pass au premier plan. L'étalonnage change à l'intérieur du plan : froid au départ, il se réchauffe à partir de 5 s sans que rien d'autre ne bouge.\n\n0-5s: La même cuisine à l'aube, la même veilleuse, le carnet gras fermé sur le pass. Caméra portée, très lent mouvement avant. Voix off française, un homme, grave et posée, le débit d'un conteur qui connaît déjà la fin, hors champ : {Un matin, il n'a pas ouvert le carnet.} End state at 5s: le personnage est seul et lisible dans le cadre, rien n'a encore changé autour de lui.\n5-8s: À 5 secondes exactement, il pose la main sur le carnet fermé et ne l'ouvre pas. Un seul changement, rien d'autre ne bouge. End state at 8s: le changement est complet et pleinement lisible, le personnage y a réagi.\n8-10s: Il regarde droit devant lui, et pour la première fois il n'a pas l'air pressé. La caméra s'immobilise. Français, voix naturelle, dite pour soi et non pour la caméra, le chef : {Qu'est-ce qu'il me manque, aujourd'hui ?} End state at 10s: plan figé sur son visage, caméra immobile, aucune entrée dans le cadre.\n\nSound design: <ambiance réelle du lieu, dense> <un seul bruit de matière au moment du changement>. Deux répliques, exactement aux minutages ci-dessus : le conteur au début, le personnage à la fin. Pas de musique — elle est ajoutée au montage.",
+    "scriptHeygen": null,
+    "kit": null,
+    "heygenPrompt": null,
+    "montage": {
+      "consigne": "Assembler les trente-cinq plans dans l'ordre des identifiants, sans transition entre deux plans d'une même histoire, et avec un fondu au noir de 12 images entre deux histoires. Le générique de fin des stories est RETIRÉ de la version film : il ne sert qu'aux réseaux. Musique unique sur les 350 s, montée de deux décibels à partir de l'épisode 25 et coupée net sur le dernier plan. Voix off du conteur normalisée à −16 LUFS, dialogues des personnages à −14, ambiances à −24. Sortie 1080 × 1920, H.264, 350 s.",
+      "segments": [
+        {
+          "titre": "En cuisine",
+          "debut": 0.0,
+          "fin": 60.0,
+          "contenu": "Six plans. Le chef, de sept heures du matin au bac vide du vendredi, puis la bascule."
+        },
+        {
+          "titre": "En salle",
+          "debut": 60.0,
+          "fin": 120.0,
+          "contenu": "Six plans. Le maître d'hôtel, sa mémoire, la table de douze qui n'existait pas."
+        },
+        {
+          "titre": "Au bureau",
+          "debut": 120.0,
+          "fin": 180.0,
+          "contenu": "Six plans. Le gérant, la pile de papier, le quinze du mois suivant."
+        },
+        {
+          "titre": "À la maison",
+          "debut": 180.0,
+          "fin": 240.0,
+          "contenu": "Six plans. Le client, qui ne verra jamais le logiciel."
+        },
+        {
+          "titre": "Vendredi, 20 h 15",
+          "debut": 240.0,
+          "fin": 350.0,
+          "contenu": "Onze plans. Les quatre histoires se croisent, minute par minute, jusqu'à la chute."
+        }
+      ],
+      "livrable": "Un film de 350 s en 9:16 pour la page de la série, et trente-cinq stories de 10 s — mêmes plans, générique de fin en plus — pour les quatre réseaux."
+    },
+    "metier": null,
+    "phase": null,
+    "amplitude": null,
+    "boucle": null,
+    "boucleSlug": null,
+    "grandeBoucle": null,
+    "incident": null,
+    "incidentHeure": null,
+    "incidentQuoi": null,
+    "saumon": null,
+    "voixOff": {
+      "conteur": "Un matin, il n'a pas ouvert le carnet.",
+      "personnage": "Qu'est-ce qu'il me manque, aujourd'hui ?",
+      "generique": "Demandez le matin. Vous commanderez au lieu de vous excuser.",
+      "enchaine": "Enchaîne sur « Le plat, et ce qu'il coûte »"
+    },
+    "story": {
+      "format": "9:16 · 1080 × 1920 · 10 s",
+      "hook": "Un matin, il n'a pas ouvert le carnet",
+      "punchline": "Il a simplement demandé",
+      "url": null,
+      "motion": {
+        "quand": "8,5 → 10,0 s, par-dessus la fin du plan",
+        "consigne": "Générique de fin en motion design, posé sur les 1,5 dernière(s) seconde(s) du plan, sans jamais couper l'image :\n— à 8,5 s, un voile marine #0F1A23 monte du bas sur le tiers inférieur, en 0,3 s, courbe d'accélération douce ;\n— à 8,8 s, le logo FoodEatUp arrive du bas, cale au centre du voile, avec un léger dépassement puis retour (overshoot 6 %) ;\n— à 9,1 s, la punchline s'écrit sous le logo, un mot après l'autre, 0,06 s par mot, en crème #FCF9E6 ;\n— à 9,6 s, la mention « à suivre » apparaît en orange #FFA500 à droite, avec une flèche qui avance de 8 px et s'arrête ;\n— rien ne disparaît avant la fin du plan.",
+        "punchline": "Demandez le matin. Vous commanderez au lieu de vous excuser.",
+        "aSuivre": "À suivre — Le plat, et ce qu'il coûte",
+        "voix": "Voix off française, la même que le conteur mais une note plus haute et plus proche du micro, sur les 1,5 dernière(s) seconde(s) : « Demandez le matin. Vous commanderez au lieu de vous excuser. »"
+      }
+    },
+    "carrousel": null,
+    "imageFacebook": null,
+    "tutoriel": null
+  },
+  "EP505": {
+    "publications": {
+      "facebook": {
+        "legende": "Le même geste, la même sauce. Mais il sait, maintenant.\n\nLa fiche technique dit ce qu'il y a dans le plat, ce qu'il coûte et ce qu'il rapporte. Le geste est le même qu'avant ; ce qui change, c'est qu'il ne se demande plus s'il gagne de l'argent dessus.\n\nLe goût n'a pas changé. Le reste, si.\n\n« Il était une fois un restaurant » — épisode 5 sur 35. Les trente-cinq bout à bout font un film de cinq minutes cinquante.\nTout FoodEatUp : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "hashtags": [
+          "restauration",
+          "foodeatup",
+          "restaurant",
+          "courtmetrage",
+          "en-cuisine"
+        ],
+        "motsCles": [
+          "kds",
+          "restauration",
+          "foodeatup",
+          "en cuisine"
+        ],
+        "cta": "Découvrir FoodEatUp"
+      },
+      "instagram": {
+        "legende": "Le même geste, la même sauce. Mais il sait, maintenant.\n\nLa fiche technique dit ce qu'il y a dans le plat, ce qu'il coûte et ce qu'il rapporte. Le geste est le même qu'avant ; ce qui change, c'est qu'il ne se demande plus s'il gagne de l'argent dessus.\n\nLe goût n'a pas changé. Le reste, si.\n\n« Il était une fois un restaurant » — épisode 5 sur 35. Les trente-cinq bout à bout font un film de cinq minutes cinquante.\nTout FoodEatUp : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "hashtags": [
+          "restauration",
+          "foodeatup",
+          "restaurant",
+          "courtmetrage",
+          "en-cuisine"
+        ],
+        "motsCles": [
+          "kds",
+          "restauration",
+          "foodeatup",
+          "en cuisine"
+        ],
+        "cta": "Découvrir FoodEatUp"
+      },
+      "tiktok": {
+        "legende": "Le même geste, la même sauce. Mais il sait, maintenant.\n\nLa fiche technique dit ce qu'il y a dans le plat, ce qu'il coûte et ce qu'il rapporte. Le geste est le même qu'avant ; ce qui change, c'est qu'il ne se demande plus s'il gagne de l'argent dessus.\n\nLe goût n'a pas changé. Le reste, si.\n\n« Il était une fois un restaurant » — épisode 5 sur 35. Les trente-cinq bout à bout font un film de cinq minutes cinquante.\nTout FoodEatUp : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "hashtags": [
+          "restauration",
+          "foodeatup",
+          "restaurant",
+          "courtmetrage",
+          "en-cuisine"
+        ],
+        "motsCles": [
+          "kds",
+          "restauration",
+          "foodeatup",
+          "en cuisine"
+        ],
+        "cta": "Découvrir FoodEatUp"
+      },
+      "linkedin": {
+        "legende": "Le même geste, la même sauce. Mais il sait, maintenant.\n\nLa fiche technique dit ce qu'il y a dans le plat, ce qu'il coûte et ce qu'il rapporte. Le geste est le même qu'avant ; ce qui change, c'est qu'il ne se demande plus s'il gagne de l'argent dessus.\n\nLe goût n'a pas changé. Le reste, si.\n\n« Il était une fois un restaurant » — épisode 5 sur 35. Les trente-cinq bout à bout font un film de cinq minutes cinquante.\nTout FoodEatUp : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "hashtags": [
+          "restauration",
+          "foodeatup",
+          "restaurant",
+          "courtmetrage",
+          "en-cuisine"
+        ],
+        "motsCles": [
+          "kds",
+          "restauration",
+          "foodeatup",
+          "en cuisine"
+        ],
+        "cta": "Découvrir FoodEatUp"
+      },
+      "youtube": {
+        "legende": "Le même geste, la même sauce. Mais il sait, maintenant.\n\nLa fiche technique dit ce qu'il y a dans le plat, ce qu'il coûte et ce qu'il rapporte. Le geste est le même qu'avant ; ce qui change, c'est qu'il ne se demande plus s'il gagne de l'argent dessus.\n\nLe goût n'a pas changé. Le reste, si.\n\n« Il était une fois un restaurant » — épisode 5 sur 35. Les trente-cinq bout à bout font un film de cinq minutes cinquante.\nTout FoodEatUp : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "hashtags": [
+          "restauration",
+          "foodeatup",
+          "restaurant",
+          "courtmetrage",
+          "en-cuisine"
+        ],
+        "motsCles": [
+          "kds",
+          "restauration",
+          "foodeatup",
+          "en cuisine"
+        ],
+        "cta": "Découvrir FoodEatUp",
+        "titre": "Le plat, et ce qu'il coûte — Il était une fois un restaurant 5/35"
+      }
+    },
+    "promptVignette": "Photo réaliste, cadrage vertical 9:16, image de cinéma : optique 40 mm, faible profondeur de champ, grain argentique léger.\n\nL'acteur de l'image de référence — MÊME visage, même barbe, même carrure. Il joue ici le chef : veste blanche de cuisine et tablier FoodEatUp, manches retroussées. Décor : une cuisine professionnelle en inox, le pass au premier plan. Expression : celui-là, je sais ce qu'il me rapporte — il ne sourit pas pour la caméra.\n\nBANDE HAUTE — marine #0F1A23 sur le cinquième supérieur, portant UNIQUEMENT « EN CUISINE » en crème #FCF9E6, typographie arrondie très grasse, centré.\n\nBANDE BASSE — crème #FCF9E6 sur le sixième inférieur, portant UNIQUEMENT « 05 / 35 » en marine #0F1A23, aligné à droite.\n\nAucun logo dessiné, aucun filigrane, aucune interface de logiciel à l'écran, aucune autre inscription.",
+    "higgsfieldPrompt": "Vertical 9:16, 10 secondes, 1080p, 24 im/s. PAS de texte incrusté, PAS de sous-titres, PAS de filigrane, PAS de logo, AUCUNE légende gravée dans l'image. Photoréaliste, image de cinéma : optique 40 mm, faible profondeur de champ, grain argentique léger, contraste tenu. Un seul plan, aucune coupe.\n\n@Image 1 ne définit que le visage de l'acteur — barbe, traits, carrure. Ne pas les modifier. Dans ce plan il joue le chef : veste blanche de cuisine et tablier FoodEatUp, manches retroussées. C'est le même acteur dans les quatre histoires du film, et le film ne le dit jamais : ne rien ajouter qui le souligne.\n\nDécor : une cuisine professionnelle en inox, le pass au premier plan. Étalonnage chaud et tenu, blancs propres, noirs ouverts — l'après du film. La lumière vient d'une source unique et douce.\n\n0-5s: Gros plan sur le dressage du plat signature, lumière rasante, vapeur. Caméra portée, très lent mouvement avant. Voix off française, un homme, grave et posée, le débit d'un conteur qui connaît déjà la fin, hors champ : {Le même geste, la même sauce. Mais il sait, maintenant.} End state at 5s: le personnage est seul et lisible dans le cadre, rien n'a encore changé autour de lui.\n5-8s: À 5 secondes exactement, la sauce nappe l'assiette en un seul geste, net, sans reprise. Un seul changement, rien d'autre ne bouge. End state at 8s: le changement est complet et pleinement lisible, le personnage y a réagi.\n8-10s: Il essuie le bord de l'assiette avec le pouce et la pousse sur le pass. La caméra s'immobilise. Français, voix naturelle, dite pour soi et non pour la caméra, le chef : {Celui-là, je sais ce qu'il me rapporte.} End state at 10s: plan figé sur son visage, caméra immobile, aucune entrée dans le cadre.\n\nSound design: <ambiance réelle du lieu, dense> <un seul bruit de matière au moment du changement>. Deux répliques, exactement aux minutages ci-dessus : le conteur au début, le personnage à la fin. Pas de musique — elle est ajoutée au montage.",
+    "scriptHeygen": null,
+    "kit": null,
+    "heygenPrompt": null,
+    "montage": {
+      "consigne": "Assembler les trente-cinq plans dans l'ordre des identifiants, sans transition entre deux plans d'une même histoire, et avec un fondu au noir de 12 images entre deux histoires. Le générique de fin des stories est RETIRÉ de la version film : il ne sert qu'aux réseaux. Musique unique sur les 350 s, montée de deux décibels à partir de l'épisode 25 et coupée net sur le dernier plan. Voix off du conteur normalisée à −16 LUFS, dialogues des personnages à −14, ambiances à −24. Sortie 1080 × 1920, H.264, 350 s.",
+      "segments": [
+        {
+          "titre": "En cuisine",
+          "debut": 0.0,
+          "fin": 60.0,
+          "contenu": "Six plans. Le chef, de sept heures du matin au bac vide du vendredi, puis la bascule."
+        },
+        {
+          "titre": "En salle",
+          "debut": 60.0,
+          "fin": 120.0,
+          "contenu": "Six plans. Le maître d'hôtel, sa mémoire, la table de douze qui n'existait pas."
+        },
+        {
+          "titre": "Au bureau",
+          "debut": 120.0,
+          "fin": 180.0,
+          "contenu": "Six plans. Le gérant, la pile de papier, le quinze du mois suivant."
+        },
+        {
+          "titre": "À la maison",
+          "debut": 180.0,
+          "fin": 240.0,
+          "contenu": "Six plans. Le client, qui ne verra jamais le logiciel."
+        },
+        {
+          "titre": "Vendredi, 20 h 15",
+          "debut": 240.0,
+          "fin": 350.0,
+          "contenu": "Onze plans. Les quatre histoires se croisent, minute par minute, jusqu'à la chute."
+        }
+      ],
+      "livrable": "Un film de 350 s en 9:16 pour la page de la série, et trente-cinq stories de 10 s — mêmes plans, générique de fin en plus — pour les quatre réseaux."
+    },
+    "metier": null,
+    "phase": null,
+    "amplitude": null,
+    "boucle": null,
+    "boucleSlug": null,
+    "grandeBoucle": null,
+    "incident": null,
+    "incidentHeure": null,
+    "incidentQuoi": null,
+    "saumon": null,
+    "voixOff": {
+      "conteur": "Le même geste, la même sauce. Mais il sait, maintenant.",
+      "personnage": "Celui-là, je sais ce qu'il me rapporte.",
+      "generique": "Le coût matière à jour, à chaque service.",
+      "enchaine": "Enchaîne sur « Il ferme, et il sait »"
+    },
+    "story": {
+      "format": "9:16 · 1080 × 1920 · 10 s",
+      "hook": "Le même geste, la même sauce. Mais il sait, maintenant",
+      "punchline": "Le goût n'a pas changé. Le reste, si",
+      "url": null,
+      "motion": {
+        "quand": "8,5 → 10,0 s, par-dessus la fin du plan",
+        "consigne": "Générique de fin en motion design, posé sur les 1,5 dernière(s) seconde(s) du plan, sans jamais couper l'image :\n— à 8,5 s, un voile marine #0F1A23 monte du bas sur le tiers inférieur, en 0,3 s, courbe d'accélération douce ;\n— à 8,8 s, le logo FoodEatUp arrive du bas, cale au centre du voile, avec un léger dépassement puis retour (overshoot 6 %) ;\n— à 9,1 s, la punchline s'écrit sous le logo, un mot après l'autre, 0,06 s par mot, en crème #FCF9E6 ;\n— à 9,6 s, la mention « à suivre » apparaît en orange #FFA500 à droite, avec une flèche qui avance de 8 px et s'arrête ;\n— rien ne disparaît avant la fin du plan.",
+        "punchline": "Le coût matière à jour, à chaque service.",
+        "aSuivre": "À suivre — Il ferme, et il sait",
+        "voix": "Voix off française, la même que le conteur mais une note plus haute et plus proche du micro, sur les 1,5 dernière(s) seconde(s) : « Le coût matière à jour, à chaque service. »"
+      }
+    },
+    "carrousel": null,
+    "imageFacebook": null,
+    "tutoriel": null
+  },
+  "EP506": {
+    "publications": {
+      "facebook": {
+        "legende": "Il ferme toujours à minuit. Mais il ne se demande plus rien.\n\nLa cuisine est rangée, les pertes saisies, le nettoyage photographié. La marge du service s'affiche seule. Il ferme en sachant, au lieu de fermer en espérant.\n\nLa marge du jour l'attendait avant qu'il éteigne.\n\n« Il était une fois un restaurant » — épisode 6 sur 35. Les trente-cinq bout à bout font un film de cinq minutes cinquante.\nTout FoodEatUp : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "hashtags": [
+          "restauration",
+          "foodeatup",
+          "restaurant",
+          "courtmetrage",
+          "en-cuisine"
+        ],
+        "motsCles": [
+          "kds",
+          "restauration",
+          "foodeatup",
+          "en cuisine"
+        ],
+        "cta": "Découvrir FoodEatUp"
+      },
+      "instagram": {
+        "legende": "Il ferme toujours à minuit. Mais il ne se demande plus rien.\n\nLa cuisine est rangée, les pertes saisies, le nettoyage photographié. La marge du service s'affiche seule. Il ferme en sachant, au lieu de fermer en espérant.\n\nLa marge du jour l'attendait avant qu'il éteigne.\n\n« Il était une fois un restaurant » — épisode 6 sur 35. Les trente-cinq bout à bout font un film de cinq minutes cinquante.\nTout FoodEatUp : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "hashtags": [
+          "restauration",
+          "foodeatup",
+          "restaurant",
+          "courtmetrage",
+          "en-cuisine"
+        ],
+        "motsCles": [
+          "kds",
+          "restauration",
+          "foodeatup",
+          "en cuisine"
+        ],
+        "cta": "Découvrir FoodEatUp"
+      },
+      "tiktok": {
+        "legende": "Il ferme toujours à minuit. Mais il ne se demande plus rien.\n\nLa cuisine est rangée, les pertes saisies, le nettoyage photographié. La marge du service s'affiche seule. Il ferme en sachant, au lieu de fermer en espérant.\n\nLa marge du jour l'attendait avant qu'il éteigne.\n\n« Il était une fois un restaurant » — épisode 6 sur 35. Les trente-cinq bout à bout font un film de cinq minutes cinquante.\nTout FoodEatUp : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "hashtags": [
+          "restauration",
+          "foodeatup",
+          "restaurant",
+          "courtmetrage",
+          "en-cuisine"
+        ],
+        "motsCles": [
+          "kds",
+          "restauration",
+          "foodeatup",
+          "en cuisine"
+        ],
+        "cta": "Découvrir FoodEatUp"
+      },
+      "linkedin": {
+        "legende": "Il ferme toujours à minuit. Mais il ne se demande plus rien.\n\nLa cuisine est rangée, les pertes saisies, le nettoyage photographié. La marge du service s'affiche seule. Il ferme en sachant, au lieu de fermer en espérant.\n\nLa marge du jour l'attendait avant qu'il éteigne.\n\n« Il était une fois un restaurant » — épisode 6 sur 35. Les trente-cinq bout à bout font un film de cinq minutes cinquante.\nTout FoodEatUp : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "hashtags": [
+          "restauration",
+          "foodeatup",
+          "restaurant",
+          "courtmetrage",
+          "en-cuisine"
+        ],
+        "motsCles": [
+          "kds",
+          "restauration",
+          "foodeatup",
+          "en cuisine"
+        ],
+        "cta": "Découvrir FoodEatUp"
+      },
+      "youtube": {
+        "legende": "Il ferme toujours à minuit. Mais il ne se demande plus rien.\n\nLa cuisine est rangée, les pertes saisies, le nettoyage photographié. La marge du service s'affiche seule. Il ferme en sachant, au lieu de fermer en espérant.\n\nLa marge du jour l'attendait avant qu'il éteigne.\n\n« Il était une fois un restaurant » — épisode 6 sur 35. Les trente-cinq bout à bout font un film de cinq minutes cinquante.\nTout FoodEatUp : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "hashtags": [
+          "restauration",
+          "foodeatup",
+          "restaurant",
+          "courtmetrage",
+          "en-cuisine"
+        ],
+        "motsCles": [
+          "kds",
+          "restauration",
+          "foodeatup",
+          "en cuisine"
+        ],
+        "cta": "Découvrir FoodEatUp",
+        "titre": "Il ferme, et il sait — Il était une fois un restaurant 6/35"
+      }
+    },
+    "promptVignette": "Photo réaliste, cadrage vertical 9:16, image de cinéma : optique 40 mm, faible profondeur de champ, grain argentique léger.\n\nL'acteur de l'image de référence — MÊME visage, même barbe, même carrure. Il joue ici le chef : veste blanche de cuisine et tablier FoodEatUp, manches retroussées. Décor : une cuisine professionnelle en inox, le pass au premier plan. Expression : bonne soirée à tous — il ne sourit pas pour la caméra.\n\nBANDE HAUTE — marine #0F1A23 sur le cinquième supérieur, portant UNIQUEMENT « EN CUISINE » en crème #FCF9E6, typographie arrondie très grasse, centré.\n\nBANDE BASSE — crème #FCF9E6 sur le sixième inférieur, portant UNIQUEMENT « 06 / 35 » en marine #0F1A23, aligné à droite.\n\nAucun logo dessiné, aucun filigrane, aucune interface de logiciel à l'écran, aucune autre inscription.",
+    "higgsfieldPrompt": "Vertical 9:16, 10 secondes, 1080p, 24 im/s. PAS de texte incrusté, PAS de sous-titres, PAS de filigrane, PAS de logo, AUCUNE légende gravée dans l'image. Photoréaliste, image de cinéma : optique 40 mm, faible profondeur de champ, grain argentique léger, contraste tenu. Un seul plan, aucune coupe.\n\n@Image 1 ne définit que le visage de l'acteur — barbe, traits, carrure. Ne pas les modifier. Dans ce plan il joue le chef : veste blanche de cuisine et tablier FoodEatUp, manches retroussées. C'est le même acteur dans les quatre histoires du film, et le film ne le dit jamais : ne rien ajouter qui le souligne.\n\nDécor : une cuisine professionnelle en inox, le pass au premier plan. Étalonnage chaud et tenu, blancs propres, noirs ouverts — l'après du film. La lumière vient d'une source unique et douce.\n\n0-5s: La cuisine nettoyée, inox essuyé, une seule lumière encore allumée au-dessus du pass. Caméra portée, très lent mouvement avant. Voix off française, un homme, grave et posée, le débit d'un conteur qui connaît déjà la fin, hors champ : {Il ferme toujours à minuit. Mais il ne se demande plus rien.} End state at 5s: le personnage est seul et lisible dans le cadre, rien n'a encore changé autour de lui.\n5-8s: À 5 secondes exactement, il éteint la dernière rampe de néons et la pièce passe au bleu de la veilleuse. Un seul changement, rien d'autre ne bouge. End state at 8s: le changement est complet et pleinement lisible, le personnage y a réagi.\n8-10s: Il reste une seconde dans l'embrasure, la main sur l'interrupteur, et sourit à peine. La caméra s'immobilise. Français, voix naturelle, dite pour soi et non pour la caméra, le chef : {Bonne soirée à tous.} End state at 10s: plan figé sur son visage, caméra immobile, aucune entrée dans le cadre.\n\nSound design: <ambiance réelle du lieu, dense> <un seul bruit de matière au moment du changement>. Deux répliques, exactement aux minutages ci-dessus : le conteur au début, le personnage à la fin. Pas de musique — elle est ajoutée au montage.",
+    "scriptHeygen": null,
+    "kit": null,
+    "heygenPrompt": null,
+    "montage": {
+      "consigne": "Assembler les trente-cinq plans dans l'ordre des identifiants, sans transition entre deux plans d'une même histoire, et avec un fondu au noir de 12 images entre deux histoires. Le générique de fin des stories est RETIRÉ de la version film : il ne sert qu'aux réseaux. Musique unique sur les 350 s, montée de deux décibels à partir de l'épisode 25 et coupée net sur le dernier plan. Voix off du conteur normalisée à −16 LUFS, dialogues des personnages à −14, ambiances à −24. Sortie 1080 × 1920, H.264, 350 s.",
+      "segments": [
+        {
+          "titre": "En cuisine",
+          "debut": 0.0,
+          "fin": 60.0,
+          "contenu": "Six plans. Le chef, de sept heures du matin au bac vide du vendredi, puis la bascule."
+        },
+        {
+          "titre": "En salle",
+          "debut": 60.0,
+          "fin": 120.0,
+          "contenu": "Six plans. Le maître d'hôtel, sa mémoire, la table de douze qui n'existait pas."
+        },
+        {
+          "titre": "Au bureau",
+          "debut": 120.0,
+          "fin": 180.0,
+          "contenu": "Six plans. Le gérant, la pile de papier, le quinze du mois suivant."
+        },
+        {
+          "titre": "À la maison",
+          "debut": 180.0,
+          "fin": 240.0,
+          "contenu": "Six plans. Le client, qui ne verra jamais le logiciel."
+        },
+        {
+          "titre": "Vendredi, 20 h 15",
+          "debut": 240.0,
+          "fin": 350.0,
+          "contenu": "Onze plans. Les quatre histoires se croisent, minute par minute, jusqu'à la chute."
+        }
+      ],
+      "livrable": "Un film de 350 s en 9:16 pour la page de la série, et trente-cinq stories de 10 s — mêmes plans, générique de fin en plus — pour les quatre réseaux."
+    },
+    "metier": null,
+    "phase": null,
+    "amplitude": null,
+    "boucle": null,
+    "boucleSlug": null,
+    "grandeBoucle": null,
+    "incident": null,
+    "incidentHeure": null,
+    "incidentQuoi": null,
+    "saumon": null,
+    "voixOff": {
+      "conteur": "Il ferme toujours à minuit. Mais il ne se demande plus rien.",
+      "personnage": "Bonne soirée à tous.",
+      "generique": "Fermer en sachant, pas en espérant.",
+      "enchaine": "Enchaîne sur « Six tables, une mémoire »"
+    },
+    "story": {
+      "format": "9:16 · 1080 × 1920 · 10 s",
+      "hook": "Il ferme toujours à minuit. Mais il ne se demande plus rien",
+      "punchline": "La marge du jour l'attendait avant qu'il éteigne",
+      "url": null,
+      "motion": {
+        "quand": "8,5 → 10,0 s, par-dessus la fin du plan",
+        "consigne": "Générique de fin en motion design, posé sur les 1,5 dernière(s) seconde(s) du plan, sans jamais couper l'image :\n— à 8,5 s, un voile marine #0F1A23 monte du bas sur le tiers inférieur, en 0,3 s, courbe d'accélération douce ;\n— à 8,8 s, le logo FoodEatUp arrive du bas, cale au centre du voile, avec un léger dépassement puis retour (overshoot 6 %) ;\n— à 9,1 s, la punchline s'écrit sous le logo, un mot après l'autre, 0,06 s par mot, en crème #FCF9E6 ;\n— à 9,6 s, la mention « à suivre » apparaît en orange #FFA500 à droite, avec une flèche qui avance de 8 px et s'arrête ;\n— rien ne disparaît avant la fin du plan.",
+        "punchline": "Fermer en sachant, pas en espérant.",
+        "aSuivre": "À suivre — Six tables, une mémoire",
+        "voix": "Voix off française, la même que le conteur mais une note plus haute et plus proche du micro, sur les 1,5 dernière(s) seconde(s) : « Fermer en sachant, pas en espérant. »"
+      }
+    },
+    "carrousel": null,
+    "imageFacebook": null,
+    "tutoriel": null
+  },
+  "EP507": {
+    "publications": {
+      "facebook": {
+        "legende": "Il était une fois un homme qui tenait une salle entière dans sa tête.\n\nLe maître d'hôtel connaît les allergies, les habitudes, le prénom du fils. Tout est dans sa tête, et rien n'est écrit nulle part.\n\nEt sa tête rentrait chez elle à minuit.\n\n« Il était une fois un restaurant » — épisode 7 sur 35. Les trente-cinq bout à bout font un film de cinq minutes cinquante.\nTout FoodEatUp : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "hashtags": [
+          "restauration",
+          "foodeatup",
+          "restaurant",
+          "courtmetrage",
+          "en-salle"
+        ],
+        "motsCles": [
+          "réservation",
+          "restauration",
+          "foodeatup",
+          "en salle"
+        ],
+        "cta": "Découvrir FoodEatUp"
+      },
+      "instagram": {
+        "legende": "Il était une fois un homme qui tenait une salle entière dans sa tête.\n\nLe maître d'hôtel connaît les allergies, les habitudes, le prénom du fils. Tout est dans sa tête, et rien n'est écrit nulle part.\n\nEt sa tête rentrait chez elle à minuit.\n\n« Il était une fois un restaurant » — épisode 7 sur 35. Les trente-cinq bout à bout font un film de cinq minutes cinquante.\nTout FoodEatUp : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "hashtags": [
+          "restauration",
+          "foodeatup",
+          "restaurant",
+          "courtmetrage",
+          "en-salle"
+        ],
+        "motsCles": [
+          "réservation",
+          "restauration",
+          "foodeatup",
+          "en salle"
+        ],
+        "cta": "Découvrir FoodEatUp"
+      },
+      "tiktok": {
+        "legende": "Il était une fois un homme qui tenait une salle entière dans sa tête.\n\nLe maître d'hôtel connaît les allergies, les habitudes, le prénom du fils. Tout est dans sa tête, et rien n'est écrit nulle part.\n\nEt sa tête rentrait chez elle à minuit.\n\n« Il était une fois un restaurant » — épisode 7 sur 35. Les trente-cinq bout à bout font un film de cinq minutes cinquante.\nTout FoodEatUp : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "hashtags": [
+          "restauration",
+          "foodeatup",
+          "restaurant",
+          "courtmetrage",
+          "en-salle"
+        ],
+        "motsCles": [
+          "réservation",
+          "restauration",
+          "foodeatup",
+          "en salle"
+        ],
+        "cta": "Découvrir FoodEatUp"
+      },
+      "linkedin": {
+        "legende": "Il était une fois un homme qui tenait une salle entière dans sa tête.\n\nLe maître d'hôtel connaît les allergies, les habitudes, le prénom du fils. Tout est dans sa tête, et rien n'est écrit nulle part.\n\nEt sa tête rentrait chez elle à minuit.\n\n« Il était une fois un restaurant » — épisode 7 sur 35. Les trente-cinq bout à bout font un film de cinq minutes cinquante.\nTout FoodEatUp : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "hashtags": [
+          "restauration",
+          "foodeatup",
+          "restaurant",
+          "courtmetrage",
+          "en-salle"
+        ],
+        "motsCles": [
+          "réservation",
+          "restauration",
+          "foodeatup",
+          "en salle"
+        ],
+        "cta": "Découvrir FoodEatUp"
+      },
+      "youtube": {
+        "legende": "Il était une fois un homme qui tenait une salle entière dans sa tête.\n\nLe maître d'hôtel connaît les allergies, les habitudes, le prénom du fils. Tout est dans sa tête, et rien n'est écrit nulle part.\n\nEt sa tête rentrait chez elle à minuit.\n\n« Il était une fois un restaurant » — épisode 7 sur 35. Les trente-cinq bout à bout font un film de cinq minutes cinquante.\nTout FoodEatUp : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "hashtags": [
+          "restauration",
+          "foodeatup",
+          "restaurant",
+          "courtmetrage",
+          "en-salle"
+        ],
+        "motsCles": [
+          "réservation",
+          "restauration",
+          "foodeatup",
+          "en salle"
+        ],
+        "cta": "Découvrir FoodEatUp",
+        "titre": "Six tables, une mémoire — Il était une fois un restaurant 7/35"
+      }
+    },
+    "promptVignette": "Photo réaliste, cadrage vertical 9:16, image de cinéma : optique 40 mm, faible profondeur de champ, grain argentique léger.\n\nL'acteur de l'image de référence — MÊME visage, même barbe, même carrure. Il joue ici le maître d'hôtel : chemise blanche, tablier long noir, stylo à l'oreille. Décor : une salle de restaurant dressée, le comptoir d'accueil au premier plan. Expression : la six ne mange pas de crustacés — il ne sourit pas pour la caméra.\n\nBANDE HAUTE — marine #0F1A23 sur le cinquième supérieur, portant UNIQUEMENT « EN SALLE » en crème #FCF9E6, typographie arrondie très grasse, centré.\n\nBANDE BASSE — crème #FCF9E6 sur le sixième inférieur, portant UNIQUEMENT « 07 / 35 » en marine #0F1A23, aligné à droite.\n\nAucun logo dessiné, aucun filigrane, aucune interface de logiciel à l'écran, aucune autre inscription.",
+    "higgsfieldPrompt": "Vertical 9:16, 10 secondes, 1080p, 24 im/s. PAS de texte incrusté, PAS de sous-titres, PAS de filigrane, PAS de logo, AUCUNE légende gravée dans l'image. Photoréaliste, image de cinéma : optique 40 mm, faible profondeur de champ, grain argentique léger, contraste tenu. Un seul plan, aucune coupe.\n\n@Image 1 ne définit que le visage de l'acteur — barbe, traits, carrure. Ne pas les modifier. Dans ce plan il joue le maître d'hôtel : chemise blanche, tablier long noir, stylo à l'oreille. C'est le même acteur dans les quatre histoires du film, et le film ne le dit jamais : ne rien ajouter qui le souligne.\n\nDécor : une salle de restaurant dressée, le comptoir d'accueil au premier plan. Étalonnage froid et désaturé, verts tirés, hautes lumières écrêtées — l'avant du film. Les ombres mangent les bords du cadre.\n\n0-5s: Une salle dressée avant le service, nappes blanches, lumière basse. Caméra portée, très lent mouvement avant. Voix off française, un homme, grave et posée, le débit d'un conteur qui connaît déjà la fin, hors champ : {Il était une fois un homme qui tenait une salle entière dans sa tête.} End state at 5s: le personnage est seul et lisible dans le cadre, rien n'a encore changé autour de lui.\n5-8s: À 5 secondes exactement, il touche successivement quatre tables du bout des doigts, comme on récite. Un seul changement, rien d'autre ne bouge. End state at 8s: le changement est complet et pleinement lisible, le personnage y a réagi.\n8-10s: Il s'arrête au milieu de la salle et regarde les tables vides, une par une. La caméra s'immobilise. Français, voix naturelle, dite pour soi et non pour la caméra, le maître d'hôtel : {La six ne mange pas de crustacés.} End state at 10s: plan figé sur son visage, caméra immobile, aucune entrée dans le cadre.\n\nSound design: <ambiance réelle du lieu, dense> <un seul bruit de matière au moment du changement>. Deux répliques, exactement aux minutages ci-dessus : le conteur au début, le personnage à la fin. Pas de musique — elle est ajoutée au montage.",
+    "scriptHeygen": null,
+    "kit": null,
+    "heygenPrompt": null,
+    "montage": {
+      "consigne": "Assembler les trente-cinq plans dans l'ordre des identifiants, sans transition entre deux plans d'une même histoire, et avec un fondu au noir de 12 images entre deux histoires. Le générique de fin des stories est RETIRÉ de la version film : il ne sert qu'aux réseaux. Musique unique sur les 350 s, montée de deux décibels à partir de l'épisode 25 et coupée net sur le dernier plan. Voix off du conteur normalisée à −16 LUFS, dialogues des personnages à −14, ambiances à −24. Sortie 1080 × 1920, H.264, 350 s.",
+      "segments": [
+        {
+          "titre": "En cuisine",
+          "debut": 0.0,
+          "fin": 60.0,
+          "contenu": "Six plans. Le chef, de sept heures du matin au bac vide du vendredi, puis la bascule."
+        },
+        {
+          "titre": "En salle",
+          "debut": 60.0,
+          "fin": 120.0,
+          "contenu": "Six plans. Le maître d'hôtel, sa mémoire, la table de douze qui n'existait pas."
+        },
+        {
+          "titre": "Au bureau",
+          "debut": 120.0,
+          "fin": 180.0,
+          "contenu": "Six plans. Le gérant, la pile de papier, le quinze du mois suivant."
+        },
+        {
+          "titre": "À la maison",
+          "debut": 180.0,
+          "fin": 240.0,
+          "contenu": "Six plans. Le client, qui ne verra jamais le logiciel."
+        },
+        {
+          "titre": "Vendredi, 20 h 15",
+          "debut": 240.0,
+          "fin": 350.0,
+          "contenu": "Onze plans. Les quatre histoires se croisent, minute par minute, jusqu'à la chute."
+        }
+      ],
+      "livrable": "Un film de 350 s en 9:16 pour la page de la série, et trente-cinq stories de 10 s — mêmes plans, générique de fin en plus — pour les quatre réseaux."
+    },
+    "metier": null,
+    "phase": null,
+    "amplitude": null,
+    "boucle": null,
+    "boucleSlug": null,
+    "grandeBoucle": null,
+    "incident": null,
+    "incidentHeure": null,
+    "incidentQuoi": null,
+    "saumon": null,
+    "voixOff": {
+      "conteur": "Il était une fois un homme qui tenait une salle entière dans sa tête.",
+      "personnage": "La six ne mange pas de crustacés.",
+      "generique": "Ce qu'il sait ne devrait pas rentrer chez lui le soir.",
+      "enchaine": "Enchaîne sur « Le téléphone qui sonne dans le vide »"
+    },
+    "story": {
+      "format": "9:16 · 1080 × 1920 · 10 s",
+      "hook": "Il était une fois un homme qui tenait une salle entière dans sa tête",
+      "punchline": "Et sa tête rentrait chez elle à minuit",
+      "url": null,
+      "motion": {
+        "quand": "8,5 → 10,0 s, par-dessus la fin du plan",
+        "consigne": "Générique de fin en motion design, posé sur les 1,5 dernière(s) seconde(s) du plan, sans jamais couper l'image :\n— à 8,5 s, un voile marine #0F1A23 monte du bas sur le tiers inférieur, en 0,3 s, courbe d'accélération douce ;\n— à 8,8 s, le logo FoodEatUp arrive du bas, cale au centre du voile, avec un léger dépassement puis retour (overshoot 6 %) ;\n— à 9,1 s, la punchline s'écrit sous le logo, un mot après l'autre, 0,06 s par mot, en crème #FCF9E6 ;\n— à 9,6 s, la mention « à suivre » apparaît en orange #FFA500 à droite, avec une flèche qui avance de 8 px et s'arrête ;\n— rien ne disparaît avant la fin du plan.",
+        "punchline": "Ce qu'il sait ne devrait pas rentrer chez lui le soir.",
+        "aSuivre": "À suivre — Le téléphone qui sonne dans le vide",
+        "voix": "Voix off française, la même que le conteur mais une note plus haute et plus proche du micro, sur les 1,5 dernière(s) seconde(s) : « Ce qu'il sait ne devrait pas rentrer chez lui le soir. »"
+      }
+    },
+    "carrousel": null,
+    "imageFacebook": null,
+    "tutoriel": null
+  },
+  "EP508": {
+    "publications": {
+      "facebook": {
+        "legende": "Quatre canaux, et une seule paire de mains.\n\nLe téléphone, le site, la plateforme, la porte. Quatre canaux de réservation qui n'ont aucun moyen de savoir ce que les trois autres ont accepté.\n\nLe téléphone, lui, ne prend jamais sa pause.\n\n« Il était une fois un restaurant » — épisode 8 sur 35. Les trente-cinq bout à bout font un film de cinq minutes cinquante.\nTout FoodEatUp : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "hashtags": [
+          "restauration",
+          "foodeatup",
+          "restaurant",
+          "courtmetrage",
+          "en-salle"
+        ],
+        "motsCles": [
+          "réservation",
+          "restauration",
+          "foodeatup",
+          "en salle"
+        ],
+        "cta": "Découvrir FoodEatUp"
+      },
+      "instagram": {
+        "legende": "Quatre canaux, et une seule paire de mains.\n\nLe téléphone, le site, la plateforme, la porte. Quatre canaux de réservation qui n'ont aucun moyen de savoir ce que les trois autres ont accepté.\n\nLe téléphone, lui, ne prend jamais sa pause.\n\n« Il était une fois un restaurant » — épisode 8 sur 35. Les trente-cinq bout à bout font un film de cinq minutes cinquante.\nTout FoodEatUp : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "hashtags": [
+          "restauration",
+          "foodeatup",
+          "restaurant",
+          "courtmetrage",
+          "en-salle"
+        ],
+        "motsCles": [
+          "réservation",
+          "restauration",
+          "foodeatup",
+          "en salle"
+        ],
+        "cta": "Découvrir FoodEatUp"
+      },
+      "tiktok": {
+        "legende": "Quatre canaux, et une seule paire de mains.\n\nLe téléphone, le site, la plateforme, la porte. Quatre canaux de réservation qui n'ont aucun moyen de savoir ce que les trois autres ont accepté.\n\nLe téléphone, lui, ne prend jamais sa pause.\n\n« Il était une fois un restaurant » — épisode 8 sur 35. Les trente-cinq bout à bout font un film de cinq minutes cinquante.\nTout FoodEatUp : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "hashtags": [
+          "restauration",
+          "foodeatup",
+          "restaurant",
+          "courtmetrage",
+          "en-salle"
+        ],
+        "motsCles": [
+          "réservation",
+          "restauration",
+          "foodeatup",
+          "en salle"
+        ],
+        "cta": "Découvrir FoodEatUp"
+      },
+      "linkedin": {
+        "legende": "Quatre canaux, et une seule paire de mains.\n\nLe téléphone, le site, la plateforme, la porte. Quatre canaux de réservation qui n'ont aucun moyen de savoir ce que les trois autres ont accepté.\n\nLe téléphone, lui, ne prend jamais sa pause.\n\n« Il était une fois un restaurant » — épisode 8 sur 35. Les trente-cinq bout à bout font un film de cinq minutes cinquante.\nTout FoodEatUp : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "hashtags": [
+          "restauration",
+          "foodeatup",
+          "restaurant",
+          "courtmetrage",
+          "en-salle"
+        ],
+        "motsCles": [
+          "réservation",
+          "restauration",
+          "foodeatup",
+          "en salle"
+        ],
+        "cta": "Découvrir FoodEatUp"
+      },
+      "youtube": {
+        "legende": "Quatre canaux, et une seule paire de mains.\n\nLe téléphone, le site, la plateforme, la porte. Quatre canaux de réservation qui n'ont aucun moyen de savoir ce que les trois autres ont accepté.\n\nLe téléphone, lui, ne prend jamais sa pause.\n\n« Il était une fois un restaurant » — épisode 8 sur 35. Les trente-cinq bout à bout font un film de cinq minutes cinquante.\nTout FoodEatUp : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "hashtags": [
+          "restauration",
+          "foodeatup",
+          "restaurant",
+          "courtmetrage",
+          "en-salle"
+        ],
+        "motsCles": [
+          "réservation",
+          "restauration",
+          "foodeatup",
+          "en salle"
+        ],
+        "cta": "Découvrir FoodEatUp",
+        "titre": "Le téléphone qui sonne dans le vide — Il était une fois un restaurant 8/35"
+      }
+    },
+    "promptVignette": "Photo réaliste, cadrage vertical 9:16, image de cinéma : optique 40 mm, faible profondeur de champ, grain argentique léger.\n\nL'acteur de l'image de référence — MÊME visage, même barbe, même carrure. Il joue ici le maître d'hôtel : chemise blanche, tablier long noir, stylo à l'oreille. Décor : une salle de restaurant dressée, le comptoir d'accueil au premier plan. Expression : attendez… c'était pour quelle heure ? — il ne sourit pas pour la caméra.\n\nBANDE HAUTE — marine #0F1A23 sur le cinquième supérieur, portant UNIQUEMENT « EN SALLE » en crème #FCF9E6, typographie arrondie très grasse, centré.\n\nBANDE BASSE — crème #FCF9E6 sur le sixième inférieur, portant UNIQUEMENT « 08 / 35 » en marine #0F1A23, aligné à droite.\n\nAucun logo dessiné, aucun filigrane, aucune interface de logiciel à l'écran, aucune autre inscription.",
+    "higgsfieldPrompt": "Vertical 9:16, 10 secondes, 1080p, 24 im/s. PAS de texte incrusté, PAS de sous-titres, PAS de filigrane, PAS de logo, AUCUNE légende gravée dans l'image. Photoréaliste, image de cinéma : optique 40 mm, faible profondeur de champ, grain argentique léger, contraste tenu. Un seul plan, aucune coupe.\n\n@Image 1 ne définit que le visage de l'acteur — barbe, traits, carrure. Ne pas les modifier. Dans ce plan il joue le maître d'hôtel : chemise blanche, tablier long noir, stylo à l'oreille. C'est le même acteur dans les quatre histoires du film, et le film ne le dit jamais : ne rien ajouter qui le souligne.\n\nDécor : une salle de restaurant dressée, le comptoir d'accueil au premier plan. Étalonnage froid et désaturé, verts tirés, hautes lumières écrêtées — l'avant du film. Les ombres mangent les bords du cadre.\n\n0-5s: Le comptoir d'accueil, un carnet de réservations ouvert, un téléphone qui sonne. Caméra portée, très lent mouvement avant. Voix off française, un homme, grave et posée, le débit d'un conteur qui connaît déjà la fin, hors champ : {Quatre canaux, et une seule paire de mains.} End state at 5s: le personnage est seul et lisible dans le cadre, rien n'a encore changé autour de lui.\n5-8s: À 5 secondes exactement, le téléphone sonne pendant qu'il écrit, il suspend le stylo à mi-mot. Un seul changement, rien d'autre ne bouge. End state at 8s: le changement est complet et pleinement lisible, le personnage y a réagi.\n8-10s: Il repose le combiné, regarde la ligne inachevée sur le carnet et hésite. La caméra s'immobilise. Français, voix naturelle, dite pour soi et non pour la caméra, le maître d'hôtel : {Attendez… c'était pour quelle heure ?} End state at 10s: plan figé sur son visage, caméra immobile, aucune entrée dans le cadre.\n\nSound design: <ambiance réelle du lieu, dense> <un seul bruit de matière au moment du changement>. Deux répliques, exactement aux minutages ci-dessus : le conteur au début, le personnage à la fin. Pas de musique — elle est ajoutée au montage.",
+    "scriptHeygen": null,
+    "kit": null,
+    "heygenPrompt": null,
+    "montage": {
+      "consigne": "Assembler les trente-cinq plans dans l'ordre des identifiants, sans transition entre deux plans d'une même histoire, et avec un fondu au noir de 12 images entre deux histoires. Le générique de fin des stories est RETIRÉ de la version film : il ne sert qu'aux réseaux. Musique unique sur les 350 s, montée de deux décibels à partir de l'épisode 25 et coupée net sur le dernier plan. Voix off du conteur normalisée à −16 LUFS, dialogues des personnages à −14, ambiances à −24. Sortie 1080 × 1920, H.264, 350 s.",
+      "segments": [
+        {
+          "titre": "En cuisine",
+          "debut": 0.0,
+          "fin": 60.0,
+          "contenu": "Six plans. Le chef, de sept heures du matin au bac vide du vendredi, puis la bascule."
+        },
+        {
+          "titre": "En salle",
+          "debut": 60.0,
+          "fin": 120.0,
+          "contenu": "Six plans. Le maître d'hôtel, sa mémoire, la table de douze qui n'existait pas."
+        },
+        {
+          "titre": "Au bureau",
+          "debut": 120.0,
+          "fin": 180.0,
+          "contenu": "Six plans. Le gérant, la pile de papier, le quinze du mois suivant."
+        },
+        {
+          "titre": "À la maison",
+          "debut": 180.0,
+          "fin": 240.0,
+          "contenu": "Six plans. Le client, qui ne verra jamais le logiciel."
+        },
+        {
+          "titre": "Vendredi, 20 h 15",
+          "debut": 240.0,
+          "fin": 350.0,
+          "contenu": "Onze plans. Les quatre histoires se croisent, minute par minute, jusqu'à la chute."
+        }
+      ],
+      "livrable": "Un film de 350 s en 9:16 pour la page de la série, et trente-cinq stories de 10 s — mêmes plans, générique de fin en plus — pour les quatre réseaux."
+    },
+    "metier": null,
+    "phase": null,
+    "amplitude": null,
+    "boucle": null,
+    "boucleSlug": null,
+    "grandeBoucle": null,
+    "incident": null,
+    "incidentHeure": null,
+    "incidentQuoi": null,
+    "saumon": null,
+    "voixOff": {
+      "conteur": "Quatre canaux, et une seule paire de mains.",
+      "personnage": "Attendez… c'était pour quelle heure ?",
+      "generique": "Quatre canaux, un seul plan de salle.",
+      "enchaine": "Enchaîne sur « La table de douze qui n'existait pas »"
+    },
+    "story": {
+      "format": "9:16 · 1080 × 1920 · 10 s",
+      "hook": "Quatre canaux, et une seule paire de mains",
+      "punchline": "Le téléphone, lui, ne prend jamais sa pause",
+      "url": null,
+      "motion": {
+        "quand": "8,5 → 10,0 s, par-dessus la fin du plan",
+        "consigne": "Générique de fin en motion design, posé sur les 1,5 dernière(s) seconde(s) du plan, sans jamais couper l'image :\n— à 8,5 s, un voile marine #0F1A23 monte du bas sur le tiers inférieur, en 0,3 s, courbe d'accélération douce ;\n— à 8,8 s, le logo FoodEatUp arrive du bas, cale au centre du voile, avec un léger dépassement puis retour (overshoot 6 %) ;\n— à 9,1 s, la punchline s'écrit sous le logo, un mot après l'autre, 0,06 s par mot, en crème #FCF9E6 ;\n— à 9,6 s, la mention « à suivre » apparaît en orange #FFA500 à droite, avec une flèche qui avance de 8 px et s'arrête ;\n— rien ne disparaît avant la fin du plan.",
+        "punchline": "Quatre canaux, un seul plan de salle.",
+        "aSuivre": "À suivre — La table de douze qui n'existait pas",
+        "voix": "Voix off française, la même que le conteur mais une note plus haute et plus proche du micro, sur les 1,5 dernière(s) seconde(s) : « Quatre canaux, un seul plan de salle. »"
+      }
+    },
+    "carrousel": null,
+    "imageFacebook": null,
+    "tutoriel": null
+  },
+  "EP509": {
+    "publications": {
+      "facebook": {
+        "legende": "Puis vint le soir où deux tables portaient le même numéro.\n\nUne table de douze acceptée au téléphone trois jours plus tôt, jamais reportée dans le plan de salle. Elle arrive à vingt heures. La salle est pleine.\n\nDouze personnes debout, et une salle complète.\n\n« Il était une fois un restaurant » — épisode 9 sur 35. Les trente-cinq bout à bout font un film de cinq minutes cinquante.\nTout FoodEatUp : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "hashtags": [
+          "restauration",
+          "foodeatup",
+          "restaurant",
+          "courtmetrage",
+          "en-salle"
+        ],
+        "motsCles": [
+          "réservation",
+          "restauration",
+          "foodeatup",
+          "en salle"
+        ],
+        "cta": "Découvrir FoodEatUp"
+      },
+      "instagram": {
+        "legende": "Puis vint le soir où deux tables portaient le même numéro.\n\nUne table de douze acceptée au téléphone trois jours plus tôt, jamais reportée dans le plan de salle. Elle arrive à vingt heures. La salle est pleine.\n\nDouze personnes debout, et une salle complète.\n\n« Il était une fois un restaurant » — épisode 9 sur 35. Les trente-cinq bout à bout font un film de cinq minutes cinquante.\nTout FoodEatUp : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "hashtags": [
+          "restauration",
+          "foodeatup",
+          "restaurant",
+          "courtmetrage",
+          "en-salle"
+        ],
+        "motsCles": [
+          "réservation",
+          "restauration",
+          "foodeatup",
+          "en salle"
+        ],
+        "cta": "Découvrir FoodEatUp"
+      },
+      "tiktok": {
+        "legende": "Puis vint le soir où deux tables portaient le même numéro.\n\nUne table de douze acceptée au téléphone trois jours plus tôt, jamais reportée dans le plan de salle. Elle arrive à vingt heures. La salle est pleine.\n\nDouze personnes debout, et une salle complète.\n\n« Il était une fois un restaurant » — épisode 9 sur 35. Les trente-cinq bout à bout font un film de cinq minutes cinquante.\nTout FoodEatUp : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "hashtags": [
+          "restauration",
+          "foodeatup",
+          "restaurant",
+          "courtmetrage",
+          "en-salle"
+        ],
+        "motsCles": [
+          "réservation",
+          "restauration",
+          "foodeatup",
+          "en salle"
+        ],
+        "cta": "Découvrir FoodEatUp"
+      },
+      "linkedin": {
+        "legende": "Puis vint le soir où deux tables portaient le même numéro.\n\nUne table de douze acceptée au téléphone trois jours plus tôt, jamais reportée dans le plan de salle. Elle arrive à vingt heures. La salle est pleine.\n\nDouze personnes debout, et une salle complète.\n\n« Il était une fois un restaurant » — épisode 9 sur 35. Les trente-cinq bout à bout font un film de cinq minutes cinquante.\nTout FoodEatUp : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "hashtags": [
+          "restauration",
+          "foodeatup",
+          "restaurant",
+          "courtmetrage",
+          "en-salle"
+        ],
+        "motsCles": [
+          "réservation",
+          "restauration",
+          "foodeatup",
+          "en salle"
+        ],
+        "cta": "Découvrir FoodEatUp"
+      },
+      "youtube": {
+        "legende": "Puis vint le soir où deux tables portaient le même numéro.\n\nUne table de douze acceptée au téléphone trois jours plus tôt, jamais reportée dans le plan de salle. Elle arrive à vingt heures. La salle est pleine.\n\nDouze personnes debout, et une salle complète.\n\n« Il était une fois un restaurant » — épisode 9 sur 35. Les trente-cinq bout à bout font un film de cinq minutes cinquante.\nTout FoodEatUp : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "hashtags": [
+          "restauration",
+          "foodeatup",
+          "restaurant",
+          "courtmetrage",
+          "en-salle"
+        ],
+        "motsCles": [
+          "réservation",
+          "restauration",
+          "foodeatup",
+          "en salle"
+        ],
+        "cta": "Découvrir FoodEatUp",
+        "titre": "La table de douze qui n'existait pas — Il était une fois un restaurant 9/35"
+      }
+    },
+    "promptVignette": "Photo réaliste, cadrage vertical 9:16, image de cinéma : optique 40 mm, faible profondeur de champ, grain argentique léger.\n\nL'acteur de l'image de référence — MÊME visage, même barbe, même carrure. Il joue ici le maître d'hôtel : chemise blanche, tablier long noir, stylo à l'oreille. Décor : une salle de restaurant dressée, le comptoir d'accueil au premier plan. Expression : je suis vraiment désolé — il ne sourit pas pour la caméra.\n\nBANDE HAUTE — marine #0F1A23 sur le cinquième supérieur, portant UNIQUEMENT « EN SALLE » en crème #FCF9E6, typographie arrondie très grasse, centré.\n\nBANDE BASSE — crème #FCF9E6 sur le sixième inférieur, portant UNIQUEMENT « 09 / 35 » en marine #0F1A23, aligné à droite.\n\nAucun logo dessiné, aucun filigrane, aucune interface de logiciel à l'écran, aucune autre inscription.",
+    "higgsfieldPrompt": "Vertical 9:16, 10 secondes, 1080p, 24 im/s. PAS de texte incrusté, PAS de sous-titres, PAS de filigrane, PAS de logo, AUCUNE légende gravée dans l'image. Photoréaliste, image de cinéma : optique 40 mm, faible profondeur de champ, grain argentique léger, contraste tenu. Un seul plan, aucune coupe.\n\n@Image 1 ne définit que le visage de l'acteur — barbe, traits, carrure. Ne pas les modifier. Dans ce plan il joue le maître d'hôtel : chemise blanche, tablier long noir, stylo à l'oreille. C'est le même acteur dans les quatre histoires du film, et le film ne le dit jamais : ne rien ajouter qui le souligne.\n\nDécor : une salle de restaurant dressée, le comptoir d'accueil au premier plan. Étalonnage froid et désaturé, verts tirés, hautes lumières écrêtées — l'avant du film. Les ombres mangent les bords du cadre.\n\n0-5s: La salle en plein service, bruyante. Un groupe attend debout près de la porte. Caméra portée, très lent mouvement avant. Voix off française, un homme, grave et posée, le débit d'un conteur qui connaît déjà la fin, hors champ : {Puis vint le soir où deux tables portaient le même numéro.} End state at 5s: le personnage est seul et lisible dans le cadre, rien n'a encore changé autour de lui.\n5-8s: À 5 secondes exactement, il fait pivoter le carnet vers lui, et la ligne n'y est pas. Un seul changement, rien d'autre ne bouge. End state at 8s: le changement est complet et pleinement lisible, le personnage y a réagi.\n8-10s: Il lève les yeux vers le groupe qui attend, et ne trouve rien à dire. La caméra s'immobilise. Français, voix naturelle, dite pour soi et non pour la caméra, le maître d'hôtel : {Je suis vraiment désolé.} End state at 10s: plan figé sur son visage, caméra immobile, aucune entrée dans le cadre.\n\nSound design: <ambiance réelle du lieu, dense> <un seul bruit de matière au moment du changement>. Deux répliques, exactement aux minutages ci-dessus : le conteur au début, le personnage à la fin. Pas de musique — elle est ajoutée au montage.",
+    "scriptHeygen": null,
+    "kit": null,
+    "heygenPrompt": null,
+    "montage": {
+      "consigne": "Assembler les trente-cinq plans dans l'ordre des identifiants, sans transition entre deux plans d'une même histoire, et avec un fondu au noir de 12 images entre deux histoires. Le générique de fin des stories est RETIRÉ de la version film : il ne sert qu'aux réseaux. Musique unique sur les 350 s, montée de deux décibels à partir de l'épisode 25 et coupée net sur le dernier plan. Voix off du conteur normalisée à −16 LUFS, dialogues des personnages à −14, ambiances à −24. Sortie 1080 × 1920, H.264, 350 s.",
+      "segments": [
+        {
+          "titre": "En cuisine",
+          "debut": 0.0,
+          "fin": 60.0,
+          "contenu": "Six plans. Le chef, de sept heures du matin au bac vide du vendredi, puis la bascule."
+        },
+        {
+          "titre": "En salle",
+          "debut": 60.0,
+          "fin": 120.0,
+          "contenu": "Six plans. Le maître d'hôtel, sa mémoire, la table de douze qui n'existait pas."
+        },
+        {
+          "titre": "Au bureau",
+          "debut": 120.0,
+          "fin": 180.0,
+          "contenu": "Six plans. Le gérant, la pile de papier, le quinze du mois suivant."
+        },
+        {
+          "titre": "À la maison",
+          "debut": 180.0,
+          "fin": 240.0,
+          "contenu": "Six plans. Le client, qui ne verra jamais le logiciel."
+        },
+        {
+          "titre": "Vendredi, 20 h 15",
+          "debut": 240.0,
+          "fin": 350.0,
+          "contenu": "Onze plans. Les quatre histoires se croisent, minute par minute, jusqu'à la chute."
+        }
+      ],
+      "livrable": "Un film de 350 s en 9:16 pour la page de la série, et trente-cinq stories de 10 s — mêmes plans, générique de fin en plus — pour les quatre réseaux."
+    },
+    "metier": null,
+    "phase": null,
+    "amplitude": null,
+    "boucle": null,
+    "boucleSlug": null,
+    "grandeBoucle": null,
+    "incident": null,
+    "incidentHeure": null,
+    "incidentQuoi": null,
+    "saumon": null,
+    "voixOff": {
+      "conteur": "Puis vint le soir où deux tables portaient le même numéro.",
+      "personnage": "Je suis vraiment désolé.",
+      "generique": "Une réservation qu'on ne voit pas est une réservation qu'on perd.",
+      "enchaine": "Enchaîne sur « Le plan de salle qui se remplit tout seul »"
+    },
+    "story": {
+      "format": "9:16 · 1080 × 1920 · 10 s",
+      "hook": "Puis vint le soir où deux tables portaient le même numéro",
+      "punchline": "Douze personnes debout, et une salle complète",
+      "url": null,
+      "motion": {
+        "quand": "8,5 → 10,0 s, par-dessus la fin du plan",
+        "consigne": "Générique de fin en motion design, posé sur les 1,5 dernière(s) seconde(s) du plan, sans jamais couper l'image :\n— à 8,5 s, un voile marine #0F1A23 monte du bas sur le tiers inférieur, en 0,3 s, courbe d'accélération douce ;\n— à 8,8 s, le logo FoodEatUp arrive du bas, cale au centre du voile, avec un léger dépassement puis retour (overshoot 6 %) ;\n— à 9,1 s, la punchline s'écrit sous le logo, un mot après l'autre, 0,06 s par mot, en crème #FCF9E6 ;\n— à 9,6 s, la mention « à suivre » apparaît en orange #FFA500 à droite, avec une flèche qui avance de 8 px et s'arrête ;\n— rien ne disparaît avant la fin du plan.",
+        "punchline": "Une réservation qu'on ne voit pas est une réservation qu'on perd.",
+        "aSuivre": "À suivre — Le plan de salle qui se remplit tout seul",
+        "voix": "Voix off française, la même que le conteur mais une note plus haute et plus proche du micro, sur les 1,5 dernière(s) seconde(s) : « Une réservation qu'on ne voit pas est une réservation qu'on perd. »"
+      }
+    },
+    "carrousel": null,
+    "imageFacebook": null,
+    "tutoriel": null
+  },
+  "EP510": {
+    "publications": {
+      "facebook": {
+        "legende": "Un soir, le carnet est resté fermé.\n\nLe téléphone, le site, la plateforme et la porte tombent dans le même plan de salle. La contrainte alimentaire arrive écrite sur la réservation.\n\nLes quatre canaux arrivaient au même endroit.\n\n« Il était une fois un restaurant » — épisode 10 sur 35. Les trente-cinq bout à bout font un film de cinq minutes cinquante.\nTout FoodEatUp : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "hashtags": [
+          "restauration",
+          "foodeatup",
+          "restaurant",
+          "courtmetrage",
+          "en-salle"
+        ],
+        "motsCles": [
+          "réservation",
+          "restauration",
+          "foodeatup",
+          "en salle"
+        ],
+        "cta": "Découvrir FoodEatUp"
+      },
+      "instagram": {
+        "legende": "Un soir, le carnet est resté fermé.\n\nLe téléphone, le site, la plateforme et la porte tombent dans le même plan de salle. La contrainte alimentaire arrive écrite sur la réservation.\n\nLes quatre canaux arrivaient au même endroit.\n\n« Il était une fois un restaurant » — épisode 10 sur 35. Les trente-cinq bout à bout font un film de cinq minutes cinquante.\nTout FoodEatUp : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "hashtags": [
+          "restauration",
+          "foodeatup",
+          "restaurant",
+          "courtmetrage",
+          "en-salle"
+        ],
+        "motsCles": [
+          "réservation",
+          "restauration",
+          "foodeatup",
+          "en salle"
+        ],
+        "cta": "Découvrir FoodEatUp"
+      },
+      "tiktok": {
+        "legende": "Un soir, le carnet est resté fermé.\n\nLe téléphone, le site, la plateforme et la porte tombent dans le même plan de salle. La contrainte alimentaire arrive écrite sur la réservation.\n\nLes quatre canaux arrivaient au même endroit.\n\n« Il était une fois un restaurant » — épisode 10 sur 35. Les trente-cinq bout à bout font un film de cinq minutes cinquante.\nTout FoodEatUp : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "hashtags": [
+          "restauration",
+          "foodeatup",
+          "restaurant",
+          "courtmetrage",
+          "en-salle"
+        ],
+        "motsCles": [
+          "réservation",
+          "restauration",
+          "foodeatup",
+          "en salle"
+        ],
+        "cta": "Découvrir FoodEatUp"
+      },
+      "linkedin": {
+        "legende": "Un soir, le carnet est resté fermé.\n\nLe téléphone, le site, la plateforme et la porte tombent dans le même plan de salle. La contrainte alimentaire arrive écrite sur la réservation.\n\nLes quatre canaux arrivaient au même endroit.\n\n« Il était une fois un restaurant » — épisode 10 sur 35. Les trente-cinq bout à bout font un film de cinq minutes cinquante.\nTout FoodEatUp : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "hashtags": [
+          "restauration",
+          "foodeatup",
+          "restaurant",
+          "courtmetrage",
+          "en-salle"
+        ],
+        "motsCles": [
+          "réservation",
+          "restauration",
+          "foodeatup",
+          "en salle"
+        ],
+        "cta": "Découvrir FoodEatUp"
+      },
+      "youtube": {
+        "legende": "Un soir, le carnet est resté fermé.\n\nLe téléphone, le site, la plateforme et la porte tombent dans le même plan de salle. La contrainte alimentaire arrive écrite sur la réservation.\n\nLes quatre canaux arrivaient au même endroit.\n\n« Il était une fois un restaurant » — épisode 10 sur 35. Les trente-cinq bout à bout font un film de cinq minutes cinquante.\nTout FoodEatUp : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "hashtags": [
+          "restauration",
+          "foodeatup",
+          "restaurant",
+          "courtmetrage",
+          "en-salle"
+        ],
+        "motsCles": [
+          "réservation",
+          "restauration",
+          "foodeatup",
+          "en salle"
+        ],
+        "cta": "Découvrir FoodEatUp",
+        "titre": "Le plan de salle qui se remplit tout seul — Il était une fois un restaurant 10/35"
+      }
+    },
+    "promptVignette": "Photo réaliste, cadrage vertical 9:16, image de cinéma : optique 40 mm, faible profondeur de champ, grain argentique léger.\n\nL'acteur de l'image de référence — MÊME visage, même barbe, même carrure. Il joue ici le maître d'hôtel : chemise blanche, tablier long noir, stylo à l'oreille. Décor : une salle de restaurant dressée, le comptoir d'accueil au premier plan. Expression : on est complets. et je le sais depuis mardi — il ne sourit pas pour la caméra.\n\nBANDE HAUTE — marine #0F1A23 sur le cinquième supérieur, portant UNIQUEMENT « EN SALLE » en crème #FCF9E6, typographie arrondie très grasse, centré.\n\nBANDE BASSE — crème #FCF9E6 sur le sixième inférieur, portant UNIQUEMENT « 10 / 35 » en marine #0F1A23, aligné à droite.\n\nAucun logo dessiné, aucun filigrane, aucune interface de logiciel à l'écran, aucune autre inscription.",
+    "higgsfieldPrompt": "Vertical 9:16, 10 secondes, 1080p, 24 im/s. PAS de texte incrusté, PAS de sous-titres, PAS de filigrane, PAS de logo, AUCUNE légende gravée dans l'image. Photoréaliste, image de cinéma : optique 40 mm, faible profondeur de champ, grain argentique léger, contraste tenu. Un seul plan, aucune coupe.\n\n@Image 1 ne définit que le visage de l'acteur — barbe, traits, carrure. Ne pas les modifier. Dans ce plan il joue le maître d'hôtel : chemise blanche, tablier long noir, stylo à l'oreille. C'est le même acteur dans les quatre histoires du film, et le film ne le dit jamais : ne rien ajouter qui le souligne.\n\nDécor : une salle de restaurant dressée, le comptoir d'accueil au premier plan. L'étalonnage change à l'intérieur du plan : froid au départ, il se réchauffe à partir de 5 s sans que rien d'autre ne bouge.\n\n0-5s: Le comptoir d'accueil, le carnet de réservations fermé, posé de côté. Caméra portée, très lent mouvement avant. Voix off française, un homme, grave et posée, le débit d'un conteur qui connaît déjà la fin, hors champ : {Un soir, le carnet est resté fermé.} End state at 5s: le personnage est seul et lisible dans le cadre, rien n'a encore changé autour de lui.\n5-8s: À 5 secondes exactement, il tourne le carnet face contre bois et le pousse au bout du comptoir. Un seul changement, rien d'autre ne bouge. End state at 8s: le changement est complet et pleinement lisible, le personnage y a réagi.\n8-10s: Il se redresse, regarde la salle, et croise les mains derrière le dos. La caméra s'immobilise. Français, voix naturelle, dite pour soi et non pour la caméra, le maître d'hôtel : {On est complets. Et je le sais depuis mardi.} End state at 10s: plan figé sur son visage, caméra immobile, aucune entrée dans le cadre.\n\nSound design: <ambiance réelle du lieu, dense> <un seul bruit de matière au moment du changement>. Deux répliques, exactement aux minutages ci-dessus : le conteur au début, le personnage à la fin. Pas de musique — elle est ajoutée au montage.",
+    "scriptHeygen": null,
+    "kit": null,
+    "heygenPrompt": null,
+    "montage": {
+      "consigne": "Assembler les trente-cinq plans dans l'ordre des identifiants, sans transition entre deux plans d'une même histoire, et avec un fondu au noir de 12 images entre deux histoires. Le générique de fin des stories est RETIRÉ de la version film : il ne sert qu'aux réseaux. Musique unique sur les 350 s, montée de deux décibels à partir de l'épisode 25 et coupée net sur le dernier plan. Voix off du conteur normalisée à −16 LUFS, dialogues des personnages à −14, ambiances à −24. Sortie 1080 × 1920, H.264, 350 s.",
+      "segments": [
+        {
+          "titre": "En cuisine",
+          "debut": 0.0,
+          "fin": 60.0,
+          "contenu": "Six plans. Le chef, de sept heures du matin au bac vide du vendredi, puis la bascule."
+        },
+        {
+          "titre": "En salle",
+          "debut": 60.0,
+          "fin": 120.0,
+          "contenu": "Six plans. Le maître d'hôtel, sa mémoire, la table de douze qui n'existait pas."
+        },
+        {
+          "titre": "Au bureau",
+          "debut": 120.0,
+          "fin": 180.0,
+          "contenu": "Six plans. Le gérant, la pile de papier, le quinze du mois suivant."
+        },
+        {
+          "titre": "À la maison",
+          "debut": 180.0,
+          "fin": 240.0,
+          "contenu": "Six plans. Le client, qui ne verra jamais le logiciel."
+        },
+        {
+          "titre": "Vendredi, 20 h 15",
+          "debut": 240.0,
+          "fin": 350.0,
+          "contenu": "Onze plans. Les quatre histoires se croisent, minute par minute, jusqu'à la chute."
+        }
+      ],
+      "livrable": "Un film de 350 s en 9:16 pour la page de la série, et trente-cinq stories de 10 s — mêmes plans, générique de fin en plus — pour les quatre réseaux."
+    },
+    "metier": null,
+    "phase": null,
+    "amplitude": null,
+    "boucle": null,
+    "boucleSlug": null,
+    "grandeBoucle": null,
+    "incident": null,
+    "incidentHeure": null,
+    "incidentQuoi": null,
+    "saumon": null,
+    "voixOff": {
+      "conteur": "Un soir, le carnet est resté fermé.",
+      "personnage": "On est complets. Et je le sais depuis mardi.",
+      "generique": "Quatre canaux, une seule file, dans l'ordre d'arrivée.",
+      "enchaine": "Enchaîne sur « Le prénom du fils »"
+    },
+    "story": {
+      "format": "9:16 · 1080 × 1920 · 10 s",
+      "hook": "Un soir, le carnet est resté fermé",
+      "punchline": "Les quatre canaux arrivaient au même endroit",
+      "url": null,
+      "motion": {
+        "quand": "8,5 → 10,0 s, par-dessus la fin du plan",
+        "consigne": "Générique de fin en motion design, posé sur les 1,5 dernière(s) seconde(s) du plan, sans jamais couper l'image :\n— à 8,5 s, un voile marine #0F1A23 monte du bas sur le tiers inférieur, en 0,3 s, courbe d'accélération douce ;\n— à 8,8 s, le logo FoodEatUp arrive du bas, cale au centre du voile, avec un léger dépassement puis retour (overshoot 6 %) ;\n— à 9,1 s, la punchline s'écrit sous le logo, un mot après l'autre, 0,06 s par mot, en crème #FCF9E6 ;\n— à 9,6 s, la mention « à suivre » apparaît en orange #FFA500 à droite, avec une flèche qui avance de 8 px et s'arrête ;\n— rien ne disparaît avant la fin du plan.",
+        "punchline": "Quatre canaux, une seule file, dans l'ordre d'arrivée.",
+        "aSuivre": "À suivre — Le prénom du fils",
+        "voix": "Voix off française, la même que le conteur mais une note plus haute et plus proche du micro, sur les 1,5 dernière(s) seconde(s) : « Quatre canaux, une seule file, dans l'ordre d'arrivée. »"
+      }
+    },
+    "carrousel": null,
+    "imageFacebook": null,
+    "tutoriel": null
+  },
+  "EP511": {
+    "publications": {
+      "facebook": {
+        "legende": "Ce qu'il savait par cœur, quelqu'un d'autre le sait aussi maintenant.\n\nLes allergies, les habitudes, la dernière visite : la fiche client les porte. Le service ne dépend plus de qui travaille ce soir-là.\n\nCe n'est plus sa mémoire. C'est celle de la maison.\n\n« Il était une fois un restaurant » — épisode 11 sur 35. Les trente-cinq bout à bout font un film de cinq minutes cinquante.\nTout FoodEatUp : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "hashtags": [
+          "restauration",
+          "foodeatup",
+          "restaurant",
+          "courtmetrage",
+          "en-salle"
+        ],
+        "motsCles": [
+          "réservation",
+          "restauration",
+          "foodeatup",
+          "en salle"
+        ],
+        "cta": "Découvrir FoodEatUp"
+      },
+      "instagram": {
+        "legende": "Ce qu'il savait par cœur, quelqu'un d'autre le sait aussi maintenant.\n\nLes allergies, les habitudes, la dernière visite : la fiche client les porte. Le service ne dépend plus de qui travaille ce soir-là.\n\nCe n'est plus sa mémoire. C'est celle de la maison.\n\n« Il était une fois un restaurant » — épisode 11 sur 35. Les trente-cinq bout à bout font un film de cinq minutes cinquante.\nTout FoodEatUp : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "hashtags": [
+          "restauration",
+          "foodeatup",
+          "restaurant",
+          "courtmetrage",
+          "en-salle"
+        ],
+        "motsCles": [
+          "réservation",
+          "restauration",
+          "foodeatup",
+          "en salle"
+        ],
+        "cta": "Découvrir FoodEatUp"
+      },
+      "tiktok": {
+        "legende": "Ce qu'il savait par cœur, quelqu'un d'autre le sait aussi maintenant.\n\nLes allergies, les habitudes, la dernière visite : la fiche client les porte. Le service ne dépend plus de qui travaille ce soir-là.\n\nCe n'est plus sa mémoire. C'est celle de la maison.\n\n« Il était une fois un restaurant » — épisode 11 sur 35. Les trente-cinq bout à bout font un film de cinq minutes cinquante.\nTout FoodEatUp : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "hashtags": [
+          "restauration",
+          "foodeatup",
+          "restaurant",
+          "courtmetrage",
+          "en-salle"
+        ],
+        "motsCles": [
+          "réservation",
+          "restauration",
+          "foodeatup",
+          "en salle"
+        ],
+        "cta": "Découvrir FoodEatUp"
+      },
+      "linkedin": {
+        "legende": "Ce qu'il savait par cœur, quelqu'un d'autre le sait aussi maintenant.\n\nLes allergies, les habitudes, la dernière visite : la fiche client les porte. Le service ne dépend plus de qui travaille ce soir-là.\n\nCe n'est plus sa mémoire. C'est celle de la maison.\n\n« Il était une fois un restaurant » — épisode 11 sur 35. Les trente-cinq bout à bout font un film de cinq minutes cinquante.\nTout FoodEatUp : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "hashtags": [
+          "restauration",
+          "foodeatup",
+          "restaurant",
+          "courtmetrage",
+          "en-salle"
+        ],
+        "motsCles": [
+          "réservation",
+          "restauration",
+          "foodeatup",
+          "en salle"
+        ],
+        "cta": "Découvrir FoodEatUp"
+      },
+      "youtube": {
+        "legende": "Ce qu'il savait par cœur, quelqu'un d'autre le sait aussi maintenant.\n\nLes allergies, les habitudes, la dernière visite : la fiche client les porte. Le service ne dépend plus de qui travaille ce soir-là.\n\nCe n'est plus sa mémoire. C'est celle de la maison.\n\n« Il était une fois un restaurant » — épisode 11 sur 35. Les trente-cinq bout à bout font un film de cinq minutes cinquante.\nTout FoodEatUp : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "hashtags": [
+          "restauration",
+          "foodeatup",
+          "restaurant",
+          "courtmetrage",
+          "en-salle"
+        ],
+        "motsCles": [
+          "réservation",
+          "restauration",
+          "foodeatup",
+          "en salle"
+        ],
+        "cta": "Découvrir FoodEatUp",
+        "titre": "Le prénom du fils — Il était une fois un restaurant 11/35"
+      }
+    },
+    "promptVignette": "Photo réaliste, cadrage vertical 9:16, image de cinéma : optique 40 mm, faible profondeur de champ, grain argentique léger.\n\nL'acteur de l'image de référence — MÊME visage, même barbe, même carrure. Il joue ici le maître d'hôtel : chemise blanche, tablier long noir, stylo à l'oreille. Décor : une salle de restaurant dressée, le comptoir d'accueil au premier plan. Expression : sans crustacés, comme la dernière fois — il ne sourit pas pour la caméra.\n\nBANDE HAUTE — marine #0F1A23 sur le cinquième supérieur, portant UNIQUEMENT « EN SALLE » en crème #FCF9E6, typographie arrondie très grasse, centré.\n\nBANDE BASSE — crème #FCF9E6 sur le sixième inférieur, portant UNIQUEMENT « 11 / 35 » en marine #0F1A23, aligné à droite.\n\nAucun logo dessiné, aucun filigrane, aucune interface de logiciel à l'écran, aucune autre inscription.",
+    "higgsfieldPrompt": "Vertical 9:16, 10 secondes, 1080p, 24 im/s. PAS de texte incrusté, PAS de sous-titres, PAS de filigrane, PAS de logo, AUCUNE légende gravée dans l'image. Photoréaliste, image de cinéma : optique 40 mm, faible profondeur de champ, grain argentique léger, contraste tenu. Un seul plan, aucune coupe.\n\n@Image 1 ne définit que le visage de l'acteur — barbe, traits, carrure. Ne pas les modifier. Dans ce plan il joue le maître d'hôtel : chemise blanche, tablier long noir, stylo à l'oreille. C'est le même acteur dans les quatre histoires du film, et le film ne le dit jamais : ne rien ajouter qui le souligne.\n\nDécor : une salle de restaurant dressée, le comptoir d'accueil au premier plan. Étalonnage chaud et tenu, blancs propres, noirs ouverts — l'après du film. La lumière vient d'une source unique et douce.\n\n0-5s: Une table de deux, à hauteur d'assiette. Le maître d'hôtel s'approche. Caméra portée, très lent mouvement avant. Voix off française, un homme, grave et posée, le débit d'un conteur qui connaît déjà la fin, hors champ : {Ce qu'il savait par cœur, quelqu'un d'autre le sait aussi maintenant.} End state at 5s: le personnage est seul et lisible dans le cadre, rien n'a encore changé autour de lui.\n5-8s: À 5 secondes exactement, il pose l'assiette et dit un prénom qu'il n'a pas eu à demander. Un seul changement, rien d'autre ne bouge. End state at 8s: le changement est complet et pleinement lisible, le personnage y a réagi.\n8-10s: Les clients se regardent, surpris ; lui repart déjà vers la table suivante. La caméra s'immobilise. Français, voix naturelle, dite pour soi et non pour la caméra, le maître d'hôtel : {Sans crustacés, comme la dernière fois.} End state at 10s: plan figé sur son visage, caméra immobile, aucune entrée dans le cadre.\n\nSound design: <ambiance réelle du lieu, dense> <un seul bruit de matière au moment du changement>. Deux répliques, exactement aux minutages ci-dessus : le conteur au début, le personnage à la fin. Pas de musique — elle est ajoutée au montage.",
+    "scriptHeygen": null,
+    "kit": null,
+    "heygenPrompt": null,
+    "montage": {
+      "consigne": "Assembler les trente-cinq plans dans l'ordre des identifiants, sans transition entre deux plans d'une même histoire, et avec un fondu au noir de 12 images entre deux histoires. Le générique de fin des stories est RETIRÉ de la version film : il ne sert qu'aux réseaux. Musique unique sur les 350 s, montée de deux décibels à partir de l'épisode 25 et coupée net sur le dernier plan. Voix off du conteur normalisée à −16 LUFS, dialogues des personnages à −14, ambiances à −24. Sortie 1080 × 1920, H.264, 350 s.",
+      "segments": [
+        {
+          "titre": "En cuisine",
+          "debut": 0.0,
+          "fin": 60.0,
+          "contenu": "Six plans. Le chef, de sept heures du matin au bac vide du vendredi, puis la bascule."
+        },
+        {
+          "titre": "En salle",
+          "debut": 60.0,
+          "fin": 120.0,
+          "contenu": "Six plans. Le maître d'hôtel, sa mémoire, la table de douze qui n'existait pas."
+        },
+        {
+          "titre": "Au bureau",
+          "debut": 120.0,
+          "fin": 180.0,
+          "contenu": "Six plans. Le gérant, la pile de papier, le quinze du mois suivant."
+        },
+        {
+          "titre": "À la maison",
+          "debut": 180.0,
+          "fin": 240.0,
+          "contenu": "Six plans. Le client, qui ne verra jamais le logiciel."
+        },
+        {
+          "titre": "Vendredi, 20 h 15",
+          "debut": 240.0,
+          "fin": 350.0,
+          "contenu": "Onze plans. Les quatre histoires se croisent, minute par minute, jusqu'à la chute."
+        }
+      ],
+      "livrable": "Un film de 350 s en 9:16 pour la page de la série, et trente-cinq stories de 10 s — mêmes plans, générique de fin en plus — pour les quatre réseaux."
+    },
+    "metier": null,
+    "phase": null,
+    "amplitude": null,
+    "boucle": null,
+    "boucleSlug": null,
+    "grandeBoucle": null,
+    "incident": null,
+    "incidentHeure": null,
+    "incidentQuoi": null,
+    "saumon": null,
+    "voixOff": {
+      "conteur": "Ce qu'il savait par cœur, quelqu'un d'autre le sait aussi maintenant.",
+      "personnage": "Sans crustacés, comme la dernière fois.",
+      "generique": "La mémoire de la maison, pas celle du serveur.",
+      "enchaine": "Enchaîne sur « Minuit, et rien à retenir »"
+    },
+    "story": {
+      "format": "9:16 · 1080 × 1920 · 10 s",
+      "hook": "Ce qu'il savait par cœur, quelqu'un d'autre le sait aussi maintenant",
+      "punchline": "Ce n'est plus sa mémoire. C'est celle de la maison",
+      "url": null,
+      "motion": {
+        "quand": "8,5 → 10,0 s, par-dessus la fin du plan",
+        "consigne": "Générique de fin en motion design, posé sur les 1,5 dernière(s) seconde(s) du plan, sans jamais couper l'image :\n— à 8,5 s, un voile marine #0F1A23 monte du bas sur le tiers inférieur, en 0,3 s, courbe d'accélération douce ;\n— à 8,8 s, le logo FoodEatUp arrive du bas, cale au centre du voile, avec un léger dépassement puis retour (overshoot 6 %) ;\n— à 9,1 s, la punchline s'écrit sous le logo, un mot après l'autre, 0,06 s par mot, en crème #FCF9E6 ;\n— à 9,6 s, la mention « à suivre » apparaît en orange #FFA500 à droite, avec une flèche qui avance de 8 px et s'arrête ;\n— rien ne disparaît avant la fin du plan.",
+        "punchline": "La mémoire de la maison, pas celle du serveur.",
+        "aSuivre": "À suivre — Minuit, et rien à retenir",
+        "voix": "Voix off française, la même que le conteur mais une note plus haute et plus proche du micro, sur les 1,5 dernière(s) seconde(s) : « La mémoire de la maison, pas celle du serveur. »"
+      }
+    },
+    "carrousel": null,
+    "imageFacebook": null,
+    "tutoriel": null
+  },
+  "EP512": {
+    "publications": {
+      "facebook": {
+        "legende": "Il rentre chez lui les mains vides. C'est nouveau.\n\nFin de service. Ce qui s'est passé ce soir est écrit là où le prochain service le lira. Il n'emporte plus rien.\n\nCe qu'il sait est resté au restaurant.\n\n« Il était une fois un restaurant » — épisode 12 sur 35. Les trente-cinq bout à bout font un film de cinq minutes cinquante.\nTout FoodEatUp : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "hashtags": [
+          "restauration",
+          "foodeatup",
+          "restaurant",
+          "courtmetrage",
+          "en-salle"
+        ],
+        "motsCles": [
+          "réservation",
+          "restauration",
+          "foodeatup",
+          "en salle"
+        ],
+        "cta": "Découvrir FoodEatUp"
+      },
+      "instagram": {
+        "legende": "Il rentre chez lui les mains vides. C'est nouveau.\n\nFin de service. Ce qui s'est passé ce soir est écrit là où le prochain service le lira. Il n'emporte plus rien.\n\nCe qu'il sait est resté au restaurant.\n\n« Il était une fois un restaurant » — épisode 12 sur 35. Les trente-cinq bout à bout font un film de cinq minutes cinquante.\nTout FoodEatUp : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "hashtags": [
+          "restauration",
+          "foodeatup",
+          "restaurant",
+          "courtmetrage",
+          "en-salle"
+        ],
+        "motsCles": [
+          "réservation",
+          "restauration",
+          "foodeatup",
+          "en salle"
+        ],
+        "cta": "Découvrir FoodEatUp"
+      },
+      "tiktok": {
+        "legende": "Il rentre chez lui les mains vides. C'est nouveau.\n\nFin de service. Ce qui s'est passé ce soir est écrit là où le prochain service le lira. Il n'emporte plus rien.\n\nCe qu'il sait est resté au restaurant.\n\n« Il était une fois un restaurant » — épisode 12 sur 35. Les trente-cinq bout à bout font un film de cinq minutes cinquante.\nTout FoodEatUp : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "hashtags": [
+          "restauration",
+          "foodeatup",
+          "restaurant",
+          "courtmetrage",
+          "en-salle"
+        ],
+        "motsCles": [
+          "réservation",
+          "restauration",
+          "foodeatup",
+          "en salle"
+        ],
+        "cta": "Découvrir FoodEatUp"
+      },
+      "linkedin": {
+        "legende": "Il rentre chez lui les mains vides. C'est nouveau.\n\nFin de service. Ce qui s'est passé ce soir est écrit là où le prochain service le lira. Il n'emporte plus rien.\n\nCe qu'il sait est resté au restaurant.\n\n« Il était une fois un restaurant » — épisode 12 sur 35. Les trente-cinq bout à bout font un film de cinq minutes cinquante.\nTout FoodEatUp : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "hashtags": [
+          "restauration",
+          "foodeatup",
+          "restaurant",
+          "courtmetrage",
+          "en-salle"
+        ],
+        "motsCles": [
+          "réservation",
+          "restauration",
+          "foodeatup",
+          "en salle"
+        ],
+        "cta": "Découvrir FoodEatUp"
+      },
+      "youtube": {
+        "legende": "Il rentre chez lui les mains vides. C'est nouveau.\n\nFin de service. Ce qui s'est passé ce soir est écrit là où le prochain service le lira. Il n'emporte plus rien.\n\nCe qu'il sait est resté au restaurant.\n\n« Il était une fois un restaurant » — épisode 12 sur 35. Les trente-cinq bout à bout font un film de cinq minutes cinquante.\nTout FoodEatUp : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "hashtags": [
+          "restauration",
+          "foodeatup",
+          "restaurant",
+          "courtmetrage",
+          "en-salle"
+        ],
+        "motsCles": [
+          "réservation",
+          "restauration",
+          "foodeatup",
+          "en salle"
+        ],
+        "cta": "Découvrir FoodEatUp",
+        "titre": "Minuit, et rien à retenir — Il était une fois un restaurant 12/35"
+      }
+    },
+    "promptVignette": "Photo réaliste, cadrage vertical 9:16, image de cinéma : optique 40 mm, faible profondeur de champ, grain argentique léger.\n\nL'acteur de l'image de référence — MÊME visage, même barbe, même carrure. Il joue ici le maître d'hôtel : chemise blanche, tablier long noir, stylo à l'oreille. Décor : une salle de restaurant dressée, le comptoir d'accueil au premier plan. Expression : à demain — il ne sourit pas pour la caméra.\n\nBANDE HAUTE — marine #0F1A23 sur le cinquième supérieur, portant UNIQUEMENT « EN SALLE » en crème #FCF9E6, typographie arrondie très grasse, centré.\n\nBANDE BASSE — crème #FCF9E6 sur le sixième inférieur, portant UNIQUEMENT « 12 / 35 » en marine #0F1A23, aligné à droite.\n\nAucun logo dessiné, aucun filigrane, aucune interface de logiciel à l'écran, aucune autre inscription.",
+    "higgsfieldPrompt": "Vertical 9:16, 10 secondes, 1080p, 24 im/s. PAS de texte incrusté, PAS de sous-titres, PAS de filigrane, PAS de logo, AUCUNE légende gravée dans l'image. Photoréaliste, image de cinéma : optique 40 mm, faible profondeur de champ, grain argentique léger, contraste tenu. Un seul plan, aucune coupe.\n\n@Image 1 ne définit que le visage de l'acteur — barbe, traits, carrure. Ne pas les modifier. Dans ce plan il joue le maître d'hôtel : chemise blanche, tablier long noir, stylo à l'oreille. C'est le même acteur dans les quatre histoires du film, et le film ne le dit jamais : ne rien ajouter qui le souligne.\n\nDécor : une salle de restaurant dressée, le comptoir d'accueil au premier plan. Étalonnage chaud et tenu, blancs propres, noirs ouverts — l'après du film. La lumière vient d'une source unique et douce.\n\n0-5s: La salle vide après le service, chaises retournées sur les tables. Caméra portée, très lent mouvement avant. Voix off française, un homme, grave et posée, le débit d'un conteur qui connaît déjà la fin, hors champ : {Il rentre chez lui les mains vides. C'est nouveau.} End state at 5s: le personnage est seul et lisible dans le cadre, rien n'a encore changé autour de lui.\n5-8s: À 5 secondes exactement, il éteint la rangée de lumières du fond et la salle se réduit à un couloir. Un seul changement, rien d'autre ne bouge. End state at 8s: le changement est complet et pleinement lisible, le personnage y a réagi.\n8-10s: Il enfile sa veste sans se retourner et pousse la porte. La caméra s'immobilise. Français, voix naturelle, dite pour soi et non pour la caméra, le maître d'hôtel : {À demain.} End state at 10s: plan figé sur son visage, caméra immobile, aucune entrée dans le cadre.\n\nSound design: <ambiance réelle du lieu, dense> <un seul bruit de matière au moment du changement>. Deux répliques, exactement aux minutages ci-dessus : le conteur au début, le personnage à la fin. Pas de musique — elle est ajoutée au montage.",
+    "scriptHeygen": null,
+    "kit": null,
+    "heygenPrompt": null,
+    "montage": {
+      "consigne": "Assembler les trente-cinq plans dans l'ordre des identifiants, sans transition entre deux plans d'une même histoire, et avec un fondu au noir de 12 images entre deux histoires. Le générique de fin des stories est RETIRÉ de la version film : il ne sert qu'aux réseaux. Musique unique sur les 350 s, montée de deux décibels à partir de l'épisode 25 et coupée net sur le dernier plan. Voix off du conteur normalisée à −16 LUFS, dialogues des personnages à −14, ambiances à −24. Sortie 1080 × 1920, H.264, 350 s.",
+      "segments": [
+        {
+          "titre": "En cuisine",
+          "debut": 0.0,
+          "fin": 60.0,
+          "contenu": "Six plans. Le chef, de sept heures du matin au bac vide du vendredi, puis la bascule."
+        },
+        {
+          "titre": "En salle",
+          "debut": 60.0,
+          "fin": 120.0,
+          "contenu": "Six plans. Le maître d'hôtel, sa mémoire, la table de douze qui n'existait pas."
+        },
+        {
+          "titre": "Au bureau",
+          "debut": 120.0,
+          "fin": 180.0,
+          "contenu": "Six plans. Le gérant, la pile de papier, le quinze du mois suivant."
+        },
+        {
+          "titre": "À la maison",
+          "debut": 180.0,
+          "fin": 240.0,
+          "contenu": "Six plans. Le client, qui ne verra jamais le logiciel."
+        },
+        {
+          "titre": "Vendredi, 20 h 15",
+          "debut": 240.0,
+          "fin": 350.0,
+          "contenu": "Onze plans. Les quatre histoires se croisent, minute par minute, jusqu'à la chute."
+        }
+      ],
+      "livrable": "Un film de 350 s en 9:16 pour la page de la série, et trente-cinq stories de 10 s — mêmes plans, générique de fin en plus — pour les quatre réseaux."
+    },
+    "metier": null,
+    "phase": null,
+    "amplitude": null,
+    "boucle": null,
+    "boucleSlug": null,
+    "grandeBoucle": null,
+    "incident": null,
+    "incidentHeure": null,
+    "incidentQuoi": null,
+    "saumon": null,
+    "voixOff": {
+      "conteur": "Il rentre chez lui les mains vides. C'est nouveau.",
+      "personnage": "À demain.",
+      "generique": "Rentrez chez vous sans le restaurant dans la tête.",
+      "enchaine": "Enchaîne sur « Le bureau au-dessus de la salle »"
+    },
+    "story": {
+      "format": "9:16 · 1080 × 1920 · 10 s",
+      "hook": "Il rentre chez lui les mains vides. C'est nouveau",
+      "punchline": "Ce qu'il sait est resté au restaurant",
+      "url": null,
+      "motion": {
+        "quand": "8,5 → 10,0 s, par-dessus la fin du plan",
+        "consigne": "Générique de fin en motion design, posé sur les 1,5 dernière(s) seconde(s) du plan, sans jamais couper l'image :\n— à 8,5 s, un voile marine #0F1A23 monte du bas sur le tiers inférieur, en 0,3 s, courbe d'accélération douce ;\n— à 8,8 s, le logo FoodEatUp arrive du bas, cale au centre du voile, avec un léger dépassement puis retour (overshoot 6 %) ;\n— à 9,1 s, la punchline s'écrit sous le logo, un mot après l'autre, 0,06 s par mot, en crème #FCF9E6 ;\n— à 9,6 s, la mention « à suivre » apparaît en orange #FFA500 à droite, avec une flèche qui avance de 8 px et s'arrête ;\n— rien ne disparaît avant la fin du plan.",
+        "punchline": "Rentrez chez vous sans le restaurant dans la tête.",
+        "aSuivre": "À suivre — Le bureau au-dessus de la salle",
+        "voix": "Voix off française, la même que le conteur mais une note plus haute et plus proche du micro, sur les 1,5 dernière(s) seconde(s) : « Rentrez chez vous sans le restaurant dans la tête. »"
+      }
+    },
+    "carrousel": null,
+    "imageFacebook": null,
+    "tutoriel": null
+  },
+  "EP513": {
+    "publications": {
+      "facebook": {
+        "legende": "Il était une fois un homme qui comptait au-dessus du bruit.\n\nUn bureau minuscule au premier étage. Sous le plancher, cent couverts. Au-dessus, un homme qui essaie de savoir si la soirée est rentable.\n\nSous le plancher, le service. Au-dessus, les chiffres.\n\n« Il était une fois un restaurant » — épisode 13 sur 35. Les trente-cinq bout à bout font un film de cinq minutes cinquante.\nTout FoodEatUp : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "hashtags": [
+          "restauration",
+          "foodeatup",
+          "restaurant",
+          "courtmetrage",
+          "au-bureau"
+        ],
+        "motsCles": [
+          "comptabilité",
+          "restauration",
+          "foodeatup",
+          "au bureau"
+        ],
+        "cta": "Découvrir FoodEatUp"
+      },
+      "instagram": {
+        "legende": "Il était une fois un homme qui comptait au-dessus du bruit.\n\nUn bureau minuscule au premier étage. Sous le plancher, cent couverts. Au-dessus, un homme qui essaie de savoir si la soirée est rentable.\n\nSous le plancher, le service. Au-dessus, les chiffres.\n\n« Il était une fois un restaurant » — épisode 13 sur 35. Les trente-cinq bout à bout font un film de cinq minutes cinquante.\nTout FoodEatUp : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "hashtags": [
+          "restauration",
+          "foodeatup",
+          "restaurant",
+          "courtmetrage",
+          "au-bureau"
+        ],
+        "motsCles": [
+          "comptabilité",
+          "restauration",
+          "foodeatup",
+          "au bureau"
+        ],
+        "cta": "Découvrir FoodEatUp"
+      },
+      "tiktok": {
+        "legende": "Il était une fois un homme qui comptait au-dessus du bruit.\n\nUn bureau minuscule au premier étage. Sous le plancher, cent couverts. Au-dessus, un homme qui essaie de savoir si la soirée est rentable.\n\nSous le plancher, le service. Au-dessus, les chiffres.\n\n« Il était une fois un restaurant » — épisode 13 sur 35. Les trente-cinq bout à bout font un film de cinq minutes cinquante.\nTout FoodEatUp : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "hashtags": [
+          "restauration",
+          "foodeatup",
+          "restaurant",
+          "courtmetrage",
+          "au-bureau"
+        ],
+        "motsCles": [
+          "comptabilité",
+          "restauration",
+          "foodeatup",
+          "au bureau"
+        ],
+        "cta": "Découvrir FoodEatUp"
+      },
+      "linkedin": {
+        "legende": "Il était une fois un homme qui comptait au-dessus du bruit.\n\nUn bureau minuscule au premier étage. Sous le plancher, cent couverts. Au-dessus, un homme qui essaie de savoir si la soirée est rentable.\n\nSous le plancher, le service. Au-dessus, les chiffres.\n\n« Il était une fois un restaurant » — épisode 13 sur 35. Les trente-cinq bout à bout font un film de cinq minutes cinquante.\nTout FoodEatUp : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "hashtags": [
+          "restauration",
+          "foodeatup",
+          "restaurant",
+          "courtmetrage",
+          "au-bureau"
+        ],
+        "motsCles": [
+          "comptabilité",
+          "restauration",
+          "foodeatup",
+          "au bureau"
+        ],
+        "cta": "Découvrir FoodEatUp"
+      },
+      "youtube": {
+        "legende": "Il était une fois un homme qui comptait au-dessus du bruit.\n\nUn bureau minuscule au premier étage. Sous le plancher, cent couverts. Au-dessus, un homme qui essaie de savoir si la soirée est rentable.\n\nSous le plancher, le service. Au-dessus, les chiffres.\n\n« Il était une fois un restaurant » — épisode 13 sur 35. Les trente-cinq bout à bout font un film de cinq minutes cinquante.\nTout FoodEatUp : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "hashtags": [
+          "restauration",
+          "foodeatup",
+          "restaurant",
+          "courtmetrage",
+          "au-bureau"
+        ],
+        "motsCles": [
+          "comptabilité",
+          "restauration",
+          "foodeatup",
+          "au bureau"
+        ],
+        "cta": "Découvrir FoodEatUp",
+        "titre": "Le bureau au-dessus de la salle — Il était une fois un restaurant 13/35"
+      }
+    },
+    "promptVignette": "Photo réaliste, cadrage vertical 9:16, image de cinéma : optique 40 mm, faible profondeur de champ, grain argentique léger.\n\nL'acteur de l'image de référence — MÊME visage, même barbe, même carrure. Il joue ici le gérant : chemise ouverte, manches remontées, lunettes remontées sur le front. Décor : un petit bureau à l'étage du restaurant, classeurs et tickets de caisse. Expression : cent quatre couverts. et alors ? — il ne sourit pas pour la caméra.\n\nBANDE HAUTE — marine #0F1A23 sur le cinquième supérieur, portant UNIQUEMENT « AU BUREAU » en crème #FCF9E6, typographie arrondie très grasse, centré.\n\nBANDE BASSE — crème #FCF9E6 sur le sixième inférieur, portant UNIQUEMENT « 13 / 35 » en marine #0F1A23, aligné à droite.\n\nAucun logo dessiné, aucun filigrane, aucune interface de logiciel à l'écran, aucune autre inscription.",
+    "higgsfieldPrompt": "Vertical 9:16, 10 secondes, 1080p, 24 im/s. PAS de texte incrusté, PAS de sous-titres, PAS de filigrane, PAS de logo, AUCUNE légende gravée dans l'image. Photoréaliste, image de cinéma : optique 40 mm, faible profondeur de champ, grain argentique léger, contraste tenu. Un seul plan, aucune coupe.\n\n@Image 1 ne définit que le visage de l'acteur — barbe, traits, carrure. Ne pas les modifier. Dans ce plan il joue le gérant : chemise ouverte, manches remontées, lunettes remontées sur le front. C'est le même acteur dans les quatre histoires du film, et le film ne le dit jamais : ne rien ajouter qui le souligne.\n\nDécor : un petit bureau à l'étage du restaurant, classeurs et tickets de caisse. Étalonnage froid et désaturé, verts tirés, hautes lumières écrêtées — l'avant du film. Les ombres mangent les bords du cadre.\n\n0-5s: Un bureau étroit à l'étage, une lampe, des classeurs, le bruit du service en dessous. Caméra portée, très lent mouvement avant. Voix off française, un homme, grave et posée, le débit d'un conteur qui connaît déjà la fin, hors champ : {Il était une fois un homme qui comptait au-dessus du bruit.} End state at 5s: le personnage est seul et lisible dans le cadre, rien n'a encore changé autour de lui.\n5-8s: À 5 secondes exactement, le bruit d'un plateau qui tombe monte du plancher, il lève les yeux au plafond. Un seul changement, rien d'autre ne bouge. End state at 8s: le changement est complet et pleinement lisible, le personnage y a réagi.\n8-10s: Il baisse les yeux vers la pile de tickets et n'en prend aucun. La caméra s'immobilise. Français, voix naturelle, dite pour soi et non pour la caméra, le gérant : {Cent quatre couverts. Et alors ?} End state at 10s: plan figé sur son visage, caméra immobile, aucune entrée dans le cadre.\n\nSound design: <ambiance réelle du lieu, dense> <un seul bruit de matière au moment du changement>. Deux répliques, exactement aux minutages ci-dessus : le conteur au début, le personnage à la fin. Pas de musique — elle est ajoutée au montage.",
+    "scriptHeygen": null,
+    "kit": null,
+    "heygenPrompt": null,
+    "montage": {
+      "consigne": "Assembler les trente-cinq plans dans l'ordre des identifiants, sans transition entre deux plans d'une même histoire, et avec un fondu au noir de 12 images entre deux histoires. Le générique de fin des stories est RETIRÉ de la version film : il ne sert qu'aux réseaux. Musique unique sur les 350 s, montée de deux décibels à partir de l'épisode 25 et coupée net sur le dernier plan. Voix off du conteur normalisée à −16 LUFS, dialogues des personnages à −14, ambiances à −24. Sortie 1080 × 1920, H.264, 350 s.",
+      "segments": [
+        {
+          "titre": "En cuisine",
+          "debut": 0.0,
+          "fin": 60.0,
+          "contenu": "Six plans. Le chef, de sept heures du matin au bac vide du vendredi, puis la bascule."
+        },
+        {
+          "titre": "En salle",
+          "debut": 60.0,
+          "fin": 120.0,
+          "contenu": "Six plans. Le maître d'hôtel, sa mémoire, la table de douze qui n'existait pas."
+        },
+        {
+          "titre": "Au bureau",
+          "debut": 120.0,
+          "fin": 180.0,
+          "contenu": "Six plans. Le gérant, la pile de papier, le quinze du mois suivant."
+        },
+        {
+          "titre": "À la maison",
+          "debut": 180.0,
+          "fin": 240.0,
+          "contenu": "Six plans. Le client, qui ne verra jamais le logiciel."
+        },
+        {
+          "titre": "Vendredi, 20 h 15",
+          "debut": 240.0,
+          "fin": 350.0,
+          "contenu": "Onze plans. Les quatre histoires se croisent, minute par minute, jusqu'à la chute."
+        }
+      ],
+      "livrable": "Un film de 350 s en 9:16 pour la page de la série, et trente-cinq stories de 10 s — mêmes plans, générique de fin en plus — pour les quatre réseaux."
+    },
+    "metier": null,
+    "phase": null,
+    "amplitude": null,
+    "boucle": null,
+    "boucleSlug": null,
+    "grandeBoucle": null,
+    "incident": null,
+    "incidentHeure": null,
+    "incidentQuoi": null,
+    "saumon": null,
+    "voixOff": {
+      "conteur": "Il était une fois un homme qui comptait au-dessus du bruit.",
+      "personnage": "Cent quatre couverts. Et alors ?",
+      "generique": "Compter après coup, c'est constater.",
+      "enchaine": "Enchaîne sur « La pile qui grandit toute seule »"
+    },
+    "story": {
+      "format": "9:16 · 1080 × 1920 · 10 s",
+      "hook": "Il était une fois un homme qui comptait au-dessus du bruit",
+      "punchline": "Sous le plancher, le service. Au-dessus, les chiffres",
+      "url": null,
+      "motion": {
+        "quand": "8,5 → 10,0 s, par-dessus la fin du plan",
+        "consigne": "Générique de fin en motion design, posé sur les 1,5 dernière(s) seconde(s) du plan, sans jamais couper l'image :\n— à 8,5 s, un voile marine #0F1A23 monte du bas sur le tiers inférieur, en 0,3 s, courbe d'accélération douce ;\n— à 8,8 s, le logo FoodEatUp arrive du bas, cale au centre du voile, avec un léger dépassement puis retour (overshoot 6 %) ;\n— à 9,1 s, la punchline s'écrit sous le logo, un mot après l'autre, 0,06 s par mot, en crème #FCF9E6 ;\n— à 9,6 s, la mention « à suivre » apparaît en orange #FFA500 à droite, avec une flèche qui avance de 8 px et s'arrête ;\n— rien ne disparaît avant la fin du plan.",
+        "punchline": "Compter après coup, c'est constater.",
+        "aSuivre": "À suivre — La pile qui grandit toute seule",
+        "voix": "Voix off française, la même que le conteur mais une note plus haute et plus proche du micro, sur les 1,5 dernière(s) seconde(s) : « Compter après coup, c'est constater. »"
+      }
+    },
+    "carrousel": null,
+    "imageFacebook": null,
+    "tutoriel": null
+  },
+  "EP514": {
+    "publications": {
+      "facebook": {
+        "legende": "Les factures arrivaient plus vite qu'il ne les ouvrait.\n\nBons de livraison, factures fournisseurs, tickets de caisse. Tout arrive en papier, tout se ressaisit à la main, et rien ne se recoupe.\n\nC'est bien la seule chose ici qui pousse sans qu'on l'arrose.\n\n« Il était une fois un restaurant » — épisode 14 sur 35. Les trente-cinq bout à bout font un film de cinq minutes cinquante.\nTout FoodEatUp : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "hashtags": [
+          "restauration",
+          "foodeatup",
+          "restaurant",
+          "courtmetrage",
+          "au-bureau"
+        ],
+        "motsCles": [
+          "comptabilité",
+          "restauration",
+          "foodeatup",
+          "au bureau"
+        ],
+        "cta": "Découvrir FoodEatUp"
+      },
+      "instagram": {
+        "legende": "Les factures arrivaient plus vite qu'il ne les ouvrait.\n\nBons de livraison, factures fournisseurs, tickets de caisse. Tout arrive en papier, tout se ressaisit à la main, et rien ne se recoupe.\n\nC'est bien la seule chose ici qui pousse sans qu'on l'arrose.\n\n« Il était une fois un restaurant » — épisode 14 sur 35. Les trente-cinq bout à bout font un film de cinq minutes cinquante.\nTout FoodEatUp : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "hashtags": [
+          "restauration",
+          "foodeatup",
+          "restaurant",
+          "courtmetrage",
+          "au-bureau"
+        ],
+        "motsCles": [
+          "comptabilité",
+          "restauration",
+          "foodeatup",
+          "au bureau"
+        ],
+        "cta": "Découvrir FoodEatUp"
+      },
+      "tiktok": {
+        "legende": "Les factures arrivaient plus vite qu'il ne les ouvrait.\n\nBons de livraison, factures fournisseurs, tickets de caisse. Tout arrive en papier, tout se ressaisit à la main, et rien ne se recoupe.\n\nC'est bien la seule chose ici qui pousse sans qu'on l'arrose.\n\n« Il était une fois un restaurant » — épisode 14 sur 35. Les trente-cinq bout à bout font un film de cinq minutes cinquante.\nTout FoodEatUp : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "hashtags": [
+          "restauration",
+          "foodeatup",
+          "restaurant",
+          "courtmetrage",
+          "au-bureau"
+        ],
+        "motsCles": [
+          "comptabilité",
+          "restauration",
+          "foodeatup",
+          "au bureau"
+        ],
+        "cta": "Découvrir FoodEatUp"
+      },
+      "linkedin": {
+        "legende": "Les factures arrivaient plus vite qu'il ne les ouvrait.\n\nBons de livraison, factures fournisseurs, tickets de caisse. Tout arrive en papier, tout se ressaisit à la main, et rien ne se recoupe.\n\nC'est bien la seule chose ici qui pousse sans qu'on l'arrose.\n\n« Il était une fois un restaurant » — épisode 14 sur 35. Les trente-cinq bout à bout font un film de cinq minutes cinquante.\nTout FoodEatUp : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "hashtags": [
+          "restauration",
+          "foodeatup",
+          "restaurant",
+          "courtmetrage",
+          "au-bureau"
+        ],
+        "motsCles": [
+          "comptabilité",
+          "restauration",
+          "foodeatup",
+          "au bureau"
+        ],
+        "cta": "Découvrir FoodEatUp"
+      },
+      "youtube": {
+        "legende": "Les factures arrivaient plus vite qu'il ne les ouvrait.\n\nBons de livraison, factures fournisseurs, tickets de caisse. Tout arrive en papier, tout se ressaisit à la main, et rien ne se recoupe.\n\nC'est bien la seule chose ici qui pousse sans qu'on l'arrose.\n\n« Il était une fois un restaurant » — épisode 14 sur 35. Les trente-cinq bout à bout font un film de cinq minutes cinquante.\nTout FoodEatUp : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "hashtags": [
+          "restauration",
+          "foodeatup",
+          "restaurant",
+          "courtmetrage",
+          "au-bureau"
+        ],
+        "motsCles": [
+          "comptabilité",
+          "restauration",
+          "foodeatup",
+          "au bureau"
+        ],
+        "cta": "Découvrir FoodEatUp",
+        "titre": "La pile qui grandit toute seule — Il était une fois un restaurant 14/35"
+      }
+    },
+    "promptVignette": "Photo réaliste, cadrage vertical 9:16, image de cinéma : optique 40 mm, faible profondeur de champ, grain argentique léger.\n\nL'acteur de l'image de référence — MÊME visage, même barbe, même carrure. Il joue ici le gérant : chemise ouverte, manches remontées, lunettes remontées sur le front. Décor : un petit bureau à l'étage du restaurant, classeurs et tickets de caisse. Expression : je fais ça dimanche — il ne sourit pas pour la caméra.\n\nBANDE HAUTE — marine #0F1A23 sur le cinquième supérieur, portant UNIQUEMENT « AU BUREAU » en crème #FCF9E6, typographie arrondie très grasse, centré.\n\nBANDE BASSE — crème #FCF9E6 sur le sixième inférieur, portant UNIQUEMENT « 14 / 35 » en marine #0F1A23, aligné à droite.\n\nAucun logo dessiné, aucun filigrane, aucune interface de logiciel à l'écran, aucune autre inscription.",
+    "higgsfieldPrompt": "Vertical 9:16, 10 secondes, 1080p, 24 im/s. PAS de texte incrusté, PAS de sous-titres, PAS de filigrane, PAS de logo, AUCUNE légende gravée dans l'image. Photoréaliste, image de cinéma : optique 40 mm, faible profondeur de champ, grain argentique léger, contraste tenu. Un seul plan, aucune coupe.\n\n@Image 1 ne définit que le visage de l'acteur — barbe, traits, carrure. Ne pas les modifier. Dans ce plan il joue le gérant : chemise ouverte, manches remontées, lunettes remontées sur le front. C'est le même acteur dans les quatre histoires du film, et le film ne le dit jamais : ne rien ajouter qui le souligne.\n\nDécor : un petit bureau à l'étage du restaurant, classeurs et tickets de caisse. Étalonnage froid et désaturé, verts tirés, hautes lumières écrêtées — l'avant du film. Les ombres mangent les bords du cadre.\n\n0-5s: Le bureau de nuit, une pile de papiers plus haute que la lampe. Caméra portée, très lent mouvement avant. Voix off française, un homme, grave et posée, le débit d'un conteur qui connaît déjà la fin, hors champ : {Les factures arrivaient plus vite qu'il ne les ouvrait.} End state at 5s: le personnage est seul et lisible dans le cadre, rien n'a encore changé autour de lui.\n5-8s: À 5 secondes exactement, il pose une facture de plus au sommet et la pile penche sans tomber. Un seul changement, rien d'autre ne bouge. End state at 8s: le changement est complet et pleinement lisible, le personnage y a réagi.\n8-10s: Il retire ses lunettes et se frotte les yeux, la pile toujours là. La caméra s'immobilise. Français, voix naturelle, dite pour soi et non pour la caméra, le gérant : {Je fais ça dimanche.} End state at 10s: plan figé sur son visage, caméra immobile, aucune entrée dans le cadre.\n\nSound design: <ambiance réelle du lieu, dense> <un seul bruit de matière au moment du changement>. Deux répliques, exactement aux minutages ci-dessus : le conteur au début, le personnage à la fin. Pas de musique — elle est ajoutée au montage.",
+    "scriptHeygen": null,
+    "kit": null,
+    "heygenPrompt": null,
+    "montage": {
+      "consigne": "Assembler les trente-cinq plans dans l'ordre des identifiants, sans transition entre deux plans d'une même histoire, et avec un fondu au noir de 12 images entre deux histoires. Le générique de fin des stories est RETIRÉ de la version film : il ne sert qu'aux réseaux. Musique unique sur les 350 s, montée de deux décibels à partir de l'épisode 25 et coupée net sur le dernier plan. Voix off du conteur normalisée à −16 LUFS, dialogues des personnages à −14, ambiances à −24. Sortie 1080 × 1920, H.264, 350 s.",
+      "segments": [
+        {
+          "titre": "En cuisine",
+          "debut": 0.0,
+          "fin": 60.0,
+          "contenu": "Six plans. Le chef, de sept heures du matin au bac vide du vendredi, puis la bascule."
+        },
+        {
+          "titre": "En salle",
+          "debut": 60.0,
+          "fin": 120.0,
+          "contenu": "Six plans. Le maître d'hôtel, sa mémoire, la table de douze qui n'existait pas."
+        },
+        {
+          "titre": "Au bureau",
+          "debut": 120.0,
+          "fin": 180.0,
+          "contenu": "Six plans. Le gérant, la pile de papier, le quinze du mois suivant."
+        },
+        {
+          "titre": "À la maison",
+          "debut": 180.0,
+          "fin": 240.0,
+          "contenu": "Six plans. Le client, qui ne verra jamais le logiciel."
+        },
+        {
+          "titre": "Vendredi, 20 h 15",
+          "debut": 240.0,
+          "fin": 350.0,
+          "contenu": "Onze plans. Les quatre histoires se croisent, minute par minute, jusqu'à la chute."
+        }
+      ],
+      "livrable": "Un film de 350 s en 9:16 pour la page de la série, et trente-cinq stories de 10 s — mêmes plans, générique de fin en plus — pour les quatre réseaux."
+    },
+    "metier": null,
+    "phase": null,
+    "amplitude": null,
+    "boucle": null,
+    "boucleSlug": null,
+    "grandeBoucle": null,
+    "incident": null,
+    "incidentHeure": null,
+    "incidentQuoi": null,
+    "saumon": null,
+    "voixOff": {
+      "conteur": "Les factures arrivaient plus vite qu'il ne les ouvrait.",
+      "personnage": "Je fais ça dimanche.",
+      "generique": "Ce qui se ressaisit à la main se paie deux fois.",
+      "enchaine": "Enchaîne sur « Le quinze du mois suivant »"
+    },
+    "story": {
+      "format": "9:16 · 1080 × 1920 · 10 s",
+      "hook": "Les factures arrivaient plus vite qu'il ne les ouvrait",
+      "punchline": "C'est bien la seule chose ici qui pousse sans qu'on l'arrose",
+      "url": null,
+      "motion": {
+        "quand": "8,5 → 10,0 s, par-dessus la fin du plan",
+        "consigne": "Générique de fin en motion design, posé sur les 1,5 dernière(s) seconde(s) du plan, sans jamais couper l'image :\n— à 8,5 s, un voile marine #0F1A23 monte du bas sur le tiers inférieur, en 0,3 s, courbe d'accélération douce ;\n— à 8,8 s, le logo FoodEatUp arrive du bas, cale au centre du voile, avec un léger dépassement puis retour (overshoot 6 %) ;\n— à 9,1 s, la punchline s'écrit sous le logo, un mot après l'autre, 0,06 s par mot, en crème #FCF9E6 ;\n— à 9,6 s, la mention « à suivre » apparaît en orange #FFA500 à droite, avec une flèche qui avance de 8 px et s'arrête ;\n— rien ne disparaît avant la fin du plan.",
+        "punchline": "Ce qui se ressaisit à la main se paie deux fois.",
+        "aSuivre": "À suivre — Le quinze du mois suivant",
+        "voix": "Voix off française, la même que le conteur mais une note plus haute et plus proche du micro, sur les 1,5 dernière(s) seconde(s) : « Ce qui se ressaisit à la main se paie deux fois. »"
+      }
+    },
+    "carrousel": null,
+    "imageFacebook": null,
+    "tutoriel": null
+  },
+  "EP515": {
+    "publications": {
+      "facebook": {
+        "legende": "Puis vint le jour où il apprit que le mois d'avant avait été mauvais.\n\nLe bilan du mois arrive le 15 du mois suivant. Quand il découvre le problème, il a déjà quinze jours du mois d'après derrière lui.\n\nUn mois trop tard pour y changer quoi que ce soit.\n\n« Il était une fois un restaurant » — épisode 15 sur 35. Les trente-cinq bout à bout font un film de cinq minutes cinquante.\nTout FoodEatUp : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "hashtags": [
+          "restauration",
+          "foodeatup",
+          "restaurant",
+          "courtmetrage",
+          "au-bureau"
+        ],
+        "motsCles": [
+          "comptabilité",
+          "restauration",
+          "foodeatup",
+          "au bureau"
+        ],
+        "cta": "Découvrir FoodEatUp"
+      },
+      "instagram": {
+        "legende": "Puis vint le jour où il apprit que le mois d'avant avait été mauvais.\n\nLe bilan du mois arrive le 15 du mois suivant. Quand il découvre le problème, il a déjà quinze jours du mois d'après derrière lui.\n\nUn mois trop tard pour y changer quoi que ce soit.\n\n« Il était une fois un restaurant » — épisode 15 sur 35. Les trente-cinq bout à bout font un film de cinq minutes cinquante.\nTout FoodEatUp : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "hashtags": [
+          "restauration",
+          "foodeatup",
+          "restaurant",
+          "courtmetrage",
+          "au-bureau"
+        ],
+        "motsCles": [
+          "comptabilité",
+          "restauration",
+          "foodeatup",
+          "au bureau"
+        ],
+        "cta": "Découvrir FoodEatUp"
+      },
+      "tiktok": {
+        "legende": "Puis vint le jour où il apprit que le mois d'avant avait été mauvais.\n\nLe bilan du mois arrive le 15 du mois suivant. Quand il découvre le problème, il a déjà quinze jours du mois d'après derrière lui.\n\nUn mois trop tard pour y changer quoi que ce soit.\n\n« Il était une fois un restaurant » — épisode 15 sur 35. Les trente-cinq bout à bout font un film de cinq minutes cinquante.\nTout FoodEatUp : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "hashtags": [
+          "restauration",
+          "foodeatup",
+          "restaurant",
+          "courtmetrage",
+          "au-bureau"
+        ],
+        "motsCles": [
+          "comptabilité",
+          "restauration",
+          "foodeatup",
+          "au bureau"
+        ],
+        "cta": "Découvrir FoodEatUp"
+      },
+      "linkedin": {
+        "legende": "Puis vint le jour où il apprit que le mois d'avant avait été mauvais.\n\nLe bilan du mois arrive le 15 du mois suivant. Quand il découvre le problème, il a déjà quinze jours du mois d'après derrière lui.\n\nUn mois trop tard pour y changer quoi que ce soit.\n\n« Il était une fois un restaurant » — épisode 15 sur 35. Les trente-cinq bout à bout font un film de cinq minutes cinquante.\nTout FoodEatUp : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "hashtags": [
+          "restauration",
+          "foodeatup",
+          "restaurant",
+          "courtmetrage",
+          "au-bureau"
+        ],
+        "motsCles": [
+          "comptabilité",
+          "restauration",
+          "foodeatup",
+          "au bureau"
+        ],
+        "cta": "Découvrir FoodEatUp"
+      },
+      "youtube": {
+        "legende": "Puis vint le jour où il apprit que le mois d'avant avait été mauvais.\n\nLe bilan du mois arrive le 15 du mois suivant. Quand il découvre le problème, il a déjà quinze jours du mois d'après derrière lui.\n\nUn mois trop tard pour y changer quoi que ce soit.\n\n« Il était une fois un restaurant » — épisode 15 sur 35. Les trente-cinq bout à bout font un film de cinq minutes cinquante.\nTout FoodEatUp : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "hashtags": [
+          "restauration",
+          "foodeatup",
+          "restaurant",
+          "courtmetrage",
+          "au-bureau"
+        ],
+        "motsCles": [
+          "comptabilité",
+          "restauration",
+          "foodeatup",
+          "au bureau"
+        ],
+        "cta": "Découvrir FoodEatUp",
+        "titre": "Le quinze du mois suivant — Il était une fois un restaurant 15/35"
+      }
+    },
+    "promptVignette": "Photo réaliste, cadrage vertical 9:16, image de cinéma : optique 40 mm, faible profondeur de champ, grain argentique léger.\n\nL'acteur de l'image de référence — MÊME visage, même barbe, même carrure. Il joue ici le gérant : chemise ouverte, manches remontées, lunettes remontées sur le front. Décor : un petit bureau à l'étage du restaurant, classeurs et tickets de caisse. Expression : février. on est le quinze mars — il ne sourit pas pour la caméra.\n\nBANDE HAUTE — marine #0F1A23 sur le cinquième supérieur, portant UNIQUEMENT « AU BUREAU » en crème #FCF9E6, typographie arrondie très grasse, centré.\n\nBANDE BASSE — crème #FCF9E6 sur le sixième inférieur, portant UNIQUEMENT « 15 / 35 » en marine #0F1A23, aligné à droite.\n\nAucun logo dessiné, aucun filigrane, aucune interface de logiciel à l'écran, aucune autre inscription.",
+    "higgsfieldPrompt": "Vertical 9:16, 10 secondes, 1080p, 24 im/s. PAS de texte incrusté, PAS de sous-titres, PAS de filigrane, PAS de logo, AUCUNE légende gravée dans l'image. Photoréaliste, image de cinéma : optique 40 mm, faible profondeur de champ, grain argentique léger, contraste tenu. Un seul plan, aucune coupe.\n\n@Image 1 ne définit que le visage de l'acteur — barbe, traits, carrure. Ne pas les modifier. Dans ce plan il joue le gérant : chemise ouverte, manches remontées, lunettes remontées sur le front. C'est le même acteur dans les quatre histoires du film, et le film ne le dit jamais : ne rien ajouter qui le souligne.\n\nDécor : un petit bureau à l'étage du restaurant, classeurs et tickets de caisse. Étalonnage froid et désaturé, verts tirés, hautes lumières écrêtées — l'avant du film. Les ombres mangent les bords du cadre.\n\n0-5s: Le bureau en plein jour, un tableau imprimé posé au milieu, seul. Caméra portée, très lent mouvement avant. Voix off française, un homme, grave et posée, le débit d'un conteur qui connaît déjà la fin, hors champ : {Puis vint le jour où il apprit que le mois d'avant avait été mauvais.} End state at 5s: le personnage est seul et lisible dans le cadre, rien n'a encore changé autour de lui.\n5-8s: À 5 secondes exactement, il fait glisser le tableau vers lui et s'arrête sur une ligne. Un seul changement, rien d'autre ne bouge. End state at 8s: le changement est complet et pleinement lisible, le personnage y a réagi.\n8-10s: Il repousse la feuille de deux centimètres et regarde par la fenêtre. La caméra s'immobilise. Français, voix naturelle, dite pour soi et non pour la caméra, le gérant : {Février. On est le quinze mars.} End state at 10s: plan figé sur son visage, caméra immobile, aucune entrée dans le cadre.\n\nSound design: <ambiance réelle du lieu, dense> <un seul bruit de matière au moment du changement>. Deux répliques, exactement aux minutages ci-dessus : le conteur au début, le personnage à la fin. Pas de musique — elle est ajoutée au montage.",
+    "scriptHeygen": null,
+    "kit": null,
+    "heygenPrompt": null,
+    "montage": {
+      "consigne": "Assembler les trente-cinq plans dans l'ordre des identifiants, sans transition entre deux plans d'une même histoire, et avec un fondu au noir de 12 images entre deux histoires. Le générique de fin des stories est RETIRÉ de la version film : il ne sert qu'aux réseaux. Musique unique sur les 350 s, montée de deux décibels à partir de l'épisode 25 et coupée net sur le dernier plan. Voix off du conteur normalisée à −16 LUFS, dialogues des personnages à −14, ambiances à −24. Sortie 1080 × 1920, H.264, 350 s.",
+      "segments": [
+        {
+          "titre": "En cuisine",
+          "debut": 0.0,
+          "fin": 60.0,
+          "contenu": "Six plans. Le chef, de sept heures du matin au bac vide du vendredi, puis la bascule."
+        },
+        {
+          "titre": "En salle",
+          "debut": 60.0,
+          "fin": 120.0,
+          "contenu": "Six plans. Le maître d'hôtel, sa mémoire, la table de douze qui n'existait pas."
+        },
+        {
+          "titre": "Au bureau",
+          "debut": 120.0,
+          "fin": 180.0,
+          "contenu": "Six plans. Le gérant, la pile de papier, le quinze du mois suivant."
+        },
+        {
+          "titre": "À la maison",
+          "debut": 180.0,
+          "fin": 240.0,
+          "contenu": "Six plans. Le client, qui ne verra jamais le logiciel."
+        },
+        {
+          "titre": "Vendredi, 20 h 15",
+          "debut": 240.0,
+          "fin": 350.0,
+          "contenu": "Onze plans. Les quatre histoires se croisent, minute par minute, jusqu'à la chute."
+        }
+      ],
+      "livrable": "Un film de 350 s en 9:16 pour la page de la série, et trente-cinq stories de 10 s — mêmes plans, générique de fin en plus — pour les quatre réseaux."
+    },
+    "metier": null,
+    "phase": null,
+    "amplitude": null,
+    "boucle": null,
+    "boucleSlug": null,
+    "grandeBoucle": null,
+    "incident": null,
+    "incidentHeure": null,
+    "incidentQuoi": null,
+    "saumon": null,
+    "voixOff": {
+      "conteur": "Puis vint le jour où il apprit que le mois d'avant avait été mauvais.",
+      "personnage": "Février. On est le quinze mars.",
+      "generique": "Savoir en mars ce qui s'est joué en février, c'est ne pas savoir.",
+      "enchaine": "Enchaîne sur « La question posée à voix haute »"
+    },
+    "story": {
+      "format": "9:16 · 1080 × 1920 · 10 s",
+      "hook": "Puis vint le jour où il apprit que le mois d'avant avait été mauvais",
+      "punchline": "Un mois trop tard pour y changer quoi que ce soit",
+      "url": null,
+      "motion": {
+        "quand": "8,5 → 10,0 s, par-dessus la fin du plan",
+        "consigne": "Générique de fin en motion design, posé sur les 1,5 dernière(s) seconde(s) du plan, sans jamais couper l'image :\n— à 8,5 s, un voile marine #0F1A23 monte du bas sur le tiers inférieur, en 0,3 s, courbe d'accélération douce ;\n— à 8,8 s, le logo FoodEatUp arrive du bas, cale au centre du voile, avec un léger dépassement puis retour (overshoot 6 %) ;\n— à 9,1 s, la punchline s'écrit sous le logo, un mot après l'autre, 0,06 s par mot, en crème #FCF9E6 ;\n— à 9,6 s, la mention « à suivre » apparaît en orange #FFA500 à droite, avec une flèche qui avance de 8 px et s'arrête ;\n— rien ne disparaît avant la fin du plan.",
+        "punchline": "Savoir en mars ce qui s'est joué en février, c'est ne pas savoir.",
+        "aSuivre": "À suivre — La question posée à voix haute",
+        "voix": "Voix off française, la même que le conteur mais une note plus haute et plus proche du micro, sur les 1,5 dernière(s) seconde(s) : « Savoir en mars ce qui s'est joué en février, c'est ne pas savoir. »"
+      }
+    },
+    "carrousel": null,
+    "imageFacebook": null,
+    "tutoriel": null
+  },
+  "EP516": {
+    "publications": {
+      "facebook": {
+        "legende": "Un soir, il n'a pas ouvert le classeur.\n\nLe coût matière à jour, la marge en euros, la comparaison avec le mois dernier. Il ne cherche plus l'information : il la demande.\n\nIl a posé la question, et la réponse était déjà là.\n\n« Il était une fois un restaurant » — épisode 16 sur 35. Les trente-cinq bout à bout font un film de cinq minutes cinquante.\nTout FoodEatUp : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "hashtags": [
+          "restauration",
+          "foodeatup",
+          "restaurant",
+          "courtmetrage",
+          "au-bureau"
+        ],
+        "motsCles": [
+          "comptabilité",
+          "restauration",
+          "foodeatup",
+          "au bureau"
+        ],
+        "cta": "Découvrir FoodEatUp"
+      },
+      "instagram": {
+        "legende": "Un soir, il n'a pas ouvert le classeur.\n\nLe coût matière à jour, la marge en euros, la comparaison avec le mois dernier. Il ne cherche plus l'information : il la demande.\n\nIl a posé la question, et la réponse était déjà là.\n\n« Il était une fois un restaurant » — épisode 16 sur 35. Les trente-cinq bout à bout font un film de cinq minutes cinquante.\nTout FoodEatUp : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "hashtags": [
+          "restauration",
+          "foodeatup",
+          "restaurant",
+          "courtmetrage",
+          "au-bureau"
+        ],
+        "motsCles": [
+          "comptabilité",
+          "restauration",
+          "foodeatup",
+          "au bureau"
+        ],
+        "cta": "Découvrir FoodEatUp"
+      },
+      "tiktok": {
+        "legende": "Un soir, il n'a pas ouvert le classeur.\n\nLe coût matière à jour, la marge en euros, la comparaison avec le mois dernier. Il ne cherche plus l'information : il la demande.\n\nIl a posé la question, et la réponse était déjà là.\n\n« Il était une fois un restaurant » — épisode 16 sur 35. Les trente-cinq bout à bout font un film de cinq minutes cinquante.\nTout FoodEatUp : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "hashtags": [
+          "restauration",
+          "foodeatup",
+          "restaurant",
+          "courtmetrage",
+          "au-bureau"
+        ],
+        "motsCles": [
+          "comptabilité",
+          "restauration",
+          "foodeatup",
+          "au bureau"
+        ],
+        "cta": "Découvrir FoodEatUp"
+      },
+      "linkedin": {
+        "legende": "Un soir, il n'a pas ouvert le classeur.\n\nLe coût matière à jour, la marge en euros, la comparaison avec le mois dernier. Il ne cherche plus l'information : il la demande.\n\nIl a posé la question, et la réponse était déjà là.\n\n« Il était une fois un restaurant » — épisode 16 sur 35. Les trente-cinq bout à bout font un film de cinq minutes cinquante.\nTout FoodEatUp : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "hashtags": [
+          "restauration",
+          "foodeatup",
+          "restaurant",
+          "courtmetrage",
+          "au-bureau"
+        ],
+        "motsCles": [
+          "comptabilité",
+          "restauration",
+          "foodeatup",
+          "au bureau"
+        ],
+        "cta": "Découvrir FoodEatUp"
+      },
+      "youtube": {
+        "legende": "Un soir, il n'a pas ouvert le classeur.\n\nLe coût matière à jour, la marge en euros, la comparaison avec le mois dernier. Il ne cherche plus l'information : il la demande.\n\nIl a posé la question, et la réponse était déjà là.\n\n« Il était une fois un restaurant » — épisode 16 sur 35. Les trente-cinq bout à bout font un film de cinq minutes cinquante.\nTout FoodEatUp : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "hashtags": [
+          "restauration",
+          "foodeatup",
+          "restaurant",
+          "courtmetrage",
+          "au-bureau"
+        ],
+        "motsCles": [
+          "comptabilité",
+          "restauration",
+          "foodeatup",
+          "au bureau"
+        ],
+        "cta": "Découvrir FoodEatUp",
+        "titre": "La question posée à voix haute — Il était une fois un restaurant 16/35"
+      }
+    },
+    "promptVignette": "Photo réaliste, cadrage vertical 9:16, image de cinéma : optique 40 mm, faible profondeur de champ, grain argentique léger.\n\nL'acteur de l'image de référence — MÊME visage, même barbe, même carrure. Il joue ici le gérant : chemise ouverte, manches remontées, lunettes remontées sur le front. Décor : un petit bureau à l'étage du restaurant, classeurs et tickets de caisse. Expression : combien me coûte le plat du jour, là, maintenant ? — il ne sourit pas pour la caméra.\n\nBANDE HAUTE — marine #0F1A23 sur le cinquième supérieur, portant UNIQUEMENT « AU BUREAU » en crème #FCF9E6, typographie arrondie très grasse, centré.\n\nBANDE BASSE — crème #FCF9E6 sur le sixième inférieur, portant UNIQUEMENT « 16 / 35 » en marine #0F1A23, aligné à droite.\n\nAucun logo dessiné, aucun filigrane, aucune interface de logiciel à l'écran, aucune autre inscription.",
+    "higgsfieldPrompt": "Vertical 9:16, 10 secondes, 1080p, 24 im/s. PAS de texte incrusté, PAS de sous-titres, PAS de filigrane, PAS de logo, AUCUNE légende gravée dans l'image. Photoréaliste, image de cinéma : optique 40 mm, faible profondeur de champ, grain argentique léger, contraste tenu. Un seul plan, aucune coupe.\n\n@Image 1 ne définit que le visage de l'acteur — barbe, traits, carrure. Ne pas les modifier. Dans ce plan il joue le gérant : chemise ouverte, manches remontées, lunettes remontées sur le front. C'est le même acteur dans les quatre histoires du film, et le film ne le dit jamais : ne rien ajouter qui le souligne.\n\nDécor : un petit bureau à l'étage du restaurant, classeurs et tickets de caisse. L'étalonnage change à l'intérieur du plan : froid au départ, il se réchauffe à partir de 5 s sans que rien d'autre ne bouge.\n\n0-5s: Le bureau le soir, le classeur fermé, la lampe allumée, la pile absente. Caméra portée, très lent mouvement avant. Voix off française, un homme, grave et posée, le débit d'un conteur qui connaît déjà la fin, hors champ : {Un soir, il n'a pas ouvert le classeur.} End state at 5s: le personnage est seul et lisible dans le cadre, rien n'a encore changé autour de lui.\n5-8s: À 5 secondes exactement, il pousse le classeur fermé hors du cercle de lumière de la lampe. Un seul changement, rien d'autre ne bouge. End state at 8s: le changement est complet et pleinement lisible, le personnage y a réagi.\n8-10s: Il s'adosse à son fauteuil, les mains derrière la tête, et écoute le service. La caméra s'immobilise. Français, voix naturelle, dite pour soi et non pour la caméra, le gérant : {Combien me coûte le plat du jour, là, maintenant ?} End state at 10s: plan figé sur son visage, caméra immobile, aucune entrée dans le cadre.\n\nSound design: <ambiance réelle du lieu, dense> <un seul bruit de matière au moment du changement>. Deux répliques, exactement aux minutages ci-dessus : le conteur au début, le personnage à la fin. Pas de musique — elle est ajoutée au montage.",
+    "scriptHeygen": null,
+    "kit": null,
+    "heygenPrompt": null,
+    "montage": {
+      "consigne": "Assembler les trente-cinq plans dans l'ordre des identifiants, sans transition entre deux plans d'une même histoire, et avec un fondu au noir de 12 images entre deux histoires. Le générique de fin des stories est RETIRÉ de la version film : il ne sert qu'aux réseaux. Musique unique sur les 350 s, montée de deux décibels à partir de l'épisode 25 et coupée net sur le dernier plan. Voix off du conteur normalisée à −16 LUFS, dialogues des personnages à −14, ambiances à −24. Sortie 1080 × 1920, H.264, 350 s.",
+      "segments": [
+        {
+          "titre": "En cuisine",
+          "debut": 0.0,
+          "fin": 60.0,
+          "contenu": "Six plans. Le chef, de sept heures du matin au bac vide du vendredi, puis la bascule."
+        },
+        {
+          "titre": "En salle",
+          "debut": 60.0,
+          "fin": 120.0,
+          "contenu": "Six plans. Le maître d'hôtel, sa mémoire, la table de douze qui n'existait pas."
+        },
+        {
+          "titre": "Au bureau",
+          "debut": 120.0,
+          "fin": 180.0,
+          "contenu": "Six plans. Le gérant, la pile de papier, le quinze du mois suivant."
+        },
+        {
+          "titre": "À la maison",
+          "debut": 180.0,
+          "fin": 240.0,
+          "contenu": "Six plans. Le client, qui ne verra jamais le logiciel."
+        },
+        {
+          "titre": "Vendredi, 20 h 15",
+          "debut": 240.0,
+          "fin": 350.0,
+          "contenu": "Onze plans. Les quatre histoires se croisent, minute par minute, jusqu'à la chute."
+        }
+      ],
+      "livrable": "Un film de 350 s en 9:16 pour la page de la série, et trente-cinq stories de 10 s — mêmes plans, générique de fin en plus — pour les quatre réseaux."
+    },
+    "metier": null,
+    "phase": null,
+    "amplitude": null,
+    "boucle": null,
+    "boucleSlug": null,
+    "grandeBoucle": null,
+    "incident": null,
+    "incidentHeure": null,
+    "incidentQuoi": null,
+    "saumon": null,
+    "voixOff": {
+      "conteur": "Un soir, il n'a pas ouvert le classeur.",
+      "personnage": "Combien me coûte le plat du jour, là, maintenant ?",
+      "generique": "La marge en euros, pas dans trois semaines.",
+      "enchaine": "Enchaîne sur « Le planning avant le samedi »"
+    },
+    "story": {
+      "format": "9:16 · 1080 × 1920 · 10 s",
+      "hook": "Un soir, il n'a pas ouvert le classeur",
+      "punchline": "Il a posé la question, et la réponse était déjà là",
+      "url": null,
+      "motion": {
+        "quand": "8,5 → 10,0 s, par-dessus la fin du plan",
+        "consigne": "Générique de fin en motion design, posé sur les 1,5 dernière(s) seconde(s) du plan, sans jamais couper l'image :\n— à 8,5 s, un voile marine #0F1A23 monte du bas sur le tiers inférieur, en 0,3 s, courbe d'accélération douce ;\n— à 8,8 s, le logo FoodEatUp arrive du bas, cale au centre du voile, avec un léger dépassement puis retour (overshoot 6 %) ;\n— à 9,1 s, la punchline s'écrit sous le logo, un mot après l'autre, 0,06 s par mot, en crème #FCF9E6 ;\n— à 9,6 s, la mention « à suivre » apparaît en orange #FFA500 à droite, avec une flèche qui avance de 8 px et s'arrête ;\n— rien ne disparaît avant la fin du plan.",
+        "punchline": "La marge en euros, pas dans trois semaines.",
+        "aSuivre": "À suivre — Le planning avant le samedi",
+        "voix": "Voix off française, la même que le conteur mais une note plus haute et plus proche du micro, sur les 1,5 dernière(s) seconde(s) : « La marge en euros, pas dans trois semaines. »"
+      }
+    },
+    "carrousel": null,
+    "imageFacebook": null,
+    "tutoriel": null
+  },
+  "EP517": {
+    "publications": {
+      "facebook": {
+        "legende": "Il a arrêté d'être trop nombreux le mardi.\n\nLa prévision de couverts croise le planning : on n'est plus sur-effectif le mardi ni sous-effectif le samedi. Le premier poste maîtrisable d'un restaurant cesse de se décider au feeling.\n\nEt de manquer de bras le samedi.\n\n« Il était une fois un restaurant » — épisode 17 sur 35. Les trente-cinq bout à bout font un film de cinq minutes cinquante.\nTout FoodEatUp : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "hashtags": [
+          "restauration",
+          "foodeatup",
+          "restaurant",
+          "courtmetrage",
+          "au-bureau"
+        ],
+        "motsCles": [
+          "comptabilité",
+          "restauration",
+          "foodeatup",
+          "au bureau"
+        ],
+        "cta": "Découvrir FoodEatUp"
+      },
+      "instagram": {
+        "legende": "Il a arrêté d'être trop nombreux le mardi.\n\nLa prévision de couverts croise le planning : on n'est plus sur-effectif le mardi ni sous-effectif le samedi. Le premier poste maîtrisable d'un restaurant cesse de se décider au feeling.\n\nEt de manquer de bras le samedi.\n\n« Il était une fois un restaurant » — épisode 17 sur 35. Les trente-cinq bout à bout font un film de cinq minutes cinquante.\nTout FoodEatUp : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "hashtags": [
+          "restauration",
+          "foodeatup",
+          "restaurant",
+          "courtmetrage",
+          "au-bureau"
+        ],
+        "motsCles": [
+          "comptabilité",
+          "restauration",
+          "foodeatup",
+          "au bureau"
+        ],
+        "cta": "Découvrir FoodEatUp"
+      },
+      "tiktok": {
+        "legende": "Il a arrêté d'être trop nombreux le mardi.\n\nLa prévision de couverts croise le planning : on n'est plus sur-effectif le mardi ni sous-effectif le samedi. Le premier poste maîtrisable d'un restaurant cesse de se décider au feeling.\n\nEt de manquer de bras le samedi.\n\n« Il était une fois un restaurant » — épisode 17 sur 35. Les trente-cinq bout à bout font un film de cinq minutes cinquante.\nTout FoodEatUp : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "hashtags": [
+          "restauration",
+          "foodeatup",
+          "restaurant",
+          "courtmetrage",
+          "au-bureau"
+        ],
+        "motsCles": [
+          "comptabilité",
+          "restauration",
+          "foodeatup",
+          "au bureau"
+        ],
+        "cta": "Découvrir FoodEatUp"
+      },
+      "linkedin": {
+        "legende": "Il a arrêté d'être trop nombreux le mardi.\n\nLa prévision de couverts croise le planning : on n'est plus sur-effectif le mardi ni sous-effectif le samedi. Le premier poste maîtrisable d'un restaurant cesse de se décider au feeling.\n\nEt de manquer de bras le samedi.\n\n« Il était une fois un restaurant » — épisode 17 sur 35. Les trente-cinq bout à bout font un film de cinq minutes cinquante.\nTout FoodEatUp : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "hashtags": [
+          "restauration",
+          "foodeatup",
+          "restaurant",
+          "courtmetrage",
+          "au-bureau"
+        ],
+        "motsCles": [
+          "comptabilité",
+          "restauration",
+          "foodeatup",
+          "au bureau"
+        ],
+        "cta": "Découvrir FoodEatUp"
+      },
+      "youtube": {
+        "legende": "Il a arrêté d'être trop nombreux le mardi.\n\nLa prévision de couverts croise le planning : on n'est plus sur-effectif le mardi ni sous-effectif le samedi. Le premier poste maîtrisable d'un restaurant cesse de se décider au feeling.\n\nEt de manquer de bras le samedi.\n\n« Il était une fois un restaurant » — épisode 17 sur 35. Les trente-cinq bout à bout font un film de cinq minutes cinquante.\nTout FoodEatUp : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "hashtags": [
+          "restauration",
+          "foodeatup",
+          "restaurant",
+          "courtmetrage",
+          "au-bureau"
+        ],
+        "motsCles": [
+          "comptabilité",
+          "restauration",
+          "foodeatup",
+          "au bureau"
+        ],
+        "cta": "Découvrir FoodEatUp",
+        "titre": "Le planning avant le samedi — Il était une fois un restaurant 17/35"
+      }
+    },
+    "promptVignette": "Photo réaliste, cadrage vertical 9:16, image de cinéma : optique 40 mm, faible profondeur de champ, grain argentique léger.\n\nL'acteur de l'image de référence — MÊME visage, même barbe, même carrure. Il joue ici le gérant : chemise ouverte, manches remontées, lunettes remontées sur le front. Décor : un petit bureau à l'étage du restaurant, classeurs et tickets de caisse. Expression : samedi, on sera quatre. pas trois — il ne sourit pas pour la caméra.\n\nBANDE HAUTE — marine #0F1A23 sur le cinquième supérieur, portant UNIQUEMENT « AU BUREAU » en crème #FCF9E6, typographie arrondie très grasse, centré.\n\nBANDE BASSE — crème #FCF9E6 sur le sixième inférieur, portant UNIQUEMENT « 17 / 35 » en marine #0F1A23, aligné à droite.\n\nAucun logo dessiné, aucun filigrane, aucune interface de logiciel à l'écran, aucune autre inscription.",
+    "higgsfieldPrompt": "Vertical 9:16, 10 secondes, 1080p, 24 im/s. PAS de texte incrusté, PAS de sous-titres, PAS de filigrane, PAS de logo, AUCUNE légende gravée dans l'image. Photoréaliste, image de cinéma : optique 40 mm, faible profondeur de champ, grain argentique léger, contraste tenu. Un seul plan, aucune coupe.\n\n@Image 1 ne définit que le visage de l'acteur — barbe, traits, carrure. Ne pas les modifier. Dans ce plan il joue le gérant : chemise ouverte, manches remontées, lunettes remontées sur le front. C'est le même acteur dans les quatre histoires du film, et le film ne le dit jamais : ne rien ajouter qui le souligne.\n\nDécor : un petit bureau à l'étage du restaurant, classeurs et tickets de caisse. Étalonnage chaud et tenu, blancs propres, noirs ouverts — l'après du film. La lumière vient d'une source unique et douce.\n\n0-5s: Le bureau en fin de matinée, lumière de fenêtre, un planning affiché au mur. Caméra portée, très lent mouvement avant. Voix off française, un homme, grave et posée, le débit d'un conteur qui connaît déjà la fin, hors champ : {Il a arrêté d'être trop nombreux le mardi.} End state at 5s: le personnage est seul et lisible dans le cadre, rien n'a encore changé autour de lui.\n5-8s: À 5 secondes exactement, il décroche une étiquette du planning et la repose deux cases plus loin. Un seul changement, rien d'autre ne bouge. End state at 8s: le changement est complet et pleinement lisible, le personnage y a réagi.\n8-10s: Il recule d'un pas, regarde le mur entier, et hoche la tête une fois. La caméra s'immobilise. Français, voix naturelle, dite pour soi et non pour la caméra, le gérant : {Samedi, on sera quatre. Pas trois.} End state at 10s: plan figé sur son visage, caméra immobile, aucune entrée dans le cadre.\n\nSound design: <ambiance réelle du lieu, dense> <un seul bruit de matière au moment du changement>. Deux répliques, exactement aux minutages ci-dessus : le conteur au début, le personnage à la fin. Pas de musique — elle est ajoutée au montage.",
+    "scriptHeygen": null,
+    "kit": null,
+    "heygenPrompt": null,
+    "montage": {
+      "consigne": "Assembler les trente-cinq plans dans l'ordre des identifiants, sans transition entre deux plans d'une même histoire, et avec un fondu au noir de 12 images entre deux histoires. Le générique de fin des stories est RETIRÉ de la version film : il ne sert qu'aux réseaux. Musique unique sur les 350 s, montée de deux décibels à partir de l'épisode 25 et coupée net sur le dernier plan. Voix off du conteur normalisée à −16 LUFS, dialogues des personnages à −14, ambiances à −24. Sortie 1080 × 1920, H.264, 350 s.",
+      "segments": [
+        {
+          "titre": "En cuisine",
+          "debut": 0.0,
+          "fin": 60.0,
+          "contenu": "Six plans. Le chef, de sept heures du matin au bac vide du vendredi, puis la bascule."
+        },
+        {
+          "titre": "En salle",
+          "debut": 60.0,
+          "fin": 120.0,
+          "contenu": "Six plans. Le maître d'hôtel, sa mémoire, la table de douze qui n'existait pas."
+        },
+        {
+          "titre": "Au bureau",
+          "debut": 120.0,
+          "fin": 180.0,
+          "contenu": "Six plans. Le gérant, la pile de papier, le quinze du mois suivant."
+        },
+        {
+          "titre": "À la maison",
+          "debut": 180.0,
+          "fin": 240.0,
+          "contenu": "Six plans. Le client, qui ne verra jamais le logiciel."
+        },
+        {
+          "titre": "Vendredi, 20 h 15",
+          "debut": 240.0,
+          "fin": 350.0,
+          "contenu": "Onze plans. Les quatre histoires se croisent, minute par minute, jusqu'à la chute."
+        }
+      ],
+      "livrable": "Un film de 350 s en 9:16 pour la page de la série, et trente-cinq stories de 10 s — mêmes plans, générique de fin en plus — pour les quatre réseaux."
+    },
+    "metier": null,
+    "phase": null,
+    "amplitude": null,
+    "boucle": null,
+    "boucleSlug": null,
+    "grandeBoucle": null,
+    "incident": null,
+    "incidentHeure": null,
+    "incidentQuoi": null,
+    "saumon": null,
+    "voixOff": {
+      "conteur": "Il a arrêté d'être trop nombreux le mardi.",
+      "personnage": "Samedi, on sera quatre. Pas trois.",
+      "generique": "Le coût salarial se décide avant le service, pas après.",
+      "enchaine": "Enchaîne sur « Il éteint la lampe à vingt-trois heures »"
+    },
+    "story": {
+      "format": "9:16 · 1080 × 1920 · 10 s",
+      "hook": "Il a arrêté d'être trop nombreux le mardi",
+      "punchline": "Et de manquer de bras le samedi",
+      "url": null,
+      "motion": {
+        "quand": "8,5 → 10,0 s, par-dessus la fin du plan",
+        "consigne": "Générique de fin en motion design, posé sur les 1,5 dernière(s) seconde(s) du plan, sans jamais couper l'image :\n— à 8,5 s, un voile marine #0F1A23 monte du bas sur le tiers inférieur, en 0,3 s, courbe d'accélération douce ;\n— à 8,8 s, le logo FoodEatUp arrive du bas, cale au centre du voile, avec un léger dépassement puis retour (overshoot 6 %) ;\n— à 9,1 s, la punchline s'écrit sous le logo, un mot après l'autre, 0,06 s par mot, en crème #FCF9E6 ;\n— à 9,6 s, la mention « à suivre » apparaît en orange #FFA500 à droite, avec une flèche qui avance de 8 px et s'arrête ;\n— rien ne disparaît avant la fin du plan.",
+        "punchline": "Le coût salarial se décide avant le service, pas après.",
+        "aSuivre": "À suivre — Il éteint la lampe à vingt-trois heures",
+        "voix": "Voix off française, la même que le conteur mais une note plus haute et plus proche du micro, sur les 1,5 dernière(s) seconde(s) : « Le coût salarial se décide avant le service, pas après. »"
+      }
+    },
+    "carrousel": null,
+    "imageFacebook": null,
+    "tutoriel": null
+  },
+  "EP518": {
+    "publications": {
+      "facebook": {
+        "legende": "Le bureau ferme maintenant en même temps que la salle.\n\nLe Z, les pertes, le coût du travail du service : trois chiffres disponibles avant d'éteindre. Il n'y a plus de comptabilité à rattraper le dimanche.\n\nLes dimanches lui ont été rendus.\n\n« Il était une fois un restaurant » — épisode 18 sur 35. Les trente-cinq bout à bout font un film de cinq minutes cinquante.\nTout FoodEatUp : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "hashtags": [
+          "restauration",
+          "foodeatup",
+          "restaurant",
+          "courtmetrage",
+          "au-bureau"
+        ],
+        "motsCles": [
+          "comptabilité",
+          "restauration",
+          "foodeatup",
+          "au bureau"
+        ],
+        "cta": "Découvrir FoodEatUp"
+      },
+      "instagram": {
+        "legende": "Le bureau ferme maintenant en même temps que la salle.\n\nLe Z, les pertes, le coût du travail du service : trois chiffres disponibles avant d'éteindre. Il n'y a plus de comptabilité à rattraper le dimanche.\n\nLes dimanches lui ont été rendus.\n\n« Il était une fois un restaurant » — épisode 18 sur 35. Les trente-cinq bout à bout font un film de cinq minutes cinquante.\nTout FoodEatUp : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "hashtags": [
+          "restauration",
+          "foodeatup",
+          "restaurant",
+          "courtmetrage",
+          "au-bureau"
+        ],
+        "motsCles": [
+          "comptabilité",
+          "restauration",
+          "foodeatup",
+          "au bureau"
+        ],
+        "cta": "Découvrir FoodEatUp"
+      },
+      "tiktok": {
+        "legende": "Le bureau ferme maintenant en même temps que la salle.\n\nLe Z, les pertes, le coût du travail du service : trois chiffres disponibles avant d'éteindre. Il n'y a plus de comptabilité à rattraper le dimanche.\n\nLes dimanches lui ont été rendus.\n\n« Il était une fois un restaurant » — épisode 18 sur 35. Les trente-cinq bout à bout font un film de cinq minutes cinquante.\nTout FoodEatUp : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "hashtags": [
+          "restauration",
+          "foodeatup",
+          "restaurant",
+          "courtmetrage",
+          "au-bureau"
+        ],
+        "motsCles": [
+          "comptabilité",
+          "restauration",
+          "foodeatup",
+          "au bureau"
+        ],
+        "cta": "Découvrir FoodEatUp"
+      },
+      "linkedin": {
+        "legende": "Le bureau ferme maintenant en même temps que la salle.\n\nLe Z, les pertes, le coût du travail du service : trois chiffres disponibles avant d'éteindre. Il n'y a plus de comptabilité à rattraper le dimanche.\n\nLes dimanches lui ont été rendus.\n\n« Il était une fois un restaurant » — épisode 18 sur 35. Les trente-cinq bout à bout font un film de cinq minutes cinquante.\nTout FoodEatUp : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "hashtags": [
+          "restauration",
+          "foodeatup",
+          "restaurant",
+          "courtmetrage",
+          "au-bureau"
+        ],
+        "motsCles": [
+          "comptabilité",
+          "restauration",
+          "foodeatup",
+          "au bureau"
+        ],
+        "cta": "Découvrir FoodEatUp"
+      },
+      "youtube": {
+        "legende": "Le bureau ferme maintenant en même temps que la salle.\n\nLe Z, les pertes, le coût du travail du service : trois chiffres disponibles avant d'éteindre. Il n'y a plus de comptabilité à rattraper le dimanche.\n\nLes dimanches lui ont été rendus.\n\n« Il était une fois un restaurant » — épisode 18 sur 35. Les trente-cinq bout à bout font un film de cinq minutes cinquante.\nTout FoodEatUp : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "hashtags": [
+          "restauration",
+          "foodeatup",
+          "restaurant",
+          "courtmetrage",
+          "au-bureau"
+        ],
+        "motsCles": [
+          "comptabilité",
+          "restauration",
+          "foodeatup",
+          "au bureau"
+        ],
+        "cta": "Découvrir FoodEatUp",
+        "titre": "Il éteint la lampe à vingt-trois heures — Il était une fois un restaurant 18/35"
+      }
+    },
+    "promptVignette": "Photo réaliste, cadrage vertical 9:16, image de cinéma : optique 40 mm, faible profondeur de champ, grain argentique léger.\n\nL'acteur de l'image de référence — MÊME visage, même barbe, même carrure. Il joue ici le gérant : chemise ouverte, manches remontées, lunettes remontées sur le front. Décor : un petit bureau à l'étage du restaurant, classeurs et tickets de caisse. Expression : dimanche, je ne viens pas — il ne sourit pas pour la caméra.\n\nBANDE HAUTE — marine #0F1A23 sur le cinquième supérieur, portant UNIQUEMENT « AU BUREAU » en crème #FCF9E6, typographie arrondie très grasse, centré.\n\nBANDE BASSE — crème #FCF9E6 sur le sixième inférieur, portant UNIQUEMENT « 18 / 35 » en marine #0F1A23, aligné à droite.\n\nAucun logo dessiné, aucun filigrane, aucune interface de logiciel à l'écran, aucune autre inscription.",
+    "higgsfieldPrompt": "Vertical 9:16, 10 secondes, 1080p, 24 im/s. PAS de texte incrusté, PAS de sous-titres, PAS de filigrane, PAS de logo, AUCUNE légende gravée dans l'image. Photoréaliste, image de cinéma : optique 40 mm, faible profondeur de champ, grain argentique léger, contraste tenu. Un seul plan, aucune coupe.\n\n@Image 1 ne définit que le visage de l'acteur — barbe, traits, carrure. Ne pas les modifier. Dans ce plan il joue le gérant : chemise ouverte, manches remontées, lunettes remontées sur le front. C'est le même acteur dans les quatre histoires du film, et le film ne le dit jamais : ne rien ajouter qui le souligne.\n\nDécor : un petit bureau à l'étage du restaurant, classeurs et tickets de caisse. Étalonnage chaud et tenu, blancs propres, noirs ouverts — l'après du film. La lumière vient d'une source unique et douce.\n\n0-5s: Le bureau à vingt-trois heures, rangé, la pile de papiers absente du cadre. Caméra portée, très lent mouvement avant. Voix off française, un homme, grave et posée, le débit d'un conteur qui connaît déjà la fin, hors champ : {Le bureau ferme maintenant en même temps que la salle.} End state at 5s: le personnage est seul et lisible dans le cadre, rien n'a encore changé autour de lui.\n5-8s: À 5 secondes exactement, il éteint la lampe de bureau et la pièce ne garde que la lueur de l'escalier. Un seul changement, rien d'autre ne bouge. End state at 8s: le changement est complet et pleinement lisible, le personnage y a réagi.\n8-10s: Il descend la première marche et laisse la porte ouverte derrière lui. La caméra s'immobilise. Français, voix naturelle, dite pour soi et non pour la caméra, le gérant : {Dimanche, je ne viens pas.} End state at 10s: plan figé sur son visage, caméra immobile, aucune entrée dans le cadre.\n\nSound design: <ambiance réelle du lieu, dense> <un seul bruit de matière au moment du changement>. Deux répliques, exactement aux minutages ci-dessus : le conteur au début, le personnage à la fin. Pas de musique — elle est ajoutée au montage.",
+    "scriptHeygen": null,
+    "kit": null,
+    "heygenPrompt": null,
+    "montage": {
+      "consigne": "Assembler les trente-cinq plans dans l'ordre des identifiants, sans transition entre deux plans d'une même histoire, et avec un fondu au noir de 12 images entre deux histoires. Le générique de fin des stories est RETIRÉ de la version film : il ne sert qu'aux réseaux. Musique unique sur les 350 s, montée de deux décibels à partir de l'épisode 25 et coupée net sur le dernier plan. Voix off du conteur normalisée à −16 LUFS, dialogues des personnages à −14, ambiances à −24. Sortie 1080 × 1920, H.264, 350 s.",
+      "segments": [
+        {
+          "titre": "En cuisine",
+          "debut": 0.0,
+          "fin": 60.0,
+          "contenu": "Six plans. Le chef, de sept heures du matin au bac vide du vendredi, puis la bascule."
+        },
+        {
+          "titre": "En salle",
+          "debut": 60.0,
+          "fin": 120.0,
+          "contenu": "Six plans. Le maître d'hôtel, sa mémoire, la table de douze qui n'existait pas."
+        },
+        {
+          "titre": "Au bureau",
+          "debut": 120.0,
+          "fin": 180.0,
+          "contenu": "Six plans. Le gérant, la pile de papier, le quinze du mois suivant."
+        },
+        {
+          "titre": "À la maison",
+          "debut": 180.0,
+          "fin": 240.0,
+          "contenu": "Six plans. Le client, qui ne verra jamais le logiciel."
+        },
+        {
+          "titre": "Vendredi, 20 h 15",
+          "debut": 240.0,
+          "fin": 350.0,
+          "contenu": "Onze plans. Les quatre histoires se croisent, minute par minute, jusqu'à la chute."
+        }
+      ],
+      "livrable": "Un film de 350 s en 9:16 pour la page de la série, et trente-cinq stories de 10 s — mêmes plans, générique de fin en plus — pour les quatre réseaux."
+    },
+    "metier": null,
+    "phase": null,
+    "amplitude": null,
+    "boucle": null,
+    "boucleSlug": null,
+    "grandeBoucle": null,
+    "incident": null,
+    "incidentHeure": null,
+    "incidentQuoi": null,
+    "saumon": null,
+    "voixOff": {
+      "conteur": "Le bureau ferme maintenant en même temps que la salle.",
+      "personnage": "Dimanche, je ne viens pas.",
+      "generique": "Rendez-vous vos dimanches.",
+      "enchaine": "Enchaîne sur « Il cherche où aller »"
+    },
+    "story": {
+      "format": "9:16 · 1080 × 1920 · 10 s",
+      "hook": "Le bureau ferme maintenant en même temps que la salle",
+      "punchline": "Les dimanches lui ont été rendus",
+      "url": null,
+      "motion": {
+        "quand": "8,5 → 10,0 s, par-dessus la fin du plan",
+        "consigne": "Générique de fin en motion design, posé sur les 1,5 dernière(s) seconde(s) du plan, sans jamais couper l'image :\n— à 8,5 s, un voile marine #0F1A23 monte du bas sur le tiers inférieur, en 0,3 s, courbe d'accélération douce ;\n— à 8,8 s, le logo FoodEatUp arrive du bas, cale au centre du voile, avec un léger dépassement puis retour (overshoot 6 %) ;\n— à 9,1 s, la punchline s'écrit sous le logo, un mot après l'autre, 0,06 s par mot, en crème #FCF9E6 ;\n— à 9,6 s, la mention « à suivre » apparaît en orange #FFA500 à droite, avec une flèche qui avance de 8 px et s'arrête ;\n— rien ne disparaît avant la fin du plan.",
+        "punchline": "Rendez-vous vos dimanches.",
+        "aSuivre": "À suivre — Il cherche où aller",
+        "voix": "Voix off française, la même que le conteur mais une note plus haute et plus proche du micro, sur les 1,5 dernière(s) seconde(s) : « Rendez-vous vos dimanches. »"
+      }
+    },
+    "carrousel": null,
+    "imageFacebook": null,
+    "tutoriel": null
+  },
+  "EP519": {
+    "publications": {
+      "facebook": {
+        "legende": "Il était une fois quelqu'un qui cherchait simplement où dîner.\n\nVingt heures, chez lui. Il cherche, il compare, il hésite entre trois adresses. Ce qu'il trouve du restaurant décide de sa soirée.\n\nIl ne verra jamais votre logiciel. Il verra tout le reste.\n\n« Il était une fois un restaurant » — épisode 19 sur 35. Les trente-cinq bout à bout font un film de cinq minutes cinquante.\nTout FoodEatUp : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "hashtags": [
+          "restauration",
+          "foodeatup",
+          "restaurant",
+          "courtmetrage",
+          "a-la-maison"
+        ],
+        "motsCles": [
+          "le client",
+          "restauration",
+          "foodeatup",
+          "à la maison"
+        ],
+        "cta": "Découvrir FoodEatUp"
+      },
+      "instagram": {
+        "legende": "Il était une fois quelqu'un qui cherchait simplement où dîner.\n\nVingt heures, chez lui. Il cherche, il compare, il hésite entre trois adresses. Ce qu'il trouve du restaurant décide de sa soirée.\n\nIl ne verra jamais votre logiciel. Il verra tout le reste.\n\n« Il était une fois un restaurant » — épisode 19 sur 35. Les trente-cinq bout à bout font un film de cinq minutes cinquante.\nTout FoodEatUp : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "hashtags": [
+          "restauration",
+          "foodeatup",
+          "restaurant",
+          "courtmetrage",
+          "a-la-maison"
+        ],
+        "motsCles": [
+          "le client",
+          "restauration",
+          "foodeatup",
+          "à la maison"
+        ],
+        "cta": "Découvrir FoodEatUp"
+      },
+      "tiktok": {
+        "legende": "Il était une fois quelqu'un qui cherchait simplement où dîner.\n\nVingt heures, chez lui. Il cherche, il compare, il hésite entre trois adresses. Ce qu'il trouve du restaurant décide de sa soirée.\n\nIl ne verra jamais votre logiciel. Il verra tout le reste.\n\n« Il était une fois un restaurant » — épisode 19 sur 35. Les trente-cinq bout à bout font un film de cinq minutes cinquante.\nTout FoodEatUp : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "hashtags": [
+          "restauration",
+          "foodeatup",
+          "restaurant",
+          "courtmetrage",
+          "a-la-maison"
+        ],
+        "motsCles": [
+          "le client",
+          "restauration",
+          "foodeatup",
+          "à la maison"
+        ],
+        "cta": "Découvrir FoodEatUp"
+      },
+      "linkedin": {
+        "legende": "Il était une fois quelqu'un qui cherchait simplement où dîner.\n\nVingt heures, chez lui. Il cherche, il compare, il hésite entre trois adresses. Ce qu'il trouve du restaurant décide de sa soirée.\n\nIl ne verra jamais votre logiciel. Il verra tout le reste.\n\n« Il était une fois un restaurant » — épisode 19 sur 35. Les trente-cinq bout à bout font un film de cinq minutes cinquante.\nTout FoodEatUp : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "hashtags": [
+          "restauration",
+          "foodeatup",
+          "restaurant",
+          "courtmetrage",
+          "a-la-maison"
+        ],
+        "motsCles": [
+          "le client",
+          "restauration",
+          "foodeatup",
+          "à la maison"
+        ],
+        "cta": "Découvrir FoodEatUp"
+      },
+      "youtube": {
+        "legende": "Il était une fois quelqu'un qui cherchait simplement où dîner.\n\nVingt heures, chez lui. Il cherche, il compare, il hésite entre trois adresses. Ce qu'il trouve du restaurant décide de sa soirée.\n\nIl ne verra jamais votre logiciel. Il verra tout le reste.\n\n« Il était une fois un restaurant » — épisode 19 sur 35. Les trente-cinq bout à bout font un film de cinq minutes cinquante.\nTout FoodEatUp : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "hashtags": [
+          "restauration",
+          "foodeatup",
+          "restaurant",
+          "courtmetrage",
+          "a-la-maison"
+        ],
+        "motsCles": [
+          "le client",
+          "restauration",
+          "foodeatup",
+          "à la maison"
+        ],
+        "cta": "Découvrir FoodEatUp",
+        "titre": "Il cherche où aller — Il était une fois un restaurant 19/35"
+      }
+    },
+    "promptVignette": "Photo réaliste, cadrage vertical 9:16, image de cinéma : optique 40 mm, faible profondeur de champ, grain argentique léger.\n\nL'acteur de l'image de référence — MÊME visage, même barbe, même carrure. Il joue ici le client : manteau et écharpe, téléphone à la main. Décor : un appartement le soir, puis le trottoir devant le restaurant. Expression : bon. on tente celui-là — il ne sourit pas pour la caméra.\n\nBANDE HAUTE — marine #0F1A23 sur le cinquième supérieur, portant UNIQUEMENT « À LA MAISON » en crème #FCF9E6, typographie arrondie très grasse, centré.\n\nBANDE BASSE — crème #FCF9E6 sur le sixième inférieur, portant UNIQUEMENT « 19 / 35 » en marine #0F1A23, aligné à droite.\n\nAucun logo dessiné, aucun filigrane, aucune interface de logiciel à l'écran, aucune autre inscription.",
+    "higgsfieldPrompt": "Vertical 9:16, 10 secondes, 1080p, 24 im/s. PAS de texte incrusté, PAS de sous-titres, PAS de filigrane, PAS de logo, AUCUNE légende gravée dans l'image. Photoréaliste, image de cinéma : optique 40 mm, faible profondeur de champ, grain argentique léger, contraste tenu. Un seul plan, aucune coupe.\n\n@Image 1 ne définit que le visage de l'acteur — barbe, traits, carrure. Ne pas les modifier. Dans ce plan il joue le client : manteau et écharpe, téléphone à la main. C'est le même acteur dans les quatre histoires du film, et le film ne le dit jamais : ne rien ajouter qui le souligne.\n\nDécor : un appartement le soir, puis le trottoir devant le restaurant. Étalonnage froid et désaturé, verts tirés, hautes lumières écrêtées — l'avant du film. Les ombres mangent les bords du cadre.\n\n0-5s: Un salon le soir, une seule lampe, un téléphone éclairant un visage. Caméra portée, très lent mouvement avant. Voix off française, un homme, grave et posée, le débit d'un conteur qui connaît déjà la fin, hors champ : {Il était une fois quelqu'un qui cherchait simplement où dîner.} End state at 5s: le personnage est seul et lisible dans le cadre, rien n'a encore changé autour de lui.\n5-8s: À 5 secondes exactement, il fait défiler l'écran d'un pouce et le reflet de l'écran change sur son visage. Un seul changement, rien d'autre ne bouge. End state at 8s: le changement est complet et pleinement lisible, le personnage y a réagi.\n8-10s: Il repose le téléphone sur ses genoux et regarde dans le vide. La caméra s'immobilise. Français, voix naturelle, dite pour soi et non pour la caméra, le client : {Bon. On tente celui-là.} End state at 10s: plan figé sur son visage, caméra immobile, aucune entrée dans le cadre.\n\nSound design: <ambiance réelle du lieu, dense> <un seul bruit de matière au moment du changement>. Deux répliques, exactement aux minutages ci-dessus : le conteur au début, le personnage à la fin. Pas de musique — elle est ajoutée au montage.",
+    "scriptHeygen": null,
+    "kit": null,
+    "heygenPrompt": null,
+    "montage": {
+      "consigne": "Assembler les trente-cinq plans dans l'ordre des identifiants, sans transition entre deux plans d'une même histoire, et avec un fondu au noir de 12 images entre deux histoires. Le générique de fin des stories est RETIRÉ de la version film : il ne sert qu'aux réseaux. Musique unique sur les 350 s, montée de deux décibels à partir de l'épisode 25 et coupée net sur le dernier plan. Voix off du conteur normalisée à −16 LUFS, dialogues des personnages à −14, ambiances à −24. Sortie 1080 × 1920, H.264, 350 s.",
+      "segments": [
+        {
+          "titre": "En cuisine",
+          "debut": 0.0,
+          "fin": 60.0,
+          "contenu": "Six plans. Le chef, de sept heures du matin au bac vide du vendredi, puis la bascule."
+        },
+        {
+          "titre": "En salle",
+          "debut": 60.0,
+          "fin": 120.0,
+          "contenu": "Six plans. Le maître d'hôtel, sa mémoire, la table de douze qui n'existait pas."
+        },
+        {
+          "titre": "Au bureau",
+          "debut": 120.0,
+          "fin": 180.0,
+          "contenu": "Six plans. Le gérant, la pile de papier, le quinze du mois suivant."
+        },
+        {
+          "titre": "À la maison",
+          "debut": 180.0,
+          "fin": 240.0,
+          "contenu": "Six plans. Le client, qui ne verra jamais le logiciel."
+        },
+        {
+          "titre": "Vendredi, 20 h 15",
+          "debut": 240.0,
+          "fin": 350.0,
+          "contenu": "Onze plans. Les quatre histoires se croisent, minute par minute, jusqu'à la chute."
+        }
+      ],
+      "livrable": "Un film de 350 s en 9:16 pour la page de la série, et trente-cinq stories de 10 s — mêmes plans, générique de fin en plus — pour les quatre réseaux."
+    },
+    "metier": null,
+    "phase": null,
+    "amplitude": null,
+    "boucle": null,
+    "boucleSlug": null,
+    "grandeBoucle": null,
+    "incident": null,
+    "incidentHeure": null,
+    "incidentQuoi": null,
+    "saumon": null,
+    "voixOff": {
+      "conteur": "Il était une fois quelqu'un qui cherchait simplement où dîner.",
+      "personnage": "Bon. On tente celui-là.",
+      "generique": "Il décide chez lui, trois jours avant d'entrer.",
+      "enchaine": "Enchaîne sur « La carte date de mardi »"
+    },
+    "story": {
+      "format": "9:16 · 1080 × 1920 · 10 s",
+      "hook": "Il était une fois quelqu'un qui cherchait simplement où dîner",
+      "punchline": "Il ne verra jamais votre logiciel. Il verra tout le reste",
+      "url": null,
+      "motion": {
+        "quand": "8,5 → 10,0 s, par-dessus la fin du plan",
+        "consigne": "Générique de fin en motion design, posé sur les 1,5 dernière(s) seconde(s) du plan, sans jamais couper l'image :\n— à 8,5 s, un voile marine #0F1A23 monte du bas sur le tiers inférieur, en 0,3 s, courbe d'accélération douce ;\n— à 8,8 s, le logo FoodEatUp arrive du bas, cale au centre du voile, avec un léger dépassement puis retour (overshoot 6 %) ;\n— à 9,1 s, la punchline s'écrit sous le logo, un mot après l'autre, 0,06 s par mot, en crème #FCF9E6 ;\n— à 9,6 s, la mention « à suivre » apparaît en orange #FFA500 à droite, avec une flèche qui avance de 8 px et s'arrête ;\n— rien ne disparaît avant la fin du plan.",
+        "punchline": "Il décide chez lui, trois jours avant d'entrer.",
+        "aSuivre": "À suivre — La carte date de mardi",
+        "voix": "Voix off française, la même que le conteur mais une note plus haute et plus proche du micro, sur les 1,5 dernière(s) seconde(s) : « Il décide chez lui, trois jours avant d'entrer. »"
+      }
+    },
+    "carrousel": null,
+    "imageFacebook": null,
+    "tutoriel": null
+  },
+  "EP520": {
+    "publications": {
+      "facebook": {
+        "legende": "La carte qu'il a lue n'était plus la bonne.\n\nLa carte en ligne n'a pas bougé depuis mardi. Le plat qui l'a décidé n'existe plus. Il l'apprendra à table, devant quelqu'un qui s'excuse.\n\nOn est vendredi.\n\n« Il était une fois un restaurant » — épisode 20 sur 35. Les trente-cinq bout à bout font un film de cinq minutes cinquante.\nTout FoodEatUp : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "hashtags": [
+          "restauration",
+          "foodeatup",
+          "restaurant",
+          "courtmetrage",
+          "a-la-maison"
+        ],
+        "motsCles": [
+          "le client",
+          "restauration",
+          "foodeatup",
+          "à la maison"
+        ],
+        "cta": "Découvrir FoodEatUp"
+      },
+      "instagram": {
+        "legende": "La carte qu'il a lue n'était plus la bonne.\n\nLa carte en ligne n'a pas bougé depuis mardi. Le plat qui l'a décidé n'existe plus. Il l'apprendra à table, devant quelqu'un qui s'excuse.\n\nOn est vendredi.\n\n« Il était une fois un restaurant » — épisode 20 sur 35. Les trente-cinq bout à bout font un film de cinq minutes cinquante.\nTout FoodEatUp : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "hashtags": [
+          "restauration",
+          "foodeatup",
+          "restaurant",
+          "courtmetrage",
+          "a-la-maison"
+        ],
+        "motsCles": [
+          "le client",
+          "restauration",
+          "foodeatup",
+          "à la maison"
+        ],
+        "cta": "Découvrir FoodEatUp"
+      },
+      "tiktok": {
+        "legende": "La carte qu'il a lue n'était plus la bonne.\n\nLa carte en ligne n'a pas bougé depuis mardi. Le plat qui l'a décidé n'existe plus. Il l'apprendra à table, devant quelqu'un qui s'excuse.\n\nOn est vendredi.\n\n« Il était une fois un restaurant » — épisode 20 sur 35. Les trente-cinq bout à bout font un film de cinq minutes cinquante.\nTout FoodEatUp : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "hashtags": [
+          "restauration",
+          "foodeatup",
+          "restaurant",
+          "courtmetrage",
+          "a-la-maison"
+        ],
+        "motsCles": [
+          "le client",
+          "restauration",
+          "foodeatup",
+          "à la maison"
+        ],
+        "cta": "Découvrir FoodEatUp"
+      },
+      "linkedin": {
+        "legende": "La carte qu'il a lue n'était plus la bonne.\n\nLa carte en ligne n'a pas bougé depuis mardi. Le plat qui l'a décidé n'existe plus. Il l'apprendra à table, devant quelqu'un qui s'excuse.\n\nOn est vendredi.\n\n« Il était une fois un restaurant » — épisode 20 sur 35. Les trente-cinq bout à bout font un film de cinq minutes cinquante.\nTout FoodEatUp : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "hashtags": [
+          "restauration",
+          "foodeatup",
+          "restaurant",
+          "courtmetrage",
+          "a-la-maison"
+        ],
+        "motsCles": [
+          "le client",
+          "restauration",
+          "foodeatup",
+          "à la maison"
+        ],
+        "cta": "Découvrir FoodEatUp"
+      },
+      "youtube": {
+        "legende": "La carte qu'il a lue n'était plus la bonne.\n\nLa carte en ligne n'a pas bougé depuis mardi. Le plat qui l'a décidé n'existe plus. Il l'apprendra à table, devant quelqu'un qui s'excuse.\n\nOn est vendredi.\n\n« Il était une fois un restaurant » — épisode 20 sur 35. Les trente-cinq bout à bout font un film de cinq minutes cinquante.\nTout FoodEatUp : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "hashtags": [
+          "restauration",
+          "foodeatup",
+          "restaurant",
+          "courtmetrage",
+          "a-la-maison"
+        ],
+        "motsCles": [
+          "le client",
+          "restauration",
+          "foodeatup",
+          "à la maison"
+        ],
+        "cta": "Découvrir FoodEatUp",
+        "titre": "La carte date de mardi — Il était une fois un restaurant 20/35"
+      }
+    },
+    "promptVignette": "Photo réaliste, cadrage vertical 9:16, image de cinéma : optique 40 mm, faible profondeur de champ, grain argentique léger.\n\nL'acteur de l'image de référence — MÊME visage, même barbe, même carrure. Il joue ici le client : manteau et écharpe, téléphone à la main. Décor : un appartement le soir, puis le trottoir devant le restaurant. Expression : c'était pas ça, sur le site — il ne sourit pas pour la caméra.\n\nBANDE HAUTE — marine #0F1A23 sur le cinquième supérieur, portant UNIQUEMENT « À LA MAISON » en crème #FCF9E6, typographie arrondie très grasse, centré.\n\nBANDE BASSE — crème #FCF9E6 sur le sixième inférieur, portant UNIQUEMENT « 20 / 35 » en marine #0F1A23, aligné à droite.\n\nAucun logo dessiné, aucun filigrane, aucune interface de logiciel à l'écran, aucune autre inscription.",
+    "higgsfieldPrompt": "Vertical 9:16, 10 secondes, 1080p, 24 im/s. PAS de texte incrusté, PAS de sous-titres, PAS de filigrane, PAS de logo, AUCUNE légende gravée dans l'image. Photoréaliste, image de cinéma : optique 40 mm, faible profondeur de champ, grain argentique léger, contraste tenu. Un seul plan, aucune coupe.\n\n@Image 1 ne définit que le visage de l'acteur — barbe, traits, carrure. Ne pas les modifier. Dans ce plan il joue le client : manteau et écharpe, téléphone à la main. C'est le même acteur dans les quatre histoires du film, et le film ne le dit jamais : ne rien ajouter qui le souligne.\n\nDécor : un appartement le soir, puis le trottoir devant le restaurant. Étalonnage froid et désaturé, verts tirés, hautes lumières écrêtées — l'avant du film. Les ombres mangent les bords du cadre.\n\n0-5s: Le trottoir devant un restaurant, la nuit, une ardoise sous la pluie fine. Caméra portée, très lent mouvement avant. Voix off française, un homme, grave et posée, le débit d'un conteur qui connaît déjà la fin, hors champ : {La carte qu'il a lue n'était plus la bonne.} End state at 5s: le personnage est seul et lisible dans le cadre, rien n'a encore changé autour de lui.\n5-8s: À 5 secondes exactement, il approche le visage de l'ardoise et l'écriture est délavée jusqu'à l'illisible. Un seul changement, rien d'autre ne bouge. End state at 8s: le changement est complet et pleinement lisible, le personnage y a réagi.\n8-10s: Il recule d'un pas, regarde la vitrine, et son enthousiasme retombe d'un cran. La caméra s'immobilise. Français, voix naturelle, dite pour soi et non pour la caméra, le client : {C'était pas ça, sur le site.} End state at 10s: plan figé sur son visage, caméra immobile, aucune entrée dans le cadre.\n\nSound design: <ambiance réelle du lieu, dense> <un seul bruit de matière au moment du changement>. Deux répliques, exactement aux minutages ci-dessus : le conteur au début, le personnage à la fin. Pas de musique — elle est ajoutée au montage.",
+    "scriptHeygen": null,
+    "kit": null,
+    "heygenPrompt": null,
+    "montage": {
+      "consigne": "Assembler les trente-cinq plans dans l'ordre des identifiants, sans transition entre deux plans d'une même histoire, et avec un fondu au noir de 12 images entre deux histoires. Le générique de fin des stories est RETIRÉ de la version film : il ne sert qu'aux réseaux. Musique unique sur les 350 s, montée de deux décibels à partir de l'épisode 25 et coupée net sur le dernier plan. Voix off du conteur normalisée à −16 LUFS, dialogues des personnages à −14, ambiances à −24. Sortie 1080 × 1920, H.264, 350 s.",
+      "segments": [
+        {
+          "titre": "En cuisine",
+          "debut": 0.0,
+          "fin": 60.0,
+          "contenu": "Six plans. Le chef, de sept heures du matin au bac vide du vendredi, puis la bascule."
+        },
+        {
+          "titre": "En salle",
+          "debut": 60.0,
+          "fin": 120.0,
+          "contenu": "Six plans. Le maître d'hôtel, sa mémoire, la table de douze qui n'existait pas."
+        },
+        {
+          "titre": "Au bureau",
+          "debut": 120.0,
+          "fin": 180.0,
+          "contenu": "Six plans. Le gérant, la pile de papier, le quinze du mois suivant."
+        },
+        {
+          "titre": "À la maison",
+          "debut": 180.0,
+          "fin": 240.0,
+          "contenu": "Six plans. Le client, qui ne verra jamais le logiciel."
+        },
+        {
+          "titre": "Vendredi, 20 h 15",
+          "debut": 240.0,
+          "fin": 350.0,
+          "contenu": "Onze plans. Les quatre histoires se croisent, minute par minute, jusqu'à la chute."
+        }
+      ],
+      "livrable": "Un film de 350 s en 9:16 pour la page de la série, et trente-cinq stories de 10 s — mêmes plans, générique de fin en plus — pour les quatre réseaux."
+    },
+    "metier": null,
+    "phase": null,
+    "amplitude": null,
+    "boucle": null,
+    "boucleSlug": null,
+    "grandeBoucle": null,
+    "incident": null,
+    "incidentHeure": null,
+    "incidentQuoi": null,
+    "saumon": null,
+    "voixOff": {
+      "conteur": "La carte qu'il a lue n'était plus la bonne.",
+      "personnage": "C'était pas ça, sur le site.",
+      "generique": "Une carte qui date de mardi vous coûte le vendredi.",
+      "enchaine": "Enchaîne sur « Personne ne décroche »"
+    },
+    "story": {
+      "format": "9:16 · 1080 × 1920 · 10 s",
+      "hook": "La carte qu'il a lue n'était plus la bonne",
+      "punchline": "On est vendredi",
+      "url": null,
+      "motion": {
+        "quand": "8,5 → 10,0 s, par-dessus la fin du plan",
+        "consigne": "Générique de fin en motion design, posé sur les 1,5 dernière(s) seconde(s) du plan, sans jamais couper l'image :\n— à 8,5 s, un voile marine #0F1A23 monte du bas sur le tiers inférieur, en 0,3 s, courbe d'accélération douce ;\n— à 8,8 s, le logo FoodEatUp arrive du bas, cale au centre du voile, avec un léger dépassement puis retour (overshoot 6 %) ;\n— à 9,1 s, la punchline s'écrit sous le logo, un mot après l'autre, 0,06 s par mot, en crème #FCF9E6 ;\n— à 9,6 s, la mention « à suivre » apparaît en orange #FFA500 à droite, avec une flèche qui avance de 8 px et s'arrête ;\n— rien ne disparaît avant la fin du plan.",
+        "punchline": "Une carte qui date de mardi vous coûte le vendredi.",
+        "aSuivre": "À suivre — Personne ne décroche",
+        "voix": "Voix off française, la même que le conteur mais une note plus haute et plus proche du micro, sur les 1,5 dernière(s) seconde(s) : « Une carte qui date de mardi vous coûte le vendredi. »"
+      }
+    },
+    "carrousel": null,
+    "imageFacebook": null,
+    "tutoriel": null
+  },
+  "EP521": {
+    "publications": {
+      "facebook": {
+        "legende": "Puis vint le soir où il a appelé, et où personne n'a répondu.\n\nVingt heures dix : il appelle pour réserver à six, dont deux personnes qui ne mangent pas de fruits à coque. Tout le monde est en salle. Le téléphone sonne dans le vide.\n\nIl a rappelé le restaurant d'à côté.\n\n« Il était une fois un restaurant » — épisode 21 sur 35. Les trente-cinq bout à bout font un film de cinq minutes cinquante.\nTout FoodEatUp : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "hashtags": [
+          "restauration",
+          "foodeatup",
+          "restaurant",
+          "courtmetrage",
+          "a-la-maison"
+        ],
+        "motsCles": [
+          "le client",
+          "restauration",
+          "foodeatup",
+          "à la maison"
+        ],
+        "cta": "Découvrir FoodEatUp"
+      },
+      "instagram": {
+        "legende": "Puis vint le soir où il a appelé, et où personne n'a répondu.\n\nVingt heures dix : il appelle pour réserver à six, dont deux personnes qui ne mangent pas de fruits à coque. Tout le monde est en salle. Le téléphone sonne dans le vide.\n\nIl a rappelé le restaurant d'à côté.\n\n« Il était une fois un restaurant » — épisode 21 sur 35. Les trente-cinq bout à bout font un film de cinq minutes cinquante.\nTout FoodEatUp : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "hashtags": [
+          "restauration",
+          "foodeatup",
+          "restaurant",
+          "courtmetrage",
+          "a-la-maison"
+        ],
+        "motsCles": [
+          "le client",
+          "restauration",
+          "foodeatup",
+          "à la maison"
+        ],
+        "cta": "Découvrir FoodEatUp"
+      },
+      "tiktok": {
+        "legende": "Puis vint le soir où il a appelé, et où personne n'a répondu.\n\nVingt heures dix : il appelle pour réserver à six, dont deux personnes qui ne mangent pas de fruits à coque. Tout le monde est en salle. Le téléphone sonne dans le vide.\n\nIl a rappelé le restaurant d'à côté.\n\n« Il était une fois un restaurant » — épisode 21 sur 35. Les trente-cinq bout à bout font un film de cinq minutes cinquante.\nTout FoodEatUp : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "hashtags": [
+          "restauration",
+          "foodeatup",
+          "restaurant",
+          "courtmetrage",
+          "a-la-maison"
+        ],
+        "motsCles": [
+          "le client",
+          "restauration",
+          "foodeatup",
+          "à la maison"
+        ],
+        "cta": "Découvrir FoodEatUp"
+      },
+      "linkedin": {
+        "legende": "Puis vint le soir où il a appelé, et où personne n'a répondu.\n\nVingt heures dix : il appelle pour réserver à six, dont deux personnes qui ne mangent pas de fruits à coque. Tout le monde est en salle. Le téléphone sonne dans le vide.\n\nIl a rappelé le restaurant d'à côté.\n\n« Il était une fois un restaurant » — épisode 21 sur 35. Les trente-cinq bout à bout font un film de cinq minutes cinquante.\nTout FoodEatUp : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "hashtags": [
+          "restauration",
+          "foodeatup",
+          "restaurant",
+          "courtmetrage",
+          "a-la-maison"
+        ],
+        "motsCles": [
+          "le client",
+          "restauration",
+          "foodeatup",
+          "à la maison"
+        ],
+        "cta": "Découvrir FoodEatUp"
+      },
+      "youtube": {
+        "legende": "Puis vint le soir où il a appelé, et où personne n'a répondu.\n\nVingt heures dix : il appelle pour réserver à six, dont deux personnes qui ne mangent pas de fruits à coque. Tout le monde est en salle. Le téléphone sonne dans le vide.\n\nIl a rappelé le restaurant d'à côté.\n\n« Il était une fois un restaurant » — épisode 21 sur 35. Les trente-cinq bout à bout font un film de cinq minutes cinquante.\nTout FoodEatUp : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "hashtags": [
+          "restauration",
+          "foodeatup",
+          "restaurant",
+          "courtmetrage",
+          "a-la-maison"
+        ],
+        "motsCles": [
+          "le client",
+          "restauration",
+          "foodeatup",
+          "à la maison"
+        ],
+        "cta": "Découvrir FoodEatUp",
+        "titre": "Personne ne décroche — Il était une fois un restaurant 21/35"
+      }
+    },
+    "promptVignette": "Photo réaliste, cadrage vertical 9:16, image de cinéma : optique 40 mm, faible profondeur de champ, grain argentique léger.\n\nL'acteur de l'image de référence — MÊME visage, même barbe, même carrure. Il joue ici le client : manteau et écharpe, téléphone à la main. Décor : un appartement le soir, puis le trottoir devant le restaurant. Expression : tant pis — il ne sourit pas pour la caméra.\n\nBANDE HAUTE — marine #0F1A23 sur le cinquième supérieur, portant UNIQUEMENT « À LA MAISON » en crème #FCF9E6, typographie arrondie très grasse, centré.\n\nBANDE BASSE — crème #FCF9E6 sur le sixième inférieur, portant UNIQUEMENT « 21 / 35 » en marine #0F1A23, aligné à droite.\n\nAucun logo dessiné, aucun filigrane, aucune interface de logiciel à l'écran, aucune autre inscription.",
+    "higgsfieldPrompt": "Vertical 9:16, 10 secondes, 1080p, 24 im/s. PAS de texte incrusté, PAS de sous-titres, PAS de filigrane, PAS de logo, AUCUNE légende gravée dans l'image. Photoréaliste, image de cinéma : optique 40 mm, faible profondeur de champ, grain argentique léger, contraste tenu. Un seul plan, aucune coupe.\n\n@Image 1 ne définit que le visage de l'acteur — barbe, traits, carrure. Ne pas les modifier. Dans ce plan il joue le client : manteau et écharpe, téléphone à la main. C'est le même acteur dans les quatre histoires du film, et le film ne le dit jamais : ne rien ajouter qui le souligne.\n\nDécor : un appartement le soir, puis le trottoir devant le restaurant. Étalonnage froid et désaturé, verts tirés, hautes lumières écrêtées — l'avant du film. Les ombres mangent les bords du cadre.\n\n0-5s: Le salon, le téléphone à l'oreille, la sonnerie qu'on entend dans le combiné. Caméra portée, très lent mouvement avant. Voix off française, un homme, grave et posée, le débit d'un conteur qui connaît déjà la fin, hors champ : {Puis vint le soir où il a appelé, et où personne n'a répondu.} End state at 5s: le personnage est seul et lisible dans le cadre, rien n'a encore changé autour de lui.\n5-8s: À 5 secondes exactement, la sonnerie s'arrête net et bascule sur une voix enregistrée. Un seul changement, rien d'autre ne bouge. End state at 8s: le changement est complet et pleinement lisible, le personnage y a réagi.\n8-10s: Il éloigne le téléphone de son oreille, regarde l'écran, et raccroche. La caméra s'immobilise. Français, voix naturelle, dite pour soi et non pour la caméra, le client : {Tant pis.} End state at 10s: plan figé sur son visage, caméra immobile, aucune entrée dans le cadre.\n\nSound design: <ambiance réelle du lieu, dense> <un seul bruit de matière au moment du changement>. Deux répliques, exactement aux minutages ci-dessus : le conteur au début, le personnage à la fin. Pas de musique — elle est ajoutée au montage.",
+    "scriptHeygen": null,
+    "kit": null,
+    "heygenPrompt": null,
+    "montage": {
+      "consigne": "Assembler les trente-cinq plans dans l'ordre des identifiants, sans transition entre deux plans d'une même histoire, et avec un fondu au noir de 12 images entre deux histoires. Le générique de fin des stories est RETIRÉ de la version film : il ne sert qu'aux réseaux. Musique unique sur les 350 s, montée de deux décibels à partir de l'épisode 25 et coupée net sur le dernier plan. Voix off du conteur normalisée à −16 LUFS, dialogues des personnages à −14, ambiances à −24. Sortie 1080 × 1920, H.264, 350 s.",
+      "segments": [
+        {
+          "titre": "En cuisine",
+          "debut": 0.0,
+          "fin": 60.0,
+          "contenu": "Six plans. Le chef, de sept heures du matin au bac vide du vendredi, puis la bascule."
+        },
+        {
+          "titre": "En salle",
+          "debut": 60.0,
+          "fin": 120.0,
+          "contenu": "Six plans. Le maître d'hôtel, sa mémoire, la table de douze qui n'existait pas."
+        },
+        {
+          "titre": "Au bureau",
+          "debut": 120.0,
+          "fin": 180.0,
+          "contenu": "Six plans. Le gérant, la pile de papier, le quinze du mois suivant."
+        },
+        {
+          "titre": "À la maison",
+          "debut": 180.0,
+          "fin": 240.0,
+          "contenu": "Six plans. Le client, qui ne verra jamais le logiciel."
+        },
+        {
+          "titre": "Vendredi, 20 h 15",
+          "debut": 240.0,
+          "fin": 350.0,
+          "contenu": "Onze plans. Les quatre histoires se croisent, minute par minute, jusqu'à la chute."
+        }
+      ],
+      "livrable": "Un film de 350 s en 9:16 pour la page de la série, et trente-cinq stories de 10 s — mêmes plans, générique de fin en plus — pour les quatre réseaux."
+    },
+    "metier": null,
+    "phase": null,
+    "amplitude": null,
+    "boucle": null,
+    "boucleSlug": null,
+    "grandeBoucle": null,
+    "incident": null,
+    "incidentHeure": null,
+    "incidentQuoi": null,
+    "saumon": null,
+    "voixOff": {
+      "conteur": "Puis vint le soir où il a appelé, et où personne n'a répondu.",
+      "personnage": "Tant pis.",
+      "generique": "Le client qui n'a pas eu de réponse ne rappelle pas.",
+      "enchaine": "Enchaîne sur « Quelqu'un décroche à la première sonnerie »"
+    },
+    "story": {
+      "format": "9:16 · 1080 × 1920 · 10 s",
+      "hook": "Puis vint le soir où il a appelé, et où personne n'a répondu",
+      "punchline": "Il a rappelé le restaurant d'à côté",
+      "url": null,
+      "motion": {
+        "quand": "8,5 → 10,0 s, par-dessus la fin du plan",
+        "consigne": "Générique de fin en motion design, posé sur les 1,5 dernière(s) seconde(s) du plan, sans jamais couper l'image :\n— à 8,5 s, un voile marine #0F1A23 monte du bas sur le tiers inférieur, en 0,3 s, courbe d'accélération douce ;\n— à 8,8 s, le logo FoodEatUp arrive du bas, cale au centre du voile, avec un léger dépassement puis retour (overshoot 6 %) ;\n— à 9,1 s, la punchline s'écrit sous le logo, un mot après l'autre, 0,06 s par mot, en crème #FCF9E6 ;\n— à 9,6 s, la mention « à suivre » apparaît en orange #FFA500 à droite, avec une flèche qui avance de 8 px et s'arrête ;\n— rien ne disparaît avant la fin du plan.",
+        "punchline": "Le client qui n'a pas eu de réponse ne rappelle pas.",
+        "aSuivre": "À suivre — Quelqu'un décroche à la première sonnerie",
+        "voix": "Voix off française, la même que le conteur mais une note plus haute et plus proche du micro, sur les 1,5 dernière(s) seconde(s) : « Le client qui n'a pas eu de réponse ne rappelle pas. »"
+      }
+    },
+    "carrousel": null,
+    "imageFacebook": null,
+    "tutoriel": null
+  },
+  "EP522": {
+    "publications": {
+      "facebook": {
+        "legende": "Un soir, quelqu'un a décroché. Au premier coup.\n\nL'agent au téléphone prend l'appel en plein service, demande le nombre de couverts, l'heure et la contrainte alimentaire. La réservation arrive dans le plan de salle avec la note écrite dessus.\n\nEt on lui a demandé s'il y avait une allergie.\n\n« Il était une fois un restaurant » — épisode 22 sur 35. Les trente-cinq bout à bout font un film de cinq minutes cinquante.\nTout FoodEatUp : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "hashtags": [
+          "restauration",
+          "foodeatup",
+          "restaurant",
+          "courtmetrage",
+          "a-la-maison"
+        ],
+        "motsCles": [
+          "le client",
+          "restauration",
+          "foodeatup",
+          "à la maison"
+        ],
+        "cta": "Découvrir FoodEatUp"
+      },
+      "instagram": {
+        "legende": "Un soir, quelqu'un a décroché. Au premier coup.\n\nL'agent au téléphone prend l'appel en plein service, demande le nombre de couverts, l'heure et la contrainte alimentaire. La réservation arrive dans le plan de salle avec la note écrite dessus.\n\nEt on lui a demandé s'il y avait une allergie.\n\n« Il était une fois un restaurant » — épisode 22 sur 35. Les trente-cinq bout à bout font un film de cinq minutes cinquante.\nTout FoodEatUp : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "hashtags": [
+          "restauration",
+          "foodeatup",
+          "restaurant",
+          "courtmetrage",
+          "a-la-maison"
+        ],
+        "motsCles": [
+          "le client",
+          "restauration",
+          "foodeatup",
+          "à la maison"
+        ],
+        "cta": "Découvrir FoodEatUp"
+      },
+      "tiktok": {
+        "legende": "Un soir, quelqu'un a décroché. Au premier coup.\n\nL'agent au téléphone prend l'appel en plein service, demande le nombre de couverts, l'heure et la contrainte alimentaire. La réservation arrive dans le plan de salle avec la note écrite dessus.\n\nEt on lui a demandé s'il y avait une allergie.\n\n« Il était une fois un restaurant » — épisode 22 sur 35. Les trente-cinq bout à bout font un film de cinq minutes cinquante.\nTout FoodEatUp : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "hashtags": [
+          "restauration",
+          "foodeatup",
+          "restaurant",
+          "courtmetrage",
+          "a-la-maison"
+        ],
+        "motsCles": [
+          "le client",
+          "restauration",
+          "foodeatup",
+          "à la maison"
+        ],
+        "cta": "Découvrir FoodEatUp"
+      },
+      "linkedin": {
+        "legende": "Un soir, quelqu'un a décroché. Au premier coup.\n\nL'agent au téléphone prend l'appel en plein service, demande le nombre de couverts, l'heure et la contrainte alimentaire. La réservation arrive dans le plan de salle avec la note écrite dessus.\n\nEt on lui a demandé s'il y avait une allergie.\n\n« Il était une fois un restaurant » — épisode 22 sur 35. Les trente-cinq bout à bout font un film de cinq minutes cinquante.\nTout FoodEatUp : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "hashtags": [
+          "restauration",
+          "foodeatup",
+          "restaurant",
+          "courtmetrage",
+          "a-la-maison"
+        ],
+        "motsCles": [
+          "le client",
+          "restauration",
+          "foodeatup",
+          "à la maison"
+        ],
+        "cta": "Découvrir FoodEatUp"
+      },
+      "youtube": {
+        "legende": "Un soir, quelqu'un a décroché. Au premier coup.\n\nL'agent au téléphone prend l'appel en plein service, demande le nombre de couverts, l'heure et la contrainte alimentaire. La réservation arrive dans le plan de salle avec la note écrite dessus.\n\nEt on lui a demandé s'il y avait une allergie.\n\n« Il était une fois un restaurant » — épisode 22 sur 35. Les trente-cinq bout à bout font un film de cinq minutes cinquante.\nTout FoodEatUp : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "hashtags": [
+          "restauration",
+          "foodeatup",
+          "restaurant",
+          "courtmetrage",
+          "a-la-maison"
+        ],
+        "motsCles": [
+          "le client",
+          "restauration",
+          "foodeatup",
+          "à la maison"
+        ],
+        "cta": "Découvrir FoodEatUp",
+        "titre": "Quelqu'un décroche à la première sonnerie — Il était une fois un restaurant 22/35"
+      }
+    },
+    "promptVignette": "Photo réaliste, cadrage vertical 9:16, image de cinéma : optique 40 mm, faible profondeur de champ, grain argentique léger.\n\nL'acteur de l'image de référence — MÊME visage, même barbe, même carrure. Il joue ici le client : manteau et écharpe, téléphone à la main. Décor : un appartement le soir, puis le trottoir devant le restaurant. Expression : six. et deux sans fruits à coque, oui — il ne sourit pas pour la caméra.\n\nBANDE HAUTE — marine #0F1A23 sur le cinquième supérieur, portant UNIQUEMENT « À LA MAISON » en crème #FCF9E6, typographie arrondie très grasse, centré.\n\nBANDE BASSE — crème #FCF9E6 sur le sixième inférieur, portant UNIQUEMENT « 22 / 35 » en marine #0F1A23, aligné à droite.\n\nAucun logo dessiné, aucun filigrane, aucune interface de logiciel à l'écran, aucune autre inscription.",
+    "higgsfieldPrompt": "Vertical 9:16, 10 secondes, 1080p, 24 im/s. PAS de texte incrusté, PAS de sous-titres, PAS de filigrane, PAS de logo, AUCUNE légende gravée dans l'image. Photoréaliste, image de cinéma : optique 40 mm, faible profondeur de champ, grain argentique léger, contraste tenu. Un seul plan, aucune coupe.\n\n@Image 1 ne définit que le visage de l'acteur — barbe, traits, carrure. Ne pas les modifier. Dans ce plan il joue le client : manteau et écharpe, téléphone à la main. C'est le même acteur dans les quatre histoires du film, et le film ne le dit jamais : ne rien ajouter qui le souligne.\n\nDécor : un appartement le soir, puis le trottoir devant le restaurant. L'étalonnage change à l'intérieur du plan : froid au départ, il se réchauffe à partir de 5 s sans que rien d'autre ne bouge.\n\n0-5s: Le salon, la même lampe, le téléphone à l'oreille — mais il sourit. Caméra portée, très lent mouvement avant. Voix off française, un homme, grave et posée, le débit d'un conteur qui connaît déjà la fin, hors champ : {Un soir, quelqu'un a décroché. Au premier coup.} End state at 5s: le personnage est seul et lisible dans le cadre, rien n'a encore changé autour de lui.\n5-8s: À 5 secondes exactement, il attrape un stylo par réflexe, puis le repose : il n'a rien à noter. Un seul changement, rien d'autre ne bouge. End state at 8s: le changement est complet et pleinement lisible, le personnage y a réagi.\n8-10s: Il raccroche et reste une seconde le téléphone à la main, un peu étonné. La caméra s'immobilise. Français, voix naturelle, dite pour soi et non pour la caméra, le client : {Six. Et deux sans fruits à coque, oui.} End state at 10s: plan figé sur son visage, caméra immobile, aucune entrée dans le cadre.\n\nSound design: <ambiance réelle du lieu, dense> <un seul bruit de matière au moment du changement>. Deux répliques, exactement aux minutages ci-dessus : le conteur au début, le personnage à la fin. Pas de musique — elle est ajoutée au montage.",
+    "scriptHeygen": null,
+    "kit": null,
+    "heygenPrompt": null,
+    "montage": {
+      "consigne": "Assembler les trente-cinq plans dans l'ordre des identifiants, sans transition entre deux plans d'une même histoire, et avec un fondu au noir de 12 images entre deux histoires. Le générique de fin des stories est RETIRÉ de la version film : il ne sert qu'aux réseaux. Musique unique sur les 350 s, montée de deux décibels à partir de l'épisode 25 et coupée net sur le dernier plan. Voix off du conteur normalisée à −16 LUFS, dialogues des personnages à −14, ambiances à −24. Sortie 1080 × 1920, H.264, 350 s.",
+      "segments": [
+        {
+          "titre": "En cuisine",
+          "debut": 0.0,
+          "fin": 60.0,
+          "contenu": "Six plans. Le chef, de sept heures du matin au bac vide du vendredi, puis la bascule."
+        },
+        {
+          "titre": "En salle",
+          "debut": 60.0,
+          "fin": 120.0,
+          "contenu": "Six plans. Le maître d'hôtel, sa mémoire, la table de douze qui n'existait pas."
+        },
+        {
+          "titre": "Au bureau",
+          "debut": 120.0,
+          "fin": 180.0,
+          "contenu": "Six plans. Le gérant, la pile de papier, le quinze du mois suivant."
+        },
+        {
+          "titre": "À la maison",
+          "debut": 180.0,
+          "fin": 240.0,
+          "contenu": "Six plans. Le client, qui ne verra jamais le logiciel."
+        },
+        {
+          "titre": "Vendredi, 20 h 15",
+          "debut": 240.0,
+          "fin": 350.0,
+          "contenu": "Onze plans. Les quatre histoires se croisent, minute par minute, jusqu'à la chute."
+        }
+      ],
+      "livrable": "Un film de 350 s en 9:16 pour la page de la série, et trente-cinq stories de 10 s — mêmes plans, générique de fin en plus — pour les quatre réseaux."
+    },
+    "metier": null,
+    "phase": null,
+    "amplitude": null,
+    "boucle": null,
+    "boucleSlug": null,
+    "grandeBoucle": null,
+    "incident": null,
+    "incidentHeure": null,
+    "incidentQuoi": null,
+    "saumon": null,
+    "voixOff": {
+      "conteur": "Un soir, quelqu'un a décroché. Au premier coup.",
+      "personnage": "Six. Et deux sans fruits à coque, oui.",
+      "generique": "Décrocher à la première sonnerie, même en plein coup de feu.",
+      "enchaine": "Enchaîne sur « La table était prête à son nom »"
+    },
+    "story": {
+      "format": "9:16 · 1080 × 1920 · 10 s",
+      "hook": "Un soir, quelqu'un a décroché. Au premier coup",
+      "punchline": "Et on lui a demandé s'il y avait une allergie",
+      "url": null,
+      "motion": {
+        "quand": "8,5 → 10,0 s, par-dessus la fin du plan",
+        "consigne": "Générique de fin en motion design, posé sur les 1,5 dernière(s) seconde(s) du plan, sans jamais couper l'image :\n— à 8,5 s, un voile marine #0F1A23 monte du bas sur le tiers inférieur, en 0,3 s, courbe d'accélération douce ;\n— à 8,8 s, le logo FoodEatUp arrive du bas, cale au centre du voile, avec un léger dépassement puis retour (overshoot 6 %) ;\n— à 9,1 s, la punchline s'écrit sous le logo, un mot après l'autre, 0,06 s par mot, en crème #FCF9E6 ;\n— à 9,6 s, la mention « à suivre » apparaît en orange #FFA500 à droite, avec une flèche qui avance de 8 px et s'arrête ;\n— rien ne disparaît avant la fin du plan.",
+        "punchline": "Décrocher à la première sonnerie, même en plein coup de feu.",
+        "aSuivre": "À suivre — La table était prête à son nom",
+        "voix": "Voix off française, la même que le conteur mais une note plus haute et plus proche du micro, sur les 1,5 dernière(s) seconde(s) : « Décrocher à la première sonnerie, même en plein coup de feu. »"
+      }
+    },
+    "carrousel": null,
+    "imageFacebook": null,
+    "tutoriel": null
+  },
+  "EP523": {
+    "publications": {
+      "facebook": {
+        "legende": "Il n'a rien eu à expliquer en arrivant.\n\nLa table est prête, l'allergie est notée, personne ne lui redemande rien. Tout ce que le logiciel a fait, il ne le verra pas — il verra qu'on ne lui a rien redemandé.\n\nC'était déjà écrit.\n\n« Il était une fois un restaurant » — épisode 23 sur 35. Les trente-cinq bout à bout font un film de cinq minutes cinquante.\nTout FoodEatUp : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "hashtags": [
+          "restauration",
+          "foodeatup",
+          "restaurant",
+          "courtmetrage",
+          "a-la-maison"
+        ],
+        "motsCles": [
+          "le client",
+          "restauration",
+          "foodeatup",
+          "à la maison"
+        ],
+        "cta": "Découvrir FoodEatUp"
+      },
+      "instagram": {
+        "legende": "Il n'a rien eu à expliquer en arrivant.\n\nLa table est prête, l'allergie est notée, personne ne lui redemande rien. Tout ce que le logiciel a fait, il ne le verra pas — il verra qu'on ne lui a rien redemandé.\n\nC'était déjà écrit.\n\n« Il était une fois un restaurant » — épisode 23 sur 35. Les trente-cinq bout à bout font un film de cinq minutes cinquante.\nTout FoodEatUp : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "hashtags": [
+          "restauration",
+          "foodeatup",
+          "restaurant",
+          "courtmetrage",
+          "a-la-maison"
+        ],
+        "motsCles": [
+          "le client",
+          "restauration",
+          "foodeatup",
+          "à la maison"
+        ],
+        "cta": "Découvrir FoodEatUp"
+      },
+      "tiktok": {
+        "legende": "Il n'a rien eu à expliquer en arrivant.\n\nLa table est prête, l'allergie est notée, personne ne lui redemande rien. Tout ce que le logiciel a fait, il ne le verra pas — il verra qu'on ne lui a rien redemandé.\n\nC'était déjà écrit.\n\n« Il était une fois un restaurant » — épisode 23 sur 35. Les trente-cinq bout à bout font un film de cinq minutes cinquante.\nTout FoodEatUp : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "hashtags": [
+          "restauration",
+          "foodeatup",
+          "restaurant",
+          "courtmetrage",
+          "a-la-maison"
+        ],
+        "motsCles": [
+          "le client",
+          "restauration",
+          "foodeatup",
+          "à la maison"
+        ],
+        "cta": "Découvrir FoodEatUp"
+      },
+      "linkedin": {
+        "legende": "Il n'a rien eu à expliquer en arrivant.\n\nLa table est prête, l'allergie est notée, personne ne lui redemande rien. Tout ce que le logiciel a fait, il ne le verra pas — il verra qu'on ne lui a rien redemandé.\n\nC'était déjà écrit.\n\n« Il était une fois un restaurant » — épisode 23 sur 35. Les trente-cinq bout à bout font un film de cinq minutes cinquante.\nTout FoodEatUp : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "hashtags": [
+          "restauration",
+          "foodeatup",
+          "restaurant",
+          "courtmetrage",
+          "a-la-maison"
+        ],
+        "motsCles": [
+          "le client",
+          "restauration",
+          "foodeatup",
+          "à la maison"
+        ],
+        "cta": "Découvrir FoodEatUp"
+      },
+      "youtube": {
+        "legende": "Il n'a rien eu à expliquer en arrivant.\n\nLa table est prête, l'allergie est notée, personne ne lui redemande rien. Tout ce que le logiciel a fait, il ne le verra pas — il verra qu'on ne lui a rien redemandé.\n\nC'était déjà écrit.\n\n« Il était une fois un restaurant » — épisode 23 sur 35. Les trente-cinq bout à bout font un film de cinq minutes cinquante.\nTout FoodEatUp : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "hashtags": [
+          "restauration",
+          "foodeatup",
+          "restaurant",
+          "courtmetrage",
+          "a-la-maison"
+        ],
+        "motsCles": [
+          "le client",
+          "restauration",
+          "foodeatup",
+          "à la maison"
+        ],
+        "cta": "Découvrir FoodEatUp",
+        "titre": "La table était prête à son nom — Il était une fois un restaurant 23/35"
+      }
+    },
+    "promptVignette": "Photo réaliste, cadrage vertical 9:16, image de cinéma : optique 40 mm, faible profondeur de champ, grain argentique léger.\n\nL'acteur de l'image de référence — MÊME visage, même barbe, même carrure. Il joue ici le client : manteau et écharpe, téléphone à la main. Décor : un appartement le soir, puis le trottoir devant le restaurant. Expression : vous aviez noté ? — il ne sourit pas pour la caméra.\n\nBANDE HAUTE — marine #0F1A23 sur le cinquième supérieur, portant UNIQUEMENT « À LA MAISON » en crème #FCF9E6, typographie arrondie très grasse, centré.\n\nBANDE BASSE — crème #FCF9E6 sur le sixième inférieur, portant UNIQUEMENT « 23 / 35 » en marine #0F1A23, aligné à droite.\n\nAucun logo dessiné, aucun filigrane, aucune interface de logiciel à l'écran, aucune autre inscription.",
+    "higgsfieldPrompt": "Vertical 9:16, 10 secondes, 1080p, 24 im/s. PAS de texte incrusté, PAS de sous-titres, PAS de filigrane, PAS de logo, AUCUNE légende gravée dans l'image. Photoréaliste, image de cinéma : optique 40 mm, faible profondeur de champ, grain argentique léger, contraste tenu. Un seul plan, aucune coupe.\n\n@Image 1 ne définit que le visage de l'acteur — barbe, traits, carrure. Ne pas les modifier. Dans ce plan il joue le client : manteau et écharpe, téléphone à la main. C'est le même acteur dans les quatre histoires du film, et le film ne le dit jamais : ne rien ajouter qui le souligne.\n\nDécor : un appartement le soir, puis le trottoir devant le restaurant. Étalonnage chaud et tenu, blancs propres, noirs ouverts — l'après du film. La lumière vient d'une source unique et douce.\n\n0-5s: L'entrée du restaurant, la nuit, le manteau encore sur les épaules. Caméra portée, très lent mouvement avant. Voix off française, un homme, grave et posée, le débit d'un conteur qui connaît déjà la fin, hors champ : {Il n'a rien eu à expliquer en arrivant.} End state at 5s: le personnage est seul et lisible dans le cadre, rien n'a encore changé autour de lui.\n5-8s: À 5 secondes exactement, on lui prend son manteau et on lui montre une table déjà dressée pour six. Un seul changement, rien d'autre ne bouge. End state at 8s: le changement est complet et pleinement lisible, le personnage y a réagi.\n8-10s: Il s'assied, regarde la table autour de lui, et desserre son écharpe. La caméra s'immobilise. Français, voix naturelle, dite pour soi et non pour la caméra, le client : {Vous aviez noté ?} End state at 10s: plan figé sur son visage, caméra immobile, aucune entrée dans le cadre.\n\nSound design: <ambiance réelle du lieu, dense> <un seul bruit de matière au moment du changement>. Deux répliques, exactement aux minutages ci-dessus : le conteur au début, le personnage à la fin. Pas de musique — elle est ajoutée au montage.",
+    "scriptHeygen": null,
+    "kit": null,
+    "heygenPrompt": null,
+    "montage": {
+      "consigne": "Assembler les trente-cinq plans dans l'ordre des identifiants, sans transition entre deux plans d'une même histoire, et avec un fondu au noir de 12 images entre deux histoires. Le générique de fin des stories est RETIRÉ de la version film : il ne sert qu'aux réseaux. Musique unique sur les 350 s, montée de deux décibels à partir de l'épisode 25 et coupée net sur le dernier plan. Voix off du conteur normalisée à −16 LUFS, dialogues des personnages à −14, ambiances à −24. Sortie 1080 × 1920, H.264, 350 s.",
+      "segments": [
+        {
+          "titre": "En cuisine",
+          "debut": 0.0,
+          "fin": 60.0,
+          "contenu": "Six plans. Le chef, de sept heures du matin au bac vide du vendredi, puis la bascule."
+        },
+        {
+          "titre": "En salle",
+          "debut": 60.0,
+          "fin": 120.0,
+          "contenu": "Six plans. Le maître d'hôtel, sa mémoire, la table de douze qui n'existait pas."
+        },
+        {
+          "titre": "Au bureau",
+          "debut": 120.0,
+          "fin": 180.0,
+          "contenu": "Six plans. Le gérant, la pile de papier, le quinze du mois suivant."
+        },
+        {
+          "titre": "À la maison",
+          "debut": 180.0,
+          "fin": 240.0,
+          "contenu": "Six plans. Le client, qui ne verra jamais le logiciel."
+        },
+        {
+          "titre": "Vendredi, 20 h 15",
+          "debut": 240.0,
+          "fin": 350.0,
+          "contenu": "Onze plans. Les quatre histoires se croisent, minute par minute, jusqu'à la chute."
+        }
+      ],
+      "livrable": "Un film de 350 s en 9:16 pour la page de la série, et trente-cinq stories de 10 s — mêmes plans, générique de fin en plus — pour les quatre réseaux."
+    },
+    "metier": null,
+    "phase": null,
+    "amplitude": null,
+    "boucle": null,
+    "boucleSlug": null,
+    "grandeBoucle": null,
+    "incident": null,
+    "incidentHeure": null,
+    "incidentQuoi": null,
+    "saumon": null,
+    "voixOff": {
+      "conteur": "Il n'a rien eu à expliquer en arrivant.",
+      "personnage": "Vous aviez noté ?",
+      "generique": "Ce qu'il ne remarque pas, c'est exactement ce qui le fait revenir.",
+      "enchaine": "Enchaîne sur « Vingt-trois heures, dans le métro »"
+    },
+    "story": {
+      "format": "9:16 · 1080 × 1920 · 10 s",
+      "hook": "Il n'a rien eu à expliquer en arrivant",
+      "punchline": "C'était déjà écrit",
+      "url": null,
+      "motion": {
+        "quand": "8,5 → 10,0 s, par-dessus la fin du plan",
+        "consigne": "Générique de fin en motion design, posé sur les 1,5 dernière(s) seconde(s) du plan, sans jamais couper l'image :\n— à 8,5 s, un voile marine #0F1A23 monte du bas sur le tiers inférieur, en 0,3 s, courbe d'accélération douce ;\n— à 8,8 s, le logo FoodEatUp arrive du bas, cale au centre du voile, avec un léger dépassement puis retour (overshoot 6 %) ;\n— à 9,1 s, la punchline s'écrit sous le logo, un mot après l'autre, 0,06 s par mot, en crème #FCF9E6 ;\n— à 9,6 s, la mention « à suivre » apparaît en orange #FFA500 à droite, avec une flèche qui avance de 8 px et s'arrête ;\n— rien ne disparaît avant la fin du plan.",
+        "punchline": "Ce qu'il ne remarque pas, c'est exactement ce qui le fait revenir.",
+        "aSuivre": "À suivre — Vingt-trois heures, dans le métro",
+        "voix": "Voix off française, la même que le conteur mais une note plus haute et plus proche du micro, sur les 1,5 dernière(s) seconde(s) : « Ce qu'il ne remarque pas, c'est exactement ce qui le fait revenir. »"
+      }
+    },
+    "carrousel": null,
+    "imageFacebook": null,
+    "tutoriel": null
+  },
+  "EP524": {
+    "publications": {
+      "facebook": {
+        "legende": "Ce qu'il écrit le soir vaut le service entier.\n\nVingt-trois heures, dans le métro, il note le restaurant. Personne en salle ne saura jamais que ça s'est joué sur une allergie notée trois jours plus tôt.\n\nCinq étoiles, et il ne saura jamais pourquoi.\n\n« Il était une fois un restaurant » — épisode 24 sur 35. Les trente-cinq bout à bout font un film de cinq minutes cinquante.\nTout FoodEatUp : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "hashtags": [
+          "restauration",
+          "foodeatup",
+          "restaurant",
+          "courtmetrage",
+          "a-la-maison"
+        ],
+        "motsCles": [
+          "le client",
+          "restauration",
+          "foodeatup",
+          "à la maison"
+        ],
+        "cta": "Découvrir FoodEatUp"
+      },
+      "instagram": {
+        "legende": "Ce qu'il écrit le soir vaut le service entier.\n\nVingt-trois heures, dans le métro, il note le restaurant. Personne en salle ne saura jamais que ça s'est joué sur une allergie notée trois jours plus tôt.\n\nCinq étoiles, et il ne saura jamais pourquoi.\n\n« Il était une fois un restaurant » — épisode 24 sur 35. Les trente-cinq bout à bout font un film de cinq minutes cinquante.\nTout FoodEatUp : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "hashtags": [
+          "restauration",
+          "foodeatup",
+          "restaurant",
+          "courtmetrage",
+          "a-la-maison"
+        ],
+        "motsCles": [
+          "le client",
+          "restauration",
+          "foodeatup",
+          "à la maison"
+        ],
+        "cta": "Découvrir FoodEatUp"
+      },
+      "tiktok": {
+        "legende": "Ce qu'il écrit le soir vaut le service entier.\n\nVingt-trois heures, dans le métro, il note le restaurant. Personne en salle ne saura jamais que ça s'est joué sur une allergie notée trois jours plus tôt.\n\nCinq étoiles, et il ne saura jamais pourquoi.\n\n« Il était une fois un restaurant » — épisode 24 sur 35. Les trente-cinq bout à bout font un film de cinq minutes cinquante.\nTout FoodEatUp : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "hashtags": [
+          "restauration",
+          "foodeatup",
+          "restaurant",
+          "courtmetrage",
+          "a-la-maison"
+        ],
+        "motsCles": [
+          "le client",
+          "restauration",
+          "foodeatup",
+          "à la maison"
+        ],
+        "cta": "Découvrir FoodEatUp"
+      },
+      "linkedin": {
+        "legende": "Ce qu'il écrit le soir vaut le service entier.\n\nVingt-trois heures, dans le métro, il note le restaurant. Personne en salle ne saura jamais que ça s'est joué sur une allergie notée trois jours plus tôt.\n\nCinq étoiles, et il ne saura jamais pourquoi.\n\n« Il était une fois un restaurant » — épisode 24 sur 35. Les trente-cinq bout à bout font un film de cinq minutes cinquante.\nTout FoodEatUp : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "hashtags": [
+          "restauration",
+          "foodeatup",
+          "restaurant",
+          "courtmetrage",
+          "a-la-maison"
+        ],
+        "motsCles": [
+          "le client",
+          "restauration",
+          "foodeatup",
+          "à la maison"
+        ],
+        "cta": "Découvrir FoodEatUp"
+      },
+      "youtube": {
+        "legende": "Ce qu'il écrit le soir vaut le service entier.\n\nVingt-trois heures, dans le métro, il note le restaurant. Personne en salle ne saura jamais que ça s'est joué sur une allergie notée trois jours plus tôt.\n\nCinq étoiles, et il ne saura jamais pourquoi.\n\n« Il était une fois un restaurant » — épisode 24 sur 35. Les trente-cinq bout à bout font un film de cinq minutes cinquante.\nTout FoodEatUp : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "hashtags": [
+          "restauration",
+          "foodeatup",
+          "restaurant",
+          "courtmetrage",
+          "a-la-maison"
+        ],
+        "motsCles": [
+          "le client",
+          "restauration",
+          "foodeatup",
+          "à la maison"
+        ],
+        "cta": "Découvrir FoodEatUp",
+        "titre": "Vingt-trois heures, dans le métro — Il était une fois un restaurant 24/35"
+      }
+    },
+    "promptVignette": "Photo réaliste, cadrage vertical 9:16, image de cinéma : optique 40 mm, faible profondeur de champ, grain argentique léger.\n\nL'acteur de l'image de référence — MÊME visage, même barbe, même carrure. Il joue ici le client : manteau et écharpe, téléphone à la main. Décor : un appartement le soir, puis le trottoir devant le restaurant. Expression : franchement, c'était très bien — il ne sourit pas pour la caméra.\n\nBANDE HAUTE — marine #0F1A23 sur le cinquième supérieur, portant UNIQUEMENT « À LA MAISON » en crème #FCF9E6, typographie arrondie très grasse, centré.\n\nBANDE BASSE — crème #FCF9E6 sur le sixième inférieur, portant UNIQUEMENT « 24 / 35 » en marine #0F1A23, aligné à droite.\n\nAucun logo dessiné, aucun filigrane, aucune interface de logiciel à l'écran, aucune autre inscription.",
+    "higgsfieldPrompt": "Vertical 9:16, 10 secondes, 1080p, 24 im/s. PAS de texte incrusté, PAS de sous-titres, PAS de filigrane, PAS de logo, AUCUNE légende gravée dans l'image. Photoréaliste, image de cinéma : optique 40 mm, faible profondeur de champ, grain argentique léger, contraste tenu. Un seul plan, aucune coupe.\n\n@Image 1 ne définit que le visage de l'acteur — barbe, traits, carrure. Ne pas les modifier. Dans ce plan il joue le client : manteau et écharpe, téléphone à la main. C'est le même acteur dans les quatre histoires du film, et le film ne le dit jamais : ne rien ajouter qui le souligne.\n\nDécor : un appartement le soir, puis le trottoir devant le restaurant. Étalonnage chaud et tenu, blancs propres, noirs ouverts — l'après du film. La lumière vient d'une source unique et douce.\n\n0-5s: Une rame de métro la nuit, néons, un visage éclairé par un téléphone. Caméra portée, très lent mouvement avant. Voix off française, un homme, grave et posée, le débit d'un conteur qui connaît déjà la fin, hors champ : {Ce qu'il écrit le soir vaut le service entier.} End state at 5s: le personnage est seul et lisible dans le cadre, rien n'a encore changé autour de lui.\n5-8s: À 5 secondes exactement, son pouce s'arrête sur la cinquième étoile et appuie. Un seul changement, rien d'autre ne bouge. End state at 8s: le changement est complet et pleinement lisible, le personnage y a réagi.\n8-10s: Il range le téléphone dans sa poche et regarde la nuit défiler par la vitre. La caméra s'immobilise. Français, voix naturelle, dite pour soi et non pour la caméra, le client : {Franchement, c'était très bien.} End state at 10s: plan figé sur son visage, caméra immobile, aucune entrée dans le cadre.\n\nSound design: <ambiance réelle du lieu, dense> <un seul bruit de matière au moment du changement>. Deux répliques, exactement aux minutages ci-dessus : le conteur au début, le personnage à la fin. Pas de musique — elle est ajoutée au montage.",
+    "scriptHeygen": null,
+    "kit": null,
+    "heygenPrompt": null,
+    "montage": {
+      "consigne": "Assembler les trente-cinq plans dans l'ordre des identifiants, sans transition entre deux plans d'une même histoire, et avec un fondu au noir de 12 images entre deux histoires. Le générique de fin des stories est RETIRÉ de la version film : il ne sert qu'aux réseaux. Musique unique sur les 350 s, montée de deux décibels à partir de l'épisode 25 et coupée net sur le dernier plan. Voix off du conteur normalisée à −16 LUFS, dialogues des personnages à −14, ambiances à −24. Sortie 1080 × 1920, H.264, 350 s.",
+      "segments": [
+        {
+          "titre": "En cuisine",
+          "debut": 0.0,
+          "fin": 60.0,
+          "contenu": "Six plans. Le chef, de sept heures du matin au bac vide du vendredi, puis la bascule."
+        },
+        {
+          "titre": "En salle",
+          "debut": 60.0,
+          "fin": 120.0,
+          "contenu": "Six plans. Le maître d'hôtel, sa mémoire, la table de douze qui n'existait pas."
+        },
+        {
+          "titre": "Au bureau",
+          "debut": 120.0,
+          "fin": 180.0,
+          "contenu": "Six plans. Le gérant, la pile de papier, le quinze du mois suivant."
+        },
+        {
+          "titre": "À la maison",
+          "debut": 180.0,
+          "fin": 240.0,
+          "contenu": "Six plans. Le client, qui ne verra jamais le logiciel."
+        },
+        {
+          "titre": "Vendredi, 20 h 15",
+          "debut": 240.0,
+          "fin": 350.0,
+          "contenu": "Onze plans. Les quatre histoires se croisent, minute par minute, jusqu'à la chute."
+        }
+      ],
+      "livrable": "Un film de 350 s en 9:16 pour la page de la série, et trente-cinq stories de 10 s — mêmes plans, générique de fin en plus — pour les quatre réseaux."
+    },
+    "metier": null,
+    "phase": null,
+    "amplitude": null,
+    "boucle": null,
+    "boucleSlug": null,
+    "grandeBoucle": null,
+    "incident": null,
+    "incidentHeure": null,
+    "incidentQuoi": null,
+    "saumon": null,
+    "voixOff": {
+      "conteur": "Ce qu'il écrit le soir vaut le service entier.",
+      "personnage": "Franchement, c'était très bien.",
+      "generique": "Un avis, c'est un service entier qui remonte.",
+      "enchaine": "Enchaîne sur « Le même soir, quatre fois »"
+    },
+    "story": {
+      "format": "9:16 · 1080 × 1920 · 10 s",
+      "hook": "Ce qu'il écrit le soir vaut le service entier",
+      "punchline": "Cinq étoiles, et il ne saura jamais pourquoi",
+      "url": null,
+      "motion": {
+        "quand": "8,5 → 10,0 s, par-dessus la fin du plan",
+        "consigne": "Générique de fin en motion design, posé sur les 1,5 dernière(s) seconde(s) du plan, sans jamais couper l'image :\n— à 8,5 s, un voile marine #0F1A23 monte du bas sur le tiers inférieur, en 0,3 s, courbe d'accélération douce ;\n— à 8,8 s, le logo FoodEatUp arrive du bas, cale au centre du voile, avec un léger dépassement puis retour (overshoot 6 %) ;\n— à 9,1 s, la punchline s'écrit sous le logo, un mot après l'autre, 0,06 s par mot, en crème #FCF9E6 ;\n— à 9,6 s, la mention « à suivre » apparaît en orange #FFA500 à droite, avec une flèche qui avance de 8 px et s'arrête ;\n— rien ne disparaît avant la fin du plan.",
+        "punchline": "Un avis, c'est un service entier qui remonte.",
+        "aSuivre": "À suivre — Le même soir, quatre fois",
+        "voix": "Voix off française, la même que le conteur mais une note plus haute et plus proche du micro, sur les 1,5 dernière(s) seconde(s) : « Un avis, c'est un service entier qui remonte. »"
+      }
+    },
+    "carrousel": null,
+    "imageFacebook": null,
+    "tutoriel": null
+  },
+  "EP525": {
+    "publications": {
+      "facebook": {
+        "legende": "Ce que vous venez de voir se passait le même soir. Vendredi.\n\nQuatre histoires, quatre lieux, un seul vendredi. Le film reprend à dix-huit heures, et cette fois on les voit tous les quatre en même temps.\n\nAucun des quatre ne sait que les trois autres existent.\n\n« Il était une fois un restaurant » — épisode 25 sur 35. Les trente-cinq bout à bout font un film de cinq minutes cinquante.\nTout FoodEatUp : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "hashtags": [
+          "restauration",
+          "foodeatup",
+          "restaurant",
+          "courtmetrage",
+          "vendredi-20-h-15"
+        ],
+        "motsCles": [
+          "service",
+          "restauration",
+          "foodeatup",
+          "vendredi, 20 h 15"
+        ],
+        "cta": "Découvrir FoodEatUp"
+      },
+      "instagram": {
+        "legende": "Ce que vous venez de voir se passait le même soir. Vendredi.\n\nQuatre histoires, quatre lieux, un seul vendredi. Le film reprend à dix-huit heures, et cette fois on les voit tous les quatre en même temps.\n\nAucun des quatre ne sait que les trois autres existent.\n\n« Il était une fois un restaurant » — épisode 25 sur 35. Les trente-cinq bout à bout font un film de cinq minutes cinquante.\nTout FoodEatUp : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "hashtags": [
+          "restauration",
+          "foodeatup",
+          "restaurant",
+          "courtmetrage",
+          "vendredi-20-h-15"
+        ],
+        "motsCles": [
+          "service",
+          "restauration",
+          "foodeatup",
+          "vendredi, 20 h 15"
+        ],
+        "cta": "Découvrir FoodEatUp"
+      },
+      "tiktok": {
+        "legende": "Ce que vous venez de voir se passait le même soir. Vendredi.\n\nQuatre histoires, quatre lieux, un seul vendredi. Le film reprend à dix-huit heures, et cette fois on les voit tous les quatre en même temps.\n\nAucun des quatre ne sait que les trois autres existent.\n\n« Il était une fois un restaurant » — épisode 25 sur 35. Les trente-cinq bout à bout font un film de cinq minutes cinquante.\nTout FoodEatUp : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "hashtags": [
+          "restauration",
+          "foodeatup",
+          "restaurant",
+          "courtmetrage",
+          "vendredi-20-h-15"
+        ],
+        "motsCles": [
+          "service",
+          "restauration",
+          "foodeatup",
+          "vendredi, 20 h 15"
+        ],
+        "cta": "Découvrir FoodEatUp"
+      },
+      "linkedin": {
+        "legende": "Ce que vous venez de voir se passait le même soir. Vendredi.\n\nQuatre histoires, quatre lieux, un seul vendredi. Le film reprend à dix-huit heures, et cette fois on les voit tous les quatre en même temps.\n\nAucun des quatre ne sait que les trois autres existent.\n\n« Il était une fois un restaurant » — épisode 25 sur 35. Les trente-cinq bout à bout font un film de cinq minutes cinquante.\nTout FoodEatUp : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "hashtags": [
+          "restauration",
+          "foodeatup",
+          "restaurant",
+          "courtmetrage",
+          "vendredi-20-h-15"
+        ],
+        "motsCles": [
+          "service",
+          "restauration",
+          "foodeatup",
+          "vendredi, 20 h 15"
+        ],
+        "cta": "Découvrir FoodEatUp"
+      },
+      "youtube": {
+        "legende": "Ce que vous venez de voir se passait le même soir. Vendredi.\n\nQuatre histoires, quatre lieux, un seul vendredi. Le film reprend à dix-huit heures, et cette fois on les voit tous les quatre en même temps.\n\nAucun des quatre ne sait que les trois autres existent.\n\n« Il était une fois un restaurant » — épisode 25 sur 35. Les trente-cinq bout à bout font un film de cinq minutes cinquante.\nTout FoodEatUp : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "hashtags": [
+          "restauration",
+          "foodeatup",
+          "restaurant",
+          "courtmetrage",
+          "vendredi-20-h-15"
+        ],
+        "motsCles": [
+          "service",
+          "restauration",
+          "foodeatup",
+          "vendredi, 20 h 15"
+        ],
+        "cta": "Découvrir FoodEatUp",
+        "titre": "Le même soir, quatre fois — Il était une fois un restaurant 25/35"
+      }
+    },
+    "promptVignette": "Photo réaliste, cadrage vertical 9:16, image de cinéma : optique 40 mm, faible profondeur de champ, grain argentique léger.\n\nL'acteur de l'image de référence — MÊME visage, même barbe, même carrure. Il joue ici les quatre : les quatre tenues, selon le personnage à l'image. Décor : le restaurant entier, de la cuisine au trottoir. Expression : vendredi. dix-huit heures — il ne sourit pas pour la caméra.\n\nBANDE HAUTE — marine #0F1A23 sur le cinquième supérieur, portant UNIQUEMENT « VENDREDI, 20 H 15 » en crème #FCF9E6, typographie arrondie très grasse, centré.\n\nBANDE BASSE — crème #FCF9E6 sur le sixième inférieur, portant UNIQUEMENT « 25 / 35 » en marine #0F1A23, aligné à droite.\n\nAucun logo dessiné, aucun filigrane, aucune interface de logiciel à l'écran, aucune autre inscription.",
+    "higgsfieldPrompt": "Vertical 9:16, 10 secondes, 1080p, 24 im/s. PAS de texte incrusté, PAS de sous-titres, PAS de filigrane, PAS de logo, AUCUNE légende gravée dans l'image. Photoréaliste, image de cinéma : optique 40 mm, faible profondeur de champ, grain argentique léger, contraste tenu. Un seul plan, aucune coupe.\n\n@Image 1 ne définit que le visage de l'acteur — barbe, traits, carrure. Ne pas les modifier. Dans ce plan il joue les quatre : les quatre tenues, selon le personnage à l'image. C'est le même acteur dans les quatre histoires du film, et le film ne le dit jamais : ne rien ajouter qui le souligne.\n\nDécor : le restaurant entier, de la cuisine au trottoir. Étalonnage chaud, contrasté, lumière de service : c'est le dernier acte, il est filmé comme une fin de film.\n\n0-5s: Écran partagé en quatre : la cuisine, la salle, le bureau, un salon. Caméra portée, très lent mouvement avant. Voix off française, un homme, grave et posée, le débit d'un conteur qui connaît déjà la fin, hors champ : {Ce que vous venez de voir se passait le même soir. Vendredi.} End state at 5s: le personnage est seul et lisible dans le cadre, rien n'a encore changé autour de lui.\n5-8s: À 5 secondes exactement, les quatre cadrans d'horloge des quatre images marquent la même heure. Un seul changement, rien d'autre ne bouge. End state at 8s: le changement est complet et pleinement lisible, le personnage y a réagi.\n8-10s: Les quatre images se resserrent d'un cran vers le centre, sans se toucher. La caméra s'immobilise. Français, voix naturelle, dite pour soi et non pour la caméra, les quatre : {Vendredi. Dix-huit heures.} End state at 10s: plan figé sur son visage, caméra immobile, aucune entrée dans le cadre.\n\nSound design: <ambiance réelle du lieu, dense> <un seul bruit de matière au moment du changement>. Deux répliques, exactement aux minutages ci-dessus : le conteur au début, le personnage à la fin. Pas de musique — elle est ajoutée au montage.",
+    "scriptHeygen": null,
+    "kit": null,
+    "heygenPrompt": null,
+    "montage": {
+      "consigne": "Assembler les trente-cinq plans dans l'ordre des identifiants, sans transition entre deux plans d'une même histoire, et avec un fondu au noir de 12 images entre deux histoires. Le générique de fin des stories est RETIRÉ de la version film : il ne sert qu'aux réseaux. Musique unique sur les 350 s, montée de deux décibels à partir de l'épisode 25 et coupée net sur le dernier plan. Voix off du conteur normalisée à −16 LUFS, dialogues des personnages à −14, ambiances à −24. Sortie 1080 × 1920, H.264, 350 s.",
+      "segments": [
+        {
+          "titre": "En cuisine",
+          "debut": 0.0,
+          "fin": 60.0,
+          "contenu": "Six plans. Le chef, de sept heures du matin au bac vide du vendredi, puis la bascule."
+        },
+        {
+          "titre": "En salle",
+          "debut": 60.0,
+          "fin": 120.0,
+          "contenu": "Six plans. Le maître d'hôtel, sa mémoire, la table de douze qui n'existait pas."
+        },
+        {
+          "titre": "Au bureau",
+          "debut": 120.0,
+          "fin": 180.0,
+          "contenu": "Six plans. Le gérant, la pile de papier, le quinze du mois suivant."
+        },
+        {
+          "titre": "À la maison",
+          "debut": 180.0,
+          "fin": 240.0,
+          "contenu": "Six plans. Le client, qui ne verra jamais le logiciel."
+        },
+        {
+          "titre": "Vendredi, 20 h 15",
+          "debut": 240.0,
+          "fin": 350.0,
+          "contenu": "Onze plans. Les quatre histoires se croisent, minute par minute, jusqu'à la chute."
+        }
+      ],
+      "livrable": "Un film de 350 s en 9:16 pour la page de la série, et trente-cinq stories de 10 s — mêmes plans, générique de fin en plus — pour les quatre réseaux."
+    },
+    "metier": null,
+    "phase": null,
+    "amplitude": null,
+    "boucle": null,
+    "boucleSlug": null,
+    "grandeBoucle": null,
+    "incident": null,
+    "incidentHeure": null,
+    "incidentQuoi": null,
+    "saumon": null,
+    "voixOff": {
+      "conteur": "Ce que vous venez de voir se passait le même soir. Vendredi.",
+      "personnage": "Vendredi. Dix-huit heures.",
+      "generique": "Quatre métiers, un seul service.",
+      "enchaine": "Enchaîne sur « 18 h 40 — il réserve »"
+    },
+    "story": {
+      "format": "9:16 · 1080 × 1920 · 10 s",
+      "hook": "Ce que vous venez de voir se passait le même soir. Vendredi",
+      "punchline": "Aucun des quatre ne sait que les trois autres existent",
+      "url": null,
+      "motion": {
+        "quand": "8,5 → 10,0 s, par-dessus la fin du plan",
+        "consigne": "Générique de fin en motion design, posé sur les 1,5 dernière(s) seconde(s) du plan, sans jamais couper l'image :\n— à 8,5 s, un voile marine #0F1A23 monte du bas sur le tiers inférieur, en 0,3 s, courbe d'accélération douce ;\n— à 8,8 s, le logo FoodEatUp arrive du bas, cale au centre du voile, avec un léger dépassement puis retour (overshoot 6 %) ;\n— à 9,1 s, la punchline s'écrit sous le logo, un mot après l'autre, 0,06 s par mot, en crème #FCF9E6 ;\n— à 9,6 s, la mention « à suivre » apparaît en orange #FFA500 à droite, avec une flèche qui avance de 8 px et s'arrête ;\n— rien ne disparaît avant la fin du plan.",
+        "punchline": "Quatre métiers, un seul service.",
+        "aSuivre": "À suivre — 18 h 40 — il réserve",
+        "voix": "Voix off française, la même que le conteur mais une note plus haute et plus proche du micro, sur les 1,5 dernière(s) seconde(s) : « Quatre métiers, un seul service. »"
+      }
+    },
+    "carrousel": null,
+    "imageFacebook": null,
+    "tutoriel": null
+  },
+  "EP526": {
+    "publications": {
+      "facebook": {
+        "legende": "Tout commence par quelqu'un qui n'est pas encore là.\n\nLe client réserve depuis son salon. Six couverts, deux personnes qui ne mangent pas de fruits à coque. C'est le premier domino.\n\nSix couverts, deux allergies, et le service ne le sait pas encore.\n\n« Il était une fois un restaurant » — épisode 26 sur 35. Les trente-cinq bout à bout font un film de cinq minutes cinquante.\nTout FoodEatUp : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "hashtags": [
+          "restauration",
+          "foodeatup",
+          "restaurant",
+          "courtmetrage",
+          "vendredi-20-h-15"
+        ],
+        "motsCles": [
+          "service",
+          "restauration",
+          "foodeatup",
+          "vendredi, 20 h 15"
+        ],
+        "cta": "Découvrir FoodEatUp"
+      },
+      "instagram": {
+        "legende": "Tout commence par quelqu'un qui n'est pas encore là.\n\nLe client réserve depuis son salon. Six couverts, deux personnes qui ne mangent pas de fruits à coque. C'est le premier domino.\n\nSix couverts, deux allergies, et le service ne le sait pas encore.\n\n« Il était une fois un restaurant » — épisode 26 sur 35. Les trente-cinq bout à bout font un film de cinq minutes cinquante.\nTout FoodEatUp : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "hashtags": [
+          "restauration",
+          "foodeatup",
+          "restaurant",
+          "courtmetrage",
+          "vendredi-20-h-15"
+        ],
+        "motsCles": [
+          "service",
+          "restauration",
+          "foodeatup",
+          "vendredi, 20 h 15"
+        ],
+        "cta": "Découvrir FoodEatUp"
+      },
+      "tiktok": {
+        "legende": "Tout commence par quelqu'un qui n'est pas encore là.\n\nLe client réserve depuis son salon. Six couverts, deux personnes qui ne mangent pas de fruits à coque. C'est le premier domino.\n\nSix couverts, deux allergies, et le service ne le sait pas encore.\n\n« Il était une fois un restaurant » — épisode 26 sur 35. Les trente-cinq bout à bout font un film de cinq minutes cinquante.\nTout FoodEatUp : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "hashtags": [
+          "restauration",
+          "foodeatup",
+          "restaurant",
+          "courtmetrage",
+          "vendredi-20-h-15"
+        ],
+        "motsCles": [
+          "service",
+          "restauration",
+          "foodeatup",
+          "vendredi, 20 h 15"
+        ],
+        "cta": "Découvrir FoodEatUp"
+      },
+      "linkedin": {
+        "legende": "Tout commence par quelqu'un qui n'est pas encore là.\n\nLe client réserve depuis son salon. Six couverts, deux personnes qui ne mangent pas de fruits à coque. C'est le premier domino.\n\nSix couverts, deux allergies, et le service ne le sait pas encore.\n\n« Il était une fois un restaurant » — épisode 26 sur 35. Les trente-cinq bout à bout font un film de cinq minutes cinquante.\nTout FoodEatUp : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "hashtags": [
+          "restauration",
+          "foodeatup",
+          "restaurant",
+          "courtmetrage",
+          "vendredi-20-h-15"
+        ],
+        "motsCles": [
+          "service",
+          "restauration",
+          "foodeatup",
+          "vendredi, 20 h 15"
+        ],
+        "cta": "Découvrir FoodEatUp"
+      },
+      "youtube": {
+        "legende": "Tout commence par quelqu'un qui n'est pas encore là.\n\nLe client réserve depuis son salon. Six couverts, deux personnes qui ne mangent pas de fruits à coque. C'est le premier domino.\n\nSix couverts, deux allergies, et le service ne le sait pas encore.\n\n« Il était une fois un restaurant » — épisode 26 sur 35. Les trente-cinq bout à bout font un film de cinq minutes cinquante.\nTout FoodEatUp : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "hashtags": [
+          "restauration",
+          "foodeatup",
+          "restaurant",
+          "courtmetrage",
+          "vendredi-20-h-15"
+        ],
+        "motsCles": [
+          "service",
+          "restauration",
+          "foodeatup",
+          "vendredi, 20 h 15"
+        ],
+        "cta": "Découvrir FoodEatUp",
+        "titre": "18 h 40 — il réserve — Il était une fois un restaurant 26/35"
+      }
+    },
+    "promptVignette": "Photo réaliste, cadrage vertical 9:16, image de cinéma : optique 40 mm, faible profondeur de champ, grain argentique léger.\n\nL'acteur de l'image de référence — MÊME visage, même barbe, même carrure. Il joue ici les quatre : les quatre tenues, selon le personnage à l'image. Décor : le restaurant entier, de la cuisine au trottoir. Expression : six, à vingt heures et quart — il ne sourit pas pour la caméra.\n\nBANDE HAUTE — marine #0F1A23 sur le cinquième supérieur, portant UNIQUEMENT « VENDREDI, 20 H 15 » en crème #FCF9E6, typographie arrondie très grasse, centré.\n\nBANDE BASSE — crème #FCF9E6 sur le sixième inférieur, portant UNIQUEMENT « 26 / 35 » en marine #0F1A23, aligné à droite.\n\nAucun logo dessiné, aucun filigrane, aucune interface de logiciel à l'écran, aucune autre inscription.",
+    "higgsfieldPrompt": "Vertical 9:16, 10 secondes, 1080p, 24 im/s. PAS de texte incrusté, PAS de sous-titres, PAS de filigrane, PAS de logo, AUCUNE légende gravée dans l'image. Photoréaliste, image de cinéma : optique 40 mm, faible profondeur de champ, grain argentique léger, contraste tenu. Un seul plan, aucune coupe.\n\n@Image 1 ne définit que le visage de l'acteur — barbe, traits, carrure. Ne pas les modifier. Dans ce plan il joue les quatre : les quatre tenues, selon le personnage à l'image. C'est le même acteur dans les quatre histoires du film, et le film ne le dit jamais : ne rien ajouter qui le souligne.\n\nDécor : le restaurant entier, de la cuisine au trottoir. Étalonnage chaud, contrasté, lumière de service : c'est le dernier acte, il est filmé comme une fin de film.\n\n0-5s: Le salon du client, le téléphone à l'oreille, l'horloge du mur à 18 h 40. Caméra portée, très lent mouvement avant. Voix off française, un homme, grave et posée, le débit d'un conteur qui connaît déjà la fin, hors champ : {Tout commence par quelqu'un qui n'est pas encore là.} End state at 5s: le personnage est seul et lisible dans le cadre, rien n'a encore changé autour de lui.\n5-8s: À 5 secondes exactement, il dit une phrase et, hors champ, un écran s'allume brièvement. Un seul changement, rien d'autre ne bouge. End state at 8s: le changement est complet et pleinement lisible, le personnage y a réagi.\n8-10s: Il raccroche et pose le téléphone à côté de lui, l'air satisfait. La caméra s'immobilise. Français, voix naturelle, dite pour soi et non pour la caméra, les quatre : {Six, à vingt heures et quart.} End state at 10s: plan figé sur son visage, caméra immobile, aucune entrée dans le cadre.\n\nSound design: <ambiance réelle du lieu, dense> <un seul bruit de matière au moment du changement>. Deux répliques, exactement aux minutages ci-dessus : le conteur au début, le personnage à la fin. Pas de musique — elle est ajoutée au montage.",
+    "scriptHeygen": null,
+    "kit": null,
+    "heygenPrompt": null,
+    "montage": {
+      "consigne": "Assembler les trente-cinq plans dans l'ordre des identifiants, sans transition entre deux plans d'une même histoire, et avec un fondu au noir de 12 images entre deux histoires. Le générique de fin des stories est RETIRÉ de la version film : il ne sert qu'aux réseaux. Musique unique sur les 350 s, montée de deux décibels à partir de l'épisode 25 et coupée net sur le dernier plan. Voix off du conteur normalisée à −16 LUFS, dialogues des personnages à −14, ambiances à −24. Sortie 1080 × 1920, H.264, 350 s.",
+      "segments": [
+        {
+          "titre": "En cuisine",
+          "debut": 0.0,
+          "fin": 60.0,
+          "contenu": "Six plans. Le chef, de sept heures du matin au bac vide du vendredi, puis la bascule."
+        },
+        {
+          "titre": "En salle",
+          "debut": 60.0,
+          "fin": 120.0,
+          "contenu": "Six plans. Le maître d'hôtel, sa mémoire, la table de douze qui n'existait pas."
+        },
+        {
+          "titre": "Au bureau",
+          "debut": 120.0,
+          "fin": 180.0,
+          "contenu": "Six plans. Le gérant, la pile de papier, le quinze du mois suivant."
+        },
+        {
+          "titre": "À la maison",
+          "debut": 180.0,
+          "fin": 240.0,
+          "contenu": "Six plans. Le client, qui ne verra jamais le logiciel."
+        },
+        {
+          "titre": "Vendredi, 20 h 15",
+          "debut": 240.0,
+          "fin": 350.0,
+          "contenu": "Onze plans. Les quatre histoires se croisent, minute par minute, jusqu'à la chute."
+        }
+      ],
+      "livrable": "Un film de 350 s en 9:16 pour la page de la série, et trente-cinq stories de 10 s — mêmes plans, générique de fin en plus — pour les quatre réseaux."
+    },
+    "metier": null,
+    "phase": null,
+    "amplitude": null,
+    "boucle": null,
+    "boucleSlug": null,
+    "grandeBoucle": null,
+    "incident": null,
+    "incidentHeure": null,
+    "incidentQuoi": null,
+    "saumon": null,
+    "voixOff": {
+      "conteur": "Tout commence par quelqu'un qui n'est pas encore là.",
+      "personnage": "Six, à vingt heures et quart.",
+      "generique": "Une phrase dite chez soi arrive en cuisine.",
+      "enchaine": "Enchaîne sur « 18 h 41 — la salle le voit »"
+    },
+    "story": {
+      "format": "9:16 · 1080 × 1920 · 10 s",
+      "hook": "Tout commence par quelqu'un qui n'est pas encore là",
+      "punchline": "Six couverts, deux allergies, et le service ne le sait pas encore",
+      "url": null,
+      "motion": {
+        "quand": "8,5 → 10,0 s, par-dessus la fin du plan",
+        "consigne": "Générique de fin en motion design, posé sur les 1,5 dernière(s) seconde(s) du plan, sans jamais couper l'image :\n— à 8,5 s, un voile marine #0F1A23 monte du bas sur le tiers inférieur, en 0,3 s, courbe d'accélération douce ;\n— à 8,8 s, le logo FoodEatUp arrive du bas, cale au centre du voile, avec un léger dépassement puis retour (overshoot 6 %) ;\n— à 9,1 s, la punchline s'écrit sous le logo, un mot après l'autre, 0,06 s par mot, en crème #FCF9E6 ;\n— à 9,6 s, la mention « à suivre » apparaît en orange #FFA500 à droite, avec une flèche qui avance de 8 px et s'arrête ;\n— rien ne disparaît avant la fin du plan.",
+        "punchline": "Une phrase dite chez soi arrive en cuisine.",
+        "aSuivre": "À suivre — 18 h 41 — la salle le voit",
+        "voix": "Voix off française, la même que le conteur mais une note plus haute et plus proche du micro, sur les 1,5 dernière(s) seconde(s) : « Une phrase dite chez soi arrive en cuisine. »"
+      }
+    },
+    "carrousel": null,
+    "imageFacebook": null,
+    "tutoriel": null
+  },
+  "EP527": {
+    "publications": {
+      "facebook": {
+        "legende": "Une minute plus tard, à trois kilomètres de là.\n\nLa réservation arrive dans le plan de salle avec la contrainte écrite dessus. Le maître d'hôtel n'a rien noté : il a lu.\n\nLa table de six existait avant que personne ne la demande.\n\n« Il était une fois un restaurant » — épisode 27 sur 35. Les trente-cinq bout à bout font un film de cinq minutes cinquante.\nTout FoodEatUp : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "hashtags": [
+          "restauration",
+          "foodeatup",
+          "restaurant",
+          "courtmetrage",
+          "vendredi-20-h-15"
+        ],
+        "motsCles": [
+          "service",
+          "restauration",
+          "foodeatup",
+          "vendredi, 20 h 15"
+        ],
+        "cta": "Découvrir FoodEatUp"
+      },
+      "instagram": {
+        "legende": "Une minute plus tard, à trois kilomètres de là.\n\nLa réservation arrive dans le plan de salle avec la contrainte écrite dessus. Le maître d'hôtel n'a rien noté : il a lu.\n\nLa table de six existait avant que personne ne la demande.\n\n« Il était une fois un restaurant » — épisode 27 sur 35. Les trente-cinq bout à bout font un film de cinq minutes cinquante.\nTout FoodEatUp : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "hashtags": [
+          "restauration",
+          "foodeatup",
+          "restaurant",
+          "courtmetrage",
+          "vendredi-20-h-15"
+        ],
+        "motsCles": [
+          "service",
+          "restauration",
+          "foodeatup",
+          "vendredi, 20 h 15"
+        ],
+        "cta": "Découvrir FoodEatUp"
+      },
+      "tiktok": {
+        "legende": "Une minute plus tard, à trois kilomètres de là.\n\nLa réservation arrive dans le plan de salle avec la contrainte écrite dessus. Le maître d'hôtel n'a rien noté : il a lu.\n\nLa table de six existait avant que personne ne la demande.\n\n« Il était une fois un restaurant » — épisode 27 sur 35. Les trente-cinq bout à bout font un film de cinq minutes cinquante.\nTout FoodEatUp : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "hashtags": [
+          "restauration",
+          "foodeatup",
+          "restaurant",
+          "courtmetrage",
+          "vendredi-20-h-15"
+        ],
+        "motsCles": [
+          "service",
+          "restauration",
+          "foodeatup",
+          "vendredi, 20 h 15"
+        ],
+        "cta": "Découvrir FoodEatUp"
+      },
+      "linkedin": {
+        "legende": "Une minute plus tard, à trois kilomètres de là.\n\nLa réservation arrive dans le plan de salle avec la contrainte écrite dessus. Le maître d'hôtel n'a rien noté : il a lu.\n\nLa table de six existait avant que personne ne la demande.\n\n« Il était une fois un restaurant » — épisode 27 sur 35. Les trente-cinq bout à bout font un film de cinq minutes cinquante.\nTout FoodEatUp : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "hashtags": [
+          "restauration",
+          "foodeatup",
+          "restaurant",
+          "courtmetrage",
+          "vendredi-20-h-15"
+        ],
+        "motsCles": [
+          "service",
+          "restauration",
+          "foodeatup",
+          "vendredi, 20 h 15"
+        ],
+        "cta": "Découvrir FoodEatUp"
+      },
+      "youtube": {
+        "legende": "Une minute plus tard, à trois kilomètres de là.\n\nLa réservation arrive dans le plan de salle avec la contrainte écrite dessus. Le maître d'hôtel n'a rien noté : il a lu.\n\nLa table de six existait avant que personne ne la demande.\n\n« Il était une fois un restaurant » — épisode 27 sur 35. Les trente-cinq bout à bout font un film de cinq minutes cinquante.\nTout FoodEatUp : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "hashtags": [
+          "restauration",
+          "foodeatup",
+          "restaurant",
+          "courtmetrage",
+          "vendredi-20-h-15"
+        ],
+        "motsCles": [
+          "service",
+          "restauration",
+          "foodeatup",
+          "vendredi, 20 h 15"
+        ],
+        "cta": "Découvrir FoodEatUp",
+        "titre": "18 h 41 — la salle le voit — Il était une fois un restaurant 27/35"
+      }
+    },
+    "promptVignette": "Photo réaliste, cadrage vertical 9:16, image de cinéma : optique 40 mm, faible profondeur de champ, grain argentique léger.\n\nL'acteur de l'image de référence — MÊME visage, même barbe, même carrure. Il joue ici les quatre : les quatre tenues, selon le personnage à l'image. Décor : le restaurant entier, de la cuisine au trottoir. Expression : la quatorze. six. deux sans fruits à coque — il ne sourit pas pour la caméra.\n\nBANDE HAUTE — marine #0F1A23 sur le cinquième supérieur, portant UNIQUEMENT « VENDREDI, 20 H 15 » en crème #FCF9E6, typographie arrondie très grasse, centré.\n\nBANDE BASSE — crème #FCF9E6 sur le sixième inférieur, portant UNIQUEMENT « 27 / 35 » en marine #0F1A23, aligné à droite.\n\nAucun logo dessiné, aucun filigrane, aucune interface de logiciel à l'écran, aucune autre inscription.",
+    "higgsfieldPrompt": "Vertical 9:16, 10 secondes, 1080p, 24 im/s. PAS de texte incrusté, PAS de sous-titres, PAS de filigrane, PAS de logo, AUCUNE légende gravée dans l'image. Photoréaliste, image de cinéma : optique 40 mm, faible profondeur de champ, grain argentique léger, contraste tenu. Un seul plan, aucune coupe.\n\n@Image 1 ne définit que le visage de l'acteur — barbe, traits, carrure. Ne pas les modifier. Dans ce plan il joue les quatre : les quatre tenues, selon le personnage à l'image. C'est le même acteur dans les quatre histoires du film, et le film ne le dit jamais : ne rien ajouter qui le souligne.\n\nDécor : le restaurant entier, de la cuisine au trottoir. Étalonnage chaud, contrasté, lumière de service : c'est le dernier acte, il est filmé comme une fin de film.\n\n0-5s: Le comptoir d'accueil de la salle, avant l'ouverture, tables dressées. Caméra portée, très lent mouvement avant. Voix off française, un homme, grave et posée, le débit d'un conteur qui connaît déjà la fin, hors champ : {Une minute plus tard, à trois kilomètres de là.} End state at 5s: le personnage est seul et lisible dans le cadre, rien n'a encore changé autour de lui.\n5-8s: À 5 secondes exactement, il lève les yeux du comptoir vers une table du fond et la désigne du menton. Un seul changement, rien d'autre ne bouge. End state at 8s: le changement est complet et pleinement lisible, le personnage y a réagi.\n8-10s: Il déplace une chaise, compte du regard, et hoche la tête. La caméra s'immobilise. Français, voix naturelle, dite pour soi et non pour la caméra, les quatre : {La quatorze. Six. Deux sans fruits à coque.} End state at 10s: plan figé sur son visage, caméra immobile, aucune entrée dans le cadre.\n\nSound design: <ambiance réelle du lieu, dense> <un seul bruit de matière au moment du changement>. Deux répliques, exactement aux minutages ci-dessus : le conteur au début, le personnage à la fin. Pas de musique — elle est ajoutée au montage.",
+    "scriptHeygen": null,
+    "kit": null,
+    "heygenPrompt": null,
+    "montage": {
+      "consigne": "Assembler les trente-cinq plans dans l'ordre des identifiants, sans transition entre deux plans d'une même histoire, et avec un fondu au noir de 12 images entre deux histoires. Le générique de fin des stories est RETIRÉ de la version film : il ne sert qu'aux réseaux. Musique unique sur les 350 s, montée de deux décibels à partir de l'épisode 25 et coupée net sur le dernier plan. Voix off du conteur normalisée à −16 LUFS, dialogues des personnages à −14, ambiances à −24. Sortie 1080 × 1920, H.264, 350 s.",
+      "segments": [
+        {
+          "titre": "En cuisine",
+          "debut": 0.0,
+          "fin": 60.0,
+          "contenu": "Six plans. Le chef, de sept heures du matin au bac vide du vendredi, puis la bascule."
+        },
+        {
+          "titre": "En salle",
+          "debut": 60.0,
+          "fin": 120.0,
+          "contenu": "Six plans. Le maître d'hôtel, sa mémoire, la table de douze qui n'existait pas."
+        },
+        {
+          "titre": "Au bureau",
+          "debut": 120.0,
+          "fin": 180.0,
+          "contenu": "Six plans. Le gérant, la pile de papier, le quinze du mois suivant."
+        },
+        {
+          "titre": "À la maison",
+          "debut": 180.0,
+          "fin": 240.0,
+          "contenu": "Six plans. Le client, qui ne verra jamais le logiciel."
+        },
+        {
+          "titre": "Vendredi, 20 h 15",
+          "debut": 240.0,
+          "fin": 350.0,
+          "contenu": "Onze plans. Les quatre histoires se croisent, minute par minute, jusqu'à la chute."
+        }
+      ],
+      "livrable": "Un film de 350 s en 9:16 pour la page de la série, et trente-cinq stories de 10 s — mêmes plans, générique de fin en plus — pour les quatre réseaux."
+    },
+    "metier": null,
+    "phase": null,
+    "amplitude": null,
+    "boucle": null,
+    "boucleSlug": null,
+    "grandeBoucle": null,
+    "incident": null,
+    "incidentHeure": null,
+    "incidentQuoi": null,
+    "saumon": null,
+    "voixOff": {
+      "conteur": "Une minute plus tard, à trois kilomètres de là.",
+      "personnage": "La quatorze. Six. Deux sans fruits à coque.",
+      "generique": "La contrainte arrive écrite sur la réservation.",
+      "enchaine": "Enchaîne sur « 18 h 42 — la cuisine l'apprend »"
+    },
+    "story": {
+      "format": "9:16 · 1080 × 1920 · 10 s",
+      "hook": "Une minute plus tard, à trois kilomètres de là",
+      "punchline": "La table de six existait avant que personne ne la demande",
+      "url": null,
+      "motion": {
+        "quand": "8,5 → 10,0 s, par-dessus la fin du plan",
+        "consigne": "Générique de fin en motion design, posé sur les 1,5 dernière(s) seconde(s) du plan, sans jamais couper l'image :\n— à 8,5 s, un voile marine #0F1A23 monte du bas sur le tiers inférieur, en 0,3 s, courbe d'accélération douce ;\n— à 8,8 s, le logo FoodEatUp arrive du bas, cale au centre du voile, avec un léger dépassement puis retour (overshoot 6 %) ;\n— à 9,1 s, la punchline s'écrit sous le logo, un mot après l'autre, 0,06 s par mot, en crème #FCF9E6 ;\n— à 9,6 s, la mention « à suivre » apparaît en orange #FFA500 à droite, avec une flèche qui avance de 8 px et s'arrête ;\n— rien ne disparaît avant la fin du plan.",
+        "punchline": "La contrainte arrive écrite sur la réservation.",
+        "aSuivre": "À suivre — 18 h 42 — la cuisine l'apprend",
+        "voix": "Voix off française, la même que le conteur mais une note plus haute et plus proche du micro, sur les 1,5 dernière(s) seconde(s) : « La contrainte arrive écrite sur la réservation. »"
+      }
+    },
+    "carrousel": null,
+    "imageFacebook": null,
+    "tutoriel": null
+  },
+  "EP528": {
+    "publications": {
+      "facebook": {
+        "legende": "Une minute encore, et l'information passe la porte battante.\n\nLa contrainte alimentaire arrive au pass sans que quiconque ait traversé la cuisine en criant. Le chef adapte deux assiettes sur les six.\n\nPersonne n'a crié le nom d'une allergie à travers la cuisine.\n\n« Il était une fois un restaurant » — épisode 28 sur 35. Les trente-cinq bout à bout font un film de cinq minutes cinquante.\nTout FoodEatUp : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "hashtags": [
+          "restauration",
+          "foodeatup",
+          "restaurant",
+          "courtmetrage",
+          "vendredi-20-h-15"
+        ],
+        "motsCles": [
+          "service",
+          "restauration",
+          "foodeatup",
+          "vendredi, 20 h 15"
+        ],
+        "cta": "Découvrir FoodEatUp"
+      },
+      "instagram": {
+        "legende": "Une minute encore, et l'information passe la porte battante.\n\nLa contrainte alimentaire arrive au pass sans que quiconque ait traversé la cuisine en criant. Le chef adapte deux assiettes sur les six.\n\nPersonne n'a crié le nom d'une allergie à travers la cuisine.\n\n« Il était une fois un restaurant » — épisode 28 sur 35. Les trente-cinq bout à bout font un film de cinq minutes cinquante.\nTout FoodEatUp : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "hashtags": [
+          "restauration",
+          "foodeatup",
+          "restaurant",
+          "courtmetrage",
+          "vendredi-20-h-15"
+        ],
+        "motsCles": [
+          "service",
+          "restauration",
+          "foodeatup",
+          "vendredi, 20 h 15"
+        ],
+        "cta": "Découvrir FoodEatUp"
+      },
+      "tiktok": {
+        "legende": "Une minute encore, et l'information passe la porte battante.\n\nLa contrainte alimentaire arrive au pass sans que quiconque ait traversé la cuisine en criant. Le chef adapte deux assiettes sur les six.\n\nPersonne n'a crié le nom d'une allergie à travers la cuisine.\n\n« Il était une fois un restaurant » — épisode 28 sur 35. Les trente-cinq bout à bout font un film de cinq minutes cinquante.\nTout FoodEatUp : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "hashtags": [
+          "restauration",
+          "foodeatup",
+          "restaurant",
+          "courtmetrage",
+          "vendredi-20-h-15"
+        ],
+        "motsCles": [
+          "service",
+          "restauration",
+          "foodeatup",
+          "vendredi, 20 h 15"
+        ],
+        "cta": "Découvrir FoodEatUp"
+      },
+      "linkedin": {
+        "legende": "Une minute encore, et l'information passe la porte battante.\n\nLa contrainte alimentaire arrive au pass sans que quiconque ait traversé la cuisine en criant. Le chef adapte deux assiettes sur les six.\n\nPersonne n'a crié le nom d'une allergie à travers la cuisine.\n\n« Il était une fois un restaurant » — épisode 28 sur 35. Les trente-cinq bout à bout font un film de cinq minutes cinquante.\nTout FoodEatUp : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "hashtags": [
+          "restauration",
+          "foodeatup",
+          "restaurant",
+          "courtmetrage",
+          "vendredi-20-h-15"
+        ],
+        "motsCles": [
+          "service",
+          "restauration",
+          "foodeatup",
+          "vendredi, 20 h 15"
+        ],
+        "cta": "Découvrir FoodEatUp"
+      },
+      "youtube": {
+        "legende": "Une minute encore, et l'information passe la porte battante.\n\nLa contrainte alimentaire arrive au pass sans que quiconque ait traversé la cuisine en criant. Le chef adapte deux assiettes sur les six.\n\nPersonne n'a crié le nom d'une allergie à travers la cuisine.\n\n« Il était une fois un restaurant » — épisode 28 sur 35. Les trente-cinq bout à bout font un film de cinq minutes cinquante.\nTout FoodEatUp : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "hashtags": [
+          "restauration",
+          "foodeatup",
+          "restaurant",
+          "courtmetrage",
+          "vendredi-20-h-15"
+        ],
+        "motsCles": [
+          "service",
+          "restauration",
+          "foodeatup",
+          "vendredi, 20 h 15"
+        ],
+        "cta": "Découvrir FoodEatUp",
+        "titre": "18 h 42 — la cuisine l'apprend — Il était une fois un restaurant 28/35"
+      }
+    },
+    "promptVignette": "Photo réaliste, cadrage vertical 9:16, image de cinéma : optique 40 mm, faible profondeur de champ, grain argentique léger.\n\nL'acteur de l'image de référence — MÊME visage, même barbe, même carrure. Il joue ici les quatre : les quatre tenues, selon le personnage à l'image. Décor : le restaurant entier, de la cuisine au trottoir. Expression : deux à part. compris — il ne sourit pas pour la caméra.\n\nBANDE HAUTE — marine #0F1A23 sur le cinquième supérieur, portant UNIQUEMENT « VENDREDI, 20 H 15 » en crème #FCF9E6, typographie arrondie très grasse, centré.\n\nBANDE BASSE — crème #FCF9E6 sur le sixième inférieur, portant UNIQUEMENT « 28 / 35 » en marine #0F1A23, aligné à droite.\n\nAucun logo dessiné, aucun filigrane, aucune interface de logiciel à l'écran, aucune autre inscription.",
+    "higgsfieldPrompt": "Vertical 9:16, 10 secondes, 1080p, 24 im/s. PAS de texte incrusté, PAS de sous-titres, PAS de filigrane, PAS de logo, AUCUNE légende gravée dans l'image. Photoréaliste, image de cinéma : optique 40 mm, faible profondeur de champ, grain argentique léger, contraste tenu. Un seul plan, aucune coupe.\n\n@Image 1 ne définit que le visage de l'acteur — barbe, traits, carrure. Ne pas les modifier. Dans ce plan il joue les quatre : les quatre tenues, selon le personnage à l'image. C'est le même acteur dans les quatre histoires du film, et le film ne le dit jamais : ne rien ajouter qui le souligne.\n\nDécor : le restaurant entier, de la cuisine au trottoir. Étalonnage chaud, contrasté, lumière de service : c'est le dernier acte, il est filmé comme une fin de film.\n\n0-5s: Le pass de la cuisine avant le service, les bacs pleins, la vapeur qui monte. Caméra portée, très lent mouvement avant. Voix off française, un homme, grave et posée, le débit d'un conteur qui connaît déjà la fin, hors champ : {Une minute encore, et l'information passe la porte battante.} End state at 5s: le personnage est seul et lisible dans le cadre, rien n'a encore changé autour de lui.\n5-8s: À 5 secondes exactement, il pose deux assiettes à part, à gauche de la rangée, et les marque du doigt. Un seul changement, rien d'autre ne bouge. End state at 8s: le changement est complet et pleinement lisible, le personnage y a réagi.\n8-10s: Il regarde les six assiettes alignées et recule d'un demi-pas. La caméra s'immobilise. Français, voix naturelle, dite pour soi et non pour la caméra, les quatre : {Deux à part. Compris.} End state at 10s: plan figé sur son visage, caméra immobile, aucune entrée dans le cadre.\n\nSound design: <ambiance réelle du lieu, dense> <un seul bruit de matière au moment du changement>. Deux répliques, exactement aux minutages ci-dessus : le conteur au début, le personnage à la fin. Pas de musique — elle est ajoutée au montage.",
+    "scriptHeygen": null,
+    "kit": null,
+    "heygenPrompt": null,
+    "montage": {
+      "consigne": "Assembler les trente-cinq plans dans l'ordre des identifiants, sans transition entre deux plans d'une même histoire, et avec un fondu au noir de 12 images entre deux histoires. Le générique de fin des stories est RETIRÉ de la version film : il ne sert qu'aux réseaux. Musique unique sur les 350 s, montée de deux décibels à partir de l'épisode 25 et coupée net sur le dernier plan. Voix off du conteur normalisée à −16 LUFS, dialogues des personnages à −14, ambiances à −24. Sortie 1080 × 1920, H.264, 350 s.",
+      "segments": [
+        {
+          "titre": "En cuisine",
+          "debut": 0.0,
+          "fin": 60.0,
+          "contenu": "Six plans. Le chef, de sept heures du matin au bac vide du vendredi, puis la bascule."
+        },
+        {
+          "titre": "En salle",
+          "debut": 60.0,
+          "fin": 120.0,
+          "contenu": "Six plans. Le maître d'hôtel, sa mémoire, la table de douze qui n'existait pas."
+        },
+        {
+          "titre": "Au bureau",
+          "debut": 120.0,
+          "fin": 180.0,
+          "contenu": "Six plans. Le gérant, la pile de papier, le quinze du mois suivant."
+        },
+        {
+          "titre": "À la maison",
+          "debut": 180.0,
+          "fin": 240.0,
+          "contenu": "Six plans. Le client, qui ne verra jamais le logiciel."
+        },
+        {
+          "titre": "Vendredi, 20 h 15",
+          "debut": 240.0,
+          "fin": 350.0,
+          "contenu": "Onze plans. Les quatre histoires se croisent, minute par minute, jusqu'à la chute."
+        }
+      ],
+      "livrable": "Un film de 350 s en 9:16 pour la page de la série, et trente-cinq stories de 10 s — mêmes plans, générique de fin en plus — pour les quatre réseaux."
+    },
+    "metier": null,
+    "phase": null,
+    "amplitude": null,
+    "boucle": null,
+    "boucleSlug": null,
+    "grandeBoucle": null,
+    "incident": null,
+    "incidentHeure": null,
+    "incidentQuoi": null,
+    "saumon": null,
+    "voixOff": {
+      "conteur": "Une minute encore, et l'information passe la porte battante.",
+      "personnage": "Deux à part. Compris.",
+      "generique": "Une allergie notée vaut mieux qu'une allergie criée.",
+      "enchaine": "Enchaîne sur « 18 h 43 — le bureau voit le couvert »"
+    },
+    "story": {
+      "format": "9:16 · 1080 × 1920 · 10 s",
+      "hook": "Une minute encore, et l'information passe la porte battante",
+      "punchline": "Personne n'a crié le nom d'une allergie à travers la cuisine",
+      "url": null,
+      "motion": {
+        "quand": "8,5 → 10,0 s, par-dessus la fin du plan",
+        "consigne": "Générique de fin en motion design, posé sur les 1,5 dernière(s) seconde(s) du plan, sans jamais couper l'image :\n— à 8,5 s, un voile marine #0F1A23 monte du bas sur le tiers inférieur, en 0,3 s, courbe d'accélération douce ;\n— à 8,8 s, le logo FoodEatUp arrive du bas, cale au centre du voile, avec un léger dépassement puis retour (overshoot 6 %) ;\n— à 9,1 s, la punchline s'écrit sous le logo, un mot après l'autre, 0,06 s par mot, en crème #FCF9E6 ;\n— à 9,6 s, la mention « à suivre » apparaît en orange #FFA500 à droite, avec une flèche qui avance de 8 px et s'arrête ;\n— rien ne disparaît avant la fin du plan.",
+        "punchline": "Une allergie notée vaut mieux qu'une allergie criée.",
+        "aSuivre": "À suivre — 18 h 43 — le bureau voit le couvert",
+        "voix": "Voix off française, la même que le conteur mais une note plus haute et plus proche du micro, sur les 1,5 dernière(s) seconde(s) : « Une allergie notée vaut mieux qu'une allergie criée. »"
+      }
+    },
+    "carrousel": null,
+    "imageFacebook": null,
+    "tutoriel": null
+  },
+  "EP529": {
+    "publications": {
+      "facebook": {
+        "legende": "Et à l'étage, quelqu'un a vu passer six couverts de plus.\n\nLe bureau voit la réservation entrer dans la prévision : les achats du lendemain, le nombre de bras, la marge attendue. Tout bouge d'un cran.\n\nIl connaît la marge de la soirée avant qu'elle ait commencé.\n\n« Il était une fois un restaurant » — épisode 29 sur 35. Les trente-cinq bout à bout font un film de cinq minutes cinquante.\nTout FoodEatUp : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "hashtags": [
+          "restauration",
+          "foodeatup",
+          "restaurant",
+          "courtmetrage",
+          "vendredi-20-h-15"
+        ],
+        "motsCles": [
+          "service",
+          "restauration",
+          "foodeatup",
+          "vendredi, 20 h 15"
+        ],
+        "cta": "Découvrir FoodEatUp"
+      },
+      "instagram": {
+        "legende": "Et à l'étage, quelqu'un a vu passer six couverts de plus.\n\nLe bureau voit la réservation entrer dans la prévision : les achats du lendemain, le nombre de bras, la marge attendue. Tout bouge d'un cran.\n\nIl connaît la marge de la soirée avant qu'elle ait commencé.\n\n« Il était une fois un restaurant » — épisode 29 sur 35. Les trente-cinq bout à bout font un film de cinq minutes cinquante.\nTout FoodEatUp : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "hashtags": [
+          "restauration",
+          "foodeatup",
+          "restaurant",
+          "courtmetrage",
+          "vendredi-20-h-15"
+        ],
+        "motsCles": [
+          "service",
+          "restauration",
+          "foodeatup",
+          "vendredi, 20 h 15"
+        ],
+        "cta": "Découvrir FoodEatUp"
+      },
+      "tiktok": {
+        "legende": "Et à l'étage, quelqu'un a vu passer six couverts de plus.\n\nLe bureau voit la réservation entrer dans la prévision : les achats du lendemain, le nombre de bras, la marge attendue. Tout bouge d'un cran.\n\nIl connaît la marge de la soirée avant qu'elle ait commencé.\n\n« Il était une fois un restaurant » — épisode 29 sur 35. Les trente-cinq bout à bout font un film de cinq minutes cinquante.\nTout FoodEatUp : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "hashtags": [
+          "restauration",
+          "foodeatup",
+          "restaurant",
+          "courtmetrage",
+          "vendredi-20-h-15"
+        ],
+        "motsCles": [
+          "service",
+          "restauration",
+          "foodeatup",
+          "vendredi, 20 h 15"
+        ],
+        "cta": "Découvrir FoodEatUp"
+      },
+      "linkedin": {
+        "legende": "Et à l'étage, quelqu'un a vu passer six couverts de plus.\n\nLe bureau voit la réservation entrer dans la prévision : les achats du lendemain, le nombre de bras, la marge attendue. Tout bouge d'un cran.\n\nIl connaît la marge de la soirée avant qu'elle ait commencé.\n\n« Il était une fois un restaurant » — épisode 29 sur 35. Les trente-cinq bout à bout font un film de cinq minutes cinquante.\nTout FoodEatUp : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "hashtags": [
+          "restauration",
+          "foodeatup",
+          "restaurant",
+          "courtmetrage",
+          "vendredi-20-h-15"
+        ],
+        "motsCles": [
+          "service",
+          "restauration",
+          "foodeatup",
+          "vendredi, 20 h 15"
+        ],
+        "cta": "Découvrir FoodEatUp"
+      },
+      "youtube": {
+        "legende": "Et à l'étage, quelqu'un a vu passer six couverts de plus.\n\nLe bureau voit la réservation entrer dans la prévision : les achats du lendemain, le nombre de bras, la marge attendue. Tout bouge d'un cran.\n\nIl connaît la marge de la soirée avant qu'elle ait commencé.\n\n« Il était une fois un restaurant » — épisode 29 sur 35. Les trente-cinq bout à bout font un film de cinq minutes cinquante.\nTout FoodEatUp : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "hashtags": [
+          "restauration",
+          "foodeatup",
+          "restaurant",
+          "courtmetrage",
+          "vendredi-20-h-15"
+        ],
+        "motsCles": [
+          "service",
+          "restauration",
+          "foodeatup",
+          "vendredi, 20 h 15"
+        ],
+        "cta": "Découvrir FoodEatUp",
+        "titre": "18 h 43 — le bureau voit le couvert — Il était une fois un restaurant 29/35"
+      }
+    },
+    "promptVignette": "Photo réaliste, cadrage vertical 9:16, image de cinéma : optique 40 mm, faible profondeur de champ, grain argentique léger.\n\nL'acteur de l'image de référence — MÊME visage, même barbe, même carrure. Il joue ici les quatre : les quatre tenues, selon le personnage à l'image. Décor : le restaurant entier, de la cuisine au trottoir. Expression : cent dix, ce soir — il ne sourit pas pour la caméra.\n\nBANDE HAUTE — marine #0F1A23 sur le cinquième supérieur, portant UNIQUEMENT « VENDREDI, 20 H 15 » en crème #FCF9E6, typographie arrondie très grasse, centré.\n\nBANDE BASSE — crème #FCF9E6 sur le sixième inférieur, portant UNIQUEMENT « 29 / 35 » en marine #0F1A23, aligné à droite.\n\nAucun logo dessiné, aucun filigrane, aucune interface de logiciel à l'écran, aucune autre inscription.",
+    "higgsfieldPrompt": "Vertical 9:16, 10 secondes, 1080p, 24 im/s. PAS de texte incrusté, PAS de sous-titres, PAS de filigrane, PAS de logo, AUCUNE légende gravée dans l'image. Photoréaliste, image de cinéma : optique 40 mm, faible profondeur de champ, grain argentique léger, contraste tenu. Un seul plan, aucune coupe.\n\n@Image 1 ne définit que le visage de l'acteur — barbe, traits, carrure. Ne pas les modifier. Dans ce plan il joue les quatre : les quatre tenues, selon le personnage à l'image. C'est le même acteur dans les quatre histoires du film, et le film ne le dit jamais : ne rien ajouter qui le souligne.\n\nDécor : le restaurant entier, de la cuisine au trottoir. Étalonnage chaud, contrasté, lumière de service : c'est le dernier acte, il est filmé comme une fin de film.\n\n0-5s: Le bureau à l'étage, la lampe allumée, le bruit de la salle qui monte du plancher. Caméra portée, très lent mouvement avant. Voix off française, un homme, grave et posée, le débit d'un conteur qui connaît déjà la fin, hors champ : {Et à l'étage, quelqu'un a vu passer six couverts de plus.} End state at 5s: le personnage est seul et lisible dans le cadre, rien n'a encore changé autour de lui.\n5-8s: À 5 secondes exactement, il lève la tête vers le plancher, comme s'il entendait la table s'ajouter. Un seul changement, rien d'autre ne bouge. End state at 8s: le changement est complet et pleinement lisible, le personnage y a réagi.\n8-10s: Il repose son stylo à côté du carnet fermé et sourit sans lever les yeux. La caméra s'immobilise. Français, voix naturelle, dite pour soi et non pour la caméra, les quatre : {Cent dix, ce soir.} End state at 10s: plan figé sur son visage, caméra immobile, aucune entrée dans le cadre.\n\nSound design: <ambiance réelle du lieu, dense> <un seul bruit de matière au moment du changement>. Deux répliques, exactement aux minutages ci-dessus : le conteur au début, le personnage à la fin. Pas de musique — elle est ajoutée au montage.",
+    "scriptHeygen": null,
+    "kit": null,
+    "heygenPrompt": null,
+    "montage": {
+      "consigne": "Assembler les trente-cinq plans dans l'ordre des identifiants, sans transition entre deux plans d'une même histoire, et avec un fondu au noir de 12 images entre deux histoires. Le générique de fin des stories est RETIRÉ de la version film : il ne sert qu'aux réseaux. Musique unique sur les 350 s, montée de deux décibels à partir de l'épisode 25 et coupée net sur le dernier plan. Voix off du conteur normalisée à −16 LUFS, dialogues des personnages à −14, ambiances à −24. Sortie 1080 × 1920, H.264, 350 s.",
+      "segments": [
+        {
+          "titre": "En cuisine",
+          "debut": 0.0,
+          "fin": 60.0,
+          "contenu": "Six plans. Le chef, de sept heures du matin au bac vide du vendredi, puis la bascule."
+        },
+        {
+          "titre": "En salle",
+          "debut": 60.0,
+          "fin": 120.0,
+          "contenu": "Six plans. Le maître d'hôtel, sa mémoire, la table de douze qui n'existait pas."
+        },
+        {
+          "titre": "Au bureau",
+          "debut": 120.0,
+          "fin": 180.0,
+          "contenu": "Six plans. Le gérant, la pile de papier, le quinze du mois suivant."
+        },
+        {
+          "titre": "À la maison",
+          "debut": 180.0,
+          "fin": 240.0,
+          "contenu": "Six plans. Le client, qui ne verra jamais le logiciel."
+        },
+        {
+          "titre": "Vendredi, 20 h 15",
+          "debut": 240.0,
+          "fin": 350.0,
+          "contenu": "Onze plans. Les quatre histoires se croisent, minute par minute, jusqu'à la chute."
+        }
+      ],
+      "livrable": "Un film de 350 s en 9:16 pour la page de la série, et trente-cinq stories de 10 s — mêmes plans, générique de fin en plus — pour les quatre réseaux."
+    },
+    "metier": null,
+    "phase": null,
+    "amplitude": null,
+    "boucle": null,
+    "boucleSlug": null,
+    "grandeBoucle": null,
+    "incident": null,
+    "incidentHeure": null,
+    "incidentQuoi": null,
+    "saumon": null,
+    "voixOff": {
+      "conteur": "Et à l'étage, quelqu'un a vu passer six couverts de plus.",
+      "personnage": "Cent dix, ce soir.",
+      "generique": "Le couvert compte avant d'entrer, pas après.",
+      "enchaine": "Enchaîne sur « 20 h 15 — les quatre au même endroit »"
+    },
+    "story": {
+      "format": "9:16 · 1080 × 1920 · 10 s",
+      "hook": "Et à l'étage, quelqu'un a vu passer six couverts de plus",
+      "punchline": "Il connaît la marge de la soirée avant qu'elle ait commencé",
+      "url": null,
+      "motion": {
+        "quand": "8,5 → 10,0 s, par-dessus la fin du plan",
+        "consigne": "Générique de fin en motion design, posé sur les 1,5 dernière(s) seconde(s) du plan, sans jamais couper l'image :\n— à 8,5 s, un voile marine #0F1A23 monte du bas sur le tiers inférieur, en 0,3 s, courbe d'accélération douce ;\n— à 8,8 s, le logo FoodEatUp arrive du bas, cale au centre du voile, avec un léger dépassement puis retour (overshoot 6 %) ;\n— à 9,1 s, la punchline s'écrit sous le logo, un mot après l'autre, 0,06 s par mot, en crème #FCF9E6 ;\n— à 9,6 s, la mention « à suivre » apparaît en orange #FFA500 à droite, avec une flèche qui avance de 8 px et s'arrête ;\n— rien ne disparaît avant la fin du plan.",
+        "punchline": "Le couvert compte avant d'entrer, pas après.",
+        "aSuivre": "À suivre — 20 h 15 — les quatre au même endroit",
+        "voix": "Voix off française, la même que le conteur mais une note plus haute et plus proche du micro, sur les 1,5 dernière(s) seconde(s) : « Le couvert compte avant d'entrer, pas après. »"
+      }
+    },
+    "carrousel": null,
+    "imageFacebook": null,
+    "tutoriel": null
+  },
+  "EP530": {
+    "publications": {
+      "facebook": {
+        "legende": "À vingt heures quinze, les quatre histoires n'en font plus qu'une.\n\nLe client pousse la porte. Le maître d'hôtel l'accueille. Le chef envoie. Le gérant regarde depuis l'escalier. C'est le point de croisement du film.\n\nEt c'est le même homme, dans quatre vies.\n\n« Il était une fois un restaurant » — épisode 30 sur 35. Les trente-cinq bout à bout font un film de cinq minutes cinquante.\nTout FoodEatUp : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "hashtags": [
+          "restauration",
+          "foodeatup",
+          "restaurant",
+          "courtmetrage",
+          "vendredi-20-h-15"
+        ],
+        "motsCles": [
+          "service",
+          "restauration",
+          "foodeatup",
+          "vendredi, 20 h 15"
+        ],
+        "cta": "Découvrir FoodEatUp"
+      },
+      "instagram": {
+        "legende": "À vingt heures quinze, les quatre histoires n'en font plus qu'une.\n\nLe client pousse la porte. Le maître d'hôtel l'accueille. Le chef envoie. Le gérant regarde depuis l'escalier. C'est le point de croisement du film.\n\nEt c'est le même homme, dans quatre vies.\n\n« Il était une fois un restaurant » — épisode 30 sur 35. Les trente-cinq bout à bout font un film de cinq minutes cinquante.\nTout FoodEatUp : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "hashtags": [
+          "restauration",
+          "foodeatup",
+          "restaurant",
+          "courtmetrage",
+          "vendredi-20-h-15"
+        ],
+        "motsCles": [
+          "service",
+          "restauration",
+          "foodeatup",
+          "vendredi, 20 h 15"
+        ],
+        "cta": "Découvrir FoodEatUp"
+      },
+      "tiktok": {
+        "legende": "À vingt heures quinze, les quatre histoires n'en font plus qu'une.\n\nLe client pousse la porte. Le maître d'hôtel l'accueille. Le chef envoie. Le gérant regarde depuis l'escalier. C'est le point de croisement du film.\n\nEt c'est le même homme, dans quatre vies.\n\n« Il était une fois un restaurant » — épisode 30 sur 35. Les trente-cinq bout à bout font un film de cinq minutes cinquante.\nTout FoodEatUp : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "hashtags": [
+          "restauration",
+          "foodeatup",
+          "restaurant",
+          "courtmetrage",
+          "vendredi-20-h-15"
+        ],
+        "motsCles": [
+          "service",
+          "restauration",
+          "foodeatup",
+          "vendredi, 20 h 15"
+        ],
+        "cta": "Découvrir FoodEatUp"
+      },
+      "linkedin": {
+        "legende": "À vingt heures quinze, les quatre histoires n'en font plus qu'une.\n\nLe client pousse la porte. Le maître d'hôtel l'accueille. Le chef envoie. Le gérant regarde depuis l'escalier. C'est le point de croisement du film.\n\nEt c'est le même homme, dans quatre vies.\n\n« Il était une fois un restaurant » — épisode 30 sur 35. Les trente-cinq bout à bout font un film de cinq minutes cinquante.\nTout FoodEatUp : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "hashtags": [
+          "restauration",
+          "foodeatup",
+          "restaurant",
+          "courtmetrage",
+          "vendredi-20-h-15"
+        ],
+        "motsCles": [
+          "service",
+          "restauration",
+          "foodeatup",
+          "vendredi, 20 h 15"
+        ],
+        "cta": "Découvrir FoodEatUp"
+      },
+      "youtube": {
+        "legende": "À vingt heures quinze, les quatre histoires n'en font plus qu'une.\n\nLe client pousse la porte. Le maître d'hôtel l'accueille. Le chef envoie. Le gérant regarde depuis l'escalier. C'est le point de croisement du film.\n\nEt c'est le même homme, dans quatre vies.\n\n« Il était une fois un restaurant » — épisode 30 sur 35. Les trente-cinq bout à bout font un film de cinq minutes cinquante.\nTout FoodEatUp : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "hashtags": [
+          "restauration",
+          "foodeatup",
+          "restaurant",
+          "courtmetrage",
+          "vendredi-20-h-15"
+        ],
+        "motsCles": [
+          "service",
+          "restauration",
+          "foodeatup",
+          "vendredi, 20 h 15"
+        ],
+        "cta": "Découvrir FoodEatUp",
+        "titre": "20 h 15 — les quatre au même endroit — Il était une fois un restaurant 30/35"
+      }
+    },
+    "promptVignette": "Photo réaliste, cadrage vertical 9:16, image de cinéma : optique 40 mm, faible profondeur de champ, grain argentique léger.\n\nL'acteur de l'image de référence — MÊME visage, même barbe, même carrure. Il joue ici les quatre : les quatre tenues, selon le personnage à l'image. Décor : le restaurant entier, de la cuisine au trottoir. Expression : bonsoir. vous avez réservé ? — il ne sourit pas pour la caméra.\n\nBANDE HAUTE — marine #0F1A23 sur le cinquième supérieur, portant UNIQUEMENT « VENDREDI, 20 H 15 » en crème #FCF9E6, typographie arrondie très grasse, centré.\n\nBANDE BASSE — crème #FCF9E6 sur le sixième inférieur, portant UNIQUEMENT « 30 / 35 » en marine #0F1A23, aligné à droite.\n\nAucun logo dessiné, aucun filigrane, aucune interface de logiciel à l'écran, aucune autre inscription.",
+    "higgsfieldPrompt": "Vertical 9:16, 10 secondes, 1080p, 24 im/s. PAS de texte incrusté, PAS de sous-titres, PAS de filigrane, PAS de logo, AUCUNE légende gravée dans l'image. Photoréaliste, image de cinéma : optique 40 mm, faible profondeur de champ, grain argentique léger, contraste tenu. Un seul plan, aucune coupe.\n\n@Image 1 ne définit que le visage de l'acteur — barbe, traits, carrure. Ne pas les modifier. Dans ce plan il joue les quatre : les quatre tenues, selon le personnage à l'image. C'est le même acteur dans les quatre histoires du film, et le film ne le dit jamais : ne rien ajouter qui le souligne.\n\nDécor : le restaurant entier, de la cuisine au trottoir. Étalonnage chaud, contrasté, lumière de service : c'est le dernier acte, il est filmé comme une fin de film.\n\n0-5s: Le hall du restaurant en plein service, vu depuis la porte d'entrée. Caméra portée, très lent mouvement avant. Voix off française, un homme, grave et posée, le débit d'un conteur qui connaît déjà la fin, hors champ : {À vingt heures quinze, les quatre histoires n'en font plus qu'une.} End state at 5s: le personnage est seul et lisible dans le cadre, rien n'a encore changé autour de lui.\n5-8s: À 5 secondes exactement, la caméra pivote lentement et cadre les quatre personnages dans le même plan. Un seul changement, rien d'autre ne bouge. End state at 8s: le changement est complet et pleinement lisible, le personnage y a réagi.\n8-10s: Les quatre sont immobiles, chacun à sa place, et personne ne se regarde. La caméra s'immobilise. Français, voix naturelle, dite pour soi et non pour la caméra, les quatre : {Bonsoir. Vous avez réservé ?} End state at 10s: plan figé sur son visage, caméra immobile, aucune entrée dans le cadre.\n\nSound design: <ambiance réelle du lieu, dense> <un seul bruit de matière au moment du changement>. Deux répliques, exactement aux minutages ci-dessus : le conteur au début, le personnage à la fin. Pas de musique — elle est ajoutée au montage.",
+    "scriptHeygen": null,
+    "kit": null,
+    "heygenPrompt": null,
+    "montage": {
+      "consigne": "Assembler les trente-cinq plans dans l'ordre des identifiants, sans transition entre deux plans d'une même histoire, et avec un fondu au noir de 12 images entre deux histoires. Le générique de fin des stories est RETIRÉ de la version film : il ne sert qu'aux réseaux. Musique unique sur les 350 s, montée de deux décibels à partir de l'épisode 25 et coupée net sur le dernier plan. Voix off du conteur normalisée à −16 LUFS, dialogues des personnages à −14, ambiances à −24. Sortie 1080 × 1920, H.264, 350 s.",
+      "segments": [
+        {
+          "titre": "En cuisine",
+          "debut": 0.0,
+          "fin": 60.0,
+          "contenu": "Six plans. Le chef, de sept heures du matin au bac vide du vendredi, puis la bascule."
+        },
+        {
+          "titre": "En salle",
+          "debut": 60.0,
+          "fin": 120.0,
+          "contenu": "Six plans. Le maître d'hôtel, sa mémoire, la table de douze qui n'existait pas."
+        },
+        {
+          "titre": "Au bureau",
+          "debut": 120.0,
+          "fin": 180.0,
+          "contenu": "Six plans. Le gérant, la pile de papier, le quinze du mois suivant."
+        },
+        {
+          "titre": "À la maison",
+          "debut": 180.0,
+          "fin": 240.0,
+          "contenu": "Six plans. Le client, qui ne verra jamais le logiciel."
+        },
+        {
+          "titre": "Vendredi, 20 h 15",
+          "debut": 240.0,
+          "fin": 350.0,
+          "contenu": "Onze plans. Les quatre histoires se croisent, minute par minute, jusqu'à la chute."
+        }
+      ],
+      "livrable": "Un film de 350 s en 9:16 pour la page de la série, et trente-cinq stories de 10 s — mêmes plans, générique de fin en plus — pour les quatre réseaux."
+    },
+    "metier": null,
+    "phase": null,
+    "amplitude": null,
+    "boucle": null,
+    "boucleSlug": null,
+    "grandeBoucle": null,
+    "incident": null,
+    "incidentHeure": null,
+    "incidentQuoi": null,
+    "saumon": null,
+    "voixOff": {
+      "conteur": "À vingt heures quinze, les quatre histoires n'en font plus qu'une.",
+      "personnage": "Bonsoir. Vous avez réservé ?",
+      "generique": "Quatre postes, une seule saisie.",
+      "enchaine": "Enchaîne sur « 20 h 31 — le plat part »"
+    },
+    "story": {
+      "format": "9:16 · 1080 × 1920 · 10 s",
+      "hook": "À vingt heures quinze, les quatre histoires n'en font plus qu'une",
+      "punchline": "Et c'est le même homme, dans quatre vies",
+      "url": null,
+      "motion": {
+        "quand": "8,5 → 10,0 s, par-dessus la fin du plan",
+        "consigne": "Générique de fin en motion design, posé sur les 1,5 dernière(s) seconde(s) du plan, sans jamais couper l'image :\n— à 8,5 s, un voile marine #0F1A23 monte du bas sur le tiers inférieur, en 0,3 s, courbe d'accélération douce ;\n— à 8,8 s, le logo FoodEatUp arrive du bas, cale au centre du voile, avec un léger dépassement puis retour (overshoot 6 %) ;\n— à 9,1 s, la punchline s'écrit sous le logo, un mot après l'autre, 0,06 s par mot, en crème #FCF9E6 ;\n— à 9,6 s, la mention « à suivre » apparaît en orange #FFA500 à droite, avec une flèche qui avance de 8 px et s'arrête ;\n— rien ne disparaît avant la fin du plan.",
+        "punchline": "Quatre postes, une seule saisie.",
+        "aSuivre": "À suivre — 20 h 31 — le plat part",
+        "voix": "Voix off française, la même que le conteur mais une note plus haute et plus proche du micro, sur les 1,5 dernière(s) seconde(s) : « Quatre postes, une seule saisie. »"
+      }
+    },
+    "carrousel": null,
+    "imageFacebook": null,
+    "tutoriel": null
+  },
+  "EP531": {
+    "publications": {
+      "facebook": {
+        "legende": "Seize minutes plus tard, l'assiette quitte le pass.\n\nLe plat part du pass, traverse la salle, arrive à la table. Deux assiettes sur six sont différentes, et personne n'a eu à le rappeler.\n\nSix assiettes, dont deux qui ne ressemblent pas aux autres.\n\n« Il était une fois un restaurant » — épisode 31 sur 35. Les trente-cinq bout à bout font un film de cinq minutes cinquante.\nTout FoodEatUp : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "hashtags": [
+          "restauration",
+          "foodeatup",
+          "restaurant",
+          "courtmetrage",
+          "vendredi-20-h-15"
+        ],
+        "motsCles": [
+          "service",
+          "restauration",
+          "foodeatup",
+          "vendredi, 20 h 15"
+        ],
+        "cta": "Découvrir FoodEatUp"
+      },
+      "instagram": {
+        "legende": "Seize minutes plus tard, l'assiette quitte le pass.\n\nLe plat part du pass, traverse la salle, arrive à la table. Deux assiettes sur six sont différentes, et personne n'a eu à le rappeler.\n\nSix assiettes, dont deux qui ne ressemblent pas aux autres.\n\n« Il était une fois un restaurant » — épisode 31 sur 35. Les trente-cinq bout à bout font un film de cinq minutes cinquante.\nTout FoodEatUp : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "hashtags": [
+          "restauration",
+          "foodeatup",
+          "restaurant",
+          "courtmetrage",
+          "vendredi-20-h-15"
+        ],
+        "motsCles": [
+          "service",
+          "restauration",
+          "foodeatup",
+          "vendredi, 20 h 15"
+        ],
+        "cta": "Découvrir FoodEatUp"
+      },
+      "tiktok": {
+        "legende": "Seize minutes plus tard, l'assiette quitte le pass.\n\nLe plat part du pass, traverse la salle, arrive à la table. Deux assiettes sur six sont différentes, et personne n'a eu à le rappeler.\n\nSix assiettes, dont deux qui ne ressemblent pas aux autres.\n\n« Il était une fois un restaurant » — épisode 31 sur 35. Les trente-cinq bout à bout font un film de cinq minutes cinquante.\nTout FoodEatUp : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "hashtags": [
+          "restauration",
+          "foodeatup",
+          "restaurant",
+          "courtmetrage",
+          "vendredi-20-h-15"
+        ],
+        "motsCles": [
+          "service",
+          "restauration",
+          "foodeatup",
+          "vendredi, 20 h 15"
+        ],
+        "cta": "Découvrir FoodEatUp"
+      },
+      "linkedin": {
+        "legende": "Seize minutes plus tard, l'assiette quitte le pass.\n\nLe plat part du pass, traverse la salle, arrive à la table. Deux assiettes sur six sont différentes, et personne n'a eu à le rappeler.\n\nSix assiettes, dont deux qui ne ressemblent pas aux autres.\n\n« Il était une fois un restaurant » — épisode 31 sur 35. Les trente-cinq bout à bout font un film de cinq minutes cinquante.\nTout FoodEatUp : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "hashtags": [
+          "restauration",
+          "foodeatup",
+          "restaurant",
+          "courtmetrage",
+          "vendredi-20-h-15"
+        ],
+        "motsCles": [
+          "service",
+          "restauration",
+          "foodeatup",
+          "vendredi, 20 h 15"
+        ],
+        "cta": "Découvrir FoodEatUp"
+      },
+      "youtube": {
+        "legende": "Seize minutes plus tard, l'assiette quitte le pass.\n\nLe plat part du pass, traverse la salle, arrive à la table. Deux assiettes sur six sont différentes, et personne n'a eu à le rappeler.\n\nSix assiettes, dont deux qui ne ressemblent pas aux autres.\n\n« Il était une fois un restaurant » — épisode 31 sur 35. Les trente-cinq bout à bout font un film de cinq minutes cinquante.\nTout FoodEatUp : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "hashtags": [
+          "restauration",
+          "foodeatup",
+          "restaurant",
+          "courtmetrage",
+          "vendredi-20-h-15"
+        ],
+        "motsCles": [
+          "service",
+          "restauration",
+          "foodeatup",
+          "vendredi, 20 h 15"
+        ],
+        "cta": "Découvrir FoodEatUp",
+        "titre": "20 h 31 — le plat part — Il était une fois un restaurant 31/35"
+      }
+    },
+    "promptVignette": "Photo réaliste, cadrage vertical 9:16, image de cinéma : optique 40 mm, faible profondeur de champ, grain argentique léger.\n\nL'acteur de l'image de référence — MÊME visage, même barbe, même carrure. Il joue ici les quatre : les quatre tenues, selon le personnage à l'image. Décor : le restaurant entier, de la cuisine au trottoir. Expression : voilà. sans fruits à coque — il ne sourit pas pour la caméra.\n\nBANDE HAUTE — marine #0F1A23 sur le cinquième supérieur, portant UNIQUEMENT « VENDREDI, 20 H 15 » en crème #FCF9E6, typographie arrondie très grasse, centré.\n\nBANDE BASSE — crème #FCF9E6 sur le sixième inférieur, portant UNIQUEMENT « 31 / 35 » en marine #0F1A23, aligné à droite.\n\nAucun logo dessiné, aucun filigrane, aucune interface de logiciel à l'écran, aucune autre inscription.",
+    "higgsfieldPrompt": "Vertical 9:16, 10 secondes, 1080p, 24 im/s. PAS de texte incrusté, PAS de sous-titres, PAS de filigrane, PAS de logo, AUCUNE légende gravée dans l'image. Photoréaliste, image de cinéma : optique 40 mm, faible profondeur de champ, grain argentique léger, contraste tenu. Un seul plan, aucune coupe.\n\n@Image 1 ne définit que le visage de l'acteur — barbe, traits, carrure. Ne pas les modifier. Dans ce plan il joue les quatre : les quatre tenues, selon le personnage à l'image. C'est le même acteur dans les quatre histoires du film, et le film ne le dit jamais : ne rien ajouter qui le souligne.\n\nDécor : le restaurant entier, de la cuisine au trottoir. Étalonnage chaud, contrasté, lumière de service : c'est le dernier acte, il est filmé comme une fin de film.\n\n0-5s: Un plan-séquence qui suit une assiette du pass jusqu'à la table. Caméra portée, très lent mouvement avant. Voix off française, un homme, grave et posée, le débit d'un conteur qui connaît déjà la fin, hors champ : {Seize minutes plus tard, l'assiette quitte le pass.} End state at 5s: le personnage est seul et lisible dans le cadre, rien n'a encore changé autour de lui.\n5-8s: À 5 secondes exactement, l'assiette passe la porte battante et le bruit change d'un coup. Un seul changement, rien d'autre ne bouge. End state at 8s: le changement est complet et pleinement lisible, le personnage y a réagi.\n8-10s: L'assiette se pose sur la nappe, et la main se retire du cadre. La caméra s'immobilise. Français, voix naturelle, dite pour soi et non pour la caméra, les quatre : {Voilà. Sans fruits à coque.} End state at 10s: plan figé sur son visage, caméra immobile, aucune entrée dans le cadre.\n\nSound design: <ambiance réelle du lieu, dense> <un seul bruit de matière au moment du changement>. Deux répliques, exactement aux minutages ci-dessus : le conteur au début, le personnage à la fin. Pas de musique — elle est ajoutée au montage.",
+    "scriptHeygen": null,
+    "kit": null,
+    "heygenPrompt": null,
+    "montage": {
+      "consigne": "Assembler les trente-cinq plans dans l'ordre des identifiants, sans transition entre deux plans d'une même histoire, et avec un fondu au noir de 12 images entre deux histoires. Le générique de fin des stories est RETIRÉ de la version film : il ne sert qu'aux réseaux. Musique unique sur les 350 s, montée de deux décibels à partir de l'épisode 25 et coupée net sur le dernier plan. Voix off du conteur normalisée à −16 LUFS, dialogues des personnages à −14, ambiances à −24. Sortie 1080 × 1920, H.264, 350 s.",
+      "segments": [
+        {
+          "titre": "En cuisine",
+          "debut": 0.0,
+          "fin": 60.0,
+          "contenu": "Six plans. Le chef, de sept heures du matin au bac vide du vendredi, puis la bascule."
+        },
+        {
+          "titre": "En salle",
+          "debut": 60.0,
+          "fin": 120.0,
+          "contenu": "Six plans. Le maître d'hôtel, sa mémoire, la table de douze qui n'existait pas."
+        },
+        {
+          "titre": "Au bureau",
+          "debut": 120.0,
+          "fin": 180.0,
+          "contenu": "Six plans. Le gérant, la pile de papier, le quinze du mois suivant."
+        },
+        {
+          "titre": "À la maison",
+          "debut": 180.0,
+          "fin": 240.0,
+          "contenu": "Six plans. Le client, qui ne verra jamais le logiciel."
+        },
+        {
+          "titre": "Vendredi, 20 h 15",
+          "debut": 240.0,
+          "fin": 350.0,
+          "contenu": "Onze plans. Les quatre histoires se croisent, minute par minute, jusqu'à la chute."
+        }
+      ],
+      "livrable": "Un film de 350 s en 9:16 pour la page de la série, et trente-cinq stories de 10 s — mêmes plans, générique de fin en plus — pour les quatre réseaux."
+    },
+    "metier": null,
+    "phase": null,
+    "amplitude": null,
+    "boucle": null,
+    "boucleSlug": null,
+    "grandeBoucle": null,
+    "incident": null,
+    "incidentHeure": null,
+    "incidentQuoi": null,
+    "saumon": null,
+    "voixOff": {
+      "conteur": "Seize minutes plus tard, l'assiette quitte le pass.",
+      "personnage": "Voilà. Sans fruits à coque.",
+      "generique": "Du pass à la table, sans un mot de plus.",
+      "enchaine": "Enchaîne sur « 20 h 32 — il ne remarque rien »"
+    },
+    "story": {
+      "format": "9:16 · 1080 × 1920 · 10 s",
+      "hook": "Seize minutes plus tard, l'assiette quitte le pass",
+      "punchline": "Six assiettes, dont deux qui ne ressemblent pas aux autres",
+      "url": null,
+      "motion": {
+        "quand": "8,5 → 10,0 s, par-dessus la fin du plan",
+        "consigne": "Générique de fin en motion design, posé sur les 1,5 dernière(s) seconde(s) du plan, sans jamais couper l'image :\n— à 8,5 s, un voile marine #0F1A23 monte du bas sur le tiers inférieur, en 0,3 s, courbe d'accélération douce ;\n— à 8,8 s, le logo FoodEatUp arrive du bas, cale au centre du voile, avec un léger dépassement puis retour (overshoot 6 %) ;\n— à 9,1 s, la punchline s'écrit sous le logo, un mot après l'autre, 0,06 s par mot, en crème #FCF9E6 ;\n— à 9,6 s, la mention « à suivre » apparaît en orange #FFA500 à droite, avec une flèche qui avance de 8 px et s'arrête ;\n— rien ne disparaît avant la fin du plan.",
+        "punchline": "Du pass à la table, sans un mot de plus.",
+        "aSuivre": "À suivre — 20 h 32 — il ne remarque rien",
+        "voix": "Voix off française, la même que le conteur mais une note plus haute et plus proche du micro, sur les 1,5 dernière(s) seconde(s) : « Du pass à la table, sans un mot de plus. »"
+      }
+    },
+    "carrousel": null,
+    "imageFacebook": null,
+    "tutoriel": null
+  },
+  "EP532": {
+    "publications": {
+      "facebook": {
+        "legende": "Il n'a rien remarqué. C'est exactement le but.\n\nLe client mange. Il ne saura jamais qu'une contrainte est passée par trois postes en quatre-vingt-dix minutes. Il saura seulement que c'était bien.\n\nCe qu'on ne remarque pas, c'est ce qui marche.\n\n« Il était une fois un restaurant » — épisode 32 sur 35. Les trente-cinq bout à bout font un film de cinq minutes cinquante.\nTout FoodEatUp : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "hashtags": [
+          "restauration",
+          "foodeatup",
+          "restaurant",
+          "courtmetrage",
+          "vendredi-20-h-15"
+        ],
+        "motsCles": [
+          "service",
+          "restauration",
+          "foodeatup",
+          "vendredi, 20 h 15"
+        ],
+        "cta": "Découvrir FoodEatUp"
+      },
+      "instagram": {
+        "legende": "Il n'a rien remarqué. C'est exactement le but.\n\nLe client mange. Il ne saura jamais qu'une contrainte est passée par trois postes en quatre-vingt-dix minutes. Il saura seulement que c'était bien.\n\nCe qu'on ne remarque pas, c'est ce qui marche.\n\n« Il était une fois un restaurant » — épisode 32 sur 35. Les trente-cinq bout à bout font un film de cinq minutes cinquante.\nTout FoodEatUp : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "hashtags": [
+          "restauration",
+          "foodeatup",
+          "restaurant",
+          "courtmetrage",
+          "vendredi-20-h-15"
+        ],
+        "motsCles": [
+          "service",
+          "restauration",
+          "foodeatup",
+          "vendredi, 20 h 15"
+        ],
+        "cta": "Découvrir FoodEatUp"
+      },
+      "tiktok": {
+        "legende": "Il n'a rien remarqué. C'est exactement le but.\n\nLe client mange. Il ne saura jamais qu'une contrainte est passée par trois postes en quatre-vingt-dix minutes. Il saura seulement que c'était bien.\n\nCe qu'on ne remarque pas, c'est ce qui marche.\n\n« Il était une fois un restaurant » — épisode 32 sur 35. Les trente-cinq bout à bout font un film de cinq minutes cinquante.\nTout FoodEatUp : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "hashtags": [
+          "restauration",
+          "foodeatup",
+          "restaurant",
+          "courtmetrage",
+          "vendredi-20-h-15"
+        ],
+        "motsCles": [
+          "service",
+          "restauration",
+          "foodeatup",
+          "vendredi, 20 h 15"
+        ],
+        "cta": "Découvrir FoodEatUp"
+      },
+      "linkedin": {
+        "legende": "Il n'a rien remarqué. C'est exactement le but.\n\nLe client mange. Il ne saura jamais qu'une contrainte est passée par trois postes en quatre-vingt-dix minutes. Il saura seulement que c'était bien.\n\nCe qu'on ne remarque pas, c'est ce qui marche.\n\n« Il était une fois un restaurant » — épisode 32 sur 35. Les trente-cinq bout à bout font un film de cinq minutes cinquante.\nTout FoodEatUp : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "hashtags": [
+          "restauration",
+          "foodeatup",
+          "restaurant",
+          "courtmetrage",
+          "vendredi-20-h-15"
+        ],
+        "motsCles": [
+          "service",
+          "restauration",
+          "foodeatup",
+          "vendredi, 20 h 15"
+        ],
+        "cta": "Découvrir FoodEatUp"
+      },
+      "youtube": {
+        "legende": "Il n'a rien remarqué. C'est exactement le but.\n\nLe client mange. Il ne saura jamais qu'une contrainte est passée par trois postes en quatre-vingt-dix minutes. Il saura seulement que c'était bien.\n\nCe qu'on ne remarque pas, c'est ce qui marche.\n\n« Il était une fois un restaurant » — épisode 32 sur 35. Les trente-cinq bout à bout font un film de cinq minutes cinquante.\nTout FoodEatUp : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "hashtags": [
+          "restauration",
+          "foodeatup",
+          "restaurant",
+          "courtmetrage",
+          "vendredi-20-h-15"
+        ],
+        "motsCles": [
+          "service",
+          "restauration",
+          "foodeatup",
+          "vendredi, 20 h 15"
+        ],
+        "cta": "Découvrir FoodEatUp",
+        "titre": "20 h 32 — il ne remarque rien — Il était une fois un restaurant 32/35"
+      }
+    },
+    "promptVignette": "Photo réaliste, cadrage vertical 9:16, image de cinéma : optique 40 mm, faible profondeur de champ, grain argentique léger.\n\nL'acteur de l'image de référence — MÊME visage, même barbe, même carrure. Il joue ici les quatre : les quatre tenues, selon le personnage à l'image. Décor : le restaurant entier, de la cuisine au trottoir. Expression : c'est très bon — il ne sourit pas pour la caméra.\n\nBANDE HAUTE — marine #0F1A23 sur le cinquième supérieur, portant UNIQUEMENT « VENDREDI, 20 H 15 » en crème #FCF9E6, typographie arrondie très grasse, centré.\n\nBANDE BASSE — crème #FCF9E6 sur le sixième inférieur, portant UNIQUEMENT « 32 / 35 » en marine #0F1A23, aligné à droite.\n\nAucun logo dessiné, aucun filigrane, aucune interface de logiciel à l'écran, aucune autre inscription.",
+    "higgsfieldPrompt": "Vertical 9:16, 10 secondes, 1080p, 24 im/s. PAS de texte incrusté, PAS de sous-titres, PAS de filigrane, PAS de logo, AUCUNE légende gravée dans l'image. Photoréaliste, image de cinéma : optique 40 mm, faible profondeur de champ, grain argentique léger, contraste tenu. Un seul plan, aucune coupe.\n\n@Image 1 ne définit que le visage de l'acteur — barbe, traits, carrure. Ne pas les modifier. Dans ce plan il joue les quatre : les quatre tenues, selon le personnage à l'image. C'est le même acteur dans les quatre histoires du film, et le film ne le dit jamais : ne rien ajouter qui le souligne.\n\nDécor : le restaurant entier, de la cuisine au trottoir. Étalonnage chaud, contrasté, lumière de service : c'est le dernier acte, il est filmé comme une fin de film.\n\n0-5s: La table de six vue à hauteur d'assiette, rires, mains, verres. Caméra portée, très lent mouvement avant. Voix off française, un homme, grave et posée, le débit d'un conteur qui connaît déjà la fin, hors champ : {Il n'a rien remarqué. C'est exactement le but.} End state at 5s: le personnage est seul et lisible dans le cadre, rien n'a encore changé autour de lui.\n5-8s: À 5 secondes exactement, il lève son verre vers quelqu'un hors champ et le repose sans regarder l'assiette. Un seul changement, rien d'autre ne bouge. End state at 8s: le changement est complet et pleinement lisible, le personnage y a réagi.\n8-10s: Il reprend une bouchée et continue sa conversation, sans un regard pour la salle. La caméra s'immobilise. Français, voix naturelle, dite pour soi et non pour la caméra, les quatre : {C'est très bon.} End state at 10s: plan figé sur son visage, caméra immobile, aucune entrée dans le cadre.\n\nSound design: <ambiance réelle du lieu, dense> <un seul bruit de matière au moment du changement>. Deux répliques, exactement aux minutages ci-dessus : le conteur au début, le personnage à la fin. Pas de musique — elle est ajoutée au montage.",
+    "scriptHeygen": null,
+    "kit": null,
+    "heygenPrompt": null,
+    "montage": {
+      "consigne": "Assembler les trente-cinq plans dans l'ordre des identifiants, sans transition entre deux plans d'une même histoire, et avec un fondu au noir de 12 images entre deux histoires. Le générique de fin des stories est RETIRÉ de la version film : il ne sert qu'aux réseaux. Musique unique sur les 350 s, montée de deux décibels à partir de l'épisode 25 et coupée net sur le dernier plan. Voix off du conteur normalisée à −16 LUFS, dialogues des personnages à −14, ambiances à −24. Sortie 1080 × 1920, H.264, 350 s.",
+      "segments": [
+        {
+          "titre": "En cuisine",
+          "debut": 0.0,
+          "fin": 60.0,
+          "contenu": "Six plans. Le chef, de sept heures du matin au bac vide du vendredi, puis la bascule."
+        },
+        {
+          "titre": "En salle",
+          "debut": 60.0,
+          "fin": 120.0,
+          "contenu": "Six plans. Le maître d'hôtel, sa mémoire, la table de douze qui n'existait pas."
+        },
+        {
+          "titre": "Au bureau",
+          "debut": 120.0,
+          "fin": 180.0,
+          "contenu": "Six plans. Le gérant, la pile de papier, le quinze du mois suivant."
+        },
+        {
+          "titre": "À la maison",
+          "debut": 180.0,
+          "fin": 240.0,
+          "contenu": "Six plans. Le client, qui ne verra jamais le logiciel."
+        },
+        {
+          "titre": "Vendredi, 20 h 15",
+          "debut": 240.0,
+          "fin": 350.0,
+          "contenu": "Onze plans. Les quatre histoires se croisent, minute par minute, jusqu'à la chute."
+        }
+      ],
+      "livrable": "Un film de 350 s en 9:16 pour la page de la série, et trente-cinq stories de 10 s — mêmes plans, générique de fin en plus — pour les quatre réseaux."
+    },
+    "metier": null,
+    "phase": null,
+    "amplitude": null,
+    "boucle": null,
+    "boucleSlug": null,
+    "grandeBoucle": null,
+    "incident": null,
+    "incidentHeure": null,
+    "incidentQuoi": null,
+    "saumon": null,
+    "voixOff": {
+      "conteur": "Il n'a rien remarqué. C'est exactement le but.",
+      "personnage": "C'est très bon.",
+      "generique": "La meilleure technologie est celle qu'on ne voit pas.",
+      "enchaine": "Enchaîne sur « 23 h 50 — le Z avant d'éteindre »"
+    },
+    "story": {
+      "format": "9:16 · 1080 × 1920 · 10 s",
+      "hook": "Il n'a rien remarqué. C'est exactement le but",
+      "punchline": "Ce qu'on ne remarque pas, c'est ce qui marche",
+      "url": null,
+      "motion": {
+        "quand": "8,5 → 10,0 s, par-dessus la fin du plan",
+        "consigne": "Générique de fin en motion design, posé sur les 1,5 dernière(s) seconde(s) du plan, sans jamais couper l'image :\n— à 8,5 s, un voile marine #0F1A23 monte du bas sur le tiers inférieur, en 0,3 s, courbe d'accélération douce ;\n— à 8,8 s, le logo FoodEatUp arrive du bas, cale au centre du voile, avec un léger dépassement puis retour (overshoot 6 %) ;\n— à 9,1 s, la punchline s'écrit sous le logo, un mot après l'autre, 0,06 s par mot, en crème #FCF9E6 ;\n— à 9,6 s, la mention « à suivre » apparaît en orange #FFA500 à droite, avec une flèche qui avance de 8 px et s'arrête ;\n— rien ne disparaît avant la fin du plan.",
+        "punchline": "La meilleure technologie est celle qu'on ne voit pas.",
+        "aSuivre": "À suivre — 23 h 50 — le Z avant d'éteindre",
+        "voix": "Voix off française, la même que le conteur mais une note plus haute et plus proche du micro, sur les 1,5 dernière(s) seconde(s) : « La meilleure technologie est celle qu'on ne voit pas. »"
+      }
+    },
+    "carrousel": null,
+    "imageFacebook": null,
+    "tutoriel": null
+  },
+  "EP533": {
+    "publications": {
+      "facebook": {
+        "legende": "À minuit moins dix, il n'y avait plus rien à rattraper.\n\nLe Z, les pertes, le coût du travail du service. Trois chiffres avant d'éteindre. Personne ne reviendra dimanche pour les chercher.\n\nLe dimanche est resté un dimanche.\n\n« Il était une fois un restaurant » — épisode 33 sur 35. Les trente-cinq bout à bout font un film de cinq minutes cinquante.\nTout FoodEatUp : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "hashtags": [
+          "restauration",
+          "foodeatup",
+          "restaurant",
+          "courtmetrage",
+          "vendredi-20-h-15"
+        ],
+        "motsCles": [
+          "service",
+          "restauration",
+          "foodeatup",
+          "vendredi, 20 h 15"
+        ],
+        "cta": "Découvrir FoodEatUp"
+      },
+      "instagram": {
+        "legende": "À minuit moins dix, il n'y avait plus rien à rattraper.\n\nLe Z, les pertes, le coût du travail du service. Trois chiffres avant d'éteindre. Personne ne reviendra dimanche pour les chercher.\n\nLe dimanche est resté un dimanche.\n\n« Il était une fois un restaurant » — épisode 33 sur 35. Les trente-cinq bout à bout font un film de cinq minutes cinquante.\nTout FoodEatUp : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "hashtags": [
+          "restauration",
+          "foodeatup",
+          "restaurant",
+          "courtmetrage",
+          "vendredi-20-h-15"
+        ],
+        "motsCles": [
+          "service",
+          "restauration",
+          "foodeatup",
+          "vendredi, 20 h 15"
+        ],
+        "cta": "Découvrir FoodEatUp"
+      },
+      "tiktok": {
+        "legende": "À minuit moins dix, il n'y avait plus rien à rattraper.\n\nLe Z, les pertes, le coût du travail du service. Trois chiffres avant d'éteindre. Personne ne reviendra dimanche pour les chercher.\n\nLe dimanche est resté un dimanche.\n\n« Il était une fois un restaurant » — épisode 33 sur 35. Les trente-cinq bout à bout font un film de cinq minutes cinquante.\nTout FoodEatUp : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "hashtags": [
+          "restauration",
+          "foodeatup",
+          "restaurant",
+          "courtmetrage",
+          "vendredi-20-h-15"
+        ],
+        "motsCles": [
+          "service",
+          "restauration",
+          "foodeatup",
+          "vendredi, 20 h 15"
+        ],
+        "cta": "Découvrir FoodEatUp"
+      },
+      "linkedin": {
+        "legende": "À minuit moins dix, il n'y avait plus rien à rattraper.\n\nLe Z, les pertes, le coût du travail du service. Trois chiffres avant d'éteindre. Personne ne reviendra dimanche pour les chercher.\n\nLe dimanche est resté un dimanche.\n\n« Il était une fois un restaurant » — épisode 33 sur 35. Les trente-cinq bout à bout font un film de cinq minutes cinquante.\nTout FoodEatUp : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "hashtags": [
+          "restauration",
+          "foodeatup",
+          "restaurant",
+          "courtmetrage",
+          "vendredi-20-h-15"
+        ],
+        "motsCles": [
+          "service",
+          "restauration",
+          "foodeatup",
+          "vendredi, 20 h 15"
+        ],
+        "cta": "Découvrir FoodEatUp"
+      },
+      "youtube": {
+        "legende": "À minuit moins dix, il n'y avait plus rien à rattraper.\n\nLe Z, les pertes, le coût du travail du service. Trois chiffres avant d'éteindre. Personne ne reviendra dimanche pour les chercher.\n\nLe dimanche est resté un dimanche.\n\n« Il était une fois un restaurant » — épisode 33 sur 35. Les trente-cinq bout à bout font un film de cinq minutes cinquante.\nTout FoodEatUp : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "hashtags": [
+          "restauration",
+          "foodeatup",
+          "restaurant",
+          "courtmetrage",
+          "vendredi-20-h-15"
+        ],
+        "motsCles": [
+          "service",
+          "restauration",
+          "foodeatup",
+          "vendredi, 20 h 15"
+        ],
+        "cta": "Découvrir FoodEatUp",
+        "titre": "23 h 50 — le Z avant d'éteindre — Il était une fois un restaurant 33/35"
+      }
+    },
+    "promptVignette": "Photo réaliste, cadrage vertical 9:16, image de cinéma : optique 40 mm, faible profondeur de champ, grain argentique léger.\n\nL'acteur de l'image de référence — MÊME visage, même barbe, même carrure. Il joue ici les quatre : les quatre tenues, selon le personnage à l'image. Décor : le restaurant entier, de la cuisine au trottoir. Expression : c'était une bonne soirée — il ne sourit pas pour la caméra.\n\nBANDE HAUTE — marine #0F1A23 sur le cinquième supérieur, portant UNIQUEMENT « VENDREDI, 20 H 15 » en crème #FCF9E6, typographie arrondie très grasse, centré.\n\nBANDE BASSE — crème #FCF9E6 sur le sixième inférieur, portant UNIQUEMENT « 33 / 35 » en marine #0F1A23, aligné à droite.\n\nAucun logo dessiné, aucun filigrane, aucune interface de logiciel à l'écran, aucune autre inscription.",
+    "higgsfieldPrompt": "Vertical 9:16, 10 secondes, 1080p, 24 im/s. PAS de texte incrusté, PAS de sous-titres, PAS de filigrane, PAS de logo, AUCUNE légende gravée dans l'image. Photoréaliste, image de cinéma : optique 40 mm, faible profondeur de champ, grain argentique léger, contraste tenu. Un seul plan, aucune coupe.\n\n@Image 1 ne définit que le visage de l'acteur — barbe, traits, carrure. Ne pas les modifier. Dans ce plan il joue les quatre : les quatre tenues, selon le personnage à l'image. C'est le même acteur dans les quatre histoires du film, et le film ne le dit jamais : ne rien ajouter qui le souligne.\n\nDécor : le restaurant entier, de la cuisine au trottoir. Étalonnage chaud, contrasté, lumière de service : c'est le dernier acte, il est filmé comme une fin de film.\n\n0-5s: Le bureau à l'étage, la salle éteinte en contrebas par la fenêtre intérieure. Caméra portée, très lent mouvement avant. Voix off française, un homme, grave et posée, le débit d'un conteur qui connaît déjà la fin, hors champ : {À minuit moins dix, il n'y avait plus rien à rattraper.} End state at 5s: le personnage est seul et lisible dans le cadre, rien n'a encore changé autour de lui.\n5-8s: À 5 secondes exactement, il éteint la lampe et la fenêtre intérieure devient la seule source de lumière. Un seul changement, rien d'autre ne bouge. End state at 8s: le changement est complet et pleinement lisible, le personnage y a réagi.\n8-10s: Il descend l'escalier et la lumière de la cage s'éteint derrière lui. La caméra s'immobilise. Français, voix naturelle, dite pour soi et non pour la caméra, les quatre : {C'était une bonne soirée.} End state at 10s: plan figé sur son visage, caméra immobile, aucune entrée dans le cadre.\n\nSound design: <ambiance réelle du lieu, dense> <un seul bruit de matière au moment du changement>. Deux répliques, exactement aux minutages ci-dessus : le conteur au début, le personnage à la fin. Pas de musique — elle est ajoutée au montage.",
+    "scriptHeygen": null,
+    "kit": null,
+    "heygenPrompt": null,
+    "montage": {
+      "consigne": "Assembler les trente-cinq plans dans l'ordre des identifiants, sans transition entre deux plans d'une même histoire, et avec un fondu au noir de 12 images entre deux histoires. Le générique de fin des stories est RETIRÉ de la version film : il ne sert qu'aux réseaux. Musique unique sur les 350 s, montée de deux décibels à partir de l'épisode 25 et coupée net sur le dernier plan. Voix off du conteur normalisée à −16 LUFS, dialogues des personnages à −14, ambiances à −24. Sortie 1080 × 1920, H.264, 350 s.",
+      "segments": [
+        {
+          "titre": "En cuisine",
+          "debut": 0.0,
+          "fin": 60.0,
+          "contenu": "Six plans. Le chef, de sept heures du matin au bac vide du vendredi, puis la bascule."
+        },
+        {
+          "titre": "En salle",
+          "debut": 60.0,
+          "fin": 120.0,
+          "contenu": "Six plans. Le maître d'hôtel, sa mémoire, la table de douze qui n'existait pas."
+        },
+        {
+          "titre": "Au bureau",
+          "debut": 120.0,
+          "fin": 180.0,
+          "contenu": "Six plans. Le gérant, la pile de papier, le quinze du mois suivant."
+        },
+        {
+          "titre": "À la maison",
+          "debut": 180.0,
+          "fin": 240.0,
+          "contenu": "Six plans. Le client, qui ne verra jamais le logiciel."
+        },
+        {
+          "titre": "Vendredi, 20 h 15",
+          "debut": 240.0,
+          "fin": 350.0,
+          "contenu": "Onze plans. Les quatre histoires se croisent, minute par minute, jusqu'à la chute."
+        }
+      ],
+      "livrable": "Un film de 350 s en 9:16 pour la page de la série, et trente-cinq stories de 10 s — mêmes plans, générique de fin en plus — pour les quatre réseaux."
+    },
+    "metier": null,
+    "phase": null,
+    "amplitude": null,
+    "boucle": null,
+    "boucleSlug": null,
+    "grandeBoucle": null,
+    "incident": null,
+    "incidentHeure": null,
+    "incidentQuoi": null,
+    "saumon": null,
+    "voixOff": {
+      "conteur": "À minuit moins dix, il n'y avait plus rien à rattraper.",
+      "personnage": "C'était une bonne soirée.",
+      "generique": "Trois chiffres avant d'éteindre, pas le 15 du mois suivant.",
+      "enchaine": "Enchaîne sur « 7 h 00 — le lendemain »"
+    },
+    "story": {
+      "format": "9:16 · 1080 × 1920 · 10 s",
+      "hook": "À minuit moins dix, il n'y avait plus rien à rattraper",
+      "punchline": "Le dimanche est resté un dimanche",
+      "url": null,
+      "motion": {
+        "quand": "8,5 → 10,0 s, par-dessus la fin du plan",
+        "consigne": "Générique de fin en motion design, posé sur les 1,5 dernière(s) seconde(s) du plan, sans jamais couper l'image :\n— à 8,5 s, un voile marine #0F1A23 monte du bas sur le tiers inférieur, en 0,3 s, courbe d'accélération douce ;\n— à 8,8 s, le logo FoodEatUp arrive du bas, cale au centre du voile, avec un léger dépassement puis retour (overshoot 6 %) ;\n— à 9,1 s, la punchline s'écrit sous le logo, un mot après l'autre, 0,06 s par mot, en crème #FCF9E6 ;\n— à 9,6 s, la mention « à suivre » apparaît en orange #FFA500 à droite, avec une flèche qui avance de 8 px et s'arrête ;\n— rien ne disparaît avant la fin du plan.",
+        "punchline": "Trois chiffres avant d'éteindre, pas le 15 du mois suivant.",
+        "aSuivre": "À suivre — 7 h 00 — le lendemain",
+        "voix": "Voix off française, la même que le conteur mais une note plus haute et plus proche du micro, sur les 1,5 dernière(s) seconde(s) : « Trois chiffres avant d'éteindre, pas le 15 du mois suivant. »"
+      }
+    },
+    "carrousel": null,
+    "imageFacebook": null,
+    "tutoriel": null
+  },
+  "EP534": {
+    "publications": {
+      "facebook": {
+        "legende": "Le lendemain, il a ouvert. Comme tous les jours.\n\nSept heures du matin, la même cuisine, la même veilleuse. Rien n'a changé du métier. Tout a changé de ce qu'il faut porter dans sa tête pour l'exercer.\n\nMais il n'a plus jamais ouvert le carnet.\n\n« Il était une fois un restaurant » — épisode 34 sur 35. Les trente-cinq bout à bout font un film de cinq minutes cinquante.\nTout FoodEatUp : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "hashtags": [
+          "restauration",
+          "foodeatup",
+          "restaurant",
+          "courtmetrage",
+          "vendredi-20-h-15"
+        ],
+        "motsCles": [
+          "service",
+          "restauration",
+          "foodeatup",
+          "vendredi, 20 h 15"
+        ],
+        "cta": "Découvrir FoodEatUp"
+      },
+      "instagram": {
+        "legende": "Le lendemain, il a ouvert. Comme tous les jours.\n\nSept heures du matin, la même cuisine, la même veilleuse. Rien n'a changé du métier. Tout a changé de ce qu'il faut porter dans sa tête pour l'exercer.\n\nMais il n'a plus jamais ouvert le carnet.\n\n« Il était une fois un restaurant » — épisode 34 sur 35. Les trente-cinq bout à bout font un film de cinq minutes cinquante.\nTout FoodEatUp : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "hashtags": [
+          "restauration",
+          "foodeatup",
+          "restaurant",
+          "courtmetrage",
+          "vendredi-20-h-15"
+        ],
+        "motsCles": [
+          "service",
+          "restauration",
+          "foodeatup",
+          "vendredi, 20 h 15"
+        ],
+        "cta": "Découvrir FoodEatUp"
+      },
+      "tiktok": {
+        "legende": "Le lendemain, il a ouvert. Comme tous les jours.\n\nSept heures du matin, la même cuisine, la même veilleuse. Rien n'a changé du métier. Tout a changé de ce qu'il faut porter dans sa tête pour l'exercer.\n\nMais il n'a plus jamais ouvert le carnet.\n\n« Il était une fois un restaurant » — épisode 34 sur 35. Les trente-cinq bout à bout font un film de cinq minutes cinquante.\nTout FoodEatUp : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "hashtags": [
+          "restauration",
+          "foodeatup",
+          "restaurant",
+          "courtmetrage",
+          "vendredi-20-h-15"
+        ],
+        "motsCles": [
+          "service",
+          "restauration",
+          "foodeatup",
+          "vendredi, 20 h 15"
+        ],
+        "cta": "Découvrir FoodEatUp"
+      },
+      "linkedin": {
+        "legende": "Le lendemain, il a ouvert. Comme tous les jours.\n\nSept heures du matin, la même cuisine, la même veilleuse. Rien n'a changé du métier. Tout a changé de ce qu'il faut porter dans sa tête pour l'exercer.\n\nMais il n'a plus jamais ouvert le carnet.\n\n« Il était une fois un restaurant » — épisode 34 sur 35. Les trente-cinq bout à bout font un film de cinq minutes cinquante.\nTout FoodEatUp : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "hashtags": [
+          "restauration",
+          "foodeatup",
+          "restaurant",
+          "courtmetrage",
+          "vendredi-20-h-15"
+        ],
+        "motsCles": [
+          "service",
+          "restauration",
+          "foodeatup",
+          "vendredi, 20 h 15"
+        ],
+        "cta": "Découvrir FoodEatUp"
+      },
+      "youtube": {
+        "legende": "Le lendemain, il a ouvert. Comme tous les jours.\n\nSept heures du matin, la même cuisine, la même veilleuse. Rien n'a changé du métier. Tout a changé de ce qu'il faut porter dans sa tête pour l'exercer.\n\nMais il n'a plus jamais ouvert le carnet.\n\n« Il était une fois un restaurant » — épisode 34 sur 35. Les trente-cinq bout à bout font un film de cinq minutes cinquante.\nTout FoodEatUp : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "hashtags": [
+          "restauration",
+          "foodeatup",
+          "restaurant",
+          "courtmetrage",
+          "vendredi-20-h-15"
+        ],
+        "motsCles": [
+          "service",
+          "restauration",
+          "foodeatup",
+          "vendredi, 20 h 15"
+        ],
+        "cta": "Découvrir FoodEatUp",
+        "titre": "7 h 00 — le lendemain — Il était une fois un restaurant 34/35"
+      }
+    },
+    "promptVignette": "Photo réaliste, cadrage vertical 9:16, image de cinéma : optique 40 mm, faible profondeur de champ, grain argentique léger.\n\nL'acteur de l'image de référence — MÊME visage, même barbe, même carrure. Il joue ici les quatre : les quatre tenues, selon le personnage à l'image. Décor : le restaurant entier, de la cuisine au trottoir. Expression : bon. on y va — il ne sourit pas pour la caméra.\n\nBANDE HAUTE — marine #0F1A23 sur le cinquième supérieur, portant UNIQUEMENT « VENDREDI, 20 H 15 » en crème #FCF9E6, typographie arrondie très grasse, centré.\n\nBANDE BASSE — crème #FCF9E6 sur le sixième inférieur, portant UNIQUEMENT « 34 / 35 » en marine #0F1A23, aligné à droite.\n\nAucun logo dessiné, aucun filigrane, aucune interface de logiciel à l'écran, aucune autre inscription.",
+    "higgsfieldPrompt": "Vertical 9:16, 10 secondes, 1080p, 24 im/s. PAS de texte incrusté, PAS de sous-titres, PAS de filigrane, PAS de logo, AUCUNE légende gravée dans l'image. Photoréaliste, image de cinéma : optique 40 mm, faible profondeur de champ, grain argentique léger, contraste tenu. Un seul plan, aucune coupe.\n\n@Image 1 ne définit que le visage de l'acteur — barbe, traits, carrure. Ne pas les modifier. Dans ce plan il joue les quatre : les quatre tenues, selon le personnage à l'image. C'est le même acteur dans les quatre histoires du film, et le film ne le dit jamais : ne rien ajouter qui le souligne.\n\nDécor : le restaurant entier, de la cuisine au trottoir. Étalonnage chaud, contrasté, lumière de service : c'est le dernier acte, il est filmé comme une fin de film.\n\n0-5s: La cuisine à l'aube, exactement le cadre du tout premier plan du film. Caméra portée, très lent mouvement avant. Voix off française, un homme, grave et posée, le débit d'un conteur qui connaît déjà la fin, hors champ : {Le lendemain, il a ouvert. Comme tous les jours.} End state at 5s: le personnage est seul et lisible dans le cadre, rien n'a encore changé autour de lui.\n5-8s: À 5 secondes exactement, les néons s'allument rangée par rangée, comme au premier épisode. Un seul changement, rien d'autre ne bouge. End state at 8s: le changement est complet et pleinement lisible, le personnage y a réagi.\n8-10s: Il pose les mains à plat sur le pass, immobile, et regarde la salle vide. La caméra s'immobilise. Français, voix naturelle, dite pour soi et non pour la caméra, les quatre : {Bon. On y va.} End state at 10s: plan figé sur son visage, caméra immobile, aucune entrée dans le cadre.\n\nSound design: <ambiance réelle du lieu, dense> <un seul bruit de matière au moment du changement>. Deux répliques, exactement aux minutages ci-dessus : le conteur au début, le personnage à la fin. Pas de musique — elle est ajoutée au montage.",
+    "scriptHeygen": null,
+    "kit": null,
+    "heygenPrompt": null,
+    "montage": {
+      "consigne": "Assembler les trente-cinq plans dans l'ordre des identifiants, sans transition entre deux plans d'une même histoire, et avec un fondu au noir de 12 images entre deux histoires. Le générique de fin des stories est RETIRÉ de la version film : il ne sert qu'aux réseaux. Musique unique sur les 350 s, montée de deux décibels à partir de l'épisode 25 et coupée net sur le dernier plan. Voix off du conteur normalisée à −16 LUFS, dialogues des personnages à −14, ambiances à −24. Sortie 1080 × 1920, H.264, 350 s.",
+      "segments": [
+        {
+          "titre": "En cuisine",
+          "debut": 0.0,
+          "fin": 60.0,
+          "contenu": "Six plans. Le chef, de sept heures du matin au bac vide du vendredi, puis la bascule."
+        },
+        {
+          "titre": "En salle",
+          "debut": 60.0,
+          "fin": 120.0,
+          "contenu": "Six plans. Le maître d'hôtel, sa mémoire, la table de douze qui n'existait pas."
+        },
+        {
+          "titre": "Au bureau",
+          "debut": 120.0,
+          "fin": 180.0,
+          "contenu": "Six plans. Le gérant, la pile de papier, le quinze du mois suivant."
+        },
+        {
+          "titre": "À la maison",
+          "debut": 180.0,
+          "fin": 240.0,
+          "contenu": "Six plans. Le client, qui ne verra jamais le logiciel."
+        },
+        {
+          "titre": "Vendredi, 20 h 15",
+          "debut": 240.0,
+          "fin": 350.0,
+          "contenu": "Onze plans. Les quatre histoires se croisent, minute par minute, jusqu'à la chute."
+        }
+      ],
+      "livrable": "Un film de 350 s en 9:16 pour la page de la série, et trente-cinq stories de 10 s — mêmes plans, générique de fin en plus — pour les quatre réseaux."
+    },
+    "metier": null,
+    "phase": null,
+    "amplitude": null,
+    "boucle": null,
+    "boucleSlug": null,
+    "grandeBoucle": null,
+    "incident": null,
+    "incidentHeure": null,
+    "incidentQuoi": null,
+    "saumon": null,
+    "voixOff": {
+      "conteur": "Le lendemain, il a ouvert. Comme tous les jours.",
+      "personnage": "Bon. On y va.",
+      "generique": "Le même métier. Sans la charge.",
+      "enchaine": "Enchaîne sur « Il était une fois un restaurant »"
+    },
+    "story": {
+      "format": "9:16 · 1080 × 1920 · 10 s",
+      "hook": "Le lendemain, il a ouvert. Comme tous les jours",
+      "punchline": "Mais il n'a plus jamais ouvert le carnet",
+      "url": null,
+      "motion": {
+        "quand": "8,5 → 10,0 s, par-dessus la fin du plan",
+        "consigne": "Générique de fin en motion design, posé sur les 1,5 dernière(s) seconde(s) du plan, sans jamais couper l'image :\n— à 8,5 s, un voile marine #0F1A23 monte du bas sur le tiers inférieur, en 0,3 s, courbe d'accélération douce ;\n— à 8,8 s, le logo FoodEatUp arrive du bas, cale au centre du voile, avec un léger dépassement puis retour (overshoot 6 %) ;\n— à 9,1 s, la punchline s'écrit sous le logo, un mot après l'autre, 0,06 s par mot, en crème #FCF9E6 ;\n— à 9,6 s, la mention « à suivre » apparaît en orange #FFA500 à droite, avec une flèche qui avance de 8 px et s'arrête ;\n— rien ne disparaît avant la fin du plan.",
+        "punchline": "Le même métier. Sans la charge.",
+        "aSuivre": "À suivre — Il était une fois un restaurant",
+        "voix": "Voix off française, la même que le conteur mais une note plus haute et plus proche du micro, sur les 1,5 dernière(s) seconde(s) : « Le même métier. Sans la charge. »"
+      }
+    },
+    "carrousel": null,
+    "imageFacebook": null,
+    "tutoriel": null
+  },
+  "EP535": {
+    "publications": {
+      "facebook": {
+        "legende": "Il était une fois un restaurant. Il y est toujours.\n\nLe dernier plan referme le film : les quatre personnages, le même homme, réunis une seconde à l'image. C'est le seul moment où le film le dit.\n\nQuatre métiers, un seul logiciel, et personne n'a rien vu passer.\n\n« Il était une fois un restaurant » — épisode 35 sur 35. Les trente-cinq bout à bout font un film de cinq minutes cinquante.\nTout FoodEatUp : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "hashtags": [
+          "restauration",
+          "foodeatup",
+          "restaurant",
+          "courtmetrage",
+          "vendredi-20-h-15"
+        ],
+        "motsCles": [
+          "service",
+          "restauration",
+          "foodeatup",
+          "vendredi, 20 h 15"
+        ],
+        "cta": "Découvrir FoodEatUp"
+      },
+      "instagram": {
+        "legende": "Il était une fois un restaurant. Il y est toujours.\n\nLe dernier plan referme le film : les quatre personnages, le même homme, réunis une seconde à l'image. C'est le seul moment où le film le dit.\n\nQuatre métiers, un seul logiciel, et personne n'a rien vu passer.\n\n« Il était une fois un restaurant » — épisode 35 sur 35. Les trente-cinq bout à bout font un film de cinq minutes cinquante.\nTout FoodEatUp : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "hashtags": [
+          "restauration",
+          "foodeatup",
+          "restaurant",
+          "courtmetrage",
+          "vendredi-20-h-15"
+        ],
+        "motsCles": [
+          "service",
+          "restauration",
+          "foodeatup",
+          "vendredi, 20 h 15"
+        ],
+        "cta": "Découvrir FoodEatUp"
+      },
+      "tiktok": {
+        "legende": "Il était une fois un restaurant. Il y est toujours.\n\nLe dernier plan referme le film : les quatre personnages, le même homme, réunis une seconde à l'image. C'est le seul moment où le film le dit.\n\nQuatre métiers, un seul logiciel, et personne n'a rien vu passer.\n\n« Il était une fois un restaurant » — épisode 35 sur 35. Les trente-cinq bout à bout font un film de cinq minutes cinquante.\nTout FoodEatUp : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "hashtags": [
+          "restauration",
+          "foodeatup",
+          "restaurant",
+          "courtmetrage",
+          "vendredi-20-h-15"
+        ],
+        "motsCles": [
+          "service",
+          "restauration",
+          "foodeatup",
+          "vendredi, 20 h 15"
+        ],
+        "cta": "Découvrir FoodEatUp"
+      },
+      "linkedin": {
+        "legende": "Il était une fois un restaurant. Il y est toujours.\n\nLe dernier plan referme le film : les quatre personnages, le même homme, réunis une seconde à l'image. C'est le seul moment où le film le dit.\n\nQuatre métiers, un seul logiciel, et personne n'a rien vu passer.\n\n« Il était une fois un restaurant » — épisode 35 sur 35. Les trente-cinq bout à bout font un film de cinq minutes cinquante.\nTout FoodEatUp : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "hashtags": [
+          "restauration",
+          "foodeatup",
+          "restaurant",
+          "courtmetrage",
+          "vendredi-20-h-15"
+        ],
+        "motsCles": [
+          "service",
+          "restauration",
+          "foodeatup",
+          "vendredi, 20 h 15"
+        ],
+        "cta": "Découvrir FoodEatUp"
+      },
+      "youtube": {
+        "legende": "Il était une fois un restaurant. Il y est toujours.\n\nLe dernier plan referme le film : les quatre personnages, le même homme, réunis une seconde à l'image. C'est le seul moment où le film le dit.\n\nQuatre métiers, un seul logiciel, et personne n'a rien vu passer.\n\n« Il était une fois un restaurant » — épisode 35 sur 35. Les trente-cinq bout à bout font un film de cinq minutes cinquante.\nTout FoodEatUp : https://site.foodeatup.com/\nUne démo ? 06 14 18 92 25 — foodeatup.com",
+        "hashtags": [
+          "restauration",
+          "foodeatup",
+          "restaurant",
+          "courtmetrage",
+          "vendredi-20-h-15"
+        ],
+        "motsCles": [
+          "service",
+          "restauration",
+          "foodeatup",
+          "vendredi, 20 h 15"
+        ],
+        "cta": "Découvrir FoodEatUp",
+        "titre": "Il était une fois un restaurant — Il était une fois un restaurant 35/35"
+      }
+    },
+    "promptVignette": "Photo réaliste, cadrage vertical 9:16, image de cinéma : optique 40 mm, faible profondeur de champ, grain argentique léger.\n\nL'acteur de l'image de référence — MÊME visage, même barbe, même carrure. Il joue ici les quatre : les quatre tenues, selon le personnage à l'image. Décor : le restaurant entier, de la cuisine au trottoir. Expression : il était une fois un restaurant — il ne sourit pas pour la caméra.\n\nBANDE HAUTE — marine #0F1A23 sur le cinquième supérieur, portant UNIQUEMENT « VENDREDI, 20 H 15 » en crème #FCF9E6, typographie arrondie très grasse, centré.\n\nBANDE BASSE — crème #FCF9E6 sur le sixième inférieur, portant UNIQUEMENT « 35 / 35 » en marine #0F1A23, aligné à droite.\n\nAucun logo dessiné, aucun filigrane, aucune interface de logiciel à l'écran, aucune autre inscription.",
+    "higgsfieldPrompt": "Vertical 9:16, 10 secondes, 1080p, 24 im/s. PAS de texte incrusté, PAS de sous-titres, PAS de filigrane, PAS de logo, AUCUNE légende gravée dans l'image. Photoréaliste, image de cinéma : optique 40 mm, faible profondeur de champ, grain argentique léger, contraste tenu. Un seul plan, aucune coupe.\n\n@Image 1 ne définit que le visage de l'acteur — barbe, traits, carrure. Ne pas les modifier. Dans ce plan il joue les quatre : les quatre tenues, selon le personnage à l'image. C'est le même acteur dans les quatre histoires du film, et le film ne le dit jamais : ne rien ajouter qui le souligne.\n\nDécor : le restaurant entier, de la cuisine au trottoir. Étalonnage chaud, contrasté, lumière de service : c'est le dernier acte, il est filmé comme une fin de film.\n\n0-5s: La façade du restaurant, la nuit, l'enseigne allumée, la rue déserte. Caméra portée, très lent mouvement avant. Voix off française, un homme, grave et posée, le débit d'un conteur qui connaît déjà la fin, hors champ : {Il était une fois un restaurant. Il y est toujours.} End state at 5s: le personnage est seul et lisible dans le cadre, rien n'a encore changé autour de lui.\n5-8s: À 5 secondes exactement, les quatre silhouettes apparaissent en surimpression dans la vitrine, une par une. Un seul changement, rien d'autre ne bouge. End state at 8s: le changement est complet et pleinement lisible, le personnage y a réagi.\n8-10s: Les quatre reflets se superposent en un seul, et l'enseigne reste seule allumée. La caméra s'immobilise. Français, voix naturelle, dite pour soi et non pour la caméra, les quatre : {Il était une fois un restaurant.} End state at 10s: plan figé sur son visage, caméra immobile, aucune entrée dans le cadre.\n\nSound design: <ambiance réelle du lieu, dense> <un seul bruit de matière au moment du changement>. Deux répliques, exactement aux minutages ci-dessus : le conteur au début, le personnage à la fin. Pas de musique — elle est ajoutée au montage.",
+    "scriptHeygen": null,
+    "kit": null,
+    "heygenPrompt": null,
+    "montage": {
+      "consigne": "Assembler les trente-cinq plans dans l'ordre des identifiants, sans transition entre deux plans d'une même histoire, et avec un fondu au noir de 12 images entre deux histoires. Le générique de fin des stories est RETIRÉ de la version film : il ne sert qu'aux réseaux. Musique unique sur les 350 s, montée de deux décibels à partir de l'épisode 25 et coupée net sur le dernier plan. Voix off du conteur normalisée à −16 LUFS, dialogues des personnages à −14, ambiances à −24. Sortie 1080 × 1920, H.264, 350 s.",
+      "segments": [
+        {
+          "titre": "En cuisine",
+          "debut": 0.0,
+          "fin": 60.0,
+          "contenu": "Six plans. Le chef, de sept heures du matin au bac vide du vendredi, puis la bascule."
+        },
+        {
+          "titre": "En salle",
+          "debut": 60.0,
+          "fin": 120.0,
+          "contenu": "Six plans. Le maître d'hôtel, sa mémoire, la table de douze qui n'existait pas."
+        },
+        {
+          "titre": "Au bureau",
+          "debut": 120.0,
+          "fin": 180.0,
+          "contenu": "Six plans. Le gérant, la pile de papier, le quinze du mois suivant."
+        },
+        {
+          "titre": "À la maison",
+          "debut": 180.0,
+          "fin": 240.0,
+          "contenu": "Six plans. Le client, qui ne verra jamais le logiciel."
+        },
+        {
+          "titre": "Vendredi, 20 h 15",
+          "debut": 240.0,
+          "fin": 350.0,
+          "contenu": "Onze plans. Les quatre histoires se croisent, minute par minute, jusqu'à la chute."
+        }
+      ],
+      "livrable": "Un film de 350 s en 9:16 pour la page de la série, et trente-cinq stories de 10 s — mêmes plans, générique de fin en plus — pour les quatre réseaux."
+    },
+    "metier": null,
+    "phase": null,
+    "amplitude": null,
+    "boucle": null,
+    "boucleSlug": null,
+    "grandeBoucle": null,
+    "incident": null,
+    "incidentHeure": null,
+    "incidentQuoi": null,
+    "saumon": null,
+    "voixOff": {
+      "conteur": "Il était une fois un restaurant. Il y est toujours.",
+      "personnage": "Il était une fois un restaurant.",
+      "generique": "FoodEatUp. Le restaurant qui se gère tout seul.",
+      "enchaine": "Dernier plan — le film se referme sur son premier"
+    },
+    "story": {
+      "format": "9:16 · 1080 × 1920 · 10 s",
+      "hook": "Il était une fois un restaurant. Il y est toujours",
+      "punchline": "Quatre métiers, un seul logiciel, et personne n'a rien vu passer",
+      "url": null,
+      "motion": {
+        "quand": "8,5 → 10,0 s, par-dessus la fin du plan",
+        "consigne": "Générique de fin en motion design, posé sur les 1,5 dernière(s) seconde(s) du plan, sans jamais couper l'image :\n— à 8,5 s, un voile marine #0F1A23 monte du bas sur le tiers inférieur, en 0,3 s, courbe d'accélération douce ;\n— à 8,8 s, le logo FoodEatUp arrive du bas, cale au centre du voile, avec un léger dépassement puis retour (overshoot 6 %) ;\n— à 9,1 s, la punchline s'écrit sous le logo, un mot après l'autre, 0,06 s par mot, en crème #FCF9E6 ;\n— à 9,6 s, la mention « à suivre » apparaît en orange #FFA500 à droite, avec une flèche qui avance de 8 px et s'arrête ;\n— rien ne disparaît avant la fin du plan.",
+        "punchline": "FoodEatUp. Le restaurant qui se gère tout seul.",
+        "aSuivre": "Fin — le film entier en une fois",
+        "voix": "Voix off française, la même que le conteur mais une note plus haute et plus proche du micro, sur les 1,5 dernière(s) seconde(s) : « FoodEatUp. Le restaurant qui se gère tout seul. »"
+      }
+    },
+    "carrousel": null,
+    "imageFacebook": null,
     "tutoriel": null
   }
 };
