@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Écrit la série 4 — « Il était une fois un restaurant » — dans l'inventaire.
+"""Écrit la série 4 — « UpEatFood » — dans l'inventaire.
 
     python3 scripts/gen-serie-4.py
 
@@ -29,6 +29,21 @@ INVENTAIRE = R.parent / "foodeatup-social" / "data" / "series.json"
 from serie_film import HISTOIRES, PLANS, TEMPS  # noqa: E402
 
 SLUG = "il-etait-une-fois-un-restaurant"
+
+# ── Le générique du film ─────────────────────────────────────────────────────
+# Il n'est pas décoratif : c'est lui qui donne aux trente-cinq affiches leur
+# bandeau commun, et c'est à ça qu'on reconnaît qu'elles appartiennent au même
+# film plutôt qu'à trente-cinq campagnes différentes.
+FILM = {
+    "titre": "UpEatFood",
+    "sousTitre": "La montée en puissance",
+    "baseline": "Le restaurant fait son cinéma",
+    "acteur": "Michael Kebail",
+    "roles": "dans le rôle du chef, du serveur, du patron et du client",
+    "realisation": "Un film réalisé par FoodEatUp",
+    "apres": "D'après des faits réels — l'expérience de Michael",
+    "sortie": "Sortie en salle le 8 mai 2027",
+}
 
 # La cinquième saison n'a pas d'histoire à elle : c'est celle où les quatre se
 # croisent. Elle porte donc son propre en-tête.
@@ -182,22 +197,202 @@ def story(ep, h, p, suivant):
     }
 
 
-def prompt_vignette(h, p, numero):
+# ─────────────────────────────────────────────────────────────────────────────
+# Les images du film
+#
+# Ce ne sont pas des vignettes d'épisode : ce sont des affiches. Un plan de
+# UpEatFood se présente comme une sortie de film — le titre en haut, le bloc de
+# générique en bas, l'acteur au milieu — parce que c'est ce que la série promet
+# et parce qu'une affiche se reconnaît dans un fil là où une vignette se
+# confond avec les quatre-vingts autres.
+#
+# Trois règles tiennent les trente-cinq affiches ensemble : le même bandeau de
+# générique, le même acteur, et l'étalonnage qui suit l'acte — froid avant
+# FoodEatUp, chaud après. Le spectateur voit le film changer de couleur sans
+# qu'on le lui dise.
+# ─────────────────────────────────────────────────────────────────────────────
+ETALONNAGE = {
+    "Avant FoodEatUp": (
+        "étalonnage froid et désaturé, verts tirés, ombres bouchées — c'est "
+        "l'avant du film"
+    ),
+    "La bascule": (
+        "étalonnage à cheval : froid à gauche du cadre, chaud à droite, la "
+        "bascule du film tient dans l'image"
+    ),
+    "Avec FoodEatUp": (
+        "étalonnage chaud et tenu, blancs propres, noirs ouverts — c'est "
+        "l'après du film"
+    ),
+    "Le croisement": (
+        "étalonnage chaud et contrasté, lumière de service, comme une fin de film"
+    ),
+}
+
+
+def generique(numero, total, sur_deux_lignes=True):
+    """Le bloc de générique, identique sur les trente-cinq affiches."""
+    saut = "\n" if sur_deux_lignes else " · "
     return (
-        "Photo réaliste, cadrage vertical 9:16, image de cinéma : optique 40 mm, "
-        "faible profondeur de champ, grain argentique léger.\n\n"
-        f"L'acteur de l'image de référence — MÊME visage, même barbe, même "
-        f"carrure. Il joue ici {h['role'].lower()} : {h['tenue']}. "
-        f"Décor : {h['decor']}. Expression : {p['dit'].rstrip('.').lower()} — "
-        "il ne sourit pas pour la caméra.\n\n"
-        f"BANDE HAUTE — marine #0F1A23 sur le cinquième supérieur, portant "
-        f"UNIQUEMENT « {h['titre'].upper()} » en crème #FCF9E6, typographie "
-        "arrondie très grasse, centré.\n\n"
-        f"BANDE BASSE — crème #FCF9E6 sur le sixième inférieur, portant "
-        f"UNIQUEMENT « {numero:02d} / 35 » en marine #0F1A23, aligné à droite.\n\n"
-        "Aucun logo dessiné, aucun filigrane, aucune interface de logiciel à "
-        "l'écran, aucune autre inscription."
+        f"{FILM['acteur'].upper()}{saut}{FILM['roles']}{saut}"
+        f"{FILM['realisation'].upper()}{saut}{FILM['apres'].upper()}{saut}"
+        f"CHAPITRE {numero} / {total}{saut}{FILM['sortie'].upper()}"
     )
+
+
+def prompt_affiche(h, arc, p, numero, total):
+    """L'affiche 9:16 du plan — la vignette de l'épisode."""
+    return (
+        "AFFICHE DE FILM, format vertical 9:16, 1080 × 1920. Photo réaliste, "
+        "image de cinéma : optique 40 mm, faible profondeur de champ, grain "
+        f"argentique, {ETALONNAGE[arc]}.\n\n"
+        f"L'ACTEUR — {FILM['acteur']}, celui de l'image de référence jointe. "
+        "MÊME visage, MÊME barbe, MÊME carrure : c'est lui sur les trente-cinq "
+        f"affiches du film. Ici il joue {h['role'].lower()} : {h['tenue']}. "
+        "Il occupe la moitié centrale de l'affiche, cadré à mi-corps, de "
+        "trois quarts, le regard hors champ — jamais un sourire de publicité.\n\n"
+        f"LA SCÈNE, derrière lui, en flou d'arrière-plan — {h['decor']}. "
+        f"{p['scene']}\n\n"
+        "LA COMPOSITION, identique sur les trente-cinq :\n"
+        f"— TITRE, sur le cinquième supérieur : « {FILM['titre']} » en très "
+        "grandes capitales crème #FCF9E6, typographie arrondie très grasse, "
+        "centré, légèrement condensé ;\n"
+        f"— SOUS-TITRE, juste dessous, plus petit : « {FILM['sousTitre']} » en "
+        "orange #FFA500, en capitales espacées ;\n"
+        f"— TITRE DU CHAPITRE, au tiers inférieur : « {p['titre'].upper()} » en "
+        "crème, corps moyen, sur une seule ligne si possible ;\n"
+        "— BLOC DE GÉNÉRIQUE, sur le sixième inférieur, fond marine #0F1A23, "
+        "texte crème en petites capitales très espacées, centré, cinq lignes :\n"
+        f"{generique(numero, total)}\n\n"
+        "INTERDITS — aucun logo dessiné par le générateur, aucun laurier de "
+        "festival, aucune note d'étoiles, aucune interface de logiciel à "
+        "l'écran, aucun texte autre que ceux listés ci-dessus. Le texte doit "
+        "être net et sans faute : si le rendu du français est mauvais, produire "
+        "l'image sans texte et composer les bandes par-dessus."
+    )
+
+
+CARROUSEL_ROLES = [
+    ("L'affiche", "l'affiche du chapitre, telle qu'elle est"),
+    ("La scène", "ce qui se passe dans les dix secondes"),
+    ("Ce que ça coûte", "ce que le problème coûte, ou ce que la réponse rend"),
+    ("La suite", "ce que le chapitre suivant promet"),
+]
+
+
+def carrousel(h, arc, p, numero, total, suivant):
+    """Les quatre planches LinkedIn — la bande-annonce en images fixes."""
+    commun = (
+        "Format 4:5, 1080 × 1350. Photo réaliste, image de cinéma, "
+        f"{ETALONNAGE[arc]}. {FILM['acteur']}, celui de l'image de référence "
+        "jointe — MÊME visage, MÊME barbe, MÊME carrure. Ici il joue "
+        f"{h['role'].lower()} : {h['tenue']}. Aucun logo dessiné, aucune "
+        "interface de logiciel, aucun texte autre que celui demandé."
+    )
+    textes = [
+        (f"{FILM['titre']} — {FILM['sousTitre']}", p["titre"]),
+        (p["titre"], p["accroche"]),
+        ("Ce que ça change", p["punchline"]),
+        ("La suite", suivant or "Fin — le film en entier"),
+    ]
+    plans = [
+        f"Portrait d'affiche : {h['role'].lower()} à mi-corps, de trois quarts, "
+        f"le regard hors champ, {h['decor']} en flou derrière lui.",
+        f"La scène elle-même : {p['scene']}",
+        f"Le moment de bascule du plan : {p['bascule']}.",
+        f"La dernière image du plan : {p['fin']}",
+    ]
+    return {
+        "format": "4:5 · 1080 × 1350",
+        "planches": [
+            {
+                "n": i + 1,
+                "role": CARROUSEL_ROLES[i][0],
+                "titre": textes[i][0],
+                "texte": textes[i][1],
+                "prompt": (
+                    f"{commun}\n\nPLANCHE {i + 1} SUR 4 — {CARROUSEL_ROLES[i][0]} : "
+                    f"{CARROUSEL_ROLES[i][1]}.\n{plans[i]}\n\n"
+                    f"BANDE HAUTE — marine #0F1A23 sur le cinquième supérieur, "
+                    f"portant UNIQUEMENT « {textes[i][0].upper()} » en crème "
+                    "#FCF9E6, typographie arrondie très grasse, centré.\n"
+                    f"BANDE BASSE — crème #FCF9E6 sur le sixième inférieur, "
+                    f"portant UNIQUEMENT « {textes[i][1]} » en marine #0F1A23, "
+                    f"et à droite en plus petit « {numero} / {total} »."
+                ),
+            }
+            for i in range(4)
+        ],
+    }
+
+
+def image_facebook(h, arc, p, numero, total):
+    """Le visuel Facebook — l'affiche recadrée en 4:5, la punchline dedans."""
+    return {
+        "format": "4:5 · 1080 × 1350",
+        "prompt": (
+            "AFFICHE DE FILM recadrée en 4:5, 1080 × 1350. Photo réaliste, "
+            f"image de cinéma, {ETALONNAGE[arc]}.\n\n"
+            f"L'ACTEUR — {FILM['acteur']}, celui de l'image de référence jointe. "
+            "MÊME visage, MÊME barbe, MÊME carrure. Il joue ici "
+            f"{h['role'].lower()} : {h['tenue']}. Cadré à mi-corps, décalé à "
+            f"droite du cadre. Derrière lui, en flou : {h['decor']}. "
+            f"{p['scene']}\n\n"
+            f"BANDE HAUTE — crème #FCF9E6 sur le cinquième supérieur, portant "
+            f"UNIQUEMENT « {p['accroche']} » en marine #0F1A23, typographie "
+            "arrondie très grasse, aligné à gauche.\n"
+            f"BANDE BASSE — marine #0F1A23 sur le sixième inférieur, portant "
+            f"« {p['punchline']} » en crème #FCF9E6, et en dessous en plus "
+            f"petit et en capitales espacées : « {FILM['titre']} · "
+            f"{FILM['sousTitre']} · CHAPITRE {numero} / {total} ».\n\n"
+            "Ce n'est pas une vignette : personne ne cliquera dessus pour voir "
+            "autre chose. Elle se lit dans un fil, sans son, la légende "
+            "repliée — les deux textes doivent donc être nets et sans faute.\n\n"
+            "INTERDITS — aucun logo dessiné, aucun laurier, aucune note "
+            "d'étoiles, aucune interface de logiciel."
+        ),
+    }
+
+
+AFFICHE_SERIE = (
+    "AFFICHE PRINCIPALE DU FILM, format 16:9, 1920 × 1080 (produire aussi une "
+    "version verticale 1080 × 1920, même composition recentrée).\n\n"
+    "C'est l'affiche qu'on voit avant tout le reste : elle doit tenir seule, "
+    "sans une ligne d'explication.\n\n"
+    f"L'IDÉE — {FILM['acteur']}, celui de l'image de référence jointe, apparaît "
+    "QUATRE FOIS dans la même image, dans ses quatre rôles, sans trucage "
+    "visible : le chef en veste blanche au premier plan à gauche, le serveur en "
+    "tablier long derrière lui, le patron en chemise sur la mezzanine à "
+    "l'arrière-plan, et le client en manteau, de dos, entrant par la porte à "
+    "droite. MÊME visage, MÊME barbe, MÊME carrure sur les quatre — c'est tout "
+    "le sujet de l'affiche. Aucun des quatre ne regarde les autres.\n\n"
+    "LE DÉCOR — la salle d'un restaurant à l'heure du service, vue en légère "
+    "contre-plongée depuis la porte d'entrée. Profondeur : la porte au premier "
+    "plan, la salle au milieu, le pass de la cuisine éclairé au fond, la "
+    "mezzanine du bureau au-dessus. Chaque rôle est à son étage de l'image.\n\n"
+    "LA LUMIÈRE — la magie de l'affiche tient là : la moitié gauche est froide "
+    "et désaturée, l'avant du film ; la moitié droite est chaude et ouverte, "
+    "l'après. La bascule passe exactement au milieu du cadre, sur le pass, et "
+    "elle n'est pas une ligne nette mais un dégradé de deux mètres. Un rai de "
+    "lumière chaude traverse la vapeur de la cuisine.\n\n"
+    "LA COMPOSITION\n"
+    f"— TITRE, occupant le tiers de la largeur, en bas au centre : "
+    f"« {FILM['titre']} » en très grandes capitales crème #FCF9E6, typographie "
+    "arrondie très grasse, avec une ombre portée douce ;\n"
+    f"— SOUS-TITRE, juste dessous : « {FILM['sousTitre']} » en orange #FFA500, "
+    "capitales espacées ;\n"
+    f"— ACCROCHE, tout en haut : « {FILM['baseline'].upper()} » en petites "
+    "capitales crème très espacées ;\n"
+    "— BLOC DE GÉNÉRIQUE, bandeau marine #0F1A23 sur le huitième inférieur, "
+    "texte crème en petites capitales espacées, centré :\n"
+    f"{FILM['acteur'].upper()}\n{FILM['roles']}\n{FILM['realisation'].upper()}\n"
+    f"{FILM['apres'].upper()}\n35 CHAPITRES · 350 SECONDES\n{FILM['sortie'].upper()}\n\n"
+    "INTERDITS — aucun logo dessiné par le générateur, aucun laurier de "
+    "festival, aucune note d'étoiles, aucune interface de logiciel, aucun "
+    "visage autre que celui de l'image de référence. Les quatre silhouettes "
+    "sont la même personne : ne pas les différencier par le visage, seulement "
+    "par la tenue et la place dans le cadre."
+)
 
 
 # ─────────────────────────────────────────────────────────────────────────────
@@ -318,7 +513,7 @@ def main():
                 "role": h["role"],
                 "arc": arc,
                 "planDuFilm": f"{numero} / {total}",
-                "promptVignette": prompt_vignette(h, p, numero),
+                "promptVignette": prompt_affiche(h, arc, p, numero, total),
                 "tutorielModuleUrl": None,
                 "tutoriel": None,
                 "masterRapidoUrl": None,
@@ -342,6 +537,8 @@ def main():
                     "source": None,
                 },
                 "story": story(ep, h, p, titre_suivant),
+                "carrousel": carrousel(h, arc, p, numero, total, titre_suivant),
+                "imageFacebook": image_facebook(h, arc, p, numero, total),
                 "montage": MONTAGE_FILM,
                 "reseaux": publications(h, p, numero, total),
             })
@@ -356,15 +553,18 @@ def main():
 
     d["series"].append({
         "slug": SLUG,
-        "nom": "Il était une fois un restaurant",
+        "nom": FILM["titre"],
         "pitch": (
-            "Un film publicitaire de trois cent cinquante secondes, découpé en "
-            "trente-cinq plans de dix. Quatre histoires — la cuisine, la salle, "
-            "le bureau, le client — avant FoodEatUp puis avec, et un dernier "
-            "acte où elles se croisent le même vendredi soir. Le même acteur "
-            "joue les quatre rôles ; le film ne le dit qu'à la fin."
+            f"{FILM['sousTitre']} — {FILM['baseline']}. Un film publicitaire de "
+            "trois cent cinquante secondes, découpé en trente-cinq plans de dix. "
+            "Quatre histoires — la cuisine, la salle, le bureau, le client — "
+            "avant FoodEatUp puis avec, et un dernier acte où elles se croisent "
+            f"le même vendredi soir. {FILM['acteur']} {FILM['roles']} ; le film "
+            f"ne dit qu'à la fin que c'était le même homme. {FILM['realisation']}, "
+            f"{FILM['apres'].lower()}."
         ),
         "format": "35 × 10 s · un film de 350 s · 9:16",
+        "film": {**FILM, "affiche": AFFICHE_SERIE},
         "statut": "a-venir",
         # La date est posée par `dater-series-2-3.py`, qui place la série à la
         # suite des autres. On met le premier jour de la grille par défaut ;

@@ -146,10 +146,33 @@ export type Episode = {
 
 export type Saison = { numero: number; titre: string; pitch: string; episodes: Episode[] };
 
+/**
+ * Le générique d'un film — série « UpEatFood ».
+ *
+ * Une série normale n'en a pas. Celle-ci est un film découpé en trente-cinq
+ * plans : son titre, son casting et sa date de sortie sont la première chose
+ * qu'on doit lire, avant même le premier chapitre. C'est aussi ce bloc qui
+ * donne aux trente-cinq affiches leur bandeau commun.
+ */
+export type GeneriqueFilm = {
+  titre: string;
+  sousTitre: string;
+  baseline: string;
+  acteur: string;
+  roles: string;
+  realisation: string;
+  apres: string;
+  sortie: string;
+  /** Le prompt de l'affiche principale, à donner au générateur d'images. */
+  affiche: string;
+};
+
 export type Serie = {
   slug: string; nom: string; pitch: string; format: string;
   statut: "en-cours" | "terminee" | "a-venir";
   premiereDiffusion: string;
+  /** Série « UpEatFood » seulement : le générique du film. */
+  film?: GeneriqueFilm;
   saisons: Saison[];
 };
 
@@ -23104,9 +23127,20 @@ export const series: Serie[] = [
   },
   {
     "slug": "il-etait-une-fois-un-restaurant",
-    "nom": "Il était une fois un restaurant",
-    "pitch": "Un film publicitaire de trois cent cinquante secondes, découpé en trente-cinq plans de dix. Quatre histoires — la cuisine, la salle, le bureau, le client — avant FoodEatUp puis avec, et un dernier acte où elles se croisent le même vendredi soir. Le même acteur joue les quatre rôles ; le film ne le dit qu'à la fin.",
+    "nom": "UpEatFood",
+    "pitch": "La montée en puissance — Le restaurant fait son cinéma. Un film publicitaire de trois cent cinquante secondes, découpé en trente-cinq plans de dix. Quatre histoires — la cuisine, la salle, le bureau, le client — avant FoodEatUp puis avec, et un dernier acte où elles se croisent le même vendredi soir. Michael Kebail dans le rôle du chef, du serveur, du patron et du client ; le film ne dit qu'à la fin que c'était le même homme. Un film réalisé par FoodEatUp, d'après des faits réels — l'expérience de michael.",
     "format": "35 × 10 s · un film de 350 s · 9:16",
+    "film": {
+      "titre": "UpEatFood",
+      "sousTitre": "La montée en puissance",
+      "baseline": "Le restaurant fait son cinéma",
+      "acteur": "Michael Kebail",
+      "roles": "dans le rôle du chef, du serveur, du patron et du client",
+      "realisation": "Un film réalisé par FoodEatUp",
+      "apres": "D'après des faits réels — l'expérience de Michael",
+      "sortie": "Sortie en salle le 8 mai 2027",
+      "affiche": "AFFICHE PRINCIPALE DU FILM, format 16:9, 1920 × 1080 (produire aussi une version verticale 1080 × 1920, même composition recentrée).\n\nC'est l'affiche qu'on voit avant tout le reste : elle doit tenir seule, sans une ligne d'explication.\n\nL'IDÉE — Michael Kebail, celui de l'image de référence jointe, apparaît QUATRE FOIS dans la même image, dans ses quatre rôles, sans trucage visible : le chef en veste blanche au premier plan à gauche, le serveur en tablier long derrière lui, le patron en chemise sur la mezzanine à l'arrière-plan, et le client en manteau, de dos, entrant par la porte à droite. MÊME visage, MÊME barbe, MÊME carrure sur les quatre — c'est tout le sujet de l'affiche. Aucun des quatre ne regarde les autres.\n\nLE DÉCOR — la salle d'un restaurant à l'heure du service, vue en légère contre-plongée depuis la porte d'entrée. Profondeur : la porte au premier plan, la salle au milieu, le pass de la cuisine éclairé au fond, la mezzanine du bureau au-dessus. Chaque rôle est à son étage de l'image.\n\nLA LUMIÈRE — la magie de l'affiche tient là : la moitié gauche est froide et désaturée, l'avant du film ; la moitié droite est chaude et ouverte, l'après. La bascule passe exactement au milieu du cadre, sur le pass, et elle n'est pas une ligne nette mais un dégradé de deux mètres. Un rai de lumière chaude traverse la vapeur de la cuisine.\n\nLA COMPOSITION\n— TITRE, occupant le tiers de la largeur, en bas au centre : « UpEatFood » en très grandes capitales crème #FCF9E6, typographie arrondie très grasse, avec une ombre portée douce ;\n— SOUS-TITRE, juste dessous : « La montée en puissance » en orange #FFA500, capitales espacées ;\n— ACCROCHE, tout en haut : « LE RESTAURANT FAIT SON CINÉMA » en petites capitales crème très espacées ;\n— BLOC DE GÉNÉRIQUE, bandeau marine #0F1A23 sur le huitième inférieur, texte crème en petites capitales espacées, centré :\nMICHAEL KEBAIL\ndans le rôle du chef, du serveur, du patron et du client\nUN FILM RÉALISÉ PAR FOODEATUP\nD'APRÈS DES FAITS RÉELS — L'EXPÉRIENCE DE MICHAEL\n35 CHAPITRES · 350 SECONDES\nSORTIE EN SALLE LE 8 MAI 2027\n\nINTERDITS — aucun logo dessiné par le générateur, aucun laurier de festival, aucune note d'étoiles, aucune interface de logiciel, aucun visage autre que celui de l'image de référence. Les quatre silhouettes sont la même personne : ne pas les différencier par le visage, seulement par la tenue et la place dans le cadre."
+    },
     "statut": "a-venir",
     "premiereDiffusion": "2027-05-08",
     "saisons": [
@@ -23576,7 +23610,7 @@ export const series: Serie[] = [
             "chapitre": "Il était une fois",
             "accroche": "Il était une fois un homme qui tenait une salle entière dans sa tête.",
             "punchline": "Et sa tête rentrait chez elle à minuit.",
-            "resume": "Le maître d'hôtel connaît les allergies, les habitudes, le prénom du fils. Tout est dans sa tête, et rien n'est écrit nulle part.",
+            "resume": "Le serveur connaît les allergies, les habitudes, le prénom du fils. Tout est dans sa tête, et rien n'est écrit nulle part.",
             "statut": "a_produire",
             "dureeSecondes": 10.0,
             "videoUrl": null,
@@ -23584,7 +23618,7 @@ export const series: Serie[] = [
             "datePrevue": "2027-05-14",
             "troisMots": "IL ÉTAIT UNE FOIS",
             "lieu": "En salle",
-            "role": "Le maître d'hôtel",
+            "role": "Le serveur",
             "arc": "Avant FoodEatUp",
             "planDuFilm": "7 / 35",
             "tutorielModuleUrl": null,
@@ -23658,7 +23692,7 @@ export const series: Serie[] = [
             "datePrevue": "2027-05-15",
             "troisMots": "CE QUI COINCE",
             "lieu": "En salle",
-            "role": "Le maître d'hôtel",
+            "role": "Le serveur",
             "arc": "Avant FoodEatUp",
             "planDuFilm": "8 / 35",
             "tutorielModuleUrl": null,
@@ -23732,7 +23766,7 @@ export const series: Serie[] = [
             "datePrevue": "2027-05-16",
             "troisMots": "LE SOIR OÙ ÇA CASSE",
             "lieu": "En salle",
-            "role": "Le maître d'hôtel",
+            "role": "Le serveur",
             "arc": "Avant FoodEatUp",
             "planDuFilm": "9 / 35",
             "tutorielModuleUrl": null,
@@ -23806,7 +23840,7 @@ export const series: Serie[] = [
             "datePrevue": "2027-05-17",
             "troisMots": "LA BASCULE",
             "lieu": "En salle",
-            "role": "Le maître d'hôtel",
+            "role": "Le serveur",
             "arc": "La bascule",
             "planDuFilm": "10 / 35",
             "tutorielModuleUrl": null,
@@ -23880,7 +23914,7 @@ export const series: Serie[] = [
             "datePrevue": "2027-05-18",
             "troisMots": "LE MÊME GESTE, AUTREMENT",
             "lieu": "En salle",
-            "role": "Le maître d'hôtel",
+            "role": "Le serveur",
             "arc": "Avec FoodEatUp",
             "planDuFilm": "11 / 35",
             "tutorielModuleUrl": null,
@@ -23954,7 +23988,7 @@ export const series: Serie[] = [
             "datePrevue": "2027-05-19",
             "troisMots": "CE QUI A CHANGÉ",
             "lieu": "En salle",
-            "role": "Le maître d'hôtel",
+            "role": "Le serveur",
             "arc": "Avec FoodEatUp",
             "planDuFilm": "12 / 35",
             "tutorielModuleUrl": null,
@@ -24035,7 +24069,7 @@ export const series: Serie[] = [
             "datePrevue": "2027-05-20",
             "troisMots": "IL ÉTAIT UNE FOIS",
             "lieu": "Au bureau",
-            "role": "Le gérant",
+            "role": "Le patron",
             "arc": "Avant FoodEatUp",
             "planDuFilm": "13 / 35",
             "tutorielModuleUrl": null,
@@ -24109,7 +24143,7 @@ export const series: Serie[] = [
             "datePrevue": "2027-05-21",
             "troisMots": "CE QUI COINCE",
             "lieu": "Au bureau",
-            "role": "Le gérant",
+            "role": "Le patron",
             "arc": "Avant FoodEatUp",
             "planDuFilm": "14 / 35",
             "tutorielModuleUrl": null,
@@ -24183,7 +24217,7 @@ export const series: Serie[] = [
             "datePrevue": "2027-05-22",
             "troisMots": "LE SOIR OÙ ÇA CASSE",
             "lieu": "Au bureau",
-            "role": "Le gérant",
+            "role": "Le patron",
             "arc": "Avant FoodEatUp",
             "planDuFilm": "15 / 35",
             "tutorielModuleUrl": null,
@@ -24257,7 +24291,7 @@ export const series: Serie[] = [
             "datePrevue": "2027-05-23",
             "troisMots": "LA BASCULE",
             "lieu": "Au bureau",
-            "role": "Le gérant",
+            "role": "Le patron",
             "arc": "La bascule",
             "planDuFilm": "16 / 35",
             "tutorielModuleUrl": null,
@@ -24331,7 +24365,7 @@ export const series: Serie[] = [
             "datePrevue": "2027-05-24",
             "troisMots": "LE MÊME GESTE, AUTREMENT",
             "lieu": "Au bureau",
-            "role": "Le gérant",
+            "role": "Le patron",
             "arc": "Avec FoodEatUp",
             "planDuFilm": "17 / 35",
             "tutorielModuleUrl": null,
@@ -24405,7 +24439,7 @@ export const series: Serie[] = [
             "datePrevue": "2027-05-25",
             "troisMots": "CE QUI A CHANGÉ",
             "lieu": "Au bureau",
-            "role": "Le gérant",
+            "role": "Le patron",
             "arc": "Avec FoodEatUp",
             "planDuFilm": "18 / 35",
             "tutorielModuleUrl": null,
@@ -25077,7 +25111,7 @@ export const series: Serie[] = [
             "chapitre": "18 h 41",
             "accroche": "Une minute plus tard, à trois kilomètres de là.",
             "punchline": "La table de six existait avant que personne ne la demande.",
-            "resume": "La réservation arrive dans le plan de salle avec la contrainte écrite dessus. Le maître d'hôtel n'a rien noté : il a lu.",
+            "resume": "La réservation arrive dans le plan de salle avec la contrainte écrite dessus. Le serveur n'a rien noté : il a lu.",
             "statut": "a_produire",
             "dureeSecondes": 10.0,
             "videoUrl": null,
@@ -25299,7 +25333,7 @@ export const series: Serie[] = [
             "chapitre": "20 h 15",
             "accroche": "À vingt heures quinze, les quatre histoires n'en font plus qu'une.",
             "punchline": "Et c'est le même homme, dans quatre vies.",
-            "resume": "Le client pousse la porte. Le maître d'hôtel l'accueille. Le chef envoie. Le gérant regarde depuis l'escalier. C'est le point de croisement du film.",
+            "resume": "Le client pousse la porte. Le serveur l'accueille. Le chef envoie. Le patron regarde depuis l'escalier. C'est le point de croisement du film.",
             "statut": "a_produire",
             "dureeSecondes": 10.0,
             "videoUrl": null,

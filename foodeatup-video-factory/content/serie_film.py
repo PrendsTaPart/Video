@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-"""« Il était une fois un restaurant » — la série 4, écrite comme un film.
+"""« UpEatFood » — la série 4, écrite comme un film.
 
 Trente-cinq plans de dix secondes qui, mis bout à bout, font une publicité de
 trois cent cinquante secondes. La forme est empruntée à *Snatch* : quatre
@@ -9,12 +9,12 @@ et un dernier acte où ils se retrouvent tous au même endroit, le même soir.
 Les quatre histoires sont les quatre côtés d'un restaurant :
 
     en cuisine     le chef            ce qu'il perd : le temps, la marge
-    en salle       le maître d'hôtel  ce qu'il perd : les noms, le calme
-    au bureau      le gérant          ce qu'il perd : ses nuits, la vue
+    en salle       le serveur         ce qu'il perd : les noms, le calme
+    au bureau      le patron          ce qu'il perd : ses nuits, la vue
     à la maison    le client          ce qu'il perd : sa soirée, son envie
 
-Le même acteur les joue tous les quatre — c'est le chef de la photo de
-référence, en veste, en costume, en chemise, en manteau. Le film ne le dit
+Le même acteur les joue tous les quatre — Michael Kebail, le chef de la photo
+de référence, en veste, en tablier long, en chemise, en manteau. Le film ne le dit
 jamais : il se voit au cinquième épisode, et c'est ce qui donne envie de
 revenir.
 
@@ -50,7 +50,7 @@ HISTOIRES = [
     ),
     dict(
         slug="en-salle", saison=2, titre="En salle", numero_depart=507,
-        role="Le maître d'hôtel", module="Réservation",
+        role="Le serveur", module="Réservation",
         tenue="chemise blanche, tablier long noir, stylo à l'oreille",
         decor="une salle de restaurant dressée, le comptoir d'accueil au premier plan",
         perd="les noms, les notes, et le calme",
@@ -59,7 +59,7 @@ HISTOIRES = [
     ),
     dict(
         slug="au-bureau", saison=3, titre="Au bureau", numero_depart=513,
-        role="Le gérant", module="Comptabilité",
+        role="Le patron", module="Comptabilité",
         tenue="chemise ouverte, manches remontées, lunettes remontées sur le front",
         decor="un petit bureau à l'étage du restaurant, classeurs et tickets de caisse",
         perd="ses nuits, et la vue d'ensemble",
@@ -175,7 +175,7 @@ PLANS = {
         titre="Six tables, une mémoire",
         accroche="Il était une fois un homme qui tenait une salle entière dans sa tête.",
         punchline="Et sa tête rentrait chez elle à minuit.",
-        resume="Le maître d'hôtel connaît les allergies, les habitudes, le prénom du fils. "
+        resume="Le serveur connaît les allergies, les habitudes, le prénom du fils. "
                "Tout est dans sa tête, et rien n'est écrit nulle part.",
         scene="Une salle dressée avant le service, nappes blanches, lumière basse.",
         bascule="il touche successivement quatre tables du bout des doigts, comme on récite",
@@ -225,7 +225,7 @@ PLANS = {
         punchline="Ce n'est plus sa mémoire. C'est celle de la maison.",
         resume="Les allergies, les habitudes, la dernière visite : la fiche client les porte. "
                "Le service ne dépend plus de qui travaille ce soir-là.",
-        scene="Une table de deux, à hauteur d'assiette. Le maître d'hôtel s'approche.",
+        scene="Une table de deux, à hauteur d'assiette. Le serveur s'approche.",
         bascule="il pose l'assiette et dit un prénom qu'il n'a pas eu à demander",
         fin="Les clients se regardent, surpris ; lui repart déjà vers la table suivante.",
         dit="Sans crustacés, comme la dernière fois.",
@@ -426,7 +426,7 @@ PLANS = {
         accroche="Une minute plus tard, à trois kilomètres de là.",
         punchline="La table de six existait avant que personne ne la demande.",
         resume="La réservation arrive dans le plan de salle avec la contrainte écrite dessus. "
-               "Le maître d'hôtel n'a rien noté : il a lu.",
+               "Le serveur n'a rien noté : il a lu.",
         scene="Le comptoir d'accueil de la salle, avant l'ouverture, tables dressées.",
         bascule="il lève les yeux du comptoir vers une table du fond et la désigne du menton",
         fin="Il déplace une chaise, compte du regard, et hoche la tête.",
@@ -461,8 +461,8 @@ PLANS = {
         titre="20 h 15 — les quatre au même endroit",
         accroche="À vingt heures quinze, les quatre histoires n'en font plus qu'une.",
         punchline="Et c'est le même homme, dans quatre vies.",
-        resume="Le client pousse la porte. Le maître d'hôtel l'accueille. Le chef envoie. "
-               "Le gérant regarde depuis l'escalier. C'est le point de croisement du film.",
+        resume="Le client pousse la porte. Le serveur l'accueille. Le chef envoie. "
+               "Le patron regarde depuis l'escalier. C'est le point de croisement du film.",
         scene="Le hall du restaurant en plein service, vu depuis la porte d'entrée.",
         bascule="la caméra pivote lentement et cadre les quatre personnages dans le même plan",
         fin="Les quatre sont immobiles, chacun à sa place, et personne ne se regarde.",
