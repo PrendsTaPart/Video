@@ -281,7 +281,8 @@
                 "hook": "Lui aussi attend ta commande",
                 "punchline": "Sauf que lui, il est patient. Tes clients, non",
                 "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP001.mp4"
-              }
+              },
+              "heygenPrompt": "AVATAR — le chef FoodEatUp, avatar 3D, plan poitrine, fond neutre crème #FCF9E6. Regard caméra, posture ouverte, aucune gestuelle appuyée.\nVOIX — française, timbre grave, débit posé. Neuf secondes, pas une de plus.\nCADRE — vertical 9:16, 1080 × 1920. Aucun texte incrusté : les sous-titres sont ajoutés au montage.\nCONTEXTE — Le Coup de Feu, saison 1 « Le service, sans les cris », épisode EP001 · Service · 1 - Commandes multi-canaux.\n\nTEXTE À DIRE, mot pour mot :\n« Ici, toutes tes commandes arrivent au même endroit : la salle, le téléphone, le site, la livraison. Une seule file, dans l'ordre d'arrivée. »"
             },
             {
               "id": "EP002",
@@ -506,7 +507,8 @@
                 "hook": "Ton service du samedi soir",
                 "punchline": "Ça finit toujours par terre",
                 "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP002.mp4"
-              }
+              },
+              "heygenPrompt": "AVATAR — le chef FoodEatUp, avatar 3D, plan poitrine, fond neutre crème #FCF9E6. Regard caméra, posture ouverte, aucune gestuelle appuyée.\nVOIX — française, timbre grave, débit posé. Neuf secondes, pas une de plus.\nCADRE — vertical 9:16, 1080 × 1920. Aucun texte incrusté : les sous-titres sont ajoutés au montage.\nCONTEXTE — Le Coup de Feu, saison 1 « Le service, sans les cris », épisode EP002 · Service · 3 - Envoi direct cuisine.\n\nTEXTE À DIRE, mot pour mot :\n« Tu prends la commande à table, elle part en cuisine dans la seconde. Pas de carnet, pas d'aller-retour, pas de ticket perdu entre la salle et le pass. »"
             },
             {
               "id": "EP003",
@@ -717,7 +719,8 @@
                 "hook": "Ta marge, en ce moment",
                 "punchline": "Elle coule. On va la repêcher",
                 "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP003.mp4"
-              }
+              },
+              "heygenPrompt": "AVATAR — le chef FoodEatUp, avatar 3D, plan poitrine, fond neutre crème #FCF9E6. Regard caméra, posture ouverte, aucune gestuelle appuyée.\nVOIX — française, timbre grave, débit posé. Neuf secondes, pas une de plus.\nCADRE — vertical 9:16, 1080 × 1920. Aucun texte incrusté : les sous-titres sont ajoutés au montage.\nCONTEXTE — Le Coup de Feu, saison 1 « Le service, sans les cris », épisode EP003 · StockVision · 1 - Ma carte.\n\nTEXTE À DIRE, mot pour mot :\n« Chaque plat de ta carte a son coût matière calculé depuis tes ingrédients. Tu vois ta marge réelle, plat par plat, avant même de fixer ton prix. »"
             },
             {
               "id": "EP004",
@@ -927,7 +930,8 @@
                 "hook": "Ton nouveau responsable de caisse",
                 "punchline": "Il gère mieux que ton logiciel actuel",
                 "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP004.mp4"
-              }
+              },
+              "heygenPrompt": "AVATAR — le chef FoodEatUp, avatar 3D, plan poitrine, fond neutre crème #FCF9E6. Regard caméra, posture ouverte, aucune gestuelle appuyée.\nVOIX — française, timbre grave, débit posé. Neuf secondes, pas une de plus.\nCADRE — vertical 9:16, 1080 × 1920. Aucun texte incrusté : les sous-titres sont ajoutés au montage.\nCONTEXTE — Le Coup de Feu, saison 1 « Le service, sans les cris », épisode EP004 · Caisse POS · 1 - Configurer sa caisse.\n\nTEXTE À DIRE, mot pour mot :\n« Ta caisse se configure en quelques minutes : TPE, ticket, moyens de paiement. Elle est reliée à ta carte et à ta cuisine, pas posée à côté. »"
             },
             {
               "id": "EP005",
@@ -1129,7 +1133,8 @@
                 "hook": "Trois logiciels. Deux mains",
                 "punchline": "Un seul outil, ça change tout",
                 "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP005.mp4"
-              }
+              },
+              "heygenPrompt": "AVATAR — le chef FoodEatUp, avatar 3D, plan poitrine, fond neutre crème #FCF9E6. Regard caméra, posture ouverte, aucune gestuelle appuyée.\nVOIX — française, timbre grave, débit posé. Neuf secondes, pas une de plus.\nCADRE — vertical 9:16, 1080 × 1920. Aucun texte incrusté : les sous-titres sont ajoutés au montage.\nCONTEXTE — Le Coup de Feu, saison 1 « Le service, sans les cris », épisode EP005 · Configuration · vue d'ensemble.\n\nTEXTE À DIRE, mot pour mot :\n« Un seul paramétrage : ta carte, tes zones, tes tables, ta TVA. Tout le reste s'appuie dessus. Tu ne ressaisis jamais deux fois la même information. »"
             },
             {
               "id": "EP006",
@@ -1358,7 +1363,8 @@
                 "hook": "Ta pizza part plus vite que ton stock",
                 "punchline": "Enfin… c'était avant",
                 "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP006.mp4"
-              }
+              },
+              "heygenPrompt": "AVATAR — le chef FoodEatUp, avatar 3D, plan poitrine, fond neutre crème #FCF9E6. Regard caméra, posture ouverte, aucune gestuelle appuyée.\nVOIX — française, timbre grave, débit posé. Neuf secondes, pas une de plus.\nCADRE — vertical 9:16, 1080 × 1920. Aucun texte incrusté : les sous-titres sont ajoutés au montage.\nCONTEXTE — Le Coup de Feu, saison 1 « Le service, sans les cris », épisode EP006 · StockVision · 17 - Ajouter et modifier un mouvement.\n\nTEXTE À DIRE, mot pour mot :\n« Tu envoies un plat, le stock bouge tout seul. Chaque sortie est tracée, avec la quantité et l'heure. Tu sais ce qu'il te reste sans compter les cartons. »"
             },
             {
               "id": "EP007",
@@ -1577,7 +1583,8 @@
                 "hook": "Le seul avis client qui compte",
                 "punchline": "Les quatre cents autres, on s'en occupe",
                 "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP007.mp4"
-              }
+              },
+              "heygenPrompt": "AVATAR — le chef FoodEatUp, avatar 3D, plan poitrine, fond neutre crème #FCF9E6. Regard caméra, posture ouverte, aucune gestuelle appuyée.\nVOIX — française, timbre grave, débit posé. Neuf secondes, pas une de plus.\nCADRE — vertical 9:16, 1080 × 1920. Aucun texte incrusté : les sous-titres sont ajoutés au montage.\nCONTEXTE — Le Coup de Feu, saison 1 « Le service, sans les cris », épisode EP007 · Marketing · 3 - Répondre aux avis.\n\nTEXTE À DIRE, mot pour mot :\n« Tes avis Google remontent ici. Tu réponds depuis FoodEatUp, l'IA te propose une réponse dans ton ton, tu valides. Le client voit que tu l'as lu. »"
             },
             {
               "id": "EP008",
@@ -1799,7 +1806,8 @@
                 "hook": "Fin de mois. Encore",
                 "punchline": "Et si la compta se faisait toute seule ",
                 "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP008.mp4"
-              }
+              },
+              "heygenPrompt": "AVATAR — le chef FoodEatUp, avatar 3D, plan poitrine, fond neutre crème #FCF9E6. Regard caméra, posture ouverte, aucune gestuelle appuyée.\nVOIX — française, timbre grave, débit posé. Neuf secondes, pas une de plus.\nCADRE — vertical 9:16, 1080 × 1920. Aucun texte incrusté : les sous-titres sont ajoutés au montage.\nCONTEXTE — Le Coup de Feu, saison 1 « Le service, sans les cris », épisode EP008 · Comptabilité · facturation.\n\nTEXTE À DIRE, mot pour mot :\n« Chaque commande génère sa facture. Tu retrouves le facturé, l'encaissé et les impayés dans le même écran. La fin de mois devient une lecture, pas une reconstitution. »"
             },
             {
               "id": "EP009",
@@ -2009,7 +2017,8 @@
                 "hook": "Il y a toujours quelqu'un qui prend ta marge",
                 "punchline": "Ton abonnement logiciel, par exemple",
                 "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP009.mp4"
-              }
+              },
+              "heygenPrompt": "AVATAR — le chef FoodEatUp, avatar 3D, plan poitrine, fond neutre crème #FCF9E6. Regard caméra, posture ouverte, aucune gestuelle appuyée.\nVOIX — française, timbre grave, débit posé. Neuf secondes, pas une de plus.\nCADRE — vertical 9:16, 1080 × 1920. Aucun texte incrusté : les sous-titres sont ajoutés au montage.\nCONTEXTE — Le Coup de Feu, saison 1 « Le service, sans les cris », épisode EP009 · Caisse POS · 7 - Suivre les écarts de caisse.\n\nTEXTE À DIRE, mot pour mot :\n« À chaque clôture, l'écart entre le théorique et le compté s'affiche. Tu vois quel service dérape et de combien. Ce qui se mesure s'arrête. »"
             },
             {
               "id": "EP010",
@@ -2233,7 +2242,8 @@
                 "hook": "Toi, devant ta facture logicielle",
                 "punchline": "Mille euros par mois. Pour dix outils qui ne se parlent pas",
                 "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP010.mp4"
-              }
+              },
+              "heygenPrompt": "AVATAR — le chef FoodEatUp, avatar 3D, plan poitrine, fond neutre crème #FCF9E6. Regard caméra, posture ouverte, aucune gestuelle appuyée.\nVOIX — française, timbre grave, débit posé. Neuf secondes, pas une de plus.\nCADRE — vertical 9:16, 1080 × 1920. Aucun texte incrusté : les sous-titres sont ajoutés au montage.\nCONTEXTE — Le Coup de Feu, saison 1 « Le service, sans les cris », épisode EP010 · PrediBot · 1 - Lire ses prévisions.\n\nTEXTE À DIRE, mot pour mot :\n« Un écran, le matin : ton chiffre d'affaires prévu, ta fréquentation, tes points de tension. C'est ton point du jour, sans ouvrir dix onglets. »"
             },
             {
               "id": "EP011",
@@ -2456,7 +2466,8 @@
                 "hook": "Ta livraison sans intégration",
                 "punchline": "Avec, tout arrive à bon port",
                 "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP011.mp4"
-              }
+              },
+              "heygenPrompt": "AVATAR — le chef FoodEatUp, avatar 3D, plan poitrine, fond neutre crème #FCF9E6. Regard caméra, posture ouverte, aucune gestuelle appuyée.\nVOIX — française, timbre grave, débit posé. Neuf secondes, pas une de plus.\nCADRE — vertical 9:16, 1080 × 1920. Aucun texte incrusté : les sous-titres sont ajoutés au montage.\nCONTEXTE — Le Coup de Feu, saison 1 « Le service, sans les cris », épisode EP011 · HubRise · 1 - Connecter son HubRise.\n\nTEXTE À DIRE, mot pour mot :\n« Tu connectes HubRise une fois. Tes plateformes de livraison envoient leurs commandes directement dans FoodEatUp. Plus de tablette à surveiller dans un coin. »"
             },
             {
               "id": "EP012",
@@ -2678,7 +2689,8 @@
                 "hook": "Temps d'attente : « on regarde »",
                 "punchline": "Avec un KDS, il regarde son plat arriver",
                 "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP012.mp4"
-              }
+              },
+              "heygenPrompt": "AVATAR — le chef FoodEatUp, avatar 3D, plan poitrine, fond neutre crème #FCF9E6. Regard caméra, posture ouverte, aucune gestuelle appuyée.\nVOIX — française, timbre grave, débit posé. Neuf secondes, pas une de plus.\nCADRE — vertical 9:16, 1080 × 1920. Aucun texte incrusté : les sous-titres sont ajoutés au montage.\nCONTEXTE — Le Coup de Feu, saison 1 « Le service, sans les cris », épisode EP012 · KDS · 3 - Gérer le KDS en direct.\n\nTEXTE À DIRE, mot pour mot :\n« Le KDS affiche chaque plat, son poste et son temps d'attente. Le client ne regarde plus la cuisine : il regarde son plat arriver. »"
             },
             {
               "id": "EP013",
@@ -2902,7 +2914,8 @@
                 "hook": "Dix logiciels. Dix notifications",
                 "punchline": "Un seul, ça suffisait",
                 "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP013.mp4"
-              }
+              },
+              "heygenPrompt": "AVATAR — le chef FoodEatUp, avatar 3D, plan poitrine, fond neutre crème #FCF9E6. Regard caméra, posture ouverte, aucune gestuelle appuyée.\nVOIX — française, timbre grave, débit posé. Neuf secondes, pas une de plus.\nCADRE — vertical 9:16, 1080 × 1920. Aucun texte incrusté : les sous-titres sont ajoutés au montage.\nCONTEXTE — Le Coup de Feu, saison 1 « Le service, sans les cris », épisode EP013 · PrediBot · 3 - Parler à PrediBot.\n\nTEXTE À DIRE, mot pour mot :\n« Tu poses ta question en français : combien j'ai fait hier, qu'est-ce qui manque demain. PrediBot lit tes vraies données et te répond. Une seule interface, pas dix. »"
             },
             {
               "id": "EP014",
@@ -3130,7 +3143,8 @@
                 "hook": "Ton gaspillage alimentaire",
                 "punchline": "Lui au moins, il sait ce qu'il y a en stock",
                 "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP014.mp4"
-              }
+              },
+              "heygenPrompt": "AVATAR — le chef FoodEatUp, avatar 3D, plan poitrine, fond neutre crème #FCF9E6. Regard caméra, posture ouverte, aucune gestuelle appuyée.\nVOIX — française, timbre grave, débit posé. Neuf secondes, pas une de plus.\nCADRE — vertical 9:16, 1080 × 1920. Aucun texte incrusté : les sous-titres sont ajoutés au montage.\nCONTEXTE — Le Coup de Feu, saison 1 « Le service, sans les cris », épisode EP014 · StockVision · 16 - Mouvements de stock.\n\nTEXTE À DIRE, mot pour mot :\n« Chaque entrée, chaque sortie, chaque perte est enregistrée. Tu vois ce qui part sans être vendu. Le gaspillage devient une ligne, donc un problème réglable. »"
             },
             {
               "id": "EP015",
@@ -3347,7 +3361,8 @@
                 "hook": "Ta gestion actuelle",
                 "punchline": "Une pièce bouge, tout s'écroule",
                 "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP015.mp4"
-              }
+              },
+              "heygenPrompt": "AVATAR — le chef FoodEatUp, avatar 3D, plan poitrine, fond neutre crème #FCF9E6. Regard caméra, posture ouverte, aucune gestuelle appuyée.\nVOIX — française, timbre grave, débit posé. Neuf secondes, pas une de plus.\nCADRE — vertical 9:16, 1080 × 1920. Aucun texte incrusté : les sous-titres sont ajoutés au montage.\nCONTEXTE — Le Coup de Feu, saison 1 « Le service, sans les cris », épisode EP015 · Configuration · référentiels.\n\nTEXTE À DIRE, mot pour mot :\n« Tes catégories, ta TVA, tes zones, tes équipements : tout est posé une fois, proprement. Quand une pièce bouge, le reste ne s'écroule pas. »"
             },
             {
               "id": "EP016",
@@ -3569,7 +3584,8 @@
                 "hook": "Tes coûts, ce trimestre",
                 "punchline": "On va refermer le robinet",
                 "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP016.mp4"
-              }
+              },
+              "heygenPrompt": "AVATAR — le chef FoodEatUp, avatar 3D, plan poitrine, fond neutre crème #FCF9E6. Regard caméra, posture ouverte, aucune gestuelle appuyée.\nVOIX — française, timbre grave, débit posé. Neuf secondes, pas une de plus.\nCADRE — vertical 9:16, 1080 × 1920. Aucun texte incrusté : les sous-titres sont ajoutés au montage.\nCONTEXTE — Le Coup de Feu, saison 1 « Le service, sans les cris », épisode EP016 · Comptabilité · dépenses.\n\nTEXTE À DIRE, mot pour mot :\n« Tu enregistres tes achats fournisseurs avec le détail des lignes. Tes dépenses du mois s'additionnent toutes seules, en face de ton chiffre d'affaires. »"
             },
             {
               "id": "EP017",
@@ -3796,7 +3812,8 @@
                 "hook": "Personne ne touche à ta dernière frite",
                 "punchline": "Ni à ta marge",
                 "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP017.mp4"
-              }
+              },
+              "heygenPrompt": "AVATAR — le chef FoodEatUp, avatar 3D, plan poitrine, fond neutre crème #FCF9E6. Regard caméra, posture ouverte, aucune gestuelle appuyée.\nVOIX — française, timbre grave, débit posé. Neuf secondes, pas une de plus.\nCADRE — vertical 9:16, 1080 × 1920. Aucun texte incrusté : les sous-titres sont ajoutés au montage.\nCONTEXTE — Le Coup de Feu, saison 1 « Le service, sans les cris », épisode EP017 · StockVision · 19 - Création d'un rapport.\n\nTEXTE À DIRE, mot pour mot :\n« Tu génères ton rapport par module en un clic : ventes, stock, production. L'historique est gardé. Tu compares ce mois-ci avec le mois dernier, pas avec ton souvenir. »"
             },
             {
               "id": "EP018",
@@ -4023,7 +4040,8 @@
                 "hook": "Le rush de vingt heures",
                 "punchline": "Sauve ton service, pas ton dos",
                 "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP018.mp4"
-              }
+              },
+              "heygenPrompt": "AVATAR — le chef FoodEatUp, avatar 3D, plan poitrine, fond neutre crème #FCF9E6. Regard caméra, posture ouverte, aucune gestuelle appuyée.\nVOIX — française, timbre grave, débit posé. Neuf secondes, pas une de plus.\nCADRE — vertical 9:16, 1080 × 1920. Aucun texte incrusté : les sous-titres sont ajoutés au montage.\nCONTEXTE — Le Coup de Feu, saison 1 « Le service, sans les cris », épisode EP018 · Service · 2 - Site, vocal et QR code.\n\nTEXTE À DIRE, mot pour mot :\n« Pendant le rush, tes clients commandent seuls : par QR à table, par le site, par l'agent vocal. Ton équipe sert, elle ne court plus. »"
             },
             {
               "id": "EP019",
@@ -4249,7 +4267,8 @@
                 "hook": "Ton chiffre d'affaires, sans outil",
                 "punchline": "Ça rebondit rarement tout seul",
                 "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP019.mp4"
-              }
+              },
+              "heygenPrompt": "AVATAR — le chef FoodEatUp, avatar 3D, plan poitrine, fond neutre crème #FCF9E6. Regard caméra, posture ouverte, aucune gestuelle appuyée.\nVOIX — française, timbre grave, débit posé. Neuf secondes, pas une de plus.\nCADRE — vertical 9:16, 1080 × 1920. Aucun texte incrusté : les sous-titres sont ajoutés au montage.\nCONTEXTE — Le Coup de Feu, saison 1 « Le service, sans les cris », épisode EP019 · StockVision · 3 - Prédictions des commandes.\n\nTEXTE À DIRE, mot pour mot :\n« FoodEatUp regarde tes ventes passées et te dit quoi produire demain. Ton chiffre d'affaires ne dépend plus de ton intuition du lundi matin. »"
             },
             {
               "id": "EP020",
@@ -4473,7 +4492,8 @@
                 "hook": "Lui, il a réservé",
                 "punchline": "Tes vrais clients aussi devraient pouvoir",
                 "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP020.mp4"
-              }
+              },
+              "heygenPrompt": "AVATAR — le chef FoodEatUp, avatar 3D, plan poitrine, fond neutre crème #FCF9E6. Regard caméra, posture ouverte, aucune gestuelle appuyée.\nVOIX — française, timbre grave, débit posé. Neuf secondes, pas une de plus.\nCADRE — vertical 9:16, 1080 × 1920. Aucun texte incrusté : les sous-titres sont ajoutés au montage.\nCONTEXTE — Le Coup de Feu, saison 1 « Le service, sans les cris », épisode EP020 · Réservation · 2 - Ajouter une réservation.\n\nTEXTE À DIRE, mot pour mot :\n« Tu ajoutes une réservation en dix secondes, la table libre est proposée automatiquement. Et tes clients peuvent le faire eux-mêmes, depuis ton site. »"
             },
             {
               "id": "EP021",
@@ -4699,7 +4719,8 @@
                 "hook": "Le vrai ennemi du service",
                 "punchline": "Un KDS, et le combat s'arrête",
                 "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP021.mp4"
-              }
+              },
+              "heygenPrompt": "AVATAR — le chef FoodEatUp, avatar 3D, plan poitrine, fond neutre crème #FCF9E6. Regard caméra, posture ouverte, aucune gestuelle appuyée.\nVOIX — française, timbre grave, débit posé. Neuf secondes, pas une de plus.\nCADRE — vertical 9:16, 1080 × 1920. Aucun texte incrusté : les sous-titres sont ajoutés au montage.\nCONTEXTE — Le Coup de Feu, saison 1 « Le service, sans les cris », épisode EP021 · KDS · 1 - Créer tes postes KDS.\n\nTEXTE À DIRE, mot pour mot :\n« Tu crées tes postes : chaud, froid, dessert. Chaque plat part au bon écran. Plus d'imprimante à secouer au milieu du service. »"
             },
             {
               "id": "EP022",
@@ -4925,7 +4946,8 @@
                 "hook": "Mille euros par mois",
                 "punchline": "Pour dix logiciels qui ne se parlent même pas",
                 "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP022.mp4"
-              }
+              },
+              "heygenPrompt": "AVATAR — le chef FoodEatUp, avatar 3D, plan poitrine, fond neutre crème #FCF9E6. Regard caméra, posture ouverte, aucune gestuelle appuyée.\nVOIX — française, timbre grave, débit posé. Neuf secondes, pas une de plus.\nCADRE — vertical 9:16, 1080 × 1920. Aucun texte incrusté : les sous-titres sont ajoutés au montage.\nCONTEXTE — Le Coup de Feu, saison 1 « Le service, sans les cris », épisode EP022 · PrediBot · 2 - Marketplace de prompts.\n\nTEXTE À DIRE, mot pour mot :\n« Tout est déjà là : caisse, stock, planning, marketing, HACCP. Un seul abonnement, une seule base de données. Tes outils arrêtent de s'ignorer. »"
             },
             {
               "id": "EP023",
@@ -5145,7 +5167,8 @@
                 "hook": "Ton automatisation actuelle",
                 "punchline": "Automatiser, oui. Mais bien",
                 "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP023.mp4"
-              }
+              },
+              "heygenPrompt": "AVATAR — le chef FoodEatUp, avatar 3D, plan poitrine, fond neutre crème #FCF9E6. Regard caméra, posture ouverte, aucune gestuelle appuyée.\nVOIX — française, timbre grave, débit posé. Neuf secondes, pas une de plus.\nCADRE — vertical 9:16, 1080 × 1920. Aucun texte incrusté : les sous-titres sont ajoutés au montage.\nCONTEXTE — Le Coup de Feu, saison 1 « Le service, sans les cris », épisode EP023 · Marketing · 24 - Calendrier IA avec Iris.\n\nTEXTE À DIRE, mot pour mot :\n« Iris regarde ton exploitation et te propose quoi publier, et pourquoi. Tu valides ou tu refuses. L'automatisation te sert, elle ne t'échappe pas. »"
             },
             {
               "id": "EP024",
@@ -5367,7 +5390,8 @@
                 "hook": "Encore une commission en moins",
                 "punchline": "Récupère tes commandes en direct",
                 "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP024.mp4"
-              }
+              },
+              "heygenPrompt": "AVATAR — le chef FoodEatUp, avatar 3D, plan poitrine, fond neutre crème #FCF9E6. Regard caméra, posture ouverte, aucune gestuelle appuyée.\nVOIX — française, timbre grave, débit posé. Neuf secondes, pas une de plus.\nCADRE — vertical 9:16, 1080 × 1920. Aucun texte incrusté : les sous-titres sont ajoutés au montage.\nCONTEXTE — Le Coup de Feu, saison 1 « Le service, sans les cris », épisode EP024 · Mon Site · 5 - Créer un site par IA.\n\nTEXTE À DIRE, mot pour mot :\n« Ton site de commande est créé par l'IA depuis ta carte. Tes clients commandent en direct, chez toi. Zéro commission sur ces commandes-là. »"
             },
             {
               "id": "EP025",
@@ -5588,7 +5612,8 @@
                 "hook": "Quand tu lances une promo sans données",
                 "punchline": "Ça éclabousse. Et rarement toi",
                 "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP025.mp4"
-              }
+              },
+              "heygenPrompt": "AVATAR — le chef FoodEatUp, avatar 3D, plan poitrine, fond neutre crème #FCF9E6. Regard caméra, posture ouverte, aucune gestuelle appuyée.\nVOIX — française, timbre grave, débit posé. Neuf secondes, pas une de plus.\nCADRE — vertical 9:16, 1080 × 1920. Aucun texte incrusté : les sous-titres sont ajoutés au montage.\nCONTEXTE — Le Coup de Feu, saison 1 « Le service, sans les cris », épisode EP025 · Marketing · 6 - Campagne 100 % IA.\n\nTEXTE À DIRE, mot pour mot :\n« Tu ne lances plus une promo au hasard. FoodEatUp te propose la campagne depuis tes vraies données clients : qui cibler, avec quelle offre, quel jour. »"
             },
             {
               "id": "EP026",
@@ -5816,7 +5841,8 @@
                 "hook": "Ton stock avant le week-end",
                 "punchline": "Prévois, au lieu de subir",
                 "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP026.mp4"
-              }
+              },
+              "heygenPrompt": "AVATAR — le chef FoodEatUp, avatar 3D, plan poitrine, fond neutre crème #FCF9E6. Regard caméra, posture ouverte, aucune gestuelle appuyée.\nVOIX — française, timbre grave, débit posé. Neuf secondes, pas une de plus.\nCADRE — vertical 9:16, 1080 × 1920. Aucun texte incrusté : les sous-titres sont ajoutés au montage.\nCONTEXTE — Le Coup de Feu, saison 1 « Le service, sans les cris », épisode EP026 · StockVision · 5 - Envoyer sa liste de courses au fournisseur.\n\nTEXTE À DIRE, mot pour mot :\n« Ta liste de courses se construit depuis ta production prévue. Tu l'envoies au fournisseur depuis l'écran. Le week-end se prépare le mercredi. »"
             },
             {
               "id": "EP027",
@@ -6026,7 +6052,8 @@
                 "hook": "Ta trésorerie, chaque lundi",
                 "punchline": "Il suffit d'un truc mal placé",
                 "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP027.mp4"
-              }
+              },
+              "heygenPrompt": "AVATAR — le chef FoodEatUp, avatar 3D, plan poitrine, fond neutre crème #FCF9E6. Regard caméra, posture ouverte, aucune gestuelle appuyée.\nVOIX — française, timbre grave, débit posé. Neuf secondes, pas une de plus.\nCADRE — vertical 9:16, 1080 × 1920. Aucun texte incrusté : les sous-titres sont ajoutés au montage.\nCONTEXTE — Le Coup de Feu, saison 1 « Le service, sans les cris », épisode EP027 · Caisse POS · 6 - Clôturer sa caisse, le Z.\n\nTEXTE À DIRE, mot pour mot :\n« Ton Z de caisse en un bouton : le compté, le théorique, l'écart, les moyens de paiement. Tu sais où tu en es tous les lundis matin. »"
             },
             {
               "id": "EP028",
@@ -6249,7 +6276,8 @@
                 "hook": "Tes commandes en ligne, un vendredi",
                 "punchline": "Tout arrive. Nulle part",
                 "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP028.mp4"
-              }
+              },
+              "heygenPrompt": "AVATAR — le chef FoodEatUp, avatar 3D, plan poitrine, fond neutre crème #FCF9E6. Regard caméra, posture ouverte, aucune gestuelle appuyée.\nVOIX — française, timbre grave, débit posé. Neuf secondes, pas une de plus.\nCADRE — vertical 9:16, 1080 × 1920. Aucun texte incrusté : les sous-titres sont ajoutés au montage.\nCONTEXTE — Le Coup de Feu, saison 1 « Le service, sans les cris », épisode EP028 · HubRise · 4 - Centraliser les commandes.\n\nTEXTE À DIRE, mot pour mot :\n« Uber Eats, Deliveroo, ton site, le comptoir : tout tombe dans la même file. Un vendredi soir, tu regardes un écran, pas quatre. »"
             },
             {
               "id": "EP029",
@@ -6473,7 +6501,8 @@
                 "hook": "Toi, gérant, en 2026",
                 "punchline": "Personne ne devrait travailler comme ça",
                 "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP029.mp4"
-              }
+              },
+              "heygenPrompt": "AVATAR — le chef FoodEatUp, avatar 3D, plan poitrine, fond neutre crème #FCF9E6. Regard caméra, posture ouverte, aucune gestuelle appuyée.\nVOIX — française, timbre grave, débit posé. Neuf secondes, pas une de plus.\nCADRE — vertical 9:16, 1080 × 1920. Aucun texte incrusté : les sous-titres sont ajoutés au montage.\nCONTEXTE — Le Coup de Feu, saison 1 « Le service, sans les cris », épisode EP029 · PrediBot · 1 - Lire ses prévisions.\n\nTEXTE À DIRE, mot pour mot :\n« Le brief du jour te dit ce qui compte avant que ça te tombe dessus : les réservations, les productions, les alertes. Tu diriges au lieu de courir. »"
             },
             {
               "id": "EP030",
@@ -6675,7 +6704,8 @@
                 "hook": "Le nouveau, jour 1",
                 "punchline": "Forme-le en un clic avec l'Académy",
                 "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP030.mp4"
-              }
+              },
+              "heygenPrompt": "AVATAR — le chef FoodEatUp, avatar 3D, plan poitrine, fond neutre crème #FCF9E6. Regard caméra, posture ouverte, aucune gestuelle appuyée.\nVOIX — française, timbre grave, débit posé. Neuf secondes, pas une de plus.\nCADRE — vertical 9:16, 1080 × 1920. Aucun texte incrusté : les sous-titres sont ajoutés au montage.\nCONTEXTE — Le Coup de Feu, saison 1 « Le service, sans les cris », épisode EP030 · Configuration · Academy.\n\nTEXTE À DIRE, mot pour mot :\n« Le nouveau se forme tout seul : chaque module a ses vidéos, dans l'ordre. Tu ne réexpliques plus la caisse à chaque embauche. »"
             }
           ],
           "acte": "Acte II — Le métier",
@@ -6920,7 +6950,8 @@
                 "hook": "C'est quoi, ça ",
                 "punchline": "Sans DLC tracées, personne ne sait",
                 "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP031.mp4"
-              }
+              },
+              "heygenPrompt": "AVATAR — le chef FoodEatUp, avatar 3D, plan poitrine, fond neutre crème #FCF9E6. Regard caméra, posture ouverte, aucune gestuelle appuyée.\nVOIX — française, timbre grave, débit posé. Neuf secondes, pas une de plus.\nCADRE — vertical 9:16, 1080 × 1920. Aucun texte incrusté : les sous-titres sont ajoutés au montage.\nCONTEXTE — Le Coup de Feu, saison 2 « Compter sans se tromper », épisode EP031 · HACCP · étiquettes DLC.\n\nTEXTE À DIRE, mot pour mot :\n« Tu crées ton étiquette DLC en trois secondes, avec le produit, la date et l'agent. Plus personne n'ouvre un bac en se demandant ce que c'est. »"
             },
             {
               "id": "EP032",
@@ -7148,7 +7179,8 @@
                 "hook": "Ta recette « au feeling »",
                 "punchline": "Une fiche technique, et c'est pareil tous les jours",
                 "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP032.mp4"
-              }
+              },
+              "heygenPrompt": "AVATAR — le chef FoodEatUp, avatar 3D, plan poitrine, fond neutre crème #FCF9E6. Regard caméra, posture ouverte, aucune gestuelle appuyée.\nVOIX — française, timbre grave, débit posé. Neuf secondes, pas une de plus.\nCADRE — vertical 9:16, 1080 × 1920. Aucun texte incrusté : les sous-titres sont ajoutés au montage.\nCONTEXTE — Le Coup de Feu, saison 2 « Compter sans se tromper », épisode EP032 · StockVision · 1 - Ma carte, fiche recette.\n\nTEXTE À DIRE, mot pour mot :\n« Ta recette est enregistrée : ingrédients, quantités, étapes. Le plat sort pareil que ce soit toi ou ton commis. Et son coût est calculé. »"
             },
             {
               "id": "EP033",
@@ -7376,7 +7408,8 @@
                 "hook": "Tu as tout préparé. Presque",
                 "punchline": "Ce qui n'est pas suivi finit par disparaître",
                 "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP033.mp4"
-              }
+              },
+              "heygenPrompt": "AVATAR — le chef FoodEatUp, avatar 3D, plan poitrine, fond neutre crème #FCF9E6. Regard caméra, posture ouverte, aucune gestuelle appuyée.\nVOIX — française, timbre grave, débit posé. Neuf secondes, pas une de plus.\nCADRE — vertical 9:16, 1080 × 1920. Aucun texte incrusté : les sous-titres sont ajoutés au montage.\nCONTEXTE — Le Coup de Feu, saison 2 « Compter sans se tromper », épisode EP033 · StockVision · 16 - Mouvements de stock.\n\nTEXTE À DIRE, mot pour mot :\n« Ce qui n'est pas suivi disparaît. Ici chaque produit a son niveau, son seuil et son historique. Tu vois le trou avant le service, pas après. »"
             },
             {
               "id": "EP034",
@@ -7579,7 +7612,8 @@
                 "hook": "Chaque service, une improvisation",
                 "punchline": "Ça marche. Jusqu'au jour où ça ne marche plus",
                 "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP034.mp4"
-              }
+              },
+              "heygenPrompt": "AVATAR — le chef FoodEatUp, avatar 3D, plan poitrine, fond neutre crème #FCF9E6. Regard caméra, posture ouverte, aucune gestuelle appuyée.\nVOIX — française, timbre grave, débit posé. Neuf secondes, pas une de plus.\nCADRE — vertical 9:16, 1080 × 1920. Aucun texte incrusté : les sous-titres sont ajoutés au montage.\nCONTEXTE — Le Coup de Feu, saison 2 « Compter sans se tromper », épisode EP034 · Configuration · process.\n\nTEXTE À DIRE, mot pour mot :\n« Tes procédures sont dans l'outil, pas dans ta tête. Le service ne dépend plus de qui est là ce soir. »"
             },
             {
               "id": "EP035",
@@ -7803,7 +7837,8 @@
                 "hook": "Ta terrasse, un jour de vent",
                 "punchline": "Certaines choses se prévoient",
                 "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP035.mp4"
-              }
+              },
+              "heygenPrompt": "AVATAR — le chef FoodEatUp, avatar 3D, plan poitrine, fond neutre crème #FCF9E6. Regard caméra, posture ouverte, aucune gestuelle appuyée.\nVOIX — française, timbre grave, débit posé. Neuf secondes, pas une de plus.\nCADRE — vertical 9:16, 1080 × 1920. Aucun texte incrusté : les sous-titres sont ajoutés au montage.\nCONTEXTE — Le Coup de Feu, saison 2 « Compter sans se tromper », épisode EP035 · PrediBot · 1 - Lire ses prévisions.\n\nTEXTE À DIRE, mot pour mot :\n« Prévisions de fréquentation, météo, événements du quartier : PrediBot te dit à quoi ressemble ton service avant qu'il commence. »"
             },
             {
               "id": "EP036",
@@ -8012,7 +8047,8 @@
                 "hook": "Toi, devant tes abonnements",
                 "punchline": "Additionne-les. Vraiment",
                 "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP036.mp4"
-              }
+              },
+              "heygenPrompt": "AVATAR — le chef FoodEatUp, avatar 3D, plan poitrine, fond neutre crème #FCF9E6. Regard caméra, posture ouverte, aucune gestuelle appuyée.\nVOIX — française, timbre grave, débit posé. Neuf secondes, pas une de plus.\nCADRE — vertical 9:16, 1080 × 1920. Aucun texte incrusté : les sous-titres sont ajoutés au montage.\nCONTEXTE — Le Coup de Feu, saison 2 « Compter sans se tromper », épisode EP036 · PrediBot · 2 - Un seul abonnement.\n\nTEXTE À DIRE, mot pour mot :\n« Additionne tes abonnements actuels. Ici, la caisse, le stock, le planning, la compta et le marketing sont dans le même outil, sur la même base. »"
             },
             {
               "id": "EP037",
@@ -8237,7 +8273,8 @@
                 "hook": "Fermeture. Troisième soir d'affilée",
                 "punchline": "Un planning bien fait, ça se voit sur les visages",
                 "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP037.mp4"
-              }
+              },
+              "heygenPrompt": "AVATAR — le chef FoodEatUp, avatar 3D, plan poitrine, fond neutre crème #FCF9E6. Regard caméra, posture ouverte, aucune gestuelle appuyée.\nVOIX — française, timbre grave, débit posé. Neuf secondes, pas une de plus.\nCADRE — vertical 9:16, 1080 × 1920. Aucun texte incrusté : les sous-titres sont ajoutés au montage.\nCONTEXTE — Le Coup de Feu, saison 2 « Compter sans se tromper », épisode EP037 · Équipe & Planning · créer un shift.\n\nTEXTE À DIRE, mot pour mot :\n« Tu construis le planning de la semaine par glisser-déposer, avec le coût qui s'affiche en direct. Tes équipes savent, et toi aussi. »"
             },
             {
               "id": "EP038",
@@ -8465,7 +8502,8 @@
                 "hook": "Le réappro du lundi",
                 "punchline": "Commander à l'instinct, ça finit toujours en course",
                 "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP038.mp4"
-              }
+              },
+              "heygenPrompt": "AVATAR — le chef FoodEatUp, avatar 3D, plan poitrine, fond neutre crème #FCF9E6. Regard caméra, posture ouverte, aucune gestuelle appuyée.\nVOIX — française, timbre grave, débit posé. Neuf secondes, pas une de plus.\nCADRE — vertical 9:16, 1080 × 1920. Aucun texte incrusté : les sous-titres sont ajoutés au montage.\nCONTEXTE — Le Coup de Feu, saison 2 « Compter sans se tromper », épisode EP038 · StockVision · 4 - Ma liste de courses.\n\nTEXTE À DIRE, mot pour mot :\n« Ta commande fournisseur se construit depuis tes stocks bas et ta production prévue. Tu ne commandes plus à l'instinct dans les rayons. »"
             },
             {
               "id": "EP039",
@@ -8687,7 +8725,8 @@
                 "hook": "L'imprévu du service",
                 "punchline": "Il y en aura d'autres. Autant être prêt",
                 "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP039.mp4"
-              }
+              },
+              "heygenPrompt": "AVATAR — le chef FoodEatUp, avatar 3D, plan poitrine, fond neutre crème #FCF9E6. Regard caméra, posture ouverte, aucune gestuelle appuyée.\nVOIX — française, timbre grave, débit posé. Neuf secondes, pas une de plus.\nCADRE — vertical 9:16, 1080 × 1920. Aucun texte incrusté : les sous-titres sont ajoutés au montage.\nCONTEXTE — Le Coup de Feu, saison 2 « Compter sans se tromper », épisode EP039 · Réservation · 3 - Gérer et no-shows.\n\nTEXTE À DIRE, mot pour mot :\n« L'imprévu, tu ne l'évites pas. Mais tu vois en direct l'état de ta salle, tes retards et tes annulations, et tu réattribues en un geste. »"
             },
             {
               "id": "EP040",
@@ -8916,7 +8955,8 @@
                 "hook": "Ton stock de basilic",
                 "punchline": "Ce qui n'est pas compté disparaît toujours",
                 "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP040.mp4"
-              }
+              },
+              "heygenPrompt": "AVATAR — le chef FoodEatUp, avatar 3D, plan poitrine, fond neutre crème #FCF9E6. Regard caméra, posture ouverte, aucune gestuelle appuyée.\nVOIX — française, timbre grave, débit posé. Neuf secondes, pas une de plus.\nCADRE — vertical 9:16, 1080 × 1920. Aucun texte incrusté : les sous-titres sont ajoutés au montage.\nCONTEXTE — Le Coup de Feu, saison 2 « Compter sans se tromper », épisode EP040 · StockVision · 17 - Ajouter un mouvement.\n\nTEXTE À DIRE, mot pour mot :\n« Tu comptes une fois, l'outil compte ensuite. Chaque sortie d'ingrédient est déduite de ton stock, plat par plat. »"
             },
             {
               "id": "EP041",
@@ -9145,7 +9185,8 @@
                 "hook": "Ton contrôle des portions",
                 "punchline": "Ce qui part au sol, tu le paies quand même",
                 "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP041.mp4"
-              }
+              },
+              "heygenPrompt": "AVATAR — le chef FoodEatUp, avatar 3D, plan poitrine, fond neutre crème #FCF9E6. Regard caméra, posture ouverte, aucune gestuelle appuyée.\nVOIX — française, timbre grave, débit posé. Neuf secondes, pas une de plus.\nCADRE — vertical 9:16, 1080 × 1920. Aucun texte incrusté : les sous-titres sont ajoutés au montage.\nCONTEXTE — Le Coup de Feu, saison 2 « Compter sans se tromper », épisode EP041 · StockVision · 15 - Sortie des ingrédients de la production.\n\nTEXTE À DIRE, mot pour mot :\n« La production sort exactement les quantités prévues de ton stock. Ce qui tombe au sol, tu le vois dans l'écart. Et ce qui se voit se corrige. »"
             },
             {
               "id": "EP042",
@@ -9363,7 +9404,8 @@
                 "hook": "Tout faire seul",
                 "punchline": "À un moment, il faut être aidé",
                 "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP042.mp4"
-              }
+              },
+              "heygenPrompt": "AVATAR — le chef FoodEatUp, avatar 3D, plan poitrine, fond neutre crème #FCF9E6. Regard caméra, posture ouverte, aucune gestuelle appuyée.\nVOIX — française, timbre grave, débit posé. Neuf secondes, pas une de plus.\nCADRE — vertical 9:16, 1080 × 1920. Aucun texte incrusté : les sous-titres sont ajoutés au montage.\nCONTEXTE — Le Coup de Feu, saison 2 « Compter sans se tromper », épisode EP042 · Marketing · 21 - MCP RapidoCMS et Iris.\n\nTEXTE À DIRE, mot pour mot :\n« Tu n'as pas à tout faire seul. Iris prépare tes contenus, PrediBot surveille tes chiffres, tu gardes la validation. »"
             },
             {
               "id": "EP043",
@@ -9573,7 +9615,8 @@
                 "hook": "Petit vol. Tous les jours",
                 "punchline": "Mis bout à bout, ça fait ta marge",
                 "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP043.mp4"
-              }
+              },
+              "heygenPrompt": "AVATAR — le chef FoodEatUp, avatar 3D, plan poitrine, fond neutre crème #FCF9E6. Regard caméra, posture ouverte, aucune gestuelle appuyée.\nVOIX — française, timbre grave, débit posé. Neuf secondes, pas une de plus.\nCADRE — vertical 9:16, 1080 × 1920. Aucun texte incrusté : les sous-titres sont ajoutés au montage.\nCONTEXTE — Le Coup de Feu, saison 2 « Compter sans se tromper », épisode EP043 · Caisse POS · 4 - Remises et avoirs.\n\nTEXTE À DIRE, mot pour mot :\n« Chaque remise et chaque avoir est tracé, avec qui l'a fait et pourquoi. Les petits gestes ne mangent plus ta marge en silence. »"
             },
             {
               "id": "EP044",
@@ -9797,7 +9840,8 @@
                 "hook": "Prendre la commande en 2026",
                 "punchline": "La commande devrait partir en cuisine toute seule",
                 "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP044.mp4"
-              }
+              },
+              "heygenPrompt": "AVATAR — le chef FoodEatUp, avatar 3D, plan poitrine, fond neutre crème #FCF9E6. Regard caméra, posture ouverte, aucune gestuelle appuyée.\nVOIX — française, timbre grave, débit posé. Neuf secondes, pas une de plus.\nCADRE — vertical 9:16, 1080 × 1920. Aucun texte incrusté : les sous-titres sont ajoutés au montage.\nCONTEXTE — Le Coup de Feu, saison 2 « Compter sans se tromper », épisode EP044 · Réservation · 5 - Commander par QR code.\n\nTEXTE À DIRE, mot pour mot :\n« Le client scanne, commande, la cuisine reçoit. Ton serveur passe son temps en salle, pas à recopier des lignes sur un carnet. »"
             },
             {
               "id": "EP045",
@@ -10023,7 +10067,8 @@
                 "hook": "Personne ne sait où tu es",
                 "punchline": "Ton restaurant non plus ne devrait pas être une boîte noire",
                 "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP045.mp4"
-              }
+              },
+              "heygenPrompt": "AVATAR — le chef FoodEatUp, avatar 3D, plan poitrine, fond neutre crème #FCF9E6. Regard caméra, posture ouverte, aucune gestuelle appuyée.\nVOIX — française, timbre grave, débit posé. Neuf secondes, pas une de plus.\nCADRE — vertical 9:16, 1080 × 1920. Aucun texte incrusté : les sous-titres sont ajoutés au montage.\nCONTEXTE — Le Coup de Feu, saison 2 « Compter sans se tromper », épisode EP045 · StockVision · 18 - Statistiques par module.\n\nTEXTE À DIRE, mot pour mot :\n« Ton restaurant arrête d'être une boîte noire : ventes, marges, fréquentation, stock, module par module, sur la période que tu choisis. »"
             },
             {
               "id": "EP046",
@@ -10250,7 +10295,8 @@
                 "hook": "Un détail. Un service perdu",
                 "punchline": "Les petites erreurs coûtent cher quand personne ne les voit",
                 "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP046.mp4"
-              }
+              },
+              "heygenPrompt": "AVATAR — le chef FoodEatUp, avatar 3D, plan poitrine, fond neutre crème #FCF9E6. Regard caméra, posture ouverte, aucune gestuelle appuyée.\nVOIX — française, timbre grave, débit posé. Neuf secondes, pas une de plus.\nCADRE — vertical 9:16, 1080 × 1920. Aucun texte incrusté : les sous-titres sont ajoutés au montage.\nCONTEXTE — Le Coup de Feu, saison 2 « Compter sans se tromper », épisode EP046 · StockVision · 20 - Agent IA et suggestions.\n\nTEXTE À DIRE, mot pour mot :\n« L'IA remonte ce que tu n'as pas le temps de voir : un coût qui monte, un plat qui décroche, un stock qui dort. Le petit détail devient visible. »"
             },
             {
               "id": "EP047",
@@ -10475,7 +10521,8 @@
                 "hook": "La livraison de 7 h",
                 "punchline": "Réceptionner, contrôler, tracer. Sans y penser",
                 "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP047.mp4"
-              }
+              },
+              "heygenPrompt": "AVATAR — le chef FoodEatUp, avatar 3D, plan poitrine, fond neutre crème #FCF9E6. Regard caméra, posture ouverte, aucune gestuelle appuyée.\nVOIX — française, timbre grave, débit posé. Neuf secondes, pas une de plus.\nCADRE — vertical 9:16, 1080 × 1920. Aucun texte incrusté : les sous-titres sont ajoutés au montage.\nCONTEXTE — Le Coup de Feu, saison 2 « Compter sans se tromper », épisode EP047 · HACCP · contrôle à réception.\n\nTEXTE À DIRE, mot pour mot :\n« À la livraison, tu contrôles la température, tu prends la photo, c'est tracé. Sept heures du matin, et ta conformité est déjà faite. »"
             },
             {
               "id": "EP048",
@@ -10693,7 +10740,8 @@
                 "hook": "Ce que tu construis chaque jour",
                 "punchline": "Un système fragile finit toujours par tomber",
                 "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP048.mp4"
-              }
+              },
+              "heygenPrompt": "AVATAR — le chef FoodEatUp, avatar 3D, plan poitrine, fond neutre crème #FCF9E6. Regard caméra, posture ouverte, aucune gestuelle appuyée.\nVOIX — française, timbre grave, débit posé. Neuf secondes, pas une de plus.\nCADRE — vertical 9:16, 1080 × 1920. Aucun texte incrusté : les sous-titres sont ajoutés au montage.\nCONTEXTE — Le Coup de Feu, saison 2 « Compter sans se tromper », épisode EP048 · Configuration · paramétrage initial.\n\nTEXTE À DIRE, mot pour mot :\n« Tu poses ta base une fois : établissement, TVA, zones, équipements. Tout le reste de FoodEatUp s'appuie dessus sans que tu y reviennes. »"
             },
             {
               "id": "EP049",
@@ -10921,7 +10969,8 @@
                 "hook": "Il envoie plus vite que ton pass",
                 "punchline": "Un KDS, et la cuisine avance toute seule",
                 "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP049.mp4"
-              }
+              },
+              "heygenPrompt": "AVATAR — le chef FoodEatUp, avatar 3D, plan poitrine, fond neutre crème #FCF9E6. Regard caméra, posture ouverte, aucune gestuelle appuyée.\nVOIX — française, timbre grave, débit posé. Neuf secondes, pas une de plus.\nCADRE — vertical 9:16, 1080 × 1920. Aucun texte incrusté : les sous-titres sont ajoutés au montage.\nCONTEXTE — Le Coup de Feu, saison 2 « Compter sans se tromper », épisode EP049 · HACCP · Relevé de température.\n\nTEXTE À DIRE, mot pour mot :\n« Tu relèves tes frigos depuis ton téléphone. La mesure est datée, signée, archivée. Un contrôle, et tu sors trois mois d'historique en un clic. »"
             },
             {
               "id": "EP050",
@@ -11147,7 +11196,8 @@
                 "hook": "Apprendre sur le tas",
                 "punchline": "Il y a plus rapide pour former quelqu'un",
                 "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP050.mp4"
-              }
+              },
+              "heygenPrompt": "AVATAR — le chef FoodEatUp, avatar 3D, plan poitrine, fond neutre crème #FCF9E6. Regard caméra, posture ouverte, aucune gestuelle appuyée.\nVOIX — française, timbre grave, débit posé. Neuf secondes, pas une de plus.\nCADRE — vertical 9:16, 1080 × 1920. Aucun texte incrusté : les sous-titres sont ajoutés au montage.\nCONTEXTE — Le Coup de Feu, saison 2 « Compter sans se tromper », épisode EP050 · HACCP · Équipements.\n\nTEXTE À DIRE, mot pour mot :\n« Chaque frigo, chaque chambre froide est déclaré avec ses seuils. Hors zone, tu es alerté. Tu sauves la marchandise avant de la jeter. »"
             },
             {
               "id": "EP051",
@@ -11374,7 +11424,8 @@
                 "hook": "Un mauvais réglage. Une seule fois",
                 "punchline": "Les process, ça évite ça",
                 "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP051.mp4"
-              }
+              },
+              "heygenPrompt": "AVATAR — le chef FoodEatUp, avatar 3D, plan poitrine, fond neutre crème #FCF9E6. Regard caméra, posture ouverte, aucune gestuelle appuyée.\nVOIX — française, timbre grave, débit posé. Neuf secondes, pas une de plus.\nCADRE — vertical 9:16, 1080 × 1920. Aucun texte incrusté : les sous-titres sont ajoutés au montage.\nCONTEXTE — Le Coup de Feu, saison 2 « Compter sans se tromper », épisode EP051 · HACCP · Étiquettes DLC.\n\nTEXTE À DIRE, mot pour mot :\n« Étiquette produite, date de fabrication, DLC calculée. Ton bac étiqueté n'est plus un pari. »"
             },
             {
               "id": "EP052",
@@ -11595,7 +11646,8 @@
                 "hook": "Encore un truc qui te retient",
                 "punchline": "Enlève-les tous, un par un",
                 "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP052.mp4"
-              }
+              },
+              "heygenPrompt": "AVATAR — le chef FoodEatUp, avatar 3D, plan poitrine, fond neutre crème #FCF9E6. Regard caméra, posture ouverte, aucune gestuelle appuyée.\nVOIX — française, timbre grave, débit posé. Neuf secondes, pas une de plus.\nCADRE — vertical 9:16, 1080 × 1920. Aucun texte incrusté : les sous-titres sont ajoutés au montage.\nCONTEXTE — Le Coup de Feu, saison 2 « Compter sans se tromper », épisode EP052 · HACCP · Traçabilité.\n\nTEXTE À DIRE, mot pour mot :\n« Chaque lot reçu est rattaché à ce que tu produis. En cas de rappel, tu remontes la chaîne en quelques secondes. »"
             },
             {
               "id": "EP053",
@@ -11820,7 +11872,8 @@
                 "hook": "Complet dehors. Vide dedans",
                 "punchline": "Ta salle et ta file devraient se parler",
                 "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP053.mp4"
-              }
+              },
+              "heygenPrompt": "AVATAR — le chef FoodEatUp, avatar 3D, plan poitrine, fond neutre crème #FCF9E6. Regard caméra, posture ouverte, aucune gestuelle appuyée.\nVOIX — française, timbre grave, débit posé. Neuf secondes, pas une de plus.\nCADRE — vertical 9:16, 1080 × 1920. Aucun texte incrusté : les sous-titres sont ajoutés au montage.\nCONTEXTE — Le Coup de Feu, saison 2 « Compter sans se tromper », épisode EP053 · HACCP · Réception fournisseur.\n\nTEXTE À DIRE, mot pour mot :\n« Contrôle à réception : température, aspect, quantité, non-conformités. Tout part dans le dossier HACCP tout seul. »"
             },
             {
               "id": "EP054",
@@ -12045,7 +12098,8 @@
                 "hook": "Ton prix ne raconte pas ton coût",
                 "punchline": "Marge réelle par plat. Ça change les décisions",
                 "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP054.mp4"
-              }
+              },
+              "heygenPrompt": "AVATAR — le chef FoodEatUp, avatar 3D, plan poitrine, fond neutre crème #FCF9E6. Regard caméra, posture ouverte, aucune gestuelle appuyée.\nVOIX — française, timbre grave, débit posé. Neuf secondes, pas une de plus.\nCADRE — vertical 9:16, 1080 × 1920. Aucun texte incrusté : les sous-titres sont ajoutés au montage.\nCONTEXTE — Le Coup de Feu, saison 2 « Compter sans se tromper », épisode EP054 · HACCP · Plan de nettoyage.\n\nTEXTE À DIRE, mot pour mot :\n« Tes zones et tes postes de nettoyage sont listés. Qui a fait quoi, quand, c'est enregistré. Le plan de nettoyage vit vraiment. »"
             },
             {
               "id": "EP055",
@@ -12270,7 +12324,8 @@
                 "hook": "Ta compta, au format papier",
                 "punchline": "Scanne. Classe. Oublie",
                 "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP055.mp4"
-              }
+              },
+              "heygenPrompt": "AVATAR — le chef FoodEatUp, avatar 3D, plan poitrine, fond neutre crème #FCF9E6. Regard caméra, posture ouverte, aucune gestuelle appuyée.\nVOIX — française, timbre grave, débit posé. Neuf secondes, pas une de plus.\nCADRE — vertical 9:16, 1080 × 1920. Aucun texte incrusté : les sous-titres sont ajoutés au montage.\nCONTEXTE — Le Coup de Feu, saison 2 « Compter sans se tromper », épisode EP055 · HACCP · Checklists hygiène.\n\nTEXTE À DIRE, mot pour mot :\n« Tu crées ta checklist une fois, l'équipe la valide chaque jour. Ce qui est coché est daté et signé. »"
             },
             {
               "id": "EP056",
@@ -12496,7 +12551,8 @@
                 "hook": "Il y a toujours un truc en trop",
                 "punchline": "Ou en moins. Et tu le vois trop tard",
                 "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP056.mp4"
-              }
+              },
+              "heygenPrompt": "AVATAR — le chef FoodEatUp, avatar 3D, plan poitrine, fond neutre crème #FCF9E6. Regard caméra, posture ouverte, aucune gestuelle appuyée.\nVOIX — française, timbre grave, débit posé. Neuf secondes, pas une de plus.\nCADRE — vertical 9:16, 1080 × 1920. Aucun texte incrusté : les sous-titres sont ajoutés au montage.\nCONTEXTE — Le Coup de Feu, saison 2 « Compter sans se tromper », épisode EP056 · HACCP · Historique.\n\nTEXTE À DIRE, mot pour mot :\n« Tes relevés, tes réceptions et tes validations sont conservés. Le jour du contrôle, tu ne cherches rien. »"
             },
             {
               "id": "EP057",
@@ -12705,7 +12761,8 @@
                 "hook": "La clôture de caisse",
                 "punchline": "Un Z propre, en une minute",
                 "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP057.mp4"
-              }
+              },
+              "heygenPrompt": "AVATAR — le chef FoodEatUp, avatar 3D, plan poitrine, fond neutre crème #FCF9E6. Regard caméra, posture ouverte, aucune gestuelle appuyée.\nVOIX — française, timbre grave, débit posé. Neuf secondes, pas une de plus.\nCADRE — vertical 9:16, 1080 × 1920. Aucun texte incrusté : les sous-titres sont ajoutés au montage.\nCONTEXTE — Le Coup de Feu, saison 2 « Compter sans se tromper », épisode EP057 · HACCP · Alertes.\n\nTEXTE À DIRE, mot pour mot :\n« Une température hors seuil déclenche une alerte immédiate. Tu réagis pendant le service, pas le lendemain. »"
             },
             {
               "id": "EP058",
@@ -12915,7 +12972,8 @@
                 "hook": "L'anniversaire de la table 12",
                 "punchline": "Anticiper, c'est aussi ça, le service",
                 "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP058.mp4"
-              }
+              },
+              "heygenPrompt": "AVATAR — le chef FoodEatUp, avatar 3D, plan poitrine, fond neutre crème #FCF9E6. Regard caméra, posture ouverte, aucune gestuelle appuyée.\nVOIX — française, timbre grave, débit posé. Neuf secondes, pas une de plus.\nCADRE — vertical 9:16, 1080 × 1920. Aucun texte incrusté : les sous-titres sont ajoutés au montage.\nCONTEXTE — Le Coup de Feu, saison 2 « Compter sans se tromper », épisode EP058 · HACCP · Rôles.\n\nTEXTE À DIRE, mot pour mot :\n« Chaque agent signe ses propres relevés. La responsabilité est claire, sans paperasse supplémentaire. »"
             },
             {
               "id": "EP059",
@@ -13140,7 +13198,8 @@
                 "hook": "Ta com', chaque matin",
                 "punchline": "Il y a plus solide qu'une ardoise",
                 "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP059.mp4"
-              }
+              },
+              "heygenPrompt": "AVATAR — le chef FoodEatUp, avatar 3D, plan poitrine, fond neutre crème #FCF9E6. Regard caméra, posture ouverte, aucune gestuelle appuyée.\nVOIX — française, timbre grave, débit posé. Neuf secondes, pas une de plus.\nCADRE — vertical 9:16, 1080 × 1920. Aucun texte incrusté : les sous-titres sont ajoutés au montage.\nCONTEXTE — Le Coup de Feu, saison 2 « Compter sans se tromper », épisode EP059 · HACCP · Non-conformité.\n\nTEXTE À DIRE, mot pour mot :\n« Tu déclares une non-conformité, tu notes l'action corrective. C'est exactement ce qu'on te demandera de prouver. »"
             },
             {
               "id": "EP060",
@@ -13365,7 +13424,8 @@
                 "hook": "Ce qu'on te demande d'être",
                 "punchline": "Ou alors, un seul outil fait le reste",
                 "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP060.mp4"
-              }
+              },
+              "heygenPrompt": "AVATAR — le chef FoodEatUp, avatar 3D, plan poitrine, fond neutre crème #FCF9E6. Regard caméra, posture ouverte, aucune gestuelle appuyée.\nVOIX — française, timbre grave, débit posé. Neuf secondes, pas une de plus.\nCADRE — vertical 9:16, 1080 × 1920. Aucun texte incrusté : les sous-titres sont ajoutés au montage.\nCONTEXTE — Le Coup de Feu, saison 2 « Compter sans se tromper », épisode EP060 · HACCP · Congélation.\n\nTEXTE À DIRE, mot pour mot :\n« Tu enregistres une mise en congélation avec sa date et sa quantité. Plus de sac sans nom au fond du bac. »"
             }
           ],
           "acte": "Acte II — Le métier",
@@ -13607,7 +13667,8 @@
                 "hook": "Ton système de pointage",
                 "punchline": "Un badge, un QR code, un code PIN. Point",
                 "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP061.mp4"
-              }
+              },
+              "heygenPrompt": "AVATAR — le chef FoodEatUp, avatar 3D, plan poitrine, fond neutre crème #FCF9E6. Regard caméra, posture ouverte, aucune gestuelle appuyée.\nVOIX — française, timbre grave, débit posé. Neuf secondes, pas une de plus.\nCADRE — vertical 9:16, 1080 × 1920. Aucun texte incrusté : les sous-titres sont ajoutés au montage.\nCONTEXTE — Le Coup de Feu, saison 3 « L'équipe qui tient », épisode EP061 · HACCP · Rapport HACCP.\n\nTEXTE À DIRE, mot pour mot :\n« Tu édites ton dossier de conformité sur la période de ton choix, prêt à présenter. »"
             },
             {
               "id": "EP062",
@@ -13832,7 +13893,8 @@
                 "hook": "Je te jure, j'étais là à 8 h",
                 "punchline": "Photo, heure, poste. Le débat est clos",
                 "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP062.mp4"
-              }
+              },
+              "heygenPrompt": "AVATAR — le chef FoodEatUp, avatar 3D, plan poitrine, fond neutre crème #FCF9E6. Regard caméra, posture ouverte, aucune gestuelle appuyée.\nVOIX — française, timbre grave, débit posé. Neuf secondes, pas une de plus.\nCADRE — vertical 9:16, 1080 × 1920. Aucun texte incrusté : les sous-titres sont ajoutés au montage.\nCONTEXTE — Le Coup de Feu, saison 3 « L'équipe qui tient », épisode EP062 · HACCP · Routine du jour.\n\nTEXTE À DIRE, mot pour mot :\n« La conformité devient une routine de deux minutes par service, au lieu d'un dimanche de rattrapage. »"
             },
             {
               "id": "EP063",
@@ -14058,7 +14120,8 @@
                 "hook": "Ta demande de congé",
                 "punchline": "Demandée, reçue, validée. Sans papier",
                 "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP063.mp4"
-              }
+              },
+              "heygenPrompt": "AVATAR — le chef FoodEatUp, avatar 3D, plan poitrine, fond neutre crème #FCF9E6. Regard caméra, posture ouverte, aucune gestuelle appuyée.\nVOIX — française, timbre grave, débit posé. Neuf secondes, pas une de plus.\nCADRE — vertical 9:16, 1080 × 1920. Aucun texte incrusté : les sous-titres sont ajoutés au montage.\nCONTEXTE — Le Coup de Feu, saison 3 « L'équipe qui tient », épisode EP063 · Équipe & Planning · Créer un employé.\n\nTEXTE À DIRE, mot pour mot :\n« Tu crées ta fiche employé avec son rôle et ses horaires. Elle alimente le planning, les pointages et la paie. »"
             },
             {
               "id": "EP064",
@@ -14284,7 +14347,8 @@
                 "hook": "Le planning de la semaine",
                 "punchline": "Par employé ou par poste. Imprimable. À jour",
                 "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP064.mp4"
-              }
+              },
+              "heygenPrompt": "AVATAR — le chef FoodEatUp, avatar 3D, plan poitrine, fond neutre crème #FCF9E6. Regard caméra, posture ouverte, aucune gestuelle appuyée.\nVOIX — française, timbre grave, débit posé. Neuf secondes, pas une de plus.\nCADRE — vertical 9:16, 1080 × 1920. Aucun texte incrusté : les sous-titres sont ajoutés au montage.\nCONTEXTE — Le Coup de Feu, saison 3 « L'équipe qui tient », épisode EP064 · Équipe & Planning · Planning semaine.\n\nTEXTE À DIRE, mot pour mot :\n« Le planning se construit en glisser-déposer, avec le coût de la semaine qui s'affiche pendant que tu poses les shifts. »"
             },
             {
               "id": "EP065",
@@ -14512,7 +14576,8 @@
                 "hook": "Qui a accès à quoi ",
                 "punchline": "Chaque rôle voit exactement ce qu'il doit voir",
                 "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP065.mp4"
-              }
+              },
+              "heygenPrompt": "AVATAR — le chef FoodEatUp, avatar 3D, plan poitrine, fond neutre crème #FCF9E6. Regard caméra, posture ouverte, aucune gestuelle appuyée.\nVOIX — française, timbre grave, débit posé. Neuf secondes, pas une de plus.\nCADRE — vertical 9:16, 1080 × 1920. Aucun texte incrusté : les sous-titres sont ajoutés au montage.\nCONTEXTE — Le Coup de Feu, saison 3 « L'équipe qui tient », épisode EP065 · Équipe & Planning · Pointages.\n\nTEXTE À DIRE, mot pour mot :\n« Les heures réelles sont pointées. Tu compares le prévu et le réalisé, sans discussion de fin de mois. »"
             },
             {
               "id": "EP066",
@@ -14721,7 +14786,8 @@
                 "hook": "Ta cuisine n'a personne à qui parler",
                 "punchline": "Jarvis répond, lui. Et il note",
                 "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP066.mp4"
-              }
+              },
+              "heygenPrompt": "AVATAR — le chef FoodEatUp, avatar 3D, plan poitrine, fond neutre crème #FCF9E6. Regard caméra, posture ouverte, aucune gestuelle appuyée.\nVOIX — française, timbre grave, débit posé. Neuf secondes, pas une de plus.\nCADRE — vertical 9:16, 1080 × 1920. Aucun texte incrusté : les sous-titres sont ajoutés au montage.\nCONTEXTE — Le Coup de Feu, saison 3 « L'équipe qui tient », épisode EP066 · Équipe & Planning · Congés.\n\nTEXTE À DIRE, mot pour mot :\n« Une demande de congé arrive, tu valides ou tu refuses depuis l'écran. Le planning se met à jour tout seul. »"
             },
             {
               "id": "EP067",
@@ -14947,7 +15013,8 @@
                 "hook": "Ton relevé de température",
                 "punchline": "Un vrai relevé, horodaté, par équipement",
                 "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP067.mp4"
-              }
+              },
+              "heygenPrompt": "AVATAR — le chef FoodEatUp, avatar 3D, plan poitrine, fond neutre crème #FCF9E6. Regard caméra, posture ouverte, aucune gestuelle appuyée.\nVOIX — française, timbre grave, débit posé. Neuf secondes, pas une de plus.\nCADRE — vertical 9:16, 1080 × 1920. Aucun texte incrusté : les sous-titres sont ajoutés au montage.\nCONTEXTE — Le Coup de Feu, saison 3 « L'équipe qui tient », épisode EP067 · Équipe & Planning · Contrats.\n\nTEXTE À DIRE, mot pour mot :\n« Contrats et documents employés sont rangés au même endroit, avec leurs échéances. »"
             },
             {
               "id": "EP068",
@@ -15156,7 +15223,8 @@
                 "hook": "Le test scientifique du nez",
                 "punchline": "Une étiquette DLC, et plus personne ne renifle",
                 "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP068.mp4"
-              }
+              },
+              "heygenPrompt": "AVATAR — le chef FoodEatUp, avatar 3D, plan poitrine, fond neutre crème #FCF9E6. Regard caméra, posture ouverte, aucune gestuelle appuyée.\nVOIX — française, timbre grave, débit posé. Neuf secondes, pas une de plus.\nCADRE — vertical 9:16, 1080 × 1920. Aucun texte incrusté : les sous-titres sont ajoutés au montage.\nCONTEXTE — Le Coup de Feu, saison 3 « L'équipe qui tient », épisode EP068 · Équipe & Planning · Coût du travail.\n\nTEXTE À DIRE, mot pour mot :\n« Ton coût de personnel s'affiche en face de ton chiffre d'affaires prévu. Tu ajustes avant, pas après. »"
             },
             {
               "id": "EP069",
@@ -15382,7 +15450,8 @@
                 "hook": "Tu as vérifié la livraison ",
                 "punchline": "Température, DLC, code EAN. En scannant",
                 "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP069.mp4"
-              }
+              },
+              "heygenPrompt": "AVATAR — le chef FoodEatUp, avatar 3D, plan poitrine, fond neutre crème #FCF9E6. Regard caméra, posture ouverte, aucune gestuelle appuyée.\nVOIX — française, timbre grave, débit posé. Neuf secondes, pas une de plus.\nCADRE — vertical 9:16, 1080 × 1920. Aucun texte incrusté : les sous-titres sont ajoutés au montage.\nCONTEXTE — Le Coup de Feu, saison 3 « L'équipe qui tient », épisode EP069 · Équipe & Planning · Recrutement.\n\nTEXTE À DIRE, mot pour mot :\n« Tu publies ton offre, tu suis les candidatures par statut, tu décides. Le recrutement arrête de traîner sur ton téléphone. »"
             },
             {
               "id": "EP070",
@@ -15607,7 +15676,8 @@
                 "hook": "C'est fait",
                 "punchline": "Photo analysée par l'IA. Rapport objectif",
                 "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP070.mp4"
-              }
+              },
+              "heygenPrompt": "AVATAR — le chef FoodEatUp, avatar 3D, plan poitrine, fond neutre crème #FCF9E6. Regard caméra, posture ouverte, aucune gestuelle appuyée.\nVOIX — française, timbre grave, débit posé. Neuf secondes, pas une de plus.\nCADRE — vertical 9:16, 1080 × 1920. Aucun texte incrusté : les sous-titres sont ajoutés au montage.\nCONTEXTE — Le Coup de Feu, saison 3 « L'équipe qui tient », épisode EP070 · Équipe & Planning · Onboarding.\n\nTEXTE À DIRE, mot pour mot :\n« Le nouveau arrive avec son accès, son planning et ses vidéos de formation. Jour un, il est utile. »"
             },
             {
               "id": "EP071",
@@ -15832,7 +15902,8 @@
                 "hook": "La check-list du soir",
                 "punchline": "Cochée, horodatée, signée par qui l'a faite",
                 "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP071.mp4"
-              }
+              },
+              "heygenPrompt": "AVATAR — le chef FoodEatUp, avatar 3D, plan poitrine, fond neutre crème #FCF9E6. Regard caméra, posture ouverte, aucune gestuelle appuyée.\nVOIX — française, timbre grave, débit posé. Neuf secondes, pas une de plus.\nCADRE — vertical 9:16, 1080 × 1920. Aucun texte incrusté : les sous-titres sont ajoutés au montage.\nCONTEXTE — Le Coup de Feu, saison 3 « L'équipe qui tient », épisode EP071 · Équipe & Planning · Multi-postes.\n\nTEXTE À DIRE, mot pour mot :\n« Tu affectes tes équipes par poste et par zone. Chacun sait où il est attendu ce soir. »"
             },
             {
               "id": "EP072",
@@ -16057,7 +16128,8 @@
                 "hook": "Contrôle sanitaire. Ce matin",
                 "punchline": "Tout l'historique HACCP, exporté en un clic",
                 "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP072.mp4"
-              }
+              },
+              "heygenPrompt": "AVATAR — le chef FoodEatUp, avatar 3D, plan poitrine, fond neutre crème #FCF9E6. Regard caméra, posture ouverte, aucune gestuelle appuyée.\nVOIX — française, timbre grave, débit posé. Neuf secondes, pas une de plus.\nCADRE — vertical 9:16, 1080 × 1920. Aucun texte incrusté : les sous-titres sont ajoutés au montage.\nCONTEXTE — Le Coup de Feu, saison 3 « L'équipe qui tient », épisode EP072 · Équipe & Planning · Absences.\n\nTEXTE À DIRE, mot pour mot :\n« Une absence, et tu vois immédiatement quel service est découvert. Tu remplaces avant l'ouverture. »"
             },
             {
               "id": "EP073",
@@ -16276,7 +16348,8 @@
                 "hook": "Combien tu commandes pour samedi ",
                 "punchline": "Tes ventes le savent. Demande-leur",
                 "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP073.mp4"
-              }
+              },
+              "heygenPrompt": "AVATAR — le chef FoodEatUp, avatar 3D, plan poitrine, fond neutre crème #FCF9E6. Regard caméra, posture ouverte, aucune gestuelle appuyée.\nVOIX — française, timbre grave, débit posé. Neuf secondes, pas une de plus.\nCADRE — vertical 9:16, 1080 × 1920. Aucun texte incrusté : les sous-titres sont ajoutés au montage.\nCONTEXTE — Le Coup de Feu, saison 3 « L'équipe qui tient », épisode EP073 · Configuration · Établissement.\n\nTEXTE À DIRE, mot pour mot :\n« Tu paramètres ton établissement une fois : horaires, coordonnées, TVA. Tout FoodEatUp s'appuie dessus. »"
             },
             {
               "id": "EP074",
@@ -16494,7 +16567,8 @@
                 "hook": "Tu as oublié la liste",
                 "punchline": "Elle se construit toute seule. Et elle part au fournisseur",
                 "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP074.mp4"
-              }
+              },
+              "heygenPrompt": "AVATAR — le chef FoodEatUp, avatar 3D, plan poitrine, fond neutre crème #FCF9E6. Regard caméra, posture ouverte, aucune gestuelle appuyée.\nVOIX — française, timbre grave, débit posé. Neuf secondes, pas une de plus.\nCADRE — vertical 9:16, 1080 × 1920. Aucun texte incrusté : les sous-titres sont ajoutés au montage.\nCONTEXTE — Le Coup de Feu, saison 3 « L'équipe qui tient », épisode EP074 · Configuration · Catégories.\n\nTEXTE À DIRE, mot pour mot :\n« Tes catégories de produits, d'ingrédients et de recettes structurent tout le reste. Cinq minutes qui t'en font gagner cent. »"
             },
             {
               "id": "EP075",
@@ -16712,7 +16786,8 @@
                 "hook": "Ta facture fournisseur",
                 "punchline": "Photographie-la. Les prix se mettent à jour seuls",
                 "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP075.mp4"
-              }
+              },
+              "heygenPrompt": "AVATAR — le chef FoodEatUp, avatar 3D, plan poitrine, fond neutre crème #FCF9E6. Regard caméra, posture ouverte, aucune gestuelle appuyée.\nVOIX — française, timbre grave, débit posé. Neuf secondes, pas une de plus.\nCADRE — vertical 9:16, 1080 × 1920. Aucun texte incrusté : les sous-titres sont ajoutés au montage.\nCONTEXTE — Le Coup de Feu, saison 3 « L'équipe qui tient », épisode EP075 · Configuration · TVA.\n\nTEXTE À DIRE, mot pour mot :\n« Tes taux de TVA sont posés une fois, appliqués partout : caisse, factures, comptabilité. »"
             },
             {
               "id": "EP076",
@@ -16930,7 +17005,8 @@
                 "hook": "Ton inventaire du mardi",
                 "punchline": "La production sort les ingrédients du stock. Automatiquement",
                 "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP076.mp4"
-              }
+              },
+              "heygenPrompt": "AVATAR — le chef FoodEatUp, avatar 3D, plan poitrine, fond neutre crème #FCF9E6. Regard caméra, posture ouverte, aucune gestuelle appuyée.\nVOIX — française, timbre grave, débit posé. Neuf secondes, pas une de plus.\nCADRE — vertical 9:16, 1080 × 1920. Aucun texte incrusté : les sous-titres sont ajoutés au montage.\nCONTEXTE — Le Coup de Feu, saison 3 « L'équipe qui tient », épisode EP076 · Configuration · Zones et tables.\n\nTEXTE À DIRE, mot pour mot :\n« Tu dessines ta salle : zones, tables, capacités. Ton plan de salle devient vivant pendant le service. »"
             },
             {
               "id": "EP077",
@@ -17150,7 +17226,8 @@
                 "hook": "Ton devis pour le mariage de samedi",
                 "punchline": "Devis, envoi, acceptation, facture. Une seule chaîne",
                 "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP077.mp4"
-              }
+              },
+              "heygenPrompt": "AVATAR — le chef FoodEatUp, avatar 3D, plan poitrine, fond neutre crème #FCF9E6. Regard caméra, posture ouverte, aucune gestuelle appuyée.\nVOIX — française, timbre grave, débit posé. Neuf secondes, pas une de plus.\nCADRE — vertical 9:16, 1080 × 1920. Aucun texte incrusté : les sous-titres sont ajoutés au montage.\nCONTEXTE — Le Coup de Feu, saison 3 « L'équipe qui tient », épisode EP077 · Configuration · Équipements.\n\nTEXTE À DIRE, mot pour mot :\n« Tu déclares tes équipements et leurs seuils. Ils remontent ensuite dans ton suivi HACCP. »"
             },
             {
               "id": "EP078",
@@ -17369,7 +17446,8 @@
                 "hook": "Ta comptabilité annuelle",
                 "punchline": "Chaque dépense rattachée à sa livraison. Toute l'année",
                 "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP078.mp4"
-              }
+              },
+              "heygenPrompt": "AVATAR — le chef FoodEatUp, avatar 3D, plan poitrine, fond neutre crème #FCF9E6. Regard caméra, posture ouverte, aucune gestuelle appuyée.\nVOIX — française, timbre grave, débit posé. Neuf secondes, pas une de plus.\nCADRE — vertical 9:16, 1080 × 1920. Aucun texte incrusté : les sous-titres sont ajoutés au montage.\nCONTEXTE — Le Coup de Feu, saison 3 « L'équipe qui tient », épisode EP078 · Configuration · Utilisateurs.\n\nTEXTE À DIRE, mot pour mot :\n« Chaque membre de l'équipe a son accès et ses droits. Tout le monde ne voit pas la compta. »"
             },
             {
               "id": "EP079",
@@ -17588,7 +17666,8 @@
                 "hook": "Ton programme de fidélité",
                 "punchline": "Un compte, tous les canaux, zéro carton",
                 "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP079.mp4"
-              }
+              },
+              "heygenPrompt": "AVATAR — le chef FoodEatUp, avatar 3D, plan poitrine, fond neutre crème #FCF9E6. Regard caméra, posture ouverte, aucune gestuelle appuyée.\nVOIX — française, timbre grave, débit posé. Neuf secondes, pas une de plus.\nCADRE — vertical 9:16, 1080 × 1920. Aucun texte incrusté : les sous-titres sont ajoutés au montage.\nCONTEXTE — Le Coup de Feu, saison 3 « L'équipe qui tient », épisode EP079 · Configuration · Import de carte.\n\nTEXTE À DIRE, mot pour mot :\n« Tu importes ta carte entière en un appel : catégories, sous-catégories, plats, prix. »"
             },
             {
               "id": "EP080",
@@ -17807,7 +17886,8 @@
                 "hook": "Ouverture. Fond de caisse : ",
                 "punchline": "Fond déclaré, opérateur identifié, service ouvert",
                 "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP080.mp4"
-              }
+              },
+              "heygenPrompt": "AVATAR — le chef FoodEatUp, avatar 3D, plan poitrine, fond neutre crème #FCF9E6. Regard caméra, posture ouverte, aucune gestuelle appuyée.\nVOIX — française, timbre grave, débit posé. Neuf secondes, pas une de plus.\nCADRE — vertical 9:16, 1080 × 1920. Aucun texte incrusté : les sous-titres sont ajoutés au montage.\nCONTEXTE — Le Coup de Feu, saison 3 « L'équipe qui tient », épisode EP080 · Configuration · Abonnement.\n\nTEXTE À DIRE, mot pour mot :\n« Tu vois ton plan, tes options actives et ce que tu consommes. Aucune ligne surprise en fin de mois. »"
             },
             {
               "id": "EP081",
@@ -18029,7 +18109,8 @@
                 "hook": "On peut séparer ",
                 "punchline": "Oui. Par personne, par article, par montant",
                 "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP081.mp4"
-              }
+              },
+              "heygenPrompt": "AVATAR — le chef FoodEatUp, avatar 3D, plan poitrine, fond neutre crème #FCF9E6. Regard caméra, posture ouverte, aucune gestuelle appuyée.\nVOIX — française, timbre grave, débit posé. Neuf secondes, pas une de plus.\nCADRE — vertical 9:16, 1080 × 1920. Aucun texte incrusté : les sous-titres sont ajoutés au montage.\nCONTEXTE — Le Coup de Feu, saison 3 « L'équipe qui tient », épisode EP081 · Comptabilité · Factures.\n\nTEXTE À DIRE, mot pour mot :\n« Chaque commande produit sa facture, numérotée et conforme. Tu ne la ressaisis nulle part. »"
             },
             {
               "id": "EP082",
@@ -18252,7 +18333,8 @@
                 "hook": "Il manque un centime",
                 "punchline": "Le Z calcule l'écart. Toi, tu rentres chez toi",
                 "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP082.mp4"
-              }
+              },
+              "heygenPrompt": "AVATAR — le chef FoodEatUp, avatar 3D, plan poitrine, fond neutre crème #FCF9E6. Regard caméra, posture ouverte, aucune gestuelle appuyée.\nVOIX — française, timbre grave, débit posé. Neuf secondes, pas une de plus.\nCADRE — vertical 9:16, 1080 × 1920. Aucun texte incrusté : les sous-titres sont ajoutés au montage.\nCONTEXTE — Le Coup de Feu, saison 3 « L'équipe qui tient », épisode EP082 · Comptabilité · Devis.\n\nTEXTE À DIRE, mot pour mot :\n« Un devis pour un groupe se crée en deux minutes et se transforme en commande quand il est accepté. »"
             },
             {
               "id": "EP083",
@@ -18456,7 +18538,8 @@
                 "hook": "J'AI DIT DEUX BURGERS ",
                 "punchline": "Chaque poste voit ses plats. Sans crier",
                 "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP083.mp4"
-              }
+              },
+              "heygenPrompt": "AVATAR — le chef FoodEatUp, avatar 3D, plan poitrine, fond neutre crème #FCF9E6. Regard caméra, posture ouverte, aucune gestuelle appuyée.\nVOIX — française, timbre grave, débit posé. Neuf secondes, pas une de plus.\nCADRE — vertical 9:16, 1080 × 1920. Aucun texte incrusté : les sous-titres sont ajoutés au montage.\nCONTEXTE — Le Coup de Feu, saison 3 « L'équipe qui tient », épisode EP083 · Comptabilité · Impayés.\n\nTEXTE À DIRE, mot pour mot :\n« Tu vois ce qui est facturé, encaissé, et ce qui traîne. Les relances arrêtent d'être un jeu de mémoire. »"
             },
             {
               "id": "EP084",
@@ -18678,7 +18761,8 @@
                 "hook": "Commander à table",
                 "punchline": "Un plan de salle, un QR par table. Ça marche",
                 "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP084.mp4"
-              }
+              },
+              "heygenPrompt": "AVATAR — le chef FoodEatUp, avatar 3D, plan poitrine, fond neutre crème #FCF9E6. Regard caméra, posture ouverte, aucune gestuelle appuyée.\nVOIX — française, timbre grave, débit posé. Neuf secondes, pas une de plus.\nCADRE — vertical 9:16, 1080 × 1920. Aucun texte incrusté : les sous-titres sont ajoutés au montage.\nCONTEXTE — Le Coup de Feu, saison 3 « L'équipe qui tient », épisode EP084 · Comptabilité · Dépenses.\n\nTEXTE À DIRE, mot pour mot :\n« Tu photographies la facture fournisseur, elle rentre dans tes dépenses avec ses lignes et son montant. »"
             },
             {
               "id": "EP085",
@@ -18882,7 +18966,8 @@
                 "hook": "Table de 8. 20 h 30. Personne",
                 "punchline": "No-show marqué, table libérée, soirée sauvée",
                 "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP085.mp4"
-              }
+              },
+              "heygenPrompt": "AVATAR — le chef FoodEatUp, avatar 3D, plan poitrine, fond neutre crème #FCF9E6. Regard caméra, posture ouverte, aucune gestuelle appuyée.\nVOIX — française, timbre grave, débit posé. Neuf secondes, pas une de plus.\nCADRE — vertical 9:16, 1080 × 1920. Aucun texte incrusté : les sous-titres sont ajoutés au montage.\nCONTEXTE — Le Coup de Feu, saison 3 « L'équipe qui tient », épisode EP085 · Comptabilité · Synthèse.\n\nTEXTE À DIRE, mot pour mot :\n« Chiffre d'affaires, dépenses, impayés, marge : la synthèse du mois tient sur un écran. »"
             },
             {
               "id": "EP086",
@@ -19099,7 +19184,8 @@
                 "hook": "Trois appels manqués pendant le coup de feu",
                 "punchline": "Caroline décroche. Et elle prend la réservation",
                 "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP086.mp4"
-              }
+              },
+              "heygenPrompt": "AVATAR — le chef FoodEatUp, avatar 3D, plan poitrine, fond neutre crème #FCF9E6. Regard caméra, posture ouverte, aucune gestuelle appuyée.\nVOIX — française, timbre grave, débit posé. Neuf secondes, pas une de plus.\nCADRE — vertical 9:16, 1080 × 1920. Aucun texte incrusté : les sous-titres sont ajoutés au montage.\nCONTEXTE — Le Coup de Feu, saison 3 « L'équipe qui tient », épisode EP086 · Comptabilité · Export comptable.\n\nTEXTE À DIRE, mot pour mot :\n« Tu envoies à ton comptable un export propre. Le dimanche soir redevient un dimanche soir. »"
             },
             {
               "id": "EP087",
@@ -19321,7 +19407,8 @@
                 "hook": "Trois plateformes. Trois écrans",
                 "punchline": "Une seule cuisine. Un seul flux",
                 "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP087.mp4"
-              }
+              },
+              "heygenPrompt": "AVATAR — le chef FoodEatUp, avatar 3D, plan poitrine, fond neutre crème #FCF9E6. Regard caméra, posture ouverte, aucune gestuelle appuyée.\nVOIX — française, timbre grave, débit posé. Neuf secondes, pas une de plus.\nCADRE — vertical 9:16, 1080 × 1920. Aucun texte incrusté : les sous-titres sont ajoutés au montage.\nCONTEXTE — Le Coup de Feu, saison 3 « L'équipe qui tient », épisode EP087 · Mon Site · Éditeur.\n\nTEXTE À DIRE, mot pour mot :\n« Tu actives l'éditeur, tu choisis ton template, ton site est en ligne le jour même, aux couleurs de ta maison. »"
             },
             {
               "id": "EP088",
@@ -19528,7 +19615,8 @@
                 "hook": "Un avis. Publié il y a six jours",
                 "punchline": "Vu, répondu, traité. Le jour même",
                 "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP088.mp4"
-              }
+              },
+              "heygenPrompt": "AVATAR — le chef FoodEatUp, avatar 3D, plan poitrine, fond neutre crème #FCF9E6. Regard caméra, posture ouverte, aucune gestuelle appuyée.\nVOIX — française, timbre grave, débit posé. Neuf secondes, pas une de plus.\nCADRE — vertical 9:16, 1080 × 1920. Aucun texte incrusté : les sous-titres sont ajoutés au montage.\nCONTEXTE — Le Coup de Feu, saison 3 « L'équipe qui tient », épisode EP088 · Mon Site · Pages.\n\nTEXTE À DIRE, mot pour mot :\n« Tu ajoutes tes pages : carte, avis, allergènes, recrutement. Elles se publient quand tu le décides. »"
             },
             {
               "id": "EP089",
@@ -19751,7 +19839,8 @@
                 "hook": "Ton jeu concours",
                 "punchline": "QR code, roue cadeaux, gagnants tracés",
                 "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP089.mp4"
-              }
+              },
+              "heygenPrompt": "AVATAR — le chef FoodEatUp, avatar 3D, plan poitrine, fond neutre crème #FCF9E6. Regard caméra, posture ouverte, aucune gestuelle appuyée.\nVOIX — française, timbre grave, débit posé. Neuf secondes, pas une de plus.\nCADRE — vertical 9:16, 1080 × 1920. Aucun texte incrusté : les sous-titres sont ajoutés au montage.\nCONTEXTE — Le Coup de Feu, saison 3 « L'équipe qui tient », épisode EP089 · Mon Site · Domaine.\n\nTEXTE À DIRE, mot pour mot :\n« Tu branches ton nom de domaine. Tes clients arrivent chez toi, pas sur une plateforme. »"
             },
             {
               "id": "EP090",
@@ -19975,7 +20064,8 @@
                 "hook": "Ta prévision pour samedi",
                 "punchline": "PrediBot lit tes données. Pas ton café",
                 "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP090.mp4"
-              }
+              },
+              "heygenPrompt": "AVATAR — le chef FoodEatUp, avatar 3D, plan poitrine, fond neutre crème #FCF9E6. Regard caméra, posture ouverte, aucune gestuelle appuyée.\nVOIX — française, timbre grave, débit posé. Neuf secondes, pas une de plus.\nCADRE — vertical 9:16, 1080 × 1920. Aucun texte incrusté : les sous-titres sont ajoutés au montage.\nCONTEXTE — Le Coup de Feu, saison 3 « L'équipe qui tient », épisode EP090 · Mon Site · Leads du site.\n\nTEXTE À DIRE, mot pour mot :\n« Chaque demande de privatisation ou de contact devient un lead dans ton fichier client. »"
             }
           ],
           "acte": "Acte II — Le métier",
@@ -20216,7 +20306,8 @@
                 "hook": "Anniversaire de table 12",
                 "punchline": "Les surprises, c'est bien. Les imprévus, non",
                 "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP091.mp4"
-              }
+              },
+              "heygenPrompt": "AVATAR — le chef FoodEatUp, avatar 3D, plan poitrine, fond neutre crème #FCF9E6. Regard caméra, posture ouverte, aucune gestuelle appuyée.\nVOIX — française, timbre grave, débit posé. Neuf secondes, pas une de plus.\nCADRE — vertical 9:16, 1080 × 1920. Aucun texte incrusté : les sous-titres sont ajoutés au montage.\nCONTEXTE — Le Coup de Feu, saison 4 « Se faire connaître », épisode EP091 · Réservation · 2 - Ajouter une réservation.\n\nTEXTE À DIRE, mot pour mot :\n« L'anniversaire est noté à la réservation, avec le nombre de couverts et la demande spéciale. La cuisine et la salle le savent avant que le client arrive. »"
             },
             {
               "id": "EP092",
@@ -20438,7 +20529,8 @@
                 "hook": "Lui, il avait réservé",
                 "punchline": "Ses quatre-vingts fans, non",
                 "url": null
-              }
+              },
+              "heygenPrompt": "AVATAR — le chef FoodEatUp, avatar 3D, plan poitrine, fond neutre crème #FCF9E6. Regard caméra, posture ouverte, aucune gestuelle appuyée.\nVOIX — française, timbre grave, débit posé. Neuf secondes, pas une de plus.\nCADRE — vertical 9:16, 1080 × 1920. Aucun texte incrusté : les sous-titres sont ajoutés au montage.\nCONTEXTE — Le Coup de Feu, saison 4 « Se faire connaître », épisode EP092 · Réservation · 3 - Gérer et no-shows.\n\nTEXTE À DIRE, mot pour mot :\n« Quatre-vingts personnes d'un coup, ça se voit venir. Tu ouvres ou tu fermes tes créneaux en direct, et la liste d'attente prend le relais. »"
             },
             {
               "id": "EP093",
@@ -20664,7 +20756,8 @@
                 "hook": "Rupture de stock, 20 h 15",
                 "punchline": "Anticiper, c'est moins sportif",
                 "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP093.mp4"
-              }
+              },
+              "heygenPrompt": "AVATAR — le chef FoodEatUp, avatar 3D, plan poitrine, fond neutre crème #FCF9E6. Regard caméra, posture ouverte, aucune gestuelle appuyée.\nVOIX — française, timbre grave, débit posé. Neuf secondes, pas une de plus.\nCADRE — vertical 9:16, 1080 × 1920. Aucun texte incrusté : les sous-titres sont ajoutés au montage.\nCONTEXTE — Le Coup de Feu, saison 4 « Se faire connaître », épisode EP093 · StockVision · 3 - Prédictions des commandes.\n\nTEXTE À DIRE, mot pour mot :\n« FoodEatUp prévoit tes ventes de poisson à partir de ton historique. Tu commandes la bonne quantité le mardi, pas la canne à pêche le samedi. »"
             },
             {
               "id": "EP094",
@@ -20887,7 +20980,8 @@
                 "hook": "2026, la livraison change de main",
                 "punchline": "Autant que tes commandes arrivent au bon endroit",
                 "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP094.mp4"
-              }
+              },
+              "heygenPrompt": "AVATAR — le chef FoodEatUp, avatar 3D, plan poitrine, fond neutre crème #FCF9E6. Regard caméra, posture ouverte, aucune gestuelle appuyée.\nVOIX — française, timbre grave, débit posé. Neuf secondes, pas une de plus.\nCADRE — vertical 9:16, 1080 × 1920. Aucun texte incrusté : les sous-titres sont ajoutés au montage.\nCONTEXTE — Le Coup de Feu, saison 4 « Se faire connaître », épisode EP094 · HubRise · 4 - Centraliser les commandes.\n\nTEXTE À DIRE, mot pour mot :\n« Peu importe qui livre. Tes commandes arrivent dans la même file, avec la bonne adresse et le bon statut, jusqu'à la remise au client. »"
             },
             {
               "id": "EP095",
@@ -21109,7 +21203,8 @@
                 "hook": "Le service s'est arrêté deux minutes",
                 "punchline": "Le reste du temps, il ne devrait jamais s'arrêter",
                 "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP095.mp4"
-              }
+              },
+              "heygenPrompt": "AVATAR — le chef FoodEatUp, avatar 3D, plan poitrine, fond neutre crème #FCF9E6. Regard caméra, posture ouverte, aucune gestuelle appuyée.\nVOIX — française, timbre grave, débit posé. Neuf secondes, pas une de plus.\nCADRE — vertical 9:16, 1080 × 1920. Aucun texte incrusté : les sous-titres sont ajoutés au montage.\nCONTEXTE — Le Coup de Feu, saison 4 « Se faire connaître », épisode EP095 · KDS · 3 - Gérer le KDS en direct.\n\nTEXTE À DIRE, mot pour mot :\n« Sur le KDS, chaque plat a son chrono. Tu vois ce qui traîne au moment où ça traîne, et tu relances le bon poste. »"
             },
             {
               "id": "EP096",
@@ -21337,7 +21432,8 @@
                 "hook": "39° en cuisine",
                 "punchline": "Une alerte température, et tu sauves la marchandise",
                 "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP096.mp4"
-              }
+              },
+              "heygenPrompt": "AVATAR — le chef FoodEatUp, avatar 3D, plan poitrine, fond neutre crème #FCF9E6. Regard caméra, posture ouverte, aucune gestuelle appuyée.\nVOIX — française, timbre grave, débit posé. Neuf secondes, pas une de plus.\nCADRE — vertical 9:16, 1080 × 1920. Aucun texte incrusté : les sous-titres sont ajoutés au montage.\nCONTEXTE — Le Coup de Feu, saison 4 « Se faire connaître », épisode EP096 · HACCP · relevé de température.\n\nTEXTE À DIRE, mot pour mot :\n« Trente-neuf degrés en cuisine, ton frigo souffre. Le relevé hors seuil te prévient tout de suite. Tu sauves la marchandise. »"
             },
             {
               "id": "EP097",
@@ -21560,7 +21656,8 @@
                 "hook": "Six plateformes. Six alertes",
                 "punchline": "Une seule commande, un seul écran",
                 "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP097.mp4"
-              }
+              },
+              "heygenPrompt": "AVATAR — le chef FoodEatUp, avatar 3D, plan poitrine, fond neutre crème #FCF9E6. Regard caméra, posture ouverte, aucune gestuelle appuyée.\nVOIX — française, timbre grave, débit posé. Neuf secondes, pas une de plus.\nCADRE — vertical 9:16, 1080 × 1920. Aucun texte incrusté : les sous-titres sont ajoutés au montage.\nCONTEXTE — Le Coup de Feu, saison 4 « Se faire connaître », épisode EP097 · HubRise · 2 - Relier Uber Eats et Deliveroo.\n\nTEXTE À DIRE, mot pour mot :\n« Tes plateformes envoient tout dans FoodEatUp. Six alertes deviennent une file de commandes. La tablette murale, tu peux la ranger. »"
             },
             {
               "id": "EP098",
@@ -21786,7 +21883,8 @@
                 "hook": "Ton nouveau serveur, en période d'essai",
                 "punchline": "L'IA, c'est utile quand elle sert à quelque chose",
                 "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP098.mp4"
-              }
+              },
+              "heygenPrompt": "AVATAR — le chef FoodEatUp, avatar 3D, plan poitrine, fond neutre crème #FCF9E6. Regard caméra, posture ouverte, aucune gestuelle appuyée.\nVOIX — française, timbre grave, débit posé. Neuf secondes, pas une de plus.\nCADRE — vertical 9:16, 1080 × 1920. Aucun texte incrusté : les sous-titres sont ajoutés au montage.\nCONTEXTE — Le Coup de Feu, saison 4 « Se faire connaître », épisode EP098 · Service · 1 - Commandes multi-canaux.\n\nTEXTE À DIRE, mot pour mot :\n« L'intelligence utile, c'est celle qui range tes commandes, pas celle qui danse. Ici, chaque canal alimente le même service. »"
             },
             {
               "id": "EP099",
@@ -22006,7 +22104,8 @@
                 "hook": "Quarante appels pendant le rush",
                 "punchline": "Quelqu'un devrait répondre. Ce ne sera pas toi",
                 "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP099.mp4"
-              }
+              },
+              "heygenPrompt": "AVATAR — le chef FoodEatUp, avatar 3D, plan poitrine, fond neutre crème #FCF9E6. Regard caméra, posture ouverte, aucune gestuelle appuyée.\nVOIX — française, timbre grave, débit posé. Neuf secondes, pas une de plus.\nCADRE — vertical 9:16, 1080 × 1920. Aucun texte incrusté : les sous-titres sont ajoutés au montage.\nCONTEXTE — Le Coup de Feu, saison 4 « Se faire connaître », épisode EP099 · Caroline · 1 - Configurer voix et prompts.\n\nTEXTE À DIRE, mot pour mot :\n« Caroline répond au téléphone pendant ton rush. Elle prend la réservation, la note, et te la remonte. Aucun appel ne tombe dans le vide. »"
             },
             {
               "id": "EP100",
@@ -22226,7 +22325,8 @@
                 "hook": "Il a mis vingt minutes à filmer",
                 "punchline": "Et deux minutes à te mettre deux étoiles",
                 "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP100.mp4"
-              }
+              },
+              "heygenPrompt": "AVATAR — le chef FoodEatUp, avatar 3D, plan poitrine, fond neutre crème #FCF9E6. Regard caméra, posture ouverte, aucune gestuelle appuyée.\nVOIX — française, timbre grave, débit posé. Neuf secondes, pas une de plus.\nCADRE — vertical 9:16, 1080 × 1920. Aucun texte incrusté : les sous-titres sont ajoutés au montage.\nCONTEXTE — Le Coup de Feu, saison 4 « Se faire connaître », épisode EP100 · Marketing · 1 - Débloquer les avis.\n\nTEXTE À DIRE, mot pour mot :\n« Tes avis remontent au même endroit, site et Google. Tu réponds à celui qui t'a mis deux étoiles avant qu'il devienne ta vitrine. »"
             },
             {
               "id": "EP101",
@@ -22436,7 +22536,8 @@
                 "hook": "Rapprochement des caisses. Vendredi soir",
                 "punchline": "Ça devrait être une ligne, pas une enquête",
                 "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP101.mp4"
-              }
+              },
+              "heygenPrompt": "AVATAR — le chef FoodEatUp, avatar 3D, plan poitrine, fond neutre crème #FCF9E6. Regard caméra, posture ouverte, aucune gestuelle appuyée.\nVOIX — française, timbre grave, débit posé. Neuf secondes, pas une de plus.\nCADRE — vertical 9:16, 1080 × 1920. Aucun texte incrusté : les sous-titres sont ajoutés au montage.\nCONTEXTE — Le Coup de Feu, saison 4 « Se faire connaître », épisode EP101 · Caisse POS · 6 - Clôturer sa caisse.\n\nTEXTE À DIRE, mot pour mot :\n« La clôture, c'est un bouton. Le détail par moyen de paiement, la TVA, l'écart : tout est là, sans calculatrice ni suspense. »"
             },
             {
               "id": "EP102",
@@ -22661,7 +22762,8 @@
                 "hook": "Contrôle surprise. Ou pas",
                 "punchline": "Le jour où c'est le vrai, tu ne bouges pas",
                 "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP102.mp4"
-              }
+              },
+              "heygenPrompt": "AVATAR — le chef FoodEatUp, avatar 3D, plan poitrine, fond neutre crème #FCF9E6. Regard caméra, posture ouverte, aucune gestuelle appuyée.\nVOIX — française, timbre grave, débit posé. Neuf secondes, pas une de plus.\nCADRE — vertical 9:16, 1080 × 1920. Aucun texte incrusté : les sous-titres sont ajoutés au montage.\nCONTEXTE — Le Coup de Feu, saison 4 « Se faire connaître », épisode EP102 · HACCP · checklists hygiène.\n\nTEXTE À DIRE, mot pour mot :\n« Ta checklist est validée chaque jour par ton équipe. Le jour du vrai contrôle, tu ouvres l'historique et tu ne bouges pas. »"
             },
             {
               "id": "EP103",
@@ -22884,7 +22986,8 @@
                 "hook": "Quarante couverts. Sans prévenir",
                 "punchline": "Prévenu, tu aurais dit oui",
                 "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP103.mp4"
-              }
+              },
+              "heygenPrompt": "AVATAR — le chef FoodEatUp, avatar 3D, plan poitrine, fond neutre crème #FCF9E6. Regard caméra, posture ouverte, aucune gestuelle appuyée.\nVOIX — française, timbre grave, débit posé. Neuf secondes, pas une de plus.\nCADRE — vertical 9:16, 1080 × 1920. Aucun texte incrusté : les sous-titres sont ajoutés au montage.\nCONTEXTE — Le Coup de Feu, saison 4 « Se faire connaître », épisode EP103 · Réservation · 1 - Réservations du jour.\n\nTEXTE À DIRE, mot pour mot :\n« Un groupe qui arrive, tu vérifies la disponibilité réelle en trois secondes : tables libres, horaires, capacité. Tu dis oui en connaissance de cause. »"
             },
             {
               "id": "EP104",
@@ -23106,7 +23209,8 @@
                 "hook": "Table de huit. 20 h 30",
                 "punchline": "Un no-show, ça se prévient",
                 "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP104.mp4"
-              }
+              },
+              "heygenPrompt": "AVATAR — le chef FoodEatUp, avatar 3D, plan poitrine, fond neutre crème #FCF9E6. Regard caméra, posture ouverte, aucune gestuelle appuyée.\nVOIX — française, timbre grave, débit posé. Neuf secondes, pas une de plus.\nCADRE — vertical 9:16, 1080 × 1920. Aucun texte incrusté : les sous-titres sont ajoutés au montage.\nCONTEXTE — Le Coup de Feu, saison 4 « Se faire connaître », épisode EP104 · Réservation · 3 - Gérer et no-shows.\n\nTEXTE À DIRE, mot pour mot :\n« Tu marques le no-show, la table se libère immédiatement et repart à la vente. Le client, lui, garde son historique. »"
             },
             {
               "id": "EP105",
@@ -23327,7 +23431,8 @@
                 "hook": "Dernière table du samedi",
                 "punchline": "Le plus rapide gagne. Rends-la réservable en ligne",
                 "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP105.mp4"
-              }
+              },
+              "heygenPrompt": "AVATAR — le chef FoodEatUp, avatar 3D, plan poitrine, fond neutre crème #FCF9E6. Regard caméra, posture ouverte, aucune gestuelle appuyée.\nVOIX — française, timbre grave, débit posé. Neuf secondes, pas une de plus.\nCADRE — vertical 9:16, 1080 × 1920. Aucun texte incrusté : les sous-titres sont ajoutés au montage.\nCONTEXTE — Le Coup de Feu, saison 4 « Se faire connaître », épisode EP105 · Mon Site · 6 - Réservations et horaires.\n\nTEXTE À DIRE, mot pour mot :\n« Tes créneaux sont réservables en ligne, en direct, avec tes vraies disponibilités. Le premier qui réserve a la table. »"
             },
             {
               "id": "EP106",
@@ -23537,7 +23642,8 @@
                 "hook": "On peut payer chacun ",
                 "punchline": "Oui. En trois secondes, pas en trente minutes",
                 "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP106.mp4"
-              }
+              },
+              "heygenPrompt": "AVATAR — le chef FoodEatUp, avatar 3D, plan poitrine, fond neutre crème #FCF9E6. Regard caméra, posture ouverte, aucune gestuelle appuyée.\nVOIX — française, timbre grave, débit posé. Neuf secondes, pas une de plus.\nCADRE — vertical 9:16, 1080 × 1920. Aucun texte incrusté : les sous-titres sont ajoutés au montage.\nCONTEXTE — Le Coup de Feu, saison 4 « Se faire connaître », épisode EP106 · Caisse POS · 5 - Séparer une addition.\n\nTEXTE À DIRE, mot pour mot :\n« Quatorze parts, quatorze cartes : tu découpes l'addition depuis l'écran, chacun paie ce qu'il doit, le reste dû s'affiche en direct. »"
             },
             {
               "id": "EP107",
@@ -23747,7 +23853,8 @@
                 "hook": "Tout le monde a un tour",
                 "punchline": "Ta caisse, elle, ne perd jamais une addition",
                 "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP107.mp4"
-              }
+              },
+              "heygenPrompt": "AVATAR — le chef FoodEatUp, avatar 3D, plan poitrine, fond neutre crème #FCF9E6. Regard caméra, posture ouverte, aucune gestuelle appuyée.\nVOIX — française, timbre grave, débit posé. Neuf secondes, pas une de plus.\nCADRE — vertical 9:16, 1080 × 1920. Aucun texte incrusté : les sous-titres sont ajoutés au montage.\nCONTEXTE — Le Coup de Feu, saison 4 « Se faire connaître », épisode EP107 · Caisse POS · 3 - Encaisser une commande.\n\nTEXTE À DIRE, mot pour mot :\n« L'addition est rattachée à la table dès la commande. Elle ne se perd pas, elle ne s'oublie pas, elle ne disparaît pas. »"
             },
             {
               "id": "EP108",
@@ -23972,7 +24079,8 @@
                 "hook": "Il te faudrait six bras",
                 "punchline": "Ou un seul outil qui fait le reste",
                 "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP108.mp4"
-              }
+              },
+              "heygenPrompt": "AVATAR — le chef FoodEatUp, avatar 3D, plan poitrine, fond neutre crème #FCF9E6. Regard caméra, posture ouverte, aucune gestuelle appuyée.\nVOIX — française, timbre grave, débit posé. Neuf secondes, pas une de plus.\nCADRE — vertical 9:16, 1080 × 1920. Aucun texte incrusté : les sous-titres sont ajoutés au montage.\nCONTEXTE — Le Coup de Feu, saison 4 « Se faire connaître », épisode EP108 · KDS · 2 - Vue KDS par poste.\n\nTEXTE À DIRE, mot pour mot :\n« Chaque poste voit ce qui le concerne, et seulement ça. Tu n'as pas besoin de six bras, tu as besoin de six écrans qui parlent entre eux. »"
             },
             {
               "id": "EP109",
@@ -24193,7 +24301,8 @@
                 "hook": "Ta cave à ferments",
                 "punchline": "Suivie et datée, elle ne t'explose pas à la figure",
                 "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP109.mp4"
-              }
+              },
+              "heygenPrompt": "AVATAR — le chef FoodEatUp, avatar 3D, plan poitrine, fond neutre crème #FCF9E6. Regard caméra, posture ouverte, aucune gestuelle appuyée.\nVOIX — française, timbre grave, débit posé. Neuf secondes, pas une de plus.\nCADRE — vertical 9:16, 1080 × 1920. Aucun texte incrusté : les sous-titres sont ajoutés au montage.\nCONTEXTE — Le Coup de Feu, saison 4 « Se faire connaître », épisode EP109 · HACCP · traçabilité.\n\nTEXTE À DIRE, mot pour mot :\n« Chaque production est datée, tracée, rattachée à son lot. Ce qui fermente en cave n'est plus une surprise. »"
             },
             {
               "id": "EP110",
@@ -24419,7 +24528,8 @@
                 "hook": "Tu suis toutes les tendances",
                 "punchline": "Regarde surtout lesquelles se vendent",
                 "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP110.mp4"
-              }
+              },
+              "heygenPrompt": "AVATAR — le chef FoodEatUp, avatar 3D, plan poitrine, fond neutre crème #FCF9E6. Regard caméra, posture ouverte, aucune gestuelle appuyée.\nVOIX — française, timbre grave, débit posé. Neuf secondes, pas une de plus.\nCADRE — vertical 9:16, 1080 × 1920. Aucun texte incrusté : les sous-titres sont ajoutés au montage.\nCONTEXTE — Le Coup de Feu, saison 4 « Se faire connaître », épisode EP110 · StockVision · 18 - Statistiques par module.\n\nTEXTE À DIRE, mot pour mot :\n« La tendance, tu la testes. Tu regardes ce que ce plat rapporte vraiment, et tu décides de le garder ou pas sur des chiffres. »"
             },
             {
               "id": "EP111",
@@ -24647,7 +24757,8 @@
                 "hook": "La cuisine du futur",
                 "punchline": "Le futur utile, c'est celui qui te fait gagner du temps",
                 "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP111.mp4"
-              }
+              },
+              "heygenPrompt": "AVATAR — le chef FoodEatUp, avatar 3D, plan poitrine, fond neutre crème #FCF9E6. Regard caméra, posture ouverte, aucune gestuelle appuyée.\nVOIX — française, timbre grave, débit posé. Neuf secondes, pas une de plus.\nCADRE — vertical 9:16, 1080 × 1920. Aucun texte incrusté : les sous-titres sont ajoutés au montage.\nCONTEXTE — Le Coup de Feu, saison 4 « Se faire connaître », épisode EP111 · StockVision · 12 - Valider une production.\n\nTEXTE À DIRE, mot pour mot :\n« La production planifiée sort ses ingrédients du stock, sa quantité est validée, sa traçabilité écrite. Le gain de temps est là, pas dans le gadget. »"
             },
             {
               "id": "EP112",
@@ -24870,7 +24981,8 @@
                 "hook": "La carte du futur",
                 "punchline": "Ou juste une carte en ligne qui marche",
                 "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP112.mp4"
-              }
+              },
+              "heygenPrompt": "AVATAR — le chef FoodEatUp, avatar 3D, plan poitrine, fond neutre crème #FCF9E6. Regard caméra, posture ouverte, aucune gestuelle appuyée.\nVOIX — française, timbre grave, débit posé. Neuf secondes, pas une de plus.\nCADRE — vertical 9:16, 1080 × 1920. Aucun texte incrusté : les sous-titres sont ajoutés au montage.\nCONTEXTE — Le Coup de Feu, saison 4 « Se faire connaître », épisode EP112 · Mon Site · 2 - Choisir ton template.\n\nTEXTE À DIRE, mot pour mot :\n« Ta carte en ligne, propre, à jour, consultable par QR à table. Pas de casque, pas d'appli à installer. »"
             },
             {
               "id": "EP113",
@@ -25093,7 +25205,8 @@
                 "hook": "Livraison réussie. Presque",
                 "punchline": "Un suivi de commande, et personne ne mange ta pizza",
                 "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP113.mp4"
-              }
+              },
+              "heygenPrompt": "AVATAR — le chef FoodEatUp, avatar 3D, plan poitrine, fond neutre crème #FCF9E6. Regard caméra, posture ouverte, aucune gestuelle appuyée.\nVOIX — française, timbre grave, débit posé. Neuf secondes, pas une de plus.\nCADRE — vertical 9:16, 1080 × 1920. Aucun texte incrusté : les sous-titres sont ajoutés au montage.\nCONTEXTE — Le Coup de Feu, saison 4 « Se faire connaître », épisode EP113 · HubRise · 4 - Centraliser les commandes.\n\nTEXTE À DIRE, mot pour mot :\n« Le suivi de commande affiche l'état en direct, de la prise à la remise. Tu sais toujours où est la commande et chez qui. »"
             },
             {
               "id": "EP114",
@@ -25314,7 +25427,8 @@
                 "hook": "Ton community manager, c'est ta brigade",
                 "punchline": "Poste. Mais garde un œil sur le service",
                 "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP114.mp4"
-              }
+              },
+              "heygenPrompt": "AVATAR — le chef FoodEatUp, avatar 3D, plan poitrine, fond neutre crème #FCF9E6. Regard caméra, posture ouverte, aucune gestuelle appuyée.\nVOIX — française, timbre grave, débit posé. Neuf secondes, pas une de plus.\nCADRE — vertical 9:16, 1080 × 1920. Aucun texte incrusté : les sous-titres sont ajoutés au montage.\nCONTEXTE — Le Coup de Feu, saison 4 « Se faire connaître », épisode EP114 · Marketing · 5 - Lancer une campagne.\n\nTEXTE À DIRE, mot pour mot :\n« Ce que ton équipe filme, tu peux l'exploiter : campagne, segment, envoi, résultats. Publier, oui — mesurer, encore mieux. »"
             },
             {
               "id": "EP115",
@@ -25542,7 +25656,8 @@
                 "hook": "Circuit court, très court",
                 "punchline": "Compte ce qui rentre. Et ce qui sort",
                 "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP115.mp4"
-              }
+              },
+              "heygenPrompt": "AVATAR — le chef FoodEatUp, avatar 3D, plan poitrine, fond neutre crème #FCF9E6. Regard caméra, posture ouverte, aucune gestuelle appuyée.\nVOIX — française, timbre grave, débit posé. Neuf secondes, pas une de plus.\nCADRE — vertical 9:16, 1080 × 1920. Aucun texte incrusté : les sous-titres sont ajoutés au montage.\nCONTEXTE — Le Coup de Feu, saison 4 « Se faire connaître », épisode EP115 · StockVision · 16 - Mouvements de stock.\n\nTEXTE À DIRE, mot pour mot :\n« Ce qui rentre, ce qui sort, ce qui se perd. Circuit court ou pas, la quantité doit être comptée. »"
             },
             {
               "id": "EP116",
@@ -25768,7 +25883,8 @@
                 "hook": "Ton système de commandes",
                 "punchline": "Il tient sur un mur. Il tiendrait sur un écran",
                 "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP116.mp4"
-              }
+              },
+              "heygenPrompt": "AVATAR — le chef FoodEatUp, avatar 3D, plan poitrine, fond neutre crème #FCF9E6. Regard caméra, posture ouverte, aucune gestuelle appuyée.\nVOIX — française, timbre grave, débit posé. Neuf secondes, pas une de plus.\nCADRE — vertical 9:16, 1080 × 1920. Aucun texte incrusté : les sous-titres sont ajoutés au montage.\nCONTEXTE — Le Coup de Feu, saison 4 « Se faire connaître », épisode EP116 · KDS · 1 - Créer tes postes KDS.\n\nTEXTE À DIRE, mot pour mot :\n« Tes commandes tiennent sur un écran, pas sur un mur. Chaque poste voit les siennes, dans l'ordre, avec son temps. »"
             },
             {
               "id": "EP117",
@@ -25996,7 +26112,8 @@
                 "hook": "Le défi à dix minutes",
                 "punchline": "Une fiche technique, et c'est dix minutes tous les jours",
                 "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP117.mp4"
-              }
+              },
+              "heygenPrompt": "AVATAR — le chef FoodEatUp, avatar 3D, plan poitrine, fond neutre crème #FCF9E6. Regard caméra, posture ouverte, aucune gestuelle appuyée.\nVOIX — française, timbre grave, débit posé. Neuf secondes, pas une de plus.\nCADRE — vertical 9:16, 1080 × 1920. Aucun texte incrusté : les sous-titres sont ajoutés au montage.\nCONTEXTE — Le Coup de Feu, saison 4 « Se faire connaître », épisode EP117 · StockVision · 1 - Ma carte, fiche recette.\n\nTEXTE À DIRE, mot pour mot :\n« La fiche technique fixe les quantités, les étapes et le coût. Le plat sort en dix minutes, tous les jours, par n'importe qui de ta brigade. »"
             },
             {
               "id": "EP118",
@@ -26218,7 +26335,8 @@
                 "hook": "Le brunch du dimanche",
                 "punchline": "Ils feraient la queue chez toi aussi. Encore faut-il pouvoir réserver",
                 "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP118.mp4"
-              }
+              },
+              "heygenPrompt": "AVATAR — le chef FoodEatUp, avatar 3D, plan poitrine, fond neutre crème #FCF9E6. Regard caméra, posture ouverte, aucune gestuelle appuyée.\nVOIX — française, timbre grave, débit posé. Neuf secondes, pas une de plus.\nCADRE — vertical 9:16, 1080 × 1920. Aucun texte incrusté : les sous-titres sont ajoutés au montage.\nCONTEXTE — Le Coup de Feu, saison 4 « Se faire connaître », épisode EP118 · Mon Site · 5 - Créer un site par IA.\n\nTEXTE À DIRE, mot pour mot :\n« Ton site de réservation et de commande est prêt en un clic, depuis ta carte. La file d'attente devient un carnet plein. »"
             },
             {
               "id": "EP119",
@@ -26439,7 +26557,8 @@
                 "hook": "Ta stratégie d'acquisition",
                 "punchline": "Cinq cents tracts, zéro donnée",
                 "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP119.mp4"
-              }
+              },
+              "heygenPrompt": "AVATAR — le chef FoodEatUp, avatar 3D, plan poitrine, fond neutre crème #FCF9E6. Regard caméra, posture ouverte, aucune gestuelle appuyée.\nVOIX — française, timbre grave, débit posé. Neuf secondes, pas une de plus.\nCADRE — vertical 9:16, 1080 × 1920. Aucun texte incrusté : les sous-titres sont ajoutés au montage.\nCONTEXTE — Le Coup de Feu, saison 4 « Se faire connaître », épisode EP119 · Marketing · 9 - Ciblage et consentement.\n\nTEXTE À DIRE, mot pour mot :\n« Cinq cents tracts, zéro donnée. Ici, chaque client capté entre dans ton fichier, avec son consentement, et devient une campagne. »"
             },
             {
               "id": "EP120",
@@ -26663,7 +26782,8 @@
                 "hook": "Réunion de tes dix logiciels",
                 "punchline": "Ils ne se parlent toujours pas. FoodEatUp, si",
                 "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP120.mp4"
-              }
+              },
+              "heygenPrompt": "AVATAR — le chef FoodEatUp, avatar 3D, plan poitrine, fond neutre crème #FCF9E6. Regard caméra, posture ouverte, aucune gestuelle appuyée.\nVOIX — française, timbre grave, débit posé. Neuf secondes, pas une de plus.\nCADRE — vertical 9:16, 1080 × 1920. Aucun texte incrusté : les sous-titres sont ajoutés au montage.\nCONTEXTE — Le Coup de Feu, saison 4 « Se faire connaître », épisode EP120 · PrediBot · 1 - Lire ses prévisions.\n\nTEXTE À DIRE, mot pour mot :\n« Une base, un écran, une équipe. Ta caisse, ta cuisine, ton stock et ton marketing lisent les mêmes données. Ils finissent enfin par se parler. »"
             }
           ],
           "acte": "Acte II — Le métier",
@@ -26905,7 +27025,8 @@
                 "hook": "Alors, sans oignon, mais",
                 "punchline": "Une commande complexe, ça se saisit. Pas ça se subit",
                 "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP121.mp4"
-              }
+              },
+              "heygenPrompt": "AVATAR — le chef FoodEatUp, avatar 3D, plan poitrine, fond neutre crème #FCF9E6. Regard caméra, posture ouverte, aucune gestuelle appuyée.\nVOIX — française, timbre grave, débit posé. Neuf secondes, pas une de plus.\nCADRE — vertical 9:16, 1080 × 1920. Aucun texte incrusté : les sous-titres sont ajoutés au montage.\nCONTEXTE — Le Coup de Feu, saison 5 « Le restaurant qui anticipe », épisode EP121 · Service · 3 - Envoi direct cuisine.\n\nTEXTE À DIRE, mot pour mot :\n« Les modifications se saisissent sur la commande : sans oignon, cuisson, allergie. Elles partent en cuisine avec le plat, écrites noir sur blanc. »"
             },
             {
               "id": "EP122",
@@ -27124,7 +27245,8 @@
                 "hook": "Il dit « comme d'habitude »",
                 "punchline": "Ton fichier client saurait, lui",
                 "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP122.mp4"
-              }
+              },
+              "heygenPrompt": "AVATAR — le chef FoodEatUp, avatar 3D, plan poitrine, fond neutre crème #FCF9E6. Regard caméra, posture ouverte, aucune gestuelle appuyée.\nVOIX — française, timbre grave, débit posé. Neuf secondes, pas une de plus.\nCADRE — vertical 9:16, 1080 × 1920. Aucun texte incrusté : les sous-titres sont ajoutés au montage.\nCONTEXTE — Le Coup de Feu, saison 5 « Le restaurant qui anticipe », épisode EP122 · Marketing · 20 - Vue client fidélité.\n\nTEXTE À DIRE, mot pour mot :\n« La fiche client te dit qui il est, ce qu'il commande et quand il est venu la dernière fois. « Comme d'habitude » devient une information, pas un bluff. »"
             },
             {
               "id": "EP123",
@@ -27352,7 +27474,8 @@
                 "hook": "Il annonce ça au dessert",
                 "punchline": "Les régimes et les allergènes, ça se note à la réservation",
                 "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP123.mp4"
-              }
+              },
+              "heygenPrompt": "AVATAR — le chef FoodEatUp, avatar 3D, plan poitrine, fond neutre crème #FCF9E6. Regard caméra, posture ouverte, aucune gestuelle appuyée.\nVOIX — française, timbre grave, débit posé. Neuf secondes, pas une de plus.\nCADRE — vertical 9:16, 1080 × 1920. Aucun texte incrusté : les sous-titres sont ajoutés au montage.\nCONTEXTE — Le Coup de Feu, saison 5 « Le restaurant qui anticipe », épisode EP123 · StockVision · 1 - Ma carte, allergènes.\n\nTEXTE À DIRE, mot pour mot :\n« Les allergènes et les régimes sont portés par ta carte et par la réservation. L'info arrive en cuisine avant l'entrée, pas au dessert. »"
             },
             {
               "id": "EP124",
@@ -27562,7 +27685,8 @@
                 "hook": "Il est minuit dix",
                 "punchline": "Le service a une fin. Ton logiciel devrait le savoir",
                 "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP124.mp4"
-              }
+              },
+              "heygenPrompt": "AVATAR — le chef FoodEatUp, avatar 3D, plan poitrine, fond neutre crème #FCF9E6. Regard caméra, posture ouverte, aucune gestuelle appuyée.\nVOIX — française, timbre grave, débit posé. Neuf secondes, pas une de plus.\nCADRE — vertical 9:16, 1080 × 1920. Aucun texte incrusté : les sous-titres sont ajoutés au montage.\nCONTEXTE — Le Coup de Feu, saison 5 « Le restaurant qui anticipe », épisode EP124 · Caisse POS · 6 - Clôturer sa caisse.\n\nTEXTE À DIRE, mot pour mot :\n« Le service a une fin : tu clôtures, tu comptes, tu archives. L'écran te dit quand la journée est vraiment finie. »"
             },
             {
               "id": "EP125",
@@ -27781,7 +27905,8 @@
                 "hook": "Je serais mieux là, non ",
                 "punchline": "Ton plan de salle, c'est toi qui le décides",
                 "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP125.mp4"
-              }
+              },
+              "heygenPrompt": "AVATAR — le chef FoodEatUp, avatar 3D, plan poitrine, fond neutre crème #FCF9E6. Regard caméra, posture ouverte, aucune gestuelle appuyée.\nVOIX — française, timbre grave, débit posé. Neuf secondes, pas une de plus.\nCADRE — vertical 9:16, 1080 × 1920. Aucun texte incrusté : les sous-titres sont ajoutés au montage.\nCONTEXTE — Le Coup de Feu, saison 5 « Le restaurant qui anticipe », épisode EP125 · Caroline · 3 - Dessiner son plan de salle.\n\nTEXTE À DIRE, mot pour mot :\n« Ton plan de salle est le tien : zones, tables, capacités, blocages. Tu places, tu bloques, tu libères en un geste. »"
             },
             {
               "id": "EP126",
@@ -27991,7 +28116,8 @@
                 "hook": "On partage, c'est plus convivial",
                 "punchline": "Partage l'assiette. Pas l'addition, elle se divise toute seule",
                 "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP126.mp4"
-              }
+              },
+              "heygenPrompt": "AVATAR — le chef FoodEatUp, avatar 3D, plan poitrine, fond neutre crème #FCF9E6. Regard caméra, posture ouverte, aucune gestuelle appuyée.\nVOIX — française, timbre grave, débit posé. Neuf secondes, pas une de plus.\nCADRE — vertical 9:16, 1080 × 1920. Aucun texte incrusté : les sous-titres sont ajoutés au montage.\nCONTEXTE — Le Coup de Feu, saison 5 « Le restaurant qui anticipe », épisode EP126 · Caisse POS · 5 - Séparer une addition.\n\nTEXTE À DIRE, mot pour mot :\n« Tu partages l'addition par article ou par personne. Ce qui reste dû s'affiche en direct. Personne ne recompte à la main. »"
             },
             {
               "id": "EP127",
@@ -28214,7 +28340,8 @@
                 "hook": "Bonne année à tout le monde",
                 "punchline": "Sauf à celui qui gère les deux cents couverts",
                 "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP127.mp4"
-              }
+              },
+              "heygenPrompt": "AVATAR — le chef FoodEatUp, avatar 3D, plan poitrine, fond neutre crème #FCF9E6. Regard caméra, posture ouverte, aucune gestuelle appuyée.\nVOIX — française, timbre grave, débit posé. Neuf secondes, pas une de plus.\nCADRE — vertical 9:16, 1080 × 1920. Aucun texte incrusté : les sous-titres sont ajoutés au montage.\nCONTEXTE — Le Coup de Feu, saison 5 « Le restaurant qui anticipe », épisode EP127 · Réservation · 1 - Réservations du jour.\n\nTEXTE À DIRE, mot pour mot :\n« Deux cents couverts un 31 décembre, ça se pilote : arrivées échelonnées, tables assignées, cuisine prévenue. La soirée reste une fête. »"
             },
             {
               "id": "EP128",
@@ -28438,7 +28565,8 @@
                 "hook": "Trente couverts en plus, ça rentre",
                 "punchline": "Ça rentre. La question, c'est si ça revient",
                 "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP128.mp4"
-              }
+              },
+              "heygenPrompt": "AVATAR — le chef FoodEatUp, avatar 3D, plan poitrine, fond neutre crème #FCF9E6. Regard caméra, posture ouverte, aucune gestuelle appuyée.\nVOIX — française, timbre grave, débit posé. Neuf secondes, pas une de plus.\nCADRE — vertical 9:16, 1080 × 1920. Aucun texte incrusté : les sous-titres sont ajoutés au montage.\nCONTEXTE — Le Coup de Feu, saison 5 « Le restaurant qui anticipe », épisode EP128 · Réservation · 4 - Placer un client à table.\n\nTEXTE À DIRE, mot pour mot :\n« Tu places tes clients selon la vraie capacité de ta salle. Serrer, ça se décide — ça ne se subit pas un soir de Saint-Valentin. »"
             },
             {
               "id": "EP129",
@@ -28656,7 +28784,8 @@
                 "hook": "Premier rayon de soleil de l'année",
                 "punchline": "Ta terrasse ouvre. Ton service doit suivre",
                 "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP129.mp4"
-              }
+              },
+              "heygenPrompt": "AVATAR — le chef FoodEatUp, avatar 3D, plan poitrine, fond neutre crème #FCF9E6. Regard caméra, posture ouverte, aucune gestuelle appuyée.\nVOIX — française, timbre grave, débit posé. Neuf secondes, pas une de plus.\nCADRE — vertical 9:16, 1080 × 1920. Aucun texte incrusté : les sous-titres sont ajoutés au montage.\nCONTEXTE — Le Coup de Feu, saison 5 « Le restaurant qui anticipe », épisode EP129 · Caroline · 4 - Gérer ses tables.\n\nTEXTE À DIRE, mot pour mot :\n« Tu ouvres ta terrasse dans le logiciel : tables ajoutées, capacité mise à jour, réservations ouvertes dessus. Le premier rayon de soleil est rentable. »"
             },
             {
               "id": "EP130",
@@ -28876,7 +29005,8 @@
                 "hook": "21 juin. Devant ta porte",
                 "punchline": "Autant que les gens sachent que tu es ouvert",
                 "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP130.mp4"
-              }
+              },
+              "heygenPrompt": "AVATAR — le chef FoodEatUp, avatar 3D, plan poitrine, fond neutre crème #FCF9E6. Regard caméra, posture ouverte, aucune gestuelle appuyée.\nVOIX — française, timbre grave, débit posé. Neuf secondes, pas une de plus.\nCADRE — vertical 9:16, 1080 × 1920. Aucun texte incrusté : les sous-titres sont ajoutés au montage.\nCONTEXTE — Le Coup de Feu, saison 5 « Le restaurant qui anticipe », épisode EP130 · Marketing · 7 - Ton agenda marketing.\n\nTEXTE À DIRE, mot pour mot :\n« Ton agenda marketing connaît les temps forts de ton quartier. Tu prépares l'événement avant qu'il soit devant ta porte. »"
             },
             {
               "id": "EP131",
@@ -29102,7 +29232,8 @@
                 "hook": "1er septembre. Deux absents",
                 "punchline": "Un planning, ça se prépare avant la rentrée",
                 "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP131.mp4"
-              }
+              },
+              "heygenPrompt": "AVATAR — le chef FoodEatUp, avatar 3D, plan poitrine, fond neutre crème #FCF9E6. Regard caméra, posture ouverte, aucune gestuelle appuyée.\nVOIX — française, timbre grave, débit posé. Neuf secondes, pas une de plus.\nCADRE — vertical 9:16, 1080 × 1920. Aucun texte incrusté : les sous-titres sont ajoutés au montage.\nCONTEXTE — Le Coup de Feu, saison 5 « Le restaurant qui anticipe », épisode EP131 · Équipe & Planning · planning de la semaine.\n\nTEXTE À DIRE, mot pour mot :\n« Tu construis la semaine de rentrée en amont : shifts posés, congés validés, coût affiché. Le premier septembre, tu n'es pas seul en cuisine. »"
             },
             {
               "id": "EP132",
@@ -29323,7 +29454,8 @@
                 "hook": "Tout le quartier est fermé",
                 "punchline": "Sauf toi. Encore faut-il qu'on te trouve en ligne",
                 "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP132.mp4"
-              }
+              },
+              "heygenPrompt": "AVATAR — le chef FoodEatUp, avatar 3D, plan poitrine, fond neutre crème #FCF9E6. Regard caméra, posture ouverte, aucune gestuelle appuyée.\nVOIX — française, timbre grave, débit posé. Neuf secondes, pas une de plus.\nCADRE — vertical 9:16, 1080 × 1920. Aucun texte incrusté : les sous-titres sont ajoutés au montage.\nCONTEXTE — Le Coup de Feu, saison 5 « Le restaurant qui anticipe », épisode EP132 · Mon Site · 6 - Réservations et horaires.\n\nTEXTE À DIRE, mot pour mot :\n« Tes horaires d'ouverture sont à jour partout : site, réservation, Google. Quand tout le quartier ferme, on te trouve. »"
             },
             {
               "id": "EP133",
@@ -29533,7 +29665,8 @@
                 "hook": "Une minute pour encaisser trois tournées",
                 "punchline": "Ta caisse doit tenir le rythme",
                 "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP133.mp4"
-              }
+              },
+              "heygenPrompt": "AVATAR — le chef FoodEatUp, avatar 3D, plan poitrine, fond neutre crème #FCF9E6. Regard caméra, posture ouverte, aucune gestuelle appuyée.\nVOIX — française, timbre grave, débit posé. Neuf secondes, pas une de plus.\nCADRE — vertical 9:16, 1080 × 1920. Aucun texte incrusté : les sous-titres sont ajoutés au montage.\nCONTEXTE — Le Coup de Feu, saison 5 « Le restaurant qui anticipe », épisode EP133 · Caisse POS · 3 - Encaisser une commande.\n\nTEXTE À DIRE, mot pour mot :\n« Trois tournées en une minute : tu encaisses au comptoir ou à table, TPE relié, ticket envoyé. Ta caisse tient le rythme du match. »"
             },
             {
               "id": "EP134",
@@ -29761,7 +29894,8 @@
                 "hook": "Sept heures de service. Vue d'en bas",
                 "punchline": "Elle aussi a une température à respecter",
                 "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP134.mp4"
-              }
+              },
+              "heygenPrompt": "AVATAR — le chef FoodEatUp, avatar 3D, plan poitrine, fond neutre crème #FCF9E6. Regard caméra, posture ouverte, aucune gestuelle appuyée.\nVOIX — française, timbre grave, débit posé. Neuf secondes, pas une de plus.\nCADRE — vertical 9:16, 1080 × 1920. Aucun texte incrusté : les sous-titres sont ajoutés au montage.\nCONTEXTE — Le Coup de Feu, saison 5 « Le restaurant qui anticipe », épisode EP134 · HACCP · relevé de température.\n\nTEXTE À DIRE, mot pour mot :\n« L'huile et les frigos ont leurs seuils. Le relevé se fait en dix secondes, il est daté et gardé. Ta friteuse aussi a une conformité. »"
             },
             {
               "id": "EP135",
@@ -29984,7 +30118,8 @@
                 "hook": "Toutes tes réservations du soir",
                 "punchline": "Sur du papier. Vraiment ",
                 "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP135.mp4"
-              }
+              },
+              "heygenPrompt": "AVATAR — le chef FoodEatUp, avatar 3D, plan poitrine, fond neutre crème #FCF9E6. Regard caméra, posture ouverte, aucune gestuelle appuyée.\nVOIX — française, timbre grave, débit posé. Neuf secondes, pas une de plus.\nCADRE — vertical 9:16, 1080 × 1920. Aucun texte incrusté : les sous-titres sont ajoutés au montage.\nCONTEXTE — Le Coup de Feu, saison 5 « Le restaurant qui anticipe », épisode EP135 · Réservation · 1 - Réservations du jour.\n\nTEXTE À DIRE, mot pour mot :\n« Tes réservations du soir sont ici, pas sur un carnet taché de café : contact, couverts, table, historique. Rien ne s'efface. »"
             },
             {
               "id": "EP136",
@@ -30210,7 +30345,8 @@
                 "hook": "Deux minutes par cycle. Quatre-vingts cycles",
                 "punchline": "Le service, c'est ça aussi",
                 "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP136.mp4"
-              }
+              },
+              "heygenPrompt": "AVATAR — le chef FoodEatUp, avatar 3D, plan poitrine, fond neutre crème #FCF9E6. Regard caméra, posture ouverte, aucune gestuelle appuyée.\nVOIX — française, timbre grave, débit posé. Neuf secondes, pas une de plus.\nCADRE — vertical 9:16, 1080 × 1920. Aucun texte incrusté : les sous-titres sont ajoutés au montage.\nCONTEXTE — Le Coup de Feu, saison 5 « Le restaurant qui anticipe », épisode EP136 · Service · 1 - Commandes multi-canaux.\n\nTEXTE À DIRE, mot pour mot :\n« Le service, c'est cent gestes invisibles. FoodEatUp en enregistre la trace pour que tu saches où part vraiment ton temps. »"
             },
             {
               "id": "EP137",
@@ -30420,7 +30556,8 @@
                 "hook": "Deux cent quarante cafés. Aujourd'hui",
                 "punchline": "Combien encaissés ? Tu es sûr ",
                 "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP137.mp4"
-              }
+              },
+              "heygenPrompt": "AVATAR — le chef FoodEatUp, avatar 3D, plan poitrine, fond neutre crème #FCF9E6. Regard caméra, posture ouverte, aucune gestuelle appuyée.\nVOIX — française, timbre grave, débit posé. Neuf secondes, pas une de plus.\nCADRE — vertical 9:16, 1080 × 1920. Aucun texte incrusté : les sous-titres sont ajoutés au montage.\nCONTEXTE — Le Coup de Feu, saison 5 « Le restaurant qui anticipe », épisode EP137 · Caisse POS · 3 - Encaisser une commande.\n\nTEXTE À DIRE, mot pour mot :\n« Deux cent quarante cafés, deux cent quarante lignes encaissées. Tu compares le vendu et l'encaissé, à l'unité près. »"
             },
             {
               "id": "EP138",
@@ -30642,7 +30779,8 @@
                 "hook": "Quarante-cinq secondes de vie",
                 "punchline": "Chaque assiette compte. Compte-les",
                 "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP138.mp4"
-              }
+              },
+              "heygenPrompt": "AVATAR — le chef FoodEatUp, avatar 3D, plan poitrine, fond neutre crème #FCF9E6. Regard caméra, posture ouverte, aucune gestuelle appuyée.\nVOIX — française, timbre grave, débit posé. Neuf secondes, pas une de plus.\nCADRE — vertical 9:16, 1080 × 1920. Aucun texte incrusté : les sous-titres sont ajoutés au montage.\nCONTEXTE — Le Coup de Feu, saison 5 « Le restaurant qui anticipe », épisode EP138 · KDS · 3 - Gérer le KDS en direct.\n\nTEXTE À DIRE, mot pour mot :\n« De l'envoi au pass, chaque plat a son statut et son chrono. Tu comptes tes assiettes, tu ne les devines pas. »"
             },
             {
               "id": "EP139",
@@ -30867,7 +31005,8 @@
                 "hook": "20 h 30. Le coup de feu",
                 "punchline": "Sois équipé, pas héroïque",
                 "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP139.mp4"
-              }
+              },
+              "heygenPrompt": "AVATAR — le chef FoodEatUp, avatar 3D, plan poitrine, fond neutre crème #FCF9E6. Regard caméra, posture ouverte, aucune gestuelle appuyée.\nVOIX — française, timbre grave, débit posé. Neuf secondes, pas une de plus.\nCADRE — vertical 9:16, 1080 × 1920. Aucun texte incrusté : les sous-titres sont ajoutés au montage.\nCONTEXTE — Le Coup de Feu, saison 5 « Le restaurant qui anticipe », épisode EP139 · KDS · 2 - Vue KDS par poste.\n\nTEXTE À DIRE, mot pour mot :\n« Pendant le coup de feu, tu vois la charge de chaque poste. Tu envoies où il y a de la place. Être équipé, c'est ça. »"
             },
             {
               "id": "EP140",
@@ -31095,7 +31234,8 @@
                 "hook": "Ton inventaire, la nuit",
                 "punchline": "Ce qui disparaît finit toujours par se voir",
                 "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP140.mp4"
-              }
+              },
+              "heygenPrompt": "AVATAR — le chef FoodEatUp, avatar 3D, plan poitrine, fond neutre crème #FCF9E6. Regard caméra, posture ouverte, aucune gestuelle appuyée.\nVOIX — française, timbre grave, débit posé. Neuf secondes, pas une de plus.\nCADRE — vertical 9:16, 1080 × 1920. Aucun texte incrusté : les sous-titres sont ajoutés au montage.\nCONTEXTE — Le Coup de Feu, saison 5 « Le restaurant qui anticipe », épisode EP140 · StockVision · 16 - Mouvements de stock.\n\nTEXTE À DIRE, mot pour mot :\n« L'inventaire est daté, signé, comparé au théorique. Ce qui disparaît la nuit finit toujours par apparaître dans l'écart. »"
             },
             {
               "id": "EP141",
@@ -31319,7 +31459,8 @@
                 "hook": "Table 6 depuis 22 minutes",
                 "punchline": "Un pilote automatique, ça existe aussi en cuisine",
                 "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP141.mp4"
-              }
+              },
+              "heygenPrompt": "AVATAR — le chef FoodEatUp, avatar 3D, plan poitrine, fond neutre crème #FCF9E6. Regard caméra, posture ouverte, aucune gestuelle appuyée.\nVOIX — française, timbre grave, débit posé. Neuf secondes, pas une de plus.\nCADRE — vertical 9:16, 1080 × 1920. Aucun texte incrusté : les sous-titres sont ajoutés au montage.\nCONTEXTE — Le Coup de Feu, saison 5 « Le restaurant qui anticipe », épisode EP141 · PrediBot · 3 - Parler à PrediBot.\n\nTEXTE À DIRE, mot pour mot :\n« Tu demandes, PrediBot répond avec tes vraies données : la table en attente, la production à lancer, l'alerte à traiter. Le pilote automatique existe. »"
             },
             {
               "id": "EP142",
@@ -31544,7 +31685,8 @@
                 "hook": "Qui envoie le plat du jour",
                 "punchline": "Répartis les postes avant le service, pas pendant",
                 "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP142.mp4"
-              }
+              },
+              "heygenPrompt": "AVATAR — le chef FoodEatUp, avatar 3D, plan poitrine, fond neutre crème #FCF9E6. Regard caméra, posture ouverte, aucune gestuelle appuyée.\nVOIX — française, timbre grave, débit posé. Neuf secondes, pas une de plus.\nCADRE — vertical 9:16, 1080 × 1920. Aucun texte incrusté : les sous-titres sont ajoutés au montage.\nCONTEXTE — Le Coup de Feu, saison 5 « Le restaurant qui anticipe », épisode EP142 · Équipe & Planning · affectation des postes.\n\nTEXTE À DIRE, mot pour mot :\n« Les postes sont répartis avant le service, pas pendant. Chacun sait ce qu'il envoie, personne ne dégaine sa spatule pour le savoir. »"
             },
             {
               "id": "EP143",
@@ -31767,7 +31909,8 @@
                 "hook": "Une seule commande",
                 "punchline": "Deux cents parts. Anticipe-les",
                 "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP143.mp4"
-              }
+              },
+              "heygenPrompt": "AVATAR — le chef FoodEatUp, avatar 3D, plan poitrine, fond neutre crème #FCF9E6. Regard caméra, posture ouverte, aucune gestuelle appuyée.\nVOIX — française, timbre grave, débit posé. Neuf secondes, pas une de plus.\nCADRE — vertical 9:16, 1080 × 1920. Aucun texte incrusté : les sous-titres sont ajoutés au montage.\nCONTEXTE — Le Coup de Feu, saison 5 « Le restaurant qui anticipe », épisode EP143 · Comptabilité · devis.\n\nTEXTE À DIRE, mot pour mot :\n« Deux cents parts, ça commence par un devis : quantités, prix, marge. Il se transforme en commande, puis en facture, sans ressaisie. »"
             },
             {
               "id": "EP144",
@@ -31986,7 +32129,8 @@
                 "hook": "Un avis une étoile",
                 "punchline": "Réponds-y avant qu'il fasse jurisprudence",
                 "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP144.mp4"
-              }
+              },
+              "heygenPrompt": "AVATAR — le chef FoodEatUp, avatar 3D, plan poitrine, fond neutre crème #FCF9E6. Regard caméra, posture ouverte, aucune gestuelle appuyée.\nVOIX — française, timbre grave, débit posé. Neuf secondes, pas une de plus.\nCADRE — vertical 9:16, 1080 × 1920. Aucun texte incrusté : les sous-titres sont ajoutés au montage.\nCONTEXTE — Le Coup de Feu, saison 5 « Le restaurant qui anticipe », épisode EP144 · Marketing · 3 - Répondre aux avis.\n\nTEXTE À DIRE, mot pour mot :\n« Un avis une étoile, tu le vois tout de suite et tu réponds depuis l'outil. Une réponse rapide vaut mieux qu'un long procès. »"
             },
             {
               "id": "EP145",
@@ -32210,7 +32354,8 @@
                 "hook": "Le gérant, dans son habitat naturel",
                 "punchline": "Espèce en voie d'épuisement",
                 "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP145.mp4"
-              }
+              },
+              "heygenPrompt": "AVATAR — le chef FoodEatUp, avatar 3D, plan poitrine, fond neutre crème #FCF9E6. Regard caméra, posture ouverte, aucune gestuelle appuyée.\nVOIX — française, timbre grave, débit posé. Neuf secondes, pas une de plus.\nCADRE — vertical 9:16, 1080 × 1920. Aucun texte incrusté : les sous-titres sont ajoutés au montage.\nCONTEXTE — Le Coup de Feu, saison 5 « Le restaurant qui anticipe », épisode EP145 · PrediBot · 1 - Lire ses prévisions.\n\nTEXTE À DIRE, mot pour mot :\n« Ton point du jour en un écran : ce qui arrive, ce qui manque, ce qui coince. L'espèce « gérant épuisé » n'est pas obligée de survivre comme ça. »"
             },
             {
               "id": "EP146",
@@ -32432,7 +32577,8 @@
                 "hook": "Quarante bougies. Une seule mauvaise idée",
                 "punchline": "Les gros événements, ça se prépare en amont",
                 "url": null
-              }
+              },
+              "heygenPrompt": "AVATAR — le chef FoodEatUp, avatar 3D, plan poitrine, fond neutre crème #FCF9E6. Regard caméra, posture ouverte, aucune gestuelle appuyée.\nVOIX — française, timbre grave, débit posé. Neuf secondes, pas une de plus.\nCADRE — vertical 9:16, 1080 × 1920. Aucun texte incrusté : les sous-titres sont ajoutés au montage.\nCONTEXTE — Le Coup de Feu, saison 5 « Le restaurant qui anticipe », épisode EP146 · Comptabilité · événements privés.\n\nTEXTE À DIRE, mot pour mot :\n« Un événement, c'est une demande, un devis, une réservation et une facture. Enchaînés. Rien ne se prépare la veille au soir. »"
             },
             {
               "id": "EP147",
@@ -32655,7 +32801,8 @@
                 "hook": "Douze mille euros de prestation",
                 "punchline": "Sur un devis, pas sur un post-it",
                 "url": null
-              }
+              },
+              "heygenPrompt": "AVATAR — le chef FoodEatUp, avatar 3D, plan poitrine, fond neutre crème #FCF9E6. Regard caméra, posture ouverte, aucune gestuelle appuyée.\nVOIX — française, timbre grave, débit posé. Neuf secondes, pas une de plus.\nCADRE — vertical 9:16, 1080 × 1920. Aucun texte incrusté : les sous-titres sont ajoutés au montage.\nCONTEXTE — Le Coup de Feu, saison 5 « Le restaurant qui anticipe », épisode EP147 · Comptabilité · facture et devis.\n\nTEXTE À DIRE, mot pour mot :\n« Douze mille euros de prestation ne tiennent pas sur un post-it. Devis signé, acompte suivi, facture éditée : tout est dans le dossier. »"
             },
             {
               "id": "EP148",
@@ -32878,7 +33025,8 @@
                 "hook": "Trois plateformes. Une place",
                 "punchline": "Centralise les commandes, pas les embouteillages",
                 "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP148.mp4"
-              }
+              },
+              "heygenPrompt": "AVATAR — le chef FoodEatUp, avatar 3D, plan poitrine, fond neutre crème #FCF9E6. Regard caméra, posture ouverte, aucune gestuelle appuyée.\nVOIX — française, timbre grave, débit posé. Neuf secondes, pas une de plus.\nCADRE — vertical 9:16, 1080 × 1920. Aucun texte incrusté : les sous-titres sont ajoutés au montage.\nCONTEXTE — Le Coup de Feu, saison 5 « Le restaurant qui anticipe », épisode EP148 · HubRise · 3 - Synchro caisse tierce.\n\nTEXTE À DIRE, mot pour mot :\n« Trois plateformes, une seule file. Les commandes arrivent centralisées, avec leur horaire de retrait. Tes livreurs ne se croisent plus au même moment. »"
             },
             {
               "id": "EP149",
@@ -33099,7 +33247,8 @@
                 "hook": "Ta salle a un truc que personne d'autre n'a",
                 "punchline": "Fais-le savoir",
                 "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP149.mp4"
-              }
+              },
+              "heygenPrompt": "AVATAR — le chef FoodEatUp, avatar 3D, plan poitrine, fond neutre crème #FCF9E6. Regard caméra, posture ouverte, aucune gestuelle appuyée.\nVOIX — française, timbre grave, débit posé. Neuf secondes, pas une de plus.\nCADRE — vertical 9:16, 1080 × 1920. Aucun texte incrusté : les sous-titres sont ajoutés au montage.\nCONTEXTE — Le Coup de Feu, saison 5 « Le restaurant qui anticipe », épisode EP149 · Marketing · 5 - Lancer une campagne.\n\nTEXTE À DIRE, mot pour mot :\n« Ta salle a quelque chose d'unique : fais-le savoir. Campagne créée, segment choisi, résultats mesurés, CA attribué. »"
             },
             {
               "id": "EP150",
@@ -33323,7 +33472,8 @@
                 "hook": "Cent cinquante épisodes",
                 "punchline": "Une seule promesse : ton restaurant, avant, pendant et après le service",
                 "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP150.mp4"
-              }
+              },
+              "heygenPrompt": "AVATAR — le chef FoodEatUp, avatar 3D, plan poitrine, fond neutre crème #FCF9E6. Regard caméra, posture ouverte, aucune gestuelle appuyée.\nVOIX — française, timbre grave, débit posé. Neuf secondes, pas une de plus.\nCADRE — vertical 9:16, 1080 × 1920. Aucun texte incrusté : les sous-titres sont ajoutés au montage.\nCONTEXTE — Le Coup de Feu, saison 5 « Le restaurant qui anticipe », épisode EP150 · PrediBot · 1 - Lire ses prévisions.\n\nTEXTE À DIRE, mot pour mot :\n« Cent cinquante épisodes pour dire une chose : ton restaurant tient dans un seul outil, avant, pendant et après ton service. Le reste, c'est du bruit. »"
             }
           ],
           "acte": "Acte II — Le métier",
@@ -64591,7 +64741,8 @@
                   "lienCta": "https://site.foodeatup.com/",
                   "titre": "Sept heures, et personne — Il était une fois un restaurant 1/35"
                 }
-              }
+              },
+              "heygenPrompt": "AVATAR — le chef FoodEatUp, avatar 3D, plan poitrine, fond neutre crème #FCF9E6. Regard caméra, posture ouverte, aucune gestuelle appuyée.\nVOIX — française, timbre grave, débit posé. Neuf secondes, pas une de plus.\nCADRE — vertical 9:16, 1080 × 1920. Aucun texte incrusté : les sous-titres sont ajoutés au montage.\nCONTEXTE — UpEatFood, saison 1 « En cuisine », épisode EP501 · KDS · Il était une fois.\n\nTEXTE À DIRE, mot pour mot :\n« Sept heures du matin. Le chef ouvre, allume, relève les températures, reçoit la livraison et décide la carte du jour sur ce qui est arrivé. »"
             },
             {
               "id": "EP502",
@@ -64834,7 +64985,8 @@
                   "lienCta": "https://site.foodeatup.com/",
                   "titre": "Le carnet, le tableau, la tête — Il était une fois un restaurant 2/35"
                 }
-              }
+              },
+              "heygenPrompt": "AVATAR — le chef FoodEatUp, avatar 3D, plan poitrine, fond neutre crème #FCF9E6. Regard caméra, posture ouverte, aucune gestuelle appuyée.\nVOIX — française, timbre grave, débit posé. Neuf secondes, pas une de plus.\nCADRE — vertical 9:16, 1080 × 1920. Aucun texte incrusté : les sous-titres sont ajoutés au montage.\nCONTEXTE — UpEatFood, saison 1 « En cuisine », épisode EP502 · KDS · Ce qui coince.\n\nTEXTE À DIRE, mot pour mot :\n« Un carnet pour les livraisons, un tableau blanc pour la production, et le reste dans la tête. »"
             },
             {
               "id": "EP503",
@@ -65077,7 +65229,8 @@
                   "lienCta": "https://site.foodeatup.com/",
                   "titre": "Vendredi, le bac vide — Il était une fois un restaurant 3/35"
                 }
-              }
+              },
+              "heygenPrompt": "AVATAR — le chef FoodEatUp, avatar 3D, plan poitrine, fond neutre crème #FCF9E6. Regard caméra, posture ouverte, aucune gestuelle appuyée.\nVOIX — française, timbre grave, débit posé. Neuf secondes, pas une de plus.\nCADRE — vertical 9:16, 1080 × 1920. Aucun texte incrusté : les sous-titres sont ajoutés au montage.\nCONTEXTE — UpEatFood, saison 1 « En cuisine », épisode EP503 · KDS · Le soir où ça casse.\n\nTEXTE À DIRE, mot pour mot :\n« Dix-neuf heures quarante, plein service : le bac du plat signature est vide. Il l'avait annoncé le matin. Personne n'avait de quoi le vérifier. »"
             },
             {
               "id": "EP504",
@@ -65320,7 +65473,8 @@
                   "lienCta": "https://site.foodeatup.com/",
                   "titre": "Une phrase, un matin — Il était une fois un restaurant 4/35"
                 }
-              }
+              },
+              "heygenPrompt": "AVATAR — le chef FoodEatUp, avatar 3D, plan poitrine, fond neutre crème #FCF9E6. Regard caméra, posture ouverte, aucune gestuelle appuyée.\nVOIX — française, timbre grave, débit posé. Neuf secondes, pas une de plus.\nCADRE — vertical 9:16, 1080 × 1920. Aucun texte incrusté : les sous-titres sont ajoutés au montage.\nCONTEXTE — UpEatFood, saison 1 « En cuisine », épisode EP504 · KDS · La bascule.\n\nTEXTE À DIRE, mot pour mot :\n« Même cuisine, même heure. Il ne cherche plus dans le carnet : il demande ce qui manque, et la réponse arrive avant qu'il ait fini son café. »"
             },
             {
               "id": "EP505",
@@ -65563,7 +65717,8 @@
                   "lienCta": "https://site.foodeatup.com/",
                   "titre": "Le plat, et ce qu'il coûte — Il était une fois un restaurant 5/35"
                 }
-              }
+              },
+              "heygenPrompt": "AVATAR — le chef FoodEatUp, avatar 3D, plan poitrine, fond neutre crème #FCF9E6. Regard caméra, posture ouverte, aucune gestuelle appuyée.\nVOIX — française, timbre grave, débit posé. Neuf secondes, pas une de plus.\nCADRE — vertical 9:16, 1080 × 1920. Aucun texte incrusté : les sous-titres sont ajoutés au montage.\nCONTEXTE — UpEatFood, saison 1 « En cuisine », épisode EP505 · KDS · Le même geste, autrement.\n\nTEXTE À DIRE, mot pour mot :\n« La fiche technique dit ce qu'il y a dans le plat, ce qu'il coûte et ce qu'il rapporte. »"
             },
             {
               "id": "EP506",
@@ -65806,7 +65961,8 @@
                   "lienCta": "https://site.foodeatup.com/",
                   "titre": "Il ferme, et il sait — Il était une fois un restaurant 6/35"
                 }
-              }
+              },
+              "heygenPrompt": "AVATAR — le chef FoodEatUp, avatar 3D, plan poitrine, fond neutre crème #FCF9E6. Regard caméra, posture ouverte, aucune gestuelle appuyée.\nVOIX — française, timbre grave, débit posé. Neuf secondes, pas une de plus.\nCADRE — vertical 9:16, 1080 × 1920. Aucun texte incrusté : les sous-titres sont ajoutés au montage.\nCONTEXTE — UpEatFood, saison 1 « En cuisine », épisode EP506 · KDS · Ce qui a changé.\n\nTEXTE À DIRE, mot pour mot :\n« La cuisine est rangée, les pertes saisies, le nettoyage photographié. La marge du service s'affiche seule. Il ferme en sachant, au lieu de fermer en espérant. »"
             }
           ],
           "acte": "Acte I — Le film",
@@ -66067,7 +66223,8 @@
                   "lienCta": "https://site.foodeatup.com/",
                   "titre": "Six tables, une mémoire — Il était une fois un restaurant 7/35"
                 }
-              }
+              },
+              "heygenPrompt": "AVATAR — le chef FoodEatUp, avatar 3D, plan poitrine, fond neutre crème #FCF9E6. Regard caméra, posture ouverte, aucune gestuelle appuyée.\nVOIX — française, timbre grave, débit posé. Neuf secondes, pas une de plus.\nCADRE — vertical 9:16, 1080 × 1920. Aucun texte incrusté : les sous-titres sont ajoutés au montage.\nCONTEXTE — UpEatFood, saison 2 « En salle », épisode EP507 · Réservation · Il était une fois.\n\nTEXTE À DIRE, mot pour mot :\n« Le serveur connaît les allergies, les habitudes, le prénom du fils. Tout est dans sa tête, et rien n'est écrit nulle part. »"
             },
             {
               "id": "EP508",
@@ -66310,7 +66467,8 @@
                   "lienCta": "https://site.foodeatup.com/",
                   "titre": "Le téléphone qui sonne dans le vide — Il était une fois un restaurant 8/35"
                 }
-              }
+              },
+              "heygenPrompt": "AVATAR — le chef FoodEatUp, avatar 3D, plan poitrine, fond neutre crème #FCF9E6. Regard caméra, posture ouverte, aucune gestuelle appuyée.\nVOIX — française, timbre grave, débit posé. Neuf secondes, pas une de plus.\nCADRE — vertical 9:16, 1080 × 1920. Aucun texte incrusté : les sous-titres sont ajoutés au montage.\nCONTEXTE — UpEatFood, saison 2 « En salle », épisode EP508 · Réservation · Ce qui coince.\n\nTEXTE À DIRE, mot pour mot :\n« Le téléphone, le site, la plateforme, la porte. Quatre canaux de réservation qui n'ont aucun moyen de savoir ce que les trois autres ont accepté. »"
             },
             {
               "id": "EP509",
@@ -66553,7 +66711,8 @@
                   "lienCta": "https://site.foodeatup.com/",
                   "titre": "La table de douze qui n'existait pas — Il était une fois un restaurant 9/35"
                 }
-              }
+              },
+              "heygenPrompt": "AVATAR — le chef FoodEatUp, avatar 3D, plan poitrine, fond neutre crème #FCF9E6. Regard caméra, posture ouverte, aucune gestuelle appuyée.\nVOIX — française, timbre grave, débit posé. Neuf secondes, pas une de plus.\nCADRE — vertical 9:16, 1080 × 1920. Aucun texte incrusté : les sous-titres sont ajoutés au montage.\nCONTEXTE — UpEatFood, saison 2 « En salle », épisode EP509 · Réservation · Le soir où ça casse.\n\nTEXTE À DIRE, mot pour mot :\n« Une table de douze acceptée au téléphone trois jours plus tôt, jamais reportée dans le plan de salle. Elle arrive à vingt heures. La salle est pleine. »"
             },
             {
               "id": "EP510",
@@ -66796,7 +66955,8 @@
                   "lienCta": "https://site.foodeatup.com/",
                   "titre": "Le plan de salle qui se remplit tout seul — Il était une fois un restaurant 10/35"
                 }
-              }
+              },
+              "heygenPrompt": "AVATAR — le chef FoodEatUp, avatar 3D, plan poitrine, fond neutre crème #FCF9E6. Regard caméra, posture ouverte, aucune gestuelle appuyée.\nVOIX — française, timbre grave, débit posé. Neuf secondes, pas une de plus.\nCADRE — vertical 9:16, 1080 × 1920. Aucun texte incrusté : les sous-titres sont ajoutés au montage.\nCONTEXTE — UpEatFood, saison 2 « En salle », épisode EP510 · Réservation · La bascule.\n\nTEXTE À DIRE, mot pour mot :\n« Le téléphone, le site, la plateforme et la porte tombent dans le même plan de salle. La contrainte alimentaire arrive écrite sur la réservation. »"
             },
             {
               "id": "EP511",
@@ -67039,7 +67199,8 @@
                   "lienCta": "https://site.foodeatup.com/",
                   "titre": "Le prénom du fils — Il était une fois un restaurant 11/35"
                 }
-              }
+              },
+              "heygenPrompt": "AVATAR — le chef FoodEatUp, avatar 3D, plan poitrine, fond neutre crème #FCF9E6. Regard caméra, posture ouverte, aucune gestuelle appuyée.\nVOIX — française, timbre grave, débit posé. Neuf secondes, pas une de plus.\nCADRE — vertical 9:16, 1080 × 1920. Aucun texte incrusté : les sous-titres sont ajoutés au montage.\nCONTEXTE — UpEatFood, saison 2 « En salle », épisode EP511 · Réservation · Le même geste, autrement.\n\nTEXTE À DIRE, mot pour mot :\n« Les allergies, les habitudes, la dernière visite : la fiche client les porte. Le service ne dépend plus de qui travaille ce soir-là. »"
             },
             {
               "id": "EP512",
@@ -67282,7 +67443,8 @@
                   "lienCta": "https://site.foodeatup.com/",
                   "titre": "Minuit, et rien à retenir — Il était une fois un restaurant 12/35"
                 }
-              }
+              },
+              "heygenPrompt": "AVATAR — le chef FoodEatUp, avatar 3D, plan poitrine, fond neutre crème #FCF9E6. Regard caméra, posture ouverte, aucune gestuelle appuyée.\nVOIX — française, timbre grave, débit posé. Neuf secondes, pas une de plus.\nCADRE — vertical 9:16, 1080 × 1920. Aucun texte incrusté : les sous-titres sont ajoutés au montage.\nCONTEXTE — UpEatFood, saison 2 « En salle », épisode EP512 · Réservation · Ce qui a changé.\n\nTEXTE À DIRE, mot pour mot :\n« Fin de service. Ce qui s'est passé ce soir est écrit là où le prochain service le lira. Il n'emporte plus rien. »"
             }
           ],
           "acte": "Acte I — Le film",
@@ -67542,7 +67704,8 @@
                   "lienCta": "https://site.foodeatup.com/",
                   "titre": "Le bureau au-dessus de la salle — Il était une fois un restaurant 13/35"
                 }
-              }
+              },
+              "heygenPrompt": "AVATAR — le chef FoodEatUp, avatar 3D, plan poitrine, fond neutre crème #FCF9E6. Regard caméra, posture ouverte, aucune gestuelle appuyée.\nVOIX — française, timbre grave, débit posé. Neuf secondes, pas une de plus.\nCADRE — vertical 9:16, 1080 × 1920. Aucun texte incrusté : les sous-titres sont ajoutés au montage.\nCONTEXTE — UpEatFood, saison 3 « Au bureau », épisode EP513 · Comptabilité · Il était une fois.\n\nTEXTE À DIRE, mot pour mot :\n« Un bureau minuscule au premier étage. Sous le plancher, cent couverts. Au-dessus, un homme qui essaie de savoir si la soirée est rentable. »"
             },
             {
               "id": "EP514",
@@ -67785,7 +67948,8 @@
                   "lienCta": "https://site.foodeatup.com/",
                   "titre": "La pile qui grandit toute seule — Il était une fois un restaurant 14/35"
                 }
-              }
+              },
+              "heygenPrompt": "AVATAR — le chef FoodEatUp, avatar 3D, plan poitrine, fond neutre crème #FCF9E6. Regard caméra, posture ouverte, aucune gestuelle appuyée.\nVOIX — française, timbre grave, débit posé. Neuf secondes, pas une de plus.\nCADRE — vertical 9:16, 1080 × 1920. Aucun texte incrusté : les sous-titres sont ajoutés au montage.\nCONTEXTE — UpEatFood, saison 3 « Au bureau », épisode EP514 · Comptabilité · Ce qui coince.\n\nTEXTE À DIRE, mot pour mot :\n« Bons de livraison, factures fournisseurs, tickets de caisse. Tout arrive en papier, tout se ressaisit à la main, et rien ne se recoupe. »"
             },
             {
               "id": "EP515",
@@ -68028,7 +68192,8 @@
                   "lienCta": "https://site.foodeatup.com/",
                   "titre": "Le quinze du mois suivant — Il était une fois un restaurant 15/35"
                 }
-              }
+              },
+              "heygenPrompt": "AVATAR — le chef FoodEatUp, avatar 3D, plan poitrine, fond neutre crème #FCF9E6. Regard caméra, posture ouverte, aucune gestuelle appuyée.\nVOIX — française, timbre grave, débit posé. Neuf secondes, pas une de plus.\nCADRE — vertical 9:16, 1080 × 1920. Aucun texte incrusté : les sous-titres sont ajoutés au montage.\nCONTEXTE — UpEatFood, saison 3 « Au bureau », épisode EP515 · Comptabilité · Le soir où ça casse.\n\nTEXTE À DIRE, mot pour mot :\n« Le bilan du mois arrive le 15 du mois suivant. Quand il découvre le problème, il a déjà quinze jours du mois d'après derrière lui. »"
             },
             {
               "id": "EP516",
@@ -68271,7 +68436,8 @@
                   "lienCta": "https://site.foodeatup.com/",
                   "titre": "La question posée à voix haute — Il était une fois un restaurant 16/35"
                 }
-              }
+              },
+              "heygenPrompt": "AVATAR — le chef FoodEatUp, avatar 3D, plan poitrine, fond neutre crème #FCF9E6. Regard caméra, posture ouverte, aucune gestuelle appuyée.\nVOIX — française, timbre grave, débit posé. Neuf secondes, pas une de plus.\nCADRE — vertical 9:16, 1080 × 1920. Aucun texte incrusté : les sous-titres sont ajoutés au montage.\nCONTEXTE — UpEatFood, saison 3 « Au bureau », épisode EP516 · Comptabilité · La bascule.\n\nTEXTE À DIRE, mot pour mot :\n« Le coût matière à jour, la marge en euros, la comparaison avec le mois dernier. Il ne cherche plus l'information : il la demande. »"
             },
             {
               "id": "EP517",
@@ -68514,7 +68680,8 @@
                   "lienCta": "https://site.foodeatup.com/",
                   "titre": "Le planning avant le samedi — Il était une fois un restaurant 17/35"
                 }
-              }
+              },
+              "heygenPrompt": "AVATAR — le chef FoodEatUp, avatar 3D, plan poitrine, fond neutre crème #FCF9E6. Regard caméra, posture ouverte, aucune gestuelle appuyée.\nVOIX — française, timbre grave, débit posé. Neuf secondes, pas une de plus.\nCADRE — vertical 9:16, 1080 × 1920. Aucun texte incrusté : les sous-titres sont ajoutés au montage.\nCONTEXTE — UpEatFood, saison 3 « Au bureau », épisode EP517 · Comptabilité · Le même geste, autrement.\n\nTEXTE À DIRE, mot pour mot :\n« La prévision de couverts croise le planning : on n'est plus sur-effectif le mardi ni sous-effectif le samedi. Le premier poste maîtrisable d'un restaurant cesse de se décider au feeling. »"
             },
             {
               "id": "EP518",
@@ -68757,7 +68924,8 @@
                   "lienCta": "https://site.foodeatup.com/",
                   "titre": "Il éteint la lampe à vingt-trois heures — Il était une fois un restaurant 18/35"
                 }
-              }
+              },
+              "heygenPrompt": "AVATAR — le chef FoodEatUp, avatar 3D, plan poitrine, fond neutre crème #FCF9E6. Regard caméra, posture ouverte, aucune gestuelle appuyée.\nVOIX — française, timbre grave, débit posé. Neuf secondes, pas une de plus.\nCADRE — vertical 9:16, 1080 × 1920. Aucun texte incrusté : les sous-titres sont ajoutés au montage.\nCONTEXTE — UpEatFood, saison 3 « Au bureau », épisode EP518 · Comptabilité · Ce qui a changé.\n\nTEXTE À DIRE, mot pour mot :\n« Le Z, les pertes, le coût du travail du service : trois chiffres disponibles avant d'éteindre. Il n'y a plus de comptabilité à rattraper le dimanche. »"
             }
           ],
           "acte": "Acte I — Le film",
@@ -69017,7 +69185,8 @@
                   "lienCta": "https://site.foodeatup.com/",
                   "titre": "Il cherche où aller — Il était une fois un restaurant 19/35"
                 }
-              }
+              },
+              "heygenPrompt": "AVATAR — le chef FoodEatUp, avatar 3D, plan poitrine, fond neutre crème #FCF9E6. Regard caméra, posture ouverte, aucune gestuelle appuyée.\nVOIX — française, timbre grave, débit posé. Neuf secondes, pas une de plus.\nCADRE — vertical 9:16, 1080 × 1920. Aucun texte incrusté : les sous-titres sont ajoutés au montage.\nCONTEXTE — UpEatFood, saison 4 « À la maison », épisode EP519 · Le client · Il était une fois.\n\nTEXTE À DIRE, mot pour mot :\n« Vingt heures, chez lui. Il cherche, il compare, il hésite entre trois adresses. Ce qu'il trouve du restaurant décide de sa soirée. »"
             },
             {
               "id": "EP520",
@@ -69260,7 +69429,8 @@
                   "lienCta": "https://site.foodeatup.com/",
                   "titre": "La carte date de mardi — Il était une fois un restaurant 20/35"
                 }
-              }
+              },
+              "heygenPrompt": "AVATAR — le chef FoodEatUp, avatar 3D, plan poitrine, fond neutre crème #FCF9E6. Regard caméra, posture ouverte, aucune gestuelle appuyée.\nVOIX — française, timbre grave, débit posé. Neuf secondes, pas une de plus.\nCADRE — vertical 9:16, 1080 × 1920. Aucun texte incrusté : les sous-titres sont ajoutés au montage.\nCONTEXTE — UpEatFood, saison 4 « À la maison », épisode EP520 · Le client · Ce qui coince.\n\nTEXTE À DIRE, mot pour mot :\n« La carte en ligne n'a pas bougé depuis mardi. Le plat qui l'a décidé n'existe plus. Il l'apprendra à table, devant quelqu'un qui s'excuse. »"
             },
             {
               "id": "EP521",
@@ -69503,7 +69673,8 @@
                   "lienCta": "https://site.foodeatup.com/",
                   "titre": "Personne ne décroche — Il était une fois un restaurant 21/35"
                 }
-              }
+              },
+              "heygenPrompt": "AVATAR — le chef FoodEatUp, avatar 3D, plan poitrine, fond neutre crème #FCF9E6. Regard caméra, posture ouverte, aucune gestuelle appuyée.\nVOIX — française, timbre grave, débit posé. Neuf secondes, pas une de plus.\nCADRE — vertical 9:16, 1080 × 1920. Aucun texte incrusté : les sous-titres sont ajoutés au montage.\nCONTEXTE — UpEatFood, saison 4 « À la maison », épisode EP521 · Le client · Le soir où ça casse.\n\nTEXTE À DIRE, mot pour mot :\n« Vingt heures dix : il appelle pour réserver à six, dont deux personnes qui ne mangent pas de fruits à coque. Tout le monde est en salle. »"
             },
             {
               "id": "EP522",
@@ -69746,7 +69917,8 @@
                   "lienCta": "https://site.foodeatup.com/",
                   "titre": "Quelqu'un décroche à la première sonnerie — Il était une fois un restaurant 22/35"
                 }
-              }
+              },
+              "heygenPrompt": "AVATAR — le chef FoodEatUp, avatar 3D, plan poitrine, fond neutre crème #FCF9E6. Regard caméra, posture ouverte, aucune gestuelle appuyée.\nVOIX — française, timbre grave, débit posé. Neuf secondes, pas une de plus.\nCADRE — vertical 9:16, 1080 × 1920. Aucun texte incrusté : les sous-titres sont ajoutés au montage.\nCONTEXTE — UpEatFood, saison 4 « À la maison », épisode EP522 · Le client · La bascule.\n\nTEXTE À DIRE, mot pour mot :\n« L'agent au téléphone prend l'appel en plein service, demande le nombre de couverts, l'heure et la contrainte alimentaire. »"
             },
             {
               "id": "EP523",
@@ -69989,7 +70161,8 @@
                   "lienCta": "https://site.foodeatup.com/",
                   "titre": "La table était prête à son nom — Il était une fois un restaurant 23/35"
                 }
-              }
+              },
+              "heygenPrompt": "AVATAR — le chef FoodEatUp, avatar 3D, plan poitrine, fond neutre crème #FCF9E6. Regard caméra, posture ouverte, aucune gestuelle appuyée.\nVOIX — française, timbre grave, débit posé. Neuf secondes, pas une de plus.\nCADRE — vertical 9:16, 1080 × 1920. Aucun texte incrusté : les sous-titres sont ajoutés au montage.\nCONTEXTE — UpEatFood, saison 4 « À la maison », épisode EP523 · Le client · Le même geste, autrement.\n\nTEXTE À DIRE, mot pour mot :\n« La table est prête, l'allergie est notée, personne ne lui redemande rien. »"
             },
             {
               "id": "EP524",
@@ -70232,7 +70405,8 @@
                   "lienCta": "https://site.foodeatup.com/",
                   "titre": "Vingt-trois heures, dans le métro — Il était une fois un restaurant 24/35"
                 }
-              }
+              },
+              "heygenPrompt": "AVATAR — le chef FoodEatUp, avatar 3D, plan poitrine, fond neutre crème #FCF9E6. Regard caméra, posture ouverte, aucune gestuelle appuyée.\nVOIX — française, timbre grave, débit posé. Neuf secondes, pas une de plus.\nCADRE — vertical 9:16, 1080 × 1920. Aucun texte incrusté : les sous-titres sont ajoutés au montage.\nCONTEXTE — UpEatFood, saison 4 « À la maison », épisode EP524 · Le client · Ce qui a changé.\n\nTEXTE À DIRE, mot pour mot :\n« Vingt-trois heures, dans le métro, il note le restaurant. Personne en salle ne saura jamais que ça s'est joué sur une allergie notée trois jours plus tôt. »"
             }
           ],
           "acte": "Acte I — Le film",
@@ -70492,7 +70666,8 @@
                   "lienCta": "https://site.foodeatup.com/",
                   "titre": "Le même soir, quatre fois — Il était une fois un restaurant 25/35"
                 }
-              }
+              },
+              "heygenPrompt": "AVATAR — le chef FoodEatUp, avatar 3D, plan poitrine, fond neutre crème #FCF9E6. Regard caméra, posture ouverte, aucune gestuelle appuyée.\nVOIX — française, timbre grave, débit posé. Neuf secondes, pas une de plus.\nCADRE — vertical 9:16, 1080 × 1920. Aucun texte incrusté : les sous-titres sont ajoutés au montage.\nCONTEXTE — UpEatFood, saison 5 « Vendredi, 20 h 15 », épisode EP525 · Service · Le même soir.\n\nTEXTE À DIRE, mot pour mot :\n« Quatre histoires, quatre lieux, un seul vendredi. Le film reprend à dix-huit heures, et cette fois on les voit tous les quatre en même temps. »"
             },
             {
               "id": "EP526",
@@ -70735,7 +70910,8 @@
                   "lienCta": "https://site.foodeatup.com/",
                   "titre": "18 h 40 — il réserve — Il était une fois un restaurant 26/35"
                 }
-              }
+              },
+              "heygenPrompt": "AVATAR — le chef FoodEatUp, avatar 3D, plan poitrine, fond neutre crème #FCF9E6. Regard caméra, posture ouverte, aucune gestuelle appuyée.\nVOIX — française, timbre grave, débit posé. Neuf secondes, pas une de plus.\nCADRE — vertical 9:16, 1080 × 1920. Aucun texte incrusté : les sous-titres sont ajoutés au montage.\nCONTEXTE — UpEatFood, saison 5 « Vendredi, 20 h 15 », épisode EP526 · Service · 18 h 40.\n\nTEXTE À DIRE, mot pour mot :\n« Le client réserve depuis son salon. Six couverts, deux personnes qui ne mangent pas de fruits à coque. C'est le premier domino. »"
             },
             {
               "id": "EP527",
@@ -70978,7 +71154,8 @@
                   "lienCta": "https://site.foodeatup.com/",
                   "titre": "18 h 41 — la salle le voit — Il était une fois un restaurant 27/35"
                 }
-              }
+              },
+              "heygenPrompt": "AVATAR — le chef FoodEatUp, avatar 3D, plan poitrine, fond neutre crème #FCF9E6. Regard caméra, posture ouverte, aucune gestuelle appuyée.\nVOIX — française, timbre grave, débit posé. Neuf secondes, pas une de plus.\nCADRE — vertical 9:16, 1080 × 1920. Aucun texte incrusté : les sous-titres sont ajoutés au montage.\nCONTEXTE — UpEatFood, saison 5 « Vendredi, 20 h 15 », épisode EP527 · Service · 18 h 41.\n\nTEXTE À DIRE, mot pour mot :\n« La réservation arrive dans le plan de salle avec la contrainte écrite dessus. Le serveur n'a rien noté : il a lu. »"
             },
             {
               "id": "EP528",
@@ -71221,7 +71398,8 @@
                   "lienCta": "https://site.foodeatup.com/",
                   "titre": "18 h 42 — la cuisine l'apprend — Il était une fois un restaurant 28/35"
                 }
-              }
+              },
+              "heygenPrompt": "AVATAR — le chef FoodEatUp, avatar 3D, plan poitrine, fond neutre crème #FCF9E6. Regard caméra, posture ouverte, aucune gestuelle appuyée.\nVOIX — française, timbre grave, débit posé. Neuf secondes, pas une de plus.\nCADRE — vertical 9:16, 1080 × 1920. Aucun texte incrusté : les sous-titres sont ajoutés au montage.\nCONTEXTE — UpEatFood, saison 5 « Vendredi, 20 h 15 », épisode EP528 · Service · 18 h 42.\n\nTEXTE À DIRE, mot pour mot :\n« La contrainte alimentaire arrive au pass sans que quiconque ait traversé la cuisine en criant. Le chef adapte deux assiettes sur les six. »"
             },
             {
               "id": "EP529",
@@ -71464,7 +71642,8 @@
                   "lienCta": "https://site.foodeatup.com/",
                   "titre": "18 h 43 — le bureau voit le couvert — Il était une fois un restaurant 29/35"
                 }
-              }
+              },
+              "heygenPrompt": "AVATAR — le chef FoodEatUp, avatar 3D, plan poitrine, fond neutre crème #FCF9E6. Regard caméra, posture ouverte, aucune gestuelle appuyée.\nVOIX — française, timbre grave, débit posé. Neuf secondes, pas une de plus.\nCADRE — vertical 9:16, 1080 × 1920. Aucun texte incrusté : les sous-titres sont ajoutés au montage.\nCONTEXTE — UpEatFood, saison 5 « Vendredi, 20 h 15 », épisode EP529 · Service · 18 h 43.\n\nTEXTE À DIRE, mot pour mot :\n« Le bureau voit la réservation entrer dans la prévision : les achats du lendemain, le nombre de bras, la marge attendue. Tout bouge d'un cran. »"
             },
             {
               "id": "EP530",
@@ -71707,7 +71886,8 @@
                   "lienCta": "https://site.foodeatup.com/",
                   "titre": "20 h 15 — les quatre au même endroit — Il était une fois un restaurant 30/35"
                 }
-              }
+              },
+              "heygenPrompt": "AVATAR — le chef FoodEatUp, avatar 3D, plan poitrine, fond neutre crème #FCF9E6. Regard caméra, posture ouverte, aucune gestuelle appuyée.\nVOIX — française, timbre grave, débit posé. Neuf secondes, pas une de plus.\nCADRE — vertical 9:16, 1080 × 1920. Aucun texte incrusté : les sous-titres sont ajoutés au montage.\nCONTEXTE — UpEatFood, saison 5 « Vendredi, 20 h 15 », épisode EP530 · Service · 20 h 15.\n\nTEXTE À DIRE, mot pour mot :\n« Le client pousse la porte. Le serveur l'accueille. Le chef envoie. Le patron regarde depuis l'escalier. C'est le point de croisement du film. »"
             },
             {
               "id": "EP531",
@@ -71950,7 +72130,8 @@
                   "lienCta": "https://site.foodeatup.com/",
                   "titre": "20 h 31 — le plat part — Il était une fois un restaurant 31/35"
                 }
-              }
+              },
+              "heygenPrompt": "AVATAR — le chef FoodEatUp, avatar 3D, plan poitrine, fond neutre crème #FCF9E6. Regard caméra, posture ouverte, aucune gestuelle appuyée.\nVOIX — française, timbre grave, débit posé. Neuf secondes, pas une de plus.\nCADRE — vertical 9:16, 1080 × 1920. Aucun texte incrusté : les sous-titres sont ajoutés au montage.\nCONTEXTE — UpEatFood, saison 5 « Vendredi, 20 h 15 », épisode EP531 · Service · 20 h 31.\n\nTEXTE À DIRE, mot pour mot :\n« Le plat part du pass, traverse la salle, arrive à la table. Deux assiettes sur six sont différentes, et personne n'a eu à le rappeler. »"
             },
             {
               "id": "EP532",
@@ -72193,7 +72374,8 @@
                   "lienCta": "https://site.foodeatup.com/",
                   "titre": "20 h 32 — il ne remarque rien — Il était une fois un restaurant 32/35"
                 }
-              }
+              },
+              "heygenPrompt": "AVATAR — le chef FoodEatUp, avatar 3D, plan poitrine, fond neutre crème #FCF9E6. Regard caméra, posture ouverte, aucune gestuelle appuyée.\nVOIX — française, timbre grave, débit posé. Neuf secondes, pas une de plus.\nCADRE — vertical 9:16, 1080 × 1920. Aucun texte incrusté : les sous-titres sont ajoutés au montage.\nCONTEXTE — UpEatFood, saison 5 « Vendredi, 20 h 15 », épisode EP532 · Service · 20 h 32.\n\nTEXTE À DIRE, mot pour mot :\n« Le client mange. Il ne saura jamais qu'une contrainte est passée par trois postes en quatre-vingt-dix minutes. Il saura seulement que c'était bien. »"
             },
             {
               "id": "EP533",
@@ -72436,7 +72618,8 @@
                   "lienCta": "https://site.foodeatup.com/",
                   "titre": "23 h 50 — le Z avant d'éteindre — Il était une fois un restaurant 33/35"
                 }
-              }
+              },
+              "heygenPrompt": "AVATAR — le chef FoodEatUp, avatar 3D, plan poitrine, fond neutre crème #FCF9E6. Regard caméra, posture ouverte, aucune gestuelle appuyée.\nVOIX — française, timbre grave, débit posé. Neuf secondes, pas une de plus.\nCADRE — vertical 9:16, 1080 × 1920. Aucun texte incrusté : les sous-titres sont ajoutés au montage.\nCONTEXTE — UpEatFood, saison 5 « Vendredi, 20 h 15 », épisode EP533 · Service · 23 h 50.\n\nTEXTE À DIRE, mot pour mot :\n« Le Z, les pertes, le coût du travail du service. Trois chiffres avant d'éteindre. Personne ne reviendra dimanche pour les chercher. »"
             },
             {
               "id": "EP534",
@@ -72679,7 +72862,8 @@
                   "lienCta": "https://site.foodeatup.com/",
                   "titre": "7 h 00 — le lendemain — Il était une fois un restaurant 34/35"
                 }
-              }
+              },
+              "heygenPrompt": "AVATAR — le chef FoodEatUp, avatar 3D, plan poitrine, fond neutre crème #FCF9E6. Regard caméra, posture ouverte, aucune gestuelle appuyée.\nVOIX — française, timbre grave, débit posé. Neuf secondes, pas une de plus.\nCADRE — vertical 9:16, 1080 × 1920. Aucun texte incrusté : les sous-titres sont ajoutés au montage.\nCONTEXTE — UpEatFood, saison 5 « Vendredi, 20 h 15 », épisode EP534 · Service · 7 h 00.\n\nTEXTE À DIRE, mot pour mot :\n« Sept heures du matin, la même cuisine, la même veilleuse. Rien n'a changé du métier. Tout a changé de ce qu'il faut porter dans sa tête pour l'exercer. »"
             },
             {
               "id": "EP535",
@@ -72922,7 +73106,8 @@
                   "lienCta": "https://site.foodeatup.com/",
                   "titre": "Il était une fois un restaurant — Il était une fois un restaurant 35/35"
                 }
-              }
+              },
+              "heygenPrompt": "AVATAR — le chef FoodEatUp, avatar 3D, plan poitrine, fond neutre crème #FCF9E6. Regard caméra, posture ouverte, aucune gestuelle appuyée.\nVOIX — française, timbre grave, débit posé. Neuf secondes, pas une de plus.\nCADRE — vertical 9:16, 1080 × 1920. Aucun texte incrusté : les sous-titres sont ajoutés au montage.\nCONTEXTE — UpEatFood, saison 5 « Vendredi, 20 h 15 », épisode EP535 · Service · La chute.\n\nTEXTE À DIRE, mot pour mot :\n« Le dernier plan referme le film : les quatre personnages, le même homme, réunis une seconde à l'image. C'est le seul moment où le film le dit. »"
             }
           ],
           "acte": "Acte I — Le film",
