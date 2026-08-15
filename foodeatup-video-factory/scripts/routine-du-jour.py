@@ -55,6 +55,11 @@ def etat():
                         story=bool((e.get("story") or {}).get("url")),
                         master=bool(e.get("videoUrl")),
                         prompt=e["higgsfield"].get("prompt"),
+                        # UpEatFood est un film : le master EST le plan de dix
+                        # secondes. Pas d'avatar, pas d'écran de logiciel. Lui
+                        # réclamer les deux, c'est bloquer trente-cinq montages
+                        # sur des pièces qui n'existent pas.
+                        film=(e.get("dureeSecondes") == 10.0),
                     )
                 )
     eps.sort(key=lambda e: (e["date"], e["id"]))
@@ -81,10 +86,11 @@ def manque(e):
     trous = []
     if not (e["clip"] or e["a_le_hook"]):
         trous.append("le plan Higgsfield")
-    if not e["a_l_avatar"]:
-        trous.append("le segment HeyGen")
-    if not e["a_le_soft"]:
-        trous.append("les 10 s de tutoriel")
+    if not e["film"]:
+        if not e["a_l_avatar"]:
+            trous.append("le segment HeyGen")
+        if not e["a_le_soft"]:
+            trous.append("les 10 s de tutoriel")
     return trous
 
 
@@ -134,12 +140,30 @@ def jour(n, eps, verbeux=True):
         if stories:
             print(f"     Stories — {len(stories)} · une seule commande :")
             print(f"       python3 scripts/build-stories.py {' '.join(e['id'] for e in stories)}\n")
-        if masters:
-            print(f"     Masters — {len(masters)} :")
-            for e in masters:
+        # Deux montages différents sous le même mot. Le master d'un épisode
+        # ordinaire s'assemble en cinq segments ; celui d'un chapitre de
+        # UpEatFood n'a rien à assembler — le plan de dix secondes EST le
+        # master. Lui servir `build-episode.sh` ne produirait rien : le script
+        # réclame un avatar et un écran de logiciel qui n'existent pas.
+        film = [e for e in masters if e["film"]]
+        ordinaires = [e for e in masters if not e["film"]]
+
+        if ordinaires:
+            print(f"     Masters — {len(ordinaires)} :")
+            for e in ordinaires:
                 print(f"       ./scripts/build-segment-a.sh {e['id']} && "
                       f"./scripts/build-episode.sh {e['id']} && "
                       f"./scripts/qc-episode.sh {e['id']}")
+            print()
+
+        if film:
+            print(f"     Chapitres de UpEatFood — {len(film)} :")
+            print("       Le plan de 10 s est le master, tel quel. Rien à assembler.")
+            print("       Il reste le générique de fin de la story : logo, « à suivre »,")
+            print("       et la punchline dite en plus. Sa consigne est sur la page de")
+            print("       l'épisode, et le gabarit dans templates/sting-fin.mp4.\n")
+            for e in film:
+                print(f"       {e['id']}  {e['titre']}")
             print()
     else:
         print("\n▸ 2. RIEN À MONTER AUJOURD'HUI")
