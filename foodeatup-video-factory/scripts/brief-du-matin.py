@@ -59,6 +59,29 @@ DOSSIERS = {
 }
 
 
+# Le plan Lovable vit dans le dépôt du site. Le brief ne le régénère pas : il y
+# lit les quatre tours du jour et les nomme, pour qu'on sache quoi coller sans
+# ouvrir un document de vingt-sept mille lignes.
+PLANS = [
+    pathlib.Path("/workspace/food-series-hub-cdb6e3bf/docs/plan-lovable-31-jours.md"),
+    R.parent.parent / "food-series-hub-cdb6e3bf" / "docs" / "plan-lovable-31-jours.md",
+    R.parent / "docs" / "plan-lovable-31-jours.md",
+]
+
+
+def tours_lovable(n):
+    """Les titres des tours programmés le jour `n`, dans l'ordre du document."""
+    doc = next((p for p in PLANS if p.exists()), None)
+    if not doc:
+        return None, []
+    titres = [
+        ligne[3:].strip()
+        for ligne in doc.read_text(encoding="utf-8").splitlines()
+        if ligne.startswith(f"## Tour ") and f"· jour {n} —" in ligne
+    ]
+    return doc, titres
+
+
 def lien(module):
     cle = DOSSIERS.get(module)
     return (
@@ -164,7 +187,10 @@ def main(args):
         print("Je les récupère tout seul dès qu'ils sont rendus — rien à téléverser.")
         print("Un appel par plan, la photo du chef en référence, jamais en lot.\n")
         for e in a_generer:
-            print(f"- `{e['id']}` — prompt dans `docs/higgsfield-prompts-seedance.md`")
+            print(f"\n### `{e['id']}` — {e['titre']}\n")
+            print("```")
+            print(e["prompt"])
+            print("```")
 
     if a_avatar:
         print(f"\n## 2. Segments HeyGen à produire ({len(a_avatar)})\n")
@@ -183,6 +209,15 @@ def main(args):
         for e in a_soft:
             print(f"- `{e['id']}` · **{e['module']}** — {e['chapitre']}\n"
                   f"  {lien(e['module'])}")
+
+    doc, tours = tours_lovable(n)
+    if tours:
+        print(f"\n## 4. Les quatre tours Lovable du jour ({len(tours)})\n")
+        print("Quatre crédits gratuits par jour, un tour par message, "
+              "la photo du chef en pièce jointe. Le texte complet de chaque "
+              f"tour est dans `{doc.name}`.\n")
+        for t in tours:
+            print(f"- {t}")
 
     if pret:
         print(f"\n## Déjà complet, je monte ({len(pret)})\n")
