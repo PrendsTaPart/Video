@@ -37163,7 +37163,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "format": "9:16 · 1080 × 1920 · 10 s",
       "hook": "La production de jeudi est prête. Sur le papier",
       "punchline": "Il manque deux ingrédients. On le saura jeudi",
-      "url": null
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP213.mp4"
     },
     "carrousel": null,
     "imageFacebook": null,
@@ -50691,7 +50691,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "format": "9:16 · 1080 × 1920 · 10 s",
       "hook": "Il était une fois un restaurant, et un homme qui ouvrait seul",
       "punchline": "Personne ne verra jamais ces quatre heures-là",
-      "url": null,
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP501.mp4",
       "motion": {
         "quand": "8,5 → 10,0 s, par-dessus la fin du plan",
         "consigne": "Générique de fin en motion design, posé sur les 1,5 dernière(s) seconde(s) du plan, sans jamais couper l'image :\n— à 8,5 s, un voile marine #0F1A23 monte du bas sur le tiers inférieur, en 0,3 s, courbe d'accélération douce ;\n— à 8,8 s, le logo FoodEatUp arrive du bas, cale au centre du voile, avec un léger dépassement puis retour (overshoot 6 %) ;\n— à 9,1 s, la punchline s'écrit sous le logo, un mot après l'autre, 0,06 s par mot, en crème #FCF9E6 ;\n— à 9,6 s, la mention « à suivre » apparaît en orange #FFA500 à droite, avec une flèche qui avance de 8 px et s'arrête ;\n— rien ne disparaît avant la fin du plan.",
@@ -50889,7 +50889,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "format": "9:16 · 1080 × 1920 · 10 s",
       "hook": "Il tenait ses comptes à trois endroits. Aucun ne parlait aux autres",
       "punchline": "Trois vérités, et pas une seule bonne",
-      "url": null,
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP502.mp4",
       "motion": {
         "quand": "8,5 → 10,0 s, par-dessus la fin du plan",
         "consigne": "Générique de fin en motion design, posé sur les 1,5 dernière(s) seconde(s) du plan, sans jamais couper l'image :\n— à 8,5 s, un voile marine #0F1A23 monte du bas sur le tiers inférieur, en 0,3 s, courbe d'accélération douce ;\n— à 8,8 s, le logo FoodEatUp arrive du bas, cale au centre du voile, avec un léger dépassement puis retour (overshoot 6 %) ;\n— à 9,1 s, la punchline s'écrit sous le logo, un mot après l'autre, 0,06 s par mot, en crème #FCF9E6 ;\n— à 9,6 s, la mention « à suivre » apparaît en orange #FFA500 à droite, avec une flèche qui avance de 8 px et s'arrête ;\n— rien ne disparaît avant la fin du plan.",
