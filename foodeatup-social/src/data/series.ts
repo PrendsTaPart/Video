@@ -283,6 +283,12 @@ export const outils = {
     "url": "https://higgsfield.ai/",
     "logo": "/brand/outils/higgsfield.png"
   },
+  "heygen": {
+    "nom": "HeyGen",
+    "role": "Fait dire au chef, par son avatar 3D, les neuf secondes de transition de marque.",
+    "url": "https://app.heygen.com/",
+    "logo": "/brand/outils/heygen.png"
+  },
   "claude": {
     "nom": "Claude Code",
     "role": "Monte l'épisode : recadrage, incrustations, mixage, contrôle qualité. Aucun rendu payant.",
@@ -18677,6 +18683,4401 @@ export const series: Serie[] = [
               "youtube": {
                 "statut": "a_venir",
                 "date": "2027-03-06",
+                "heure": "10:00",
+                "compte": "@FoodEatUp",
+                "format": "Short 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              }
+            },
+            "storyUrl": null
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "une-journee",
+    "nom": "Une journée",
+    "pitch": "Dix métiers, un seul service, trois moments. Le même vendredi soir vu depuis dix postes — et quatre incidents qui traversent plusieurs épisodes.",
+    "format": "Vertical 1080×1920 · 20 à 37,5 s · 31 épisodes",
+    "statut": "a-venir",
+    "premiereDiffusion": "2027-01-05",
+    "saisons": [
+      {
+        "numero": 1,
+        "titre": "En cuisine",
+        "pitch": "Du chef au plongeur. La boucle gestion, vue par ceux qui la tiennent.",
+        "episodes": [
+          {
+            "id": "EP301",
+            "numero": 301,
+            "saison": 1,
+            "slug": "ep301-chef-de-cuisine-avant",
+            "titre": "La cuisine est vide, et dans quatre heures tout doit être prêt",
+            "module": "Le chef de cuisine",
+            "chapitre": "Avant le service",
+            "accroche": "Il ouvre, il produit, il ferme. Sa journée entière tient dans une seule application.",
+            "punchline": "Il est le seul à voir la marge et le coup de feu en même temps.",
+            "resume": "Sept heures. Il ouvre seul, relève les températures, contrôle la livraison, et décide la carte du jour sur ce qui est arrivé.",
+            "statut": "a_produire",
+            "dureeSecondes": 37.5,
+            "videoUrl": null,
+            "posterUrl": "/defaut/metier-chef-de-cuisine.jpg",
+            "datePrevue": "2027-03-07",
+            "troisMots": "AVANT LE SERVICE",
+            "tutorielModuleUrl": null,
+            "tutoriel": null,
+            "masterRapidoUrl": null,
+            "higgsfield": {
+              "duree": "10 s",
+              "format": "vertical 9:16",
+              "videoSourceUrl": null,
+              "source": null
+            },
+            "reseaux": {
+              "facebook": {
+                "statut": "a_venir",
+                "date": "2027-03-07",
+                "heure": "12:00",
+                "compte": "FoodEatUp",
+                "format": "Vidéo native 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              },
+              "instagram": {
+                "statut": "a_venir",
+                "date": "2027-03-07",
+                "heure": "18:30",
+                "compte": "foodeatup.cocuisinage",
+                "format": "Reel 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              },
+              "tiktok": {
+                "statut": "a_venir",
+                "date": "2027-03-07",
+                "heure": "19:00",
+                "compte": "foodeatup",
+                "format": "Vidéo native 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              },
+              "linkedin": {
+                "statut": "a_venir",
+                "date": "2027-03-07",
+                "heure": "08:00",
+                "compte": "FoodEatUp",
+                "format": "Vidéo native 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              },
+              "youtube": {
+                "statut": "a_venir",
+                "date": "2027-03-07",
+                "heure": "10:00",
+                "compte": "@FoodEatUp",
+                "format": "Short 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              }
+            },
+            "storyUrl": null
+          },
+          {
+            "id": "EP302",
+            "numero": 302,
+            "saison": 1,
+            "slug": "ep302-chef-de-cuisine-pendant",
+            "titre": "Il voit la marge et le coup de feu en même temps",
+            "module": "Le chef de cuisine",
+            "chapitre": "Pendant le service",
+            "accroche": "Il ouvre, il produit, il ferme. Sa journée entière tient dans une seule application.",
+            "punchline": "Il est le seul à voir la marge et le coup de feu en même temps.",
+            "resume": "Le pass, les quatre canaux, la table de douze qui tombe, et le pavé qui revient. Il tranche sans quitter son poste.",
+            "statut": "a_produire",
+            "dureeSecondes": 37.5,
+            "videoUrl": null,
+            "posterUrl": "/defaut/metier-chef-de-cuisine.jpg",
+            "datePrevue": "2027-03-08",
+            "troisMots": "PENDANT LE SERVICE",
+            "tutorielModuleUrl": null,
+            "tutoriel": null,
+            "masterRapidoUrl": null,
+            "higgsfield": {
+              "duree": "10 s",
+              "format": "vertical 9:16",
+              "videoSourceUrl": null,
+              "source": null
+            },
+            "reseaux": {
+              "facebook": {
+                "statut": "a_venir",
+                "date": "2027-03-08",
+                "heure": "12:00",
+                "compte": "FoodEatUp",
+                "format": "Vidéo native 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              },
+              "instagram": {
+                "statut": "a_venir",
+                "date": "2027-03-08",
+                "heure": "18:30",
+                "compte": "foodeatup.cocuisinage",
+                "format": "Reel 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              },
+              "tiktok": {
+                "statut": "a_venir",
+                "date": "2027-03-08",
+                "heure": "19:00",
+                "compte": "foodeatup",
+                "format": "Vidéo native 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              },
+              "linkedin": {
+                "statut": "a_venir",
+                "date": "2027-03-08",
+                "heure": "08:00",
+                "compte": "FoodEatUp",
+                "format": "Vidéo native 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              },
+              "youtube": {
+                "statut": "a_venir",
+                "date": "2027-03-08",
+                "heure": "10:00",
+                "compte": "@FoodEatUp",
+                "format": "Short 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              }
+            },
+            "storyUrl": null
+          },
+          {
+            "id": "EP303",
+            "numero": 303,
+            "saison": 1,
+            "slug": "ep303-chef-de-cuisine-apres",
+            "titre": "Deux fermetures, et le chiffre avant d'éteindre",
+            "module": "Le chef de cuisine",
+            "chapitre": "Après le service",
+            "accroche": "Il ouvre, il produit, il ferme. Sa journée entière tient dans une seule application.",
+            "punchline": "Il est le seul à voir la marge et le coup de feu en même temps.",
+            "resume": "Il ferme midi, il ferme le soir. Une photo pour le nettoyage, les pertes saisies, et la marge du jour qui s'affiche seule.",
+            "statut": "a_produire",
+            "dureeSecondes": 37.5,
+            "videoUrl": null,
+            "posterUrl": "/defaut/metier-chef-de-cuisine.jpg",
+            "datePrevue": "2027-03-09",
+            "troisMots": "APRÈS LE SERVICE",
+            "tutorielModuleUrl": null,
+            "tutoriel": null,
+            "masterRapidoUrl": null,
+            "higgsfield": {
+              "duree": "10 s",
+              "format": "vertical 9:16",
+              "videoSourceUrl": null,
+              "source": null
+            },
+            "reseaux": {
+              "facebook": {
+                "statut": "a_venir",
+                "date": "2027-03-09",
+                "heure": "12:00",
+                "compte": "FoodEatUp",
+                "format": "Vidéo native 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              },
+              "instagram": {
+                "statut": "a_venir",
+                "date": "2027-03-09",
+                "heure": "18:30",
+                "compte": "foodeatup.cocuisinage",
+                "format": "Reel 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              },
+              "tiktok": {
+                "statut": "a_venir",
+                "date": "2027-03-09",
+                "heure": "19:00",
+                "compte": "foodeatup",
+                "format": "Vidéo native 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              },
+              "linkedin": {
+                "statut": "a_venir",
+                "date": "2027-03-09",
+                "heure": "08:00",
+                "compte": "FoodEatUp",
+                "format": "Vidéo native 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              },
+              "youtube": {
+                "statut": "a_venir",
+                "date": "2027-03-09",
+                "heure": "10:00",
+                "compte": "@FoodEatUp",
+                "format": "Short 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              }
+            },
+            "storyUrl": null
+          },
+          {
+            "id": "EP304",
+            "numero": 304,
+            "saison": 1,
+            "slug": "ep304-second-avant",
+            "titre": "Il prépare ce que le chef décidera",
+            "module": "Le second de cuisine",
+            "chapitre": "Avant le service",
+            "accroche": "Il tient la mise en place et le coup de feu. Son parcours s'arrête là où commence la clôture du chef.",
+            "punchline": "Il répare ce que personne n'a vu venir, sans jamais arrêter le service.",
+            "resume": "La mise en place pour deux services, sans savoir encore lesquels des plats vont partir. Il produit large, il étiquette tout.",
+            "statut": "a_produire",
+            "dureeSecondes": 37.5,
+            "videoUrl": null,
+            "posterUrl": "/defaut/metier-second.jpg",
+            "datePrevue": "2027-03-10",
+            "troisMots": "AVANT LE SERVICE",
+            "tutorielModuleUrl": null,
+            "tutoriel": null,
+            "masterRapidoUrl": null,
+            "higgsfield": {
+              "duree": "10 s",
+              "format": "vertical 9:16",
+              "videoSourceUrl": null,
+              "source": null
+            },
+            "reseaux": {
+              "facebook": {
+                "statut": "a_venir",
+                "date": "2027-03-10",
+                "heure": "12:00",
+                "compte": "FoodEatUp",
+                "format": "Vidéo native 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              },
+              "instagram": {
+                "statut": "a_venir",
+                "date": "2027-03-10",
+                "heure": "18:30",
+                "compte": "foodeatup.cocuisinage",
+                "format": "Reel 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              },
+              "tiktok": {
+                "statut": "a_venir",
+                "date": "2027-03-10",
+                "heure": "19:00",
+                "compte": "foodeatup",
+                "format": "Vidéo native 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              },
+              "linkedin": {
+                "statut": "a_venir",
+                "date": "2027-03-10",
+                "heure": "08:00",
+                "compte": "FoodEatUp",
+                "format": "Vidéo native 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              },
+              "youtube": {
+                "statut": "a_venir",
+                "date": "2027-03-10",
+                "heure": "10:00",
+                "compte": "@FoodEatUp",
+                "format": "Short 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              }
+            },
+            "storyUrl": null
+          },
+          {
+            "id": "EP305",
+            "numero": 305,
+            "saison": 1,
+            "slug": "ep305-second-pendant",
+            "titre": "Il répare sans arrêter le service",
+            "module": "Le second de cuisine",
+            "chapitre": "Pendant le service",
+            "accroche": "Il tient la mise en place et le coup de feu. Son parcours s'arrête là où commence la clôture du chef.",
+            "punchline": "Il répare ce que personne n'a vu venir, sans jamais arrêter le service.",
+            "resume": "Dix-neuf heures quarante : deux portions. Il trouve le substitut, prévient la salle, et rien ne s'arrête.",
+            "statut": "a_produire",
+            "dureeSecondes": 37.5,
+            "videoUrl": null,
+            "posterUrl": "/defaut/metier-second.jpg",
+            "datePrevue": "2027-03-11",
+            "troisMots": "PENDANT LE SERVICE",
+            "tutorielModuleUrl": null,
+            "tutoriel": null,
+            "masterRapidoUrl": null,
+            "higgsfield": {
+              "duree": "10 s",
+              "format": "vertical 9:16",
+              "videoSourceUrl": null,
+              "source": null
+            },
+            "reseaux": {
+              "facebook": {
+                "statut": "a_venir",
+                "date": "2027-03-11",
+                "heure": "12:00",
+                "compte": "FoodEatUp",
+                "format": "Vidéo native 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              },
+              "instagram": {
+                "statut": "a_venir",
+                "date": "2027-03-11",
+                "heure": "18:30",
+                "compte": "foodeatup.cocuisinage",
+                "format": "Reel 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              },
+              "tiktok": {
+                "statut": "a_venir",
+                "date": "2027-03-11",
+                "heure": "19:00",
+                "compte": "foodeatup",
+                "format": "Vidéo native 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              },
+              "linkedin": {
+                "statut": "a_venir",
+                "date": "2027-03-11",
+                "heure": "08:00",
+                "compte": "FoodEatUp",
+                "format": "Vidéo native 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              },
+              "youtube": {
+                "statut": "a_venir",
+                "date": "2027-03-11",
+                "heure": "10:00",
+                "compte": "@FoodEatUp",
+                "format": "Short 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              }
+            },
+            "storyUrl": null
+          },
+          {
+            "id": "EP306",
+            "numero": 306,
+            "saison": 1,
+            "slug": "ep306-second-apres",
+            "titre": "Il rend une cuisine que le chef peut fermer",
+            "module": "Le second de cuisine",
+            "chapitre": "Après le service",
+            "accroche": "Il tient la mise en place et le coup de feu. Son parcours s'arrête là où commence la clôture du chef.",
+            "punchline": "Il répare ce que personne n'a vu venir, sans jamais arrêter le service.",
+            "resume": "Il range, il compte ce qui reste, il note ce qui a manqué. Sa journée s'arrête là où commence la clôture.",
+            "statut": "a_produire",
+            "dureeSecondes": 20.0,
+            "videoUrl": null,
+            "posterUrl": "/defaut/metier-second.jpg",
+            "datePrevue": "2027-03-12",
+            "troisMots": "APRÈS LE SERVICE",
+            "tutorielModuleUrl": null,
+            "tutoriel": null,
+            "masterRapidoUrl": null,
+            "higgsfield": {
+              "duree": "10 s",
+              "format": "vertical 9:16",
+              "videoSourceUrl": null,
+              "source": null
+            },
+            "reseaux": {
+              "facebook": {
+                "statut": "a_venir",
+                "date": "2027-03-12",
+                "heure": "12:00",
+                "compte": "FoodEatUp",
+                "format": "Vidéo native 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              },
+              "instagram": {
+                "statut": "a_venir",
+                "date": "2027-03-12",
+                "heure": "18:30",
+                "compte": "foodeatup.cocuisinage",
+                "format": "Reel 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              },
+              "tiktok": {
+                "statut": "a_venir",
+                "date": "2027-03-12",
+                "heure": "19:00",
+                "compte": "foodeatup",
+                "format": "Vidéo native 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              },
+              "linkedin": {
+                "statut": "a_venir",
+                "date": "2027-03-12",
+                "heure": "08:00",
+                "compte": "FoodEatUp",
+                "format": "Vidéo native 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              },
+              "youtube": {
+                "statut": "a_venir",
+                "date": "2027-03-12",
+                "heure": "10:00",
+                "compte": "@FoodEatUp",
+                "format": "Short 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              }
+            },
+            "storyUrl": null
+          },
+          {
+            "id": "EP307",
+            "numero": 307,
+            "saison": 1,
+            "slug": "ep307-chef-de-partie-avant",
+            "titre": "La quantité juste, décidée à dix heures",
+            "module": "Le chef de partie",
+            "chapitre": "Avant le service",
+            "accroche": "Un poste, une carte, et la quantité juste. Trop, c'est de la perte ; pas assez, c'est un plat retiré.",
+            "punchline": "Il est le premier à savoir qu'il va manquer quelque chose, et le dernier qu'on écoute.",
+            "resume": "Son poste, sa carte, et une seule question : combien. Trop, c'est de la perte ; pas assez, c'est un plat retiré à vingt heures.",
+            "statut": "a_produire",
+            "dureeSecondes": 37.5,
+            "videoUrl": null,
+            "posterUrl": "/defaut/metier-chef-de-partie.jpg",
+            "datePrevue": "2027-03-13",
+            "troisMots": "AVANT LE SERVICE",
+            "tutorielModuleUrl": null,
+            "tutoriel": null,
+            "masterRapidoUrl": null,
+            "higgsfield": {
+              "duree": "10 s",
+              "format": "vertical 9:16",
+              "videoSourceUrl": null,
+              "source": null
+            },
+            "reseaux": {
+              "facebook": {
+                "statut": "a_venir",
+                "date": "2027-03-13",
+                "heure": "12:00",
+                "compte": "FoodEatUp",
+                "format": "Vidéo native 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              },
+              "instagram": {
+                "statut": "a_venir",
+                "date": "2027-03-13",
+                "heure": "18:30",
+                "compte": "foodeatup.cocuisinage",
+                "format": "Reel 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              },
+              "tiktok": {
+                "statut": "a_venir",
+                "date": "2027-03-13",
+                "heure": "19:00",
+                "compte": "foodeatup",
+                "format": "Vidéo native 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              },
+              "linkedin": {
+                "statut": "a_venir",
+                "date": "2027-03-13",
+                "heure": "08:00",
+                "compte": "FoodEatUp",
+                "format": "Vidéo native 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              },
+              "youtube": {
+                "statut": "a_venir",
+                "date": "2027-03-13",
+                "heure": "10:00",
+                "compte": "@FoodEatUp",
+                "format": "Short 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              }
+            },
+            "storyUrl": null
+          },
+          {
+            "id": "EP308",
+            "numero": 308,
+            "saison": 1,
+            "slug": "ep308-chef-de-partie-pendant",
+            "titre": "Il est le premier à savoir, le dernier qu'on écoute",
+            "module": "Le chef de partie",
+            "chapitre": "Pendant le service",
+            "accroche": "Un poste, une carte, et la quantité juste. Trop, c'est de la perte ; pas assez, c'est un plat retiré.",
+            "punchline": "Il est le premier à savoir qu'il va manquer quelque chose, et le dernier qu'on écoute.",
+            "resume": "Il tape le fond du bac à 19 h 40. Il l'avait dit à dix heures.",
+            "statut": "a_produire",
+            "dureeSecondes": 37.5,
+            "videoUrl": null,
+            "posterUrl": "/defaut/metier-chef-de-partie.jpg",
+            "datePrevue": "2027-03-14",
+            "troisMots": "PENDANT LE SERVICE",
+            "tutorielModuleUrl": null,
+            "tutoriel": null,
+            "masterRapidoUrl": null,
+            "higgsfield": {
+              "duree": "10 s",
+              "format": "vertical 9:16",
+              "videoSourceUrl": null,
+              "source": null
+            },
+            "reseaux": {
+              "facebook": {
+                "statut": "a_venir",
+                "date": "2027-03-14",
+                "heure": "12:00",
+                "compte": "FoodEatUp",
+                "format": "Vidéo native 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              },
+              "instagram": {
+                "statut": "a_venir",
+                "date": "2027-03-14",
+                "heure": "18:30",
+                "compte": "foodeatup.cocuisinage",
+                "format": "Reel 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              },
+              "tiktok": {
+                "statut": "a_venir",
+                "date": "2027-03-14",
+                "heure": "19:00",
+                "compte": "foodeatup",
+                "format": "Vidéo native 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              },
+              "linkedin": {
+                "statut": "a_venir",
+                "date": "2027-03-14",
+                "heure": "08:00",
+                "compte": "FoodEatUp",
+                "format": "Vidéo native 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              },
+              "youtube": {
+                "statut": "a_venir",
+                "date": "2027-03-14",
+                "heure": "10:00",
+                "compte": "@FoodEatUp",
+                "format": "Short 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              }
+            },
+            "storyUrl": null
+          },
+          {
+            "id": "EP309",
+            "numero": 309,
+            "saison": 1,
+            "slug": "ep309-chef-de-partie-apres",
+            "titre": "Ce qui reste dit ce qu'il fallait commander",
+            "module": "Le chef de partie",
+            "chapitre": "Après le service",
+            "accroche": "Un poste, une carte, et la quantité juste. Trop, c'est de la perte ; pas assez, c'est un plat retiré.",
+            "punchline": "Il est le premier à savoir qu'il va manquer quelque chose, et le dernier qu'on écoute.",
+            "resume": "Il pèse ce qui n'est pas parti. C'est la seule mesure honnête de la journée, et elle arrive trop tard pour servir.",
+            "statut": "a_produire",
+            "dureeSecondes": 20.0,
+            "videoUrl": null,
+            "posterUrl": "/defaut/metier-chef-de-partie.jpg",
+            "datePrevue": "2027-03-15",
+            "troisMots": "APRÈS LE SERVICE",
+            "tutorielModuleUrl": null,
+            "tutoriel": null,
+            "masterRapidoUrl": null,
+            "higgsfield": {
+              "duree": "10 s",
+              "format": "vertical 9:16",
+              "videoSourceUrl": null,
+              "source": null
+            },
+            "reseaux": {
+              "facebook": {
+                "statut": "a_venir",
+                "date": "2027-03-15",
+                "heure": "12:00",
+                "compte": "FoodEatUp",
+                "format": "Vidéo native 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              },
+              "instagram": {
+                "statut": "a_venir",
+                "date": "2027-03-15",
+                "heure": "18:30",
+                "compte": "foodeatup.cocuisinage",
+                "format": "Reel 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              },
+              "tiktok": {
+                "statut": "a_venir",
+                "date": "2027-03-15",
+                "heure": "19:00",
+                "compte": "foodeatup",
+                "format": "Vidéo native 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              },
+              "linkedin": {
+                "statut": "a_venir",
+                "date": "2027-03-15",
+                "heure": "08:00",
+                "compte": "FoodEatUp",
+                "format": "Vidéo native 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              },
+              "youtube": {
+                "statut": "a_venir",
+                "date": "2027-03-15",
+                "heure": "10:00",
+                "compte": "@FoodEatUp",
+                "format": "Short 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              }
+            },
+            "storyUrl": null
+          },
+          {
+            "id": "EP310",
+            "numero": 310,
+            "saison": 1,
+            "slug": "ep310-cuisinier-avant",
+            "titre": "Exécuter, tracer, recommencer",
+            "module": "Le cuisinier",
+            "chapitre": "Avant le service",
+            "accroche": "Il exécute, il trace, il nettoie. Trois gestes, deux cents fois.",
+            "punchline": "Ce qu'on lui demande de noter, personne ne le relit — jusqu'au jour du contrôle.",
+            "resume": "Réception, températures, étiquettes. Trois gestes qu'on lui demande de noter et que personne ne relit.",
+            "statut": "a_produire",
+            "dureeSecondes": 37.5,
+            "videoUrl": null,
+            "posterUrl": "/defaut/metier-cuisinier.jpg",
+            "datePrevue": "2027-03-16",
+            "troisMots": "AVANT LE SERVICE",
+            "tutorielModuleUrl": null,
+            "tutoriel": null,
+            "masterRapidoUrl": null,
+            "higgsfield": {
+              "duree": "10 s",
+              "format": "vertical 9:16",
+              "videoSourceUrl": null,
+              "source": null
+            },
+            "reseaux": {
+              "facebook": {
+                "statut": "a_venir",
+                "date": "2027-03-16",
+                "heure": "12:00",
+                "compte": "FoodEatUp",
+                "format": "Vidéo native 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              },
+              "instagram": {
+                "statut": "a_venir",
+                "date": "2027-03-16",
+                "heure": "18:30",
+                "compte": "foodeatup.cocuisinage",
+                "format": "Reel 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              },
+              "tiktok": {
+                "statut": "a_venir",
+                "date": "2027-03-16",
+                "heure": "19:00",
+                "compte": "foodeatup",
+                "format": "Vidéo native 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              },
+              "linkedin": {
+                "statut": "a_venir",
+                "date": "2027-03-16",
+                "heure": "08:00",
+                "compte": "FoodEatUp",
+                "format": "Vidéo native 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              },
+              "youtube": {
+                "statut": "a_venir",
+                "date": "2027-03-16",
+                "heure": "10:00",
+                "compte": "@FoodEatUp",
+                "format": "Short 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              }
+            },
+            "storyUrl": null
+          },
+          {
+            "id": "EP311",
+            "numero": 311,
+            "saison": 1,
+            "slug": "ep311-cuisinier-pendant",
+            "titre": "Deux cents fois le même geste, sans une erreur",
+            "module": "Le cuisinier",
+            "chapitre": "Pendant le service",
+            "accroche": "Il exécute, il trace, il nettoie. Trois gestes, deux cents fois.",
+            "punchline": "Ce qu'on lui demande de noter, personne ne le relit — jusqu'au jour du contrôle.",
+            "resume": "Il envoie. Il n'a ni la vue d'ensemble ni le temps de la demander.",
+            "statut": "a_produire",
+            "dureeSecondes": 37.5,
+            "videoUrl": null,
+            "posterUrl": "/defaut/metier-cuisinier.jpg",
+            "datePrevue": "2027-03-17",
+            "troisMots": "PENDANT LE SERVICE",
+            "tutorielModuleUrl": null,
+            "tutoriel": null,
+            "masterRapidoUrl": null,
+            "higgsfield": {
+              "duree": "10 s",
+              "format": "vertical 9:16",
+              "videoSourceUrl": null,
+              "source": null
+            },
+            "reseaux": {
+              "facebook": {
+                "statut": "a_venir",
+                "date": "2027-03-17",
+                "heure": "12:00",
+                "compte": "FoodEatUp",
+                "format": "Vidéo native 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              },
+              "instagram": {
+                "statut": "a_venir",
+                "date": "2027-03-17",
+                "heure": "18:30",
+                "compte": "foodeatup.cocuisinage",
+                "format": "Reel 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              },
+              "tiktok": {
+                "statut": "a_venir",
+                "date": "2027-03-17",
+                "heure": "19:00",
+                "compte": "foodeatup",
+                "format": "Vidéo native 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              },
+              "linkedin": {
+                "statut": "a_venir",
+                "date": "2027-03-17",
+                "heure": "08:00",
+                "compte": "FoodEatUp",
+                "format": "Vidéo native 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              },
+              "youtube": {
+                "statut": "a_venir",
+                "date": "2027-03-17",
+                "heure": "10:00",
+                "compte": "@FoodEatUp",
+                "format": "Short 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              }
+            },
+            "storyUrl": null
+          },
+          {
+            "id": "EP312",
+            "numero": 312,
+            "saison": 1,
+            "slug": "ep312-cuisinier-apres",
+            "titre": "Le contrôle tombe entre les deux services",
+            "module": "Le cuisinier",
+            "chapitre": "Après le service",
+            "accroche": "Il exécute, il trace, il nettoie. Trois gestes, deux cents fois.",
+            "punchline": "Ce qu'on lui demande de noter, personne ne le relit — jusqu'au jour du contrôle.",
+            "resume": "Quinze heures. L'inspecteur demande les relevés du mois. Ils sont sur un cahier, ou ils sont à jour.",
+            "statut": "a_produire",
+            "dureeSecondes": 37.5,
+            "videoUrl": null,
+            "posterUrl": "/defaut/metier-cuisinier.jpg",
+            "datePrevue": "2027-03-18",
+            "troisMots": "APRÈS LE SERVICE",
+            "tutorielModuleUrl": null,
+            "tutoriel": null,
+            "masterRapidoUrl": null,
+            "higgsfield": {
+              "duree": "10 s",
+              "format": "vertical 9:16",
+              "videoSourceUrl": null,
+              "source": null
+            },
+            "reseaux": {
+              "facebook": {
+                "statut": "a_venir",
+                "date": "2027-03-18",
+                "heure": "12:00",
+                "compte": "FoodEatUp",
+                "format": "Vidéo native 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              },
+              "instagram": {
+                "statut": "a_venir",
+                "date": "2027-03-18",
+                "heure": "18:30",
+                "compte": "foodeatup.cocuisinage",
+                "format": "Reel 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              },
+              "tiktok": {
+                "statut": "a_venir",
+                "date": "2027-03-18",
+                "heure": "19:00",
+                "compte": "foodeatup",
+                "format": "Vidéo native 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              },
+              "linkedin": {
+                "statut": "a_venir",
+                "date": "2027-03-18",
+                "heure": "08:00",
+                "compte": "FoodEatUp",
+                "format": "Vidéo native 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              },
+              "youtube": {
+                "statut": "a_venir",
+                "date": "2027-03-18",
+                "heure": "10:00",
+                "compte": "@FoodEatUp",
+                "format": "Short 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              }
+            },
+            "storyUrl": null
+          },
+          {
+            "id": "EP313",
+            "numero": 313,
+            "saison": 1,
+            "slug": "ep313-plongeur-avant",
+            "titre": "Il arrive quand tout le monde est déjà là",
+            "module": "Le plongeur",
+            "chapitre": "Avant le service",
+            "accroche": "Il voit passer tout ce que la salle renvoie. C'est le premier indicateur du restaurant, et personne ne le lit.",
+            "punchline": "Sa boucle est la seule dont l'échec ferme le restaurant.",
+            "resume": "Onze heures. Rien à préparer, tout à recevoir. Sa journée commence au premier plat sale.",
+            "statut": "a_produire",
+            "dureeSecondes": 20.0,
+            "videoUrl": null,
+            "posterUrl": "/defaut/metier-plongeur.jpg",
+            "datePrevue": "2027-03-19",
+            "troisMots": "AVANT LE SERVICE",
+            "tutorielModuleUrl": null,
+            "tutoriel": null,
+            "masterRapidoUrl": null,
+            "higgsfield": {
+              "duree": "10 s",
+              "format": "vertical 9:16",
+              "videoSourceUrl": null,
+              "source": null
+            },
+            "reseaux": {
+              "facebook": {
+                "statut": "a_venir",
+                "date": "2027-03-19",
+                "heure": "12:00",
+                "compte": "FoodEatUp",
+                "format": "Vidéo native 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              },
+              "instagram": {
+                "statut": "a_venir",
+                "date": "2027-03-19",
+                "heure": "18:30",
+                "compte": "foodeatup.cocuisinage",
+                "format": "Reel 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              },
+              "tiktok": {
+                "statut": "a_venir",
+                "date": "2027-03-19",
+                "heure": "19:00",
+                "compte": "foodeatup",
+                "format": "Vidéo native 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              },
+              "linkedin": {
+                "statut": "a_venir",
+                "date": "2027-03-19",
+                "heure": "08:00",
+                "compte": "FoodEatUp",
+                "format": "Vidéo native 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              },
+              "youtube": {
+                "statut": "a_venir",
+                "date": "2027-03-19",
+                "heure": "10:00",
+                "compte": "@FoodEatUp",
+                "format": "Short 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              }
+            },
+            "storyUrl": null
+          },
+          {
+            "id": "EP314",
+            "numero": 314,
+            "saison": 1,
+            "slug": "ep314-plongeur-pendant",
+            "titre": "Le premier indicateur du restaurant",
+            "module": "Le plongeur",
+            "chapitre": "Pendant le service",
+            "accroche": "Il voit passer tout ce que la salle renvoie. C'est le premier indicateur du restaurant, et personne ne le lit.",
+            "punchline": "Sa boucle est la seule dont l'échec ferme le restaurant.",
+            "resume": "Il voit revenir les assiettes. Pleines ou vides, c'est le seul avis client qui ne ment pas — et personne ne le lui demande.",
+            "statut": "a_produire",
+            "dureeSecondes": 37.5,
+            "videoUrl": null,
+            "posterUrl": "/defaut/metier-plongeur.jpg",
+            "datePrevue": "2027-03-20",
+            "troisMots": "PENDANT LE SERVICE",
+            "tutorielModuleUrl": null,
+            "tutoriel": null,
+            "masterRapidoUrl": null,
+            "higgsfield": {
+              "duree": "10 s",
+              "format": "vertical 9:16",
+              "videoSourceUrl": null,
+              "source": null
+            },
+            "reseaux": {
+              "facebook": {
+                "statut": "a_venir",
+                "date": "2027-03-20",
+                "heure": "12:00",
+                "compte": "FoodEatUp",
+                "format": "Vidéo native 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              },
+              "instagram": {
+                "statut": "a_venir",
+                "date": "2027-03-20",
+                "heure": "18:30",
+                "compte": "foodeatup.cocuisinage",
+                "format": "Reel 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              },
+              "tiktok": {
+                "statut": "a_venir",
+                "date": "2027-03-20",
+                "heure": "19:00",
+                "compte": "foodeatup",
+                "format": "Vidéo native 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              },
+              "linkedin": {
+                "statut": "a_venir",
+                "date": "2027-03-20",
+                "heure": "08:00",
+                "compte": "FoodEatUp",
+                "format": "Vidéo native 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              },
+              "youtube": {
+                "statut": "a_venir",
+                "date": "2027-03-20",
+                "heure": "10:00",
+                "compte": "@FoodEatUp",
+                "format": "Short 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              }
+            },
+            "storyUrl": null
+          },
+          {
+            "id": "EP315",
+            "numero": 315,
+            "saison": 1,
+            "slug": "ep315-plongeur-apres",
+            "titre": "Sa boucle est la seule qui ferme le restaurant",
+            "module": "Le plongeur",
+            "chapitre": "Après le service",
+            "accroche": "Il voit passer tout ce que la salle renvoie. C'est le premier indicateur du restaurant, et personne ne le lit.",
+            "punchline": "Sa boucle est la seule dont l'échec ferme le restaurant.",
+            "resume": "Le plan de nettoyage, les relevés, la traçabilité. Les sept autres boucles coûtent de la marge. Celle-ci coûte la fermeture.",
+            "statut": "a_produire",
+            "dureeSecondes": 37.5,
+            "videoUrl": null,
+            "posterUrl": "/defaut/metier-plongeur.jpg",
+            "datePrevue": "2027-03-21",
+            "troisMots": "APRÈS LE SERVICE",
+            "tutorielModuleUrl": null,
+            "tutoriel": null,
+            "masterRapidoUrl": null,
+            "higgsfield": {
+              "duree": "10 s",
+              "format": "vertical 9:16",
+              "videoSourceUrl": null,
+              "source": null
+            },
+            "reseaux": {
+              "facebook": {
+                "statut": "a_venir",
+                "date": "2027-03-21",
+                "heure": "12:00",
+                "compte": "FoodEatUp",
+                "format": "Vidéo native 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              },
+              "instagram": {
+                "statut": "a_venir",
+                "date": "2027-03-21",
+                "heure": "18:30",
+                "compte": "foodeatup.cocuisinage",
+                "format": "Reel 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              },
+              "tiktok": {
+                "statut": "a_venir",
+                "date": "2027-03-21",
+                "heure": "19:00",
+                "compte": "foodeatup",
+                "format": "Vidéo native 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              },
+              "linkedin": {
+                "statut": "a_venir",
+                "date": "2027-03-21",
+                "heure": "08:00",
+                "compte": "FoodEatUp",
+                "format": "Vidéo native 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              },
+              "youtube": {
+                "statut": "a_venir",
+                "date": "2027-03-21",
+                "heure": "10:00",
+                "compte": "@FoodEatUp",
+                "format": "Short 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              }
+            },
+            "storyUrl": null
+          }
+        ]
+      },
+      {
+        "numero": 2,
+        "titre": "En salle, au bureau, avec le client",
+        "pitch": "La boucle vente, plus le poste que personne n'occupe et le mois qui referme tout.",
+        "episodes": [
+          {
+            "id": "EP316",
+            "numero": 316,
+            "saison": 2,
+            "slug": "ep316-patron-avant",
+            "titre": "Il ouvre les livres avant d'ouvrir la porte",
+            "module": "Le patron, directeur de salle",
+            "chapitre": "Avant le service",
+            "accroche": "Il tient la salle et les chiffres. Deux métiers, une personne, la même journée.",
+            "punchline": "Il dit oui au téléphone trois jours avant, et il découvre le vendredi ce que ça coûte.",
+            "resume": "Huit heures. Le chiffre d'hier, les réservations du soir, le planning, et la table de douze qu'il a acceptée mardi.",
+            "statut": "a_produire",
+            "dureeSecondes": 37.5,
+            "videoUrl": null,
+            "posterUrl": "/defaut/metier-patron.jpg",
+            "datePrevue": "2027-03-22",
+            "troisMots": "AVANT LE SERVICE",
+            "tutorielModuleUrl": null,
+            "tutoriel": null,
+            "masterRapidoUrl": null,
+            "higgsfield": {
+              "duree": "10 s",
+              "format": "vertical 9:16",
+              "videoSourceUrl": null,
+              "source": null
+            },
+            "reseaux": {
+              "facebook": {
+                "statut": "a_venir",
+                "date": "2027-03-22",
+                "heure": "12:00",
+                "compte": "FoodEatUp",
+                "format": "Vidéo native 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              },
+              "instagram": {
+                "statut": "a_venir",
+                "date": "2027-03-22",
+                "heure": "18:30",
+                "compte": "foodeatup.cocuisinage",
+                "format": "Reel 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              },
+              "tiktok": {
+                "statut": "a_venir",
+                "date": "2027-03-22",
+                "heure": "19:00",
+                "compte": "foodeatup",
+                "format": "Vidéo native 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              },
+              "linkedin": {
+                "statut": "a_venir",
+                "date": "2027-03-22",
+                "heure": "08:00",
+                "compte": "FoodEatUp",
+                "format": "Vidéo native 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              },
+              "youtube": {
+                "statut": "a_venir",
+                "date": "2027-03-22",
+                "heure": "10:00",
+                "compte": "@FoodEatUp",
+                "format": "Short 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              }
+            },
+            "storyUrl": null
+          },
+          {
+            "id": "EP317",
+            "numero": 317,
+            "saison": 2,
+            "slug": "ep317-patron-pendant",
+            "titre": "Il tient la salle et les chiffres en même temps",
+            "module": "Le patron, directeur de salle",
+            "chapitre": "Pendant le service",
+            "accroche": "Il tient la salle et les chiffres. Deux métiers, une personne, la même journée.",
+            "punchline": "Il dit oui au téléphone trois jours avant, et il découvre le vendredi ce que ça coûte.",
+            "resume": "Il place, il rassure, il encaisse. Et il fait le geste commercial sur le pavé qui est revenu.",
+            "statut": "a_produire",
+            "dureeSecondes": 37.5,
+            "videoUrl": null,
+            "posterUrl": "/defaut/metier-patron.jpg",
+            "datePrevue": "2027-03-23",
+            "troisMots": "PENDANT LE SERVICE",
+            "tutorielModuleUrl": null,
+            "tutoriel": null,
+            "masterRapidoUrl": null,
+            "higgsfield": {
+              "duree": "10 s",
+              "format": "vertical 9:16",
+              "videoSourceUrl": null,
+              "source": null
+            },
+            "reseaux": {
+              "facebook": {
+                "statut": "a_venir",
+                "date": "2027-03-23",
+                "heure": "12:00",
+                "compte": "FoodEatUp",
+                "format": "Vidéo native 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              },
+              "instagram": {
+                "statut": "a_venir",
+                "date": "2027-03-23",
+                "heure": "18:30",
+                "compte": "foodeatup.cocuisinage",
+                "format": "Reel 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              },
+              "tiktok": {
+                "statut": "a_venir",
+                "date": "2027-03-23",
+                "heure": "19:00",
+                "compte": "foodeatup",
+                "format": "Vidéo native 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              },
+              "linkedin": {
+                "statut": "a_venir",
+                "date": "2027-03-23",
+                "heure": "08:00",
+                "compte": "FoodEatUp",
+                "format": "Vidéo native 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              },
+              "youtube": {
+                "statut": "a_venir",
+                "date": "2027-03-23",
+                "heure": "10:00",
+                "compte": "@FoodEatUp",
+                "format": "Short 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              }
+            },
+            "storyUrl": null
+          },
+          {
+            "id": "EP318",
+            "numero": 318,
+            "saison": 2,
+            "slug": "ep318-patron-apres",
+            "titre": "Il sait avant d'éteindre s'il a gagné de l'argent",
+            "module": "Le patron, directeur de salle",
+            "chapitre": "Après le service",
+            "accroche": "Il tient la salle et les chiffres. Deux métiers, une personne, la même journée.",
+            "punchline": "Il dit oui au téléphone trois jours avant, et il découvre le vendredi ce que ça coûte.",
+            "resume": "Le Z, les pertes, le coût du travail du service. Trois chiffres qu'on découvre d'habitude à la fin du mois.",
+            "statut": "a_produire",
+            "dureeSecondes": 37.5,
+            "videoUrl": null,
+            "posterUrl": "/defaut/metier-patron.jpg",
+            "datePrevue": "2027-03-24",
+            "troisMots": "APRÈS LE SERVICE",
+            "tutorielModuleUrl": null,
+            "tutoriel": null,
+            "masterRapidoUrl": null,
+            "higgsfield": {
+              "duree": "10 s",
+              "format": "vertical 9:16",
+              "videoSourceUrl": null,
+              "source": null
+            },
+            "reseaux": {
+              "facebook": {
+                "statut": "a_venir",
+                "date": "2027-03-24",
+                "heure": "12:00",
+                "compte": "FoodEatUp",
+                "format": "Vidéo native 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              },
+              "instagram": {
+                "statut": "a_venir",
+                "date": "2027-03-24",
+                "heure": "18:30",
+                "compte": "foodeatup.cocuisinage",
+                "format": "Reel 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              },
+              "tiktok": {
+                "statut": "a_venir",
+                "date": "2027-03-24",
+                "heure": "19:00",
+                "compte": "foodeatup",
+                "format": "Vidéo native 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              },
+              "linkedin": {
+                "statut": "a_venir",
+                "date": "2027-03-24",
+                "heure": "08:00",
+                "compte": "FoodEatUp",
+                "format": "Vidéo native 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              },
+              "youtube": {
+                "statut": "a_venir",
+                "date": "2027-03-24",
+                "heure": "10:00",
+                "compte": "@FoodEatUp",
+                "format": "Short 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              }
+            },
+            "storyUrl": null
+          },
+          {
+            "id": "EP319",
+            "numero": 319,
+            "saison": 2,
+            "slug": "ep319-chef-de-rang-avant",
+            "titre": "Six tables, quatre canaux, une seule mémoire",
+            "module": "Le chef de rang",
+            "chapitre": "Avant le service",
+            "accroche": "Six tables, quatre canaux, une seule mémoire. La sienne.",
+            "punchline": "Il encaisse la réclamation que la cuisine ne verra jamais.",
+            "resume": "Il prend son rang, relit les notes des réservations, et découvre qu'une table de douze arrive à vingt heures.",
+            "statut": "a_produire",
+            "dureeSecondes": 37.5,
+            "videoUrl": null,
+            "posterUrl": "/defaut/metier-chef-de-rang.jpg",
+            "datePrevue": "2027-03-25",
+            "troisMots": "AVANT LE SERVICE",
+            "tutorielModuleUrl": null,
+            "tutoriel": null,
+            "masterRapidoUrl": null,
+            "higgsfield": {
+              "duree": "10 s",
+              "format": "vertical 9:16",
+              "videoSourceUrl": null,
+              "source": null
+            },
+            "reseaux": {
+              "facebook": {
+                "statut": "a_venir",
+                "date": "2027-03-25",
+                "heure": "12:00",
+                "compte": "FoodEatUp",
+                "format": "Vidéo native 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              },
+              "instagram": {
+                "statut": "a_venir",
+                "date": "2027-03-25",
+                "heure": "18:30",
+                "compte": "foodeatup.cocuisinage",
+                "format": "Reel 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              },
+              "tiktok": {
+                "statut": "a_venir",
+                "date": "2027-03-25",
+                "heure": "19:00",
+                "compte": "foodeatup",
+                "format": "Vidéo native 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              },
+              "linkedin": {
+                "statut": "a_venir",
+                "date": "2027-03-25",
+                "heure": "08:00",
+                "compte": "FoodEatUp",
+                "format": "Vidéo native 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              },
+              "youtube": {
+                "statut": "a_venir",
+                "date": "2027-03-25",
+                "heure": "10:00",
+                "compte": "@FoodEatUp",
+                "format": "Short 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              }
+            },
+            "storyUrl": null
+          },
+          {
+            "id": "EP320",
+            "numero": 320,
+            "saison": 2,
+            "slug": "ep320-chef-de-rang-pendant",
+            "titre": "Il encaisse ce que la cuisine ne verra jamais",
+            "module": "Le chef de rang",
+            "chapitre": "Pendant le service",
+            "accroche": "Six tables, quatre canaux, une seule mémoire. La sienne.",
+            "punchline": "Il encaisse la réclamation que la cuisine ne verra jamais.",
+            "resume": "La réclamation sur le pavé, c'est lui. La rupture à annoncer, c'est lui. Entre les deux, il porte.",
+            "statut": "a_produire",
+            "dureeSecondes": 37.5,
+            "videoUrl": null,
+            "posterUrl": "/defaut/metier-chef-de-rang.jpg",
+            "datePrevue": "2027-03-26",
+            "troisMots": "PENDANT LE SERVICE",
+            "tutorielModuleUrl": null,
+            "tutoriel": null,
+            "masterRapidoUrl": null,
+            "higgsfield": {
+              "duree": "10 s",
+              "format": "vertical 9:16",
+              "videoSourceUrl": null,
+              "source": null
+            },
+            "reseaux": {
+              "facebook": {
+                "statut": "a_venir",
+                "date": "2027-03-26",
+                "heure": "12:00",
+                "compte": "FoodEatUp",
+                "format": "Vidéo native 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              },
+              "instagram": {
+                "statut": "a_venir",
+                "date": "2027-03-26",
+                "heure": "18:30",
+                "compte": "foodeatup.cocuisinage",
+                "format": "Reel 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              },
+              "tiktok": {
+                "statut": "a_venir",
+                "date": "2027-03-26",
+                "heure": "19:00",
+                "compte": "foodeatup",
+                "format": "Vidéo native 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              },
+              "linkedin": {
+                "statut": "a_venir",
+                "date": "2027-03-26",
+                "heure": "08:00",
+                "compte": "FoodEatUp",
+                "format": "Vidéo native 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              },
+              "youtube": {
+                "statut": "a_venir",
+                "date": "2027-03-26",
+                "heure": "10:00",
+                "compte": "@FoodEatUp",
+                "format": "Short 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              }
+            },
+            "storyUrl": null
+          },
+          {
+            "id": "EP321",
+            "numero": 321,
+            "saison": 2,
+            "slug": "ep321-chef-de-rang-apres",
+            "titre": "Ce qu'il sait de ses clients repart avec lui",
+            "module": "Le chef de rang",
+            "chapitre": "Après le service",
+            "accroche": "Six tables, quatre canaux, une seule mémoire. La sienne.",
+            "punchline": "Il encaisse la réclamation que la cuisine ne verra jamais.",
+            "resume": "Les allergies, les habitudes, le prénom du fils. Tout est dans sa tête, et sa tête rentre chez elle à minuit.",
+            "statut": "a_produire",
+            "dureeSecondes": 37.5,
+            "videoUrl": null,
+            "posterUrl": "/defaut/metier-chef-de-rang.jpg",
+            "datePrevue": "2027-03-27",
+            "troisMots": "APRÈS LE SERVICE",
+            "tutorielModuleUrl": null,
+            "tutoriel": null,
+            "masterRapidoUrl": null,
+            "higgsfield": {
+              "duree": "10 s",
+              "format": "vertical 9:16",
+              "videoSourceUrl": null,
+              "source": null
+            },
+            "reseaux": {
+              "facebook": {
+                "statut": "a_venir",
+                "date": "2027-03-27",
+                "heure": "12:00",
+                "compte": "FoodEatUp",
+                "format": "Vidéo native 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              },
+              "instagram": {
+                "statut": "a_venir",
+                "date": "2027-03-27",
+                "heure": "18:30",
+                "compte": "foodeatup.cocuisinage",
+                "format": "Reel 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              },
+              "tiktok": {
+                "statut": "a_venir",
+                "date": "2027-03-27",
+                "heure": "19:00",
+                "compte": "foodeatup",
+                "format": "Vidéo native 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              },
+              "linkedin": {
+                "statut": "a_venir",
+                "date": "2027-03-27",
+                "heure": "08:00",
+                "compte": "FoodEatUp",
+                "format": "Vidéo native 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              },
+              "youtube": {
+                "statut": "a_venir",
+                "date": "2027-03-27",
+                "heure": "10:00",
+                "compte": "@FoodEatUp",
+                "format": "Short 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              }
+            },
+            "storyUrl": null
+          },
+          {
+            "id": "EP322",
+            "numero": 322,
+            "saison": 2,
+            "slug": "ep322-serveur-avant",
+            "titre": "Il dresse une salle dont il ne connaît pas encore la carte",
+            "module": "Le serveur",
+            "chapitre": "Avant le service",
+            "accroche": "Il porte, il annonce, il rassure. Et il apprend les ruptures en même temps que le client.",
+            "punchline": "Il est l'interface du restaurant, avec zéro information.",
+            "resume": "Onze heures trente. Il monte les tables. Le plat du jour, il l'apprendra en même temps que les clients.",
+            "statut": "a_produire",
+            "dureeSecondes": 20.0,
+            "videoUrl": null,
+            "posterUrl": "/defaut/metier-serveur.jpg",
+            "datePrevue": "2027-03-28",
+            "troisMots": "AVANT LE SERVICE",
+            "tutorielModuleUrl": null,
+            "tutoriel": null,
+            "masterRapidoUrl": null,
+            "higgsfield": {
+              "duree": "10 s",
+              "format": "vertical 9:16",
+              "videoSourceUrl": null,
+              "source": null
+            },
+            "reseaux": {
+              "facebook": {
+                "statut": "a_venir",
+                "date": "2027-03-28",
+                "heure": "12:00",
+                "compte": "FoodEatUp",
+                "format": "Vidéo native 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              },
+              "instagram": {
+                "statut": "a_venir",
+                "date": "2027-03-28",
+                "heure": "18:30",
+                "compte": "foodeatup.cocuisinage",
+                "format": "Reel 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              },
+              "tiktok": {
+                "statut": "a_venir",
+                "date": "2027-03-28",
+                "heure": "19:00",
+                "compte": "foodeatup",
+                "format": "Vidéo native 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              },
+              "linkedin": {
+                "statut": "a_venir",
+                "date": "2027-03-28",
+                "heure": "08:00",
+                "compte": "FoodEatUp",
+                "format": "Vidéo native 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              },
+              "youtube": {
+                "statut": "a_venir",
+                "date": "2027-03-28",
+                "heure": "10:00",
+                "compte": "@FoodEatUp",
+                "format": "Short 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              }
+            },
+            "storyUrl": null
+          },
+          {
+            "id": "EP323",
+            "numero": 323,
+            "saison": 2,
+            "slug": "ep323-serveur-pendant",
+            "titre": "Il apprend les ruptures en même temps que le client",
+            "module": "Le serveur",
+            "chapitre": "Pendant le service",
+            "accroche": "Il porte, il annonce, il rassure. Et il apprend les ruptures en même temps que le client.",
+            "punchline": "Il est l'interface du restaurant, avec zéro information.",
+            "resume": "« Je suis désolé, il n'y en a plus. » Il le découvre à la table, devant quelqu'un qui l'avait déjà choisi.",
+            "statut": "a_produire",
+            "dureeSecondes": 37.5,
+            "videoUrl": null,
+            "posterUrl": "/defaut/metier-serveur.jpg",
+            "datePrevue": "2027-03-29",
+            "troisMots": "PENDANT LE SERVICE",
+            "tutorielModuleUrl": null,
+            "tutoriel": null,
+            "masterRapidoUrl": null,
+            "higgsfield": {
+              "duree": "10 s",
+              "format": "vertical 9:16",
+              "videoSourceUrl": null,
+              "source": null
+            },
+            "reseaux": {
+              "facebook": {
+                "statut": "a_venir",
+                "date": "2027-03-29",
+                "heure": "12:00",
+                "compte": "FoodEatUp",
+                "format": "Vidéo native 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              },
+              "instagram": {
+                "statut": "a_venir",
+                "date": "2027-03-29",
+                "heure": "18:30",
+                "compte": "foodeatup.cocuisinage",
+                "format": "Reel 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              },
+              "tiktok": {
+                "statut": "a_venir",
+                "date": "2027-03-29",
+                "heure": "19:00",
+                "compte": "foodeatup",
+                "format": "Vidéo native 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              },
+              "linkedin": {
+                "statut": "a_venir",
+                "date": "2027-03-29",
+                "heure": "08:00",
+                "compte": "FoodEatUp",
+                "format": "Vidéo native 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              },
+              "youtube": {
+                "statut": "a_venir",
+                "date": "2027-03-29",
+                "heure": "10:00",
+                "compte": "@FoodEatUp",
+                "format": "Short 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              }
+            },
+            "storyUrl": null
+          },
+          {
+            "id": "EP324",
+            "numero": 324,
+            "saison": 2,
+            "slug": "ep324-serveur-apres",
+            "titre": "Il range une salle et remonte la suivante",
+            "module": "Le serveur",
+            "chapitre": "Après le service",
+            "accroche": "Il porte, il annonce, il rassure. Et il apprend les ruptures en même temps que le client.",
+            "punchline": "Il est l'interface du restaurant, avec zéro information.",
+            "resume": "Le service du soir se prépare pendant qu'on débarrasse celui du midi. Deux fois par jour, tous les jours.",
+            "statut": "a_produire",
+            "dureeSecondes": 20.0,
+            "videoUrl": null,
+            "posterUrl": "/defaut/metier-serveur.jpg",
+            "datePrevue": "2027-03-30",
+            "troisMots": "APRÈS LE SERVICE",
+            "tutorielModuleUrl": null,
+            "tutoriel": null,
+            "masterRapidoUrl": null,
+            "higgsfield": {
+              "duree": "10 s",
+              "format": "vertical 9:16",
+              "videoSourceUrl": null,
+              "source": null
+            },
+            "reseaux": {
+              "facebook": {
+                "statut": "a_venir",
+                "date": "2027-03-30",
+                "heure": "12:00",
+                "compte": "FoodEatUp",
+                "format": "Vidéo native 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              },
+              "instagram": {
+                "statut": "a_venir",
+                "date": "2027-03-30",
+                "heure": "18:30",
+                "compte": "foodeatup.cocuisinage",
+                "format": "Reel 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              },
+              "tiktok": {
+                "statut": "a_venir",
+                "date": "2027-03-30",
+                "heure": "19:00",
+                "compte": "foodeatup",
+                "format": "Vidéo native 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              },
+              "linkedin": {
+                "statut": "a_venir",
+                "date": "2027-03-30",
+                "heure": "08:00",
+                "compte": "FoodEatUp",
+                "format": "Vidéo native 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              },
+              "youtube": {
+                "statut": "a_venir",
+                "date": "2027-03-30",
+                "heure": "10:00",
+                "compte": "@FoodEatUp",
+                "format": "Short 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              }
+            },
+            "storyUrl": null
+          },
+          {
+            "id": "EP325",
+            "numero": 325,
+            "saison": 2,
+            "slug": "ep325-communication-avant",
+            "titre": "Le poste que personne ne tient",
+            "module": "Le responsable de la communication",
+            "chapitre": "Avant le service",
+            "accroche": "Ce poste n'existe pas. C'est le patron qui poste à 23 h, mal, quand il y pense.",
+            "punchline": "La seule boucle qui touche les sept autres est celle que personne ne tient.",
+            "resume": "Il n'y a pas de responsable de la communication. Il y a un patron qui poste à vingt-trois heures, mal, quand il y pense.",
+            "statut": "a_produire",
+            "dureeSecondes": 37.5,
+            "videoUrl": null,
+            "posterUrl": "/defaut/metier-communication.jpg",
+            "datePrevue": "2027-03-31",
+            "troisMots": "AVANT LE SERVICE",
+            "tutorielModuleUrl": null,
+            "tutoriel": null,
+            "masterRapidoUrl": null,
+            "higgsfield": {
+              "duree": "10 s",
+              "format": "vertical 9:16",
+              "videoSourceUrl": null,
+              "source": null
+            },
+            "reseaux": {
+              "facebook": {
+                "statut": "a_venir",
+                "date": "2027-03-31",
+                "heure": "12:00",
+                "compte": "FoodEatUp",
+                "format": "Vidéo native 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              },
+              "instagram": {
+                "statut": "a_venir",
+                "date": "2027-03-31",
+                "heure": "18:30",
+                "compte": "foodeatup.cocuisinage",
+                "format": "Reel 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              },
+              "tiktok": {
+                "statut": "a_venir",
+                "date": "2027-03-31",
+                "heure": "19:00",
+                "compte": "foodeatup",
+                "format": "Vidéo native 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              },
+              "linkedin": {
+                "statut": "a_venir",
+                "date": "2027-03-31",
+                "heure": "08:00",
+                "compte": "FoodEatUp",
+                "format": "Vidéo native 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              },
+              "youtube": {
+                "statut": "a_venir",
+                "date": "2027-03-31",
+                "heure": "10:00",
+                "compte": "@FoodEatUp",
+                "format": "Short 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              }
+            },
+            "storyUrl": null
+          },
+          {
+            "id": "EP326",
+            "numero": 326,
+            "saison": 2,
+            "slug": "ep326-communication-pendant",
+            "titre": "Pendant le service, personne ne communique",
+            "module": "Le responsable de la communication",
+            "chapitre": "Pendant le service",
+            "accroche": "Ce poste n'existe pas. C'est le patron qui poste à 23 h, mal, quand il y pense.",
+            "punchline": "La seule boucle qui touche les sept autres est celle que personne ne tient.",
+            "resume": "C'est justement l'heure où il y aurait quelque chose à montrer. Tout le monde est en salle.",
+            "statut": "a_produire",
+            "dureeSecondes": 20.0,
+            "videoUrl": null,
+            "posterUrl": "/defaut/metier-communication.jpg",
+            "datePrevue": "2027-04-01",
+            "troisMots": "PENDANT LE SERVICE",
+            "tutorielModuleUrl": null,
+            "tutoriel": null,
+            "masterRapidoUrl": null,
+            "higgsfield": {
+              "duree": "10 s",
+              "format": "vertical 9:16",
+              "videoSourceUrl": null,
+              "source": null
+            },
+            "reseaux": {
+              "facebook": {
+                "statut": "a_venir",
+                "date": "2027-04-01",
+                "heure": "12:00",
+                "compte": "FoodEatUp",
+                "format": "Vidéo native 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              },
+              "instagram": {
+                "statut": "a_venir",
+                "date": "2027-04-01",
+                "heure": "18:30",
+                "compte": "foodeatup.cocuisinage",
+                "format": "Reel 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              },
+              "tiktok": {
+                "statut": "a_venir",
+                "date": "2027-04-01",
+                "heure": "19:00",
+                "compte": "foodeatup",
+                "format": "Vidéo native 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              },
+              "linkedin": {
+                "statut": "a_venir",
+                "date": "2027-04-01",
+                "heure": "08:00",
+                "compte": "FoodEatUp",
+                "format": "Vidéo native 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              },
+              "youtube": {
+                "statut": "a_venir",
+                "date": "2027-04-01",
+                "heure": "10:00",
+                "compte": "@FoodEatUp",
+                "format": "Short 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              }
+            },
+            "storyUrl": null
+          },
+          {
+            "id": "EP327",
+            "numero": 327,
+            "saison": 2,
+            "slug": "ep327-communication-apres",
+            "titre": "Ce qu'on aurait pu dire, et qu'on n'a pas dit",
+            "module": "Le responsable de la communication",
+            "chapitre": "Après le service",
+            "accroche": "Ce poste n'existe pas. C'est le patron qui poste à 23 h, mal, quand il y pense.",
+            "punchline": "La seule boucle qui touche les sept autres est celle que personne ne tient.",
+            "resume": "Douze kilos de saumon à écouler avant vendredi. La boucle communication est la seule qui touche les sept autres — et c'est celle qui reste vide.",
+            "statut": "a_produire",
+            "dureeSecondes": 37.5,
+            "videoUrl": null,
+            "posterUrl": "/defaut/metier-communication.jpg",
+            "datePrevue": "2027-04-02",
+            "troisMots": "APRÈS LE SERVICE",
+            "tutorielModuleUrl": null,
+            "tutoriel": null,
+            "masterRapidoUrl": null,
+            "higgsfield": {
+              "duree": "10 s",
+              "format": "vertical 9:16",
+              "videoSourceUrl": null,
+              "source": null
+            },
+            "reseaux": {
+              "facebook": {
+                "statut": "a_venir",
+                "date": "2027-04-02",
+                "heure": "12:00",
+                "compte": "FoodEatUp",
+                "format": "Vidéo native 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              },
+              "instagram": {
+                "statut": "a_venir",
+                "date": "2027-04-02",
+                "heure": "18:30",
+                "compte": "foodeatup.cocuisinage",
+                "format": "Reel 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              },
+              "tiktok": {
+                "statut": "a_venir",
+                "date": "2027-04-02",
+                "heure": "19:00",
+                "compte": "foodeatup",
+                "format": "Vidéo native 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              },
+              "linkedin": {
+                "statut": "a_venir",
+                "date": "2027-04-02",
+                "heure": "08:00",
+                "compte": "FoodEatUp",
+                "format": "Vidéo native 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              },
+              "youtube": {
+                "statut": "a_venir",
+                "date": "2027-04-02",
+                "heure": "10:00",
+                "compte": "@FoodEatUp",
+                "format": "Short 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              }
+            },
+            "storyUrl": null
+          },
+          {
+            "id": "EP328",
+            "numero": 328,
+            "saison": 2,
+            "slug": "ep328-client-avant",
+            "titre": "Son avant le service, c'est trois jours plus tôt",
+            "module": "Le client",
+            "chapitre": "Avant le service",
+            "accroche": "Il ne verra jamais le logiciel. Il verra tout ce que le logiciel a fait — ou pas fait.",
+            "punchline": "Son « avant le service » n'est pas la mise en place : c'est la réservation, trois jours plus tôt.",
+            "resume": "Il cherche, il compare, il réserve. Sur le site du restaurant ou sur une plateforme qui prend sa commission — ça se joue là.",
+            "statut": "a_produire",
+            "dureeSecondes": 37.5,
+            "videoUrl": null,
+            "posterUrl": "/defaut/metier-client.jpg",
+            "datePrevue": "2027-04-03",
+            "troisMots": "AVANT LE SERVICE",
+            "tutorielModuleUrl": null,
+            "tutoriel": null,
+            "masterRapidoUrl": null,
+            "higgsfield": {
+              "duree": "10 s",
+              "format": "vertical 9:16",
+              "videoSourceUrl": null,
+              "source": null
+            },
+            "reseaux": {
+              "facebook": {
+                "statut": "a_venir",
+                "date": "2027-04-03",
+                "heure": "12:00",
+                "compte": "FoodEatUp",
+                "format": "Vidéo native 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              },
+              "instagram": {
+                "statut": "a_venir",
+                "date": "2027-04-03",
+                "heure": "18:30",
+                "compte": "foodeatup.cocuisinage",
+                "format": "Reel 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              },
+              "tiktok": {
+                "statut": "a_venir",
+                "date": "2027-04-03",
+                "heure": "19:00",
+                "compte": "foodeatup",
+                "format": "Vidéo native 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              },
+              "linkedin": {
+                "statut": "a_venir",
+                "date": "2027-04-03",
+                "heure": "08:00",
+                "compte": "FoodEatUp",
+                "format": "Vidéo native 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              },
+              "youtube": {
+                "statut": "a_venir",
+                "date": "2027-04-03",
+                "heure": "10:00",
+                "compte": "@FoodEatUp",
+                "format": "Short 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              }
+            },
+            "storyUrl": null
+          },
+          {
+            "id": "EP329",
+            "numero": 329,
+            "saison": 2,
+            "slug": "ep329-client-pendant",
+            "titre": "Il ne verra jamais le logiciel",
+            "module": "Le client",
+            "chapitre": "Pendant le service",
+            "accroche": "Il ne verra jamais le logiciel. Il verra tout ce que le logiciel a fait — ou pas fait.",
+            "punchline": "Son « avant le service » n'est pas la mise en place : c'est la réservation, trois jours plus tôt.",
+            "resume": "Il verra une table prête à son nom, une allergie déjà notée, un plat qui revient trop cuit. Tout ce que le logiciel a fait, ou n'a pas fait.",
+            "statut": "a_produire",
+            "dureeSecondes": 37.5,
+            "videoUrl": null,
+            "posterUrl": "/defaut/metier-client.jpg",
+            "datePrevue": "2027-04-04",
+            "troisMots": "PENDANT LE SERVICE",
+            "tutorielModuleUrl": null,
+            "tutoriel": null,
+            "masterRapidoUrl": null,
+            "higgsfield": {
+              "duree": "10 s",
+              "format": "vertical 9:16",
+              "videoSourceUrl": null,
+              "source": null
+            },
+            "reseaux": {
+              "facebook": {
+                "statut": "a_venir",
+                "date": "2027-04-04",
+                "heure": "12:00",
+                "compte": "FoodEatUp",
+                "format": "Vidéo native 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              },
+              "instagram": {
+                "statut": "a_venir",
+                "date": "2027-04-04",
+                "heure": "18:30",
+                "compte": "foodeatup.cocuisinage",
+                "format": "Reel 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              },
+              "tiktok": {
+                "statut": "a_venir",
+                "date": "2027-04-04",
+                "heure": "19:00",
+                "compte": "foodeatup",
+                "format": "Vidéo native 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              },
+              "linkedin": {
+                "statut": "a_venir",
+                "date": "2027-04-04",
+                "heure": "08:00",
+                "compte": "FoodEatUp",
+                "format": "Vidéo native 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              },
+              "youtube": {
+                "statut": "a_venir",
+                "date": "2027-04-04",
+                "heure": "10:00",
+                "compte": "@FoodEatUp",
+                "format": "Short 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              }
+            },
+            "storyUrl": null
+          },
+          {
+            "id": "EP330",
+            "numero": 330,
+            "saison": 2,
+            "slug": "ep330-client-apres",
+            "titre": "Ce qu'il écrit le soir vaut le service entier",
+            "module": "Le client",
+            "chapitre": "Après le service",
+            "accroche": "Il ne verra jamais le logiciel. Il verra tout ce que le logiciel a fait — ou pas fait.",
+            "punchline": "Son « avant le service » n'est pas la mise en place : c'est la réservation, trois jours plus tôt.",
+            "resume": "Vingt-trois heures, dans le métro, trois étoiles. Personne au restaurant ne saura jamais que c'était le pavé.",
+            "statut": "a_produire",
+            "dureeSecondes": 37.5,
+            "videoUrl": null,
+            "posterUrl": "/defaut/metier-client.jpg",
+            "datePrevue": "2027-04-05",
+            "troisMots": "APRÈS LE SERVICE",
+            "tutorielModuleUrl": null,
+            "tutoriel": null,
+            "masterRapidoUrl": null,
+            "higgsfield": {
+              "duree": "10 s",
+              "format": "vertical 9:16",
+              "videoSourceUrl": null,
+              "source": null
+            },
+            "reseaux": {
+              "facebook": {
+                "statut": "a_venir",
+                "date": "2027-04-05",
+                "heure": "12:00",
+                "compte": "FoodEatUp",
+                "format": "Vidéo native 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              },
+              "instagram": {
+                "statut": "a_venir",
+                "date": "2027-04-05",
+                "heure": "18:30",
+                "compte": "foodeatup.cocuisinage",
+                "format": "Reel 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              },
+              "tiktok": {
+                "statut": "a_venir",
+                "date": "2027-04-05",
+                "heure": "19:00",
+                "compte": "foodeatup",
+                "format": "Vidéo native 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              },
+              "linkedin": {
+                "statut": "a_venir",
+                "date": "2027-04-05",
+                "heure": "08:00",
+                "compte": "FoodEatUp",
+                "format": "Vidéo native 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              },
+              "youtube": {
+                "statut": "a_venir",
+                "date": "2027-04-05",
+                "heure": "10:00",
+                "compte": "@FoodEatUp",
+                "format": "Short 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              }
+            },
+            "storyUrl": null
+          },
+          {
+            "id": "EP331",
+            "numero": 331,
+            "saison": 2,
+            "slug": "ep331-expert-comptable-apres",
+            "titre": "Le mois, pas la journée",
+            "module": "L'expert-comptable et le patron",
+            "chapitre": "Le mois entier",
+            "accroche": "Trente journées ont fini ici.",
+            "punchline": "Trente services deviennent un seul chiffre.",
+            "resume": "Les trente services de la série arrivent sur un même tableau. Ce n'est plus un métier qu'on regarde, c'est ce que les dix métiers ont produit ensemble.",
+            "statut": "a_produire",
+            "dureeSecondes": 37.5,
+            "videoUrl": null,
+            "posterUrl": "/defaut/metier-expert-comptable.jpg",
+            "datePrevue": "2027-04-06",
+            "troisMots": "LE MOIS ENTIER",
+            "tutorielModuleUrl": null,
+            "tutoriel": null,
+            "masterRapidoUrl": null,
+            "higgsfield": {
+              "duree": "10 s",
+              "format": "vertical 9:16",
+              "videoSourceUrl": null,
+              "source": null
+            },
+            "reseaux": {
+              "facebook": {
+                "statut": "a_venir",
+                "date": "2027-04-06",
+                "heure": "12:00",
+                "compte": "FoodEatUp",
+                "format": "Vidéo native 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              },
+              "instagram": {
+                "statut": "a_venir",
+                "date": "2027-04-06",
+                "heure": "18:30",
+                "compte": "foodeatup.cocuisinage",
+                "format": "Reel 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              },
+              "tiktok": {
+                "statut": "a_venir",
+                "date": "2027-04-06",
+                "heure": "19:00",
+                "compte": "foodeatup",
+                "format": "Vidéo native 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              },
+              "linkedin": {
+                "statut": "a_venir",
+                "date": "2027-04-06",
+                "heure": "08:00",
+                "compte": "FoodEatUp",
+                "format": "Vidéo native 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              },
+              "youtube": {
+                "statut": "a_venir",
+                "date": "2027-04-06",
+                "heure": "10:00",
+                "compte": "@FoodEatUp",
+                "format": "Short 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              }
+            },
+            "storyUrl": null
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "lia-dans-foodeatup",
+    "nom": "L'IA dans FoodEatUp",
+    "pitch": "Du premier prompt à l'orchestration complète. Aucun concept expliqué à vide : douze kilos de saumon traversent les trente et un épisodes.",
+    "format": "Vertical 1080×1920 · 37,5 s · 31 épisodes",
+    "statut": "a-venir",
+    "premiereDiffusion": "2027-03-01",
+    "saisons": [
+      {
+        "numero": 1,
+        "titre": "Ce qu'il faut avoir compris",
+        "pitch": "Sept notions, chacune ancrée sur un geste du restaurant.",
+        "episodes": [
+          {
+            "id": "EP401",
+            "numero": 401,
+            "saison": 1,
+            "slug": "ep401-qui-je-suis",
+            "titre": "Qui je suis",
+            "module": "Le système",
+            "chapitre": "Ce qu'il faut avoir compris",
+            "accroche": "Ce n'est pas un cours d'informatique. C'est votre restaurant.",
+            "punchline": "À la fin de la série, vous écrivez une phrase et votre restaurant l'exécute.",
+            "resume": "Le chef présente celui qui va parler pendant trente épisodes — et pourquoi ce n'est pas un cours d'informatique.",
+            "statut": "a_produire",
+            "dureeSecondes": 37.5,
+            "videoUrl": null,
+            "posterUrl": "/defaut/boucle-generique.jpg",
+            "datePrevue": "2027-04-07",
+            "troisMots": "QUI JE SUIS",
+            "tutorielModuleUrl": null,
+            "tutoriel": null,
+            "masterRapidoUrl": null,
+            "higgsfield": {
+              "duree": "10 s",
+              "format": "vertical 9:16",
+              "videoSourceUrl": null,
+              "source": null
+            },
+            "reseaux": {
+              "facebook": {
+                "statut": "a_venir",
+                "date": "2027-04-07",
+                "heure": "12:00",
+                "compte": "FoodEatUp",
+                "format": "Vidéo native 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              },
+              "instagram": {
+                "statut": "a_venir",
+                "date": "2027-04-07",
+                "heure": "18:30",
+                "compte": "foodeatup.cocuisinage",
+                "format": "Reel 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              },
+              "tiktok": {
+                "statut": "a_venir",
+                "date": "2027-04-07",
+                "heure": "19:00",
+                "compte": "foodeatup",
+                "format": "Vidéo native 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              },
+              "linkedin": {
+                "statut": "a_venir",
+                "date": "2027-04-07",
+                "heure": "08:00",
+                "compte": "FoodEatUp",
+                "format": "Vidéo native 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              },
+              "youtube": {
+                "statut": "a_venir",
+                "date": "2027-04-07",
+                "heure": "10:00",
+                "compte": "@FoodEatUp",
+                "format": "Short 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              }
+            },
+            "storyUrl": null
+          },
+          {
+            "id": "EP402",
+            "numero": 402,
+            "saison": 1,
+            "slug": "ep402-douze-kilos-de-saumon",
+            "titre": "Douze kilos de saumon",
+            "module": "Ce que l'IA change, en un cas",
+            "chapitre": "Ce qu'il faut avoir compris",
+            "accroche": "Ce que l'IA change, en un cas",
+            "punchline": "Le cas revient à chaque épisode de la série. C'est le fil.",
+            "resume": "Jeudi neuf heures, douze kilos de saumon, DLC vendredi soir. On regarde ce qui se passe aujourd'hui, puis ce qui se passe quand les boucles sont branchées.",
+            "statut": "a_produire",
+            "dureeSecondes": 37.5,
+            "videoUrl": null,
+            "posterUrl": "/defaut/boucle-generique.jpg",
+            "datePrevue": "2027-04-08",
+            "troisMots": "DOUZE KILOS DE SAUMON",
+            "tutorielModuleUrl": null,
+            "tutoriel": null,
+            "masterRapidoUrl": null,
+            "higgsfield": {
+              "duree": "10 s",
+              "format": "vertical 9:16",
+              "videoSourceUrl": null,
+              "source": null
+            },
+            "reseaux": {
+              "facebook": {
+                "statut": "a_venir",
+                "date": "2027-04-08",
+                "heure": "12:00",
+                "compte": "FoodEatUp",
+                "format": "Vidéo native 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              },
+              "instagram": {
+                "statut": "a_venir",
+                "date": "2027-04-08",
+                "heure": "18:30",
+                "compte": "foodeatup.cocuisinage",
+                "format": "Reel 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              },
+              "tiktok": {
+                "statut": "a_venir",
+                "date": "2027-04-08",
+                "heure": "19:00",
+                "compte": "foodeatup",
+                "format": "Vidéo native 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              },
+              "linkedin": {
+                "statut": "a_venir",
+                "date": "2027-04-08",
+                "heure": "08:00",
+                "compte": "FoodEatUp",
+                "format": "Vidéo native 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              },
+              "youtube": {
+                "statut": "a_venir",
+                "date": "2027-04-08",
+                "heure": "10:00",
+                "compte": "@FoodEatUp",
+                "format": "Short 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              }
+            },
+            "storyUrl": null
+          },
+          {
+            "id": "EP403",
+            "numero": 403,
+            "saison": 1,
+            "slug": "ep403-ecrire-une-phrase-qui-agit",
+            "titre": "Écrire une phrase qui agit",
+            "module": "Le prompt",
+            "chapitre": "Ce qu'il faut avoir compris",
+            "accroche": "Le prompt",
+            "punchline": "Un prompt n'est pas une question. C'est un ordre de travail.",
+            "resume": "« Ajoute le poulet fermier à 12,80 le kilo chez Metro. » L'ingrédient est créé, le prix enregistré, le fournisseur lié. On n'a rien cliqué.",
+            "statut": "a_produire",
+            "dureeSecondes": 37.5,
+            "videoUrl": null,
+            "posterUrl": "/defaut/boucle-generique.jpg",
+            "datePrevue": "2027-04-09",
+            "troisMots": "ÉCRIRE UNE PHRASE QUI AG",
+            "tutorielModuleUrl": null,
+            "tutoriel": null,
+            "masterRapidoUrl": null,
+            "higgsfield": {
+              "duree": "10 s",
+              "format": "vertical 9:16",
+              "videoSourceUrl": null,
+              "source": null
+            },
+            "reseaux": {
+              "facebook": {
+                "statut": "a_venir",
+                "date": "2027-04-09",
+                "heure": "12:00",
+                "compte": "FoodEatUp",
+                "format": "Vidéo native 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              },
+              "instagram": {
+                "statut": "a_venir",
+                "date": "2027-04-09",
+                "heure": "18:30",
+                "compte": "foodeatup.cocuisinage",
+                "format": "Reel 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              },
+              "tiktok": {
+                "statut": "a_venir",
+                "date": "2027-04-09",
+                "heure": "19:00",
+                "compte": "foodeatup",
+                "format": "Vidéo native 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              },
+              "linkedin": {
+                "statut": "a_venir",
+                "date": "2027-04-09",
+                "heure": "08:00",
+                "compte": "FoodEatUp",
+                "format": "Vidéo native 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              },
+              "youtube": {
+                "statut": "a_venir",
+                "date": "2027-04-09",
+                "heure": "10:00",
+                "compte": "@FoodEatUp",
+                "format": "Short 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              }
+            },
+            "storyUrl": null
+          },
+          {
+            "id": "EP404",
+            "numero": 404,
+            "saison": 1,
+            "slug": "ep404-la-difference-entre-repondre-et-agir",
+            "titre": "La différence entre répondre et agir",
+            "module": "Le MCP",
+            "chapitre": "Ce qu'il faut avoir compris",
+            "accroche": "Le MCP",
+            "punchline": "177 outils exposés au standard, une paire d'identifiants par établissement.",
+            "resume": "Un chatbot lit une base de connaissances et ne change rien. Un agent MCP appelle les outils métier, modifie les données, et demande confirmation avant toute action sensible.",
+            "statut": "a_produire",
+            "dureeSecondes": 37.5,
+            "videoUrl": null,
+            "posterUrl": "/defaut/boucle-generique.jpg",
+            "datePrevue": "2027-04-10",
+            "troisMots": "LA DIFFÉRENCE ENTRE RÉPO",
+            "tutorielModuleUrl": null,
+            "tutoriel": null,
+            "masterRapidoUrl": null,
+            "higgsfield": {
+              "duree": "10 s",
+              "format": "vertical 9:16",
+              "videoSourceUrl": null,
+              "source": null
+            },
+            "reseaux": {
+              "facebook": {
+                "statut": "a_venir",
+                "date": "2027-04-10",
+                "heure": "12:00",
+                "compte": "FoodEatUp",
+                "format": "Vidéo native 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              },
+              "instagram": {
+                "statut": "a_venir",
+                "date": "2027-04-10",
+                "heure": "18:30",
+                "compte": "foodeatup.cocuisinage",
+                "format": "Reel 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              },
+              "tiktok": {
+                "statut": "a_venir",
+                "date": "2027-04-10",
+                "heure": "19:00",
+                "compte": "foodeatup",
+                "format": "Vidéo native 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              },
+              "linkedin": {
+                "statut": "a_venir",
+                "date": "2027-04-10",
+                "heure": "08:00",
+                "compte": "FoodEatUp",
+                "format": "Vidéo native 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              },
+              "youtube": {
+                "statut": "a_venir",
+                "date": "2027-04-10",
+                "heure": "10:00",
+                "compte": "@FoodEatUp",
+                "format": "Short 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              }
+            },
+            "storyUrl": null
+          },
+          {
+            "id": "EP405",
+            "numero": 405,
+            "saison": 1,
+            "slug": "ep405-ce-que-foodeatup-fait-vraiment",
+            "titre": "Ce que FoodEatUp fait vraiment",
+            "module": "Le produit",
+            "chapitre": "Ce qu'il faut avoir compris",
+            "accroche": "Le produit",
+            "punchline": "C'est ce qui permet à une phrase de traverser huit domaines sans qu'on l'ait programmée.",
+            "resume": "Pas une liste de modules : un restaurant modelé. Chaque outil suit la forme d'une journée de service plutôt que la forme d'une base de données.",
+            "statut": "a_produire",
+            "dureeSecondes": 37.5,
+            "videoUrl": null,
+            "posterUrl": "/defaut/boucle-generique.jpg",
+            "datePrevue": "2027-04-11",
+            "troisMots": "CE QUE FOODEATUP FAIT VR",
+            "tutorielModuleUrl": null,
+            "tutoriel": null,
+            "masterRapidoUrl": null,
+            "higgsfield": {
+              "duree": "10 s",
+              "format": "vertical 9:16",
+              "videoSourceUrl": null,
+              "source": null
+            },
+            "reseaux": {
+              "facebook": {
+                "statut": "a_venir",
+                "date": "2027-04-11",
+                "heure": "12:00",
+                "compte": "FoodEatUp",
+                "format": "Vidéo native 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              },
+              "instagram": {
+                "statut": "a_venir",
+                "date": "2027-04-11",
+                "heure": "18:30",
+                "compte": "foodeatup.cocuisinage",
+                "format": "Reel 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              },
+              "tiktok": {
+                "statut": "a_venir",
+                "date": "2027-04-11",
+                "heure": "19:00",
+                "compte": "foodeatup",
+                "format": "Vidéo native 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              },
+              "linkedin": {
+                "statut": "a_venir",
+                "date": "2027-04-11",
+                "heure": "08:00",
+                "compte": "FoodEatUp",
+                "format": "Vidéo native 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              },
+              "youtube": {
+                "statut": "a_venir",
+                "date": "2027-04-11",
+                "heure": "10:00",
+                "compte": "@FoodEatUp",
+                "format": "Short 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              }
+            },
+            "storyUrl": null
+          },
+          {
+            "id": "EP406",
+            "numero": 406,
+            "saison": 1,
+            "slug": "ep406-les-deux-boucles-infinies",
+            "titre": "Les deux boucles infinies",
+            "module": "Le huit",
+            "chapitre": "Ce qu'il faut avoir compris",
+            "accroche": "Le huit",
+            "punchline": "Ce point, c'est « pendant le service ». Le centre du schéma et le centre de la journée sont le même endroit.",
+            "resume": "Le logo est un huit. C'est aussi le plan du restaurant : la boucle gestion à gauche, la boucle vente à droite, et un seul point où elles se touchent.",
+            "statut": "a_produire",
+            "dureeSecondes": 37.5,
+            "videoUrl": null,
+            "posterUrl": "/defaut/boucle-generique.jpg",
+            "datePrevue": "2027-04-12",
+            "troisMots": "LES DEUX BOUCLES INFINIE",
+            "tutorielModuleUrl": null,
+            "tutoriel": null,
+            "masterRapidoUrl": null,
+            "higgsfield": {
+              "duree": "10 s",
+              "format": "vertical 9:16",
+              "videoSourceUrl": null,
+              "source": null
+            },
+            "reseaux": {
+              "facebook": {
+                "statut": "a_venir",
+                "date": "2027-04-12",
+                "heure": "12:00",
+                "compte": "FoodEatUp",
+                "format": "Vidéo native 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              },
+              "instagram": {
+                "statut": "a_venir",
+                "date": "2027-04-12",
+                "heure": "18:30",
+                "compte": "foodeatup.cocuisinage",
+                "format": "Reel 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              },
+              "tiktok": {
+                "statut": "a_venir",
+                "date": "2027-04-12",
+                "heure": "19:00",
+                "compte": "foodeatup",
+                "format": "Vidéo native 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              },
+              "linkedin": {
+                "statut": "a_venir",
+                "date": "2027-04-12",
+                "heure": "08:00",
+                "compte": "FoodEatUp",
+                "format": "Vidéo native 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              },
+              "youtube": {
+                "statut": "a_venir",
+                "date": "2027-04-12",
+                "heure": "10:00",
+                "compte": "@FoodEatUp",
+                "format": "Short 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              }
+            },
+            "storyUrl": null
+          },
+          {
+            "id": "EP407",
+            "numero": 407,
+            "saison": 1,
+            "slug": "ep407-pourquoi-sept-logiciels-ne-font-pas-un-systeme",
+            "titre": "Pourquoi sept logiciels ne font pas un système",
+            "module": "Les trois lois",
+            "chapitre": "Ce qu'il faut avoir compris",
+            "accroche": "Les trois lois",
+            "punchline": "Sept logiciels qui tiennent chacun un bout ne font pas sept boucles connectées. Ils font sept tunnels.",
+            "resume": "Une boucle se referme. Une boucle en nourrit une autre. Casser une sous-boucle casse les deux grandes.",
+            "statut": "a_produire",
+            "dureeSecondes": 37.5,
+            "videoUrl": null,
+            "posterUrl": "/defaut/boucle-generique.jpg",
+            "datePrevue": "2027-04-13",
+            "troisMots": "POURQUOI SEPT LOGICIELS ",
+            "tutorielModuleUrl": null,
+            "tutoriel": null,
+            "masterRapidoUrl": null,
+            "higgsfield": {
+              "duree": "10 s",
+              "format": "vertical 9:16",
+              "videoSourceUrl": null,
+              "source": null
+            },
+            "reseaux": {
+              "facebook": {
+                "statut": "a_venir",
+                "date": "2027-04-13",
+                "heure": "12:00",
+                "compte": "FoodEatUp",
+                "format": "Vidéo native 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              },
+              "instagram": {
+                "statut": "a_venir",
+                "date": "2027-04-13",
+                "heure": "18:30",
+                "compte": "foodeatup.cocuisinage",
+                "format": "Reel 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              },
+              "tiktok": {
+                "statut": "a_venir",
+                "date": "2027-04-13",
+                "heure": "19:00",
+                "compte": "foodeatup",
+                "format": "Vidéo native 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              },
+              "linkedin": {
+                "statut": "a_venir",
+                "date": "2027-04-13",
+                "heure": "08:00",
+                "compte": "FoodEatUp",
+                "format": "Vidéo native 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              },
+              "youtube": {
+                "statut": "a_venir",
+                "date": "2027-04-13",
+                "heure": "10:00",
+                "compte": "@FoodEatUp",
+                "format": "Short 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              }
+            },
+            "storyUrl": null
+          }
+        ]
+      },
+      {
+        "numero": 2,
+        "titre": "Les huit boucles, une par une",
+        "pitch": "Les deux grandes, les huit sous-boucles, et le point où elles se croisent.",
+        "episodes": [
+          {
+            "id": "EP408",
+            "numero": 408,
+            "saison": 2,
+            "slug": "ep408-gestion-et-vente-les-deux-moities",
+            "titre": "Gestion et vente, les deux moitiés",
+            "module": "Le système",
+            "chapitre": "Les huit boucles",
+            "accroche": "Une des deux moitiés ne se voit jamais depuis la salle.",
+            "punchline": "La gestion vous rend capable de servir.",
+            "resume": "La gestion vous rend capable de servir. La vente fait venir le monde. L'une ne se voit pas depuis la salle — mais quand elle grippe, le saumon manque un vendredi soir.",
+            "statut": "a_produire",
+            "dureeSecondes": 37.5,
+            "videoUrl": null,
+            "posterUrl": "/defaut/boucle-generique.jpg",
+            "datePrevue": "2027-04-14",
+            "troisMots": "GESTION ET VENTE, LES DE",
+            "tutorielModuleUrl": null,
+            "tutoriel": null,
+            "masterRapidoUrl": null,
+            "higgsfield": {
+              "duree": "10 s",
+              "format": "vertical 9:16",
+              "videoSourceUrl": null,
+              "source": null
+            },
+            "reseaux": {
+              "facebook": {
+                "statut": "a_venir",
+                "date": "2027-04-14",
+                "heure": "12:00",
+                "compte": "FoodEatUp",
+                "format": "Vidéo native 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              },
+              "instagram": {
+                "statut": "a_venir",
+                "date": "2027-04-14",
+                "heure": "18:30",
+                "compte": "foodeatup.cocuisinage",
+                "format": "Reel 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              },
+              "tiktok": {
+                "statut": "a_venir",
+                "date": "2027-04-14",
+                "heure": "19:00",
+                "compte": "foodeatup",
+                "format": "Vidéo native 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              },
+              "linkedin": {
+                "statut": "a_venir",
+                "date": "2027-04-14",
+                "heure": "08:00",
+                "compte": "FoodEatUp",
+                "format": "Vidéo native 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              },
+              "youtube": {
+                "statut": "a_venir",
+                "date": "2027-04-14",
+                "heure": "10:00",
+                "compte": "@FoodEatUp",
+                "format": "Short 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              }
+            },
+            "storyUrl": null
+          },
+          {
+            "id": "EP409",
+            "numero": 409,
+            "saison": 2,
+            "slug": "ep409-configuration-boutique-le-socle-de-la-boucle-gestion",
+            "titre": "Configuration boutique — le socle de la boucle gestion",
+            "module": "Configuration boutique",
+            "chapitre": "Les huit boucles",
+            "accroche": "Une fiche technique fausse, et tout le reste est faux avec elle.",
+            "punchline": "Tout le reste tourne à vide. Une fiche fausse fausse le food cost, le stock, la marge et le prix.",
+            "resume": "Le document de référence de toute la boucle gestion. La fiche technique dit ce qu'il y a dans le plat, ce qu'il coûte et ce qu'il rapporte.",
+            "statut": "a_produire",
+            "dureeSecondes": 37.5,
+            "videoUrl": null,
+            "posterUrl": "/defaut/boucle-configuration.jpg",
+            "datePrevue": "2027-04-15",
+            "troisMots": "CONFIGURATION BOUTIQUE",
+            "tutorielModuleUrl": null,
+            "tutoriel": null,
+            "masterRapidoUrl": null,
+            "higgsfield": {
+              "duree": "10 s",
+              "format": "vertical 9:16",
+              "videoSourceUrl": null,
+              "source": null
+            },
+            "reseaux": {
+              "facebook": {
+                "statut": "a_venir",
+                "date": "2027-04-15",
+                "heure": "12:00",
+                "compte": "FoodEatUp",
+                "format": "Vidéo native 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              },
+              "instagram": {
+                "statut": "a_venir",
+                "date": "2027-04-15",
+                "heure": "18:30",
+                "compte": "foodeatup.cocuisinage",
+                "format": "Reel 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              },
+              "tiktok": {
+                "statut": "a_venir",
+                "date": "2027-04-15",
+                "heure": "19:00",
+                "compte": "foodeatup",
+                "format": "Vidéo native 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              },
+              "linkedin": {
+                "statut": "a_venir",
+                "date": "2027-04-15",
+                "heure": "08:00",
+                "compte": "FoodEatUp",
+                "format": "Vidéo native 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              },
+              "youtube": {
+                "statut": "a_venir",
+                "date": "2027-04-15",
+                "heure": "10:00",
+                "compte": "@FoodEatUp",
+                "format": "Short 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              }
+            },
+            "storyUrl": null
+          },
+          {
+            "id": "EP410",
+            "numero": 410,
+            "saison": 2,
+            "slug": "ep410-equipe-qui-execute",
+            "titre": "Équipe — qui exécute",
+            "module": "Équipe",
+            "chapitre": "Les huit boucles",
+            "accroche": "Combien de couverts vous pouvez servir. Vraiment.",
+            "punchline": "Sur-effectif le mardi, sous-effectif le samedi. Systématiquement.",
+            "resume": "La capacité humaine — combien de couverts peuvent réellement être servis — et le coût salarial, premier poste maîtrisable d'un restaurant.",
+            "statut": "a_produire",
+            "dureeSecondes": 37.5,
+            "videoUrl": null,
+            "posterUrl": "/defaut/boucle-equipe.jpg",
+            "datePrevue": "2027-04-16",
+            "troisMots": "ÉQUIPE",
+            "tutorielModuleUrl": null,
+            "tutoriel": null,
+            "masterRapidoUrl": null,
+            "higgsfield": {
+              "duree": "10 s",
+              "format": "vertical 9:16",
+              "videoSourceUrl": null,
+              "source": null
+            },
+            "reseaux": {
+              "facebook": {
+                "statut": "a_venir",
+                "date": "2027-04-16",
+                "heure": "12:00",
+                "compte": "FoodEatUp",
+                "format": "Vidéo native 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              },
+              "instagram": {
+                "statut": "a_venir",
+                "date": "2027-04-16",
+                "heure": "18:30",
+                "compte": "foodeatup.cocuisinage",
+                "format": "Reel 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              },
+              "tiktok": {
+                "statut": "a_venir",
+                "date": "2027-04-16",
+                "heure": "19:00",
+                "compte": "foodeatup",
+                "format": "Vidéo native 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              },
+              "linkedin": {
+                "statut": "a_venir",
+                "date": "2027-04-16",
+                "heure": "08:00",
+                "compte": "FoodEatUp",
+                "format": "Vidéo native 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              },
+              "youtube": {
+                "statut": "a_venir",
+                "date": "2027-04-16",
+                "heure": "10:00",
+                "compte": "@FoodEatUp",
+                "format": "Short 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              }
+            },
+            "storyUrl": null
+          },
+          {
+            "id": "EP411",
+            "numero": 411,
+            "saison": 2,
+            "slug": "ep411-stockvisionai-la-boucle-mere",
+            "titre": "StockVisionAI — la boucle mère",
+            "module": "StockVisionAI",
+            "chapitre": "Les huit boucles",
+            "accroche": "Ce qu'il reste dans le frigo décide de ce qu'on vend ce soir.",
+            "punchline": "Une rupture un samedi soir, ou quatre à dix pour cent des achats à la poubelle le dimanche.",
+            "resume": "La disponibilité réelle, qui conditionne ce qui peut être vendu. Et le coût matière réel, qui conditionne la marge.",
+            "statut": "a_produire",
+            "dureeSecondes": 37.5,
+            "videoUrl": null,
+            "posterUrl": "/defaut/boucle-stockvisionai.jpg",
+            "datePrevue": "2027-04-17",
+            "troisMots": "STOCKVISIONAI",
+            "tutorielModuleUrl": null,
+            "tutoriel": null,
+            "masterRapidoUrl": null,
+            "higgsfield": {
+              "duree": "10 s",
+              "format": "vertical 9:16",
+              "videoSourceUrl": null,
+              "source": null
+            },
+            "reseaux": {
+              "facebook": {
+                "statut": "a_venir",
+                "date": "2027-04-17",
+                "heure": "12:00",
+                "compte": "FoodEatUp",
+                "format": "Vidéo native 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              },
+              "instagram": {
+                "statut": "a_venir",
+                "date": "2027-04-17",
+                "heure": "18:30",
+                "compte": "foodeatup.cocuisinage",
+                "format": "Reel 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              },
+              "tiktok": {
+                "statut": "a_venir",
+                "date": "2027-04-17",
+                "heure": "19:00",
+                "compte": "foodeatup",
+                "format": "Vidéo native 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              },
+              "linkedin": {
+                "statut": "a_venir",
+                "date": "2027-04-17",
+                "heure": "08:00",
+                "compte": "FoodEatUp",
+                "format": "Vidéo native 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              },
+              "youtube": {
+                "statut": "a_venir",
+                "date": "2027-04-17",
+                "heure": "10:00",
+                "compte": "@FoodEatUp",
+                "format": "Short 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              }
+            },
+            "storyUrl": null
+          },
+          {
+            "id": "EP412",
+            "numero": 412,
+            "saison": 2,
+            "slug": "ep412-haccp-le-droit-d-exercer",
+            "titre": "HACCP — le droit d'exercer",
+            "module": "HACCP",
+            "chapitre": "Les huit boucles",
+            "accroche": "Celle-là ne coûte pas de la marge. Elle coûte les clés.",
+            "punchline": "C'est la seule boucle dont l'échec n'est pas financier mais existentiel. Les sept autres coûtent de la marge. Celle-ci coûte la fermeture.",
+            "resume": "La conformité sanitaire, et les justificatifs opposables en cas de contrôle.",
+            "statut": "a_produire",
+            "dureeSecondes": 37.5,
+            "videoUrl": null,
+            "posterUrl": "/defaut/boucle-haccp.jpg",
+            "datePrevue": "2027-04-18",
+            "troisMots": "HACCP",
+            "tutorielModuleUrl": null,
+            "tutoriel": null,
+            "masterRapidoUrl": null,
+            "higgsfield": {
+              "duree": "10 s",
+              "format": "vertical 9:16",
+              "videoSourceUrl": null,
+              "source": null
+            },
+            "reseaux": {
+              "facebook": {
+                "statut": "a_venir",
+                "date": "2027-04-18",
+                "heure": "12:00",
+                "compte": "FoodEatUp",
+                "format": "Vidéo native 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              },
+              "instagram": {
+                "statut": "a_venir",
+                "date": "2027-04-18",
+                "heure": "18:30",
+                "compte": "foodeatup.cocuisinage",
+                "format": "Reel 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              },
+              "tiktok": {
+                "statut": "a_venir",
+                "date": "2027-04-18",
+                "heure": "19:00",
+                "compte": "foodeatup",
+                "format": "Vidéo native 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              },
+              "linkedin": {
+                "statut": "a_venir",
+                "date": "2027-04-18",
+                "heure": "08:00",
+                "compte": "FoodEatUp",
+                "format": "Vidéo native 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              },
+              "youtube": {
+                "statut": "a_venir",
+                "date": "2027-04-18",
+                "heure": "10:00",
+                "compte": "@FoodEatUp",
+                "format": "Short 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              }
+            },
+            "storyUrl": null
+          },
+          {
+            "id": "EP413",
+            "numero": 413,
+            "saison": 2,
+            "slug": "ep413-e-commerce-l-exposition",
+            "titre": "E-commerce — l'exposition",
+            "module": "E-commerce",
+            "chapitre": "Les huit boucles",
+            "accroche": "Vos clients, ou les clients de la plateforme ?",
+            "punchline": "Le restaurant dépend des plateformes et leur cède une commission sur des clients qu'il ne connaîtra jamais.",
+            "resume": "Le canal direct. Des clients qui appartiennent au restaurant, et non à une plateforme qui prélève une commission par couvert.",
+            "statut": "a_produire",
+            "dureeSecondes": 37.5,
+            "videoUrl": null,
+            "posterUrl": "/defaut/boucle-ecommerce.jpg",
+            "datePrevue": "2027-04-19",
+            "troisMots": "E-COMMERCE",
+            "tutorielModuleUrl": null,
+            "tutoriel": null,
+            "masterRapidoUrl": null,
+            "higgsfield": {
+              "duree": "10 s",
+              "format": "vertical 9:16",
+              "videoSourceUrl": null,
+              "source": null
+            },
+            "reseaux": {
+              "facebook": {
+                "statut": "a_venir",
+                "date": "2027-04-19",
+                "heure": "12:00",
+                "compte": "FoodEatUp",
+                "format": "Vidéo native 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              },
+              "instagram": {
+                "statut": "a_venir",
+                "date": "2027-04-19",
+                "heure": "18:30",
+                "compte": "foodeatup.cocuisinage",
+                "format": "Reel 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              },
+              "tiktok": {
+                "statut": "a_venir",
+                "date": "2027-04-19",
+                "heure": "19:00",
+                "compte": "foodeatup",
+                "format": "Vidéo native 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              },
+              "linkedin": {
+                "statut": "a_venir",
+                "date": "2027-04-19",
+                "heure": "08:00",
+                "compte": "FoodEatUp",
+                "format": "Vidéo native 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              },
+              "youtube": {
+                "statut": "a_venir",
+                "date": "2027-04-19",
+                "heure": "10:00",
+                "compte": "@FoodEatUp",
+                "format": "Short 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              }
+            },
+            "storyUrl": null
+          },
+          {
+            "id": "EP414",
+            "numero": 414,
+            "saison": 2,
+            "slug": "ep414-communication-le-systeme-nerveux",
+            "titre": "Communication — le système nerveux",
+            "module": "Communication",
+            "chapitre": "Les huit boucles",
+            "accroche": "Rien ne casse. Tout ralentit.",
+            "punchline": "Les sept autres tournent correctement, et personne ne le sait. C'est la panne la plus insidieuse : rien ne casse, tout ralentit.",
+            "resume": "La circulation. C'est la seule boucle qui touche les sept autres : un stock bas déclenche une alerte, une réservation déclenche un rappel.",
+            "statut": "a_produire",
+            "dureeSecondes": 37.5,
+            "videoUrl": null,
+            "posterUrl": "/defaut/boucle-communication.jpg",
+            "datePrevue": "2027-04-20",
+            "troisMots": "COMMUNICATION",
+            "tutorielModuleUrl": null,
+            "tutoriel": null,
+            "masterRapidoUrl": null,
+            "higgsfield": {
+              "duree": "10 s",
+              "format": "vertical 9:16",
+              "videoSourceUrl": null,
+              "source": null
+            },
+            "reseaux": {
+              "facebook": {
+                "statut": "a_venir",
+                "date": "2027-04-20",
+                "heure": "12:00",
+                "compte": "FoodEatUp",
+                "format": "Vidéo native 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              },
+              "instagram": {
+                "statut": "a_venir",
+                "date": "2027-04-20",
+                "heure": "18:30",
+                "compte": "foodeatup.cocuisinage",
+                "format": "Reel 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              },
+              "tiktok": {
+                "statut": "a_venir",
+                "date": "2027-04-20",
+                "heure": "19:00",
+                "compte": "foodeatup",
+                "format": "Vidéo native 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              },
+              "linkedin": {
+                "statut": "a_venir",
+                "date": "2027-04-20",
+                "heure": "08:00",
+                "compte": "FoodEatUp",
+                "format": "Vidéo native 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              },
+              "youtube": {
+                "statut": "a_venir",
+                "date": "2027-04-20",
+                "heure": "10:00",
+                "compte": "@FoodEatUp",
+                "format": "Short 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              }
+            },
+            "storyUrl": null
+          },
+          {
+            "id": "EP415",
+            "numero": 415,
+            "saison": 2,
+            "slug": "ep415-fidelite-et-marketing-l-usine-a-revenir",
+            "titre": "Fidélité et marketing — l'usine à revenir",
+            "module": "Fidélité et marketing",
+            "chapitre": "Les huit boucles",
+            "accroche": "Faire revenir coûte moins cher que faire venir.",
+            "punchline": "On rachète chaque client à chaque fois. Acquérir coûte cinq à sept fois plus cher que faire revenir.",
+            "resume": "Le fichier client — le seul actif d'acquisition qui appartienne vraiment au restaurant.",
+            "statut": "a_produire",
+            "dureeSecondes": 37.5,
+            "videoUrl": null,
+            "posterUrl": "/defaut/boucle-fidelite.jpg",
+            "datePrevue": "2027-04-21",
+            "troisMots": "FIDÉLITÉ ET MARKETING",
+            "tutorielModuleUrl": null,
+            "tutoriel": null,
+            "masterRapidoUrl": null,
+            "higgsfield": {
+              "duree": "10 s",
+              "format": "vertical 9:16",
+              "videoSourceUrl": null,
+              "source": null
+            },
+            "reseaux": {
+              "facebook": {
+                "statut": "a_venir",
+                "date": "2027-04-21",
+                "heure": "12:00",
+                "compte": "FoodEatUp",
+                "format": "Vidéo native 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              },
+              "instagram": {
+                "statut": "a_venir",
+                "date": "2027-04-21",
+                "heure": "18:30",
+                "compte": "foodeatup.cocuisinage",
+                "format": "Reel 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              },
+              "tiktok": {
+                "statut": "a_venir",
+                "date": "2027-04-21",
+                "heure": "19:00",
+                "compte": "foodeatup",
+                "format": "Vidéo native 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              },
+              "linkedin": {
+                "statut": "a_venir",
+                "date": "2027-04-21",
+                "heure": "08:00",
+                "compte": "FoodEatUp",
+                "format": "Vidéo native 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              },
+              "youtube": {
+                "statut": "a_venir",
+                "date": "2027-04-21",
+                "heure": "10:00",
+                "compte": "@FoodEatUp",
+                "format": "Short 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              }
+            },
+            "storyUrl": null
+          },
+          {
+            "id": "EP416",
+            "numero": 416,
+            "saison": 2,
+            "slug": "ep416-comptabilite-le-second-croisement",
+            "titre": "Comptabilité — le second croisement",
+            "module": "Comptabilité",
+            "chapitre": "Les huit boucles",
+            "accroche": "Savoir si on gagne de l'argent avant la fin du mois.",
+            "punchline": "On ignore si l'on gagne de l'argent, et on le découvre trop tard.",
+            "resume": "La trésorerie qui finance les achats. C'est le second fil qui traverse le croisement, après la commande.",
+            "statut": "a_produire",
+            "dureeSecondes": 37.5,
+            "videoUrl": null,
+            "posterUrl": "/defaut/boucle-comptabilite.jpg",
+            "datePrevue": "2027-04-22",
+            "troisMots": "COMPTABILITÉ",
+            "tutorielModuleUrl": null,
+            "tutoriel": null,
+            "masterRapidoUrl": null,
+            "higgsfield": {
+              "duree": "10 s",
+              "format": "vertical 9:16",
+              "videoSourceUrl": null,
+              "source": null
+            },
+            "reseaux": {
+              "facebook": {
+                "statut": "a_venir",
+                "date": "2027-04-22",
+                "heure": "12:00",
+                "compte": "FoodEatUp",
+                "format": "Vidéo native 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              },
+              "instagram": {
+                "statut": "a_venir",
+                "date": "2027-04-22",
+                "heure": "18:30",
+                "compte": "foodeatup.cocuisinage",
+                "format": "Reel 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              },
+              "tiktok": {
+                "statut": "a_venir",
+                "date": "2027-04-22",
+                "heure": "19:00",
+                "compte": "foodeatup",
+                "format": "Vidéo native 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              },
+              "linkedin": {
+                "statut": "a_venir",
+                "date": "2027-04-22",
+                "heure": "08:00",
+                "compte": "FoodEatUp",
+                "format": "Vidéo native 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              },
+              "youtube": {
+                "statut": "a_venir",
+                "date": "2027-04-22",
+                "heure": "10:00",
+                "compte": "@FoodEatUp",
+                "format": "Short 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              }
+            },
+            "storyUrl": null
+          },
+          {
+            "id": "EP417",
+            "numero": 417,
+            "saison": 2,
+            "slug": "ep417-le-croisement-pendant-le-service",
+            "titre": "Le croisement, pendant le service",
+            "module": "Le système",
+            "chapitre": "Les huit boucles",
+            "accroche": "Au milieu du huit, quatre choses se croisent.",
+            "punchline": "Quatre échanges traversent le point de croisement.",
+            "resume": "Quatre échanges traversent le point de croisement. La commande et l'encaissement vont de la vente vers la gestion ; la carte et la marge font le chemin inverse. Votre logiciel de caisse connaît l'encaissement mais pas le besoin en cuisine.",
+            "statut": "a_produire",
+            "dureeSecondes": 37.5,
+            "videoUrl": null,
+            "posterUrl": "/defaut/boucle-generique.jpg",
+            "datePrevue": "2027-04-23",
+            "troisMots": "LE CROISEMENT, PENDANT L",
+            "tutorielModuleUrl": null,
+            "tutoriel": null,
+            "masterRapidoUrl": null,
+            "higgsfield": {
+              "duree": "10 s",
+              "format": "vertical 9:16",
+              "videoSourceUrl": null,
+              "source": null
+            },
+            "reseaux": {
+              "facebook": {
+                "statut": "a_venir",
+                "date": "2027-04-23",
+                "heure": "12:00",
+                "compte": "FoodEatUp",
+                "format": "Vidéo native 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              },
+              "instagram": {
+                "statut": "a_venir",
+                "date": "2027-04-23",
+                "heure": "18:30",
+                "compte": "foodeatup.cocuisinage",
+                "format": "Reel 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              },
+              "tiktok": {
+                "statut": "a_venir",
+                "date": "2027-04-23",
+                "heure": "19:00",
+                "compte": "foodeatup",
+                "format": "Vidéo native 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              },
+              "linkedin": {
+                "statut": "a_venir",
+                "date": "2027-04-23",
+                "heure": "08:00",
+                "compte": "FoodEatUp",
+                "format": "Vidéo native 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              },
+              "youtube": {
+                "statut": "a_venir",
+                "date": "2027-04-23",
+                "heure": "10:00",
+                "compte": "@FoodEatUp",
+                "format": "Short 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              }
+            },
+            "storyUrl": null
+          }
+        ]
+      },
+      {
+        "numero": 3,
+        "titre": "Brancher, et faire tourner",
+        "pitch": "Les outils, les agents, les routines. Chaque épisode finit sur quelque chose qui existe.",
+        "episodes": [
+          {
+            "id": "EP418",
+            "numero": 418,
+            "saison": 3,
+            "slug": "ep418-le-moteur-brancher-claude-chatgpt-ou-mistral",
+            "titre": "Le moteur : brancher Claude, ChatGPT ou Mistral",
+            "module": "Le système",
+            "chapitre": "Brancher, et faire tourner",
+            "accroche": "Claude, ChatGPT ou Mistral : c'est vous qui choisissez.",
+            "punchline": "Une paire d'identifiants, un endpoint, et le modèle de votre choix parle à votre établissement — et seulement au vôtre.",
+            "resume": "Une paire d'identifiants, un endpoint, et le modèle de votre choix parle à votre établissement — et seulement au vôtre. On pose la même demande aux trois : les réponses diffèrent, les actions non.",
+            "statut": "a_produire",
+            "dureeSecondes": 37.5,
+            "videoUrl": null,
+            "posterUrl": "/defaut/boucle-generique.jpg",
+            "datePrevue": "2027-04-24",
+            "troisMots": "LE MOTEUR : BRANCHER CLA",
+            "tutorielModuleUrl": null,
+            "tutoriel": null,
+            "masterRapidoUrl": null,
+            "higgsfield": {
+              "duree": "10 s",
+              "format": "vertical 9:16",
+              "videoSourceUrl": null,
+              "source": null
+            },
+            "reseaux": {
+              "facebook": {
+                "statut": "a_venir",
+                "date": "2027-04-24",
+                "heure": "12:00",
+                "compte": "FoodEatUp",
+                "format": "Vidéo native 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              },
+              "instagram": {
+                "statut": "a_venir",
+                "date": "2027-04-24",
+                "heure": "18:30",
+                "compte": "foodeatup.cocuisinage",
+                "format": "Reel 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              },
+              "tiktok": {
+                "statut": "a_venir",
+                "date": "2027-04-24",
+                "heure": "19:00",
+                "compte": "foodeatup",
+                "format": "Vidéo native 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              },
+              "linkedin": {
+                "statut": "a_venir",
+                "date": "2027-04-24",
+                "heure": "08:00",
+                "compte": "FoodEatUp",
+                "format": "Vidéo native 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              },
+              "youtube": {
+                "statut": "a_venir",
+                "date": "2027-04-24",
+                "heure": "10:00",
+                "compte": "@FoodEatUp",
+                "format": "Short 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              }
+            },
+            "storyUrl": null
+          },
+          {
+            "id": "EP419",
+            "numero": 419,
+            "saison": 3,
+            "slug": "ep419-les-quatre-agents-et-leurs-boucles",
+            "titre": "Les quatre agents et leurs boucles",
+            "module": "Le système",
+            "chapitre": "Brancher, et faire tourner",
+            "accroche": "Quatre agents, et pas une seule case vide.",
+            "punchline": "Caroline décroche, Jarvis tient l'atelier, Iris fait circuler, PrédiBot voit les huit.",
+            "resume": "Caroline décroche, Jarvis tient l'atelier, Iris fait circuler, PrédiBot voit les huit. Aucune case vide n'est un oubli.",
+            "statut": "a_produire",
+            "dureeSecondes": 37.5,
+            "videoUrl": null,
+            "posterUrl": "/defaut/boucle-generique.jpg",
+            "datePrevue": "2027-04-25",
+            "troisMots": "LES QUATRE AGENTS ET LEU",
+            "tutorielModuleUrl": null,
+            "tutoriel": null,
+            "masterRapidoUrl": null,
+            "higgsfield": {
+              "duree": "10 s",
+              "format": "vertical 9:16",
+              "videoSourceUrl": null,
+              "source": null
+            },
+            "reseaux": {
+              "facebook": {
+                "statut": "a_venir",
+                "date": "2027-04-25",
+                "heure": "12:00",
+                "compte": "FoodEatUp",
+                "format": "Vidéo native 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              },
+              "instagram": {
+                "statut": "a_venir",
+                "date": "2027-04-25",
+                "heure": "18:30",
+                "compte": "foodeatup.cocuisinage",
+                "format": "Reel 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              },
+              "tiktok": {
+                "statut": "a_venir",
+                "date": "2027-04-25",
+                "heure": "19:00",
+                "compte": "foodeatup",
+                "format": "Vidéo native 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              },
+              "linkedin": {
+                "statut": "a_venir",
+                "date": "2027-04-25",
+                "heure": "08:00",
+                "compte": "FoodEatUp",
+                "format": "Vidéo native 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              },
+              "youtube": {
+                "statut": "a_venir",
+                "date": "2027-04-25",
+                "heure": "10:00",
+                "compte": "@FoodEatUp",
+                "format": "Short 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              }
+            },
+            "storyUrl": null
+          },
+          {
+            "id": "EP420",
+            "numero": 420,
+            "saison": 3,
+            "slug": "ep420-caroline-prend-les-appels",
+            "titre": "Caroline prend les appels",
+            "module": "Le système",
+            "chapitre": "Brancher, et faire tourner",
+            "accroche": "Le téléphone sonne en plein coup de feu.",
+            "punchline": "Le client appelle pendant le coup de feu.",
+            "resume": "Le client appelle pendant le coup de feu. Personne n'est disponible. Elle décroche à la première sonnerie et pense à demander l'allergie.",
+            "statut": "a_produire",
+            "dureeSecondes": 37.5,
+            "videoUrl": null,
+            "posterUrl": "/defaut/boucle-generique.jpg",
+            "datePrevue": "2027-04-26",
+            "troisMots": "CAROLINE PREND LES APPEL",
+            "tutorielModuleUrl": null,
+            "tutoriel": null,
+            "masterRapidoUrl": null,
+            "higgsfield": {
+              "duree": "10 s",
+              "format": "vertical 9:16",
+              "videoSourceUrl": null,
+              "source": null
+            },
+            "reseaux": {
+              "facebook": {
+                "statut": "a_venir",
+                "date": "2027-04-26",
+                "heure": "12:00",
+                "compte": "FoodEatUp",
+                "format": "Vidéo native 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              },
+              "instagram": {
+                "statut": "a_venir",
+                "date": "2027-04-26",
+                "heure": "18:30",
+                "compte": "foodeatup.cocuisinage",
+                "format": "Reel 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              },
+              "tiktok": {
+                "statut": "a_venir",
+                "date": "2027-04-26",
+                "heure": "19:00",
+                "compte": "foodeatup",
+                "format": "Vidéo native 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              },
+              "linkedin": {
+                "statut": "a_venir",
+                "date": "2027-04-26",
+                "heure": "08:00",
+                "compte": "FoodEatUp",
+                "format": "Vidéo native 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              },
+              "youtube": {
+                "statut": "a_venir",
+                "date": "2027-04-26",
+                "heure": "10:00",
+                "compte": "@FoodEatUp",
+                "format": "Short 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              }
+            },
+            "storyUrl": null
+          },
+          {
+            "id": "EP421",
+            "numero": 421,
+            "saison": 3,
+            "slug": "ep421-jarvis-les-mains-dans-la-farine",
+            "titre": "Jarvis, les mains dans la farine",
+            "module": "Le système",
+            "chapitre": "Brancher, et faire tourner",
+            "accroche": "Les mains dans la farine, on ne tape pas au clavier.",
+            "punchline": "On ne tape pas avec les mains sales.",
+            "resume": "On ne tape pas avec les mains sales. On dit « relève la chambre froide à quatre degrés » et c'est tracé.",
+            "statut": "a_produire",
+            "dureeSecondes": 37.5,
+            "videoUrl": null,
+            "posterUrl": "/defaut/boucle-generique.jpg",
+            "datePrevue": "2027-04-27",
+            "troisMots": "JARVIS, LES MAINS DANS L",
+            "tutorielModuleUrl": null,
+            "tutoriel": null,
+            "masterRapidoUrl": null,
+            "higgsfield": {
+              "duree": "10 s",
+              "format": "vertical 9:16",
+              "videoSourceUrl": null,
+              "source": null
+            },
+            "reseaux": {
+              "facebook": {
+                "statut": "a_venir",
+                "date": "2027-04-27",
+                "heure": "12:00",
+                "compte": "FoodEatUp",
+                "format": "Vidéo native 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              },
+              "instagram": {
+                "statut": "a_venir",
+                "date": "2027-04-27",
+                "heure": "18:30",
+                "compte": "foodeatup.cocuisinage",
+                "format": "Reel 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              },
+              "tiktok": {
+                "statut": "a_venir",
+                "date": "2027-04-27",
+                "heure": "19:00",
+                "compte": "foodeatup",
+                "format": "Vidéo native 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              },
+              "linkedin": {
+                "statut": "a_venir",
+                "date": "2027-04-27",
+                "heure": "08:00",
+                "compte": "FoodEatUp",
+                "format": "Vidéo native 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              },
+              "youtube": {
+                "statut": "a_venir",
+                "date": "2027-04-27",
+                "heure": "10:00",
+                "compte": "@FoodEatUp",
+                "format": "Short 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              }
+            },
+            "storyUrl": null
+          },
+          {
+            "id": "EP422",
+            "numero": 422,
+            "saison": 3,
+            "slug": "ep422-predibot-repond-sur-les-chiffres",
+            "titre": "PrédiBot répond sur les chiffres",
+            "module": "Le système",
+            "chapitre": "Brancher, et faire tourner",
+            "accroche": "« Combien me coûte mon burger, maintenant ? »",
+            "punchline": "« Combien me coûte mon burger maintenant ? » Coût matière à jour, marge en euros, comparaison avec le mois dernier.",
+            "resume": "« Combien me coûte mon burger maintenant ? » Coût matière à jour, marge en euros, comparaison avec le mois dernier.",
+            "statut": "a_produire",
+            "dureeSecondes": 37.5,
+            "videoUrl": null,
+            "posterUrl": "/defaut/boucle-generique.jpg",
+            "datePrevue": "2027-04-28",
+            "troisMots": "PRÉDIBOT RÉPOND SUR LES ",
+            "tutorielModuleUrl": null,
+            "tutoriel": null,
+            "masterRapidoUrl": null,
+            "higgsfield": {
+              "duree": "10 s",
+              "format": "vertical 9:16",
+              "videoSourceUrl": null,
+              "source": null
+            },
+            "reseaux": {
+              "facebook": {
+                "statut": "a_venir",
+                "date": "2027-04-28",
+                "heure": "12:00",
+                "compte": "FoodEatUp",
+                "format": "Vidéo native 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              },
+              "instagram": {
+                "statut": "a_venir",
+                "date": "2027-04-28",
+                "heure": "18:30",
+                "compte": "foodeatup.cocuisinage",
+                "format": "Reel 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              },
+              "tiktok": {
+                "statut": "a_venir",
+                "date": "2027-04-28",
+                "heure": "19:00",
+                "compte": "foodeatup",
+                "format": "Vidéo native 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              },
+              "linkedin": {
+                "statut": "a_venir",
+                "date": "2027-04-28",
+                "heure": "08:00",
+                "compte": "FoodEatUp",
+                "format": "Vidéo native 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              },
+              "youtube": {
+                "statut": "a_venir",
+                "date": "2027-04-28",
+                "heure": "10:00",
+                "compte": "@FoodEatUp",
+                "format": "Short 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              }
+            },
+            "storyUrl": null
+          },
+          {
+            "id": "EP423",
+            "numero": 423,
+            "saison": 3,
+            "slug": "ep423-rapidocms-et-pourquoi-il-est-a-part",
+            "titre": "RapidoCMS, et pourquoi il est à part",
+            "module": "Le système",
+            "chapitre": "Brancher, et faire tourner",
+            "accroche": "Deux logiciels, et aucun ne fait le travail de l'autre.",
+            "punchline": "FoodEatUp tient le restaurant.",
+            "resume": "FoodEatUp tient le restaurant. RapidoCMS tient ce qui en sort : les cinq réseaux, les créneaux, la bibliothèque.",
+            "statut": "a_produire",
+            "dureeSecondes": 37.5,
+            "videoUrl": null,
+            "posterUrl": "/defaut/boucle-generique.jpg",
+            "datePrevue": "2027-04-29",
+            "troisMots": "RAPIDOCMS, ET POURQUOI I",
+            "tutorielModuleUrl": null,
+            "tutoriel": null,
+            "masterRapidoUrl": null,
+            "higgsfield": {
+              "duree": "10 s",
+              "format": "vertical 9:16",
+              "videoSourceUrl": null,
+              "source": null
+            },
+            "reseaux": {
+              "facebook": {
+                "statut": "a_venir",
+                "date": "2027-04-29",
+                "heure": "12:00",
+                "compte": "FoodEatUp",
+                "format": "Vidéo native 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              },
+              "instagram": {
+                "statut": "a_venir",
+                "date": "2027-04-29",
+                "heure": "18:30",
+                "compte": "foodeatup.cocuisinage",
+                "format": "Reel 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              },
+              "tiktok": {
+                "statut": "a_venir",
+                "date": "2027-04-29",
+                "heure": "19:00",
+                "compte": "foodeatup",
+                "format": "Vidéo native 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              },
+              "linkedin": {
+                "statut": "a_venir",
+                "date": "2027-04-29",
+                "heure": "08:00",
+                "compte": "FoodEatUp",
+                "format": "Vidéo native 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              },
+              "youtube": {
+                "statut": "a_venir",
+                "date": "2027-04-29",
+                "heure": "10:00",
+                "compte": "@FoodEatUp",
+                "format": "Short 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              }
+            },
+            "storyUrl": null
+          },
+          {
+            "id": "EP424",
+            "numero": 424,
+            "saison": 3,
+            "slug": "ep424-brancher-rapidocms-a-foodeatup",
+            "titre": "Brancher RapidoCMS à FoodEatUp",
+            "module": "Le système",
+            "chapitre": "Brancher, et faire tourner",
+            "accroche": "Un bac de saumon qui descend, un post qui monte.",
+            "punchline": "Un stock bas devient un post.",
+            "resume": "Un stock bas devient un post. Le circuit complet, du bac de saumon au fil Instagram, sans qu'on ouvre un logiciel.",
+            "statut": "a_produire",
+            "dureeSecondes": 37.5,
+            "videoUrl": null,
+            "posterUrl": "/defaut/boucle-generique.jpg",
+            "datePrevue": "2027-04-30",
+            "troisMots": "BRANCHER RAPIDOCMS À FOO",
+            "tutorielModuleUrl": null,
+            "tutoriel": null,
+            "masterRapidoUrl": null,
+            "higgsfield": {
+              "duree": "10 s",
+              "format": "vertical 9:16",
+              "videoSourceUrl": null,
+              "source": null
+            },
+            "reseaux": {
+              "facebook": {
+                "statut": "a_venir",
+                "date": "2027-04-30",
+                "heure": "12:00",
+                "compte": "FoodEatUp",
+                "format": "Vidéo native 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              },
+              "instagram": {
+                "statut": "a_venir",
+                "date": "2027-04-30",
+                "heure": "18:30",
+                "compte": "foodeatup.cocuisinage",
+                "format": "Reel 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              },
+              "tiktok": {
+                "statut": "a_venir",
+                "date": "2027-04-30",
+                "heure": "19:00",
+                "compte": "foodeatup",
+                "format": "Vidéo native 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              },
+              "linkedin": {
+                "statut": "a_venir",
+                "date": "2027-04-30",
+                "heure": "08:00",
+                "compte": "FoodEatUp",
+                "format": "Vidéo native 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              },
+              "youtube": {
+                "statut": "a_venir",
+                "date": "2027-04-30",
+                "heure": "10:00",
+                "compte": "@FoodEatUp",
+                "format": "Short 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              }
+            },
+            "storyUrl": null
+          },
+          {
+            "id": "EP425",
+            "numero": 425,
+            "saison": 3,
+            "slug": "ep425-donner-une-voix-elevenlabs",
+            "titre": "Donner une voix : ElevenLabs",
+            "module": "Le système",
+            "chapitre": "Brancher, et faire tourner",
+            "accroche": "La même phrase, mais dite.",
+            "punchline": "La même phrase, écrite puis dite.",
+            "resume": "La même phrase, écrite puis dite. On garde une voix unique sur toute une série — c'est ce qui fait qu'on la reconnaît.",
+            "statut": "a_produire",
+            "dureeSecondes": 37.5,
+            "videoUrl": null,
+            "posterUrl": "/defaut/boucle-generique.jpg",
+            "datePrevue": "2027-05-01",
+            "troisMots": "DONNER UNE VOIX : ELEVEN",
+            "tutorielModuleUrl": null,
+            "tutoriel": null,
+            "masterRapidoUrl": null,
+            "higgsfield": {
+              "duree": "10 s",
+              "format": "vertical 9:16",
+              "videoSourceUrl": null,
+              "source": null
+            },
+            "reseaux": {
+              "facebook": {
+                "statut": "a_venir",
+                "date": "2027-05-01",
+                "heure": "12:00",
+                "compte": "FoodEatUp",
+                "format": "Vidéo native 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              },
+              "instagram": {
+                "statut": "a_venir",
+                "date": "2027-05-01",
+                "heure": "18:30",
+                "compte": "foodeatup.cocuisinage",
+                "format": "Reel 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              },
+              "tiktok": {
+                "statut": "a_venir",
+                "date": "2027-05-01",
+                "heure": "19:00",
+                "compte": "foodeatup",
+                "format": "Vidéo native 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              },
+              "linkedin": {
+                "statut": "a_venir",
+                "date": "2027-05-01",
+                "heure": "08:00",
+                "compte": "FoodEatUp",
+                "format": "Vidéo native 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              },
+              "youtube": {
+                "statut": "a_venir",
+                "date": "2027-05-01",
+                "heure": "10:00",
+                "compte": "@FoodEatUp",
+                "format": "Short 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              }
+            },
+            "storyUrl": null
+          },
+          {
+            "id": "EP426",
+            "numero": 426,
+            "saison": 3,
+            "slug": "ep426-fabriquer-l-image-higgsfield",
+            "titre": "Fabriquer l'image : Higgsfield",
+            "module": "Le système",
+            "chapitre": "Brancher, et faire tourner",
+            "accroche": "Une phrase, une photo, dix secondes de publicité.",
+            "punchline": "Dix secondes de plat filmé comme une publicité, à partir d'une phrase et d'une photo.",
+            "resume": "Dix secondes de plat filmé comme une publicité, à partir d'une phrase et d'une photo.",
+            "statut": "a_produire",
+            "dureeSecondes": 37.5,
+            "videoUrl": null,
+            "posterUrl": "/defaut/boucle-generique.jpg",
+            "datePrevue": "2027-05-02",
+            "troisMots": "FABRIQUER L'IMAGE : HIGG",
+            "tutorielModuleUrl": null,
+            "tutoriel": null,
+            "masterRapidoUrl": null,
+            "higgsfield": {
+              "duree": "10 s",
+              "format": "vertical 9:16",
+              "videoSourceUrl": null,
+              "source": null
+            },
+            "reseaux": {
+              "facebook": {
+                "statut": "a_venir",
+                "date": "2027-05-02",
+                "heure": "12:00",
+                "compte": "FoodEatUp",
+                "format": "Vidéo native 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              },
+              "instagram": {
+                "statut": "a_venir",
+                "date": "2027-05-02",
+                "heure": "18:30",
+                "compte": "foodeatup.cocuisinage",
+                "format": "Reel 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              },
+              "tiktok": {
+                "statut": "a_venir",
+                "date": "2027-05-02",
+                "heure": "19:00",
+                "compte": "foodeatup",
+                "format": "Vidéo native 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              },
+              "linkedin": {
+                "statut": "a_venir",
+                "date": "2027-05-02",
+                "heure": "08:00",
+                "compte": "FoodEatUp",
+                "format": "Vidéo native 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              },
+              "youtube": {
+                "statut": "a_venir",
+                "date": "2027-05-02",
+                "heure": "10:00",
+                "compte": "@FoodEatUp",
+                "format": "Short 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              }
+            },
+            "storyUrl": null
+          },
+          {
+            "id": "EP427",
+            "numero": 427,
+            "saison": 3,
+            "slug": "ep427-mettre-quelqu-un-a-l-ecran-heygen",
+            "titre": "Mettre quelqu'un à l'écran : HeyGen",
+            "module": "Le système",
+            "chapitre": "Brancher, et faire tourner",
+            "accroche": "Trente mots, pas un de plus.",
+            "punchline": "Le personnage dit le texte.",
+            "resume": "Le personnage dit le texte. Trente mots, dix secondes — au-delà, le montage accélère la parole et ça s'entend.",
+            "statut": "a_produire",
+            "dureeSecondes": 37.5,
+            "videoUrl": null,
+            "posterUrl": "/defaut/boucle-generique.jpg",
+            "datePrevue": "2027-05-03",
+            "troisMots": "METTRE QUELQU'UN À L'ÉCR",
+            "tutorielModuleUrl": null,
+            "tutoriel": null,
+            "masterRapidoUrl": null,
+            "higgsfield": {
+              "duree": "10 s",
+              "format": "vertical 9:16",
+              "videoSourceUrl": null,
+              "source": null
+            },
+            "reseaux": {
+              "facebook": {
+                "statut": "a_venir",
+                "date": "2027-05-03",
+                "heure": "12:00",
+                "compte": "FoodEatUp",
+                "format": "Vidéo native 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              },
+              "instagram": {
+                "statut": "a_venir",
+                "date": "2027-05-03",
+                "heure": "18:30",
+                "compte": "foodeatup.cocuisinage",
+                "format": "Reel 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              },
+              "tiktok": {
+                "statut": "a_venir",
+                "date": "2027-05-03",
+                "heure": "19:00",
+                "compte": "foodeatup",
+                "format": "Vidéo native 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              },
+              "linkedin": {
+                "statut": "a_venir",
+                "date": "2027-05-03",
+                "heure": "08:00",
+                "compte": "FoodEatUp",
+                "format": "Vidéo native 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              },
+              "youtube": {
+                "statut": "a_venir",
+                "date": "2027-05-03",
+                "heure": "10:00",
+                "compte": "@FoodEatUp",
+                "format": "Short 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              }
+            },
+            "storyUrl": null
+          },
+          {
+            "id": "EP428",
+            "numero": 428,
+            "saison": 3,
+            "slug": "ep428-pousser-plus-loin-meta",
+            "titre": "Pousser plus loin : Meta",
+            "module": "Le système",
+            "chapitre": "Brancher, et faire tourner",
+            "accroche": "Et si on payait pour exactement la même chose ?",
+            "punchline": "Le même contenu, la même audience, mais payé.",
+            "resume": "Le même contenu, la même audience, mais payé. On regarde ce que ça change et ce que ça coûte.",
+            "statut": "a_produire",
+            "dureeSecondes": 37.5,
+            "videoUrl": null,
+            "posterUrl": "/defaut/boucle-generique.jpg",
+            "datePrevue": "2027-05-04",
+            "troisMots": "POUSSER PLUS LOIN : META",
+            "tutorielModuleUrl": null,
+            "tutoriel": null,
+            "masterRapidoUrl": null,
+            "higgsfield": {
+              "duree": "10 s",
+              "format": "vertical 9:16",
+              "videoSourceUrl": null,
+              "source": null
+            },
+            "reseaux": {
+              "facebook": {
+                "statut": "a_venir",
+                "date": "2027-05-04",
+                "heure": "12:00",
+                "compte": "FoodEatUp",
+                "format": "Vidéo native 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              },
+              "instagram": {
+                "statut": "a_venir",
+                "date": "2027-05-04",
+                "heure": "18:30",
+                "compte": "foodeatup.cocuisinage",
+                "format": "Reel 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              },
+              "tiktok": {
+                "statut": "a_venir",
+                "date": "2027-05-04",
+                "heure": "19:00",
+                "compte": "foodeatup",
+                "format": "Vidéo native 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              },
+              "linkedin": {
+                "statut": "a_venir",
+                "date": "2027-05-04",
+                "heure": "08:00",
+                "compte": "FoodEatUp",
+                "format": "Vidéo native 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              },
+              "youtube": {
+                "statut": "a_venir",
+                "date": "2027-05-04",
+                "heure": "10:00",
+                "compte": "@FoodEatUp",
+                "format": "Short 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              }
+            },
+            "storyUrl": null
+          },
+          {
+            "id": "EP429",
+            "numero": 429,
+            "saison": 3,
+            "slug": "ep429-plugins-skills-competences",
+            "titre": "Plugins, skills, compétences",
+            "module": "Le système",
+            "chapitre": "Brancher, et faire tourner",
+            "accroche": "Apprendre un geste une fois, et ne plus jamais l'expliquer.",
+            "punchline": "Trois mots pour la même idée : apprendre un geste à l'agent une fois, et ne plus jamais le réexpliquer.",
+            "resume": "Trois mots pour la même idée : apprendre un geste à l'agent une fois, et ne plus jamais le réexpliquer.",
+            "statut": "a_produire",
+            "dureeSecondes": 37.5,
+            "videoUrl": null,
+            "posterUrl": "/defaut/boucle-generique.jpg",
+            "datePrevue": "2027-05-05",
+            "troisMots": "PLUGINS, SKILLS, COMPÉTE",
+            "tutorielModuleUrl": null,
+            "tutoriel": null,
+            "masterRapidoUrl": null,
+            "higgsfield": {
+              "duree": "10 s",
+              "format": "vertical 9:16",
+              "videoSourceUrl": null,
+              "source": null
+            },
+            "reseaux": {
+              "facebook": {
+                "statut": "a_venir",
+                "date": "2027-05-05",
+                "heure": "12:00",
+                "compte": "FoodEatUp",
+                "format": "Vidéo native 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              },
+              "instagram": {
+                "statut": "a_venir",
+                "date": "2027-05-05",
+                "heure": "18:30",
+                "compte": "foodeatup.cocuisinage",
+                "format": "Reel 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              },
+              "tiktok": {
+                "statut": "a_venir",
+                "date": "2027-05-05",
+                "heure": "19:00",
+                "compte": "foodeatup",
+                "format": "Vidéo native 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              },
+              "linkedin": {
+                "statut": "a_venir",
+                "date": "2027-05-05",
+                "heure": "08:00",
+                "compte": "FoodEatUp",
+                "format": "Vidéo native 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              },
+              "youtube": {
+                "statut": "a_venir",
+                "date": "2027-05-05",
+                "heure": "10:00",
+                "compte": "@FoodEatUp",
+                "format": "Short 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              }
+            },
+            "storyUrl": null
+          },
+          {
+            "id": "EP430",
+            "numero": 430,
+            "saison": 3,
+            "slug": "ep430-la-routine-et-la-boucle-qui-tourne-seule",
+            "titre": "La routine et la boucle qui tourne seule",
+            "module": "Le système",
+            "chapitre": "Brancher, et faire tourner",
+            "accroche": "Ce qui part sans que personne l'ait demandé.",
+            "punchline": "Ce qui se déclenche sans qu'on le demande.",
+            "resume": "Ce qui se déclenche sans qu'on le demande. Une DLC à deux jours, et le post part avant qu'on y pense.",
+            "statut": "a_produire",
+            "dureeSecondes": 37.5,
+            "videoUrl": null,
+            "posterUrl": "/defaut/boucle-generique.jpg",
+            "datePrevue": "2027-05-06",
+            "troisMots": "LA ROUTINE ET LA BOUCLE ",
+            "tutorielModuleUrl": null,
+            "tutoriel": null,
+            "masterRapidoUrl": null,
+            "higgsfield": {
+              "duree": "10 s",
+              "format": "vertical 9:16",
+              "videoSourceUrl": null,
+              "source": null
+            },
+            "reseaux": {
+              "facebook": {
+                "statut": "a_venir",
+                "date": "2027-05-06",
+                "heure": "12:00",
+                "compte": "FoodEatUp",
+                "format": "Vidéo native 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              },
+              "instagram": {
+                "statut": "a_venir",
+                "date": "2027-05-06",
+                "heure": "18:30",
+                "compte": "foodeatup.cocuisinage",
+                "format": "Reel 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              },
+              "tiktok": {
+                "statut": "a_venir",
+                "date": "2027-05-06",
+                "heure": "19:00",
+                "compte": "foodeatup",
+                "format": "Vidéo native 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              },
+              "linkedin": {
+                "statut": "a_venir",
+                "date": "2027-05-06",
+                "heure": "08:00",
+                "compte": "FoodEatUp",
+                "format": "Vidéo native 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              },
+              "youtube": {
+                "statut": "a_venir",
+                "date": "2027-05-06",
+                "heure": "10:00",
+                "compte": "@FoodEatUp",
+                "format": "Short 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              }
+            },
+            "storyUrl": null
+          },
+          {
+            "id": "EP431",
+            "numero": 431,
+            "saison": 3,
+            "slug": "ep431-l-orchestration-finale-du-restaurant",
+            "titre": "L'orchestration finale du restaurant",
+            "module": "Le système",
+            "chapitre": "Brancher, et faire tourner",
+            "accroche": "Les douze kilos repartent, et cette fois on voit tout.",
+            "punchline": "Une intention, huit boucles, zéro perte.",
+            "resume": "Une intention, huit boucles, zéro perte. Les douze kilos de saumon de l'épisode 2 repartent — et cette fois on voit passer les huit étapes, les quatre agents et les deux grandes boucles se refermer.",
+            "statut": "a_produire",
+            "dureeSecondes": 37.5,
+            "videoUrl": null,
+            "posterUrl": "/defaut/boucle-generique.jpg",
+            "datePrevue": "2027-05-07",
+            "troisMots": "L'ORCHESTRATION FINALE D",
+            "tutorielModuleUrl": null,
+            "tutoriel": null,
+            "masterRapidoUrl": null,
+            "higgsfield": {
+              "duree": "10 s",
+              "format": "vertical 9:16",
+              "videoSourceUrl": null,
+              "source": null
+            },
+            "reseaux": {
+              "facebook": {
+                "statut": "a_venir",
+                "date": "2027-05-07",
+                "heure": "12:00",
+                "compte": "FoodEatUp",
+                "format": "Vidéo native 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              },
+              "instagram": {
+                "statut": "a_venir",
+                "date": "2027-05-07",
+                "heure": "18:30",
+                "compte": "foodeatup.cocuisinage",
+                "format": "Reel 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              },
+              "tiktok": {
+                "statut": "a_venir",
+                "date": "2027-05-07",
+                "heure": "19:00",
+                "compte": "foodeatup",
+                "format": "Vidéo native 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              },
+              "linkedin": {
+                "statut": "a_venir",
+                "date": "2027-05-07",
+                "heure": "08:00",
+                "compte": "FoodEatUp",
+                "format": "Vidéo native 9:16",
+                "lienCta": "https://site.foodeatup.com/"
+              },
+              "youtube": {
+                "statut": "a_venir",
+                "date": "2027-05-07",
                 "heure": "10:00",
                 "compte": "@FoodEatUp",
                 "format": "Short 9:16",

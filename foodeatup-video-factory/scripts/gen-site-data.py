@@ -142,17 +142,17 @@ export const texteAColler = (p: PublicationTexte) =>
 
 # Les séries que le site publie.
 #
-# L'inventaire en porte trois. Les deux autres — « Une journée » et « L'IA dans
-# FoodEatUp » — n'ont aucun épisode monté : les pousser sur le site mettait en
-# ligne soixante-deux pages sans vidéo, sans vignette et sans punchline, et
-# faisait tomber quatre tests du site qui vérifient exactement ça.
+# Les trois, désormais. « Une journée » et « L'IA dans FoodEatUp » en étaient
+# sorties le temps qu'elles trouvent leur place : aucun épisode monté, aucune
+# date, et un nom de vignette — `saison-1-youtube.jpg` — qui désignait la saison
+# 1 du Coup de Feu et rien d'autre. Les trois manques sont levés : elles ont
+# leur créneau dans la grille (`dater-series-2-3.py`), et le site indexe
+# maintenant présentations et vignettes par série ET par saison, si bien que
+# trois « saison 1 » cohabitent sans se marcher dessus.
 #
-# Elles restent dans l'inventaire, avec leurs textes et leurs prompts : le
-# travail n'est pas perdu, il n'est simplement pas publié. Le jour où elles
-# auront des vidéos, il suffira d'ajouter leur slug ici — et de donner un nom
-# de vignette qui porte la série, car `saison-1-youtube.jpg` désigne
-# aujourd'hui la saison 1 du Coup de Feu et rien d'autre.
-SERIES_PUBLIEES = ("le-coup-de-feu",)
+# Ce tuple reste : une série écrite mais pas encore montrable s'en retire d'une
+# ligne, sans qu'on ait à défaire son travail.
+SERIES_PUBLIEES = ("le-coup-de-feu", "une-journee", "lia-dans-foodeatup")
 
 
 def main():
