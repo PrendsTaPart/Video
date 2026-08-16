@@ -238,6 +238,12 @@
     "cutlery": "des couverts",
     "silence": "le silence",
     "wind": "le vent",
-    "dense": "dense"
+    "dense": "dense",
+    "restaurant ambience with overlapping languages": "l'ambiance du restaurant, plusieurs langues mêlées",
+    "no intelligible dialogue": "aucun dialogue intelligible",
+    "continuous kitchen ambience with no edit in the sound either": "l'ambiance continue de la cuisine, sans coupe dans le son non plus",
+    "quiet street at night": "une rue calme, la nuit",
+    "a shutter": "un rideau de fer",
+    "nothing": "rien d'autre"
   }
 }
