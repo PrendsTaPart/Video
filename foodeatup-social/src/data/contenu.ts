@@ -41594,7 +41594,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "format": "9:16 · 1080 × 1920 · 10 s",
       "hook": "Il ouvre, il produit, il ferme. Sa journée entière tient dans une seule application",
       "punchline": "Il est le seul à voir la marge et le coup de feu en même temps",
-      "url": null
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP301.mp4"
     },
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
@@ -46120,7 +46120,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "format": "9:16 · 1080 × 1920 · 10 s",
       "hook": "Qui je suis",
       "punchline": "À la fin de la série, vous écrivez une phrase et votre restaurant l'exécute",
-      "url": null
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP401.mp4"
     },
     "carrousel": {
       "format": "4:5 · 1080 × 1350",

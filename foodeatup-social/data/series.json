@@ -52480,7 +52480,7 @@
                 "prompt": "Vertical 9:16, 10 secondes, 1080p, 24 im/s. PAS de texte incrusté, PAS de sous-titres, PAS de filigrane, PAS de logo, AUCUNE légende gravée dans l'image. Photoréaliste, caméra à l'épaule, profondeur de champ courte. AUCUN écran allumé, AUCUNE tablette, AUCUNE interface visible : cette série montre le geste, pas l'outil.\n\nPERSONNAGE — le chef de cuisine, tenue de son poste, visage lisible. Une seule personne au premier plan.\n\nDécor : une cuisine professionnelle en inox, vu depuis le poste de travail du personnage. Heure : 07h00. Lumière froide d'avant l'aube, une seule source allumée. Plan-séquence tenu, caméra à l'épaule, sans coupe.\n\n0-5s: Sept heures. Il ouvre seul, relève les températures, contrôle la livraison, et décide la carte du jour sur ce qui est arrivé. Voix off française, accent neutre, voix grave et posée, hors champ, par-dessus le plan: {Il ouvre, il produit, il ferme. Sa journée entière tient dans une seule application.} End state at 5s: le geste est engagé, le personnage seul dans le cadre, rien n'a encore bougé autour.\n5-8s: À 5 secondes exactement, quelque chose se tend : un regard vers la porte, un geste suspendu, un objet qu'on repose. Un seul changement. End state at 8s: le personnage a suspendu son geste et regarde hors champ.\n8-10s: Le personnage immobile, il regarde son poste, pas l'objectif. La caméra ne bouge plus. Voix off française, accent neutre, voix grave et posée, hors champ, sur la dernière image: {Il est le seul à voir la marge et le coup de feu en même temps.} End state at 10s: plan figé sur le personnage à son poste, il ne regarde pas l'objectif.\n\nSound design: <ambiance réelle du lieu>. Deux répliques, exactement aux minutages ci-dessus. Pas de musique.",
                 "duree": "10 s",
                 "format": "vertical 9:16",
-                "videoSourceUrl": null,
+                "videoSourceUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/hooks/EP301.mp4",
                 "source": null
               },
               "scriptHeygen": "J'ouvre à sept heures. Températures, livraison, et je décide la carte du jour sur ce qui est arrivé. Personne ne verra cette heure-là.",
@@ -52647,7 +52647,7 @@
                 "format": "9:16 · 1080 × 1920 · 10 s",
                 "hook": "Il ouvre, il produit, il ferme. Sa journée entière tient dans une seule application",
                 "punchline": "Il est le seul à voir la marge et le coup de feu en même temps",
-                "url": null
+                "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP301.mp4"
               }
             },
             {
@@ -58571,7 +58571,7 @@
                 "prompt": "Vertical 9:16, 10 secondes, 1080p, 24 im/s. PAS de texte incrusté, PAS de sous-titres, PAS de filigrane, PAS de logo, AUCUNE légende gravée dans l'image. Photoréaliste, caméra fixe ou très lent travelling.\n\nIDENTITÉ VISUELLE — RapidoCMS. Bleu #03A9F5 présent dans le décor — un écran éteint qui reflète, une lumière, un objet — sans jamais former de logo. Tons clairs, gris #383838.\n\n@Image 1 ne définit que le visage du chef — barbe, toque blanche, veste blanche, tablier blanc FoodEatUp. Ne pas modifier ses traits ni sa carrure. Il reste flou, en retrait : le sujet net du plan est l'objet, pas lui.\n\nUn objet réel du restaurant au premier plan, net ; le chef en retrait, flou, qui regarde. On filme ce que la phrase déclenche, jamais le schéma qui l'explique. Ce qui se joue : Le chef présente celui qui va parler pendant trente épisodes — et pourquoi ce n'est pas un cours d'informatique.\n\n0-5s: L'objet est net au premier plan, immobile ; le chef, flou derrière, le regarde. Très lent travelling avant. Voix off française, celle du chef, calme et pédagogue, hors champ, par-dessus le plan: {Ce n'est pas un cours d'informatique. C'est votre restaurant.} End state at 5s: l'objet occupe le centre du cadre, encore dans son état de départ.\n5-8s: À 5 secondes exactement, l'objet change d'état — il s'allume, il bouge, il s'ouvre. Rien d'autre ne change. End state at 8s: le nouvel état de l'objet est pleinement lisible, le chef n'a pas bougé.\n8-10s: Le plan s'immobilise sur l'objet. La caméra ne bouge plus. Voix off française, celle du chef, calme et pédagogue, hors champ, sur la dernière image: {À la fin de la série, vous écrivez une phrase et votre restaurant l'exécute.} End state at 10s: plan figé sur l'objet, caméra immobile, aucune entrée dans le cadre.\n\nSound design: <ambiance réelle> <un seul son d'interface discret à 5 secondes>. Deux répliques, exactement aux minutages ci-dessus. Pas de musique.",
                 "duree": "10 s",
                 "format": "vertical 9:16",
-                "videoSourceUrl": null,
+                "videoSourceUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/hooks/EP401.mp4",
                 "source": null
               },
               "scriptHeygen": "Le chef présente celui qui va parler pendant trente épisodes — et pourquoi ce n'est pas un cours d'informatique. À la fin de la série, vous écrivez une phrase et votre restaurant l'exécute.",
@@ -58733,7 +58733,7 @@
                 "format": "9:16 · 1080 × 1920 · 10 s",
                 "hook": "Qui je suis",
                 "punchline": "À la fin de la série, vous écrivez une phrase et votre restaurant l'exécute",
-                "url": null
+                "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP401.mp4"
               }
             },
             {
