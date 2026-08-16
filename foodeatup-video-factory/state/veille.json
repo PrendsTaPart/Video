@@ -1,131 +1,109 @@
 {
-  "jobs_lus": 200,
+  "jobs_lus": 30,
   "cibles": 233,
-  "deja_servies": 62,
+  "deja_servies": 73,
   "a_monter": {
-    "EP:EP506": {
-      "titre": "Il ferme, et il sait",
-      "date": "2026-08-24",
+    "EP:EP418": {
+      "titre": "Le moteur : brancher Claude, ChatGPT ou Mistral",
+      "date": "2027-04-23",
       "prises": [
         {
-          "job": "81e7abcb-cf0a-41ed-b319-949f0d88069a",
-          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3GXYlNxkbz83gXaGDVVrTni1dX2/hf_20260816_094853_81e7abcb-cf0a-41ed-b319-949f0d88069a.mp4",
-          "at": 1786873733.32384
+          "job": "4bf030bb-2b21-4eaa-82c9-6141307e42a0",
+          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3GXYlNxkbz83gXaGDVVrTni1dX2/hf_20260816_150247_4bf030bb-2b21-4eaa-82c9-6141307e42a0.mp4",
+          "at": 1786892567.831298
         }
       ]
     },
-    "EP:EP507": {
-      "titre": "Six tables, une mémoire",
-      "date": "2026-08-26",
+    "EP:EP517": {
+      "titre": "Le planning avant le samedi",
+      "date": "2026-09-06",
       "prises": [
         {
-          "job": "7e6d1086-1418-435b-abf9-f9c521f510af",
-          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3GXYlNxkbz83gXaGDVVrTni1dX2/hf_20260816_101129_7e6d1086-1418-435b-abf9-f9c521f510af.mp4",
-          "at": 1786875089.679642
+          "job": "bfd52a66-7e0b-4e2a-bcb7-70e16b73ad77",
+          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3GXYlNxkbz83gXaGDVVrTni1dX2/hf_20260816_143612_bfd52a66-7e0b-4e2a-bcb7-70e16b73ad77.mp4",
+          "at": 1786890972.947104
         }
       ]
     },
-    "EP:EP508": {
-      "titre": "Le téléphone qui sonne dans le vide",
-      "date": "2026-08-27",
+    "EP:EP525": {
+      "titre": "Le même soir, quatre fois",
+      "date": "2026-09-16",
       "prises": [
         {
-          "job": "5facb249-73b2-4192-bfcb-34dc7a59a969",
-          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3GXYlNxkbz83gXaGDVVrTni1dX2/hf_20260816_103835_5facb249-73b2-4192-bfcb-34dc7a59a969.mp4",
-          "at": 1786876715.112706
+          "job": "9376758a-c489-44c1-a8a5-0a9ef2e6d6a1",
+          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3GXYlNxkbz83gXaGDVVrTni1dX2/hf_20260816_153308_9376758a-c489-44c1-a8a5-0a9ef2e6d6a1.mp4",
+          "at": 1786894388.152837
         }
       ]
     },
-    "EP:EP509": {
-      "titre": "La table de douze qui n'existait pas",
-      "date": "2026-08-28",
+    "EP:EP526": {
+      "titre": "18 h 40 — il réserve",
+      "date": "2026-09-17",
       "prises": [
         {
-          "job": "9b5b6305-b33e-4e44-820f-48a600072c49",
-          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3GXYlNxkbz83gXaGDVVrTni1dX2/hf_20260816_112350_9b5b6305-b33e-4e44-820f-48a600072c49.mp4",
-          "at": 1786879430.315048
+          "job": "4057e398-9dcf-4652-b6b7-fc4fd59f7bef",
+          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3GXYlNxkbz83gXaGDVVrTni1dX2/hf_20260816_155800_4057e398-9dcf-4652-b6b7-fc4fd59f7bef.mp4",
+          "at": 1786895880.207083
         }
       ]
     },
-    "EP:EP510": {
-      "titre": "Le plan de salle qui se remplit tout seul",
-      "date": "2026-08-29",
+    "EP:EP527": {
+      "titre": "18 h 41 — la salle le voit",
+      "date": "2026-09-18",
       "prises": [
         {
-          "job": "39ab14c5-52f8-49ed-b082-b17bcb025836",
-          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3GXYlNxkbz83gXaGDVVrTni1dX2/hf_20260816_114638_39ab14c5-52f8-49ed-b082-b17bcb025836.mp4",
-          "at": 1786880798.437116
+          "job": "e3bd21f2-2e79-43fb-b971-0a8be91c0435",
+          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3GXYlNxkbz83gXaGDVVrTni1dX2/hf_20260816_164904_e3bd21f2-2e79-43fb-b971-0a8be91c0435.mp4",
+          "at": 1786898944.38021
         },
         {
-          "job": "20de515e-7bb4-4da8-9093-8264498a8f68",
-          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3GXYlNxkbz83gXaGDVVrTni1dX2/hf_20260816_110254_20de515e-7bb4-4da8-9093-8264498a8f68.mp4",
-          "at": 1786878174.896431
+          "job": "bc5a67a1-a1e6-491f-a589-d8b3fbf74bce",
+          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3GXYlNxkbz83gXaGDVVrTni1dX2/hf_20260816_162404_bc5a67a1-a1e6-491f-a589-d8b3fbf74bce.mp4",
+          "at": 1786897444.979989
         }
       ]
     },
-    "EP:EP512": {
-      "titre": "Minuit, et rien à retenir",
-      "date": "2026-08-31",
+    "EP:EP529": {
+      "titre": "18 h 43 — le bureau voit le couvert",
+      "date": "2026-09-20",
       "prises": [
         {
-          "job": "5ee60603-3cb9-4747-a698-faf26b21295b",
-          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3GXYlNxkbz83gXaGDVVrTni1dX2/hf_20260816_123056_5ee60603-3cb9-4747-a698-faf26b21295b.mp4",
-          "at": 1786883456.770776
+          "job": "ef6624a5-a337-4e0a-bb05-189754ca32dc",
+          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3GXYlNxkbz83gXaGDVVrTni1dX2/hf_20260816_171401_ef6624a5-a337-4e0a-bb05-189754ca32dc.mp4",
+          "at": 1786900441.782997
         }
       ]
     },
-    "EP:EP513": {
-      "titre": "Le bureau au-dessus de la salle",
-      "date": "2026-09-02",
+    "EP:EP530": {
+      "titre": "20 h 15 — les quatre au même endroit",
+      "date": "2026-09-21",
       "prises": [
         {
-          "job": "7e926076-8cd9-44e1-96b3-b2afb1f2228a",
-          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3GXYlNxkbz83gXaGDVVrTni1dX2/hf_20260816_125216_7e926076-8cd9-44e1-96b3-b2afb1f2228a.mp4",
-          "at": 1786884736.412117
+          "job": "f53a98ef-549c-4dda-a354-92c0c296873a",
+          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3GXYlNxkbz83gXaGDVVrTni1dX2/hf_20260816_173955_f53a98ef-549c-4dda-a354-92c0c296873a.mp4",
+          "at": 1786901995.263452
         }
       ]
     },
-    "EP:EP514": {
-      "titre": "La pile qui grandit toute seule",
-      "date": "2026-09-03",
+    "EP:EP531": {
+      "titre": "20 h 31 — le plat part",
+      "date": "2026-09-22",
       "prises": [
         {
-          "job": "695b6901-9f16-49e4-a71d-66e204c05e7e",
-          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3GXYlNxkbz83gXaGDVVrTni1dX2/hf_20260816_131433_695b6901-9f16-49e4-a71d-66e204c05e7e.mp4",
-          "at": 1786886073.158386
+          "job": "d1247e75-b4ce-407f-808c-00e4ffc3ecc0",
+          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3GXYlNxkbz83gXaGDVVrTni1dX2/hf_20260816_180509_d1247e75-b4ce-407f-808c-00e4ffc3ecc0.mp4",
+          "at": 1786903509.280738
         }
       ]
     },
-    "EP:EP515": {
-      "titre": "Le quinze du mois suivant",
-      "date": "2026-09-04",
+    "EP:EP532": {
+      "titre": "20 h 32 — il ne remarque rien",
+      "date": "2026-09-23",
       "prises": [
         {
-          "job": "0ea3f39c-328d-4a73-b8ad-b76807623fed",
-          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3GXYlNxkbz83gXaGDVVrTni1dX2/hf_20260816_133733_0ea3f39c-328d-4a73-b8ad-b76807623fed.mp4",
-          "at": 1786887453.093678
-        }
-      ]
-    },
-    "EP:EP516": {
-      "titre": "La question posée à voix haute",
-      "date": "2026-09-05",
-      "prises": [
-        {
-          "job": "cf2370b2-ad21-4f46-8961-d84afb4fe1d6",
-          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3GXYlNxkbz83gXaGDVVrTni1dX2/hf_20260816_140112_cf2370b2-ad21-4f46-8961-d84afb4fe1d6.mp4",
-          "at": 1786888872.359047
-        }
-      ]
-    },
-    "EP:EP522": {
-      "titre": "Quelqu'un décroche à la première sonnerie",
-      "date": "2026-09-12",
-      "prises": [
-        {
-          "job": "7e736cda-be0a-45e5-b43b-67de2ce2a9f2",
-          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3GXYlNxkbz83gXaGDVVrTni1dX2/hf_20260816_092715_7e736cda-be0a-45e5-b43b-67de2ce2a9f2.mp4",
-          "at": 1786872435.658061
+          "job": "0e633c96-b3d0-4988-8593-de952d7c4759",
+          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3GXYlNxkbz83gXaGDVVrTni1dX2/hf_20260816_183205_0e633c96-b3d0-4988-8593-de952d7c4759.mp4",
+          "at": 1786905125.385953
         }
       ]
     }
@@ -782,11 +760,6 @@
       "date": "2027-04-21"
     },
     {
-      "cle": "EP:EP418",
-      "titre": "Le moteur : brancher Claude, ChatGPT ou Mistral",
-      "date": "2027-04-23"
-    },
-    {
       "cle": "EP:EP419",
       "titre": "Les quatre agents et leurs boucles",
       "date": "2027-04-24"
@@ -857,11 +830,6 @@
       "date": "2026-08-30"
     },
     {
-      "cle": "EP:EP517",
-      "titre": "Le planning avant le samedi",
-      "date": "2026-09-06"
-    },
-    {
       "cle": "EP:EP518",
       "titre": "Il éteint la lampe à vingt-trois heures",
       "date": "2026-09-07"
@@ -877,44 +845,9 @@
       "date": "2026-09-14"
     },
     {
-      "cle": "EP:EP525",
-      "titre": "Le même soir, quatre fois",
-      "date": "2026-09-16"
-    },
-    {
-      "cle": "EP:EP526",
-      "titre": "18 h 40 — il réserve",
-      "date": "2026-09-17"
-    },
-    {
-      "cle": "EP:EP527",
-      "titre": "18 h 41 — la salle le voit",
-      "date": "2026-09-18"
-    },
-    {
       "cle": "EP:EP528",
       "titre": "18 h 42 — la cuisine l'apprend",
       "date": "2026-09-19"
-    },
-    {
-      "cle": "EP:EP529",
-      "titre": "18 h 43 — le bureau voit le couvert",
-      "date": "2026-09-20"
-    },
-    {
-      "cle": "EP:EP530",
-      "titre": "20 h 15 — les quatre au même endroit",
-      "date": "2026-09-21"
-    },
-    {
-      "cle": "EP:EP531",
-      "titre": "20 h 31 — le plat part",
-      "date": "2026-09-22"
-    },
-    {
-      "cle": "EP:EP532",
-      "titre": "20 h 32 — il ne remarque rien",
-      "date": "2026-09-23"
     },
     {
       "cle": "EP:EP533",
