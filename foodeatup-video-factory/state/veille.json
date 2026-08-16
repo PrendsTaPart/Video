@@ -2,7 +2,30 @@
   "jobs_lus": 50,
   "cibles": 233,
   "deja_servies": 84,
-  "a_monter": {},
+  "a_monter": {
+    "EP:EP511": {
+      "titre": "Le prénom du fils",
+      "date": "2026-08-30",
+      "prises": [
+        {
+          "job": "b75296a7-561f-49e3-b19b-b7f4464c5a5d",
+          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3GXYlNxkbz83gXaGDVVrTni1dX2/hf_20260816_203422_b75296a7-561f-49e3-b19b-b7f4464c5a5d.mp4",
+          "at": 1786912462.474144
+        }
+      ]
+    },
+    "EP:EP518": {
+      "titre": "Il éteint la lampe à vingt-trois heures",
+      "date": "2026-09-07",
+      "prises": [
+        {
+          "job": "0bdb609d-b562-4834-96c5-6243f528dcba",
+          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3GXYlNxkbz83gXaGDVVrTni1dX2/hf_20260816_210555_0bdb609d-b562-4834-96c5-6243f528dcba.mp4",
+          "at": 1786914355.59695
+        }
+      ]
+    }
+  },
   "toujours_attendus": [
     {
       "cle": "BA:le-coup-de-feu-S2",
@@ -708,16 +731,6 @@
       "cle": "EP:EP431",
       "titre": "L'orchestration finale du restaurant",
       "date": "2027-05-06"
-    },
-    {
-      "cle": "EP:EP511",
-      "titre": "Le prénom du fils",
-      "date": "2026-08-30"
-    },
-    {
-      "cle": "EP:EP518",
-      "titre": "Il éteint la lampe à vingt-trois heures",
-      "date": "2026-09-07"
     },
     {
       "cle": "EP:EP523",
