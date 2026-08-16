@@ -483,7 +483,7 @@ export const series: Serie[] = [
                 "lienCta": "https://site.foodeatup.com/"
               }
             },
-            "posterUrl": "/posters/EP001.jpg",
+            "posterUrl": "/thumbnails/episodes/EP001-9x16.jpg",
             "datePrevue": "2026-09-28",
             "troisMots": "COMMANDES MULTI-CANAUX",
             "tutoriel": {
@@ -561,7 +561,7 @@ export const series: Serie[] = [
                 "lienCta": "https://site.foodeatup.com/"
               }
             },
-            "posterUrl": "/posters/EP002.jpg",
+            "posterUrl": "/thumbnails/episodes/EP002-9x16.jpg",
             "datePrevue": "2026-09-29",
             "troisMots": "ENVOI DIRECT CUISINE",
             "tutoriel": {
@@ -639,7 +639,7 @@ export const series: Serie[] = [
                 "lienCta": "https://site.foodeatup.com/"
               }
             },
-            "posterUrl": "/posters/EP003.jpg",
+            "posterUrl": "/thumbnails/episodes/EP003-9x16.jpg",
             "datePrevue": "2026-09-30",
             "troisMots": "MA CARTE",
             "tutoriel": null,
@@ -711,7 +711,7 @@ export const series: Serie[] = [
               }
             },
             "blocage": "Le chapitre correspondant n'a pas encore de vidéo dans le Drive interne.",
-            "posterUrl": null,
+            "posterUrl": "/thumbnails/episodes/EP004-9x16.jpg",
             "datePrevue": "2026-10-01",
             "troisMots": "CONFIGURER SA CAISSE",
             "tutoriel": null,
@@ -782,7 +782,7 @@ export const series: Serie[] = [
                 "lienCta": "https://site.foodeatup.com/"
               }
             },
-            "posterUrl": "/posters/EP005.jpg",
+            "posterUrl": "/thumbnails/episodes/EP005-9x16.jpg",
             "datePrevue": "2026-10-02",
             "troisMots": "VUE D'ENSEMBLE",
             "tutoriel": null,
@@ -853,7 +853,7 @@ export const series: Serie[] = [
                 "lienCta": "https://site.foodeatup.com/"
               }
             },
-            "posterUrl": "/posters/EP006.jpg",
+            "posterUrl": "/thumbnails/episodes/EP006-9x16.jpg",
             "datePrevue": "2026-10-03",
             "troisMots": "AJOUTER MODIFIER MOUVEMENT",
             "tutoriel": {
@@ -931,7 +931,7 @@ export const series: Serie[] = [
                 "lienCta": "https://site.foodeatup.com/"
               }
             },
-            "posterUrl": "/posters/EP007.jpg",
+            "posterUrl": "/thumbnails/episodes/EP007-9x16.jpg",
             "datePrevue": "2026-10-04",
             "troisMots": "RÉPONDRE AUX AVIS",
             "tutoriel": {
@@ -1009,7 +1009,7 @@ export const series: Serie[] = [
                 "lienCta": "https://site.foodeatup.com/"
               }
             },
-            "posterUrl": null,
+            "posterUrl": "/thumbnails/episodes/EP008-9x16.jpg",
             "datePrevue": "2026-10-05",
             "troisMots": "FACTURATION",
             "tutoriel": {
@@ -1088,7 +1088,7 @@ export const series: Serie[] = [
               }
             },
             "blocage": "Le chapitre correspondant n'a pas encore de vidéo dans le Drive interne.",
-            "posterUrl": null,
+            "posterUrl": "/thumbnails/episodes/EP009-9x16.jpg",
             "datePrevue": "2026-10-06",
             "troisMots": "SUIVRE ÉCARTS CAISSE",
             "tutoriel": null,
@@ -1159,7 +1159,7 @@ export const series: Serie[] = [
                 "lienCta": "https://site.foodeatup.com/"
               }
             },
-            "posterUrl": "/posters/EP010.jpg",
+            "posterUrl": "/thumbnails/episodes/EP010-9x16.jpg",
             "datePrevue": "2026-10-07",
             "troisMots": "LIRE SES PRÉVISIONS",
             "tutoriel": {
@@ -1238,7 +1238,7 @@ export const series: Serie[] = [
               }
             },
             "blocage": "Le chapitre correspondant n'a pas encore de vidéo dans le Drive interne.",
-            "posterUrl": null,
+            "posterUrl": "/thumbnails/episodes/EP011-9x16.jpg",
             "datePrevue": "2026-10-08",
             "troisMots": "CONNECTER SON HUBRISE",
             "tutoriel": {
@@ -1317,7 +1317,7 @@ export const series: Serie[] = [
               }
             },
             "blocage": "Le chapitre correspondant n'a pas encore de vidéo dans le Drive interne.",
-            "posterUrl": null,
+            "posterUrl": "/thumbnails/episodes/EP012-9x16.jpg",
             "datePrevue": "2026-10-09",
             "troisMots": "GÉRER KDS DIRECT",
             "tutoriel": {
@@ -1395,7 +1395,7 @@ export const series: Serie[] = [
                 "lienCta": "https://site.foodeatup.com/"
               }
             },
-            "posterUrl": "/posters/EP013.jpg",
+            "posterUrl": "/thumbnails/episodes/EP013-9x16.jpg",
             "datePrevue": "2026-10-10",
             "troisMots": "PARLER À PREDIBOT",
             "tutoriel": {
@@ -1473,7 +1473,7 @@ export const series: Serie[] = [
                 "lienCta": "https://site.foodeatup.com/"
               }
             },
-            "posterUrl": "/posters/EP014.jpg",
+            "posterUrl": "/thumbnails/episodes/EP014-9x16.jpg",
             "datePrevue": "2026-10-11",
             "troisMots": "MOUVEMENTS DE STOCK",
             "tutoriel": {
@@ -1551,7 +1551,7 @@ export const series: Serie[] = [
                 "lienCta": "https://site.foodeatup.com/"
               }
             },
-            "posterUrl": "/posters/EP015.jpg",
+            "posterUrl": "/thumbnails/episodes/EP015-9x16.jpg",
             "datePrevue": "2026-10-12",
             "troisMots": "RÉFÉRENTIELS",
             "tutoriel": {
@@ -1629,7 +1629,7 @@ export const series: Serie[] = [
                 "lienCta": "https://site.foodeatup.com/"
               }
             },
-            "posterUrl": "/posters/EP016.jpg",
+            "posterUrl": "/thumbnails/episodes/EP016-9x16.jpg",
             "datePrevue": "2026-10-13",
             "troisMots": "DÉPENSES",
             "tutoriel": {
@@ -1707,7 +1707,7 @@ export const series: Serie[] = [
                 "lienCta": "https://site.foodeatup.com/"
               }
             },
-            "posterUrl": "/posters/EP017.jpg",
+            "posterUrl": "/thumbnails/episodes/EP017-9x16.jpg",
             "datePrevue": "2026-10-14",
             "troisMots": "CRÉATION D'UN RAPPORT",
             "tutoriel": {
@@ -1785,7 +1785,7 @@ export const series: Serie[] = [
                 "lienCta": "https://site.foodeatup.com/"
               }
             },
-            "posterUrl": "/posters/EP018.jpg",
+            "posterUrl": "/thumbnails/episodes/EP018-9x16.jpg",
             "datePrevue": "2026-10-15",
             "troisMots": "SITE",
             "tutoriel": {
@@ -1863,7 +1863,7 @@ export const series: Serie[] = [
                 "lienCta": "https://site.foodeatup.com/"
               }
             },
-            "posterUrl": "/posters/EP019.jpg",
+            "posterUrl": "/thumbnails/episodes/EP019-9x16.jpg",
             "datePrevue": "2026-10-16",
             "troisMots": "PRÉDICTIONS DES COMMANDES",
             "tutoriel": {
@@ -1941,7 +1941,7 @@ export const series: Serie[] = [
                 "lienCta": "https://site.foodeatup.com/"
               }
             },
-            "posterUrl": "/posters/EP020.jpg",
+            "posterUrl": "/thumbnails/episodes/EP020-9x16.jpg",
             "datePrevue": "2026-10-17",
             "troisMots": "AJOUTER UNE RÉSERVATION",
             "tutoriel": {
@@ -2019,7 +2019,7 @@ export const series: Serie[] = [
                 "lienCta": "https://site.foodeatup.com/"
               }
             },
-            "posterUrl": "/posters/EP021.jpg",
+            "posterUrl": "/thumbnails/episodes/EP021-9x16.jpg",
             "datePrevue": "2026-10-18",
             "troisMots": "CRÉER TES POSTES",
             "tutoriel": {
@@ -2097,7 +2097,7 @@ export const series: Serie[] = [
                 "lienCta": "https://site.foodeatup.com/"
               }
             },
-            "posterUrl": "/posters/EP022.jpg",
+            "posterUrl": "/thumbnails/episodes/EP022-9x16.jpg",
             "datePrevue": "2026-10-19",
             "troisMots": "MARKETPLACE DE PROMPTS",
             "tutoriel": {
@@ -2175,7 +2175,7 @@ export const series: Serie[] = [
                 "lienCta": "https://site.foodeatup.com/"
               }
             },
-            "posterUrl": "/posters/EP023.jpg",
+            "posterUrl": "/thumbnails/episodes/EP023-9x16.jpg",
             "datePrevue": "2026-10-20",
             "troisMots": "CALENDRIER IA AVEC",
             "tutoriel": {
@@ -2253,7 +2253,7 @@ export const series: Serie[] = [
                 "lienCta": "https://site.foodeatup.com/"
               }
             },
-            "posterUrl": "/posters/EP024.jpg",
+            "posterUrl": "/thumbnails/episodes/EP024-9x16.jpg",
             "datePrevue": "2026-10-21",
             "troisMots": "CRÉER SITE PAR",
             "tutoriel": {
@@ -2331,7 +2331,7 @@ export const series: Serie[] = [
                 "lienCta": "https://site.foodeatup.com/"
               }
             },
-            "posterUrl": "/posters/EP025.jpg",
+            "posterUrl": "/thumbnails/episodes/EP025-9x16.jpg",
             "datePrevue": "2026-10-22",
             "troisMots": "CAMPAGNE 100 %",
             "tutoriel": {
@@ -2409,7 +2409,7 @@ export const series: Serie[] = [
                 "lienCta": "https://site.foodeatup.com/"
               }
             },
-            "posterUrl": "/posters/EP026.jpg",
+            "posterUrl": "/thumbnails/episodes/EP026-9x16.jpg",
             "datePrevue": "2026-10-23",
             "troisMots": "ENVOYER LISTE COURSES",
             "tutoriel": {
@@ -2488,7 +2488,7 @@ export const series: Serie[] = [
               }
             },
             "blocage": "Le chapitre correspondant n'a pas encore de vidéo dans le Drive interne.",
-            "posterUrl": null,
+            "posterUrl": "/thumbnails/episodes/EP027-9x16.jpg",
             "datePrevue": "2026-10-24",
             "troisMots": "CLÔTURER SA CAISSE",
             "tutoriel": null,
@@ -2560,7 +2560,7 @@ export const series: Serie[] = [
               }
             },
             "blocage": "Le chapitre correspondant n'a pas encore de vidéo dans le Drive interne.",
-            "posterUrl": null,
+            "posterUrl": "/thumbnails/episodes/EP028-9x16.jpg",
             "datePrevue": "2026-10-25",
             "troisMots": "CENTRALISER LES COMMANDES",
             "tutoriel": {
@@ -2638,7 +2638,7 @@ export const series: Serie[] = [
                 "lienCta": "https://site.foodeatup.com/"
               }
             },
-            "posterUrl": "/posters/EP029.jpg",
+            "posterUrl": "/thumbnails/episodes/EP029-9x16.jpg",
             "datePrevue": "2026-10-26",
             "troisMots": "LIRE SES PRÉVISIONS",
             "tutoriel": {
@@ -2716,7 +2716,7 @@ export const series: Serie[] = [
                 "lienCta": "https://site.foodeatup.com/"
               }
             },
-            "posterUrl": "/posters/EP030.jpg",
+            "posterUrl": "/thumbnails/episodes/EP030-9x16.jpg",
             "datePrevue": "2026-10-27",
             "troisMots": "ACADEMY",
             "tutoriel": null,
@@ -2806,7 +2806,7 @@ export const series: Serie[] = [
                 "lienCta": "https://site.foodeatup.com/"
               }
             },
-            "posterUrl": null,
+            "posterUrl": "/thumbnails/episodes/EP031-9x16.jpg",
             "datePrevue": "2026-11-14",
             "troisMots": "ÉTIQUETTES DLC",
             "tutoriel": {
@@ -2884,7 +2884,7 @@ export const series: Serie[] = [
                 "lienCta": "https://site.foodeatup.com/"
               }
             },
-            "posterUrl": null,
+            "posterUrl": "/thumbnails/episodes/EP032-9x16.jpg",
             "datePrevue": "2026-11-15",
             "troisMots": "MA CARTE",
             "tutoriel": {
@@ -2962,7 +2962,7 @@ export const series: Serie[] = [
                 "lienCta": "https://site.foodeatup.com/"
               }
             },
-            "posterUrl": null,
+            "posterUrl": "/thumbnails/episodes/EP033-9x16.jpg",
             "datePrevue": "2026-11-16",
             "troisMots": "MOUVEMENTS DE STOCK",
             "tutoriel": {
@@ -3041,7 +3041,7 @@ export const series: Serie[] = [
               }
             },
             "blocage": "Le chapitre correspondant n'a pas encore de vidéo dans le Drive interne.",
-            "posterUrl": null,
+            "posterUrl": "/thumbnails/episodes/EP034-9x16.jpg",
             "datePrevue": "2026-11-17",
             "troisMots": "PROCESS",
             "tutoriel": null,
@@ -3112,7 +3112,7 @@ export const series: Serie[] = [
                 "lienCta": "https://site.foodeatup.com/"
               }
             },
-            "posterUrl": null,
+            "posterUrl": "/thumbnails/episodes/EP035-9x16.jpg",
             "datePrevue": "2026-11-18",
             "troisMots": "LIRE SES PRÉVISIONS",
             "tutoriel": {
@@ -3190,7 +3190,7 @@ export const series: Serie[] = [
                 "lienCta": "https://site.foodeatup.com/"
               }
             },
-            "posterUrl": null,
+            "posterUrl": "/thumbnails/episodes/EP036-9x16.jpg",
             "datePrevue": "2026-11-19",
             "troisMots": "UN SEUL ABONNEMENT",
             "tutoriel": null,
@@ -3261,7 +3261,7 @@ export const series: Serie[] = [
                 "lienCta": "https://site.foodeatup.com/"
               }
             },
-            "posterUrl": null,
+            "posterUrl": "/thumbnails/episodes/EP037-9x16.jpg",
             "datePrevue": "2026-11-20",
             "troisMots": "CRÉER UN SHIFT",
             "tutoriel": {
@@ -3339,7 +3339,7 @@ export const series: Serie[] = [
                 "lienCta": "https://site.foodeatup.com/"
               }
             },
-            "posterUrl": null,
+            "posterUrl": "/thumbnails/episodes/EP038-9x16.jpg",
             "datePrevue": "2026-11-21",
             "troisMots": "MA LISTE COURSES",
             "tutoriel": {
@@ -3417,7 +3417,7 @@ export const series: Serie[] = [
                 "lienCta": "https://site.foodeatup.com/"
               }
             },
-            "posterUrl": null,
+            "posterUrl": "/thumbnails/episodes/EP039-9x16.jpg",
             "datePrevue": "2026-11-22",
             "troisMots": "GÉRER ET NO-SHOWS",
             "tutoriel": {
@@ -3495,7 +3495,7 @@ export const series: Serie[] = [
                 "lienCta": "https://site.foodeatup.com/"
               }
             },
-            "posterUrl": null,
+            "posterUrl": "/thumbnails/episodes/EP040-9x16.jpg",
             "datePrevue": "2026-11-23",
             "troisMots": "AJOUTER UN MOUVEMENT",
             "tutoriel": {
@@ -3573,7 +3573,7 @@ export const series: Serie[] = [
                 "lienCta": "https://site.foodeatup.com/"
               }
             },
-            "posterUrl": null,
+            "posterUrl": "/thumbnails/episodes/EP041-9x16.jpg",
             "datePrevue": "2026-11-24",
             "troisMots": "SORTIE INGRÉDIENTS PRODUCTION",
             "tutoriel": {
@@ -3652,7 +3652,7 @@ export const series: Serie[] = [
               }
             },
             "blocage": "Le chapitre correspondant n'a pas encore de vidéo dans le Drive interne.",
-            "posterUrl": null,
+            "posterUrl": "/thumbnails/episodes/EP042-9x16.jpg",
             "datePrevue": "2026-11-25",
             "troisMots": "MCP RAPIDOCMS IRIS",
             "tutoriel": {
@@ -3731,7 +3731,7 @@ export const series: Serie[] = [
               }
             },
             "blocage": "Le chapitre correspondant n'a pas encore de vidéo dans le Drive interne.",
-            "posterUrl": null,
+            "posterUrl": "/thumbnails/episodes/EP043-9x16.jpg",
             "datePrevue": "2026-11-26",
             "troisMots": "REMISES ET AVOIRS",
             "tutoriel": null,
@@ -3802,7 +3802,7 @@ export const series: Serie[] = [
                 "lienCta": "https://site.foodeatup.com/"
               }
             },
-            "posterUrl": null,
+            "posterUrl": "/thumbnails/episodes/EP044-9x16.jpg",
             "datePrevue": "2026-11-27",
             "troisMots": "COMMANDER PAR QR",
             "tutoriel": {
@@ -3880,7 +3880,7 @@ export const series: Serie[] = [
                 "lienCta": "https://site.foodeatup.com/"
               }
             },
-            "posterUrl": null,
+            "posterUrl": "/thumbnails/episodes/EP045-9x16.jpg",
             "datePrevue": "2026-11-28",
             "troisMots": "STATISTIQUES PAR MODULE",
             "tutoriel": {
@@ -3958,7 +3958,7 @@ export const series: Serie[] = [
                 "lienCta": "https://site.foodeatup.com/"
               }
             },
-            "posterUrl": null,
+            "posterUrl": "/thumbnails/episodes/EP046-9x16.jpg",
             "datePrevue": "2026-11-29",
             "troisMots": "AGENT IA SUGGESTIONS",
             "tutoriel": {
@@ -4036,7 +4036,7 @@ export const series: Serie[] = [
                 "lienCta": "https://site.foodeatup.com/"
               }
             },
-            "posterUrl": null,
+            "posterUrl": "/thumbnails/episodes/EP047-9x16.jpg",
             "datePrevue": "2026-11-30",
             "troisMots": "CONTRÔLE À RÉCEPTION",
             "tutoriel": {
@@ -4114,7 +4114,7 @@ export const series: Serie[] = [
                 "lienCta": "https://site.foodeatup.com/"
               }
             },
-            "posterUrl": null,
+            "posterUrl": "/thumbnails/episodes/EP048-9x16.jpg",
             "datePrevue": "2026-12-01",
             "troisMots": "PARAMÉTRAGE INITIAL",
             "tutoriel": {
@@ -4192,7 +4192,7 @@ export const series: Serie[] = [
                 "lienCta": "https://site.foodeatup.com/"
               }
             },
-            "posterUrl": null,
+            "posterUrl": "/thumbnails/episodes/EP049-9x16.jpg",
             "datePrevue": "2026-12-02",
             "troisMots": "RELEVÉ DE TEMPÉRATURE",
             "tutoriel": {
@@ -4270,7 +4270,7 @@ export const series: Serie[] = [
                 "lienCta": "https://site.foodeatup.com/"
               }
             },
-            "posterUrl": null,
+            "posterUrl": "/thumbnails/episodes/EP050-9x16.jpg",
             "datePrevue": "2026-12-03",
             "troisMots": "ÉQUIPEMENTS",
             "tutoriel": {
@@ -4348,7 +4348,7 @@ export const series: Serie[] = [
                 "lienCta": "https://site.foodeatup.com/"
               }
             },
-            "posterUrl": null,
+            "posterUrl": "/thumbnails/episodes/EP051-9x16.jpg",
             "datePrevue": "2026-12-04",
             "troisMots": "ÉTIQUETTES DLC",
             "tutoriel": {
@@ -4426,7 +4426,7 @@ export const series: Serie[] = [
                 "lienCta": "https://site.foodeatup.com/"
               }
             },
-            "posterUrl": null,
+            "posterUrl": "/thumbnails/episodes/EP052-9x16.jpg",
             "datePrevue": "2026-12-05",
             "troisMots": "TRAÇABILITÉ",
             "tutoriel": {
@@ -4504,7 +4504,7 @@ export const series: Serie[] = [
                 "lienCta": "https://site.foodeatup.com/"
               }
             },
-            "posterUrl": null,
+            "posterUrl": "/thumbnails/episodes/EP053-9x16.jpg",
             "datePrevue": "2026-12-06",
             "troisMots": "RÉCEPTION FOURNISSEUR",
             "tutoriel": {
@@ -4582,7 +4582,7 @@ export const series: Serie[] = [
                 "lienCta": "https://site.foodeatup.com/"
               }
             },
-            "posterUrl": null,
+            "posterUrl": "/thumbnails/episodes/EP054-9x16.jpg",
             "datePrevue": "2026-12-07",
             "troisMots": "PLAN DE NETTOYAGE",
             "tutoriel": {
@@ -4660,7 +4660,7 @@ export const series: Serie[] = [
                 "lienCta": "https://site.foodeatup.com/"
               }
             },
-            "posterUrl": null,
+            "posterUrl": "/thumbnails/episodes/EP055-9x16.jpg",
             "datePrevue": "2026-12-08",
             "troisMots": "CHECKLISTS HYGIÈNE",
             "tutoriel": {
@@ -4738,7 +4738,7 @@ export const series: Serie[] = [
                 "lienCta": "https://site.foodeatup.com/"
               }
             },
-            "posterUrl": null,
+            "posterUrl": "/thumbnails/episodes/EP056-9x16.jpg",
             "datePrevue": "2026-12-09",
             "troisMots": "HISTORIQUE",
             "tutoriel": {
@@ -4816,7 +4816,7 @@ export const series: Serie[] = [
                 "lienCta": "https://site.foodeatup.com/"
               }
             },
-            "posterUrl": null,
+            "posterUrl": "/thumbnails/episodes/EP057-9x16.jpg",
             "datePrevue": "2026-12-10",
             "troisMots": "ALERTES",
             "tutoriel": null,
@@ -4888,7 +4888,7 @@ export const series: Serie[] = [
               }
             },
             "blocage": "Le chapitre correspondant n'a pas encore de vidéo dans le Drive interne.",
-            "posterUrl": null,
+            "posterUrl": "/thumbnails/episodes/EP058-9x16.jpg",
             "datePrevue": "2026-12-11",
             "troisMots": "RÔLES",
             "tutoriel": null,
@@ -4959,7 +4959,7 @@ export const series: Serie[] = [
                 "lienCta": "https://site.foodeatup.com/"
               }
             },
-            "posterUrl": null,
+            "posterUrl": "/thumbnails/episodes/EP059-9x16.jpg",
             "datePrevue": "2026-12-12",
             "troisMots": "NON-CONFORMITÉ",
             "tutoriel": {
@@ -5037,7 +5037,7 @@ export const series: Serie[] = [
                 "lienCta": "https://site.foodeatup.com/"
               }
             },
-            "posterUrl": null,
+            "posterUrl": "/thumbnails/episodes/EP060-9x16.jpg",
             "datePrevue": "2026-12-13",
             "troisMots": "CONGÉLATION",
             "tutoriel": {
@@ -5132,7 +5132,7 @@ export const series: Serie[] = [
                 "lienCta": "https://site.foodeatup.com/"
               }
             },
-            "posterUrl": null,
+            "posterUrl": "/thumbnails/episodes/EP061-9x16.jpg",
             "datePrevue": "2026-12-15",
             "troisMots": "RAPPORT HACCP",
             "tutoriel": {
@@ -5211,7 +5211,7 @@ export const series: Serie[] = [
               }
             },
             "blocage": "Le chapitre correspondant n'a pas encore de vidéo dans le Drive interne.",
-            "posterUrl": null,
+            "posterUrl": "/thumbnails/episodes/EP062-9x16.jpg",
             "datePrevue": "2026-12-16",
             "troisMots": "ROUTINE DU JOUR",
             "tutoriel": {
@@ -5289,7 +5289,7 @@ export const series: Serie[] = [
                 "lienCta": "https://site.foodeatup.com/"
               }
             },
-            "posterUrl": null,
+            "posterUrl": "/thumbnails/episodes/EP063-9x16.jpg",
             "datePrevue": "2026-12-17",
             "troisMots": "CRÉER UN EMPLOYÉ",
             "tutoriel": {
@@ -5367,7 +5367,7 @@ export const series: Serie[] = [
                 "lienCta": "https://site.foodeatup.com/"
               }
             },
-            "posterUrl": null,
+            "posterUrl": "/thumbnails/episodes/EP064-9x16.jpg",
             "datePrevue": "2026-12-18",
             "troisMots": "PLANNING SEMAINE",
             "tutoriel": {
@@ -5445,7 +5445,7 @@ export const series: Serie[] = [
                 "lienCta": "https://site.foodeatup.com/"
               }
             },
-            "posterUrl": null,
+            "posterUrl": "/thumbnails/episodes/EP065-9x16.jpg",
             "datePrevue": "2026-12-19",
             "troisMots": "POINTAGES",
             "tutoriel": {
@@ -5523,7 +5523,7 @@ export const series: Serie[] = [
                 "lienCta": "https://site.foodeatup.com/"
               }
             },
-            "posterUrl": null,
+            "posterUrl": "/thumbnails/episodes/EP066-9x16.jpg",
             "datePrevue": "2026-12-20",
             "troisMots": "CONGÉS",
             "tutoriel": null,
@@ -5594,7 +5594,7 @@ export const series: Serie[] = [
                 "lienCta": "https://site.foodeatup.com/"
               }
             },
-            "posterUrl": null,
+            "posterUrl": "/thumbnails/episodes/EP067-9x16.jpg",
             "datePrevue": "2026-12-21",
             "troisMots": "CONTRATS",
             "tutoriel": {
@@ -5672,7 +5672,7 @@ export const series: Serie[] = [
                 "lienCta": "https://site.foodeatup.com/"
               }
             },
-            "posterUrl": null,
+            "posterUrl": "/thumbnails/episodes/EP068-9x16.jpg",
             "datePrevue": "2026-12-22",
             "troisMots": "COÛT DU TRAVAIL",
             "tutoriel": null,
@@ -5744,7 +5744,7 @@ export const series: Serie[] = [
               }
             },
             "blocage": "Le chapitre correspondant n'a pas encore de vidéo dans le Drive interne.",
-            "posterUrl": null,
+            "posterUrl": "/thumbnails/episodes/EP069-9x16.jpg",
             "datePrevue": "2026-12-23",
             "troisMots": "RECRUTEMENT",
             "tutoriel": {
@@ -5822,7 +5822,7 @@ export const series: Serie[] = [
                 "lienCta": "https://site.foodeatup.com/"
               }
             },
-            "posterUrl": null,
+            "posterUrl": "/thumbnails/episodes/EP070-9x16.jpg",
             "datePrevue": "2026-12-24",
             "troisMots": "ONBOARDING",
             "tutoriel": {
@@ -5900,7 +5900,7 @@ export const series: Serie[] = [
                 "lienCta": "https://site.foodeatup.com/"
               }
             },
-            "posterUrl": null,
+            "posterUrl": "/thumbnails/episodes/EP071-9x16.jpg",
             "datePrevue": "2026-12-25",
             "troisMots": "MULTI-POSTES",
             "tutoriel": {
@@ -5978,7 +5978,7 @@ export const series: Serie[] = [
                 "lienCta": "https://site.foodeatup.com/"
               }
             },
-            "posterUrl": null,
+            "posterUrl": "/thumbnails/episodes/EP072-9x16.jpg",
             "datePrevue": "2026-12-26",
             "troisMots": "ABSENCES",
             "tutoriel": {
@@ -6056,7 +6056,7 @@ export const series: Serie[] = [
                 "lienCta": "https://site.foodeatup.com/"
               }
             },
-            "posterUrl": null,
+            "posterUrl": "/thumbnails/episodes/EP073-9x16.jpg",
             "datePrevue": "2026-12-27",
             "troisMots": "ÉTABLISSEMENT",
             "tutoriel": {
@@ -6134,7 +6134,7 @@ export const series: Serie[] = [
                 "lienCta": "https://site.foodeatup.com/"
               }
             },
-            "posterUrl": null,
+            "posterUrl": "/thumbnails/episodes/EP074-9x16.jpg",
             "datePrevue": "2026-12-28",
             "troisMots": "CATÉGORIES",
             "tutoriel": {
@@ -6212,7 +6212,7 @@ export const series: Serie[] = [
                 "lienCta": "https://site.foodeatup.com/"
               }
             },
-            "posterUrl": null,
+            "posterUrl": "/thumbnails/episodes/EP075-9x16.jpg",
             "datePrevue": "2026-12-29",
             "troisMots": "TVA",
             "tutoriel": {
@@ -6290,7 +6290,7 @@ export const series: Serie[] = [
                 "lienCta": "https://site.foodeatup.com/"
               }
             },
-            "posterUrl": null,
+            "posterUrl": "/thumbnails/episodes/EP076-9x16.jpg",
             "datePrevue": "2026-12-30",
             "troisMots": "ZONES ET TABLES",
             "tutoriel": {
@@ -6369,7 +6369,7 @@ export const series: Serie[] = [
               }
             },
             "blocage": "Le chapitre correspondant n'a pas encore de vidéo dans le Drive interne.",
-            "posterUrl": null,
+            "posterUrl": "/thumbnails/episodes/EP077-9x16.jpg",
             "datePrevue": "2026-12-31",
             "troisMots": "ÉQUIPEMENTS",
             "tutoriel": {
@@ -6448,7 +6448,7 @@ export const series: Serie[] = [
               }
             },
             "blocage": "Le chapitre correspondant n'a pas encore de vidéo dans le Drive interne.",
-            "posterUrl": null,
+            "posterUrl": "/thumbnails/episodes/EP078-9x16.jpg",
             "datePrevue": "2027-01-01",
             "troisMots": "UTILISATEURS",
             "tutoriel": {
@@ -6527,7 +6527,7 @@ export const series: Serie[] = [
               }
             },
             "blocage": "Le chapitre correspondant n'a pas encore de vidéo dans le Drive interne.",
-            "posterUrl": null,
+            "posterUrl": "/thumbnails/episodes/EP079-9x16.jpg",
             "datePrevue": "2027-01-02",
             "troisMots": "IMPORT DE CARTE",
             "tutoriel": {
@@ -6605,7 +6605,7 @@ export const series: Serie[] = [
                 "lienCta": "https://site.foodeatup.com/"
               }
             },
-            "posterUrl": null,
+            "posterUrl": "/thumbnails/episodes/EP080-9x16.jpg",
             "datePrevue": "2027-01-03",
             "troisMots": "ABONNEMENT",
             "tutoriel": {
@@ -6683,7 +6683,7 @@ export const series: Serie[] = [
                 "lienCta": "https://site.foodeatup.com/"
               }
             },
-            "posterUrl": null,
+            "posterUrl": "/thumbnails/episodes/EP081-9x16.jpg",
             "datePrevue": "2027-01-04",
             "troisMots": "FACTURES",
             "tutoriel": {
@@ -6761,7 +6761,7 @@ export const series: Serie[] = [
                 "lienCta": "https://site.foodeatup.com/"
               }
             },
-            "posterUrl": null,
+            "posterUrl": "/thumbnails/episodes/EP082-9x16.jpg",
             "datePrevue": "2027-01-05",
             "troisMots": "DEVIS",
             "tutoriel": {
@@ -6839,7 +6839,7 @@ export const series: Serie[] = [
                 "lienCta": "https://site.foodeatup.com/"
               }
             },
-            "posterUrl": null,
+            "posterUrl": "/thumbnails/episodes/EP083-9x16.jpg",
             "datePrevue": "2027-01-06",
             "troisMots": "IMPAYÉS",
             "tutoriel": null,
@@ -6910,7 +6910,7 @@ export const series: Serie[] = [
                 "lienCta": "https://site.foodeatup.com/"
               }
             },
-            "posterUrl": null,
+            "posterUrl": "/thumbnails/episodes/EP084-9x16.jpg",
             "datePrevue": "2027-01-07",
             "troisMots": "DÉPENSES",
             "tutoriel": {
@@ -6988,7 +6988,7 @@ export const series: Serie[] = [
                 "lienCta": "https://site.foodeatup.com/"
               }
             },
-            "posterUrl": null,
+            "posterUrl": "/thumbnails/episodes/EP085-9x16.jpg",
             "datePrevue": "2027-01-08",
             "troisMots": "SYNTHÈSE",
             "tutoriel": null,
@@ -7059,7 +7059,7 @@ export const series: Serie[] = [
                 "lienCta": "https://site.foodeatup.com/"
               }
             },
-            "posterUrl": null,
+            "posterUrl": "/thumbnails/episodes/EP086-9x16.jpg",
             "datePrevue": "2027-01-09",
             "troisMots": "EXPORT COMPTABLE",
             "tutoriel": {
@@ -7137,7 +7137,7 @@ export const series: Serie[] = [
                 "lienCta": "https://site.foodeatup.com/"
               }
             },
-            "posterUrl": null,
+            "posterUrl": "/thumbnails/episodes/EP087-9x16.jpg",
             "datePrevue": "2027-01-10",
             "troisMots": "ÉDITEUR",
             "tutoriel": {
@@ -7215,7 +7215,7 @@ export const series: Serie[] = [
                 "lienCta": "https://site.foodeatup.com/"
               }
             },
-            "posterUrl": null,
+            "posterUrl": "/thumbnails/episodes/EP088-9x16.jpg",
             "datePrevue": "2027-01-11",
             "troisMots": "PAGES",
             "tutoriel": null,
@@ -7286,7 +7286,7 @@ export const series: Serie[] = [
                 "lienCta": "https://site.foodeatup.com/"
               }
             },
-            "posterUrl": null,
+            "posterUrl": "/thumbnails/episodes/EP089-9x16.jpg",
             "datePrevue": "2027-01-12",
             "troisMots": "DOMAINE",
             "tutoriel": {
@@ -7365,7 +7365,7 @@ export const series: Serie[] = [
               }
             },
             "blocage": "Le chapitre correspondant n'a pas encore de vidéo dans le Drive interne.",
-            "posterUrl": null,
+            "posterUrl": "/thumbnails/episodes/EP090-9x16.jpg",
             "datePrevue": "2027-01-13",
             "troisMots": "LEADS DU SITE",
             "tutoriel": {
@@ -7461,7 +7461,7 @@ export const series: Serie[] = [
                 "lienCta": "https://site.foodeatup.com/"
               }
             },
-            "posterUrl": null,
+            "posterUrl": "/thumbnails/episodes/EP091-9x16.jpg",
             "datePrevue": "2027-02-01",
             "troisMots": "AJOUTER UNE RÉSERVATION",
             "tutoriel": {
@@ -7539,7 +7539,7 @@ export const series: Serie[] = [
                 "lienCta": "https://site.foodeatup.com/"
               }
             },
-            "posterUrl": null,
+            "posterUrl": "/thumbnails/episodes/EP092-9x16.jpg",
             "datePrevue": "2027-02-02",
             "troisMots": "GÉRER ET NO-SHOWS",
             "tutoriel": {
@@ -7617,7 +7617,7 @@ export const series: Serie[] = [
                 "lienCta": "https://site.foodeatup.com/"
               }
             },
-            "posterUrl": null,
+            "posterUrl": "/thumbnails/episodes/EP093-9x16.jpg",
             "datePrevue": "2027-02-03",
             "troisMots": "PRÉDICTIONS DES COMMANDES",
             "tutoriel": {
@@ -7696,7 +7696,7 @@ export const series: Serie[] = [
               }
             },
             "blocage": "Le chapitre correspondant n'a pas encore de vidéo dans le Drive interne.",
-            "posterUrl": null,
+            "posterUrl": "/thumbnails/episodes/EP094-9x16.jpg",
             "datePrevue": "2027-02-04",
             "troisMots": "CENTRALISER LES COMMANDES",
             "tutoriel": {
@@ -7775,7 +7775,7 @@ export const series: Serie[] = [
               }
             },
             "blocage": "Le chapitre correspondant n'a pas encore de vidéo dans le Drive interne.",
-            "posterUrl": null,
+            "posterUrl": "/thumbnails/episodes/EP095-9x16.jpg",
             "datePrevue": "2027-02-05",
             "troisMots": "GÉRER KDS DIRECT",
             "tutoriel": {
@@ -7853,7 +7853,7 @@ export const series: Serie[] = [
                 "lienCta": "https://site.foodeatup.com/"
               }
             },
-            "posterUrl": null,
+            "posterUrl": "/thumbnails/episodes/EP096-9x16.jpg",
             "datePrevue": "2027-02-06",
             "troisMots": "RELEVÉ DE TEMPÉRATURE",
             "tutoriel": {
@@ -7932,7 +7932,7 @@ export const series: Serie[] = [
               }
             },
             "blocage": "Le chapitre correspondant n'a pas encore de vidéo dans le Drive interne.",
-            "posterUrl": null,
+            "posterUrl": "/thumbnails/episodes/EP097-9x16.jpg",
             "datePrevue": "2027-02-07",
             "troisMots": "RELIER UBER EATS",
             "tutoriel": {
@@ -8010,7 +8010,7 @@ export const series: Serie[] = [
                 "lienCta": "https://site.foodeatup.com/"
               }
             },
-            "posterUrl": null,
+            "posterUrl": "/thumbnails/episodes/EP098-9x16.jpg",
             "datePrevue": "2027-02-08",
             "troisMots": "COMMANDES MULTI-CANAUX",
             "tutoriel": {
@@ -8088,7 +8088,7 @@ export const series: Serie[] = [
                 "lienCta": "https://site.foodeatup.com/"
               }
             },
-            "posterUrl": null,
+            "posterUrl": "/thumbnails/episodes/EP099-9x16.jpg",
             "datePrevue": "2027-02-09",
             "troisMots": "CONFIGURER VOIX PROMPTS",
             "tutoriel": {
@@ -8166,7 +8166,7 @@ export const series: Serie[] = [
                 "lienCta": "https://site.foodeatup.com/"
               }
             },
-            "posterUrl": null,
+            "posterUrl": "/thumbnails/episodes/EP100-9x16.jpg",
             "datePrevue": "2027-02-10",
             "troisMots": "DÉBLOQUER LES AVIS",
             "tutoriel": {
@@ -8245,7 +8245,7 @@ export const series: Serie[] = [
               }
             },
             "blocage": "Le chapitre correspondant n'a pas encore de vidéo dans le Drive interne.",
-            "posterUrl": null,
+            "posterUrl": "/thumbnails/episodes/EP101-9x16.jpg",
             "datePrevue": "2027-02-11",
             "troisMots": "CLÔTURER SA CAISSE",
             "tutoriel": null,
@@ -8316,7 +8316,7 @@ export const series: Serie[] = [
                 "lienCta": "https://site.foodeatup.com/"
               }
             },
-            "posterUrl": null,
+            "posterUrl": "/thumbnails/episodes/EP102-9x16.jpg",
             "datePrevue": "2027-02-12",
             "troisMots": "CHECKLISTS HYGIÈNE",
             "tutoriel": {
@@ -8394,7 +8394,7 @@ export const series: Serie[] = [
                 "lienCta": "https://site.foodeatup.com/"
               }
             },
-            "posterUrl": null,
+            "posterUrl": "/thumbnails/episodes/EP103-9x16.jpg",
             "datePrevue": "2027-02-13",
             "troisMots": "RÉSERVATIONS DU JOUR",
             "tutoriel": {
@@ -8472,7 +8472,7 @@ export const series: Serie[] = [
                 "lienCta": "https://site.foodeatup.com/"
               }
             },
-            "posterUrl": null,
+            "posterUrl": "/thumbnails/episodes/EP104-9x16.jpg",
             "datePrevue": "2027-02-14",
             "troisMots": "GÉRER ET NO-SHOWS",
             "tutoriel": {
@@ -8551,7 +8551,7 @@ export const series: Serie[] = [
               }
             },
             "blocage": "Le chapitre correspondant n'a pas encore de vidéo dans le Drive interne.",
-            "posterUrl": null,
+            "posterUrl": "/thumbnails/episodes/EP105-9x16.jpg",
             "datePrevue": "2027-02-15",
             "troisMots": "RÉSERVATIONS ET HORAIRES",
             "tutoriel": {
@@ -8630,7 +8630,7 @@ export const series: Serie[] = [
               }
             },
             "blocage": "Le chapitre correspondant n'a pas encore de vidéo dans le Drive interne.",
-            "posterUrl": null,
+            "posterUrl": "/thumbnails/episodes/EP106-9x16.jpg",
             "datePrevue": "2027-02-16",
             "troisMots": "SÉPARER UNE ADDITION",
             "tutoriel": null,
@@ -8702,7 +8702,7 @@ export const series: Serie[] = [
               }
             },
             "blocage": "Le chapitre correspondant n'a pas encore de vidéo dans le Drive interne.",
-            "posterUrl": null,
+            "posterUrl": "/thumbnails/episodes/EP107-9x16.jpg",
             "datePrevue": "2027-02-17",
             "troisMots": "ENCAISSER UNE COMMANDE",
             "tutoriel": null,
@@ -8773,7 +8773,7 @@ export const series: Serie[] = [
                 "lienCta": "https://site.foodeatup.com/"
               }
             },
-            "posterUrl": null,
+            "posterUrl": "/thumbnails/episodes/EP108-9x16.jpg",
             "datePrevue": "2027-02-18",
             "troisMots": "VUE KDS PAR",
             "tutoriel": {
@@ -8851,7 +8851,7 @@ export const series: Serie[] = [
                 "lienCta": "https://site.foodeatup.com/"
               }
             },
-            "posterUrl": null,
+            "posterUrl": "/thumbnails/episodes/EP109-9x16.jpg",
             "datePrevue": "2027-02-19",
             "troisMots": "TRAÇABILITÉ",
             "tutoriel": {
@@ -8929,7 +8929,7 @@ export const series: Serie[] = [
                 "lienCta": "https://site.foodeatup.com/"
               }
             },
-            "posterUrl": null,
+            "posterUrl": "/thumbnails/episodes/EP110-9x16.jpg",
             "datePrevue": "2027-02-20",
             "troisMots": "STATISTIQUES PAR MODULE",
             "tutoriel": {
@@ -9007,7 +9007,7 @@ export const series: Serie[] = [
                 "lienCta": "https://site.foodeatup.com/"
               }
             },
-            "posterUrl": null,
+            "posterUrl": "/thumbnails/episodes/EP111-9x16.jpg",
             "datePrevue": "2027-02-21",
             "troisMots": "VALIDER UNE PRODUCTION",
             "tutoriel": {
@@ -9085,7 +9085,7 @@ export const series: Serie[] = [
                 "lienCta": "https://site.foodeatup.com/"
               }
             },
-            "posterUrl": null,
+            "posterUrl": "/thumbnails/episodes/EP112-9x16.jpg",
             "datePrevue": "2027-02-22",
             "troisMots": "CHOISIR TON TEMPLATE",
             "tutoriel": {
@@ -9164,7 +9164,7 @@ export const series: Serie[] = [
               }
             },
             "blocage": "Le chapitre correspondant n'a pas encore de vidéo dans le Drive interne.",
-            "posterUrl": null,
+            "posterUrl": "/thumbnails/episodes/EP113-9x16.jpg",
             "datePrevue": "2027-02-23",
             "troisMots": "CENTRALISER LES COMMANDES",
             "tutoriel": {
@@ -9242,7 +9242,7 @@ export const series: Serie[] = [
                 "lienCta": "https://site.foodeatup.com/"
               }
             },
-            "posterUrl": null,
+            "posterUrl": "/thumbnails/episodes/EP114-9x16.jpg",
             "datePrevue": "2027-02-24",
             "troisMots": "LANCER UNE CAMPAGNE",
             "tutoriel": {
@@ -9320,7 +9320,7 @@ export const series: Serie[] = [
                 "lienCta": "https://site.foodeatup.com/"
               }
             },
-            "posterUrl": null,
+            "posterUrl": "/thumbnails/episodes/EP115-9x16.jpg",
             "datePrevue": "2027-02-25",
             "troisMots": "MOUVEMENTS DE STOCK",
             "tutoriel": {
@@ -9398,7 +9398,7 @@ export const series: Serie[] = [
                 "lienCta": "https://site.foodeatup.com/"
               }
             },
-            "posterUrl": null,
+            "posterUrl": "/thumbnails/episodes/EP116-9x16.jpg",
             "datePrevue": "2027-02-26",
             "troisMots": "CRÉER TES POSTES",
             "tutoriel": {
@@ -9476,7 +9476,7 @@ export const series: Serie[] = [
                 "lienCta": "https://site.foodeatup.com/"
               }
             },
-            "posterUrl": null,
+            "posterUrl": "/thumbnails/episodes/EP117-9x16.jpg",
             "datePrevue": "2027-02-27",
             "troisMots": "MA CARTE",
             "tutoriel": {
@@ -9554,7 +9554,7 @@ export const series: Serie[] = [
                 "lienCta": "https://site.foodeatup.com/"
               }
             },
-            "posterUrl": null,
+            "posterUrl": "/thumbnails/episodes/EP118-9x16.jpg",
             "datePrevue": "2027-02-28",
             "troisMots": "CRÉER SITE PAR",
             "tutoriel": {
@@ -9632,7 +9632,7 @@ export const series: Serie[] = [
                 "lienCta": "https://site.foodeatup.com/"
               }
             },
-            "posterUrl": null,
+            "posterUrl": "/thumbnails/episodes/EP119-9x16.jpg",
             "datePrevue": "2027-03-01",
             "troisMots": "CIBLAGE ET CONSENTEMENT",
             "tutoriel": {
@@ -9710,7 +9710,7 @@ export const series: Serie[] = [
                 "lienCta": "https://site.foodeatup.com/"
               }
             },
-            "posterUrl": null,
+            "posterUrl": "/thumbnails/episodes/EP120-9x16.jpg",
             "datePrevue": "2027-03-02",
             "troisMots": "LIRE SES PRÉVISIONS",
             "tutoriel": {
@@ -9806,7 +9806,7 @@ export const series: Serie[] = [
                 "lienCta": "https://site.foodeatup.com/"
               }
             },
-            "posterUrl": null,
+            "posterUrl": "/thumbnails/episodes/EP121-9x16.jpg",
             "datePrevue": "2027-03-04",
             "troisMots": "ENVOI DIRECT CUISINE",
             "tutoriel": {
@@ -9884,7 +9884,7 @@ export const series: Serie[] = [
                 "lienCta": "https://site.foodeatup.com/"
               }
             },
-            "posterUrl": null,
+            "posterUrl": "/thumbnails/episodes/EP122-9x16.jpg",
             "datePrevue": "2027-03-05",
             "troisMots": "VUE CLIENT FIDÉLITÉ",
             "tutoriel": {
@@ -9962,7 +9962,7 @@ export const series: Serie[] = [
                 "lienCta": "https://site.foodeatup.com/"
               }
             },
-            "posterUrl": null,
+            "posterUrl": "/thumbnails/episodes/EP123-9x16.jpg",
             "datePrevue": "2027-03-06",
             "troisMots": "MA CARTE",
             "tutoriel": {
@@ -10041,7 +10041,7 @@ export const series: Serie[] = [
               }
             },
             "blocage": "Le chapitre correspondant n'a pas encore de vidéo dans le Drive interne.",
-            "posterUrl": null,
+            "posterUrl": "/thumbnails/episodes/EP124-9x16.jpg",
             "datePrevue": "2027-03-07",
             "troisMots": "CLÔTURER SA CAISSE",
             "tutoriel": null,
@@ -10112,7 +10112,7 @@ export const series: Serie[] = [
                 "lienCta": "https://site.foodeatup.com/"
               }
             },
-            "posterUrl": null,
+            "posterUrl": "/thumbnails/episodes/EP125-9x16.jpg",
             "datePrevue": "2027-03-08",
             "troisMots": "DESSINER PLAN SALLE",
             "tutoriel": {
@@ -10191,7 +10191,7 @@ export const series: Serie[] = [
               }
             },
             "blocage": "Le chapitre correspondant n'a pas encore de vidéo dans le Drive interne.",
-            "posterUrl": null,
+            "posterUrl": "/thumbnails/episodes/EP126-9x16.jpg",
             "datePrevue": "2027-03-09",
             "troisMots": "SÉPARER UNE ADDITION",
             "tutoriel": null,
@@ -10262,7 +10262,7 @@ export const series: Serie[] = [
                 "lienCta": "https://site.foodeatup.com/"
               }
             },
-            "posterUrl": null,
+            "posterUrl": "/thumbnails/episodes/EP127-9x16.jpg",
             "datePrevue": "2027-03-10",
             "troisMots": "RÉSERVATIONS DU JOUR",
             "tutoriel": {
@@ -10340,7 +10340,7 @@ export const series: Serie[] = [
                 "lienCta": "https://site.foodeatup.com/"
               }
             },
-            "posterUrl": null,
+            "posterUrl": "/thumbnails/episodes/EP128-9x16.jpg",
             "datePrevue": "2027-03-11",
             "troisMots": "PLACER CLIENT TABLE",
             "tutoriel": {
@@ -10418,7 +10418,7 @@ export const series: Serie[] = [
                 "lienCta": "https://site.foodeatup.com/"
               }
             },
-            "posterUrl": null,
+            "posterUrl": "/thumbnails/episodes/EP129-9x16.jpg",
             "datePrevue": "2027-03-12",
             "troisMots": "GÉRER SES TABLES",
             "tutoriel": {
@@ -10496,7 +10496,7 @@ export const series: Serie[] = [
                 "lienCta": "https://site.foodeatup.com/"
               }
             },
-            "posterUrl": null,
+            "posterUrl": "/thumbnails/episodes/EP130-9x16.jpg",
             "datePrevue": "2027-03-13",
             "troisMots": "TON AGENDA MARKETING",
             "tutoriel": {
@@ -10574,7 +10574,7 @@ export const series: Serie[] = [
                 "lienCta": "https://site.foodeatup.com/"
               }
             },
-            "posterUrl": null,
+            "posterUrl": "/thumbnails/episodes/EP131-9x16.jpg",
             "datePrevue": "2027-03-14",
             "troisMots": "PLANNING SEMAINE",
             "tutoriel": {
@@ -10653,7 +10653,7 @@ export const series: Serie[] = [
               }
             },
             "blocage": "Le chapitre correspondant n'a pas encore de vidéo dans le Drive interne.",
-            "posterUrl": null,
+            "posterUrl": "/thumbnails/episodes/EP132-9x16.jpg",
             "datePrevue": "2027-03-15",
             "troisMots": "RÉSERVATIONS ET HORAIRES",
             "tutoriel": {
@@ -10732,7 +10732,7 @@ export const series: Serie[] = [
               }
             },
             "blocage": "Le chapitre correspondant n'a pas encore de vidéo dans le Drive interne.",
-            "posterUrl": null,
+            "posterUrl": "/thumbnails/episodes/EP133-9x16.jpg",
             "datePrevue": "2027-03-16",
             "troisMots": "ENCAISSER UNE COMMANDE",
             "tutoriel": null,
@@ -10803,7 +10803,7 @@ export const series: Serie[] = [
                 "lienCta": "https://site.foodeatup.com/"
               }
             },
-            "posterUrl": null,
+            "posterUrl": "/thumbnails/episodes/EP134-9x16.jpg",
             "datePrevue": "2027-03-17",
             "troisMots": "RELEVÉ DE TEMPÉRATURE",
             "tutoriel": {
@@ -10881,7 +10881,7 @@ export const series: Serie[] = [
                 "lienCta": "https://site.foodeatup.com/"
               }
             },
-            "posterUrl": null,
+            "posterUrl": "/thumbnails/episodes/EP135-9x16.jpg",
             "datePrevue": "2027-03-18",
             "troisMots": "RÉSERVATIONS DU JOUR",
             "tutoriel": {
@@ -10959,7 +10959,7 @@ export const series: Serie[] = [
                 "lienCta": "https://site.foodeatup.com/"
               }
             },
-            "posterUrl": null,
+            "posterUrl": "/thumbnails/episodes/EP136-9x16.jpg",
             "datePrevue": "2027-03-19",
             "troisMots": "COMMANDES MULTI-CANAUX",
             "tutoriel": {
@@ -11038,7 +11038,7 @@ export const series: Serie[] = [
               }
             },
             "blocage": "Le chapitre correspondant n'a pas encore de vidéo dans le Drive interne.",
-            "posterUrl": null,
+            "posterUrl": "/thumbnails/episodes/EP137-9x16.jpg",
             "datePrevue": "2027-03-20",
             "troisMots": "ENCAISSER UNE COMMANDE",
             "tutoriel": null,
@@ -11110,7 +11110,7 @@ export const series: Serie[] = [
               }
             },
             "blocage": "Le chapitre correspondant n'a pas encore de vidéo dans le Drive interne.",
-            "posterUrl": null,
+            "posterUrl": "/thumbnails/episodes/EP138-9x16.jpg",
             "datePrevue": "2027-03-21",
             "troisMots": "GÉRER KDS DIRECT",
             "tutoriel": {
@@ -11188,7 +11188,7 @@ export const series: Serie[] = [
                 "lienCta": "https://site.foodeatup.com/"
               }
             },
-            "posterUrl": null,
+            "posterUrl": "/thumbnails/episodes/EP139-9x16.jpg",
             "datePrevue": "2027-03-22",
             "troisMots": "VUE KDS PAR",
             "tutoriel": {
@@ -11266,7 +11266,7 @@ export const series: Serie[] = [
                 "lienCta": "https://site.foodeatup.com/"
               }
             },
-            "posterUrl": null,
+            "posterUrl": "/thumbnails/episodes/EP140-9x16.jpg",
             "datePrevue": "2027-03-23",
             "troisMots": "MOUVEMENTS DE STOCK",
             "tutoriel": {
@@ -11344,7 +11344,7 @@ export const series: Serie[] = [
                 "lienCta": "https://site.foodeatup.com/"
               }
             },
-            "posterUrl": null,
+            "posterUrl": "/thumbnails/episodes/EP141-9x16.jpg",
             "datePrevue": "2027-03-24",
             "troisMots": "PARLER À PREDIBOT",
             "tutoriel": {
@@ -11422,7 +11422,7 @@ export const series: Serie[] = [
                 "lienCta": "https://site.foodeatup.com/"
               }
             },
-            "posterUrl": null,
+            "posterUrl": "/thumbnails/episodes/EP142-9x16.jpg",
             "datePrevue": "2027-03-25",
             "troisMots": "AFFECTATION DES POSTES",
             "tutoriel": {
@@ -11500,7 +11500,7 @@ export const series: Serie[] = [
                 "lienCta": "https://site.foodeatup.com/"
               }
             },
-            "posterUrl": null,
+            "posterUrl": "/thumbnails/episodes/EP143-9x16.jpg",
             "datePrevue": "2027-03-26",
             "troisMots": "DEVIS",
             "tutoriel": {
@@ -11578,7 +11578,7 @@ export const series: Serie[] = [
                 "lienCta": "https://site.foodeatup.com/"
               }
             },
-            "posterUrl": null,
+            "posterUrl": "/thumbnails/episodes/EP144-9x16.jpg",
             "datePrevue": "2027-03-27",
             "troisMots": "RÉPONDRE AUX AVIS",
             "tutoriel": {
@@ -11656,7 +11656,7 @@ export const series: Serie[] = [
                 "lienCta": "https://site.foodeatup.com/"
               }
             },
-            "posterUrl": null,
+            "posterUrl": "/thumbnails/episodes/EP145-9x16.jpg",
             "datePrevue": "2027-03-28",
             "troisMots": "LIRE SES PRÉVISIONS",
             "tutoriel": {
@@ -11734,7 +11734,7 @@ export const series: Serie[] = [
                 "lienCta": "https://site.foodeatup.com/"
               }
             },
-            "posterUrl": null,
+            "posterUrl": "/thumbnails/episodes/EP146-9x16.jpg",
             "datePrevue": "2027-03-29",
             "troisMots": "ÉVÉNEMENTS PRIVÉS",
             "tutoriel": {
@@ -11812,7 +11812,7 @@ export const series: Serie[] = [
                 "lienCta": "https://site.foodeatup.com/"
               }
             },
-            "posterUrl": null,
+            "posterUrl": "/thumbnails/episodes/EP147-9x16.jpg",
             "datePrevue": "2027-03-30",
             "troisMots": "FACTURE ET DEVIS",
             "tutoriel": {
@@ -11891,7 +11891,7 @@ export const series: Serie[] = [
               }
             },
             "blocage": "Le chapitre correspondant n'a pas encore de vidéo dans le Drive interne.",
-            "posterUrl": null,
+            "posterUrl": "/thumbnails/episodes/EP148-9x16.jpg",
             "datePrevue": "2027-03-31",
             "troisMots": "SYNCHRO CAISSE TIERCE",
             "tutoriel": {
@@ -11969,7 +11969,7 @@ export const series: Serie[] = [
                 "lienCta": "https://site.foodeatup.com/"
               }
             },
-            "posterUrl": null,
+            "posterUrl": "/thumbnails/episodes/EP149-9x16.jpg",
             "datePrevue": "2027-04-01",
             "troisMots": "LANCER UNE CAMPAGNE",
             "tutoriel": {
@@ -12047,7 +12047,7 @@ export const series: Serie[] = [
                 "lienCta": "https://site.foodeatup.com/"
               }
             },
-            "posterUrl": null,
+            "posterUrl": "/thumbnails/episodes/EP150-9x16.jpg",
             "datePrevue": "2027-04-02",
             "troisMots": "LIRE SES PRÉVISIONS",
             "tutoriel": {
@@ -12114,7 +12114,7 @@ export const series: Serie[] = [
               "format": "vertical 9:16"
             },
             "masterRapidoUrl": null,
-            "posterUrl": null,
+            "posterUrl": "/thumbnails/episodes/EP151-9x16.jpg",
             "troisMots": "PLAT FILMÉ COMME",
             "datePrevue": "2027-05-08",
             "reseaux": {
@@ -12188,7 +12188,7 @@ export const series: Serie[] = [
               "format": "vertical 9:16"
             },
             "masterRapidoUrl": null,
-            "posterUrl": null,
+            "posterUrl": "/thumbnails/episodes/EP152-9x16.jpg",
             "troisMots": "RECETTE PLAT SIGNATURE",
             "datePrevue": "2027-05-09",
             "reseaux": {
@@ -12262,7 +12262,7 @@ export const series: Serie[] = [
               "format": "vertical 9:16"
             },
             "masterRapidoUrl": null,
-            "posterUrl": null,
+            "posterUrl": "/thumbnails/episodes/EP153-9x16.jpg",
             "troisMots": "PLAT SEMAINE",
             "datePrevue": "2027-05-10",
             "reseaux": {
@@ -12336,7 +12336,7 @@ export const series: Serie[] = [
               "format": "vertical 9:16"
             },
             "masterRapidoUrl": null,
-            "posterUrl": null,
+            "posterUrl": "/thumbnails/episodes/EP154-9x16.jpg",
             "troisMots": "MENU MIDI QUINZE",
             "datePrevue": "2027-05-11",
             "reseaux": {
@@ -12410,7 +12410,7 @@ export const series: Serie[] = [
               "format": "vertical 9:16"
             },
             "masterRapidoUrl": null,
-            "posterUrl": null,
+            "posterUrl": "/thumbnails/episodes/EP155-9x16.jpg",
             "troisMots": "PLAT REVIENT",
             "datePrevue": "2027-05-12",
             "reseaux": {
@@ -12484,7 +12484,7 @@ export const series: Serie[] = [
               "format": "vertical 9:16"
             },
             "masterRapidoUrl": null,
-            "posterUrl": null,
+            "posterUrl": "/thumbnails/episodes/EP156-9x16.jpg",
             "troisMots": "DESSERT QU'ON NE",
             "datePrevue": "2027-05-13",
             "reseaux": {
@@ -12558,7 +12558,7 @@ export const series: Serie[] = [
               "format": "vertical 9:16"
             },
             "masterRapidoUrl": null,
-            "posterUrl": null,
+            "posterUrl": "/thumbnails/episodes/EP157-9x16.jpg",
             "troisMots": "ÉVÉNEMENT RESTO",
             "datePrevue": "2027-05-14",
             "reseaux": {
@@ -12632,7 +12632,7 @@ export const series: Serie[] = [
               "format": "vertical 9:16"
             },
             "masterRapidoUrl": null,
-            "posterUrl": null,
+            "posterUrl": "/thumbnails/episodes/EP158-9x16.jpg",
             "troisMots": "DIFFUSE MATCH",
             "datePrevue": "2027-05-15",
             "reseaux": {
@@ -12706,7 +12706,7 @@ export const series: Serie[] = [
               "format": "vertical 9:16"
             },
             "masterRapidoUrl": null,
-            "posterUrl": null,
+            "posterUrl": "/thumbnails/episodes/EP159-9x16.jpg",
             "troisMots": "FÊTEZ VOTRE ANNIVERSAIRE",
             "datePrevue": "2027-05-16",
             "reseaux": {
@@ -12780,7 +12780,7 @@ export const series: Serie[] = [
               "format": "vertical 9:16"
             },
             "masterRapidoUrl": null,
-            "posterUrl": null,
+            "posterUrl": "/thumbnails/episodes/EP160-9x16.jpg",
             "troisMots": "SOIRÉE THÈME",
             "datePrevue": "2027-05-17",
             "reseaux": {
@@ -12854,7 +12854,7 @@ export const series: Serie[] = [
               "format": "vertical 9:16"
             },
             "masterRapidoUrl": null,
-            "posterUrl": null,
+            "posterUrl": "/thumbnails/episodes/EP161-9x16.jpg",
             "troisMots": "BRUNCH DIMANCHE",
             "datePrevue": "2027-05-18",
             "reseaux": {
@@ -12928,7 +12928,7 @@ export const series: Serie[] = [
               "format": "vertical 9:16"
             },
             "masterRapidoUrl": null,
-            "posterUrl": null,
+            "posterUrl": "/thumbnails/episodes/EP162-9x16.jpg",
             "troisMots": "PRIVATISER SALLE",
             "datePrevue": "2027-05-19",
             "reseaux": {
@@ -13002,7 +13002,7 @@ export const series: Serie[] = [
               "format": "vertical 9:16"
             },
             "masterRapidoUrl": null,
-            "posterUrl": null,
+            "posterUrl": "/thumbnails/episodes/EP163-9x16.jpg",
             "troisMots": "SIX HEURES MATIN",
             "datePrevue": "2027-05-20",
             "reseaux": {
@@ -13076,7 +13076,7 @@ export const series: Serie[] = [
               "format": "vertical 9:16"
             },
             "masterRapidoUrl": null,
-            "posterUrl": null,
+            "posterUrl": "/thumbnails/episodes/EP164-9x16.jpg",
             "troisMots": "PRODUCTEUR",
             "datePrevue": "2027-05-21",
             "reseaux": {
@@ -13150,7 +13150,7 @@ export const series: Serie[] = [
               "format": "vertical 9:16"
             },
             "masterRapidoUrl": null,
-            "posterUrl": null,
+            "posterUrl": "/thumbnails/episodes/EP165-9x16.jpg",
             "troisMots": "PORTRAIT D'UN SERVEUR",
             "datePrevue": "2027-05-22",
             "reseaux": {
@@ -13224,7 +13224,7 @@ export const series: Serie[] = [
               "format": "vertical 9:16"
             },
             "masterRapidoUrl": null,
-            "posterUrl": null,
+            "posterUrl": "/thumbnails/episodes/EP166-9x16.jpg",
             "troisMots": "COUP FEU VU",
             "datePrevue": "2027-05-23",
             "reseaux": {
@@ -13298,7 +13298,7 @@ export const series: Serie[] = [
               "format": "vertical 9:16"
             },
             "masterRapidoUrl": null,
-            "posterUrl": null,
+            "posterUrl": "/thumbnails/episodes/EP167-9x16.jpg",
             "troisMots": "POSTE QU'ON NE",
             "datePrevue": "2027-05-24",
             "reseaux": {
@@ -13372,7 +13372,7 @@ export const series: Serie[] = [
               "format": "vertical 9:16"
             },
             "masterRapidoUrl": null,
-            "posterUrl": null,
+            "posterUrl": "/thumbnails/episodes/EP168-9x16.jpg",
             "troisMots": "COURSES CHEF",
             "datePrevue": "2027-05-25",
             "reseaux": {
@@ -13446,7 +13446,7 @@ export const series: Serie[] = [
               "format": "vertical 9:16"
             },
             "masterRapidoUrl": null,
-            "posterUrl": null,
+            "posterUrl": "/thumbnails/episodes/EP169-9x16.jpg",
             "troisMots": "L'AVIS QU'ON AFFICHE",
             "datePrevue": "2027-05-26",
             "reseaux": {
@@ -13520,7 +13520,7 @@ export const series: Serie[] = [
               "format": "vertical 9:16"
             },
             "masterRapidoUrl": null,
-            "posterUrl": null,
+            "posterUrl": "/thumbnails/episodes/EP170-9x16.jpg",
             "troisMots": "CLIENT MARDI",
             "datePrevue": "2027-05-27",
             "reseaux": {
@@ -13594,7 +13594,7 @@ export const series: Serie[] = [
               "format": "vertical 9:16"
             },
             "masterRapidoUrl": null,
-            "posterUrl": null,
+            "posterUrl": "/thumbnails/episodes/EP171-9x16.jpg",
             "troisMots": "TABLE DOUZE",
             "datePrevue": "2027-05-28",
             "reseaux": {
@@ -13668,7 +13668,7 @@ export const series: Serie[] = [
               "format": "vertical 9:16"
             },
             "masterRapidoUrl": null,
-            "posterUrl": null,
+            "posterUrl": "/thumbnails/episodes/EP172-9x16.jpg",
             "troisMots": "JE COMMANDE DEPUIS",
             "datePrevue": "2027-05-29",
             "reseaux": {
@@ -13742,7 +13742,7 @@ export const series: Serie[] = [
               "format": "vertical 9:16"
             },
             "masterRapidoUrl": null,
-            "posterUrl": null,
+            "posterUrl": "/thumbnails/episodes/EP173-9x16.jpg",
             "troisMots": "GLUTEN STRESS",
             "datePrevue": "2027-05-30",
             "reseaux": {
@@ -13816,7 +13816,7 @@ export const series: Serie[] = [
               "format": "vertical 9:16"
             },
             "masterRapidoUrl": null,
-            "posterUrl": null,
+            "posterUrl": "/thumbnails/episodes/EP174-9x16.jpg",
             "troisMots": "PREMIER RENDEZ VOUS",
             "datePrevue": "2027-05-31",
             "reseaux": {
@@ -13890,7 +13890,7 @@ export const series: Serie[] = [
               "format": "vertical 9:16"
             },
             "masterRapidoUrl": null,
-            "posterUrl": null,
+            "posterUrl": "/thumbnails/episodes/EP175-9x16.jpg",
             "troisMots": "QR CODE TABLE",
             "datePrevue": "2027-06-01",
             "reseaux": {
@@ -13964,7 +13964,7 @@ export const series: Serie[] = [
               "format": "vertical 9:16"
             },
             "masterRapidoUrl": null,
-            "posterUrl": null,
+            "posterUrl": "/thumbnails/episodes/EP176-9x16.jpg",
             "troisMots": "CARTE CHANGE SAISON",
             "datePrevue": "2027-06-02",
             "reseaux": {
@@ -14038,7 +14038,7 @@ export const series: Serie[] = [
               "format": "vertical 9:16"
             },
             "masterRapidoUrl": null,
-            "posterUrl": null,
+            "posterUrl": "/thumbnails/episodes/EP177-9x16.jpg",
             "troisMots": "RECRUTE",
             "datePrevue": "2027-06-03",
             "reseaux": {
@@ -14112,7 +14112,7 @@ export const series: Serie[] = [
               "format": "vertical 9:16"
             },
             "masterRapidoUrl": null,
-            "posterUrl": null,
+            "posterUrl": "/thumbnails/episodes/EP178-9x16.jpg",
             "troisMots": "EMPORTER ÇA REFROIDISSE",
             "datePrevue": "2027-06-04",
             "reseaux": {
@@ -14186,7 +14186,7 @@ export const series: Serie[] = [
               "format": "vertical 9:16"
             },
             "masterRapidoUrl": null,
-            "posterUrl": null,
+            "posterUrl": "/thumbnails/episodes/EP179-9x16.jpg",
             "troisMots": "JOUR FERMETURE",
             "datePrevue": "2027-06-05",
             "reseaux": {
@@ -14260,7 +14260,7 @@ export const series: Serie[] = [
               "format": "vertical 9:16"
             },
             "masterRapidoUrl": null,
-            "posterUrl": null,
+            "posterUrl": "/thumbnails/episodes/EP180-9x16.jpg",
             "troisMots": "AN RESTAURANT",
             "datePrevue": "2027-06-06",
             "reseaux": {
@@ -14354,7 +14354,7 @@ export const series: Serie[] = [
               "format": "vertical 9:16"
             },
             "masterRapidoUrl": null,
-            "posterUrl": null,
+            "posterUrl": "/thumbnails/episodes/EP181-9x16.jpg",
             "troisMots": "PERSONNE NE DÉCROCHE",
             "datePrevue": "2027-06-08",
             "reseaux": {
@@ -14429,7 +14429,7 @@ export const series: Serie[] = [
               "format": "vertical 9:16"
             },
             "masterRapidoUrl": null,
-            "posterUrl": null,
+            "posterUrl": "/thumbnails/episodes/EP182-9x16.jpg",
             "troisMots": "ARDOISE ILLISIBLE",
             "datePrevue": "2027-06-09",
             "reseaux": {
@@ -14504,7 +14504,7 @@ export const series: Serie[] = [
               "format": "vertical 9:16"
             },
             "masterRapidoUrl": null,
-            "posterUrl": null,
+            "posterUrl": "/thumbnails/episodes/EP183-9x16.jpg",
             "troisMots": "LE REPÉRAGE",
             "datePrevue": "2027-06-10",
             "reseaux": {
@@ -14579,7 +14579,7 @@ export const series: Serie[] = [
               "format": "vertical 9:16"
             },
             "masterRapidoUrl": null,
-            "posterUrl": null,
+            "posterUrl": "/thumbnails/episodes/EP184-9x16.jpg",
             "troisMots": "COMPLET DEHORS",
             "datePrevue": "2027-06-11",
             "reseaux": {
@@ -14654,7 +14654,7 @@ export const series: Serie[] = [
               "format": "vertical 9:16"
             },
             "masterRapidoUrl": null,
-            "posterUrl": null,
+            "posterUrl": "/thumbnails/episodes/EP185-9x16.jpg",
             "troisMots": "LA SURPRISE RATÉE",
             "datePrevue": "2027-06-12",
             "reseaux": {
@@ -14729,7 +14729,7 @@ export const series: Serie[] = [
               "format": "vertical 9:16"
             },
             "masterRapidoUrl": null,
-            "posterUrl": null,
+            "posterUrl": "/thumbnails/episodes/EP186-9x16.jpg",
             "troisMots": "DEVIS SUR NAPPE",
             "datePrevue": "2027-06-13",
             "reseaux": {
@@ -14804,7 +14804,7 @@ export const series: Serie[] = [
               "format": "vertical 9:16"
             },
             "masterRapidoUrl": null,
-            "posterUrl": null,
+            "posterUrl": "/thumbnails/episodes/EP187-9x16.jpg",
             "troisMots": "LOST IN TRANSLATION",
             "datePrevue": "2027-06-14",
             "reseaux": {
@@ -14879,7 +14879,7 @@ export const series: Serie[] = [
               "format": "vertical 9:16"
             },
             "masterRapidoUrl": null,
-            "posterUrl": null,
+            "posterUrl": "/thumbnails/episodes/EP188-9x16.jpg",
             "troisMots": "JE CROIS QUE NON",
             "datePrevue": "2027-06-15",
             "reseaux": {
@@ -14954,7 +14954,7 @@ export const series: Serie[] = [
               "format": "vertical 9:16"
             },
             "masterRapidoUrl": null,
-            "posterUrl": null,
+            "posterUrl": "/thumbnails/episodes/EP189-9x16.jpg",
             "troisMots": "SUPPLÉMENT FANTÔME",
             "datePrevue": "2027-06-16",
             "reseaux": {
@@ -15029,7 +15029,7 @@ export const series: Serie[] = [
               "format": "vertical 9:16"
             },
             "masterRapidoUrl": null,
-            "posterUrl": null,
+            "posterUrl": "/thumbnails/episodes/EP190-9x16.jpg",
             "troisMots": "MODIFICATEUR INFINI",
             "datePrevue": "2027-06-17",
             "reseaux": {
@@ -15104,7 +15104,7 @@ export const series: Serie[] = [
               "format": "vertical 9:16"
             },
             "masterRapidoUrl": null,
-            "posterUrl": null,
+            "posterUrl": "/thumbnails/episodes/EP191-9x16.jpg",
             "troisMots": "CE QU'IL Y A DEDANS",
             "datePrevue": "2027-06-18",
             "reseaux": {
@@ -15179,7 +15179,7 @@ export const series: Serie[] = [
               "format": "vertical 9:16"
             },
             "masterRapidoUrl": null,
-            "posterUrl": null,
+            "posterUrl": "/thumbnails/episodes/EP192-9x16.jpg",
             "troisMots": "LE CLIENT DU MARDI",
             "datePrevue": "2027-06-19",
             "reseaux": {
@@ -15254,7 +15254,7 @@ export const series: Serie[] = [
               "format": "vertical 9:16"
             },
             "masterRapidoUrl": null,
-            "posterUrl": null,
+            "posterUrl": "/thumbnails/episodes/EP193-9x16.jpg",
             "troisMots": "PAS MA COMMANDE",
             "datePrevue": "2027-06-20",
             "reseaux": {
@@ -15329,7 +15329,7 @@ export const series: Serie[] = [
               "format": "vertical 9:16"
             },
             "masterRapidoUrl": null,
-            "posterUrl": null,
+            "posterUrl": "/thumbnails/episodes/EP194-9x16.jpg",
             "troisMots": "L'IMPRIMANTE A GAGNÉ",
             "datePrevue": "2027-06-21",
             "reseaux": {
@@ -15404,7 +15404,7 @@ export const series: Serie[] = [
               "format": "vertical 9:16"
             },
             "masterRapidoUrl": null,
-            "posterUrl": null,
+            "posterUrl": "/thumbnails/episodes/EP195-9x16.jpg",
             "troisMots": "VINGT-DEUX MINUTES",
             "datePrevue": "2027-06-22",
             "reseaux": {
@@ -15479,7 +15479,7 @@ export const series: Serie[] = [
               "format": "vertical 9:16"
             },
             "masterRapidoUrl": null,
-            "posterUrl": null,
+            "posterUrl": "/thumbnails/episodes/EP196-9x16.jpg",
             "troisMots": "IL N'Y EN A PLUS",
             "datePrevue": "2027-06-23",
             "reseaux": {
@@ -15554,7 +15554,7 @@ export const series: Serie[] = [
               "format": "vertical 9:16"
             },
             "masterRapidoUrl": null,
-            "posterUrl": null,
+            "posterUrl": "/thumbnails/episodes/EP197-9x16.jpg",
             "troisMots": "L'ALLERGIE PERDUE",
             "datePrevue": "2027-06-24",
             "reseaux": {
@@ -15629,7 +15629,7 @@ export const series: Serie[] = [
               "format": "vertical 9:16"
             },
             "masterRapidoUrl": null,
-            "posterUrl": null,
+            "posterUrl": "/thumbnails/episodes/EP198-9x16.jpg",
             "troisMots": "VU DU PASSE",
             "datePrevue": "2027-06-25",
             "reseaux": {
@@ -15704,7 +15704,7 @@ export const series: Serie[] = [
               "format": "vertical 9:16"
             },
             "masterRapidoUrl": null,
-            "posterUrl": null,
+            "posterUrl": "/thumbnails/episodes/EP199-9x16.jpg",
             "troisMots": "QUATORZE PARTS",
             "datePrevue": "2027-06-26",
             "reseaux": {
@@ -15779,7 +15779,7 @@ export const series: Serie[] = [
               "format": "vertical 9:16"
             },
             "masterRapidoUrl": null,
-            "posterUrl": null,
+            "posterUrl": "/thumbnails/episodes/EP200-9x16.jpg",
             "troisMots": "IL MANQUE UN CENTIME",
             "datePrevue": "2027-06-27",
             "reseaux": {
@@ -15854,7 +15854,7 @@ export const series: Serie[] = [
               "format": "vertical 9:16"
             },
             "masterRapidoUrl": null,
-            "posterUrl": null,
+            "posterUrl": "/thumbnails/episodes/EP201-9x16.jpg",
             "troisMots": "CARTES TAMPONNÉES",
             "datePrevue": "2027-06-28",
             "reseaux": {
@@ -15929,7 +15929,7 @@ export const series: Serie[] = [
               "format": "vertical 9:16"
             },
             "masterRapidoUrl": null,
-            "posterUrl": null,
+            "posterUrl": "/thumbnails/episodes/EP202-9x16.jpg",
             "troisMots": "LE BON INTROUVABLE",
             "datePrevue": "2027-06-29",
             "reseaux": {
@@ -16004,7 +16004,7 @@ export const series: Serie[] = [
               "format": "vertical 9:16"
             },
             "masterRapidoUrl": null,
-            "posterUrl": null,
+            "posterUrl": "/thumbnails/episodes/EP203-9x16.jpg",
             "troisMots": "TERMINAL CAPRICIEUX",
             "datePrevue": "2027-06-30",
             "reseaux": {
@@ -16079,7 +16079,7 @@ export const series: Serie[] = [
               "format": "vertical 9:16"
             },
             "masterRapidoUrl": null,
-            "posterUrl": null,
+            "posterUrl": "/thumbnails/episodes/EP204-9x16.jpg",
             "troisMots": "DEPUIS MON CANAPÉ",
             "datePrevue": "2027-07-01",
             "reseaux": {
@@ -16154,7 +16154,7 @@ export const series: Serie[] = [
               "format": "vertical 9:16"
             },
             "masterRapidoUrl": null,
-            "posterUrl": null,
+            "posterUrl": "/thumbnails/episodes/EP205-9x16.jpg",
             "troisMots": "UNE ÉTOILE",
             "datePrevue": "2027-07-02",
             "reseaux": {
@@ -16229,7 +16229,7 @@ export const series: Serie[] = [
               "format": "vertical 9:16"
             },
             "masterRapidoUrl": null,
-            "posterUrl": null,
+            "posterUrl": "/thumbnails/episodes/EP206-9x16.jpg",
             "troisMots": "CE QU'ILS N'ONT PAS DIT",
             "datePrevue": "2027-07-03",
             "reseaux": {
@@ -16304,7 +16304,7 @@ export const series: Serie[] = [
               "format": "vertical 9:16"
             },
             "masterRapidoUrl": null,
-            "posterUrl": null,
+            "posterUrl": "/thumbnails/episodes/EP207-9x16.jpg",
             "troisMots": "TROIS MOIS",
             "datePrevue": "2027-07-04",
             "reseaux": {
@@ -16379,7 +16379,7 @@ export const series: Serie[] = [
               "format": "vertical 9:16"
             },
             "masterRapidoUrl": null,
-            "posterUrl": null,
+            "posterUrl": "/thumbnails/episodes/EP208-9x16.jpg",
             "troisMots": "LA ROUE",
             "datePrevue": "2027-07-05",
             "reseaux": {
@@ -16454,7 +16454,7 @@ export const series: Serie[] = [
               "format": "vertical 9:16"
             },
             "masterRapidoUrl": null,
-            "posterUrl": null,
+            "posterUrl": "/thumbnails/episodes/EP209-9x16.jpg",
             "troisMots": "CETTE FOIS, ON SAVAIT",
             "datePrevue": "2027-07-06",
             "reseaux": {
@@ -16529,7 +16529,7 @@ export const series: Serie[] = [
               "format": "vertical 9:16"
             },
             "masterRapidoUrl": null,
-            "posterUrl": null,
+            "posterUrl": "/thumbnails/episodes/EP210-9x16.jpg",
             "troisMots": "LE GÉNÉRIQUE",
             "datePrevue": "2027-07-07",
             "reseaux": {
@@ -16623,7 +16623,7 @@ export const series: Serie[] = [
               "format": "vertical 9:16"
             },
             "masterRapidoUrl": null,
-            "posterUrl": null,
+            "posterUrl": "/thumbnails/episodes/EP211-9x16.jpg",
             "troisMots": "LE BRIEF",
             "datePrevue": "2027-07-09",
             "reseaux": {
@@ -16699,7 +16699,7 @@ export const series: Serie[] = [
               "format": "vertical 9:16"
             },
             "masterRapidoUrl": null,
-            "posterUrl": null,
+            "posterUrl": "/thumbnails/episodes/EP212-9x16.jpg",
             "troisMots": "CE QUI MANQUE",
             "datePrevue": "2027-07-10",
             "reseaux": {
@@ -16775,7 +16775,7 @@ export const series: Serie[] = [
               "format": "vertical 9:16"
             },
             "masterRapidoUrl": null,
-            "posterUrl": null,
+            "posterUrl": "/thumbnails/episodes/EP213-9x16.jpg",
             "troisMots": "JEUDI VA COINCER",
             "datePrevue": "2027-07-11",
             "reseaux": {
@@ -16851,7 +16851,7 @@ export const series: Serie[] = [
               "format": "vertical 9:16"
             },
             "masterRapidoUrl": null,
-            "posterUrl": null,
+            "posterUrl": "/thumbnails/episodes/EP214-9x16.jpg",
             "troisMots": "LE BON DU MATIN",
             "datePrevue": "2027-07-12",
             "reseaux": {
@@ -16927,7 +16927,7 @@ export const series: Serie[] = [
               "format": "vertical 9:16"
             },
             "masterRapidoUrl": null,
-            "posterUrl": null,
+            "posterUrl": "/thumbnails/episodes/EP215-9x16.jpg",
             "troisMots": "COMBIEN CE SOIR",
             "datePrevue": "2027-07-13",
             "reseaux": {
@@ -17003,7 +17003,7 @@ export const series: Serie[] = [
               "format": "vertical 9:16"
             },
             "masterRapidoUrl": null,
-            "posterUrl": null,
+            "posterUrl": "/thumbnails/episodes/EP216-9x16.jpg",
             "troisMots": "FRIGO 3",
             "datePrevue": "2027-07-14",
             "reseaux": {
@@ -17079,7 +17079,7 @@ export const series: Serie[] = [
               "format": "vertical 9:16"
             },
             "masterRapidoUrl": null,
-            "posterUrl": null,
+            "posterUrl": "/thumbnails/episodes/EP217-9x16.jpg",
             "troisMots": "QUATRE DEGRÉS",
             "datePrevue": "2027-07-15",
             "reseaux": {
@@ -17155,7 +17155,7 @@ export const series: Serie[] = [
               "format": "vertical 9:16"
             },
             "masterRapidoUrl": null,
-            "posterUrl": null,
+            "posterUrl": "/thumbnails/episodes/EP218-9x16.jpg",
             "troisMots": "L'ÉTIQUETTE",
             "datePrevue": "2027-07-16",
             "reseaux": {
@@ -17231,7 +17231,7 @@ export const series: Serie[] = [
               "format": "vertical 9:16"
             },
             "masterRapidoUrl": null,
-            "posterUrl": null,
+            "posterUrl": "/thumbnails/episodes/EP219-9x16.jpg",
             "troisMots": "RÉCEPTION CONFORME",
             "datePrevue": "2027-07-17",
             "reseaux": {
@@ -17307,7 +17307,7 @@ export const series: Serie[] = [
               "format": "vertical 9:16"
             },
             "masterRapidoUrl": null,
-            "posterUrl": null,
+            "posterUrl": "/thumbnails/episodes/EP220-9x16.jpg",
             "troisMots": "LA MISE EN PLACE",
             "datePrevue": "2027-07-18",
             "reseaux": {
@@ -17383,7 +17383,7 @@ export const series: Serie[] = [
               "format": "vertical 9:16"
             },
             "masterRapidoUrl": null,
-            "posterUrl": null,
+            "posterUrl": "/thumbnails/episodes/EP221-9x16.jpg",
             "troisMots": "ÇA COINCE OÙ",
             "datePrevue": "2027-07-19",
             "reseaux": {
@@ -17459,7 +17459,7 @@ export const series: Serie[] = [
               "format": "vertical 9:16"
             },
             "masterRapidoUrl": null,
-            "posterUrl": null,
+            "posterUrl": "/thumbnails/episodes/EP222-9x16.jpg",
             "troisMots": "OÙ EN EST LA 6",
             "datePrevue": "2027-07-20",
             "reseaux": {
@@ -17535,7 +17535,7 @@ export const series: Serie[] = [
               "format": "vertical 9:16"
             },
             "masterRapidoUrl": null,
-            "posterUrl": null,
+            "posterUrl": "/thumbnails/episodes/EP223-9x16.jpg",
             "troisMots": "PLUS DE POULET",
             "datePrevue": "2027-07-21",
             "reseaux": {
@@ -17611,7 +17611,7 @@ export const series: Serie[] = [
               "format": "vertical 9:16"
             },
             "masterRapidoUrl": null,
-            "posterUrl": null,
+            "posterUrl": "/thumbnails/episodes/EP224-9x16.jpg",
             "troisMots": "OUVRE LA CAISSE",
             "datePrevue": "2027-07-22",
             "reseaux": {
@@ -17687,7 +17687,7 @@ export const series: Serie[] = [
               "format": "vertical 9:16"
             },
             "masterRapidoUrl": null,
-            "posterUrl": null,
+            "posterUrl": "/thumbnails/episodes/EP225-9x16.jpg",
             "troisMots": "SANS GLUTEN",
             "datePrevue": "2027-07-23",
             "reseaux": {
@@ -17763,7 +17763,7 @@ export const series: Serie[] = [
               "format": "vertical 9:16"
             },
             "masterRapidoUrl": null,
-            "posterUrl": null,
+            "posterUrl": "/thumbnails/episodes/EP226-9x16.jpg",
             "troisMots": "QUOI POSTER",
             "datePrevue": "2027-07-24",
             "reseaux": {
@@ -17839,7 +17839,7 @@ export const series: Serie[] = [
               "format": "vertical 9:16"
             },
             "masterRapidoUrl": null,
-            "posterUrl": null,
+            "posterUrl": "/thumbnails/episodes/EP227-9x16.jpg",
             "troisMots": "POURQUOI CELLE-LÀ",
             "datePrevue": "2027-07-25",
             "reseaux": {
@@ -17915,7 +17915,7 @@ export const series: Serie[] = [
               "format": "vertical 9:16"
             },
             "masterRapidoUrl": null,
-            "posterUrl": null,
+            "posterUrl": "/thumbnails/episodes/EP228-9x16.jpg",
             "troisMots": "RÉPONDRE À L'AVIS",
             "datePrevue": "2027-07-26",
             "reseaux": {
@@ -17991,7 +17991,7 @@ export const series: Serie[] = [
               "format": "vertical 9:16"
             },
             "masterRapidoUrl": null,
-            "posterUrl": null,
+            "posterUrl": "/thumbnails/episodes/EP229-9x16.jpg",
             "troisMots": "COMPTE EXPIRÉ",
             "datePrevue": "2027-07-27",
             "reseaux": {
@@ -18067,7 +18067,7 @@ export const series: Serie[] = [
               "format": "vertical 9:16"
             },
             "masterRapidoUrl": null,
-            "posterUrl": null,
+            "posterUrl": "/thumbnails/episodes/EP230-9x16.jpg",
             "troisMots": "PROGRAMME JEUDI",
             "datePrevue": "2027-07-28",
             "reseaux": {
@@ -18143,7 +18143,7 @@ export const series: Serie[] = [
               "format": "vertical 9:16"
             },
             "masterRapidoUrl": null,
-            "posterUrl": null,
+            "posterUrl": "/thumbnails/episodes/EP231-9x16.jpg",
             "troisMots": "QUI ATTEND DEHORS",
             "datePrevue": "2027-07-29",
             "reseaux": {
@@ -18219,7 +18219,7 @@ export const series: Serie[] = [
               "format": "vertical 9:16"
             },
             "masterRapidoUrl": null,
-            "posterUrl": null,
+            "posterUrl": "/thumbnails/episodes/EP232-9x16.jpg",
             "troisMots": "C'EST UN ANNIVERSAIRE",
             "datePrevue": "2027-07-30",
             "reseaux": {
@@ -18295,7 +18295,7 @@ export const series: Serie[] = [
               "format": "vertical 9:16"
             },
             "masterRapidoUrl": null,
-            "posterUrl": null,
+            "posterUrl": "/thumbnails/episodes/EP233-9x16.jpg",
             "troisMots": "ELLE EST PARTIE",
             "datePrevue": "2027-07-31",
             "reseaux": {
@@ -18371,7 +18371,7 @@ export const series: Serie[] = [
               "format": "vertical 9:16"
             },
             "masterRapidoUrl": null,
-            "posterUrl": null,
+            "posterUrl": "/thumbnails/episodes/EP234-9x16.jpg",
             "troisMots": "IL VIENT SOUVENT",
             "datePrevue": "2027-08-01",
             "reseaux": {
@@ -18447,7 +18447,7 @@ export const series: Serie[] = [
               "format": "vertical 9:16"
             },
             "masterRapidoUrl": null,
-            "posterUrl": null,
+            "posterUrl": "/thumbnails/episodes/EP235-9x16.jpg",
             "troisMots": "IL A ATTENDU",
             "datePrevue": "2027-08-02",
             "reseaux": {
@@ -18523,7 +18523,7 @@ export const series: Serie[] = [
               "format": "vertical 9:16"
             },
             "masterRapidoUrl": null,
-            "posterUrl": null,
+            "posterUrl": "/thumbnails/episodes/EP236-9x16.jpg",
             "troisMots": "FERME LA CAISSE",
             "datePrevue": "2027-08-03",
             "reseaux": {
@@ -18599,7 +18599,7 @@ export const series: Serie[] = [
               "format": "vertical 9:16"
             },
             "masterRapidoUrl": null,
-            "posterUrl": null,
+            "posterUrl": "/thumbnails/episodes/EP237-9x16.jpg",
             "troisMots": "ÇA COLLE",
             "datePrevue": "2027-08-04",
             "reseaux": {
@@ -18675,7 +18675,7 @@ export const series: Serie[] = [
               "format": "vertical 9:16"
             },
             "masterRapidoUrl": null,
-            "posterUrl": null,
+            "posterUrl": "/thumbnails/episodes/EP238-9x16.jpg",
             "troisMots": "LA FACTURE",
             "datePrevue": "2027-08-05",
             "reseaux": {
@@ -18751,7 +18751,7 @@ export const series: Serie[] = [
               "format": "vertical 9:16"
             },
             "masterRapidoUrl": null,
-            "posterUrl": null,
+            "posterUrl": "/thumbnails/episodes/EP239-9x16.jpg",
             "troisMots": "MA JOURNÉE",
             "datePrevue": "2027-08-06",
             "reseaux": {
@@ -18827,7 +18827,7 @@ export const series: Serie[] = [
               "format": "vertical 9:16"
             },
             "masterRapidoUrl": null,
-            "posterUrl": null,
+            "posterUrl": "/thumbnails/episodes/EP240-9x16.jpg",
             "troisMots": "BONNE NUIT",
             "datePrevue": "2027-08-07",
             "reseaux": {
@@ -18916,7 +18916,7 @@ export const series: Serie[] = [
             "statut": "a_produire",
             "dureeSecondes": 37.5,
             "videoUrl": null,
-            "posterUrl": "/defaut/metier-chef-de-cuisine.jpg",
+            "posterUrl": "/thumbnails/episodes/EP301-9x16.jpg",
             "datePrevue": "2026-10-29",
             "troisMots": "AVANT LE SERVICE",
             "tutorielModuleUrl": null,
@@ -18986,7 +18986,7 @@ export const series: Serie[] = [
             "statut": "a_produire",
             "dureeSecondes": 37.5,
             "videoUrl": null,
-            "posterUrl": "/defaut/metier-chef-de-cuisine.jpg",
+            "posterUrl": "/thumbnails/episodes/EP302-9x16.jpg",
             "datePrevue": "2026-10-30",
             "troisMots": "PENDANT LE SERVICE",
             "tutorielModuleUrl": null,
@@ -19056,7 +19056,7 @@ export const series: Serie[] = [
             "statut": "a_produire",
             "dureeSecondes": 37.5,
             "videoUrl": null,
-            "posterUrl": "/defaut/metier-chef-de-cuisine.jpg",
+            "posterUrl": "/thumbnails/episodes/EP303-9x16.jpg",
             "datePrevue": "2026-10-31",
             "troisMots": "APRÈS LE SERVICE",
             "tutorielModuleUrl": null,
@@ -19126,7 +19126,7 @@ export const series: Serie[] = [
             "statut": "a_produire",
             "dureeSecondes": 37.5,
             "videoUrl": null,
-            "posterUrl": "/defaut/metier-second.jpg",
+            "posterUrl": "/thumbnails/episodes/EP304-9x16.jpg",
             "datePrevue": "2026-11-01",
             "troisMots": "AVANT LE SERVICE",
             "tutorielModuleUrl": null,
@@ -19196,7 +19196,7 @@ export const series: Serie[] = [
             "statut": "a_produire",
             "dureeSecondes": 37.5,
             "videoUrl": null,
-            "posterUrl": "/defaut/metier-second.jpg",
+            "posterUrl": "/thumbnails/episodes/EP305-9x16.jpg",
             "datePrevue": "2026-11-02",
             "troisMots": "PENDANT LE SERVICE",
             "tutorielModuleUrl": null,
@@ -19266,7 +19266,7 @@ export const series: Serie[] = [
             "statut": "a_produire",
             "dureeSecondes": 20.0,
             "videoUrl": null,
-            "posterUrl": "/defaut/metier-second.jpg",
+            "posterUrl": "/thumbnails/episodes/EP306-9x16.jpg",
             "datePrevue": "2026-11-03",
             "troisMots": "APRÈS LE SERVICE",
             "tutorielModuleUrl": null,
@@ -19336,7 +19336,7 @@ export const series: Serie[] = [
             "statut": "a_produire",
             "dureeSecondes": 37.5,
             "videoUrl": null,
-            "posterUrl": "/defaut/metier-chef-de-partie.jpg",
+            "posterUrl": "/thumbnails/episodes/EP307-9x16.jpg",
             "datePrevue": "2026-11-04",
             "troisMots": "AVANT LE SERVICE",
             "tutorielModuleUrl": null,
@@ -19406,7 +19406,7 @@ export const series: Serie[] = [
             "statut": "a_produire",
             "dureeSecondes": 37.5,
             "videoUrl": null,
-            "posterUrl": "/defaut/metier-chef-de-partie.jpg",
+            "posterUrl": "/thumbnails/episodes/EP308-9x16.jpg",
             "datePrevue": "2026-11-05",
             "troisMots": "PENDANT LE SERVICE",
             "tutorielModuleUrl": null,
@@ -19476,7 +19476,7 @@ export const series: Serie[] = [
             "statut": "a_produire",
             "dureeSecondes": 20.0,
             "videoUrl": null,
-            "posterUrl": "/defaut/metier-chef-de-partie.jpg",
+            "posterUrl": "/thumbnails/episodes/EP309-9x16.jpg",
             "datePrevue": "2026-11-06",
             "troisMots": "APRÈS LE SERVICE",
             "tutorielModuleUrl": null,
@@ -19546,7 +19546,7 @@ export const series: Serie[] = [
             "statut": "a_produire",
             "dureeSecondes": 37.5,
             "videoUrl": null,
-            "posterUrl": "/defaut/metier-cuisinier.jpg",
+            "posterUrl": "/thumbnails/episodes/EP310-9x16.jpg",
             "datePrevue": "2026-11-07",
             "troisMots": "AVANT LE SERVICE",
             "tutorielModuleUrl": null,
@@ -19616,7 +19616,7 @@ export const series: Serie[] = [
             "statut": "a_produire",
             "dureeSecondes": 37.5,
             "videoUrl": null,
-            "posterUrl": "/defaut/metier-cuisinier.jpg",
+            "posterUrl": "/thumbnails/episodes/EP311-9x16.jpg",
             "datePrevue": "2026-11-08",
             "troisMots": "PENDANT LE SERVICE",
             "tutorielModuleUrl": null,
@@ -19686,7 +19686,7 @@ export const series: Serie[] = [
             "statut": "a_produire",
             "dureeSecondes": 37.5,
             "videoUrl": null,
-            "posterUrl": "/defaut/metier-cuisinier.jpg",
+            "posterUrl": "/thumbnails/episodes/EP312-9x16.jpg",
             "datePrevue": "2026-11-09",
             "troisMots": "APRÈS LE SERVICE",
             "tutorielModuleUrl": null,
@@ -19756,7 +19756,7 @@ export const series: Serie[] = [
             "statut": "a_produire",
             "dureeSecondes": 20.0,
             "videoUrl": null,
-            "posterUrl": "/defaut/metier-plongeur.jpg",
+            "posterUrl": "/thumbnails/episodes/EP313-9x16.jpg",
             "datePrevue": "2026-11-10",
             "troisMots": "AVANT LE SERVICE",
             "tutorielModuleUrl": null,
@@ -19826,7 +19826,7 @@ export const series: Serie[] = [
             "statut": "a_produire",
             "dureeSecondes": 37.5,
             "videoUrl": null,
-            "posterUrl": "/defaut/metier-plongeur.jpg",
+            "posterUrl": "/thumbnails/episodes/EP314-9x16.jpg",
             "datePrevue": "2026-11-11",
             "troisMots": "PENDANT LE SERVICE",
             "tutorielModuleUrl": null,
@@ -19896,7 +19896,7 @@ export const series: Serie[] = [
             "statut": "a_produire",
             "dureeSecondes": 37.5,
             "videoUrl": null,
-            "posterUrl": "/defaut/metier-plongeur.jpg",
+            "posterUrl": "/thumbnails/episodes/EP315-9x16.jpg",
             "datePrevue": "2026-11-12",
             "troisMots": "APRÈS LE SERVICE",
             "tutorielModuleUrl": null,
@@ -19984,7 +19984,7 @@ export const series: Serie[] = [
             "statut": "a_produire",
             "dureeSecondes": 37.5,
             "videoUrl": null,
-            "posterUrl": "/defaut/metier-patron.jpg",
+            "posterUrl": "/thumbnails/episodes/EP316-9x16.jpg",
             "datePrevue": "2027-01-15",
             "troisMots": "AVANT LE SERVICE",
             "tutorielModuleUrl": null,
@@ -20054,7 +20054,7 @@ export const series: Serie[] = [
             "statut": "a_produire",
             "dureeSecondes": 37.5,
             "videoUrl": null,
-            "posterUrl": "/defaut/metier-patron.jpg",
+            "posterUrl": "/thumbnails/episodes/EP317-9x16.jpg",
             "datePrevue": "2027-01-16",
             "troisMots": "PENDANT LE SERVICE",
             "tutorielModuleUrl": null,
@@ -20124,7 +20124,7 @@ export const series: Serie[] = [
             "statut": "a_produire",
             "dureeSecondes": 37.5,
             "videoUrl": null,
-            "posterUrl": "/defaut/metier-patron.jpg",
+            "posterUrl": "/thumbnails/episodes/EP318-9x16.jpg",
             "datePrevue": "2027-01-17",
             "troisMots": "APRÈS LE SERVICE",
             "tutorielModuleUrl": null,
@@ -20194,7 +20194,7 @@ export const series: Serie[] = [
             "statut": "a_produire",
             "dureeSecondes": 37.5,
             "videoUrl": null,
-            "posterUrl": "/defaut/metier-chef-de-rang.jpg",
+            "posterUrl": "/thumbnails/episodes/EP319-9x16.jpg",
             "datePrevue": "2027-01-18",
             "troisMots": "AVANT LE SERVICE",
             "tutorielModuleUrl": null,
@@ -20264,7 +20264,7 @@ export const series: Serie[] = [
             "statut": "a_produire",
             "dureeSecondes": 37.5,
             "videoUrl": null,
-            "posterUrl": "/defaut/metier-chef-de-rang.jpg",
+            "posterUrl": "/thumbnails/episodes/EP320-9x16.jpg",
             "datePrevue": "2027-01-19",
             "troisMots": "PENDANT LE SERVICE",
             "tutorielModuleUrl": null,
@@ -20334,7 +20334,7 @@ export const series: Serie[] = [
             "statut": "a_produire",
             "dureeSecondes": 37.5,
             "videoUrl": null,
-            "posterUrl": "/defaut/metier-chef-de-rang.jpg",
+            "posterUrl": "/thumbnails/episodes/EP321-9x16.jpg",
             "datePrevue": "2027-01-20",
             "troisMots": "APRÈS LE SERVICE",
             "tutorielModuleUrl": null,
@@ -20404,7 +20404,7 @@ export const series: Serie[] = [
             "statut": "a_produire",
             "dureeSecondes": 20.0,
             "videoUrl": null,
-            "posterUrl": "/defaut/metier-serveur.jpg",
+            "posterUrl": "/thumbnails/episodes/EP322-9x16.jpg",
             "datePrevue": "2027-01-21",
             "troisMots": "AVANT LE SERVICE",
             "tutorielModuleUrl": null,
@@ -20474,7 +20474,7 @@ export const series: Serie[] = [
             "statut": "a_produire",
             "dureeSecondes": 37.5,
             "videoUrl": null,
-            "posterUrl": "/defaut/metier-serveur.jpg",
+            "posterUrl": "/thumbnails/episodes/EP323-9x16.jpg",
             "datePrevue": "2027-01-22",
             "troisMots": "PENDANT LE SERVICE",
             "tutorielModuleUrl": null,
@@ -20544,7 +20544,7 @@ export const series: Serie[] = [
             "statut": "a_produire",
             "dureeSecondes": 20.0,
             "videoUrl": null,
-            "posterUrl": "/defaut/metier-serveur.jpg",
+            "posterUrl": "/thumbnails/episodes/EP324-9x16.jpg",
             "datePrevue": "2027-01-23",
             "troisMots": "APRÈS LE SERVICE",
             "tutorielModuleUrl": null,
@@ -20614,7 +20614,7 @@ export const series: Serie[] = [
             "statut": "a_produire",
             "dureeSecondes": 37.5,
             "videoUrl": null,
-            "posterUrl": "/defaut/metier-communication.jpg",
+            "posterUrl": "/thumbnails/episodes/EP325-9x16.jpg",
             "datePrevue": "2027-01-24",
             "troisMots": "AVANT LE SERVICE",
             "tutorielModuleUrl": null,
@@ -20684,7 +20684,7 @@ export const series: Serie[] = [
             "statut": "a_produire",
             "dureeSecondes": 20.0,
             "videoUrl": null,
-            "posterUrl": "/defaut/metier-communication.jpg",
+            "posterUrl": "/thumbnails/episodes/EP326-9x16.jpg",
             "datePrevue": "2027-01-25",
             "troisMots": "PENDANT LE SERVICE",
             "tutorielModuleUrl": null,
@@ -20754,7 +20754,7 @@ export const series: Serie[] = [
             "statut": "a_produire",
             "dureeSecondes": 37.5,
             "videoUrl": null,
-            "posterUrl": "/defaut/metier-communication.jpg",
+            "posterUrl": "/thumbnails/episodes/EP327-9x16.jpg",
             "datePrevue": "2027-01-26",
             "troisMots": "APRÈS LE SERVICE",
             "tutorielModuleUrl": null,
@@ -20824,7 +20824,7 @@ export const series: Serie[] = [
             "statut": "a_produire",
             "dureeSecondes": 37.5,
             "videoUrl": null,
-            "posterUrl": "/defaut/metier-client.jpg",
+            "posterUrl": "/thumbnails/episodes/EP328-9x16.jpg",
             "datePrevue": "2027-01-27",
             "troisMots": "AVANT LE SERVICE",
             "tutorielModuleUrl": null,
@@ -20894,7 +20894,7 @@ export const series: Serie[] = [
             "statut": "a_produire",
             "dureeSecondes": 37.5,
             "videoUrl": null,
-            "posterUrl": "/defaut/metier-client.jpg",
+            "posterUrl": "/thumbnails/episodes/EP329-9x16.jpg",
             "datePrevue": "2027-01-28",
             "troisMots": "PENDANT LE SERVICE",
             "tutorielModuleUrl": null,
@@ -20964,7 +20964,7 @@ export const series: Serie[] = [
             "statut": "a_produire",
             "dureeSecondes": 37.5,
             "videoUrl": null,
-            "posterUrl": "/defaut/metier-client.jpg",
+            "posterUrl": "/thumbnails/episodes/EP330-9x16.jpg",
             "datePrevue": "2027-01-29",
             "troisMots": "APRÈS LE SERVICE",
             "tutorielModuleUrl": null,
@@ -21034,7 +21034,7 @@ export const series: Serie[] = [
             "statut": "a_produire",
             "dureeSecondes": 37.5,
             "videoUrl": null,
-            "posterUrl": "/defaut/metier-expert-comptable.jpg",
+            "posterUrl": "/thumbnails/episodes/EP331-9x16.jpg",
             "datePrevue": "2027-01-30",
             "troisMots": "LE MOIS ENTIER",
             "tutorielModuleUrl": null,
@@ -21132,7 +21132,7 @@ export const series: Serie[] = [
             "statut": "a_produire",
             "dureeSecondes": 37.5,
             "videoUrl": null,
-            "posterUrl": "/defaut/boucle-generique.jpg",
+            "posterUrl": "/thumbnails/episodes/EP401-9x16.jpg",
             "datePrevue": "2027-04-04",
             "troisMots": "QUI JE SUIS",
             "tutorielModuleUrl": null,
@@ -21202,7 +21202,7 @@ export const series: Serie[] = [
             "statut": "a_produire",
             "dureeSecondes": 37.5,
             "videoUrl": null,
-            "posterUrl": "/defaut/boucle-generique.jpg",
+            "posterUrl": "/thumbnails/episodes/EP402-9x16.jpg",
             "datePrevue": "2027-04-05",
             "troisMots": "DOUZE KILOS DE SAUMON",
             "tutorielModuleUrl": null,
@@ -21272,7 +21272,7 @@ export const series: Serie[] = [
             "statut": "a_produire",
             "dureeSecondes": 37.5,
             "videoUrl": null,
-            "posterUrl": "/defaut/boucle-generique.jpg",
+            "posterUrl": "/thumbnails/episodes/EP403-9x16.jpg",
             "datePrevue": "2027-04-06",
             "troisMots": "ÉCRIRE UNE PHRASE QUI AG",
             "tutorielModuleUrl": null,
@@ -21342,7 +21342,7 @@ export const series: Serie[] = [
             "statut": "a_produire",
             "dureeSecondes": 37.5,
             "videoUrl": null,
-            "posterUrl": "/defaut/boucle-generique.jpg",
+            "posterUrl": "/thumbnails/episodes/EP404-9x16.jpg",
             "datePrevue": "2027-04-07",
             "troisMots": "LA DIFFÉRENCE ENTRE RÉPO",
             "tutorielModuleUrl": null,
@@ -21412,7 +21412,7 @@ export const series: Serie[] = [
             "statut": "a_produire",
             "dureeSecondes": 37.5,
             "videoUrl": null,
-            "posterUrl": "/defaut/boucle-generique.jpg",
+            "posterUrl": "/thumbnails/episodes/EP405-9x16.jpg",
             "datePrevue": "2027-04-08",
             "troisMots": "CE QUE FOODEATUP FAIT VR",
             "tutorielModuleUrl": null,
@@ -21482,7 +21482,7 @@ export const series: Serie[] = [
             "statut": "a_produire",
             "dureeSecondes": 37.5,
             "videoUrl": null,
-            "posterUrl": "/defaut/boucle-generique.jpg",
+            "posterUrl": "/thumbnails/episodes/EP406-9x16.jpg",
             "datePrevue": "2027-04-09",
             "troisMots": "LES DEUX BOUCLES INFINIE",
             "tutorielModuleUrl": null,
@@ -21552,7 +21552,7 @@ export const series: Serie[] = [
             "statut": "a_produire",
             "dureeSecondes": 37.5,
             "videoUrl": null,
-            "posterUrl": "/defaut/boucle-generique.jpg",
+            "posterUrl": "/thumbnails/episodes/EP407-9x16.jpg",
             "datePrevue": "2027-04-10",
             "troisMots": "POURQUOI SEPT LOGICIELS ",
             "tutorielModuleUrl": null,
@@ -21641,7 +21641,7 @@ export const series: Serie[] = [
             "statut": "a_produire",
             "dureeSecondes": 37.5,
             "videoUrl": null,
-            "posterUrl": "/defaut/boucle-generique.jpg",
+            "posterUrl": "/thumbnails/episodes/EP408-9x16.jpg",
             "datePrevue": "2027-04-12",
             "troisMots": "GESTION ET VENTE, LES DE",
             "tutorielModuleUrl": null,
@@ -21711,7 +21711,7 @@ export const series: Serie[] = [
             "statut": "a_produire",
             "dureeSecondes": 37.5,
             "videoUrl": null,
-            "posterUrl": "/defaut/boucle-configuration.jpg",
+            "posterUrl": "/thumbnails/episodes/EP409-9x16.jpg",
             "datePrevue": "2027-04-13",
             "troisMots": "CONFIGURATION BOUTIQUE",
             "tutorielModuleUrl": null,
@@ -21781,7 +21781,7 @@ export const series: Serie[] = [
             "statut": "a_produire",
             "dureeSecondes": 37.5,
             "videoUrl": null,
-            "posterUrl": "/defaut/boucle-equipe.jpg",
+            "posterUrl": "/thumbnails/episodes/EP410-9x16.jpg",
             "datePrevue": "2027-04-14",
             "troisMots": "ÉQUIPE",
             "tutorielModuleUrl": null,
@@ -21851,7 +21851,7 @@ export const series: Serie[] = [
             "statut": "a_produire",
             "dureeSecondes": 37.5,
             "videoUrl": null,
-            "posterUrl": "/defaut/boucle-stockvisionai.jpg",
+            "posterUrl": "/thumbnails/episodes/EP411-9x16.jpg",
             "datePrevue": "2027-04-15",
             "troisMots": "STOCKVISIONAI",
             "tutorielModuleUrl": null,
@@ -21921,7 +21921,7 @@ export const series: Serie[] = [
             "statut": "a_produire",
             "dureeSecondes": 37.5,
             "videoUrl": null,
-            "posterUrl": "/defaut/boucle-haccp.jpg",
+            "posterUrl": "/thumbnails/episodes/EP412-9x16.jpg",
             "datePrevue": "2027-04-16",
             "troisMots": "HACCP",
             "tutorielModuleUrl": null,
@@ -21991,7 +21991,7 @@ export const series: Serie[] = [
             "statut": "a_produire",
             "dureeSecondes": 37.5,
             "videoUrl": null,
-            "posterUrl": "/defaut/boucle-ecommerce.jpg",
+            "posterUrl": "/thumbnails/episodes/EP413-9x16.jpg",
             "datePrevue": "2027-04-17",
             "troisMots": "E-COMMERCE",
             "tutorielModuleUrl": null,
@@ -22061,7 +22061,7 @@ export const series: Serie[] = [
             "statut": "a_produire",
             "dureeSecondes": 37.5,
             "videoUrl": null,
-            "posterUrl": "/defaut/boucle-communication.jpg",
+            "posterUrl": "/thumbnails/episodes/EP414-9x16.jpg",
             "datePrevue": "2027-04-18",
             "troisMots": "COMMUNICATION",
             "tutorielModuleUrl": null,
@@ -22131,7 +22131,7 @@ export const series: Serie[] = [
             "statut": "a_produire",
             "dureeSecondes": 37.5,
             "videoUrl": null,
-            "posterUrl": "/defaut/boucle-fidelite.jpg",
+            "posterUrl": "/thumbnails/episodes/EP415-9x16.jpg",
             "datePrevue": "2027-04-19",
             "troisMots": "FIDÉLITÉ ET MARKETING",
             "tutorielModuleUrl": null,
@@ -22201,7 +22201,7 @@ export const series: Serie[] = [
             "statut": "a_produire",
             "dureeSecondes": 37.5,
             "videoUrl": null,
-            "posterUrl": "/defaut/boucle-comptabilite.jpg",
+            "posterUrl": "/thumbnails/episodes/EP416-9x16.jpg",
             "datePrevue": "2027-04-20",
             "troisMots": "COMPTABILITÉ",
             "tutorielModuleUrl": null,
@@ -22271,7 +22271,7 @@ export const series: Serie[] = [
             "statut": "a_produire",
             "dureeSecondes": 37.5,
             "videoUrl": null,
-            "posterUrl": "/defaut/boucle-generique.jpg",
+            "posterUrl": "/thumbnails/episodes/EP417-9x16.jpg",
             "datePrevue": "2027-04-21",
             "troisMots": "LE CROISEMENT, PENDANT L",
             "tutorielModuleUrl": null,
@@ -22359,7 +22359,7 @@ export const series: Serie[] = [
             "statut": "a_produire",
             "dureeSecondes": 37.5,
             "videoUrl": null,
-            "posterUrl": "/defaut/boucle-generique.jpg",
+            "posterUrl": "/thumbnails/episodes/EP418-9x16.jpg",
             "datePrevue": "2027-04-23",
             "troisMots": "LE MOTEUR : BRANCHER CLA",
             "tutorielModuleUrl": null,
@@ -22429,7 +22429,7 @@ export const series: Serie[] = [
             "statut": "a_produire",
             "dureeSecondes": 37.5,
             "videoUrl": null,
-            "posterUrl": "/defaut/boucle-generique.jpg",
+            "posterUrl": "/thumbnails/episodes/EP419-9x16.jpg",
             "datePrevue": "2027-04-24",
             "troisMots": "LES QUATRE AGENTS ET LEU",
             "tutorielModuleUrl": null,
@@ -22499,7 +22499,7 @@ export const series: Serie[] = [
             "statut": "a_produire",
             "dureeSecondes": 37.5,
             "videoUrl": null,
-            "posterUrl": "/defaut/boucle-generique.jpg",
+            "posterUrl": "/thumbnails/episodes/EP420-9x16.jpg",
             "datePrevue": "2027-04-25",
             "troisMots": "CAROLINE PREND LES APPEL",
             "tutorielModuleUrl": null,
@@ -22569,7 +22569,7 @@ export const series: Serie[] = [
             "statut": "a_produire",
             "dureeSecondes": 37.5,
             "videoUrl": null,
-            "posterUrl": "/defaut/boucle-generique.jpg",
+            "posterUrl": "/thumbnails/episodes/EP421-9x16.jpg",
             "datePrevue": "2027-04-26",
             "troisMots": "JARVIS, LES MAINS DANS L",
             "tutorielModuleUrl": null,
@@ -22639,7 +22639,7 @@ export const series: Serie[] = [
             "statut": "a_produire",
             "dureeSecondes": 37.5,
             "videoUrl": null,
-            "posterUrl": "/defaut/boucle-generique.jpg",
+            "posterUrl": "/thumbnails/episodes/EP422-9x16.jpg",
             "datePrevue": "2027-04-27",
             "troisMots": "PRÉDIBOT RÉPOND SUR LES ",
             "tutorielModuleUrl": null,
@@ -22709,7 +22709,7 @@ export const series: Serie[] = [
             "statut": "a_produire",
             "dureeSecondes": 37.5,
             "videoUrl": null,
-            "posterUrl": "/defaut/boucle-generique.jpg",
+            "posterUrl": "/thumbnails/episodes/EP423-9x16.jpg",
             "datePrevue": "2027-04-28",
             "troisMots": "RAPIDOCMS, ET POURQUOI I",
             "tutorielModuleUrl": null,
@@ -22779,7 +22779,7 @@ export const series: Serie[] = [
             "statut": "a_produire",
             "dureeSecondes": 37.5,
             "videoUrl": null,
-            "posterUrl": "/defaut/boucle-generique.jpg",
+            "posterUrl": "/thumbnails/episodes/EP424-9x16.jpg",
             "datePrevue": "2027-04-29",
             "troisMots": "BRANCHER RAPIDOCMS À FOO",
             "tutorielModuleUrl": null,
@@ -22849,7 +22849,7 @@ export const series: Serie[] = [
             "statut": "a_produire",
             "dureeSecondes": 37.5,
             "videoUrl": null,
-            "posterUrl": "/defaut/boucle-generique.jpg",
+            "posterUrl": "/thumbnails/episodes/EP425-9x16.jpg",
             "datePrevue": "2027-04-30",
             "troisMots": "DONNER UNE VOIX : ELEVEN",
             "tutorielModuleUrl": null,
@@ -22919,7 +22919,7 @@ export const series: Serie[] = [
             "statut": "a_produire",
             "dureeSecondes": 37.5,
             "videoUrl": null,
-            "posterUrl": "/defaut/boucle-generique.jpg",
+            "posterUrl": "/thumbnails/episodes/EP426-9x16.jpg",
             "datePrevue": "2027-05-01",
             "troisMots": "FABRIQUER L'IMAGE : HIGG",
             "tutorielModuleUrl": null,
@@ -22989,7 +22989,7 @@ export const series: Serie[] = [
             "statut": "a_produire",
             "dureeSecondes": 37.5,
             "videoUrl": null,
-            "posterUrl": "/defaut/boucle-generique.jpg",
+            "posterUrl": "/thumbnails/episodes/EP427-9x16.jpg",
             "datePrevue": "2027-05-02",
             "troisMots": "METTRE QUELQU'UN À L'ÉCR",
             "tutorielModuleUrl": null,
@@ -23059,7 +23059,7 @@ export const series: Serie[] = [
             "statut": "a_produire",
             "dureeSecondes": 37.5,
             "videoUrl": null,
-            "posterUrl": "/defaut/boucle-generique.jpg",
+            "posterUrl": "/thumbnails/episodes/EP428-9x16.jpg",
             "datePrevue": "2027-05-03",
             "troisMots": "POUSSER PLUS LOIN : META",
             "tutorielModuleUrl": null,
@@ -23129,7 +23129,7 @@ export const series: Serie[] = [
             "statut": "a_produire",
             "dureeSecondes": 37.5,
             "videoUrl": null,
-            "posterUrl": "/defaut/boucle-generique.jpg",
+            "posterUrl": "/thumbnails/episodes/EP429-9x16.jpg",
             "datePrevue": "2027-05-04",
             "troisMots": "PLUGINS, SKILLS, COMPÉTE",
             "tutorielModuleUrl": null,
@@ -23199,7 +23199,7 @@ export const series: Serie[] = [
             "statut": "a_produire",
             "dureeSecondes": 37.5,
             "videoUrl": null,
-            "posterUrl": "/defaut/boucle-generique.jpg",
+            "posterUrl": "/thumbnails/episodes/EP430-9x16.jpg",
             "datePrevue": "2027-05-05",
             "troisMots": "LA ROUTINE ET LA BOUCLE ",
             "tutorielModuleUrl": null,
@@ -23269,7 +23269,7 @@ export const series: Serie[] = [
             "statut": "a_produire",
             "dureeSecondes": 37.5,
             "videoUrl": null,
-            "posterUrl": "/defaut/boucle-generique.jpg",
+            "posterUrl": "/thumbnails/episodes/EP431-9x16.jpg",
             "datePrevue": "2027-05-06",
             "troisMots": "L'ORCHESTRATION FINALE D",
             "tutorielModuleUrl": null,
@@ -23378,7 +23378,7 @@ export const series: Serie[] = [
             "statut": "a_produire",
             "dureeSecondes": 10.0,
             "videoUrl": null,
-            "posterUrl": null,
+            "posterUrl": "/thumbnails/episodes/EP501-9x16.jpg",
             "datePrevue": "2026-08-19",
             "troisMots": "IL ÉTAIT UNE FOIS",
             "lieu": "En cuisine",
@@ -23452,7 +23452,7 @@ export const series: Serie[] = [
             "statut": "a_produire",
             "dureeSecondes": 10.0,
             "videoUrl": null,
-            "posterUrl": null,
+            "posterUrl": "/thumbnails/episodes/EP502-9x16.jpg",
             "datePrevue": "2026-08-20",
             "troisMots": "CE QUI COINCE",
             "lieu": "En cuisine",
@@ -23526,7 +23526,7 @@ export const series: Serie[] = [
             "statut": "a_produire",
             "dureeSecondes": 10.0,
             "videoUrl": null,
-            "posterUrl": null,
+            "posterUrl": "/thumbnails/episodes/EP503-9x16.jpg",
             "datePrevue": "2026-08-21",
             "troisMots": "LE SOIR OÙ ÇA CASSE",
             "lieu": "En cuisine",
@@ -23600,7 +23600,7 @@ export const series: Serie[] = [
             "statut": "a_produire",
             "dureeSecondes": 10.0,
             "videoUrl": null,
-            "posterUrl": null,
+            "posterUrl": "/thumbnails/episodes/EP504-9x16.jpg",
             "datePrevue": "2026-08-22",
             "troisMots": "LA BASCULE",
             "lieu": "En cuisine",
@@ -23674,7 +23674,7 @@ export const series: Serie[] = [
             "statut": "a_produire",
             "dureeSecondes": 10.0,
             "videoUrl": null,
-            "posterUrl": null,
+            "posterUrl": "/thumbnails/episodes/EP505-9x16.jpg",
             "datePrevue": "2026-08-23",
             "troisMots": "LE MÊME GESTE, AUTREMENT",
             "lieu": "En cuisine",
@@ -23748,7 +23748,7 @@ export const series: Serie[] = [
             "statut": "a_produire",
             "dureeSecondes": 10.0,
             "videoUrl": null,
-            "posterUrl": null,
+            "posterUrl": "/thumbnails/episodes/EP506-9x16.jpg",
             "datePrevue": "2026-08-24",
             "troisMots": "CE QUI A CHANGÉ",
             "lieu": "En cuisine",
@@ -23841,7 +23841,7 @@ export const series: Serie[] = [
             "statut": "a_produire",
             "dureeSecondes": 10.0,
             "videoUrl": null,
-            "posterUrl": null,
+            "posterUrl": "/thumbnails/episodes/EP507-9x16.jpg",
             "datePrevue": "2026-08-26",
             "troisMots": "IL ÉTAIT UNE FOIS",
             "lieu": "En salle",
@@ -23915,7 +23915,7 @@ export const series: Serie[] = [
             "statut": "a_produire",
             "dureeSecondes": 10.0,
             "videoUrl": null,
-            "posterUrl": null,
+            "posterUrl": "/thumbnails/episodes/EP508-9x16.jpg",
             "datePrevue": "2026-08-27",
             "troisMots": "CE QUI COINCE",
             "lieu": "En salle",
@@ -23989,7 +23989,7 @@ export const series: Serie[] = [
             "statut": "a_produire",
             "dureeSecondes": 10.0,
             "videoUrl": null,
-            "posterUrl": null,
+            "posterUrl": "/thumbnails/episodes/EP509-9x16.jpg",
             "datePrevue": "2026-08-28",
             "troisMots": "LE SOIR OÙ ÇA CASSE",
             "lieu": "En salle",
@@ -24063,7 +24063,7 @@ export const series: Serie[] = [
             "statut": "a_produire",
             "dureeSecondes": 10.0,
             "videoUrl": null,
-            "posterUrl": null,
+            "posterUrl": "/thumbnails/episodes/EP510-9x16.jpg",
             "datePrevue": "2026-08-29",
             "troisMots": "LA BASCULE",
             "lieu": "En salle",
@@ -24137,7 +24137,7 @@ export const series: Serie[] = [
             "statut": "a_produire",
             "dureeSecondes": 10.0,
             "videoUrl": null,
-            "posterUrl": null,
+            "posterUrl": "/thumbnails/episodes/EP511-9x16.jpg",
             "datePrevue": "2026-08-30",
             "troisMots": "LE MÊME GESTE, AUTREMENT",
             "lieu": "En salle",
@@ -24211,7 +24211,7 @@ export const series: Serie[] = [
             "statut": "a_produire",
             "dureeSecondes": 10.0,
             "videoUrl": null,
-            "posterUrl": null,
+            "posterUrl": "/thumbnails/episodes/EP512-9x16.jpg",
             "datePrevue": "2026-08-31",
             "troisMots": "CE QUI A CHANGÉ",
             "lieu": "En salle",
@@ -24303,7 +24303,7 @@ export const series: Serie[] = [
             "statut": "a_produire",
             "dureeSecondes": 10.0,
             "videoUrl": null,
-            "posterUrl": null,
+            "posterUrl": "/thumbnails/episodes/EP513-9x16.jpg",
             "datePrevue": "2026-09-02",
             "troisMots": "IL ÉTAIT UNE FOIS",
             "lieu": "Au bureau",
@@ -24377,7 +24377,7 @@ export const series: Serie[] = [
             "statut": "a_produire",
             "dureeSecondes": 10.0,
             "videoUrl": null,
-            "posterUrl": null,
+            "posterUrl": "/thumbnails/episodes/EP514-9x16.jpg",
             "datePrevue": "2026-09-03",
             "troisMots": "CE QUI COINCE",
             "lieu": "Au bureau",
@@ -24451,7 +24451,7 @@ export const series: Serie[] = [
             "statut": "a_produire",
             "dureeSecondes": 10.0,
             "videoUrl": null,
-            "posterUrl": null,
+            "posterUrl": "/thumbnails/episodes/EP515-9x16.jpg",
             "datePrevue": "2026-09-04",
             "troisMots": "LE SOIR OÙ ÇA CASSE",
             "lieu": "Au bureau",
@@ -24525,7 +24525,7 @@ export const series: Serie[] = [
             "statut": "a_produire",
             "dureeSecondes": 10.0,
             "videoUrl": null,
-            "posterUrl": null,
+            "posterUrl": "/thumbnails/episodes/EP516-9x16.jpg",
             "datePrevue": "2026-09-05",
             "troisMots": "LA BASCULE",
             "lieu": "Au bureau",
@@ -24599,7 +24599,7 @@ export const series: Serie[] = [
             "statut": "a_produire",
             "dureeSecondes": 10.0,
             "videoUrl": null,
-            "posterUrl": null,
+            "posterUrl": "/thumbnails/episodes/EP517-9x16.jpg",
             "datePrevue": "2026-09-06",
             "troisMots": "LE MÊME GESTE, AUTREMENT",
             "lieu": "Au bureau",
@@ -24673,7 +24673,7 @@ export const series: Serie[] = [
             "statut": "a_produire",
             "dureeSecondes": 10.0,
             "videoUrl": null,
-            "posterUrl": null,
+            "posterUrl": "/thumbnails/episodes/EP518-9x16.jpg",
             "datePrevue": "2026-09-07",
             "troisMots": "CE QUI A CHANGÉ",
             "lieu": "Au bureau",
@@ -24765,7 +24765,7 @@ export const series: Serie[] = [
             "statut": "a_produire",
             "dureeSecondes": 10.0,
             "videoUrl": null,
-            "posterUrl": null,
+            "posterUrl": "/thumbnails/episodes/EP519-9x16.jpg",
             "datePrevue": "2026-09-09",
             "troisMots": "IL ÉTAIT UNE FOIS",
             "lieu": "À la maison",
@@ -24839,7 +24839,7 @@ export const series: Serie[] = [
             "statut": "a_produire",
             "dureeSecondes": 10.0,
             "videoUrl": null,
-            "posterUrl": null,
+            "posterUrl": "/thumbnails/episodes/EP520-9x16.jpg",
             "datePrevue": "2026-09-10",
             "troisMots": "CE QUI COINCE",
             "lieu": "À la maison",
@@ -24913,7 +24913,7 @@ export const series: Serie[] = [
             "statut": "a_produire",
             "dureeSecondes": 10.0,
             "videoUrl": null,
-            "posterUrl": null,
+            "posterUrl": "/thumbnails/episodes/EP521-9x16.jpg",
             "datePrevue": "2026-09-11",
             "troisMots": "LE SOIR OÙ ÇA CASSE",
             "lieu": "À la maison",
@@ -24987,7 +24987,7 @@ export const series: Serie[] = [
             "statut": "a_produire",
             "dureeSecondes": 10.0,
             "videoUrl": null,
-            "posterUrl": null,
+            "posterUrl": "/thumbnails/episodes/EP522-9x16.jpg",
             "datePrevue": "2026-09-12",
             "troisMots": "LA BASCULE",
             "lieu": "À la maison",
@@ -25061,7 +25061,7 @@ export const series: Serie[] = [
             "statut": "a_produire",
             "dureeSecondes": 10.0,
             "videoUrl": null,
-            "posterUrl": null,
+            "posterUrl": "/thumbnails/episodes/EP523-9x16.jpg",
             "datePrevue": "2026-09-13",
             "troisMots": "LE MÊME GESTE, AUTREMENT",
             "lieu": "À la maison",
@@ -25135,7 +25135,7 @@ export const series: Serie[] = [
             "statut": "a_produire",
             "dureeSecondes": 10.0,
             "videoUrl": null,
-            "posterUrl": null,
+            "posterUrl": "/thumbnails/episodes/EP524-9x16.jpg",
             "datePrevue": "2026-09-14",
             "troisMots": "CE QUI A CHANGÉ",
             "lieu": "À la maison",
@@ -25227,7 +25227,7 @@ export const series: Serie[] = [
             "statut": "a_produire",
             "dureeSecondes": 10.0,
             "videoUrl": null,
-            "posterUrl": null,
+            "posterUrl": "/thumbnails/episodes/EP525-9x16.jpg",
             "datePrevue": "2026-09-16",
             "troisMots": "LE MÊME SOIR",
             "lieu": "Vendredi, 20 h 15",
@@ -25301,7 +25301,7 @@ export const series: Serie[] = [
             "statut": "a_produire",
             "dureeSecondes": 10.0,
             "videoUrl": null,
-            "posterUrl": null,
+            "posterUrl": "/thumbnails/episodes/EP526-9x16.jpg",
             "datePrevue": "2026-09-17",
             "troisMots": "18 H 40",
             "lieu": "Vendredi, 20 h 15",
@@ -25375,7 +25375,7 @@ export const series: Serie[] = [
             "statut": "a_produire",
             "dureeSecondes": 10.0,
             "videoUrl": null,
-            "posterUrl": null,
+            "posterUrl": "/thumbnails/episodes/EP527-9x16.jpg",
             "datePrevue": "2026-09-18",
             "troisMots": "18 H 41",
             "lieu": "Vendredi, 20 h 15",
@@ -25449,7 +25449,7 @@ export const series: Serie[] = [
             "statut": "a_produire",
             "dureeSecondes": 10.0,
             "videoUrl": null,
-            "posterUrl": null,
+            "posterUrl": "/thumbnails/episodes/EP528-9x16.jpg",
             "datePrevue": "2026-09-19",
             "troisMots": "18 H 42",
             "lieu": "Vendredi, 20 h 15",
@@ -25523,7 +25523,7 @@ export const series: Serie[] = [
             "statut": "a_produire",
             "dureeSecondes": 10.0,
             "videoUrl": null,
-            "posterUrl": null,
+            "posterUrl": "/thumbnails/episodes/EP529-9x16.jpg",
             "datePrevue": "2026-09-20",
             "troisMots": "18 H 43",
             "lieu": "Vendredi, 20 h 15",
@@ -25597,7 +25597,7 @@ export const series: Serie[] = [
             "statut": "a_produire",
             "dureeSecondes": 10.0,
             "videoUrl": null,
-            "posterUrl": null,
+            "posterUrl": "/thumbnails/episodes/EP530-9x16.jpg",
             "datePrevue": "2026-09-21",
             "troisMots": "20 H 15",
             "lieu": "Vendredi, 20 h 15",
@@ -25671,7 +25671,7 @@ export const series: Serie[] = [
             "statut": "a_produire",
             "dureeSecondes": 10.0,
             "videoUrl": null,
-            "posterUrl": null,
+            "posterUrl": "/thumbnails/episodes/EP531-9x16.jpg",
             "datePrevue": "2026-09-22",
             "troisMots": "20 H 31",
             "lieu": "Vendredi, 20 h 15",
@@ -25745,7 +25745,7 @@ export const series: Serie[] = [
             "statut": "a_produire",
             "dureeSecondes": 10.0,
             "videoUrl": null,
-            "posterUrl": null,
+            "posterUrl": "/thumbnails/episodes/EP532-9x16.jpg",
             "datePrevue": "2026-09-23",
             "troisMots": "20 H 32",
             "lieu": "Vendredi, 20 h 15",
@@ -25819,7 +25819,7 @@ export const series: Serie[] = [
             "statut": "a_produire",
             "dureeSecondes": 10.0,
             "videoUrl": null,
-            "posterUrl": null,
+            "posterUrl": "/thumbnails/episodes/EP533-9x16.jpg",
             "datePrevue": "2026-09-24",
             "troisMots": "23 H 50",
             "lieu": "Vendredi, 20 h 15",
@@ -25893,7 +25893,7 @@ export const series: Serie[] = [
             "statut": "a_produire",
             "dureeSecondes": 10.0,
             "videoUrl": null,
-            "posterUrl": null,
+            "posterUrl": "/thumbnails/episodes/EP534-9x16.jpg",
             "datePrevue": "2026-09-25",
             "troisMots": "7 H 00",
             "lieu": "Vendredi, 20 h 15",
@@ -25967,7 +25967,7 @@ export const series: Serie[] = [
             "statut": "a_produire",
             "dureeSecondes": 10.0,
             "videoUrl": null,
-            "posterUrl": null,
+            "posterUrl": "/thumbnails/episodes/EP535-9x16.jpg",
             "datePrevue": "2026-09-26",
             "troisMots": "LA CHUTE",
             "lieu": "Vendredi, 20 h 15",
