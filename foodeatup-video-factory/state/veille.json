@@ -1,8 +1,135 @@
 {
-  "jobs_lus": 150,
+  "jobs_lus": 200,
   "cibles": 233,
   "deja_servies": 62,
-  "a_monter": {},
+  "a_monter": {
+    "EP:EP506": {
+      "titre": "Il ferme, et il sait",
+      "date": "2026-08-24",
+      "prises": [
+        {
+          "job": "81e7abcb-cf0a-41ed-b319-949f0d88069a",
+          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3GXYlNxkbz83gXaGDVVrTni1dX2/hf_20260816_094853_81e7abcb-cf0a-41ed-b319-949f0d88069a.mp4",
+          "at": 1786873733.32384
+        }
+      ]
+    },
+    "EP:EP507": {
+      "titre": "Six tables, une mémoire",
+      "date": "2026-08-26",
+      "prises": [
+        {
+          "job": "7e6d1086-1418-435b-abf9-f9c521f510af",
+          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3GXYlNxkbz83gXaGDVVrTni1dX2/hf_20260816_101129_7e6d1086-1418-435b-abf9-f9c521f510af.mp4",
+          "at": 1786875089.679642
+        }
+      ]
+    },
+    "EP:EP508": {
+      "titre": "Le téléphone qui sonne dans le vide",
+      "date": "2026-08-27",
+      "prises": [
+        {
+          "job": "5facb249-73b2-4192-bfcb-34dc7a59a969",
+          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3GXYlNxkbz83gXaGDVVrTni1dX2/hf_20260816_103835_5facb249-73b2-4192-bfcb-34dc7a59a969.mp4",
+          "at": 1786876715.112706
+        }
+      ]
+    },
+    "EP:EP509": {
+      "titre": "La table de douze qui n'existait pas",
+      "date": "2026-08-28",
+      "prises": [
+        {
+          "job": "9b5b6305-b33e-4e44-820f-48a600072c49",
+          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3GXYlNxkbz83gXaGDVVrTni1dX2/hf_20260816_112350_9b5b6305-b33e-4e44-820f-48a600072c49.mp4",
+          "at": 1786879430.315048
+        }
+      ]
+    },
+    "EP:EP510": {
+      "titre": "Le plan de salle qui se remplit tout seul",
+      "date": "2026-08-29",
+      "prises": [
+        {
+          "job": "39ab14c5-52f8-49ed-b082-b17bcb025836",
+          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3GXYlNxkbz83gXaGDVVrTni1dX2/hf_20260816_114638_39ab14c5-52f8-49ed-b082-b17bcb025836.mp4",
+          "at": 1786880798.437116
+        },
+        {
+          "job": "20de515e-7bb4-4da8-9093-8264498a8f68",
+          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3GXYlNxkbz83gXaGDVVrTni1dX2/hf_20260816_110254_20de515e-7bb4-4da8-9093-8264498a8f68.mp4",
+          "at": 1786878174.896431
+        }
+      ]
+    },
+    "EP:EP512": {
+      "titre": "Minuit, et rien à retenir",
+      "date": "2026-08-31",
+      "prises": [
+        {
+          "job": "5ee60603-3cb9-4747-a698-faf26b21295b",
+          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3GXYlNxkbz83gXaGDVVrTni1dX2/hf_20260816_123056_5ee60603-3cb9-4747-a698-faf26b21295b.mp4",
+          "at": 1786883456.770776
+        }
+      ]
+    },
+    "EP:EP513": {
+      "titre": "Le bureau au-dessus de la salle",
+      "date": "2026-09-02",
+      "prises": [
+        {
+          "job": "7e926076-8cd9-44e1-96b3-b2afb1f2228a",
+          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3GXYlNxkbz83gXaGDVVrTni1dX2/hf_20260816_125216_7e926076-8cd9-44e1-96b3-b2afb1f2228a.mp4",
+          "at": 1786884736.412117
+        }
+      ]
+    },
+    "EP:EP514": {
+      "titre": "La pile qui grandit toute seule",
+      "date": "2026-09-03",
+      "prises": [
+        {
+          "job": "695b6901-9f16-49e4-a71d-66e204c05e7e",
+          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3GXYlNxkbz83gXaGDVVrTni1dX2/hf_20260816_131433_695b6901-9f16-49e4-a71d-66e204c05e7e.mp4",
+          "at": 1786886073.158386
+        }
+      ]
+    },
+    "EP:EP515": {
+      "titre": "Le quinze du mois suivant",
+      "date": "2026-09-04",
+      "prises": [
+        {
+          "job": "0ea3f39c-328d-4a73-b8ad-b76807623fed",
+          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3GXYlNxkbz83gXaGDVVrTni1dX2/hf_20260816_133733_0ea3f39c-328d-4a73-b8ad-b76807623fed.mp4",
+          "at": 1786887453.093678
+        }
+      ]
+    },
+    "EP:EP516": {
+      "titre": "La question posée à voix haute",
+      "date": "2026-09-05",
+      "prises": [
+        {
+          "job": "cf2370b2-ad21-4f46-8961-d84afb4fe1d6",
+          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3GXYlNxkbz83gXaGDVVrTni1dX2/hf_20260816_140112_cf2370b2-ad21-4f46-8961-d84afb4fe1d6.mp4",
+          "at": 1786888872.359047
+        }
+      ]
+    },
+    "EP:EP522": {
+      "titre": "Quelqu'un décroche à la première sonnerie",
+      "date": "2026-09-12",
+      "prises": [
+        {
+          "job": "7e736cda-be0a-45e5-b43b-67de2ce2a9f2",
+          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3GXYlNxkbz83gXaGDVVrTni1dX2/hf_20260816_092715_7e736cda-be0a-45e5-b43b-67de2ce2a9f2.mp4",
+          "at": 1786872435.658061
+        }
+      ]
+    }
+  },
   "toujours_attendus": [
     {
       "cle": "BA:le-coup-de-feu-S2",
@@ -725,59 +852,9 @@
       "date": "2027-05-06"
     },
     {
-      "cle": "EP:EP506",
-      "titre": "Il ferme, et il sait",
-      "date": "2026-08-24"
-    },
-    {
-      "cle": "EP:EP507",
-      "titre": "Six tables, une mémoire",
-      "date": "2026-08-26"
-    },
-    {
-      "cle": "EP:EP508",
-      "titre": "Le téléphone qui sonne dans le vide",
-      "date": "2026-08-27"
-    },
-    {
-      "cle": "EP:EP509",
-      "titre": "La table de douze qui n'existait pas",
-      "date": "2026-08-28"
-    },
-    {
-      "cle": "EP:EP510",
-      "titre": "Le plan de salle qui se remplit tout seul",
-      "date": "2026-08-29"
-    },
-    {
       "cle": "EP:EP511",
       "titre": "Le prénom du fils",
       "date": "2026-08-30"
-    },
-    {
-      "cle": "EP:EP512",
-      "titre": "Minuit, et rien à retenir",
-      "date": "2026-08-31"
-    },
-    {
-      "cle": "EP:EP513",
-      "titre": "Le bureau au-dessus de la salle",
-      "date": "2026-09-02"
-    },
-    {
-      "cle": "EP:EP514",
-      "titre": "La pile qui grandit toute seule",
-      "date": "2026-09-03"
-    },
-    {
-      "cle": "EP:EP515",
-      "titre": "Le quinze du mois suivant",
-      "date": "2026-09-04"
-    },
-    {
-      "cle": "EP:EP516",
-      "titre": "La question posée à voix haute",
-      "date": "2026-09-05"
     },
     {
       "cle": "EP:EP517",
@@ -788,11 +865,6 @@
       "cle": "EP:EP518",
       "titre": "Il éteint la lampe à vingt-trois heures",
       "date": "2026-09-07"
-    },
-    {
-      "cle": "EP:EP522",
-      "titre": "Quelqu'un décroche à la première sonnerie",
-      "date": "2026-09-12"
     },
     {
       "cle": "EP:EP523",
