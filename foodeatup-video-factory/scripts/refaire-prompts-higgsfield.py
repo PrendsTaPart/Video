@@ -59,6 +59,9 @@ EN_TETE = (
 DIRECTION = re.compile(
     r"(?:(?<=[.!?])|(?<=\n)|^)\s*([^.!?{}\n]{5,160}?)\s*:\s*\{([^}]*)\}")
 
+# Rempli par main() à la lecture du lexique ; bloc_audio() s'en sert seul.
+AMBIANCES_FR = {}
+
 BRIGADE = ("La Fraise", "Tomate Man", "L'Ail", "Don Citrone", "La Betterave",
            "Le Brocoli", "La Pomme de Terre", "L'Oignon", "Le Navet", "La Carotte")
 
@@ -152,9 +155,18 @@ VOIX_DANS_AMBIANCE = re.compile(r"\b(voix|voice|speaking|listing|chatter|"
 
 
 def bloc_audio(ligne_son, lex):
-    """Le bloc de son : l'ambiance du lieu, et rien d'autre."""
+    """Le bloc de son : l'ambiance du lieu, et rien d'autre.
+
+    Les ambiances se traduisent ici et nulle part ailleurs, en correspondance
+    exacte sur l'élément entier. Les avoir passées au remplacement général
+    avait fabriqué du franglais dans la mise en scène : « two plates » était
+    devenu « two des assiettes », « a ribbon of tickets » « a ribbon of des
+    tickets », et « total silence » « total le silence ». Un fragment
+    d'ambiance est un mot courant ; il ne doit mordre que sa propre liste.
+    """
     items = [i for i in (lex.get("ambiance") or ambiances(ligne_son))
              if not VOIX_DANS_AMBIANCE.search(i)]
+    items = [AMBIANCES_FR.get(i.strip(), i) for i in items]
     lieu = ", ".join(i.rstrip(".") for i in items) or "l'ambiance réelle du lieu"
     return (
         "AUDIO — ambiance seule.\n"
@@ -251,7 +263,10 @@ def main(argv):
     controle = "--controle" in argv
     d = json.loads(SERIES.read_text(encoding="utf-8"))
     lexique = json.loads(LEXIQUE.read_text(encoding="utf-8")) if LEXIQUE.exists() else {}
-    lexique = {k: v for k, v in lexique.items() if not k.startswith("_")}
+    global AMBIANCES_FR
+    AMBIANCES_FR = lexique.get("ambiances", {})
+    lexique = {k: v for k, v in lexique.get("phrases", {}).items()
+               if not k.startswith("_")}
 
     eps = [e for s in d["series"] for sa in s["saisons"] for e in sa["episodes"]]
     refaits = intacts = 0
