@@ -1,0 +1,863 @@
+{
+  "jobs_lus": 150,
+  "cibles": 233,
+  "deja_servies": 62,
+  "a_monter": {},
+  "toujours_attendus": [
+    {
+      "cle": "BA:le-coup-de-feu-S2",
+      "titre": "Le Coup de Feu — saison 2 : Compter sans se tromper",
+      "date": "2026-11-13"
+    },
+    {
+      "cle": "EP:EP092",
+      "titre": "Le super-héros qui a réservé",
+      "date": "2027-02-02"
+    },
+    {
+      "cle": "EP:EP146",
+      "titre": "Quarante bougies et les sprinklers",
+      "date": "2027-03-29"
+    },
+    {
+      "cle": "EP:EP147",
+      "titre": "Le gâteau à cinq étages",
+      "date": "2027-03-30"
+    },
+    {
+      "cle": "EP:EP153",
+      "titre": "Le plat de la semaine",
+      "date": "2027-05-10"
+    },
+    {
+      "cle": "EP:EP154",
+      "titre": "Le menu du midi en quinze secondes",
+      "date": "2027-05-11"
+    },
+    {
+      "cle": "EP:EP155",
+      "titre": "Le plat qui revient",
+      "date": "2027-05-12"
+    },
+    {
+      "cle": "EP:EP157",
+      "titre": "Un événement au resto",
+      "date": "2027-05-14"
+    },
+    {
+      "cle": "EP:EP160",
+      "titre": "La soirée à thème",
+      "date": "2027-05-17"
+    },
+    {
+      "cle": "EP:EP161",
+      "titre": "Le brunch du dimanche",
+      "date": "2027-05-18"
+    },
+    {
+      "cle": "EP:EP162",
+      "titre": "Privatiser la salle",
+      "date": "2027-05-19"
+    },
+    {
+      "cle": "EP:EP163",
+      "titre": "Six heures du matin",
+      "date": "2027-05-20"
+    },
+    {
+      "cle": "EP:EP164",
+      "titre": "Le producteur",
+      "date": "2027-05-21"
+    },
+    {
+      "cle": "EP:EP165",
+      "titre": "Portrait d'un serveur",
+      "date": "2027-05-22"
+    },
+    {
+      "cle": "EP:EP166",
+      "titre": "Le coup de feu, vu de la cuisine",
+      "date": "2027-05-23"
+    },
+    {
+      "cle": "EP:EP168",
+      "titre": "Les courses du chef",
+      "date": "2027-05-25"
+    },
+    {
+      "cle": "EP:EP169",
+      "titre": "L'avis qu'on affiche",
+      "date": "2027-05-26"
+    },
+    {
+      "cle": "EP:EP170",
+      "titre": "Le client du mardi",
+      "date": "2027-05-27"
+    },
+    {
+      "cle": "EP:EP171",
+      "titre": "La table de douze",
+      "date": "2027-05-28"
+    },
+    {
+      "cle": "EP:EP172",
+      "titre": "Je commande depuis mon canapé",
+      "date": "2027-05-29"
+    },
+    {
+      "cle": "EP:EP173",
+      "titre": "Sans gluten, sans stress",
+      "date": "2027-05-30"
+    },
+    {
+      "cle": "EP:EP175",
+      "titre": "Le QR code à table",
+      "date": "2027-06-01"
+    },
+    {
+      "cle": "EP:EP176",
+      "titre": "La carte change de saison",
+      "date": "2027-06-02"
+    },
+    {
+      "cle": "EP:EP177",
+      "titre": "On recrute",
+      "date": "2027-06-03"
+    },
+    {
+      "cle": "EP:EP178",
+      "titre": "À emporter, sans que ça refroidisse",
+      "date": "2027-06-04"
+    },
+    {
+      "cle": "EP:EP182",
+      "titre": "La carte illisible",
+      "date": "2027-06-09"
+    },
+    {
+      "cle": "EP:EP183",
+      "titre": "Le repérage",
+      "date": "2027-06-10"
+    },
+    {
+      "cle": "EP:EP184",
+      "titre": "Complet dehors, vide dedans",
+      "date": "2027-06-11"
+    },
+    {
+      "cle": "EP:EP185",
+      "titre": "La surprise qui n'en est pas une",
+      "date": "2027-06-12"
+    },
+    {
+      "cle": "EP:EP186",
+      "titre": "Le devis sur la nappe",
+      "date": "2027-06-13"
+    },
+    {
+      "cle": "EP:EP187",
+      "titre": "Lost in translation",
+      "date": "2027-06-14"
+    },
+    {
+      "cle": "EP:EP188",
+      "titre": "« Je crois que non »",
+      "date": "2027-06-15"
+    },
+    {
+      "cle": "EP:EP189",
+      "titre": "Le supplément fantôme",
+      "date": "2027-06-16"
+    },
+    {
+      "cle": "EP:EP190",
+      "titre": "Le modificateur infini",
+      "date": "2027-06-17"
+    },
+    {
+      "cle": "EP:EP191",
+      "titre": "Ce qu'il y a dedans",
+      "date": "2027-06-18"
+    },
+    {
+      "cle": "EP:EP192",
+      "titre": "Le client du mardi",
+      "date": "2027-06-19"
+    },
+    {
+      "cle": "EP:EP193",
+      "titre": "Ce n'est pas ce que j'ai commandé",
+      "date": "2027-06-20"
+    },
+    {
+      "cle": "EP:EP194",
+      "titre": "L'imprimante a gagné",
+      "date": "2027-06-21"
+    },
+    {
+      "cle": "EP:EP195",
+      "titre": "Vingt-deux minutes",
+      "date": "2027-06-22"
+    },
+    {
+      "cle": "EP:EP196",
+      "titre": "Il n'y en a plus",
+      "date": "2027-06-23"
+    },
+    {
+      "cle": "EP:EP197",
+      "titre": "L'allergie qui n'arrive pas",
+      "date": "2027-06-24"
+    },
+    {
+      "cle": "EP:EP198",
+      "titre": "Le coup de feu, vu du passe",
+      "date": "2027-06-25"
+    },
+    {
+      "cle": "EP:EP199",
+      "titre": "Quatorze parts",
+      "date": "2027-06-26"
+    },
+    {
+      "cle": "EP:EP200",
+      "titre": "Il manque un centime",
+      "date": "2027-06-27"
+    },
+    {
+      "cle": "EP:EP201",
+      "titre": "Quatorze cartes tamponnées",
+      "date": "2027-06-28"
+    },
+    {
+      "cle": "EP:EP202",
+      "titre": "Le bon cadeau introuvable",
+      "date": "2027-06-29"
+    },
+    {
+      "cle": "EP:EP203",
+      "titre": "Le terminal capricieux",
+      "date": "2027-06-30"
+    },
+    {
+      "cle": "EP:EP204",
+      "titre": "Depuis mon canapé",
+      "date": "2027-07-01"
+    },
+    {
+      "cle": "EP:EP205",
+      "titre": "Une étoile, six jours",
+      "date": "2027-07-02"
+    },
+    {
+      "cle": "EP:EP206",
+      "titre": "Ce qu'ils n'ont pas dit",
+      "date": "2027-07-03"
+    },
+    {
+      "cle": "EP:EP207",
+      "titre": "Trois mois sans nouvelles",
+      "date": "2027-07-04"
+    },
+    {
+      "cle": "EP:EP208",
+      "titre": "La roue",
+      "date": "2027-07-05"
+    },
+    {
+      "cle": "EP:EP209",
+      "titre": "Cette fois, on savait",
+      "date": "2027-07-06"
+    },
+    {
+      "cle": "EP:EP210",
+      "titre": "Le générique",
+      "date": "2027-07-07"
+    },
+    {
+      "cle": "EP:EP212",
+      "titre": "Ce qui manque déjà",
+      "date": "2027-07-10"
+    },
+    {
+      "cle": "EP:EP214",
+      "titre": "Le bon avant l'ouverture",
+      "date": "2027-07-12"
+    },
+    {
+      "cle": "EP:EP215",
+      "titre": "Combien on est ce soir",
+      "date": "2027-07-13"
+    },
+    {
+      "cle": "EP:EP216",
+      "titre": "« Frigo 3 »",
+      "date": "2027-07-14"
+    },
+    {
+      "cle": "EP:EP217",
+      "titre": "L'HACCP sans le classeur",
+      "date": "2027-07-15"
+    },
+    {
+      "cle": "EP:EP218",
+      "titre": "L'étiquette qui se dit",
+      "date": "2027-07-16"
+    },
+    {
+      "cle": "EP:EP219",
+      "titre": "La livraison contrôlée",
+      "date": "2027-07-17"
+    },
+    {
+      "cle": "EP:EP220",
+      "titre": "La mise en place lancée",
+      "date": "2027-07-18"
+    },
+    {
+      "cle": "EP:EP221",
+      "titre": "Quel poste bouchonne",
+      "date": "2027-07-19"
+    },
+    {
+      "cle": "EP:EP222",
+      "titre": "Où en est la 6",
+      "date": "2027-07-20"
+    },
+    {
+      "cle": "EP:EP223",
+      "titre": "Plus de poulet",
+      "date": "2027-07-21"
+    },
+    {
+      "cle": "EP:EP224",
+      "titre": "Ouvre la caisse",
+      "date": "2027-07-22"
+    },
+    {
+      "cle": "EP:EP225",
+      "titre": "La 12, sans gluten",
+      "date": "2027-07-23"
+    },
+    {
+      "cle": "EP:EP226",
+      "titre": "L'agent qui propose",
+      "date": "2027-07-24"
+    },
+    {
+      "cle": "EP:EP227",
+      "titre": "Pourquoi celle-là",
+      "date": "2027-07-25"
+    },
+    {
+      "cle": "EP:EP228",
+      "titre": "Répondre sans ouvrir la fiche",
+      "date": "2027-07-26"
+    },
+    {
+      "cle": "EP:EP229",
+      "titre": "Le compte expiré",
+      "date": "2027-07-27"
+    },
+    {
+      "cle": "EP:EP230",
+      "titre": "Programmé, pas publié",
+      "date": "2027-07-28"
+    },
+    {
+      "cle": "EP:EP231",
+      "titre": "Le trottoir qui rentre",
+      "date": "2027-07-29"
+    },
+    {
+      "cle": "EP:EP232",
+      "titre": "La bougie qui arrive seule",
+      "date": "2027-07-30"
+    },
+    {
+      "cle": "EP:EP233",
+      "titre": "Elle est partie ?",
+      "date": "2027-07-31"
+    },
+    {
+      "cle": "EP:EP234",
+      "titre": "Il vient souvent ?",
+      "date": "2027-08-01"
+    },
+    {
+      "cle": "EP:EP235",
+      "titre": "Le geste dit à voix haute",
+      "date": "2027-08-02"
+    },
+    {
+      "cle": "EP:EP236",
+      "titre": "Ferme la caisse",
+      "date": "2027-08-03"
+    },
+    {
+      "cle": "EP:EP237",
+      "titre": "Ça colle ?",
+      "date": "2027-08-04"
+    },
+    {
+      "cle": "EP:EP238",
+      "titre": "La facture dictée",
+      "date": "2027-08-05"
+    },
+    {
+      "cle": "EP:EP239",
+      "titre": "Raconte-moi ma journée",
+      "date": "2027-08-06"
+    },
+    {
+      "cle": "EP:EP240",
+      "titre": "Bonne nuit",
+      "date": "2027-08-07"
+    },
+    {
+      "cle": "EP:EP301",
+      "titre": "La cuisine est vide, et dans quatre heures tout doit être prêt",
+      "date": "2026-10-29"
+    },
+    {
+      "cle": "EP:EP302",
+      "titre": "Il voit la marge et le coup de feu en même temps",
+      "date": "2026-10-30"
+    },
+    {
+      "cle": "EP:EP303",
+      "titre": "Deux fermetures, et le chiffre avant d'éteindre",
+      "date": "2026-10-31"
+    },
+    {
+      "cle": "EP:EP304",
+      "titre": "Il prépare ce que le chef décidera",
+      "date": "2026-11-01"
+    },
+    {
+      "cle": "EP:EP305",
+      "titre": "Il répare sans arrêter le service",
+      "date": "2026-11-02"
+    },
+    {
+      "cle": "EP:EP306",
+      "titre": "Il rend une cuisine que le chef peut fermer",
+      "date": "2026-11-03"
+    },
+    {
+      "cle": "EP:EP307",
+      "titre": "La quantité juste, décidée à dix heures",
+      "date": "2026-11-04"
+    },
+    {
+      "cle": "EP:EP308",
+      "titre": "Il est le premier à savoir, le dernier qu'on écoute",
+      "date": "2026-11-05"
+    },
+    {
+      "cle": "EP:EP309",
+      "titre": "Ce qui reste dit ce qu'il fallait commander",
+      "date": "2026-11-06"
+    },
+    {
+      "cle": "EP:EP310",
+      "titre": "Exécuter, tracer, recommencer",
+      "date": "2026-11-07"
+    },
+    {
+      "cle": "EP:EP311",
+      "titre": "Deux cents fois le même geste, sans une erreur",
+      "date": "2026-11-08"
+    },
+    {
+      "cle": "EP:EP312",
+      "titre": "Le contrôle tombe entre les deux services",
+      "date": "2026-11-09"
+    },
+    {
+      "cle": "EP:EP313",
+      "titre": "Il arrive quand tout le monde est déjà là",
+      "date": "2026-11-10"
+    },
+    {
+      "cle": "EP:EP314",
+      "titre": "Le premier indicateur du restaurant",
+      "date": "2026-11-11"
+    },
+    {
+      "cle": "EP:EP315",
+      "titre": "Sa boucle est la seule qui ferme le restaurant",
+      "date": "2026-11-12"
+    },
+    {
+      "cle": "EP:EP316",
+      "titre": "Il ouvre les livres avant d'ouvrir la porte",
+      "date": "2027-01-15"
+    },
+    {
+      "cle": "EP:EP317",
+      "titre": "Il tient la salle et les chiffres en même temps",
+      "date": "2027-01-16"
+    },
+    {
+      "cle": "EP:EP318",
+      "titre": "Il sait avant d'éteindre s'il a gagné de l'argent",
+      "date": "2027-01-17"
+    },
+    {
+      "cle": "EP:EP319",
+      "titre": "Six tables, quatre canaux, une seule mémoire",
+      "date": "2027-01-18"
+    },
+    {
+      "cle": "EP:EP320",
+      "titre": "Il encaisse ce que la cuisine ne verra jamais",
+      "date": "2027-01-19"
+    },
+    {
+      "cle": "EP:EP321",
+      "titre": "Ce qu'il sait de ses clients repart avec lui",
+      "date": "2027-01-20"
+    },
+    {
+      "cle": "EP:EP322",
+      "titre": "Il dresse une salle dont il ne connaît pas encore la carte",
+      "date": "2027-01-21"
+    },
+    {
+      "cle": "EP:EP323",
+      "titre": "Il apprend les ruptures en même temps que le client",
+      "date": "2027-01-22"
+    },
+    {
+      "cle": "EP:EP324",
+      "titre": "Il range une salle et remonte la suivante",
+      "date": "2027-01-23"
+    },
+    {
+      "cle": "EP:EP325",
+      "titre": "Le poste que personne ne tient",
+      "date": "2027-01-24"
+    },
+    {
+      "cle": "EP:EP326",
+      "titre": "Pendant le service, personne ne communique",
+      "date": "2027-01-25"
+    },
+    {
+      "cle": "EP:EP327",
+      "titre": "Ce qu'on aurait pu dire, et qu'on n'a pas dit",
+      "date": "2027-01-26"
+    },
+    {
+      "cle": "EP:EP328",
+      "titre": "Son avant le service, c'est trois jours plus tôt",
+      "date": "2027-01-27"
+    },
+    {
+      "cle": "EP:EP329",
+      "titre": "Il ne verra jamais le logiciel",
+      "date": "2027-01-28"
+    },
+    {
+      "cle": "EP:EP330",
+      "titre": "Ce qu'il écrit le soir vaut le service entier",
+      "date": "2027-01-29"
+    },
+    {
+      "cle": "EP:EP331",
+      "titre": "Le mois, pas la journée",
+      "date": "2027-01-30"
+    },
+    {
+      "cle": "EP:EP401",
+      "titre": "Qui je suis",
+      "date": "2027-04-04"
+    },
+    {
+      "cle": "EP:EP402",
+      "titre": "Douze kilos de saumon",
+      "date": "2027-04-05"
+    },
+    {
+      "cle": "EP:EP403",
+      "titre": "Écrire une phrase qui agit",
+      "date": "2027-04-06"
+    },
+    {
+      "cle": "EP:EP404",
+      "titre": "La différence entre répondre et agir",
+      "date": "2027-04-07"
+    },
+    {
+      "cle": "EP:EP405",
+      "titre": "Ce que FoodEatUp fait vraiment",
+      "date": "2027-04-08"
+    },
+    {
+      "cle": "EP:EP406",
+      "titre": "Les deux boucles infinies",
+      "date": "2027-04-09"
+    },
+    {
+      "cle": "EP:EP407",
+      "titre": "Pourquoi sept logiciels ne font pas un système",
+      "date": "2027-04-10"
+    },
+    {
+      "cle": "EP:EP408",
+      "titre": "Gestion et vente, les deux moitiés",
+      "date": "2027-04-12"
+    },
+    {
+      "cle": "EP:EP409",
+      "titre": "Configuration boutique — le socle de la boucle gestion",
+      "date": "2027-04-13"
+    },
+    {
+      "cle": "EP:EP410",
+      "titre": "Équipe — qui exécute",
+      "date": "2027-04-14"
+    },
+    {
+      "cle": "EP:EP411",
+      "titre": "StockVisionAI — la boucle mère",
+      "date": "2027-04-15"
+    },
+    {
+      "cle": "EP:EP412",
+      "titre": "HACCP — le droit d'exercer",
+      "date": "2027-04-16"
+    },
+    {
+      "cle": "EP:EP413",
+      "titre": "E-commerce — l'exposition",
+      "date": "2027-04-17"
+    },
+    {
+      "cle": "EP:EP414",
+      "titre": "Communication — le système nerveux",
+      "date": "2027-04-18"
+    },
+    {
+      "cle": "EP:EP415",
+      "titre": "Fidélité et marketing — l'usine à revenir",
+      "date": "2027-04-19"
+    },
+    {
+      "cle": "EP:EP416",
+      "titre": "Comptabilité — le second croisement",
+      "date": "2027-04-20"
+    },
+    {
+      "cle": "EP:EP417",
+      "titre": "Le croisement, pendant le service",
+      "date": "2027-04-21"
+    },
+    {
+      "cle": "EP:EP418",
+      "titre": "Le moteur : brancher Claude, ChatGPT ou Mistral",
+      "date": "2027-04-23"
+    },
+    {
+      "cle": "EP:EP419",
+      "titre": "Les quatre agents et leurs boucles",
+      "date": "2027-04-24"
+    },
+    {
+      "cle": "EP:EP420",
+      "titre": "Caroline prend les appels",
+      "date": "2027-04-25"
+    },
+    {
+      "cle": "EP:EP421",
+      "titre": "Jarvis, les mains dans la farine",
+      "date": "2027-04-26"
+    },
+    {
+      "cle": "EP:EP422",
+      "titre": "PrédiBot répond sur les chiffres",
+      "date": "2027-04-27"
+    },
+    {
+      "cle": "EP:EP423",
+      "titre": "RapidoCMS, et pourquoi il est à part",
+      "date": "2027-04-28"
+    },
+    {
+      "cle": "EP:EP424",
+      "titre": "Brancher RapidoCMS à FoodEatUp",
+      "date": "2027-04-29"
+    },
+    {
+      "cle": "EP:EP425",
+      "titre": "Donner une voix : ElevenLabs",
+      "date": "2027-04-30"
+    },
+    {
+      "cle": "EP:EP426",
+      "titre": "Fabriquer l'image : Higgsfield",
+      "date": "2027-05-01"
+    },
+    {
+      "cle": "EP:EP427",
+      "titre": "Mettre quelqu'un à l'écran : HeyGen",
+      "date": "2027-05-02"
+    },
+    {
+      "cle": "EP:EP428",
+      "titre": "Pousser plus loin : Meta",
+      "date": "2027-05-03"
+    },
+    {
+      "cle": "EP:EP429",
+      "titre": "Plugins, skills, compétences",
+      "date": "2027-05-04"
+    },
+    {
+      "cle": "EP:EP430",
+      "titre": "La routine et la boucle qui tourne seule",
+      "date": "2027-05-05"
+    },
+    {
+      "cle": "EP:EP431",
+      "titre": "L'orchestration finale du restaurant",
+      "date": "2027-05-06"
+    },
+    {
+      "cle": "EP:EP506",
+      "titre": "Il ferme, et il sait",
+      "date": "2026-08-24"
+    },
+    {
+      "cle": "EP:EP507",
+      "titre": "Six tables, une mémoire",
+      "date": "2026-08-26"
+    },
+    {
+      "cle": "EP:EP508",
+      "titre": "Le téléphone qui sonne dans le vide",
+      "date": "2026-08-27"
+    },
+    {
+      "cle": "EP:EP509",
+      "titre": "La table de douze qui n'existait pas",
+      "date": "2026-08-28"
+    },
+    {
+      "cle": "EP:EP510",
+      "titre": "Le plan de salle qui se remplit tout seul",
+      "date": "2026-08-29"
+    },
+    {
+      "cle": "EP:EP511",
+      "titre": "Le prénom du fils",
+      "date": "2026-08-30"
+    },
+    {
+      "cle": "EP:EP512",
+      "titre": "Minuit, et rien à retenir",
+      "date": "2026-08-31"
+    },
+    {
+      "cle": "EP:EP513",
+      "titre": "Le bureau au-dessus de la salle",
+      "date": "2026-09-02"
+    },
+    {
+      "cle": "EP:EP514",
+      "titre": "La pile qui grandit toute seule",
+      "date": "2026-09-03"
+    },
+    {
+      "cle": "EP:EP515",
+      "titre": "Le quinze du mois suivant",
+      "date": "2026-09-04"
+    },
+    {
+      "cle": "EP:EP516",
+      "titre": "La question posée à voix haute",
+      "date": "2026-09-05"
+    },
+    {
+      "cle": "EP:EP517",
+      "titre": "Le planning avant le samedi",
+      "date": "2026-09-06"
+    },
+    {
+      "cle": "EP:EP518",
+      "titre": "Il éteint la lampe à vingt-trois heures",
+      "date": "2026-09-07"
+    },
+    {
+      "cle": "EP:EP522",
+      "titre": "Quelqu'un décroche à la première sonnerie",
+      "date": "2026-09-12"
+    },
+    {
+      "cle": "EP:EP523",
+      "titre": "La table était prête à son nom",
+      "date": "2026-09-13"
+    },
+    {
+      "cle": "EP:EP524",
+      "titre": "Vingt-trois heures, dans le métro",
+      "date": "2026-09-14"
+    },
+    {
+      "cle": "EP:EP525",
+      "titre": "Le même soir, quatre fois",
+      "date": "2026-09-16"
+    },
+    {
+      "cle": "EP:EP526",
+      "titre": "18 h 40 — il réserve",
+      "date": "2026-09-17"
+    },
+    {
+      "cle": "EP:EP527",
+      "titre": "18 h 41 — la salle le voit",
+      "date": "2026-09-18"
+    },
+    {
+      "cle": "EP:EP528",
+      "titre": "18 h 42 — la cuisine l'apprend",
+      "date": "2026-09-19"
+    },
+    {
+      "cle": "EP:EP529",
+      "titre": "18 h 43 — le bureau voit le couvert",
+      "date": "2026-09-20"
+    },
+    {
+      "cle": "EP:EP530",
+      "titre": "20 h 15 — les quatre au même endroit",
+      "date": "2026-09-21"
+    },
+    {
+      "cle": "EP:EP531",
+      "titre": "20 h 31 — le plat part",
+      "date": "2026-09-22"
+    },
+    {
+      "cle": "EP:EP532",
+      "titre": "20 h 32 — il ne remarque rien",
+      "date": "2026-09-23"
+    },
+    {
+      "cle": "EP:EP533",
+      "titre": "23 h 50 — le Z avant d'éteindre",
+      "date": "2026-09-24"
+    },
+    {
+      "cle": "EP:EP534",
+      "titre": "7 h 00 — le lendemain",
+      "date": "2026-09-25"
+    },
+    {
+      "cle": "EP:EP535",
+      "titre": "Il était une fois un restaurant",
+      "date": "2026-09-26"
+    }
+  ]
+}
