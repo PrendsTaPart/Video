@@ -1799,7 +1799,7 @@ export const series: Serie[] = [
             },
             "tutorielModuleUrl": "https://tutoriel.foodeatup.com/module/service-commande",
             "higgsfield": {
-              "videoSourceUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/Higgsfield-source-EP018-Le-serveur-Baywatch",
+              "videoSourceUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/Higgsfield-source-EP018-Le-rush-de-vingt-heures",
               "duree": "10 s",
               "format": "vertical 9:16",
               "source": "rapidocms"
