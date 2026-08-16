@@ -22368,7 +22368,7 @@ export const series: Serie[] = [
             "higgsfield": {
               "duree": "10 s",
               "format": "vertical 9:16",
-              "videoSourceUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/hooks/EP418.mp4",
+              "videoSourceUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/Higgsfield-source-EP418-Le-moteur-brancher-Claude-ChatGPT-ou-Mistral",
               "source": null
             },
             "reseaux": {
@@ -22413,7 +22413,7 @@ export const series: Serie[] = [
                 "lienCta": "https://site.foodeatup.com/"
               }
             },
-            "storyUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP418.mp4"
+            "storyUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/FoodEatUp-EP418-Le-moteur-brancher-Claude-ChatGPT-ou-Mistral"
           },
           {
             "id": "EP419",
@@ -23539,7 +23539,7 @@ export const series: Serie[] = [
             "higgsfield": {
               "duree": "10 s",
               "format": "vertical 9:16",
-              "videoSourceUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/hooks/EP503.mp4",
+              "videoSourceUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/Higgsfield-source-EP503",
               "source": null
             },
             "reseaux": {
@@ -23584,7 +23584,7 @@ export const series: Serie[] = [
                 "lienCta": "https://site.foodeatup.com/"
               }
             },
-            "storyUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP503.mp4"
+            "storyUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/story-EP503"
           },
           {
             "id": "EP504",
@@ -23613,7 +23613,7 @@ export const series: Serie[] = [
             "higgsfield": {
               "duree": "10 s",
               "format": "vertical 9:16",
-              "videoSourceUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/hooks/EP504.mp4",
+              "videoSourceUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/Higgsfield-source-EP504",
               "source": null
             },
             "reseaux": {
@@ -23658,7 +23658,7 @@ export const series: Serie[] = [
                 "lienCta": "https://site.foodeatup.com/"
               }
             },
-            "storyUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP504.mp4"
+            "storyUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/story-EP504"
           },
           {
             "id": "EP505",
@@ -23687,7 +23687,7 @@ export const series: Serie[] = [
             "higgsfield": {
               "duree": "10 s",
               "format": "vertical 9:16",
-              "videoSourceUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/hooks/EP505.mp4",
+              "videoSourceUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/Higgsfield-source-EP505",
               "source": null
             },
             "reseaux": {
@@ -23732,7 +23732,7 @@ export const series: Serie[] = [
                 "lienCta": "https://site.foodeatup.com/"
               }
             },
-            "storyUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP505.mp4"
+            "storyUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/story-EP505"
           },
           {
             "id": "EP506",
@@ -24612,7 +24612,7 @@ export const series: Serie[] = [
             "higgsfield": {
               "duree": "10 s",
               "format": "vertical 9:16",
-              "videoSourceUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/hooks/EP517.mp4",
+              "videoSourceUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/Higgsfield-source-EP517",
               "source": null
             },
             "reseaux": {
@@ -24657,7 +24657,7 @@ export const series: Serie[] = [
                 "lienCta": "https://site.foodeatup.com/"
               }
             },
-            "storyUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP517.mp4"
+            "storyUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/story-EP517"
           },
           {
             "id": "EP518",
@@ -24778,7 +24778,7 @@ export const series: Serie[] = [
             "higgsfield": {
               "duree": "10 s",
               "format": "vertical 9:16",
-              "videoSourceUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/hooks/EP519.mp4",
+              "videoSourceUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/Higgsfield-source-EP519",
               "source": null
             },
             "reseaux": {
@@ -24823,7 +24823,7 @@ export const series: Serie[] = [
                 "lienCta": "https://site.foodeatup.com/"
               }
             },
-            "storyUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP519.mp4"
+            "storyUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/story-EP519"
           },
           {
             "id": "EP520",
@@ -24852,7 +24852,7 @@ export const series: Serie[] = [
             "higgsfield": {
               "duree": "10 s",
               "format": "vertical 9:16",
-              "videoSourceUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/hooks/EP520.mp4",
+              "videoSourceUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/Higgsfield-source-EP520",
               "source": null
             },
             "reseaux": {
@@ -24897,7 +24897,7 @@ export const series: Serie[] = [
                 "lienCta": "https://site.foodeatup.com/"
               }
             },
-            "storyUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP520.mp4"
+            "storyUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/story-EP520"
           },
           {
             "id": "EP521",
@@ -24926,7 +24926,7 @@ export const series: Serie[] = [
             "higgsfield": {
               "duree": "10 s",
               "format": "vertical 9:16",
-              "videoSourceUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/hooks/EP521.mp4",
+              "videoSourceUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/Higgsfield-source-EP521",
               "source": null
             },
             "reseaux": {
@@ -24971,7 +24971,7 @@ export const series: Serie[] = [
                 "lienCta": "https://site.foodeatup.com/"
               }
             },
-            "storyUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP521.mp4"
+            "storyUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/story-EP521"
           },
           {
             "id": "EP522",
@@ -25240,7 +25240,7 @@ export const series: Serie[] = [
             "higgsfield": {
               "duree": "10 s",
               "format": "vertical 9:16",
-              "videoSourceUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/hooks/EP525.mp4",
+              "videoSourceUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/Higgsfield-source-EP525",
               "source": null
             },
             "reseaux": {
@@ -25285,7 +25285,7 @@ export const series: Serie[] = [
                 "lienCta": "https://site.foodeatup.com/"
               }
             },
-            "storyUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP525.mp4"
+            "storyUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/story-EP525"
           },
           {
             "id": "EP526",
@@ -25314,7 +25314,7 @@ export const series: Serie[] = [
             "higgsfield": {
               "duree": "10 s",
               "format": "vertical 9:16",
-              "videoSourceUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/hooks/EP526.mp4",
+              "videoSourceUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/Higgsfield-source-EP526",
               "source": null
             },
             "reseaux": {
@@ -25359,7 +25359,7 @@ export const series: Serie[] = [
                 "lienCta": "https://site.foodeatup.com/"
               }
             },
-            "storyUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP526.mp4"
+            "storyUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/story-EP526"
           },
           {
             "id": "EP527",
@@ -25388,7 +25388,7 @@ export const series: Serie[] = [
             "higgsfield": {
               "duree": "10 s",
               "format": "vertical 9:16",
-              "videoSourceUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/hooks/EP527.mp4",
+              "videoSourceUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/Higgsfield-source-EP527",
               "source": null
             },
             "reseaux": {
@@ -25433,7 +25433,7 @@ export const series: Serie[] = [
                 "lienCta": "https://site.foodeatup.com/"
               }
             },
-            "storyUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP527.mp4"
+            "storyUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/story-EP527"
           },
           {
             "id": "EP528",
@@ -25536,7 +25536,7 @@ export const series: Serie[] = [
             "higgsfield": {
               "duree": "10 s",
               "format": "vertical 9:16",
-              "videoSourceUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/hooks/EP529.mp4",
+              "videoSourceUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/Higgsfield-source-EP529",
               "source": null
             },
             "reseaux": {
@@ -25581,7 +25581,7 @@ export const series: Serie[] = [
                 "lienCta": "https://site.foodeatup.com/"
               }
             },
-            "storyUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP529.mp4"
+            "storyUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/story-EP529"
           },
           {
             "id": "EP530",
@@ -25610,7 +25610,7 @@ export const series: Serie[] = [
             "higgsfield": {
               "duree": "10 s",
               "format": "vertical 9:16",
-              "videoSourceUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/hooks/EP530.mp4",
+              "videoSourceUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/Higgsfield-source-EP530",
               "source": null
             },
             "reseaux": {
@@ -25655,7 +25655,7 @@ export const series: Serie[] = [
                 "lienCta": "https://site.foodeatup.com/"
               }
             },
-            "storyUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP530.mp4"
+            "storyUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/story-EP530"
           },
           {
             "id": "EP531",
@@ -25684,7 +25684,7 @@ export const series: Serie[] = [
             "higgsfield": {
               "duree": "10 s",
               "format": "vertical 9:16",
-              "videoSourceUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/hooks/EP531.mp4",
+              "videoSourceUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/Higgsfield-source-EP531",
               "source": null
             },
             "reseaux": {
@@ -25729,7 +25729,7 @@ export const series: Serie[] = [
                 "lienCta": "https://site.foodeatup.com/"
               }
             },
-            "storyUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP531.mp4"
+            "storyUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/story-EP531"
           },
           {
             "id": "EP532",
@@ -25758,7 +25758,7 @@ export const series: Serie[] = [
             "higgsfield": {
               "duree": "10 s",
               "format": "vertical 9:16",
-              "videoSourceUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/hooks/EP532.mp4",
+              "videoSourceUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/Higgsfield-source-EP532",
               "source": null
             },
             "reseaux": {
@@ -25803,7 +25803,7 @@ export const series: Serie[] = [
                 "lienCta": "https://site.foodeatup.com/"
               }
             },
-            "storyUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP532.mp4"
+            "storyUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/story-EP532"
           },
           {
             "id": "EP533",

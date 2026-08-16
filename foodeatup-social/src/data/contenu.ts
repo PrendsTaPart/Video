@@ -48602,7 +48602,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "format": "9:16 · 1080 × 1920 · 10 s",
       "hook": "Le moteur : brancher Claude, ChatGPT ou Mistral",
       "punchline": "Une paire d'identifiants, un endpoint, et le modèle de votre choix parle à votre établissement — et seulement au vôtre",
-      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP418.mp4"
+      "url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/FoodEatUp-EP418-Le-moteur-brancher-Claude-ChatGPT-ou-Mistral"
     },
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
@@ -51087,7 +51087,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "format": "9:16 · 1080 × 1920 · 10 s",
       "hook": "Puis vint le vendredi où le bac était vide",
       "punchline": "Il l'avait dit le matin. On l'a écouté à vingt heures",
-      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP503.mp4",
+      "url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/story-EP503",
       "motion": {
         "quand": "8,5 → 10,0 s, par-dessus la fin du plan",
         "consigne": "Générique de fin en motion design, posé sur les 1,5 dernière(s) seconde(s) du plan, sans jamais couper l'image :\n— à 8,5 s, un voile marine #0F1A23 monte du bas sur le tiers inférieur, en 0,3 s, courbe d'accélération douce ;\n— à 8,8 s, le logo FoodEatUp arrive du bas, cale au centre du voile, avec un léger dépassement puis retour (overshoot 6 %) ;\n— à 9,1 s, la punchline s'écrit sous le logo, un mot après l'autre, 0,06 s par mot, en crème #FCF9E6 ;\n— à 9,6 s, la mention « à suivre » apparaît en orange #FFA500 à droite, avec une flèche qui avance de 8 px et s'arrête ;\n— rien ne disparaît avant la fin du plan.",
@@ -51285,7 +51285,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "format": "9:16 · 1080 × 1920 · 10 s",
       "hook": "Un matin, il n'a pas ouvert le carnet",
       "punchline": "Il a simplement demandé",
-      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP504.mp4",
+      "url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/story-EP504",
       "motion": {
         "quand": "8,5 → 10,0 s, par-dessus la fin du plan",
         "consigne": "Générique de fin en motion design, posé sur les 1,5 dernière(s) seconde(s) du plan, sans jamais couper l'image :\n— à 8,5 s, un voile marine #0F1A23 monte du bas sur le tiers inférieur, en 0,3 s, courbe d'accélération douce ;\n— à 8,8 s, le logo FoodEatUp arrive du bas, cale au centre du voile, avec un léger dépassement puis retour (overshoot 6 %) ;\n— à 9,1 s, la punchline s'écrit sous le logo, un mot après l'autre, 0,06 s par mot, en crème #FCF9E6 ;\n— à 9,6 s, la mention « à suivre » apparaît en orange #FFA500 à droite, avec une flèche qui avance de 8 px et s'arrête ;\n— rien ne disparaît avant la fin du plan.",
@@ -51483,7 +51483,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "format": "9:16 · 1080 × 1920 · 10 s",
       "hook": "Le même geste, la même sauce. Mais il sait, maintenant",
       "punchline": "Le goût n'a pas changé. Le reste, si",
-      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP505.mp4",
+      "url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/story-EP505",
       "motion": {
         "quand": "8,5 → 10,0 s, par-dessus la fin du plan",
         "consigne": "Générique de fin en motion design, posé sur les 1,5 dernière(s) seconde(s) du plan, sans jamais couper l'image :\n— à 8,5 s, un voile marine #0F1A23 monte du bas sur le tiers inférieur, en 0,3 s, courbe d'accélération douce ;\n— à 8,8 s, le logo FoodEatUp arrive du bas, cale au centre du voile, avec un léger dépassement puis retour (overshoot 6 %) ;\n— à 9,1 s, la punchline s'écrit sous le logo, un mot après l'autre, 0,06 s par mot, en crème #FCF9E6 ;\n— à 9,6 s, la mention « à suivre » apparaît en orange #FFA500 à droite, avec une flèche qui avance de 8 px et s'arrête ;\n— rien ne disparaît avant la fin du plan.",
@@ -53859,7 +53859,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "format": "9:16 · 1080 × 1920 · 10 s",
       "hook": "Il a arrêté d'être trop nombreux le mardi",
       "punchline": "Et de manquer de bras le samedi",
-      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP517.mp4",
+      "url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/story-EP517",
       "motion": {
         "quand": "8,5 → 10,0 s, par-dessus la fin du plan",
         "consigne": "Générique de fin en motion design, posé sur les 1,5 dernière(s) seconde(s) du plan, sans jamais couper l'image :\n— à 8,5 s, un voile marine #0F1A23 monte du bas sur le tiers inférieur, en 0,3 s, courbe d'accélération douce ;\n— à 8,8 s, le logo FoodEatUp arrive du bas, cale au centre du voile, avec un léger dépassement puis retour (overshoot 6 %) ;\n— à 9,1 s, la punchline s'écrit sous le logo, un mot après l'autre, 0,06 s par mot, en crème #FCF9E6 ;\n— à 9,6 s, la mention « à suivre » apparaît en orange #FFA500 à droite, avec une flèche qui avance de 8 px et s'arrête ;\n— rien ne disparaît avant la fin du plan.",
@@ -54255,7 +54255,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "format": "9:16 · 1080 × 1920 · 10 s",
       "hook": "Il était une fois quelqu'un qui cherchait simplement où dîner",
       "punchline": "Il ne verra jamais votre logiciel. Il verra tout le reste",
-      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP519.mp4",
+      "url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/story-EP519",
       "motion": {
         "quand": "8,5 → 10,0 s, par-dessus la fin du plan",
         "consigne": "Générique de fin en motion design, posé sur les 1,5 dernière(s) seconde(s) du plan, sans jamais couper l'image :\n— à 8,5 s, un voile marine #0F1A23 monte du bas sur le tiers inférieur, en 0,3 s, courbe d'accélération douce ;\n— à 8,8 s, le logo FoodEatUp arrive du bas, cale au centre du voile, avec un léger dépassement puis retour (overshoot 6 %) ;\n— à 9,1 s, la punchline s'écrit sous le logo, un mot après l'autre, 0,06 s par mot, en crème #FCF9E6 ;\n— à 9,6 s, la mention « à suivre » apparaît en orange #FFA500 à droite, avec une flèche qui avance de 8 px et s'arrête ;\n— rien ne disparaît avant la fin du plan.",
@@ -54453,7 +54453,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "format": "9:16 · 1080 × 1920 · 10 s",
       "hook": "La carte qu'il a lue n'était plus la bonne",
       "punchline": "On est vendredi",
-      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP520.mp4",
+      "url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/story-EP520",
       "motion": {
         "quand": "8,5 → 10,0 s, par-dessus la fin du plan",
         "consigne": "Générique de fin en motion design, posé sur les 1,5 dernière(s) seconde(s) du plan, sans jamais couper l'image :\n— à 8,5 s, un voile marine #0F1A23 monte du bas sur le tiers inférieur, en 0,3 s, courbe d'accélération douce ;\n— à 8,8 s, le logo FoodEatUp arrive du bas, cale au centre du voile, avec un léger dépassement puis retour (overshoot 6 %) ;\n— à 9,1 s, la punchline s'écrit sous le logo, un mot après l'autre, 0,06 s par mot, en crème #FCF9E6 ;\n— à 9,6 s, la mention « à suivre » apparaît en orange #FFA500 à droite, avec une flèche qui avance de 8 px et s'arrête ;\n— rien ne disparaît avant la fin du plan.",
@@ -54651,7 +54651,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "format": "9:16 · 1080 × 1920 · 10 s",
       "hook": "Puis vint le soir où il a appelé, et où personne n'a répondu",
       "punchline": "Il a rappelé le restaurant d'à côté",
-      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP521.mp4",
+      "url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/story-EP521",
       "motion": {
         "quand": "8,5 → 10,0 s, par-dessus la fin du plan",
         "consigne": "Générique de fin en motion design, posé sur les 1,5 dernière(s) seconde(s) du plan, sans jamais couper l'image :\n— à 8,5 s, un voile marine #0F1A23 monte du bas sur le tiers inférieur, en 0,3 s, courbe d'accélération douce ;\n— à 8,8 s, le logo FoodEatUp arrive du bas, cale au centre du voile, avec un léger dépassement puis retour (overshoot 6 %) ;\n— à 9,1 s, la punchline s'écrit sous le logo, un mot après l'autre, 0,06 s par mot, en crème #FCF9E6 ;\n— à 9,6 s, la mention « à suivre » apparaît en orange #FFA500 à droite, avec une flèche qui avance de 8 px et s'arrête ;\n— rien ne disparaît avant la fin du plan.",
@@ -55443,7 +55443,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "format": "9:16 · 1080 × 1920 · 10 s",
       "hook": "Ce que vous venez de voir se passait le même soir. Vendredi",
       "punchline": "Aucun des quatre ne sait que les trois autres existent",
-      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP525.mp4",
+      "url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/story-EP525",
       "motion": {
         "quand": "8,5 → 10,0 s, par-dessus la fin du plan",
         "consigne": "Générique de fin en motion design, posé sur les 1,5 dernière(s) seconde(s) du plan, sans jamais couper l'image :\n— à 8,5 s, un voile marine #0F1A23 monte du bas sur le tiers inférieur, en 0,3 s, courbe d'accélération douce ;\n— à 8,8 s, le logo FoodEatUp arrive du bas, cale au centre du voile, avec un léger dépassement puis retour (overshoot 6 %) ;\n— à 9,1 s, la punchline s'écrit sous le logo, un mot après l'autre, 0,06 s par mot, en crème #FCF9E6 ;\n— à 9,6 s, la mention « à suivre » apparaît en orange #FFA500 à droite, avec une flèche qui avance de 8 px et s'arrête ;\n— rien ne disparaît avant la fin du plan.",
@@ -55641,7 +55641,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "format": "9:16 · 1080 × 1920 · 10 s",
       "hook": "Tout commence par quelqu'un qui n'est pas encore là",
       "punchline": "Six couverts, deux allergies, et le service ne le sait pas encore",
-      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP526.mp4",
+      "url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/story-EP526",
       "motion": {
         "quand": "8,5 → 10,0 s, par-dessus la fin du plan",
         "consigne": "Générique de fin en motion design, posé sur les 1,5 dernière(s) seconde(s) du plan, sans jamais couper l'image :\n— à 8,5 s, un voile marine #0F1A23 monte du bas sur le tiers inférieur, en 0,3 s, courbe d'accélération douce ;\n— à 8,8 s, le logo FoodEatUp arrive du bas, cale au centre du voile, avec un léger dépassement puis retour (overshoot 6 %) ;\n— à 9,1 s, la punchline s'écrit sous le logo, un mot après l'autre, 0,06 s par mot, en crème #FCF9E6 ;\n— à 9,6 s, la mention « à suivre » apparaît en orange #FFA500 à droite, avec une flèche qui avance de 8 px et s'arrête ;\n— rien ne disparaît avant la fin du plan.",
@@ -55839,7 +55839,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "format": "9:16 · 1080 × 1920 · 10 s",
       "hook": "Une minute plus tard, à trois kilomètres de là",
       "punchline": "La table de six existait avant que personne ne la demande",
-      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP527.mp4",
+      "url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/story-EP527",
       "motion": {
         "quand": "8,5 → 10,0 s, par-dessus la fin du plan",
         "consigne": "Générique de fin en motion design, posé sur les 1,5 dernière(s) seconde(s) du plan, sans jamais couper l'image :\n— à 8,5 s, un voile marine #0F1A23 monte du bas sur le tiers inférieur, en 0,3 s, courbe d'accélération douce ;\n— à 8,8 s, le logo FoodEatUp arrive du bas, cale au centre du voile, avec un léger dépassement puis retour (overshoot 6 %) ;\n— à 9,1 s, la punchline s'écrit sous le logo, un mot après l'autre, 0,06 s par mot, en crème #FCF9E6 ;\n— à 9,6 s, la mention « à suivre » apparaît en orange #FFA500 à droite, avec une flèche qui avance de 8 px et s'arrête ;\n— rien ne disparaît avant la fin du plan.",
@@ -56235,7 +56235,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "format": "9:16 · 1080 × 1920 · 10 s",
       "hook": "Et à l'étage, quelqu'un a vu passer six couverts de plus",
       "punchline": "Il connaît la marge de la soirée avant qu'elle ait commencé",
-      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP529.mp4",
+      "url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/story-EP529",
       "motion": {
         "quand": "8,5 → 10,0 s, par-dessus la fin du plan",
         "consigne": "Générique de fin en motion design, posé sur les 1,5 dernière(s) seconde(s) du plan, sans jamais couper l'image :\n— à 8,5 s, un voile marine #0F1A23 monte du bas sur le tiers inférieur, en 0,3 s, courbe d'accélération douce ;\n— à 8,8 s, le logo FoodEatUp arrive du bas, cale au centre du voile, avec un léger dépassement puis retour (overshoot 6 %) ;\n— à 9,1 s, la punchline s'écrit sous le logo, un mot après l'autre, 0,06 s par mot, en crème #FCF9E6 ;\n— à 9,6 s, la mention « à suivre » apparaît en orange #FFA500 à droite, avec une flèche qui avance de 8 px et s'arrête ;\n— rien ne disparaît avant la fin du plan.",
@@ -56433,7 +56433,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "format": "9:16 · 1080 × 1920 · 10 s",
       "hook": "À vingt heures quinze, les quatre histoires n'en font plus qu'une",
       "punchline": "Et c'est le même homme, dans quatre vies",
-      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP530.mp4",
+      "url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/story-EP530",
       "motion": {
         "quand": "8,5 → 10,0 s, par-dessus la fin du plan",
         "consigne": "Générique de fin en motion design, posé sur les 1,5 dernière(s) seconde(s) du plan, sans jamais couper l'image :\n— à 8,5 s, un voile marine #0F1A23 monte du bas sur le tiers inférieur, en 0,3 s, courbe d'accélération douce ;\n— à 8,8 s, le logo FoodEatUp arrive du bas, cale au centre du voile, avec un léger dépassement puis retour (overshoot 6 %) ;\n— à 9,1 s, la punchline s'écrit sous le logo, un mot après l'autre, 0,06 s par mot, en crème #FCF9E6 ;\n— à 9,6 s, la mention « à suivre » apparaît en orange #FFA500 à droite, avec une flèche qui avance de 8 px et s'arrête ;\n— rien ne disparaît avant la fin du plan.",
@@ -56631,7 +56631,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "format": "9:16 · 1080 × 1920 · 10 s",
       "hook": "Seize minutes plus tard, l'assiette quitte le pass",
       "punchline": "Six assiettes, dont deux qui ne ressemblent pas aux autres",
-      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP531.mp4",
+      "url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/story-EP531",
       "motion": {
         "quand": "8,5 → 10,0 s, par-dessus la fin du plan",
         "consigne": "Générique de fin en motion design, posé sur les 1,5 dernière(s) seconde(s) du plan, sans jamais couper l'image :\n— à 8,5 s, un voile marine #0F1A23 monte du bas sur le tiers inférieur, en 0,3 s, courbe d'accélération douce ;\n— à 8,8 s, le logo FoodEatUp arrive du bas, cale au centre du voile, avec un léger dépassement puis retour (overshoot 6 %) ;\n— à 9,1 s, la punchline s'écrit sous le logo, un mot après l'autre, 0,06 s par mot, en crème #FCF9E6 ;\n— à 9,6 s, la mention « à suivre » apparaît en orange #FFA500 à droite, avec une flèche qui avance de 8 px et s'arrête ;\n— rien ne disparaît avant la fin du plan.",
@@ -56829,7 +56829,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "format": "9:16 · 1080 × 1920 · 10 s",
       "hook": "Il n'a rien remarqué. C'est exactement le but",
       "punchline": "Ce qu'on ne remarque pas, c'est ce qui marche",
-      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP532.mp4",
+      "url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/story-EP532",
       "motion": {
         "quand": "8,5 → 10,0 s, par-dessus la fin du plan",
         "consigne": "Générique de fin en motion design, posé sur les 1,5 dernière(s) seconde(s) du plan, sans jamais couper l'image :\n— à 8,5 s, un voile marine #0F1A23 monte du bas sur le tiers inférieur, en 0,3 s, courbe d'accélération douce ;\n— à 8,8 s, le logo FoodEatUp arrive du bas, cale au centre du voile, avec un léger dépassement puis retour (overshoot 6 %) ;\n— à 9,1 s, la punchline s'écrit sous le logo, un mot après l'autre, 0,06 s par mot, en crème #FCF9E6 ;\n— à 9,6 s, la mention « à suivre » apparaît en orange #FFA500 à droite, avec une flèche qui avance de 8 px et s'arrête ;\n— rien ne disparaît avant la fin du plan.",

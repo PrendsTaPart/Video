@@ -49,21 +49,31 @@ def main():
                 i = e["id"]
                 repris = reprises.get(i, {})
 
-                if not e["higgsfield"].get("videoSourceUrl"):
-                    url = repris.get("videoSourceUrl") or (
+                # Une reprise l'emporte sur ce qui est déjà posé : c'est tout
+                # son objet. Elle sert à basculer un épisode du dépôt vers
+                # RapidoCMS, or l'adresse du dépôt est justement là avant elle.
+                # Ne remplir que les cases vides revenait à ne jamais basculer.
+                actuel = e["higgsfield"].get("videoSourceUrl")
+                if not actuel or repris.get("videoSourceUrl"):
+                    url = repris.get("videoSourceUrl") or actuel or (
                         f"{BRUT}/hooks/{i}.mp4" if i in hooks else None
                     )
-                    if url:
+                    if url and url != actuel:
                         e["higgsfield"]["videoSourceUrl"] = url
                         clips += 1
+                    elif url:
+                        deja += 1
                 else:
                     deja += 1
 
-                url = repris.get("storyUrl") or (
+                st = e.get("story")
+                pose = (st or {}).get("url")
+                # Même règle côté story : la reprise écrase, le dépôt ne sert
+                # que de valeur par défaut quand rien n'est encore posé.
+                url = repris.get("storyUrl") or pose or (
                     f"{BRUT}/stories/{i}.mp4" if i in stories else None
                 )
-                st = e.get("story")
-                if url and not (st or {}).get("url"):
+                if url and url != pose:
                     # Neuf saisons 6 n'avaient pas de fiche story du tout : leur
                     # montage existait sur le disque et restait invisible faute
                     # d'un objet où poser l'adresse. Le hook et la punchline
