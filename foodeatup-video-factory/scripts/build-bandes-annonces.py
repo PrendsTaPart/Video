@@ -55,6 +55,7 @@ POLICE = R / "templates" / "Poppins-800.ttf"
 LOGO = R / "templates" / "logo_foodeatup.png"
 BGM = R / "templates" / "bgm.mp3"
 PLANS = R / "assets" / "bandes-annonces"
+SANS_VOIX = R / "assets" / "bandes-annonces-sans-voix"
 VOIX = R / "assets" / "vo" / "bandes-annonces"
 SORTIE = R / "dist" / "bandes-annonces"
 AFFICHES = R / "dist" / "affiches"
@@ -63,9 +64,12 @@ L, H = 1080, 1920
 DUREE = 10.0
 T_OUVERTURE = 0.5
 
-# Le plan garde son ambiance mais perd sa voix : -20 dB, soit un dixième de la
-# tension d'origine. Voir l'en-tête pour la raison.
+# Repli quand la séparation n'a pas tourné : le plan garde sa voix, on
+# l'enterre à -20 dB pour qu'elle passe sous celle d'ElevenLabs.
 GAIN_PLAN = 0.1
+# Cas normal : la voix a été retirée par enlever-voix.py, il ne reste que le
+# lieu. On peut donc l'entendre — -6 dB au lieu de -20.
+GAIN_AMBIANCE = 0.5
 # Le lit musical, au niveau relevé sur les masters de la série.
 GAIN_BGM = 0.16
 
@@ -149,9 +153,21 @@ def monte(cle, plan, ouv, chute, dest):
     entrees = ["-i", str(plan), "-i", str(LOGO), "-i", str(BGM),
                "-i", str(ouv), "-i", str(chute)]
     i_plan, i_bgm, i_ouv, i_chute = "0:a", "2:a", "3:a", "4:a"
-    if muet:
+
+    # L'ambiance sans la voix du plan, si enlever-voix.py l'a produite. Sans
+    # elle on garde le son d'origine : le montage ne casse pas faute de
+    # séparation, il sonne seulement moins bien — deux voix au lieu d'une.
+    # ffmpeg numérote ses entrées dans l'ordre des « -i », pas dans celui des
+    # mots de la ligne de commande : `-f lavfi -t 10 -i anullsrc` en pèse six.
+    # Compter les drapeaux est la seule façon juste de nommer l'entrée suivante.
+    sans_voix = SANS_VOIX / f"{cle}.m4a"
+    if sans_voix.exists():
+        i_plan = f"{entrees.count('-i')}:a"
+        entrees += ["-i", str(sans_voix)]
+        muet = False
+    elif muet:
+        i_plan = f"{entrees.count('-i')}:a"
         entrees += ["-f", "lavfi", "-t", str(DUREE), "-i", "anullsrc=r=48000:cl=stereo"]
-        i_plan = "5:a"
 
     g = [
         f"[0:v]scale={L}:{H}:force_original_aspect_ratio=increase,"
@@ -159,8 +175,11 @@ def monte(cle, plan, ouv, chute, dest):
         f"[1:v]scale=250:-1[logo]",
         f"[v0][logo]overlay={LOGO_X}:{LOGO_Y}[vout]",
 
+        # Le plan garde plus de présence quand sa voix a été retirée : il ne
+        # reste que l'ambiance, qu'on n'a plus besoin d'enterrer pour couvrir
+        # une seconde voix.
         f"[{i_plan}]aresample=48000,atrim=0:{DUREE},asetpts=PTS-STARTPTS,"
-        f"volume={GAIN_PLAN}[amb]",
+        f"volume={GAIN_AMBIANCE if sans_voix.exists() else GAIN_PLAN}[amb]",
 
         # Le lit musical entre et sort en fondu : une musique qui démarre net
         # sur la première frame s'entend comme un défaut de montage.

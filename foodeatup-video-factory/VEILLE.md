@@ -55,7 +55,26 @@ dans `assets/bandes-annonces/<serie>-S<n>.mp4`.
 Les URL de CDN Higgsfield **expirent**. Ce qui est récupéré est donc commité :
 `dist/hooks/`, `dist/bandes-annonces/`. Un fichier commité ne disparaît pas.
 
-### 4. Monter
+### 4. Retirer la voix du plan
+
+Seedance prononce les répliques écrites dans le prompt : chaque plan arrive avec
+une voix française incrustée. Partout où le montage pose ensuite une voix
+ElevenLabs — la réplique d'une bande-annonce, la punchline d'un chapitre du film
+— on en entendrait deux.
+
+```bash
+python3 scripts/enlever-voix.py bandes-annonces
+python3 scripts/enlever-voix.py hooks EP5xx …
+```
+
+Ne le faire **que** pour ces deux familles. Les stories de la série comique
+n'ont pas de voix off : leur hook et leur punchline sont incrustés en texte, la
+voix du plan est le seul contenu parlé et la retirer les viderait.
+
+Compter une vingtaine de secondes par plan. Le résultat est commité
+(`assets/*-sans-voix/`, ~200 ko pièce) pour ne pas refaire tourner Demucs.
+
+### 5. Monter
 
 | Ce qu'on monte | Commande |
 |---|---|
@@ -72,7 +91,7 @@ Une voix off de punchline manquante ne bloque pas : le montage se fait sans, et
 le script le dit. Elle peut être ajoutée ensuite (`assets/vo/punchlines/`), en
 supprimant le fichier monté avant de relancer.
 
-### 5. Relier et régénérer
+### 6. Relier et régénérer
 
 ```bash
 python3 scripts/lier-clips-et-stories.py
@@ -84,7 +103,7 @@ site. **Vérifier le diff avant de committer** : il doit se limiter aux épisode
 traités. Un diff qui déborde signale une régénération qui a rattrapé une dérive
 sans rapport — l'isoler dans son propre commit plutôt que de la noyer.
 
-### 6. Publier
+### 7. Publier
 
 **RapidoCMS d'abord**, c'est l'hébergement de production :
 
@@ -101,7 +120,7 @@ fonctionne mais n'est pas un CDN vidéo.
 un brouillon ; `schedule_draft_tool` exige un accord explicite. Ne jamais
 planifier de sa propre initiative.
 
-### 7. Déposer
+### 8. Déposer
 
 Commit sur la branche d'intégration, puis report des données du site vers le
 projet Lovable (`food-series-hub-cdb6e3bf`), PR, et fusion une fois la CI verte.

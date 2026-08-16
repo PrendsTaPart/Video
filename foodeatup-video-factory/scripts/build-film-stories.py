@@ -54,6 +54,7 @@ R = pathlib.Path(__file__).resolve().parent.parent
 SERIES = R.parent / "foodeatup-social" / "data" / "series.json"
 POLICE = R / "templates" / "Poppins-800.ttf"
 VOIX = R / "assets" / "vo" / "punchlines"
+SANS_VOIX = R / "assets" / "hooks-sans-voix"
 SORTIE = R / "dist" / "stories"
 
 L, H = 1080, 1920
@@ -275,12 +276,29 @@ def generique(clip, punchline, a_suivre, voix, dest):
     entrees = ["-i", str(clip), "-i", str(marque),
                "-loop", "1", "-t", str(DUREE), "-i", str(voile),
                "-loop", "1", "-t", str(DUREE), "-i", str(fleche)]
-    i_silence = i_voix = None
-    if muet:
-        i_silence = len(entrees) // 2  # 4
+    i_silence = i_voix = i_ambiance = None
+
+    # ffmpeg numérote ses entrées dans l'ordre des « -i », pas dans celui des
+    # mots de la ligne de commande : `-loop 1 -t 10 -i x` en pèse six. Compter
+    # les drapeaux est donc la seule façon juste de nommer l'entrée suivante.
+    suivante = entrees.count("-i")
+
+    # L'ambiance sans la voix du plan, quand enlever-voix.py l'a produite.
+    # Seedance prononce les répliques du prompt : sans ce retrait, sa voix se
+    # superpose à la punchline ElevenLabs et on en entend deux. À défaut, on
+    # garde le son d'origine — le montage sonne moins bien mais ne casse pas.
+    sans_voix = SANS_VOIX / f"{clip.stem}.m4a"
+    if sans_voix.exists():
+        i_ambiance = suivante
+        suivante += 1
+        entrees += ["-i", str(sans_voix)]
+        muet = False
+    elif muet:
+        i_silence = suivante
+        suivante += 1
         entrees += ["-f", "lavfi", "-t", str(DUREE), "-i", "anullsrc=r=48000:cl=stereo"]
     if voix:
-        i_voix = 5 if muet else 4
+        i_voix = suivante
         entrees += ["-i", str(voix)]
 
     g = [
@@ -333,7 +351,8 @@ def generique(clip, punchline, a_suivre, voix, dest):
     # Le son. La voix de la punchline entre à 8,5 s ; le plan s'efface de 9 dB
     # derrière elle au lieu de se taire — une ambiance qui disparaît d'un coup
     # sous une voix off s'entend comme une erreur de montage.
-    piste = f"{i_silence}:a" if muet else "0:a"
+    piste = (f"{i_ambiance}:a" if i_ambiance is not None
+             else f"{i_silence}:a" if muet else "0:a")
     if i_voix is not None:
         # La voix se cale sur la FIN, pas sur le voile. Entrer à 8,5 s ne lui
         # laisse qu'une seconde et demie ; les punchlines dites font deux à
