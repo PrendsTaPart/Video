@@ -144,9 +144,17 @@ def ambiances(ligne_son):
     return [x.strip() for x in re.findall(r"<([^>]*)>", ligne_son)]
 
 
+# Une ambiance qui contient une voix contredit le bloc AUDIO : huit plans
+# demandaient « a calm continuous French voice listing things ». Ces éléments
+# sont retirés, la voix venant désormais d'ElevenLabs.
+VOIX_DANS_AMBIANCE = re.compile(r"\b(voix|voice|speaking|listing|chatter|"
+                                r"conversation|talking)\b", re.I)
+
+
 def bloc_audio(ligne_son, lex):
     """Le bloc de son : l'ambiance du lieu, et rien d'autre."""
-    items = lex.get("ambiance") or ambiances(ligne_son)
+    items = [i for i in (lex.get("ambiance") or ambiances(ligne_son))
+             if not VOIX_DANS_AMBIANCE.search(i)]
     lieu = ", ".join(i.rstrip(".") for i in items) or "l'ambiance réelle du lieu"
     return (
         "AUDIO — ambiance seule.\n"
@@ -156,6 +164,46 @@ def bloc_audio(ligne_son, lex):
         "regard — et ne produisent aucun son. Les voix sont enregistrées "
         "séparément et posées au montage."
     )
+
+
+def traduis(texte, lexique):
+    """Applique le lexique de phrases, les plus longues d'abord.
+
+    Traduire par phrases plutôt que par prompt tient à la nature du corpus :
+    trente-cinq tournures de gabarit couvrent près de mille occurrences, et
+    seules trois cent cinquante-cinq phrases sont réellement distinctes sur
+    quatre-vingt-huit prompts. Le lexique est un fichier relu à la main ; il
+    garantit qu'une même phrase est traduite pareil partout.
+    """
+    gardees = []
+
+    def range(motif):
+        """Met un fragment de côté, remplacé par un jeton neutre."""
+        def prends(m):
+            gardees.append(m.group(0))
+            return f"\x00{len(gardees) - 1}\x00"
+        return prends
+
+    # Deux choses sont mises à l'abri avant de remplacer quoi que ce soit.
+    #
+    # Les répliques d'abord : une clé courte les mordait — « tickets » traduit
+    # en « des tickets » transformait « Onze tickets. » en « Onze des
+    # tickets. », et une réplique modifiée, c'est l'appariement perdu.
+    texte = re.sub(r"\{[^}]*\}", range(None), texte)
+
+    # Les traductions qui contiennent leur propre clé ensuite : « silence »
+    # devient « le silence », que la passe suivante relirait comme un
+    # « silence » à traduire, d'où « le le silence ». Le script étant relancé
+    # à chaque lot, il doit pouvoir repasser sur sa propre sortie sans rien
+    # empiler.
+    deja = [fr for en, fr in lexique.items() if en in fr]
+    if deja:
+        texte = re.sub("|".join(re.escape(f) for f in sorted(deja, key=len, reverse=True)),
+                       range(None), texte)
+
+    for en in sorted(lexique, key=len, reverse=True):
+        texte = texte.replace(en, lexique[en])
+    return re.sub(r"\x00(\d+)\x00", lambda m: gardees[int(m.group(1))], texte)
 
 
 def refais(prompt, lex):
@@ -203,13 +251,14 @@ def main(argv):
     controle = "--controle" in argv
     d = json.loads(SERIES.read_text(encoding="utf-8"))
     lexique = json.loads(LEXIQUE.read_text(encoding="utf-8")) if LEXIQUE.exists() else {}
+    lexique = {k: v for k, v in lexique.items() if not k.startswith("_")}
 
     eps = [e for s in d["series"] for sa in s["saisons"] for e in sa["episodes"]]
     refaits = intacts = 0
     casses, anglais = [], []
     for e in eps:
         avant = e["higgsfield"]["prompt"]
-        apres = refais(avant, lexique.get(e["id"], {}))
+        apres = traduis(refais(traduis(avant, lexique), {}), lexique)
         if repliques(apres) != repliques(avant):
             casses.append(e["id"])
             continue
