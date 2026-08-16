@@ -45,6 +45,7 @@ publiable ; une story qui n'existe pas, non.
 import json
 import os
 import pathlib
+import re
 import subprocess
 import sys
 import tempfile
@@ -224,6 +225,39 @@ def a_du_son(f):
     return bool(out)
 
 
+def fin_de_parole(mp3, plancher_db=-45.0, pas=0.02):
+    """L'instant où la voix se tait vraiment, silence de queue exclu.
+
+    La durée du fichier ne dit pas où s'arrête la phrase : un rendu
+    ElevenLabs traîne deux à cinq dixièmes de silence après le dernier mot.
+    Caler sur la durée du fichier reculerait donc l'entrée de la voix pour
+    rien, et ferait mordre le dernier mot sur le plan au lieu de le poser
+    sur l'image finale.
+    """
+    # `silencedetect` écrit son relevé en niveau info : le museler avec
+    # « -v error », comme partout ailleurs ici, rend la sortie vide et la
+    # mesure silencieusement fausse.
+    out = subprocess.run(
+        ["ffmpeg", "-hide_banner", "-nostats", "-i", str(mp3),
+         "-af", f"silencedetect=noise={plancher_db}dB:d={pas}", "-f", "null", "-"],
+        capture_output=True, text=True).stderr
+    duree = float(subprocess.run(
+        ["ffprobe", "-v", "error", "-show_entries", "format=duration",
+         "-of", "csv=p=0", str(mp3)], capture_output=True, text=True).stdout.strip())
+
+    # Le silence de queue est celui qui court jusqu'au bout du fichier : soit
+    # ffmpeg le referme sur la dernière frame, soit il ne le referme pas du
+    # tout. Les silences du milieu — les respirations entre deux mots — ont,
+    # eux, une fin franchement antérieure et ne disent rien de la fin.
+    debuts = [float(m) for m in re.findall(r"silence_start: (-?[\d.]+)", out)]
+    fins = [float(m) for m in re.findall(r"silence_end: ([\d.]+)", out)]
+    if debuts:
+        jusquau_bout = not fins or fins[-1] < debuts[-1] or fins[-1] >= duree - 0.05
+        if jusquau_bout:
+            return min(debuts[-1] + 0.05, duree)
+    return duree
+
+
 def generique(clip, punchline, a_suivre, voix, dest):
     voile, marque, fleche = gabarits()
     muet = not a_du_son(clip)
@@ -301,9 +335,24 @@ def generique(clip, punchline, a_suivre, voix, dest):
     # sous une voix off s'entend comme une erreur de montage.
     piste = f"{i_silence}:a" if muet else "0:a"
     if i_voix is not None:
+        # La voix se cale sur la FIN, pas sur le voile. Entrer à 8,5 s ne lui
+        # laisse qu'une seconde et demie ; les punchlines dites font deux à
+        # trois secondes, et les six premières mesurées perdaient de 22 à 49 %
+        # de leur phrase, coupées en plein mot par le atrim de fin.
+        #
+        # On recule donc son entrée juste ce qu'il faut pour que le dernier mot
+        # tombe sur la dernière image. Rien n'est coupé, et une réplique qui
+        # s'achève sur l'image figée est la fin qu'appelle un « à suivre ».
+        # Le prix payé est assumé : sur une punchline longue la voix commence
+        # avant que le voile ne monte, donc un peu avant le générique.
+        t_voix = max(0.0, DUREE - fin_de_parole(voix))
+        # L'ambiance s'efface DERRIÈRE la voix : le fondu suit son entrée réelle
+        # et non plus le voile, sans quoi une voix entrée avant 8,5 s passerait
+        # sous une ambiance encore à plein niveau.
+        t_duck = min(T_VOILE, t_voix)
         g.append(f"[{piste}]aresample=48000,atrim=0:{DUREE},asetpts=PTS-STARTPTS,"
-                 f"volume='if(lt(t,{T_VOILE}),1,0.355)':eval=frame[amb]")
-        g.append(f"[{i_voix}:a]aresample=48000,adelay={int(T_VOILE * 1000)}|{int(T_VOILE * 1000)},"
+                 f"volume='if(lt(t,{t_duck}),1,0.355)':eval=frame[amb]")
+        g.append(f"[{i_voix}:a]aresample=48000,adelay={int(t_voix * 1000)}|{int(t_voix * 1000)},"
                  f"atrim=0:{DUREE},asetpts=PTS-STARTPTS[vx]")
         g.append("[amb][vx]amix=inputs=2:duration=first:normalize=0,"
                  f"loudnorm=I=-14:TP=-1:LRA=11,alimiter=limit=0.794:level=disabled,"
