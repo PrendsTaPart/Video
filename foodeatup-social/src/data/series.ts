@@ -162,6 +162,14 @@ export type BandeAnnonce = {
   /** Le prompt Seedance 2.5, à coller tel quel. */
   prompt: string;
   url: string | null;
+  /**
+   * L'affiche de la saison — une image fixe tirée du plan de la
+   * bande-annonce, avec le titre et la date.
+   *
+   * Facultative : une saison dont le plan n'est pas encore généré n'a ni
+   * bande-annonce ni affiche, et la clé est alors absente.
+   */
+  afficheUrl?: string;
 };
 
 export type Saison = {
