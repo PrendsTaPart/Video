@@ -23761,7 +23761,7 @@ export const series: Serie[] = [
             "higgsfield": {
               "duree": "10 s",
               "format": "vertical 9:16",
-              "videoSourceUrl": null,
+              "videoSourceUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/hooks/EP506.mp4",
               "source": null
             },
             "reseaux": {
@@ -23806,7 +23806,7 @@ export const series: Serie[] = [
                 "lienCta": "https://site.foodeatup.com/"
               }
             },
-            "storyUrl": null
+            "storyUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP506.mp4"
           }
         ],
         "acte": "Acte I — Le film",
@@ -23854,7 +23854,7 @@ export const series: Serie[] = [
             "higgsfield": {
               "duree": "10 s",
               "format": "vertical 9:16",
-              "videoSourceUrl": null,
+              "videoSourceUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/hooks/EP507.mp4",
               "source": null
             },
             "reseaux": {
@@ -23899,7 +23899,7 @@ export const series: Serie[] = [
                 "lienCta": "https://site.foodeatup.com/"
               }
             },
-            "storyUrl": null
+            "storyUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP507.mp4"
           },
           {
             "id": "EP508",
@@ -23928,7 +23928,7 @@ export const series: Serie[] = [
             "higgsfield": {
               "duree": "10 s",
               "format": "vertical 9:16",
-              "videoSourceUrl": null,
+              "videoSourceUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/hooks/EP508.mp4",
               "source": null
             },
             "reseaux": {
@@ -23973,7 +23973,7 @@ export const series: Serie[] = [
                 "lienCta": "https://site.foodeatup.com/"
               }
             },
-            "storyUrl": null
+            "storyUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP508.mp4"
           },
           {
             "id": "EP509",
@@ -24002,7 +24002,7 @@ export const series: Serie[] = [
             "higgsfield": {
               "duree": "10 s",
               "format": "vertical 9:16",
-              "videoSourceUrl": null,
+              "videoSourceUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/hooks/EP509.mp4",
               "source": null
             },
             "reseaux": {
@@ -24047,7 +24047,7 @@ export const series: Serie[] = [
                 "lienCta": "https://site.foodeatup.com/"
               }
             },
-            "storyUrl": null
+            "storyUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP509.mp4"
           },
           {
             "id": "EP510",
@@ -24076,7 +24076,7 @@ export const series: Serie[] = [
             "higgsfield": {
               "duree": "10 s",
               "format": "vertical 9:16",
-              "videoSourceUrl": null,
+              "videoSourceUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/hooks/EP510.mp4",
               "source": null
             },
             "reseaux": {
@@ -24121,7 +24121,7 @@ export const series: Serie[] = [
                 "lienCta": "https://site.foodeatup.com/"
               }
             },
-            "storyUrl": null
+            "storyUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP510.mp4"
           },
           {
             "id": "EP511",
@@ -24224,7 +24224,7 @@ export const series: Serie[] = [
             "higgsfield": {
               "duree": "10 s",
               "format": "vertical 9:16",
-              "videoSourceUrl": null,
+              "videoSourceUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/hooks/EP512.mp4",
               "source": null
             },
             "reseaux": {
@@ -24269,7 +24269,7 @@ export const series: Serie[] = [
                 "lienCta": "https://site.foodeatup.com/"
               }
             },
-            "storyUrl": null
+            "storyUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP512.mp4"
           }
         ],
         "acte": "Acte I — Le film",
@@ -24316,7 +24316,7 @@ export const series: Serie[] = [
             "higgsfield": {
               "duree": "10 s",
               "format": "vertical 9:16",
-              "videoSourceUrl": null,
+              "videoSourceUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/hooks/EP513.mp4",
               "source": null
             },
             "reseaux": {
@@ -24361,7 +24361,7 @@ export const series: Serie[] = [
                 "lienCta": "https://site.foodeatup.com/"
               }
             },
-            "storyUrl": null
+            "storyUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP513.mp4"
           },
           {
             "id": "EP514",
@@ -24390,7 +24390,7 @@ export const series: Serie[] = [
             "higgsfield": {
               "duree": "10 s",
               "format": "vertical 9:16",
-              "videoSourceUrl": null,
+              "videoSourceUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/hooks/EP514.mp4",
               "source": null
             },
             "reseaux": {
@@ -24435,7 +24435,7 @@ export const series: Serie[] = [
                 "lienCta": "https://site.foodeatup.com/"
               }
             },
-            "storyUrl": null
+            "storyUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP514.mp4"
           },
           {
             "id": "EP515",
@@ -24464,7 +24464,7 @@ export const series: Serie[] = [
             "higgsfield": {
               "duree": "10 s",
               "format": "vertical 9:16",
-              "videoSourceUrl": null,
+              "videoSourceUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/hooks/EP515.mp4",
               "source": null
             },
             "reseaux": {
@@ -24509,7 +24509,7 @@ export const series: Serie[] = [
                 "lienCta": "https://site.foodeatup.com/"
               }
             },
-            "storyUrl": null
+            "storyUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP515.mp4"
           },
           {
             "id": "EP516",
@@ -24538,7 +24538,7 @@ export const series: Serie[] = [
             "higgsfield": {
               "duree": "10 s",
               "format": "vertical 9:16",
-              "videoSourceUrl": null,
+              "videoSourceUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/hooks/EP516.mp4",
               "source": null
             },
             "reseaux": {
@@ -24583,7 +24583,7 @@ export const series: Serie[] = [
                 "lienCta": "https://site.foodeatup.com/"
               }
             },
-            "storyUrl": null
+            "storyUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP516.mp4"
           },
           {
             "id": "EP517",
@@ -25000,7 +25000,7 @@ export const series: Serie[] = [
             "higgsfield": {
               "duree": "10 s",
               "format": "vertical 9:16",
-              "videoSourceUrl": null,
+              "videoSourceUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/hooks/EP522.mp4",
               "source": null
             },
             "reseaux": {
@@ -25045,7 +25045,7 @@ export const series: Serie[] = [
                 "lienCta": "https://site.foodeatup.com/"
               }
             },
-            "storyUrl": null
+            "storyUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP522.mp4"
           },
           {
             "id": "EP523",
