@@ -22413,7 +22413,7 @@ export const series: Serie[] = [
                 "lienCta": "https://site.foodeatup.com/"
               }
             },
-            "storyUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/FoodEatUp-EP418-Le-moteur-brancher-Claude-ChatGPT-ou-Mistral"
+            "storyUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/story-EP418"
           },
           {
             "id": "EP419",

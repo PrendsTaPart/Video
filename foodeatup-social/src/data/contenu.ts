@@ -48602,7 +48602,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "format": "9:16 · 1080 × 1920 · 10 s",
       "hook": "Le moteur : brancher Claude, ChatGPT ou Mistral",
       "punchline": "Une paire d'identifiants, un endpoint, et le modèle de votre choix parle à votre établissement — et seulement au vôtre",
-      "url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/FoodEatUp-EP418-Le-moteur-brancher-Claude-ChatGPT-ou-Mistral"
+      "url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/story-EP418"
     },
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
