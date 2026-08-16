@@ -1,31 +1,8 @@
 {
   "jobs_lus": 50,
   "cibles": 233,
-  "deja_servies": 82,
-  "a_monter": {
-    "EP:EP301": {
-      "titre": "La cuisine est vide, et dans quatre heures tout doit être prêt",
-      "date": "2026-10-29",
-      "prises": [
-        {
-          "job": "8fcd5a18-48bd-48c4-8246-9efb11151b76",
-          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3GXYlNxkbz83gXaGDVVrTni1dX2/hf_20260816_194005_8fcd5a18-48bd-48c4-8246-9efb11151b76.mp4",
-          "at": 1786909205.233269
-        }
-      ]
-    },
-    "EP:EP401": {
-      "titre": "Qui je suis",
-      "date": "2027-04-04",
-      "prises": [
-        {
-          "job": "0b530975-e6f6-4ee7-a9bd-f0b6fed33bcd",
-          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3GXYlNxkbz83gXaGDVVrTni1dX2/hf_20260816_200718_0b530975-e6f6-4ee7-a9bd-f0b6fed33bcd.mp4",
-          "at": 1786910838.593576
-        }
-      ]
-    }
-  },
+  "deja_servies": 84,
+  "a_monter": {},
   "toujours_attendus": [
     {
       "cle": "BA:le-coup-de-feu-S2",
