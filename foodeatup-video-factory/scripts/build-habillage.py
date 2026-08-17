@@ -61,7 +61,18 @@ BGM = R / "templates" / "bgm.mp3"
 HUIT = R / "assets" / "marque" / "foodeatup-huit.png"
 PLAQUE_MARQUE = R / "assets" / "marque" / "foodeatup-plaque.png"
 MOT_CREME = R / "assets" / "marque" / "foodeatup-mot-creme.png"
-CONTEUR = R / "assets" / "voix" / "conteur-film.mp3"
+# La voix de la CARTE, pas celle du film.
+#
+# `conteur-film.mp3` a deux vies dans ce dépôt, et c'est un piège. Il a
+# d'abord porté l'échantillon de casting — une phrase de 5,98 s, celle que
+# l'habillage pose sur la carte d'ouverture. Il porte maintenant les
+# soixante-six répliques du film entier, sur 375 s, pour le montage du long.
+#
+# Si l'habillage continuait de le lire, chaque épisode ouvrirait sur le début
+# de la narration du film — la même phrase sur les vingt-neuf, et pas celle
+# qu'on veut. Les deux usages sont légitimes et n'ont rien à voir : ils ont
+# donc chacun leur fichier.
+CONTEUR = R / "assets" / "voix" / "carte-film.mp3"
 
 L, H = 1080, 1920
 FPS = 30
