@@ -955,9 +955,19 @@ def rapatrier(url, nom):
 
 
 def un_episode(ep, piece, sortie):
-    if not ep.get("plan"):
+    # Les six derniers plans n'ont pas de story dans la bibliothèque : leur
+    # piste son est reconstituée sur place par `build-plan-upeatfood.py`, et
+    # leur plan vient de `dist/hooks/`. On les cherche donc par convention
+    # avant de regarder le catalogue.
+    #
+    # Par convention et non par chemin écrit dans le catalogue : un chemin
+    # absolu dans un fichier versionné ne survit pas au poste suivant, et un
+    # chemin relatif oblige chaque lecteur à savoir d'où il est relatif.
+    local_son = SOURCES / f"{ep['id']}-son.mp4"
+    local_clip = R / "dist" / "hooks" / f"{ep['id']}.mp4"
+    if not ep.get("plan") and not local_son.exists():
         raise SystemExit(f"{ep['id']} : pas de piste son")
-    son = rapatrier(ep["plan"], f"{ep['id']}-son.mp4")
+    son = local_son if local_son.exists() else rapatrier(ep["plan"], f"{ep['id']}-son.mp4")
 
     # Deux épisodes n'ont pas de clip d'origine, seulement leur ancienne
     # story. On la reprend comme plan — c'est la même prise, au même cadrage
@@ -967,8 +977,12 @@ def un_episode(ep, piece, sortie):
     # l'ouverture, l'habillage et la fin, et leur texte reste celui d'avant.
     # C'est moins bon que les vingt-sept autres, et c'est mieux que rien tant
     # que le plan propre n'existe pas.
-    propre = bool(ep.get("clip"))
-    clip = rapatrier(ep["clip"], f"{ep['id']}-clip.mp4") if propre else son
+    if local_clip.exists():
+        propre, clip = True, local_clip
+    elif ep.get("clip"):
+        propre, clip = True, rapatrier(ep["clip"], f"{ep['id']}-clip.mp4")
+    else:
+        propre, clip = False, son
     sortie.parent.mkdir(parents=True, exist_ok=True)
     # Les deux pièces portent le générique de fin.
     #
