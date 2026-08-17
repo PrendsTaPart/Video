@@ -523,7 +523,7 @@ export const series: Serie[] = [
             },
             "masterRapidoUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/FoodEatUp-EP001-Prendre-une-commande",
             "storyUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP001.mp4",
-            "shortUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube/EP001.mp4"
+            "shortUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/yt-EP001"
           },
           {
             "id": "EP002",
@@ -602,7 +602,7 @@ export const series: Serie[] = [
             },
             "masterRapidoUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/FoodEatUp-EP002-Envoi-direct-cuisine",
             "storyUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP002.mp4",
-            "shortUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube/EP002.mp4"
+            "shortUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/yt-EP002"
           },
           {
             "id": "EP003",
@@ -674,7 +674,7 @@ export const series: Serie[] = [
             },
             "masterRapidoUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/FoodEatUp-EP003-Ma-carte",
             "storyUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP003.mp4",
-            "shortUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube/EP003.mp4"
+            "shortUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/yt-EP003"
           },
           {
             "id": "EP004",
@@ -747,7 +747,7 @@ export const series: Serie[] = [
             },
             "masterRapidoUrl": null,
             "storyUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP004.mp4",
-            "shortUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube/EP004.mp4"
+            "shortUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/yt-EP004"
           },
           {
             "id": "EP005",
@@ -819,7 +819,7 @@ export const series: Serie[] = [
             },
             "masterRapidoUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/FoodEatUp-EP005-Vue-d-ensemble",
             "storyUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP005.mp4",
-            "shortUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube/EP005.mp4"
+            "shortUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/yt-EP005"
           },
           {
             "id": "EP006",
@@ -898,7 +898,7 @@ export const series: Serie[] = [
             },
             "masterRapidoUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/FoodEatUp-EP006-Ajouter-modifier-un-mouvement",
             "storyUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP006.mp4",
-            "shortUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube/EP006.mp4"
+            "shortUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/yt-EP006"
           },
           {
             "id": "EP007",
@@ -977,7 +977,7 @@ export const series: Serie[] = [
             },
             "masterRapidoUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/FoodEatUp-EP007-Repondre-aux-avis",
             "storyUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP007.mp4",
-            "shortUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube/EP007.mp4"
+            "shortUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/yt-EP007"
           },
           {
             "id": "EP008",
@@ -1056,7 +1056,7 @@ export const series: Serie[] = [
             },
             "masterRapidoUrl": null,
             "storyUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP008.mp4",
-            "shortUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube/EP008.mp4"
+            "shortUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/yt-EP008"
           },
           {
             "id": "EP009",
@@ -1129,7 +1129,7 @@ export const series: Serie[] = [
             },
             "masterRapidoUrl": null,
             "storyUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP009.mp4",
-            "shortUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube/EP009.mp4"
+            "shortUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/yt-EP009"
           },
           {
             "id": "EP010",
@@ -1208,7 +1208,7 @@ export const series: Serie[] = [
             },
             "masterRapidoUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/FoodEatUp-EP010-Lire-ses-previsions",
             "storyUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP010.mp4",
-            "shortUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube/EP010.mp4"
+            "shortUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/yt-EP010"
           },
           {
             "id": "EP011",
@@ -1288,7 +1288,7 @@ export const series: Serie[] = [
             },
             "masterRapidoUrl": null,
             "storyUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP011.mp4",
-            "shortUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube/EP011.mp4"
+            "shortUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/yt-EP011"
           },
           {
             "id": "EP012",
@@ -1368,7 +1368,7 @@ export const series: Serie[] = [
             },
             "masterRapidoUrl": null,
             "storyUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP012.mp4",
-            "shortUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube/EP012.mp4"
+            "shortUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/yt-EP012"
           },
           {
             "id": "EP013",
@@ -1447,7 +1447,7 @@ export const series: Serie[] = [
             },
             "masterRapidoUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/FoodEatUp-EP013-Parler-a-PrediBot",
             "storyUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP013.mp4",
-            "shortUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube/EP013.mp4"
+            "shortUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/yt-EP013"
           },
           {
             "id": "EP014",
@@ -1526,7 +1526,7 @@ export const series: Serie[] = [
             },
             "masterRapidoUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/FoodEatUp-EP014-Mouvements-de-stock",
             "storyUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP014.mp4",
-            "shortUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube/EP014.mp4"
+            "shortUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/yt-EP014"
           },
           {
             "id": "EP015",
@@ -1605,7 +1605,7 @@ export const series: Serie[] = [
             },
             "masterRapidoUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/FoodEatUp-EP015-Referentiels",
             "storyUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP015.mp4",
-            "shortUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube/EP015.mp4"
+            "shortUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/yt-EP015"
           },
           {
             "id": "EP016",
@@ -1684,7 +1684,7 @@ export const series: Serie[] = [
             },
             "masterRapidoUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/FoodEatUp-EP016-Depenses-et-livraisons",
             "storyUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP016.mp4",
-            "shortUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube/EP016.mp4"
+            "shortUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/yt-EP016"
           },
           {
             "id": "EP017",
@@ -1763,7 +1763,7 @@ export const series: Serie[] = [
             },
             "masterRapidoUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/FoodEatUp-EP017-Creation-d-un-rapport",
             "storyUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP017.mp4",
-            "shortUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube/EP017.mp4"
+            "shortUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/yt-EP017"
           },
           {
             "id": "EP018",
@@ -1842,7 +1842,7 @@ export const series: Serie[] = [
             },
             "masterRapidoUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/FoodEatUp-EP018-Site-vocal-et-QR-code",
             "storyUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP018.mp4",
-            "shortUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube/EP018.mp4"
+            "shortUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/yt-EP018"
           },
           {
             "id": "EP019",
@@ -1921,7 +1921,7 @@ export const series: Serie[] = [
             },
             "masterRapidoUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/FoodEatUp-EP019-Predictions-des-commandes",
             "storyUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP019.mp4",
-            "shortUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube/EP019.mp4"
+            "shortUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/yt-EP019"
           },
           {
             "id": "EP020",
@@ -2000,7 +2000,7 @@ export const series: Serie[] = [
             },
             "masterRapidoUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/FoodEatUp-EP020-Ajouter-une-reservation",
             "storyUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP020.mp4",
-            "shortUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube/EP020.mp4"
+            "shortUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/yt-EP020"
           },
           {
             "id": "EP021",
@@ -2079,7 +2079,7 @@ export const series: Serie[] = [
             },
             "masterRapidoUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/FoodEatUp-EP021-Poste-de-travail-KDS",
             "storyUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP021.mp4",
-            "shortUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube/EP021.mp4"
+            "shortUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/yt-EP021"
           },
           {
             "id": "EP022",
@@ -2158,7 +2158,7 @@ export const series: Serie[] = [
             },
             "masterRapidoUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/FoodEatUp-EP022-Marketplace-de-prompts",
             "storyUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP022.mp4",
-            "shortUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube/EP022.mp4"
+            "shortUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/yt-EP022"
           },
           {
             "id": "EP023",
@@ -2237,7 +2237,7 @@ export const series: Serie[] = [
             },
             "masterRapidoUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/FoodEatUp-EP023-Calendrier-IA-avec-Iris",
             "storyUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP023.mp4",
-            "shortUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube/EP023.mp4"
+            "shortUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/yt-EP023"
           },
           {
             "id": "EP024",
@@ -2316,7 +2316,7 @@ export const series: Serie[] = [
             },
             "masterRapidoUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/FoodEatUp-EP024-Creer-son-site-par-IA",
             "storyUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP024.mp4",
-            "shortUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube/EP024.mp4"
+            "shortUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/yt-EP024"
           },
           {
             "id": "EP025",
@@ -2395,7 +2395,7 @@ export const series: Serie[] = [
             },
             "masterRapidoUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/FoodEatUp-EP025-Campagne-100-pourcent-IA",
             "storyUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP025.mp4",
-            "shortUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube/EP025.mp4"
+            "shortUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/yt-EP025"
           },
           {
             "id": "EP026",
@@ -2474,7 +2474,7 @@ export const series: Serie[] = [
             },
             "masterRapidoUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/FoodEatUp-EP026-Liste-de-courses-fournisseur",
             "storyUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP026.mp4",
-            "shortUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube/EP026.mp4"
+            "shortUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/yt-EP026"
           },
           {
             "id": "EP027",
@@ -2547,7 +2547,7 @@ export const series: Serie[] = [
             },
             "masterRapidoUrl": null,
             "storyUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP027.mp4",
-            "shortUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube/EP027.mp4"
+            "shortUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/yt-EP027"
           },
           {
             "id": "EP028",
@@ -2627,7 +2627,7 @@ export const series: Serie[] = [
             },
             "masterRapidoUrl": null,
             "storyUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP028.mp4",
-            "shortUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube/EP028.mp4"
+            "shortUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/yt-EP028"
           },
           {
             "id": "EP029",
@@ -2706,7 +2706,7 @@ export const series: Serie[] = [
             },
             "masterRapidoUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/FoodEatUp-EP029-Lire-ses-previsions",
             "storyUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP029.mp4",
-            "shortUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube/EP029.mp4"
+            "shortUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/yt-EP029"
           },
           {
             "id": "EP030",
@@ -2778,7 +2778,7 @@ export const series: Serie[] = [
             },
             "masterRapidoUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/FoodEatUp-EP030-Academy",
             "storyUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP030.mp4",
-            "shortUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube/EP030.mp4"
+            "shortUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/yt-EP030"
           }
         ],
         "acte": "Acte II — Le métier",
@@ -2791,7 +2791,7 @@ export const series: Serie[] = [
           "prompt": "Vertical 9:16, 10 secondes, 1080p, 24 im/s. PAS de texte incrusté, PAS de sous-titres, PAS de filigrane, PAS de logo, AUCUNE légende gravée dans l'image. Photoréaliste, image de cinéma : optique 35 mm, faible profondeur de champ, grain argentique, contraste tenu.\n\n@Image 1 ne définit que le visage du chef — barbe, toque blanche, veste blanche, tablier blanc FoodEatUp. Ne pas modifier ses traits ni sa carrure.\n\nBANDE-ANNONCE — Le Coup de Feu, saison 1 : « Le service, sans les cris ». Acte II — Le métier. Saison 6 sur 18 de la programmation.\nDécor : une salle de restaurant en plein coup de feu, vapeur et mouvement\n\n0-4s: Le décor seul, personne dedans, la lumière monte lentement. Très lent travelling avant. Voix off française, un homme, grave et posée, le débit d'un conteur qui connaît déjà la fin, hors champ : {Un service, ça se passe bien.} End state at 4s: le lieu est entièrement lisible et toujours vide.\n4-7s: À 4 secondes, le chef entre dans le cadre par la gauche et traverse sans s'arrêter, de dos. Un seul mouvement, rien d'autre ne bouge. End state at 7s: il est arrivé au centre du cadre et s'arrête, toujours de dos.\n7-10s: Il se retourne et regarde l'objectif, une seconde, sans sourire. La caméra s'immobilise. Voix off française, un homme, grave et posée, le débit d'un conteur qui connaît déjà la fin, hors champ : {Jusqu'au moment où ça ne se passe plus.} End state at 10s: plan figé sur son visage, caméra immobile.\n\nSound design: <ambiance réelle du lieu, dense> <un seul bruit de matière quand il entre dans le cadre>. Deux répliques, exactement aux minutages ci-dessus. Pas de musique — elle est ajoutée au montage.",
           "url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/ba-le-coup-de-feu-S1",
           "afficheUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/affiches/le-coup-de-feu-S1.jpg",
-          "shortUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube/le-coup-de-feu-S1.mp4"
+          "shortUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/yt-le-coup-de-feu-S1"
         },
         "pitchActe": "Ce que le logiciel change, poste par poste. Une saison de démonstration, une saison d'observation, en alternance."
       },
@@ -2877,7 +2877,7 @@ export const series: Serie[] = [
             },
             "masterRapidoUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/FoodEatUp-EP031-Etiquettes-de-production",
             "storyUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP031.mp4",
-            "shortUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube/EP031.mp4"
+            "shortUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/yt-EP031"
           },
           {
             "id": "EP032",
@@ -2956,7 +2956,7 @@ export const series: Serie[] = [
             },
             "masterRapidoUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/FoodEatUp-EP032-Ma-carte-fiche-recette",
             "storyUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP032.mp4",
-            "shortUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube/EP032.mp4"
+            "shortUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/yt-EP032"
           },
           {
             "id": "EP033",
@@ -3035,7 +3035,7 @@ export const series: Serie[] = [
             },
             "masterRapidoUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/FoodEatUp-EP033-Mouvements-de-stock",
             "storyUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP033.mp4",
-            "shortUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube/EP033.mp4"
+            "shortUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/yt-EP033"
           },
           {
             "id": "EP034",
@@ -3108,7 +3108,7 @@ export const series: Serie[] = [
             },
             "masterRapidoUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/FoodEatUp-EP034-Procedures-de-service",
             "storyUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP034.mp4",
-            "shortUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube/EP034.mp4"
+            "shortUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/yt-EP034"
           },
           {
             "id": "EP035",
@@ -3187,7 +3187,7 @@ export const series: Serie[] = [
             },
             "masterRapidoUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/FoodEatUp-EP035-Lire-ses-previsions",
             "storyUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP035.mp4",
-            "shortUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube/EP035.mp4"
+            "shortUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/yt-EP035"
           },
           {
             "id": "EP036",
@@ -3259,7 +3259,7 @@ export const series: Serie[] = [
             },
             "masterRapidoUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/FoodEatUp-EP036-Un-seul-abonnement",
             "storyUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP036.mp4",
-            "shortUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube/EP036.mp4"
+            "shortUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/yt-EP036"
           },
           {
             "id": "EP037",
@@ -3338,7 +3338,7 @@ export const series: Serie[] = [
             },
             "masterRapidoUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/FoodEatUp-EP037-Planning-par-employe-ou-par-poste",
             "storyUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP037.mp4",
-            "shortUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube/EP037.mp4"
+            "shortUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/yt-EP037"
           },
           {
             "id": "EP038",
@@ -3417,7 +3417,7 @@ export const series: Serie[] = [
             },
             "masterRapidoUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/FoodEatUp-EP038-Ma-liste-de-courses",
             "storyUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP038.mp4",
-            "shortUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube/EP038.mp4"
+            "shortUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/yt-EP038"
           },
           {
             "id": "EP039",
@@ -3496,7 +3496,7 @@ export const series: Serie[] = [
             },
             "masterRapidoUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/FoodEatUp-EP039-Gerer-et-no-shows",
             "storyUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP039.mp4",
-            "shortUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube/EP039.mp4"
+            "shortUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/yt-EP039"
           },
           {
             "id": "EP040",
@@ -3575,7 +3575,7 @@ export const series: Serie[] = [
             },
             "masterRapidoUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/FoodEatUp-EP040-Ajouter-un-mouvement",
             "storyUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP040.mp4",
-            "shortUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube/EP040.mp4"
+            "shortUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/yt-EP040"
           },
           {
             "id": "EP041",
@@ -3654,7 +3654,7 @@ export const series: Serie[] = [
             },
             "masterRapidoUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/FoodEatUp-EP041-Sortie-des-ingredients-de-la-production",
             "storyUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP041.mp4",
-            "shortUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube/EP041.mp4"
+            "shortUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/yt-EP041"
           },
           {
             "id": "EP042",
@@ -3734,7 +3734,7 @@ export const series: Serie[] = [
             },
             "masterRapidoUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/FoodEatUp-EP042-Calendrier-de-communication-Iris",
             "storyUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP042.mp4",
-            "shortUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube/EP042.mp4"
+            "shortUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/yt-EP042"
           },
           {
             "id": "EP043",
@@ -3807,7 +3807,7 @@ export const series: Serie[] = [
             },
             "masterRapidoUrl": null,
             "storyUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP043.mp4",
-            "shortUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube/EP043.mp4"
+            "shortUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/yt-EP043"
           },
           {
             "id": "EP044",
@@ -3886,7 +3886,7 @@ export const series: Serie[] = [
             },
             "masterRapidoUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/FoodEatUp-EP044-Commander-par-QR-code",
             "storyUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP044.mp4",
-            "shortUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube/EP044.mp4"
+            "shortUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/yt-EP044"
           },
           {
             "id": "EP045",
@@ -3965,7 +3965,7 @@ export const series: Serie[] = [
             },
             "masterRapidoUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/FoodEatUp-EP045-Statistiques-par-module",
             "storyUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP045.mp4",
-            "shortUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube/EP045.mp4"
+            "shortUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/yt-EP045"
           },
           {
             "id": "EP046",
@@ -4044,7 +4044,7 @@ export const series: Serie[] = [
             },
             "masterRapidoUrl": null,
             "storyUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP046.mp4",
-            "shortUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube/EP046.mp4"
+            "shortUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/yt-EP046"
           },
           {
             "id": "EP047",
@@ -4123,7 +4123,7 @@ export const series: Serie[] = [
             },
             "masterRapidoUrl": null,
             "storyUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP047.mp4",
-            "shortUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube/EP047.mp4"
+            "shortUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/yt-EP047"
           },
           {
             "id": "EP048",
@@ -4202,7 +4202,7 @@ export const series: Serie[] = [
             },
             "masterRapidoUrl": null,
             "storyUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP048.mp4",
-            "shortUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube/EP048.mp4"
+            "shortUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/yt-EP048"
           },
           {
             "id": "EP049",
@@ -4281,7 +4281,7 @@ export const series: Serie[] = [
             },
             "masterRapidoUrl": null,
             "storyUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP049.mp4",
-            "shortUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube/EP049.mp4"
+            "shortUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/yt-EP049"
           },
           {
             "id": "EP050",
@@ -4360,7 +4360,7 @@ export const series: Serie[] = [
             },
             "masterRapidoUrl": null,
             "storyUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP050.mp4",
-            "shortUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube/EP050.mp4"
+            "shortUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/yt-EP050"
           },
           {
             "id": "EP051",
@@ -4439,7 +4439,7 @@ export const series: Serie[] = [
             },
             "masterRapidoUrl": null,
             "storyUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP051.mp4",
-            "shortUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube/EP051.mp4"
+            "shortUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/yt-EP051"
           },
           {
             "id": "EP052",
@@ -4518,7 +4518,7 @@ export const series: Serie[] = [
             },
             "masterRapidoUrl": null,
             "storyUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP052.mp4",
-            "shortUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube/EP052.mp4"
+            "shortUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/yt-EP052"
           },
           {
             "id": "EP053",
@@ -4597,7 +4597,7 @@ export const series: Serie[] = [
             },
             "masterRapidoUrl": null,
             "storyUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP053.mp4",
-            "shortUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube/EP053.mp4"
+            "shortUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/yt-EP053"
           },
           {
             "id": "EP054",
@@ -4676,7 +4676,7 @@ export const series: Serie[] = [
             },
             "masterRapidoUrl": null,
             "storyUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP054.mp4",
-            "shortUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube/EP054.mp4"
+            "shortUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/yt-EP054"
           },
           {
             "id": "EP055",
@@ -4755,7 +4755,7 @@ export const series: Serie[] = [
             },
             "masterRapidoUrl": null,
             "storyUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP055.mp4",
-            "shortUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube/EP055.mp4"
+            "shortUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/yt-EP055"
           },
           {
             "id": "EP056",
@@ -4834,7 +4834,7 @@ export const series: Serie[] = [
             },
             "masterRapidoUrl": null,
             "storyUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP056.mp4",
-            "shortUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube/EP056.mp4"
+            "shortUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/yt-EP056"
           },
           {
             "id": "EP057",
@@ -4906,7 +4906,7 @@ export const series: Serie[] = [
             },
             "masterRapidoUrl": null,
             "storyUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP057.mp4",
-            "shortUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube/EP057.mp4"
+            "shortUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/yt-EP057"
           },
           {
             "id": "EP058",
@@ -4979,7 +4979,7 @@ export const series: Serie[] = [
             },
             "masterRapidoUrl": null,
             "storyUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP058.mp4",
-            "shortUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube/EP058.mp4"
+            "shortUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/yt-EP058"
           },
           {
             "id": "EP059",
@@ -5058,7 +5058,7 @@ export const series: Serie[] = [
             },
             "masterRapidoUrl": null,
             "storyUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP059.mp4",
-            "shortUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube/EP059.mp4"
+            "shortUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/yt-EP059"
           },
           {
             "id": "EP060",
@@ -5137,7 +5137,7 @@ export const series: Serie[] = [
             },
             "masterRapidoUrl": null,
             "storyUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP060.mp4",
-            "shortUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube/EP060.mp4"
+            "shortUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/yt-EP060"
           }
         ],
         "acte": "Acte II — Le métier",
@@ -5233,7 +5233,7 @@ export const series: Serie[] = [
             },
             "masterRapidoUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/FoodEatUp-EP061-Exporter-l-historique-HACCP",
             "storyUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP061.mp4",
-            "shortUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube/EP061.mp4"
+            "shortUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/yt-EP061"
           },
           {
             "id": "EP062",
@@ -5313,7 +5313,7 @@ export const series: Serie[] = [
             },
             "masterRapidoUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/FoodEatUp-EP062-Borne-de-pointage-des-employes",
             "storyUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP062.mp4",
-            "shortUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube/EP062.mp4"
+            "shortUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/yt-EP062"
           },
           {
             "id": "EP063",
@@ -5392,7 +5392,7 @@ export const series: Serie[] = [
             },
             "masterRapidoUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/FoodEatUp-EP063-Horaires-d-un-employe",
             "storyUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP063.mp4",
-            "shortUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube/EP063.mp4"
+            "shortUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/yt-EP063"
           },
           {
             "id": "EP064",
@@ -5471,7 +5471,7 @@ export const series: Serie[] = [
             },
             "masterRapidoUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/FoodEatUp-EP064-Planning-et-taches-de-l-employe",
             "storyUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP064.mp4",
-            "shortUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube/EP064.mp4"
+            "shortUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/yt-EP064"
           },
           {
             "id": "EP065",
@@ -5550,7 +5550,7 @@ export const series: Serie[] = [
             },
             "masterRapidoUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/FoodEatUp-EP065-Historique-des-pointages",
             "storyUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP065.mp4",
-            "shortUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube/EP065.mp4"
+            "shortUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/yt-EP065"
           },
           {
             "id": "EP066",
@@ -5622,7 +5622,7 @@ export const series: Serie[] = [
             },
             "masterRapidoUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/FoodEatUp-EP066-Demande-d-absence-ou-de-conge",
             "storyUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP066.mp4",
-            "shortUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube/EP066.mp4"
+            "shortUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/yt-EP066"
           },
           {
             "id": "EP067",
@@ -5701,7 +5701,7 @@ export const series: Serie[] = [
             },
             "masterRapidoUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/FoodEatUp-EP067-Salaire-et-contrat",
             "storyUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP067.mp4",
-            "shortUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube/EP067.mp4"
+            "shortUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/yt-EP067"
           },
           {
             "id": "EP068",
@@ -5773,7 +5773,7 @@ export const series: Serie[] = [
             },
             "masterRapidoUrl": null,
             "storyUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP068.mp4",
-            "shortUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube/EP068.mp4"
+            "shortUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/yt-EP068"
           },
           {
             "id": "EP069",
@@ -5853,7 +5853,7 @@ export const series: Serie[] = [
             },
             "masterRapidoUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/FoodEatUp-EP069-Ajouter-du-contenu-a-son-site",
             "storyUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP069.mp4",
-            "shortUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube/EP069.mp4"
+            "shortUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/yt-EP069"
           },
           {
             "id": "EP070",
@@ -5932,7 +5932,7 @@ export const series: Serie[] = [
             },
             "masterRapidoUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/FoodEatUp-EP070-Configuration-des-employes",
             "storyUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP070.mp4",
-            "shortUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube/EP070.mp4"
+            "shortUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/yt-EP070"
           },
           {
             "id": "EP071",
@@ -6011,7 +6011,7 @@ export const series: Serie[] = [
             },
             "masterRapidoUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/FoodEatUp-EP071-Affectation-par-poste-et-par-zone",
             "storyUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP071.mp4",
-            "shortUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube/EP071.mp4"
+            "shortUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/yt-EP071"
           },
           {
             "id": "EP072",
@@ -6090,7 +6090,7 @@ export const series: Serie[] = [
             },
             "masterRapidoUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/FoodEatUp-EP072-Absence-et-service-decouvert",
             "storyUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP072.mp4",
-            "shortUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube/EP072.mp4"
+            "shortUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/yt-EP072"
           },
           {
             "id": "EP073",
@@ -6169,7 +6169,7 @@ export const series: Serie[] = [
             },
             "masterRapidoUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/FoodEatUp-EP073-Profil-entreprise",
             "storyUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP073.mp4",
-            "shortUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube/EP073.mp4"
+            "shortUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/yt-EP073"
           },
           {
             "id": "EP074",
@@ -6248,7 +6248,7 @@ export const series: Serie[] = [
             },
             "masterRapidoUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/FoodEatUp-EP074-Vos-categories",
             "storyUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP074.mp4",
-            "shortUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube/EP074.mp4"
+            "shortUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/yt-EP074"
           },
           {
             "id": "EP075",
@@ -6327,7 +6327,7 @@ export const series: Serie[] = [
             },
             "masterRapidoUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/FoodEatUp-EP075-Creation-des-TVA",
             "storyUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP075.mp4",
-            "shortUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube/EP075.mp4"
+            "shortUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/yt-EP075"
           },
           {
             "id": "EP076",
@@ -6406,7 +6406,7 @@ export const series: Serie[] = [
             },
             "masterRapidoUrl": null,
             "storyUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP076.mp4",
-            "shortUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube/EP076.mp4"
+            "shortUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/yt-EP076"
           },
           {
             "id": "EP077",
@@ -6486,7 +6486,7 @@ export const series: Serie[] = [
             },
             "masterRapidoUrl": null,
             "storyUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP077.mp4",
-            "shortUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube/EP077.mp4"
+            "shortUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/yt-EP077"
           },
           {
             "id": "EP078",
@@ -6566,7 +6566,7 @@ export const series: Serie[] = [
             },
             "masterRapidoUrl": null,
             "storyUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP078.mp4",
-            "shortUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube/EP078.mp4"
+            "shortUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/yt-EP078"
           },
           {
             "id": "EP079",
@@ -6646,7 +6646,7 @@ export const series: Serie[] = [
             },
             "masterRapidoUrl": null,
             "storyUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP079.mp4",
-            "shortUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube/EP079.mp4"
+            "shortUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/yt-EP079"
           },
           {
             "id": "EP080",
@@ -6725,7 +6725,7 @@ export const series: Serie[] = [
             },
             "masterRapidoUrl": null,
             "storyUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP080.mp4",
-            "shortUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube/EP080.mp4"
+            "shortUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/yt-EP080"
           },
           {
             "id": "EP081",
@@ -6804,7 +6804,7 @@ export const series: Serie[] = [
             },
             "masterRapidoUrl": null,
             "storyUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP081.mp4",
-            "shortUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube/EP081.mp4"
+            "shortUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/yt-EP081"
           },
           {
             "id": "EP082",
@@ -6883,7 +6883,7 @@ export const series: Serie[] = [
             },
             "masterRapidoUrl": null,
             "storyUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP082.mp4",
-            "shortUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube/EP082.mp4"
+            "shortUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/yt-EP082"
           },
           {
             "id": "EP083",
@@ -6955,7 +6955,7 @@ export const series: Serie[] = [
             },
             "masterRapidoUrl": null,
             "storyUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP083.mp4",
-            "shortUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube/EP083.mp4"
+            "shortUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/yt-EP083"
           },
           {
             "id": "EP084",
@@ -7034,7 +7034,7 @@ export const series: Serie[] = [
             },
             "masterRapidoUrl": null,
             "storyUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP084.mp4",
-            "shortUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube/EP084.mp4"
+            "shortUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/yt-EP084"
           },
           {
             "id": "EP085",
@@ -7106,7 +7106,7 @@ export const series: Serie[] = [
             },
             "masterRapidoUrl": null,
             "storyUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP085.mp4",
-            "shortUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube/EP085.mp4"
+            "shortUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/yt-EP085"
           },
           {
             "id": "EP086",
@@ -7185,7 +7185,7 @@ export const series: Serie[] = [
             },
             "masterRapidoUrl": null,
             "storyUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP086.mp4",
-            "shortUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube/EP086.mp4"
+            "shortUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/yt-EP086"
           },
           {
             "id": "EP087",
@@ -7264,7 +7264,7 @@ export const series: Serie[] = [
             },
             "masterRapidoUrl": null,
             "storyUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP087.mp4",
-            "shortUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube/EP087.mp4"
+            "shortUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/yt-EP087"
           },
           {
             "id": "EP088",
@@ -7336,7 +7336,7 @@ export const series: Serie[] = [
             },
             "masterRapidoUrl": null,
             "storyUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP088.mp4",
-            "shortUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube/EP088.mp4"
+            "shortUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/yt-EP088"
           },
           {
             "id": "EP089",
@@ -7415,7 +7415,7 @@ export const series: Serie[] = [
             },
             "masterRapidoUrl": null,
             "storyUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP089.mp4",
-            "shortUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube/EP089.mp4"
+            "shortUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/yt-EP089"
           },
           {
             "id": "EP090",
@@ -7495,7 +7495,7 @@ export const series: Serie[] = [
             },
             "masterRapidoUrl": null,
             "storyUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP090.mp4",
-            "shortUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube/EP090.mp4"
+            "shortUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/yt-EP090"
           }
         ],
         "acte": "Acte II — Le métier",
@@ -7508,7 +7508,7 @@ export const series: Serie[] = [
           "prompt": "Vertical 9:16, 10 secondes, 1080p, 24 im/s. PAS de texte incrusté, PAS de sous-titres, PAS de filigrane, PAS de logo, AUCUNE légende gravée dans l'image. Photoréaliste, image de cinéma : optique 35 mm, faible profondeur de champ, grain argentique, contraste tenu.\n\n@Image 1 ne définit que le visage du chef — barbe, toque blanche, veste blanche, tablier blanc FoodEatUp. Ne pas modifier ses traits ni sa carrure.\n\nBANDE-ANNONCE — Le Coup de Feu, saison 3 : « L'équipe qui tient ». Acte II — Le métier. Saison 9 sur 18 de la programmation.\nDécor : un vestiaire de personnel, plannings punaisés au mur\n\n0-4s: Le décor seul, personne dedans, la lumière monte lentement. Très lent travelling avant. Voix off française, un homme, grave et posée, le débit d'un conteur qui connaît déjà la fin, hors champ : {Une équipe, ça se construit avant le service.} End state at 4s: le lieu est entièrement lisible et toujours vide.\n4-7s: À 4 secondes, le chef entre dans le cadre par la gauche et traverse sans s'arrêter, de dos. Un seul mouvement, rien d'autre ne bouge. End state at 7s: il est arrivé au centre du cadre et s'arrête, toujours de dos.\n7-10s: Il se retourne et regarde l'objectif, une seconde, sans sourire. La caméra s'immobilise. Voix off française, un homme, grave et posée, le débit d'un conteur qui connaît déjà la fin, hors champ : {Pas pendant.} End state at 10s: plan figé sur son visage, caméra immobile.\n\nSound design: <ambiance réelle du lieu, dense> <un seul bruit de matière quand il entre dans le cadre>. Deux répliques, exactement aux minutages ci-dessus. Pas de musique — elle est ajoutée au montage.",
           "url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/ba-le-coup-de-feu-S3",
           "afficheUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/affiches/le-coup-de-feu-S3.jpg",
-          "shortUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube/le-coup-de-feu-S3.mp4"
+          "shortUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/yt-le-coup-de-feu-S3"
         }
       },
       {
@@ -7593,7 +7593,7 @@ export const series: Serie[] = [
             },
             "masterRapidoUrl": null,
             "storyUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP091.mp4",
-            "shortUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube/EP091.mp4"
+            "shortUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/yt-EP091"
           },
           {
             "id": "EP092",
@@ -7751,7 +7751,7 @@ export const series: Serie[] = [
             },
             "masterRapidoUrl": null,
             "storyUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP093.mp4",
-            "shortUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube/EP093.mp4"
+            "shortUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/yt-EP093"
           },
           {
             "id": "EP094",
@@ -7831,7 +7831,7 @@ export const series: Serie[] = [
             },
             "masterRapidoUrl": null,
             "storyUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP094.mp4",
-            "shortUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube/EP094.mp4"
+            "shortUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/yt-EP094"
           },
           {
             "id": "EP095",
@@ -7911,7 +7911,7 @@ export const series: Serie[] = [
             },
             "masterRapidoUrl": null,
             "storyUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP095.mp4",
-            "shortUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube/EP095.mp4"
+            "shortUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/yt-EP095"
           },
           {
             "id": "EP096",
@@ -7990,7 +7990,7 @@ export const series: Serie[] = [
             },
             "masterRapidoUrl": null,
             "storyUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP096.mp4",
-            "shortUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube/EP096.mp4"
+            "shortUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/yt-EP096"
           },
           {
             "id": "EP097",
@@ -8070,7 +8070,7 @@ export const series: Serie[] = [
             },
             "masterRapidoUrl": null,
             "storyUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP097.mp4",
-            "shortUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube/EP097.mp4"
+            "shortUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/yt-EP097"
           },
           {
             "id": "EP098",
@@ -8149,7 +8149,7 @@ export const series: Serie[] = [
             },
             "masterRapidoUrl": null,
             "storyUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP098.mp4",
-            "shortUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube/EP098.mp4"
+            "shortUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/yt-EP098"
           },
           {
             "id": "EP099",
@@ -8228,7 +8228,7 @@ export const series: Serie[] = [
             },
             "masterRapidoUrl": null,
             "storyUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP099.mp4",
-            "shortUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube/EP099.mp4"
+            "shortUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/yt-EP099"
           },
           {
             "id": "EP100",
@@ -8307,7 +8307,7 @@ export const series: Serie[] = [
             },
             "masterRapidoUrl": null,
             "storyUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP100.mp4",
-            "shortUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube/EP100.mp4"
+            "shortUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/yt-EP100"
           },
           {
             "id": "EP101",
@@ -8380,7 +8380,7 @@ export const series: Serie[] = [
             },
             "masterRapidoUrl": null,
             "storyUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP101.mp4",
-            "shortUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube/EP101.mp4"
+            "shortUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/yt-EP101"
           },
           {
             "id": "EP102",
@@ -8459,7 +8459,7 @@ export const series: Serie[] = [
             },
             "masterRapidoUrl": null,
             "storyUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP102.mp4",
-            "shortUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube/EP102.mp4"
+            "shortUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/yt-EP102"
           },
           {
             "id": "EP103",
@@ -8538,7 +8538,7 @@ export const series: Serie[] = [
             },
             "masterRapidoUrl": null,
             "storyUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP103.mp4",
-            "shortUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube/EP103.mp4"
+            "shortUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/yt-EP103"
           },
           {
             "id": "EP104",
@@ -8617,7 +8617,7 @@ export const series: Serie[] = [
             },
             "masterRapidoUrl": null,
             "storyUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP104.mp4",
-            "shortUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube/EP104.mp4"
+            "shortUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/yt-EP104"
           },
           {
             "id": "EP105",
@@ -8697,7 +8697,7 @@ export const series: Serie[] = [
             },
             "masterRapidoUrl": null,
             "storyUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP105.mp4",
-            "shortUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube/EP105.mp4"
+            "shortUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/yt-EP105"
           },
           {
             "id": "EP106",
@@ -8770,7 +8770,7 @@ export const series: Serie[] = [
             },
             "masterRapidoUrl": null,
             "storyUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP106.mp4",
-            "shortUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube/EP106.mp4"
+            "shortUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/yt-EP106"
           },
           {
             "id": "EP107",
@@ -8843,7 +8843,7 @@ export const series: Serie[] = [
             },
             "masterRapidoUrl": null,
             "storyUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP107.mp4",
-            "shortUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube/EP107.mp4"
+            "shortUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/yt-EP107"
           },
           {
             "id": "EP108",
@@ -8922,7 +8922,7 @@ export const series: Serie[] = [
             },
             "masterRapidoUrl": null,
             "storyUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP108.mp4",
-            "shortUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube/EP108.mp4"
+            "shortUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/yt-EP108"
           },
           {
             "id": "EP109",
@@ -9001,7 +9001,7 @@ export const series: Serie[] = [
             },
             "masterRapidoUrl": null,
             "storyUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP109.mp4",
-            "shortUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube/EP109.mp4"
+            "shortUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/yt-EP109"
           },
           {
             "id": "EP110",
@@ -9080,7 +9080,7 @@ export const series: Serie[] = [
             },
             "masterRapidoUrl": null,
             "storyUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP110.mp4",
-            "shortUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube/EP110.mp4"
+            "shortUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/yt-EP110"
           },
           {
             "id": "EP111",
@@ -9159,7 +9159,7 @@ export const series: Serie[] = [
             },
             "masterRapidoUrl": null,
             "storyUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP111.mp4",
-            "shortUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube/EP111.mp4"
+            "shortUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/yt-EP111"
           },
           {
             "id": "EP112",
@@ -9238,7 +9238,7 @@ export const series: Serie[] = [
             },
             "masterRapidoUrl": null,
             "storyUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP112.mp4",
-            "shortUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube/EP112.mp4"
+            "shortUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/yt-EP112"
           },
           {
             "id": "EP113",
@@ -9318,7 +9318,7 @@ export const series: Serie[] = [
             },
             "masterRapidoUrl": null,
             "storyUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP113.mp4",
-            "shortUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube/EP113.mp4"
+            "shortUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/yt-EP113"
           },
           {
             "id": "EP114",
@@ -9397,7 +9397,7 @@ export const series: Serie[] = [
             },
             "masterRapidoUrl": null,
             "storyUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP114.mp4",
-            "shortUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube/EP114.mp4"
+            "shortUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/yt-EP114"
           },
           {
             "id": "EP115",
@@ -9476,7 +9476,7 @@ export const series: Serie[] = [
             },
             "masterRapidoUrl": null,
             "storyUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP115.mp4",
-            "shortUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube/EP115.mp4"
+            "shortUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/yt-EP115"
           },
           {
             "id": "EP116",
@@ -9555,7 +9555,7 @@ export const series: Serie[] = [
             },
             "masterRapidoUrl": null,
             "storyUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP116.mp4",
-            "shortUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube/EP116.mp4"
+            "shortUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/yt-EP116"
           },
           {
             "id": "EP117",
@@ -9634,7 +9634,7 @@ export const series: Serie[] = [
             },
             "masterRapidoUrl": null,
             "storyUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP117.mp4",
-            "shortUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube/EP117.mp4"
+            "shortUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/yt-EP117"
           },
           {
             "id": "EP118",
@@ -9713,7 +9713,7 @@ export const series: Serie[] = [
             },
             "masterRapidoUrl": null,
             "storyUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP118.mp4",
-            "shortUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube/EP118.mp4"
+            "shortUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/yt-EP118"
           },
           {
             "id": "EP119",
@@ -9792,7 +9792,7 @@ export const series: Serie[] = [
             },
             "masterRapidoUrl": null,
             "storyUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP119.mp4",
-            "shortUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube/EP119.mp4"
+            "shortUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/yt-EP119"
           },
           {
             "id": "EP120",
@@ -9871,7 +9871,7 @@ export const series: Serie[] = [
             },
             "masterRapidoUrl": null,
             "storyUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP120.mp4",
-            "shortUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube/EP120.mp4"
+            "shortUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/yt-EP120"
           }
         ],
         "acte": "Acte II — Le métier",
@@ -9884,7 +9884,7 @@ export const series: Serie[] = [
           "prompt": "Vertical 9:16, 10 secondes, 1080p, 24 im/s. PAS de texte incrusté, PAS de sous-titres, PAS de filigrane, PAS de logo, AUCUNE légende gravée dans l'image. Photoréaliste, image de cinéma : optique 35 mm, faible profondeur de champ, grain argentique, contraste tenu.\n\n@Image 1 ne définit que le visage du chef — barbe, toque blanche, veste blanche, tablier blanc FoodEatUp. Ne pas modifier ses traits ni sa carrure.\n\nBANDE-ANNONCE — Le Coup de Feu, saison 4 : « Se faire connaître ». Acte II — Le métier. Saison 11 sur 18 de la programmation.\nDécor : la devanture d'un restaurant à la tombée du jour, l'enseigne qui s'allume\n\n0-4s: Le décor seul, personne dedans, la lumière monte lentement. Très lent travelling avant. Voix off française, un homme, grave et posée, le débit d'un conteur qui connaît déjà la fin, hors champ : {Remplir la salle commence dehors.} End state at 4s: le lieu est entièrement lisible et toujours vide.\n4-7s: À 4 secondes, le chef entre dans le cadre par la gauche et traverse sans s'arrêter, de dos. Un seul mouvement, rien d'autre ne bouge. End state at 7s: il est arrivé au centre du cadre et s'arrête, toujours de dos.\n7-10s: Il se retourne et regarde l'objectif, une seconde, sans sourire. La caméra s'immobilise. Voix off française, un homme, grave et posée, le débit d'un conteur qui connaît déjà la fin, hors champ : {Bien avant l'ouverture.} End state at 10s: plan figé sur son visage, caméra immobile.\n\nSound design: <ambiance réelle du lieu, dense> <un seul bruit de matière quand il entre dans le cadre>. Deux répliques, exactement aux minutages ci-dessus. Pas de musique — elle est ajoutée au montage.",
           "url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/ba-le-coup-de-feu-S4",
           "afficheUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/affiches/le-coup-de-feu-S4.jpg",
-          "shortUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube/le-coup-de-feu-S4.mp4"
+          "shortUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/yt-le-coup-de-feu-S4"
         }
       },
       {
@@ -9969,7 +9969,7 @@ export const series: Serie[] = [
             },
             "masterRapidoUrl": null,
             "storyUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP121.mp4",
-            "shortUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube/EP121.mp4"
+            "shortUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/yt-EP121"
           },
           {
             "id": "EP122",
@@ -10048,7 +10048,7 @@ export const series: Serie[] = [
             },
             "masterRapidoUrl": null,
             "storyUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP122.mp4",
-            "shortUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube/EP122.mp4"
+            "shortUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/yt-EP122"
           },
           {
             "id": "EP123",
@@ -10127,7 +10127,7 @@ export const series: Serie[] = [
             },
             "masterRapidoUrl": null,
             "storyUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP123.mp4",
-            "shortUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube/EP123.mp4"
+            "shortUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/yt-EP123"
           },
           {
             "id": "EP124",
@@ -10200,7 +10200,7 @@ export const series: Serie[] = [
             },
             "masterRapidoUrl": null,
             "storyUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP124.mp4",
-            "shortUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube/EP124.mp4"
+            "shortUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/yt-EP124"
           },
           {
             "id": "EP125",
@@ -10279,7 +10279,7 @@ export const series: Serie[] = [
             },
             "masterRapidoUrl": null,
             "storyUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP125.mp4",
-            "shortUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube/EP125.mp4"
+            "shortUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/yt-EP125"
           },
           {
             "id": "EP126",
@@ -10352,7 +10352,7 @@ export const series: Serie[] = [
             },
             "masterRapidoUrl": null,
             "storyUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP126.mp4",
-            "shortUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube/EP126.mp4"
+            "shortUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/yt-EP126"
           },
           {
             "id": "EP127",
@@ -10431,7 +10431,7 @@ export const series: Serie[] = [
             },
             "masterRapidoUrl": null,
             "storyUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP127.mp4",
-            "shortUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube/EP127.mp4"
+            "shortUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/yt-EP127"
           },
           {
             "id": "EP128",
@@ -10510,7 +10510,7 @@ export const series: Serie[] = [
             },
             "masterRapidoUrl": null,
             "storyUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP128.mp4",
-            "shortUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube/EP128.mp4"
+            "shortUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/yt-EP128"
           },
           {
             "id": "EP129",
@@ -10589,7 +10589,7 @@ export const series: Serie[] = [
             },
             "masterRapidoUrl": null,
             "storyUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP129.mp4",
-            "shortUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube/EP129.mp4"
+            "shortUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/yt-EP129"
           },
           {
             "id": "EP130",
@@ -10668,7 +10668,7 @@ export const series: Serie[] = [
             },
             "masterRapidoUrl": null,
             "storyUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP130.mp4",
-            "shortUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube/EP130.mp4"
+            "shortUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/yt-EP130"
           },
           {
             "id": "EP131",
@@ -10747,7 +10747,7 @@ export const series: Serie[] = [
             },
             "masterRapidoUrl": null,
             "storyUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP131.mp4",
-            "shortUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube/EP131.mp4"
+            "shortUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/yt-EP131"
           },
           {
             "id": "EP132",
@@ -10827,7 +10827,7 @@ export const series: Serie[] = [
             },
             "masterRapidoUrl": null,
             "storyUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP132.mp4",
-            "shortUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube/EP132.mp4"
+            "shortUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/yt-EP132"
           },
           {
             "id": "EP133",
@@ -10900,7 +10900,7 @@ export const series: Serie[] = [
             },
             "masterRapidoUrl": null,
             "storyUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP133.mp4",
-            "shortUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube/EP133.mp4"
+            "shortUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/yt-EP133"
           },
           {
             "id": "EP134",
@@ -10979,7 +10979,7 @@ export const series: Serie[] = [
             },
             "masterRapidoUrl": null,
             "storyUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP134.mp4",
-            "shortUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube/EP134.mp4"
+            "shortUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/yt-EP134"
           },
           {
             "id": "EP135",
@@ -11058,7 +11058,7 @@ export const series: Serie[] = [
             },
             "masterRapidoUrl": null,
             "storyUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP135.mp4",
-            "shortUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube/EP135.mp4"
+            "shortUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/yt-EP135"
           },
           {
             "id": "EP136",
@@ -11137,7 +11137,7 @@ export const series: Serie[] = [
             },
             "masterRapidoUrl": null,
             "storyUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP136.mp4",
-            "shortUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube/EP136.mp4"
+            "shortUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/yt-EP136"
           },
           {
             "id": "EP137",
@@ -11210,7 +11210,7 @@ export const series: Serie[] = [
             },
             "masterRapidoUrl": null,
             "storyUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP137.mp4",
-            "shortUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube/EP137.mp4"
+            "shortUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/yt-EP137"
           },
           {
             "id": "EP138",
@@ -11290,7 +11290,7 @@ export const series: Serie[] = [
             },
             "masterRapidoUrl": null,
             "storyUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP138.mp4",
-            "shortUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube/EP138.mp4"
+            "shortUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/yt-EP138"
           },
           {
             "id": "EP139",
@@ -11369,7 +11369,7 @@ export const series: Serie[] = [
             },
             "masterRapidoUrl": null,
             "storyUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP139.mp4",
-            "shortUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube/EP139.mp4"
+            "shortUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/yt-EP139"
           },
           {
             "id": "EP140",
@@ -11448,7 +11448,7 @@ export const series: Serie[] = [
             },
             "masterRapidoUrl": null,
             "storyUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP140.mp4",
-            "shortUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube/EP140.mp4"
+            "shortUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/yt-EP140"
           },
           {
             "id": "EP141",
@@ -11527,7 +11527,7 @@ export const series: Serie[] = [
             },
             "masterRapidoUrl": null,
             "storyUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP141.mp4",
-            "shortUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube/EP141.mp4"
+            "shortUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/yt-EP141"
           },
           {
             "id": "EP142",
@@ -11606,7 +11606,7 @@ export const series: Serie[] = [
             },
             "masterRapidoUrl": null,
             "storyUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP142.mp4",
-            "shortUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube/EP142.mp4"
+            "shortUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/yt-EP142"
           },
           {
             "id": "EP143",
@@ -11685,7 +11685,7 @@ export const series: Serie[] = [
             },
             "masterRapidoUrl": null,
             "storyUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP143.mp4",
-            "shortUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube/EP143.mp4"
+            "shortUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/yt-EP143"
           },
           {
             "id": "EP144",
@@ -11764,7 +11764,7 @@ export const series: Serie[] = [
             },
             "masterRapidoUrl": null,
             "storyUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP144.mp4",
-            "shortUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube/EP144.mp4"
+            "shortUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/yt-EP144"
           },
           {
             "id": "EP145",
@@ -11843,7 +11843,7 @@ export const series: Serie[] = [
             },
             "masterRapidoUrl": null,
             "storyUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP145.mp4",
-            "shortUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube/EP145.mp4"
+            "shortUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/yt-EP145"
           },
           {
             "id": "EP146",
@@ -12081,7 +12081,7 @@ export const series: Serie[] = [
             },
             "masterRapidoUrl": null,
             "storyUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP148.mp4",
-            "shortUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube/EP148.mp4"
+            "shortUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/yt-EP148"
           },
           {
             "id": "EP149",
@@ -12160,7 +12160,7 @@ export const series: Serie[] = [
             },
             "masterRapidoUrl": null,
             "storyUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP149.mp4",
-            "shortUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube/EP149.mp4"
+            "shortUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/yt-EP149"
           },
           {
             "id": "EP150",
@@ -12239,7 +12239,7 @@ export const series: Serie[] = [
             },
             "masterRapidoUrl": null,
             "storyUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP150.mp4",
-            "shortUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube/EP150.mp4"
+            "shortUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/yt-EP150"
           }
         ],
         "acte": "Acte II — Le métier",
@@ -12252,7 +12252,7 @@ export const series: Serie[] = [
           "prompt": "Vertical 9:16, 10 secondes, 1080p, 24 im/s. PAS de texte incrusté, PAS de sous-titres, PAS de filigrane, PAS de logo, AUCUNE légende gravée dans l'image. Photoréaliste, image de cinéma : optique 35 mm, faible profondeur de champ, grain argentique, contraste tenu.\n\n@Image 1 ne définit que le visage du chef — barbe, toque blanche, veste blanche, tablier blanc FoodEatUp. Ne pas modifier ses traits ni sa carrure.\n\nBANDE-ANNONCE — Le Coup de Feu, saison 5 : « Le restaurant qui anticipe ». Acte II — Le métier. Saison 12 sur 18 de la programmation.\nDécor : une salle vide au petit matin, chaises encore sur les tables\n\n0-4s: Le décor seul, personne dedans, la lumière monte lentement. Très lent travelling avant. Voix off française, un homme, grave et posée, le débit d'un conteur qui connaît déjà la fin, hors champ : {Anticiper, c'est savoir avant.} End state at 4s: le lieu est entièrement lisible et toujours vide.\n4-7s: À 4 secondes, le chef entre dans le cadre par la gauche et traverse sans s'arrêter, de dos. Un seul mouvement, rien d'autre ne bouge. End state at 7s: il est arrivé au centre du cadre et s'arrête, toujours de dos.\n7-10s: Il se retourne et regarde l'objectif, une seconde, sans sourire. La caméra s'immobilise. Voix off française, un homme, grave et posée, le débit d'un conteur qui connaît déjà la fin, hors champ : {Le reste, c'est subir.} End state at 10s: plan figé sur son visage, caméra immobile.\n\nSound design: <ambiance réelle du lieu, dense> <un seul bruit de matière quand il entre dans le cadre>. Deux répliques, exactement aux minutages ci-dessus. Pas de musique — elle est ajoutée au montage.",
           "url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/ba-le-coup-de-feu-S5",
           "afficheUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/affiches/le-coup-de-feu-S5.jpg",
-          "shortUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube/le-coup-de-feu-S5.mp4"
+          "shortUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/yt-le-coup-de-feu-S5"
         }
       },
       {
@@ -12333,7 +12333,7 @@ export const series: Serie[] = [
               }
             },
             "storyUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP151.mp4",
-            "shortUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube/EP151.mp4"
+            "shortUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/yt-EP151"
           },
           {
             "id": "EP152",
@@ -12408,7 +12408,7 @@ export const series: Serie[] = [
               }
             },
             "storyUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP152.mp4",
-            "shortUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube/EP152.mp4"
+            "shortUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/yt-EP152"
           },
           {
             "id": "EP153",
@@ -12708,7 +12708,7 @@ export const series: Serie[] = [
               }
             },
             "storyUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP156.mp4",
-            "shortUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube/EP156.mp4"
+            "shortUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/yt-EP156"
           },
           {
             "id": "EP157",
@@ -12858,7 +12858,7 @@ export const series: Serie[] = [
               }
             },
             "storyUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP158.mp4",
-            "shortUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube/EP158.mp4"
+            "shortUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/yt-EP158"
           },
           {
             "id": "EP159",
@@ -12933,7 +12933,7 @@ export const series: Serie[] = [
               }
             },
             "storyUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP159.mp4",
-            "shortUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube/EP159.mp4"
+            "shortUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/yt-EP159"
           },
           {
             "id": "EP160",
@@ -13533,7 +13533,7 @@ export const series: Serie[] = [
               }
             },
             "storyUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP167.mp4",
-            "shortUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube/EP167.mp4"
+            "shortUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/yt-EP167"
           },
           {
             "id": "EP168",
@@ -14058,7 +14058,7 @@ export const series: Serie[] = [
               }
             },
             "storyUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP174.mp4",
-            "shortUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube/EP174.mp4"
+            "shortUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/yt-EP174"
           },
           {
             "id": "EP175",
@@ -14433,7 +14433,7 @@ export const series: Serie[] = [
               }
             },
             "storyUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP179.mp4",
-            "shortUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube/EP179.mp4"
+            "shortUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/yt-EP179"
           },
           {
             "id": "EP180",
@@ -14508,7 +14508,7 @@ export const series: Serie[] = [
               }
             },
             "storyUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP180.mp4",
-            "shortUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube/EP180.mp4"
+            "shortUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/yt-EP180"
           }
         ],
         "acte": "Acte IV — L'orchestration",
@@ -14521,7 +14521,7 @@ export const series: Serie[] = [
           "prompt": "Vertical 9:16, 10 secondes, 1080p, 24 im/s. PAS de texte incrusté, PAS de sous-titres, PAS de filigrane, PAS de logo, AUCUNE légende gravée dans l'image. Photoréaliste, image de cinéma : optique 35 mm, faible profondeur de champ, grain argentique, contraste tenu.\n\n@Image 1 ne définit que le visage du chef — barbe, toque blanche, veste blanche, tablier blanc FoodEatUp. Ne pas modifier ses traits ni sa carrure.\n\nBANDE-ANNONCE — Le Coup de Feu, saison 6 : « L'orchestration du restaurant ». Acte IV — L'orchestration. Saison 16 sur 18 de la programmation.\nDécor : un pass de cuisine, un plat dressé en très gros plan, vapeur et reflets\n\n0-4s: Le décor seul, personne dedans, la lumière monte lentement. Très lent travelling avant. Voix off française, un homme, grave et posée, le débit d'un conteur qui connaît déjà la fin, hors champ : {Un restaurant n'a pas d'agence.} End state at 4s: le lieu est entièrement lisible et toujours vide.\n4-7s: À 4 secondes, le chef entre dans le cadre par la gauche et traverse sans s'arrêter, de dos. Un seul mouvement, rien d'autre ne bouge. End state at 7s: il est arrivé au centre du cadre et s'arrête, toujours de dos.\n7-10s: Il se retourne et regarde l'objectif, une seconde, sans sourire. La caméra s'immobilise. Voix off française, un homme, grave et posée, le débit d'un conteur qui connaît déjà la fin, hors champ : {Il a un service à assurer.} End state at 10s: plan figé sur son visage, caméra immobile.\n\nSound design: <ambiance réelle du lieu, dense> <un seul bruit de matière quand il entre dans le cadre>. Deux répliques, exactement aux minutages ci-dessus. Pas de musique — elle est ajoutée au montage.",
           "url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/ba-le-coup-de-feu-S6",
           "afficheUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/affiches/le-coup-de-feu-S6.jpg",
-          "shortUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube/le-coup-de-feu-S6.mp4"
+          "shortUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/yt-le-coup-de-feu-S6"
         },
         "pitchActe": "Le restaurant qui se gère tout seul. Les trois dernières saisons se suivent : c'est le crescendo, il ne s'alterne pas."
       },
@@ -14604,7 +14604,7 @@ export const series: Serie[] = [
               }
             },
             "storyUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP181.mp4",
-            "shortUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube/EP181.mp4"
+            "shortUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/yt-EP181"
           },
           {
             "id": "EP182",
@@ -16821,7 +16821,7 @@ export const series: Serie[] = [
           "prompt": "Vertical 9:16, 10 secondes, 1080p, 24 im/s. PAS de texte incrusté, PAS de sous-titres, PAS de filigrane, PAS de logo, AUCUNE légende gravée dans l'image. Photoréaliste, image de cinéma : optique 35 mm, faible profondeur de champ, grain argentique, contraste tenu.\n\n@Image 1 ne définit que le visage du chef — barbe, toque blanche, veste blanche, tablier blanc FoodEatUp. Ne pas modifier ses traits ni sa carrure.\n\nBANDE-ANNONCE — Le Coup de Feu, saison 7 : « Les Végé-Fruités font leur cinéma ». Acte IV — L'orchestration. Saison 17 sur 18 de la programmation.\nDécor : une salle de restaurant éclairée comme un plateau de tournage\n\n0-4s: Le décor seul, personne dedans, la lumière monte lentement. Très lent travelling avant. Voix off française, un homme, grave et posée, le débit d'un conteur qui connaît déjà la fin, hors champ : {Trente accrocs ordinaires.} End state at 4s: le lieu est entièrement lisible et toujours vide.\n4-7s: À 4 secondes, le chef entre dans le cadre par la gauche et traverse sans s'arrêter, de dos. Un seul mouvement, rien d'autre ne bouge. End state at 7s: il est arrivé au centre du cadre et s'arrête, toujours de dos.\n7-10s: Il se retourne et regarde l'objectif, une seconde, sans sourire. La caméra s'immobilise. Voix off française, un homme, grave et posée, le débit d'un conteur qui connaît déjà la fin, hors champ : {Rejoués comme au cinéma.} End state at 10s: plan figé sur son visage, caméra immobile.\n\nSound design: <ambiance réelle du lieu, dense> <un seul bruit de matière quand il entre dans le cadre>. Deux répliques, exactement aux minutages ci-dessus. Pas de musique — elle est ajoutée au montage.",
           "url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/ba-le-coup-de-feu-S7",
           "afficheUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/affiches/le-coup-de-feu-S7.jpg",
-          "shortUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube/le-coup-de-feu-S7.mp4"
+          "shortUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/yt-le-coup-de-feu-S7"
         }
       },
       {
@@ -16904,7 +16904,7 @@ export const series: Serie[] = [
               }
             },
             "storyUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP211.mp4",
-            "shortUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube/EP211.mp4"
+            "shortUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/yt-EP211"
           },
           {
             "id": "EP212",
@@ -17058,7 +17058,7 @@ export const series: Serie[] = [
               }
             },
             "storyUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP213.mp4",
-            "shortUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube/EP213.mp4"
+            "shortUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/yt-EP213"
           },
           {
             "id": "EP214",
@@ -19150,7 +19150,7 @@ export const series: Serie[] = [
           "prompt": "Vertical 9:16, 10 secondes, 1080p, 24 im/s. PAS de texte incrusté, PAS de sous-titres, PAS de filigrane, PAS de logo, AUCUNE légende gravée dans l'image. Photoréaliste, image de cinéma : optique 35 mm, faible profondeur de champ, grain argentique, contraste tenu.\n\n@Image 1 ne définit que le visage du chef — barbe, toque blanche, veste blanche, tablier blanc FoodEatUp. Ne pas modifier ses traits ni sa carrure.\n\nBANDE-ANNONCE — Le Coup de Feu, saison 8 : « Dis-le, c'est fait ». Acte IV — L'orchestration. Saison 18 sur 18 de la programmation.\nDécor : une cuisine à sept heures du matin, une seule source de lumière allumée\n\n0-4s: Le décor seul, personne dedans, la lumière monte lentement. Très lent travelling avant. Voix off française, un homme, grave et posée, le débit d'un conteur qui connaît déjà la fin, hors champ : {Une journée entière, du réveil au coucher.} End state at 4s: le lieu est entièrement lisible et toujours vide.\n4-7s: À 4 secondes, le chef entre dans le cadre par la gauche et traverse sans s'arrêter, de dos. Un seul mouvement, rien d'autre ne bouge. End state at 7s: il est arrivé au centre du cadre et s'arrête, toujours de dos.\n7-10s: Il se retourne et regarde l'objectif, une seconde, sans sourire. La caméra s'immobilise. Voix off française, un homme, grave et posée, le débit d'un conteur qui connaît déjà la fin, hors champ : {Et une phrase à chaque fois.} End state at 10s: plan figé sur son visage, caméra immobile.\n\nSound design: <ambiance réelle du lieu, dense> <un seul bruit de matière quand il entre dans le cadre>. Deux répliques, exactement aux minutages ci-dessus. Pas de musique — elle est ajoutée au montage.",
           "url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/ba-le-coup-de-feu-S8",
           "afficheUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/affiches/le-coup-de-feu-S8.jpg",
-          "shortUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube/le-coup-de-feu-S8.mp4"
+          "shortUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/yt-le-coup-de-feu-S8"
         }
       }
     ]
@@ -19237,7 +19237,7 @@ export const series: Serie[] = [
               }
             },
             "storyUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/story-EP301",
-            "shortUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube/EP301.mp4"
+            "shortUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/yt-EP301"
           },
           {
             "id": "EP302",
@@ -20244,7 +20244,7 @@ export const series: Serie[] = [
           "prompt": "Vertical 9:16, 10 secondes, 1080p, 24 im/s. PAS de texte incrusté, PAS de sous-titres, PAS de filigrane, PAS de logo, AUCUNE légende gravée dans l'image. Photoréaliste, image de cinéma : optique 35 mm, faible profondeur de champ, grain argentique, contraste tenu.\n\n@Image 1 ne définit que le visage du chef — barbe, toque blanche, veste blanche, tablier blanc FoodEatUp. Ne pas modifier ses traits ni sa carrure.\n\nBANDE-ANNONCE — Une journée, saison 1 : « En cuisine ». Acte II — Le métier. Saison 7 sur 18 de la programmation.\nDécor : une cuisine professionnelle vue depuis le poste de travail, à hauteur d'homme\n\n0-4s: Le décor seul, personne dedans, la lumière monte lentement. Très lent travelling avant. Voix off française, un homme, grave et posée, le débit d'un conteur qui connaît déjà la fin, hors champ : {Cinq postes, une seule cuisine.} End state at 4s: le lieu est entièrement lisible et toujours vide.\n4-7s: À 4 secondes, le chef entre dans le cadre par la gauche et traverse sans s'arrêter, de dos. Un seul mouvement, rien d'autre ne bouge. End state at 7s: il est arrivé au centre du cadre et s'arrête, toujours de dos.\n7-10s: Il se retourne et regarde l'objectif, une seconde, sans sourire. La caméra s'immobilise. Voix off française, un homme, grave et posée, le débit d'un conteur qui connaît déjà la fin, hors champ : {Le même vendredi, cinq fois.} End state at 10s: plan figé sur son visage, caméra immobile.\n\nSound design: <ambiance réelle du lieu, dense> <un seul bruit de matière quand il entre dans le cadre>. Deux répliques, exactement aux minutages ci-dessus. Pas de musique — elle est ajoutée au montage.",
           "url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/ba-une-journee-S1",
           "afficheUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/affiches/une-journee-S1.jpg",
-          "shortUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube/une-journee-S1.mp4"
+          "shortUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/yt-une-journee-S1"
         }
       },
       {
@@ -21399,7 +21399,7 @@ export const series: Serie[] = [
           "prompt": "Vertical 9:16, 10 secondes, 1080p, 24 im/s. PAS de texte incrusté, PAS de sous-titres, PAS de filigrane, PAS de logo, AUCUNE légende gravée dans l'image. Photoréaliste, image de cinéma : optique 35 mm, faible profondeur de champ, grain argentique, contraste tenu.\n\n@Image 1 ne définit que le visage du chef — barbe, toque blanche, veste blanche, tablier blanc FoodEatUp. Ne pas modifier ses traits ni sa carrure.\n\nBANDE-ANNONCE — Une journée, saison 2 : « En salle, au bureau, avec le client ». Acte II — Le métier. Saison 10 sur 18 de la programmation.\nDécor : une salle de restaurant et, au fond, la porte d'un bureau entrouverte\n\n0-4s: Le décor seul, personne dedans, la lumière monte lentement. Très lent travelling avant. Voix off française, un homme, grave et posée, le débit d'un conteur qui connaît déjà la fin, hors champ : {La salle, le bureau, et celui qui paie.} End state at 4s: le lieu est entièrement lisible et toujours vide.\n4-7s: À 4 secondes, le chef entre dans le cadre par la gauche et traverse sans s'arrêter, de dos. Un seul mouvement, rien d'autre ne bouge. End state at 7s: il est arrivé au centre du cadre et s'arrête, toujours de dos.\n7-10s: Il se retourne et regarde l'objectif, une seconde, sans sourire. La caméra s'immobilise. Voix off française, un homme, grave et posée, le débit d'un conteur qui connaît déjà la fin, hors champ : {Le même vendredi, encore.} End state at 10s: plan figé sur son visage, caméra immobile.\n\nSound design: <ambiance réelle du lieu, dense> <un seul bruit de matière quand il entre dans le cadre>. Deux répliques, exactement aux minutages ci-dessus. Pas de musique — elle est ajoutée au montage.",
           "url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/ba-une-journee-S2",
           "afficheUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/affiches/une-journee-S2.jpg",
-          "shortUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube/une-journee-S2.mp4"
+          "shortUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/yt-une-journee-S2"
         }
       }
     ]
@@ -21486,7 +21486,7 @@ export const series: Serie[] = [
               }
             },
             "storyUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/story-EP401",
-            "shortUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube/EP401.mp4"
+            "shortUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/yt-EP401"
           },
           {
             "id": "EP402",
@@ -21925,7 +21925,7 @@ export const series: Serie[] = [
           "prompt": "Vertical 9:16, 10 secondes, 1080p, 24 im/s. PAS de texte incrusté, PAS de sous-titres, PAS de filigrane, PAS de logo, AUCUNE légende gravée dans l'image. Photoréaliste, image de cinéma : optique 35 mm, faible profondeur de champ, grain argentique, contraste tenu.\n\n@Image 1 ne définit que le visage du chef — barbe, toque blanche, veste blanche, tablier blanc FoodEatUp. Ne pas modifier ses traits ni sa carrure.\n\nBANDE-ANNONCE — L'IA dans FoodEatUp, saison 1 : « Ce qu'il faut avoir compris ». Acte III — Le système. Saison 13 sur 18 de la programmation.\nDécor : un objet réel du restaurant au premier plan, net ; le reste flou derrière\n\n0-4s: Le décor seul, personne dedans, la lumière monte lentement. Très lent travelling avant. Voix off française, un homme, grave et posée, le débit d'un conteur qui connaît déjà la fin, hors champ : {Avant de brancher quoi que ce soit.} End state at 4s: le lieu est entièrement lisible et toujours vide.\n4-7s: À 4 secondes, le chef entre dans le cadre par la gauche et traverse sans s'arrêter, de dos. Un seul mouvement, rien d'autre ne bouge. End state at 7s: il est arrivé au centre du cadre et s'arrête, toujours de dos.\n7-10s: Il se retourne et regarde l'objectif, une seconde, sans sourire. La caméra s'immobilise. Voix off française, un homme, grave et posée, le débit d'un conteur qui connaît déjà la fin, hors champ : {Sept épisodes pour comprendre.} End state at 10s: plan figé sur son visage, caméra immobile.\n\nSound design: <ambiance réelle du lieu, dense> <un seul bruit de matière quand il entre dans le cadre>. Deux répliques, exactement aux minutages ci-dessus. Pas de musique — elle est ajoutée au montage.",
           "url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/ba-lia-dans-foodeatup-S1",
           "afficheUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/affiches/lia-dans-foodeatup-S1.jpg",
-          "shortUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube/lia-dans-foodeatup-S1.mp4"
+          "shortUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/yt-lia-dans-foodeatup-S1"
         },
         "pitchActe": "Comment ça marche. Ce que les deux actes précédents ont montré, on l'explique — et jamais à vide."
       },
@@ -22655,7 +22655,7 @@ export const series: Serie[] = [
           "prompt": "Vertical 9:16, 10 secondes, 1080p, 24 im/s. PAS de texte incrusté, PAS de sous-titres, PAS de filigrane, PAS de logo, AUCUNE légende gravée dans l'image. Photoréaliste, image de cinéma : optique 35 mm, faible profondeur de champ, grain argentique, contraste tenu.\n\n@Image 1 ne définit que le visage du chef — barbe, toque blanche, veste blanche, tablier blanc FoodEatUp. Ne pas modifier ses traits ni sa carrure.\n\nBANDE-ANNONCE — L'IA dans FoodEatUp, saison 2 : « Les huit boucles, une par une ». Acte III — Le système. Saison 14 sur 18 de la programmation.\nDécor : un plan de travail vu de haut, huit objets du restaurant posés en cercle\n\n0-4s: Le décor seul, personne dedans, la lumière monte lentement. Très lent travelling avant. Voix off française, un homme, grave et posée, le débit d'un conteur qui connaît déjà la fin, hors champ : {Huit boucles, et elles se tiennent.} End state at 4s: le lieu est entièrement lisible et toujours vide.\n4-7s: À 4 secondes, le chef entre dans le cadre par la gauche et traverse sans s'arrêter, de dos. Un seul mouvement, rien d'autre ne bouge. End state at 7s: il est arrivé au centre du cadre et s'arrête, toujours de dos.\n7-10s: Il se retourne et regarde l'objectif, une seconde, sans sourire. La caméra s'immobilise. Voix off française, un homme, grave et posée, le débit d'un conteur qui connaît déjà la fin, hors champ : {Casse-en une, casse-les toutes.} End state at 10s: plan figé sur son visage, caméra immobile.\n\nSound design: <ambiance réelle du lieu, dense> <un seul bruit de matière quand il entre dans le cadre>. Deux répliques, exactement aux minutages ci-dessus. Pas de musique — elle est ajoutée au montage.",
           "url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/ba-lia-dans-foodeatup-S2",
           "afficheUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/affiches/lia-dans-foodeatup-S2.jpg",
-          "shortUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube/lia-dans-foodeatup-S2.mp4"
+          "shortUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/yt-lia-dans-foodeatup-S2"
         }
       },
       {
@@ -22732,7 +22732,7 @@ export const series: Serie[] = [
               }
             },
             "storyUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/story-EP418",
-            "shortUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube/EP418.mp4"
+            "shortUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/yt-EP418"
           },
           {
             "id": "EP419",
@@ -23668,7 +23668,7 @@ export const series: Serie[] = [
           "prompt": "Vertical 9:16, 10 secondes, 1080p, 24 im/s. PAS de texte incrusté, PAS de sous-titres, PAS de filigrane, PAS de logo, AUCUNE légende gravée dans l'image. Photoréaliste, image de cinéma : optique 35 mm, faible profondeur de champ, grain argentique, contraste tenu.\n\n@Image 1 ne définit que le visage du chef — barbe, toque blanche, veste blanche, tablier blanc FoodEatUp. Ne pas modifier ses traits ni sa carrure.\n\nBANDE-ANNONCE — L'IA dans FoodEatUp, saison 3 : « Brancher, et faire tourner ». Acte III — Le système. Saison 15 sur 18 de la programmation.\nDécor : un comptoir avec un écran éteint qui reflète la salle, bleu dans le décor\n\n0-4s: Le décor seul, personne dedans, la lumière monte lentement. Très lent travelling avant. Voix off française, un homme, grave et posée, le débit d'un conteur qui connaît déjà la fin, hors champ : {Là, on branche pour de vrai.} End state at 4s: le lieu est entièrement lisible et toujours vide.\n4-7s: À 4 secondes, le chef entre dans le cadre par la gauche et traverse sans s'arrêter, de dos. Un seul mouvement, rien d'autre ne bouge. End state at 7s: il est arrivé au centre du cadre et s'arrête, toujours de dos.\n7-10s: Il se retourne et regarde l'objectif, une seconde, sans sourire. La caméra s'immobilise. Voix off française, un homme, grave et posée, le débit d'un conteur qui connaît déjà la fin, hors champ : {Et le restaurant tourne seul.} End state at 10s: plan figé sur son visage, caméra immobile.\n\nSound design: <ambiance réelle du lieu, dense> <un seul bruit de matière quand il entre dans le cadre>. Deux répliques, exactement aux minutages ci-dessus. Pas de musique — elle est ajoutée au montage.",
           "url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/ba-lia-dans-foodeatup-S3",
           "afficheUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/affiches/lia-dans-foodeatup-S3.jpg",
-          "shortUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube/lia-dans-foodeatup-S3.mp4"
+          "shortUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/yt-lia-dans-foodeatup-S3"
         }
       }
     ]
@@ -23770,7 +23770,7 @@ export const series: Serie[] = [
               }
             },
             "storyUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP501.mp4",
-            "shortUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube/EP501.mp4"
+            "shortUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/yt-EP501"
           },
           {
             "id": "EP502",
@@ -23845,7 +23845,7 @@ export const series: Serie[] = [
               }
             },
             "storyUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP502.mp4",
-            "shortUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube/EP502.mp4"
+            "shortUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/yt-EP502"
           },
           {
             "id": "EP503",
@@ -23920,7 +23920,7 @@ export const series: Serie[] = [
               }
             },
             "storyUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/story-EP503",
-            "shortUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube/EP503.mp4"
+            "shortUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/yt-EP503"
           },
           {
             "id": "EP504",
@@ -23995,7 +23995,7 @@ export const series: Serie[] = [
               }
             },
             "storyUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/story-EP504",
-            "shortUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube/EP504.mp4"
+            "shortUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/yt-EP504"
           },
           {
             "id": "EP505",
@@ -24070,7 +24070,7 @@ export const series: Serie[] = [
               }
             },
             "storyUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/story-EP505",
-            "shortUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube/EP505.mp4"
+            "shortUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/yt-EP505"
           },
           {
             "id": "EP506",
@@ -24145,7 +24145,7 @@ export const series: Serie[] = [
               }
             },
             "storyUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/story-EP506",
-            "shortUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube/EP506.mp4"
+            "shortUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/yt-EP506"
           }
         ],
         "acte": "Acte I — Le film",
@@ -24158,7 +24158,7 @@ export const series: Serie[] = [
           "prompt": "Vertical 9:16, 10 secondes, 1080p, 24 im/s. PAS de texte incrusté, PAS de sous-titres, PAS de filigrane, PAS de logo, AUCUNE légende gravée dans l'image. Photoréaliste, image de cinéma : optique 35 mm, faible profondeur de champ, grain argentique, contraste tenu.\n\n@Image 1 ne définit que le visage du chef — barbe, toque blanche, veste blanche, tablier blanc FoodEatUp. Ne pas modifier ses traits ni sa carrure.\n\nBANDE-ANNONCE — UpEatFood, saison 1 : « En cuisine ». Acte I — Le film. Saison 1 sur 18 de la programmation.\nDécor : une cuisine professionnelle en inox, éteinte, à l'aube\n\n0-4s: Le décor seul, personne dedans, la lumière monte lentement. Très lent travelling avant. Voix off française, un homme, grave et posée, le débit d'un conteur qui connaît déjà la fin, hors champ : {Il était une fois un restaurant.} End state at 4s: le lieu est entièrement lisible et toujours vide.\n4-7s: À 4 secondes, le chef entre dans le cadre par la gauche et traverse sans s'arrêter, de dos. Un seul mouvement, rien d'autre ne bouge. End state at 7s: il est arrivé au centre du cadre et s'arrête, toujours de dos.\n7-10s: Il se retourne et regarde l'objectif, une seconde, sans sourire. La caméra s'immobilise. Voix off française, un homme, grave et posée, le débit d'un conteur qui connaît déjà la fin, hors champ : {Et un homme qui ouvrait seul.} End state at 10s: plan figé sur son visage, caméra immobile.\n\nSound design: <ambiance réelle du lieu, dense> <un seul bruit de matière quand il entre dans le cadre>. Deux répliques, exactement aux minutages ci-dessus. Pas de musique — elle est ajoutée au montage.",
           "url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/ba-il-etait-une-fois-un-restaurant-S1",
           "afficheUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/affiches/il-etait-une-fois-un-restaurant-S1.jpg",
-          "shortUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube/il-etait-une-fois-un-restaurant-S1.mp4"
+          "shortUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/yt-il-etait-une-fois-un-restaurant-S1"
         },
         "pitchActe": "Trois cent cinquante secondes qui posent le problème et la promesse. Tout ce qui suit en découle."
       },
@@ -24240,7 +24240,7 @@ export const series: Serie[] = [
               }
             },
             "storyUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/story-EP507",
-            "shortUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube/EP507.mp4"
+            "shortUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/yt-EP507"
           },
           {
             "id": "EP508",
@@ -24315,7 +24315,7 @@ export const series: Serie[] = [
               }
             },
             "storyUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/story-EP508",
-            "shortUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube/EP508.mp4"
+            "shortUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/yt-EP508"
           },
           {
             "id": "EP509",
@@ -24390,7 +24390,7 @@ export const series: Serie[] = [
               }
             },
             "storyUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/story-EP509",
-            "shortUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube/EP509.mp4"
+            "shortUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/yt-EP509"
           },
           {
             "id": "EP510",
@@ -24465,7 +24465,7 @@ export const series: Serie[] = [
               }
             },
             "storyUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/story-EP510",
-            "shortUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube/EP510.mp4"
+            "shortUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/yt-EP510"
           },
           {
             "id": "EP511",
@@ -24540,7 +24540,7 @@ export const series: Serie[] = [
               }
             },
             "storyUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/story-EP511",
-            "shortUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube/EP511.mp4"
+            "shortUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/yt-EP511"
           },
           {
             "id": "EP512",
@@ -24615,7 +24615,7 @@ export const series: Serie[] = [
               }
             },
             "storyUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/story-EP512",
-            "shortUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube/EP512.mp4"
+            "shortUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/yt-EP512"
           }
         ],
         "acte": "Acte I — Le film",
@@ -24628,7 +24628,7 @@ export const series: Serie[] = [
           "prompt": "Vertical 9:16, 10 secondes, 1080p, 24 im/s. PAS de texte incrusté, PAS de sous-titres, PAS de filigrane, PAS de logo, AUCUNE légende gravée dans l'image. Photoréaliste, image de cinéma : optique 35 mm, faible profondeur de champ, grain argentique, contraste tenu.\n\n@Image 1 ne définit que le visage du chef — barbe, toque blanche, veste blanche, tablier blanc FoodEatUp. Ne pas modifier ses traits ni sa carrure.\n\nBANDE-ANNONCE — UpEatFood, saison 2 : « En salle ». Acte I — Le film. Saison 2 sur 18 de la programmation.\nDécor : une salle de restaurant dressée, lumière basse, avant le service\n\n0-4s: Le décor seul, personne dedans, la lumière monte lentement. Très lent travelling avant. Voix off française, un homme, grave et posée, le débit d'un conteur qui connaît déjà la fin, hors champ : {La salle connaît tout le monde.} End state at 4s: le lieu est entièrement lisible et toujours vide.\n4-7s: À 4 secondes, le chef entre dans le cadre par la gauche et traverse sans s'arrêter, de dos. Un seul mouvement, rien d'autre ne bouge. End state at 7s: il est arrivé au centre du cadre et s'arrête, toujours de dos.\n7-10s: Il se retourne et regarde l'objectif, une seconde, sans sourire. La caméra s'immobilise. Voix off française, un homme, grave et posée, le débit d'un conteur qui connaît déjà la fin, hors champ : {Sauf qu'elle rentre chez elle à minuit.} End state at 10s: plan figé sur son visage, caméra immobile.\n\nSound design: <ambiance réelle du lieu, dense> <un seul bruit de matière quand il entre dans le cadre>. Deux répliques, exactement aux minutages ci-dessus. Pas de musique — elle est ajoutée au montage.",
           "url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/ba-il-etait-une-fois-un-restaurant-S2",
           "afficheUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/affiches/il-etait-une-fois-un-restaurant-S2.jpg",
-          "shortUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube/il-etait-une-fois-un-restaurant-S2.mp4"
+          "shortUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/yt-il-etait-une-fois-un-restaurant-S2"
         }
       },
       {
@@ -24709,7 +24709,7 @@ export const series: Serie[] = [
               }
             },
             "storyUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/story-EP513",
-            "shortUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube/EP513.mp4"
+            "shortUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/yt-EP513"
           },
           {
             "id": "EP514",
@@ -24784,7 +24784,7 @@ export const series: Serie[] = [
               }
             },
             "storyUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/story-EP514",
-            "shortUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube/EP514.mp4"
+            "shortUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/yt-EP514"
           },
           {
             "id": "EP515",
@@ -24859,7 +24859,7 @@ export const series: Serie[] = [
               }
             },
             "storyUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/story-EP515",
-            "shortUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube/EP515.mp4"
+            "shortUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/yt-EP515"
           },
           {
             "id": "EP516",
@@ -24934,7 +24934,7 @@ export const series: Serie[] = [
               }
             },
             "storyUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/story-EP516",
-            "shortUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube/EP516.mp4"
+            "shortUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/yt-EP516"
           },
           {
             "id": "EP517",
@@ -25009,7 +25009,7 @@ export const series: Serie[] = [
               }
             },
             "storyUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/story-EP517",
-            "shortUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube/EP517.mp4"
+            "shortUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/yt-EP517"
           },
           {
             "id": "EP518",
@@ -25084,7 +25084,7 @@ export const series: Serie[] = [
               }
             },
             "storyUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/story-EP518",
-            "shortUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube/EP518.mp4"
+            "shortUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/yt-EP518"
           }
         ],
         "acte": "Acte I — Le film",
@@ -25097,7 +25097,7 @@ export const series: Serie[] = [
           "prompt": "Vertical 9:16, 10 secondes, 1080p, 24 im/s. PAS de texte incrusté, PAS de sous-titres, PAS de filigrane, PAS de logo, AUCUNE légende gravée dans l'image. Photoréaliste, image de cinéma : optique 35 mm, faible profondeur de champ, grain argentique, contraste tenu.\n\n@Image 1 ne définit que le visage du chef — barbe, toque blanche, veste blanche, tablier blanc FoodEatUp. Ne pas modifier ses traits ni sa carrure.\n\nBANDE-ANNONCE — UpEatFood, saison 3 : « Au bureau ». Acte I — Le film. Saison 3 sur 18 de la programmation.\nDécor : un petit bureau à l'étage, classeurs et tickets de caisse, une lampe\n\n0-4s: Le décor seul, personne dedans, la lumière monte lentement. Très lent travelling avant. Voix off française, un homme, grave et posée, le débit d'un conteur qui connaît déjà la fin, hors champ : {Au-dessus de la salle, quelqu'un compte.} End state at 4s: le lieu est entièrement lisible et toujours vide.\n4-7s: À 4 secondes, le chef entre dans le cadre par la gauche et traverse sans s'arrêter, de dos. Un seul mouvement, rien d'autre ne bouge. End state at 7s: il est arrivé au centre du cadre et s'arrête, toujours de dos.\n7-10s: Il se retourne et regarde l'objectif, une seconde, sans sourire. La caméra s'immobilise. Voix off française, un homme, grave et posée, le débit d'un conteur qui connaît déjà la fin, hors champ : {Et découvre tout un mois trop tard.} End state at 10s: plan figé sur son visage, caméra immobile.\n\nSound design: <ambiance réelle du lieu, dense> <un seul bruit de matière quand il entre dans le cadre>. Deux répliques, exactement aux minutages ci-dessus. Pas de musique — elle est ajoutée au montage.",
           "url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/ba-il-etait-une-fois-un-restaurant-S3",
           "afficheUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/affiches/il-etait-une-fois-un-restaurant-S3.jpg",
-          "shortUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube/il-etait-une-fois-un-restaurant-S3.mp4"
+          "shortUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/yt-il-etait-une-fois-un-restaurant-S3"
         }
       },
       {
@@ -25178,7 +25178,7 @@ export const series: Serie[] = [
               }
             },
             "storyUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/story-EP519",
-            "shortUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube/EP519.mp4"
+            "shortUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/yt-EP519"
           },
           {
             "id": "EP520",
@@ -25253,7 +25253,7 @@ export const series: Serie[] = [
               }
             },
             "storyUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/story-EP520",
-            "shortUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube/EP520.mp4"
+            "shortUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/yt-EP520"
           },
           {
             "id": "EP521",
@@ -25328,7 +25328,7 @@ export const series: Serie[] = [
               }
             },
             "storyUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/story-EP521",
-            "shortUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube/EP521.mp4"
+            "shortUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/yt-EP521"
           },
           {
             "id": "EP522",
@@ -25403,7 +25403,7 @@ export const series: Serie[] = [
               }
             },
             "storyUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/story-EP522",
-            "shortUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube/EP522.mp4"
+            "shortUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/yt-EP522"
           },
           {
             "id": "EP523",
@@ -25566,7 +25566,7 @@ export const series: Serie[] = [
           "prompt": "Vertical 9:16, 10 secondes, 1080p, 24 im/s. PAS de texte incrusté, PAS de sous-titres, PAS de filigrane, PAS de logo, AUCUNE légende gravée dans l'image. Photoréaliste, image de cinéma : optique 35 mm, faible profondeur de champ, grain argentique, contraste tenu.\n\n@Image 1 ne définit que le visage du chef — barbe, toque blanche, veste blanche, tablier blanc FoodEatUp. Ne pas modifier ses traits ni sa carrure.\n\nBANDE-ANNONCE — UpEatFood, saison 4 : « À la maison ». Acte I — Le film. Saison 4 sur 18 de la programmation.\nDécor : un salon le soir, une seule lampe, un téléphone posé sur la table\n\n0-4s: Le décor seul, personne dedans, la lumière monte lentement. Très lent travelling avant. Voix off française, un homme, grave et posée, le débit d'un conteur qui connaît déjà la fin, hors champ : {Il ne verra jamais votre logiciel.} End state at 4s: le lieu est entièrement lisible et toujours vide.\n4-7s: À 4 secondes, le chef entre dans le cadre par la gauche et traverse sans s'arrêter, de dos. Un seul mouvement, rien d'autre ne bouge. End state at 7s: il est arrivé au centre du cadre et s'arrête, toujours de dos.\n7-10s: Il se retourne et regarde l'objectif, une seconde, sans sourire. La caméra s'immobilise. Voix off française, un homme, grave et posée, le débit d'un conteur qui connaît déjà la fin, hors champ : {Il verra tout ce qu'il a oublié de faire.} End state at 10s: plan figé sur son visage, caméra immobile.\n\nSound design: <ambiance réelle du lieu, dense> <un seul bruit de matière quand il entre dans le cadre>. Deux répliques, exactement aux minutages ci-dessus. Pas de musique — elle est ajoutée au montage.",
           "url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/ba-il-etait-une-fois-un-restaurant-S4",
           "afficheUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/affiches/il-etait-une-fois-un-restaurant-S4.jpg",
-          "shortUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube/il-etait-une-fois-un-restaurant-S4.mp4"
+          "shortUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/yt-il-etait-une-fois-un-restaurant-S4"
         }
       },
       {
@@ -25647,7 +25647,7 @@ export const series: Serie[] = [
               }
             },
             "storyUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/story-EP525",
-            "shortUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube/EP525.mp4"
+            "shortUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/yt-EP525"
           },
           {
             "id": "EP526",
@@ -25722,7 +25722,7 @@ export const series: Serie[] = [
               }
             },
             "storyUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/story-EP526",
-            "shortUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube/EP526.mp4"
+            "shortUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/yt-EP526"
           },
           {
             "id": "EP527",
@@ -25797,7 +25797,7 @@ export const series: Serie[] = [
               }
             },
             "storyUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/story-EP527",
-            "shortUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube/EP527.mp4"
+            "shortUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/yt-EP527"
           },
           {
             "id": "EP528",
@@ -25947,7 +25947,7 @@ export const series: Serie[] = [
               }
             },
             "storyUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/story-EP529",
-            "shortUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube/EP529.mp4"
+            "shortUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/yt-EP529"
           },
           {
             "id": "EP530",
@@ -26022,7 +26022,7 @@ export const series: Serie[] = [
               }
             },
             "storyUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/story-EP530",
-            "shortUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube/EP530.mp4"
+            "shortUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/yt-EP530"
           },
           {
             "id": "EP531",
@@ -26097,7 +26097,7 @@ export const series: Serie[] = [
               }
             },
             "storyUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/story-EP531",
-            "shortUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube/EP531.mp4"
+            "shortUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/yt-EP531"
           },
           {
             "id": "EP532",
@@ -26172,7 +26172,7 @@ export const series: Serie[] = [
               }
             },
             "storyUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/story-EP532",
-            "shortUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube/EP532.mp4"
+            "shortUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/yt-EP532"
           },
           {
             "id": "EP533",
@@ -26410,7 +26410,7 @@ export const series: Serie[] = [
           "prompt": "Vertical 9:16, 10 secondes, 1080p, 24 im/s. PAS de texte incrusté, PAS de sous-titres, PAS de filigrane, PAS de logo, AUCUNE légende gravée dans l'image. Photoréaliste, image de cinéma : optique 35 mm, faible profondeur de champ, grain argentique, contraste tenu.\n\n@Image 1 ne définit que le visage du chef — barbe, toque blanche, veste blanche, tablier blanc FoodEatUp. Ne pas modifier ses traits ni sa carrure.\n\nBANDE-ANNONCE — UpEatFood, saison 5 : « Vendredi, 20 h 15 ». Acte I — Le film. Saison 5 sur 18 de la programmation.\nDécor : le hall d'un restaurant en plein service, vu depuis la porte d'entrée\n\n0-4s: Le décor seul, personne dedans, la lumière monte lentement. Très lent travelling avant. Voix off française, un homme, grave et posée, le débit d'un conteur qui connaît déjà la fin, hors champ : {Quatre histoires, un seul vendredi.} End state at 4s: le lieu est entièrement lisible et toujours vide.\n4-7s: À 4 secondes, le chef entre dans le cadre par la gauche et traverse sans s'arrêter, de dos. Un seul mouvement, rien d'autre ne bouge. End state at 7s: il est arrivé au centre du cadre et s'arrête, toujours de dos.\n7-10s: Il se retourne et regarde l'objectif, une seconde, sans sourire. La caméra s'immobilise. Voix off française, un homme, grave et posée, le débit d'un conteur qui connaît déjà la fin, hors champ : {Et un seul homme, depuis le début.} End state at 10s: plan figé sur son visage, caméra immobile.\n\nSound design: <ambiance réelle du lieu, dense> <un seul bruit de matière quand il entre dans le cadre>. Deux répliques, exactement aux minutages ci-dessus. Pas de musique — elle est ajoutée au montage.",
           "url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/ba-il-etait-une-fois-un-restaurant-S5",
           "afficheUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/affiches/il-etait-une-fois-un-restaurant-S5.jpg",
-          "shortUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube/il-etait-une-fois-un-restaurant-S5.mp4"
+          "shortUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/yt-il-etait-une-fois-un-restaurant-S5"
         }
       }
     ]
