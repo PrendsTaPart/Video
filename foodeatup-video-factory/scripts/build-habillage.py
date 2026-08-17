@@ -58,6 +58,10 @@ CATALOGUE = R / "content" / "upeatfood.json"
 VIGNETTES = R / "assets" / "vignettes"
 PLAQUE = R / "assets" / "generique" / "upeatfood-plaque.mp4"
 BGM = R / "templates" / "bgm.mp3"
+HUIT = R / "assets" / "marque" / "foodeatup-huit.png"
+PLAQUE_MARQUE = R / "assets" / "marque" / "foodeatup-plaque.png"
+MOT_CREME = R / "assets" / "marque" / "foodeatup-mot-creme.png"
+CONTEUR = R / "assets" / "voix" / "conteur-film.mp3"
 
 L, H = 1080, 1920
 FPS = 30
@@ -123,6 +127,32 @@ def poser(im, dessiner, opacite):
         return im
     calque = Image.new("RGBA", im.size, (0, 0, 0, 0))
     dessiner(ImageDraw.Draw(calque, "RGBA"))
+    if opacite < 0.998:
+        calque.putalpha(calque.getchannel("A").point(lambda a: int(a * opacite)))
+    return Image.alpha_composite(im, calque)
+
+
+def _cache_image(chemin, _c={}):
+    if chemin not in _c:
+        _c[chemin] = Image.open(chemin).convert("RGBA")
+    return _c[chemin]
+
+
+def poser_image(im, chemin, cx, cy, larg, opacite, monte=0.0):
+    """Pose un fichier de marque, centré sur (cx, cy), à la largeur voulue.
+
+    Le huit et le mot étaient jusqu'ici REDESSINÉS — deux ellipses orange et
+    du Poppins. Ça ressemblait au logo sans en être un : la vraie marque a un
+    chef dans le second O, une graisse et des raccords de courbe qu'aucune
+    approximation ne rend. On pose donc les fichiers.
+    """
+    if opacite <= 0.002:
+        return im
+    src = _cache_image(chemin)
+    h = max(1, int(src.height * larg / src.width))
+    src = src.resize((max(1, int(larg)), h), Image.LANCZOS)
+    calque = Image.new("RGBA", im.size, (0, 0, 0, 0))
+    calque.paste(src, (int(cx - larg / 2), int(cy - h / 2 + monte)), src)
     if opacite < 0.998:
         calque.putalpha(calque.getchannel("A").point(lambda a: int(a * opacite)))
     return Image.alpha_composite(im, calque)
@@ -198,35 +228,27 @@ def filet(im, y, demi, opacite, couleur=BLEU, ep=6):
 
 
 def lockup(im, cx, cy, larg, opacite):
-    """« FOOD∞EATUP » : les deux O du mot sont l'anneau double, en orange.
+    """Le mot FOODEATUP, sur sa plaque crème.
 
-    On le redessine plutôt que de mettre à l'échelle le PNG de 267 px de
-    large : à la taille où il devient lisible sur un téléphone, le fichier
-    d'origine est déjà flou.
+    La plaque n'est pas un cadre décoratif : le fichier de marque a la toque
+    du chef remplie de blanc. Détouré, ce blanc devient un trou par lequel on
+    voit le fond sombre de la carte, et le logo n'est plus le logo. Sur crème,
+    il est exact.
     """
-    taille = int(larg * 0.155)
-    f = police(800, taille)
+    return poser_image(im, PLAQUE_MARQUE, cx, cy, larg,
+                       opacite, monte=(1 - opacite) * 18)
 
-    def dessiner(d):
-        gauche, droite = "F", "DEATUP"
-        lg, ld = largeur(d, gauche, f), largeur(d, droite, f)
-        r = taille * 0.30
-        ep = max(3, int(taille * 0.085))
-        chev = r * 0.52
-        lanneaux = 4 * r - chev
-        x = cx - (lg + lanneaux + ld) / 2
-        b = d.textbbox((0, 0), gauche, font=f)
-        y = cy - (b[3] + b[1]) / 2
-        d.text((x - b[0], y - b[1]), gauche, font=f, fill=(255, 255, 255, 255))
-        x += lg
-        for k in range(2):
-            cxa = x + r + k * (2 * r - chev)
-            d.ellipse([cxa - r, cy - r, cxa + r, cy + r],
-                      outline=ORANGE + (255,), width=ep)
-        x += lanneaux
-        d.text((x - b[0], y - b[1]), droite, font=f, fill=(255, 255, 255, 255))
 
-    return poser(im, dessiner, opacite)
+def mot_sur_creme(im, cx, cy, larg, opacite):
+    """Le même mot, pour un fond crème : sans plaque visible.
+
+    Le générique est crème. Y poser la plaque du film — un crème voisin mais
+    pas identique — laissait une arête rectangulaire en plein milieu de la
+    carte, qui se lit comme une image mal détourée. Ce fichier-ci est calé sur
+    la teinte exacte du générique, donc il n'a plus de bord.
+    """
+    return poser_image(im, MOT_CREME, cx, cy, larg,
+                       opacite, monte=(1 - opacite) * 16)
 
 
 # ─── la carte de fin ────────────────────────────────────────────────────────
@@ -261,16 +283,14 @@ def generique(titre, serie, saison, t):
                        GRIS, p, dy=(1 - p) * 20)
     y += 92
 
+    # La marque, en clair sur le crème.
+    #
+    # Elle était enfermée dans une pilule bleue de 470 px, où le mot tombait à
+    # une trentaine de pixels de haut — illisible sur un téléphone. Le fond du
+    # générique est crème et le logo est bleu : ils se suffisent. On retire
+    # donc la pilule et on donne au mot la largeur qu'il mérite.
     p = phase(t, 0.62, 1.00)
-    if p > 0:
-        larg, haut = 470, 124
-        ech = 0.94 + 0.06 * p
-        lp, hp = larg * ech, haut * ech
-        dy = (1 - p) * 26
-        im = poser(im, lambda d: d.rounded_rectangle(
-            [L / 2 - lp / 2, y + dy, L / 2 + lp / 2, y + hp + dy],
-            radius=int(hp * 0.30), fill=BLEU + (255,)), p)
-        im = lockup(im, L / 2, y + hp / 2 + dy, lp, p)
+    im = mot_sur_creme(im, L / 2, y + 62 + (1 - p) * 26, 560 * (0.96 + 0.04 * p), p)
     y += 198
 
     p = phase(t, 0.80, 1.14)
@@ -335,30 +355,14 @@ def fond_vignette(vignette, zoom):
 
 
 def huit(im, cx, cy, r, avance, pulse, opacite):
-    """Le huit de FoodEatUp, tracé en deux anneaux.
+    """Le huit de la marque, le vrai fichier.
 
-    `avance` va de 0 à 1 et fait courir le trait ; les deux anneaux se
-    dessinent en sens inverse et se rejoignent au centre, ce qui donne au
-    signe son mouvement de boucle plutôt qu'un cercle qui se referme.
+    Il ne se « trace » plus : un PNG ne se dessine pas au compas. Il arrive en
+    échelle et en opacité, et garde les huit pulsations — c'est la signature
+    de la marque, elle est dans le sting de fin des masters depuis le début.
     """
-    ep = max(4, int(r * 0.20))
-    chev = r * 0.52
-    r = r * (1 + 0.030 * pulse)
-
-    def dessiner(d):
-        for k, sens in ((0, -1), (1, 1)):
-            cxa = cx + (k * 2 - 1) * (r - chev / 2)
-            boite = [cxa - r, cy - r, cxa + r, cy + r]
-            etendue = 360 * min(1.0, avance)
-            if etendue <= 0:
-                continue
-            depart = 180 if k == 0 else 0
-            # PIL trace toujours dans le sens horaire : pour faire courir le
-            # trait à l'envers, on décale l'angle de départ.
-            d1 = depart if sens > 0 else depart - etendue
-            d.arc(boite, d1, d1 + etendue, fill=ORANGE + (255,), width=ep)
-
-    return poser(im, dessiner, opacite)
+    larg = 2 * r * (1 + 0.035 * pulse) * (0.86 + 0.14 * avance)
+    return poser_image(im, HUIT, cx, cy, larg, opacite * min(1.0, avance * 2.4))
 
 
 def ouverture(ep, t, duree=OUVERTURE):
@@ -737,7 +741,8 @@ def monter(ep, clip, son, dest, avec_generique):
             f"[fe][pt]xfade=transition=fade:duration={FONDU}:offset={b2:.3f}"
         )
         # Le son de la story démarre à l'image du plan, pas à celle du film.
-        pistes = "[5:a][4:a]concat=n=2:v=0:a=1[vx];"
+        pistes = ("[5:a]aformat=sample_fmts=fltp:sample_rates=48000:channel_layouts=stereo[s0];[4:a]aformat=sample_fmts=fltp:sample_rates=48000:channel_layouts=stereo[s1];"
+                  "[s0][s1]concat=n=2:v=0:a=1[vx];")
         fin_son = b2 + min(d_son, d_clip)
         total = fin_son
 
@@ -752,7 +757,8 @@ def monter(ep, clip, son, dest, avec_generique):
             graphe += (f"[fp];[6:v]fps={FPS},format=yuv420p[g];"
                        f"[fp][g]xfade=transition=fade:duration={FONDU}:"
                        f"offset={fin_plan - FONDU:.3f},format=yuv420p[v]")
-            pistes = "[5:a][4:a][7:a]concat=n=3:v=0:a=1[vx];"
+            pistes = ("[5:a]aformat=sample_fmts=fltp:sample_rates=48000:channel_layouts=stereo[s0];[4:a]aformat=sample_fmts=fltp:sample_rates=48000:channel_layouts=stereo[s1];[7:a]aformat=sample_fmts=fltp:sample_rates=48000:channel_layouts=stereo[s2];"
+                      "[s0][s1][s2]concat=n=3:v=0:a=1[vx];")
             total = fin_plan + GENERIQUE - FONDU
         else:
             graphe += ",format=yuv420p[v]"
@@ -778,23 +784,44 @@ def monter(ep, clip, son, dest, avec_generique):
         # parle.
         # `bgm.mp3` dure 46 s, la pièce la plus longue 19 : pas de bouclage.
         entrees += ["-i", str(BGM),
-                    "-ss", "0", "-t", f"{FILM:.3f}", "-i", str(PLAQUE)]
+                    "-ss", "0", "-t", f"{FILM:.3f}", "-i", str(PLAQUE),
+                    "-i", str(CONTEUR)]
         i_bgm = 8 if avec_generique else 6
-        i_amb = i_bgm + 1
+        i_amb, i_voix = i_bgm + 1, i_bgm + 2
         bascule_lit = b2 - 0.30
+
+        # TOUTES les entrées passent par le même `aformat`.
+        #
+        # C'est l'origine du grésillement, et elle est bête : les sources
+        # n'ont pas la même fréquence d'échantillonnage. La plaque et les
+        # clips Higgsfield sont à 32 000 Hz, `bgm.mp3` à 44 100, la piste de
+        # la story à 48 000, et le silence des cartes était fabriqué à
+        # 48 000. `concat` EXIGE des entrées identiques et ne le dit pas ; il
+        # rend un flux dont l'horloge dérive, ce qu'on entend comme une
+        # friture. `amix` rééchantillonne, mais après le mal.
+        #
+        # Un seul format de travail, imposé à chaque source avant qu'elle
+        # entre dans le graphe : 48 kHz, stéréo, flottant.
+        FMT = "aformat=sample_fmts=fltp:sample_rates=48000:channel_layouts=stereo"
         lit = (
-            f"[{i_bgm}:a]atrim=duration={total:.3f},asetpts=N/SR/TB,"
+            f"[{i_bgm}:a]{FMT},atrim=duration={total:.3f},asetpts=N/SR/TB,"
             # 0,30 sous les cartes, 0,085 sous la voix : le passage de l'un à
             # l'autre prend 0,8 s, sinon on entend la musique « tomber ».
             f"volume='if(lt(t,{bascule_lit:.3f}),0.30,"
             f"if(lt(t,{bascule_lit + 0.8:.3f}),"
             f"0.30-0.215*(t-{bascule_lit:.3f})/0.8,0.085))':eval=frame,"
             f"afade=t=in:st=0:d=0.9[lit];"
-            f"[{i_amb}:a]atrim=duration={FILM:.3f},asetpts=N/SR/TB,volume=2.6,"
-            f"afade=t=out:st={FILM - 0.6:.3f}:d=0.6,"
+            f"[{i_amb}:a]{FMT},atrim=duration={FILM:.3f},asetpts=N/SR/TB,"
+            f"volume=2.6,afade=t=out:st={FILM - 0.6:.3f}:d=0.6,"
             f"apad=whole_dur={total:.3f}[amb];"
+            # Le conteur ouvre le film. Il entre à 0,35 s — le temps que la
+            # bande s'allume — et il est remonté à hauteur de dialogue : le
+            # fichier fourni est à −26 dBFS de moyenne, soit douze décibels
+            # sous la voix des plans.
+            f"[{i_voix}:a]{FMT},volume=3.4,"
+            f"adelay=350|350,apad=whole_dur={total:.3f}[voix];"
         )
-        melange = (f"[vx][lit][amb]amix=inputs=3:normalize=0:"
+        melange = (f"[vx][lit][amb][voix]amix=inputs=4:normalize=0:"
                    f"duration=first[mx];")
 
         subprocess.run(
@@ -802,7 +829,7 @@ def monter(ep, clip, son, dest, avec_generique):
              "-filter_complex",
              f"{graphe};{pistes}{lit}{melange}"
              f"[mx]afade=t=out:st={total - 0.5:.3f}:d=0.5,"
-             f"alimiter=limit=0.891:level=disabled[s]",
+             f"alimiter=limit=0.891:attack=5:release=60:level=disabled[s]",
              "-map", "[v]", "-map", "[s]",
              # Le profil est imposé, il ne se négocie pas : « High 4:4:4
              # Predictive » n'est lu ni par les navigateurs, ni par les
@@ -884,7 +911,15 @@ def un_episode(ep, piece, sortie):
     clip = rapatrier(ep["clip"], f"{ep['id']}-clip.mp4")
     son = rapatrier(ep["plan"], f"{ep['id']}-son.mp4")
     sortie.parent.mkdir(parents=True, exist_ok=True)
-    monter(ep, clip, son, sortie, piece == "short")
+    # Les deux pièces portent le générique de fin.
+    #
+    # Il en était exclu pour tenir sous les quinze secondes d'une story
+    # Instagram. Mais une vidéo qui s'arrête sur la dernière image du plan
+    # n'a pas de fin, elle a une coupure : ni marque, ni signature, ni « à
+    # suivre ». Sur une série de trente-cinq épisodes, c'est la fin qui fait
+    # revenir. La pièce fait donc 18,90 s ; Instagram la publiera en Reel,
+    # pas en story de quinze secondes.
+    monter(ep, clip, son, sortie, True)
     return sortie
 
 
