@@ -43,9 +43,24 @@ def main():
     stories = {p.stem for p in (R / "dist" / "stories").glob("*.mp4")}
     shorts = {p.stem for p in (R / "dist" / "youtube").glob("*.mp4")}
 
-    clips, sts, yts, deja = 0, 0, 0, 0
+    clips, sts, yts, bas, deja = 0, 0, 0, 0, 0
     for s in d["series"]:
         for sa in s["saisons"]:
+            # La bande-annonce a elle aussi sa version YouTube : même montage,
+            # plus le carton de fin. Elle est rangée sous la clé de fichier
+            # `<serie>-S<n>`, qui sert aussi de clé de reprise — les reprises
+            # sont indexées par nom de fichier, pas par identifiant d'épisode.
+            ba = sa.get("bandeAnnonce")
+            if ba:
+                cle = f"{s['slug']}-S{sa['numero']}"
+                pose = ba.get("shortUrl")
+                url = reprises.get(cle, {}).get("shortUrl") or pose or (
+                    f"{BRUT}/youtube/{cle}.mp4" if cle in shorts else None
+                )
+                if url and url != pose:
+                    ba["shortUrl"] = url
+                    bas += 1
+
             for e in sa["episodes"]:
                 i = e["id"]
                 repris = reprises.get(i, {})
@@ -111,8 +126,8 @@ def main():
     total_clips = sum(1 for e in eps if e["higgsfield"].get("videoSourceUrl"))
     total_st = sum(1 for e in eps if (e.get("story") or {}).get("url"))
     total_yt = sum(1 for e in eps if (e.get("shortYoutube") or {}).get("url"))
-    print(f"{clips} clip(s), {sts} story(ies) et {yts} Short(s) reliés — "
-          f"{deja} clips l'étaient déjà")
+    print(f"{clips} clip(s), {sts} story(ies), {yts} Short(s) et "
+          f"{bas} bande(s)-annonce(s) reliés — {deja} clips l'étaient déjà")
     print(f"inventaire : {total_clips} clips, {total_st} stories, {total_yt} Shorts "
           f"sur {len(eps)} épisodes")
 

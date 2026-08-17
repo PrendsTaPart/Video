@@ -41,6 +41,7 @@ SERIES = R.parent / "foodeatup-social" / "data" / "series.json"
 POLICE = R / "templates" / "Poppins-800.ttf"
 LOGO = R / "templates" / "logo_foodeatup.png"
 STORIES = R / "dist" / "stories"
+BANDES = R / "dist" / "bandes-annonces"
 SORTIE = R / "dist" / "youtube"
 
 L, H = 1080, 1920
@@ -70,9 +71,22 @@ def episodes():
             for s in d["series"] for sa in s["saisons"] for e in sa["episodes"]}
 
 
-def monte(ep, fiche, story, dest):
-    """La story, puis le carton de fin."""
-    e = fiche["episode"]
+def bandes_annonces():
+    """Les bandes-annonces de saison, indexées par leur clé de fichier.
+
+    Elles n'ont pas de story — elles sont déjà un montage complet — mais elles
+    ont le même besoin qu'un épisode sur YouTube : dire de quoi il s'agit et où
+    trouver la suite. Le carton porte alors le titre de la saison plutôt que
+    celui d'un épisode.
+    """
+    d = json.loads(SERIES.read_text(encoding="utf-8"))
+    return {f"{s['slug']}-S{sa['numero']}":
+            {"titre": sa["titre"], "serie": s["nom"], "saison": sa["numero"]}
+            for s in d["series"] for sa in s["saisons"] if sa.get("bandeAnnonce")}
+
+
+def monte(titre_carton, fiche, source, dest):
+    """La vidéo source, puis le carton de fin."""
     fics = []
 
     def fichier(txt):
@@ -87,13 +101,13 @@ def monte(ep, fiche, story, dest):
         return f.name
 
     police = str(POLICE).replace(":", r"\:")
-    d_story = duree(story)
+    d_story = duree(source)
     total = d_story + CARTON
 
     # Les titres vont de dix à soixante-deux caractères. À corps fixe, le plus
     # long déborderait du cadre ; on descend d'un cran au-delà de deux lignes
     # plutôt que de rogner le titre, qui est ce que le carton vient dire.
-    lignes = coupe(e["titre"], 22).count("\n") + 1
+    lignes = coupe(titre_carton, 22).count("\n") + 1
     corps = 76 if lignes <= 2 else 62
     inter = corps + 16
 
@@ -107,7 +121,7 @@ def monte(ep, fiche, story, dest):
     y_logo = y_serie + 48 + 90
     y_chaine = y_logo + 100 + 110
 
-    titre = fichier(coupe(e["titre"], 22 if lignes <= 2 else 26))
+    titre = fichier(coupe(titre_carton, 22 if lignes <= 2 else 26))
     serie = fichier(f"{fiche['serie']} · saison {fiche['saison']}")
     chaine = fichier("@FoodEatUp")
 
@@ -137,7 +151,7 @@ def monte(ep, fiche, story, dest):
     ]
 
     cmd = ["ffmpeg", "-v", "error", "-y",
-           "-i", str(story),
+           "-i", str(source),
            "-f", "lavfi", "-t", str(CARTON), "-i", f"color=c={SABLE}:s={L}x{H}:r=30",
            "-i", str(LOGO),
            "-filter_complex", ";".join(g),
@@ -165,37 +179,55 @@ def controle(dest):
     return ok, f"{dur:.2f}s {v['width']}x{v['height']} {'son' if a else 'MUET'}"
 
 
-def main(cibles):
-    fiches = episodes()
-    SORTIE.mkdir(parents=True, exist_ok=True)
+def travaux(cibles):
+    """Ce qu'il y a à monter : (clé, titre du carton, fiche, source).
+
+    Deux familles cohabitent sous le même toit. Un épisode part de sa story,
+    et le carton porte le titre de l'épisode. Une bande-annonce part du
+    montage de saison, et le carton porte le titre de la saison — il n'y a pas
+    d'épisode à nommer, et nommer la saison est justement ce qui manque quand
+    la bande-annonce se termine.
+    """
+    eps, bas = episodes(), bandes_annonces()
     if not cibles:
         cibles = sorted(p.stem for p in STORIES.glob("*.mp4"))
+        cibles += sorted(bas)
 
+    for cle in cibles:
+        if cle in eps:
+            yield cle, eps[cle]["episode"]["titre"], eps[cle], STORIES / f"{cle}.mp4"
+        elif cle in bas:
+            yield cle, bas[cle]["titre"], bas[cle], BANDES / f"{cle}.mp4"
+        else:
+            yield cle, None, None, None
+
+
+def main(cibles):
+    SORTIE.mkdir(parents=True, exist_ok=True)
     faits = sautes = rates = 0
-    for ep in cibles:
-        story = STORIES / f"{ep}.mp4"
-        dest = SORTIE / f"{ep}.mp4"
-        if ep not in fiches:
-            print(f"  {ep}  inconnu de l'inventaire")
+    for cle, titre, fiche, source in travaux(cibles):
+        dest = SORTIE / f"{cle}.mp4"
+        if fiche is None:
+            print(f"  {cle}  inconnu de l'inventaire")
             rates += 1
             continue
-        if not story.exists():
-            print(f"  {ep}  pas de story — rien à porter sur YouTube")
+        if not source.exists():
+            print(f"  {cle}  pas de montage source — rien à porter sur YouTube")
             rates += 1
             continue
         if dest.exists() and dest.stat().st_size > 0:
-            print(f"  {ep}  déjà monté")
+            print(f"  {cle}  déjà monté")
             sautes += 1
             continue
         try:
-            monte(ep, fiches[ep], story, dest)
+            monte(titre, fiche, source, dest)
         except subprocess.CalledProcessError as err:
-            print(f"  {ep}  ÉCHEC ffmpeg — {(err.stderr or '')[-200:]}")
+            print(f"  {cle}  ÉCHEC ffmpeg — {(err.stderr or '')[-200:]}")
             dest.unlink(missing_ok=True)
             rates += 1
             continue
         ok, detail = controle(dest)
-        print(f"  {ep}  {'monté ' if ok else 'DOUTEUX'} {detail}")
+        print(f"  {cle:38s} {'monté ' if ok else 'DOUTEUX'} {detail}")
         faits += 1
 
     print(f"\nmontés : {faits} | déjà là : {sautes} | en échec : {rates}")
