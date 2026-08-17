@@ -730,7 +730,9 @@ def monter(ep, clip, son, dest, avec_generique):
             f"[2:v]fps={FPS},scale={L}:{H}:flags=lanczos,"
             f"trim=duration={d_clip:.3f},setpts=PTS-STARTPTS[p];"
             f"[3:v]format=rgba[st];"
-            f"[p][st]overlay=0:{BANDE_Y}:format=auto[pt];"
+            # `format=auto` laissait l'incrustation en RGBA, et le `xfade`
+            # qui suivait négociait alors du 4:4:4 sur toute la chaîne.
+            f"[p][st]overlay=0:{BANDE_Y}:format=auto,format=yuv420p[pt];"
             f"[f][e]xfade=transition=fade:duration={FONDU}:offset={b1:.3f}[fe];"
             f"[fe][pt]xfade=transition=fade:duration={FONDU}:offset={b2:.3f}"
         )
@@ -749,11 +751,11 @@ def monter(ep, clip, son, dest, avec_generique):
                         "-i", "anullsrc=r=48000:cl=stereo"]
             graphe += (f"[fp];[6:v]fps={FPS},format=yuv420p[g];"
                        f"[fp][g]xfade=transition=fade:duration={FONDU}:"
-                       f"offset={fin_plan - FONDU:.3f}[v]")
+                       f"offset={fin_plan - FONDU:.3f},format=yuv420p[v]")
             pistes = "[5:a][4:a][7:a]concat=n=3:v=0:a=1[vx];"
             total = fin_plan + GENERIQUE - FONDU
         else:
-            graphe += "[v]"
+            graphe += ",format=yuv420p[v]"
 
         # ── le lit sonore ────────────────────────────────────────────────
         #
@@ -802,7 +804,13 @@ def monter(ep, clip, son, dest, avec_generique):
              f"[mx]afade=t=out:st={total - 0.5:.3f}:d=0.5,"
              f"alimiter=limit=0.891:level=disabled[s]",
              "-map", "[v]", "-map", "[s]",
+             # Le profil est imposé, il ne se négocie pas : « High 4:4:4
+             # Predictive » n'est lu ni par les navigateurs, ni par les
+             # téléphones, ni par les réseaux. libx264 le choisit dès que
+             # sa source arrive en 4:4:4, et le fichier a l'air correct
+             # partout sauf à la lecture.
              "-c:v", "libx264", "-preset", "medium", "-crf", "19",
+             "-pix_fmt", "yuv420p", "-profile:v", "high", "-level", "4.0",
              "-c:a", "aac", "-b:a", "160k", "-movflags", "+faststart",
              str(dest)],
             check=True,
