@@ -25,6 +25,7 @@ Le script ne remplace jamais une adresse déjà posée.
 import json
 import os
 import pathlib
+import subprocess
 
 R = pathlib.Path(__file__).resolve().parent.parent
 SOCIAL = R.parent / "foodeatup-social"
@@ -33,6 +34,17 @@ REPRISES = SOCIAL / "data" / "clips-du-site.json"
 
 BRANCHE = "claude/foodeatup-video-factory-wtb7gs"
 BRUT = f"https://raw.githubusercontent.com/PrendsTaPart/Video/{BRANCHE}/foodeatup-video-factory/dist"
+
+
+def duree_lisible(f):
+    """« 5 min 55 » — la durée telle qu'on l'affiche à côté du lecteur."""
+    out = subprocess.run(
+        ["ffprobe", "-v", "error", "-show_entries", "format=duration",
+         "-of", "csv=p=0", str(f)], capture_output=True, text=True).stdout.strip()
+    if not out:
+        return None
+    s = int(float(out))
+    return f"{s // 60} min {s % 60:02d}"
 
 
 def main():
@@ -48,7 +60,25 @@ def main():
     tiktoks = {p.stem for p in (R / "dist" / "tiktok-story").glob("*.mp4")}
 
     clips, sts, yts, pys, fbs, tks, bas, deja = 0, 0, 0, 0, 0, 0, 0, 0
+    films = 0
     for s in d["series"]:
+        # Le film assemblé, au niveau de la série. `GeneriqueFilm` ne portait
+        # que les mentions de l'affiche : de quoi annoncer un film, pas de quoi
+        # le montrer. C'est ce fichier que l'accueil prend en hero.
+        f = s.get("film")
+        if f:
+            film = R / "dist" / "film" / f"{s['slug']}.mp4"
+            if not film.exists():
+                film = R / "dist" / "film" / "upeatfood.mp4"
+            pose = f.get("url")
+            url = reprises.get(f"film-{s['slug']}", {}).get("url") or pose or (
+                f"{BRUT}/film/{film.name}" if film.exists() else None
+            )
+            if url and url != pose:
+                f["url"] = url
+                f["duree"] = duree_lisible(film) if film.exists() else None
+                films += 1
+
         for sa in s["saisons"]:
             # La bande-annonce a elle aussi sa version YouTube : même montage,
             # plus le carton de fin. Elle est rangée sous la clé de fichier

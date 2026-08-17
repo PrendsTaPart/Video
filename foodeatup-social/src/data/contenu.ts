@@ -82,6 +82,31 @@ export type FormatsSociaux = {
       dans un fil. La story s'y arrête sur rien ; le carton pose le titre, la
       série et la chaîne. Même image, deux secondes et demie de plus. */
   shortYoutube?: { format: string; url: string | null } | null;
+  /** Vidéo YouTube paysage : le même montage, recadré en 16:9.
+
+      Le Short vit dans l'onglet Shorts. La page de la chaîne, la recherche, la
+      suggestion et la lecture sur téléviseur sont en paysage, et une vidéo
+      verticale y arrive entre deux bandes noires qui prennent les deux tiers
+      de l'écran. Le plan reste vertical — le recadrer couperait le sujet — et
+      les côtés sont comblés par une copie floutée du plan, exactement comme
+      les vignettes 16:9 déjà produites.
+
+      Pas de vignette dans la donnée : `vignetteEpisode(id, "youtube")` sert
+      déjà le 16:9 de l'épisode. */
+  videoYoutube?: { format: string; url: string | null } | null;
+  /** Story Facebook : la story, plus un carton qui porte l'adresse.
+
+      Même image et même format que le Short. Ce qui change est la fin : une
+      vidéo native Facebook se repartage sans sa légende, et le lecteur ne
+      propose aucun lien. Si l'adresse du site n'est pas dans l'image, elle
+      n'est nulle part. */
+  storyFacebook?: { format: string; url: string | null } | null;
+  /** Vidéo TikTok : la story, plus un carton au nom du compte.
+
+      Sur TikTok le nom d'utilisateur est cliquable depuis le lecteur,
+      comme la chaîne sur YouTube. Le carton n'a donc pas à porter
+      l'adresse du site, contrairement à Facebook. */
+  videoTiktok?: { format: string; url: string | null } | null;
   /** Carrousel LinkedIn : quatre planches, converties en PDF sur le site. */
   carrousel?: { format: string; planches: PlancheCarrousel[] } | null;
   /** Visuel Facebook : une image qui se comprend seule. */
@@ -268,6 +293,12 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "format": "9:16 · 1080 × 1920 · 12,5 s",
       "url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/yt-EP001"
     },
+    "videoYoutube": {
+      "format": "16:9 · 1920 × 1080 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube-paysage/EP001.mp4"
+    },
+    "storyFacebook": null,
+    "videoTiktok": null,
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
       "planches": [
@@ -452,6 +483,12 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "format": "9:16 · 1080 × 1920 · 12,5 s",
       "url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/yt-EP002"
     },
+    "videoYoutube": {
+      "format": "16:9 · 1920 × 1080 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube-paysage/EP002.mp4"
+    },
+    "storyFacebook": null,
+    "videoTiktok": null,
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
       "planches": [
@@ -637,6 +674,12 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "format": "9:16 · 1080 × 1920 · 12,5 s",
       "url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/yt-EP003"
     },
+    "videoYoutube": {
+      "format": "16:9 · 1920 × 1080 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube-paysage/EP003.mp4"
+    },
+    "storyFacebook": null,
+    "videoTiktok": null,
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
       "planches": [
@@ -810,6 +853,12 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "format": "9:16 · 1080 × 1920 · 12,5 s",
       "url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/yt-EP004"
     },
+    "videoYoutube": {
+      "format": "16:9 · 1920 × 1080 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube-paysage/EP004.mp4"
+    },
+    "storyFacebook": null,
+    "videoTiktok": null,
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
       "planches": [
@@ -976,6 +1025,12 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "format": "9:16 · 1080 × 1920 · 12,5 s",
       "url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/yt-EP005"
     },
+    "videoYoutube": {
+      "format": "16:9 · 1920 × 1080 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube-paysage/EP005.mp4"
+    },
+    "storyFacebook": null,
+    "videoTiktok": null,
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
       "planches": [
@@ -1151,6 +1206,12 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "format": "9:16 · 1080 × 1920 · 12,5 s",
       "url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/yt-EP006"
     },
+    "videoYoutube": {
+      "format": "16:9 · 1920 × 1080 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube-paysage/EP006.mp4"
+    },
+    "storyFacebook": null,
+    "videoTiktok": null,
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
       "planches": [
@@ -1331,6 +1392,12 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "format": "9:16 · 1080 × 1920 · 12,5 s",
       "url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/yt-EP007"
     },
+    "videoYoutube": {
+      "format": "16:9 · 1920 × 1080 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube-paysage/EP007.mp4"
+    },
+    "storyFacebook": null,
+    "videoTiktok": null,
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
       "planches": [
@@ -1508,6 +1575,12 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "format": "9:16 · 1080 × 1920 · 12,5 s",
       "url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/yt-EP008"
     },
+    "videoYoutube": {
+      "format": "16:9 · 1920 × 1080 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube-paysage/EP008.mp4"
+    },
+    "storyFacebook": null,
+    "videoTiktok": null,
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
       "planches": [
@@ -1693,6 +1766,12 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "format": "9:16 · 1080 × 1920 · 12,5 s",
       "url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/yt-EP009"
     },
+    "videoYoutube": {
+      "format": "16:9 · 1920 × 1080 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube-paysage/EP009.mp4"
+    },
+    "storyFacebook": null,
+    "videoTiktok": null,
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
       "planches": [
@@ -1866,6 +1945,12 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "format": "9:16 · 1080 × 1920 · 12,5 s",
       "url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/yt-EP010"
     },
+    "videoYoutube": {
+      "format": "16:9 · 1920 × 1080 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube-paysage/EP010.mp4"
+    },
+    "storyFacebook": null,
+    "videoTiktok": null,
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
       "planches": [
@@ -2048,6 +2133,12 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "format": "9:16 · 1080 × 1920 · 12,5 s",
       "url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/yt-EP011"
     },
+    "videoYoutube": {
+      "format": "16:9 · 1920 × 1080 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube-paysage/EP011.mp4"
+    },
+    "storyFacebook": null,
+    "videoTiktok": null,
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
       "planches": [
@@ -2227,6 +2318,12 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "format": "9:16 · 1080 × 1920 · 12,5 s",
       "url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/yt-EP012"
     },
+    "videoYoutube": {
+      "format": "16:9 · 1920 × 1080 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube-paysage/EP012.mp4"
+    },
+    "storyFacebook": null,
+    "videoTiktok": null,
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
       "planches": [
@@ -2407,6 +2504,12 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "format": "9:16 · 1080 × 1920 · 12,5 s",
       "url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/yt-EP013"
     },
+    "videoYoutube": {
+      "format": "16:9 · 1920 × 1080 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube-paysage/EP013.mp4"
+    },
+    "storyFacebook": null,
+    "videoTiktok": null,
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
       "planches": [
@@ -2591,6 +2694,12 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "format": "9:16 · 1080 × 1920 · 12,5 s",
       "url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/yt-EP014"
     },
+    "videoYoutube": {
+      "format": "16:9 · 1920 × 1080 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube-paysage/EP014.mp4"
+    },
+    "storyFacebook": null,
+    "videoTiktok": null,
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
       "planches": [
@@ -2768,6 +2877,12 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "format": "9:16 · 1080 × 1920 · 12,5 s",
       "url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/yt-EP015"
     },
+    "videoYoutube": {
+      "format": "16:9 · 1920 × 1080 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube-paysage/EP015.mp4"
+    },
+    "storyFacebook": null,
+    "videoTiktok": null,
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
       "planches": [
@@ -2945,6 +3060,12 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "format": "9:16 · 1080 × 1920 · 12,5 s",
       "url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/yt-EP016"
     },
+    "videoYoutube": {
+      "format": "16:9 · 1920 × 1080 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube-paysage/EP016.mp4"
+    },
+    "storyFacebook": null,
+    "videoTiktok": null,
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
       "planches": [
@@ -3132,6 +3253,12 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "format": "9:16 · 1080 × 1920 · 12,5 s",
       "url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/yt-EP017"
     },
+    "videoYoutube": {
+      "format": "16:9 · 1920 × 1080 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube-paysage/EP017.mp4"
+    },
+    "storyFacebook": null,
+    "videoTiktok": null,
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
       "planches": [
@@ -3315,6 +3442,12 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "format": "9:16 · 1080 × 1920 · 12,5 s",
       "url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/yt-EP018"
     },
+    "videoYoutube": {
+      "format": "16:9 · 1920 × 1080 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube-paysage/EP018.mp4"
+    },
+    "storyFacebook": null,
+    "videoTiktok": null,
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
       "planches": [
@@ -3502,6 +3635,12 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "format": "9:16 · 1080 × 1920 · 12,5 s",
       "url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/yt-EP019"
     },
+    "videoYoutube": {
+      "format": "16:9 · 1920 × 1080 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube-paysage/EP019.mp4"
+    },
+    "storyFacebook": null,
+    "videoTiktok": null,
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
       "planches": [
@@ -3682,6 +3821,12 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "format": "9:16 · 1080 × 1920 · 12,5 s",
       "url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/yt-EP020"
     },
+    "videoYoutube": {
+      "format": "16:9 · 1920 × 1080 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube-paysage/EP020.mp4"
+    },
+    "storyFacebook": null,
+    "videoTiktok": null,
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
       "planches": [
@@ -3865,6 +4010,12 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "format": "9:16 · 1080 × 1920 · 12,5 s",
       "url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/yt-EP021"
     },
+    "videoYoutube": {
+      "format": "16:9 · 1920 × 1080 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube-paysage/EP021.mp4"
+    },
+    "storyFacebook": null,
+    "videoTiktok": null,
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
       "planches": [
@@ -4050,6 +4201,12 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "format": "9:16 · 1080 × 1920 · 12,5 s",
       "url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/yt-EP022"
     },
+    "videoYoutube": {
+      "format": "16:9 · 1920 × 1080 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube-paysage/EP022.mp4"
+    },
+    "storyFacebook": null,
+    "videoTiktok": null,
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
       "planches": [
@@ -4229,6 +4386,12 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "format": "9:16 · 1080 × 1920 · 12,5 s",
       "url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/yt-EP023"
     },
+    "videoYoutube": {
+      "format": "16:9 · 1920 × 1080 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube-paysage/EP023.mp4"
+    },
+    "storyFacebook": null,
+    "videoTiktok": null,
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
       "planches": [
@@ -4410,6 +4573,12 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "format": "9:16 · 1080 × 1920 · 12,5 s",
       "url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/yt-EP024"
     },
+    "videoYoutube": {
+      "format": "16:9 · 1920 × 1080 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube-paysage/EP024.mp4"
+    },
+    "storyFacebook": null,
+    "videoTiktok": null,
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
       "planches": [
@@ -4587,6 +4756,12 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "format": "9:16 · 1080 × 1920 · 12,5 s",
       "url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/yt-EP025"
     },
+    "videoYoutube": {
+      "format": "16:9 · 1920 × 1080 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube-paysage/EP025.mp4"
+    },
+    "storyFacebook": null,
+    "videoTiktok": null,
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
       "planches": [
@@ -4773,6 +4948,12 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "format": "9:16 · 1080 × 1920 · 12,5 s",
       "url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/yt-EP026"
     },
+    "videoYoutube": {
+      "format": "16:9 · 1920 × 1080 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube-paysage/EP026.mp4"
+    },
+    "storyFacebook": null,
+    "videoTiktok": null,
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
       "planches": [
@@ -4957,6 +5138,12 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "format": "9:16 · 1080 × 1920 · 12,5 s",
       "url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/yt-EP027"
     },
+    "videoYoutube": {
+      "format": "16:9 · 1920 × 1080 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube-paysage/EP027.mp4"
+    },
+    "storyFacebook": null,
+    "videoTiktok": null,
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
       "planches": [
@@ -5130,6 +5317,12 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "format": "9:16 · 1080 × 1920 · 12,5 s",
       "url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/yt-EP028"
     },
+    "videoYoutube": {
+      "format": "16:9 · 1920 × 1080 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube-paysage/EP028.mp4"
+    },
+    "storyFacebook": null,
+    "videoTiktok": null,
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
       "planches": [
@@ -5310,6 +5503,12 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "format": "9:16 · 1080 × 1920 · 12,5 s",
       "url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/yt-EP029"
     },
+    "videoYoutube": {
+      "format": "16:9 · 1920 × 1080 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube-paysage/EP029.mp4"
+    },
+    "storyFacebook": null,
+    "videoTiktok": null,
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
       "planches": [
@@ -5485,6 +5684,12 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "format": "9:16 · 1080 × 1920 · 12,5 s",
       "url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/yt-EP030"
     },
+    "videoYoutube": {
+      "format": "16:9 · 1920 × 1080 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube-paysage/EP030.mp4"
+    },
+    "storyFacebook": null,
+    "videoTiktok": null,
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
       "planches": [
@@ -5658,6 +5863,12 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "format": "9:16 · 1080 × 1920 · 12,5 s",
       "url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/yt-EP031"
     },
+    "videoYoutube": {
+      "format": "16:9 · 1920 × 1080 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube-paysage/EP031.mp4"
+    },
+    "storyFacebook": null,
+    "videoTiktok": null,
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
       "planches": [
@@ -5845,6 +6056,12 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "format": "9:16 · 1080 × 1920 · 12,5 s",
       "url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/yt-EP032"
     },
+    "videoYoutube": {
+      "format": "16:9 · 1920 × 1080 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube-paysage/EP032.mp4"
+    },
+    "storyFacebook": null,
+    "videoTiktok": null,
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
       "planches": [
@@ -6031,6 +6248,12 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "format": "9:16 · 1080 × 1920 · 12,5 s",
       "url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/yt-EP033"
     },
+    "videoYoutube": {
+      "format": "16:9 · 1920 × 1080 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube-paysage/EP033.mp4"
+    },
+    "storyFacebook": null,
+    "videoTiktok": null,
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
       "planches": [
@@ -6208,6 +6431,12 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "format": "9:16 · 1080 × 1920 · 12,5 s",
       "url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/yt-EP034"
     },
+    "videoYoutube": {
+      "format": "16:9 · 1920 × 1080 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube-paysage/EP034.mp4"
+    },
+    "storyFacebook": null,
+    "videoTiktok": null,
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
       "planches": [
@@ -6381,6 +6610,12 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "format": "9:16 · 1080 × 1920 · 12,5 s",
       "url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/yt-EP035"
     },
+    "videoYoutube": {
+      "format": "16:9 · 1920 × 1080 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube-paysage/EP035.mp4"
+    },
+    "storyFacebook": null,
+    "videoTiktok": null,
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
       "planches": [
@@ -6563,6 +6798,12 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "format": "9:16 · 1080 × 1920 · 12,5 s",
       "url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/yt-EP036"
     },
+    "videoYoutube": {
+      "format": "16:9 · 1920 × 1080 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube-paysage/EP036.mp4"
+    },
+    "storyFacebook": null,
+    "videoTiktok": null,
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
       "planches": [
@@ -6736,6 +6977,12 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "format": "9:16 · 1080 × 1920 · 12,5 s",
       "url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/yt-EP037"
     },
+    "videoYoutube": {
+      "format": "16:9 · 1920 × 1080 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube-paysage/EP037.mp4"
+    },
+    "storyFacebook": null,
+    "videoTiktok": null,
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
       "planches": [
@@ -6921,6 +7168,12 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "format": "9:16 · 1080 × 1920 · 12,5 s",
       "url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/yt-EP038"
     },
+    "videoYoutube": {
+      "format": "16:9 · 1920 × 1080 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube-paysage/EP038.mp4"
+    },
+    "storyFacebook": null,
+    "videoTiktok": null,
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
       "planches": [
@@ -7103,6 +7356,12 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "format": "9:16 · 1080 × 1920 · 12,5 s",
       "url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/yt-EP039"
     },
+    "videoYoutube": {
+      "format": "16:9 · 1920 × 1080 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube-paysage/EP039.mp4"
+    },
+    "storyFacebook": null,
+    "videoTiktok": null,
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
       "planches": [
@@ -7287,6 +7546,12 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "format": "9:16 · 1080 × 1920 · 12,5 s",
       "url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/yt-EP040"
     },
+    "videoYoutube": {
+      "format": "16:9 · 1920 × 1080 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube-paysage/EP040.mp4"
+    },
+    "storyFacebook": null,
+    "videoTiktok": null,
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
       "planches": [
@@ -7474,6 +7739,12 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "format": "9:16 · 1080 × 1920 · 12,5 s",
       "url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/yt-EP041"
     },
+    "videoYoutube": {
+      "format": "16:9 · 1920 × 1080 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube-paysage/EP041.mp4"
+    },
+    "storyFacebook": null,
+    "videoTiktok": null,
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
       "planches": [
@@ -7654,6 +7925,12 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "format": "9:16 · 1080 × 1920 · 12,5 s",
       "url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/yt-EP042"
     },
+    "videoYoutube": {
+      "format": "16:9 · 1920 × 1080 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube-paysage/EP042.mp4"
+    },
+    "storyFacebook": null,
+    "videoTiktok": null,
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
       "planches": [
@@ -7834,6 +8111,12 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "format": "9:16 · 1080 × 1920 · 12,5 s",
       "url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/yt-EP043"
     },
+    "videoYoutube": {
+      "format": "16:9 · 1920 × 1080 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube-paysage/EP043.mp4"
+    },
+    "storyFacebook": null,
+    "videoTiktok": null,
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
       "planches": [
@@ -8005,6 +8288,12 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "format": "9:16 · 1080 × 1920 · 12,5 s",
       "url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/yt-EP044"
     },
+    "videoYoutube": {
+      "format": "16:9 · 1920 × 1080 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube-paysage/EP044.mp4"
+    },
+    "storyFacebook": null,
+    "videoTiktok": null,
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
       "planches": [
@@ -8191,6 +8480,12 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "format": "9:16 · 1080 × 1920 · 12,5 s",
       "url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/yt-EP045"
     },
+    "videoYoutube": {
+      "format": "16:9 · 1920 × 1080 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube-paysage/EP045.mp4"
+    },
+    "storyFacebook": null,
+    "videoTiktok": null,
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
       "planches": [
@@ -8375,6 +8670,12 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "format": "9:16 · 1080 × 1920 · 12,5 s",
       "url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/yt-EP046"
     },
+    "videoYoutube": {
+      "format": "16:9 · 1920 × 1080 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube-paysage/EP046.mp4"
+    },
+    "storyFacebook": null,
+    "videoTiktok": null,
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
       "planches": [
@@ -8558,6 +8859,12 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "format": "9:16 · 1080 × 1920 · 12,5 s",
       "url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/yt-EP047"
     },
+    "videoYoutube": {
+      "format": "16:9 · 1920 × 1080 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube-paysage/EP047.mp4"
+    },
+    "storyFacebook": null,
+    "videoTiktok": null,
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
       "planches": [
@@ -8734,6 +9041,12 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "format": "9:16 · 1080 × 1920 · 12,5 s",
       "url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/yt-EP048"
     },
+    "videoYoutube": {
+      "format": "16:9 · 1920 × 1080 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube-paysage/EP048.mp4"
+    },
+    "storyFacebook": null,
+    "videoTiktok": null,
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
       "planches": [
@@ -8917,6 +9230,12 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "format": "9:16 · 1080 × 1920 · 12,5 s",
       "url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/yt-EP049"
     },
+    "videoYoutube": {
+      "format": "16:9 · 1920 × 1080 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube-paysage/EP049.mp4"
+    },
+    "storyFacebook": null,
+    "videoTiktok": null,
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
       "planches": [
@@ -9103,6 +9422,12 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "format": "9:16 · 1080 × 1920 · 12,5 s",
       "url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/yt-EP050"
     },
+    "videoYoutube": {
+      "format": "16:9 · 1920 × 1080 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube-paysage/EP050.mp4"
+    },
+    "storyFacebook": null,
+    "videoTiktok": null,
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
       "planches": [
@@ -9287,6 +9612,12 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "format": "9:16 · 1080 × 1920 · 12,5 s",
       "url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/yt-EP051"
     },
+    "videoYoutube": {
+      "format": "16:9 · 1920 × 1080 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube-paysage/EP051.mp4"
+    },
+    "storyFacebook": null,
+    "videoTiktok": null,
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
       "planches": [
@@ -9467,6 +9798,12 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "format": "9:16 · 1080 × 1920 · 12,5 s",
       "url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/yt-EP052"
     },
+    "videoYoutube": {
+      "format": "16:9 · 1920 × 1080 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube-paysage/EP052.mp4"
+    },
+    "storyFacebook": null,
+    "videoTiktok": null,
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
       "planches": [
@@ -9651,6 +9988,12 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "format": "9:16 · 1080 × 1920 · 12,5 s",
       "url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/yt-EP053"
     },
+    "videoYoutube": {
+      "format": "16:9 · 1920 × 1080 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube-paysage/EP053.mp4"
+    },
+    "storyFacebook": null,
+    "videoTiktok": null,
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
       "planches": [
@@ -9834,6 +10177,12 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "format": "9:16 · 1080 × 1920 · 12,5 s",
       "url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/yt-EP054"
     },
+    "videoYoutube": {
+      "format": "16:9 · 1920 × 1080 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube-paysage/EP054.mp4"
+    },
+    "storyFacebook": null,
+    "videoTiktok": null,
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
       "planches": [
@@ -10017,6 +10366,12 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "format": "9:16 · 1080 × 1920 · 12,5 s",
       "url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/yt-EP055"
     },
+    "videoYoutube": {
+      "format": "16:9 · 1920 × 1080 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube-paysage/EP055.mp4"
+    },
+    "storyFacebook": null,
+    "videoTiktok": null,
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
       "planches": [
@@ -10200,6 +10555,12 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "format": "9:16 · 1080 × 1920 · 12,5 s",
       "url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/yt-EP056"
     },
+    "videoYoutube": {
+      "format": "16:9 · 1920 × 1080 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube-paysage/EP056.mp4"
+    },
+    "storyFacebook": null,
+    "videoTiktok": null,
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
       "planches": [
@@ -10384,6 +10745,12 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "format": "9:16 · 1080 × 1920 · 12,5 s",
       "url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/yt-EP057"
     },
+    "videoYoutube": {
+      "format": "16:9 · 1920 × 1080 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube-paysage/EP057.mp4"
+    },
+    "storyFacebook": null,
+    "videoTiktok": null,
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
       "planches": [
@@ -10557,6 +10924,12 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "format": "9:16 · 1080 × 1920 · 12,5 s",
       "url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/yt-EP058"
     },
+    "videoYoutube": {
+      "format": "16:9 · 1920 × 1080 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube-paysage/EP058.mp4"
+    },
+    "storyFacebook": null,
+    "videoTiktok": null,
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
       "planches": [
@@ -10730,6 +11103,12 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "format": "9:16 · 1080 × 1920 · 12,5 s",
       "url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/yt-EP059"
     },
+    "videoYoutube": {
+      "format": "16:9 · 1920 × 1080 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube-paysage/EP059.mp4"
+    },
+    "storyFacebook": null,
+    "videoTiktok": null,
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
       "planches": [
@@ -10913,6 +11292,12 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "format": "9:16 · 1080 × 1920 · 12,5 s",
       "url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/yt-EP060"
     },
+    "videoYoutube": {
+      "format": "16:9 · 1920 × 1080 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube-paysage/EP060.mp4"
+    },
+    "storyFacebook": null,
+    "videoTiktok": null,
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
       "planches": [
@@ -11096,6 +11481,12 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "format": "9:16 · 1080 × 1920 · 12,5 s",
       "url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/yt-EP061"
     },
+    "videoYoutube": {
+      "format": "16:9 · 1920 × 1080 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube-paysage/EP061.mp4"
+    },
+    "storyFacebook": null,
+    "videoTiktok": null,
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
       "planches": [
@@ -11279,6 +11670,12 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "format": "9:16 · 1080 × 1920 · 12,5 s",
       "url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/yt-EP062"
     },
+    "videoYoutube": {
+      "format": "16:9 · 1920 × 1080 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube-paysage/EP062.mp4"
+    },
+    "storyFacebook": null,
+    "videoTiktok": null,
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
       "planches": [
@@ -11461,6 +11858,12 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "format": "9:16 · 1080 × 1920 · 12,5 s",
       "url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/yt-EP063"
     },
+    "videoYoutube": {
+      "format": "16:9 · 1920 × 1080 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube-paysage/EP063.mp4"
+    },
+    "storyFacebook": null,
+    "videoTiktok": null,
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
       "planches": [
@@ -11645,6 +12048,12 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "format": "9:16 · 1080 × 1920 · 12,5 s",
       "url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/yt-EP064"
     },
+    "videoYoutube": {
+      "format": "16:9 · 1920 × 1080 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube-paysage/EP064.mp4"
+    },
+    "storyFacebook": null,
+    "videoTiktok": null,
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
       "planches": [
@@ -11829,6 +12238,12 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "format": "9:16 · 1080 × 1920 · 12,5 s",
       "url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/yt-EP065"
     },
+    "videoYoutube": {
+      "format": "16:9 · 1920 × 1080 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube-paysage/EP065.mp4"
+    },
+    "storyFacebook": null,
+    "videoTiktok": null,
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
       "planches": [
@@ -12015,6 +12430,12 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "format": "9:16 · 1080 × 1920 · 12,5 s",
       "url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/yt-EP066"
     },
+    "videoYoutube": {
+      "format": "16:9 · 1920 × 1080 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube-paysage/EP066.mp4"
+    },
+    "storyFacebook": null,
+    "videoTiktok": null,
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
       "planches": [
@@ -12188,6 +12609,12 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "format": "9:16 · 1080 × 1920 · 12,5 s",
       "url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/yt-EP067"
     },
+    "videoYoutube": {
+      "format": "16:9 · 1920 × 1080 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube-paysage/EP067.mp4"
+    },
+    "storyFacebook": null,
+    "videoTiktok": null,
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
       "planches": [
@@ -12372,6 +12799,12 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "format": "9:16 · 1080 × 1920 · 12,5 s",
       "url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/yt-EP068"
     },
+    "videoYoutube": {
+      "format": "16:9 · 1920 × 1080 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube-paysage/EP068.mp4"
+    },
+    "storyFacebook": null,
+    "videoTiktok": null,
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
       "planches": [
@@ -12545,6 +12978,12 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "format": "9:16 · 1080 × 1920 · 12,5 s",
       "url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/yt-EP069"
     },
+    "videoYoutube": {
+      "format": "16:9 · 1920 × 1080 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube-paysage/EP069.mp4"
+    },
+    "storyFacebook": null,
+    "videoTiktok": null,
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
       "planches": [
@@ -12728,6 +13167,12 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "format": "9:16 · 1080 × 1920 · 12,5 s",
       "url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/yt-EP070"
     },
+    "videoYoutube": {
+      "format": "16:9 · 1920 × 1080 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube-paysage/EP070.mp4"
+    },
+    "storyFacebook": null,
+    "videoTiktok": null,
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
       "planches": [
@@ -12911,6 +13356,12 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "format": "9:16 · 1080 × 1920 · 12,5 s",
       "url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/yt-EP071"
     },
+    "videoYoutube": {
+      "format": "16:9 · 1920 × 1080 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube-paysage/EP071.mp4"
+    },
+    "storyFacebook": null,
+    "videoTiktok": null,
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
       "planches": [
@@ -13094,6 +13545,12 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "format": "9:16 · 1080 × 1920 · 12,5 s",
       "url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/yt-EP072"
     },
+    "videoYoutube": {
+      "format": "16:9 · 1920 × 1080 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube-paysage/EP072.mp4"
+    },
+    "storyFacebook": null,
+    "videoTiktok": null,
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
       "planches": [
@@ -13270,6 +13727,12 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "format": "9:16 · 1080 × 1920 · 12,5 s",
       "url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/yt-EP073"
     },
+    "videoYoutube": {
+      "format": "16:9 · 1920 × 1080 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube-paysage/EP073.mp4"
+    },
+    "storyFacebook": null,
+    "videoTiktok": null,
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
       "planches": [
@@ -13447,6 +13910,12 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "format": "9:16 · 1080 × 1920 · 12,5 s",
       "url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/yt-EP074"
     },
+    "videoYoutube": {
+      "format": "16:9 · 1920 × 1080 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube-paysage/EP074.mp4"
+    },
+    "storyFacebook": null,
+    "videoTiktok": null,
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
       "planches": [
@@ -13623,6 +14092,12 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "format": "9:16 · 1080 × 1920 · 12,5 s",
       "url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/yt-EP075"
     },
+    "videoYoutube": {
+      "format": "16:9 · 1920 × 1080 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube-paysage/EP075.mp4"
+    },
+    "storyFacebook": null,
+    "videoTiktok": null,
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
       "planches": [
@@ -13799,6 +14274,12 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "format": "9:16 · 1080 × 1920 · 12,5 s",
       "url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/yt-EP076"
     },
+    "videoYoutube": {
+      "format": "16:9 · 1920 × 1080 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube-paysage/EP076.mp4"
+    },
+    "storyFacebook": null,
+    "videoTiktok": null,
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
       "planches": [
@@ -13975,6 +14456,12 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "format": "9:16 · 1080 × 1920 · 12,5 s",
       "url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/yt-EP077"
     },
+    "videoYoutube": {
+      "format": "16:9 · 1920 × 1080 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube-paysage/EP077.mp4"
+    },
+    "storyFacebook": null,
+    "videoTiktok": null,
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
       "planches": [
@@ -14152,6 +14639,12 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "format": "9:16 · 1080 × 1920 · 12,5 s",
       "url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/yt-EP078"
     },
+    "videoYoutube": {
+      "format": "16:9 · 1920 × 1080 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube-paysage/EP078.mp4"
+    },
+    "storyFacebook": null,
+    "videoTiktok": null,
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
       "planches": [
@@ -14328,6 +14821,12 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "format": "9:16 · 1080 × 1920 · 12,5 s",
       "url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/yt-EP079"
     },
+    "videoYoutube": {
+      "format": "16:9 · 1920 × 1080 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube-paysage/EP079.mp4"
+    },
+    "storyFacebook": null,
+    "videoTiktok": null,
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
       "planches": [
@@ -14504,6 +15003,12 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "format": "9:16 · 1080 × 1920 · 12,5 s",
       "url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/yt-EP080"
     },
+    "videoYoutube": {
+      "format": "16:9 · 1920 × 1080 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube-paysage/EP080.mp4"
+    },
+    "storyFacebook": null,
+    "videoTiktok": null,
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
       "planches": [
@@ -14683,6 +15188,12 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "format": "9:16 · 1080 × 1920 · 12,5 s",
       "url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/yt-EP081"
     },
+    "videoYoutube": {
+      "format": "16:9 · 1920 × 1080 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube-paysage/EP081.mp4"
+    },
+    "storyFacebook": null,
+    "videoTiktok": null,
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
       "planches": [
@@ -14863,6 +15374,12 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "format": "9:16 · 1080 × 1920 · 12,5 s",
       "url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/yt-EP082"
     },
+    "videoYoutube": {
+      "format": "16:9 · 1920 × 1080 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube-paysage/EP082.mp4"
+    },
+    "storyFacebook": null,
+    "videoTiktok": null,
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
       "planches": [
@@ -15044,6 +15561,12 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "format": "9:16 · 1080 × 1920 · 12,5 s",
       "url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/yt-EP083"
     },
+    "videoYoutube": {
+      "format": "16:9 · 1920 × 1080 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube-paysage/EP083.mp4"
+    },
+    "storyFacebook": null,
+    "videoTiktok": null,
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
       "planches": [
@@ -15212,6 +15735,12 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "format": "9:16 · 1080 × 1920 · 12,5 s",
       "url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/yt-EP084"
     },
+    "videoYoutube": {
+      "format": "16:9 · 1920 × 1080 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube-paysage/EP084.mp4"
+    },
+    "storyFacebook": null,
+    "videoTiktok": null,
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
       "planches": [
@@ -15392,6 +15921,12 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "format": "9:16 · 1080 × 1920 · 12,5 s",
       "url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/yt-EP085"
     },
+    "videoYoutube": {
+      "format": "16:9 · 1920 × 1080 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube-paysage/EP085.mp4"
+    },
+    "storyFacebook": null,
+    "videoTiktok": null,
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
       "planches": [
@@ -15560,6 +16095,12 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "format": "9:16 · 1080 × 1920 · 12,5 s",
       "url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/yt-EP086"
     },
+    "videoYoutube": {
+      "format": "16:9 · 1920 × 1080 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube-paysage/EP086.mp4"
+    },
+    "storyFacebook": null,
+    "videoTiktok": null,
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
       "planches": [
@@ -15738,6 +16279,12 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "format": "9:16 · 1080 × 1920 · 12,5 s",
       "url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/yt-EP087"
     },
+    "videoYoutube": {
+      "format": "16:9 · 1920 × 1080 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube-paysage/EP087.mp4"
+    },
+    "storyFacebook": null,
+    "videoTiktok": null,
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
       "planches": [
@@ -15918,6 +16465,12 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "format": "9:16 · 1080 × 1920 · 12,5 s",
       "url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/yt-EP088"
     },
+    "videoYoutube": {
+      "format": "16:9 · 1920 × 1080 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube-paysage/EP088.mp4"
+    },
+    "storyFacebook": null,
+    "videoTiktok": null,
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
       "planches": [
@@ -16089,6 +16642,12 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "format": "9:16 · 1080 × 1920 · 12,5 s",
       "url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/yt-EP089"
     },
+    "videoYoutube": {
+      "format": "16:9 · 1920 × 1080 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube-paysage/EP089.mp4"
+    },
+    "storyFacebook": null,
+    "videoTiktok": null,
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
       "planches": [
@@ -16270,6 +16829,12 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "format": "9:16 · 1080 × 1920 · 12,5 s",
       "url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/yt-EP090"
     },
+    "videoYoutube": {
+      "format": "16:9 · 1920 × 1080 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube-paysage/EP090.mp4"
+    },
+    "storyFacebook": null,
+    "videoTiktok": null,
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
       "planches": [
@@ -16451,6 +17016,12 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "format": "9:16 · 1080 × 1920 · 12,5 s",
       "url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/yt-EP091"
     },
+    "videoYoutube": {
+      "format": "16:9 · 1920 × 1080 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube-paysage/EP091.mp4"
+    },
+    "storyFacebook": null,
+    "videoTiktok": null,
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
       "planches": [
@@ -16630,6 +17201,9 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "url": null
     },
     "shortYoutube": null,
+    "videoYoutube": null,
+    "storyFacebook": null,
+    "videoTiktok": null,
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
       "planches": [
@@ -16814,6 +17388,12 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "format": "9:16 · 1080 × 1920 · 12,5 s",
       "url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/yt-EP093"
     },
+    "videoYoutube": {
+      "format": "16:9 · 1920 × 1080 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube-paysage/EP093.mp4"
+    },
+    "storyFacebook": null,
+    "videoTiktok": null,
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
       "planches": [
@@ -16996,6 +17576,12 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "format": "9:16 · 1080 × 1920 · 12,5 s",
       "url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/yt-EP094"
     },
+    "videoYoutube": {
+      "format": "16:9 · 1920 × 1080 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube-paysage/EP094.mp4"
+    },
+    "storyFacebook": null,
+    "videoTiktok": null,
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
       "planches": [
@@ -17175,6 +17761,12 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "format": "9:16 · 1080 × 1920 · 12,5 s",
       "url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/yt-EP095"
     },
+    "videoYoutube": {
+      "format": "16:9 · 1920 × 1080 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube-paysage/EP095.mp4"
+    },
+    "storyFacebook": null,
+    "videoTiktok": null,
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
       "planches": [
@@ -17355,6 +17947,12 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "format": "9:16 · 1080 × 1920 · 12,5 s",
       "url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/yt-EP096"
     },
+    "videoYoutube": {
+      "format": "16:9 · 1920 × 1080 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube-paysage/EP096.mp4"
+    },
+    "storyFacebook": null,
+    "videoTiktok": null,
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
       "planches": [
@@ -17541,6 +18139,12 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "format": "9:16 · 1080 × 1920 · 12,5 s",
       "url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/yt-EP097"
     },
+    "videoYoutube": {
+      "format": "16:9 · 1920 × 1080 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube-paysage/EP097.mp4"
+    },
+    "storyFacebook": null,
+    "videoTiktok": null,
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
       "planches": [
@@ -17721,6 +18325,12 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "format": "9:16 · 1080 × 1920 · 12,5 s",
       "url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/yt-EP098"
     },
+    "videoYoutube": {
+      "format": "16:9 · 1920 × 1080 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube-paysage/EP098.mp4"
+    },
+    "storyFacebook": null,
+    "videoTiktok": null,
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
       "planches": [
@@ -17898,6 +18508,12 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "format": "9:16 · 1080 × 1920 · 12,5 s",
       "url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/yt-EP099"
     },
+    "videoYoutube": {
+      "format": "16:9 · 1920 × 1080 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube-paysage/EP099.mp4"
+    },
+    "storyFacebook": null,
+    "videoTiktok": null,
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
       "planches": [
@@ -18078,6 +18694,12 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "format": "9:16 · 1080 × 1920 · 12,5 s",
       "url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/yt-EP100"
     },
+    "videoYoutube": {
+      "format": "16:9 · 1920 × 1080 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube-paysage/EP100.mp4"
+    },
+    "storyFacebook": null,
+    "videoTiktok": null,
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
       "planches": [
@@ -18261,6 +18883,12 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "format": "9:16 · 1080 × 1920 · 12,5 s",
       "url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/yt-EP101"
     },
+    "videoYoutube": {
+      "format": "16:9 · 1920 × 1080 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube-paysage/EP101.mp4"
+    },
+    "storyFacebook": null,
+    "videoTiktok": null,
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
       "planches": [
@@ -18434,6 +19062,12 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "format": "9:16 · 1080 × 1920 · 12,5 s",
       "url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/yt-EP102"
     },
+    "videoYoutube": {
+      "format": "16:9 · 1920 × 1080 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube-paysage/EP102.mp4"
+    },
+    "storyFacebook": null,
+    "videoTiktok": null,
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
       "planches": [
@@ -18615,6 +19249,12 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "format": "9:16 · 1080 × 1920 · 12,5 s",
       "url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/yt-EP103"
     },
+    "videoYoutube": {
+      "format": "16:9 · 1920 × 1080 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube-paysage/EP103.mp4"
+    },
+    "storyFacebook": null,
+    "videoTiktok": null,
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
       "planches": [
@@ -18796,6 +19436,12 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "format": "9:16 · 1080 × 1920 · 12,5 s",
       "url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/yt-EP104"
     },
+    "videoYoutube": {
+      "format": "16:9 · 1920 × 1080 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube-paysage/EP104.mp4"
+    },
+    "storyFacebook": null,
+    "videoTiktok": null,
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
       "planches": [
@@ -18976,6 +19622,12 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "format": "9:16 · 1080 × 1920 · 12,5 s",
       "url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/yt-EP105"
     },
+    "videoYoutube": {
+      "format": "16:9 · 1920 × 1080 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube-paysage/EP105.mp4"
+    },
+    "storyFacebook": null,
+    "videoTiktok": null,
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
       "planches": [
@@ -19156,6 +19808,12 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "format": "9:16 · 1080 × 1920 · 12,5 s",
       "url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/yt-EP106"
     },
+    "videoYoutube": {
+      "format": "16:9 · 1920 × 1080 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube-paysage/EP106.mp4"
+    },
+    "storyFacebook": null,
+    "videoTiktok": null,
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
       "planches": [
@@ -19329,6 +19987,12 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "format": "9:16 · 1080 × 1920 · 12,5 s",
       "url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/yt-EP107"
     },
+    "videoYoutube": {
+      "format": "16:9 · 1920 × 1080 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube-paysage/EP107.mp4"
+    },
+    "storyFacebook": null,
+    "videoTiktok": null,
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
       "planches": [
@@ -19501,6 +20165,12 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "format": "9:16 · 1080 × 1920 · 12,5 s",
       "url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/yt-EP108"
     },
+    "videoYoutube": {
+      "format": "16:9 · 1920 × 1080 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube-paysage/EP108.mp4"
+    },
+    "storyFacebook": null,
+    "videoTiktok": null,
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
       "planches": [
@@ -19680,6 +20350,12 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "format": "9:16 · 1080 × 1920 · 12,5 s",
       "url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/yt-EP109"
     },
+    "videoYoutube": {
+      "format": "16:9 · 1920 × 1080 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube-paysage/EP109.mp4"
+    },
+    "storyFacebook": null,
+    "videoTiktok": null,
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
       "planches": [
@@ -19866,6 +20542,12 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "format": "9:16 · 1080 × 1920 · 12,5 s",
       "url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/yt-EP110"
     },
+    "videoYoutube": {
+      "format": "16:9 · 1920 × 1080 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube-paysage/EP110.mp4"
+    },
+    "storyFacebook": null,
+    "videoTiktok": null,
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
       "planches": [
@@ -20050,6 +20732,12 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "format": "9:16 · 1080 × 1920 · 12,5 s",
       "url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/yt-EP111"
     },
+    "videoYoutube": {
+      "format": "16:9 · 1920 × 1080 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube-paysage/EP111.mp4"
+    },
+    "storyFacebook": null,
+    "videoTiktok": null,
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
       "planches": [
@@ -20232,6 +20920,12 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "format": "9:16 · 1080 × 1920 · 12,5 s",
       "url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/yt-EP112"
     },
+    "videoYoutube": {
+      "format": "16:9 · 1920 × 1080 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube-paysage/EP112.mp4"
+    },
+    "storyFacebook": null,
+    "videoTiktok": null,
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
       "planches": [
@@ -20415,6 +21109,12 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "format": "9:16 · 1080 × 1920 · 12,5 s",
       "url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/yt-EP113"
     },
+    "videoYoutube": {
+      "format": "16:9 · 1920 × 1080 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube-paysage/EP113.mp4"
+    },
+    "storyFacebook": null,
+    "videoTiktok": null,
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
       "planches": [
@@ -20590,6 +21290,12 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "format": "9:16 · 1080 × 1920 · 12,5 s",
       "url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/yt-EP114"
     },
+    "videoYoutube": {
+      "format": "16:9 · 1920 × 1080 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube-paysage/EP114.mp4"
+    },
+    "storyFacebook": null,
+    "videoTiktok": null,
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
       "planches": [
@@ -20776,6 +21482,12 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "format": "9:16 · 1080 × 1920 · 12,5 s",
       "url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/yt-EP115"
     },
+    "videoYoutube": {
+      "format": "16:9 · 1920 × 1080 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube-paysage/EP115.mp4"
+    },
+    "storyFacebook": null,
+    "videoTiktok": null,
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
       "planches": [
@@ -20959,6 +21671,12 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "format": "9:16 · 1080 × 1920 · 12,5 s",
       "url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/yt-EP116"
     },
+    "videoYoutube": {
+      "format": "16:9 · 1920 × 1080 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube-paysage/EP116.mp4"
+    },
+    "storyFacebook": null,
+    "videoTiktok": null,
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
       "planches": [
@@ -21146,6 +21864,12 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "format": "9:16 · 1080 × 1920 · 12,5 s",
       "url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/yt-EP117"
     },
+    "videoYoutube": {
+      "format": "16:9 · 1920 × 1080 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube-paysage/EP117.mp4"
+    },
+    "storyFacebook": null,
+    "videoTiktok": null,
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
       "planches": [
@@ -21328,6 +22052,12 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "format": "9:16 · 1080 × 1920 · 12,5 s",
       "url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/yt-EP118"
     },
+    "videoYoutube": {
+      "format": "16:9 · 1920 × 1080 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube-paysage/EP118.mp4"
+    },
+    "storyFacebook": null,
+    "videoTiktok": null,
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
       "planches": [
@@ -21505,6 +22235,12 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "format": "9:16 · 1080 × 1920 · 12,5 s",
       "url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/yt-EP119"
     },
+    "videoYoutube": {
+      "format": "16:9 · 1920 × 1080 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube-paysage/EP119.mp4"
+    },
+    "storyFacebook": null,
+    "videoTiktok": null,
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
       "planches": [
@@ -21689,6 +22425,12 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "format": "9:16 · 1080 × 1920 · 12,5 s",
       "url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/yt-EP120"
     },
+    "videoYoutube": {
+      "format": "16:9 · 1920 × 1080 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube-paysage/EP120.mp4"
+    },
+    "storyFacebook": null,
+    "videoTiktok": null,
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
       "planches": [
@@ -21871,6 +22613,12 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "format": "9:16 · 1080 × 1920 · 12,5 s",
       "url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/yt-EP121"
     },
+    "videoYoutube": {
+      "format": "16:9 · 1920 × 1080 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube-paysage/EP121.mp4"
+    },
+    "storyFacebook": null,
+    "videoTiktok": null,
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
       "planches": [
@@ -22049,6 +22797,12 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "format": "9:16 · 1080 × 1920 · 12,5 s",
       "url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/yt-EP122"
     },
+    "videoYoutube": {
+      "format": "16:9 · 1920 × 1080 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube-paysage/EP122.mp4"
+    },
+    "storyFacebook": null,
+    "videoTiktok": null,
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
       "planches": [
@@ -22233,6 +22987,12 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "format": "9:16 · 1080 × 1920 · 12,5 s",
       "url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/yt-EP123"
     },
+    "videoYoutube": {
+      "format": "16:9 · 1920 × 1080 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube-paysage/EP123.mp4"
+    },
+    "storyFacebook": null,
+    "videoTiktok": null,
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
       "planches": [
@@ -22417,6 +23177,12 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "format": "9:16 · 1080 × 1920 · 12,5 s",
       "url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/yt-EP124"
     },
+    "videoYoutube": {
+      "format": "16:9 · 1920 × 1080 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube-paysage/EP124.mp4"
+    },
+    "storyFacebook": null,
+    "videoTiktok": null,
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
       "planches": [
@@ -22583,6 +23349,12 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "format": "9:16 · 1080 × 1920 · 12,5 s",
       "url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/yt-EP125"
     },
+    "videoYoutube": {
+      "format": "16:9 · 1920 × 1080 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube-paysage/EP125.mp4"
+    },
+    "storyFacebook": null,
+    "videoTiktok": null,
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
       "planches": [
@@ -22767,6 +23539,12 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "format": "9:16 · 1080 × 1920 · 12,5 s",
       "url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/yt-EP126"
     },
+    "videoYoutube": {
+      "format": "16:9 · 1920 × 1080 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube-paysage/EP126.mp4"
+    },
+    "storyFacebook": null,
+    "videoTiktok": null,
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
       "planches": [
@@ -22938,6 +23716,12 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "format": "9:16 · 1080 × 1920 · 12,5 s",
       "url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/yt-EP127"
     },
+    "videoYoutube": {
+      "format": "16:9 · 1920 × 1080 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube-paysage/EP127.mp4"
+    },
+    "storyFacebook": null,
+    "videoTiktok": null,
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
       "planches": [
@@ -23119,6 +23903,12 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "format": "9:16 · 1080 × 1920 · 12,5 s",
       "url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/yt-EP128"
     },
+    "videoYoutube": {
+      "format": "16:9 · 1920 × 1080 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube-paysage/EP128.mp4"
+    },
+    "storyFacebook": null,
+    "videoTiktok": null,
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
       "planches": [
@@ -23296,6 +24086,12 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "format": "9:16 · 1080 × 1920 · 12,5 s",
       "url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/yt-EP129"
     },
+    "videoYoutube": {
+      "format": "16:9 · 1920 × 1080 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube-paysage/EP129.mp4"
+    },
+    "storyFacebook": null,
+    "videoTiktok": null,
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
       "planches": [
@@ -23474,6 +24270,12 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "format": "9:16 · 1080 × 1920 · 12,5 s",
       "url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/yt-EP130"
     },
+    "videoYoutube": {
+      "format": "16:9 · 1920 × 1080 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube-paysage/EP130.mp4"
+    },
+    "storyFacebook": null,
+    "videoTiktok": null,
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
       "planches": [
@@ -23657,6 +24459,12 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "format": "9:16 · 1080 × 1920 · 12,5 s",
       "url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/yt-EP131"
     },
+    "videoYoutube": {
+      "format": "16:9 · 1920 × 1080 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube-paysage/EP131.mp4"
+    },
+    "storyFacebook": null,
+    "videoTiktok": null,
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
       "planches": [
@@ -23839,6 +24647,12 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "format": "9:16 · 1080 × 1920 · 12,5 s",
       "url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/yt-EP132"
     },
+    "videoYoutube": {
+      "format": "16:9 · 1920 × 1080 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube-paysage/EP132.mp4"
+    },
+    "storyFacebook": null,
+    "videoTiktok": null,
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
       "planches": [
@@ -24019,6 +24833,12 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "format": "9:16 · 1080 × 1920 · 12,5 s",
       "url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/yt-EP133"
     },
+    "videoYoutube": {
+      "format": "16:9 · 1920 × 1080 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube-paysage/EP133.mp4"
+    },
+    "storyFacebook": null,
+    "videoTiktok": null,
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
       "planches": [
@@ -24192,6 +25012,12 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "format": "9:16 · 1080 × 1920 · 12,5 s",
       "url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/yt-EP134"
     },
+    "videoYoutube": {
+      "format": "16:9 · 1920 × 1080 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube-paysage/EP134.mp4"
+    },
+    "storyFacebook": null,
+    "videoTiktok": null,
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
       "planches": [
@@ -24376,6 +25202,12 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "format": "9:16 · 1080 × 1920 · 12,5 s",
       "url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/yt-EP135"
     },
+    "videoYoutube": {
+      "format": "16:9 · 1920 × 1080 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube-paysage/EP135.mp4"
+    },
+    "storyFacebook": null,
+    "videoTiktok": null,
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
       "planches": [
@@ -24559,6 +25391,12 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "format": "9:16 · 1080 × 1920 · 12,5 s",
       "url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/yt-EP136"
     },
+    "videoYoutube": {
+      "format": "16:9 · 1920 × 1080 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube-paysage/EP136.mp4"
+    },
+    "storyFacebook": null,
+    "videoTiktok": null,
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
       "planches": [
@@ -24743,6 +25581,12 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "format": "9:16 · 1080 × 1920 · 12,5 s",
       "url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/yt-EP137"
     },
+    "videoYoutube": {
+      "format": "16:9 · 1920 × 1080 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube-paysage/EP137.mp4"
+    },
+    "storyFacebook": null,
+    "videoTiktok": null,
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
       "planches": [
@@ -24915,6 +25759,12 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "format": "9:16 · 1080 × 1920 · 12,5 s",
       "url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/yt-EP138"
     },
+    "videoYoutube": {
+      "format": "16:9 · 1920 × 1080 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube-paysage/EP138.mp4"
+    },
+    "storyFacebook": null,
+    "videoTiktok": null,
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
       "planches": [
@@ -25094,6 +25944,12 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "format": "9:16 · 1080 × 1920 · 12,5 s",
       "url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/yt-EP139"
     },
+    "videoYoutube": {
+      "format": "16:9 · 1920 × 1080 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube-paysage/EP139.mp4"
+    },
+    "storyFacebook": null,
+    "videoTiktok": null,
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
       "planches": [
@@ -25280,6 +26136,12 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "format": "9:16 · 1080 × 1920 · 12,5 s",
       "url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/yt-EP140"
     },
+    "videoYoutube": {
+      "format": "16:9 · 1920 × 1080 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube-paysage/EP140.mp4"
+    },
+    "storyFacebook": null,
+    "videoTiktok": null,
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
       "planches": [
@@ -25464,6 +26326,12 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "format": "9:16 · 1080 × 1920 · 12,5 s",
       "url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/yt-EP141"
     },
+    "videoYoutube": {
+      "format": "16:9 · 1920 × 1080 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube-paysage/EP141.mp4"
+    },
+    "storyFacebook": null,
+    "videoTiktok": null,
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
       "planches": [
@@ -25646,6 +26514,12 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "format": "9:16 · 1080 × 1920 · 12,5 s",
       "url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/yt-EP142"
     },
+    "videoYoutube": {
+      "format": "16:9 · 1920 × 1080 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube-paysage/EP142.mp4"
+    },
+    "storyFacebook": null,
+    "videoTiktok": null,
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
       "planches": [
@@ -25824,6 +26698,12 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "format": "9:16 · 1080 × 1920 · 12,5 s",
       "url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/yt-EP143"
     },
+    "videoYoutube": {
+      "format": "16:9 · 1920 × 1080 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube-paysage/EP143.mp4"
+    },
+    "storyFacebook": null,
+    "videoTiktok": null,
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
       "planches": [
@@ -26005,6 +26885,12 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "format": "9:16 · 1080 × 1920 · 12,5 s",
       "url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/yt-EP144"
     },
+    "videoYoutube": {
+      "format": "16:9 · 1920 × 1080 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube-paysage/EP144.mp4"
+    },
+    "storyFacebook": null,
+    "videoTiktok": null,
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
       "planches": [
@@ -26187,6 +27073,12 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "format": "9:16 · 1080 × 1920 · 12,5 s",
       "url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/yt-EP145"
     },
+    "videoYoutube": {
+      "format": "16:9 · 1920 × 1080 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube-paysage/EP145.mp4"
+    },
+    "storyFacebook": null,
+    "videoTiktok": null,
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
       "planches": [
@@ -26361,6 +27253,9 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "url": null
     },
     "shortYoutube": null,
+    "videoYoutube": null,
+    "storyFacebook": null,
+    "videoTiktok": null,
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
       "planches": [
@@ -26538,6 +27433,9 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "url": null
     },
     "shortYoutube": null,
+    "videoYoutube": null,
+    "storyFacebook": null,
+    "videoTiktok": null,
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
       "planches": [
@@ -26724,6 +27622,12 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "format": "9:16 · 1080 × 1920 · 12,5 s",
       "url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/yt-EP148"
     },
+    "videoYoutube": {
+      "format": "16:9 · 1920 × 1080 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube-paysage/EP148.mp4"
+    },
+    "storyFacebook": null,
+    "videoTiktok": null,
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
       "planches": [
@@ -26899,6 +27803,12 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "format": "9:16 · 1080 × 1920 · 12,5 s",
       "url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/yt-EP149"
     },
+    "videoYoutube": {
+      "format": "16:9 · 1920 × 1080 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube-paysage/EP149.mp4"
+    },
+    "storyFacebook": null,
+    "videoTiktok": null,
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
       "planches": [
@@ -27083,6 +27993,12 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "format": "9:16 · 1080 × 1920 · 12,5 s",
       "url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/yt-EP150"
     },
+    "videoYoutube": {
+      "format": "16:9 · 1920 × 1080 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube-paysage/EP150.mp4"
+    },
+    "storyFacebook": null,
+    "videoTiktok": null,
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
       "planches": [
@@ -27313,6 +28229,12 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "format": "9:16 · 1080 × 1920 · 12,5 s",
       "url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/yt-EP151"
     },
+    "videoYoutube": {
+      "format": "16:9 · 1920 × 1080 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube-paysage/EP151.mp4"
+    },
+    "storyFacebook": null,
+    "videoTiktok": null,
     "carrousel": null,
     "imageFacebook": null,
     "tutoriel": null
@@ -27499,6 +28421,12 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "format": "9:16 · 1080 × 1920 · 12,5 s",
       "url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/yt-EP152"
     },
+    "videoYoutube": {
+      "format": "16:9 · 1920 × 1080 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube-paysage/EP152.mp4"
+    },
+    "storyFacebook": null,
+    "videoTiktok": null,
     "carrousel": null,
     "imageFacebook": null,
     "tutoriel": null
@@ -27677,6 +28605,9 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "voixOff": null,
     "story": null,
     "shortYoutube": null,
+    "videoYoutube": null,
+    "storyFacebook": null,
+    "videoTiktok": null,
     "carrousel": null,
     "imageFacebook": null,
     "tutoriel": null
@@ -27855,6 +28786,9 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "voixOff": null,
     "story": null,
     "shortYoutube": null,
+    "videoYoutube": null,
+    "storyFacebook": null,
+    "videoTiktok": null,
     "carrousel": null,
     "imageFacebook": null,
     "tutoriel": null
@@ -28033,6 +28967,9 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "voixOff": null,
     "story": null,
     "shortYoutube": null,
+    "videoYoutube": null,
+    "storyFacebook": null,
+    "videoTiktok": null,
     "carrousel": null,
     "imageFacebook": null,
     "tutoriel": null
@@ -28219,6 +29156,12 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "format": "9:16 · 1080 × 1920 · 12,5 s",
       "url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/yt-EP156"
     },
+    "videoYoutube": {
+      "format": "16:9 · 1920 × 1080 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube-paysage/EP156.mp4"
+    },
+    "storyFacebook": null,
+    "videoTiktok": null,
     "carrousel": null,
     "imageFacebook": null,
     "tutoriel": null
@@ -28397,6 +29340,9 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "voixOff": null,
     "story": null,
     "shortYoutube": null,
+    "videoYoutube": null,
+    "storyFacebook": null,
+    "videoTiktok": null,
     "carrousel": null,
     "imageFacebook": null,
     "tutoriel": null
@@ -28583,6 +29529,12 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "format": "9:16 · 1080 × 1920 · 12,5 s",
       "url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/yt-EP158"
     },
+    "videoYoutube": {
+      "format": "16:9 · 1920 × 1080 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube-paysage/EP158.mp4"
+    },
+    "storyFacebook": null,
+    "videoTiktok": null,
     "carrousel": null,
     "imageFacebook": null,
     "tutoriel": null
@@ -28769,6 +29721,12 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "format": "9:16 · 1080 × 1920 · 12,5 s",
       "url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/yt-EP159"
     },
+    "videoYoutube": {
+      "format": "16:9 · 1920 × 1080 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube-paysage/EP159.mp4"
+    },
+    "storyFacebook": null,
+    "videoTiktok": null,
     "carrousel": null,
     "imageFacebook": null,
     "tutoriel": null
@@ -28947,6 +29905,9 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "voixOff": null,
     "story": null,
     "shortYoutube": null,
+    "videoYoutube": null,
+    "storyFacebook": null,
+    "videoTiktok": null,
     "carrousel": null,
     "imageFacebook": null,
     "tutoriel": null
@@ -29125,6 +30086,9 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "voixOff": null,
     "story": null,
     "shortYoutube": null,
+    "videoYoutube": null,
+    "storyFacebook": null,
+    "videoTiktok": null,
     "carrousel": null,
     "imageFacebook": null,
     "tutoriel": null
@@ -29303,6 +30267,9 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "voixOff": null,
     "story": null,
     "shortYoutube": null,
+    "videoYoutube": null,
+    "storyFacebook": null,
+    "videoTiktok": null,
     "carrousel": null,
     "imageFacebook": null,
     "tutoriel": null
@@ -29481,6 +30448,9 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "voixOff": null,
     "story": null,
     "shortYoutube": null,
+    "videoYoutube": null,
+    "storyFacebook": null,
+    "videoTiktok": null,
     "carrousel": null,
     "imageFacebook": null,
     "tutoriel": null
@@ -29659,6 +30629,9 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "voixOff": null,
     "story": null,
     "shortYoutube": null,
+    "videoYoutube": null,
+    "storyFacebook": null,
+    "videoTiktok": null,
     "carrousel": null,
     "imageFacebook": null,
     "tutoriel": null
@@ -29837,6 +30810,9 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "voixOff": null,
     "story": null,
     "shortYoutube": null,
+    "videoYoutube": null,
+    "storyFacebook": null,
+    "videoTiktok": null,
     "carrousel": null,
     "imageFacebook": null,
     "tutoriel": null
@@ -30015,6 +30991,9 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "voixOff": null,
     "story": null,
     "shortYoutube": null,
+    "videoYoutube": null,
+    "storyFacebook": null,
+    "videoTiktok": null,
     "carrousel": null,
     "imageFacebook": null,
     "tutoriel": null
@@ -30201,6 +31180,12 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "format": "9:16 · 1080 × 1920 · 12,5 s",
       "url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/yt-EP167"
     },
+    "videoYoutube": {
+      "format": "16:9 · 1920 × 1080 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube-paysage/EP167.mp4"
+    },
+    "storyFacebook": null,
+    "videoTiktok": null,
     "carrousel": null,
     "imageFacebook": null,
     "tutoriel": null
@@ -30379,6 +31364,9 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "voixOff": null,
     "story": null,
     "shortYoutube": null,
+    "videoYoutube": null,
+    "storyFacebook": null,
+    "videoTiktok": null,
     "carrousel": null,
     "imageFacebook": null,
     "tutoriel": null
@@ -30557,6 +31545,9 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "voixOff": null,
     "story": null,
     "shortYoutube": null,
+    "videoYoutube": null,
+    "storyFacebook": null,
+    "videoTiktok": null,
     "carrousel": null,
     "imageFacebook": null,
     "tutoriel": null
@@ -30735,6 +31726,9 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "voixOff": null,
     "story": null,
     "shortYoutube": null,
+    "videoYoutube": null,
+    "storyFacebook": null,
+    "videoTiktok": null,
     "carrousel": null,
     "imageFacebook": null,
     "tutoriel": null
@@ -30913,6 +31907,9 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "voixOff": null,
     "story": null,
     "shortYoutube": null,
+    "videoYoutube": null,
+    "storyFacebook": null,
+    "videoTiktok": null,
     "carrousel": null,
     "imageFacebook": null,
     "tutoriel": null
@@ -31091,6 +32088,9 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "voixOff": null,
     "story": null,
     "shortYoutube": null,
+    "videoYoutube": null,
+    "storyFacebook": null,
+    "videoTiktok": null,
     "carrousel": null,
     "imageFacebook": null,
     "tutoriel": null
@@ -31269,6 +32269,9 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "voixOff": null,
     "story": null,
     "shortYoutube": null,
+    "videoYoutube": null,
+    "storyFacebook": null,
+    "videoTiktok": null,
     "carrousel": null,
     "imageFacebook": null,
     "tutoriel": null
@@ -31455,6 +32458,12 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "format": "9:16 · 1080 × 1920 · 12,5 s",
       "url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/yt-EP174"
     },
+    "videoYoutube": {
+      "format": "16:9 · 1920 × 1080 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube-paysage/EP174.mp4"
+    },
+    "storyFacebook": null,
+    "videoTiktok": null,
     "carrousel": null,
     "imageFacebook": null,
     "tutoriel": null
@@ -31633,6 +32642,9 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "voixOff": null,
     "story": null,
     "shortYoutube": null,
+    "videoYoutube": null,
+    "storyFacebook": null,
+    "videoTiktok": null,
     "carrousel": null,
     "imageFacebook": null,
     "tutoriel": null
@@ -31811,6 +32823,9 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "voixOff": null,
     "story": null,
     "shortYoutube": null,
+    "videoYoutube": null,
+    "storyFacebook": null,
+    "videoTiktok": null,
     "carrousel": null,
     "imageFacebook": null,
     "tutoriel": null
@@ -31989,6 +33004,9 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "voixOff": null,
     "story": null,
     "shortYoutube": null,
+    "videoYoutube": null,
+    "storyFacebook": null,
+    "videoTiktok": null,
     "carrousel": null,
     "imageFacebook": null,
     "tutoriel": null
@@ -32167,6 +33185,9 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "voixOff": null,
     "story": null,
     "shortYoutube": null,
+    "videoYoutube": null,
+    "storyFacebook": null,
+    "videoTiktok": null,
     "carrousel": null,
     "imageFacebook": null,
     "tutoriel": null
@@ -32353,6 +33374,12 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "format": "9:16 · 1080 × 1920 · 12,5 s",
       "url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/yt-EP179"
     },
+    "videoYoutube": {
+      "format": "16:9 · 1920 × 1080 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube-paysage/EP179.mp4"
+    },
+    "storyFacebook": null,
+    "videoTiktok": null,
     "carrousel": null,
     "imageFacebook": null,
     "tutoriel": null
@@ -32539,6 +33566,12 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "format": "9:16 · 1080 × 1920 · 12,5 s",
       "url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/yt-EP180"
     },
+    "videoYoutube": {
+      "format": "16:9 · 1920 × 1080 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube-paysage/EP180.mp4"
+    },
+    "storyFacebook": null,
+    "videoTiktok": null,
     "carrousel": null,
     "imageFacebook": null,
     "tutoriel": null
@@ -32703,6 +33736,12 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "format": "9:16 · 1080 × 1920 · 12,5 s",
       "url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/yt-EP181"
     },
+    "videoYoutube": {
+      "format": "16:9 · 1920 × 1080 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube-paysage/EP181.mp4"
+    },
+    "storyFacebook": null,
+    "videoTiktok": null,
     "carrousel": null,
     "imageFacebook": null,
     "tutoriel": null
@@ -32864,6 +33903,9 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "url": null
     },
     "shortYoutube": null,
+    "videoYoutube": null,
+    "storyFacebook": null,
+    "videoTiktok": null,
     "carrousel": null,
     "imageFacebook": null,
     "tutoriel": null
@@ -33025,6 +34067,9 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "url": null
     },
     "shortYoutube": null,
+    "videoYoutube": null,
+    "storyFacebook": null,
+    "videoTiktok": null,
     "carrousel": null,
     "imageFacebook": null,
     "tutoriel": null
@@ -33186,6 +34231,9 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "url": null
     },
     "shortYoutube": null,
+    "videoYoutube": null,
+    "storyFacebook": null,
+    "videoTiktok": null,
     "carrousel": null,
     "imageFacebook": null,
     "tutoriel": null
@@ -33347,6 +34395,9 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "url": null
     },
     "shortYoutube": null,
+    "videoYoutube": null,
+    "storyFacebook": null,
+    "videoTiktok": null,
     "carrousel": null,
     "imageFacebook": null,
     "tutoriel": null
@@ -33508,6 +34559,9 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "url": null
     },
     "shortYoutube": null,
+    "videoYoutube": null,
+    "storyFacebook": null,
+    "videoTiktok": null,
     "carrousel": null,
     "imageFacebook": null,
     "tutoriel": null
@@ -33669,6 +34723,9 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "url": null
     },
     "shortYoutube": null,
+    "videoYoutube": null,
+    "storyFacebook": null,
+    "videoTiktok": null,
     "carrousel": null,
     "imageFacebook": null,
     "tutoriel": null
@@ -33830,6 +34887,9 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "url": null
     },
     "shortYoutube": null,
+    "videoYoutube": null,
+    "storyFacebook": null,
+    "videoTiktok": null,
     "carrousel": null,
     "imageFacebook": null,
     "tutoriel": null
@@ -33991,6 +35051,9 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "url": null
     },
     "shortYoutube": null,
+    "videoYoutube": null,
+    "storyFacebook": null,
+    "videoTiktok": null,
     "carrousel": null,
     "imageFacebook": null,
     "tutoriel": null
@@ -34152,6 +35215,9 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "url": null
     },
     "shortYoutube": null,
+    "videoYoutube": null,
+    "storyFacebook": null,
+    "videoTiktok": null,
     "carrousel": null,
     "imageFacebook": null,
     "tutoriel": null
@@ -34313,6 +35379,9 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "url": null
     },
     "shortYoutube": null,
+    "videoYoutube": null,
+    "storyFacebook": null,
+    "videoTiktok": null,
     "carrousel": null,
     "imageFacebook": null,
     "tutoriel": null
@@ -34474,6 +35543,9 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "url": null
     },
     "shortYoutube": null,
+    "videoYoutube": null,
+    "storyFacebook": null,
+    "videoTiktok": null,
     "carrousel": null,
     "imageFacebook": null,
     "tutoriel": null
@@ -34635,6 +35707,9 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "url": null
     },
     "shortYoutube": null,
+    "videoYoutube": null,
+    "storyFacebook": null,
+    "videoTiktok": null,
     "carrousel": null,
     "imageFacebook": null,
     "tutoriel": null
@@ -34796,6 +35871,9 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "url": null
     },
     "shortYoutube": null,
+    "videoYoutube": null,
+    "storyFacebook": null,
+    "videoTiktok": null,
     "carrousel": null,
     "imageFacebook": null,
     "tutoriel": null
@@ -34957,6 +36035,9 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "url": null
     },
     "shortYoutube": null,
+    "videoYoutube": null,
+    "storyFacebook": null,
+    "videoTiktok": null,
     "carrousel": null,
     "imageFacebook": null,
     "tutoriel": null
@@ -35118,6 +36199,9 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "url": null
     },
     "shortYoutube": null,
+    "videoYoutube": null,
+    "storyFacebook": null,
+    "videoTiktok": null,
     "carrousel": null,
     "imageFacebook": null,
     "tutoriel": null
@@ -35279,6 +36363,9 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "url": null
     },
     "shortYoutube": null,
+    "videoYoutube": null,
+    "storyFacebook": null,
+    "videoTiktok": null,
     "carrousel": null,
     "imageFacebook": null,
     "tutoriel": null
@@ -35440,6 +36527,9 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "url": null
     },
     "shortYoutube": null,
+    "videoYoutube": null,
+    "storyFacebook": null,
+    "videoTiktok": null,
     "carrousel": null,
     "imageFacebook": null,
     "tutoriel": null
@@ -35601,6 +36691,9 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "url": null
     },
     "shortYoutube": null,
+    "videoYoutube": null,
+    "storyFacebook": null,
+    "videoTiktok": null,
     "carrousel": null,
     "imageFacebook": null,
     "tutoriel": null
@@ -35762,6 +36855,9 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "url": null
     },
     "shortYoutube": null,
+    "videoYoutube": null,
+    "storyFacebook": null,
+    "videoTiktok": null,
     "carrousel": null,
     "imageFacebook": null,
     "tutoriel": null
@@ -35923,6 +37019,9 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "url": null
     },
     "shortYoutube": null,
+    "videoYoutube": null,
+    "storyFacebook": null,
+    "videoTiktok": null,
     "carrousel": null,
     "imageFacebook": null,
     "tutoriel": null
@@ -36084,6 +37183,9 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "url": null
     },
     "shortYoutube": null,
+    "videoYoutube": null,
+    "storyFacebook": null,
+    "videoTiktok": null,
     "carrousel": null,
     "imageFacebook": null,
     "tutoriel": null
@@ -36245,6 +37347,9 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "url": null
     },
     "shortYoutube": null,
+    "videoYoutube": null,
+    "storyFacebook": null,
+    "videoTiktok": null,
     "carrousel": null,
     "imageFacebook": null,
     "tutoriel": null
@@ -36406,6 +37511,9 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "url": null
     },
     "shortYoutube": null,
+    "videoYoutube": null,
+    "storyFacebook": null,
+    "videoTiktok": null,
     "carrousel": null,
     "imageFacebook": null,
     "tutoriel": null
@@ -36567,6 +37675,9 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "url": null
     },
     "shortYoutube": null,
+    "videoYoutube": null,
+    "storyFacebook": null,
+    "videoTiktok": null,
     "carrousel": null,
     "imageFacebook": null,
     "tutoriel": null
@@ -36728,6 +37839,9 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "url": null
     },
     "shortYoutube": null,
+    "videoYoutube": null,
+    "storyFacebook": null,
+    "videoTiktok": null,
     "carrousel": null,
     "imageFacebook": null,
     "tutoriel": null
@@ -36889,6 +38003,9 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "url": null
     },
     "shortYoutube": null,
+    "videoYoutube": null,
+    "storyFacebook": null,
+    "videoTiktok": null,
     "carrousel": null,
     "imageFacebook": null,
     "tutoriel": null
@@ -37050,6 +38167,9 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "url": null
     },
     "shortYoutube": null,
+    "videoYoutube": null,
+    "storyFacebook": null,
+    "videoTiktok": null,
     "carrousel": null,
     "imageFacebook": null,
     "tutoriel": null
@@ -37211,6 +38331,9 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "url": null
     },
     "shortYoutube": null,
+    "videoYoutube": null,
+    "storyFacebook": null,
+    "videoTiktok": null,
     "carrousel": null,
     "imageFacebook": null,
     "tutoriel": null
@@ -37372,6 +38495,9 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "url": null
     },
     "shortYoutube": null,
+    "videoYoutube": null,
+    "storyFacebook": null,
+    "videoTiktok": null,
     "carrousel": null,
     "imageFacebook": null,
     "tutoriel": null
@@ -37536,6 +38662,12 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "format": "9:16 · 1080 × 1920 · 12,5 s",
       "url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/yt-EP211"
     },
+    "videoYoutube": {
+      "format": "16:9 · 1920 × 1080 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube-paysage/EP211.mp4"
+    },
+    "storyFacebook": null,
+    "videoTiktok": null,
     "carrousel": null,
     "imageFacebook": null,
     "tutoriel": null
@@ -37697,6 +38829,9 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "url": null
     },
     "shortYoutube": null,
+    "videoYoutube": null,
+    "storyFacebook": null,
+    "videoTiktok": null,
     "carrousel": null,
     "imageFacebook": null,
     "tutoriel": null
@@ -37861,6 +38996,12 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "format": "9:16 · 1080 × 1920 · 12,5 s",
       "url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/yt-EP213"
     },
+    "videoYoutube": {
+      "format": "16:9 · 1920 × 1080 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube-paysage/EP213.mp4"
+    },
+    "storyFacebook": null,
+    "videoTiktok": null,
     "carrousel": null,
     "imageFacebook": null,
     "tutoriel": null
@@ -38022,6 +39163,9 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "url": null
     },
     "shortYoutube": null,
+    "videoYoutube": null,
+    "storyFacebook": null,
+    "videoTiktok": null,
     "carrousel": null,
     "imageFacebook": null,
     "tutoriel": null
@@ -38183,6 +39327,9 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "url": null
     },
     "shortYoutube": null,
+    "videoYoutube": null,
+    "storyFacebook": null,
+    "videoTiktok": null,
     "carrousel": null,
     "imageFacebook": null,
     "tutoriel": null
@@ -38344,6 +39491,9 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "url": null
     },
     "shortYoutube": null,
+    "videoYoutube": null,
+    "storyFacebook": null,
+    "videoTiktok": null,
     "carrousel": null,
     "imageFacebook": null,
     "tutoriel": null
@@ -38505,6 +39655,9 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "url": null
     },
     "shortYoutube": null,
+    "videoYoutube": null,
+    "storyFacebook": null,
+    "videoTiktok": null,
     "carrousel": null,
     "imageFacebook": null,
     "tutoriel": null
@@ -38666,6 +39819,9 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "url": null
     },
     "shortYoutube": null,
+    "videoYoutube": null,
+    "storyFacebook": null,
+    "videoTiktok": null,
     "carrousel": null,
     "imageFacebook": null,
     "tutoriel": null
@@ -38827,6 +39983,9 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "url": null
     },
     "shortYoutube": null,
+    "videoYoutube": null,
+    "storyFacebook": null,
+    "videoTiktok": null,
     "carrousel": null,
     "imageFacebook": null,
     "tutoriel": null
@@ -38988,6 +40147,9 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "url": null
     },
     "shortYoutube": null,
+    "videoYoutube": null,
+    "storyFacebook": null,
+    "videoTiktok": null,
     "carrousel": null,
     "imageFacebook": null,
     "tutoriel": null
@@ -39149,6 +40311,9 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "url": null
     },
     "shortYoutube": null,
+    "videoYoutube": null,
+    "storyFacebook": null,
+    "videoTiktok": null,
     "carrousel": null,
     "imageFacebook": null,
     "tutoriel": null
@@ -39310,6 +40475,9 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "url": null
     },
     "shortYoutube": null,
+    "videoYoutube": null,
+    "storyFacebook": null,
+    "videoTiktok": null,
     "carrousel": null,
     "imageFacebook": null,
     "tutoriel": null
@@ -39471,6 +40639,9 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "url": null
     },
     "shortYoutube": null,
+    "videoYoutube": null,
+    "storyFacebook": null,
+    "videoTiktok": null,
     "carrousel": null,
     "imageFacebook": null,
     "tutoriel": null
@@ -39632,6 +40803,9 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "url": null
     },
     "shortYoutube": null,
+    "videoYoutube": null,
+    "storyFacebook": null,
+    "videoTiktok": null,
     "carrousel": null,
     "imageFacebook": null,
     "tutoriel": null
@@ -39793,6 +40967,9 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "url": null
     },
     "shortYoutube": null,
+    "videoYoutube": null,
+    "storyFacebook": null,
+    "videoTiktok": null,
     "carrousel": null,
     "imageFacebook": null,
     "tutoriel": null
@@ -39954,6 +41131,9 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "url": null
     },
     "shortYoutube": null,
+    "videoYoutube": null,
+    "storyFacebook": null,
+    "videoTiktok": null,
     "carrousel": null,
     "imageFacebook": null,
     "tutoriel": null
@@ -40115,6 +41295,9 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "url": null
     },
     "shortYoutube": null,
+    "videoYoutube": null,
+    "storyFacebook": null,
+    "videoTiktok": null,
     "carrousel": null,
     "imageFacebook": null,
     "tutoriel": null
@@ -40276,6 +41459,9 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "url": null
     },
     "shortYoutube": null,
+    "videoYoutube": null,
+    "storyFacebook": null,
+    "videoTiktok": null,
     "carrousel": null,
     "imageFacebook": null,
     "tutoriel": null
@@ -40437,6 +41623,9 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "url": null
     },
     "shortYoutube": null,
+    "videoYoutube": null,
+    "storyFacebook": null,
+    "videoTiktok": null,
     "carrousel": null,
     "imageFacebook": null,
     "tutoriel": null
@@ -40598,6 +41787,9 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "url": null
     },
     "shortYoutube": null,
+    "videoYoutube": null,
+    "storyFacebook": null,
+    "videoTiktok": null,
     "carrousel": null,
     "imageFacebook": null,
     "tutoriel": null
@@ -40759,6 +41951,9 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "url": null
     },
     "shortYoutube": null,
+    "videoYoutube": null,
+    "storyFacebook": null,
+    "videoTiktok": null,
     "carrousel": null,
     "imageFacebook": null,
     "tutoriel": null
@@ -40920,6 +42115,9 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "url": null
     },
     "shortYoutube": null,
+    "videoYoutube": null,
+    "storyFacebook": null,
+    "videoTiktok": null,
     "carrousel": null,
     "imageFacebook": null,
     "tutoriel": null
@@ -41081,6 +42279,9 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "url": null
     },
     "shortYoutube": null,
+    "videoYoutube": null,
+    "storyFacebook": null,
+    "videoTiktok": null,
     "carrousel": null,
     "imageFacebook": null,
     "tutoriel": null
@@ -41242,6 +42443,9 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "url": null
     },
     "shortYoutube": null,
+    "videoYoutube": null,
+    "storyFacebook": null,
+    "videoTiktok": null,
     "carrousel": null,
     "imageFacebook": null,
     "tutoriel": null
@@ -41403,6 +42607,9 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "url": null
     },
     "shortYoutube": null,
+    "videoYoutube": null,
+    "storyFacebook": null,
+    "videoTiktok": null,
     "carrousel": null,
     "imageFacebook": null,
     "tutoriel": null
@@ -41564,6 +42771,9 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "url": null
     },
     "shortYoutube": null,
+    "videoYoutube": null,
+    "storyFacebook": null,
+    "videoTiktok": null,
     "carrousel": null,
     "imageFacebook": null,
     "tutoriel": null
@@ -41725,6 +42935,9 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "url": null
     },
     "shortYoutube": null,
+    "videoYoutube": null,
+    "storyFacebook": null,
+    "videoTiktok": null,
     "carrousel": null,
     "imageFacebook": null,
     "tutoriel": null
@@ -41886,6 +43099,9 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "url": null
     },
     "shortYoutube": null,
+    "videoYoutube": null,
+    "storyFacebook": null,
+    "videoTiktok": null,
     "carrousel": null,
     "imageFacebook": null,
     "tutoriel": null
@@ -42047,6 +43263,9 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "url": null
     },
     "shortYoutube": null,
+    "videoYoutube": null,
+    "storyFacebook": null,
+    "videoTiktok": null,
     "carrousel": null,
     "imageFacebook": null,
     "tutoriel": null
@@ -42208,6 +43427,9 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "url": null
     },
     "shortYoutube": null,
+    "videoYoutube": null,
+    "storyFacebook": null,
+    "videoTiktok": null,
     "carrousel": null,
     "imageFacebook": null,
     "tutoriel": null
@@ -42323,6 +43545,12 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "format": "9:16 · 1080 × 1920 · 12,5 s",
       "url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/yt-EP301"
     },
+    "videoYoutube": {
+      "format": "16:9 · 1920 × 1080 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube-paysage/EP301.mp4"
+    },
+    "storyFacebook": null,
+    "videoTiktok": null,
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
       "planches": [
@@ -42470,6 +43698,9 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "url": null
     },
     "shortYoutube": null,
+    "videoYoutube": null,
+    "storyFacebook": null,
+    "videoTiktok": null,
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
       "planches": [
@@ -42617,6 +43848,9 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "url": null
     },
     "shortYoutube": null,
+    "videoYoutube": null,
+    "storyFacebook": null,
+    "videoTiktok": null,
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
       "planches": [
@@ -42764,6 +43998,9 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "url": null
     },
     "shortYoutube": null,
+    "videoYoutube": null,
+    "storyFacebook": null,
+    "videoTiktok": null,
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
       "planches": [
@@ -42911,6 +44148,9 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "url": null
     },
     "shortYoutube": null,
+    "videoYoutube": null,
+    "storyFacebook": null,
+    "videoTiktok": null,
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
       "planches": [
@@ -43058,6 +44298,9 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "url": null
     },
     "shortYoutube": null,
+    "videoYoutube": null,
+    "storyFacebook": null,
+    "videoTiktok": null,
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
       "planches": [
@@ -43205,6 +44448,9 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "url": null
     },
     "shortYoutube": null,
+    "videoYoutube": null,
+    "storyFacebook": null,
+    "videoTiktok": null,
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
       "planches": [
@@ -43352,6 +44598,9 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "url": null
     },
     "shortYoutube": null,
+    "videoYoutube": null,
+    "storyFacebook": null,
+    "videoTiktok": null,
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
       "planches": [
@@ -43499,6 +44748,9 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "url": null
     },
     "shortYoutube": null,
+    "videoYoutube": null,
+    "storyFacebook": null,
+    "videoTiktok": null,
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
       "planches": [
@@ -43646,6 +44898,9 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "url": null
     },
     "shortYoutube": null,
+    "videoYoutube": null,
+    "storyFacebook": null,
+    "videoTiktok": null,
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
       "planches": [
@@ -43793,6 +45048,9 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "url": null
     },
     "shortYoutube": null,
+    "videoYoutube": null,
+    "storyFacebook": null,
+    "videoTiktok": null,
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
       "planches": [
@@ -43940,6 +45198,9 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "url": null
     },
     "shortYoutube": null,
+    "videoYoutube": null,
+    "storyFacebook": null,
+    "videoTiktok": null,
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
       "planches": [
@@ -44087,6 +45348,9 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "url": null
     },
     "shortYoutube": null,
+    "videoYoutube": null,
+    "storyFacebook": null,
+    "videoTiktok": null,
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
       "planches": [
@@ -44234,6 +45498,9 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "url": null
     },
     "shortYoutube": null,
+    "videoYoutube": null,
+    "storyFacebook": null,
+    "videoTiktok": null,
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
       "planches": [
@@ -44381,6 +45648,9 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "url": null
     },
     "shortYoutube": null,
+    "videoYoutube": null,
+    "storyFacebook": null,
+    "videoTiktok": null,
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
       "planches": [
@@ -44528,6 +45798,9 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "url": null
     },
     "shortYoutube": null,
+    "videoYoutube": null,
+    "storyFacebook": null,
+    "videoTiktok": null,
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
       "planches": [
@@ -44675,6 +45948,9 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "url": null
     },
     "shortYoutube": null,
+    "videoYoutube": null,
+    "storyFacebook": null,
+    "videoTiktok": null,
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
       "planches": [
@@ -44822,6 +46098,9 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "url": null
     },
     "shortYoutube": null,
+    "videoYoutube": null,
+    "storyFacebook": null,
+    "videoTiktok": null,
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
       "planches": [
@@ -44969,6 +46248,9 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "url": null
     },
     "shortYoutube": null,
+    "videoYoutube": null,
+    "storyFacebook": null,
+    "videoTiktok": null,
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
       "planches": [
@@ -45116,6 +46398,9 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "url": null
     },
     "shortYoutube": null,
+    "videoYoutube": null,
+    "storyFacebook": null,
+    "videoTiktok": null,
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
       "planches": [
@@ -45263,6 +46548,9 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "url": null
     },
     "shortYoutube": null,
+    "videoYoutube": null,
+    "storyFacebook": null,
+    "videoTiktok": null,
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
       "planches": [
@@ -45410,6 +46698,9 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "url": null
     },
     "shortYoutube": null,
+    "videoYoutube": null,
+    "storyFacebook": null,
+    "videoTiktok": null,
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
       "planches": [
@@ -45557,6 +46848,9 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "url": null
     },
     "shortYoutube": null,
+    "videoYoutube": null,
+    "storyFacebook": null,
+    "videoTiktok": null,
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
       "planches": [
@@ -45704,6 +46998,9 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "url": null
     },
     "shortYoutube": null,
+    "videoYoutube": null,
+    "storyFacebook": null,
+    "videoTiktok": null,
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
       "planches": [
@@ -45851,6 +47148,9 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "url": null
     },
     "shortYoutube": null,
+    "videoYoutube": null,
+    "storyFacebook": null,
+    "videoTiktok": null,
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
       "planches": [
@@ -45998,6 +47298,9 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "url": null
     },
     "shortYoutube": null,
+    "videoYoutube": null,
+    "storyFacebook": null,
+    "videoTiktok": null,
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
       "planches": [
@@ -46145,6 +47448,9 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "url": null
     },
     "shortYoutube": null,
+    "videoYoutube": null,
+    "storyFacebook": null,
+    "videoTiktok": null,
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
       "planches": [
@@ -46292,6 +47598,9 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "url": null
     },
     "shortYoutube": null,
+    "videoYoutube": null,
+    "storyFacebook": null,
+    "videoTiktok": null,
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
       "planches": [
@@ -46439,6 +47748,9 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "url": null
     },
     "shortYoutube": null,
+    "videoYoutube": null,
+    "storyFacebook": null,
+    "videoTiktok": null,
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
       "planches": [
@@ -46586,6 +47898,9 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "url": null
     },
     "shortYoutube": null,
+    "videoYoutube": null,
+    "storyFacebook": null,
+    "videoTiktok": null,
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
       "planches": [
@@ -46733,6 +48048,9 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "url": null
     },
     "shortYoutube": null,
+    "videoYoutube": null,
+    "storyFacebook": null,
+    "videoTiktok": null,
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
       "planches": [
@@ -46883,6 +48201,12 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "format": "9:16 · 1080 × 1920 · 12,5 s",
       "url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/yt-EP401"
     },
+    "videoYoutube": {
+      "format": "16:9 · 1920 × 1080 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube-paysage/EP401.mp4"
+    },
+    "storyFacebook": null,
+    "videoTiktok": null,
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
       "planches": [
@@ -47030,6 +48354,9 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "url": null
     },
     "shortYoutube": null,
+    "videoYoutube": null,
+    "storyFacebook": null,
+    "videoTiktok": null,
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
       "planches": [
@@ -47177,6 +48504,9 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "url": null
     },
     "shortYoutube": null,
+    "videoYoutube": null,
+    "storyFacebook": null,
+    "videoTiktok": null,
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
       "planches": [
@@ -47324,6 +48654,9 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "url": null
     },
     "shortYoutube": null,
+    "videoYoutube": null,
+    "storyFacebook": null,
+    "videoTiktok": null,
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
       "planches": [
@@ -47471,6 +48804,9 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "url": null
     },
     "shortYoutube": null,
+    "videoYoutube": null,
+    "storyFacebook": null,
+    "videoTiktok": null,
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
       "planches": [
@@ -47618,6 +48954,9 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "url": null
     },
     "shortYoutube": null,
+    "videoYoutube": null,
+    "storyFacebook": null,
+    "videoTiktok": null,
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
       "planches": [
@@ -47765,6 +49104,9 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "url": null
     },
     "shortYoutube": null,
+    "videoYoutube": null,
+    "storyFacebook": null,
+    "videoTiktok": null,
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
       "planches": [
@@ -47912,6 +49254,9 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "url": null
     },
     "shortYoutube": null,
+    "videoYoutube": null,
+    "storyFacebook": null,
+    "videoTiktok": null,
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
       "planches": [
@@ -48059,6 +49404,9 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "url": null
     },
     "shortYoutube": null,
+    "videoYoutube": null,
+    "storyFacebook": null,
+    "videoTiktok": null,
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
       "planches": [
@@ -48206,6 +49554,9 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "url": null
     },
     "shortYoutube": null,
+    "videoYoutube": null,
+    "storyFacebook": null,
+    "videoTiktok": null,
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
       "planches": [
@@ -48353,6 +49704,9 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "url": null
     },
     "shortYoutube": null,
+    "videoYoutube": null,
+    "storyFacebook": null,
+    "videoTiktok": null,
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
       "planches": [
@@ -48500,6 +49854,9 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "url": null
     },
     "shortYoutube": null,
+    "videoYoutube": null,
+    "storyFacebook": null,
+    "videoTiktok": null,
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
       "planches": [
@@ -48647,6 +50004,9 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "url": null
     },
     "shortYoutube": null,
+    "videoYoutube": null,
+    "storyFacebook": null,
+    "videoTiktok": null,
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
       "planches": [
@@ -48794,6 +50154,9 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "url": null
     },
     "shortYoutube": null,
+    "videoYoutube": null,
+    "storyFacebook": null,
+    "videoTiktok": null,
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
       "planches": [
@@ -48941,6 +50304,9 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "url": null
     },
     "shortYoutube": null,
+    "videoYoutube": null,
+    "storyFacebook": null,
+    "videoTiktok": null,
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
       "planches": [
@@ -49088,6 +50454,9 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "url": null
     },
     "shortYoutube": null,
+    "videoYoutube": null,
+    "storyFacebook": null,
+    "videoTiktok": null,
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
       "planches": [
@@ -49235,6 +50604,9 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "url": null
     },
     "shortYoutube": null,
+    "videoYoutube": null,
+    "storyFacebook": null,
+    "videoTiktok": null,
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
       "planches": [
@@ -49385,6 +50757,12 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "format": "9:16 · 1080 × 1920 · 12,5 s",
       "url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/yt-EP418"
     },
+    "videoYoutube": {
+      "format": "16:9 · 1920 × 1080 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube-paysage/EP418.mp4"
+    },
+    "storyFacebook": null,
+    "videoTiktok": null,
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
       "planches": [
@@ -49532,6 +50910,9 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "url": null
     },
     "shortYoutube": null,
+    "videoYoutube": null,
+    "storyFacebook": null,
+    "videoTiktok": null,
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
       "planches": [
@@ -49679,6 +51060,9 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "url": null
     },
     "shortYoutube": null,
+    "videoYoutube": null,
+    "storyFacebook": null,
+    "videoTiktok": null,
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
       "planches": [
@@ -49826,6 +51210,9 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "url": null
     },
     "shortYoutube": null,
+    "videoYoutube": null,
+    "storyFacebook": null,
+    "videoTiktok": null,
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
       "planches": [
@@ -49973,6 +51360,9 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "url": null
     },
     "shortYoutube": null,
+    "videoYoutube": null,
+    "storyFacebook": null,
+    "videoTiktok": null,
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
       "planches": [
@@ -50120,6 +51510,9 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "url": null
     },
     "shortYoutube": null,
+    "videoYoutube": null,
+    "storyFacebook": null,
+    "videoTiktok": null,
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
       "planches": [
@@ -50267,6 +51660,9 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "url": null
     },
     "shortYoutube": null,
+    "videoYoutube": null,
+    "storyFacebook": null,
+    "videoTiktok": null,
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
       "planches": [
@@ -50414,6 +51810,9 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "url": null
     },
     "shortYoutube": null,
+    "videoYoutube": null,
+    "storyFacebook": null,
+    "videoTiktok": null,
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
       "planches": [
@@ -50561,6 +51960,9 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "url": null
     },
     "shortYoutube": null,
+    "videoYoutube": null,
+    "storyFacebook": null,
+    "videoTiktok": null,
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
       "planches": [
@@ -50708,6 +52110,9 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "url": null
     },
     "shortYoutube": null,
+    "videoYoutube": null,
+    "storyFacebook": null,
+    "videoTiktok": null,
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
       "planches": [
@@ -50855,6 +52260,9 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "url": null
     },
     "shortYoutube": null,
+    "videoYoutube": null,
+    "storyFacebook": null,
+    "videoTiktok": null,
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
       "planches": [
@@ -51002,6 +52410,9 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "url": null
     },
     "shortYoutube": null,
+    "videoYoutube": null,
+    "storyFacebook": null,
+    "videoTiktok": null,
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
       "planches": [
@@ -51149,6 +52560,9 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "url": null
     },
     "shortYoutube": null,
+    "videoYoutube": null,
+    "storyFacebook": null,
+    "videoTiktok": null,
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
       "planches": [
@@ -51296,6 +52710,9 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "url": null
     },
     "shortYoutube": null,
+    "videoYoutube": null,
+    "storyFacebook": null,
+    "videoTiktok": null,
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
       "planches": [
@@ -51498,6 +52915,12 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "format": "9:16 · 1080 × 1920 · 12,5 s",
       "url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/yt-EP501"
     },
+    "videoYoutube": {
+      "format": "16:9 · 1920 × 1080 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube-paysage/EP501.mp4"
+    },
+    "storyFacebook": null,
+    "videoTiktok": null,
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
       "planches": [
@@ -51700,6 +53123,12 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "format": "9:16 · 1080 × 1920 · 12,5 s",
       "url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/yt-EP502"
     },
+    "videoYoutube": {
+      "format": "16:9 · 1920 × 1080 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube-paysage/EP502.mp4"
+    },
+    "storyFacebook": null,
+    "videoTiktok": null,
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
       "planches": [
@@ -51902,6 +53331,12 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "format": "9:16 · 1080 × 1920 · 12,5 s",
       "url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/yt-EP503"
     },
+    "videoYoutube": {
+      "format": "16:9 · 1920 × 1080 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube-paysage/EP503.mp4"
+    },
+    "storyFacebook": null,
+    "videoTiktok": null,
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
       "planches": [
@@ -52104,6 +53539,12 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "format": "9:16 · 1080 × 1920 · 12,5 s",
       "url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/yt-EP504"
     },
+    "videoYoutube": {
+      "format": "16:9 · 1920 × 1080 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube-paysage/EP504.mp4"
+    },
+    "storyFacebook": null,
+    "videoTiktok": null,
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
       "planches": [
@@ -52306,6 +53747,12 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "format": "9:16 · 1080 × 1920 · 12,5 s",
       "url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/yt-EP505"
     },
+    "videoYoutube": {
+      "format": "16:9 · 1920 × 1080 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube-paysage/EP505.mp4"
+    },
+    "storyFacebook": null,
+    "videoTiktok": null,
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
       "planches": [
@@ -52508,6 +53955,12 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "format": "9:16 · 1080 × 1920 · 12,5 s",
       "url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/yt-EP506"
     },
+    "videoYoutube": {
+      "format": "16:9 · 1920 × 1080 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube-paysage/EP506.mp4"
+    },
+    "storyFacebook": null,
+    "videoTiktok": null,
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
       "planches": [
@@ -52710,6 +54163,12 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "format": "9:16 · 1080 × 1920 · 12,5 s",
       "url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/yt-EP507"
     },
+    "videoYoutube": {
+      "format": "16:9 · 1920 × 1080 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube-paysage/EP507.mp4"
+    },
+    "storyFacebook": null,
+    "videoTiktok": null,
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
       "planches": [
@@ -52912,6 +54371,12 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "format": "9:16 · 1080 × 1920 · 12,5 s",
       "url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/yt-EP508"
     },
+    "videoYoutube": {
+      "format": "16:9 · 1920 × 1080 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube-paysage/EP508.mp4"
+    },
+    "storyFacebook": null,
+    "videoTiktok": null,
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
       "planches": [
@@ -53114,6 +54579,12 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "format": "9:16 · 1080 × 1920 · 12,5 s",
       "url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/yt-EP509"
     },
+    "videoYoutube": {
+      "format": "16:9 · 1920 × 1080 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube-paysage/EP509.mp4"
+    },
+    "storyFacebook": null,
+    "videoTiktok": null,
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
       "planches": [
@@ -53316,6 +54787,12 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "format": "9:16 · 1080 × 1920 · 12,5 s",
       "url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/yt-EP510"
     },
+    "videoYoutube": {
+      "format": "16:9 · 1920 × 1080 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube-paysage/EP510.mp4"
+    },
+    "storyFacebook": null,
+    "videoTiktok": null,
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
       "planches": [
@@ -53518,6 +54995,12 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "format": "9:16 · 1080 × 1920 · 12,5 s",
       "url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/yt-EP511"
     },
+    "videoYoutube": {
+      "format": "16:9 · 1920 × 1080 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube-paysage/EP511.mp4"
+    },
+    "storyFacebook": null,
+    "videoTiktok": null,
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
       "planches": [
@@ -53720,6 +55203,12 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "format": "9:16 · 1080 × 1920 · 12,5 s",
       "url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/yt-EP512"
     },
+    "videoYoutube": {
+      "format": "16:9 · 1920 × 1080 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube-paysage/EP512.mp4"
+    },
+    "storyFacebook": null,
+    "videoTiktok": null,
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
       "planches": [
@@ -53922,6 +55411,12 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "format": "9:16 · 1080 × 1920 · 12,5 s",
       "url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/yt-EP513"
     },
+    "videoYoutube": {
+      "format": "16:9 · 1920 × 1080 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube-paysage/EP513.mp4"
+    },
+    "storyFacebook": null,
+    "videoTiktok": null,
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
       "planches": [
@@ -54124,6 +55619,12 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "format": "9:16 · 1080 × 1920 · 12,5 s",
       "url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/yt-EP514"
     },
+    "videoYoutube": {
+      "format": "16:9 · 1920 × 1080 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube-paysage/EP514.mp4"
+    },
+    "storyFacebook": null,
+    "videoTiktok": null,
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
       "planches": [
@@ -54326,6 +55827,12 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "format": "9:16 · 1080 × 1920 · 12,5 s",
       "url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/yt-EP515"
     },
+    "videoYoutube": {
+      "format": "16:9 · 1920 × 1080 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube-paysage/EP515.mp4"
+    },
+    "storyFacebook": null,
+    "videoTiktok": null,
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
       "planches": [
@@ -54528,6 +56035,12 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "format": "9:16 · 1080 × 1920 · 12,5 s",
       "url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/yt-EP516"
     },
+    "videoYoutube": {
+      "format": "16:9 · 1920 × 1080 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube-paysage/EP516.mp4"
+    },
+    "storyFacebook": null,
+    "videoTiktok": null,
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
       "planches": [
@@ -54730,6 +56243,12 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "format": "9:16 · 1080 × 1920 · 12,5 s",
       "url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/yt-EP517"
     },
+    "videoYoutube": {
+      "format": "16:9 · 1920 × 1080 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube-paysage/EP517.mp4"
+    },
+    "storyFacebook": null,
+    "videoTiktok": null,
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
       "planches": [
@@ -54932,6 +56451,12 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "format": "9:16 · 1080 × 1920 · 12,5 s",
       "url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/yt-EP518"
     },
+    "videoYoutube": {
+      "format": "16:9 · 1920 × 1080 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube-paysage/EP518.mp4"
+    },
+    "storyFacebook": null,
+    "videoTiktok": null,
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
       "planches": [
@@ -55134,6 +56659,12 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "format": "9:16 · 1080 × 1920 · 12,5 s",
       "url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/yt-EP519"
     },
+    "videoYoutube": {
+      "format": "16:9 · 1920 × 1080 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube-paysage/EP519.mp4"
+    },
+    "storyFacebook": null,
+    "videoTiktok": null,
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
       "planches": [
@@ -55336,6 +56867,12 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "format": "9:16 · 1080 × 1920 · 12,5 s",
       "url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/yt-EP520"
     },
+    "videoYoutube": {
+      "format": "16:9 · 1920 × 1080 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube-paysage/EP520.mp4"
+    },
+    "storyFacebook": null,
+    "videoTiktok": null,
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
       "planches": [
@@ -55538,6 +57075,12 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "format": "9:16 · 1080 × 1920 · 12,5 s",
       "url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/yt-EP521"
     },
+    "videoYoutube": {
+      "format": "16:9 · 1920 × 1080 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube-paysage/EP521.mp4"
+    },
+    "storyFacebook": null,
+    "videoTiktok": null,
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
       "planches": [
@@ -55740,6 +57283,12 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "format": "9:16 · 1080 × 1920 · 12,5 s",
       "url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/yt-EP522"
     },
+    "videoYoutube": {
+      "format": "16:9 · 1920 × 1080 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube-paysage/EP522.mp4"
+    },
+    "storyFacebook": null,
+    "videoTiktok": null,
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
       "planches": [
@@ -55939,6 +57488,9 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       }
     },
     "shortYoutube": null,
+    "videoYoutube": null,
+    "storyFacebook": null,
+    "videoTiktok": null,
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
       "planches": [
@@ -56138,6 +57690,9 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       }
     },
     "shortYoutube": null,
+    "videoYoutube": null,
+    "storyFacebook": null,
+    "videoTiktok": null,
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
       "planches": [
@@ -56340,6 +57895,12 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "format": "9:16 · 1080 × 1920 · 12,5 s",
       "url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/yt-EP525"
     },
+    "videoYoutube": {
+      "format": "16:9 · 1920 × 1080 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube-paysage/EP525.mp4"
+    },
+    "storyFacebook": null,
+    "videoTiktok": null,
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
       "planches": [
@@ -56542,6 +58103,12 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "format": "9:16 · 1080 × 1920 · 12,5 s",
       "url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/yt-EP526"
     },
+    "videoYoutube": {
+      "format": "16:9 · 1920 × 1080 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube-paysage/EP526.mp4"
+    },
+    "storyFacebook": null,
+    "videoTiktok": null,
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
       "planches": [
@@ -56744,6 +58311,12 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "format": "9:16 · 1080 × 1920 · 12,5 s",
       "url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/yt-EP527"
     },
+    "videoYoutube": {
+      "format": "16:9 · 1920 × 1080 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube-paysage/EP527.mp4"
+    },
+    "storyFacebook": null,
+    "videoTiktok": null,
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
       "planches": [
@@ -56943,6 +58516,9 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       }
     },
     "shortYoutube": null,
+    "videoYoutube": null,
+    "storyFacebook": null,
+    "videoTiktok": null,
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
       "planches": [
@@ -57145,6 +58721,12 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "format": "9:16 · 1080 × 1920 · 12,5 s",
       "url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/yt-EP529"
     },
+    "videoYoutube": {
+      "format": "16:9 · 1920 × 1080 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube-paysage/EP529.mp4"
+    },
+    "storyFacebook": null,
+    "videoTiktok": null,
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
       "planches": [
@@ -57347,6 +58929,12 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "format": "9:16 · 1080 × 1920 · 12,5 s",
       "url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/yt-EP530"
     },
+    "videoYoutube": {
+      "format": "16:9 · 1920 × 1080 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube-paysage/EP530.mp4"
+    },
+    "storyFacebook": null,
+    "videoTiktok": null,
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
       "planches": [
@@ -57549,6 +59137,12 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "format": "9:16 · 1080 × 1920 · 12,5 s",
       "url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/yt-EP531"
     },
+    "videoYoutube": {
+      "format": "16:9 · 1920 × 1080 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube-paysage/EP531.mp4"
+    },
+    "storyFacebook": null,
+    "videoTiktok": null,
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
       "planches": [
@@ -57751,6 +59345,12 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "format": "9:16 · 1080 × 1920 · 12,5 s",
       "url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/yt-EP532"
     },
+    "videoYoutube": {
+      "format": "16:9 · 1920 × 1080 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube-paysage/EP532.mp4"
+    },
+    "storyFacebook": null,
+    "videoTiktok": null,
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
       "planches": [
@@ -57950,6 +59550,9 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       }
     },
     "shortYoutube": null,
+    "videoYoutube": null,
+    "storyFacebook": null,
+    "videoTiktok": null,
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
       "planches": [
@@ -58149,6 +59752,9 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       }
     },
     "shortYoutube": null,
+    "videoYoutube": null,
+    "storyFacebook": null,
+    "videoTiktok": null,
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
       "planches": [
@@ -58348,6 +59954,9 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       }
     },
     "shortYoutube": null,
+    "videoYoutube": null,
+    "storyFacebook": null,
+    "videoTiktok": null,
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
       "planches": [
