@@ -41,8 +41,9 @@ def main():
 
     hooks = {p.stem for p in (R / "dist" / "hooks").glob("*.mp4")}
     stories = {p.stem for p in (R / "dist" / "stories").glob("*.mp4")}
+    shorts = {p.stem for p in (R / "dist" / "youtube").glob("*.mp4")}
 
-    clips, sts, deja = 0, 0, 0
+    clips, sts, yts, deja = 0, 0, 0, 0
     for s in d["series"]:
         for sa in s["saisons"]:
             for e in sa["episodes"]:
@@ -88,13 +89,32 @@ def main():
                     st["url"] = url
                     sts += 1
 
+                # Le Short YouTube, même règle encore. Il n'existe que pour un
+                # épisode qui a déjà une story, puisqu'il en est la suite.
+                sh = e.get("shortYoutube")
+                pose = (sh or {}).get("url")
+                url = repris.get("shortUrl") or pose or (
+                    f"{BRUT}/youtube/{i}.mp4" if i in shorts else None
+                )
+                if url and url != pose:
+                    if sh is None:
+                        sh = e["shortYoutube"] = {
+                            "format": "9:16 · 1080 × 1920 · 12,5 s",
+                            "url": None,
+                        }
+                    sh["url"] = url
+                    yts += 1
+
     open(INVENTAIRE, "w", encoding="utf-8").write(json.dumps(d, ensure_ascii=False, indent=2))
 
     eps = [e for s in d["series"] for sa in s["saisons"] for e in sa["episodes"]]
     total_clips = sum(1 for e in eps if e["higgsfield"].get("videoSourceUrl"))
     total_st = sum(1 for e in eps if (e.get("story") or {}).get("url"))
-    print(f"{clips} clip(s) et {sts} story(ies) reliés — {deja} clips l'étaient déjà")
-    print(f"inventaire : {total_clips} clips, {total_st} stories sur {len(eps)} épisodes")
+    total_yt = sum(1 for e in eps if (e.get("shortYoutube") or {}).get("url"))
+    print(f"{clips} clip(s), {sts} story(ies) et {yts} Short(s) reliés — "
+          f"{deja} clips l'étaient déjà")
+    print(f"inventaire : {total_clips} clips, {total_st} stories, {total_yt} Shorts "
+          f"sur {len(eps)} épisodes")
 
     orphelins = sorted(hooks - {e["id"] for e in eps})
     if orphelins:

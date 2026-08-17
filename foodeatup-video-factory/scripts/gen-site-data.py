@@ -112,6 +112,12 @@ export type FormatsSociaux = {{
       voix: string;
     }} | null;
   }} | null;
+  /** Short YouTube : la story, plus un carton de fin.
+
+      YouTube est le seul réseau où la vidéo se cherche au lieu d'être croisée
+      dans un fil. La story s'y arrête sur rien ; le carton pose le titre, la
+      série et la chaîne. Même image, deux secondes et demie de plus. */
+  shortYoutube?: {{ format: string; url: string | null }} | null;
   /** Carrousel LinkedIn : quatre planches, converties en PDF sur le site. */
   carrousel?: {{ format: string; planches: PlancheCarrousel[] }} | null;
   /** Visuel Facebook : une image qui se comprend seule. */
@@ -213,6 +219,7 @@ def main():
                 # parce que le site lit `episode.storyUrl` — une projection,
                 # pas une copie : il n'y a qu'un endroit à corriger.
                 e["storyUrl"] = (e.get("story") or {}).get("url")
+                e["shortUrl"] = (e.get("shortYoutube") or {}).get("url")
                 contenu[e["id"]] = {
                     "publications": pubs,
                     "promptVignette": e.pop("promptVignette", ""),
@@ -250,6 +257,7 @@ def main():
                     # de l'épisode.
                     "voixOff": e.pop("voixOff", None),
                     "story": e.pop("story", None),
+                    "shortYoutube": e.pop("shortYoutube", None),
                     "carrousel": e.pop("carrousel", None),
                     "imageFacebook": e.pop("imageFacebook", None),
                     "tutoriel": {k: t.pop(k, None) for k in TEXTE_TUTO} if t else None,

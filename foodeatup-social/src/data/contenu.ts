@@ -76,6 +76,12 @@ export type FormatsSociaux = {
       voix: string;
     } | null;
   } | null;
+  /** Short YouTube : la story, plus un carton de fin.
+
+      YouTube est le seul réseau où la vidéo se cherche au lieu d'être croisée
+      dans un fil. La story s'y arrête sur rien ; le carton pose le titre, la
+      série et la chaîne. Même image, deux secondes et demie de plus. */
+  shortYoutube?: { format: string; url: string | null } | null;
   /** Carrousel LinkedIn : quatre planches, converties en PDF sur le site. */
   carrousel?: { format: string; planches: PlancheCarrousel[] } | null;
   /** Visuel Facebook : une image qui se comprend seule. */
@@ -258,6 +264,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "punchline": "Sauf que lui, il est patient. Tes clients, non",
       "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP001.mp4"
     },
+    "shortYoutube": {
+      "format": "9:16 · 1080 × 1920 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube/EP001.mp4"
+    },
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
       "planches": [
@@ -437,6 +447,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "hook": "Ton service du samedi soir",
       "punchline": "Ça finit toujours par terre",
       "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP002.mp4"
+    },
+    "shortYoutube": {
+      "format": "9:16 · 1080 × 1920 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube/EP002.mp4"
     },
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
@@ -619,6 +633,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "punchline": "Elle coule. On va la repêcher",
       "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP003.mp4"
     },
+    "shortYoutube": {
+      "format": "9:16 · 1080 × 1920 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube/EP003.mp4"
+    },
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
       "planches": [
@@ -788,6 +806,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "punchline": "Il gère mieux que ton logiciel actuel",
       "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP004.mp4"
     },
+    "shortYoutube": {
+      "format": "9:16 · 1080 × 1920 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube/EP004.mp4"
+    },
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
       "planches": [
@@ -949,6 +971,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "hook": "Trois logiciels. Deux mains",
       "punchline": "Un seul outil, ça change tout",
       "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP005.mp4"
+    },
+    "shortYoutube": {
+      "format": "9:16 · 1080 × 1920 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube/EP005.mp4"
     },
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
@@ -1120,6 +1146,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "hook": "Ta pizza part plus vite que ton stock",
       "punchline": "Enfin… c'était avant",
       "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP006.mp4"
+    },
+    "shortYoutube": {
+      "format": "9:16 · 1080 × 1920 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube/EP006.mp4"
     },
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
@@ -1297,6 +1327,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "punchline": "Les quatre cents autres, on s'en occupe",
       "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP007.mp4"
     },
+    "shortYoutube": {
+      "format": "9:16 · 1080 × 1920 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube/EP007.mp4"
+    },
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
       "planches": [
@@ -1469,6 +1503,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "hook": "Fin de mois. Encore",
       "punchline": "Et si la compta se faisait toute seule ",
       "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP008.mp4"
+    },
+    "shortYoutube": {
+      "format": "9:16 · 1080 × 1920 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube/EP008.mp4"
     },
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
@@ -1651,6 +1689,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "punchline": "Ton abonnement logiciel, par exemple",
       "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP009.mp4"
     },
+    "shortYoutube": {
+      "format": "9:16 · 1080 × 1920 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube/EP009.mp4"
+    },
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
       "planches": [
@@ -1819,6 +1861,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "hook": "Toi, devant ta facture logicielle",
       "punchline": "Mille euros par mois. Pour dix outils qui ne se parlent pas",
       "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP010.mp4"
+    },
+    "shortYoutube": {
+      "format": "9:16 · 1080 × 1920 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube/EP010.mp4"
     },
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
@@ -1998,6 +2044,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "punchline": "Avec, tout arrive à bon port",
       "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP011.mp4"
     },
+    "shortYoutube": {
+      "format": "9:16 · 1080 × 1920 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube/EP011.mp4"
+    },
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
       "planches": [
@@ -2172,6 +2222,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "hook": "Temps d'attente : « on regarde »",
       "punchline": "Avec un KDS, il regarde son plat arriver",
       "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP012.mp4"
+    },
+    "shortYoutube": {
+      "format": "9:16 · 1080 × 1920 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube/EP012.mp4"
     },
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
@@ -2348,6 +2402,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "hook": "Dix logiciels. Dix notifications",
       "punchline": "Un seul, ça suffisait",
       "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP013.mp4"
+    },
+    "shortYoutube": {
+      "format": "9:16 · 1080 × 1920 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube/EP013.mp4"
     },
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
@@ -2529,6 +2587,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "punchline": "Lui au moins, il sait ce qu'il y a en stock",
       "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP014.mp4"
     },
+    "shortYoutube": {
+      "format": "9:16 · 1080 × 1920 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube/EP014.mp4"
+    },
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
       "planches": [
@@ -2702,6 +2764,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "punchline": "Une pièce bouge, tout s'écroule",
       "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP015.mp4"
     },
+    "shortYoutube": {
+      "format": "9:16 · 1080 × 1920 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube/EP015.mp4"
+    },
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
       "planches": [
@@ -2874,6 +2940,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "hook": "Tes coûts, ce trimestre",
       "punchline": "On va refermer le robinet",
       "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP016.mp4"
+    },
+    "shortYoutube": {
+      "format": "9:16 · 1080 × 1920 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube/EP016.mp4"
     },
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
@@ -3058,6 +3128,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "punchline": "Ni à ta marge",
       "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP017.mp4"
     },
+    "shortYoutube": {
+      "format": "9:16 · 1080 × 1920 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube/EP017.mp4"
+    },
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
       "planches": [
@@ -3236,6 +3310,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "hook": "Le rush de vingt heures",
       "punchline": "Sauve ton service, pas ton dos",
       "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP018.mp4"
+    },
+    "shortYoutube": {
+      "format": "9:16 · 1080 × 1920 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube/EP018.mp4"
     },
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
@@ -3420,6 +3498,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "punchline": "Ça rebondit rarement tout seul",
       "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP019.mp4"
     },
+    "shortYoutube": {
+      "format": "9:16 · 1080 × 1920 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube/EP019.mp4"
+    },
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
       "planches": [
@@ -3595,6 +3677,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "hook": "Lui, il a réservé",
       "punchline": "Tes vrais clients aussi devraient pouvoir",
       "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP020.mp4"
+    },
+    "shortYoutube": {
+      "format": "9:16 · 1080 × 1920 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube/EP020.mp4"
     },
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
@@ -3774,6 +3860,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "hook": "Le vrai ennemi du service",
       "punchline": "Un KDS, et le combat s'arrête",
       "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP021.mp4"
+    },
+    "shortYoutube": {
+      "format": "9:16 · 1080 × 1920 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube/EP021.mp4"
     },
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
@@ -3956,6 +4046,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "punchline": "Pour dix logiciels qui ne se parlent même pas",
       "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP022.mp4"
     },
+    "shortYoutube": {
+      "format": "9:16 · 1080 × 1920 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube/EP022.mp4"
+    },
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
       "planches": [
@@ -4130,6 +4224,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "hook": "Ton automatisation actuelle",
       "punchline": "Automatiser, oui. Mais bien",
       "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP023.mp4"
+    },
+    "shortYoutube": {
+      "format": "9:16 · 1080 × 1920 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube/EP023.mp4"
     },
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
@@ -4308,6 +4406,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "punchline": "Récupère tes commandes en direct",
       "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP024.mp4"
     },
+    "shortYoutube": {
+      "format": "9:16 · 1080 × 1920 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube/EP024.mp4"
+    },
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
       "planches": [
@@ -4480,6 +4582,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "hook": "Quand tu lances une promo sans données",
       "punchline": "Ça éclabousse. Et rarement toi",
       "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP025.mp4"
+    },
+    "shortYoutube": {
+      "format": "9:16 · 1080 × 1920 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube/EP025.mp4"
     },
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
@@ -4663,6 +4769,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "punchline": "Prévois, au lieu de subir",
       "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP026.mp4"
     },
+    "shortYoutube": {
+      "format": "9:16 · 1080 × 1920 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube/EP026.mp4"
+    },
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
       "planches": [
@@ -4843,6 +4953,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "punchline": "Il suffit d'un truc mal placé",
       "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP027.mp4"
     },
+    "shortYoutube": {
+      "format": "9:16 · 1080 × 1920 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube/EP027.mp4"
+    },
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
       "planches": [
@@ -5011,6 +5125,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "hook": "Tes commandes en ligne, un vendredi",
       "punchline": "Tout arrive. Nulle part",
       "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP028.mp4"
+    },
+    "shortYoutube": {
+      "format": "9:16 · 1080 × 1920 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube/EP028.mp4"
     },
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
@@ -5188,6 +5306,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "punchline": "Personne ne devrait travailler comme ça",
       "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP029.mp4"
     },
+    "shortYoutube": {
+      "format": "9:16 · 1080 × 1920 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube/EP029.mp4"
+    },
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
       "planches": [
@@ -5359,6 +5481,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "punchline": "Forme-le en un clic avec l'Académy",
       "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP030.mp4"
     },
+    "shortYoutube": {
+      "format": "9:16 · 1080 × 1920 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube/EP030.mp4"
+    },
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
       "planches": [
@@ -5527,6 +5653,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "hook": "C'est quoi, ça ",
       "punchline": "Sans DLC tracées, personne ne sait",
       "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP031.mp4"
+    },
+    "shortYoutube": {
+      "format": "9:16 · 1080 × 1920 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube/EP031.mp4"
     },
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
@@ -5711,6 +5841,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "punchline": "Une fiche technique, et c'est pareil tous les jours",
       "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP032.mp4"
     },
+    "shortYoutube": {
+      "format": "9:16 · 1080 × 1920 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube/EP032.mp4"
+    },
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
       "planches": [
@@ -5893,6 +6027,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "punchline": "Ce qui n'est pas suivi finit par disparaître",
       "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP033.mp4"
     },
+    "shortYoutube": {
+      "format": "9:16 · 1080 × 1920 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube/EP033.mp4"
+    },
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
       "planches": [
@@ -6066,6 +6204,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "punchline": "Ça marche. Jusqu'au jour où ça ne marche plus",
       "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP034.mp4"
     },
+    "shortYoutube": {
+      "format": "9:16 · 1080 × 1920 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube/EP034.mp4"
+    },
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
       "planches": [
@@ -6234,6 +6376,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "hook": "Ta terrasse, un jour de vent",
       "punchline": "Certaines choses se prévoient",
       "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP035.mp4"
+    },
+    "shortYoutube": {
+      "format": "9:16 · 1080 × 1920 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube/EP035.mp4"
     },
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
@@ -6413,6 +6559,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "punchline": "Additionne-les. Vraiment",
       "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP036.mp4"
     },
+    "shortYoutube": {
+      "format": "9:16 · 1080 × 1920 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube/EP036.mp4"
+    },
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
       "planches": [
@@ -6581,6 +6731,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "hook": "Fermeture. Troisième soir d'affilée",
       "punchline": "Un planning bien fait, ça se voit sur les visages",
       "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP037.mp4"
+    },
+    "shortYoutube": {
+      "format": "9:16 · 1080 × 1920 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube/EP037.mp4"
     },
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
@@ -6763,6 +6917,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "punchline": "Commander à l'instinct, ça finit toujours en course",
       "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP038.mp4"
     },
+    "shortYoutube": {
+      "format": "9:16 · 1080 × 1920 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube/EP038.mp4"
+    },
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
       "planches": [
@@ -6940,6 +7098,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "hook": "L'imprévu du service",
       "punchline": "Il y en aura d'autres. Autant être prêt",
       "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP039.mp4"
+    },
+    "shortYoutube": {
+      "format": "9:16 · 1080 × 1920 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube/EP039.mp4"
     },
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
@@ -7120,6 +7282,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "hook": "Ton stock de basilic",
       "punchline": "Ce qui n'est pas compté disparaît toujours",
       "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP040.mp4"
+    },
+    "shortYoutube": {
+      "format": "9:16 · 1080 × 1920 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube/EP040.mp4"
     },
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
@@ -7304,6 +7470,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "punchline": "Ce qui part au sol, tu le paies quand même",
       "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP041.mp4"
     },
+    "shortYoutube": {
+      "format": "9:16 · 1080 × 1920 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube/EP041.mp4"
+    },
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
       "planches": [
@@ -7479,6 +7649,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "hook": "Tout faire seul",
       "punchline": "À un moment, il faut être aidé",
       "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP042.mp4"
+    },
+    "shortYoutube": {
+      "format": "9:16 · 1080 × 1920 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube/EP042.mp4"
     },
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
@@ -7656,6 +7830,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "punchline": "Mis bout à bout, ça fait ta marge",
       "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP043.mp4"
     },
+    "shortYoutube": {
+      "format": "9:16 · 1080 × 1920 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube/EP043.mp4"
+    },
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
       "planches": [
@@ -7822,6 +8000,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "hook": "Prendre la commande en 2026",
       "punchline": "La commande devrait partir en cuisine toute seule",
       "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP044.mp4"
+    },
+    "shortYoutube": {
+      "format": "9:16 · 1080 × 1920 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube/EP044.mp4"
     },
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
@@ -8005,6 +8187,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "punchline": "Ton restaurant non plus ne devrait pas être une boîte noire",
       "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP045.mp4"
     },
+    "shortYoutube": {
+      "format": "9:16 · 1080 × 1920 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube/EP045.mp4"
+    },
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
       "planches": [
@@ -8185,6 +8371,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "punchline": "Les petites erreurs coûtent cher quand personne ne les voit",
       "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP046.mp4"
     },
+    "shortYoutube": {
+      "format": "9:16 · 1080 × 1920 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube/EP046.mp4"
+    },
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
       "planches": [
@@ -8364,6 +8554,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "punchline": "Réceptionner, contrôler, tracer. Sans y penser",
       "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP047.mp4"
     },
+    "shortYoutube": {
+      "format": "9:16 · 1080 × 1920 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube/EP047.mp4"
+    },
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
       "planches": [
@@ -8535,6 +8729,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "hook": "Ce que tu construis chaque jour",
       "punchline": "Un système fragile finit toujours par tomber",
       "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP048.mp4"
+    },
+    "shortYoutube": {
+      "format": "9:16 · 1080 × 1920 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube/EP048.mp4"
     },
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
@@ -8714,6 +8912,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "hook": "Il envoie plus vite que ton pass",
       "punchline": "Un KDS, et la cuisine avance toute seule",
       "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP049.mp4"
+    },
+    "shortYoutube": {
+      "format": "9:16 · 1080 × 1920 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube/EP049.mp4"
     },
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
@@ -8897,6 +9099,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "punchline": "Il y a plus rapide pour former quelqu'un",
       "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP050.mp4"
     },
+    "shortYoutube": {
+      "format": "9:16 · 1080 × 1920 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube/EP050.mp4"
+    },
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
       "planches": [
@@ -9077,6 +9283,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "punchline": "Les process, ça évite ça",
       "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP051.mp4"
     },
+    "shortYoutube": {
+      "format": "9:16 · 1080 × 1920 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube/EP051.mp4"
+    },
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
       "planches": [
@@ -9252,6 +9462,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "hook": "Encore un truc qui te retient",
       "punchline": "Enlève-les tous, un par un",
       "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP052.mp4"
+    },
+    "shortYoutube": {
+      "format": "9:16 · 1080 × 1920 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube/EP052.mp4"
     },
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
@@ -9433,6 +9647,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "punchline": "Ta salle et ta file devraient se parler",
       "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP053.mp4"
     },
+    "shortYoutube": {
+      "format": "9:16 · 1080 × 1920 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube/EP053.mp4"
+    },
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
       "planches": [
@@ -9611,6 +9829,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "hook": "Ton prix ne raconte pas ton coût",
       "punchline": "Marge réelle par plat. Ça change les décisions",
       "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP054.mp4"
+    },
+    "shortYoutube": {
+      "format": "9:16 · 1080 × 1920 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube/EP054.mp4"
     },
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
@@ -9791,6 +10013,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "punchline": "Scanne. Classe. Oublie",
       "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP055.mp4"
     },
+    "shortYoutube": {
+      "format": "9:16 · 1080 × 1920 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube/EP055.mp4"
+    },
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
       "planches": [
@@ -9969,6 +10195,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "hook": "Il y a toujours un truc en trop",
       "punchline": "Ou en moins. Et tu le vois trop tard",
       "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP056.mp4"
+    },
+    "shortYoutube": {
+      "format": "9:16 · 1080 × 1920 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube/EP056.mp4"
     },
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
@@ -10150,6 +10380,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "punchline": "Un Z propre, en une minute",
       "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP057.mp4"
     },
+    "shortYoutube": {
+      "format": "9:16 · 1080 × 1920 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube/EP057.mp4"
+    },
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
       "planches": [
@@ -10319,6 +10553,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "punchline": "Anticiper, c'est aussi ça, le service",
       "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP058.mp4"
     },
+    "shortYoutube": {
+      "format": "9:16 · 1080 × 1920 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube/EP058.mp4"
+    },
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
       "planches": [
@@ -10487,6 +10725,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "hook": "Ta com', chaque matin",
       "punchline": "Il y a plus solide qu'une ardoise",
       "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP059.mp4"
+    },
+    "shortYoutube": {
+      "format": "9:16 · 1080 × 1920 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube/EP059.mp4"
     },
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
@@ -10667,6 +10909,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "punchline": "Ou alors, un seul outil fait le reste",
       "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP060.mp4"
     },
+    "shortYoutube": {
+      "format": "9:16 · 1080 × 1920 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube/EP060.mp4"
+    },
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
       "planches": [
@@ -10845,6 +11091,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "hook": "Ton système de pointage",
       "punchline": "Un badge, un QR code, un code PIN. Point",
       "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP061.mp4"
+    },
+    "shortYoutube": {
+      "format": "9:16 · 1080 × 1920 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube/EP061.mp4"
     },
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
@@ -11025,6 +11275,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "punchline": "Photo, heure, poste. Le débat est clos",
       "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP062.mp4"
     },
+    "shortYoutube": {
+      "format": "9:16 · 1080 × 1920 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube/EP062.mp4"
+    },
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
       "planches": [
@@ -11202,6 +11456,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "hook": "Ta demande de congé",
       "punchline": "Demandée, reçue, validée. Sans papier",
       "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP063.mp4"
+    },
+    "shortYoutube": {
+      "format": "9:16 · 1080 × 1920 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube/EP063.mp4"
     },
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
@@ -11383,6 +11641,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "punchline": "Par employé ou par poste. Imprimable. À jour",
       "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP064.mp4"
     },
+    "shortYoutube": {
+      "format": "9:16 · 1080 × 1920 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube/EP064.mp4"
+    },
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
       "planches": [
@@ -11562,6 +11824,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "hook": "Qui a accès à quoi ",
       "punchline": "Chaque rôle voit exactement ce qu'il doit voir",
       "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP065.mp4"
+    },
+    "shortYoutube": {
+      "format": "9:16 · 1080 × 1920 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube/EP065.mp4"
     },
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
@@ -11745,6 +12011,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "punchline": "Jarvis répond, lui. Et il note",
       "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP066.mp4"
     },
+    "shortYoutube": {
+      "format": "9:16 · 1080 × 1920 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube/EP066.mp4"
+    },
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
       "planches": [
@@ -11913,6 +12183,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "hook": "Ton relevé de température",
       "punchline": "Un vrai relevé, horodaté, par équipement",
       "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP067.mp4"
+    },
+    "shortYoutube": {
+      "format": "9:16 · 1080 × 1920 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube/EP067.mp4"
     },
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
@@ -12094,6 +12368,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "punchline": "Une étiquette DLC, et plus personne ne renifle",
       "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP068.mp4"
     },
+    "shortYoutube": {
+      "format": "9:16 · 1080 × 1920 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube/EP068.mp4"
+    },
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
       "planches": [
@@ -12262,6 +12540,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "hook": "Tu as vérifié la livraison ",
       "punchline": "Température, DLC, code EAN. En scannant",
       "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP069.mp4"
+    },
+    "shortYoutube": {
+      "format": "9:16 · 1080 × 1920 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube/EP069.mp4"
     },
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
@@ -12442,6 +12724,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "punchline": "Photo analysée par l'IA. Rapport objectif",
       "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP070.mp4"
     },
+    "shortYoutube": {
+      "format": "9:16 · 1080 × 1920 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube/EP070.mp4"
+    },
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
       "planches": [
@@ -12620,6 +12906,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "hook": "La check-list du soir",
       "punchline": "Cochée, horodatée, signée par qui l'a faite",
       "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP071.mp4"
+    },
+    "shortYoutube": {
+      "format": "9:16 · 1080 × 1920 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube/EP071.mp4"
     },
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
@@ -12800,6 +13090,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "punchline": "Tout l'historique HACCP, exporté en un clic",
       "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP072.mp4"
     },
+    "shortYoutube": {
+      "format": "9:16 · 1080 × 1920 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube/EP072.mp4"
+    },
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
       "planches": [
@@ -12971,6 +13265,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "hook": "Combien tu commandes pour samedi ",
       "punchline": "Tes ventes le savent. Demande-leur",
       "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP073.mp4"
+    },
+    "shortYoutube": {
+      "format": "9:16 · 1080 × 1920 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube/EP073.mp4"
     },
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
@@ -13145,6 +13443,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "punchline": "Elle se construit toute seule. Et elle part au fournisseur",
       "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP074.mp4"
     },
+    "shortYoutube": {
+      "format": "9:16 · 1080 × 1920 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube/EP074.mp4"
+    },
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
       "planches": [
@@ -13316,6 +13618,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "hook": "Ta facture fournisseur",
       "punchline": "Photographie-la. Les prix se mettent à jour seuls",
       "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP075.mp4"
+    },
+    "shortYoutube": {
+      "format": "9:16 · 1080 × 1920 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube/EP075.mp4"
     },
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
@@ -13489,6 +13795,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "punchline": "La production sort les ingrédients du stock. Automatiquement",
       "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP076.mp4"
     },
+    "shortYoutube": {
+      "format": "9:16 · 1080 × 1920 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube/EP076.mp4"
+    },
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
       "planches": [
@@ -13660,6 +13970,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "hook": "Ton devis pour le mariage de samedi",
       "punchline": "Devis, envoi, acceptation, facture. Une seule chaîne",
       "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP077.mp4"
+    },
+    "shortYoutube": {
+      "format": "9:16 · 1080 × 1920 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube/EP077.mp4"
     },
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
@@ -13834,6 +14148,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "punchline": "Chaque dépense rattachée à sa livraison. Toute l'année",
       "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP078.mp4"
     },
+    "shortYoutube": {
+      "format": "9:16 · 1080 × 1920 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube/EP078.mp4"
+    },
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
       "planches": [
@@ -14006,6 +14324,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "punchline": "Un compte, tous les canaux, zéro carton",
       "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP079.mp4"
     },
+    "shortYoutube": {
+      "format": "9:16 · 1080 × 1920 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube/EP079.mp4"
+    },
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
       "planches": [
@@ -14177,6 +14499,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "hook": "Ouverture. Fond de caisse : ",
       "punchline": "Fond déclaré, opérateur identifié, service ouvert",
       "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP080.mp4"
+    },
+    "shortYoutube": {
+      "format": "9:16 · 1080 × 1920 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube/EP080.mp4"
     },
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
@@ -14353,6 +14679,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "punchline": "Oui. Par personne, par article, par montant",
       "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP081.mp4"
     },
+    "shortYoutube": {
+      "format": "9:16 · 1080 × 1920 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube/EP081.mp4"
+    },
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
       "planches": [
@@ -14528,6 +14858,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "hook": "Il manque un centime",
       "punchline": "Le Z calcule l'écart. Toi, tu rentres chez toi",
       "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP082.mp4"
+    },
+    "shortYoutube": {
+      "format": "9:16 · 1080 × 1920 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube/EP082.mp4"
     },
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
@@ -14706,6 +15040,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "punchline": "Chaque poste voit ses plats. Sans crier",
       "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP083.mp4"
     },
+    "shortYoutube": {
+      "format": "9:16 · 1080 × 1920 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube/EP083.mp4"
+    },
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
       "planches": [
@@ -14869,6 +15207,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "hook": "Commander à table",
       "punchline": "Un plan de salle, un QR par table. Ça marche",
       "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP084.mp4"
+    },
+    "shortYoutube": {
+      "format": "9:16 · 1080 × 1920 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube/EP084.mp4"
     },
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
@@ -15046,6 +15388,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "punchline": "No-show marqué, table libérée, soirée sauvée",
       "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP085.mp4"
     },
+    "shortYoutube": {
+      "format": "9:16 · 1080 × 1920 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube/EP085.mp4"
+    },
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
       "planches": [
@@ -15209,6 +15555,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "hook": "Trois appels manqués pendant le coup de feu",
       "punchline": "Caroline décroche. Et elle prend la réservation",
       "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP086.mp4"
+    },
+    "shortYoutube": {
+      "format": "9:16 · 1080 × 1920 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube/EP086.mp4"
     },
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
@@ -15383,6 +15733,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "hook": "Trois plateformes. Trois écrans",
       "punchline": "Une seule cuisine. Un seul flux",
       "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP087.mp4"
+    },
+    "shortYoutube": {
+      "format": "9:16 · 1080 × 1920 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube/EP087.mp4"
     },
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
@@ -15560,6 +15914,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "punchline": "Vu, répondu, traité. Le jour même",
       "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP088.mp4"
     },
+    "shortYoutube": {
+      "format": "9:16 · 1080 × 1920 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube/EP088.mp4"
+    },
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
       "planches": [
@@ -15726,6 +16084,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "hook": "Ton jeu concours",
       "punchline": "QR code, roue cadeaux, gagnants tracés",
       "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP089.mp4"
+    },
+    "shortYoutube": {
+      "format": "9:16 · 1080 × 1920 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube/EP089.mp4"
     },
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
@@ -15904,6 +16266,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "punchline": "PrediBot lit tes données. Pas ton café",
       "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP090.mp4"
     },
+    "shortYoutube": {
+      "format": "9:16 · 1080 × 1920 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube/EP090.mp4"
+    },
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
       "planches": [
@@ -16080,6 +16446,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "hook": "Anniversaire de table 12",
       "punchline": "Les surprises, c'est bien. Les imprévus, non",
       "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP091.mp4"
+    },
+    "shortYoutube": {
+      "format": "9:16 · 1080 × 1920 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube/EP091.mp4"
     },
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
@@ -16259,6 +16629,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "punchline": "Ses quatre-vingts fans, non",
       "url": null
     },
+    "shortYoutube": null,
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
       "planches": [
@@ -16439,6 +16810,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "punchline": "Anticiper, c'est moins sportif",
       "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP093.mp4"
     },
+    "shortYoutube": {
+      "format": "9:16 · 1080 × 1920 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube/EP093.mp4"
+    },
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
       "planches": [
@@ -16617,6 +16992,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "punchline": "Autant que tes commandes arrivent au bon endroit",
       "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP094.mp4"
     },
+    "shortYoutube": {
+      "format": "9:16 · 1080 × 1920 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube/EP094.mp4"
+    },
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
       "planches": [
@@ -16791,6 +17170,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "hook": "Le service s'est arrêté deux minutes",
       "punchline": "Le reste du temps, il ne devrait jamais s'arrêter",
       "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP095.mp4"
+    },
+    "shortYoutube": {
+      "format": "9:16 · 1080 × 1920 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube/EP095.mp4"
     },
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
@@ -16967,6 +17350,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "hook": "39° en cuisine",
       "punchline": "Une alerte température, et tu sauves la marchandise",
       "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP096.mp4"
+    },
+    "shortYoutube": {
+      "format": "9:16 · 1080 × 1920 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube/EP096.mp4"
     },
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
@@ -17150,6 +17537,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "punchline": "Une seule commande, un seul écran",
       "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP097.mp4"
     },
+    "shortYoutube": {
+      "format": "9:16 · 1080 × 1920 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube/EP097.mp4"
+    },
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
       "planches": [
@@ -17326,6 +17717,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "punchline": "L'IA, c'est utile quand elle sert à quelque chose",
       "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP098.mp4"
     },
+    "shortYoutube": {
+      "format": "9:16 · 1080 × 1920 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube/EP098.mp4"
+    },
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
       "planches": [
@@ -17498,6 +17893,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "hook": "Quarante appels pendant le rush",
       "punchline": "Quelqu'un devrait répondre. Ce ne sera pas toi",
       "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP099.mp4"
+    },
+    "shortYoutube": {
+      "format": "9:16 · 1080 × 1920 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube/EP099.mp4"
     },
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
@@ -17674,6 +18073,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "hook": "Il a mis vingt minutes à filmer",
       "punchline": "Et deux minutes à te mettre deux étoiles",
       "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP100.mp4"
+    },
+    "shortYoutube": {
+      "format": "9:16 · 1080 × 1920 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube/EP100.mp4"
     },
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
@@ -17854,6 +18257,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "punchline": "Ça devrait être une ligne, pas une enquête",
       "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP101.mp4"
     },
+    "shortYoutube": {
+      "format": "9:16 · 1080 × 1920 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube/EP101.mp4"
+    },
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
       "planches": [
@@ -18022,6 +18429,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "hook": "Contrôle surprise. Ou pas",
       "punchline": "Le jour où c'est le vrai, tu ne bouges pas",
       "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP102.mp4"
+    },
+    "shortYoutube": {
+      "format": "9:16 · 1080 × 1920 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube/EP102.mp4"
     },
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
@@ -18200,6 +18611,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "punchline": "Prévenu, tu aurais dit oui",
       "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP103.mp4"
     },
+    "shortYoutube": {
+      "format": "9:16 · 1080 × 1920 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube/EP103.mp4"
+    },
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
       "planches": [
@@ -18377,6 +18792,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "punchline": "Un no-show, ça se prévient",
       "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP104.mp4"
     },
+    "shortYoutube": {
+      "format": "9:16 · 1080 × 1920 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube/EP104.mp4"
+    },
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
       "planches": [
@@ -18552,6 +18971,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "hook": "Dernière table du samedi",
       "punchline": "Le plus rapide gagne. Rends-la réservable en ligne",
       "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP105.mp4"
+    },
+    "shortYoutube": {
+      "format": "9:16 · 1080 × 1920 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube/EP105.mp4"
     },
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
@@ -18729,6 +19152,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "punchline": "Oui. En trois secondes, pas en trente minutes",
       "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP106.mp4"
     },
+    "shortYoutube": {
+      "format": "9:16 · 1080 × 1920 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube/EP106.mp4"
+    },
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
       "planches": [
@@ -18898,6 +19325,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "punchline": "Ta caisse, elle, ne perd jamais une addition",
       "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP107.mp4"
     },
+    "shortYoutube": {
+      "format": "9:16 · 1080 × 1920 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube/EP107.mp4"
+    },
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
       "planches": [
@@ -19065,6 +19496,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "hook": "Il te faudrait six bras",
       "punchline": "Ou un seul outil qui fait le reste",
       "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP108.mp4"
+    },
+    "shortYoutube": {
+      "format": "9:16 · 1080 × 1920 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube/EP108.mp4"
     },
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
@@ -19240,6 +19675,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "hook": "Ta cave à ferments",
       "punchline": "Suivie et datée, elle ne t'explose pas à la figure",
       "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP109.mp4"
+    },
+    "shortYoutube": {
+      "format": "9:16 · 1080 × 1920 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube/EP109.mp4"
     },
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
@@ -19423,6 +19862,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "punchline": "Regarde surtout lesquelles se vendent",
       "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP110.mp4"
     },
+    "shortYoutube": {
+      "format": "9:16 · 1080 × 1920 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube/EP110.mp4"
+    },
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
       "planches": [
@@ -19603,6 +20046,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "punchline": "Le futur utile, c'est celui qui te fait gagner du temps",
       "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP111.mp4"
     },
+    "shortYoutube": {
+      "format": "9:16 · 1080 × 1920 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube/EP111.mp4"
+    },
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
       "planches": [
@@ -19780,6 +20227,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "hook": "La carte du futur",
       "punchline": "Ou juste une carte en ligne qui marche",
       "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP112.mp4"
+    },
+    "shortYoutube": {
+      "format": "9:16 · 1080 × 1920 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube/EP112.mp4"
     },
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
@@ -19960,6 +20411,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "punchline": "Un suivi de commande, et personne ne mange ta pizza",
       "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP113.mp4"
     },
+    "shortYoutube": {
+      "format": "9:16 · 1080 × 1920 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube/EP113.mp4"
+    },
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
       "planches": [
@@ -20130,6 +20585,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "hook": "Ton community manager, c'est ta brigade",
       "punchline": "Poste. Mais garde un œil sur le service",
       "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP114.mp4"
+    },
+    "shortYoutube": {
+      "format": "9:16 · 1080 × 1920 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube/EP114.mp4"
     },
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
@@ -20313,6 +20772,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "punchline": "Compte ce qui rentre. Et ce qui sort",
       "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP115.mp4"
     },
+    "shortYoutube": {
+      "format": "9:16 · 1080 × 1920 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube/EP115.mp4"
+    },
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
       "planches": [
@@ -20491,6 +20954,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "hook": "Ton système de commandes",
       "punchline": "Il tient sur un mur. Il tiendrait sur un écran",
       "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP116.mp4"
+    },
+    "shortYoutube": {
+      "format": "9:16 · 1080 × 1920 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube/EP116.mp4"
     },
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
@@ -20675,6 +21142,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "punchline": "Une fiche technique, et c'est dix minutes tous les jours",
       "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP117.mp4"
     },
+    "shortYoutube": {
+      "format": "9:16 · 1080 × 1920 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube/EP117.mp4"
+    },
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
       "planches": [
@@ -20853,6 +21324,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "punchline": "Ils feraient la queue chez toi aussi. Encore faut-il pouvoir réserver",
       "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP118.mp4"
     },
+    "shortYoutube": {
+      "format": "9:16 · 1080 × 1920 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube/EP118.mp4"
+    },
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
       "planches": [
@@ -21025,6 +21500,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "hook": "Ta stratégie d'acquisition",
       "punchline": "Cinq cents tracts, zéro donnée",
       "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP119.mp4"
+    },
+    "shortYoutube": {
+      "format": "9:16 · 1080 × 1920 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube/EP119.mp4"
     },
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
@@ -21206,6 +21685,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "punchline": "Ils ne se parlent toujours pas. FoodEatUp, si",
       "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP120.mp4"
     },
+    "shortYoutube": {
+      "format": "9:16 · 1080 × 1920 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube/EP120.mp4"
+    },
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
       "planches": [
@@ -21384,6 +21867,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "punchline": "Une commande complexe, ça se saisit. Pas ça se subit",
       "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP121.mp4"
     },
+    "shortYoutube": {
+      "format": "9:16 · 1080 × 1920 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube/EP121.mp4"
+    },
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
       "planches": [
@@ -21557,6 +22044,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "hook": "Il dit « comme d'habitude »",
       "punchline": "Ton fichier client saurait, lui",
       "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP122.mp4"
+    },
+    "shortYoutube": {
+      "format": "9:16 · 1080 × 1920 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube/EP122.mp4"
     },
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
@@ -21738,6 +22229,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "punchline": "Les régimes et les allergènes, ça se note à la réservation",
       "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP123.mp4"
     },
+    "shortYoutube": {
+      "format": "9:16 · 1080 × 1920 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube/EP123.mp4"
+    },
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
       "planches": [
@@ -21918,6 +22413,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "punchline": "Le service a une fin. Ton logiciel devrait le savoir",
       "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP124.mp4"
     },
+    "shortYoutube": {
+      "format": "9:16 · 1080 × 1920 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube/EP124.mp4"
+    },
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
       "planches": [
@@ -22079,6 +22578,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "hook": "Je serais mieux là, non ",
       "punchline": "Ton plan de salle, c'est toi qui le décides",
       "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP125.mp4"
+    },
+    "shortYoutube": {
+      "format": "9:16 · 1080 × 1920 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube/EP125.mp4"
     },
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
@@ -22260,6 +22763,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "punchline": "Partage l'assiette. Pas l'addition, elle se divise toute seule",
       "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP126.mp4"
     },
+    "shortYoutube": {
+      "format": "9:16 · 1080 × 1920 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube/EP126.mp4"
+    },
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
       "planches": [
@@ -22426,6 +22933,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "hook": "Bonne année à tout le monde",
       "punchline": "Sauf à celui qui gère les deux cents couverts",
       "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP127.mp4"
+    },
+    "shortYoutube": {
+      "format": "9:16 · 1080 × 1920 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube/EP127.mp4"
     },
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
@@ -22604,6 +23115,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "punchline": "Ça rentre. La question, c'est si ça revient",
       "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP128.mp4"
     },
+    "shortYoutube": {
+      "format": "9:16 · 1080 × 1920 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube/EP128.mp4"
+    },
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
       "planches": [
@@ -22776,6 +23291,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "hook": "Premier rayon de soleil de l'année",
       "punchline": "Ta terrasse ouvre. Ton service doit suivre",
       "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP129.mp4"
+    },
+    "shortYoutube": {
+      "format": "9:16 · 1080 × 1920 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube/EP129.mp4"
     },
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
@@ -22950,6 +23469,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "hook": "21 juin. Devant ta porte",
       "punchline": "Autant que les gens sachent que tu es ouvert",
       "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP130.mp4"
+    },
+    "shortYoutube": {
+      "format": "9:16 · 1080 × 1920 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube/EP130.mp4"
     },
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
@@ -23130,6 +23653,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "punchline": "Un planning, ça se prépare avant la rentrée",
       "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP131.mp4"
     },
+    "shortYoutube": {
+      "format": "9:16 · 1080 × 1920 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube/EP131.mp4"
+    },
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
       "planches": [
@@ -23308,6 +23835,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "punchline": "Sauf toi. Encore faut-il qu'on te trouve en ligne",
       "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP132.mp4"
     },
+    "shortYoutube": {
+      "format": "9:16 · 1080 × 1920 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube/EP132.mp4"
+    },
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
       "planches": [
@@ -23484,6 +24015,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "punchline": "Ta caisse doit tenir le rythme",
       "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP133.mp4"
     },
+    "shortYoutube": {
+      "format": "9:16 · 1080 × 1920 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube/EP133.mp4"
+    },
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
       "planches": [
@@ -23652,6 +24187,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "hook": "Sept heures de service. Vue d'en bas",
       "punchline": "Elle aussi a une température à respecter",
       "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP134.mp4"
+    },
+    "shortYoutube": {
+      "format": "9:16 · 1080 × 1920 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube/EP134.mp4"
     },
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
@@ -23833,6 +24372,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "punchline": "Sur du papier. Vraiment ",
       "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP135.mp4"
     },
+    "shortYoutube": {
+      "format": "9:16 · 1080 × 1920 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube/EP135.mp4"
+    },
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
       "planches": [
@@ -24011,6 +24554,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "hook": "Deux minutes par cycle. Quatre-vingts cycles",
       "punchline": "Le service, c'est ça aussi",
       "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP136.mp4"
+    },
+    "shortYoutube": {
+      "format": "9:16 · 1080 × 1920 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube/EP136.mp4"
     },
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
@@ -24192,6 +24739,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "punchline": "Combien encaissés ? Tu es sûr ",
       "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP137.mp4"
     },
+    "shortYoutube": {
+      "format": "9:16 · 1080 × 1920 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube/EP137.mp4"
+    },
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
       "planches": [
@@ -24359,6 +24910,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "hook": "Quarante-cinq secondes de vie",
       "punchline": "Chaque assiette compte. Compte-les",
       "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP138.mp4"
+    },
+    "shortYoutube": {
+      "format": "9:16 · 1080 × 1920 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube/EP138.mp4"
     },
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
@@ -24534,6 +25089,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "hook": "20 h 30. Le coup de feu",
       "punchline": "Sois équipé, pas héroïque",
       "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP139.mp4"
+    },
+    "shortYoutube": {
+      "format": "9:16 · 1080 × 1920 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube/EP139.mp4"
     },
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
@@ -24717,6 +25276,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "punchline": "Ce qui disparaît finit toujours par se voir",
       "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP140.mp4"
     },
+    "shortYoutube": {
+      "format": "9:16 · 1080 × 1920 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube/EP140.mp4"
+    },
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
       "planches": [
@@ -24897,6 +25460,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "punchline": "Un pilote automatique, ça existe aussi en cuisine",
       "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP141.mp4"
     },
+    "shortYoutube": {
+      "format": "9:16 · 1080 × 1920 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube/EP141.mp4"
+    },
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
       "planches": [
@@ -25075,6 +25642,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "punchline": "Répartis les postes avant le service, pas pendant",
       "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP142.mp4"
     },
+    "shortYoutube": {
+      "format": "9:16 · 1080 × 1920 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube/EP142.mp4"
+    },
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
       "planches": [
@@ -25248,6 +25819,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "hook": "Une seule commande",
       "punchline": "Deux cents parts. Anticipe-les",
       "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP143.mp4"
+    },
+    "shortYoutube": {
+      "format": "9:16 · 1080 × 1920 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube/EP143.mp4"
     },
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
@@ -25425,6 +26000,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "hook": "Un avis une étoile",
       "punchline": "Réponds-y avant qu'il fasse jurisprudence",
       "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP144.mp4"
+    },
+    "shortYoutube": {
+      "format": "9:16 · 1080 × 1920 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube/EP144.mp4"
     },
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
@@ -25604,6 +26183,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "punchline": "Espèce en voie d'épuisement",
       "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP145.mp4"
     },
+    "shortYoutube": {
+      "format": "9:16 · 1080 × 1920 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube/EP145.mp4"
+    },
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
       "planches": [
@@ -25777,6 +26360,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "punchline": "Les gros événements, ça se prépare en amont",
       "url": null
     },
+    "shortYoutube": null,
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
       "planches": [
@@ -25953,6 +26537,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "punchline": "Sur un devis, pas sur un post-it",
       "url": null
     },
+    "shortYoutube": null,
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
       "planches": [
@@ -26135,6 +26720,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "punchline": "Centralise les commandes, pas les embouteillages",
       "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP148.mp4"
     },
+    "shortYoutube": {
+      "format": "9:16 · 1080 × 1920 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube/EP148.mp4"
+    },
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
       "planches": [
@@ -26305,6 +26894,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "hook": "Ta salle a un truc que personne d'autre n'a",
       "punchline": "Fais-le savoir",
       "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP149.mp4"
+    },
+    "shortYoutube": {
+      "format": "9:16 · 1080 × 1920 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube/EP149.mp4"
     },
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
@@ -26485,6 +27078,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "hook": "Cent cinquante épisodes",
       "punchline": "Une seule promesse : ton restaurant, avant, pendant et après le service",
       "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP150.mp4"
+    },
+    "shortYoutube": {
+      "format": "9:16 · 1080 × 1920 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube/EP150.mp4"
     },
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
@@ -26712,6 +27309,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "punchline": "Voilà pourquoi on se lève à six heures",
       "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP151.mp4"
     },
+    "shortYoutube": {
+      "format": "9:16 · 1080 × 1920 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube/EP151.mp4"
+    },
     "carrousel": null,
     "imageFacebook": null,
     "tutoriel": null
@@ -26894,6 +27495,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "punchline": "Refais-la chez toi. On t'attend quand même",
       "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP152.mp4"
     },
+    "shortYoutube": {
+      "format": "9:16 · 1080 × 1920 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube/EP152.mp4"
+    },
     "carrousel": null,
     "imageFacebook": null,
     "tutoriel": null
@@ -27071,6 +27676,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "saumon": null,
     "voixOff": null,
     "story": null,
+    "shortYoutube": null,
     "carrousel": null,
     "imageFacebook": null,
     "tutoriel": null
@@ -27248,6 +27854,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "saumon": null,
     "voixOff": null,
     "story": null,
+    "shortYoutube": null,
     "carrousel": null,
     "imageFacebook": null,
     "tutoriel": null
@@ -27425,6 +28032,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "saumon": null,
     "voixOff": null,
     "story": null,
+    "shortYoutube": null,
     "carrousel": null,
     "imageFacebook": null,
     "tutoriel": null
@@ -27607,6 +28215,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "punchline": "Trente secondes avant ton assiette",
       "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP156.mp4"
     },
+    "shortYoutube": {
+      "format": "9:16 · 1080 × 1920 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube/EP156.mp4"
+    },
     "carrousel": null,
     "imageFacebook": null,
     "tutoriel": null
@@ -27784,6 +28396,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "saumon": null,
     "voixOff": null,
     "story": null,
+    "shortYoutube": null,
     "carrousel": null,
     "imageFacebook": null,
     "tutoriel": null
@@ -27965,6 +28578,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "hook": "On diffuse le match",
       "punchline": "L'écran est grand. La table se réserve",
       "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP158.mp4"
+    },
+    "shortYoutube": {
+      "format": "9:16 · 1080 × 1920 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube/EP158.mp4"
     },
     "carrousel": null,
     "imageFacebook": null,
@@ -28148,6 +28765,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "punchline": "On s'occupe du reste",
       "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP159.mp4"
     },
+    "shortYoutube": {
+      "format": "9:16 · 1080 × 1920 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube/EP159.mp4"
+    },
     "carrousel": null,
     "imageFacebook": null,
     "tutoriel": null
@@ -28325,6 +28946,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "saumon": null,
     "voixOff": null,
     "story": null,
+    "shortYoutube": null,
     "carrousel": null,
     "imageFacebook": null,
     "tutoriel": null
@@ -28502,6 +29124,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "saumon": null,
     "voixOff": null,
     "story": null,
+    "shortYoutube": null,
     "carrousel": null,
     "imageFacebook": null,
     "tutoriel": null
@@ -28679,6 +29302,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "saumon": null,
     "voixOff": null,
     "story": null,
+    "shortYoutube": null,
     "carrousel": null,
     "imageFacebook": null,
     "tutoriel": null
@@ -28856,6 +29480,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "saumon": null,
     "voixOff": null,
     "story": null,
+    "shortYoutube": null,
     "carrousel": null,
     "imageFacebook": null,
     "tutoriel": null
@@ -29033,6 +29658,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "saumon": null,
     "voixOff": null,
     "story": null,
+    "shortYoutube": null,
     "carrousel": null,
     "imageFacebook": null,
     "tutoriel": null
@@ -29210,6 +29836,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "saumon": null,
     "voixOff": null,
     "story": null,
+    "shortYoutube": null,
     "carrousel": null,
     "imageFacebook": null,
     "tutoriel": null
@@ -29387,6 +30014,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "saumon": null,
     "voixOff": null,
     "story": null,
+    "shortYoutube": null,
     "carrousel": null,
     "imageFacebook": null,
     "tutoriel": null
@@ -29569,6 +30197,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "punchline": "Sans lui, rien ne sort",
       "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP167.mp4"
     },
+    "shortYoutube": {
+      "format": "9:16 · 1080 × 1920 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube/EP167.mp4"
+    },
     "carrousel": null,
     "imageFacebook": null,
     "tutoriel": null
@@ -29746,6 +30378,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "saumon": null,
     "voixOff": null,
     "story": null,
+    "shortYoutube": null,
     "carrousel": null,
     "imageFacebook": null,
     "tutoriel": null
@@ -29923,6 +30556,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "saumon": null,
     "voixOff": null,
     "story": null,
+    "shortYoutube": null,
     "carrousel": null,
     "imageFacebook": null,
     "tutoriel": null
@@ -30100,6 +30734,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "saumon": null,
     "voixOff": null,
     "story": null,
+    "shortYoutube": null,
     "carrousel": null,
     "imageFacebook": null,
     "tutoriel": null
@@ -30277,6 +30912,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "saumon": null,
     "voixOff": null,
     "story": null,
+    "shortYoutube": null,
     "carrousel": null,
     "imageFacebook": null,
     "tutoriel": null
@@ -30454,6 +31090,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "saumon": null,
     "voixOff": null,
     "story": null,
+    "shortYoutube": null,
     "carrousel": null,
     "imageFacebook": null,
     "tutoriel": null
@@ -30631,6 +31268,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "saumon": null,
     "voixOff": null,
     "story": null,
+    "shortYoutube": null,
     "carrousel": null,
     "imageFacebook": null,
     "tutoriel": null
@@ -30813,6 +31451,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "punchline": "On ne vous dérangera pas",
       "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP174.mp4"
     },
+    "shortYoutube": {
+      "format": "9:16 · 1080 × 1920 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube/EP174.mp4"
+    },
     "carrousel": null,
     "imageFacebook": null,
     "tutoriel": null
@@ -30990,6 +31632,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "saumon": null,
     "voixOff": null,
     "story": null,
+    "shortYoutube": null,
     "carrousel": null,
     "imageFacebook": null,
     "tutoriel": null
@@ -31167,6 +31810,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "saumon": null,
     "voixOff": null,
     "story": null,
+    "shortYoutube": null,
     "carrousel": null,
     "imageFacebook": null,
     "tutoriel": null
@@ -31344,6 +31988,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "saumon": null,
     "voixOff": null,
     "story": null,
+    "shortYoutube": null,
     "carrousel": null,
     "imageFacebook": null,
     "tutoriel": null
@@ -31521,6 +32166,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "saumon": null,
     "voixOff": null,
     "story": null,
+    "shortYoutube": null,
     "carrousel": null,
     "imageFacebook": null,
     "tutoriel": null
@@ -31702,6 +32348,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "hook": "Fermé le lundi",
       "punchline": "Ce n'est pas un jour de repos",
       "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP179.mp4"
+    },
+    "shortYoutube": {
+      "format": "9:16 · 1080 × 1920 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube/EP179.mp4"
     },
     "carrousel": null,
     "imageFacebook": null,
@@ -31885,6 +32535,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "punchline": "Merci",
       "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP180.mp4"
     },
+    "shortYoutube": {
+      "format": "9:16 · 1080 × 1920 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube/EP180.mp4"
+    },
     "carrousel": null,
     "imageFacebook": null,
     "tutoriel": null
@@ -32044,6 +32698,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "hook": "Vingt heures dix. Personne ne décroche",
       "punchline": "Le téléphone, lui, ne prend jamais sa pause",
       "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP181.mp4"
+    },
+    "shortYoutube": {
+      "format": "9:16 · 1080 × 1920 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube/EP181.mp4"
     },
     "carrousel": null,
     "imageFacebook": null,
@@ -32205,6 +32863,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "punchline": "La pluie a mangé le plat du jour",
       "url": null
     },
+    "shortYoutube": null,
     "carrousel": null,
     "imageFacebook": null,
     "tutoriel": null
@@ -32365,6 +33024,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "punchline": "Dix personnes bloquées par une seule question",
       "url": null
     },
+    "shortYoutube": null,
     "carrousel": null,
     "imageFacebook": null,
     "tutoriel": null
@@ -32525,6 +33185,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "punchline": "Personne, des deux côtés de la vitre, ne le sait",
       "url": null
     },
+    "shortYoutube": null,
     "carrousel": null,
     "imageFacebook": null,
     "tutoriel": null
@@ -32685,6 +33346,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "punchline": "Au dessert, la cuisine découvre l'anniversaire",
       "url": null
     },
+    "shortYoutube": null,
     "carrousel": null,
     "imageFacebook": null,
     "tutoriel": null
@@ -32845,6 +33507,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "punchline": "Le set de table part à la poubelle avec le devis",
       "url": null
     },
+    "shortYoutube": null,
     "carrousel": null,
     "imageFacebook": null,
     "tutoriel": null
@@ -33005,6 +33668,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "punchline": "Ni l'un ni l'autre ne sait ce qui va arriver",
       "url": null
     },
+    "shortYoutube": null,
     "carrousel": null,
     "imageFacebook": null,
     "tutoriel": null
@@ -33165,6 +33829,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "punchline": "« Je crois que non » n'a jamais rassuré personne",
       "url": null
     },
+    "shortYoutube": null,
     "carrousel": null,
     "imageFacebook": null,
     "tutoriel": null
@@ -33325,6 +33990,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "punchline": "La cuisine ne le verra jamais. L'addition, si",
       "url": null
     },
+    "shortYoutube": null,
     "carrousel": null,
     "imageFacebook": null,
     "tutoriel": null
@@ -33485,6 +34151,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "punchline": "Ce n'est pas sa mémoire. C'est son carnet",
       "url": null
     },
+    "shortYoutube": null,
     "carrousel": null,
     "imageFacebook": null,
     "tutoriel": null
@@ -33645,6 +34312,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "punchline": "Le haussement d'épaules n'est pas une réponse",
       "url": null
     },
+    "shortYoutube": null,
     "carrousel": null,
     "imageFacebook": null,
     "tutoriel": null
@@ -33805,6 +34473,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "punchline": "Le nouveau serveur lui demande s'il connaît la maison",
       "url": null
     },
+    "shortYoutube": null,
     "carrousel": null,
     "imageFacebook": null,
     "tutoriel": null
@@ -33965,6 +34634,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "punchline": "Carnet, voix, mémoire : on ne saura jamais où ça s'est perdu",
       "url": null
     },
+    "shortYoutube": null,
     "carrousel": null,
     "imageFacebook": null,
     "tutoriel": null
@@ -34125,6 +34795,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "punchline": "La table attend, et personne ne sait qu'elle attend",
       "url": null
     },
+    "shortYoutube": null,
     "carrousel": null,
     "imageFacebook": null,
     "tutoriel": null
@@ -34285,6 +34956,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "punchline": "La salle croit que ça part. La cuisine croit que c'est servi",
       "url": null
     },
+    "shortYoutube": null,
     "carrousel": null,
     "imageFacebook": null,
     "tutoriel": null
@@ -34445,6 +35117,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "punchline": "La carte en ligne, elle, en propose encore pendant une heure et demie",
       "url": null
     },
+    "shortYoutube": null,
     "carrousel": null,
     "imageFacebook": null,
     "tutoriel": null
@@ -34605,6 +35278,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "punchline": "En cuisine, l'assiette part sans que personne ne l'ait lue",
       "url": null
     },
+    "shortYoutube": null,
     "carrousel": null,
     "imageFacebook": null,
     "tutoriel": null
@@ -34765,6 +35439,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "punchline": "Et un serveur qui crie une table de plus",
       "url": null
     },
+    "shortYoutube": null,
     "carrousel": null,
     "imageFacebook": null,
     "tutoriel": null
@@ -34925,6 +35600,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "punchline": "Quatorze passages, et une erreur quelque part",
       "url": null
     },
+    "shortYoutube": null,
     "carrousel": null,
     "imageFacebook": null,
     "tutoriel": null
@@ -35085,6 +35761,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "punchline": "Vingt minutes de recomptage pour un centime",
       "url": null
     },
+    "shortYoutube": null,
     "carrousel": null,
     "imageFacebook": null,
     "tutoriel": null
@@ -35245,6 +35922,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "punchline": "Le tampon de sa dixième visite est perdu avec",
       "url": null
     },
+    "shortYoutube": null,
     "carrousel": null,
     "imageFacebook": null,
     "tutoriel": null
@@ -35405,6 +36083,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "punchline": "Utilisé ? Pas utilisé ? De quel montant ? Personne ne sait",
       "url": null
     },
+    "shortYoutube": null,
     "carrousel": null,
     "imageFacebook": null,
     "tutoriel": null
@@ -35565,6 +36244,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "punchline": "On tape le montant à la main. On se trompe d'un chiffre",
       "url": null
     },
+    "shortYoutube": null,
     "carrousel": null,
     "imageFacebook": null,
     "tutoriel": null
@@ -35725,6 +36405,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "punchline": "Pour un restaurant à quatre cents mètres de chez lui",
       "url": null
     },
+    "shortYoutube": null,
     "carrousel": null,
     "imageFacebook": null,
     "tutoriel": null
@@ -35885,6 +36566,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "punchline": "Trente personnes l'ont lu. Personne n'a répondu",
       "url": null
     },
+    "shortYoutube": null,
     "carrousel": null,
     "imageFacebook": null,
     "tutoriel": null
@@ -36045,6 +36727,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "punchline": "Ils ne reviendront pas, et on ne saura jamais pourquoi",
       "url": null
     },
+    "shortYoutube": null,
     "carrousel": null,
     "imageFacebook": null,
     "tutoriel": null
@@ -36205,6 +36888,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "punchline": "Il n'est pas fâché. Il a juste changé d'habitude",
       "url": null
     },
+    "shortYoutube": null,
     "carrousel": null,
     "imageFacebook": null,
     "tutoriel": null
@@ -36365,6 +37049,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "punchline": "On appelle ça un fichier client",
       "url": null
     },
+    "shortYoutube": null,
     "carrousel": null,
     "imageFacebook": null,
     "tutoriel": null
@@ -36525,6 +37210,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "punchline": "On lui apporte ce qu'il prend toujours. Il lève la tête",
       "url": null
     },
+    "shortYoutube": null,
     "carrousel": null,
     "imageFacebook": null,
     "tutoriel": null
@@ -36685,6 +37371,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "punchline": "Rien de tout ça ne s'est joué au hasard",
       "url": null
     },
+    "shortYoutube": null,
     "carrousel": null,
     "imageFacebook": null,
     "tutoriel": null
@@ -36844,6 +37531,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "hook": "Sept heures. Le café n'est pas encore prêt",
       "punchline": "Jarvis, lui, a déjà tout lu",
       "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP211.mp4"
+    },
+    "shortYoutube": {
+      "format": "9:16 · 1080 × 1920 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube/EP211.mp4"
     },
     "carrousel": null,
     "imageFacebook": null,
@@ -37005,6 +37696,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "punchline": "Sauf quand on demande à sept heures",
       "url": null
     },
+    "shortYoutube": null,
     "carrousel": null,
     "imageFacebook": null,
     "tutoriel": null
@@ -37164,6 +37856,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "hook": "La production de jeudi est prête. Sur le papier",
       "punchline": "Il manque deux ingrédients. On le saura jeudi",
       "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP213.mp4"
+    },
+    "shortYoutube": {
+      "format": "9:16 · 1080 × 1920 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube/EP213.mp4"
     },
     "carrousel": null,
     "imageFacebook": null,
@@ -37325,6 +38021,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "punchline": "Il est sept heures dix. On a le temps",
       "url": null
     },
+    "shortYoutube": null,
     "carrousel": null,
     "imageFacebook": null,
     "tutoriel": null
@@ -37485,6 +38182,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "punchline": "Mauvaise réponse. Elle est écrite quelque part",
       "url": null
     },
+    "shortYoutube": null,
     "carrousel": null,
     "imageFacebook": null,
     "tutoriel": null
@@ -37645,6 +38343,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "punchline": "Une IA qui devine, c'est une IA qui se trompe",
       "url": null
     },
+    "shortYoutube": null,
     "carrousel": null,
     "imageFacebook": null,
     "tutoriel": null
@@ -37805,6 +38504,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "punchline": "Pour toute la semaine. On sait tous comment ça finit",
       "url": null
     },
+    "shortYoutube": null,
     "carrousel": null,
     "imageFacebook": null,
     "tutoriel": null
@@ -37965,6 +38665,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "punchline": "Illisible en deux jours. Comme prévu",
       "url": null
     },
+    "shortYoutube": null,
     "carrousel": null,
     "imageFacebook": null,
     "tutoriel": null
@@ -38125,6 +38826,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "punchline": "« Vous pouvez me le montrer ? » — silence",
       "url": null
     },
+    "shortYoutube": null,
     "carrousel": null,
     "imageFacebook": null,
     "tutoriel": null
@@ -38285,6 +38987,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "punchline": "Ou ce qu'on lit, une fois pour toutes",
       "url": null
     },
+    "shortYoutube": null,
     "carrousel": null,
     "imageFacebook": null,
     "tutoriel": null
@@ -38445,6 +39148,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "punchline": "Sauf celui qui pose la question à voix haute",
       "url": null
     },
+    "shortYoutube": null,
     "carrousel": null,
     "imageFacebook": null,
     "tutoriel": null
@@ -38605,6 +39309,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "punchline": "Il repart avec « ça arrive ». Comme toujours",
       "url": null
     },
+    "shortYoutube": null,
     "carrousel": null,
     "imageFacebook": null,
     "tutoriel": null
@@ -38765,6 +39470,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "punchline": "La carte en ligne, elle, en vend encore",
       "url": null
     },
+    "shortYoutube": null,
     "carrousel": null,
     "imageFacebook": null,
     "tutoriel": null
@@ -38925,6 +39631,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "punchline": "Ou trois mots, les mains pleines",
       "url": null
     },
+    "shortYoutube": null,
     "carrousel": null,
     "imageFacebook": null,
     "tutoriel": null
@@ -39085,6 +39792,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "punchline": "Répété deux fois. Écrit nulle part",
       "url": null
     },
+    "shortYoutube": null,
     "carrousel": null,
     "imageFacebook": null,
     "tutoriel": null
@@ -39245,6 +39953,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "punchline": "La question qu'on se pose le mardi. Et le mercredi",
       "url": null
     },
+    "shortYoutube": null,
     "carrousel": null,
     "imageFacebook": null,
     "tutoriel": null
@@ -39405,6 +40114,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "punchline": "Une promo qui sait pourquoi, ça s'appelle un plan",
       "url": null
     },
+    "shortYoutube": null,
     "carrousel": null,
     "imageFacebook": null,
     "tutoriel": null
@@ -39565,6 +40275,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "punchline": "Et trente personnes qui l'ont lu avant vous",
       "url": null
     },
+    "shortYoutube": null,
     "carrousel": null,
     "imageFacebook": null,
     "tutoriel": null
@@ -39725,6 +40436,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "punchline": "Celui dont l'autorisation a expiré il y a trois semaines",
       "url": null
     },
+    "shortYoutube": null,
     "carrousel": null,
     "imageFacebook": null,
     "tutoriel": null
@@ -39885,6 +40597,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "punchline": "Un restaurateur n'est jamais libre à midi",
       "url": null
     },
+    "shortYoutube": null,
     "carrousel": null,
     "imageFacebook": null,
     "tutoriel": null
@@ -40045,6 +40758,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "punchline": "Ou celui qui parle le plus fort. Ça dépend des soirs",
       "url": null
     },
+    "shortYoutube": null,
     "carrousel": null,
     "imageFacebook": null,
     "tutoriel": null
@@ -40205,6 +40919,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "punchline": "Au dessert, la cuisine ne le sait toujours pas",
       "url": null
     },
+    "shortYoutube": null,
     "carrousel": null,
     "imageFacebook": null,
     "tutoriel": null
@@ -40365,6 +41080,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "punchline": "En route depuis combien de temps, ça, personne ne sait",
       "url": null
     },
+    "shortYoutube": null,
     "carrousel": null,
     "imageFacebook": null,
     "tutoriel": null
@@ -40525,6 +41241,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "punchline": "Six ans qu'il vient le mardi",
       "url": null
     },
+    "shortYoutube": null,
     "carrousel": null,
     "imageFacebook": null,
     "tutoriel": null
@@ -40685,6 +41402,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "punchline": "Et disparaît avec le service",
       "url": null
     },
+    "shortYoutube": null,
     "carrousel": null,
     "imageFacebook": null,
     "tutoriel": null
@@ -40845,6 +41563,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "punchline": "Le patron, lui, en a encore pour une heure",
       "url": null
     },
+    "shortYoutube": null,
     "carrousel": null,
     "imageFacebook": null,
     "tutoriel": null
@@ -41005,6 +41724,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "punchline": "On recompte. Trois fois. Debout",
       "url": null
     },
+    "shortYoutube": null,
     "carrousel": null,
     "imageFacebook": null,
     "tutoriel": null
@@ -41165,6 +41885,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "punchline": "C'est bien la seule chose qui pousse ici sans qu'on l'arrose",
       "url": null
     },
+    "shortYoutube": null,
     "carrousel": null,
     "imageFacebook": null,
     "tutoriel": null
@@ -41325,6 +42046,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "punchline": "À personne, d'habitude",
       "url": null
     },
+    "shortYoutube": null,
     "carrousel": null,
     "imageFacebook": null,
     "tutoriel": null
@@ -41485,6 +42207,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "punchline": "Et pour finir, une phrase de trois mots",
       "url": null
     },
+    "shortYoutube": null,
     "carrousel": null,
     "imageFacebook": null,
     "tutoriel": null
@@ -41595,6 +42318,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "hook": "Il ouvre, il produit, il ferme. Sa journée entière tient dans une seule application",
       "punchline": "Il est le seul à voir la marge et le coup de feu en même temps",
       "url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/story-EP301"
+    },
+    "shortYoutube": {
+      "format": "9:16 · 1080 × 1920 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube/EP301.mp4"
     },
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
@@ -41742,6 +42469,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "punchline": "Il est le seul à voir la marge et le coup de feu en même temps",
       "url": null
     },
+    "shortYoutube": null,
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
       "planches": [
@@ -41888,6 +42616,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "punchline": "Il est le seul à voir la marge et le coup de feu en même temps",
       "url": null
     },
+    "shortYoutube": null,
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
       "planches": [
@@ -42034,6 +42763,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "punchline": "Il répare ce que personne n'a vu venir, sans jamais arrêter le service",
       "url": null
     },
+    "shortYoutube": null,
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
       "planches": [
@@ -42180,6 +42910,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "punchline": "Il répare ce que personne n'a vu venir, sans jamais arrêter le service",
       "url": null
     },
+    "shortYoutube": null,
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
       "planches": [
@@ -42326,6 +43057,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "punchline": "Il répare ce que personne n'a vu venir, sans jamais arrêter le service",
       "url": null
     },
+    "shortYoutube": null,
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
       "planches": [
@@ -42472,6 +43204,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "punchline": "Il est le premier à savoir qu'il va manquer quelque chose, et le dernier qu'on écoute",
       "url": null
     },
+    "shortYoutube": null,
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
       "planches": [
@@ -42618,6 +43351,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "punchline": "Il est le premier à savoir qu'il va manquer quelque chose, et le dernier qu'on écoute",
       "url": null
     },
+    "shortYoutube": null,
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
       "planches": [
@@ -42764,6 +43498,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "punchline": "Il est le premier à savoir qu'il va manquer quelque chose, et le dernier qu'on écoute",
       "url": null
     },
+    "shortYoutube": null,
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
       "planches": [
@@ -42910,6 +43645,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "punchline": "Ce qu'on lui demande de noter, personne ne le relit — jusqu'au jour du contrôle",
       "url": null
     },
+    "shortYoutube": null,
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
       "planches": [
@@ -43056,6 +43792,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "punchline": "Ce qu'on lui demande de noter, personne ne le relit — jusqu'au jour du contrôle",
       "url": null
     },
+    "shortYoutube": null,
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
       "planches": [
@@ -43202,6 +43939,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "punchline": "Ce qu'on lui demande de noter, personne ne le relit — jusqu'au jour du contrôle",
       "url": null
     },
+    "shortYoutube": null,
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
       "planches": [
@@ -43348,6 +44086,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "punchline": "Sa boucle est la seule dont l'échec ferme le restaurant",
       "url": null
     },
+    "shortYoutube": null,
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
       "planches": [
@@ -43494,6 +44233,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "punchline": "Sa boucle est la seule dont l'échec ferme le restaurant",
       "url": null
     },
+    "shortYoutube": null,
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
       "planches": [
@@ -43640,6 +44380,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "punchline": "Sa boucle est la seule dont l'échec ferme le restaurant",
       "url": null
     },
+    "shortYoutube": null,
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
       "planches": [
@@ -43786,6 +44527,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "punchline": "Il dit oui au téléphone trois jours avant, et il découvre le vendredi ce que ça coûte",
       "url": null
     },
+    "shortYoutube": null,
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
       "planches": [
@@ -43932,6 +44674,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "punchline": "Il dit oui au téléphone trois jours avant, et il découvre le vendredi ce que ça coûte",
       "url": null
     },
+    "shortYoutube": null,
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
       "planches": [
@@ -44078,6 +44821,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "punchline": "Il dit oui au téléphone trois jours avant, et il découvre le vendredi ce que ça coûte",
       "url": null
     },
+    "shortYoutube": null,
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
       "planches": [
@@ -44224,6 +44968,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "punchline": "Il encaisse la réclamation que la cuisine ne verra jamais",
       "url": null
     },
+    "shortYoutube": null,
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
       "planches": [
@@ -44370,6 +45115,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "punchline": "Il encaisse la réclamation que la cuisine ne verra jamais",
       "url": null
     },
+    "shortYoutube": null,
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
       "planches": [
@@ -44516,6 +45262,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "punchline": "Il encaisse la réclamation que la cuisine ne verra jamais",
       "url": null
     },
+    "shortYoutube": null,
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
       "planches": [
@@ -44662,6 +45409,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "punchline": "Il est l'interface du restaurant, avec zéro information",
       "url": null
     },
+    "shortYoutube": null,
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
       "planches": [
@@ -44808,6 +45556,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "punchline": "Il est l'interface du restaurant, avec zéro information",
       "url": null
     },
+    "shortYoutube": null,
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
       "planches": [
@@ -44954,6 +45703,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "punchline": "Il est l'interface du restaurant, avec zéro information",
       "url": null
     },
+    "shortYoutube": null,
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
       "planches": [
@@ -45100,6 +45850,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "punchline": "La seule boucle qui touche les sept autres est celle que personne ne tient",
       "url": null
     },
+    "shortYoutube": null,
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
       "planches": [
@@ -45246,6 +45997,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "punchline": "La seule boucle qui touche les sept autres est celle que personne ne tient",
       "url": null
     },
+    "shortYoutube": null,
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
       "planches": [
@@ -45392,6 +46144,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "punchline": "La seule boucle qui touche les sept autres est celle que personne ne tient",
       "url": null
     },
+    "shortYoutube": null,
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
       "planches": [
@@ -45538,6 +46291,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "punchline": "Son « avant le service » n'est pas la mise en place : c'est la réservation, trois jours plus tôt",
       "url": null
     },
+    "shortYoutube": null,
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
       "planches": [
@@ -45684,6 +46438,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "punchline": "Son « avant le service » n'est pas la mise en place : c'est la réservation, trois jours plus tôt",
       "url": null
     },
+    "shortYoutube": null,
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
       "planches": [
@@ -45830,6 +46585,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "punchline": "Son « avant le service » n'est pas la mise en place : c'est la réservation, trois jours plus tôt",
       "url": null
     },
+    "shortYoutube": null,
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
       "planches": [
@@ -45976,6 +46732,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "punchline": "Trente services deviennent un seul chiffre",
       "url": null
     },
+    "shortYoutube": null,
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
       "planches": [
@@ -46121,6 +46878,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "hook": "Qui je suis",
       "punchline": "À la fin de la série, vous écrivez une phrase et votre restaurant l'exécute",
       "url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/story-EP401"
+    },
+    "shortYoutube": {
+      "format": "9:16 · 1080 × 1920 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube/EP401.mp4"
     },
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
@@ -46268,6 +47029,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "punchline": "Le cas revient à chaque épisode de la série. C'est le fil",
       "url": null
     },
+    "shortYoutube": null,
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
       "planches": [
@@ -46414,6 +47176,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "punchline": "Un prompt n'est pas une question. C'est un ordre de travail",
       "url": null
     },
+    "shortYoutube": null,
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
       "planches": [
@@ -46560,6 +47323,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "punchline": "177 outils exposés au standard, une paire d'identifiants par établissement",
       "url": null
     },
+    "shortYoutube": null,
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
       "planches": [
@@ -46706,6 +47470,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "punchline": "C'est ce qui permet à une phrase de traverser huit domaines sans qu'on l'ait programmée",
       "url": null
     },
+    "shortYoutube": null,
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
       "planches": [
@@ -46852,6 +47617,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "punchline": "Ce point, c'est « pendant le service ». Le centre du schéma et le centre de la journée sont le même endroit",
       "url": null
     },
+    "shortYoutube": null,
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
       "planches": [
@@ -46998,6 +47764,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "punchline": "Sept logiciels qui tiennent chacun un bout ne font pas sept boucles connectées. Ils font sept tunnels",
       "url": null
     },
+    "shortYoutube": null,
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
       "planches": [
@@ -47144,6 +47911,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "punchline": "La gestion vous rend capable de servir",
       "url": null
     },
+    "shortYoutube": null,
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
       "planches": [
@@ -47290,6 +48058,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "punchline": "Tout le reste tourne à vide. Une fiche fausse fausse le food cost, le stock, la marge et le prix",
       "url": null
     },
+    "shortYoutube": null,
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
       "planches": [
@@ -47436,6 +48205,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "punchline": "Sur-effectif le mardi, sous-effectif le samedi. Systématiquement",
       "url": null
     },
+    "shortYoutube": null,
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
       "planches": [
@@ -47582,6 +48352,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "punchline": "Une rupture un samedi soir, ou quatre à dix pour cent des achats à la poubelle le dimanche",
       "url": null
     },
+    "shortYoutube": null,
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
       "planches": [
@@ -47728,6 +48499,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "punchline": "C'est la seule boucle dont l'échec n'est pas financier mais existentiel. Les sept autres coûtent de la marge. Celle-ci coûte la fermeture",
       "url": null
     },
+    "shortYoutube": null,
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
       "planches": [
@@ -47874,6 +48646,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "punchline": "Le restaurant dépend des plateformes et leur cède une commission sur des clients qu'il ne connaîtra jamais",
       "url": null
     },
+    "shortYoutube": null,
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
       "planches": [
@@ -48020,6 +48793,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "punchline": "Les sept autres tournent correctement, et personne ne le sait. C'est la panne la plus insidieuse : rien ne casse, tout ralentit",
       "url": null
     },
+    "shortYoutube": null,
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
       "planches": [
@@ -48166,6 +48940,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "punchline": "On rachète chaque client à chaque fois. Acquérir coûte cinq à sept fois plus cher que faire revenir",
       "url": null
     },
+    "shortYoutube": null,
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
       "planches": [
@@ -48312,6 +49087,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "punchline": "On ignore si l'on gagne de l'argent, et on le découvre trop tard",
       "url": null
     },
+    "shortYoutube": null,
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
       "planches": [
@@ -48458,6 +49234,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "punchline": "Quatre échanges traversent le point de croisement",
       "url": null
     },
+    "shortYoutube": null,
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
       "planches": [
@@ -48603,6 +49380,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "hook": "Le moteur : brancher Claude, ChatGPT ou Mistral",
       "punchline": "Une paire d'identifiants, un endpoint, et le modèle de votre choix parle à votre établissement — et seulement au vôtre",
       "url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/story-EP418"
+    },
+    "shortYoutube": {
+      "format": "9:16 · 1080 × 1920 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube/EP418.mp4"
     },
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
@@ -48750,6 +49531,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "punchline": "Caroline décroche, Jarvis tient l'atelier, Iris fait circuler, PrédiBot voit les huit",
       "url": null
     },
+    "shortYoutube": null,
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
       "planches": [
@@ -48896,6 +49678,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "punchline": "Le client appelle pendant le coup de feu",
       "url": null
     },
+    "shortYoutube": null,
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
       "planches": [
@@ -49042,6 +49825,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "punchline": "On ne tape pas avec les mains sales",
       "url": null
     },
+    "shortYoutube": null,
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
       "planches": [
@@ -49188,6 +49972,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "punchline": "« Combien me coûte mon burger maintenant ? » Coût matière à jour, marge en euros, comparaison avec le mois dernier",
       "url": null
     },
+    "shortYoutube": null,
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
       "planches": [
@@ -49334,6 +50119,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "punchline": "FoodEatUp tient le restaurant",
       "url": null
     },
+    "shortYoutube": null,
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
       "planches": [
@@ -49480,6 +50266,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "punchline": "Un stock bas devient un post",
       "url": null
     },
+    "shortYoutube": null,
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
       "planches": [
@@ -49626,6 +50413,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "punchline": "La même phrase, écrite puis dite",
       "url": null
     },
+    "shortYoutube": null,
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
       "planches": [
@@ -49772,6 +50560,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "punchline": "Dix secondes de plat filmé comme une publicité, à partir d'une phrase et d'une photo",
       "url": null
     },
+    "shortYoutube": null,
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
       "planches": [
@@ -49918,6 +50707,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "punchline": "Le personnage dit le texte",
       "url": null
     },
+    "shortYoutube": null,
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
       "planches": [
@@ -50064,6 +50854,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "punchline": "Le même contenu, la même audience, mais payé",
       "url": null
     },
+    "shortYoutube": null,
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
       "planches": [
@@ -50210,6 +51001,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "punchline": "Trois mots pour la même idée : apprendre un geste à l'agent une fois, et ne plus jamais le réexpliquer",
       "url": null
     },
+    "shortYoutube": null,
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
       "planches": [
@@ -50356,6 +51148,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "punchline": "Ce qui se déclenche sans qu'on le demande",
       "url": null
     },
+    "shortYoutube": null,
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
       "planches": [
@@ -50502,6 +51295,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "punchline": "Une intention, huit boucles, zéro perte",
       "url": null
     },
+    "shortYoutube": null,
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
       "planches": [
@@ -50699,6 +51493,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
         "aSuivre": "À suivre — Le carnet, le tableau, la tête",
         "voix": "Voix off française, la même que le conteur mais une note plus haute et plus proche du micro, sur les 1,5 dernière(s) seconde(s) : « Sa journée commence quatre heures avant la vôtre. »"
       }
+    },
+    "shortYoutube": {
+      "format": "9:16 · 1080 × 1920 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube/EP501.mp4"
     },
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
@@ -50898,6 +51696,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
         "voix": "Voix off française, la même que le conteur mais une note plus haute et plus proche du micro, sur les 1,5 dernière(s) seconde(s) : « Trois carnets ne font pas une comptabilité. »"
       }
     },
+    "shortYoutube": {
+      "format": "9:16 · 1080 × 1920 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube/EP502.mp4"
+    },
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
       "planches": [
@@ -51095,6 +51897,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
         "aSuivre": "À suivre — Une phrase, un matin",
         "voix": "Voix off française, la même que le conteur mais une note plus haute et plus proche du micro, sur les 1,5 dernière(s) seconde(s) : « Une rupture un vendredi soir coûte plus qu'un mois de logiciel. »"
       }
+    },
+    "shortYoutube": {
+      "format": "9:16 · 1080 × 1920 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube/EP503.mp4"
     },
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
@@ -51294,6 +52100,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
         "voix": "Voix off française, la même que le conteur mais une note plus haute et plus proche du micro, sur les 1,5 dernière(s) seconde(s) : « Demandez le matin. Vous commanderez au lieu de vous excuser. »"
       }
     },
+    "shortYoutube": {
+      "format": "9:16 · 1080 × 1920 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube/EP504.mp4"
+    },
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
       "planches": [
@@ -51491,6 +52301,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
         "aSuivre": "À suivre — Il ferme, et il sait",
         "voix": "Voix off française, la même que le conteur mais une note plus haute et plus proche du micro, sur les 1,5 dernière(s) seconde(s) : « Le coût matière à jour, à chaque service. »"
       }
+    },
+    "shortYoutube": {
+      "format": "9:16 · 1080 × 1920 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube/EP505.mp4"
     },
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
@@ -51690,6 +52504,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
         "voix": "Voix off française, la même que le conteur mais une note plus haute et plus proche du micro, sur les 1,5 dernière(s) seconde(s) : « Fermer en sachant, pas en espérant. »"
       }
     },
+    "shortYoutube": {
+      "format": "9:16 · 1080 × 1920 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube/EP506.mp4"
+    },
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
       "planches": [
@@ -51887,6 +52705,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
         "aSuivre": "À suivre — Le téléphone qui sonne dans le vide",
         "voix": "Voix off française, la même que le conteur mais une note plus haute et plus proche du micro, sur les 1,5 dernière(s) seconde(s) : « Ce qu'il sait ne devrait pas rentrer chez lui le soir. »"
       }
+    },
+    "shortYoutube": {
+      "format": "9:16 · 1080 × 1920 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube/EP507.mp4"
     },
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
@@ -52086,6 +52908,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
         "voix": "Voix off française, la même que le conteur mais une note plus haute et plus proche du micro, sur les 1,5 dernière(s) seconde(s) : « Quatre canaux, un seul plan de salle. »"
       }
     },
+    "shortYoutube": {
+      "format": "9:16 · 1080 × 1920 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube/EP508.mp4"
+    },
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
       "planches": [
@@ -52283,6 +53109,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
         "aSuivre": "À suivre — Le plan de salle qui se remplit tout seul",
         "voix": "Voix off française, la même que le conteur mais une note plus haute et plus proche du micro, sur les 1,5 dernière(s) seconde(s) : « Une réservation qu'on ne voit pas est une réservation qu'on perd. »"
       }
+    },
+    "shortYoutube": {
+      "format": "9:16 · 1080 × 1920 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube/EP509.mp4"
     },
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
@@ -52482,6 +53312,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
         "voix": "Voix off française, la même que le conteur mais une note plus haute et plus proche du micro, sur les 1,5 dernière(s) seconde(s) : « Quatre canaux, une seule file, dans l'ordre d'arrivée. »"
       }
     },
+    "shortYoutube": {
+      "format": "9:16 · 1080 × 1920 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube/EP510.mp4"
+    },
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
       "planches": [
@@ -52679,6 +53513,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
         "aSuivre": "À suivre — Minuit, et rien à retenir",
         "voix": "Voix off française, la même que le conteur mais une note plus haute et plus proche du micro, sur les 1,5 dernière(s) seconde(s) : « La mémoire de la maison, pas celle du serveur. »"
       }
+    },
+    "shortYoutube": {
+      "format": "9:16 · 1080 × 1920 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube/EP511.mp4"
     },
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
@@ -52878,6 +53716,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
         "voix": "Voix off française, la même que le conteur mais une note plus haute et plus proche du micro, sur les 1,5 dernière(s) seconde(s) : « Rentrez chez vous sans le restaurant dans la tête. »"
       }
     },
+    "shortYoutube": {
+      "format": "9:16 · 1080 × 1920 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube/EP512.mp4"
+    },
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
       "planches": [
@@ -53075,6 +53917,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
         "aSuivre": "À suivre — La pile qui grandit toute seule",
         "voix": "Voix off française, la même que le conteur mais une note plus haute et plus proche du micro, sur les 1,5 dernière(s) seconde(s) : « Compter après coup, c'est constater. »"
       }
+    },
+    "shortYoutube": {
+      "format": "9:16 · 1080 × 1920 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube/EP513.mp4"
     },
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
@@ -53274,6 +54120,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
         "voix": "Voix off française, la même que le conteur mais une note plus haute et plus proche du micro, sur les 1,5 dernière(s) seconde(s) : « Ce qui se ressaisit à la main se paie deux fois. »"
       }
     },
+    "shortYoutube": {
+      "format": "9:16 · 1080 × 1920 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube/EP514.mp4"
+    },
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
       "planches": [
@@ -53471,6 +54321,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
         "aSuivre": "À suivre — La question posée à voix haute",
         "voix": "Voix off française, la même que le conteur mais une note plus haute et plus proche du micro, sur les 1,5 dernière(s) seconde(s) : « Savoir en mars ce qui s'est joué en février, c'est ne pas savoir. »"
       }
+    },
+    "shortYoutube": {
+      "format": "9:16 · 1080 × 1920 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube/EP515.mp4"
     },
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
@@ -53670,6 +54524,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
         "voix": "Voix off française, la même que le conteur mais une note plus haute et plus proche du micro, sur les 1,5 dernière(s) seconde(s) : « La marge en euros, pas dans trois semaines. »"
       }
     },
+    "shortYoutube": {
+      "format": "9:16 · 1080 × 1920 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube/EP516.mp4"
+    },
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
       "planches": [
@@ -53867,6 +54725,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
         "aSuivre": "À suivre — Il éteint la lampe à vingt-trois heures",
         "voix": "Voix off française, la même que le conteur mais une note plus haute et plus proche du micro, sur les 1,5 dernière(s) seconde(s) : « Le coût salarial se décide avant le service, pas après. »"
       }
+    },
+    "shortYoutube": {
+      "format": "9:16 · 1080 × 1920 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube/EP517.mp4"
     },
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
@@ -54066,6 +54928,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
         "voix": "Voix off française, la même que le conteur mais une note plus haute et plus proche du micro, sur les 1,5 dernière(s) seconde(s) : « Rendez-vous vos dimanches. »"
       }
     },
+    "shortYoutube": {
+      "format": "9:16 · 1080 × 1920 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube/EP518.mp4"
+    },
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
       "planches": [
@@ -54263,6 +55129,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
         "aSuivre": "À suivre — La carte date de mardi",
         "voix": "Voix off française, la même que le conteur mais une note plus haute et plus proche du micro, sur les 1,5 dernière(s) seconde(s) : « Il décide chez lui, trois jours avant d'entrer. »"
       }
+    },
+    "shortYoutube": {
+      "format": "9:16 · 1080 × 1920 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube/EP519.mp4"
     },
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
@@ -54462,6 +55332,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
         "voix": "Voix off française, la même que le conteur mais une note plus haute et plus proche du micro, sur les 1,5 dernière(s) seconde(s) : « Une carte qui date de mardi vous coûte le vendredi. »"
       }
     },
+    "shortYoutube": {
+      "format": "9:16 · 1080 × 1920 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube/EP520.mp4"
+    },
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
       "planches": [
@@ -54659,6 +55533,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
         "aSuivre": "À suivre — Quelqu'un décroche à la première sonnerie",
         "voix": "Voix off française, la même que le conteur mais une note plus haute et plus proche du micro, sur les 1,5 dernière(s) seconde(s) : « Le client qui n'a pas eu de réponse ne rappelle pas. »"
       }
+    },
+    "shortYoutube": {
+      "format": "9:16 · 1080 × 1920 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube/EP521.mp4"
     },
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
@@ -54858,6 +55736,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
         "voix": "Voix off française, la même que le conteur mais une note plus haute et plus proche du micro, sur les 1,5 dernière(s) seconde(s) : « Décrocher à la première sonnerie, même en plein coup de feu. »"
       }
     },
+    "shortYoutube": {
+      "format": "9:16 · 1080 × 1920 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube/EP522.mp4"
+    },
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
       "planches": [
@@ -55056,6 +55938,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
         "voix": "Voix off française, la même que le conteur mais une note plus haute et plus proche du micro, sur les 1,5 dernière(s) seconde(s) : « Ce qu'il ne remarque pas, c'est exactement ce qui le fait revenir. »"
       }
     },
+    "shortYoutube": null,
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
       "planches": [
@@ -55254,6 +56137,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
         "voix": "Voix off française, la même que le conteur mais une note plus haute et plus proche du micro, sur les 1,5 dernière(s) seconde(s) : « Un avis, c'est un service entier qui remonte. »"
       }
     },
+    "shortYoutube": null,
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
       "planches": [
@@ -55451,6 +56335,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
         "aSuivre": "À suivre — 18 h 40 — il réserve",
         "voix": "Voix off française, la même que le conteur mais une note plus haute et plus proche du micro, sur les 1,5 dernière(s) seconde(s) : « Quatre métiers, un seul service. »"
       }
+    },
+    "shortYoutube": {
+      "format": "9:16 · 1080 × 1920 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube/EP525.mp4"
     },
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
@@ -55650,6 +56538,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
         "voix": "Voix off française, la même que le conteur mais une note plus haute et plus proche du micro, sur les 1,5 dernière(s) seconde(s) : « Une phrase dite chez soi arrive en cuisine. »"
       }
     },
+    "shortYoutube": {
+      "format": "9:16 · 1080 × 1920 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube/EP526.mp4"
+    },
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
       "planches": [
@@ -55847,6 +56739,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
         "aSuivre": "À suivre — 18 h 42 — la cuisine l'apprend",
         "voix": "Voix off française, la même que le conteur mais une note plus haute et plus proche du micro, sur les 1,5 dernière(s) seconde(s) : « La contrainte arrive écrite sur la réservation. »"
       }
+    },
+    "shortYoutube": {
+      "format": "9:16 · 1080 × 1920 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube/EP527.mp4"
     },
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
@@ -56046,6 +56942,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
         "voix": "Voix off française, la même que le conteur mais une note plus haute et plus proche du micro, sur les 1,5 dernière(s) seconde(s) : « Une allergie notée vaut mieux qu'une allergie criée. »"
       }
     },
+    "shortYoutube": null,
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
       "planches": [
@@ -56243,6 +57140,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
         "aSuivre": "À suivre — 20 h 15 — les quatre au même endroit",
         "voix": "Voix off française, la même que le conteur mais une note plus haute et plus proche du micro, sur les 1,5 dernière(s) seconde(s) : « Le couvert compte avant d'entrer, pas après. »"
       }
+    },
+    "shortYoutube": {
+      "format": "9:16 · 1080 × 1920 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube/EP529.mp4"
     },
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
@@ -56442,6 +57343,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
         "voix": "Voix off française, la même que le conteur mais une note plus haute et plus proche du micro, sur les 1,5 dernière(s) seconde(s) : « Quatre postes, une seule saisie. »"
       }
     },
+    "shortYoutube": {
+      "format": "9:16 · 1080 × 1920 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube/EP530.mp4"
+    },
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
       "planches": [
@@ -56639,6 +57544,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
         "aSuivre": "À suivre — 20 h 32 — il ne remarque rien",
         "voix": "Voix off française, la même que le conteur mais une note plus haute et plus proche du micro, sur les 1,5 dernière(s) seconde(s) : « Du pass à la table, sans un mot de plus. »"
       }
+    },
+    "shortYoutube": {
+      "format": "9:16 · 1080 × 1920 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube/EP531.mp4"
     },
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
@@ -56838,6 +57747,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
         "voix": "Voix off française, la même que le conteur mais une note plus haute et plus proche du micro, sur les 1,5 dernière(s) seconde(s) : « La meilleure technologie est celle qu'on ne voit pas. »"
       }
     },
+    "shortYoutube": {
+      "format": "9:16 · 1080 × 1920 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube/EP532.mp4"
+    },
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
       "planches": [
@@ -57036,6 +57949,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
         "voix": "Voix off française, la même que le conteur mais une note plus haute et plus proche du micro, sur les 1,5 dernière(s) seconde(s) : « Trois chiffres avant d'éteindre, pas le 15 du mois suivant. »"
       }
     },
+    "shortYoutube": null,
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
       "planches": [
@@ -57234,6 +58148,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
         "voix": "Voix off française, la même que le conteur mais une note plus haute et plus proche du micro, sur les 1,5 dernière(s) seconde(s) : « Le même métier. Sans la charge. »"
       }
     },
+    "shortYoutube": null,
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
       "planches": [
@@ -57432,6 +58347,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
         "voix": "Voix off française, la même que le conteur mais une note plus haute et plus proche du micro, sur les 1,5 dernière(s) seconde(s) : « FoodEatUp. Le restaurant qui se gère tout seul. »"
       }
     },
+    "shortYoutube": null,
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
       "planches": [

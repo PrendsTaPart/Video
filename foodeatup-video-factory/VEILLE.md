@@ -82,10 +82,19 @@ Compter une vingtaine de secondes par plan. Le résultat est commité
 | Story d'un chapitre du film UpEatFood | `python3 scripts/build-film-stories.py EPxxx` |
 | Master 37,5 s | `./scripts/build-episode.sh EPxxx` |
 | Bande-annonce de saison + affiche | `python3 scripts/build-bandes-annonces.py <serie>-S<n>` |
+| Short YouTube d'un épisode | `python3 scripts/build-youtube.py EPxxx` |
 
 Ne pas se tromper de script entre les deux premiers : un chapitre du film porte
 `story.motion` et n'a ni badge permanent ni punchline incrustée. `build-stories.py`
 le détecte et refuse, en indiquant le bon script — le suivre.
+
+Le Short YouTube se monte **après** la story, dont il est la suite : la même
+image, plus un carton de fin de deux secondes et demie qui pose le titre, la
+série et la chaîne. YouTube est le seul réseau où la vidéo se cherche au lieu
+d'être croisée dans un fil ; s'y arrêter sur la punchline, sans rien dire de la
+série, laisse le spectateur sans suite. Relancer `build-youtube.py` après avoir
+remonté une story : le Short ne se met pas à jour tout seul, il faut supprimer
+le fichier de `dist/youtube/` pour qu'il soit refait.
 
 Une voix off de punchline manquante ne bloque pas : le montage se fait sans, et
 le script le dit. Elle peut être ajoutée ensuite (`assets/vo/punchlines/`), en
