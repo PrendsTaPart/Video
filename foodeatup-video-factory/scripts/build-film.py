@@ -310,10 +310,20 @@ def main(argv):
     # Le mixage. L'ambiance des lieux est la base ; la musique passe devant au
     # début puis s'efface ; la narration, quand elle est là, domine les deux —
     # c'est elle qu'on doit comprendre, le reste ne fait que porter.
-    pistes = ["[0:a]volume=0.6[amb]",
+    # Les gains d'entrée sont bas, et c'est délibéré.
+    #
+    # `amix` avec `normalize=0` additionne les pistes sans rien recalculer :
+    # ambiance à 0,6 plus musique à 0,45 dépassait la pleine échelle pendant
+    # l'ouverture, où les deux jouent ensemble. Le limiteur rattrapait le pic
+    # mais pas l'écrêtage déjà produit par la somme — d'où un grésillement sur
+    # les premières secondes, exactement là où le film doit être le plus propre.
+    #
+    # On somme donc sous la pleine échelle et on laisse `loudnorm` remonter
+    # l'ensemble ensuite : c'est son travail, et il le fait sans écrêter.
+    pistes = ["[0:a]volume=0.42[amb]",
               f"[1:a]atrim=0:{T_BGM},afade=t=in:st=0:d=1.2,"
               f"afade=t=out:st={T_BGM - BGM_FONDU_SORTIE}:d={BGM_FONDU_SORTIE},"
-              f"volume=0.45,apad[mus]"]
+              f"volume=0.30,apad[mus]"]
     entrees = ["[amb]", "[mus]"]
     if args.narration:
         cmd += ["-i", args.narration]

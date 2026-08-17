@@ -54635,7 +54635,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "format": "9:16 · 1080 × 1920 · 12,5 s",
       "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/facebook/EP509.mp4"
     },
-    "videoTiktok": null,
+    "videoTiktok": {
+      "format": "9:16 · 1080 × 1920 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/tiktok-story/EP509.mp4"
+    },
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
       "planches": [
@@ -54846,7 +54849,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "format": "9:16 · 1080 × 1920 · 12,5 s",
       "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/facebook/EP510.mp4"
     },
-    "videoTiktok": null,
+    "videoTiktok": {
+      "format": "9:16 · 1080 × 1920 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/tiktok-story/EP510.mp4"
+    },
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
       "planches": [
@@ -55057,7 +55063,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "format": "9:16 · 1080 × 1920 · 12,5 s",
       "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/facebook/EP511.mp4"
     },
-    "videoTiktok": null,
+    "videoTiktok": {
+      "format": "9:16 · 1080 × 1920 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/tiktok-story/EP511.mp4"
+    },
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
       "planches": [
@@ -55268,7 +55277,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "format": "9:16 · 1080 × 1920 · 12,5 s",
       "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/facebook/EP512.mp4"
     },
-    "videoTiktok": null,
+    "videoTiktok": {
+      "format": "9:16 · 1080 × 1920 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/tiktok-story/EP512.mp4"
+    },
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
       "planches": [

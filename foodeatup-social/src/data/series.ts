@@ -25397,7 +25397,7 @@ export const series: Serie[] = [
             "shortUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/yt-EP509",
             "videoYoutubeUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube-paysage/EP509.mp4",
             "storyFacebookUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/facebook/EP509.mp4",
-            "videoTiktokUrl": null
+            "videoTiktokUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/tiktok-story/EP509.mp4"
           },
           {
             "id": "EP510",
@@ -25475,7 +25475,7 @@ export const series: Serie[] = [
             "shortUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/yt-EP510",
             "videoYoutubeUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube-paysage/EP510.mp4",
             "storyFacebookUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/facebook/EP510.mp4",
-            "videoTiktokUrl": null
+            "videoTiktokUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/tiktok-story/EP510.mp4"
           },
           {
             "id": "EP511",
@@ -25553,7 +25553,7 @@ export const series: Serie[] = [
             "shortUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/yt-EP511",
             "videoYoutubeUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube-paysage/EP511.mp4",
             "storyFacebookUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/facebook/EP511.mp4",
-            "videoTiktokUrl": null
+            "videoTiktokUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/tiktok-story/EP511.mp4"
           },
           {
             "id": "EP512",
@@ -25631,7 +25631,7 @@ export const series: Serie[] = [
             "shortUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/yt-EP512",
             "videoYoutubeUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube-paysage/EP512.mp4",
             "storyFacebookUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/facebook/EP512.mp4",
-            "videoTiktokUrl": null
+            "videoTiktokUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/tiktok-story/EP512.mp4"
           }
         ],
         "acte": "Acte I — Le film",
