@@ -118,6 +118,31 @@ export type FormatsSociaux = {{
       dans un fil. La story s'y arrête sur rien ; le carton pose le titre, la
       série et la chaîne. Même image, deux secondes et demie de plus. */
   shortYoutube?: {{ format: string; url: string | null }} | null;
+  /** Vidéo YouTube paysage : le même montage, recadré en 16:9.
+
+      Le Short vit dans l'onglet Shorts. La page de la chaîne, la recherche, la
+      suggestion et la lecture sur téléviseur sont en paysage, et une vidéo
+      verticale y arrive entre deux bandes noires qui prennent les deux tiers
+      de l'écran. Le plan reste vertical — le recadrer couperait le sujet — et
+      les côtés sont comblés par une copie floutée du plan, exactement comme
+      les vignettes 16:9 déjà produites.
+
+      Pas de vignette dans la donnée : `vignetteEpisode(id, "youtube")` sert
+      déjà le 16:9 de l'épisode. */
+  videoYoutube?: {{ format: string; url: string | null }} | null;
+  /** Story Facebook : la story, plus un carton qui porte l'adresse.
+
+      Même image et même format que le Short. Ce qui change est la fin : une
+      vidéo native Facebook se repartage sans sa légende, et le lecteur ne
+      propose aucun lien. Si l'adresse du site n'est pas dans l'image, elle
+      n'est nulle part. */
+  storyFacebook?: {{ format: string; url: string | null }} | null;
+  /** Vidéo TikTok : la story, plus un carton au nom du compte.
+
+      Sur TikTok le nom d'utilisateur est cliquable depuis le lecteur,
+      comme la chaîne sur YouTube. Le carton n'a donc pas à porter
+      l'adresse du site, contrairement à Facebook. */
+  videoTiktok?: {{ format: string; url: string | null }} | null;
   /** Carrousel LinkedIn : quatre planches, converties en PDF sur le site. */
   carrousel?: {{ format: string; planches: PlancheCarrousel[] }} | null;
   /** Visuel Facebook : une image qui se comprend seule. */
@@ -220,6 +245,9 @@ def main():
                 # pas une copie : il n'y a qu'un endroit à corriger.
                 e["storyUrl"] = (e.get("story") or {}).get("url")
                 e["shortUrl"] = (e.get("shortYoutube") or {}).get("url")
+                e["videoYoutubeUrl"] = (e.get("videoYoutube") or {}).get("url")
+                e["storyFacebookUrl"] = (e.get("storyFacebook") or {}).get("url")
+                e["videoTiktokUrl"] = (e.get("videoTiktok") or {}).get("url")
                 contenu[e["id"]] = {
                     "publications": pubs,
                     "promptVignette": e.pop("promptVignette", ""),
@@ -258,6 +286,9 @@ def main():
                     "voixOff": e.pop("voixOff", None),
                     "story": e.pop("story", None),
                     "shortYoutube": e.pop("shortYoutube", None),
+                    "videoYoutube": e.pop("videoYoutube", None),
+                    "storyFacebook": e.pop("storyFacebook", None),
+                    "videoTiktok": e.pop("videoTiktok", None),
                     "carrousel": e.pop("carrousel", None),
                     "imageFacebook": e.pop("imageFacebook", None),
                     "tutoriel": {k: t.pop(k, None) for k in TEXTE_TUTO} if t else None,

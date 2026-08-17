@@ -1,0 +1,332 @@
+[
+  {
+    "cle": "EP501-conteur",
+    "t": 10.0,
+    "texte": "Il était une fois un restaurant, et un homme qui ouvrait seul."
+  },
+  {
+    "cle": "EP501-personnage",
+    "t": 17.1,
+    "texte": "Bon. On y va."
+  },
+  {
+    "cle": "EP502-conteur",
+    "t": 20.0,
+    "texte": "Il tenait ses comptes à trois endroits. Aucun ne parlait aux autres."
+  },
+  {
+    "cle": "EP502-personnage",
+    "t": 27.1,
+    "texte": "Ça, c'était mardi. Ou jeudi."
+  },
+  {
+    "cle": "EP503-conteur",
+    "t": 30.0,
+    "texte": "Puis vint le vendredi où le bac était vide."
+  },
+  {
+    "cle": "EP503-personnage",
+    "t": 37.1,
+    "texte": "Va dire à la douze qu'il n'y en a plus."
+  },
+  {
+    "cle": "EP504-conteur",
+    "t": 40.0,
+    "texte": "Un matin, il n'a pas ouvert le carnet."
+  },
+  {
+    "cle": "EP504-personnage",
+    "t": 47.1,
+    "texte": "Qu'est-ce qu'il me manque, aujourd'hui ?"
+  },
+  {
+    "cle": "EP505-conteur",
+    "t": 50.0,
+    "texte": "Le même geste, la même sauce. Mais il sait, maintenant."
+  },
+  {
+    "cle": "EP505-personnage",
+    "t": 57.1,
+    "texte": "Celui-là, je sais ce qu'il me rapporte."
+  },
+  {
+    "cle": "EP506-conteur",
+    "t": 60.0,
+    "texte": "Il ferme toujours à minuit. Mais il ne se demande plus rien."
+  },
+  {
+    "cle": "EP506-personnage",
+    "t": 67.1,
+    "texte": "Bonne soirée à tous."
+  },
+  {
+    "cle": "EP507-conteur",
+    "t": 72.0,
+    "texte": "Il était une fois un homme qui tenait une salle entière dans sa tête."
+  },
+  {
+    "cle": "EP507-personnage",
+    "t": 79.1,
+    "texte": "La six ne mange pas de crustacés."
+  },
+  {
+    "cle": "EP508-conteur",
+    "t": 82.0,
+    "texte": "Quatre canaux, et une seule paire de mains."
+  },
+  {
+    "cle": "EP508-personnage",
+    "t": 89.1,
+    "texte": "Attendez… c'était pour quelle heure ?"
+  },
+  {
+    "cle": "EP509-conteur",
+    "t": 92.0,
+    "texte": "Puis vint le soir où deux tables portaient le même numéro."
+  },
+  {
+    "cle": "EP509-personnage",
+    "t": 99.1,
+    "texte": "Je suis vraiment désolé."
+  },
+  {
+    "cle": "EP510-conteur",
+    "t": 102.0,
+    "texte": "Un soir, le carnet est resté fermé."
+  },
+  {
+    "cle": "EP510-personnage",
+    "t": 109.1,
+    "texte": "On est complets. Et je le sais depuis mardi."
+  },
+  {
+    "cle": "EP511-conteur",
+    "t": 112.0,
+    "texte": "Ce qu'il savait par cœur, quelqu'un d'autre le sait aussi maintenant."
+  },
+  {
+    "cle": "EP511-personnage",
+    "t": 119.1,
+    "texte": "Sans crustacés, comme la dernière fois."
+  },
+  {
+    "cle": "EP512-conteur",
+    "t": 122.0,
+    "texte": "Il rentre chez lui les mains vides. C'est nouveau."
+  },
+  {
+    "cle": "EP512-personnage",
+    "t": 129.1,
+    "texte": "À demain."
+  },
+  {
+    "cle": "EP513-conteur",
+    "t": 134.0,
+    "texte": "Il était une fois un homme qui comptait au-dessus du bruit."
+  },
+  {
+    "cle": "EP513-personnage",
+    "t": 141.1,
+    "texte": "Cent quatre couverts. Et alors ?"
+  },
+  {
+    "cle": "EP514-conteur",
+    "t": 144.0,
+    "texte": "Les factures arrivaient plus vite qu'il ne les ouvrait."
+  },
+  {
+    "cle": "EP514-personnage",
+    "t": 151.1,
+    "texte": "Je fais ça dimanche."
+  },
+  {
+    "cle": "EP515-conteur",
+    "t": 154.0,
+    "texte": "Puis vint le jour où il apprit que le mois d'avant avait été mauvais."
+  },
+  {
+    "cle": "EP515-personnage",
+    "t": 161.1,
+    "texte": "Février. On est le quinze mars."
+  },
+  {
+    "cle": "EP516-conteur",
+    "t": 164.0,
+    "texte": "Un soir, il n'a pas ouvert le classeur."
+  },
+  {
+    "cle": "EP516-personnage",
+    "t": 171.1,
+    "texte": "Combien me coûte le plat du jour, là, maintenant ?"
+  },
+  {
+    "cle": "EP517-conteur",
+    "t": 174.0,
+    "texte": "Il a arrêté d'être trop nombreux le mardi."
+  },
+  {
+    "cle": "EP517-personnage",
+    "t": 181.1,
+    "texte": "Samedi, on sera quatre. Pas trois."
+  },
+  {
+    "cle": "EP518-conteur",
+    "t": 184.0,
+    "texte": "Le bureau ferme maintenant en même temps que la salle."
+  },
+  {
+    "cle": "EP518-personnage",
+    "t": 191.1,
+    "texte": "Dimanche, je ne viens pas."
+  },
+  {
+    "cle": "EP519-conteur",
+    "t": 196.0,
+    "texte": "Il était une fois quelqu'un qui cherchait simplement où dîner."
+  },
+  {
+    "cle": "EP519-personnage",
+    "t": 203.1,
+    "texte": "Bon. On tente celui-là."
+  },
+  {
+    "cle": "EP520-conteur",
+    "t": 206.0,
+    "texte": "La carte qu'il a lue n'était plus la bonne."
+  },
+  {
+    "cle": "EP520-personnage",
+    "t": 213.1,
+    "texte": "C'était pas ça, sur le site."
+  },
+  {
+    "cle": "EP521-conteur",
+    "t": 216.0,
+    "texte": "Puis vint le soir où il a appelé, et où personne n'a répondu."
+  },
+  {
+    "cle": "EP521-personnage",
+    "t": 223.1,
+    "texte": "Tant pis."
+  },
+  {
+    "cle": "EP522-conteur",
+    "t": 226.0,
+    "texte": "Un soir, quelqu'un a décroché. Au premier coup."
+  },
+  {
+    "cle": "EP522-personnage",
+    "t": 233.1,
+    "texte": "Six. Et deux sans fruits à coque, oui."
+  },
+  {
+    "cle": "EP523-conteur",
+    "t": 236.0,
+    "texte": "Il n'a rien eu à expliquer en arrivant."
+  },
+  {
+    "cle": "EP523-personnage",
+    "t": 243.1,
+    "texte": "Vous aviez noté ?"
+  },
+  {
+    "cle": "EP525-conteur",
+    "t": 248.0,
+    "texte": "Ce que vous venez de voir se passait le même soir. Vendredi."
+  },
+  {
+    "cle": "EP525-personnage",
+    "t": 255.1,
+    "texte": "Vendredi. Dix-huit heures."
+  },
+  {
+    "cle": "EP526-conteur",
+    "t": 258.0,
+    "texte": "Tout commence par quelqu'un qui n'est pas encore là."
+  },
+  {
+    "cle": "EP526-personnage",
+    "t": 265.1,
+    "texte": "Six, à vingt heures et quart."
+  },
+  {
+    "cle": "EP527-conteur",
+    "t": 268.0,
+    "texte": "Une minute plus tard, à trois kilomètres de là."
+  },
+  {
+    "cle": "EP527-personnage",
+    "t": 275.1,
+    "texte": "La quatorze. Six. Deux sans fruits à coque."
+  },
+  {
+    "cle": "EP528-conteur",
+    "t": 278.0,
+    "texte": "Une minute encore, et l'information passe la porte battante."
+  },
+  {
+    "cle": "EP528-personnage",
+    "t": 285.1,
+    "texte": "Deux à part. Compris."
+  },
+  {
+    "cle": "EP529-conteur",
+    "t": 288.0,
+    "texte": "Et à l'étage, quelqu'un a vu passer six couverts de plus."
+  },
+  {
+    "cle": "EP529-personnage",
+    "t": 295.1,
+    "texte": "Cent dix, ce soir."
+  },
+  {
+    "cle": "EP530-conteur",
+    "t": 298.0,
+    "texte": "À vingt heures quinze, les quatre histoires n'en font plus qu'une."
+  },
+  {
+    "cle": "EP530-personnage",
+    "t": 305.1,
+    "texte": "Bonsoir. Vous avez réservé ?"
+  },
+  {
+    "cle": "EP531-conteur",
+    "t": 308.0,
+    "texte": "Seize minutes plus tard, l'assiette quitte le pass."
+  },
+  {
+    "cle": "EP531-personnage",
+    "t": 315.1,
+    "texte": "Voilà. Sans fruits à coque."
+  },
+  {
+    "cle": "EP532-conteur",
+    "t": 318.0,
+    "texte": "Il n'a rien remarqué. C'est exactement le but."
+  },
+  {
+    "cle": "EP532-personnage",
+    "t": 325.1,
+    "texte": "C'est très bon."
+  },
+  {
+    "cle": "EP533-conteur",
+    "t": 328.0,
+    "texte": "À minuit moins dix, il n'y avait plus rien à rattraper."
+  },
+  {
+    "cle": "EP533-personnage",
+    "t": 335.1,
+    "texte": "C'était une bonne soirée."
+  },
+  {
+    "cle": "EP534-conteur",
+    "t": 338.0,
+    "texte": "Le lendemain, il a ouvert. Comme tous les jours."
+  },
+  {
+    "cle": "EP534-personnage",
+    "t": 345.1,
+    "texte": "Bon. On y va."
+  }
+]

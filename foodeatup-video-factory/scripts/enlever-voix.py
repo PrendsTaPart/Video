@@ -86,13 +86,28 @@ def main(args):
     if not src_dir.is_dir():
         sys.exit(f"{src_dir} n'existe pas")
 
+    # Le plan, avec repli sur la copie commitée.
+    #
+    # `assets/` ne garde que ce qui a été récupéré sur la machine qui a lancé
+    # la veille ; `dist/` porte la copie commitée, celle qui survit à un
+    # conteneur neuf. Sans ce repli, on ne pouvait pas retirer la voix d'un
+    # plan pourtant présent dans le dépôt — le script répondait « pas de plan »
+    # pour EP501 et EP502, dont le son est resté voix comprise dans le film.
+    def source(n):
+        for d in (src_dir, R / "dist" / famille):
+            p = d / f"{n}.mp4"
+            if p.exists():
+                return p
+        return None
+
     if not noms:
-        noms = sorted(p.stem for p in src_dir.glob("*.mp4"))
+        noms = sorted({p.stem for d in (src_dir, R / "dist" / famille)
+                       if d.is_dir() for p in d.glob("*.mp4")})
 
     faits = sautes = rates = 0
     for n in noms:
-        src = src_dir / f"{n}.mp4"
-        if not src.exists():
+        src = source(n)
+        if not src:
             print(f"  {n:38s} pas de plan")
             rates += 1
             continue

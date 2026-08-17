@@ -42,8 +42,12 @@ def main():
     hooks = {p.stem for p in (R / "dist" / "hooks").glob("*.mp4")}
     stories = {p.stem for p in (R / "dist" / "stories").glob("*.mp4")}
     shorts = {p.stem for p in (R / "dist" / "youtube").glob("*.mp4")}
+    paysages = {p.stem for p in (R / "dist" / "youtube-paysage").glob("*.mp4")}
+    facebooks = {p.stem for p in (R / "dist" / "facebook").glob("*.mp4")}
+    # `dist/tiktok/` porte les masters de 37,5 s, pas cette famille-là.
+    tiktoks = {p.stem for p in (R / "dist" / "tiktok-story").glob("*.mp4")}
 
-    clips, sts, yts, bas, deja = 0, 0, 0, 0, 0
+    clips, sts, yts, pys, fbs, tks, bas, deja = 0, 0, 0, 0, 0, 0, 0, 0
     for s in d["series"]:
         for sa in s["saisons"]:
             # La bande-annonce a elle aussi sa version YouTube : même montage,
@@ -53,13 +57,19 @@ def main():
             ba = sa.get("bandeAnnonce")
             if ba:
                 cle = f"{s['slug']}-S{sa['numero']}"
-                pose = ba.get("shortUrl")
-                url = reprises.get(cle, {}).get("shortUrl") or pose or (
-                    f"{BRUT}/youtube/{cle}.mp4" if cle in shorts else None
-                )
-                if url and url != pose:
-                    ba["shortUrl"] = url
-                    bas += 1
+                for champ, dossier, presents in (
+                    ("shortUrl", "youtube", shorts),
+                    ("videoYoutubeUrl", "youtube-paysage", paysages),
+                    ("storyFacebookUrl", "facebook", facebooks),
+                    ("videoTiktokUrl", "tiktok-story", tiktoks),
+                ):
+                    pose = ba.get(champ)
+                    url = reprises.get(cle, {}).get(champ) or pose or (
+                        f"{BRUT}/{dossier}/{cle}.mp4" if cle in presents else None
+                    )
+                    if url and url != pose:
+                        ba[champ] = url
+                        bas += 1
 
             for e in sa["episodes"]:
                 i = e["id"]
@@ -120,15 +130,77 @@ def main():
                     sh["url"] = url
                     yts += 1
 
+                # La version paysage, pour la page de chaîne et la lecture sur
+                # téléviseur — là où un Short vertical arrive entre deux bandes
+                # noires. Elle n'a pas de vignette à elle : le site sert celle
+                # de `vignetteEpisode(id, "youtube")`, qui est déjà le 16:9 de
+                # l'épisode. Une adresse de plus dans la donnée serait une
+                # deuxième vérité sur la même image.
+                py = e.get("videoYoutube")
+                pose = (py or {}).get("url")
+                url = repris.get("videoYoutubeUrl") or pose or (
+                    f"{BRUT}/youtube-paysage/{i}.mp4" if i in paysages else None
+                )
+                if url and url != pose:
+                    if py is None:
+                        py = e["videoYoutube"] = {
+                            "format": "16:9 · 1920 × 1080 · 12,5 s",
+                            "url": None,
+                        }
+                    py["url"] = url
+                    pys += 1
+
+                # La story Facebook : même image, même format que le Short,
+                # mais un carton qui porte l'appel à l'action et l'adresse du
+                # site plutôt que le nom d'une chaîne. Une vidéo native
+                # Facebook est repartagée sans sa légende ; si l'adresse n'est
+                # pas dans l'image, elle n'est nulle part.
+                fb = e.get("storyFacebook")
+                pose = (fb or {}).get("url")
+                url = repris.get("storyFacebookUrl") or pose or (
+                    f"{BRUT}/facebook/{i}.mp4" if i in facebooks else None
+                )
+                if url and url != pose:
+                    if fb is None:
+                        fb = e["storyFacebook"] = {
+                            "format": "9:16 · 1080 × 1920 · 12,5 s",
+                            "url": None,
+                        }
+                    fb["url"] = url
+                    fbs += 1
+
+                # La vidéo TikTok : même moule, carton au nom du compte.
+                # Sur TikTok le nom d'utilisateur est cliquable depuis le
+                # lecteur, comme la chaîne sur YouTube — inutile d'y écrire
+                # l'adresse du site, qui n'est nécessaire que sur Facebook.
+                tk = e.get("videoTiktok")
+                pose = (tk or {}).get("url")
+                url = repris.get("videoTiktokUrl") or pose or (
+                    f"{BRUT}/tiktok-story/{i}.mp4" if i in tiktoks else None
+                )
+                if url and url != pose:
+                    if tk is None:
+                        tk = e["videoTiktok"] = {
+                            "format": "9:16 · 1080 × 1920 · 12,5 s",
+                            "url": None,
+                        }
+                    tk["url"] = url
+                    tks += 1
+
     open(INVENTAIRE, "w", encoding="utf-8").write(json.dumps(d, ensure_ascii=False, indent=2))
 
     eps = [e for s in d["series"] for sa in s["saisons"] for e in sa["episodes"]]
     total_clips = sum(1 for e in eps if e["higgsfield"].get("videoSourceUrl"))
     total_st = sum(1 for e in eps if (e.get("story") or {}).get("url"))
     total_yt = sum(1 for e in eps if (e.get("shortYoutube") or {}).get("url"))
-    print(f"{clips} clip(s), {sts} story(ies), {yts} Short(s) et "
-          f"{bas} bande(s)-annonce(s) reliés — {deja} clips l'étaient déjà")
-    print(f"inventaire : {total_clips} clips, {total_st} stories, {total_yt} Shorts "
+    total_py = sum(1 for e in eps if (e.get("videoYoutube") or {}).get("url"))
+    total_fb = sum(1 for e in eps if (e.get("storyFacebook") or {}).get("url"))
+    total_tk = sum(1 for e in eps if (e.get("videoTiktok") or {}).get("url"))
+    print(f"{clips} clip(s), {sts} story(ies), {yts} Short(s), {pys} paysage(s), "
+          f"{fbs} Facebook, {tks} TikTok et {bas} bande(s)-annonce(s) reliés — "
+          f"{deja} clips l'étaient déjà")
+    print(f"inventaire : {total_clips} clips, {total_st} stories, {total_yt} Shorts, "
+          f"{total_py} paysages, {total_fb} Facebook, {total_tk} TikTok "
           f"sur {len(eps)} épisodes")
 
     orphelins = sorted(hooks - {e["id"] for e in eps})

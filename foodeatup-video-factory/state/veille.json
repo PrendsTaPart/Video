@@ -2,7 +2,73 @@
   "jobs_lus": 50,
   "cibles": 233,
   "deja_servies": 86,
-  "a_monter": {},
+  "a_monter": {
+    "EP:EP402": {
+      "titre": "Douze kilos de saumon",
+      "date": "2027-04-05",
+      "prises": [
+        {
+          "job": "d5de2ca8-5477-46e9-874d-2b418fcf3498",
+          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3GXYlNxkbz83gXaGDVVrTni1dX2/hf_20260817_094633_d5de2ca8-5477-46e9-874d-2b418fcf3498.mp4",
+          "at": 1786959993.624629
+        },
+        {
+          "job": "d05bb699-ab93-44aa-b4bb-c9b534eef929",
+          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3GXYlNxkbz83gXaGDVVrTni1dX2/hf_20260817_090539_d05bb699-ab93-44aa-b4bb-c9b534eef929.mp4",
+          "at": 1786957539.763696
+        }
+      ]
+    },
+    "EP:EP523": {
+      "titre": "La table était prête à son nom",
+      "date": "2026-09-13",
+      "prises": [
+        {
+          "job": "22a478a0-3179-4859-a23c-cc89cdca605d",
+          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3GXYlNxkbz83gXaGDVVrTni1dX2/hf_20260816_214625_22a478a0-3179-4859-a23c-cc89cdca605d.mp4",
+          "at": 1786916785.283159
+        }
+      ]
+    },
+    "EP:EP528": {
+      "titre": "18 h 42 — la cuisine l'apprend",
+      "date": "2026-09-19",
+      "prises": [
+        {
+          "job": "d90543ea-8608-4ea6-b4ec-4f48df8a5d5c",
+          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3GXYlNxkbz83gXaGDVVrTni1dX2/hf_20260817_002035_d90543ea-8608-4ea6-b4ec-4f48df8a5d5c.mp4",
+          "at": 1786926035.787314
+        }
+      ]
+    },
+    "EP:EP533": {
+      "titre": "23 h 50 — le Z avant d'éteindre",
+      "date": "2026-09-24",
+      "prises": [
+        {
+          "job": "30750e1a-1543-4c74-b160-717d4c737cf1",
+          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3GXYlNxkbz83gXaGDVVrTni1dX2/hf_20260816_233327_30750e1a-1543-4c74-b160-717d4c737cf1.mp4",
+          "at": 1786923207.358653
+        }
+      ]
+    },
+    "EP:EP534": {
+      "titre": "7 h 00 — le lendemain",
+      "date": "2026-09-25",
+      "prises": [
+        {
+          "job": "75758e28-9202-4a9d-92d6-7dc81ad1dcab",
+          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3GXYlNxkbz83gXaGDVVrTni1dX2/hf_20260816_230742_75758e28-9202-4a9d-92d6-7dc81ad1dcab.mp4",
+          "at": 1786921662.645855
+        },
+        {
+          "job": "2eaaaeee-bac2-4fcd-b8a6-80bc2711c881",
+          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3GXYlNxkbz83gXaGDVVrTni1dX2/hf_20260816_223536_2eaaaeee-bac2-4fcd-b8a6-80bc2711c881.mp4",
+          "at": 1786919736.648705
+        }
+      ]
+    }
+  },
   "toujours_attendus": [
     {
       "cle": "BA:le-coup-de-feu-S2",
@@ -565,11 +631,6 @@
       "date": "2027-01-30"
     },
     {
-      "cle": "EP:EP402",
-      "titre": "Douze kilos de saumon",
-      "date": "2027-04-05"
-    },
-    {
       "cle": "EP:EP403",
       "titre": "Écrire une phrase qui agit",
       "date": "2027-04-06"
@@ -710,29 +771,9 @@
       "date": "2027-05-06"
     },
     {
-      "cle": "EP:EP523",
-      "titre": "La table était prête à son nom",
-      "date": "2026-09-13"
-    },
-    {
       "cle": "EP:EP524",
       "titre": "Vingt-trois heures, dans le métro",
       "date": "2026-09-14"
-    },
-    {
-      "cle": "EP:EP528",
-      "titre": "18 h 42 — la cuisine l'apprend",
-      "date": "2026-09-19"
-    },
-    {
-      "cle": "EP:EP533",
-      "titre": "23 h 50 — le Z avant d'éteindre",
-      "date": "2026-09-24"
-    },
-    {
-      "cle": "EP:EP534",
-      "titre": "7 h 00 — le lendemain",
-      "date": "2026-09-25"
     },
     {
       "cle": "EP:EP535",

@@ -84,6 +84,44 @@ export type Episode = {
    * ajoute ces deux secondes et demie-là. L'image, elle, est la même.
    */
   shortUrl: string | null;
+  /**
+   * La vidéo YouTube en paysage : le même montage, recadré en 16:9.
+   *
+   * Le Short vit dans l'onglet Shorts, où l'on feuillette. La page de la
+   * chaîne, la recherche, la suggestion et la lecture sur téléviseur sont en
+   * paysage : une vidéo verticale y arrive entre deux bandes noires qui
+   * occupent les deux tiers de l'écran.
+   *
+   * Le plan reste vertical — le recadrer couperait le chef ou le plan de
+   * travail, c'est-à-dire le sujet — et les côtés sont comblés par une copie
+   * floutée du plan. C'est le traitement des vignettes 16:9 déjà produites,
+   * donc la vidéo et sa miniature se ressemblent.
+   *
+   * Elle n'a pas d'adresse de vignette à elle : `vignetteEpisode(id,
+   * "youtube")` sert déjà le 16:9 de l'épisode.
+   */
+  videoYoutubeUrl: string | null;
+  /**
+   * La story Facebook : la même image que le Short, un autre carton.
+   *
+   * Sur YouTube, la dernière ligne nomme la chaîne — depuis le lecteur, ça
+   * suffit pour y aller. Sur Facebook, une vidéo native est repartagée sans sa
+   * légende et le lecteur ne propose aucun lien : l'appel à l'action et
+   * l'adresse du site doivent être dans l'image, sinon ils ne sont nulle part.
+   */
+  storyFacebookUrl: string | null;
+  /**
+   * La vidéo TikTok : encore la même image, un carton au nom du compte.
+   *
+   * Sur TikTok le nom d'utilisateur est cliquable depuis le lecteur, comme la
+   * chaîne sur YouTube — le carton n'a donc pas à écrire l'adresse du site,
+   * qui n'est nécessaire que sur Facebook.
+   *
+   * À ne pas confondre avec `videoUrl`, le master de 37,5 s : il est servi
+   * depuis `dist/tiktok/`, dont le nom vient du premier réseau visé et qui n'a
+   * plus rien à voir avec ce champ-ci.
+   */
+  videoTiktokUrl: string | null;
   posterUrl: string | null;
   troisMots: string;
   datePrevue: string | null;
@@ -181,6 +219,12 @@ export type BandeAnnonce = {
    * Facultative, pour la même raison que l'affiche.
    */
   shortUrl?: string;
+  /** La bande-annonce en paysage 16:9, pour les mêmes raisons qu'un épisode. */
+  videoYoutubeUrl?: string;
+  /** La bande-annonce en story Facebook, avec le carton qui porte l'adresse. */
+  storyFacebookUrl?: string;
+  /** La bande-annonce en vidéo TikTok, carton au nom du compte. */
+  videoTiktokUrl?: string;
   /**
    * L'affiche de la saison — une image fixe tirée du plan de la
    * bande-annonce, avec le titre et la date.

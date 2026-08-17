@@ -82,38 +82,31 @@ def alpha(debut, fin):
             f"if(lt(t,{fin}),({fin}-t)/{FONDU},0))))")
 
 
-def voiles():
-    """Les deux dégradés qui portent le texte, fabriqués une fois.
+# Le texte tient sa lisibilité tout seul.
+#
+# Il y a eu deux versions avant celle-ci. Un `drawbox` noir à 45 %, qui laissait
+# une arête horizontale en travers du plan. Puis deux dégradés — 760 px en haut,
+# 900 px en bas — sans arête, mais qui assombrissaient la moitié basse de chaque
+# story : sur un plan de rue au soleil couchant, le bitume passait du doré au
+# gris et on voyait le voile avant de lire la phrase.
+#
+# Un contour noir sur la lettre fait le même travail sans toucher au plan. Il ne
+# couvre que les quelques pixels autour du glyphe, là où le contraste manque
+# vraiment, au lieu d'assombrir 900 px de large pour trois lignes de texte. Du
+# Poppins 800 blanc cerné de noir se lit sur un mur blanc comme sur une nappe
+# claire — les deux cas qui mettaient le voile en échec de toute façon.
+CONTOUR = "borderw=6:bordercolor=black@0.92"
 
-    Première version : un `drawbox` noir à 45 %. Il tenait la lisibilité mais
-    laissait une arête horizontale nette en travers du plan — un rectangle
-    sombre posé sur une cuisine, visible au premier coup d'œil et impossible à
-    ignorer une fois vue.
-
-    Un dégradé n'a pas d'arête. Opaque là où le texte se pose, transparent là
-    où l'image doit rester intacte. On le fabrique en PNG plutôt qu'avec `geq`
-    dans le filtergraph : calculé une fois pour cent cinquante stories au lieu
-    de trente fois par seconde et par épisode.
-    """
-    from PIL import Image
-
-    dossier = R / "build" / "voiles"
-    dossier.mkdir(parents=True, exist_ok=True)
-    haut, bas = dossier / "haut.png", dossier / "bas.png"
-    if haut.exists() and bas.exists():
-        return haut, bas
-
-    for chemin, hauteur, opacite, vers_le_bas in (
-            (haut, 760, 0.68, True), (bas, 900, 0.78, False)):
-        img = Image.new("RGBA", (1, hauteur))
-        px = img.load()
-        for y in range(hauteur):
-            # Courbe au carré : le dégradé reste franc là où le texte se pose
-            # et s'éteint vite ensuite, au lieu de grisonner tout le plan.
-            t = (1 - y / hauteur) if vers_le_bas else (y / hauteur)
-            px[0, y] = (0, 0, 0, int(255 * opacite * t * t))
-        img.resize((L, hauteur), Image.NEAREST).save(chemin)
-    return haut, bas
+# Où la punchline se termine, en partant du bas du cadre.
+#
+# Elle était posée par son sommet (`y=h-560`) : une punchline d'une ligne
+# s'arrêtait 90 px plus haut qu'une punchline de deux, et le bas de la story
+# sautait d'un épisode à l'autre. En ancrant le bloc par son pied, la dernière
+# ligne tombe toujours au même endroit et la série se tient.
+#
+# 380 px laissent passer les 250 px d'interface d'Instagram, plus une marge.
+PIED_PUNCH = 380
+INTER_PUNCH = 70 + 16          # corps + interligne
 
 
 def a_du_son(clip):
@@ -133,8 +126,7 @@ def a_du_son(clip):
 
 def story(ep, hook, punch, clip, dest):
     muet = not a_du_son(clip)
-    piste = "4:a" if muet else "0:a"
-    v_haut, v_bas = voiles()
+    piste = "2:a" if muet else "0:a"
     fics = []
 
     def fichier(txt):
@@ -146,39 +138,33 @@ def story(ep, hook, punch, clip, dest):
         return f.name
 
     f_hook = fichier(coupe(hook, 20))
-    f_punch = fichier(coupe(punch, 26))
+    texte_punch = coupe(punch, 26)
+    f_punch = fichier(texte_punch)
     police = str(POLICE).replace(":", r"\:")
+
+    # Le bloc de punchline est posé par son pied : on remonte d'autant de
+    # lignes qu'il en compte pour trouver où commencer à écrire.
+    lignes_punch = texte_punch.count("\n") + 1
+    y_punch = H - PIED_PUNCH - lignes_punch * INTER_PUNCH
 
     graphe = (
         f"[0:v]scale={L}:{H}:force_original_aspect_ratio=increase,"
         f"crop={L}:{H},setsar=1,fps=30,trim=0:{DUREE},setpts=PTS-STARTPTS[v0];"
 
-        # Le voile entre et sort avec son texte : `fade` sur le canal alpha,
-        # aux mêmes secondes que l'expression qui pilote le drawtext. Un voile
-        # qui resterait après la disparition du texte se verrait comme une
-        # tache sombre sans raison.
-        f"[2:v]format=rgba,"
-        f"fade=t=in:st={HOOK_IN}:d={FONDU}:alpha=1,"
-        f"fade=t=out:st={HOOK_OUT - FONDU}:d={FONDU}:alpha=1[voile_h];"
-        f"[v0][voile_h]overlay=0:0[v1];"
-
         # Les deux textes sont calés à gauche sur la même marge. Centrer un
         # bloc de deux lignes de longueurs différentes donne un bord gauche en
         # dents de scie qu'on lit comme une erreur de montage ; une marge
         # tenue se lit comme une décision.
-        f"[v1]drawtext=fontfile='{police}':textfile='{f_hook}':"
+        f"[v0]drawtext=fontfile='{police}':textfile='{f_hook}':"
         f"fontsize=84:fontcolor=white:line_spacing=16:"
-        f"x={MARGE}:y=260:"
-        f"shadowcolor=black@0.55:shadowx=0:shadowy=3:"
+        f"x={MARGE}:y=260:{CONTOUR}:"
+        f"shadowcolor=black@0.45:shadowx=0:shadowy=3:"
         f"alpha='{alpha(HOOK_IN, HOOK_OUT)}'[v2];"
 
-        f"[3:v]format=rgba,"
-        f"fade=t=in:st={PUNCH_IN}:d={FONDU}:alpha=1[voile_b];"
-        f"[v2][voile_b]overlay=0:{H}-900[v3];"
-        f"[v3]drawtext=fontfile='{police}':textfile='{f_punch}':"
+        f"[v2]drawtext=fontfile='{police}':textfile='{f_punch}':"
         f"fontsize=70:fontcolor=white:line_spacing=16:"
-        f"x={MARGE}:y=h-560:"
-        f"shadowcolor=black@0.55:shadowx=0:shadowy=3:"
+        f"x={MARGE}:y={y_punch}:{CONTOUR}:"
+        f"shadowcolor=black@0.45:shadowx=0:shadowy=3:"
         f"alpha='{alpha(PUNCH_IN, None)}'[v4];"
 
         f"[1:v]scale=250:-1[logo];"
@@ -196,9 +182,7 @@ def story(ep, hook, punch, clip, dest):
     )
 
     cmd = ["ffmpeg", "-v", "error", "-y",
-           "-i", str(clip), "-i", str(LOGO),
-           "-loop", "1", "-t", str(DUREE), "-i", str(v_haut),
-           "-loop", "1", "-t", str(DUREE), "-i", str(v_bas)]
+           "-i", str(clip), "-i", str(LOGO)]
     if muet:
         cmd += ["-f", "lavfi", "-t", str(DUREE),
                 "-i", "anullsrc=r=48000:cl=stereo"]
@@ -248,9 +232,23 @@ def main(cibles):
     film = {i for i, e in eps.items()
             if e.get("dureeSecondes") == 10.0 and ((e.get("story") or {}).get("motion"))}
 
+    # Le clip source, avec repli sur ce qui est commité.
+    #
+    # `assets/hooks/` ne porte que les trente-quatre plans encore présents sur
+    # le disque de la machine qui les a récupérés. `dist/hooks/` en porte cent
+    # quatre-vingt-onze : c'est la copie commitée, celle qui survit à un
+    # conteneur neuf et aux URL de CDN expirées. Sans ce repli, remonter une
+    # story déjà publiée était impossible — le script répondait « pas de clip »
+    # pour un épisode dont le plan est pourtant dans le dépôt.
+    def source(k):
+        for dossier in ("assets/hooks", "dist/hooks"):
+            p = R / dossier / f"{k}.mp4"
+            if p.exists():
+                return p
+        return None
+
     if not cibles:
-        cibles = [k for k in sorted(eps)
-                  if k not in film and (R / "assets" / "hooks" / f"{k}.mp4").exists()]
+        cibles = [k for k in sorted(eps) if k not in film and source(k)]
 
     faits = rates = sautes = 0
     for ep in cibles:
@@ -259,9 +257,9 @@ def main(cibles):
             sautes += 1
             continue
         e = eps.get(ep)
-        clip = R / "assets" / "hooks" / f"{ep}.mp4"
+        clip = source(ep)
         dest = SORTIE / f"{ep}.mp4"
-        if not e or not clip.exists():
+        if not e or not clip:
             print(f"  {ep}  pas de clip")
             sautes += 1
             continue

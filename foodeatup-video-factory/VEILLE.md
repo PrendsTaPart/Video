@@ -83,6 +83,9 @@ Compter une vingtaine de secondes par plan. Le résultat est commité
 | Master 37,5 s | `./scripts/build-episode.sh EPxxx` |
 | Bande-annonce de saison + affiche | `python3 scripts/build-bandes-annonces.py <serie>-S<n>` |
 | Short YouTube d'un épisode | `python3 scripts/build-youtube.py EPxxx` |
+| Vidéo YouTube paysage | `python3 scripts/build-youtube-paysage.py EPxxx` |
+| Story Facebook | `python3 scripts/build-facebook.py EPxxx` |
+| Vidéo TikTok | `python3 scripts/build-tiktok.py EPxxx` |
 
 Ne pas se tromper de script entre les deux premiers : un chapitre du film porte
 `story.motion` et n'a ni badge permanent ni punchline incrustée. `build-stories.py`
@@ -95,6 +98,41 @@ d'être croisée dans un fil ; s'y arrêter sur la punchline, sans rien dire de 
 série, laisse le spectateur sans suite. Relancer `build-youtube.py` après avoir
 remonté une story : le Short ne se met pas à jour tout seul, il faut supprimer
 le fichier de `dist/youtube/` pour qu'il soit refait.
+
+YouTube veut les deux formats. Le Short vertical va dans l'onglet Shorts ; la
+page de la chaîne, la recherche et la lecture sur téléviseur sont en paysage,
+où un plan vertical arrive entre deux bandes noires. `build-youtube-paysage.py`
+part de la même story, pose le plan en pleine hauteur au centre d'un cadre
+1920 × 1080 et comble les côtés d'une copie floutée — le traitement des
+vignettes `EPxxx-16x9.jpg`. Ces vignettes sont d'ailleurs la miniature de la
+vidéo : le site les sert par `vignetteEpisode(id, "youtube")`, il n'y a rien à
+poser dans la donnée. Même règle de reprise que le Short : supprimer le fichier
+de `dist/youtube-paysage/` pour le refaire.
+
+Facebook et TikTok sont le même moule encore. Même image et même cadre que le
+Short ; seul le carton change, parce que seul change ce que le spectateur peut
+faire à la fin. YouTube donne le nom de la chaîne et TikTok celui du compte —
+tous deux cliquables depuis leur lecteur. Facebook donne l'appel à l'action et
+l'adresse du site en toutes lettres : une vidéo native y est repartagée sans sa
+légende, et le lecteur ne propose aucun lien.
+
+⚠️ La sortie TikTok est `dist/tiktok-story/`, pas `dist/tiktok/` — ce dernier
+porte les masters de 37,5 s servis par `videoUrl`, et cinquante et un épisodes
+en dépendent. Le nom est trompeur, il vient du premier réseau visé ; on ne le
+renomme pas, ces adresses sont publiées.
+
+Les quatre partagent `montage_carton.py` — l'empilement du bloc de texte, les
+fondus, le fondu du son à la fin de la source. Chaque script n'y ajoute qu'un
+gabarit : la taille du cadre, les lignes de pied, et le `queue` qui règle le
+talon du bloc. **Ne pas toucher au `queue` d'un gabarit existant** : il est là
+pour que le carton retombe exactement où il était sur les fichiers déjà
+publiés, ce qui a été vérifié par comparaison de sommes de contrôle.
+
+Compter une vingtaine de secondes par vidéo, et **surveiller le disque** — deux
+cent huit fichiers de 2 Mo tiennent, mais l'espace libre se compte en gigaoctets
+sur cette machine. Si `git gc` s'interrompt faute de place, il laisse des
+`.git/objects/pack/tmp_pack_*` de plusieurs gigaoctets : ils ne sont référencés
+par rien et se suppriment sans risque.
 
 Une voix off de punchline manquante ne bloque pas : le montage se fait sans, et
 le script le dit. Elle peut être ajoutée ensuite (`assets/vo/punchlines/`), en
