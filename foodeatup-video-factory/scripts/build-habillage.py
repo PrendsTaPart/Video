@@ -57,6 +57,7 @@ FONTES = R.parent / "videos" / "stories-foodeatup-30j" / "assets" / "fonts"
 CATALOGUE = R / "content" / "upeatfood.json"
 VIGNETTES = R / "assets" / "vignettes"
 PLAQUE = R / "assets" / "generique" / "upeatfood-plaque.mp4"
+BGM = R / "templates" / "bgm.mp3"
 
 L, H = 1080, 1920
 FPS = 30
@@ -734,8 +735,9 @@ def monter(ep, clip, son, dest, avec_generique):
             f"[fe][pt]xfade=transition=fade:duration={FONDU}:offset={b2:.3f}"
         )
         # Le son de la story démarre à l'image du plan, pas à celle du film.
-        pistes = f"[5:a][4:a]concat=n=2:v=0:a=1"
+        pistes = "[5:a][4:a]concat=n=2:v=0:a=1[vx];"
         fin_son = b2 + min(d_son, d_clip)
+        total = fin_son
 
         if avec_generique:
             gen = sequence(
@@ -748,14 +750,57 @@ def monter(ep, clip, son, dest, avec_generique):
             graphe += (f"[fp];[6:v]fps={FPS},format=yuv420p[g];"
                        f"[fp][g]xfade=transition=fade:duration={FONDU}:"
                        f"offset={fin_plan - FONDU:.3f}[v]")
-            pistes = f"[5:a][4:a][7:a]concat=n=3:v=0:a=1"
+            pistes = "[5:a][4:a][7:a]concat=n=3:v=0:a=1[vx];"
+            total = fin_plan + GENERIQUE - FONDU
         else:
             graphe += "[v]"
+
+        # ── le lit sonore ────────────────────────────────────────────────
+        #
+        # Sans lui, la vidéo s'ouvrait sur SIX SECONDES ET DEMIE de silence
+        # absolu : les deux cartes sont des séquences d'images, donc muettes,
+        # et la voix ne commençait qu'au plan. Sur un téléphone, six secondes
+        # sans un son ne se lisent pas comme une intention — elles se lisent
+        # comme un fichier cassé, et on passe au suivant.
+        #
+        # Deux sources, toutes deux déjà dans le dépôt. `bgm.mp3` est le lit
+        # des masters de 37,5 s : le film et la série portent ainsi la même
+        # signature sonore. Et la plaque Higgsfield a sa propre ambiance —
+        # ronflement de hotte, frémissement de vapeur — enregistrée pour ce
+        # plan ; on la garde sous la carte du film, c'est le son du lieu
+        # qu'on regarde.
+        #
+        # Le lit descend de douze décibels à l'entrée de la voix. Le mixage
+        # des masters cale la musique à −28 dBFS sous la parole : on retrouve
+        # ce niveau ici, et on le laisse remonter quand plus personne ne
+        # parle.
+        # `bgm.mp3` dure 46 s, la pièce la plus longue 19 : pas de bouclage.
+        entrees += ["-i", str(BGM),
+                    "-ss", "0", "-t", f"{FILM:.3f}", "-i", str(PLAQUE)]
+        i_bgm = 8 if avec_generique else 6
+        i_amb = i_bgm + 1
+        bascule_lit = b2 - 0.30
+        lit = (
+            f"[{i_bgm}:a]atrim=duration={total:.3f},asetpts=N/SR/TB,"
+            # 0,30 sous les cartes, 0,085 sous la voix : le passage de l'un à
+            # l'autre prend 0,8 s, sinon on entend la musique « tomber ».
+            f"volume='if(lt(t,{bascule_lit:.3f}),0.30,"
+            f"if(lt(t,{bascule_lit + 0.8:.3f}),"
+            f"0.30-0.215*(t-{bascule_lit:.3f})/0.8,0.085))':eval=frame,"
+            f"afade=t=in:st=0:d=0.9[lit];"
+            f"[{i_amb}:a]atrim=duration={FILM:.3f},asetpts=N/SR/TB,volume=2.6,"
+            f"afade=t=out:st={FILM - 0.6:.3f}:d=0.6,"
+            f"apad=whole_dur={total:.3f}[amb];"
+        )
+        melange = (f"[vx][lit][amb]amix=inputs=3:normalize=0:"
+                   f"duration=first[mx];")
 
         subprocess.run(
             ["ffmpeg", "-v", "error", "-y", *entrees,
              "-filter_complex",
-             f"{graphe};{pistes},afade=t=out:st={fin_son - 0.35:.3f}:d=0.35[s]",
+             f"{graphe};{pistes}{lit}{melange}"
+             f"[mx]afade=t=out:st={total - 0.5:.3f}:d=0.5,"
+             f"alimiter=limit=0.891:level=disabled[s]",
              "-map", "[v]", "-map", "[s]",
              "-c:v", "libx264", "-preset", "medium", "-crf", "19",
              "-c:a", "aac", "-b:a", "160k", "-movflags", "+faststart",
