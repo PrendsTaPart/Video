@@ -48,6 +48,7 @@ import shutil
 import subprocess
 import sys
 import tempfile
+import urllib.request
 
 from PIL import Image, ImageDraw, ImageFilter, ImageFont
 
@@ -55,13 +56,22 @@ R = pathlib.Path(__file__).resolve().parent.parent
 FONTES = R.parent / "videos" / "stories-foodeatup-30j" / "assets" / "fonts"
 CATALOGUE = R / "content" / "upeatfood.json"
 VIGNETTES = R / "assets" / "vignettes"
+PLAQUE = R / "assets" / "generique" / "upeatfood-plaque.mp4"
 
 L, H = 1080, 1920
 FPS = 30
 
-OUVERTURE = 2.60      # la carte d'ouverture
+FILM = 5.00           # la carte du film, sur la plaque Higgsfield
+OUVERTURE = 1.90      # la carte de l'épisode
 GENERIQUE = 2.75      # la carte de fin ; le fondu croisé en mange 0,25
 FONDU = 0.25
+
+# La charte de l'affiche. Le bleu, le crème et l'orange en sont relevés : la
+# carte du film doit être reconnue comme l'affiche, pas comme une variation.
+NUIT = (12, 32, 56)
+BLEU_AFFICHE = (28, 78, 134)
+CREME_AFFICHE = (245, 239, 224)
+ORANGE_AFFICHE = (232, 145, 47)
 
 # Relevées au pixel sur l'habillage existant : on ne redéfinit pas la marque,
 # on corrige sa mise en page.
@@ -394,6 +404,239 @@ def ouverture(ep, t, duree=OUVERTURE):
     return im.convert("RGB")
 
 
+# ─── la carte du film ───────────────────────────────────────────────────────
+
+def paragraphe(d, texte, font, maxi):
+    """Découpe en lignes qui tiennent dans la largeur."""
+    lignes, courante = [], ""
+    for mot in texte.split():
+        essai = f"{courante} {mot}".strip()
+        if courante and largeur(d, essai, font) > maxi:
+            lignes.append(courante)
+            courante = mot
+        else:
+            courante = essai
+    if courante:
+        lignes.append(courante)
+    return lignes
+
+
+def fond_affiche():
+    """Le bleu de l'affiche, en dégradé vertical."""
+    im = Image.new("RGB", (L, H))
+    px = im.load()
+    for y in range(H):
+        r = y / H
+        # Plus clair au milieu, où se tient la bande : l'affiche fait la même
+        # chose, et c'est ce qui donne à l'image sa profondeur de projection.
+        k = 1 - abs(r - 0.42) / 0.58
+        c = tuple(int(NUIT[i] + (BLEU_AFFICHE[i] - NUIT[i]) * max(0.0, k) ** 1.6)
+                  for i in range(3))
+        for x in range(L):
+            px[x, y] = c
+    return im
+
+
+def carte_film(ep, t, plaque, duree=FILM):
+    """L'affiche du film, animée par-dessus la plaque Higgsfield.
+
+    La plaque est le plan de cinq secondes généré pour cet usage : un pass de
+    restaurant vide, la nuit, dont le tiers central a été laissé sombre et
+    lisse « pour recevoir la marque au montage ». On la pose en bande
+    cinémascope au lieu de la recadrer en 9:16 : recadrée, elle perdait les
+    deux tiers de sa largeur et la vapeur qui la fait vivre ; en bande, elle
+    garde son cadrage d'origine et le format vertical se lit comme une
+    affiche, ce qu'il est.
+    """
+    im = fond_affiche()
+
+    # La bande, à sa place et à son format.
+    bh = int(L * 9 / 16)
+    # La bande est posée au tiers haut, pas au sixième : plus haut, le bloc
+    # titre-crédits laissait quatre cent cinquante pixels de bleu nu sous
+    # lui, soit un quart de la hauteur, et la carte pendait dans le vide.
+    by = int(H * 0.215)
+    band = plaque.convert("RGB").resize((L, bh), Image.LANCZOS)
+    p = phase(t, 0.00, 0.55)
+    if p > 0:
+        im.paste(Image.blend(Image.new("RGB", (L, bh), (5, 10, 16)), band, p), (0, by))
+    im = im.convert("RGBA")
+
+    # Le filet crème qui borde la bande : c'est lui qui la fait lire comme une
+    # pellicule et non comme une vidéo posée dans un trou.
+    if p > 0.4:
+        def bordures(dd):
+            dd.rectangle([0, by - 3, L, by - 1], fill=CREME_AFFICHE + (255,))
+            dd.rectangle([0, by + bh + 1, L, by + bh + 3], fill=CREME_AFFICHE + (255,))
+        im = poser(im, bordures, (p - 0.4) / 0.6)
+
+    d = ImageDraw.Draw(im)
+
+    # 1 · l'accroche de l'affiche
+    q = phase(t, 0.20, 0.75)
+    im = ligne_centree(im, int(H * 0.108), espace("LE RESTAURANT FAIT SON CINÉMA"),
+                       police(600, 27), CREME_AFFICHE, q * 0.95, dy=(1 - q) * 14)
+
+    # 2 · la marque, au centre de la zone réservée
+    cyb = by + bh // 2
+    reste = max(0.0, 1 - max(0.0, t - 1.75) / 0.8)
+    im = huit(im, L // 2, cyb - 40, int(L * 0.062), phase(t, 0.55, 1.75),
+              math.sin((t - 0.55) * math.pi * 8 / 1.20) * reste if t > 0.55 else 0,
+              phase(t, 0.50, 0.90))
+    im = lockup(im, L // 2, cyb + 76, int(L * 0.44), phase(t, 1.30, 1.90))
+
+    # 3 · le titre du film, à l'échelle de l'affiche
+    y = by + bh + 118
+    q = phase(t, 1.60, 2.30)
+    if q > 0:
+        f = police(800, int(122 * (1.05 - 0.05 * q)))
+        im = ligne_centree(im, y, "UpEatFood", f, CREME_AFFICHE, q, dy=(1 - q) * 18)
+    y += 168
+
+    q = phase(t, 2.00, 2.55)
+    im = ligne_centree(im, y, "La montée en puissance", police(700, 50),
+                       ORANGE_AFFICHE, q, dy=(1 - q) * 16)
+    y += 118
+
+    im = filet(im, y, 84 * phase(t, 2.45, 2.85), 1.0, couleur=CREME_AFFICHE, ep=4)
+    y += 88
+
+    # 4 · le bloc de crédits, comme le bandeau bas de l'affiche
+    credits = [
+        (police(700, 30), CREME_AFFICHE,
+         "MICHAEL KEBAIL-ALI dans le rôle du chef, du serveur, du patron et du client"),
+        (police(600, 28), (198, 214, 232),
+         "UN FILM RÉALISÉ PAR FOODEATUP — D'APRÈS DES FAITS RÉELS"),
+        (police(600, 28), (198, 214, 232), "35 CHAPITRES · 350 SECONDES"),
+    ]
+    for i, (f, couleur, texte) in enumerate(credits):
+        q = phase(t, 2.70 + i * 0.16, 3.20 + i * 0.16)
+        for ligne in paragraphe(d, texte, f, int(L * 0.86)):
+            im = ligne_centree(im, y, ligne, f, couleur, q, dy=(1 - q) * 12)
+            y += int(f.size * 1.34)
+        y += 12
+
+    # La carte s'éteint sur la fin, pour que le fondu vers l'épisode parte de
+    # quelque chose de calme au lieu d'un bloc de texte en pleine lumière.
+    sortie = max(0.0, (t - (duree - 0.45)) / 0.45)
+    if sortie > 0:
+        voile = Image.new("RGBA", (L, H), NUIT + (int(200 * min(1.0, sortie)),))
+        im = Image.alpha_composite(im, voile)
+
+    return im.convert("RGB")
+
+
+# ─── les sous-titres du plan ────────────────────────────────────────────────
+
+def repliques(ep):
+    """Qui parle, quand, et jusqu'à quand.
+
+    Les trois voix du film sont écrites dans le script : le conteur ouvre à
+    0,0 s, le personnage ferme à 8,0 s, le générique de story porte la
+    punchline à 9,1 s. On reprend ces repères tels quels — ils sont la
+    partition du mixage, donc du sous-titre.
+    """
+    return [
+        (0.20, 6.60, ep["conteur"], CREME_AFFICHE),
+        (7.85, 9.00, ep["personnage"], (255, 255, 255)),
+        (9.05, 10.00, ep["generique"], ORANGE_AFFICHE),
+    ]
+
+
+BANDE_Y = 1180          # le haut de la zone de sous-titre
+BANDE_H = H - BANDE_Y
+
+
+def sous_titre(ep, t):
+    """La bande de sous-titre à l'instant t, en RGBA, hauteur BANDE_H.
+
+    Elle est rendue à part et incrustée par ffmpeg : composer la vidéo entière
+    dans PIL demanderait de décoder puis réencoder chaque image du plan, pour
+    ne toucher qu'un tiers de la hauteur.
+
+    Le texte est nettement plus grand qu'avant — 56 px contre 34 — et chaque
+    ligne est centrée sur son axe. Les mots apparaissent l'un après l'autre
+    sur le premier tiers de la réplique : la voix les dit dans cet ordre, et
+    l'œil suit au lieu de lire en avance puis d'attendre.
+    """
+    im = Image.new("RGBA", (L, BANDE_H), (0, 0, 0, 0))
+    d = ImageDraw.Draw(im)
+
+    for debut, fin, texte, couleur in repliques(ep):
+        if not (debut - 0.30 <= t <= fin + 0.35):
+            continue
+        entree = phase(t, debut, debut + 0.28)
+        sortie = 1 - phase(t, fin, fin + 0.30)
+        opacite = entree * sortie
+        if opacite <= 0.01:
+            continue
+
+        f = police(800, 56)
+        lignes = paragraphe(d, texte, f, int(L * 0.84))
+        interligne = int(56 * 1.26)
+        hauteur = len(lignes) * interligne
+
+        # Un cartouche sombre et flou derrière le texte, à la place du voile
+        # gris qui couvrait tout le plan. Il ne s'étend que sous les lignes.
+        plaque = Image.new("RGBA", (L, BANDE_H), (0, 0, 0, 0))
+        pd = ImageDraw.Draw(plaque)
+        y0 = BANDE_H - hauteur - 190
+        pd.rounded_rectangle([48, y0 - 34, L - 48, y0 + hauteur + 26],
+                             radius=32, fill=(6, 12, 20, 168))
+        plaque = plaque.filter(ImageFilter.GaussianBlur(9))
+        if opacite < 0.998:
+            plaque.putalpha(plaque.getchannel("A").point(lambda a: int(a * opacite)))
+        im = Image.alpha_composite(im, plaque)
+
+        # Les mots se révèlent dans l'ordre, sur le premier tiers.
+        #
+        # La révélation étant séquentielle, il n'y a JAMAIS plus d'un mot à
+        # opacité intermédiaire à un instant donné. Les mots déjà acquis vont
+        # donc tous sur un même calque, et seul celui qui arrive obtient le
+        # sien. Un calque par mot coûtait douze compositions plein cadre par
+        # image, soit trois mille six cents par épisode, pour un résultat
+        # rigoureusement identique.
+        mots = texte.split()
+        revele = phase(t, debut, debut + max(0.5, (fin - debut) * 0.34)) * len(mots)
+
+        acquis = Image.new("RGBA", (L, BANDE_H), (0, 0, 0, 0))
+        ad = ImageDraw.Draw(acquis)
+        arrivant = None
+        vu, y = 0, y0
+        for ligne in lignes:
+            b = d.textbbox((0, 0), ligne, font=f)
+            x = (L - (b[2] - b[0])) // 2 - b[0]
+            for mot in ligne.split():
+                part = max(0.0, min(1.0, revele - vu))
+                pos = (x, y - b[1] + (1 - part) * 8)
+                if part >= 0.999:
+                    ad.text(pos, mot, font=f, fill=couleur + (255,),
+                            stroke_width=3, stroke_fill=(4, 9, 15, 210))
+                elif part > 0:
+                    arrivant = (pos, mot, part)
+                x += largeur(d, mot + " ", f)
+                vu += 1
+            y += interligne
+
+        if opacite < 0.998:
+            acquis.putalpha(acquis.getchannel("A").point(
+                lambda v: int(v * opacite)))
+        im = Image.alpha_composite(im, acquis)
+
+        if arrivant:
+            pos, mot, part = arrivant
+            calque = Image.new("RGBA", (L, BANDE_H), (0, 0, 0, 0))
+            ImageDraw.Draw(calque).text(
+                pos, mot, font=f, fill=couleur + (255,),
+                stroke_width=3, stroke_fill=(4, 9, 15, 210))
+            a = opacite * part
+            calque.putalpha(calque.getchannel("A").point(lambda v: int(v * a)))
+            im = Image.alpha_composite(im, calque)
+        break
+
+    return im
+
+
 # ─── montage ────────────────────────────────────────────────────────────────
 
 def sequence(tmp, nom, faire, duree):
@@ -418,48 +661,101 @@ def duree_de(f):
         capture_output=True, text=True, check=True).stdout.strip())
 
 
-def monter(ep, plan, dest, avec_generique):
-    """L'ouverture, le plan, et le générique quand la pièce le porte.
+def plaque_frames(tmp):
+    """Les images de la plaque Higgsfield, ramenées à trente par seconde."""
+    dossier = tmp / "plaque"
+    dossier.mkdir()
+    subprocess.run(
+        ["ffmpeg", "-v", "error", "-y", "-i", str(PLAQUE),
+         "-vf", f"fps={FPS}", "-frames:v", str(int(FILM * FPS) + 2),
+         str(dossier / "%04d.png")],
+        check=True,
+    )
+    return sorted(dossier.glob("*.png"))
 
-    La story ne prend pas le générique. Instagram coupe à quinze secondes, et
-    2,60 + 10,00 + 2,50 en font 15,10 : la carte de fin serait tronquée à
-    l'endroit exact où elle affiche la marque. Le Short YouTube, lui, n'a pas
-    cette limite — c'est lui qui la porte.
+
+def monter(ep, clip, son, dest, avec_generique):
+    """La carte du film, la carte de l'épisode, le plan, et le générique.
+
+    Le plan est reconstruit à partir du clip Higgsfield PROPRE, pas de la
+    story déjà diffusée. La story portait un voile gris sur toute l'image —
+    posé pour rendre lisibles des sous-titres trop petits, il éteignait la
+    photo sur les dix secondes. En repartant du clip d'origine, la couleur
+    revient, et le texte est rendu lisible par un cartouche qui ne couvre que
+    ce qu'il y a sous les lignes.
+
+    Le son, lui, vient bien de la story : c'est le seul endroit où les trois
+    voix sont mixées, et rien ne justifie de les régénérer.
+
+    La story ne prend pas le générique de fin ; le Short YouTube, si.
     """
     tmp = pathlib.Path(tempfile.mkdtemp(prefix="habillage-"))
     try:
-        ouv = sequence(tmp, "ouverture", lambda t: ouverture(ep, t), OUVERTURE)
-        d_plan = duree_de(plan)
-        bascule = OUVERTURE - FONDU
+        plaque = plaque_frames(tmp)
+        film = sequence(
+            tmp, "film",
+            lambda t: carte_film(ep, t, Image.open(plaque[min(int(t * FPS), len(plaque) - 1)])),
+            FILM)
+        ouv = sequence(tmp, "episode", lambda t: ouverture(ep, t), OUVERTURE)
 
-        entrees = ["-i", str(ouv), "-i", str(plan),
-                   "-f", "lavfi", "-t", f"{OUVERTURE:.3f}", "-i", "anullsrc=r=48000:cl=stereo"]
-        # L'ouverture s'efface DANS le plan plutôt que de couper : deux images
-        # très contrastées bout à bout font un flash.
-        graphe = (f"[0:v]fps={FPS},scale={L}:{H},format=yuv420p[o];"
-                  f"[1:v]fps={FPS},scale={L}:{H},format=yuv420p[p];"
-                  f"[o][p]xfade=transition=fade:duration={FONDU}:offset={bascule:.3f}")
-        son = "[2:a][1:a]concat=n=2:v=0:a=1"
-        fin_son = bascule + d_plan
+        # Les sous-titres sont une bande transparente incrustée par ffmpeg :
+        # composer la vidéo entière dans PIL demanderait de décoder puis de
+        # réencoder chaque image du plan pour n'en toucher qu'un tiers.
+        bande = tmp / "sous-titres"
+        bande.mkdir()
+        d_clip = min(10.0, duree_de(clip))
+        for i in range(int(d_clip * FPS)):
+            sous_titre(ep, i / FPS).save(bande / f"{i:04d}.png")
+
+        d_son = duree_de(son)
+        b1 = FILM - FONDU                    # le film s'efface dans l'épisode
+        b2 = b1 + OUVERTURE - FONDU          # l'épisode s'efface dans le plan
+        fin_plan = b2 + d_clip
+
+        entrees = [
+            "-i", str(film),
+            "-i", str(ouv),
+            "-i", str(clip),
+            "-framerate", str(FPS), "-i", str(bande / "%04d.png"),
+            "-i", str(son),
+            "-f", "lavfi", "-t", f"{b2:.3f}", "-i", "anullsrc=r=48000:cl=stereo",
+        ]
+        graphe = (
+            f"[0:v]fps={FPS},scale={L}:{H},format=yuv420p[f];"
+            f"[1:v]fps={FPS},scale={L}:{H},format=yuv420p[e];"
+            # Le clip est en 720 × 1280 à 24 im/s : on le remonte au format de
+            # diffusion avant d'incruster, sinon le texte serait mis à
+            # l'échelle avec l'image et perdrait ses arêtes.
+            f"[2:v]fps={FPS},scale={L}:{H}:flags=lanczos,"
+            f"trim=duration={d_clip:.3f},setpts=PTS-STARTPTS[p];"
+            f"[3:v]format=rgba[st];"
+            f"[p][st]overlay=0:{BANDE_Y}:format=auto[pt];"
+            f"[f][e]xfade=transition=fade:duration={FONDU}:offset={b1:.3f}[fe];"
+            f"[fe][pt]xfade=transition=fade:duration={FONDU}:offset={b2:.3f}"
+        )
+        # Le son de la story démarre à l'image du plan, pas à celle du film.
+        pistes = f"[5:a][4:a]concat=n=2:v=0:a=1"
+        fin_son = b2 + min(d_son, d_clip)
 
         if avec_generique:
-            gen = sequence(tmp, "generique",
-                           lambda t: generique(ep["titre"], ep["serie"], ep["saison"], t),
-                           GENERIQUE)
+            gen = sequence(
+                tmp, "generique",
+                lambda t: generique(ep["titre"], ep["serie"], ep["saison"], t),
+                GENERIQUE)
             entrees += ["-i", str(gen),
                         "-f", "lavfi", "-t", f"{GENERIQUE - FONDU:.3f}",
                         "-i", "anullsrc=r=48000:cl=stereo"]
-            graphe += (f"[op];[3:v]fps={FPS},format=yuv420p[g];"
-                       f"[op][g]xfade=transition=fade:duration={FONDU}:"
-                       f"offset={bascule + d_plan - FONDU:.3f}[v]")
-            son = "[2:a][1:a][4:a]concat=n=3:v=0:a=1"
+            graphe += (f"[fp];[6:v]fps={FPS},format=yuv420p[g];"
+                       f"[fp][g]xfade=transition=fade:duration={FONDU}:"
+                       f"offset={fin_plan - FONDU:.3f}[v]")
+            pistes = f"[5:a][4:a][7:a]concat=n=3:v=0:a=1"
         else:
             graphe += "[v]"
 
         subprocess.run(
             ["ffmpeg", "-v", "error", "-y", *entrees,
              "-filter_complex",
-             f"{graphe};{son},afade=t=out:st={fin_son - 0.35:.3f}:d=0.35[s]",
+             f"{graphe};{pistes},afade=t=out:st={fin_son - 0.35:.3f}:d=0.35[s]",
              "-map", "[v]", "-map", "[s]",
              "-c:v", "libx264", "-preset", "medium", "-crf", "19",
              "-c:a", "aac", "-b:a", "160k", "-movflags", "+faststart",
@@ -506,41 +802,106 @@ def charger(episode, a):
     return ep
 
 
+SOURCES = R / "build" / "sources"
+
+
+def rapatrier(url, nom):
+    """Le fichier de la bibliothèque, gardé sous le coude.
+
+    Trente-cinq épisodes font soixante-dix téléchargements ; les relancer à
+    chaque essai de mise en page coûte plus de temps que le montage lui-même.
+    """
+    SOURCES.mkdir(parents=True, exist_ok=True)
+    dest = SOURCES / nom
+    if dest.exists() and dest.stat().st_size > 100_000:
+        return dest
+    with urllib.request.urlopen(
+        urllib.request.Request(url, headers={"User-Agent": "foodeatup/habillage"}),
+        timeout=180,
+    ) as r, open(dest, "wb") as f:
+        shutil.copyfileobj(r, f)
+    return dest
+
+
+def un_episode(ep, piece, sortie):
+    if not ep.get("clip"):
+        raise SystemExit(f"{ep['id']} : pas de clip Higgsfield propre")
+    if not ep.get("plan"):
+        raise SystemExit(f"{ep['id']} : pas de piste son")
+    clip = rapatrier(ep["clip"], f"{ep['id']}-clip.mp4")
+    son = rapatrier(ep["plan"], f"{ep['id']}-son.mp4")
+    sortie.parent.mkdir(parents=True, exist_ok=True)
+    monter(ep, clip, son, sortie, piece == "short")
+    return sortie
+
+
 def main(argv):
     p = argparse.ArgumentParser()
-    p.add_argument("episode")
+    p.add_argument("episode", nargs="?", help="EPxxx, ou --tous")
+    p.add_argument("--tous", action="store_true",
+                   help="tous les épisodes dont les sources sont en ligne")
     p.add_argument("--titre")
     p.add_argument("--serie")
     p.add_argument("--saison")
     p.add_argument("--plan-du-film")
     p.add_argument("--lieu")
     p.add_argument("--vignette")
-    p.add_argument("--plan", help="le plan de dix secondes à habiller")
     p.add_argument("--piece", choices=("story", "short"), default="story",
-                   help="story : ouverture + plan. short : et le générique.")
-    p.add_argument("--sortie")
+                   help="story : film + épisode + plan. short : et le générique.")
+    p.add_argument("--sortie", default="dist/upeatfood")
     p.add_argument("--apercu", action="store_true",
-                   help="écrit deux planches PNG, ne monte rien")
+                   help="écrit les planches de contrôle, ne monte rien")
     a = p.parse_args(argv)
+
+    if a.tous:
+        cat = json.loads(CATALOGUE.read_text(encoding="utf-8"))
+        base = pathlib.Path(a.sortie)
+        faits, sautes = [], []
+        for brut in cat:
+            if not (brut.get("clip") and brut.get("plan")):
+                sautes.append(brut["id"])
+                continue
+            ep = charger(brut["id"], a)
+            dest = base / a.piece / f"{ep['id']}.mp4"
+            un_episode(ep, a.piece, dest)
+            faits.append(ep["id"])
+            print(f"  {ep['id']}  {duree_de(dest):.2f} s  "
+                  f"{dest.stat().st_size / 1024:.0f} Ko", flush=True)
+        print(f"\n{len(faits)} montés dans {base / a.piece}")
+        if sautes:
+            print(f"{len(sautes)} sans source : {' '.join(sautes)}")
+        return 0
+
+    if not a.episode:
+        raise SystemExit("donner un EPxxx, ou --tous")
     ep = charger(a.episode, a)
 
-    if a.apercu or not a.plan:
-        base = pathlib.Path(a.sortie or ".")
+    if a.apercu:
+        base = pathlib.Path(a.sortie)
         if base.suffix:
             base = base.parent
         base.mkdir(parents=True, exist_ok=True)
-        t_ouv = [0.15, 0.45, 0.75, 1.05, 1.32, 1.62, 2.45]
-        t_fin = [0.00, 0.22, 0.44, 0.64, 0.88, 1.20, 2.40]
-        planche([ouverture(ep, t) for t in t_ouv], base / f"apercu-{a.episode}-ouverture.png")
-        planche([generique(ep["titre"], ep["serie"], ep["saison"], t) for t in t_fin],
+        tmp = pathlib.Path(tempfile.mkdtemp(prefix="apercu-"))
+        try:
+            pl = plaque_frames(tmp)
+            t_film = [0.30, 0.90, 1.50, 2.10, 2.60, 3.20, 4.60]
+            planche([carte_film(ep, t, Image.open(pl[min(int(t * FPS), len(pl) - 1)]))
+                     for t in t_film], base / f"apercu-{a.episode}-film.png")
+        finally:
+            shutil.rmtree(tmp, ignore_errors=True)
+        planche([ouverture(ep, t) for t in (0.12, 0.40, 0.72, 1.00, 1.30, 1.60, 1.85)],
+                base / f"apercu-{a.episode}-episode.png")
+        planche([generique(ep["titre"], ep["serie"], ep["saison"], t)
+                 for t in (0.00, 0.22, 0.44, 0.64, 0.88, 1.20, 2.40)],
                 base / f"apercu-{a.episode}-generique.png")
-        print(f"{base}/apercu-{a.episode}-ouverture.png  ({', '.join(f'{t:.2f}' for t in t_ouv)} s)")
-        print(f"{base}/apercu-{a.episode}-generique.png  ({', '.join(f'{t:.2f}' for t in t_fin)} s)")
+        for quoi in ("film", "episode", "generique"):
+            print(base / f"apercu-{a.episode}-{quoi}.png")
         return 0
 
-    dest = pathlib.Path(a.sortie or f"{a.episode}.mp4")
-    dest.parent.mkdir(parents=True, exist_ok=True)
-    monter(ep, pathlib.Path(a.plan), dest, a.piece == "short")
+    dest = pathlib.Path(a.sortie)
+    if not dest.suffix:
+        dest = dest / a.piece / f"{a.episode}.mp4"
+    un_episode(ep, a.piece, dest)
     print(f"{dest}  {a.piece}  {duree_de(dest):.2f} s  {dest.stat().st_size / 1024:.0f} Ko")
     return 0
 

@@ -10,7 +10,11 @@
     "accroche": "Il était une fois un restaurant, et un homme qui ouvrait seul.",
     "punchline": "Personne ne verra jamais ces quatre heures-là.",
     "vignette": "EP501-9x16.jpg",
-    "plan": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP501.mp4"
+    "plan": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/story-EP501",
+    "conteur": "Il était une fois un restaurant, et un homme qui ouvrait seul.",
+    "personnage": "Bon. On y va.",
+    "generique": "Sa journée commence quatre heures avant la vôtre.",
+    "clip": null
   },
   {
     "id": "EP502",
@@ -23,7 +27,11 @@
     "accroche": "Il tenait ses comptes à trois endroits. Aucun ne parlait aux autres.",
     "punchline": "Trois vérités, et pas une seule bonne.",
     "vignette": "EP502-9x16.jpg",
-    "plan": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP502.mp4"
+    "plan": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/story-EP502",
+    "conteur": "Il tenait ses comptes à trois endroits. Aucun ne parlait aux autres.",
+    "personnage": "Ça, c'était mardi. Ou jeudi.",
+    "generique": "Trois carnets ne font pas une comptabilité.",
+    "clip": null
   },
   {
     "id": "EP503",
@@ -36,7 +44,11 @@
     "accroche": "Puis vint le vendredi où le bac était vide.",
     "punchline": "Il l'avait dit le matin. On l'a écouté à vingt heures.",
     "vignette": "EP503-9x16.jpg",
-    "plan": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/story-EP503"
+    "plan": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/story-EP503",
+    "conteur": "Puis vint le vendredi où le bac était vide.",
+    "personnage": "Va dire à la douze qu'il n'y en a plus.",
+    "generique": "Une rupture un vendredi soir coûte plus qu'un mois de logiciel.",
+    "clip": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/Higgsfield-source-EP503"
   },
   {
     "id": "EP504",
@@ -49,7 +61,11 @@
     "accroche": "Un matin, il n'a pas ouvert le carnet.",
     "punchline": "Il a simplement demandé.",
     "vignette": "EP504-9x16.jpg",
-    "plan": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/story-EP504"
+    "plan": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/story-EP504",
+    "conteur": "Un matin, il n'a pas ouvert le carnet.",
+    "personnage": "Qu'est-ce qu'il me manque, aujourd'hui ?",
+    "generique": "Demandez le matin. Vous commanderez au lieu de vous excuser.",
+    "clip": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/Higgsfield-source-EP504"
   },
   {
     "id": "EP505",
@@ -62,7 +78,11 @@
     "accroche": "Le même geste, la même sauce. Mais il sait, maintenant.",
     "punchline": "Le goût n'a pas changé. Le reste, si.",
     "vignette": "EP505-9x16.jpg",
-    "plan": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/story-EP505"
+    "plan": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/story-EP505",
+    "conteur": "Le même geste, la même sauce. Mais il sait, maintenant.",
+    "personnage": "Celui-là, je sais ce qu'il me rapporte.",
+    "generique": "Le coût matière à jour, à chaque service.",
+    "clip": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/Higgsfield-source-EP505"
   },
   {
     "id": "EP506",
@@ -75,7 +95,11 @@
     "accroche": "Il ferme toujours à minuit. Mais il ne se demande plus rien.",
     "punchline": "La marge du jour l'attendait avant qu'il éteigne.",
     "vignette": "EP506-9x16.jpg",
-    "plan": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/story-EP506"
+    "plan": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/story-EP506",
+    "conteur": "Il ferme toujours à minuit. Mais il ne se demande plus rien.",
+    "personnage": "Bonne soirée à tous.",
+    "generique": "Fermer en sachant, pas en espérant.",
+    "clip": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/Higgsfield-source-EP506"
   },
   {
     "id": "EP507",
@@ -88,7 +112,11 @@
     "accroche": "Il était une fois un homme qui tenait une salle entière dans sa tête.",
     "punchline": "Et sa tête rentrait chez elle à minuit.",
     "vignette": "EP507-9x16.jpg",
-    "plan": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/story-EP507"
+    "plan": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/story-EP507",
+    "conteur": "Il était une fois un homme qui tenait une salle entière dans sa tête.",
+    "personnage": "La six ne mange pas de crustacés.",
+    "generique": "Ce qu'il sait ne devrait pas rentrer chez lui le soir.",
+    "clip": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/Higgsfield-source-EP507"
   },
   {
     "id": "EP508",
@@ -101,7 +129,11 @@
     "accroche": "Quatre canaux, et une seule paire de mains.",
     "punchline": "Le téléphone, lui, ne prend jamais sa pause.",
     "vignette": "EP508-9x16.jpg",
-    "plan": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/story-EP508"
+    "plan": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/story-EP508",
+    "conteur": "Quatre canaux, et une seule paire de mains.",
+    "personnage": "Attendez… c'était pour quelle heure ?",
+    "generique": "Quatre canaux, un seul plan de salle.",
+    "clip": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/Higgsfield-source-EP508"
   },
   {
     "id": "EP509",
@@ -114,7 +146,11 @@
     "accroche": "Puis vint le soir où deux tables portaient le même numéro.",
     "punchline": "Douze personnes debout, et une salle complète.",
     "vignette": "EP509-9x16.jpg",
-    "plan": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/story-EP509"
+    "plan": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/story-EP509",
+    "conteur": "Puis vint le soir où deux tables portaient le même numéro.",
+    "personnage": "Je suis vraiment désolé.",
+    "generique": "Une réservation qu'on ne voit pas est une réservation qu'on perd.",
+    "clip": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/Higgsfield-source-EP509"
   },
   {
     "id": "EP510",
@@ -127,7 +163,11 @@
     "accroche": "Un soir, le carnet est resté fermé.",
     "punchline": "Les quatre canaux arrivaient au même endroit.",
     "vignette": "EP510-9x16.jpg",
-    "plan": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/story-EP510"
+    "plan": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/story-EP510",
+    "conteur": "Un soir, le carnet est resté fermé.",
+    "personnage": "On est complets. Et je le sais depuis mardi.",
+    "generique": "Quatre canaux, une seule file, dans l'ordre d'arrivée.",
+    "clip": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/Higgsfield-source-EP510"
   },
   {
     "id": "EP511",
@@ -140,7 +180,11 @@
     "accroche": "Ce qu'il savait par cœur, quelqu'un d'autre le sait aussi maintenant.",
     "punchline": "Ce n'est plus sa mémoire. C'est celle de la maison.",
     "vignette": "EP511-9x16.jpg",
-    "plan": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/story-EP511"
+    "plan": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/story-EP511",
+    "conteur": "Ce qu'il savait par cœur, quelqu'un d'autre le sait aussi maintenant.",
+    "personnage": "Sans crustacés, comme la dernière fois.",
+    "generique": "La mémoire de la maison, pas celle du serveur.",
+    "clip": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/Higgsfield-source-EP511"
   },
   {
     "id": "EP512",
@@ -153,7 +197,11 @@
     "accroche": "Il rentre chez lui les mains vides. C'est nouveau.",
     "punchline": "Ce qu'il sait est resté au restaurant.",
     "vignette": "EP512-9x16.jpg",
-    "plan": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/story-EP512"
+    "plan": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/story-EP512",
+    "conteur": "Il rentre chez lui les mains vides. C'est nouveau.",
+    "personnage": "À demain.",
+    "generique": "Rentrez chez vous sans le restaurant dans la tête.",
+    "clip": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/Higgsfield-source-EP512"
   },
   {
     "id": "EP513",
@@ -166,7 +214,11 @@
     "accroche": "Il était une fois un homme qui comptait au-dessus du bruit.",
     "punchline": "Sous le plancher, le service. Au-dessus, les chiffres.",
     "vignette": "EP513-9x16.jpg",
-    "plan": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/story-EP513"
+    "plan": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/story-EP513",
+    "conteur": "Il était une fois un homme qui comptait au-dessus du bruit.",
+    "personnage": "Cent quatre couverts. Et alors ?",
+    "generique": "Compter après coup, c'est constater.",
+    "clip": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/Higgsfield-source-EP513"
   },
   {
     "id": "EP514",
@@ -179,7 +231,11 @@
     "accroche": "Les factures arrivaient plus vite qu'il ne les ouvrait.",
     "punchline": "C'est bien la seule chose ici qui pousse sans qu'on l'arrose.",
     "vignette": "EP514-9x16.jpg",
-    "plan": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/story-EP514"
+    "plan": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/story-EP514",
+    "conteur": "Les factures arrivaient plus vite qu'il ne les ouvrait.",
+    "personnage": "Je fais ça dimanche.",
+    "generique": "Ce qui se ressaisit à la main se paie deux fois.",
+    "clip": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/Higgsfield-source-EP514"
   },
   {
     "id": "EP515",
@@ -192,7 +248,11 @@
     "accroche": "Puis vint le jour où il apprit que le mois d'avant avait été mauvais.",
     "punchline": "Un mois trop tard pour y changer quoi que ce soit.",
     "vignette": "EP515-9x16.jpg",
-    "plan": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/story-EP515"
+    "plan": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/story-EP515",
+    "conteur": "Puis vint le jour où il apprit que le mois d'avant avait été mauvais.",
+    "personnage": "Février. On est le quinze mars.",
+    "generique": "Savoir en mars ce qui s'est joué en février, c'est ne pas savoir.",
+    "clip": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/Higgsfield-source-EP515"
   },
   {
     "id": "EP516",
@@ -205,7 +265,11 @@
     "accroche": "Un soir, il n'a pas ouvert le classeur.",
     "punchline": "Il a posé la question, et la réponse était déjà là.",
     "vignette": "EP516-9x16.jpg",
-    "plan": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/story-EP516"
+    "plan": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/story-EP516",
+    "conteur": "Un soir, il n'a pas ouvert le classeur.",
+    "personnage": "Combien me coûte le plat du jour, là, maintenant ?",
+    "generique": "La marge en euros, pas dans trois semaines.",
+    "clip": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/Higgsfield-source-EP516"
   },
   {
     "id": "EP517",
@@ -218,7 +282,11 @@
     "accroche": "Il a arrêté d'être trop nombreux le mardi.",
     "punchline": "Et de manquer de bras le samedi.",
     "vignette": "EP517-9x16.jpg",
-    "plan": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/story-EP517"
+    "plan": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/story-EP517",
+    "conteur": "Il a arrêté d'être trop nombreux le mardi.",
+    "personnage": "Samedi, on sera quatre. Pas trois.",
+    "generique": "Le coût salarial se décide avant le service, pas après.",
+    "clip": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/Higgsfield-source-EP517"
   },
   {
     "id": "EP518",
@@ -231,7 +299,11 @@
     "accroche": "Le bureau ferme maintenant en même temps que la salle.",
     "punchline": "Les dimanches lui ont été rendus.",
     "vignette": "EP518-9x16.jpg",
-    "plan": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/story-EP518"
+    "plan": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/story-EP518",
+    "conteur": "Le bureau ferme maintenant en même temps que la salle.",
+    "personnage": "Dimanche, je ne viens pas.",
+    "generique": "Rendez-vous vos dimanches.",
+    "clip": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/Higgsfield-source-EP518"
   },
   {
     "id": "EP519",
@@ -244,7 +316,11 @@
     "accroche": "Il était une fois quelqu'un qui cherchait simplement où dîner.",
     "punchline": "Il ne verra jamais votre logiciel. Il verra tout le reste.",
     "vignette": "EP519-9x16.jpg",
-    "plan": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/story-EP519"
+    "plan": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/story-EP519",
+    "conteur": "Il était une fois quelqu'un qui cherchait simplement où dîner.",
+    "personnage": "Bon. On tente celui-là.",
+    "generique": "Il décide chez lui, trois jours avant d'entrer.",
+    "clip": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/Higgsfield-source-EP519"
   },
   {
     "id": "EP520",
@@ -257,7 +333,11 @@
     "accroche": "La carte qu'il a lue n'était plus la bonne.",
     "punchline": "On est vendredi.",
     "vignette": "EP520-9x16.jpg",
-    "plan": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/story-EP520"
+    "plan": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/story-EP520",
+    "conteur": "La carte qu'il a lue n'était plus la bonne.",
+    "personnage": "C'était pas ça, sur le site.",
+    "generique": "Une carte qui date de mardi vous coûte le vendredi.",
+    "clip": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/Higgsfield-source-EP520"
   },
   {
     "id": "EP521",
@@ -270,7 +350,11 @@
     "accroche": "Puis vint le soir où il a appelé, et où personne n'a répondu.",
     "punchline": "Il a rappelé le restaurant d'à côté.",
     "vignette": "EP521-9x16.jpg",
-    "plan": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/story-EP521"
+    "plan": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/story-EP521",
+    "conteur": "Puis vint le soir où il a appelé, et où personne n'a répondu.",
+    "personnage": "Tant pis.",
+    "generique": "Le client qui n'a pas eu de réponse ne rappelle pas.",
+    "clip": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/Higgsfield-source-EP521"
   },
   {
     "id": "EP522",
@@ -283,7 +367,11 @@
     "accroche": "Un soir, quelqu'un a décroché. Au premier coup.",
     "punchline": "Et on lui a demandé s'il y avait une allergie.",
     "vignette": "EP522-9x16.jpg",
-    "plan": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/story-EP522"
+    "plan": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/story-EP522",
+    "conteur": "Un soir, quelqu'un a décroché. Au premier coup.",
+    "personnage": "Six. Et deux sans fruits à coque, oui.",
+    "generique": "Décrocher à la première sonnerie, même en plein coup de feu.",
+    "clip": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/Higgsfield-source-EP522"
   },
   {
     "id": "EP523",
@@ -296,7 +384,11 @@
     "accroche": "Il n'a rien eu à expliquer en arrivant.",
     "punchline": "C'était déjà écrit.",
     "vignette": "EP523-9x16.jpg",
-    "plan": null
+    "plan": null,
+    "conteur": "Il n'a rien eu à expliquer en arrivant.",
+    "personnage": "Vous aviez noté ?",
+    "generique": "Ce qu'il ne remarque pas, c'est exactement ce qui le fait revenir.",
+    "clip": null
   },
   {
     "id": "EP524",
@@ -309,7 +401,11 @@
     "accroche": "Ce qu'il écrit le soir vaut le service entier.",
     "punchline": "Cinq étoiles, et il ne saura jamais pourquoi.",
     "vignette": "EP524-9x16.jpg",
-    "plan": null
+    "plan": null,
+    "conteur": "Ce qu'il écrit le soir vaut le service entier.",
+    "personnage": "Franchement, c'était très bien.",
+    "generique": "Un avis, c'est un service entier qui remonte.",
+    "clip": null
   },
   {
     "id": "EP525",
@@ -322,7 +418,11 @@
     "accroche": "Ce que vous venez de voir se passait le même soir. Vendredi.",
     "punchline": "Aucun des quatre ne sait que les trois autres existent.",
     "vignette": "EP525-9x16.jpg",
-    "plan": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/story-EP525"
+    "plan": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/story-EP525",
+    "conteur": "Ce que vous venez de voir se passait le même soir. Vendredi.",
+    "personnage": "Vendredi. Dix-huit heures.",
+    "generique": "Quatre métiers, un seul service.",
+    "clip": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/Higgsfield-source-EP525"
   },
   {
     "id": "EP526",
@@ -335,7 +435,11 @@
     "accroche": "Tout commence par quelqu'un qui n'est pas encore là.",
     "punchline": "Six couverts, deux allergies, et le service ne le sait pas encore.",
     "vignette": "EP526-9x16.jpg",
-    "plan": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/story-EP526"
+    "plan": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/story-EP526",
+    "conteur": "Tout commence par quelqu'un qui n'est pas encore là.",
+    "personnage": "Six, à vingt heures et quart.",
+    "generique": "Une phrase dite chez soi arrive en cuisine.",
+    "clip": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/Higgsfield-source-EP526"
   },
   {
     "id": "EP527",
@@ -348,7 +452,11 @@
     "accroche": "Une minute plus tard, à trois kilomètres de là.",
     "punchline": "La table de six existait avant que personne ne la demande.",
     "vignette": "EP527-9x16.jpg",
-    "plan": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/story-EP527"
+    "plan": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/story-EP527",
+    "conteur": "Une minute plus tard, à trois kilomètres de là.",
+    "personnage": "La quatorze. Six. Deux sans fruits à coque.",
+    "generique": "La contrainte arrive écrite sur la réservation.",
+    "clip": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/Higgsfield-source-EP527"
   },
   {
     "id": "EP528",
@@ -361,7 +469,11 @@
     "accroche": "Une minute encore, et l'information passe la porte battante.",
     "punchline": "Personne n'a crié le nom d'une allergie à travers la cuisine.",
     "vignette": "EP528-9x16.jpg",
-    "plan": null
+    "plan": null,
+    "conteur": "Une minute encore, et l'information passe la porte battante.",
+    "personnage": "Deux à part. Compris.",
+    "generique": "Une allergie notée vaut mieux qu'une allergie criée.",
+    "clip": null
   },
   {
     "id": "EP529",
@@ -374,7 +486,11 @@
     "accroche": "Et à l'étage, quelqu'un a vu passer six couverts de plus.",
     "punchline": "Il connaît la marge de la soirée avant qu'elle ait commencé.",
     "vignette": "EP529-9x16.jpg",
-    "plan": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/story-EP529"
+    "plan": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/story-EP529",
+    "conteur": "Et à l'étage, quelqu'un a vu passer six couverts de plus.",
+    "personnage": "Cent dix, ce soir.",
+    "generique": "Le couvert compte avant d'entrer, pas après.",
+    "clip": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/Higgsfield-source-EP529"
   },
   {
     "id": "EP530",
@@ -387,7 +503,11 @@
     "accroche": "À vingt heures quinze, les quatre histoires n'en font plus qu'une.",
     "punchline": "Et c'est le même homme, dans quatre vies.",
     "vignette": "EP530-9x16.jpg",
-    "plan": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/story-EP530"
+    "plan": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/story-EP530",
+    "conteur": "À vingt heures quinze, les quatre histoires n'en font plus qu'une.",
+    "personnage": "Bonsoir. Vous avez réservé ?",
+    "generique": "Quatre postes, une seule saisie.",
+    "clip": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/Higgsfield-source-EP530"
   },
   {
     "id": "EP531",
@@ -400,7 +520,11 @@
     "accroche": "Seize minutes plus tard, l'assiette quitte le pass.",
     "punchline": "Six assiettes, dont deux qui ne ressemblent pas aux autres.",
     "vignette": "EP531-9x16.jpg",
-    "plan": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/story-EP531"
+    "plan": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/story-EP531",
+    "conteur": "Seize minutes plus tard, l'assiette quitte le pass.",
+    "personnage": "Voilà. Sans fruits à coque.",
+    "generique": "Du pass à la table, sans un mot de plus.",
+    "clip": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/Higgsfield-source-EP531"
   },
   {
     "id": "EP532",
@@ -413,7 +537,11 @@
     "accroche": "Il n'a rien remarqué. C'est exactement le but.",
     "punchline": "Ce qu'on ne remarque pas, c'est ce qui marche.",
     "vignette": "EP532-9x16.jpg",
-    "plan": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/story-EP532"
+    "plan": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/story-EP532",
+    "conteur": "Il n'a rien remarqué. C'est exactement le but.",
+    "personnage": "C'est très bon.",
+    "generique": "La meilleure technologie est celle qu'on ne voit pas.",
+    "clip": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/Higgsfield-source-EP532"
   },
   {
     "id": "EP533",
@@ -426,7 +554,11 @@
     "accroche": "À minuit moins dix, il n'y avait plus rien à rattraper.",
     "punchline": "Le dimanche est resté un dimanche.",
     "vignette": "EP533-9x16.jpg",
-    "plan": null
+    "plan": null,
+    "conteur": "À minuit moins dix, il n'y avait plus rien à rattraper.",
+    "personnage": "C'était une bonne soirée.",
+    "generique": "Trois chiffres avant d'éteindre, pas le 15 du mois suivant.",
+    "clip": null
   },
   {
     "id": "EP534",
@@ -439,7 +571,11 @@
     "accroche": "Le lendemain, il a ouvert. Comme tous les jours.",
     "punchline": "Mais il n'a plus jamais ouvert le carnet.",
     "vignette": "EP534-9x16.jpg",
-    "plan": null
+    "plan": null,
+    "conteur": "Le lendemain, il a ouvert. Comme tous les jours.",
+    "personnage": "Bon. On y va.",
+    "generique": "Le même métier. Sans la charge.",
+    "clip": null
   },
   {
     "id": "EP535",
@@ -452,6 +588,10 @@
     "accroche": "Il était une fois un restaurant. Il y est toujours.",
     "punchline": "Quatre métiers, un seul logiciel, et personne n'a rien vu passer.",
     "vignette": "EP535-9x16.jpg",
-    "plan": null
+    "plan": null,
+    "conteur": "Il était une fois un restaurant. Il y est toujours.",
+    "personnage": "Il était une fois un restaurant.",
+    "generique": "FoodEatUp. Le restaurant qui se gère tout seul.",
+    "clip": null
   }
 ]
