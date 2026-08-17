@@ -483,12 +483,14 @@ def carte_film(ep, t, plaque, duree=FILM):
                        police(600, 27), CREME_AFFICHE, q * 0.95, dy=(1 - q) * 14)
 
     # 2 · la marque, au centre de la zone réservée
+    #
+    # Le huit a été retiré d'ici. Il était posé quarante pixels au-dessus de
+    # la plaque, et la plaque porte DÉJÀ le huit — ce sont les deux O du mot
+    # FOODEATUP. On voyait donc le signe deux fois, l'un chevauchant l'autre,
+    # et le second était le vrai. Le huit garde sa place sur la carte
+    # d'épisode, où il est seul.
     cyb = by + bh // 2
-    reste = max(0.0, 1 - max(0.0, t - 1.75) / 0.8)
-    im = huit(im, L // 2, cyb - 40, int(L * 0.062), phase(t, 0.55, 1.75),
-              math.sin((t - 0.55) * math.pi * 8 / 1.20) * reste if t > 0.55 else 0,
-              phase(t, 0.50, 0.90))
-    im = lockup(im, L // 2, cyb + 76, int(L * 0.44), phase(t, 1.30, 1.90))
+    im = lockup(im, L // 2, cyb, int(L * 0.50), phase(t, 0.85, 1.55))
 
     # 3 · le titre du film, à l'échelle de l'affiche
     y = by + bh + 118
@@ -712,6 +714,29 @@ def monter(ep, clip, son, dest, avec_generique):
         for i in range(int(d_clip * FPS)):
             sous_titre(ep, i / FPS).save(bande / f"{i:04d}.png")
 
+        # La voix du conteur est normalisée DANS UNE PASSE À PART.
+        #
+        # C'était le vrai grésillement. Le fichier fourni a une crête à
+        # −9,0 dB pour une moyenne à −26,3 : dix-sept décibels de facteur de
+        # crête. Le remonter d'un simple gain de 10,6 dB pour l'amener à
+        # hauteur de dialogue envoyait ses crêtes à +1,6 dBFS, et le limiteur
+        # de fin de chaîne travaillait alors trois décibels en permanence sur
+        # une voix — ce qui s'entend exactement comme une friture.
+        #
+        # `loudnorm` règle le niveau PERÇU au lieu du niveau crête, donc il
+        # monte la voix sans écraser ses attaques. Il ne peut pas être mis
+        # dans le graphe principal : sur une entrée de quelques secondes il
+        # ressort ses frames avec des PTS décalés, et tout ce qui suit prend
+        # ce décalage pour du temps écoulé. C'est la règle du dépôt, apprise
+        # sur la punchline des masters, et elle vaut ici.
+        voix = tmp / "conteur.wav"
+        subprocess.run(
+            ["ffmpeg", "-v", "error", "-y", "-i", str(CONTEUR),
+             "-af", "loudnorm=I=-17:TP=-3:LRA=11",
+             "-ar", "48000", "-ac", "2", str(voix)],
+            check=True,
+        )
+
         d_son = duree_de(son)
         b1 = FILM - FONDU                    # le film s'efface dans l'épisode
         b2 = b1 + OUVERTURE - FONDU          # l'épisode s'efface dans le plan
@@ -783,11 +808,23 @@ def monter(ep, clip, son, dest, avec_generique):
         # ce niveau ici, et on le laisse remonter quand plus personne ne
         # parle.
         # `bgm.mp3` dure 46 s, la pièce la plus longue 19 : pas de bouclage.
-        entrees += ["-i", str(BGM),
-                    "-ss", "0", "-t", f"{FILM:.3f}", "-i", str(PLAQUE),
-                    "-i", str(CONTEUR)]
+        # L'ambiance de la plaque ne monte plus.
+        #
+        # C'était le grésillement restant. Le fichier Higgsfield est encodé en
+        # AAC à 32 000 Hz — la seule source du montage à cette fréquence — et
+        # son « ronflement de hotte » est un souffle de synthèse : l'énergie
+        # est sous 400 Hz, mais l'encodage laisse des artefacts dans le haut
+        # du spectre. Je le remontais de 8,3 dB pour l'entendre, ce qui
+        # remontait les artefacts d'autant. Tant que la voix du conteur
+        # occupait le premier plan ils passaient ; dès qu'elle s'écartait, on
+        # n'entendait plus qu'eux.
+        #
+        # Le lit musical couvre déjà la carte du film, et il est propre. On
+        # garde donc l'IMAGE de la plaque et on jette son son : c'est aussi ce
+        # qui débarrasse le graphe de son dernier rééchantillonnage en 1,5:1.
+        entrees += ["-i", str(BGM), "-i", str(voix)]
         i_bgm = 8 if avec_generique else 6
-        i_amb, i_voix = i_bgm + 1, i_bgm + 2
+        i_voix = i_bgm + 1
         bascule_lit = b2 - 0.30
 
         # TOUTES les entrées passent par le même `aformat`.
@@ -811,17 +848,13 @@ def monter(ep, clip, son, dest, avec_generique):
             f"if(lt(t,{bascule_lit + 0.8:.3f}),"
             f"0.30-0.215*(t-{bascule_lit:.3f})/0.8,0.085))':eval=frame,"
             f"afade=t=in:st=0:d=0.9[lit];"
-            f"[{i_amb}:a]{FMT},atrim=duration={FILM:.3f},asetpts=N/SR/TB,"
-            f"volume=2.6,afade=t=out:st={FILM - 0.6:.3f}:d=0.6,"
-            f"apad=whole_dur={total:.3f}[amb];"
-            # Le conteur ouvre le film. Il entre à 0,35 s — le temps que la
-            # bande s'allume — et il est remonté à hauteur de dialogue : le
-            # fichier fourni est à −26 dBFS de moyenne, soit douze décibels
-            # sous la voix des plans.
-            f"[{i_voix}:a]{FMT},volume=3.4,"
+            # Le conteur ouvre le film, à 0,35 s — le temps que la bande
+            # s'allume. Plus aucun gain ici : la passe de normalisation l'a
+            # déjà placé, avec trois décibels de garde sous la crête.
+            f"[{i_voix}:a]{FMT},"
             f"adelay=350|350,apad=whole_dur={total:.3f}[voix];"
         )
-        melange = (f"[vx][lit][amb][voix]amix=inputs=4:normalize=0:"
+        melange = (f"[vx][lit][voix]amix=inputs=3:normalize=0:"
                    f"duration=first[mx];")
 
         subprocess.run(
