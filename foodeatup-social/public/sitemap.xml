@@ -51,6 +51,11 @@
     <priority>0.6</priority>
   </url>
   <url>
+    <loc>https://foodeatup-social.lovable.app/reseaux/whatsapp</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://foodeatup-social.lovable.app/series/le-coup-de-feu</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>

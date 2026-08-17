@@ -196,6 +196,29 @@ export type ContenuEpisode = FormatsSociaux & {{
 
 export const contenuParEpisode: Record<string, ContenuEpisode> = {contenu};
 
+/**
+ * Le texte d'une publication, WhatsApp compris.
+ *
+ * WhatsApp n'a pas de ligne dans la donnée : c'est un aperçu, pas une sixième
+ * colonne. Sa publication reprend celle d'Instagram — même pièce 9:16, même
+ * heure — moins le titre, qui ne sert qu'à YouTube, et sans mots-dièse : ils
+ * n'y veulent rien dire.
+ *
+ * Cette fonction vit dans le gabarit et non dans le fichier généré : elle avait
+ * été écrite à la main dans `contenu.ts`, et la régénération suivante l'a
+ * effacée. Tout ce qu'on ajoute au fichier produit disparaît au prochain
+ * passage — c'est ici qu'il faut l'écrire.
+ */
+export function texteDe(id: string, reseau: Reseau): PublicationTexte | undefined {{
+  const c = contenuParEpisode[id];
+  if (!c) return undefined;
+  if (reseau !== "whatsapp") return c.publications[reseau];
+  const base = c.publications.instagram;
+  if (!base) return undefined;
+  const {{ titre: _titre, ...reste }} = base;
+  return {{ ...reste, hashtags: [] }};
+}}
+
 export const contenuDe = (id: string): ContenuEpisode | undefined => contenuParEpisode[id];
 
 /** Le texte complet prêt à coller : légende + ligne de mots-dièse. */

@@ -52919,8 +52919,14 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "format": "16:9 · 1920 × 1080 · 12,5 s",
       "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube-paysage/EP501.mp4"
     },
-    "storyFacebook": null,
-    "videoTiktok": null,
+    "storyFacebook": {
+      "format": "9:16 · 1080 × 1920 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/facebook/EP501.mp4"
+    },
+    "videoTiktok": {
+      "format": "9:16 · 1080 × 1920 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/tiktok-story/EP501.mp4"
+    },
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
       "planches": [
@@ -53127,8 +53133,14 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "format": "16:9 · 1920 × 1080 · 12,5 s",
       "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube-paysage/EP502.mp4"
     },
-    "storyFacebook": null,
-    "videoTiktok": null,
+    "storyFacebook": {
+      "format": "9:16 · 1080 × 1920 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/facebook/EP502.mp4"
+    },
+    "videoTiktok": {
+      "format": "9:16 · 1080 × 1920 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/tiktok-story/EP502.mp4"
+    },
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
       "planches": [
@@ -53335,8 +53347,14 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "format": "16:9 · 1920 × 1080 · 12,5 s",
       "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube-paysage/EP503.mp4"
     },
-    "storyFacebook": null,
-    "videoTiktok": null,
+    "storyFacebook": {
+      "format": "9:16 · 1080 × 1920 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/facebook/EP503.mp4"
+    },
+    "videoTiktok": {
+      "format": "9:16 · 1080 × 1920 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/tiktok-story/EP503.mp4"
+    },
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
       "planches": [
@@ -53543,8 +53561,14 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "format": "16:9 · 1920 × 1080 · 12,5 s",
       "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube-paysage/EP504.mp4"
     },
-    "storyFacebook": null,
-    "videoTiktok": null,
+    "storyFacebook": {
+      "format": "9:16 · 1080 × 1920 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/facebook/EP504.mp4"
+    },
+    "videoTiktok": {
+      "format": "9:16 · 1080 × 1920 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/tiktok-story/EP504.mp4"
+    },
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
       "planches": [
@@ -53751,8 +53775,14 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "format": "16:9 · 1920 × 1080 · 12,5 s",
       "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube-paysage/EP505.mp4"
     },
-    "storyFacebook": null,
-    "videoTiktok": null,
+    "storyFacebook": {
+      "format": "9:16 · 1080 × 1920 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/facebook/EP505.mp4"
+    },
+    "videoTiktok": {
+      "format": "9:16 · 1080 × 1920 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/tiktok-story/EP505.mp4"
+    },
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
       "planches": [
@@ -53959,8 +53989,14 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "format": "16:9 · 1920 × 1080 · 12,5 s",
       "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube-paysage/EP506.mp4"
     },
-    "storyFacebook": null,
-    "videoTiktok": null,
+    "storyFacebook": {
+      "format": "9:16 · 1080 × 1920 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/facebook/EP506.mp4"
+    },
+    "videoTiktok": {
+      "format": "9:16 · 1080 × 1920 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/tiktok-story/EP506.mp4"
+    },
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
       "planches": [
@@ -54167,8 +54203,14 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "format": "16:9 · 1920 × 1080 · 12,5 s",
       "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube-paysage/EP507.mp4"
     },
-    "storyFacebook": null,
-    "videoTiktok": null,
+    "storyFacebook": {
+      "format": "9:16 · 1080 × 1920 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/facebook/EP507.mp4"
+    },
+    "videoTiktok": {
+      "format": "9:16 · 1080 × 1920 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/tiktok-story/EP507.mp4"
+    },
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
       "planches": [
@@ -54375,8 +54417,14 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "format": "16:9 · 1920 × 1080 · 12,5 s",
       "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube-paysage/EP508.mp4"
     },
-    "storyFacebook": null,
-    "videoTiktok": null,
+    "storyFacebook": {
+      "format": "9:16 · 1080 × 1920 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/facebook/EP508.mp4"
+    },
+    "videoTiktok": {
+      "format": "9:16 · 1080 × 1920 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/tiktok-story/EP508.mp4"
+    },
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
       "planches": [
@@ -54583,7 +54631,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "format": "16:9 · 1920 × 1080 · 12,5 s",
       "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube-paysage/EP509.mp4"
     },
-    "storyFacebook": null,
+    "storyFacebook": {
+      "format": "9:16 · 1080 × 1920 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/facebook/EP509.mp4"
+    },
     "videoTiktok": null,
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
@@ -54791,7 +54842,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "format": "16:9 · 1920 × 1080 · 12,5 s",
       "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube-paysage/EP510.mp4"
     },
-    "storyFacebook": null,
+    "storyFacebook": {
+      "format": "9:16 · 1080 × 1920 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/facebook/EP510.mp4"
+    },
     "videoTiktok": null,
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
@@ -54999,7 +55053,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "format": "16:9 · 1920 × 1080 · 12,5 s",
       "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube-paysage/EP511.mp4"
     },
-    "storyFacebook": null,
+    "storyFacebook": {
+      "format": "9:16 · 1080 × 1920 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/facebook/EP511.mp4"
+    },
     "videoTiktok": null,
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
@@ -55207,7 +55264,10 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "format": "16:9 · 1920 × 1080 · 12,5 s",
       "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube-paysage/EP512.mp4"
     },
-    "storyFacebook": null,
+    "storyFacebook": {
+      "format": "9:16 · 1080 × 1920 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/facebook/EP512.mp4"
+    },
     "videoTiktok": null,
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
@@ -57680,7 +57740,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "format": "9:16 · 1080 × 1920 · 10 s",
       "hook": "Ce qu'il écrit le soir vaut le service entier",
       "punchline": "Cinq étoiles, et il ne saura jamais pourquoi",
-      "url": null,
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP524.mp4",
       "motion": {
         "quand": "8,5 → 10,0 s, par-dessus la fin du plan",
         "consigne": "Générique de fin en motion design, posé sur les 1,5 dernière(s) seconde(s) du plan, sans jamais couper l'image :\n— à 8,5 s, un voile marine #0F1A23 monte du bas sur le tiers inférieur, en 0,3 s, courbe d'accélération douce ;\n— à 8,8 s, le logo FoodEatUp arrive du bas, cale au centre du voile, avec un léger dépassement puis retour (overshoot 6 %) ;\n— à 9,1 s, la punchline s'écrit sous le logo, un mot après l'autre, 0,06 s par mot, en crème #FCF9E6 ;\n— à 9,6 s, la mention « à suivre » apparaît en orange #FFA500 à droite, avec une flèche qui avance de 8 px et s'arrête ;\n— rien ne disparaît avant la fin du plan.",
@@ -59944,7 +60004,7 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "format": "9:16 · 1080 × 1920 · 10 s",
       "hook": "Il était une fois un restaurant. Il y est toujours",
       "punchline": "Quatre métiers, un seul logiciel, et personne n'a rien vu passer",
-      "url": null,
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP535.mp4",
       "motion": {
         "quand": "8,5 → 10,0 s, par-dessus la fin du plan",
         "consigne": "Générique de fin en motion design, posé sur les 1,5 dernière(s) seconde(s) du plan, sans jamais couper l'image :\n— à 8,5 s, un voile marine #0F1A23 monte du bas sur le tiers inférieur, en 0,3 s, courbe d'accélération douce ;\n— à 8,8 s, le logo FoodEatUp arrive du bas, cale au centre du voile, avec un léger dépassement puis retour (overshoot 6 %) ;\n— à 9,1 s, la punchline s'écrit sous le logo, un mot après l'autre, 0,06 s par mot, en crème #FCF9E6 ;\n— à 9,6 s, la mention « à suivre » apparaît en orange #FFA500 à droite, avec une flèche qui avance de 8 px et s'arrête ;\n— rien ne disparaît avant la fin du plan.",
@@ -59997,6 +60057,29 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
     "tutoriel": null
   }
 };
+
+/**
+ * Le texte d'une publication, WhatsApp compris.
+ *
+ * WhatsApp n'a pas de ligne dans la donnée : c'est un aperçu, pas une sixième
+ * colonne. Sa publication reprend celle d'Instagram — même pièce 9:16, même
+ * heure — moins le titre, qui ne sert qu'à YouTube, et sans mots-dièse : ils
+ * n'y veulent rien dire.
+ *
+ * Cette fonction vit dans le gabarit et non dans le fichier généré : elle avait
+ * été écrite à la main dans `contenu.ts`, et la régénération suivante l'a
+ * effacée. Tout ce qu'on ajoute au fichier produit disparaît au prochain
+ * passage — c'est ici qu'il faut l'écrire.
+ */
+export function texteDe(id: string, reseau: Reseau): PublicationTexte | undefined {
+  const c = contenuParEpisode[id];
+  if (!c) return undefined;
+  if (reseau !== "whatsapp") return c.publications[reseau];
+  const base = c.publications.instagram;
+  if (!base) return undefined;
+  const { titre: _titre, ...reste } = base;
+  return { ...reste, hashtags: [] };
+}
 
 export const contenuDe = (id: string): ContenuEpisode | undefined => contenuParEpisode[id];
 

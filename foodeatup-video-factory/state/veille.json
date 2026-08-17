@@ -30,6 +30,17 @@
         }
       ]
     },
+    "EP:EP524": {
+      "titre": "Vingt-trois heures, dans le métro",
+      "date": "2026-09-14",
+      "prises": [
+        {
+          "job": "43aa8580-1412-4cbc-8508-1e4735144a2c",
+          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3GXYlNxkbz83gXaGDVVrTni1dX2/hf_20260817_105517_43aa8580-1412-4cbc-8508-1e4735144a2c.mp4",
+          "at": 1786964117.187747
+        }
+      ]
+    },
     "EP:EP528": {
       "titre": "18 h 42 — la cuisine l'apprend",
       "date": "2026-09-19",
@@ -65,6 +76,17 @@
           "job": "2eaaaeee-bac2-4fcd-b8a6-80bc2711c881",
           "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3GXYlNxkbz83gXaGDVVrTni1dX2/hf_20260816_223536_2eaaaeee-bac2-4fcd-b8a6-80bc2711c881.mp4",
           "at": 1786919736.648705
+        }
+      ]
+    },
+    "EP:EP535": {
+      "titre": "Il était une fois un restaurant",
+      "date": "2026-09-26",
+      "prises": [
+        {
+          "job": "e7314224-7b78-448c-af5f-c763b10ef827",
+          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3GXYlNxkbz83gXaGDVVrTni1dX2/hf_20260817_112213_e7314224-7b78-448c-af5f-c763b10ef827.mp4",
+          "at": 1786965733.909174
         }
       ]
     }
@@ -769,16 +791,6 @@
       "cle": "EP:EP431",
       "titre": "L'orchestration finale du restaurant",
       "date": "2027-05-06"
-    },
-    {
-      "cle": "EP:EP524",
-      "titre": "Vingt-trois heures, dans le métro",
-      "date": "2026-09-14"
-    },
-    {
-      "cle": "EP:EP535",
-      "titre": "Il était une fois un restaurant",
-      "date": "2026-09-26"
     }
   ]
 }
