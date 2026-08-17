@@ -40,7 +40,7 @@ ENTETE = """// FoodEatUp Social — {quoi}
 """
 
 CONTENU_TS = '''
-import type {{ Reseau }} from "./series";
+import type {{ Reseau, ReseauCoeur }} from "./series";
 
 export type PublicationTexte = {{
   legende: string;
@@ -167,7 +167,11 @@ export type VoixOff = {{
 
 export type ContenuEpisode = FormatsSociaux & {{
   voixOff?: VoixOff | null;
-  publications: Record<Reseau, PublicationTexte>;
+  /* WhatsApp n'a pas de ligne ici : sa publication est dérivée de celle
+     d'Instagram par `texteDe`. Typer ce dictionnaire sur `Reseau`, qui
+     inclut WhatsApp, ferait exiger par TypeScript une clé que la donnée
+     n'écrit pas — et c'est exactement ce qui a cassé la CI. */
+  publications: Record<ReseauCoeur, PublicationTexte>;
   promptVignette: string;
   higgsfieldPrompt: string | null;
   /** Saison 6 : ce que dit le végé-fruité à l'écran, en personnage HeyGen. */
