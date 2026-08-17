@@ -681,7 +681,7 @@ def plaque_frames(tmp):
     return sorted(dossier.glob("*.png"))
 
 
-def monter(ep, clip, son, dest, avec_generique):
+def monter(ep, clip, son, dest, avec_generique, sous_titres=True):
     """La carte du film, la carte de l'épisode, le plan, et le générique.
 
     Le plan est reconstruit à partir du clip Higgsfield PROPRE, pas de la
@@ -711,8 +711,14 @@ def monter(ep, clip, son, dest, avec_generique):
         bande = tmp / "sous-titres"
         bande.mkdir()
         d_clip = min(10.0, duree_de(clip))
-        for i in range(int(d_clip * FPS)):
-            sous_titre(ep, i / FPS).save(bande / f"{i:04d}.png")
+        # Trois cents images à composer : on ne les fabrique que si elles
+        # servent. Les épisodes montés depuis leur ancienne story ont déjà
+        # leur texte gravé et sautent l'incrustation.
+        if sous_titres:
+            for i in range(int(d_clip * FPS)):
+                sous_titre(ep, i / FPS).save(bande / f"{i:04d}.png")
+        else:
+            sous_titre(ep, -1).save(bande / "0000.png")
 
         # La voix du conteur est normalisée DANS UNE PASSE À PART.
         #
@@ -758,11 +764,12 @@ def monter(ep, clip, son, dest, avec_generique):
             # l'échelle avec l'image et perdrait ses arêtes.
             f"[2:v]fps={FPS},scale={L}:{H}:flags=lanczos,"
             f"trim=duration={d_clip:.3f},setpts=PTS-STARTPTS[p];"
-            f"[3:v]format=rgba[st];"
             # `format=auto` laissait l'incrustation en RGBA, et le `xfade`
             # qui suivait négociait alors du 4:4:4 sur toute la chaîne.
-            f"[p][st]overlay=0:{BANDE_Y}:format=auto,format=yuv420p[pt];"
-            f"[f][e]xfade=transition=fade:duration={FONDU}:offset={b1:.3f}[fe];"
+            + (f"[3:v]format=rgba[st];"
+               f"[p][st]overlay=0:{BANDE_Y}:format=auto,format=yuv420p[pt];"
+               if sous_titres else "[p]format=yuv420p[pt];")
+            + f"[f][e]xfade=transition=fade:duration={FONDU}:offset={b1:.3f}[fe];"
             f"[fe][pt]xfade=transition=fade:duration={FONDU}:offset={b2:.3f}"
         )
         # Le son de la story démarre à l'image du plan, pas à celle du film.
@@ -937,12 +944,20 @@ def rapatrier(url, nom):
 
 
 def un_episode(ep, piece, sortie):
-    if not ep.get("clip"):
-        raise SystemExit(f"{ep['id']} : pas de clip Higgsfield propre")
     if not ep.get("plan"):
         raise SystemExit(f"{ep['id']} : pas de piste son")
-    clip = rapatrier(ep["clip"], f"{ep['id']}-clip.mp4")
     son = rapatrier(ep["plan"], f"{ep['id']}-son.mp4")
+
+    # Deux épisodes n'ont pas de clip d'origine, seulement leur ancienne
+    # story. On la reprend comme plan — c'est la même prise, au même cadrage
+    # — mais elle porte DÉJÀ ses sous-titres gravés. Réincruster les nôtres
+    # par-dessus donnerait deux textes superposés, l'ancien en petit sous le
+    # nouveau. Ces deux-là se montent donc sans incrustation : ils gardent
+    # l'ouverture, l'habillage et la fin, et leur texte reste celui d'avant.
+    # C'est moins bon que les vingt-sept autres, et c'est mieux que rien tant
+    # que le plan propre n'existe pas.
+    propre = bool(ep.get("clip"))
+    clip = rapatrier(ep["clip"], f"{ep['id']}-clip.mp4") if propre else son
     sortie.parent.mkdir(parents=True, exist_ok=True)
     # Les deux pièces portent le générique de fin.
     #
@@ -952,7 +967,7 @@ def un_episode(ep, piece, sortie):
     # suivre ». Sur une série de trente-cinq épisodes, c'est la fin qui fait
     # revenir. La pièce fait donc 18,90 s ; Instagram la publiera en Reel,
     # pas en story de quinze secondes.
-    monter(ep, clip, son, sortie, True)
+    monter(ep, clip, son, sortie, True, sous_titres=propre)
     return sortie
 
 
