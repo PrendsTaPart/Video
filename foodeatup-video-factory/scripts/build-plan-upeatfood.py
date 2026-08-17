@@ -18,9 +18,14 @@ plan, le conteur à 0,0 s, le personnage à 8,0 s.
 
 Le mixage
 ---------
-Les gains reprennent ceux du film, pour que les six derniers plans sonnent
-comme les vingt-neuf autres : ambiance à 0,42, voix à 1,0. La normalisation
+Les voix sont à 1,0 et l'ambiance du plan à ZÉRO — voir le commentaire sur
+`AMBIANCE` plus bas : elle n'apportait qu'un souffle inaudible et les artefacts
+de la séparation de sources, c'est-à-dire le grésillement. La normalisation
 finale vise −16 LUFS, le niveau mesuré sur le master du film.
+
+Ces six-là sonneront donc plus propres que les vingt-neuf autres, dont la piste
+vient d'une story déjà mixée où l'ambiance est cuite dans le fichier. C'est un
+écart assumé, et dans le bon sens.
 
 `loudnorm` tourne dans une passe SÉPARÉE, comme partout ailleurs dans ce
 dépôt : sur une entrée de quelques secondes il ressort ses frames avec des PTS
@@ -38,7 +43,19 @@ SOURCES = R / "build" / "sources"
 CONTEUR_A = 0.00      # le conteur ouvre le plan
 PERSONNAGE_A = 8.00   # le personnage le ferme
 DUREE = 10.00
-AMBIANCE = 0.42
+# L'ambiance du plan est coupée, pas baissée.
+#
+# Seedance prononce les répliques écrites dans le prompt : chaque plan arrive
+# avec une voix française incrustée. `enlever-voix.py` la retirait par
+# séparation de sources — 24 dB de parole en moins, mais du bruit musical en
+# plus, et c'est ce bruit qu'on entendait grésiller.
+#
+# Ce qu'on perd en coupant : rien d'audible. Mesuré sur quatre plans du film,
+# l'ambiance restante après séparation est à −33 / −40 dB ; à 0,42 dans le
+# mixage elle atterrit vers −40 dBFS, sous un lit musical à −28 et une voix à
+# −14. Au-dessus de 9 kHz il ne reste plus que −50 à −53 dB, c'est-à-dire
+# rien. On jetait donc un souffle inaudible tout en gardant ses artefacts.
+AMBIANCE = 0.0
 
 
 def duree_de(f):
