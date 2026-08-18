@@ -51,6 +51,7 @@ TEXT_DARK = (0x0B, 0x05, 0x16)
 BUBBLE_D = 620          # diamètre de la bulle
 BUBBLE_CY = 700         # centre vertical de la bulle
 BARS = 13               # barres de niveau sous la bulle
+BUBBLE_EDGE = (0xDC, 0xD2, 0xFA)  # lavande vers lequel fond le pourtour de la bulle
 
 
 def font(name: str, size: int) -> ImageFont.FreeTypeFont:
@@ -134,23 +135,66 @@ def build_background() -> Image.Image:
     return bg
 
 
-def circular(src: Image.Image, diameter: int, top_ratio: float = 0.02) -> Image.Image:
+def circular(src: Image.Image, diameter: int, top_ratio: float = 0.055,
+             zoom: float = 0.86) -> Image.Image:
     """Recadre une image en cercle, centré sur le visage.
 
     Sert aussi bien au portrait fixe qu'à chaque image du plan de synchronisation
     labiale : le cadrage doit être identique pour que la bulle ne saute pas.
     """
     src = src.convert("RGBA")
-    side = min(src.width, src.height)
-    top = int(src.height * top_ratio)
-    box = ((src.width - side) // 2, top,
-           (src.width + side) // 2, min(top + side, src.height))
+    # `zoom` resserre le cadre sur le visage : à 1.0 on prend le plus grand carré
+    # possible, ce qui laisse trop de fond studio autour de la tête.
+    side = int(min(src.width, src.height) * zoom)
+    top = min(int(src.height * top_ratio), src.height - side)
+    left = (src.width - side) // 2
+    box = (left, top, left + side, top + side)
     face = src.crop(box).resize((diameter, diameter), Image.LANCZOS)
+
+    face = _blend_edge_to_brand(face, diameter)
 
     mask = Image.new("L", (diameter, diameter), 0)
     ImageDraw.Draw(mask).ellipse((0, 0, diameter - 1, diameter - 1), fill=255)
     face.putalpha(mask)
     return face
+
+
+_EDGE_CACHE: dict[int, Image.Image] = {}
+
+
+def _edge_mask(diameter: int) -> Image.Image:
+    """Voile radial : opaque au bord du cercle, nul au centre.
+
+    Le plan de synchronisation labiale arrive sur fond gris studio, qui jure avec
+    le lavande de la carte. Un détourage par `colorkey` est exclu : le sujet est
+    un rendu 3D bourré de tons neutres, et la clé mange les cheveux et la peau.
+    Ce dégradé fond le pourtour vers la couleur de marque — le visage, au centre,
+    n'est jamais touché.
+    """
+    if diameter in _EDGE_CACHE:
+        return _EDGE_CACHE[diameter]
+
+    mask = Image.new("L", (diameter, diameter), 0)
+    d = ImageDraw.Draw(mask)
+    steps = 34
+    inner = 0.60          # en deçà de 60 % du rayon, aucune teinte
+    # On peint du plus grand cercle au plus petit : le bord reçoit le voile plein,
+    # l'opacité retombe à zéro avant d'atteindre le visage.
+    for i in range(steps):
+        f = i / (steps - 1)
+        radius = diameter / 2 * (1 - f * (1 - inner))
+        value = int(255 * ((1 - f) ** 1.6))
+        c = diameter / 2
+        d.ellipse((c - radius, c - radius, c + radius, c + radius), fill=value)
+    mask = mask.filter(ImageFilter.GaussianBlur(diameter * 0.035))
+    _EDGE_CACHE[diameter] = mask
+    return mask
+
+
+def _blend_edge_to_brand(face: Image.Image, diameter: int) -> Image.Image:
+    tint = Image.new("RGB", (diameter, diameter), BUBBLE_EDGE)
+    base = face.convert("RGB")
+    return Image.composite(tint, base, _edge_mask(diameter)).convert("RGBA")
 
 
 def talking_frames(video: Path, fps: int, target_dir: Path) -> list[Path]:
