@@ -87,6 +87,7 @@ sys.path.insert(0, str(R / "content"))
 
 FONTES = R.parent / "videos" / "stories-foodeatup-30j" / "assets" / "fonts"
 HOOKS = R / "dist" / "hooks"
+VOIX = R / "assets" / "vo" / "journee"
 BGM = R / "templates" / "bgm.mp3"
 LOGO = R / "templates" / "logo_foodeatup.png"
 
@@ -116,6 +117,22 @@ LIT = 0.30
 # Instagram : une story deux décibels sous les autres se remarque comme un
 # défaut de fabrication. `build-stories.py` vise -14 LUFS, on vise -14 LUFS.
 LOUDNESS = "I=-14:TP=-1.5:LRA=11"
+
+# La voix off, quand elle existe.
+#
+# Elle est nommée par MÉTIER et non par épisode : les onze accroches et les
+# onze tensions couvrent les trente et un épisodes, trois épisodes par métier
+# se partagent donc les deux mêmes prises. C'est voulu — la même phrase revient
+# trois soirs de suite en chute, et ça fait un refrain.
+#
+#     assets/vo/journee/<metier>-accroche.mp3
+#     assets/vo/journee/<metier>-tension.mp3
+#
+# L'accroche entre à 0,35 s, le temps que la bande s'allume ; la tension entre
+# à 5,60 s, exactement là où son texte s'affiche. Sans fichier, la pièce se
+# monte comme avant : texte et musique seuls.
+VOIX_IN, TENSION_IN = 0.35, PUNCH_IN
+LIT_SOUS_VOIX = 0.085
 
 OUTILS = {
     "le", "la", "les", "un", "une", "des", "du", "de", "d'", "l'", "au", "aux",
@@ -391,13 +408,43 @@ def monter(ep, clip, dest):
         #    réplique prononcée par Seedance, qui n'est ni le hook ni la
         #    tension, et dont les lèvres ne suivent pas.
         brut = tmp / "son.wav"
+        prises = [(VOIX / f"{ep['metier']}-accroche.mp3", VOIX_IN),
+                  (VOIX / f"{ep['metier']}-tension.mp3", TENSION_IN)]
+        prises = [(f, t) for f, t in prises if f.exists()]
+
+        FMT = ("aformat=sample_fmts=fltp:sample_rates=48000:"
+               "channel_layouts=stereo")
+        entrees = ["-i", str(BGM)]
+        if prises:
+            # Le lit descend sous la voix, comme sur les masters : 0,30 quand
+            # personne ne parle, 0,085 dès que la voix entre. Le passage prend
+            # 0,4 s, sinon on entend la musique « tomber ».
+            cond = str(LIT)
+            for f, t in reversed(prises):
+                cond = (f"if(lt(t,{t:.2f}),{cond},"
+                        f"if(lt(t,{t + 0.4:.2f}),"
+                        f"{LIT}-({LIT}-{LIT_SOUS_VOIX})*(t-{t:.2f})/0.4,"
+                        f"{LIT_SOUS_VOIX}))")
+            volume = f"volume='{cond}':eval=frame"
+        else:
+            volume = f"volume={LIT}"
+
+        graphe = [f"[0:a]{FMT},atrim=duration={DUREE},asetpts=N/SR/TB,"
+                  f"{volume},afade=t=in:st=0:d=0.7,"
+                  f"afade=t=out:st={DUREE - 0.6:.2f}:d=0.6[lit]"]
+        pistes = ["[lit]"]
+        for i, (f, t) in enumerate(prises, start=1):
+            entrees += ["-i", str(f)]
+            ms = int(t * 1000)
+            graphe.append(f"[{i}:a]{FMT},adelay={ms}|{ms}[v{i}]")
+            pistes.append(f"[v{i}]")
+        graphe.append(f"{''.join(pistes)}amix=inputs={len(pistes)}:"
+                      f"normalize=0:duration=first,"
+                      f"atrim=duration={DUREE},asetpts=N/SR/TB[mx]")
+
         subprocess.run(
-            ["ffmpeg", "-v", "error", "-y", "-i", str(BGM),
-             "-af", (f"aformat=sample_fmts=fltp:sample_rates=48000:"
-                     f"channel_layouts=stereo,atrim=duration={DUREE},"
-                     f"asetpts=N/SR/TB,volume={LIT},"
-                     f"afade=t=in:st=0:d=0.7,"
-                     f"afade=t=out:st={DUREE - 0.6:.2f}:d=0.6"),
+            ["ffmpeg", "-v", "error", "-y", *entrees,
+             "-filter_complex", ";".join(graphe), "-map", "[mx]",
              "-ar", "48000", "-ac", "2", "-c:a", "pcm_s16le", str(brut)],
             check=True)
 
