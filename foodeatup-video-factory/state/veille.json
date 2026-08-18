@@ -1,8 +1,19 @@
 {
-  "jobs_lus": 50,
+  "jobs_lus": 30,
   "cibles": 233,
   "deja_servies": 86,
   "a_monter": {
+    "EP:EP184": {
+      "titre": "Complet dehors, vide dedans",
+      "date": "2027-06-11",
+      "prises": [
+        {
+          "job": "54d5c3dc-e137-4783-b1a5-58e79141e2fb",
+          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3GXYlNxkbz83gXaGDVVrTni1dX2/hf_20260817_151944_54d5c3dc-e137-4783-b1a5-58e79141e2fb.mp4",
+          "at": 1786979984.893137
+        }
+      ]
+    },
     "EP:EP402": {
       "titre": "Douze kilos de saumon",
       "date": "2027-04-05",
@@ -16,6 +27,44 @@
           "job": "d05bb699-ab93-44aa-b4bb-c9b534eef929",
           "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3GXYlNxkbz83gXaGDVVrTni1dX2/hf_20260817_090539_d05bb699-ab93-44aa-b4bb-c9b534eef929.mp4",
           "at": 1786957539.763696
+        }
+      ]
+    },
+    "EP:EP407": {
+      "titre": "Pourquoi sept logiciels ne font pas un système",
+      "date": "2027-04-10",
+      "prises": [
+        {
+          "job": "2edcb5e2-6a36-44ca-9faf-16a8cbca19ff",
+          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3GXYlNxkbz83gXaGDVVrTni1dX2/hf_20260817_131800_2edcb5e2-6a36-44ca-9faf-16a8cbca19ff.mp4",
+          "at": 1786972680.798464
+        },
+        {
+          "job": "6314cee1-69ef-4307-9fda-79fc88e9c1c3",
+          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3GXYlNxkbz83gXaGDVVrTni1dX2/hf_20260817_125244_6314cee1-69ef-4307-9fda-79fc88e9c1c3.mp4",
+          "at": 1786971164.651283
+        }
+      ]
+    },
+    "EP:EP408": {
+      "titre": "Gestion et vente, les deux moitiés",
+      "date": "2027-04-12",
+      "prises": [
+        {
+          "job": "6afcd9a3-36ee-434c-b18f-e3bf7faadc62",
+          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3GXYlNxkbz83gXaGDVVrTni1dX2/hf_20260817_134822_6afcd9a3-36ee-434c-b18f-e3bf7faadc62.mp4",
+          "at": 1786974502.839324
+        }
+      ]
+    },
+    "EP:EP420": {
+      "titre": "Caroline prend les appels",
+      "date": "2027-04-25",
+      "prises": [
+        {
+          "job": "1bbdedbc-288a-409b-8e75-a4358d691ef5",
+          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3GXYlNxkbz83gXaGDVVrTni1dX2/hf_20260817_154804_1bbdedbc-288a-409b-8e75-a4358d691ef5.mp4",
+          "at": 1786981684.386293
         }
       ]
     },
@@ -226,11 +275,6 @@
       "cle": "EP:EP183",
       "titre": "Le repérage",
       "date": "2027-06-10"
-    },
-    {
-      "cle": "EP:EP184",
-      "titre": "Complet dehors, vide dedans",
-      "date": "2027-06-11"
     },
     {
       "cle": "EP:EP185",
@@ -673,16 +717,6 @@
       "date": "2027-04-09"
     },
     {
-      "cle": "EP:EP407",
-      "titre": "Pourquoi sept logiciels ne font pas un système",
-      "date": "2027-04-10"
-    },
-    {
-      "cle": "EP:EP408",
-      "titre": "Gestion et vente, les deux moitiés",
-      "date": "2027-04-12"
-    },
-    {
       "cle": "EP:EP409",
       "titre": "Configuration boutique — le socle de la boucle gestion",
       "date": "2027-04-13"
@@ -731,11 +765,6 @@
       "cle": "EP:EP419",
       "titre": "Les quatre agents et leurs boucles",
       "date": "2027-04-24"
-    },
-    {
-      "cle": "EP:EP420",
-      "titre": "Caroline prend les appels",
-      "date": "2027-04-25"
     },
     {
       "cle": "EP:EP421",
