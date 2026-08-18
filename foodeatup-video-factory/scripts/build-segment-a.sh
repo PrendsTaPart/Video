@@ -3,7 +3,7 @@
 #
 #   ./build-segment-a.sh EP003 "Ta marge, en ce moment."
 #
-# Attendus : assets/hooks/EPxxx.mp4 et assets/vo/punchlines/EPxxx.mp3
+# Attendus : le clip (assets/hooks/ ou dist/hooks/) et assets/vo/punchlines/EPxxx.mp3
 set -euo pipefail
 
 EP="${1:?usage: build-segment-a.sh EPxxx \"texte du hook\"}"
@@ -11,6 +11,16 @@ TEXTE="${2:?texte du hook manquant}"
 R="$(cd "$(dirname "$0")/.." && pwd)"
 
 POLICE="$R/templates/Poppins-800.ttf"
+
+# Le clip peut être à deux endroits, et c'est voulu. `fetch-hooks.sh` dépose
+# dans `assets/hooks/` ce qu'il vient de récupérer ; `dist/hooks/` porte les
+# cent quatre-vingt-dix-sept qui ont été COMMITÉS, parce qu'une URL de CDN
+# Higgsfield expire et qu'un fichier commité, non. Sur une machine neuve, seul
+# `dist/` est peuplé — et sans ce repli, dix-neuf des vingt-trois masters de la
+# saison 1 ne peuvent pas être remontés alors que leur clip est dans le dépôt.
+HOOK="$R/assets/hooks/$EP.mp4"
+[ -f "$HOOK" ] || HOOK="$R/dist/hooks/$EP.mp4"
+[ -f "$HOOK" ] || { echo "  $EP : pas de clip, ni dans assets/hooks ni dans dist/hooks" >&2; exit 1; }
 
 # Le texte du hook passe par un FICHIER, jamais en ligne dans le filtergraph.
 # Vingt-trois accroches sur cent cinquante contiennent une apostrophe — « Ton
@@ -63,7 +73,7 @@ echo "  punchline : ${DUREE_PUNCH}s à ${PUNCH}s · duck ${DUCK_DEB}→${DUCK_HA
 # entrée [0:a] le filtergraph refuse de s'initialiser, alors on lui donne du
 # silence : le duck s'applique dessus sans rien changer, la punchline passe
 # seule, et le script reste le même pour les deux cas.
-if [ "$(ffprobe -v error -select_streams a -show_entries stream=index -of csv=p=0 "$R/assets/hooks/$EP.mp4" | wc -l)" -eq 0 ]; then
+if [ "$(ffprobe -v error -select_streams a -show_entries stream=index -of csv=p=0 "$HOOK" | wc -l)" -eq 0 ]; then
   echo "  clip muet : piste de silence ajoutée"
   SON_CLIP=(-f lavfi -t "$DUREE_A" -i "anullsrc=r=48000:cl=mono")
   SRC_A="3:a"
@@ -73,7 +83,7 @@ else
 fi
 
 ffmpeg -v error \
- -i "$R/assets/hooks/$EP.mp4" \
+ -i "$HOOK" \
  -i "$PUNCH_WAV" \
  -i "$R/templates/logo_foodeatup.png" \
  "${SON_CLIP[@]}" \

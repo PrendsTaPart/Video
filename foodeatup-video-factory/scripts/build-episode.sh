@@ -74,7 +74,38 @@ FIN="$(echo "$LECTURE" | cut -d' ' -f2)"
 UTILE="$(python3 -c "print(f'{max(0.1,$FIN-$DEBUT):.3f}')")"
 FENETRE="$(python3 -c "print(f'{10.0-$RESPIR:.2f}')")"
 TEMPO="$(python3 -c "print(f'{max(1.0,$UTILE/$FENETRE):.4f}')")"
+
+# --- Le retard d'entrée : l'avatar arrive quand il a quelque chose à dire -----
+# `atempo` ne sait qu'accélérer. Quand le script HeyGen est plus court que la
+# fenêtre — c'est le cas de quarante avatars sur cinquante-quatre, et de vingt-six
+# de plus d'une seconde — le reste du créneau était rempli par la DERNIÈRE frame
+# clonée : un visage figé, bouche fermée, pendant deux secondes en médiane et
+# jusqu'à 5,4 s sur EP067. Plus de la moitié du segment, sur cet épisode-là.
+#
+# On ne comble plus par la fin, on décale le début. L'avatar entre en retard,
+# précédé de sa PREMIÈRE frame — celle d'avant la parole, bouche fermée, regard
+# posé : une attente, pas un arrêt. Le segment se termine alors sur son dernier
+# mot, qui enchaîne directement sur VO_C.
+#
+# Le spectateur y gagne deux fois : il voit d'abord le logiciel seul, puis
+# quelqu'un vient l'expliquer. C'est l'ordre naturel d'une démonstration.
+PAROLE="$(python3 -c "print(f'{$UTILE/$TEMPO:.3f}')")"
+RETARD="$(python3 -c "print(f'{max(0.0, 10.0-$RESPIR-$UTILE/$TEMPO):.3f}')")"
+RETARD_MS="$(python3 -c "print(int(round($RETARD*1000)))")"
+# Sur quoi l'avatar attend. Pas sur sa première frame : sur EP010 elle tombe en
+# plein clignement, et deux secondes et demie d'attente les yeux fermés se
+# lisent comme un plantage, pas comme une attente.
+ATTENTE_T="$(python3 scripts/frame-attente.py "$R/assets/avatar/$EP.mp4" 2>/dev/null)"
+ATTENTE_PNG="$R/build/${EP}_attente.png"
+ffmpeg -v error -y -ss "${ATTENTE_T:-0}" -i "$R/assets/avatar/$EP.mp4" \
+  -frames:v 1 -update 1 "$ATTENTE_PNG"
+# ffmpeg refuse une durée nulle : on garde une frame même quand il n'y a pas
+# d'attente, le concat la mange dans le trim final.
+ATTENTE_D="$(python3 -c "print(f'{max(0.04,$RETARD):.3f}')")"
 echo "  avatar : parole ${DEBUT}s → ${FIN}s (${UTILE}s utiles), fenêtre ${FENETRE}s, atempo ${TEMPO}"
+if python3 -c "import sys; sys.exit(0 if $RETARD > 0.05 else 1)"; then
+  echo "           entre à ${RETARD}s, parle ${PAROLE}s, finit à $(python3 -c "print(f'{$RETARD+$PAROLE:.2f}')")s"
+fi
 # Au-delà de 1,12 l'accélération s'entend nettement. On monte quand même —
 # un épisode livré vaut mieux qu'un épisode bloqué — mais on le dit.
 python3 -c "
@@ -104,9 +135,13 @@ ffmpeg -v error \
  -i "$R/templates/bgm.mp3" \
  -i "$R/templates/sfx_transition.mp3" \
  -loop 1 -t 10 -i "$R/templates/$COQUE.png" \
+ -loop 1 -t "$ATTENTE_D" -i "$ATTENTE_PNG" \
  -filter_complex "\
+ [6:v]fps=30,crop=1080:$AV_H:0:$AV_CROP_Y,setsar=1,format=yuv420p[attente];\
  [0:v]trim=start=$DEBUT,setpts=(PTS-STARTPTS)/$TEMPO,fps=30,\
-crop=1080:$AV_H:0:$AV_CROP_Y,tpad=stop_mode=clone:stop_duration=3,\
+crop=1080:$AV_H:0:$AV_CROP_Y,setsar=1,format=yuv420p[parle];\
+ [attente][parle]concat=n=2:v=1:a=0,\
+tpad=stop_mode=clone:stop_duration=10,\
 trim=0:10,setpts=PTS-STARTPTS[top];\
  color=c=$SABLE:s=1080x$SOFT_H:r=30,trim=0:10,setpts=PTS-STARTPTS[fond];\
  [1:v]fps=30,scale=$ECR_W:$ECR_H,tpad=stop_mode=clone:stop_duration=10,\
@@ -120,7 +155,8 @@ trim=0:10,setpts=PTS-STARTPTS[ecran];\
  [ov]fade=t=in:st=0:d=0.35:color=$SABLE,\
 fade=t=out:st=9.70:d=0.30:color=$SABLE,format=yuv420p[v];\
  [0:a]atrim=start=$DEBUT,asetpts=PTS-STARTPTS,aresample=48000,\
-atempo=$TEMPO,apad,atrim=0:10,asetpts=PTS-STARTPTS,volume=1.0[voice];\
+atempo=$TEMPO,adelay=$RETARD_MS:all=1,apad=whole_dur=10,\
+asetpts=N/SR/TB,volume=1.0[voice];\
  [3:a]aresample=48000,atrim=16:26,asetpts=PTS-STARTPTS,volume=$BED_GAIN,\
 afade=t=in:st=0:d=0.3,afade=t=out:st=8.90:d=0.55[bed];\
  [4:a]aresample=48000,volume=$SFX_GAIN,apad,atrim=0:10,asetpts=PTS-STARTPTS[wh];\
@@ -128,6 +164,19 @@ afade=t=in:st=0:d=0.3,afade=t=out:st=8.90:d=0.55[bed];\
  -map "[v]" -map "[a]" -t 10 \
  -c:v libx264 -preset medium -crf 18 -r 30 -c:a aac -b:a 192k \
  "$R/build/${EP}_D.mp4" -y
+
+# Deux pièges derrière `adelay`, tous les deux payés en son perdu.
+#
+# `apad` puis `atrim=0:10` ne tiennent pas : le retard décale les timestamps,
+# `atrim` trime sur ces timestamps-là, et la fin du segment part à la poubelle —
+# mesuré, 7,39 s de son sur un créneau de 10. `apad=whole_dur=10` borne la durée
+# sans regarder les PTS.
+#
+# Et la chaîne doit se terminer par `asetpts=N/SR/TB`, qui recalcule les
+# timestamps depuis le compte d'échantillons. Sans lui l'encodeur AAC répond
+# « Queue input is backward in time » et ne garde que 0,064 s sur les dix. Le
+# défaut est invisible en PCM, qui accepte des timestamps non monotones : il
+# n'apparaît qu'au moment où le segment est encodé pour de bon.
 
 # Le mixage de D somme la voix, le lit et le whoosh sans normalisation : il
 # écrêtait à +2,8 dBTP. On le cale sur le niveau des gabarits.
