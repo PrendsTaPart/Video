@@ -134,12 +134,32 @@ LOUDNESS = "I=-14:TP=-1.5:LRA=11"
 VOIX_IN, TENSION_IN = 0.35, PUNCH_IN
 LIT_SOUS_VOIX = 0.085
 
+# Quand les deux répliques ne tiennent pas dans dix secondes.
+#
+# Les textes sont écrits par métier et leur longueur varie du simple au
+# double : l'accroche du chef de partie fait 6,45 s, celle du chef de cuisine
+# 4,49 s. Posée à 0,35 s, la première finit à 6,80 s — après le créneau de la
+# tension, qui est à 5,60 s. Les deux voix se marcheraient dessus.
+#
+# La tension entre donc au plus tôt 0,25 s après la fin de l'accroche, et la
+# pièce s'allonge de ce qu'il faut en tenant la dernière image. Une story de
+# 11,6 s au lieu de 10 s ne se remarque pas ; deux voix simultanées, si.
+ECART_VOIX = 0.25
+QUEUE = 0.45          # de silence après la dernière syllabe
+
 OUTILS = {
     "le", "la", "les", "un", "une", "des", "du", "de", "d'", "l'", "au", "aux",
     "et", "ou", "à", "en", "dans", "sur", "sous", "par", "pour", "que", "qui",
     "ne", "se", "ce", "son", "sa", "ses", "mon", "ma", "mes", "leur", "leurs",
     "il", "elle", "ils", "elles", "on", "je", "tu", "nous", "vous",
 }
+
+
+def duree_de(f):
+    return float(subprocess.run(
+        ["ffprobe", "-v", "error", "-show_entries", "format=duration",
+         "-of", "default=nw=1:nk=1", str(f)],
+        capture_output=True, text=True, check=True).stdout.strip())
 
 
 def police(poids, taille):
@@ -346,7 +366,7 @@ TAILLES = (78, 74, 70, 66, 64, 62, 60, 58, 56, 54)
 BOITE = int(L * 0.82)
 
 
-def calque_a(ep, t):
+def calque_a(ep, t, t_tension=PUNCH_IN, total=DUREE):
     """L'incrustation complète à l'instant t : titre, étiquette, tension.
 
     Le choix des trois textes n'est pas neutre, et le pilote se trompait
@@ -380,7 +400,7 @@ def calque_a(ep, t):
                        phase(t, ETIQUETTE_IN, ETIQUETTE_IN + 0.45)
                        * (1 - phase(t, HOOK_OUT, HOOK_OUT + 0.35)))
 
-    op_p = phase(t, PUNCH_IN, PUNCH_IN + 0.30)
+    op_p = phase(t, t_tension, t_tension + 0.30)
     if op_p > 0.01:
         f, lignes = ajuster_bloc(d, ep["tension"], BOITE, TAILLES)
         # Le bloc est posé par son PIED : une tension d'une ligne et une de
@@ -389,7 +409,7 @@ def calque_a(ep, t):
         y = H - 430 - len(lignes) * int(f.size * 1.24)
         mots = len(ep["tension"].split())
         im = bloc(im, lignes, f, y,
-                  phase(t, PUNCH_IN, PUNCH_IN + 1.25) * mots, op_p)
+                  phase(t, t_tension, t_tension + 1.25) * mots, op_p)
     return im
 
 
@@ -397,28 +417,36 @@ def calque_a(ep, t):
 def monter(ep, clip, dest):
     tmp = pathlib.Path(tempfile.mkdtemp(prefix="journee-"))
     try:
-        n = int(DUREE * FPS)
+        acc = VOIX / f"{ep['metier']}-accroche.mp3"
+        ten = VOIX / f"{ep['metier']}-tension.mp3"
+        prises = []
+        t_tension = TENSION_IN
+        total = DUREE
+        if acc.exists():
+            prises.append((acc, VOIX_IN))
+            t_tension = max(TENSION_IN, VOIX_IN + duree_de(acc) + ECART_VOIX)
+        if ten.exists():
+            prises.append((ten, t_tension))
+            total = max(DUREE, t_tension + duree_de(ten) + QUEUE)
+
+        n = int(round(total * FPS))
         for i in range(n):
-            calque_a(ep, i / FPS).save(tmp / f"a{i:04d}.png")
+            calque_a(ep, i / FPS, t_tension, total).save(tmp / f"a{i:04d}.png")
 
         # Le son, en deux temps.
         #
-        # 1. Le lit musical seul, coupé à la durée, avec ses fondus. Le plan
-        #    Higgsfield n'entre PAS dans le mélange : sa piste porte la
-        #    réplique prononcée par Seedance, qui n'est ni le hook ni la
-        #    tension, et dont les lèvres ne suivent pas.
+        # 1. Le lit musical et les répliques. Le plan Higgsfield n'entre PAS
+        #    dans le mélange : sur les huit plans mesurés, deux seulement
+        #    portent la narration et six n'ont qu'une ambiance. Une série ne
+        #    peut pas changer de narrateur d'un épisode à l'autre.
         brut = tmp / "son.wav"
-        prises = [(VOIX / f"{ep['metier']}-accroche.mp3", VOIX_IN),
-                  (VOIX / f"{ep['metier']}-tension.mp3", TENSION_IN)]
-        prises = [(f, t) for f, t in prises if f.exists()]
-
         FMT = ("aformat=sample_fmts=fltp:sample_rates=48000:"
                "channel_layouts=stereo")
         entrees = ["-i", str(BGM)]
         if prises:
-            # Le lit descend sous la voix, comme sur les masters : 0,30 quand
-            # personne ne parle, 0,085 dès que la voix entre. Le passage prend
-            # 0,4 s, sinon on entend la musique « tomber ».
+            # Le lit descend sous la voix : 0,30 quand personne ne parle,
+            # 0,085 dès qu'une réplique entre, en 0,4 s. C'est le niveau que
+            # les masters réservent à la musique sous la parole.
             cond = str(LIT)
             for f, t in reversed(prises):
                 cond = (f"if(lt(t,{t:.2f}),{cond},"
@@ -429,9 +457,9 @@ def monter(ep, clip, dest):
         else:
             volume = f"volume={LIT}"
 
-        graphe = [f"[0:a]{FMT},atrim=duration={DUREE},asetpts=N/SR/TB,"
+        graphe = [f"[0:a]{FMT},atrim=duration={total:.3f},asetpts=N/SR/TB,"
                   f"{volume},afade=t=in:st=0:d=0.7,"
-                  f"afade=t=out:st={DUREE - 0.6:.2f}:d=0.6[lit]"]
+                  f"afade=t=out:st={total - 0.6:.3f}:d=0.6[lit]"]
         pistes = ["[lit]"]
         for i, (f, t) in enumerate(prises, start=1):
             entrees += ["-i", str(f)]
@@ -440,7 +468,7 @@ def monter(ep, clip, dest):
             pistes.append(f"[v{i}]")
         graphe.append(f"{''.join(pistes)}amix=inputs={len(pistes)}:"
                       f"normalize=0:duration=first,"
-                      f"atrim=duration={DUREE},asetpts=N/SR/TB[mx]")
+                      f"atrim=duration={total:.3f},asetpts=N/SR/TB[mx]")
 
         subprocess.run(
             ["ffmpeg", "-v", "error", "-y", *entrees,
@@ -448,25 +476,60 @@ def monter(ep, clip, dest):
              "-ar", "48000", "-ac", "2", "-c:a", "pcm_s16le", str(brut)],
             check=True)
 
-        # 2. La normalisation, dans sa propre passe. Jamais dans le graphe
-        #    principal : `loudnorm` décale les PTS et le `atrim` qui suit
-        #    prendrait ce décalage pour du temps écoulé.
+        # 2. La normalisation, dans sa propre passe et en DEUX temps.
+        #
+        #    Jamais dans le graphe principal : `loudnorm` décale les PTS et le
+        #    `atrim` qui suit prendrait ce décalage pour du temps écoulé.
+        #
+        #    Et jamais en passe unique. Mesuré sur les huit premiers épisodes :
+        #    -16,4 LUFS pour le chef de cuisine, -13,8 pour le second, -14,3
+        #    pour le chef de partie. Deux décibels et demi d'écart dans une
+        #    même série, alors que la consigne était la même — parce que la
+        #    passe unique estime au fil de l'eau et se trompe d'autant plus que
+        #    la pièce est courte et que la densité de parole change. La densité
+        #    change ici du simple au double : 7,5 s de voix chez le chef de
+        #    cuisine, 10,9 chez le chef de partie.
+        #
+        #    On mesure donc d'abord, puis on applique les valeurs mesurées.
         son = tmp / "son.m4a"
+        mesure = subprocess.run(
+            ["ffmpeg", "-hide_banner", "-i", str(brut),
+             "-af", f"loudnorm={LOUDNESS}:print_format=json",
+             "-f", "null", "-"],
+            capture_output=True, text=True).stderr
+        deb = mesure.rfind("{")
+        applique = f"loudnorm={LOUDNESS}"
+        if deb != -1:
+            try:
+                m = json.loads(mesure[deb:mesure.rindex("}") + 1])
+                applique = (f"loudnorm={LOUDNESS}:"
+                            f"measured_I={m['input_i']}:"
+                            f"measured_TP={m['input_tp']}:"
+                            f"measured_LRA={m['input_lra']}:"
+                            f"measured_thresh={m['input_thresh']}:"
+                            f"offset={m['target_offset']}:linear=true")
+            except (ValueError, KeyError):
+                pass                    # la passe unique reste un repli correct
         subprocess.run(
             ["ffmpeg", "-v", "error", "-y", "-i", str(brut),
-             "-af", f"loudnorm={LOUDNESS}",
+             "-af", applique,
              "-ar", "48000", "-ac", "2", "-c:a", "aac", "-b:a", "160k",
              str(son)], check=True)
 
-        graphe = (
-            f"[0:v]scale={L}:{H}:force_original_aspect_ratio=increase,"
-            f"crop={L}:{H},setsar=1,fps={FPS},trim=duration={DUREE},"
-            f"setpts=PTS-STARTPTS[v0];"
+        # `tpad` tient la dernière image quand la voix déborde des dix
+        # secondes du plan. Le plan ne se ralentit pas : on le laisse finir,
+        # puis l'image se fige le temps que la phrase se termine.
+        chaine_v = (f"[0:v]scale={L}:{H}:force_original_aspect_ratio=increase,"
+                    f"crop={L}:{H},setsar=1,fps={FPS},"
+                    f"trim=duration={DUREE},setpts=PTS-STARTPTS")
+        if total > DUREE + 0.01:
+            chaine_v += f",tpad=stop_mode=clone:stop_duration={total - DUREE:.3f}"
+        graphe_v = (
+            f"{chaine_v}[v0];"
             # `format=yuv420p` derrière CHAQUE overlay. En `format=auto`,
             # l'overlay ressort en RGBA, libx264 négocie du 4:4:4 et rend un
             # « High 4:4:4 Predictive » que ni les navigateurs ni les
-            # téléphones ne lisent. Le fichier a l'air correct partout sauf à
-            # la lecture.
+            # téléphones ne lisent.
             f"[v0][1:v]overlay=0:0:format=auto,format=yuv420p[v1];"
             f"[2:v]scale={LOGO_L}:-1[logo];"
             f"[v1][logo]overlay={LOGO_X}:{LOGO_Y}:format=auto,"
@@ -478,12 +541,12 @@ def monter(ep, clip, dest):
              "-i", str(clip),
              "-framerate", str(FPS), "-i", str(tmp / "a%04d.png"),
              "-i", str(LOGO), "-i", str(son),
-             "-filter_complex", graphe,
+             "-filter_complex", graphe_v,
              "-map", "[vout]", "-map", "3:a",
              "-c:v", "libx264", "-preset", "medium", "-crf", "19",
              "-pix_fmt", "yuv420p", "-profile:v", "high", "-level", "4.0",
              "-c:a", "aac", "-b:a", "160k",
-             "-t", str(DUREE), "-movflags", "+faststart", str(dest)],
+             "-t", f"{total:.3f}", "-movflags", "+faststart", str(dest)],
             check=True)
         return dest
     finally:
