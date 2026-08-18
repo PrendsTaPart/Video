@@ -1,8 +1,11 @@
 # Script ElevenLabs — Tutoriel 00 « Créer son compte Plan'It »
 
-Voix off qui **commente la démonstration écran**, hors présentation de l'avatar
-HeyGen. Elle prend la main quand l'avatar la lui laisse et **se termine sur la
-punchline**, posée sur l'animation de fin.
+Toutes les lignes parlées de l'épisode, dans une seule voix féminine.
+
+La ligne **N0** est prononcée par l'avatar à l'image (bulle de présentation,
+synchronisation labiale — voir `AVATAR.md`). Les lignes **N1 à N9** sont de la
+voix off pure, qui **commente la démonstration écran**. **N10** ferme sur la
+punchline, posée sur l'animation de fin.
 
 ## Réglages
 
@@ -28,6 +31,7 @@ colonne qui pilote la durée de chaque plan au montage.
 
 | # | Fichier | Texte | Durée | Écran commenté |
 |---|---|---|---:|---|
+| **N0** | `vo/N0.mp3` | *Bienvenue dans l'Académie Plan'It. Aujourd'hui, on commence par le tout début : créer votre compte. Une minute, et votre espace de travail est ouvert.* | 8,62 s | **Bulle avatar** — voir `AVATAR.md` |
 | N1 | `vo/N1.mp3` | Voici l'écran d'accueil de Plan'It. Vous n'avez pas encore de compte : touchez « Inscrivez-vous », tout en bas. | 5,62 s | Écran **Se connecter** |
 | N2 | `vo/N2.mp3` | Le formulaire tient en quatre champs : votre nom complet, votre adresse email, puis un mot de passe que vous confirmez. | 5,98 s | Écran **Créer un compte**, saisie du nom |
 | N3 | `vo/N3.mp3` | Un conseil : prenez votre adresse professionnelle. Vos collègues pourront rejoindre le même espace de travail. | 5,15 s | Saisie de l'email |
@@ -39,7 +43,11 @@ colonne qui pilote la durée de chaque plan au montage.
 | N9 | `vo/N9.mp3` | Et voilà votre espace Plan'It. Le tableau de bord est encore vide : c'est normal, tout reste à construire. | 5,56 s | **Dashboard** « Bonjour Jean Martin » |
 | **N10** | `vo/N10.mp3` | **Vous planifiez une fois. Vos agents s'occupent du reste. Plan'It.** | 3,39 s | **Animation de fin** |
 
-**Total voix off** : 48,7 s · **partie démonstration (N1→N9)** : 45,3 s.
+**Total voix off** : 57,3 s · **présentation (N0)** : 8,6 s · **démonstration (N1→N9)** : 45,3 s · **punchline (N10)** : 3,4 s.
+
+> **N0 est à part** : c'est la seule ligne prononcée *par l'avatar à l'image*, et
+> c'est elle qui alimente la synchronisation labiale (`creatify-aurora`). Les
+> autres lignes sont de la voix off pure, posées sur la démonstration écran.
 
 ---
 

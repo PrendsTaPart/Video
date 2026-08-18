@@ -1,16 +1,22 @@
 #!/usr/bin/env python3
 """Bulle avatar de présentation — composant réutilisable de l'Académie Plan'It.
 
-Remplace le plan avatar généré (HeyGen) par une carte de présentation animée,
-construite localement à partir de l'avatar 3D officiel de l'app
-(`assets/images/avatars/` du dépôt planit-app). Coût de génération par vidéo :
-**une seule ligne de voix off**. Aucune seconde d'animation facturée.
+Carte de présentation animée qui ouvre chaque tutoriel : la présentatrice
+apparaît dans une bulle, annonce l'épisode, et passe la main à la démonstration.
 
-L'animation n'est pas décorative : les barres de niveau et la respiration de la
-bulle sont pilotées par **l'enveloppe réelle du fichier voix**, ce qui donne
-l'impression que l'avatar parle vraiment.
+Deux modes, selon ce qui est fourni :
 
-    python3 build_presenter.py                       # tutoriel 00, valeurs par défaut
+* **`--talking <mp4>`** — la bulle contient le plan de synchronisation labiale
+  (portrait + voix passés à `creatify-aurora`). L'avatar parle réellement :
+  bouche, mâchoire, clignements.
+* **sans `--talking`** — repli sur le portrait fixe. La bulle respire et les
+  barres de niveau bougent, mais la bouche ne s'anime pas.
+
+Dans les deux cas l'habillage — anneau dégradé, halo, barres de niveau, titre,
+promesse, chip — est dessiné localement et **piloté par l'enveloppe réelle du
+fichier voix**, pas par une boucle décorative.
+
+    python3 build_presenter.py --talking out/avatar-talking.mp4
     python3 build_presenter.py --titre "Se connecter à son espace" \
                                --numero 1 --vo vo/N0.mp3
 """
@@ -128,19 +134,31 @@ def build_background() -> Image.Image:
     return bg
 
 
-def circular_avatar(path: Path, diameter: int) -> Image.Image:
-    """Avatar recadré en cercle, cadré sur le visage et le buste."""
-    src = Image.open(path).convert("RGBA")
+def circular(src: Image.Image, diameter: int, top_ratio: float = 0.02) -> Image.Image:
+    """Recadre une image en cercle, centré sur le visage.
+
+    Sert aussi bien au portrait fixe qu'à chaque image du plan de synchronisation
+    labiale : le cadrage doit être identique pour que la bulle ne saute pas.
+    """
+    src = src.convert("RGBA")
     side = min(src.width, src.height)
-    # L'avatar occupe le haut du carré source : on cadre légèrement sous le visage.
-    top = int(src.height * 0.04)
-    box = ((src.width - side) // 2, top, (src.width + side) // 2, min(top + side, src.height))
+    top = int(src.height * top_ratio)
+    box = ((src.width - side) // 2, top,
+           (src.width + side) // 2, min(top + side, src.height))
     face = src.crop(box).resize((diameter, diameter), Image.LANCZOS)
 
     mask = Image.new("L", (diameter, diameter), 0)
     ImageDraw.Draw(mask).ellipse((0, 0, diameter - 1, diameter - 1), fill=255)
     face.putalpha(mask)
     return face
+
+
+def talking_frames(video: Path, fps: int, target_dir: Path) -> list[Path]:
+    """Décompose le plan de synchronisation labiale en images."""
+    target_dir.mkdir(parents=True, exist_ok=True)
+    subprocess.run([ffmpeg_bin(), "-y", "-v", "error", "-i", str(video),
+                    "-vf", f"fps={fps}", str(target_dir / "t%04d.png")], check=True)
+    return sorted(target_dir.glob("t*.png"))
 
 
 def gradient_ring(diameter: int, thickness: int, rotation: float) -> Image.Image:
@@ -290,7 +308,8 @@ def _wrap(text: str, fnt: ImageFont.FreeTypeFont, max_width: int) -> list[str]:
     return lines
 
 
-def build(titre: str, sous_titre: str, numero: int, vo: Path, target: Path) -> Path:
+def build(titre: str, sous_titre: str, numero: int, vo: Path, target: Path,
+          talking: Path | None = None, portrait: Path | None = None) -> Path:
     if WORK.exists():
         shutil.rmtree(WORK)
     WORK.mkdir(parents=True)
@@ -299,12 +318,25 @@ def build(titre: str, sous_titre: str, numero: int, vo: Path, target: Path) -> P
     levels = voice_envelope(vo, FPS)
     total = len(levels)
     bg = build_background()
-    avatar = circular_avatar(ASSETS / "avatar-planit.png", BUBBLE_D)
     logo = Image.open(ASSETS / "black_logo.png").convert("RGBA")
     chip = f"TUTORIEL {numero:02d}"
 
+    if talking is not None and talking.exists():
+        shots = talking_frames(talking, FPS, WORK / "talking")
+        print(f"  synchronisation labiale : {len(shots)} images")
+        # La voix fait foi : si le plan est plus court, on tient sur sa dernière image.
+        def face(i: int) -> Image.Image:
+            return circular(Image.open(shots[min(i, len(shots) - 1)]), BUBBLE_D)
+    else:
+        still = circular(Image.open(portrait or ASSETS / "avatar-presentatrice.png"),
+                         BUBBLE_D)
+        print("  portrait fixe (pas de plan de synchronisation labiale)")
+
+        def face(i: int) -> Image.Image:
+            return still
+
     for i in range(total):
-        render_frame(i / FPS, levels[i], bg, avatar, logo,
+        render_frame(i / FPS, levels[i], bg, face(i), logo,
                      titre, sous_titre, chip, levels, i
                      ).convert("RGB").save(WORK / f"p{i:04d}.png", compress_level=1)
         if i % 30 == 0:
@@ -330,13 +362,19 @@ def main() -> int:
                     default="Votre compte existe et votre espace de travail est ouvert.")
     ap.add_argument("--numero", type=int, default=0)
     ap.add_argument("--vo", type=Path, default=ROOT / "vo" / "N0.mp3")
+    ap.add_argument("--talking", type=Path, default=OUT / "avatar-talking.mp4",
+                    help="plan de synchronisation labiale (creatify-aurora)")
+    ap.add_argument("--portrait", type=Path,
+                    default=ASSETS / "avatar-presentatrice.png",
+                    help="portrait fixe, utilisé si --talking est absent")
     ap.add_argument("--out", type=Path, default=OUT / "presenter.mp4")
     args = ap.parse_args()
 
     if not args.vo.exists():
         print(f"voix de présentation introuvable : {args.vo}", file=sys.stderr)
         return 1
-    build(args.titre, args.promesse, args.numero, args.vo, args.out)
+    build(args.titre, args.promesse, args.numero, args.vo, args.out,
+          talking=args.talking, portrait=args.portrait)
     return 0
 
 
