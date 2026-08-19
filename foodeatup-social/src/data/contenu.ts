@@ -43565,8 +43565,14 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "format": "16:9 · 1920 × 1080 · 12,5 s",
       "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube-paysage/EP301.mp4"
     },
-    "storyFacebook": null,
-    "videoTiktok": null,
+    "storyFacebook": {
+      "format": "9:16 · 1080 × 1920 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/facebook/EP301.mp4"
+    },
+    "videoTiktok": {
+      "format": "9:16 · 1080 × 1920 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/tiktok-story/EP301.mp4"
+    },
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
       "planches": [
@@ -43711,12 +43717,24 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "format": "9:16 · 1080 × 1920 · 10 s",
       "hook": "Il ouvre, il produit, il ferme. Sa journée entière tient dans une seule application",
       "punchline": "Il est le seul à voir la marge et le coup de feu en même temps",
-      "url": null
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP302.mp4"
     },
-    "shortYoutube": null,
-    "videoYoutube": null,
-    "storyFacebook": null,
-    "videoTiktok": null,
+    "shortYoutube": {
+      "format": "9:16 · 1080 × 1920 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube/EP302.mp4"
+    },
+    "videoYoutube": {
+      "format": "16:9 · 1920 × 1080 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube-paysage/EP302.mp4"
+    },
+    "storyFacebook": {
+      "format": "9:16 · 1080 × 1920 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/facebook/EP302.mp4"
+    },
+    "videoTiktok": {
+      "format": "9:16 · 1080 × 1920 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/tiktok-story/EP302.mp4"
+    },
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
       "planches": [
@@ -43861,12 +43879,24 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "format": "9:16 · 1080 × 1920 · 10 s",
       "hook": "Il ouvre, il produit, il ferme. Sa journée entière tient dans une seule application",
       "punchline": "Il est le seul à voir la marge et le coup de feu en même temps",
-      "url": null
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP303.mp4"
     },
-    "shortYoutube": null,
-    "videoYoutube": null,
-    "storyFacebook": null,
-    "videoTiktok": null,
+    "shortYoutube": {
+      "format": "9:16 · 1080 × 1920 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube/EP303.mp4"
+    },
+    "videoYoutube": {
+      "format": "16:9 · 1920 × 1080 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube-paysage/EP303.mp4"
+    },
+    "storyFacebook": {
+      "format": "9:16 · 1080 × 1920 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/facebook/EP303.mp4"
+    },
+    "videoTiktok": {
+      "format": "9:16 · 1080 × 1920 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/tiktok-story/EP303.mp4"
+    },
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
       "planches": [
@@ -44011,12 +44041,24 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "format": "9:16 · 1080 × 1920 · 10 s",
       "hook": "Il tient la mise en place et le coup de feu. Son parcours s'arrête là où commence la clôture du chef",
       "punchline": "Il répare ce que personne n'a vu venir, sans jamais arrêter le service",
-      "url": null
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP304.mp4"
     },
-    "shortYoutube": null,
-    "videoYoutube": null,
-    "storyFacebook": null,
-    "videoTiktok": null,
+    "shortYoutube": {
+      "format": "9:16 · 1080 × 1920 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube/EP304.mp4"
+    },
+    "videoYoutube": {
+      "format": "16:9 · 1920 × 1080 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube-paysage/EP304.mp4"
+    },
+    "storyFacebook": {
+      "format": "9:16 · 1080 × 1920 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/facebook/EP304.mp4"
+    },
+    "videoTiktok": {
+      "format": "9:16 · 1080 × 1920 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/tiktok-story/EP304.mp4"
+    },
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
       "planches": [
@@ -44161,12 +44203,24 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "format": "9:16 · 1080 × 1920 · 10 s",
       "hook": "Il tient la mise en place et le coup de feu. Son parcours s'arrête là où commence la clôture du chef",
       "punchline": "Il répare ce que personne n'a vu venir, sans jamais arrêter le service",
-      "url": null
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP305.mp4"
     },
-    "shortYoutube": null,
-    "videoYoutube": null,
-    "storyFacebook": null,
-    "videoTiktok": null,
+    "shortYoutube": {
+      "format": "9:16 · 1080 × 1920 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube/EP305.mp4"
+    },
+    "videoYoutube": {
+      "format": "16:9 · 1920 × 1080 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube-paysage/EP305.mp4"
+    },
+    "storyFacebook": {
+      "format": "9:16 · 1080 × 1920 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/facebook/EP305.mp4"
+    },
+    "videoTiktok": {
+      "format": "9:16 · 1080 × 1920 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/tiktok-story/EP305.mp4"
+    },
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
       "planches": [
@@ -44311,12 +44365,24 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "format": "9:16 · 1080 × 1920 · 10 s",
       "hook": "Il tient la mise en place et le coup de feu. Son parcours s'arrête là où commence la clôture du chef",
       "punchline": "Il répare ce que personne n'a vu venir, sans jamais arrêter le service",
-      "url": null
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP306.mp4"
     },
-    "shortYoutube": null,
-    "videoYoutube": null,
-    "storyFacebook": null,
-    "videoTiktok": null,
+    "shortYoutube": {
+      "format": "9:16 · 1080 × 1920 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube/EP306.mp4"
+    },
+    "videoYoutube": {
+      "format": "16:9 · 1920 × 1080 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube-paysage/EP306.mp4"
+    },
+    "storyFacebook": {
+      "format": "9:16 · 1080 × 1920 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/facebook/EP306.mp4"
+    },
+    "videoTiktok": {
+      "format": "9:16 · 1080 × 1920 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/tiktok-story/EP306.mp4"
+    },
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
       "planches": [
@@ -44461,12 +44527,24 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "format": "9:16 · 1080 × 1920 · 10 s",
       "hook": "Un poste, une carte, et la quantité juste. Trop, c'est de la perte ; pas assez, c'est un plat retiré",
       "punchline": "Il est le premier à savoir qu'il va manquer quelque chose, et le dernier qu'on écoute",
-      "url": null
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP307.mp4"
     },
-    "shortYoutube": null,
-    "videoYoutube": null,
-    "storyFacebook": null,
-    "videoTiktok": null,
+    "shortYoutube": {
+      "format": "9:16 · 1080 × 1920 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube/EP307.mp4"
+    },
+    "videoYoutube": {
+      "format": "16:9 · 1920 × 1080 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube-paysage/EP307.mp4"
+    },
+    "storyFacebook": {
+      "format": "9:16 · 1080 × 1920 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/facebook/EP307.mp4"
+    },
+    "videoTiktok": {
+      "format": "9:16 · 1080 × 1920 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/tiktok-story/EP307.mp4"
+    },
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
       "planches": [
@@ -44611,12 +44689,24 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "format": "9:16 · 1080 × 1920 · 10 s",
       "hook": "Un poste, une carte, et la quantité juste. Trop, c'est de la perte ; pas assez, c'est un plat retiré",
       "punchline": "Il est le premier à savoir qu'il va manquer quelque chose, et le dernier qu'on écoute",
-      "url": null
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP308.mp4"
     },
-    "shortYoutube": null,
-    "videoYoutube": null,
-    "storyFacebook": null,
-    "videoTiktok": null,
+    "shortYoutube": {
+      "format": "9:16 · 1080 × 1920 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube/EP308.mp4"
+    },
+    "videoYoutube": {
+      "format": "16:9 · 1920 × 1080 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube-paysage/EP308.mp4"
+    },
+    "storyFacebook": {
+      "format": "9:16 · 1080 × 1920 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/facebook/EP308.mp4"
+    },
+    "videoTiktok": {
+      "format": "9:16 · 1080 × 1920 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/tiktok-story/EP308.mp4"
+    },
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
       "planches": [
@@ -44761,12 +44851,24 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "format": "9:16 · 1080 × 1920 · 10 s",
       "hook": "Un poste, une carte, et la quantité juste. Trop, c'est de la perte ; pas assez, c'est un plat retiré",
       "punchline": "Il est le premier à savoir qu'il va manquer quelque chose, et le dernier qu'on écoute",
-      "url": null
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP309.mp4"
     },
-    "shortYoutube": null,
-    "videoYoutube": null,
-    "storyFacebook": null,
-    "videoTiktok": null,
+    "shortYoutube": {
+      "format": "9:16 · 1080 × 1920 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube/EP309.mp4"
+    },
+    "videoYoutube": {
+      "format": "16:9 · 1920 × 1080 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube-paysage/EP309.mp4"
+    },
+    "storyFacebook": {
+      "format": "9:16 · 1080 × 1920 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/facebook/EP309.mp4"
+    },
+    "videoTiktok": {
+      "format": "9:16 · 1080 × 1920 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/tiktok-story/EP309.mp4"
+    },
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
       "planches": [
@@ -44911,12 +45013,24 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "format": "9:16 · 1080 × 1920 · 10 s",
       "hook": "Il exécute, il trace, il nettoie. Trois gestes, deux cents fois",
       "punchline": "Ce qu'on lui demande de noter, personne ne le relit — jusqu'au jour du contrôle",
-      "url": null
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP310.mp4"
     },
-    "shortYoutube": null,
-    "videoYoutube": null,
-    "storyFacebook": null,
-    "videoTiktok": null,
+    "shortYoutube": {
+      "format": "9:16 · 1080 × 1920 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube/EP310.mp4"
+    },
+    "videoYoutube": {
+      "format": "16:9 · 1920 × 1080 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube-paysage/EP310.mp4"
+    },
+    "storyFacebook": {
+      "format": "9:16 · 1080 × 1920 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/facebook/EP310.mp4"
+    },
+    "videoTiktok": {
+      "format": "9:16 · 1080 × 1920 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/tiktok-story/EP310.mp4"
+    },
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
       "planches": [
@@ -45061,12 +45175,24 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "format": "9:16 · 1080 × 1920 · 10 s",
       "hook": "Il exécute, il trace, il nettoie. Trois gestes, deux cents fois",
       "punchline": "Ce qu'on lui demande de noter, personne ne le relit — jusqu'au jour du contrôle",
-      "url": null
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP311.mp4"
     },
-    "shortYoutube": null,
-    "videoYoutube": null,
-    "storyFacebook": null,
-    "videoTiktok": null,
+    "shortYoutube": {
+      "format": "9:16 · 1080 × 1920 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube/EP311.mp4"
+    },
+    "videoYoutube": {
+      "format": "16:9 · 1920 × 1080 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube-paysage/EP311.mp4"
+    },
+    "storyFacebook": {
+      "format": "9:16 · 1080 × 1920 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/facebook/EP311.mp4"
+    },
+    "videoTiktok": {
+      "format": "9:16 · 1080 × 1920 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/tiktok-story/EP311.mp4"
+    },
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
       "planches": [
@@ -45211,12 +45337,24 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "format": "9:16 · 1080 × 1920 · 10 s",
       "hook": "Il exécute, il trace, il nettoie. Trois gestes, deux cents fois",
       "punchline": "Ce qu'on lui demande de noter, personne ne le relit — jusqu'au jour du contrôle",
-      "url": null
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP312.mp4"
     },
-    "shortYoutube": null,
-    "videoYoutube": null,
-    "storyFacebook": null,
-    "videoTiktok": null,
+    "shortYoutube": {
+      "format": "9:16 · 1080 × 1920 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube/EP312.mp4"
+    },
+    "videoYoutube": {
+      "format": "16:9 · 1920 × 1080 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube-paysage/EP312.mp4"
+    },
+    "storyFacebook": {
+      "format": "9:16 · 1080 × 1920 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/facebook/EP312.mp4"
+    },
+    "videoTiktok": {
+      "format": "9:16 · 1080 × 1920 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/tiktok-story/EP312.mp4"
+    },
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
       "planches": [
@@ -45361,12 +45499,24 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "format": "9:16 · 1080 × 1920 · 10 s",
       "hook": "Il voit passer tout ce que la salle renvoie. C'est le premier indicateur du restaurant, et personne ne le lit",
       "punchline": "Sa boucle est la seule dont l'échec ferme le restaurant",
-      "url": null
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP313.mp4"
     },
-    "shortYoutube": null,
-    "videoYoutube": null,
-    "storyFacebook": null,
-    "videoTiktok": null,
+    "shortYoutube": {
+      "format": "9:16 · 1080 × 1920 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube/EP313.mp4"
+    },
+    "videoYoutube": {
+      "format": "16:9 · 1920 × 1080 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube-paysage/EP313.mp4"
+    },
+    "storyFacebook": {
+      "format": "9:16 · 1080 × 1920 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/facebook/EP313.mp4"
+    },
+    "videoTiktok": {
+      "format": "9:16 · 1080 × 1920 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/tiktok-story/EP313.mp4"
+    },
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
       "planches": [
@@ -45811,12 +45961,24 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "format": "9:16 · 1080 × 1920 · 10 s",
       "hook": "Il tient la salle et les chiffres. Deux métiers, une personne, la même journée",
       "punchline": "Il dit oui au téléphone trois jours avant, et il découvre le vendredi ce que ça coûte",
-      "url": null
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP316.mp4"
     },
-    "shortYoutube": null,
-    "videoYoutube": null,
-    "storyFacebook": null,
-    "videoTiktok": null,
+    "shortYoutube": {
+      "format": "9:16 · 1080 × 1920 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube/EP316.mp4"
+    },
+    "videoYoutube": {
+      "format": "16:9 · 1920 × 1080 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube-paysage/EP316.mp4"
+    },
+    "storyFacebook": {
+      "format": "9:16 · 1080 × 1920 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/facebook/EP316.mp4"
+    },
+    "videoTiktok": {
+      "format": "9:16 · 1080 × 1920 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/tiktok-story/EP316.mp4"
+    },
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
       "planches": [
@@ -45961,12 +46123,24 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "format": "9:16 · 1080 × 1920 · 10 s",
       "hook": "Il tient la salle et les chiffres. Deux métiers, une personne, la même journée",
       "punchline": "Il dit oui au téléphone trois jours avant, et il découvre le vendredi ce que ça coûte",
-      "url": null
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP317.mp4"
     },
-    "shortYoutube": null,
-    "videoYoutube": null,
-    "storyFacebook": null,
-    "videoTiktok": null,
+    "shortYoutube": {
+      "format": "9:16 · 1080 × 1920 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube/EP317.mp4"
+    },
+    "videoYoutube": {
+      "format": "16:9 · 1920 × 1080 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube-paysage/EP317.mp4"
+    },
+    "storyFacebook": {
+      "format": "9:16 · 1080 × 1920 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/facebook/EP317.mp4"
+    },
+    "videoTiktok": {
+      "format": "9:16 · 1080 × 1920 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/tiktok-story/EP317.mp4"
+    },
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
       "planches": [
@@ -46111,12 +46285,24 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "format": "9:16 · 1080 × 1920 · 10 s",
       "hook": "Il tient la salle et les chiffres. Deux métiers, une personne, la même journée",
       "punchline": "Il dit oui au téléphone trois jours avant, et il découvre le vendredi ce que ça coûte",
-      "url": null
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP318.mp4"
     },
-    "shortYoutube": null,
-    "videoYoutube": null,
-    "storyFacebook": null,
-    "videoTiktok": null,
+    "shortYoutube": {
+      "format": "9:16 · 1080 × 1920 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube/EP318.mp4"
+    },
+    "videoYoutube": {
+      "format": "16:9 · 1920 × 1080 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube-paysage/EP318.mp4"
+    },
+    "storyFacebook": {
+      "format": "9:16 · 1080 × 1920 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/facebook/EP318.mp4"
+    },
+    "videoTiktok": {
+      "format": "9:16 · 1080 × 1920 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/tiktok-story/EP318.mp4"
+    },
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
       "planches": [
@@ -46261,12 +46447,24 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "format": "9:16 · 1080 × 1920 · 10 s",
       "hook": "Six tables, quatre canaux, une seule mémoire. La sienne",
       "punchline": "Il encaisse la réclamation que la cuisine ne verra jamais",
-      "url": null
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP319.mp4"
     },
-    "shortYoutube": null,
-    "videoYoutube": null,
-    "storyFacebook": null,
-    "videoTiktok": null,
+    "shortYoutube": {
+      "format": "9:16 · 1080 × 1920 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube/EP319.mp4"
+    },
+    "videoYoutube": {
+      "format": "16:9 · 1920 × 1080 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube-paysage/EP319.mp4"
+    },
+    "storyFacebook": {
+      "format": "9:16 · 1080 × 1920 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/facebook/EP319.mp4"
+    },
+    "videoTiktok": {
+      "format": "9:16 · 1080 × 1920 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/tiktok-story/EP319.mp4"
+    },
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
       "planches": [
@@ -46411,12 +46609,24 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "format": "9:16 · 1080 × 1920 · 10 s",
       "hook": "Six tables, quatre canaux, une seule mémoire. La sienne",
       "punchline": "Il encaisse la réclamation que la cuisine ne verra jamais",
-      "url": null
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP320.mp4"
     },
-    "shortYoutube": null,
-    "videoYoutube": null,
-    "storyFacebook": null,
-    "videoTiktok": null,
+    "shortYoutube": {
+      "format": "9:16 · 1080 × 1920 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube/EP320.mp4"
+    },
+    "videoYoutube": {
+      "format": "16:9 · 1920 × 1080 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube-paysage/EP320.mp4"
+    },
+    "storyFacebook": {
+      "format": "9:16 · 1080 × 1920 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/facebook/EP320.mp4"
+    },
+    "videoTiktok": {
+      "format": "9:16 · 1080 × 1920 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/tiktok-story/EP320.mp4"
+    },
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
       "planches": [
@@ -46561,12 +46771,24 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "format": "9:16 · 1080 × 1920 · 10 s",
       "hook": "Six tables, quatre canaux, une seule mémoire. La sienne",
       "punchline": "Il encaisse la réclamation que la cuisine ne verra jamais",
-      "url": null
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP321.mp4"
     },
-    "shortYoutube": null,
-    "videoYoutube": null,
-    "storyFacebook": null,
-    "videoTiktok": null,
+    "shortYoutube": {
+      "format": "9:16 · 1080 × 1920 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube/EP321.mp4"
+    },
+    "videoYoutube": {
+      "format": "16:9 · 1920 × 1080 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube-paysage/EP321.mp4"
+    },
+    "storyFacebook": {
+      "format": "9:16 · 1080 × 1920 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/facebook/EP321.mp4"
+    },
+    "videoTiktok": {
+      "format": "9:16 · 1080 × 1920 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/tiktok-story/EP321.mp4"
+    },
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
       "planches": [
@@ -46711,12 +46933,24 @@ export const contenuParEpisode: Record<string, ContenuEpisode> = {
       "format": "9:16 · 1080 × 1920 · 10 s",
       "hook": "Il porte, il annonce, il rassure. Et il apprend les ruptures en même temps que le client",
       "punchline": "Il est l'interface du restaurant, avec zéro information",
-      "url": null
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/stories/EP322.mp4"
     },
-    "shortYoutube": null,
-    "videoYoutube": null,
-    "storyFacebook": null,
-    "videoTiktok": null,
+    "shortYoutube": {
+      "format": "9:16 · 1080 × 1920 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube/EP322.mp4"
+    },
+    "videoYoutube": {
+      "format": "16:9 · 1920 × 1080 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/youtube-paysage/EP322.mp4"
+    },
+    "storyFacebook": {
+      "format": "9:16 · 1080 × 1920 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/facebook/EP322.mp4"
+    },
+    "videoTiktok": {
+      "format": "9:16 · 1080 × 1920 · 12,5 s",
+      "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist/tiktok-story/EP322.mp4"
+    },
     "carrousel": {
       "format": "4:5 · 1080 × 1350",
       "planches": [

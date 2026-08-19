@@ -1,7 +1,7 @@
 {
-  "jobs_lus": 30,
+  "jobs_lus": 50,
   "cibles": 233,
-  "deja_servies": 86,
+  "deja_servies": 92,
   "a_monter": {
     "EP:EP184": {
       "titre": "Complet dehors, vide dedans",
@@ -11,6 +11,153 @@
           "job": "54d5c3dc-e137-4783-b1a5-58e79141e2fb",
           "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3GXYlNxkbz83gXaGDVVrTni1dX2/hf_20260817_151944_54d5c3dc-e137-4783-b1a5-58e79141e2fb.mp4",
           "at": 1786979984.893137
+        }
+      ]
+    },
+    "EP:EP304": {
+      "titre": "Il prépare ce que le chef décidera",
+      "date": "2026-11-01",
+      "prises": [
+        {
+          "job": "f7d7aba3-1833-407d-b787-3fd1cc4358b0",
+          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3GXYlNxkbz83gXaGDVVrTni1dX2/hf_20260818_194905_f7d7aba3-1833-407d-b787-3fd1cc4358b0.mp4",
+          "at": 1787082545.125085
+        },
+        {
+          "job": "08445260-05ba-4566-b038-8975d924a54e",
+          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3GXYlNxkbz83gXaGDVVrTni1dX2/hf_20260818_175853_08445260-05ba-4566-b038-8975d924a54e.mp4",
+          "at": 1787075933.899965
+        },
+        {
+          "job": "b24ef9be-ac71-49d4-a4d8-edd95f8508fc",
+          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3GXYlNxkbz83gXaGDVVrTni1dX2/hf_20260818_170900_b24ef9be-ac71-49d4-a4d8-edd95f8508fc.mp4",
+          "at": 1787072940.180387
+        }
+      ]
+    },
+    "EP:EP307": {
+      "titre": "La quantité juste, décidée à dix heures",
+      "date": "2026-11-04",
+      "prises": [
+        {
+          "job": "08a8cc90-bec3-49cc-a266-c491650be287",
+          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3GXYlNxkbz83gXaGDVVrTni1dX2/hf_20260818_190246_08a8cc90-bec3-49cc-a266-c491650be287.mp4",
+          "at": 1787079766.084999
+        },
+        {
+          "job": "8ccc0b88-8df2-44f4-a76c-ecb75017c394",
+          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3GXYlNxkbz83gXaGDVVrTni1dX2/hf_20260818_183656_8ccc0b88-8df2-44f4-a76c-ecb75017c394.mp4",
+          "at": 1787078216.600878
+        },
+        {
+          "job": "b6b3afd0-d0f0-4e04-956a-12862b04c378",
+          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3GXYlNxkbz83gXaGDVVrTni1dX2/hf_20260818_173313_b6b3afd0-d0f0-4e04-956a-12862b04c378.mp4",
+          "at": 1787074393.446261
+        }
+      ]
+    },
+    "EP:EP310": {
+      "titre": "Exécuter, tracer, recommencer",
+      "date": "2026-11-07",
+      "prises": [
+        {
+          "job": "3c75ec90-f1b2-4c36-85cb-6d645e4b4f92",
+          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3GXYlNxkbz83gXaGDVVrTni1dX2/hf_20260818_220658_3c75ec90-f1b2-4c36-85cb-6d645e4b4f92.mp4",
+          "at": 1787090818.238422
+        },
+        {
+          "job": "b6b61e53-7420-42eb-b458-131d045867c6",
+          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3GXYlNxkbz83gXaGDVVrTni1dX2/hf_20260818_201050_b6b61e53-7420-42eb-b458-131d045867c6.mp4",
+          "at": 1787083850.575331
+        },
+        {
+          "job": "a1ff01b0-0c61-4fe8-aa32-9ccb53403b37",
+          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3GXYlNxkbz83gXaGDVVrTni1dX2/hf_20260818_192736_a1ff01b0-0c61-4fe8-aa32-9ccb53403b37.mp4",
+          "at": 1787081256.024558
+        }
+      ]
+    },
+    "EP:EP313": {
+      "titre": "Il arrive quand tout le monde est déjà là",
+      "date": "2026-11-10",
+      "prises": [
+        {
+          "job": "840812ea-706b-45f8-885f-2c4e65ad2762",
+          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3GXYlNxkbz83gXaGDVVrTni1dX2/hf_20260818_205556_840812ea-706b-45f8-885f-2c4e65ad2762.mp4",
+          "at": 1787086556.84497
+        },
+        {
+          "job": "245337de-bcfc-4f01-a361-ca32a3131dd0",
+          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3GXYlNxkbz83gXaGDVVrTni1dX2/hf_20260818_203343_245337de-bcfc-4f01-a361-ca32a3131dd0.mp4",
+          "at": 1787085223.140182
+        }
+      ]
+    },
+    "EP:EP316": {
+      "titre": "Il ouvre les livres avant d'ouvrir la porte",
+      "date": "2027-01-15",
+      "prises": [
+        {
+          "job": "86ef0448-23c6-42aa-9a5f-714ea6121354",
+          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3GXYlNxkbz83gXaGDVVrTni1dX2/hf_20260819_002905_86ef0448-23c6-42aa-9a5f-714ea6121354.mp4",
+          "at": 1787099345.528719
+        },
+        {
+          "job": "1ca16456-9470-44fd-8be4-cfed2e6561ce",
+          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3GXYlNxkbz83gXaGDVVrTni1dX2/hf_20260818_223052_1ca16456-9470-44fd-8be4-cfed2e6561ce.mp4",
+          "at": 1787092252.943481
+        },
+        {
+          "job": "55243170-f938-45ef-8622-11704b8f73cb",
+          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3GXYlNxkbz83gXaGDVVrTni1dX2/hf_20260818_214420_55243170-f938-45ef-8622-11704b8f73cb.mp4",
+          "at": 1787089460.302755
+        },
+        {
+          "job": "f098109d-c39a-43bc-889c-7a7ddcb184e8",
+          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3GXYlNxkbz83gXaGDVVrTni1dX2/hf_20260818_211753_f098109d-c39a-43bc-889c-7a7ddcb184e8.mp4",
+          "at": 1787087873.571941
+        }
+      ]
+    },
+    "EP:EP319": {
+      "titre": "Six tables, quatre canaux, une seule mémoire",
+      "date": "2027-01-18",
+      "prises": [
+        {
+          "job": "cdfd6087-2dc3-420f-af7b-76dcec225ae0",
+          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3GXYlNxkbz83gXaGDVVrTni1dX2/hf_20260818_234312_cdfd6087-2dc3-420f-af7b-76dcec225ae0.mp4",
+          "at": 1787096592.538398
+        },
+        {
+          "job": "628bf8a6-6af9-48ca-9a16-5f2bb68831a4",
+          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3GXYlNxkbz83gXaGDVVrTni1dX2/hf_20260818_232037_628bf8a6-6af9-48ca-9a16-5f2bb68831a4.mp4",
+          "at": 1787095237.472313
+        },
+        {
+          "job": "15468c2d-17bc-4f00-9b75-6501528e7f41",
+          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3GXYlNxkbz83gXaGDVVrTni1dX2/hf_20260818_225527_15468c2d-17bc-4f00-9b75-6501528e7f41.mp4",
+          "at": 1787093727.238987
+        }
+      ]
+    },
+    "EP:EP322": {
+      "titre": "Il dresse une salle dont il ne connaît pas encore la carte",
+      "date": "2027-01-21",
+      "prises": [
+        {
+          "job": "0045fa70-b9b9-4e48-b4f0-e4cb81d73a73",
+          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3GXYlNxkbz83gXaGDVVrTni1dX2/hf_20260819_011647_0045fa70-b9b9-4e48-b4f0-e4cb81d73a73.mp4",
+          "at": 1787102207.078825
+        },
+        {
+          "job": "abb79b34-644b-4751-b2d1-539846d45f3e",
+          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3GXYlNxkbz83gXaGDVVrTni1dX2/hf_20260819_005301_abb79b34-644b-4751-b2d1-539846d45f3e.mp4",
+          "at": 1787100781.780431
+        },
+        {
+          "job": "da7510a3-0433-4b72-9a74-84775b531eb5",
+          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3GXYlNxkbz83gXaGDVVrTni1dX2/hf_20260819_000611_da7510a3-0433-4b72-9a74-84775b531eb5.mp4",
+          "at": 1787097971.145575
         }
       ]
     },
@@ -65,77 +212,6 @@
           "job": "1bbdedbc-288a-409b-8e75-a4358d691ef5",
           "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3GXYlNxkbz83gXaGDVVrTni1dX2/hf_20260817_154804_1bbdedbc-288a-409b-8e75-a4358d691ef5.mp4",
           "at": 1786981684.386293
-        }
-      ]
-    },
-    "EP:EP523": {
-      "titre": "La table était prête à son nom",
-      "date": "2026-09-13",
-      "prises": [
-        {
-          "job": "22a478a0-3179-4859-a23c-cc89cdca605d",
-          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3GXYlNxkbz83gXaGDVVrTni1dX2/hf_20260816_214625_22a478a0-3179-4859-a23c-cc89cdca605d.mp4",
-          "at": 1786916785.283159
-        }
-      ]
-    },
-    "EP:EP524": {
-      "titre": "Vingt-trois heures, dans le métro",
-      "date": "2026-09-14",
-      "prises": [
-        {
-          "job": "43aa8580-1412-4cbc-8508-1e4735144a2c",
-          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3GXYlNxkbz83gXaGDVVrTni1dX2/hf_20260817_105517_43aa8580-1412-4cbc-8508-1e4735144a2c.mp4",
-          "at": 1786964117.187747
-        }
-      ]
-    },
-    "EP:EP528": {
-      "titre": "18 h 42 — la cuisine l'apprend",
-      "date": "2026-09-19",
-      "prises": [
-        {
-          "job": "d90543ea-8608-4ea6-b4ec-4f48df8a5d5c",
-          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3GXYlNxkbz83gXaGDVVrTni1dX2/hf_20260817_002035_d90543ea-8608-4ea6-b4ec-4f48df8a5d5c.mp4",
-          "at": 1786926035.787314
-        }
-      ]
-    },
-    "EP:EP533": {
-      "titre": "23 h 50 — le Z avant d'éteindre",
-      "date": "2026-09-24",
-      "prises": [
-        {
-          "job": "30750e1a-1543-4c74-b160-717d4c737cf1",
-          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3GXYlNxkbz83gXaGDVVrTni1dX2/hf_20260816_233327_30750e1a-1543-4c74-b160-717d4c737cf1.mp4",
-          "at": 1786923207.358653
-        }
-      ]
-    },
-    "EP:EP534": {
-      "titre": "7 h 00 — le lendemain",
-      "date": "2026-09-25",
-      "prises": [
-        {
-          "job": "75758e28-9202-4a9d-92d6-7dc81ad1dcab",
-          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3GXYlNxkbz83gXaGDVVrTni1dX2/hf_20260816_230742_75758e28-9202-4a9d-92d6-7dc81ad1dcab.mp4",
-          "at": 1786921662.645855
-        },
-        {
-          "job": "2eaaaeee-bac2-4fcd-b8a6-80bc2711c881",
-          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3GXYlNxkbz83gXaGDVVrTni1dX2/hf_20260816_223536_2eaaaeee-bac2-4fcd-b8a6-80bc2711c881.mp4",
-          "at": 1786919736.648705
-        }
-      ]
-    },
-    "EP:EP535": {
-      "titre": "Il était une fois un restaurant",
-      "date": "2026-09-26",
-      "prises": [
-        {
-          "job": "e7314224-7b78-448c-af5f-c763b10ef827",
-          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3GXYlNxkbz83gXaGDVVrTni1dX2/hf_20260817_112213_e7314224-7b78-448c-af5f-c763b10ef827.mp4",
-          "at": 1786965733.909174
         }
       ]
     }
@@ -557,11 +633,6 @@
       "date": "2026-10-31"
     },
     {
-      "cle": "EP:EP304",
-      "titre": "Il prépare ce que le chef décidera",
-      "date": "2026-11-01"
-    },
-    {
       "cle": "EP:EP305",
       "titre": "Il répare sans arrêter le service",
       "date": "2026-11-02"
@@ -570,11 +641,6 @@
       "cle": "EP:EP306",
       "titre": "Il rend une cuisine que le chef peut fermer",
       "date": "2026-11-03"
-    },
-    {
-      "cle": "EP:EP307",
-      "titre": "La quantité juste, décidée à dix heures",
-      "date": "2026-11-04"
     },
     {
       "cle": "EP:EP308",
@@ -587,11 +653,6 @@
       "date": "2026-11-06"
     },
     {
-      "cle": "EP:EP310",
-      "titre": "Exécuter, tracer, recommencer",
-      "date": "2026-11-07"
-    },
-    {
       "cle": "EP:EP311",
       "titre": "Deux cents fois le même geste, sans une erreur",
       "date": "2026-11-08"
@@ -600,11 +661,6 @@
       "cle": "EP:EP312",
       "titre": "Le contrôle tombe entre les deux services",
       "date": "2026-11-09"
-    },
-    {
-      "cle": "EP:EP313",
-      "titre": "Il arrive quand tout le monde est déjà là",
-      "date": "2026-11-10"
     },
     {
       "cle": "EP:EP314",
@@ -617,11 +673,6 @@
       "date": "2026-11-12"
     },
     {
-      "cle": "EP:EP316",
-      "titre": "Il ouvre les livres avant d'ouvrir la porte",
-      "date": "2027-01-15"
-    },
-    {
       "cle": "EP:EP317",
       "titre": "Il tient la salle et les chiffres en même temps",
       "date": "2027-01-16"
@@ -632,11 +683,6 @@
       "date": "2027-01-17"
     },
     {
-      "cle": "EP:EP319",
-      "titre": "Six tables, quatre canaux, une seule mémoire",
-      "date": "2027-01-18"
-    },
-    {
       "cle": "EP:EP320",
       "titre": "Il encaisse ce que la cuisine ne verra jamais",
       "date": "2027-01-19"
@@ -645,11 +691,6 @@
       "cle": "EP:EP321",
       "titre": "Ce qu'il sait de ses clients repart avec lui",
       "date": "2027-01-20"
-    },
-    {
-      "cle": "EP:EP322",
-      "titre": "Il dresse une salle dont il ne connaît pas encore la carte",
-      "date": "2027-01-21"
     },
     {
       "cle": "EP:EP323",
