@@ -5,10 +5,11 @@ Video** (`tutoriel_lister` → 43 fiches, toutes en statut `a_produire`) et sur 
 fonctionnalités réellement présentes dans le dépôt `PrendsTaPart/planit-app`
 (lecture seule).
 
-**État au 19/08/2026** : 5 / 43 montés — tutoriels **00** « Créer son compte »,
-**01** « Se connecter », **02** « Retrouver son mot de passe », **05** « Utiliser
-une carte de prompt » et **06** « Chercher la bonne carte de prompt ». Les trois
-premiers sont déposés et en ligne sur leur fiche MCP.
+**État au 19/08/2026** : 5 / 43 produits, montés et déposés — tutoriels **00**
+« Créer son compte », **01** « Se connecter », **02** « Retrouver son mot de
+passe », **05** « Utiliser une carte de prompt » et **06** « Chercher la bonne
+carte de prompt ». Les cinq fiches sont `en_ligne` ; `videos_manquantes` annonce
+**5 déposées / 38 manquantes**.
 
 ---
 
