@@ -9,6 +9,41 @@ import { MeshoptDecoder } from "three/addons/libs/meshopt_decoder.module.js";
 const L = 1080, H = 1920;
 const scene = new THREE.Scene();
 scene.background = new THREE.Color("#FCF9E6");
+
+// Le fond de cuisine. Il est posé comme un PLAN derrière le chef, pas comme
+// `scene.background` : un fond de scène ne reçoit ni la lumière ni la
+// profondeur de champ, et le chef y flottait comme un détourage. En plan, il
+// prend la lumière avec le reste et on peut le reculer pour qu'il se lise
+// comme un décor, pas comme une affiche collée dans son dos.
+const parametres = new URLSearchParams(location.search);
+const fondFichier = parametres.get("fond");
+if (fondFichier) {
+  new THREE.TextureLoader().load(fondFichier, (tex) => {
+    tex.colorSpace = THREE.SRGBColorSpace;
+    const plan = new THREE.Mesh(
+      // La taille du plan décide de ce qu'on VOIT du décor, pas seulement de
+      // sa couverture. À 11 × 16,5 il débordait tellement que le cadre n'en
+      // montrait que 18 % — la cuisine, grossie cinq fois, n'était plus qu'une
+      // tache. Dimensionné au cône de vue, le décor entier tient dans l'image.
+      new THREE.PlaneGeometry(Number(parametres.get("plan") ?? 2.8),
+                              Number(parametres.get("plan") ?? 2.8) * 1.5),
+      // Éclairci et légèrement lavé : la cuisine sort très contrastée, et
+      // derrière une veste blanche elle mangeait le sujet. `opacity` la pose
+      // en retrait sans avoir à retoucher le fichier.
+      new THREE.MeshBasicMaterial({
+        map: tex,
+        // Pleine opacité. À 0,55 le décor se mélangeait au fond crème de la
+        // scène et ressortait GRIS : on ne voyait plus de cuisine du tout,
+        // juste un voile. Le retrait se règle sur l'image elle-même — on la
+        // floute et on l'éclaircit avant de l'envoyer — pas par transparence.
+        transparent: false,
+        opacity: 1.0,
+      })
+    );
+    plan.position.set(0, 1.0, -4.2);
+    scene.add(plan);
+  });
+}
 const cam = new THREE.PerspectiveCamera(28, L/H, 0.01, 100);
 const rend = new THREE.WebGLRenderer({antialias:true, preserveDrawingBuffer:true});
 rend.setSize(L, H); rend.setPixelRatio(1);
@@ -48,8 +83,8 @@ loader.load("./chef.glb", (g) => {
   //
   // On vise donc le buste : ce qui est à `cible` tombe au milieu des 1920 px,
   // et le visage remonte dans les 990 premiers, qui sont les seuls conservés.
-  const hauteurCible = Number(new URLSearchParams(location.search).get("cible") ?? 0.22);
-  const recul = Number(new URLSearchParams(location.search).get("recul") ?? 0.56);
+  const hauteurCible = Number(parametres.get("cible") ?? 0.30);
+  const recul = Number(parametres.get("recul") ?? 0.88);
   const cible = new THREE.Vector3(centre.x, hautY - taille.y * hauteurCible, centre.z);
   cam.position.set(centre.x, cible.y, boite.max.z + taille.y * recul);
   cam.lookAt(cible);
