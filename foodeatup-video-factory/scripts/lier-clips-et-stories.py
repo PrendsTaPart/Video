@@ -141,6 +141,18 @@ def main():
                     if not e.get("dureeSecondes"):
                         e["dureeSecondes"] = 37.5
                     mst += 1
+                # L'adresse et le statut vont ensemble, dans les deux sens : le
+                # site refuse un épisode sorti sans vidéo autant qu'une vidéo
+                # sur un épisode pas sorti. C'est un test qui l'a appris, pas
+                # une relecture.
+                #
+                # Le rattrapage est hors du « si l'adresse est neuve » : une
+                # première passe avait posé trente-neuf adresses sans toucher
+                # aux statuts, et la seconde ne les voyait plus puisque leur
+                # adresse n'était plus neuve. Un appariement qui ne se répare
+                # qu'au moment de la pose ne répare jamais le passé.
+                if e.get("videoUrl") and e.get("statut") in ("a_produire", "bloque"):
+                    e["statut"] = "monte"
 
                 st = e.get("story")
                 pose = (st or {}).get("url")

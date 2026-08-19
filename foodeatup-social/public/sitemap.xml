@@ -96,6 +96,11 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://foodeatup-social.lovable.app/episode/ep008-la-pile-de-tickets</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://foodeatup-social.lovable.app/episode/ep010-le-flambage-rate</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -256,6 +261,61 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://foodeatup-social.lovable.app/episode/ep046-le-sel</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://foodeatup-social.lovable.app/episode/ep047-le-camion-dans-la-ruelle</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://foodeatup-social.lovable.app/episode/ep048-la-pyramide-de-sucre</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://foodeatup-social.lovable.app/episode/ep049-le-chien-du-pass</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://foodeatup-social.lovable.app/episode/ep050-la-casserole-brulante</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://foodeatup-social.lovable.app/episode/ep051-la-mousse</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://foodeatup-social.lovable.app/episode/ep052-le-tablier-coince</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://foodeatup-social.lovable.app/episode/ep054-le-pois</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://foodeatup-social.lovable.app/episode/ep055-le-ventilateur</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://foodeatup-social.lovable.app/episode/ep056-le-passager-clandestin</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://foodeatup-social.lovable.app/episode/ep059-l-ardoise</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://foodeatup-social.lovable.app/series/le-coup-de-feu/saison/3</loc>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
@@ -331,13 +391,148 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://foodeatup-social.lovable.app/episode/ep076-le-recomptage</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://foodeatup-social.lovable.app/episode/ep080-le-tiroir-vide</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://foodeatup-social.lovable.app/episode/ep083-le-cri-dans-le-vide</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://foodeatup-social.lovable.app/episode/ep085-le-ballon-qui-se-degonfle</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://foodeatup-social.lovable.app/episode/ep087-les-trois-tablettes</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://foodeatup-social.lovable.app/episode/ep088-une-etoile</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://foodeatup-social.lovable.app/episode/ep089-le-bocal-presque-vide</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://foodeatup-social.lovable.app/series/le-coup-de-feu/saison/4</loc>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://foodeatup-social.lovable.app/episode/ep091-le-petard-dans-le-tiramisu</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://foodeatup-social.lovable.app/episode/ep093-le-chef-part-a-la-peche</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://foodeatup-social.lovable.app/episode/ep099-le-repondeur-prehistorique</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://foodeatup-social.lovable.app/episode/ep100-l-influenceur-au-ring-light</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://foodeatup-social.lovable.app/episode/ep103-le-car-de-40-sans-reservation</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://foodeatup-social.lovable.app/episode/ep108-le-poulpe-du-pass</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://foodeatup-social.lovable.app/episode/ep111-l-imprimante-3d-qui-deraille</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://foodeatup-social.lovable.app/episode/ep112-le-casque-de-realite-augmentee</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://foodeatup-social.lovable.app/episode/ep114-la-chore-pendant-que-ca-brule</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://foodeatup-social.lovable.app/episode/ep119-la-mascotte-poulet-et-le-vent</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://foodeatup-social.lovable.app/series/le-coup-de-feu/saison/5</loc>
     <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://foodeatup-social.lovable.app/episode/ep122-comme-d-habitude</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://foodeatup-social.lovable.app/episode/ep125-le-client-qui-refait-le-plan-de-salle</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://foodeatup-social.lovable.app/episode/ep128-saint-valentin-surbookee</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://foodeatup-social.lovable.app/episode/ep129-premier-jour-de-terrasse-4-degres</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://foodeatup-social.lovable.app/episode/ep130-fete-de-la-musique</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://foodeatup-social.lovable.app/episode/ep131-rentree-tout-le-monde-est-encore-en-vacances</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://foodeatup-social.lovable.app/episode/ep141-cuisine-cockpit-spatial</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://foodeatup-social.lovable.app/episode/ep142-duel-a-la-spatule</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://foodeatup-social.lovable.app/episode/ep143-la-commande-de-200-pieces</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://foodeatup-social.lovable.app/episode/ep144-le-proces-du-steak-trop-cuit</loc>
+    <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
