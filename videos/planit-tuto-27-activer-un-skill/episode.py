@@ -41,7 +41,10 @@ EPISODE = Episode(
         Segment("N6",   22.5,   28.5, "6 · Vos skills à vous"),
         Segment("N7",   28.5,   34.5, "7 · Activer d'un geste"),
         Segment("N8",   34.5,   38.0, "8 · Connecteur requis"),
-        Segment("N9",   38.0,   40.2, "9 · Spécialiser"),
+        # L'astuce se pose sur la liste des skills actifs, la capture n'ayant
+        # pas de plan libre à la fin.
+        Segment("N9",    8.0,   12.5, "9 · Trois par agent"),
+        Segment("N10",  38.0,   40.2, "10 · Spécialiser"),
     ],
 )
 
