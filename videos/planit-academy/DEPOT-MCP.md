@@ -13,6 +13,12 @@ durée « 1 min 03 » et `statut: "en_ligne"`, horodaté `majLe`
 Les payloads de la section « Payloads à rejouer » ont donc été rejoués avec
 succès : ils ne sont conservés ci-dessous que comme trace du contenu déposé.
 
+**Mise à jour du 19/08/2026, 09 h.** Dix épisodes de plus déposés — 07, 11, 12,
+13, 14, 21, 22, 23, 25 et 27. `videos_manquantes` annonce **15 déposées /
+28 manquantes**. Les quatre cartes de prompt déclarées par les fiches 07, 12,
+13 et 21 ont été reportées dans `contenuDepose.cartes` via
+`ajouter_carte_prompt`.
+
 ### Deux réserves qui subsistent
 
 1. **`fiche.statut` reste à `a_produire`** sur une fiche déposée, alors que
@@ -24,8 +30,27 @@ succès : ils ne sont conservés ci-dessous que comme trace du contenu déposé.
    oublié » et `ecran-otp` ; la 5 (`utiliser-une-carte-de-prompt`) reçoit
    « Retrouver ses tâches » ; la 6 (`chercher-une-carte-de-prompt`) reçoit
    « Créer une tâche ». Le décalage n'est pas un simple décalage d'indice. **Ne
-   pas se fier à `vignette_spec` pour le titre, le module ni l'écran** — les
-   épisodes 05 et 06 prennent leur `titreVignette` et leur module dans `fiche`.
+   pas se fier à `vignette_spec` pour le titre, le module ni l'écran** — tous
+   les épisodes prennent leur `titreVignette` et leur module dans `fiche`.
+   Confirmé sur les dix épisodes du 19/08 : la fiche 07 (« Enregistrer sa
+   propre carte ») reçoit `titreCourt` « Suivre une exécution » et le module
+   *Tâches* au lieu de *Bibliothèque de prompts* ; la 27 (« Activer un skill »)
+   reçoit « Activer ses plugins ». Dans `vignette`, le bloc décrit l'écran de
+   la **capture n°** portant ce numéro, pas celui de la fiche.
+
+### Une réserve de contenu, à voir avec l'équipe produit
+
+Les fiches **21 · 22 · 23 · 25** parlent de « déposer des documents », de
+« fichiers » et d'« indexation ». L'application ne propose rien de tel : la
+base de connaissance se remplit par un **entretien en huit sections**, mené par
+l'assistant ou rempli à la main. Les `commentCaMarche` de ces quatre fiches
+(« Déposez vos fichiers », « Attendez la pastille indexé ») ne décrivent aucun
+écran existant.
+
+Les vidéos ont été montées **sur l'application réelle**, pas sur le texte des
+fiches : la voix off parle de sections et d'entretien. Reste à corriger le
+texte des fiches côté produit — promesse, `commentCaMarche`, et la carte de
+prompt de la 21 qui dit « en te basant uniquement sur mes documents ».
 
 ### Ce qui n'a toujours pas d'outil d'écriture
 

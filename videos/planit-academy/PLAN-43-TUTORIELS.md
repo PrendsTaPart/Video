@@ -5,11 +5,21 @@ Video** (`tutoriel_lister` → 43 fiches, toutes en statut `a_produire`) et sur 
 fonctionnalités réellement présentes dans le dépôt `PrendsTaPart/planit-app`
 (lecture seule).
 
-**État au 19/08/2026** : 5 / 43 produits, montés et déposés — tutoriels **00**
-« Créer son compte », **01** « Se connecter », **02** « Retrouver son mot de
-passe », **05** « Utiliser une carte de prompt » et **06** « Chercher la bonne
-carte de prompt ». Les cinq fiches sont `en_ligne` ; `videos_manquantes` annonce
-**5 déposées / 38 manquantes**.
+**État au 19/08/2026** : 15 / 43 produits, montés et déposés — **00** « Créer
+son compte », **01** « Se connecter », **02** « Retrouver son mot de passe »,
+**05** « Utiliser une carte de prompt », **06** « Chercher la bonne carte de
+prompt », **07** « Enregistrer sa propre carte », **11** « Suivre ses tâches »,
+**12** « Brancher Google », **13** « Brancher un serveur MCP », **14** « Gérer
+ses connecteurs », **21** « Déposer ses documents », **22** « Organiser sa base
+de connaissance », **23** « Mettre à jour un document », **25** « Retirer un
+document » et **27** « Activer un skill ». Les quinze fiches sont `en_ligne` ;
+`videos_manquantes` annonce **15 déposées / 28 manquantes**.
+
+Les dix derniers sont montés depuis les captures téléversées le 19/08 (voir
+§ 3, « Les captures et leur numérotation »). Deux captures restent de côté,
+faute de fiche correspondante : « Affichage du profil » et « Édition du
+profil » décrivent le compte *utilisateur*, alors que les fiches 32 · 33 · 34
+portent sur l'avatar 3D de l'*agent*.
 
 ---
 
@@ -136,14 +146,37 @@ lequel un utilisateur découvre le produit, et donc l'ordre de production.
 > **« enregistrements d'écran »** (`1HTE6WPmD52qBSV0t-uYKF1a-OGbmtBgD`). Chaque
 > fichier y est numéroté selon la liste de la personne qui filme — cette
 > numérotation **ne correspond pas** aux numéros de tutoriel : rattacher chaque
-> capture à sa fiche **par son contenu**, pas par son titre. Relevé du
-> 19/08/2026 : « Vidéo 2 » → tuto 01, « Vidéo 3 » → tuto 02, « Vidéo 6 »
-> (création et modification d'une tâche) → tuto **05**, « Vidéo 9 » (liste des
-> prompts et recherche) → tuto **06**.
+> capture à sa fiche **par son contenu**, pas par son titre.
+>
+> **Relevé complet au 19/08/2026** (17 captures reçues, 15 montées) :
+>
+> | Capture | Contenu à l'écran | Fiche |
+> |---|---|---|
+> | Vidéo 2 | Connexion | 01 |
+> | Vidéo 3 | Mot de passe oublié | 02 |
+> | Vidéo 5 | Liste des tâches et filtres | **11** |
+> | Vidéo 6 | Création et modification d'une tâche | **05** |
+> | Vidéo 9 | Liste des prompts et recherche | **06** |
+> | Vidéo 10 | Création d'un prompt | **07** |
+> | Vidéo 12 | Connexion des services Google | **12** |
+> | Vidéo 13 | Connexion d'un serveur MCP | **13** |
+> | Vidéo 14 | Fiche d'un connecteur | **14** |
+> | Vidéo 21 | Sections de la base de connaissance | **21** |
+> | Vidéo 22 | Entretien mené par l'assistant | **22** |
+> | Vidéo 23 | Aperçu et modification d'une section | **23** |
+> | Vidéo 24 | Réinitialisation de la base | **25** |
+> | Vidéo 26 | Liste et gestion des Skills | **27** |
+> | Vidéo 30 | Affichage du profil | *aucune* |
+> | Vidéo 31 | Édition du profil | *aucune* |
+>
+> Les deux dernières sont **en attente** : elles montrent le compte
+> *utilisateur*, quand les fiches 32 · 33 · 34 traitent de l'avatar 3D de
+> l'*agent*. Il manque donc une fiche « profil utilisateur » au plan des 43.
 >
 > Les captures récentes sont en **392 × 852** et sonores, sans filigrane CapCut :
-> le recadrage est `crop=392:824:0:28` (barre de statut Android), contre
-> `crop=590:1180:0:80` pour les trois premières.
+> le recadrage est `crop=392:824:0:28` (barre de statut Android). La « Vidéo 24 »
+> est en **590 × 1280** → `crop=590:1236:0:44`. Les trois premières captures
+> utilisaient `crop=590:1180:0:80`.
 
 Tout le reste est automatisé. **Seule la capture d'écran demande un téléphone et
 un compte dans le bon état.** Elle se fait donc en **lots**, une session de
@@ -190,10 +223,10 @@ satisfait les dépendances.
 | Vague | Lots | Tutoriels | Nb | Sortie |
 |---|---|---|---:|---|
 | 1 — Ouvrir la porte | A | 0 · 1 · 2 · 3 | 4 | **0 · 1 · 2 faits**, reste 3 |
-| 2 — Brancher | B | 12 · 13 · 14 | 3 | |
-| 3 — Faire connaissance | C | 21 → 25 | 5 | |
-| 4 — Parler aux agents | D · E · F | 15-20 · 26-34 | 15 | vague la plus lourde |
-| 5 — Faire travailler | G · H · I | 5-11 · 38 | 8 | **5 · 6 faits** (captures hors vague) |
+| 2 — Brancher | B | 12 · 13 · 14 | 3 | **vague terminée** |
+| 3 — Faire connaissance | C | 21 → 25 | 5 | **21 · 22 · 23 · 25 faits**, reste 24 |
+| 4 — Parler aux agents | D · E · F | 15-20 · 26-34 | 15 | **27 fait**, vague la plus lourde |
+| 5 — Faire travailler | G · H · I | 5-11 · 38 | 8 | **5 · 6 · 7 · 11 faits**, reste 8 · 9 · 10 · 38 |
 | 6 — Piloter | J · K · L · M | 4 · 35-37 · 39-42 | 8 | dépend des vagues 4-5 |
 
 **Charge par vidéo, une fois le pipeline en place** : ≈ 10 lignes de voix off
