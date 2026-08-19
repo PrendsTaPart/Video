@@ -28,7 +28,7 @@ R = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 INVENTAIRE = os.path.join(os.path.dirname(R), "foodeatup-social", "data", "series.json")
 DIST = os.path.join(R, "dist")
 BRANCHE = ("https://raw.githubusercontent.com/PrendsTaPart/Video/"
-           "claude/foodeatup-video-factory-wtb7gs/foodeatup-video-factory/dist")
+           "claude/foodeatup-video-production-8slc4o/foodeatup-video-factory/dist")
 
 # Ce que `gen-site-data.py` sort de l'épisode pour le ranger dans contenu.ts.
 # Le chemin inverse : on remet ces champs dans l'épisode de l'inventaire.

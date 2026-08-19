@@ -32,7 +32,11 @@ SOCIAL = R.parent / "foodeatup-social"
 INVENTAIRE = SOCIAL / "data" / "series.json"
 REPRISES = SOCIAL / "data" / "clips-du-site.json"
 
-BRANCHE = "claude/foodeatup-video-factory-wtb7gs"
+# Le nom de la branche est inscrit dans chaque adresse publiée. Ce n'est pas
+# un détail de configuration : mille six cents URL en dépendent, et retirer la
+# branche qu'elles nomment les casse toutes d'un coup. Elle change ici, et
+# partout dans l'inventaire en même temps — jamais l'un sans l'autre.
+BRANCHE = "claude/foodeatup-video-production-8slc4o"
 BRUT = f"https://raw.githubusercontent.com/PrendsTaPart/Video/{BRANCHE}/foodeatup-video-factory/dist"
 
 
@@ -58,8 +62,10 @@ def main():
     facebooks = {p.stem for p in (R / "dist" / "facebook").glob("*.mp4")}
     # `dist/tiktok/` porte les masters de 37,5 s, pas cette famille-là.
     tiktoks = {p.stem for p in (R / "dist" / "tiktok-story").glob("*.mp4")}
+    masters = {p.stem for p in (R / "dist" / "tiktok").glob("*.mp4")}
 
     clips, sts, yts, pys, fbs, tks, bas, deja = 0, 0, 0, 0, 0, 0, 0, 0
+    mst = 0
     films = 0
     for s in d["series"]:
         # Le film assemblé, au niveau de la série. `GeneriqueFilm` ne portait
@@ -121,6 +127,20 @@ def main():
                         deja += 1
                 else:
                     deja += 1
+
+                # Le master de 37,5 s. Il manquait à ce script, et le trou
+                # s'est vu quand une autre session a monté trente-neuf masters
+                # d'un coup : les fichiers étaient là, le site n'en servait
+                # aucun. Un montage sans adresse n'existe pour personne.
+                pose = e.get("videoUrl")
+                url = repris.get("videoUrl") or pose or (
+                    f"{BRUT}/tiktok/{i}.mp4" if i in masters else None
+                )
+                if url and url != pose:
+                    e["videoUrl"] = url
+                    if not e.get("dureeSecondes"):
+                        e["dureeSecondes"] = 37.5
+                    mst += 1
 
                 st = e.get("story")
                 pose = (st or {}).get("url")
@@ -226,9 +246,9 @@ def main():
     total_py = sum(1 for e in eps if (e.get("videoYoutube") or {}).get("url"))
     total_fb = sum(1 for e in eps if (e.get("storyFacebook") or {}).get("url"))
     total_tk = sum(1 for e in eps if (e.get("videoTiktok") or {}).get("url"))
-    print(f"{clips} clip(s), {sts} story(ies), {yts} Short(s), {pys} paysage(s), "
-          f"{fbs} Facebook, {tks} TikTok et {bas} bande(s)-annonce(s) reliés — "
-          f"{deja} clips l'étaient déjà")
+    print(f"{clips} clip(s), {mst} master(s), {sts} story(ies), {yts} Short(s), "
+          f"{pys} paysage(s), {fbs} Facebook, {tks} TikTok et "
+          f"{bas} bande(s)-annonce(s) reliés — {deja} clips l'étaient déjà")
     print(f"inventaire : {total_clips} clips, {total_st} stories, {total_yt} Shorts, "
           f"{total_py} paysages, {total_fb} Facebook, {total_tk} TikTok "
           f"sur {len(eps)} épisodes")

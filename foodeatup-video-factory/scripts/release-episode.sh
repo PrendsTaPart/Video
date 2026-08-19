@@ -6,7 +6,7 @@ set -euo pipefail
 
 R="$(cd "$(dirname "$0")/.." && pwd)"
 EP="${1:?usage: release-episode.sh EPxxx}"
-BASE="${FEU_BASE:-claude/foodeatup-video-factory-wtb7gs}"
+BASE="${FEU_BASE:-claude/foodeatup-video-production-8slc4o}"
 CLAIM="$R/state/claims/$EP.json"
 
 [ -e "$CLAIM" ] || { echo "$EP n'est pas réservé."; exit 0; }

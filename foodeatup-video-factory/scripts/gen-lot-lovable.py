@@ -19,7 +19,7 @@ R = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SOCIAL = os.path.join(os.path.dirname(R), "foodeatup-social")
 TAILLE = 10
 PHOTO = ("https://raw.githubusercontent.com/PrendsTaPart/Video/"
-         "claude/foodeatup-video-factory-wtb7gs/foodeatup-social/"
+         "claude/foodeatup-video-production-8slc4o/foodeatup-social/"
          "public/brand/chef-foodeatup.jpg")
 
 ENTETE = """# Lot {n} — vignettes des épisodes {premier} à {dernier}
