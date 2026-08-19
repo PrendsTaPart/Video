@@ -1,35 +1,43 @@
-# Dépôt sur le MCP Plan'It Video — état et payloads à rejouer
+# Dépôt sur le MCP Plan'It Video — état et payloads
 
-## ⚠️ Les écritures du MCP n'ont pas persisté
+## ✅ Correctif serveur livré — les écritures persistent
 
-Les six appels d'écriture ont tous renvoyé un accusé de succès avec `majLe`
-horodaté, **mais rien n'est stocké côté serveur.**
+**Relevé du 19/08/2026.** Les écritures du 18/08 ne persistaient pas (voir plus
+bas). Ce n'est plus le cas : `tutoriel_spec(numero: 0)` rend un `contenuDepose`
+complet — `videoUrl`, `vignetteUrl`, `transcription`, les douze chapitres, la
+durée « 1 min 03 » et `statut: "en_ligne"`, horodaté `majLe`
+`2026-08-18T14:39:12Z`. `tutoriel_lister` donne les fiches **0, 1 et 2** en
+`en_ligne` avec vidéo et vignette, et `videos_manquantes` annonce
+**3 déposées / 40 manquantes**.
 
-Vérification faite le 2026-08-18 à 14h10 : écriture puis lecture immédiate.
+Les payloads de la section « Payloads à rejouer » ont donc été rejoués avec
+succès : ils ne sont conservés ci-dessous que comme trace du contenu déposé.
 
-```
-definir_statut(numero: 1, statut: "en_ligne")
-  → { "statut": "en_ligne", "majLe": "2026-08-18T14:10:36.307Z" }   ✅ accusé
+### Deux réserves qui subsistent
 
-tutoriel_spec(numero: 1)
-  → fiche.statut = "a_produire"                                     ❌ inchangé
-  → contenuDepose = { chapitres: [], cartes: [], pointsCles: [],
-                      prerequis: [], ressources: [], promptsMarketplace: [] }
-     — ni videoUrl, ni vignetteUrl, ni transcription
-```
+1. **`fiche.statut` reste à `a_produire`** sur une fiche déposée, alors que
+   `contenuDepose.statut` vaut `en_ligne`. Deux champs pour une seule notion —
+   c'est `contenuDepose` (et `tutoriel_lister`) qui fait foi. À clarifier côté
+   serveur.
+2. **Les `vignette_spec` ne correspondent pas à leur fiche.** Constaté sur
+   trois fiches : la 3 (`premiers-reglages`) reçoit `titreCourt` « Mot de passe
+   oublié » et `ecran-otp` ; la 5 (`utiliser-une-carte-de-prompt`) reçoit
+   « Retrouver ses tâches » ; la 6 (`chercher-une-carte-de-prompt`) reçoit
+   « Créer une tâche ». Le décalage n'est pas un simple décalage d'indice. **Ne
+   pas se fier à `vignette_spec` pour le titre, le module ni l'écran** — les
+   épisodes 05 et 06 prennent leur `titreVignette` et leur module dans `fiche`.
 
-`videos_manquantes` confirme : **`deposees: 0`, `manquantes: 43`**, alors que les
-trois vidéos ont été déposées.
+### Ce qui n'a toujours pas d'outil d'écriture
 
-Autre indice, visible dès les premiers appels : chaque réponse ne contient **que
-le champ qu'on vient d'écrire**, jamais les précédents. La transcription déposée
-sur la fiche 0 à 12h41 avait déjà disparu de la réponse du `enregistrer_video`
-de 14h07 sur la même fiche.
+`pointsCles` · `prerequis` · `ressources` · `promptsMarketplace` apparaissent
+dans `contenuDepose` mais aucun des outils du MCP ne les remplit. Seul `cartes`
+est adressable, via `ajouter_carte_prompt`.
 
-**À faire côté serveur MCP** : vérifier que `enregistrer_video`,
-`enregistrer_vignette`, `enregistrer_transcription` et `definir_statut`
-committent réellement en base. Les payloads ci-dessous sont prêts à être rejoués
-tels quels une fois le correctif livré.
+---
+
+## Trace du dépôt initial (18/08/2026) — écritures sans persistance
+
+Ce qui suit décrit l'incident d'origine, conservé pour mémoire.
 
 ---
 

@@ -5,8 +5,10 @@ Video** (`tutoriel_lister` → 43 fiches, toutes en statut `a_produire`) et sur 
 fonctionnalités réellement présentes dans le dépôt `PrendsTaPart/planit-app`
 (lecture seule).
 
-**État au démarrage** : 1 / 43 produit — tutoriel 00 « Créer son compte »
-(`videos/planit-tuto-00-creer-son-compte/`).
+**État au 19/08/2026** : 5 / 43 montés — tutoriels **00** « Créer son compte »,
+**01** « Se connecter », **02** « Retrouver son mot de passe », **05** « Utiliser
+une carte de prompt » et **06** « Chercher la bonne carte de prompt ». Les trois
+premiers sont déposés et en ligne sur leur fiche MCP.
 
 ---
 
@@ -129,6 +131,19 @@ lequel un utilisateur découvre le produit, et donc l'ordre de production.
 
 ## 3. Les captures d'écran — le vrai goulot
 
+> **Où sont les captures.** Elles arrivent dans le dossier Drive partagé
+> **« enregistrements d'écran »** (`1HTE6WPmD52qBSV0t-uYKF1a-OGbmtBgD`). Chaque
+> fichier y est numéroté selon la liste de la personne qui filme — cette
+> numérotation **ne correspond pas** aux numéros de tutoriel : rattacher chaque
+> capture à sa fiche **par son contenu**, pas par son titre. Relevé du
+> 19/08/2026 : « Vidéo 2 » → tuto 01, « Vidéo 3 » → tuto 02, « Vidéo 6 »
+> (création et modification d'une tâche) → tuto **05**, « Vidéo 9 » (liste des
+> prompts et recherche) → tuto **06**.
+>
+> Les captures récentes sont en **392 × 852** et sonores, sans filigrane CapCut :
+> le recadrage est `crop=392:824:0:28` (barre de statut Android), contre
+> `crop=590:1180:0:80` pour les trois premières.
+
 Tout le reste est automatisé. **Seule la capture d'écran demande un téléphone et
 un compte dans le bon état.** Elle se fait donc en **lots**, une session de
 capture couvrant plusieurs tutoriels d'un même écran.
@@ -173,11 +188,11 @@ satisfait les dépendances.
 
 | Vague | Lots | Tutoriels | Nb | Sortie |
 |---|---|---|---:|---|
-| 1 — Ouvrir la porte | A | 0 · 1 · 2 · 3 | 4 | **0 fait**, 3 restants |
+| 1 — Ouvrir la porte | A | 0 · 1 · 2 · 3 | 4 | **0 · 1 · 2 faits**, reste 3 |
 | 2 — Brancher | B | 12 · 13 · 14 | 3 | |
 | 3 — Faire connaissance | C | 21 → 25 | 5 | |
 | 4 — Parler aux agents | D · E · F | 15-20 · 26-34 | 15 | vague la plus lourde |
-| 5 — Faire travailler | G · H · I | 5-11 · 38 | 8 | |
+| 5 — Faire travailler | G · H · I | 5-11 · 38 | 8 | **5 · 6 faits** (captures hors vague) |
 | 6 — Piloter | J · K · L · M | 4 · 35-37 · 39-42 | 8 | dépend des vagues 4-5 |
 
 **Charge par vidéo, une fois le pipeline en place** : ≈ 10 lignes de voix off
