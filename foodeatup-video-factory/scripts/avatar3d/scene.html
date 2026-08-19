@@ -1,0 +1,84 @@
+<!doctype html><meta charset="utf-8">
+<style>html,body{margin:0;background:#FCF9E6;overflow:hidden}canvas{display:block}</style>
+<script type="importmap">{"imports":{"three":"./node_modules/three/build/three.module.js","three/addons/":"./node_modules/three/examples/jsm/"}}</script>
+<script type="module">
+import * as THREE from "three";
+import { GLTFLoader } from "three/addons/loaders/GLTFLoader.js";
+import { MeshoptDecoder } from "three/addons/libs/meshopt_decoder.module.js";
+
+const L = 1080, H = 1920;
+const scene = new THREE.Scene();
+scene.background = new THREE.Color("#FCF9E6");
+const cam = new THREE.PerspectiveCamera(28, L/H, 0.01, 100);
+const rend = new THREE.WebGLRenderer({antialias:true, preserveDrawingBuffer:true});
+rend.setSize(L, H); rend.setPixelRatio(1);
+rend.outputColorSpace = THREE.SRGBColorSpace;
+document.body.appendChild(rend.domElement);
+
+scene.add(new THREE.HemisphereLight(0xffffff, 0x8899aa, 2.2));
+const key = new THREE.DirectionalLight(0xffffff, 2.0); key.position.set(1.2, 2.0, 2.2); scene.add(key);
+const fill = new THREE.DirectionalLight(0xffe8c0, 0.7); fill.position.set(-1.6, 0.8, 1.2); scene.add(fill);
+
+window.morphs = {};           // nom → liste de [mesh, index]
+window.pret = false;
+
+const loader = new GLTFLoader();
+loader.setMeshoptDecoder(MeshoptDecoder);
+loader.load("./chef.glb", (g) => {
+  const root = g.scene;
+  window.racine = root;
+  scene.add(root);
+  root.traverse((o) => {
+    if (o.isMesh && o.morphTargetDictionary) {
+      for (const [nom, idx] of Object.entries(o.morphTargetDictionary)) {
+        (window.morphs[nom] ||= []).push([o, idx]);
+      }
+    }
+  });
+  // Cadrage : on vise la tête, pas le centre du modèle. Le buste occupe le
+  // cadre du bas ; on remonte la caméra à hauteur d'yeux.
+  const boite = new THREE.Box3().setFromObject(root);
+  const taille = boite.getSize(new THREE.Vector3());
+  const centre = boite.getCenter(new THREE.Vector3());
+  const hautY = boite.max.y;
+  // Le cadrage vise le SEGMENT D, pas le plein cadre. `build-episode.sh` ne
+  // garde que `crop=1080:960:0:30` — le haut du rendu. Cadré au centre de
+  // l'image, l'avatar y perdait sa bouche : il ne restait que les yeux et la
+  // toque, sur un plan censé montrer quelqu'un qui parle.
+  //
+  // On vise donc le buste : ce qui est à `cible` tombe au milieu des 1920 px,
+  // et le visage remonte dans les 990 premiers, qui sont les seuls conservés.
+  const hauteurCible = Number(new URLSearchParams(location.search).get("cible") ?? 0.22);
+  const recul = Number(new URLSearchParams(location.search).get("recul") ?? 0.56);
+  const cible = new THREE.Vector3(centre.x, hautY - taille.y * hauteurCible, centre.z);
+  cam.position.set(centre.x, cible.y, boite.max.z + taille.y * recul);
+  cam.lookAt(cible);
+  root.traverse((o) => {
+    if (o.isBone && ["Head","Neck","Spine1","Spine2"].includes(o.name)) {
+      window.os[o.name] = o;
+      window.reposOs[o.name] = [o.rotation.x, o.rotation.y, o.rotation.z];
+    }
+  });
+  window.infos = {taille: taille.toArray(), morphs: Object.keys(window.morphs).length,
+                  os: Object.keys(window.os)};
+  window.pret = true;
+});
+
+// Les os qu'on pilote, et leur pose d'origine. Les rotations envoyées par
+// `visemes.py` sont des ÉCARTS par rapport à cette pose : les appliquer en
+// absolu casserait le rig, qui n'a pas la tête à zéro au repos.
+window.os = {};
+window.reposOs = {};
+
+window.poser = (m, os) => {
+  for (const liste of Object.values(window.morphs))
+    for (const [mesh, i] of liste) mesh.morphTargetInfluences[i] = 0;
+  for (const [nom, v] of Object.entries(m || {}))
+    for (const [mesh, i] of (window.morphs[nom] || [])) mesh.morphTargetInfluences[i] = v;
+  for (const [nom, r] of Object.entries(os || {})) {
+    const b = window.os[nom], d = window.reposOs[nom];
+    if (b && d) b.rotation.set(d[0] + r[0], d[1] + r[1], d[2] + r[2]);
+  }
+  rend.render(scene, cam);
+};
+</script>

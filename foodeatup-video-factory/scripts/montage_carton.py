@@ -19,6 +19,7 @@ Le carton est le même objet à chaque fois :
     logo FoodEatUp
     la ou les lignes de pied — c'est la seule chose qui distingue les réseaux
 """
+import os
 import json
 import pathlib
 import subprocess
@@ -262,7 +263,10 @@ def main(g, cibles):
             print(f"  {cle}  pas de montage source — rien à porter")
             rates += 1
             continue
-        if dest.exists() and dest.stat().st_size > 0:
+        # `REFAIRE=1` force le remontage. Sans ça, corriger le montage ne
+        # change rien aux épisodes déjà sortis : ils sont sautés en silence et
+        # on croit la correction appliquée alors que l'ancien fichier est là.
+        if dest.exists() and dest.stat().st_size > 0 and not os.environ.get("REFAIRE"):
             sautes += 1
             continue
         try:

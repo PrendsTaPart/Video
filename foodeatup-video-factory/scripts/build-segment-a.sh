@@ -67,16 +67,53 @@ read -r DUCK_DEB DUCK_PLEIN DUCK_FIN DUCK_HAUT <<<"$(python3 -c "
 p=$PUNCH; d=$DUREE_PUNCH; fin=min($DUREE_A-0.10, p+d+0.15)
 print(f'{p-0.40:.2f} {p-0.15:.2f} {fin:.2f} {min($DUREE_A,fin+0.10):.2f}')")"
 DUCK_NIV=0.16                    # -16 dB
+# La musique du segment A. Le master n'en avait aucune avant les 9,5 s : les
+# quatre premières secondes sortaient à -91 dBFS, un silence total sous l'image
+# d'ouverture. Le lit reprend le MÊME morceau que le segment D, au même niveau
+# et à sa position dans le temps du master — `atrim=0:9,5` ici, `16:26` là-bas —
+# pour que ce soit une seule musique traversant l'épisode, pas deux morceaux.
+BED_GAIN=0.224                   # -13 dB, comme le lit du segment D
+DUCK_MUS=0.45                    # la musique s'efface moins que le clip : elle
+                                 # est déjà 13 dB dessous
 echo "  punchline : ${DUREE_PUNCH}s à ${PUNCH}s · duck ${DUCK_DEB}→${DUCK_HAUT}"
 
 # Tous les rendus Higgsfield n'ont pas de piste son — EP001 n'en a aucune. Sans
 # entrée [0:a] le filtergraph refuse de s'initialiser, alors on lui donne du
 # silence : le duck s'applique dessus sans rien changer, la punchline passe
 # seule, et le script reste le même pour les deux cas.
+# --- Le clip plus court que la fenêtre ---------------------------------------
+# Deux cent quinze clips sur deux cent seize font 10,04 s et remplissent les
+# 9,5 s sans rien faire. EP001 fait 7,0 s — le premier épisode de la série, et
+# le seul concerné.
+#
+# Sans traitement, ffmpeg n'a plus d'images après 7 s : la dernière gèle
+# pendant deux secondes et demie. À l'écran ce n'est pas une pause, c'est une
+# panne — on croit que la vidéo s'est coupée.
+#
+# On ne gèle donc pas, on RALENTIT la fin. Le clip joue à vitesse normale
+# jusqu'au pivot, puis s'étire pour finir pile sur la fenêtre. Le gag — le
+# chien qui attrape la frite — reste à sa vitesse, et le mouvement ne s'arrête
+# jamais. `tpad` derrière ne sert que de filet contre les arrondis.
+DUREE_CLIP="$(ffprobe -v error -show_entries format=duration -of csv=p=0 "$HOOK")"
+read -r PIVOT ETIRE COURT <<<"$(python3 -c "
+c, f = $DUREE_CLIP, $DUREE_A
+if c >= f - 0.05:
+    print('0 1 0')
+else:
+    # on garde intacts les deux tiers du clip, on étire le reste
+    piv = c * 0.62
+    print(f'{piv:.3f} {(f - piv) / (c - piv):.4f} 1')")"
+if [ "$COURT" = "1" ]; then
+  echo "  clip court : ${DUREE_CLIP}s pour ${DUREE_A}s -> ralenti ×${ETIRE} après ${PIVOT}s"
+  RAMPE="setpts='if(lt(T,$PIVOT),PTS,($PIVOT+(T-$PIVOT)*$ETIRE)/TB)',fps=30,tpad=stop_mode=clone:stop_duration=$DUREE_A,"
+else
+  RAMPE="tpad=stop_mode=clone:stop_duration=$DUREE_A,"
+fi
+
 if [ "$(ffprobe -v error -select_streams a -show_entries stream=index -of csv=p=0 "$HOOK" | wc -l)" -eq 0 ]; then
   echo "  clip muet : piste de silence ajoutée"
   SON_CLIP=(-f lavfi -t "$DUREE_A" -i "anullsrc=r=48000:cl=mono")
-  SRC_A="3:a"
+  SRC_A="4:a"
 else
   SON_CLIP=()
   SRC_A="0:a"
@@ -86,9 +123,10 @@ ffmpeg -v error \
  -i "$HOOK" \
  -i "$PUNCH_WAV" \
  -i "$R/templates/logo_foodeatup.png" \
+ -i "$R/templates/bgm.mp3" \
  "${SON_CLIP[@]}" \
  -filter_complex "\
- [0:v]trim=0:$DUREE_A,setpts=PTS-STARTPTS,fps=30,\
+ [0:v]trim=0:$DUREE_A,setpts=PTS-STARTPTS,${RAMPE}fps=30,\
 scale=1080:1920:force_original_aspect_ratio=increase,crop=1080:1920[v];\
  [v]drawtext=fontfile='$POLICE':textfile='$TEXTE_FIC':fontsize=62:fontcolor=white:\
 borderw=6:bordercolor=black@0.8:x=(w-text_w)/2:y=h*0.13:\
@@ -99,7 +137,11 @@ volume='if(lt(t,$DUCK_DEB),1,if(lt(t,$DUCK_PLEIN),1-(1-$DUCK_NIV)*(t-$DUCK_DEB)/
 if(lt(t,$DUCK_FIN),$DUCK_NIV,if(lt(t,$DUCK_HAUT),$DUCK_NIV+(1-$DUCK_NIV)*(t-$DUCK_FIN)/($DUCK_HAUT-$DUCK_FIN),1))))':eval=frame[a0];\
  [1:a]adelay=$(python3 -c "print(int($PUNCH*1000))")|$(python3 -c "print(int($PUNCH*1000))"),\
 apad,atrim=0:$DUREE_A,asetpts=PTS-STARTPTS[a1];\
- [a0][a1]amix=inputs=2:duration=first:dropout_transition=0:normalize=0[a]" \
+ [3:a]aresample=48000,atrim=0:$DUREE_A,asetpts=PTS-STARTPTS,volume=$BED_GAIN,\
+afade=t=in:st=0:d=0.8,\
+volume='if(lt(t,$DUCK_DEB),1,if(lt(t,$DUCK_PLEIN),1-(1-$DUCK_MUS)*(t-$DUCK_DEB)/($DUCK_PLEIN-$DUCK_DEB),\
+if(lt(t,$DUCK_FIN),$DUCK_MUS,if(lt(t,$DUCK_HAUT),$DUCK_MUS+(1-$DUCK_MUS)*(t-$DUCK_FIN)/($DUCK_HAUT-$DUCK_FIN),1))))':eval=frame[a2];\
+ [a0][a1][a2]amix=inputs=3:duration=first:dropout_transition=0:normalize=0[a]" \
  -map "[vo]" -map "[a]" -t $DUREE_A \
  -c:v libx264 -preset medium -crf 18 -r 30 -c:a aac -b:a 192k -ar 48000 \
  "$R/build/${EP}_A.mp4" -y

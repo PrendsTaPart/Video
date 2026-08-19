@@ -53,6 +53,8 @@ SORTIE = R / "dist" / "stories"
 
 L, H = 1080, 1920
 DUREE = 10.0
+BGM = R / "templates" / "bgm.mp3"
+BED_GAIN = 0.224                 # -13 dB, le même niveau que le lit du master
 HOOK_IN, HOOK_OUT = 0.6, 3.6
 PUNCH_IN = 5.6
 FONDU = 0.35
@@ -127,6 +129,27 @@ def a_du_son(clip):
 def story(ep, hook, punch, clip, dest):
     muet = not a_du_son(clip)
     piste = "2:a" if muet else "0:a"
+    i_bgm = 3 if muet else 2
+
+    # Le clip plus court que la story. EP001 fait 7,0 s pour une fenêtre de
+    # 10,0 s : sans traitement, ffmpeg n'a plus d'images après 7 s et la
+    # dernière gèle pendant trois secondes. À l'écran on croit que la story
+    # s'est coupée.
+    #
+    # On ralentit la fin plutôt que de geler : le clip garde sa vitesse sur ses
+    # deux premiers tiers — le gag reste intact — puis s'étire pour finir pile
+    # sur la fenêtre. Le mouvement ne s'arrête jamais.
+    duree_clip = float(subprocess.run(
+        ["ffprobe", "-v", "error", "-show_entries", "format=duration",
+         "-of", "csv=p=0", str(clip)], capture_output=True, text=True).stdout.strip() or DUREE)
+    if duree_clip < DUREE - 0.05:
+        piv = duree_clip * 0.62
+        etire = (DUREE - piv) / (duree_clip - piv)
+        rampe = (f"setpts='if(lt(T,{piv:.3f}),PTS,({piv:.3f}+(T-{piv:.3f})*{etire:.4f})/TB)',"
+                 f"fps=30,tpad=stop_mode=clone:stop_duration={DUREE},")
+        print(f"    {ep} : clip de {duree_clip:.2f}s -> ralenti ×{etire:.2f} après {piv:.2f}s")
+    else:
+        rampe = ""
     fics = []
 
     def fichier(txt):
@@ -149,7 +172,7 @@ def story(ep, hook, punch, clip, dest):
 
     graphe = (
         f"[0:v]scale={L}:{H}:force_original_aspect_ratio=increase,"
-        f"crop={L}:{H},setsar=1,fps=30,trim=0:{DUREE},setpts=PTS-STARTPTS[v0];"
+        f"crop={L}:{H},setsar=1,fps=30,{rampe}trim=0:{DUREE},setpts=PTS-STARTPTS[v0];"
 
         # Les deux textes sont calés à gauche sur la même marge. Centrer un
         # bloc de deux lignes de longueurs différentes donne un bord gauche en
@@ -176,7 +199,15 @@ def story(ep, hook, punch, clip, dest):
         # réencode en distordant. Le limiteur ramène sous -1 dBTP, la même
         # borne que le contrôle du master. Réglé à -2 dBFS et non -1 :
         # l'encodeur AAC dépasse la consigne d'un demi-décibel, mesuré.
-        f"[{piste}]aresample=48000,atrim=0:{DUREE},asetpts=PTS-STARTPTS,"
+        # La musique. Sans elle, la story d'EP001 — seul clip muet de la
+        # série — sortait à -91 dBFS de bout en bout : dix secondes d'image
+        # sans un son. Le lit est le même morceau que le master, pris au même
+        # endroit du temps, pour que story et épisode sonnent de la famille.
+        f"[{i_bgm}:a]aresample=48000,atrim=0:{DUREE},asetpts=PTS-STARTPTS,"
+        f"volume={BED_GAIN},afade=t=in:st=0:d=0.8,"
+        f"afade=t=out:st={DUREE-0.7:.2f}:d=0.7[bed];"
+        f"[{piste}]aresample=48000,atrim=0:{DUREE},asetpts=PTS-STARTPTS[clip];"
+        f"[clip][bed]amix=inputs=2:duration=first:dropout_transition=0:normalize=0,"
         f"loudnorm=I=-14:TP=-1:LRA=11,alimiter=limit=0.794:level=disabled,"
         f"apad,atrim=0:{DUREE}[aout]"
     )
@@ -186,6 +217,7 @@ def story(ep, hook, punch, clip, dest):
     if muet:
         cmd += ["-f", "lavfi", "-t", str(DUREE),
                 "-i", "anullsrc=r=48000:cl=stereo"]
+    cmd += ["-i", str(BGM)]
     cmd += ["-filter_complex", graphe,
             "-map", "[vout]", "-map", "[aout]",
            "-c:v", "libx264", "-preset", "medium", "-crf", "20",
@@ -263,7 +295,10 @@ def main(cibles):
             print(f"  {ep}  pas de clip")
             sautes += 1
             continue
-        if dest.exists() and dest.stat().st_size > 0:
+        # `REFAIRE=1` force le remontage. Sans ça, corriger le script ne sert à
+        # rien sur les épisodes déjà sortis : ils sont sautés en silence, et on
+        # croit la correction appliquée alors que le vieux fichier est intact.
+        if dest.exists() and dest.stat().st_size > 0 and not os.environ.get("REFAIRE"):
             print(f"  {ep}  déjà monté")
             sautes += 1
             continue

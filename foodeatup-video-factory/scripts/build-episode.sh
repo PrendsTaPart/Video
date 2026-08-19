@@ -37,6 +37,13 @@ BAND_H=192         # bandeau de marque : 0,5/5, le logo y est centré
 # reste un script plus court : au-delà d'atempo 1,12 l'accélération s'entend, et
 # élargir la respiration rapproche de ce seuil.
 RESPIR="${RESPIR:-0.6}"
+# Le carton B/C. `COMMUN_sting_BC_huit.mp4` dit « huit logiciels » au lieu de
+# « dix » — voix, titre incrusté et grille de pastilles refaits ensemble. Il
+# n'est pas encore le défaut : cinquante et un masters portent l'ancien, et
+# mélanger les deux dans une même saison se verrait.
+#
+#   STING=COMMUN_sting_BC_huit.mp4 ./scripts/build-episode.sh EP001
+STING="${STING:-COMMUN_sting_BC.mp4}"
 # Coque d'appareil : le screencast s'incruste dans une tablette. Les épisodes
 # du module Caisse POS prennent la variante posée sur un tiroir-caisse.
 MODULE="$(python3 -c "import json;print(json.load(open('$R/state/episodes/$EP.json'))['module'])" 2>/dev/null || echo "")"
@@ -50,6 +57,19 @@ echo "  coque  : $COQUE (module $MODULE)"
 
 BED_GAIN=0.224     # -13 dB : cale la musique sur le plancher -28 dBFS de la référence
 SFX_GAIN=2.0       # +6 dB : whoosh audible sous la voix
+# Le whoosh de SORTIE, sur la coupe entre le segment D et le hook de fin.
+#
+# Le contrôle qualité impose une respiration avant la signature — 12 dB sous la
+# voix — pour que l'avatar ne parle pas par-dessus le hook. C'est juste, mais
+# tel quel la couture s'entendait : la voix s'arrêtait, on tombait à -87 dBFS
+# (le silence absolu), puis le hook démarrait net à -20 dB. Un trou, puis une
+# porte qui claque.
+#
+# Deux corrections, aucune ne touche à la respiration elle-même. La queue du
+# lit musical descend maintenant sur 0,85 s au lieu de 0,55 : elle porte
+# l'oreille jusqu'à la coupe au lieu de la lâcher. Et un whoosh discret — le
+# même qu'à l'entrée du segment, deux fois plus bas — masque le raccord.
+SFX_SORTIE=1.0     # 0 dB : moitié du whoosh d'entrée, il accompagne sans annoncer
 
 # --- Calage de l'avatar sur le créneau de 10 s --------------------------------
 # L'avatar fait rarement 10,000 s. Deux cas, deux traitements :
@@ -134,10 +154,11 @@ ffmpeg -v error \
  -i "$R/templates/logo_foodeatup.png" \
  -i "$R/templates/bgm.mp3" \
  -i "$R/templates/sfx_transition.mp3" \
+ -i "$R/templates/sfx_transition.mp3" \
  -loop 1 -t 10 -i "$R/templates/$COQUE.png" \
  -loop 1 -t "$ATTENTE_D" -i "$ATTENTE_PNG" \
  -filter_complex "\
- [6:v]fps=30,crop=1080:$AV_H:0:$AV_CROP_Y,setsar=1,format=yuv420p[attente];\
+ [7:v]fps=30,crop=1080:$AV_H:0:$AV_CROP_Y,setsar=1,format=yuv420p[attente];\
  [0:v]trim=start=$DEBUT,setpts=(PTS-STARTPTS)/$TEMPO,fps=30,\
 crop=1080:$AV_H:0:$AV_CROP_Y,setsar=1,format=yuv420p[parle];\
  [attente][parle]concat=n=2:v=1:a=0,\
@@ -147,7 +168,7 @@ trim=0:10,setpts=PTS-STARTPTS[top];\
  [1:v]fps=30,scale=$ECR_W:$ECR_H,tpad=stop_mode=clone:stop_duration=10,\
 trim=0:10,setpts=PTS-STARTPTS[ecran];\
  [fond][ecran]overlay=$ECR_X:$ECR_Y[avec];\
- [5:v]fps=30,format=rgba[coque];\
+ [6:v]fps=30,format=rgba[coque];\
  [avec][coque]overlay=$COQ_X:$COQ_Y[mid];\
  color=c=$SABLE:s=1080x$BAND_H:r=30,trim=0:10[band];\
  [top][mid][band]vstack=inputs=3[stack];\
@@ -158,9 +179,11 @@ fade=t=out:st=9.70:d=0.30:color=$SABLE,format=yuv420p[v];\
 atempo=$TEMPO,adelay=$RETARD_MS:all=1,apad=whole_dur=10,\
 asetpts=N/SR/TB,volume=1.0[voice];\
  [3:a]aresample=48000,atrim=16:26,asetpts=PTS-STARTPTS,volume=$BED_GAIN,\
-afade=t=in:st=0:d=0.3,afade=t=out:st=8.90:d=0.55[bed];\
+afade=t=in:st=0:d=0.3,afade=t=out:st=8.90:d=0.85[bed];\
  [4:a]aresample=48000,volume=$SFX_GAIN,apad,atrim=0:10,asetpts=PTS-STARTPTS[wh];\
- [voice][bed][wh]amix=inputs=3:duration=first:dropout_transition=0:normalize=0[a]" \
+ [5:a]aresample=48000,volume=$SFX_SORTIE,adelay=9250|9250,apad,atrim=0:10,\
+asetpts=PTS-STARTPTS[wh2];\
+ [voice][bed][wh][wh2]amix=inputs=4:duration=first:dropout_transition=0:normalize=0[a]" \
  -map "[v]" -map "[a]" -t 10 \
  -c:v libx264 -preset medium -crf 18 -r 30 -c:a aac -b:a 192k \
  "$R/build/${EP}_D.mp4" -y
@@ -195,7 +218,7 @@ fi
 # puis le sting de marque (5 s) est collé derrière -> 37,5 s au total.
 cat > "$R/build/${EP}_list.txt" <<EOF
 file '$R/build/${EP}_A.mp4'
-file '$R/templates/COMMUN_sting_BC.mp4'
+file '$R/templates/$STING'
 file '$R/build/${EP}_D.mp4'
 file '$R/templates/COMMUN_E.mp4'
 EOF
