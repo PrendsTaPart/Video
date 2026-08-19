@@ -1,0 +1,1199 @@
+[
+ {
+  "slug": "installer-son-restaurant-avec-le-configurateur",
+  "title": "L'Agent Configurateur : installez votre restaurant en une conversation",
+  "mod": "configuration",
+  "dur": 40,
+  "video": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/installer-son-restaurant-avec-le-configurateur-v1"
+ },
+ {
+  "slug": "creer-son-compte",
+  "title": "Créer son compte FoodEatUp",
+  "mod": "configuration",
+  "dur": 38,
+  "video": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/foodeatup-inscription-tuto-v1"
+ },
+ {
+  "slug": "monter-sa-boutique",
+  "title": "Monter sa boutique FoodEatUp",
+  "mod": "configuration",
+  "dur": 37,
+  "video": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/foodeatup-boutique-tuto-v1"
+ },
+ {
+  "slug": "choisir-son-abonnement",
+  "title": "Choisir son abonnement FoodEatUp",
+  "mod": "configuration",
+  "dur": 37,
+  "video": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/foodeatup-abonnement-tuto-v1"
+ },
+ {
+  "slug": "configurer-son-profil-entreprise",
+  "title": "Configurer son profil entreprise",
+  "mod": "configuration",
+  "dur": 25,
+  "video": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/foodeatup-profil-entreprise-tuto-v1"
+ },
+ {
+  "slug": "parametrer-sa-tva",
+  "title": "Paramétrer sa TVA FoodEatUp",
+  "mod": "configuration",
+  "dur": 38,
+  "video": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/foodeatup-tva-tuto-v1"
+ },
+ {
+  "slug": "ajouter-ses-fournisseurs",
+  "title": "Ajouter ses fournisseurs FoodEatUp",
+  "mod": "configuration",
+  "dur": 40,
+  "video": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/foodeatup-fournisseurs-tuto-v1"
+ },
+ {
+  "slug": "brancher-son-mcp-sur-claude",
+  "title": "Brancher son MCP sur Claude",
+  "mod": "configuration",
+  "dur": 36,
+  "video": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/brancher-son-mcp-sur-claude-v1"
+ },
+ {
+  "slug": "creer-ses-categories",
+  "title": "Créer ses catégories FoodEatUp",
+  "mod": "configuration",
+  "dur": 41,
+  "video": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/foodeatup-categories-tuto-v1"
+ },
+ {
+  "slug": "regler-ses-unites",
+  "title": "Régler ses unités de mesure FoodEatUp",
+  "mod": "configuration",
+  "dur": 31,
+  "video": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/foodeatup-unites-tuto-v1"
+ },
+ {
+  "slug": "saisir-ses-ingredients",
+  "title": "Saisir ses ingrédients FoodEatUp",
+  "mod": "configuration",
+  "dur": 60,
+  "video": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/foodeatup-ingredients-tuto-v1"
+ },
+ {
+  "slug": "creer-ses-produits",
+  "title": "Créer ses produits FoodEatUp",
+  "mod": "configuration",
+  "dur": 44,
+  "video": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/foodeatup-produits-tuto-v1"
+ },
+ {
+  "slug": "dessiner-son-plan-de-salle",
+  "title": "Dessiner son plan de salle / QR code à table",
+  "mod": "configuration",
+  "dur": 46,
+  "video": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/foodeatup-plan-salle-tuto-v1"
+ },
+ {
+  "slug": "monter-ses-recettes",
+  "title": "Monter ses recettes / fiches techniques FoodEatUp",
+  "mod": "configuration",
+  "dur": 46,
+  "video": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/monter-ses-recettes-v1"
+ },
+ {
+  "slug": "ouvrir-sa-vitrine-en-ligne",
+  "title": "Ouvrir sa vitrine en ligne",
+  "mod": "configuration",
+  "dur": 50,
+  "video": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/foodeatup-vitrine-tuto-v1.mp4"
+ },
+ {
+  "slug": "diffuser-son-qrcode",
+  "title": "Diffuser son QR code FoodEatUp",
+  "mod": "configuration",
+  "dur": 43,
+  "video": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/diffuser-son-qrcode-v1"
+ },
+ {
+  "slug": "creer-ses-roles-et-permissions",
+  "title": "Créer ses rôles et permissions FoodEatUp",
+  "mod": "equipe-planning",
+  "dur": 62,
+  "video": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/creer-ses-roles-et-permissions-v1"
+ },
+ {
+  "slug": "ajouter-ses-employes",
+  "title": "Ajouter ses employés FoodEatUp",
+  "mod": "equipe-planning",
+  "dur": 46,
+  "video": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/ajouter-ses-employes-v1"
+ },
+ {
+  "slug": "etablir-son-contrat-et-son-salaire",
+  "title": "Établir un contrat et son salaire FoodEatUp",
+  "mod": "equipe-planning",
+  "dur": 53,
+  "video": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/etablir-son-contrat-et-son-salaire-v1"
+ },
+ {
+  "slug": "regler-ses-horaires-par-employe",
+  "title": "Régler ses horaires par employé FoodEatUp",
+  "mod": "equipe-planning",
+  "dur": 65,
+  "video": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/regler-ses-horaires-par-employe-v1"
+ },
+ {
+  "slug": "brancher-jarvis-et-son-jeton",
+  "title": "Brancher Jarvis et son jeton FoodEatUp",
+  "mod": "equipe-planning",
+  "dur": 58,
+  "video": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/brancher-jarvis-et-son-jeton-v1"
+ },
+ {
+  "slug": "imprimer-son-planning-par-poste",
+  "title": "Imprimer son planning par poste FoodEatUp",
+  "mod": "equipe-planning",
+  "dur": 45,
+  "video": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/imprimer-son-planning-par-poste-v1"
+ },
+ {
+  "slug": "assigner-les-taches",
+  "title": "Assigner les tâches sur le planning FoodEatUp",
+  "mod": "equipe-planning",
+  "dur": 42,
+  "video": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/assigner-les-taches-v1"
+ },
+ {
+  "slug": "generer-qr-code-pointage",
+  "title": "Générer le QR code de pointage FoodEatUp",
+  "mod": "equipe-planning",
+  "dur": 41,
+  "video": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/generer-qr-code-pointage-v1"
+ },
+ {
+  "slug": "creer-son-code-pin",
+  "title": "Créer son code PIN — Accès & Jarvis FoodEatUp",
+  "mod": "equipe-planning",
+  "dur": 23,
+  "video": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/creer-son-code-pin-v1"
+ },
+ {
+  "slug": "commander-ses-cartes-nfc",
+  "title": "Commander ses cartes NFC pour le badge FoodEatUp",
+  "mod": "equipe-planning",
+  "dur": 51,
+  "video": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/commander-ses-cartes-nfc-v1"
+ },
+ {
+  "slug": "installer-la-borne-daccueil",
+  "title": "Installer la borne d'accueil FoodEatUp",
+  "mod": "equipe-planning",
+  "dur": 37,
+  "video": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/installer-la-borne-daccueil-v1"
+ },
+ {
+  "slug": "retrouver-les-pointages-historique",
+  "title": "Retrouver les pointages — Historique FoodEatUp",
+  "mod": "equipe-planning",
+  "dur": 33,
+  "video": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/retrouver-les-pointages-historique-v1"
+ },
+ {
+  "slug": "se-connecter-cote-employe",
+  "title": "Se connecter côté employé — URL & code PIN FoodEatUp",
+  "mod": "equipe-planning",
+  "dur": 32,
+  "video": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/se-connecter-cote-employe-v1"
+ },
+ {
+  "slug": "decouvrir-son-accueil-selon-son-role",
+  "title": "Découvrir son accueil selon son rôle FoodEatUp",
+  "mod": "equipe-planning",
+  "dur": 68,
+  "video": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/decouvrir-son-accueil-selon-son-role-v1"
+ },
+ {
+  "slug": "pointer-son-service-cote-employe",
+  "title": "Pointer son service — pauses & photo",
+  "mod": "equipe-planning",
+  "dur": 44,
+  "video": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/pointer-son-service-cote-employe-v2"
+ },
+ {
+  "slug": "voir-son-planning-cote-employe",
+  "title": "Voir son planning côté employé FoodEatUp",
+  "mod": "equipe-planning",
+  "dur": 29,
+  "video": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/voir-son-planning-cote-employe-v1"
+ },
+ {
+  "slug": "poser-un-conge-cote-employe",
+  "title": "Poser un congé et une absence, côté employé FoodEatUp",
+  "mod": "equipe-planning",
+  "dur": 59,
+  "video": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/poser-un-conge-cote-employe-v1"
+ },
+ {
+  "slug": "consulter-ses-performances-employe",
+  "title": "Suivre ses performances FoodEatUp (côté employé)",
+  "mod": "equipe-planning",
+  "dur": 46,
+  "video": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/consulter-ses-performances-employe-v1"
+ },
+ {
+  "slug": "suivre-ses-performances-cote-employe",
+  "title": "Suivre ses performances, côté employé",
+  "mod": "equipe-planning",
+  "dur": 37,
+  "video": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/foodeatup-performances-tuto-v1"
+ },
+ {
+  "slug": "retrouver-ses-documents-paie-et-contrat",
+  "title": "Retrouver ses documents, paie et contrat FoodEatUp",
+  "mod": "equipe-planning",
+  "dur": 65,
+  "video": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/retrouver-ses-documents-paie-et-contrat-v1"
+ },
+ {
+  "slug": "lire-ses-notifications",
+  "title": "Lire ses notifications et tâches du jour FoodEatUp",
+  "mod": "equipe-planning",
+  "dur": 29,
+  "video": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/lire-ses-notifications-v1"
+ },
+ {
+  "slug": "activer-abonnement-editeur-web",
+  "title": "Activer l'abonnement Éditeur Web",
+  "mod": "site-web-vitrine",
+  "dur": 34,
+  "video": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/fe-editeur-web-tuto"
+ },
+ {
+  "slug": "choisir-son-template",
+  "title": "Choisir son template — Mon Site",
+  "mod": "site-web-vitrine",
+  "dur": 42,
+  "video": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/choisir-son-template-v1"
+ },
+ {
+  "slug": "personnaliser-son-site",
+  "title": "Personnaliser son site — Éditeur Web",
+  "mod": "site-web-vitrine",
+  "dur": 45,
+  "video": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/personnaliser-son-site-v1"
+ },
+ {
+  "slug": "gerer-les-pages-de-son-site",
+  "title": "Gérer les pages de son site",
+  "mod": "site-web-vitrine",
+  "dur": 43,
+  "video": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/gerer-les-pages-de-son-site-v1"
+ },
+ {
+  "slug": "creer-un-site-par-ia",
+  "title": "Créer un site par IA FoodEatUp",
+  "mod": "site-web-vitrine",
+  "dur": 40,
+  "video": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/creer-un-site-par-ia-v1"
+ },
+ {
+  "slug": "configurer-horaires-et-reservations-site",
+  "title": "Configurer ses horaires et réservations",
+  "mod": "site-web-vitrine",
+  "dur": 43,
+  "video": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/tuto-configurer-horaires-et-reservations-site-v1"
+ },
+ {
+  "slug": "ajouter-du-contenu-sur-son-site",
+  "title": "Ajouter du contenu sur son site",
+  "mod": "site-web-vitrine",
+  "dur": 50,
+  "video": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/ajouter-du-contenu-sur-son-site-v1"
+ },
+ {
+  "slug": "connecter-son-domaine",
+  "title": "Connecter son Domaine",
+  "mod": "site-web-vitrine",
+  "dur": 55,
+  "video": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/foodeatup-domaine-tuto-v1.mp4"
+ },
+ {
+  "slug": "commander-via-site-vocal-qrcode",
+  "title": "Commander : site, agent vocal & QR code à table",
+  "mod": "site-web-vitrine",
+  "dur": 45,
+  "video": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/foodeatup-commander-via-site-vocal-qrcode-tuto-v1"
+ },
+ {
+  "slug": "configurer-sa-caisse-pos",
+  "title": "Configurer sa caisse POS — TPE & ticket",
+  "mod": "caisse-pos",
+  "dur": 44,
+  "video": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/tuto-configurer-sa-caisse-pos-v1"
+ },
+ {
+  "slug": "ouvrir-son-fond-de-caisse",
+  "title": "Ouvrir son fond de caisse en début de service",
+  "mod": "caisse-pos",
+  "dur": 42,
+  "video": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/tuto-ouvrir-son-fond-de-caisse-v1"
+ },
+ {
+  "slug": "encaisser-une-commande",
+  "title": "Encaisser une commande — comptoir & table",
+  "mod": "caisse-pos",
+  "dur": 43,
+  "video": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/tuto-encaisser-une-commande-v1"
+ },
+ {
+  "slug": "appliquer-une-remise",
+  "title": "Appliquer une remise et des avoirs",
+  "mod": "caisse-pos",
+  "dur": 35,
+  "video": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/tuto-appliquer-une-remise-v1"
+ },
+ {
+  "slug": "separer-une-addition",
+  "title": "Séparer une addition — multi-paiement",
+  "mod": "caisse-pos",
+  "dur": 43,
+  "video": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/tuto-separer-une-addition-v1"
+ },
+ {
+  "slug": "cloturer-sa-caisse",
+  "title": "Clôturer sa caisse — le Z de caisse",
+  "mod": "caisse-pos",
+  "dur": 40,
+  "video": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/tuto-cloturer-sa-caisse-v1"
+ },
+ {
+  "slug": "suivre-les-ecarts-de-caisse",
+  "title": "Suivre les écarts de caisse — historique",
+  "mod": "caisse-pos",
+  "dur": 38,
+  "video": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/tuto-suivre-les-ecarts-de-caisse-v1"
+ },
+ {
+  "slug": "connecter-son-hubrise",
+  "title": "Connecter son HubRise à FoodEatUp",
+  "mod": "hubrise-livraisons",
+  "dur": 44,
+  "video": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/tuto-connecter-son-hubrise-v1"
+ },
+ {
+  "slug": "relier-uber-eats-et-deliveroo",
+  "title": "Relier Uber Eats & Deliveroo via HubRise",
+  "mod": "hubrise-livraisons",
+  "dur": 33,
+  "video": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/tuto-relier-uber-eats-et-deliveroo-v1"
+ },
+ {
+  "slug": "synchroniser-sa-caisse-tierce",
+  "title": "Synchroniser sa caisse tierce via HubRise",
+  "mod": "hubrise-livraisons",
+  "dur": 35,
+  "video": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/tuto-synchroniser-sa-caisse-tierce-v1"
+ },
+ {
+  "slug": "centraliser-les-commandes-livraison",
+  "title": "Centraliser les commandes — flux livraison",
+  "mod": "hubrise-livraisons",
+  "dur": 39,
+  "video": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/tuto-centraliser-les-commandes-livraison-v1"
+ },
+ {
+  "slug": "configurer-caroline-voix-prompts",
+  "title": "Configurer Caroline (voix & prompts)",
+  "mod": "caroline-ia",
+  "dur": 43,
+  "video": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/foodeatup-caroline-voix-tuto-v1"
+ },
+ {
+  "slug": "reecouter-ses-appels-et-reservations",
+  "title": "Réécouter ses appels et réservations",
+  "mod": "caroline-ia",
+  "dur": 36,
+  "video": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/foodeatup-appels-reservations-tuto"
+ },
+ {
+  "slug": "ouvrir-ses-creneaux-de-reservation",
+  "title": "Ouvrir ses créneaux de réservation",
+  "mod": "caroline-ia",
+  "dur": 52,
+  "video": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/foodeatup-creneaux-reservation-tuto-v1.mp4"
+ },
+ {
+  "slug": "tenir-ses-reservations-au-quotidien",
+  "title": "Tenir ses Réservations au quotidien",
+  "mod": "caroline-ia",
+  "dur": 51,
+  "video": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/foodeatup-reservations-tuto-v1.mp4"
+ },
+ {
+  "slug": "gerer-ses-tables-ajout-blocage",
+  "title": "Gérer ses Tables (ajout & blocage)",
+  "mod": "caroline-ia",
+  "dur": 65,
+  "video": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/foodeatup-gerer-tables-tuto-v1"
+ },
+ {
+  "slug": "retrouver-ses-reservations-du-jour",
+  "title": "Retrouver ses réservations du jour",
+  "mod": "reservation-salle",
+  "dur": 51,
+  "video": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/foodeatup-reservations-jour-tuto"
+ },
+ {
+  "slug": "ajouter-une-reservation",
+  "title": "Ajouter une réservation — module Table",
+  "mod": "reservation-salle",
+  "dur": 48,
+  "video": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/foodeatup-reservation-tuto-v1"
+ },
+ {
+  "slug": "gerer-ses-no-shows",
+  "title": "Gérer ses no-shows et modifications",
+  "mod": "reservation-salle",
+  "dur": 44,
+  "video": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/foodeatup-noshow-tuto-v1"
+ },
+ {
+  "slug": "placer-un-client-a-table",
+  "title": "Placer un client à table",
+  "mod": "reservation-salle",
+  "dur": 38,
+  "video": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/foodeatup-placer-un-client-a-table-tuto-v1"
+ },
+ {
+  "slug": "scanner-le-qr-code-de-la-table",
+  "title": "Scanner le QR code de la table",
+  "mod": "reservation-salle",
+  "dur": 45,
+  "video": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/foodeatup-qrcode-table-tuto"
+ },
+ {
+  "slug": "mes-commandes-tous-canaux",
+  "title": "Mes commandes : QR code, site web, agent vocal (toutes vos commandes)",
+  "mod": "service-commande",
+  "dur": 69,
+  "video": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/foodeatup-mes-commandes-tuto-v1"
+ },
+ {
+  "slug": "commander-sur-site-qr-ou-vocal",
+  "title": "Commander sur site & QR ou par agent vocal",
+  "mod": "service-commande",
+  "dur": 70,
+  "video": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/foodeatup-qrcode-commande-tuto-v1"
+ },
+ {
+  "slug": "envoyer-en-cuisine-en-direct",
+  "title": "Envoyer en cuisine en direct",
+  "mod": "service-commande",
+  "dur": 51,
+  "video": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/foodeatup-envoi-cuisine-tuto-v1"
+ },
+ {
+  "slug": "creer-un-poste-de-travail",
+  "title": "Créer un poste de travail — module KDS",
+  "mod": "kds-cuisine",
+  "dur": 35,
+  "video": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/foodeatup-kds-poste-tuto-v1"
+ },
+ {
+  "slug": "afficher-le-kds-par-poste",
+  "title": "Afficher le KDS par poste",
+  "mod": "kds-cuisine",
+  "dur": 49,
+  "video": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/foodeatup-kds-par-poste-tuto"
+ },
+ {
+  "slug": "gerer-une-commande-en-direct-kds",
+  "title": "Gérer une commande en direct sur le KDS",
+  "mod": "kds-cuisine",
+  "dur": 46,
+  "video": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/tuto-gerer-une-commande-en-direct-kds-v1"
+ },
+ {
+  "slug": "debloquer-les-avis-clients",
+  "title": "Débloquer les Avis clients",
+  "mod": "marketing-fidelite",
+  "dur": 39,
+  "video": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/foodeatup-avis-abonnement-tuto-v1.mp4"
+ },
+ {
+  "slug": "synchroniser-google-avis",
+  "title": "Synchroniser Google avis clients",
+  "mod": "marketing-fidelite",
+  "dur": 37,
+  "video": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/foodeatup-avis-google-tuto-v1"
+ },
+ {
+  "slug": "repondre-aux-avis-clients",
+  "title": "Répondre aux avis clients",
+  "mod": "marketing-fidelite",
+  "dur": 43,
+  "video": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/foodeatup-repondre-avis-tuto-v1"
+ },
+ {
+  "slug": "activer-le-pack-marketing",
+  "title": "Activer le Pack Marketing FoodEatUp",
+  "mod": "marketing-fidelite",
+  "dur": 35,
+  "video": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/activer-le-pack-marketing-v1"
+ },
+ {
+  "slug": "lancer-une-campagne-marketing",
+  "title": "Lancer une campagne marketing",
+  "mod": "marketing-fidelite",
+  "dur": 50,
+  "video": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/foodeatup-campagne-marketing-tuto-v1"
+ },
+ {
+  "slug": "creer-une-campagne-par-ia",
+  "title": "Créer une campagne par IA — agent FoodEatUp",
+  "mod": "marketing-fidelite",
+  "dur": 62,
+  "video": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/creer-une-campagne-par-ia-v1"
+ },
+ {
+  "slug": "retrouver-son-agenda-marketing",
+  "title": "Retrouver son agenda marketing",
+  "mod": "marketing-fidelite",
+  "dur": 55,
+  "video": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/foodeatup-agenda-marketing-tuto-v1"
+ },
+ {
+  "slug": "creer-ses-templates-whatsapp",
+  "title": "Créer ses templates WhatsApp marketing",
+  "mod": "marketing-fidelite",
+  "dur": 56,
+  "video": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/foodeatup-templates-whatsapp-tuto-v1"
+ },
+ {
+  "slug": "ciblage-et-consentement-clients",
+  "title": "Ciblage et consentement clients",
+  "mod": "marketing-fidelite",
+  "dur": 61,
+  "video": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/foodeatup-ciblage-consentement-tuto-v1"
+ },
+ {
+  "slug": "suivre-ses-credits-sms-whatsapp",
+  "title": "Suivre ses crédits SMS & WhatsApp",
+  "mod": "marketing-fidelite",
+  "dur": 43,
+  "video": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/foodeatup-credits-com-tuto-v1"
+ },
+ {
+  "slug": "recharger-ses-credits-pack-com",
+  "title": "Recharger ses crédits — Pack Com'",
+  "mod": "marketing-fidelite",
+  "dur": 29,
+  "video": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/foodeatup-recharger-credits-tuto-v1"
+ },
+ {
+  "slug": "booster-la-fidelite-programme",
+  "title": "Booster la fidélité — le programme",
+  "mod": "marketing-fidelite",
+  "dur": 53,
+  "video": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/booster-la-fidelite-programme-v1"
+ },
+ {
+  "slug": "gerer-les-recompenses-fidelite",
+  "title": "Gérer les récompenses fidélité",
+  "mod": "marketing-fidelite",
+  "dur": 71,
+  "video": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/foodeatup-gerer-recompenses-tuto-v1"
+ },
+ {
+  "slug": "lancer-un-jeu-concours",
+  "title": "Lancer un jeu concours fidélité",
+  "mod": "marketing-fidelite",
+  "dur": 48,
+  "video": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/foodeatup-jeu-concours-tuto-v1"
+ },
+ {
+  "slug": "retrouver-son-qr-code-jeu-concours",
+  "title": "Retrouver son QR Code jeu concours",
+  "mod": "marketing-fidelite",
+  "dur": 46,
+  "video": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/foodeatup-qrcode-jeu-concours-tuto-v1"
+ },
+ {
+  "slug": "voir-les-gagnants-historique",
+  "title": "Voir les gagnants — historique",
+  "mod": "marketing-fidelite",
+  "dur": 42,
+  "video": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/tuto-voir-les-gagnants-historique-v1"
+ },
+ {
+  "slug": "creer-un-sondage-fidelite",
+  "title": "Créer un sondage fidélité",
+  "mod": "marketing-fidelite",
+  "dur": 52,
+  "video": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/fe-sondage-tuto"
+ },
+ {
+  "slug": "resultats-des-sondages-historique",
+  "title": "Résultats des sondages — historique",
+  "mod": "marketing-fidelite",
+  "dur": 53,
+  "video": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/foodeatup-resultats-sondages-tuto-v1"
+ },
+ {
+  "slug": "fidelite-multi-canal",
+  "title": "Fidélité multi-canal — canaux de vente",
+  "mod": "marketing-fidelite",
+  "dur": 46,
+  "video": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/foodeatup-fidelite-multicanal-tuto"
+ },
+ {
+  "slug": "vue-publique-fidelite-cote-client",
+  "title": "Vue publique fidélité — côté client",
+  "mod": "marketing-fidelite",
+  "dur": 40,
+  "video": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/vue-publique-fidelite-cote-client.mp4"
+ },
+ {
+  "slug": "integrer-le-mcp-rapidocms-iris",
+  "title": "Intégrer le MCP RapidoCMS & Iris",
+  "mod": "marketing-fidelite",
+  "dur": 48,
+  "video": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/tuto-integrer-le-mcp-rapidocms-iris-v1"
+ },
+ {
+  "slug": "synchroniser-la-charte-graphique-iris",
+  "title": "Synchroniser la charte graphique Iris",
+  "mod": "marketing-fidelite",
+  "dur": 37,
+  "video": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/foodeatup-charte-graphique-tuto-v1"
+ },
+ {
+  "slug": "calendrier-de-com-agent-iris",
+  "title": "Calendrier de com' — agent Iris",
+  "mod": "marketing-fidelite",
+  "dur": 56,
+  "video": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/foodeatup-calendrier-iris-tuto-v1"
+ },
+ {
+  "slug": "booster-les-stocks-dormants",
+  "title": "Booster les stocks dormants (opportunités IA)",
+  "mod": "marketing-fidelite",
+  "dur": 48,
+  "video": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/foodeatup-stocks-dormants-tuto-v1"
+ },
+ {
+  "slug": "deduire-ses-besoins-de-production",
+  "title": "Déduire ses besoins de production FoodEatUp",
+  "mod": "stockvision-ai",
+  "dur": 39,
+  "video": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/deduire-ses-besoins-de-production-v1"
+ },
+ {
+  "slug": "predire-ses-commandes",
+  "title": "Prédire ses commandes (ventes & production) FoodEatUp",
+  "mod": "stockvision-ai",
+  "dur": 39,
+  "video": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/predire-ses-commandes-v1"
+ },
+ {
+  "slug": "tenir-sa-liste-de-courses",
+  "title": "Tenir sa liste de courses FoodEatUp",
+  "mod": "stockvision-ai",
+  "dur": 42,
+  "video": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/foodeatup-liste-courses-tuto-v1"
+ },
+ {
+  "slug": "envoyer-sa-commande-au-fournisseur",
+  "title": "Envoyer sa commande au fournisseur FoodEatUp",
+  "mod": "stockvision-ai",
+  "dur": 48,
+  "video": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/foodeatup-commande-fournisseur-tuto-v1"
+ },
+ {
+  "slug": "suivre-ses-livraisons",
+  "title": "Suivre ses livraisons (statuts & dates) FoodEatUp",
+  "mod": "stockvision-ai",
+  "dur": 30,
+  "video": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/foodeatup-livraisons-tuto-v1"
+ },
+ {
+  "slug": "valider-son-bl-en-detail",
+  "title": "Valider son BL en détail FoodEatUp",
+  "mod": "stockvision-ai",
+  "dur": 49,
+  "video": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/foodeatup-bl-tuto-v1"
+ },
+ {
+  "slug": "controler-sa-reception-stock",
+  "title": "Valider son entrée stock : température & EAN",
+  "mod": "stockvision-ai",
+  "dur": 49,
+  "video": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/foodeatup-reception-stock-tuto-v1"
+ },
+ {
+  "slug": "scanner-sa-facture-ocr",
+  "title": "Scanner sa facture (OCR & prix auto) FoodEatUp",
+  "mod": "stockvision-ai",
+  "dur": 63,
+  "video": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/scanner-sa-facture-ocr-v1"
+ },
+ {
+  "slug": "classer-ses-factures-dans-les-depenses",
+  "title": "Classer ses factures dans les dépenses FoodEatUp",
+  "mod": "stockvision-ai",
+  "dur": 52,
+  "video": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/classer-ses-factures-dans-les-depenses-v1"
+ },
+ {
+  "slug": "tenir-ses-depenses",
+  "title": "Tenir ses dépenses avec StockVision AI",
+  "mod": "stockvision-ai",
+  "dur": 45,
+  "video": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/foodeatup-depenses-tuto-v1.mp4"
+ },
+ {
+  "slug": "valider-une-production",
+  "title": "Valider une production (quantité, température, note)",
+  "mod": "stockvision-ai",
+  "dur": 47,
+  "video": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/foodeatup-valider-une-production"
+ },
+ {
+  "slug": "imprimer-ses-ingredients-de-production",
+  "title": "Détails et impression de la liste des ingrédients FoodEatUp",
+  "mod": "stockvision-ai",
+  "dur": 52,
+  "video": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/imprimer-ses-ingredients-de-production-v1"
+ },
+ {
+  "slug": "tracer-ses-productions-historique",
+  "title": "Tracer ses productions : historique et traçabilité",
+  "mod": "stockvision-ai",
+  "dur": 64,
+  "video": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/foodeatup-tracabilite-tuto-v1.mp4"
+ },
+ {
+  "slug": "sortir-ses-ingredients-du-stock",
+  "title": "Sortir ses ingrédients du stock de la production",
+  "mod": "stockvision-ai",
+  "dur": 52,
+  "video": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/foodeatup-sortie-stock-tuto-v1"
+ },
+ {
+  "slug": "lire-ses-mouvements-de-stock",
+  "title": "Lire ses mouvements de stock FoodEatUp",
+  "mod": "stockvision-ai",
+  "dur": 46,
+  "video": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/foodeatup-mouvements-stock-tuto-v1"
+ },
+ {
+  "slug": "saisir-un-mouvement-de-stock",
+  "title": "Saisir un mouvement de stock FoodEatUp",
+  "mod": "stockvision-ai",
+  "dur": 52,
+  "video": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/foodeatup-mouvement-stock-tuto-v1"
+ },
+ {
+  "slug": "lire-ses-statistiques-par-module",
+  "title": "Lire ses statistiques par module",
+  "mod": "stockvision-ai",
+  "dur": 54,
+  "video": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/foodeatup-statistiques-module-tuto-v1"
+ },
+ {
+  "slug": "sortir-un-rapport-et-son-historique",
+  "title": "Sortir un rapport et son historique FoodEatUp",
+  "mod": "stockvision-ai",
+  "dur": 44,
+  "video": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/sortir-un-rapport-et-son-historique-v1"
+ },
+ {
+  "slug": "suivre-suggestions-agent-ia",
+  "title": "Suivre les suggestions de l'agent IA FoodEatUp",
+  "mod": "stockvision-ai",
+  "dur": 48,
+  "video": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/suivre-suggestions-agent-ia-v1"
+ },
+ {
+  "slug": "ouvrir-son-classeur-haccp",
+  "title": "Ouvrir son classeur HACCP",
+  "mod": "haccp",
+  "dur": 48,
+  "video": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/foodeatup-classeur-haccp-tuto-v1"
+ },
+ {
+  "slug": "declarer-ses-equipements",
+  "title": "Déclarer ses équipements (Module HACCP)",
+  "mod": "haccp",
+  "dur": 51,
+  "video": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/foodeatup-equipements-tuto-v1"
+ },
+ {
+  "slug": "relever-une-temperature-equipement",
+  "title": "Relever une température d'équipement",
+  "mod": "haccp",
+  "dur": 38,
+  "video": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/foodeatup-temperature-tuto-v1.mp4"
+ },
+ {
+  "slug": "retrouver-lhistorique-des-temperatures",
+  "title": "Retrouver l'historique de mes relevés de température",
+  "mod": "haccp",
+  "dur": 33,
+  "video": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/retrouver-lhistorique-des-temperatures-v1"
+ },
+ {
+  "slug": "ajouter-temperature-plat",
+  "title": "Ajouter une température de production (plats)",
+  "mod": "haccp",
+  "dur": 38,
+  "video": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/foodeatup-temperatures-tuto-v1"
+ },
+ {
+  "slug": "retrouver-historique-plats-sondes",
+  "title": "Retrouver mes plats sondés — historique",
+  "mod": "haccp",
+  "dur": 56,
+  "video": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/foodeatup-plats-sondes-historique-tuto-v1"
+ },
+ {
+  "slug": "creer-une-tracabilite-simplifiee",
+  "title": "Créer une traçabilité simplifiée",
+  "mod": "haccp",
+  "dur": 48,
+  "video": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/foodeatup-tracabilite-simplifiee-tuto-v1.mp4"
+ },
+ {
+  "slug": "creer-une-tracabilite-complete",
+  "title": "Créer une traçabilité complète",
+  "mod": "haccp",
+  "dur": 52,
+  "video": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/foodeatup-tracabilite-tuto-v1"
+ },
+ {
+  "slug": "retrouver-lhistorique-de-la-tracabilite",
+  "title": "Retrouver l'historique de sa traçabilité",
+  "mod": "haccp",
+  "dur": 43,
+  "video": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/foodeatup-tracabilite-historique-tuto-v1"
+ },
+ {
+  "slug": "parametrer-son-plan-de-nettoyage",
+  "title": "Ajouter et paramétrer son plan de nettoyage (Zones)",
+  "mod": "haccp",
+  "dur": 40,
+  "video": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/foodeatup-nettoyage-tuto-v1"
+ },
+ {
+  "slug": "pointer-ses-actions-de-nettoyage",
+  "title": "Pointer ses actions de nettoyage FoodEatUp",
+  "mod": "haccp",
+  "dur": 47,
+  "video": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/pointer-ses-actions-de-nettoyage-v1"
+ },
+ {
+  "slug": "retrouver-lhistorique-des-zones-de-nettoyage",
+  "title": "Retrouver l'historique de mes zones de nettoyage",
+  "mod": "haccp",
+  "dur": 54,
+  "video": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/retrouver-lhistorique-des-zones-de-nettoyage-v1"
+ },
+ {
+  "slug": "creer-sa-fiche-plat-pour-production",
+  "title": "Créer sa fiche plat pour production FoodEatUp",
+  "mod": "haccp",
+  "dur": 48,
+  "video": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/foodeatup-fiche-plat-tuto-v1"
+ },
+ {
+  "slug": "consulter-ses-productions-en-cours",
+  "title": "Consulter ses productions en cours",
+  "mod": "haccp",
+  "dur": 53,
+  "video": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/consulter-ses-productions-en-cours-v1"
+ },
+ {
+  "slug": "poser-une-dlc-sur-ses-productions",
+  "title": "Poser une DLC sur ses productions FoodEatUp",
+  "mod": "haccp",
+  "dur": 44,
+  "video": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/foodeatup-dlc-tuto-v1"
+ },
+ {
+  "slug": "retrouver-historique-productions",
+  "title": "Retrouver l'historique de ses productions",
+  "mod": "haccp",
+  "dur": 51,
+  "video": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/foodeatup-historique-productions-tuto-v1"
+ },
+ {
+  "slug": "creer-produit-pour-etiquetage",
+  "title": "Créer un produit pour l'étiquetage FoodEatUp",
+  "mod": "haccp",
+  "dur": 37,
+  "video": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/creer-produit-pour-etiquetage-v1"
+ },
+ {
+  "slug": "imprimer-ses-etiquettes",
+  "title": "Imprimer ses étiquettes (vente & stockage) FoodEatUp",
+  "mod": "haccp",
+  "dur": 62,
+  "video": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/imprimer-ses-etiquettes-v1"
+ },
+ {
+  "slug": "retrouver-historique-etiquettes",
+  "title": "Retrouver mes étiquettes — historique",
+  "mod": "haccp",
+  "dur": 52,
+  "video": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/foodeatup-etiquettes-historique-tuto-v1"
+ },
+ {
+  "slug": "archiver-ses-documents-de-nettoyage",
+  "title": "Archiver ses documents de nettoyage",
+  "mod": "haccp",
+  "dur": 52,
+  "video": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/foodeatup-documents-nettoyage-tuto-v1"
+ },
+ {
+  "slug": "utiliser-nos-modeles-foodeatup",
+  "title": "Utiliser nos modèles FoodEatUp",
+  "mod": "haccp",
+  "dur": 36,
+  "video": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/foodeatup-templates-tuto-v1"
+ },
+ {
+  "slug": "creer-sa-checklist-hygiene",
+  "title": "Créer sa check-list hygiène FoodEatUp",
+  "mod": "haccp",
+  "dur": 43,
+  "video": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/foodeatup-checklist-hygiene-tuto-v1"
+ },
+ {
+  "slug": "faire-son-controle-de-conformite",
+  "title": "Faire son contrôle de conformité FoodEatUp",
+  "mod": "haccp",
+  "dur": 52,
+  "video": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/foodeatup-conformite-tuto-v1"
+ },
+ {
+  "slug": "retrouver-historique-checklist-hygiene",
+  "title": "Retrouver mes contrôles historique FoodEatUp",
+  "mod": "haccp",
+  "dur": 41,
+  "video": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/retrouver-historique-checklist-hygiene-v1"
+ },
+ {
+  "slug": "controler-reception-livraisons",
+  "title": "Contrôler à réception de vos livraisons (Module HACCP)",
+  "mod": "haccp",
+  "dur": 51,
+  "video": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/foodeatup-reception-tuto-v1"
+ },
+ {
+  "slug": "ajouter-modifier-ou-valider-une-reception-livraison",
+  "title": "Ajouter, modifier ou valider une réception livraison",
+  "mod": "haccp",
+  "dur": 59,
+  "video": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/foodeatup-reception-livraison-tuto-v1"
+ },
+ {
+  "slug": "scanner-ean-et-dlc-reception",
+  "title": "Scanner le code EAN et la DLC (Contrôle à réception) FoodEatUp",
+  "mod": "haccp",
+  "dur": 47,
+  "video": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/scanner-ean-et-dlc-reception-v1"
+ },
+ {
+  "slug": "retrouver-lhistorique-du-controle-a-reception",
+  "title": "Retrouver l'historique du contrôle à réception",
+  "mod": "haccp",
+  "dur": 47,
+  "video": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/retrouver-lhistorique-du-controle-a-reception-v1"
+ },
+ {
+  "slug": "photo-ia-controle-nettoyage",
+  "title": "Une photo, l'IA contrôle votre nettoyage (Module Hygiène)",
+  "mod": "haccp",
+  "dur": 28,
+  "video": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/foodeatup-nettoyage-ia-tuto-v1"
+ },
+ {
+  "slug": "gerer-ses-fournisseurs-cote-achats",
+  "title": "Gérer ses fournisseurs côté achats FoodEatUp",
+  "mod": "comptabilite",
+  "dur": 35,
+  "video": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/gerer-ses-fournisseurs-cote-achats-v1"
+ },
+ {
+  "slug": "gerer-ses-clients-cote-ventes",
+  "title": "Gérer ses clients côté ventes",
+  "mod": "comptabilite",
+  "dur": 42,
+  "video": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/gerer-ses-clients-cote-ventes-v1"
+ },
+ {
+  "slug": "creer-un-devis",
+  "title": "Créer un devis FoodEatUp",
+  "mod": "comptabilite",
+  "dur": 66,
+  "video": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/creer-un-devis-v1"
+ },
+ {
+  "slug": "changer-les-statuts-dun-devis",
+  "title": "Changer les statuts d'un devis FoodEatUp",
+  "mod": "comptabilite",
+  "dur": 41,
+  "video": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/changer-les-statuts-dun-devis-v1"
+ },
+ {
+  "slug": "creer-une-facture",
+  "title": "Créer une facture FoodEatUp",
+  "mod": "comptabilite",
+  "dur": 55,
+  "video": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/creer-une-facture-v1"
+ },
+ {
+  "slug": "changer-les-statuts-dune-facture",
+  "title": "Changer les statuts d'une facture FoodEatUp",
+  "mod": "comptabilite",
+  "dur": 59,
+  "video": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/changer-les-statuts-dune-facture-v1"
+ },
+ {
+  "slug": "saisir-ses-depenses-fournisseur",
+  "title": "Saisir ses dépenses fournisseur FoodEatUp",
+  "mod": "comptabilite",
+  "dur": 60,
+  "video": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/saisir-ses-depenses-fournisseur-v1"
+ },
+ {
+  "slug": "relier-ses-achats-a-ses-livraisons",
+  "title": "Relier ses achats à ses livraisons FoodEatUp",
+  "mod": "comptabilite",
+  "dur": 46,
+  "video": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/relier-ses-achats-a-ses-livraisons-v1"
+ },
+ {
+  "slug": "declarer-son-ereporting",
+  "title": "Déclarer son e-reporting FoodEatUp",
+  "mod": "comptabilite",
+  "dur": 57,
+  "video": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/declarer-son-ereporting-v1"
+ },
+ {
+  "slug": "retrouver-toutes-mes-commandes",
+  "title": "Retrouver la commande derrière une facture",
+  "mod": "comptabilite",
+  "dur": 45,
+  "video": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/tuto-retrouver-toutes-mes-commandes-v1"
+ },
+ {
+  "slug": "lire-ses-previsions-predibot",
+  "title": "Lire ses prévisions PrediBot",
+  "mod": "predibot",
+  "dur": 42,
+  "video": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/foodeatup-predibot-previsions-tuto-v1"
+ },
+ {
+  "slug": "piocher-dans-la-marketplace-de-prompts",
+  "title": "Piocher dans la marketplace de prompts",
+  "mod": "predibot",
+  "dur": 40,
+  "video": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/foodeatup-predibot-marketplace-tuto-v1"
+ },
+ {
+  "slug": "parler-a-predibot-avec-nos-prompts",
+  "title": "Parler à PrediBot avec nos prompts",
+  "mod": "predibot",
+  "dur": 35,
+  "video": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/parler-a-predibot-avec-nos-prompts-v1"
+ },
+ {
+  "slug": "agent-haccp-whatsapp",
+  "title": "Agent HACCP : relevez vos températures depuis WhatsApp",
+  "mod": "predibot",
+  "dur": 48,
+  "video": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/agent-haccp-whatsapp-v1"
+ },
+ {
+  "slug": "gerer-son-stock-par-whatsapp",
+  "title": "Gérer son stock par WhatsApp avec l'agent IA",
+  "mod": "predibot",
+  "dur": 65,
+  "video": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/gerer-son-stock-par-whatsapp-v1"
+ },
+ {
+  "slug": "configurer-sa-boutique-avec-predibot",
+  "title": "Configurer sa boutique en discutant avec PrediBot",
+  "mod": "predibot",
+  "dur": 40,
+  "video": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/configurer-sa-boutique-avec-predibot-v1"
+ },
+ {
+  "slug": "agent-gestion-fournisseur-whatsapp",
+  "title": "Agent Gestion Fournisseur : validez vos réceptions depuis WhatsApp",
+  "mod": "predibot",
+  "dur": 42,
+  "video": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/agent-gestion-fournisseur-whatsapp-v1"
+ },
+ {
+  "slug": "retrouver-ses-commandes-multi-canal",
+  "title": "Retrouver ses commandes multi-canal (recherche, filtres et fiche détail)",
+  "mod": "service-commande",
+  "dur": 62,
+  "video": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/foodeatup-commandes-multicanal-tuto-v1"
+ },
+ {
+  "slug": "commander-qr-code",
+  "title": "Commander par QR Code",
+  "mod": "service-commande",
+  "dur": 49,
+  "video": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/foodeatup-commander-qrcode-tuto-v1"
+ },
+ {
+  "slug": "boucle-01-configuration-boutique",
+  "title": "Boucle 01 — Configuration boutique : un prix change, toutes vos marges se recalculent",
+  "mod": "les-8-boucles",
+  "dur": 76,
+  "video": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/boucle-01-configuration-boutique-v1"
+ },
+ {
+  "slug": "boucle-02-equipe",
+  "title": "Boucle 02 — Équipe : vos plannings tiennent compte de l'activité réelle",
+  "mod": "les-8-boucles",
+  "dur": 72,
+  "video": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/boucle-02-equipe-v1"
+ },
+ {
+  "slug": "boucle-03-stockvision",
+  "title": "Boucle 03 — StockVision AI : vos ventes deviennent vos achats et votre production",
+  "mod": "les-8-boucles",
+  "dur": 73,
+  "video": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/boucle-03-stockvision-v1"
+ },
+ {
+  "slug": "boucle-04-haccp",
+  "title": "Boucle 04 — HACCP : votre dossier de conformité se construit chaque jour",
+  "mod": "les-8-boucles",
+  "dur": 74,
+  "video": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/boucle-04-haccp-v1"
+ },
+ {
+  "slug": "boucle-05-ecommerce",
+  "title": "Boucle 05 — E-commerce : votre carte en ligne, sans commission",
+  "mod": "les-8-boucles",
+  "dur": 75,
+  "video": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/boucle-05-ecommerce-v1"
+ },
+ {
+  "slug": "boucle-06-communication",
+  "title": "Boucle 06 — Communication : ce que vous savez, vos clients le savent le matin même",
+  "mod": "les-8-boucles",
+  "dur": 72,
+  "video": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/boucle-06-communication-v1"
+ },
+ {
+  "slug": "boucle-08-comptabilite",
+  "title": "Boucle 08 — Comptabilité : le chiffre du jour, avant d'éteindre la lumière",
+  "mod": "les-8-boucles",
+  "dur": 68,
+  "video": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/boucle-08-comptabilite-v1"
+ }
+]
