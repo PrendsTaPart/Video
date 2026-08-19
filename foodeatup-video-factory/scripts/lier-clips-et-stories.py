@@ -63,6 +63,11 @@ def main():
     # `dist/tiktok/` porte les masters de 37,5 s, pas cette famille-là.
     tiktoks = {p.stem for p in (R / "dist" / "tiktok-story").glob("*.mp4")}
     masters = {p.stem for p in (R / "dist" / "tiktok").glob("*.mp4")}
+    # Un chapitre de UpEatFood n'a pas de master de 37,5 s : le sien est
+    # l'habillage complet — carte d'ouverture, plan, générique — que
+    # `build-habillage.py` écrit ailleurs. Trente-cinq chapitres entièrement
+    # montés n'avaient donc aucune adresse, dont celui qui sort aujourd'hui.
+    chapitres = {p.stem for p in (R / "dist" / "upeatfood" / "story").glob("*.mp4")}
 
     clips, sts, yts, pys, fbs, tks, bas, deja = 0, 0, 0, 0, 0, 0, 0, 0
     mst = 0
@@ -134,6 +139,7 @@ def main():
                 # aucun. Un montage sans adresse n'existe pour personne.
                 pose = e.get("videoUrl")
                 url = repris.get("videoUrl") or pose or (
+                    f"{BRUT}/upeatfood/story/{i}.mp4" if i in chapitres else
                     f"{BRUT}/tiktok/{i}.mp4" if i in masters else None
                 )
                 if url and url != pose:

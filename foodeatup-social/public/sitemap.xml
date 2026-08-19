@@ -611,8 +611,68 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://foodeatup-social.lovable.app/episode/ep501-sept-heures-et-personne</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://foodeatup-social.lovable.app/episode/ep502-le-carnet-le-tableau-la-tete</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://foodeatup-social.lovable.app/episode/ep503-vendredi-le-bac-vide</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://foodeatup-social.lovable.app/episode/ep504-une-phrase-un-matin</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://foodeatup-social.lovable.app/episode/ep505-le-plat-et-ce-qu-il-coute</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://foodeatup-social.lovable.app/episode/ep506-il-ferme-et-il-sait</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://foodeatup-social.lovable.app/series/il-etait-une-fois-un-restaurant/saison/2</loc>
     <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://foodeatup-social.lovable.app/episode/ep507-six-tables-une-memoire</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://foodeatup-social.lovable.app/episode/ep508-le-telephone-qui-sonne-dans-le-vide</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://foodeatup-social.lovable.app/episode/ep509-la-table-de-douze-qui-n-existait-pas</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://foodeatup-social.lovable.app/episode/ep510-le-plan-de-salle-qui-se-remplit-tout-seul</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://foodeatup-social.lovable.app/episode/ep511-le-prenom-du-fils</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://foodeatup-social.lovable.app/episode/ep512-minuit-et-rien-a-retenir</loc>
+    <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
@@ -621,13 +681,128 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://foodeatup-social.lovable.app/episode/ep513-le-bureau-au-dessus-de-la-salle</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://foodeatup-social.lovable.app/episode/ep514-la-pile-qui-grandit-toute-seule</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://foodeatup-social.lovable.app/episode/ep515-le-quinze-du-mois-suivant</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://foodeatup-social.lovable.app/episode/ep516-la-question-posee-a-voix-haute</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://foodeatup-social.lovable.app/episode/ep517-le-planning-avant-le-samedi</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://foodeatup-social.lovable.app/episode/ep518-il-eteint-la-lampe-a-vingt-trois-heures</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://foodeatup-social.lovable.app/series/il-etait-une-fois-un-restaurant/saison/4</loc>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://foodeatup-social.lovable.app/episode/ep519-il-cherche-ou-aller</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://foodeatup-social.lovable.app/episode/ep520-la-carte-date-de-mardi</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://foodeatup-social.lovable.app/episode/ep521-personne-ne-decroche</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://foodeatup-social.lovable.app/episode/ep522-quelqu-un-decroche-a-la-premiere-sonnerie</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://foodeatup-social.lovable.app/episode/ep523-la-table-etait-prete-a-son-nom</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://foodeatup-social.lovable.app/episode/ep524-vingt-trois-heures-dans-le-metro</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://foodeatup-social.lovable.app/series/il-etait-une-fois-un-restaurant/saison/5</loc>
     <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://foodeatup-social.lovable.app/episode/ep525-le-meme-soir-quatre-fois</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://foodeatup-social.lovable.app/episode/ep526-18-h-40-il-reserve</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://foodeatup-social.lovable.app/episode/ep527-18-h-41-la-salle-le-voit</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://foodeatup-social.lovable.app/episode/ep528-18-h-42-la-cuisine-l-apprend</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://foodeatup-social.lovable.app/episode/ep529-18-h-43-le-bureau-voit-le-couvert</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://foodeatup-social.lovable.app/episode/ep530-20-h-15-les-quatre-au-meme-endroit</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://foodeatup-social.lovable.app/episode/ep531-20-h-31-le-plat-part</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://foodeatup-social.lovable.app/episode/ep532-20-h-32-il-ne-remarque-rien</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://foodeatup-social.lovable.app/episode/ep533-23-h-50-le-z-avant-d-eteindre</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://foodeatup-social.lovable.app/episode/ep534-7-h-00-le-lendemain</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://foodeatup-social.lovable.app/episode/ep535-il-etait-une-fois-un-restaurant</loc>
+    <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
 </urlset>
