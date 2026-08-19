@@ -56,15 +56,15 @@ RESPIRE = 0.6               # le silence qui sépare deux blocs
 # couvrent. L'ordre est celui du scénario `docs/film-une-journee.md`.
 BLOCS = [
     ("B01", ["EP301", "EP313", "EP322", "EP316", "EP307", "EP310", "EP328"]),
-    ("B02", ["EP316", "EP319", "EP319"]),
-    ("B03", ["EP307", "EP308", "EP323", "EP305", "EP308", "EP323"]),
+    ("B02", ["EP316", "EP319", "EP316", "EP319"]),
+    ("B03", ["EP307", "EP308", "EP323", "EP305", "EP308", "EP323", "EP307"]),
     ("B04", ["EP329", "EP302", "EP320", "EP317", "EP314", "EP330"]),
-    ("B05", ["EP312", "EP315", "EP312"]),
-    ("B06", ["EP309", "EP306", "EP321", "EP303", "EP318"]),
-    ("B07", ["EP327", "EP325", "EP326", "EP327"]),
+    ("B05", ["EP312", "EP315", "EP312", "EP315"]),
+    ("B06", ["EP309", "EP306", "EP321", "EP303", "EP318", "EP309"]),
+    ("B07", ["EP327", "EP325", "EP326", "EP327", "EP325"]),
     ("B08", ["EP331", "EP331"]),
     ("B09", ["EP316", "EP307", "EP323", "EP329", "EP330", "EP312"]),
-    ("B10", ["EP331"]),
+    ("B10", ["EP331", "EP331"]),
 ]
 
 
@@ -76,8 +76,12 @@ def duree(chemin):
     return float(out.stdout.strip())
 
 
-def segment(episode, debut, longueur, sortie):
-    """Un plan, recadré en 16:9 sur son propre flou, sans son."""
+def segment(episode, debut, longueur, sortie, gel=0.0):
+    """Un plan, recadré en 16:9 sur son propre flou, sans son.
+
+    `gel` prolonge la fin du plan en clonant sa dernière image, quand la voix
+    du bloc dépasse ce que les plans disponibles peuvent couvrir.
+    """
     src = HOOKS / f"{episode}.mp4"
     if not src.exists():
         raise SystemExit(f"{episode} : plan introuvable dans dist/hooks/")
@@ -93,6 +97,8 @@ def segment(episode, debut, longueur, sortie):
         # lui qui garantit que libx264 ne parte pas en High 4:4:4 Predictive.
         f"[flou][plan]overlay=(W-w)/2:0,format=yuv420p[v]"
     )
+    if gel > 0.01:
+        chaine = chaine[:-3] + f"[sec];[sec]tpad=stop_mode=clone:stop_duration={gel:.3f}[v]"
     subprocess.run(
         ["ffmpeg", "-y", "-v", "error",
          "-ss", f"{debut:.3f}", "-t", f"{longueur:.3f}", "-i", str(src),
@@ -108,20 +114,52 @@ def monter_bloc(nom, episodes):
     if not vo.exists():
         raise SystemExit(f"{nom} : voix off absente ({vo})")
     d_vo = duree(vo)
-    part = d_vo / len(episodes)
+    # Les images couvrent la voix PLUS une respiration : sans elle la narration
+    # s'enchaînerait six minutes sans un silence, et chaque séquence mordrait
+    # sur la suivante. Le temps en trop tombe dans le gel de fin de bloc, ce
+    # qui donne exactement le battement qu'on veut entre deux séquences.
+    d_cible = d_vo + RESPIRE
+    dispo = [duree(HOOKS / f"{ep}.mp4") for ep in episodes]
+
+    # Un bloc doit durer EXACTEMENT le temps de sa voix. Une part égale ne
+    # suffit pas : quand elle dépasse la longueur d'un plan, ce plan est tronqué
+    # et le bloc rend moins d'image que de son. Le bloc suivant démarre alors
+    # trop tôt, et le décalage s'accumule jusqu'à ce que la narration commente
+    # les images de la séquence d'avant. On répartit donc le déficit sur les
+    # plans qui ont encore du mou, autant de fois qu'il le faut.
+    parts = [0.0] * len(episodes)
+    reste = d_cible
+    ouverts = set(range(len(episodes)))
+    while reste > 1e-3 and ouverts:
+        quota = reste / len(ouverts)
+        satures = set()
+        for i in list(ouverts):
+            place = dispo[i] - parts[i]
+            pris = min(quota, place)
+            parts[i] += pris
+            reste -= pris
+            if place - pris < 1e-3:
+                satures.add(i)
+        ouverts -= satures
+    # S'il reste du son après avoir épuisé tous les plans, le dernier segment
+    # est prolongé par clonage de sa dernière image — jamais du noir, qui se
+    # lirait comme une coupure de bobine.
+    gel = max(0.0, reste)
 
     morceaux = []
     for i, ep in enumerate(episodes):
-        d_src = duree(HOOKS / f"{ep}.mp4")
+        part, d_src = parts[i], dispo[i]
         # On prend le morceau au centre du plan quand il est plus long que la
         # part : le début et la fin d'un plan Higgsfield sont les moments où la
         # caméra se stabilise et où elle décroche.
-        debut = max(0.0, min(d_src - part, (d_src - part) / 2)) if d_src > part else 0.0
+        debut = max(0.0, (d_src - part) / 2)
         longueur = min(part, d_src - debut)
         out = BUILD / f"{nom}_{i:02d}.mp4"
-        segment(ep, debut, longueur, out)
+        rab = gel if i == len(episodes) - 1 else 0.0
+        segment(ep, debut, longueur, out, rab)
         morceaux.append(out)
-        print(f"    {ep}  {debut:5.2f} → {debut + longueur:5.2f}  ({longueur:.2f} s)")
+        suffixe = f"  +{rab:.2f} s gelées" if rab > 0.01 else ""
+        print(f"    {ep}  {debut:5.2f} → {debut + longueur:5.2f}  ({longueur:.2f} s){suffixe}")
 
     liste = BUILD / f"{nom}.txt"
     liste.write_text("".join(f"file '{m}'\n" for m in morceaux), encoding="utf-8")
@@ -153,14 +191,17 @@ def main(argv):
     if not choisis:
         raise SystemExit(f"bloc « {a.bloc} » inconnu")
 
+    # Le départ de chaque voix est pris sur la durée RÉELLE des images déjà
+    # posées, jamais sur la durée attendue de la voix : c'est la seule mesure
+    # qui ne peut pas mentir, et c'est elle qui garantit qu'un bloc commence là
+    # où le précédent finit.
     videos, voix, total = [], [], 0.0
     for nom, episodes in choisis:
         print(f"  {nom} :")
         v, vo, d = monter_bloc(nom, episodes)
         videos.append(v)
         voix.append((vo, total, d))
-        total += d + RESPIRE
-    total -= RESPIRE
+        total += duree(v)
 
     # La vidéo : les blocs bout à bout, avec le silence de respiration comblé
     # par un gel de la dernière image plutôt que par du noir — le noir entre
@@ -199,13 +240,15 @@ def main(argv):
     else:
         print("  (mesure indisponible — repli sur une passe simple)")
         af = f"loudnorm={LOUDNESS}"
+    # Pas de limiteur derrière loudnorm : il vise déjà TP=-1.5, et un limiteur
+    # posé après remonte la loudness au-dessus de la cible qu'on vient de viser.
     subprocess.run(["ffmpeg", "-y", "-v", "error", "-i", str(brut),
-                    "-af", af + ",alimiter=limit=0.891",
+                    "-af", af, "-ar", "48000",
                     "-c:a", "pcm_s16le", str(normal)], check=True)
 
     subprocess.run(["ffmpeg", "-y", "-v", "error", "-i", str(muet), "-i", str(normal),
                     "-map", "0:v", "-map", "1:a", "-c:v", "copy",
-                    "-c:a", "aac", "-b:a", "192k", "-shortest", str(SORTIE)],
+                    "-c:a", "aac", "-b:a", "192k", "-ar", "48000", str(SORTIE)],
                    check=True)
 
     d = duree(SORTIE)
