@@ -15551,8 +15551,8 @@ export const series: Serie[] = [
             "tutoriel": null,
             "tutorielModuleUrl": "https://tutoriel.foodeatup.com/module/comptabilite",
             "higgsfield": {
-              "videoSourceUrl": null,
-              "source": null,
+              "videoSourceUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/Higgsfield-source-EP186-Le-devis-sur-la-nappe",
+              "source": "rapidocms",
               "duree": "10 s",
               "format": "vertical 9:16"
             },
@@ -15602,7 +15602,7 @@ export const series: Serie[] = [
                 "lienCta": "https://site.foodeatup.com/"
               }
             },
-            "storyUrl": null,
+            "storyUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-production-8slc4o/foodeatup-video-factory/dist/stories/EP186.mp4",
             "shortUrl": null,
             "videoYoutubeUrl": null,
             "storyFacebookUrl": null,
@@ -15630,8 +15630,8 @@ export const series: Serie[] = [
             "tutoriel": null,
             "tutorielModuleUrl": "https://tutoriel.foodeatup.com/module/service-commande",
             "higgsfield": {
-              "videoSourceUrl": null,
-              "source": null,
+              "videoSourceUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/Higgsfield-source-EP187-Lost-in-translation",
+              "source": "rapidocms",
               "duree": "10 s",
               "format": "vertical 9:16"
             },
@@ -15681,7 +15681,7 @@ export const series: Serie[] = [
                 "lienCta": "https://site.foodeatup.com/"
               }
             },
-            "storyUrl": null,
+            "storyUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-production-8slc4o/foodeatup-video-factory/dist/stories/EP187.mp4",
             "shortUrl": null,
             "videoYoutubeUrl": null,
             "storyFacebookUrl": null,
@@ -15788,8 +15788,8 @@ export const series: Serie[] = [
             "tutoriel": null,
             "tutorielModuleUrl": "https://tutoriel.foodeatup.com/module/service-commande",
             "higgsfield": {
-              "videoSourceUrl": null,
-              "source": null,
+              "videoSourceUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/Higgsfield-source-EP189-Le-supplement-fantome",
+              "source": "rapidocms",
               "duree": "10 s",
               "format": "vertical 9:16"
             },
@@ -15839,7 +15839,7 @@ export const series: Serie[] = [
                 "lienCta": "https://site.foodeatup.com/"
               }
             },
-            "storyUrl": null,
+            "storyUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-production-8slc4o/foodeatup-video-factory/dist/stories/EP189.mp4",
             "shortUrl": null,
             "videoYoutubeUrl": null,
             "storyFacebookUrl": null,
@@ -15946,8 +15946,8 @@ export const series: Serie[] = [
             "tutoriel": null,
             "tutorielModuleUrl": "https://tutoriel.foodeatup.com/module/stockvision-ai",
             "higgsfield": {
-              "videoSourceUrl": null,
-              "source": null,
+              "videoSourceUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/Higgsfield-source-EP191-Ce-qu-il-y-a-dedans",
+              "source": "rapidocms",
               "duree": "10 s",
               "format": "vertical 9:16"
             },
@@ -15997,7 +15997,7 @@ export const series: Serie[] = [
                 "lienCta": "https://site.foodeatup.com/"
               }
             },
-            "storyUrl": null,
+            "storyUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-production-8slc4o/foodeatup-video-factory/dist/stories/EP191.mp4",
             "shortUrl": null,
             "videoYoutubeUrl": null,
             "storyFacebookUrl": null,
@@ -20986,9 +20986,9 @@ export const series: Serie[] = [
             },
             "storyUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/story-EP314",
             "shortUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/yt-EP314",
-            "videoYoutubeUrl": null,
-            "storyFacebookUrl": null,
-            "videoTiktokUrl": null
+            "videoYoutubeUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-production-8slc4o/foodeatup-video-factory/dist/youtube-paysage/EP314.mp4",
+            "storyFacebookUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-production-8slc4o/foodeatup-video-factory/dist/facebook/EP314.mp4",
+            "videoTiktokUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-production-8slc4o/foodeatup-video-factory/dist/tiktok-story/EP314.mp4"
           },
           {
             "id": "EP315",
@@ -21013,7 +21013,7 @@ export const series: Serie[] = [
             "higgsfield": {
               "duree": "10 s",
               "format": "vertical 9:16",
-              "videoSourceUrl": null,
+              "videoSourceUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-production-8slc4o/foodeatup-video-factory/dist/hooks/EP315.mp4",
               "source": null
             },
             "reseaux": {
@@ -21058,11 +21058,11 @@ export const series: Serie[] = [
                 "lienCta": "https://site.foodeatup.com/"
               }
             },
-            "storyUrl": null,
-            "shortUrl": null,
-            "videoYoutubeUrl": null,
-            "storyFacebookUrl": null,
-            "videoTiktokUrl": null
+            "storyUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-production-8slc4o/foodeatup-video-factory/dist/stories/EP315.mp4",
+            "shortUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-production-8slc4o/foodeatup-video-factory/dist/youtube/EP315.mp4",
+            "videoYoutubeUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-production-8slc4o/foodeatup-video-factory/dist/youtube-paysage/EP315.mp4",
+            "storyFacebookUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-production-8slc4o/foodeatup-video-factory/dist/facebook/EP315.mp4",
+            "videoTiktokUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-production-8slc4o/foodeatup-video-factory/dist/tiktok-story/EP315.mp4"
           }
         ],
         "acte": "Acte II — Le métier",
@@ -21672,9 +21672,9 @@ export const series: Serie[] = [
             },
             "storyUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/story-EP323",
             "shortUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/yt-EP323",
-            "videoYoutubeUrl": null,
-            "storyFacebookUrl": null,
-            "videoTiktokUrl": null
+            "videoYoutubeUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-production-8slc4o/foodeatup-video-factory/dist/youtube-paysage/EP323.mp4",
+            "storyFacebookUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-production-8slc4o/foodeatup-video-factory/dist/facebook/EP323.mp4",
+            "videoTiktokUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-production-8slc4o/foodeatup-video-factory/dist/tiktok-story/EP323.mp4"
           },
           {
             "id": "EP324",
@@ -21746,9 +21746,9 @@ export const series: Serie[] = [
             },
             "storyUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/story-EP324",
             "shortUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/yt-EP324",
-            "videoYoutubeUrl": null,
-            "storyFacebookUrl": null,
-            "videoTiktokUrl": null
+            "videoYoutubeUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-production-8slc4o/foodeatup-video-factory/dist/youtube-paysage/EP324.mp4",
+            "storyFacebookUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-production-8slc4o/foodeatup-video-factory/dist/facebook/EP324.mp4",
+            "videoTiktokUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-production-8slc4o/foodeatup-video-factory/dist/tiktok-story/EP324.mp4"
           },
           {
             "id": "EP325",
@@ -21773,8 +21773,8 @@ export const series: Serie[] = [
             "higgsfield": {
               "duree": "10 s",
               "format": "vertical 9:16",
-              "videoSourceUrl": null,
-              "source": null
+              "videoSourceUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/Higgsfield-source-EP325-Le-poste-que-personne-ne-tient",
+              "source": "rapidocms"
             },
             "reseaux": {
               "facebook": {
@@ -21818,11 +21818,11 @@ export const series: Serie[] = [
                 "lienCta": "https://site.foodeatup.com/"
               }
             },
-            "storyUrl": null,
-            "shortUrl": null,
-            "videoYoutubeUrl": null,
-            "storyFacebookUrl": null,
-            "videoTiktokUrl": null
+            "storyUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-production-8slc4o/foodeatup-video-factory/dist/stories/EP325.mp4",
+            "shortUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-production-8slc4o/foodeatup-video-factory/dist/youtube/EP325.mp4",
+            "videoYoutubeUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-production-8slc4o/foodeatup-video-factory/dist/youtube-paysage/EP325.mp4",
+            "storyFacebookUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-production-8slc4o/foodeatup-video-factory/dist/facebook/EP325.mp4",
+            "videoTiktokUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-production-8slc4o/foodeatup-video-factory/dist/tiktok-story/EP325.mp4"
           },
           {
             "id": "EP326",
@@ -21847,7 +21847,7 @@ export const series: Serie[] = [
             "higgsfield": {
               "duree": "10 s",
               "format": "vertical 9:16",
-              "videoSourceUrl": null,
+              "videoSourceUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-production-8slc4o/foodeatup-video-factory/dist/hooks/EP326.mp4",
               "source": null
             },
             "reseaux": {
@@ -21892,11 +21892,11 @@ export const series: Serie[] = [
                 "lienCta": "https://site.foodeatup.com/"
               }
             },
-            "storyUrl": null,
-            "shortUrl": null,
-            "videoYoutubeUrl": null,
-            "storyFacebookUrl": null,
-            "videoTiktokUrl": null
+            "storyUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-production-8slc4o/foodeatup-video-factory/dist/stories/EP326.mp4",
+            "shortUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-production-8slc4o/foodeatup-video-factory/dist/youtube/EP326.mp4",
+            "videoYoutubeUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-production-8slc4o/foodeatup-video-factory/dist/youtube-paysage/EP326.mp4",
+            "storyFacebookUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-production-8slc4o/foodeatup-video-factory/dist/facebook/EP326.mp4",
+            "videoTiktokUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-production-8slc4o/foodeatup-video-factory/dist/tiktok-story/EP326.mp4"
           },
           {
             "id": "EP327",
@@ -21921,7 +21921,7 @@ export const series: Serie[] = [
             "higgsfield": {
               "duree": "10 s",
               "format": "vertical 9:16",
-              "videoSourceUrl": null,
+              "videoSourceUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-production-8slc4o/foodeatup-video-factory/dist/hooks/EP327.mp4",
               "source": null
             },
             "reseaux": {
@@ -21966,11 +21966,11 @@ export const series: Serie[] = [
                 "lienCta": "https://site.foodeatup.com/"
               }
             },
-            "storyUrl": null,
-            "shortUrl": null,
-            "videoYoutubeUrl": null,
-            "storyFacebookUrl": null,
-            "videoTiktokUrl": null
+            "storyUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-production-8slc4o/foodeatup-video-factory/dist/stories/EP327.mp4",
+            "shortUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-production-8slc4o/foodeatup-video-factory/dist/youtube/EP327.mp4",
+            "videoYoutubeUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-production-8slc4o/foodeatup-video-factory/dist/youtube-paysage/EP327.mp4",
+            "storyFacebookUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-production-8slc4o/foodeatup-video-factory/dist/facebook/EP327.mp4",
+            "videoTiktokUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-production-8slc4o/foodeatup-video-factory/dist/tiktok-story/EP327.mp4"
           },
           {
             "id": "EP328",
@@ -21995,8 +21995,8 @@ export const series: Serie[] = [
             "higgsfield": {
               "duree": "10 s",
               "format": "vertical 9:16",
-              "videoSourceUrl": null,
-              "source": null
+              "videoSourceUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/Higgsfield-source-EP328-Son-avant-le-service-c-est-trois-jours-plus-tot",
+              "source": "rapidocms"
             },
             "reseaux": {
               "facebook": {
@@ -22040,11 +22040,11 @@ export const series: Serie[] = [
                 "lienCta": "https://site.foodeatup.com/"
               }
             },
-            "storyUrl": null,
-            "shortUrl": null,
-            "videoYoutubeUrl": null,
-            "storyFacebookUrl": null,
-            "videoTiktokUrl": null
+            "storyUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-production-8slc4o/foodeatup-video-factory/dist/stories/EP328.mp4",
+            "shortUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-production-8slc4o/foodeatup-video-factory/dist/youtube/EP328.mp4",
+            "videoYoutubeUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-production-8slc4o/foodeatup-video-factory/dist/youtube-paysage/EP328.mp4",
+            "storyFacebookUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-production-8slc4o/foodeatup-video-factory/dist/facebook/EP328.mp4",
+            "videoTiktokUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-production-8slc4o/foodeatup-video-factory/dist/tiktok-story/EP328.mp4"
           },
           {
             "id": "EP329",
@@ -22069,7 +22069,7 @@ export const series: Serie[] = [
             "higgsfield": {
               "duree": "10 s",
               "format": "vertical 9:16",
-              "videoSourceUrl": null,
+              "videoSourceUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-production-8slc4o/foodeatup-video-factory/dist/hooks/EP329.mp4",
               "source": null
             },
             "reseaux": {
@@ -22114,11 +22114,11 @@ export const series: Serie[] = [
                 "lienCta": "https://site.foodeatup.com/"
               }
             },
-            "storyUrl": null,
-            "shortUrl": null,
-            "videoYoutubeUrl": null,
-            "storyFacebookUrl": null,
-            "videoTiktokUrl": null
+            "storyUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-production-8slc4o/foodeatup-video-factory/dist/stories/EP329.mp4",
+            "shortUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-production-8slc4o/foodeatup-video-factory/dist/youtube/EP329.mp4",
+            "videoYoutubeUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-production-8slc4o/foodeatup-video-factory/dist/youtube-paysage/EP329.mp4",
+            "storyFacebookUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-production-8slc4o/foodeatup-video-factory/dist/facebook/EP329.mp4",
+            "videoTiktokUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-production-8slc4o/foodeatup-video-factory/dist/tiktok-story/EP329.mp4"
           },
           {
             "id": "EP330",
@@ -22143,7 +22143,7 @@ export const series: Serie[] = [
             "higgsfield": {
               "duree": "10 s",
               "format": "vertical 9:16",
-              "videoSourceUrl": null,
+              "videoSourceUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-production-8slc4o/foodeatup-video-factory/dist/hooks/EP330.mp4",
               "source": null
             },
             "reseaux": {
@@ -22188,11 +22188,11 @@ export const series: Serie[] = [
                 "lienCta": "https://site.foodeatup.com/"
               }
             },
-            "storyUrl": null,
-            "shortUrl": null,
-            "videoYoutubeUrl": null,
-            "storyFacebookUrl": null,
-            "videoTiktokUrl": null
+            "storyUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-production-8slc4o/foodeatup-video-factory/dist/stories/EP330.mp4",
+            "shortUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-production-8slc4o/foodeatup-video-factory/dist/youtube/EP330.mp4",
+            "videoYoutubeUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-production-8slc4o/foodeatup-video-factory/dist/youtube-paysage/EP330.mp4",
+            "storyFacebookUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-production-8slc4o/foodeatup-video-factory/dist/facebook/EP330.mp4",
+            "videoTiktokUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-production-8slc4o/foodeatup-video-factory/dist/tiktok-story/EP330.mp4"
           },
           {
             "id": "EP331",
@@ -22217,8 +22217,8 @@ export const series: Serie[] = [
             "higgsfield": {
               "duree": "10 s",
               "format": "vertical 9:16",
-              "videoSourceUrl": null,
-              "source": null
+              "videoSourceUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/Higgsfield-source-EP331-Le-mois-pas-la-journee",
+              "source": "rapidocms"
             },
             "reseaux": {
               "facebook": {
@@ -22262,11 +22262,11 @@ export const series: Serie[] = [
                 "lienCta": "https://site.foodeatup.com/"
               }
             },
-            "storyUrl": null,
-            "shortUrl": null,
-            "videoYoutubeUrl": null,
-            "storyFacebookUrl": null,
-            "videoTiktokUrl": null
+            "storyUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-production-8slc4o/foodeatup-video-factory/dist/stories/EP331.mp4",
+            "shortUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-production-8slc4o/foodeatup-video-factory/dist/youtube/EP331.mp4",
+            "videoYoutubeUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-production-8slc4o/foodeatup-video-factory/dist/youtube-paysage/EP331.mp4",
+            "storyFacebookUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-production-8slc4o/foodeatup-video-factory/dist/facebook/EP331.mp4",
+            "videoTiktokUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-production-8slc4o/foodeatup-video-factory/dist/tiktok-story/EP331.mp4"
           }
         ],
         "acte": "Acte II — Le métier",
@@ -22934,8 +22934,8 @@ export const series: Serie[] = [
             "higgsfield": {
               "duree": "10 s",
               "format": "vertical 9:16",
-              "videoSourceUrl": null,
-              "source": null
+              "videoSourceUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/Higgsfield-source-EP409-Configuration-boutique-le-socle-de-la-boucle-gestion",
+              "source": "rapidocms"
             },
             "reseaux": {
               "facebook": {
@@ -22979,7 +22979,7 @@ export const series: Serie[] = [
                 "lienCta": "https://site.foodeatup.com/"
               }
             },
-            "storyUrl": null,
+            "storyUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-production-8slc4o/foodeatup-video-factory/dist/stories/EP409.mp4",
             "shortUrl": null,
             "videoYoutubeUrl": null,
             "storyFacebookUrl": null,
@@ -23008,8 +23008,8 @@ export const series: Serie[] = [
             "higgsfield": {
               "duree": "10 s",
               "format": "vertical 9:16",
-              "videoSourceUrl": null,
-              "source": null
+              "videoSourceUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/Higgsfield-source-EP410-Equipe-qui-execute",
+              "source": "rapidocms"
             },
             "reseaux": {
               "facebook": {
@@ -23053,7 +23053,7 @@ export const series: Serie[] = [
                 "lienCta": "https://site.foodeatup.com/"
               }
             },
-            "storyUrl": null,
+            "storyUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-production-8slc4o/foodeatup-video-factory/dist/stories/EP410.mp4",
             "shortUrl": null,
             "videoYoutubeUrl": null,
             "storyFacebookUrl": null,
@@ -23156,8 +23156,8 @@ export const series: Serie[] = [
             "higgsfield": {
               "duree": "10 s",
               "format": "vertical 9:16",
-              "videoSourceUrl": null,
-              "source": null
+              "videoSourceUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/Higgsfield-source-EP412-HACCP-le-droit-d-exercer",
+              "source": "rapidocms"
             },
             "reseaux": {
               "facebook": {
@@ -23201,7 +23201,7 @@ export const series: Serie[] = [
                 "lienCta": "https://site.foodeatup.com/"
               }
             },
-            "storyUrl": null,
+            "storyUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-production-8slc4o/foodeatup-video-factory/dist/stories/EP412.mp4",
             "shortUrl": null,
             "videoYoutubeUrl": null,
             "storyFacebookUrl": null,

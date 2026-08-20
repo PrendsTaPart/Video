@@ -43646,8 +43646,8 @@
               "tutoriel": null,
               "tutorielModuleUrl": "https://tutoriel.foodeatup.com/module/comptabilite",
               "higgsfield": {
-                "videoSourceUrl": null,
-                "source": null,
+                "videoSourceUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/Higgsfield-source-EP186-Le-devis-sur-la-nappe",
+                "source": "rapidocms",
                 "duree": "10 s",
                 "format": "vertical 9:16",
                 "prompt": "Seedance 2.5. Vertical 9:16, 10 secondes, 1080p, 24 im/s. PAS de texte incrusté, PAS de sous-titres, PAS de filigrane, PAS de logo, AUCUNE légende gravée dans l'image. Photoréaliste, caméra à l'épaule et image de cinéma, faible profondeur de champ, lumière naturelle.\n\n@Image 1 ne définit que l'apparence du chef — son visage exact, sa barbe, sa toque blanche, sa veste blanche et son tablier blanc FoodEatUp. Ne pas modifier ses traits ni sa carrure. Le décor, la lumière, la caméra et l'action viennent de ce prompt, pas de l'image. Il est absent du cadre jusqu'à 8 s.\n\nPastiche de film de casse, écran divisé et énergie de compte à rebours. Un seul plan à l'épaule, aucune coupe.\n\n0-5s: Gros plan sur un set de table en papier couvert de chiffres griffonnés et de ronds de café. Une main le froisse. À cet instant, le conteur sera posé au montage — ne produire aucun son ici : {Quarante couverts, un chiffre au stylo sur un set de table.} End state at 5s: la caméra s'est posée là-dessus, et le chef est toujours absent du cadre.\n5-8s: Coupe sur une poubelle. Coupe sur un groupe d'entreprise qui franchit la porte, l'un d'eux attendant encore un devis qui ne viendra jamais. End state at 8s: le cadre est stabilisé et assez large pour que quelqu'un entre par la droite.\n8-10s: Le chef de @Image 1 entre dans le cadre par la droite, consultant une montre, entièrement concentré. Tenir sur son visage les 2 dernières secondes. Le chef articule cette phrase sans regarder l'objectif, sans qu'aucun son n'en sorte : {Le set de table part à la poubelle avec le devis.} End state at 10s: le plan est tenu sur son visage, caméra immobile, rien d'autre n'entre dans le cadre.\n\nAUDIO — ambiance seule.\nLa piste ne porte que le son réel du lieu : une horloge qui bat, la rumeur sourde de la ville, du papier qu'on froisse.\nAUCUNE voix, AUCUN dialogue audible, AUCUN narrateur, AUCUNE musique.\nLes répliques ci-dessus sont jouées à l'image — lèvres, souffle, regard — et ne produisent aucun son. Les voix sont enregistrées séparément et posées au montage."
@@ -43825,7 +43825,7 @@
                 "format": "9:16 · 1080 × 1920 · 10 s",
                 "hook": "Quarante couverts, un chiffre au stylo sur un set de table",
                 "punchline": "Le set de table part à la poubelle avec le devis",
-                "url": null
+                "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-production-8slc4o/foodeatup-video-factory/dist/stories/EP186.mp4"
               }
             },
             {
@@ -43850,8 +43850,8 @@
               "tutoriel": null,
               "tutorielModuleUrl": "https://tutoriel.foodeatup.com/module/service-commande",
               "higgsfield": {
-                "videoSourceUrl": null,
-                "source": null,
+                "videoSourceUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/Higgsfield-source-EP187-Lost-in-translation",
+                "source": "rapidocms",
                 "duree": "10 s",
                 "format": "vertical 9:16",
                 "prompt": "Seedance 2.5. Vertical 9:16, 10 secondes, 1080p, 24 im/s. PAS de texte incrusté, PAS de sous-titres, PAS de filigrane, PAS de logo, AUCUNE légende gravée dans l'image. Photoréaliste, caméra à l'épaule et image de cinéma, faible profondeur de champ, lumière naturelle.\n\n@Image 1 ne définit que l'apparence du chef — son visage exact, sa barbe, sa toque blanche, sa veste blanche et son tablier blanc FoodEatUp. Ne pas modifier ses traits ni sa carrure. Le décor, la lumière, la caméra et l'action viennent de ce prompt, pas de l'image. Il est absent du cadre jusqu'à 8 s.\n\nSubtitled-film pastiche. One continuous handheld take, no cuts.\n\n0-5s: Un touriste parle avec animation à une table, gestes à l'appui. Le serveur acquiesce, sourire poli figé, stylo en l'air, n'écrivant rien. De faux sous-titres apparaissent en bas, signes brouillés et illisibles. À cet instant, le conteur sera posé au montage — ne produire aucun son ici : {Il commande en anglais. Le serveur sourit et note.} End state at 5s: la caméra s'est posée là-dessus, et le chef est toujours absent du cadre.\n5-8s: Le serveur s'éloigne, sûr de lui. Le sourire du touriste s'efface. End state at 8s: le cadre est stabilisé et assez large pour que quelqu'un entre par la droite.\n8-10s: Le chef de @Image 1 entre dans le cadre par la droite, la tête penchée, poliment perdu. Tenir sur son visage les 2 dernières secondes. Le chef articule cette phrase sans regarder l'objectif, sans qu'aucun son n'en sorte : {Ni l'un ni l'autre ne sait ce qui va arriver.} End state at 10s: le plan est tenu sur son visage, caméra immobile, rien d'autre n'entre dans le cadre.\n\nAUDIO — ambiance seule.\nLa piste ne porte que le son réel du lieu : l'ambiance du restaurant, plusieurs langues mêlées, aucun dialogue intelligible.\nAUCUNE voix, AUCUN dialogue audible, AUCUN narrateur, AUCUNE musique.\nLes répliques ci-dessus sont jouées à l'image — lèvres, souffle, regard — et ne produisent aucun son. Les voix sont enregistrées séparément et posées au montage."
@@ -44029,7 +44029,7 @@
                 "format": "9:16 · 1080 × 1920 · 10 s",
                 "hook": "Il commande en anglais. Le serveur sourit et note",
                 "punchline": "Ni l'un ni l'autre ne sait ce qui va arriver",
-                "url": null
+                "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-production-8slc4o/foodeatup-video-factory/dist/stories/EP187.mp4"
               }
             },
             {
@@ -44258,8 +44258,8 @@
               "tutoriel": null,
               "tutorielModuleUrl": "https://tutoriel.foodeatup.com/module/service-commande",
               "higgsfield": {
-                "videoSourceUrl": null,
-                "source": null,
+                "videoSourceUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/Higgsfield-source-EP189-Le-supplement-fantome",
+                "source": "rapidocms",
                 "duree": "10 s",
                 "format": "vertical 9:16",
                 "prompt": "Seedance 2.5. Vertical 9:16, 10 secondes, 1080p, 24 im/s. PAS de texte incrusté, PAS de sous-titres, PAS de filigrane, PAS de logo, AUCUNE légende gravée dans l'image. Photoréaliste, caméra à l'épaule et image de cinéma, faible profondeur de champ, lumière naturelle.\n\n@Image 1 ne définit que l'apparence du chef — son visage exact, sa barbe, sa toque blanche, sa veste blanche et son tablier blanc FoodEatUp. Ne pas modifier ses traits ni sa carrure. Le décor, la lumière, la caméra et l'action viennent de ce prompt, pas de l'image. Il est absent du cadre jusqu'à 8 s.\n\nPastiche de film de fantômes, lumière froide et désaturée, léger vacillement. Un seul plan à l'épaule, aucune coupe.\n\n0-5s: Un serveur écrit sur un carnet ; l'encre s'efface lettre après lettre sous nos yeux. La page redevient blanche. À cet instant, le conteur sera posé au montage — ne produire aucun son ici : {« Avec du bacon en plus. » Noté sur le carnet.} End state at 5s: la caméra s'est posée là-dessus, et le chef est toujours absent du cadre.\n5-8s: Coupe sur un pass de cuisine où l'assiette se monte sans le supplément. Un ticket s'imprime, et le facture. End state at 8s: le cadre est stabilisé et assez large pour que quelqu'un entre par la droite.\n8-10s: Le chef de @Image 1 entre dans le cadre par la droite, un sourcil sceptique levé. Tenir sur son visage les 2 dernières secondes. Le chef articule cette phrase sans regarder l'objectif, sans qu'aucun son n'en sorte : {La cuisine ne le verra jamais. L'addition, si.} End state at 10s: le plan est tenu sur son visage, caméra immobile, rien d'autre n'entre dans le cadre.\n\nAUDIO — ambiance seule.\nLa piste ne porte que le son réel du lieu : un bourdonnement grave, le grésillement d'une lumière qui vacille, une imprimante à tickets au loin.\nAUCUNE voix, AUCUN dialogue audible, AUCUN narrateur, AUCUNE musique.\nLes répliques ci-dessus sont jouées à l'image — lèvres, souffle, regard — et ne produisent aucun son. Les voix sont enregistrées séparément et posées au montage."
@@ -44437,7 +44437,7 @@
                 "format": "9:16 · 1080 × 1920 · 10 s",
                 "hook": "« Avec du bacon en plus. » Noté sur le carnet",
                 "punchline": "La cuisine ne le verra jamais. L'addition, si",
-                "url": null
+                "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-production-8slc4o/foodeatup-video-factory/dist/stories/EP189.mp4"
               }
             },
             {
@@ -44666,8 +44666,8 @@
               "tutoriel": null,
               "tutorielModuleUrl": "https://tutoriel.foodeatup.com/module/stockvision-ai",
               "higgsfield": {
-                "videoSourceUrl": null,
-                "source": null,
+                "videoSourceUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/Higgsfield-source-EP191-Ce-qu-il-y-a-dedans",
+                "source": "rapidocms",
                 "duree": "10 s",
                 "format": "vertical 9:16",
                 "prompt": "Seedance 2.5. Vertical 9:16, 10 secondes, 1080p, 24 im/s. PAS de texte incrusté, PAS de sous-titres, PAS de filigrane, PAS de logo, AUCUNE légende gravée dans l'image. Photoréaliste, caméra à l'épaule et image de cinéma, faible profondeur de champ, lumière naturelle.\n\n@Image 1 ne définit que l'apparence du chef — son visage exact, sa barbe, sa toque blanche, sa veste blanche et son tablier blanc FoodEatUp. Ne pas modifier ses traits ni sa carrure. Le décor, la lumière, la caméra et l'action viennent de ce prompt, pas de l'image. Il est absent du cadre jusqu'à 8 s.\n\nPastiche de drame judiciaire, lumière dure et zoom lent et dramatique. Un seul plan à l'épaule, aucune coupe.\n\n0-5s: Un client désigne un plat comme on produit une pièce à conviction. Contrechamp : le serveur, éclairé par en dessous, ouvre la bouche et ne dit rien. À cet instant, le conteur sera posé au montage — ne produire aucun son ici : {« Qu'est-ce qu'il y a exactement dans ce plat ? »} End state at 5s: la caméra s'est posée là-dessus, et le chef est toujours absent du cadre.\n5-8s: Un coup de marteau. Le plat reste seul dans le cadre, accusé. End state at 8s: le cadre est stabilisé et assez large pour que quelqu'un entre par la droite.\n8-10s: Le chef de @Image 1 entre dans le cadre par la droite, posant les deux mains à plat, mortellement sérieux. Tenir sur son visage les 2 dernières secondes. Le chef articule cette phrase sans regarder l'objectif, sans qu'aucun son n'en sorte : {Le haussement d'épaules n'est pas une réponse.} End state at 10s: le plan est tenu sur son visage, caméra immobile, rien d'autre n'entre dans le cadre.\n\nAUDIO — ambiance seule.\nLa piste ne porte que le son réel du lieu : l'air d'une salle d'audience, un seul coup de marteau, le silence.\nAUCUNE voix, AUCUN dialogue audible, AUCUN narrateur, AUCUNE musique.\nLes répliques ci-dessus sont jouées à l'image — lèvres, souffle, regard — et ne produisent aucun son. Les voix sont enregistrées séparément et posées au montage."
@@ -44845,7 +44845,7 @@
                 "format": "9:16 · 1080 × 1920 · 10 s",
                 "hook": "« Qu'est-ce qu'il y a exactement dans ce plat ? »",
                 "punchline": "Le haussement d'épaules n'est pas une réponse",
-                "url": null
+                "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-production-8slc4o/foodeatup-video-factory/dist/stories/EP191.mp4"
               }
             },
             {
@@ -57880,6 +57880,18 @@
               "shortYoutube": {
                 "format": "9:16 · 1080 × 1920 · 12,5 s",
                 "url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/yt-EP314"
+              },
+              "videoYoutube": {
+                "format": "16:9 · 1920 × 1080 · 12,5 s",
+                "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-production-8slc4o/foodeatup-video-factory/dist/youtube-paysage/EP314.mp4"
+              },
+              "storyFacebook": {
+                "format": "9:16 · 1080 × 1920 · 12,5 s",
+                "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-production-8slc4o/foodeatup-video-factory/dist/facebook/EP314.mp4"
+              },
+              "videoTiktok": {
+                "format": "9:16 · 1080 × 1920 · 12,5 s",
+                "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-production-8slc4o/foodeatup-video-factory/dist/tiktok-story/EP314.mp4"
               }
             },
             {
@@ -57907,7 +57919,7 @@
                 "prompt": "Seedance 2.5. Vertical 9:16, 10 secondes, 1080p, 24 im/s. PAS de texte incrusté, PAS de sous-titres, PAS de filigrane, PAS de logo, AUCUNE légende gravée dans l'image. Photoréaliste, caméra à l'épaule, profondeur de champ courte. AUCUN écran allumé, AUCUNE tablette, AUCUNE interface visible : cette série montre le geste, pas l'outil.\n\nPERSONNAGE — le plongeur, tenue de son poste, visage lisible. Une seule personne au premier plan.\n\nDécor : une cuisine professionnelle en inox, vu depuis le poste de travail du personnage. Heure : 23h30. Lumière crue de fin de service, néons, surfaces vides. Plan-séquence tenu, caméra à l'épaule, sans coupe.\n\n0-5s: Le plan de nettoyage, les relevés, la traçabilité. Les sept autres boucles coûtent de la marge. Celle-ci coûte la fermeture. À cet instant, la voix off sera posé au montage — ne produire aucun son ici : {Il voit passer tout ce que la salle renvoie. C'est le premier indicateur du restaurant, et personne ne le lit.} End state at 5s: le geste est engagé, le personnage seul dans le cadre, rien n'a encore bougé autour.\n5-8s: À 5 secondes exactement, quelque chose se tend : un regard vers la porte, un geste suspendu, un objet qu'on repose. Un seul changement. End state at 8s: le personnage a suspendu son geste et regarde hors champ.\n8-10s: Le personnage immobile, il regarde son poste, pas l'objectif. La caméra ne bouge plus. À cet instant, la voix off sera posé au montage — ne produire aucun son ici : {Sa boucle est la seule dont l'échec ferme le restaurant.} End state at 10s: plan figé sur le personnage à son poste, il ne regarde pas l'objectif.\n\nAUDIO — ambiance seule.\nLa piste ne porte que le son réel du lieu : ambiance réelle du lieu.\nAUCUNE voix, AUCUN dialogue audible, AUCUN narrateur, AUCUNE musique.\nLes répliques ci-dessus sont jouées à l'image — lèvres, souffle, regard — et ne produisent aucun son. Les voix sont enregistrées séparément et posées au montage.",
                 "duree": "10 s",
                 "format": "vertical 9:16",
-                "videoSourceUrl": null,
+                "videoSourceUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-production-8slc4o/foodeatup-video-factory/dist/hooks/EP315.mp4",
                 "source": null
               },
               "scriptHeygen": "Le nettoyage, la traçabilité, c'est moi. Les autres postes coûtent de la marge quand ils lâchent. Le mien coûte la fermeture.",
@@ -58074,7 +58086,23 @@
                 "format": "9:16 · 1080 × 1920 · 10 s",
                 "hook": "Il voit passer tout ce que la salle renvoie. C'est le premier indicateur du restaurant, et personne ne le lit",
                 "punchline": "Sa boucle est la seule dont l'échec ferme le restaurant",
-                "url": null
+                "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-production-8slc4o/foodeatup-video-factory/dist/stories/EP315.mp4"
+              },
+              "shortYoutube": {
+                "format": "9:16 · 1080 × 1920 · 12,5 s",
+                "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-production-8slc4o/foodeatup-video-factory/dist/youtube/EP315.mp4"
+              },
+              "videoYoutube": {
+                "format": "16:9 · 1920 × 1080 · 12,5 s",
+                "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-production-8slc4o/foodeatup-video-factory/dist/youtube-paysage/EP315.mp4"
+              },
+              "storyFacebook": {
+                "format": "9:16 · 1080 × 1920 · 12,5 s",
+                "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-production-8slc4o/foodeatup-video-factory/dist/facebook/EP315.mp4"
+              },
+              "videoTiktok": {
+                "format": "9:16 · 1080 × 1920 · 12,5 s",
+                "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-production-8slc4o/foodeatup-video-factory/dist/tiktok-story/EP315.mp4"
               }
             }
           ],
@@ -59771,6 +59799,18 @@
               "shortYoutube": {
                 "format": "9:16 · 1080 × 1920 · 12,5 s",
                 "url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/yt-EP323"
+              },
+              "videoYoutube": {
+                "format": "16:9 · 1920 × 1080 · 12,5 s",
+                "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-production-8slc4o/foodeatup-video-factory/dist/youtube-paysage/EP323.mp4"
+              },
+              "storyFacebook": {
+                "format": "9:16 · 1080 × 1920 · 12,5 s",
+                "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-production-8slc4o/foodeatup-video-factory/dist/facebook/EP323.mp4"
+              },
+              "videoTiktok": {
+                "format": "9:16 · 1080 × 1920 · 12,5 s",
+                "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-production-8slc4o/foodeatup-video-factory/dist/tiktok-story/EP323.mp4"
               }
             },
             {
@@ -59970,6 +60010,18 @@
               "shortYoutube": {
                 "format": "9:16 · 1080 × 1920 · 12,5 s",
                 "url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/yt-EP324"
+              },
+              "videoYoutube": {
+                "format": "16:9 · 1920 × 1080 · 12,5 s",
+                "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-production-8slc4o/foodeatup-video-factory/dist/youtube-paysage/EP324.mp4"
+              },
+              "storyFacebook": {
+                "format": "9:16 · 1080 × 1920 · 12,5 s",
+                "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-production-8slc4o/foodeatup-video-factory/dist/facebook/EP324.mp4"
+              },
+              "videoTiktok": {
+                "format": "9:16 · 1080 × 1920 · 12,5 s",
+                "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-production-8slc4o/foodeatup-video-factory/dist/tiktok-story/EP324.mp4"
               }
             },
             {
@@ -59997,8 +60049,8 @@
                 "prompt": "Seedance 2.5. Vertical 9:16, 10 secondes, 1080p, 24 im/s. PAS de texte incrusté, PAS de sous-titres, PAS de filigrane, PAS de logo, AUCUNE légende gravée dans l'image. Photoréaliste, caméra à l'épaule, profondeur de champ courte. AUCUN écran allumé, AUCUNE tablette, AUCUNE interface visible : cette série montre le geste, pas l'outil.\n\nPERSONNAGE — le responsable de la communication, tenue de son poste, visage lisible. Une seule personne au premier plan.\n\nDécor : un petit bureau à l'étage, au-dessus de la salle, vu depuis le poste de travail du personnage. Heure : 07h00. Lumière froide d'avant l'aube, une seule source allumée. Plan-séquence tenu, caméra à l'épaule, sans coupe.\n\n0-5s: Il n'y a pas de responsable de la communication. Il y a un patron qui poste à vingt-trois heures, mal, quand il y pense. À cet instant, la voix off sera posé au montage — ne produire aucun son ici : {Ce poste n'existe pas. C'est le patron qui poste à 23 h, mal, quand il y pense.} End state at 5s: le geste est engagé, le personnage seul dans le cadre, rien n'a encore bougé autour.\n5-8s: À 5 secondes exactement, quelque chose se tend : un regard vers la porte, un geste suspendu, un objet qu'on repose. Un seul changement. End state at 8s: le personnage a suspendu son geste et regarde hors champ.\n8-10s: Le personnage immobile, il regarde son poste, pas l'objectif. La caméra ne bouge plus. À cet instant, la voix off sera posé au montage — ne produire aucun son ici : {La seule boucle qui touche les sept autres est celle que personne ne tient.} End state at 10s: plan figé sur le personnage à son poste, il ne regarde pas l'objectif.\n\nAUDIO — ambiance seule.\nLa piste ne porte que le son réel du lieu : ambiance réelle du lieu.\nAUCUNE voix, AUCUN dialogue audible, AUCUN narrateur, AUCUNE musique.\nLes répliques ci-dessus sont jouées à l'image — lèvres, souffle, regard — et ne produisent aucun son. Les voix sont enregistrées séparément et posées au montage.",
                 "duree": "10 s",
                 "format": "vertical 9:16",
-                "videoSourceUrl": null,
-                "source": null
+                "videoSourceUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/Higgsfield-source-EP325-Le-poste-que-personne-ne-tient",
+                "source": "rapidocms"
               },
               "scriptHeygen": "Ce poste n'existe pas chez nous. C'est le patron qui poste à vingt-trois heures, mal, quand il y pense.",
               "metier": "Le responsable de la communication",
@@ -60164,7 +60216,23 @@
                 "format": "9:16 · 1080 × 1920 · 10 s",
                 "hook": "Ce poste n'existe pas. C'est le patron qui poste à 23 h, mal, quand il y pense",
                 "punchline": "La seule boucle qui touche les sept autres est celle que personne ne tient",
-                "url": null
+                "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-production-8slc4o/foodeatup-video-factory/dist/stories/EP325.mp4"
+              },
+              "shortYoutube": {
+                "format": "9:16 · 1080 × 1920 · 12,5 s",
+                "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-production-8slc4o/foodeatup-video-factory/dist/youtube/EP325.mp4"
+              },
+              "videoYoutube": {
+                "format": "16:9 · 1920 × 1080 · 12,5 s",
+                "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-production-8slc4o/foodeatup-video-factory/dist/youtube-paysage/EP325.mp4"
+              },
+              "storyFacebook": {
+                "format": "9:16 · 1080 × 1920 · 12,5 s",
+                "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-production-8slc4o/foodeatup-video-factory/dist/facebook/EP325.mp4"
+              },
+              "videoTiktok": {
+                "format": "9:16 · 1080 × 1920 · 12,5 s",
+                "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-production-8slc4o/foodeatup-video-factory/dist/tiktok-story/EP325.mp4"
               }
             },
             {
@@ -60192,7 +60260,7 @@
                 "prompt": "Seedance 2.5. Vertical 9:16, 10 secondes, 1080p, 24 im/s. PAS de texte incrusté, PAS de sous-titres, PAS de filigrane, PAS de logo, AUCUNE légende gravée dans l'image. Photoréaliste, caméra à l'épaule, profondeur de champ courte. AUCUN écran allumé, AUCUNE tablette, AUCUNE interface visible : cette série montre le geste, pas l'outil.\n\nPERSONNAGE — le responsable de la communication, tenue de son poste, visage lisible. Une seule personne au premier plan.\n\nDécor : un petit bureau à l'étage, au-dessus de la salle, vu depuis le poste de travail du personnage. Heure : 20h15. Lumière chaude et saturée, vapeur, mouvement constant. Plan-séquence tenu, caméra à l'épaule, sans coupe.\n\n0-5s: C'est justement l'heure où il y aurait quelque chose à montrer. Tout le monde est en salle. À cet instant, la voix off sera posé au montage — ne produire aucun son ici : {Ce poste n'existe pas. C'est le patron qui poste à 23 h, mal, quand il y pense.} End state at 5s: le geste est engagé, le personnage seul dans le cadre, rien n'a encore bougé autour.\n5-8s: À 5 secondes exactement, quelque chose se tend : un regard vers la porte, un geste suspendu, un objet qu'on repose. Un seul changement. End state at 8s: le personnage a suspendu son geste et regarde hors champ.\n8-10s: Le personnage immobile, il regarde son poste, pas l'objectif. La caméra ne bouge plus. À cet instant, la voix off sera posé au montage — ne produire aucun son ici : {La seule boucle qui touche les sept autres est celle que personne ne tient.} End state at 10s: plan figé sur le personnage à son poste, il ne regarde pas l'objectif.\n\nAUDIO — ambiance seule.\nLa piste ne porte que le son réel du lieu : ambiance réelle du lieu.\nAUCUNE voix, AUCUN dialogue audible, AUCUN narrateur, AUCUNE musique.\nLes répliques ci-dessus sont jouées à l'image — lèvres, souffle, regard — et ne produisent aucun son. Les voix sont enregistrées séparément et posées au montage.",
                 "duree": "10 s",
                 "format": "vertical 9:16",
-                "videoSourceUrl": null,
+                "videoSourceUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-production-8slc4o/foodeatup-video-factory/dist/hooks/EP326.mp4",
                 "source": null
               },
               "scriptHeygen": "Pendant le service, personne ne communique. C'est justement l'heure où il y aurait quelque chose à montrer.",
@@ -60359,7 +60427,23 @@
                 "format": "9:16 · 1080 × 1920 · 10 s",
                 "hook": "Ce poste n'existe pas. C'est le patron qui poste à 23 h, mal, quand il y pense",
                 "punchline": "La seule boucle qui touche les sept autres est celle que personne ne tient",
-                "url": null
+                "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-production-8slc4o/foodeatup-video-factory/dist/stories/EP326.mp4"
+              },
+              "shortYoutube": {
+                "format": "9:16 · 1080 × 1920 · 12,5 s",
+                "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-production-8slc4o/foodeatup-video-factory/dist/youtube/EP326.mp4"
+              },
+              "videoYoutube": {
+                "format": "16:9 · 1920 × 1080 · 12,5 s",
+                "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-production-8slc4o/foodeatup-video-factory/dist/youtube-paysage/EP326.mp4"
+              },
+              "storyFacebook": {
+                "format": "9:16 · 1080 × 1920 · 12,5 s",
+                "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-production-8slc4o/foodeatup-video-factory/dist/facebook/EP326.mp4"
+              },
+              "videoTiktok": {
+                "format": "9:16 · 1080 × 1920 · 12,5 s",
+                "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-production-8slc4o/foodeatup-video-factory/dist/tiktok-story/EP326.mp4"
               }
             },
             {
@@ -60387,7 +60471,7 @@
                 "prompt": "Seedance 2.5. Vertical 9:16, 10 secondes, 1080p, 24 im/s. PAS de texte incrusté, PAS de sous-titres, PAS de filigrane, PAS de logo, AUCUNE légende gravée dans l'image. Photoréaliste, caméra à l'épaule, profondeur de champ courte. AUCUN écran allumé, AUCUNE tablette, AUCUNE interface visible : cette série montre le geste, pas l'outil.\n\nPERSONNAGE — le responsable de la communication, tenue de son poste, visage lisible. Une seule personne au premier plan.\n\nDécor : un petit bureau à l'étage, au-dessus de la salle, vu depuis le poste de travail du personnage. Heure : 23h30. Lumière crue de fin de service, néons, surfaces vides. Plan-séquence tenu, caméra à l'épaule, sans coupe.\n\n0-5s: Douze kilos de saumon à écouler avant vendredi. La boucle communication est la seule qui touche les sept autres — et c'est celle qui reste vide. À cet instant, la voix off sera posé au montage — ne produire aucun son ici : {Ce poste n'existe pas. C'est le patron qui poste à 23 h, mal, quand il y pense.} End state at 5s: le geste est engagé, le personnage seul dans le cadre, rien n'a encore bougé autour.\n5-8s: À 5 secondes exactement, quelque chose se tend : un regard vers la porte, un geste suspendu, un objet qu'on repose. Un seul changement. End state at 8s: le personnage a suspendu son geste et regarde hors champ.\n8-10s: Le personnage immobile, il regarde son poste, pas l'objectif. La caméra ne bouge plus. À cet instant, la voix off sera posé au montage — ne produire aucun son ici : {La seule boucle qui touche les sept autres est celle que personne ne tient.} End state at 10s: plan figé sur le personnage à son poste, il ne regarde pas l'objectif.\n\nAUDIO — ambiance seule.\nLa piste ne porte que le son réel du lieu : ambiance réelle du lieu.\nAUCUNE voix, AUCUN dialogue audible, AUCUN narrateur, AUCUNE musique.\nLes répliques ci-dessus sont jouées à l'image — lèvres, souffle, regard — et ne produisent aucun son. Les voix sont enregistrées séparément et posées au montage.",
                 "duree": "10 s",
                 "format": "vertical 9:16",
-                "videoSourceUrl": null,
+                "videoSourceUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-production-8slc4o/foodeatup-video-factory/dist/hooks/EP327.mp4",
                 "source": null
               },
               "scriptHeygen": "Douze kilos de saumon à écouler avant vendredi. La seule boucle qui touche les sept autres est celle que personne ne tient.",
@@ -60554,7 +60638,23 @@
                 "format": "9:16 · 1080 × 1920 · 10 s",
                 "hook": "Ce poste n'existe pas. C'est le patron qui poste à 23 h, mal, quand il y pense",
                 "punchline": "La seule boucle qui touche les sept autres est celle que personne ne tient",
-                "url": null
+                "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-production-8slc4o/foodeatup-video-factory/dist/stories/EP327.mp4"
+              },
+              "shortYoutube": {
+                "format": "9:16 · 1080 × 1920 · 12,5 s",
+                "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-production-8slc4o/foodeatup-video-factory/dist/youtube/EP327.mp4"
+              },
+              "videoYoutube": {
+                "format": "16:9 · 1920 × 1080 · 12,5 s",
+                "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-production-8slc4o/foodeatup-video-factory/dist/youtube-paysage/EP327.mp4"
+              },
+              "storyFacebook": {
+                "format": "9:16 · 1080 × 1920 · 12,5 s",
+                "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-production-8slc4o/foodeatup-video-factory/dist/facebook/EP327.mp4"
+              },
+              "videoTiktok": {
+                "format": "9:16 · 1080 × 1920 · 12,5 s",
+                "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-production-8slc4o/foodeatup-video-factory/dist/tiktok-story/EP327.mp4"
               }
             },
             {
@@ -60582,8 +60682,8 @@
                 "prompt": "Seedance 2.5. Vertical 9:16, 10 secondes, 1080p, 24 im/s. PAS de texte incrusté, PAS de sous-titres, PAS de filigrane, PAS de logo, AUCUNE légende gravée dans l'image. Photoréaliste, caméra à l'épaule, profondeur de champ courte. AUCUN écran allumé, AUCUNE tablette, AUCUNE interface visible : cette série montre le geste, pas l'outil.\n\nPERSONNAGE — le client, tenue de son poste, visage lisible. Une seule personne au premier plan.\n\nDécor : une salle de restaurant, vu depuis le poste de travail du personnage. Heure : 07h00. Lumière froide d'avant l'aube, une seule source allumée. Plan-séquence tenu, caméra à l'épaule, sans coupe.\n\n0-5s: Il cherche, il compare, il réserve. Sur le site du restaurant ou sur une plateforme qui prend sa commission — ça se joue là. À cet instant, la voix off sera posé au montage — ne produire aucun son ici : {Il ne verra jamais le logiciel. Il verra tout ce que le logiciel a fait — ou pas fait.} End state at 5s: le geste est engagé, le personnage seul dans le cadre, rien n'a encore bougé autour.\n5-8s: À 5 secondes exactement, quelque chose se tend : un regard vers la porte, un geste suspendu, un objet qu'on repose. Un seul changement. End state at 8s: le personnage a suspendu son geste et regarde hors champ.\n8-10s: Le personnage immobile, il regarde son poste, pas l'objectif. La caméra ne bouge plus. À cet instant, la voix off sera posé au montage — ne produire aucun son ici : {Son « avant le service » n'est pas la mise en place : c'est la réservation, trois jours plus tôt.} End state at 10s: plan figé sur le personnage à son poste, il ne regarde pas l'objectif.\n\nAUDIO — ambiance seule.\nLa piste ne porte que le son réel du lieu : ambiance réelle du lieu.\nAUCUNE voix, AUCUN dialogue audible, AUCUN narrateur, AUCUNE musique.\nLes répliques ci-dessus sont jouées à l'image — lèvres, souffle, regard — et ne produisent aucun son. Les voix sont enregistrées séparément et posées au montage.",
                 "duree": "10 s",
                 "format": "vertical 9:16",
-                "videoSourceUrl": null,
-                "source": null
+                "videoSourceUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/Higgsfield-source-EP328-Son-avant-le-service-c-est-trois-jours-plus-tot",
+                "source": "rapidocms"
               },
               "scriptHeygen": "Je cherche, je compare, je réserve. Sur le site du restaurant ou sur une plateforme qui prend sa commission — ça se joue là.",
               "metier": "Le client",
@@ -60749,7 +60849,23 @@
                 "format": "9:16 · 1080 × 1920 · 10 s",
                 "hook": "Il ne verra jamais le logiciel. Il verra tout ce que le logiciel a fait — ou pas fait",
                 "punchline": "Son « avant le service » n'est pas la mise en place : c'est la réservation, trois jours plus tôt",
-                "url": null
+                "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-production-8slc4o/foodeatup-video-factory/dist/stories/EP328.mp4"
+              },
+              "shortYoutube": {
+                "format": "9:16 · 1080 × 1920 · 12,5 s",
+                "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-production-8slc4o/foodeatup-video-factory/dist/youtube/EP328.mp4"
+              },
+              "videoYoutube": {
+                "format": "16:9 · 1920 × 1080 · 12,5 s",
+                "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-production-8slc4o/foodeatup-video-factory/dist/youtube-paysage/EP328.mp4"
+              },
+              "storyFacebook": {
+                "format": "9:16 · 1080 × 1920 · 12,5 s",
+                "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-production-8slc4o/foodeatup-video-factory/dist/facebook/EP328.mp4"
+              },
+              "videoTiktok": {
+                "format": "9:16 · 1080 × 1920 · 12,5 s",
+                "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-production-8slc4o/foodeatup-video-factory/dist/tiktok-story/EP328.mp4"
               }
             },
             {
@@ -60777,7 +60893,7 @@
                 "prompt": "Seedance 2.5. Vertical 9:16, 10 secondes, 1080p, 24 im/s. PAS de texte incrusté, PAS de sous-titres, PAS de filigrane, PAS de logo, AUCUNE légende gravée dans l'image. Photoréaliste, caméra à l'épaule, profondeur de champ courte. AUCUN écran allumé, AUCUNE tablette, AUCUNE interface visible : cette série montre le geste, pas l'outil.\n\nPERSONNAGE — le client, tenue de son poste, visage lisible. Une seule personne au premier plan.\n\nDécor : une salle de restaurant, vu depuis le poste de travail du personnage. Heure : 20h15. Lumière chaude et saturée, vapeur, mouvement constant. Plan-séquence tenu, caméra à l'épaule, sans coupe.\n\n0-5s: Il verra une table prête à son nom, une allergie déjà notée, un plat qui revient trop cuit. Tout ce que le logiciel a fait, ou n'a pas fait. À cet instant, la voix off sera posé au montage — ne produire aucun son ici : {Il ne verra jamais le logiciel. Il verra tout ce que le logiciel a fait — ou pas fait.} End state at 5s: le geste est engagé, le personnage seul dans le cadre, rien n'a encore bougé autour.\n5-8s: À 5 secondes exactement, quelque chose se tend : un regard vers la porte, un geste suspendu, un objet qu'on repose. Un seul changement. End state at 8s: le personnage a suspendu son geste et regarde hors champ.\n8-10s: Le personnage immobile, il regarde son poste, pas l'objectif. La caméra ne bouge plus. À cet instant, la voix off sera posé au montage — ne produire aucun son ici : {Son « avant le service » n'est pas la mise en place : c'est la réservation, trois jours plus tôt.} End state at 10s: plan figé sur le personnage à son poste, il ne regarde pas l'objectif.\n\nAUDIO — ambiance seule.\nLa piste ne porte que le son réel du lieu : ambiance réelle du lieu.\nAUCUNE voix, AUCUN dialogue audible, AUCUN narrateur, AUCUNE musique.\nLes répliques ci-dessus sont jouées à l'image — lèvres, souffle, regard — et ne produisent aucun son. Les voix sont enregistrées séparément et posées au montage.",
                 "duree": "10 s",
                 "format": "vertical 9:16",
-                "videoSourceUrl": null,
+                "videoSourceUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-production-8slc4o/foodeatup-video-factory/dist/hooks/EP329.mp4",
                 "source": null
               },
               "scriptHeygen": "Je ne verrai jamais leur logiciel. Je verrai une table à mon nom, une allergie déjà notée, ou un plat qui revient trop cuit.",
@@ -60944,7 +61060,23 @@
                 "format": "9:16 · 1080 × 1920 · 10 s",
                 "hook": "Il ne verra jamais le logiciel. Il verra tout ce que le logiciel a fait — ou pas fait",
                 "punchline": "Son « avant le service » n'est pas la mise en place : c'est la réservation, trois jours plus tôt",
-                "url": null
+                "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-production-8slc4o/foodeatup-video-factory/dist/stories/EP329.mp4"
+              },
+              "shortYoutube": {
+                "format": "9:16 · 1080 × 1920 · 12,5 s",
+                "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-production-8slc4o/foodeatup-video-factory/dist/youtube/EP329.mp4"
+              },
+              "videoYoutube": {
+                "format": "16:9 · 1920 × 1080 · 12,5 s",
+                "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-production-8slc4o/foodeatup-video-factory/dist/youtube-paysage/EP329.mp4"
+              },
+              "storyFacebook": {
+                "format": "9:16 · 1080 × 1920 · 12,5 s",
+                "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-production-8slc4o/foodeatup-video-factory/dist/facebook/EP329.mp4"
+              },
+              "videoTiktok": {
+                "format": "9:16 · 1080 × 1920 · 12,5 s",
+                "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-production-8slc4o/foodeatup-video-factory/dist/tiktok-story/EP329.mp4"
               }
             },
             {
@@ -60972,7 +61104,7 @@
                 "prompt": "Seedance 2.5. Vertical 9:16, 10 secondes, 1080p, 24 im/s. PAS de texte incrusté, PAS de sous-titres, PAS de filigrane, PAS de logo, AUCUNE légende gravée dans l'image. Photoréaliste, caméra à l'épaule, profondeur de champ courte. AUCUN écran allumé, AUCUNE tablette, AUCUNE interface visible : cette série montre le geste, pas l'outil.\n\nPERSONNAGE — le client, tenue de son poste, visage lisible. Une seule personne au premier plan.\n\nDécor : une salle de restaurant, vu depuis le poste de travail du personnage. Heure : 23h30. Lumière crue de fin de service, néons, surfaces vides. Plan-séquence tenu, caméra à l'épaule, sans coupe.\n\n0-5s: Vingt-trois heures, dans le métro, trois étoiles. Personne au restaurant ne saura jamais que c'était le pavé. À cet instant, la voix off sera posé au montage — ne produire aucun son ici : {Il ne verra jamais le logiciel. Il verra tout ce que le logiciel a fait — ou pas fait.} End state at 5s: le geste est engagé, le personnage seul dans le cadre, rien n'a encore bougé autour.\n5-8s: À 5 secondes exactement, quelque chose se tend : un regard vers la porte, un geste suspendu, un objet qu'on repose. Un seul changement. End state at 8s: le personnage a suspendu son geste et regarde hors champ.\n8-10s: Le personnage immobile, il regarde son poste, pas l'objectif. La caméra ne bouge plus. À cet instant, la voix off sera posé au montage — ne produire aucun son ici : {Son « avant le service » n'est pas la mise en place : c'est la réservation, trois jours plus tôt.} End state at 10s: plan figé sur le personnage à son poste, il ne regarde pas l'objectif.\n\nAUDIO — ambiance seule.\nLa piste ne porte que le son réel du lieu : ambiance réelle du lieu.\nAUCUNE voix, AUCUN dialogue audible, AUCUN narrateur, AUCUNE musique.\nLes répliques ci-dessus sont jouées à l'image — lèvres, souffle, regard — et ne produisent aucun son. Les voix sont enregistrées séparément et posées au montage.",
                 "duree": "10 s",
                 "format": "vertical 9:16",
-                "videoSourceUrl": null,
+                "videoSourceUrl": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-production-8slc4o/foodeatup-video-factory/dist/hooks/EP330.mp4",
                 "source": null
               },
               "scriptHeygen": "Vingt-trois heures, dans le métro, trois étoiles. Personne là-bas ne saura jamais que c'était le pavé.",
@@ -61139,7 +61271,23 @@
                 "format": "9:16 · 1080 × 1920 · 10 s",
                 "hook": "Il ne verra jamais le logiciel. Il verra tout ce que le logiciel a fait — ou pas fait",
                 "punchline": "Son « avant le service » n'est pas la mise en place : c'est la réservation, trois jours plus tôt",
-                "url": null
+                "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-production-8slc4o/foodeatup-video-factory/dist/stories/EP330.mp4"
+              },
+              "shortYoutube": {
+                "format": "9:16 · 1080 × 1920 · 12,5 s",
+                "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-production-8slc4o/foodeatup-video-factory/dist/youtube/EP330.mp4"
+              },
+              "videoYoutube": {
+                "format": "16:9 · 1920 × 1080 · 12,5 s",
+                "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-production-8slc4o/foodeatup-video-factory/dist/youtube-paysage/EP330.mp4"
+              },
+              "storyFacebook": {
+                "format": "9:16 · 1080 × 1920 · 12,5 s",
+                "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-production-8slc4o/foodeatup-video-factory/dist/facebook/EP330.mp4"
+              },
+              "videoTiktok": {
+                "format": "9:16 · 1080 × 1920 · 12,5 s",
+                "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-production-8slc4o/foodeatup-video-factory/dist/tiktok-story/EP330.mp4"
               }
             },
             {
@@ -61167,8 +61315,8 @@
                 "prompt": "Seedance 2.5. Vertical 9:16, 10 secondes, 1080p, 24 im/s. PAS de texte incrusté, PAS de sous-titres, PAS de filigrane, PAS de logo, AUCUNE légende gravée dans l'image. Photoréaliste, caméra à l'épaule, profondeur de champ courte. AUCUN écran allumé, AUCUNE tablette, AUCUNE interface visible : cette série montre le geste, pas l'outil.\n\nPERSONNAGE — l'expert-comptable et le patron, tenue de son poste, visage lisible. Une seule personne au premier plan.\n\nDécor : un petit bureau à l'étage, au-dessus de la salle, vu depuis le poste de travail du personnage. Heure : 23h30. Lumière crue de fin de service, néons, surfaces vides. Plan-séquence tenu, caméra à l'épaule, sans coupe.\n\n0-5s: Les trente services de la série arrivent sur un même tableau. Ce n'est plus un métier qu'on regarde, c'est ce que les dix métiers ont produit ensemble. À cet instant, la voix off sera posé au montage — ne produire aucun son ici : {Trente journées ont fini ici.} End state at 5s: le geste est engagé, le personnage seul dans le cadre, rien n'a encore bougé autour.\n5-8s: À 5 secondes exactement, quelque chose se tend : un regard vers la porte, un geste suspendu, un objet qu'on repose. Un seul changement. End state at 8s: le personnage a suspendu son geste et regarde hors champ.\n8-10s: Le personnage immobile, il regarde son poste, pas l'objectif. La caméra ne bouge plus. À cet instant, la voix off sera posé au montage — ne produire aucun son ici : {Trente services deviennent un seul chiffre.} End state at 10s: plan figé sur le personnage à son poste, il ne regarde pas l'objectif.\n\nAUDIO — ambiance seule.\nLa piste ne porte que le son réel du lieu : ambiance réelle du lieu.\nAUCUNE voix, AUCUN dialogue audible, AUCUN narrateur, AUCUNE musique.\nLes répliques ci-dessus sont jouées à l'image — lèvres, souffle, regard — et ne produisent aucun son. Les voix sont enregistrées séparément et posées au montage.",
                 "duree": "10 s",
                 "format": "vertical 9:16",
-                "videoSourceUrl": null,
-                "source": null
+                "videoSourceUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/Higgsfield-source-EP331-Le-mois-pas-la-journee",
+                "source": "rapidocms"
               },
               "scriptHeygen": "Trente services arrivent sur le même tableau. Ce n'est plus un métier que je regarde : c'est ce que dix métiers ont produit ensemble.",
               "metier": "L'expert-comptable et le patron",
@@ -61334,7 +61482,23 @@
                 "format": "9:16 · 1080 × 1920 · 10 s",
                 "hook": "Trente journées ont fini ici",
                 "punchline": "Trente services deviennent un seul chiffre",
-                "url": null
+                "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-production-8slc4o/foodeatup-video-factory/dist/stories/EP331.mp4"
+              },
+              "shortYoutube": {
+                "format": "9:16 · 1080 × 1920 · 12,5 s",
+                "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-production-8slc4o/foodeatup-video-factory/dist/youtube/EP331.mp4"
+              },
+              "videoYoutube": {
+                "format": "16:9 · 1920 × 1080 · 12,5 s",
+                "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-production-8slc4o/foodeatup-video-factory/dist/youtube-paysage/EP331.mp4"
+              },
+              "storyFacebook": {
+                "format": "9:16 · 1080 × 1920 · 12,5 s",
+                "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-production-8slc4o/foodeatup-video-factory/dist/facebook/EP331.mp4"
+              },
+              "videoTiktok": {
+                "format": "9:16 · 1080 × 1920 · 12,5 s",
+                "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-production-8slc4o/foodeatup-video-factory/dist/tiktok-story/EP331.mp4"
               }
             }
           ],
@@ -62989,8 +63153,8 @@
                 "prompt": "Seedance 2.5. Vertical 9:16, 10 secondes, 1080p, 24 im/s. PAS de texte incrusté, PAS de sous-titres, PAS de filigrane, PAS de logo, AUCUNE légende gravée dans l'image. Photoréaliste, caméra fixe ou très lent travelling.\n\nIDENTITÉ VISUELLE — RapidoCMS. Bleu #03A9F5 présent dans le décor — un écran éteint qui reflète, une lumière, un objet — sans jamais former de logo. Tons clairs, gris #383838.\n\n@Image 1 ne définit que le visage du chef — barbe, toque blanche, veste blanche, tablier blanc FoodEatUp. Ne pas modifier ses traits ni sa carrure. Il reste flou, en retrait : le sujet net du plan est l'objet, pas lui.\n\nUn objet réel du restaurant au premier plan, net ; le chef en retrait, flou, qui regarde. On filme ce que la phrase déclenche, jamais le schéma qui l'explique. Ce qui se joue : Le document de référence de toute la boucle gestion. La fiche technique dit ce qu'il y a dans le plat, ce qu'il coûte et ce qu'il rapporte.\n\n0-5s: L'objet est net au premier plan, immobile ; le chef, flou derrière, le regarde. Très lent travelling avant. À cet instant, le chef sera posé au montage — ne produire aucun son ici : {Une fiche technique fausse, et tout le reste est faux avec elle.} End state at 5s: l'objet occupe le centre du cadre, encore dans son état de départ.\n5-8s: À 5 secondes exactement, l'objet change d'état — il s'allume, il bouge, il s'ouvre. Rien d'autre ne change. End state at 8s: le nouvel état de l'objet est pleinement lisible, le chef n'a pas bougé.\n8-10s: Le plan s'immobilise sur l'objet. La caméra ne bouge plus. À cet instant, le chef sera posé au montage — ne produire aucun son ici : {Tout le reste tourne à vide. Une fiche fausse fausse le food cost, le stock, la marge et le prix.} End state at 10s: plan figé sur l'objet, caméra immobile, aucune entrée dans le cadre.\n\nAUDIO — ambiance seule.\nLa piste ne porte que le son réel du lieu : ambiance réelle, un seul son d'interface discret à 5 secondes.\nAUCUNE voix, AUCUN dialogue audible, AUCUN narrateur, AUCUNE musique.\nLes répliques ci-dessus sont jouées à l'image — lèvres, souffle, regard — et ne produisent aucun son. Les voix sont enregistrées séparément et posées au montage.",
                 "duree": "10 s",
                 "format": "vertical 9:16",
-                "videoSourceUrl": null,
-                "source": null
+                "videoSourceUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/Higgsfield-source-EP409-Configuration-boutique-le-socle-de-la-boucle-gestion",
+                "source": "rapidocms"
               },
               "scriptHeygen": "Le document de référence de toute la boucle gestion. Tout le reste tourne à vide. Une fiche fausse fausse le food cost, le stock, la marge et le prix.",
               "boucle": "Configuration boutique",
@@ -63151,7 +63315,7 @@
                 "format": "9:16 · 1080 × 1920 · 10 s",
                 "hook": "Configuration boutique — le socle de la boucle gestion",
                 "punchline": "Tout le reste tourne à vide. Une fiche fausse fausse le food cost, le stock, la marge et le prix",
-                "url": null
+                "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-production-8slc4o/foodeatup-video-factory/dist/stories/EP409.mp4"
               }
             },
             {
@@ -63179,8 +63343,8 @@
                 "prompt": "Seedance 2.5. Vertical 9:16, 10 secondes, 1080p, 24 im/s. PAS de texte incrusté, PAS de sous-titres, PAS de filigrane, PAS de logo, AUCUNE légende gravée dans l'image. Photoréaliste, caméra fixe ou très lent travelling.\n\nIDENTITÉ VISUELLE — RapidoCMS. Bleu #03A9F5 présent dans le décor — un écran éteint qui reflète, une lumière, un objet — sans jamais former de logo. Tons clairs, gris #383838.\n\n@Image 1 ne définit que le visage du chef — barbe, toque blanche, veste blanche, tablier blanc FoodEatUp. Ne pas modifier ses traits ni sa carrure. Il reste flou, en retrait : le sujet net du plan est l'objet, pas lui.\n\nUn objet réel du restaurant au premier plan, net ; le chef en retrait, flou, qui regarde. On filme ce que la phrase déclenche, jamais le schéma qui l'explique. Ce qui se joue : La capacité humaine — combien de couverts peuvent réellement être servis — et le coût salarial, premier poste maîtrisable d'un restaurant.\n\n0-5s: L'objet est net au premier plan, immobile ; le chef, flou derrière, le regarde. Très lent travelling avant. À cet instant, le chef sera posé au montage — ne produire aucun son ici : {Combien de couverts vous pouvez servir. Vraiment.} End state at 5s: l'objet occupe le centre du cadre, encore dans son état de départ.\n5-8s: À 5 secondes exactement, l'objet change d'état — il s'allume, il bouge, il s'ouvre. Rien d'autre ne change. End state at 8s: le nouvel état de l'objet est pleinement lisible, le chef n'a pas bougé.\n8-10s: Le plan s'immobilise sur l'objet. La caméra ne bouge plus. À cet instant, le chef sera posé au montage — ne produire aucun son ici : {Sur-effectif le mardi, sous-effectif le samedi. Systématiquement.} End state at 10s: plan figé sur l'objet, caméra immobile, aucune entrée dans le cadre.\n\nAUDIO — ambiance seule.\nLa piste ne porte que le son réel du lieu : ambiance réelle, un seul son d'interface discret à 5 secondes.\nAUCUNE voix, AUCUN dialogue audible, AUCUN narrateur, AUCUNE musique.\nLes répliques ci-dessus sont jouées à l'image — lèvres, souffle, regard — et ne produisent aucun son. Les voix sont enregistrées séparément et posées au montage.",
                 "duree": "10 s",
                 "format": "vertical 9:16",
-                "videoSourceUrl": null,
-                "source": null
+                "videoSourceUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/Higgsfield-source-EP410-Equipe-qui-execute",
+                "source": "rapidocms"
               },
               "scriptHeygen": "La capacité humaine — combien de couverts peuvent réellement être servis — et le coût salarial, premier poste maîtrisable d'un restaurant. Sur-effectif le mardi, sous-effectif le samedi. Systématiquement.",
               "boucle": "Équipe",
@@ -63341,7 +63505,7 @@
                 "format": "9:16 · 1080 × 1920 · 10 s",
                 "hook": "Équipe — qui exécute",
                 "punchline": "Sur-effectif le mardi, sous-effectif le samedi. Systématiquement",
-                "url": null
+                "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-production-8slc4o/foodeatup-video-factory/dist/stories/EP410.mp4"
               }
             },
             {
@@ -63559,8 +63723,8 @@
                 "prompt": "Seedance 2.5. Vertical 9:16, 10 secondes, 1080p, 24 im/s. PAS de texte incrusté, PAS de sous-titres, PAS de filigrane, PAS de logo, AUCUNE légende gravée dans l'image. Photoréaliste, caméra fixe ou très lent travelling.\n\nIDENTITÉ VISUELLE — RapidoCMS. Bleu #03A9F5 présent dans le décor — un écran éteint qui reflète, une lumière, un objet — sans jamais former de logo. Tons clairs, gris #383838.\n\n@Image 1 ne définit que le visage du chef — barbe, toque blanche, veste blanche, tablier blanc FoodEatUp. Ne pas modifier ses traits ni sa carrure. Il reste flou, en retrait : le sujet net du plan est l'objet, pas lui.\n\nUn objet réel du restaurant au premier plan, net ; le chef en retrait, flou, qui regarde. On filme ce que la phrase déclenche, jamais le schéma qui l'explique. Ce qui se joue : La conformité sanitaire, et les justificatifs opposables en cas de contrôle.\n\n0-5s: L'objet est net au premier plan, immobile ; le chef, flou derrière, le regarde. Très lent travelling avant. À cet instant, le chef sera posé au montage — ne produire aucun son ici : {Celle-là ne coûte pas de la marge. Elle coûte les clés.} End state at 5s: l'objet occupe le centre du cadre, encore dans son état de départ.\n5-8s: À 5 secondes exactement, l'objet change d'état — il s'allume, il bouge, il s'ouvre. Rien d'autre ne change. End state at 8s: le nouvel état de l'objet est pleinement lisible, le chef n'a pas bougé.\n8-10s: Le plan s'immobilise sur l'objet. La caméra ne bouge plus. À cet instant, le chef sera posé au montage — ne produire aucun son ici : {C'est la seule boucle dont l'échec n'est pas financier mais existentiel. Les sept autres coûtent de la marge. Celle-ci coûte la fermeture.} End state at 10s: plan figé sur l'objet, caméra immobile, aucune entrée dans le cadre.\n\nAUDIO — ambiance seule.\nLa piste ne porte que le son réel du lieu : ambiance réelle, un seul son d'interface discret à 5 secondes.\nAUCUNE voix, AUCUN dialogue audible, AUCUN narrateur, AUCUNE musique.\nLes répliques ci-dessus sont jouées à l'image — lèvres, souffle, regard — et ne produisent aucun son. Les voix sont enregistrées séparément et posées au montage.",
                 "duree": "10 s",
                 "format": "vertical 9:16",
-                "videoSourceUrl": null,
-                "source": null
+                "videoSourceUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/Higgsfield-source-EP412-HACCP-le-droit-d-exercer",
+                "source": "rapidocms"
               },
               "scriptHeygen": "La conformité sanitaire, et les justificatifs opposables en cas de contrôle. C'est la seule boucle dont l'échec n'est pas financier mais existentiel. Les sept autres coûtent de la marge. Celle-ci coûte la fermeture.",
               "boucle": "HACCP",
@@ -63721,7 +63885,7 @@
                 "format": "9:16 · 1080 × 1920 · 10 s",
                 "hook": "HACCP — le droit d'exercer",
                 "punchline": "C'est la seule boucle dont l'échec n'est pas financier mais existentiel. Les sept autres coûtent de la marge. Celle-ci coûte la fermeture",
-                "url": null
+                "url": "https://raw.githubusercontent.com/PrendsTaPart/Video/claude/foodeatup-video-production-8slc4o/foodeatup-video-factory/dist/stories/EP412.mp4"
               }
             },
             {
