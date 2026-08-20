@@ -73,6 +73,19 @@ DUCK_NIV=0.16                    # -16 dB
 # et à sa position dans le temps du master — `atrim=0:9,5` ici, `16:26` là-bas —
 # pour que ce soit une seule musique traversant l'épisode, pas deux morceaux.
 BED_GAIN=0.224                   # -13 dB, comme le lit du segment D
+# La fin du clip, éteinte.
+#
+# Le son d'ambiance des clips Higgsfield est bruyant là où il gêne le plus : sur
+# EP002, la chute tape à -17,8 dBFS pendant que la punchline parle, et le clip
+# sort encore à -20,1 dBFS au moment de passer au sting. Deux secondes de
+# silence à la fin rendent la punchline lisible et nettoient le raccord.
+#
+# Zéro par défaut : les 216 masters déjà sortis gardent leur son entier. On
+# l'active épisode par épisode.
+#
+#   SILENCE_FIN=2.0 ./scripts/build-segment-a.sh EP002 "Ton service du samedi soir."
+SILENCE_FIN="${SILENCE_FIN:-0}"
+SILENCE_DEB="$(python3 -c "print(f'{max(0.1, $DUREE_A - $SILENCE_FIN - 0.25):.2f}' if $SILENCE_FIN > 0 else f'{$DUREE_A:.2f}')")"
 DUCK_MUS=0.45                    # la musique s'efface moins que le clip : elle
                                  # est déjà 13 dB dessous
 echo "  punchline : ${DUREE_PUNCH}s à ${PUNCH}s · duck ${DUCK_DEB}→${DUCK_HAUT}"
@@ -134,7 +147,8 @@ enable='between(t,$T_IN,$T_OUT)'[vt];\
  [vt][2:v]overlay=$LOGO_X:$LOGO_Y:format=auto,format=yuv420p[vo];\
  [${SRC_A}]atrim=0:$DUREE_A,asetpts=PTS-STARTPTS,aresample=48000,\
 volume='if(lt(t,$DUCK_DEB),1,if(lt(t,$DUCK_PLEIN),1-(1-$DUCK_NIV)*(t-$DUCK_DEB)/($DUCK_PLEIN-$DUCK_DEB),\
-if(lt(t,$DUCK_FIN),$DUCK_NIV,if(lt(t,$DUCK_HAUT),$DUCK_NIV+(1-$DUCK_NIV)*(t-$DUCK_FIN)/($DUCK_HAUT-$DUCK_FIN),1))))':eval=frame[a0];\
+if(lt(t,$DUCK_FIN),$DUCK_NIV,if(lt(t,$DUCK_HAUT),$DUCK_NIV+(1-$DUCK_NIV)*(t-$DUCK_FIN)/($DUCK_HAUT-$DUCK_FIN),1))))':eval=frame,\
+afade=t=out:st=$SILENCE_DEB:d=0.25[a0];\
  [1:a]adelay=$(python3 -c "print(int($PUNCH*1000))")|$(python3 -c "print(int($PUNCH*1000))"),\
 apad,atrim=0:$DUREE_A,asetpts=PTS-STARTPTS[a1];\
  [3:a]aresample=48000,atrim=0:$DUREE_A,asetpts=PTS-STARTPTS,volume=$BED_GAIN,\

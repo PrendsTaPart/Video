@@ -130,6 +130,8 @@ def story(ep, hook, punch, clip, dest):
     muet = not a_du_son(clip)
     piste = "2:a" if muet else "0:a"
     i_bgm = 3 if muet else 2
+    # Zéro par défaut : les stories déjà sorties gardent leur son entier.
+    silence_fin = float(os.environ.get("SILENCE_FIN", "0"))
 
     # Le clip plus court que la story. EP001 fait 7,0 s pour une fenêtre de
     # 10,0 s : sans traitement, ffmpeg n'a plus d'images après 7 s et la
@@ -206,7 +208,14 @@ def story(ep, hook, punch, clip, dest):
         f"[{i_bgm}:a]aresample=48000,atrim=0:{DUREE},asetpts=PTS-STARTPTS,"
         f"volume={BED_GAIN},afade=t=in:st=0:d=0.8,"
         f"afade=t=out:st={DUREE-0.7:.2f}:d=0.7[bed];"
-        f"[{piste}]aresample=48000,atrim=0:{DUREE},asetpts=PTS-STARTPTS[clip];"
+        # La fin du clip, éteinte — même règle que le segment A du master.
+        # Le son d'ambiance Higgsfield tape fort là où il gêne : sur EP002 la
+        # chute sort à -17,8 dBFS pile sous la punchline. Sans ça, la story se
+        # termine sur un bruit sourd et le master sur du silence : deux fins
+        # différentes pour le même plan.
+        f"[{piste}]aresample=48000,atrim=0:{DUREE},asetpts=PTS-STARTPTS"
+        + (f",afade=t=out:st={DUREE - silence_fin - 0.25:.2f}:d=0.25" if silence_fin > 0 else "")
+        + "[clip];"
         f"[clip][bed]amix=inputs=2:duration=first:dropout_transition=0:normalize=0,"
         f"loudnorm=I=-14:TP=-1:LRA=11,alimiter=limit=0.794:level=disabled,"
         f"apad,atrim=0:{DUREE}[aout]"
