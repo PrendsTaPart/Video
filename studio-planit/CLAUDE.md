@@ -17,42 +17,55 @@ l'utilisateur pour qu'il le génère lui-même dans l'interface Higgsfield.
 
 ### Charte graphique **officielle**, confirmée le 2026-08-22
 
-Fournie directement par l'utilisateur (captures du PDF de marque). **C'est la source
-prioritaire** — elle remplace toute couleur/typo déduite précédemment dans les documents
-de stratégie du dossier zip fourni le même jour (`00-STRATEGIE-PLANIT.md` proposait
-Poppins/Inter, fond off-white `#F7F9FC`, encre navy `#1B2A41` — **abandonné**, ces valeurs
-étaient explicitement marquées « à confirmer avec le fichier de marque officiel » dans ce
-document, et le fichier reçu les contredit).
+**Source unique et prioritaire : l'outil MCP `mcp__planit-social__obtenir_charte`.**
+À appeler avant tout travail de montage, de vignette ou de visuel — aucune couleur, police
+ou règle de logo ne doit être recopiée de mémoire ou reprise d'un autre document (y compris
+ce fichier : les valeurs ci-dessous sont un instantané au 2026-08-23, à revérifier via
+l'outil si un écart est suspecté). Elle remplace la charte déduite du dossier de stratégie
+zip (`00-STRATEGIE-PLANIT.md` proposait Poppins/Inter, fond off-white `#F7F9FC`, encre navy
+`#1B2A41` — **abandonné**, valeurs que ce document marquait lui-même « à confirmer »), et
+confirme/précise le PDF de marque envoyé par l'utilisateur le 2026-08-22.
 
-- **Couleurs de marque** :
-  - **Rose** `#FE64D5`
-  - **Violet primaire** `#4F2DF9`
-  - **Violet secondaire** `#8236F8`
-  - **Encre / fond sombre** `#1F0D3E`
-  - Traitement signature : **dégradé diagonal violet → rose** (`#4F2DF9` → `#FE64D5`,
-    135°), utilisé en fond de titre/signature. Variables CSS posées dans
+- **Couleurs** (`obtenir_charte.couleurs`) :
+  - `encre` `#1F0D3E` — fond dominant
+  - `primaire` `#4F2DF9` — bleu-violet, aplats
+  - `bouton` `#8236F8` — violet, boutons et surlignages
+  - `rose` `#FE64D5` — accent unique, **jamais en fond de bloc**
+  - `degrade_marque` : 135°, `#4F2DF9` → `#FE64D5`, **réservé au hook d'ouverture et à
+    l'animation de fin uniquement** (pas un fond générique). Variables CSS posées dans
     `videos/_gabarit-planit/compositions/frames/01-placeholder.html`
     (`--planit-violet`, `--planit-violet-2`, `--planit-rose`, `--planit-ink`).
   - Ces valeurs sont la charte **marketing/marque** (titres, cartes-agent, habillage,
     signature). Voir plus bas la distinction avec les couleurs **fonctionnelles de l'app**.
-- **Typographie de marque** : **Alte Haas Grotesk** (grotesque proche Helvetica, une seule
-  famille pour titres et texte, vue en régulier + gras dans le PDF).
-  - ⚠️ **Le fichier réel n'a pas pu être téléchargé** dans cet environnement (hébergeurs de
-    police tiers — dafont/1001fonts/fontget — bloqués par la politique réseau de la
-    session ; Alte Haas Grotesk n'est pas distribuée sur Google Fonts). **Archivo** (Google
-    Fonts, grotesque de proportions proches, licence libre) sert de **remplaçant temporaire**,
-    vendoré localement dans `assets/fonts/Archivo-{400,600,700,800}.woff2`, déclaré sous le
-    nom `"PlanitDisplay"` dans un `@font-face` (donc aucun autre changement nécessaire
-    ailleurs dans les compositions le jour où le vrai fichier arrive).
-  - Dès que l'utilisateur fournit le vrai fichier Alte Haas Grotesk (`.woff2`/`.ttf`, deux
-    graisses mini : régulier + gras), le déposer dans `assets/fonts/` et mettre à jour les
-    `@font-face` de chaque composition (recherche `PlanitDisplay` dans le projet).
-- **Logo** : marque-page en forme d'étoile/flamme (le glyphe "spark") + wordmark « Plani't »
-  (apostrophe typographique). **Les fichiers réels du logo n'ont pas été fournis** — seules
-  des captures d'écran existent. Ne jamais redessiner le glyphe à la main : tant que le
-  fichier n'est pas fourni, n'utiliser que le **wordmark texte** « Plani't » en `PlanitDisplay`
-  (voir le gabarit). Demander les fichiers PNG/SVG du logo avant tout habillage qui a besoin
-  du glyphe (sting de signature, carte-agent, vignette).
+- **Typographie** (`obtenir_charte.typographie`) : **Alte Haas Grotesk** en principale,
+  **replis officiels : Sora, puis Inter** — chargement en `.woff2` locaux, jamais de CDN.
+  Graisses : titres 700/800, texte 400.
+  - ⚠️ **Le fichier Alte Haas Grotesk n'a pas pu être téléchargé** dans cet environnement
+    (hébergeurs tiers — dafont/1001fonts/fontget — bloqués par la politique réseau de la
+    session ; absente de Google Fonts). En attendant, on applique le repli **officiel de la
+    charte** : **Sora** pour les titres (`assets/fonts/Sora-{700,800}.woff2`, famille
+    `"PlanitTitle"`) et **Inter** pour le texte (`assets/fonts/Inter-400.woff2`, famille
+    `"PlanitText"`) — vendorées localement dans `videos/_gabarit-planit/assets/fonts/`
+    (Google Fonts, licence libre). Dès que l'utilisateur fournit le vrai fichier Alte Haas
+    Grotesk, l'ajouter dans `assets/fonts/` et remplacer les `@font-face` `PlanitTitle`/
+    `PlanitText` par la vraie police (recherche ces deux noms dans le projet).
+- **Logo** (`obtenir_charte.logo`) : orthographe stricte **« Plani't »** — jamais « PlanIt »,
+  « Plan'It », « Planit » ni « PLANIT ». Jamais redessiné, déformé ou recoloré. Trois
+  variantes cataloguées (`blanc_sur_encre`, `encre_sur_rose`, `pictogramme_seul`), URLs
+  hébergées sur `planit-social-ai.lovable.app` — **inaccessibles depuis cette session**
+  (domaine hors de la politique réseau autorisée). **Statut au 2026-08-23 : en attente des
+  fichiers, l'utilisateur les fournit via Google Drive** (a explicitement refusé de
+  réutiliser les PNG `black_logo.png`/`white_logo.png` trouvés dans
+  `videos/planit-academy/assets/`, même si visuellement conformes). Tant qu'ils ne sont pas
+  déposés dans `assets/brand/`, n'utiliser que le **wordmark texte** « Plani't » en
+  `PlanitTitle` (voir le gabarit) — jamais de glyphe redessiné à la main.
+- **Format vidéo et zone de sécurité** (`obtenir_charte.format_video`) : 1080×1920, 30fps.
+  **Aucun élément de marque au-dessus de y=120 ni en dessous de y=1600** — les 320px du bas
+  sont réservés à l'UI des réseaux sociaux (like/commentaire/légende). Le bandeau de
+  sous-titres du gabarit (`compositions/captions.html`) respecte cette zone
+  (`--cap-band-top: 1380px`, `--cap-band-height: 200px`, finit à y=1580).
+- **Signature** : « Ce n'est pas demain. C'est aujourd'hui. » — **Baseline** : « Vos
+  logiciels ont enfin une équipe. »
 
 ### Couleurs **fonctionnelles de l'app réelle** (distinctes de la charte marque ci-dessus)
 
@@ -68,9 +81,10 @@ ci-dessus) :
 | `success` (validations dans l'app) | `#75AB00` |
 
 Polices réelles de l'app : **Sora** (titres) + **Manrope** (corps) — déjà vendorées en
-`.ttf` dans `videos/_shared/fonts/`. Distinctes de la police de marque `PlanitDisplay`
-ci-dessus : Sora/Manrope ne servent que si on reproduit un écran de l'app à la main (à
-éviter, voir règle Shot 3 plus bas — toujours préférer une vraie capture d'écran).
+`.ttf` dans `videos/_shared/fonts/`. Sora est aussi, par coïncidence, le repli titres de la
+charte marque (voir ci-dessus) — mais le corps de texte diffère : **Inter** pour l'habillage
+marque, **Manrope** uniquement si on reproduit un écran de l'app à la main (à éviter, voir
+règle Shot 3 plus bas — toujours préférer une vraie capture d'écran).
 
 ## Structure narrative — règle d'or du motion design
 
@@ -105,7 +119,7 @@ pour l'inventaire des fiches personnage déjà générées (Reference Elements H
 épisode, jamais le modifier pour un épisode réel. Contient : `index.html`, `meta.json`,
 `package.json`, `hyperframes.json`, `compositions/frames/01-placeholder.html` (à remplacer
 par les vraies frames de l'épisode), `compositions/captions.html` (skin de sous-titres prêt,
-`GROUPS` vide à régénérer depuis `caption_groups.json`), `assets/fonts/` (Archivo, voir
+`GROUPS` vide à régénérer depuis `caption_groups.json`), `assets/fonts/` (Sora/Inter, voir
 ci-dessus), `assets/sfx/` (8 sons réutilisés depuis `videos/planit-product-launch/`),
 `assets/vendor/gsap.min.js`, `assets/bgm/` (vide — pas de musique Plani't propre encore
 identifiée, ne pas réutiliser une BGM d'une autre marque du groupe sans vérifier la licence

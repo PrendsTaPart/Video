@@ -8,28 +8,26 @@
     --planit-rose: #FE64D5;     /* rose de marque (charte officielle) */
     --planit-ink: #1F0D3E;      /* encre / fond sombre (charte officielle) */
     --planit-paper: #FFFFFF;
-    --font-display: "PlanitDisplay", system-ui, sans-serif; /* substitut temporaire d'Alte Haas Grotesk, voir studio-planit/CLAUDE.md */
+    /* repli officiel de la charte (obtenir_charte) tant qu'Alte Haas Grotesk n'est pas fournie :
+       Sora pour les titres (graisses 700/800), Inter pour le texte (graisse 400). */
+    --font-title: "PlanitTitle", system-ui, sans-serif;
+    --font-text: "PlanitText", system-ui, sans-serif;
   }
 
   @font-face {
-    font-family: "PlanitDisplay";
-    src: url("assets/fonts/Archivo-400.woff2") format("woff2");
-    font-weight: 400;
-  }
-  @font-face {
-    font-family: "PlanitDisplay";
-    src: url("assets/fonts/Archivo-600.woff2") format("woff2");
-    font-weight: 600;
-  }
-  @font-face {
-    font-family: "PlanitDisplay";
-    src: url("assets/fonts/Archivo-700.woff2") format("woff2");
+    font-family: "PlanitTitle";
+    src: url("assets/fonts/Sora-700.woff2") format("woff2");
     font-weight: 700;
   }
   @font-face {
-    font-family: "PlanitDisplay";
-    src: url("assets/fonts/Archivo-800.woff2") format("woff2");
+    font-family: "PlanitTitle";
+    src: url("assets/fonts/Sora-800.woff2") format("woff2");
     font-weight: 800;
+  }
+  @font-face {
+    font-family: "PlanitText";
+    src: url("assets/fonts/Inter-400.woff2") format("woff2");
+    font-weight: 400;
   }
 </style>
 
@@ -51,14 +49,14 @@
     text-align: center;
   }
   .placeholder-word {
-    font-family: var(--font-display);
+    font-family: var(--font-title);
     font-weight: 800;
     font-size: 92px;
     color: var(--planit-paper);
     letter-spacing: -0.01em;
   }
   .placeholder-note {
-    font-family: var(--font-display);
+    font-family: var(--font-text);
     font-weight: 400;
     font-size: 34px;
     line-height: 1.4;

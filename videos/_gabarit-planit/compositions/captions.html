@@ -7,14 +7,16 @@
     --cap-accent-2: #FE64D5; /* rose de marque (charte officielle), emphase ponctuelle */
     --cap-ink: #1F0D3E;      /* encre de marque (charte officielle) */
     --cap-canvas: #FFFFFF;
-    --cap-band-top: 1560px;
-    --cap-band-height: 320px;
+    /* zone de sécurité charte (obtenir_charte) : rien de marque sous y=1600 —
+       le bandeau doit finir avant, l'UI des réseaux sociaux occupe les 320px du bas */
+    --cap-band-top: 1380px;
+    --cap-band-height: 200px;
   }
 
-  /* substitut temporaire d'Alte Haas Grotesk, voir studio-planit/CLAUDE.md */
+  /* repli officiel de la charte (Sora/Inter) tant qu'Alte Haas Grotesk n'est pas fournie */
   @font-face {
-    font-family: "PlanitDisplay";
-    src: url("assets/fonts/Archivo-700.woff2") format("woff2");
+    font-family: "PlanitTitle";
+    src: url("assets/fonts/Sora-700.woff2") format("woff2");
     font-weight: 700;
   }
 </style>
@@ -66,7 +68,7 @@
     flex-wrap: wrap;
     justify-content: center;
     gap: 0.1em 0.34em;
-    font-family: "PlanitDisplay", system-ui, sans-serif; /* substitut temporaire d'Alte Haas Grotesk */
+    font-family: "PlanitTitle", system-ui, sans-serif; /* repli officiel Sora, voir studio-planit/CLAUDE.md */
     font-weight: 700;
     font-size: clamp(40px, 4.4vw, 58px);
     line-height: 1.16;
