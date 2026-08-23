@@ -1,0 +1,163 @@
+<template id="hook-end-template" data-composition-id="hook-end" data-width="1080" data-height="1920">
+<script src="assets/vendor/gsap.min.js"></script>
+
+<style data-brand-tokens>
+  :root {
+    --planit-violet: #4F2DF9;
+    --planit-violet-2: #8236F8;
+    --planit-rose: #FE64D5;
+    --planit-ink: #1F0D3E;
+    --sweep-progress: 0; /* 0 → 1, un seul tween pilote cette variable (liseré) */
+  }
+  @font-face { font-family: "PlanitTitle"; src: url("assets/fonts/Sora-700.woff2") format("woff2"); font-weight: 700; }
+  @font-face { font-family: "PlanitTitle"; src: url("assets/fonts/Sora-800.woff2") format("woff2"); font-weight: 800; }
+  @font-face { font-family: "PlanitText"; src: url("assets/fonts/Inter-400.woff2") format("woff2"); font-weight: 400; }
+</style>
+
+<style>
+  #hook-end-root {
+    position: absolute;
+    inset: 0;
+    overflow: hidden;
+  }
+  #hook-end-ink {
+    position: absolute;
+    inset: 0;
+    background: var(--planit-ink);
+    opacity: 0;
+  }
+
+  /* seconde 1 : punchline, mot par mot */
+  #hook-end-punch {
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    width: 88%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-family: "PlanitTitle", system-ui, sans-serif;
+    font-weight: 800;
+    font-size: 72px;
+    line-height: 1.15;
+    color: #FFFFFF;
+  }
+  #hook-end-punch .w {
+    display: inline-block;
+    opacity: 0;
+    transform: translateY(16px);
+  }
+
+  /* secondes 2-3 : lock-up pictogramme + wordmark, centré */
+  #hook-end-lockup {
+    position: absolute;
+    top: 52%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    align-items: center;
+    gap: 24px;
+  }
+  #hook-end-mark {
+    width: 96px;
+    height: auto;
+    opacity: 0;
+  }
+  #hook-end-word-mask {
+    overflow: hidden;
+    clip-path: inset(0 100% 0 0); /* masque horizontal : révélé de gauche à droite */
+  }
+  #hook-end-word {
+    font-family: "PlanitTitle", system-ui, sans-serif;
+    font-weight: 800;
+    font-size: 88px;
+    color: #FFFFFF;
+    white-space: nowrap;
+  }
+
+  /* seconde 4 : signature */
+  #hook-end-signature {
+    position: absolute;
+    top: 62%;
+    left: 50%;
+    width: 84%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-family: "PlanitText", system-ui, sans-serif;
+    font-weight: 400;
+    font-size: 36px;
+    color: var(--planit-rose);
+    opacity: 0;
+  }
+
+  /* liseré du dégradé de marque, y=1560, 6px */
+  #hook-end-liseret {
+    position: absolute;
+    top: 1560px;
+    left: 0;
+    height: 6px;
+    width: 100%;
+    background: linear-gradient(135deg, var(--planit-violet) 0%, var(--planit-rose) 100%);
+    clip-path: inset(0 calc((1 - var(--sweep-progress)) * 100%) 0 0);
+  }
+</style>
+
+<div
+  id="hook-end-root"
+  data-composition-id="hook-end"
+  data-start="0"
+  data-duration="4.55"
+  data-width="1080"
+  data-height="1920"
+>
+  <div id="hook-end-ink" class="clip" data-start="0" data-duration="4.55" data-track-index="0"></div>
+
+  <div id="hook-end-punch" class="clip" data-start="0" data-duration="4.55" data-track-index="1">
+    <span class="w">Vos</span> <span class="w">devis</span> <span class="w">ne</span> <span class="w">dorment</span> <span class="w">plus.</span>
+  </div>
+
+  <div id="hook-end-lockup" class="clip" data-start="0" data-duration="4.55" data-track-index="2">
+    <img id="hook-end-mark" src="assets/brand/planit-mark-white.png" alt="" />
+    <div id="hook-end-word-mask"><div id="hook-end-word">Plani&rsquo;t</div></div>
+  </div>
+
+  <div id="hook-end-signature" class="clip" data-start="0" data-duration="4.55" data-track-index="3">
+    Ce n&rsquo;est pas demain. C&rsquo;est aujourd&rsquo;hui.
+  </div>
+
+  <div id="hook-end-liseret" class="clip" data-start="0" data-duration="4.55" data-track-index="4"></div>
+</div>
+
+<script>
+  (function () {
+    window.__timelines = window.__timelines || {};
+    var tl = gsap.timeline({ paused: true });
+
+    // ink fade over plan 5
+    tl.to("#hook-end-ink", { opacity: 1, duration: 0.45, ease: "power1.out" }, 0);
+
+    // punchline, mot par mot, 0.08s d'écart
+    var words = document.querySelectorAll("#hook-end-punch .w");
+    words.forEach(function (w, i) {
+      tl.to(w, { opacity: 1, y: 0, duration: 0.28, ease: "power2.out" }, 0.15 + i * 0.08);
+    });
+
+    // pictogramme entre par le bas, power3.out
+    tl.fromTo("#hook-end-mark", { y: 60 }, { opacity: 1, y: 0, duration: 0.45, ease: "power3.out" }, 1.0);
+    // l'étincelle pulse une fois en rose
+    tl.to("#hook-end-mark", { scale: 1.18, filter: "drop-shadow(0 0 18px #FE64D5)", duration: 0.15, ease: "power1.out" }, 1.5);
+    tl.to("#hook-end-mark", { scale: 1, filter: "drop-shadow(0 0 0px #FE64D5)", duration: 0.15, ease: "power1.in" }, 1.65);
+
+    // "Plani't" se déplie par un masque horizontal
+    tl.to("#hook-end-word-mask", { clipPath: "inset(0 0% 0 0)", duration: 0.35, ease: "power2.inOut" }, 2.0);
+
+    // signature
+    tl.to("#hook-end-signature", { opacity: 1, duration: 0.25, ease: "power1.out" }, 2.85);
+    // tenue 1.2s : 3.10 → 4.30, rien n'anime
+
+    // liseré du dégradé, une seule variable CSS, un seul tween
+    tl.to("#hook-end-liseret", { "--sweep-progress": 1, duration: 0.25, ease: "power2.inOut" }, 4.30);
+
+    window.__timelines["hook-end"] = tl;
+  })();
+</script>
+</template>
