@@ -1,0 +1,95 @@
+<template id="placeholder-template" data-composition-id="01-placeholder" data-width="1080" data-height="1920">
+<script src="assets/vendor/gsap.min.js"></script>
+
+<style data-brand-tokens>
+  :root {
+    --planit-violet: #4F2DF9;   /* violet de marque (charte officielle) */
+    --planit-violet-2: #8236F8; /* violet secondaire (charte officielle) */
+    --planit-rose: #FE64D5;     /* rose de marque (charte officielle) */
+    --planit-ink: #1F0D3E;      /* encre / fond sombre (charte officielle) */
+    --planit-paper: #FFFFFF;
+    /* repli officiel de la charte (obtenir_charte) tant qu'Alte Haas Grotesk n'est pas fournie :
+       Sora pour les titres (graisses 700/800), Inter pour le texte (graisse 400). */
+    --font-title: "PlanitTitle", system-ui, sans-serif;
+    --font-text: "PlanitText", system-ui, sans-serif;
+  }
+
+  @font-face {
+    font-family: "PlanitTitle";
+    src: url("assets/fonts/Sora-700.woff2") format("woff2");
+    font-weight: 700;
+  }
+  @font-face {
+    font-family: "PlanitTitle";
+    src: url("assets/fonts/Sora-800.woff2") format("woff2");
+    font-weight: 800;
+  }
+  @font-face {
+    font-family: "PlanitText";
+    src: url("assets/fonts/Inter-400.woff2") format("woff2");
+    font-weight: 400;
+  }
+</style>
+
+<style>
+  #placeholder-root {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(135deg, var(--planit-violet) 0%, var(--planit-rose) 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .placeholder-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 28px;
+    padding: 64px 72px;
+    text-align: center;
+  }
+  .placeholder-word {
+    font-family: var(--font-title);
+    font-weight: 800;
+    font-size: 92px;
+    color: var(--planit-paper);
+    letter-spacing: -0.01em;
+  }
+  .placeholder-note {
+    font-family: var(--font-text);
+    font-weight: 400;
+    font-size: 34px;
+    line-height: 1.4;
+    color: var(--planit-paper);
+    opacity: 0.88;
+    max-width: 780px;
+  }
+</style>
+
+<div
+  id="placeholder-root"
+  data-composition-id="01-placeholder"
+  data-start="0"
+  data-duration="5"
+  data-width="1080"
+  data-height="1920"
+>
+  <div id="placeholder-card" class="placeholder-card clip" data-start="0" data-duration="5" data-track-index="0">
+    <div class="placeholder-word">Plani&rsquo;t</div>
+    <div class="placeholder-note">
+      Gabarit studio &mdash; duplique ce dossier pour monter un nouvel &eacute;pisode.
+      Aucune composition finale ne doit rester dans <code>_gabarit-planit/</code>.
+    </div>
+  </div>
+</div>
+
+<script>
+  (function () {
+    window.__timelines = window.__timelines || {};
+    var tl = gsap.timeline({ paused: true });
+    tl.from("#placeholder-card", { opacity: 0, y: 24, duration: 0.6, ease: "power2.out" }, 0);
+    tl.to({}, { duration: 5 }, 0); // full-span anchor
+    window.__timelines["01-placeholder"] = tl;
+  })();
+</script>
+</template>
