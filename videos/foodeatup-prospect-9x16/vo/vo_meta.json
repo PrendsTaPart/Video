@@ -1,11 +1,11 @@
 {
  "voice": {
   "provider": "elevenlabs",
-  "voice_id": "odOFTFZU3DvAZ3EV3KHi",
-  "name": "Lucas — Premium French Corporate Narrator",
+  "voice_id": "APbYQosMxYlAnCCBzydW",
+  "name": "Rémy — Warm French Narrator",
   "model": "eleven_multilingual_v2",
-  "note": "Voix française native (accent fr-standard), ton corporate chaleureux — remplace Adam, dont l'accent anglophone était perceptible en multilingue.",
-  "status": "à générer — build_vo.py, nécessite ELEVENLABS_API_KEY"
+  "note": "Voix française native, timbre chaleureux et profond, accent méridional léger — choisie par Michael après comparatif (vo/essais/).",
+  "status": "générée"
  },
  "lines": {
   "L1": {
@@ -17,7 +17,7 @@
     "mille choses se jouent",
     "en même temps"
    ],
-   "duration": 4.776
+   "duration": 3.696
   },
   "L2": {
    "scene": "S1",
@@ -30,7 +30,7 @@
     "Les équipes à organiser",
     "Les réseaux à alimenter"
    ],
-   "duration": 9.6
+   "duration": 9.0
   },
   "L3": {
    "scene": "S2",
@@ -52,7 +52,7 @@
     "pour piloter votre restaurant",
     "sans effort"
    ],
-   "duration": 8.112
+   "duration": 7.32
   },
   "L5": {
    "scene": "S3",
@@ -64,7 +64,7 @@
     "sur borne",
     "ou en ligne"
    ],
-   "duration": 5.184
+   "duration": 4.488
   },
   "L6": {
    "scene": "S3",
@@ -76,7 +76,7 @@
     "fini l'attente",
     "même en plein coup de feu"
    ],
-   "duration": 7.56
+   "duration": 6.36
   },
   "L7": {
    "scene": "S4",
@@ -85,7 +85,7 @@
     "La deuxième assiste",
     "vos équipes en cuisine"
    ],
-   "duration": 2.496
+   "duration": 2.184
   },
   "L8": {
    "scene": "S4",
@@ -98,7 +98,7 @@
     "plannings",
     "suivi RH"
    ],
-   "duration": 7.848
+   "duration": 7.272
   },
   "L9": {
    "scene": "S4",
@@ -107,7 +107,7 @@
     "Tout est anticipé",
     "Rien n'est oublié"
    ],
-   "duration": 2.592
+   "duration": 2.208
   },
   "L10": {
    "scene": "S5",
@@ -128,7 +128,7 @@
     "elle répond en temps réel",
     "où que vous soyez"
    ],
-   "duration": 9.288
+   "duration": 7.224
   },
   "L12": {
    "scene": "S6",
@@ -151,7 +151,7 @@
     "et lance la campagne",
     "sur vos réseaux"
    ],
-   "duration": 9.312
+   "duration": 8.352
   },
   "L14": {
    "scene": "S6",
@@ -161,7 +161,7 @@
     "au client qui pousse la porte",
     "Depuis votre téléphone"
    ],
-   "duration": 3.48
+   "duration": 3.384
   },
   "L15": {
    "scene": "S7",
@@ -171,7 +171,7 @@
     "La gestion de votre restaurant",
     "simplifiée par l'IA"
    ],
-   "duration": 5.016
+   "duration": 4.968
   },
   "L16": {
    "scene": "S7",
@@ -180,7 +180,7 @@
     "Réservez votre démonstration",
     "dès maintenant"
    ],
-   "duration": 2.208
+   "duration": 2.352
   }
  }
 }

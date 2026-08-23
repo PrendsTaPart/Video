@@ -1,0 +1,27 @@
+{
+ "adrien": {
+  "voice_id": "c365oriviHmAhyLhpuN6",
+  "desc": "Adrien Clairon — moderne, clair, spots publicitaires",
+  "duration": 8.62
+ },
+ "kael": {
+  "voice_id": "yG4Uc56cLYQyZFnWaYv2",
+  "desc": "Kael — grave, posé, parisien, contenu de marque premium",
+  "duration": 7.7
+ },
+ "remy": {
+  "voice_id": "APbYQosMxYlAnCCBzydW",
+  "desc": "Rémy — chaleureux, timbre profond, méridional",
+  "duration": 8.5
+ },
+ "yann": {
+  "voice_id": "dx2ORrUlXO5zZntMhZms",
+  "desc": "Yann — clair et posé, explicatif",
+  "duration": 8.4
+ },
+ "lucas": {
+  "voice_id": "odOFTFZU3DvAZ3EV3KHi",
+  "desc": "Lucas — actuel, corporate neutre",
+  "duration": 8.11
+ }
+}

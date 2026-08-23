@@ -1,26 +1,65 @@
 #!/usr/bin/env python3
-"""B-roll vertical (S1 et S7) à partir des plans 16:9 déjà présents dans le dépôt.
+"""B-roll vertical (S1 et S7).
 
-Les plans Higgsfield existants sont en 1280x720 : ils sont recadrés en bandeau
-central sur un fond flouté, en attendant les plans verticaux natifs
-(cf. PROMPTS-HIGGSFIELD.md). Pas de zoompan sur de la vidéo — ça gèle l'image.
+Depuis le retour de Moody (viser les franchises), S1 et S7 s'appuient sur des
+photos verticales de snack / boulangerie / borne générées via RapidoCMS
+(`assets/rapidocms/`), animées en Ken Burns. Les plans Higgsfield 16:9 restent
+disponibles via `vfill()` pour un montage bistro, mais ne sont plus utilisés.
+
+Ken Burns : zoompan est utilisé ici sur des IMAGES fixes (son usage prévu) —
+jamais sur de la vidéo, où il gèle l'image (bug déjà rencontré sur ce dépôt).
 """
-import os, sys, subprocess
+import os, sys, shutil, subprocess
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from lib_draw import *
-from PIL import ImageDraw
+from PIL import Image, ImageDraw, ImageEnhance
 
 ROOT = os.path.dirname(os.path.abspath(__file__))
 WORK = f"{ROOT}/work"; os.makedirs(WORK, exist_ok=True)
 SRC = "/home/user/Video/hero-video/assets/video"
 VENC = ["-c:v", "libx264", "-preset", "medium", "-crf", "18", "-pix_fmt", "yuv420p", "-r", str(FPS)]
 
-# plan source, début, durée, teinte (froide pour le chaos, neutre pour la fin)
-S1_PLANS = [("hero-serveur-trois-tablettes.mp4", 0.4, 4.0, True),
-            ("hero-directeur-sept-onglets.mp4", 1.0, 4.0, True),
-            ("hero-chef-carnet-dlc.mp4", 0.5, 4.0, True),
-            ("hero-kds-mural.mp4", 0.6, 4.0, True)]
-S7_PLANS = [("hero-serveur-place-client.mp4", 0.5, 5.0, False)]
+IMG = f"{ROOT}/assets/rapidocms"
+
+# image, durée, sens du zoom, incrustation éventuelle
+S1_IMAGES = [("snack-comptoir.jpg", 4.0, "in", "pills"),
+             ("snack-tacos-rush.jpg", 4.0, "out", "postit"),
+             ("boulangerie-vitrine.jpg", 4.0, "in", None),
+             ("borne-commande.jpg", 4.0, "out", None)]
+S7_IMAGES = [("equipe-fin-service.jpg", 5.0, "in", None)]
+
+# plans Higgsfield 16:9 conservés pour mémoire (montage bistro), plus utilisés
+S1_PLANS_BISTRO = [("hero-serveur-trois-tablettes.mp4", 0.4, 4.0, True),
+                   ("hero-directeur-sept-onglets.mp4", 1.0, 4.0, True),
+                   ("hero-chef-carnet-dlc.mp4", 0.5, 4.0, True),
+                   ("hero-kds-mural.mp4", 0.6, 4.0, True)]
+
+def kenburns(img, dur, sens, out, cold=False):
+    """Photo verticale -> plan 1080x1920 animé (léger travelling avant/arrière).
+
+    Rendu image par image avec PIL plutôt qu'avec `zoompan` : sur une image en
+    boucle, zoompan émet `d` images POUR CHAQUE image d'entrée (12 000 images
+    pour un plan de 4 s), ce qui est à la fois faux et très lent.
+    """
+    n = int(round(dur * FPS))
+    d = f"{WORK}/kb_{os.path.splitext(img)[0]}"
+    shutil.rmtree(d, ignore_errors=True); os.makedirs(d)
+    src = Image.open(f"{IMG}/{img}").convert("RGB")
+    if cold:                       # palette plus froide pour les scènes de rush
+        src = ImageEnhance.Color(src).enhance(0.78)
+        src = ImageEnhance.Contrast(src).enhance(1.05)
+    sw, sh = src.size
+    cw = min(sw, int(sh * W / H))  # fenêtre 9:16 la plus large possible
+    ch = int(cw * H / W)
+    for i in range(n):
+        p = i / max(1, n - 1)
+        zoom = 1.0 + 0.12 * (p if sens == "in" else 1 - p)
+        w_, h_ = int(cw / zoom), int(ch / zoom)
+        x, y = (sw - w_) // 2, (sh - h_) // 2
+        src.crop((x, y, x + w_, y + h_)).resize((W, H), Image.LANCZOS).save(f"{d}/f{i:05d}.png")
+    subprocess.run(["ffmpeg", "-v", "error", "-y", "-framerate", str(FPS), "-i", f"{d}/f%05d.png",
+                    *VENC, out], check=True)
+    shutil.rmtree(d, ignore_errors=True)
 
 def vfill(src, ss, dur, cold, out):
     """1080x1920 : fond flouté + bandeau central net."""
@@ -73,16 +112,16 @@ def concat(parts, out):
 if __name__ == "__main__":
     postit_png(f"{WORK}/ov-postit.png"); pills_png(f"{WORK}/ov-pills.png")
     parts = []
-    for i, (src, ss, dur, cold) in enumerate(S1_PLANS):
-        raw = f"{WORK}/s1-{i}.mp4"; vfill(src, ss, dur, cold, raw)
-        if i == 0:
-            fin = f"{WORK}/s1-{i}-ov.mp4"; overlay_png(raw, f"{WORK}/ov-pills.png", fin, 0.8, 4.0)
-        elif i == 2:
-            fin = f"{WORK}/s1-{i}-ov.mp4"; overlay_png(raw, f"{WORK}/ov-postit.png", fin, 0.6, 4.0)
+    for i, (img, d, sens, ov) in enumerate(S1_IMAGES):
+        raw = f"{WORK}/s1-{i}.mp4"
+        kenburns(img, d, sens, raw, cold=True)
+        if ov:
+            fin = f"{WORK}/s1-{i}-ov.mp4"
+            overlay_png(raw, f"{WORK}/ov-{ov}.png", fin, 0.7, d, hold=d)
         else:
             fin = raw
         parts.append(fin); print("ok", fin)
     concat(parts, f"{WORK}/seq-s1.mp4")
-    for i, (src, ss, dur, cold) in enumerate(S7_PLANS):
-        out = f"{WORK}/seq-s7a.mp4"; vfill(src, ss, dur, cold, out); print("ok", out)
+    for img, d, sens, _ in S7_IMAGES:
+        out = f"{WORK}/seq-s7a.mp4"; kenburns(img, d, sens, out); print("ok", out)
     print("b-roll terminé")

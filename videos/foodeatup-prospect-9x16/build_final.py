@@ -20,7 +20,7 @@ WPS = 2.6          # débit estimé, utilisé seulement en mode animatique
 LEAD = 0.5         # silence en début de scène avant la 1re ligne
 GAP = 0.28         # respiration entre deux lignes
 
-TIMELINE = [("seq-s1.mp4", "S1"), ("seq-s2.mp4", "S2"), ("seq-s3.mp4", "S3"),
+TIMELINE = [("seq-s0.mp4", None), ("seq-s1.mp4", "S1"), ("seq-s2.mp4", "S2"), ("seq-s3.mp4", "S3"),
             ("seq-s4.mp4", "S4"), ("seq-s5.mp4", "S5"), ("seq-s6.mp4", "S6"),
             ("seq-s7a.mp4", None), ("seq-s7.mp4", "S7")]
 

@@ -91,6 +91,28 @@ def ico_alert(d, cx, cy, s, col):
     d.line((cx, cy - s*0.16, cx, cy + s*0.14), fill=col, width=int(s*0.12))
     d.ellipse((cx - s*0.07, cy + s*0.24, cx + s*0.07, cy + s*0.38), fill=col)
 
+# ============================================ S0 — sting logo d'ouverture
+
+def s0_frame(t):
+    """Ouverture de marque : le logo se pose, un trait orange le souligne."""
+    im = canvas(CREAM); d = ImageDraw.Draw(im)
+    d.ellipse((-300, -300, 560, 560), fill=(246, 241, 214))
+    d.ellipse((W - 460, H - 560, W + 340, H + 240), fill=(246, 241, 214))
+    p = appear(t, 0.15, 0.7)
+    if p > 0:
+        h = int(60 + 130 * p)                     # le logo grandit en se posant
+        logo(im, 830 - h // 2, h=h)
+    if t > 0.95:
+        a = ease((t - 0.95) / 0.5)
+        uw = int(340 * a)
+        d.rounded_rectangle(((W - uw) // 2, 1000, (W + uw) // 2, 1014), 7, fill=ORANGE)
+    if t > 1.25:
+        a = fade(t, 1.25, 0.45)
+        col = tuple(int(CREAM[i] + (GREY[i] - CREAM[i]) * a) for i in range(3))
+        d.text((W // 2, 1070), "la restauration, pilotée par l'IA", font=F("600", 42),
+               fill=col, anchor="ma")
+    return im
+
 # =========================================================== S2 — les 4 IA
 
 IA4 = [("IA Commandes", "Téléphone · Borne · En ligne", ico_phone),
@@ -458,8 +480,8 @@ def s7_frame(t):
     return im
 
 # ---------------------------------------------------------------- main
-SCENES = {"s2": (s2_frame, 13.0), "s3": (s3_frame, 15.0), "s4": (s4_frame, 19.0),
-          "s5": (s5_frame, 17.0), "s6": (s6_frame, 22.0), "s7": (s7_frame, 11.0)}
+SCENES = {"s0": (s0_frame, 2.6), "s2": (s2_frame, 13.0), "s3": (s3_frame, 15.0), "s4": (s4_frame, 19.0),
+          "s5": (s5_frame, 15.0), "s6": (s6_frame, 22.0), "s7": (s7_frame, 11.0)}
 
 if __name__ == "__main__":
     todo = sys.argv[1:] or list(SCENES)
