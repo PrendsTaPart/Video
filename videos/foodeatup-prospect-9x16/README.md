@@ -1,6 +1,6 @@
 # FoodEatUp — vidéo prospect « 4 IA » (9:16)
 
-Vidéo de prospection verticale, 1080×1920 / 30 fps, **2 min 15**.
+Vidéo de prospection verticale, 1080×1920 / 30 fps, **1 min 58**.
 Objectif : obtenir un RDV démo.
 
 ## État
@@ -10,10 +10,10 @@ Objectif : obtenir un RDV démo.
 | Script minuté (`script/script.json`) | ✅ V2 — corrections de texte appliquées, **à valider avant la voix off** |
 | Maquettes d'interface (S2→S7) | ✅ Générées (`build_mockups.py`) — données inventées, cf. `NOTES-CAPTURES.md` |
 | B-roll (S1, S7) | 🟡 Recadrage vertical des plans 16:9 existants — à remplacer par les plans natifs de `PROMPTS-HIGGSFIELD.md` |
-| Sous-titres incrustés | ✅ Style Reels, minutage estimé (2,6 mots/s) |
+| Sous-titres incrustés | ✅ Style Reels, calés sur les durées réelles de la voix · export `.vtt` |
 | Musique | ✅ Piste studio `stories-foodeatup-30j/audio/bgm.mp3`, −10 dB |
-| Voix off | ⏸️ Script validé · voix retenue : **Lucas** (`odOFTFZU3DvAZ3EV3KHi`, FR natif) · pipeline prêt (`build_vo.py`), bloqué sur une `ELEVENLABS_API_KEY` valide |
-| Rendu | ✅ `out/foodeatup-prospect-9x16-animatique-v0.mp4` (animatique, sans voix) |
+| Voix off | ✅ 16 lignes générées — **Lucas** (`odOFTFZU3DvAZ3EV3KHi`, FR natif), 83,8 s, loudnorm par ligne (`vo/`) |
+| Rendu | ✅ `out/foodeatup-prospect-9x16.mp4` — 1:58, crête −4,4 dB, RMS −18,5 dB, stéréo |
 
 ## Fabriquer
 
@@ -34,18 +34,19 @@ les sous-titres sur la durée réelle de chaque ligne ; absent, il sort l'animat
 
 | # | Durée | Contenu |
 |---|---|---|
-| S1 | 14 s | B-roll chaos + pastilles de notification + post-it « TOMATES J-3 » |
+| S1 | 16 s | B-roll chaos + pastilles de notification + post-it « TOMATES J-3 » |
 | S2 | 13 s | Logo + les 4 IA qui se posent |
-| S3 | 20 s | Téléphone / borne / en ligne → écran cuisine |
-| S4 | 23 s | Alerte rupture → commande fournisseur → planning |
-| S5 | 22 s | Conversation WhatsApp (2 questions, 2 réponses chiffrées) |
-| S6 | 26 s | Alerte tomates → recette promo → carte → campagne publiée |
-| S7 | 5 + 12 s | Retour en salle + carte CTA |
+| S3 | 15 s | Téléphone / borne / en ligne → écran cuisine |
+| S4 | 19 s | Alerte rupture → commande fournisseur → planning |
+| S5 | 17 s | Conversation WhatsApp (2 questions, 2 réponses chiffrées) |
+| S6 | 22 s | Alerte tomates → recette promo → carte → campagne publiée |
+| S7 | 5 + 11 s | Retour en salle + carte CTA |
+
+Durées calées sur la voix off réelle : chaque scène tient la voix plus la respiration,
+sans temps mort une fois l'animation arrivée au bout de sa chorégraphie.
 
 ## À faire ensuite
 
-1. ~~Valider le script~~ ✅ fait. Reste la clé `ELEVENLABS_API_KEY` pour lancer `build_vo.py`
-   (le connecteur ElevenLabs de la session génère la voix mais ne rend pas le fichier
-   téléchargeable, cf. `NOTES-CAPTURES.md`).
+1. ~~Valider le script~~ ✅ · ~~voix off~~ ✅ générée avec Lucas.
 2. Générer les plans verticaux de `PROMPTS-HIGGSFIELD.md` et les déposer dans `assets/hf/`.
 3. Fournir le vrai lien de prise de RDV (la carte finale affiche un placeholder).

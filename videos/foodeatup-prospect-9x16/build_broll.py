@@ -16,10 +16,10 @@ SRC = "/home/user/Video/hero-video/assets/video"
 VENC = ["-c:v", "libx264", "-preset", "medium", "-crf", "18", "-pix_fmt", "yuv420p", "-r", str(FPS)]
 
 # plan source, début, durée, teinte (froide pour le chaos, neutre pour la fin)
-S1_PLANS = [("hero-serveur-trois-tablettes.mp4", 0.4, 3.5, True),
-            ("hero-directeur-sept-onglets.mp4", 1.0, 3.5, True),
-            ("hero-chef-carnet-dlc.mp4", 0.5, 3.5, True),
-            ("hero-kds-mural.mp4", 0.6, 3.5, True)]
+S1_PLANS = [("hero-serveur-trois-tablettes.mp4", 0.4, 4.0, True),
+            ("hero-directeur-sept-onglets.mp4", 1.0, 4.0, True),
+            ("hero-chef-carnet-dlc.mp4", 0.5, 4.0, True),
+            ("hero-kds-mural.mp4", 0.6, 4.0, True)]
 S7_PLANS = [("hero-serveur-place-client.mp4", 0.5, 5.0, False)]
 
 def vfill(src, ss, dur, cold, out):
@@ -33,12 +33,12 @@ def vfill(src, ss, dur, cold, out):
     subprocess.run(["ffmpeg", "-v", "error", "-y", "-ss", str(ss), "-t", str(dur), "-i", f"{SRC}/{src}",
                     "-filter_complex", fc, "-map", "[v]", *VENC, out], check=True)
 
-def overlay_png(base, png, out, t0, t1):
+def overlay_png(base, png, out, t0, t1, hold=4.0):
     """Incruste un PNG RGBA avec fondu."""
     fc = (f"[1:v]format=rgba,fade=in:st={t0}:d=0.4:alpha=1,fade=out:st={t1-0.4}:d=0.4:alpha=1[ov];"
           f"[0:v][ov]overlay=0:0:enable='between(t,{t0},{t1})',format=yuv420p[v]")
     subprocess.run(["ffmpeg", "-v", "error", "-y", "-i", base, "-loop", "1", "-i", png,
-                    "-filter_complex", fc, "-map", "[v]", "-t", "3.5", *VENC, out], check=True)
+                    "-filter_complex", fc, "-map", "[v]", "-t", str(hold), *VENC, out], check=True)
 
 def postit_png(path):
     """Post-it « TOMATES — PÉREMPTION J-3 » posé en bas de cadre."""
@@ -76,9 +76,9 @@ if __name__ == "__main__":
     for i, (src, ss, dur, cold) in enumerate(S1_PLANS):
         raw = f"{WORK}/s1-{i}.mp4"; vfill(src, ss, dur, cold, raw)
         if i == 0:
-            fin = f"{WORK}/s1-{i}-ov.mp4"; overlay_png(raw, f"{WORK}/ov-pills.png", fin, 0.8, 3.5)
+            fin = f"{WORK}/s1-{i}-ov.mp4"; overlay_png(raw, f"{WORK}/ov-pills.png", fin, 0.8, 4.0)
         elif i == 2:
-            fin = f"{WORK}/s1-{i}-ov.mp4"; overlay_png(raw, f"{WORK}/ov-postit.png", fin, 0.6, 3.5)
+            fin = f"{WORK}/s1-{i}-ov.mp4"; overlay_png(raw, f"{WORK}/ov-postit.png", fin, 0.6, 4.0)
         else:
             fin = raw
         parts.append(fin); print("ok", fin)

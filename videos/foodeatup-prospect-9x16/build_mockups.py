@@ -458,8 +458,8 @@ def s7_frame(t):
     return im
 
 # ---------------------------------------------------------------- main
-SCENES = {"s2": (s2_frame, 13.0), "s3": (s3_frame, 20.0), "s4": (s4_frame, 23.0),
-          "s5": (s5_frame, 22.0), "s6": (s6_frame, 26.0), "s7": (s7_frame, 12.0)}
+SCENES = {"s2": (s2_frame, 13.0), "s3": (s3_frame, 15.0), "s4": (s4_frame, 19.0),
+          "s5": (s5_frame, 17.0), "s6": (s6_frame, 22.0), "s7": (s7_frame, 11.0)}
 
 if __name__ == "__main__":
     todo = sys.argv[1:] or list(SCENES)

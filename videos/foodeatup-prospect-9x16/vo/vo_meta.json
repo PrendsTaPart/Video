@@ -1,0 +1,186 @@
+{
+ "voice": {
+  "provider": "elevenlabs",
+  "voice_id": "odOFTFZU3DvAZ3EV3KHi",
+  "name": "Lucas — Premium French Corporate Narrator",
+  "model": "eleven_multilingual_v2",
+  "note": "Voix française native (accent fr-standard), ton corporate chaleureux — remplace Adam, dont l'accent anglophone était perceptible en multilingue.",
+  "status": "à générer — build_vo.py, nécessite ELEVENLABS_API_KEY"
+ },
+ "lines": {
+  "L1": {
+   "scene": "S1",
+   "text": "Chaque jour, dans votre restaurant, mille choses se jouent en même temps.",
+   "sub": [
+    "Chaque jour",
+    "dans votre restaurant",
+    "mille choses se jouent",
+    "en même temps"
+   ],
+   "duration": 4.776
+  },
+  "L2": {
+   "scene": "S1",
+   "text": "Les commandes qui s'enchaînent. Les stocks à surveiller. La carte à mettre à jour. Les équipes à organiser. Les réseaux sociaux à alimenter.",
+   "sub": [
+    "Les commandes",
+    "qui s'enchaînent",
+    "Les stocks à surveiller",
+    "La carte à mettre à jour",
+    "Les équipes à organiser",
+    "Les réseaux à alimenter"
+   ],
+   "duration": 9.6
+  },
+  "L3": {
+   "scene": "S2",
+   "text": "Et si tout ça n'était plus un problème ?",
+   "sub": [
+    "Et si tout ça",
+    "n'était plus un problème ?"
+   ],
+   "duration": 1.944
+  },
+  "L4": {
+   "scene": "S2",
+   "text": "FoodEatUp, ce sont quatre intelligences artificielles qui travaillent pour vous, jour et nuit, pour piloter votre restaurant sans effort.",
+   "sub": [
+    "FoodEatUp",
+    "quatre intelligences artificielles",
+    "qui travaillent pour vous",
+    "jour et nuit",
+    "pour piloter votre restaurant",
+    "sans effort"
+   ],
+   "duration": 8.112
+  },
+  "L5": {
+   "scene": "S3",
+   "text": "La première prend en charge toutes vos commandes : au téléphone, sur borne, ou en ligne.",
+   "sub": [
+    "La première prend en charge",
+    "toutes vos commandes",
+    "au téléphone",
+    "sur borne",
+    "ou en ligne"
+   ],
+   "duration": 5.184
+  },
+  "L6": {
+   "scene": "S3",
+   "text": "Elles arrivent directement en cuisine, dans le bon ordre. Fini les erreurs, fini l'attente, même en plein coup de feu.",
+   "sub": [
+    "Elles arrivent en cuisine",
+    "dans le bon ordre",
+    "Fini les erreurs",
+    "fini l'attente",
+    "même en plein coup de feu"
+   ],
+   "duration": 7.56
+  },
+  "L7": {
+   "scene": "S4",
+   "text": "La deuxième assiste vos équipes en cuisine.",
+   "sub": [
+    "La deuxième assiste",
+    "vos équipes en cuisine"
+   ],
+   "duration": 2.496
+  },
+  "L8": {
+   "scene": "S4",
+   "text": "Produits disponibles, dates de péremption, ruptures de stock, commandes fournisseurs, plannings, suivi RH.",
+   "sub": [
+    "Produits disponibles",
+    "dates de péremption",
+    "ruptures de stock",
+    "commandes fournisseurs",
+    "plannings",
+    "suivi RH"
+   ],
+   "duration": 7.848
+  },
+  "L9": {
+   "scene": "S4",
+   "text": "Tout est anticipé. Rien n'est oublié.",
+   "sub": [
+    "Tout est anticipé",
+    "Rien n'est oublié"
+   ],
+   "duration": 2.592
+  },
+  "L10": {
+   "scene": "S5",
+   "text": "La troisième, vous lui parlez sur WhatsApp.",
+   "sub": [
+    "La troisième",
+    "vous lui parlez sur WhatsApp"
+   ],
+   "duration": 2.04
+  },
+  "L11": {
+   "scene": "S5",
+   "text": "Combien de couverts ce midi ? Il me reste combien de steaks hachés ? Vous posez la question, elle répond en temps réel, où que vous soyez.",
+   "sub": [
+    "Combien de couverts ce midi ?",
+    "Il me reste combien de steaks ?",
+    "Vous posez la question",
+    "elle répond en temps réel",
+    "où que vous soyez"
+   ],
+   "duration": 9.288
+  },
+  "L12": {
+   "scene": "S6",
+   "text": "Et la quatrième s'occupe de vos réseaux sociaux.",
+   "sub": [
+    "Et la quatrième s'occupe",
+    "de vos réseaux sociaux"
+   ],
+   "duration": 2.304
+  },
+  "L13": {
+   "scene": "S6",
+   "text": "Un stock de tomates à écouler dans trois jours ? FoodEatUp ajuste votre carte, vous propose une recette en promotion, et lance la campagne sur vos réseaux.",
+   "sub": [
+    "Un stock de tomates",
+    "à écouler dans trois jours ?",
+    "FoodEatUp ajuste votre carte",
+    "vous propose une recette",
+    "en promotion",
+    "et lance la campagne",
+    "sur vos réseaux"
+   ],
+   "duration": 9.312
+  },
+  "L14": {
+   "scene": "S6",
+   "text": "De l'alerte au client qui pousse la porte. Depuis votre téléphone.",
+   "sub": [
+    "De l'alerte",
+    "au client qui pousse la porte",
+    "Depuis votre téléphone"
+   ],
+   "duration": 3.48
+  },
+  "L15": {
+   "scene": "S7",
+   "text": "FoodEatUp. La gestion de votre restaurant, simplifiée par l'intelligence artificielle.",
+   "sub": [
+    "FoodEatUp",
+    "La gestion de votre restaurant",
+    "simplifiée par l'IA"
+   ],
+   "duration": 5.016
+  },
+  "L16": {
+   "scene": "S7",
+   "text": "Réservez votre démonstration dès maintenant.",
+   "sub": [
+    "Réservez votre démonstration",
+    "dès maintenant"
+   ],
+   "duration": 2.208
+  }
+ }
+}

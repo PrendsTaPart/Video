@@ -125,7 +125,7 @@ def audio_args(placements, total):
                   f"afade=out:st={total-2.2:.2f}:d=2.0,atrim=0:{total:.2f},asetpts=N/SR/TB[bg]")
     chains.append(f"{''.join(labels)}[bg]amix=inputs={len(placements)+1}:normalize=0:"
                   f"dropout_transition=0,alimiter=limit=0.6:level=disabled,"
-                  f"atrim=0:{total:.2f},asetpts=N/SR/TB[a]")
+                  f"aformat=channel_layouts=stereo,atrim=0:{total:.2f},asetpts=N/SR/TB[a]")
     return inputs, ";".join(chains)
 
 if __name__ == "__main__":
@@ -146,6 +146,14 @@ if __name__ == "__main__":
                     "-map", "[v]", "-map", "[a]",
                     "-c:v", "libx264", "-preset", "medium", "-crf", "19", "-pix_fmt", "yuv420p",
                     "-c:a", "aac", "-b:a", "192k", "-shortest", out], check=True)
+    # sous-titres .vtt (accessibilité / SEO) — jamais affichés en dur, ils doublent l'incrustation
+    def ts(x):
+        h, r = divmod(x, 3600); m, sec = divmod(r, 60)
+        return f"{int(h):02d}:{int(m):02d}:{sec:06.3f}"
+    with open(f"{OUT}/foodeatup-prospect-9x16.vtt", "w") as fh:
+        fh.write("WEBVTT\n\n")
+        for i, (a, b, txt) in enumerate(cues, 1):
+            fh.write(f"{i}\n{ts(a)} --> {ts(b)}\n{txt}\n\n")
     print("->", out, f"{dur(out):.1f}s")
     subprocess.run(["ffmpeg", "-v", "error", "-y", "-ss", "31", "-i", out, "-frames:v", "1",
                     "-q:v", "3", f"{OUT}/poster.jpg"], check=True)
