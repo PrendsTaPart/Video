@@ -72,6 +72,11 @@ celle dont je n'ai aucune image**.
 
 - **17 plans b-roll restaurant** (Higgsfield, 1280×720, 24 fps) — `hero-video/assets/video/`
   (chef, serveur, directeur cohérents entre les plans, personnages déjà « castés »).
+- **+31 plans 16:9 jamais rapatriés** repérés dans la bibliothèque Higgsfield (404 vidéos au
+  total) — sélection et liens dans `HIGGSFIELD-PLANS.md`, index complet dans
+  `higgsfield-index.json`. Plusieurs collent au script au mot près (pass saturé avec les trois
+  tablettes et le téléphone qui vibre, notifications qui s'empilent, « il valide d'un geste »,
+  générique logo 5 s).
 - **~70 captures écran réelles du produit** en 1920×828 — `videos/foodeatup-*-tuto/assets/screen.mp4`.
 - **Charte + logos officiels** — `videos/shared-images/brand/` (mascotte, mark, horizontal),
   bleu `#007BFF`/`#147AFF`, orange `#FFA500`, crème `#FCF9E6`, encre `#0F1A23`.
@@ -88,6 +93,8 @@ celle dont je n'ai aucune image**.
 ---
 
 ## 3. Découpage technique proposé (scène par scène)
+
+> Les plans Higgsfield candidats, scène par scène, sont listés dans `HIGGSFIELD-PLANS.md`.
 
 | # | Visuel | Source | État |
 |---|---|---|---|
