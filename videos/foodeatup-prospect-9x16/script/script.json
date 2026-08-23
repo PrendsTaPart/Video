@@ -2,44 +2,228 @@
   "project": "foodeatup-prospect-9x16",
   "resolution": "1080x1920",
   "fps": 30,
-  "voice": {"provider": "elevenlabs", "voice_id": "TGAegA0zNRi8I6nUdq3i", "name": "Adam", "model": "eleven_multilingual_v2", "status": "NON GÉNÉRÉE — en attente de validation du script"},
+  "voice": {
+    "provider": "elevenlabs",
+    "voice_id": "odOFTFZU3DvAZ3EV3KHi",
+    "name": "Lucas — Premium French Corporate Narrator",
+    "model": "eleven_multilingual_v2",
+    "note": "Voix française native (accent fr-standard), ton corporate chaleureux — remplace Adam, dont l'accent anglophone était perceptible en multilingue.",
+    "status": "à générer — build_vo.py, nécessite ELEVENLABS_API_KEY"
+  },
   "scenes": [
-    {"id": "S1", "titre": "Accroche", "duree": 14.0, "visuel": "b-roll chaos (4 plans) + pastilles de notification + post-it DLC",
-     "vo": [
-       {"id": "L1", "text": "Chaque jour, dans votre restaurant, mille choses se jouent en même temps.", "sub": ["Chaque jour", "dans votre restaurant", "mille choses se jouent", "en même temps"]},
-       {"id": "L2", "text": "Les commandes qui s'enchaînent. Les stocks à surveiller. La carte à mettre à jour. Les équipes à organiser. Les réseaux sociaux à alimenter.", "sub": ["Les commandes", "qui s'enchaînent", "Les stocks à surveiller", "La carte à mettre à jour", "Les équipes à organiser", "Les réseaux à alimenter"]}
-     ]},
-    {"id": "S2", "titre": "Présentation FoodEatUp", "duree": 13.0, "visuel": "respiration + logo + les 4 IA qui se posent",
-     "vo": [
-       {"id": "L3", "text": "Et si tout ça n'était plus un problème ?", "sub": ["Et si tout ça", "n'était plus un problème ?"]},
-       {"id": "L4", "text": "FoodEatUp, ce sont quatre intelligences artificielles qui travaillent pour vous, jour et nuit, pour piloter votre restaurant sans effort.", "sub": ["FoodEatUp", "quatre intelligences artificielles", "qui travaillent pour vous", "jour et nuit", "pour piloter votre restaurant", "sans effort"]}
-     ]},
-    {"id": "S3", "titre": "IA Commandes", "duree": 20.0, "visuel": "mockup : téléphone / borne / en ligne convergent vers l'écran cuisine",
-     "vo": [
-       {"id": "L5", "text": "La première prend en charge toutes vos commandes : au téléphone, sur borne, ou en ligne.", "sub": ["La première prend en charge", "toutes vos commandes", "au téléphone", "sur borne", "ou en ligne"]},
-       {"id": "L6", "text": "Elles arrivent directement en cuisine, dans le bon ordre. Fini les erreurs, fini l'attente, même en plein coup de feu.", "sub": ["Elles arrivent en cuisine", "dans le bon ordre", "Fini les erreurs", "fini l'attente", "même en plein coup de feu"]}
-     ]},
-    {"id": "S4", "titre": "IA Cuisine", "duree": 23.0, "visuel": "mockup : alerte rupture → commande fournisseur → planning qui se remplit",
-     "vo": [
-       {"id": "L7", "text": "La deuxième assiste vos équipes en cuisine.", "sub": ["La deuxième assiste", "vos équipes en cuisine"]},
-       {"id": "L8", "text": "Produits disponibles, dates de péremption, ruptures de stock, commandes fournisseurs, plannings, suivi RH.", "sub": ["Produits disponibles", "dates de péremption", "ruptures de stock", "commandes fournisseurs", "plannings", "suivi RH"]},
-       {"id": "L9", "text": "Tout est anticipé. Rien n'est oublié.", "sub": ["Tout est anticipé", "Rien n'est oublié"]}
-     ]},
-    {"id": "S5", "titre": "IA Pilotage WhatsApp", "duree": 22.0, "visuel": "mockup : conversation WhatsApp, deux questions, deux réponses chiffrées",
-     "vo": [
-       {"id": "L10", "text": "La troisième, vous lui parlez sur WhatsApp.", "sub": ["La troisième", "vous lui parlez sur WhatsApp"]},
-       {"id": "L11", "text": "Combien de couverts ce midi ? Il me reste combien de steaks hachés ? Vous posez la question, elle répond en temps réel, où que vous soyez.", "sub": ["Combien de couverts ce midi ?", "Il me reste combien de steaks ?", "Vous posez la question", "elle répond en temps réel", "où que vous soyez"]}
-     ]},
-    {"id": "S6", "titre": "IA Réseaux sociaux", "duree": 26.0, "visuel": "mockup : alerte tomates J-3 → recette promo → carte mise à jour → campagne publiée",
-     "vo": [
-       {"id": "L12", "text": "Et la quatrième s'occupe de vos réseaux sociaux.", "sub": ["Et la quatrième s'occupe", "de vos réseaux sociaux"]},
-       {"id": "L13", "text": "Un stock de tomates à écouler dans trois jours ? FoodEatUp ajuste votre carte, vous propose une recette en promotion, et lance la campagne sur vos réseaux.", "sub": ["Un stock de tomates", "à écouler dans trois jours ?", "FoodEatUp ajuste votre carte", "vous propose une recette", "en promotion", "et lance la campagne", "sur vos réseaux"]},
-       {"id": "L14", "text": "De l'alerte au client qui pousse la porte. Depuis votre téléphone.", "sub": ["De l'alerte", "au client qui pousse la porte", "Depuis votre téléphone"]}
-     ]},
-    {"id": "S7", "titre": "Clôture & CTA", "duree": 12.0, "visuel": "retour salle sereine + carte logo + CTA RDV démo",
-     "vo": [
-       {"id": "L15", "text": "FoodEatUp. La gestion de votre restaurant, simplifiée par l'intelligence artificielle.", "sub": ["FoodEatUp", "La gestion de votre restaurant", "simplifiée par l'IA"]},
-       {"id": "L16", "text": "Réservez votre démonstration dès maintenant.", "sub": ["Réservez votre démonstration", "dès maintenant"]}
-     ]}
+    {
+      "id": "S1",
+      "titre": "Accroche",
+      "duree": 14.0,
+      "visuel": "b-roll chaos (4 plans) + pastilles de notification + post-it DLC",
+      "vo": [
+        {
+          "id": "L1",
+          "text": "Chaque jour, dans votre restaurant, mille choses se jouent en même temps.",
+          "sub": [
+            "Chaque jour",
+            "dans votre restaurant",
+            "mille choses se jouent",
+            "en même temps"
+          ]
+        },
+        {
+          "id": "L2",
+          "text": "Les commandes qui s'enchaînent. Les stocks à surveiller. La carte à mettre à jour. Les équipes à organiser. Les réseaux sociaux à alimenter.",
+          "sub": [
+            "Les commandes",
+            "qui s'enchaînent",
+            "Les stocks à surveiller",
+            "La carte à mettre à jour",
+            "Les équipes à organiser",
+            "Les réseaux à alimenter"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "S2",
+      "titre": "Présentation FoodEatUp",
+      "duree": 13.0,
+      "visuel": "respiration + logo + les 4 IA qui se posent",
+      "vo": [
+        {
+          "id": "L3",
+          "text": "Et si tout ça n'était plus un problème ?",
+          "sub": [
+            "Et si tout ça",
+            "n'était plus un problème ?"
+          ]
+        },
+        {
+          "id": "L4",
+          "text": "FoodEatUp, ce sont quatre intelligences artificielles qui travaillent pour vous, jour et nuit, pour piloter votre restaurant sans effort.",
+          "sub": [
+            "FoodEatUp",
+            "quatre intelligences artificielles",
+            "qui travaillent pour vous",
+            "jour et nuit",
+            "pour piloter votre restaurant",
+            "sans effort"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "S3",
+      "titre": "IA Commandes",
+      "duree": 20.0,
+      "visuel": "mockup : téléphone / borne / en ligne convergent vers l'écran cuisine",
+      "vo": [
+        {
+          "id": "L5",
+          "text": "La première prend en charge toutes vos commandes : au téléphone, sur borne, ou en ligne.",
+          "sub": [
+            "La première prend en charge",
+            "toutes vos commandes",
+            "au téléphone",
+            "sur borne",
+            "ou en ligne"
+          ]
+        },
+        {
+          "id": "L6",
+          "text": "Elles arrivent directement en cuisine, dans le bon ordre. Fini les erreurs, fini l'attente, même en plein coup de feu.",
+          "sub": [
+            "Elles arrivent en cuisine",
+            "dans le bon ordre",
+            "Fini les erreurs",
+            "fini l'attente",
+            "même en plein coup de feu"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "S4",
+      "titre": "IA Cuisine",
+      "duree": 23.0,
+      "visuel": "mockup : alerte rupture → commande fournisseur → planning qui se remplit",
+      "vo": [
+        {
+          "id": "L7",
+          "text": "La deuxième assiste vos équipes en cuisine.",
+          "sub": [
+            "La deuxième assiste",
+            "vos équipes en cuisine"
+          ]
+        },
+        {
+          "id": "L8",
+          "text": "Produits disponibles, dates de péremption, ruptures de stock, commandes fournisseurs, plannings, suivi RH.",
+          "sub": [
+            "Produits disponibles",
+            "dates de péremption",
+            "ruptures de stock",
+            "commandes fournisseurs",
+            "plannings",
+            "suivi RH"
+          ]
+        },
+        {
+          "id": "L9",
+          "text": "Tout est anticipé. Rien n'est oublié.",
+          "sub": [
+            "Tout est anticipé",
+            "Rien n'est oublié"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "S5",
+      "titre": "IA Pilotage WhatsApp",
+      "duree": 22.0,
+      "visuel": "mockup : conversation WhatsApp, deux questions, deux réponses chiffrées",
+      "vo": [
+        {
+          "id": "L10",
+          "text": "La troisième, vous lui parlez sur WhatsApp.",
+          "sub": [
+            "La troisième",
+            "vous lui parlez sur WhatsApp"
+          ]
+        },
+        {
+          "id": "L11",
+          "text": "Combien de couverts ce midi ? Il me reste combien de steaks hachés ? Vous posez la question, elle répond en temps réel, où que vous soyez.",
+          "sub": [
+            "Combien de couverts ce midi ?",
+            "Il me reste combien de steaks ?",
+            "Vous posez la question",
+            "elle répond en temps réel",
+            "où que vous soyez"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "S6",
+      "titre": "IA Réseaux sociaux",
+      "duree": 26.0,
+      "visuel": "mockup : alerte tomates J-3 → recette promo → carte mise à jour → campagne publiée",
+      "vo": [
+        {
+          "id": "L12",
+          "text": "Et la quatrième s'occupe de vos réseaux sociaux.",
+          "sub": [
+            "Et la quatrième s'occupe",
+            "de vos réseaux sociaux"
+          ]
+        },
+        {
+          "id": "L13",
+          "text": "Un stock de tomates à écouler dans trois jours ? FoodEatUp ajuste votre carte, vous propose une recette en promotion, et lance la campagne sur vos réseaux.",
+          "sub": [
+            "Un stock de tomates",
+            "à écouler dans trois jours ?",
+            "FoodEatUp ajuste votre carte",
+            "vous propose une recette",
+            "en promotion",
+            "et lance la campagne",
+            "sur vos réseaux"
+          ]
+        },
+        {
+          "id": "L14",
+          "text": "De l'alerte au client qui pousse la porte. Depuis votre téléphone.",
+          "sub": [
+            "De l'alerte",
+            "au client qui pousse la porte",
+            "Depuis votre téléphone"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "S7",
+      "titre": "Clôture & CTA",
+      "duree": 12.0,
+      "visuel": "retour salle sereine + carte logo + CTA RDV démo",
+      "vo": [
+        {
+          "id": "L15",
+          "text": "FoodEatUp. La gestion de votre restaurant, simplifiée par l'intelligence artificielle.",
+          "sub": [
+            "FoodEatUp",
+            "La gestion de votre restaurant",
+            "simplifiée par l'IA"
+          ]
+        },
+        {
+          "id": "L16",
+          "text": "Réservez votre démonstration dès maintenant.",
+          "sub": [
+            "Réservez votre démonstration",
+            "dès maintenant"
+          ]
+        }
+      ]
+    }
   ]
 }

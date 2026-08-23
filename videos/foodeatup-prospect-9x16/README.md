@@ -12,7 +12,7 @@ Objectif : obtenir un RDV démo.
 | B-roll (S1, S7) | 🟡 Recadrage vertical des plans 16:9 existants — à remplacer par les plans natifs de `PROMPTS-HIGGSFIELD.md` |
 | Sous-titres incrustés | ✅ Style Reels, minutage estimé (2,6 mots/s) |
 | Musique | ✅ Piste studio `stories-foodeatup-30j/audio/bgm.mp3`, −10 dB |
-| Voix off | ⏸️ Script **validé** par Michael ; pipeline prêt (`build_vo.py`), bloqué sur `ELEVENLABS_API_KEY` |
+| Voix off | ⏸️ Script validé · voix retenue : **Lucas** (`odOFTFZU3DvAZ3EV3KHi`, FR natif) · pipeline prêt (`build_vo.py`), bloqué sur une `ELEVENLABS_API_KEY` valide |
 | Rendu | ✅ `out/foodeatup-prospect-9x16-animatique-v0.mp4` (animatique, sans voix) |
 
 ## Fabriquer
