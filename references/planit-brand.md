@@ -85,3 +85,17 @@ plutôt que `s{saison}e{episode}`, puisque le contenu est piloté par le MCP Aca
 
 Baseline du produit : « Vos logiciels ont enfin une équipe. »
 Signature de fin (Série A/D) : « Ce n'est pas demain. C'est aujourd'hui. »
+
+## Voix off — figée pour toute la série (choisie le 2026-08-23, épisode A-S2E1)
+
+**Enrick – Calm French Narrator** — `voice_id: 0xHziZolI8Tp6rLtUqh2` (ElevenLabs).
+Français natif standard, homme, la cinquantaine, calme et posé, « explique patiemment » —
+le registre « qui constate, pas qui joue » demandé pour la série. Choisie plutôt qu'un
+preset par défaut, qui garde un accent anglais audible même en multilingue.
+Modèle : `eleven_multilingual_v2`. Réutiliser cette même voix sur tous les épisodes de
+toutes les séries, sauf demande explicite contraire.
+⚠️ Le connecteur MCP ElevenLabs de cette session n'expose pas de paramètres
+stabilité/style séparés sur `creative_generate_speech` — seuls `voice_id`, `model_id` et
+le texte sont réglables. Le registre "stabilité haute / style bas" demandé est donc obtenu
+par le choix de la voix elle-même (Enrick est nativement stable et sobre), pas par un
+réglage numérique.
