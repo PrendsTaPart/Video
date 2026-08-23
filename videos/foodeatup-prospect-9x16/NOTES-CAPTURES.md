@@ -39,3 +39,21 @@ Un **jeu d'enregistrements sur un compte de démonstration propre** :
 - résolution 1920×1080, et si possible un enregistrement cadré serré sur le module montré.
 
 Avec ça, je remplace les maquettes par les vraies captures sans toucher au reste du montage.
+
+---
+
+## Pourquoi la voix off n'est pas encore dans le montage
+
+Le script a été validé, mais je ne peux pas produire les fichiers audio depuis cette session :
+
+- Le **connecteur ElevenLabs** disponible ici génère bien la voix (testé sur la première
+  ligne, voix Adam `TGAegA0zNRi8I6nUdq3i`, flow `KcQxLe13OnO3BBrewdnY`), mais il rend le
+  résultat dans une vue de lecture côté client. Aucun de ses outils ne renvoie l'URL du
+  fichier généré, donc je ne peux pas le rapatrier dans le dépôt pour le monter.
+- L'**API REST ElevenLabs** est joignable depuis cette session (`api.elevenlabs.io`), mais
+  `ELEVENLABS_API_KEY` n'est pas dans l'environnement : le dépôt la range dans
+  `studio-video/.env`, qui est gitignoré et donc absent d'un clone frais.
+
+`build_vo.py` est écrit et prêt : dès que la clé est fournie, une commande génère les 16
+lignes, les normalise une par une, et `build_final.py` recale automatiquement les
+sous-titres sur les durées réelles.

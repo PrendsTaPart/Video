@@ -12,7 +12,7 @@ Objectif : obtenir un RDV démo.
 | B-roll (S1, S7) | 🟡 Recadrage vertical des plans 16:9 existants — à remplacer par les plans natifs de `PROMPTS-HIGGSFIELD.md` |
 | Sous-titres incrustés | ✅ Style Reels, minutage estimé (2,6 mots/s) |
 | Musique | ✅ Piste studio `stories-foodeatup-30j/audio/bgm.mp3`, −10 dB |
-| Voix off | ❌ **Non générée** — attend la validation du script (règle étape 3 du workflow tutoriels) |
+| Voix off | ⏸️ Script **validé** par Michael ; pipeline prêt (`build_vo.py`), bloqué sur `ELEVENLABS_API_KEY` |
 | Rendu | ✅ `out/foodeatup-prospect-9x16-animatique-v0.mp4` (animatique, sans voix) |
 
 ## Fabriquer
@@ -20,8 +20,13 @@ Objectif : obtenir un RDV démo.
 ```bash
 python3 build_mockups.py          # maquettes d'interface -> work/seq-s2..s7.mp4
 python3 build_broll.py            # b-roll vertical      -> work/seq-s1.mp4, seq-s7a.mp4
+export ELEVENLABS_API_KEY=...     # ou: set -a; . ../../studio-video/.env; set +a
+python3 build_vo.py               # voix off ligne par ligne -> vo/L*.mp3 + vo/vo_meta.json
 python3 build_final.py            # assemblage + sous-titres + musique -> out/
 ```
+
+`build_final.py` détecte `vo/vo_meta.json` : présent, il monte la version complète et cale
+les sous-titres sur la durée réelle de chaque ligne ; absent, il sort l'animatique muette.
 
 `work/` est ignoré par git (frames intermédiaires) : tout se régénère avec ces trois commandes.
 
@@ -39,7 +44,8 @@ python3 build_final.py            # assemblage + sous-titres + musique -> out/
 
 ## À faire ensuite
 
-1. Valider le script (`script/script.json`) → je génère la voix off ElevenLabs et je recale
-   le minutage des sous-titres sur les durées réelles.
+1. ~~Valider le script~~ ✅ fait. Reste la clé `ELEVENLABS_API_KEY` pour lancer `build_vo.py`
+   (le connecteur ElevenLabs de la session génère la voix mais ne rend pas le fichier
+   téléchargeable, cf. `NOTES-CAPTURES.md`).
 2. Générer les plans verticaux de `PROMPTS-HIGGSFIELD.md` et les déposer dans `assets/hf/`.
 3. Fournir le vrai lien de prise de RDV (la carte finale affiche un placeholder).
