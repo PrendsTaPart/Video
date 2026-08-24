@@ -81,18 +81,30 @@
   /* pastille de filtre active : "Toutes" -> "Terminées" (même fond bouton) */
   #p3st-filter { left: 16px; top: 225px; width: 133px; height: 38px; background: var(--planit-bouton); }
 
-  /* carte 1 : badge À venir -> Terminées (couleur change : rose -> primaire) */
-  #p3st-badge1 { left: 16px; top: 293px; width: 112px; height: 32px; background: var(--planit-primaire); }
+  /* réinitialisation en blanc (fond de carte) avant de redessiner, assez
+     généreuse pour couvrir aussi l'ombre portée douce de l'ancien badge/
+     pastille — c'est ce halo, plus large que la couleur pleine, qui
+     laissait deviner l'ancien badge en dessous */
+  .p3st-reset { position: absolute; background: #FFFFFF; }
+
+  /* carte 1 : badge À venir -> Terminées (couleur change : rose -> primaire),
+     taille et rayon strictement identiques au badge "Terminées" d'origine
+     de la carte 2 (123x33, rayon plein) */
+  #p3st-badge1 { left: 18px; top: 291px; width: 123px; height: 33px; background: var(--planit-primaire); }
   #p3st-title1 { left: 38px; top: 340px; width: 290px; height: 35px; }
   /* tag "Hebdo" de la carte 1 : déjà correct, aucune retouche */
 
   /* carte 2 : titre uniquement (badge "Terminées" déjà correct) */
   #p3st-title2 { left: 38px; top: 524px; width: 270px; height: 35px; }
-  /* tag "Mensuel" -> "Hebdo" (même fond) */
-  #p3st-tag2 { left: 16px; top: 590px; width: 97px; height: 29px; background: var(--app-tag); border-radius: 14px; }
+  /* tag "Mensuel" -> "Hebdo" : taille et emplacement relatif strictement
+     identiques au tag "Hebdo" d'origine de la carte 1 (89x26, même retrait
+     de 18px depuis le bord gauche de la carte, même décalage de 110px
+     depuis le badge de la carte) */
+  #p3st-tag2 { left: 18px; top: 588px; width: 89px; height: 26px; background: var(--app-tag); border-radius: 999px; }
 
-  /* carte 3 : titre uniquement (badge "À venir" déjà correct) */
-  #p3st-title3 { left: 38px; top: 697px; width: 300px; height: 46px; }
+  /* carte 3 : titre raccourci + largeur réduite pour ne jamais chevaucher
+     le bouton flottant "+" (dégradé rose/violet, commence vers x=266px) */
+  #p3st-title3 { left: 38px; top: 697px; width: 215px; height: 46px; }
 </style>
 
 <div
@@ -111,13 +123,20 @@
 
       <div id="p3st-filter" class="p3st-patch p3st-pill">Termin&eacute;es</div>
 
+      <!-- réinitialisation avant redessin : couvre aussi l'ombre portée
+           douce des anciens éléments (badge carte 1, tag carte 2) -->
+      <div class="p3st-reset" style="left:8px; top:280px; width:140px; height:58px; border-radius:16px;"></div>
+      <div class="p3st-reset" style="left:8px; top:575px; width:115px; height:58px; border-radius:16px;"></div>
+
       <div id="p3st-badge1" class="p3st-patch p3st-pill">Termin&eacute;es</div>
       <div id="p3st-title1" class="p3st-title">Relancer les devis sans r&eacute;ponse</div>
 
       <div id="p3st-title2" class="p3st-title">Relance devis &mdash; semaine 34</div>
       <div id="p3st-tag2" class="p3st-patch p3st-pill">Hebdo</div>
 
-      <div id="p3st-title3" class="p3st-title">Relancer les devis sans r&eacute;ponse</div>
+      <!-- titre raccourci (retire "les") pour ne jamais chevaucher le
+           bouton "+" flottant à droite -->
+      <div id="p3st-title3" class="p3st-title">Relancer devis sans r&eacute;ponse</div>
     </div>
   </div>
   <div id="p3st-frame"></div>
