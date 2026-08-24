@@ -93,7 +93,8 @@ _gabarit-quai/
     fonts/    Sora + Inter (repli officiel, Alte Haas Grotesk indisponible)
     vendor/   gsap.min.js
     brand/    planit-mark-white.png
-    sfx/, video/, voice/   (les deux derniers vides, remplis par plan, non commités)
+    sfx/    dont signature-outro.mp3, joué par carton-fin.html (0-2s de la version sociale)
+    video/, voice/         (vides dans le gabarit, remplis par plan, non commités)
   scripts/
     quai-monter.mjs
 ```

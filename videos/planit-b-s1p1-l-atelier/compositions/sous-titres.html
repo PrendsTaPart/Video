@@ -4,7 +4,6 @@
 <style data-brand-tokens>
   :root {
     --ink-deep: #1F0D3E;    /* encre, charte officielle (obtenir_charte) */
-    --planit-rose: #FE64D5; /* rose, charte officielle — mot actif */
     --cap-baseline: 1013px; /* base du texte, imposée par le gabarit */
   }
   /* Alte Haas Grotesk indisponible dans cet environnement (réseau bloqué,
@@ -55,16 +54,13 @@
     white-space: nowrap;
     max-width: 640px; /* 720 - 2*40px de marge latérale du bandeau */
   }
+  /* blanc uniforme du début à la fin — pas de mise en évidence du mot
+     actif (demande explicite pour Le Quai, à la différence de Série A) */
   .caption-word {
     color: #FFFFFF;
     -webkit-text-stroke: 4px var(--ink-deep);
     paint-order: stroke fill;
     text-shadow: 0 3px 8px color-mix(in srgb, var(--ink-deep) 60%, transparent);
-  }
-  /* mot actif : rose, sans fond, sans surlignage — juste un changement de couleur */
-  .caption-word.is-active {
-    color: var(--planit-rose);
-    -webkit-text-stroke: 4px var(--ink-deep);
   }
 </style>
 
@@ -132,16 +128,10 @@
       tl.set(groupEl, { opacity: 1 }, start);
       tl.set(groupEl, { opacity: 0 }, end);
 
-      words.forEach(function (w, i) {
-        var el = document.getElementById("caption-word-" + g + "-" + i);
-        var at = Math.max(start, Number(w.start));
-        tl.set(el, { className: "caption-word" }, start);
-        tl.set(el, { className: "caption-word is-active" }, at);
-        if (i + 1 < words.length) {
-          var nextAt = Math.max(start, Number(words[i + 1].start));
-          tl.set(el, { className: "caption-word" }, nextAt); // redevient blanc, sans fond
-        }
-      });
+      // blanc uniforme, aucune mise en évidence mot par mot (à la
+      // différence de Série A) — les timings par mot dans GROUPS restent
+      // utiles au .vtt, mais n'ont plus d'effet visuel ici.
+      void words;
     });
 
     // full-span anchor so the sub-comp timeline spans the whole video
