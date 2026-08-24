@@ -121,7 +121,7 @@ function readConfig(episodeDir) {
   const configPath = path.join(episodeDir, "quai.config.json");
   if (!existsSync(configPath)) die(`quai.config.json introuvable dans ${episodeDir}`);
   const config = JSON.parse(readFileSync(configPath, "utf8"));
-  for (const field of ["id", "slug", "acte", "plan", "epoque", "titre", "voix", "planSource", "ambianceDb"]) {
+  for (const field of ["id", "slug", "acte", "plan", "epoque", "titre", "voix", "planSource", "ambianceDb", "punchline"]) {
     if (config[field] === undefined || config[field] === null || config[field] === "") {
       die(`quai.config.json : champ "${field}" manquant ou vide`);
     }
@@ -183,6 +183,16 @@ function scaffold(episodeDir) {
   ok(`fichiers du gabarit en place dans ${episodeDir}`);
 }
 
+/** Échappe le texte libre (epoque, punchline...) injecté dans du HTML —
+ * ces champs viennent du studio, pas du code, donc jamais fait confiance
+ * aveuglément même si le risque réel (esperluette isolée, etc.) est faible. */
+function escapeHtml(text) {
+  return String(text)
+    .replace(/&/g, "&amp;")
+    .replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;");
+}
+
 /** Remplace les jetons __QUAI_..._​_ dans un template lu depuis le gabarit,
  * puis écrit le résultat dans le dossier épisode. Ne modifie jamais le
  * gabarit lui-même. */
@@ -238,7 +248,8 @@ function assemble(episodeDir, config) {
 
   injectTokensToFile("index-film.html", episodeDir, commonTokens);
   injectTokensToFile("index-social.html", episodeDir, commonTokens);
-  injectTokensToFile("compositions/cartouche-date.html", episodeDir, { __QUAI_EPOQUE__: config.epoque });
+  injectTokensToFile("compositions/cartouche-date.html", episodeDir, { __QUAI_EPOQUE__: escapeHtml(config.epoque) });
+  injectTokensToFile("compositions/carton-fin.html", episodeDir, { __QUAI_PUNCHLINE__: escapeHtml(config.punchline) });
 
   // sous-titres.html : remplace littéralement la ligne `var GROUPS = [];`
   let subs = readFileSync(path.join(GABARIT_DIR, "compositions", "sous-titres.html"), "utf8");

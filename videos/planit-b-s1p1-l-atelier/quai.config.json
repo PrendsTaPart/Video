@@ -7,5 +7,6 @@
   "titre": "L'atelier",
   "voix": "En 1886, l'outil devient une machine. Il faut la conduire.",
   "planSource": "assets/video/plan.mp4",
-  "ambianceDb": -6
+  "ambianceDb": -6,
+  "punchline": "Chaque époque a construit son outil."
 }

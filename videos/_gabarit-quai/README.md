@@ -21,9 +21,10 @@ mêmes images.
 
 ## Comment un plan est produit
 
-1. L'agent (Claude) appelle `obtenir_episode` sur le studio, télécharge le
-   plan, synthétise la voix off (ElevenLabs, voix figée dans
-   `references/planit-brand.md`), transcrit au mot.
+1. L'agent (Claude) appelle `obtenir_episode` sur le studio (qui donne aussi
+   la punchline de l'épisode), télécharge le plan, synthétise la voix off
+   (ElevenLabs, voix figée dans `references/planit-brand.md`), transcrit au
+   mot.
 2. Ces données sont écrites dans `videos/{slug}/quai.config.json`,
    `assets/video/plan.mp4`, `assets/voice/vo.mp3`, `caption_groups.json`.
 3. `node scripts/quai-monter.mjs videos/{slug}` prend le relais : copie les
@@ -47,6 +48,7 @@ contient des jetons uniques que `quai-monter.mjs` remplace :
 | `__QUAI_VOICE_SRC__` | fixe : `assets/voice/vo.mp3` | idem |
 | `__QUAI_VOICE_DURATION__` | mesurée par ffprobe sur le fichier voix | idem |
 | `__QUAI_EPOQUE__` | `quai.config.json` → `epoque` | `compositions/cartouche-date.html` |
+| `__QUAI_PUNCHLINE__` | `quai.config.json` → `punchline` | `compositions/carton-fin.html` |
 | `var GROUPS = [];` | `caption_groups.json` | `compositions/sous-titres.html` |
 
 ## Pourquoi il n'y a pas de `npm run check` générique
@@ -87,8 +89,9 @@ _gabarit-quai/
   index-social.html        la version sociale (12,0s)
   compositions/
     cartouche-date.html    cartouche de date, coin bas gauche
-    carton-fin.html        carton de fin encre, 2s
-    sous-titres.html       sous-titres karaoké, une ligne à la fois
+    carton-fin.html        carton de fin, 2s — mark + punchline + signature,
+                            composition inspirée d'A-S2E1 v8, fond encre du Quai
+    sous-titres.html       sous-titres, une ligne à la fois, blanc uniforme
   assets/
     fonts/    Sora + Inter (repli officiel, Alte Haas Grotesk indisponible)
     vendor/   gsap.min.js
