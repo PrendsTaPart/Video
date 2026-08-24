@@ -5,29 +5,43 @@
   :root {
     --ink-deep: #1F0D3E;      /* encre, charte officielle (obtenir_charte) */
     --planit-bouton: #8236F8; /* bouton, charte officielle — liseré du cadre */
-    --planit-primaire: #4F2DF9; /* primaire, charte officielle — fond de la bulle utilisateur d'origine (prélevé au pixel) */
+    --planit-primaire: #4F2DF9; /* primaire, charte officielle — fond de la bulle Karim (prélevé au pixel) */
   }
   @font-face { font-family: "PlanitText"; src: url("assets/fonts/Inter-400.woff2") format("woff2"); font-weight: 400; }
 </style>
 
 <style>
-  /* Carte téléphone : hauteur 62% du cadre (1280*0.62=793.6px), centrée
-     horizontalement, base à y=1000px -> top=206.4px, left=(720-366.71)/2 */
+  /* Carte téléphone : hauteur 55% du cadre (1280*0.55=704px), bord droit à
+     x=660px, base à y=980px -> left=660-325.31, top=980-704 */
   #p3sc-outer {
     position: absolute;
-    left: 176.64px;
-    top: 206.4px;
-    width: 366.71px;
-    height: 793.6px;
+    left: 334.69px;
+    top: 276px;
+    width: 325.31px;
+    height: 704px;
+  }
+  /* masque qui découpe le contenu à l'échelle native -- SEUL cet élément a
+     overflow:hidden ; aucun autre élément ne porte à la fois overflow:hidden
+     et une bordure, pour éviter l'artéfact de liseré pleine hauteur observé
+     précédemment (trait vertical du plafond au sol) */
+  #p3sc-clip {
+    position: absolute;
+    inset: 0;
+    overflow: hidden;
+    border-radius: 24px;
+  }
+  /* cadre visuel : liseré + ombre, élément à part, sans overflow:hidden ni
+     enfant mis à l'échelle -- se contente de dessiner le contour */
+  #p3sc-frame {
+    position: absolute;
+    inset: 0;
     border-radius: 24px;
     border: 2px solid var(--planit-bouton);
     box-shadow: 0px 12px 32px color-mix(in srgb, var(--ink-deep) 50%, transparent);
-    overflow: hidden;
+    pointer-events: none;
   }
   /* contenu à l'échelle native de la capture (390x844), mis à l'échelle
-     d'affichage par un scale fixe non animé (793.6/844) — séparé du
-     conteneur d'entrée pour ne jamais mélanger un transform GSAP et un
-     transform statique sur le même élément */
+     d'affichage par un scale fixe non animé (704/844) */
   #p3sc-inner {
     position: absolute;
     left: 0;
@@ -35,9 +49,9 @@
     width: 390px;
     height: 844px;
     transform-origin: top left;
-    transform: scale(0.940284);
+    transform: scale(0.834123);
   }
-  #p3sc-inner img {
+  #p3sc-inner img.p3sc-bg {
     position: absolute;
     inset: 0;
     width: 390px;
@@ -45,27 +59,32 @@
     display: block;
   }
 
-  /* rectangles de masquage : couleur exacte prélevée au pixel dans l'image
-     d'origine, mêmes coordonnées et même rayon de coin que les bulles */
+  /* réinitialisation des deux zones de bulles d'origine (fond + avatars)
+     à la couleur de page, avant de redessiner les bulles échangées */
+  .p3sc-reset { position: absolute; background: #EDEAFE; }
+
   .p3sc-patch {
     position: absolute;
     border-radius: 10px;
     display: flex;
     align-items: center;
   }
-  #p3sc-bubble-agent {
-    left: 74px;
+  /* bulle du HAUT : Karim, alignée à droite (fond primaire, prélevé au
+     pixel dans l'image d'origine) */
+  #p3sc-bubble-karim {
+    left: 94px;
     top: 294px;
     width: 221px;
     height: 56px;
-    background: #FFFFFF;
+    background: var(--planit-primaire);
   }
-  #p3sc-bubble-user {
-    left: 94px;
+  /* bulle du BAS : Nina, à gauche (fond blanc d'origine) */
+  #p3sc-bubble-nina {
+    left: 74px;
     top: 376px;
     width: 221px;
     height: 56px;
-    background: var(--planit-primaire);
+    background: #FFFFFF;
   }
   .p3sc-text {
     font-family: "PlanitText", system-ui, sans-serif;
@@ -75,11 +94,17 @@
     padding: 0 14px;
     width: 100%;
   }
-  /* le texte de remplacement de la bulle agent est plus long que l'original
-     et passe sur 3 lignes : légère réduction de taille pour rester
-     strictement dans les mêmes 56px de hauteur que la bulle d'origine */
-  #p3sc-bubble-agent .p3sc-text { color: #202020; font-size: 14px; line-height: 18px; }
-  #p3sc-bubble-user .p3sc-text { color: #FFFFFF; }
+  #p3sc-bubble-karim .p3sc-text { color: #FFFFFF; }
+  /* le texte de Nina est plus long que l'original et passe sur 3 lignes :
+     légère réduction pour rester strictement dans les 56px de hauteur */
+  #p3sc-bubble-nina .p3sc-text { color: #202020; font-size: 14px; line-height: 18px; }
+
+  .p3sc-avatar { position: absolute; width: 39px; height: 39px; border-radius: 50%; overflow: hidden; }
+  .p3sc-avatar img { width: 100%; height: 100%; display: block; }
+  /* avatar de Karim (photo), désormais à côté de sa bulle en haut */
+  #p3sc-avatar-karim { left: 327px; top: 303px; }
+  /* avatar de Nina (pictogramme), désormais à côté de sa bulle en bas */
+  #p3sc-avatar-nina { left: 23px; top: 385px; }
 </style>
 
 <div
@@ -92,17 +117,30 @@
   data-width="720"
   data-height="1280"
 >
-  <div id="p3sc-inner">
-    <img src="assets/img/ecran-conversation.png" alt="" />
-    <!-- bulle agent : texte d'origine masqué et remplacé, superposition -->
-    <div id="p3sc-bubble-agent" class="p3sc-patch">
-      <div class="p3sc-text">Je m&rsquo;en occupe. Nina reprend les devis sans r&eacute;ponse.</div>
-    </div>
-    <!-- bulle utilisateur : texte d'origine masqué et remplacé, superposition -->
-    <div id="p3sc-bubble-user" class="p3sc-patch">
-      <div class="p3sc-text">Relance les devis de la semaine derni&egrave;re.</div>
+  <div id="p3sc-clip">
+    <div id="p3sc-inner">
+      <img class="p3sc-bg" src="assets/img/ecran-conversation.png" alt="" />
+
+      <!-- reset des deux zones d'origine (bulle + avatar) avant de redessiner échangé -->
+      <div class="p3sc-reset" style="left:68px; top:288px; width:234px; height:66px; border-radius:12px;"></div>
+      <div class="p3sc-reset" style="left:88px; top:370px; width:234px; height:66px; border-radius:12px;"></div>
+      <div class="p3sc-reset" style="left:19px; top:299px; width:47px; height:47px; border-radius:50%;"></div>
+      <div class="p3sc-reset" style="left:323px; top:381px; width:47px; height:47px; border-radius:50%;"></div>
+
+      <!-- bulle Karim (haut, à droite) -->
+      <div id="p3sc-bubble-karim" class="p3sc-patch">
+        <div class="p3sc-text">Relance les devis de la semaine derni&egrave;re.</div>
+      </div>
+      <!-- bulle Nina (bas, à gauche) -->
+      <div id="p3sc-bubble-nina" class="p3sc-patch">
+        <div class="p3sc-text">Je m&rsquo;en occupe. Nina reprend les devis sans r&eacute;ponse.</div>
+      </div>
+
+      <div id="p3sc-avatar-karim" class="p3sc-avatar"><img src="assets/img/avatar-karim-photo.png" alt="" /></div>
+      <div id="p3sc-avatar-nina" class="p3sc-avatar"><img src="assets/img/avatar-nina-icon.png" alt="" /></div>
     </div>
   </div>
+  <div id="p3sc-frame"></div>
 </div>
 
 <script>
@@ -112,9 +150,8 @@
     var outer = document.getElementById("p3sc-outer");
 
     // entrée : translation Y 26px + scale 0,96->1, 0.3s, power3.out —
-    // appliquée au conteneur EXTÉRIEUR uniquement (le scale d'échelle
-    // native->affichage reste sur #p3sc-inner, jamais les deux sur le
-    // même élément)
+    // appliquée au conteneur EXTÉRIEUR uniquement (aucun autre élément ne
+    // porte à la fois ce transform animé et overflow:hidden/bordure)
     gsap.set(outer, { y: 26, scale: 0.96 });
     tl.fromTo(outer, { y: 26, scale: 0.96 }, { y: 0, scale: 1, duration: 0.3, ease: "power3.out" }, 0);
 

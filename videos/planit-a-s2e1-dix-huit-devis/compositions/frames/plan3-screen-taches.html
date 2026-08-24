@@ -4,24 +4,39 @@
 <style data-brand-tokens>
   :root {
     --ink-deep: #1F0D3E;      /* encre, charte officielle (obtenir_charte) */
-    --planit-bouton: #8236F8; /* bouton, charte officielle — liseré du cadre */
+    --planit-bouton: #8236F8; /* bouton, charte officielle — pastille de filtre active, prélevée au pixel */
+    --planit-primaire: #4F2DF9; /* primaire, charte officielle — badge "Terminées", prélevé au pixel */
+    --app-tag: #6329BB;       /* violet des pastilles de fréquence "Hebdo", prélevé au pixel dans l'image d'origine (propre à l'appli fictive, hors charte Plani't) */
   }
+  @font-face { font-family: "PlanitTitle"; src: url("assets/fonts/Sora-700.woff2") format("woff2"); font-weight: 700; }
+  @font-face { font-family: "PlanitText"; src: url("assets/fonts/Inter-400.woff2") format("woff2"); font-weight: 400; }
 </style>
 
 <style>
-  /* Carte téléphone : mêmes proportions que l'écran conversation (hauteur
-     62% du cadre, base à y=1000px) ; source Samsung 390x844 également, un
-     seul facteur d'échelle partagé */
+  /* Carte téléphone : mêmes proportions/position que l'écran conversation
+     (hauteur 55% du cadre, bord droit à x=660px, base à y=980px) */
   #p3st-outer {
     position: absolute;
-    left: 176.64px;
-    top: 206.4px;
-    width: 366.71px;
-    height: 793.6px;
+    left: 334.69px;
+    top: 276px;
+    width: 325.31px;
+    height: 704px;
+  }
+  #p3st-clip {
+    position: absolute;
+    inset: 0;
+    overflow: hidden;
+    border-radius: 24px;
+  }
+  /* cadre visuel à part, sans overflow:hidden -- évite l'artéfact de
+     liseré pleine hauteur observé précédemment */
+  #p3st-frame {
+    position: absolute;
+    inset: 0;
     border-radius: 24px;
     border: 2px solid var(--planit-bouton);
     box-shadow: 0px 12px 32px color-mix(in srgb, var(--ink-deep) 50%, transparent);
-    overflow: hidden;
+    pointer-events: none;
   }
   #p3st-inner {
     position: absolute;
@@ -30,15 +45,49 @@
     width: 390px;
     height: 844px;
     transform-origin: top left;
-    transform: scale(0.940284);
+    transform: scale(0.834123);
   }
-  #p3st-inner img {
+  #p3st-inner img.p3st-bg {
     position: absolute;
     inset: 0;
     width: 390px;
     height: 844px;
     display: block;
   }
+
+  .p3st-patch { position: absolute; display: flex; align-items: center; justify-content: center; }
+  .p3st-title {
+    position: absolute;
+    font-family: "PlanitTitle", system-ui, sans-serif;
+    font-weight: 700;
+    font-size: 21px;
+    line-height: 26px;
+    color: #0A0A0A;
+    background: #FFFFFF;
+  }
+  .p3st-pill {
+    border-radius: 999px;
+    font-family: "PlanitText", system-ui, sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    color: #FFFFFF;
+  }
+
+  /* pastille de filtre active : "Toutes" -> "Terminées" (même fond bouton) */
+  #p3st-filter { left: 16px; top: 225px; width: 133px; height: 38px; background: var(--planit-bouton); }
+
+  /* carte 1 : badge À venir -> Terminées (couleur change : rose -> primaire) */
+  #p3st-badge1 { left: 16px; top: 293px; width: 112px; height: 32px; background: var(--planit-primaire); }
+  #p3st-title1 { left: 38px; top: 343px; width: 290px; height: 28px; }
+  /* tag "Hebdo" de la carte 1 : déjà correct, aucune retouche */
+
+  /* carte 2 : titre uniquement (badge "Terminées" déjà correct) */
+  #p3st-title2 { left: 38px; top: 513px; width: 270px; height: 28px; }
+  /* tag "Mensuel" -> "Hebdo" (même fond) */
+  #p3st-tag2 { left: 16px; top: 590px; width: 97px; height: 29px; background: var(--app-tag); border-radius: 14px; }
+
+  /* carte 3 : titre uniquement (badge "À venir" déjà correct) */
+  #p3st-title3 { left: 38px; top: 693px; width: 300px; height: 28px; }
 </style>
 
 <div
@@ -51,9 +100,22 @@
   data-width="720"
   data-height="1280"
 >
-  <div id="p3st-inner">
-    <img src="assets/img/ecran-taches.png" alt="" />
+  <div id="p3st-clip">
+    <div id="p3st-inner">
+      <img class="p3st-bg" src="assets/img/ecran-taches.png" alt="" />
+
+      <div id="p3st-filter" class="p3st-patch p3st-pill">Termin&eacute;es</div>
+
+      <div id="p3st-badge1" class="p3st-patch p3st-pill">Termin&eacute;es</div>
+      <div id="p3st-title1" class="p3st-title">Relancer les devis sans r&eacute;ponse</div>
+
+      <div id="p3st-title2" class="p3st-title">Relance devis &mdash; semaine 34</div>
+      <div id="p3st-tag2" class="p3st-patch p3st-pill">Hebdo</div>
+
+      <div id="p3st-title3" class="p3st-title">Relancer les devis sans r&eacute;ponse</div>
+    </div>
   </div>
+  <div id="p3st-frame"></div>
 </div>
 
 <script>
@@ -62,8 +124,6 @@
     var tl = gsap.timeline({ paused: true });
     var outer = document.getElementById("p3st-outer");
 
-    // entrée : translation Y 26px + scale 0,96->1, 0.3s, power3.out —
-    // coupe franche depuis l'écran précédent (aucun fondu croisé)
     gsap.set(outer, { y: 26, scale: 0.96 });
     tl.fromTo(outer, { y: 26, scale: 0.96 }, { y: 0, scale: 1, duration: 0.3, ease: "power3.out" }, 0);
 
