@@ -34,6 +34,19 @@
         height: 100%;
         object-fit: cover;
       }
+      /* plan 2 : conteneur de recadrage (overflow:hidden) — aucun attribut
+         de timing dessus, il sert uniquement à masquer le débord du push-in */
+      #el-plan-02-wrap {
+        overflow: hidden;
+      }
+      #el-plan-02 {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 720px;
+        height: 1280px;
+        object-fit: cover;
+      }
     </style>
   </head>
   <body>
@@ -56,18 +69,23 @@
         data-duration="10"
         data-track-index="0"
       ></video>
-      <!-- plan 2 : cadrage ORIGINAL, aucun recadrage numérique (retiré à la
-           demande — Karim doit rester pleinement visible pendant sa réplique) -->
-      <video
-        id="el-plan-02"
-        class="scene plan clip"
-        src="assets/video/plan-02.mp4"
-        data-has-audio="true"
-        data-volume="0.1"
-        data-start="10"
-        data-duration="10"
-        data-track-index="0"
-      ></video>
+      <!-- plan 2 : cadrage original conservé ; léger push-in numérique
+           (1,00→1,06×, centré sur Karim) uniquement pendant sa réplique
+           (14,0-17,0s), retour à 1,00× à 18,0s — voir script pour le détail
+           des tweens. Conteneur overflow:hidden requis pour le recadrage
+           (transform seul est ignoré par le pipeline de rendu vidéo). -->
+      <div id="el-plan-02-wrap" class="scene">
+        <video
+          id="el-plan-02"
+          class="clip"
+          src="assets/video/plan-02.mp4"
+          data-has-audio="true"
+          data-volume="0.1"
+          data-start="10"
+          data-duration="10"
+          data-track-index="0"
+        ></video>
+      </div>
       <video
         id="el-plan-03"
         class="scene plan clip"
@@ -88,6 +106,21 @@
         data-duration="10"
         data-track-index="0"
       ></video>
+      <!-- plan 4 : le geste final (doigt posé sur le carnet violet) est jugé
+           incohérent — image figée sur le dernier repère naturel après la
+           fermeture du tiroir (38,7s), avant ce geste. Le plan 4 lui-même
+           n'est pas raccourci : son ambiance sonore continue sans coupure
+           en dessous, seule l'image est recouverte pour les 1,3 dernières
+           secondes de son créneau (38,7-40,0s). -->
+      <img
+        id="el-plan-04-freeze"
+        class="scene clip"
+        src="assets/img/plan-04-freeze.png"
+        data-start="38.7"
+        data-duration="1.3"
+        data-track-index="4"
+        style="width: 100%; height: 100%; object-fit: cover"
+      />
       <video
         id="el-plan-05"
         class="scene plan clip"
@@ -196,8 +229,25 @@
         tl.to(plan2, { volume: 1, duration: 0.15, ease: "power1.inOut" }, 13.85);
         tl.set(plan2, { volume: 1 }, 14.0);
         tl.to(plan2, { volume: 0.1, duration: 0.15, ease: "power1.inOut" }, 17.0);
-        // aucun recadrage numérique sur le plan 2 (retiré à la demande) —
-        // cadrage original conservé tel quel, seul le volume est automatisé.
+
+        // plan 2 : micro push-in très subtil (1,00→1,06×) pendant la
+        // réplique de Karim, centré sur lui (fx=0.95, fy=0.39, coin haut
+        // droit du cadre où se trouve son visage). Recadrage par
+        // width/height/left/top réels (le transform seul est ignoré par le
+        // pipeline de rendu vidéo) — voir CLAUDE.md / historique du projet.
+        // Formule : width=W·s, height=H·s, left=fx·W·(1-s), top=fy·H·(1-s).
+        gsap.set(plan2, { width: 720, height: 1280, left: 0, top: 0 });
+        tl.fromTo(
+          plan2,
+          { width: 720, height: 1280, left: 0, top: 0 },
+          { width: 763.2, height: 1356.8, left: -41.04, top: -29.95, duration: 3.0, ease: "power2.inOut", overwrite: "auto" },
+          14.0
+        );
+        tl.to(
+          plan2,
+          { width: 720, height: 1280, left: 0, top: 0, duration: 1.0, ease: "power2.inOut", overwrite: "auto" },
+          17.0
+        );
 
         // musique de fond : musique-produit.mp3 (Académie Plan'It, voir
         // rapport pour le choix), -18dB (≈0.126 linéaire) sous la voix,
