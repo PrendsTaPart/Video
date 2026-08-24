@@ -56,14 +56,19 @@
   }
 
   .p3st-patch { position: absolute; display: flex; align-items: center; justify-content: center; }
+  /* le nouveau texte des titres est plus long que l'original avec cette
+     police (Sora, plus large que la police d'origine de la capture) :
+     taille réduite + nowrap pour garantir une seule ligne, jamais un
+     retour à la ligne qui chevaucherait la ligne de date en dessous */
   .p3st-title {
     position: absolute;
     font-family: "PlanitTitle", system-ui, sans-serif;
     font-weight: 700;
-    font-size: 21px;
-    line-height: 26px;
+    font-size: 17px;
+    line-height: 21px;
     color: #0A0A0A;
     background: #FFFFFF;
+    white-space: nowrap;
   }
   .p3st-pill {
     border-radius: 999px;
@@ -124,8 +129,20 @@
     var tl = gsap.timeline({ paused: true });
     var outer = document.getElementById("p3st-outer");
 
-    gsap.set(outer, { y: 26, scale: 0.96 });
-    tl.fromTo(outer, { y: 26, scale: 0.96 }, { y: 0, scale: 1, duration: 0.3, ease: "power3.out" }, 0);
+    // entrée : voir plan3-screen-conversation.html pour l'explication —
+    // x/y (transform) pour la translation, width/height réels (compensés
+    // en x/y pour rester centré) pour le "scale", jamais scale lui-même
+    // dans le transform animé (artefact de liseré confirmé sinon).
+    var FINAL = { width: 325.31, height: 704 };
+    var xStart = -(FINAL.width * 0.02);
+    var yStart = FINAL.height * 0.02 + 26;
+    gsap.set(outer, { x: xStart, y: yStart, width: FINAL.width * 0.96, height: FINAL.height * 0.96 });
+    tl.fromTo(
+      outer,
+      { x: xStart, y: yStart, width: FINAL.width * 0.96, height: FINAL.height * 0.96 },
+      { x: 0, y: 0, width: FINAL.width, height: FINAL.height, duration: 0.3, ease: "power3.out" },
+      0
+    );
 
     tl.to({}, { duration: 3.0 }, 0); // full-span anchor
     window.__timelines["plan3-screen-taches"] = tl;

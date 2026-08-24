@@ -149,11 +149,25 @@
     var tl = gsap.timeline({ paused: true });
     var outer = document.getElementById("p3sc-outer");
 
-    // entrée : translation Y 26px + scale 0,96->1, 0.3s, power3.out —
-    // appliquée au conteneur EXTÉRIEUR uniquement (aucun autre élément ne
-    // porte à la fois ce transform animé et overflow:hidden/bordure)
-    gsap.set(outer, { y: 26, scale: 0.96 });
-    tl.fromTo(outer, { y: 26, scale: 0.96 }, { y: 0, scale: 1, duration: 0.3, ease: "power3.out" }, 0);
+    // entrée : équivalent de "translation Y 26px + scale 0,96->1". left/top
+    // restent statiques (jamais animés — le lint interdit d'animer ces
+    // propriétés) ; la translation passe par x/y (transform, lissé en
+    // sous-pixel) et le "scale" par width/height réels compensés en x/y
+    // pour rester centré. Un transform scale animé sur un ancêtre direct
+    // d'un enfant overflow:hidden + bordure produisait un artefact de
+    // liseré pleine hauteur pendant les frames de transition (confirmé
+    // par balayage) ; ce montage l'évite en ne laissant que x/y (jamais
+    // scale) dans le transform animé.
+    var FINAL = { width: 325.31, height: 704 };
+    var xStart = -(FINAL.width * 0.02);
+    var yStart = FINAL.height * 0.02 + 26;
+    gsap.set(outer, { x: xStart, y: yStart, width: FINAL.width * 0.96, height: FINAL.height * 0.96 });
+    tl.fromTo(
+      outer,
+      { x: xStart, y: yStart, width: FINAL.width * 0.96, height: FINAL.height * 0.96 },
+      { x: 0, y: 0, width: FINAL.width, height: FINAL.height, duration: 0.3, ease: "power3.out" },
+      0
+    );
 
     tl.to({}, { duration: 3.0 }, 0); // full-span anchor
     window.__timelines["plan3-screen-conversation"] = tl;
