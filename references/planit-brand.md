@@ -99,3 +99,17 @@ stabilité/style séparés sur `creative_generate_speech` — seuls `voice_id`, 
 le texte sont réglables. Le registre "stabilité haute / style bas" demandé est donc obtenu
 par le choix de la voix elle-même (Enrick est nativement stable et sobre), pas par un
 réglage numérique.
+
+### Dérogation série B « Le Quai » (depuis le 2026-08-24)
+
+Sur demande explicite de l'utilisatrice, la série B « Le Quai » **n'utilise pas Enrick**
+mais une voix distincte, fournie directement par l'utilisatrice (pas choisie dans
+`creative_list_voices` par l'agent) :
+
+**Christian Page – Suspense, Mystery, True Crime** — `voice_id: sCHnH1GukQg1oFEgRwoV`
+(ElevenLabs), modèle `eleven_multilingual_v2`.
+
+⚠️ Cette voix est cataloguée par ElevenLabs sur un registre « suspense / mystère / true
+crime », assez éloigné du ton calme et pédagogique d'Enrick — à valider à l'écoute sur les
+premiers épisodes. Elle s'applique aux **35 épisodes de la série « Le Quai » uniquement** ;
+Enrick reste la voix par défaut pour toutes les autres séries (A, D, etc.).

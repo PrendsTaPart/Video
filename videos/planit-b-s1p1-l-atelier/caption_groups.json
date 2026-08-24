@@ -1,0 +1,40 @@
+[
+  {
+    "start": 1.0,
+    "end": 2.381,
+    "text": "En 1886 l'outil",
+    "words": [
+      { "text": "En", "start": 1.0, "end": 1.184 },
+      { "text": "1886", "start": 1.184, "end": 1.736 },
+      { "text": "l'outil", "start": 1.736, "end": 2.381 }
+    ]
+  },
+  {
+    "start": 2.381,
+    "end": 4.221,
+    "text": "devient une machine",
+    "words": [
+      { "text": "devient", "start": 2.381, "end": 3.025 },
+      { "text": "une", "start": 3.025, "end": 3.301 },
+      { "text": "machine", "start": 3.301, "end": 4.221 }
+    ]
+  },
+  {
+    "start": 4.221,
+    "end": 4.958,
+    "text": "Il faut la",
+    "words": [
+      { "text": "Il", "start": 4.221, "end": 4.406 },
+      { "text": "faut", "start": 4.406, "end": 4.774 },
+      { "text": "la", "start": 4.774, "end": 4.958 }
+    ]
+  },
+  {
+    "start": 4.958,
+    "end": 5.970,
+    "text": "conduire",
+    "words": [
+      { "text": "conduire", "start": 4.958, "end": 5.970 }
+    ]
+  }
+]
