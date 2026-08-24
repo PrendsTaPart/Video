@@ -143,11 +143,13 @@
         data-track-index="10"
       ></div>
 
-      <!-- voix off : 3 segments séparés, silences réels entre eux (aucun padding) -->
+      <!-- voix off : 3 segments séparés, silences réels entre eux (aucun padding).
+           Démarre à 2.0s (fin du hook d'ouverture) — aucune narration pendant
+           le hook, à la demande. -->
       <audio
         id="el-voice-1"
         src="assets/voice/vo-seg1.wav"
-        data-start="0"
+        data-start="2"
         data-duration="8.823583"
         data-track-index="20"
         data-volume="1"
