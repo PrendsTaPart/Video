@@ -12,79 +12,84 @@
 </style>
 
 <style>
+  /* Carte de marque plein cadre : dégradé de marque (charte, réservé aux
+     hooks), composition strictement centrée — inspirée du rythme d'une
+     vidéo de référence (mark → nom → punchline, un seul élément à la fois,
+     aucun rebond) sans en reprendre le contenu ni les éléments graphiques. */
   #hook-open-root {
     position: absolute;
     inset: 0;
-    background: var(--ink-deep); /* fond encre plein cadre, PAS de dégradé plein cadre */
+    background: linear-gradient(135deg, var(--planit-violet) 0%, var(--planit-rose) 100%);
     overflow: hidden;
   }
 
-  /* lueur radiale du dégradé de marque, discrète (25% d'opacité) */
-  #hook-open-glow {
+  /* voile discret pour garantir le contraste du texte blanc sur la zone
+     rose du dégradé (le rose seul est trop clair pour du texte AA) */
+  #hook-open-scrim {
     position: absolute;
     left: 50%;
-    top: 25%;
-    width: 934px;  /* 2 × rayon 467px */
-    height: 934px;
+    top: 50%;
+    width: 720px;
+    height: 860px;
     transform: translate(-50%, -50%);
-    border-radius: 50%;
-    background: radial-gradient(circle, var(--planit-violet) 0%, var(--planit-rose) 60%, transparent 100%);
-    opacity: 0.25;
+    background: radial-gradient(ellipse at center, color-mix(in srgb, var(--ink-deep) 40%, transparent) 0%, transparent 68%);
+    pointer-events: none;
   }
 
-  /* liseré horizontal du dégradé de marque */
+  #hook-open-mark {
+    position: absolute;
+    left: 50%;
+    top: 476px;
+    height: 104px;
+    width: auto;
+    display: block;
+    opacity: 0;
+  }
+
+  #hook-open-word {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 604px;
+    text-align: center;
+    font-family: "PlanitTitle", system-ui, sans-serif;
+    font-weight: 800;
+    font-size: 34px;
+    letter-spacing: 0.01em;
+    color: #FFFFFF;
+    opacity: 0;
+  }
+
+  /* liseré blanc uni (pas le dégradé de marque : sur fond dégradé, un
+     liseré dégradé se fondrait dans le fond et perdrait sa lisibilité) */
   #hook-open-rule {
     position: absolute;
-    left: 64px;
-    top: 560px;
-    width: 80px;
+    left: calc(50% - 32px);
+    top: 664px;
+    width: 64px;
     height: 3px;
-    background: linear-gradient(135deg, var(--planit-violet) 0%, var(--planit-rose) 100%);
-    transform-origin: left center;
+    background: #FFFFFF;
+    opacity: 0.85;
+    transform-origin: center center;
   }
 
-  /* punchline, alignée à gauche, deux lignes maximum */
+  /* punchline, centrée, deux lignes maximum */
   #hook-open-punch {
     position: absolute;
     left: 64px;
-    top: 600px;
-    width: 592px; /* 720 - 64 marge gauche - 64 marge droite symétrique */
+    right: 64px;
+    top: 695px;
     font-family: "PlanitTitle", system-ui, sans-serif;
     font-weight: 700;
-    font-size: 50px;
-    line-height: 1.08;
+    font-size: 46px;
+    line-height: 1.12;
     color: #FFFFFF;
-    text-align: left;
+    text-align: center;
   }
   #hook-open-punch .line {
     display: block;
     opacity: 0;
   }
-
-  /* lock-up Plani't complet, petit, coin bas gauche */
-  #hook-open-lockup {
-    position: absolute;
-    left: 64px;
-    top: 933px;
-    width: 173px;
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    opacity: 0;
-  }
-  #hook-open-mark {
-    height: 36px;
-    width: auto;
-    display: block;
-  }
-  #hook-open-word {
-    font-family: "PlanitTitle", system-ui, sans-serif;
-    font-weight: 800;
-    font-size: 30px;
-    color: #FFFFFF;
-    white-space: nowrap;
-  }
-
 </style>
 
 <div
@@ -97,15 +102,13 @@
   data-width="720"
   data-height="1280"
 >
-  <div id="hook-open-glow"></div>
+  <div id="hook-open-scrim"></div>
+  <img id="hook-open-mark" src="assets/brand/planit-mark-white.png" alt="" />
+  <div id="hook-open-word">Plani&rsquo;t</div>
   <div id="hook-open-rule"></div>
   <div id="hook-open-punch">
     <span class="line">Vos devis ne</span>
     <span class="line">dorment plus.</span>
-  </div>
-  <div id="hook-open-lockup">
-    <img id="hook-open-mark" src="assets/brand/planit-mark-white.png" alt="" />
-    <div id="hook-open-word">Plani&rsquo;t</div>
   </div>
 </div>
 
@@ -115,23 +118,33 @@
     var tl = gsap.timeline({ paused: true });
     var lines = document.querySelectorAll("#hook-open-punch .line");
 
-    // liseré : se dessine de gauche à droite, scaleX 0 → 1, sans rebond
-    tl.fromTo("#hook-open-rule", { scaleX: 0 }, { scaleX: 1, duration: 0.30, ease: "power2.out" }, 0);
+    // état initial masqué, hors timeline (gsap.set immédiat, pas tl.set(...,0))
+    gsap.set("#hook-open-mark", { xPercent: -50, scale: 0.85, opacity: 0 });
+    gsap.set("#hook-open-word", { y: 8, opacity: 0 });
+    gsap.set("#hook-open-rule", { scaleX: 0 });
+    gsap.set(lines, { y: 14, opacity: 0 });
 
-    // punchline : monte de 18px en fondu, ligne par ligne, 0.12s d'écart, sans rebond
-    tl.fromTo(lines[0], { y: 18, opacity: 0 }, { y: 0, opacity: 1, duration: 0.28, ease: "power3.out", overwrite: "auto" }, 0.15);
-    tl.fromTo(lines[1], { y: 18, opacity: 0 }, { y: 0, opacity: 1, duration: 0.28, ease: "power3.out", overwrite: "auto" }, 0.27);
+    // mark : fondu + léger scale-in, sans rebond — l'élément qui ouvre la
+    // séquence, comme dans la référence
+    tl.fromTo("#hook-open-mark", { xPercent: -50, scale: 0.85, opacity: 0 }, { xPercent: -50, scale: 1, opacity: 1, duration: 0.32, ease: "power2.out" }, 0);
 
-    // lock-up : fondu simple, sans déplacement
-    tl.to("#hook-open-lockup", { opacity: 1, duration: 0.25, ease: "power1.inOut" }, 0.60);
+    // nom de marque, juste après
+    tl.fromTo("#hook-open-word", { y: 8, opacity: 0 }, { y: 0, opacity: 1, duration: 0.28, ease: "power2.out" }, 0.22);
 
-    // 0.85 → 1.60 : immobile (rien n'anime)
+    // liseré : simple mise à l'échelle, sans wipe
+    tl.fromTo("#hook-open-rule", { scaleX: 0 }, { scaleX: 1, duration: 0.22, ease: "power2.out" }, 0.40);
 
-    // 1.60 → 2.00 : tout — fond encre compris — monte de 40px et disparaît en fondu.
-    // Le plan 1 (piste en dessous dans index.html) est déjà visible et joue depuis
-    // t=0 : il apparaît "en fondu dessous" simplement parce que ce calque s'efface —
-    // aucune référence croisée à une autre composition n'est nécessaire ni possible.
-    tl.to("#hook-open-root", { y: -40, opacity: 0, duration: 0.40, ease: "power2.inOut" }, 1.60);
+    // punchline : un bloc entier à la fois (pas mot par mot), léger décalage
+    // entre les deux lignes, sans rebond
+    tl.fromTo(lines[0], { y: 14, opacity: 0 }, { y: 0, opacity: 1, duration: 0.30, ease: "power3.out", overwrite: "auto" }, 0.50);
+    tl.fromTo(lines[1], { y: 14, opacity: 0 }, { y: 0, opacity: 1, duration: 0.30, ease: "power3.out", overwrite: "auto" }, 0.62);
+
+    // 0.92 → 1.55 : tenue, rien n'anime
+
+    // 1.55 → 2.00 : toute la carte (dégradé compris) monte légèrement et
+    // disparaît en fondu ; le plan 1 (piste en dessous) est déjà visible et
+    // apparaît "en fondu dessous" simplement parce que ce calque s'efface.
+    tl.to("#hook-open-root", { y: -40, opacity: 0, duration: 0.45, ease: "power2.inOut" }, 1.55);
 
     window.__timelines["00-hook-open"] = tl;
   })();
