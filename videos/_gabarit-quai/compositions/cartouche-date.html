@@ -1,0 +1,77 @@
+<template id="cartouche-date-template" data-composition-id="cartouche-date" data-width="720" data-height="1280">
+<script src="assets/vendor/gsap.min.js"></script>
+
+<style data-brand-tokens>
+  :root {
+    --planit-bouton: #8236F8; /* bouton, charte officielle — filet du cartouche */
+  }
+  /* Alte Haas Grotesk indisponible (voir sous-titres.html) — repli
+     officiel Sora. */
+  @font-face { font-family: "PlanitTitle"; src: url("assets/fonts/Sora-700.woff2") format("woff2"); font-weight: 700; }
+</style>
+
+<style>
+  /* coin bas gauche, x=48px, base du texte à y=1010px — le filet est posé
+     juste au-dessus du texte. Positions en pixels absolus (pas de
+     flexbox) : un transform:translateY(-100%) sur un conteneur flex a
+     produit un débordement de mise en page erroné (mesuré, pas
+     seulement soupçonné) ; chaque élément est donc positionné
+     séparément, comme ailleurs dans ce projet. */
+  #cartouche-date-root {
+    position: absolute;
+    inset: 0;
+    opacity: 0;
+  }
+  #cartouche-date-rule {
+    position: absolute;
+    left: 48px;
+    top: 960px;
+    width: 40px;
+    height: 2px;
+    background: var(--planit-bouton);
+  }
+  #cartouche-date-text {
+    position: absolute;
+    left: 48px;
+    top: 1010px;
+    transform: translateY(-100%); /* ancre la BASE du texte à y=1010 */
+    font-family: "PlanitTitle", system-ui, sans-serif;
+    font-weight: 700;
+    font-size: 34px;
+    color: #FFFFFF;
+    line-height: 1;
+  }
+</style>
+
+<div
+  id="cartouche-date-root"
+  class="clip"
+  data-composition-id="cartouche-date"
+  data-start="0"
+  data-duration="10"
+  data-track-index="0"
+  data-width="720"
+  data-height="1280"
+>
+  <div id="cartouche-date-rule"></div>
+  <!-- __QUAI_EPOQUE__ : remplacé par scripts/quai-monter.mjs depuis quai.config.json -->
+  <div id="cartouche-date-text">__QUAI_EPOQUE__</div>
+</div>
+
+<script>
+  (function () {
+    window.__timelines = window.__timelines || {};
+    var tl = gsap.timeline({ paused: true });
+    var root = document.getElementById("cartouche-date-root");
+
+    gsap.set(root, { opacity: 0 });
+
+    // discret : repère de lecture, pas un titre — opacité maximale 85%,
+    // fondu simple, aucun mouvement, aucun rebond
+    tl.to(root, { opacity: 0.85, duration: 0.3, ease: "power1.out" }, 0.5);
+    tl.to(root, { opacity: 0, duration: 0.4, ease: "power1.in" }, 2.6);
+
+    window.__timelines["cartouche-date"] = tl;
+  })();
+</script>
+</template>
