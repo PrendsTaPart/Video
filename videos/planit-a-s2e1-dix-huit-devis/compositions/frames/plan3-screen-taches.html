@@ -1,0 +1,74 @@
+<template id="plan3-screen-taches-template" data-composition-id="plan3-screen-taches" data-width="720" data-height="1280">
+<script src="assets/vendor/gsap.min.js"></script>
+
+<style data-brand-tokens>
+  :root {
+    --ink-deep: #1F0D3E;      /* encre, charte officielle (obtenir_charte) */
+    --planit-bouton: #8236F8; /* bouton, charte officielle — liseré du cadre */
+  }
+</style>
+
+<style>
+  /* Carte téléphone : mêmes proportions que l'écran conversation (hauteur
+     62% du cadre, base à y=1000px) ; source Samsung 390x844 également, un
+     seul facteur d'échelle partagé */
+  #p3st-outer {
+    position: absolute;
+    left: 176.64px;
+    top: 206.4px;
+    width: 366.71px;
+    height: 793.6px;
+    border-radius: 24px;
+    border: 2px solid var(--planit-bouton);
+    box-shadow: 0px 12px 32px color-mix(in srgb, var(--ink-deep) 50%, transparent);
+    overflow: hidden;
+  }
+  #p3st-inner {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 390px;
+    height: 844px;
+    transform-origin: top left;
+    transform: scale(0.940284);
+  }
+  #p3st-inner img {
+    position: absolute;
+    inset: 0;
+    width: 390px;
+    height: 844px;
+    display: block;
+  }
+</style>
+
+<div
+  id="p3st-outer"
+  class="clip"
+  data-composition-id="plan3-screen-taches"
+  data-start="0"
+  data-duration="3.0"
+  data-track-index="0"
+  data-width="720"
+  data-height="1280"
+>
+  <div id="p3st-inner">
+    <img src="assets/img/ecran-taches.png" alt="" />
+  </div>
+</div>
+
+<script>
+  (function () {
+    window.__timelines = window.__timelines || {};
+    var tl = gsap.timeline({ paused: true });
+    var outer = document.getElementById("p3st-outer");
+
+    // entrée : translation Y 26px + scale 0,96->1, 0.3s, power3.out —
+    // coupe franche depuis l'écran précédent (aucun fondu croisé)
+    gsap.set(outer, { y: 26, scale: 0.96 });
+    tl.fromTo(outer, { y: 26, scale: 0.96 }, { y: 0, scale: 1, duration: 0.3, ease: "power3.out" }, 0);
+
+    tl.to({}, { duration: 3.0 }, 0); // full-span anchor
+    window.__timelines["plan3-screen-taches"] = tl;
+  })();
+</script>
+</template>

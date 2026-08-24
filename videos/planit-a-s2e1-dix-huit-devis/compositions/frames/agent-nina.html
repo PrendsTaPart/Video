@@ -8,69 +8,64 @@
     --ink-deep: #1F0D3E;
   }
   @font-face { font-family: "PlanitTitle"; src: url("assets/fonts/Sora-700.woff2") format("woff2"); font-weight: 700; }
-  @font-face { font-family: "PlanitTitle"; src: url("assets/fonts/Sora-800.woff2") format("woff2"); font-weight: 800; }
   @font-face { font-family: "PlanitText"; src: url("assets/fonts/Inter-400.woff2") format("woff2"); font-weight: 400; }
 </style>
 
 <style>
-  /* carte-agent, bas gauche (marge latérale 64px, charte 720x1280), hors
-     zone de sécurité (rien sous y=1067) ET au-dessus du bandeau de
-     sous-titres (base des sous-titres à y=1013) : carte posée à y=780-880 */
+  /* carte-agent, ancrée bas gauche : x=40px, base (bord bas) à y=1090px —
+     au-dessus des sous-titres (bandeau de sous-titres ancré à y=1013,
+     texte s'étend vers le haut depuis cette base, jamais jusqu'à 1090) */
   #agent-card {
     position: absolute;
-    left: 64px;
-    top: 780px;
-    width: 280px;
-    height: 100px;
+    left: 40px;
+    top: 1030px;
+    height: 60px;
     display: flex;
     align-items: center;
-    gap: 14px;
-    padding: 13px 16px;
+    gap: 10px;
+    padding: 0 12px;
     background: color-mix(in srgb, var(--ink-deep) 88%, transparent);
     border: 1px solid color-mix(in srgb, var(--planit-rose) 30%, transparent);
-    border-radius: 14px;
+    border-radius: 12px;
     opacity: 0;
   }
-  /* ⚠️ pas d'avatar 3D réel fourni (module Profil & Avatar 3D absent de cette
-     session) : pastille lettrine à la place d'un portrait, à remplacer dès
-     que l'asset réel est disponible — voir rapport final. */
+  /* portrait de Nina, cercle 40px de diamètre */
   #agent-avatar {
     flex: 0 0 auto;
-    width: 56px;
-    height: 56px;
+    width: 40px;
+    height: 40px;
     border-radius: 50%;
-    background: linear-gradient(135deg, var(--planit-violet) 0%, var(--planit-rose) 100%);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-family: "PlanitTitle", system-ui, sans-serif;
-    font-weight: 800;
-    font-size: 26px;
-    color: #FFFFFF;
+    overflow: hidden;
+  }
+  #agent-avatar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
   }
   #agent-meta {
     display: flex;
     flex-direction: column;
-    gap: 4px;
+    gap: 3px;
   }
   #agent-name {
     font-family: "PlanitTitle", system-ui, sans-serif;
     font-weight: 700;
-    font-size: 23px;
+    font-size: 19px;
     color: #FFFFFF;
   }
   #agent-role {
     display: flex;
     align-items: center;
-    gap: 7px;
+    gap: 6px;
     font-family: "PlanitText", system-ui, sans-serif;
     font-weight: 400;
-    font-size: 16px;
+    font-size: 13px;
     color: color-mix(in srgb, #FFFFFF 80%, transparent);
   }
   #agent-role .dot {
-    width: 6px;
-    height: 6px;
+    width: 5px;
+    height: 5px;
     border-radius: 50%;
     background: var(--planit-rose);
   }
@@ -80,12 +75,12 @@
   id="agent-nina-root"
   data-composition-id="agent-nina"
   data-start="0"
-  data-duration="7"
+  data-duration="6.0"
   data-width="720"
   data-height="1280"
 >
-  <div id="agent-card" class="clip" data-start="0" data-duration="7" data-track-index="0">
-    <div id="agent-avatar">N</div>
+  <div id="agent-card" class="clip" data-start="0" data-duration="6.0" data-track-index="0">
+    <div id="agent-avatar"><img src="assets/img/nina-portrait.png" alt="" /></div>
     <div id="agent-meta">
       <div id="agent-name">Nina</div>
       <div id="agent-role"><span class="dot"></span>RapidoCRM</div>
@@ -98,8 +93,8 @@
     window.__timelines = window.__timelines || {};
     var tl = gsap.timeline({ paused: true });
     tl.fromTo("#agent-card", { x: -21 }, { opacity: 1, x: 0, duration: 0.4, ease: "power2.out" }, 0);
-    tl.to("#agent-card", { opacity: 0, x: -16, duration: 0.4, ease: "power2.in" }, 6.4);
-    tl.to({}, { duration: 7 }, 0); // full-span anchor
+    tl.to("#agent-card", { opacity: 0, x: -16, duration: 0.4, ease: "power2.in" }, 5.6);
+    tl.to({}, { duration: 6.0 }, 0); // full-span anchor
     window.__timelines["agent-nina"] = tl;
   })();
 </script>
