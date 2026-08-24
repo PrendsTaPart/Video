@@ -4,22 +4,21 @@
 <style data-brand-tokens>
   :root {
     --ink-deep: #1F0D3E;      /* encre, charte officielle (obtenir_charte) */
-    --planit-bouton: #8236F8; /* bouton, charte officielle — pastille de filtre active, prélevée au pixel */
-    --planit-primaire: #4F2DF9; /* primaire, charte officielle — badge "Terminées", prélevé au pixel */
-    --app-tag: #6329BB;       /* violet des pastilles de fréquence "Hebdo", prélevé au pixel dans l'image d'origine (propre à l'appli fictive, hors charte Plani't) */
+    --planit-bouton: #8236F8; /* bouton, charte officielle — liseré du cadre */
   }
-  @font-face { font-family: "PlanitTitle"; src: url("assets/fonts/Sora-700.woff2") format("woff2"); font-weight: 700; }
-  @font-face { font-family: "PlanitText"; src: url("assets/fonts/Inter-400.woff2") format("woff2"); font-weight: 400; }
 </style>
 
 <style>
   /* Carte téléphone : mêmes proportions/position que l'écran conversation
-     (hauteur 55% du cadre, bord droit à x=660px, base à y=980px) */
+     (hauteur 55% du cadre, bord droit à x=660px, base à y=980px). Image de
+     référence fournie par l'utilisateur, déjà corrigée (badges, titres,
+     tags) — plus aucune superposition de masquage nécessaire. Source
+     762x1600, échelle = 704/1600. */
   #p3st-outer {
     position: absolute;
-    left: 334.69px;
+    left: 324.72px;
     top: 276px;
-    width: 325.31px;
+    width: 335.28px;
     height: 704px;
   }
   #p3st-clip {
@@ -42,69 +41,18 @@
     position: absolute;
     left: 0;
     top: 0;
-    width: 390px;
-    height: 844px;
+    width: 762px;
+    height: 1600px;
     transform-origin: top left;
-    transform: scale(0.834123);
+    transform: scale(0.44);
   }
   #p3st-inner img.p3st-bg {
     position: absolute;
     inset: 0;
-    width: 390px;
-    height: 844px;
+    width: 762px;
+    height: 1600px;
     display: block;
   }
-
-  .p3st-patch { position: absolute; display: flex; align-items: center; justify-content: center; }
-  /* le nouveau texte des titres est plus long que l'original avec cette
-     police (Sora, plus large que la police d'origine de la capture) :
-     taille réduite + nowrap pour garantir une seule ligne, jamais un
-     retour à la ligne qui chevaucherait la ligne de date en dessous */
-  .p3st-title {
-    position: absolute;
-    font-family: "PlanitTitle", system-ui, sans-serif;
-    font-weight: 700;
-    font-size: 17px;
-    line-height: 21px;
-    color: #0A0A0A;
-    background: #FFFFFF;
-    white-space: nowrap;
-  }
-  .p3st-pill {
-    border-radius: 999px;
-    font-family: "PlanitText", system-ui, sans-serif;
-    font-weight: 400;
-    font-size: 15px;
-    color: #FFFFFF;
-  }
-
-  /* pastille de filtre active : "Toutes" -> "Terminées" (même fond bouton) */
-  #p3st-filter { left: 16px; top: 225px; width: 133px; height: 38px; background: var(--planit-bouton); }
-
-  /* réinitialisation en blanc (fond de carte) avant de redessiner, assez
-     généreuse pour couvrir aussi l'ombre portée douce de l'ancien badge/
-     pastille — c'est ce halo, plus large que la couleur pleine, qui
-     laissait deviner l'ancien badge en dessous */
-  .p3st-reset { position: absolute; background: #FFFFFF; }
-
-  /* carte 1 : badge À venir -> Terminées (couleur change : rose -> primaire),
-     taille et rayon strictement identiques au badge "Terminées" d'origine
-     de la carte 2 (123x33, rayon plein) */
-  #p3st-badge1 { left: 18px; top: 291px; width: 123px; height: 33px; background: var(--planit-primaire); }
-  #p3st-title1 { left: 38px; top: 340px; width: 290px; height: 35px; }
-  /* tag "Hebdo" de la carte 1 : déjà correct, aucune retouche */
-
-  /* carte 2 : titre uniquement (badge "Terminées" déjà correct) */
-  #p3st-title2 { left: 38px; top: 524px; width: 270px; height: 35px; }
-  /* tag "Mensuel" -> "Hebdo" : taille et emplacement relatif strictement
-     identiques au tag "Hebdo" d'origine de la carte 1 (89x26, même retrait
-     de 18px depuis le bord gauche de la carte, même décalage de 110px
-     depuis le badge de la carte) */
-  #p3st-tag2 { left: 18px; top: 588px; width: 89px; height: 26px; background: var(--app-tag); border-radius: 999px; }
-
-  /* carte 3 : titre raccourci + largeur réduite pour ne jamais chevaucher
-     le bouton flottant "+" (dégradé rose/violet, commence vers x=266px) */
-  #p3st-title3 { left: 38px; top: 697px; width: 215px; height: 46px; }
 </style>
 
 <div
@@ -120,23 +68,6 @@
   <div id="p3st-clip">
     <div id="p3st-inner">
       <img class="p3st-bg" src="assets/img/ecran-taches.png" alt="" />
-
-      <div id="p3st-filter" class="p3st-patch p3st-pill">Termin&eacute;es</div>
-
-      <!-- réinitialisation avant redessin : couvre aussi l'ombre portée
-           douce des anciens éléments (badge carte 1, tag carte 2) -->
-      <div class="p3st-reset" style="left:8px; top:280px; width:140px; height:58px; border-radius:16px;"></div>
-      <div class="p3st-reset" style="left:8px; top:575px; width:115px; height:58px; border-radius:16px;"></div>
-
-      <div id="p3st-badge1" class="p3st-patch p3st-pill">Termin&eacute;es</div>
-      <div id="p3st-title1" class="p3st-title">Relancer les devis sans r&eacute;ponse</div>
-
-      <div id="p3st-title2" class="p3st-title">Relance devis &mdash; semaine 34</div>
-      <div id="p3st-tag2" class="p3st-patch p3st-pill">Hebdo</div>
-
-      <!-- titre raccourci (retire "les") pour ne jamais chevaucher le
-           bouton "+" flottant à droite -->
-      <div id="p3st-title3" class="p3st-title">Relancer devis sans r&eacute;ponse</div>
     </div>
   </div>
   <div id="p3st-frame"></div>
@@ -152,7 +83,7 @@
     // x/y (transform) pour la translation, width/height réels (compensés
     // en x/y pour rester centré) pour le "scale", jamais scale lui-même
     // dans le transform animé (artefact de liseré confirmé sinon).
-    var FINAL = { width: 325.31, height: 704 };
+    var FINAL = { width: 335.28, height: 704 };
     var xStart = -(FINAL.width * 0.02);
     var yStart = FINAL.height * 0.02 + 26;
     gsap.set(outer, { x: xStart, y: yStart, width: FINAL.width * 0.96, height: FINAL.height * 0.96 });
