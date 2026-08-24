@@ -1,24 +1,15 @@
-<template id="captions-template" data-composition-id="captions" data-width="1080" data-height="1920">
+<template id="captions-template" data-composition-id="captions" data-width="720" data-height="1280">
 <script src="assets/vendor/gsap.min.js"></script>
 
 <style data-brand-tokens>
   :root {
-    --cap-accent: #8236F8;   /* violet secondaire (charte officielle) */
-    --cap-accent-2: #FE64D5; /* rose de marque (charte officielle), emphase ponctuelle */
-    --cap-ink: #1F0D3E;      /* encre de marque (charte officielle) */
-    --cap-canvas: #FFFFFF;
-    /* zone de sécurité charte (obtenir_charte) : rien de marque sous y=1600 —
-       le bandeau doit finir avant, l'UI des réseaux sociaux occupe les 320px du bas */
-    --cap-band-top: 1380px;
-    --cap-band-height: 200px;
+    --ink-deep: #1F0D3E;    /* encre, charte officielle (obtenir_charte) */
+    --planit-rose: #FE64D5; /* rose, charte officielle — mot actif */
+    /* base du texte à y=1013 (charte, format 720x1280) */
+    --cap-baseline: 1013px;
   }
 
-  /* repli officiel de la charte (Sora/Inter) tant qu'Alte Haas Grotesk n'est pas fournie */
-  @font-face {
-    font-family: "PlanitTitle";
-    src: url("assets/fonts/Sora-700.woff2") format("woff2");
-    font-weight: 700;
-  }
+  @font-face { font-family: "PlanitTitle"; src: url("assets/fonts/Sora-700.woff2") format("woff2"); font-weight: 700; }
 </style>
 
 <style>
@@ -33,75 +24,52 @@
     z-index: 20;
     pointer-events: none;
   }
-  /* the keep-out band — frame content stays above it */
+  /* pas de pastille : le texte flotte directement sur l'image, la lisibilité
+     vient du contour + de l'ombre portée, pas d'un fond */
   .caption-stage {
     position: absolute;
     left: 0;
     right: 0;
-    top: var(--cap-band-top);
-    height: var(--cap-band-height);
+    top: var(--cap-baseline);
+    transform: translateY(-100%); /* ancre la BASE du texte, pas le haut */
     display: flex;
-    align-items: center;
+    align-items: flex-end;
     justify-content: center;
+    padding: 0 40px;
   }
   .caption-group {
-    /* every group is absolutely stacked over the SAME band — exactly one shown at a
-       time via opacity. Must be absolute: in-flow groups would lay out side-by-side. */
+    /* un seul groupe visible à la fois, contrôlé par opacity — pas d'animation
+       d'entrée : le bloc apparaît net (voir script, tl.set uniquement) */
     position: absolute;
-    inset: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
     display: flex;
-    align-items: center;
     justify-content: center;
     opacity: 0;
-  }
-
-  /* the tinted card — soft violet fill, thin violet border, rounded corners, no shadow */
-  .caption-pill {
-    max-width: 88%;
-    padding: 20px 44px 24px;
-    background: color-mix(in srgb, var(--cap-accent) 6%, var(--cap-canvas));
-    border: 1.5px solid color-mix(in srgb, var(--cap-accent) 22%, transparent);
-    border-radius: 14px;
   }
   .caption-line {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 0.1em 0.34em;
+    gap: 0.12em 0.36em;
     font-family: "PlanitTitle", system-ui, sans-serif; /* repli officiel Sora, voir studio-planit/CLAUDE.md */
     font-weight: 700;
-    font-size: clamp(40px, 4.4vw, 58px);
-    line-height: 1.16;
-    letter-spacing: -0.02em;
+    font-size: 38px;
+    line-height: 1.2;
+    letter-spacing: -0.01em;
+    max-width: 100%;
   }
-
-  /* upcoming — muted ink, no chip */
   .caption-word {
-    display: inline-block;
-    padding: 0 0.18em;
-    border-radius: 0.32em;
-    color: color-mix(in srgb, var(--cap-ink) 52%, var(--cap-canvas));
+    color: #FFFFFF;
+    -webkit-text-stroke: 4px var(--ink-deep);
+    paint-order: stroke fill;
+    text-shadow: 0 3px 8px color-mix(in srgb, var(--ink-deep) 60%, transparent);
   }
-  /* current word — the solid violet chip (single-accent gesture), white reading on top */
+  /* mot actif : rose, sans fond, sans surlignage — juste un changement de couleur */
   .caption-word.is-active {
-    color: var(--cap-canvas);
-    background: var(--cap-accent);
-    box-shadow: none;
-  }
-  /* already spoken — solid ink, chip cleared */
-  .caption-word.is-spoken {
-    color: var(--cap-ink);
-    background: transparent;
-    box-shadow: none;
-  }
-
-  @media (max-aspect-ratio: 9/16) {
-    .caption-pill {
-      max-width: 92%;
-    }
-    .caption-line {
-      font-size: clamp(34px, 5.4vw, 48px);
-    }
+    color: var(--planit-rose);
+    -webkit-text-stroke: 4px var(--ink-deep);
   }
 </style>
 
@@ -112,8 +80,8 @@
   data-start="0"
   data-duration="52.95"
   data-fps="30"
-  data-width="1080"
-  data-height="1920"
+  data-width="720"
+  data-height="1280"
 >
   <div class="caption-layer" aria-hidden="true">
     <div id="caption-stage" class="caption-stage"></div>
@@ -121,10 +89,13 @@
 </div>
 
 <script>
-  // A-S2E1 : GROUPS injecté depuis caption_groups.json (29 groupes). Timings
-  // ESTIMÉS (voir rapport final) — pas un vrai alignement audio.
-  var GROUPS = [{"id": "caption-group-0", "start": 0.0, "end": 0.68, "text": "Chaque mardi,", "words": [{"id": "caption-word-0-0", "text": "Chaque", "start": 0.0, "end": 0.338}, {"id": "caption-word-0-1", "text": "mardi,", "start": 0.398, "end": 0.68}]}, {"id": "caption-group-1", "start": 0.88, "end": 2.13, "text": "les devis sans réponse", "words": [{"id": "caption-word-1-0", "text": "les", "start": 0.88, "end": 1.049}, {"id": "caption-word-1-1", "text": "devis", "start": 1.109, "end": 1.391}, {"id": "caption-word-1-2", "text": "sans", "start": 1.451, "end": 1.676}, {"id": "caption-word-1-3", "text": "réponse", "start": 1.736, "end": 2.13}]}, {"id": "caption-group-2", "start": 2.19, "end": 3.441, "text": "s'empilent un peu plus", "words": [{"id": "caption-word-2-0", "text": "s'empilent", "start": 2.19, "end": 2.754}, {"id": "caption-word-2-1", "text": "un", "start": 2.814, "end": 2.926}, {"id": "caption-word-2-2", "text": "peu", "start": 2.986, "end": 3.156}, {"id": "caption-word-2-3", "text": "plus", "start": 3.216, "end": 3.441}]}, {"id": "caption-group-3", "start": 3.501, "end": 4.41, "text": "sur votre bureau", "words": [{"id": "caption-word-3-0", "text": "sur", "start": 3.501, "end": 3.67}, {"id": "caption-word-3-1", "text": "votre", "start": 3.73, "end": 4.012}, {"id": "caption-word-3-2", "text": "bureau", "start": 4.072, "end": 4.41}]}, {"id": "caption-group-4", "start": 4.79, "end": 6.097, "text": "Vous relancez au hasard,", "words": [{"id": "caption-word-4-0", "text": "Vous", "start": 4.79, "end": 5.015}, {"id": "caption-word-4-1", "text": "relancez", "start": 5.075, "end": 5.526}, {"id": "caption-word-4-2", "text": "au", "start": 5.586, "end": 5.699}, {"id": "caption-word-4-3", "text": "hasard,", "start": 5.759, "end": 6.097}]}, {"id": "caption-group-5", "start": 6.297, "end": 7.322, "text": "sans savoir qui a", "words": [{"id": "caption-word-5-0", "text": "sans", "start": 6.297, "end": 6.522}, {"id": "caption-word-5-1", "text": "savoir", "start": 6.582, "end": 6.92}, {"id": "caption-word-5-2", "text": "qui", "start": 6.98, "end": 7.149}, {"id": "caption-word-5-3", "text": "a", "start": 7.209, "end": 7.322}]}, {"id": "caption-group-6", "start": 7.382, "end": 9.087, "text": "déjà répondu la semaine passée", "words": [{"id": "caption-word-6-0", "text": "déjà", "start": 7.382, "end": 7.607}, {"id": "caption-word-6-1", "text": "répondu", "start": 7.667, "end": 8.062}, {"id": "caption-word-6-2", "text": "la", "start": 8.122, "end": 8.234}, {"id": "caption-word-6-3", "text": "semaine", "start": 8.294, "end": 8.689}, {"id": "caption-word-6-4", "text": "passée", "start": 8.749, "end": 9.087}]}, {"id": "caption-group-7", "start": 9.467, "end": 10.263, "text": "Ce temps perdu,", "words": [{"id": "caption-word-7-0", "text": "Ce", "start": 9.467, "end": 9.579}, {"id": "caption-word-7-1", "text": "temps", "start": 9.639, "end": 9.921}, {"id": "caption-word-7-2", "text": "perdu,", "start": 9.981, "end": 10.263}]}, {"id": "caption-group-8", "start": 10.463, "end": 11.653, "text": "semaine après semaine,", "words": [{"id": "caption-word-8-0", "text": "semaine", "start": 10.463, "end": 10.857}, {"id": "caption-word-8-1", "text": "après", "start": 10.917, "end": 11.199}, {"id": "caption-word-8-2", "text": "semaine,", "start": 11.259, "end": 11.653}]}, {"id": "caption-group-9", "start": 11.853, "end": 12.819, "text": "ne revient jamais", "words": [{"id": "caption-word-9-0", "text": "ne", "start": 11.853, "end": 11.966}, {"id": "caption-word-9-1", "text": "revient", "start": 12.026, "end": 12.421}, {"id": "caption-word-9-2", "text": "jamais", "start": 12.481, "end": 12.819}]}, {"id": "caption-group-10", "start": 13.199, "end": 14.111, "text": "Vous le savez :", "words": [{"id": "caption-word-10-0", "text": "Vous", "start": 13.199, "end": 13.424}, {"id": "caption-word-10-1", "text": "le", "start": 13.484, "end": 13.597}, {"id": "caption-word-10-2", "text": "savez", "start": 13.657, "end": 13.938}, {"id": "caption-word-10-3", "text": ":", "start": 13.998, "end": 14.111}]}, {"id": "caption-group-11", "start": 14.311, "end": 15.783, "text": "certains clients attendent", "words": [{"id": "caption-word-11-0", "text": "certains", "start": 14.311, "end": 14.762}, {"id": "caption-word-11-1", "text": "clients", "start": 14.822, "end": 15.216}, {"id": "caption-word-11-2", "text": "attendent", "start": 15.276, "end": 15.783}]}, {"id": "caption-group-12", "start": 15.843, "end": 17.21, "text": "depuis plus de dix jours", "words": [{"id": "caption-word-12-0", "text": "depuis", "start": 15.843, "end": 16.181}, {"id": "caption-word-12-1", "text": "plus", "start": 16.241, "end": 16.467}, {"id": "caption-word-12-2", "text": "de", "start": 16.527, "end": 16.639}, {"id": "caption-word-12-3", "text": "dix", "start": 16.699, "end": 16.869}, {"id": "caption-word-12-4", "text": "jours", "start": 16.929, "end": 17.21}]}, {"id": "caption-group-13", "start": 17.59, "end": 18.555, "text": "Relance les devis", "words": [{"id": "caption-word-13-0", "text": "Relance", "start": 17.59, "end": 17.985}, {"id": "caption-word-13-1", "text": "les", "start": 18.045, "end": 18.214}, {"id": "caption-word-13-2", "text": "devis", "start": 18.274, "end": 18.555}]}, {"id": "caption-group-14", "start": 18.615, "end": 19.866, "text": "de la semaine dernière", "words": [{"id": "caption-word-14-0", "text": "de", "start": 18.615, "end": 18.728}, {"id": "caption-word-14-1", "text": "la", "start": 18.788, "end": 18.901}, {"id": "caption-word-14-2", "text": "semaine", "start": 18.961, "end": 19.355}, {"id": "caption-word-14-3", "text": "dernière", "start": 19.415, "end": 19.866}]}, {"id": "caption-group-15", "start": 20.246, "end": 21.666, "text": "Nina reprend chaque devis", "words": [{"id": "caption-word-15-0", "text": "Nina", "start": 20.246, "end": 20.471}, {"id": "caption-word-15-1", "text": "reprend", "start": 20.531, "end": 20.926}, {"id": "caption-word-15-2", "text": "chaque", "start": 20.986, "end": 21.324}, {"id": "caption-word-15-3", "text": "devis", "start": 21.384, "end": 21.666}]}, {"id": "caption-group-16", "start": 21.726, "end": 22.24, "text": "un par un,", "words": [{"id": "caption-word-16-0", "text": "un", "start": 21.726, "end": 21.838}, {"id": "caption-word-16-1", "text": "par", "start": 21.898, "end": 22.067}, {"id": "caption-word-16-2", "text": "un,", "start": 22.127, "end": 22.24}]}, {"id": "caption-group-17", "start": 22.44, "end": 23.747, "text": "retrouve le bon contact", "words": [{"id": "caption-word-17-0", "text": "retrouve", "start": 22.44, "end": 22.891}, {"id": "caption-word-17-1", "text": "le", "start": 22.951, "end": 23.063}, {"id": "caption-word-17-2", "text": "bon", "start": 23.123, "end": 23.292}, {"id": "caption-word-17-3", "text": "contact", "start": 23.352, "end": 23.747}]}, {"id": "caption-group-18", "start": 23.807, "end": 25.001, "text": "et renvoie le message", "words": [{"id": "caption-word-18-0", "text": "et", "start": 23.807, "end": 23.92}, {"id": "caption-word-18-1", "text": "renvoie", "start": 23.98, "end": 24.374}, {"id": "caption-word-18-2", "text": "le", "start": 24.434, "end": 24.547}, {"id": "caption-word-18-3", "text": "message", "start": 24.607, "end": 25.001}]}, {"id": "caption-group-19", "start": 25.381, "end": 27.199, "text": "Elle revient la semaine suivante,", "words": [{"id": "caption-word-19-0", "text": "Elle", "start": 25.381, "end": 25.606}, {"id": "caption-word-19-1", "text": "revient", "start": 25.666, "end": 26.061}, {"id": "caption-word-19-2", "text": "la", "start": 26.121, "end": 26.234}, {"id": "caption-word-19-3", "text": "semaine", "start": 26.294, "end": 26.688}, {"id": "caption-word-19-4", "text": "suivante,", "start": 26.748, "end": 27.199}]}, {"id": "caption-group-20", "start": 27.399, "end": 29.047, "text": "tant que personne n'a répondu,", "words": [{"id": "caption-word-20-0", "text": "tant", "start": 27.399, "end": 27.624}, {"id": "caption-word-20-1", "text": "que", "start": 27.684, "end": 27.853}, {"id": "caption-word-20-2", "text": "personne", "start": 27.913, "end": 28.364}, {"id": "caption-word-20-3", "text": "n'a", "start": 28.424, "end": 28.593}, {"id": "caption-word-20-4", "text": "répondu,", "start": 28.653, "end": 29.047}]}, {"id": "caption-group-21", "start": 29.247, "end": 30.614, "text": "sans que vous y pensiez", "words": [{"id": "caption-word-21-0", "text": "sans", "start": 29.247, "end": 29.473}, {"id": "caption-word-21-1", "text": "que", "start": 29.533, "end": 29.702}, {"id": "caption-word-21-2", "text": "vous", "start": 29.762, "end": 29.987}, {"id": "caption-word-21-3", "text": "y", "start": 30.047, "end": 30.16}, {"id": "caption-word-21-4", "text": "pensiez", "start": 30.22, "end": 30.614}]}, {"id": "caption-group-22", "start": 30.994, "end": 32.756, "text": "Dix-huit devis relancés ce mardi,", "words": [{"id": "caption-word-22-0", "text": "Dix-huit", "start": 30.994, "end": 31.389}, {"id": "caption-word-22-1", "text": "devis", "start": 31.449, "end": 31.73}, {"id": "caption-word-22-2", "text": "relancés", "start": 31.79, "end": 32.241}, {"id": "caption-word-22-3", "text": "ce", "start": 32.301, "end": 32.414}, {"id": "caption-word-22-4", "text": "mardi,", "start": 32.474, "end": 32.756}]}, {"id": "caption-group-23", "start": 32.956, "end": 34.379, "text": "sans que vous ayez ouvert", "words": [{"id": "caption-word-23-0", "text": "sans", "start": 32.956, "end": 33.181}, {"id": "caption-word-23-1", "text": "que", "start": 33.241, "end": 33.41}, {"id": "caption-word-23-2", "text": "vous", "start": 33.47, "end": 33.695}, {"id": "caption-word-23-3", "text": "ayez", "start": 33.755, "end": 33.981}, {"id": "caption-word-23-4", "text": "ouvert", "start": 34.041, "end": 34.379}]}, {"id": "caption-group-24", "start": 34.439, "end": 35.291, "text": "un seul dossier", "words": [{"id": "caption-word-24-0", "text": "un", "start": 34.439, "end": 34.551}, {"id": "caption-word-24-1", "text": "seul", "start": 34.611, "end": 34.837}, {"id": "caption-word-24-2", "text": "dossier", "start": 34.897, "end": 35.291}]}, {"id": "caption-group-25", "start": 35.671, "end": 37.207, "text": "Le dossier avance tout seul,", "words": [{"id": "caption-word-25-0", "text": "Le", "start": 35.671, "end": 35.784}, {"id": "caption-word-25-1", "text": "dossier", "start": 35.844, "end": 36.238}, {"id": "caption-word-25-2", "text": "avance", "start": 36.298, "end": 36.636}, {"id": "caption-word-25-3", "text": "tout", "start": 36.696, "end": 36.922}, {"id": "caption-word-25-4", "text": "seul,", "start": 36.982, "end": 37.207}]}, {"id": "caption-group-26", "start": 37.407, "end": 38.372, "text": "mardi après mardi", "words": [{"id": "caption-word-26-0", "text": "mardi", "start": 37.407, "end": 37.689}, {"id": "caption-word-26-1", "text": "après", "start": 37.749, "end": 38.031}, {"id": "caption-word-26-2", "text": "mardi", "start": 38.091, "end": 38.372}]}, {"id": "caption-group-27", "start": 38.752, "end": 40.176, "text": "Vos devis ne dorment plus", "words": [{"id": "caption-word-27-0", "text": "Vos", "start": 38.752, "end": 38.921}, {"id": "caption-word-27-1", "text": "devis", "start": 38.981, "end": 39.263}, {"id": "caption-word-27-2", "text": "ne", "start": 39.323, "end": 39.436}, {"id": "caption-word-27-3", "text": "dorment", "start": 39.496, "end": 39.89}, {"id": "caption-word-27-4", "text": "plus", "start": 39.95, "end": 40.176}]}, {"id": "caption-group-28", "start": 40.556, "end": 40.95, "text": "Plani't", "words": [{"id": "caption-word-28-0", "text": "Plani't", "start": 40.556, "end": 40.95}]}];
+  // A-S2E1 (v2) : GROUPS régénérés sur le nouveau script en 3 segments.
+  // Timings ESTIMÉS (ASR indisponible dans cette session) — pas un vrai
+  // alignement audio, voir rapport.
+  var GROUPS = [{"id":"caption-group-0","start":0.0,"end":0.617,"text":"Chaque mardi,","words":[{"id":"caption-word-0-0","text":"Chaque","start":0.0,"end":0.294},{"id":"caption-word-0-1","text":"mardi,","start":0.294,"end":0.617}]},{"id":"caption-group-1","start":0.817,"end":2.526,"text":"les devis sans réponse s'empilent","words":[{"id":"caption-word-1-0","text":"les","start":0.817,"end":1.014},{"id":"caption-word-1-1","text":"devis","start":1.014,"end":1.308},{"id":"caption-word-1-2","text":"sans","start":1.308,"end":1.601},{"id":"caption-word-1-3","text":"réponse","start":1.601,"end":1.993},{"id":"caption-word-1-4","text":"s'empilent","start":1.993,"end":2.526}]},{"id":"caption-group-2","start":2.906,"end":3.947,"text":"On relance au hasard,","words":[{"id":"caption-word-2-0","text":"On","start":2.906,"end":3.101},{"id":"caption-word-2-1","text":"relance","start":3.101,"end":3.492},{"id":"caption-word-2-2","text":"au","start":3.492,"end":3.687},{"id":"caption-word-2-3","text":"hasard,","start":3.687,"end":3.947}]},{"id":"caption-group-3","start":4.147,"end":5.774,"text":"sans savoir qui a déjà répondu","words":[{"id":"caption-word-3-0","text":"sans","start":4.147,"end":4.44},{"id":"caption-word-3-1","text":"savoir","start":4.44,"end":4.766},{"id":"caption-word-3-2","text":"qui","start":4.766,"end":4.961},{"id":"caption-word-3-3","text":"a","start":4.961,"end":5.058},{"id":"caption-word-3-4","text":"déjà","start":5.058,"end":5.351},{"id":"caption-word-3-5","text":"répondu","start":5.351,"end":5.774}]},{"id":"caption-group-4","start":6.154,"end":7.035,"text":"Et le temps passé","words":[{"id":"caption-word-4-0","text":"Et","start":6.154,"end":6.316},{"id":"caption-word-4-1","text":"le","start":6.316,"end":6.511},{"id":"caption-word-4-2","text":"temps","start":6.511,"end":6.772},{"id":"caption-word-4-3","text":"passé","start":6.772,"end":7.035}]},{"id":"caption-group-5","start":7.095,"end":8.44,"text":"là-dessus ne revient jamais","words":[{"id":"caption-word-5-0","text":"là-dessus","start":7.095,"end":7.554},{"id":"caption-word-5-1","text":"ne","start":7.554,"end":7.717},{"id":"caption-word-5-2","text":"revient","start":7.717,"end":8.043},{"id":"caption-word-5-3","text":"jamais","start":8.043,"end":8.44}]},{"id":"caption-group-6","start":20.0,"end":21.047,"text":"Nina reprend chaque devis,","words":[{"id":"caption-word-6-0","text":"Nina","start":20.0,"end":20.262},{"id":"caption-word-6-1","text":"reprend","start":20.262,"end":20.588},{"id":"caption-word-6-2","text":"chaque","start":20.588,"end":20.85},{"id":"caption-word-6-3","text":"devis,","start":20.85,"end":21.047}]},{"id":"caption-group-7","start":21.247,"end":22.229,"text":"retrouve le bon contact,","words":[{"id":"caption-word-7-0","text":"retrouve","start":21.247,"end":21.575},{"id":"caption-word-7-1","text":"le","start":21.575,"end":21.767},{"id":"caption-word-7-2","text":"bon","start":21.767,"end":21.959},{"id":"caption-word-7-3","text":"contact,","start":21.959,"end":22.229}]},{"id":"caption-group-8","start":22.429,"end":23.185,"text":"renvoie le message","words":[{"id":"caption-word-8-0","text":"renvoie","start":22.429,"end":22.719},{"id":"caption-word-8-1","text":"le","start":22.719,"end":22.912},{"id":"caption-word-8-2","text":"message","start":22.912,"end":23.185}]},{"id":"caption-group-9","start":23.564,"end":25.151,"text":"Elle recommencera la semaine prochaine,","words":[{"id":"caption-word-9-0","text":"Elle","start":23.564,"end":23.812},{"id":"caption-word-9-1","text":"recommencera","start":23.812,"end":24.336},{"id":"caption-word-9-2","text":"la","start":24.336,"end":24.528},{"id":"caption-word-9-3","text":"semaine","start":24.528,"end":24.831},{"id":"caption-word-9-4","text":"prochaine,","start":24.831,"end":25.151}]},{"id":"caption-group-10","start":25.351,"end":26.591,"text":"tant que personne n'a répondu","words":[{"id":"caption-word-10-0","text":"tant","start":25.351,"end":25.579},{"id":"caption-word-10-1","text":"que","start":25.579,"end":25.777},{"id":"caption-word-10-2","text":"personne","start":25.777,"end":26.101},{"id":"caption-word-10-3","text":"n'a","start":26.101,"end":26.298},{"id":"caption-word-10-4","text":"répondu","start":26.298,"end":26.591}]},{"id":"caption-group-11","start":33.0,"end":34.464,"text":"Dix-huit devis relancés ce mardi","words":[{"id":"caption-word-11-0","text":"Dix-huit","start":33.0,"end":33.351},{"id":"caption-word-11-1","text":"devis","start":33.351,"end":33.65},{"id":"caption-word-11-2","text":"relancés","start":33.65,"end":34.023},{"id":"caption-word-11-3","text":"ce","start":34.023,"end":34.246},{"id":"caption-word-11-4","text":"mardi","start":34.246,"end":34.464}]},{"id":"caption-group-12","start":34.844,"end":35.972,"text":"Deux réponses avant midi","words":[{"id":"caption-word-12-0","text":"Deux","start":34.844,"end":35.098},{"id":"caption-word-12-1","text":"réponses","start":35.098,"end":35.487},{"id":"caption-word-12-2","text":"avant","start":35.487,"end":35.741},{"id":"caption-word-12-3","text":"midi","start":35.741,"end":35.972}]},{"id":"caption-group-13","start":36.352,"end":37.64,"text":"Sans ouvrir un seul dossier","words":[{"id":"caption-word-13-0","text":"Sans","start":36.352,"end":36.63},{"id":"caption-word-13-1","text":"ouvrir","start":36.63,"end":36.908},{"id":"caption-word-13-2","text":"un","start":36.908,"end":37.093},{"id":"caption-word-13-3","text":"seul","start":37.093,"end":37.371},{"id":"caption-word-13-4","text":"dossier","start":37.371,"end":37.64}]}];
   var DURATION = 52.95;
+  // Fenêtres masquées quoi qu'il arrive : hook d'ouverture et carton de fin
+  var MASK_WINDOWS = [[0, 2.0], [46.0, DURATION]];
 
   (function () {
     var stage = document.getElementById("caption-stage");
@@ -133,8 +104,6 @@
       var groupEl = document.createElement("div");
       groupEl.className = "caption-group";
       groupEl.id = "caption-group-" + g;
-      var pill = document.createElement("div");
-      pill.className = "caption-pill";
       var line = document.createElement("div");
       line.className = "caption-line";
       (group.words || []).forEach(function (w, i) {
@@ -144,10 +113,13 @@
         span.textContent = String(w.text);
         line.appendChild(span);
       });
-      pill.appendChild(line);
-      groupEl.appendChild(pill);
+      groupEl.appendChild(line);
       stage.appendChild(groupEl);
     });
+
+    // état initial masqué, hors timeline (un tl.set(...,0) ne s'appliquerait
+    // pas si le lecteur reste exactement sur la frame 0)
+    gsap.set("#caption-stage", { autoAlpha: 0 });
 
     window.__timelines = window.__timelines || {};
     var tl = gsap.timeline({ paused: true });
@@ -161,6 +133,7 @@
       var end = isLast ? DURATION : Math.min(Number(next.start), Number(group.end) + 0.3);
       if (end <= start) end = start + 0.01;
 
+      // pas d'animation d'entrée : le bloc apparaît net (tl.set, jamais tl.to/fromTo)
       tl.set(groupEl, { opacity: 1 }, start);
       tl.set(groupEl, { opacity: 0 }, end);
 
@@ -169,17 +142,19 @@
         var at = Math.max(start, Number(w.start));
         tl.set(el, { className: "caption-word" }, start);
         tl.set(el, { className: "caption-word is-active" }, at);
-        tl.fromTo(el, { scale: 0.985 }, { scale: 1, duration: 0.18, ease: "power1.out" }, at);
         if (i + 1 < words.length) {
           var nextAt = Math.max(start, Number(words[i + 1].start));
-          tl.set(el, { className: "caption-word is-spoken" }, nextAt);
+          tl.set(el, { className: "caption-word" }, nextAt); // redevient blanc, sans fond
         }
       });
-      if (words.length) {
-        var lastEl = document.getElementById("caption-word-" + g + "-" + (words.length - 1));
-        var lastSpoken = Math.min(end, Number(words[words.length - 1].end) + 0.1);
-        tl.set(lastEl, { className: "caption-word is-spoken" }, lastSpoken);
-      }
+    });
+
+    // masquage intégral de la piste sur les fenêtres hook d'ouverture / carton
+    // de fin, quel que soit l'état des groupes ci-dessus (posé APRÈS, sur le
+    // conteneur parent — s'applique par-dessus tout groupe actif)
+    MASK_WINDOWS.forEach(function (win) {
+      tl.set("#caption-stage", { autoAlpha: 0 }, win[0]);
+      tl.set("#caption-stage", { autoAlpha: 1 }, win[1]);
     });
 
     // full-span anchor so the sub-comp timeline spans the whole video
@@ -187,8 +162,4 @@
     window.__timelines["captions"] = tl;
   })();
 </script>
-
-<style>
-  .caption-line { line-height: 1.1 !important; }
-</style>
 </template>

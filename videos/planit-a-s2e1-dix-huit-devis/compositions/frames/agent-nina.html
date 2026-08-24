@@ -1,47 +1,34 @@
-<template id="agent-nina-template" data-composition-id="agent-nina" data-width="1080" data-height="1920">
+<template id="agent-nina-template" data-composition-id="agent-nina" data-width="720" data-height="1280">
 <script src="assets/vendor/gsap.min.js"></script>
 
 <style data-brand-tokens>
   :root {
     --planit-violet: #4F2DF9;
-    --planit-violet-2: #8236F8;
     --planit-rose: #FE64D5;
-    --planit-ink: #1F0D3E;
+    --ink-deep: #1F0D3E;
   }
-  @font-face {
-    font-family: "PlanitTitle";
-    src: url("assets/fonts/Sora-700.woff2") format("woff2");
-    font-weight: 700;
-  }
-  @font-face {
-    font-family: "PlanitTitle";
-    src: url("assets/fonts/Sora-800.woff2") format("woff2");
-    font-weight: 800;
-  }
-  @font-face {
-    font-family: "PlanitText";
-    src: url("assets/fonts/Inter-400.woff2") format("woff2");
-    font-weight: 400;
-  }
+  @font-face { font-family: "PlanitTitle"; src: url("assets/fonts/Sora-700.woff2") format("woff2"); font-weight: 700; }
+  @font-face { font-family: "PlanitTitle"; src: url("assets/fonts/Sora-800.woff2") format("woff2"); font-weight: 800; }
+  @font-face { font-family: "PlanitText"; src: url("assets/fonts/Inter-400.woff2") format("woff2"); font-weight: 400; }
 </style>
 
 <style>
-  /* carte-agent, bas gauche, hors zone de sécurité (rien sous y=1600 —
-     charte obtenir_charte) ET au-dessus du bandeau de sous-titres
-     (--cap-band-top: 1380px, voir captions.html) : bas de carte à y=1350 */
+  /* carte-agent, bas gauche (marge latérale 64px, charte 720x1280), hors
+     zone de sécurité (rien sous y=1067) ET au-dessus du bandeau de
+     sous-titres (base des sous-titres à y=1013) : carte posée à y=780-880 */
   #agent-card {
     position: absolute;
     left: 64px;
-    top: 1200px;
-    width: 420px;
-    height: 150px;
+    top: 780px;
+    width: 280px;
+    height: 100px;
     display: flex;
     align-items: center;
-    gap: 20px;
-    padding: 20px 24px;
-    background: color-mix(in srgb, var(--planit-ink) 88%, transparent);
-    border: 1.5px solid color-mix(in srgb, var(--planit-rose) 30%, transparent);
-    border-radius: 20px;
+    gap: 14px;
+    padding: 13px 16px;
+    background: color-mix(in srgb, var(--ink-deep) 88%, transparent);
+    border: 1px solid color-mix(in srgb, var(--planit-rose) 30%, transparent);
+    border-radius: 14px;
     opacity: 0;
   }
   /* ⚠️ pas d'avatar 3D réel fourni (module Profil & Avatar 3D absent de cette
@@ -49,8 +36,8 @@
      que l'asset réel est disponible — voir rapport final. */
   #agent-avatar {
     flex: 0 0 auto;
-    width: 84px;
-    height: 84px;
+    width: 56px;
+    height: 56px;
     border-radius: 50%;
     background: linear-gradient(135deg, var(--planit-violet) 0%, var(--planit-rose) 100%);
     display: flex;
@@ -58,32 +45,32 @@
     justify-content: center;
     font-family: "PlanitTitle", system-ui, sans-serif;
     font-weight: 800;
-    font-size: 40px;
+    font-size: 26px;
     color: #FFFFFF;
   }
   #agent-meta {
     display: flex;
     flex-direction: column;
-    gap: 6px;
+    gap: 4px;
   }
   #agent-name {
     font-family: "PlanitTitle", system-ui, sans-serif;
     font-weight: 700;
-    font-size: 34px;
+    font-size: 23px;
     color: #FFFFFF;
   }
   #agent-role {
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 7px;
     font-family: "PlanitText", system-ui, sans-serif;
     font-weight: 400;
-    font-size: 24px;
+    font-size: 16px;
     color: color-mix(in srgb, #FFFFFF 80%, transparent);
   }
   #agent-role .dot {
-    width: 9px;
-    height: 9px;
+    width: 6px;
+    height: 6px;
     border-radius: 50%;
     background: var(--planit-rose);
   }
@@ -94,8 +81,8 @@
   data-composition-id="agent-nina"
   data-start="0"
   data-duration="7"
-  data-width="1080"
-  data-height="1920"
+  data-width="720"
+  data-height="1280"
 >
   <div id="agent-card" class="clip" data-start="0" data-duration="7" data-track-index="0">
     <div id="agent-avatar">N</div>
@@ -110,8 +97,8 @@
   (function () {
     window.__timelines = window.__timelines || {};
     var tl = gsap.timeline({ paused: true });
-    tl.fromTo("#agent-card", { x: -32 }, { opacity: 1, x: 0, duration: 0.4, ease: "power2.out" }, 0);
-    tl.to("#agent-card", { opacity: 0, x: -24, duration: 0.4, ease: "power2.in" }, 6.4);
+    tl.fromTo("#agent-card", { x: -21 }, { opacity: 1, x: 0, duration: 0.4, ease: "power2.out" }, 0);
+    tl.to("#agent-card", { opacity: 0, x: -16, duration: 0.4, ease: "power2.in" }, 6.4);
     tl.to({}, { duration: 7 }, 0); // full-span anchor
     window.__timelines["agent-nina"] = tl;
   })();
