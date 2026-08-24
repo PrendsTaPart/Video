@@ -56,28 +56,18 @@
         data-duration="10"
         data-track-index="0"
       ></video>
-      <!--
-        plan 2 : recadrage numérique (rattrapage cadrage). Le pipeline de rendu
-        remplace chaque <video> par une image figée positionnée via
-        offsetWidth/offsetHeight/offsetLeft/offsetTop (mise en page réelle) —
-        un `transform: scale()` CSS n'est PAS pris en compte. Le zoom est donc
-        animé en largeur/hauteur/position réelles (voir script), dans une
-        fenêtre de recadrage à overflow:hidden.
-      -->
-      <div class="scene" style="overflow: hidden;">
-        <video
-          id="el-plan-02"
-          class="plan clip"
-          src="assets/video/plan-02.mp4"
-          data-has-audio="true"
-          data-volume="0.1"
-          data-start="10"
-          data-duration="10"
-          data-track-index="0"
-          data-layout-allow-overflow
-          style="position: absolute; left: 0px; top: 0px; width: 720px; height: 1280px; object-fit: cover;"
-        ></video>
-      </div>
+      <!-- plan 2 : cadrage ORIGINAL, aucun recadrage numérique (retiré à la
+           demande — Karim doit rester pleinement visible pendant sa réplique) -->
+      <video
+        id="el-plan-02"
+        class="scene plan clip"
+        src="assets/video/plan-02.mp4"
+        data-has-audio="true"
+        data-volume="0.1"
+        data-start="10"
+        data-duration="10"
+        data-track-index="0"
+      ></video>
       <video
         id="el-plan-03"
         class="scene plan clip"
@@ -179,14 +169,16 @@
         data-volume="1"
       ></audio>
 
-      <!--
-        Canal musique de fond : NON câblé, aucun fichier fourni (voir rapport
-        final). Dès qu'un fichier existe dans assets/bgm/, ajouter un élément
-        audio pointant dessus (data-start 0, data-duration 52.95,
-        data-track-index 21, data-volume ~0.1 pour rester sous la voix) —
-        pas de balise ici tant que le fichier n'existe pas, pour que le
-        linter ne référence jamais un chemin inexistant.
-      -->
+      <!-- musique de fond : piste déjà présente dans le dépôt (Académie
+           Plan'It), voir rapport pour le choix -->
+      <audio
+        id="el-bgm"
+        src="assets/bgm/musique-produit.mp3"
+        data-start="0"
+        data-duration="52.95"
+        data-track-index="21"
+        data-volume="0.126"
+      ></audio>
     </div>
 
     <script>
@@ -202,21 +194,15 @@
         tl.to(plan2, { volume: 1, duration: 0.15, ease: "power1.inOut" }, 13.85);
         tl.set(plan2, { volume: 1 }, 14.0);
         tl.to(plan2, { volume: 0.1, duration: 0.15, ease: "power1.inOut" }, 17.0);
+        // aucun recadrage numérique sur le plan 2 (retiré à la demande) —
+        // cadrage original conservé tel quel, seul le volume est automatisé.
 
-        // plan 2 : recadrage numérique (rattrapage cadrage), centre 68%/38%.
-        // Le remplacement vidéo→image du pipeline ignore `transform`, donc le
-        // zoom est exprimé en largeur/hauteur/position réelles (720×1280 de
-        // base). Le point (68%,38%) reste fixe à l'écran pendant le zoom —
-        // équivalent d'un transform-origin: 68% 38% ; scale(1.2).
-        // width(s)=720s height(s)=1280s left(s)=489.6(1-s) top(s)=486.4(1-s)
-        tl.fromTo(
-          plan2,
-          { width: 720, height: 1280, left: 0, top: 0 },
-          { width: 864, height: 1536, left: -97.92, top: -97.28, duration: 1.0, ease: "power2.inOut" },
-          13.0
-        );
-        // maintien 14.0 → 18.5 (rien n'anime, reste à 1.2×)
-        tl.to(plan2, { width: 720, height: 1280, left: 0, top: 0, duration: 1.0, ease: "power2.inOut" }, 18.5);
+        // musique de fond : musique-produit.mp3 (Académie Plan'It, voir
+        // rapport pour le choix), -18dB (≈0.126 linéaire) sous la voix,
+        // fondue sur les 2 dernières secondes.
+        var bgm = document.getElementById("el-bgm");
+        tl.set(bgm, { volume: 0.126 }, 0);
+        tl.to(bgm, { volume: 0, duration: 2, ease: "none" }, 50.95);
 
         tl.to({}, { duration: 52.95 }, 0); // full-span anchor — main.duration() == composition total
       })();
