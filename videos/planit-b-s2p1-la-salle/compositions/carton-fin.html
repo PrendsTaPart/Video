@@ -1,0 +1,173 @@
+<template id="carton-fin-template" data-composition-id="carton-fin" data-width="720" data-height="1280">
+<script src="assets/vendor/gsap.min.js"></script>
+
+<style data-brand-tokens>
+  :root {
+    --ink-deep: #1F0D3E; /* encre, charte officielle (obtenir_charte) — seule couleur de marque encore utilisée ici */
+  }
+  /* Alte Haas Grotesk indisponible (voir sous-titres.html) — repli
+     officiel : Sora pour la punchline (titres), Inter pour la signature
+     (texte). Remplacer dès que la vraie police est fournie. */
+  @font-face { font-family: "PlanitTitle"; src: url("assets/fonts/Sora-800.woff2") format("woff2"); font-weight: 800; }
+  @font-face { font-family: "PlanitText"; src: url("assets/fonts/Inter-400.woff2") format("woff2"); font-weight: 400; }
+</style>
+
+<!--
+  Reproduit fidèlement compositions/frames/hook-end.html d'A-S2E1 (v8) :
+  taille/position du mark, punchline, liseré, signature, proportions,
+  animations d'entrée et rythme relatif — SEULE exception demandée : le
+  fond reste l'encre unie du Quai, jamais le dégradé de marque de Série A
+  (et donc pas non plus le halo radial qui n'a de sens que sur ce
+  dégradé). Durée totale 2,0s au lieu de 4,55s (contrainte fixe du Quai,
+  12,0s pour toute la version sociale) : tous les temps d'entrée ci-dessous
+  sont ceux d'A-S2E1 multipliés par 2,0/4,55 ≈ 0,44, pour garder le même
+  rythme relatif — logo, puis punchline, puis liseré, puis signature,
+  puis une tenue statique qui occupe ~60% du carton dans les deux cas.
+-->
+<style>
+  #carton-fin-root { position: absolute; inset: 0; overflow: hidden; }
+
+  #carton-fin-bg {
+    position: absolute;
+    inset: 0;
+    background: var(--ink-deep);
+    opacity: 0;
+  }
+
+  /* mark seul (pas de mot "Plani't" à côté, comme A-S2E1 v8), hauteur et
+     position identiques : height 104px, top 479px, centré */
+  #carton-fin-mark {
+    position: absolute;
+    left: 50%;
+    top: 479px;
+    height: 104px;
+    width: auto;
+    display: block;
+    opacity: 0;
+  }
+
+  /* punchline de l'épisode, jusqu'à deux lignes, centrée — mêmes cotes
+     qu'A-S2E1 v8 (left/right 64px, top 611px, Sora 800 48px) */
+  #carton-fin-punchline {
+    position: absolute;
+    left: 64px;
+    right: 64px;
+    top: 611px;
+    text-align: center;
+    font-family: "PlanitTitle", system-ui, sans-serif;
+    font-weight: 800;
+    font-size: 48px;
+    line-height: 1.15;
+    color: #FFFFFF;
+    opacity: 0;
+  }
+
+  /* liseré blanc uni, simple mise à l'échelle — mêmes cotes qu'A-S2E1 v8
+     (64px de large, centré, top 749px) ; PAS le dégradé de marque, pour
+     rester fidèle au liseré blanc de la référence */
+  #carton-fin-liseret {
+    position: absolute;
+    left: calc(50% - 32px);
+    top: 749px;
+    width: 64px;
+    height: 3px;
+    background: #FFFFFF;
+    opacity: 0;
+    transform-origin: center center;
+  }
+
+  /* signature, sous le liseré — mêmes cotes qu'A-S2E1 v8 (top 778px,
+     Inter 400 22px, blanc) */
+  #carton-fin-signature {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 778px;
+    text-align: center;
+    font-family: "PlanitText", system-ui, sans-serif;
+    font-weight: 400;
+    font-size: 22px;
+    color: #FFFFFF;
+    opacity: 0;
+  }
+</style>
+
+<div
+  id="carton-fin-root"
+  data-composition-id="carton-fin"
+  data-start="0"
+  data-duration="2"
+  data-width="720"
+  data-height="1280"
+>
+  <div id="carton-fin-bg" class="clip" data-start="0" data-duration="2" data-track-index="0"></div>
+
+  <img id="carton-fin-mark" class="clip" src="assets/brand/planit-mark-white.png" alt="" data-start="0" data-duration="2" data-track-index="1" />
+
+  <div id="carton-fin-punchline" class="clip" data-start="0" data-duration="2" data-track-index="2">Relier, c'était déjà énorme.</div>
+
+  <div id="carton-fin-liseret" class="clip" data-start="0" data-duration="2" data-track-index="3"></div>
+
+  <div id="carton-fin-signature" class="clip" data-start="0" data-duration="2" data-track-index="4">
+    Ce n&rsquo;est pas demain. C&rsquo;est aujourd&rsquo;hui.
+  </div>
+
+  <!-- signature sonore de fin, synchronisée sur l'apparition du carton ;
+       le plan (et sa voix off, sur une piste distincte) est déjà terminé
+       depuis longtemps à 10,0s — aucun recouvrement possible.
+       data-volume réduit (voir dbToLinear(-12) ≈ 0,25 dans le script) :
+       le fichier source culmine déjà près de 0dB, à volume plein il
+       écrasait l'ambiance du plan qui s'éteint dans ces 2 dernières
+       secondes — audible clairement, mais plus discret. -->
+  <audio
+    id="carton-fin-audio"
+    class="clip"
+    src="assets/sfx/signature-outro.mp3"
+    data-start="0"
+    data-duration="2"
+    data-track-index="5"
+    data-volume="0.25"
+  ></audio>
+</div>
+
+<script>
+  (function () {
+    window.__timelines = window.__timelines || {};
+    var tl = gsap.timeline({ paused: true });
+
+    gsap.set("#carton-fin-bg", { opacity: 0 });
+    gsap.set("#carton-fin-mark", { xPercent: -50, scale: 0.85, opacity: 0 });
+    gsap.set("#carton-fin-punchline", { y: 14, opacity: 0 });
+    gsap.set("#carton-fin-liseret", { scaleX: 0, opacity: 0 });
+    gsap.set("#carton-fin-signature", { y: 8, opacity: 0 });
+
+    // fond encre : seul point qui ne vient pas d'A-S2E1 v8 — reste la
+    // couleur propre au Quai
+    tl.to("#carton-fin-bg", { opacity: 1, duration: 0.2, ease: "power1.out" }, 0);
+
+    // mark : premier élément, fondu + léger scale-in, sans rebond — même
+    // durée/ease qu'A-S2E1 v8 (0.33s, power2.out), démarre à 0.35 * 2,0/4,55
+    tl.to("#carton-fin-mark", { xPercent: -50, scale: 1, opacity: 1, duration: 0.15, ease: "power2.out" }, 0.15);
+
+    // punchline : un bloc entier (contrairement à A-S2E1 qui anime deux
+    // lignes déjà connues à l'écriture, notre texte vient de
+    // quai.config.json et sa longueur/son découpage en lignes varient
+    // d'un épisode à l'autre) — même fondu + léger décalage vertical,
+    // démarre à 0.60 * 2,0/4,55
+    tl.to("#carton-fin-punchline", { y: 0, opacity: 1, duration: 0.12, ease: "power3.out" }, 0.26);
+
+    // liseré : mise à l'échelle horizontale depuis le centre, comme
+    // A-S2E1 v8, démarre à 1.20 * 2,0/4,55
+    tl.to("#carton-fin-liseret", { scaleX: 1, opacity: 0.85, duration: 0.11, ease: "power2.out" }, 0.53);
+
+    // signature : fondu + léger décalage vertical, dernier élément,
+    // démarre à 1.55 * 2,0/4,55
+    tl.to("#carton-fin-signature", { y: 0, opacity: 1, duration: 0.11, ease: "power1.out" }, 0.68);
+
+    // ~0.79s -> 2.0s : tenue statique, rien n'anime — même proportion
+    // (~60%) que la tenue 1.80 -> 4.55s d'A-S2E1 v8
+
+    window.__timelines["carton-fin"] = tl;
+  })();
+</script>
+</template>

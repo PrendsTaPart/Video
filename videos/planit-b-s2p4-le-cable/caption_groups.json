@@ -1,0 +1,58 @@
+[
+  {
+    "start": 1.0,
+    "end": 1.807,
+    "text": "Chaque liaison",
+    "words": [
+      {
+        "text": "Chaque",
+        "start": 1.0,
+        "end": 1.372
+      },
+      {
+        "text": "liaison",
+        "start": 1.372,
+        "end": 1.807
+      }
+    ]
+  },
+  {
+    "start": 1.807,
+    "end": 2.365,
+    "text": "se faisait",
+    "words": [
+      {
+        "text": "se",
+        "start": 1.807,
+        "end": 1.931
+      },
+      {
+        "text": "faisait",
+        "start": 1.931,
+        "end": 2.365
+      }
+    ]
+  },
+  {
+    "start": 2.365,
+    "end": 2.985,
+    "text": "à la main",
+    "words": [
+      {
+        "text": "à",
+        "start": 2.365,
+        "end": 2.427
+      },
+      {
+        "text": "la",
+        "start": 2.427,
+        "end": 2.551
+      },
+      {
+        "text": "main",
+        "start": 2.551,
+        "end": 2.985
+      }
+    ]
+  }
+]

@@ -1,0 +1,142 @@
+<template id="sous-titres-template" data-composition-id="sous-titres" data-width="720" data-height="1280">
+<script src="assets/vendor/gsap.min.js"></script>
+
+<style data-brand-tokens>
+  :root {
+    --ink-deep: #1F0D3E;    /* encre, charte officielle (obtenir_charte) */
+    --cap-baseline: 1013px; /* base du texte, imposée par le gabarit */
+  }
+  /* Alte Haas Grotesk indisponible dans cet environnement (réseau bloqué,
+     absente de Google Fonts) — repli officiel de la charte : Sora pour les
+     titres/sous-titres, voir studio-planit/CLAUDE.md. Remplacer par la
+     vraie police dès qu'elle est fournie (chercher "PlanitTitle" dans le
+     projet). */
+  @font-face { font-family: "PlanitTitle"; src: url("assets/fonts/Sora-700.woff2") format("woff2"); font-weight: 700; }
+</style>
+
+<style>
+  #sous-titres-root { position: absolute; inset: 0; pointer-events: none; }
+  .caption-layer { position: absolute; inset: 0; z-index: 20; pointer-events: none; }
+  /* pas de pastille : le texte flotte sur l'image, la lisibilité vient du
+     contour + de l'ombre portée, pas d'un fond */
+  .caption-stage {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: var(--cap-baseline);
+    transform: translateY(-100%); /* ancre la BASE du texte, pas le haut */
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    padding: 0 40px;
+  }
+  .caption-group {
+    /* un seul groupe visible à la fois, contrôlé par opacity — pas
+       d'animation d'entrée : le bloc apparaît net (voir script) */
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    opacity: 0;
+  }
+  .caption-line {
+    display: flex;
+    flex-wrap: nowrap; /* une seule ligne, sans exception — voir scripts/quai-monter.mjs */
+    justify-content: center;
+    gap: 0.12em 0.36em;
+    font-family: "PlanitTitle", system-ui, sans-serif;
+    font-weight: 700;
+    font-size: 38px;
+    line-height: 1.2;
+    letter-spacing: -0.01em;
+    white-space: nowrap;
+    max-width: 640px; /* 720 - 2*40px de marge latérale du bandeau */
+  }
+  /* blanc uniforme du début à la fin — pas de mise en évidence du mot
+     actif (demande explicite pour Le Quai, à la différence de Série A) */
+  .caption-word {
+    color: #FFFFFF;
+    -webkit-text-stroke: 4px var(--ink-deep);
+    paint-order: stroke fill;
+    text-shadow: 0 3px 8px color-mix(in srgb, var(--ink-deep) 60%, transparent);
+  }
+</style>
+
+<div
+  id="sous-titres-root"
+  data-composition-id="sous-titres"
+  data-timeline-locked
+  data-start="0"
+  data-duration="10"
+  data-fps="30"
+  data-width="720"
+  data-height="1280"
+>
+  <div class="caption-layer" aria-hidden="true">
+    <div id="caption-stage" class="caption-stage"></div>
+  </div>
+</div>
+
+<script>
+  // __QUAI_CAPTION_GROUPS__ — remplacé intégralement par scripts/quai-monter.mjs
+  // depuis caption_groups.json de l'épisode. Vide dans le gabarit : chaque
+  // groupe DOIT tenir sur une seule ligne (voir gabarit) et ne jamais se
+  // terminer par une virgule, un point ou des points de suspension — c'est
+  // le script de production qui construit les groupes ainsi, pas ce fichier.
+  var GROUPS = [{"start":1,"end":2.319,"text":"Un signal partait","words":[{"text":"Un","start":1,"end":1.147},{"text":"signal","start":1.147,"end":1.586},{"text":"partait","start":1.586,"end":2.319}]},{"start":2.319,"end":3.638,"text":"Un autre revenait","words":[{"text":"Un","start":2.319,"end":2.466},{"text":"autre","start":2.466,"end":2.832},{"text":"revenait","start":2.832,"end":3.638}]}];
+  var DURATION = 10;
+
+  (function () {
+    var stage = document.getElementById("caption-stage");
+
+    GROUPS.forEach(function (group, g) {
+      var groupEl = document.createElement("div");
+      groupEl.className = "caption-group";
+      groupEl.id = "caption-group-" + g;
+      var line = document.createElement("div");
+      line.className = "caption-line";
+      (group.words || []).forEach(function (w, i) {
+        var span = document.createElement("span");
+        span.className = "caption-word";
+        span.id = "caption-word-" + g + "-" + i;
+        span.textContent = String(w.text);
+        line.appendChild(span);
+      });
+      groupEl.appendChild(line);
+      stage.appendChild(groupEl);
+    });
+
+    // état initial masqué, hors timeline (un tl.set(...,0) ne s'appliquerait
+    // pas si le lecteur reste exactement sur la frame 0)
+    gsap.set("#caption-stage", { autoAlpha: GROUPS.length ? 1 : 0 });
+
+    window.__timelines = window.__timelines || {};
+    var tl = gsap.timeline({ paused: true });
+
+    GROUPS.forEach(function (group, g) {
+      var groupEl = document.getElementById("caption-group-" + g);
+      var words = group.words || [];
+      var next = GROUPS[g + 1];
+      var isLast = g === GROUPS.length - 1;
+      var start = Math.max(0, Number(group.start));
+      var end = isLast ? DURATION : Math.min(Number(next.start), Number(group.end) + 0.3);
+      if (end <= start) end = start + 0.01;
+
+      // pas d'animation d'entrée : le bloc apparaît net (tl.set, jamais tl.to/fromTo)
+      tl.set(groupEl, { opacity: 1 }, start);
+      tl.set(groupEl, { opacity: 0 }, end);
+
+      // blanc uniforme, aucune mise en évidence mot par mot (à la
+      // différence de Série A) — les timings par mot dans GROUPS restent
+      // utiles au .vtt, mais n'ont plus d'effet visuel ici.
+      void words;
+    });
+
+    // full-span anchor so the sub-comp timeline spans the whole video
+    tl.to({}, { duration: DURATION }, 0);
+    window.__timelines["sous-titres"] = tl;
+  })();
+</script>
+</template>

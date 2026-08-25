@@ -1,0 +1,41 @@
+[
+  {
+    "start": 1.0,
+    "end": 1.515,
+    "text": "Entre les",
+    "words": [
+      {
+        "text": "Entre",
+        "start": 1.0,
+        "end": 1.322
+      },
+      {
+        "text": "les",
+        "start": 1.322,
+        "end": 1.515
+      }
+    ]
+  },
+  {
+    "start": 1.515,
+    "end": 2.802,
+    "text": "deux il attendait",
+    "words": [
+      {
+        "text": "deux",
+        "start": 1.515,
+        "end": 1.901
+      },
+      {
+        "text": "il",
+        "start": 1.901,
+        "end": 2.03
+      },
+      {
+        "text": "attendait",
+        "start": 2.03,
+        "end": 2.802
+      }
+    ]
+  }
+]

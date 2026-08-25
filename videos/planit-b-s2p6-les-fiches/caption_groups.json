@@ -1,0 +1,70 @@
+[
+  {
+    "start": 1.0,
+    "end": 1.628,
+    "text": "Il rangeait",
+    "words": [
+      {
+        "text": "Il",
+        "start": 1.0,
+        "end": 1.126
+      },
+      {
+        "text": "rangeait",
+        "start": 1.126,
+        "end": 1.628
+      }
+    ]
+  },
+  {
+    "start": 1.628,
+    "end": 1.943,
+    "text": "ce que",
+    "words": [
+      {
+        "text": "ce",
+        "start": 1.628,
+        "end": 1.754
+      },
+      {
+        "text": "que",
+        "start": 1.754,
+        "end": 1.943
+      }
+    ]
+  },
+  {
+    "start": 1.943,
+    "end": 2.508,
+    "text": "la machine",
+    "words": [
+      {
+        "text": "la",
+        "start": 1.943,
+        "end": 2.068
+      },
+      {
+        "text": "machine",
+        "start": 2.068,
+        "end": 2.508
+      }
+    ]
+  },
+  {
+    "start": 2.508,
+    "end": 3.325,
+    "text": "savait déjà",
+    "words": [
+      {
+        "text": "savait",
+        "start": 2.508,
+        "end": 2.885
+      },
+      {
+        "text": "déjà",
+        "start": 2.885,
+        "end": 3.325
+      }
+    ]
+  }
+]
