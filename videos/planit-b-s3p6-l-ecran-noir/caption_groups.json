@@ -1,0 +1,53 @@
+[
+  {
+    "start": 1.0,
+    "end": 1.551,
+    "text": "Le soir",
+    "words": [
+      {
+        "text": "Le",
+        "start": 1.0,
+        "end": 1.138
+      },
+      {
+        "text": "soir",
+        "start": 1.138,
+        "end": 1.551
+      }
+    ]
+  },
+  {
+    "start": 1.551,
+    "end": 2.446,
+    "text": "il s'éteignait",
+    "words": [
+      {
+        "text": "il",
+        "start": 1.551,
+        "end": 1.689
+      },
+      {
+        "text": "s'éteignait",
+        "start": 1.689,
+        "end": 2.446
+      }
+    ]
+  },
+  {
+    "start": 2.446,
+    "end": 3.273,
+    "text": "le premier",
+    "words": [
+      {
+        "text": "le",
+        "start": 2.446,
+        "end": 2.584
+      },
+      {
+        "text": "premier",
+        "start": 2.584,
+        "end": 3.273
+      }
+    ]
+  }
+]

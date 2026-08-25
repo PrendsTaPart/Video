@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=720, height=1280" />
+    <script src="assets/vendor/gsap.min.js"></script>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      html,
+      body {
+        width: 720px;
+        height: 1280px;
+        overflow: hidden;
+        background: #000;
+      }
+      #root {
+        position: relative;
+        width: 720px;
+        height: 1280px;
+        overflow: hidden;
+      }
+      .scene {
+        position: absolute;
+        inset: 0;
+        width: 100%;
+        height: 100%;
+      }
+      video.plan {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    </style>
+  </head>
+  <body>
+    <!--
+      VERSION FILM — le plan nu, 10,0s exactement. Aucun texte, aucun
+      logo, aucun cartouche, aucun sous-titre affiché : c'est une brique
+      du film de 350s (voir index-social.html pour la version publiable).
+      Tout ce qui change d'un plan à l'autre vient de quai.config.json,
+      injecté ici par scripts/quai-monter.mjs — ne rien modifier à la main
+      dans ce fichier pour produire un nouveau plan.
+    -->
+    <div
+      id="root"
+      data-composition-id="main"
+      data-start="0"
+      data-duration="10"
+      data-fps="30"
+      data-width="720"
+      data-height="1280"
+    >
+      <!-- le plan source, plein cadre, démuté : son d'ambiance réel à la
+           valeur "ambianceDb" du config (convertie en volume linéaire) -->
+      <video
+        id="el-plan"
+        class="scene plan clip"
+        src="assets/video/plan.mp4"
+        data-has-audio="true"
+        data-volume="0.501187"
+        data-start="0"
+        data-duration="10"
+        data-track-index="0"
+      ></video>
+
+      <!-- voix off, à 0dB, commence à 1,0s (jamais à 0,0s : le plan
+           respire avant qu'on parle) -->
+      <audio
+        id="el-voix"
+        src="assets/voice/vo.mp3"
+        data-start="1.0"
+        data-duration="2.168163"
+        data-track-index="20"
+        data-volume="1"
+      ></audio>
+    </div>
+
+    <script>
+      window.__timelines = window.__timelines || {};
+      window.__timelines["main"] = gsap.timeline({ paused: true });
+      (function () {
+        var tl = window.__timelines["main"];
+        tl.to({}, { duration: 10 }, 0); // full-span anchor — main.duration() == composition total
+      })();
+    </script>
+  </body>
+</html>

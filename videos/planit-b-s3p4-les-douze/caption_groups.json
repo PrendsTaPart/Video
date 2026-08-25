@@ -1,0 +1,41 @@
+[
+  {
+    "start": 1.0,
+    "end": 1.681,
+    "text": "Chaque chose",
+    "words": [
+      {
+        "text": "Chaque",
+        "start": 1.0,
+        "end": 1.372
+      },
+      {
+        "text": "chose",
+        "start": 1.372,
+        "end": 1.681
+      }
+    ]
+  },
+  {
+    "start": 1.681,
+    "end": 2.672,
+    "text": "avait son outil",
+    "words": [
+      {
+        "text": "avait",
+        "start": 1.681,
+        "end": 1.991
+      },
+      {
+        "text": "son",
+        "start": 1.991,
+        "end": 2.176
+      },
+      {
+        "text": "outil",
+        "start": 2.176,
+        "end": 2.672
+      }
+    ]
+  }
+]

@@ -1,0 +1,41 @@
+[
+  {
+    "start": 1.0,
+    "end": 1.653,
+    "text": "Tout tenait",
+    "words": [
+      {
+        "text": "Tout",
+        "start": 1.0,
+        "end": 1.261
+      },
+      {
+        "text": "tenait",
+        "start": 1.261,
+        "end": 1.653
+      }
+    ]
+  },
+  {
+    "start": 1.653,
+    "end": 2.567,
+    "text": "sous un doigt",
+    "words": [
+      {
+        "text": "sous",
+        "start": 1.653,
+        "end": 1.914
+      },
+      {
+        "text": "un",
+        "start": 1.914,
+        "end": 2.045
+      },
+      {
+        "text": "doigt",
+        "start": 2.045,
+        "end": 2.567
+      }
+    ]
+  }
+]

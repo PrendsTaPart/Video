@@ -1,0 +1,80 @@
+[
+  {
+    "start": 1.0,
+    "end": 1.569,
+    "text": "Il n'était",
+    "words": [
+      {
+        "text": "Il",
+        "start": 1.0,
+        "end": 1.126
+      },
+      {
+        "text": "n'était",
+        "start": 1.126,
+        "end": 1.569
+      }
+    ]
+  },
+  {
+    "start": 1.569,
+    "end": 2.642,
+    "text": "plus jamais seul",
+    "words": [
+      {
+        "text": "plus",
+        "start": 1.569,
+        "end": 1.821
+      },
+      {
+        "text": "jamais",
+        "start": 1.821,
+        "end": 2.2
+      },
+      {
+        "text": "seul",
+        "start": 2.2,
+        "end": 2.642
+      }
+    ]
+  },
+  {
+    "start": 2.642,
+    "end": 3.211,
+    "text": "Il n'était",
+    "words": [
+      {
+        "text": "Il",
+        "start": 2.642,
+        "end": 2.769
+      },
+      {
+        "text": "n'était",
+        "start": 2.769,
+        "end": 3.211
+      }
+    ]
+  },
+  {
+    "start": 3.211,
+    "end": 4.474,
+    "text": "plus jamais tranquille",
+    "words": [
+      {
+        "text": "plus",
+        "start": 3.211,
+        "end": 3.464
+      },
+      {
+        "text": "jamais",
+        "start": 3.464,
+        "end": 3.843
+      },
+      {
+        "text": "tranquille",
+        "start": 3.843,
+        "end": 4.474
+      }
+    ]
+  }
+]
