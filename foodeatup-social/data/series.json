@@ -63913,8 +63913,8 @@
                 "prompt": "Seedance 2.5. Vertical 9:16, 10 secondes, 1080p, 24 im/s. PAS de texte incrusté, PAS de sous-titres, PAS de filigrane, PAS de logo, AUCUNE légende gravée dans l'image. Photoréaliste, caméra fixe ou très lent travelling.\n\nIDENTITÉ VISUELLE — RapidoCMS. Bleu #03A9F5 présent dans le décor — un écran éteint qui reflète, une lumière, un objet — sans jamais former de logo. Tons clairs, gris #383838.\n\n@Image 1 ne définit que le visage du chef — barbe, toque blanche, veste blanche, tablier blanc FoodEatUp. Ne pas modifier ses traits ni sa carrure. Il reste flou, en retrait : le sujet net du plan est l'objet, pas lui.\n\nUn objet réel du restaurant au premier plan, net ; le chef en retrait, flou, qui regarde. On filme ce que la phrase déclenche, jamais le schéma qui l'explique. Ce qui se joue : Le canal direct. Des clients qui appartiennent au restaurant, et non à une plateforme qui prélève une commission par couvert.\n\n0-5s: L'objet est net au premier plan, immobile ; le chef, flou derrière, le regarde. Très lent travelling avant. À cet instant, le chef sera posé au montage — ne produire aucun son ici : {Vos clients, ou les clients de la plateforme ?} End state at 5s: l'objet occupe le centre du cadre, encore dans son état de départ.\n5-8s: À 5 secondes exactement, l'objet change d'état — il s'allume, il bouge, il s'ouvre. Rien d'autre ne change. End state at 8s: le nouvel état de l'objet est pleinement lisible, le chef n'a pas bougé.\n8-10s: Le plan s'immobilise sur l'objet. La caméra ne bouge plus. À cet instant, le chef sera posé au montage — ne produire aucun son ici : {Le restaurant dépend des plateformes et leur cède une commission sur des clients qu'il ne connaîtra jamais.} End state at 10s: plan figé sur l'objet, caméra immobile, aucune entrée dans le cadre.\n\nAUDIO — ambiance seule.\nLa piste ne porte que le son réel du lieu : ambiance réelle, un seul son d'interface discret à 5 secondes.\nAUCUNE voix, AUCUN dialogue audible, AUCUN narrateur, AUCUNE musique.\nLes répliques ci-dessus sont jouées à l'image — lèvres, souffle, regard — et ne produisent aucun son. Les voix sont enregistrées séparément et posées au montage.",
                 "duree": "10 s",
                 "format": "vertical 9:16",
-                "videoSourceUrl": null,
-                "source": null
+                "videoSourceUrl": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/Higgsfield-source-EP413",
+                "source": "rapidocms"
               },
               "scriptHeygen": "Le canal direct. Le restaurant dépend des plateformes et leur cède une commission sur des clients qu'il ne connaîtra jamais.",
               "boucle": "E-commerce",
@@ -64075,7 +64075,7 @@
                 "format": "9:16 · 1080 × 1920 · 10 s",
                 "hook": "E-commerce — l'exposition",
                 "punchline": "Le restaurant dépend des plateformes et leur cède une commission sur des clients qu'il ne connaîtra jamais",
-                "url": null
+                "url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/story-EP413"
               }
             },
             {
