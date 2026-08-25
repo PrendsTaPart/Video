@@ -20,10 +20,14 @@ ENTRÉES
                  }
                (tous ces champs, sauf image_vignette_local, viennent tels quels de
                obtenir_episode — jamais reconstruits ou devinés)
-  --fonts-dir  dossier contenant les .ttf/.otf Alte Haas Grotesk (par défaut
-               assets/fonts/ à la racine du dépôt). Si les fichiers attendus
-               manquent, le script s'arrête AVANT de traiter le moindre épisode :
-               il ne compose jamais avec une police de repli (Sora/Inter/système).
+  --fonts-dir  dossier contenant les .ttf/.otf/.woff2 de la police (par défaut
+               assets/fonts/ à la racine du dépôt). La famille n'est JAMAIS codée
+               en dur : le script lit charte.typographie.principale, puis essaie
+               charte.typographie.replis dans l'ordre si la principale n'est pas
+               vendorisée localement. Si aucune des familles listées par la
+               charte n'a ses fichiers dans fonts_dir, le script s'arrête AVANT
+               de traiter le moindre épisode — il n'invente jamais une police
+               système ou une famille absente de la charte.
   --logo       pictogramme Plani't blanc (PNG RGBA). Par défaut le mark blanc déjà
                versionné dans ce dépôt pour Le Quai.
   --out-dir    dossier de sortie des PNG
@@ -87,13 +91,31 @@ TEXT_SAFE_BELOW_Y = 2300  # aucun pixel de texte sous cette ligne
 TOP_THIRD_MIN_LUMINOSITY = 25.0  # % — contrôle avant dépôt
 MAX_PNG_BYTES = 4 * 1024 * 1024
 
-FONT_REGULAR_DEFAULT_NAMES = ["AlteHaasGrotesk-Regular.ttf", "AlteHaasGrotesk-Regular.otf"]
-FONT_BLACK_DEFAULT_NAMES = [
-    "AlteHaasGrotesk-ExtraBold.ttf",
-    "AlteHaasGrotesk-Black.ttf",
-    "AlteHaasGrotesk-800.ttf",
-    "AlteHaasGrotesk-ExtraBold.otf",
-]
+FONT_WEIGHT_WORDS = {
+    "thin": 100,
+    "extralight": 200,
+    "ultralight": 200,
+    "light": 300,
+    "regular": 400,
+    "normal": 400,
+    "book": 400,
+    "medium": 500,
+    "semibold": 600,
+    "demibold": 600,
+    "bold": 700,
+    "extrabold": 800,
+    "ultrabold": 800,
+    "heavy": 800,
+    "black": 900,
+}
+
+FONT_EXTENSIONS = (".woff2", ".ttf", ".otf")
+
+# Le bandeau utilise la graisse "texte" de la charte, le titre la plus forte
+# graisse "titres" disponible. C'est la charte qui dicte ces valeurs
+# (typographie.graisses), pas une constante de police en dur.
+BANDEAU_WEIGHT = 400
+TITLE_WEIGHT_PREFERENCE = (800, 700)  # ordre de préférence si plusieurs existent
 
 
 class MissingFontError(RuntimeError):
@@ -105,39 +127,94 @@ class VignetteError(RuntimeError):
 
 
 # ---------------------------------------------------------------------------
-# Polices — jamais de repli. On s'arrête si Alte Haas Grotesk est absente.
+# Polices — famille et graisses lues depuis la charte, jamais codées en dur.
+# La charte documente elle-même une politique de repli (typographie.replis) :
+# l'utiliser n'est pas « inventer » une police, c'est suivre la charte.
 # ---------------------------------------------------------------------------
 
-def _find_font(fonts_dir: Path, candidate_names: list[str]) -> Path | None:
-    for name in candidate_names:
-        p = fonts_dir / name
-        if p.is_file():
-            return p
+def _normalize(name: str) -> str:
+    return "".join(ch.lower() for ch in name if ch.isalnum())
+
+
+def discover_family_fonts(fonts_dir: Path, family: str) -> dict[int, Path]:
+    """Cherche dans fonts_dir tous les fichiers dont le nom correspond à
+    `family` (comparaison insensible à la casse/espaces/tirets), et associe
+    à chaque fichier trouvé la graisse numérique qu'on peut déduire de son
+    nom (suffixe numérique -400/-700/-800, ou mot-clé Regular/Bold/...).
+    Retourne {graisse: chemin}."""
+    if not fonts_dir.is_dir():
+        return {}
+    target = _normalize(family)
+    found: dict[int, Path] = {}
+    for p in sorted(fonts_dir.iterdir()):
+        if p.suffix.lower() not in FONT_EXTENSIONS:
+            continue
+        stem_norm = _normalize(p.stem)
+        if target not in stem_norm:
+            continue
+        weight = _guess_weight(p.stem)
+        if weight is not None:
+            found[weight] = p
+    return found
+
+
+def _guess_weight(stem: str) -> int | None:
+    # suffixe numérique, ex. "Sora-800" -> 800
+    tail = stem.rsplit("-", 1)[-1].rsplit("_", 1)[-1]
+    if tail.isdigit():
+        return int(tail)
+    # mot-clé de graisse, ex. "AlteHaasGrotesk-ExtraBold" -> 800
+    norm = _normalize(stem)
+    for word, weight in FONT_WEIGHT_WORDS.items():
+        if word in norm:
+            return weight
     return None
 
 
-def require_fonts(fonts_dir: Path) -> tuple[Path, Path]:
-    """Localise les deux graisses requises. Lève MissingFontError sinon.
+@dataclass
+class ResolvedTypography:
+    family: str          # famille effectivement utilisée
+    is_principale: bool  # False si on a dû descendre dans les replis
+    regular_path: Path
+    title_path: Path
+    title_weight: int
 
-    Ne cherche JAMAIS Sora/Inter/une police système : c'est le point explicite
-    de cette fonction. Si Alte Haas Grotesk n'est pas dans fonts_dir, on arrête
-    tout le run avant de composer quoi que ce soit.
-    """
-    regular = _find_font(fonts_dir, FONT_REGULAR_DEFAULT_NAMES)
-    black = _find_font(fonts_dir, FONT_BLACK_DEFAULT_NAMES)
-    missing = []
-    if regular is None:
-        missing.append(f"régulière (400) — un de : {', '.join(FONT_REGULAR_DEFAULT_NAMES)}")
-    if black is None:
-        missing.append(f"extra-bold (800) — un de : {', '.join(FONT_BLACK_DEFAULT_NAMES)}")
-    if missing:
-        raise MissingFontError(
-            "Alte Haas Grotesk introuvable dans "
-            f"{fonts_dir} :\n  - " + "\n  - ".join(missing) +
-            "\nAucune police de repli ne sera utilisée. Dépose les fichiers "
-            "manquants puis relance."
-        )
-    return regular, black
+
+def resolve_typography(fonts_dir: Path, charte: dict) -> ResolvedTypography:
+    """Essaie charte.typographie.principale, puis charte.typographie.replis
+    dans l'ordre. Ne considère AUCUNE autre famille. Lève MissingFontError si
+    aucune des familles listées par la charte n'a, dans fonts_dir, à la fois
+    une graisse 400 (texte, pour le bandeau) et une graisse 800 ou 700
+    (titres, pour le titre)."""
+    typo = charte.get("typographie", {})
+    principale = typo.get("principale")
+    replis = typo.get("replis", [])
+    if not principale:
+        raise MissingFontError("charte.typographie.principale est absente — impossible de choisir une police")
+
+    candidates = [principale] + list(replis)
+    tried_report = []
+    for i, family in enumerate(candidates):
+        weights = discover_family_fonts(fonts_dir, family)
+        title_weight = next((w for w in TITLE_WEIGHT_PREFERENCE if w in weights), None)
+        if BANDEAU_WEIGHT in weights and title_weight is not None:
+            return ResolvedTypography(
+                family=family,
+                is_principale=(i == 0),
+                regular_path=weights[BANDEAU_WEIGHT],
+                title_path=weights[title_weight],
+                title_weight=title_weight,
+            )
+        have = ", ".join(f"{w}:{p.name}" for w, p in sorted(weights.items())) or "aucun fichier"
+        tried_report.append(f"{family} (attendu 400 + [800|700]) — trouvé : {have}")
+
+    raise MissingFontError(
+        f"Aucune famille utilisable dans {fonts_dir}.\n"
+        "Familles essayées, dans l'ordre charte.typographie.principale puis .replis :\n  - "
+        + "\n  - ".join(tried_report)
+        + "\nCe script n'utilise jamais une famille absente de la charte. Dépose les "
+        "fichiers manquants pour l'une des familles ci-dessus puis relance."
+    )
 
 
 # ---------------------------------------------------------------------------
@@ -494,17 +571,27 @@ def main() -> int:
     parser.add_argument("--out-dir", required=True, type=Path)
     args = parser.parse_args()
 
+    charte = json.loads(args.charte.read_text())
+
     try:
-        font_regular_path, font_black_path = require_fonts(args.fonts_dir)
+        typography = resolve_typography(args.fonts_dir, charte)
     except MissingFontError as exc:
         print(f"ARRÊT — {exc}", file=sys.stderr)
         return 1
+
+    if not typography.is_principale:
+        print(
+            f"! police principale de la charte ({charte['typographie']['principale']}) "
+            f"absente de {args.fonts_dir} — repli sur « {typography.family} », "
+            "qui est un repli officiellement listé par la charte (typographie.replis), "
+            "pas une police inventée.",
+            file=sys.stderr,
+        )
 
     if not args.logo.is_file():
         print(f"ARRÊT — logo introuvable : {args.logo}", file=sys.stderr)
         return 1
 
-    charte = json.loads(args.charte.read_text())
     encre_hex = charte.get("couleurs", {}).get("encre", {}).get("hex")
     if not encre_hex:
         print("ARRÊT — couleur « encre » absente de la charte", file=sys.stderr)
@@ -526,8 +613,8 @@ def main() -> int:
                 episode,
                 encre_rgb,
                 Path(image_vignette_local),
-                font_regular_path,
-                font_black_path,
+                typography.regular_path,
+                typography.title_path,
                 args.logo,
             )
             qc = run_qc(composed.image, composed.text_bottom_y)
@@ -542,6 +629,7 @@ def main() -> int:
                         "dimensions": f"{qc.width}x{qc.height}",
                         "luminosite_tiers_sup_pct": qc.luminosity_top_third,
                         "poids_octets": size_bytes,
+                        "police": f"{typography.family} ({BANDEAU_WEIGHT}/{typography.title_weight})",
                         "fichier": str(out_path),
                     }
                 )
