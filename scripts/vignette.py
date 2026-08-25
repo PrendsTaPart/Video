@@ -36,10 +36,22 @@ SORTIE
   Un fichier <out-dir>/<id>.png par épisode, plus un rapport JSON sur stdout
   (dimensions, luminosité du tiers supérieur, poids, statut) pour chaque épisode.
 
+CORRECTION D'EXPOSITION (filet de sécurité, pas une exception codée en dur)
+  La frame extraite du plan sert TOUJOURS de source, inchangée sur disque. La
+  vignette est d'abord composée normalement. Si — et seulement si — le contrôle
+  qualité échoue UNIQUEMENT à cause de la luminosité du tiers supérieur (pas les
+  dimensions, pas la zone de texte), le script réessaie sur une copie en mémoire
+  de la frame source, éclaircie par paliers progressifs d'une courbe gamma
+  (EXPOSURE_GAMMA_STEPS), jusqu'à un plafond (EXPOSURE_GAMMA_MAX) qui préserve
+  l'esthétique sombre du Quai. Aucune lumière fictive, aucun remplacement de
+  frame, aucun assouplissement du seuil de 25 %. Si le plafond est atteint sans
+  succès, l'épisode ressort en "echec_qc" avec le détail — jamais forcé.
+
 DÉTERMINISME
-  Aucun aléatoire, aucun horodatage, aucune métadonnée PNG variable. À données et
-  polices identiques, le PNG produit est strictement identique d'une exécution à
-  l'autre (mêmes octets).
+  Aucun aléatoire, aucun horodatage, aucune métadonnée PNG variable. À données,
+  polices et paliers de correction identiques, le PNG produit est strictement
+  identique d'une exécution à l'autre (mêmes octets) — la correction d'exposition
+  est une simple table de conversion (LUT), donc déterministe elle aussi.
 """
 from __future__ import annotations
 
@@ -88,8 +100,21 @@ LOGO_SIZE = 128  # hauteur cible en px, largeur proportionnelle
 
 TEXT_SAFE_BELOW_Y = 2300  # aucun pixel de texte sous cette ligne
 
-TOP_THIRD_MIN_LUMINOSITY = 25.0  # % — contrôle avant dépôt
+TOP_THIRD_MIN_LUMINOSITY = 25.0  # % — contrôle avant dépôt, jamais assoupli
 MAX_PNG_BYTES = 4 * 1024 * 1024
+
+# ---------------------------------------------------------------------------
+# Correction d'exposition — filet de sécurité pour une frame source
+# naturellement trop sombre. Ne s'applique QUE si le contrôle qualité échoue
+# uniquement à cause de la luminosité (dimensions et zone de texte déjà bonnes)
+# — jamais en réponse à un autre défaut. Courbe gamma (>1 = éclaircit les tons
+# sombres/moyens, préserve mieux les hautes lumières qu'un simple gain
+# linéaire) appliquée à une COPIE en mémoire de la frame source ; le fichier
+# source sur disque n'est jamais modifié, et la scène n'est jamais remplacée.
+# Paliers progressifs, plafonnés, pour rester une correction « légère » et
+# garder l'esthétique sombre/cinématographique du Quai.
+EXPOSURE_GAMMA_STEPS = (1.15, 1.30, 1.45, 1.60)
+EXPOSURE_GAMMA_MAX = EXPOSURE_GAMMA_STEPS[-1]
 
 FONT_WEIGHT_WORDS = {
     "thin": 100,
@@ -256,6 +281,20 @@ def desaturate(im: Image.Image, amount: float) -> Image.Image:
     return Image.blend(im, gray, amount)
 
 
+def apply_exposure_correction(im: Image.Image, gamma: float) -> Image.Image:
+    """Corrige l'exposition d'une image RGB par une courbe gamma : éclaircit
+    les tons sombres et moyens sans écraser les hautes lumières (contrairement
+    à un simple gain linéaire, qui délave tout uniformément). gamma=1.0 ne
+    change rien — c'est le cas « pas de correction nécessaire ». Même courbe
+    appliquée aux trois canaux : aucune dominante colorée ajoutée, aucune
+    lumière fictive, la scène reste la scène."""
+    if gamma == 1.0:
+        return im
+    inv_gamma = 1.0 / gamma
+    lut = [round(255 * ((i / 255) ** inv_gamma)) for i in range(256)]
+    return im.point(lut * 3)  # même table pour R, G, B
+
+
 # ---------------------------------------------------------------------------
 # b. VOILE — dégradé vertical encre : transparent jusqu'à 45 % H, puis montée
 #    progressive (ease-in quadratique) jusqu'à 88 % d'opacité en bas.
@@ -403,14 +442,15 @@ class ComposeResult:
 def compose_vignette(
     episode: dict,
     encre_rgb: tuple[int, int, int],
-    source_image_path: Path,
+    source_image: Image.Image,
     font_regular_path: Path,
     font_black_path: Path,
     logo_path: Path,
 ) -> ComposeResult:
-    if not source_image_path.is_file():
-        raise VignetteError(f"image source introuvable : {source_image_path}")
-
+    """`source_image` est déjà chargée (et, le cas échéant, déjà corrigée en
+    exposition par apply_exposure_correction) par l'appelant — ce n'est plus
+    ce compositeur qui ouvre le fichier, pour permettre de recomposer sur une
+    copie corrigée sans jamais toucher au fichier source sur disque."""
     serie_couleur = episode.get("serie_couleur")
     if not serie_couleur:
         raise VignetteError("serie_couleur manquante (doit venir de obtenir_episode)")
@@ -424,8 +464,7 @@ def compose_vignette(
         raise VignetteError("champs manquants (titre / serie_nom / saison_numero / numero)")
 
     # a. FOND
-    with Image.open(source_image_path) as src:
-        bg = cover_crop_resize(src, CANVAS_W, CANVAS_H)
+    bg = cover_crop_resize(source_image, CANVAS_W, CANVAS_H)
     bg = desaturate(bg, DESATURATION)
 
     # b. VOILE
@@ -501,12 +540,23 @@ class QCReport:
     luminosity_top_third: float
     text_bottom_y: int
     issues: list[str]
+    dimensions_ok: bool
+    luminosity_ok: bool
+    text_safe_ok: bool
+
+    def fails_only_on_luminosity(self) -> bool:
+        """True si le SEUL défaut est la luminosité — c'est la seule situation
+        où une correction d'exposition automatique est pertinente. Un défaut
+        de dimensions ou de zone de texte n'est jamais « réparé » en éclaircissant
+        l'image : dans ce cas on s'arrête et on relance l'échec normalement."""
+        return (not self.luminosity_ok) and self.dimensions_ok and self.text_safe_ok
 
 
 def run_qc(image: Image.Image, text_bottom_y: int) -> QCReport:
     issues = []
     w, h = image.size
-    if (w, h) != (CANVAS_W, CANVAS_H):
+    dimensions_ok = (w, h) == (CANVAS_W, CANVAS_H)
+    if not dimensions_ok:
         issues.append(f"dimensions {w}x{h} ≠ {CANVAS_W}x{CANVAS_H}")
 
     top_third = image.crop((0, 0, w, h // 3)).convert("L")
@@ -515,12 +565,14 @@ def run_qc(image: Image.Image, text_bottom_y: int) -> QCReport:
     mean = sum(i * c for i, c in enumerate(hist)) / total if total else 0
     luminosity_pct = (mean / 255) * 100
 
-    if luminosity_pct <= TOP_THIRD_MIN_LUMINOSITY:
+    luminosity_ok = luminosity_pct > TOP_THIRD_MIN_LUMINOSITY
+    if not luminosity_ok:
         issues.append(
             f"luminosité tiers supérieur {luminosity_pct:.1f}% ≤ {TOP_THIRD_MIN_LUMINOSITY}%"
         )
 
-    if text_bottom_y >= TEXT_SAFE_BELOW_Y:
+    text_safe_ok = text_bottom_y < TEXT_SAFE_BELOW_Y
+    if not text_safe_ok:
         issues.append(f"texte descend à y={text_bottom_y} ≥ {TEXT_SAFE_BELOW_Y}")
 
     return QCReport(
@@ -530,6 +582,9 @@ def run_qc(image: Image.Image, text_bottom_y: int) -> QCReport:
         luminosity_top_third=round(luminosity_pct, 1),
         text_bottom_y=text_bottom_y,
         issues=issues,
+        dimensions_ok=dimensions_ok,
+        luminosity_ok=luminosity_ok,
+        text_safe_ok=text_safe_ok,
     )
 
 
@@ -608,40 +663,82 @@ def main() -> int:
         if not image_vignette_local:
             results.append({"id": ep_id, "statut": "echec", "raison": "image_vignette absente"})
             continue
+        source_path = Path(image_vignette_local)
+        if not source_path.is_file():
+            results.append({"id": ep_id, "statut": "echec", "raison": f"image source introuvable : {source_path}"})
+            continue
         try:
-            composed = compose_vignette(
-                episode,
-                encre_rgb,
-                Path(image_vignette_local),
-                typography.regular_path,
-                typography.title_path,
-                args.logo,
-            )
-            qc = run_qc(composed.image, composed.text_bottom_y)
+            # La frame extraite du plan sert de source telle quelle — le fichier
+            # sur disque n'est jamais réécrit, quoi qu'il arrive ci-dessous.
+            with Image.open(source_path) as _src:
+                original_source = _src.convert("RGB")
+
+            # Étape 1 : composition normale (gamma=1.0, aucune correction).
+            # Étapes suivantes, UNIQUEMENT si le seul défaut est la luminosité :
+            # paliers de correction d'exposition progressifs et plafonnés.
+            gamma_used = 1.0
+            composed = None
+            qc = None
+            for gamma in (1.0,) + EXPOSURE_GAMMA_STEPS:
+                gamma_used = gamma
+                corrected_source = apply_exposure_correction(original_source, gamma)
+                composed = compose_vignette(
+                    episode,
+                    encre_rgb,
+                    corrected_source,
+                    typography.regular_path,
+                    typography.title_path,
+                    args.logo,
+                )
+                qc = run_qc(composed.image, composed.text_bottom_y)
+                if qc.ok:
+                    break
+                if not qc.fails_only_on_luminosity():
+                    # Un défaut de dimensions ou de zone de texte n'a rien à
+                    # voir avec l'exposition — inutile (et malhonnête) de
+                    # continuer à éclaircir : on s'arrête là où on en est.
+                    break
+
             out_path = args.out_dir / f"{ep_id}.png"
             if qc.ok:
                 size_bytes = save_within_size_limit(composed.image, out_path)
-                results.append(
-                    {
-                        "id": ep_id,
-                        "titre": episode.get("titre"),
-                        "statut": "ok",
-                        "dimensions": f"{qc.width}x{qc.height}",
-                        "luminosite_tiers_sup_pct": qc.luminosity_top_third,
-                        "poids_octets": size_bytes,
-                        "police": f"{typography.family} ({BANDEAU_WEIGHT}/{typography.title_weight})",
-                        "fichier": str(out_path),
-                    }
-                )
+                entry = {
+                    "id": ep_id,
+                    "titre": episode.get("titre"),
+                    "statut": "ok",
+                    "dimensions": f"{qc.width}x{qc.height}",
+                    "luminosite_tiers_sup_pct": qc.luminosity_top_third,
+                    "poids_octets": size_bytes,
+                    "police": f"{typography.family} ({BANDEAU_WEIGHT}/{typography.title_weight})",
+                    "fichier": str(out_path),
+                }
+                if gamma_used != 1.0:
+                    entry["correction_exposition_gamma"] = gamma_used
+                    entry["note"] = (
+                        f"Frame source inchangée sur disque ({source_path}) ; correction "
+                        f"d'exposition gamma={gamma_used:.2f} appliquée uniquement à la "
+                        "copie utilisée pour composer cette vignette, la luminosité du "
+                        "tiers supérieur étant insuffisante sans correction."
+                    )
+                results.append(entry)
             else:
-                results.append(
-                    {
-                        "id": ep_id,
-                        "titre": episode.get("titre"),
-                        "statut": "echec_qc",
-                        "raisons": qc.issues,
-                    }
-                )
+                entry = {
+                    "id": ep_id,
+                    "titre": episode.get("titre"),
+                    "statut": "echec_qc",
+                    "raisons": qc.issues,
+                }
+                if not qc.luminosity_ok and qc.dimensions_ok and qc.text_safe_ok:
+                    entry["correction_exposition_gamma_max_tentee"] = round(gamma_used, 2)
+                    entry["note"] = (
+                        "Échec persistant après correction d'exposition progressive "
+                        f"jusqu'au plafond gamma={EXPOSURE_GAMMA_MAX:.2f} — la scène "
+                        "source est trop sombre pour passer le contrôle à ce plafond. "
+                        "Aucune lumière ajoutée, aucune image de remplacement, seuil de "
+                        "contrôle inchangé : à signaler pour décision (autre frame, "
+                        "exception assumée, ou autre)."
+                    )
+                results.append(entry)
         except VignetteError as exc:
             results.append({"id": ep_id, "statut": "echec", "raison": str(exc)})
 
