@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=720, height=1280" />
+    <script src="assets/vendor/gsap.min.js"></script>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      html,
+      body {
+        width: 720px;
+        height: 1280px;
+        overflow: hidden;
+        background: #000;
+      }
+      #root {
+        position: relative;
+        width: 720px;
+        height: 1280px;
+        overflow: hidden;
+      }
+      .scene {
+        position: absolute;
+        inset: 0;
+        width: 100%;
+        height: 100%;
+      }
+      video.plan {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    </style>
+  </head>
+  <body>
+    <!--
+      VERSION SOCIALE — la version film (0-10s, identique image pour
+      image à index-film.html) + cartouche de date + sous-titres, puis le
+      carton de fin (10-12s). Pas de hook d'ouverture : le film commence
+      froid, c'est volontaire. Durée totale exactement 12,0s.
+      Tout ce qui change d'un plan à l'autre vient de quai.config.json,
+      injecté ici par scripts/quai-monter.mjs — ne rien modifier à la main
+      dans ce fichier pour produire un nouveau plan.
+    -->
+    <div
+      id="root"
+      data-composition-id="main"
+      data-start="0"
+      data-duration="12"
+      data-fps="30"
+      data-width="720"
+      data-height="1280"
+    >
+      <!-- 0,0 -> 10,0s : la version film, à l'identique. data-duration
+           volontairement porté à 12 (pas 10) : le pipeline extrait le son
+           d'ambiance sur toute la fenêtre déclarée, y compris au-delà de
+           la fin réelle de la source (silence) — c'est ce qui permet au
+           fondu de sortie 10,0->12,0s (voir script plus bas) de porter
+           sur un vrai signal audio et pas juste sur du silence déjà
+           coupé. Visuellement le plan est de toute façon recouvert par le
+           carton de fin à partir de 10,0s. -->
+      <video
+        id="el-plan"
+        class="scene plan clip"
+        src="assets/video/plan.mp4"
+        data-has-audio="true"
+        data-volume="0.501187"
+        data-start="0"
+        data-duration="12"
+        data-track-index="0"
+      ></video>
+      <audio
+        id="el-voix"
+        src="assets/voice/vo.mp3"
+        data-start="1.0"
+        data-duration="2.586122"
+        data-track-index="20"
+        data-volume="1"
+      ></audio>
+
+      <!-- cartouche de date, 0,5 -> 3,0s -->
+      <div
+        id="el-cartouche-date"
+        class="scene"
+        data-composition-id="cartouche-date"
+        data-composition-src="compositions/cartouche-date.html"
+        data-start="0"
+        data-duration="10"
+        data-track-index="1"
+      ></div>
+
+      <!-- sous-titres, masqués à partir de 10,0s (composition bornée à
+           10s, jamais activée pendant le carton de fin) -->
+      <div
+        id="el-sous-titres"
+        class="scene"
+        data-composition-id="sous-titres"
+        data-composition-src="compositions/sous-titres.html"
+        data-start="0"
+        data-duration="10"
+        data-track-index="10"
+      ></div>
+
+      <!-- 10,0 -> 12,0s : carton de fin, 2 secondes -->
+      <div
+        id="el-carton-fin"
+        class="scene"
+        data-composition-id="carton-fin"
+        data-composition-src="compositions/carton-fin.html"
+        data-start="10"
+        data-duration="2"
+        data-track-index="3"
+      ></div>
+    </div>
+
+    <script>
+      window.__timelines = window.__timelines || {};
+      window.__timelines["main"] = gsap.timeline({ paused: true });
+      (function () {
+        var tl = window.__timelines["main"];
+
+        // ambiance du plan : continue jusqu'au bout puis s'éteint en
+        // fondu sur les 2 secondes du carton de fin (10,0 -> 12,0s)
+        var plan = document.getElementById("el-plan");
+        tl.to(plan, { volume: 0, duration: 2, ease: "none" }, 10.0);
+
+        tl.to({}, { duration: 12 }, 0); // full-span anchor — main.duration() == composition total
+      })();
+    </script>
+  </body>
+</html>

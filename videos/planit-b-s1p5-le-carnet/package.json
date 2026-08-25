@@ -1,0 +1,13 @@
+{
+  "name": "quai-gabarit",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "monter": "node scripts/quai-monter.mjs",
+    "render:film": "npx hyperframes render . -c index-film.html -o renders/film.mp4",
+    "render:social": "npx hyperframes render . -c index-social.html -o renders/social.mp4"
+  },
+  "dependencies": {
+    "gsap": "^3.15.0"
+  }
+}

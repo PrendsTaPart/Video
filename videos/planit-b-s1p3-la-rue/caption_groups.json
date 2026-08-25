@@ -1,0 +1,31 @@
+[
+  {
+    "start": 1.0,
+    "end": 1.962,
+    "text": "Personne ne savait",
+    "words": [
+      { "text": "Personne", "start": 1.0, "end": 1.481 },
+      { "text": "ne", "start": 1.481, "end": 1.601 },
+      { "text": "savait", "start": 1.601, "end": 1.962 }
+    ]
+  },
+  {
+    "start": 1.962,
+    "end": 2.624,
+    "text": "encore à quoi",
+    "words": [
+      { "text": "encore", "start": 1.962, "end": 2.323 },
+      { "text": "à", "start": 2.323, "end": 2.383 },
+      { "text": "quoi", "start": 2.383, "end": 2.624 }
+    ]
+  },
+  {
+    "start": 2.624,
+    "end": 3.586,
+    "text": "elle servirait",
+    "words": [
+      { "text": "elle", "start": 2.624, "end": 2.864 },
+      { "text": "servirait", "start": 2.864, "end": 3.586 }
+    ]
+  }
+]

@@ -1,0 +1,21 @@
+[
+  {
+    "start": 1.0,
+    "end": 1.891,
+    "text": "Elle avançait",
+    "words": [
+      { "text": "Elle", "start": 1.0, "end": 1.255 },
+      { "text": "avançait", "start": 1.255, "end": 1.891 }
+    ]
+  },
+  {
+    "start": 1.891,
+    "end": 3.038,
+    "text": "tant qu'il tenait",
+    "words": [
+      { "text": "tant", "start": 1.891, "end": 2.146 },
+      { "text": "qu'il", "start": 2.146, "end": 2.464 },
+      { "text": "tenait", "start": 2.464, "end": 3.038 }
+    ]
+  }
+]
