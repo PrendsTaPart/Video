@@ -16,6 +16,7 @@ import { TitreSeq } from './sequences/TitreSeq.tsx';
 export const Video: React.FC<PropsVideo & { vertical?: boolean }> = ({
   script,
   alignement,
+  demoSegments,
   demoSrc,
   vignetteSrc,
   audioSrc,
@@ -49,6 +50,7 @@ export const Video: React.FC<PropsVideo & { vertical?: boolean }> = ({
           script={script}
           alignement={alignement}
           minutage={minutage}
+          demoSegments={demoSegments}
           demoSrc={demoSrc}
           vertical={vertical}
         />

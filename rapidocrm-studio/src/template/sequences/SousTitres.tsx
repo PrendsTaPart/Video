@@ -8,6 +8,22 @@ import { FPS } from '../minutage.ts';
  * Sous-titres brûlés, générés depuis l'alignement mot à mot : deux lignes max,
  * Arial Bold blanc, contour #383838, le mot en cours surligné en vert.
  */
+/** Contour net sur huit directions, tenable sur fond clair comme sur fond vert. */
+const contour = (epaisseur: number, couleur: string): string => {
+  const e = epaisseur.toFixed(2);
+  const d = (epaisseur * 0.71).toFixed(2);
+  return [
+    `${e}px 0 ${couleur}`,
+    `-${e}px 0 ${couleur}`,
+    `0 ${e}px ${couleur}`,
+    `0 -${e}px ${couleur}`,
+    `${d}px ${d}px ${couleur}`,
+    `-${d}px ${d}px ${couleur}`,
+    `${d}px -${d}px ${couleur}`,
+    `-${d}px -${d}px ${couleur}`,
+  ].join(', ');
+};
+
 export const SousTitres: React.FC<{
   alignement: Alignement | null;
   /** Décalage entre la frame de la composition et le temps de la piste voix. */
@@ -25,16 +41,17 @@ export const SousTitres: React.FC<{
   const courant = bloc.mots.findIndex((m) => relatif >= m.debut && relatif <= m.fin);
   const index = courant === -1 ? 0 : courant;
 
-  // Fenêtre de 9 mots autour du mot en cours : deux lignes au plus.
-  const debut = Math.max(0, index - 4);
-  const fenetre = bloc.mots.slice(debut, debut + 9);
+  // Fenêtre de 7 mots autour du mot en cours : deux lignes au plus.
+  const debut = Math.max(0, index - 3);
+  const fenetre = bloc.mots.slice(debut, debut + 7);
 
   const taille = height * 0.036;
   return (
     <div
       style={{
         position: 'absolute',
-        bottom: height * 0.08,
+        // Au-dessus de la barre de chapitres, qui occupe le bas du cadre.
+        bottom: height * 0.115,
         left: width * 0.08,
         width: width * 0.84,
         display: 'flex',
@@ -53,9 +70,14 @@ export const SousTitres: React.FC<{
               fontWeight: 700,
               fontSize: taille,
               lineHeight: 1.25,
-              color: actif ? BRAND.colors.vert : BRAND.colors.blanc,
-              WebkitTextStroke: `${taille * 0.06}px ${BRAND.colors.grisPrimaire}`,
-              paintOrder: 'stroke fill',
+              color: BRAND.colors.blanc,
+              // Le mot en cours est souligné de vert plutôt que coloré : du
+              // vert sur un contour sombre se lit mal en petit.
+              boxShadow: actif ? `inset 0 -0.14em 0 ${BRAND.colors.vert}` : undefined,
+              // Contour par ombre portée plutôt que WebkitTextStroke : le
+              // stroke est peint par-dessus le remplissage et grignote les
+              // lettres, illisible sur un écran clair.
+              textShadow: contour(taille * 0.055, BRAND.colors.grisPrimaire),
             }}
           >
             {mot.mot}

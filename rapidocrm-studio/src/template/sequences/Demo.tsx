@@ -20,6 +20,9 @@ interface Props {
   script: Script;
   alignement: Alignement | null;
   minutage: Minutage;
+  /** Un fichier par étape : chaque plan démarre à zéro dans sa Sequence. */
+  demoSegments: string[];
+  /** Plan unique de repli quand il n'y a pas d'enregistrement découpé. */
   demoSrc: string | null;
   vertical: boolean;
 }
@@ -29,7 +32,14 @@ interface Props {
  * caméra zoome sur la zone de chaque étape, une annotation pointe le clic,
  * une barre de chapitres suit la progression.
  */
-export const Demo: React.FC<Props> = ({ script, alignement, minutage, demoSrc, vertical }) => {
+export const Demo: React.FC<Props> = ({
+  script,
+  alignement,
+  minutage,
+  demoSegments,
+  demoSrc,
+  vertical,
+}) => {
   const { height, width } = useVideoConfig();
   const frame = useCurrentFrame();
 
@@ -67,7 +77,11 @@ export const Demo: React.FC<Props> = ({ script, alignement, minutage, demoSrc, v
                 durationInFrames={bloc.duree}
                 layout="none"
               >
-                <PlanEtape etape={e} demoSrc={demoSrc} vertical={vertical} />
+                <PlanEtape
+                  etape={e}
+                  demoSrc={demoSegments[i] ?? demoSrc}
+                  vertical={vertical}
+                />
               </Sequence>
             );
           })}
@@ -113,7 +127,9 @@ const PlanEtape: React.FC<{
     [0, 0.35],
     { extrapolateLeft: 'clamp', extrapolateRight: 'clamp', easing: Easing.out(Easing.cubic) },
   );
-  const echelle = vertical ? Math.max(zoomEntree, 1.35) : zoomEntree - zoomSortie;
+  // En vertical, le fenêtrage ffmpeg a déjà rapproché l'image : un zoom
+  // supplémentaire rendrait le formulaire illisible.
+  const echelle = vertical ? 1 : zoomEntree - zoomSortie;
 
   const z = etape.zone_focus;
   const centre = { x: z.x + z.w / 2, y: z.y + z.h / 2 };
@@ -134,25 +150,37 @@ const PlanEtape: React.FC<{
             // le cadre, le zoom et les annotations sans enregistrement source.
             <Img src={staticFile(demoSrc)} style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
           ) : (
-            <OffthreadVideo src={staticFile(demoSrc)} muted />
+            <OffthreadVideo
+              src={staticFile(demoSrc)}
+              muted
+              // Sans dimensions explicites, la vidéo garde sa hauteur propre et
+              // laisse un vide sous le cadre.
+              style={{ width: '100%', height: '100%', objectFit: 'cover' }}
+            />
           )
         ) : (
           <AbsoluteFill style={{ backgroundColor: BRAND.colors.blanc }} />
         )}
+        {/* L'annotation vit dans la couche zoomée : elle désigne le champ, pas
+            un point fixe de la frame. La taille est compensée à l'inverse du
+            zoom pour rester lisible. */}
+        <Annotation etape={etape} contreEchelle={1 / echelle} />
       </AbsoluteFill>
-      <Annotation etape={etape} />
     </>
   );
 };
 
 /** Cercle vert pulsant au point de clic + étiquette flottante avec flèche. */
-const Annotation: React.FC<{ etape: EtapeScript }> = ({ etape }) => {
+const Annotation: React.FC<{ etape: EtapeScript; contreEchelle: number }> = ({
+  etape,
+  contreEchelle,
+}) => {
   const frame = useCurrentFrame();
   const { height, width } = useVideoConfig();
   if (!etape.annotation) return null;
 
   const point = etape.point ?? centreZone(etape.zone_focus);
-  const pulsation = 1 + 0.18 * Math.sin((frame / 12) * Math.PI);
+  const pulsation = (1 + 0.18 * Math.sin((frame / 12) * Math.PI)) * contreEchelle;
   const apparition = interpolate(frame, [4, 16], [0, 1], {
     extrapolateLeft: 'clamp',
     extrapolateRight: 'clamp',
@@ -183,7 +211,9 @@ const Annotation: React.FC<{ etape: EtapeScript }> = ({ etape }) => {
           top: `${Math.max(point.y * 100 - 12, 4)}%`,
           background: BRAND.colors.blanc,
           borderRadius: BRAND.radius / 2,
-          padding: `${height * 0.012}px ${height * 0.02}px`,
+          padding: `${height * 0.012 * contreEchelle}px ${height * 0.02 * contreEchelle}px`,
+          transform: `scale(${contreEchelle})`,
+          transformOrigin: 'bottom left',
           boxShadow: `0 ${height * 0.008}px ${height * 0.028}px rgba(56,56,56,0.22)`,
           opacity: apparition,
           maxWidth: width * 0.4,

@@ -1,0 +1,90 @@
+{
+  "duree": 62.233333333333334,
+  "fichiers": [
+    {
+      "chemin": "/home/user/Video/rapidocrm-studio/content/Accès et gestion/V01-creer-un-compte/out/master-16x9.mp4",
+      "octets": 7262051
+    },
+    {
+      "chemin": "/home/user/Video/rapidocrm-studio/content/Accès et gestion/V01-creer-un-compte/out/master-9x16.mp4",
+      "octets": 6312609
+    }
+  ],
+  "sequences": [
+    {
+      "nom": "ouverture",
+      "debut": 0,
+      "fin": 1.4
+    },
+    {
+      "nom": "hook",
+      "debut": 1.4,
+      "fin": 8.233333333333333
+    },
+    {
+      "nom": "titre",
+      "debut": 8.233333333333333,
+      "fin": 14.8
+    },
+    {
+      "nom": "demo",
+      "debut": 14.8,
+      "fin": 41.63333333333333
+    },
+    {
+      "nom": "claude",
+      "debut": 41.63333333333333,
+      "fin": 57.36666666666667
+    },
+    {
+      "nom": "punchline",
+      "debut": 57.36666666666667,
+      "fin": 62.233333333333334
+    }
+  ],
+  "chapitres_youtube": [
+    {
+      "timecode": "00:00",
+      "titre": "Vous avez souscrit, et vous ne savez pas par où commencer ?"
+    },
+    {
+      "timecode": "00:08",
+      "titre": "Créer son compte RapidoCRM"
+    },
+    {
+      "timecode": "00:14",
+      "titre": "Ouvrir le formulaire de création"
+    },
+    {
+      "timecode": "00:17",
+      "titre": "Renseigner l'identité du gérant"
+    },
+    {
+      "timecode": "00:25",
+      "titre": "Saisir l'adresse e-mail"
+    },
+    {
+      "timecode": "00:28",
+      "titre": "Choisir un mot de passe et le confirmer"
+    },
+    {
+      "timecode": "00:34",
+      "titre": "Passer à l'étape entreprise"
+    },
+    {
+      "timecode": "00:38",
+      "titre": "Renseigner l'entreprise"
+    },
+    {
+      "timecode": "00:41",
+      "titre": "Faites-le avec Claude"
+    },
+    {
+      "timecode": "00:57",
+      "titre": "À retenir"
+    }
+  ],
+  "avertissements": [
+    "Durée finale 62s, hors de la fenêtre 80–170s."
+  ]
+}

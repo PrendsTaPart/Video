@@ -11,7 +11,7 @@ import {
 } from '../schema/index.ts';
 import { assurerDossier, ecrireJson, lireJson } from '../util/chemins.ts';
 import { dureeAudio, lancer } from '../util/ffmpeg.ts';
-import { discret, etape, info } from '../util/journal.ts';
+import { avertir, discret, etape, info } from '../util/journal.ts';
 import { pourLaVoix } from './prononciation.ts';
 
 const REGLAGES = { stability: 0.45, similarity_boost: 0.8, style: 0.35 } as const;
@@ -71,8 +71,19 @@ export const genererVoix = async (
 
     // Cache : les crédits ElevenLabs sont comptés.
     const inchange = manifest[bloc.id] === empreinte && existsSync(fichier);
+    // Piste déposée à la main ou générée hors pipeline : on la prend telle
+    // quelle plutôt que d'échouer, et on l'inscrit au manifeste.
+    const fournie = !inchange && existsSync(fichier) && !cle;
+
     if (inchange && !options.force) {
       discret(`   ${bloc.id} — inchangé, régénération évitée`);
+    } else if (fournie && !options.force) {
+      avertir(
+        `${bloc.id} — piste déjà présente et pas de clé ElevenLabs : le fichier ` +
+          'existant est utilisé tel quel.',
+      );
+      manifest[bloc.id] = empreinte;
+      ecrireJson(cheminManifest, manifest);
     } else {
       if (!cle || !voix) {
         throw new Error(

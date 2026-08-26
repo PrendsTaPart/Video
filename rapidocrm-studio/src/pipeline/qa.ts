@@ -2,15 +2,19 @@ import { existsSync, readFileSync, readdirSync } from 'node:fs';
 import { join } from 'node:path';
 import sharp from 'sharp';
 import {
+  AlignementSchema,
   AnalyseSchema,
   FicheSchema,
   QaSchema,
   RenduSchema,
   ScriptSchema,
+  type Alignement,
   type Qa,
+  type Script,
   type Zone,
 } from '../schema/index.ts';
 import { PALETTE, estCouleurDeCharte } from '../brand/tokens.ts';
+import { FPS, calculerMinutage } from '../template/minutage.ts';
 import { assurerDossier, ecrireJson, lireJson } from '../util/chemins.ts';
 import { lancer } from '../util/ffmpeg.ts';
 import { avertir, erreur, info } from '../util/journal.ts';
@@ -86,7 +90,10 @@ export const controlerQualite = async (dossier: string): Promise<Qa> => {
   controles.push(...audio);
 
   /* 4. Confidentialité */
-  const confidentialite = await controlerFloutage(dossier, analyse, master);
+  const alignement = existsSync(join(dossier, 'voix', 'alignement.json'))
+    ? AlignementSchema.parse(lireJson(join(dossier, 'voix', 'alignement.json')))
+    : null;
+  const confidentialite = await controlerFloutage(dossier, analyse, script, alignement, master);
   controles.push(...confidentialite);
 
   /* 5. Exactitude */
@@ -222,9 +229,33 @@ const controlerAudio = async (dossier: string): Promise<Controle[]> => {
 };
 
 /** Extrait les frames des zones sensibles et vérifie qu'elles sont floues. */
+/**
+ * Les zones sensibles sont horodatées sur l'ENREGISTREMENT SOURCE. Le master,
+ * lui, a un générique, une intro, et des étapes ralenties ou accélérées. Il faut
+ * donc convertir : sans cette conversion, on contrôle une frame du hook et on
+ * conclut à tort que le floutage a sauté.
+ */
+const tempsMaster = (
+  tSource: number,
+  script: Script,
+  minutage: ReturnType<typeof calculerMinutage>,
+): number | null => {
+  const index = script.demo.etapes.findIndex(
+    (e) => tSource >= e.debut_source && tSource <= e.fin_source,
+  );
+  if (index === -1) return null;
+  const etape = script.demo.etapes[index]!;
+  const bloc = minutage.demo.etapes[index]!;
+  const fenetre = Math.max(0.001, etape.fin_source - etape.debut_source);
+  const avancement = (tSource - etape.debut_source) / fenetre;
+  return (bloc.debut + avancement * bloc.duree) / FPS;
+};
+
 const controlerFloutage = async (
   dossier: string,
   analyse: { zones_sensibles: { t: number; fin?: number; zone?: Zone; raison: string }[]; duree: number },
+  script: Script,
+  alignement: Alignement | null,
   master: string,
 ): Promise<Controle[]> => {
   if (analyse.zones_sensibles.length === 0) {
@@ -244,12 +275,22 @@ const controlerFloutage = async (
   }
 
   const dossierControle = assurerDossier(join(dossier, 'tmp', 'qa-confidentialite'));
+  const minutage = calculerMinutage(script, alignement);
   const problemes: string[] = [];
 
   for (const [i, zone] of analyse.zones_sensibles.entries()) {
+    // On vise le milieu de la plage sensible, converti en temps du master.
+    const milieu = (zone.t + Math.min(zone.fin ?? analyse.duree, analyse.duree)) / 2;
+    const t = tempsMaster(milieu, script, minutage) ?? tempsMaster(zone.t, script, minutage);
+    if (t === null) {
+      problemes.push(
+        `zone ${i + 1} (${zone.raison}) — hors des étapes montées, donc absente du master`,
+      );
+      continue;
+    }
     const image = join(dossierControle, `zone-${i + 1}.png`);
     await lancer('ffmpeg', [
-      '-y', '-ss', zone.t.toFixed(2), '-i', master, '-frames:v', '1', image,
+      '-y', '-ss', t.toFixed(2), '-i', master, '-frames:v', '1', image,
     ]);
     const z = zone.zone;
     const meta = await sharp(image).metadata();

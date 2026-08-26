@@ -251,7 +251,9 @@ export type Qa = z.infer<typeof QaSchema>;
 export const PropsVideoSchema = z.object({
   script: ScriptSchema,
   alignement: AlignementSchema.nullable().default(null),
-  /** Chemin staticFile du screencast pré-traité (séquence 3). */
+  /** Un screencast pré-traité par étape de démonstration (séquence 3). */
+  demoSegments: z.array(z.string()).default([]),
+  /** Plan unique de repli : capture fixe ou écran de la banque. */
   demoSrc: z.string().nullable().default(null),
   /** Vignette du tutoriel (MCP RapidoCRM tuto), affichée en ouverture. */
   vignetteSrc: z.string().nullable().default(null),

@@ -85,5 +85,7 @@ export const developperSigles = (texte: string): string =>
 export const pourLaVoix = (texte: string, pauseFinale = true): string => {
   let sortie = developperSigles(montantsEnLettres(texte.trim()));
   sortie = sortie.replace(/\s{2,}/g, ' ');
+  // Un sigle développé en fin de phrase laisse un point en trop : « C.R.M.. »
+  sortie = sortie.replace(/\.\.(?=\s|$)/g, '.');
   return pauseFinale ? `${sortie} <break time="0.4s" />` : sortie;
 };

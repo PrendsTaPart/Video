@@ -1,0 +1,56 @@
+{
+  "fonctionnalite": "Créer son compte RapidoCRM",
+  "a_quoi_ca_sert": "C'est la porte d'entrée : sans compte, pas de fiches clients, pas de devis, pas de relances. En deux écrans, vous créez votre accès personnel puis vous rattachez votre entreprise, et tout ce que vous ferez ensuite sera relié à elle.",
+  "pour_qui": "Gérant, dirigeant, ou toute personne qui ouvre l'espace de son entreprise",
+  "prerequis": [
+    "Une adresse e-mail à laquelle vous avez accès",
+    "Le numéro de SIRET de votre entreprise, si vous voulez la renseigner tout de suite"
+  ],
+  "champs_cles": [
+    { "nom": "Nom du gérant", "obligatoire": true, "explication": "Le nom de la personne qui ouvre le compte, pas celui de l'entreprise." },
+    { "nom": "Prénom du gérant", "obligatoire": true, "explication": "Complète l'identité affichée dans le C.R.M." },
+    { "nom": "Mail du gérant", "obligatoire": true, "explication": "Sert d'identifiant de connexion : c'est cette adresse que vous saisirez à chaque fois." },
+    { "nom": "Mot de passe", "obligatoire": true, "explication": "À saisir deux fois. Le bouton suivant reste gris tant que les deux ne correspondent pas." },
+    { "nom": "Nom de l'entreprise", "obligatoire": true, "explication": "Deuxième écran : l'entreprise à laquelle votre compte sera rattaché." },
+    { "nom": "Email de l'entreprise", "obligatoire": true, "explication": "L'adresse de contact de la société, distincte de la vôtre." },
+    { "nom": "SIRET", "obligatoire": false, "explication": "Identifie l'établissement de façon unique." }
+  ],
+  "outils_mcp": [
+    { "nom": "list_entreprises", "role": "Liste les entreprises enregistrées dans le C.R.M., avec nom, e-mail, SIRET, dirigeant et domaine",
+      "parametres_obligatoires": [], "parametres_optionnels": ["limit"],
+      "exemple_appel": { "limit": 5 } }
+  ],
+  "bonnes_pratiques": [
+    "Utilisez une adresse à laquelle vous avez réellement accès : c'est votre identifiant de connexion.",
+    "Renseignez le SIRET dès la création : il évite les doublons d'entreprise plus tard."
+  ],
+  "erreurs_frequentes": [
+    "Saisir le nom de l'entreprise dans le champ « nom du gérant » : le premier écran attend une personne, pas une société.",
+    "Deux mots de passe différents : le bouton « suivant » reste gris et rien ne se passe."
+  ],
+  "cas_usage": [
+    { "titre": "Ouvrir l'espace de son restaurant", "contexte": "Vous venez de souscrire et personne n'a encore de compte.",
+      "resultat_attendu": "Votre accès personnel est créé et votre établissement est rattaché." }
+  ],
+  "astuces": [
+    { "titre": "Le bouton gris n'est pas en panne", "contenu": "Tant que les deux mots de passe diffèrent, le bouton « suivant » reste gris. Il passe au vert dès qu'ils correspondent.", "niveau": "debutant" },
+    { "titre": "Déjà un compte ?", "contenu": "Le lien « s'identifier » en bas de la fenêtre ramène à la page de connexion sans perdre votre place.", "niveau": "debutant" }
+  ],
+  "prompt_claude": {
+    "titre": "Vérifier les entreprises de son C.R.M.",
+    "texte": "Liste-moi les [nombre] dernières entreprises enregistrées dans mon CRM, avec leur SIRET et leur dirigeant.",
+    "variables": ["nombre"],
+    "outil_mcp": "list_entreprises"
+  },
+  "sources": {
+    "champs_cles": "frames 00:05 à 00:30 de l'enregistrement (libellés lus à l'écran)",
+    "a_quoi_ca_sert": "enchaînement observé : connexion → gérant → entreprise",
+    "erreurs_frequentes": "frame 00:23 : le bouton « suivant » passe du gris au vert quand les deux mots de passe correspondent",
+    "outils_mcp": "appel en lecture list_entreprises sur le MCP RapidoCRM (26 entreprises, champs nom/email/siret/dirigeant/domaine)",
+    "astuces": "frames 00:05 et 00:23 de l'enregistrement"
+  },
+  "a_verifier": [
+    "Aucun outil MCP ne couvre la création de compte elle-même : l'inscription se fait uniquement depuis le formulaire web. À confirmer avant d'écrire quoi que ce soit d'autre sur ce point.",
+    "Le champ SIRET n'est pas marqué obligatoire à l'écran, mais rien ne le confirme côté schéma : à vérifier avant publication."
+  ]
+}

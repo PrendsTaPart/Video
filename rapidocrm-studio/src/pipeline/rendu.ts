@@ -28,6 +28,14 @@ export interface OptionsRendu {
   force?: boolean;
 }
 
+/**
+ * Chromium utilisé par Remotion. Par défaut il télécharge le sien ; sur une
+ * machine sans accès à remotion.media, REMOTION_BROWSER_EXECUTABLE désigne un
+ * chrome-headless-shell déjà présent.
+ */
+export const navigateur = (): string | null =>
+  process.env.REMOTION_BROWSER_EXECUTABLE ?? null;
+
 const DUREE_MIN = 80;
 const DUREE_MAX = 170;
 
@@ -57,7 +65,8 @@ export const rendre = async (dossier: string, options: OptionsRendu = {}): Promi
   // 2. Pré-traitement ffmpeg de l'enregistrement source. Sans enregistrement,
   //    on retombe sur un écran de la banque : la vidéo se monte, mais la
   //    démonstration n'est plus une vraie capture — la QA doit le voir.
-  const screencasts: Record<string, string> = {};
+  const screencasts: Record<string, string[]> = {};
+  let replique: string | null = null;
   const aSource = existsSync(join(dossier, 'source.mp4'));
   if (!aSource) {
     const repli = ecranPour(script.meta.module, script.meta.titre, 'capture');
@@ -71,7 +80,8 @@ export const rendre = async (dossier: string, options: OptionsRendu = {}): Promi
       `Aucun source.mp4 : la démonstration utilise l'écran « ${repli.nom} » de la banque. ` +
         'À remplacer par la capture réelle avant publication.',
     );
-    for (const format of formats) screencasts[format] = cheminEcran(repli.nom);
+    replique = cheminEcran(repli.nom);
+    for (const format of formats) screencasts[format] = [];
   } else {
     for (const format of formats) {
       etape(`Pré-traitement de l'enregistrement (${format})`);
@@ -81,6 +91,7 @@ export const rendre = async (dossier: string, options: OptionsRendu = {}): Promi
         analyse,
         racinePublic,
         format,
+        alignement,
       );
     }
   }
@@ -114,12 +125,18 @@ export const rendre = async (dossier: string, options: OptionsRendu = {}): Promi
     const props = {
       script,
       alignement,
-      demoSrc: screencasts[format] ?? null,
+      demoSegments: screencasts[format] ?? [],
+      demoSrc: replique,
       vignetteSrc,
       audioSrc,
       vertical: format === '9x16',
     };
-    const composition = await selectComposition({ serveUrl, id, inputProps: props });
+    const composition = await selectComposition({
+      serveUrl,
+      id,
+      inputProps: props,
+      browserExecutable: navigateur(),
+    });
     const brut = join(dossier, 'tmp', `remotion-${format}.mp4`);
     assurerDossier(join(dossier, 'tmp'));
 
@@ -136,6 +153,7 @@ export const rendre = async (dossier: string, options: OptionsRendu = {}): Promi
       x264Preset: options.preview ? 'veryfast' : 'slow',
       outputLocation: brut,
       inputProps: props,
+      browserExecutable: navigateur(),
       onProgress: ({ progress }) =>
         process.stdout.write(`\r   ${(progress * 100).toFixed(0)} %   `),
     });

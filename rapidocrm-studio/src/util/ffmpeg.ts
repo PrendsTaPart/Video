@@ -1,14 +1,26 @@
 import { execFile } from 'node:child_process';
 import { promisify } from 'node:util';
+import ffmpegStatic from 'ffmpeg-static';
+import ffprobeStatic from 'ffprobe-static';
 
 const execFileAsync = promisify(execFile);
+
+/**
+ * ffmpeg du système s'il est installé, sinon le binaire statique embarqué par
+ * les paquets `ffmpeg-static` / `ffprobe-static`. Le pipeline tourne donc sans
+ * installation préalable, tout en profitant d'un ffmpeg local s'il existe.
+ */
+const binaires: Record<'ffmpeg' | 'ffprobe', string> = {
+  ffmpeg: process.env.FFMPEG_PATH ?? (ffmpegStatic as unknown as string) ?? 'ffmpeg',
+  ffprobe: process.env.FFPROBE_PATH ?? ffprobeStatic.path ?? 'ffprobe',
+};
 
 export const lancer = async (
   binaire: 'ffmpeg' | 'ffprobe',
   args: string[],
 ): Promise<string> => {
   try {
-    const { stdout, stderr } = await execFileAsync(binaire, args, {
+    const { stdout, stderr } = await execFileAsync(binaires[binaire], args, {
       maxBuffer: 64 * 1024 * 1024,
     });
     return stdout || stderr;

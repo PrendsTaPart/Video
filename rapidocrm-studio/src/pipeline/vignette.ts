@@ -9,7 +9,7 @@ import { assurerDossier, lireJson, racineProjet } from '../util/chemins.ts';
 import { lancer } from '../util/ffmpeg.ts';
 import { avertir, etape, info } from '../util/journal.ts';
 import { cheminEcran, ecranPour } from '../brand/ecrans.ts';
-import { copierAssetsPartages } from './rendu.ts';
+import { copierAssetsPartages, navigateur } from './rendu.ts';
 
 const QUALITE = 90;
 const POIDS_MAX = 2 * 1024 * 1024; // limite YouTube
@@ -51,7 +51,12 @@ export const genererVignettes = async (dossier: string): Promise<string[]> => {
   ] as const) {
     etape(`Vignette ${nom}`);
     const props = { script, captureSrc: capture, vertical };
-    const composition = await selectComposition({ serveUrl, id, inputProps: props });
+    const composition = await selectComposition({
+      serveUrl,
+      id,
+      inputProps: props,
+      browserExecutable: navigateur(),
+    });
     const png = join(dossier, 'tmp', nom.replace('.jpg', '.png'));
     assurerDossier(join(dossier, 'tmp'));
     await renderStill({
@@ -60,6 +65,7 @@ export const genererVignettes = async (dossier: string): Promise<string[]> => {
       output: png,
       inputProps: props,
       imageFormat: 'png',
+      browserExecutable: navigateur(),
     });
 
     const jpeg = join(sortie, nom);

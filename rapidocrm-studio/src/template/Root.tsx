@@ -9,6 +9,7 @@ import { Vignette } from './Vignette.tsx';
 const defauts: PropsVideo = {
   script: SCRIPT_FACTICE,
   alignement: null,
+  demoSegments: [],
   demoSrc: null,
   vignetteSrc: null,
   audioSrc: null,

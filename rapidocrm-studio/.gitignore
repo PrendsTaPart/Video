@@ -6,3 +6,5 @@ content/**/out/*.mp4
 content/**/tmp/
 assets/logos/*.png
 public/
+content/**/tmp/
+content/**/analyse-brute.json
