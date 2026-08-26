@@ -1,13 +1,14 @@
 import React from 'react';
 import {
   AbsoluteFill,
+  Img,
   interpolate,
   spring,
+  staticFile,
   useCurrentFrame,
   useVideoConfig,
 } from 'remotion';
 import { GeometricBg } from '../../brand/GeometricBg.tsx';
-import { Logomark } from '../../brand/Logo.tsx';
 import { Presentateur } from '../../brand/Presentateur.tsx';
 import { poseFin } from '../../brand/presentateur.ts';
 import { Corps, Etiquette, Titre } from '../../brand/Text.tsx';
@@ -16,11 +17,16 @@ import type { Script } from '../../schema/index.ts';
 
 const SLOGAN = 'Le tout en un pour propulser votre activité !';
 const URL_ACADEMIE = 'academie.rapidosoftware.com';
+/** Le logo officiel, tel qu'il est fourni. Jamais redessiné, jamais tourné. */
+const LOGO = 'logos/rapidocrm-complet.png';
 
 /**
- * SÉQUENCE 5 — PUNCHLINE ET LOGO. La punchline en grand sur l'aplat vert, puis
- * les trois oiseaux origami se posent (vert, bleu, violet, 6 frames d'écart) et
- * le mot « RapidoCRM » se révèle par un masque horizontal. Aucune rotation.
+ * SÉQUENCE 5 — PUNCHLINE ET LOGO.
+ *
+ * Deux temps. D'abord la punchline sur l'aplat vert, avec le présentateur : la
+ * pose est choisie d'après le contenu du tutoriel. Puis la carte de fin : le
+ * logo officiel se pose dans un halo qui s'ouvre, un trait vert se trace sous
+ * lui, le slogan et l'adresse suivent.
  */
 export const Punchline: React.FC<{ script: Script; vertical: boolean }> = ({
   script,
@@ -35,28 +41,7 @@ export const Punchline: React.FC<{ script: Script; vertical: boolean }> = ({
     extrapolateRight: 'clamp',
   });
 
-  const apparitionOiseau = (rang: number): number =>
-    spring({
-      frame: frame - bascule - rang * 6,
-      fps,
-      config: { damping: 200 },
-      durationInFrames: 16,
-    });
-
-  const oiseaux: [number, number, number] = [
-    apparitionOiseau(0),
-    apparitionOiseau(1),
-    apparitionOiseau(2),
-  ];
-  const arrivee: [number, number, number] = [
-    (1 - oiseaux[0]) * -14,
-    (1 - oiseaux[1]) * -14,
-    (1 - oiseaux[2]) * -14,
-  ];
-
-  // Image de fin : le présentateur, pose « résultat obtenu », entre avec la
-  // punchline et reste jusqu'au logo. Choisie par (module, numéro), stable.
-  const pose = poseFin(script.meta.module, script.meta.numero);
+  const pose = poseFin(script.meta.module, script.meta.numero, script.meta.titre);
   const arriveePresentateur = spring({
     frame: frame - 6,
     fps,
@@ -64,23 +49,38 @@ export const Punchline: React.FC<{ script: Script; vertical: boolean }> = ({
     durationInFrames: 18,
   });
 
-  const masque = interpolate(frame, [bascule + 20, bascule + 34], [0, 1], {
+  // La carte de fin : le logo se pose, le halo s'ouvre, le trait se trace.
+  const pose_logo = spring({
+    frame: frame - bascule,
+    fps,
+    config: { damping: 14, stiffness: 110 },
+    durationInFrames: 26,
+  });
+  const halo = interpolate(frame, [bascule, bascule + 26], [0, 1], {
     extrapolateLeft: 'clamp',
     extrapolateRight: 'clamp',
   });
-  const bas = spring({ frame: frame - bascule - 30, fps, config: { damping: 200 } });
+  const trait = spring({
+    frame: frame - bascule - 16,
+    fps,
+    config: { damping: 200 },
+    durationInFrames: 18,
+  });
+  const bas = spring({ frame: frame - bascule - 24, fps, config: { damping: 200 } });
 
   return (
     <AbsoluteFill>
       <GeometricBg variant="mixte" />
 
+      {/* Le présentateur reste d'un bout à l'autre : il porte la punchline, puis
+          accompagne la carte de fin. */}
       <AbsoluteFill
         style={{
           padding: height * (vertical ? 0.05 : 0.04),
-          paddingBottom: 0, // la photo source est coupée au buste : on cale le
-          alignItems: vertical ? 'center' : 'flex-end', // bord franc hors champ
+          paddingBottom: 0,
+          alignItems: vertical ? 'center' : 'flex-end',
           justifyContent: 'flex-end',
-          opacity: sortiePunch * arriveePresentateur,
+          opacity: arriveePresentateur,
         }}
       >
         <div
@@ -88,7 +88,7 @@ export const Punchline: React.FC<{ script: Script; vertical: boolean }> = ({
             transform: `translateX(${(1 - arriveePresentateur) * height * 0.06}px)`,
           }}
         >
-          <Presentateur pose={pose} taille={vertical ? 0.3 : 0.64} />
+          <Presentateur pose={pose} taille={vertical ? 0.3 : 0.62} />
         </div>
       </AbsoluteFill>
 
@@ -99,8 +99,6 @@ export const Punchline: React.FC<{ script: Script; vertical: boolean }> = ({
           opacity: sortiePunch,
         }}
       >
-        {/* Défonce sur aplat vert : la punchline reste blanche sur vert, jamais
-            à cheval sur le fond clair. */}
         <div
           style={{
             background: BRAND.colors.vert,
@@ -118,37 +116,52 @@ export const Punchline: React.FC<{ script: Script; vertical: boolean }> = ({
       <AbsoluteFill
         style={{
           justifyContent: 'center',
-          alignItems: 'center',
+          alignItems: vertical ? 'center' : 'flex-start',
+          paddingLeft: vertical ? 0 : height * 0.09,
           opacity: 1 - sortiePunch,
         }}
       >
-        {/* Le logo n'apparaît que sur un fond autorisé par la charte : on lui
-            réserve un aplat #F2F4F7, avec sa zone de protection. */}
         <div
           style={{
+            position: 'relative',
             background: BRAND.colors.fondClair,
             borderRadius: BRAND.radius,
-            padding: height * 0.05,
+            padding: height * 0.055,
             display: 'flex',
             flexDirection: 'column',
             alignItems: 'center',
-            gap: height * 0.022,
+            gap: height * 0.02,
             minWidth: vertical ? '78%' : '46%',
           }}
         >
-          <Logomark taille={height * 0.2} oiseaux={oiseaux} arrivee={arrivee} />
+          {/* Halo : une seule ouverture de lumière, pas de clignotement. */}
           <div
             style={{
-              overflow: 'hidden',
-              width: `${masque * 100}%`,
-              display: 'flex',
-              justifyContent: 'center',
+              position: 'absolute',
+              width: height * 0.5 * halo,
+              height: height * 0.5 * halo,
+              borderRadius: 999,
+              top: height * 0.02,
+              background: `radial-gradient(circle, rgba(76,175,80,${0.18 * (1 - halo)}) 0%, rgba(76,175,80,0) 70%)`,
             }}
-          >
-            <Titre fond={BRAND.colors.fondClair} taille={0.07} align="center">
-              RapidoCRM
-            </Titre>
-          </div>
+          />
+          <Img
+            src={staticFile(LOGO)}
+            style={{
+              height: height * 0.26,
+              width: 'auto', // ratio verrouillé : scale uniforme, aucune rotation
+              objectFit: 'contain',
+              transform: `scale(${0.86 + pose_logo * 0.14}) translateY(${(1 - pose_logo) * height * 0.02}px)`,
+            }}
+          />
+          <div
+            style={{
+              width: `${trait * 38}%`,
+              height: height * 0.005,
+              borderRadius: 999,
+              background: BRAND.colors.vert,
+            }}
+          />
           <div style={{ opacity: bas, textAlign: 'center' }}>
             <Corps fond={BRAND.colors.fondClair} taille={0.028} align="center">
               {SLOGAN}

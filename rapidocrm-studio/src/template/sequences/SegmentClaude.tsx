@@ -10,6 +10,7 @@ import {
   useVideoConfig,
 } from 'remotion';
 import { BRAND } from '../../brand/tokens.ts';
+import { CLAUDE, LOGO_CLAUDE } from '../../brand/claude.ts';
 import { Corps, Etiquette, SousTitre } from '../../brand/Text.tsx';
 import type { Script } from '../../schema/index.ts';
 
@@ -113,31 +114,44 @@ const CartePrompt: React.FC<{
     <div
       style={{
         flex: 1.3,
-        background: BRAND.colors.blanc,
-        borderRadius: BRAND.radius,
-        boxShadow: `0 ${height * 0.014}px ${height * 0.05}px rgba(56,56,56,0.16)`,
+        // La carte porte la charte Claude, pas celle de RapidoSoftware : elle
+        // représente Claude, comme une capture porterait l'interface qu'elle
+        // montre. Le reste de la frame reste à la charte RapidoSoftware.
+        background: CLAUDE.colors.clair,
+        border: `1px solid ${CLAUDE.colors.grisClair}`,
+        borderRadius: CLAUDE.radius,
+        boxShadow: `0 ${height * 0.014}px ${height * 0.05}px rgba(20,20,19,0.14)`,
         padding: height * 0.035,
         display: 'flex',
         flexDirection: 'column',
-        gap: height * 0.02,
+        gap: height * 0.022,
       }}
     >
-      <div style={{ display: 'flex', alignItems: 'center', gap: height * 0.016 }}>
+      <div style={{ display: 'flex', alignItems: 'center', gap: height * 0.018 }}>
         <Img
-          src={staticFile('ia/claude.png')}
-          style={{ height: height * 0.034, width: 'auto', objectFit: 'contain' }}
+          src={staticFile(LOGO_CLAUDE)}
+          style={{ height: height * 0.036, width: 'auto', objectFit: 'contain' }}
         />
-        <Etiquette fond={BRAND.colors.blanc} taille={0.017}>
+        <span
+          style={{
+            fontFamily: CLAUDE.policeTitre,
+            fontWeight: 600,
+            fontSize: height * 0.017,
+            letterSpacing: '0.06em',
+            textTransform: 'uppercase',
+            color: CLAUDE.colors.grisMoyen,
+          }}
+        >
           {`MCP ${outilMcp || 'RapidoCRM'}`}
-        </Etiquette>
+        </span>
       </div>
 
       <p
         style={{
-          fontFamily: BRAND.font,
+          fontFamily: CLAUDE.policeCorps,
           fontSize: height * 0.03,
-          lineHeight: 1.4,
-          color: BRAND.colors.grisPrimaire,
+          lineHeight: 1.45,
+          color: CLAUDE.colors.sombre,
           margin: 0,
         }}
       >
@@ -147,21 +161,28 @@ const CartePrompt: React.FC<{
       <div
         style={{
           alignSelf: 'flex-start',
-          background: BRAND.colors.vert,
+          background: CLAUDE.colors.orange,
           borderRadius: 999,
-          padding: `${height * 0.012}px ${height * 0.028}px`,
+          padding: `${height * 0.013}px ${height * 0.03}px`,
           transform: `scale(${1 - 0.06 * pression * (1 - pression) * 4})`,
         }}
       >
-        <Etiquette fond={BRAND.colors.vert} taille={0.018}>
+        <span
+          style={{
+            fontFamily: CLAUDE.policeTitre,
+            fontWeight: 600,
+            fontSize: height * 0.018,
+            color: CLAUDE.colors.clair,
+          }}
+        >
           {copie > 0.5 ? 'Copié !' : 'Copier'}
-        </Etiquette>
+        </span>
       </div>
     </div>
   );
 };
 
-/** Les placeholders entre crochets sont surlignés en vert, fond vert 10 %. */
+/** Les placeholders entre crochets sont surlignés à l'accent Claude. */
 const decouperPlaceholders = (texte: string, variables: string[]): React.ReactNode[] => {
   const morceaux = texte.split(/(\[[^\]]*\]?)/g);
   return morceaux.map((morceau, i) => {
@@ -172,10 +193,10 @@ const decouperPlaceholders = (texte: string, variables: string[]): React.ReactNo
       <span
         key={i}
         style={{
-          fontFamily: connue ? 'Courier New, monospace' : BRAND.font,
-          color: BRAND.colors.grisPrimaire,
-          background: 'rgba(76,175,80,0.10)',
-          boxShadow: `inset 0 -0.12em 0 rgba(76,175,80,0.45)`,
+          fontFamily: connue ? 'Courier New, monospace' : CLAUDE.policeCorps,
+          color: CLAUDE.colors.sombre,
+          background: 'rgba(217,119,87,0.12)',
+          boxShadow: 'inset 0 -0.12em 0 rgba(217,119,87,0.5)',
           borderRadius: 4,
         }}
       >

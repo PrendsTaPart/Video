@@ -12,6 +12,9 @@ import {
 } from 'remotion';
 import { BRAND } from '../../brand/tokens.ts';
 import { Etiquette } from '../../brand/Text.tsx';
+import { AvatarBulle } from '../../brand/Avatar.tsx';
+import { Mockup } from '../../brand/Mockup.tsx';
+import { NiveauVoix } from '../niveauVoix.tsx';
 import type { Alignement, EtapeScript, Script, Zone } from '../../schema/index.ts';
 import { SousTitres } from './SousTitres.tsx';
 import type { Minutage } from '../minutage.ts';
@@ -24,13 +27,22 @@ interface Props {
   demoSegments: string[];
   /** Plan unique de repli quand il n'y a pas d'enregistrement découpé. */
   demoSrc: string | null;
+  /** Piste voix : elle pilote l'animation de la bulle du présentateur. */
+  audioSrc: string | null;
+  /** Plan parlant de l'avatar, commun à toute la série. */
+  avatarSrc: string | null;
   vertical: boolean;
 }
 
 /**
- * SÉQUENCE 3 — DÉMO ÉCRAN. L'enregistrement joue dans un cadre arrondi, la
- * caméra zoome sur la zone de chaque étape, une annotation pointe le clic,
- * une barre de chapitres suit la progression.
+ * SÉQUENCE 3 — DÉMO ÉCRAN. Le logiciel joue dans un mockup de navigateur,
+ * commenté par la voix off, avec le présentateur en bulle.
+ *
+ * La répartition change selon le format :
+ * - 16:9 — le logiciel occupe le cadre, la bulle vient en bas à droite ;
+ * - 9:16 — la frame se partage en quatre parts : 1,5 pour l'avatar en haut,
+ *   2,5 pour le logiciel en bas. Sans cette séparation, un enregistrement large
+ *   se retrouve rogné et illisible.
  */
 export const Demo: React.FC<Props> = ({
   script,
@@ -38,9 +50,11 @@ export const Demo: React.FC<Props> = ({
   minutage,
   demoSegments,
   demoSrc,
+  audioSrc,
+  avatarSrc,
   vertical,
 }) => {
-  const { height, width } = useVideoConfig();
+  const { height } = useVideoConfig();
   const frame = useCurrentFrame();
 
   const etapeCourante = minutage.demo.etapes.findIndex(
@@ -50,44 +64,37 @@ export const Demo: React.FC<Props> = ({
   );
   const index = etapeCourante === -1 ? 0 : etapeCourante;
   const etape = script.demo.etapes[index];
+  const marge = height * 0.05;
 
-  const marge = height * 0.06;
+  const plans = (
+    <>
+      {minutage.demo.etapes.map((bloc, i) => {
+        const e = script.demo.etapes[i];
+        if (!e) return null;
+        return (
+          <Sequence
+            key={e.numero}
+            from={bloc.debut - minutage.demo.debut}
+            durationInFrames={bloc.duree}
+            layout="none"
+          >
+            <PlanEtape etape={e} demoSrc={demoSegments[i] ?? demoSrc} vertical={vertical} />
+          </Sequence>
+        );
+      })}
+    </>
+  );
 
-  return (
-    <AbsoluteFill style={{ backgroundColor: BRAND.colors.fondClair }}>
-      <AbsoluteFill style={{ padding: marge, justifyContent: 'center' }}>
-        <div
-          style={{
-            position: 'relative',
-            width: '100%',
-            aspectRatio: vertical ? '9 / 16' : '16 / 9',
-            borderRadius: BRAND.radius,
-            overflow: 'hidden',
-            boxShadow: `0 ${height * 0.02}px ${height * 0.06}px rgba(56,56,56,0.18)`,
-            backgroundColor: BRAND.colors.blanc,
-          }}
-        >
-          {minutage.demo.etapes.map((bloc, i) => {
-            const e = script.demo.etapes[i];
-            if (!e) return null;
-            return (
-              <Sequence
-                key={e.numero}
-                from={bloc.debut - minutage.demo.debut}
-                durationInFrames={bloc.duree}
-                layout="none"
-              >
-                <PlanEtape
-                  etape={e}
-                  demoSrc={demoSegments[i] ?? demoSrc}
-                  vertical={vertical}
-                />
-              </Sequence>
-            );
-          })}
-        </div>
-      </AbsoluteFill>
+  const bulle = (taille: number, retard: number) => (
+    <NiveauVoix audioSrc={audioSrc}>
+      {(niveau) => (
+        <AvatarBulle taille={taille} planSrc={avatarSrc} niveau={niveau} retard={retard} />
+      )}
+    </NiveauVoix>
+  );
 
+  const habillage = (
+    <>
       {etape && (
         <ChapitreBarre
           numero={index + 1}
@@ -95,18 +102,67 @@ export const Demo: React.FC<Props> = ({
           titre={etape.titre}
         />
       )}
-
       <SousTitres
         alignement={alignement}
         decalageFrames={minutage.demo.debut - minutage.hook.debut}
       />
+    </>
+  );
+
+  if (vertical) {
+    return (
+      <AbsoluteFill style={{ backgroundColor: BRAND.colors.fondClair }}>
+        <AbsoluteFill
+          style={{
+            padding: marge,
+            paddingBottom: height * 0.16, // place pour les sous-titres et la barre
+            display: 'flex',
+            flexDirection: 'column',
+            gap: marge,
+          }}
+        >
+          <div
+            style={{
+              flex: 1.5,
+              display: 'flex',
+              alignItems: 'center',
+              justifyContent: 'center',
+            }}
+          >
+            {bulle(0.15, 4)}
+          </div>
+          <Mockup style={{ flex: 2.5 }}>{plans}</Mockup>
+        </AbsoluteFill>
+        {habillage}
+      </AbsoluteFill>
+    );
+  }
+
+  return (
+    <AbsoluteFill style={{ backgroundColor: BRAND.colors.fondClair }}>
+      <AbsoluteFill style={{ padding: marge, paddingBottom: height * 0.11 }}>
+        <Mockup style={{ flex: 1 }}>{plans}</Mockup>
+      </AbsoluteFill>
+
+      <AbsoluteFill
+        style={{
+          padding: height * 0.05,
+          paddingBottom: height * 0.14,
+          alignItems: 'flex-end',
+          justifyContent: 'flex-end',
+        }}
+      >
+        {bulle(0.2, 4)}
+      </AbsoluteFill>
+
+      {habillage}
     </AbsoluteFill>
   );
 };
 
 /**
- * Un plan d'étape : zoom & pan doux vers la zone concernée (scale 1 → 1,35 sur
- * 20 frames), puis retour. Les coordonnées viennent de l'analyse.
+ * Un plan d'étape : zoom & pan doux vers la zone concernée. Les coordonnées
+ * viennent de l'analyse de l'enregistrement.
  */
 const PlanEtape: React.FC<{
   etape: EtapeScript;
@@ -127,8 +183,7 @@ const PlanEtape: React.FC<{
     [0, 0.35],
     { extrapolateLeft: 'clamp', extrapolateRight: 'clamp', easing: Easing.out(Easing.cubic) },
   );
-  // En vertical, le fenêtrage ffmpeg a déjà rapproché l'image : un zoom
-  // supplémentaire rendrait le formulaire illisible.
+  // En vertical, le fenêtrage ffmpeg a déjà rapproché l'image.
   const echelle = vertical ? 1 : zoomEntree - zoomSortie;
 
   const z = etape.zone_focus;
@@ -137,36 +192,32 @@ const PlanEtape: React.FC<{
   const decalageY = (0.5 - centre.y) * 100 * (echelle - 1);
 
   return (
-    <>
-      <AbsoluteFill
-        style={{
-          transform: `scale(${echelle}) translate(${decalageX}%, ${decalageY}%)`,
-          transformOrigin: 'center center',
-        }}
-      >
-        {demoSrc ? (
-          estImage(demoSrc) ? (
-            // La composition Preview passe une capture fixe : elle sert à juger
-            // le cadre, le zoom et les annotations sans enregistrement source.
-            <Img src={staticFile(demoSrc)} style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
-          ) : (
-            <OffthreadVideo
-              src={staticFile(demoSrc)}
-              muted
-              // Sans dimensions explicites, la vidéo garde sa hauteur propre et
-              // laisse un vide sous le cadre.
-              style={{ width: '100%', height: '100%', objectFit: 'cover' }}
-            />
-          )
+    <AbsoluteFill
+      style={{
+        transform: `scale(${echelle}) translate(${decalageX}%, ${decalageY}%)`,
+        transformOrigin: 'center center',
+      }}
+    >
+      {demoSrc ? (
+        estImage(demoSrc) ? (
+          <Img
+            src={staticFile(demoSrc)}
+            style={{ width: '100%', height: '100%', objectFit: 'cover' }}
+          />
         ) : (
-          <AbsoluteFill style={{ backgroundColor: BRAND.colors.blanc }} />
-        )}
-        {/* L'annotation vit dans la couche zoomée : elle désigne le champ, pas
-            un point fixe de la frame. La taille est compensée à l'inverse du
-            zoom pour rester lisible. */}
-        <Annotation etape={etape} contreEchelle={1 / echelle} />
-      </AbsoluteFill>
-    </>
+          <OffthreadVideo
+            src={staticFile(demoSrc)}
+            muted
+            style={{ width: '100%', height: '100%', objectFit: 'cover' }}
+          />
+        )
+      ) : (
+        <AbsoluteFill style={{ backgroundColor: BRAND.colors.blanc }} />
+      )}
+      {/* L'annotation vit dans la couche zoomée : elle désigne le champ, pas un
+          point fixe de la frame. */}
+      <Annotation etape={etape} contreEchelle={1 / echelle} />
+    </AbsoluteFill>
   );
 };
 
@@ -185,7 +236,7 @@ const Annotation: React.FC<{ etape: EtapeScript; contreEchelle: number }> = ({
     extrapolateLeft: 'clamp',
     extrapolateRight: 'clamp',
   });
-  const rayon = height * 0.03;
+  const rayon = height * 0.028;
 
   return (
     <>
@@ -207,8 +258,8 @@ const Annotation: React.FC<{ etape: EtapeScript; contreEchelle: number }> = ({
       <div
         style={{
           position: 'absolute',
-          left: `${Math.min(point.x * 100, 70)}%`,
-          top: `${Math.max(point.y * 100 - 12, 4)}%`,
+          left: `${Math.min(point.x * 100, 62)}%`,
+          top: `${Math.max(point.y * 100 - 14, 3)}%`,
           background: BRAND.colors.blanc,
           borderRadius: BRAND.radius / 2,
           padding: `${height * 0.012 * contreEchelle}px ${height * 0.02 * contreEchelle}px`,
@@ -222,18 +273,6 @@ const Annotation: React.FC<{ etape: EtapeScript; contreEchelle: number }> = ({
         <Etiquette fond={BRAND.colors.blanc} taille={0.02}>
           {etape.annotation}
         </Etiquette>
-        <div
-          style={{
-            position: 'absolute',
-            bottom: -height * 0.012,
-            left: height * 0.024,
-            width: 0,
-            height: 0,
-            borderLeft: `${height * 0.012}px solid transparent`,
-            borderRight: `${height * 0.012}px solid transparent`,
-            borderTop: `${height * 0.012}px solid ${BRAND.colors.blanc}`,
-          }}
-        />
       </div>
     </>
   );

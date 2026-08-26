@@ -52,8 +52,8 @@
     {
       "famille": "Confidentialité",
       "intitule": "1 zone(s) sensible(s) floutée(s)",
-      "statut": "ok",
-      "detail": ""
+      "statut": "echec",
+      "detail": "zone 1 (adresse e-mail réelle saisie à l'écran (apprenantbc@gmail.com)) — netteté 29"
     },
     {
       "famille": "Exactitude",
@@ -98,5 +98,5 @@
       "detail": "62 s"
     }
   ],
-  "produit_le": "2026-08-26T22:53:42.606Z"
+  "produit_le": "2026-08-26T23:52:26.826Z"
 }

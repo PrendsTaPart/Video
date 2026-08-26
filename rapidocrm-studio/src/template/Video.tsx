@@ -19,6 +19,7 @@ export const Video: React.FC<PropsVideo & { vertical?: boolean }> = ({
   demoSegments,
   demoSrc,
   vignetteSrc,
+  avatarSrc,
   audioSrc,
   vertical = false,
 }) => {
@@ -52,6 +53,8 @@ export const Video: React.FC<PropsVideo & { vertical?: boolean }> = ({
           minutage={minutage}
           demoSegments={demoSegments}
           demoSrc={demoSrc}
+          audioSrc={audioSrc}
+          avatarSrc={avatarSrc}
           vertical={vertical}
         />
       </Sequence>

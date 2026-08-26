@@ -257,6 +257,8 @@ export const PropsVideoSchema = z.object({
   demoSrc: z.string().nullable().default(null),
   /** Vignette du tutoriel (MCP RapidoCRM tuto), affichée en ouverture. */
   vignetteSrc: z.string().nullable().default(null),
+  /** Plan parlant du présentateur, rendu une fois pour toute la série. */
+  avatarSrc: z.string().nullable().default(null),
   audioSrc: z.string().nullable().default(null),
 });
 export type PropsVideo = z.infer<typeof PropsVideoSchema>;

@@ -223,6 +223,10 @@ programme
       const destination = join(assurerDossier(join(racinePublic, 'logos')), `${nom}.png`);
       if (!existsSync(destination)) copyFileSync(cheminLogo(nom), destination);
     }
+    const complet = join(racineProjet(), 'assets', 'logos', 'rapidocrm-complet.png');
+    if (existsSync(complet)) {
+      copyFileSync(complet, join(racinePublic, 'logos', 'rapidocrm-complet.png'));
+    }
     copierAssetsPartages(racinePublic);
     info(`  Assets prêts dans ${racinePublic}`);
   });

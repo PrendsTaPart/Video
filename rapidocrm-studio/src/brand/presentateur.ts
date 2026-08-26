@@ -88,5 +88,30 @@ const empreinte = (graine: string): number => {
 export const poseHook = (module: string, numero: number): PosePresentateur =>
   POSES_HOOK[empreinte(`${module}-hook-${numero}`) % POSES_HOOK.length] as PosePresentateur;
 
-export const poseFin = (module: string, numero: number): PosePresentateur =>
-  POSES_FIN[empreinte(`${module}-fin-${numero}`) % POSES_FIN.length] as PosePresentateur;
+/**
+ * Règles de contenu pour l'image de fin : ce que le tutoriel vient d'accomplir
+ * décide de la pose. L'empreinte ne sert que lorsque rien ne correspond, pour
+ * répartir les poses restantes sur le catalogue.
+ */
+const FIN_PAR_CONTENU: { motifs: string[]; pose: PosePresentateur }[] = [
+  { motifs: ['compte', 'inscription', 'connexion', 'acces', 'bienvenue'], pose: 'accueil-cravate' },
+  { motifs: ['equipe', 'utilisateur', 'commercial', 'invitation'], pose: 'bras-ouverts' },
+  { motifs: ['support', 'assistance', 'aide', 'contact'], pose: 'casque-pouce' },
+  { motifs: ['facture', 'devis', 'paiement', 'signature', 'contrat'], pose: 'ok' },
+  { motifs: ['campagne', 'relance', 'workflow', 'automatis'], pose: 'victoire' },
+];
+
+export const poseFin = (
+  module: string,
+  numero: number,
+  titre = '',
+): PosePresentateur => {
+  const texte = `${module} ${titre}`
+    .toLowerCase()
+    .normalize('NFD')
+    .replace(/[\u0300-\u036f]/g, '');
+  for (const regle of FIN_PAR_CONTENU) {
+    if (regle.motifs.some((m) => texte.includes(m))) return regle.pose;
+  }
+  return POSES_FIN[empreinte(`${module}-fin-${numero}`) % POSES_FIN.length] as PosePresentateur;
+};

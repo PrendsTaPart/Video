@@ -63,7 +63,8 @@ l'utilisateur avant de dire où cliquer.
 | Fond clair | `#F2F4F7` |
 | Blanc | `#FFFFFF` |
 
-- **Police unique : Arial** (Helvetica en repli). Aucune autre.
+- **Police unique : Arial** (Helvetica en repli). Aucune autre — sauf la carte
+  prompt de la séquence 4, qui porte la charte Claude (voir plus bas).
 - **Contraste** : sur un aplat de couleur, le texte est uniquement blanc ou
   `#383838`. Jamais de texte coloré sur fond coloré. Utiliser `textOn(bg)`.
 - **Logo** : jamais déformé (scale uniforme seulement), **jamais tourné**,
@@ -98,11 +99,85 @@ pioche dedans.
   stop, présentation…) de celles d'**image de fin** (le résultat : victoire,
   deux pouces, OK, casque…).
 - Le choix est **déterministe** : `poseHook(module, numero)` et
-  `poseFin(module, numero)` donnent toujours la même pose pour un tutoriel
-  donné, et répartissent les poses sur le catalogue.
+  `poseFin(module, numero, titre)` donnent toujours la même pose pour un
+  tutoriel donné. La pose de fin suit d'abord le contenu (voir « La fin de
+  vidéo »), l'empreinte ne servant qu'en dernier recours.
 - Les fichiers sont en WebP avec canal alpha : le présentateur se pose
   directement sur les aplats de la charte, sans cadre. Il est calé sur le bord
   bas de la frame — la photo source est coupée au buste.
+
+## Le présentateur en bulle, et l'avatar
+
+Méthode reprise du projet **Plan'It** (`videos/planit-tuto-00-creer-son-compte/AVATAR.md`
+et `videos/planit-academy/habillage/presentatrice.py`), qui a fait ses preuves sur
+43 épisodes.
+
+**Le principe.** La synchronisation labiale part d'un **rendu image fixe**, pas
+du modèle 3D : le `.glb` d'une persona sert à produire les images, ce sont elles
+qui alimentent le modèle. Portrait + piste voix → `creatify-aurora` (ElevenLabs)
+→ plan parlant.
+
+**Un seul plan pour toute la série.** Le plan est rendu **une fois**, sur un texte
+générique, puis réutilisé par les 172 tutoriels et bouclé en aller-retour pour
+éviter le saut du raccord. C'est le seul poste facturé à la seconde : un plan de
+8,6 s coûtait 1,39 $ chez Plan'It. Un plan par épisode multiplierait ce coût par
+172 sans rien apporter, puisque le titre est déjà affiché à l'écran.
+
+**Le repli, gratuit.** Sans `assets/avatar/parle.mp4`, la bulle affiche
+`assets/avatar/portrait.webp` : l'habillage reste animé, seule la bouche ne bouge
+plus. C'est le mode d'itération — on ne relance une génération payante que
+lorsque la mise en page est arrêtée.
+
+**L'habillage** (`src/brand/Avatar.tsx`) est calculé localement, sans rien
+facturer : bulle en `easeOutBack`, anneau dégradé en rotation lente dont
+l'épaisseur suit la voix, halo dont le rayon suit la voix, et treize barres de
+niveau où l'onde se propage du centre vers les bords. **C'est la voix qui pilote
+l'animation, jamais l'inverse** — `src/template/niveauVoix.tsx` lit l'enveloppe
+de la piste avec `visualizeAudio`.
+
+**Où se place la bulle**
+
+| Format | Place | Répartition |
+|---|---|---|
+| 16:9 | en bas à droite, par-dessus le mockup | bulle à 20 % de la hauteur |
+| 9:16 | en haut, au-dessus du logiciel | **1,5 pour l'avatar · 2,5 pour le logiciel**, sur 4 parts |
+
+**Le logiciel est toujours dans un mockup** (`src/brand/Mockup.tsx`) : fenêtre de
+navigateur avec barre de titre, pastilles et adresse. Sans ce cadre, un
+enregistrement large se retrouve rogné par les bords en 9:16 et on ne comprend
+plus qu'on regarde un logiciel.
+
+## La carte prompt porte la charte Claude
+
+Exception assumée à la règle « Arial et palette RapidoSoftware partout » : la
+carte de la séquence 4 représente **Claude**, comme une capture d'écran porterait
+l'interface qu'elle montre. Elle utilise donc la charte d'Anthropic
+(`src/brand/claude.ts`) :
+
+| Rôle | Valeur |
+|---|---|
+| Fond de carte | `#faf9f5` |
+| Texte | `#141413` |
+| Accent (bouton, surlignage des variables) | `#d97757` |
+| Gris de libellé | `#b0aea5` |
+| Titres | Poppins, Arial en repli |
+| Corps du prompt | Lora, Georgia en repli |
+
+Le logo Claude (`assets/ia/claude.png`) ouvre l'en-tête, suivi du nom de l'outil
+MCP visé. **Le reste de la frame reste à la charte RapidoSoftware.**
+
+## La fin de vidéo
+
+- **Le logo officiel** `assets/logos/rapidocrm-complet.png` est monté **tel
+  quel** : jamais redessiné, jamais tourné, scale uniforme.
+- Il se pose en deux temps : un halo s'ouvre une seule fois derrière lui, un
+  trait vert se trace dessous, puis le slogan et l'adresse suivent.
+- **Le présentateur reste d'un bout à l'autre** de la séquence : il porte la
+  punchline, puis accompagne la carte de fin.
+- **La pose vient du contenu**, pas d'un tirage : `poseFin(module, numero, titre)`
+  applique des règles — compte et accès → accueil, équipe → bras ouverts, support
+  → casque, facture et contrat → OK, campagne et workflow → victoire. L'empreinte
+  ne sert qu'en dernier recours, pour répartir les poses restantes.
 
 ## Autres assets partagés
 
@@ -124,7 +199,7 @@ pioche dedans.
   Quand `source.mp4` manque, le rendu retombe dessus **avec un avertissement** :
   la vidéo se monte, mais la démonstration n'est pas une vraie capture.
 
-Tous ces dossiers (`presentateur/`, `ia/`, `ecrans/`) sont recopiés dans
+Tous ces dossiers (`presentateur/`, `ia/`, `ecrans/`, `avatar/`) sont recopiés dans
 `public/` par `copierAssetsPartages`, appelé au rendu et par
 `npm run prepare:assets`.
 

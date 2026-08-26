@@ -57,6 +57,11 @@ export const rendre = async (dossier: string, options: OptionsRendu = {}): Promi
     const destination = join(assurerDossier(join(racinePublic, 'logos')), `${nom}.png`);
     if (!existsSync(destination)) copyFileSync(cheminLogo(nom), destination);
   }
+  // Le logo complet fourni par la marque, monté tel quel en fin de vidéo.
+  const complet = join(racineProjet(), 'assets', 'logos', 'rapidocrm-complet.png');
+  if (existsSync(complet)) {
+    copyFileSync(complet, join(racinePublic, 'logos', 'rapidocrm-complet.png'));
+  }
 
   const sortie = assurerDossier(join(dossier, 'out'));
   const formats: ('16x9' | '9x16')[] =
@@ -96,6 +101,15 @@ export const rendre = async (dossier: string, options: OptionsRendu = {}): Promi
     }
   }
 
+  // Plan parlant du présentateur, commun à toute la série. Absent, la bulle
+  // retombe sur le portrait fixe : l'habillage reste animé, seule la bouche ne
+  // bouge plus (le repli documenté par la méthode Plan'It).
+  const planAvatar = join(racineProjet(), 'assets', 'avatar', 'parle.mp4');
+  const avatarSrc = existsSync(planAvatar) ? 'avatar/parle.mp4' : null;
+  if (!avatarSrc) {
+    discret('   pas de plan parlant : la bulle affiche le portrait fixe');
+  }
+
   // Vignette d'ouverture (MCP RapidoCRM tuto, sinon vignette locale).
   const vignetteSrc = await recupererVignette(dossier, script, racinePublic);
 
@@ -128,6 +142,7 @@ export const rendre = async (dossier: string, options: OptionsRendu = {}): Promi
       demoSegments: screencasts[format] ?? [],
       demoSrc: replique,
       vignetteSrc,
+      avatarSrc,
       audioSrc,
       vertical: format === '9x16',
     };
@@ -162,7 +177,7 @@ export const rendre = async (dossier: string, options: OptionsRendu = {}): Promi
     // 4. Mixage audio : voix au premier plan, musique duckée sous la voix.
     const nom = options.preview ? `preview-${format}.mp4` : `master-${format}.mp4`;
     const final = join(sortie, nom);
-    await mixer(brut, complete, final, options.preview === true);
+    await mixer(brut, complete, final, options.preview === true, minutage.total / FPS);
     fichiers.push({ chemin: final, octets: statSync(final).size });
     info(`   ${nom} — ${(statSync(final).size / 1024 / 1024).toFixed(1)} Mo`);
   }
@@ -193,7 +208,7 @@ export const rendre = async (dossier: string, options: OptionsRendu = {}): Promi
  * présentateur détouré, logos des assistants, écrans de référence.
  */
 export const copierAssetsPartages = (racinePublic: string): void => {
-  for (const nom of ['presentateur', 'ia', 'ecrans']) {
+  for (const nom of ['presentateur', 'ia', 'ecrans', 'avatar']) {
     const source = join(racineProjet(), 'assets', nom);
     if (!existsSync(source)) continue;
     const cible = assurerDossier(join(racinePublic, nom));
@@ -233,6 +248,7 @@ const mixer = async (
   voix: string,
   destination: string,
   preview: boolean,
+  duree: number,
 ): Promise<void> => {
   const musique = join(racineProjet(), 'assets', 'musique', 'fond.mp3');
   const aVoix = existsSync(voix);
@@ -253,12 +269,15 @@ const mixer = async (
   let filtre: string;
   if (aVoix && aMusique) {
     filtre =
-      `[${indexVoix}:a]loudnorm=I=-16:TP=-1.5:LRA=11,asplit=2[voix][cle];` +
+      `[${indexVoix}:a]loudnorm=I=-16:TP=-1.5:LRA=11,apad,asplit=2[voix][cle];` +
       `[${indexMusique}:a]volume=-26dB[fond];` +
       `[fond][cle]sidechaincompress=threshold=0.05:ratio=8:attack=20:release=400[fondDucke];` +
       `[voix][fondDucke]amix=inputs=2:duration=first:dropout_transition=0[sortie]`;
   } else if (aVoix) {
-    filtre = `[${indexVoix}:a]loudnorm=I=-16:TP=-1.5:LRA=11[sortie]`;
+    // apad : la voix s'arrête avant la fin de l'image — l'ouverture est muette
+    // et la carte de fin dure au-delà du dernier mot. Sans ce silence de queue,
+    // le mixage tronquait la vidéo et le logo n'apparaissait jamais.
+    filtre = `[${indexVoix}:a]loudnorm=I=-16:TP=-1.5:LRA=11,apad[sortie]`;
   } else {
     filtre = `[${indexMusique}:a]volume=-26dB[sortie]`;
   }
@@ -269,7 +288,9 @@ const mixer = async (
     '-map', '0:v', '-map', '[sortie]',
     '-c:v', 'copy',
     '-c:a', 'aac', '-b:a', preview ? '128k' : '192k',
-    '-shortest', '-movflags', '+faststart',
+    // La durée de référence est celle de l'IMAGE, pas celle de la voix.
+    '-t', duree.toFixed(3),
+    '-movflags', '+faststart',
     destination,
   ]);
 };
