@@ -106,10 +106,11 @@ pioche dedans.
 
 ## Autres assets partagés
 
-- `assets/ia/` — logos des assistants. **Seul `claude.png` est utilisé** au
-  montage, dans l'en-tête de la carte prompt (séquence 4). `openai.png` et
-  `mistral.png` sont stockés mais non montés : l'usage de marques tierces dans
-  les vidéos est une décision à prendre, pas un défaut.
+- `assets/ia/` — logos des assistants. **Seul `claude.png` est monté**, dans
+  l'en-tête de la carte prompt (séquence 4) : c'est une décision prise, la
+  séquence dit « collez-le dans Claude » et reste sur un seul assistant.
+  `openai.png` et `mistral.png` restent en réserve, non montés — ne les ajouter
+  au template que sur demande explicite.
 - `assets/references/ecran-commerciaux.png` — un écran RapidoCRM réel, utilisé
   comme plan de démonstration par la composition `Preview` : le template se juge
   avec une vraie interface plutôt qu'un cadre blanc.
