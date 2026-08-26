@@ -56,6 +56,7 @@ MODULES = {
     "Connexions API & MCP": "#8236F8",
     "Base de connaissance": "#A63FE8",
     "Skills & Plugins": "#B846E0",
+    "Profil & Avatar 3D": "#CA4DD8",
     "Authentification": "#4F2DF9",
 }
 

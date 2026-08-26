@@ -2,6 +2,10 @@
 
 Fiche MCP `tutoriel_spec(numero: 7)`, slug `enregistrer-sa-propre-carte`.
 
+Capture remontée le 26/08 depuis la 2ᵉ version de la « Vidéo 10 ».
+L'écran de visibilité « Privé » n'existe plus dans l'application : la ligne N8
+a été réenregistrée.
+
 | Ligne | Rôle | Texte |
 |---|---|---|
 | N0 | présentation | Bienvenue dans l'Académie Plan'It. Aujourd'hui : enregistrer sa propre carte de prompt. Votre meilleure consigne devient réutilisable en un geste. |
@@ -12,7 +16,7 @@ Fiche MCP `tutoriel_spec(numero: 7)`, slug `enregistrer-sa-propre-carte`.
 | N5 | Une deuxième | On en ajoute une deuxième : la date de livraison. |
 | N6 | Le type de la variable | Chaque variable a son type — texte, date, e-mail ou nombre. Il guide celui qui remplira. |
 | N7 | La troisième | Une troisième pour l'adresse, et la carte est complète. |
-| N8 | Visibilité et création | Laissez la visibilité sur « Privé » le temps de l'essayer, puis touchez « Créer le prompt ». |
+| N8 | créer le prompt | Les trois variables sont là, chacune avec son type. Touchez « Créer le prompt ». |
 | N9 | Dans la bibliothèque | Elle apparaît dans « Mes prompts privés », avec ses trois variables annoncées. |
 | N10 | Modifier plus tard | Rien n'est figé : « Modifier le prompt » rouvre le nom, la description et les variables. |
 | N11 | Ce qui change | Mettez en variable tout ce qui change d'une fois à l'autre : client, date, montant. |
