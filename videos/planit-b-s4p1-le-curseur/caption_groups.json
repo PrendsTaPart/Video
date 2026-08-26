@@ -1,0 +1,58 @@
+[
+  {
+    "start": 1.0,
+    "end": 1.743,
+    "text": "En 2022",
+    "words": [
+      {
+        "text": "En",
+        "start": 1.0,
+        "end": 1.186
+      },
+      {
+        "text": "2022",
+        "start": 1.186,
+        "end": 1.743
+      }
+    ]
+  },
+  {
+    "start": 1.743,
+    "end": 2.486,
+    "text": "l'outil a",
+    "words": [
+      {
+        "text": "l'outil",
+        "start": 1.743,
+        "end": 2.393
+      },
+      {
+        "text": "a",
+        "start": 2.393,
+        "end": 2.486
+      }
+    ]
+  },
+  {
+    "start": 2.486,
+    "end": 4.344,
+    "text": "commencé à répondre",
+    "words": [
+      {
+        "text": "commencé",
+        "start": 2.486,
+        "end": 3.229
+      },
+      {
+        "text": "à",
+        "start": 3.229,
+        "end": 3.322
+      },
+      {
+        "text": "répondre",
+        "start": 3.322,
+        "end": 4.344
+      }
+    ]
+  }
+]

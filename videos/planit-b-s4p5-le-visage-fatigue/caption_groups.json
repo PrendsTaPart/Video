@@ -1,0 +1,41 @@
+[
+  {
+    "start": 1.0,
+    "end": 2.326,
+    "text": "Plus fatigué qu'avant",
+    "words": [
+      {
+        "text": "Plus",
+        "start": 1.0,
+        "end": 1.241
+      },
+      {
+        "text": "fatigué",
+        "start": 1.241,
+        "end": 1.663
+      },
+      {
+        "text": "qu'avant",
+        "start": 1.663,
+        "end": 2.326
+      }
+    ]
+  },
+  {
+    "start": 2.326,
+    "end": 3.351,
+    "text": "Jamais déchargé",
+    "words": [
+      {
+        "text": "Jamais",
+        "start": 2.326,
+        "end": 2.688
+      },
+      {
+        "text": "déchargé",
+        "start": 2.688,
+        "end": 3.351
+      }
+    ]
+  }
+]

@@ -1,0 +1,63 @@
+[
+  {
+    "start": 1.0,
+    "end": 2.383,
+    "text": "Une réponse arrivait",
+    "words": [
+      {
+        "text": "Une",
+        "start": 1.0,
+        "end": 1.198
+      },
+      {
+        "text": "réponse",
+        "start": 1.198,
+        "end": 1.659
+      },
+      {
+        "text": "arrivait",
+        "start": 1.659,
+        "end": 2.383
+      }
+    ]
+  },
+  {
+    "start": 2.383,
+    "end": 2.91,
+    "text": "Il devait",
+    "words": [
+      {
+        "text": "Il",
+        "start": 2.383,
+        "end": 2.515
+      },
+      {
+        "text": "devait",
+        "start": 2.515,
+        "end": 2.91
+      }
+    ]
+  },
+  {
+    "start": 2.91,
+    "end": 4.161,
+    "text": "encore la vérifier",
+    "words": [
+      {
+        "text": "encore",
+        "start": 2.91,
+        "end": 3.305
+      },
+      {
+        "text": "la",
+        "start": 3.305,
+        "end": 3.436
+      },
+      {
+        "text": "vérifier",
+        "start": 3.436,
+        "end": 4.161
+      }
+    ]
+  }
+]

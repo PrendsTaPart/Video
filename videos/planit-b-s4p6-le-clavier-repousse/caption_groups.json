@@ -1,0 +1,36 @@
+[
+  {
+    "start": 1.0,
+    "end": 1.718,
+    "text": "Il repoussait",
+    "words": [
+      {
+        "text": "Il",
+        "start": 1.0,
+        "end": 1.12
+      },
+      {
+        "text": "repoussait",
+        "start": 1.12,
+        "end": 1.718
+      }
+    ]
+  },
+  {
+    "start": 1.718,
+    "end": 2.437,
+    "text": "le clavier",
+    "words": [
+      {
+        "text": "le",
+        "start": 1.718,
+        "end": 1.838
+      },
+      {
+        "text": "clavier",
+        "start": 1.838,
+        "end": 2.437
+      }
+    ]
+  }
+]

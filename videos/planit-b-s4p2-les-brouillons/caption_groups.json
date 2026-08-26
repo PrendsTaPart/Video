@@ -1,0 +1,36 @@
+[
+  {
+    "start": 1.0,
+    "end": 1.89,
+    "text": "Il écrivait",
+    "words": [
+      {
+        "text": "Il",
+        "start": 1.0,
+        "end": 1.148
+      },
+      {
+        "text": "écrivait",
+        "start": 1.148,
+        "end": 1.89
+      }
+    ]
+  },
+  {
+    "start": 1.89,
+    "end": 3.743,
+    "text": "effaçait recommençait",
+    "words": [
+      {
+        "text": "effaçait",
+        "start": 1.89,
+        "end": 2.631
+      },
+      {
+        "text": "recommençait",
+        "start": 2.631,
+        "end": 3.743
+      }
+    ]
+  }
+]
