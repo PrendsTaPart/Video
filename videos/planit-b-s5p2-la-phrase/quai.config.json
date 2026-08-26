@@ -1,0 +1,12 @@
+{
+  "id": "9b02dd5b-dd5f-4987-bc41-1bad2b678e46",
+  "slug": "planit-b-s5p2-la-phrase",
+  "acte": 5,
+  "plan": 2,
+  "epoque": "2026",
+  "titre": "La phrase",
+  "voix": "Il dit une phrase. Une seule.",
+  "planSource": "assets/video/plan.mp4",
+  "ambianceDb": -6,
+  "punchline": "Il n'a rien tapé. Il a parlé."
+}

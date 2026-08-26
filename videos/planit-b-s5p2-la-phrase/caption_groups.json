@@ -1,0 +1,53 @@
+[
+  {
+    "start": 1.0,
+    "end": 1.378,
+    "text": "Il dit",
+    "words": [
+      {
+        "text": "Il",
+        "start": 1.0,
+        "end": 1.151
+      },
+      {
+        "text": "dit",
+        "start": 1.151,
+        "end": 1.378
+      }
+    ]
+  },
+  {
+    "start": 1.378,
+    "end": 2.285,
+    "text": "une phrase",
+    "words": [
+      {
+        "text": "une",
+        "start": 1.378,
+        "end": 1.605
+      },
+      {
+        "text": "phrase",
+        "start": 1.605,
+        "end": 2.285
+      }
+    ]
+  },
+  {
+    "start": 2.285,
+    "end": 3.116,
+    "text": "Une seule",
+    "words": [
+      {
+        "text": "Une",
+        "start": 2.285,
+        "end": 2.511
+      },
+      {
+        "text": "seule",
+        "start": 2.511,
+        "end": 3.116
+      }
+    ]
+  }
+]

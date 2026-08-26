@@ -1,0 +1,53 @@
+[
+  {
+    "start": 1.0,
+    "end": 1.707,
+    "text": "En 2026",
+    "words": [
+      {
+        "text": "En",
+        "start": 1.0,
+        "end": 1.177
+      },
+      {
+        "text": "2026",
+        "start": 1.177,
+        "end": 1.707
+      }
+    ]
+  },
+  {
+    "start": 1.707,
+    "end": 2.502,
+    "text": "la journée",
+    "words": [
+      {
+        "text": "la",
+        "start": 1.707,
+        "end": 1.884
+      },
+      {
+        "text": "journée",
+        "start": 1.884,
+        "end": 2.502
+      }
+    ]
+  },
+  {
+    "start": 2.502,
+    "end": 4.004,
+    "text": "commence pareil",
+    "words": [
+      {
+        "text": "commence",
+        "start": 2.502,
+        "end": 3.209
+      },
+      {
+        "text": "pareil",
+        "start": 3.209,
+        "end": 4.004
+      }
+    ]
+  }
+]

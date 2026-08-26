@@ -1,0 +1,12 @@
+{
+  "id": "3e8d2c9e-16d4-4c78-b0f9-6a6a047c3721",
+  "slug": "planit-b-s5p3-le-telephone-pose",
+  "acte": 5,
+  "plan": 3,
+  "epoque": "2026",
+  "titre": "Le téléphone posé",
+  "voix": "Il pose le téléphone, face contre la table.",
+  "planSource": "assets/video/plan.mp4",
+  "ambianceDb": -6,
+  "punchline": "Et il ne l'a plus repris."
+}

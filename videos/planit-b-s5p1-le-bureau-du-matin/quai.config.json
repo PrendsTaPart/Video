@@ -1,0 +1,12 @@
+{
+  "id": "942c0335-e5ca-4873-8890-346b14e79ca9",
+  "slug": "planit-b-s5p1-le-bureau-du-matin",
+  "acte": 5,
+  "plan": 1,
+  "epoque": "2026",
+  "titre": "Le bureau du matin",
+  "voix": "En 2026, la journée commence pareil.",
+  "planSource": "assets/video/plan.mp4",
+  "ambianceDb": -6,
+  "punchline": "Rien n'a changé. Sauf ce qui suit."
+}

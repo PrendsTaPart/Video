@@ -1,0 +1,12 @@
+{
+  "id": "210aa39e-fde9-4b31-badf-f29ec2aa1bcc",
+  "slug": "planit-b-s5p5-il-sort",
+  "acte": 5,
+  "plan": 5,
+  "epoque": "2026",
+  "titre": "Il sort",
+  "voix": "Il est sorti.",
+  "planSource": "assets/video/plan.mp4",
+  "ambianceDb": -6,
+  "punchline": "Le travail, non."
+}

@@ -1,0 +1,58 @@
+[
+  {
+    "start": 1.0,
+    "end": 1.541,
+    "text": "La lumière",
+    "words": [
+      {
+        "text": "La",
+        "start": 1.0,
+        "end": 1.12
+      },
+      {
+        "text": "lumière",
+        "start": 1.12,
+        "end": 1.541
+      }
+    ]
+  },
+  {
+    "start": 1.541,
+    "end": 1.961,
+    "text": "a changé",
+    "words": [
+      {
+        "text": "a",
+        "start": 1.541,
+        "end": 1.601
+      },
+      {
+        "text": "changé",
+        "start": 1.601,
+        "end": 1.961
+      }
+    ]
+  },
+  {
+    "start": 1.961,
+    "end": 2.802,
+    "text": "dans la pièce",
+    "words": [
+      {
+        "text": "dans",
+        "start": 1.961,
+        "end": 2.202
+      },
+      {
+        "text": "la",
+        "start": 2.202,
+        "end": 2.322
+      },
+      {
+        "text": "pièce",
+        "start": 2.322,
+        "end": 2.802
+      }
+    ]
+  }
+]

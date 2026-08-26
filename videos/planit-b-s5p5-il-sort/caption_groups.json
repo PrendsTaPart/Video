@@ -1,0 +1,24 @@
+[
+  {
+    "start": 1.0,
+    "end": 2.097,
+    "text": "Il est sorti",
+    "words": [
+      {
+        "text": "Il",
+        "start": 1.0,
+        "end": 1.169
+      },
+      {
+        "text": "est",
+        "start": 1.169,
+        "end": 1.422
+      },
+      {
+        "text": "sorti",
+        "start": 1.422,
+        "end": 2.097
+      }
+    ]
+  }
+]
