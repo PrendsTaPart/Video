@@ -1,0 +1,45 @@
+{
+  "name": "rapidocrm-studio",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Chaîne de production des 172 tutoriels vidéo de RapidoCRM Académie",
+  "scripts": {
+    "typecheck": "tsc --noEmit",
+    "preview": "remotion studio src/template/index.ts",
+    "analyse": "tsx src/cli/index.ts analyse",
+    "fiche": "tsx src/cli/index.ts fiche",
+    "script": "tsx src/cli/index.ts script",
+    "voix": "tsx src/cli/index.ts voix",
+    "rendu": "tsx src/cli/index.ts rendu",
+    "vignette": "tsx src/cli/index.ts vignette",
+    "vignettes:lot": "tsx src/cli/index.ts vignettes-lot",
+    "publier:cms": "tsx src/cli/index.ts publier-cms",
+    "publier:youtube": "tsx src/cli/index.ts publier-youtube",
+    "publier:site": "tsx src/cli/index.ts publier-site",
+    "tuto": "tsx src/cli/index.ts tuto",
+    "serie": "tsx src/cli/index.ts serie",
+    "qa": "tsx src/cli/index.ts qa",
+    "regenerer": "tsx src/cli/index.ts regenerer",
+    "mcp:file": "tsx src/cli/index.ts mcp-file"
+  },
+  "dependencies": {
+    "@elevenlabs/elevenlabs-js": "^2.4.0",
+    "@remotion/bundler": "^4.0.0",
+    "@remotion/cli": "^4.0.0",
+    "@remotion/media-utils": "^4.0.0",
+    "@remotion/renderer": "^4.0.0",
+    "commander": "^12.1.0",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "remotion": "^4.0.0",
+    "sharp": "^0.33.5",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "@types/node": "^22.9.0",
+    "@types/react": "^19.0.0",
+    "tsx": "^4.19.2",
+    "typescript": "^5.6.3"
+  }
+}
