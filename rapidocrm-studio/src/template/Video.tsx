@@ -4,6 +4,7 @@ import { BRAND } from '../brand/tokens.ts';
 import type { PropsVideo } from '../schema/index.ts';
 import { calculerMinutage } from './minutage.ts';
 import { Demo } from './sequences/Demo.tsx';
+import { Ouverture } from './sequences/Ouverture.tsx';
 import { Hook } from './sequences/Hook.tsx';
 import { Punchline } from './sequences/Punchline.tsx';
 import { SegmentClaude } from './sequences/SegmentClaude.tsx';
@@ -16,6 +17,7 @@ export const Video: React.FC<PropsVideo & { vertical?: boolean }> = ({
   script,
   alignement,
   demoSrc,
+  vignetteSrc,
   audioSrc,
   vertical = false,
 }) => {
@@ -23,7 +25,16 @@ export const Video: React.FC<PropsVideo & { vertical?: boolean }> = ({
 
   return (
     <AbsoluteFill style={{ backgroundColor: BRAND.colors.fondClair }}>
-      {audioSrc && <Audio src={staticFile(audioSrc)} />}
+      {/* La voix off démarre au hook : l'ouverture est muette. */}
+      {audioSrc && (
+        <Sequence from={minutage.hook.debut}>
+          <Audio src={staticFile(audioSrc)} />
+        </Sequence>
+      )}
+
+      <Sequence from={minutage.ouverture.debut} durationInFrames={minutage.ouverture.duree}>
+        <Ouverture script={script} vignetteSrc={vignetteSrc} />
+      </Sequence>
 
       <Sequence from={minutage.hook.debut} durationInFrames={minutage.hook.duree}>
         <Hook script={script} vertical={vertical} />

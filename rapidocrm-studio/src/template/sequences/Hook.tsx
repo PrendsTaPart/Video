@@ -1,6 +1,8 @@
 import React from 'react';
 import { AbsoluteFill, interpolate, spring, useCurrentFrame, useVideoConfig } from 'remotion';
 import { GeometricBg } from '../../brand/GeometricBg.tsx';
+import { Presentateur } from '../../brand/Presentateur.tsx';
+import { poseHook } from '../../brand/presentateur.ts';
 import { Corps, Etiquette, Pastille, Titre } from '../../brand/Text.tsx';
 import { BRAND, couleurModule } from '../../brand/tokens.ts';
 import type { Script } from '../../schema/index.ts';
@@ -27,6 +29,17 @@ export const Hook: React.FC<{ script: Script; vertical: boolean }> = ({
   const promesse = spring({ frame: frame - mots.length * 3 - 6, fps, config: { damping: 200 } });
   const couleur = couleurModule(script.meta.module);
 
+  // Le présentateur entre juste après les premiers mots, sur la droite en 16:9,
+  // au-dessus du texte en 9:16. La pose est choisie une fois pour toutes par
+  // (module, numéro) : elle ne change pas d'un rendu à l'autre.
+  const pose = poseHook(script.meta.module, script.meta.numero);
+  const arriveePresentateur = spring({
+    frame: frame - 10,
+    fps,
+    config: { damping: 200 },
+    durationInFrames: 18,
+  });
+
   return (
     <AbsoluteFill>
       <GeometricBg variant="mixte" progress={sortie < 1 ? sortie : undefined} />
@@ -43,7 +56,7 @@ export const Hook: React.FC<{ script: Script; vertical: boolean }> = ({
             background: BRAND.colors.vert,
             borderRadius: BRAND.radius,
             padding: height * (vertical ? 0.05 : 0.055),
-            maxWidth: vertical ? '100%' : '78%',
+            maxWidth: vertical ? '100%' : '62%',
             display: 'flex',
             flexDirection: 'column',
             gap: height * 0.03,
@@ -83,8 +96,27 @@ export const Hook: React.FC<{ script: Script; vertical: boolean }> = ({
 
       <AbsoluteFill
         style={{
+          padding: height * (vertical ? 0.05 : 0.04),
+          paddingBottom: 0, // la photo source est coupée au buste : on cale le
+          alignItems: vertical ? 'center' : 'flex-end', // bord franc hors champ
+          justifyContent: 'flex-end',
+          pointerEvents: 'none',
+        }}
+      >
+        <div
+          style={{
+            opacity: arriveePresentateur,
+            transform: `translateX(${(1 - arriveePresentateur) * height * 0.06}px)`,
+          }}
+        >
+          <Presentateur pose={pose} taille={vertical ? 0.3 : 0.66} />
+        </div>
+      </AbsoluteFill>
+
+      <AbsoluteFill
+        style={{
           padding: height * 0.05,
-          alignItems: 'flex-end',
+          alignItems: vertical ? 'center' : 'flex-start',
           justifyContent: 'flex-end',
           gap: height * 0.012,
         }}

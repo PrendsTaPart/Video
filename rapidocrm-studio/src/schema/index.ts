@@ -253,6 +253,8 @@ export const PropsVideoSchema = z.object({
   alignement: AlignementSchema.nullable().default(null),
   /** Chemin staticFile du screencast pré-traité (séquence 3). */
   demoSrc: z.string().nullable().default(null),
+  /** Vignette du tutoriel (MCP RapidoCRM tuto), affichée en ouverture. */
+  vignetteSrc: z.string().nullable().default(null),
   audioSrc: z.string().nullable().default(null),
 });
 export type PropsVideo = z.infer<typeof PropsVideoSchema>;

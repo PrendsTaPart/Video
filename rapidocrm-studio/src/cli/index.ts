@@ -1,5 +1,5 @@
 #!/usr/bin/env -S npx tsx
-import { existsSync, readdirSync } from 'node:fs';
+import { copyFileSync, existsSync, readdirSync } from 'node:fs';
 import { join } from 'node:path';
 import { Command } from 'commander';
 import { DemandeEnAttente, demandesEnAttente } from '../mcp/pont.ts';
@@ -7,7 +7,8 @@ import { analyser } from '../pipeline/analyse.ts';
 import { construireFiche } from '../pipeline/fiche.ts';
 import { construireScript } from '../pipeline/script.ts';
 import { genererVoix } from '../pipeline/voix.ts';
-import { rendre, type Format } from '../pipeline/rendu.ts';
+import { copierPresentateur, rendre, type Format } from '../pipeline/rendu.ts';
+import { assurerLogos, cheminLogo, LOGOS, type NomLogo } from '../brand/logos.ts';
 import { genererVignettes, vignettesEnLot } from '../pipeline/vignette.ts';
 import { publierRapidoCms } from '../pipeline/publier-rapidocms.ts';
 import { publierYoutube } from '../pipeline/publier-youtube.ts';
@@ -21,7 +22,13 @@ import {
   verifierCoherenceSerie,
 } from '../pipeline/serie.ts';
 import { regenerer, SEQUENCES, type NomSequence } from '../pipeline/regenerer.ts';
-import { dossierTutoriel, racineContenu, resoudreParModule } from '../util/chemins.ts';
+import {
+  assurerDossier,
+  dossierTutoriel,
+  racineContenu,
+  racineProjet,
+  resoudreParModule,
+} from '../util/chemins.ts';
 import { avertir, erreur, info } from '../util/journal.ts';
 
 const programme = new Command();
@@ -203,6 +210,20 @@ programme
       throw new Error(`Séquence inconnue : ${o.sequence} (attendu : ${SEQUENCES.join(', ')})`);
     }
     await regenerer(o.module, o.sequence as NomSequence, { republier: o.republier });
+  });
+
+programme
+  .command('preparer-assets')
+  .description('Copie logos et images du présentateur dans public/ (avant Remotion Studio)')
+  .action(async () => {
+    const racinePublic = assurerDossier(join(racineProjet(), 'public'));
+    await assurerLogos();
+    for (const nom of Object.keys(LOGOS) as NomLogo[]) {
+      const destination = join(assurerDossier(join(racinePublic, 'logos')), `${nom}.png`);
+      if (!existsSync(destination)) copyFileSync(cheminLogo(nom), destination);
+    }
+    copierPresentateur(racinePublic);
+    info(`  Assets prêts dans ${racinePublic}`);
   });
 
 programme

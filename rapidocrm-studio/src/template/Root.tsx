@@ -10,6 +10,7 @@ const defauts: PropsVideo = {
   script: SCRIPT_FACTICE,
   alignement: null,
   demoSrc: null,
+  vignetteSrc: null,
   audioSrc: null,
 };
 

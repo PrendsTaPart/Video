@@ -1,4 +1,4 @@
-import { copyFileSync, existsSync, statSync } from 'node:fs';
+import { copyFileSync, existsSync, readdirSync, statSync } from 'node:fs';
 import { join } from 'node:path';
 import { bundle } from '@remotion/bundler';
 import { renderMedia, selectComposition } from '@remotion/renderer';
@@ -17,6 +17,7 @@ import { assurerDossier, ecrireJson, lireJson, racineProjet } from '../util/chem
 import { lancer } from '../util/ffmpeg.ts';
 import { avertir, discret, etape, info } from '../util/journal.ts';
 import { preparerScreencast } from './pretraitement.ts';
+import { recupererVignette } from './vignette-source.ts';
 
 export type Format = '16x9' | '9x16' | 'tous';
 
@@ -65,6 +66,12 @@ export const rendre = async (dossier: string, options: OptionsRendu = {}): Promi
     );
   }
 
+  // Vignette d'ouverture (MCP RapidoCRM tuto, sinon vignette locale).
+  const vignetteSrc = await recupererVignette(dossier, script, racinePublic);
+
+  // Images du présentateur, partagées par tous les tutoriels.
+  copierPresentateur(racinePublic);
+
   // Piste voix rendue accessible à Remotion.
   let audioSrc: string | null = null;
   const complete = join(dossier, 'voix', 'complete.mp3');
@@ -89,6 +96,7 @@ export const rendre = async (dossier: string, options: OptionsRendu = {}): Promi
       script,
       alignement,
       demoSrc: screencasts[format] ?? null,
+      vignetteSrc,
       audioSrc,
       vertical: format === '9x16',
     };
@@ -128,6 +136,7 @@ export const rendre = async (dossier: string, options: OptionsRendu = {}): Promi
     duree,
     fichiers,
     sequences: [
+      { nom: 'ouverture', debut: minutage.ouverture.debut / FPS, fin: (minutage.ouverture.debut + minutage.ouverture.duree) / FPS },
       { nom: 'hook', debut: minutage.hook.debut / FPS, fin: (minutage.hook.debut + minutage.hook.duree) / FPS },
       { nom: 'titre', debut: minutage.titre.debut / FPS, fin: (minutage.titre.debut + minutage.titre.duree) / FPS },
       { nom: 'demo', debut: minutage.demo.debut / FPS, fin: (minutage.demo.debut + minutage.demo.duree) / FPS },
@@ -140,6 +149,17 @@ export const rendre = async (dossier: string, options: OptionsRendu = {}): Promi
   ecrireJson(join(dossier, 'rendu.json'), rapport);
   for (const a of rapport.avertissements) avertir(a);
   return rapport;
+};
+
+/** Recopie la banque d'images du présentateur dans public/, sans la dupliquer. */
+export const copierPresentateur = (racinePublic: string): void => {
+  const source = join(racineProjet(), 'assets', 'presentateur');
+  if (!existsSync(source)) return;
+  const cible = assurerDossier(join(racinePublic, 'presentateur'));
+  for (const fichier of readdirSync(source)) {
+    const destination = join(cible, fichier);
+    if (!existsSync(destination)) copyFileSync(join(source, fichier), destination);
+  }
 };
 
 const timecode = (secondes: number): string => {

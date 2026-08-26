@@ -6,7 +6,8 @@
   "description": "Chaîne de production des 172 tutoriels vidéo de RapidoCRM Académie",
   "scripts": {
     "typecheck": "tsc --noEmit",
-    "preview": "remotion studio src/template/index.ts",
+    "prepare:assets": "tsx src/cli/index.ts preparer-assets",
+    "preview": "npm run prepare:assets && remotion studio src/template/index.ts",
     "analyse": "tsx src/cli/index.ts analyse",
     "fiche": "tsx src/cli/index.ts fiche",
     "script": "tsx src/cli/index.ts script",

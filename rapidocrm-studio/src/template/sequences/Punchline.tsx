@@ -8,6 +8,8 @@ import {
 } from 'remotion';
 import { GeometricBg } from '../../brand/GeometricBg.tsx';
 import { Logomark } from '../../brand/Logo.tsx';
+import { Presentateur } from '../../brand/Presentateur.tsx';
+import { poseFin } from '../../brand/presentateur.ts';
 import { Corps, Etiquette, Titre } from '../../brand/Text.tsx';
 import { BRAND } from '../../brand/tokens.ts';
 import type { Script } from '../../schema/index.ts';
@@ -52,6 +54,16 @@ export const Punchline: React.FC<{ script: Script; vertical: boolean }> = ({
     (1 - oiseaux[2]) * -14,
   ];
 
+  // Image de fin : le présentateur, pose « résultat obtenu », entre avec la
+  // punchline et reste jusqu'au logo. Choisie par (module, numéro), stable.
+  const pose = poseFin(script.meta.module, script.meta.numero);
+  const arriveePresentateur = spring({
+    frame: frame - 6,
+    fps,
+    config: { damping: 200 },
+    durationInFrames: 18,
+  });
+
   const masque = interpolate(frame, [bascule + 20, bascule + 34], [0, 1], {
     extrapolateLeft: 'clamp',
     extrapolateRight: 'clamp',
@@ -61,6 +73,24 @@ export const Punchline: React.FC<{ script: Script; vertical: boolean }> = ({
   return (
     <AbsoluteFill>
       <GeometricBg variant="mixte" />
+
+      <AbsoluteFill
+        style={{
+          padding: height * (vertical ? 0.05 : 0.04),
+          paddingBottom: 0, // la photo source est coupée au buste : on cale le
+          alignItems: vertical ? 'center' : 'flex-end', // bord franc hors champ
+          justifyContent: 'flex-end',
+          opacity: sortiePunch * arriveePresentateur,
+        }}
+      >
+        <div
+          style={{
+            transform: `translateX(${(1 - arriveePresentateur) * height * 0.06}px)`,
+          }}
+        >
+          <Presentateur pose={pose} taille={vertical ? 0.3 : 0.64} />
+        </div>
+      </AbsoluteFill>
 
       <AbsoluteFill
         style={{
@@ -76,7 +106,7 @@ export const Punchline: React.FC<{ script: Script; vertical: boolean }> = ({
             background: BRAND.colors.vert,
             borderRadius: BRAND.radius,
             padding: height * 0.055,
-            maxWidth: vertical ? '100%' : '80%',
+            maxWidth: vertical ? '100%' : '62%',
           }}
         >
           <Titre fond={BRAND.colors.vert} taille={vertical ? 0.07 : 0.088}>

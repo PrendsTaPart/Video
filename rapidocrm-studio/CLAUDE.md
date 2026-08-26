@@ -12,6 +12,7 @@ source.mp4
   3. script     → script.json + script.md
   4. voix       → voix/*.mp3 + voix/alignement.json + transcription.txt
   5. rendu      → out/master-16x9.mp4, out/master-9x16.mp4, rendu.json
+                  (la vignette du tutoriel ouvre la vidéo — voir plus bas)
   6. vignette   → out/thumb-16x9.jpg, out/thumb-9x16.jpg
   7. publier:cms      → lien AWS S3            (MCP RapidoCMS)
   8. publier:youtube  → lien YouTube           (MCP YouTube)
@@ -31,11 +32,15 @@ source.mp4
 3. **La charte RapidoSoftware est une contrainte de build**, pas une
    recommandation. Voir « Charte » ci-dessous. Les composants échouent au build
    si elle est violée.
-4. **`script.json` est la seule source du rendu.** Aucun texte n'est écrit en dur
+4. **La vidéo s'ouvre sur la vignette du tutoriel.** Elle est récupérée dans
+   cet ordre : lien AWS de `publication.json`, puis la fiche en ligne via le MCP
+   « RapidoCMS tutoriels » (`obtenir_tutoriel`), puis `out/thumb-16x9.jpg`. Le
+   spectateur retrouve ainsi l'image sur laquelle il a cliqué.
+5. **`script.json` est la seule source du rendu.** Aucun texte n'est écrit en dur
    dans le template.
-5. **Deux points d'arrêt ne sont jamais contournés**, même en mode série :
+6. **Deux points d'arrêt ne sont jamais contournés**, même en mode série :
    après l'écriture du script, et après le rendu de prévisualisation.
-6. **Confidentialité** : toute donnée réelle visible à l'écran (email, téléphone,
+7. **Confidentialité** : toute donnée réelle visible à l'écran (email, téléphone,
    SIRET, IBAN, nom de client) est listée dans `analyse.json → zones_sensibles`
    et floutée au rendu.
 
@@ -81,6 +86,23 @@ Claude Code. Le pont est le protocole de `src/mcp/pont.ts` — le pipeline écri
 une demande dans `content/<module>/<Vxx>/mcp/<nom>.demande.json`, Claude Code
 exécute l'appel MCP et dépose la réponse dans `<nom>.reponse.json`, validée par
 zod. Voir `src/mcp/README.md`.
+
+## Images du présentateur
+
+`assets/presentateur/` contient les **16 photos détourées du présentateur
+RapidoCRM**, partagées par les 172 tutoriels. On ne les régénère jamais : on
+pioche dedans.
+
+- `src/brand/presentateur.ts` décrit chaque pose (intention, direction du
+  regard) et sépare les poses de **hook** (le problème : surpris, réflexion,
+  stop, présentation…) de celles d'**image de fin** (le résultat : victoire,
+  deux pouces, OK, casque…).
+- Le choix est **déterministe** : `poseHook(module, numero)` et
+  `poseFin(module, numero)` donnent toujours la même pose pour un tutoriel
+  donné, et répartissent les poses sur le catalogue.
+- Les fichiers sont en WebP avec canal alpha : le présentateur se pose
+  directement sur les aplats de la charte, sans cadre. Il est calé sur le bord
+  bas de la frame — la photo source est coupée au buste.
 
 ## Nommage des sorties
 

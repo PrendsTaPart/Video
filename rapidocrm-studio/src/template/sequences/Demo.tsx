@@ -83,7 +83,7 @@ export const Demo: React.FC<Props> = ({ script, alignement, minutage, demoSrc, v
 
       <SousTitres
         alignement={alignement}
-        decalageFrames={minutage.demo.debut}
+        decalageFrames={minutage.demo.debut - minutage.hook.debut}
       />
     </AbsoluteFill>
   );

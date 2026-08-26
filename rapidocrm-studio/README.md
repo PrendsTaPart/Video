@@ -64,12 +64,24 @@ validé par un schéma zod (`src/schema/index.ts`) avant usage.
 Les règles de fond — ton, charte, traçabilité, points d'arrêt — sont dans
 [`CLAUDE.md`](./CLAUDE.md).
 
+## Le présentateur
+
+`assets/presentateur/` : 16 photos détourées, réutilisées par les 172 tutoriels.
+Une pose ouvre le hook (le problème), une autre ferme la vidéo sur la punchline
+(le résultat). Le choix est déterministe par `(module, numéro)` — voir
+`src/brand/presentateur.ts` — donc stable d'un rendu à l'autre et réparti sur le
+catalogue.
+
+La vidéo s'ouvre par ailleurs sur la **vignette du tutoriel** pendant 1,4 s :
+celle de la fiche en ligne (MCP « RapidoCMS tutoriels ») si la clé d'API est
+renseignée, sinon le lien AWS de `publication.json`, sinon la vignette locale.
+
 ## Structure
 
 ```
 src/
-  brand/      tokens de charte, logos, fonds animés, typo
-  template/   les 5 séquences Remotion + les vignettes
+  brand/      tokens de charte, logos, fonds animés, typo, présentateur
+  template/   les 6 séquences Remotion + les vignettes
   pipeline/   analyse, fiche, script, voix, rendu, vignette, publications, QA, série
   mcp/        pont vers les serveurs MCP
   schema/     schémas zod de tous les fichiers d'échange

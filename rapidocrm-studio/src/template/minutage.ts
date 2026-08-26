@@ -2,7 +2,10 @@ import type { Alignement, Script } from '../schema/index.ts';
 
 export const FPS = 30;
 
+export const DUREE_OUVERTURE = 1.4; // secondes de vignette en ouverture
+
 export interface Minutage {
+  ouverture: { debut: number; duree: number };
   hook: { debut: number; duree: number };
   titre: { debut: number; duree: number };
   demo: { debut: number; duree: number; etapes: { debut: number; duree: number }[] };
@@ -23,10 +26,11 @@ export const calculerMinutage = (script: Script, alignement: Alignement | null):
     return bloc ? bloc.duree : defaut;
   };
 
+  const ouvertureDuree = enFrames(DUREE_OUVERTURE);
   const hookDuree = enFrames(dureeBloc('hook', script.hook.duree));
   const titreDuree = enFrames(dureeBloc('intro', script.intro.duree));
 
-  let curseur = hookDuree + titreDuree;
+  let curseur = ouvertureDuree + hookDuree + titreDuree;
   const demoDebut = curseur;
   const etapes = script.demo.etapes.map((etape) => {
     const defaut = Math.max(2, etape.fin_source - etape.debut_source);
@@ -46,8 +50,9 @@ export const calculerMinutage = (script: Script, alignement: Alignement | null):
   curseur += punchlineDuree;
 
   return {
-    hook: { debut: 0, duree: hookDuree },
-    titre: { debut: hookDuree, duree: titreDuree },
+    ouverture: { debut: 0, duree: ouvertureDuree },
+    hook: { debut: ouvertureDuree, duree: hookDuree },
+    titre: { debut: ouvertureDuree + hookDuree, duree: titreDuree },
     demo: { debut: demoDebut, duree: demoDuree, etapes },
     claude: { debut: claudeDebut, duree: claudeDuree },
     punchline: { debut: punchlineDebut, duree: punchlineDuree },
