@@ -51,7 +51,7 @@ export const RemotionRoot: React.FC = () => (
       width={1920}
       height={1080}
       fps={FPS}
-      defaultProps={{ ...defauts, demoSrc: 'references/ecran-commerciaux.png' }}
+      defaultProps={{ ...defauts, demoSrc: 'ecrans/liste-commerciaux.webp' }}
       durationInFrames={duree(defauts)}
     />
 

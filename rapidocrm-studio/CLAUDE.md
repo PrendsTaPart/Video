@@ -111,11 +111,20 @@ pioche dedans.
   séquence dit « collez-le dans Claude » et reste sur un seul assistant.
   `openai.png` et `mistral.png` restent en réserve, non montés — ne les ajouter
   au template que sur demande explicite.
-- `assets/references/ecran-commerciaux.png` — un écran RapidoCRM réel, utilisé
-  comme plan de démonstration par la composition `Preview` : le template se juge
-  avec une vraie interface plutôt qu'un cadre blanc.
+- `assets/ecrans/` — la **banque d'écrans RapidoCRM** (17 maquettes fournies
+  par l'équipe produit), décrite par `src/brand/ecrans.ts` : titre, module,
+  mots-clés, et `cadrage` (`capture` = l'écran remplit le cadre, utilisable
+  comme plan de démonstration ; `mockup` = ordinateur en situation, illustration
+  seulement). `ecranPour(module, titre, cadrage)` choisit le meilleur écran, ou
+  **rien** si aucun ne correspond vraiment — mieux vaut pas d'écran qu'un écran
+  hors sujet. `npm run ecrans` liste la banque, `--pour "<titre>"` montre le
+  choix retenu.
 
-Tous ces dossiers (`presentateur/`, `ia/`, `references/`) sont recopiés dans
+  Ces maquettes ne remplacent jamais l'enregistrement réel d'un tutoriel publié.
+  Quand `source.mp4` manque, le rendu retombe dessus **avec un avertissement** :
+  la vidéo se monte, mais la démonstration n'est pas une vraie capture.
+
+Tous ces dossiers (`presentateur/`, `ia/`, `ecrans/`) sont recopiés dans
 `public/` par `copierAssetsPartages`, appelé au rendu et par
 `npm run prepare:assets`.
 

@@ -7,7 +7,8 @@ import { AnalyseSchema, ScriptSchema, type Analyse, type Script } from '../schem
 import { assurerLogos, cheminLogo, LOGOS, type NomLogo } from '../brand/logos.ts';
 import { assurerDossier, lireJson, racineProjet } from '../util/chemins.ts';
 import { lancer } from '../util/ffmpeg.ts';
-import { etape, info } from '../util/journal.ts';
+import { avertir, etape, info } from '../util/journal.ts';
+import { cheminEcran, ecranPour } from '../brand/ecrans.ts';
 import { copierAssetsPartages } from './rendu.ts';
 
 const QUALITE = 90;
@@ -83,6 +84,16 @@ const extraireCaptureCle = async (
   analyse: Analyse,
   racinePublic: string,
 ): Promise<string> => {
+  // Sans enregistrement, on prend un écran de la banque plutôt que rien.
+  if (!existsSync(join(dossier, 'source.mp4'))) {
+    const repli = ecranPour(script.meta.module, script.meta.titre, 'capture');
+    if (!repli) return '';
+    avertir(
+      `Aucun source.mp4 : la vignette utilise l'écran « ${repli.nom} » de la banque.`,
+    );
+    return cheminEcran(repli.nom);
+  }
+
   const plusLongue = [...script.demo.etapes].sort(
     (a, b) => b.fin_source - b.debut_source - (a.fin_source - a.debut_source),
   )[0];

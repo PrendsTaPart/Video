@@ -80,9 +80,11 @@ renseignée, sinon le lien AWS de `publication.json`, sinon la vignette locale.
 
 `assets/ia/claude.png` habille l'en-tête de la carte prompt. `openai.png` et
 `mistral.png` restent en réserve, volontairement non montés.
-`assets/references/ecran-commerciaux.png` sert de plan de démonstration à la
-composition `Preview`, pour juger le cadre, le zoom et les annotations sans
-enregistrement source.
+`assets/ecrans/` est la banque d'écrans RapidoCRM (17 maquettes). Elle sert de
+plan de démonstration à la composition `Preview` et de repli quand un
+`source.mp4` manque — avec un avertissement, car une maquette n'est pas une
+capture. `npm run ecrans` liste la banque ; `npm run ecrans -- --module Fidélité
+--pour "Distribuer une carte NFC"` montre l'écran retenu.
 
 ## Structure
 

@@ -16,6 +16,7 @@ import { calculerMinutage, FPS } from '../template/minutage.ts';
 import { assurerDossier, ecrireJson, lireJson, racineProjet } from '../util/chemins.ts';
 import { lancer } from '../util/ffmpeg.ts';
 import { avertir, discret, etape, info } from '../util/journal.ts';
+import { cheminEcran, ecranPour } from '../brand/ecrans.ts';
 import { preparerScreencast } from './pretraitement.ts';
 import { recupererVignette } from './vignette-source.ts';
 
@@ -53,17 +54,35 @@ export const rendre = async (dossier: string, options: OptionsRendu = {}): Promi
   const formats: ('16x9' | '9x16')[] =
     options.format === 'tous' || !options.format ? ['16x9', '9x16'] : [options.format];
 
-  // 2. Pré-traitement ffmpeg de l'enregistrement source.
+  // 2. Pré-traitement ffmpeg de l'enregistrement source. Sans enregistrement,
+  //    on retombe sur un écran de la banque : la vidéo se monte, mais la
+  //    démonstration n'est plus une vraie capture — la QA doit le voir.
   const screencasts: Record<string, string> = {};
-  for (const format of formats) {
-    etape(`Pré-traitement de l'enregistrement (${format})`);
-    screencasts[format] = await preparerScreencast(
-      dossier,
-      script,
-      analyse,
-      racinePublic,
-      format,
+  const aSource = existsSync(join(dossier, 'source.mp4'));
+  if (!aSource) {
+    const repli = ecranPour(script.meta.module, script.meta.titre, 'capture');
+    if (!repli) {
+      throw new Error(
+        `Aucun source.mp4 dans ${dossier}, et aucun écran de la banque ne correspond ` +
+          `à « ${script.meta.titre} ». Fournissez l'enregistrement d'écran.`,
+      );
+    }
+    avertir(
+      `Aucun source.mp4 : la démonstration utilise l'écran « ${repli.nom} » de la banque. ` +
+        'À remplacer par la capture réelle avant publication.',
     );
+    for (const format of formats) screencasts[format] = cheminEcran(repli.nom);
+  } else {
+    for (const format of formats) {
+      etape(`Pré-traitement de l'enregistrement (${format})`);
+      screencasts[format] = await preparerScreencast(
+        dossier,
+        script,
+        analyse,
+        racinePublic,
+        format,
+      );
+    }
   }
 
   // Vignette d'ouverture (MCP RapidoCRM tuto, sinon vignette locale).
@@ -156,7 +175,7 @@ export const rendre = async (dossier: string, options: OptionsRendu = {}): Promi
  * présentateur détouré, logos des assistants, écrans de référence.
  */
 export const copierAssetsPartages = (racinePublic: string): void => {
-  for (const nom of ['presentateur', 'ia', 'references']) {
+  for (const nom of ['presentateur', 'ia', 'ecrans']) {
     const source = join(racineProjet(), 'assets', nom);
     if (!existsSync(source)) continue;
     const cible = assurerDossier(join(racinePublic, nom));

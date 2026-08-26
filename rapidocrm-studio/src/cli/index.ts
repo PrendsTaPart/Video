@@ -9,6 +9,7 @@ import { construireScript } from '../pipeline/script.ts';
 import { genererVoix } from '../pipeline/voix.ts';
 import { copierAssetsPartages, rendre, type Format } from '../pipeline/rendu.ts';
 import { assurerLogos, cheminLogo, LOGOS, type NomLogo } from '../brand/logos.ts';
+import { ECRANS, ecranPour } from '../brand/ecrans.ts';
 import { genererVignettes, vignettesEnLot } from '../pipeline/vignette.ts';
 import { publierRapidoCms } from '../pipeline/publier-rapidocms.ts';
 import { publierYoutube } from '../pipeline/publier-youtube.ts';
@@ -224,6 +225,30 @@ programme
     }
     copierAssetsPartages(racinePublic);
     info(`  Assets prêts dans ${racinePublic}`);
+  });
+
+programme
+  .command('ecrans')
+  .description('Liste la banque d\'écrans RapidoCRM et ce à quoi chacun se rattache')
+  .option('--pour <titre>', 'montre l\'écran retenu pour un titre de tutoriel')
+  .option('--module <module>', 'module du tutoriel, utilisé avec --pour', '')
+  .action((o) => {
+    if (o.pour) {
+      for (const cadrage of ['capture', 'mockup'] as const) {
+        const choix = ecranPour(o.module, o.pour, cadrage);
+        info(`  ${cadrage.padEnd(8)} → ${choix ? `${choix.nom} — ${choix.titre}` : '(aucun)'}`);
+      }
+      return;
+    }
+    let module = '';
+    for (const ecran of [...ECRANS].sort((a, b) => a.module.localeCompare(b.module))) {
+      if (ecran.module !== module) {
+        module = ecran.module;
+        info(`\n  ${module}`);
+      }
+      info(`   · ${ecran.nom.padEnd(30)} ${ecran.cadrage.padEnd(8)} ${ecran.titre}`);
+    }
+    info('');
   });
 
 programme

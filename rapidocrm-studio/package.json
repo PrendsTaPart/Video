@@ -22,6 +22,7 @@
     "serie": "tsx src/cli/index.ts serie",
     "qa": "tsx src/cli/index.ts qa",
     "regenerer": "tsx src/cli/index.ts regenerer",
+    "ecrans": "tsx src/cli/index.ts ecrans",
     "mcp:file": "tsx src/cli/index.ts mcp-file"
   },
   "dependencies": {

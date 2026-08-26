@@ -45,9 +45,9 @@ export const Vignette: React.FC<Props> = ({ script, captureSrc, vertical }) => {
         aspectRatio: '16 / 9',
       }}
     >
-      {captureSrc && (
+      {captureSrc ? (
         <Img src={staticFile(captureSrc)} style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
-      )}
+      ) : null}
     </div>
   );
 
