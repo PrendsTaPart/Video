@@ -69,8 +69,8 @@ export const rendre = async (dossier: string, options: OptionsRendu = {}): Promi
   // Vignette d'ouverture (MCP RapidoCRM tuto, sinon vignette locale).
   const vignetteSrc = await recupererVignette(dossier, script, racinePublic);
 
-  // Images du présentateur, partagées par tous les tutoriels.
-  copierPresentateur(racinePublic);
+  // Assets partagés : présentateur, logos des assistants, écrans de référence.
+  copierAssetsPartages(racinePublic);
 
   // Piste voix rendue accessible à Remotion.
   let audioSrc: string | null = null;
@@ -151,14 +151,19 @@ export const rendre = async (dossier: string, options: OptionsRendu = {}): Promi
   return rapport;
 };
 
-/** Recopie la banque d'images du présentateur dans public/, sans la dupliquer. */
-export const copierPresentateur = (racinePublic: string): void => {
-  const source = join(racineProjet(), 'assets', 'presentateur');
-  if (!existsSync(source)) return;
-  const cible = assurerDossier(join(racinePublic, 'presentateur'));
-  for (const fichier of readdirSync(source)) {
-    const destination = join(cible, fichier);
-    if (!existsSync(destination)) copyFileSync(join(source, fichier), destination);
+/**
+ * Recopie les assets partagés par les 172 tutoriels dans public/ :
+ * présentateur détouré, logos des assistants, écrans de référence.
+ */
+export const copierAssetsPartages = (racinePublic: string): void => {
+  for (const nom of ['presentateur', 'ia', 'references']) {
+    const source = join(racineProjet(), 'assets', nom);
+    if (!existsSync(source)) continue;
+    const cible = assurerDossier(join(racinePublic, nom));
+    for (const fichier of readdirSync(source)) {
+      const destination = join(cible, fichier);
+      if (!existsSync(destination)) copyFileSync(join(source, fichier), destination);
+    }
   }
 };
 

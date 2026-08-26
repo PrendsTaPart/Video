@@ -76,6 +76,14 @@ La vidéo s'ouvre par ailleurs sur la **vignette du tutoriel** pendant 1,4 s :
 celle de la fiche en ligne (MCP « RapidoCMS tutoriels ») si la clé d'API est
 renseignée, sinon le lien AWS de `publication.json`, sinon la vignette locale.
 
+## Autres assets
+
+`assets/ia/claude.png` habille l'en-tête de la carte prompt. `openai.png` et
+`mistral.png` sont stockés mais pas montés — à décider.
+`assets/references/ecran-commerciaux.png` sert de plan de démonstration à la
+composition `Preview`, pour juger le cadre, le zoom et les annotations sans
+enregistrement source.
+
 ## Structure
 
 ```

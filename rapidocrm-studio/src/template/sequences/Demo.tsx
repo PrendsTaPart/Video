@@ -2,6 +2,7 @@ import React from 'react';
 import {
   AbsoluteFill,
   Easing,
+  Img,
   OffthreadVideo,
   Sequence,
   interpolate,
@@ -128,7 +129,13 @@ const PlanEtape: React.FC<{
         }}
       >
         {demoSrc ? (
-          <OffthreadVideo src={staticFile(demoSrc)} muted />
+          estImage(demoSrc) ? (
+            // La composition Preview passe une capture fixe : elle sert à juger
+            // le cadre, le zoom et les annotations sans enregistrement source.
+            <Img src={staticFile(demoSrc)} style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
+          ) : (
+            <OffthreadVideo src={staticFile(demoSrc)} muted />
+          )
         ) : (
           <AbsoluteFill style={{ backgroundColor: BRAND.colors.blanc }} />
         )}
@@ -203,6 +210,8 @@ const Annotation: React.FC<{ etape: EtapeScript }> = ({ etape }) => {
 };
 
 const centreZone = (z: Zone) => ({ x: z.x + z.w / 2, y: z.y + z.h / 2 });
+
+const estImage = (chemin: string): boolean => /\.(png|jpe?g|webp)$/i.test(chemin);
 
 const ChapitreBarre: React.FC<{ numero: number; total: number; titre: string }> = ({
   numero,

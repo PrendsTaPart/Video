@@ -104,6 +104,20 @@ pioche dedans.
   directement sur les aplats de la charte, sans cadre. Il est calé sur le bord
   bas de la frame — la photo source est coupée au buste.
 
+## Autres assets partagés
+
+- `assets/ia/` — logos des assistants. **Seul `claude.png` est utilisé** au
+  montage, dans l'en-tête de la carte prompt (séquence 4). `openai.png` et
+  `mistral.png` sont stockés mais non montés : l'usage de marques tierces dans
+  les vidéos est une décision à prendre, pas un défaut.
+- `assets/references/ecran-commerciaux.png` — un écran RapidoCRM réel, utilisé
+  comme plan de démonstration par la composition `Preview` : le template se juge
+  avec une vraie interface plutôt qu'un cadre blanc.
+
+Tous ces dossiers (`presentateur/`, `ia/`, `references/`) sont recopiés dans
+`public/` par `copierAssetsPartages`, appelé au rendu et par
+`npm run prepare:assets`.
+
 ## Nommage des sorties
 
 ```

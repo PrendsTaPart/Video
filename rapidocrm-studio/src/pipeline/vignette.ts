@@ -8,7 +8,7 @@ import { assurerLogos, cheminLogo, LOGOS, type NomLogo } from '../brand/logos.ts
 import { assurerDossier, lireJson, racineProjet } from '../util/chemins.ts';
 import { lancer } from '../util/ffmpeg.ts';
 import { etape, info } from '../util/journal.ts';
-import { copierPresentateur } from './rendu.ts';
+import { copierAssetsPartages } from './rendu.ts';
 
 const QUALITE = 90;
 const POIDS_MAX = 2 * 1024 * 1024; // limite YouTube
@@ -34,7 +34,7 @@ export const genererVignettes = async (dossier: string): Promise<string[]> => {
     if (!existsSync(destination)) copyFileSync(cheminLogo(nom), destination);
   }
 
-  copierPresentateur(racinePublic);
+  copierAssetsPartages(racinePublic);
   const capture = await extraireCaptureCle(dossier, script, analyse, racinePublic);
   const serveUrl = await bundle({
     entryPoint: join(racineProjet(), 'src', 'template', 'index.ts'),

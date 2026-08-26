@@ -43,13 +43,15 @@ export const RemotionRoot: React.FC = () => (
     />
 
     {/* Prévisualisation du template : séquences 1, 2, 4 et 5, sans vidéo source. */}
+    {/* Prévisualisation du template : un écran RapidoCRM réel tient lieu de
+        plan de démonstration, pour juger le cadre, le zoom et les annotations. */}
     <Composition
       id="Preview"
       component={Video}
       width={1920}
       height={1080}
       fps={FPS}
-      defaultProps={defauts}
+      defaultProps={{ ...defauts, demoSrc: 'references/ecran-commerciaux.png' }}
       durationInFrames={duree(defauts)}
     />
 

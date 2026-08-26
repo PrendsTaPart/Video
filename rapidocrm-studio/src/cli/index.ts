@@ -7,7 +7,7 @@ import { analyser } from '../pipeline/analyse.ts';
 import { construireFiche } from '../pipeline/fiche.ts';
 import { construireScript } from '../pipeline/script.ts';
 import { genererVoix } from '../pipeline/voix.ts';
-import { copierPresentateur, rendre, type Format } from '../pipeline/rendu.ts';
+import { copierAssetsPartages, rendre, type Format } from '../pipeline/rendu.ts';
 import { assurerLogos, cheminLogo, LOGOS, type NomLogo } from '../brand/logos.ts';
 import { genererVignettes, vignettesEnLot } from '../pipeline/vignette.ts';
 import { publierRapidoCms } from '../pipeline/publier-rapidocms.ts';
@@ -222,7 +222,7 @@ programme
       const destination = join(assurerDossier(join(racinePublic, 'logos')), `${nom}.png`);
       if (!existsSync(destination)) copyFileSync(cheminLogo(nom), destination);
     }
-    copierPresentateur(racinePublic);
+    copierAssetsPartages(racinePublic);
     info(`  Assets prêts dans ${racinePublic}`);
   });
 

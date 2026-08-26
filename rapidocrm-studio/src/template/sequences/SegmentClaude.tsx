@@ -2,8 +2,10 @@ import React from 'react';
 import {
   AbsoluteFill,
   Easing,
+  Img,
   interpolate,
   spring,
+  staticFile,
   useCurrentFrame,
   useVideoConfig,
 } from 'remotion';
@@ -120,17 +122,13 @@ const CartePrompt: React.FC<{
         gap: height * 0.02,
       }}
     >
-      <div style={{ display: 'flex', alignItems: 'center', gap: height * 0.014 }}>
-        <div
-          style={{
-            width: height * 0.032,
-            height: height * 0.032,
-            borderRadius: 8,
-            background: BRAND.colors.grisPrimaire,
-          }}
+      <div style={{ display: 'flex', alignItems: 'center', gap: height * 0.016 }}>
+        <Img
+          src={staticFile('ia/claude.png')}
+          style={{ height: height * 0.034, width: 'auto', objectFit: 'contain' }}
         />
         <Etiquette fond={BRAND.colors.blanc} taille={0.017}>
-          {`Claude · MCP ${outilMcp || 'RapidoCRM'}`}
+          {`MCP ${outilMcp || 'RapidoCRM'}`}
         </Etiquette>
       </div>
 
