@@ -19,6 +19,35 @@ succès : ils ne sont conservés ci-dessous que comme trace du contenu déposé.
 13 et 21 ont été reportées dans `contenuDepose.cartes` via
 `ajouter_carte_prompt`.
 
+**Mise à jour du 26/08/2026, 21 h.** Quatre épisodes déposés — **07**, **10**,
+**28** et **33**. `videos_manquantes` annonce **18 déposées / 25 manquantes**.
+
+| Fiche | Vidéo (S3 RapidoCMS) | Vignette (S3 RapidoCMS) | Durée |
+|---|---|---|---|
+| 07 | `…/bibliotheque/planit-academie-tuto-07-enregistrer-sa-propre-carte-v2` | `…/bibliotheque/planit-academie-vignette-tuto-07-v2` | 1 min 07 |
+| 10 | `…/bibliotheque/planit-academie-tuto-10-lancer-une-tache-longue` | `…/bibliotheque/planit-academie-vignette-tuto-10` | 32 s |
+| 28 | `…/bibliotheque/planit-academie-tuto-28-installer-un-plugin` | `…/bibliotheque/planit-academie-vignette-tuto-28` | 48 s |
+| 33 | `…/bibliotheque/planit-academie-tuto-33-choisir-son-avatar` | `…/bibliotheque/planit-academie-vignette-tuto-33` | 1 min 05 |
+
+La **07 est un remplacement**, pas un ajout : elle était déjà `en_ligne` depuis
+le 19/08. Le nouveau montage a été téléversé sous un nom distinct — suffixe
+`-v2` — plutôt qu'en écrasant l'objet S3 existant : `upload_file_tool` ne
+documente pas son comportement en cas de nom déjà pris, et un remplacement
+silencieux aurait été invérifiable. **Les deux objets du 19/08 restent sur S3 et
+ne sont plus référencés** ; ils peuvent être supprimés via `delete_file_tool`
+une fois le nouveau montage validé.
+
+Sa transcription a dû être réécrite en deux temps : `enregistrer_video` ne
+touche pas au champ `transcription`, si bien que l'ancien texte — qui parlait
+encore de laisser la visibilité sur « Privé » — a survécu au dépôt de la
+nouvelle vidéo. Un appel explicite à `enregistrer_transcription` l'a corrigé.
+**À retenir pour tout remontage : redéposer la transcription même quand seule
+la vidéo change.**
+
+Les fiches 10, 28 et 33 ne déclarent aucune carte de prompt (`fiche.cartes`
+vide) : aucun `ajouter_carte_prompt` n'était à jouer. La carte de la 07 était
+déjà en place et a été conservée telle quelle.
+
 ### Deux réserves qui subsistent
 
 1. **`fiche.statut` reste à `a_produire`** sur une fiche déposée, alors que

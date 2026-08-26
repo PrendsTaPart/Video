@@ -15,10 +15,24 @@ de connaissance », **23** « Mettre à jour un document », **25** « Retirer u
 document » et **27** « Activer un skill ». Les quinze fiches sont `en_ligne` ;
 `videos_manquantes` annonce **15 déposées / 28 manquantes**.
 
-**Montés le 26/08, pas encore déposés** : **07** (remonté depuis la 2ᵉ version
-de la capture — l'écran de visibilité « Privé » a disparu de l'application),
-**10**, **28** et **33**. Le tutoriel 33 inaugure le module *Profil & Avatar 3D*
-(`#CA4DD8`).
+**État au 26/08/2026** : quatre épisodes de plus, montés **et déposés** —
+**07** (remonté depuis la 2ᵉ version de la capture : l'écran de visibilité
+« Privé » a disparu de l'application, la ligne de voix off correspondante a été
+réenregistrée), **10** « Lancer une tâche qui prend du temps », **28**
+« Installer un plugin » et **33** « Choisir l'avatar 3D de son agent ». Le
+tutoriel 33 inaugure le module *Profil & Avatar 3D* (`#CA4DD8`). La 07
+remplace son montage du 19/08 : nouvelle vidéo, nouvelle vignette, nouvelle
+transcription. `videos_manquantes` annonce **18 déposées / 25 manquantes**.
+
+Deux réserves consignées avec ce dépôt :
+
+- **Le tutoriel 10 ne couvre que la moitié de sa fiche.** La capture montre la
+  notification qui arrive puis le résultat qu'on retrouve ; le geste « Exécuter
+  en tâche de fond », cœur de la fiche, n'est pas filmé. La voix off le porte,
+  l'écran ne le montre pas. Une capture du lancement compléterait l'épisode.
+- **Aucune capture « Vidéo 7 » n'existe** dans le dossier Drive : le lien
+  fourni pour « Détail d'une tâche et historique d'exécutions » pointe vers
+  « Vidéo 9 — Liste des prompts et recherche », déjà utilisée pour la fiche 06.
 
 Les dix précédents sont montés depuis les captures téléversées le 19/08 (voir
 § 3, « Les captures et leur numérotation »). Deux captures restent de côté,
