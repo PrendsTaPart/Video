@@ -40,6 +40,23 @@ les skills » et **29** « Désactiver un skill ou un plugin ». Le tutoriel 15
 inaugure le module *Chat agentique* (`#9438F0`). `videos_manquantes` annonce
 **21 déposées / 22 manquantes**.
 
+**Correction du 27/08, en fin de journée.** La capture « Vidéo 25 » avait été
+rattachée à la fiche 15 parce qu'elle s'ouvre sur l'accueil du chat. C'était
+l'écran d'accès, pas le sujet : le sujet est l'entretien « Faire connaissance »
+en huit sections — *L'entreprise*, *Produits & services*, *Ton & style*,
+*Cibles & personas*. C'est mot pour mot ce que demande la **fiche 3**,
+« Renseignez votre activité, votre clientèle et votre ton de communication ».
+L'épisode est remonté pour la 3, avec sa propre voix off ; la fiche 15 est
+repassée `en_montage` et attend une capture d'un vrai premier échange.
+
+**Deux captures toujours sans fiche.** « Vidéo 30 — Affichage du profil » et
+« Vidéo 31 — Édition du profil » montrent le **profil de l'utilisateur** :
+adresse e-mail, nom d'utilisateur, bouton « Modifier ». Aucune des 43 fiches ne
+couvre ce sujet — les fiches 32, 33 et 34 portent sur l'**agent** (sa voix, son
+avatar, sa fiche), pas sur le compte. Il manque une fiche « Son profil
+utilisateur » côté produit. Ces deux captures affichent elles aussi l'adresse du
+compte de démonstration : elles demanderont le même masquage que le tutoriel 00.
+
 Le rattachement s'est fait **par le contenu de la capture**, jamais par son
 numéro :
 

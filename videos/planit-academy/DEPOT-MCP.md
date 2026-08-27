@@ -62,6 +62,18 @@ Aucune des trois fiches ne déclare de carte de prompt : pas d'appel à
 réserve n° 2 ci-dessous — celle du numéro 28 décrit « Actualiser le catalogue »,
 c'est-à-dire l'écran de la **capture** 28, pas celui de la fiche 28.
 
+**Mise à jour du 27/08/2026, soir.** La fiche **3** est déposée (42 s), la
+fiche **15** repassée hors ligne. `enregistrer_video` avec `enLigne: false`
+bascule `contenuDepose.statut` de `en_ligne` à **`en_montage`** — c'est le
+moyen de retirer un montage du site sans effacer ce qui a été déposé.
+
+| Fiche | Vidéo (S3 RapidoCMS) | Vignette (S3 RapidoCMS) | Durée |
+|---|---|---|---|
+| 3 | `…/bibliotheque/planit-academie-tuto-03-premiers-reglages` | `…/bibliotheque/planit-academie-vignette-tuto-03` | 42 s |
+
+La carte de prompt déclarée par la fiche 3 — « Décrire mon activité en trois
+lignes » — a été reportée via `ajouter_carte_prompt`.
+
 ### Deux réserves qui subsistent
 
 1. **`fiche.statut` reste à `a_produire`** sur une fiche déposée, alors que
