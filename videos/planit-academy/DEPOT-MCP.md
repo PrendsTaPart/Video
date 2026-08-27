@@ -48,6 +48,20 @@ Les fiches 10, 28 et 33 ne déclarent aucune carte de prompt (`fiche.cartes`
 vide) : aucun `ajouter_carte_prompt` n'était à jouer. La carte de la 07 était
 déjà en place et a été conservée telle quelle.
 
+**Mise à jour du 27/08/2026.** Trois épisodes déposés — **15**, **26** et
+**29**. `videos_manquantes` annonce **21 déposées / 22 manquantes**.
+
+| Fiche | Vidéo (S3 RapidoCMS) | Vignette (S3 RapidoCMS) | Durée |
+|---|---|---|---|
+| 15 | `…/bibliotheque/planit-academie-tuto-15-premiere-conversation` | `…/bibliotheque/planit-academie-vignette-tuto-15` | 41 s |
+| 26 | `…/bibliotheque/planit-academie-tuto-26-comprendre-les-skills` | `…/bibliotheque/planit-academie-vignette-tuto-26` | 51 s |
+| 29 | `…/bibliotheque/planit-academie-tuto-29-desactiver-un-skill` | `…/bibliotheque/planit-academie-vignette-tuto-29` | 48 s |
+
+Aucune des trois fiches ne déclare de carte de prompt : pas d'appel à
+`ajouter_carte_prompt`. Les trois `vignette_spec` confirment une fois de plus la
+réserve n° 2 ci-dessous — celle du numéro 28 décrit « Actualiser le catalogue »,
+c'est-à-dire l'écran de la **capture** 28, pas celui de la fiche 28.
+
 ### Deux réserves qui subsistent
 
 1. **`fiche.statut` reste à `a_produire`** sur une fiche déposée, alors que

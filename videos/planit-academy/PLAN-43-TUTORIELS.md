@@ -34,6 +34,25 @@ Deux réserves consignées avec ce dépôt :
   fourni pour « Détail d'une tâche et historique d'exécutions » pointe vers
   « Vidéo 9 — Liste des prompts et recherche », déjà utilisée pour la fiche 06.
 
+**État au 27/08/2026** : trois épisodes de plus, montés **et déposés** — **15**
+« Sa première conversation avec un agent », **26** « Comprendre à quoi servent
+les skills » et **29** « Désactiver un skill ou un plugin ». Le tutoriel 15
+inaugure le module *Chat agentique* (`#9438F0`). `videos_manquantes` annonce
+**21 déposées / 22 manquantes**.
+
+Le rattachement s'est fait **par le contenu de la capture**, jamais par son
+numéro :
+
+| Capture Drive | Ce qu'elle filme | Fiche |
+|---|---|---|
+| Vidéo 28 | liste des skills, « Actualiser », toast, puis Plugins | **26** |
+| Vidéo 27 | liste Plugins, recherche, interrupteurs, « Connecteur requis » | **29** |
+| Vidéo 25 | accueil du chat, bandeau « Faire connaissance », les 8 sections | **15** |
+
+**Réserve sur le 15.** La capture ne montre pas la rédaction d'un premier
+message : trois des quatre étapes de la fiche sont portées par la voix, pas par
+l'écran. Une capture d'un premier échange compléterait l'épisode.
+
 Les dix précédents sont montés depuis les captures téléversées le 19/08 (voir
 § 3, « Les captures et leur numérotation »). Deux captures restent de côté,
 faute de fiche correspondante : « Affichage du profil » et « Édition du
