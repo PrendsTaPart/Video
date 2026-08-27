@@ -1,13 +1,13 @@
 {
-  "duree": 75,
+  "duree": 86.46666666666667,
   "fichiers": [
     {
       "chemin": "/home/user/Video/rapidocrm-studio/content/Configuration/V10-configurer-son-iban/out/master-16x9.mp4",
-      "octets": 9681788
+      "octets": 10034901
     },
     {
       "chemin": "/home/user/Video/rapidocrm-studio/content/Configuration/V10-configurer-son-iban/out/master-9x16.mp4",
-      "octets": 8454418
+      "octets": 8804389
     }
   ],
   "sequences": [
@@ -24,22 +24,22 @@
     {
       "nom": "titre",
       "debut": 7.5,
-      "fin": 27.266666666666666
+      "fin": 38.733333333333334
     },
     {
       "nom": "demo",
-      "debut": 27.266666666666666,
-      "fin": 51.8
+      "debut": 38.733333333333334,
+      "fin": 63.266666666666666
     },
     {
       "nom": "claude",
-      "debut": 51.8,
-      "fin": 70.86666666666666
+      "debut": 63.266666666666666,
+      "fin": 82.33333333333333
     },
     {
       "nom": "punchline",
-      "debut": 70.86666666666666,
-      "fin": 75
+      "debut": 82.33333333333333,
+      "fin": 86.46666666666667
     }
   ],
   "chapitres_youtube": [
@@ -52,35 +52,33 @@
       "titre": "Configurer son IBAN"
     },
     {
-      "timecode": "00:27",
+      "timecode": "00:38",
       "titre": "Ouvrir les informations bancaires"
     },
     {
-      "timecode": "00:34",
+      "timecode": "00:45",
       "titre": "Nommer sa banque"
     },
     {
-      "timecode": "00:38",
+      "timecode": "00:49",
       "titre": "Renseigner le code guichet"
     },
     {
-      "timecode": "00:41",
+      "timecode": "00:52",
       "titre": "Saisir l'IBAN"
     },
     {
-      "timecode": "00:48",
+      "timecode": "00:59",
       "titre": "Enregistrer"
     },
     {
-      "timecode": "00:51",
+      "timecode": "01:03",
       "titre": "Faites-le avec Claude"
     },
     {
-      "timecode": "01:10",
+      "timecode": "01:22",
       "titre": "À retenir"
     }
   ],
-  "avertissements": [
-    "Durée finale 75s, hors de la fenêtre 80–170s."
-  ]
+  "avertissements": []
 }

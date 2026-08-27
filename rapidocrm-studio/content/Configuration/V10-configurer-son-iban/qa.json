@@ -71,7 +71,7 @@
       "famille": "Complétude",
       "intitule": "Transcription ≥ 200 mots",
       "statut": "ok",
-      "detail": "223 mots"
+      "detail": "257 mots"
     },
     {
       "famille": "Complétude",
@@ -94,9 +94,9 @@
     {
       "famille": "Complétude",
       "intitule": "Durée finale dans la fenêtre 80–170 s",
-      "statut": "avertissement",
-      "detail": "75 s"
+      "statut": "ok",
+      "detail": "86 s"
     }
   ],
-  "produit_le": "2026-08-27T14:58:08.839Z"
+  "produit_le": "2026-08-27T15:40:42.709Z"
 }

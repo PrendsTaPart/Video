@@ -227,6 +227,36 @@ const controlerAudio = async (dossier: string): Promise<Controle[]> => {
   return controles;
 };
 
+/**
+ * Seuil de netteté résiduelle. Mesuré sur V11, sur la même zone avant et après
+ * floutage : 14,5 et 15,8 sur l'enregistrement brut (adresse e-mail, numéro de
+ * carte) contre 0,6 · 1,5 · 1,5 sur les segments floutés. Un ordre de grandeur
+ * sépare les deux, le seuil se pose au milieu.
+ */
+const SEUIL_NETTETE = 4;
+
+/**
+ * Énergie haute fréquence : écart-type de l'écart entre l'image et sa version
+ * fortement floutée. On ne mesure pas le contraste — une zone à cheval sur un
+ * panneau blanc et un fond gris a un fort écart-type même parfaitement floutée,
+ * et c'est ce qui faisait échouer le contrôle à tort. On mesure ce qui reste de
+ * contours, c'est-à-dire ce qui reste lisible.
+ */
+const energieHauteFrequence = async (image: Buffer): Promise<number> => {
+  const net = await sharp(image).greyscale().raw().toBuffer();
+  const flou = await sharp(image).greyscale().blur(4).raw().toBuffer();
+  let somme = 0;
+  let sommeCarres = 0;
+  for (let i = 0; i < net.length; i++) {
+    const ecart = (net[i] as number) - (flou[i] as number);
+    somme += ecart;
+    sommeCarres += ecart * ecart;
+  }
+  const n = Math.max(1, net.length);
+  const moyenne = somme / n;
+  return Math.sqrt(Math.max(0, sommeCarres / n - moyenne * moyenne));
+};
+
 /** Extrait les frames des zones sensibles et vérifie qu'elles sont floues. */
 const controlerFloutage = async (
   dossier: string,
@@ -315,11 +345,12 @@ const controlerFloutage = async (
           ),
         })
       : sharp(image);
-    // Une zone floutée a un écart-type faible : les contours de texte ont disparu.
-    const { channels } = await extrait.greyscale().stats();
-    const nettete = channels[0]?.stdev ?? 0;
-    if (nettete > 28) {
-      problemes.push(`zone ${i + 1} (${zone.raison}) — netteté ${nettete.toFixed(0)}`);
+    // `sharp.stats()` lit l'image d'entrée et ignore les opérations en attente :
+    // l'`extract` ci-dessus ne serait pas appliqué. On matérialise donc le
+    // découpage dans un tampon avant toute mesure.
+    const nettete = await energieHauteFrequence(await extrait.png().toBuffer());
+    if (nettete > SEUIL_NETTETE) {
+      problemes.push(`zone ${i + 1} (${zone.raison}) — netteté ${nettete.toFixed(1)}`);
     }
   }
 

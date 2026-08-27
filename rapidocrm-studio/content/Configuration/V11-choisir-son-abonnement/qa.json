@@ -1,5 +1,5 @@
 {
-  "verte": true,
+  "verte": false,
   "controles": [
     {
       "famille": "Charte",
@@ -29,7 +29,7 @@
       "famille": "Lisibilité",
       "intitule": "Titre de vignette lisible en petit",
       "statut": "ok",
-      "detail": "17 caractères"
+      "detail": "22 caractères"
     },
     {
       "famille": "Audio",
@@ -41,7 +41,7 @@
       "famille": "Audio",
       "intitule": "Niveau de voix constant entre les blocs",
       "statut": "avertissement",
-      "detail": "écart de 7.8 dB"
+      "detail": "écart de 3.7 dB"
     },
     {
       "famille": "Audio",
@@ -51,9 +51,9 @@
     },
     {
       "famille": "Confidentialité",
-      "intitule": "3 zone(s) sensible(s) floutée(s)",
-      "statut": "ok",
-      "detail": ""
+      "intitule": "4 zone(s) sensible(s) floutée(s)",
+      "statut": "echec",
+      "detail": "zone 2 (Adresse e-mail réelle saisie sur la page de paiement) — netteté 14.3 · zone 3 (Numéro de carte, date d'expiration, CVC et nom du titulaire) — netteté 19.8"
     },
     {
       "famille": "Exactitude",
@@ -64,20 +64,20 @@
     {
       "famille": "Exactitude",
       "intitule": "Chaque bloc de la fiche porte sa source",
-      "statut": "ok",
-      "detail": ""
+      "statut": "avertissement",
+      "detail": "sans source : erreurs_frequentes"
     },
     {
       "famille": "Complétude",
       "intitule": "Transcription ≥ 200 mots",
       "statut": "ok",
-      "detail": "230 mots"
+      "detail": "305 mots"
     },
     {
       "famille": "Complétude",
       "intitule": "Au moins 3 étapes",
       "statut": "ok",
-      "detail": "5 étapes"
+      "detail": "7 étapes"
     },
     {
       "famille": "Complétude",
@@ -89,14 +89,14 @@
       "famille": "Complétude",
       "intitule": "SEO aux bonnes longueurs",
       "statut": "ok",
-      "detail": "titre 42 car., description 154 car."
+      "detail": "titre 43 car., description 148 car."
     },
     {
       "famille": "Complétude",
       "intitule": "Durée finale dans la fenêtre 80–170 s",
       "statut": "ok",
-      "detail": "82 s"
+      "detail": "106 s"
     }
   ],
-  "produit_le": "2026-08-27T15:40:27.400Z"
+  "produit_le": "2026-08-27T15:40:04.559Z"
 }
