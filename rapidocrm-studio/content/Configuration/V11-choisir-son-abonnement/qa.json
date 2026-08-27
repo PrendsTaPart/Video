@@ -1,5 +1,5 @@
 {
-  "verte": false,
+  "verte": true,
   "controles": [
     {
       "famille": "Charte",
@@ -52,8 +52,8 @@
     {
       "famille": "Confidentialité",
       "intitule": "4 zone(s) sensible(s) floutée(s)",
-      "statut": "echec",
-      "detail": "zone 2 (Adresse e-mail réelle saisie sur la page de paiement) — netteté 14.3 · zone 3 (Numéro de carte, date d'expiration, CVC et nom du titulaire) — netteté 19.8"
+      "statut": "ok",
+      "detail": ""
     },
     {
       "famille": "Exactitude",
@@ -64,8 +64,8 @@
     {
       "famille": "Exactitude",
       "intitule": "Chaque bloc de la fiche porte sa source",
-      "statut": "avertissement",
-      "detail": "sans source : erreurs_frequentes"
+      "statut": "ok",
+      "detail": ""
     },
     {
       "famille": "Complétude",
@@ -98,5 +98,5 @@
       "detail": "106 s"
     }
   ],
-  "produit_le": "2026-08-27T15:40:04.559Z"
+  "produit_le": "2026-08-27T15:41:21.219Z"
 }
