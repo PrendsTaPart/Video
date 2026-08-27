@@ -1,0 +1,146 @@
+{
+  "meta": {
+    "module": "Produits",
+    "numero": 4,
+    "titre": "Rattacher un produit à un programme de fidélité",
+    "titre_court": "Produit et fidélité",
+    "slug": "03-ajouter-le-produit-a-un-programme-fidelite"
+  },
+  "hook": {
+    "texte": "Votre programme de fidélité tourne. Mais aucun produit ne dit combien il rapporte.",
+    "promesse": "Deux champs, en bas de la fiche produit, et l'affaire est réglée.",
+    "duree": 9,
+    "alternatives": [
+      "Des points de fidélité qui ne sont attachés à rien ne récompensent personne.",
+      "Le réglage que tout le monde cherche dans le menu fidélité est ailleurs.",
+      "Un produit qui rapporte des points se vend différemment."
+    ]
+  },
+  "intro": {
+    "texte": "On part de la fiche d'un produit déjà créé, et on ressort avec ce produit rattaché à un programme de fidélité. Le réglage n'est pas dans le menu de la fidélité : il ferme le formulaire du produit, juste après la description. Une question, oui ou non. Si vous répondez oui, deux champs s'ouvrent : le programme concerné, et le nombre de points que l'achat fait gagner. Rien n'est définitif — la question se rouvre à chaque modification de la fiche. Un conseil avant de commencer : calez le nombre de points sur le prix du produit. Un barème cohérent se comprend sans avoir à l'expliquer.",
+    "duree": 39
+  },
+  "demo": {
+    "etapes": [
+      {
+        "numero": 1,
+        "titre": "Descendre au bas de la fiche produit",
+        "voix": "Bas de la fiche du produit, après la description. La dernière question du formulaire : ajouter au programme de fidélité ?",
+        "debut_source": 0,
+        "fin_source": 8.0,
+        "zone_focus": {
+          "x": 0.33,
+          "y": 0.35,
+          "w": 0.34,
+          "h": 0.6
+        },
+        "annotation": "la dernière question",
+        "point": {
+          "x": 0.5,
+          "y": 0.7
+        }
+      },
+      {
+        "numero": 2,
+        "titre": "Répondre oui à la question",
+        "voix": "On répond oui. Deux champs apparaissent.",
+        "debut_source": 8.0,
+        "fin_source": 11.5,
+        "zone_focus": {
+          "x": 0.33,
+          "y": 0.22,
+          "w": 0.34,
+          "h": 0.3
+        },
+        "annotation": "Oui",
+        "point": {
+          "x": 0.43,
+          "y": 0.37
+        }
+      },
+      {
+        "numero": 3,
+        "titre": "Choisir le programme et les points",
+        "voix": "Le programme, dans la liste — avec son nombre de clients. Puis les points que l'achat fait gagner.",
+        "debut_source": 11.5,
+        "fin_source": 18.0,
+        "zone_focus": {
+          "x": 0.33,
+          "y": 0.35,
+          "w": 0.34,
+          "h": 0.6
+        },
+        "annotation": "programme et points",
+        "point": {
+          "x": 0.5,
+          "y": 0.52
+        }
+      },
+      {
+        "numero": 4,
+        "titre": "Voir la confirmation",
+        "voix": "Et le bandeau confirme : produit modifié. Le rattachement est enregistré.",
+        "debut_source": 18.0,
+        "fin_source": 24.0,
+        "zone_focus": {
+          "x": 0.2,
+          "y": 0.02,
+          "w": 0.8,
+          "h": 0.9
+        },
+        "annotation": "Produit modifié avec succès !",
+        "point": {
+          "x": 0.83,
+          "y": 0.1
+        }
+      }
+    ]
+  },
+  "segment_claude": {
+    "accroche": "Ensuite, demandez-lui.",
+    "voix": "Reste à savoir si le programme choisi est vivant. RapidoCRM se branche sur Claude : vous écrivez votre demande en français, il lit vos données et vous répond. Copiez ce prompt, collez-le, et vous obtenez vos programmes avec leur nombre de clients et les points déjà offerts. De quoi vérifier, avant de rattacher, que vous visez le bon.",
+    "prompt": {
+      "texte": "Liste-moi mes programmes de fidélité avec leur nombre de clients et les points offerts.",
+      "variables": [],
+      "outil_mcp": "list_programmes_fidelite"
+    },
+    "resultat_affiche": {
+      "titre": "Programmes de fidélité",
+      "lignes": [
+        "Alexa — 0 client — 0 point offert",
+        "Fidélité boutique — 12 clients — 340 points offerts"
+      ]
+    },
+    "duree": 24
+  },
+  "punchline": {
+    "texte": "Un produit, un programme, un nombre de points. La fidélité devient concrète.",
+    "duree": 8,
+    "alternatives": [
+      "Ce qui rapporte des points mérite d'être écrit sur la fiche.",
+      "Le barème se décide une fois, et il tient.",
+      "Vos clients réguliers savent enfin ce qu'ils gagnent."
+    ]
+  },
+  "seo": {
+    "titre": "Produit et programme de fidélité — RapidoCRM",
+    "description": "Rattachez un produit RapidoCRM à un programme de fidélité : la question en bas de la fiche, le programme, les points. Le tutoriel de l'Académie.",
+    "mots_cles": [
+      "programme de fidélité",
+      "RapidoCRM",
+      "points fidélité",
+      "produit",
+      "catalogue",
+      "clients réguliers"
+    ],
+    "youtube_titre": "Rattacher un produit à un programme de fidélité — RapidoCRM",
+    "youtube_description": "Le tutoriel de la fidélité produit de RapidoCRM Académie.",
+    "youtube_tags": [
+      "RapidoCRM",
+      "fidélité",
+      "produit",
+      "CRM français",
+      "tutoriel"
+    ]
+  }
+}

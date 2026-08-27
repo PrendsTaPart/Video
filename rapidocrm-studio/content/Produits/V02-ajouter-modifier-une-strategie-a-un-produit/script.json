@@ -1,0 +1,124 @@
+{
+  "meta": {
+    "module": "Produits",
+    "numero": 2,
+    "titre": "Ajouter une stratégie à un produit",
+    "titre_court": "Ajouter une stratégie",
+    "slug": "03-ajouter-modifier-une-strategie-a-un-produit"
+  },
+  "hook": {
+    "texte": "Trois commerciaux vendent le même produit. Chacun le vend à sa façon.",
+    "promesse": "Une stratégie écrite sur la fiche, et tout le monde lit la même chose.",
+    "duree": 9,
+    "alternatives": [
+      "La consigne de vente qui reste dans la tête du gérant ne sert à personne.",
+      "Ce qu'on attend d'une offre mérite d'être écrit à côté d'elle.",
+      "Une stratégie datée et signée vaut mieux qu'un rappel en réunion."
+    ]
+  },
+  "intro": {
+    "texte": "On part de la liste des produits, et on ressort avec une consigne de vente attachée à l'un d'eux. La stratégie ne vit pas dans un document à part : elle se range sur la fiche du produit, avec son type, son nom et sa description. Le logiciel garde qui l'a écrite et quand. Et si la rédaction vous arrête, un bouton d'aide du bot vous propose un premier jet.",
+    "duree": 24
+  },
+  "demo": {
+    "etapes": [
+      {
+        "numero": 1,
+        "titre": "Ouvrir la fiche du produit",
+        "voix": "Depuis la liste des produits, le premier des trois boutons : voir.",
+        "debut_source": 0,
+        "fin_source": 8.0,
+        "zone_focus": { "x": 0.2, "y": 0.15, "w": 0.5, "h": 0.75 },
+        "annotation": "voir",
+        "point": { "x": 0.42, "y": 0.4 }
+      },
+      {
+        "numero": 2,
+        "titre": "Repérer les deux boutons",
+        "voix": "Deux boutons en haut à droite : liste des stratégies pour consulter, ajouter une stratégie pour créer.",
+        "debut_source": 8.0,
+        "fin_source": 14.0,
+        "zone_focus": { "x": 0.6, "y": 0.15, "w": 0.4, "h": 0.4 },
+        "annotation": "ajouter une stratégie",
+        "point": { "x": 0.9, "y": 0.3 }
+      },
+      {
+        "numero": 3,
+        "titre": "Choisir le type et nommer",
+        "voix": "Le type d'abord : stratégie commerciale. Puis le nom — décrivez ce qu'elle fait, pas un numéro d'essai.",
+        "debut_source": 14.0,
+        "fin_source": 24.0,
+        "zone_focus": { "x": 0.33, "y": 0.1, "w": 0.34, "h": 0.6 },
+        "annotation": "type et nom",
+        "point": { "x": 0.5, "y": 0.4 }
+      },
+      {
+        "numero": 4,
+        "titre": "Décrire la stratégie",
+        "voix": "La description dit ce qu'il faut faire. Écrivez-la en actions vérifiables : un nombre, un délai, une relance. Et si vous séchez, le bouton d'aide du bot propose un premier jet, à relire avant de valider.",
+        "debut_source": 24.0,
+        "fin_source": 34.0,
+        "zone_focus": { "x": 0.33, "y": 0.4, "w": 0.34, "h": 0.58 },
+        "annotation": "aide du bot",
+        "point": { "x": 0.52, "y": 0.73 }
+      },
+      {
+        "numero": 5,
+        "titre": "Relire la liste des stratégies",
+        "voix": "Et la stratégie apparaît dans le tableau : qui l'a écrite, son type, son nom, sa date de création. Quand plusieurs personnes en ajoutent, on sait d'où sort chaque consigne.",
+        "debut_source": 34.0,
+        "fin_source": 50.688,
+        "zone_focus": { "x": 0.22, "y": 0.2, "w": 0.76, "h": 0.55 },
+        "annotation": "le tableau des stratégies",
+        "point": { "x": 0.6, "y": 0.4 }
+      }
+    ]
+  },
+  "segment_claude": {
+    "accroche": "Ensuite, demandez-lui.",
+    "voix": "Vos consignes sont écrites. Pour repérer les produits qui n'en ont pas encore, RapidoCRM se branche sur Claude : vous écrivez votre demande en français, il lit vos données et vous répond. Copiez ce prompt, collez-le, et remplacez ce qui est entre crochets par le nombre voulu.",
+    "prompt": {
+      "texte": "Liste-moi mes [nombre] produits avec leur nature et leur prix.",
+      "variables": ["nombre"],
+      "outil_mcp": "list_products"
+    },
+    "resultat_affiche": {
+      "titre": "4 produits trouvés",
+      "lignes": [
+        "Pack site vitrine — service — 1 199,00 € HT",
+        "Maintenance annuelle — service — 480,00 € HT"
+      ]
+    },
+    "duree": 21
+  },
+  "punchline": {
+    "texte": "La stratégie vit sur le produit, plus dans une réunion oubliée.",
+    "duree": 7,
+    "alternatives": [
+      "Une consigne écrite se relit ; une consigne dite s'oublie.",
+      "Chaque produit porte désormais sa façon de se vendre.",
+      "Ce qui est daté et signé se discute mieux."
+    ]
+  },
+  "seo": {
+    "titre": "Ajouter une stratégie produit — RapidoCRM",
+    "description": "Attachez une stratégie commerciale à un produit RapidoCRM : type, nom, description, et l'aide du bot pour la rédiger. Le tutoriel de l'Académie.",
+    "mots_cles": [
+      "stratégie commerciale",
+      "RapidoCRM",
+      "produit",
+      "consigne de vente",
+      "équipe commerciale",
+      "catalogue"
+    ],
+    "youtube_titre": "Ajouter une stratégie à un produit — RapidoCRM",
+    "youtube_description": "Le tutoriel des stratégies produit de RapidoCRM Académie.",
+    "youtube_tags": [
+      "RapidoCRM",
+      "stratégie commerciale",
+      "produit",
+      "CRM français",
+      "tutoriel"
+    ]
+  }
+}

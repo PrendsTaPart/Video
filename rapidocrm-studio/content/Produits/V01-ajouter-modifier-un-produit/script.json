@@ -1,0 +1,184 @@
+{
+  "meta": {
+    "module": "Produits",
+    "numero": 1,
+    "titre": "Ajouter un produit",
+    "titre_court": "Ajouter un produit",
+    "slug": "03-ajouter-modifier-un-produit"
+  },
+  "hook": {
+    "texte": "Chaque devis, vous retapez les mêmes lignes. Et le prix TTC, vous le calculez de tête.",
+    "promesse": "Une fiche produit, et tout se reprend tout seul.",
+    "duree": 9,
+    "alternatives": [
+      "Un catalogue dans un tableur, c'est une erreur de prix qui attend son tour.",
+      "Ce que vous vendez mérite d'être écrit une fois pour toutes.",
+      "Le produit saisi aujourd'hui remplit vos devis de demain."
+    ]
+  },
+  "intro": {
+    "texte": "On part de la page Produits, vide, et on ressort avec une fiche complète. Un seul formulaire : le nom, une image, la période de validité, la nature, le prix, la TVA et la description. Et une dernière question, sur laquelle on reviendra : est-ce que ce produit fait gagner des points de fidélité. Un point à retenir dès maintenant — le prix TTC ne se saisit pas. Vous donnez le prix hors taxes et le taux, le logiciel fait le calcul.",
+    "duree": 26
+  },
+  "demo": {
+    "etapes": [
+      {
+        "numero": 1,
+        "titre": "Ouvrir la page Produits",
+        "voix": "Page Produits, encore vide. Une barre de recherche, un filtre par nature, et le bouton ajouter un produit.",
+        "debut_source": 0,
+        "fin_source": 5.0,
+        "zone_focus": {
+          "x": 0.0,
+          "y": 0.02,
+          "w": 1.0,
+          "h": 0.96
+        },
+        "annotation": "ajouter un produit",
+        "point": {
+          "x": 0.92,
+          "y": 0.27
+        }
+      },
+      {
+        "numero": 2,
+        "titre": "Nommer le produit et lui donner une image",
+        "voix": "Le nom d'abord : c'est lui qui apparaîtra sur vos documents commerciaux. Puis l'image, par le bouton parcourir — elle illustre la fiche dans la liste.",
+        "debut_source": 5.0,
+        "fin_source": 18.0,
+        "zone_focus": {
+          "x": 0.33,
+          "y": 0.05,
+          "w": 0.34,
+          "h": 0.9
+        },
+        "annotation": "nom et image",
+        "point": {
+          "x": 0.5,
+          "y": 0.3
+        }
+      },
+      {
+        "numero": 3,
+        "titre": "Fixer sa période et sa nature",
+        "voix": "Les dates de début et de fin bornent l'offre — utile pour une promotion. Puis la nature : service, par exemple. C'est elle qui alimente le filtre de la liste.",
+        "debut_source": 18.0,
+        "fin_source": 30.0,
+        "zone_focus": {
+          "x": 0.33,
+          "y": 0.02,
+          "w": 0.34,
+          "h": 0.9
+        },
+        "annotation": "période et nature",
+        "point": {
+          "x": 0.5,
+          "y": 0.36
+        }
+      },
+      {
+        "numero": 4,
+        "titre": "Renseigner le prix et la TVA",
+        "voix": "Le prix hors taxes, puis le taux dans la liste. Et le prix TTC se remplit tout seul. N'y touchez pas.",
+        "debut_source": 30.0,
+        "fin_source": 38.0,
+        "zone_focus": {
+          "x": 0.33,
+          "y": 0.35,
+          "w": 0.34,
+          "h": 0.6
+        },
+        "annotation": "le TTC se calcule",
+        "point": {
+          "x": 0.5,
+          "y": 0.6
+        }
+      },
+      {
+        "numero": 5,
+        "titre": "Décrire le produit",
+        "voix": "La description, en clair : c'est ce texte que le client lira. Et la fidélité ferme le formulaire.",
+        "debut_source": 38.0,
+        "fin_source": 43.48,
+        "zone_focus": {
+          "x": 0.33,
+          "y": 0.25,
+          "w": 0.34,
+          "h": 0.7
+        },
+        "annotation": "description",
+        "point": {
+          "x": 0.5,
+          "y": 0.45
+        }
+      },
+      {
+        "numero": 6,
+        "titre": "Retrouver la fiche dans la liste",
+        "voix": "Et voilà le produit au catalogue. Au survol, trois boutons : voir, modifier, supprimer. Le premier ouvre la fiche, où se rangeront ensuite les stratégies de vente.",
+        "debut_source": 43.48,
+        "fin_source": 60.48,
+        "zone_focus": {
+          "x": 0.2,
+          "y": 0.15,
+          "w": 0.5,
+          "h": 0.75
+        },
+        "annotation": "voir, modifier, supprimer",
+        "point": {
+          "x": 0.42,
+          "y": 0.45
+        }
+      }
+    ]
+  },
+  "segment_claude": {
+    "accroche": "Ensuite, demandez-lui.",
+    "voix": "Votre catalogue se remplit. Pour le relire sans ouvrir chaque fiche, RapidoCRM se branche sur Claude : vous écrivez votre demande en français, il lit vos données et vous répond, prix et TVA compris. Copiez ce prompt, collez-le, et remplacez ce qui est entre crochets par le nombre voulu.",
+    "prompt": {
+      "texte": "Liste-moi mes [nombre] produits avec leur prix et leur TVA.",
+      "variables": [
+        "nombre"
+      ],
+      "outil_mcp": "list_products"
+    },
+    "resultat_affiche": {
+      "titre": "4 produits trouvés",
+      "lignes": [
+        "Pack site vitrine — 1 199,00 € HT — TVA 5 %",
+        "Maintenance annuelle — 480,00 € HT — TVA 20 %"
+      ]
+    },
+    "duree": 22
+  },
+  "punchline": {
+    "texte": "Un produit saisi une fois, et vos devis se remplissent sans vous.",
+    "duree": 7,
+    "alternatives": [
+      "Le catalogue existe, les erreurs de prix disparaissent.",
+      "Ce que vous vendez est enfin écrit quelque part.",
+      "Une fiche produit vaut mieux qu'une ligne retapée."
+    ]
+  },
+  "seo": {
+    "titre": "Ajouter un produit sur RapidoCRM — tutoriel",
+    "description": "Créez une fiche produit sur RapidoCRM : nom, image, période, nature, prix HT et TVA, le TTC se calcule seul. Le tutoriel pas à pas de l'Académie.",
+    "mots_cles": [
+      "ajouter un produit",
+      "RapidoCRM",
+      "catalogue",
+      "prix TTC",
+      "TVA",
+      "devis"
+    ],
+    "youtube_titre": "Ajouter un produit — RapidoCRM",
+    "youtube_description": "Le tutoriel de création d'un produit de RapidoCRM Académie.",
+    "youtube_tags": [
+      "RapidoCRM",
+      "produit",
+      "catalogue",
+      "CRM français",
+      "tutoriel"
+    ]
+  }
+}
