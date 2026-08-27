@@ -1,0 +1,88 @@
+{
+  "meta": {
+    "module": "Configuration",
+    "numero": 2,
+    "titre": "Réinitialiser un mot de passe oublié",
+    "titre_court": "Mot de passe oublié",
+    "slug": "01-oublie-de-mot-de-passe"
+  },
+  "hook": {
+    "texte": "Vous êtes devant la page de connexion, et le mot de passe ne revient pas.",
+    "promesse": "En une minute, vous en choisissez un nouveau et vous retrouvez votre tableau de bord.",
+    "duree": 7,
+    "alternatives": [
+      "Trois semaines de congés, et le mot de passe s'est envolé.",
+      "Bloqué à la porte de votre propre CRM ?",
+      "Personne à appeler : vous pouvez le refaire vous-même."
+    ]
+  },
+  "intro": {
+    "texte": "On part de la page de connexion. RapidoCRM vous envoie un lien par e-mail, vous choisissez un nouveau mot de passe, et vous revenez là où vous vous étiez arrêté. Vous n'aurez besoin de personne, et l'ancien mot de passe ne vous sera jamais redemandé.",
+    "duree": 12
+  },
+  "demo": {
+    "etapes": [
+      { "numero": 1, "titre": "Ouvrir « mot de passe oublié »",
+        "voix": "Sous le champ mot de passe, le lien mot de passe oublié attend. Cliquez dessus : c'est le point de départ.",
+        "debut_source": 0, "fin_source": 6,
+        "zone_focus": { "x": 0.28, "y": 0.12, "w": 0.44, "h": 0.78 },
+        "annotation": "mot de passe oublié ?", "point": { "x": 0.63, "y": 0.575 } },
+      { "numero": 2, "titre": "Saisir son adresse e-mail",
+        "voix": "Saisissez l'adresse de votre compte. C'est elle qui vous sert d'identifiant, et c'est là que le lien arrivera. Puis validez avec envoyer le lien de réinitialisation.",
+        "debut_source": 6, "fin_source": 13.5,
+        "zone_focus": { "x": 0.28, "y": 0.12, "w": 0.44, "h": 0.78 },
+        "annotation": "votre adresse e-mail", "point": { "x": 0.50, "y": 0.53 } },
+      { "numero": 3, "titre": "Recevoir le lien de réinitialisation",
+        "voix": "Un bandeau vert confirme l'envoi. Le message part immédiatement : si rien n'arrive, c'est l'adresse qu'il faut revérifier, pas la patience.",
+        "debut_source": 13.5, "fin_source": 21.5,
+        "zone_focus": { "x": 0.55, "y": 0.02, "w": 0.45, "h": 0.35 },
+        "annotation": "lien envoyé", "point": { "x": 0.83, "y": 0.09 } },
+      { "numero": 4, "titre": "Choisir un nouveau mot de passe",
+        "voix": "Le lien ouvre cette page. Votre nouveau mot de passe, puis le même une seconde fois. L'ancien n'est jamais redemandé. Validez avec définir un nouveau mot de passe.",
+        "debut_source": 21.5, "fin_source": 34,
+        "zone_focus": { "x": 0.28, "y": 0.15, "w": 0.44, "h": 0.70 },
+        "annotation": "deux fois le même", "point": { "x": 0.50, "y": 0.42 } },
+      { "numero": 5, "titre": "Se reconnecter",
+        "voix": "Retour à la page de connexion, votre adresse est déjà là. Tapez le mot de passe que vous venez de choisir, et cliquez sur connexion.",
+        "debut_source": 34, "fin_source": 45,
+        "zone_focus": { "x": 0.28, "y": 0.12, "w": 0.44, "h": 0.78 },
+        "annotation": "connexion", "point": { "x": 0.50, "y": 0.675 } },
+      { "numero": 6, "titre": "Retrouver son tableau de bord",
+        "voix": "Et voilà votre tableau de bord, exactement comme vous l'aviez laissé. Vos clients, votre pipeline, vos factures : rien n'a bougé.",
+        "debut_source": 45, "fin_source": 51.09,
+        "zone_focus": { "x": 0.10, "y": 0.05, "w": 0.80, "h": 0.85 },
+        "annotation": "tableau de bord", "point": { "x": 0.35, "y": 0.24 } }
+    ]
+  },
+  "segment_claude": {
+    "accroche": "Ensuite, demandez-lui.",
+    "voix": "Vous avez retrouvé votre accès. Profitez-en pour vérifier qui d'autre entre dans votre CRM. RapidoCRM se branche sur Claude : vous écrivez votre demande en français, il lit votre CRM et vous répond. Copiez ce prompt, collez-le, et remplacez ce qui est entre crochets.",
+    "prompt": {
+      "texte": "Liste-moi les [nombre] utilisateurs de mon CRM, avec leur nom et leur adresse e-mail.",
+      "variables": ["nombre"],
+      "outil_mcp": "list_users"
+    },
+    "resultat_affiche": {
+      "titre": "4 utilisateurs trouvés",
+      "lignes": ["Dupont Jean — gérant", "Martin Claire — commerciale"]
+    },
+    "duree": 19
+  },
+  "punchline": {
+    "texte": "Un mot de passe oublié n'est jamais un compte perdu.",
+    "duree": 5,
+    "alternatives": [
+      "Une minute, et vous êtes de retour chez vous.",
+      "Aucun appel au support : la porte se rouvre toute seule.",
+      "Le CRM vous attendait. Il n'a rien perdu."
+    ]
+  },
+  "seo": {
+    "titre": "Mot de passe oublié RapidoCRM — le réinitialiser",
+    "description": "Mot de passe RapidoCRM oublié ? Demandez le lien par e-mail, choisissez-en un nouveau et retrouvez votre tableau de bord en une minute. Tutoriel pas à pas.",
+    "mots_cles": ["mot de passe oublié", "RapidoCRM", "réinitialiser", "connexion", "accès", "compte"],
+    "youtube_titre": "Mot de passe oublié sur RapidoCRM : le réinitialiser en 1 minute",
+    "youtube_description": "Le tutoriel de réinitialisation du mot de passe de RapidoCRM Académie.",
+    "youtube_tags": ["RapidoCRM", "mot de passe oublié", "réinitialiser", "CRM français", "tutoriel"]
+  }
+}

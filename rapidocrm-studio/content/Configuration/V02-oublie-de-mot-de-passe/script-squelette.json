@@ -1,0 +1,108 @@
+{
+  "meta": {
+    "module": "Configuration",
+    "numero": 2,
+    "titre": "Réinitialiser un mot de passe oublié",
+    "titre_court": "Réinitialiser un mot de pass",
+    "slug": "reinitialiser-un-mot-de-passe-oublie"
+  },
+  "demo": {
+    "etapes": [
+      {
+        "numero": 1,
+        "titre": "Ouvrir « mot de passe oublié »",
+        "voix": "",
+        "debut_source": 0,
+        "fin_source": 6,
+        "zone_focus": {
+          "x": 0.28,
+          "y": 0.12,
+          "w": 0.44,
+          "h": 0.78
+        },
+        "annotation": "Ouvrir « mot de passe oublié »"
+      },
+      {
+        "numero": 2,
+        "titre": "Saisir son adresse e-mail",
+        "voix": "",
+        "debut_source": 6,
+        "fin_source": 13.5,
+        "zone_focus": {
+          "x": 0.28,
+          "y": 0.12,
+          "w": 0.44,
+          "h": 0.78
+        },
+        "annotation": "Saisir son adresse e-mail"
+      },
+      {
+        "numero": 3,
+        "titre": "Recevoir le lien de réinitialisation",
+        "voix": "",
+        "debut_source": 13.5,
+        "fin_source": 21.5,
+        "zone_focus": {
+          "x": 0.55,
+          "y": 0.02,
+          "w": 0.45,
+          "h": 0.35
+        },
+        "annotation": "Recevoir le lien de réinitialisation"
+      },
+      {
+        "numero": 4,
+        "titre": "Choisir un nouveau mot de passe",
+        "voix": "",
+        "debut_source": 21.5,
+        "fin_source": 34,
+        "zone_focus": {
+          "x": 0.28,
+          "y": 0.15,
+          "w": 0.44,
+          "h": 0.7
+        },
+        "annotation": "Choisir un nouveau mot de passe"
+      },
+      {
+        "numero": 5,
+        "titre": "Se reconnecter",
+        "voix": "",
+        "debut_source": 34,
+        "fin_source": 45,
+        "zone_focus": {
+          "x": 0.28,
+          "y": 0.12,
+          "w": 0.44,
+          "h": 0.78
+        },
+        "annotation": "Se reconnecter"
+      },
+      {
+        "numero": 6,
+        "titre": "Retrouver son tableau de bord",
+        "voix": "",
+        "debut_source": 45,
+        "fin_source": 51.09,
+        "zone_focus": {
+          "x": 0.1,
+          "y": 0.05,
+          "w": 0.8,
+          "h": 0.85
+        },
+        "annotation": "Retrouver son tableau de bord"
+      }
+    ]
+  },
+  "segment_claude": {
+    "accroche": "Ou demandez-le simplement.",
+    "voix": "Vous n'avez pas envie de cliquer ? Copiez ce prompt, collez-le dans Claude, et c'est fait.",
+    "prompt": {
+      "texte": "Liste-moi les [nombre] utilisateurs de mon CRM, avec leur nom et leur adresse e-mail.",
+      "variables": [
+        "nombre"
+      ],
+      "outil_mcp": "list_users"
+    }
+  }
+}
