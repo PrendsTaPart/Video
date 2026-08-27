@@ -46,7 +46,9 @@ EPISODE = Episode(
         Segment("N2",  4.2, 11.5, "2 · Le formulaire d'inscription"),
         Segment("N3", 13.0, 17.5, "3 · L'adresse professionnelle"),
         Segment("N4", 26.0, 31.5, "4 · Mot de passe et confirmation"),
-        Segment("N5", 35.2, 39.2, "5 · Le code à 6 chiffres"),
+        # S'arrête avant que l'application quitte l'écran : la carte réduite
+        # de la bascule y redevient lisible.
+        Segment("N5", 34.2, 37.7, "5 · Le code à 6 chiffres"),
         Segment("N6", 42.0, 47.0, "6 · Le code reçu par email"),
         # Débute après la bascule multitâche : la carte réduite y laisse voir
         # l'adresse, trop petite pour être reconnue par le masquage.

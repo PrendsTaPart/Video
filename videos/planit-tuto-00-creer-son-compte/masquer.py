@@ -64,6 +64,12 @@ ECHELLES = (1.0, 0.85, 0.70, 0.58, 0.48)
 BANDE = (28, 745, 562, 58)
 FENETRES_CLAVIER = [(11.0, 16.0), (60.0, 65.5)]
 
+# Les deux bascules multitâche : l'application y est rendue en réduction et
+# déplacée, si bien qu'aucun gabarit ne la reconnaît de façon fiable, alors que
+# l'adresse y reste lisible. Ces plages ne servent aucun plan du montage — elles
+# sont floutées en entier plutôt que cherchées.
+FENETRES_TRANSITION = [(37.5, 42.2), (46.8, 53.4)]
+
 
 def image_a(cap, seconde: float) -> np.ndarray:
     cap.set(cv2.CAP_PROP_POS_MSEC, seconde * 1000)
@@ -115,6 +121,7 @@ def main() -> None:
 
     compte = {nom: 0 for nom, _ in gabarits}
     compte["clavier"] = 0
+    compte["transition"] = 0
     n = 0
     while True:
         ok, frame = cap.read()
@@ -139,6 +146,9 @@ def main() -> None:
                         g.shape[1], g.shape[0])
                 compte[nom] += 1
         seconde = (n - 1) / fps
+        if any(t0 <= seconde <= t1 for t0, t1 in FENETRES_TRANSITION):
+            frame[:] = cv2.GaussianBlur(frame, (0, 0), sigmaX=18, sigmaY=18)
+            compte["transition"] += 1
         if any(t0 <= seconde <= t1 for t0, t1 in FENETRES_CLAVIER):
             flouter(frame, *BANDE)
             compte["clavier"] += 1
