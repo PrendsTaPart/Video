@@ -1,5 +1,5 @@
 {
-  "duree_totale": 93.98857,
+  "duree_totale": 88.71183599999999,
   "blocs": [
     {
       "id": "hook",
@@ -164,240 +164,200 @@
       "id": "intro",
       "fichier": "voix/intro.mp3",
       "debut": 8.803265,
-      "duree": 13.97551,
-      "texte": "On part de la page de connexion. RapidoCRM vous envoie un lien par e-mail, vous choisissez un nouveau mot de passe, et vous revenez là où vous vous étiez arrêté. Vous n'aurez besoin de personne, et l'ancien mot de passe ne vous sera jamais redemandé.",
+      "duree": 12.199184,
+      "texte": "On part de la page de connexion, et on ressort sur votre tableau de bord avec un mot de passe tout neuf. Personne à appeler, aucun accès perdu : RapidoCRM sait vous rouvrir la porte tout seul.",
       "mots": [
         {
           "mot": "On",
           "debut": 0,
-          "fin": 0.3105668888888889
+          "fin": 0.3297076756756757
         },
         {
           "mot": "part",
-          "debut": 0.3105668888888889,
-          "fin": 0.6211337777777778
+          "debut": 0.3297076756756757,
+          "fin": 0.6594153513513514
         },
         {
           "mot": "de",
-          "debut": 0.6211337777777778,
-          "fin": 0.9317006666666667
+          "debut": 0.6594153513513514,
+          "fin": 0.9891230270270271
         },
         {
           "mot": "la",
-          "debut": 0.9317006666666667,
-          "fin": 1.2422675555555556
+          "debut": 0.9891230270270271,
+          "fin": 1.3188307027027029
         },
         {
           "mot": "page",
-          "debut": 1.2422675555555556,
-          "fin": 1.5528344444444444
+          "debut": 1.3188307027027029,
+          "fin": 1.6485383783783787
         },
         {
           "mot": "de",
-          "debut": 1.5528344444444444,
-          "fin": 1.8634013333333335
+          "debut": 1.6485383783783787,
+          "fin": 1.9782460540540543
         },
         {
-          "mot": "connexion.",
-          "debut": 1.8634013333333335,
-          "fin": 2.1739682222222223
-        },
-        {
-          "mot": "RapidoCRM",
-          "debut": 2.1739682222222223,
-          "fin": 2.484535111111111
-        },
-        {
-          "mot": "vous",
-          "debut": 2.484535111111111,
-          "fin": 2.795102
-        },
-        {
-          "mot": "envoie",
-          "debut": 2.795102,
-          "fin": 3.105668888888889
-        },
-        {
-          "mot": "un",
-          "debut": 3.105668888888889,
-          "fin": 3.4162357777777776
-        },
-        {
-          "mot": "lien",
-          "debut": 3.4162357777777776,
-          "fin": 3.726802666666667
-        },
-        {
-          "mot": "par",
-          "debut": 3.726802666666667,
-          "fin": 4.037369555555555
-        },
-        {
-          "mot": "e-mail,",
-          "debut": 4.037369555555555,
-          "fin": 4.347936444444445
-        },
-        {
-          "mot": "vous",
-          "debut": 4.347936444444445,
-          "fin": 4.658503333333333
-        },
-        {
-          "mot": "choisissez",
-          "debut": 4.658503333333333,
-          "fin": 4.969070222222222
-        },
-        {
-          "mot": "un",
-          "debut": 4.969070222222222,
-          "fin": 5.279637111111112
-        },
-        {
-          "mot": "nouveau",
-          "debut": 5.279637111111112,
-          "fin": 5.590204
-        },
-        {
-          "mot": "mot",
-          "debut": 5.590204,
-          "fin": 5.900770888888889
-        },
-        {
-          "mot": "de",
-          "debut": 5.900770888888889,
-          "fin": 6.211337777777778
-        },
-        {
-          "mot": "passe,",
-          "debut": 6.211337777777778,
-          "fin": 6.521904666666667
+          "mot": "connexion,",
+          "debut": 1.9782460540540543,
+          "fin": 2.30795372972973
         },
         {
           "mot": "et",
-          "debut": 6.521904666666667,
-          "fin": 6.832471555555555
+          "debut": 2.30795372972973,
+          "fin": 2.6376614054054057
         },
         {
-          "mot": "vous",
-          "debut": 6.832471555555555,
-          "fin": 7.143038444444445
+          "mot": "on",
+          "debut": 2.6376614054054057,
+          "fin": 2.9673690810810815
         },
         {
-          "mot": "revenez",
-          "debut": 7.143038444444445,
-          "fin": 7.453605333333334
+          "mot": "ressort",
+          "debut": 2.9673690810810815,
+          "fin": 3.2970767567567574
         },
         {
-          "mot": "là",
-          "debut": 7.453605333333334,
-          "fin": 7.764172222222222
+          "mot": "sur",
+          "debut": 3.2970767567567574,
+          "fin": 3.6267844324324328
         },
         {
-          "mot": "où",
-          "debut": 7.764172222222222,
-          "fin": 8.07473911111111
+          "mot": "votre",
+          "debut": 3.6267844324324328,
+          "fin": 3.9564921081081086
         },
         {
-          "mot": "vous",
-          "debut": 8.07473911111111,
-          "fin": 8.385306
-        },
-        {
-          "mot": "vous",
-          "debut": 8.385306,
-          "fin": 8.69587288888889
-        },
-        {
-          "mot": "étiez",
-          "debut": 8.69587288888889,
-          "fin": 9.006439777777778
-        },
-        {
-          "mot": "arrêté.",
-          "debut": 9.006439777777778,
-          "fin": 9.317006666666666
-        },
-        {
-          "mot": "Vous",
-          "debut": 9.317006666666666,
-          "fin": 9.627573555555555
-        },
-        {
-          "mot": "n'aurez",
-          "debut": 9.627573555555555,
-          "fin": 9.938140444444445
-        },
-        {
-          "mot": "besoin",
-          "debut": 9.938140444444445,
-          "fin": 10.248707333333334
+          "mot": "tableau",
+          "debut": 3.9564921081081086,
+          "fin": 4.286199783783784
         },
         {
           "mot": "de",
-          "debut": 10.248707333333334,
-          "fin": 10.559274222222223
+          "debut": 4.286199783783784,
+          "fin": 4.61590745945946
         },
         {
-          "mot": "personne,",
-          "debut": 10.559274222222223,
-          "fin": 10.86984111111111
+          "mot": "bord",
+          "debut": 4.61590745945946,
+          "fin": 4.945615135135136
         },
         {
-          "mot": "et",
-          "debut": 10.86984111111111,
-          "fin": 11.180408
+          "mot": "avec",
+          "debut": 4.945615135135136,
+          "fin": 5.2753228108108114
         },
         {
-          "mot": "l'ancien",
-          "debut": 11.180408,
-          "fin": 11.49097488888889
+          "mot": "un",
+          "debut": 5.2753228108108114,
+          "fin": 5.605030486486487
         },
         {
           "mot": "mot",
-          "debut": 11.49097488888889,
-          "fin": 11.801541777777778
+          "debut": 5.605030486486487,
+          "fin": 5.934738162162163
         },
         {
           "mot": "de",
-          "debut": 11.801541777777778,
-          "fin": 12.112108666666666
+          "debut": 5.934738162162163,
+          "fin": 6.2644458378378385
         },
         {
           "mot": "passe",
-          "debut": 12.112108666666666,
-          "fin": 12.422675555555555
+          "debut": 6.2644458378378385,
+          "fin": 6.594153513513515
         },
         {
-          "mot": "ne",
-          "debut": 12.422675555555555,
-          "fin": 12.733242444444445
+          "mot": "tout",
+          "debut": 6.594153513513515,
+          "fin": 6.92386118918919
+        },
+        {
+          "mot": "neuf.",
+          "debut": 6.92386118918919,
+          "fin": 7.2535688648648655
+        },
+        {
+          "mot": "Personne",
+          "debut": 7.2535688648648655,
+          "fin": 7.583276540540542
+        },
+        {
+          "mot": "à",
+          "debut": 7.583276540540542,
+          "fin": 7.912984216216217
+        },
+        {
+          "mot": "appeler,",
+          "debut": 7.912984216216217,
+          "fin": 8.242691891891893
+        },
+        {
+          "mot": "aucun",
+          "debut": 8.242691891891893,
+          "fin": 8.572399567567569
+        },
+        {
+          "mot": "accès",
+          "debut": 8.572399567567569,
+          "fin": 8.902107243243245
+        },
+        {
+          "mot": "perdu",
+          "debut": 8.902107243243245,
+          "fin": 9.23181491891892
+        },
+        {
+          "mot": ":",
+          "debut": 9.23181491891892,
+          "fin": 9.561522594594596
+        },
+        {
+          "mot": "RapidoCRM",
+          "debut": 9.561522594594596,
+          "fin": 9.891230270270272
+        },
+        {
+          "mot": "sait",
+          "debut": 9.891230270270272,
+          "fin": 10.220937945945947
         },
         {
           "mot": "vous",
-          "debut": 12.733242444444445,
-          "fin": 13.043809333333334
+          "debut": 10.220937945945947,
+          "fin": 10.550645621621623
         },
         {
-          "mot": "sera",
-          "debut": 13.043809333333334,
-          "fin": 13.354376222222223
+          "mot": "rouvrir",
+          "debut": 10.550645621621623,
+          "fin": 10.8803532972973
         },
         {
-          "mot": "jamais",
-          "debut": 13.354376222222223,
-          "fin": 13.66494311111111
+          "mot": "la",
+          "debut": 10.8803532972973,
+          "fin": 11.210060972972974
         },
         {
-          "mot": "redemandé.",
-          "debut": 13.66494311111111,
-          "fin": 13.97551
+          "mot": "porte",
+          "debut": 11.210060972972974,
+          "fin": 11.53976864864865
+        },
+        {
+          "mot": "tout",
+          "debut": 11.53976864864865,
+          "fin": 11.869476324324326
+        },
+        {
+          "mot": "seul.",
+          "debut": 11.869476324324326,
+          "fin": 12.199184
         }
       ]
     },
     {
       "id": "etape-01",
       "fichier": "voix/etape-01.mp3",
-      "debut": 22.778775,
+      "debut": 21.002449,
       "duree": 6.452245,
       "texte": "Sous le champ mot de passe, le lien mot de passe oublié attend. Cliquez dessus : c'est le point de départ.",
       "mots": [
@@ -511,7 +471,7 @@
     {
       "id": "etape-02",
       "fichier": "voix/etape-02.mp3",
-      "debut": 29.23102,
+      "debut": 27.454693999999996,
       "duree": 8.85551,
       "texte": "Saisissez l'adresse de votre compte. C'est elle qui vous sert d'identifiant, et c'est là que le lien arrivera. Puis validez avec envoyer le lien de réinitialisation.",
       "mots": [
@@ -650,7 +610,7 @@
     {
       "id": "etape-03",
       "fichier": "voix/etape-03.mp3",
-      "debut": 38.08653,
+      "debut": 36.310204,
       "duree": 8.385306,
       "texte": "Un bandeau vert confirme l'envoi. Le message part immédiatement : si rien n'arrive, c'est l'adresse qu'il faut revérifier, pas la patience.",
       "mots": [
@@ -764,7 +724,7 @@
     {
       "id": "etape-04",
       "fichier": "voix/etape-04.mp3",
-      "debut": 46.471836,
+      "debut": 44.69551,
       "duree": 9.795918,
       "texte": "Le lien ouvre cette page. Votre nouveau mot de passe, puis le même une seconde fois. L'ancien n'est jamais redemandé. Validez avec définir un nouveau mot de passe.",
       "mots": [
@@ -913,7 +873,7 @@
     {
       "id": "etape-05",
       "fichier": "voix/etape-05.mp3",
-      "debut": 56.267754000000004,
+      "debut": 54.491428,
       "duree": 7.78449,
       "texte": "Retour à la page de connexion, votre adresse est déjà là. Tapez le mot de passe que vous venez de choisir, et cliquez sur connexion.",
       "mots": [
@@ -1047,7 +1007,7 @@
     {
       "id": "etape-06",
       "fichier": "voix/etape-06.mp3",
-      "debut": 64.052244,
+      "debut": 62.275918,
       "duree": 7.366531,
       "texte": "Et voilà votre tableau de bord, exactement comme vous l'aviez laissé. Vos clients, votre pipeline, vos factures : rien n'a bougé.",
       "mots": [
@@ -1161,236 +1121,236 @@
     {
       "id": "claude",
       "fichier": "voix/claude.mp3",
-      "debut": 71.418775,
-      "duree": 19.461224,
-      "texte": "Vous avez retrouvé votre accès. Profitez-en pour vérifier qui d'autre entre dans votre CRM. RapidoCRM se branche sur Claude : vous écrivez votre demande en français, il lit votre CRM et vous répond. Copiez ce prompt, collez-le, et remplacez ce qui est entre crochets.",
+      "debut": 69.642449,
+      "duree": 15.960816,
+      "texte": "Vous avez retrouvé votre accès. Profitez-en pour voir qui d'autre entre dans votre espace. RapidoCRM se branche sur Claude : vous écrivez votre demande en français, il lit vos données et vous répond. Copiez ce prompt, collez-le, et remplacez ce qui est entre crochets.",
       "mots": [
         {
           "mot": "Vous",
           "debut": 0,
-          "fin": 0.4423005454545455
+          "fin": 0.36274581818181817
         },
         {
           "mot": "avez",
-          "debut": 0.4423005454545455,
-          "fin": 0.884601090909091
+          "debut": 0.36274581818181817,
+          "fin": 0.7254916363636363
         },
         {
           "mot": "retrouvé",
-          "debut": 0.884601090909091,
-          "fin": 1.3269016363636366
+          "debut": 0.7254916363636363,
+          "fin": 1.0882374545454545
         },
         {
           "mot": "votre",
-          "debut": 1.3269016363636366,
-          "fin": 1.769202181818182
+          "debut": 1.0882374545454545,
+          "fin": 1.4509832727272727
         },
         {
           "mot": "accès.",
-          "debut": 1.769202181818182,
-          "fin": 2.2115027272727277
+          "debut": 1.4509832727272727,
+          "fin": 1.8137290909090908
         },
         {
           "mot": "Profitez-en",
-          "debut": 2.2115027272727277,
-          "fin": 2.653803272727273
+          "debut": 1.8137290909090908,
+          "fin": 2.176474909090909
         },
         {
           "mot": "pour",
-          "debut": 2.653803272727273,
-          "fin": 3.0961038181818186
+          "debut": 2.176474909090909,
+          "fin": 2.539220727272727
         },
         {
-          "mot": "vérifier",
-          "debut": 3.0961038181818186,
-          "fin": 3.538404363636364
+          "mot": "voir",
+          "debut": 2.539220727272727,
+          "fin": 2.9019665454545454
         },
         {
           "mot": "qui",
-          "debut": 3.538404363636364,
-          "fin": 3.9807049090909095
+          "debut": 2.9019665454545454,
+          "fin": 3.2647123636363635
         },
         {
           "mot": "d'autre",
-          "debut": 3.9807049090909095,
-          "fin": 4.423005454545455
+          "debut": 3.2647123636363635,
+          "fin": 3.6274581818181817
         },
         {
           "mot": "entre",
-          "debut": 4.423005454545455,
-          "fin": 4.865306
+          "debut": 3.6274581818181817,
+          "fin": 3.990204
         },
         {
           "mot": "dans",
-          "debut": 4.865306,
-          "fin": 5.307606545454546
+          "debut": 3.990204,
+          "fin": 4.352949818181818
         },
         {
           "mot": "votre",
-          "debut": 5.307606545454546,
-          "fin": 5.749907090909091
+          "debut": 4.352949818181818,
+          "fin": 4.715695636363636
         },
         {
-          "mot": "CRM.",
-          "debut": 5.749907090909091,
-          "fin": 6.192207636363637
+          "mot": "espace.",
+          "debut": 4.715695636363636,
+          "fin": 5.078441454545454
         },
         {
           "mot": "RapidoCRM",
-          "debut": 6.192207636363637,
-          "fin": 6.634508181818182
+          "debut": 5.078441454545454,
+          "fin": 5.441187272727273
         },
         {
           "mot": "se",
-          "debut": 6.634508181818182,
-          "fin": 7.076808727272728
+          "debut": 5.441187272727273,
+          "fin": 5.803933090909091
         },
         {
           "mot": "branche",
-          "debut": 7.076808727272728,
-          "fin": 7.519109272727274
+          "debut": 5.803933090909091,
+          "fin": 6.166678909090908
         },
         {
           "mot": "sur",
-          "debut": 7.519109272727274,
-          "fin": 7.961409818181819
+          "debut": 6.166678909090908,
+          "fin": 6.529424727272727
         },
         {
           "mot": "Claude",
-          "debut": 7.961409818181819,
-          "fin": 8.403710363636364
+          "debut": 6.529424727272727,
+          "fin": 6.892170545454546
         },
         {
           "mot": ":",
-          "debut": 8.403710363636364,
-          "fin": 8.84601090909091
+          "debut": 6.892170545454546,
+          "fin": 7.254916363636363
         },
         {
           "mot": "vous",
-          "debut": 8.84601090909091,
-          "fin": 9.288311454545456
+          "debut": 7.254916363636363,
+          "fin": 7.617662181818181
         },
         {
           "mot": "écrivez",
-          "debut": 9.288311454545456,
-          "fin": 9.730612
+          "debut": 7.617662181818181,
+          "fin": 7.980408
         },
         {
           "mot": "votre",
-          "debut": 9.730612,
-          "fin": 10.172912545454546
+          "debut": 7.980408,
+          "fin": 8.343153818181818
         },
         {
           "mot": "demande",
-          "debut": 10.172912545454546,
-          "fin": 10.615213090909092
+          "debut": 8.343153818181818,
+          "fin": 8.705899636363636
         },
         {
           "mot": "en",
-          "debut": 10.615213090909092,
-          "fin": 11.057513636363637
+          "debut": 8.705899636363636,
+          "fin": 9.068645454545454
         },
         {
           "mot": "français,",
-          "debut": 11.057513636363637,
-          "fin": 11.499814181818182
+          "debut": 9.068645454545454,
+          "fin": 9.431391272727272
         },
         {
           "mot": "il",
-          "debut": 11.499814181818182,
-          "fin": 11.94211472727273
+          "debut": 9.431391272727272,
+          "fin": 9.794137090909091
         },
         {
           "mot": "lit",
-          "debut": 11.94211472727273,
-          "fin": 12.384415272727274
+          "debut": 9.794137090909091,
+          "fin": 10.156882909090909
         },
         {
-          "mot": "votre",
-          "debut": 12.384415272727274,
-          "fin": 12.82671581818182
+          "mot": "vos",
+          "debut": 10.156882909090909,
+          "fin": 10.519628727272726
         },
         {
-          "mot": "CRM",
-          "debut": 12.82671581818182,
-          "fin": 13.269016363636364
+          "mot": "données",
+          "debut": 10.519628727272726,
+          "fin": 10.882374545454546
         },
         {
           "mot": "et",
-          "debut": 13.269016363636364,
-          "fin": 13.711316909090911
+          "debut": 10.882374545454546,
+          "fin": 11.245120363636364
         },
         {
           "mot": "vous",
-          "debut": 13.711316909090911,
-          "fin": 14.153617454545456
+          "debut": 11.245120363636364,
+          "fin": 11.607866181818181
         },
         {
           "mot": "répond.",
-          "debut": 14.153617454545456,
-          "fin": 14.595918000000001
+          "debut": 11.607866181818181,
+          "fin": 11.970612
         },
         {
           "mot": "Copiez",
-          "debut": 14.595918000000001,
-          "fin": 15.038218545454548
+          "debut": 11.970612,
+          "fin": 12.333357818181817
         },
         {
           "mot": "ce",
-          "debut": 15.038218545454548,
-          "fin": 15.480519090909093
+          "debut": 12.333357818181817,
+          "fin": 12.696103636363636
         },
         {
           "mot": "prompt,",
-          "debut": 15.480519090909093,
-          "fin": 15.922819636363638
+          "debut": 12.696103636363636,
+          "fin": 13.058849454545454
         },
         {
           "mot": "collez-le,",
-          "debut": 15.922819636363638,
-          "fin": 16.365120181818185
+          "debut": 13.058849454545454,
+          "fin": 13.421595272727272
         },
         {
           "mot": "et",
-          "debut": 16.365120181818185,
-          "fin": 16.807420727272728
+          "debut": 13.421595272727272,
+          "fin": 13.784341090909091
         },
         {
           "mot": "remplacez",
-          "debut": 16.807420727272728,
-          "fin": 17.249721272727275
+          "debut": 13.784341090909091,
+          "fin": 14.147086909090909
         },
         {
           "mot": "ce",
-          "debut": 17.249721272727275,
-          "fin": 17.69202181818182
+          "debut": 14.147086909090909,
+          "fin": 14.509832727272727
         },
         {
           "mot": "qui",
-          "debut": 17.69202181818182,
-          "fin": 18.134322363636365
+          "debut": 14.509832727272727,
+          "fin": 14.872578545454544
         },
         {
           "mot": "est",
-          "debut": 18.134322363636365,
-          "fin": 18.57662290909091
+          "debut": 14.872578545454544,
+          "fin": 15.235324363636362
         },
         {
           "mot": "entre",
-          "debut": 18.57662290909091,
-          "fin": 19.018923454545458
+          "debut": 15.235324363636362,
+          "fin": 15.598070181818182
         },
         {
           "mot": "crochets.",
-          "debut": 19.018923454545458,
-          "fin": 19.461224
+          "debut": 15.598070181818182,
+          "fin": 15.960816
         }
       ]
     },
     {
       "id": "punchline",
       "fichier": "voix/punchline.mp3",
-      "debut": 90.879999,
+      "debut": 85.603265,
       "duree": 3.108571,
       "texte": "Un mot de passe oublié n'est jamais un compte perdu.",
       "mots": [

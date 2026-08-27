@@ -340,6 +340,34 @@ d'économie principal.
 Corollaire à la rédaction : quand une formulation identique convient à
 plusieurs tutoriels, **la reprendre au mot près** plutôt que la paraphraser.
 
+### L'ouverture montre la vignette du tutoriel
+
+La vidéo s'ouvre sur la vignette **dans un mockup de navigateur**. Elle vient en
+priorité de `vignette.jpg`, déposée dans le dossier du tutoriel : c'est la
+vignette de l'Académie, récupérée une fois sur
+`https://academie-rapidocrm.lovable.app/api/public/vignettes/<slug>.jpg` et
+versionnée avec le tutoriel. Aucune clé d'API, aucun appel réseau au rendu,
+aucune ouverture sur un mockup vide. Les autres sources (lien AWS de
+`publication.json`, fiche en ligne via le MCP, `out/thumb-16x9.jpg`) ne servent
+que de repli.
+
+### Le pitch d'ouverture
+
+L'intro dit **ce qu'on va voir à l'écran**, pas seulement ce qu'on va faire.
+Elle nomme la page de départ et la page d'arrivée, et annonce en une phrase le
+bénéfice concret. Elle ne récite pas la liste des étapes — la démonstration
+s'en charge — et elle ne commente jamais l'habillage (« voici une maquette »,
+« sur cette capture »). Le spectateur doit comprendre où il est et pourquoi ça
+vaut le coup de rester, en deux phrases.
+
+### Ne pas marteler « C.R.M. »
+
+**Au plus une occurrence de « C.R.M. » par bloc de voix**, et jamais deux fois
+dans la même phrase. Ailleurs, on désigne le logiciel autrement : « votre
+espace », « le logiciel », « RapidoCRM », « votre tableau de bord », ou tout
+simplement rien du tout — « vos clients », « vos factures » suffisent souvent.
+La répétition s'entend beaucoup plus à l'oral qu'elle ne se voit à l'écrit.
+
 ## Nommage des sorties
 
 ```

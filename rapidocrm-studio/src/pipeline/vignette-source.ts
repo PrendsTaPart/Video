@@ -19,10 +19,12 @@ const FicheTutorielSchema = z
 /**
  * Récupère la vignette à afficher en ouverture de vidéo, dans cet ordre :
  *
- * 1. le lien déjà connu dans `publication.json` (bibliothèque RapidoCMS) ;
- * 2. la fiche du tutoriel sur le site, via le MCP « RapidoCRM tuto »
+ * 1. `vignette.jpg` déposée dans le dossier du tutoriel — la vignette de
+ *    l'Académie, récupérée une fois et versionnée avec le tutoriel ;
+ * 2. le lien déjà connu dans `publication.json` (bibliothèque RapidoCMS) ;
+ * 3. la fiche du tutoriel sur le site, via le MCP « RapidoCRM tuto »
  *    (`obtenir_tutoriel`) — c'est la vignette réellement en ligne ;
- * 3. la vignette produite localement (`out/thumb-16x9.jpg`).
+ * 4. la vignette produite localement (`out/thumb-16x9.jpg`).
  *
  * Retourne un chemin relatif à `public/`, ou `null` si aucune vignette n'existe
  * encore : l'ouverture se réduit alors à un fond de charte.
@@ -36,7 +38,16 @@ export const recupererVignette = async (
   const relatif = join(script.meta.slug, 'vignette-ouverture.jpg');
   const destination = join(destinationDossier, 'vignette-ouverture.jpg');
 
-  // 1. Lien déjà obtenu à la publication RapidoCMS.
+  // 1. Vignette déposée à côté du tutoriel. C'est la source la plus sûre :
+  //    aucun réseau, aucune clé d'API, et elle suit le tutoriel dans le dépôt.
+  const deposee = join(dossier, 'vignette.jpg');
+  if (existsSync(deposee)) {
+    copyFileSync(deposee, destination);
+    discret("   vignette d'ouverture : vignette.jpg du tutoriel");
+    return relatif;
+  }
+
+  // 2. Lien déjà obtenu à la publication RapidoCMS.
   const cheminPublication = join(dossier, 'publication.json');
   if (existsSync(cheminPublication)) {
     const publication = PublicationSchema.parse(lireJson(cheminPublication));
@@ -47,7 +58,7 @@ export const recupererVignette = async (
     }
   }
 
-  // 2. La fiche en ligne, via le MCP du site.
+  // 3. La fiche en ligne, via le MCP du site.
   const cleApi = process.env.RAPIDO_ACADEMIE_API_KEY;
   if (cleApi) {
     try {
@@ -82,7 +93,7 @@ export const recupererVignette = async (
     );
   }
 
-  // 3. Repli local.
+  // 4. Repli local.
   const locale = join(dossier, 'out', 'thumb-16x9.jpg');
   if (existsSync(locale)) {
     copyFileSync(locale, destination);
@@ -91,8 +102,8 @@ export const recupererVignette = async (
   }
 
   avertir(
-    'Aucune vignette disponible : l\'ouverture affichera un fond de charte. ' +
-      'Lancez `npm run vignette` avant le rendu.',
+    "Aucune vignette disponible : l'ouverture affichera un fond de charte. " +
+      'Déposez vignette.jpg dans le dossier du tutoriel, ou lancez `npm run vignette`.',
   );
   return null;
 };
