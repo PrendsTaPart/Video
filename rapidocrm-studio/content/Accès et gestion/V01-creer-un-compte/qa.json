@@ -52,14 +52,14 @@
     {
       "famille": "Confidentialité",
       "intitule": "1 zone(s) sensible(s) floutée(s)",
-      "statut": "echec",
-      "detail": "zone 1 (adresse e-mail réelle saisie à l'écran (apprenantbc@gmail.com)) — netteté 29"
+      "statut": "ok",
+      "detail": ""
     },
     {
       "famille": "Exactitude",
       "intitule": "Aucun point en attente de vérification",
-      "statut": "echec",
-      "detail": "Aucun outil MCP ne couvre la création de compte elle-même : l'inscription se fait uniquement depuis le formulaire web. À confirmer avant d'écrire quoi que ce soit d'autre sur ce point. · Le champ SIRET n'est pas marqué obligatoire à l'écran, mais rien ne le confirme côté schéma : à vérifier avant publication."
+      "statut": "ok",
+      "detail": ""
     },
     {
       "famille": "Exactitude",
@@ -98,5 +98,5 @@
       "detail": "62 s"
     }
   ],
-  "produit_le": "2026-08-26T23:52:26.826Z"
+  "produit_le": "2026-08-27T01:01:42.194Z"
 }

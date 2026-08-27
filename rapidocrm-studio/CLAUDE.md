@@ -218,6 +218,73 @@ Tous ces dossiers (`presentateur/`, `ia/`, `ecrans/`, `avatar/`) sont recopiés 
 `public/` par `copierAssetsPartages`, appelé au rendu et par
 `npm run prepare:assets`.
 
+## Le montage de référence — V01 « Créer un compte »
+
+`content/Accès et gestion/V01-creer-un-compte` est le **montage étalon**. Les
+170 tutoriels suivants s'en déduisent : mêmes séquences, mêmes proportions,
+mêmes règles. On ne réinvente pas une mise en page par vidéo — on rejoue
+celle-ci et on ne change que le contenu.
+
+Enchaînement, identique pour tous :
+ouverture (vignette dans un mockup) → hook → titre → démonstration →
+carte prompt Claude → punchline → carte de fin.
+
+**16:9** — l'écran du logiciel occupe le cadre, la bulle avatar se pose en bas
+à droite, les sous-titres sont **superposés** en bas de l'image, la barre de
+chapitre court en pied d'écran.
+
+**9:16** — répartition **1,5/4 pour l'avatar, 2,5/4 pour le logiciel** :
+
+- bulle avatar en haut (`bulle(0.115, 4)`) ;
+- puis le mockup du logiciel, **pleine largeur et jamais recadré** : marges
+  latérales réduites à `height * 0.012`, le mockup adopte le `demoRatio` de la
+  source. On n'ampute jamais l'interface pour gagner en lisibilité — ni bande
+  horizontale, ni « colonne utile » ;
+- **interdiction absolue de superposer du texte à la vidéo du logiciel.**
+  Sous-titres et libellé d'étape passent **sous** la vidéo, dans leur propre
+  zone (`SousTitres placement="dans-le-flux"`). Sur l'écran, seul le cercle
+  vert pulsé reste, pour désigner la zone active ;
+- barre de chapitre en bas.
+
+Le reste du dispositif est déjà décrit plus haut et ne bouge pas d'une vidéo à
+l'autre : une **seule** animation d'avatar générée avec ElevenLabs, muette et
+bouclée en ping-pong, avec la voix off posée par-dessus ; la carte prompt à la
+charte Claude ; la fin au logo officiel avec la pose du présentateur choisie
+par le contenu.
+
+## Publication — l'ordre imposé
+
+Toujours dans cet ordre, pour chaque tutoriel, sans en sauter aucune :
+
+1. `npm run qa` — **rouge = on ne publie pas**. `fiche.a_verifier` doit être
+   vide : un point non tranché est un point qu'on ne raconte pas.
+2. `npm run publier:cms` — dépôt des 4 médias (master 16:9, master 9:16,
+   les deux vignettes) dans la bibliothèque RapidoCMS, liens AWS S3 en retour.
+   L'upload est idempotent : même empreinte de fichier, pas de réupload.
+3. `npm run publier:youtube` — la vidéo normale (16:9) **et** le Short (9:16),
+   à partir des liens AWS de l'étape 2.
+4. `npm run publier:site` — remplissage complet puis mise en ligne sur
+   RapidoCRM Académie. **La page part en ligne sans validation admin** : tout
+   ce qui est écrit ici est publié tel quel.
+
+La page du site se remplit **entièrement**, jamais à moitié : titre et titre
+court, accroche, « comment ça marche » (l'intro puis les étapes numérotées,
+puis le segment Claude), à quoi ça sert, prérequis, étapes, vignette
+récupérée via le MCP RapidoCRM Académie, vidéo, vidéo verticale, lien YouTube,
+transcription et chapitres, astuces, cas d'usage, prompt Claude à copier-coller
+avec ses variables et son outil MCP, SEO (titre, description, mots-clés,
+image), et les instructions de l'agent IA de la page.
+
+Deux dépendances externes, sans lesquelles rien ne part :
+
+- `RAPIDO_ACADEMIE_API_KEY` dans `.env` — le `cle_api` qu'exige **chaque**
+  outil du MCP RapidoCRM Académie. Il se génère dans `/admin/parametres`.
+- une **chaîne YouTube connectée** au MCP YouTube.
+
+Le MCP RapidoCMS n'avale un fichier que depuis une **URL publique**
+(`upload_file_tool(file_url)`) : un master qui n'est que local ne peut pas être
+déposé. Ne jamais contourner en écrivant directement dans le bucket S3.
+
 ## Nommage des sorties
 
 ```
