@@ -1,0 +1,88 @@
+{
+  "duree": 93.7,
+  "fichiers": [
+    {
+      "chemin": "/home/user/Video/rapidocrm-studio/content/Equipe/V03-ajouter-modifier-un-objectif/out/master-16x9.mp4",
+      "octets": 11683965
+    },
+    {
+      "chemin": "/home/user/Video/rapidocrm-studio/content/Equipe/V03-ajouter-modifier-un-objectif/out/master-9x16.mp4",
+      "octets": 9942926
+    }
+  ],
+  "sequences": [
+    {
+      "nom": "ouverture",
+      "debut": 0,
+      "fin": 1.4
+    },
+    {
+      "nom": "hook",
+      "debut": 1.4,
+      "fin": 9.6
+    },
+    {
+      "nom": "titre",
+      "debut": 9.6,
+      "fin": 41.733333333333334
+    },
+    {
+      "nom": "demo",
+      "debut": 41.733333333333334,
+      "fin": 71.6
+    },
+    {
+      "nom": "claude",
+      "debut": 71.6,
+      "fin": 89.9
+    },
+    {
+      "nom": "punchline",
+      "debut": 89.9,
+      "fin": 93.7
+    }
+  ],
+  "chapitres_youtube": [
+    {
+      "timecode": "00:00",
+      "titre": "Votre commercial dépasse ses objectifs depuis deux mois. Ses objectifs, eux, n'ont pas bougé."
+    },
+    {
+      "timecode": "00:09",
+      "titre": "Modifier un objectif"
+    },
+    {
+      "timecode": "00:41",
+      "titre": "Ouvrir la fiche du commercial"
+    },
+    {
+      "timecode": "00:44",
+      "titre": "Lire sa progression"
+    },
+    {
+      "timecode": "00:48",
+      "titre": "Ouvrir les paramètres"
+    },
+    {
+      "timecode": "00:54",
+      "titre": "Choisir « modifier les objectifs »"
+    },
+    {
+      "timecode": "00:56",
+      "titre": "Corriger les quatre compteurs"
+    },
+    {
+      "timecode": "01:08",
+      "titre": "Enregistrer"
+    },
+    {
+      "timecode": "01:11",
+      "titre": "Faites-le avec Claude"
+    },
+    {
+      "timecode": "01:29",
+      "titre": "À retenir"
+    }
+  ],
+  "avertissements": []
+}
