@@ -20,6 +20,7 @@ export const Video: React.FC<PropsVideo & { vertical?: boolean }> = ({
   demoSrc,
   vignetteSrc,
   avatarSrc,
+  demoRatio,
   audioSrc,
   vertical = false,
 }) => {
@@ -35,7 +36,7 @@ export const Video: React.FC<PropsVideo & { vertical?: boolean }> = ({
       )}
 
       <Sequence from={minutage.ouverture.debut} durationInFrames={minutage.ouverture.duree}>
-        <Ouverture script={script} vignetteSrc={vignetteSrc} />
+        <Ouverture script={script} vignetteSrc={vignetteSrc} vertical={vertical} />
       </Sequence>
 
       <Sequence from={minutage.hook.debut} durationInFrames={minutage.hook.duree}>
@@ -55,6 +56,7 @@ export const Video: React.FC<PropsVideo & { vertical?: boolean }> = ({
           demoSrc={demoSrc}
           audioSrc={audioSrc}
           avatarSrc={avatarSrc}
+          demoRatio={demoRatio}
           vertical={vertical}
         />
       </Sequence>

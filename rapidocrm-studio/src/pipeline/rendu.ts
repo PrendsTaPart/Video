@@ -1,4 +1,4 @@
-import { copyFileSync, existsSync, readdirSync, statSync } from 'node:fs';
+import { copyFileSync, existsSync, readdirSync, rmSync, statSync } from 'node:fs';
 import { join } from 'node:path';
 import { bundle } from '@remotion/bundler';
 import { renderMedia, selectComposition } from '@remotion/renderer';
@@ -104,8 +104,7 @@ export const rendre = async (dossier: string, options: OptionsRendu = {}): Promi
   // Plan parlant du présentateur, commun à toute la série. Absent, la bulle
   // retombe sur le portrait fixe : l'habillage reste animé, seule la bouche ne
   // bouge plus (le repli documenté par la méthode Plan'It).
-  const planAvatar = join(racineProjet(), 'assets', 'avatar', 'parle.mp4');
-  const avatarSrc = existsSync(planAvatar) ? 'avatar/parle.mp4' : null;
+  const avatarSrc = await preparerBoucleAvatar(racinePublic);
   if (!avatarSrc) {
     discret('   pas de plan parlant : la bulle affiche le portrait fixe');
   }
@@ -143,6 +142,7 @@ export const rendre = async (dossier: string, options: OptionsRendu = {}): Promi
       demoSrc: replique,
       vignetteSrc,
       avatarSrc,
+      demoRatio: analyse.resolution[0] / analyse.resolution[1],
       audioSrc,
       vertical: format === '9x16',
     };
@@ -204,6 +204,45 @@ export const rendre = async (dossier: string, options: OptionsRendu = {}): Promi
 };
 
 /**
+ * Prépare la boucle du plan parlant : le clip suivi de lui-même à l'envers.
+ *
+ * Bout à bout, un plan de huit secondes rebouclé produit un saut visible à
+ * chaque tour. En aller-retour, le mouvement se retourne sans rupture. C'est la
+ * méthode Plan'It, et elle ne coûte rien : le plan payant reste unique.
+ */
+const DUREE_BOUCLE_AVATAR = 180; // secondes : au-delà de tout tutoriel
+
+export const preparerBoucleAvatar = async (
+  racinePublic: string,
+): Promise<string | null> => {
+  const plan = join(racineProjet(), 'assets', 'avatar', 'parle.mp4');
+  if (!existsSync(plan)) return null;
+
+  const relatif = 'avatar/parle-boucle.mp4';
+  const cible = join(racinePublic, relatif);
+  if (!existsSync(cible)) {
+    const allerRetour = join(racinePublic, 'avatar', 'aller-retour.mp4');
+    await lancer('ffmpeg', [
+      '-y', '-i', plan,
+      '-filter_complex', '[0:v]split[a][b];[b]reverse[r];[a][r]concat=n=2:v=1[v]',
+      '-map', '[v]', '-an',
+      '-c:v', 'libx264', '-crf', '20', '-preset', 'medium', '-pix_fmt', 'yuv420p',
+      allerRetour,
+    ]);
+    // Répété jusqu'à couvrir la plus longue démonstration : le composant lit un
+    // fichier continu plutôt que de gérer une boucle à la frame près.
+    await lancer('ffmpeg', [
+      '-y', '-stream_loop', '-1', '-i', allerRetour,
+      '-t', String(DUREE_BOUCLE_AVATAR),
+      '-c:v', 'libx264', '-crf', '20', '-preset', 'medium', '-pix_fmt', 'yuv420p',
+      cible,
+    ]);
+    rmSync(allerRetour, { force: true });
+  }
+  return relatif;
+};
+
+/**
  * Recopie les assets partagés par les 172 tutoriels dans public/ :
  * présentateur détouré, logos des assistants, écrans de référence.
  */
@@ -212,9 +251,12 @@ export const copierAssetsPartages = (racinePublic: string): void => {
     const source = join(racineProjet(), 'assets', nom);
     if (!existsSync(source)) continue;
     const cible = assurerDossier(join(racinePublic, nom));
-    for (const fichier of readdirSync(source)) {
-      const destination = join(cible, fichier);
-      if (!existsSync(destination)) copyFileSync(join(source, fichier), destination);
+    // Seuls les fichiers : les sous-dossiers (rendus de l'avatar, sources) ne
+    // servent pas au montage.
+    for (const entree of readdirSync(source, { withFileTypes: true })) {
+      if (!entree.isFile()) continue;
+      const destination = join(cible, entree.name);
+      if (!existsSync(destination)) copyFileSync(join(source, entree.name), destination);
     }
   }
 };

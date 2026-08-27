@@ -13,11 +13,6 @@ const L16 = 1920;
 const H16 = 1080;
 const L9 = 1080;
 const H9 = 1920;
-/**
- * Cadre du plan de démonstration en 9:16 : presque carré, posé au centre de la
- * frame. Le reste de la hauteur revient au titre d'étape et aux sous-titres.
- */
-export const CADRE_VERTICAL = { largeur: 1080, hauteur: 1200 };
 
 /**
  * Facteur de vitesse pour caler la vidéo sur la voix, borné par la charte.
@@ -128,7 +123,7 @@ export const preparerScreencast = async (
             `scale=${L16}:${H16}:force_original_aspect_ratio=decrease`,
             `pad=${L16}:${H16}:(ow-iw)/2:(oh-ih)/2:color=0xF2F4F7`,
           ]
-        : colonneUtile(script)),
+        : pleineLargeur(analyse.resolution)),
       'fps=30',
     ].join(',');
 
@@ -161,23 +156,19 @@ export const preparerScreencast = async (
 };
 
 /**
- * En 9:16, on recadre sur la COLONNE UTILE de l'enregistrement.
+ * En 9:16, l'écran du logiciel est montré **en entier**, sur toute sa largeur.
  *
- * Un enregistrement 1920×882 est large et court : une bande horizontale y reste
- * illisible une fois réduite, et une colonne 9:16 stricte n'en contiendrait
- * qu'un tiers. Or tout ce qui compte tient dans la carte centrale — le reste est
- * du fond. On garde donc cette colonne sur toute la hauteur, et on la pose dans
- * le cadre vertical.
+ * On a d'abord essayé de recadrer — une bande horizontale, puis la colonne utile
+ * — et les deux coupaient l'interface. Un tutoriel montre un logiciel : le couper
+ * fait perdre le contexte. On garde donc l'image complète, mise à la largeur du
+ * cadre vertical, et c'est le mockup qui lui donne sa hauteur.
  */
-const colonneUtile = (script: Script): string[] => {
-  const zones = script.demo.etapes.map((e) => e.zone_focus);
-  const gauche = Math.max(0, Math.min(...zones.map((z) => z.x)) - 0.04);
-  const droite = Math.min(1, Math.max(...zones.map((z) => z.x + z.w)) + 0.04);
-  const largeur = Math.max(0.3, droite - gauche);
-
-  return [
-    `crop=w=trunc(iw*${largeur.toFixed(4)}/2)*2:h=ih:x=trunc(iw*${gauche.toFixed(4)}/2)*2:y=0`,
-    `scale=${CADRE_VERTICAL.largeur}:${CADRE_VERTICAL.hauteur}:force_original_aspect_ratio=decrease`,
-    `pad=${CADRE_VERTICAL.largeur}:${CADRE_VERTICAL.hauteur}:(ow-iw)/2:(oh-ih)/2:color=0xF2F4F7`,
-  ];
+const pleineLargeur = (resolution: [number, number]): string[] => {
+  const [largeur, hauteur] = resolution;
+  const hauteurCible = Math.round((L9 * hauteur) / largeur / 2) * 2;
+  return [`scale=${L9}:${hauteurCible}`];
 };
+
+/** Rapport largeur/hauteur du plan vertical, à donner au mockup. */
+export const ratioSource = (resolution: [number, number]): number =>
+  resolution[0] / resolution[1];

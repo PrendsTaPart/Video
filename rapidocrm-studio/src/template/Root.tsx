@@ -13,6 +13,7 @@ const defauts: PropsVideo = {
   demoSrc: null,
   vignetteSrc: null,
   avatarSrc: null,
+  demoRatio: 16 / 9,
   audioSrc: null,
 };
 

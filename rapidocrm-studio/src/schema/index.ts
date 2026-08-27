@@ -259,6 +259,8 @@ export const PropsVideoSchema = z.object({
   vignetteSrc: z.string().nullable().default(null),
   /** Plan parlant du présentateur, rendu une fois pour toute la série. */
   avatarSrc: z.string().nullable().default(null),
+  /** Rapport largeur/hauteur de l'enregistrement : donne sa forme au mockup. */
+  demoRatio: z.number().positive().default(16 / 9),
   audioSrc: z.string().nullable().default(null),
 });
 export type PropsVideo = z.infer<typeof PropsVideoSchema>;

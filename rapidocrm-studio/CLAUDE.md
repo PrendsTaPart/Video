@@ -113,9 +113,24 @@ et `videos/planit-academy/habillage/presentatrice.py`), qui a fait ses preuves s
 43 épisodes.
 
 **Le principe.** La synchronisation labiale part d'un **rendu image fixe**, pas
-du modèle 3D : le `.glb` d'une persona sert à produire les images, ce sont elles
-qui alimentent le modèle. Portrait + piste voix → `creatify-aurora` (ElevenLabs)
-→ plan parlant.
+du modèle 3D : le `.glb` sert à produire les images, ce sont elles qui alimentent
+le modèle. Portrait + piste voix → `creatify-aurora` (ElevenLabs) → plan parlant.
+
+**L'avatar RapidoCRM.** `assets/avatar/manager.glb` est le modèle fourni ;
+`assets/avatar/rendus/` en conserve les trois rendus (buste, mi-corps,
+plein-pied). C'est le **buste** qui sert de portrait : tête et épaules, 768 × 840,
+fond studio uni — le cadrage que `creatify-aurora` attend.
+
+**La voix passe par-dessus.** Le plan est monté **muet** : il n'apporte que les
+yeux et la bouche. La voix off du tutoriel, elle, vient de la piste `voix/` et
+joue par-dessus. Les lèvres ne prononcent donc pas les mots entendus — c'est le
+compromis assumé du plan unique réutilisé, celui que Plan'It a retenu pour ses
+43 épisodes.
+
+**La boucle est en aller-retour.** Bout à bout, un plan de huit secondes rebouclé
+saute visiblement à chaque tour. `preparerBoucleAvatar` monte donc le clip suivi
+de lui-même à l'envers, puis répète l'ensemble : le mouvement se retourne sans
+rupture. Cette étape ne coûte rien, le plan payant reste unique.
 
 **Un seul plan pour toute la série.** Le plan est rendu **une fois**, sur un texte
 générique, puis réutilisé par les 172 tutoriels et bouclé en aller-retour pour

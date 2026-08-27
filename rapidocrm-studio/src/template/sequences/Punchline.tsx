@@ -1,6 +1,7 @@
 import React from 'react';
 import {
   AbsoluteFill,
+  Easing,
   Img,
   interpolate,
   spring,
@@ -68,6 +69,15 @@ export const Punchline: React.FC<{ script: Script; vertical: boolean }> = ({
   });
   const bas = spring({ frame: frame - bascule - 24, fps, config: { damping: 200 } });
 
+  // Clôture : sur les dernières frames, les deux diagonales de la charte
+  // convergent vers le centre et referment l'image sur le logo.
+  const fermeture = interpolate(
+    frame,
+    [durationInFrames - 26, durationInFrames - 2],
+    [0, 1],
+    { extrapolateLeft: 'clamp', extrapolateRight: 'clamp', easing: Easing.inOut(Easing.cubic) },
+  );
+
   return (
     <AbsoluteFill>
       <GeometricBg variant="mixte" />
@@ -113,10 +123,15 @@ export const Punchline: React.FC<{ script: Script; vertical: boolean }> = ({
         </div>
       </AbsoluteFill>
 
+      <Fermeture avancement={fermeture} />
+
+      {/* La carte de fin ne recouvre jamais le présentateur : en 16:9 elle prend
+          la gauche, en 9:16 le haut de la frame — lui garde le bas. */}
       <AbsoluteFill
         style={{
-          justifyContent: 'center',
+          justifyContent: vertical ? 'flex-start' : 'center',
           alignItems: vertical ? 'center' : 'flex-start',
+          paddingTop: vertical ? height * 0.1 : 0,
           paddingLeft: vertical ? 0 : height * 0.09,
           opacity: 1 - sortiePunch,
         }}
@@ -131,7 +146,8 @@ export const Punchline: React.FC<{ script: Script; vertical: boolean }> = ({
             flexDirection: 'column',
             alignItems: 'center',
             gap: height * 0.02,
-            minWidth: vertical ? '78%' : '46%',
+            minWidth: vertical ? '74%' : '46%',
+            transform: `scale(${1 - fermeture * 0.05}) translateY(${-fermeture * height * 0.015}px)`,
           }}
         >
           {/* Halo : une seule ouverture de lumière, pas de clignotement. */}
@@ -175,7 +191,7 @@ export const Punchline: React.FC<{ script: Script; vertical: boolean }> = ({
           padding: height * 0.05,
           alignItems: 'center',
           justifyContent: 'flex-end',
-          opacity: bas * (1 - sortiePunch),
+          opacity: bas * (1 - sortiePunch) * (1 - fermeture),
         }}
       >
         <div
@@ -190,6 +206,34 @@ export const Punchline: React.FC<{ script: Script; vertical: boolean }> = ({
           </Etiquette>
         </div>
       </AbsoluteFill>
+    </AbsoluteFill>
+  );
+};
+
+/**
+ * Les deux diagonales de la charte reviennent du hors-champ et se rejoignent au
+ * centre. C'est la signature de fin : la même géométrie qu'à l'ouverture, jouée
+ * à l'envers. Elle passe derrière la carte du logo, qui reste lisible jusqu'au
+ * dernier plan.
+ */
+const Fermeture: React.FC<{ avancement: number }> = ({ avancement }) => {
+  const { width, height } = useVideoConfig();
+  if (avancement <= 0) return null;
+
+  const course = width * 0.62 * avancement;
+
+  return (
+    <AbsoluteFill style={{ pointerEvents: 'none' }}>
+      <svg width={width} height={height}>
+        <polygon
+          points={`0,0 ${course},0 0,${height}`}
+          fill={BRAND.colors.vert}
+        />
+        <polygon
+          points={`${width},${height} ${width - course},${height} ${width},0`}
+          fill={BRAND.colors.violet}
+        />
+      </svg>
     </AbsoluteFill>
   );
 };

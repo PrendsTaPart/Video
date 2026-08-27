@@ -31,6 +31,8 @@ interface Props {
   audioSrc: string | null;
   /** Plan parlant de l'avatar, commun à toute la série. */
   avatarSrc: string | null;
+  /** Rapport de l'enregistrement : le mockup épouse sa forme, sans le couper. */
+  demoRatio: number;
   vertical: boolean;
 }
 
@@ -52,6 +54,7 @@ export const Demo: React.FC<Props> = ({
   demoSrc,
   audioSrc,
   avatarSrc,
+  demoRatio,
   vertical,
 }) => {
   const { height } = useVideoConfig();
@@ -131,7 +134,20 @@ export const Demo: React.FC<Props> = ({
           >
             {bulle(0.15, 4)}
           </div>
-          <Mockup style={{ flex: 2.5 }}>{plans}</Mockup>
+          {/* Le mockup épouse le rapport de l'enregistrement : l'écran est
+              montré en entier, jamais recadré. Il est centré dans sa part. */}
+          <div
+            style={{
+              flex: 2.5,
+              display: 'flex',
+              alignItems: 'center',
+              justifyContent: 'center',
+            }}
+          >
+            <Mockup style={{ width: '100%', aspectRatio: `${demoRatio}` }}>
+              {plans}
+            </Mockup>
+          </div>
         </AbsoluteFill>
         {habillage}
       </AbsoluteFill>

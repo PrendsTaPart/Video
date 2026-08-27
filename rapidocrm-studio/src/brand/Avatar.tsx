@@ -95,8 +95,16 @@ export const AvatarBulle: React.FC<{
         {planSrc ? (
           <OffthreadVideo
             src={staticFile(planSrc)}
+            // Muet : la voix off du tutoriel passe par-dessus. Le plan ne sert
+            // qu'aux yeux et à la bouche.
             muted
-            style={{ width: '100%', height: '100%', objectFit: 'cover' }}
+            style={{
+              width: '100%',
+              height: '100%',
+              objectFit: 'cover',
+              objectPosition: 'center 14%',
+              transform: 'scale(1.12)',
+            }}
           />
         ) : (
           <Img
@@ -105,12 +113,23 @@ export const AvatarBulle: React.FC<{
               width: '100%',
               height: '100%',
               objectFit: 'cover',
-              objectPosition: 'center 12%',
-              transform: 'scale(1.15)',
+              objectPosition: 'center 14%',
+              transform: 'scale(1.12)',
             }}
           />
         )}
       </AbsoluteFill>
+
+      {/* Voile radial : le rendu arrive sur fond studio gris, qui jure avec la
+          charte. Un détourage mangerait cheveux et lunettes ; ce dégradé fond
+          seulement le pourtour. */}
+      <AbsoluteFill
+        style={{
+          borderRadius: 999,
+          background: `radial-gradient(circle, rgba(242,244,247,0) 58%, ${BRAND.colors.fondClair} 100%)`,
+          pointerEvents: 'none',
+        }}
+      />
 
       <BarresDeNiveau diametre={diametre} niveau={niveau} frame={frame} />
     </div>

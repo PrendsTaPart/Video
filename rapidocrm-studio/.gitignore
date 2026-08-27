@@ -8,3 +8,4 @@ assets/logos/*.png
 public/
 content/**/tmp/
 content/**/analyse-brute.json
+assets/avatar/manager.glb
