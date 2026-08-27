@@ -1,0 +1,21 @@
+Une application extérieure veut vos données. Vous lui donnez tout, ou rien. Un token, et vous choisissez exactement ce qu'elle peut faire.
+
+On part de l'onglet Tokens api de votre page Profil, et on ressort avec une clé d'accès taillée sur mesure. Un token, c'est ce que vous remettez à une application extérieure pour qu'elle atteigne votre CRM. Vous décidez de deux choses : jusqu'à quelle date elle y a droit, et ce qu'elle peut faire, ressource par ressource. Lire seulement, ou aussi créer, modifier, supprimer.
+
+Onglet Tokens api : les clés d'accès de vos applications externes.
+
+Bouton nouveau token. Nommez-le d'après l'application à qui vous le donnez : le jour où elle part, vous saurez lequel couper.
+
+Puis une date d'expiration. Passée cette date, la clé cesse de fonctionner d'elle-même.
+
+Le tableau croise vos ressources et quatre droits : lire, créer, modifier, supprimer. Ici, on ne coche que lire. Un token en lecture seule ne peut rien casser.
+
+On génère. La ligne apparaît : nom, portée, dernière utilisation, expiration, statut.
+
+Un clic sur les pastilles rouvre la liste complète de ses droits.
+
+Et la corbeille le révoque, après confirmation. Les applications qui s'en servaient perdent l'accès.
+
+Votre token est prêt. Pour voir ce qu'il pourra lire avant de le remettre, RapidoCRM se branche sur Claude : vous écrivez votre demande en français, il lit vos données et vous répond. Copiez ce prompt, collez-le, et remplacez ce qui est entre crochets.
+
+Un token par application, et vous reprenez la clé quand vous voulez.

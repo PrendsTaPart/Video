@@ -17,8 +17,8 @@
     ]
   },
   "intro": {
-    "texte": "On part de la section Informations bancaires de votre page Profil, et on ressort avec les coordonnées de règlement de la société. Ce sont elles qui s'impriment sur vos factures : le nom de votre banque, son code, et votre IBAN. Sans elles, le client reçoit un document juste, mais il ne sait pas où envoyer l'argent. Tout se lit sur le RIB que votre banque vous a remis.",
-    "duree": 20
+    "texte": "On part de la section Informations bancaires de votre page Profil, et on ressort avec les coordonnées de règlement de la société. Ce sont elles qui s'impriment sur vos factures : le nom de votre banque, son code, et votre IBAN. Sans elles, le client reçoit un document juste, mais il ne sait pas où envoyer l'argent. Tout se lit sur le RIB que votre banque vous a remis. Trois champs seulement, et tous les trois figurent sur ce même document. Attention à ne pas les intervertir : confondre le code de l'établissement et le numéro de compte est l'erreur la plus courante.",
+    "duree": 34
   },
   "demo": {
     "etapes": [
