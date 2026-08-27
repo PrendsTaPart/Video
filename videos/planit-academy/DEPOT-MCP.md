@@ -74,6 +74,16 @@ moyen de retirer un montage du site sans effacer ce qui a été déposé.
 La carte de prompt déclarée par la fiche 3 — « Décrire mon activité en trois
 lignes » — a été reportée via `ajouter_carte_prompt`.
 
+**Mise à jour du 27/08/2026, 18 h.** Le tutoriel 00 est redéposé sous
+`…/bibliotheque/planit-academie-tuto-00-creer-son-compte-v2`, après masquage des
+adresses e-mail de sa capture. Comme pour le 07, le nouveau fichier porte un
+suffixe `-v2` plutôt que d'écraser l'objet S3 existant. Durée 1 min 03, douze
+chapitres — le plan 5 ayant été raccourci, tous les repères suivants ont bougé.
+
+Les publications YouTube du jour sont consignées dans `YOUTUBE.md` : le MCP
+Plan'It Video n'a pas d'outil `enregistrer_youtube` pour les porter sur les
+fiches.
+
 ### Deux réserves qui subsistent
 
 1. **`fiche.statut` reste à `a_produire`** sur une fiche déposée, alors que
