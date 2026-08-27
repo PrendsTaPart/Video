@@ -1,0 +1,42 @@
+[
+  {
+    "timestamp_secondes": 0,
+    "titre": "Le problème",
+    "texte": "Combien de clients suit vraiment votre commercial ? Vous ne le savez pas. Un clic depuis sa fiche, et sa liste s'ouvre."
+  },
+  {
+    "timestamp_secondes": 7,
+    "titre": "Ce qu'on va faire",
+    "texte": "On part de la fiche d'un commercial, et on ressort sur la liste de ses clients à lui. Pas un écran à part, pas un export : c'est la page Clients habituelle, avec un filtre déjà posé à son nom. Toute la barre d'outils reste là — chercher, filtrer, lancer une campagne, prospecter, ajouter. Et une étiquette en haut de page vous rappelle en permanence sur quoi vous êtes filtré, avec une croix pour la retirer. C'est le raccourci qui manque quand on prépare un point hebdomadaire : au lieu de chercher dans toute la base, on part de la personne."
+  },
+  {
+    "timestamp_secondes": 41,
+    "titre": "Ouvrir la fiche du commercial",
+    "texte": "On part de sa fiche de profil."
+  },
+  {
+    "timestamp_secondes": 43,
+    "titre": "Ouvrir ses paramètres",
+    "texte": "La roue crantée, puis la troisième entrée : consulter le portefeuille clients."
+  },
+  {
+    "timestamp_secondes": 47,
+    "titre": "Laisser la liste se charger",
+    "texte": "La page Clients s'ouvre, le temps du chargement."
+  },
+  {
+    "timestamp_secondes": 50,
+    "titre": "Lire la liste filtrée",
+    "texte": "Et voilà son portefeuille. L'étiquette en haut dit sur quoi vous êtes filtré ; la croix la retire pour revenir à tous les clients."
+  },
+  {
+    "timestamp_secondes": 57,
+    "titre": "Faites-le avec Claude",
+    "texte": "Vous avez son portefeuille sous les yeux. Pour comparer toute l'équipe d'un coup, RapidoCRM se branche sur Claude : vous écrivez votre demande en français, il lit vos données et vous répond. Copiez ce prompt, collez-le, et remplacez ce qui est entre crochets."
+  },
+  {
+    "timestamp_secondes": 75,
+    "titre": "À retenir",
+    "texte": "Un clic depuis la fiche, et vous savez qui suit qui."
+  }
+]

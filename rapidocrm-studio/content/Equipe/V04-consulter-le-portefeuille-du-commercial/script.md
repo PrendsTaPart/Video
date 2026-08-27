@@ -32,13 +32,13 @@ La roue crantée, puis la troisième entrée : consulter le portefeuille clients
 
 ### 3. Laisser la liste se charger
 
-_8.5s → 13.0s · 8 mots · ~3.2s_
+_8.5s → 11.5s · 8 mots · ~3.2s_
 
 La page Clients s'ouvre, le temps du chargement.
 
 ### 4. Lire la liste filtrée
 
-_13.0s → 20.2s · 24 mots · ~9.6s_
+_11.5s → 20.2s · 24 mots · ~9.6s_
 
 Et voilà son portefeuille. L'étiquette en haut dit sur quoi vous êtes filtré ; la croix la retire pour revenir à tous les clients.
 
@@ -46,7 +46,7 @@ Et voilà son portefeuille. L'étiquette en haut dit sur quoi vous êtes filtré
 
 **Ensuite, demandez-lui.**
 
-Vous avez son portefeuille sous les yeux. Pour comparer toute l'équipe d'un coup, RapidoCRM se branche sur Claude : vous écrivez votre demande en français, il lit vos données et vous répond. Copiez ce prompt, collez-le, et remplacez ce qui est entre crochets.
+Vous avez son portefeuille sous les yeux. Pour comparer toute l'équipe d'un coup, plutôt que d'ouvrir les fiches une par une, RapidoCRM se branche sur Claude : vous écrivez votre demande en français, il lit vos données et vous répond. C'est ce qui rend visible un déséquilibre de répartition. Copiez ce prompt, collez-le, et remplacez ce qui est entre crochets.
 
 ```
 Liste-moi mes commerciaux [statut] avec leur fonction, les [nombre] premiers.
@@ -56,7 +56,7 @@ Résultat affiché : **3 commerciaux actifs** — Commercial terrain — actif �
 
 ## Punchline
 
-> Un clic depuis la fiche, et vous savez qui suit qui.
+> Un clic depuis la fiche, et vous savez qui suit qui. Répartir devient une décision, plus une intuition.
 
 **Alternatives proposées :**
 1. Le portefeuille se regarde avant de se rééquilibrer.

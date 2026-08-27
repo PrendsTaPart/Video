@@ -63,7 +63,7 @@
         "titre": "Laisser la liste se charger",
         "voix": "La page Clients s'ouvre, le temps du chargement.",
         "debut_source": 8.5,
-        "fin_source": 13.0,
+        "fin_source": 11.5,
         "zone_focus": {
           "x": 0.0,
           "y": 0.02,
@@ -80,7 +80,7 @@
         "numero": 4,
         "titre": "Lire la liste filtrée",
         "voix": "Et voilà son portefeuille. L'étiquette en haut dit sur quoi vous êtes filtré ; la croix la retire pour revenir à tous les clients.",
-        "debut_source": 13.0,
+        "debut_source": 11.5,
         "fin_source": 20.202,
         "zone_focus": {
           "x": 0.2,
@@ -98,7 +98,7 @@
   },
   "segment_claude": {
     "accroche": "Ensuite, demandez-lui.",
-    "voix": "Vous avez son portefeuille sous les yeux. Pour comparer toute l'équipe d'un coup, RapidoCRM se branche sur Claude : vous écrivez votre demande en français, il lit vos données et vous répond. Copiez ce prompt, collez-le, et remplacez ce qui est entre crochets.",
+    "voix": "Vous avez son portefeuille sous les yeux. Pour comparer toute l'équipe d'un coup, plutôt que d'ouvrir les fiches une par une, RapidoCRM se branche sur Claude : vous écrivez votre demande en français, il lit vos données et vous répond. C'est ce qui rend visible un déséquilibre de répartition. Copiez ce prompt, collez-le, et remplacez ce qui est entre crochets.",
     "prompt": {
       "texte": "Liste-moi mes commerciaux [statut] avec leur fonction, les [nombre] premiers.",
       "variables": [
@@ -114,11 +114,11 @@
         "Chargée de clientèle — actif"
       ]
     },
-    "duree": 22
+    "duree": 26
   },
   "punchline": {
-    "texte": "Un clic depuis la fiche, et vous savez qui suit qui.",
-    "duree": 7,
+    "texte": "Un clic depuis la fiche, et vous savez qui suit qui. Répartir devient une décision, plus une intuition.",
+    "duree": 10,
     "alternatives": [
       "Le portefeuille se regarde avant de se rééquilibrer.",
       "Une étiquette de filtre vaut mieux qu'un export du vendredi soir.",
