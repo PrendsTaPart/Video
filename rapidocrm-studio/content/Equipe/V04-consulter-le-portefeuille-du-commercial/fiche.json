@@ -1,0 +1,88 @@
+{
+  "fonctionnalite": "Consulter le portefeuille clients d'un commercial",
+  "a_quoi_ca_sert": "Ouvrir la liste des clients rattachés à un commercial, sans quitter sa fiche. Le logiciel ouvre la page Clients avec un filtre déjà posé à son nom : vous voyez son portefeuille, et rien d'autre.",
+  "pour_qui": "Gérant ou administrateur qui suit la répartition des clients dans son équipe",
+  "prerequis": [
+    "Être connecté à son espace",
+    "Avoir au moins un commercial créé"
+  ],
+  "champs_cles": [
+    {
+      "nom": "consulter le portefeuille clients",
+      "obligatoire": true,
+      "explication": "La troisième entrée de la modale Paramètres, ouverte par la roue crantée de la fiche."
+    },
+    {
+      "nom": "Filtre « Portefeuille · <nom du commercial> »",
+      "obligatoire": true,
+      "explication": "L'étiquette posée en haut de la page Clients. Elle dit sur quoi la liste est filtrée, et se retire d'une croix pour revenir à tous les clients."
+    }
+  ],
+  "outils_mcp": [
+    {
+      "nom": "list_commerciaux",
+      "role": "Liste les commerciaux avec leur statut et leurs objectifs. Lecture seule.",
+      "parametres_obligatoires": [],
+      "parametres_optionnels": ["q", "statut", "limit"],
+      "exemple_appel": { "limit": 10 }
+    },
+    {
+      "nom": "get_commercial",
+      "role": "Détail d'un commercial avec ses objectifs et sa performance. Lecture seule.",
+      "parametres_obligatoires": ["id"],
+      "parametres_optionnels": [],
+      "exemple_appel": { "id": 1 }
+    }
+  ],
+  "bonnes_pratiques": [
+    "Regardez le portefeuille avant de fixer les objectifs : un commercial avec trois clients et un autre avec trente ne se pilotent pas pareil.",
+    "Retirez l'étiquette de filtre quand vous avez fini, sinon la page Clients reste filtrée sur ce commercial."
+  ],
+  "erreurs_frequentes": [
+    "Croire que la liste est vide alors qu'elle est simplement filtrée : l'étiquette « Portefeuille » en haut de page l'indique.",
+    "Chercher le portefeuille dans le menu Clients : le raccourci est sur la fiche du commercial, sous la roue crantée."
+  ],
+  "cas_usage": [
+    {
+      "titre": "Préparer un point hebdomadaire",
+      "contexte": "Vous recevez un commercial et voulez parcourir ses comptes avec lui.",
+      "resultat_attendu": "Sa liste s'ouvre filtrée à son nom, prête à être parcourue."
+    },
+    {
+      "titre": "Rééquilibrer les portefeuilles",
+      "contexte": "Vous soupçonnez que les clients sont mal répartis dans l'équipe.",
+      "resultat_attendu": "Vous comparez les portefeuilles commercial par commercial, depuis chaque fiche."
+    }
+  ],
+  "astuces": [
+    {
+      "titre": "L'étiquette dit toujours ce que vous regardez",
+      "contenu": "« Portefeuille · nom du commercial » s'affiche en haut de la page Clients. Tant qu'elle est là, la liste est filtrée.",
+      "niveau": "debutant"
+    },
+    {
+      "titre": "La page reste la vraie page Clients",
+      "contenu": "Chercher, filtre, campagne automatisée, prospecter, ajouter : toute la barre d'outils habituelle est là. Le portefeuille n'est pas un écran à part, c'est la liste des clients avec un filtre.",
+      "niveau": "debutant"
+    },
+    {
+      "titre": "Un raccourci, pas une permission",
+      "contenu": "Ouvrir le portefeuille depuis la fiche ne change rien aux droits : c'est un filtre d'affichage, pas un changement de périmètre.",
+      "niveau": "pro"
+    }
+  ],
+  "prompt_claude": {
+    "titre": "Comparer les portefeuilles",
+    "texte": "Liste-moi mes commerciaux [statut] avec leur fonction, les [nombre] premiers.",
+    "variables": ["statut", "nombre"],
+    "outil_mcp": "list_commerciaux"
+  },
+  "sources": {
+    "champs_cles": "frames 00:05 à 00:19 de l'enregistrement : modale « Paramètres » et son entrée « consulter le portefeuille clients », puis page Clients portant l'étiquette « Portefeuille · patrik martin » avec sa croix de retrait",
+    "a_quoi_ca_sert": "frames 00:14 à 00:19 : la page Clients s'ouvre filtrée, avec sa barre d'outils complète — Chercher, filtre, campagne automatisée, prospecter, ajouter",
+    "astuces": "même frames : l'étiquette de filtre et la barre d'outils",
+    "erreurs_frequentes": "frame 00:10 : la page affiche « S'il vous plaît, attendez… » le temps du chargement, puis la liste filtrée",
+    "outils_mcp": "schémas du MCP RapidoCRM, en lecture seule. Aucun outil ne renvoie le portefeuille d'un commercial : le filtre se pose uniquement depuis sa fiche. Les prompts proposés lisent l'équipe, en amont."
+  },
+  "a_verifier": []
+}

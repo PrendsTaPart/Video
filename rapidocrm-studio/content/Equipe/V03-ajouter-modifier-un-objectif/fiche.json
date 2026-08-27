@@ -1,0 +1,98 @@
+{
+  "fonctionnalite": "Fixer ou corriger les objectifs mensuels d'un commercial",
+  "a_quoi_ca_sert": "Régler les quatre compteurs sur lesquels un commercial est suivi — sms, emails, rendez-vous, contrats. Ce sont eux qui alimentent le pourcentage d'objectifs atteints affiché sur sa fiche, et qui rendent son mois lisible d'un coup d'œil.",
+  "pour_qui": "Gérant ou administrateur qui pilote son équipe commerciale",
+  "prerequis": [
+    "Être connecté à son espace",
+    "Avoir au moins un commercial créé"
+  ],
+  "champs_cles": [
+    {
+      "nom": "Nombre de sms envoyés",
+      "obligatoire": false,
+      "explication": "L'objectif mensuel de sms. Il sert de dénominateur au pourcentage affiché sur la fiche."
+    },
+    {
+      "nom": "Nombre d'emails envoyés",
+      "obligatoire": false,
+      "explication": "L'objectif mensuel d'emails."
+    },
+    {
+      "nom": "Nombre de rendez-vous organisés",
+      "obligatoire": false,
+      "explication": "L'objectif mensuel de rendez-vous."
+    },
+    {
+      "nom": "Nombre de contrats signés",
+      "obligatoire": false,
+      "explication": "L'objectif mensuel de contrats."
+    }
+  ],
+  "outils_mcp": [
+    {
+      "nom": "get_user_performance",
+      "role": "Performance d'un commercial ou de toute l'équipe : objectifs, envois, taux d'atteinte. Lecture seule.",
+      "parametres_obligatoires": [],
+      "parametres_optionnels": ["id"],
+      "exemple_appel": {}
+    },
+    {
+      "nom": "list_commerciaux",
+      "role": "Liste les commerciaux avec leur statut et leurs objectifs. Lecture seule.",
+      "parametres_obligatoires": [],
+      "parametres_optionnels": ["q", "statut", "limit"],
+      "exemple_appel": { "limit": 10 }
+    }
+  ],
+  "bonnes_pratiques": [
+    "Passez par la fiche du commercial plutôt que par la liste : vous voyez sa progression avant de décider du nouvel objectif.",
+    "Revoyez les quatre compteurs ensemble : un objectif de contrats sans objectif de rendez-vous ne dit pas grand-chose du travail réel."
+  ],
+  "erreurs_frequentes": [
+    "Laisser un compteur à zéro et s'étonner que le pourcentage d'atteinte ne bouge pas.",
+    "Chercher les objectifs dans la liste des commerciaux : ils se modifient depuis la fiche, par la roue crantée."
+  ],
+  "cas_usage": [
+    {
+      "titre": "Relever les objectifs après une bonne période",
+      "contexte": "Un commercial dépasse ses objectifs depuis deux mois.",
+      "resultat_attendu": "Les quatre compteurs sont ajustés, et sa progression repart d'une base réaliste."
+    },
+    {
+      "titre": "Aligner un nouvel arrivant sur l'équipe",
+      "contexte": "Une recrue a été créée avec des objectifs provisoires.",
+      "resultat_attendu": "Ses compteurs correspondent à ceux du reste de l'équipe."
+    }
+  ],
+  "astuces": [
+    {
+      "titre": "La roue crantée ouvre tout",
+      "contenu": "Sur la fiche d'un commercial, elle donne quatre entrées : modifier le profil, modifier les objectifs, consulter le portefeuille clients, supprimer l'utilisateur.",
+      "niveau": "debutant"
+    },
+    {
+      "titre": "Le pourcentage se lit sur la fiche",
+      "contenu": "La fiche affiche « Pourcentage des objectifs mensuels atteints », ligne par ligne : sms, e-mails, rendez-vous. C'est le miroir direct de ce que vous réglez ici.",
+      "niveau": "debutant"
+    },
+    {
+      "titre": "Modifier ne remet pas les compteurs à zéro",
+      "contenu": "Vous changez la cible, pas ce qui a déjà été réalisé. Le pourcentage se recalcule sur la nouvelle cible.",
+      "niveau": "pro"
+    }
+  ],
+  "prompt_claude": {
+    "titre": "Voir où en est l'équipe",
+    "texte": "Donne-moi la performance de mes commerciaux : objectifs, envois et taux d'atteinte.",
+    "variables": [],
+    "outil_mcp": "get_user_performance"
+  },
+  "sources": {
+    "champs_cles": "frames 00:22 à 00:28 de l'enregistrement : page « Objectifs — Modifier les objectifs » et ses quatre champs, Nombre de sms envoyés, Nombre d'emails envoyés, Nombre de rendez-vous organisés, Nombre de contrats signés",
+    "a_quoi_ca_sert": "frame 00:08 : bloc « Pourcentage des objectifs mensuels atteints » de la fiche, avec ses lignes sms, e-mails et rendez-vous",
+    "astuces": "frames 00:11 à 00:16 : modale « Paramètres » et ses quatre entrées",
+    "erreurs_frequentes": "frames 00:00 à 00:16 : le chemin passe par la fiche puis la roue crantée, pas par la liste",
+    "outils_mcp": "schémas du MCP RapidoCRM, en lecture seule. Aucun outil ne modifie les objectifs depuis ce pipeline : ils se règlent uniquement dans cette page. Les prompts proposés lisent la performance, en aval."
+  },
+  "a_verifier": []
+}

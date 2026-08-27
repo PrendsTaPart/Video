@@ -1,0 +1,144 @@
+{
+  "meta": {
+    "module": "Equipe",
+    "numero": 2,
+    "titre": "Modifier son mot de passe",
+    "titre_court": "Modifier son mot de passe",
+    "slug": "02-modifier-mot-de-passe-utilisateur"
+  },
+  "hook": {
+    "texte": "Le compte est créé. Le mail d'activation, lui, n'est jamais arrivé.",
+    "promesse": "Votre commercial se donne un mot de passe en une minute.",
+    "duree": 8,
+    "alternatives": [
+      "Un accès bloqué le lundi matin, c'est une journée qui commence mal.",
+      "Personne n'a besoin de connaître le mot de passe d'un autre.",
+      "Le lien de réinitialisation règle l'activation comme l'oubli."
+    ]
+  },
+  "intro": {
+    "texte": "On part de la page de connexion, et on ressort dans le tableau de bord du commercial. La procédure est la même dans deux cas : le mot de passe oublié, et le compte tout neuf dont le mail d'activation n'a pas pu partir. Le principe ne change pas : l'utilisateur demande un lien, le reçoit sur sa boîte, choisit son mot de passe. L'administrateur crée le compte, l'utilisateur choisit son mot de passe — les deux rôles restent séparés.",
+    "duree": 26
+  },
+  "demo": {
+    "etapes": [
+      {
+        "numero": 1,
+        "titre": "Partir de la fiche du commercial",
+        "voix": "Le commercial existe dans la liste. Il lui manque juste son mot de passe.",
+        "debut_source": 0,
+        "fin_source": 4.5,
+        "zone_focus": { "x": 0.0, "y": 0.05, "w": 1.0, "h": 0.93 },
+        "annotation": "la fiche créée",
+        "point": { "x": 0.35, "y": 0.6 }
+      },
+      {
+        "numero": 2,
+        "titre": "Ouvrir « Mot de passe oublié »",
+        "voix": "Sur la page de connexion, le lien mot de passe oublié, sous le champ.",
+        "debut_source": 4.5,
+        "fin_source": 10.0,
+        "zone_focus": { "x": 0.28, "y": 0.1, "w": 0.45, "h": 0.85 },
+        "annotation": "mot de passe oublié",
+        "point": { "x": 0.62, "y": 0.64 }
+      },
+      {
+        "numero": 3,
+        "titre": "Demander le lien",
+        "voix": "On saisit l'adresse du compte, et on envoie le lien de réinitialisation.",
+        "debut_source": 10.0,
+        "fin_source": 15.0,
+        "zone_focus": { "x": 0.28, "y": 0.15, "w": 0.45, "h": 0.75 },
+        "annotation": "envoyer le lien",
+        "point": { "x": 0.5, "y": 0.72 }
+      },
+      {
+        "numero": 4,
+        "titre": "Ouvrir le mail reçu",
+        "voix": "Le mail arrive dans la boîte : réinitialisation de votre mot de passe.",
+        "debut_source": 15.0,
+        "fin_source": 21.0,
+        "zone_focus": { "x": 0.0, "y": 0.0, "w": 1.0, "h": 1.0 },
+        "annotation": "le mail reçu",
+        "point": { "x": 0.55, "y": 0.57 }
+      },
+      {
+        "numero": 5,
+        "titre": "Choisir le nouveau mot de passe",
+        "voix": "Le lien ouvre la page de réinitialisation. Deux champs identiques, et on définit le nouveau mot de passe. Ce lien ne vaut que pour cette demande.",
+        "debut_source": 21.0,
+        "fin_source": 30.0,
+        "zone_focus": { "x": 0.28, "y": 0.15, "w": 0.45, "h": 0.75 },
+        "annotation": "définir un nouveau mot de passe",
+        "point": { "x": 0.5, "y": 0.68 }
+      },
+      {
+        "numero": 6,
+        "titre": "Se connecter",
+        "voix": "Retour à la connexion, avec le bandeau qui confirme : votre mot de passe a été modifié. S'il n'apparaît pas, le changement n'est pas passé. On saisit l'adresse et le nouveau mot de passe.",
+        "debut_source": 30.0,
+        "fin_source": 42.0,
+        "zone_focus": { "x": 0.28, "y": 0.05, "w": 0.72, "h": 0.9 },
+        "annotation": "mot de passe modifié",
+        "point": { "x": 0.85, "y": 0.14 }
+      },
+      {
+        "numero": 7,
+        "titre": "Arriver sur son tableau de bord",
+        "voix": "Et il est chez lui, sur son propre tableau de bord.",
+        "debut_source": 42.0,
+        "fin_source": 47.808,
+        "zone_focus": { "x": 0.0, "y": 0.02, "w": 1.0, "h": 0.96 },
+        "annotation": "son tableau de bord",
+        "point": { "x": 0.3, "y": 0.15 }
+      }
+    ]
+  },
+  "segment_claude": {
+    "accroche": "Ensuite, demandez-lui.",
+    "voix": "L'accès est ouvert. Pour vérifier qui a bien un compte actif sans ouvrir chaque fiche, RapidoCRM se branche sur Claude : vous écrivez votre demande en français, il lit vos données et vous répond. Copiez ce prompt, collez-le, et remplacez ce qui est entre crochets.",
+    "prompt": {
+      "texte": "Liste-moi mes commerciaux [statut] avec leur adresse e-mail.",
+      "variables": ["statut"],
+      "outil_mcp": "list_commerciaux"
+    },
+    "resultat_affiche": {
+      "titre": "3 commerciaux actifs",
+      "lignes": [
+        "Commercial terrain — actif",
+        "Chargée de clientèle — actif"
+      ]
+    },
+    "duree": 22
+  },
+  "punchline": {
+    "texte": "Un lien, un mot de passe, et votre commercial travaille.",
+    "duree": 7,
+    "alternatives": [
+      "L'activation ratée n'est plus un blocage, juste un détour.",
+      "Chacun son mot de passe, personne ne le partage.",
+      "Une minute de procédure vaut mieux qu'un accès qui traîne."
+    ]
+  },
+  "seo": {
+    "titre": "Modifier son mot de passe sur RapidoCRM — tutoriel",
+    "description": "Définissez ou changez le mot de passe d'un utilisateur RapidoCRM : lien de réinitialisation, mail reçu, nouveau mot de passe. Le tutoriel de l'Académie.",
+    "mots_cles": [
+      "mot de passe",
+      "RapidoCRM",
+      "réinitialisation",
+      "activation de compte",
+      "connexion",
+      "utilisateur"
+    ],
+    "youtube_titre": "Modifier son mot de passe — RapidoCRM",
+    "youtube_description": "Le tutoriel de réinitialisation de mot de passe de RapidoCRM Académie.",
+    "youtube_tags": [
+      "RapidoCRM",
+      "mot de passe",
+      "connexion",
+      "CRM français",
+      "tutoriel"
+    ]
+  }
+}
