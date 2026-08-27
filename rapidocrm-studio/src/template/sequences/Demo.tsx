@@ -81,7 +81,11 @@ export const Demo: React.FC<Props> = ({
             durationInFrames={bloc.duree}
             layout="none"
           >
-            <PlanEtape etape={e} demoSrc={demoSegments[i] ?? demoSrc} vertical={vertical} />
+            <PlanEtape
+              etape={e}
+              demoSrc={demoSegments[i] ?? demoSrc}
+              vertical={vertical}
+            />
           </Sequence>
         );
       })}
@@ -117,39 +121,81 @@ export const Demo: React.FC<Props> = ({
       <AbsoluteFill style={{ backgroundColor: BRAND.colors.fondClair }}>
         <AbsoluteFill
           style={{
-            padding: marge,
-            paddingBottom: height * 0.16, // place pour les sous-titres et la barre
+            paddingTop: height * 0.03,
+            paddingLeft: height * 0.012,
+            paddingRight: height * 0.012,
+            paddingBottom: height * 0.05,
             display: 'flex',
             flexDirection: 'column',
-            gap: marge,
+            alignItems: 'center',
           }}
         >
-          <div
-            style={{
-              flex: 1.5,
-              display: 'flex',
-              alignItems: 'center',
-              justifyContent: 'center',
-            }}
-          >
-            {bulle(0.15, 4)}
-          </div>
-          {/* Le mockup épouse le rapport de l'enregistrement : l'écran est
-              montré en entier, jamais recadré. Il est centré dans sa part. */}
-          <div
-            style={{
-              flex: 2.5,
-              display: 'flex',
-              alignItems: 'center',
-              justifyContent: 'center',
-            }}
-          >
+          {bulle(0.115, 4)}
+
+          {/* La vidéo du logiciel est remontée et prend presque toute la
+              largeur : c'est sa taille maximale sans la couper. */}
+          <div style={{ marginTop: height * 0.045, width: '100%' }}>
             <Mockup style={{ width: '100%', aspectRatio: `${demoRatio}` }}>
               {plans}
             </Mockup>
           </div>
+
+          {/* Zone de texte, sous la vidéo. Rien ne s'écrit par-dessus l'écran
+              du logiciel : ni le libellé de l'action, ni les sous-titres. */}
+          <div
+            style={{
+              flex: 1,
+              width: '100%',
+              paddingTop: height * 0.035,
+              paddingLeft: height * 0.03,
+              paddingRight: height * 0.03,
+              display: 'flex',
+              flexDirection: 'column',
+              alignItems: 'center',
+              gap: height * 0.028,
+            }}
+          >
+            {etape?.annotation ? (
+              <div
+                style={{
+                  background: BRAND.colors.blanc,
+                  borderRadius: 999,
+                  padding: `${height * 0.012}px ${height * 0.026}px`,
+                  display: 'flex',
+                  alignItems: 'center',
+                  gap: height * 0.012,
+                  boxShadow: `0 ${height * 0.005}px ${height * 0.018}px rgba(56,56,56,0.10)`,
+                }}
+              >
+                <div
+                  style={{
+                    width: height * 0.014,
+                    height: height * 0.014,
+                    borderRadius: 999,
+                    background: BRAND.colors.vert,
+                  }}
+                />
+                <Etiquette fond={BRAND.colors.blanc} taille={0.019}>
+                  {etape.annotation}
+                </Etiquette>
+              </div>
+            ) : null}
+
+            <SousTitres
+              alignement={alignement}
+              decalageFrames={minutage.demo.debut - minutage.hook.debut}
+              placement="dans-le-flux"
+            />
+          </div>
         </AbsoluteFill>
-        {habillage}
+
+        {etape && (
+          <ChapitreBarre
+            numero={index + 1}
+            total={script.demo.etapes.length}
+            titre={etape.titre}
+          />
+        )}
       </AbsoluteFill>
     );
   }
@@ -231,17 +277,24 @@ const PlanEtape: React.FC<{
         <AbsoluteFill style={{ backgroundColor: BRAND.colors.blanc }} />
       )}
       {/* L'annotation vit dans la couche zoomée : elle désigne le champ, pas un
-          point fixe de la frame. */}
-      <Annotation etape={etape} contreEchelle={1 / echelle} />
+          point fixe de la frame. En 9:16, seul le repère reste sur l'écran —
+          son libellé descend sous la vidéo, car rien ne s'écrit par-dessus le
+          logiciel. */}
+      <Annotation
+        etape={etape}
+        contreEchelle={1 / echelle}
+        avecEtiquette={!vertical}
+      />
     </AbsoluteFill>
   );
 };
 
 /** Cercle vert pulsant au point de clic + étiquette flottante avec flèche. */
-const Annotation: React.FC<{ etape: EtapeScript; contreEchelle: number }> = ({
-  etape,
-  contreEchelle,
-}) => {
+const Annotation: React.FC<{
+  etape: EtapeScript;
+  contreEchelle: number;
+  avecEtiquette: boolean;
+}> = ({ etape, contreEchelle, avecEtiquette }) => {
   const frame = useCurrentFrame();
   const { height, width } = useVideoConfig();
   if (!etape.annotation) return null;
@@ -271,6 +324,7 @@ const Annotation: React.FC<{ etape: EtapeScript; contreEchelle: number }> = ({
           opacity: apparition,
         }}
       />
+      {avecEtiquette ? (
       <div
         style={{
           position: 'absolute',
@@ -290,6 +344,7 @@ const Annotation: React.FC<{ etape: EtapeScript; contreEchelle: number }> = ({
           {etape.annotation}
         </Etiquette>
       </div>
+      ) : null}
     </>
   );
 };

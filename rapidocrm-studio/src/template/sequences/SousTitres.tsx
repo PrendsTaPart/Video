@@ -28,7 +28,13 @@ export const SousTitres: React.FC<{
   alignement: Alignement | null;
   /** Décalage entre la frame de la composition et le temps de la piste voix. */
   decalageFrames?: number;
-}> = ({ alignement, decalageFrames = 0 }) => {
+  /**
+   * `superposes` — posés en bas de la frame, par-dessus l'image (16:9).
+   * `dans-le-flux` — rendus à leur place dans la colonne, sous la vidéo (9:16).
+   * En vertical, rien n'est écrit par-dessus l'écran du logiciel.
+   */
+  placement?: 'superposes' | 'dans-le-flux';
+}> = ({ alignement, decalageFrames = 0, placement = 'superposes' }) => {
   const frame = useCurrentFrame();
   const { height, width } = useVideoConfig();
   if (!alignement) return null;
@@ -45,15 +51,17 @@ export const SousTitres: React.FC<{
   const debut = Math.max(0, index - 3);
   const fenetre = bloc.mots.slice(debut, debut + 7);
 
-  const taille = height * 0.036;
+  const taille = height * (placement === 'dans-le-flux' ? 0.03 : 0.036);
+  const flux = placement === 'dans-le-flux';
   return (
     <div
       style={{
-        position: 'absolute',
-        // Au-dessus de la barre de chapitres, qui occupe le bas du cadre.
-        bottom: height * 0.115,
-        left: width * 0.08,
-        width: width * 0.84,
+        position: flux ? 'relative' : 'absolute',
+        // Superposés : au-dessus de la barre de chapitres, qui occupe le bas du
+        // cadre. Dans le flux : à leur place sous la vidéo.
+        bottom: flux ? undefined : height * 0.115,
+        left: flux ? undefined : width * 0.08,
+        width: flux ? '100%' : width * 0.84,
         display: 'flex',
         flexWrap: 'wrap',
         justifyContent: 'center',
