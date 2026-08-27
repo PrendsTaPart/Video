@@ -1,6 +1,6 @@
 Combien de clients suit vraiment votre commercial ? Vous ne le savez pas. Un clic depuis sa fiche, et sa liste s'ouvre.
 
-On part de la fiche d'un commercial, et on ressort sur la liste de ses clients à lui. Pas un écran à part, pas un export : c'est la page Clients habituelle, avec un filtre déjà posé à son nom. Toute la barre d'outils reste là — chercher, filtrer, lancer une campagne, prospecter, ajouter. Et une étiquette en haut de page vous rappelle en permanence sur quoi vous êtes filtré, avec une croix pour la retirer. C'est le raccourci qui manque quand on prépare un point hebdomadaire : au lieu de chercher dans toute la base, on part de la personne.
+On part de la fiche d'un commercial, et on ressort sur la liste de ses clients à lui. Pas un écran à part, pas un export : c'est la page Clients habituelle, avec un filtre déjà posé à son nom. Toute la barre d'outils reste là — chercher, filtrer, lancer une campagne, prospecter, ajouter. Et une étiquette en haut de page vous rappelle en permanence sur quoi vous êtes filtré, avec une croix pour la retirer. C'est le raccourci qui manque quand on prépare un point hebdomadaire : au lieu de chercher dans toute la base, on part de la personne. Deux choses à retenir avant de commencer. Ce raccourci ne change aucun droit : c'est un filtre d'affichage, pas un changement de périmètre. Et quand vous avez fini, retirez l'étiquette — sinon la page Clients reste filtrée sur ce commercial, et la fois d'après vous la croirez vide.
 
 On part de sa fiche de profil.
 
@@ -10,6 +10,6 @@ La page Clients s'ouvre, le temps du chargement.
 
 Et voilà son portefeuille. L'étiquette en haut dit sur quoi vous êtes filtré ; la croix la retire pour revenir à tous les clients.
 
-Vous avez son portefeuille sous les yeux. Pour comparer toute l'équipe d'un coup, RapidoCRM se branche sur Claude : vous écrivez votre demande en français, il lit vos données et vous répond. Copiez ce prompt, collez-le, et remplacez ce qui est entre crochets.
+Vous avez son portefeuille sous les yeux. Pour comparer toute l'équipe d'un coup, plutôt que d'ouvrir les fiches une par une, RapidoCRM se branche sur Claude : vous écrivez votre demande en français, il lit vos données et vous répond. C'est ce qui rend visible un déséquilibre de répartition. Copiez ce prompt, collez-le, et remplacez ce qui est entre crochets.
 
-Un clic depuis la fiche, et vous savez qui suit qui.
+Un clic depuis la fiche, et vous savez qui suit qui. Répartir devient une décision, plus une intuition.
