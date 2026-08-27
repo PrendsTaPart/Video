@@ -1,0 +1,137 @@
+{
+  "outils": [
+    {
+      "nom": "create_entreprise",
+      "description": "Créer une entreprise cliente (nom requis, coordonnées validées). Écriture — non utilisé par ce pipeline, mais son schéma fait foi sur les champs et leur caractère obligatoire.",
+      "parametres": [
+        {
+          "nom": "nom",
+          "type": "string",
+          "obligatoire": true,
+          "valeurs_autorisees": [],
+          "description": "Nom de l'entreprise"
+        },
+        {
+          "nom": "email",
+          "type": "string|null",
+          "obligatoire": false,
+          "valeurs_autorisees": [],
+          "description": "Email de contact"
+        },
+        {
+          "nom": "siret",
+          "type": "string|null",
+          "obligatoire": false,
+          "valeurs_autorisees": [],
+          "description": "SIRET (14 chiffres)"
+        },
+        {
+          "nom": "dirigeant",
+          "type": "string|null",
+          "obligatoire": false,
+          "valeurs_autorisees": [],
+          "description": "Nom du dirigeant"
+        },
+        {
+          "nom": "naf",
+          "type": "string|null",
+          "obligatoire": false,
+          "valeurs_autorisees": [],
+          "description": "Code NAF"
+        },
+        {
+          "nom": "adresse",
+          "type": "string|null",
+          "obligatoire": false,
+          "valeurs_autorisees": [],
+          "description": "Adresse"
+        },
+        {
+          "nom": "code_postal",
+          "type": "string|null",
+          "obligatoire": false,
+          "valeurs_autorisees": [],
+          "description": "Code postal"
+        },
+        {
+          "nom": "ville",
+          "type": "string|null",
+          "obligatoire": false,
+          "valeurs_autorisees": [],
+          "description": "Ville"
+        },
+        {
+          "nom": "telephone",
+          "type": "string|null",
+          "obligatoire": false,
+          "valeurs_autorisees": [],
+          "description": "Téléphone"
+        },
+        {
+          "nom": "site_web",
+          "type": "string|null",
+          "obligatoire": false,
+          "valeurs_autorisees": [],
+          "description": "Site web (URL complète avec https://)"
+        },
+        {
+          "nom": "domaine",
+          "type": "string|null",
+          "obligatoire": false,
+          "valeurs_autorisees": [],
+          "description": "Domaine d'activité"
+        }
+      ]
+    },
+    {
+      "nom": "list_entreprises",
+      "description": "Liste les entreprises enregistrées dans le C.R.M., avec nom, e-mail, SIRET, dirigeant et domaine. Lecture seule.",
+      "parametres": [
+        {
+          "nom": "limit",
+          "type": "integer|null",
+          "obligatoire": false,
+          "valeurs_autorisees": [],
+          "description": "Nombre maximum de résultats"
+        },
+        {
+          "nom": "q",
+          "type": "string|null",
+          "obligatoire": false,
+          "valeurs_autorisees": [],
+          "description": "Recherche libre"
+        }
+      ]
+    },
+    {
+      "nom": "rechercher_entreprise_siret",
+      "description": "Recherche une entreprise à partir de son numéro de SIRET. Lecture seule.",
+      "parametres": [
+        {
+          "nom": "siret",
+          "type": "string",
+          "obligatoire": true,
+          "valeurs_autorisees": [],
+          "description": "SIRET (14 chiffres)"
+        }
+      ]
+    },
+    {
+      "nom": "get_entreprise",
+      "description": "Fiche d'une entreprise par son identifiant. Lecture seule.",
+      "parametres": [
+        {
+          "nom": "id",
+          "type": "integer",
+          "obligatoire": true,
+          "valeurs_autorisees": [],
+          "description": "ID principal"
+        }
+      ]
+    }
+  ],
+  "divergences": [
+    "Divergence : « Champ e-mail de l'entreprise » (12.0s) ne correspond à aucun paramètre des outils MCP retenus — à décrire depuis la frame, pas depuis un schéma.",
+    "Divergence : « Champs du nouveau mot de passe » (30.0s) ne correspond à aucun paramètre des outils MCP retenus — à décrire depuis la frame, pas depuis un schéma."
+  ]
+}

@@ -1,0 +1,184 @@
+{
+  "meta": {
+    "module": "Configuration",
+    "numero": 3,
+    "titre": "Créer son entreprise",
+    "titre_court": "Créer son entreprise",
+    "slug": "01-creer-son-entreprise"
+  },
+  "hook": {
+    "texte": "Votre accès est créé. Il manque encore l'essentiel : votre société.",
+    "promesse": "Trois champs, et tout ce que vous ferez ensuite lui sera rattaché.",
+    "duree": 7,
+    "alternatives": [
+      "Un espace vide, ça commence par une entreprise.",
+      "Avant la première facture, il y a cet écran.",
+      "Qui êtes-vous, côté société ? C'est ce qu'on remplit ici."
+    ]
+  },
+  "intro": {
+    "texte": "On part de l'écran de création d'entreprise, et on ressort sur votre tableau de bord, votre société en place. C'est le point d'ancrage de tout le reste : vos clients, vos devis et vos factures s'y rattacheront sans que vous ayez à y penser.",
+    "duree": 13
+  },
+  "demo": {
+    "etapes": [
+      {
+        "numero": 1,
+        "titre": "Nommer l'entreprise",
+        "voix": "Premier champ : le nom de votre société. Pas le vôtre. C'est celui qui apparaîtra sur vos documents, alors écrivez-le comme vous voulez le lire sur un devis.",
+        "debut_source": 0,
+        "fin_source": 9,
+        "zone_focus": {
+          "x": 0.28,
+          "y": 0.12,
+          "w": 0.44,
+          "h": 0.78
+        },
+        "annotation": "nom de l'entreprise",
+        "point": {
+          "x": 0.5,
+          "y": 0.36
+        }
+      },
+      {
+        "numero": 2,
+        "titre": "Renseigner l'e-mail de l'entreprise",
+        "voix": "Deuxième champ : l'adresse de contact de la société. Elle est distincte de la vôtre : la vôtre vous sert à entrer, celle-ci sert à être joint.",
+        "debut_source": 9,
+        "fin_source": 18,
+        "zone_focus": {
+          "x": 0.28,
+          "y": 0.12,
+          "w": 0.44,
+          "h": 0.78
+        },
+        "annotation": "e-mail de l'entreprise",
+        "point": {
+          "x": 0.5,
+          "y": 0.46
+        }
+      },
+      {
+        "numero": 3,
+        "titre": "Saisir le SIRET",
+        "voix": "Troisième champ : le SIRET, quatorze chiffres qui identifient votre établissement. Il n'est pas obligatoire, mais le mettre tout de suite vous évitera des doublons plus tard.",
+        "debut_source": 18,
+        "fin_source": 26,
+        "zone_focus": {
+          "x": 0.28,
+          "y": 0.12,
+          "w": 0.44,
+          "h": 0.78
+        },
+        "annotation": "SIRET · 14 chiffres",
+        "point": {
+          "x": 0.5,
+          "y": 0.57
+        }
+      },
+      {
+        "numero": 4,
+        "titre": "Valider la création",
+        "voix": "Cliquez sur création : votre société est enregistrée.",
+        "debut_source": 26,
+        "fin_source": 30,
+        "zone_focus": {
+          "x": 0.28,
+          "y": 0.12,
+          "w": 0.44,
+          "h": 0.78
+        },
+        "annotation": "création",
+        "point": {
+          "x": 0.5,
+          "y": 0.685
+        }
+      },
+      {
+        "numero": 5,
+        "titre": "Définir son mot de passe",
+        "voix": "Dernière formalité : votre mot de passe, deux fois.",
+        "debut_source": 30,
+        "fin_source": 35,
+        "zone_focus": {
+          "x": 0.28,
+          "y": 0.15,
+          "w": 0.44,
+          "h": 0.7
+        },
+        "annotation": "deux fois le même",
+        "point": {
+          "x": 0.5,
+          "y": 0.44
+        }
+      },
+      {
+        "numero": 6,
+        "titre": "Entrer dans son espace",
+        "voix": "Un bandeau confirme, vous vous connectez, et voilà votre tableau de bord. Votre société est en place : vos clients et vos factures viendront s'y ranger.",
+        "debut_source": 35,
+        "fin_source": 51.09,
+        "zone_focus": {
+          "x": 0.1,
+          "y": 0.05,
+          "w": 0.8,
+          "h": 0.85
+        },
+        "annotation": "tableau de bord",
+        "point": {
+          "x": 0.35,
+          "y": 0.24
+        }
+      }
+    ]
+  },
+  "segment_claude": {
+    "accroche": "Ensuite, demandez-lui.",
+    "voix": "Votre société est enregistrée. Vous pouvez le vérifier sans ouvrir un seul menu. RapidoCRM se branche sur Claude : vous écrivez votre demande en français, il lit vos données et vous répond. Copiez ce prompt, collez-le, et remplacez ce qui est entre crochets.",
+    "prompt": {
+      "texte": "Liste-moi les [nombre] dernières entreprises enregistrées, avec leur SIRET et leur dirigeant.",
+      "variables": [
+        "nombre"
+      ],
+      "outil_mcp": "list_entreprises"
+    },
+    "resultat_affiche": {
+      "titre": "26 entreprises trouvées",
+      "lignes": [
+        "Le Petit Paris — SIRET 12345678912345",
+        "Dirigeant : Dupont · Restauration"
+      ]
+    },
+    "duree": 18
+  },
+  "punchline": {
+    "texte": "Une société bien nommée, et tout le reste sait où se ranger.",
+    "duree": 5,
+    "alternatives": [
+      "Trois champs aujourd'hui, zéro correction demain.",
+      "Votre espace a maintenant un propriétaire.",
+      "L'entreprise est posée. Le travail peut commencer."
+    ]
+  },
+  "seo": {
+    "titre": "Créer son entreprise sur RapidoCRM — tutoriel",
+    "description": "Enregistrez votre société sur RapidoCRM : nom, e-mail de contact et SIRET, puis votre mot de passe. Le tutoriel pas à pas de l'Académie, en une minute.",
+    "mots_cles": [
+      "créer son entreprise",
+      "RapidoCRM",
+      "SIRET",
+      "inscription",
+      "société",
+      "configuration"
+    ],
+    "youtube_titre": "Créer son entreprise sur RapidoCRM : nom, e-mail et SIRET",
+    "youtube_description": "Le tutoriel de création d'entreprise de RapidoCRM Académie.",
+    "youtube_tags": [
+      "RapidoCRM",
+      "créer son entreprise",
+      "SIRET",
+      "CRM français",
+      "tutoriel"
+    ]
+  }
+}
