@@ -1,5 +1,5 @@
 import { createHash } from 'node:crypto';
-import { existsSync, readFileSync, writeFileSync } from 'node:fs';
+import { copyFileSync, existsSync, readFileSync, writeFileSync } from 'node:fs';
 import { join } from 'node:path';
 import { ElevenLabsClient } from '@elevenlabs/elevenlabs-js';
 import {
@@ -18,6 +18,23 @@ const REGLAGES = { stability: 0.45, similarity_boost: 0.8, style: 0.35 } as cons
 const MODELE = 'eleven_multilingual_v2';
 const SILENCE = 0.2; // 200 ms en tête et en queue
 const LUFS = -16;
+
+/**
+ * La voix de RapidoCRM Académie — « Enrick - Calm French Narrator », validée sur
+ * V01 et commune aux 172 tutoriels. ELEVENLABS_VOICE_ID peut la surcharger pour
+ * un essai, mais la valeur par défaut est la référence de la série : on ne la
+ * redéduit jamais d'un autre projet du dépôt.
+ */
+export const VOIX_SERIE = '0xHziZolI8Tp6rLtUqh2';
+
+/**
+ * Cache mutualisé entre tous les tutoriels. Une phrase identique d'une vidéo à
+ * l'autre — « Copiez ce prompt, collez-le… », une punchline reprise — n'est
+ * synthétisée qu'une fois : la clé est l'empreinte de la voix et du texte.
+ */
+const DOSSIER_CACHE = join('assets', 'voix-cache');
+const cleCache = (voix: string, texte: string): string =>
+  createHash('sha256').update(`${voix}\u0000${texte}`).digest('hex').slice(0, 32);
 
 interface BlocSource {
   id: string;
@@ -57,7 +74,7 @@ export const genererVoix = async (
     : {};
 
   const cle = process.env.ELEVENLABS_API_KEY;
-  const voix = process.env.ELEVENLABS_VOICE_ID;
+  const voix = process.env.ELEVENLABS_VOICE_ID ?? VOIX_SERIE;
 
   const blocs = blocsDuScript(script);
   const resultats: BlocVoix[] = [];
@@ -68,6 +85,18 @@ export const genererVoix = async (
     const empreinte = createHash('sha256').update(texteVoix).digest('hex').slice(0, 16);
     const fichier = join(dossierVoix, `${bloc.id}.mp3`);
     const alignementBloc = join(dossierVoix, `${bloc.id}.alignement.json`);
+
+    // Cache mutualisé : la même phrase, dans une autre vidéo, est déjà payée.
+    const cache = join(DOSSIER_CACHE, `${cleCache(voix, texteVoix)}.mp3`);
+    const cacheAlignement = cache.replace(/\.mp3$/, '.alignement.json');
+    if (!existsSync(fichier) && existsSync(cache)) {
+      assurerDossier(dossierVoix);
+      copyFileSync(cache, fichier);
+      if (existsSync(cacheAlignement)) copyFileSync(cacheAlignement, alignementBloc);
+      manifest[bloc.id] = empreinte;
+      ecrireJson(cheminManifest, manifest);
+      discret(`   ${bloc.id} — repris du cache mutualisé, synthèse évitée`);
+    }
 
     // Cache : les crédits ElevenLabs sont comptés.
     const inchange = manifest[bloc.id] === empreinte && existsSync(fichier);
@@ -98,6 +127,14 @@ export const genererVoix = async (
       ecrireJson(alignementBloc, mots);
       manifest[bloc.id] = empreinte;
       ecrireJson(cheminManifest, manifest);
+    }
+
+    // Le cache se remplit quelle que soit l'origine de la piste : synthèse,
+    // reprise, ou fichier déposé à la main.
+    if (!existsSync(cache)) {
+      assurerDossier(DOSSIER_CACHE);
+      copyFileSync(fichier, cache);
+      if (existsSync(alignementBloc)) copyFileSync(alignementBloc, cacheAlignement);
     }
 
     const duree = await dureeAudio(fichier);

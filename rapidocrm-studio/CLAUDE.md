@@ -309,6 +309,37 @@ métier du tutoriel.
 
 Le lien vers la page du tutoriel sur l'Académie va **en fin de post**.
 
+## La voix off — une seule, pour les 172 tutoriels
+
+**« Enrick - Calm French Narrator » — `voice_id: 0xHziZolI8Tp6rLtUqh2`.**
+Voix masculine française, âge moyen, calme et rassurante, diction précise,
+accent standard, décrite pour la narration, les vidéos tutorielles et
+l'e-learning. Validée sur V01, elle est la voix de toute la série.
+
+Elle est **écrite en dur** dans `src/pipeline/voix.ts` (`VOIX_SERIE`) : le
+`voice_id` ne se déduit jamais d'un autre projet du dépôt — les voix maison de
+`studio-video/` ou de FoodEatUp ne sont **pas** celle de RapidoCRM Académie.
+`ELEVENLABS_VOICE_ID` ne sert qu'à un essai ponctuel. Modèle :
+`eleven_multilingual_v2`.
+
+Sans `ELEVENLABS_API_KEY`, les blocs peuvent être produits par le MCP
+ElevenLabs (`creative_generate_speech`, `generations_count: 1`) puis déposés
+dans `voix/<bloc>.mp3` : le pipeline reprend une piste déjà présente au lieu
+d'échouer.
+
+### Le cache mutualisé
+
+`assets/voix-cache/` garde une piste par couple (voix, texte). Une phrase
+identique d'un tutoriel à l'autre — l'invitation à copier le prompt, une
+punchline reprise, une étape formulée pareil — **n'est synthétisée qu'une
+fois**, puis recopiée. Le cache se remplit quelle que soit l'origine de la
+piste : synthèse par l'API, reprise, ou fichier déposé à la main. Sur 172
+tutoriels dont les segments Claude se ressemblent beaucoup, c'est le poste
+d'économie principal.
+
+Corollaire à la rédaction : quand une formulation identique convient à
+plusieurs tutoriels, **la reprendre au mot près** plutôt que la paraphraser.
+
 ## Nommage des sorties
 
 ```
