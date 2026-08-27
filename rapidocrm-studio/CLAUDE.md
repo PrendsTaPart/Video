@@ -220,7 +220,7 @@ Tous ces dossiers (`presentateur/`, `ia/`, `ecrans/`, `avatar/`) sont recopiés 
 
 ## Le montage de référence — V01 « Créer un compte »
 
-`content/Accès et gestion/V01-creer-un-compte` est le **montage étalon**. Les
+`content/Configuration/V01-creer-un-compte` est le **montage étalon**. Les
 170 tutoriels suivants s'en déduisent : mêmes séquences, mêmes proportions,
 mêmes règles. On ne réinvente pas une mise en page par vidéo — on rejoue
 celle-ci et on ne change que le contenu.
