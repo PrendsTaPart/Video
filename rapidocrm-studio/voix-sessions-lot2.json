@@ -53,10 +53,10 @@
    "etape-01": "949HF1i5VoIHADpVxD9c",
    "etape-02": "ZgTMLU8w250sZB5q4Eij",
    "etape-03": "WNEJNQHcGDEFqUYURgu2",
-   "etape-04": "pad96DW8MBx1q7Jm2RQo",
-   "etape-05": "bplUklL9cKuZlwLzEnnn",
-   "claude": "SxKddJhr4zLxWpraIwqj",
-   "punchline": "qFQtp0gZj5xJGsnDy990"
+   "etape-04": "SwAkpVKdZzARmrjwNPhL",
+   "etape-05": "noWnepwAMJRjcl80dQIu",
+   "claude": "AlwZnxj5Jgmjmf1kzoWt",
+   "punchline": "xqdRMwvL6hJzkCpNyM59"
   },
   "V11-choisir-son-abonnement": {
    "hook": "EaB9UWjZgrBPdaExTjIL",
@@ -71,5 +71,6 @@
    "claude": "ewAyfdCqYU1nZzkZNHGw",
    "punchline": "oW9RUxcunFUo9OZoIS9S"
   }
- }
+ },
+ "note": "V10 : quatre blocs relancés après « Failed to generate audio » côté ElevenLabs."
 }
