@@ -281,6 +281,10 @@ Deux dépendances externes, sans lesquelles rien ne part :
   outil du MCP RapidoCRM Académie. Il se génère dans `/admin/parametres`.
 - une **chaîne YouTube connectée** au MCP YouTube.
 
+Le paramètre `module` de `creer_tutoriel` attend le **slug** du module, pas son
+nom : `01-configuration`, pas `configuration`. `lister_modules` donne la liste
+exacte. Un slug inconnu fait échouer l'appel avec « Module introuvable ».
+
 Le MCP RapidoCMS n'avale un fichier que depuis une **URL publique**
 (`upload_file_tool(file_url)`) : un master qui n'est que local ne peut pas être
 déposé. Ne jamais contourner en écrivant directement dans le bucket S3.
