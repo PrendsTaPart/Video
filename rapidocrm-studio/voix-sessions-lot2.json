@@ -1,0 +1,75 @@
+{
+ "flow_id": "OM5CZIzKK1sPMn8aOK7t",
+ "sessions": {
+  "V09-configurer-stripe": {
+   "hook": "9EyiTApu3rp7puAtX0uN",
+   "intro": "SJ7VF09ugybpaL5cG3Q0",
+   "etape-01": "dfJJnOqRIWwD950aMC9K",
+   "etape-02": "qrmbmC1D1atM7Cqozybq",
+   "etape-03": "eHgHalif6vnyrXwDTRyh",
+   "etape-04": "wt3X9nK4E0G6bi95td74",
+   "etape-05": "PcgyDfqEpJD0Lx0VqWmx",
+   "claude": "FxEOgrlMlUtfxVRHfWMj",
+   "punchline": "XTWa8ik0G8ExaN2SPL8m"
+  },
+  "V07-configurer-son-ia": {
+   "hook": "baosyhWBBlXvUbWVPteX",
+   "intro": "DSX4B5dtC3LNIAfmAUhm",
+   "etape-01": "dvLadbBE0tuLVQ5wa7UY",
+   "etape-02": "fLUQSGJGRGGozrvBh7m2",
+   "etape-03": "WK94R9UpiQm2nH0bEu7r",
+   "etape-04": "ihvq1aHBRtGntU1iqGKB",
+   "etape-05": "haFV0hO6nopYYABm2gIh",
+   "claude": "XlUyYTeJZrzmbH2rGZGd",
+   "punchline": "strKNqhvKOfmk5OcqrSA"
+  },
+  "V06-configurer-son-imap": {
+   "hook": "6UFVMBCMgXM3YgHIvRI6",
+   "intro": "USkNB3rNrfEN75oHd5Hc",
+   "etape-01": "u9W4PqarV4jBUVHFaLsf",
+   "etape-02": "pld8MCYMWTvbbVXZ3mZE",
+   "etape-03": "s8gKlNiEkRl9T0PRy9lL",
+   "etape-04": "nhrhCdAQKUbm2HdhNBZD",
+   "etape-05": "cObqTJnPtIphGMg6g65Z",
+   "claude": "N42dpKxcAyRZJW34PvPW",
+   "punchline": "ZlIJUmWEohAfsxWrMZwa"
+  },
+  "V13-recuperer-sa-cle-api": {
+   "hook": "c6ce2N7wLBEoFYoCn9aX",
+   "intro": "4ZQgyef9SSTWYPEzT54x",
+   "etape-01": "P1djC0qFNgkG3yPEBbu2",
+   "etape-02": "y6gvNnAp2RPcVt41dMlE",
+   "etape-03": "zSfBxoYZlnlGSntLt8b0",
+   "etape-04": "UZtzoF9pMnYwBqBkMuBH",
+   "etape-05": "ZnPPMq0lioBugeu9E57h",
+   "etape-06": "p7iQAUALMJDvgK2ojFIE",
+   "etape-07": "xxqcORuS7C6cdYkPZygW",
+   "claude": "xosfcRglTmIwmM6ZcgVd",
+   "punchline": "G8FxXsC36IslmtijhEfA"
+  },
+  "V10-configurer-son-iban": {
+   "hook": "9XQRWLkwmZyATwtZuIkO",
+   "intro": "XOLH4DrhjXsmz0rKTIHH",
+   "etape-01": "949HF1i5VoIHADpVxD9c",
+   "etape-02": "ZgTMLU8w250sZB5q4Eij",
+   "etape-03": "WNEJNQHcGDEFqUYURgu2",
+   "etape-04": "pad96DW8MBx1q7Jm2RQo",
+   "etape-05": "bplUklL9cKuZlwLzEnnn",
+   "claude": "SxKddJhr4zLxWpraIwqj",
+   "punchline": "qFQtp0gZj5xJGsnDy990"
+  },
+  "V11-choisir-son-abonnement": {
+   "hook": "EaB9UWjZgrBPdaExTjIL",
+   "intro": "YNbVTAr2iDZq5SmoY5Q2",
+   "etape-01": "R0ZOdQ1TLo8XwBsFKP0q",
+   "etape-02": "Zn0YBL7mSWdYDUuh3S5c",
+   "etape-03": "7SGF2XlMzFUQuWhtKNrI",
+   "etape-04": "LcL9tcCpBhT7dWXRnxgp",
+   "etape-05": "8CLqeSy97Ev73OzksB8g",
+   "etape-06": "rrgcUvybh9M29fDi1yk2",
+   "etape-07": "5ts9v0YZ3mlcyNrQCMs7",
+   "claude": "ewAyfdCqYU1nZzkZNHGw",
+   "punchline": "oW9RUxcunFUo9OZoIS9S"
+  }
+ }
+}
