@@ -14,9 +14,8 @@ import {
   type Zone,
 } from '../schema/index.ts';
 import { PALETTE, estCouleurDeCharte } from '../brand/tokens.ts';
-import { FPS, calculerMinutage } from '../template/minutage.ts';
 import { assurerDossier, ecrireJson, lireJson } from '../util/chemins.ts';
-import { lancer } from '../util/ffmpeg.ts';
+import { lancer, sonder } from '../util/ffmpeg.ts';
 import { avertir, erreur, info } from '../util/journal.ts';
 import { compterMots } from './script.ts';
 
@@ -229,31 +228,13 @@ const controlerAudio = async (dossier: string): Promise<Controle[]> => {
 };
 
 /** Extrait les frames des zones sensibles et vérifie qu'elles sont floues. */
-/**
- * Les zones sensibles sont horodatées sur l'ENREGISTREMENT SOURCE. Le master,
- * lui, a un générique, une intro, et des étapes ralenties ou accélérées. Il faut
- * donc convertir : sans cette conversion, on contrôle une frame du hook et on
- * conclut à tort que le floutage a sauté.
- */
-const tempsMaster = (
-  tSource: number,
-  script: Script,
-  minutage: ReturnType<typeof calculerMinutage>,
-): number | null => {
-  const index = script.demo.etapes.findIndex(
-    (e) => tSource >= e.debut_source && tSource <= e.fin_source,
-  );
-  if (index === -1) return null;
-  const etape = script.demo.etapes[index]!;
-  const bloc = minutage.demo.etapes[index]!;
-  const fenetre = Math.max(0.001, etape.fin_source - etape.debut_source);
-  const avancement = (tSource - etape.debut_source) / fenetre;
-  return (bloc.debut + avancement * bloc.duree) / FPS;
-};
-
 const controlerFloutage = async (
   dossier: string,
-  analyse: { zones_sensibles: { t: number; fin?: number; zone?: Zone; raison: string }[]; duree: number },
+  analyse: {
+    zones_sensibles: { t: number; fin?: number; zone?: Zone; raison: string }[];
+    duree: number;
+    resolution: [number, number];
+  },
   script: Script,
   alignement: Alignement | null,
   master: string,
@@ -275,33 +256,63 @@ const controlerFloutage = async (
   }
 
   const dossierControle = assurerDossier(join(dossier, 'tmp', 'qa-confidentialite'));
-  const minutage = calculerMinutage(script, alignement);
   const problemes: string[] = [];
 
+  // Les zones sensibles sont exprimées en coordonnées de l'**enregistrement**.
+  // Le master, lui, recompose cet enregistrement dans une maquette de navigateur
+  // avec un zoom propre à chaque étape : y mesurer le rectangle normalisé
+  // reviendrait à contrôler une région qui n'a plus rien à voir avec la donnée.
+  //
+  // Le floutage est appliqué en amont, par `grapheFloutage`, sur les segments
+  // d'étape de `tmp/`. C'est donc là qu'on vérifie que les pixels sont détruits :
+  // ce qui est illisible avant la composition le reste après, quel que soit le
+  // zoom. Reste à traverser le letterbox, l'enregistrement 16:9 étendu étant
+  // centré verticalement dans le cadre du segment.
   for (const [i, zone] of analyse.zones_sensibles.entries()) {
-    // On vise le milieu de la plage sensible, converti en temps du master.
     const milieu = (zone.t + Math.min(zone.fin ?? analyse.duree, analyse.duree)) / 2;
-    const t = tempsMaster(milieu, script, minutage) ?? tempsMaster(zone.t, script, minutage);
-    if (t === null) {
+    const index = script.demo.etapes.findIndex(
+      (e) => e.debut_source <= milieu && milieu <= e.fin_source,
+    );
+    const etape = index === -1 ? undefined : script.demo.etapes[index];
+    if (!etape) {
       problemes.push(
         `zone ${i + 1} (${zone.raison}) — hors des étapes montées, donc absente du master`,
       );
       continue;
     }
+    const segment = join(dossier, 'tmp', `etape-${String(etape.numero).padStart(2, '0')}-16x9.mp4`);
+    if (!existsSync(segment)) {
+      problemes.push(`zone ${i + 1} (${zone.raison}) — segment d'étape absent de tmp/`);
+      continue;
+    }
+    // Le segment dure la voix, l'enregistrement dure sa fenêtre : on reporte
+    // l'instant au prorata.
+    const fenetre = Math.max(0.001, etape.fin_source - etape.debut_source);
+    const dureeSegment = (await sonder(segment)).duree;
+    const t = ((milieu - etape.debut_source) / fenetre) * dureeSegment;
+
     const image = join(dossierControle, `zone-${i + 1}.png`);
     await lancer('ffmpeg', [
-      '-y', '-ss', t.toFixed(2), '-i', master, '-frames:v', '1', image,
+      '-y', '-ss', Math.max(0, Math.min(t, dureeSegment - 0.05)).toFixed(2),
+      '-i', segment, '-frames:v', '1', image,
     ]);
     const z = zone.zone;
     const meta = await sharp(image).metadata();
     const largeur = meta.width ?? 1920;
     const hauteur = meta.height ?? 1080;
+    // Hauteur réellement occupée par l'enregistrement, et bande noire au-dessus.
+    const [sourceW, sourceH] = analyse.resolution;
+    const hauteurSource = Math.round((largeur * sourceH) / sourceW);
+    const marge = Math.max(0, Math.round((hauteur - hauteurSource) / 2));
     const extrait = z
       ? sharp(image).extract({
-          left: Math.round(z.x * largeur),
-          top: Math.round(z.y * hauteur),
-          width: Math.max(8, Math.round(z.w * largeur)),
-          height: Math.max(8, Math.round(z.h * hauteur)),
+          left: Math.min(largeur - 8, Math.max(0, Math.round(z.x * largeur))),
+          top: Math.min(hauteur - 8, Math.max(0, marge + Math.round(z.y * hauteurSource))),
+          width: Math.max(8, Math.min(largeur - Math.round(z.x * largeur), Math.round(z.w * largeur))),
+          height: Math.max(
+            8,
+            Math.min(hauteur - marge - Math.round(z.y * hauteurSource), Math.round(z.h * hauteurSource)),
+          ),
         })
       : sharp(image);
     // Une zone floutée a un écart-type faible : les contours de texte ont disparu.
