@@ -285,6 +285,30 @@ Le MCP RapidoCMS n'avale un fichier que depuis une **URL publique**
 (`upload_file_tool(file_url)`) : un master qui n'est que local ne peut pas être
 déposé. Ne jamais contourner en écrivant directement dans le bucket S3.
 
+## LinkedIn — une publication par tutoriel
+
+Chaque tutoriel part aussi sur **LinkedIn**, sur la page **RapidoSoftware**
+(compte RapidoCMS `id 32`, `account_id 101119107`) — jamais sur FoodEatUp,
+BraindCode ou un profil personnel. Le montage publié est le **9:16**, plus lisible
+dans le fil.
+
+Le post se tient à trois choses, dans cet ordre :
+
+1. **le problème concret** que le tutoriel règle, en une ou deux phrases, dans les
+   mots du métier — pas « découvrez notre fonctionnalité » ;
+2. **ce que le logiciel fait**, montré et non promis : ce que l'on voit à l'écran,
+   en combien de temps ;
+3. **l'invitation à une démo**, avec le numéro WhatsApp **06.14.18.92.25**.
+
+Ton : professionnel, sobre, à la première personne du pluriel. On vouvoie. On
+donne envie d'essayer le logiciel en montrant qu'il fait gagner du temps, jamais
+en survendant. Pas d'emoji en rafale (deux au maximum, jamais dans la première
+ligne), pas de superlatif, pas de « révolutionnaire », pas de « il suffit de ».
+Trois à cinq hashtags en fin de post, sobres : #CRM #RapidoCRM et le domaine
+métier du tutoriel.
+
+Le lien vers la page du tutoriel sur l'Académie va **en fin de post**.
+
 ## Nommage des sorties
 
 ```
