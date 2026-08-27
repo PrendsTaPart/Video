@@ -7,15 +7,37 @@
     "Disposer d'un compte Stripe et de sa clé secrète"
   ],
   "champs_cles": [
-    { "nom": "Clé secrète stripe", "obligatoire": true, "explication": "La clé secrète de votre compte Stripe. Elle s'affiche masquée une fois enregistrée." }
+    {
+      "nom": "Clé secrète stripe",
+      "obligatoire": true,
+      "explication": "La clé secrète de votre compte Stripe. Elle s'affiche masquée une fois enregistrée."
+    }
   ],
   "outils_mcp": [
-    { "nom": "list_factures", "role": "Liste les factures de l'entreprise avec leur montant et leur statut. Lecture seule.",
-      "parametres_obligatoires": [], "parametres_optionnels": ["limit", "statut", "periode"],
-      "exemple_appel": { "limit": 5 } },
-    { "nom": "get_revenue_summary", "role": "Résumé du chiffre d'affaires à partir des factures et des devis. Lecture seule.",
-      "parametres_obligatoires": [], "parametres_optionnels": ["periode"],
-      "exemple_appel": { "periode": "month" } }
+    {
+      "nom": "list_factures",
+      "role": "Liste les factures de l'entreprise avec leur montant et leur statut. Lecture seule.",
+      "parametres_obligatoires": [],
+      "parametres_optionnels": [
+        "limit",
+        "statut",
+        "periode"
+      ],
+      "exemple_appel": {
+        "limit": 5
+      }
+    },
+    {
+      "nom": "get_revenue_summary",
+      "role": "Résumé du chiffre d'affaires à partir des factures et des devis. Lecture seule.",
+      "parametres_obligatoires": [],
+      "parametres_optionnels": [
+        "periode"
+      ],
+      "exemple_appel": {
+        "periode": "month"
+      }
+    }
   ],
   "bonnes_pratiques": [
     "Branchez Stripe avant d'envoyer votre premier devis : le lien de paiement se propose au moment de l'envoi.",
@@ -26,25 +48,43 @@
     "Oublier d'enregistrer : chaque section de la page Profil a son propre bouton."
   ],
   "cas_usage": [
-    { "titre": "Faire régler une facture en ligne", "contexte": "Vos clients paient par virement et vous relancez à la main.",
-      "resultat_attendu": "Stripe branché, le règlement en ligne devient possible sur vos documents commerciaux." }
+    {
+      "titre": "Faire régler une facture en ligne",
+      "contexte": "Vos clients paient par virement et vous relancez à la main.",
+      "resultat_attendu": "Stripe branché, le règlement en ligne devient possible sur vos documents commerciaux."
+    }
   ],
   "astuces": [
-    { "titre": "Chaque section a son bouton", "contenu": "La page Profil empile plusieurs réglages — Agent ia, Stripe, Twilio, Informations bancaires, Boîte mail. Le bouton enregistrer ne valide que la section au-dessus de lui.", "niveau": "debutant" },
-    { "titre": "Secrète veut dire secrète", "contenu": "La clé s'affiche masquée une fois enregistrée. Elle ne se partage pas et se régénère chez Stripe si elle a circulé.", "niveau": "debutant" },
-    { "titre": "Twilio est juste en dessous", "contenu": "Account sid et Auth token de trente-deux caractères : la même page branche aussi les sms et l'agent vocal.", "niveau": "pro" }
+    {
+      "titre": "Chaque section a son bouton",
+      "contenu": "La page Profil empile plusieurs réglages — Agent ia, Stripe, Twilio, Informations bancaires, Boîte mail. Le bouton enregistrer ne valide que la section au-dessus de lui.",
+      "niveau": "debutant"
+    },
+    {
+      "titre": "Secrète veut dire secrète",
+      "contenu": "La clé s'affiche masquée une fois enregistrée. Elle ne se partage pas et se régénère chez Stripe si elle a circulé.",
+      "niveau": "debutant"
+    },
+    {
+      "titre": "Twilio est juste en dessous",
+      "contenu": "Account sid et Auth token de trente-deux caractères : la même page branche aussi les sms et l'agent vocal.",
+      "niveau": "pro"
+    }
   ],
   "prompt_claude": {
     "titre": "Suivre ce qui reste à encaisser",
     "texte": "Liste-moi mes [nombre] dernières factures avec leur montant et leur statut.",
-    "variables": ["nombre"],
+    "variables": [
+      "nombre"
+    ],
     "outil_mcp": "list_factures"
   },
   "sources": {
     "champs_cles": "frames 00:00 et 00:16 de l'enregistrement : section « Stripe — Paiements en ligne », champ « Clé secrète stripe »",
     "astuces": "frame 00:02 : section « Twilio — Connectez votre compte une seule fois : le même numéro sert aux appels de l'agent vocal et à l'envoi de vos sms », champs « Account sid » et « Auth token » (32 caractères)",
     "erreurs_frequentes": "frames 00:00 à 00:17 : chaque section de la page porte son propre bouton « enregistrer »",
-    "outils_mcp": "schémas du MCP RapidoCRM, en lecture seule. Aucun outil ne configure Stripe : la clé se saisit uniquement dans cette section. Les prompts proposés portent sur les documents à encaisser, en aval."
+    "outils_mcp": "schémas du MCP RapidoCRM, en lecture seule. Aucun outil ne configure Stripe : la clé se saisit uniquement dans cette section. Les prompts proposés portent sur les documents à encaisser, en aval.",
+    "a_quoi_ca_sert": "frame 00:00 de l'enregistrement : sous-titre de la section, « Stripe — Paiements en ligne », et champ unique « Clé secrète stripe » qui relie le CRM au compte Stripe."
   },
   "a_verifier": []
 }
