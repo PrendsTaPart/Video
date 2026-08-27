@@ -1,0 +1,54 @@
+{
+  "outils": [
+    {
+      "nom": "list_factures",
+      "description": "Facturation : liste les factures de l'entreprise avec leur montant. Lecture seule.",
+      "parametres": [
+        {
+          "nom": "limit",
+          "type": "integer|null",
+          "obligatoire": false,
+          "description": "Nombre maximum de résultats"
+        },
+        {
+          "nom": "statut",
+          "type": "string|null",
+          "obligatoire": false,
+          "description": "Filtre de statut"
+        },
+        {
+          "nom": "periode",
+          "type": "string|null",
+          "obligatoire": false,
+          "valeurs_autorisees": [
+            "today",
+            "week",
+            "month",
+            "quarter",
+            "year"
+          ],
+          "description": "Période"
+        }
+      ]
+    },
+    {
+      "nom": "get_revenue_summary",
+      "description": "Résumé du chiffre d'affaires à partir des factures et devis. Lecture seule.",
+      "parametres": [
+        {
+          "nom": "periode",
+          "type": "string|null",
+          "obligatoire": false,
+          "valeurs_autorisees": [
+            "today",
+            "week",
+            "month",
+            "quarter",
+            "year"
+          ],
+          "description": "Période"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,54 @@
+{
+  "fonctionnalite": "Souscrire son abonnement RapidoCRM",
+  "a_quoi_ca_sert": "Le paiement de l'abonnement débloque les fonctionnalités du CRM. Une fois réglé, une liste de configuration s'ouvre sur le tableau de bord et indique ce qu'il reste à renseigner pour que factures, boîte mail, paiements et campagnes fonctionnent.",
+  "pour_qui": "Gérant ou administrateur qui ouvre l'espace de sa société",
+  "prerequis": [
+    "Être connecté à son espace",
+    "Disposer d'une carte bancaire"
+  ],
+  "champs_cles": [
+    { "nom": "E-mail", "obligatoire": true, "explication": "L'adresse à laquelle le reçu de paiement sera envoyé." },
+    { "nom": "Informations de la carte", "obligatoire": true, "explication": "Numéro, date d'expiration au format MM/AA, et cryptogramme CVC." },
+    { "nom": "Nom du titulaire de la carte", "obligatoire": true, "explication": "Le nom complet tel qu'il figure sur la carte." },
+    { "nom": "Pays ou région", "obligatoire": true, "explication": "Le pays de facturation, choisi dans la liste déroulante." },
+    { "nom": "Enregistrer mes informations pour régler plus rapidement", "obligatoire": false, "explication": "Case à cocher facultative : elle mémorise le moyen de paiement pour les prochains règlements, sur ce site et partout où Link est accepté." }
+  ],
+  "outils_mcp": [
+    { "nom": "get_dashboard_kpis", "role": "KPIs synthétiques : clients, CA facturé et encaissé, devis en attente, prospects du pipeline, tâches ouvertes. Lecture seule.",
+      "parametres_obligatoires": [], "parametres_optionnels": ["periode"],
+      "exemple_appel": { "periode": "month" } },
+    { "nom": "get_revenue_summary", "role": "Résumé du chiffre d'affaires à partir des factures et des devis. Lecture seule.",
+      "parametres_obligatoires": [], "parametres_optionnels": ["periode"],
+      "exemple_appel": { "periode": "month" } }
+  ],
+  "bonnes_pratiques": [
+    "Suivez la liste de configuration qui s'ouvre après le paiement : elle donne l'ordre dans lequel remplir les réglages qui comptent.",
+    "Utilisez une adresse que vous consultez : c'est là qu'arrivent le reçu et les avis d'échéance."
+  ],
+  "erreurs_frequentes": [
+    "Fermer la liste de configuration sans la lire, puis chercher pourquoi les factures ou la boîte mail ne fonctionnent pas.",
+    "Saisir un nom de titulaire différent de celui inscrit sur la carte."
+  ],
+  "cas_usage": [
+    { "titre": "Ouvrir son espace", "contexte": "Vous venez de créer votre compte et les fonctionnalités sont verrouillées.",
+      "resultat_attendu": "L'abonnement réglé, le tableau de bord s'ouvre avec la liste de ce qui reste à configurer." }
+  ],
+  "astuces": [
+    { "titre": "La liste de configuration donne l'ordre", "contenu": "Après le paiement, la fenêtre « Bienvenue sur rapido crm ! » affiche un pourcentage et les réglages à compléter : informations bancaires, boîte mail, et la suite.", "niveau": "debutant" },
+    { "titre": "Le paiement passe par Stripe", "contenu": "La page de règlement est celle de Stripe, signalée en bas par « Propulsé par stripe ». Vos coordonnées bancaires ne transitent pas par le CRM.", "niveau": "debutant" },
+    { "titre": "Retenir sa carte, ou non", "contenu": "La case « Enregistrer mes informations pour régler plus rapidement » est facultative. Décochée, chaque règlement redemande la carte.", "niveau": "pro" }
+  ],
+  "prompt_claude": {
+    "titre": "Prendre la mesure de son espace",
+    "texte": "Donne-moi mes indicateurs de [periode] : clients, chiffre d'affaires facturé et devis en attente.",
+    "variables": ["periode"],
+    "outil_mcp": "get_dashboard_kpis"
+  },
+  "sources": {
+    "champs_cles": "frames 00:12 à 00:52 de l'enregistrement : page de paiement « Abonnement Mensuel - Premium », blocs « Coordonnées » et « Moyen de paiement »",
+    "a_quoi_ca_sert": "frame 01:07 : fenêtre « Bienvenue sur rapido crm ! — Configurez votre compte pour débloquer toutes les fonctionnalités. Ces informations sont nécessaires pour les factures, la boîte mail, les paiements et les campagnes »",
+    "astuces": "frames 00:60 et 01:07 : mention « Propulsé par stripe » en pied de page de règlement, et la liste de configuration avec son pourcentage d'avancement",
+    "outils_mcp": "schémas du MCP RapidoCRM, en lecture seule. Aucun outil ne gère l'abonnement : il se souscrit uniquement depuis cette page. Les prompts proposés portent sur l'activité de l'espace, en aval."
+  },
+  "a_verifier": []
+}

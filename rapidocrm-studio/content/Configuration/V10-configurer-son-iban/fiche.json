@@ -1,0 +1,54 @@
+{
+  "fonctionnalite": "Renseigner ses coordonnées bancaires de facturation",
+  "a_quoi_ca_sert": "Ces trois champs impriment vos coordonnées bancaires sur vos factures. Sans eux, le client reçoit un document sans savoir où virer l'argent.",
+  "pour_qui": "Gérant, comptable, ou toute personne chargée de la facturation",
+  "prerequis": [
+    "Être connecté à son espace",
+    "Avoir sous la main le RIB de la société"
+  ],
+  "champs_cles": [
+    { "nom": "Banque", "obligatoire": true, "explication": "Le nom de l'établissement, tel qu'il doit apparaître sur vos documents." },
+    { "nom": "Switch", "obligatoire": true, "explication": "Le code de l'établissement, cinq chiffres, lu sur votre RIB." },
+    { "nom": "Iban", "obligatoire": true, "explication": "Le numéro de compte au format international. Il se saisit d'un seul tenant, sans espaces." }
+  ],
+  "outils_mcp": [
+    { "nom": "list_factures", "role": "Liste les factures de l'entreprise avec leur montant. Lecture seule.",
+      "parametres_obligatoires": [], "parametres_optionnels": ["limit", "statut", "periode"],
+      "exemple_appel": { "limit": 5 } },
+    { "nom": "get_revenue_summary", "role": "Résumé du chiffre d'affaires à partir des factures et des devis. Lecture seule.",
+      "parametres_obligatoires": [], "parametres_optionnels": ["periode"],
+      "exemple_appel": { "periode": "month" } }
+  ],
+  "bonnes_pratiques": [
+    "Complétez cette section avant d'émettre votre première facture : c'est elle qui porte les coordonnées de règlement.",
+    "Relisez l'IBAN caractère par caractère : une faute passe inaperçue et bloque le virement du client."
+  ],
+  "erreurs_frequentes": [
+    "Saisir l'IBAN avec les espaces du RIB alors que le champ l'attend d'un seul tenant.",
+    "Confondre le code guichet du champ Switch avec le numéro de compte."
+  ],
+  "cas_usage": [
+    { "titre": "Préparer sa première facture", "contexte": "Vous vous apprêtez à facturer et vos documents ne portent aucune coordonnée bancaire.",
+      "resultat_attendu": "Banque, code et IBAN renseignés, la facture part avec de quoi être payée." },
+    { "titre": "Changer de banque", "contexte": "La société a changé d'établissement et l'ancien IBAN figure encore sur les documents.",
+      "resultat_attendu": "Les trois champs corrigés, les documents émis ensuite portent les nouvelles coordonnées." }
+  ],
+  "astuces": [
+    { "titre": "Trois champs, un seul RIB", "contenu": "Banque, Switch et Iban se lisent tous les trois sur le RIB que votre banque vous a remis.", "niveau": "debutant" },
+    { "titre": "Sans espaces", "contenu": "L'IBAN se saisit d'un seul tenant. Les espaces du RIB papier ne servent qu'à la lecture.", "niveau": "debutant" },
+    { "titre": "Coordonnées de facturation, pas de prélèvement", "contenu": "Le sous-titre de la section le précise : ce sont les coordonnées bancaires de facturation, celles que vos clients liront.", "niveau": "pro" }
+  ],
+  "prompt_claude": {
+    "titre": "Contrôler ses dernières factures",
+    "texte": "Liste-moi mes [nombre] dernières factures avec leur montant total.",
+    "variables": ["nombre"],
+    "outil_mcp": "list_factures"
+  },
+  "sources": {
+    "champs_cles": "frames 00:00 à 00:26 de l'enregistrement : section « Informations bancaires — Coordonnées bancaires de facturation », champs « Banque », « Switch » et « Iban »",
+    "a_quoi_ca_sert": "sous-titre de la section, frame 00:00 : « Coordonnées bancaires de facturation »",
+    "erreurs_frequentes": "frame 00:18 : l'IBAN est saisi d'un seul tenant dans le champ, sans espaces",
+    "outils_mcp": "schémas du MCP RapidoCRM, en lecture seule. Aucun outil ne gère les coordonnées bancaires : elles se saisissent uniquement dans cette section. Les prompts proposés portent sur les factures, en aval."
+  },
+  "a_verifier": []
+}
