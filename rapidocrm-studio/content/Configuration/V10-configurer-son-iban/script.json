@@ -1,0 +1,166 @@
+{
+  "meta": {
+    "module": "Configuration",
+    "numero": 10,
+    "titre": "Configurer son IBAN",
+    "titre_court": "Configurer son IBAN",
+    "slug": "01-configurer-son-iban"
+  },
+  "hook": {
+    "texte": "Votre facture est partie. Le client la lit, et cherche où virer l'argent.",
+    "promesse": "Trois champs, et vos documents disent où vous payer.",
+    "duree": 8,
+    "alternatives": [
+      "Une facture sans coordonnées bancaires, c'est un paiement reporté.",
+      "Le RIB se saisit une fois, et il suit toutes vos factures.",
+      "Trois champs séparent votre facture de son règlement."
+    ]
+  },
+  "intro": {
+    "texte": "On part de la section Informations bancaires de votre page Profil, et on ressort avec les coordonnées de règlement de la société. Ce sont elles qui s'impriment sur vos factures : le nom de votre banque, son code, et votre IBAN. Sans elles, le client reçoit un document juste, mais il ne sait pas où envoyer l'argent. Tout se lit sur le RIB que votre banque vous a remis.",
+    "duree": 20
+  },
+  "demo": {
+    "etapes": [
+      {
+        "numero": 1,
+        "titre": "Ouvrir les informations bancaires",
+        "voix": "Page Profil, section Informations bancaires. Sous-titre : coordonnées bancaires de facturation. Trois champs.",
+        "debut_source": 0,
+        "fin_source": 6.0,
+        "zone_focus": {
+          "x": 0.02,
+          "y": 0.02,
+          "w": 0.96,
+          "h": 0.7
+        },
+        "annotation": "informations bancaires",
+        "point": {
+          "x": 0.11,
+          "y": 0.06
+        }
+      },
+      {
+        "numero": 2,
+        "titre": "Nommer sa banque",
+        "voix": "Le nom de l'établissement d'abord, tel qu'il apparaîtra sur vos documents.",
+        "debut_source": 6.0,
+        "fin_source": 10.0,
+        "zone_focus": {
+          "x": 0.03,
+          "y": 0.2,
+          "w": 0.55,
+          "h": 0.35
+        },
+        "annotation": "le nom de la banque",
+        "point": {
+          "x": 0.27,
+          "y": 0.36
+        }
+      },
+      {
+        "numero": 3,
+        "titre": "Renseigner le code guichet",
+        "voix": "Puis son code, cinq chiffres, lu lui aussi sur votre RIB.",
+        "debut_source": 10.0,
+        "fin_source": 15.0,
+        "zone_focus": {
+          "x": 0.45,
+          "y": 0.2,
+          "w": 0.52,
+          "h": 0.35
+        },
+        "annotation": "le code de l'établissement",
+        "point": {
+          "x": 0.71,
+          "y": 0.36
+        }
+      },
+      {
+        "numero": 4,
+        "titre": "Saisir l'IBAN",
+        "voix": "Et l'IBAN, d'un seul tenant, sans les espaces du RIB papier. Relisez-le : une faute passe inaperçue et bloque le virement.",
+        "debut_source": 15.0,
+        "fin_source": 24.0,
+        "zone_focus": {
+          "x": 0.03,
+          "y": 0.38,
+          "w": 0.6,
+          "h": 0.35
+        },
+        "annotation": "l'IBAN, sans espaces",
+        "point": {
+          "x": 0.27,
+          "y": 0.52
+        }
+      },
+      {
+        "numero": 5,
+        "titre": "Enregistrer",
+        "voix": "Un clic sur enregistrer, et vos factures savent où vous payer.",
+        "debut_source": 24.0,
+        "fin_source": 28.01,
+        "zone_focus": {
+          "x": 0.2,
+          "y": 0.4,
+          "w": 0.6,
+          "h": 0.45
+        },
+        "annotation": "enregistrer",
+        "point": {
+          "x": 0.49,
+          "y": 0.66
+        }
+      }
+    ]
+  },
+  "segment_claude": {
+    "accroche": "Ensuite, demandez-lui.",
+    "voix": "Vos coordonnées sont en place. Pour relire ce qui est parti sans ouvrir la facturation, RapidoCRM se branche sur Claude : vous écrivez votre demande en français, il lit vos données et vous répond. Copiez ce prompt, collez-le, et remplacez ce qui est entre crochets par le nombre de factures voulu.",
+    "prompt": {
+      "texte": "Liste-moi mes [nombre] dernières factures avec leur montant total.",
+      "variables": [
+        "nombre"
+      ],
+      "outil_mcp": "list_factures"
+    },
+    "resultat_affiche": {
+      "titre": "5 factures trouvées",
+      "lignes": [
+        "FA-2026-052 — 2 100,00 €",
+        "FA-2026-051 — 640,00 €"
+      ]
+    },
+    "duree": 22
+  },
+  "punchline": {
+    "texte": "Un RIB saisi une fois, et plus jamais de facture muette sur le paiement.",
+    "duree": 7,
+    "alternatives": [
+      "Vos factures disent enfin où vous payer.",
+      "Trois champs, et le virement part sans question.",
+      "Le RIB une fois, le paiement à chaque fois."
+    ]
+  },
+  "seo": {
+    "titre": "Configurer son IBAN sur RapidoCRM — tutoriel",
+    "description": "Renseignez les coordonnées bancaires de votre société sur RapidoCRM : banque, code guichet et IBAN sur vos factures. Le tutoriel pas à pas de l'Académie.",
+    "mots_cles": [
+      "configurer son IBAN",
+      "RapidoCRM",
+      "coordonnées bancaires",
+      "facturation",
+      "RIB",
+      "configuration"
+    ],
+    "youtube_titre": "Configurer son IBAN — RapidoCRM",
+    "youtube_description": "Le tutoriel des coordonnées bancaires de RapidoCRM Académie.",
+    "youtube_tags": [
+      "RapidoCRM",
+      "IBAN",
+      "facturation",
+      "CRM français",
+      "tutoriel"
+    ]
+  }
+}
