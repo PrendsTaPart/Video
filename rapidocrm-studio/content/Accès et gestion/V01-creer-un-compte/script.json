@@ -4,7 +4,7 @@
     "numero": 1,
     "titre": "Créer son compte RapidoCRM",
     "titre_court": "Créer son compte",
-    "slug": "creer-un-compte"
+    "slug": "01-creer-un-compte"
   },
   "hook": {
     "texte": "Vous avez souscrit, et vous ne savez pas par où commencer ?",
