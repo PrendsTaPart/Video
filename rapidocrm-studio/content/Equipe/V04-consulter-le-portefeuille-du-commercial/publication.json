@@ -1,0 +1,15 @@
+{
+  "rapidocms": {
+    "video_url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/rapidocrm-tuto-equipe-V04-02-consulter-le-portefeuille-du-commercial.mp4",
+    "video_vertical_url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/rapidocrm-tuto-equipe-V04-02-consulter-le-portefeuille-du-commercial-vertical.mp4",
+    "thumbnail_url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/rapidocrm-tuto-equipe-V04-02-consulter-le-portefeuille-du-commercial-thumb.jpg",
+    "thumbnail_vertical_url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/rapidocrm-tuto-equipe-V04-02-consulter-le-portefeuille-du-commercial-thumb-vertical.jpg",
+    "empreintes": {
+      "video_url": "d8a61e11e93f92f3",
+      "video_vertical_url": "4ca08390c1c23d05",
+      "thumbnail_url": "7712ee1ec22f0d79",
+      "thumbnail_vertical_url": "72fd2e3c9a0111f2"
+    },
+    "publie_le": "2026-08-28T01:45:22.392Z"
+  }
+}
