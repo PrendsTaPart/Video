@@ -1,6 +1,7 @@
 {
   "meta": {
     "module": "Comptabilite",
+    "module_slug": "05-comptabilite",
     "numero": 4,
     "titre": "Retrouver une facture dans l'historique",
     "titre_court": "Historique des factures",
@@ -28,9 +29,17 @@
         "voix": "L'historique des factures. Toutes y sont, la plus récente en tête, avec son client et son montant.",
         "debut_source": 0,
         "fin_source": 11.0,
-        "zone_focus": { "x": 0.22, "y": 0.1, "w": 0.77, "h": 0.85 },
+        "zone_focus": {
+          "x": 0.22,
+          "y": 0.1,
+          "w": 0.77,
+          "h": 0.85
+        },
         "annotation": "toutes les factures",
-        "point": { "x": 0.5, "y": 0.6 }
+        "point": {
+          "x": 0.5,
+          "y": 0.6
+        }
       },
       {
         "numero": 2,
@@ -38,9 +47,17 @@
         "voix": "Le statut, puis l'entreprise. Les deux se cumulent. Et quand rien ne correspond, le tableau le dit franchement : aucun résultat trouvé. Ce n'est pas une panne, c'est une réponse.",
         "debut_source": 11.0,
         "fin_source": 22.0,
-        "zone_focus": { "x": 0.23, "y": 0.25, "w": 0.5, "h": 0.45 },
+        "zone_focus": {
+          "x": 0.23,
+          "y": 0.25,
+          "w": 0.5,
+          "h": 0.45
+        },
         "annotation": "les deux filtres",
-        "point": { "x": 0.42, "y": 0.4 }
+        "point": {
+          "x": 0.42,
+          "y": 0.4
+        }
       },
       {
         "numero": 3,
@@ -48,9 +65,17 @@
         "voix": "On change d'entreprise, et deux factures apparaissent. Le compteur précise : deux entrées, filtrées à partir de cinq. Vous savez toujours ce que le filtre a écarté.",
         "debut_source": 22.0,
         "fin_source": 39.0,
-        "zone_focus": { "x": 0.23, "y": 0.15, "w": 0.75, "h": 0.8 },
+        "zone_focus": {
+          "x": 0.23,
+          "y": 0.15,
+          "w": 0.75,
+          "h": 0.8
+        },
         "annotation": "2 sur 5",
-        "point": { "x": 0.4, "y": 0.9 }
+        "point": {
+          "x": 0.4,
+          "y": 0.9
+        }
       },
       {
         "numero": 4,
@@ -58,9 +83,17 @@
         "voix": "Et le menu de la ligne : visualiser, modifier, télécharger, ou voir l'entreprise.",
         "debut_source": 39.0,
         "fin_source": 47.403,
-        "zone_focus": { "x": 0.6, "y": 0.45, "w": 0.32, "h": 0.5 },
+        "zone_focus": {
+          "x": 0.6,
+          "y": 0.45,
+          "w": 0.32,
+          "h": 0.5
+        },
         "annotation": "quatre actions",
-        "point": { "x": 0.78, "y": 0.65 }
+        "point": {
+          "x": 0.78,
+          "y": 0.65
+        }
       }
     ]
   },

@@ -1,6 +1,7 @@
 {
   "meta": {
     "module": "Equipe",
+    "module_slug": "02-utilisateur",
     "numero": 3,
     "titre": "Modifier un objectif",
     "titre_court": "Modifier un objectif",

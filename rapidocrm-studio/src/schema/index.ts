@@ -120,6 +120,14 @@ export const EtapeScriptSchema = z.object({
 export const ScriptSchema = z.object({
   meta: z.object({
     module: z.string().min(1),
+    /**
+     * Slug du module côté Académie — « 02-utilisateur », pas « Equipe ».
+     * `creer_tutoriel` n'accepte que celui-là et échoue sur « Module
+     * introuvable » avec le nom du dossier. Les deux ne coïncident pas :
+     * le dossier local dit Equipe là où le catalogue dit 02-utilisateur.
+     * Se lit dans `lister_modules`.
+     */
+    module_slug: z.string().min(1).optional(),
     numero: z.number().int().positive(),
     titre: z.string().min(1),
     titre_court: z.string().min(1).max(28),

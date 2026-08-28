@@ -1,6 +1,7 @@
 {
   "meta": {
     "module": "Produits",
+    "module_slug": "03-produit",
     "numero": 4,
     "titre": "Rattacher un produit à un programme de fidélité",
     "titre_court": "Produit et fidélité",

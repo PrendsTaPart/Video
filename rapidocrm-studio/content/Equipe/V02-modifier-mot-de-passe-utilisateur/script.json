@@ -1,6 +1,7 @@
 {
   "meta": {
     "module": "Equipe",
+    "module_slug": "02-utilisateur",
     "numero": 2,
     "titre": "Modifier son mot de passe",
     "titre_court": "Modifier son mot de passe",
@@ -28,9 +29,17 @@
         "voix": "Le commercial existe dans la liste. Il lui manque juste son mot de passe.",
         "debut_source": 0,
         "fin_source": 4.5,
-        "zone_focus": { "x": 0.0, "y": 0.05, "w": 1.0, "h": 0.93 },
+        "zone_focus": {
+          "x": 0.0,
+          "y": 0.05,
+          "w": 1.0,
+          "h": 0.93
+        },
         "annotation": "la fiche créée",
-        "point": { "x": 0.35, "y": 0.6 }
+        "point": {
+          "x": 0.35,
+          "y": 0.6
+        }
       },
       {
         "numero": 2,
@@ -38,9 +47,17 @@
         "voix": "Sur la page de connexion, le lien mot de passe oublié, sous le champ.",
         "debut_source": 4.5,
         "fin_source": 10.0,
-        "zone_focus": { "x": 0.28, "y": 0.1, "w": 0.45, "h": 0.85 },
+        "zone_focus": {
+          "x": 0.28,
+          "y": 0.1,
+          "w": 0.45,
+          "h": 0.85
+        },
         "annotation": "mot de passe oublié",
-        "point": { "x": 0.62, "y": 0.64 }
+        "point": {
+          "x": 0.62,
+          "y": 0.64
+        }
       },
       {
         "numero": 3,
@@ -48,9 +65,17 @@
         "voix": "On saisit l'adresse du compte, et on envoie le lien de réinitialisation.",
         "debut_source": 10.0,
         "fin_source": 15.0,
-        "zone_focus": { "x": 0.28, "y": 0.15, "w": 0.45, "h": 0.75 },
+        "zone_focus": {
+          "x": 0.28,
+          "y": 0.15,
+          "w": 0.45,
+          "h": 0.75
+        },
         "annotation": "envoyer le lien",
-        "point": { "x": 0.5, "y": 0.72 }
+        "point": {
+          "x": 0.5,
+          "y": 0.72
+        }
       },
       {
         "numero": 4,
@@ -58,9 +83,17 @@
         "voix": "Le mail arrive dans la boîte : réinitialisation de votre mot de passe.",
         "debut_source": 15.0,
         "fin_source": 21.0,
-        "zone_focus": { "x": 0.0, "y": 0.0, "w": 1.0, "h": 1.0 },
+        "zone_focus": {
+          "x": 0.0,
+          "y": 0.0,
+          "w": 1.0,
+          "h": 1.0
+        },
         "annotation": "le mail reçu",
-        "point": { "x": 0.55, "y": 0.57 }
+        "point": {
+          "x": 0.55,
+          "y": 0.57
+        }
       },
       {
         "numero": 5,
@@ -68,9 +101,17 @@
         "voix": "Le lien ouvre la page de réinitialisation. Deux champs identiques, et on définit le nouveau mot de passe. Ce lien ne vaut que pour cette demande.",
         "debut_source": 21.0,
         "fin_source": 30.0,
-        "zone_focus": { "x": 0.28, "y": 0.15, "w": 0.45, "h": 0.75 },
+        "zone_focus": {
+          "x": 0.28,
+          "y": 0.15,
+          "w": 0.45,
+          "h": 0.75
+        },
         "annotation": "définir un nouveau mot de passe",
-        "point": { "x": 0.5, "y": 0.68 }
+        "point": {
+          "x": 0.5,
+          "y": 0.68
+        }
       },
       {
         "numero": 6,
@@ -78,9 +119,17 @@
         "voix": "Retour à la connexion, avec le bandeau qui confirme : votre mot de passe a été modifié. S'il n'apparaît pas, le changement n'est pas passé. On saisit l'adresse et le nouveau mot de passe.",
         "debut_source": 30.0,
         "fin_source": 42.0,
-        "zone_focus": { "x": 0.28, "y": 0.05, "w": 0.72, "h": 0.9 },
+        "zone_focus": {
+          "x": 0.28,
+          "y": 0.05,
+          "w": 0.72,
+          "h": 0.9
+        },
         "annotation": "mot de passe modifié",
-        "point": { "x": 0.85, "y": 0.14 }
+        "point": {
+          "x": 0.85,
+          "y": 0.14
+        }
       },
       {
         "numero": 7,
@@ -88,9 +137,17 @@
         "voix": "Et il est chez lui, sur son propre tableau de bord.",
         "debut_source": 42.0,
         "fin_source": 47.808,
-        "zone_focus": { "x": 0.0, "y": 0.02, "w": 1.0, "h": 0.96 },
+        "zone_focus": {
+          "x": 0.0,
+          "y": 0.02,
+          "w": 1.0,
+          "h": 0.96
+        },
         "annotation": "son tableau de bord",
-        "point": { "x": 0.3, "y": 0.15 }
+        "point": {
+          "x": 0.3,
+          "y": 0.15
+        }
       }
     ]
   },
@@ -99,7 +156,9 @@
     "voix": "L'accès est ouvert. Pour vérifier qui a bien un compte actif sans ouvrir chaque fiche, RapidoCRM se branche sur Claude : vous écrivez votre demande en français, il lit vos données et vous répond. Copiez ce prompt, collez-le, et remplacez ce qui est entre crochets.",
     "prompt": {
       "texte": "Liste-moi mes commerciaux [statut] avec leur adresse e-mail.",
-      "variables": ["statut"],
+      "variables": [
+        "statut"
+      ],
       "outil_mcp": "list_commerciaux"
     },
     "resultat_affiche": {

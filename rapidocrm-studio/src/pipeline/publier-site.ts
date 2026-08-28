@@ -57,7 +57,7 @@ export const publierSite = async (dossier: string): Promise<Publication> => {
     'creer_tutoriel',
     {
       ...commun,
-      module: script.meta.module,
+      module: script.meta.module_slug ?? script.meta.module,
       numero: script.meta.numero,
       titre: script.meta.titre,
       titre_court: script.meta.titre_court,

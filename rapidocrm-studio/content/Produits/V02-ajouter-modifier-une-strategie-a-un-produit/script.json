@@ -1,6 +1,7 @@
 {
   "meta": {
     "module": "Produits",
+    "module_slug": "03-produit",
     "numero": 2,
     "titre": "Ajouter une stratégie à un produit",
     "titre_court": "Ajouter une stratégie",
@@ -28,9 +29,17 @@
         "voix": "Depuis la liste des produits, le premier des trois boutons : voir.",
         "debut_source": 0,
         "fin_source": 8.0,
-        "zone_focus": { "x": 0.2, "y": 0.15, "w": 0.5, "h": 0.75 },
+        "zone_focus": {
+          "x": 0.2,
+          "y": 0.15,
+          "w": 0.5,
+          "h": 0.75
+        },
         "annotation": "voir",
-        "point": { "x": 0.42, "y": 0.4 }
+        "point": {
+          "x": 0.42,
+          "y": 0.4
+        }
       },
       {
         "numero": 2,
@@ -38,9 +47,17 @@
         "voix": "Deux boutons en haut à droite : liste des stratégies pour consulter, ajouter une stratégie pour créer.",
         "debut_source": 8.0,
         "fin_source": 14.0,
-        "zone_focus": { "x": 0.6, "y": 0.15, "w": 0.4, "h": 0.4 },
+        "zone_focus": {
+          "x": 0.6,
+          "y": 0.15,
+          "w": 0.4,
+          "h": 0.4
+        },
         "annotation": "ajouter une stratégie",
-        "point": { "x": 0.9, "y": 0.3 }
+        "point": {
+          "x": 0.9,
+          "y": 0.3
+        }
       },
       {
         "numero": 3,
@@ -48,9 +65,17 @@
         "voix": "Le type d'abord : stratégie commerciale. Puis le nom — décrivez ce qu'elle fait, pas un numéro d'essai.",
         "debut_source": 14.0,
         "fin_source": 24.0,
-        "zone_focus": { "x": 0.33, "y": 0.1, "w": 0.34, "h": 0.6 },
+        "zone_focus": {
+          "x": 0.33,
+          "y": 0.1,
+          "w": 0.34,
+          "h": 0.6
+        },
         "annotation": "type et nom",
-        "point": { "x": 0.5, "y": 0.4 }
+        "point": {
+          "x": 0.5,
+          "y": 0.4
+        }
       },
       {
         "numero": 4,
@@ -58,9 +83,17 @@
         "voix": "La description dit ce qu'il faut faire. Écrivez-la en actions vérifiables : un nombre, un délai, une relance. Et si vous séchez, le bouton d'aide du bot propose un premier jet, à relire avant de valider.",
         "debut_source": 24.0,
         "fin_source": 34.0,
-        "zone_focus": { "x": 0.33, "y": 0.4, "w": 0.34, "h": 0.58 },
+        "zone_focus": {
+          "x": 0.33,
+          "y": 0.4,
+          "w": 0.34,
+          "h": 0.58
+        },
         "annotation": "aide du bot",
-        "point": { "x": 0.52, "y": 0.73 }
+        "point": {
+          "x": 0.52,
+          "y": 0.73
+        }
       },
       {
         "numero": 5,
@@ -68,9 +101,17 @@
         "voix": "Et la stratégie apparaît dans le tableau : qui l'a écrite, son type, son nom, sa date de création. Quand plusieurs personnes en ajoutent, on sait d'où sort chaque consigne.",
         "debut_source": 34.0,
         "fin_source": 50.688,
-        "zone_focus": { "x": 0.22, "y": 0.2, "w": 0.76, "h": 0.55 },
+        "zone_focus": {
+          "x": 0.22,
+          "y": 0.2,
+          "w": 0.76,
+          "h": 0.55
+        },
         "annotation": "le tableau des stratégies",
-        "point": { "x": 0.6, "y": 0.4 }
+        "point": {
+          "x": 0.6,
+          "y": 0.4
+        }
       }
     ]
   },
@@ -79,7 +120,9 @@
     "voix": "Vos consignes sont écrites. Pour repérer les produits qui n'en ont pas encore, RapidoCRM se branche sur Claude : vous écrivez votre demande en français, il lit vos données et vous répond. Copiez ce prompt, collez-le, et remplacez ce qui est entre crochets par le nombre voulu.",
     "prompt": {
       "texte": "Liste-moi mes [nombre] produits avec leur nature et leur prix.",
-      "variables": ["nombre"],
+      "variables": [
+        "nombre"
+      ],
       "outil_mcp": "list_products"
     },
     "resultat_affiche": {

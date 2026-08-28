@@ -1,6 +1,7 @@
 {
   "meta": {
     "module": "Comptabilite",
+    "module_slug": "05-comptabilite",
     "numero": 1,
     "titre": "Créer et modifier une facture",
     "titre_court": "Créer une facture",

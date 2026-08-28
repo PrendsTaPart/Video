@@ -13,9 +13,10 @@
     "publie_le": "2026-08-28T01:44:19.519Z"
   },
   "youtube": {
-    "video_url": "https://www.youtube.com/watch?v=4m4qEMgHtd4",
-    "short_url": "https://www.youtube.com/watch?v=-bnbYA7DE9I",
+    "url": "https://www.youtube.com/watch?v=4m4qEMgHtd4",
     "video_id": "4m4qEMgHtd4",
+    "publie_le": "2026-08-28T11:33:21.463453+00:00",
+    "short_url": "https://www.youtube.com/watch?v=-bnbYA7DE9I",
     "short_id": "-bnbYA7DE9I"
   }
 }

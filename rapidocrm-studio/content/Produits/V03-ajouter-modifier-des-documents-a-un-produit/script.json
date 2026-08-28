@@ -1,6 +1,7 @@
 {
   "meta": {
     "module": "Produits",
+    "module_slug": "03-produit",
     "numero": 3,
     "titre": "Attacher des documents à une stratégie",
     "titre_court": "Attacher des documents",

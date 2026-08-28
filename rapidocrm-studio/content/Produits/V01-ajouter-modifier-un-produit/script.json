@@ -1,6 +1,7 @@
 {
   "meta": {
     "module": "Produits",
+    "module_slug": "03-produit",
     "numero": 1,
     "titre": "Ajouter un produit",
     "titre_court": "Ajouter un produit",

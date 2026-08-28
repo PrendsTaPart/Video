@@ -1,6 +1,7 @@
 {
   "meta": {
     "module": "Comptabilite",
+    "module_slug": "05-comptabilite",
     "numero": 3,
     "titre": "Renseigner le mode de paiement d'une facture",
     "titre_court": "Mode de paiement",
