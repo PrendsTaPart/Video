@@ -31,13 +31,24 @@ description portant le lien vers la fiche du site.
 
 | Fiche | Motif |
 |---|---|
-| 00 · Créer son compte | quota journalier atteint ; le fichier corrigé est déposé et prêt |
-| 29 · Désactiver un skill ou un plugin | quota journalier atteint |
-| 33 · Choisir l'avatar 3D de son agent | quota journalier atteint |
+| 00 · Créer son compte | quota ; le fichier corrigé est déposé et prêt |
+| 04 · Lire son tableau de bord | quota |
+| 08 · Transformer une carte en routine | quota |
+| 29 · Désactiver un skill ou un plugin | quota |
+| 33 · Choisir l'avatar 3D de son agent | quota |
+| 34 · Personnaliser la fiche de son agent | quota |
+| 36 · Suivre ses indicateurs | quota |
+| 39 · Régler ses notifications | quota |
+| 40 · Comprendre ses crédits | quota |
 
 YouTube refuse avec `uploadLimitExceeded` — « The user has exceeded the number
-of videos they may upload ». Le quota était déjà entamé le matin même par les
-vidéos RapidoCRM ; il se réinitialise sous 24 h.
+of videos they may upload ». Le quota était déjà entamé le 27/08 par les vidéos
+RapidoCRM, et l'était encore le 28/08 à 12 h 20. Il se réinitialise sous 24 h.
+
+Attention avant de reprendre : la chaîne active était repassée sur **RapidoCRM**
+le 28/08 au matin. `get_channel_status` d'abord, `switch_channel` vers
+`UCj2P8FZ4YwygALBLITfOKNA` ensuite — publier sans vérifier déposerait les
+tutoriels Plan'It sur la mauvaise chaîne.
 
 ## Deux réserves
 
@@ -57,3 +68,19 @@ RapidoCMS, RapidoCRM et RapidoRH. Ce fichier tient donc lieu de registre.
 
 Elle est en `en_montage` : son montage a été déplacé sur la fiche 3, dont il
 décrit réellement le contenu. Elle attend une capture d'un premier échange.
+
+## `enregistrer_video` est en panne côté serveur (28/08)
+
+Le MCP Plan'It Video refuse « Adresse de vidéo invalide » sur toutes les URL,
+**y compris celle que la fiche 40 porte déjà en base**. Ce n'est donc pas une
+question de forme d'URL : la validation elle-même est cassée. Le MCP RapidoTuto
+répondait au même moment en 502.
+
+Les fiches 08 et 34 ont donc reçu leur vignette et leur transcription, mais pas
+leur vidéo. Les fichiers sont sur S3, prêts à être rattachés :
+
+- `planit-academie-tuto-08-transformer-une-carte-en-routine` — 50 s
+- `planit-academie-tuto-34-personnaliser-la-fiche-agent` — 54 s
+
+Les chapitres à redéposer avec sont dans le journal de la session ; ils se
+recalculent aussi depuis `out/render.log` de chaque épisode.
