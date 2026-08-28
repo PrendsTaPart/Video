@@ -1,0 +1,98 @@
+{
+  "fonctionnalite": "Consulter l'historique des factures",
+  "a_quoi_ca_sert": "Retrouver une facture parmi toutes celles émises, en croisant deux filtres — le statut et l'entreprise — puis la visualiser, la modifier ou la télécharger.",
+  "pour_qui": "Gérant, comptable ou assistant qui cherche un document précis",
+  "prerequis": [
+    "Être connecté à son espace",
+    "Avoir des factures enregistrées"
+  ],
+  "champs_cles": [
+    {
+      "nom": "Statut",
+      "obligatoire": false,
+      "explication": "Premier filtre de la page : Payée ou En attente. Laissé vide, il n'écarte rien."
+    },
+    {
+      "nom": "Entreprise",
+      "obligatoire": false,
+      "explication": "Second filtre : le client concerné. Les deux filtres se cumulent."
+    },
+    {
+      "nom": "rechercher",
+      "obligatoire": false,
+      "explication": "Champ de recherche libre au-dessus du tableau, indépendant des deux listes."
+    },
+    {
+      "nom": "Actions",
+      "obligatoire": false,
+      "explication": "Le menu en fin de ligne : Visualiser, Modifier, Télécharger, Voir l'entreprise."
+    }
+  ],
+  "outils_mcp": [
+    {
+      "nom": "list_factures",
+      "role": "Liste les factures du CRM, filtrables par statut et par période. Lecture seule.",
+      "parametres_obligatoires": [],
+      "parametres_optionnels": ["statut", "periode", "limit"],
+      "exemple_appel": { "periode": "month", "limit": 20 }
+    },
+    {
+      "nom": "get_revenue_summary",
+      "role": "Résumé du chiffre d'affaires calculé à partir des factures et des devis, par période. Lecture seule.",
+      "parametres_obligatoires": [],
+      "parametres_optionnels": ["periode"],
+      "exemple_appel": { "periode": "month" }
+    }
+  ],
+  "bonnes_pratiques": [
+    "Croisez les deux filtres plutôt que de parcourir la liste : le compteur sous le tableau vous dit combien de lignes ont été retenues, et sur combien.",
+    "Un filtre qui ne renvoie rien n'est pas une panne : c'est une réponse. Relâchez un critère avant de conclure que la facture manque."
+  ],
+  "erreurs_frequentes": [
+    "Oublier qu'un filtre est encore actif et croire que des factures ont disparu.",
+    "Chercher une facture d'un client au mauvais statut — l'écran affiche alors « aucun résultat trouvé »."
+  ],
+  "cas_usage": [
+    {
+      "titre": "Retrouver ce qu'un client a déjà réglé",
+      "contexte": "Un client conteste un paiement.",
+      "resultat_attendu": "Statut Payée et son entreprise : la liste se réduit à ses factures acquittées."
+    },
+    {
+      "titre": "Renvoyer un document",
+      "contexte": "Le client a perdu sa facture.",
+      "resultat_attendu": "Le menu Actions permet de la visualiser ou de la télécharger sans repasser par la comptabilité."
+    }
+  ],
+  "astuces": [
+    {
+      "titre": "Le compteur dit ce qui a été filtré",
+      "contenu": "Sous le tableau : « Affichage de 1 à 2 sur 2 entrées (filtré à partir de 5 entrées au total) ». On sait toujours ce qu'on ne voit pas.",
+      "niveau": "debutant"
+    },
+    {
+      "titre": "Aucun résultat est une information",
+      "contenu": "Statut Payée et une entreprise qui n'en a pas : le tableau affiche « aucun résultat trouvé ». La facture n'existe pas dans cet état, voilà tout.",
+      "niveau": "debutant"
+    },
+    {
+      "titre": "Quatre actions par ligne",
+      "contenu": "Visualiser, Modifier, Télécharger, Voir l'entreprise. La dernière bascule vers la fiche du client sans quitter le fil de la recherche.",
+      "niveau": "pro"
+    }
+  ],
+  "prompt_claude": {
+    "titre": "Reprendre l'historique sans filtrer à la main",
+    "texte": "Liste-moi mes factures du mois avec leur statut et leur montant.",
+    "variables": [],
+    "outil_mcp": "list_factures"
+  },
+  "sources": {
+    "champs_cles": "frames 00:05 et 00:15 de l'enregistrement : listes déroulantes « Statut » et « Entreprise », champ « rechercher », colonne « Actions » ; frame 00:42 : menu Visualiser / Modifier / Télécharger / Voir l'entreprise",
+    "a_quoi_ca_sert": "frame 00:05 : tableau de l'historique, factures 11 et 10 ; frame 00:34 : « Affichage de 1 à 2 sur 2 entrées (filtré à partir de 5 entrées au total) »",
+    "astuces": "frame 00:15 : filtre Payée + La baguetterie renvoyant « aucun résultat trouvé » ; frame 00:34 : le compteur de filtrage ; frame 00:42 : les quatre actions",
+    "erreurs_frequentes": "frames 00:15 et 00:34 : les deux filtres se cumulent et restent actifs tant qu'on ne les relâche pas",
+    "outils_mcp": "schémas du MCP RapidoCRM, en lecture seule. Les prompts proposés lisent les factures et le chiffre d'affaires ; le filtrage montré à l'écran est celui de l'interface."
+  },
+  "a_verifier": []
+}
