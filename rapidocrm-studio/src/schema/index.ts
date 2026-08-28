@@ -77,6 +77,8 @@ export const FicheSchema = z.object({
       z.object({
         titre: z.string(),
         contexte: z.string(),
+        /** Le geste à faire. Absent des premières fiches : le titre le porte. */
+        action: z.string().default(''),
         resultat_attendu: z.string(),
       }),
     )

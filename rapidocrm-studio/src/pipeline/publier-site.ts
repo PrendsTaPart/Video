@@ -63,10 +63,9 @@ export const publierSite = async (dossier: string): Promise<Publication> => {
       titre_court: script.meta.titre_court,
       accroche: script.hook.promesse,
       explication: explication(script),
-      etapes: script.demo.etapes.map((e) => ({
-        titre: e.titre,
-        description: e.voix,
-      })),
+      // Le schéma de `creer_tutoriel` nomme le corps d'une étape « texte »,
+      // pas « description » : une clé inconnue est rejetée à la validation.
+      etapes: script.demo.etapes.map((e) => ({ titre: e.titre, texte: e.voix })),
       a_quoi_ca_sert: fiche.a_quoi_ca_sert,
       prerequis: fiche.prerequis,
     },
@@ -91,12 +90,47 @@ export const publierSite = async (dossier: string): Promise<Publication> => {
     // 6. Transcription
     [
       'enregistrer_transcription',
-      { ...commun, transcription, chapitres },
+      {
+        ...commun,
+        transcription,
+        // Côté Académie, un chapitre porte « debut », pas « timestamp_secondes ».
+        chapitres: chapitres.map((c) => ({
+          debut: c.timestamp_secondes,
+          titre: c.titre,
+          texte: c.texte,
+        })),
+      },
     ],
     // 7. Astuces
-    ['ajouter_astuces', { ...commun, astuces: fiche.astuces }],
+    [
+      'ajouter_astuces',
+      {
+        ...commun,
+        // « contenu » dans la fiche, « texte » côté Académie.
+        astuces: fiche.astuces.map((a) => ({
+          titre: a.titre,
+          texte: a.contenu,
+          niveau: a.niveau,
+        })),
+      },
+    ],
     // 8. Cas d'usage
-    ['ajouter_cas_usage', { ...commun, cas_usage: fiche.cas_usage }],
+    [
+      'ajouter_cas_usage',
+      {
+        ...commun,
+        // L'Académie attend quatre champs, dont « action » — ce qu'on fait —
+        // et « resultat », que la fiche appelle « resultat_attendu ». Sans
+        // action rédigée, le titre du cas la tient : il est déjà écrit à
+        // l'infinitif (« Mettre son offre au catalogue »).
+        cas_usage: fiche.cas_usage.map((c) => ({
+          titre: c.titre,
+          contexte: c.contexte,
+          action: c.action || c.titre,
+          resultat: c.resultat_attendu,
+        })),
+      },
+    ],
     // 9. Prompts Claude
     [
       'ajouter_prompts',
@@ -139,7 +173,7 @@ export const publierSite = async (dossier: string): Promise<Publication> => {
   if (existsSync(avatar) && publication.rapidocms?.video_vertical_url) {
     appels.splice(3, 0, [
       'enregistrer_video_avatar',
-      { ...commun, video_url: publication.rapidocms.video_vertical_url },
+      { ...commun, video_avatar_url: publication.rapidocms.video_vertical_url },
     ]);
   }
 
