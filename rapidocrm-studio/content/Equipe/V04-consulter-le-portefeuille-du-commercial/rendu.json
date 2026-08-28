@@ -1,13 +1,13 @@
 {
-  "duree": 79.4,
+  "duree": 93.36666666666666,
   "fichiers": [
     {
       "chemin": "/home/user/Video/rapidocrm-studio/content/Equipe/V04-consulter-le-portefeuille-du-commercial/out/master-16x9.mp4",
-      "octets": 8596851
+      "octets": 9035949
     },
     {
       "chemin": "/home/user/Video/rapidocrm-studio/content/Equipe/V04-consulter-le-portefeuille-du-commercial/out/master-9x16.mp4",
-      "octets": 7914270
+      "octets": 8358687
     }
   ],
   "sequences": [
@@ -24,22 +24,22 @@
     {
       "nom": "titre",
       "debut": 8.1,
-      "fin": 42.2
+      "fin": 56.166666666666664
     },
     {
       "nom": "demo",
-      "debut": 42.2,
-      "fin": 58.766666666666666
+      "debut": 56.166666666666664,
+      "fin": 72.73333333333333
     },
     {
       "nom": "claude",
-      "debut": 58.766666666666666,
-      "fin": 76.33333333333333
+      "debut": 72.73333333333333,
+      "fin": 90.3
     },
     {
       "nom": "punchline",
-      "debut": 76.33333333333333,
-      "fin": 79.4
+      "debut": 90.3,
+      "fin": 93.36666666666666
     }
   ],
   "chapitres_youtube": [
@@ -52,31 +52,29 @@
       "titre": "Consulter le portefeuille d'un commercial"
     },
     {
-      "timecode": "00:42",
+      "timecode": "00:56",
       "titre": "Ouvrir la fiche du commercial"
     },
     {
-      "timecode": "00:44",
+      "timecode": "00:58",
       "titre": "Ouvrir ses paramètres"
     },
     {
-      "timecode": "00:48",
+      "timecode": "01:02",
       "titre": "Laisser la liste se charger"
     },
     {
-      "timecode": "00:51",
+      "timecode": "01:05",
       "titre": "Lire la liste filtrée"
     },
     {
-      "timecode": "00:58",
+      "timecode": "01:12",
       "titre": "Faites-le avec Claude"
     },
     {
-      "timecode": "01:16",
+      "timecode": "01:30",
       "titre": "À retenir"
     }
   ],
-  "avertissements": [
-    "Durée finale 79s, hors de la fenêtre 80–170s."
-  ]
+  "avertissements": []
 }

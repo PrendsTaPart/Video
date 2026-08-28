@@ -5,7 +5,7 @@
       "famille": "Charte",
       "intitule": "Couleurs dominantes dans la palette",
       "statut": "avertissement",
-      "detail": "qa-008.jpg → #9898A8, qa-009.jpg → #787878"
+      "detail": "qa-011.jpg → #787878"
     },
     {
       "famille": "Charte",
@@ -94,9 +94,9 @@
     {
       "famille": "Complétude",
       "intitule": "Durée finale dans la fenêtre 80–170 s",
-      "statut": "avertissement",
-      "detail": "79 s"
+      "statut": "ok",
+      "detail": "93 s"
     }
   ],
-  "produit_le": "2026-08-28T00:46:25.496Z"
+  "produit_le": "2026-08-28T01:19:02.665Z"
 }

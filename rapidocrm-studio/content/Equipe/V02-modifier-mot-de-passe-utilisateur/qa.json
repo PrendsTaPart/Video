@@ -53,7 +53,7 @@
       "famille": "Confidentialité",
       "intitule": "8 zone(s) sensible(s) floutée(s)",
       "statut": "echec",
-      "detail": "zone 4 (Avatar et compte de la messagerie personnelle) — netteté 16.9"
+      "detail": "zone 4 (Avatar et compte de la messagerie personnelle) — netteté 4.1"
     },
     {
       "famille": "Exactitude",
@@ -98,5 +98,5 @@
       "detail": "96 s"
     }
   ],
-  "produit_le": "2026-08-27T23:47:43.699Z"
+  "produit_le": "2026-08-28T01:19:13.899Z"
 }

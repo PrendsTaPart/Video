@@ -305,10 +305,10 @@
       "t": 15.0,
       "fin": 21.0,
       "zone": {
-        "x": 0.95,
-        "y": 0.1,
-        "w": 0.05,
-        "h": 0.08
+        "x": 0.955,
+        "y": 0.105,
+        "w": 0.035,
+        "h": 0.065
       },
       "raison": "Avatar et compte de la messagerie personnelle"
     },
