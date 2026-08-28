@@ -1,0 +1,84 @@
+{
+  "duree": 94.76666666666667,
+  "fichiers": [
+    {
+      "chemin": "/home/user/Video/rapidocrm-studio/content/Produits/V02-ajouter-modifier-une-strategie-a-un-produit/out/master-16x9.mp4",
+      "octets": 13079680
+    },
+    {
+      "chemin": "/home/user/Video/rapidocrm-studio/content/Produits/V02-ajouter-modifier-une-strategie-a-un-produit/out/master-9x16.mp4",
+      "octets": 11731578
+    }
+  ],
+  "sequences": [
+    {
+      "nom": "ouverture",
+      "debut": 0,
+      "fin": 1.4
+    },
+    {
+      "nom": "hook",
+      "debut": 1.4,
+      "fin": 8.733333333333333
+    },
+    {
+      "nom": "titre",
+      "debut": 8.733333333333333,
+      "fin": 30.166666666666668
+    },
+    {
+      "nom": "demo",
+      "debut": 30.166666666666668,
+      "fin": 72.9
+    },
+    {
+      "nom": "claude",
+      "debut": 72.9,
+      "fin": 91.3
+    },
+    {
+      "nom": "punchline",
+      "debut": 91.3,
+      "fin": 94.76666666666667
+    }
+  ],
+  "chapitres_youtube": [
+    {
+      "timecode": "00:00",
+      "titre": "Trois commerciaux vendent le même produit. Chacun le vend à sa façon."
+    },
+    {
+      "timecode": "00:08",
+      "titre": "Ajouter une stratégie à un produit"
+    },
+    {
+      "timecode": "00:30",
+      "titre": "Ouvrir la fiche du produit"
+    },
+    {
+      "timecode": "00:33",
+      "titre": "Repérer les deux boutons"
+    },
+    {
+      "timecode": "00:40",
+      "titre": "Choisir le type et nommer"
+    },
+    {
+      "timecode": "00:47",
+      "titre": "Décrire la stratégie"
+    },
+    {
+      "timecode": "01:02",
+      "titre": "Relire la liste des stratégies"
+    },
+    {
+      "timecode": "01:12",
+      "titre": "Faites-le avec Claude"
+    },
+    {
+      "timecode": "01:31",
+      "titre": "À retenir"
+    }
+  ],
+  "avertissements": []
+}
