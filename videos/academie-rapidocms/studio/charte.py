@@ -36,6 +36,18 @@ VERT = (0x4C, 0xAF, 0x50)          # confirmations positives uniquement
 BLANC = (255, 255, 255)
 NOIR_DOUX = (0x11, 0x1B, 0x21)
 
+# ── Charte Claude ────────────────────────────────────────────────────────────
+# Employée uniquement dans la carte « Version Minute », qui montre la même
+# action demandée à Claude. On y reprend l'identité de Claude plutôt que celle
+# de RapidoCMS : c'est une autre application, on ne la déguise pas en écran
+# RapidoCMS.
+CLAUDE_CORAIL = (0xD9, 0x77, 0x57)
+CLAUDE_CREME = (0xF0, 0xEE, 0xE6)
+CLAUDE_ENCRE = (0x1F, 0x1E, 0x1D)
+CLAUDE_GRIS = (0x6B, 0x68, 0x62)
+CLAUDE_BORD = (0xE3, 0xE0, 0xD7)
+CLAUDE_SURFACE = (0xFA, 0xF9, 0xF5)
+
 # ── Formats ──────────────────────────────────────────────────────────────────
 W, H = 1920, 1080                  # master 16:9
 W9, H9 = 1080, 1920                # short 9:16
@@ -171,13 +183,20 @@ def fondre(base: Image.Image, couche: Image.Image, opacite: float) -> None:
 
 
 def balayage(offset: float, taille: tuple[int, int]) -> Image.Image:
-    """Bande de lumière oblique, de gauche à droite."""
+    """Bande de lumière oblique, de gauche à droite.
+
+    Le flou est calculé au quart de la résolution puis agrandi : à ce rayon,
+    l'œil ne voit pas la différence, et une image de carton se compose seize
+    fois plus vite — sur les milliers d'images d'une série, c'est ce qui fait
+    la durée du rendu.
+    """
     lw, lh = taille
-    bande = Image.new("L", taille, 0)
+    pw, ph = lw // 4, lh // 4
+    bande = Image.new("L", (pw, ph), 0)
     d = ImageDraw.Draw(bande)
-    x = int(-lw + offset * (2.2 * lw))
-    d.polygon([(x, lh), (x + 260, lh), (x + 260 + 420, 0), (x + 420, 0)], fill=70)
-    bande = bande.filter(ImageFilter.GaussianBlur(80))
+    x = int((-lw + offset * (2.2 * lw)) / 4)
+    d.polygon([(x, ph), (x + 65, ph), (x + 65 + 105, 0), (x + 105, 0)], fill=70)
+    bande = bande.filter(ImageFilter.GaussianBlur(20)).resize(taille, Image.BILINEAR)
     couche = Image.new("RGB", taille, BLANC)
     couche.putalpha(bande)
     return couche
@@ -339,6 +358,34 @@ def detourer_pose(nom: str, hauteur: int) -> Image.Image:
     decoupe = decoupe.crop(decoupe.getchannel("A").getbbox())
     ratio = hauteur / decoupe.height
     return decoupe.resize((max(1, int(decoupe.width * ratio)), hauteur), Image.LANCZOS)
+
+
+def asterisque_claude(taille: int, couleur=CLAUDE_CORAIL) -> Image.Image:
+    """Le sigle de Claude : une étoile à onze branches, dessinée.
+
+    Le fichier de marque disponible dans le dépôt est le logotype complet
+    (sigle + mot). Pour l'avatar d'un tour de conversation, il faut le sigle
+    seul : on le trace, plutôt que de découper le logotype au jugé.
+    """
+    echelle = 4
+    grand = taille * echelle
+    couche = Image.new("RGBA", (grand, grand), (0, 0, 0, 0))
+    d = ImageDraw.Draw(couche)
+    centre = grand / 2
+    branches = 11
+    longueur = grand * 0.47
+    largeur = grand * 0.072
+    for i in range(branches):
+        angle = 2 * math.pi * i / branches - math.pi / 2
+        bout = (centre + longueur * math.cos(angle), centre + longueur * math.sin(angle))
+        normale = (math.cos(angle + math.pi / 2), math.sin(angle + math.pi / 2))
+        d.polygon([
+            (centre + largeur * normale[0], centre + largeur * normale[1]),
+            (centre - largeur * normale[0], centre - largeur * normale[1]),
+            (bout[0] - largeur * 0.30 * normale[0], bout[1] - largeur * 0.30 * normale[1]),
+            (bout[0] + largeur * 0.30 * normale[0], bout[1] + largeur * 0.30 * normale[1]),
+        ], fill=tuple(couleur) + (255,))
+    return couche.resize((taille, taille), Image.LANCZOS)
 
 
 def fleche(couche: Image.Image, depart: tuple[int, int], arrivee: tuple[int, int],

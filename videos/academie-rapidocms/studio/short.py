@@ -15,10 +15,10 @@ from pathlib import Path
 from PIL import Image, ImageDraw
 
 from .charte import (BLANC, BLEU, BLEU_CLAIR, BLEU_SOMBRE, FPS, H9, MARGE, SRC_CROP,
-                     W9, ajustee, coins_arrondis, decouper, degrade_vertical,
-                     detourer_pose, duree_de, ffmpeg, halo, lancer,
-                     logo_redimensionne, ombre_portee, pastille, police,
+                     W9, ajustee, decouper, degrade_vertical, duree_de, ffmpeg,
+                     halo, lancer, logo_redimensionne, pastille, police,
                      texte_centre)
+from .habillage import disque_presentateur
 from .voix import silence
 
 SAFE_HAUT = 150
@@ -44,12 +44,12 @@ def _calques(titre_chapitre: str, numero_chapitre: int, sous_titre: str,
     fixe = _fond()
     d = ImageDraw.Draw(fixe)
 
-    logo = logo_redimensionne(78)
-    fixe.alpha_composite(logo, (W9 // 2 - logo.width // 2, SAFE_HAUT + 10))
-    texte_centre(fixe, "ACADÉMIE RAPIDOCMS", police(True, 26), BLANC,
-                 W9 // 2, SAFE_HAUT + 118)
-    fnt = ajustee(True, 62, titre_court, W9 - 2 * MARGE)
-    texte_centre(fixe, titre_court, fnt, BLANC, W9 // 2, SAFE_HAUT + 200, ombre=True)
+    logo = logo_redimensionne(104)
+    fixe.alpha_composite(logo, (W9 // 2 - logo.width // 2, SAFE_HAUT + 4))
+    pastille(fixe, "ACADÉMIE RAPIDOCMS", police(True, 26), W9 // 2,
+             SAFE_HAUT + 148, BLANC, BLEU_SOMBRE, marge_x=26, marge_y=13)
+    fnt = ajustee(True, 66, titre_court, W9 - 2 * MARGE)
+    texte_centre(fixe, titre_court, fnt, BLANC, W9 // 2, SAFE_HAUT + 232, ombre=True)
 
     # Encoche d'accueil de la capture, pour que la carte ait un socle net.
     d.rounded_rectangle((24 - 6, CARTE_Y - 6, 24 + CARTE_W + 6, CARTE_Y + CARTE_H + 6),
@@ -67,13 +67,13 @@ def _calques(titre_chapitre: str, numero_chapitre: int, sous_titre: str,
 
     couche = Image.new("RGBA", (W9, H9), (0, 0, 0, 0))
     if sous_titre:
-        fnt = police(True, 52)
+        fnt = police(True, 50)
         lignes = decouper(sous_titre, fnt, W9 - 2 * MARGE)
         while len(lignes) > 4 and fnt.size > 34:
             fnt = police(True, fnt.size - 4)
             lignes = decouper(sous_titre, fnt, W9 - 2 * MARGE)
         interligne = fnt.size + 18
-        haut = H9 - SAFE_BAS - 40 - (len(lignes) - 1) * interligne
+        haut = H9 - SAFE_BAS - 30 - (len(lignes) - 1) * interligne
         for i, ligne in enumerate(lignes):
             texte_centre(couche, ligne, fnt, BLANC, W9 // 2, haut + i * interligne,
                          ombre=True)
@@ -81,10 +81,13 @@ def _calques(titre_chapitre: str, numero_chapitre: int, sous_titre: str,
     couche.save(sorties["sous_titre"])
 
     if pose:
-        portrait = detourer_pose(pose, 620)
+        # En vertical, le présentateur passe en pastille : de pied, il
+        # recouvrait les sous-titres. Il se pose dans la bande libre entre la
+        # capture et le texte.
+        disque = disque_presentateur(pose, 272)
         couche = Image.new("RGBA", (W9, H9), (0, 0, 0, 0))
-        couche.alpha_composite(ombre_portee(portrait, rayon=24, decalage=12, opacite=110),
-                               (W9 - portrait.width + 40, CARTE_Y + CARTE_H - 40))
+        couche.alpha_composite(disque, (W9 - disque.width - 40,
+                                        CARTE_Y + CARTE_H + 14))
         sorties["pose"] = dossier / f"{cle}-pose9.png"
         couche.save(sorties["pose"])
     return sorties

@@ -31,6 +31,7 @@ CARTE = carte_version_minute(
     ],
     cible=RACINE / "composition" / "carte-version-minute.png",
 )
+CARTE_DEMANDE = CARTE.with_name(CARTE.stem + "-demande.png")
 
 EPISODE = Episode(
     slug="remplir-sa-fiche-entreprise",
@@ -103,7 +104,7 @@ EPISODE = Episode(
         Plan("N13", 0.0, 0.0,
              "Cette carte de marque, vous pouvez aussi la créer sans ouvrir un "
              "seul champ.",
-             chapitre="La Version Minute", pose="laptop", image=CARTE),
+             chapitre="La Version Minute", pose="laptop", image=CARTE_DEMANDE),
         Plan("N14", 0.0, 0.0,
              "Dans Claude, l'outil create brand du MCP RapidoCMS crée la "
              "marque, et get company relit la fiche administrative.",

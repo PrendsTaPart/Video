@@ -31,6 +31,7 @@ CARTE = carte_version_minute(
     ],
     cible=RACINE / "composition" / "carte-version-minute.png",
 )
+CARTE_DEMANDE = CARTE.with_name(CARTE.stem + "-demande.png")
 
 EPISODE = Episode(
     slug="creer-un-post-reseaux-sociaux",
@@ -103,7 +104,7 @@ EPISODE = Episode(
         Plan("N13", 0.0, 0.0,
              "Ce formulaire, vous pouvez aussi ne jamais l'ouvrir : la même "
              "chose se demande en une phrase, depuis Claude.",
-             chapitre="La Version Minute", pose="laptop", image=CARTE),
+             chapitre="La Version Minute", pose="laptop", image=CARTE_DEMANDE),
         Plan("N14", 0.0, 0.0,
              "L'outil create draft tool du MCP RapidoCMS crée le brouillon "
              "avec son réseau, son compte et son texte. Vous le retrouvez "

@@ -31,6 +31,7 @@ CARTE = carte_version_minute(
     ],
     cible=RACINE / "composition" / "carte-version-minute.png",
 )
+CARTE_DEMANDE = CARTE.with_name(CARTE.stem + "-demande.png")
 
 EPISODE = Episode(
     slug="lancer-une-campagne",
@@ -100,7 +101,7 @@ EPISODE = Episode(
         Plan("N12", 0.0, 0.0,
              "Et si vous n'aviez pas à ouvrir cette page du tout ? Une "
              "campagne se crée en une phrase, depuis Claude.",
-             chapitre="La Version Minute", pose="laptop", image=CARTE),
+             chapitre="La Version Minute", pose="laptop", image=CARTE_DEMANDE),
         Plan("N13", 0.0, 0.0,
              "L'outil create campagne du MCP RapidoCMS la crée avec son nom, "
              "sa description et son réseau. Ensuite, add post campagne y "

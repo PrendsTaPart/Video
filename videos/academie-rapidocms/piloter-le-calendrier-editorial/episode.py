@@ -30,6 +30,7 @@ CARTE = carte_version_minute(
     ],
     cible=RACINE / "composition" / "carte-version-minute.png",
 )
+CARTE_DEMANDE = CARTE.with_name(CARTE.stem + "-demande.png")
 
 EPISODE = Episode(
     slug="piloter-le-calendrier-editorial",
@@ -99,7 +100,7 @@ EPISODE = Episode(
         Plan("N12", 0.0, 0.0,
              "Ouvrir le calendrier juste pour vérifier ce qui part cette "
              "semaine, c'est trois clics de trop.",
-             chapitre="La Version Minute", pose="laptop", image=CARTE),
+             chapitre="La Version Minute", pose="laptop", image=CARTE_DEMANDE),
         Plan("N13", 0.0, 0.0,
              "Dans Claude, l'outil list scheduled posts du MCP RapidoCMS vous "
              "renvoie tout ce qui est programmé. Une phrase, une réponse.",

@@ -31,6 +31,7 @@ CARTE = carte_version_minute(
     ],
     cible=RACINE / "composition" / "carte-version-minute.png",
 )
+CARTE_DEMANDE = CARTE.with_name(CARTE.stem + "-demande.png")
 
 EPISODE = Episode(
     slug="choisir-un-template-de-post",
@@ -102,7 +103,7 @@ EPISODE = Episode(
         Plan("N13", 0.0, 0.0,
              "La capture s'arrête là : rien n'est enregistré, rien n'est "
              "publié. Voici comment aller plus vite sur la partie modèle.",
-             chapitre="La Version Minute", pose="presente-paume", image=CARTE),
+             chapitre="La Version Minute", pose="presente-paume", image=CARTE_DEMANDE),
         Plan("N14", 0.0, 0.0,
              "L'outil create post template du MCP RapidoCMS enregistre votre "
              "visuel comme modèle réutilisable. Vous le rappelez ensuite à "

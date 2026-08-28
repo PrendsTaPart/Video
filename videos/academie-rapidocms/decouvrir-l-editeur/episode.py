@@ -31,6 +31,7 @@ CARTE = carte_version_minute(
     ],
     cible=RACINE / "composition" / "carte-version-minute.png",
 )
+CARTE_DEMANDE = CARTE.with_name(CARTE.stem + "-demande.png")
 
 EPISODE = Episode(
     slug="decouvrir-l-editeur",
@@ -100,7 +101,7 @@ EPISODE = Episode(
         Plan("N12", 0.0, 0.0,
              "L'éditeur reste utile pour ajuster une mise en page. Mais pour "
              "obtenir un visuel de départ, une phrase suffit.",
-             chapitre="La Version Minute", pose="laptop", image=CARTE),
+             chapitre="La Version Minute", pose="laptop", image=CARTE_DEMANDE),
         Plan("N13", 0.0, 0.0,
              "L'outil generate image du MCP RapidoCMS produit l'image et la "
              "range dans votre bibliothèque. Vous l'ouvrez ensuite dans "

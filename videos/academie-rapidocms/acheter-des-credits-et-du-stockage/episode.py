@@ -30,6 +30,7 @@ CARTE = carte_version_minute(
     ],
     cible=RACINE / "composition" / "carte-version-minute.png",
 )
+CARTE_DEMANDE = CARTE.with_name(CARTE.stem + "-demande.png")
 
 EPISODE = Episode(
     slug="acheter-des-credits-et-du-stockage",
@@ -88,7 +89,7 @@ EPISODE = Episode(
         Plan("N11", 0.0, 0.0,
              "Avant d'acheter du stockage, la vraie question est : qu'est-ce "
              "qui occupe déjà votre espace ?",
-             chapitre="La Version Minute", pose="laptop", image=CARTE),
+             chapitre="La Version Minute", pose="laptop", image=CARTE_DEMANDE),
         Plan("N12", 0.0, 0.0,
              "Dans Claude, l'outil list all files du MCP RapidoCMS liste vos "
              "fichiers. Vous saurez quoi supprimer avant de payer.",

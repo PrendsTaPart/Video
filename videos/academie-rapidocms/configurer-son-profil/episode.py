@@ -31,6 +31,7 @@ CARTE = carte_version_minute(
     ],
     cible=RACINE / "composition" / "carte-version-minute.png",
 )
+CARTE_DEMANDE = CARTE.with_name(CARTE.stem + "-demande.png")
 
 EPISODE = Episode(
     slug="configurer-son-profil",
@@ -98,7 +99,7 @@ EPISODE = Episode(
         Plan("N12", 0.0, 0.0,
              "Vous pouvez aussi ne jamais ouvrir cette page et demander "
              "directement à Claude ce qui manque.",
-             chapitre="La Version Minute", pose="laptop", image=CARTE),
+             chapitre="La Version Minute", pose="laptop", image=CARTE_DEMANDE),
         Plan("N13", 0.0, 0.0,
              "L'outil get profile du MCP RapidoCMS renvoie votre fiche admin "
              "et les champs encore vides. Une phrase, une réponse.",

@@ -31,6 +31,7 @@ CARTE = carte_version_minute(
     ],
     cible=RACINE / "composition" / "carte-version-minute.png",
 )
+CARTE_DEMANDE = CARTE.with_name(CARTE.stem + "-demande.png")
 
 EPISODE = Episode(
     slug="creer-une-carte-de-visite",
@@ -100,7 +101,7 @@ EPISODE = Episode(
         Plan("N12", 0.0, 0.0,
              "Avant même d'ouvrir la galerie, vous pouvez savoir quels modèles "
              "existent, sans faire défiler une seule vignette.",
-             chapitre="La Version Minute", pose="laptop", image=CARTE),
+             chapitre="La Version Minute", pose="laptop", image=CARTE_DEMANDE),
         Plan("N13", 0.0, 0.0,
              "Dans Claude, l'outil list card templates du MCP RapidoCMS vous "
              "les liste, et assign card template applique celui que vous avez "

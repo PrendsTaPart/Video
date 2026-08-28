@@ -31,6 +31,7 @@ CARTE = carte_version_minute(
     ],
     cible=RACINE / "composition" / "carte-version-minute.png",
 )
+CARTE_DEMANDE = CARTE.with_name(CARTE.stem + "-demande.png")
 
 EPISODE = Episode(
     slug="creer-une-carte-digitale",
@@ -96,7 +97,7 @@ EPISODE = Episode(
         Plan("N12", 0.0, 0.0,
              "Six champs à taper et une fenêtre à ouvrir : c'est exactement le "
              "genre de chose qu'une seule phrase remplace.",
-             chapitre="La Version Minute", pose="laptop", image=CARTE),
+             chapitre="La Version Minute", pose="laptop", image=CARTE_DEMANDE),
         Plan("N13", 0.0, 0.0,
              "Dans Claude, l'outil add digital card du MCP RapidoCMS crée la "
              "carte, et add card page link y accroche vos liens.", image=CARTE),

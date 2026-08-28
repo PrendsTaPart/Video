@@ -31,6 +31,7 @@ CARTE = carte_version_minute(
     ],
     cible=RACINE / "composition" / "carte-version-minute.png",
 )
+CARTE_DEMANDE = CARTE.with_name(CARTE.stem + "-demande.png")
 
 EPISODE = Episode(
     slug="suivre-son-abonnement",
@@ -99,7 +100,7 @@ EPISODE = Episode(
         Plan("N12", 0.0, 0.0,
              "Vous n'avez pas toujours envie d'ouvrir la page pour savoir sur "
              "quelle société tourne votre espace.",
-             chapitre="La Version Minute", pose="laptop", image=CARTE),
+             chapitre="La Version Minute", pose="laptop", image=CARTE_DEMANDE),
         Plan("N13", 0.0, 0.0,
              "Dans Claude, l'outil get company du MCP RapidoCMS vous renvoie la "
              "fiche de votre entreprise. Une phrase, une réponse.", image=CARTE),

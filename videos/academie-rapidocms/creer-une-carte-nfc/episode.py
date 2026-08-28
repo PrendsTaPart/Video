@@ -31,6 +31,7 @@ CARTE = carte_version_minute(
     ],
     cible=RACINE / "composition" / "carte-version-minute.png",
 )
+CARTE_DEMANDE = CARTE.with_name(CARTE.stem + "-demande.png")
 
 EPISODE = Episode(
     slug="creer-une-carte-nfc",
@@ -100,7 +101,7 @@ EPISODE = Episode(
         Plan("N13", 0.0, 0.0,
              "Et si vous n'aviez pas à parcourir la galerie pour savoir quel "
              "modèle NFC existe déjà ?",
-             chapitre="La Version Minute", pose="laptop", image=CARTE),
+             chapitre="La Version Minute", pose="laptop", image=CARTE_DEMANDE),
         Plan("N14", 0.0, 0.0,
              "Dans Claude, l'outil list card templates du MCP RapidoCMS vous "
              "les liste, et assign card template applique celui que vous "

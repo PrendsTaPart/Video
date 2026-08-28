@@ -31,6 +31,7 @@ CARTE = carte_version_minute(
     ],
     cible=RACINE / "composition" / "carte-version-minute.png",
 )
+CARTE_DEMANDE = CARTE.with_name(CARTE.stem + "-demande.png")
 
 EPISODE = Episode(
     slug="connecter-ses-reseaux-sociaux",
@@ -104,7 +105,7 @@ EPISODE = Episode(
         Plan("N13", 0.0, 0.0,
              "Cet inventaire, vous n'avez pas besoin d'ouvrir la page pour "
              "l'obtenir.",
-             chapitre="La Version Minute", pose="laptop", image=CARTE),
+             chapitre="La Version Minute", pose="laptop", image=CARTE_DEMANDE),
         Plan("N14", 0.0, 0.0,
              "Dans Claude, l'outil list connected accounts du MCP RapidoCMS "
              "vous rend la liste des comptes reliés et leurs échéances.",

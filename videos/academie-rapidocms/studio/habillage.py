@@ -21,7 +21,7 @@ import shutil
 from dataclasses import dataclass
 from pathlib import Path
 
-from PIL import Image, ImageDraw, ImageFilter
+from PIL import Image, ImageDraw, ImageFilter, ImageFont
 
 from .charte import (BANDE_BAS, BANDE_HAUT, BLANC, BLEU, BLEU_CLAIR, BLEU_SOMBRE,
                      ECRAN_H, FOND, FPS, GRIS, H, LOGO_ORIGAMI, MARGE, W, ajustee,
@@ -292,11 +292,8 @@ def bandeaux(titre_chapitre: str, numero_chapitre: int, sous_titre: str,
     return sorties
 
 
-def medaillon(pose: str, dossier: Path, cle: str, taille: int = 300) -> Path:
-    """Pastille ronde du présentateur, en bas à droite de la capture."""
-    dossier.mkdir(parents=True, exist_ok=True)
-    couche = Image.new("RGBA", (W, H), (0, 0, 0, 0))
-
+def disque_presentateur(pose: str, taille: int = 300) -> Image.Image:
+    """Le portrait du présentateur, détouré, dans un disque cerclé de bleu."""
     disque = Image.new("RGBA", (taille, taille), (0, 0, 0, 0))
     dd = ImageDraw.Draw(disque)
     dd.ellipse((0, 0, taille - 1, taille - 1), fill=BLEU + (255,))
@@ -311,8 +308,14 @@ def medaillon(pose: str, dossier: Path, cle: str, taille: int = 300) -> Path:
     plaque.putalpha(Image.composite(plaque.getchannel("A"),
                                     Image.new("L", (taille, taille), 0), masque))
     disque.alpha_composite(plaque)
+    return ombre_portee(disque, rayon=22, decalage=10, opacite=110)
 
-    avec_ombre = ombre_portee(disque, rayon=22, decalage=10, opacite=110)
+
+def medaillon(pose: str, dossier: Path, cle: str, taille: int = 300) -> Path:
+    """Pastille ronde du présentateur, en bas à droite de la capture."""
+    dossier.mkdir(parents=True, exist_ok=True)
+    couche = Image.new("RGBA", (W, H), (0, 0, 0, 0))
+    avec_ombre = disque_presentateur(pose, taille)
     x = W - MARGE - avec_ombre.width + 40
     y = H - BANDE_BAS - avec_ombre.height + 30
     couche.alpha_composite(avec_ombre, (x, y))
@@ -327,69 +330,101 @@ def carte_version_minute(prompt: str, outil: str, resultat: list[str],
                          cible: Path) -> Path:
     """La même action, demandée en une phrase à Claude via le MCP RapidoCMS.
 
-    La carte occupe la place de la capture (1920 × 855). Elle montre la phrase
-    tapée, l'outil réellement appelé — son nom exact, tel que le serveur
-    l'expose — et les lignes de sa réponse.
+    La carte reproduit une conversation Claude — identité de Claude, pas celle
+    de RapidoCMS : c'est une autre application, on ne la déguise pas. Crème
+    #F0EEE6 en fond, corail #D97757 pour le sigle et l'appel d'outil, encre
+    #1F1E1D pour le texte.
+
+    Deux états sont écrits : `<cible>` montre la conversation complète, et
+    `<cible sans extension>-demande.png` s'arrête à la question posée. Le
+    montage enchaîne les deux, ce qui donne à la carte l'allure d'une
+    conversation qui se déroule.
     """
-    from .charte import ASSETS, VERT
+    from .charte import (CLAUDE_BORD, CLAUDE_CORAIL, CLAUDE_CREME,
+                         CLAUDE_ENCRE, CLAUDE_GRIS, CLAUDE_SURFACE,
+                         asterisque_claude)
 
     cw, ch = W, ECRAN_H
-    frame = Image.new("RGBA", (cw, ch), FOND + (255,))
-    d = ImageDraw.Draw(frame)
+    marge = 150
+    colonne = cw - 2 * marge
 
-    marge = 96
-    # Le bandeau de chapitre du montage occupe le haut-gauche de cette zone :
-    # la carte commence donc sous lui, et sa mention de droite reste libre.
-    d.text((cw - marge, 62), "la même chose, en une phrase, dans Claude",
-           font=police(False, 27), fill=GRIS + (200,), anchor="rm")
+    def toile() -> tuple[Image.Image, ImageDraw.ImageDraw]:
+        frame = Image.new("RGBA", (cw, ch), CLAUDE_CREME + (255,))
+        return frame, ImageDraw.Draw(frame)
 
-    # La phrase tapée.
-    fnt = police(False, 34)
-    lignes = decouper(prompt, fnt, cw - 2 * marge - 120)
-    haut = 118
-    hauteur_bulle = 44 + len(lignes) * 46
-    d.rounded_rectangle((marge, haut, cw - marge, haut + hauteur_bulle),
-                        radius=24, fill=BLANC + (255,))
-    d.rounded_rectangle((marge, haut, marge + 8, haut + hauteur_bulle),
-                        radius=4, fill=BLEU + (255,))
-    for i, ligne in enumerate(lignes):
-        d.text((marge + 44, haut + 34 + i * 46), ligne, font=fnt,
-               fill=GRIS + (255,), anchor="lt")
+    # ── Le tour de l'utilisateur : bulle alignée à droite ────────────────────
+    fnt_prompt = police(False, 34)
+    lignes_prompt = decouper(prompt, fnt_prompt, int(colonne * 0.62))
+    haut_bulle = 116
+    hauteur_bulle = 42 + len(lignes_prompt) * 48
+    largeur_bulle = max(
+        ImageDraw.Draw(Image.new("L", (1, 1))).textlength(l, font=fnt_prompt)
+        for l in lignes_prompt) + 76
 
-    # L'appel d'outil : « MCP RapidoCMS · nom_de_l_outil », d'un seul tenant.
-    y = haut + hauteur_bulle + 30
-    fnt_source = police(False, 27)
-    fnt_outil = police(True, 31)
-    prefixe = "MCP RapidoCMS  ·  "
-    largeur = (d.textlength(prefixe, font=fnt_source)
-               + d.textlength(outil, font=fnt_outil))
-    logo_claude = ASSETS / "rapidocms" / "logo-claude.png"
-    x = marge
-    if logo_claude.exists():
-        insigne = Image.open(logo_claude).convert("RGBA")
-        ratio = 42 / insigne.height
-        insigne = insigne.resize((int(insigne.width * ratio), 42), Image.LANCZOS)
-        frame.alpha_composite(insigne, (marge, y + 7))
-        x = marge + insigne.width + 20
-    d.rounded_rectangle((x, y, x + largeur + 60, y + 58), radius=16,
-                        outline=BLEU + (255,), width=3, fill=BLANC + (255,))
-    d.text((x + 30, y + 29), prefixe, font=fnt_source, fill=GRIS + (185,), anchor="lm")
-    d.text((x + 30 + d.textlength(prefixe, font=fnt_source), y + 29), outil,
-           font=fnt_outil, fill=BLEU + (255,), anchor="lm")
+    def poser_demande(frame, d):
+        # Le logotype est redessiné plutôt que repris du fichier de marque :
+        # celui du dépôt est sur fond blanc et poserait un pavé sur le crème.
+        # Il va à droite, le bandeau de chapitre du montage occupant la gauche.
+        mot = "Claude"
+        fnt_mot = ImageFont.truetype(
+            "/usr/share/fonts/truetype/liberation/LiberationSerif-Bold.ttf", 46)
+        largeur_mot = d.textlength(mot, font=fnt_mot)
+        x = cw - marge - largeur_mot
+        frame.alpha_composite(asterisque_claude(42), (int(x - 56), 44))
+        d.text((x, 66), mot, font=fnt_mot, fill=CLAUDE_ENCRE + (255,), anchor="lm")
+        x1 = cw - marge
+        x0 = x1 - largeur_bulle
+        d.rounded_rectangle((x0, haut_bulle, x1, haut_bulle + hauteur_bulle),
+                            radius=26, fill=CLAUDE_SURFACE + (255,),
+                            outline=CLAUDE_BORD + (255,), width=2)
+        for i, ligne in enumerate(lignes_prompt):
+            d.text((x0 + 38, haut_bulle + 30 + i * 48), ligne, font=fnt_prompt,
+                   fill=CLAUDE_ENCRE + (255,), anchor="lt")
 
-    # La réponse : la boîte s'ajuste au nombre de lignes.
-    y += 88
-    fnt = police(False, 28)
-    visibles = [ligne for ligne in resultat[:7]]
-    bas = min(ch - 46, y + 40 + max(1, len(visibles)) * 42)
-    d.rounded_rectangle((marge, y, cw - marge, bas), radius=24,
-                        fill=(0x1B, 0x2A, 0x33) + (255,))
-    d.rounded_rectangle((marge, y, marge + 8, bas), radius=4, fill=VERT + (255,))
+    frame, d = toile()
+    poser_demande(frame, d)
+    demande = cible.with_name(cible.stem + "-demande.png")
+    demande.parent.mkdir(parents=True, exist_ok=True)
+    frame.convert("RGB").save(demande)
+
+    # ── Le tour de Claude : sigle, appel d'outil, réponse ────────────────────
+    frame, d = toile()
+    poser_demande(frame, d)
+
+    y = haut_bulle + hauteur_bulle + 46
+    sigle = asterisque_claude(44)
+    frame.alpha_composite(sigle, (marge, y))
+    texte_x = marge + 68
+
+    # L'appel d'outil, tel que Claude l'affiche : une puce discrète.
+    fnt_source = police(False, 26)
+    fnt_outil = police(True, 30)
+    prefixe = "RapidoCMS"
+    largeur_puce = (d.textlength(prefixe, font=fnt_source)
+                    + d.textlength(outil, font=fnt_outil) + 136)
+    d.rounded_rectangle((texte_x, y - 6, texte_x + largeur_puce, y + 54),
+                        radius=14, fill=BLANC + (255,),
+                        outline=CLAUDE_BORD + (255,), width=2)
+    d.rounded_rectangle((texte_x + 20, y + 12, texte_x + 40, y + 32),
+                        radius=6, fill=CLAUDE_CORAIL + (255,))
+    d.text((texte_x + 56, y + 24), prefixe, font=fnt_source,
+           fill=CLAUDE_GRIS + (255,), anchor="lm")
+    sep = texte_x + 56 + d.textlength(prefixe, font=fnt_source)
+    d.text((sep + 14, y + 24), "·", font=fnt_source, fill=CLAUDE_BORD + (255,), anchor="lm")
+    d.text((sep + 34, y + 24), outil, font=fnt_outil,
+           fill=CLAUDE_CORAIL + (255,), anchor="lm")
+
+    # La réponse, en clair, sous l'appel.
+    y += 86
+    fnt = police(False, 30)
+    visibles = resultat[:7]
+    bas = min(ch - 54, y + 36 + max(1, len(visibles)) * 44)
+    d.rounded_rectangle((texte_x, y, cw - marge, bas), radius=20,
+                        fill=BLANC + (255,), outline=CLAUDE_BORD + (255,), width=2)
     for i, ligne in enumerate(visibles):
-        d.text((marge + 44, y + 26 + i * 42), ligne, font=fnt,
-               fill=(0xD8, 0xEE, 0xF7) + (255,), anchor="lt")
+        d.text((texte_x + 36, y + 24 + i * 44), ligne, font=fnt,
+               fill=CLAUDE_ENCRE + (255,), anchor="lt")
 
-    cible.parent.mkdir(parents=True, exist_ok=True)
     frame.convert("RGB").save(cible)
     return cible
 

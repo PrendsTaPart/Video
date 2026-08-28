@@ -31,6 +31,7 @@ CARTE = carte_version_minute(
     ],
     cible=RACINE / "composition" / "carte-version-minute.png",
 )
+CARTE_DEMANDE = CARTE.with_name(CARTE.stem + "-demande.png")
 
 EPISODE = Episode(
     slug="lire-son-tableau-de-bord",
@@ -104,7 +105,7 @@ EPISODE = Episode(
         Plan("N13", 0.0, 0.0,
              "Ces chiffres, vous pouvez les demander sans ouvrir la page ni "
              "faire défiler quoi que ce soit.",
-             chapitre="La Version Minute", pose="laptop", image=CARTE),
+             chapitre="La Version Minute", pose="laptop", image=CARTE_DEMANDE),
         Plan("N14", 0.0, 0.0,
              "Dans Claude, l'outil post insights du MCP RapidoCMS vous rend "
              "les performances de vos publications, plateforme par plateforme.",
