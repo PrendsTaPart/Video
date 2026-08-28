@@ -1,0 +1,163 @@
+{
+  "duree": 55.211,
+  "resolution": [1920, 882],
+  "fps": 30,
+  "ecrans": [
+    { "t": 0, "nom": "Facturation — liste des factures" },
+    { "t": 3.0, "nom": "Formulaire de création d'une facture" },
+    { "t": 28.0, "nom": "Facturation — « Facture créée avec succès »" },
+    { "t": 36.0, "nom": "Formulaire de modification de la facture" },
+    { "t": 48.5, "nom": "Facturation — « Facture modifiée avec succès »" }
+  ],
+  "actions": [
+    {
+      "t": 2.0,
+      "type": "ouverture",
+      "cible": "page Facturation, onglets et bouton créer une facture",
+      "zone": { "x": 0.2, "y": 0.1, "w": 0.79, "h": 0.6 },
+      "texte_visible": "facture · devis · dépenses — Statut — Entreprise — créer une facture"
+    },
+    {
+      "t": 6.0,
+      "type": "selection",
+      "cible": "charte graphique et champ Entreprise du formulaire",
+      "zone": { "x": 0.26, "y": 0.02, "w": 0.42, "h": 0.7 },
+      "texte_visible": "Choisir une charte graphique · Informations · Entreprise"
+    },
+    {
+      "t": 10.0,
+      "type": "selection",
+      "cible": "carte produit à ajouter à la facture",
+      "zone": { "x": 0.26, "y": 0.35, "w": 0.42, "h": 0.6 },
+      "texte_visible": "Choisir un produit — pack site vitrine 1199€ — site vitrine 4800€"
+    },
+    {
+      "t": 13.0,
+      "type": "saisie",
+      "cible": "date de la facture puis prix calculés",
+      "zone": { "x": 0.26, "y": 0.1, "w": 0.42, "h": 0.85 },
+      "texte_visible": "Date de la facture — Prix HT 4800 — TVA 960 — TTC 5760"
+    },
+    {
+      "t": 20.0,
+      "type": "saisie",
+      "cible": "délai de paiement, mentions légales, statut et envoi par mail",
+      "zone": { "x": 0.26, "y": 0.02, "w": 0.42, "h": 0.95 },
+      "texte_visible": "Délai pour le paiement 14 jours — Mentions légales — Statut Payée / En attente — Email Oui / Non"
+    },
+    {
+      "t": 25.5,
+      "type": "validation",
+      "cible": "récapitulatif des totaux et bouton enregistrer",
+      "zone": { "x": 0.26, "y": 0.02, "w": 0.42, "h": 0.95 },
+      "texte_visible": "Total HT 4800 € — TVA 960 € — Total TTC 5760 € — Remise 0 % — Total TTC final 5760 €"
+    },
+    {
+      "t": 30.0,
+      "type": "ouverture",
+      "cible": "bandeau de confirmation et nouvelle ligne du tableau",
+      "zone": { "x": 0.22, "y": 0.02, "w": 0.77, "h": 0.85 },
+      "texte_visible": "Facture créée avec succès — ID 3 · brasserie du quai · En attente · 5760.00"
+    },
+    {
+      "t": 41.0,
+      "type": "selection",
+      "cible": "changement de produit dans le formulaire de modification",
+      "zone": { "x": 0.26, "y": 0.02, "w": 0.42, "h": 0.95 },
+      "texte_visible": "Entreprise Brasserie du Quai — Choisir un produit — site vitrine coché"
+    },
+    {
+      "t": 50.0,
+      "type": "ouverture",
+      "cible": "bandeau de confirmation de la modification",
+      "zone": { "x": 0.68, "y": 0.02, "w": 0.31, "h": 0.14 },
+      "texte_visible": "Facture modifiée avec succès"
+    }
+  ],
+  "etapes": [
+    {
+      "numero": 1,
+      "titre": "Ouvrir la page Facturation",
+      "debut": 0,
+      "fin": 3.0,
+      "actions": [0],
+      "zone_focus": { "x": 0.2, "y": 0.08, "w": 0.79, "h": 0.65 }
+    },
+    {
+      "numero": 2,
+      "titre": "Choisir l'entreprise et le produit",
+      "debut": 3.0,
+      "fin": 12.0,
+      "actions": [1, 2],
+      "zone_focus": { "x": 0.26, "y": 0.02, "w": 0.42, "h": 0.95 }
+    },
+    {
+      "numero": 3,
+      "titre": "Laisser le logiciel calculer les prix",
+      "debut": 12.0,
+      "fin": 18.0,
+      "actions": [3],
+      "zone_focus": { "x": 0.26, "y": 0.1, "w": 0.42, "h": 0.85 }
+    },
+    {
+      "numero": 4,
+      "titre": "Fixer le délai, les mentions et le statut",
+      "debut": 18.0,
+      "fin": 24.0,
+      "actions": [4],
+      "zone_focus": { "x": 0.26, "y": 0.02, "w": 0.42, "h": 0.95 }
+    },
+    {
+      "numero": 5,
+      "titre": "Relire les totaux et enregistrer",
+      "debut": 24.0,
+      "fin": 28.0,
+      "actions": [5],
+      "zone_focus": { "x": 0.26, "y": 0.02, "w": 0.42, "h": 0.95 }
+    },
+    {
+      "numero": 6,
+      "titre": "Retrouver la facture dans la liste",
+      "debut": 28.0,
+      "fin": 36.0,
+      "actions": [6],
+      "zone_focus": { "x": 0.22, "y": 0.02, "w": 0.77, "h": 0.85 }
+    },
+    {
+      "numero": 7,
+      "titre": "Modifier une facture existante",
+      "debut": 36.0,
+      "fin": 48.5,
+      "actions": [7],
+      "zone_focus": { "x": 0.26, "y": 0.02, "w": 0.42, "h": 0.95 }
+    },
+    {
+      "numero": 8,
+      "titre": "Voir la modification confirmée",
+      "debut": 48.5,
+      "fin": 55.211,
+      "actions": [8],
+      "zone_focus": { "x": 0.22, "y": 0.02, "w": 0.77, "h": 0.85 }
+    }
+  ],
+  "zones_sensibles": [
+    {
+      "t": 0,
+      "fin": 55.211,
+      "zone": { "x": 0.855, "y": 0.02, "w": 0.145, "h": 0.115 },
+      "raison": "Nom du titulaire du compte et solde de crédits dans l'en-tête du CRM"
+    },
+    {
+      "t": 28.0,
+      "fin": 36.0,
+      "zone": { "x": 0.385, "y": 0.5, "w": 0.115, "h": 0.28 },
+      "raison": "Adresses e-mail des destinataires dans le tableau des factures"
+    },
+    {
+      "t": 48.5,
+      "fin": 55.211,
+      "zone": { "x": 0.385, "y": 0.5, "w": 0.115, "h": 0.28 },
+      "raison": "Adresses e-mail des destinataires dans le tableau des factures"
+    }
+  ]
+}

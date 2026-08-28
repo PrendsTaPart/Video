@@ -1,0 +1,94 @@
+{
+  "duree": 18.88,
+  "resolution": [1920, 882],
+  "fps": 30,
+  "ecrans": [
+    { "t": 0, "nom": "Facturation — liste des factures" },
+    { "t": 6.0, "nom": "Formulaire — bloc Mode de paiement" },
+    { "t": 14.5, "nom": "Facturation — « Facture modifiée avec succès »" }
+  ],
+  "actions": [
+    {
+      "t": 4.0,
+      "type": "ouverture",
+      "cible": "menu Actions de la ligne à modifier",
+      "zone": { "x": 0.75, "y": 0.3, "w": 0.15, "h": 0.35 },
+      "texte_visible": "Actions — les trois points de la ligne 3"
+    },
+    {
+      "t": 10.5,
+      "type": "selection",
+      "cible": "bloc Mode de paiement du formulaire",
+      "zone": { "x": 0.26, "y": 0.12, "w": 0.42, "h": 0.42 },
+      "texte_visible": "Mode de paiement — Espèce · Carte bleue · Virement · Chèque"
+    },
+    {
+      "t": 12.5,
+      "type": "ouverture",
+      "cible": "totaux récapitulés sous le mode de paiement",
+      "zone": { "x": 0.26, "y": 0.5, "w": 0.42, "h": 0.48 },
+      "texte_visible": "Total HT 4800 € — TVA 960 € — Total TTC 5760 € — Remise 0 % — Total TTC final 5760 €"
+    },
+    {
+      "t": 16.0,
+      "type": "ouverture",
+      "cible": "bandeau de confirmation sur la page Facturation",
+      "zone": { "x": 0.68, "y": 0.02, "w": 0.31, "h": 0.14 },
+      "texte_visible": "Facture modifiée avec succès"
+    }
+  ],
+  "etapes": [
+    {
+      "numero": 1,
+      "titre": "Ouvrir la facture à renseigner",
+      "debut": 0,
+      "fin": 6.0,
+      "actions": [0],
+      "zone_focus": { "x": 0.22, "y": 0.1, "w": 0.77, "h": 0.85 }
+    },
+    {
+      "numero": 2,
+      "titre": "Choisir le mode de paiement",
+      "debut": 6.0,
+      "fin": 11.5,
+      "actions": [1],
+      "zone_focus": { "x": 0.26, "y": 0.1, "w": 0.42, "h": 0.5 }
+    },
+    {
+      "numero": 3,
+      "titre": "Vérifier les totaux avant d'enregistrer",
+      "debut": 11.5,
+      "fin": 14.5,
+      "actions": [2],
+      "zone_focus": { "x": 0.26, "y": 0.48, "w": 0.42, "h": 0.5 }
+    },
+    {
+      "numero": 4,
+      "titre": "Voir la confirmation",
+      "debut": 14.5,
+      "fin": 18.88,
+      "actions": [3],
+      "zone_focus": { "x": 0.22, "y": 0.02, "w": 0.77, "h": 0.8 }
+    }
+  ],
+  "zones_sensibles": [
+    {
+      "t": 0,
+      "fin": 18.88,
+      "zone": { "x": 0.855, "y": 0.02, "w": 0.145, "h": 0.115 },
+      "raison": "Nom du titulaire du compte et solde de crédits dans l'en-tête du CRM"
+    },
+    {
+      "t": 0,
+      "fin": 6.0,
+      "zone": { "x": 0.385, "y": 0.5, "w": 0.115, "h": 0.28 },
+      "raison": "Adresses e-mail des destinataires dans le tableau des factures"
+    },
+    {
+      "t": 14.5,
+      "fin": 18.88,
+      "zone": { "x": 0.385, "y": 0.5, "w": 0.115, "h": 0.28 },
+      "raison": "Adresses e-mail des destinataires dans le tableau des factures"
+    }
+  ]
+}

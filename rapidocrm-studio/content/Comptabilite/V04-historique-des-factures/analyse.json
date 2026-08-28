@@ -1,0 +1,101 @@
+{
+  "duree": 47.403,
+  "resolution": [1920, 882],
+  "fps": 30,
+  "ecrans": [
+    { "t": 0, "nom": "Facturation — l'historique complet, cinq factures" },
+    { "t": 12.0, "nom": "Filtre Payée + La baguetterie — aucun résultat" },
+    { "t": 31.0, "nom": "Filtre Payée + Brasserie du Quai — deux résultats sur cinq" },
+    { "t": 40.0, "nom": "Menu Actions d'une ligne" }
+  ],
+  "actions": [
+    {
+      "t": 5.0,
+      "type": "ouverture",
+      "cible": "onglets et tableau de l'historique",
+      "zone": { "x": 0.22, "y": 0.1, "w": 0.77, "h": 0.85 },
+      "texte_visible": "facture · devis · dépenses — ID 11 · olive & lin · 3360.00 — ID 10 · brasserie du quai · 7018.95"
+    },
+    {
+      "t": 14.0,
+      "type": "selection",
+      "cible": "les deux listes déroulantes de filtre",
+      "zone": { "x": 0.24, "y": 0.3, "w": 0.36, "h": 0.2 },
+      "texte_visible": "Payée — La baguetterie — aucun résultat trouvé"
+    },
+    {
+      "t": 33.0,
+      "type": "selection",
+      "cible": "filtre par entreprise et compteur du tableau",
+      "zone": { "x": 0.24, "y": 0.2, "w": 0.74, "h": 0.75 },
+      "texte_visible": "Payée — Brasserie du Quai — Affichage de 1 à 2 sur 2 entrées (filtré à partir de 5 entrées au total)"
+    },
+    {
+      "t": 42.0,
+      "type": "ouverture",
+      "cible": "menu Actions d'une ligne",
+      "zone": { "x": 0.68, "y": 0.55, "w": 0.16, "h": 0.35 },
+      "texte_visible": "Visualiser · Modifier · Télécharger · Voir l'entreprise"
+    }
+  ],
+  "etapes": [
+    {
+      "numero": 1,
+      "titre": "Ouvrir l'historique des factures",
+      "debut": 0,
+      "fin": 11.0,
+      "actions": [0],
+      "zone_focus": { "x": 0.22, "y": 0.1, "w": 0.77, "h": 0.85 }
+    },
+    {
+      "numero": 2,
+      "titre": "Croiser les deux filtres",
+      "debut": 11.0,
+      "fin": 22.0,
+      "actions": [1],
+      "zone_focus": { "x": 0.23, "y": 0.25, "w": 0.5, "h": 0.45 }
+    },
+    {
+      "numero": 3,
+      "titre": "Lire ce que le filtre a retenu",
+      "debut": 22.0,
+      "fin": 39.0,
+      "actions": [2],
+      "zone_focus": { "x": 0.23, "y": 0.15, "w": 0.75, "h": 0.8 }
+    },
+    {
+      "numero": 4,
+      "titre": "Visualiser ou télécharger une facture",
+      "debut": 39.0,
+      "fin": 47.403,
+      "actions": [3],
+      "zone_focus": { "x": 0.6, "y": 0.45, "w": 0.32, "h": 0.5 }
+    }
+  ],
+  "zones_sensibles": [
+    {
+      "t": 0,
+      "fin": 47.403,
+      "zone": { "x": 0.855, "y": 0.02, "w": 0.145, "h": 0.115 },
+      "raison": "Nom du titulaire du compte et solde de crédits dans l'en-tête du CRM"
+    },
+    {
+      "t": 0,
+      "fin": 11.0,
+      "zone": { "x": 0.385, "y": 0.65, "w": 0.115, "h": 0.34 },
+      "raison": "Adresses e-mail des destinataires dans le tableau des factures"
+    },
+    {
+      "t": 22.0,
+      "fin": 47.403,
+      "zone": { "x": 0.385, "y": 0.68, "w": 0.115, "h": 0.25 },
+      "raison": "Adresse e-mail du destinataire dans le tableau des factures"
+    },
+    {
+      "t": 43.5,
+      "fin": 47.403,
+      "zone": { "x": 0.66, "y": 0.78, "w": 0.34, "h": 0.22 },
+      "raison": "Notification d'antivirus du navigateur, étrangère au logiciel"
+    }
+  ]
+}
