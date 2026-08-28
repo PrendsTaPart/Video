@@ -334,17 +334,34 @@ const controlerFloutage = async (
     const [sourceW, sourceH] = analyse.resolution;
     const hauteurSource = Math.round((largeur * sourceH) / sourceW);
     const marge = Math.max(0, Math.round((hauteur - hauteurSource) / 2));
-    const extrait = z
-      ? sharp(image).extract({
-          left: Math.min(largeur - 8, Math.max(0, Math.round(z.x * largeur))),
-          top: Math.min(hauteur - 8, Math.max(0, marge + Math.round(z.y * hauteurSource))),
-          width: Math.max(8, Math.min(largeur - Math.round(z.x * largeur), Math.round(z.w * largeur))),
-          height: Math.max(
-            8,
-            Math.min(hauteur - marge - Math.round(z.y * hauteurSource), Math.round(z.h * hauteurSource)),
-          ),
-        })
-      : sharp(image);
+    const gauche = Math.min(largeur - 8, Math.max(0, Math.round(z ? z.x * largeur : 0)));
+    const haut = Math.min(hauteur - 8, Math.max(0, marge + Math.round(z ? z.y * hauteurSource : 0)));
+    const large = Math.max(8, Math.min(largeur - gauche, Math.round(z ? z.w * largeur : largeur)));
+    const haute = Math.max(
+      8,
+      Math.min(hauteur - haut, Math.round(z ? z.h * hauteurSource : hauteurSource)),
+    );
+    // Le floutage est rectangulaire : ses quatre arêtes sont, par construction,
+    // des transitions franches entre les pixels détruits et l'image intacte
+    // autour. Mesurées avec le reste, elles font monter la note sans que rien
+    // ne soit lisible — et d'autant plus que la zone est petite, le bord pesant
+    // alors davantage dans la moyenne. Sur l'avatar de V02 (67 × 57 px) : 9,5
+    // en comptant le bord, 1,2 en s'en écartant de quatre pixels, puis 1,3
+    // stable jusqu'à dix. On mesure donc l'intérieur.
+    //
+    // Cela ne relâche rien : la donnée sensible est au cœur de la zone, c'est
+    // la raison pour laquelle elle est déclarée. Le test négatif reste rouge.
+    const retrait = Math.min(
+      Math.max(4, Math.round(0.06 * Math.min(large, haute))),
+      Math.floor((Math.min(large, haute) - 8) / 2),
+    );
+    const interieur = Math.max(0, retrait);
+    const extrait = sharp(image).extract({
+      left: gauche + interieur,
+      top: haut + interieur,
+      width: Math.max(8, large - 2 * interieur),
+      height: Math.max(8, haute - 2 * interieur),
+    });
     // `sharp.stats()` lit l'image d'entrée et ignore les opérations en attente :
     // l'`extract` ci-dessus ne serait pas appliqué. On matérialise donc le
     // découpage dans un tampon avant toute mesure.

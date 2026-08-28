@@ -1,5 +1,5 @@
 {
-  "verte": false,
+  "verte": true,
   "controles": [
     {
       "famille": "Charte",
@@ -52,8 +52,8 @@
     {
       "famille": "Confidentialité",
       "intitule": "8 zone(s) sensible(s) floutée(s)",
-      "statut": "echec",
-      "detail": "zone 4 (Avatar et compte de la messagerie personnelle) — netteté 4.1"
+      "statut": "ok",
+      "detail": ""
     },
     {
       "famille": "Exactitude",
@@ -98,5 +98,5 @@
       "detail": "96 s"
     }
   ],
-  "produit_le": "2026-08-28T01:19:13.899Z"
+  "produit_le": "2026-08-28T01:33:57.651Z"
 }
