@@ -11,3 +11,6 @@ _subs/
 */audio/vo-brute.mp3
 */audio/*.wav
 */audio/*.brut.wav
+
+# Paquets de validation, régénérés par paquet-validation.sh
+_validation/
