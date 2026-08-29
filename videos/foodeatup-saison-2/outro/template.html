@@ -158,6 +158,20 @@ punchEl.style.bottom = px(1920 - CTOP + 56);   // toujours au-dessus de la premi
 const CARDS = [...cardsRoot.querySelectorAll(".modcard")];
 const FLOWS = [...cardsRoot.querySelectorAll(".flow")];
 
+/* Ajuste un libellé à la largeur réelle de sa boîte : les textes changent d'un
+   épisode à l'autre, on mesure au lieu de deviner à partir du nombre de lettres. */
+function ajusterTexte(el, texte, max, min, marge) {
+  const s = document.createElement("span");
+  s.style.whiteSpace = "nowrap";
+  s.textContent = texte;
+  el.textContent = "";
+  el.appendChild(s);
+  let fs = max;
+  el.style.fontSize = px(fs);
+  const dispo = el.clientWidth - marge;
+  while (fs > min && s.offsetWidth > dispo) { fs -= 1; el.style.fontSize = px(fs); }
+}
+
 /* ---- acte 2 : la feuille de papier de l'épisode, puis ses lignes de données ---- */
 const A2 = DATA.ui.acte2;
 const paper = document.getElementById("paper");
@@ -171,8 +185,8 @@ const PCHIPS = A2.lignes.map((l, i) => {
   const chip = document.createElement("div");
   chip.className = "chip";
   chip.style.cssText = `right:64px;top:${PADT + i * ROWH - 22}px;width:220px;height:72px;color:#231F20`;
-  chip.textContent = l.chip;
   paper.appendChild(chip);
+  ajusterTexte(chip, l.chip, 48, 26, 28);
   return chip;
 });
 const rule = document.createElement("div");
@@ -194,8 +208,7 @@ for (let i = 0; i < 14; i++) {
 /* ---- acte 3 : l'écran produit, en grille de cases ou en liste de lignes ---- */
 const A3 = DATA.ui.acte3;
 const scrtitle = document.getElementById("scrtitle");
-scrtitle.textContent = A3.titre;
-if (A3.titre.length > 16) scrtitle.style.fontSize = px(64 * 16 / A3.titre.length);
+ajusterTexte(scrtitle, A3.titre, 64, 34, 88);   // 44 px de retrait à gauche, autant de marge à droite
 document.getElementById("dispo").textContent = "✓ " + A3.confirmation;
 const HASCHIPS = (A3.chips || []).length > 0;
 document.getElementById("dispo").style.top = px(HASCHIPS ? 346 : 196);
@@ -206,9 +219,8 @@ const SCHIPS = (A3.chips || []).map((t, i) => {
   const el = document.createElement("div");
   el.className = "slot";
   el.style.cssText = `left:${44 + i * (CHW + 42)}px;top:200px;width:${CHW}px`;
-  if (t.length > 8) el.style.fontSize = px(Math.max(36, 52 * 8 / t.length));
-  el.textContent = t;
   chipsRoot.appendChild(el);
+  ajusterTexte(el, t, 52, 26, 24);
   return el;
 });
 const cellsRoot = document.getElementById("cells");

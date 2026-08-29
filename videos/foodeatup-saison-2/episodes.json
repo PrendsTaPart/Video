@@ -1996,7 +1996,39 @@
      "Clients"
     ],
     "texte_ecran": "La bonne offre. Aux bons clients.",
-    "sfx": "tick par segment, notification unique, impact final."
+    "sfx": "tick par segment, notification unique, impact final.",
+    "ui": {
+     "acte2": {
+      "lignes": [
+       {
+        "chip": "−50 %"
+       },
+       {
+        "chip": "−50 %"
+       },
+       {
+        "chip": "−50 %"
+       }
+      ],
+      "alerte": true
+     },
+     "acte3": {
+      "titre": "Campagnes",
+      "chips": [
+       "Champions",
+       "Réguliers",
+       "À risque"
+      ],
+      "chip_actif": 0,
+      "confirmation": "campagne envoyée",
+      "grille": {
+       "cols": 3,
+       "rows": 2,
+       "cible": 2
+      },
+      "label_bas": "Segments RFM"
+     }
+    }
    }
   },
   {
@@ -2105,7 +2137,38 @@
      "Réservations"
     ],
     "texte_ecran": "Terrasse ou salle : tout le monde a sa place.",
-    "sfx": "goutte, glissement, tick par table, impact final."
+    "sfx": "goutte, glissement, tick par table, impact final.",
+    "ui": {
+     "acte2": {
+      "lignes": [
+       {
+        "chip": "terrasse"
+       },
+       {
+        "chip": "terrasse"
+       },
+       {
+        "chip": "terrasse"
+       }
+      ],
+      "alerte": true
+     },
+     "acte3": {
+      "titre": "Plan de salle",
+      "chips": [
+       "Terrasse",
+       "Salle"
+      ],
+      "chip_actif": 1,
+      "confirmation": "table attribuée",
+      "grille": {
+       "cols": 3,
+       "rows": 2,
+       "cible": 3
+      },
+      "label_bas": "Zones"
+     }
+    }
    }
   },
   {
