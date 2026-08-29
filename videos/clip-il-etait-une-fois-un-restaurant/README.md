@@ -19,7 +19,7 @@ Clip rendu sur la chanson livrée (`chanson.mp3`, 4:30, 90,7 BPM détectés) —
 | Plans montés | 102, tuilant les 270,000 s **à l'image près** |
 | Fondus | 5 × 0,3 s, sur les bascules avant ↔ après |
 | Exports | 9:16, 1:1, 16:9, teaser 30 s, vignette — tous contrôlés à ffprobe |
-| En ligne | https://www.youtube.com/watch?v=Z31TDGNBErs (chaîne FoodEatUp, non répertoriée) |
+| En ligne | https://www.youtube.com/watch?v=Gu_Az5D2UOs (chaîne FoodEatUp, publique) |
 
 Les MP4 (355 Mo) ne sont pas versionnés : ils se régénèrent avec
 
