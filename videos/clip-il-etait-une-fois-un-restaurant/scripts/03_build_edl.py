@@ -25,28 +25,108 @@ import common
 
 XFADE_SEC = 0.3          # fondu à chaque changement d'acte
 PONT_SPEED = 0.85        # ralenti du pont
-PONT_SPEED_MIN = 0.6     # au-delà, le ralenti devient de la bouillie
+PONT_LEAD = ("EP530", "EP531", "EP532")  # les plans que les paroles du pont nomment
 MIN_SEGMENT = 0.6        # aucun plan plus court que ça, même après calage
+MIN_SECTION = 4.0        # une section ne peut pas fondre à rien pendant le calage
+STRUCTURE_TOL = 12.0     # attirance maximale vers une frontière d'arrangement
 
 
 # ---------------------------------------------------------------- sections
 
-def resolve_sections(structure: dict, duration: float, downbeats: list[float]) -> list[dict]:
-    """Répartit les sections sur la durée réelle, puis cale chaque frontière sur un temps fort."""
+def fixed_edges(sections: list[dict], zones: dict, duration: float) -> dict[int, float]:
+    """Les frontières que la chanson donne elle-même, par leur index d'arête.
+
+    `edges[i]` est le début de la section i. Un passage calme détecté vaut mieux qu'un
+    prorata : c'est le morceau qui parle, pas la feuille de mesures.
+    """
+    index = {section["id"]: i for i, section in enumerate(sections)}
+    fixed: dict[int, float] = {}
+
+    if "intro" in index and zones.get("intro_end_sec"):
+        fixed[index["intro"] + 1] = float(zones["intro_end_sec"])
+    if "pont" in index and zones.get("bridge_sec"):
+        start, end = zones["bridge_sec"]
+        fixed[index["pont"]] = float(start)
+        fixed[index["pont"] + 1] = float(end)
+    if "outro" in index and zones.get("outro_start_sec"):
+        fixed[index["outro"]] = float(outro) if (outro := zones["outro_start_sec"]) else duration
+
+    # Une frontière imposée qui casserait l'ordre est ignorée plutôt que forcée.
+    ordered = sorted(fixed.items())
+    kept: dict[int, float] = {}
+    previous = 0.0
+    for edge, time in ordered:
+        if previous + MIN_SECTION <= time <= duration - MIN_SECTION:
+            kept[edge] = time
+            previous = time
+    return kept
+
+
+def resolve_sections(structure: dict, duration: float, downbeats: list[float],
+                     arrangement: list[float] | None = None,
+                     zones: dict | None = None) -> list[dict]:
+    """Répartit les sections sur la durée réelle, puis cale chaque frontière sur la musique.
+
+    Les mesures de `song-structure.json` ne sont qu'un point de départ : sur un morceau
+    réel, un refrain n'arrive pas pile au prorata. Chaque frontière est donc attirée vers
+    la frontière d'arrangement détectée la plus proche (entrée de la batterie, chute au
+    pont…) quand il y en a une à portée, puis ramenée sur le temps fort voisin.
+    """
     sections = structure["sections"]
+    arrangement = list(arrangement or [])
     total_bars = sum(s["bars"] for s in sections)
     edges = [0.0]
     for section in sections:
         edges.append(edges[-1] + duration * section["bars"] / total_bars)
     edges[-1] = duration
 
-    if downbeats:
-        for i in range(1, len(edges) - 1):
-            floor = edges[i - 1] + MIN_SEGMENT
-            ceiling = duration - MIN_SEGMENT
-            candidate = min(downbeats, key=lambda t: abs(t - edges[i]))
-            if floor <= candidate <= ceiling:
-                edges[i] = candidate
+    # 1. Les frontières que la chanson impose (intro, pont, outro) sont posées d'abord,
+    #    puis les sections restantes se répartissent au prorata des mesures dans chaque
+    #    intervalle libre.
+    anchored = fixed_edges(sections, zones or {}, duration)
+    if anchored:
+        marks = {0: 0.0, len(edges) - 1: duration, **anchored}
+        for left, right in zip(sorted(marks)[:-1], sorted(marks)[1:]):
+            span = marks[right] - marks[left]
+            bars = sum(sections[i]["bars"] for i in range(left, right)) or 1
+            cursor = marks[left]
+            edges[left] = marks[left]
+            for i in range(left, right):
+                edges[i + 1] = cursor + span * sections[i]["bars"] / bars
+                cursor = edges[i + 1]
+            edges[right] = marks[right]
+
+    # 2. Les frontières encore libres sont attirées vers l'arrangement détecté.
+    tolerance = min(STRUCTURE_TOL, duration * 0.06)
+    used: set[float] = set()
+    for i in range(1, len(edges) - 1):
+        if i in anchored:
+            continue
+        floor = edges[i - 1] + MIN_SECTION
+        ceiling = duration - MIN_SECTION * (len(edges) - 1 - i)
+        target = edges[i]
+
+        # Deux arêtes voisines attirées par la même frontière détectée écraseraient la
+        # section coincée entre elles : on n'accepte l'attraction que si les deux sections
+        # touchées gardent au moins 60 % de leur part au prorata.
+        left_share = (edges[i] - edges[i - 1]) * 0.6
+        right_share = (edges[i + 1] - edges[i]) * 0.6
+        near = [
+            t for t in arrangement
+            if t not in used and abs(t - target) <= tolerance and floor <= t <= ceiling
+            and t - edges[i - 1] >= left_share and edges[i + 1] - t >= right_share
+        ]
+        if near:
+            target = min(near, key=lambda t: abs(t - target))
+            used.add(target)
+
+        if downbeats:
+            close = [t for t in downbeats
+                     if abs(t - target) <= 1.2 and floor <= t <= ceiling]
+            if close:
+                target = min(close, key=lambda t: abs(t - target))
+
+        edges[i] = max(floor, min(target, ceiling))
 
     return [
         {
@@ -297,11 +377,29 @@ def build(beats: dict, rushes: dict, structure: dict, sections: list[dict]) -> l
         # 0,85× ne tient que rush/0,85 secondes. Si le pont est plus long, on ralentit
         # davantage — jamais sous PONT_SPEED_MIN, au-delà l'image devient de la bouillie —
         # et le reliquat de tête est couvert par un plan « final ».
-        if pont["duration"] > rush_duration / PONT_SPEED_MIN:
-            head_end = snap(pont["end"] - rush_duration / PONT_SPEED_MIN, grid_all,
-                            pont["start"] + MIN_SEGMENT, pont["end"] - MIN_SEGMENT)
-            segments += fill(pont, final, pool, rushes, grid_all, 3.0, 3.0,
-                             start=pont["start"], end=head_end)
+        if pont["duration"] > rush_duration / PONT_SPEED:
+            # « Vingt heures quinze / … vingt heures trente et une, le plat part / vingt
+            # heures trente-deux / il ne remarque rien » : le pont nomme lui-même ses plans.
+            lead = [ep for ep in PONT_LEAD if ep in rushes]
+            head_end = snap(pont["end"] - rush_duration / PONT_SPEED, grid_all,
+                            pont["start"] + MIN_SEGMENT * len(lead), pont["end"] - MIN_SEGMENT)
+            head_span = (head_end - pont["start"]) / max(1, len(lead))
+            cursor = pont["start"]
+            for position, ep in enumerate(lead):
+                end = head_end if position == len(lead) - 1 else snap(
+                    cursor + head_span, grid_all, cursor + MIN_SEGMENT, head_end - MIN_SEGMENT
+                )
+                span = end - cursor
+                segments.append({
+                    "forced": True,
+                    "ep": ep, "acte": rushes[ep]["acte"], "titre": rushes[ep]["titre"],
+                    "section": "pont", "start": round(cursor, 3), "end": round(end, 3),
+                    "len": round(span, 3), "in_point": 0.0,
+                    "speed": round(min(PONT_SPEED, (rushes[ep]["duration"] - 0.08) / span), 4),
+                })
+                pool.uses[ep] = pool.uses.get(ep, 0) + 1
+                cursor = end
+            pool.last = lead[-1] if lead else pool.last
             start = head_end
         span = pont["end"] - start
         segments.append({
@@ -434,13 +532,15 @@ def main() -> int:
 
     duration = beats["duration_sec"]
     sections = apply_overrides(
-        resolve_sections(structure, duration, beats.get("downbeats_sec", [])),
+        resolve_sections(structure, duration, beats.get("downbeats_sec", []),
+                         beats.get("structure_sec", []), beats),
         common.WORK / "sections.override.json",
     )
     segments = annotate(build(beats, rushes, structure, sections), duration)
 
     payload = {
         "song": beats["source"],
+        "song_path": beats.get("source_path"),
         "duration_sec": round(duration, 3),
         "bpm": beats["bpm"],
         "beat_engine": beats["engine"],

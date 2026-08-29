@@ -38,7 +38,7 @@ def concat_run(index: int, files: list[Path]) -> Path:
 def main() -> int:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--edl", default=str(common.WORK / "edl.json"))
-    parser.add_argument("--audio", help="chanson (défaut : celle notée dans l'EDL)")
+    parser.add_argument("--audio", help="chanson (défaut : le fichier analysé à l'étape 2)")
     parser.add_argument("--out", default=str(common.OUT / "clip-9x16.mp4"))
     args = parser.parse_args()
 
@@ -47,7 +47,16 @@ def main() -> int:
     segments = edl["segments"]
     duration = edl["duration_sec"]
     xfade = edl["xfade_sec"]
-    song = common.find_song(args.audio)
+    # Par défaut on reprend exactement le fichier analysé à l'étape 2 : monter sur une
+    # grille de temps issue d'un autre fichier que celui collé au master serait invisible
+    # au rendu et catastrophique à l'écoute.
+    recorded = edl.get("song_path")
+    if args.audio:
+        song = common.find_song(args.audio)
+    elif recorded and Path(recorded).exists():
+        song = Path(recorded)
+    else:
+        song = common.find_song(None)
 
     missing = [s["id"] for s in segments if not (common.SEGMENTS / f"{s['id']}.mp4").exists()]
     if missing:

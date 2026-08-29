@@ -67,6 +67,104 @@ def beats_librosa(wav: Path) -> dict | None:
     }
 
 
+def structure_librosa(wav: Path, parts: int) -> dict | None:
+    """Repère les vraies frontières d'arrangement (entrée de la batterie, chute au pont…).
+
+    Sans ça, les sections ne seraient que des proportions calculées sur la durée : sur un
+    morceau réel, un refrain arrive rarement pile au prorata des mesures.
+    """
+    try:
+        import librosa
+        import numpy as np
+    except ImportError:
+        return None
+
+    y, sr = librosa.load(str(wav), sr=22050, mono=True)
+    if y.size < sr:
+        return None
+
+    # Timbre (MFCC) + harmonie (chroma) + énergie : une frontière d'arrangement bouge
+    # au moins l'un des trois.
+    mfcc = librosa.feature.mfcc(y=y, sr=sr, n_mfcc=13)
+    chroma = librosa.feature.chroma_cqt(y=y, sr=sr)
+    rms = librosa.feature.rms(y=y)
+    features = np.vstack([
+        librosa.util.normalize(mfcc, axis=1),
+        librosa.util.normalize(chroma, axis=1),
+        librosa.util.normalize(rms, axis=1),
+    ])
+    frames = librosa.segment.agglomerative(features, max(2, parts))
+    times = librosa.frames_to_time(frames, sr=sr)
+
+    envelope = librosa.feature.rms(y=y, frame_length=2048, hop_length=512)[0]
+    envelope_times = librosa.frames_to_time(np.arange(envelope.size), sr=sr, hop_length=512)
+    step = max(1, int(envelope.size / 600))
+    return {
+        "structure_sec": [round(float(t), 3) for t in times if t > 0.5],
+        "energy_curve": [
+            [round(float(t), 2), round(float(v), 5)]
+            for t, v in zip(envelope_times[::step], envelope[::step])
+        ],
+    }
+
+
+def quiet_zones(energy_curve: list[list[float]], duration: float) -> dict:
+    """Repère les passages calmes : l'intro, le pont piano/voix, l'outro.
+
+    Ce sont les seules frontières que la chanson donne sans ambiguïté — l'arrangement
+    décrit dans le prompt Suno les rend audibles (« intro : piano seul », « pont : tout
+    retombe sur le piano et une voix », « outro : retour au piano seul »). Les repérer
+    évite de poser le pont au prorata des mesures, à dix secondes du vrai.
+    """
+    if len(energy_curve) < 20:
+        return {}
+
+    times = [row[0] for row in energy_curve]
+    values = [row[1] for row in energy_curve]
+
+    # Lissage sur ~3 s : une respiration entre deux phrases n'est pas un changement de section.
+    step = max(1e-6, (times[-1] - times[0]) / max(1, len(times) - 1))
+    window = max(1, int(3.0 / step))
+    smooth = [
+        sum(values[max(0, i - window):i + window + 1]) / len(values[max(0, i - window):i + window + 1])
+        for i in range(len(values))
+    ]
+
+    loud = sorted(smooth)[int(len(smooth) * 0.9)]
+    threshold = loud * 0.5
+
+    runs: list[tuple[float, float]] = []
+    start = None
+    for time, level in zip(times, smooth):
+        if level < threshold and start is None:
+            start = time
+        elif level >= threshold and start is not None:
+            runs.append((start, time))
+            start = None
+    if start is not None:
+        runs.append((start, duration))
+
+    runs = [(a, b) for a, b in runs if b - a >= 6.0]
+    if not runs:
+        return {}
+
+    zones: dict = {"quiet_runs_sec": [[round(a, 3), round(b, 3)] for a, b in runs]}
+    head = [run for run in runs if run[0] <= 3.0]
+    if head:
+        zones["intro_end_sec"] = round(head[0][1], 3)
+    tail = [run for run in runs if run[1] >= duration - 3.0]
+    if tail:
+        zones["outro_start_sec"] = round(tail[-1][0], 3)
+
+    # Le pont : le plus long calme qui n'est ni la tête ni la queue du morceau.
+    middle = [run for run in runs if run not in head and run not in tail
+              and run[0] > duration * 0.35]
+    if middle:
+        bridge = max(middle, key=lambda run: run[1] - run[0])
+        zones["bridge_sec"] = [round(bridge[0], 3), round(bridge[1], 3)]
+    return zones
+
+
 def beats_aubio(wav: Path) -> dict | None:
     if not shutil.which("aubio"):
         return None
@@ -110,6 +208,8 @@ def main() -> int:
     parser.add_argument("--audio", help="chemin de la chanson (défaut : ./chanson.mp4 ou .mp3)")
     parser.add_argument("--force", action="store_true", help="ré-extrait le WAV même s'il existe")
     parser.add_argument("--engine", choices=("auto", "librosa", "aubio", "fixe"), default="auto")
+    parser.add_argument("--parts", type=int, default=14,
+                        help="nombre de frontières d'arrangement cherchées (défaut 14)")
     args = parser.parse_args()
 
     common.ensure_dirs()
@@ -143,11 +243,16 @@ def main() -> int:
     result["beat_strength"] = result["beat_strength"][: len(result["beats_sec"])]
     result["downbeats_sec"] = [t for t in result["downbeats_sec"] if t <= duration]
 
+    structure = structure_librosa(wav, args.parts) or {"structure_sec": [], "energy_curve": []}
+    structure.update(quiet_zones(structure.get("energy_curve", []), duration))
+
     payload = {
         "source": song.name,
+        "source_path": str(song.resolve()),
         "duration_sec": round(duration, 4),
         "sample_rate": 48000,
         **result,
+        **structure,
         "beat_count": len(result["beats_sec"]),
         "downbeat_count": len(result["downbeats_sec"]),
     }
@@ -156,6 +261,18 @@ def main() -> int:
         f"✓ {payload['engine']} · {payload['bpm']} BPM · {payload['beat_count']} temps · "
         f"{payload['downbeat_count']} temps forts · durée {common.timecode(duration)}"
     )
+    if payload["structure_sec"]:
+        marks = " ".join(common.timecode(t) for t in payload["structure_sec"])
+        print(f"✓ {len(payload['structure_sec'])} frontières d'arrangement : {marks}")
+    else:
+        print("○ pas de détection de structure — les sections resteront proportionnelles")
+    if payload.get("bridge_sec"):
+        print(f"✓ pont (passage calme) : {common.timecode(payload['bridge_sec'][0])} → "
+              f"{common.timecode(payload['bridge_sec'][1])}")
+    if payload.get("intro_end_sec"):
+        print(f"✓ fin d'intro : {common.timecode(payload['intro_end_sec'])}")
+    if payload.get("outro_start_sec"):
+        print(f"✓ début d'outro : {common.timecode(payload['outro_start_sec'])}")
     return 0
 
 
