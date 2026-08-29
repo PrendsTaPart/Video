@@ -14,6 +14,11 @@ de saison, aucune mention de série à l'écran.
 | `clash-proxy-9x16.mp4` | 540×960 | proxy de validation du rythme |
 | `affiche-le-clash.jpg` | 1080×1620 | l'affiche du film |
 | `shotlist.json` | — | la timeline effective, plan par plan |
+| `youtube-vignette-1280x720.jpg` | 1280×720 | miniature YouTube |
+
+Le dépôt YouTube prêt à copier-coller (titre, description, chapitres, mots-clés)
+est dans `YOUTUBE.md`. Aucun connecteur YouTube n'étant branché, le téléversement
+reste manuel.
 
 ## Comment c'est monté
 
