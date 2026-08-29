@@ -1,0 +1,10 @@
+{
+  "name": "foodeatup-saison-2",
+  "private": true,
+  "type": "module",
+  "description": "FoodEatUp — Saison 2 « Michael fait son cinéma » : 60 prompts Seedance 2.5 + 30 outros Remotion",
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "check": "node scripts/build.mjs"
+  }
+}

@@ -1,0 +1,3511 @@
+{
+ "serie": "FoodEatUp",
+ "saison": 2,
+ "titre": "Michael fait son cinéma",
+ "format": "9:16 · 1080×1920 · 30 fps",
+ "duree_episode": "30 s (2 × 10 s Seedance + 10 s montage Claude Code)",
+ "moteur_video": "Seedance 2.5 (Higgsfield)",
+ "moteur_montage": "Remotion (React) — 0 crédit",
+ "voix_off": "ElevenLabs, même voix sur les 30 épisodes",
+ "regle_parodie": "Parodie par codes de genre uniquement : aucun titre de film, aucune réplique de film, aucun visage d'acteur réel, aucune marque à l'image.",
+ "signature": "Fin de scène 2 : Michael regarde la caméra → clap « COUPEZ ! » → « Dans la vraie vie… » → l'interface FoodEatUp fait en un tap ce qu'il a raté en 20 s → logo FoodEatUp.",
+ "prompt": {
+  "ref_michael": "Michael = @Image 1 (face, hair, build) + @Image 2 (season outfit)",
+  "ref_suffixe": "keep identical.",
+  "dialogue_prefixe": "DIALOGUE (spoken French, slow and clear, natural lip-sync, no captions):",
+  "bloc_final": "PHYSICS: realistic body weight, no morphing, no sliding feet, correct hands and fingers, no extra limbs. SKIN: preserve Michael's natural skin and features from @Image 1, no smoothing, no plastic look. NO-IP: no brands, no logos, no readable text, no captions or subtitles, no recognizable songs, no real celebrity likeness, no minors. Keep Michael's face, hair, build and outfit identical through the whole clip. Sharp, clean, cinematic render."
+ },
+ "references": [
+  {
+   "id": "@Image 1",
+   "contenu": "Portrait de Michael, face caméra, lumière douce, fond neutre, expression neutre, pas de lunettes de soleil",
+   "role": "Identité (visage, cheveux, morphologie)"
+  },
+  {
+   "id": "@Image 2",
+   "contenu": "Michael en pied, tenue de saison verrouillée — proposition : chemise blanche, tablier noir, manches retroussées, montre au poignet (à valider)",
+   "role": "Tenue"
+  },
+  {
+   "id": "@Image 3",
+   "contenu": "La salle du restaurant, vide, de jour, sans enseigne lisible",
+   "role": "Lieu salle"
+  },
+  {
+   "id": "@Image 4",
+   "contenu": "La cuisine professionnelle, passe et inox",
+   "role": "Lieu cuisine"
+  },
+  {
+   "id": "Option",
+   "contenu": "Soul ID « Michael » entraîné dans Higgsfield, sélectionné en plus de @Image 1",
+   "role": "Verrou d'identité renforcé"
+  }
+ ],
+ "outro": {
+  "duree_s": 10,
+  "fps": 30,
+  "frames": 300,
+  "structure": [
+   {
+    "t": "0–2 s",
+    "contenu": "scene2-last-frame plein écran, léger zoom avant, désaturation progressive ; clap de cinéma qui entre par le bas et claque à 0,4 s (SFX clap) ; texte « COUPEZ ! » ; à 1,6 s « Dans la vraie vie… »."
+   },
+   {
+    "t": "2–4 s",
+    "contenu": "L'élément clé de la scène se transforme en données (motion blur, particules légères, easing expo-out) — précisé par épisode."
+   },
+   {
+    "t": "4–7 s",
+    "contenu": "Démonstration du bénéfice : maquette d'écran FoodEatUp en 3D légère (rotation ≤ 8°), micro-animations, action en UN tap, ralenti de 6 images sur le tap."
+   },
+   {
+    "t": "7–9 s",
+    "contenu": "Les modules concernés apparaissent en cartes reliées par des flux lumineux (libellés réels uniquement)."
+   },
+   {
+    "t": "9–10 s",
+    "contenu": "Tout disparaît ; logo FoodEatUp seul, centré, scale 0,9 → 1 + halo ; signature sous le logo ; SFX impact + whoosh ; fondu."
+   }
+  ],
+  "regles": [
+   "L'animation se comprend sans le son.",
+   "Texte ≥ 64 px, ≤ 6 mots par écran, zone sûre TikTok/Reels/Shorts (marges 220 px haut, 320 px bas, 120 px côtés).",
+   "Jamais de faux texte d'interface : uniquement les libellés réels.",
+   "La voix off démarre à 2,0 s et finit avant 9,0 s.",
+   "Un SFX par apparition ; motion blur sur les zooms.",
+   "Rendu premium SaaS, humoristique, moderne, lisible sur smartphone."
+  ],
+  "sorties": [
+   "ep{NN}-outro.mp4",
+   "ep{NN}-outro-muet.mp4",
+   "ep{NN}-thumb.png"
+  ]
+ },
+ "modules_autorises": [
+  "Réservations",
+  "Plan de salle",
+  "Zones",
+  "Tables",
+  "File d'attente",
+  "Commandes",
+  "Écran cuisine",
+  "Postes",
+  "Caisse",
+  "Session de caisse",
+  "Rapport X",
+  "Rapport Z",
+  "Paiements",
+  "Ardoises",
+  "TPE",
+  "Lien de paiement",
+  "Cartes cadeaux",
+  "HACCP",
+  "Températures",
+  "Équipements",
+  "Réception",
+  "Étiquettes DLC",
+  "Traçabilité",
+  "Checklist hygiène",
+  "Plan de nettoyage",
+  "Stock",
+  "Ingrédients",
+  "Fournisseurs",
+  "Commandes fournisseurs",
+  "Livraisons",
+  "Recettes",
+  "Production",
+  "Alertes production",
+  "Employés",
+  "Planning",
+  "Shifts",
+  "Congés",
+  "Pointages",
+  "Contrats",
+  "Documents",
+  "Recrutement",
+  "Offres d'emploi",
+  "Candidatures",
+  "Clients",
+  "Fidélité",
+  "Récompenses",
+  "Bons",
+  "Roue cadeaux",
+  "Campagnes",
+  "Segments RFM",
+  "Avis",
+  "Sondages",
+  "Site vitrine",
+  "Pages",
+  "Leads",
+  "Livraison",
+  "Zones de livraison",
+  "Happy hours",
+  "Boissons",
+  "Événements privés",
+  "Devis",
+  "Factures",
+  "Dépenses",
+  "Synthèse financière",
+  "Brief du jour",
+  "Agent vocal",
+  "Notifications",
+  "Analyse de la carte"
+ ],
+ "lots_lumiere": {
+  "nuit-neon-tamise": [
+   2,
+   5,
+   9,
+   13,
+   16,
+   22,
+   27,
+   29
+  ],
+  "jour-salle": [
+   1,
+   3,
+   4,
+   8,
+   11,
+   12,
+   15,
+   18,
+   21,
+   23,
+   24,
+   25,
+   28,
+   30
+  ],
+  "cuisine-reserve": [
+   6,
+   7,
+   10,
+   17,
+   26
+  ],
+  "exterieur": [
+   14,
+   19,
+   20
+  ]
+ },
+ "pilotes": [
+  1,
+  4,
+  9
+ ],
+ "rendu_1080p": [
+  1,
+  4,
+  9,
+  14,
+  30
+ ],
+ "episodes": [
+  {
+   "num": 1,
+   "slug": "le-duel",
+   "titre": "Le duel",
+   "genre": "Western (le duel de midi)",
+   "genre_court": "Western",
+   "situation": "Deux clients ont réservé la même table",
+   "modules": [
+    "Réservations",
+    "Plan de salle"
+   ],
+   "hook": "« C'est ma table. » — « Non. La mienne. »",
+   "selecteurs": {
+    "epoque": "1960s",
+    "genre": "western",
+    "lumiere": "soleil dur de midi, angle haut",
+    "physique": "réaliste",
+    "objectif": "anamorphique 40 mm",
+    "emotion": "tension comique",
+    "montage": "4 plans"
+   },
+   "scenes": [
+    {
+     "n": 1,
+     "titre": "Midi pile",
+     "resume": "Michael serveur, deux clients arrivent par deux portes, même table",
+     "location_line": "Location = @Image 3 (dining room).",
+     "format_line": "9:16, 10 s, 4 shots, realistic comedy shot like a western.",
+     "scene": "A French bistro at noon, dust motes in hard sunlight, a wall clock at twelve, a crumpled napkin ball rolling across the floor like tumbleweed. Michael stands alone in the middle of the room as the waiter.",
+     "action": [
+      {
+       "t": "0–2 s",
+       "texte": "wide low shot, the napkin rolls, the clock ticks, Michael squints into the light."
+      },
+      {
+       "t": "2–5 s",
+       "texte": "two adult customers push through two opposite doors in slow motion, walk toward the same table and stop face to face across it."
+      },
+      {
+       "t": "5–8 s",
+       "texte": "whip-cuts between extreme close-ups of their eyes and their hands hovering over forks; Michael opens a paper notebook, a drop of sweat, crash zoom on his face."
+      },
+      {
+       "t": "8–10 s",
+       "texte": "Michael slowly turns to the camera and freezes."
+      }
+     ],
+     "dialogue": "Customer A: « C'est ma table. » Customer B: « Non. La mienne. » Michael: « J'ai… réservé deux fois. »",
+     "camera": "low wide → slow-motion dolly → extreme close-ups → crash zoom → freeze frame.",
+     "light": "hard midday sun, warm sepia grade, long shadows, fine film grain.",
+     "audio": "dry wind, a creaking sign, a single guitar note (original), a fly buzzing, tense drone, comic zoom whoosh."
+    },
+    {
+     "n": 2,
+     "titre": "Table pour trois",
+     "resume": "Le duel continue, Michael traîne une deuxième table, les deux clients s'assoient quand même ensemble",
+     "location_line": "Location = @Image 3.",
+     "format_line": "9:16, 10 s, 4 shots, realistic comedy shot like a western.",
+     "scene": "Same bistro, same table, the two customers still standing and staring at each other; Michael between them holding a chair like a lion tamer.",
+     "action": [
+      {
+       "t": "0–2 s",
+       "texte": "close-up on boots shifting on the floor, a fly lands on Michael's nose, he does not move."
+      },
+      {
+       "t": "2–5 s",
+       "texte": "Michael proposes, both customers answer at once without looking at him."
+      },
+      {
+       "t": "5–8 s",
+       "texte": "speed ramp: Michael drags a second table across the room in a cloud of dust, sets two candles, bows; the two customers sit down at the SAME first table, back to back."
+      },
+      {
+       "t": "8–10 s",
+       "texte": "Michael sits between them, bites a breadstick, looks at the camera; whip pan out to a wide shot."
+      }
+     ],
+     "dialogue": "Michael: « On partage ? » Both customers: « Non. » Michael: « Table pour trois. »",
+     "camera": "macro on boots → medium on Michael → fast dolly with speed ramp → static wide, whip pan.",
+     "light": "hard midday sun, warm sepia, dust in the light beam.",
+     "audio": "table screech, dust whoosh, harmonica sting (original), crunch of the breadstick, clock tick."
+    }
+   ],
+   "montage": {
+    "vo": "Deux clients, une table ? Avec FoodEatUp, la réservation vérifie la place avant vous.",
+    "beats": [
+     {
+      "t": "2–4 s",
+      "texte": "le carnet papier de Michael s'ouvre ; deux noms clignotent en rouge sur le même créneau ; le carnet se dissout en lignes de données."
+     },
+     {
+      "t": "4–7 s",
+      "texte": "écran Réservations : un créneau choisi → « disponibilité vérifiée » → la table est assignée en un tap ; sur le plan de salle, la table passe au statut réservé."
+     },
+     {
+      "t": "7–9 s",
+      "texte": "cartes reliées : Réservations · Plan de salle · Tables."
+     }
+    ],
+    "cartes": [
+     "Réservations",
+     "Plan de salle",
+     "Tables"
+    ],
+    "texte_ecran": "Une table. Un client. Zéro duel.",
+    "sfx": "tick sur chaque nom, whoosh sur l'assignation, impact final."
+   }
+  },
+  {
+   "num": 2,
+   "slug": "le-controle",
+   "titre": "Le contrôle",
+   "genre": "Thriller d'interrogatoire",
+   "genre_court": "Interrogatoire",
+   "situation": "Le contrôle d'hygiène demande les relevés de température",
+   "modules": [
+    "HACCP"
+   ],
+   "hook": "Une lampe qui balance, une voix calme : « Vos températures ? »",
+   "selecteurs": {
+    "epoque": "2020s",
+    "genre": "thriller",
+    "lumiere": "lampe nue en plongée, angle bas",
+    "physique": "réaliste",
+    "objectif": "50 mm",
+    "emotion": "angoisse contenue",
+    "montage": "4 plans"
+   },
+   "scenes": [
+    {
+     "n": 1,
+     "titre": "Quelque part",
+     "resume": "Michael interrogé dans sa propre cuisine par un inspecteur de dos",
+     "location_line": "Location = @Image 4 (kitchen).",
+     "format_line": "9:16, 10 s, 4 shots, realistic comedy shot like an interrogation thriller.",
+     "scene": "The kitchen in darkness, one bare bulb swinging over a steel table. Michael sits on a stool, hands flat on the table. An adult inspector in a grey jacket stands with his back to camera, holding a clipboard.",
+     "action": [
+      {
+       "t": "0–2 s",
+       "texte": "the bulb swings, light sweeps across Michael's face, the inspector speaks."
+      },
+      {
+       "t": "2–5 s",
+       "texte": "slow push-in on Michael, a clock ticks, sweat on his temple, he answers."
+      },
+      {
+       "t": "5–8 s",
+       "texte": "Michael searches his pockets, pulls out a crumpled sticky note, reads it, turns it over, reads the other side."
+      },
+      {
+       "t": "8–10 s",
+       "texte": "extreme close-up on Michael's mouth as he whispers; the bulb goes out; black."
+      }
+     ],
+     "dialogue": "Inspector (calm): « Vos températures ? » Michael: « Elles sont… quelque part. » Michael (whisper): « Hier… je crois. »",
+     "camera": "swinging light wide → slow push-in → insert on hands → extreme close-up → cut to black.",
+     "light": "single hard practical, deep shadows, cold desaturated grade.",
+     "audio": "buzzing bulb, clock tick, pen tapping, paper crumple, low tense drone, electric pop at blackout."
+    },
+    {
+     "n": 2,
+     "titre": "Dans ma tête",
+     "resume": "Des post-its partout, le ventilateur les envoie tous en l'air",
+     "location_line": "Location = @Image 4.",
+     "format_line": "9:16, 10 s, 4 shots, realistic comedy shot like an interrogation thriller.",
+     "scene": "Same kitchen, the bulb back on; a cardboard box overflowing with sticky notes now sits in front of Michael.",
+     "action": [
+      {
+       "t": "0–2 s",
+       "texte": "the bulb flickers on, revealing the box; Michael smiles nervously."
+      },
+      {
+       "t": "2–5 s",
+       "texte": "fast montage: Michael finds sticky notes inside the fridge door, under the floor mat, inside the extractor hood, inside his own shoe."
+      },
+      {
+       "t": "5–8 s",
+       "texte": "he lays the notes on the table in a row like playing cards, counting them off; the inspector's pen taps faster."
+      },
+      {
+       "t": "8–10 s",
+       "texte": "a floor fan switches on, every note lifts into the air in slow motion; Michael stays perfectly still and looks at the camera."
+      }
+     ],
+     "dialogue": "Michael: « Lundi… mardi… » Michael (to camera): « Je note tout. Dans ma tête. »",
+     "camera": "flicker reveal → quick inserts → top-down on the table → slow-motion medium shot with notes floating.",
+     "light": "same bare bulb, cold grade, notes catching the light.",
+     "audio": "fridge door, hood rattle, shoe squeak, fan spinning up, paper flutter in slow motion, pen click."
+    }
+   ],
+   "montage": {
+    "vo": "Le contrôle d'hygiène ? Avec FoodEatUp, chaque relevé est daté, rangé, prêt à montrer.",
+    "beats": [
+     {
+      "t": "2–4 s",
+      "texte": "les post-its volants se figent, s'alignent en grille, deviennent des lignes horodatées."
+     },
+     {
+      "t": "4–7 s",
+      "texte": "écran HACCP : un relevé de température saisi en un tap sur un équipement → historique par jour → « export » d'un rapport en une pression."
+     },
+     {
+      "t": "7–9 s",
+      "texte": "cartes : HACCP · Températures · Étiquettes DLC · Traçabilité · Checklist hygiène."
+     }
+    ],
+    "cartes": [
+     "HACCP",
+     "Températures",
+     "Étiquettes DLC",
+     "Traçabilité",
+     "Checklist hygiène"
+    ],
+    "texte_ecran": "HACCP : tout est noté. Pas dans votre tête.",
+    "sfx": "tick par ligne, whoosh d'export, impact final."
+   }
+  },
+  {
+   "num": 3,
+   "slug": "le-critique",
+   "titre": "Le critique",
+   "genre": "Film d'espionnage (paranoïa)",
+   "genre_court": "Espionnage",
+   "situation": "Le critique anonyme est dans la salle… ou pas",
+   "modules": [
+    "Avis"
+   ],
+   "hook": "Michael observe la salle à travers une passoire : « Il est là. »",
+   "selecteurs": {
+    "epoque": "2020s",
+    "genre": "espionnage",
+    "lumiere": "contrastée, angle latéral",
+    "physique": "réaliste",
+    "objectif": "85 mm téléobjectif",
+    "emotion": "suspicion",
+    "montage": "4 plans"
+   },
+   "scenes": [
+    {
+     "n": 1,
+     "titre": "C'est lui",
+     "resume": "Tout le monde est suspect, Michael sert le chapeau avec révérence",
+     "location_line": "Location = @Image 3.",
+     "format_line": "9:16, 10 s, 4 shots, realistic comedy shot like a spy thriller.",
+     "scene": "A full dining room at lunch. Michael crouches behind the bar and looks at the room through a metal colander held like binoculars.",
+     "action": [
+      {
+       "t": "0–2 s",
+       "texte": "colander POV with round holes, Michael whispers."
+      },
+      {
+       "t": "2–5 s",
+       "texte": "hidden-camera style snap zooms on three adult customers: a woman writing in a notebook, a man photographing his plate, a man alone in a hat; Michael names each one."
+      },
+      {
+       "t": "5–8 s",
+       "texte": "Michael serves the man in the hat with an exaggerated bow, straightens the fork by a millimetre, blows on the glass."
+      },
+      {
+       "t": "8–10 s",
+       "texte": "the man looks up and asks something simple; Michael sprints away in slow motion."
+      }
+     ],
+     "dialogue": "Michael (whisper): « Il est là. » Michael: « C'est lui. Non. Elle. Le chapeau ! » Man in hat: « Le sel ? » Michael: « Tout de suite. »",
+     "camera": "colander POV → three snap zooms → medium on the bow → slow-motion tracking as he runs.",
+     "light": "contrasty window light, teal shadows, warm highlights.",
+     "audio": "spy bass line (original), camera shutter clicks, glass hum, whispered lines, slow-motion whoosh."
+    },
+    {
+     "n": 2,
+     "titre": "Une étoile",
+     "resume": "Le vrai critique était le livreur qui attendait dehors",
+     "location_line": "Location = @Image 3.",
+     "format_line": "9:16, 10 s, 4 shots, realistic comedy shot like a spy thriller.",
+     "scene": "End of service, chairs on tables, Michael leaning on the bar, exhausted and proud, phone in hand.",
+     "action": [
+      {
+       "t": "0–2 s",
+       "texte": "Michael exhales and smiles at the room."
+      },
+      {
+       "t": "2–5 s",
+       "texte": "his phone buzzes; a blurred notification with a single star glows on the screen (no readable text); his smile freezes."
+      },
+      {
+       "t": "5–8 s",
+       "texte": "ultra-fast flashback: an adult courier with a bike helmet waiting at the glass door for a long time, checking his watch, while Michael bows in the background."
+      },
+      {
+       "t": "8–10 s",
+       "texte": "back to Michael; he drops the colander; crash zoom."
+      }
+     ],
+     "dialogue": "Michael: « C'était parfait. » Michael: « Une étoile. » (beat) « Le livreur. »",
+     "camera": "medium → insert on phone → jump-cut flashback in handheld → crash zoom on face.",
+     "light": "evening practicals, warm bar light, flashback slightly desaturated.",
+     "audio": "phone buzz, heartbeat, rewind sound for the flashback, colander clang, sting."
+    }
+   ],
+   "montage": {
+    "vo": "Le vrai critique, c'est chaque client. FoodEatUp réunit tous vos avis et vous aide à répondre.",
+    "beats": [
+     {
+      "t": "2–4 s",
+      "texte": "la notification de Michael se multiplie en dizaines d'étoiles qui se rangent en liste."
+     },
+     {
+      "t": "4–7 s",
+      "texte": "écran Avis : avis du site et de Google au même endroit, note, statut ; une réponse s'écrit en un tap ; l'avis passe en « répondu »."
+     },
+     {
+      "t": "7–9 s",
+      "texte": "cartes : Avis · Clients · Site vitrine."
+     }
+    ],
+    "cartes": [
+     "Avis",
+     "Clients",
+     "Site vitrine"
+    ],
+    "texte_ecran": "Tous les avis. Une réponse.",
+    "sfx": "ding par étoile, whoosh de réponse, impact final."
+   }
+  },
+  {
+   "num": 4,
+   "slug": "le-brunch-des-zombies",
+   "titre": "Le brunch des zombies",
+   "genre": "Film de zombies",
+   "genre_court": "Zombies",
+   "situation": "Le rush du brunch du dimanche à 11 h",
+   "modules": [
+    "File d'attente",
+    "Plan de salle"
+   ],
+   "hook": "Une tasse qui tremble, un grondement, Michael : « Ils arrivent. »",
+   "selecteurs": {
+    "epoque": "2020s",
+    "genre": "horreur",
+    "lumiere": "blanche crue de matin, angle frontal",
+    "physique": "réaliste (foule au ralenti)",
+    "objectif": "24 mm grand-angle",
+    "emotion": "dread → panique comique",
+    "montage": "4 plans"
+   },
+   "scenes": [
+    {
+     "n": 1,
+     "titre": "Ils arrivent",
+     "resume": "Restaurant vide, une horde de brunchers avance lentement vers la vitrine",
+     "location_line": "Location = @Image 3.",
+     "format_line": "9:16, 10 s, 4 shots, realistic comedy shot like a zombie movie.",
+     "scene": "Sunday morning, empty restaurant, flat white light, total silence. Michael sips a coffee at the bar.",
+     "action": [
+      {
+       "t": "0–2 s",
+       "texte": "close-up on the coffee cup; it starts to vibrate; a low rumble."
+      },
+      {
+       "t": "2–5 s",
+       "texte": "Michael walks to the glass front; outside, a crowd of adults in sunglasses shuffles slowly toward the window, arms half raised, heads down."
+      },
+      {
+       "t": "5–8 s",
+       "texte": "hands press against the glass one by one; moaning voices; Michael backs away."
+      },
+      {
+       "t": "8–10 s",
+       "texte": "extreme close-up on Michael's face; he stacks two chairs against the door."
+      }
+     ],
+     "dialogue": "Crowd (moaning): « Brunch… » « Café… » « Œufs… » Michael: « Ils arrivent. »",
+     "camera": "macro on cup → dolly toward the window → handheld through the glass → extreme close-up.",
+     "light": "harsh morning white, slightly green shadows, high contrast.",
+     "audio": "cup rattle, sub rumble, shuffling feet, moans, palms squeaking on glass, chair scrape."
+    },
+    {
+     "n": 2,
+     "titre": "Dix minutes",
+     "resume": "La porte cède, service en accéléré, Michael dos au mur",
+     "location_line": "Location = @Image 3.",
+     "format_line": "9:16, 10 s, 4 shots, realistic comedy shot like a zombie movie.",
+     "scene": "The door gives way; the crowd pours in, in slow motion, backlit; Michael silhouetted in the middle.",
+     "action": [
+      {
+       "t": "0–2 s",
+       "texte": "slow-motion breach, chairs sliding, Michael's hair blown back."
+      },
+      {
+       "t": "2–5 s",
+       "texte": "hyper-fast montage: plates of eggs, juice, pancakes flying across tables; Michael weaves between customers."
+      },
+      {
+       "t": "5–8 s",
+       "texte": "a customer grabs Michael's arm and moans a question; he answers; she repeats it slowly and shuffles away."
+      },
+      {
+       "t": "8–10 s",
+       "texte": "Michael with his back to the wall, breathing hard, looks at the camera and manages a tired smile."
+      }
+     ],
+     "dialogue": "Customer: « Une table ? » Michael: « Dix minutes. » Customer (slow): « Dix… minutes… » Michael: « Ils ont faim. » (beat) « Moi aussi. »",
+     "camera": "slow-motion low angle → whip pans and speed ramps → medium two-shot → static close-up.",
+     "light": "backlit door, white bloom, warm skin, cold background.",
+     "audio": "door crash, slow-motion roar, fast plate clatter, sizzling, moan, exhausted breath."
+    }
+   ],
+   "montage": {
+    "vo": "Le rush du dimanche n'est pas une invasion. FoodEatUp met tout le monde en file et remplit la salle table par table.",
+    "vo_variante_courte": "Le rush du dimanche n'est pas une invasion. FoodEatUp met tout le monde en file et remplit la salle.",
+    "beats": [
+     {
+      "t": "2–4 s",
+      "texte": "la foule collée à la vitre se transforme en une liste de groupes : nom, nombre de personnes, attente estimée."
+     },
+     {
+      "t": "4–7 s",
+      "texte": "écran File d'attente : un groupe ajouté en un tap → « table prête » envoyé → sur le plan de salle, la table passe de libre à occupée ; la salle se remplit en vert."
+     },
+     {
+      "t": "7–9 s",
+      "texte": "cartes : File d'attente · Plan de salle · Tables · Commandes."
+     }
+    ],
+    "cartes": [
+     "File d'attente",
+     "Plan de salle",
+     "Tables",
+     "Commandes"
+    ],
+    "texte_ecran": "Le rush arrive. La file est prête.",
+    "sfx": "tick par groupe, notification, whoosh de remplissage, impact final."
+   }
+  },
+  {
+   "num": 5,
+   "slug": "le-casse",
+   "titre": "Le casse",
+   "genre": "Film de braquage",
+   "genre_court": "Braquage",
+   "situation": "La clôture de caisse à 23 h 30, il manque cinq euros",
+   "modules": [
+    "Caisse (rapport X / clôture Z)"
+   ],
+   "hook": "Lampe frontale, tiroir-caisse ouvert comme un coffre : « Il manque cinq euros. »",
+   "selecteurs": {
+    "epoque": "2020s",
+    "genre": "thriller de braquage",
+    "lumiere": "lampe frontale + néon du frigo, angle bas",
+    "physique": "réaliste",
+    "objectif": "35 mm + macro",
+    "emotion": "concentration → désespoir",
+    "montage": "4 plans"
+   },
+   "scenes": [
+    {
+     "n": 1,
+     "titre": "Le coffre",
+     "resume": "Michael compte les pièces comme un braqueur, le compte ne tombe pas juste",
+     "location_line": "Location = @Image 3.",
+     "format_line": "9:16, 10 s, 4 shots, realistic comedy shot like a heist movie.",
+     "scene": "Restaurant closed, lights off, only a headlamp on Michael's forehead and the glow of a drinks fridge. The cash drawer is open on the bar like a safe.",
+     "action": [
+      {
+       "t": "0–2 s",
+       "texte": "macro on coins stacked in neat towers, the headlamp beam sweeping across them."
+      },
+      {
+       "t": "2–5 s",
+       "texte": "close-up on Michael's lips counting silently, eyes darting; he slides one coin at a time."
+      },
+      {
+       "t": "5–8 s",
+       "texte": "he holds a long paper roll from the till next to the coins (no readable text), compares, frowns, recounts one tower."
+      },
+      {
+       "t": "8–10 s",
+       "texte": "he looks up at the camera, the headlamp flickers, he speaks."
+      }
+     ],
+     "dialogue": "Michael: « Il manque cinq euros. »",
+     "camera": "macro slider on coins → close-up face → insert on paper → static medium, headlamp flicker.",
+     "light": "single headlamp beam, blue fridge glow, deep black background.",
+     "audio": "coin clinks, paper rustle, heist bass pulse (original), fridge hum, lamp flicker buzz."
+    },
+    {
+     "n": 2,
+     "titre": "Trois heures du matin",
+     "resume": "Il recompte toute la nuit, le billet était dans sa poche",
+     "location_line": "Location = @Image 3.",
+     "format_line": "9:16, 10 s, 4 shots, realistic comedy shot like a heist movie.",
+     "scene": "Same bar, same headlamp; a wall clock hands move through the night.",
+     "action": [
+      {
+       "t": "0–2 s",
+       "texte": "Michael recounts, the clock reads midnight."
+      },
+      {
+       "t": "2–5 s",
+       "texte": "time-lapse montage: clock at one, he recounts wearing dish gloves; clock at two, he lies on the floor with coins aligned in a line; clock at three, he sleeps with his cheek on the drawer."
+      },
+      {
+       "t": "5–8 s",
+       "texte": "he jolts awake, slaps his apron pocket, slowly pulls out a folded banknote; crisp paper sound."
+      },
+      {
+       "t": "8–10 s",
+       "texte": "close-up; he looks at the note, then at the camera; he switches off the headlamp; black."
+      }
+     ],
+     "dialogue": "Michael: « Ah. C'est moi. »",
+     "camera": "medium → fast time-lapse cuts → insert on the pocket → close-up → cut to black.",
+     "light": "headlamp only, night blue, dawn grey creeping in at the end.",
+     "audio": "clock ticking accelerated, coin clinks, snore, banknote crisp, click of the lamp."
+    }
+   ],
+   "montage": {
+    "vo": "La clôture de caisse, c'est deux minutes, pas deux heures. FoodEatUp calcule l'écart pour vous.",
+    "beats": [
+     {
+      "t": "2–4 s",
+      "texte": "les pièces éparpillées glissent et se rangent en colonnes par mode de paiement : espèces, carte, en ligne."
+     },
+     {
+      "t": "4–7 s",
+      "texte": "écran Caisse : session ouverte le matin (fond de caisse) → rapport X en cours de journée → clôture Z en un tap : total par mode, comptage espèces, « écart » affiché automatiquement."
+     },
+     {
+      "t": "7–9 s",
+      "texte": "cartes : Caisse · Session de caisse · Rapport Z · Paiements."
+     }
+    ],
+    "cartes": [
+     "Caisse",
+     "Session de caisse",
+     "Rapport Z",
+     "Paiements"
+    ],
+    "texte_ecran": "Clôture Z : 2 minutes. Écart : calculé.",
+    "sfx": "clink par colonne, tick de clôture, impact final."
+   }
+  },
+  {
+   "num": 6,
+   "slug": "le-monstre",
+   "titre": "Le monstre",
+   "genre": "Film de monstre géant",
+   "genre_court": "Monstre géant",
+   "situation": "Michael a commandé « dix », il reçoit dix palettes d'oignons",
+   "modules": [
+    "Commandes fournisseurs",
+    "Réception"
+   ],
+   "hook": "Tous les verres tremblent, une ombre géante passe sur la façade.",
+   "selecteurs": {
+    "epoque": "2020s",
+    "genre": "film de monstre",
+    "lumiere": "matin gris, angle contre-plongée",
+    "physique": "hyperbolique",
+    "objectif": "18 mm ultra grand-angle",
+    "emotion": "effroi comique",
+    "montage": "4 plans"
+   },
+   "scenes": [
+    {
+     "n": 1,
+     "titre": "Dix palettes",
+     "resume": "Le camion recule, la montagne d'oignons descend, Michael la contemple",
+     "location_line": "Location = @Image 3.",
+     "format_line": "9:16, 10 s, 4 shots, realistic comedy shot like a giant-monster movie.",
+     "scene": "Quiet morning, Michael arranging glasses behind the bar; outside, a delivery truck reverses with a beeping alarm.",
+     "action": [
+      {
+       "t": "0–2 s",
+       "texte": "one glass trembles, then all of them; a deep rumble; a giant shadow slides across the window."
+      },
+      {
+       "t": "2–5 s",
+       "texte": "Michael steps outside; extreme low angle: a mountain of onion pallets descends from the truck on a lift, towering over him."
+      },
+      {
+       "t": "5–8 s",
+       "texte": "an adult courier in a hi-vis vest with a tablet confirms flatly; Michael protests; the courier repeats."
+      },
+      {
+       "t": "8–10 s",
+       "texte": "the camera tilts up the onion mountain to the sky; Michael's voice, tiny, from below."
+      }
+     ],
+     "dialogue": "Courier: « Dix palettes. » Michael: « J'ai dit dix. » Courier: « Dix palettes. » Michael (small): « …oignons. »",
+     "camera": "macro on glasses → dolly out through the door → extreme low angle → slow tilt up.",
+     "light": "overcast grey, monster-movie contrast, the truck lights cutting through.",
+     "audio": "glass rattle, sub-bass rumble, reversing beep, hydraulic lift, onion nets creaking, orchestral sting (original)."
+    },
+    {
+     "n": 2,
+     "titre": "C'est les oignons",
+     "resume": "La cuisine ensevelie, Michael gravit la montagne en pleurant",
+     "location_line": "Location = @Image 4.",
+     "format_line": "9:16, 10 s, 4 shots, realistic comedy shot like a giant-monster movie.",
+     "scene": "The kitchen buried under nets of onions up to the ceiling.",
+     "action": [
+      {
+       "t": "0–2 s",
+       "texte": "Michael's hand bursts out of the onions; he surfaces as if swimming."
+      },
+      {
+       "t": "2–5 s",
+       "texte": "heroic slow motion: he climbs the onion mountain, onions tumbling down around him, fists in the nets."
+      },
+      {
+       "t": "5–8 s",
+       "texte": "at the summit, tears streaming, he faces the camera and denies crying."
+      },
+      {
+       "t": "8–10 s",
+       "texte": "another pallet slides in through the kitchen window and stops right next to him; he stares at it."
+      }
+     ],
+     "dialogue": "Michael: « Je pleure pas. » (sniff) « C'est les oignons. » Michael: « Non. »",
+     "camera": "insert on the hand → slow-motion low angle climb → close-up at the top → wide as the pallet arrives.",
+     "light": "kitchen fluorescents, onion skins golden in the light, dramatic contrast.",
+     "audio": "onions rolling, net creaks, heroic orchestral swell (original), sniff, pallet thud, silence."
+    }
+   ],
+   "montage": {
+    "vo": "Dix, c'est dix. FoodEatUp fixe l'unité, la quantité et la date avant que le camion recule.",
+    "beats": [
+     {
+      "t": "2–4 s",
+      "texte": "la montagne d'oignons se réduit au chiffre « 10 » qui se corrige : 10 kg / 10 pièces / 10 palettes, l'unité juste s'allume."
+     },
+     {
+      "t": "4–7 s",
+      "texte": "écran Commandes fournisseurs : ligne produit, quantité, unité, date prévue → à la livraison, Réception en un tap (contrôle à l'arrivée) → le stock se met à jour."
+     },
+     {
+      "t": "7–9 s",
+      "texte": "cartes : Fournisseurs · Commandes fournisseurs · Réception · Stock."
+     }
+    ],
+    "cartes": [
+     "Fournisseurs",
+     "Commandes fournisseurs",
+     "Réception",
+     "Stock"
+    ],
+    "texte_ecran": "Commandez juste. Recevez juste.",
+    "sfx": "tick unité, whoosh réception, impact final."
+   }
+  },
+  {
+   "num": 7,
+   "slug": "la-bombe",
+   "titre": "La bombe",
+   "genre": "Film de démineurs",
+   "genre_court": "Démineurs",
+   "situation": "Une cliente allergique, deux sauces, un chef absent",
+   "modules": [
+    "Recettes",
+    "Allergènes"
+   ],
+   "hook": "« Je suis allergique aux noix. » — « Bien sûr. » (le sourire tombe dès qu'il se retourne)",
+   "selecteurs": {
+    "epoque": "2020s",
+    "genre": "thriller d'action",
+    "lumiere": "néon cuisine froid, angle frontal",
+    "physique": "réaliste",
+    "objectif": "macro 100 mm",
+    "emotion": "panique silencieuse",
+    "montage": "4 plans"
+   },
+   "scenes": [
+    {
+     "n": 1,
+     "titre": "Laquelle ?",
+     "resume": "Deux bols, un chrono qui bipe, Michael avec une pince comme un démineur",
+     "location_line": "Locations = @Image 3 then @Image 4.",
+     "format_line": "9:16, 10 s, 4 shots, realistic comedy shot like a bomb-defusal thriller.",
+     "scene": "Dining room, an adult customer calmly speaks to Michael; then the kitchen: the chef's hat hangs on a hook, the chef is gone; two sauce bowls on the pass, one red, one green; a kitchen timer ticking.",
+     "action": [
+      {
+       "t": "0–2 s",
+       "texte": "the customer states her allergy; Michael smiles, turns around, and the smile drops instantly."
+      },
+      {
+       "t": "2–5 s",
+       "texte": "kitchen: Michael grips a pair of tongs, sweat beads in macro, the timer beeps."
+      },
+      {
+       "t": "5–8 s",
+       "texte": "rapid alternating close-ups: red bowl, green bowl, red, green, Michael's eyes."
+      },
+      {
+       "t": "8–10 s",
+       "texte": "extreme close-up on the tongs hovering; the timer beeps faster; Michael speaks."
+      }
+     ],
+     "dialogue": "Customer: « Je suis allergique aux noix. » Michael: « Bien sûr. » Michael: « C'est laquelle ? »",
+     "camera": "medium two-shot → whip to kitchen → macro inserts → extreme close-up.",
+     "light": "cold kitchen fluorescents, red and green bowls saturated, blue shadows.",
+     "audio": "timer tick, beeps accelerating, tense pulse (original), sweat drop, tongs click."
+    },
+    {
+     "n": 2,
+     "titre": "C'est sûr",
+     "resume": "Le chef ne répond pas, Michael sert du pain et de l'eau",
+     "location_line": "Locations = @Image 4 then @Image 3.",
+     "format_line": "9:16, 10 s, 4 shots, realistic comedy shot like a bomb-defusal thriller.",
+     "scene": "Same kitchen, then the customer's table.",
+     "action": [
+      {
+       "t": "0–2 s",
+       "texte": "Michael phones the chef, listens to the ringing tone, no answer."
+      },
+      {
+       "t": "2–5 s",
+       "texte": "he sniffs the red sauce, nothing; sniffs the green sauce and squints; turns over a stained, blurred recipe card he cannot read."
+      },
+      {
+       "t": "5–8 s",
+       "texte": "the tongs approach the red bowl, stop a centimetre away; he puts the tongs down and exhales."
+      },
+      {
+       "t": "8–10 s",
+       "texte": "dining room: he serves the customer a perfectly clean plate with bread and a glass of water; the timer stops."
+      }
+     ],
+     "dialogue": "Customer: « C'est tout ? » Michael: « C'est sûr. »",
+     "camera": "close-up on phone → macro on the sniff → extreme close-up on tongs → medium at the table, timer click.",
+     "light": "cold kitchen, then warm dining light on the clean plate.",
+     "audio": "ringing tone, sniff, card flip, tongs down, heartbeat stops, plate set down, timer click."
+    }
+   ],
+   "montage": {
+    "vo": "Un allergène, ça se sait avant de servir. FoodEatUp l'affiche sur chaque recette et sur votre site.",
+    "beats": [
+     {
+      "t": "2–4 s",
+      "texte": "les deux bols se déplient en deux fiches recette ; les ingrédients défilent ligne par ligne ; une ligne s'allume avec une icône allergène."
+     },
+     {
+      "t": "4–7 s",
+      "texte": "écran Recettes : ingrédients, quantités, allergènes signalés sur le plat → la page Allergènes du site vitrine s'active en un tap."
+     },
+     {
+      "t": "7–9 s",
+      "texte": "cartes : Recettes · Ingrédients · Site vitrine · Pages."
+     }
+    ],
+    "cartes": [
+     "Recettes",
+     "Ingrédients",
+     "Site vitrine",
+     "Pages"
+    ],
+    "texte_ecran": "Allergènes : visibles avant. Pas après.",
+    "sfx": "tick par ligne, alerte douce, impact final."
+   }
+  },
+  {
+   "num": 8,
+   "slug": "le-documentaire",
+   "titre": "Le documentaire",
+   "genre": "Documentaire animalier (voix de narrateur)",
+   "genre_court": "Animalier",
+   "situation": "La cliente influenceuse filme son plat pendant qu'il refroidit",
+   "modules": [
+    "Avis",
+    "Site vitrine",
+    "Fidélité"
+   ],
+   "hook": "Voix de narrateur : « Ici, dans son habitat naturel… » — une cliente et son ring light.",
+   "selecteurs": {
+    "epoque": "2020s",
+    "genre": "documentaire",
+    "lumiere": "naturelle de fenêtre, angle latéral",
+    "physique": "réaliste",
+    "objectif": "135 mm téléobjectif",
+    "emotion": "patience amusée",
+    "montage": "4 plans"
+   },
+   "scenes": [
+    {
+     "n": 1,
+     "titre": "Le client qui filme",
+     "resume": "Narrateur calme, Michael caché derrière une plante",
+     "location_line": "Location = @Image 3.",
+     "format_line": "9:16, 10 s, 4 shots, realistic comedy shot like a wildlife documentary.",
+     "scene": "A window table; an adult influencer with a small ring light on a tripod circles her steaming plate with her phone. Michael crouches behind a large potted plant, peeking through the leaves.",
+     "action": [
+      {
+       "t": "0–2 s",
+       "texte": "long-lens shot through leaves; the narrator introduces the scene."
+      },
+      {
+       "t": "2–5 s",
+       "texte": "she shoots the plate from eight angles; time-lapse: the steam rises, thins, disappears."
+      },
+      {
+       "t": "5–8 s",
+       "texte": "she stops, repositions a single fry with two fingers, restarts; Michael whispers."
+      },
+      {
+       "t": "8–10 s",
+       "texte": "the narrator concludes; Michael stares into the camera, one slow blink."
+      }
+     ],
+     "dialogue": "Narrator (calm male voice-over): « Ici, dans son habitat naturel… le client qui filme. » Michael (whisper): « Elle filme encore. » Michael (whisper): « Une frite. » Narrator: « Le serveur attend. »",
+     "camera": "telephoto through leaves → orbit around the table → macro on the fry → static close-up on Michael.",
+     "light": "soft daylight, natural colours, gentle vignette.",
+     "audio": "gentle documentary strings (original), phone shutter, ring light hum, leaves rustling, whisper."
+    },
+    {
+     "n": 2,
+     "titre": "Le cycle recommence",
+     "resume": "C'est froid, elle refilme, Michael apporte un plat neuf… qu'elle refilme",
+     "location_line": "Location = @Image 3.",
+     "format_line": "9:16, 10 s, 4 shots, realistic comedy shot like a wildlife documentary.",
+     "scene": "Same table; the influencer finally tastes the food.",
+     "action": [
+      {
+       "t": "0–2 s",
+       "texte": "she takes one bite, freezes, and states the obvious."
+      },
+      {
+       "t": "2–5 s",
+       "texte": "she flips the phone to front camera and films herself complaining; Michael emerges from the plant in slow motion carrying a new steaming plate."
+      },
+      {
+       "t": "5–8 s",
+       "texte": "she beams, sets the ring light, films the new plate from eight angles; Michael walks backwards into the plant."
+      },
+      {
+       "t": "8–10 s",
+       "texte": "close-up on Michael between two leaves; he speaks to the camera."
+      }
+     ],
+     "dialogue": "Influencer: « C'est froid. » Narrator: « Et le cycle recommence. » Michael: « J'aurais dû faire biologiste. »",
+     "camera": "close-up on the bite → handheld front-cam feel → slow-motion tracking with the plate → telephoto through leaves.",
+     "light": "soft daylight, steam catching the window light.",
+     "audio": "fork tap, phone tap, slow-motion whoosh, shutter burst, leaves, documentary strings resolve."
+    }
+   ],
+   "montage": {
+    "vo": "Vos clients font votre pub. FoodEatUp la récupère : la photo, l'avis, les points de fidélité.",
+    "beats": [
+     {
+      "t": "2–4 s",
+      "texte": "les huit photos de la cliente s'envolent de son téléphone et se rangent en galerie."
+     },
+     {
+      "t": "4–7 s",
+      "texte": "écran : les photos rejoignent la galerie du Site vitrine, son commentaire devient un Avis à modérer en un tap, sa visite crédite des points sur sa fiche Fidélité."
+     },
+     {
+      "t": "7–9 s",
+      "texte": "cartes : Site vitrine · Avis · Fidélité · Clients."
+     }
+    ],
+    "cartes": [
+     "Site vitrine",
+     "Avis",
+     "Fidélité",
+     "Clients"
+    ],
+    "texte_ecran": "Ils filment. Vous gagnez.",
+    "sfx": "shutter par photo, ding de points, impact final."
+   }
+  },
+  {
+   "num": 9,
+   "slug": "le-sous-marin",
+   "titre": "Le sous-marin",
+   "genre": "Film de sous-marin (silence, sonar)",
+   "genre_court": "Sous-marin",
+   "situation": "Le coup de feu en cuisine, chaque ticket est un « ping »",
+   "modules": [
+    "Écran cuisine"
+   ],
+   "hook": "Cuisine en lumière rouge, une goutte tombe, un ping de sonar : « Silence. Une commande. »",
+   "selecteurs": {
+    "epoque": "2020s",
+    "genre": "thriller de sous-marin",
+    "lumiere": "rouge d'alerte + pratiques, angle bas",
+    "physique": "réaliste",
+    "objectif": "35 mm",
+    "emotion": "tension chuchotée",
+    "montage": "4 plans"
+   },
+   "scenes": [
+    {
+     "n": 1,
+     "titre": "Ping",
+     "resume": "Tout le monde immobile, l'imprimante à tickets devient un sonar",
+     "location_line": "Location = @Image 4.",
+     "format_line": "9:16, 10 s, 4 shots, realistic comedy shot like a submarine thriller.",
+     "scene": "The kitchen bathed in red emergency light, water dripping from a tap into a pot, the whole team frozen mid-gesture; an adult chef in a white apron beside Michael.",
+     "action": [
+      {
+       "t": "0–2 s",
+       "texte": "a drop falls, a sonar ping echoes, Michael raises a finger for silence and whispers."
+      },
+      {
+       "t": "2–5 s",
+       "texte": "the chef whispers back; Michael presses his ear against the ticket printer like a hull and reports; the chef lifts a ladle slowly like a periscope."
+      },
+      {
+       "t": "5–8 s",
+       "texte": "ping. ping. ping-ping-ping; tickets shoot out of the printer in a burst and curl to the floor."
+      },
+      {
+       "t": "8–10 s",
+       "texte": "Michael's eyes go wide; close-up."
+      }
+     ],
+     "dialogue": "Michael (whisper): « Silence. Une commande. » Chef (whisper): « Où ? » Michael (whisper): « Table quatre. Deux burgers. » Michael: « Ça fait beaucoup de ping. »",
+     "camera": "macro on the drop → low medium two-shot → insert on the printer → close-up.",
+     "light": "deep red emergency light, steel reflections, black shadows.",
+     "audio": "water drop, sonar ping, hull creak, whispers, printer burst, rising tension."
+    },
+    {
+     "n": 2,
+     "titre": "On remonte",
+     "resume": "Alarme rouge, la porte s'ouvre sur la lumière blanche de la salle",
+     "location_line": "Locations = @Image 4 then @Image 3.",
+     "format_line": "9:16, 10 s, 4 shots, realistic comedy shot like a submarine thriller.",
+     "scene": "Same kitchen; a rotating red alarm light; tickets now paper the wall; the team whispers loudly in panic.",
+     "action": [
+      {
+       "t": "0–2 s",
+       "texte": "rotating alarm sweep, tickets everywhere, whispered panic."
+      },
+      {
+       "t": "2–5 s",
+       "texte": "Michael shouts in a whisper and turns the sink tap like a valve; steam jets from the pots."
+      },
+      {
+       "t": "5–8 s",
+       "texte": "the kitchen door swings open onto the dining room: blinding white light, the roar of the room; Michael squints like a sailor after months at sea."
+      },
+      {
+       "t": "8–10 s",
+       "texte": "he looks at the camera, deadpan; the door swings shut on him."
+      }
+     ],
+     "dialogue": "Michael (loud whisper): « On remonte ! » Michael: « Je préfère le sous-marin. »",
+     "camera": "rotating light wide → insert on the valve → dolly through the door into white bloom → close-up, door closes.",
+     "light": "red alarm inside, overexposed white outside, hard cut in colour temperature.",
+     "audio": "klaxon muted, valve squeak, steam hiss, room noise burst, door thump, silence."
+    }
+   ],
+   "montage": {
+    "vo": "Chaque plat, chaque poste, chaque minute : l'écran cuisine FoodEatUp remplace les tickets et le ping.",
+    "beats": [
+     {
+      "t": "2–4 s",
+      "texte": "les tickets papier collés au mur se détachent, se redressent et deviennent des cartes de commande numériques."
+     },
+     {
+      "t": "4–7 s",
+      "texte": "écran Écran cuisine : les plats répartis par poste (froid, chaud, passe) ; un plat passe « en attente → en cours → prêt » en un tap ; la charge de chaque poste s'affiche."
+     },
+     {
+      "t": "7–9 s",
+      "texte": "cartes : Écran cuisine · Postes · Commandes · Tables."
+     }
+    ],
+    "cartes": [
+     "Écran cuisine",
+     "Postes",
+     "Commandes",
+     "Tables"
+    ],
+    "texte_ecran": "Écran cuisine : chaque plat, chaque poste.",
+    "sfx": "ping doux par carte, tick par statut, impact final."
+   }
+  },
+  {
+   "num": 10,
+   "slug": "la-boucle",
+   "titre": "La boucle",
+   "genre": "Boucle temporelle",
+   "genre_court": "Boucle temporelle",
+   "situation": "Chaque matin, Michael recompte le stock à la main, et le chiffre change",
+   "modules": [
+    "Stock"
+   ],
+   "hook": "Réveil à six heures, Michael compte les bouteilles du doigt… puis le réveil sonne à nouveau.",
+   "selecteurs": {
+    "epoque": "2020s",
+    "genre": "comédie fantastique",
+    "lumiere": "néon de réserve, angle frontal",
+    "physique": "réaliste",
+    "objectif": "35 mm",
+    "emotion": "lassitude croissante",
+    "montage": "4 plans"
+   },
+   "scenes": [
+    {
+     "n": 1,
+     "titre": "Encore ?",
+     "resume": "Même réveil, même geste, jamais le même chiffre",
+     "location_line": "Location = @Image 4 (storeroom side).",
+     "format_line": "9:16, 10 s, 4 shots, realistic comedy shot like a time-loop movie.",
+     "scene": "A storeroom shelf lined with identical bottles; an alarm clock on a crate; Michael with a pencil and a paper pad.",
+     "action": [
+      {
+       "t": "0–2 s",
+       "texte": "the alarm rings, Michael sits up from a nap on a flour sack and starts counting bottles with his finger."
+      },
+      {
+       "t": "2–5 s",
+       "texte": "he counts out loud, writes a number."
+      },
+      {
+       "t": "5–8 s",
+       "texte": "hard cut: the alarm rings again, same posture, same bottles, he counts again and gets a different number; hard cut: alarm again, another number."
+      },
+      {
+       "t": "8–10 s",
+       "texte": "he turns very slowly toward the camera."
+      }
+     ],
+     "dialogue": "Michael: « Un, deux, trois… douze. » Michael: « …onze ? » Michael: « …quinze ?! » Michael: « Encore ? »",
+     "camera": "medium → insert on the finger counting → three identical jump-cuts → slow turn into close-up.",
+     "light": "flat fluorescent, slightly green, identical framing on every loop.",
+     "audio": "same alarm ring three times, pencil scratch, bottle clink, a comic bass note on the turn."
+    },
+    {
+     "n": 2,
+     "titre": "Je sors pas",
+     "resume": "Il essaie de casser la boucle, le mur redevient propre",
+     "location_line": "Location = @Image 4 (storeroom side).",
+     "format_line": "9:16, 10 s, 4 shots, realistic comedy shot like a time-loop movie.",
+     "scene": "Same storeroom, same shelf, same alarm clock.",
+     "action": [
+      {
+       "t": "0–2 s",
+       "texte": "Michael counts the bottles backwards, then counts while hopping on one foot."
+      },
+      {
+       "t": "2–5 s",
+       "texte": "he writes a big number on the wall with a marker (unreadable scribble); hard cut: the alarm rings, the wall is clean, he stares at it."
+      },
+      {
+       "t": "5–8 s",
+       "texte": "he slides down and sits on the floor, resigned; a bottle rolls off the shelf and stops against his shoe."
+      },
+      {
+       "t": "8–10 s",
+       "texte": "he looks at the bottle, then at the camera; the alarm rings again."
+      }
+     ],
+     "dialogue": "Michael: « Je sors pas. » Michael: « Treize. »",
+     "camera": "medium with hop → insert on the marker → match-cut to clean wall → low angle on the floor, bottle rolls in.",
+     "light": "flat fluorescent, faint dawn light through a vent at the end.",
+     "audio": "hop thuds, marker squeak, alarm, bottle rolling, alarm again, silence."
+    }
+   ],
+   "montage": {
+    "vo": "Comptez une fois. FoodEatUp compte le reste, à chaque vente, à chaque livraison.",
+    "beats": [
+     {
+      "t": "2–4 s",
+      "texte": "le réveil se fige ; les bouteilles se rangent en une ligne de stock : quantité, seuil, niveau."
+     },
+     {
+      "t": "4–7 s",
+      "texte": "écran Stock : une vente encaissée → le stock baisse tout seul ; une réception validée → il remonte ; sous le seuil, une alerte « stock bas » s'allume."
+     },
+     {
+      "t": "7–9 s",
+      "texte": "cartes : Stock · Ingrédients · Réception · Notifications."
+     }
+    ],
+    "cartes": [
+     "Stock",
+     "Ingrédients",
+     "Réception",
+     "Notifications"
+    ],
+    "texte_ecran": "Le stock se compte tout seul.",
+    "sfx": "tick par mouvement, alerte douce, impact final."
+   }
+  },
+  {
+   "num": 11,
+   "slug": "la-var",
+   "titre": "La VAR",
+   "genre": "Retransmission sportive (photo-finish, assistance vidéo)",
+   "genre_court": "Sport",
+   "situation": "Le serveur arrive une seconde après le début de son shift",
+   "modules": [
+    "Pointages",
+    "Planning"
+   ],
+   "hook": "Un serveur court dans la rue au ralenti extrême, voix de commentateur : « Il arrive… il arrive… »",
+   "selecteurs": {
+    "epoque": "2020s",
+    "genre": "sport",
+    "lumiere": "stade / jour, angle bas",
+    "physique": "réaliste (ralenti haute vitesse)",
+    "objectif": "200 mm téléobjectif",
+    "emotion": "suspense sportif",
+    "montage": "4 plans"
+   },
+   "scenes": [
+    {
+     "n": 1,
+     "titre": "Une seconde",
+     "resume": "Michael arbitre avec un sifflet, freeze frame sur la ligne d'arrivée",
+     "ref_extra": "a referee whistle",
+     "location_line": "Location = @Image 3 (entrance).",
+     "format_line": "9:16, 10 s, 4 shots, realistic comedy shot like a live sports broadcast.",
+     "scene": "The restaurant entrance framed like a finish line; a wall clock just before twelve; Michael stands in the doorway with a whistle in his mouth.",
+     "action": [
+      {
+       "t": "0–2 s",
+       "texte": "an adult waiter in service clothes sprints down the street in extreme slow motion, overtaking a passer-by with a dog; sports commentator voice-over."
+      },
+      {
+       "t": "2–5 s",
+       "texte": "he crosses the doorway, sweat drops in slow motion; freeze frame like a photo-finish; the clock's second hand ticks just past twelve."
+      },
+      {
+       "t": "5–8 s",
+       "texte": "Michael blows the whistle and holds up one finger; the waiter protests."
+      },
+      {
+       "t": "8–10 s",
+       "texte": "Michael repeats, deadpan, close-up."
+      }
+     ],
+     "dialogue": "Commentator: « Il arrive… il arrive… » Michael: « Une seconde. » Waiter: « Une seconde ?! » Michael: « Une seconde. »",
+     "camera": "telephoto slow-motion tracking → freeze frame → medium two-shot → close-up.",
+     "light": "bright daylight, punchy broadcast contrast, slight sharpening.",
+     "audio": "crowd roar under the commentary, slow-motion heartbeat, whistle, freeze-frame click."
+    },
+    {
+     "n": 2,
+     "titre": "C'est bon",
+     "resume": "Le ralenti sous trois angles, verdict, célébration à genoux",
+     "ref_extra": "a referee whistle",
+     "location_line": "Location = @Image 3.",
+     "format_line": "9:16, 10 s, 4 shots, realistic comedy shot like a live sports broadcast.",
+     "scene": "Michael in front of a small blurred screen on the bar (no readable content), drawing a rectangle in the air with his fingers like a video review.",
+     "action": [
+      {
+       "t": "0–2 s",
+       "texte": "Michael draws the rectangle gesture; the waiter waits, hands on hips."
+      },
+      {
+       "t": "2–5 s",
+       "texte": "replay of the doorway crossing from three angles in slow motion, the shoe touching the doormat; commentator whispers."
+      },
+      {
+       "t": "5–8 s",
+       "texte": "Michael stares at the screen for a long beat, turns to the waiter; suspense."
+      },
+      {
+       "t": "8–10 s",
+       "texte": "Michael taps his wrist and gives the verdict; the waiter slides on his knees across the floor in celebration; Michael raises both arms."
+      }
+     ],
+     "dialogue": "Commentator: « C'est serré ! » Michael: « C'est bon. » Commentator: « Quel service ! »",
+     "camera": "medium on the gesture → three-angle replay inserts → close-up on Michael → wide on the knee slide.",
+     "light": "bright daylight, broadcast look, replay slightly cooler.",
+     "audio": "replay whoosh, crowd hush, whistle, crowd explosion, knee slide squeak."
+    }
+   ],
+   "montage": {
+    "vo": "Les heures, on ne les discute plus, on les voit. Pointage, planning et contrat au même endroit.",
+    "beats": [
+     {
+      "t": "2–4 s",
+      "texte": "l'image figée du photo-finish se transforme en une ligne de pointage : heure d'arrivée, heure prévue, écart."
+     },
+     {
+      "t": "4–7 s",
+      "texte": "écran Pointages : arrivée enregistrée en un tap → comparée au shift du Planning → heures de la semaine cumulées → contrat lié."
+     },
+     {
+      "t": "7–9 s",
+      "texte": "cartes : Pointages · Planning · Shifts · Contrats."
+     }
+    ],
+    "cartes": [
+     "Pointages",
+     "Planning",
+     "Shifts",
+     "Contrats"
+    ],
+    "texte_ecran": "Pointage : la vérité à la seconde.",
+    "sfx": "sifflet court, tick, impact final."
+   }
+  },
+  {
+   "num": 12,
+   "slug": "le-casting",
+   "titre": "Le casting",
+   "genre": "Émission de casting",
+   "genre_court": "Télé-crochet",
+   "situation": "Recruter un serveur",
+   "modules": [
+    "Recrutement"
+   ],
+   "hook": "Projecteur, table de jury, Michael seul : « Suivant. »",
+   "selecteurs": {
+    "epoque": "2020s",
+    "genre": "télé-crochet",
+    "lumiere": "projecteur de scène, angle frontal",
+    "physique": "hyperbolique (scène 2)",
+    "objectif": "50 mm",
+    "emotion": "découragement comique",
+    "montage": "4 plans"
+   },
+   "scenes": [
+    {
+     "n": 1,
+     "titre": "Suivant",
+     "resume": "Trois candidats, trois catastrophes",
+     "location_line": "Location = @Image 3.",
+     "format_line": "9:16, 10 s, 4 shots, realistic comedy shot like a TV talent show.",
+     "scene": "The dining room turned into a stage: one spotlight, a long jury table with three chairs, two of them empty; Michael alone behind the table with a pen.",
+     "action": [
+      {
+       "t": "0–2 s",
+       "texte": "spotlight snaps on; Michael clicks his pen."
+      },
+      {
+       "t": "2–5 s",
+       "texte": "adult candidate one juggles three plates; close-up on Michael impressed; off-screen crash of breaking plates; Michael reacts."
+      },
+      {
+       "t": "5–8 s",
+       "texte": "adult candidate two states her only condition; Michael reacts; candidate three talks extremely fast, inaudible, with a huge smile."
+      },
+      {
+       "t": "8–10 s",
+       "texte": "Michael turns to the camera, expressionless."
+      }
+     ],
+     "dialogue": "Michael: « Suivant. » Candidate two: « Je travaille pas le week-end. » Michael: « Suivant. » Michael (to camera): « Suivant. »",
+     "camera": "spotlight wide → medium on the juggling → close-up on Michael → close-up to camera.",
+     "light": "theatrical spotlight, dark surroundings, warm key.",
+     "audio": "spotlight clunk, pen click, plates smashing off-screen, TV show sting (original), fast mumbling."
+    },
+    {
+     "n": 2,
+     "titre": "Y'a personne",
+     "resume": "Une file jusqu'au bout de la rue, les CV s'envolent",
+     "location_line": "Location = @Image 3.",
+     "format_line": "9:16, 10 s, 4 shots, realistic comedy shot like a TV talent show.",
+     "scene": "Wide shot: a line of adult candidates stretching out of the door and around the block; inside, a stack of paper CVs as tall as Michael.",
+     "action": [
+      {
+       "t": "0–2 s",
+       "texte": "the endless line, Michael peeks out and sighs."
+      },
+      {
+       "t": "2–5 s",
+       "texte": "he carries the giant paper stack; he sneezes."
+      },
+      {
+       "t": "5–8 s",
+       "texte": "the door opens, a gust of wind: the CVs fly out into the street in slow motion; the candidates chase the papers."
+      },
+      {
+       "t": "8–10 s",
+       "texte": "Michael stands alone with one CV stuck to his face; he peels it off and speaks to the camera."
+      }
+     ],
+     "dialogue": "Michael: « Y'a personne. » (looks at the line) « Y'a trop de monde. »",
+     "camera": "wide street shot → medium on the stack → slow-motion paper storm → close-up.",
+     "light": "daylight, papers white against a grey street.",
+     "audio": "crowd murmur, sneeze, wind gust, paper storm flutter, running footsteps, peel sound."
+    }
+   ],
+   "montage": {
+    "vo": "Une offre, des candidatures classées, un statut par personne. Recruter sans courir après les CV.",
+    "beats": [
+     {
+      "t": "2–4 s",
+      "texte": "les CV volants se rassemblent en une offre d'emploi publiée (poste, salaire affiché) et une liste de candidatures."
+     },
+     {
+      "t": "4–7 s",
+      "texte": "écran Recrutement : une candidature passe « nouvelle → entretien → retenue » en un tap ; la personne retenue devient un Employé."
+     },
+     {
+      "t": "7–9 s",
+      "texte": "cartes : Recrutement · Offres d'emploi · Candidatures · Employés."
+     }
+    ],
+    "cartes": [
+     "Recrutement",
+     "Offres d'emploi",
+     "Candidatures",
+     "Employés"
+    ],
+    "texte_ecran": "Recrutez. Sans chasser les CV.",
+    "sfx": "tick par candidature, whoosh de statut, impact final."
+   }
+  },
+  {
+   "num": 13,
+   "slug": "le-bouton-rouge",
+   "titre": "Le bouton rouge",
+   "genre": "Thriller de salle de contrôle",
+   "genre_court": "Salle de contrôle",
+   "situation": "Michael envoie « -50 % ce soir »… à toute la ville",
+   "modules": [
+    "Campagnes",
+    "Segments RFM"
+   ],
+   "hook": "Une main au-dessus d'un gros bouton rouge : « Envoyer. »",
+   "selecteurs": {
+    "epoque": "2020s",
+    "genre": "thriller",
+    "lumiere": "écran rouge dans le noir, angle bas",
+    "physique": "réaliste (scène 1) / hyperbolique (scène 2)",
+    "objectif": "35 mm",
+    "emotion": "euphorie → panique",
+    "montage": "4 plans"
+   },
+   "scenes": [
+    {
+     "n": 1,
+     "titre": "Envoyer",
+     "resume": "Le doigt hésite, la ville entière vibre",
+     "location_line": "Location = @Image 3 (back office corner).",
+     "format_line": "9:16, 10 s, 4 shots, realistic comedy shot like a control-room thriller.",
+     "scene": "A dark back office, Michael's face lit red by a screen (no readable text), a chunky physical red button on the desk.",
+     "action": [
+      {
+       "t": "0–2 s",
+       "texte": "Michael announces his offer to himself, hand hovering over the button."
+      },
+      {
+       "t": "2–5 s",
+       "texte": "macro on the hesitating finger, a slow alarm pulse; he closes his eyes and presses."
+      },
+      {
+       "t": "5–8 s",
+       "texte": "rapid montage across the city: phones buzzing on a café table, in a bus, in a jogger's pocket, on a construction site, in a waiting room."
+      },
+      {
+       "t": "8–10 s",
+       "texte": "back to Michael, satisfied smile."
+      }
+     ],
+     "dialogue": "Michael: « Moins cinquante. Ce soir. » Michael: « Envoyer. » Michael: « Ça va marcher. »",
+     "camera": "low medium in red light → macro on the finger → five fast cutaways → close-up.",
+     "light": "red monitor glow, black surroundings, city cutaways in natural light.",
+     "audio": "alarm pulse, button click with reverb, wave of phone buzzes, distant notification chimes, smug exhale."
+    },
+    {
+     "n": 2,
+     "titre": "À tout le monde",
+     "resume": "Une file de plusieurs centaines de personnes serpente dans le quartier",
+     "location_line": "Location = @Image 3 (entrance).",
+     "format_line": "9:16, 10 s, 4 shots, realistic comedy shot like a control-room thriller.",
+     "scene": "Evening; aerial drone view of the restaurant with a queue of hundreds of adults snaking through the neighbourhood.",
+     "action": [
+      {
+       "t": "0–2 s",
+       "texte": "drone shot over the endless queue."
+      },
+      {
+       "t": "2–5 s",
+       "texte": "Michael opens the door, sees the queue, closes it, opens it again slowly."
+      },
+      {
+       "t": "5–8 s",
+       "texte": "the customer at the front explains; Michael asks; the customer repeats."
+      },
+      {
+       "t": "8–10 s",
+       "texte": "Michael looks at the camera; the crowd surges forward; zoom out."
+      }
+     ],
+     "dialogue": "Customer: « Vous avez écrit à tout le monde. » Michael: « …à qui ? » Customer: « À tout le monde. » Michael: « Oups. »",
+     "camera": "drone top-down → medium at the door → two-shot → close-up with fast zoom out.",
+     "light": "blue hour, warm restaurant light spilling on the queue.",
+     "audio": "crowd murmur growing, door creak twice, crowd surge, comic sting."
+    }
+   ],
+   "montage": {
+    "vo": "Envoyez à la bonne personne, pas à toute la ville. FoodEatUp segmente vos clients et vous montre le retour de chaque campagne.",
+    "vo_variante_courte": "Envoyez à la bonne personne, pas à toute la ville. FoodEatUp segmente et mesure vos campagnes.",
+    "beats": [
+     {
+      "t": "2–4 s",
+      "texte": "l'explosion de notifications se replie en quatre groupes de clients : champions, réguliers, à risque, endormis."
+     },
+     {
+      "t": "4–7 s",
+      "texte": "écran Campagnes : choix du segment → canal (SMS, email, WhatsApp) → aperçu → confirmation en un tap → statistiques de retour (envoyés, clics, retours en commande)."
+     },
+     {
+      "t": "7–9 s",
+      "texte": "cartes : Campagnes · Segments RFM · Clients."
+     }
+    ],
+    "cartes": [
+     "Campagnes",
+     "Segments RFM",
+     "Clients"
+    ],
+    "texte_ecran": "La bonne offre. Aux bons clients.",
+    "sfx": "tick par segment, notification unique, impact final."
+   }
+  },
+  {
+   "num": 14,
+   "slug": "le-naufrage",
+   "titre": "Le naufrage",
+   "genre": "Film catastrophe maritime",
+   "genre_court": "Catastrophe maritime",
+   "situation": "Quarante clients en terrasse, orage soudain, douze chaises à l'intérieur",
+   "modules": [
+    "Plan de salle (zones Terrasse / Salle)"
+   ],
+   "hook": "« Belle journée. » — une goutte sur le nez.",
+   "selecteurs": {
+    "epoque": "2020s",
+    "genre": "catastrophe",
+    "lumiere": "soleil puis ciel noir, angle bas",
+    "physique": "hyperbolique",
+    "objectif": "24 mm caméra à l'épaule",
+    "emotion": "calme → survie",
+    "montage": "4 plans"
+   },
+   "scenes": [
+    {
+     "n": 1,
+     "titre": "Tout le monde à l'intérieur",
+     "resume": "Le ciel noircit en deux secondes, les parasols s'envolent",
+     "location_line": "Location = @Image 3 (terrace side).",
+     "format_line": "9:16, 10 s, 4 shots, realistic comedy shot like a maritime disaster movie.",
+     "scene": "A sunny terrace full of adult customers, parasols, glasses of rosé; Michael stands like a ship's captain, hands behind his back.",
+     "action": [
+      {
+       "t": "0–2 s",
+       "texte": "Michael admires the day and speaks; a single raindrop lands on his nose."
+      },
+      {
+       "t": "2–5 s",
+       "texte": "time-lapse: the sky turns black in two seconds, thunder, the wind rises."
+      },
+      {
+       "t": "5–8 s",
+       "texte": "downpour: parasols lift off, tablecloths fly, a plate floats across the terrace, customers run toward the door like a lifeboat; Michael holds the door open like a hatch, hair plastered."
+      },
+      {
+       "t": "8–10 s",
+       "texte": "Michael shouts over the wind."
+      }
+     ],
+     "dialogue": "Michael: « Belle journée. » Michael (shouting): « Tout le monde à l'intérieur ! »",
+     "camera": "medium on Michael → sky time-lapse tilt → handheld chaos with rain on the lens → low angle at the door.",
+     "light": "golden sun turning to storm grey-green, lightning flashes.",
+     "audio": "seagull, one raindrop, thunder crack, wind roar, rain on tables, parasol flapping, screams of laughter."
+    },
+    {
+     "n": 2,
+     "titre": "Presque",
+     "resume": "Quarante clients trempés, douze chaises, Michael agent de piste",
+     "location_line": "Location = @Image 3.",
+     "format_line": "9:16, 10 s, 4 shots, realistic comedy shot like a maritime disaster movie.",
+     "scene": "Inside: forty soaked adult customers, twelve chairs, water on the floor, rain hammering the windows.",
+     "action": [
+      {
+       "t": "0–2 s",
+       "texte": "wide on the dripping crowd; Michael raises two forks like airport marshalling batons."
+      },
+      {
+       "t": "2–5 s",
+       "texte": "he directs traffic: two here, four there; a customer sits on the bar, another on the radiator."
+      },
+      {
+       "t": "5–8 s",
+       "texte": "Michael counts heads with his finger in slow motion, asks the room; silence; outside, under an overturned parasol, one customer raises a hand."
+      },
+      {
+       "t": "8–10 s",
+       "texte": "Michael, dripping, looks at the camera."
+      }
+     ],
+     "dialogue": "Michael: « Tout le monde est là ? » Michael: « Presque. »",
+     "camera": "wide → medium with batons → slow-motion pan across faces → rack focus through the window → close-up.",
+     "light": "cold storm light, warm lamps inside, wet reflections.",
+     "audio": "dripping, chair scrapes, batons whoosh, rain against glass, distant thunder, silence, drip."
+    }
+   ],
+   "montage": {
+    "vo": "La terrasse ferme, la salle s'organise. Avec le plan de salle FoodEatUp, vous replacez tout le monde en trente secondes.",
+    "vo_variante_courte": "La terrasse ferme, la salle s'organise. Avec FoodEatUp, vous replacez tout le monde en trente secondes.",
+    "beats": [
+     {
+      "t": "2–4 s",
+      "texte": "la terrasse trempée se transforme en zone du plan de salle qui passe en « fermée » ; les groupes deviennent des jetons."
+     },
+     {
+      "t": "4–7 s",
+      "texte": "écran Plan de salle : zones Terrasse et Salle ; tables par statut (libre, réservée, occupée) ; un groupe glissé de la terrasse vers une table de salle en un geste."
+     },
+     {
+      "t": "7–9 s",
+      "texte": "cartes : Plan de salle · Zones · Tables · Réservations."
+     }
+    ],
+    "cartes": [
+     "Plan de salle",
+     "Zones",
+     "Tables",
+     "Réservations"
+    ],
+    "texte_ecran": "Terrasse ou salle : tout le monde a sa place.",
+    "sfx": "goutte, glissement, tick par table, impact final."
+   }
+  },
+  {
+   "num": 15,
+   "slug": "le-proces",
+   "titre": "Le procès",
+   "genre": "Film de tribunal",
+   "genre_court": "Tribunal",
+   "situation": "Un client conteste le tiramisu sur l'addition",
+   "modules": [
+    "Commandes par table",
+    "Caisse"
+   ],
+   "hook": "Michael pose une cuillère sur la table : « Pièce numéro un. »",
+   "selecteurs": {
+    "epoque": "2020s",
+    "genre": "drame judiciaire",
+    "lumiere": "rasante de fenêtre, angle latéral",
+    "physique": "réaliste",
+    "objectif": "50 mm",
+    "emotion": "gravité absurde",
+    "montage": "4 plans"
+   },
+   "scenes": [
+    {
+     "n": 1,
+     "titre": "Pièce numéro un",
+     "resume": "L'addition comme dossier, une trace de cacao comme preuve",
+     "location_line": "Location = @Image 3.",
+     "format_line": "9:16, 10 s, 4 shots, realistic comedy shot like a courtroom drama.",
+     "scene": "The dining room lit like a courtroom, low raking light, Michael standing with a bill in hand like a lawyer; an adult customer sits with folded arms; other customers watch like a jury.",
+     "action": [
+      {
+       "t": "0–2 s",
+       "texte": "Michael places a spoon on the table with ceremony."
+      },
+      {
+       "t": "2–5 s",
+       "texte": "he names the dessert; the customer denies everything."
+      },
+      {
+       "t": "5–8 s",
+       "texte": "crash zoom on a smear of cocoa on the customer's cheek; Michael points; the customer wipes it off and improvises."
+      },
+      {
+       "t": "8–10 s",
+       "texte": "the jury murmurs; Michael repeats the excuse flatly and looks at the camera."
+      }
+     ],
+     "dialogue": "Michael: « Pièce numéro un. Le tiramisu. » Customer: « J'ai rien mangé. » Michael: « Et ça ? » Customer: « C'est… du café. » Michael: « Du café. »",
+     "camera": "insert on the spoon → medium on Michael pacing → crash zoom on the cheek → close-up to camera.",
+     "light": "warm raking light, dark wood tones, dust in the beam.",
+     "audio": "spoon on wood, courtroom murmur, crash zoom sting, throat clearing, silence."
+    },
+    {
+     "n": 2,
+     "titre": "Coupable",
+     "resume": "L'assiette raclée, le voisin qui secoue la tête, la louche-marteau",
+     "location_line": "Location = @Image 3.",
+     "format_line": "9:16, 10 s, 4 shots, realistic comedy shot like a courtroom drama.",
+     "scene": "Same table, same customer, the neighbour at the next table now part of the case.",
+     "action": [
+      {
+       "t": "0–2 s",
+       "texte": "Michael paces, hands behind his back."
+      },
+      {
+       "t": "2–5 s",
+       "texte": "he presents a scraped-clean dessert plate; the customer blames his neighbour; the adult neighbour slowly shakes his head."
+      },
+      {
+       "t": "5–8 s",
+       "texte": "Michael bangs a ladle on the table like a gavel; the jury holds its breath."
+      },
+      {
+       "t": "8–10 s",
+       "texte": "the customer gives in; Michael delivers the verdict to the camera; the neighbour applauds softly."
+      }
+     ],
+     "dialogue": "Michael: « Pièce numéro deux. » Customer: « C'est mon voisin. » Customer: « OK. Je paie. » Michael: « Coupable. »",
+     "camera": "tracking on the pacing → insert on the plate → close-up on the ladle strike → medium, slow clap.",
+     "light": "warm raking light, dramatic shadows on the wall.",
+     "audio": "footsteps, plate scrape, ladle bang with reverb, gasp, soft applause."
+    }
+   ],
+   "montage": {
+    "vo": "Chaque plat est noté sur la bonne table, à la bonne heure. Avec FoodEatUp, la note parle d'elle-même.",
+    "beats": [
+     {
+      "t": "2–4 s",
+      "texte": "la cuillère devient une ligne de commande horodatée ; les articles de la table s'empilent proprement."
+     },
+     {
+      "t": "4–7 s",
+      "texte": "écran Commandes : la table, ses articles avec l'heure de commande, le total ; un tap → paiement encaissé en caisse."
+     },
+     {
+      "t": "7–9 s",
+      "texte": "cartes : Commandes · Tables · Caisse · Paiements."
+     }
+    ],
+    "cartes": [
+     "Commandes",
+     "Tables",
+     "Caisse",
+     "Paiements"
+    ],
+    "texte_ecran": "La note est claire. Pas de procès.",
+    "sfx": "coup de marteau doux, tick par article, impact final."
+   }
+  },
+  {
+   "num": 16,
+   "slug": "la-cave",
+   "titre": "La cave",
+   "genre": "Horreur found footage (caméra de poche, vision nocturne)",
+   "genre_court": "Found footage",
+   "situation": "Chercher une facture fournisseur dans la cave à trois heures du matin",
+   "modules": [
+    "Factures",
+    "Dépenses",
+    "Synthèse financière"
+   ],
+   "hook": "Image verte tremblante, Michael se filme : « Il est trois heures. Je cherche une facture. »",
+   "selecteurs": {
+    "epoque": "2000s (caméscope)",
+    "genre": "horreur found footage",
+    "lumiere": "vision nocturne + lampe torche",
+    "physique": "réaliste",
+    "objectif": "grand-angle de caméscope",
+    "emotion": "peur comique",
+    "montage": "3 plans (un plan-séquence par scène possible)"
+   },
+   "scenes": [
+    {
+     "n": 1,
+     "titre": "Je cherche une facture",
+     "resume": "La caméra descend à la cave, un carton bouge",
+     "location_line": "Location = a cellar under the restaurant (cardboard boxes, wine racks).",
+     "format_line": "9:16, 10 s, 3 shots, found-footage horror comedy, handheld camcorder look, night-vision green, timecode-free (no readable overlay).",
+     "scene": "Michael films himself with a small camcorder held at arm's length, whispering; then the cellar stairs; boxes of receipts everywhere.",
+     "action": [
+      {
+       "t": "0–2 s",
+       "texte": "selfie-style night-vision close-up, Michael whispers his mission."
+      },
+      {
+       "t": "2–5 s",
+       "texte": "he goes down the cellar stairs, the torch shakes; a cardboard box moves slightly (a draught); he freezes."
+      },
+      {
+       "t": "5–8 s",
+       "texte": "he opens a shoebox: hundreds of receipts; one yellowed invoice flies up in front of the lens; he lets out a small scream."
+      },
+      {
+       "t": "8–10 s",
+       "texte": "the camera drops to the floor; we see only his shoes; his voice."
+      }
+     ],
+     "dialogue": "Michael (whisper): « Il est trois heures. Je cherche une facture. » Michael: « C'est pas celle-là. »",
+     "camera": "handheld selfie → shaky POV down the stairs → POV into the box → camera falls, tilted floor view.",
+     "light": "night-vision green with hot torch spots, heavy noise, vignette.",
+     "audio": "breathing close to the mic, creaking steps, box scrape, paper flutter, small scream, camera clatter."
+    },
+    {
+     "n": 2,
+     "titre": "Impayée",
+     "resume": "Sous une couverture de papiers, il trouve enfin la facture",
+     "location_line": "Location = same cellar.",
+     "format_line": "9:16, 10 s, 3 shots, found-footage horror comedy, handheld camcorder look, night-vision green.",
+     "scene": "The camera is picked up from the floor; Michael is now sitting under a blanket of receipts.",
+     "action": [
+      {
+       "t": "0–2 s",
+       "texte": "the camera lifts, night-vision reveals Michael covered in paper."
+      },
+      {
+       "t": "2–5 s",
+       "texte": "fast montage of him reading receipts and discarding them; one sticks to his forehead."
+      },
+      {
+       "t": "5–8 s",
+       "texte": "he finds the invoice, holds it up to the lens in triumph; then reads it and his face falls."
+      },
+      {
+       "t": "8–10 s",
+       "texte": "the torch dies; black; his voice; a box tumbles."
+      }
+     ],
+     "dialogue": "Michael: « Poisson… non. Pain… non. » Michael (triumphant, then flat): « …impayée. » Michael (in the dark): « Non. »",
+     "camera": "handheld lift → jump-cut montage → close-up to lens → cut to black with audio only.",
+     "light": "night-vision green, torch hot spot, then full black.",
+     "audio": "paper rustle in bursts, sticky peel, triumphant gasp, torch click off, cardboard tumble."
+    }
+   ],
+   "montage": {
+    "vo": "Vos factures ne dorment plus à la cave. FoodEatUp affiche ce qui est payé, ce qui attend, et ce que ça vous coûte.",
+    "vo_variante_courte": "Vos factures ne dorment plus à la cave. FoodEatUp affiche ce qui est payé et ce qui attend.",
+    "beats": [
+     {
+      "t": "2–4 s",
+      "texte": "la vision nocturne verte passe en pleine lumière ; les tickets deviennent des lignes classées par statut : payée, en attente, impayée."
+     },
+     {
+      "t": "4–7 s",
+      "texte": "écran Factures et Dépenses : une facture passe « en attente → payée » en un tap ; la Synthèse financière se met à jour : CA facturé, encaissé, impayés, dépenses."
+     },
+     {
+      "t": "7–9 s",
+      "texte": "cartes : Factures · Dépenses · Devis · Synthèse financière."
+     }
+    ],
+    "cartes": [
+     "Factures",
+     "Dépenses",
+     "Devis",
+     "Synthèse financière"
+    ],
+    "texte_ecran": "Vos chiffres, en pleine lumière.",
+    "sfx": "interrupteur, tick par statut, impact final."
+   }
+  },
+  {
+   "num": 17,
+   "slug": "le-round",
+   "titre": "Le round",
+   "genre": "Film de boxe (montage d'entraînement)",
+   "genre_court": "Boxe",
+   "situation": "Trois cents crêpes pour demain matin",
+   "modules": [
+    "Production"
+   ],
+   "hook": "Le chef, dos au mur comme un coach : « Trois cents crêpes. »",
+   "selecteurs": {
+    "epoque": "2020s",
+    "genre": "film de sport",
+    "lumiere": "aube dorée à travers la cuisine, angle latéral",
+    "physique": "réaliste",
+    "objectif": "35 mm caméra à l'épaule",
+    "emotion": "détermination",
+    "montage": "4 plans"
+   },
+   "scenes": [
+    {
+     "n": 1,
+     "titre": "Encore",
+     "resume": "Montage d'entraînement à la poêle, sac de farine dans l'escalier",
+     "ref_extra": "a hoodie over the apron",
+     "location_line": "Location = @Image 4.",
+     "format_line": "9:16, 10 s, 4 shots, realistic comedy shot like a boxing training montage.",
+     "scene": "Kitchen at dawn, golden light through the window; Michael in a hoodie over his apron holding a pan; an adult chef leans against the wall like a coach.",
+     "action": [
+      {
+       "t": "0–2 s",
+       "texte": "the chef announces the number; Michael repeats it, the chef repeats it."
+      },
+      {
+       "t": "2–5 s",
+       "texte": "training montage: Michael flips pancakes faster and faster, runs up the service stairs carrying a flour sack, does push-ups on the pass, skips rope with a kitchen towel."
+      },
+      {
+       "t": "5–8 s",
+       "texte": "one pancake sticks to the ceiling, another lands in the extractor hood; the coach blows a whistle."
+      },
+      {
+       "t": "8–10 s",
+       "texte": "close-up: Michael sweating, killer stare, one word."
+      }
+     ],
+     "dialogue": "Chef: « Trois cents crêpes. » Michael: « Trois cents ? » Chef: « Trois cents. » Michael: « Encore. »",
+     "camera": "two-shot → fast-cut montage with speed ramps → tilt up to the ceiling → close-up.",
+     "light": "golden dawn, sweat highlights, warm grade with grain.",
+     "audio": "triumphant brass (original), pan flips, stair stomps, rope whipping, pancake splat, whistle."
+    },
+    {
+     "n": 2,
+     "titre": "Il en manque une",
+     "resume": "La dernière crêpe monte, monte… et retombe sur sa tête",
+     "ref_extra": "a hoodie over the apron",
+     "location_line": "Location = @Image 4.",
+     "format_line": "9:16, 10 s, 4 shots, realistic comedy shot like a boxing final round.",
+     "scene": "Same kitchen, a tower of pancakes on the pass; the chef holds up a hand like a referee.",
+     "action": [
+      {
+       "t": "0–2 s",
+       "texte": "the chef announces the count; Michael sets his stance."
+      },
+      {
+       "t": "2–5 s",
+       "texte": "he flips the last pancake in slow motion; it rises and rises; the camera follows it up; it falls… onto his head."
+      },
+      {
+       "t": "5–8 s",
+       "texte": "he stands still with the pancake as a hat; a bell rings; the chef lifts Michael's arm like a winner."
+      },
+      {
+       "t": "8–10 s",
+       "texte": "Michael, under the pancake, looks at the camera."
+      }
+     ],
+     "dialogue": "Chef: « Deux cent quatre-vingt-dix-neuf. » Michael: « Il en manque une. »",
+     "camera": "medium → slow-motion tilt following the pancake → static medium for the landing → close-up.",
+     "light": "golden dawn, the pancake backlit as it rises.",
+     "audio": "crowd hush, slow-motion whoosh, soft splat, boxing bell, small cheer, silence."
+    }
+   ],
+   "montage": {
+    "vo": "Trois cents crêpes, c'est un plan de production. FoodEatUp calcule les ingrédients, prévient ce qui manque et met le stock à jour.",
+    "vo_variante_courte": "Trois cents crêpes, c'est un plan de production. FoodEatUp calcule les ingrédients et suit le stock.",
+    "beats": [
+     {
+      "t": "2–4 s",
+      "texte": "la crêpe sur la tête de Michael devient un plan de production : quoi, combien, quand."
+     },
+     {
+      "t": "4–7 s",
+      "texte": "écran Production : recette choisie × quantité → ingrédients nécessaires calculés (farine, œufs, lait) avec les manquants signalés → validation en un tap → le stock se met à jour."
+     },
+     {
+      "t": "7–9 s",
+      "texte": "cartes : Production · Recettes · Ingrédients · Alertes production."
+     }
+    ],
+    "cartes": [
+     "Production",
+     "Recettes",
+     "Ingrédients",
+     "Alertes production"
+    ],
+    "texte_ecran": "Planifiez. Produisez. Le stock suit.",
+    "sfx": "cloche courte, tick par ingrédient, impact final."
+   }
+  },
+  {
+   "num": 18,
+   "slug": "les-douze",
+   "titre": "Les douze",
+   "genre": "Comédie de mariage / grande famille",
+   "genre_court": "Mariage",
+   "situation": "« On sera douze » = douze familles",
+   "modules": [
+    "Événements privés"
+   ],
+   "hook": "Michael au téléphone : « On sera douze ? Parfait. »",
+   "selecteurs": {
+    "epoque": "2020s",
+    "genre": "comédie familiale",
+    "lumiere": "chaleureuse de fête, angle frontal",
+    "physique": "hyperbolique (scène 2)",
+    "objectif": "35 mm",
+    "emotion": "sourire figé",
+    "montage": "4 plans"
+   },
+   "scenes": [
+    {
+     "n": 1,
+     "titre": "Douze familles",
+     "resume": "La porte s'ouvre et n'arrête plus de laisser entrer du monde",
+     "location_line": "Location = @Image 3.",
+     "format_line": "9:16, 10 s, 4 shots, realistic comedy shot like a big-family wedding comedy.",
+     "scene": "Michael on the phone, smiling; then the front door on Saturday: a family enters with balloons, a tiered cake on a trolley, an accordion, and keeps entering.",
+     "action": [
+      {
+       "t": "0–2 s",
+       "texte": "Michael hangs up, pleased with himself."
+      },
+      {
+       "t": "2–5 s",
+       "texte": "endless lateral tracking shot along the entering crowd: balloons, cake trolley, accordion player, cousins, cousins, cousins."
+      },
+      {
+       "t": "5–8 s",
+       "texte": "Michael counts on his fingers, passes ten, loses count; the adult organiser explains."
+      },
+      {
+       "t": "8–10 s",
+       "texte": "close-up on Michael's frozen smile."
+      }
+     ],
+     "dialogue": "Michael: « On sera douze ? Parfait. » Organiser: « On est douze. » Michael: « Douze ? » Organiser: « Douze… familles. » Michael: « Parfait. »",
+     "camera": "medium on the phone → long lateral tracking → close-up on fingers → close-up on the smile.",
+     "light": "warm festive light, balloons in saturated colours.",
+     "audio": "phone click, door bell ringing again and again, accordion (original tune), chatter, cake trolley wheels."
+    },
+    {
+     "n": 2,
+     "titre": "Pardon",
+     "resume": "Bancs, tables collées jusqu'au trottoir, Michael souffle les bougies par réflexe",
+     "location_line": "Location = @Image 3.",
+     "format_line": "9:16, 10 s, 4 shots, realistic comedy shot like a big-family wedding comedy.",
+     "scene": "Chairs borrowed from everywhere; Michael carries a bench over his head.",
+     "action": [
+      {
+       "t": "0–2 s",
+       "texte": "Michael with the bench, weaving through balloons."
+      },
+      {
+       "t": "2–5 s",
+       "texte": "fast montage: tablecloths, two tables pushed together, three, eight, out onto the pavement; the accordion plays."
+      },
+      {
+       "t": "5–8 s",
+       "texte": "the tiered cake with lit candles is wheeled straight to Michael; the whole family sings off-screen."
+      },
+      {
+       "t": "8–10 s",
+       "texte": "alone in front of the candles, Michael blows them out by reflex; silence; he apologises to the camera."
+      }
+     ],
+     "dialogue": "Michael: « Pardon. »",
+     "camera": "low angle on the bench → time-lapse montage → dolly with the cake → close-up on the blow, silence.",
+     "light": "warm festive light, candle glow on Michael's face.",
+     "audio": "bench creak, tables scraping, accordion, off-screen singing (original), candle blow, record-scratch silence."
+    }
+   ],
+   "montage": {
+    "vo": "Douze ou cinquante, tout est écrit : la demande, le devis, la salle, la facture. FoodEatUp gère vos privatisations de bout en bout.",
+    "vo_variante_courte": "Douze ou cinquante : la demande, le devis, la salle, la facture. FoodEatUp gère vos privatisations.",
+    "beats": [
+     {
+      "t": "2–4 s",
+      "texte": "les bougies deviennent une demande d'événement : date, nombre de personnes, budget."
+     },
+     {
+      "t": "4–7 s",
+      "texte": "écran Événements privés : demande « nouvelle → devis → gagnée » ; devis envoyé en un tap ; tables réservées sur le plan de salle ; facture générée."
+     },
+     {
+      "t": "7–9 s",
+      "texte": "cartes : Événements privés · Devis · Réservations · Factures."
+     }
+    ],
+    "cartes": [
+     "Événements privés",
+     "Devis",
+     "Réservations",
+     "Factures"
+    ],
+    "texte_ecran": "Privatisation : tout est écrit.",
+    "sfx": "souffle de bougie, tick par étape, impact final."
+   }
+  },
+  {
+   "num": 19,
+   "slug": "la-course-poursuite",
+   "titre": "La course-poursuite",
+   "genre": "Film de course-poursuite / road movie",
+   "genre_court": "Road movie",
+   "situation": "Le livreur tourne à droite trois fois et finit dans un champ",
+   "modules": [
+    "Livraison (zones)"
+   ],
+   "hook": "Caméra embarquée sur le scooter, voix GPS : « Tournez à droite. »",
+   "selecteurs": {
+    "epoque": "2020s",
+    "genre": "action / poursuite",
+    "lumiere": "jour couvert puis pluie, angle embarqué",
+    "physique": "réaliste",
+    "objectif": "ultra grand-angle type caméra d'action",
+    "emotion": "adrénaline → dépit",
+    "montage": "4 plans"
+   },
+   "scenes": [
+    {
+     "n": 1,
+     "titre": "C'est pas ici",
+     "resume": "Trois virages à droite, une vache",
+     "ref_extra": "a delivery helmet",
+     "location_line": "Location = city streets then a country lane.",
+     "format_line": "9:16, 10 s, 4 shots, realistic comedy shot like a chase movie.",
+     "scene": "Michael on a delivery scooter with an insulated bag, chase music, action-camera mounted on the handlebar; a calm female GPS voice.",
+     "action": [
+      {
+       "t": "0–2 s",
+       "texte": "handlebar POV, the GPS gives an instruction, Michael turns right into an alley."
+      },
+      {
+       "t": "2–5 s",
+       "texte": "the GPS repeats; he turns right onto a dirt track; the GPS repeats; he turns right again."
+      },
+      {
+       "t": "5–8 s",
+       "texte": "he brakes in front of a field; a cow looks at him; the GPS announces arrival."
+      },
+      {
+       "t": "8–10 s",
+       "texte": "rain begins; Michael lifts his visor and asks the camera."
+      }
+     ],
+     "dialogue": "GPS: « Tournez à droite. » (x3) GPS: « Vous êtes arrivé. » Michael: « C'est pas ici. » Michael: « Elle est où, la rue ? »",
+     "camera": "handlebar POV → low tracking on the wheel → wide on the field with the cow → close-up through the visor.",
+     "light": "flat grey daylight, mud and green, rain drops on the lens.",
+     "audio": "chase drums (original), scooter engine, GPS voice, gravel, a cow, first rain."
+    },
+    {
+     "n": 2,
+     "titre": "Trente kilomètres",
+     "resume": "La pizza livrée à la mauvaise famille, ravie",
+     "ref_extra": "a delivery helmet",
+     "location_line": "Location = suburban street in the rain.",
+     "format_line": "9:16, 10 s, 4 shots, realistic comedy shot like a chase movie.",
+     "scene": "Michael soaked on the scooter, phone ringing in the rain.",
+     "action": [
+      {
+       "t": "0–2 s",
+       "texte": "he answers under the rain; the customer's voice crackles."
+      },
+      {
+       "t": "2–5 s",
+       "texte": "fast montage: a bridge, the same roundabout three times, an industrial zone, a market; the pizza box goes soggy."
+      },
+      {
+       "t": "5–8 s",
+       "texte": "he finally rings at a house; an adult couple opens, delighted, takes the pizza; Michael asks; they answer and close the door."
+      },
+      {
+       "t": "8–10 s",
+       "texte": "Michael, dripping, faces the camera; the phone rings again."
+      }
+     ],
+     "dialogue": "Customer (phone): « Elle est où, ma pizza ? » Michael: « Elle arrive. » Couple: « Une pizza ! » Michael: « C'est pas vous ? » Couple: « Non. Merci ! » Michael: « Trente kilomètres. »",
+     "camera": "close-up on the phone → speed-ramped montage → medium at the door → close-up, ring.",
+     "light": "rain-soaked blue-grey, warm doorway light.",
+     "audio": "rain, phone crackle, engine, roundabout loop whoosh, doorbell, door slam, ringtone."
+    }
+   ],
+   "montage": {
+    "vo": "Livrez là où vous livrez, pas plus loin. FoodEatUp définit vos zones, vos frais, et suit chaque commande.",
+    "beats": [
+     {
+      "t": "2–4 s",
+      "texte": "le trajet en spaghetti du scooter se redresse en une carte avec des zones colorées."
+     },
+     {
+      "t": "4–7 s",
+      "texte": "écran Livraison : zones par codes postaux, frais et minimum de commande par zone ; une commande hors zone est refusée automatiquement ; une commande en zone passe « en préparation → en livraison → livrée »."
+     },
+     {
+      "t": "7–9 s",
+      "texte": "cartes : Livraison · Zones de livraison · Commandes."
+     }
+    ],
+    "cartes": [
+     "Livraison",
+     "Zones de livraison",
+     "Commandes"
+    ],
+    "texte_ecran": "Vos zones. Vos règles. Vos livraisons.",
+    "sfx": "tick par zone, notification livrée, impact final."
+   }
+  },
+  {
+   "num": 20,
+   "slug": "les-vampires",
+   "titre": "Les vampires",
+   "genre": "Film de vampires",
+   "genre_court": "Vampires",
+   "situation": "Happy hour — ils sortent quand le soleil se couche",
+   "modules": [
+    "Happy hours",
+    "Boissons"
+   ],
+   "hook": "Bar vide, Michael astique un verre : « Happy hour. » — silence, une chips tombe.",
+   "selecteurs": {
+    "epoque": "2020s",
+    "genre": "horreur gothique",
+    "lumiere": "coucher de soleil puis néon bleu, angle bas",
+    "physique": "réaliste",
+    "objectif": "anamorphique 50 mm",
+    "emotion": "effroi élégant",
+    "montage": "4 plans"
+   },
+   "scenes": [
+    {
+     "n": 1,
+     "titre": "Ils sortent la nuit",
+     "resume": "Les bureaux se vident au coucher du soleil, l'ail ne marche pas",
+     "location_line": "Location = @Image 3 (bar).",
+     "format_line": "9:16, 10 s, 4 shots, realistic comedy shot like a vampire movie.",
+     "scene": "Five o'clock, empty bar, golden light; Michael polishes a glass.",
+     "action": [
+      {
+       "t": "0–2 s",
+       "texte": "Michael announces the happy hour to nobody; silence; a single crisp falls from a bowl."
+      },
+      {
+       "t": "2–5 s",
+       "texte": "time-lapse through the window: the sun sinks, shadows stretch; Michael watches, uneasy."
+      },
+      {
+       "t": "5–8 s",
+       "texte": "outside, adults in office suits step out of the buildings in slow motion, ties loosened, eyes fixed on the bar's blinking lamp; Michael whispers."
+      },
+      {
+       "t": "8–10 s",
+       "texte": "Michael holds up… a clove of garlic; looks at it; deadpan."
+      }
+     ],
+     "dialogue": "Michael: « Happy hour. » Michael (whisper): « Ils sortent la nuit. » Michael: « Ça marche pas. »",
+     "camera": "medium at the bar → window time-lapse → slow-motion low angle on the suits → close-up on the garlic.",
+     "light": "gold to deep blue dusk, neon rim light, gothic contrast.",
+     "audio": "glass squeak, crisp drop, organ note (original), slow footsteps, coats swishing, garlic thud."
+    },
+    {
+     "n": 2,
+     "titre": "Happy hour… fini",
+     "resume": "Trente pressions, minuit, la salle vide d'un coup",
+     "location_line": "Location = @Image 3 (bar).",
+     "format_line": "9:16, 10 s, 4 shots, realistic comedy shot like a vampire movie.",
+     "scene": "The door opens in a drift of mist; the suits glide in, jackets on their shoulders like capes.",
+     "action": [
+      {
+       "t": "0–2 s",
+       "texte": "mist, slow entrance, whispered orders."
+      },
+      {
+       "t": "2–5 s",
+       "texte": "fast montage: Michael pulls thirty pints, slow motion on overflowing foam, lemon slices flying, a shaker rattling."
+      },
+      {
+       "t": "5–8 s",
+       "texte": "the clock strikes midnight: they all vanish at once; the room is empty, glasses everywhere."
+      },
+      {
+       "t": "8–10 s",
+       "texte": "Michael alone, hair wild, a glass in hand; he sips; a small sigh."
+      }
+     ],
+     "dialogue": "Suits (whisper): « Une pinte… » « Deux… » Michael: « Happy hour… fini. »",
+     "camera": "low wide with mist → speed-ramped bar montage → whip pan to the empty room → close-up, sip.",
+     "light": "blue neon, foam glowing, midnight black.",
+     "audio": "mist hiss, whispers, taps hissing, foam, shaker, clock chime, sudden silence, sip, sigh."
+    }
+   ],
+   "montage": {
+    "vo": "Le jour, l'heure, la remise, les boissons : tout est réglé d'avance. Quand ils sortent, FoodEatUp est déjà prêt.",
+    "vo_variante_courte": "Le jour, l'heure, la remise : tout est réglé d'avance. Quand ils sortent, FoodEatUp est prêt.",
+    "beats": [
+     {
+      "t": "2–4 s",
+      "texte": "l'horloge devient un créneau : jours, heure de début, heure de fin, remise."
+     },
+     {
+      "t": "4–7 s",
+      "texte": "écran Happy hours : créneau créé en un tap, périmètre (boissons ou carte), remise appliquée automatiquement en caisse ; le stock Boissons baisse à chaque pinte."
+     },
+     {
+      "t": "7–9 s",
+      "texte": "cartes : Happy hours · Boissons · Caisse · Stock."
+     }
+    ],
+    "cartes": [
+     "Happy hours",
+     "Boissons",
+     "Caisse",
+     "Stock"
+    ],
+    "texte_ecran": "Happy hour : réglé d'avance.",
+    "sfx": "tick horloge, remise « ding », impact final."
+   }
+  },
+  {
+   "num": 21,
+   "slug": "le-genie",
+   "titre": "Le génie",
+   "genre": "Drame du génie des mathématiques (formules sur la vitre)",
+   "genre_court": "Drame maths",
+   "situation": "Douze personnes, douze additions séparées, le vin partagé en cinq",
+   "modules": [
+    "Caisse (note divisée, paiement partiel)"
+   ],
+   "hook": "« On paie séparément. » — « Bien sûr. »",
+   "selecteurs": {
+    "epoque": "2020s",
+    "genre": "drame",
+    "lumiere": "fin d'après-midi sur la vitrine, angle latéral",
+    "physique": "réaliste",
+    "objectif": "50 mm",
+    "emotion": "obsession",
+    "montage": "4 plans"
+   },
+   "scenes": [
+    {
+     "n": 1,
+     "titre": "Et le pain ?",
+     "resume": "Michael couvre la vitrine de formules au marqueur",
+     "location_line": "Location = @Image 3 (window).",
+     "format_line": "9:16, 10 s, 4 shots, realistic comedy shot like a tormented-genius drama.",
+     "scene": "A table of twelve adults finishing lunch; Michael with a whiteboard marker at the shop window.",
+     "action": [
+      {
+       "t": "0–2 s",
+       "texte": "a customer announces they pay separately; Michael smiles and agrees."
+      },
+      {
+       "t": "2–5 s",
+       "texte": "tormented-genius music; Michael writes columns, fractions and arrows on the window (abstract scribbles, not readable); the camera pulls back: the whole window is covered."
+      },
+      {
+       "t": "5–8 s",
+       "texte": "a customer adds the wine shared by five; Michael erases and rewrites; another adds the bread; he erases again."
+      },
+      {
+       "t": "8–10 s",
+       "texte": "extreme close-up on his bloodshot eyes; the marker squeaks; someone mentions the coffee."
+      }
+     ],
+     "dialogue": "Customer: « On paie séparément. » Michael: « Bien sûr. » Customer: « Le vin, en cinq ? » Michael: « Cinq. » Customer: « Et le pain ? » Michael: « Le pain… aussi. » Customer: « Et le café ? »",
+     "camera": "two-shot → slow pull-back from the window → inserts on erasing → extreme close-up on eyes.",
+     "light": "warm low sun through the glass, marker lines backlit.",
+     "audio": "piano motif (original), marker squeaks, sleeve erasing glass, murmurs, a spoon on a cup."
+    },
+    {
+     "n": 2,
+     "titre": "Je paie pour tout le monde",
+     "resume": "Douze moyens de paiement, la dernière phrase qui l'achève",
+     "location_line": "Location = @Image 3 (window).",
+     "format_line": "9:16, 10 s, 4 shots, realistic comedy shot like a tormented-genius drama.",
+     "scene": "Dusk; Michael still at the window, marker worn to nothing; the twelve customers queue at the till, each holding something different: coins, a card, a cheque, a folded banknote as a paper plane.",
+     "action": [
+      {
+       "t": "0–2 s",
+       "texte": "pull-back on the covered window, Michael's shoulders sagging."
+      },
+      {
+       "t": "2–5 s",
+       "texte": "he announces amounts in a cracked voice as each customer pays."
+      },
+      {
+       "t": "5–8 s",
+       "texte": "the last customer steps up and offers to pay for everyone; silence."
+      },
+      {
+       "t": "8–10 s",
+       "texte": "Michael looks at the window, then at the camera, and gently collapses face-down on the table; the marker rolls away."
+      }
+     ],
+     "dialogue": "Michael: « Vingt-quatre cinquante. » « Dix-huit. » « Trois euros vingt. » Last customer: « Je paie pour tout le monde. »",
+     "camera": "pull-back → medium on the queue → close-up on the last customer → slow tilt down as Michael collapses.",
+     "light": "blue dusk outside, warm lamps inside, marker lines catching light.",
+     "audio": "coins, card beep, cheque tear, paper plane whoosh, silence, soft thud, marker rolling."
+    }
+   ],
+   "montage": {
+    "vo": "Douze personnes, une note, zéro migraine. FoodEatUp divise la note par article, par personne ou en parts égales.",
+    "vo_variante_courte": "Douze personnes, une note, zéro migraine. FoodEatUp divise par article, par personne ou en parts égales.",
+    "beats": [
+     {
+      "t": "2–4 s",
+      "texte": "la vitrine couverte de formules s'efface d'un coup ; une seule note de table apparaît."
+     },
+     {
+      "t": "4–7 s",
+      "texte": "écran Caisse : note de la table → « diviser » : par article, par personne, ou en parts égales ; paiements partiels par plusieurs moyens ; reste dû et rendu affichés."
+     },
+     {
+      "t": "7–9 s",
+      "texte": "cartes : Caisse · Paiements · Commandes · Tables."
+     }
+    ],
+    "cartes": [
+     "Caisse",
+     "Paiements",
+     "Commandes",
+     "Tables"
+    ],
+    "texte_ecran": "Divisez la note. Pas vos nerfs.",
+    "sfx": "effacement, tick par part, impact final."
+   }
+  },
+  {
+   "num": 22,
+   "slug": "le-poker",
+   "titre": "Le poker",
+   "genre": "Film de casino",
+   "genre_court": "Casino",
+   "situation": "Le nouveau plat à quatorze euros… qui coûte seize",
+   "modules": [
+    "Recettes (coût, marge)",
+    "Analyse de la carte"
+   ],
+   "hook": "Lampe verte de table de jeu, le chef pousse une assiette au centre : « Le nouveau plat. Quatorze euros. »",
+   "selecteurs": {
+    "epoque": "1970s",
+    "genre": "film de casino",
+    "lumiere": "lampe basse verte, angle plongée",
+    "physique": "réaliste",
+    "objectif": "85 mm",
+    "emotion": "bluff",
+    "montage": "4 plans"
+   },
+   "scenes": [
+    {
+     "n": 1,
+     "titre": "Je suis",
+     "resume": "Les tickets de caisse mélangés comme des cartes",
+     "ref_extra": "a dealer's green visor",
+     "location_line": "Location = @Image 3 (back room).",
+     "format_line": "9:16, 10 s, 4 shots, realistic comedy shot like a casino movie.",
+     "scene": "A back room, a low green lamp over a table, steam like cigar smoke; Michael as the dealer; an adult chef pushes a plate to the centre like a stack of chips.",
+     "action": [
+      {
+       "t": "0–2 s",
+       "texte": "the chef slides the plate into the light and names the price."
+      },
+      {
+       "t": "2–5 s",
+       "texte": "Michael asks the cost; the chef shrugs; Michael shuffles a deck of till receipts like cards."
+      },
+      {
+       "t": "5–8 s",
+       "texte": "he turns the receipts over one by one, naming an ingredient; the chef answers vaguely; Michael presses; the chef repeats."
+      },
+      {
+       "t": "8–10 s",
+       "texte": "close-up on Michael's poker stare; he pushes a pile of wine corks into the centre."
+      }
+     ],
+     "dialogue": "Chef: « Le nouveau plat. Quatorze euros. » Michael: « Ça coûte combien ? » Chef: « …aucune idée. » Michael: « Truffe. » Chef: « Un peu. » Michael: « Un peu combien ? » Chef: « Un peu. » Michael: « Je suis. »",
+     "camera": "top-down on the plate → medium two-shot → macro on the receipt flip → close-up on the stare.",
+     "light": "green lamp, warm faces, seventies grain, deep shadows.",
+     "audio": "lamp hum, receipt shuffle, cork clatter, jazz bass (original), a slow exhale."
+    },
+    {
+     "n": 2,
+     "titre": "On perd deux euros",
+     "resume": "Le calcul sur la serviette, l'assiette retournée comme une carte perdante",
+     "ref_extra": "a dealer's green visor",
+     "location_line": "Location = @Image 3 (back room).",
+     "format_line": "9:16, 10 s, 4 shots, realistic comedy shot like a casino movie.",
+     "scene": "Same table; Michael calculates on a napkin with a pencil.",
+     "action": [
+      {
+       "t": "0–2 s",
+       "texte": "pencil scratching, the camera slowly orbits the table."
+      },
+      {
+       "t": "2–5 s",
+       "texte": "he stops writing; long beat; he states the selling price, then the cost."
+      },
+      {
+       "t": "5–8 s",
+       "texte": "the chef defends the dish; Michael agrees flatly; the chef insists."
+      },
+      {
+       "t": "8–10 s",
+       "texte": "Michael looks at the camera, turns the plate over like a losing card, adds two words."
+      }
+     ],
+     "dialogue": "Michael: « Quatorze de vente… seize de coût. » Chef: « Mais il est beau. » Michael: « Il est beau. » Chef: « Très beau. » Michael: « On perd deux euros. » (beat) « Par assiette. »",
+     "camera": "slow orbit → close-up on the pencil stopping → two-shot → close-up, plate flip.",
+     "light": "green lamp, smoke curling in the beam.",
+     "audio": "pencil scratch, silence, jazz sting, plate clink, exhale."
+    }
+   ],
+   "montage": {
+    "vo": "Chaque plat a un coût, une marge, un prix juste. FoodEatUp les calcule avant que vous misiez.",
+    "beats": [
+     {
+      "t": "2–4 s",
+      "texte": "la serviette devient une fiche recette : ingrédients, quantités, prix d'achat."
+     },
+     {
+      "t": "4–7 s",
+      "texte": "écran Recettes : coût de revient calculé → marge en pourcentage → prix conseillé ; puis l'Analyse de la carte place le plat dans la matrice popularité × marge."
+     },
+     {
+      "t": "7–9 s",
+      "texte": "cartes : Recettes · Ingrédients · Analyse de la carte · Commandes."
+     }
+    ],
+    "cartes": [
+     "Recettes",
+     "Ingrédients",
+     "Analyse de la carte",
+     "Commandes"
+    ],
+    "texte_ecran": "Un plat beau. Et rentable.",
+    "sfx": "tick par ingrédient, jeton, impact final."
+   }
+  },
+  {
+   "num": 23,
+   "slug": "la-memoire",
+   "titre": "La mémoire",
+   "genre": "Thriller amnésique (post-its et flèches)",
+   "genre_court": "Amnésique",
+   "situation": "L'habitué dit « Comme d'habitude » et Michael ne sait plus",
+   "modules": [
+    "Clients",
+    "Fidélité"
+   ],
+   "hook": "« Comme d'habitude. » — « Bien sûr. » (sourire figé dès qu'il se retourne)",
+   "selecteurs": {
+    "epoque": "2020s",
+    "genre": "thriller psychologique",
+    "lumiere": "froide de comptoir, angle latéral",
+    "physique": "réaliste",
+    "objectif": "50 mm",
+    "emotion": "panique intérieure",
+    "montage": "4 plans"
+   },
+   "scenes": [
+    {
+     "n": 1,
+     "titre": "D'habitude",
+     "resume": "Un comptoir couvert de post-its avec des visages dessinés",
+     "location_line": "Location = @Image 3 (counter).",
+     "format_line": "9:16, 10 s, 4 shots, realistic comedy shot like an amnesia thriller.",
+     "scene": "An adult regular sits at the counter and orders without looking up; behind the counter, dozens of sticky notes with hand-drawn faces and arrows (no readable words).",
+     "action": [
+      {
+       "t": "0–2 s",
+       "texte": "the regular orders; Michael agrees, turns around, and his smile freezes."
+      },
+      {
+       "t": "2–5 s",
+       "texte": "reverse shot: the wall of sticky notes; Michael scans them frantically, finger moving from face to face; none match."
+      },
+      {
+       "t": "5–8 s",
+       "texte": "he discreetly turns back and studies the customer from several angles while the camera orbits; the customer reads a newspaper."
+      },
+      {
+       "t": "8–10 s",
+       "texte": "Michael whispers to the camera."
+      }
+     ],
+     "dialogue": "Regular: « Comme d'habitude. » Michael: « Bien sûr. » Michael (whisper): « Je sais pas c'est quoi, d'habitude. »",
+     "camera": "two-shot → reverse on the wall with rack focus → orbit around the customer → close-up whisper.",
+     "light": "cool counter light, sticky notes in muted colours, shallow depth of field.",
+     "audio": "newspaper rustle, thriller pulse (original), paper flicks, orbit whoosh, whisper."
+    },
+    {
+     "n": 2,
+     "titre": "Une omelette",
+     "resume": "Trois plats, un café, une soupe, un dessert… la table déborde",
+     "location_line": "Location = @Image 3 (counter).",
+     "format_line": "9:16, 10 s, 4 shots, realistic comedy shot like an amnesia thriller.",
+     "scene": "Same counter, same regular; Michael arrives with three different dishes and a coffee.",
+     "action": [
+      {
+       "t": "0–2 s",
+       "texte": "he sets the plates around the customer, watching his face."
+      },
+      {
+       "t": "2–5 s",
+       "texte": "the customer shakes his head; Michael insists it is close; he adds a soup, a dessert, a juice; the counter overflows."
+      },
+      {
+       "t": "5–8 s",
+       "texte": "the customer finally says the word; Michael repeats it and writes it on the palm of his hand."
+      },
+      {
+       "t": "8–10 s",
+       "texte": "the customer takes the dessert anyway; Michael shows his palm to the camera."
+      }
+     ],
+     "dialogue": "Regular: « C'est pas ça. » Michael: « C'est… presque ça. » Regular: « Une omelette. » Michael: « …une omelette. » Michael (showing his palm): « D'habitude, c'est ça. »",
+     "camera": "medium → top-down on the overflowing counter → close-up on the palm → medium, dessert taken.",
+     "light": "cool counter light, plates colourful against the wood.",
+     "audio": "plates set down one by one, spoon clink, pen on skin, fork into the dessert."
+    }
+   ],
+   "montage": {
+    "vo": "Ses habitudes, vous les connaissez, même sans mémoire. FoodEatUp garde l'historique, les préférences et la fidélité de chaque client.",
+    "vo_variante_courte": "Même sans mémoire, vous connaissez ses habitudes. FoodEatUp garde l'historique et la fidélité.",
+    "beats": [
+     {
+      "t": "2–4 s",
+      "texte": "les post-its aux visages dessinés se transforment en fiches clients avec leur historique."
+     },
+     {
+      "t": "4–7 s",
+      "texte": "écran Clients : fiche du client → dernières commandes, plat préféré, dernière visite → solde de points Fidélité et récompense disponible ; un tap : « comme d'habitude » part en commande."
+     },
+     {
+      "t": "7–9 s",
+      "texte": "cartes : Clients · Fidélité · Commandes · Récompenses."
+     }
+    ],
+    "cartes": [
+     "Clients",
+     "Fidélité",
+     "Commandes",
+     "Récompenses"
+    ],
+    "texte_ecran": "Comme d'habitude. Vraiment.",
+    "sfx": "tick par fiche, ding de points, impact final."
+   }
+  },
+  {
+   "num": 24,
+   "slug": "la-carte-au-tresor",
+   "titre": "La carte au trésor",
+   "genre": "Film d'aventure (la carte qui s'envole)",
+   "genre_court": "Aventure",
+   "situation": "La commande notée sur une serviette part avec le vent",
+   "modules": [
+    "Commandes numériques",
+    "Écran cuisine"
+   ],
+   "hook": "« Table six. Deux pizzas. » — rafale, la serviette s'envole : « Attends ! »",
+   "selecteurs": {
+    "epoque": "2020s",
+    "genre": "aventure",
+    "lumiere": "jour venteux, angle bas",
+    "physique": "réaliste",
+    "objectif": "24 mm caméra à l'épaule",
+    "emotion": "poursuite héroïque",
+    "montage": "4 plans"
+   },
+   "scenes": [
+    {
+     "n": 1,
+     "titre": "Attends !",
+     "resume": "La serviette traverse la rue, la fontaine, un chien l'attrape au vol",
+     "location_line": "Location = @Image 3 (windy terrace) then a town square with a fountain.",
+     "format_line": "9:16, 10 s, 4 shots, realistic comedy shot like an adventure movie.",
+     "scene": "Windy terrace; Michael scribbles an order on a paper napkin (abstract scribbles, no readable words).",
+     "action": [
+      {
+       "t": "0–2 s",
+       "texte": "he repeats the order while writing; a gust rips the napkin from his hand; he shouts."
+      },
+      {
+       "t": "2–5 s",
+       "texte": "adventure music; he chases the napkin down the street; it slips between two passers-by, under a parked car, onto a passing bicycle."
+      },
+      {
+       "t": "5–8 s",
+       "texte": "the napkin lands on the rim of a fountain; Michael climbs the edge in slow motion, fingertips brushing the paper."
+      },
+      {
+       "t": "8–10 s",
+       "texte": "a dog snatches it mid-air and bolts; Michael freezes."
+      }
+     ],
+     "dialogue": "Michael: « Table six. Deux pizzas. » Michael: « Attends ! » Michael: « Non. »",
+     "camera": "insert on the napkin → handheld chase tracking → slow-motion low angle at the fountain → freeze on Michael.",
+     "light": "bright windy daylight, dynamic shadows, slight motion blur.",
+     "audio": "wind gust, adventure brass (original), footsteps, bicycle bell, fountain splash, dog bark, silence."
+    },
+    {
+     "n": 2,
+     "titre": "Trois",
+     "resume": "Négociation avec le chien, la serviette illisible, le retour héroïque",
+     "location_line": "Location = town square, then @Image 3.",
+     "format_line": "9:16, 10 s, 4 shots, realistic comedy shot like an adventure movie.",
+     "scene": "Michael on all fours on the square, face to face with the dog holding the napkin.",
+     "action": [
+      {
+       "t": "0–2 s",
+       "texte": "standoff with the dog; Michael holds out his hand and asks."
+      },
+      {
+       "t": "2–5 s",
+       "texte": "he pulls a piece of bread from his pocket; slow-motion exchange; the dog trots off."
+      },
+      {
+       "t": "5–8 s",
+       "texte": "he unfolds the napkin: the ink has run, it is a blue smear; heroic slow-motion walk back into the restaurant, out of breath."
+      },
+      {
+       "t": "8–10 s",
+       "texte": "at table six, a customer asks; Michael guesses; the dog trots past the window with another napkin."
+      }
+     ],
+     "dialogue": "Michael: « Donne. » Customer: « On avait dit deux pizzas ? » Michael: « …trois. »",
+     "camera": "low two-shot with the dog → macro on the exchange → slow-motion tracking → medium at the table, window in the background.",
+     "light": "bright daylight, warm interior at the end.",
+     "audio": "dog panting, bread rustle, slow-motion whoosh, heavy breathing, chair creak, dog nails on pavement."
+    }
+   ],
+   "montage": {
+    "vo": "Une commande, ça ne s'envole pas. Avec FoodEatUp, elle part de la table à la cuisine en une seconde.",
+    "beats": [
+     {
+      "t": "2–4 s",
+      "texte": "la serviette bleue délavée se reconstitue en commande numérique : table, articles, quantités, options."
+     },
+     {
+      "t": "4–7 s",
+      "texte": "écran Commandes : prise de commande sur téléphone à la table → envoi en un tap → la commande apparaît sur l'Écran cuisine, rangée par poste."
+     },
+     {
+      "t": "7–9 s",
+      "texte": "cartes : Commandes · Écran cuisine · Tables · Postes."
+     }
+    ],
+    "cartes": [
+     "Commandes",
+     "Écran cuisine",
+     "Tables",
+     "Postes"
+    ],
+    "texte_ecran": "De la table à la cuisine. Sans serviette.",
+    "sfx": "whoosh d'envoi, ping cuisine, impact final."
+   }
+  },
+  {
+   "num": 25,
+   "slug": "les-traders",
+   "titre": "Les traders",
+   "genre": "Salle des marchés (trois téléphones, panique boursière)",
+   "genre_court": "Salle des marchés",
+   "situation": "Le téléphone qui sonne pendant le rush",
+   "modules": [
+    "Agent vocal"
+   ],
+   "hook": "Trois téléphones, un dans chaque main, un sur l'épaule : « Allô ? Oui. Allô ? Oui. »",
+   "selecteurs": {
+    "epoque": "2020s",
+    "genre": "thriller financier",
+    "lumiere": "néon froid + lampes clignotantes, angle frontal",
+    "physique": "réaliste",
+    "objectif": "35 mm",
+    "emotion": "frénésie",
+    "montage": "4 plans"
+   },
+   "scenes": [
+    {
+     "n": 1,
+     "titre": "Je vends quoi, là ?",
+     "resume": "Michael jongle avec les appels comme un trader",
+     "location_line": "Location = @Image 3 (counter).",
+     "format_line": "9:16, 10 s, 4 shots, realistic comedy shot like a trading-floor thriller.",
+     "scene": "Rush hour; Michael behind the counter with three phones: one in each hand, one wedged on his shoulder; blinking lamps behind him like a trading board (no readable text).",
+     "action": [
+      {
+       "t": "0–2 s",
+       "texte": "he answers two phones at once, rapid fire."
+      },
+      {
+       "t": "2–5 s",
+       "texte": "he answers the third; then a wrong number."
+      },
+      {
+       "t": "5–8 s",
+       "texte": "all three phones ring together; he juggles them; a customer at the counter raises a hand; the chef shouts from the kitchen."
+      },
+      {
+       "t": "8–10 s",
+       "texte": "Michael, a phone at each ear, asks the camera."
+      }
+     ],
+     "dialogue": "Michael: « Allô ? Oui. Une table pour deux. » « Allô ? Oui. Une pizza. » « Allô ? Non. C'est pas le garage. » Michael: « Je vends quoi, là ? »",
+     "camera": "fast push-in → alternating close-ups on each phone → wide with the customer and the chef → tight close-up.",
+     "light": "cold fluorescents, blinking coloured lamps, high energy.",
+     "audio": "three ringtones layered, ticker-like clicks, chatter, chef shouting, comic sting."
+    },
+    {
+     "n": 2,
+     "titre": "Elle a sonné",
+     "resume": "Il décroche une spatule, puis un tire-bouchon, puis sa chaussure",
+     "location_line": "Location = @Image 3 (counter).",
+     "format_line": "9:16, 10 s, 4 shots, realistic comedy shot like a trading-floor thriller.",
+     "scene": "Same counter; the phones keep ringing.",
+     "action": [
+      {
+       "t": "0–2 s",
+       "texte": "by reflex he picks up… a spatula and answers it."
+      },
+      {
+       "t": "2–5 s",
+       "texte": "the chef appears in the doorway and points out the obvious; Michael defends himself."
+      },
+      {
+       "t": "5–8 s",
+       "texte": "fast montage: he answers a corkscrew, a salt shaker, his own shoe."
+      },
+      {
+       "t": "8–10 s",
+       "texte": "he puts everything down, sits on the floor behind the counter; the real phone rings; he looks at the camera."
+      }
+     ],
+     "dialogue": "Michael: « Allô ? » Chef: « C'est une spatule. » Michael: « Elle a sonné. » Michael: « Je réponds plus. »",
+     "camera": "insert on the spatula → two-shot → jump-cut montage → low angle behind the counter, ring.",
+     "light": "cold fluorescents, warm doorway light on the chef.",
+     "audio": "ringtone, spatula « hello », shoe squeak, salt shaker rattle, ringtone continues, silence."
+    }
+   ],
+   "montage": {
+    "vo": "Le téléphone répond tout seul. L'agent vocal FoodEatUp prend la réservation ou la commande pendant que vous servez.",
+    "vo_variante_courte": "Le téléphone répond tout seul. L'agent vocal FoodEatUp prend la réservation pendant que vous servez.",
+    "beats": [
+     {
+      "t": "2–4 s",
+      "texte": "les trois téléphones fusionnent en un seul appel entrant, pris automatiquement."
+     },
+     {
+      "t": "4–7 s",
+      "texte": "écran : l'Agent vocal répond → la réservation ou la commande est créée directement (canal « téléphone / agent vocal ») → notification à Michael, qui a les mains libres."
+     },
+     {
+      "t": "7–9 s",
+      "texte": "cartes : Agent vocal · Réservations · Commandes · Notifications."
+     }
+    ],
+    "cartes": [
+     "Agent vocal",
+     "Réservations",
+     "Commandes",
+     "Notifications"
+    ],
+    "texte_ecran": "Le téléphone répond. Vous servez.",
+    "sfx": "sonnerie coupée, tick de création, impact final."
+   }
+  },
+  {
+   "num": 26,
+   "slug": "le-detective",
+   "titre": "Le détective",
+   "genre": "Film noir (noir et blanc, stores vénitiens, voix off intérieure)",
+   "genre_court": "Film noir",
+   "situation": "Qui a nettoyé la hotte ?",
+   "modules": [
+    "Plan de nettoyage",
+    "Checklist hygiène"
+   ],
+   "hook": "Noir et blanc, voix off : « Il était vingt-trois heures. La hotte était sale. »",
+   "selecteurs": {
+    "epoque": "1960s + noir et blanc",
+    "genre": "film noir",
+    "lumiere": "stores vénitiens, angle latéral dur",
+    "physique": "réaliste",
+    "objectif": "40 mm",
+    "emotion": "soupçon",
+    "montage": "4 plans"
+   },
+   "scenes": [
+    {
+     "n": 1,
+     "titre": "Qui a nettoyé la hotte ?",
+     "resume": "L'équipe alignée contre le mur, tout le monde pointe le voisin",
+     "ref_extra": "a trench coat and a fedora over the apron",
+     "location_line": "Location = @Image 4.",
+     "format_line": "9:16, 10 s, 4 shots, black-and-white comedy shot like a film noir.",
+     "scene": "The kitchen at night in black and white, venetian-blind shadows across the steel; Michael in a trench coat and fedora over his apron; his own voice as inner narration.",
+     "action": [
+      {
+       "t": "0–2 s",
+       "texte": "Michael examines the extractor hood with a magnifying glass; inner voice-over sets the scene."
+      },
+      {
+       "t": "2–5 s",
+       "texte": "he runs a finger along the hood: black; he stares at his finger."
+      },
+      {
+       "t": "5–8 s",
+       "texte": "three adults line up against the wall: the chef, a waiter, the dishwasher; Michael asks the question; all three point at their neighbour at the same time."
+      },
+      {
+       "t": "8–10 s",
+       "texte": "the dishwasher slowly turns his finger toward Michael; close-up on Michael."
+      }
+     ],
+     "dialogue": "Michael (voice-over): « Il était vingt-trois heures. La hotte était sale. » Michael: « Quelqu'un ment. » Michael: « Qui a nettoyé la hotte ? » Michael: « Moi ? »",
+     "camera": "macro through the magnifying glass → insert on the finger → wide lineup → slow push-in on Michael.",
+     "light": "high-contrast black and white, hard slats of light, smoke haze.",
+     "audio": "muted trumpet (original), dripping tap, finger squeak on steel, three shirts rustling as they point, sting."
+    },
+    {
+     "n": 2,
+     "titre": "Le coupable, c'était moi",
+     "resume": "Le planning jauni au mur, sa propre photo sur la case du lundi",
+     "ref_extra": "a trench coat and a fedora",
+     "location_line": "Location = @Image 4.",
+     "format_line": "9:16, 10 s, 4 shots, black-and-white comedy shot like a film noir.",
+     "scene": "Michael walks through the kitchen under falling steam like indoor rain; inner narration.",
+     "action": [
+      {
+       "t": "0–2 s",
+       "texte": "he walks slowly, collar up, steam drifting."
+      },
+      {
+       "t": "2–5 s",
+       "texte": "he finds a yellowed paper schedule pinned to the wall; he blows off the dust."
+      },
+      {
+       "t": "5–8 s",
+       "texte": "the camera zooms into one square of the grid: a small ID photo of Michael pinned there (no readable text); narration."
+      },
+      {
+       "t": "8–10 s",
+       "texte": "he slowly removes his hat, looks at the camera; fade to black."
+      }
+     ],
+     "dialogue": "Michael (voice-over): « Je cherchais un coupable. » Michael (voice-over): « Lundi. Hotte. » Michael: « Ah. » Michael (voice-over): « Le coupable, c'était moi. »",
+     "camera": "tracking through steam → insert on the paper → slow zoom into the photo → close-up, fade out.",
+     "light": "black and white, steam catching the slats of light, soft fade.",
+     "audio": "footsteps with reverb, dust blow, paper crackle, trumpet resolve, silence."
+    }
+   ],
+   "montage": {
+    "vo": "Qui, quoi, quand : c'est écrit. Le plan de nettoyage FoodEatUp enregistre chaque action, pas besoin de détective.",
+    "vo_variante_courte": "Qui, quoi, quand : c'est écrit. Le plan de nettoyage FoodEatUp enregistre chaque action.",
+    "beats": [
+     {
+      "t": "2–4 s",
+      "texte": "le planning jauni passe du noir et blanc à la couleur et devient une grille de zones et de postes."
+     },
+     {
+      "t": "4–7 s",
+      "texte": "écran Plan de nettoyage : zone → poste → fréquence ; une action de nettoyage enregistrée en un tap avec qui et quand ; la Checklist hygiène du jour se valide."
+     },
+     {
+      "t": "7–9 s",
+      "texte": "cartes : Plan de nettoyage · Checklist hygiène · HACCP · Employés."
+     }
+    ],
+    "cartes": [
+     "Plan de nettoyage",
+     "Checklist hygiène",
+     "HACCP",
+     "Employés"
+    ],
+    "texte_ecran": "Qui a nettoyé ? C'est écrit.",
+    "sfx": "passage couleur, tick par action, impact final."
+   }
+  },
+  {
+   "num": 27,
+   "slug": "le-super-vilain",
+   "titre": "Le super-vilain",
+   "genre": "Film de super-vilain (fauteuil tournant, rire, éclair)",
+   "genre_court": "Super-vilain",
+   "situation": "Trois demandes de congé pour le même samedi, déjà signées",
+   "modules": [
+    "Congés",
+    "Planning"
+   ],
+   "hook": "Fauteuil qui se retourne lentement, lumière par en dessous : « Samedi. »",
+   "selecteurs": {
+    "epoque": "2020s",
+    "genre": "film de super-héros (côté vilain)",
+    "lumiere": "contre-plongée dramatique + éclairs, angle bas",
+    "physique": "réaliste",
+    "objectif": "35 mm",
+    "emotion": "mégalomanie qui s'effondre",
+    "montage": "4 plans"
+   },
+   "scenes": [
+    {
+     "n": 1,
+     "titre": "J'ai déjà signé",
+     "resume": "Il lit les trois demandes avec un rire de vilain… qui se casse",
+     "location_line": "Location = @Image 3 (back office corner).",
+     "format_line": "9:16, 10 s, 4 shots, realistic comedy shot like a supervillain reveal.",
+     "scene": "A dark office, a swivel chair with its back to the camera, a desk lamp from below; Michael strokes a baguette like a villain's pet.",
+     "action": [
+      {
+       "t": "0–2 s",
+       "texte": "the chair turns slowly; underlight on Michael's face."
+      },
+      {
+       "t": "2–5 s",
+       "texte": "he reads three sheets one after the other with a villain's laugh after each; the laugh cracks on the third."
+      },
+      {
+       "t": "5–8 s",
+       "texte": "he counts: three requests, three waiters, the same Saturday; close-up."
+      },
+      {
+       "t": "8–10 s",
+       "texte": "he looks at the camera; lightning flashes behind him."
+      }
+     ],
+     "dialogue": "Michael: « Samedi. » (laugh) « Samedi. » (laugh) « Samedi. » (broken laugh) Michael: « Tout le monde. » Michael: « J'ai déjà signé. »",
+     "camera": "slow reveal on the chair → close-up on the sheets → extreme close-up → medium with lightning.",
+     "light": "underlight, cold blue rim, lightning flashes, deep blacks.",
+     "audio": "chair creak, villain organ (original), paper flips, laugh, laugh, laugh cracking, thunder."
+    },
+    {
+     "n": 2,
+     "titre": "J'ai validé quoi ?",
+     "resume": "Samedi midi, seul, il fait tout, la caméra tourne de plus en plus vite",
+     "location_line": "Location = @Image 3.",
+     "format_line": "9:16, 10 s, 4 shots, realistic comedy shot like a supervillain movie.",
+     "scene": "Saturday noon, the restaurant full; Michael alone, sliding on the tiled floor in trainers.",
+     "action": [
+      {
+       "t": "0–2 s",
+       "texte": "he slides in, takes an order mid-slide."
+      },
+      {
+       "t": "2–5 s",
+       "texte": "fast montage: he runs to the kitchen, comes out wearing the chef's hat, serves, takes payment, clears tables; the camera orbits faster and faster."
+      },
+      {
+       "t": "5–8 s",
+       "texte": "he stops dead in the middle of the room; everyone looks at him; he smiles; a plate breaks off-screen."
+      },
+      {
+       "t": "8–10 s",
+       "texte": "he looks at his hand: three signed leave forms; close-up."
+      }
+     ],
+     "dialogue": "Michael: « Je gère. » Michael: « J'ai validé quoi ? »",
+     "camera": "low slide shot → accelerating orbit → sudden static wide → insert on the forms.",
+     "light": "bright lunch light, saturated, motion blur on the orbit.",
+     "audio": "floor squeak, accelerating rhythm, plate smash, silence, paper crinkle."
+    }
+   ],
+   "montage": {
+    "vo": "Un congé validé, un planning à jour, un samedi couvert. FoodEatUp vous prévient avant que vous signiez.",
+    "beats": [
+     {
+      "t": "2–4 s",
+      "texte": "les trois feuilles deviennent trois demandes de congé sur le même jour ; une alerte de conflit s'allume."
+     },
+     {
+      "t": "4–7 s",
+      "texte": "écran Congés : demande → conflit détecté (trois absents, minimum de service) → validation ou refus en un tap → le Planning de la semaine se réorganise."
+     },
+     {
+      "t": "7–9 s",
+      "texte": "cartes : Congés · Planning · Shifts · Employés."
+     }
+    ],
+    "cartes": [
+     "Congés",
+     "Planning",
+     "Shifts",
+     "Employés"
+    ],
+    "texte_ecran": "Validez sans vous retrouver seul.",
+    "sfx": "alerte douce, tick de validation, impact final."
+   }
+  },
+  {
+   "num": 28,
+   "slug": "le-jeu-tele",
+   "titre": "Le jeu télé",
+   "genre": "Jeu télévisé (animateur, roue, applaudissements)",
+   "genre_court": "Jeu télévisé",
+   "situation": "La roue cadeaux s'emballe, trente desserts à faire",
+   "modules": [
+    "Fidélité",
+    "Roue cadeaux"
+   ],
+   "hook": "Lumières de plateau, un poivrier en guise de micro : « Faites tourner la roue ! »",
+   "selecteurs": {
+    "epoque": "2020s",
+    "genre": "divertissement télé",
+    "lumiere": "projecteurs colorés, angle frontal",
+    "physique": "hyperbolique",
+    "objectif": "24 mm",
+    "emotion": "euphorie → gêne",
+    "montage": "4 plans"
+   },
+   "scenes": [
+    {
+     "n": 1,
+     "titre": "Faites tourner la roue",
+     "resume": "La salle entière veut jouer, la roue s'envole comme un frisbee",
+     "location_line": "Location = @Image 3 (bar).",
+     "format_line": "9:16, 10 s, 4 shots, realistic comedy shot like a TV game show.",
+     "scene": "Game-show lights over the bar, a colourful prize wheel on the counter, Michael as host holding a pepper grinder like a microphone.",
+     "action": [
+      {
+       "t": "0–2 s",
+       "texte": "Michael invites the room to play; applause."
+      },
+      {
+       "t": "2–5 s",
+       "texte": "an adult customer spins; tick-tick-tick; the wheel stops; Michael announces a dessert; cheers."
+      },
+      {
+       "t": "5–8 s",
+       "texte": "the whole room stands up at once; a queue forms at the wheel; it spins faster and faster."
+      },
+      {
+       "t": "8–10 s",
+       "texte": "the wheel detaches and flies across the room like a frisbee in slow motion; Michael watches it go."
+      }
+     ],
+     "dialogue": "Michael: « Faites tourner la roue ! » Michael: « Un dessert ! » Michael: « Oh. »",
+     "camera": "wide with lights → close-up on the wheel ticking → wide on the crowd rising → slow-motion tracking on the flying wheel.",
+     "light": "saturated coloured spotlights, glitter, TV sheen.",
+     "audio": "game-show jingle (original), wheel ticking, applause, crowd surge, whoosh, distant crash."
+    },
+    {
+     "n": 2,
+     "titre": "Trente",
+     "resume": "La roue plantée dans le mur, le chef devant trente coupes",
+     "location_line": "Location = @Image 4.",
+     "format_line": "9:16, 10 s, 4 shots, realistic comedy shot like a TV game show gone wrong.",
+     "scene": "The wheel stuck in the wall; then the kitchen: an adult chef facing thirty empty dessert glasses.",
+     "action": [
+      {
+       "t": "0–2 s",
+       "texte": "Michael looks at the wheel embedded in the wall."
+      },
+      {
+       "t": "2–5 s",
+       "texte": "kitchen: the chef states the number; Michael minimises; the chef repeats."
+      },
+      {
+       "t": "5–8 s",
+       "texte": "fast montage: Michael helps, whipped cream everywhere, slow motion on a falling cherry."
+      },
+      {
+       "t": "8–10 s",
+       "texte": "Michael, cream on his nose, looks at the camera."
+      }
+     ],
+     "dialogue": "Chef: « Trente. » Michael: « C'était pour le fun. » Chef: « Trente. » Michael: « Le stock aussi, il joue. »",
+     "camera": "insert on the wheel → two-shot → speed-ramped montage with a slow-motion cherry → close-up.",
+     "light": "bar lights, then cold kitchen light, cream bright white.",
+     "audio": "wall creak, silence, whipped cream siphon, cherry plop in slow motion, sigh."
+    }
+   ],
+   "montage": {
+    "vo": "La roue tourne, les lots sont limités, le stock suit. La fidélité FoodEatUp, c'est du jeu avec des règles.",
+    "vo_variante_courte": "La roue tourne, les lots sont limités, le stock suit. La fidélité FoodEatUp, c'est réglé.",
+    "beats": [
+     {
+      "t": "2–4 s",
+      "texte": "la roue plantée dans le mur se redresse en roue numérique avec des lots définis et un nombre de lancers."
+     },
+     {
+      "t": "4–7 s",
+      "texte": "écran Fidélité : programme actif, points par visite, récompenses (plat réel à 0 €, quantité limitée), Roue cadeaux en ligne avec ses lots et ses leads ; un bon gagné est validé en salle en un tap."
+     },
+     {
+      "t": "7–9 s",
+      "texte": "cartes : Fidélité · Récompenses · Roue cadeaux · Bons · Stock."
+     }
+    ],
+    "cartes": [
+     "Fidélité",
+     "Récompenses",
+     "Roue cadeaux",
+     "Bons",
+     "Stock"
+    ],
+    "texte_ecran": "La roue tourne. Le stock suit.",
+    "sfx": "tick de roue, ding de gain, impact final."
+   }
+  },
+  {
+   "num": 29,
+   "slug": "les-gangsters",
+   "titre": "Les gangsters",
+   "genre": "Film de gangsters (lumière tamisée, chuchotements, respect)",
+   "genre_court": "Gangsters",
+   "situation": "L'habitué qui dit « Mets ça sur ma note » depuis six mois",
+   "modules": [
+    "Ardoises"
+   ],
+   "hook": "Un client en costume se penche : « Mets ça sur ma note. »",
+   "selecteurs": {
+    "epoque": "1970s",
+    "genre": "film de gangsters",
+    "lumiere": "tamisée ambrée, angle bas",
+    "physique": "hyperbolique (scène 2)",
+    "objectif": "50 mm",
+    "emotion": "respect craintif",
+    "montage": "4 plans"
+   },
+   "scenes": [
+    {
+     "n": 1,
+     "titre": "Sur ma note",
+     "resume": "Le mur de petits papiers derrière le comptoir",
+     "location_line": "Location = @Image 3 (counter).",
+     "format_line": "9:16, 10 s, 4 shots, realistic comedy shot like a seventies gangster movie.",
+     "scene": "Dim amber light; an adult regular in a suit leans toward Michael at the counter and speaks low.",
+     "action": [
+      {
+       "t": "0–2 s",
+       "texte": "the regular gives his instruction; Michael nods respectfully."
+      },
+      {
+       "t": "2–5 s",
+       "texte": "the camera glides behind the counter: a wall covered with small paper slips, each with a drawn moustache symbol (no readable words), months of them."
+      },
+      {
+       "t": "5–8 s",
+       "texte": "montage, day after day: the same line, Michael pins one slip, two, ten; the wall overflows."
+      },
+      {
+       "t": "8–10 s",
+       "texte": "Michael whispers to the camera."
+      }
+     ],
+     "dialogue": "Regular: « Mets ça sur ma note. » Michael: « Bien sûr. » Regular (repeated in the montage): « Sur ma note. » Michael (whisper): « Il paie quand ? »",
+     "camera": "close two-shot → glide behind the counter → jump-cut montage on the wall → close-up whisper.",
+     "light": "amber practicals, seventies grain, deep brown shadows.",
+     "audio": "low mandolin (original), pin pushes, paper rustle, ice in a glass, whisper."
+    },
+    {
+     "n": 2,
+     "titre": "Tu prends les chèques ?",
+     "resume": "Le rouleau de caisse traverse la salle et descend la rue",
+     "location_line": "Location = @Image 3.",
+     "format_line": "9:16, 10 s, 4 shots, realistic comedy shot like a seventies gangster movie.",
+     "scene": "One evening the regular returns, jovial, and asks for his total.",
+     "action": [
+      {
+       "t": "0–2 s",
+       "texte": "the regular asks; Michael reaches for the till roll."
+      },
+      {
+       "t": "2–5 s",
+       "texte": "he unrolls the paper: it crosses the room, passes the door and rolls down the street in slow motion."
+      },
+      {
+       "t": "5–8 s",
+       "texte": "the regular follows the paper with his eyes, very slowly; both react with the same syllable."
+      },
+      {
+       "t": "8–10 s",
+       "texte": "the regular pulls out a chequebook; Michael looks at the camera as the roll flutters in the wind."
+      }
+     ],
+     "dialogue": "Regular: « Je dois combien ? » Regular: « Ah. » Michael: « Ah. » Regular: « Tu prends les chèques ? »",
+     "camera": "two-shot → tracking along the unrolling paper out the door → slow pan on the regular's face → close-up on Michael.",
+     "light": "amber interior, blue street at dusk, paper glowing in the doorway.",
+     "audio": "paper unrolling endlessly, street ambience, silence, chequebook flap, wind on paper."
+    }
+   ],
+   "montage": {
+    "vo": "L'ardoise est numérique : elle ne s'oublie pas, elle ne s'envole pas. Solde, historique, règlement, dans FoodEatUp.",
+    "vo_variante_courte": "L'ardoise est numérique : elle ne s'oublie pas. Solde, historique, règlement, dans FoodEatUp.",
+    "beats": [
+     {
+      "t": "2–4 s",
+      "texte": "le mur de papiers se replie en une seule fiche ardoise avec un solde dû."
+     },
+     {
+      "t": "4–7 s",
+      "texte": "écran Ardoises : client, solde dû, historique des consommations, statut ; règlement partiel ou total encaissé en caisse en un tap."
+     },
+     {
+      "t": "7–9 s",
+      "texte": "cartes : Ardoises · Caisse · Clients · Paiements."
+     }
+    ],
+    "cartes": [
+     "Ardoises",
+     "Caisse",
+     "Clients",
+     "Paiements"
+    ],
+    "texte_ecran": "L'ardoise ne s'oublie plus.",
+    "sfx": "papier qui se replie, tick de règlement, impact final."
+   }
+  },
+  {
+   "num": 30,
+   "slug": "la-ceremonie",
+   "titre": "La cérémonie",
+   "final_saison": true,
+   "genre": "Cérémonie de remise de prix + générique de fin",
+   "genre_court": "Remise de prix",
+   "situation": "Tout le casting de la saison réuni, Michael ouvre l'enveloppe",
+   "modules": [
+    "FoodEatUp tout entier"
+   ],
+   "hook": "Tapis rouge dans le restaurant, roulement de tambour : « Et le gagnant… »",
+   "selecteurs": {
+    "epoque": "2020s",
+    "genre": "cérémonie / drame élégant",
+    "lumiere": "projecteurs chauds, angle frontal",
+    "physique": "réaliste",
+    "objectif": "anamorphique 50 mm",
+    "emotion": "émotion sincère et drôle",
+    "montage": "4 plans"
+   },
+   "scenes": [
+    {
+     "n": 1,
+     "titre": "Et le gagnant",
+     "resume": "L'enveloppe, le casting, le téléphone brandi",
+     "ref_extra": "a tuxedo jacket over the apron",
+     "location_line": "Location = @Image 3.",
+     "format_line": "9:16, 10 s, 4 shots, realistic comedy shot like an awards ceremony.",
+     "scene": "A red carpet through the dining room, warm spotlights; the season's cast seated as adults in the audience: the chef, a waiter, an influencer with a ring light, a courier with a helmet, a regular in a suit. Michael at a small podium holds a sealed envelope.",
+     "action": [
+      {
+       "t": "0–2 s",
+       "texte": "drum roll; Michael starts the announcement."
+      },
+      {
+       "t": "2–5 s",
+       "texte": "he opens the envelope very slowly; the camera orbits him; the audience leans forward."
+      },
+      {
+       "t": "5–8 s",
+       "texte": "he pulls out his phone and holds it up like a trophy (screen blurred, no readable text); the audience erupts."
+      },
+      {
+       "t": "8–10 s",
+       "texte": "the chef wipes a tear with a kitchen towel; confetti; Michael thanks his mother."
+      }
+     ],
+     "dialogue": "Michael: « Et le gagnant… » Michael: « …c'est… lui. » Michael: « Merci maman. »",
+     "camera": "wide on the red carpet → slow orbit on the envelope → low angle on the raised phone → medium on the chef, confetti.",
+     "light": "warm golden spotlights, anamorphic flares, confetti sparkle.",
+     "audio": "drum roll, envelope tear, gasp, applause, sniff, confetti pop, strings (original)."
+    },
+    {
+     "n": 2,
+     "titre": "Coupez",
+     "resume": "Générique de fin : le restaurant fonctionne, chacun salue, Michael boit enfin son café",
+     "location_line": "Location = @Image 3.",
+     "format_line": "9:16, 10 s, 4 shots, warm realistic comedy shot like an end-credits sequence.",
+     "scene": "The restaurant calm and running perfectly: the chef smiling at the pass, a waiter clocking in with a wave, a customer paying with a nod.",
+     "action": [
+      {
+       "t": "0–2 s",
+       "texte": "a smooth steadicam pulls back along the dining room; each cast member waves at the camera as it passes."
+      },
+      {
+       "t": "2–5 s",
+       "texte": "the camera keeps gliding backwards; soft music."
+      },
+      {
+       "t": "5–8 s",
+       "texte": "Michael finally sits, takes a coffee, exhales; the camera continues out through the door into the street."
+      },
+      {
+       "t": "8–10 s",
+       "texte": "Michael, tiny in the distance, says one last word to the camera; a clapperboard snaps shut; black."
+      }
+     ],
+     "dialogue": "Michael (softly): « Coupez. »",
+     "camera": "one continuous steadicam pull-back with waves → sit-down beat → out the door → clapperboard, cut to black.",
+     "light": "warm late-afternoon light, gentle glow, soft contrast.",
+     "audio": "soft piano (original), cups, a distant laugh, the coffee sip, clapperboard snap, silence."
+    }
+   ],
+   "montage": {
+    "vo": "Trente films. Un restaurant. Un seul système. FoodEatUp.",
+    "beats": [
+     {
+      "t": "0–2 s",
+      "texte": "clap « COUPEZ ! » sur la dernière image de la scène 2."
+     },
+     {
+      "t": "2–4 s",
+      "texte": "mosaïque des 29 chutes précédentes (une image figée par épisode) en grille verticale qui défile très vite."
+     },
+     {
+      "t": "4–6 s",
+      "texte": "chaque image se transforme en données et converge vers le centre."
+     },
+     {
+      "t": "6–8 s",
+      "texte": "cartes reliées : Commandes · Réservations · Plan de salle · Écran cuisine · Caisse · Stock · HACCP · Planning · Fidélité · Campagnes · Avis · Synthèse financière."
+     },
+     {
+      "t": "8–9 s",
+      "texte": "tout disparaît."
+     },
+     {
+      "t": "9–10 s",
+      "texte": "logo FoodEatUp seul, animation finale, signature sous le logo : « Le système qui travaille avec vous. »"
+     }
+    ],
+    "cartes": [
+     "Commandes",
+     "Réservations",
+     "Plan de salle",
+     "Écran cuisine",
+     "Caisse",
+     "Stock",
+     "HACCP",
+     "Planning",
+     "Fidélité",
+     "Campagnes",
+     "Avis",
+     "Synthèse financière"
+    ],
+    "texte_ecran": "Trente films. Un seul système.",
+    "texte_ecran_timing": "6–8 s, au-dessus des cartes",
+    "sfx": "clap, défilement rapide, convergence, impact propre + petit whoosh, fondu."
+   }
+  }
+ ]
+}

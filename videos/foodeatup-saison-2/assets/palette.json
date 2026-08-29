@@ -1,0 +1,28 @@
+{
+  "source": "rapido-kb/charte-graphique.md — Brandbook FoodEatUp (mai 2025)",
+  "regle": "Seules couleurs autorisées dans les outros. Aucune couleur inventée.",
+  "couleurs": {
+    "primaire": { "nom": "Bleu FoodEatUp", "hex": "#007BFF", "usage": "logo, CTA, cadres UI, flux lumineux entre les cartes" },
+    "fond": { "nom": "Anthracite", "hex": "#0F1A23", "usage": "arrière-plan principal (imposé par la charte)" },
+    "accent": { "nom": "Orange", "hex": "#FFA500", "usage": "validation, point de tension, clin d'œil" },
+    "fond_clair": { "nom": "Crème", "hex": "#FCF9E6", "usage": "fonds clairs, cartons, respiration" },
+    "texte_sur_clair": { "nom": "Noir", "hex": "#231F20", "usage": "corps de texte sur fond clair" },
+    "support": { "nom": "Bleu clair", "hex": "#A6D0FF", "usage": "dégradés, particules, halos" }
+  },
+  "accessibilite": [
+    "Texte en couleur uniquement sur fond noir ou blanc.",
+    "Sur fond coloré (bleu ou orange) : texte noir 100 %, jamais de gris.",
+    "Pas d'ombres claires sur fond blanc."
+  ],
+  "typographie": {
+    "officielle": "Goodly",
+    "substitut": "Poppins",
+    "vertical": { "h1_px": 100, "corps_px": 55, "minimum_px": 64 }
+  },
+  "logo": {
+    "zone_de_protection": "½ hauteur du logo (le brief saison 2 impose 10 % de sa largeur : retenir la plus grande des deux)",
+    "taille_min_px": 70,
+    "interdits": ["bordure", "inclinaison", "redimensionnement séparé des éléments", "FOOD/EATUP séparés", "couleur hors palette", "tête de chef non reconnaissable"]
+  },
+  "signature": "Le système qui travaille avec vous."
+}
