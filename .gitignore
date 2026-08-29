@@ -14,3 +14,7 @@ videos/rapidorh-presentation-4min/
 videos/rapidocms-presentation-4min/assets/avatar/
 # Per-project scratch (frames, segments, silent renders)
 videos/**/work/
+# LE CLASH — plans sources téléchargés et scratch de montage (régénérables)
+le-clash/sources/
+le-clash/sources-local/
+le-clash/work/

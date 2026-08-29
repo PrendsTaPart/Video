@@ -1,0 +1,398 @@
+{
+ "audio": "audio/le-clash.mp3",
+ "fps": 30,
+ "size": [
+  1080,
+  1920
+ ],
+ "bpm": 144.0,
+ "beat": 0.4166666666666667,
+ "phase": 0.404,
+ "duration": 15.9167,
+ "sections": {
+  "INTRO": [
+   0.0,
+   13.54
+  ],
+  "COUPLET 1": [
+   12.54,
+   66.3
+  ],
+  "REFRAIN": [
+   66.3,
+   86.36
+  ],
+  "COUPLET 2": [
+   86.36,
+   126.64
+  ],
+  "PONT": [
+   127.18,
+   152.96
+  ],
+  "COUPLET 3": [
+   153.18,
+   173.28
+  ],
+  "REFRAIN FINAL": [
+   173.28,
+   189.76
+  ],
+  "OUTRO": [
+   192.72,
+   196.78
+  ]
+ },
+ "shots": [
+  {
+   "t0": -7.0,
+   "t1": 3.0,
+   "dur": 10.0,
+   "side": "chaos",
+   "layer": "full",
+   "src": "EP015",
+   "sin": 0.0,
+   "file": "sources/EP015.mp4",
+   "titre": "La tour d'assiettes",
+   "ligne": "Une seule qui bouge en bas / plus rien qui tient debout",
+   "note": "EP015 en entier — l'écroulement finit sur le 1er temps du refrain"
+  },
+  {
+   "t0": 0.0,
+   "t1": 1.2,
+   "dur": 1.2,
+   "side": "chaos",
+   "layer": "full",
+   "src": "EP083",
+   "sin": 0.0,
+   "file": "sources/EP083.mp4",
+   "titre": "Le cri dans le vide",
+   "note": "amorce"
+  },
+  {
+   "t0": 1.2,
+   "t1": 3.0,
+   "dur": 1.8,
+   "side": "duel",
+   "layer": "full",
+   "src": "EP142",
+   "sin": 0.0,
+   "file": "sources/EP142.mp4",
+   "titre": "Duel à la spatule",
+   "note": "amorce — le calme"
+  },
+  {
+   "t0": 3.0,
+   "t1": 3.625,
+   "dur": 0.625,
+   "side": "chaos",
+   "layer": "top",
+   "src": "EP080",
+   "sin": 0.637,
+   "file": "sources/EP080.mp4",
+   "titre": "Le tiroir vide",
+   "section": "refrain1"
+  },
+  {
+   "t0": 3.0,
+   "t1": 4.6667,
+   "dur": 1.6667,
+   "side": "maitrise",
+   "layer": "bottom",
+   "src": "hero-kds-mural",
+   "sin": 0.1,
+   "file": "sources-local/hero-kds-mural.mp4",
+   "titre": "KDS mural",
+   "section": "refrain1"
+  },
+  {
+   "t0": 3.625,
+   "t1": 4.25,
+   "dur": 0.625,
+   "side": "chaos",
+   "layer": "top",
+   "src": "EP008",
+   "sin": 1.173,
+   "file": "sources/EP008.mp4",
+   "titre": "La pile de tickets",
+   "section": "refrain1"
+  },
+  {
+   "t0": 4.25,
+   "t1": 4.875,
+   "dur": 0.625,
+   "side": "chaos",
+   "layer": "top",
+   "src": "EP050",
+   "sin": 1.173,
+   "file": "sources/EP050.mp4",
+   "titre": "La casserole brûlante",
+   "section": "refrain1"
+  },
+  {
+   "t0": 4.6667,
+   "t1": 6.3334,
+   "dur": 1.6667,
+   "side": "maitrise",
+   "layer": "bottom",
+   "src": "hf2-07-client-salle",
+   "sin": 0.1,
+   "file": "sources-local/hf2-07-client-salle.mp4",
+   "titre": "Client en salle",
+   "section": "refrain1"
+  },
+  {
+   "t0": 4.875,
+   "t1": 5.5,
+   "dur": 0.625,
+   "side": "chaos",
+   "layer": "top",
+   "src": "hf2-23-classeur-poussiereux",
+   "sin": 1.173,
+   "file": "sources-local/hf2-23-classeur-poussiereux.mp4",
+   "titre": "Le classeur poussiéreux",
+   "section": "refrain1"
+  },
+  {
+   "t0": 5.5,
+   "t1": 6.125,
+   "dur": 0.625,
+   "side": "chaos",
+   "layer": "top",
+   "src": "EP031",
+   "sin": 1.173,
+   "file": "sources/EP031.mp4",
+   "titre": "L'avalanche de tupperware",
+   "section": "refrain1"
+  },
+  {
+   "t0": 6.125,
+   "t1": 6.75,
+   "dur": 0.625,
+   "side": "chaos",
+   "layer": "top",
+   "src": "EP076",
+   "sin": 1.173,
+   "file": "sources/EP076.mp4",
+   "titre": "Le recomptage",
+   "section": "refrain1"
+  },
+  {
+   "t0": 6.3334,
+   "t1": 8.0001,
+   "dur": 1.6667,
+   "side": "maitrise",
+   "layer": "bottom",
+   "src": "hero-brigade-deux-langues",
+   "sin": 0.1,
+   "file": "sources-local/hero-brigade-deux-langues.mp4",
+   "titre": "La brigade, deux langues",
+   "section": "refrain1"
+  },
+  {
+   "t0": 6.75,
+   "t1": 7.375,
+   "dur": 0.625,
+   "side": "chaos",
+   "layer": "top",
+   "src": "hero-directeur-sept-onglets",
+   "sin": 1.173,
+   "file": "sources-local/hero-directeur-sept-onglets.mp4",
+   "titre": "Directeur, sept onglets",
+   "section": "refrain1"
+  },
+  {
+   "t0": 7.375,
+   "t1": 8.0,
+   "dur": 0.625,
+   "side": "chaos",
+   "layer": "top",
+   "src": "EP061",
+   "sin": 1.173,
+   "file": "sources/EP061.mp4",
+   "titre": "Le badge introuvable",
+   "section": "refrain1"
+  },
+  {
+   "t0": 8.0,
+   "t1": 8.625,
+   "dur": 0.625,
+   "side": "chaos",
+   "layer": "top",
+   "src": "EP022",
+   "sin": 1.173,
+   "file": "sources/EP022.mp4",
+   "titre": "La facture qui fait pleurer",
+   "section": "refrain1"
+  },
+  {
+   "t0": 8.0001,
+   "t1": 9.6668,
+   "dur": 1.6667,
+   "side": "maitrise",
+   "layer": "bottom",
+   "src": "EP141",
+   "sin": 0.1,
+   "file": "sources/EP141.mp4",
+   "titre": "Cuisine, cockpit spatial",
+   "section": "refrain1"
+  },
+  {
+   "t0": 8.625,
+   "t1": 9.25,
+   "dur": 0.625,
+   "side": "chaos",
+   "layer": "top",
+   "src": "EP059",
+   "sin": 1.173,
+   "file": "sources/EP059.mp4",
+   "titre": "L'ardoise",
+   "section": "refrain1"
+  },
+  {
+   "t0": 9.25,
+   "t1": 9.875,
+   "dur": 0.625,
+   "side": "chaos",
+   "layer": "top",
+   "src": "EP021",
+   "sin": 1.173,
+   "file": "sources/EP021.mp4",
+   "titre": "Chef contre imprimante",
+   "section": "refrain1"
+  },
+  {
+   "t0": 9.6668,
+   "t1": 11.3335,
+   "dur": 1.6667,
+   "side": "maitrise",
+   "layer": "bottom",
+   "src": "hero-serveur-plan-table",
+   "sin": 0.1,
+   "file": "sources-local/hero-serveur-plan-table.mp4",
+   "titre": "Serveur, plan de table",
+   "section": "refrain1"
+  },
+  {
+   "t0": 9.875,
+   "t1": 10.5,
+   "dur": 0.625,
+   "side": "chaos",
+   "layer": "top",
+   "src": "hf2-24-chambre-froide",
+   "sin": 1.71,
+   "file": "sources-local/hf2-24-chambre-froide.mp4",
+   "titre": "Chambre froide",
+   "section": "refrain1"
+  },
+  {
+   "t0": 10.5,
+   "t1": 11.125,
+   "dur": 0.625,
+   "side": "chaos",
+   "layer": "top",
+   "src": "hf2-26-comptage-recommence",
+   "sin": 1.173,
+   "file": "sources-local/hf2-26-comptage-recommence.mp4",
+   "titre": "Le comptage qui recommence",
+   "section": "refrain1"
+  },
+  {
+   "t0": 11.125,
+   "t1": 11.75,
+   "dur": 0.625,
+   "side": "chaos",
+   "layer": "top",
+   "src": "hero-cloche-passe",
+   "sin": 1.173,
+   "file": "sources-local/hero-cloche-passe.mp4",
+   "titre": "La cloche du passe",
+   "section": "refrain1"
+  },
+  {
+   "t0": 11.3335,
+   "t1": 13.4167,
+   "dur": 2.0832,
+   "side": "maitrise",
+   "layer": "bottom",
+   "src": "hero-fermeture-lumieres",
+   "sin": 0.1,
+   "file": "sources-local/hero-fermeture-lumieres.mp4",
+   "titre": "Extinction des lumières",
+   "section": "refrain1"
+  },
+  {
+   "t0": 11.75,
+   "t1": 12.375,
+   "dur": 0.625,
+   "side": "chaos",
+   "layer": "top",
+   "src": "hero-serveur-trois-tablettes",
+   "sin": 1.173,
+   "file": "sources-local/hero-serveur-trois-tablettes.mp4",
+   "titre": "Serveur, trois tablettes",
+   "section": "refrain1"
+  },
+  {
+   "t0": 12.375,
+   "t1": 13.0,
+   "dur": 0.625,
+   "side": "chaos",
+   "layer": "top",
+   "src": "EP037",
+   "sin": 1.173,
+   "file": "sources/EP037.mp4",
+   "titre": "Le dormeur debout",
+   "section": "refrain1"
+  },
+  {
+   "t0": 13.0,
+   "t1": 13.4167,
+   "dur": 0.4167,
+   "side": "chaos",
+   "layer": "top",
+   "src": "EP083",
+   "sin": 1.173,
+   "file": "sources/EP083.mp4",
+   "titre": "Le cri dans le vide",
+   "section": "refrain1"
+  },
+  {
+   "t0": 13.4167,
+   "t1": 15.0834,
+   "dur": 1.6667,
+   "side": "chaos",
+   "layer": "top",
+   "src": "EP091",
+   "sin": 1.173,
+   "file": "sources/EP091.mp4",
+   "titre": "Le pétard dans le tiramisu",
+   "freeze": true,
+   "nb": true,
+   "note": "moitié haute figée en noir et blanc"
+  },
+  {
+   "t0": 13.4167,
+   "t1": 15.0834,
+   "dur": 1.6667,
+   "side": "maitrise",
+   "layer": "bottom",
+   "src": "hero-caisse-ticket-z",
+   "sin": 0.1,
+   "file": "sources-local/hero-caisse-ticket-z.mp4",
+   "titre": "Caisse, ticket Z"
+  },
+  {
+   "t0": 15.0834,
+   "t1": 15.9167,
+   "dur": 0.8333,
+   "side": "maitrise",
+   "layer": "full",
+   "src": "hf2-16-salle-prete",
+   "sin": 0.1,
+   "file": "sources-local/hf2-16-salle-prete.mp4",
+   "titre": "La salle prête",
+   "note": "la moitié basse s'ouvre en plein cadre"
+  }
+ ]
+}
