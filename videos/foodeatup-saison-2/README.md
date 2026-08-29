@@ -130,6 +130,10 @@ Deux écarts à connaître : le catalogue s'arrête à **EPC24**, donc les épis
 existent pas encore ; et chaque épisode y attend **huit pièces** (master, story, short, paysage,
 facebook, tiktok, carrousel, visuel) — seul le `master` est produit.
 
+`PROMPT-LOVABLE-CATALOGUE.md` répond aux deux : partie A pour ajouter EPC25 → EPC30 avec leurs
+données déjà écrites, partie B pour l'écran de publication qui manque au catalogue. À coller dans
+Lovable sur le projet `food-series-hub`.
+
 Chemin de dépôt : master poussé sur GitHub → URL brute → `upload_file_tool` RapidoCMS (l'URL brute
 de GitHub sort en `application/octet-stream`, que le catalogue refuse ; le S3 de RapidoCMS sert bien
 en `video/mp4`) → `publier_video`.
