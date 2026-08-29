@@ -382,6 +382,37 @@
       { "t": "7–9 s", "texte": "cartes : Caisse · Session de caisse · Rapport Z · Paiements." }
     ],
     "cartes": ["Caisse", "Session de caisse", "Rapport Z", "Paiements"],
+    "ui": {
+          "acte2": {
+                "lignes": [
+                      {
+                            "chip": "Espèces"
+                      },
+                      {
+                            "chip": "Carte"
+                      },
+                      {
+                            "chip": "En ligne"
+                      }
+                ],
+                "alerte": true
+          },
+          "acte3": {
+                "titre": "Caisse",
+                "chips": [
+                      "Rapport X",
+                      "Rapport Z"
+                ],
+                "chip_actif": 1,
+                "confirmation": "écart calculé",
+                "grille": {
+                      "cols": 3,
+                      "rows": 2,
+                      "cible": 4
+                },
+                "label_bas": "Paiements"
+          }
+    },
     "texte_ecran": "Clôture Z : 2 minutes. Écart : calculé.",
     "sfx": "clink par colonne, tick de clôture, impact final."
   }

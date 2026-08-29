@@ -21,9 +21,12 @@ for (const [n, src] of Object.entries(SRC.episodes)) {
   L.push(`| Plan | Generation ID Higgsfield | Fichier |`, `|---|---|---|`);
   L.push(`| Scène 1 — « ${ep.scenes[0].titre} » | \`${src.scene1}\` | \`source/ep${n}-scene1.mp4\` |`);
   L.push(`| Scène 2 — « ${ep.scenes[1].titre} » | \`${src.scene2}\` | \`source/ep${n}-scene2.mp4\` |`);
+  if (src.scene1_alternative)
+    L.push(`| Scène 1, prise alternative | \`${src.scene1_alternative}\` | \`source/ep${n}-scene1-prise-alternative.mp4\` |`);
   if (src.scene2_alternative)
     L.push(`| Scène 2, prise alternative | \`${src.scene2_alternative}\` | \`source/ep${n}-scene2-prise-alternative.mp4\` |`);
   L.push("");
+  if (src.note) L.push(`> ${src.note}`, "");
   L.push(`Sources d'origine : 720×1280, 24 fps, ~10 s, audio AAC 32 kHz (dialogue français et ambiance`);
   L.push(`générés dans la même passe). Les prompts stockés côté Higgsfield correspondent à la fiche`);
   L.push(`\`prompts/ep${n}-${ep.slug}.md\`, à une différence près : la référence visage y est passée en`);

@@ -193,15 +193,20 @@ for (let i = 0; i < 14; i++) {
 
 /* ---- acte 3 : l'écran produit, en grille de cases ou en liste de lignes ---- */
 const A3 = DATA.ui.acte3;
-document.getElementById("scrtitle").textContent = A3.titre;
+const scrtitle = document.getElementById("scrtitle");
+scrtitle.textContent = A3.titre;
+if (A3.titre.length > 16) scrtitle.style.fontSize = px(64 * 16 / A3.titre.length);
 document.getElementById("dispo").textContent = "✓ " + A3.confirmation;
 const HASCHIPS = (A3.chips || []).length > 0;
 document.getElementById("dispo").style.top = px(HASCHIPS ? 346 : 196);
 const chipsRoot = document.getElementById("chips");
+const NCH = (A3.chips || []).length;
+const CHW = NCH ? (672 - (NCH - 1) * 42) / NCH : 0;   // largeur adaptée au nombre de chips
 const SCHIPS = (A3.chips || []).map((t, i) => {
   const el = document.createElement("div");
   el.className = "slot";
-  el.style.cssText = `left:${44 + i * 238}px;top:200px`;
+  el.style.cssText = `left:${44 + i * (CHW + 42)}px;top:200px;width:${CHW}px`;
+  if (t.length > 8) el.style.fontSize = px(Math.max(36, 52 * 8 / t.length));
   el.textContent = t;
   chipsRoot.appendChild(el);
   return el;

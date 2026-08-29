@@ -48,6 +48,38 @@
       { "t": "7–9 s", "texte": "cartes : Fournisseurs · Commandes fournisseurs · Réception · Stock." }
     ],
     "cartes": ["Fournisseurs", "Commandes fournisseurs", "Réception", "Stock"],
+    "ui": {
+          "acte2": {
+                "lignes": [
+                      {
+                            "chip": "10 kg"
+                      },
+                      {
+                            "chip": "10 pièces"
+                      },
+                      {
+                            "chip": "10 palettes"
+                      }
+                ],
+                "alerte": true
+          },
+          "acte3": {
+                "titre": "Commandes fournisseurs",
+                "chips": [
+                      "kg",
+                      "pièces",
+                      "palettes"
+                ],
+                "chip_actif": 0,
+                "confirmation": "réception validée",
+                "grille": {
+                      "cols": 3,
+                      "rows": 2,
+                      "cible": 0
+                },
+                "label_bas": "Réception"
+          }
+    },
     "texte_ecran": "Commandez juste. Recevez juste.",
     "sfx": "tick unité, whoosh réception, impact final."
   }
@@ -101,6 +133,31 @@
       { "t": "7–9 s", "texte": "cartes : Recettes · Ingrédients · Site vitrine · Pages." }
     ],
     "cartes": ["Recettes", "Ingrédients", "Site vitrine", "Pages"],
+    "ui": {
+          "acte2": {
+                "lignes": [
+                      {
+                            "chip": "Rouge"
+                      },
+                      {
+                            "chip": "Verte"
+                      }
+                ],
+                "alerte": true
+          },
+          "acte3": {
+                "type": "liste",
+                "titre": "Recettes",
+                "chips": [],
+                "chip_actif": -1,
+                "confirmation": "allergène signalé",
+                "lignes": 3,
+                "cible": 1,
+                "statut_initial": "vérifié",
+                "statut_final": "allergène",
+                "label_bas": "Site vitrine"
+          }
+    },
     "texte_ecran": "Allergènes : visibles avant. Pas après.",
     "sfx": "tick par ligne, alerte douce, impact final."
   }

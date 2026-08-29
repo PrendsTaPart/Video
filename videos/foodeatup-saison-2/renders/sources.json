@@ -65,6 +65,32 @@
     "etat": "pret",
     "url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/michael-fait-son-cinema-EPC04-le-brunch-des-zombies-master"
    }
+  },
+  "05": {
+   "scene1": "a873cfb4-dbf9-4087-b297-6a60861420ef",
+   "scene2": "76a8b9d1-3a3b-43b9-a6e8-ae7661c0dd95",
+   "vo": {
+    "generation_id": "ffdyypqMro4SlCszdqGY",
+    "duree_s": 5.34
+   }
+  },
+  "06": {
+   "scene1": "63a7a5fe-f19e-4ccd-993a-ec8cf298efc5",
+   "scene2": "12059501-6472-4033-a0e5-60fb5ec47fc8",
+   "vo": {
+    "generation_id": "DaRIsjLXBh9VXl7IjkAu",
+    "duree_s": 5.43
+   }
+  },
+  "07": {
+   "scene1": "e56f4ebb-11f5-4b28-921b-dba58f4a57f5",
+   "scene1_alternative": "fb1f1b8d-a9bb-430e-8e55-27c7a6e659a1",
+   "scene2": "035aa95b-f8d8-4ec8-9899-05d804dc1f4d",
+   "vo": {
+    "generation_id": "SqBe2fOcW98hvFyd4JLQ",
+    "duree_s": 5.85
+   },
+   "note": "Deux prises de scène 1 : la retenue (la plus récente) fait dire à la cliente « Je suis allergique aux haricots verts » et à Michael « Elle m'a dit quel légume déjà ? » ; l'alternative suit la fiche au mot près (« aux noix » / « C'est laquelle ? »). La scène 2 est déclarée 16:9 dans les paramètres Higgsfield mais sort bien en 720×1280."
   }
  },
  "transition": {

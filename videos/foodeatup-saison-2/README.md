@@ -97,10 +97,13 @@ identiques sur les 60 prompts par construction, on ne peut pas en oublier un.
 | 02 | Le contrôle | HACCP | `renders/ep02/ep02-le-controle.mp4` |
 | 03 | Le critique | Avis | `renders/ep03/ep03-le-critique.mp4` |
 | 04 | Le brunch des zombies | File d'attente · Plan de salle | `renders/ep04/ep04-le-brunch-des-zombies.mp4` |
+| 05 | Le casse | Caisse (rapport X / clôture Z) | `renders/ep05/ep05-le-casse.mp4` |
+| 06 | Le monstre | Commandes fournisseurs · Réception | `renders/ep06/ep06-le-monstre.mp4` |
+| 07 | La bombe | Recettes · Allergènes | `renders/ep07/ep07-la-bombe.mp4` |
 
-Tous en 32,1 s · 1080×1920 · 30 fps, transition et voix off incluses.
+Tous en 32,1 à 32,2 s · 1080×1920 · 30 fps, transition et voix off incluses.
 
-Les huit plans Seedance **existaient déjà** dans la bibliothèque Higgsfield et ont été réutilisés :
+Les quatorze plans Seedance **existaient déjà** dans la bibliothèque Higgsfield et ont été réutilisés :
 aucune génération n'a été lancée. Traçabilité par épisode dans `renders/ep{NN}/SOURCES.md`,
 générée depuis `renders/sources.json`.
 
@@ -112,8 +115,8 @@ node scripts/sources.mjs            # régénère les fiches de provenance
 ## Dépôt au catalogue Social FoodEatUp
 
 La série existe déjà côté catalogue : **`michael-fait-son-cinema`, saison 2, EPC01 → EPC24**, avec
-les mêmes titres et dans le même ordre que le brief. Les quatre masters y sont déposés, pièce
-`master`, état **`pret`** — la liste « à produire » commence maintenant à EPC05.
+les mêmes titres et dans le même ordre que le brief. Les sept masters y sont déposés, pièce
+`master`, état **`pret`** — la liste « à produire » commence maintenant à EPC08.
 
 | Notre épisode | Catalogue | État |
 |---|---|---|
@@ -121,6 +124,9 @@ les mêmes titres et dans le même ordre que le brief. Les quatre masters y sont
 | 02 Le contrôle | `EPC02` | pret |
 | 03 Le critique | `EPC03` | pret |
 | 04 Le brunch des zombies | `EPC04` | pret |
+| 05 Le casse | `EPC05` | pret |
+| 06 Le monstre | `EPC06` | pret |
+| 07 La bombe | `EPC07` | pret |
 
 **La publication sur les réseaux n'est pas faisable par un agent, et c'est voulu** : `pret` dit que
 le fichier répond, `valide` dit qu'un humain l'a regardé en entier. `valide` ne s'écrit que dans
@@ -140,7 +146,8 @@ en `video/mp4`) → `publier_video`.
 
 L'acte central de l'outro (ce qui devient des données, l'écran produit) est **décrit dans
 `episodes/*.json`** sous `montage.ui`, pas codé : un épisode se monte en remplissant ce bloc.
-Les épisodes 05 à 30 ne l'ont pas encore — `render-outro.mjs` le dit explicitement.
+Les épisodes 08 à 30 ne l'ont pas encore — `render-outro.mjs` le dit explicitement au lieu de
+rendre n'importe quoi.
 
 ## Points ouverts
 

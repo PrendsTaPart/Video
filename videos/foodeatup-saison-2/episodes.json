@@ -894,6 +894,37 @@
      "Rapport Z",
      "Paiements"
     ],
+    "ui": {
+     "acte2": {
+      "lignes": [
+       {
+        "chip": "Espèces"
+       },
+       {
+        "chip": "Carte"
+       },
+       {
+        "chip": "En ligne"
+       }
+      ],
+      "alerte": true
+     },
+     "acte3": {
+      "titre": "Caisse",
+      "chips": [
+       "Rapport X",
+       "Rapport Z"
+      ],
+      "chip_actif": 1,
+      "confirmation": "écart calculé",
+      "grille": {
+       "cols": 3,
+       "rows": 2,
+       "cible": 4
+      },
+      "label_bas": "Paiements"
+     }
+    },
     "texte_ecran": "Clôture Z : 2 minutes. Écart : calculé.",
     "sfx": "clink par colonne, tick de clôture, impact final."
    }
@@ -1003,6 +1034,38 @@
      "Réception",
      "Stock"
     ],
+    "ui": {
+     "acte2": {
+      "lignes": [
+       {
+        "chip": "10 kg"
+       },
+       {
+        "chip": "10 pièces"
+       },
+       {
+        "chip": "10 palettes"
+       }
+      ],
+      "alerte": true
+     },
+     "acte3": {
+      "titre": "Commandes fournisseurs",
+      "chips": [
+       "kg",
+       "pièces",
+       "palettes"
+      ],
+      "chip_actif": 0,
+      "confirmation": "réception validée",
+      "grille": {
+       "cols": 3,
+       "rows": 2,
+       "cible": 0
+      },
+      "label_bas": "Réception"
+     }
+    },
     "texte_ecran": "Commandez juste. Recevez juste.",
     "sfx": "tick unité, whoosh réception, impact final."
    }
@@ -1112,6 +1175,31 @@
      "Site vitrine",
      "Pages"
     ],
+    "ui": {
+     "acte2": {
+      "lignes": [
+       {
+        "chip": "Rouge"
+       },
+       {
+        "chip": "Verte"
+       }
+      ],
+      "alerte": true
+     },
+     "acte3": {
+      "type": "liste",
+      "titre": "Recettes",
+      "chips": [],
+      "chip_actif": -1,
+      "confirmation": "allergène signalé",
+      "lignes": 3,
+      "cible": 1,
+      "statut_initial": "vérifié",
+      "statut_final": "allergène",
+      "label_bas": "Site vitrine"
+     }
+    },
     "texte_ecran": "Allergènes : visibles avant. Pas après.",
     "sfx": "tick par ligne, alerte douce, impact final."
    }
