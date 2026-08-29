@@ -9,18 +9,26 @@ manifest.json  →  rushes/  →  work/beats.json  →  work/edl.json  →  work
    35 plans       (10 s)       BPM + temps        ordre + coupes      1080×1920         5 fichiers
 ```
 
-## Ce qui manque pour rendre le clip
+## État : monté
 
-**La chanson.** Générer le morceau sur Suno avec le prompt et les paroles de
-[`SUNO.md`](SUNO.md), déposer le fichier ici sous le nom `chanson.mp4` (ou `chanson.mp3`),
-puis :
+Clip rendu sur la chanson livrée (`chanson.mp3`, 4:30, 90,7 BPM détectés) — voir
+[`out/RAPPORT.md`](out/RAPPORT.md) pour l'ordre des plans et les timecodes.
+
+| | |
+|---|---|
+| Plans montés | 102, tuilant les 270,000 s **à l'image près** |
+| Fondus | 5 × 0,3 s, sur les bascules avant ↔ après |
+| Exports | 9:16, 1:1, 16:9, teaser 30 s, vignette — tous contrôlés à ffprobe |
+
+Les MP4 (355 Mo) ne sont pas versionnés : ils se régénèrent avec
 
 ```bash
-python3 scripts/run_all.py
+python3 scripts/run_all.py     # ~15 min sur 4 cœurs
 ```
 
-Tout le reste est prêt : les 35 rushes se téléchargent tout seuls, le montage se
-construit sur la grille de temps détectée dans le fichier livré, quelle que soit sa durée.
+après avoir redéposé `chanson.mp3` (le fichier Suno) à la racine du projet. Pour une
+autre version de la chanson, rien à changer : les sections sont des poids normalisés sur
+la durée réelle du fichier livré.
 
 ## Étapes
 
@@ -65,20 +73,34 @@ dans le rush se décale à chaque réutilisation (`Pool.take`).
    Le fondu marque donc la bascule que l'étalonnage rend visible (froid → chaud) — 5 à 6
    fondus sur tout le clip. Le plan sortant est rendu 0,3 s plus long, le fondu mange ce
    rab : la timeline musicale ne bouge pas d'une image.
-2. **Le pont fait 4 mesures, pas 8.** EP525 dure 10,08 s ; à 0,85× il couvre 11,9 s. Un
-   pont de 8 mesures (≈ 21 s) aurait imposé un 0,48×, c'est-à-dire de la bouillie. Le
-   brief dit « ralenti 0,85× », donc c'est la section qui cède.
+2. **Le pont garde son ralenti 0,85×, et ses trois plans de tête sortent des paroles.**
+   Le pont réel dure 28,7 s ; EP525 n'en tient que 11,9 s à 0,85×. Le ralentir à 0,35×
+   aurait donné de la bouillie, le combler au hasard aurait cassé le calme du passage.
+   Sa tête est donc portée par les plans que les paroles du pont nomment elles-mêmes —
+   « vingt heures quinze » (EP530), « vingt heures trente et une, le plat part » (EP531),
+   « vingt heures trente-deux, il ne remarque rien » (EP532) — avant EP525 « le même soir,
+   quatre fois ». C'est le seul écart au brief, qui supposait un pont plus court.
 3. **EP533 et EP534 sont retirés du pool de remplissage du refrain final.** Ils
    n'apparaissent que sur leurs vers (« le Z avant d'éteindre », « sept heures du matin,
    le lendemain ») ; les laisser dans la rotation aurait dilué leur arrivée.
 
 ### Calage sur la chanson
 
-Les sections de `song-structure.json` sont des **poids en mesures**, pas des timecodes :
-normalisés sur la durée réelle du fichier livré, puis chaque frontière est ramenée sur le
-temps fort le plus proche. Les trois vers repères (`anchors`) sont placés en fraction de
-leur section. Pour un calage manuel exact, voir « Si le calage ne tombe pas juste » dans
-[`SUNO.md`](SUNO.md).
+Les sections de `song-structure.json` sont des **poids en mesures**, pas des timecodes.
+Trois niveaux de calage, du plus fiable au moins fiable :
+
+1. **Les passages calmes**, que la chanson donne sans ambiguïté (`02_analyze_audio.py`
+   les mesure sur l'enveloppe RMS lissée) : intro piano seul, pont piano/voix, outro.
+   Sur la chanson livrée : intro jusqu'à 19,4 s, pont de 3:03 à 3:31, outro à 4:20.
+2. **Les frontières d'arrangement** détectées sur le timbre, l'harmonie et l'énergie
+   (`librosa.segment.agglomerative`) : les frontières encore libres y sont attirées, sans
+   jamais laisser une section voisine tomber sous 60 % de sa part — sinon deux arêtes
+   attirées par le même repère écrasent la section coincée entre elles.
+3. **Le prorata des mesures** entre deux points ainsi fixés, puis calage sur le temps fort
+   voisin.
+
+Les trois vers repères (`anchors`) sont placés en fraction de leur section. Pour un calage
+manuel exact, voir « Si le calage ne tombe pas juste » dans [`SUNO.md`](SUNO.md).
 
 Toutes les frontières sont quantifiées sur la grille d'images (30 i/s) : sans ça, les
 arrondis de 107 plans s'additionnent et la fin du montage dérive de la musique.
@@ -95,7 +117,9 @@ arrondis de 107 plans s'additionnent et la fin du montage dérive de la musique.
 | `RAPPORT.md` | ordre des plans, timecodes, contrôles | traçabilité |
 
 Le 16:9 **ne recadre pas** : un recadrage 16:9 dans du 9:16 couperait les visages, le plan
-vertical reste donc entier au centre sur un fond flouté tiré de lui-même.
+vertical reste donc entier au centre sur un fond flouté tiré de lui-même. Le 1:1, lui, est
+un recadrage centré comme demandé au brief ; si un cadrage serré fait passer une tête trop
+haut, décaler le `crop` de `06_exports.py` vers le haut (`y=(ih-1080)*0.42`) suffit.
 
 ## Rushes
 

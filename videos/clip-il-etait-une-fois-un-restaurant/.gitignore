@@ -5,6 +5,9 @@ rushes/
 chanson.mp4
 chanson.mp3
 chanson.wav
-# Rendus et intermédiaires
-out/
+# Rendus et intermédiaires — les MP4 pèsent 355 Mo, ils se régénèrent ;
+# seuls le rapport et la vignette sont versionnés pour la traçabilité.
+out/*
+!out/RAPPORT.md
+!out/vignette.jpg
 work/
