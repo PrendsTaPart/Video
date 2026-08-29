@@ -1,0 +1,10 @@
+# Rushes téléchargés depuis Higgsfield / RapidoCMS — jamais versionnés,
+# ils se retéléchargent avec scripts/01_fetch_rushes.py (idempotent).
+rushes/
+# Chanson Suno déposée par Michael
+chanson.mp4
+chanson.mp3
+chanson.wav
+# Rendus et intermédiaires
+out/
+work/
