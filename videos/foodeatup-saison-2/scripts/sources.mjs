@@ -45,9 +45,11 @@ for (const [n, src] of Object.entries(SRC.episodes)) {
   L.push(`| Transition (commune aux 30 épisodes) | « ${S.transition.texte} » — prise \`${SRC.transition.generation_id}\` (${fr(SRC.transition.duree_s)} s), calée à ${fr(S.transition.cale_s)} s |`);
   L.push(`| Ligne de l'épisode | « ${ep.montage.vo} » |`);
   L.push(`| Prise retenue | \`${src.vo.generation_id}\` (${fr(src.vo.duree_s)} s) |`);
-  L.push(`| Calage | démarre à **4,60 s**, se termine à **${fr((4.6 + src.vo.duree_s).toFixed(2))} s** (fenêtre : avant 11,0 s) ${4.6 + src.vo.duree_s < 11 ? "✅" : "⚠️"} |`, "");
+  const depart = Math.max(4.25, Math.min(4.6, 10.9 - src.vo.duree_s));
+  L.push(`| Calage | démarre à **${fr(depart.toFixed(2))} s**, se termine à **${fr((depart + src.vo.duree_s).toFixed(2))} s** (fenêtre : avant 11,0 s) ${depart + src.vo.duree_s <= 11 ? "✅" : "⚠️"} |`, "");
   L.push(`Les prises ElevenLabs sortent très bas : chacune est normalisée à −16 LUFS / −1,5 dBTP.`);
-  L.push(`L'outro est ensuite calé au niveau de saison (−18,5 LUFS), puis le master entier est normalisé`);
+  L.push(`Le départ de la voix est calculé pour qu'elle finisse avant 11,0 s : 4,60 s par défaut, avancé quand
+la prise est longue. L'outro est ensuite calé au niveau de saison (−18,5 LUFS), puis le master normalisé`);
   L.push(`à −16 LUFS en gain linéaire (loudnorm deux passes), le standard des plateformes.`, "");
   if (src.catalogue) {
     L.push(`## Dépôt au catalogue Social FoodEatUp`, "");

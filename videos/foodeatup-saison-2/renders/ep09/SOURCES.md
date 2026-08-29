@@ -1,27 +1,27 @@
-# Épisode 02 « Le contrôle » — provenance
+# Épisode 09 « Le sous-marin » — provenance
 
 **Aucune génération Higgsfield n'a été lancée** (règle `CLAUDE.md`). Les deux plans de 10 s
 existaient déjà dans la bibliothèque du compte et sont **réutilisés tels quels**.
 
 | Plan | Generation ID Higgsfield | Fichier |
 |---|---|---|
-| Scène 1 — « Quelque part » | `49010b56-725f-4302-bb8f-ed6b891a9a9c` | `source/ep02-scene1.mp4` |
-| Scène 2 — « Dans ma tête » | `a51846d0-b878-4cce-84e1-de7ee98860b6` | `source/ep02-scene2.mp4` |
+| Scène 1 — « Ping » | `cfc8c2f1-45b9-48ea-9875-ea4e71679382` | `source/ep09-scene1.mp4` |
+| Scène 2 — « On remonte » | `0e9d1f66-5fca-4a91-84e9-444996933ea8` | `source/ep09-scene2.mp4` |
 
 Sources d'origine : 720×1280, 24 fps, ~10 s, audio AAC 32 kHz (dialogue français et ambiance
 générés dans la même passe). Les prompts stockés côté Higgsfield correspondent à la fiche
-`prompts/ep02-le-controle.md`, à une différence près : la référence visage y est passée en
+`prompts/ep09-le-sous-marin.md`, à une différence près : la référence visage y est passée en
 `<<<image_1>>>` (Reference Element) au lieu de `@Image 1`.
 
 ## Sorties
 
 | Fichier | Contenu |
 |---|---|
-| `ep02-le-controle.mp4` | **Le master** : scène 1 + scène 2 + transition + animation, 1080×1920, 30 fps, 32,1 s |
-| `ep02-outro.mp4` | L'outro seul, 12 s, voix off + SFX |
-| `ep02-outro-muet.mp4` | L'outro seul, 12 s, SFX uniquement |
+| `ep09-le-sous-marin.mp4` | **Le master** : scène 1 + scène 2 + transition + animation, 1080×1920, 30 fps, 32,1 s |
+| `ep09-outro.mp4` | L'outro seul, 12 s, voix off + SFX |
+| `ep09-outro-muet.mp4` | L'outro seul, 12 s, SFX uniquement |
 | `vo.mp3` | La voix off de l'épisode, normalisée |
-| `ep02-thumb.png` | Miniature : le plan figé du début de l'outro + le titre |
+| `ep09-thumb.png` | Miniature : le plan figé du début de l'outro + le titre |
 | `scene2-last-frame.png` | Dernière image de la scène 2, plaque de départ de l'outro |
 
 ## Voix off
@@ -30,25 +30,14 @@ générés dans la même passe). Les prompts stockés côté Higgsfield correspo
 |---|---|
 | Voix | **Adam - Instructor** `TGAegA0zNRi8I6nUdq3i`, modèle `eleven_multilingual_v2` |
 | Transition (commune aux 30 épisodes) | « Cette scène aurait pu être évitée ? » — prise `sZWCVMCGg2WgpYJb4j3c` (2,04 s), calée à 2,1 s |
-| Ligne de l'épisode | « Le contrôle d'hygiène ? Avec FoodEatUp, chaque relevé est daté, rangé, prêt à montrer. » |
-| Prise retenue | `dzrtl8E6GnjCJVM2DQ7v` (5,2 s) |
-| Calage | démarre à **4,60 s**, se termine à **9,80 s** (fenêtre : avant 11,0 s) ✅ |
+| Ligne de l'épisode | « Chaque plat, chaque poste, chaque minute : l'écran cuisine FoodEatUp remplace les tickets et le ping. » |
+| Prise retenue | `u53Un5apJel9oNqZ9wd1` (6,41 s) |
+| Calage | démarre à **4,49 s**, se termine à **10,90 s** (fenêtre : avant 11,0 s) ✅ |
 
 Les prises ElevenLabs sortent très bas : chacune est normalisée à −16 LUFS / −1,5 dBTP.
 Le départ de la voix est calculé pour qu'elle finisse avant 11,0 s : 4,60 s par défaut, avancé quand
 la prise est longue. L'outro est ensuite calé au niveau de saison (−18,5 LUFS), puis le master normalisé
 à −16 LUFS en gain linéaire (loudnorm deux passes), le standard des plateformes.
-
-## Dépôt au catalogue Social FoodEatUp
-
-| | |
-|---|---|
-| Épisode au catalogue | `EPC02` — série `michael-fait-son-cinema`, saison 2 |
-| Pièce | `master` |
-| État | **pret** |
-| Fichier | https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/michael-fait-son-cinema-EPC02-le-controle-master |
-
-« pret » s'écrit par un agent, « valide » est un geste humain dans /admin/production. Rien ne se planifie sur les réseaux sans « valide » : aucun outil n'expose cette bascule.
 
 ## Calage des SFX dans l'outro (secondes)
 
@@ -59,7 +48,7 @@ la prise est longue. L'outro est ensuite calé au niveau de saison (−18,5 LUFS
 ## Reconstruire
 
 ```bash
-./scripts/monter-episode.sh 02
+./scripts/monter-episode.sh 09
 ```
 
 ---

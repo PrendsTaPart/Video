@@ -211,6 +211,31 @@
       { "t": "7–9 s", "texte": "cartes : Site vitrine · Avis · Fidélité · Clients." }
     ],
     "cartes": ["Site vitrine", "Avis", "Fidélité", "Clients"],
+    "ui": {
+          "acte2": {
+                "lignes": [
+                      {
+                            "chip": "8 photos"
+                      },
+                      {
+                            "chip": "1 avis"
+                      }
+                ],
+                "alerte": false
+          },
+          "acte3": {
+                "type": "liste",
+                "titre": "Avis",
+                "chips": [],
+                "chip_actif": -1,
+                "confirmation": "avis publié",
+                "lignes": 3,
+                "cible": 1,
+                "statut_initial": "à modérer",
+                "statut_final": "publié",
+                "label_bas": "Site vitrine"
+          }
+    },
     "texte_ecran": "Ils filment. Vous gagnez.",
     "sfx": "shutter par photo, ding de points, impact final."
   }
@@ -264,6 +289,38 @@
       { "t": "7–9 s", "texte": "cartes : Écran cuisine · Postes · Commandes · Tables." }
     ],
     "cartes": ["Écran cuisine", "Postes", "Commandes", "Tables"],
+    "ui": {
+          "acte2": {
+                "lignes": [
+                      {
+                            "chip": "Froid"
+                      },
+                      {
+                            "chip": "Chaud"
+                      },
+                      {
+                            "chip": "Passe"
+                      }
+                ],
+                "alerte": false
+          },
+          "acte3": {
+                "titre": "Écran cuisine",
+                "chips": [
+                      "Froid",
+                      "Chaud",
+                      "Passe"
+                ],
+                "chip_actif": 1,
+                "confirmation": "plat prêt",
+                "grille": {
+                      "cols": 3,
+                      "rows": 2,
+                      "cible": 4
+                },
+                "label_bas": "Postes"
+          }
+    },
     "texte_ecran": "Écran cuisine : chaque plat, chaque poste.",
     "sfx": "ping doux par carte, tick par statut, impact final."
   }
@@ -317,6 +374,37 @@
       { "t": "7–9 s", "texte": "cartes : Stock · Ingrédients · Réception · Notifications." }
     ],
     "cartes": ["Stock", "Ingrédients", "Réception", "Notifications"],
+    "ui": {
+          "acte2": {
+                "lignes": [
+                      {
+                            "chip": "12"
+                      },
+                      {
+                            "chip": "11"
+                      },
+                      {
+                            "chip": "15"
+                      }
+                ],
+                "alerte": true
+          },
+          "acte3": {
+                "titre": "Stock",
+                "chips": [
+                      "Vente",
+                      "Réception"
+                ],
+                "chip_actif": 0,
+                "confirmation": "stock bas",
+                "grille": {
+                      "cols": 3,
+                      "rows": 2,
+                      "cible": 3
+                },
+                "label_bas": "Notifications"
+          }
+    },
     "texte_ecran": "Le stock se compte tout seul.",
     "sfx": "tick par mouvement, alerte douce, impact final."
   }

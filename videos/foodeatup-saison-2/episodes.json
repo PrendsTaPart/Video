@@ -1310,6 +1310,31 @@
      "Fidélité",
      "Clients"
     ],
+    "ui": {
+     "acte2": {
+      "lignes": [
+       {
+        "chip": "8 photos"
+       },
+       {
+        "chip": "1 avis"
+       }
+      ],
+      "alerte": false
+     },
+     "acte3": {
+      "type": "liste",
+      "titre": "Avis",
+      "chips": [],
+      "chip_actif": -1,
+      "confirmation": "avis publié",
+      "lignes": 3,
+      "cible": 1,
+      "statut_initial": "à modérer",
+      "statut_final": "publié",
+      "label_bas": "Site vitrine"
+     }
+    },
     "texte_ecran": "Ils filment. Vous gagnez.",
     "sfx": "shutter par photo, ding de points, impact final."
    }
@@ -1418,6 +1443,38 @@
      "Commandes",
      "Tables"
     ],
+    "ui": {
+     "acte2": {
+      "lignes": [
+       {
+        "chip": "Froid"
+       },
+       {
+        "chip": "Chaud"
+       },
+       {
+        "chip": "Passe"
+       }
+      ],
+      "alerte": false
+     },
+     "acte3": {
+      "titre": "Écran cuisine",
+      "chips": [
+       "Froid",
+       "Chaud",
+       "Passe"
+      ],
+      "chip_actif": 1,
+      "confirmation": "plat prêt",
+      "grille": {
+       "cols": 3,
+       "rows": 2,
+       "cible": 4
+      },
+      "label_bas": "Postes"
+     }
+    },
     "texte_ecran": "Écran cuisine : chaque plat, chaque poste.",
     "sfx": "ping doux par carte, tick par statut, impact final."
    }
@@ -1526,6 +1583,37 @@
      "Réception",
      "Notifications"
     ],
+    "ui": {
+     "acte2": {
+      "lignes": [
+       {
+        "chip": "12"
+       },
+       {
+        "chip": "11"
+       },
+       {
+        "chip": "15"
+       }
+      ],
+      "alerte": true
+     },
+     "acte3": {
+      "titre": "Stock",
+      "chips": [
+       "Vente",
+       "Réception"
+      ],
+      "chip_actif": 0,
+      "confirmation": "stock bas",
+      "grille": {
+       "cols": 3,
+       "rows": 2,
+       "cible": 3
+      },
+      "label_bas": "Notifications"
+     }
+    },
     "texte_ecran": "Le stock se compte tout seul.",
     "sfx": "tick par mouvement, alerte douce, impact final."
    }
@@ -1637,6 +1725,31 @@
      "Shifts",
      "Contrats"
     ],
+    "ui": {
+     "acte2": {
+      "lignes": [
+       {
+        "chip": "12:00:00"
+       },
+       {
+        "chip": "12:00:01"
+       }
+      ],
+      "alerte": true
+     },
+     "acte3": {
+      "type": "liste",
+      "titre": "Pointages",
+      "chips": [],
+      "chip_actif": -1,
+      "confirmation": "arrivée enregistrée",
+      "lignes": 3,
+      "cible": 0,
+      "statut_initial": "à valider",
+      "statut_final": "validé",
+      "label_bas": "Planning"
+     }
+    },
     "texte_ecran": "Pointage : la vérité à la seconde.",
     "sfx": "sifflet court, tick, impact final."
    }
@@ -1745,6 +1858,34 @@
      "Candidatures",
      "Employés"
     ],
+    "ui": {
+     "acte2": {
+      "lignes": [
+       {
+        "chip": "nouvelle"
+       },
+       {
+        "chip": "nouvelle"
+       },
+       {
+        "chip": "nouvelle"
+       }
+      ],
+      "alerte": false
+     },
+     "acte3": {
+      "type": "liste",
+      "titre": "Recrutement",
+      "chips": [],
+      "chip_actif": -1,
+      "confirmation": "candidature retenue",
+      "lignes": 3,
+      "cible": 1,
+      "statut_initial": "nouvelle",
+      "statut_final": "retenue",
+      "label_bas": "Candidatures"
+     }
+    },
     "texte_ecran": "Recrutez. Sans chasser les CV.",
     "sfx": "tick par candidature, whoosh de statut, impact final."
    }

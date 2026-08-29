@@ -50,6 +50,31 @@
       { "t": "7–9 s", "texte": "cartes : Pointages · Planning · Shifts · Contrats." }
     ],
     "cartes": ["Pointages", "Planning", "Shifts", "Contrats"],
+    "ui": {
+          "acte2": {
+                "lignes": [
+                      {
+                            "chip": "12:00:00"
+                      },
+                      {
+                            "chip": "12:00:01"
+                      }
+                ],
+                "alerte": true
+          },
+          "acte3": {
+                "type": "liste",
+                "titre": "Pointages",
+                "chips": [],
+                "chip_actif": -1,
+                "confirmation": "arrivée enregistrée",
+                "lignes": 3,
+                "cible": 0,
+                "statut_initial": "à valider",
+                "statut_final": "validé",
+                "label_bas": "Planning"
+          }
+    },
     "texte_ecran": "Pointage : la vérité à la seconde.",
     "sfx": "sifflet court, tick, impact final."
   }
@@ -103,6 +128,34 @@
       { "t": "7–9 s", "texte": "cartes : Recrutement · Offres d'emploi · Candidatures · Employés." }
     ],
     "cartes": ["Recrutement", "Offres d'emploi", "Candidatures", "Employés"],
+    "ui": {
+          "acte2": {
+                "lignes": [
+                      {
+                            "chip": "nouvelle"
+                      },
+                      {
+                            "chip": "nouvelle"
+                      },
+                      {
+                            "chip": "nouvelle"
+                      }
+                ],
+                "alerte": false
+          },
+          "acte3": {
+                "type": "liste",
+                "titre": "Recrutement",
+                "chips": [],
+                "chip_actif": -1,
+                "confirmation": "candidature retenue",
+                "lignes": 3,
+                "cible": 1,
+                "statut_initial": "nouvelle",
+                "statut_final": "retenue",
+                "label_bas": "Candidatures"
+          }
+    },
     "texte_ecran": "Recrutez. Sans chasser les CV.",
     "sfx": "tick par candidature, whoosh de statut, impact final."
   }

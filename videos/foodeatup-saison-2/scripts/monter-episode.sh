@@ -12,7 +12,8 @@
 # Produit : ep{NN}-{slug}.mp4 (master), ep{NN}-outro.mp4, ep{NN}-outro-muet.mp4,
 #           ep{NN}-thumb.png, scene2-last-frame.png
 set -euo pipefail
-NN=$(printf "%02d" "${1:?il manque le numéro d’épisode}")
+# 10# force la base décimale : sans lui, « 08 » et « 09 » sont lus comme de l’octal
+NN=$(printf "%02d" "$((10#${1:?il manque le numéro d’épisode}))")
 ROOT="$(cd "$(dirname "$0")/.." && pwd)"
 EP="$ROOT/renders/ep$NN"; W="$EP/work"; SFX="$ROOT/assets/sfx"
 SLUG=$(node -p "require('$ROOT/episodes.json').episodes.find(e=>e.num===$((10#$NN))).slug")
@@ -28,11 +29,18 @@ node "$ROOT/scripts/render-outro.mjs" "$((10#$NN))"
 # clap 0,40 · whoosh de la punchline 2,00 · voix de transition 2,10 · voix de l'épisode 4,60
 # · ticks 4,40/4,73/5,07 · whoosh du tap 7,60 · ticks des cartes 9,33/9,67/10,00
 # · whoosh 10,95 + impact 11,00
+# Calage de la voix de l'épisode : 4,60 s par défaut, avancé juste ce qu'il faut pour qu'elle
+# finisse avant 11,0 s (le logo), sans jamais mordre sur la voix de transition qui finit à 4,14 s.
+VODUR=$({ ffmpeg -hide_banner -i "$W/vo/vo.wav" 2>&1 || true; } | grep -oE "Duration: [0-9:.]+" | head -1 | cut -d' ' -f2 \
+        | awk -F: '{printf "%.3f", $1*3600+$2*60+$3}')
+VODELAY=$(node -p "Math.round(Math.max(4250, Math.min(4600, 10900 - $VODUR * 1000)))")
+echo "   voix de l'épisode : ${VODUR}s → démarre à $((VODELAY))ms, finit à $(node -p "(($VODELAY)/1000 + $VODUR).toFixed(2)")s"
+
 mix() { # $1 = vo | muet
   local VOIN="" VOMIX="" VOTAG="" N=12 O=0
   if [ "$1" = vo ]; then
     VOIN="-i $ROOT/voix-off/transition-saison-2.mp3 -i $W/vo/vo.wav"
-    VOMIX="[1:a]loudnorm=I=-16:TP=-1.5:LRA=11,adelay=2100|2100,volume=1.15[t];[2:a]adelay=4600|4600[v];"
+    VOMIX="[1:a]loudnorm=I=-16:TP=-1.5:LRA=11,adelay=2100|2100,volume=1.15[t];[2:a]adelay=${VODELAY}|${VODELAY}[v];"
     VOTAG="[t][v]"; N=14; O=2
   fi
   ffmpeg -y -loglevel error -f lavfi -i "anullsrc=r=48000:cl=stereo:d=12" $VOIN \

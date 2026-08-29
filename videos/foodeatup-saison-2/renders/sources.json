@@ -115,6 +115,47 @@
     "etat": "pret",
     "url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/michael-fait-son-cinema-EPC07-la-bombe-master"
    }
+  },
+  "08": {
+   "scene1": "f260ccf9-3023-4bb3-b7d8-d3062b402a32",
+   "scene2": "bb74186e-89a2-43bd-beca-4e3433ee4c86",
+   "vo": {
+    "generation_id": "urjMjG9PVxCTSwYJEaH0",
+    "duree_s": 5.85
+   }
+  },
+  "09": {
+   "scene1": "cfc8c2f1-45b9-48ea-9875-ea4e71679382",
+   "scene2": "0e9d1f66-5fca-4a91-84e9-444996933ea8",
+   "vo": {
+    "generation_id": "u53Un5apJel9oNqZ9wd1",
+    "duree_s": 6.41
+   }
+  },
+  "10": {
+   "scene1": "9f41ea9e-7fcd-4579-8982-34548d82ccbc",
+   "scene2": "4bb23fa2-46c6-4566-9e12-9f5b22334e4b",
+   "vo": {
+    "generation_id": "kMETi7TLtbcllMntgcgz",
+    "duree_s": 4.69
+   }
+  },
+  "11": {
+   "scene1": "d0f06aee-5755-41ba-acd8-7081f84c3cff",
+   "scene2": "c17009a7-b720-41af-85a7-7400af499f0b",
+   "vo": {
+    "generation_id": "RuVLtWDPRvuo2e4wO6J4",
+    "duree_s": 5.71
+   }
+  },
+  "12": {
+   "scene1": "2f1f2533-00ce-4bc1-aa7f-bb3e2a50d22e",
+   "scene2": "d6533af5-f81b-4872-850c-2670deb5cc80",
+   "vo": {
+    "generation_id": "kzEB3wToSJBmojcYmDGC",
+    "duree_s": 5.8
+   },
+   "note": "⚠️ Tenue de saison rompue entre les deux scènes : Michael porte la toque, la veste blanche et le tablier FoodEatUp en scène 1, mais une chemise puis une veste sombres, sans toque, en scène 2. La checklist de saison l'interdit — la scène 2 est à regénérer avant validation. L'épisode n'est pas déposé au catalogue pour cette raison."
   }
  },
  "transition": {

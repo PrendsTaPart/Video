@@ -100,11 +100,20 @@ identiques sur les 60 prompts par construction, on ne peut pas en oublier un.
 | 05 | Le casse | Caisse (rapport X / clôture Z) | `renders/ep05/ep05-le-casse.mp4` |
 | 06 | Le monstre | Commandes fournisseurs · Réception | `renders/ep06/ep06-le-monstre.mp4` |
 | 07 | La bombe | Recettes · Allergènes | `renders/ep07/ep07-la-bombe.mp4` |
+| 08 | Le documentaire | Avis · Site vitrine · Fidélité | `renders/ep08/ep08-le-documentaire.mp4` |
+| 09 | Le sous-marin | Écran cuisine | `renders/ep09/ep09-le-sous-marin.mp4` |
+| 10 | La boucle | Stock | `renders/ep10/ep10-la-boucle.mp4` |
+| 11 | La VAR | Pointages · Planning | `renders/ep11/ep11-la-var.mp4` |
+| 12 | Le casting | Recrutement | `renders/ep12/ep12-le-casting.mp4` ⚠️ |
 
 Tous en 32,1 à 32,2 s · 1080×1920 · 30 fps, transition et voix off incluses.
 
-Les quatorze plans Seedance **existaient déjà** dans la bibliothèque Higgsfield et ont été réutilisés :
-aucune génération n'a été lancée. Traçabilité par épisode dans `renders/ep{NN}/SOURCES.md`,
+⚠️ **Épisode 12** : la tenue de saison est rompue entre les deux scènes (toque et veste blanche en
+scène 1, chemise puis veste sombres sans toque en scène 2). La checklist l'interdit : la scène 2 est
+à regénérer. L'épisode est monté et visible, mais **pas déposé au catalogue**.
+
+Les vingt-quatre plans Seedance **existaient déjà** dans la bibliothèque Higgsfield et ont été
+réutilisés : aucune génération n'a été lancée. Traçabilité par épisode dans `renders/ep{NN}/SOURCES.md`,
 générée depuis `renders/sources.json`.
 
 ```bash
@@ -115,8 +124,7 @@ node scripts/sources.mjs            # régénère les fiches de provenance
 ## Dépôt au catalogue Social FoodEatUp
 
 La série existe déjà côté catalogue : **`michael-fait-son-cinema`, saison 2, EPC01 → EPC24**, avec
-les mêmes titres et dans le même ordre que le brief. Les sept masters y sont déposés, pièce
-`master`, état **`pret`** — la liste « à produire » commence maintenant à EPC08.
+les mêmes titres et dans le même ordre que le brief. Onze masters y sont déposés, pièce `master`, état **`pret`**.
 
 | Notre épisode | Catalogue | État |
 |---|---|---|
@@ -127,6 +135,11 @@ les mêmes titres et dans le même ordre que le brief. Les sept masters y sont d
 | 05 Le casse | `EPC05` | pret |
 | 06 Le monstre | `EPC06` | pret |
 | 07 La bombe | `EPC07` | pret |
+| 08 Le documentaire | `EPC08` | pret |
+| 09 Le sous-marin | `EPC09` | pret |
+| 10 La boucle | `EPC10` | pret |
+| 11 La VAR | `EPC11` | pret |
+| 12 Le casting | — | non déposé (tenue de saison rompue) |
 
 **La publication sur les réseaux n'est pas faisable par un agent, et c'est voulu** : `pret` dit que
 le fichier répond, `valide` dit qu'un humain l'a regardé en entier. `valide` ne s'écrit que dans
@@ -146,7 +159,7 @@ en `video/mp4`) → `publier_video`.
 
 L'acte central de l'outro (ce qui devient des données, l'écran produit) est **décrit dans
 `episodes/*.json`** sous `montage.ui`, pas codé : un épisode se monte en remplissant ce bloc.
-Les épisodes 08 à 30 ne l'ont pas encore — `render-outro.mjs` le dit explicitement au lieu de
+Les épisodes 13 à 30 ne l'ont pas encore — `render-outro.mjs` le dit explicitement au lieu de
 rendre n'importe quoi.
 
 ## Points ouverts

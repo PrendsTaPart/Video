@@ -35,7 +35,8 @@ générés dans la même passe). Les prompts stockés côté Higgsfield correspo
 | Calage | démarre à **4,60 s**, se termine à **10,03 s** (fenêtre : avant 11,0 s) ✅ |
 
 Les prises ElevenLabs sortent très bas : chacune est normalisée à −16 LUFS / −1,5 dBTP.
-L'outro est ensuite calé au niveau de saison (−18,5 LUFS), puis le master entier est normalisé
+Le départ de la voix est calculé pour qu'elle finisse avant 11,0 s : 4,60 s par défaut, avancé quand
+la prise est longue. L'outro est ensuite calé au niveau de saison (−18,5 LUFS), puis le master normalisé
 à −16 LUFS en gain linéaire (loudnorm deux passes), le standard des plateformes.
 
 ## Dépôt au catalogue Social FoodEatUp
