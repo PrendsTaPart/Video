@@ -19,6 +19,7 @@ Clip rendu sur la chanson livrée (`chanson.mp3`, 4:30, 90,7 BPM détectés) —
 | Plans montés | 102, tuilant les 270,000 s **à l'image près** |
 | Fondus | 5 × 0,3 s, sur les bascules avant ↔ après |
 | Exports | 9:16, 1:1, 16:9, teaser 30 s, vignette — tous contrôlés à ffprobe |
+| En ligne | https://www.youtube.com/watch?v=Z31TDGNBErs (chaîne FoodEatUp, non répertoriée) |
 
 Les MP4 (355 Mo) ne sont pas versionnés : ils se régénèrent avec
 
@@ -115,6 +116,21 @@ arrondis de 107 plans s'additionnent et la fin du montage dérive de la musique.
 | `clip-teaser-30s.mp4` | 30 s autour du refrain final | teaser |
 | `vignette.jpg` | image du plan EP535 | miniature |
 | `RAPPORT.md` | ordre des plans, timecodes, contrôles | traçabilité |
+
+### Copies de livraison (`dist/`)
+
+Le master CRF 18 pèse 149 Mo — au-dessus de la limite GitHub de 100 Mo, et au-dessus de ce
+que le connecteur YouTube encaisse : un dépôt du fichier 87 Mo est resté bloqué en
+« uploading » plus de trente minutes sans message d'erreur, là où la copie 56 Mo est passée
+en quelques secondes. D'où deux copies versionnées, qui servent d'URL publique
+(`raw.githubusercontent.com`, la même route que les rushes de la série) :
+
+| Fichier | Poids | Usage |
+|---|---|---|
+| `dist/clip-9x16-livraison.mp4` | 87 Mo, CRF 23 | archive téléchargeable pleine qualité |
+| `dist/clip-9x16-web.mp4` | 56 Mo, CRF 26 | ce qui a été déposé sur YouTube |
+
+Les deux restent en 1080×1920. Pour un nouveau dépôt automatisé, viser **≤ 60 Mo**.
 
 Le 16:9 **ne recadre pas** : un recadrage 16:9 dans du 9:16 couperait les visages, le plan
 vertical reste donc entier au centre sur un fond flouté tiré de lui-même. Le 1:1, lui, est
