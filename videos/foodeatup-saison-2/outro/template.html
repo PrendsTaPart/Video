@@ -152,6 +152,9 @@ DATA.cartes.forEach((nom, i) => {
   c.className = "modcard"; c.style.top = px(y); c.textContent = nom;
   cardsRoot.appendChild(c);
 });
+const punchEl = document.getElementById("punch");
+punchEl.style.top = "auto";
+punchEl.style.bottom = px(1920 - CTOP + 56);   // toujours au-dessus de la première carte
 const CARDS = [...cardsRoot.querySelectorAll(".modcard")];
 const FLOWS = [...cardsRoot.querySelectorAll(".flow")];
 

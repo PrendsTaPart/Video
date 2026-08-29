@@ -84,4 +84,5 @@ ffmpeg -y -loglevel error -i "$W/master-brut.mp4" \
   -c:v copy -c:a aac -b:a 192k "$EP/ep$NN-$SLUG.mp4"
 
 echo "✅ $EP/ep$NN-$SLUG.mp4"
-ffmpeg -hide_banner -i "$EP/ep$NN-$SLUG.mp4" 2>&1 | grep -E "Duration|Stream #0:0" | sed 's/^/   /'
+# ffmpeg -i sans sortie renvoie 1 : on le neutralise pour ne pas faire échouer le script
+ffmpeg -hide_banner -i "$EP/ep$NN-$SLUG.mp4" 2>&1 | grep -E "Duration|Stream #0:0" | sed 's/^/   /' || true
