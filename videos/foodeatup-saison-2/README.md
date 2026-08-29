@@ -84,10 +84,24 @@ identiques sur les 60 prompts par construction, on ne peut pas en oublier un.
 - **« FoodEatUp » n'est jamais prononcé par l'avatar Seedance**, seulement par la voix off du
   montage. `npm run check` échoue si une réplique l'introduit.
 
+## Épisodes montés
+
+| # | Épisode | Master | État |
+|---|---|---|---|
+| 01 | Le duel | `renders/ep01/ep01-le-duel.mp4` (30,1 s · 1080×1920 · 30 fps) | ✅ monté, ⚠️ sans voix off |
+
+Les deux plans Seedance de l'épisode 01 **existaient déjà** dans la bibliothèque Higgsfield et ont
+été réutilisés : aucune génération n'a été lancée. Traçabilité complète dans
+`renders/ep01/SOURCES.md`.
+
 ## Points ouverts
 
-- Tenue de saison (`@Image 2`) : proposition à valider, tout le reste en dépend.
+- **Voix off bloquée** : le connecteur ElevenLabs renvoie `Failed to generate audio` sur chaque
+  prise (8 tentatives, 2 modèles) et aucune clé API locale n'est présente. L'outro de l'épisode 01
+  est livré en SFX seuls ; la piste voix se rajoute sans retoucher l'image.
 - Logo officiel en **SVG** absent du dépôt (seulement du PNG) — voir `assets/README.md`.
-- `sfx/clap.wav` et `sfx/whoosh.wav` à sourcer ; `tick` et `impact` ont un substitut.
 - 13 voix off dépassent la fenêtre de 7 s au débit posé. Le texte du brief est conservé tel quel et
   une **variante courte est proposée** dans chaque fiche concernée : à trancher avant l'enregistrement.
+- **Continuité épisode 01** : la scène 1 et la scène 2 ne se passent pas dans la même salle
+  (bistro sombre boisé vs salle rustique à fenêtre). Acceptable en l'état, mais à verrouiller via
+  `@Image 3` sur les prochains épisodes.

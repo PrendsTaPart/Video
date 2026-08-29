@@ -1,0 +1,295 @@
+<!-- Outro FoodEatUp saison 2 — gabarit déterministe.
+     Aucune animation CSS : tout est calculé par seek(frame) pour un rendu image par image. -->
+<meta charset="utf-8">
+<style>
+@font-face { font-family: "Goodly"; src: url(__FONT__) format("woff2"); font-weight: 300 700; font-display: block; }
+:root{
+  --bg:#0F1A23; --blue:#007BFF; --orange:#FFA500; --cream:#FCF9E6; --sky:#A6D0FF; --ink:#231F20;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{width:1080px;height:1920px;overflow:hidden;background:var(--bg)}
+body{font-family:"Goodly","Fredoka",system-ui,sans-serif;color:var(--cream);-webkit-font-smoothing:antialiased}
+.stage{position:absolute;inset:0;width:1080px;height:1920px;overflow:hidden}
+.layer{position:absolute;inset:0;will-change:transform,opacity}
+#plate{position:absolute;inset:0;background-size:cover;background-position:center}
+#vignette{position:absolute;inset:0;background:radial-gradient(ellipse at 50% 45%, rgba(0,0,0,0) 35%, rgba(15,26,35,.85) 100%)}
+#wash{position:absolute;inset:0;background:var(--bg)}
+
+/* zone sûre : 220 haut, 320 bas, 120 côtés */
+.safe{position:absolute;left:120px;right:120px;top:220px;bottom:320px}
+
+.headline{font-size:118px;font-weight:700;letter-spacing:-1px;line-height:1;text-align:center;
+  text-shadow:0 10px 40px rgba(0,0,0,.55)}
+.sub{font-size:66px;font-weight:500;text-align:center;color:var(--sky)}
+
+/* clap */
+#clap{position:absolute;left:50%;width:760px;transform-origin:50% 100%}
+.slate{position:relative;width:760px;height:430px;background:#12181d;border-radius:26px;
+  box-shadow:0 40px 90px rgba(0,0,0,.6);overflow:hidden}
+.slate .body{position:absolute;left:0;right:0;bottom:0;height:300px;background:#141c22}
+.slate .body .rule{position:absolute;left:56px;right:56px;height:10px;background:rgba(252,249,230,.16);border-radius:6px}
+#stick{position:absolute;left:0;top:0;width:760px;height:120px;transform-origin:14px 100%}
+.stripes{width:100%;height:100%;border-radius:26px 26px 8px 8px;
+  background:repeating-linear-gradient(115deg,#F4F1E4 0 62px,#12181d 62px 124px)}
+
+/* carte papier / données */
+.card{position:absolute;border-radius:28px;background:var(--cream);color:var(--ink);
+  box-shadow:0 30px 70px rgba(0,0,0,.45)}
+.bar{position:absolute;border-radius:10px;background:rgba(35,31,32,.22)}
+.chip{position:absolute;border-radius:999px;display:flex;align-items:center;justify-content:center;
+  font-size:48px;font-weight:600}
+.dataline{position:absolute;height:8px;border-radius:8px;background:var(--sky)}
+
+/* écran produit */
+#screen{position:absolute;left:50%;top:50%;width:760px;height:900px;margin:-450px 0 0 -380px;
+  border-radius:44px;background:#16232D;border:3px solid rgba(166,208,255,.22);
+  box-shadow:0 60px 120px rgba(0,0,0,.55);transform-style:preserve-3d;overflow:hidden}
+#screen .top{position:absolute;left:0;right:0;top:0;height:132px;background:rgba(0,123,255,.14);
+  display:flex;align-items:center;padding-left:44px;font-size:64px;font-weight:600;color:var(--cream)}
+.slot{position:absolute;width:196px;height:96px;border-radius:20px;border:3px solid rgba(166,208,255,.35);
+  display:flex;align-items:center;justify-content:center;font-size:52px;font-weight:600;color:var(--sky)}
+.check{position:absolute;font-size:60px;font-weight:600;color:#FCF9E6}
+.tablecell{position:absolute;border-radius:18px;border:3px solid rgba(166,208,255,.3)}
+.ripple{position:absolute;border-radius:999px;border:6px solid var(--orange)}
+
+/* cartes modules */
+.modcard{position:absolute;left:50%;width:720px;height:150px;margin-left:-360px;border-radius:30px;
+  background:rgba(252,249,230,.07);border:3px solid rgba(166,208,255,.30);
+  display:flex;align-items:center;justify-content:center;font-size:64px;font-weight:600;color:var(--cream)}
+.flow{position:absolute;left:50%;width:6px;margin-left:-3px;background:linear-gradient(180deg,var(--blue),var(--sky))}
+
+/* logo */
+#logo{position:absolute;left:50%;top:50%;width:640px;margin-left:-320px;transform-origin:50% 50%}
+#logo img{width:100%;display:block}
+#halo{position:absolute;left:50%;top:50%;width:1100px;height:1100px;margin:-550px 0 0 -550px;border-radius:50%;
+  background:radial-gradient(circle,rgba(0,123,255,.38) 0%,rgba(0,123,255,0) 62%)}
+#signature{position:absolute;left:0;right:0;text-align:center;font-size:64px;font-weight:500;color:var(--sky)}
+</style>
+
+<div class="stage">
+  <div id="plate" class="layer"></div>
+  <div id="vignette" class="layer"></div>
+
+  <div id="clap" class="layer" style="display:none">
+    <div class="slate">
+      <div class="body">
+        <div class="rule" style="top:70px"></div>
+        <div class="rule" style="top:140px;right:200px"></div>
+        <div class="rule" style="top:210px;right:320px"></div>
+      </div>
+      <div id="stick"><div class="stripes"></div></div>
+    </div>
+  </div>
+
+  <div id="act1" class="layer">
+    <div class="safe">
+      <div id="coupez" class="headline" style="position:absolute;left:0;right:0;top:640px">COUPEZ !</div>
+      <div id="vraievie" class="sub" style="position:absolute;left:0;right:0;top:800px">Dans la vraie vie…</div>
+    </div>
+  </div>
+
+  <div id="wash" class="layer" style="opacity:0"></div>
+
+  <!-- 2–4 s : le carnet papier devient des données -->
+  <div id="act2" class="layer" style="opacity:0">
+    <div id="notebook" class="card" style="left:180px;top:620px;width:720px;height:520px">
+      <div class="bar" style="left:64px;top:96px;width:330px;height:26px"></div>
+      <div class="bar" style="left:64px;top:250px;width:290px;height:26px"></div>
+      <div id="slotA" class="chip" style="right:64px;top:74px;width:200px;height:72px;background:rgba(0,123,255,.18);color:#231F20">20:00</div>
+      <div id="slotB" class="chip" style="right:64px;top:228px;width:200px;height:72px;background:rgba(0,123,255,.18);color:#231F20">20:00</div>
+      <div class="bar" style="left:64px;top:400px;width:592px;height:6px;background:rgba(35,31,32,.12)"></div>
+    </div>
+    <div id="datalines"></div>
+  </div>
+
+  <!-- 4–7 s : l'écran Réservations -->
+  <div id="act3" class="layer" style="opacity:0">
+    <div id="screen">
+      <div class="top">Réservations</div>
+      <div class="slot" id="sl1" style="left:44px;top:200px">19:30</div>
+      <div class="slot" id="sl2" style="left:282px;top:200px">20:00</div>
+      <div class="slot" id="sl3" style="left:520px;top:200px">20:30</div>
+      <div class="check" id="dispo" style="left:44px;top:346px;opacity:0">✓ disponibilité vérifiée</div>
+      <div class="tablecell" id="t1" style="left:44px;top:470px;width:196px;height:150px"></div>
+      <div class="tablecell" id="t2" style="left:282px;top:470px;width:196px;height:150px"></div>
+      <div class="tablecell" id="t3" style="left:520px;top:470px;width:196px;height:150px"></div>
+      <div class="tablecell" id="t4" style="left:44px;top:660px;width:196px;height:150px"></div>
+      <div class="tablecell" id="t5" style="left:282px;top:660px;width:196px;height:150px"></div>
+      <div class="tablecell" id="t6" style="left:520px;top:660px;width:196px;height:150px"></div>
+      <div class="ripple" id="ripple" style="opacity:0"></div>
+    </div>
+    <div id="planlabel" class="sub" style="position:absolute;left:0;right:0;top:1500px;opacity:0">Plan de salle</div>
+  </div>
+
+  <!-- 7–9 s : les modules -->
+  <div id="act4" class="layer" style="opacity:0">
+    <div id="punch" class="headline" style="position:absolute;left:120px;right:120px;top:430px;font-size:96px"></div>
+    <div id="cards"></div>
+  </div>
+
+  <!-- 9–10 s : le logo -->
+  <div id="act5" class="layer" style="opacity:0">
+    <div id="halo"></div>
+    <div id="logo"><img src="__LOGO__" alt=""></div>
+    <div id="signature" style="top:1180px">Le système qui travaille avec vous.</div>
+  </div>
+</div>
+
+<script>
+const FPS = 30, DUR = 300;
+const DATA = __DATA__;
+document.getElementById("plate").style.backgroundImage = "url(__PLATE__)";
+document.getElementById("punch").textContent = DATA.texte_ecran;
+
+/* --- utilitaires déterministes --- */
+const clamp = (v,a,b)=>Math.min(b,Math.max(a,v));
+const lin = (f,a,b)=>clamp((f-a)/(b-a),0,1);
+const expoOut = t => t>=1?1:1-Math.pow(2,-10*t);
+const backOut = t => 1+2.70158*Math.pow(t-1,3)+1.70158*Math.pow(t-1,2);
+const px = n => n.toFixed(2)+"px";
+
+/* cartes modules + flux, injectés depuis les données de l'épisode */
+const cardsRoot = document.getElementById("cards");
+DATA.cartes.forEach((nom,i)=>{
+  const flow = document.createElement("div");
+  flow.className = "flow"; flow.dataset.i = i; flow.style.top = px(690+i*186); flow.style.height="0px";
+  cardsRoot.appendChild(flow);
+  const c = document.createElement("div");
+  c.className = "modcard"; c.dataset.i = i; c.style.top = px(720+i*186); c.textContent = nom;
+  cardsRoot.appendChild(c);
+});
+const CARDS = [...cardsRoot.querySelectorAll(".modcard")];
+const FLOWS = [...cardsRoot.querySelectorAll(".flow")];
+
+/* lignes de données de l'acte 2 */
+const dl = document.getElementById("datalines");
+const LINES = [];
+for (let i=0;i<14;i++){
+  const d = document.createElement("div");
+  d.className = "dataline";
+  d.style.left = px(180 + (i%2)*370);
+  d.style.top  = px(660 + Math.floor(i/2)*64);
+  d.style.width = "0px";
+  dl.appendChild(d); LINES.push(d);
+}
+
+function seek(f){
+  /* ---------- 0–2 s : le plan figé, le clap, COUPEZ ---------- */
+  const plate = document.getElementById("plate");
+  const zoom = 1 + 0.06*lin(f,0,60);
+  const sat  = f<=60 ? 1 - 0.85*lin(f,6,58) : 0.15;
+  plate.style.transform = `scale(${zoom.toFixed(4)})`;
+  plate.style.filter = `saturate(${sat.toFixed(3)}) brightness(${(1-0.25*lin(f,20,60)).toFixed(3)})`;
+  plate.style.opacity = String(1 - lin(f,56,66));
+  document.getElementById("vignette").style.opacity = String(1 - lin(f,56,66));
+
+  const clap = document.getElementById("clap"), stick = document.getElementById("stick");
+  const clapOn = f < 40;
+  clap.style.display = clapOn ? "block" : "none";
+  if (clapOn){
+    const rise = expoOut(lin(f,0,12));              // entre par le bas, claque à 0,4 s (f=12)
+    const y = 1920 - rise*1180;
+    const out = lin(f,26,40);
+    clap.style.top = px(y + out*900);
+    clap.style.marginLeft = px(-380);
+    clap.style.opacity = String(1-out);
+    const ang = f<12 ? -30*(1-lin(f,0,12)) : (f<16 ? -4*(1-lin(f,12,16)) : 0);
+    stick.style.transform = `rotate(${ang.toFixed(2)}deg)`;
+  }
+
+  const coupez = document.getElementById("coupez");
+  const cIn = lin(f,12,20), cOut = lin(f,52,62);
+  coupez.style.opacity = String(cIn*(1-cOut));
+  coupez.style.transform = `scale(${(0.7+0.3*backOut(Math.max(cIn,0.001))).toFixed(3)})`;
+  const vv = document.getElementById("vraievie");
+  const vIn = lin(f,48,58), vOut = lin(f,58,66);
+  vv.style.opacity = String(vIn*(1-vOut));
+  vv.style.transform = `translateY(${px(26*(1-expoOut(vIn)))})`;
+
+  document.getElementById("wash").style.opacity = String(lin(f,56,66));
+
+  /* ---------- 2–4 s : le carnet devient des données ---------- */
+  const a2 = document.getElementById("act2");
+  a2.style.opacity = String(lin(f,58,66) * (1-lin(f,112,120)));
+  const nb = document.getElementById("notebook");
+  const nbOut = lin(f,96,116);
+  nb.style.opacity = String(1-nbOut);
+  nb.style.transform = `translateY(${px(-90*expoOut(nbOut))}) scale(${(1-0.12*nbOut).toFixed(3)})`;
+  const blink = f>=72 && f<100 && (Math.floor((f-72)/5)%2===0);
+  for (const id of ["slotA","slotB"]){
+    const el = document.getElementById(id);
+    el.style.background = blink ? "rgba(255,80,80,.28)" : "rgba(0,123,255,.18)";
+    el.style.boxShadow = blink ? "0 0 0 6px rgba(255,80,80,.35)" : "none";
+  }
+  LINES.forEach((d,i)=>{
+    const t = expoOut(lin(f, 100+i*1.4, 118+i*1.4));
+    d.style.width = px(t*330);
+    d.style.opacity = String(t*(1-lin(f,114,120)));
+  });
+
+  /* ---------- 4–7 s : l'écran Réservations, une seule pression ---------- */
+  const a3 = document.getElementById("act3");
+  a3.style.opacity = String(lin(f,118,126) * (1-lin(f,204,212)));
+  const scr = document.getElementById("screen");
+  const rot = 8 - 16*lin(f,118,210);                 // rotation ≤ 8°
+  const sIn = expoOut(lin(f,118,134));
+  scr.style.transform = `perspective(2200px) rotateY(${rot.toFixed(2)}deg) rotateX(${(3-2*lin(f,118,210)).toFixed(2)}deg) scale(${(0.9+0.1*sIn).toFixed(3)})`;
+  const sel = document.getElementById("sl2");
+  const selOn = f>=140;
+  sel.style.background = selOn ? "rgba(0,123,255,.35)" : "transparent";
+  sel.style.borderColor = selOn ? "#007BFF" : "rgba(166,208,255,.35)";
+  sel.style.color = selOn ? "#FCF9E6" : "var(--sky)";
+  document.getElementById("dispo").style.opacity = String(lin(f,150,160));
+
+  /* la pression : ralenti de 6 images (f 168 → 174) */
+  const tapF = 168;
+  const rip = document.getElementById("ripple");
+  const rt = lin(f,tapF,tapF+22);
+  if (f>=tapF-2 && f<tapF+22){
+    const size = 60 + 340*expoOut(rt);
+    rip.style.opacity = String(0.9*(1-rt));
+    rip.style.width = px(size); rip.style.height = px(size);
+    rip.style.left = px(282+98-size/2); rip.style.top = px(660+75-size/2);
+  } else rip.style.opacity = "0";
+  const t5 = document.getElementById("t5");
+  const booked = f>=tapF+6;
+  t5.style.background = booked ? "rgba(0,123,255,.45)" : "transparent";
+  t5.style.borderColor = booked ? "#007BFF" : "rgba(166,208,255,.3)";
+  t5.style.boxShadow = booked ? "0 0 40px rgba(0,123,255,.55)" : "none";
+  document.getElementById("planlabel").style.opacity = String(lin(f,178,190)*(1-lin(f,202,210)));
+
+  /* ---------- 7–9 s : les modules ---------- */
+  const a4 = document.getElementById("act4");
+  a4.style.opacity = String(lin(f,208,216) * (1-lin(f,262,270)));
+  const p = document.getElementById("punch");
+  const pIn = lin(f,210,222);
+  p.style.opacity = String(pIn);
+  p.style.transform = `translateY(${px(30*(1-expoOut(pIn)))})`;
+  CARDS.forEach((c,i)=>{
+    const t = expoOut(lin(f, 220+i*10, 238+i*10));
+    c.style.opacity = String(t);
+    c.style.transform = `translateY(${px(40*(1-t))}) scale(${(0.94+0.06*t).toFixed(3)})`;
+    c.style.borderColor = t>0.99 ? "rgba(0,123,255,.75)" : "rgba(166,208,255,.30)";
+  });
+  FLOWS.forEach((fl,i)=>{
+    if (i===0){ fl.style.height="0px"; return; }
+    const t = expoOut(lin(f, 232+i*10, 248+i*10));
+    fl.style.height = px(t*30);
+    fl.style.opacity = String(t*(1-lin(f,262,270)));
+  });
+
+  /* ---------- 9–10 s : le logo seul ---------- */
+  const a5 = document.getElementById("act5");
+  a5.style.opacity = String(lin(f,268,276) * (1-lin(f,294,300)));
+  const lIn = lin(f,268,286);
+  document.getElementById("logo").style.transform = `translateY(-50%) scale(${(0.9+0.1*expoOut(lIn)).toFixed(4)})`;
+  document.getElementById("halo").style.opacity = String(0.85*expoOut(lIn));
+  document.getElementById("halo").style.transform = `scale(${(0.6+0.5*expoOut(lIn)).toFixed(3)})`;
+  const sg = document.getElementById("signature");
+  const sgIn = lin(f,276,290);
+  sg.style.opacity = String(sgIn);
+  sg.style.transform = `translateY(${px(20*(1-expoOut(sgIn)))})`;
+}
+window.seek = seek;
+seek(0);
+</script>

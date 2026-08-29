@@ -5,13 +5,15 @@
 | Référence | Contenu | Rôle dans le prompt |
 |---|---|---|
 | `@Image 1` | Portrait de Michael, face caméra, lumière douce, fond neutre, expression neutre, pas de lunettes de soleil | Identité (visage, cheveux, morphologie) |
-| `@Image 2` | Michael en pied, **tenue de saison verrouillée** — proposition : chemise blanche, tablier noir, manches retroussées, montre au poignet | Tenue |
+| `@Image 2` | Michael en pied, **tenue de saison verrouillée** — telle qu'elle apparaît dans les plans déjà générés : **veste de cuisinier blanche, tablier blanc portant le logo FoodEatUp, toque blanche** | Tenue |
 | `@Image 3` | La salle du restaurant, vide, de jour, sans enseigne lisible | Lieu salle |
 | `@Image 4` | La cuisine professionnelle, passe et inox | Lieu cuisine |
 | Option | Soul ID « Michael » entraîné dans Higgsfield, sélectionné en plus de `@Image 1` | Verrou d'identité renforcé |
 
-⚠️ **À valider avant tout tournage** : la tenue de saison (`@Image 2`). C'est elle qui rend la
-saison reconnaissable d'un épisode à l'autre ; elle ne change plus ensuite.
+⚠️ La tenue décrite ci-dessus est celle **constatée dans les plans de l'épisode 01 déjà générés**
+(veste et tablier blancs, toque, logo brodé) — elle diffère de la proposition initiale du brief
+(chemise blanche, tablier noir). C'est la version tournée qui fait foi : elle est reconduite sur
+les 29 autres épisodes. Toute décision de la changer implique de regénérer les plans existants.
 
 Sur Higgsfield, adaptez la numérotation à l'ordre réel de vos uploads. Chaque prompt commence par :
 
