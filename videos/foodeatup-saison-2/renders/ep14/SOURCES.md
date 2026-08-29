@@ -39,6 +39,17 @@ Le départ de la voix est calculé pour qu'elle finisse avant 11,0 s : 4,60 s pa
 la prise est longue. L'outro est ensuite calé au niveau de saison (−18,5 LUFS), puis le master normalisé
 à −16 LUFS en gain linéaire (loudnorm deux passes), le standard des plateformes.
 
+## Dépôt au catalogue Social FoodEatUp
+
+| | |
+|---|---|
+| Épisode au catalogue | `undefined` — série `undefined`, saison undefined |
+| Pièce | `undefined` |
+| État | **undefined** |
+| Fichier | undefined |
+
+« pret » s'écrit par un agent, « valide » est un geste humain dans /admin/production. Rien ne se planifie sur les réseaux sans « valide » : aucun outil n'expose cette bascule.
+
 ## Calage des SFX dans l'outro (secondes)
 
 `clap` 0,40 · `whoosh` 2,00 (la punchline de transition) · `tick` 4,40 / 4,73 / 5,07

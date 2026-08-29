@@ -89,14 +89,7 @@
         "generation_id": "DaRIsjLXBh9VXl7IjkAu",
         "duree_s": 5.43
       },
-      "catalogue": {
-        "id": "EPC06",
-        "serie": "michael-fait-son-cinema",
-        "saison": 2,
-        "piece": "master",
-        "etat": "pret",
-        "url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/michael-fait-son-cinema-EPC06-le-monstre-master"
-      }
+      "catalogue": "EPC06 — master v2 déposé (le libellé « 10 palettes » débordait de sa pastille), état pret"
     },
     "07": {
       "scene1": "e56f4ebb-11f5-4b28-921b-dba58f4a57f5",
@@ -196,7 +189,8 @@
         "generation_id": "NkVF95tUHHRKNRcEgPIg",
         "duree_s": 6.78
       },
-      "note": "Prise de voix longue (6,78 s) : elle démarre au plus tôt autorisé, 4,25 s, et finit à 11,03 s — 30 ms sur le premier souffle du logo. Une variante courte est proposée dans la fiche si vous préférez la fenêtre stricte."
+      "note": "Prise de voix longue (6,78 s) : elle démarre au plus tôt autorisé, 4,25 s, et finit à 11,03 s — 30 ms sur le premier souffle du logo. Une variante courte est proposée dans la fiche si vous préférez la fenêtre stricte.",
+      "catalogue": "EPC13 — master déposé, état pret"
     },
     "14": {
       "scene1": "810e5644-39f1-482d-82c8-bd1cb77cecca",
@@ -204,7 +198,8 @@
       "vo": {
         "generation_id": "dIECnaiI6s9fh4UckoIy",
         "duree_s": 6.13
-      }
+      },
+      "catalogue": "EPC14 — master déposé, état pret"
     }
   },
   "transition": {
