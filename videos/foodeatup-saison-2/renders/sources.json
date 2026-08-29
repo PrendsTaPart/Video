@@ -4,24 +4,80 @@
   "01": {
    "scene1": "2855b8b2-37c8-441f-8b56-58c02c6b1fe1",
    "scene2": "bd80afd3-8ad9-4eb5-ae1b-1103625f677e",
-   "vo": { "generation_id": "aEvhDJnASVuC99Wocrh3", "duree_s": 4.91 }
+   "vo": {
+    "generation_id": "aEvhDJnASVuC99Wocrh3",
+    "duree_s": 4.91
+   },
+   "catalogue": {
+    "id": "EPC01",
+    "serie": "michael-fait-son-cinema",
+    "saison": 2,
+    "piece": "master",
+    "etat": "pret",
+    "url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/michael-fait-son-cinema-EPC01-le-duel-master"
+   }
   },
   "02": {
    "scene1": "49010b56-725f-4302-bb8f-ed6b891a9a9c",
    "scene2": "a51846d0-b878-4cce-84e1-de7ee98860b6",
-   "vo": { "generation_id": "dzrtl8E6GnjCJVM2DQ7v", "duree_s": 5.20 }
+   "vo": {
+    "generation_id": "dzrtl8E6GnjCJVM2DQ7v",
+    "duree_s": 5.2
+   },
+   "catalogue": {
+    "id": "EPC02",
+    "serie": "michael-fait-son-cinema",
+    "saison": 2,
+    "piece": "master",
+    "etat": "pret",
+    "url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/michael-fait-son-cinema-EPC02-le-controle-master"
+   }
   },
   "03": {
    "scene1": "d0ff89f7-dbf5-41fa-9ff9-343789f6807f",
    "scene2": "11191050-3916-467e-a1d2-e086182e0a31",
-   "vo": { "generation_id": "YLcYEbeoxV6bkVVbakaT", "duree_s": 5.39 }
+   "vo": {
+    "generation_id": "YLcYEbeoxV6bkVVbakaT",
+    "duree_s": 5.39
+   },
+   "catalogue": {
+    "id": "EPC03",
+    "serie": "michael-fait-son-cinema",
+    "saison": 2,
+    "piece": "master",
+    "etat": "pret",
+    "url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/michael-fait-son-cinema-EPC03-le-critique-master"
+   }
   },
   "04": {
    "scene1": "ab380df9-909d-479b-b764-66e8dd6c41fd",
    "scene2": "96615720-6e6a-4908-a5b6-a83fc85be935",
    "scene2_alternative": "3adbbfab-9708-41cf-b0fe-d5416cf69f97",
-   "vo": { "generation_id": "FJ4w50OFQYxItDFhqK04", "duree_s": 6.08 }
+   "vo": {
+    "generation_id": "FJ4w50OFQYxItDFhqK04",
+    "duree_s": 6.08
+   },
+   "catalogue": {
+    "id": "EPC04",
+    "serie": "michael-fait-son-cinema",
+    "saison": 2,
+    "piece": "master",
+    "etat": "pret",
+    "url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/michael-fait-son-cinema-EPC04-le-brunch-des-zombies-master"
+   }
   }
  },
- "transition": { "generation_id": "sZWCVMCGg2WgpYJb4j3c", "duree_s": 2.04, "commune": true }
+ "transition": {
+  "generation_id": "sZWCVMCGg2WgpYJb4j3c",
+  "duree_s": 2.04,
+  "commune": true
+ },
+ "catalogue": {
+  "serveur": "Social FoodEatUp",
+  "serie": "michael-fait-son-cinema",
+  "page": "https://food-series-hub.lovable.app/series/michael-fait-son-cinema",
+  "episodes_au_catalogue": 24,
+  "note": "Le catalogue s'arrête à EPC24 « La carte au trésor » : les épisodes 25 à 30 du brief (Les traders, Le détective, Le super-vilain, Le jeu télé, Les gangsters, La cérémonie) n'y existent pas encore.",
+  "verrou": "« pret » s'écrit par un agent, « valide » est un geste humain dans /admin/production. Rien ne se planifie sur les réseaux sans « valide » : aucun outil n'expose cette bascule."
+ }
 }

@@ -109,6 +109,31 @@ générée depuis `renders/sources.json`.
 node scripts/sources.mjs            # régénère les fiches de provenance
 ```
 
+## Dépôt au catalogue Social FoodEatUp
+
+La série existe déjà côté catalogue : **`michael-fait-son-cinema`, saison 2, EPC01 → EPC24**, avec
+les mêmes titres et dans le même ordre que le brief. Les quatre masters y sont déposés, pièce
+`master`, état **`pret`** — la liste « à produire » commence maintenant à EPC05.
+
+| Notre épisode | Catalogue | État |
+|---|---|---|
+| 01 Le duel | `EPC01` | pret |
+| 02 Le contrôle | `EPC02` | pret |
+| 03 Le critique | `EPC03` | pret |
+| 04 Le brunch des zombies | `EPC04` | pret |
+
+**La publication sur les réseaux n'est pas faisable par un agent, et c'est voulu** : `pret` dit que
+le fichier répond, `valide` dit qu'un humain l'a regardé en entier. `valide` ne s'écrit que dans
+`/admin/production` — aucun outil ne l'expose — et rien ne se planifie sans lui.
+
+Deux écarts à connaître : le catalogue s'arrête à **EPC24**, donc les épisodes 25 à 30 du brief n'y
+existent pas encore ; et chaque épisode y attend **huit pièces** (master, story, short, paysage,
+facebook, tiktok, carrousel, visuel) — seul le `master` est produit.
+
+Chemin de dépôt : master poussé sur GitHub → URL brute → `upload_file_tool` RapidoCMS (l'URL brute
+de GitHub sort en `application/octet-stream`, que le catalogue refuse ; le S3 de RapidoCMS sert bien
+en `video/mp4`) → `publier_video`.
+
 L'acte central de l'outro (ce qui devient des données, l'écran produit) est **décrit dans
 `episodes/*.json`** sous `montage.ui`, pas codé : un épisode se monte en remplissant ce bloc.
 Les épisodes 05 à 30 ne l'ont pas encore — `render-outro.mjs` le dit explicitement.

@@ -46,6 +46,15 @@ for (const [n, src] of Object.entries(SRC.episodes)) {
   L.push(`Les prises ElevenLabs sortent très bas : chacune est normalisée à −16 LUFS / −1,5 dBTP.`);
   L.push(`L'outro est ensuite calé au niveau de saison (−18,5 LUFS), puis le master entier est normalisé`);
   L.push(`à −16 LUFS en gain linéaire (loudnorm deux passes), le standard des plateformes.`, "");
+  if (src.catalogue) {
+    L.push(`## Dépôt au catalogue Social FoodEatUp`, "");
+    L.push(`| | |`, `|---|---|`);
+    L.push(`| Épisode au catalogue | \`${src.catalogue.id}\` — série \`${src.catalogue.serie}\`, saison ${src.catalogue.saison} |`);
+    L.push(`| Pièce | \`${src.catalogue.piece}\` |`);
+    L.push(`| État | **${src.catalogue.etat}** |`);
+    L.push(`| Fichier | ${src.catalogue.url} |`, "");
+    L.push(`${SRC.catalogue.verrou}`, "");
+  }
   L.push(`## Calage des SFX dans l'outro (secondes)`, "");
   L.push(`\`clap\` 0,40 · \`whoosh\` 2,00 (la punchline de transition) · \`tick\` 4,40 / 4,73 / 5,07`);
   L.push(`(l'élément clé qui devient des données) · \`whoosh\` 7,60 (l'action en un tap) · \`tick\``);

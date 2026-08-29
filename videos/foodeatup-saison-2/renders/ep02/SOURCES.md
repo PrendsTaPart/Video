@@ -38,6 +38,17 @@ Les prises ElevenLabs sortent très bas : chacune est normalisée à −16 LUFS 
 L'outro est ensuite calé au niveau de saison (−18,5 LUFS), puis le master entier est normalisé
 à −16 LUFS en gain linéaire (loudnorm deux passes), le standard des plateformes.
 
+## Dépôt au catalogue Social FoodEatUp
+
+| | |
+|---|---|
+| Épisode au catalogue | `EPC02` — série `michael-fait-son-cinema`, saison 2 |
+| Pièce | `master` |
+| État | **pret** |
+| Fichier | https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/michael-fait-son-cinema-EPC02-le-controle-master |
+
+« pret » s'écrit par un agent, « valide » est un geste humain dans /admin/production. Rien ne se planifie sur les réseaux sans « valide » : aucun outil n'expose cette bascule.
+
 ## Calage des SFX dans l'outro (secondes)
 
 `clap` 0,40 · `whoosh` 2,00 (la punchline de transition) · `tick` 4,40 / 4,73 / 5,07
