@@ -658,7 +658,38 @@
         "Paiements"
       ],
       "texte_ecran": "La note est claire. Pas de procès.",
-      "sfx": "coup de marteau doux, tick par article, impact final."
+      "sfx": "coup de marteau doux, tick par article, impact final.",
+      "ui": {
+        "acte2": {
+          "lignes": [
+            {
+              "chip": "20:14"
+            },
+            {
+              "chip": "20:41"
+            },
+            {
+              "chip": "21:02"
+            }
+          ],
+          "alerte": false
+        },
+        "acte3": {
+          "type": "liste",
+          "titre": "Commandes",
+          "chips": [
+            "Table 6",
+            "Table 7"
+          ],
+          "chip_actif": 0,
+          "confirmation": "paiement encaissé",
+          "lignes": 3,
+          "cible": 2,
+          "statut_initial": "à payer",
+          "statut_final": "payé",
+          "label_bas": "Caisse"
+        }
+      }
     }
   }
 ]

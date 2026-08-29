@@ -200,6 +200,16 @@
         "duree_s": 6.13
       },
       "catalogue": "EPC14 — master déposé, état pret"
+    },
+    "15": {
+      "scene1": "5792ba36-3696-48e9-8747-1bdd5939c121",
+      "scene2": "296ecbe8-1df4-4e5c-97f6-df200e783b51",
+      "vo": {
+        "generation_id": "56nfur60uUrFbNu6BbdN",
+        "duree_s": 6.04
+      },
+      "note": "Le lieu penche vers le vrai tribunal (boiseries, bancs du jury) plutôt que la salle du restaurant éclairée comme un tribunal. La tenue de saison est respectée sur les deux scènes.",
+      "catalogue": "EPC15 — master déposé, état pret"
     }
   },
   "transition": {

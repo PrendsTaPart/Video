@@ -228,21 +228,27 @@ const LISTE = A3.type === "liste";
 const CELLS = [];
 const BADGES = [];
 if (LISTE) {
+  // Les lignes tiennent toujours dans l'écran : avec des pastilles au-dessus,
+  // la place restante est plus courte, donc les lignes se resserrent.
+  const HAUT = HASCHIPS ? 470 : 290, ECART = 26;
+  const RH = Math.min(150, (900 - HAUT - 40 - (A3.lignes - 1) * ECART) / A3.lignes);
   for (let i = 0; i < A3.lignes; i++) {
     const row = document.createElement("div");
     row.className = "tablecell";
-    row.style.cssText = `left:44px;width:672px;height:150px`;
-    row.style.top = px((HASCHIPS ? 470 : 290) + i * 176);
+    row.style.cssText = `left:44px;width:672px;height:${RH}px`;
+    row.style.top = px(HAUT + i * (RH + ECART));
     cellsRoot.appendChild(row);
     const bar = document.createElement("div");
     bar.className = "bar";
-    bar.style.cssText = `left:36px;top:44px;width:300px;height:22px;background:rgba(166,208,255,.30)`;
+    bar.style.cssText = `left:36px;top:${Math.min(44, (RH - 22) / 2)}px;width:300px;height:22px;background:rgba(166,208,255,.30)`;
     row.appendChild(bar);
     const badge = document.createElement("div");
     badge.className = "chip";
-    badge.style.cssText = `right:32px;top:38px;width:230px;height:66px;font-size:40px;background:rgba(166,208,255,.14);color:#A6D0FF`;
-    badge.textContent = A3.statut_initial;
+    badge.style.cssText = `right:32px;top:${Math.min(38, (RH - 66) / 2)}px;width:230px;height:66px;background:rgba(166,208,255,.14);color:#A6D0FF`;
     row.appendChild(badge);
+    // la taille est calée sur le plus long des deux statuts : elle ne bouge plus au changement
+    ajusterTexte(badge, A3.statut_final.length > A3.statut_initial.length ? A3.statut_final : A3.statut_initial, 40, 24, 24);
+    badge.firstChild.textContent = A3.statut_initial;
     CELLS.push(row); BADGES.push(badge);
   }
 } else {
@@ -350,7 +356,7 @@ function seek(f){
   if (LISTE){
     cibleEl.style.borderColor = done ? "#007BFF" : "rgba(166,208,255,.3)";
     cibleEl.style.background  = done ? "rgba(0,123,255,.16)" : "transparent";
-    BADGES[CIBLE].textContent = done ? A3.statut_final : A3.statut_initial;
+    BADGES[CIBLE].firstChild.textContent = done ? A3.statut_final : A3.statut_initial;
     BADGES[CIBLE].style.background = done ? "rgba(0,123,255,.45)" : "rgba(166,208,255,.14)";
     BADGES[CIBLE].style.color = done ? "#FCF9E6" : "#A6D0FF";
   } else {
