@@ -59,7 +59,7 @@ PHYSICS: realistic body weight, no morphing, no sliding feet, correct hands and 
 
 **Voix off — épisode** (à 4,6 s) : « Le téléphone répond tout seul. L'agent vocal FoodEatUp prend la réservation ou la commande pendant que vous servez. »
 
-> ⚠️ Cette phrase dépasse la fenêtre de 7 s (2,0 s → 9,0 s) à débit posé.
+> ⚠️ Cette phrase dépasse la fenêtre de 6.4 s (2,0 s → 9,0 s) à débit posé.
 > **Variante courte proposée** : « Le téléphone répond tout seul. L'agent vocal FoodEatUp prend la réservation pendant que vous servez. »
 
 ```text

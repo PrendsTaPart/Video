@@ -9,244 +9,244 @@
   "note": "Validée sur l'épisode 01 : « FoodEatUp » est prononcé correctement (vérifié par retranscription ElevenLabs Scribe). Les prises sortent très bas (moyenne ≈ -36 dB) : normaliser chaque ligne avant montage.",
   "resume": "ElevenLabs « Adam - Instructor », même voix sur les 30 épisodes"
  },
- "cps": 15,
- "fenetre_s": 7,
+ "cps": 17.5,
+ "fenetre_s": 6.4,
  "lignes": [
   {
    "id": "ep01",
    "titre": "Le duel",
    "texte": "Deux clients, une table ? Avec FoodEatUp, la réservation vérifie la place avant vous.",
    "caracteres": 85,
-   "duree_estimee_s": 5.7
+   "duree_estimee_s": 4.9
   },
   {
    "id": "ep02",
    "titre": "Le contrôle",
    "texte": "Le contrôle d'hygiène ? Avec FoodEatUp, chaque relevé est daté, rangé, prêt à montrer.",
    "caracteres": 86,
-   "duree_estimee_s": 5.7
+   "duree_estimee_s": 4.9
   },
   {
    "id": "ep03",
    "titre": "Le critique",
    "texte": "Le vrai critique, c'est chaque client. FoodEatUp réunit tous vos avis et vous aide à répondre.",
    "caracteres": 94,
-   "duree_estimee_s": 6.3
+   "duree_estimee_s": 5.4
   },
   {
    "id": "ep04",
    "titre": "Le brunch des zombies",
    "texte": "Le rush du dimanche n'est pas une invasion. FoodEatUp met tout le monde en file et remplit la salle table par table.",
    "caracteres": 116,
-   "duree_estimee_s": 7.7,
+   "duree_estimee_s": 6.6,
    "variante_courte": "Le rush du dimanche n'est pas une invasion. FoodEatUp met tout le monde en file et remplit la salle.",
-   "variante_courte_duree_s": 6.7
+   "variante_courte_duree_s": 5.7
   },
   {
    "id": "ep05",
    "titre": "Le casse",
    "texte": "La clôture de caisse, c'est deux minutes, pas deux heures. FoodEatUp calcule l'écart pour vous.",
    "caracteres": 95,
-   "duree_estimee_s": 6.3
+   "duree_estimee_s": 5.4
   },
   {
    "id": "ep06",
    "titre": "Le monstre",
    "texte": "Dix, c'est dix. FoodEatUp fixe l'unité, la quantité et la date avant que le camion recule.",
    "caracteres": 90,
-   "duree_estimee_s": 6
+   "duree_estimee_s": 5.1
   },
   {
    "id": "ep07",
    "titre": "La bombe",
    "texte": "Un allergène, ça se sait avant de servir. FoodEatUp l'affiche sur chaque recette et sur votre site.",
    "caracteres": 99,
-   "duree_estimee_s": 6.6
+   "duree_estimee_s": 5.7
   },
   {
    "id": "ep08",
    "titre": "Le documentaire",
    "texte": "Vos clients font votre pub. FoodEatUp la récupère : la photo, l'avis, les points de fidélité.",
    "caracteres": 93,
-   "duree_estimee_s": 6.2
+   "duree_estimee_s": 5.3
   },
   {
    "id": "ep09",
    "titre": "Le sous-marin",
    "texte": "Chaque plat, chaque poste, chaque minute : l'écran cuisine FoodEatUp remplace les tickets et le ping.",
    "caracteres": 101,
-   "duree_estimee_s": 6.7
+   "duree_estimee_s": 5.8
   },
   {
    "id": "ep10",
    "titre": "La boucle",
    "texte": "Comptez une fois. FoodEatUp compte le reste, à chaque vente, à chaque livraison.",
    "caracteres": 80,
-   "duree_estimee_s": 5.3
+   "duree_estimee_s": 4.6
   },
   {
    "id": "ep11",
    "titre": "La VAR",
    "texte": "Les heures, on ne les discute plus, on les voit. Pointage, planning et contrat au même endroit.",
    "caracteres": 95,
-   "duree_estimee_s": 6.3
+   "duree_estimee_s": 5.4
   },
   {
    "id": "ep12",
    "titre": "Le casting",
    "texte": "Une offre, des candidatures classées, un statut par personne. Recruter sans courir après les CV.",
    "caracteres": 96,
-   "duree_estimee_s": 6.4
+   "duree_estimee_s": 5.5
   },
   {
    "id": "ep13",
    "titre": "Le bouton rouge",
    "texte": "Envoyez à la bonne personne, pas à toute la ville. FoodEatUp segmente vos clients et vous montre le retour de chaque campagne.",
    "caracteres": 126,
-   "duree_estimee_s": 8.4,
+   "duree_estimee_s": 7.2,
    "variante_courte": "Envoyez à la bonne personne, pas à toute la ville. FoodEatUp segmente et mesure vos campagnes.",
-   "variante_courte_duree_s": 6.3
+   "variante_courte_duree_s": 5.4
   },
   {
    "id": "ep14",
    "titre": "Le naufrage",
    "texte": "La terrasse ferme, la salle s'organise. Avec le plan de salle FoodEatUp, vous replacez tout le monde en trente secondes.",
    "caracteres": 120,
-   "duree_estimee_s": 8,
+   "duree_estimee_s": 6.9,
    "variante_courte": "La terrasse ferme, la salle s'organise. Avec FoodEatUp, vous replacez tout le monde en trente secondes.",
-   "variante_courte_duree_s": 6.9
+   "variante_courte_duree_s": 5.9
   },
   {
    "id": "ep15",
    "titre": "Le procès",
    "texte": "Chaque plat est noté sur la bonne table, à la bonne heure. Avec FoodEatUp, la note parle d'elle-même.",
    "caracteres": 101,
-   "duree_estimee_s": 6.7
+   "duree_estimee_s": 5.8
   },
   {
    "id": "ep16",
    "titre": "La cave",
    "texte": "Vos factures ne dorment plus à la cave. FoodEatUp affiche ce qui est payé, ce qui attend, et ce que ça vous coûte.",
    "caracteres": 114,
-   "duree_estimee_s": 7.6,
+   "duree_estimee_s": 6.5,
    "variante_courte": "Vos factures ne dorment plus à la cave. FoodEatUp affiche ce qui est payé et ce qui attend.",
-   "variante_courte_duree_s": 6.1
+   "variante_courte_duree_s": 5.2
   },
   {
    "id": "ep17",
    "titre": "Le round",
    "texte": "Trois cents crêpes, c'est un plan de production. FoodEatUp calcule les ingrédients, prévient ce qui manque et met le stock à jour.",
    "caracteres": 130,
-   "duree_estimee_s": 8.7,
+   "duree_estimee_s": 7.4,
    "variante_courte": "Trois cents crêpes, c'est un plan de production. FoodEatUp calcule les ingrédients et suit le stock.",
-   "variante_courte_duree_s": 6.7
+   "variante_courte_duree_s": 5.7
   },
   {
    "id": "ep18",
    "titre": "Les douze",
    "texte": "Douze ou cinquante, tout est écrit : la demande, le devis, la salle, la facture. FoodEatUp gère vos privatisations de bout en bout.",
    "caracteres": 131,
-   "duree_estimee_s": 8.7,
+   "duree_estimee_s": 7.5,
    "variante_courte": "Douze ou cinquante : la demande, le devis, la salle, la facture. FoodEatUp gère vos privatisations.",
-   "variante_courte_duree_s": 6.6
+   "variante_courte_duree_s": 5.7
   },
   {
    "id": "ep19",
    "titre": "La course-poursuite",
    "texte": "Livrez là où vous livrez, pas plus loin. FoodEatUp définit vos zones, vos frais, et suit chaque commande.",
    "caracteres": 105,
-   "duree_estimee_s": 7
+   "duree_estimee_s": 6
   },
   {
    "id": "ep20",
    "titre": "Les vampires",
    "texte": "Le jour, l'heure, la remise, les boissons : tout est réglé d'avance. Quand ils sortent, FoodEatUp est déjà prêt.",
    "caracteres": 112,
-   "duree_estimee_s": 7.5,
+   "duree_estimee_s": 6.4,
    "variante_courte": "Le jour, l'heure, la remise : tout est réglé d'avance. Quand ils sortent, FoodEatUp est prêt.",
-   "variante_courte_duree_s": 6.2
+   "variante_courte_duree_s": 5.3
   },
   {
    "id": "ep21",
    "titre": "Le génie",
    "texte": "Douze personnes, une note, zéro migraine. FoodEatUp divise la note par article, par personne ou en parts égales.",
    "caracteres": 112,
-   "duree_estimee_s": 7.5,
+   "duree_estimee_s": 6.4,
    "variante_courte": "Douze personnes, une note, zéro migraine. FoodEatUp divise par article, par personne ou en parts égales.",
-   "variante_courte_duree_s": 6.9
+   "variante_courte_duree_s": 5.9
   },
   {
    "id": "ep22",
    "titre": "Le poker",
    "texte": "Chaque plat a un coût, une marge, un prix juste. FoodEatUp les calcule avant que vous misiez.",
    "caracteres": 93,
-   "duree_estimee_s": 6.2
+   "duree_estimee_s": 5.3
   },
   {
    "id": "ep23",
    "titre": "La mémoire",
    "texte": "Ses habitudes, vous les connaissez, même sans mémoire. FoodEatUp garde l'historique, les préférences et la fidélité de chaque client.",
    "caracteres": 133,
-   "duree_estimee_s": 8.9,
+   "duree_estimee_s": 7.6,
    "variante_courte": "Même sans mémoire, vous connaissez ses habitudes. FoodEatUp garde l'historique et la fidélité.",
-   "variante_courte_duree_s": 6.3
+   "variante_courte_duree_s": 5.4
   },
   {
    "id": "ep24",
    "titre": "La carte au trésor",
    "texte": "Une commande, ça ne s'envole pas. Avec FoodEatUp, elle part de la table à la cuisine en une seconde.",
    "caracteres": 100,
-   "duree_estimee_s": 6.7
+   "duree_estimee_s": 5.7
   },
   {
    "id": "ep25",
    "titre": "Les traders",
    "texte": "Le téléphone répond tout seul. L'agent vocal FoodEatUp prend la réservation ou la commande pendant que vous servez.",
    "caracteres": 115,
-   "duree_estimee_s": 7.7,
+   "duree_estimee_s": 6.6,
    "variante_courte": "Le téléphone répond tout seul. L'agent vocal FoodEatUp prend la réservation pendant que vous servez.",
-   "variante_courte_duree_s": 6.7
+   "variante_courte_duree_s": 5.7
   },
   {
    "id": "ep26",
    "titre": "Le détective",
    "texte": "Qui, quoi, quand : c'est écrit. Le plan de nettoyage FoodEatUp enregistre chaque action, pas besoin de détective.",
    "caracteres": 113,
-   "duree_estimee_s": 7.5,
+   "duree_estimee_s": 6.5,
    "variante_courte": "Qui, quoi, quand : c'est écrit. Le plan de nettoyage FoodEatUp enregistre chaque action.",
-   "variante_courte_duree_s": 5.9
+   "variante_courte_duree_s": 5
   },
   {
    "id": "ep27",
    "titre": "Le super-vilain",
    "texte": "Un congé validé, un planning à jour, un samedi couvert. FoodEatUp vous prévient avant que vous signiez.",
    "caracteres": 103,
-   "duree_estimee_s": 6.9
+   "duree_estimee_s": 5.9
   },
   {
    "id": "ep28",
    "titre": "Le jeu télé",
    "texte": "La roue tourne, les lots sont limités, le stock suit. La fidélité FoodEatUp, c'est du jeu avec des règles.",
    "caracteres": 106,
-   "duree_estimee_s": 7.1,
+   "duree_estimee_s": 6.1,
    "variante_courte": "La roue tourne, les lots sont limités, le stock suit. La fidélité FoodEatUp, c'est réglé.",
-   "variante_courte_duree_s": 5.9
+   "variante_courte_duree_s": 5.1
   },
   {
    "id": "ep29",
    "titre": "Les gangsters",
    "texte": "L'ardoise est numérique : elle ne s'oublie pas, elle ne s'envole pas. Solde, historique, règlement, dans FoodEatUp.",
    "caracteres": 115,
-   "duree_estimee_s": 7.7,
+   "duree_estimee_s": 6.6,
    "variante_courte": "L'ardoise est numérique : elle ne s'oublie pas. Solde, historique, règlement, dans FoodEatUp.",
-   "variante_courte_duree_s": 6.2
+   "variante_courte_duree_s": 5.3
   },
   {
    "id": "ep30",
    "titre": "La cérémonie",
    "texte": "Trente films. Un restaurant. Un seul système. FoodEatUp.",
    "caracteres": 56,
-   "duree_estimee_s": 3.7
+   "duree_estimee_s": 3.2
   }
  ]
 }

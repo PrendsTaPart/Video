@@ -18,8 +18,8 @@ const EPISODES = readdirSync(join(ROOT, "episodes"))
   .sort((a, b) => a.num - b.num);
 
 const NN = (n) => String(n).padStart(2, "0");
-const CPS = 15; // caractères par seconde, débit voix off français posé
-const FENETRE_VO_S = 7.0; // la voix off démarre à 2,0 s et finit avant 9,0 s
+const CPS = 17.5;         // caractères/seconde, mesuré sur les 4 premières lignes ElevenLabs (16,3 à 19,1)
+const FENETRE_VO_S = 6.4; // la voix de l'épisode démarre à 4,6 s et finit avant 11,0 s
 
 /* ------------------------------------------------------------------ prompts */
 function promptSeedance(ep, sc) {
@@ -239,8 +239,8 @@ writeFileSync(
     `Normalisation avant montage : **${S.voix_off.normalisation}**.`,
     ``,
     `Même voix et mêmes réglages de stabilité / rythme sur les 30 épisodes. La voix off démarre à`,
-    `2,0 s de l'outro et se termine avant 9,0 s : la fenêtre utile est de **${FENETRE_VO_S} s**`,
-    `(≈ ${Math.round(FENETRE_VO_S * CPS)} caractères à un débit posé de ${CPS} caractères/seconde).`,
+    `4,6 s de l'outro et se termine avant 11,0 s : la fenêtre utile est de **${FENETRE_VO_S} s**`,
+    `(≈ ${Math.round(FENETRE_VO_S * CPS)} caractères au débit mesuré de ${String(CPS).replace(".", ",")} caractères/seconde).`,
     ``,
     `C'est la voix off — et elle seule — qui prononce « FoodEatUp ». L'avatar Seedance ne le dit jamais.`,
     ``,
@@ -263,6 +263,8 @@ writeFileSync(
     ``,
     `⚠️ = dépasse la fenêtre. Le texte du brief est conservé tel quel ; une variante courte est`,
     `proposée ci-dessous pour ces épisodes — à valider avant d'enregistrer la voix.`,
+    `L'estimation est indicative : c'est la durée réelle de la prise qui fait foi. L'épisode 04,`,
+    `estimé à 6,6 s, sort à 6,08 s et tient sans retouche.`,
     ``,
     `| # | Épisode | Variante courte proposée | Car. | ≈ durée |`,
     `|---|---|---|---|---|`,
@@ -288,7 +290,7 @@ writeFileSync(
     `4. Aucun mineur mentionné dans les prompts (filtre de contenu Higgsfield).`,
     `5. Aucun mot de la liste « à éviter » du lexique voix dans les répliques.`,
     `6. Dialogues en guillemets français, au moins 3 plans par scène.`,
-    `7. Voix off tenant dans la fenêtre de ${FENETRE_VO_S} s (2,0 s → 9,0 s).`,
+    `7. Voix off tenant dans la fenêtre de ${FENETRE_VO_S} s (4,6 s → 11,0 s).`,
     ``,
     `## Ce qui reste à l'œil humain`,
     `Identité de Michael d'une scène à l'autre · absence de texte lisible généré par Seedance ·`,

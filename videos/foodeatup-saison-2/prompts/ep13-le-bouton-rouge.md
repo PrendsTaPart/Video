@@ -59,7 +59,7 @@ PHYSICS: realistic body weight, no morphing, no sliding feet, correct hands and 
 
 **Voix off — épisode** (à 4,6 s) : « Envoyez à la bonne personne, pas à toute la ville. FoodEatUp segmente vos clients et vous montre le retour de chaque campagne. »
 
-> ⚠️ Cette phrase dépasse la fenêtre de 7 s (2,0 s → 9,0 s) à débit posé.
+> ⚠️ Cette phrase dépasse la fenêtre de 6.4 s (2,0 s → 9,0 s) à débit posé.
 > **Variante courte proposée** : « Envoyez à la bonne personne, pas à toute la ville. FoodEatUp segmente et mesure vos campagnes. »
 
 ```text

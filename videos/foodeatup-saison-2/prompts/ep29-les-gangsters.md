@@ -59,7 +59,7 @@ PHYSICS: realistic body weight, no morphing, no sliding feet, correct hands and 
 
 **Voix off — épisode** (à 4,6 s) : « L'ardoise est numérique : elle ne s'oublie pas, elle ne s'envole pas. Solde, historique, règlement, dans FoodEatUp. »
 
-> ⚠️ Cette phrase dépasse la fenêtre de 7 s (2,0 s → 9,0 s) à débit posé.
+> ⚠️ Cette phrase dépasse la fenêtre de 6.4 s (2,0 s → 9,0 s) à débit posé.
 > **Variante courte proposée** : « L'ardoise est numérique : elle ne s'oublie pas. Solde, historique, règlement, dans FoodEatUp. »
 
 ```text

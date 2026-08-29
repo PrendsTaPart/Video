@@ -59,7 +59,7 @@ PHYSICS: realistic body weight, no morphing, no sliding feet, correct hands and 
 
 **Voix off — épisode** (à 4,6 s) : « Ses habitudes, vous les connaissez, même sans mémoire. FoodEatUp garde l'historique, les préférences et la fidélité de chaque client. »
 
-> ⚠️ Cette phrase dépasse la fenêtre de 7 s (2,0 s → 9,0 s) à débit posé.
+> ⚠️ Cette phrase dépasse la fenêtre de 6.4 s (2,0 s → 9,0 s) à débit posé.
 > **Variante courte proposée** : « Même sans mémoire, vous connaissez ses habitudes. FoodEatUp garde l'historique et la fidélité. »
 
 ```text

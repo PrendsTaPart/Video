@@ -91,19 +91,34 @@ identiques sur les 60 prompts par construction, on ne peut pas en oublier un.
 
 ## Épisodes montés
 
-| # | Épisode | Master | État |
+| # | Épisode | Module | Master |
 |---|---|---|---|
-| 01 | Le duel | `renders/ep01/ep01-le-duel.mp4` (32,1 s · 1080×1920 · 30 fps) | ✅ monté, transition + voix off incluses |
+| 01 | Le duel | Réservations · Plan de salle | `renders/ep01/ep01-le-duel.mp4` |
+| 02 | Le contrôle | HACCP | `renders/ep02/ep02-le-controle.mp4` |
+| 03 | Le critique | Avis | `renders/ep03/ep03-le-critique.mp4` |
+| 04 | Le brunch des zombies | File d'attente · Plan de salle | `renders/ep04/ep04-le-brunch-des-zombies.mp4` |
 
-Les deux plans Seedance de l'épisode 01 **existaient déjà** dans la bibliothèque Higgsfield et ont
-été réutilisés : aucune génération n'a été lancée. Traçabilité complète dans
-`renders/ep01/SOURCES.md`.
+Tous en 32,1 s · 1080×1920 · 30 fps, transition et voix off incluses.
+
+Les huit plans Seedance **existaient déjà** dans la bibliothèque Higgsfield et ont été réutilisés :
+aucune génération n'a été lancée. Traçabilité par épisode dans `renders/ep{NN}/SOURCES.md`,
+générée depuis `renders/sources.json`.
+
+```bash
+./scripts/monter-episode.sh 02      # remonte un épisode de bout en bout
+node scripts/sources.mjs            # régénère les fiches de provenance
+```
+
+L'acte central de l'outro (ce qui devient des données, l'écran produit) est **décrit dans
+`episodes/*.json`** sous `montage.ui`, pas codé : un épisode se monte en remplissant ce bloc.
+Les épisodes 05 à 30 ne l'ont pas encore — `render-outro.mjs` le dit explicitement.
 
 ## Points ouverts
 
 - Logo officiel en **SVG** absent du dépôt (seulement du PNG) — voir `assets/README.md`.
-- 13 voix off dépassent la fenêtre de 7 s au débit posé. Le texte du brief est conservé tel quel et
-  une **variante courte est proposée** dans chaque fiche concernée : à trancher avant l'enregistrement.
+- 10 voix off dépassent la fenêtre de 6,4 s au débit mesuré (17,5 car./s). Le texte du brief est
+  conservé tel quel et une **variante courte est proposée** dans chaque fiche concernée : à trancher
+  avant l'enregistrement. L'estimation reste indicative — l'épisode 04, estimé à 6,6 s, sort à 6,08 s.
 - **Continuité épisode 01** : la scène 1 et la scène 2 ne se passent pas dans la même salle
   (bistro sombre boisé vs salle rustique à fenêtre). Acceptable en l'état, mais à verrouiller via
   `@Image 3` sur les prochains épisodes.

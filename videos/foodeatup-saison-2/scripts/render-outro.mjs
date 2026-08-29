@@ -22,6 +22,7 @@ const n = NN(num);
 const S = JSON.parse(readFileSync(join(ROOT, "episodes.json"), "utf8"));
 const ep = S.episodes.find((e) => e.num === num);
 if (!ep) throw new Error(`épisode ${n} introuvable`);
+if (!ep.montage.ui) throw new Error(`épisode ${n} : pas de bloc « ui » dans episodes/ — l'acte central de l'outro n'est pas décrit.`);
 
 const EPDIR = join(ROOT, "renders", `ep${n}`);
 const WORK = join(EPDIR, "work");          // intermédiaires, ignorés par git
@@ -34,7 +35,7 @@ const html = readFileSync(join(ROOT, "outro", "template.html"), "utf8")
   .replace("__FONT__", b64(join(REPO, "studio-video/assets/vendor/fonts/Fredoka-Variable.woff2"), "font/woff2"))
   .replace("__LOGO__", b64(join(REPO, "studio-video/assets/brand/logo/foodeatup-logo-horizontal.png"), "image/png"))
   .replace("__PLATE__", b64(plate, "image/png"))
-  .replace("__DATA__", JSON.stringify({ texte_ecran: ep.montage.texte_ecran, cartes: ep.montage.cartes, transition: S.transition.texte }));
+  .replace("__DATA__", JSON.stringify({ texte_ecran: ep.montage.texte_ecran, cartes: ep.montage.cartes, transition: S.transition.texte, ui: ep.montage.ui }));
 
 rmSync(FRAMES, { recursive: true, force: true });
 mkdirSync(FRAMES, { recursive: true });

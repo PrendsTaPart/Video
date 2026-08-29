@@ -48,6 +48,35 @@
       { "t": "7–9 s", "texte": "cartes reliées : Réservations · Plan de salle · Tables." }
     ],
     "cartes": ["Réservations", "Plan de salle", "Tables"],
+    "ui": {
+          "acte2": {
+                "lignes": [
+                      {
+                            "chip": "20:00"
+                      },
+                      {
+                            "chip": "20:00"
+                      }
+                ],
+                "alerte": true
+          },
+          "acte3": {
+                "titre": "Réservations",
+                "chips": [
+                      "19:30",
+                      "20:00",
+                      "20:30"
+                ],
+                "chip_actif": 1,
+                "confirmation": "disponibilité vérifiée",
+                "grille": {
+                      "cols": 3,
+                      "rows": 2,
+                      "cible": 4
+                },
+                "label_bas": "Plan de salle"
+          }
+    },
     "texte_ecran": "Une table. Un client. Zéro duel.",
     "sfx": "tick sur chaque nom, whoosh sur l'assignation, impact final."
   }
@@ -101,6 +130,38 @@
       { "t": "7–9 s", "texte": "cartes : HACCP · Températures · Étiquettes DLC · Traçabilité · Checklist hygiène." }
     ],
     "cartes": ["HACCP", "Températures", "Étiquettes DLC", "Traçabilité", "Checklist hygiène"],
+    "ui": {
+          "acte2": {
+                "lignes": [
+                      {
+                            "chip": "lundi"
+                      },
+                      {
+                            "chip": "mardi"
+                      },
+                      {
+                            "chip": "mercredi"
+                      }
+                ],
+                "alerte": false
+          },
+          "acte3": {
+                "titre": "HACCP",
+                "chips": [
+                      "Lun",
+                      "Mar",
+                      "Mer"
+                ],
+                "chip_actif": 2,
+                "confirmation": "relevé enregistré",
+                "grille": {
+                      "cols": 3,
+                      "rows": 2,
+                      "cible": 1
+                },
+                "label_bas": "Températures"
+          }
+    },
     "texte_ecran": "HACCP : tout est noté. Pas dans votre tête.",
     "sfx": "tick par ligne, whoosh d'export, impact final."
   }
@@ -154,6 +215,34 @@
       { "t": "7–9 s", "texte": "cartes : Avis · Clients · Site vitrine." }
     ],
     "cartes": ["Avis", "Clients", "Site vitrine"],
+    "ui": {
+          "acte2": {
+                "lignes": [
+                      {
+                            "chip": "1 ★"
+                      },
+                      {
+                            "chip": "1 ★"
+                      },
+                      {
+                            "chip": "1 ★"
+                      }
+                ],
+                "alerte": false
+          },
+          "acte3": {
+                "type": "liste",
+                "titre": "Avis",
+                "chips": [],
+                "chip_actif": -1,
+                "confirmation": "réponse envoyée",
+                "lignes": 3,
+                "cible": 1,
+                "statut_initial": "en attente",
+                "statut_final": "répondu",
+                "label_bas": "Site vitrine"
+          }
+    },
     "texte_ecran": "Tous les avis. Une réponse.",
     "sfx": "ding par étoile, whoosh de réponse, impact final."
   }
@@ -208,6 +297,38 @@
       { "t": "7–9 s", "texte": "cartes : File d'attente · Plan de salle · Tables · Commandes." }
     ],
     "cartes": ["File d'attente", "Plan de salle", "Tables", "Commandes"],
+    "ui": {
+          "acte2": {
+                "lignes": [
+                      {
+                            "chip": "10 min"
+                      },
+                      {
+                            "chip": "20 min"
+                      },
+                      {
+                            "chip": "25 min"
+                      }
+                ],
+                "alerte": false
+          },
+          "acte3": {
+                "titre": "File d'attente",
+                "chips": [
+                      "2 pers.",
+                      "4 pers.",
+                      "6 pers."
+                ],
+                "chip_actif": 1,
+                "confirmation": "table prête",
+                "grille": {
+                      "cols": 3,
+                      "rows": 2,
+                      "cible": 2
+                },
+                "label_bas": "Plan de salle"
+          }
+    },
     "texte_ecran": "Le rush arrive. La file est prête.",
     "sfx": "tick par groupe, notification, whoosh de remplissage, impact final."
   }

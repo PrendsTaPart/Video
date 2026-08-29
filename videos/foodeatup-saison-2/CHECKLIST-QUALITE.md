@@ -8,7 +8,7 @@
 4. Aucun mineur mentionné dans les prompts (filtre de contenu Higgsfield).
 5. Aucun mot de la liste « à éviter » du lexique voix dans les répliques.
 6. Dialogues en guillemets français, au moins 3 plans par scène.
-7. Voix off tenant dans la fenêtre de 7 s (2,0 s → 9,0 s).
+7. Voix off tenant dans sa fenêtre (4,6 s → 11,0 s).
 
 ## À l'œil, sur chaque épisode monté
 

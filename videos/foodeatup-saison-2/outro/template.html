@@ -91,35 +91,22 @@ body{font-family:"Goodly","Fredoka",system-ui,sans-serif;color:var(--cream);-web
 
   <div id="wash" class="layer" style="opacity:0"></div>
 
-  <!-- 2–4 s : le carnet papier devient des données -->
+  <!-- 4–6 s : l'élément clé de la scène devient des données -->
   <div id="act2" class="layer" style="opacity:0">
-    <div id="notebook" class="card" style="left:180px;top:620px;width:720px;height:520px">
-      <div class="bar" style="left:64px;top:96px;width:330px;height:26px"></div>
-      <div class="bar" style="left:64px;top:250px;width:290px;height:26px"></div>
-      <div id="slotA" class="chip" style="right:64px;top:74px;width:200px;height:72px;background:rgba(0,123,255,.18);color:#231F20">20:00</div>
-      <div id="slotB" class="chip" style="right:64px;top:228px;width:200px;height:72px;background:rgba(0,123,255,.18);color:#231F20">20:00</div>
-      <div class="bar" style="left:64px;top:400px;width:592px;height:6px;background:rgba(35,31,32,.12)"></div>
-    </div>
+    <div id="paper" class="card" style="left:180px;top:620px;width:720px"></div>
     <div id="datalines"></div>
   </div>
 
-  <!-- 4–7 s : l'écran Réservations -->
+  <!-- 6–9 s : l'écran produit, une seule pression -->
   <div id="act3" class="layer" style="opacity:0">
     <div id="screen">
-      <div class="top">Réservations</div>
-      <div class="slot" id="sl1" style="left:44px;top:200px">19:30</div>
-      <div class="slot" id="sl2" style="left:282px;top:200px">20:00</div>
-      <div class="slot" id="sl3" style="left:520px;top:200px">20:30</div>
-      <div class="check" id="dispo" style="left:44px;top:346px;opacity:0">✓ disponibilité vérifiée</div>
-      <div class="tablecell" id="t1" style="left:44px;top:470px;width:196px;height:150px"></div>
-      <div class="tablecell" id="t2" style="left:282px;top:470px;width:196px;height:150px"></div>
-      <div class="tablecell" id="t3" style="left:520px;top:470px;width:196px;height:150px"></div>
-      <div class="tablecell" id="t4" style="left:44px;top:660px;width:196px;height:150px"></div>
-      <div class="tablecell" id="t5" style="left:282px;top:660px;width:196px;height:150px"></div>
-      <div class="tablecell" id="t6" style="left:520px;top:660px;width:196px;height:150px"></div>
+      <div class="top" id="scrtitle"></div>
+      <div id="chips"></div>
+      <div class="check" id="dispo" style="left:44px;top:346px;opacity:0"></div>
+      <div id="cells"></div>
       <div class="ripple" id="ripple" style="opacity:0"></div>
     </div>
-    <div id="planlabel" class="sub" style="position:absolute;left:0;right:0;top:1500px;opacity:0">Plan de salle</div>
+    <div id="planlabel" class="sub" style="position:absolute;left:0;right:0;top:1500px;opacity:0"></div>
   </div>
 
   <!-- 7–9 s : les modules -->
@@ -150,30 +137,106 @@ const expoOut = t => t>=1?1:1-Math.pow(2,-10*t);
 const backOut = t => 1+2.70158*Math.pow(t-1,3)+1.70158*Math.pow(t-1,2);
 const px = n => n.toFixed(2)+"px";
 
-/* cartes modules + flux, injectés depuis les données de l'épisode */
+/* ---- cartes modules : bloc centré, l'écart se resserre quand il y en a beaucoup ---- */
 const cardsRoot = document.getElementById("cards");
-DATA.cartes.forEach((nom,i)=>{
-  const flow = document.createElement("div");
-  flow.className = "flow"; flow.dataset.i = i; flow.style.top = px(690+i*186); flow.style.height="0px";
-  cardsRoot.appendChild(flow);
+const NC = DATA.cartes.length, CH = 150, CGAP = NC <= 4 ? 36 : 22;
+const CTOP = 1050 - (NC * CH + (NC - 1) * CGAP) / 2;
+DATA.cartes.forEach((nom, i) => {
+  const y = CTOP + i * (CH + CGAP);
+  if (i > 0) {
+    const flow = document.createElement("div");
+    flow.className = "flow"; flow.style.top = px(y - CGAP); flow.style.height = "0px";
+    cardsRoot.appendChild(flow);
+  }
   const c = document.createElement("div");
-  c.className = "modcard"; c.dataset.i = i; c.style.top = px(720+i*186); c.textContent = nom;
+  c.className = "modcard"; c.style.top = px(y); c.textContent = nom;
   cardsRoot.appendChild(c);
 });
 const CARDS = [...cardsRoot.querySelectorAll(".modcard")];
 const FLOWS = [...cardsRoot.querySelectorAll(".flow")];
 
-/* lignes de données de l'acte 2 */
+/* ---- acte 2 : la feuille de papier de l'épisode, puis ses lignes de données ---- */
+const A2 = DATA.ui.acte2;
+const paper = document.getElementById("paper");
+const ROWH = 154, PADT = 96;
+paper.style.height = px(PADT + A2.lignes.length * ROWH + 60);
+const PCHIPS = A2.lignes.map((l, i) => {
+  const bar = document.createElement("div");
+  bar.className = "bar";
+  bar.style.cssText = `left:64px;top:${PADT + i * ROWH}px;width:${330 - i * 20}px;height:26px`;
+  paper.appendChild(bar);
+  const chip = document.createElement("div");
+  chip.className = "chip";
+  chip.style.cssText = `right:64px;top:${PADT + i * ROWH - 22}px;width:220px;height:72px;color:#231F20`;
+  chip.textContent = l.chip;
+  paper.appendChild(chip);
+  return chip;
+});
+const rule = document.createElement("div");
+rule.className = "bar";
+rule.style.cssText = `left:64px;top:${PADT + A2.lignes.length * ROWH + 10}px;width:592px;height:6px;background:rgba(35,31,32,.12)`;
+paper.appendChild(rule);
+
 const dl = document.getElementById("datalines");
 const LINES = [];
-for (let i=0;i<14;i++){
+for (let i = 0; i < 14; i++) {
   const d = document.createElement("div");
   d.className = "dataline";
-  d.style.left = px(180 + (i%2)*370);
-  d.style.top  = px(660 + Math.floor(i/2)*64);
+  d.style.left = px(180 + (i % 2) * 370);
+  d.style.top = px(660 + Math.floor(i / 2) * 64);
   d.style.width = "0px";
   dl.appendChild(d); LINES.push(d);
 }
+
+/* ---- acte 3 : l'écran produit, en grille de cases ou en liste de lignes ---- */
+const A3 = DATA.ui.acte3;
+document.getElementById("scrtitle").textContent = A3.titre;
+document.getElementById("dispo").textContent = "✓ " + A3.confirmation;
+const HASCHIPS = (A3.chips || []).length > 0;
+document.getElementById("dispo").style.top = px(HASCHIPS ? 346 : 196);
+const chipsRoot = document.getElementById("chips");
+const SCHIPS = (A3.chips || []).map((t, i) => {
+  const el = document.createElement("div");
+  el.className = "slot";
+  el.style.cssText = `left:${44 + i * 238}px;top:200px`;
+  el.textContent = t;
+  chipsRoot.appendChild(el);
+  return el;
+});
+const cellsRoot = document.getElementById("cells");
+const LISTE = A3.type === "liste";
+const CELLS = [];
+const BADGES = [];
+if (LISTE) {
+  for (let i = 0; i < A3.lignes; i++) {
+    const row = document.createElement("div");
+    row.className = "tablecell";
+    row.style.cssText = `left:44px;width:672px;height:150px`;
+    row.style.top = px((HASCHIPS ? 470 : 290) + i * 176);
+    cellsRoot.appendChild(row);
+    const bar = document.createElement("div");
+    bar.className = "bar";
+    bar.style.cssText = `left:36px;top:44px;width:300px;height:22px;background:rgba(166,208,255,.30)`;
+    row.appendChild(bar);
+    const badge = document.createElement("div");
+    badge.className = "chip";
+    badge.style.cssText = `right:32px;top:38px;width:230px;height:66px;font-size:40px;background:rgba(166,208,255,.14);color:#A6D0FF`;
+    badge.textContent = A3.statut_initial;
+    row.appendChild(badge);
+    CELLS.push(row); BADGES.push(badge);
+  }
+} else {
+  const G = A3.grille;
+  for (let r = 0; r < G.rows; r++) for (let c = 0; c < G.cols; c++) {
+    const el = document.createElement("div");
+    el.className = "tablecell";
+    el.style.cssText = `left:${44 + c * 238}px;top:${470 + r * 190}px;width:196px;height:150px`;
+    cellsRoot.appendChild(el); CELLS.push(el);
+  }
+}
+const CIBLE = LISTE ? A3.cible : A3.grille.cible;
+const cibleEl = CELLS[CIBLE];
+document.getElementById("planlabel").textContent = A3.label_bas;
 
 function seek(f){
   /* ---------- 0–2 s : le plan figé, le clap, COUPEZ ---------- */
@@ -219,54 +282,62 @@ function seek(f){
   /* les actes 2 à 5 gardent leur découpage d'origine, décalé des 2 s de transition */
   const g = f - SHIFT;
 
-  /* ---------- 4–6 s : le carnet devient des données ---------- */
+  /* ---------- 4–6 s : l'élément clé devient des données ---------- */
   const a2 = document.getElementById("act2");
   a2.style.opacity = String(lin(g,58,66) * (1-lin(g,112,120)));
-  const nb = document.getElementById("notebook");
   const nbOut = lin(g,96,116);
-  nb.style.opacity = String(1-nbOut);
-  nb.style.transform = `translateY(${px(-90*expoOut(nbOut))}) scale(${(1-0.12*nbOut).toFixed(3)})`;
-  const blink = g>=72 && g<100 && (Math.floor((g-72)/5)%2===0);
-  for (const id of ["slotA","slotB"]){
-    const el = document.getElementById(id);
-    el.style.background = blink ? "rgba(255,80,80,.28)" : "rgba(0,123,255,.18)";
-    el.style.boxShadow = blink ? "0 0 0 6px rgba(255,80,80,.35)" : "none";
-  }
+  paper.style.opacity = String(1-nbOut);
+  paper.style.transform = `translateY(${px(-90*expoOut(nbOut))}) scale(${(1-0.12*nbOut).toFixed(3)})`;
+  const blink = A2.alerte && g>=72 && g<100 && (Math.floor((g-72)/5)%2===0);
+  PCHIPS.forEach((c) => {
+    c.style.background = blink ? "rgba(255,80,80,.28)" : "rgba(0,123,255,.18)";
+    c.style.boxShadow  = blink ? "0 0 0 6px rgba(255,80,80,.35)" : "none";
+  });
   LINES.forEach((d,i)=>{
     const t = expoOut(lin(g, 100+i*1.4, 118+i*1.4));
     d.style.width = px(t*330);
     d.style.opacity = String(t*(1-lin(g,114,120)));
   });
 
-  /* ---------- 6–9 s : l'écran Réservations, une seule pression ---------- */
+  /* ---------- 6–9 s : l'écran produit, une seule pression ---------- */
   const a3 = document.getElementById("act3");
   a3.style.opacity = String(lin(g,118,126) * (1-lin(g,204,212)));
   const scr = document.getElementById("screen");
   const rot = 8 - 16*lin(g,118,210);                 // rotation ≤ 8°
   const sIn = expoOut(lin(g,118,134));
   scr.style.transform = `perspective(2200px) rotateY(${rot.toFixed(2)}deg) rotateX(${(3-2*lin(g,118,210)).toFixed(2)}deg) scale(${(0.9+0.1*sIn).toFixed(3)})`;
-  const sel = document.getElementById("sl2");
-  const selOn = g>=140;
-  sel.style.background = selOn ? "rgba(0,123,255,.35)" : "transparent";
-  sel.style.borderColor = selOn ? "#007BFF" : "rgba(166,208,255,.35)";
-  sel.style.color = selOn ? "#FCF9E6" : "var(--sky)";
+  SCHIPS.forEach((el,i)=>{
+    const on = g>=140 && i===A3.chip_actif;
+    el.style.background  = on ? "rgba(0,123,255,.35)" : "transparent";
+    el.style.borderColor = on ? "#007BFF" : "rgba(166,208,255,.35)";
+    el.style.color       = on ? "#FCF9E6" : "var(--sky)";
+  });
   document.getElementById("dispo").style.opacity = String(lin(g,150,160));
 
-  /* la pression : ralenti de 6 images (f 168 → 174) */
+  /* la pression : ralenti de 6 images (g 168 → 174) */
   const tapF = 168;
   const rip = document.getElementById("ripple");
   const rt = lin(g,tapF,tapF+22);
-  if (g>=tapF-2 && f<tapF+22){
+  if (g>=tapF-2 && g<tapF+22){
     const size = 60 + 340*expoOut(rt);
+    const cx = cibleEl.offsetLeft + cibleEl.offsetWidth/2;
+    const cy = cibleEl.offsetTop  + cibleEl.offsetHeight/2;
     rip.style.opacity = String(0.9*(1-rt));
     rip.style.width = px(size); rip.style.height = px(size);
-    rip.style.left = px(282+98-size/2); rip.style.top = px(660+75-size/2);
+    rip.style.left = px(cx-size/2); rip.style.top = px(cy-size/2);
   } else rip.style.opacity = "0";
-  const t5 = document.getElementById("t5");
-  const booked = g>=tapF+6;
-  t5.style.background = booked ? "rgba(0,123,255,.45)" : "transparent";
-  t5.style.borderColor = booked ? "#007BFF" : "rgba(166,208,255,.3)";
-  t5.style.boxShadow = booked ? "0 0 40px rgba(0,123,255,.55)" : "none";
+  const done = g>=tapF+6;
+  if (LISTE){
+    cibleEl.style.borderColor = done ? "#007BFF" : "rgba(166,208,255,.3)";
+    cibleEl.style.background  = done ? "rgba(0,123,255,.16)" : "transparent";
+    BADGES[CIBLE].textContent = done ? A3.statut_final : A3.statut_initial;
+    BADGES[CIBLE].style.background = done ? "rgba(0,123,255,.45)" : "rgba(166,208,255,.14)";
+    BADGES[CIBLE].style.color = done ? "#FCF9E6" : "#A6D0FF";
+  } else {
+    cibleEl.style.background  = done ? "rgba(0,123,255,.45)" : "transparent";
+    cibleEl.style.borderColor = done ? "#007BFF" : "rgba(166,208,255,.3)";
+    cibleEl.style.boxShadow   = done ? "0 0 40px rgba(0,123,255,.55)" : "none";
+  }
   document.getElementById("planlabel").style.opacity = String(lin(g,178,190)*(1-lin(g,202,210)));
 
   /* ---------- 9–11 s : les modules ---------- */
@@ -283,9 +354,8 @@ function seek(f){
     c.style.borderColor = t>0.99 ? "rgba(0,123,255,.75)" : "rgba(166,208,255,.30)";
   });
   FLOWS.forEach((fl,i)=>{
-    if (i===0){ fl.style.height="0px"; return; }
-    const t = expoOut(lin(g, 232+i*10, 248+i*10));
-    fl.style.height = px(t*30);
+    const t = expoOut(lin(g, 242+i*10, 258+i*10));
+    fl.style.height = px(t*CGAP);
     fl.style.opacity = String(t*(1-lin(g,262,270)));
   });
 

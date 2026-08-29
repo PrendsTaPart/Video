@@ -1,0 +1,27 @@
+{
+ "commentaire": "Provenance des plans réutilisés depuis la bibliothèque Higgsfield. Aucune génération n'a été lancée depuis ce dépôt (voir CLAUDE.md).",
+ "episodes": {
+  "01": {
+   "scene1": "2855b8b2-37c8-441f-8b56-58c02c6b1fe1",
+   "scene2": "bd80afd3-8ad9-4eb5-ae1b-1103625f677e",
+   "vo": { "generation_id": "aEvhDJnASVuC99Wocrh3", "duree_s": 4.91 }
+  },
+  "02": {
+   "scene1": "49010b56-725f-4302-bb8f-ed6b891a9a9c",
+   "scene2": "a51846d0-b878-4cce-84e1-de7ee98860b6",
+   "vo": { "generation_id": "dzrtl8E6GnjCJVM2DQ7v", "duree_s": 5.20 }
+  },
+  "03": {
+   "scene1": "d0ff89f7-dbf5-41fa-9ff9-343789f6807f",
+   "scene2": "11191050-3916-467e-a1d2-e086182e0a31",
+   "vo": { "generation_id": "YLcYEbeoxV6bkVVbakaT", "duree_s": 5.39 }
+  },
+  "04": {
+   "scene1": "ab380df9-909d-479b-b764-66e8dd6c41fd",
+   "scene2": "96615720-6e6a-4908-a5b6-a83fc85be935",
+   "scene2_alternative": "3adbbfab-9708-41cf-b0fe-d5416cf69f97",
+   "vo": { "generation_id": "FJ4w50OFQYxItDFhqK04", "duree_s": 6.08 }
+  }
+ },
+ "transition": { "generation_id": "sZWCVMCGg2WgpYJb4j3c", "duree_s": 2.04, "commune": true }
+}
