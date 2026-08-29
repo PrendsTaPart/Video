@@ -1,0 +1,22 @@
+{
+  "_comment": "Structure de « Il était une fois un restaurant » exprimée en mesures (4/4, ~92 BPM). Les durées absolues ne sont PAS figées : 03_build_edl.py normalise ces poids sur la durée réelle de la chanson puis cale chaque frontière sur la grille de temps détectée. Pour un calage manuel exact, copier ce fichier en work/sections.override.json avec des champs start_sec/end_sec.",
+  "bpm_nominal": 92,
+  "meter": 4,
+  "sections": [
+    { "id": "intro",         "bars": 4,  "label": "Intro — piano seul, salle vide" },
+    { "id": "couplet1",      "bars": 16, "label": "Couplet 1 — le bac vide, la carte, la mémoire" },
+    { "id": "prerefrain1",   "bars": 8,  "label": "Pré-refrain 1 — la pile qui grandit" },
+    { "id": "refrain1",      "bars": 16, "label": "Refrain 1 — quatre hommes, un vendredi soir" },
+    { "id": "couplet2",      "bars": 16, "label": "Couplet 2 — il cherche où aller" },
+    { "id": "prerefrain2",   "bars": 8,  "label": "Pré-refrain 2 — le plan de salle se remplit" },
+    { "id": "refrain2",      "bars": 16, "label": "Refrain 2" },
+    { "id": "pont",          "bars": 4,  "label": "Pont — piano seul, une voix (EP525 ralenti 0,85×, sans coupe)" },
+    { "id": "refrain_final", "bars": 16, "label": "Refrain final — plus personne ne criait" },
+    { "id": "outro",         "bars": 4,  "label": "Outro — la salle qui se remplit" }
+  ],
+  "anchors": [
+    { "id": "quelqu-un-a-decroche", "section": "couplet2",      "fraction": 0.5,   "lyric": "Puis une voix, dix-huit heures quarante / quelqu'un a décroché", "cut_to": "EP522" },
+    { "id": "le-z-avant-d-eteindre", "section": "refrain_final", "fraction": 0.625, "lyric": "Vingt-trois heures cinquante, le Z avant d'éteindre", "cut_to": "EP533" },
+    { "id": "sept-heures-le-lendemain", "section": "refrain_final", "fraction": 0.75, "lyric": "Sept heures du matin, le lendemain", "cut_to": "EP534" }
+  ]
+}

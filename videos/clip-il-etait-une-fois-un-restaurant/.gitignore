@@ -1,0 +1,17 @@
+# Rushes téléchargés depuis Higgsfield / RapidoCMS — jamais versionnés,
+# ils se retéléchargent avec scripts/01_fetch_rushes.py (idempotent).
+rushes/
+# Chanson Suno déposée par Michael
+chanson.mp4
+chanson.mp3
+chanson.wav
+# Rendus et intermédiaires — les MP4 pèsent 355 Mo, ils se régénèrent ;
+# seuls le rapport et la vignette sont versionnés pour la traçabilité.
+out/*
+!out/RAPPORT.md
+!out/vignette.jpg
+work/
+# dist/ : la copie de livraison (87 Mo, CRF 23) est versionnée exprès — c'est elle
+# qui donne l'URL publique raw.githubusercontent servant au dépôt YouTube / RapidoCMS,
+# comme pour les rushes de la série. Le master CRF 18 (149 Mo) dépasse la limite GitHub.
+!dist/
