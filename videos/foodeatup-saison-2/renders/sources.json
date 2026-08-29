@@ -72,6 +72,14 @@
    "vo": {
     "generation_id": "ffdyypqMro4SlCszdqGY",
     "duree_s": 5.34
+   },
+   "catalogue": {
+    "id": "EPC05",
+    "serie": "michael-fait-son-cinema",
+    "saison": 2,
+    "piece": "master",
+    "etat": "pret",
+    "url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/michael-fait-son-cinema-EPC05-le-casse-master"
    }
   },
   "06": {
@@ -80,6 +88,14 @@
    "vo": {
     "generation_id": "DaRIsjLXBh9VXl7IjkAu",
     "duree_s": 5.43
+   },
+   "catalogue": {
+    "id": "EPC06",
+    "serie": "michael-fait-son-cinema",
+    "saison": 2,
+    "piece": "master",
+    "etat": "pret",
+    "url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/michael-fait-son-cinema-EPC06-le-monstre-master"
    }
   },
   "07": {
@@ -90,7 +106,15 @@
     "generation_id": "SqBe2fOcW98hvFyd4JLQ",
     "duree_s": 5.85
    },
-   "note": "Deux prises de scène 1 : la retenue (la plus récente) fait dire à la cliente « Je suis allergique aux haricots verts » et à Michael « Elle m'a dit quel légume déjà ? » ; l'alternative suit la fiche au mot près (« aux noix » / « C'est laquelle ? »). La scène 2 est déclarée 16:9 dans les paramètres Higgsfield mais sort bien en 720×1280."
+   "note": "Deux prises de scène 1 : la retenue (la plus récente) fait dire à la cliente « Je suis allergique aux haricots verts » et à Michael « Elle m'a dit quel légume déjà ? » ; l'alternative suit la fiche au mot près (« aux noix » / « C'est laquelle ? »). La scène 2 est déclarée 16:9 dans les paramètres Higgsfield mais sort bien en 720×1280.",
+   "catalogue": {
+    "id": "EPC07",
+    "serie": "michael-fait-son-cinema",
+    "saison": 2,
+    "piece": "master",
+    "etat": "pret",
+    "url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/michael-fait-son-cinema-EPC07-la-bombe-master"
+   }
   }
  },
  "transition": {
