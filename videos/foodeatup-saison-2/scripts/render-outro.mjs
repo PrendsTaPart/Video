@@ -34,7 +34,7 @@ const html = readFileSync(join(ROOT, "outro", "template.html"), "utf8")
   .replace("__FONT__", b64(join(REPO, "studio-video/assets/vendor/fonts/Fredoka-Variable.woff2"), "font/woff2"))
   .replace("__LOGO__", b64(join(REPO, "studio-video/assets/brand/logo/foodeatup-logo-horizontal.png"), "image/png"))
   .replace("__PLATE__", b64(plate, "image/png"))
-  .replace("__DATA__", JSON.stringify({ texte_ecran: ep.montage.texte_ecran, cartes: ep.montage.cartes }));
+  .replace("__DATA__", JSON.stringify({ texte_ecran: ep.montage.texte_ecran, cartes: ep.montage.cartes, transition: S.transition.texte }));
 
 rmSync(FRAMES, { recursive: true, force: true });
 mkdirSync(FRAMES, { recursive: true });
@@ -42,7 +42,7 @@ mkdirSync(WORK, { recursive: true });
 const page_html = join(WORK, "outro.html");
 writeFileSync(page_html, html);
 
-const FPS = 30, DUR = 300;
+const FPS = S.outro.fps, DUR = S.outro.frames;
 const browser = await chromium.launch({ executablePath: CHROME, args: ["--no-sandbox", "--force-device-scale-factor=1"] });
 const page = await browser.newPage({ viewport: { width: 1080, height: 1920 }, deviceScaleFactor: 1 });
 await page.goto("file://" + page_html);
@@ -65,7 +65,7 @@ img{position:absolute;inset:0;width:1080px;height:1920px;object-fit:cover}
 .t{font-size:190px;font-weight:700;color:#FCF9E6;line-height:.94;text-align:center;letter-spacing:-4px}
 .p{font-size:56px;font-weight:500;color:#FFA500;margin-top:34px;text-align:center}
 </style>
-<img src="${b64(join(FRAMES, "f0075.png"), "image/png")}">
+<img src="${b64(join(FRAMES, "f0000.png"), "image/png")}">
 <div class="panel"><div class="ep">ÉPISODE ${n}</div><div class="t">${ep.titre.toUpperCase()}</div><div class="p">${ep.montage.texte_ecran}</div></div>`;
 const thumbFile = join(WORK, "thumb.html");
 writeFileSync(thumbFile, thumbHtml);

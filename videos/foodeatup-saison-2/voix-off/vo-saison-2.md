@@ -10,6 +10,26 @@ Même voix et mêmes réglages de stabilité / rythme sur les 30 épisodes. La v
 
 C'est la voix off — et elle seule — qui prononce « FoodEatUp ». L'avatar Seedance ne le dit jamais.
 
+## La ligne de transition (une seule prise pour les 30 épisodes)
+
+> « Cette scène aurait pu être évitée ? »
+
+Le pont entre le film et l'animation, identique sur les 30 épisodes : c'est la punchline qui transforme le gag en question. Elle est dite à 2,1 s de l'outro, sur le plan figé,
+entre le clap « COUPEZ ! » et « Dans la vraie vie… ». Une seule prise ElevenLabs sert les 30 épisodes : la ligne ne change pas d'un épisode à l'autre. Changer `texte` et `voix_off` ici suffit à changer la signature de toute la saison.
+
+Variantes validées, interchangeables sans retoucher le montage :
+
+- « Cette scène aurait pu être évitée. »
+- « Tout ça pour ça. »
+- « On refait la scène ? »
+- « Dommage. Il y avait plus simple. »
+- « Cette scène n'existe pas chez eux. »
+- « Scène coupée au montage. »
+- « Vous auriez fait mieux ? »
+- « Personne n'était obligé de vivre ça. »
+
+## Les 30 lignes d'épisode
+
 | # | Épisode | Phrase | Car. | ≈ durée |
 |---|---|---|---|---|
 | 01 | Le duel | Deux clients, une table ? Avec FoodEatUp, la réservation vérifie la place avant vous. | 85 | 5.7 s |

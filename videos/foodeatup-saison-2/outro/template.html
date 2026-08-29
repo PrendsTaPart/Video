@@ -84,7 +84,8 @@ body{font-family:"Goodly","Fredoka",system-ui,sans-serif;color:var(--cream);-web
   <div id="act1" class="layer">
     <div class="safe">
       <div id="coupez" class="headline" style="position:absolute;left:0;right:0;top:640px">COUPEZ !</div>
-      <div id="vraievie" class="sub" style="position:absolute;left:0;right:0;top:800px">Dans la vraie vie…</div>
+      <div id="punchline" class="headline" style="position:absolute;left:0;right:0;top:560px;font-size:88px"></div>
+      <div id="vraievie" class="sub" style="position:absolute;left:0;right:0;top:900px">Dans la vraie vie…</div>
     </div>
   </div>
 
@@ -136,10 +137,11 @@ body{font-family:"Goodly","Fredoka",system-ui,sans-serif;color:var(--cream);-web
 </div>
 
 <script>
-const FPS = 30, DUR = 300;
+const FPS = 30, DUR = 360, SHIFT = 60; // SHIFT = les 2 s de transition insérées après le clap
 const DATA = __DATA__;
 document.getElementById("plate").style.backgroundImage = "url(__PLATE__)";
 document.getElementById("punch").textContent = DATA.texte_ecran;
+document.getElementById("punchline").textContent = DATA.transition;
 
 /* --- utilitaires déterministes --- */
 const clamp = (v,a,b)=>Math.min(b,Math.max(a,v));
@@ -176,12 +178,12 @@ for (let i=0;i<14;i++){
 function seek(f){
   /* ---------- 0–2 s : le plan figé, le clap, COUPEZ ---------- */
   const plate = document.getElementById("plate");
-  const zoom = 1 + 0.06*lin(f,0,60);
-  const sat  = f<=60 ? 1 - 0.85*lin(f,6,58) : 0.15;
+  const zoom = 1 + 0.08*lin(f,0,120);
+  const sat  = 1 - 0.85*lin(f,6,100);
   plate.style.transform = `scale(${zoom.toFixed(4)})`;
-  plate.style.filter = `saturate(${sat.toFixed(3)}) brightness(${(1-0.25*lin(f,20,60)).toFixed(3)})`;
-  plate.style.opacity = String(1 - lin(f,56,66));
-  document.getElementById("vignette").style.opacity = String(1 - lin(f,56,66));
+  plate.style.filter = `saturate(${sat.toFixed(3)}) brightness(${(1-0.28*lin(f,20,110)).toFixed(3)})`;
+  plate.style.opacity = String(1 - lin(f,116,126));
+  document.getElementById("vignette").style.opacity = String(1 - lin(f,116,126));
 
   const clap = document.getElementById("clap"), stick = document.getElementById("stick");
   const clapOn = f < 40;
@@ -201,92 +203,101 @@ function seek(f){
   const cIn = lin(f,12,20), cOut = lin(f,52,62);
   coupez.style.opacity = String(cIn*(1-cOut));
   coupez.style.transform = `scale(${(0.7+0.3*backOut(Math.max(cIn,0.001))).toFixed(3)})`;
+  /* ---------- 2–4 s : la punchline de transition (identique sur les 30 épisodes) ---------- */
+  const pl = document.getElementById("punchline");
+  const plIn = lin(f,60,72), plOut = lin(f,104,114);
+  pl.style.opacity = String(plIn*(1-plOut));
+  pl.style.transform = `translateY(${px(34*(1-expoOut(plIn)))}) scale(${(0.97+0.03*expoOut(plIn)).toFixed(3)})`;
+
   const vv = document.getElementById("vraievie");
-  const vIn = lin(f,48,58), vOut = lin(f,58,66);
+  const vIn = lin(f,108,118), vOut = lin(f,118,126);
   vv.style.opacity = String(vIn*(1-vOut));
   vv.style.transform = `translateY(${px(26*(1-expoOut(vIn)))})`;
 
-  document.getElementById("wash").style.opacity = String(lin(f,56,66));
+  document.getElementById("wash").style.opacity = String(lin(f,116,126));
 
-  /* ---------- 2–4 s : le carnet devient des données ---------- */
+  /* les actes 2 à 5 gardent leur découpage d'origine, décalé des 2 s de transition */
+  const g = f - SHIFT;
+
+  /* ---------- 4–6 s : le carnet devient des données ---------- */
   const a2 = document.getElementById("act2");
-  a2.style.opacity = String(lin(f,58,66) * (1-lin(f,112,120)));
+  a2.style.opacity = String(lin(g,58,66) * (1-lin(g,112,120)));
   const nb = document.getElementById("notebook");
-  const nbOut = lin(f,96,116);
+  const nbOut = lin(g,96,116);
   nb.style.opacity = String(1-nbOut);
   nb.style.transform = `translateY(${px(-90*expoOut(nbOut))}) scale(${(1-0.12*nbOut).toFixed(3)})`;
-  const blink = f>=72 && f<100 && (Math.floor((f-72)/5)%2===0);
+  const blink = g>=72 && g<100 && (Math.floor((g-72)/5)%2===0);
   for (const id of ["slotA","slotB"]){
     const el = document.getElementById(id);
     el.style.background = blink ? "rgba(255,80,80,.28)" : "rgba(0,123,255,.18)";
     el.style.boxShadow = blink ? "0 0 0 6px rgba(255,80,80,.35)" : "none";
   }
   LINES.forEach((d,i)=>{
-    const t = expoOut(lin(f, 100+i*1.4, 118+i*1.4));
+    const t = expoOut(lin(g, 100+i*1.4, 118+i*1.4));
     d.style.width = px(t*330);
-    d.style.opacity = String(t*(1-lin(f,114,120)));
+    d.style.opacity = String(t*(1-lin(g,114,120)));
   });
 
-  /* ---------- 4–7 s : l'écran Réservations, une seule pression ---------- */
+  /* ---------- 6–9 s : l'écran Réservations, une seule pression ---------- */
   const a3 = document.getElementById("act3");
-  a3.style.opacity = String(lin(f,118,126) * (1-lin(f,204,212)));
+  a3.style.opacity = String(lin(g,118,126) * (1-lin(g,204,212)));
   const scr = document.getElementById("screen");
-  const rot = 8 - 16*lin(f,118,210);                 // rotation ≤ 8°
-  const sIn = expoOut(lin(f,118,134));
-  scr.style.transform = `perspective(2200px) rotateY(${rot.toFixed(2)}deg) rotateX(${(3-2*lin(f,118,210)).toFixed(2)}deg) scale(${(0.9+0.1*sIn).toFixed(3)})`;
+  const rot = 8 - 16*lin(g,118,210);                 // rotation ≤ 8°
+  const sIn = expoOut(lin(g,118,134));
+  scr.style.transform = `perspective(2200px) rotateY(${rot.toFixed(2)}deg) rotateX(${(3-2*lin(g,118,210)).toFixed(2)}deg) scale(${(0.9+0.1*sIn).toFixed(3)})`;
   const sel = document.getElementById("sl2");
-  const selOn = f>=140;
+  const selOn = g>=140;
   sel.style.background = selOn ? "rgba(0,123,255,.35)" : "transparent";
   sel.style.borderColor = selOn ? "#007BFF" : "rgba(166,208,255,.35)";
   sel.style.color = selOn ? "#FCF9E6" : "var(--sky)";
-  document.getElementById("dispo").style.opacity = String(lin(f,150,160));
+  document.getElementById("dispo").style.opacity = String(lin(g,150,160));
 
   /* la pression : ralenti de 6 images (f 168 → 174) */
   const tapF = 168;
   const rip = document.getElementById("ripple");
-  const rt = lin(f,tapF,tapF+22);
-  if (f>=tapF-2 && f<tapF+22){
+  const rt = lin(g,tapF,tapF+22);
+  if (g>=tapF-2 && f<tapF+22){
     const size = 60 + 340*expoOut(rt);
     rip.style.opacity = String(0.9*(1-rt));
     rip.style.width = px(size); rip.style.height = px(size);
     rip.style.left = px(282+98-size/2); rip.style.top = px(660+75-size/2);
   } else rip.style.opacity = "0";
   const t5 = document.getElementById("t5");
-  const booked = f>=tapF+6;
+  const booked = g>=tapF+6;
   t5.style.background = booked ? "rgba(0,123,255,.45)" : "transparent";
   t5.style.borderColor = booked ? "#007BFF" : "rgba(166,208,255,.3)";
   t5.style.boxShadow = booked ? "0 0 40px rgba(0,123,255,.55)" : "none";
-  document.getElementById("planlabel").style.opacity = String(lin(f,178,190)*(1-lin(f,202,210)));
+  document.getElementById("planlabel").style.opacity = String(lin(g,178,190)*(1-lin(g,202,210)));
 
-  /* ---------- 7–9 s : les modules ---------- */
+  /* ---------- 9–11 s : les modules ---------- */
   const a4 = document.getElementById("act4");
-  a4.style.opacity = String(lin(f,208,216) * (1-lin(f,262,270)));
+  a4.style.opacity = String(lin(g,208,216) * (1-lin(g,262,270)));
   const p = document.getElementById("punch");
-  const pIn = lin(f,210,222);
+  const pIn = lin(g,210,222);
   p.style.opacity = String(pIn);
   p.style.transform = `translateY(${px(30*(1-expoOut(pIn)))})`;
   CARDS.forEach((c,i)=>{
-    const t = expoOut(lin(f, 220+i*10, 238+i*10));
+    const t = expoOut(lin(g, 220+i*10, 238+i*10));
     c.style.opacity = String(t);
     c.style.transform = `translateY(${px(40*(1-t))}) scale(${(0.94+0.06*t).toFixed(3)})`;
     c.style.borderColor = t>0.99 ? "rgba(0,123,255,.75)" : "rgba(166,208,255,.30)";
   });
   FLOWS.forEach((fl,i)=>{
     if (i===0){ fl.style.height="0px"; return; }
-    const t = expoOut(lin(f, 232+i*10, 248+i*10));
+    const t = expoOut(lin(g, 232+i*10, 248+i*10));
     fl.style.height = px(t*30);
-    fl.style.opacity = String(t*(1-lin(f,262,270)));
+    fl.style.opacity = String(t*(1-lin(g,262,270)));
   });
 
-  /* ---------- 9–10 s : le logo seul ---------- */
+  /* ---------- 11–12 s : le logo seul ---------- */
   const a5 = document.getElementById("act5");
-  a5.style.opacity = String(lin(f,268,276) * (1-lin(f,294,300)));
-  const lIn = lin(f,268,286);
+  a5.style.opacity = String(lin(g,268,276) * (1-lin(g,294,300)));
+  const lIn = lin(g,268,286);
   document.getElementById("logo").style.transform = `translateY(-50%) scale(${(0.9+0.1*expoOut(lIn)).toFixed(4)})`;
   document.getElementById("halo").style.opacity = String(0.85*expoOut(lIn));
   document.getElementById("halo").style.transform = `scale(${(0.6+0.5*expoOut(lIn)).toFixed(3)})`;
   const sg = document.getElementById("signature");
-  const sgIn = lin(f,276,290);
+  const sgIn = lin(g,276,290);
   sg.style.opacity = String(sgIn);
   sg.style.transform = `translateY(${px(20*(1-expoOut(sgIn)))})`;
 }

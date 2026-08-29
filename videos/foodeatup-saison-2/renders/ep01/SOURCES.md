@@ -17,11 +17,11 @@ fiches `prompts/ep01-le-duel.md`, à une différence près : la référence visa
 
 | Sortie | Contenu |
 |---|---|
-| `ep01-le-duel.mp4` | **Le master** : scène 1 + scène 2 + outro avec voix, 1080×1920, 30 fps, 30,1 s |
-| `ep01-outro.mp4` | L'outro seul, 10 s, voix off + SFX |
-| `ep01-outro-muet.mp4` | L'outro seul, 10 s, SFX uniquement |
+| `ep01-le-duel.mp4` | **Le master** : scène 1 + scène 2 + transition + animation, 1080×1920, 30 fps, 32,1 s |
+| `ep01-outro.mp4` | L'outro seul, 12 s (2 s de transition + 10 s d'animation), voix off + SFX |
+| `ep01-outro-muet.mp4` | L'outro seul, 12 s, SFX uniquement |
 | `vo.mp3` | La voix off de l'épisode, normalisée, prête à remonter |
-| `ep01-thumb.png` | Miniature spec : image de l'outro à 2,5 s + titre |
+| `ep01-thumb.png` | Miniature : le plan figé du début de l'outro + titre (l'image de 2,5 s porte désormais la punchline, deux textes se seraient superposés) |
 | `ep01-thumb-hook.png` | Miniature alternative : le gros plan de la scène 1 + la réplique du hook |
 | `scene2-last-frame.png` | Dernière image de la scène 2, plaque de départ de l'outro |
 
@@ -38,19 +38,20 @@ node scripts/render-outro.mjs 1      # 300 images → outro sans son + miniature
 
 ## Calage des SFX dans l'outro (secondes)
 
-`clap` 0,40 · `tick` 2,40 / 2,73 / 3,07 (les deux noms en conflit) · `whoosh` 5,60 (l'assignation
-en un tap) · `tick` 7,33 / 7,67 / 8,00 (les trois cartes modules) · `whoosh` 8,95 + `impact` 9,00
-(le logo).
+`clap` 0,40 · `whoosh` 2,00 (l'arrivée de la punchline de transition) · `tick` 4,40 / 4,73 / 5,07
+(les deux noms en conflit) · `whoosh` 7,60 (l'assignation en un tap) · `tick` 9,33 / 9,67 / 10,00
+(les trois cartes modules) · `whoosh` 10,95 + `impact` 11,00 (le logo).
 
 ## La voix off
 
 | | |
 |---|---|
-| Texte | « Deux clients, une table ? Avec FoodEatUp, la réservation vérifie la place avant vous. » |
+| Ligne de transition | « Cette scène aurait pu être évitée ? » — commune aux 30 épisodes, prise `sZWCVMCGg2WgpYJb4j3c` (2,04 s), calée à **2,10 s** |
+| Ligne de l'épisode | « Deux clients, une table ? Avec FoodEatUp, la réservation vérifie la place avant vous. » |
 | Voix | **Adam - Instructor** `TGAegA0zNRi8I6nUdq3i` — la voix française de la saison |
 | Modèle | `eleven_multilingual_v2` |
 | Prise retenue | `aEvhDJnASVuC99Wocrh3` (4,91 s), la plus posée des prises |
-| Calage | démarre à **2,00 s**, se termine à **6,59 s** (fenêtre : avant 9,0 s) ✅ |
+| Calage de l'épisode | démarre à **4,60 s**, se termine à **9,51 s** (fenêtre : avant 11,0 s) ✅ |
 
 La prise brute sortait très bas (moyenne −35,8 dB, crête −16,6 dB) : elle est normalisée à
 −16 LUFS avec limitation de crête à −1,5 dBTP, puis l'outro entier est aligné à **−18,2 LUFS**,

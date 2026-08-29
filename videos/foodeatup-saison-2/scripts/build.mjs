@@ -55,11 +55,16 @@ Entrées dans ./assets :
 STRUCTURE IMPOSÉE (identique sur les 30 épisodes — c'est la signature de la saison) :
 ${S.outro.structure.map((s) => `${s.t} : ${s.contenu}`).join("\n")}
 ${ep.final_saison ? "\nFINAL DE SAISON : le découpage ci-dessous REMPLACE la structure imposée (le clap reste à 0,4 s,\nle logo reste seul de 9 à 10 s).\n" : ""}
+TRANSITION (identique sur les 30 épisodes, ne pas la réinventer) :
+Texte à l'écran de 2,0 à 3,8 s, sur le plan figé qui finit de se désaturer : « ${S.transition.texte} »
+Voix off de la transition calée à ${String(S.transition.cale_s).replace(".", ",")} s — une seule prise ElevenLabs sert les 30 épisodes.
+Puis « Dans la vraie vie… » à 3,6 s et fondu vers l'animation à 3,9 s.
+
 CONTENU DE CET ÉPISODE :
 ${ep.montage.beats.map((b) => `${b.t} : ${b.texte}`).join("\n")}
 Modules affichés en cartes${ep.final_saison ? "" : " (7–9 s)"} : ${ep.montage.cartes.join(" · ")}
 Texte à l'écran${ep.montage.texte_ecran_timing ? ` (${ep.montage.texte_ecran_timing})` : ""} : « ${ep.montage.texte_ecran} »
-Voix off (démarre à 2,0 s, finie avant 9,0 s) : « ${ep.montage.vo} »
+Voix off de l'épisode (démarre à 4,6 s, finie avant 11,0 s) : « ${ep.montage.vo} »
 SFX : ${ep.montage.sfx}
 
 RÈGLES : ${S.outro.regles.join(" ")}
@@ -87,8 +92,9 @@ function ficheEpisode(ep) {
     L.push(`*${sc.resume}*`, "");
     L.push("```text", promptSeedance(ep, sc), "```", "");
   }
-  L.push(`## CLAUDE CODE — 10 s (outro ep${n})`, "");
-  L.push(`**Voix off** : « ${ep.montage.vo} »`);
+  L.push(`## CLAUDE CODE — ${S.outro.duree_s} s (outro ep${n} : ${S.outro.duree_s - 10} s de transition + 10 s d'animation)`, "");
+  L.push(`**Voix off — transition** (commune aux 30 épisodes, à 2,1 s) : « ${S.transition.texte} »`, "");
+  L.push(`**Voix off — épisode** (à 4,6 s) : « ${ep.montage.vo} »`);
   if (ep.montage.vo_variante_courte) {
     L.push(``, `> ⚠️ Cette phrase dépasse la fenêtre de ${FENETRE_VO_S} s (2,0 s → 9,0 s) à débit posé.`);
     L.push(`> **Variante courte proposée** : « ${ep.montage.vo_variante_courte} »`);
@@ -237,6 +243,19 @@ writeFileSync(
     `(≈ ${Math.round(FENETRE_VO_S * CPS)} caractères à un débit posé de ${CPS} caractères/seconde).`,
     ``,
     `C'est la voix off — et elle seule — qui prononce « FoodEatUp ». L'avatar Seedance ne le dit jamais.`,
+    ``,
+    `## La ligne de transition (une seule prise pour les 30 épisodes)`,
+    ``,
+    `> « ${S.transition.texte} »`,
+    ``,
+    `${S.transition.role} Elle est dite à ${String(S.transition.cale_s).replace(".", ",")} s de l'outro, sur le plan figé,`,
+    `entre le clap « COUPEZ ! » et « Dans la vraie vie… ». ${S.transition.note}`,
+    ``,
+    `Variantes validées, interchangeables sans retoucher le montage :`,
+    ``,
+    ...S.transition.alternatives.map((a) => `- « ${a} »`),
+    ``,
+    `## Les 30 lignes d'épisode`,
     ``,
     `| # | Épisode | Phrase | Car. | ≈ durée |`,
     `|---|---|---|---|---|`,

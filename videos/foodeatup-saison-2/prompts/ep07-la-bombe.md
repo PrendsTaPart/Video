@@ -53,9 +53,11 @@ AUDIO: ringing tone, sniff, card flip, tongs down, heartbeat stops, plate set do
 PHYSICS: realistic body weight, no morphing, no sliding feet, correct hands and fingers, no extra limbs. SKIN: preserve Michael's natural skin and features from @Image 1, no smoothing, no plastic look. NO-IP: no brands, no logos, no readable text, no captions or subtitles, no recognizable songs, no real celebrity likeness, no minors. Keep Michael's face, hair, build and outfit identical through the whole clip. Sharp, clean, cinematic render.
 ```
 
-## CLAUDE CODE — 10 s (outro ep07)
+## CLAUDE CODE — 12 s (outro ep07 : 2 s de transition + 10 s d'animation)
 
-**Voix off** : « Un allergène, ça se sait avant de servir. FoodEatUp l'affiche sur chaque recette et sur votre site. »
+**Voix off — transition** (commune aux 30 épisodes, à 2,1 s) : « Cette scène aurait pu être évitée ? »
+
+**Voix off — épisode** (à 4,6 s) : « Un allergène, ça se sait avant de servir. FoodEatUp l'affiche sur chaque recette et sur votre site. »
 
 ```text
 Tu es motion designer. Crée avec Remotion (React) une composition verticale 1080×1920, 30 fps,
@@ -71,11 +73,17 @@ Entrées dans ./assets :
 - sfx/ : clap.wav, whoosh.wav, tick.wav, impact.wav.
 
 STRUCTURE IMPOSÉE (identique sur les 30 épisodes — c'est la signature de la saison) :
-0–2 s : scene2-last-frame plein écran, léger zoom avant, désaturation progressive ; clap de cinéma qui entre par le bas et claque à 0,4 s (SFX clap) ; texte « COUPEZ ! » ; à 1,6 s « Dans la vraie vie… ».
-2–4 s : L'élément clé de la scène se transforme en données (motion blur, particules légères, easing expo-out) — précisé par épisode.
-4–7 s : Démonstration du bénéfice : maquette d'écran FoodEatUp en 3D légère (rotation ≤ 8°), micro-animations, action en UN tap, ralenti de 6 images sur le tap.
-7–9 s : Les modules concernés apparaissent en cartes reliées par des flux lumineux (libellés réels uniquement).
-9–10 s : Tout disparaît ; logo FoodEatUp seul, centré, scale 0,9 → 1 + halo ; signature sous le logo ; SFX impact + whoosh ; fondu.
+0–2 s : scene2-last-frame plein écran, léger zoom avant, désaturation progressive ; clap de cinéma qui entre par le bas et claque à 0,4 s (SFX clap) ; texte « COUPEZ ! ».
+2–4 s : TRANSITION (identique sur les 30 épisodes) : sur le plan figé, la punchline « Cette scène aurait pu être évitée ? » à l'écran et en voix off (calée à 2,1 s) ; puis « Dans la vraie vie… » et fondu vers l'animation.
+4–6 s : L'élément clé de la scène se transforme en données (motion blur, particules légères, easing expo-out) — précisé par épisode.
+6–9 s : Démonstration du bénéfice : maquette d'écran FoodEatUp en 3D légère (rotation ≤ 8°), micro-animations, action en UN tap, ralenti de 6 images sur le tap.
+9–11 s : Les modules concernés apparaissent en cartes reliées par des flux lumineux (libellés réels uniquement).
+11–12 s : Tout disparaît ; logo FoodEatUp seul, centré, scale 0,9 → 1 + halo ; signature sous le logo ; SFX impact + whoosh ; fondu.
+
+TRANSITION (identique sur les 30 épisodes, ne pas la réinventer) :
+Texte à l'écran de 2,0 à 3,8 s, sur le plan figé qui finit de se désaturer : « Cette scène aurait pu être évitée ? »
+Voix off de la transition calée à 2,1 s — une seule prise ElevenLabs sert les 30 épisodes.
+Puis « Dans la vraie vie… » à 3,6 s et fondu vers l'animation à 3,9 s.
 
 CONTENU DE CET ÉPISODE :
 2–4 s : les deux bols se déplient en deux fiches recette ; les ingrédients défilent ligne par ligne ; une ligne s'allume avec une icône allergène.
@@ -83,10 +91,10 @@ CONTENU DE CET ÉPISODE :
 7–9 s : cartes : Recettes · Ingrédients · Site vitrine · Pages.
 Modules affichés en cartes (7–9 s) : Recettes · Ingrédients · Site vitrine · Pages
 Texte à l'écran : « Allergènes : visibles avant. Pas après. »
-Voix off (démarre à 2,0 s, finie avant 9,0 s) : « Un allergène, ça se sait avant de servir. FoodEatUp l'affiche sur chaque recette et sur votre site. »
+Voix off de l'épisode (démarre à 4,6 s, finie avant 11,0 s) : « Un allergène, ça se sait avant de servir. FoodEatUp l'affiche sur chaque recette et sur votre site. »
 SFX : tick par ligne, alerte douce, impact final.
 
-RÈGLES : L'animation se comprend sans le son. Texte ≥ 64 px, ≤ 6 mots par écran, zone sûre TikTok/Reels/Shorts (marges 220 px haut, 320 px bas, 120 px côtés). Jamais de faux texte d'interface : uniquement les libellés réels. La voix off démarre à 2,0 s et finit avant 9,0 s. Un SFX par apparition ; motion blur sur les zooms. Rendu premium SaaS, humoristique, moderne, lisible sur smartphone.
+RÈGLES : L'animation se comprend sans le son. Texte ≥ 64 px, ≤ 6 mots par écran, zone sûre TikTok/Reels/Shorts (marges 220 px haut, 320 px bas, 120 px côtés). Jamais de faux texte d'interface : uniquement les libellés réels. Deux lignes de voix off : la punchline de transition à 2,1 s, puis la voix de l'épisode à 4,6 s, terminée avant 11,0 s. Un SFX par apparition ; motion blur sur les zooms. Rendu premium SaaS, humoristique, moderne, lisible sur smartphone.
 
 SORTIES : ep07-outro.mp4 · ep07-outro-muet.mp4 · ep07-thumb.png
 Titre de la miniature : « La bombe ».

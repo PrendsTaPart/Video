@@ -1,13 +1,18 @@
 # FoodEatUp — Saison 2 « Michael fait son cinéma »
 
-30 épisodes · 60 prompts Seedance 2.5 (Higgsfield) · 30 outros Remotion · vertical 1080×1920, 30 fps.
+30 épisodes · 60 prompts Seedance 2.5 (Higgsfield) · 30 outros de 12 s · vertical 1080×1920, 30 fps.
 
 **Le concept** : 1 épisode = 1 genre de film culte + 1 situation de restaurant + 1 module FoodEatUp.
 20 s Seedance (2 × 10 s) = divertissement. 10 s de montage = révélation. On ne fait pas 30 pubs,
 on fait 30 courts-métrages qui finissent par une solution.
 
 **Signature de saison** : à la fin de la scène 2, Michael regarde la caméra → clap « COUPEZ ! » →
-« Dans la vraie vie… » → l'interface FoodEatUp fait en un tap ce qu'il a raté en 20 s → logo.
+la punchline de transition **« Cette scène aurait pu être évitée ? »** → « Dans la vraie vie… » →
+l'interface FoodEatUp fait en un tap ce qu'il a raté en 20 s → logo.
+
+La punchline est le **pont entre le film et l'animation** : même texte, même prise de voix sur les
+30 épisodes. Elle se change en un endroit, `saison.json` → `transition`, où huit variantes validées
+sont listées.
 
 **Parodie par codes de genre uniquement** : aucun titre de film, aucune réplique de film, aucun
 visage d'acteur réel, aucune marque à l'image. On veut « je reconnais le genre », pas « je
@@ -88,7 +93,7 @@ identiques sur les 60 prompts par construction, on ne peut pas en oublier un.
 
 | # | Épisode | Master | État |
 |---|---|---|---|
-| 01 | Le duel | `renders/ep01/ep01-le-duel.mp4` (30,1 s · 1080×1920 · 30 fps) | ✅ monté, voix off incluse |
+| 01 | Le duel | `renders/ep01/ep01-le-duel.mp4` (32,1 s · 1080×1920 · 30 fps) | ✅ monté, transition + voix off incluses |
 
 Les deux plans Seedance de l'épisode 01 **existaient déjà** dans la bibliothèque Higgsfield et ont
 été réutilisés : aucune génération n'a été lancée. Traçabilité complète dans
