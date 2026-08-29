@@ -122,6 +122,14 @@
    "vo": {
     "generation_id": "urjMjG9PVxCTSwYJEaH0",
     "duree_s": 5.85
+   },
+   "catalogue": {
+    "id": "EPC08",
+    "serie": "michael-fait-son-cinema",
+    "saison": 2,
+    "piece": "master",
+    "etat": "pret",
+    "url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/michael-fait-son-cinema-EPC08-le-documentaire-master"
    }
   },
   "09": {
@@ -130,6 +138,14 @@
    "vo": {
     "generation_id": "u53Un5apJel9oNqZ9wd1",
     "duree_s": 6.41
+   },
+   "catalogue": {
+    "id": "EPC09",
+    "serie": "michael-fait-son-cinema",
+    "saison": 2,
+    "piece": "master",
+    "etat": "pret",
+    "url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/michael-fait-son-cinema-EPC09-le-sous-marin-master"
    }
   },
   "10": {
@@ -138,6 +154,14 @@
    "vo": {
     "generation_id": "kMETi7TLtbcllMntgcgz",
     "duree_s": 4.69
+   },
+   "catalogue": {
+    "id": "EPC10",
+    "serie": "michael-fait-son-cinema",
+    "saison": 2,
+    "piece": "master",
+    "etat": "pret",
+    "url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/michael-fait-son-cinema-EPC10-la-boucle-master"
    }
   },
   "11": {
@@ -146,6 +170,14 @@
    "vo": {
     "generation_id": "RuVLtWDPRvuo2e4wO6J4",
     "duree_s": 5.71
+   },
+   "catalogue": {
+    "id": "EPC11",
+    "serie": "michael-fait-son-cinema",
+    "saison": 2,
+    "piece": "master",
+    "etat": "pret",
+    "url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/michael-fait-son-cinema-EPC11-la-var-master"
    }
   },
   "12": {
