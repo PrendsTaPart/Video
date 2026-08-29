@@ -1,5 +1,14 @@
 {
- "voix": "ElevenLabs, même voix sur les 30 épisodes",
+ "voix": {
+  "fournisseur": "ElevenLabs",
+  "voix": "Adam - Instructor",
+  "voice_id": "TGAegA0zNRi8I6nUdq3i",
+  "model_id": "eleven_multilingual_v2",
+  "langue": "fr",
+  "normalisation": "-16 LUFS / -1,5 dBTP",
+  "note": "Validée sur l'épisode 01 : « FoodEatUp » est prononcé correctement (vérifié par retranscription ElevenLabs Scribe). Les prises sortent très bas (moyenne ≈ -36 dB) : normaliser chaque ligne avant montage.",
+  "resume": "ElevenLabs « Adam - Instructor », même voix sur les 30 épisodes"
+ },
  "cps": 15,
  "fenetre_s": 7,
  "lignes": [

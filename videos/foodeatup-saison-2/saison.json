@@ -6,7 +6,16 @@
   "duree_episode": "30 s (2 × 10 s Seedance + 10 s montage Claude Code)",
   "moteur_video": "Seedance 2.5 (Higgsfield)",
   "moteur_montage": "Remotion (React) — 0 crédit",
-  "voix_off": "ElevenLabs, même voix sur les 30 épisodes",
+  "voix_off": {
+    "fournisseur": "ElevenLabs",
+    "voix": "Adam - Instructor",
+    "voice_id": "TGAegA0zNRi8I6nUdq3i",
+    "model_id": "eleven_multilingual_v2",
+    "langue": "fr",
+    "normalisation": "-16 LUFS / -1,5 dBTP",
+    "note": "Validée sur l'épisode 01 : « FoodEatUp » est prononcé correctement (vérifié par retranscription ElevenLabs Scribe). Les prises sortent très bas (moyenne ≈ -36 dB) : normaliser chaque ligne avant montage.",
+    "resume": "ElevenLabs « Adam - Instructor », même voix sur les 30 épisodes"
+  },
   "regle_parodie": "Parodie par codes de genre uniquement : aucun titre de film, aucune réplique de film, aucun visage d'acteur réel, aucune marque à l'image.",
   "signature": "Fin de scène 2 : Michael regarde la caméra → clap « COUPEZ ! » → « Dans la vraie vie… » → l'interface FoodEatUp fait en un tap ce qu'il a raté en 20 s → logo FoodEatUp.",
   "prompt": {

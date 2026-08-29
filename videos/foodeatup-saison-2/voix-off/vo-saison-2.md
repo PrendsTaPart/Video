@@ -1,5 +1,9 @@
 # Voix off — Saison 2 (30 phrases, une passe ElevenLabs)
 
+**Voix de la saison** : `Adam - Instructor` — `TGAegA0zNRi8I6nUdq3i`, modèle `eleven_multilingual_v2`.
+Validée sur l'épisode 01 : « FoodEatUp » est prononcé correctement (vérifié par retranscription ElevenLabs Scribe). Les prises sortent très bas (moyenne ≈ -36 dB) : normaliser chaque ligne avant montage.
+Normalisation avant montage : **-16 LUFS / -1,5 dBTP**.
+
 Même voix et mêmes réglages de stabilité / rythme sur les 30 épisodes. La voix off démarre à
 2,0 s de l'outro et se termine avant 9,0 s : la fenêtre utile est de **7 s**
 (≈ 105 caractères à un débit posé de 15 caractères/seconde).

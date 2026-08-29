@@ -228,6 +228,10 @@ writeFileSync(
   [
     `# Voix off — Saison 2 (30 phrases, une passe ElevenLabs)`,
     ``,
+    `**Voix de la saison** : \`${S.voix_off.voix}\` — \`${S.voix_off.voice_id}\`, modèle \`${S.voix_off.model_id}\`.`,
+    `${S.voix_off.note}`,
+    `Normalisation avant montage : **${S.voix_off.normalisation}**.`,
+    ``,
     `Même voix et mêmes réglages de stabilité / rythme sur les 30 épisodes. La voix off démarre à`,
     `2,0 s de l'outro et se termine avant 9,0 s : la fenêtre utile est de **${FENETRE_VO_S} s**`,
     `(≈ ${Math.round(FENETRE_VO_S * CPS)} caractères à un débit posé de ${CPS} caractères/seconde).`,

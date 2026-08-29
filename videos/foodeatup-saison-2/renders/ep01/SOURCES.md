@@ -17,8 +17,10 @@ fiches `prompts/ep01-le-duel.md`, à une différence près : la référence visa
 
 | Sortie | Contenu |
 |---|---|
-| `ep01-le-duel.mp4` | **Le master** : scène 1 + scène 2 + outro, 1080×1920, 30 fps, 30,1 s |
-| `ep01-outro-muet.mp4` | L'outro seul, 10 s, SFX uniquement (pas de voix off) |
+| `ep01-le-duel.mp4` | **Le master** : scène 1 + scène 2 + outro avec voix, 1080×1920, 30 fps, 30,1 s |
+| `ep01-outro.mp4` | L'outro seul, 10 s, voix off + SFX |
+| `ep01-outro-muet.mp4` | L'outro seul, 10 s, SFX uniquement |
+| `vo.mp3` | La voix off de l'épisode, normalisée, prête à remonter |
 | `ep01-thumb.png` | Miniature spec : image de l'outro à 2,5 s + titre |
 | `ep01-thumb-hook.png` | Miniature alternative : le gros plan de la scène 1 + la réplique du hook |
 | `scene2-last-frame.png` | Dernière image de la scène 2, plaque de départ de l'outro |
@@ -40,14 +42,23 @@ node scripts/render-outro.mjs 1      # 300 images → outro sans son + miniature
 en un tap) · `tick` 7,33 / 7,67 / 8,00 (les trois cartes modules) · `whoosh` 8,95 + `impact` 9,00
 (le logo).
 
-## ⚠️ Manque : la voix off
+## La voix off
 
-La voix off de l'épisode (« Deux clients, une table ? Avec FoodEatUp, la réservation vérifie la
-place avant vous. ») **n'a pas pu être générée** : le connecteur ElevenLabs renvoie
-`Failed to generate audio` sur chaque prise (8 tentatives, modèles `eleven_multilingual_v2` et
-`eleven_turbo_v2_5`, voix `Adam - Instructor` `TGAegA0zNRi8I6nUdq3i`), et aucune clé API locale
-n'est présente dans cet environnement. Le master livré porte donc l'audio Seedance des deux scènes
-puis un outro **SFX seuls**.
+| | |
+|---|---|
+| Texte | « Deux clients, une table ? Avec FoodEatUp, la réservation vérifie la place avant vous. » |
+| Voix | **Adam - Instructor** `TGAegA0zNRi8I6nUdq3i` — la voix française de la saison |
+| Modèle | `eleven_multilingual_v2` |
+| Prise retenue | `aEvhDJnASVuC99Wocrh3` (4,91 s), la plus posée des prises |
+| Calage | démarre à **2,00 s**, se termine à **6,59 s** (fenêtre : avant 9,0 s) ✅ |
 
-Pour compléter dès que la voix est disponible : déposer `vo.mp3` et remonter l'outro avec la voix
-démarrant à **2,0 s** et finissant avant **9,0 s**, SFX sous la voix.
+La prise brute sortait très bas (moyenne −35,8 dB, crête −16,6 dB) : elle est normalisée à
+−16 LUFS avec limitation de crête à −1,5 dBTP, puis l'outro entier est aligné à **−18,2 LUFS**,
+le niveau de la scène 1, pour qu'il n'y ait pas de saut au raccord.
+
+**Prononciation vérifiée** : la piste repassée dans ElevenLabs Scribe se retranscrit
+« … Avec FoodEatUp, … » — le nom de marque est dit correctement, ce qui est le point de
+vigilance connu sur cette saison.
+
+Les SFX passent sous la voix pendant qu'elle parle (ticks à 30 %, whoosh à 42 %) et reprennent
+leur niveau après 7 s.
