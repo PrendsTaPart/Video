@@ -31,7 +31,8 @@ générés dans la même passe). Les prompts stockés côté Higgsfield correspo
 | Voix | **Adam - Instructor** `TGAegA0zNRi8I6nUdq3i`, modèle `eleven_multilingual_v2` |
 | Transition (commune aux 30 épisodes) | « Cette scène aurait pu être évitée ? » — prise `sZWCVMCGg2WgpYJb4j3c` (2,04 s), calée à 2,1 s |
 | Ligne de l'épisode | « Douze personnes, une note, zéro migraine. FoodEatUp divise la note par article, par personne ou en parts égales. » |
-| Prise retenue | *pas encore enregistrée* |
+| Prise retenue | `RhAtiStMtDqovYiof3wi` (6,46 s) |
+| Calage | démarre à **4,44 s**, se termine à **10,90 s** (fenêtre : avant 11,0 s) ✅ |
 
 Les prises ElevenLabs sortent très bas : chacune est normalisée à −16 LUFS / −1,5 dBTP.
 Le départ de la voix est calculé pour qu'elle finisse avant 11,0 s : 4,60 s par défaut, avancé quand
