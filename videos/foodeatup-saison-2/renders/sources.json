@@ -169,7 +169,12 @@
       }
     },
     "28": {
-      "scene1": "2f3da8e7-86fd-4022-8179-c069f51f70c5"
+      "scene1": "2f3da8e7-86fd-4022-8179-c069f51f70c5",
+      "scene2": "3dea2561-0353-4abb-960e-09bb7a1ecf2c",
+      "vo": {
+        "generation_id": "7xcVEksmZnVJe9HmpSrV",
+        "duree_s": 6.5
+      }
     },
     "01": {
       "scene1": "2855b8b2-37c8-441f-8b56-58c02c6b1fe1",
@@ -309,6 +314,17 @@
         "piece": "master",
         "etat": "pret",
         "url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/michael-fait-son-cinema-EPC09-le-sous-marin-master"
+      }
+    },
+    "29": {
+      "scene1": "1a21ac96-9504-46d6-8533-f30d9836789a"
+    },
+    "30": {
+      "scene1": "5d8105b4-4032-4f72-94e0-0a19f9fe53ea",
+      "scene2": "a7946079-99e3-446c-bcd0-d95858ce1d87",
+      "vo": {
+        "generation_id": "8UYikEDTf3Frtxr0cEcL",
+        "duree_s": 3.34
       }
     }
   },
@@ -610,6 +626,28 @@
       "episode": 28,
       "scene": 1,
       "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3GXYlNxkbz83gXaGDVVrTni1dX2/hf_20260830_181029_2f3da8e7-86fd-4022-8179-c069f51f70c5.mp4"
+    },
+    "3dea2561-0353-4abb-960e-09bb7a1ecf2c": {
+      "episode": 28,
+      "scene": 2,
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3GXYlNxkbz83gXaGDVVrTni1dX2/hf_20260830_183646_3dea2561-0353-4abb-960e-09bb7a1ecf2c.mp4",
+      "note": "Produit en extension de la scène 1 : le job annonce 16:9 dans ses paramètres, le fichier livré est en 720×1280 (mesuré)."
+    },
+    "1a21ac96-9504-46d6-8533-f30d9836789a": {
+      "episode": 29,
+      "scene": 1,
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3GXYlNxkbz83gXaGDVVrTni1dX2/hf_20260830_190127_1a21ac96-9504-46d6-8533-f30d9836789a.mp4"
+    },
+    "5d8105b4-4032-4f72-94e0-0a19f9fe53ea": {
+      "episode": 30,
+      "scene": 1,
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3GXYlNxkbz83gXaGDVVrTni1dX2/hf_20260830_195140_5d8105b4-4032-4f72-94e0-0a19f9fe53ea.mp4"
+    },
+    "a7946079-99e3-446c-bcd0-d95858ce1d87": {
+      "episode": 30,
+      "scene": 2,
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3GXYlNxkbz83gXaGDVVrTni1dX2/hf_20260830_201440_a7946079-99e3-446c-bcd0-d95858ce1d87.mp4",
+      "note": "Produit en extension de la scène 1 : le job annonce 16:9 dans ses paramètres, le fichier livré est en 720×1280 (mesuré)."
     }
   }
 }

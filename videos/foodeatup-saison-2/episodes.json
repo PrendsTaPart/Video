@@ -4143,6 +4143,37 @@
     }
    ],
    "montage": {
+    "ui": {
+     "acte2": {
+      "lignes": [
+       {
+        "chip": "roue"
+       },
+       {
+        "chip": "30 desserts"
+       },
+       {
+        "chip": "stock à sec"
+       }
+      ],
+      "alerte": true
+     },
+     "acte3": {
+      "type": "liste",
+      "titre": "Roue cadeaux",
+      "chips": [
+       "Lots",
+       "Bons"
+      ],
+      "chip_actif": 1,
+      "confirmation": "stock à jour",
+      "lignes": 3,
+      "cible": 1,
+      "statut_initial": "à valider",
+      "statut_final": "validé",
+      "label_bas": "Fidélité"
+     }
+    },
     "vo": "La roue tourne, les lots sont limités, le stock suit. La fidélité FoodEatUp, c'est du jeu avec des règles.",
     "vo_variante_courte": "La roue tourne, les lots sont limités, le stock suit. La fidélité FoodEatUp, c'est réglé.",
     "beats": [
@@ -4226,35 +4257,66 @@
     {
      "n": 2,
      "titre": "Tu prends les chèques ?",
-     "resume": "Le rouleau de caisse traverse la salle et descend la rue",
-     "location_line": "Location = @Image 3.",
+     "resume": "Le rouleau de caisse déborde du comptoir et s'entasse par terre",
+     "location_line": "Location = @Image 3 (counter), one single place for the whole shot.",
      "format_line": "9:16, 10 s, 4 shots, realistic comedy shot like a seventies gangster movie.",
-     "scene": "One evening the regular returns, jovial, and asks for his total.",
+     "scene": "One evening the regular returns, jovial, and asks for his total; Michael pulls the till roll and it does not stop.",
      "action": [
       {
        "t": "0–2 s",
-       "texte": "the regular asks; Michael reaches for the till roll."
+       "texte": "the regular sets his glass on the counter and asks; Michael reaches for the till roll."
       },
       {
        "t": "2–5 s",
-       "texte": "he unrolls the paper: it crosses the room, passes the door and rolls down the street in slow motion."
+       "texte": "the paper keeps coming: it spills over the edge of the counter and starts piling on the floor between them."
       },
       {
        "t": "5–8 s",
-       "texte": "the regular follows the paper with his eyes, very slowly; both react with the same syllable."
+       "texte": "wide: the heap now reaches their knees; the regular looks down at it, then at Michael; both react with the same syllable."
       },
       {
        "t": "8–10 s",
-       "texte": "the regular pulls out a chequebook; Michael looks at the camera as the roll flutters in the wind."
+       "texte": "the regular pulls a chequebook from his jacket; Michael looks at the camera, paper still falling behind him."
       }
      ],
      "dialogue": "Regular: « Je dois combien ? » Regular: « Ah. » Michael: « Ah. » Regular: « Tu prends les chèques ? »",
-     "camera": "two-shot → tracking along the unrolling paper out the door → slow pan on the regular's face → close-up on Michael.",
-     "light": "amber interior, blue street at dusk, paper glowing in the doorway.",
-     "audio": "paper unrolling endlessly, street ambience, silence, chequebook flap, wind on paper."
+     "camera": "two-shot at the counter → close-up on the paper spilling over the edge → wide on the growing heap → close-up on Michael, the counter always in frame.",
+     "light": "amber practicals, seventies grain, deep brown shadows, the paper bright against the wood.",
+     "audio": "paper unrolling without pause, glass set down, ice, silence, chequebook flap."
     }
    ],
    "montage": {
+    "ui": {
+     "acte2": {
+      "lignes": [
+       {
+        "chip": "habitué"
+       },
+       {
+        "chip": "six mois"
+       },
+       {
+        "chip": "solde inconnu"
+       }
+      ],
+      "alerte": true
+     },
+     "acte3": {
+      "type": "liste",
+      "titre": "Ardoises",
+      "chips": [
+       "Ouvertes",
+       "Soldées"
+      ],
+      "chip_actif": 1,
+      "confirmation": "ardoise soldée",
+      "lignes": 3,
+      "cible": 1,
+      "statut_initial": "dû",
+      "statut_final": "réglé",
+      "label_bas": "Caisse"
+     }
+    },
     "vo": "L'ardoise est numérique : elle ne s'oublie pas, elle ne s'envole pas. Solde, historique, règlement, dans FoodEatUp.",
     "vo_variante_courte": "L'ardoise est numérique : elle ne s'oublie pas. Solde, historique, règlement, dans FoodEatUp.",
     "beats": [
@@ -4368,6 +4430,37 @@
     }
    ],
    "montage": {
+    "ui": {
+     "acte2": {
+      "lignes": [
+       {
+        "chip": "30 films"
+       },
+       {
+        "chip": "1 restaurant"
+       },
+       {
+        "chip": "1 système"
+       }
+      ],
+      "alerte": false
+     },
+     "acte3": {
+      "type": "liste",
+      "titre": "Le restaurant",
+      "chips": [
+       "Hier",
+       "Aujourd'hui"
+      ],
+      "chip_actif": 1,
+      "confirmation": "tout est relié",
+      "lignes": 3,
+      "cible": 1,
+      "statut_initial": "papier",
+      "statut_final": "FoodEatUp",
+      "label_bas": "Trente épisodes"
+     }
+    },
     "vo": "Trente films. Un restaurant. Un seul système. FoodEatUp.",
     "beats": [
      {
