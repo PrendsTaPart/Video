@@ -2419,7 +2419,38 @@
      "Synthèse financière"
     ],
     "texte_ecran": "Vos chiffres, en pleine lumière.",
-    "sfx": "interrupteur, tick par statut, impact final."
+    "sfx": "interrupteur, tick par statut, impact final.",
+    "ui": {
+     "acte2": {
+      "lignes": [
+       {
+        "chip": "payée"
+       },
+       {
+        "chip": "en attente"
+       },
+       {
+        "chip": "impayée"
+       }
+      ],
+      "alerte": true
+     },
+     "acte3": {
+      "type": "liste",
+      "titre": "Factures",
+      "chips": [
+       "Payées",
+       "En attente"
+      ],
+      "chip_actif": 1,
+      "confirmation": "facture payée",
+      "lignes": 3,
+      "cible": 1,
+      "statut_initial": "en attente",
+      "statut_final": "payée",
+      "label_bas": "Synthèse financière"
+     }
+    }
    }
   },
   {
