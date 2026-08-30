@@ -1,0 +1,116 @@
+<!-- Cartons de la bande-annonce de la saison 2 — même gabarit déterministe que l'outro :
+     aucune animation CSS, tout est calculé par seek(frame).
+     Images 0–59   : carton d'ouverture (2 s)
+     Images 60–209 : carton de fin (5 s)
+     Le script de montage découpe les deux plages ; elles ne se suivent jamais à l'écran. -->
+<meta charset="utf-8">
+<style>
+@font-face { font-family: "Goodly"; src: url(__FONT__) format("woff2"); font-weight: 300 700; font-display: block; }
+:root{ --bg:#0F1A23; --blue:#007BFF; --orange:#FFA500; --cream:#FCF9E6; --sky:#A6D0FF; }
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{width:1080px;height:1920px;overflow:hidden;background:var(--bg)}
+body{font-family:"Goodly","Fredoka",system-ui,sans-serif;color:var(--cream);-webkit-font-smoothing:antialiased}
+.stage{position:absolute;inset:0;width:1080px;height:1920px;overflow:hidden}
+.layer{position:absolute;inset:0;will-change:transform,opacity}
+#halo{position:absolute;left:50%;top:50%;width:1400px;height:1400px;margin:-700px 0 0 -700px;border-radius:50%;
+  background:radial-gradient(circle,rgba(0,123,255,.34) 0%,rgba(0,123,255,0) 62%)}
+
+/* zone sûre : 220 haut, 320 bas, 120 côtés */
+.titre{position:absolute;left:120px;right:120px;text-align:center;font-weight:700;letter-spacing:-2px;line-height:.94;
+  text-shadow:0 10px 40px rgba(0,0,0,.55)}
+.sur{position:absolute;left:120px;right:120px;text-align:center;font-weight:600;letter-spacing:10px;color:var(--sky)}
+.saison{position:absolute;left:120px;right:120px;text-align:center;font-weight:700;color:var(--orange)}
+#logo{position:absolute;left:50%;width:560px;margin-left:-280px;transform-origin:50% 50%}
+#logo img{width:100%;display:block}
+#signature{position:absolute;left:0;right:0;text-align:center;font-size:60px;font-weight:500;color:var(--sky)}
+
+/* barre de progression des trente épisodes, sur le carton de fin */
+#barre{position:absolute;left:120px;right:120px;height:14px;border-radius:8px;background:rgba(166,208,255,.18);overflow:hidden}
+#jauge{position:absolute;left:0;top:0;height:100%;border-radius:8px;background:linear-gradient(90deg,var(--blue),var(--sky))}
+</style>
+
+<div class="stage">
+  <!-- 0–2 s : ouverture -->
+  <div id="ouverture" class="layer" style="opacity:0">
+    <div id="halo1" style="position:absolute;inset:0"><div id="halo"></div></div>
+    <div class="sur" id="o-sur" style="top:640px;font-size:52px">SAISON 2</div>
+    <div class="titre" id="o-titre" style="top:740px;font-size:150px">MICHAEL<br>FAIT SON<br>CINÉMA</div>
+    <div class="saison" id="o-bas" style="top:1290px;font-size:62px">30 épisodes, 30 genres</div>
+  </div>
+
+  <!-- 2–7 s : fin -->
+  <div id="fin" class="layer" style="opacity:0">
+    <div id="halo2" style="position:absolute;inset:0"><div id="halo" style="opacity:.9"></div></div>
+    <div class="titre" id="f-chiffre" style="top:600px;font-size:230px">30</div>
+    <div class="sur" id="f-mot" style="top:900px;font-size:64px">ÉPISODES</div>
+    <div id="barre" style="top:1050px"><div id="jauge" style="width:0"></div></div>
+    <div id="logo" style="top:1180px"><img src="__LOGO__" alt=""></div>
+    <div id="signature" style="top:1480px">Le système qui travaille avec vous.</div>
+  </div>
+</div>
+
+<script>
+const FPS = 30, OUV = 60, DUR = 210;   // 60 images d'ouverture, 150 de fin
+const clamp = (v,a,b)=>Math.min(b,Math.max(a,v));
+const lin = (f,a,b)=>clamp((f-a)/(b-a),0,1);
+const expoOut = t => t>=1?1:1-Math.pow(2,-10*t);
+const px = n => n.toFixed(2)+"px";
+
+const jauge = document.getElementById("jauge");
+const chiffre = document.getElementById("f-chiffre");
+
+function seek(f){
+  const ouv = document.getElementById("ouverture");
+  const fin = document.getElementById("fin");
+  ouv.style.opacity = f < OUV ? "1" : "0";
+  fin.style.opacity = f < OUV ? "0" : "1";
+
+  if (f < OUV) {
+    /* Le titre monte, le surtitre suit, la ligne du bas arrive en dernier :
+       deux secondes suffisent parce que rien n'attend son tour pour commencer. */
+    const t1 = expoOut(lin(f, 0, 26));
+    const t2 = expoOut(lin(f, 6, 32));
+    const t3 = expoOut(lin(f, 16, 44));
+    const set = (id, t, dy) => {
+      const el = document.getElementById(id);
+      el.style.opacity = String(t);
+      el.style.transform = `translateY(${px(dy*(1-t))})`;
+    };
+    set("o-sur", t2, -30);
+    set("o-titre", t1, 60);
+    set("o-bas", t3, 40);
+    document.getElementById("halo1").style.opacity = String(0.9*t1);
+    /* léger fondu au noir sur les six dernières images : la coupe vers le
+       premier extrait ne doit pas claquer sur un titre à pleine lumière */
+    ouv.style.opacity = String(1 - lin(f, OUV-6, OUV));
+    return;
+  }
+
+  const g = f - OUV;   // 0 → 149
+  /* Le compteur monte de 1 à 30 en une seconde et demie, la jauge le suit :
+     c'est la saison entière qui défile, pas un décompte décoratif. */
+  const t = expoOut(lin(g, 4, 48));
+  chiffre.textContent = String(Math.max(1, Math.round(30 * t)));
+  jauge.style.width = (100 * t).toFixed(2) + "%";
+  const apparait = (id, a, b, dy) => {
+    const el = document.getElementById(id);
+    const k = expoOut(lin(g, a, b));
+    el.style.opacity = String(k);
+    el.style.transform = `translateY(${px(dy*(1-k))})`;
+  };
+  apparait("f-chiffre", 0, 20, 40);
+  apparait("f-mot", 8, 30, 30);
+  const lo = expoOut(lin(g, 52, 80));
+  const logo = document.getElementById("logo");
+  logo.style.opacity = String(lo);
+  logo.style.transform = `scale(${(0.9+0.1*lo).toFixed(4)})`;
+  document.getElementById("halo2").style.opacity = String(0.85*lo);
+  apparait("signature", 68, 92, 20);
+  /* fondu de sortie sur la dernière demi-seconde */
+  fin.style.opacity = String(1 - lin(g, 135, 150));
+}
+window.seek = seek;
+window.OUVERTURE = OUV;
+window.TOTAL = DUR;
+seek(0);
+</script>
