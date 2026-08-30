@@ -3,6 +3,9 @@
 #
 #   ./build-segment-a.sh EP003 "Ta marge, en ce moment."
 #
+# Le troisième argument, facultatif, est le texte de la punchline. Absent, il
+# est lu dans state/episodes/EPxxx.json (champ `vo_punchline`).
+#
 # Attendus : le clip (assets/hooks/ ou dist/hooks/) et assets/vo/punchlines/EPxxx.mp3
 set -euo pipefail
 
@@ -29,9 +32,42 @@ HOOK="$R/assets/hooks/$EP.mp4"
 # « sans outil.:fontsize=62 » et s'arrête. Échapper à la main marche jusqu'à ce
 # qu'un titre contienne aussi un deux-points ou une virgule ; textfile ne se
 # trompe jamais.
+# La punchline est incrustée elle aussi. Elle ne l'était pas, et c'est la
+# correction la plus rentable du segment : les quatre cinquièmes d'un fil social
+# se regardent sans le son, et la punchline — la chute, la seule phrase qui
+# donne son sel à l'épisode — n'existait que dans la bande son. On lisait la
+# mise en place, on n'avait jamais le retournement.
+PUNCH_TXT="${3:-}"
+if [ -z "$PUNCH_TXT" ] && [ -f "$R/state/episodes/$EP.json" ]; then
+  PUNCH_TXT="$(python3 -c "
+import json
+print(json.load(open('$R/state/episodes/$EP.json')).get('vo_punchline',''))")"
+fi
+
+# Les deux phrases passent par l'ajusteur avant d'être dessinées : `drawtext` ne
+# replie pas et ne rétrécit pas, il coupe. Voir scripts/ajuster-texte.py.
+ajuster() {  # $1 = phrase, $2 = taille de départ -> "taille" puis le texte
+  ( cd "$R" && python3 scripts/ajuster-texte.py "$1" "$2" )
+}
 TEXTE_FIC="$(mktemp)"
-printf '%s' "$TEXTE" > "$TEXTE_FIC"
-trap 'rm -f "$TEXTE_FIC"' EXIT
+PUNCH_FIC="$(mktemp)"
+trap 'rm -f "$TEXTE_FIC" "$PUNCH_FIC"' EXIT
+
+AJUST="$(ajuster "$TEXTE" 62)"
+TAILLE_HOOK="$(printf '%s' "$AJUST" | head -1)"
+printf '%s' "$(printf '%s' "$AJUST" | tail -n +2)" > "$TEXTE_FIC"
+if [ "$TAILLE_HOOK" -lt 62 ]; then
+  echo "  accroche : repliée/réduite à ${TAILLE_HOOK}px, 62 ne tenait pas dans le cadre"
+fi
+
+if [ -n "$PUNCH_TXT" ]; then
+  AJUSTP="$(ajuster "$PUNCH_TXT" 58)"
+  TAILLE_PUNCH="$(printf '%s' "$AJUSTP" | head -1)"
+  printf '%s' "$(printf '%s' "$AJUSTP" | tail -n +2)" > "$PUNCH_FIC"
+else
+  TAILLE_PUNCH=58
+  echo "  ATTENTION : pas de texte de punchline, la chute restera muette à l'écran." >&2
+fi
 LOGO_X=795; LOGO_Y=57
 DUREE_A=9.5        # le clip tient 9,5 s : à 7 s la chute comique était coupée
 PUNCH=5.0          # le beat comique du clip tombe ici
@@ -66,6 +102,17 @@ DUREE_PUNCH="$(ffprobe -v error -show_entries format=duration -of csv=p=0 "$PUNC
 read -r DUCK_DEB DUCK_PLEIN DUCK_FIN DUCK_HAUT <<<"$(python3 -c "
 p=$PUNCH; d=$DUREE_PUNCH; fin=min($DUREE_A-0.10, p+d+0.15)
 print(f'{p-0.40:.2f} {p-0.15:.2f} {fin:.2f} {min($DUREE_A,fin+0.10):.2f}')")"
+# La punchline reste à l'écran le temps qu'elle est dite, plus un battement
+# pour la relire. Elle s'efface avant la coupe : un texte encore présent quand
+# le sting arrive donnerait l'impression qu'il déborde sur le carton.
+read -r P_IN P_OUT <<<"$(python3 -c "
+p = $PUNCH
+print(f'{p:.2f} {min($DUREE_A - 0.20, p + $DUREE_PUNCH + 0.35):.2f}')")"
+if [ -s "$PUNCH_FIC" ]; then
+  INCRUST_PUNCH=",drawtext=fontfile='$POLICE':textfile='$PUNCH_FIC':fontsize=$TAILLE_PUNCH:fontcolor=white:borderw=6:bordercolor=black@0.8:line_spacing=10:x=(w-text_w)/2:y=h*0.80-text_h:enable='between(t,$P_IN,$P_OUT)'"
+else
+  INCRUST_PUNCH=""
+fi
 DUCK_NIV=0.16                    # -16 dB
 # La musique du segment A. Le master n'en avait aucune avant les 9,5 s : les
 # quatre premières secondes sortaient à -91 dBFS, un silence total sous l'image
@@ -85,7 +132,20 @@ BED_GAIN=0.224                   # -13 dB, comme le lit du segment D
 #
 #   SILENCE_FIN=2.0 ./scripts/build-segment-a.sh EP002 "Ton service du samedi soir."
 SILENCE_FIN="${SILENCE_FIN:-0}"
-SILENCE_DEB="$(python3 -c "print(f'{max(0.1, $DUREE_A - $SILENCE_FIN - 0.25):.2f}' if $SILENCE_FIN > 0 else f'{$DUREE_A:.2f}')")"
+# Le raccord sur le sting, lui, se traite sur les 150 : mesuré sur les vingt-deux
+# masters de la saison 1, l'ambiance du clip tapait encore entre -7 et -20 dBFS
+# à 9,45 s et tombait à -39 dBFS à 9,52 s. Une porte qui claque à chaque
+# épisode, exactement au moment où le spectateur décide s'il reste. Un fondu de
+# 0,40 s avant la coupe le règle sans toucher au gag, qui est joué depuis
+# longtemps à cet endroit.
+#
+# Ce fondu-là ne remplace pas SILENCE_FIN : celui-ci éteint DEUX SECONDES pour
+# dégager la punchline sur un clip bruyant, celui-là ferme juste la porte.
+FONDU_FIN="${FONDU_FIN:-0.40}"
+SILENCE_DEB="$(python3 -c "
+fin = $DUREE_A - $FONDU_FIN
+print(f'{max(0.1, $DUREE_A - $SILENCE_FIN - 0.25):.2f}' if $SILENCE_FIN > 0 else f'{fin:.2f}')")"
+SILENCE_DUR="$(python3 -c "print('0.25' if $SILENCE_FIN > 0 else f'{$FONDU_FIN:.2f}')")"
 DUCK_MUS=0.45                    # la musique s'efface moins que le clip : elle
                                  # est déjà 13 dB dessous
 echo "  punchline : ${DUREE_PUNCH}s à ${PUNCH}s · duck ${DUCK_DEB}→${DUCK_HAUT}"
@@ -108,6 +168,40 @@ echo "  punchline : ${DUREE_PUNCH}s à ${PUNCH}s · duck ${DUCK_DEB}→${DUCK_HA
 # chien qui attrape la frite — reste à sa vitesse, et le mouvement ne s'arrête
 # jamais. `tpad` derrière ne sert que de filet contre les arrondis.
 DUREE_CLIP="$(ffprobe -v error -show_entries format=duration -of csv=p=0 "$HOOK")"
+
+# --- Le clip qui change de plan avant la fin ---------------------------------
+# Cinq des vingt-quatre clips de la saison 1 — EP002, EP003, EP013, EP014,
+# EP022 — ne tiennent pas un seul plan : entre 7,2 et 8,5 s, le rendu enchaîne
+# sur un tout autre cadre, en général un chef qui parle face caméra. Ce
+# deuxième plan n'a rien à voir avec le gag, et sa bouche bouge sans qu'aucun
+# son n'en sorte.
+#
+# Personne ne l'avait vu parce qu'il n'existait pas : le segment A faisait 7 s
+# quand ces clips ont été validés. En le portant à 9,5 s pour ne plus couper la
+# chute, on a fait entrer dans le cadre ce que la fenêtre courte laissait
+# dehors.
+#
+# On s'arrête donc au changement de plan et on étire ce qui précède — la même
+# rampe que pour un clip trop court. Le gag garde sa vitesse jusqu'au pivot,
+# ralentit ensuite, et le plan parasite ne rentre jamais.
+#
+#   COUPE=0 ./scripts/build-segment-a.sh EP003 "…"   # pour garder le clip entier
+COUPE="${COUPE:-auto}"
+if [ "$COUPE" = "auto" ]; then
+  COUPE="$(ffmpeg -v error -i "$HOOK" -filter:v "select='gt(scene,0.35)',metadata=print:file=-" \
+    -an -f null - 2>/dev/null \
+    | { grep -o "pts_time:[0-9.]*" || true; } | cut -d: -f2 \
+    | python3 -c "
+import sys
+# Un changement de plan ne compte que dans la fenêtre utile, et seulement s'il
+# laisse assez de clip devant lui pour que le gag ait eu lieu.
+t = [float(x) for x in sys.stdin.read().split() if 6.0 < float(x) < $DUREE_A]
+print(f'{t[0]:.2f}' if t else '0')")"
+fi
+if [ "$COUPE" != "0" ]; then
+  echo "  changement de plan à ${COUPE}s : le clip est arrêté là et étiré jusqu'à ${DUREE_A}s"
+  DUREE_CLIP="$COUPE"
+fi
 read -r PIVOT ETIRE COURT <<<"$(python3 -c "
 c, f = $DUREE_CLIP, $DUREE_A
 if c >= f - 0.05:
@@ -139,16 +233,16 @@ ffmpeg -v error \
  -i "$R/templates/bgm.mp3" \
  "${SON_CLIP[@]}" \
  -filter_complex "\
- [0:v]trim=0:$DUREE_A,setpts=PTS-STARTPTS,${RAMPE}fps=30,\
+ [0:v]trim=0:$DUREE_CLIP,setpts=PTS-STARTPTS,${RAMPE}fps=30,\
 scale=1080:1920:force_original_aspect_ratio=increase,crop=1080:1920[v];\
- [v]drawtext=fontfile='$POLICE':textfile='$TEXTE_FIC':fontsize=62:fontcolor=white:\
-borderw=6:bordercolor=black@0.8:x=(w-text_w)/2:y=h*0.13:\
-enable='between(t,$T_IN,$T_OUT)'[vt];\
+ [v]drawtext=fontfile='$POLICE':textfile='$TEXTE_FIC':fontsize=$TAILLE_HOOK:fontcolor=white:\
+borderw=6:bordercolor=black@0.8:line_spacing=10:x=(w-text_w)/2:y=h*0.13:\
+enable='between(t,$T_IN,$T_OUT)'$INCRUST_PUNCH[vt];\
  [vt][2:v]overlay=$LOGO_X:$LOGO_Y:format=auto,format=yuv420p[vo];\
- [${SRC_A}]atrim=0:$DUREE_A,asetpts=PTS-STARTPTS,aresample=48000,\
+ [${SRC_A}]atrim=0:$DUREE_CLIP,asetpts=PTS-STARTPTS,aresample=48000,apad=whole_dur=$DUREE_A,\
 volume='if(lt(t,$DUCK_DEB),1,if(lt(t,$DUCK_PLEIN),1-(1-$DUCK_NIV)*(t-$DUCK_DEB)/($DUCK_PLEIN-$DUCK_DEB),\
 if(lt(t,$DUCK_FIN),$DUCK_NIV,if(lt(t,$DUCK_HAUT),$DUCK_NIV+(1-$DUCK_NIV)*(t-$DUCK_FIN)/($DUCK_HAUT-$DUCK_FIN),1))))':eval=frame,\
-afade=t=out:st=$SILENCE_DEB:d=0.25[a0];\
+afade=t=out:st=$SILENCE_DEB:d=$SILENCE_DUR[a0];\
  [1:a]adelay=$(python3 -c "print(int($PUNCH*1000))")|$(python3 -c "print(int($PUNCH*1000))"),\
 apad,atrim=0:$DUREE_A,asetpts=PTS-STARTPTS[a1];\
  [3:a]aresample=48000,atrim=0:$DUREE_A,asetpts=PTS-STARTPTS,volume=$BED_GAIN,\

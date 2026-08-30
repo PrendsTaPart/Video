@@ -6,16 +6,16 @@
   "module": "PrediBot",
   "chapitre": "3 - Parler à PrediBot",
   "module_drive_id": "19kYZliyRnKraKVg1zdFrXCocD38VZ2a9",
-  "hook": "Dix logiciels. Dix notifications.",
+  "hook": "Huit logiciels. Huit notifications.",
   "vo_punchline": "Un seul, ça suffisait.",
-  "heygen_script": "Tu poses ta question en français : combien j'ai fait hier, qu'est-ce qui manque demain. PrediBot lit tes vraies données et te répond. Une seule interface, pas dix.",
+  "heygen_script": "Tu poses ta question en français : combien j'ai fait hier, qu'est-ce qui manque demain. PrediBot lit tes vraies données et te répond. Une seule interface, pas huit.",
   "etat": {
     "hook": "ok",
-    "avatar": "ok",
+    "avatar": "a_refaire",
     "software": "ok",
     "vo": "ok",
     "build": "ok",
     "publie": "manquant"
   },
-  "notes": "Master 37,5 s. Screencast PrediBot « Parler à PrediBot » recadré 8→18 s. atempo 1,096."
+  "notes": "Master 37,5 s. Screencast PrediBot « Parler à PrediBot » recadré 8→18 s. atempo 1,096. Accroche passée de « Dix logiciels » à « Huit logiciels » (2026-08-28). RESTE À FAIRE côté humain : le script HeyGen finit par « Une seule interface, pas dix » — il faut un nouveau rendu avec « pas huit », sinon l'avatar contredit le carton et l'accroche."
 }

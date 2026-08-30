@@ -7,15 +7,15 @@
   "chapitre": "2 - Marketplace de prompts",
   "module_drive_id": "19kYZliyRnKraKVg1zdFrXCocD38VZ2a9",
   "hook": "Mille euros par mois.",
-  "vo_punchline": "Pour dix logiciels qui ne se parlent même pas.",
+  "vo_punchline": "Pour huit logiciels qui ne se parlent même pas.",
   "heygen_script": "Tout est déjà là : caisse, stock, planning, marketing, HACCP. Un seul abonnement, une seule base de données. Tes outils arrêtent de s'ignorer.",
   "etat": {
     "hook": "ok",
     "avatar": "ok",
     "software": "ok",
-    "vo": "ok",
+    "vo": "a_refaire",
     "build": "ok",
     "publie": "manquant"
   },
-  "notes": "Master 37,5 s. Épisode spécial marketplace de prompts : le screencast enchaîne 4,5 s de marketplace puis l'animation MCP (Claude ↔ CRM, stock, outils) repeinte sur le sable de charte — luminance inversée, teintes conservées, fond ramené exactement à #FAF6E3."
+  "notes": "Master 37,5 s. Épisode spécial marketplace de prompts : le screencast enchaîne 4,5 s de marketplace puis l'animation MCP (Claude ↔ CRM, stock, outils) repeinte sur le sable de charte — luminance inversée, teintes conservées, fond ramené exactement à #FAF6E3. À FAIRE : la punchline dit « Pour dix logiciels qui ne se parlent même pas » et elle est maintenant incrustée à l'écran. Le carton dit « huit ». Le texte est passé à « huit » partout — sous-titre incrusté compris — mais le MP3 dit encore « dix ». L'épisode est donc monté dans son état cible et NE DOIT PAS ÊTRE PUBLIÉ tant que la voix n'est pas refaite sur « Pour huit logiciels qui ne se parlent même pas », puis l'épisode remonté. Non fait ici : le serveur ElevenLabs de la session ne répondait pas (404)."
 }

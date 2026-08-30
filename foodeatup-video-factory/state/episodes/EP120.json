@@ -2,11 +2,11 @@
   "id": "EP120",
   "num": 120,
   "saison": 4,
-  "titre": "La réunion des dix logiciels",
+  "titre": "La réunion des huit logiciels",
   "module": "PrediBot",
   "chapitre": "1 - Lire ses prévisions",
   "module_drive_id": "19kYZliyRnKraKVg1zdFrXCocD38VZ2a9",
-  "hook": "Réunion de tes dix logiciels.",
+  "hook": "Réunion de tes huit logiciels.",
   "vo_punchline": "Ils ne se parlent toujours pas. FoodEatUp, si.",
   "heygen_script": "Une base, un écran, une équipe. Ta caisse, ta cuisine, ton stock et ton marketing lisent les mêmes données. Ils finissent enfin par se parler.",
   "etat": {
@@ -17,5 +17,5 @@
     "build": "manquant",
     "publie": "manquant"
   },
-  "notes": ""
+  "notes": "Accroche et titre passés de « dix » à « huit » (2026-08-28) : le master de la saison 4 porte encore l'ancien texte, il est à remonter avec la saison 4."
 }

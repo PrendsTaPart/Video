@@ -38,12 +38,17 @@ BAND_H=192         # bandeau de marque : 0,5/5, le logo y est centré
 # élargir la respiration rapproche de ce seuil.
 RESPIR="${RESPIR:-0.6}"
 # Le carton B/C. `COMMUN_sting_BC_huit.mp4` dit « huit logiciels » au lieu de
-# « dix » — voix, titre incrusté et grille de pastilles refaits ensemble. Il
-# n'est pas encore le défaut : cinquante et un masters portent l'ancien, et
-# mélanger les deux dans une même saison se verrait.
+# « dix » — voix, titre incrusté et grille de pastilles refaits ensemble.
 #
-#   STING=COMMUN_sting_BC_huit.mp4 ./scripts/build-episode.sh EP001
-STING="${STING:-COMMUN_sting_BC.mp4}"
+# C'est désormais le défaut. Le chiffre annoncé est passé de dix à huit côté
+# produit ; laisser l'ancien carton par défaut, c'était sortir un épisode faux
+# à chaque build. Le mélange qu'on voulait éviter — deux cartons dans une même
+# saison — se règle en remontant la saison, pas en gardant le mauvais chiffre :
+# c'est ce qui a été fait pour la saison 1.
+#
+# Pour remonter un ancien master à l'identique :
+#   STING=COMMUN_sting_BC.mp4 ./scripts/build-episode.sh EP042
+STING="${STING:-COMMUN_sting_BC_huit.mp4}"
 # Coque d'appareil : le screencast s'incruste dans une tablette. Les épisodes
 # du module Caisse POS prennent la variante posée sur un tiroir-caisse.
 MODULE="$(python3 -c "import json;print(json.load(open('$R/state/episodes/$EP.json'))['module'])" 2>/dev/null || echo "")"
@@ -56,6 +61,23 @@ ECR_W=960; ECR_H=414         # ratio exact du screencast 1920x828
 echo "  coque  : $COQUE (module $MODULE)"
 
 BED_GAIN=0.224     # -13 dB : cale la musique sur le plancher -28 dBFS de la référence
+# Le niveau où le lit musical se pose pendant la respiration qui précède la
+# signature, au lieu de s'éteindre.
+#
+# Il s'éteignait complètement : mesuré sur vingt-deux des vingt-quatre masters
+# de la saison 1, la fenêtre 28,3 → 28,5 s tombait à -120 dBFS — le silence
+# numérique exact, pas un silence de studio. À l'oreille ce n'est pas une
+# respiration, c'est une coupure de son ; on croit que le fichier a lâché juste
+# avant la signature.
+#
+# -20 dB sous le lit courant. Le premier essai était à -9 dB : EP003 passait à
+# -30 dBFS, mais EP002 ressortait à -18 dBFS et échouait au contrôle de
+# respiration, à 6 dB de la voix au lieu des 12 exigés. Les deux épisodes ont
+# pourtant le même lit, au même gain — c'est la normalisation du segment D qui
+# diffère : un avatar enregistré bas se fait remonter de 1,4 dB quand un autre
+# se fait baisser de 7,6, et le lit suit. Un plancher qui tient sur les 150 se
+# cale donc sur l'épisode le plus remonté, pas sur la moyenne.
+PLANCHER_LIT=0.10
 SFX_GAIN=2.0       # +6 dB : whoosh audible sous la voix
 # Le whoosh de SORTIE, sur la coupe entre le segment D et le hook de fin.
 #
@@ -179,7 +201,8 @@ fade=t=out:st=9.70:d=0.30:color=$SABLE,format=yuv420p[v];\
 atempo=$TEMPO,adelay=$RETARD_MS:all=1,apad=whole_dur=10,\
 asetpts=N/SR/TB,volume=1.0[voice];\
  [3:a]aresample=48000,atrim=16:26,asetpts=PTS-STARTPTS,volume=$BED_GAIN,\
-afade=t=in:st=0:d=0.3,afade=t=out:st=8.90:d=0.85[bed];\
+afade=t=in:st=0:d=0.3,\
+volume='if(lt(t,8.90),1,if(lt(t,9.45),1-(1-$PLANCHER_LIT)*(t-8.90)/0.55,$PLANCHER_LIT))':eval=frame[bed];\
  [4:a]aresample=48000,volume=$SFX_GAIN,apad,atrim=0:10,asetpts=PTS-STARTPTS[wh];\
  [5:a]aresample=48000,volume=$SFX_SORTIE,adelay=9250|9250,apad,atrim=0:10,\
 asetpts=PTS-STARTPTS[wh2];\

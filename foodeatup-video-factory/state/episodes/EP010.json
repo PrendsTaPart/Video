@@ -7,15 +7,15 @@
   "chapitre": "1 - Lire ses prévisions",
   "module_drive_id": "19kYZliyRnKraKVg1zdFrXCocD38VZ2a9",
   "hook": "Toi, devant ta facture logicielle.",
-  "vo_punchline": "Mille euros par mois. Pour dix outils qui ne se parlent pas.",
+  "vo_punchline": "Mille euros par mois. Pour huit outils qui ne se parlent pas.",
   "heygen_script": "Un écran, le matin : ton chiffre d'affaires prévu, ta fréquentation, tes points de tension. C'est ton point du jour, sans ouvrir dix onglets.",
   "etat": {
     "hook": "ok",
     "avatar": "ok",
     "software": "ok",
-    "vo": "ok",
+    "vo": "a_refaire",
     "build": "ok",
     "publie": "manquant"
   },
-  "notes": "Master 37,5 s. Screencast PrediBot « Lire ses prévisions » recadré 1→11 s."
+  "notes": "Master 37,5 s. Screencast PrediBot « Lire ses prévisions » recadré 1→11 s. À FAIRE : la punchline dit « Pour dix outils qui ne se parlent pas ». Le texte est passé à « huit » (2026-08-28) ; il faut une nouvelle voix ElevenLabs avant de remonter, sinon le sous-titre incrusté contredit la voix. Le script HeyGen garde « sans ouvrir dix onglets » : c'est une image, pas le décompte des logiciels."
 }
