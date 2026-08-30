@@ -1,0 +1,399 @@
+{
+  "commentaire": "Provenance des plans réutilisés depuis la bibliothèque Higgsfield. Aucune génération n'a été lancée depuis ce dépôt (voir CLAUDE.md).",
+  "episodes": {
+    "10": {
+      "scene1": "9f41ea9e-7fcd-4579-8982-34548d82ccbc",
+      "scene2": "4bb23fa2-46c6-4566-9e12-9f5b22334e4b",
+      "vo": {
+        "generation_id": "kMETi7TLtbcllMntgcgz",
+        "duree_s": 4.69
+      },
+      "catalogue": {
+        "id": "EPC10",
+        "serie": "michael-fait-son-cinema",
+        "saison": 2,
+        "piece": "master",
+        "etat": "pret",
+        "url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/michael-fait-son-cinema-EPC10-la-boucle-master"
+      }
+    },
+    "11": {
+      "scene1": "d0f06aee-5755-41ba-acd8-7081f84c3cff",
+      "scene2": "c17009a7-b720-41af-85a7-7400af499f0b",
+      "vo": {
+        "generation_id": "RuVLtWDPRvuo2e4wO6J4",
+        "duree_s": 5.71
+      },
+      "catalogue": {
+        "id": "EPC11",
+        "serie": "michael-fait-son-cinema",
+        "saison": 2,
+        "piece": "master",
+        "etat": "pret",
+        "url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/michael-fait-son-cinema-EPC11-la-var-master"
+      }
+    },
+    "12": {
+      "scene1": "2f1f2533-00ce-4bc1-aa7f-bb3e2a50d22e",
+      "scene2": "d6533af5-f81b-4872-850c-2670deb5cc80",
+      "vo": {
+        "generation_id": "kzEB3wToSJBmojcYmDGC",
+        "duree_s": 5.8
+      },
+      "note": "⚠️ Tenue de saison rompue entre les deux scènes : Michael porte la toque, la veste blanche et le tablier FoodEatUp en scène 1, mais une chemise puis une veste sombres, sans toque, en scène 2. La checklist de saison l'interdit — la scène 2 est à regénérer avant validation. L'épisode n'est pas déposé au catalogue pour cette raison."
+    },
+    "13": {
+      "scene1": "c1e87345-db97-4473-b1ef-2d5b5c43fd96",
+      "scene2": "b3d75b39-3832-41c7-adf8-5a1287e6c41d",
+      "vo": {
+        "generation_id": "NkVF95tUHHRKNRcEgPIg",
+        "duree_s": 6.78
+      },
+      "note": "Prise de voix longue (6,78 s) : elle démarre au plus tôt autorisé, 4,25 s, et finit à 11,03 s — 30 ms sur le premier souffle du logo. Une variante courte est proposée dans la fiche si vous préférez la fenêtre stricte.",
+      "catalogue": "EPC13 — master déposé, état pret"
+    },
+    "14": {
+      "scene1": "810e5644-39f1-482d-82c8-bd1cb77cecca",
+      "scene2": "662bf989-86d0-4041-99f0-c178da0d0f36",
+      "vo": {
+        "generation_id": "dIECnaiI6s9fh4UckoIy",
+        "duree_s": 6.13
+      },
+      "catalogue": "EPC14 — master déposé, état pret"
+    },
+    "15": {
+      "scene1": "5792ba36-3696-48e9-8747-1bdd5939c121",
+      "scene2": "296ecbe8-1df4-4e5c-97f6-df200e783b51",
+      "vo": {
+        "generation_id": "56nfur60uUrFbNu6BbdN",
+        "duree_s": 6.04
+      },
+      "note": "Le lieu penche vers le vrai tribunal (boiseries, bancs du jury) plutôt que la salle du restaurant éclairée comme un tribunal. La tenue de saison est respectée sur les deux scènes.",
+      "catalogue": "EPC15 — master déposé, état pret"
+    },
+    "16": {
+      "scene1": "7f078c41-0cd2-4bb0-a2ce-7da2dc98d5e4",
+      "scene2": "ce1752e4-4fcc-4bb7-80d6-5b68a1cb0d57",
+      "vo": {
+        "generation_id": "39H9p4GwLO4iPUGKibSj",
+        "duree_s": 6.73
+      },
+      "note": "⚠️ La scène 2 tient un ticket couvert de texte généré en gros plan de 14 à 18 s. La checklist de saison interdit le texte généré par Seedance et nomme le ticket. Les glyphes ne forment pas de mots lisibles, mais le ticket est le sujet du plan : l’épisode n’est pas déposé au catalogue tant que ce point n’est pas tranché. La tenue de saison est respectée sur les deux scènes."
+    },
+    "01": {
+      "scene1": "2855b8b2-37c8-441f-8b56-58c02c6b1fe1",
+      "scene2": "bd80afd3-8ad9-4eb5-ae1b-1103625f677e",
+      "vo": {
+        "generation_id": "aEvhDJnASVuC99Wocrh3",
+        "duree_s": 4.91
+      },
+      "catalogue": {
+        "id": "EPC01",
+        "serie": "michael-fait-son-cinema",
+        "saison": 2,
+        "piece": "master",
+        "etat": "pret",
+        "url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/michael-fait-son-cinema-EPC01-le-duel-master"
+      }
+    },
+    "02": {
+      "scene1": "49010b56-725f-4302-bb8f-ed6b891a9a9c",
+      "scene2": "a51846d0-b878-4cce-84e1-de7ee98860b6",
+      "vo": {
+        "generation_id": "dzrtl8E6GnjCJVM2DQ7v",
+        "duree_s": 5.2
+      },
+      "catalogue": {
+        "id": "EPC02",
+        "serie": "michael-fait-son-cinema",
+        "saison": 2,
+        "piece": "master",
+        "etat": "pret",
+        "url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/michael-fait-son-cinema-EPC02-le-controle-master"
+      }
+    },
+    "03": {
+      "scene1": "d0ff89f7-dbf5-41fa-9ff9-343789f6807f",
+      "scene2": "11191050-3916-467e-a1d2-e086182e0a31",
+      "vo": {
+        "generation_id": "YLcYEbeoxV6bkVVbakaT",
+        "duree_s": 5.39
+      },
+      "catalogue": {
+        "id": "EPC03",
+        "serie": "michael-fait-son-cinema",
+        "saison": 2,
+        "piece": "master",
+        "etat": "pret",
+        "url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/michael-fait-son-cinema-EPC03-le-critique-master"
+      }
+    },
+    "04": {
+      "scene1": "ab380df9-909d-479b-b764-66e8dd6c41fd",
+      "scene2": "96615720-6e6a-4908-a5b6-a83fc85be935",
+      "scene2_alternative": "3adbbfab-9708-41cf-b0fe-d5416cf69f97",
+      "vo": {
+        "generation_id": "FJ4w50OFQYxItDFhqK04",
+        "duree_s": 6.08
+      },
+      "catalogue": {
+        "id": "EPC04",
+        "serie": "michael-fait-son-cinema",
+        "saison": 2,
+        "piece": "master",
+        "etat": "pret",
+        "url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/michael-fait-son-cinema-EPC04-le-brunch-des-zombies-master"
+      }
+    },
+    "05": {
+      "scene1": "a873cfb4-dbf9-4087-b297-6a60861420ef",
+      "scene2": "76a8b9d1-3a3b-43b9-a6e8-ae7661c0dd95",
+      "vo": {
+        "generation_id": "ffdyypqMro4SlCszdqGY",
+        "duree_s": 5.34
+      },
+      "catalogue": {
+        "id": "EPC05",
+        "serie": "michael-fait-son-cinema",
+        "saison": 2,
+        "piece": "master",
+        "etat": "pret",
+        "url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/michael-fait-son-cinema-EPC05-le-casse-master"
+      }
+    },
+    "06": {
+      "scene1": "63a7a5fe-f19e-4ccd-993a-ec8cf298efc5",
+      "scene2": "12059501-6472-4033-a0e5-60fb5ec47fc8",
+      "vo": {
+        "generation_id": "DaRIsjLXBh9VXl7IjkAu",
+        "duree_s": 5.43
+      },
+      "catalogue": "EPC06 — master v2 déposé (le libellé « 10 palettes » débordait de sa pastille), état pret"
+    },
+    "07": {
+      "scene1": "e56f4ebb-11f5-4b28-921b-dba58f4a57f5",
+      "scene1_alternative": "fb1f1b8d-a9bb-430e-8e55-27c7a6e659a1",
+      "scene2": "035aa95b-f8d8-4ec8-9899-05d804dc1f4d",
+      "vo": {
+        "generation_id": "SqBe2fOcW98hvFyd4JLQ",
+        "duree_s": 5.85
+      },
+      "note": "Deux prises de scène 1 : la retenue (la plus récente) fait dire à la cliente « Je suis allergique aux haricots verts » et à Michael « Elle m'a dit quel légume déjà ? » ; l'alternative suit la fiche au mot près (« aux noix » / « C'est laquelle ? »). La scène 2 est déclarée 16:9 dans les paramètres Higgsfield mais sort bien en 720×1280.",
+      "catalogue": {
+        "id": "EPC07",
+        "serie": "michael-fait-son-cinema",
+        "saison": 2,
+        "piece": "master",
+        "etat": "pret",
+        "url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/michael-fait-son-cinema-EPC07-la-bombe-master"
+      }
+    },
+    "08": {
+      "scene1": "f260ccf9-3023-4bb3-b7d8-d3062b402a32",
+      "scene2": "bb74186e-89a2-43bd-beca-4e3433ee4c86",
+      "vo": {
+        "generation_id": "urjMjG9PVxCTSwYJEaH0",
+        "duree_s": 5.85
+      },
+      "catalogue": {
+        "id": "EPC08",
+        "serie": "michael-fait-son-cinema",
+        "saison": 2,
+        "piece": "master",
+        "etat": "pret",
+        "url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/michael-fait-son-cinema-EPC08-le-documentaire-master"
+      }
+    },
+    "09": {
+      "scene1": "cfc8c2f1-45b9-48ea-9875-ea4e71679382",
+      "scene2": "0e9d1f66-5fca-4a91-84e9-444996933ea8",
+      "vo": {
+        "generation_id": "u53Un5apJel9oNqZ9wd1",
+        "duree_s": 6.41
+      },
+      "catalogue": {
+        "id": "EPC09",
+        "serie": "michael-fait-son-cinema",
+        "saison": 2,
+        "piece": "master",
+        "etat": "pret",
+        "url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/michael-fait-son-cinema-EPC09-le-sous-marin-master"
+      }
+    }
+  },
+  "transition": {
+    "generation_id": "sZWCVMCGg2WgpYJb4j3c",
+    "duree_s": 2.04,
+    "commune": true
+  },
+  "catalogue": {
+    "serveur": "Social FoodEatUp",
+    "serie": "michael-fait-son-cinema",
+    "page": "https://food-series-hub.lovable.app/series/michael-fait-son-cinema",
+    "episodes_au_catalogue": 24,
+    "note": "Le catalogue s'arrête à EPC24 « La carte au trésor » : les épisodes 25 à 30 du brief (Les traders, Le détective, Le super-vilain, Le jeu télé, Les gangsters, La cérémonie) n'y existent pas encore.",
+    "verrou": "« pret » s'écrit par un agent, « valide » est un geste humain dans /admin/production. Rien ne se planifie sur les réseaux sans « valide » : aucun outil n'expose cette bascule."
+  },
+  "plans": {
+    "9f41ea9e-7fcd-4579-8982-34548d82ccbc": {
+      "episode": 10,
+      "scene": 1,
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3GXYlNxkbz83gXaGDVVrTni1dX2/hf_20260829_163448_9f41ea9e-7fcd-4579-8982-34548d82ccbc.mp4"
+    },
+    "4bb23fa2-46c6-4566-9e12-9f5b22334e4b": {
+      "episode": 10,
+      "scene": 2,
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3GXYlNxkbz83gXaGDVVrTni1dX2/hf_20260829_165811_4bb23fa2-46c6-4566-9e12-9f5b22334e4b.mp4"
+    },
+    "d0f06aee-5755-41ba-acd8-7081f84c3cff": {
+      "episode": 11,
+      "scene": 1,
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3GXYlNxkbz83gXaGDVVrTni1dX2/hf_20260829_171844_d0f06aee-5755-41ba-acd8-7081f84c3cff.mp4"
+    },
+    "c17009a7-b720-41af-85a7-7400af499f0b": {
+      "episode": 11,
+      "scene": 2,
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3GXYlNxkbz83gXaGDVVrTni1dX2/hf_20260829_174015_c17009a7-b720-41af-85a7-7400af499f0b.mp4"
+    },
+    "2f1f2533-00ce-4bc1-aa7f-bb3e2a50d22e": {
+      "episode": 12,
+      "scene": 1,
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3GXYlNxkbz83gXaGDVVrTni1dX2/hf_20260829_183421_2f1f2533-00ce-4bc1-aa7f-bb3e2a50d22e.mp4"
+    },
+    "d6533af5-f81b-4872-850c-2670deb5cc80": {
+      "episode": 12,
+      "scene": 2,
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3GXYlNxkbz83gXaGDVVrTni1dX2/hf_20260829_190616_d6533af5-f81b-4872-850c-2670deb5cc80.mp4"
+    },
+    "c1e87345-db97-4473-b1ef-2d5b5c43fd96": {
+      "episode": 13,
+      "scene": 1,
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3GXYlNxkbz83gXaGDVVrTni1dX2/hf_20260829_200514_c1e87345-db97-4473-b1ef-2d5b5c43fd96.mp4"
+    },
+    "b3d75b39-3832-41c7-adf8-5a1287e6c41d": {
+      "episode": 13,
+      "scene": 2,
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3GXYlNxkbz83gXaGDVVrTni1dX2/hf_20260829_203738_b3d75b39-3832-41c7-adf8-5a1287e6c41d.mp4"
+    },
+    "810e5644-39f1-482d-82c8-bd1cb77cecca": {
+      "episode": 14,
+      "scene": 1,
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3GXYlNxkbz83gXaGDVVrTni1dX2/hf_20260829_210224_810e5644-39f1-482d-82c8-bd1cb77cecca.mp4"
+    },
+    "662bf989-86d0-4041-99f0-c178da0d0f36": {
+      "episode": 14,
+      "scene": 2,
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3GXYlNxkbz83gXaGDVVrTni1dX2/hf_20260829_212501_662bf989-86d0-4041-99f0-c178da0d0f36.mp4"
+    },
+    "5792ba36-3696-48e9-8747-1bdd5939c121": {
+      "episode": 15,
+      "scene": 1,
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3GXYlNxkbz83gXaGDVVrTni1dX2/hf_20260829_214832_5792ba36-3696-48e9-8747-1bdd5939c121.mp4"
+    },
+    "296ecbe8-1df4-4e5c-97f6-df200e783b51": {
+      "episode": 15,
+      "scene": 2,
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3GXYlNxkbz83gXaGDVVrTni1dX2/hf_20260829_221255_296ecbe8-1df4-4e5c-97f6-df200e783b51.mp4"
+    },
+    "7f078c41-0cd2-4bb0-a2ce-7da2dc98d5e4": {
+      "episode": 16,
+      "scene": 1,
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3GXYlNxkbz83gXaGDVVrTni1dX2/hf_20260829_223514_7f078c41-0cd2-4bb0-a2ce-7da2dc98d5e4.mp4"
+    },
+    "ce1752e4-4fcc-4bb7-80d6-5b68a1cb0d57": {
+      "episode": 16,
+      "scene": 2,
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3GXYlNxkbz83gXaGDVVrTni1dX2/hf_20260829_225928_ce1752e4-4fcc-4bb7-80d6-5b68a1cb0d57.mp4"
+    },
+    "2855b8b2-37c8-441f-8b56-58c02c6b1fe1": {
+      "episode": 1,
+      "scene": 1,
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3GXYlNxkbz83gXaGDVVrTni1dX2/hf_20260828_204841_2855b8b2-37c8-441f-8b56-58c02c6b1fe1.mp4"
+    },
+    "bd80afd3-8ad9-4eb5-ae1b-1103625f677e": {
+      "episode": 1,
+      "scene": 2,
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3GXYlNxkbz83gXaGDVVrTni1dX2/hf_20260828_211949_bd80afd3-8ad9-4eb5-ae1b-1103625f677e.mp4"
+    },
+    "49010b56-725f-4302-bb8f-ed6b891a9a9c": {
+      "episode": 2,
+      "scene": 1,
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3GXYlNxkbz83gXaGDVVrTni1dX2/hf_20260829_085109_49010b56-725f-4302-bb8f-ed6b891a9a9c.mp4"
+    },
+    "a51846d0-b878-4cce-84e1-de7ee98860b6": {
+      "episode": 2,
+      "scene": 2,
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3GXYlNxkbz83gXaGDVVrTni1dX2/hf_20260829_091202_a51846d0-b878-4cce-84e1-de7ee98860b6.mp4"
+    },
+    "d0ff89f7-dbf5-41fa-9ff9-343789f6807f": {
+      "episode": 3,
+      "scene": 1,
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3GXYlNxkbz83gXaGDVVrTni1dX2/hf_20260828_214310_d0ff89f7-dbf5-41fa-9ff9-343789f6807f.mp4"
+    },
+    "11191050-3916-467e-a1d2-e086182e0a31": {
+      "episode": 3,
+      "scene": 2,
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3GXYlNxkbz83gXaGDVVrTni1dX2/hf_20260829_075533_11191050-3916-467e-a1d2-e086182e0a31.mp4"
+    },
+    "ab380df9-909d-479b-b764-66e8dd6c41fd": {
+      "episode": 4,
+      "scene": 1,
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3GXYlNxkbz83gXaGDVVrTni1dX2/hf_20260829_101137_ab380df9-909d-479b-b764-66e8dd6c41fd.mp4"
+    },
+    "96615720-6e6a-4908-a5b6-a83fc85be935": {
+      "episode": 4,
+      "scene": 2,
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3GXYlNxkbz83gXaGDVVrTni1dX2/hf_20260829_105903_96615720-6e6a-4908-a5b6-a83fc85be935.mp4"
+    },
+    "a873cfb4-dbf9-4087-b297-6a60861420ef": {
+      "episode": 5,
+      "scene": 1,
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3GXYlNxkbz83gXaGDVVrTni1dX2/hf_20260829_124118_a873cfb4-dbf9-4087-b297-6a60861420ef.mp4"
+    },
+    "76a8b9d1-3a3b-43b9-a6e8-ae7661c0dd95": {
+      "episode": 5,
+      "scene": 2,
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3GXYlNxkbz83gXaGDVVrTni1dX2/hf_20260829_115735_76a8b9d1-3a3b-43b9-a6e8-ae7661c0dd95.mp4"
+    },
+    "63a7a5fe-f19e-4ccd-993a-ec8cf298efc5": {
+      "episode": 6,
+      "scene": 1,
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3GXYlNxkbz83gXaGDVVrTni1dX2/hf_20260829_122011_63a7a5fe-f19e-4ccd-993a-ec8cf298efc5.mp4"
+    },
+    "12059501-6472-4033-a0e5-60fb5ec47fc8": {
+      "episode": 6,
+      "scene": 2,
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3GXYlNxkbz83gXaGDVVrTni1dX2/hf_20260829_130425_12059501-6472-4033-a0e5-60fb5ec47fc8.mp4"
+    },
+    "e56f4ebb-11f5-4b28-921b-dba58f4a57f5": {
+      "episode": 7,
+      "scene": 1,
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3GXYlNxkbz83gXaGDVVrTni1dX2/hf_20260829_142626_e56f4ebb-11f5-4b28-921b-dba58f4a57f5.mp4"
+    },
+    "035aa95b-f8d8-4ec8-9899-05d804dc1f4d": {
+      "episode": 7,
+      "scene": 2,
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3GXYlNxkbz83gXaGDVVrTni1dX2/hf_20260829_135353_035aa95b-f8d8-4ec8-9899-05d804dc1f4d.mp4"
+    },
+    "f260ccf9-3023-4bb3-b7d8-d3062b402a32": {
+      "episode": 8,
+      "scene": 1,
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3GXYlNxkbz83gXaGDVVrTni1dX2/hf_20260829_144934_f260ccf9-3023-4bb3-b7d8-d3062b402a32.mp4"
+    },
+    "bb74186e-89a2-43bd-beca-4e3433ee4c86": {
+      "episode": 8,
+      "scene": 2,
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3GXYlNxkbz83gXaGDVVrTni1dX2/hf_20260829_151543_bb74186e-89a2-43bd-beca-4e3433ee4c86.mp4"
+    },
+    "cfc8c2f1-45b9-48ea-9875-ea4e71679382": {
+      "episode": 9,
+      "scene": 1,
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3GXYlNxkbz83gXaGDVVrTni1dX2/hf_20260829_154658_cfc8c2f1-45b9-48ea-9875-ea4e71679382.mp4"
+    },
+    "0e9d1f66-5fca-4a91-84e9-444996933ea8": {
+      "episode": 9,
+      "scene": 2,
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3GXYlNxkbz83gXaGDVVrTni1dX2/hf_20260829_161005_0e9d1f66-5fca-4a91-84e9-444996933ea8.mp4"
+    }
+  }
+}

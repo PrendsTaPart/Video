@@ -1,0 +1,94 @@
+{
+  "serie": "FoodEatUp",
+  "saison": 2,
+  "titre": "Michael fait son cinéma",
+  "format": "9:16 · 1080×1920 · 30 fps",
+  "duree_episode": "32 s (2 × 10 s Seedance + 2 s de transition + 10 s d'animation)",
+  "moteur_video": "Seedance 2.5 (Higgsfield)",
+  "moteur_montage": "Remotion (React) — 0 crédit",
+  "voix_off": {
+    "fournisseur": "ElevenLabs",
+    "voix": "Adam - Instructor",
+    "voice_id": "TGAegA0zNRi8I6nUdq3i",
+    "model_id": "eleven_multilingual_v2",
+    "langue": "fr",
+    "normalisation": "-16 LUFS / -1,5 dBTP",
+    "note": "Validée sur l'épisode 01 : « FoodEatUp » est prononcé correctement (vérifié par retranscription ElevenLabs Scribe). Les prises sortent très bas (moyenne ≈ -36 dB) : normaliser chaque ligne avant montage.",
+    "resume": "ElevenLabs « Adam - Instructor », même voix sur les 30 épisodes"
+  },
+  "regle_parodie": "Parodie par codes de genre uniquement : aucun titre de film, aucune réplique de film, aucun visage d'acteur réel, aucune marque à l'image.",
+  "signature": "Fin de scène 2 : Michael regarde la caméra → clap « COUPEZ ! » → la punchline de transition → « Dans la vraie vie… » → l'interface FoodEatUp fait en un tap ce qu'il a raté en 20 s → logo FoodEatUp.",
+  "prompt": {
+    "ref_michael": "Michael = @Image 1 (face, hair, build) + @Image 2 (season outfit)",
+    "ref_suffixe": "keep identical.",
+    "dialogue_prefixe": "DIALOGUE (spoken French, slow and clear, natural lip-sync, no captions):",
+    "bloc_final": "PHYSICS: realistic body weight, no morphing, no sliding feet, correct hands and fingers, no extra limbs. SKIN: preserve Michael's natural skin and features from @Image 1, no smoothing, no plastic look. NO-IP: no brands, no logos, no readable text, no captions or subtitles, no recognizable songs, no real celebrity likeness, no minors. Keep Michael's face, hair, build and outfit identical through the whole clip. Sharp, clean, cinematic render."
+  },
+  "references": [
+    { "id": "@Image 1", "contenu": "Portrait de Michael, face caméra, lumière douce, fond neutre, expression neutre, pas de lunettes de soleil", "role": "Identité (visage, cheveux, morphologie)" },
+    { "id": "@Image 2", "contenu": "Michael en pied, tenue de saison verrouillée — proposition : chemise blanche, tablier noir, manches retroussées, montre au poignet (à valider)", "role": "Tenue" },
+    { "id": "@Image 3", "contenu": "La salle du restaurant, vide, de jour, sans enseigne lisible", "role": "Lieu salle" },
+    { "id": "@Image 4", "contenu": "La cuisine professionnelle, passe et inox", "role": "Lieu cuisine" },
+    { "id": "Option", "contenu": "Soul ID « Michael » entraîné dans Higgsfield, sélectionné en plus de @Image 1", "role": "Verrou d'identité renforcé" }
+  ],
+  "transition": {
+    "role": "Le pont entre le film et l'animation, identique sur les 30 épisodes : c'est la punchline qui transforme le gag en question.",
+    "texte": "Cette scène aurait pu être évitée ?",
+    "voix_off": "Cette scène aurait pu être évitée ?",
+    "cale_s": 2.1,
+    "alternatives": [
+      "Cette scène aurait pu être évitée.",
+      "Tout ça pour ça.",
+      "On refait la scène ?",
+      "Dommage. Il y avait plus simple.",
+      "Cette scène n'existe pas chez eux.",
+      "Scène coupée au montage.",
+      "Vous auriez fait mieux ?",
+      "Personne n'était obligé de vivre ça."
+    ],
+    "note": "Une seule prise ElevenLabs sert les 30 épisodes : la ligne ne change pas d'un épisode à l'autre. Changer `texte` et `voix_off` ici suffit à changer la signature de toute la saison."
+  },
+  "outro": {
+    "duree_s": 12,
+    "fps": 30,
+    "frames": 360,
+    "structure": [
+      { "t": "0–2 s", "contenu": "scene2-last-frame plein écran, léger zoom avant, désaturation progressive ; clap de cinéma qui entre par le bas et claque à 0,4 s (SFX clap) ; texte « COUPEZ ! »." },
+      { "t": "2–4 s", "contenu": "TRANSITION (identique sur les 30 épisodes) : sur le plan figé, la punchline « Cette scène aurait pu être évitée ? » à l'écran et en voix off (calée à 2,1 s) ; puis « Dans la vraie vie… » et fondu vers l'animation." },
+      { "t": "4–6 s", "contenu": "L'élément clé de la scène se transforme en données (motion blur, particules légères, easing expo-out) — précisé par épisode." },
+      { "t": "6–9 s", "contenu": "Démonstration du bénéfice : maquette d'écran FoodEatUp en 3D légère (rotation ≤ 8°), micro-animations, action en UN tap, ralenti de 6 images sur le tap." },
+      { "t": "9–11 s", "contenu": "Les modules concernés apparaissent en cartes reliées par des flux lumineux (libellés réels uniquement)." },
+      { "t": "11–12 s", "contenu": "Tout disparaît ; logo FoodEatUp seul, centré, scale 0,9 → 1 + halo ; signature sous le logo ; SFX impact + whoosh ; fondu." }
+    ],
+    "regles": [
+      "L'animation se comprend sans le son.",
+      "Texte ≥ 64 px, ≤ 6 mots par écran, zone sûre TikTok/Reels/Shorts (marges 220 px haut, 320 px bas, 120 px côtés).",
+      "Jamais de faux texte d'interface : uniquement les libellés réels.",
+      "Deux lignes de voix off : la punchline de transition à 2,1 s, puis la voix de l'épisode à 4,6 s, terminée avant 11,0 s.",
+      "Un SFX par apparition ; motion blur sur les zooms.",
+      "Rendu premium SaaS, humoristique, moderne, lisible sur smartphone."
+    ],
+    "sorties": ["ep{NN}-outro.mp4", "ep{NN}-outro-muet.mp4", "ep{NN}-thumb.png"]
+  },
+  "modules_autorises": [
+    "Réservations", "Plan de salle", "Zones", "Tables", "File d'attente", "Commandes", "Écran cuisine",
+    "Postes", "Caisse", "Session de caisse", "Rapport X", "Rapport Z", "Paiements", "Ardoises", "TPE",
+    "Lien de paiement", "Cartes cadeaux", "HACCP", "Températures", "Équipements", "Réception",
+    "Étiquettes DLC", "Traçabilité", "Checklist hygiène", "Plan de nettoyage", "Stock", "Ingrédients",
+    "Fournisseurs", "Commandes fournisseurs", "Livraisons", "Recettes", "Production",
+    "Alertes production", "Employés", "Planning", "Shifts", "Congés", "Pointages", "Contrats",
+    "Documents", "Recrutement", "Offres d'emploi", "Candidatures", "Clients", "Fidélité",
+    "Récompenses", "Bons", "Roue cadeaux", "Campagnes", "Segments RFM", "Avis", "Sondages",
+    "Site vitrine", "Pages", "Leads", "Livraison", "Zones de livraison", "Happy hours", "Boissons",
+    "Événements privés", "Devis", "Factures", "Dépenses", "Synthèse financière", "Brief du jour",
+    "Agent vocal", "Notifications", "Analyse de la carte"
+  ],
+  "lots_lumiere": {
+    "nuit-neon-tamise": [2, 5, 9, 13, 16, 22, 27, 29],
+    "jour-salle": [1, 3, 4, 8, 11, 12, 15, 18, 21, 23, 24, 25, 28, 30],
+    "cuisine-reserve": [6, 7, 10, 17, 26],
+    "exterieur": [14, 19, 20]
+  },
+  "pilotes": [1, 4, 9],
+  "rendu_1080p": [1, 4, 9, 14, 30]
+}

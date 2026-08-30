@@ -14,3 +14,6 @@ videos/rapidorh-presentation-4min/
 videos/rapidocms-presentation-4min/assets/avatar/
 # Per-project scratch (frames, segments, silent renders)
 videos/**/work/
+
+# Le journal des appels MCP est une trace d'exécution, pas du code.
+.claude/journal-mcp.jsonl

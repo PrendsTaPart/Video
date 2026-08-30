@@ -1,0 +1,402 @@
+<!-- Outro FoodEatUp saison 2 — gabarit déterministe.
+     Aucune animation CSS : tout est calculé par seek(frame) pour un rendu image par image. -->
+<meta charset="utf-8">
+<style>
+@font-face { font-family: "Goodly"; src: url(__FONT__) format("woff2"); font-weight: 300 700; font-display: block; }
+:root{
+  --bg:#0F1A23; --blue:#007BFF; --orange:#FFA500; --cream:#FCF9E6; --sky:#A6D0FF; --ink:#231F20;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{width:1080px;height:1920px;overflow:hidden;background:var(--bg)}
+body{font-family:"Goodly","Fredoka",system-ui,sans-serif;color:var(--cream);-webkit-font-smoothing:antialiased}
+.stage{position:absolute;inset:0;width:1080px;height:1920px;overflow:hidden}
+.layer{position:absolute;inset:0;will-change:transform,opacity}
+#plate{position:absolute;inset:0;background-size:cover;background-position:center}
+#vignette{position:absolute;inset:0;background:radial-gradient(ellipse at 50% 45%, rgba(0,0,0,0) 35%, rgba(15,26,35,.85) 100%)}
+#wash{position:absolute;inset:0;background:var(--bg)}
+
+/* zone sûre : 220 haut, 320 bas, 120 côtés */
+.safe{position:absolute;left:120px;right:120px;top:220px;bottom:320px}
+
+.headline{font-size:118px;font-weight:700;letter-spacing:-1px;line-height:1;text-align:center;
+  text-shadow:0 10px 40px rgba(0,0,0,.55)}
+.sub{font-size:66px;font-weight:500;text-align:center;color:var(--sky)}
+
+/* clap */
+#clap{position:absolute;left:50%;width:760px;transform-origin:50% 100%}
+.slate{position:relative;width:760px;height:430px;background:#12181d;border-radius:26px;
+  box-shadow:0 40px 90px rgba(0,0,0,.6);overflow:hidden}
+.slate .body{position:absolute;left:0;right:0;bottom:0;height:300px;background:#141c22}
+.slate .body .rule{position:absolute;left:56px;right:56px;height:10px;background:rgba(252,249,230,.16);border-radius:6px}
+#stick{position:absolute;left:0;top:0;width:760px;height:120px;transform-origin:14px 100%}
+.stripes{width:100%;height:100%;border-radius:26px 26px 8px 8px;
+  background:repeating-linear-gradient(115deg,#F4F1E4 0 62px,#12181d 62px 124px)}
+
+/* carte papier / données */
+.card{position:absolute;border-radius:28px;background:var(--cream);color:var(--ink);
+  box-shadow:0 30px 70px rgba(0,0,0,.45)}
+.bar{position:absolute;border-radius:10px;background:rgba(35,31,32,.22)}
+.chip{position:absolute;border-radius:999px;display:flex;align-items:center;justify-content:center;
+  font-size:48px;font-weight:600}
+.dataline{position:absolute;height:8px;border-radius:8px;background:var(--sky)}
+
+/* écran produit */
+#screen{position:absolute;left:50%;top:50%;width:760px;height:900px;margin:-450px 0 0 -380px;
+  border-radius:44px;background:#16232D;border:3px solid rgba(166,208,255,.22);
+  box-shadow:0 60px 120px rgba(0,0,0,.55);transform-style:preserve-3d;overflow:hidden}
+#screen .top{position:absolute;left:0;right:0;top:0;height:132px;background:rgba(0,123,255,.14);
+  display:flex;align-items:center;padding-left:44px;font-size:64px;font-weight:600;color:var(--cream)}
+.slot{position:absolute;width:196px;height:96px;border-radius:20px;border:3px solid rgba(166,208,255,.35);
+  display:flex;align-items:center;justify-content:center;font-size:52px;font-weight:600;color:var(--sky)}
+.check{position:absolute;font-size:60px;font-weight:600;color:#FCF9E6}
+.tablecell{position:absolute;border-radius:18px;border:3px solid rgba(166,208,255,.3)}
+.ripple{position:absolute;border-radius:999px;border:6px solid var(--orange)}
+
+/* cartes modules */
+.modcard{position:absolute;left:50%;width:720px;height:150px;margin-left:-360px;border-radius:30px;
+  background:rgba(252,249,230,.07);border:3px solid rgba(166,208,255,.30);
+  display:flex;align-items:center;justify-content:center;font-size:64px;font-weight:600;color:var(--cream)}
+.flow{position:absolute;left:50%;width:6px;margin-left:-3px;background:linear-gradient(180deg,var(--blue),var(--sky))}
+
+/* logo */
+#logo{position:absolute;left:50%;top:50%;width:640px;margin-left:-320px;transform-origin:50% 50%}
+#logo img{width:100%;display:block}
+#halo{position:absolute;left:50%;top:50%;width:1100px;height:1100px;margin:-550px 0 0 -550px;border-radius:50%;
+  background:radial-gradient(circle,rgba(0,123,255,.38) 0%,rgba(0,123,255,0) 62%)}
+#signature{position:absolute;left:0;right:0;text-align:center;font-size:64px;font-weight:500;color:var(--sky)}
+</style>
+
+<div class="stage">
+  <div id="plate" class="layer"></div>
+  <div id="vignette" class="layer"></div>
+
+  <div id="clap" class="layer" style="display:none">
+    <div class="slate">
+      <div class="body">
+        <div class="rule" style="top:70px"></div>
+        <div class="rule" style="top:140px;right:200px"></div>
+        <div class="rule" style="top:210px;right:320px"></div>
+      </div>
+      <div id="stick"><div class="stripes"></div></div>
+    </div>
+  </div>
+
+  <div id="act1" class="layer">
+    <div class="safe">
+      <div id="coupez" class="headline" style="position:absolute;left:0;right:0;top:640px">COUPEZ !</div>
+      <div id="punchline" class="headline" style="position:absolute;left:0;right:0;top:560px;font-size:88px"></div>
+      <div id="vraievie" class="sub" style="position:absolute;left:0;right:0;top:900px">Dans la vraie vie…</div>
+    </div>
+  </div>
+
+  <div id="wash" class="layer" style="opacity:0"></div>
+
+  <!-- 4–6 s : l'élément clé de la scène devient des données -->
+  <div id="act2" class="layer" style="opacity:0">
+    <div id="paper" class="card" style="left:180px;top:620px;width:720px"></div>
+    <div id="datalines"></div>
+  </div>
+
+  <!-- 6–9 s : l'écran produit, une seule pression -->
+  <div id="act3" class="layer" style="opacity:0">
+    <div id="screen">
+      <div class="top" id="scrtitle"></div>
+      <div id="chips"></div>
+      <div class="check" id="dispo" style="left:44px;top:346px;opacity:0"></div>
+      <div id="cells"></div>
+      <div class="ripple" id="ripple" style="opacity:0"></div>
+    </div>
+    <div id="planlabel" class="sub" style="position:absolute;left:0;right:0;top:1500px;opacity:0"></div>
+  </div>
+
+  <!-- 7–9 s : les modules -->
+  <div id="act4" class="layer" style="opacity:0">
+    <div id="punch" class="headline" style="position:absolute;left:120px;right:120px;top:430px;font-size:96px"></div>
+    <div id="cards"></div>
+  </div>
+
+  <!-- 9–10 s : le logo -->
+  <div id="act5" class="layer" style="opacity:0">
+    <div id="halo"></div>
+    <div id="logo"><img src="__LOGO__" alt=""></div>
+    <div id="signature" style="top:1180px">Le système qui travaille avec vous.</div>
+  </div>
+</div>
+
+<script>
+const FPS = 30, DUR = 360, SHIFT = 60; // SHIFT = les 2 s de transition insérées après le clap
+const DATA = __DATA__;
+document.getElementById("plate").style.backgroundImage = "url(__PLATE__)";
+document.getElementById("punch").textContent = DATA.texte_ecran;
+document.getElementById("punchline").textContent = DATA.transition;
+
+/* --- utilitaires déterministes --- */
+const clamp = (v,a,b)=>Math.min(b,Math.max(a,v));
+const lin = (f,a,b)=>clamp((f-a)/(b-a),0,1);
+const expoOut = t => t>=1?1:1-Math.pow(2,-10*t);
+const backOut = t => 1+2.70158*Math.pow(t-1,3)+1.70158*Math.pow(t-1,2);
+const px = n => n.toFixed(2)+"px";
+
+/* ---- cartes modules : bloc centré, l'écart se resserre quand il y en a beaucoup ---- */
+const cardsRoot = document.getElementById("cards");
+const NC = DATA.cartes.length, CH = 150, CGAP = NC <= 4 ? 36 : 22;
+const CTOP = 1050 - (NC * CH + (NC - 1) * CGAP) / 2;
+DATA.cartes.forEach((nom, i) => {
+  const y = CTOP + i * (CH + CGAP);
+  if (i > 0) {
+    const flow = document.createElement("div");
+    flow.className = "flow"; flow.style.top = px(y - CGAP); flow.style.height = "0px";
+    cardsRoot.appendChild(flow);
+  }
+  const c = document.createElement("div");
+  c.className = "modcard"; c.style.top = px(y); c.textContent = nom;
+  cardsRoot.appendChild(c);
+});
+const punchEl = document.getElementById("punch");
+punchEl.style.top = "auto";
+punchEl.style.bottom = px(1920 - CTOP + 56);   // toujours au-dessus de la première carte
+const CARDS = [...cardsRoot.querySelectorAll(".modcard")];
+const FLOWS = [...cardsRoot.querySelectorAll(".flow")];
+
+/* Ajuste un libellé à la largeur réelle de sa boîte : les textes changent d'un
+   épisode à l'autre, on mesure au lieu de deviner à partir du nombre de lettres. */
+function ajusterTexte(el, texte, max, min, marge) {
+  const s = document.createElement("span");
+  s.style.whiteSpace = "nowrap";
+  s.textContent = texte;
+  el.textContent = "";
+  el.appendChild(s);
+  let fs = max;
+  el.style.fontSize = px(fs);
+  const dispo = el.clientWidth - marge;
+  while (fs > min && s.offsetWidth > dispo) { fs -= 1; el.style.fontSize = px(fs); }
+}
+
+/* ---- acte 2 : la feuille de papier de l'épisode, puis ses lignes de données ---- */
+const A2 = DATA.ui.acte2;
+const paper = document.getElementById("paper");
+const ROWH = 154, PADT = 96;
+paper.style.height = px(PADT + A2.lignes.length * ROWH + 60);
+const PCHIPS = A2.lignes.map((l, i) => {
+  const bar = document.createElement("div");
+  bar.className = "bar";
+  bar.style.cssText = `left:64px;top:${PADT + i * ROWH}px;width:${330 - i * 20}px;height:26px`;
+  paper.appendChild(bar);
+  const chip = document.createElement("div");
+  chip.className = "chip";
+  chip.style.cssText = `right:64px;top:${PADT + i * ROWH - 22}px;width:220px;height:72px;color:#231F20`;
+  paper.appendChild(chip);
+  ajusterTexte(chip, l.chip, 48, 26, 28);
+  return chip;
+});
+const rule = document.createElement("div");
+rule.className = "bar";
+rule.style.cssText = `left:64px;top:${PADT + A2.lignes.length * ROWH + 10}px;width:592px;height:6px;background:rgba(35,31,32,.12)`;
+paper.appendChild(rule);
+
+const dl = document.getElementById("datalines");
+const LINES = [];
+for (let i = 0; i < 14; i++) {
+  const d = document.createElement("div");
+  d.className = "dataline";
+  d.style.left = px(180 + (i % 2) * 370);
+  d.style.top = px(660 + Math.floor(i / 2) * 64);
+  d.style.width = "0px";
+  dl.appendChild(d); LINES.push(d);
+}
+
+/* ---- acte 3 : l'écran produit, en grille de cases ou en liste de lignes ---- */
+const A3 = DATA.ui.acte3;
+const scrtitle = document.getElementById("scrtitle");
+ajusterTexte(scrtitle, A3.titre, 64, 34, 88);   // 44 px de retrait à gauche, autant de marge à droite
+document.getElementById("dispo").textContent = "✓ " + A3.confirmation;
+const HASCHIPS = (A3.chips || []).length > 0;
+document.getElementById("dispo").style.top = px(HASCHIPS ? 346 : 196);
+const chipsRoot = document.getElementById("chips");
+const NCH = (A3.chips || []).length;
+const CHW = NCH ? (672 - (NCH - 1) * 42) / NCH : 0;   // largeur adaptée au nombre de chips
+const SCHIPS = (A3.chips || []).map((t, i) => {
+  const el = document.createElement("div");
+  el.className = "slot";
+  el.style.cssText = `left:${44 + i * (CHW + 42)}px;top:200px;width:${CHW}px`;
+  chipsRoot.appendChild(el);
+  ajusterTexte(el, t, 52, 26, 24);
+  return el;
+});
+const cellsRoot = document.getElementById("cells");
+const LISTE = A3.type === "liste";
+const CELLS = [];
+const BADGES = [];
+if (LISTE) {
+  // Les lignes tiennent toujours dans l'écran : avec des pastilles au-dessus,
+  // la place restante est plus courte, donc les lignes se resserrent.
+  const HAUT = HASCHIPS ? 470 : 290, ECART = 26;
+  const RH = Math.min(150, (900 - HAUT - 40 - (A3.lignes - 1) * ECART) / A3.lignes);
+  for (let i = 0; i < A3.lignes; i++) {
+    const row = document.createElement("div");
+    row.className = "tablecell";
+    row.style.cssText = `left:44px;width:672px;height:${RH}px`;
+    row.style.top = px(HAUT + i * (RH + ECART));
+    cellsRoot.appendChild(row);
+    const bar = document.createElement("div");
+    bar.className = "bar";
+    bar.style.cssText = `left:36px;top:${Math.min(44, (RH - 22) / 2)}px;width:300px;height:22px;background:rgba(166,208,255,.30)`;
+    row.appendChild(bar);
+    const badge = document.createElement("div");
+    badge.className = "chip";
+    badge.style.cssText = `right:32px;top:${Math.min(38, (RH - 66) / 2)}px;width:230px;height:66px;background:rgba(166,208,255,.14);color:#A6D0FF`;
+    row.appendChild(badge);
+    // la taille est calée sur le plus long des deux statuts : elle ne bouge plus au changement
+    ajusterTexte(badge, A3.statut_final.length > A3.statut_initial.length ? A3.statut_final : A3.statut_initial, 40, 24, 24);
+    badge.firstChild.textContent = A3.statut_initial;
+    CELLS.push(row); BADGES.push(badge);
+  }
+} else {
+  const G = A3.grille;
+  for (let r = 0; r < G.rows; r++) for (let c = 0; c < G.cols; c++) {
+    const el = document.createElement("div");
+    el.className = "tablecell";
+    el.style.cssText = `left:${44 + c * 238}px;top:${470 + r * 190}px;width:196px;height:150px`;
+    cellsRoot.appendChild(el); CELLS.push(el);
+  }
+}
+const CIBLE = LISTE ? A3.cible : A3.grille.cible;
+const cibleEl = CELLS[CIBLE];
+document.getElementById("planlabel").textContent = A3.label_bas;
+
+function seek(f){
+  /* ---------- 0–2 s : le plan figé, le clap, COUPEZ ---------- */
+  const plate = document.getElementById("plate");
+  const zoom = 1 + 0.08*lin(f,0,120);
+  const sat  = 1 - 0.85*lin(f,6,100);
+  plate.style.transform = `scale(${zoom.toFixed(4)})`;
+  plate.style.filter = `saturate(${sat.toFixed(3)}) brightness(${(1-0.28*lin(f,20,110)).toFixed(3)})`;
+  plate.style.opacity = String(1 - lin(f,116,126));
+  document.getElementById("vignette").style.opacity = String(1 - lin(f,116,126));
+
+  const clap = document.getElementById("clap"), stick = document.getElementById("stick");
+  const clapOn = f < 40;
+  clap.style.display = clapOn ? "block" : "none";
+  if (clapOn){
+    const rise = expoOut(lin(f,0,12));              // entre par le bas, claque à 0,4 s (f=12)
+    const y = 1920 - rise*1180;
+    const out = lin(f,26,40);
+    clap.style.top = px(y + out*900);
+    clap.style.marginLeft = px(-380);
+    clap.style.opacity = String(1-out);
+    const ang = f<12 ? -30*(1-lin(f,0,12)) : (f<16 ? -4*(1-lin(f,12,16)) : 0);
+    stick.style.transform = `rotate(${ang.toFixed(2)}deg)`;
+  }
+
+  const coupez = document.getElementById("coupez");
+  const cIn = lin(f,12,20), cOut = lin(f,52,62);
+  coupez.style.opacity = String(cIn*(1-cOut));
+  coupez.style.transform = `scale(${(0.7+0.3*backOut(Math.max(cIn,0.001))).toFixed(3)})`;
+  /* ---------- 2–4 s : la punchline de transition (identique sur les 30 épisodes) ---------- */
+  const pl = document.getElementById("punchline");
+  const plIn = lin(f,60,72), plOut = lin(f,104,114);
+  pl.style.opacity = String(plIn*(1-plOut));
+  pl.style.transform = `translateY(${px(34*(1-expoOut(plIn)))}) scale(${(0.97+0.03*expoOut(plIn)).toFixed(3)})`;
+
+  const vv = document.getElementById("vraievie");
+  const vIn = lin(f,108,118), vOut = lin(f,118,126);
+  vv.style.opacity = String(vIn*(1-vOut));
+  vv.style.transform = `translateY(${px(26*(1-expoOut(vIn)))})`;
+
+  document.getElementById("wash").style.opacity = String(lin(f,116,126));
+
+  /* les actes 2 à 5 gardent leur découpage d'origine, décalé des 2 s de transition */
+  const g = f - SHIFT;
+
+  /* ---------- 4–6 s : l'élément clé devient des données ---------- */
+  const a2 = document.getElementById("act2");
+  a2.style.opacity = String(lin(g,58,66) * (1-lin(g,112,120)));
+  const nbOut = lin(g,96,116);
+  paper.style.opacity = String(1-nbOut);
+  paper.style.transform = `translateY(${px(-90*expoOut(nbOut))}) scale(${(1-0.12*nbOut).toFixed(3)})`;
+  const blink = A2.alerte && g>=72 && g<100 && (Math.floor((g-72)/5)%2===0);
+  PCHIPS.forEach((c) => {
+    c.style.background = blink ? "rgba(255,80,80,.28)" : "rgba(0,123,255,.18)";
+    c.style.boxShadow  = blink ? "0 0 0 6px rgba(255,80,80,.35)" : "none";
+  });
+  LINES.forEach((d,i)=>{
+    const t = expoOut(lin(g, 100+i*1.4, 118+i*1.4));
+    d.style.width = px(t*330);
+    d.style.opacity = String(t*(1-lin(g,114,120)));
+  });
+
+  /* ---------- 6–9 s : l'écran produit, une seule pression ---------- */
+  const a3 = document.getElementById("act3");
+  a3.style.opacity = String(lin(g,118,126) * (1-lin(g,204,212)));
+  const scr = document.getElementById("screen");
+  const rot = 8 - 16*lin(g,118,210);                 // rotation ≤ 8°
+  const sIn = expoOut(lin(g,118,134));
+  scr.style.transform = `perspective(2200px) rotateY(${rot.toFixed(2)}deg) rotateX(${(3-2*lin(g,118,210)).toFixed(2)}deg) scale(${(0.9+0.1*sIn).toFixed(3)})`;
+  SCHIPS.forEach((el,i)=>{
+    const on = g>=140 && i===A3.chip_actif;
+    el.style.background  = on ? "rgba(0,123,255,.35)" : "transparent";
+    el.style.borderColor = on ? "#007BFF" : "rgba(166,208,255,.35)";
+    el.style.color       = on ? "#FCF9E6" : "var(--sky)";
+  });
+  document.getElementById("dispo").style.opacity = String(lin(g,150,160));
+
+  /* la pression : ralenti de 6 images (g 168 → 174) */
+  const tapF = 168;
+  const rip = document.getElementById("ripple");
+  const rt = lin(g,tapF,tapF+22);
+  if (g>=tapF-2 && g<tapF+22){
+    const size = 60 + 340*expoOut(rt);
+    const cx = cibleEl.offsetLeft + cibleEl.offsetWidth/2;
+    const cy = cibleEl.offsetTop  + cibleEl.offsetHeight/2;
+    rip.style.opacity = String(0.9*(1-rt));
+    rip.style.width = px(size); rip.style.height = px(size);
+    rip.style.left = px(cx-size/2); rip.style.top = px(cy-size/2);
+  } else rip.style.opacity = "0";
+  const done = g>=tapF+6;
+  if (LISTE){
+    cibleEl.style.borderColor = done ? "#007BFF" : "rgba(166,208,255,.3)";
+    cibleEl.style.background  = done ? "rgba(0,123,255,.16)" : "transparent";
+    BADGES[CIBLE].firstChild.textContent = done ? A3.statut_final : A3.statut_initial;
+    BADGES[CIBLE].style.background = done ? "rgba(0,123,255,.45)" : "rgba(166,208,255,.14)";
+    BADGES[CIBLE].style.color = done ? "#FCF9E6" : "#A6D0FF";
+  } else {
+    cibleEl.style.background  = done ? "rgba(0,123,255,.45)" : "transparent";
+    cibleEl.style.borderColor = done ? "#007BFF" : "rgba(166,208,255,.3)";
+    cibleEl.style.boxShadow   = done ? "0 0 40px rgba(0,123,255,.55)" : "none";
+  }
+  document.getElementById("planlabel").style.opacity = String(lin(g,178,190)*(1-lin(g,202,210)));
+
+  /* ---------- 9–11 s : les modules ---------- */
+  const a4 = document.getElementById("act4");
+  a4.style.opacity = String(lin(g,208,216) * (1-lin(g,262,270)));
+  const p = document.getElementById("punch");
+  const pIn = lin(g,210,222);
+  p.style.opacity = String(pIn);
+  p.style.transform = `translateY(${px(30*(1-expoOut(pIn)))})`;
+  CARDS.forEach((c,i)=>{
+    const t = expoOut(lin(g, 220+i*10, 238+i*10));
+    c.style.opacity = String(t);
+    c.style.transform = `translateY(${px(40*(1-t))}) scale(${(0.94+0.06*t).toFixed(3)})`;
+    c.style.borderColor = t>0.99 ? "rgba(0,123,255,.75)" : "rgba(166,208,255,.30)";
+  });
+  FLOWS.forEach((fl,i)=>{
+    const t = expoOut(lin(g, 242+i*10, 258+i*10));
+    fl.style.height = px(t*CGAP);
+    fl.style.opacity = String(t*(1-lin(g,262,270)));
+  });
+
+  /* ---------- 11–12 s : le logo seul ---------- */
+  const a5 = document.getElementById("act5");
+  a5.style.opacity = String(lin(g,268,276) * (1-lin(g,294,300)));
+  const lIn = lin(g,268,286);
+  document.getElementById("logo").style.transform = `translateY(-50%) scale(${(0.9+0.1*expoOut(lIn)).toFixed(4)})`;
+  document.getElementById("halo").style.opacity = String(0.85*expoOut(lIn));
+  document.getElementById("halo").style.transform = `scale(${(0.6+0.5*expoOut(lIn)).toFixed(3)})`;
+  const sg = document.getElementById("signature");
+  const sgIn = lin(g,276,290);
+  sg.style.opacity = String(sgIn);
+  sg.style.transform = `translateY(${px(20*(1-expoOut(sgIn)))})`;
+}
+window.seek = seek;
+seek(0);
+</script>
