@@ -1,27 +1,27 @@
-# Épisode 24 « La carte au trésor » — provenance
+# Épisode 26 « Le détective » — provenance
 
 **Aucune génération Higgsfield n'a été lancée** (règle `CLAUDE.md`). Les deux plans de 10 s
 existaient déjà dans la bibliothèque du compte et sont **réutilisés tels quels**.
 
 | Plan | Generation ID Higgsfield | Fichier |
 |---|---|---|
-| Scène 1 — « Attends ! » | `65ae83db-d956-4b1d-8193-2cb6d5313f71` | `source/ep24-scene1.mp4` |
-| Scène 2 — « Trois » | `9402b57a-914c-4afb-8739-3742b7c022cf` | `source/ep24-scene2.mp4` |
+| Scène 1 — « Qui a nettoyé la hotte ? » | `3c69f12d-3cc6-4b9c-9213-de2b293a711c` | `source/ep26-scene1.mp4` |
+| Scène 2 — « Le coupable, c'était moi » | `7d252bf4-91f1-42e4-b7b5-74414b108f9f` | `source/ep26-scene2.mp4` |
 
 Sources d'origine : 720×1280, 24 fps, ~10 s, audio AAC 32 kHz (dialogue français et ambiance
 générés dans la même passe). Les prompts stockés côté Higgsfield correspondent à la fiche
-`prompts/ep24-la-carte-au-tresor.md`, à une différence près : la référence visage y est passée en
+`prompts/ep26-le-detective.md`, à une différence près : la référence visage y est passée en
 `<<<image_1>>>` (Reference Element) au lieu de `@Image 1`.
 
 ## Sorties
 
 | Fichier | Contenu |
 |---|---|
-| `ep24-la-carte-au-tresor.mp4` | **Le master** : scène 1 + scène 2 + transition + animation, 1080×1920, 30 fps, 32,1 s |
-| `ep24-outro.mp4` | L'outro seul, 12 s, voix off + SFX |
-| `ep24-outro-muet.mp4` | L'outro seul, 12 s, SFX uniquement |
+| `ep26-le-detective.mp4` | **Le master** : scène 1 + scène 2 + transition + animation, 1080×1920, 30 fps, 32,1 s |
+| `ep26-outro.mp4` | L'outro seul, 12 s, voix off + SFX |
+| `ep26-outro-muet.mp4` | L'outro seul, 12 s, SFX uniquement |
 | `vo.mp3` | La voix off de l'épisode, normalisée |
-| `ep24-thumb.png` | Miniature : le plan figé du début de l'outro + le titre |
+| `ep26-thumb.png` | Miniature : le plan figé du début de l'outro + le titre |
 | `scene2-last-frame.png` | Dernière image de la scène 2, plaque de départ de l'outro |
 
 ## Voix off
@@ -30,7 +30,7 @@ générés dans la même passe). Les prompts stockés côté Higgsfield correspo
 |---|---|
 | Voix | **Adam - Instructor** `TGAegA0zNRi8I6nUdq3i`, modèle `eleven_multilingual_v2` |
 | Transition (commune aux 30 épisodes) | « Cette scène aurait pu être évitée ? » — prise `sZWCVMCGg2WgpYJb4j3c` (2,04 s), calée à 2,1 s |
-| Ligne de l'épisode | « Une commande, ça ne s'envole pas. Avec FoodEatUp, elle part de la table à la cuisine en une seconde. » |
+| Ligne de l'épisode | « Qui, quoi, quand : c'est écrit. Le plan de nettoyage FoodEatUp enregistre chaque action, pas besoin de détective. » |
 | Prise retenue | *pas encore enregistrée* |
 
 Les prises ElevenLabs sortent très bas : chacune est normalisée à −16 LUFS / −1,5 dBTP.
@@ -47,7 +47,7 @@ la prise est longue. L'outro est ensuite calé au niveau de saison (−18,5 LUFS
 ## Reconstruire
 
 ```bash
-./scripts/monter-episode.sh 24
+./scripts/monter-episode.sh 26
 ```
 
 ---

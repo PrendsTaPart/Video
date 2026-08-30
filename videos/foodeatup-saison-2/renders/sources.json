@@ -137,7 +137,23 @@
       }
     },
     "24": {
-      "scene1": "65ae83db-d956-4b1d-8193-2cb6d5313f71"
+      "scene1": "65ae83db-d956-4b1d-8193-2cb6d5313f71",
+      "scene2": "9402b57a-914c-4afb-8739-3742b7c022cf"
+    },
+    "25": {
+      "scene1": "698bedab-ab2e-4a11-85cf-686bf13fffec",
+      "scene2": "b46ea5a6-bdd9-4263-b7a4-10a44ee3ae13"
+    },
+    "26": {
+      "scene1": "3c69f12d-3cc6-4b9c-9213-de2b293a711c",
+      "scene2": "7d252bf4-91f1-42e4-b7b5-74414b108f9f"
+    },
+    "27": {
+      "scene1": "ee9a4c7e-8a38-4407-b450-f0fe44a1af43",
+      "scene2": "1f0419f3-82c1-421d-a5d9-48c6678384f3"
+    },
+    "28": {
+      "scene1": "2f3da8e7-86fd-4022-8179-c069f51f70c5"
     },
     "01": {
       "scene1": "2855b8b2-37c8-441f-8b56-58c02c6b1fe1",
@@ -534,6 +550,50 @@
       "episode": 24,
       "scene": 1,
       "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3GXYlNxkbz83gXaGDVVrTni1dX2/hf_20260830_142603_65ae83db-d956-4b1d-8193-2cb6d5313f71.mp4"
+    },
+    "9402b57a-914c-4afb-8739-3742b7c022cf": {
+      "episode": 24,
+      "scene": 2,
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3GXYlNxkbz83gXaGDVVrTni1dX2/hf_20260830_145316_9402b57a-914c-4afb-8739-3742b7c022cf.mp4",
+      "note": "Produit en extension de la scène 1 : le job annonce 16:9 dans ses paramètres, le fichier livré est en 720×1280 (mesuré)."
+    },
+    "698bedab-ab2e-4a11-85cf-686bf13fffec": {
+      "episode": 25,
+      "scene": 1,
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3GXYlNxkbz83gXaGDVVrTni1dX2/hf_20260830_153536_698bedab-ab2e-4a11-85cf-686bf13fffec.mp4"
+    },
+    "b46ea5a6-bdd9-4263-b7a4-10a44ee3ae13": {
+      "episode": 25,
+      "scene": 2,
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3GXYlNxkbz83gXaGDVVrTni1dX2/hf_20260830_160545_b46ea5a6-bdd9-4263-b7a4-10a44ee3ae13.mp4",
+      "note": "Produit en extension de la scène 1 : le job annonce 16:9 dans ses paramètres, le fichier livré est en 720×1280 (mesuré)."
+    },
+    "3c69f12d-3cc6-4b9c-9213-de2b293a711c": {
+      "episode": 26,
+      "scene": 1,
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3GXYlNxkbz83gXaGDVVrTni1dX2/hf_20260830_162819_3c69f12d-3cc6-4b9c-9213-de2b293a711c.mp4"
+    },
+    "7d252bf4-91f1-42e4-b7b5-74414b108f9f": {
+      "episode": 26,
+      "scene": 2,
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3GXYlNxkbz83gXaGDVVrTni1dX2/hf_20260830_165431_7d252bf4-91f1-42e4-b7b5-74414b108f9f.mp4",
+      "note": "Produit en extension de la scène 1 : le job annonce 16:9 dans ses paramètres, le fichier livré est en 720×1280 (mesuré)."
+    },
+    "ee9a4c7e-8a38-4407-b450-f0fe44a1af43": {
+      "episode": 27,
+      "scene": 1,
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3GXYlNxkbz83gXaGDVVrTni1dX2/hf_20260830_172208_ee9a4c7e-8a38-4407-b450-f0fe44a1af43.mp4"
+    },
+    "1f0419f3-82c1-421d-a5d9-48c6678384f3": {
+      "episode": 27,
+      "scene": 2,
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3GXYlNxkbz83gXaGDVVrTni1dX2/hf_20260830_174514_1f0419f3-82c1-421d-a5d9-48c6678384f3.mp4",
+      "note": "Produit en extension de la scène 1 : le job annonce 16:9 dans ses paramètres, le fichier livré est en 720×1280 (mesuré)."
+    },
+    "2f3da8e7-86fd-4022-8179-c069f51f70c5": {
+      "episode": 28,
+      "scene": 1,
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3GXYlNxkbz83gXaGDVVrTni1dX2/hf_20260830_181029_2f3da8e7-86fd-4022-8179-c069f51f70c5.mp4"
     }
   }
 }
