@@ -1,0 +1,31 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "hooks": {
+    "PreToolUse": [
+      {
+        "matcher": "mcp__.*__(send_|reply|forward|schedule_email|schedule_sms|lancer_campagne|launch_campaign|.*vocal|buy_|stripe_api_write|ads_activate|create_payment_link|execute_sql|apply_migration|delete_|.*_delete|destroy_|trash_|unpublish_|depublier_|revoke_|remove_|retirer_|cancel_|liberer_)",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "\"$CLAUDE_PROJECT_DIR/.claude/hooks/garde-fous.sh\"",
+            "timeout": 10,
+            "statusMessage": "Garde-fous"
+          }
+        ]
+      }
+    ],
+    "PostToolUse": [
+      {
+        "matcher": "mcp__.*",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "jq -c '{le: now|todateiso8601, outil: .tool_name}' >> \"$CLAUDE_PROJECT_DIR/.claude/journal-mcp.jsonl\" 2>/dev/null || true",
+            "timeout": 10,
+            "async": true
+          }
+        ]
+      }
+    ]
+  }
+}
