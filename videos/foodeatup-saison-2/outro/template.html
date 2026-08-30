@@ -209,7 +209,21 @@ for (let i = 0; i < 14; i++) {
 const A3 = DATA.ui.acte3;
 const scrtitle = document.getElementById("scrtitle");
 ajusterTexte(scrtitle, A3.titre, 64, 34, 88);   // 44 px de retrait à gauche, autant de marge à droite
-document.getElementById("dispo").textContent = "✓ " + A3.confirmation;
+/*
+ * La confirmation tient sur une ligne, quelle que soit sa longueur.
+ *
+ * `.check` est posé en absolu sans largeur : un texte long passait à la ligne
+ * et la deuxième retombait sur la grille — « congé validé, samedi couvert »
+ * écrivait « couvert » par-dessus les cases. On lui donne la largeur utile de
+ * l'écran et on mesure, comme pour le titre, les pastilles et les badges.
+ * Les confirmations courtes déjà livrées tiennent à 60 px : leur mise en page
+ * ne bouge pas.
+ */
+const confirme = document.getElementById("dispo");
+/* 760 px d'écran moins le retrait de 44 px : exactement la place dont le texte
+   disposait avant, sinon les confirmations déjà livrées rétréciraient pour rien. */
+confirme.style.width = px(760 - 44);
+ajusterTexte(confirme, "✓ " + A3.confirmation, 60, 34, 0);
 const HASCHIPS = (A3.chips || []).length > 0;
 document.getElementById("dispo").style.top = px(HASCHIPS ? 346 : 196);
 const chipsRoot = document.getElementById("chips");

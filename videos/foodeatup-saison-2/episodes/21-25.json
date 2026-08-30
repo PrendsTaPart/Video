@@ -301,6 +301,37 @@
     }
   ],
   "montage": {
+    "ui": {
+      "acte2": {
+        "lignes": [
+          {
+            "chip": "table 6"
+          },
+          {
+            "chip": "2 pizzas"
+          },
+          {
+            "chip": "envoyée"
+          }
+        ],
+        "alerte": false
+      },
+      "acte3": {
+        "type": "liste",
+        "titre": "Commandes",
+        "chips": [
+          "En salle",
+          "En cuisine"
+        ],
+        "chip_actif": 0,
+        "confirmation": "commande envoyée",
+        "lignes": 3,
+        "cible": 0,
+        "statut_initial": "prise",
+        "statut_final": "en cuisine",
+        "label_bas": "Écran cuisine"
+      }
+    },
     "vo": "Une commande, ça ne s'envole pas. Avec FoodEatUp, elle part de la table à la cuisine en une seconde.",
     "beats": [
       { "t": "2–4 s", "texte": "la serviette bleue délavée se reconstitue en commande numérique : table, articles, quantités, options." },
@@ -355,6 +386,37 @@
     }
   ],
   "montage": {
+    "ui": {
+      "acte2": {
+        "lignes": [
+          {
+            "chip": "3 appels"
+          },
+          {
+            "chip": "1 réservation"
+          },
+          {
+            "chip": "0 manqué"
+          }
+        ],
+        "alerte": false
+      },
+      "acte3": {
+        "type": "liste",
+        "titre": "Appels",
+        "chips": [
+          "Pris",
+          "Manqués"
+        ],
+        "chip_actif": 0,
+        "confirmation": "réservation enregistrée",
+        "lignes": 3,
+        "cible": 1,
+        "statut_initial": "en attente",
+        "statut_final": "traité",
+        "label_bas": "Agent vocal"
+      }
+    },
     "vo": "Le téléphone répond tout seul. L'agent vocal FoodEatUp prend la réservation ou la commande pendant que vous servez.",
     "vo_variante_courte": "Le téléphone répond tout seul. L'agent vocal FoodEatUp prend la réservation pendant que vous servez.",
     "beats": [

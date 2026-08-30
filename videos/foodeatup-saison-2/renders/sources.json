@@ -138,19 +138,35 @@
     },
     "24": {
       "scene1": "65ae83db-d956-4b1d-8193-2cb6d5313f71",
-      "scene2": "9402b57a-914c-4afb-8739-3742b7c022cf"
+      "scene2": "9402b57a-914c-4afb-8739-3742b7c022cf",
+      "vo": {
+        "generation_id": "dJqAzPmyilA8Mda27oVu",
+        "duree_s": 5.39
+      }
     },
     "25": {
       "scene1": "698bedab-ab2e-4a11-85cf-686bf13fffec",
-      "scene2": "b46ea5a6-bdd9-4263-b7a4-10a44ee3ae13"
+      "scene2": "b46ea5a6-bdd9-4263-b7a4-10a44ee3ae13",
+      "vo": {
+        "generation_id": "0nzjed51sXsSm7DVw7wT",
+        "duree_s": 5.29
+      }
     },
     "26": {
       "scene1": "3c69f12d-3cc6-4b9c-9213-de2b293a711c",
-      "scene2": "7d252bf4-91f1-42e4-b7b5-74414b108f9f"
+      "scene2": "7d252bf4-91f1-42e4-b7b5-74414b108f9f",
+      "vo": {
+        "generation_id": "CiUTNt0MYx9aWqUzro4X",
+        "duree_s": 5.39
+      }
     },
     "27": {
       "scene1": "ee9a4c7e-8a38-4407-b450-f0fe44a1af43",
-      "scene2": "1f0419f3-82c1-421d-a5d9-48c6678384f3"
+      "scene2": "1f0419f3-82c1-421d-a5d9-48c6678384f3",
+      "vo": {
+        "generation_id": "UJPziP244tCA6zKuSZwX",
+        "duree_s": 6.04
+      }
     },
     "28": {
       "scene1": "2f3da8e7-86fd-4022-8179-c069f51f70c5"

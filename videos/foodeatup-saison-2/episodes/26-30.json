@@ -44,6 +44,37 @@
     }
   ],
   "montage": {
+    "ui": {
+      "acte2": {
+        "lignes": [
+          {
+            "chip": "lundi"
+          },
+          {
+            "chip": "hotte"
+          },
+          {
+            "chip": "Michael"
+          }
+        ],
+        "alerte": false
+      },
+      "acte3": {
+        "type": "liste",
+        "titre": "Plan de nettoyage",
+        "chips": [
+          "À faire",
+          "Fait"
+        ],
+        "chip_actif": 1,
+        "confirmation": "action enregistrée",
+        "lignes": 3,
+        "cible": 1,
+        "statut_initial": "à faire",
+        "statut_final": "fait",
+        "label_bas": "Checklist hygiène"
+      }
+    },
     "vo": "Qui, quoi, quand : c'est écrit. Le plan de nettoyage FoodEatUp enregistre chaque action, pas besoin de détective.",
     "vo_variante_courte": "Qui, quoi, quand : c'est écrit. Le plan de nettoyage FoodEatUp enregistre chaque action.",
     "beats": [
@@ -99,6 +130,37 @@
     }
   ],
   "montage": {
+    "ui": {
+      "acte2": {
+        "lignes": [
+          {
+            "chip": "samedi"
+          },
+          {
+            "chip": "3 demandes"
+          },
+          {
+            "chip": "0 en salle"
+          }
+        ],
+        "alerte": true
+      },
+      "acte3": {
+        "titre": "Planning",
+        "chips": [
+          "Semaine",
+          "Samedi"
+        ],
+        "chip_actif": 1,
+        "confirmation": "samedi couvert",
+        "grille": {
+          "cols": 3,
+          "rows": 2,
+          "cible": 4
+        },
+        "label_bas": "Congés"
+      }
+    },
     "vo": "Un congé validé, un planning à jour, un samedi couvert. FoodEatUp vous prévient avant que vous signiez.",
     "beats": [
       { "t": "2–4 s", "texte": "les trois feuilles deviennent trois demandes de congé sur le même jour ; une alerte de conflit s'allume." },
