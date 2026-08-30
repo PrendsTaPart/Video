@@ -4,6 +4,7 @@
   "genre": "Film de monstre géant", "genre_court": "Monstre géant",
   "situation": "Michael a commandé « dix », il reçoit dix palettes d'oignons",
   "modules": ["Commandes fournisseurs", "Réception"],
+  "module": "stockvision", "ecran": "livraisons",
   "hook": "Tous les verres tremblent, une ombre géante passe sur la façade.",
   "selecteurs": { "epoque": "2020s", "genre": "film de monstre", "lumiere": "matin gris, angle contre-plongée", "physique": "hyperbolique", "objectif": "18 mm ultra grand-angle", "emotion": "effroi comique", "montage": "4 plans" },
   "scenes": [
@@ -89,6 +90,7 @@
   "genre": "Film de démineurs", "genre_court": "Démineurs",
   "situation": "Une cliente allergique, deux sauces, un chef absent",
   "modules": ["Recettes", "Allergènes"],
+  "module": "configuration", "ecran": "mes-ingredients",
   "hook": "« Je suis allergique aux noix. » — « Bien sûr. » (le sourire tombe dès qu'il se retourne)",
   "selecteurs": { "epoque": "2020s", "genre": "thriller d'action", "lumiere": "néon cuisine froid, angle frontal", "physique": "réaliste", "objectif": "macro 100 mm", "emotion": "panique silencieuse", "montage": "4 plans" },
   "scenes": [
@@ -167,6 +169,7 @@
   "genre": "Documentaire animalier (voix de narrateur)", "genre_court": "Animalier",
   "situation": "La cliente influenceuse filme son plat pendant qu'il refroidit",
   "modules": ["Avis", "Site vitrine", "Fidélité"],
+  "module": "mon-site", "ecran": "carte-vitrine",
   "hook": "Voix de narrateur : « Ici, dans son habitat naturel… » — une cliente et son ring light.",
   "selecteurs": { "epoque": "2020s", "genre": "documentaire", "lumiere": "naturelle de fenêtre, angle latéral", "physique": "réaliste", "objectif": "135 mm téléobjectif", "emotion": "patience amusée", "montage": "4 plans" },
   "scenes": [
@@ -245,6 +248,7 @@
   "genre": "Film de sous-marin (silence, sonar)", "genre_court": "Sous-marin",
   "situation": "Le coup de feu en cuisine, chaque ticket est un « ping »",
   "modules": ["Écran cuisine"],
+  "module": "service", "ecran": "kds",
   "hook": "Cuisine en lumière rouge, une goutte tombe, un ping de sonar : « Silence. Une commande. »",
   "selecteurs": { "epoque": "2020s", "genre": "thriller de sous-marin", "lumiere": "rouge d'alerte + pratiques, angle bas", "physique": "réaliste", "objectif": "35 mm", "emotion": "tension chuchotée", "montage": "4 plans" },
   "scenes": [
@@ -330,6 +334,7 @@
   "genre": "Boucle temporelle", "genre_court": "Boucle temporelle",
   "situation": "Chaque matin, Michael recompte le stock à la main, et le chiffre change",
   "modules": ["Stock"],
+  "module": "stockvision", "ecran": "stocks",
   "hook": "Réveil à six heures, Michael compte les bouteilles du doigt… puis le réveil sonne à nouveau.",
   "selecteurs": { "epoque": "2020s", "genre": "comédie fantastique", "lumiere": "néon de réserve, angle frontal", "physique": "réaliste", "objectif": "35 mm", "emotion": "lassitude croissante", "montage": "4 plans" },
   "scenes": [

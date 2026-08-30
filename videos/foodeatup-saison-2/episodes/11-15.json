@@ -10,6 +10,7 @@
       "Pointages",
       "Planning"
     ],
+    "module": "equipe", "ecran": "pointages",
     "hook": "Un serveur court dans la rue au ralenti extrême, voix de commentateur : « Il arrive… il arrive… »",
     "selecteurs": {
       "epoque": "2020s",
@@ -145,6 +146,7 @@
     "modules": [
       "Recrutement"
     ],
+    "module": "equipe", "ecran": null,
     "hook": "Projecteur, table de jury, Michael seul : « Suivant. »",
     "selecteurs": {
       "epoque": "2020s",
@@ -282,6 +284,7 @@
       "Campagnes",
       "Segments RFM"
     ],
+    "module": "marketing", "ecran": "campagnes-et-automatisations",
     "hook": "Une main au-dessus d'un gros bouton rouge : « Envoyer. »",
     "selecteurs": {
       "epoque": "2020s",
@@ -422,6 +425,7 @@
     "modules": [
       "Plan de salle (zones Terrasse / Salle)"
     ],
+    "module": "configuration", "ecran": "plan-de-table",
     "hook": "« Belle journée. » — une goutte sur le nez.",
     "selecteurs": {
       "epoque": "2020s",
@@ -563,6 +567,7 @@
       "Commandes par table",
       "Caisse"
     ],
+    "module": "service", "ecran": "commande",
     "hook": "Michael pose une cuillère sur la table : « Pièce numéro un. »",
     "selecteurs": {
       "epoque": "2020s",

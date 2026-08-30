@@ -4,6 +4,7 @@
   "genre": "Film noir (noir et blanc, stores vénitiens, voix off intérieure)", "genre_court": "Film noir",
   "situation": "Qui a nettoyé la hotte ?",
   "modules": ["Plan de nettoyage", "Checklist hygiène"],
+  "module": "haccp", "ecran": "plan-de-nettoyage",
   "hook": "Noir et blanc, voix off : « Il était vingt-trois heures. La hotte était sale. »",
   "selecteurs": { "epoque": "1960s + noir et blanc", "genre": "film noir", "lumiere": "stores vénitiens, angle latéral dur", "physique": "réaliste", "objectif": "40 mm", "emotion": "soupçon", "montage": "4 plans" },
   "scenes": [
@@ -60,6 +61,7 @@
   "genre": "Film de super-vilain (fauteuil tournant, rire, éclair)", "genre_court": "Super-vilain",
   "situation": "Trois demandes de congé pour le même samedi, déjà signées",
   "modules": ["Congés", "Planning"],
+  "module": "equipe", "ecran": "gestion-conges",
   "hook": "Fauteuil qui se retourne lentement, lumière par en dessous : « Samedi. »",
   "selecteurs": { "epoque": "2020s", "genre": "film de super-héros (côté vilain)", "lumiere": "contre-plongée dramatique + éclairs, angle bas", "physique": "réaliste", "objectif": "35 mm", "emotion": "mégalomanie qui s'effondre", "montage": "4 plans" },
   "scenes": [
@@ -113,6 +115,7 @@
   "genre": "Jeu télévisé (animateur, roue, applaudissements)", "genre_court": "Jeu télévisé",
   "situation": "La roue cadeaux s'emballe, trente desserts à faire",
   "modules": ["Fidélité", "Roue cadeaux"],
+  "module": "marketing", "ecran": "fidelite-et-jeux",
   "hook": "Lumières de plateau, un poivrier en guise de micro : « Faites tourner la roue ! »",
   "selecteurs": { "epoque": "2020s", "genre": "divertissement télé", "lumiere": "projecteurs colorés, angle frontal", "physique": "hyperbolique", "objectif": "24 mm", "emotion": "euphorie → gêne", "montage": "4 plans" },
   "scenes": [
@@ -167,6 +170,7 @@
   "genre": "Film de gangsters (lumière tamisée, chuchotements, respect)", "genre_court": "Gangsters",
   "situation": "L'habitué qui dit « Mets ça sur ma note » depuis six mois",
   "modules": ["Ardoises"],
+  "module": "service", "ecran": "caisse",
   "hook": "Un client en costume se penche : « Mets ça sur ma note. »",
   "selecteurs": { "epoque": "1970s", "genre": "film de gangsters", "lumiere": "tamisée ambrée, angle bas", "physique": "hyperbolique (scène 2)", "objectif": "50 mm", "emotion": "respect craintif", "montage": "4 plans" },
   "scenes": [
@@ -222,6 +226,7 @@
   "genre": "Cérémonie de remise de prix + générique de fin", "genre_court": "Remise de prix",
   "situation": "Tout le casting de la saison réuni, Michael ouvre l'enveloppe",
   "modules": ["FoodEatUp tout entier"],
+  "module": "configuration", "ecran": "tableau-de-bord",
   "hook": "Tapis rouge dans le restaurant, roulement de tambour : « Et le gagnant… »",
   "selecteurs": { "epoque": "2020s", "genre": "cérémonie / drame élégant", "lumiere": "projecteurs chauds, angle frontal", "physique": "réaliste", "objectif": "anamorphique 50 mm", "emotion": "émotion sincère et drôle", "montage": "4 plans" },
   "scenes": [

@@ -4,6 +4,7 @@
   "genre": "Western (le duel de midi)", "genre_court": "Western",
   "situation": "Deux clients ont réservé la même table",
   "modules": ["Réservations", "Plan de salle"],
+  "module": "service", "ecran": "reservation",
   "hook": "« C'est ma table. » — « Non. La mienne. »",
   "selecteurs": { "epoque": "1960s", "genre": "western", "lumiere": "soleil dur de midi, angle haut", "physique": "réaliste", "objectif": "anamorphique 40 mm", "emotion": "tension comique", "montage": "4 plans" },
   "scenes": [
@@ -86,6 +87,7 @@
   "genre": "Thriller d'interrogatoire", "genre_court": "Interrogatoire",
   "situation": "Le contrôle d'hygiène demande les relevés de température",
   "modules": ["HACCP"],
+  "module": "haccp", "ecran": "conformite",
   "hook": "Une lampe qui balance, une voix calme : « Vos températures ? »",
   "selecteurs": { "epoque": "2020s", "genre": "thriller", "lumiere": "lampe nue en plongée, angle bas", "physique": "réaliste", "objectif": "50 mm", "emotion": "angoisse contenue", "montage": "4 plans" },
   "scenes": [
@@ -171,6 +173,7 @@
   "genre": "Film d'espionnage (paranoïa)", "genre_court": "Espionnage",
   "situation": "Le critique anonyme est dans la salle… ou pas",
   "modules": ["Avis"],
+  "module": "marketing", "ecran": "avis-client",
   "hook": "Michael observe la salle à travers une passoire : « Il est là. »",
   "selecteurs": { "epoque": "2020s", "genre": "espionnage", "lumiere": "contrastée, angle latéral", "physique": "réaliste", "objectif": "85 mm téléobjectif", "emotion": "suspicion", "montage": "4 plans" },
   "scenes": [
@@ -252,6 +255,7 @@
   "genre": "Film de zombies", "genre_court": "Zombies",
   "situation": "Le rush du brunch du dimanche à 11 h",
   "modules": ["File d'attente", "Plan de salle"],
+  "module": "agent-ia", "ecran": "plan-de-salle",
   "hook": "Une tasse qui tremble, un grondement, Michael : « Ils arrivent. »",
   "selecteurs": { "epoque": "2020s", "genre": "horreur", "lumiere": "blanche crue de matin, angle frontal", "physique": "réaliste (foule au ralenti)", "objectif": "24 mm grand-angle", "emotion": "dread → panique comique", "montage": "4 plans" },
   "scenes": [
@@ -338,6 +342,7 @@
   "genre": "Film de braquage", "genre_court": "Braquage",
   "situation": "La clôture de caisse à 23 h 30, il manque cinq euros",
   "modules": ["Caisse (rapport X / clôture Z)"],
+  "module": "service", "ecran": "caisse",
   "hook": "Lampe frontale, tiroir-caisse ouvert comme un coffre : « Il manque cinq euros. »",
   "selecteurs": { "epoque": "2020s", "genre": "thriller de braquage", "lumiere": "lampe frontale + néon du frigo, angle bas", "physique": "réaliste", "objectif": "35 mm + macro", "emotion": "concentration → désespoir", "montage": "4 plans" },
   "scenes": [

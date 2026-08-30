@@ -4,6 +4,7 @@
   "genre": "Drame du génie des mathématiques (formules sur la vitre)", "genre_court": "Drame maths",
   "situation": "Douze personnes, douze additions séparées, le vin partagé en cinq",
   "modules": ["Caisse (note divisée, paiement partiel)"],
+  "module": "service", "ecran": "caisse",
   "hook": "« On paie séparément. » — « Bien sûr. »",
   "selecteurs": { "epoque": "2020s", "genre": "drame", "lumiere": "fin d'après-midi sur la vitrine, angle latéral", "physique": "réaliste", "objectif": "50 mm", "emotion": "obsession", "montage": "4 plans" },
   "scenes": [
@@ -58,6 +59,7 @@
   "genre": "Film de casino", "genre_court": "Casino",
   "situation": "Le nouveau plat à quatorze euros… qui coûte seize",
   "modules": ["Recettes (coût, marge)", "Analyse de la carte"],
+  "module": "configuration", "ecran": "mes-recettes",
   "hook": "Lampe verte de table de jeu, le chef pousse une assiette au centre : « Le nouveau plat. Quatorze euros. »",
   "selecteurs": { "epoque": "1970s", "genre": "film de casino", "lumiere": "lampe basse verte, angle plongée", "physique": "réaliste", "objectif": "85 mm", "emotion": "bluff", "montage": "4 plans" },
   "scenes": [
@@ -113,6 +115,7 @@
   "genre": "Thriller amnésique (post-its et flèches)", "genre_court": "Amnésique",
   "situation": "L'habitué dit « Comme d'habitude » et Michael ne sait plus",
   "modules": ["Clients", "Fidélité"],
+  "module": "comptabilite", "ecran": "clients",
   "hook": "« Comme d'habitude. » — « Bien sûr. » (sourire figé dès qu'il se retourne)",
   "selecteurs": { "epoque": "2020s", "genre": "thriller psychologique", "lumiere": "froide de comptoir, angle latéral", "physique": "réaliste", "objectif": "50 mm", "emotion": "panique intérieure", "montage": "4 plans" },
   "scenes": [
@@ -167,6 +170,7 @@
   "genre": "Film d'aventure (la carte qui s'envole)", "genre_court": "Aventure",
   "situation": "La commande notée sur une serviette part avec le vent",
   "modules": ["Commandes numériques", "Écran cuisine"],
+  "module": "service", "ecran": "kds",
   "hook": "« Table six. Deux pizzas. » — rafale, la serviette s'envole : « Attends ! »",
   "selecteurs": { "epoque": "2020s", "genre": "aventure", "lumiere": "jour venteux, angle bas", "physique": "réaliste", "objectif": "24 mm caméra à l'épaule", "emotion": "poursuite héroïque", "montage": "4 plans" },
   "scenes": [
@@ -220,6 +224,7 @@
   "genre": "Salle des marchés (trois téléphones, panique boursière)", "genre_court": "Salle des marchés",
   "situation": "Le téléphone qui sonne pendant le rush",
   "modules": ["Agent vocal"],
+  "module": "agent-ia", "ecran": "appels",
   "hook": "Trois téléphones, un dans chaque main, un sur l'épaule : « Allô ? Oui. Allô ? Oui. »",
   "selecteurs": { "epoque": "2020s", "genre": "thriller financier", "lumiere": "néon froid + lampes clignotantes, angle frontal", "physique": "réaliste", "objectif": "35 mm", "emotion": "frénésie", "montage": "4 plans" },
   "scenes": [

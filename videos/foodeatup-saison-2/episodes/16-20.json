@@ -11,6 +11,7 @@
       "Dépenses",
       "Synthèse financière"
     ],
+    "module": "comptabilite", "ecran": "factures",
     "hook": "Image verte tremblante, Michael se filme : « Il est trois heures. Je cherche une facture. »",
     "selecteurs": {
       "epoque": "2000s (caméscope)",
@@ -151,6 +152,7 @@
     "modules": [
       "Production"
     ],
+    "module": "stockvision", "ecran": "production",
     "hook": "Le chef, dos au mur comme un coach : « Trois cents crêpes. »",
     "selecteurs": {
       "epoque": "2020s",
@@ -262,6 +264,7 @@
     "modules": [
       "Événements privés"
     ],
+    "module": "service", "ecran": null,
     "hook": "Michael au téléphone : « On sera douze ? Parfait. »",
     "selecteurs": {
       "epoque": "2020s",
@@ -371,6 +374,7 @@
     "modules": [
       "Livraison (zones)"
     ],
+    "module": "mon-site", "ecran": "carte-vitrine",
     "hook": "Caméra embarquée sur le scooter, voix GPS : « Tournez à droite. »",
     "selecteurs": {
       "epoque": "2020s",
@@ -481,6 +485,7 @@
       "Happy hours",
       "Boissons"
     ],
+    "module": "agent-ia", "ecran": "promos-par-creneau",
     "hook": "Bar vide, Michael astique un verre : « Happy hour. » — silence, une chips tombe.",
     "selecteurs": {
       "epoque": "2020s",

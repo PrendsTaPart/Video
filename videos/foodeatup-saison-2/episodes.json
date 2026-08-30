@@ -246,6 +246,8 @@
     "Réservations",
     "Plan de salle"
    ],
+   "module": "service",
+   "ecran": "reservation",
    "hook": "« C'est ma table. » — « Non. La mienne. »",
    "selecteurs": {
     "epoque": "1960s",
@@ -382,6 +384,8 @@
    "modules": [
     "HACCP"
    ],
+   "module": "haccp",
+   "ecran": "conformite",
    "hook": "Une lampe qui balance, une voix calme : « Vos températures ? »",
    "selecteurs": {
     "epoque": "2020s",
@@ -523,6 +527,8 @@
    "modules": [
     "Avis"
    ],
+   "module": "marketing",
+   "ecran": "avis-client",
    "hook": "Michael observe la salle à travers une passoire : « Il est là. »",
    "selecteurs": {
     "epoque": "2020s",
@@ -659,6 +665,8 @@
     "File d'attente",
     "Plan de salle"
    ],
+   "module": "agent-ia",
+   "ecran": "plan-de-salle",
    "hook": "Une tasse qui tremble, un grondement, Michael : « Ils arrivent. »",
    "selecteurs": {
     "epoque": "2020s",
@@ -800,6 +808,8 @@
    "modules": [
     "Caisse (rapport X / clôture Z)"
    ],
+   "module": "service",
+   "ecran": "caisse",
    "hook": "Lampe frontale, tiroir-caisse ouvert comme un coffre : « Il manque cinq euros. »",
    "selecteurs": {
     "epoque": "2020s",
@@ -940,6 +950,8 @@
     "Commandes fournisseurs",
     "Réception"
    ],
+   "module": "stockvision",
+   "ecran": "livraisons",
    "hook": "Tous les verres tremblent, une ombre géante passe sur la façade.",
    "selecteurs": {
     "epoque": "2020s",
@@ -1081,6 +1093,8 @@
     "Recettes",
     "Allergènes"
    ],
+   "module": "configuration",
+   "ecran": "mes-ingredients",
    "hook": "« Je suis allergique aux noix. » — « Bien sûr. » (le sourire tombe dès qu'il se retourne)",
    "selecteurs": {
     "epoque": "2020s",
@@ -1216,6 +1230,8 @@
     "Site vitrine",
     "Fidélité"
    ],
+   "module": "mon-site",
+   "ecran": "carte-vitrine",
    "hook": "Voix de narrateur : « Ici, dans son habitat naturel… » — une cliente et son ring light.",
    "selecteurs": {
     "epoque": "2020s",
@@ -1349,6 +1365,8 @@
    "modules": [
     "Écran cuisine"
    ],
+   "module": "service",
+   "ecran": "kds",
    "hook": "Cuisine en lumière rouge, une goutte tombe, un ping de sonar : « Silence. Une commande. »",
    "selecteurs": {
     "epoque": "2020s",
@@ -1489,6 +1507,8 @@
    "modules": [
     "Stock"
    ],
+   "module": "stockvision",
+   "ecran": "stocks",
    "hook": "Réveil à six heures, Michael compte les bouteilles du doigt… puis le réveil sonne à nouveau.",
    "selecteurs": {
     "epoque": "2020s",
@@ -1629,6 +1649,8 @@
     "Pointages",
     "Planning"
    ],
+   "module": "equipe",
+   "ecran": "pointages",
    "hook": "Un serveur court dans la rue au ralenti extrême, voix de commentateur : « Il arrive… il arrive… »",
    "selecteurs": {
     "epoque": "2020s",
@@ -1764,6 +1786,8 @@
    "modules": [
     "Recrutement"
    ],
+   "module": "equipe",
+   "ecran": null,
    "hook": "Projecteur, table de jury, Michael seul : « Suivant. »",
    "selecteurs": {
     "epoque": "2020s",
@@ -1901,6 +1925,8 @@
     "Campagnes",
     "Segments RFM"
    ],
+   "module": "marketing",
+   "ecran": "campagnes-et-automatisations",
    "hook": "Une main au-dessus d'un gros bouton rouge : « Envoyer. »",
    "selecteurs": {
     "epoque": "2020s",
@@ -2041,6 +2067,8 @@
    "modules": [
     "Plan de salle (zones Terrasse / Salle)"
    ],
+   "module": "configuration",
+   "ecran": "plan-de-table",
    "hook": "« Belle journée. » — une goutte sur le nez.",
    "selecteurs": {
     "epoque": "2020s",
@@ -2182,6 +2210,8 @@
     "Commandes par table",
     "Caisse"
    ],
+   "module": "service",
+   "ecran": "commande",
    "hook": "Michael pose une cuillère sur la table : « Pièce numéro un. »",
    "selecteurs": {
     "epoque": "2020s",
@@ -2323,6 +2353,8 @@
     "Dépenses",
     "Synthèse financière"
    ],
+   "module": "comptabilite",
+   "ecran": "factures",
    "hook": "Image verte tremblante, Michael se filme : « Il est trois heures. Je cherche une facture. »",
    "selecteurs": {
     "epoque": "2000s (caméscope)",
@@ -2463,6 +2495,8 @@
    "modules": [
     "Production"
    ],
+   "module": "stockvision",
+   "ecran": "production",
    "hook": "Le chef, dos au mur comme un coach : « Trois cents crêpes. »",
    "selecteurs": {
     "epoque": "2020s",
@@ -2574,6 +2608,8 @@
    "modules": [
     "Événements privés"
    ],
+   "module": "service",
+   "ecran": null,
    "hook": "Michael au téléphone : « On sera douze ? Parfait. »",
    "selecteurs": {
     "epoque": "2020s",
@@ -2683,6 +2719,8 @@
    "modules": [
     "Livraison (zones)"
    ],
+   "module": "mon-site",
+   "ecran": "carte-vitrine",
    "hook": "Caméra embarquée sur le scooter, voix GPS : « Tournez à droite. »",
    "selecteurs": {
     "epoque": "2020s",
@@ -2793,6 +2831,8 @@
     "Happy hours",
     "Boissons"
    ],
+   "module": "agent-ia",
+   "ecran": "promos-par-creneau",
    "hook": "Bar vide, Michael astique un verre : « Happy hour. » — silence, une chips tombe.",
    "selecteurs": {
     "epoque": "2020s",
@@ -2902,6 +2942,8 @@
    "modules": [
     "Caisse (note divisée, paiement partiel)"
    ],
+   "module": "service",
+   "ecran": "caisse",
    "hook": "« On paie séparément. » — « Bien sûr. »",
    "selecteurs": {
     "epoque": "2020s",
@@ -3012,6 +3054,8 @@
     "Recettes (coût, marge)",
     "Analyse de la carte"
    ],
+   "module": "configuration",
+   "ecran": "mes-recettes",
    "hook": "Lampe verte de table de jeu, le chef pousse une assiette au centre : « Le nouveau plat. Quatorze euros. »",
    "selecteurs": {
     "epoque": "1970s",
@@ -3123,6 +3167,8 @@
     "Clients",
     "Fidélité"
    ],
+   "module": "comptabilite",
+   "ecran": "clients",
    "hook": "« Comme d'habitude. » — « Bien sûr. » (sourire figé dès qu'il se retourne)",
    "selecteurs": {
     "epoque": "2020s",
@@ -3233,6 +3279,8 @@
     "Commandes numériques",
     "Écran cuisine"
    ],
+   "module": "service",
+   "ecran": "kds",
    "hook": "« Table six. Deux pizzas. » — rafale, la serviette s'envole : « Attends ! »",
    "selecteurs": {
     "epoque": "2020s",
@@ -3341,6 +3389,8 @@
    "modules": [
     "Agent vocal"
    ],
+   "module": "agent-ia",
+   "ecran": "appels",
    "hook": "Trois téléphones, un dans chaque main, un sur l'épaule : « Allô ? Oui. Allô ? Oui. »",
    "selecteurs": {
     "epoque": "2020s",
@@ -3451,6 +3501,8 @@
     "Plan de nettoyage",
     "Checklist hygiène"
    ],
+   "module": "haccp",
+   "ecran": "plan-de-nettoyage",
    "hook": "Noir et blanc, voix off : « Il était vingt-trois heures. La hotte était sale. »",
    "selecteurs": {
     "epoque": "1960s + noir et blanc",
@@ -3563,6 +3615,8 @@
     "Congés",
     "Planning"
    ],
+   "module": "equipe",
+   "ecran": "gestion-conges",
    "hook": "Fauteuil qui se retourne lentement, lumière par en dessous : « Samedi. »",
    "selecteurs": {
     "epoque": "2020s",
@@ -3672,6 +3726,8 @@
     "Fidélité",
     "Roue cadeaux"
    ],
+   "module": "marketing",
+   "ecran": "fidelite-et-jeux",
    "hook": "Lumières de plateau, un poivrier en guise de micro : « Faites tourner la roue ! »",
    "selecteurs": {
     "epoque": "2020s",
@@ -3782,6 +3838,8 @@
    "modules": [
     "Ardoises"
    ],
+   "module": "service",
+   "ecran": "caisse",
    "hook": "Un client en costume se penche : « Mets ça sur ma note. »",
    "selecteurs": {
     "epoque": "1970s",
@@ -3892,6 +3950,8 @@
    "modules": [
     "FoodEatUp tout entier"
    ],
+   "module": "configuration",
+   "ecran": "tableau-de-bord",
    "hook": "Tapis rouge dans le restaurant, roulement de tambour : « Et le gagnant… »",
    "selecteurs": {
     "epoque": "2020s",
