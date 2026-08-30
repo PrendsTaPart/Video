@@ -282,3 +282,44 @@ Deux niveaux, à ne pas confondre :
   la publication passe par RapidoCMS.
 - Ne pas exposer `valide` à une API, un webhook ou une automatisation. C'est le seul verrou humain de
   la chaîne ; s'il tombe, une vidéo peut partir sans que personne l'ait vue.
+
+---
+
+## PARTIE C — Ajouter WhatsApp comme canal de diffusion
+
+Aujourd'hui le catalogue connaît six comptes : LinkedIn (page société), LinkedIn (profil du chef),
+Facebook, Instagram, TikTok, YouTube. **WhatsApp n'existe nulle part** : ni compte, ni créneau, ni
+pièce. Un agent qui veut y déposer une vidéo n'a rien à écrire.
+
+### Ce qu'il faut ajouter
+
+1. **Un compte `whatsapp`** dans la même table que les autres comptes de diffusion, avec les mêmes
+   champs (nom affiché, identifiant de compte, état de connexion). WhatsApp Business passe par des
+   *modèles de message* approuvés : prévoir un champ `template_name` sur le compte, et accepter qu'il
+   soit vide tant que le modèle n'est pas validé côté Meta.
+
+2. **Un créneau `whatsapp` par épisode** dans le calendrier de diffusion, au même format que les
+   autres (date, heure, statut `a_venir | brouillon | planifie | publie`). Proposer 12:30 par défaut,
+   entre le créneau Facebook (12:00) et celui d'Instagram (18:30).
+
+3. **La ligne `whatsapp` dans `dossier_publication_video`**, construite comme les autres :
+   - `piece_video` : `story` — WhatsApp diffuse le même 9:16 que les stories, **sans nouveau fichier
+     et sans nouvelle URL**. C'est la règle de la saison : une vidéo, un lien de stockage, et seul le
+     contenu du poste change d'un réseau à l'autre.
+   - `media_caption` : une version courte de la légende Instagram — WhatsApp se lit dans une
+     conversation, pas dans un fil. Deux lignes maximum, la punchline puis le bénéfice, **sans
+     hashtags** (ils ne servent à rien sur WhatsApp et alourdissent le message).
+   - `planifiable` : `false` tant que la pièce n'est pas `valide` et que le modèle de message n'est
+     pas approuvé, avec la raison dans `manquant` — comme pour TikTok et le profil LinkedIn
+     aujourd'hui.
+
+4. **`kit_publication`** doit rendre WhatsApp comme les autres réseaux (légende, appel à l'action,
+   URL absolue du média), pour que la publication à la main ait tout sous les yeux.
+
+### Ce qu'il ne faut pas faire
+
+- **Ne pas créer de pièce vidéo `whatsapp`.** Le fichier est le même que `story` ; ajouter une pièce
+  obligerait à re-téléverser le même MP4 et à maintenir deux URL pour une seule vidéo.
+- **Ne pas envoyer de message depuis cet écran.** Comme pour les autres réseaux, le catalogue
+  enregistre un créneau et un lien de post ; l'envoi reste manuel ou passe par RapidoCMS.
+- **Ne pas exposer `valide`**, ici comme ailleurs.

@@ -31,6 +31,7 @@ film. Les gags de la saison 1 ne sont jamais repris.
 | `episodes.json` | 🔁 Index fusionné, lisible par les outils |
 | `episodes/*.json` | ✍️ **Source de vérité** — les 30 épisodes structurés |
 | `saison.json` | ✍️ **Source de vérité** — références, bloc final, structure d'outro, modules autorisés, lots |
+| `BIBLIOTHEQUE-PLANS.md` | 🔁 Les plans Seedance déjà générés, avec leur lien direct — **à consulter avant toute nouvelle génération** |
 | `KIT-REFERENCES.md` | Le kit `@Image 1-4`, les 10 règles de prompt, le lexique voix de Michael |
 | `PREFLIGHT-COUT.md` | Coût de la saison en crédits Higgsfield — décision avant production |
 | `CHECKLIST-QUALITE.md` | Ce qui est vérifié par la machine, ce qui reste à l'œil |
@@ -124,30 +125,52 @@ node scripts/sources.mjs            # régénère les fiches de provenance
 ## Dépôt au catalogue Social FoodEatUp
 
 La série existe déjà côté catalogue : **`michael-fait-son-cinema`, saison 2, EPC01 → EPC24**, avec
-les mêmes titres et dans le même ordre que le brief. Onze masters y sont déposés, pièce `master`, état **`pret`**.
+les mêmes titres et dans le même ordre que le brief. Quatorze épisodes y sont déposés, **six pièces
+chacun** (master, story, short, paysage, facebook, tiktok), état **`pret`**.
 
 | Notre épisode | Catalogue | État |
 |---|---|---|
-| 01 Le duel | `EPC01` | pret |
-| 02 Le contrôle | `EPC02` | pret |
-| 03 Le critique | `EPC03` | pret |
-| 04 Le brunch des zombies | `EPC04` | pret |
-| 05 Le casse | `EPC05` | pret |
-| 06 Le monstre | `EPC06` | pret |
-| 07 La bombe | `EPC07` | pret |
-| 08 Le documentaire | `EPC08` | pret |
-| 09 Le sous-marin | `EPC09` | pret |
-| 10 La boucle | `EPC10` | pret |
-| 11 La VAR | `EPC11` | pret |
+| 01 Le duel | `EPC01` | pret · 6 pièces |
+| 02 Le contrôle | `EPC02` | pret · 6 pièces |
+| 03 Le critique | `EPC03` | pret · 6 pièces |
+| 04 Le brunch des zombies | `EPC04` | pret · 6 pièces |
+| 05 Le casse | `EPC05` | pret · 6 pièces |
+| 06 Le monstre | `EPC06` | pret · 6 pièces (master v2) |
+| 07 La bombe | `EPC07` | pret · 6 pièces |
+| 08 Le documentaire | `EPC08` | pret · 6 pièces |
+| 09 Le sous-marin | `EPC09` | pret · 6 pièces |
+| 10 La boucle | `EPC10` | pret · 6 pièces |
+| 11 La VAR | `EPC11` | pret · 6 pièces |
 | 12 Le casting | — | non déposé (tenue de saison rompue) |
+| 13 Le bouton rouge | `EPC13` | pret · 6 pièces |
+| 14 Le naufrage | `EPC14` | pret · 6 pièces |
+| 15 Le procès | `EPC15` | pret · 6 pièces |
+| 16 La cave | — | non déposé (ticket en gros plan) |
+
+### Une seule vidéo, un seul lien de stockage
+
+**Règle de saison : les six pièces d'un épisode pointent sur le même fichier et la même URL.**
+Instagram, Facebook, TikTok, YouTube et LinkedIn reçoivent le master 9:16 tel quel ; seul le
+**contenu du poste** change d'un réseau à l'autre, et il est déjà écrit côté catalogue
+(`dossier_publication_video` rend la légende, les hashtags et le brouillon RapidoCMS par compte).
+
+Conséquences à connaître :
+
+- On ne re-téléverse rien pour un nouveau réseau. Un épisode se dépose une fois, puis les cinq
+  autres pièces reprennent la même URL avec `publier_video`.
+- Corriger un épisode, c'est remplacer le fichier **une fois** et repointer les six pièces.
+- `paysage` (LinkedIn) porte le 9:16, pas un remontage 16:9 : LinkedIn l'affiche en vertical.
+  C'est assumé tant qu'un remontage paysage n'est pas demandé.
+- **WhatsApp n'existe pas au catalogue** : ni pièce, ni compte dans `dossier_publication_video`.
+  Rien à déposer tant qu'il n'y est pas ajouté — c'est dans `PROMPT-LOVABLE-CATALOGUE.md`.
 
 **La publication sur les réseaux n'est pas faisable par un agent, et c'est voulu** : `pret` dit que
 le fichier répond, `valide` dit qu'un humain l'a regardé en entier. `valide` ne s'écrit que dans
 `/admin/production` — aucun outil ne l'expose — et rien ne se planifie sans lui.
 
 Deux écarts à connaître : le catalogue s'arrête à **EPC24**, donc les épisodes 25 à 30 du brief n'y
-existent pas encore ; et chaque épisode y attend **huit pièces** (master, story, short, paysage,
-facebook, tiktok, carrousel, visuel) — seul le `master` est produit.
+existent pas encore ; et chaque épisode y attend **huit pièces** — les six vidéos sont déposées, les
+deux images (`carrousel`, `visuel`) restent à produire.
 
 `PROMPT-LOVABLE-CATALOGUE.md` répond aux deux : partie A pour ajouter EPC25 → EPC30 avec leurs
 données déjà écrites, partie B pour l'écran de publication qui manque au catalogue. À coller dans
