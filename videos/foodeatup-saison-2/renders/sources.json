@@ -326,7 +326,12 @@
       }
     },
     "29": {
-      "scene1": "1a21ac96-9504-46d6-8533-f30d9836789a"
+      "scene1": "1a21ac96-9504-46d6-8533-f30d9836789a",
+      "scene2": "9d1d2ab4-01fb-44fe-b267-7b1b320567cd",
+      "vo": {
+        "generation_id": "TX4phHru0XutcuEG5FzN",
+        "duree_s": 5.9
+      }
     },
     "30": {
       "scene1": "5d8105b4-4032-4f72-94e0-0a19f9fe53ea",
@@ -669,6 +674,12 @@
       "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3GXYlNxkbz83gXaGDVVrTni1dX2/hf_20260830_201440_a7946079-99e3-446c-bcd0-d95858ce1d87.mp4",
       "note": "Produit en extension de la scène 1 : le job annonce 16:9 dans ses paramètres, le fichier livré est en 720×1280 (mesuré).",
       "bibliotheque": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/michael-fait-son-cinema-EPC30-la-ceremonie-source-scene2"
+    },
+    "9d1d2ab4-01fb-44fe-b267-7b1b320567cd": {
+      "episode": 29,
+      "scene": 2,
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3GXYlNxkbz83gXaGDVVrTni1dX2/hf_20260830_210504_9d1d2ab4-01fb-44fe-b267-7b1b320567cd.mp4",
+      "note": "Généré par l'utilisateur dans l'interface Higgsfield, en reprenant la mise en scène d'origine (le rouleau sort par la porte) que la remise en scène au comptoir devait contourner. Le plan est passé : « seventies movie » au lieu de « seventies gangster movie », et « chèque de banque » au lieu de « chéquier »."
     }
   }
 }

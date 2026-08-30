@@ -6,7 +6,7 @@ existaient déjà dans la bibliothèque du compte et sont **réutilisés tels qu
 | Plan | Generation ID Higgsfield | Fichier |
 |---|---|---|
 | Scène 1 — « Sur ma note » | `1a21ac96-9504-46d6-8533-f30d9836789a` | `source/ep29-scene1.mp4` |
-| Scène 2 — « Tu prends les chèques ? » | `undefined` | `source/ep29-scene2.mp4` |
+| Scène 2 — « Tu prends les chèques ? » | `9d1d2ab4-01fb-44fe-b267-7b1b320567cd` | `source/ep29-scene2.mp4` |
 
 Sources d'origine : 720×1280, 24 fps, ~10 s, audio AAC 32 kHz (dialogue français et ambiance
 générés dans la même passe). Les prompts stockés côté Higgsfield correspondent à la fiche
@@ -31,7 +31,8 @@ générés dans la même passe). Les prompts stockés côté Higgsfield correspo
 | Voix | **Adam - Instructor** `TGAegA0zNRi8I6nUdq3i`, modèle `eleven_multilingual_v2` |
 | Transition (commune aux 30 épisodes) | « Cette scène aurait pu être évitée ? » — prise `sZWCVMCGg2WgpYJb4j3c` (2,04 s), calée à 2,1 s |
 | Ligne de l'épisode | « L'ardoise est numérique : elle ne s'oublie pas, elle ne s'envole pas. Solde, historique, règlement, dans FoodEatUp. » |
-| Prise retenue | *pas encore enregistrée* |
+| Prise retenue | `TX4phHru0XutcuEG5FzN` (5,9 s) |
+| Calage | démarre à **4,60 s**, se termine à **10,50 s** (fenêtre : avant 11,0 s) ✅ |
 
 Les prises ElevenLabs sortent très bas : chacune est normalisée à −16 LUFS / −1,5 dBTP.
 Le départ de la voix est calculé pour qu'elle finisse avant 11,0 s : 4,60 s par défaut, avancé quand

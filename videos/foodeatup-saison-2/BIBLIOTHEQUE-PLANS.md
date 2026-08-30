@@ -1,6 +1,6 @@
 # 🎞️ Bibliothèque de plans Seedance — Saison 2
 
-60 plans générés et déjà montés. **Avant de faire générer un nouveau plan, cherchez ici.**
+61 plans générés et déjà montés. **Avant de faire générer un nouveau plan, cherchez ici.**
 C'est la règle du dépôt : on réutilise un plan existant, ou on donne le prompt à l'utilisateur
 pour qu'il le génère lui-même — on n'appelle jamais Higgsfield depuis une session.
 
@@ -69,6 +69,7 @@ Les mêmes fichiers sont dans le dépôt, sous `renders/ep{NN}/source/`.
 | 28 | Le jeu télé | 1 | Faites tourner la roue | Jeu télévisé | @Image 3 (bar) | [voir](https://d8j0ntlcm91z4.cloudfront.net/user_3GXYlNxkbz83gXaGDVVrTni1dX2/hf_20260830_181029_2f3da8e7-86fd-4022-8179-c069f51f70c5.mp4) |
 | 28 | Le jeu télé | 2 | Trente | Jeu télévisé | @Image 4 | [voir](https://d8j0ntlcm91z4.cloudfront.net/user_3GXYlNxkbz83gXaGDVVrTni1dX2/hf_20260830_183646_3dea2561-0353-4abb-960e-09bb7a1ecf2c.mp4) |
 | 29 | Les gangsters | 1 | Sur ma note | Gangsters | @Image 3 (counter) | [voir](https://d8j0ntlcm91z4.cloudfront.net/user_3GXYlNxkbz83gXaGDVVrTni1dX2/hf_20260830_190127_1a21ac96-9504-46d6-8533-f30d9836789a.mp4) |
+| 29 | Les gangsters | 2 | Tu prends les chèques ? | Gangsters | @Image 3 (counter), one single place for the whole shot | [voir](https://d8j0ntlcm91z4.cloudfront.net/user_3GXYlNxkbz83gXaGDVVrTni1dX2/hf_20260830_210504_9d1d2ab4-01fb-44fe-b267-7b1b320567cd.mp4) |
 | 30 | La cérémonie | 1 | Et le gagnant | Remise de prix | @Image 3 | [voir](https://d8j0ntlcm91z4.cloudfront.net/user_3GXYlNxkbz83gXaGDVVrTni1dX2/hf_20260830_195140_5d8105b4-4032-4f72-94e0-0a19f9fe53ea.mp4) |
 | 30 | La cérémonie | 2 | Coupez | Remise de prix | @Image 3 | [voir](https://d8j0ntlcm91z4.cloudfront.net/user_3GXYlNxkbz83gXaGDVVrTni1dX2/hf_20260830_201440_a7946079-99e3-446c-bcd0-d95858ce1d87.mp4) |
 
@@ -599,6 +600,15 @@ Les mêmes fichiers sont dans le dépôt, sous `renders/ep{NN}/source/`.
 - **Lieu** : @Image 3 (counter)
 - **Ce qui s'y passe** : Le mur de petits papiers derrière le comptoir
 - **Dialogue** : Regular: « Mets ça sur ma note. » Michael: « Bien sûr. » Regular (repeated in the montage): « Sur ma note. » Michael (whisper): « Il paie quand ? »
+
+### ep29 · scène 2 — « Tu prends les chèques ? »
+
+- **Identifiant Higgsfield** : `9d1d2ab4-01fb-44fe-b267-7b1b320567cd`
+- **Lien direct** : https://d8j0ntlcm91z4.cloudfront.net/user_3GXYlNxkbz83gXaGDVVrTni1dX2/hf_20260830_210504_9d1d2ab4-01fb-44fe-b267-7b1b320567cd.mp4
+- **Genre** : Film de gangsters (lumière tamisée, chuchotements, respect)
+- **Lieu** : @Image 3 (counter), one single place for the whole shot
+- **Ce qui s'y passe** : Le rouleau de caisse déborde du comptoir et s'entasse par terre
+- **Dialogue** : Regular: « Je dois combien ? » Regular: « Ah. » Michael: « Ah. » Regular: « Tu prends les chèques ? »
 
 ### ep30 · scène 1 — « Et le gagnant »
 
