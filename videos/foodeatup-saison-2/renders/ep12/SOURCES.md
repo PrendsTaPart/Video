@@ -6,9 +6,9 @@ existaient déjà dans la bibliothèque du compte et sont **réutilisés tels qu
 | Plan | Generation ID Higgsfield | Fichier |
 |---|---|---|
 | Scène 1 — « Suivant » | `2f1f2533-00ce-4bc1-aa7f-bb3e2a50d22e` | `source/ep12-scene1.mp4` |
-| Scène 2 — « Y'a personne » | `d6533af5-f81b-4872-850c-2670deb5cc80` | `source/ep12-scene2.mp4` |
+| Scène 2 — « Y'a personne » | `cb1b8361-869c-44fd-a315-ab5fc087e032` | `source/ep12-scene2.mp4` |
 
-> ⚠️ Tenue de saison rompue entre les deux scènes : Michael porte la toque, la veste blanche et le tablier FoodEatUp en scène 1, mais une chemise puis une veste sombres, sans toque, en scène 2. La checklist de saison l'interdit — la scène 2 est à regénérer avant validation. L'épisode n'est pas déposé au catalogue pour cette raison.
+> Scène 2 regénérée : la tenue de saison est rétablie — toque, veste blanche et tablier FoodEatUp sur les deux scènes. Le plan précédent (d6533af5-f81b-4872-850c-2670deb5cc80) montrait Michael en chemise puis en veste sombres, sans toque ; il reste dans la bibliothèque Higgsfield mais n'est plus monté.
 
 Sources d'origine : 720×1280, 24 fps, ~10 s, audio AAC 32 kHz (dialogue français et ambiance
 générés dans la même passe). Les prompts stockés côté Higgsfield correspondent à la fiche

@@ -1,6 +1,6 @@
 # 🎞️ Bibliothèque de plans Seedance — Saison 2
 
-61 plans générés et déjà montés. **Avant de faire générer un nouveau plan, cherchez ici.**
+62 plans générés et déjà montés. **Avant de faire générer un nouveau plan, cherchez ici.**
 C'est la règle du dépôt : on réutilise un plan existant, ou on donne le prompt à l'utilisateur
 pour qu'il le génère lui-même — on n'appelle jamais Higgsfield depuis une session.
 
@@ -35,6 +35,7 @@ Les mêmes fichiers sont dans le dépôt, sous `renders/ep{NN}/source/`.
 | 11 | La VAR | 2 | C'est bon | Sport | @Image 3 | [voir](https://d8j0ntlcm91z4.cloudfront.net/user_3GXYlNxkbz83gXaGDVVrTni1dX2/hf_20260829_174015_c17009a7-b720-41af-85a7-7400af499f0b.mp4) |
 | 12 | Le casting | 1 | Suivant | Télé-crochet | @Image 3 | [voir](https://d8j0ntlcm91z4.cloudfront.net/user_3GXYlNxkbz83gXaGDVVrTni1dX2/hf_20260829_183421_2f1f2533-00ce-4bc1-aa7f-bb3e2a50d22e.mp4) |
 | 12 | Le casting | 2 | Y'a personne | Télé-crochet | @Image 3 | [voir](https://d8j0ntlcm91z4.cloudfront.net/user_3GXYlNxkbz83gXaGDVVrTni1dX2/hf_20260829_190616_d6533af5-f81b-4872-850c-2670deb5cc80.mp4) |
+| 12 | Le casting | 2 | Y'a personne | Télé-crochet | @Image 3 | [voir](https://d8j0ntlcm91z4.cloudfront.net/user_3GXYlNxkbz83gXaGDVVrTni1dX2/hf_20260830_214452_cb1b8361-869c-44fd-a315-ab5fc087e032.mp4) |
 | 13 | Le bouton rouge | 1 | Envoyer | Salle de contrôle | @Image 3 (back office corner) | [voir](https://d8j0ntlcm91z4.cloudfront.net/user_3GXYlNxkbz83gXaGDVVrTni1dX2/hf_20260829_200514_c1e87345-db97-4473-b1ef-2d5b5c43fd96.mp4) |
 | 13 | Le bouton rouge | 2 | À tout le monde | Salle de contrôle | @Image 3 (entrance) | [voir](https://d8j0ntlcm91z4.cloudfront.net/user_3GXYlNxkbz83gXaGDVVrTni1dX2/hf_20260829_203738_b3d75b39-3832-41c7-adf8-5a1287e6c41d.mp4) |
 | 14 | Le naufrage | 1 | Tout le monde à l'intérieur | Catastrophe maritime | @Image 3 (terrace side) | [voir](https://d8j0ntlcm91z4.cloudfront.net/user_3GXYlNxkbz83gXaGDVVrTni1dX2/hf_20260829_210224_810e5644-39f1-482d-82c8-bd1cb77cecca.mp4) |
@@ -281,7 +282,6 @@ Les mêmes fichiers sont dans le dépôt, sous `renders/ep{NN}/source/`.
 - **Lieu** : @Image 3
 - **Ce qui s'y passe** : Trois candidats, trois catastrophes
 - **Dialogue** : Michael: « Suivant. » Candidate two: « Je travaille pas le week-end. » Michael: « Suivant. » Michael (to camera): « Suivant. »
-- **Réserve sur l'épisode** : Tenue de saison rompue entre les deux scènes : Michael porte la toque, la veste blanche et le tablier FoodEatUp en scène 1, mais une chemise puis une veste sombres, sans toque, en scène 2. La checklist de saison l'interdit — la scène 2 est à regénérer avant validation. L'épisode n'est pas déposé au catalogue pour cette raison.
 
 ### ep12 · scène 2 — « Y'a personne »
 
@@ -291,7 +291,15 @@ Les mêmes fichiers sont dans le dépôt, sous `renders/ep{NN}/source/`.
 - **Lieu** : @Image 3
 - **Ce qui s'y passe** : Une file jusqu'au bout de la rue, les CV s'envolent
 - **Dialogue** : Michael: « Y'a personne. » (looks at the line) « Y'a trop de monde. »
-- **Réserve sur l'épisode** : Tenue de saison rompue entre les deux scènes : Michael porte la toque, la veste blanche et le tablier FoodEatUp en scène 1, mais une chemise puis une veste sombres, sans toque, en scène 2. La checklist de saison l'interdit — la scène 2 est à regénérer avant validation. L'épisode n'est pas déposé au catalogue pour cette raison.
+
+### ep12 · scène 2 — « Y'a personne »
+
+- **Identifiant Higgsfield** : `cb1b8361-869c-44fd-a315-ab5fc087e032`
+- **Lien direct** : https://d8j0ntlcm91z4.cloudfront.net/user_3GXYlNxkbz83gXaGDVVrTni1dX2/hf_20260830_214452_cb1b8361-869c-44fd-a315-ab5fc087e032.mp4
+- **Genre** : Émission de casting
+- **Lieu** : @Image 3
+- **Ce qui s'y passe** : Une file jusqu'au bout de la rue, les CV s'envolent
+- **Dialogue** : Michael: « Y'a personne. » (looks at the line) « Y'a trop de monde. »
 
 ### ep13 · scène 1 — « Envoyer »
 
@@ -355,7 +363,6 @@ Les mêmes fichiers sont dans le dépôt, sous `renders/ep{NN}/source/`.
 - **Lieu** : a cellar under the restaurant (cardboard boxes, wine racks)
 - **Ce qui s'y passe** : La caméra descend à la cave, un carton bouge
 - **Dialogue** : Michael (whisper): « Il est trois heures. Je cherche une facture. » Michael: « C'est pas celle-là. »
-- **Réserve sur l'épisode** : La scène 2 tient un ticket couvert de texte généré en gros plan de 14 à 18 s. La checklist de saison interdit le texte généré par Seedance et nomme le ticket. Les glyphes ne forment pas de mots lisibles, mais le ticket est le sujet du plan : l’épisode n’est pas déposé au catalogue tant que ce point n’est pas tranché. La tenue de saison est respectée sur les deux scènes.
 
 ### ep16 · scène 2 — « Impayée »
 
@@ -365,7 +372,6 @@ Les mêmes fichiers sont dans le dépôt, sous `renders/ep{NN}/source/`.
 - **Lieu** : same cellar
 - **Ce qui s'y passe** : Sous une couverture de papiers, il trouve enfin la facture
 - **Dialogue** : Michael: « Poisson… non. Pain… non. » Michael (triumphant, then flat): « …impayée. » Michael (in the dark): « Non. »
-- **Réserve sur l'épisode** : La scène 2 tient un ticket couvert de texte généré en gros plan de 14 à 18 s. La checklist de saison interdit le texte généré par Seedance et nomme le ticket. Les glyphes ne forment pas de mots lisibles, mais le ticket est le sujet du plan : l’épisode n’est pas déposé au catalogue tant que ce point n’est pas tranché. La tenue de saison est respectée sur les deux scènes.
 
 ### ep17 · scène 1 — « Encore »
 

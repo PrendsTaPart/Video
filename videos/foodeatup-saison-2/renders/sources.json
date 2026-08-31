@@ -35,12 +35,13 @@
     },
     "12": {
       "scene1": "2f1f2533-00ce-4bc1-aa7f-bb3e2a50d22e",
-      "scene2": "d6533af5-f81b-4872-850c-2670deb5cc80",
+      "scene2": "cb1b8361-869c-44fd-a315-ab5fc087e032",
       "vo": {
         "generation_id": "kzEB3wToSJBmojcYmDGC",
         "duree_s": 5.8
       },
-      "note": "⚠️ Tenue de saison rompue entre les deux scènes : Michael porte la toque, la veste blanche et le tablier FoodEatUp en scène 1, mais une chemise puis une veste sombres, sans toque, en scène 2. La checklist de saison l'interdit — la scène 2 est à regénérer avant validation. L'épisode n'est pas déposé au catalogue pour cette raison."
+      "note": "Scène 2 regénérée : la tenue de saison est rétablie — toque, veste blanche et tablier FoodEatUp sur les deux scènes. Le plan précédent (d6533af5-f81b-4872-850c-2670deb5cc80) montrait Michael en chemise puis en veste sombres, sans toque ; il reste dans la bibliothèque Higgsfield mais n'est plus monté.",
+      "scene2_ecartee": "d6533af5-f81b-4872-850c-2670deb5cc80"
     },
     "13": {
       "scene1": "c1e87345-db97-4473-b1ef-2d5b5c43fd96",
@@ -78,7 +79,7 @@
         "generation_id": "39H9p4GwLO4iPUGKibSj",
         "duree_s": 6.73
       },
-      "note": "⚠️ La scène 2 tient un ticket couvert de texte généré en gros plan de 14 à 18 s. La checklist de saison interdit le texte généré par Seedance et nomme le ticket. Les glyphes ne forment pas de mots lisibles, mais le ticket est le sujet du plan : l’épisode n’est pas déposé au catalogue tant que ce point n’est pas tranché. La tenue de saison est respectée sur les deux scènes."
+      "note": "Le ticket couvert de glyphes en gros plan de 14 à 18 s a été soumis à l'auteur : il valide le plan tel quel. Les glyphes ne forment aucun mot lisible et la tenue de saison est respectée sur les deux scènes. L'épisode est déposé au catalogue."
     },
     "17": {
       "scene1": "42de5879-32a2-4091-94bd-f736b5e8309e",
@@ -392,7 +393,8 @@
     "d6533af5-f81b-4872-850c-2670deb5cc80": {
       "episode": 12,
       "scene": 2,
-      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3GXYlNxkbz83gXaGDVVrTni1dX2/hf_20260829_190616_d6533af5-f81b-4872-850c-2670deb5cc80.mp4"
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3GXYlNxkbz83gXaGDVVrTni1dX2/hf_20260829_190616_d6533af5-f81b-4872-850c-2670deb5cc80.mp4",
+      "note": "Écarté du montage : Michael y perd la tenue de saison (chemise puis veste sombres, sans toque). Conservé pour mémoire ; la scène 2 montée est cb1b8361."
     },
     "c1e87345-db97-4473-b1ef-2d5b5c43fd96": {
       "episode": 13,
@@ -680,6 +682,12 @@
       "scene": 2,
       "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3GXYlNxkbz83gXaGDVVrTni1dX2/hf_20260830_210504_9d1d2ab4-01fb-44fe-b267-7b1b320567cd.mp4",
       "note": "Généré par l'utilisateur dans l'interface Higgsfield, en reprenant la mise en scène d'origine (le rouleau sort par la porte) que la remise en scène au comptoir devait contourner. Le plan est passé : « seventies movie » au lieu de « seventies gangster movie », et « chèque de banque » au lieu de « chéquier »."
+    },
+    "cb1b8361-869c-44fd-a315-ab5fc087e032": {
+      "episode": 12,
+      "scene": 2,
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3GXYlNxkbz83gXaGDVVrTni1dX2/hf_20260830_214452_cb1b8361-869c-44fd-a315-ab5fc087e032.mp4",
+      "note": "Produit en extension de la scène 1 : le job annonce 16:9 dans ses paramètres, le fichier livré est en 720×1280 (mesuré). Remplace le plan écarté pour rupture de tenue."
     }
   }
 }
