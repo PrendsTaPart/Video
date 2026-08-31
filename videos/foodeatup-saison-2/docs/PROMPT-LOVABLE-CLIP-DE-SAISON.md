@@ -232,7 +232,7 @@ la page de la saison, ni sur sa carte.
 | `bpm_demande` | 92 |
 | `bpm_mesure` | 92.29 |
 | `tonalite` | *non relevée* |
-| `duree_secondes` | 183.58 |
+| `duree_secondes` | 183.57 |
 | `outil` | Suno |
 | `plans_sources` | 60 |
 | `coupes` | 131 |
