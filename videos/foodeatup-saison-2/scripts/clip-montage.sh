@@ -35,7 +35,14 @@ for i in $(seq 0 $((N - 1))); do
     # seconde réelles). `minterpolate` en mode « blend » fabrique les images
     # manquantes en fondu : c'est plus doux qu'un figé, et sur un plan qui dure
     # vingt secondes sans coupe, c'est exactement le rendu qu'on veut.
-    VF="setpts=$RAL*PTS,minterpolate=fps=30:mi_mode=blend,scale=1080:1920:flags=lanczos,format=yuv420p"
+    # 2 % de rab sur le ralenti : `minterpolate` rend systématiquement quelques
+    # images de moins que le calcul théorique (332 demandées, 329 rendues sur
+    # l'outro), et `-frames:v` ne peut pas inventer ce qui manque. On produit
+    # donc un peu trop et on coupe. Deux pour cent d'écart de vitesse sur un
+    # plan de vingt secondes au ralenti ne se voient pas ; trois images
+    # manquantes en fin de clip, si.
+    RAB=$(awk -v r="$RAL" 'BEGIN{printf "%.5f", r*1.02}')
+    VF="setpts=$RAB*PTS,minterpolate=fps=30:mi_mode=blend,scale=1080:1920:flags=lanczos,format=yuv420p"
   fi
   RALENTI_LU="$RAL"
   # `-ss` et `-t` sont placés AVANT `-i` : ils limitent la lecture de la source.
@@ -73,30 +80,33 @@ for i in $(seq 0 $((N - 1))); do
   [ $((i % 20)) -eq 0 ] && echo "   $i/$N  ($SEC)"
 done
 
-echo "→ collage"
-# Matroska sans piste son d'un bout à l'autre : la seule piste audio du clip est
-# la chanson, posée en une fois. Aucun arrondi de trame sonore ne peut donc
-# décaler l'image, contrairement au collage de segments sonorisés.
-ffmpeg -y -nostdin -loglevel error -f concat -safe 0 -i "$W/liste.txt" -c copy "$W/image.mkv"
-EUES=$(ffmpeg -nostdin -hide_banner -i "$W/image.mkv" -map 0:v -f null - 2>&1 \
-       | grep -oE "frame= *[0-9]+" | tail -1 | grep -oE "[0-9]+")
-echo "   $EUES images collées pour $IMAGES attendues"
-
-echo "→ la chanson, l'ouverture et le fondu final"
-# `fps=30` puis `-frames:v` : le démuxeur concat rend la bonne suite d'images
-# mais pas la bonne horloge — Matroska annonce chaque segment une image plus
-# long qu'il n'est, et les cent trente et une avances se cumulaient en 2,95 s de
-# décalage. On recale donc la cadence sur une horloge stricte, ce qui absorbe
-# les trous aux jonctions (une image doublée sur une coupe ne se voit pas), et
-# on fixe le compte total pour que la dernière image du clip soit la dernière
-# image de la chanson.
+echo "→ collage et pose de la chanson"
+# Le FILTRE concat, et non le démuxeur. Le démuxeur croit la durée annoncée par
+# chaque conteneur : Matroska déclare chaque segment une image plus long qu'il
+# n'est, et le suivant démarrait donc une image trop tard — cent trente et une
+# fois, soit près de trois secondes. Mesuré à l'image : le pont commençait vers
+# 98,5 s au lieu de 96,39.
+#
+# Le filtre, lui, met bout à bout des suites d'images et refabrique l'horloge.
+# Aucune durée de conteneur n'entre dans le calcul, donc aucune dérive possible.
+ENTREES=""; CHAINE=""
+for i in $(seq 0 $((N - 1))); do
+  ENTREES="$ENTREES -i $W/coupes/c$(printf '%04d' "$i").mkv"
+  CHAINE="$CHAINE[$i:v]"
+done
 SORTIE_FONDU=$(awk -v d="$DUREE" 'BEGIN{printf "%.3f", d-2.5}')
-ffmpeg -y -nostdin -loglevel error -i "$W/image.mkv" -i "$CHANSON" \
-  -vf "fps=30,fade=t=in:st=0:d=1.2,fade=t=out:st=$SORTIE_FONDU:d=2.5" \
+# shellcheck disable=SC2086
+ffmpeg -y -nostdin -loglevel error $ENTREES -i "$CHANSON" \
+  -filter_complex "${CHAINE}concat=n=$N:v=1:a=0,\
+fade=t=in:st=0:d=1.2,fade=t=out:st=$SORTIE_FONDU:d=2.5[v]" \
   -af "afade=t=out:st=$SORTIE_FONDU:d=2.5,aresample=48000,aformat=channel_layouts=stereo" \
-  -map 0:v -map 1:a -frames:v "$IMAGES" \
+  -map "[v]" -map "$N:a" -frames:v "$IMAGES" \
   -c:v libx264 -preset slow -crf 18 -c:a aac -b:a 192k \
   -movflags +faststart "$W/monte.mp4"
+EUES=$(ffmpeg -nostdin -hide_banner -i "$W/monte.mp4" -map 0:v -f null - 2>&1 \
+       | grep -oE "frame= *[0-9]+" | tail -1 | grep -oE "[0-9]+")
+echo "   $EUES images pour $IMAGES attendues"
+[ "$EUES" = "$IMAGES" ] || { echo "   ✗ compte d'images faux, on s'arrête" >&2; exit 1; }
 
 echo "→ niveau"
 # La chanson sort de Suno déjà masterisée ; on ne la renormalise pas, on la
