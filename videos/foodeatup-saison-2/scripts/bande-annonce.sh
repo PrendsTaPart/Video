@@ -45,14 +45,20 @@ for i in $(seq -w 1 30); do
   ffmpeg -y -nostdin -loglevel error -ss "$T" -i "$SRC" -t "$EXT" \
     -vf "scale=1080:1920:flags=lanczos,fps=30,format=yuv420p" \
     -af "aresample=48000,aformat=channel_layouts=stereo,afade=t=in:st=0:d=0.025,afade=t=out:st=$FADEOUT:d=0.025" \
-    -c:v libx264 -preset slow -crf 18 -c:a aac -b:a 192k -video_track_timescale 15360 \
-    "$X/e$i.mp4"
-  printf "file '%s'\n" "extraits/e$i.mp4" >> "$W/liste.txt"
+    -c:v libx264 -preset slow -crf 18 -c:a pcm_s16le \
+    "$X/e$i.mkv"
+  printf "file '%s'\n" "extraits/e$i.mkv" >> "$W/liste.txt"
 done
 
 echo "→ la bobine des extraits"
-ffmpeg -y -nostdin -loglevel error -f concat -safe 0 -i "$W/liste.txt" -c copy "$W/bobine.mp4"
-BOB=$({ ffmpeg -hide_banner -nostdin -i "$W/bobine.mp4" 2>&1 || true; } \
+# Matroska et son PCM d'un bout à l'autre de la chaîne, et non MP4/AAC.
+# Une trame AAC dure 21 ms et ne se coupe pas : chaque extrait de 0,70 s
+# sortait avec 0,704 s de son. Recollés bout à bout par le démuxeur concat,
+# les trente arrondis s'additionnaient — 21,76 s de son pour 21,02 s d'image,
+# soit 740 ms de décalage sur les derniers plans. Le PCM n'a pas de trame :
+# la copie est exacte, et l'image n'est encodée qu'une seule fois.
+ffmpeg -y -nostdin -loglevel error -f concat -safe 0 -i "$W/liste.txt" -c copy "$W/bobine.mkv"
+BOB=$({ ffmpeg -hide_banner -nostdin -i "$W/bobine.mkv" 2>&1 || true; } \
   | grep -oE "Duration: [0-9:.]+" | head -1 | cut -d' ' -f2 | awk -F: '{printf "%.3f", $1*3600+$2*60+$3}')
 echo "   $BOB s"
 
@@ -60,16 +66,16 @@ echo "→ les cartons, à l'image et au son"
 # Les cartons sortent muets de Playwright : on leur colle une piste silencieuse
 # pour que la concaténation garde un flux audio continu.
 carton() { ffmpeg -y -nostdin -loglevel error -i "$W/carton-$1.mp4" \
-  -f lavfi -i "anullsrc=r=48000:cl=stereo" -c:v copy -c:a aac -b:a 192k -shortest "$W/carton-$1-son.mp4"; }
+  -f lavfi -i "anullsrc=r=48000:cl=stereo" -c:v copy -c:a pcm_s16le -shortest "$W/carton-$1-son.mkv"; }
 carton ouverture; carton fin
 
-printf "file '%s'\n" carton-ouverture-son.mp4 bobine.mp4 carton-fin-son.mp4 > "$W/final.txt"
-ffmpeg -y -nostdin -loglevel error -f concat -safe 0 -i "$W/final.txt" -c copy "$W/brut.mp4"
+printf "file '%s'\n" carton-ouverture-son.mkv bobine.mkv carton-fin-son.mkv > "$W/final.txt"
+ffmpeg -y -nostdin -loglevel error -f concat -safe 0 -i "$W/final.txt" -c copy "$W/brut.mkv"
 
 echo "→ la voix off, posée à cheval sur les deux derniers extraits et le carton de fin"
 VODUR=$({ ffmpeg -hide_banner -nostdin -i "$W/vo/vo.wav" 2>&1 || true; } \
   | grep -oE "Duration: [0-9:.]+" | head -1 | cut -d' ' -f2 | awk -F: '{printf "%.3f", $1*3600+$2*60+$3}')
-TOT=$({ ffmpeg -hide_banner -nostdin -i "$W/brut.mp4" 2>&1 || true; } \
+TOT=$({ ffmpeg -hide_banner -nostdin -i "$W/brut.mkv" 2>&1 || true; } \
   | grep -oE "Duration: [0-9:.]+" | head -1 | cut -d' ' -f2 | awk -F: '{printf "%.3f", $1*3600+$2*60+$3}')
 # La voix finit une demi-seconde avant la fin, le temps que le logo respire.
 DEBUT=$(node -p "Math.round((($TOT) - 0.5 - ($VODUR)) * 1000)")
@@ -78,7 +84,7 @@ echo "   voix ${VODUR}s dans ${TOT}s → démarre à ${DEBUT}ms"
 # Sous la voix, le collage des extraits descend de 11 dB : on doit entendre la
 # phrase, pas la deviner. Le whoosh marque l'entrée du carton de fin.
 FIN_MS=$(node -p "Math.round((2.0 + $BOB) * 1000)")
-ffmpeg -y -nostdin -loglevel error -i "$W/brut.mp4" -i "$W/vo/vo.wav" -i "$SFX/whoosh.wav" \
+ffmpeg -y -nostdin -loglevel error -i "$W/brut.mkv" -i "$W/vo/vo.wav" -i "$SFX/whoosh.wav" \
   -filter_complex "\
 [0:a]volume=enable='gte(t,${DEBUT}/1000)':volume=0.28,aresample=48000[bed];\
 [1:a]adelay=${DEBUT}|${DEBUT},volume=1.05[vo];\
