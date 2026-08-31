@@ -17,6 +17,7 @@ mkdir -p "$W/coupes" "$D"
 CHANSON="$ROOT/$(node -p "require('$ROOT/clip-musical/conduite.json').chanson")"
 DUREE=$(node -p "require('$ROOT/clip-musical/conduite.json').duree_s")
 N=$(node -p "require('$ROOT/clip-musical/conduite.json').coupes")
+IMAGES=$(node -p "require('$ROOT/clip-musical/conduite.json').images")
 
 echo "→ $N coupes"
 : > "$W/liste.txt"
@@ -55,28 +56,47 @@ for i in $(seq 0 $((N - 1))); do
   else
     LIRE="$DUR"   # une coupe ralentie lit exactement sa fenêtre, sinon la vitesse est fausse
   fi
-  ffmpeg -y -nostdin -loglevel error -ss "$DEB" -t "$LIRE" -i "$ROOT/$SRC" \
-    -an -vf "$VF" -frames:v "$IMG" -c:v libx264 -preset slow -crf 18 "$OUT"
+  # Une coupe déjà rendue au bon compte d'images est gardée : reprendre un
+  # montage ne doit pas coûter dix minutes d'encodage. Le compte est vérifié,
+  # pas supposé — un fichier au mauvais compte est refait.
+  DEJA=0
+  if [ -f "$OUT" ]; then
+    EU=$(ffmpeg -nostdin -hide_banner -i "$OUT" -map 0:v -f null - 2>&1 \
+         | grep -oE "frame= *[0-9]+" | tail -1 | grep -oE "[0-9]+")
+    [ "${EU:-0}" = "$IMG" ] && DEJA=1
+  fi
+  if [ "$DEJA" = 0 ]; then
+    ffmpeg -y -nostdin -loglevel error -ss "$DEB" -t "$LIRE" -i "$ROOT/$SRC" \
+      -an -vf "$VF" -frames:v "$IMG" -c:v libx264 -preset slow -crf 18 "$OUT"
+  fi
   printf "file 'coupes/c%04d.mkv'\n" "$i" >> "$W/liste.txt"
   [ $((i % 20)) -eq 0 ] && echo "   $i/$N  ($SEC)"
 done
 
 echo "→ collage"
 # Matroska sans piste son d'un bout à l'autre : la seule piste audio du clip est
-# la chanson, posée en une fois à la fin. Aucun arrondi de trame ne peut donc
+# la chanson, posée en une fois. Aucun arrondi de trame sonore ne peut donc
 # décaler l'image, contrairement au collage de segments sonorisés.
 ffmpeg -y -nostdin -loglevel error -f concat -safe 0 -i "$W/liste.txt" -c copy "$W/image.mkv"
-IMAGE_TOTALE=$({ ffmpeg -hide_banner -nostdin -i "$W/image.mkv" 2>&1 || true; } \
-  | grep -oE "Duration: [0-9:.]+" | head -1 | cut -d' ' -f2 | awk -F: '{printf "%.3f", $1*3600+$2*60+$3}')
-echo "   image $IMAGE_TOTALE s / chanson $DUREE s"
+EUES=$(ffmpeg -nostdin -hide_banner -i "$W/image.mkv" -map 0:v -f null - 2>&1 \
+       | grep -oE "frame= *[0-9]+" | tail -1 | grep -oE "[0-9]+")
+echo "   $EUES images collées pour $IMAGES attendues"
 
 echo "→ la chanson, l'ouverture et le fondu final"
+# `fps=30` puis `-frames:v` : le démuxeur concat rend la bonne suite d'images
+# mais pas la bonne horloge — Matroska annonce chaque segment une image plus
+# long qu'il n'est, et les cent trente et une avances se cumulaient en 2,95 s de
+# décalage. On recale donc la cadence sur une horloge stricte, ce qui absorbe
+# les trous aux jonctions (une image doublée sur une coupe ne se voit pas), et
+# on fixe le compte total pour que la dernière image du clip soit la dernière
+# image de la chanson.
 SORTIE_FONDU=$(awk -v d="$DUREE" 'BEGIN{printf "%.3f", d-2.5}')
 ffmpeg -y -nostdin -loglevel error -i "$W/image.mkv" -i "$CHANSON" \
-  -vf "fade=t=in:st=0:d=1.2,fade=t=out:st=$SORTIE_FONDU:d=2.5" \
+  -vf "fps=30,fade=t=in:st=0:d=1.2,fade=t=out:st=$SORTIE_FONDU:d=2.5" \
   -af "afade=t=out:st=$SORTIE_FONDU:d=2.5,aresample=48000,aformat=channel_layouts=stereo" \
-  -map 0:v -map 1:a -c:v libx264 -preset slow -crf 18 -c:a aac -b:a 192k \
-  -shortest -movflags +faststart "$W/monte.mp4"
+  -map 0:v -map 1:a -frames:v "$IMAGES" \
+  -c:v libx264 -preset slow -crf 18 -c:a aac -b:a 192k \
+  -movflags +faststart "$W/monte.mp4"
 
 echo "→ niveau"
 # La chanson sort de Suno déjà masterisée ; on ne la renormalise pas, on la
