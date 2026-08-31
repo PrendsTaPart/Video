@@ -26,6 +26,9 @@ IMAGES=$(node -p "require('$ROOT/clip-musical/conduite.json').images")
 # la barre sans que la différence se voie sur un téléphone.
 CRF=21
 LIMITE_MO=100
+# Le logo officiel, jamais redessiné ni recoloré : on ne fait que le mettre
+# à l'échelle.
+REPO_LOGO="$ROOT/../../studio-video/assets/brand/logo/foodeatup-logo-horizontal.png"
 
 echo "→ $N coupes"
 : > "$W/liste.txt"
@@ -88,7 +91,20 @@ for i in $(seq 0 $((N - 1))); do
   [ $((i % 20)) -eq 0 ] && echo "   $i/$N  ($SEC)"
 done
 
-echo "→ collage et pose de la chanson"
+echo "→ cartons d'ouverture et de fin"
+# Les deux cartons sont rendus par la même méthode que les outros d'épisode :
+# HTML déterministe, une image à la fois. Ils sont muets — leur son est posé
+# ici, au collage, pour qu'un changement de durée ne les décale pas.
+[ -f "$W/carton-ouverture.mkv" ] && [ -f "$W/carton-fin.mkv" ] \
+  || node "$ROOT/scripts/clip-cartons.mjs"
+IMG_OUV=$(ffmpeg -nostdin -hide_banner -i "$W/carton-ouverture.mkv" -map 0:v -f null - 2>&1 \
+          | grep -oE "frame= *[0-9]+" | tail -1 | grep -oE "[0-9]+")
+IMG_FIN=$(ffmpeg -nostdin -hide_banner -i "$W/carton-fin.mkv" -map 0:v -f null - 2>&1 \
+          | grep -oE "frame= *[0-9]+" | tail -1 | grep -oE "[0-9]+")
+IMAGES_TOTAL=$((IMG_OUV + IMAGES + IMG_FIN))
+echo "   $IMG_OUV + $IMAGES + $IMG_FIN = $IMAGES_TOTAL images"
+
+echo "→ collage, marque, chanson"
 # Le FILTRE concat, et non le démuxeur. Le démuxeur croit la durée annoncée par
 # chaque conteneur : Matroska déclare chaque segment une image plus long qu'il
 # n'est, et le suivant démarrait donc une image trop tard — cent trente et une
@@ -97,24 +113,65 @@ echo "→ collage et pose de la chanson"
 #
 # Le filtre, lui, met bout à bout des suites d'images et refabrique l'horloge.
 # Aucune durée de conteneur n'entre dans le calcul, donc aucune dérive possible.
+#
+# Tout se fait dans CETTE passe : les cent trente et une coupes, les fondus, la
+# marque en incrustation, les deux cartons et le son. Habiller le master déjà
+# encodé serait une génération de perte pour rien.
 ENTREES=""; CHAINE=""
 for i in $(seq 0 $((N - 1))); do
   ENTREES="$ENTREES -i $W/coupes/c$(printf '%04d' "$i").mkv"
   CHAINE="$CHAINE[$i:v]"
 done
 SORTIE_FONDU=$(awk -v d="$DUREE" 'BEGIN{printf "%.3f", d-2.5}')
+
+# La marque, en haut à droite, pendant tout le clip.
+#
+# C'est la variante à pastille bleue et non la mascotte à fond transparent :
+# au-dessus de plans qui vont du bleu nuit au blanc de cuisine, la pastille
+# porte son propre fond et reste lisible partout. La mascotte disparaîtrait sur
+# un plan clair, et la charte interdit de lui ajouter le contour qui la
+# sauverait.
+#
+# 200 px de large, soit 75 px de haut : la marge de 100 px en haut et de 56 px
+# à droite dépasse largement la zone de protection de la charte (la plus grande
+# entre la demi-hauteur, 37 px, et 10 % de la largeur, 20 px) et laisse passer
+# les barres d'interface des applications sociales, qui mangent le tout premier
+# bandeau de l'écran.
+#
+# Elle prend les MÊMES fondus que l'image. Sans cela, elle resterait posée en
+# pleine lumière sur un écran devenu noir pendant les 2,5 dernières secondes.
+MARQUE="$REPO_LOGO"
+IDX_CHANSON=$N
+IDX_OUV=$((N + 1)); IDX_FIN=$((N + 2)); IDX_LOGO=$((N + 3))
+IDX_WHOOSH=$((N + 4)); IDX_IMPACT=$((N + 5))
+
 # shellcheck disable=SC2086
 ffmpeg -y -nostdin -loglevel error $ENTREES -i "$CHANSON" \
-  -filter_complex "${CHAINE}concat=n=$N:v=1:a=0,\
-fade=t=in:st=0:d=1.2,fade=t=out:st=$SORTIE_FONDU:d=2.5[v]" \
-  -af "afade=t=out:st=$SORTIE_FONDU:d=2.5,aresample=48000,aformat=channel_layouts=stereo" \
-  -map "[v]" -map "$N:a" -frames:v "$IMAGES" \
+  -i "$W/carton-ouverture.mkv" -i "$W/carton-fin.mkv" \
+  -loop 1 -framerate 30 -t "$DUREE" -i "$MARQUE" \
+  -i "$ROOT/assets/sfx/whoosh.wav" -i "$ROOT/assets/sfx/impact.mp3" \
+  -filter_complex "\
+${CHAINE}concat=n=$N:v=1:a=0,\
+fade=t=in:st=0:d=1.2,fade=t=out:st=$SORTIE_FONDU:d=2.5[corps];\
+[$IDX_LOGO:v]scale=200:-1,format=rgba,colorchannelmixer=aa=0.92,\
+fade=t=in:st=0:d=1.2:alpha=1,fade=t=out:st=$SORTIE_FONDU:d=2.5:alpha=1[marque];\
+[corps][marque]overlay=x=W-w-56:y=100[corps_marque];\
+[$IDX_CHANSON:a]afade=t=out:st=$SORTIE_FONDU:d=2.5,aresample=48000,\
+aformat=channel_layouts=stereo,atrim=0:$DUREE,asetpts=N/SR/TB[a_corps];\
+[$IDX_WHOOSH:a]aformat=channel_layouts=stereo,volume=-9dB[wh];\
+[$IDX_IMPACT:a]aformat=channel_layouts=stereo,volume=-12dB,adelay=580|580[im];\
+[wh][im]amix=inputs=2:normalize=0,apad,atrim=0:$(awk -v n="$IMG_OUV" 'BEGIN{printf "%.4f", n/30}'),\
+aresample=48000,asetpts=N/SR/TB[a_ouv];\
+anullsrc=r=48000:cl=stereo,atrim=0:$(awk -v n="$IMG_FIN" 'BEGIN{printf "%.4f", n/30}'),\
+asetpts=N/SR/TB[a_fin];\
+[$IDX_OUV:v][a_ouv][corps_marque][a_corps][$IDX_FIN:v][a_fin]concat=n=3:v=1:a=1[v][a]" \
+  -map "[v]" -map "[a]" -frames:v "$IMAGES_TOTAL" \
   -c:v libx264 -preset slow -crf "$CRF" -c:a aac -b:a 192k \
   -movflags +faststart "$W/monte.mp4"
 EUES=$(ffmpeg -nostdin -hide_banner -i "$W/monte.mp4" -map 0:v -f null - 2>&1 \
        | grep -oE "frame= *[0-9]+" | tail -1 | grep -oE "[0-9]+")
-echo "   $EUES images pour $IMAGES attendues"
-[ "$EUES" = "$IMAGES" ] || { echo "   ✗ compte d'images faux, on s'arrête" >&2; exit 1; }
+echo "   $EUES images pour $IMAGES_TOTAL attendues"
+[ "$EUES" = "$IMAGES_TOTAL" ] || { echo "   ✗ compte d'images faux, on s'arrête" >&2; exit 1; }
 
 echo "→ niveau"
 # La chanson sort de Suno déjà masterisée ; on ne la renormalise pas, on la
@@ -129,7 +186,12 @@ ffmpeg -y -nostdin -loglevel error -i "$W/monte.mp4" -af "volume=${GAIN}dB" \
   -c:v copy -c:a aac -b:a 192k -movflags +faststart "$D/clip-c-est-ma-maison-9x16.mp4"
 
 echo "→ vignette : la première image du refrain final"
-T=$(node -p "require('$ROOT/clip-musical/conduite.json').plans.find(p=>p.section==='refrain-final').t")
+# La conduite date les coupes sur l'horloge de la CHANSON. Le fichier livré,
+# lui, commence par le carton d'ouverture : il faut donc décaler d'autant, sinon
+# la vignette tombe dans le couplet 1 sans que rien ne le signale.
+T=$(node -p "
+  const c = require('$ROOT/clip-musical/conduite.json');
+  (c.plans.find(p => p.section === 'refrain-final').t + $IMG_OUV / c.fps).toFixed(3)")
 ffmpeg -y -nostdin -loglevel error -ss "$T" -i "$D/clip-c-est-ma-maison-9x16.mp4" \
   -frames:v 1 "$D/clip-c-est-ma-maison-vignette.png"
 

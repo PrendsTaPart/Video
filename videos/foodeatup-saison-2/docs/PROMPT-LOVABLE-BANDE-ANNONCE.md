@@ -3,6 +3,19 @@
 Projet **FoodEatUp Social Hub** (`food-series-hub`), workspace **Braind's Lovable**
 (`78f6380983eca2a8298e`), projet `05bb6b0d-8c57-4347-b29b-d850b916ddde`.
 
+> ## ⚠️ La partie « bande-annonce » de ce document est FAITE
+>
+> Constaté le 31 août 2026 : `lister_series` rend désormais un objet
+> `bandeAnnonce` par saison, et celle de la saison 2 de
+> `michael-fait-son-cinema` y est, au statut `pret`, avec sa vignette et ses
+> 28 secondes. **Ne renvoie pas cette partie du prompt** : elle ferait refaire
+> un travail déjà livré.
+>
+> Ce qui reste ouvert — déclarer un clip musical, et le rattacher à une saison —
+> est repris, complété et corrigé dans **`PROMPT-LOVABLE-CLIP-DE-SAISON.md`**.
+> C'est ce document-là qu'il faut envoyer. Celui-ci ne sert plus qu'à garder la
+> trace de ce qui a été demandé et pourquoi.
+
 ## Pourquoi ce prompt existe
 
 Le catalogue sait aujourd'hui : série → saison → épisode. Une saison porte une
