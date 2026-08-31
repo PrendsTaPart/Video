@@ -154,3 +154,50 @@ Une bande-annonce s'adresse par `serie` + `saison` : tant que ce couple ne
 désigne pas une chose unique, `deposer_bande_annonce` peut écrire au mauvais
 endroit sans que rien ne le signale. **À vérifier côté données avant de se fier
 au dépôt.**
+
+---
+
+## Un second manque, du même ordre : déclarer un clip musical
+
+Vérifié le 31 août 2026, après le montage de « C'est ma maison » :
+
+```
+lister_clips_musicaux(clip: "c-est-ma-maison")  →  { "total": 0, "clips": [] }
+```
+
+Le catalogue ne connaît que `le-clash` et `il-etait-une-fois-un-restaurant`.
+`publier_clip_musical` **écrit une pièce sur un clip existant** — sa propre
+description dit d'appeler `lister_clips_musicaux` d'abord « il donne les
+identifiants (`slug`) exacts ». Aucun outil ne **crée** un clip.
+
+Un clip monté ne peut donc pas entrer au catalogue, exactement comme une
+bande-annonce ne peut pas se rattacher à une saison. À ajouter dans le même
+mouvement :
+
+> **`declarer_clip_musical`** — crée l'entrée d'un clip musical. Paramètres :
+> `slug`, `titre`, `accroche`, `serie` (slug), `date_prevue`, et un volet
+> `chanson` : `style`, `bpm_demande`, `bpm_mesure`, `tonalite`,
+> `duree_secondes`, `outil`. Il refuse un `slug` déjà pris plutôt que d'écraser.
+> Le clip naît sans aucune pièce : `publier_clip_musical` les dépose ensuite,
+> une par une, avec le contrôle HTTP qu'il fait déjà.
+>
+> Le champ `bpm_mesure` n'est pas décoratif et ne doit pas être facultatif :
+> sur les trois clips produits à ce jour, le tempo demandé n'est jamais celui
+> obtenu — 142 demandés pour 144 mesurés, 92 pour 90,7, et 92 pour 92,29. Une
+> grille de montage bâtie sur le tempo demandé dérive d'une demi-seconde en fin
+> de morceau. Le catalogue doit garder celui qu'on a mesuré, pas celui qu'on a
+> écrit dans le prompt.
+
+Le clip de la saison, prêt à déclarer :
+
+| Champ | Valeur |
+|---|---|
+| `slug` | `c-est-ma-maison` |
+| `titre` | C'est ma maison |
+| `accroche` | Une année, un restaurant, un homme qui recommence. |
+| `serie` | `michael-fait-son-cinema` |
+| `style` | Rap français narratif, boom-bap et piano |
+| `bpm_demande` | 92 |
+| `bpm_mesure` | 92.29 |
+| `duree_secondes` | 175.08 |
+| `outil` | Suno |
