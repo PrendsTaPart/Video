@@ -141,3 +141,16 @@ node -e "if ($MO >= $LIMITE_MO) { console.error('   ✗ trop lourd pour le dép�
 echo "✅ $D/clip-c-est-ma-maison-9x16.mp4"
 ffmpeg -hide_banner -nostdin -i "$D/clip-c-est-ma-maison-9x16.mp4" 2>&1 \
   | grep -E "Duration|Stream #0" | sed 's/^/   /' || true
+
+echo "→ proxy : la même chose, moitié moins large"
+# Le catalogue modélise une pièce « proxy » et les deux autres clips en portent
+# une. Elle sert à regarder le clip sans télécharger 83 Mo — sur un téléphone,
+# dans une conversation, dans une revue. Le montage, les coupes et le son sont
+# ceux du master : seule la définition tombe de moitié. On part du master déjà
+# étalonné en niveau, jamais des coupes, pour que les deux fichiers ne puissent
+# pas diverger.
+ffmpeg -y -nostdin -loglevel error -i "$D/clip-c-est-ma-maison-9x16.mp4" \
+  -vf "scale=720:1280:flags=lanczos" -c:v libx264 -preset slow -crf 27 \
+  -c:a aac -b:a 128k -movflags +faststart "$D/clip-c-est-ma-maison-proxy.mp4"
+MO_P=$(node -p "(require('fs').statSync('$D/clip-c-est-ma-maison-proxy.mp4').size/1048576).toFixed(1)")
+echo "   $MO_P Mo"
