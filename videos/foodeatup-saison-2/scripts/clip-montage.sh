@@ -19,6 +19,14 @@ DUREE=$(node -p "require('$ROOT/clip-musical/conduite.json').duree_s")
 N=$(node -p "require('$ROOT/clip-musical/conduite.json').coupes")
 IMAGES=$(node -p "require('$ROOT/clip-musical/conduite.json').images")
 
+# Qualité de l'image. Les épisodes sont en CRF 18, mais ils durent trente
+# secondes ; le clip en dure cent soixante-quinze et enchaîne cent trente et une
+# coupes, ce qui coûte cher à encoder. En CRF 18 il sortait à 112,7 Mo et GitHub
+# a refusé le dépôt — sa limite est à 100 Mo par fichier. CRF 21 le ramène sous
+# la barre sans que la différence se voie sur un téléphone.
+CRF=21
+LIMITE_MO=100
+
 echo "→ $N coupes"
 : > "$W/liste.txt"
 for i in $(seq 0 $((N - 1))); do
@@ -101,7 +109,7 @@ ffmpeg -y -nostdin -loglevel error $ENTREES -i "$CHANSON" \
 fade=t=in:st=0:d=1.2,fade=t=out:st=$SORTIE_FONDU:d=2.5[v]" \
   -af "afade=t=out:st=$SORTIE_FONDU:d=2.5,aresample=48000,aformat=channel_layouts=stereo" \
   -map "[v]" -map "$N:a" -frames:v "$IMAGES" \
-  -c:v libx264 -preset slow -crf 18 -c:a aac -b:a 192k \
+  -c:v libx264 -preset slow -crf "$CRF" -c:a aac -b:a 192k \
   -movflags +faststart "$W/monte.mp4"
 EUES=$(ffmpeg -nostdin -hide_banner -i "$W/monte.mp4" -map 0:v -f null - 2>&1 \
        | grep -oE "frame= *[0-9]+" | tail -1 | grep -oE "[0-9]+")
@@ -124,6 +132,11 @@ echo "→ vignette : la première image du refrain final"
 T=$(node -p "require('$ROOT/clip-musical/conduite.json').plans.find(p=>p.section==='refrain-final').t")
 ffmpeg -y -nostdin -loglevel error -ss "$T" -i "$D/clip-c-est-ma-maison-9x16.mp4" \
   -frames:v 1 "$D/clip-c-est-ma-maison-vignette.png"
+
+# Le dépôt refuse au-delà de 100 Mo : mieux vaut le savoir ici qu'au push.
+MO=$(node -p "(require('fs').statSync('$D/clip-c-est-ma-maison-9x16.mp4').size/1048576).toFixed(1)")
+echo "   $MO Mo (limite du dépôt : $LIMITE_MO Mo)"
+node -e "if ($MO >= $LIMITE_MO) { console.error('   ✗ trop lourd pour le dépôt, augmenter CRF'); process.exit(1) }"
 
 echo "✅ $D/clip-c-est-ma-maison-9x16.mp4"
 ffmpeg -hide_banner -nostdin -i "$D/clip-c-est-ma-maison-9x16.mp4" 2>&1 \
