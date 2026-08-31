@@ -24,14 +24,13 @@ FADEOUT=$(awk -v e="$EXT" 'BEGIN{printf "%.3f", e-0.025}')
 # Où couper dans chaque épisode. On alterne :
 #   scène 1 à 5,0 s  → le milieu de l'action, un plan large
 #   scène 2 à 8,0 s  → la chute, souvent un regard caméra
-# Alterner évite trente gros plans à la suite. Les épisodes 12 et 16 sont forcés
-# sur la scène 1 : leurs scènes 2 portent les défauts signalés (rupture de tenue,
-# gros plan sur le ticket) et n'ont pas été redemandées à Higgsfield.
+# Alterner évite trente gros plans à la suite. Les épisodes 12 et 16 faisaient
+# exception tant que leurs scènes 2 étaient en litige — la scène 2 du 12 est
+# regénérée avec la tenue de saison, celle du 16 est validée par l'auteur :
+# l'exception n'a plus de raison d'être, et les trente épisodes suivent la même
+# règle.
 choisir() {
-  case "$1" in
-    12|16) echo "1 5.0" ;;
-    *) if [ $((10#$1 % 2)) -eq 1 ]; then echo "1 5.0"; else echo "2 8.0"; fi ;;
-  esac
+  if [ $((10#$1 % 2)) -eq 1 ]; then echo "1 5.0"; else echo "2 8.0"; fi
 }
 
 echo "→ trente extraits de ${EXT}s"
